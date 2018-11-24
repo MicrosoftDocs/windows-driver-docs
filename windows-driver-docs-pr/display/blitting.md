@@ -13,11 +13,7 @@ keywords:
 - blitting WDK DirectDraw
 - blt WDK DirectDraw , about blitting
 - DdBlt
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +27,9 @@ If a blt is happening within one surface and the source and destination areas ov
 
 Everything possible should be done to speed up the actual blt. Duplicating sections of code to avoid an IF statement may make the driver go faster, for example. Perhaps the best implementation of this technique is to put the code in a macro and use that in different places rather than making function calls. For more information, see [*DdBlt*](https://msdn.microsoft.com/library/windows/hardware/ff549205).
 
- 
+ 
 
- 
+ 
 
 
 

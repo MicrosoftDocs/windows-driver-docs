@@ -5,11 +5,7 @@ ms.assetid: 6e705f31-eec7-4b9c-a46f-ff7641d224c2
 keywords:
 - virtual connections WDK CoNDIS , MCM drivers vs. call managers
 - signaling VCs WDK CoNDIS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +27,9 @@ Because MCM driver is both a call manager and a miniport driver, certain connect
 
 An MCM driver must supply a [**MiniportCoOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff559362) function for a client to use in querying or setting miniport driver information, and a [**MiniportCoSendNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff559365) function to handle send operations from a client.
 
- 
+ 
 
- 
+ 
 
 
 

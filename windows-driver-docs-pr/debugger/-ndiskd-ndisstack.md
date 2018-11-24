@@ -3,11 +3,7 @@ title: ndiskd.ndisstack
 description: The !ndiskd.ndisstack extension displays a debug stack trace.
 ms.assetid: 939DEC34-3D20-41FE-B5A8-DDF810195B07
 keywords: ["ndiskd.ndisstack Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,11 +18,11 @@ ms.localizationpriority: medium
 
 **Note**  Third party network driver developers are not expected to manually use this extension command. You can run it to see the information it displays but you are not able to reuse the details it provides in your driver.
 
- 
+ 
 
 The **!ndiskd.ndisstack** extension displays a debug stack trace.
 
-```
+```console
 !ndiskd.ndisstack [-handle <x>] [-statistics] 
 ```
 
@@ -56,9 +52,9 @@ Ndiskd.dll
 
 [**!ndiskd.help**](-ndiskd-help.md)
 
- 
+ 
 
- 
+ 
 
 
 

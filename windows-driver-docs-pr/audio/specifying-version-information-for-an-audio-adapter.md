@@ -7,11 +7,7 @@ keywords:
 - adapter drivers WDK audio , version information
 - Port Class audio adapters WDK , version information
 - versions WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,7 +19,7 @@ ms.localizationpriority: medium
 
 A vendor should specify the following entries in the **Version** section of an INF file for a port-class audio adapter:
 
-```
+```inf
   Signature="$CHICAGO$"
   Class=MEDIA
   ClassGUID={4d36e96c-e325-11ce-bfc1-08002be10318}
@@ -31,9 +27,9 @@ A vendor should specify the following entries in the **Version** section of an I
 
 For a description of additional version requirements and options for all device classes, see [**INF Version Section**](https://msdn.microsoft.com/library/windows/hardware/ff547502).
 
- 
+ 
 
- 
+ 
 
 
 

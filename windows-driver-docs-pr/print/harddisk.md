@@ -1,13 +1,8 @@
 ---
 title: HardDisk
-author: windows-driver-content
 description: HardDisk
 ms.assetid: 88eadea0-54cb-4c19-90d2-9941b13b9303
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -52,9 +47,9 @@ Data Type:BIDI\_INT
 
 Description:The currently available free space, in megabytes (MB), of the installed hard disk.
 
- 
+ 
 
- 
+ 
 
 
 

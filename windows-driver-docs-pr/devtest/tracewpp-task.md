@@ -2,11 +2,7 @@
 title: TraceWPP task
 description: The Windows Driver Kit (WDK) provides the TraceWPP task so that you can run the tracewpp.exe tool when you build your driver using MSBuild.
 ms.assetid: 74CE1912-8D1D-417E-8B29-36B2AB0253EE
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -115,7 +111,7 @@ The example above shows that MSBuild invokes **tracewpp.exe** only on b.c and te
 </tr>
 <tr class="odd">
 <td align="left"><strong>AddControlGUID</strong>
-<p>Optional string parameter. Defines a WPP_CONTROL_GUIDS macro with the specified control GUID and WPP_DEFINE_BIT entries named 'Error', 'Unusual', and 'Noise'.</p></td>
+<p>Optional string parameter. Defines a WPP_CONTROL_GUIDS macro with the specified control GUID and WPP_DEFINE_BIT entries named &#39;Error&#39;, &#39;Unusual&#39;, and &#39;Noise&#39;.</p></td>
 <td align="left">%(TraceWpp.WppAddControlGUID)</td>
 <td align="left"><strong>-ctl:</strong><em>GUID</em></td>
 </tr>
@@ -145,7 +141,7 @@ The example above shows that MSBuild invokes **tracewpp.exe** only on b.c and te
 </tr>
 <tr class="even">
 <td align="left"><strong>IgnoreExclamationmarks</strong>
-<p>Optional Boolean parameter. Directs WPP to ignore exclamation marks, also known as 'shrieks,' used in complex formatting, such as %!timestamp!%.</p></td>
+<p>Optional Boolean parameter. Directs WPP to ignore exclamation marks, also known as &#39;shrieks,&#39; used in complex formatting, such as %!timestamp!%.</p></td>
 <td align="left">%(TraceWpp.WppIgnoreExclamationmarks)</td>
 <td align="left"><strong>-noshrieks</strong></td>
 </tr>

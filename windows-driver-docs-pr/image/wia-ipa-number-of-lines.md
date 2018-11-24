@@ -11,11 +11,7 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -62,7 +58,7 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**WIA\_IPA\_BYTES\_PER\_LINE**](wia-ipa-bytes-per-line.md)
@@ -75,9 +71,9 @@ Requirements
 
 [**WIA\_IPS\_YEXTENT**](wia-ips-yextent.md)
 
- 
+ 
 
- 
+ 
 
 
 

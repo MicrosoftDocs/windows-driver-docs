@@ -1,6 +1,5 @@
 ---
 title: TVOT\_EDITBOX
-author: windows-driver-content
 description: TVOT\_EDITBOX
 ms.assetid: efbfe6ff-129d-4bf5-a0e3-3cae575dfcd7
 keywords: ["TVOT_EDITBOX Print Devices"]
@@ -12,11 +11,7 @@ api_location:
 - compstui.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -111,7 +106,7 @@ Otherwise, **BegCtrlID** must contain the first control identifier of a sequenti
 </tbody>
 </table>
 
- 
+ 
 
 For additional information, see [Customizing CPSUI-Supported Window Controls](https://msdn.microsoft.com/library/windows/hardware/ff547296).
 
@@ -131,9 +126,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

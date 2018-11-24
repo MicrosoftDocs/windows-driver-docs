@@ -1,6 +1,5 @@
 ---
 title: Adding Forms to the Forms Database
-author: windows-driver-content
 description: Adding Forms to the Forms Database
 ms.assetid: ac306f05-6150-4e47-9272-e81e658a1ea6
 keywords:
@@ -15,11 +14,7 @@ keywords:
 - paper sizes WDK forms
 - custom forms WDK printer
 - Unidrv WDK print
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,7 +27,7 @@ If you are not using a resource DLL for the localizable strings in the GPD file,
 
 The following code example is an excerpt from a GPD file that uses a resource ID for the display name.
 
-```
+```GDL
 *Feature: PaperSize
 {
     *Option: Option2
@@ -46,7 +41,7 @@ The following code example is an excerpt from a GPD file that uses a resource ID
 
 Inside the Unidrv printer driver that is provided with Windows Vista, the FORM\_INFO\_2 structure is populated by data that is read from the GPD file, as the following table shows. If the GPD file for your printer already contains the information that is required to fill in this structure, you do not need to change anything to use the new features that the Windows Vista Unidrv printer driver provides.
 
-```
+```cpp
 typedef struct _FORM_INFO_2 { 
   DWORD    Flags; 
   LPTSTR   pName; 
@@ -115,13 +110,13 @@ typedef struct _FORM_INFO_2 {
 <tr class="even">
 <td><p>dwResourceId</p></td>
 <td><p>The value of the *rcNameID entry in the GPD file. If the *rcName option is used in the GPD file instead, the value for this field is 0.</p></td>
-<td><p>The resource ID, in <strong>pMuiDll</strong>, of the form's display name when <strong>StringType</strong> contains STRING_MUIDLL.</p></td>
+<td><p>The resource ID, in <strong>pMuiDll</strong>, of the form&#39;s display name when <strong>StringType</strong> contains STRING_MUIDLL.</p></td>
 </tr>
 <tr class="odd">
 <td><p>pDisplayName</p></td>
 <td><p><strong>NULL</strong></p>
 <p>This field is not used.</p></td>
-<td><p>The form's display name in the language that <strong>wLangId</strong> specifies when <strong>StringType</strong> contains STRING_LANGPAIR.</p></td>
+<td><p>The form&#39;s display name in the language that <strong>wLangId</strong> specifies when <strong>StringType</strong> contains STRING_LANGPAIR.</p></td>
 </tr>
 <tr class="even">
 <td><p>wLangId</p></td>
@@ -132,11 +127,11 @@ typedef struct _FORM_INFO_2 {
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

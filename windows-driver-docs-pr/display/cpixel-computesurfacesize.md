@@ -11,11 +11,7 @@ api_location:
 - pixel.hpp
 api_type:
 - COM
-ms.author: windowsdriverdev
 ms.date: 01/05/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +25,9 @@ Syntax
 
 ```ManagedCPlusPlus
 static UINT ComputeSurfaceSize(
-   UINT      cpWidth,
-   UINT      cpHeight,
-   D3DFORMAT Format
+   UINT      cpWidth,
+   UINT      cpHeight,
+   D3DFORMAT Format
 );
 ```
 
@@ -77,9 +73,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

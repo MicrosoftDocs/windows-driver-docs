@@ -9,11 +9,7 @@ api_name:
 - wscn DestinationToken
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **DestinationToken** element contains a device-specific string that
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:DestinationToken>
   text
 </wscn:DestinationToken>
@@ -60,10 +56,10 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>CreateScanJobRequest</strong>](createscanjobrequest.md)</p></td>
+<td><p><a href="createscanjobrequest.md" data-raw-source="[&lt;strong&gt;CreateScanJobRequest&lt;/strong&gt;](createscanjobrequest.md)"><strong>CreateScanJobRequest</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>DestinationResponse</strong>](destinationresponse.md)</p></td>
+<td><p><a href="destinationresponse.md" data-raw-source="[&lt;strong&gt;DestinationResponse&lt;/strong&gt;](destinationresponse.md)"><strong>DestinationResponse</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -73,7 +69,7 @@ Remarks
 
 The client includes the **DestinationToken** token when it sends a [**CreateScanJobRequest**](createscanjobrequest.md) operation element after the [**ScanAvailableEvent**](scanavailableevent.md) event. The WSD Scan Service uses the specified string to check that the correct client is sending the scan request.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**CreateScanJobRequest**](createscanjobrequest.md)
@@ -84,9 +80,9 @@ The client includes the **DestinationToken** token when it sends a [**CreateScan
 
 [**ScanDestination**](scandestination.md)
 
- 
+ 
 
- 
+ 
 
 
 

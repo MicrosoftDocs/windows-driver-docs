@@ -6,11 +6,7 @@ keywords:
 - biometric drivers WDK , supporting IOCTLs
 - supporting IOCTLs WDK biometric
 - IOCTLs WDK biometric
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -39,9 +35,9 @@ A vendor-supplied WBDI driver should be prepared to receive IOCTL requests in th
 
 5.  The handler for [**IOCTL\_BIOMETRIC\_RESET**](https://msdn.microsoft.com/library/windows/hardware/ff536439) should physically reset the device to a known or idle state. The handler for this request must also cancel any pending data collection I/O and fill out the [**WINBIO\_BLANK\_PAYLOAD**](https://msdn.microsoft.com/library/windows/hardware/ff536464) structure. The handler then completes the request. Clients do not need to call reset between calls to IOCTL\_BIOMETRIC\_CAPTURE\_DATA.
 
- 
+ 
 
- 
+ 
 
 
 

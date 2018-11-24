@@ -1,15 +1,10 @@
 ---
 title: OID_IP4_OFFLOAD_STATS
-author: windows-driver-content
 description: This topic describes the OID_IP4_OFFLOAD_STATS object identifier (OID).
 ms.assetid: 7ffe9703-5370-410f-bccd-4a430835edd0
 keywords:
 - OID_IP4_OFFLOAD_STATS
-ms.author: windowsdriverdev
 ms.date: 11/06/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

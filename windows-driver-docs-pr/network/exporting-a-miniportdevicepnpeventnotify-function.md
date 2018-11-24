@@ -8,11 +8,7 @@ keywords:
 - notifications
 - notifications WDK PnP , NDIS miniport drivers
 - event notifications WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,9 +28,9 @@ If a miniport driver does not export a *MiniportDevicePnPEventNotify* function, 
 
 All NDIS 6.0 and later miniport drivers *must* export a *MiniportDevicePnPEventNotify* function. In addition, all miniport drivers that have a WDM lower edge *should* export a *MiniportDevicePnPEventNotify* function.
 
- 
+ 
 
- 
+ 
 
 
 

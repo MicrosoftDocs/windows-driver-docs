@@ -9,11 +9,7 @@ api_name:
 - wscn ScanRegion
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The optional **ScanRegion** element specifies the area to scan within the input 
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ScanRegion>
   child elements
 </wscn:ScanRegion>
@@ -50,16 +46,16 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ScanRegionHeight</strong>](scanregionheight.md)</p></td>
+<td><p><a href="scanregionheight.md" data-raw-source="[&lt;strong&gt;ScanRegionHeight&lt;/strong&gt;](scanregionheight.md)"><strong>ScanRegionHeight</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>ScanRegionWidth</strong>](scanregionwidth.md)</p></td>
+<td><p><a href="scanregionwidth.md" data-raw-source="[&lt;strong&gt;ScanRegionWidth&lt;/strong&gt;](scanregionwidth.md)"><strong>ScanRegionWidth</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>ScanRegionXOffset</strong>](scanregionxoffset.md)</p></td>
+<td><p><a href="scanregionxoffset.md" data-raw-source="[&lt;strong&gt;ScanRegionXOffset&lt;/strong&gt;](scanregionxoffset.md)"><strong>ScanRegionXOffset</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>ScanRegionYOffset</strong>](scanregionyoffset.md)</p></td>
+<td><p><a href="scanregionyoffset.md" data-raw-source="[&lt;strong&gt;ScanRegionYOffset&lt;/strong&gt;](scanregionyoffset.md)"><strong>ScanRegionYOffset</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -78,10 +74,10 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>MediaBack</strong>](mediaback.md)</p></td>
+<td><p><a href="mediaback.md" data-raw-source="[&lt;strong&gt;MediaBack&lt;/strong&gt;](mediaback.md)"><strong>MediaBack</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>MediaFront</strong>](mediafront.md)</p></td>
+<td><p><a href="mediafront.md" data-raw-source="[&lt;strong&gt;MediaFront&lt;/strong&gt;](mediafront.md)"><strong>MediaFront</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -99,7 +95,7 @@ If the requested scan region of a scan job would fall completely outside the sup
 
 The WSD Scan Service can adjust a requested scan region if it cannot fulfill the specified dimensions. Any changes to the scan region should be reported in the [**DocumentFinalParameters**](documentfinalparameters.md) elements in the scan job.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**DocumentFinalParameters**](documentfinalparameters.md)
@@ -118,9 +114,9 @@ The WSD Scan Service can adjust a requested scan region if it cannot fulfill the
 
 [**ScanRegionYOffset**](scanregionyoffset.md)
 
- 
+ 
 
- 
+ 
 
 
 

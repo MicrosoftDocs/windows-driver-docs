@@ -1,13 +1,8 @@
 ---
 title: V4 Printer Driver Localization
-author: windows-driver-content
 description: Windows 8 has provided standard, localized display strings to support the development of printer extensions and UWP device apps.
 ms.assetid: 5C587AF2-C51E-4728-A214-7FC1F8A6E445
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -90,7 +85,7 @@ These standard, localized display strings are provided through the new [**IPrint
 </tbody>
 </table>
 
- 
+ 
 
 In addition, these strings are available in the XML forms of PrintCapabilities, provided that the driver does not specify a display name using a resource DLL for the feature or option. If a driver does specify a display name using a resource DLL, it will be provided in the XML, as well as to the legacy COMPSTUI-based print preferences UI used on previous versions of Windows.
 
@@ -98,7 +93,7 @@ Across the different user interfaces and APIs, the display names vary. Use the f
 
 The following flowchart shows the expected localization behavior in UWP apps, as well as in the [**IPrintSchemaFeature**](https://msdn.microsoft.com/library/windows/hardware/hh451284) and [**IPrintSchemaOption**](https://msdn.microsoft.com/library/windows/hardware/hh451335) families of objects.
 
-![localization behavior flowchart for windows store apps, iprintschemafeature or iprintschemaoption](images/locstringmodern.png)
+![localization behavior flowchart for Windows apps, iprintschemafeature or iprintschemaoption](images/locstringmodern.png)
 
 The following flowchart shows the expected localization behavior in **PrintCapabilities** XML documents.
 
@@ -125,28 +120,28 @@ To use the Microsoft-localized display names, follow the instructions in this ta
 <tr class="odd">
 <td>GPD</td>
 <td><ul>
-<li><p>Specify the <strong>*Name</strong> entry for the GPD feature or option.</p></li>
-<li><p>Do not specify the <strong>*rcNameID</strong> entry.</p></li>
-<li>For the following features/options, you must also specify <strong>*PrintSchemaKeywordMap</strong> to map GPD features or options to the corresponding Print Schema-defined features or options, unless they are specified as [Standard Features](standard-features.md). To see examples showing how to use <strong>*PrintSchemaKeywordMap</strong> to map features, see [GPD/PPD-Based Feature Description Changes](gpd-ppd-based-feature-description-changes.md).
+<li><p>Specify the <strong><em>Name</strong> entry for the GPD feature or option.</p></li>
+<li><p>Do not specify the <strong></em>rcNameID</strong> entry.</p></li>
+<li>For the following features/options, you must also specify <strong><em>PrintSchemaKeywordMap</strong> to map GPD features or options to the corresponding Print Schema-defined features or options, unless they are specified as <a href="standard-features.md" data-raw-source="[Standard Features](standard-features.md)">Standard Features</a>. To see examples showing how to use <strong></em>PrintSchemaKeywordMap</strong> to map features, see <a href="gpd-ppd-based-feature-description-changes.md" data-raw-source="[GPD/PPD-Based Feature Description Changes](gpd-ppd-based-feature-description-changes.md)">GPD/PPD-Based Feature Description Changes</a>.
 o JobHolePunch, DocumentHolePunch
 o JobStapleAllDocuments, DocumentStaple
 o JobBindAllDocuments, DocumentBinding
 o PageOutputQuality
 o PageMediaType</li>
-<li><p>For N-Up, do not use <strong>*PrintSchemaKeywordMap</strong> on the option values.</p></li>
+<li><p>For N-Up, do not use <strong><em>PrintSchemaKeywordMap</strong> on the option values.</p></li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>PPD</td>
 <td><ul>
-<li><p>Use <strong>*PrintSchemaKeywordMap</strong> to map PPD features or options to the corresponding Print Schema-defined features or options. To see examples showing how to use <strong>*PrintSchemaKeywordMap</strong> to map features, see [GPD/PPD-Based Feature Description Changes](gpd-ppd-based-feature-description-changes.md).</p></li>
-<li><p>For N-Up, do not use <strong>*PrintSchemaKeywordMap</strong> on the option values.</p></li>
+<li><p>Use <strong></em>PrintSchemaKeywordMap</strong> to map PPD features or options to the corresponding Print Schema-defined features or options. To see examples showing how to use <strong><em>PrintSchemaKeywordMap</strong> to map features, see <a href="gpd-ppd-based-feature-description-changes.md" data-raw-source="[GPD/PPD-Based Feature Description Changes](gpd-ppd-based-feature-description-changes.md)">GPD/PPD-Based Feature Description Changes</a>.</p></li>
+<li><p>For N-Up, do not use <strong></em>PrintSchemaKeywordMap</strong> on the option values.</p></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 **Localizing PPD Based Drivers**
 

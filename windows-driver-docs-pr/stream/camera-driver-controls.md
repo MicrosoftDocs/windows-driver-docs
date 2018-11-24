@@ -1,13 +1,8 @@
 ---
 title: New camera driver controls for Windows 10
-author: windows-driver-content
 description: The following camera driver controls are new for Windows 10.
 ms.assetid: E2995039-E8FD-4EC2-9B2F-9BFB767AEE16
-ms.author: windowsdriverdev
 ms.date: 04/06/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,8 +16,6 @@ The following camera driver controls are new for Windows 10.
 [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FACEDETECTION**](ksproperty-cameracontrol-extended-facedetection.md)
 
 [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FLASHMODE**](ksproperty-cameracontrol-extended-flashmode2.md)
-
-[**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FOCUSMODE**](ksproperty-cameracontrol-extended-focusmode2.md)
 
 [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FOCUSPRIORITY**](ksproperty-cameracontrol-extended-focuspriority.md)
 
@@ -64,9 +57,9 @@ The following camera driver controls are new for Windows 10.
 
 [**KSPROPERTY\_CAMERACONTROL\_PERFRAMESETTING\_SET**](ksproperty-cameracontrol-perframesetting-set.md)
 
- 
+ 
 
- 
+ 
 
 
 

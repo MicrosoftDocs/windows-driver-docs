@@ -6,11 +6,7 @@ keywords:
 - control GUIDs WDK
 - .ctl files
 - ctl files
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -62,9 +58,9 @@ If the TMC file is not available, you can set the trace flags and level for the 
 
 For information about specifying TMF files, see Select TMF Files and Set TMF Search Path.
 
- 
+ 
 
- 
+ 
 
 
 

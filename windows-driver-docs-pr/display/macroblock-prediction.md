@@ -11,11 +11,7 @@ keywords:
 - decoding video WDK DirectX VA , macroblock prediction
 - video decoding WDK DirectX VA , macroblock prediction
 - macroblocks WDK DirectX VA , prediction
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -41,7 +37,7 @@ The following four steps are involved in creating a macroblock prediction:
 
     **Note**   The reference block is not defined for DirectX VA because it may have properties that reflect implementation-specific means of maintaining picture buffers.
 
-     
+     
 
 3.  Filter the reference block to form a prediction block
 
@@ -55,9 +51,9 @@ The following figure shows the additional steps in the video decoding process th
 
 ![diagram illustrating signal flow of motion-compensation prediction blocks](images/sigflowmo3.png)
 
- 
+ 
 
- 
+ 
 
 
 

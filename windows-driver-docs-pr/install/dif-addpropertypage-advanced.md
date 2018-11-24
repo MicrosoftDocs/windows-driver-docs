@@ -12,6 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # DIF_ADDPROPERTYPAGE_ADVANCED
@@ -46,7 +47,7 @@ When a user clicks on the properties for a device in Device Manager or in Contro
 </tbody>
 </table>
 
- 
+ 
 
 ### Installer Input
 
@@ -136,9 +137,9 @@ Requirements
 
 [**SP_DEVINSTALL_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346)
 
- 
+ 
 
- 
+ 
 
 
 

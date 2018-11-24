@@ -12,6 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # GUID_CLASS_USB_DEVICE
@@ -49,9 +50,9 @@ Requirements
 
 [**GUID_DEVINTERFACE_USB_DEVICE**](guid-devinterface-usb-device.md)
 
- 
+ 
 
- 
+ 
 
 
 

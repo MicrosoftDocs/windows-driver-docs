@@ -1,16 +1,11 @@
 ---
 title: Preparsed Data
-author: windows-driver-content
 description: Preparsed Data
 ms.assetid: 50ac2877-4c45-4d55-b5cc-013486892fbf
 keywords:
 - parsed data WDK HID
 - preparsed data WDK HID
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,9 +37,9 @@ The following [HIDClass support routines](https://msdn.microsoft.com/library/win
 
 [**HidP\_SetUsageValueArray**](https://msdn.microsoft.com/library/windows/hardware/ff539801)
 
- 
+ 
 
- 
+ 
 
 
 

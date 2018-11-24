@@ -4,11 +4,7 @@ description: Overview of Container IDs
 ms.assetid: fb7a4a31-01f9-4f7e-a35c-9076c7d73a29
 keywords:
 - container IDs WDK , about
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,9 +33,9 @@ When returning NULL_GUID as a container ID, a bus driver declares to PnP that th
 
 Aside from very special cases, a bus driver should never return NULL_GUID when reporting a hardware device and bus drivers should guard against faulty hardware that reports a NULL_GUID value from their bus. In these cases the bus driver should either threat this as a device error, or treat it as if the device did not report a value.
 
- 
+ 
 
- 
+ 
 
 
 

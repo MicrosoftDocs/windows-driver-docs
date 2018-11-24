@@ -9,11 +9,7 @@ api_name:
 - wscn ScannerLocation xml lang "..."
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The optional **ScannerLocation** element specifies the administratively assigned
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ScannerLocation xml:lang="..."
   lang = "xs:string">
   text
@@ -85,7 +81,7 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ScannerDescription</strong>](scannerdescription.md)</p></td>
+<td><p><a href="scannerdescription.md" data-raw-source="[&lt;strong&gt;ScannerDescription&lt;/strong&gt;](scannerdescription.md)"><strong>ScannerDescription</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -100,23 +96,12 @@ Examples
 
 The following code example shows how you can use the ScannerLocation element.
 
-```
+```xml
 <wscn:ScannerLocation xml:lang="en-AU, en-CA, en-GB, en-US">
   LA Campus - Building 1
 </wscn:ScannerLocation>
 ```
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**ScannerDescription**](scannerdescription.md)
-
- 
-
- 
-
-
-
-
-
-

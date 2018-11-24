@@ -3,11 +3,7 @@ title: Features of Secure Mode
 description: Features of Secure Mode
 ms.assetid: bf40d018-7804-47df-9064-fb6f86da4b33
 keywords: ["Secure Mode, overview"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,9 +31,9 @@ The specific effects of Secure Mode are as follows:
 
 After it has been activated, Secure Mode cannot be turned off. For more information see, [Activating Secure Mode](activating-secure-mode.md).
 
- 
+ 
 
- 
+ 
 
 
 

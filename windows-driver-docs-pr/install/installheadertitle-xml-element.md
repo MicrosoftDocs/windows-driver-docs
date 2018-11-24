@@ -10,6 +10,7 @@ api_name:
 api_type:
 - NA
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # installHeaderTitle XML Element
@@ -21,7 +22,7 @@ The **installHeaderTitle** XML element customizes the bold text of the installat
 
 ### Element Tag
 
-```
+```cpp
 <installHeaderTitle>
 ```
 
@@ -39,7 +40,7 @@ None
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Parent elements</strong></p></td>
-<td align="left"><p>[<strong>language</strong>](language-xml-element.md)</p></td>
+<td align="left"><p><a href="language-xml-element.md" data-raw-source="[&lt;strong&gt;language&lt;/strong&gt;](language-xml-element.md)"><strong>language</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Child elements</strong></p></td>
@@ -56,13 +57,13 @@ None
 </tbody>
 </table>
 
- 
+ 
 
 ### <a href="" id="comments"></a>Remarks
 
 The following code example demonstrates an **installHeaderTitle** element that customizes the title text of an installation page. The text that specifies the custom install header title is shown in bold font style.
 
-```
+```cpp
 <dpinst>
   ...
   <language code="0x0409">
@@ -81,9 +82,9 @@ If an **installHeaderTitle** element is not specified, DPInst displays the defau
 
 [**language**](language-xml-element.md)
 
- 
+ 
 
- 
+ 
 
 
 

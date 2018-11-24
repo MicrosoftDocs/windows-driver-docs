@@ -5,11 +5,7 @@ ms.assetid: 81e2ace5-c430-4c70-8596-41bdbf931804
 keywords:
 - offloading state process WDK TCP chimney offload , sequence
 - state offloading process WDK TCP chimney offload , sequence
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,9 +31,9 @@ The following figure shows the initiate offload call sequence.
 
 The offload target's internal offload function, which is labeled "NicOffload" in the preceding figure, offloads the state from the state tree that is pointed to by the pointer that is in *OffloadBlockList* . After the internal offload is complete, the offload target writes a completion status to each NDIS\_MINIPORT\_OFFLOAD\_BLOCK\_LIST structure in the state tree and calls the **NdisMInitiateOffloadComplete** function, passing the pointer in *OffloadBlockList* back to the host stack.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: PnP-X for mobile broadband apps
 description: PnP-X for mobile broadband apps
 ms.assetid: f8f4756e-00b6-4778-9d67-73653865cf54
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,9 +28,9 @@ Although the app does not have access to the same privileged APIs as a mobile br
 
 [Communication channels](communication-channels.md)
 
- 
+ 
 
- 
+ 
 
 
 

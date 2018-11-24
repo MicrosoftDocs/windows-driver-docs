@@ -6,11 +6,7 @@ keywords:
 - Direct3D WDK Windows 2000 display
 - Direct3D WDK Windows 2000 display , advanced driver topics
 - Windows 2000 display driver model WDK , advanced Direct3D driver topics
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,9 +34,9 @@ The topics described in this section are:
 
 [Hardware Transform and Lighting](hardware-transform-and-lighting.md)
 
- 
+ 
 
- 
+ 
 
 
 

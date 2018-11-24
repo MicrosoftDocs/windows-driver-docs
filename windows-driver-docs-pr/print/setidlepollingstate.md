@@ -1,15 +1,10 @@
 ---
 title: SetIdlePollingState
-author: windows-driver-content
 description: SetIdlePollingState
 ms.assetid: 55eb8c74-d759-4837-8ee8-b6e1819c1366
 keywords:
 - SetIdlePollingState
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -41,11 +36,11 @@ The `SetIdlePollingState` command enables or disables polling for ports without 
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

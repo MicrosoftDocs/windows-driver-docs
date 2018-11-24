@@ -6,11 +6,7 @@ keywords:
 - TraceView WDK , starting
 - TraceView WDK , exiting
 - TraceView WDK , command-line interface
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,9 +38,9 @@ To start the TraceView at the command line, open a Command Prompt window, naviga
 
 For information about the TraceView commands, see [TraceView Command-Line Interface](traceview-command-line-interface.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -9,11 +9,7 @@ keywords:
 - proxy drivers WDK SANs , about SAN proxy drivers
 - SAN proxy drivers WDK , about SAN proxy drivers
 - SAN service providers WDK , proxy drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -43,9 +39,9 @@ The following sections describe how to create a proxy driver for a SAN service p
 
 [Implementing IOCTLs for a SAN Service Provider](implementing-ioctls-for-a-san-service-provider.md)
 
- 
+ 
 
- 
+ 
 
 
 

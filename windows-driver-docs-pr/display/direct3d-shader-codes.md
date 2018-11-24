@@ -2,11 +2,7 @@
 title: Direct3D Shader Codes
 description: Direct3D Shader Codes
 ms.assetid: 30d14bbe-10fe-46fc-99b3-ab2f989abb29
-ms.author: windowsdriverdev
 ms.date: 01/05/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ This section describes the format of an individual shader code and the tokens th
 
 [Shader Relative Addressing](shader-relative-addressing.md)
 
- 
+ 
 
- 
+ 
 
 
 

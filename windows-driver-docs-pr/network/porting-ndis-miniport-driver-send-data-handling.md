@@ -4,11 +4,7 @@ description: Porting NDIS Miniport Driver Send Data Handling
 ms.assetid: 0179ca24-f736-4937-b8ab-42e364d2c63b
 keywords:
 - send operation porting WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,7 +18,7 @@ The [*MiniportSendNetBufferLists*](https://msdn.microsoft.com/library/windows/ha
 
 NDIS 5.*x* miniport drivers specify the completion status of a send operation as a parameter to the [**NdisMSendComplete**](https://msdn.microsoft.com/library/windows/hardware/ff553613) function. NDIS 6.0 miniport drivers, however, specify the completion status in the NET\_BUFFER\_LIST structure by calling the [**NET\_BUFFER\_LIST\_STATUS**](https://msdn.microsoft.com/library/windows/hardware/ff568411) macro, as in the following example:
 
-```
+```C++
 NET_BUFFER_LIST_STATUS(pNetBufferList) = NDIS_STATUS_SUCCESS
 ```
 
@@ -32,9 +28,9 @@ If a miniport driver uses scatter gather DMA, it must call the [**NdisMAllocateN
 
 For more information about miniport driver send handling, see [Sending Data from a Miniport Driver](sending-data-from-a-miniport-driver.md).
 
- 
+ 
 
- 
+ 
 
 
 

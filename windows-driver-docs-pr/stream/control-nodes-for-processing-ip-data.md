@@ -1,17 +1,12 @@
 ---
 title: Control Nodes for Processing IP Data
-author: windows-driver-content
 description: Control Nodes for Processing IP Data
 ms.assetid: 6195ffe9-d20c-4687-8d45-abbfc17ba2fa
 keywords:
 - control nodes WDK BDA
 - nodes WDK BDA
 - IP data processing WDK BDA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,13 +32,13 @@ The following sequence and figure describe the data flow for IP data that is par
 
 **Note**   Starting with Windows Vista, the IPSink filter is not supported.
 
- 
+ 
 
 ![diagram illustrating ip data flow](images/ipdata.png)
 
- 
+ 
 
- 
+ 
 
 
 

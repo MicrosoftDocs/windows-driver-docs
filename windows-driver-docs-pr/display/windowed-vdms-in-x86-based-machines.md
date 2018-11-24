@@ -7,11 +7,7 @@ keywords:
 - VGA WDK video miniport , windowed VDMs in x86-based machines
 - windowed VDMs in x86-based machines WDK video miniport
 - x86-based machines WDK VGA-compatible video miniport
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ In NT-based operating system platforms, a kernel-mode component called the *V86 
 
 In other words, the display driver retains control of the video adapter while a VDM runs in a window.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,17 +1,9 @@
 ---
 title: WinDbg Preview - Settings and workspaces
 description: This section describes how to setup the WinDbg preview debugger.
-ms.author: domars
 ms.date: 08/17/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
-
-> [!NOTE]
-> The information in this topic is preliminary. Updated information will be provided in a later release of the documentation. 
->
 
 # WinDbg Preview - Settings and workspaces
 
@@ -84,7 +76,7 @@ The workspace and target connection information is stored in XML format.
 
 The following file, shows an example workspaces configuration file.
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <TargetConfig Name="C:\paint.dmp" LastUsed="2017-08-03T21:34:20.1013837Z">
   <EngineConfig />
@@ -115,18 +107,17 @@ The following file, shows an example workspaces configuration file.
     </Option>
   </TargetOptions>
 </TargetConfig>
-
 ```
 
 Note that this file format will continue to evolve as more features are added to the WinDbg Preview debugger.
 
 
 ---
- 
+
 ## See Also
 
 [Debugging Using WinDbg Preview](debugging-using-windbg-preview.md)
- 
+
 
 
 

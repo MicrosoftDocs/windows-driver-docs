@@ -3,11 +3,7 @@ title: Enable bad handles detection
 description: Enable bad handles detection
 ms.assetid: beeecb82-a270-416e-8a2a-dd64af3d052e
 keywords: ["Enable bad handles detection (global flag)"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -44,11 +40,11 @@ The **Enable bad handles detection** flag raises a user-mode exception (STATUS\_
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

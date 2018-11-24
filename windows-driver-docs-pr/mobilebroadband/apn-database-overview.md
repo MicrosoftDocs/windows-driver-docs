@@ -2,11 +2,7 @@
 title: APN database overview
 description: APN database overview
 ms.assetid: 699b797e-c225-47ba-96a5-26b15c91a759
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,11 +21,11 @@ To see a list of available settings MOs can configure in the APN database, see [
 
 To connect to a mobile broadband network, the user typically provides the following information:
 
--   In Global System for Mobile Communications (GSM) networks, an APN such as **data.contoso.com**.
+- In Global System for Mobile Communications (GSM) networks, an APN such as **data.contoso.com**.
 
--   In CDMA networks, an access string that includes a special dial code such as **\#777**, or a Network Access Identifier (NAI) such as **ann@contoso.com**.
+- In CDMA networks, an access string that includes a special dial code such as **\#777**, or a Network Access Identifier (NAI) such as <strong>ann@contoso.com</strong>.
 
--   The user’s credentials (username and password) for the network connection.
+- The user’s credentials (username and password) for the network connection.
 
 Specifically, the APN database includes the following data:
 
@@ -63,7 +59,7 @@ For more information on the APN database XML schema, see [APN database schema re
 
 
 If you want to request a new APN or update an existing one, see [COSA/APN database submission](cosa-apn-database-submission.md).
- 
+ 
 
 
 

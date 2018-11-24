@@ -2,11 +2,8 @@
 title: Get started with the Hardware program
 description: Get started with the Hardware program
 ms.assetid: 000B5BBB-61EF-4837-8E5E-EF1BBB65B14E
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
@@ -58,7 +55,7 @@ These programs enable you to design, create, and test your hardware and drivers 
     -   [Expire a driver from Windows Update](expire-a-driver-from-windows-update.md)
     -   [View partner shipping labels for a shared driver](viewing-shipping-labels-for-your-shared-driver.md)
 
- 
+ 
 
- 
+ 
 

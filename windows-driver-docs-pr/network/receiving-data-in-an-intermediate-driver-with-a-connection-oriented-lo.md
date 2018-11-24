@@ -5,11 +5,7 @@ ms.assetid: c14b4e8a-cfa2-4771-83b2-aa20fda79d39
 keywords:
 - intermediate drivers WDK networking , receive operations
 - NDIS intermediate drivers WDK , receive operations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,9 +21,9 @@ An underlying connection-oriented miniport driver indicates network data by call
 
 For more information about receiving data in an intermediate driver with a connection-oriented lower edge, see [Connection-Oriented Operations](connection-oriented-operations.md).
 
- 
+ 
 
- 
+ 
 
 
 

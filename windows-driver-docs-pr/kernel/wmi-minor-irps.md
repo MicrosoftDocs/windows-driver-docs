@@ -1,12 +1,7 @@
 ---
 title: WMI Minor IRPs
-author: windows-driver-content
 description: WMI Minor IRPs
-ms.author: windowsdriverdev
 ms.date: 08/12/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.assetid: 5788294f-2145-4381-9b06-3b138b2d26df
 ms.localizationpriority: medium
 ---
@@ -51,9 +46,9 @@ This section describes the following system-defined WMI minor function codes:
 
 If the driver receives an IRP containing any other IRP minor function code, it should forward the IRP to the next-lower driver.
 
- 
+ 
 
- 
+ 
 
 
 

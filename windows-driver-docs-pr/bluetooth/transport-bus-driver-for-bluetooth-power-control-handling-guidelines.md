@@ -2,11 +2,7 @@
 title: Transport Bus Driver for Bluetooth Power Control Handling Guidelines
 description: IHVs need to implement a transport bus driver in order to support Bluetooth functionality of a multifunction controller often integrated in a System on Chip (SoC) system.
 ms.assetid: 00792128-320E-45C1-9F58-343B72565CA7
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ The information in this section and its subtopics provides guidelines and sample
 
 While different transports are being used to support Bluetooth, the Bluetooth DDIs remain the same for Bluetooth profile drivers. This means that Bluetooth profile drivers and applications remain agnostic to the transport or power control handling being implemented.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -8,11 +8,7 @@ keywords:
 - tracing WDK , providers
 - -enumguid command
 - enumguid command
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -60,7 +56,7 @@ The table in the Tracelog enumguid display includes the following columns.
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Guid</strong></p></td>
-<td align="left"><p>The [control GUID](control-guid.md) of the trace provider</p></td>
+<td align="left"><p>The <a href="control-guid.md" data-raw-source="[control GUID](control-guid.md)">control GUID</a> of the trace provider</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Enabled</strong></p></td>

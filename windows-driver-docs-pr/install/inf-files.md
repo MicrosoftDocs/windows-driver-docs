@@ -2,11 +2,7 @@
 title: INF Files
 description: INF Files
 ms.assetid: 8557a072-1b08-41f9-8c35-976a96ff639c
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ This section includes the following topics:
 -   [Accessing INF Files from a Device Installation Application](accessing-inf-files-from-a-setup-application.md)
 -   [Providing Vendor Icons for the Shell and AutoPlay](providing-vendor-icons-for-the-shell-and-autoplay.md)
 
- 
+ 
 
- 
+ 
 
 
 

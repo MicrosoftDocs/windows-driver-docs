@@ -3,11 +3,7 @@ title: .setdll (Set Default Extension DLL)
 description: The .setdll command changes the default extension DLL for the debugger.
 ms.assetid: 9dc5cd9e-d4f2-4112-bf3d-f7061c786ddf
 keywords: ["Set Default Extension DLL (.setdll) command", "extension commands ( commands), Set Default Extension DLL (.setdll) command", ".setdll (Set Default Extension DLL) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **.setdll** command changes the default extension DLL for the debugger.
 
-```
+```dbgcmd
 .setdll DLLName 
 !DLLName.setdll 
 ```
@@ -56,7 +52,7 @@ The name and path of the extension DLL. If the full path was specified when the 
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -69,9 +65,9 @@ The debugger maintains a default extension DLL that is implicitly loaded when th
 
 When a command is issued, the debugger looks for it in the default extension first. If a match is not found, all other loaded extension DLLs are searched in the order they were loaded.
 
- 
+ 
 
- 
+ 
 
 
 

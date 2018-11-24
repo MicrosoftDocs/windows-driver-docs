@@ -2,11 +2,7 @@
 title: Overview of the Driver Selection Process
 description: Overview of the Driver Selection Process
 ms.assetid: 120ab9f9-6ac5-4b76-bee1-2e975d0c38f2
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -43,7 +39,7 @@ Starting with Windows Vista, Windows also ranks drivers based on whether the dri
 
 **Note**  Starting with Windows 7, the [AllSignersEqual Group Policy](allsignersequal-group-policy--windows-vista-and-later-.md) is enabled by default. In Windows Vista and Windows Server 2008, the **AllSignersEqual** Group Policy is disabled by default. IT departments can override the default ranking behavior by enabling or disabling the **AllSignersEqual** Group Policy.
 
- 
+ 
 
 Signatures from a Windows signing authority include the following:
 
@@ -71,9 +67,9 @@ Windows uses the following criteria to select a driver for a device:
 
 -   For drivers that have equal rank, date, and version, Windows can select any driver.
 
- 
+ 
 
- 
+ 
 
 
 

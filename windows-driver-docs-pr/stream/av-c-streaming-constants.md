@@ -2,11 +2,7 @@
 title: AV/C Streaming Constants
 description: AV/C Streaming Constants
 ms.assetid: 1c72796b-04b8-4c5b-bfc0-6a5a2f4ceebc
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,9 +16,9 @@ An AV/C Streaming subunit minidriver uses the following constants:
 
 [AV/C Streaming Format GUIDs](av-c-streaming-format-guids.md)
 
- 
+ 
 
- 
+ 
 
 
 

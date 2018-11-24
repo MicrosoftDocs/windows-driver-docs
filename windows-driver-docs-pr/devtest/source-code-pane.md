@@ -4,11 +4,7 @@ description: Source Code Pane
 ms.assetid: 2d4ee4da-1340-473b-83dc-018e1d6910eb
 keywords:
 - panes WDK Static Driver Verifier
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ The **Source Code** pane displays all of the source code files that are involved
 
 [Color Coding in the Source Code Pane](color-coding-in-the-source-code-pane.md)
 
- 
+ 
 
- 
+ 
 
 
 

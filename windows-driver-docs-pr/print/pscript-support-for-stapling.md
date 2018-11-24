@@ -1,16 +1,11 @@
 ---
 title: Pscript Support for Stapling
-author: windows-driver-content
 description: Pscript Support for Stapling
 ms.assetid: 75fc11e1-5cd9-4e95-b062-989fe493fdb5
 keywords:
 - minidrivers WDK Pscript , stapling
 - stapling WDK Pscript
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,9 +37,9 @@ To determine whether the device supports stapling, the Pscript driver uses the f
 
 3.  If one or more of the previously-listed standard stapling features (other than \*StapleOrientation) are defined in the PPD file and if any of the defined features is constrained by the current configuration of an installable feature, then stapling is not supported. For example, if the NotInstalled option of the DuplexerUnit installable feature places a constraint on \*StapleLocation, and the printer's current configuration for DuplexerUnit is NotInstalled, then stapling is not supported.
 
- 
+ 
 
- 
+ 
 
 
 

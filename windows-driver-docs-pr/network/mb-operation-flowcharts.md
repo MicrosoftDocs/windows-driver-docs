@@ -2,11 +2,7 @@
 title: MB Operation Flowcharts
 description: MB Operation Flowcharts
 ms.assetid: 0d450af1-6e39-4492-b112-9db7b6597539
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +27,9 @@ The following topics describe the operational flow for various configurations an
 
 [Signal Strength Indication Semantics](signal-strength-indication-semantics.md)
 
- 
+ 
 
- 
+ 
 
 
 

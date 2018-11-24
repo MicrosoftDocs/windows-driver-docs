@@ -6,11 +6,7 @@ keywords:
 - DirectX Video Acceleration WDK Windows 2000 display , standards
 - Video Acceleration WDK DirectX , standards
 - VA WDK DirectX , standards
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,9 +32,9 @@ DirectX VA provides support for ITU-T H.261, MPEG-1, MPEG-2 (H.262), ITU-T H.263
 
 [VC-1](vc-1.md)
 
- 
+ 
 
- 
+ 
 
 
 

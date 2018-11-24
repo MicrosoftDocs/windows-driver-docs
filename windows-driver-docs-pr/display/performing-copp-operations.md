@@ -7,11 +7,7 @@ keywords:
 - video copy protection WDK COPP , COPP operations
 - COPP WDK DirectX VA , operations
 - protected video WDK COPP , COPP operations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +30,9 @@ The following topics describe operations performed by using the COPP DDI:
 
 [COPP Status Events](copp-status-events.md)
 
- 
+ 
 
- 
+ 
 
 
 

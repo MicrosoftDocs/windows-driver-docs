@@ -5,11 +5,7 @@ ms.assetid: b41bd7e0-bb6c-4933-a5d0-18e4d067601b
 keywords:
 - SAN service providers WDK , required functions
 - functions WDK SANs
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -74,9 +70,9 @@ Sets the value of an option for a socket.
 <a href="" id="wspsocket"></a>[**WSPSocket**](https://msdn.microsoft.com/library/windows/hardware/ff566319)  
 Creates a socket that uses the TCP/IP protocol and asynchronous (overlapped) data transfer.
 
- 
+ 
 
- 
+ 
 
 
 

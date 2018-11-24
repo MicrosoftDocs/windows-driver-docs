@@ -9,11 +9,7 @@ keywords:
 - custom OIDs WDK networking
 - custom status indications WDK networking
 - WMI WDK networking , OID
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -39,9 +35,9 @@ This section includes:
 
 [Including a MOF File](including-a-mof-file.md)
 
- 
+ 
 
- 
+ 
 
 
 

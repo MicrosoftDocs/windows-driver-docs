@@ -9,11 +9,7 @@ api_name:
 - wscn JobOriginatingUserName
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **JobOriginatingUserName** element specifies the name of the user w
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:JobOriginatingUserName>
   text
 </wscn:JobOriginatingUserName>
@@ -60,13 +56,13 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>JobDescription</strong>](jobdescription.md)</p></td>
+<td><p><a href="jobdescription.md" data-raw-source="[&lt;strong&gt;JobDescription&lt;/strong&gt;](jobdescription.md)"><strong>JobDescription</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>JobEndState</strong>](jobendstate.md)</p></td>
+<td><p><a href="jobendstate.md" data-raw-source="[&lt;strong&gt;JobEndState&lt;/strong&gt;](jobendstate.md)"><strong>JobEndState</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>JobSummary</strong>](jobsummary.md)</p></td>
+<td><p><a href="jobsummary.md" data-raw-source="[&lt;strong&gt;JobSummary&lt;/strong&gt;](jobsummary.md)"><strong>JobSummary</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -80,7 +76,7 @@ The WSD Scan Service can provide a default **JobOriginatingUserName** name in it
 
 The name of the job is specified in the [**JobName**](jobname.md) element.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**DefaultScanTicket**](defaultscanticket.md)
@@ -93,9 +89,9 @@ The name of the job is specified in the [**JobName**](jobname.md) element.
 
 [**JobSummary**](jobsummary.md)
 
- 
+ 
 
- 
+ 
 
 
 

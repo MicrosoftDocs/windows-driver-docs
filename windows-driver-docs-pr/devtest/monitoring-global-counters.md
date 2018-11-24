@@ -7,11 +7,7 @@ keywords:
 - Driver Verifier WDK , counters
 - statistics WDK Driver Verifier
 - counters WDK Driver Verifier
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -84,9 +80,9 @@ The following global counter monitors a statistic related to the [Special Pool](
 <span id="Pool_Allocations_Not_Tracked"></span><span id="pool_allocations_not_tracked"></span><span id="POOL_ALLOCATIONS_NOT_TRACKED"></span>**Pool Allocations Not Tracked**  
 The number of untracked allocations from all drivers currently being verified. Allocations whose size is one page or larger are not tracked by Pool Tracking and cannot be allocated from the special pool. The [individual counters](monitoring-individual-counters.md) do not reflect these allocations. (In Windows 2000, this counter can be found on the **Pool Tracking** screen under the title **Not Tracked Allocations**.)
 
- 
+ 
 
- 
+ 
 
 
 

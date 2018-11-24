@@ -1,13 +1,8 @@
 ---
 title: Hardware Resources for User-Mode SPB Peripheral Drivers
-author: windows-driver-content
 description: Code examples for a UMDF driver for a peripheral device on an SPB, and obtains the hardware resources.
 ms.assetid: 4D240011-1F4E-4C1E-8258-A2CF44BD3F06
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +22,7 @@ For more information about this directive, see [Specifying WDF Directives in INF
 
 The following code example shows how the driver's **OnPrepareHardware** method obtains the connection ID from the *pWdfResourcesTranslated* parameter.
 
-```
+```cpp
 BOOLEAN fConnectIdFound = FALSE;
 BOOLEAN fDuplicateFound = FALSE;
 LARGE_INTEGER connectionId = 0;
@@ -99,7 +94,7 @@ for (ULONG ix = 0; ix < resourceCount; ix++)
 
 The preceding code example copies the connection ID for an SPB-connected peripheral device into a variable named `connectionId`. The following code example shows how to incorporate the connection ID into a device path name that can be used to identify the peripheral device.
 
-```
+```cpp
 WCHAR szTargetPath[100];
 HRESULT hres;
 
@@ -122,7 +117,7 @@ if (FAILED(hres))
 
 The preceding code example writes the path name for the SPB-connected peripheral device into the `szTargetPath` array. The following code example uses this device path name to open a file handle to the SPB-connected peripheral device.
 
-```
+```cpp
 UMDF_IO_TARGET_OPEN_PARAMS openParams;
 
 openParams.dwShareMode = 0;
@@ -142,7 +137,7 @@ In the preceding code example, the `pRemoteTarget` variable is a pointer to an [
 
 In the following code example, the SPB peripheral driver calls the **Send** method to send an [**IRP\_MJ\_WRITE**](https://msdn.microsoft.com/library/windows/hardware/ff550819) request to the SPB-connected peripheral device.
 
-```
+```cpp
 HRESULT hres;
 IWDFMemory *pInputMemory = NULL;
 IWDFRemoteTarget *pWdfIoRequest = NULL;
@@ -232,9 +227,9 @@ An alternative implementation of the preceding code example might create **IWDFI
 
 In addition, an alternative implementation might inspect the I/O status code from the I/O request if the **Send** call succeeds. For more information, see [**IWDFIoRequest::GetCompletionParams**](https://msdn.microsoft.com/library/windows/hardware/ff559084).
 
- 
+ 
 
- 
+ 
 
 
 

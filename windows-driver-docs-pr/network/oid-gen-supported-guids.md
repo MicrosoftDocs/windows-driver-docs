@@ -1,13 +1,8 @@
 ---
 title: OID_GEN_SUPPORTED_GUIDS
-author: windows-driver-content
 description: As a query, the OID_GEN_SUPPORTED_GUIDS OID requests the miniport driver to return an array of structures of the type NDIS_GUID.
 ms.assetid: 6985727e-50f8-4dbf-b8cd-ce31d49e8294
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_GEN_SUPPORTED_GUIDS Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -42,7 +37,7 @@ Each structure in the array specifies the mapping of a custom GUID (globally uni
 
 The NDIS\_GUID structure is defined as follows:
 
-```
+```C++
 typedef struct _NDIS_GUID {
     GUID             Guid;
     union {
@@ -95,13 +90,13 @@ When set, indicates that all users are allowed to use this GUID to set informati
 **Note**  
 By default, custom WMI GUIDs supplied by a miniport driver are only accessible to users with administrator privileges. A user with administrator privileges can always read or write to a custom GUID if the miniport driver supports the read or write operation for that GUID. Set the fNDIS\_GUID\_ALLOW\_READ and fNDIS\_GUID\_ALLOW\_WRITE flags to allow all users to access a custom GUID.
 
- 
+ 
 
 Note that all custom GUIDs registered by a miniport driver must set either fNDIS\_GUID\_TO\_OID or fNDIS\_GUID\_TO\_STATUS (never set both). All other flags may be combined by using the OR operator as applicable.
 
 In the following example, an NDIS\_GUID structure maps a GUID to OID\_802\_3\_MULTICAST\_LIST:
 
-```
+```C++
 NDIS_GUID    NdisGuid = {{0x44795701, 0xa61b, 0x11d0, 0x8d, 0xd4,
                           0x00, 0xc0, 0x4f, 0xc3,
                           0x35, 0x8c},
@@ -137,9 +132,9 @@ Requirements
 
 [**NdisMIndicateStatusEx**](https://msdn.microsoft.com/library/windows/hardware/ff563600)
 
- 
+ 
 
- 
+ 
 
 
 

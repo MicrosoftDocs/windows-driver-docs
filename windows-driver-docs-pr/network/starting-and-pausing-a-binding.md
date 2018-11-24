@@ -2,11 +2,7 @@
 title: Starting and Pausing a Binding
 description: Starting and Pausing a Binding
 ms.assetid: acf2b694-b233-4818-8e3d-2cac4e25bc49
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +22,9 @@ The following topics provide more information about starting and pausing a bindi
 
 [Pausing a Binding](pausing-a-binding.md)
 
- 
+ 
 
- 
+ 
 
 
 

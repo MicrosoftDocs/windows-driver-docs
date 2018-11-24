@@ -2,11 +2,7 @@
 title: PwrTest Sleep Scenario
 description: The PwrTest Sleep Scenario facilitates automated testing of sleep and resume transitions.
 ms.assetid: 2003ff3e-bc29-4741-a0a6-371948982679
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,13 +20,13 @@ PwrTest is capable of directing the platform into one or more sleep states in an
 pwrtest /sleep [/c:n] [/d:n] [/p:n] [/h:{y|n}] [/s:{1|3|4|all|rnd|hibernate|standby}] [/unattend] [/e:n] [/?] 
 ```
 
-<span id="_c_n"></span><span id="_C_N"></span>**/c:***n*  
+<span id="_c_n"></span><span id="_C_N"></span>**/c:**<em>n</em>  
 Specifies the number of cycles (1 is the default) to run.
 
-<span id="_d_n"></span><span id="_D_N"></span>**/d:***n*  
+<span id="_d_n"></span><span id="_D_N"></span>**/d:**<em>n</em>  
 Specifies the delay time in seconds (90 is the default).
 
-<span id="_p_n"></span><span id="_P_N"></span>**/p:***n*  
+<span id="_p_n"></span><span id="_P_N"></span>**/p:**<em>n</em>  
 Specifies the sleep time in seconds (60 is default). If wake timer isn't supported for hibernate, the system will restart and immediately resume after writing the hibernation file) .
 
 <span id="_h_yn"></span><span id="_H_YN"></span>**/h:**{**y**|**n**}  
@@ -62,7 +58,7 @@ Specifies target state is any available Standby state (S1 or S3).
 <span id="_unattend____"></span><span id="_UNATTEND____"></span>**/unattend**   
 Specifies not to change system execution state after wakeup.
 
-<span id="_e_n"></span><span id="_E_N"></span>**/e:***n*  
+<span id="_e_n"></span><span id="_E_N"></span>**/e:**<em>n</em>  
 Specifies the timeout in seconds to wait for the transition end event (120 seconds is the default) .
 
 **Examples**
@@ -120,7 +116,6 @@ pwrtest pwrtest /sleep /c:4 /s:all
     </SleepTransitions> 
   </SleepScenario> 
 </PwrTestLog> 
-
 ```
 
 The following table describes the XML elements that appear in the log file.
@@ -196,16 +191,16 @@ The following table describes the XML elements that appear in the log file.
 </tbody>
 </table>
 
- 
+
 
 ## <span id="related_topics"></span>Related topics
 
 
 [PwrTest Syntax](pwrtest-syntax.md)
 
- 
 
- 
+
+
 
 
 

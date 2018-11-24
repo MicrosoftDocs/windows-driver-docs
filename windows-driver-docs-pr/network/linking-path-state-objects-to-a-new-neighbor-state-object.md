@@ -7,11 +7,7 @@ keywords:
 - inking path state objects WDK TCP chimney offload
 - reinking path state objects WDK TCP chimney offload
 - path state object relinking WDK TCP chimney offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -43,9 +39,9 @@ The host stack updates the cached *DestinationAddress* variable of an offloaded 
 
 When the host is notified of a change in the neighbor's next hop address--for example through an Internet Control Message Protocol (ICMP) redirect or a Routing Information Protocol (RIP) update--the host stack ultimately relinks the effected path state objects to a different neighbor state object. Because the link between a path state object and a neighbor state object represents the IP address of the neighbor, relinking the paths to a new neighbor is equivalent to changing the next hop address.
 
- 
+ 
 
- 
+ 
 
 
 

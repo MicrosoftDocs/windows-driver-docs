@@ -2,11 +2,7 @@
 title: Encoder Events
 description: Encoder Events
 ms.assetid: 4aa6877e-8963-41ba-a7b5-4ca312d851bf
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,9 +16,9 @@ The following event sets are defined for video encoder minidrivers:
 
 [CODECAPI\_CHANGELISTS](codecapi-changelists.md)
 
- 
+ 
 
- 
+ 
 
 
 

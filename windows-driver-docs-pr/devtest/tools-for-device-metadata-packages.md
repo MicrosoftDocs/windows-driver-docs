@@ -2,11 +2,7 @@
 title: Tools for Device Metadata Packages
 description: Tools for Device Metadata Packages
 ms.assetid: 3d0daa9b-79c8-456d-bdbf-d7efa2d898c4
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,9 +15,9 @@ The Microsoft Windows Driver Kit (WDK) includes the following tools that you can
 
 [ComputerHardwareIds](computerhardwareids.md)
 
- 
+ 
 
- 
+ 
 
 
 

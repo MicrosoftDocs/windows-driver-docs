@@ -1,6 +1,5 @@
 ---
 title: Iasphelp get\_MaximumResolution method
-author: windows-driver-content
 description: The MaximumResolution property enables an ASP Web page to determine a printer's maximum resolution.
 MS-HAID:
 - 'webfnc\_156e8337-489a-44e6-9c81-0a8f6dd3aa08.xml'
@@ -16,18 +15,18 @@ api_name:
 - Iasphelp.get_MaximumResolution
 api_type:
 - COM
+ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # Iasphelp::get\_MaximumResolution method
-
 
 The **MaximumResolution** property enables an ASP Web page to determine a printer's maximum resolution.
 
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT get_MaximumResolution(
   [out] long *pVal
 );
@@ -62,7 +61,7 @@ This property returns one of the values in the following table.
 </tr>
 <tr class="even">
 <td><strong>E_HANDLE</strong></td>
-<td><p>The [<strong>Iasphelp::Open</strong>](iasphelp-open.md) method has not been called.</p></td>
+<td><p>The <a href="iasphelp-open.md" data-raw-source="[&lt;strong&gt;Iasphelp::Open&lt;/strong&gt;](iasphelp-open.md)"><strong>Iasphelp::Open</strong></a> method has not been called.</p></td>
 </tr>
 <tr class="odd">
 <td><strong>E_OUTOFMEMORY</strong></td>
@@ -71,24 +70,16 @@ This property returns one of the values in the following table.
 </tbody>
 </table>
 
- 
-
-## <span id="ddk_iasphelp_maximumresolution_gg"></span><span id="DDK_IASPHELP_MAXIMUMRESOLUTION_GG"></span>
-
-
-### <span id="vbscript_example"></span><span id="VBSCRIPT_EXAMPLE"></span>VBScript Example
-
-Remarks
--------
+## VBScript Example
 
 The [**Iasphelp::Open**](iasphelp-open.md) method must be called before the **Iasphelp::MaximumResolution** property can be queried.
 
-```
-    Dim objPrinter, MaxRes
-    strPrinter = Session("MS_printer")
-    Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
-    objPrinter.Open strPrinter
-    MaxRes = objPrinter.MaximumResolution
+```vb
+Dim objPrinter, MaxRes
+strPrinter = Session("MS_printer")
+Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
+objPrinter.Open strPrinter
+MaxRes = objPrinter.MaximumResolution
 ```
 
 Requirements
@@ -104,22 +95,9 @@ Requirements
 <td><p>Target platform</p></td>
 <td>Desktop</td>
 </tr>
-<tr class="even">
-<td><p>Version</p></td>
-<td><p>Available in Windows 2000 and later versions of the Windows operating systems.</p></td>
-</tr>
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**Iasphelp::Open**](iasphelp-open.md)
-
- 
-
- 
-
-
-
-

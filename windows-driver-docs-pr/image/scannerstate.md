@@ -9,11 +9,7 @@ api_name:
 - wscn ScannerState
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **ScannerState** element identifies the current state of the scanni
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ScannerState>
   text
 </wscn:ScannerState>
@@ -47,7 +43,7 @@ Required. One of the following string values.
 | Processing | The scanner is currently processing jobs.                    |
 | Stopped    | No jobs can be processed and intervention is needed.         |
 
- 
+ 
 
 ## Child elements
 
@@ -68,10 +64,10 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ScannerStatus</strong>](scannerstatus.md)</p></td>
+<td><p><a href="scannerstatus.md" data-raw-source="[&lt;strong&gt;ScannerStatus&lt;/strong&gt;](scannerstatus.md)"><strong>ScannerStatus</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>StatusSummary</strong>](statussummary.md)</p></td>
+<td><p><a href="statussummary.md" data-raw-source="[&lt;strong&gt;StatusSummary&lt;/strong&gt;](statussummary.md)"><strong>StatusSummary</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -85,7 +81,7 @@ The WSD Scan Service informs a client about changes to the scanner's status by s
 
 You can both extend and subset the allowed values for this element.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**GetScannerElementsRequest**](getscannerelementsrequest.md)
@@ -96,9 +92,9 @@ You can both extend and subset the allowed values for this element.
 
 [**StatusSummary**](statussummary.md)
 
- 
+ 
 
- 
+ 
 
 
 

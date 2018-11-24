@@ -5,11 +5,7 @@ ms.assetid: 5835b2e7-0a66-474c-ba1b-40618403075d
 keywords:
 - warnings listed WDK PREfast for Drivers
 - errors listed WDK PREfast for Drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,9 +20,9 @@ Typically, the **\_IRQL\_requires\_same\_** annotation is used on callback funct
 
 To avoid this warning, the driver must properly save the initial IRQL value and restore the same IRQL value at function exit, which is what the **\_IRQL\_requires\_same\_** annotation asserts.
 
- 
+ 
 
- 
+ 
 
 
 

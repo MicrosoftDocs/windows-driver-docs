@@ -7,11 +7,7 @@ keywords:
 - video copy protection WDK COPP , protection levels
 - COPP WDK DirectX VA , protection levels
 - protected video WDK COPP , protection levels
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,11 +31,11 @@ While the global reference counter is greater than 0, the video miniport driver 
 
 **Note**   The *DdMoCompDestroy* function might be called while the COPP device's local reference counter is still set to greater than 0 (for example, if the user-mode process terminated abnormally).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -8,11 +8,7 @@ keywords:
 - FVF WDK Direct3D
 - vertex buffers WDK Direct3D
 - Direct3D WDK Windows 2000 display , flexible vertex format
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -117,7 +113,7 @@ The driver determines which components are present by analyzing the flags specif
 </tbody>
 </table>
 
- 
+ 
 
 Only one of the D3DFVF\_TEX *n* flags is set.
 
@@ -153,13 +149,13 @@ FVF data is always tightly packed; that is, no memory is wasted on components th
 
 In the preceding figure it is assumed that there are only two texture coordinates. The vertex data supplied to the driver is always transformed and lit. The driver never receives normals. All data in the FVF texture coordinate sets are single precision IEEE floats. For implementation details, see the *Perm3* sample driver. For more information about FVF, see the DirectX SDK documentation.
 
-**Note**   The Microsoft Windows Driver Kit (WDK) does not contain the 3Dlabs Permedia3 sample display driver (*Perm3.h*). You can get this sample driver from the Windows Server 2003 SP1 Driver Development Kit (DDK), which you can download from the [DDK - Windows Driver Development Kit](http://go.microsoft.com/fwlink/p/?linkid=21859) page of the WDHC website.
+**Note**   The Microsoft Windows Driver Kit (WDK) does not contain the 3Dlabs Permedia3 sample display driver (*Perm3.h*). You can get this sample driver from the Windows Server 2003 SP1 Driver Development Kit (DDK), which you can download from the DDK - Windows Driver Development Kit page of the WDHC website.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

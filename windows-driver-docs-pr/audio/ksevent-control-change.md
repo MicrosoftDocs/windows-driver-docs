@@ -11,11 +11,7 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,13 +38,13 @@ The KSEVENT\_CONTROL\_CHANGE event indicates that a change in control value has 
 <tbody>
 <tr class="odd">
 <td align="left"><p>Pin</p></td>
-<td align="left"><p>[<strong>KSE_NODE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff561937)</p></td>
-<td align="left"><p>[<strong>KSEVENTDATA</strong>](https://msdn.microsoft.com/library/windows/hardware/ff561750)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff561937" data-raw-source="[&lt;strong&gt;KSE_NODE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff561937)"><strong>KSE_NODE</strong></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff561750" data-raw-source="[&lt;strong&gt;KSEVENTDATA&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff561750)"><strong>KSEVENTDATA</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The event value type (operation data) is a KSEVENTDATA structure that specifies the type of notification to use for an event.
 
@@ -81,9 +77,9 @@ Requirements
 
 [IPortEvents](https://msdn.microsoft.com/library/windows/hardware/ff536884)
 
- 
+ 
 
- 
+ 
 
 
 

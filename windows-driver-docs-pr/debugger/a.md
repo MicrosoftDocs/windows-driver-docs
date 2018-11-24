@@ -3,11 +3,7 @@ title: A (Windows Debugger Glossary)
 description: Glossary page - A
 Robots: noindex, nofollow
 ms.assetid: ef7fa08b-0eed-4ef9-8b2f-79247e2ad988
-ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +27,9 @@ See also [specific exception filter](https://msdn.microsoft.com/library/windows/
 
 For more information, see [Event Filters](event-filters.md).
 
- 
+ 
 
- 
+ 
 
 
 

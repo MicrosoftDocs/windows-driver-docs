@@ -7,11 +7,7 @@ keywords:
 - graphics drivers WDK Windows 2000 display , graphics language for applications
 - drawing WDK GDI , graphics language for applications
 - graphics language for applications WDK GDI
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,9 +19,9 @@ ms.localizationpriority: medium
 
 Both the Win32 GDI and the graphics engine are completely device-independent. Consequently, applications do not need to access the hardware directly. Based on an application graphics request, GDI works in conjunction with device-dependent graphics drivers to provide high quality graphics output for an array of graphics devices. The same GDI code paths are used for both printing and display devices.
 
- 
+ 
 
- 
+ 
 
 
 

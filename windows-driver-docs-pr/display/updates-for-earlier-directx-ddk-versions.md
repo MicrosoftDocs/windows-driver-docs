@@ -2,11 +2,7 @@
 title: Updates for Earlier DirectX DDK Versions
 description: Updates for Earlier DirectX DDK Versions
 ms.assetid: dd05c0ca-faf4-4591-b699-afdab2085108
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +22,9 @@ The following topics describe features that were not previously documented and t
 
 [Supplying Default Values for Texture Coordinates in Vertex Declarations](supplying-default-values-for-texture-coordinates-in-vertex-declaration.md)
 
- 
+ 
 
- 
+ 
 
 
 

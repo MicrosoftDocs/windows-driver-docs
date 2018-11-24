@@ -2,11 +2,7 @@
 title: Freeing Resources for a Virtual Function
 description: Freeing Resources for a Virtual Function
 ms.assetid: 48FACA22-69B2-456C-9009-3CA42DE94FC4
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,9 +17,9 @@ This section includes the following topics:
 
 [Handling OID\_NIC\_SWITCH\_FREE\_VF Requests](handling-oid-nic-switch-allocate-vf-requests.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Troubleshooting KMDF and UMDF Driver Installation
-author: windows-driver-content
 description: Troubleshooting KMDF and UMDF Driver Installation
 ms.assetid: b0b71adc-cb6e-4b84-a5bf-bd1269bcf315
 keywords:
@@ -9,11 +8,7 @@ keywords:
 - INF files WDK KMDF , debugging
 - debugging drivers WDK KMDF , installations
 - driver debugging WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,7 +24,7 @@ Additionally, the co-installer writes its debugging messages to the [Setup actio
 
 The following output in the Setup action log is from the successful installation of a KMDF driver:
 
-```
+```cpp
 WdfCoInstaller: DIF_INSTALLDEVICE: Pre-Processing
 WdfCoInstaller: ReadComponents:  WdfSection for Driver Service ECHO using KMDF lib version Major 0x1, minor 0x9 
 WdfCoInstaller: DIF_INSTALLDEVICE: Coinstaller version: 1.9.7100
@@ -44,7 +39,7 @@ In the above scenario, no update was necessary because the on-disk version and i
 
 Consider the following output, which details an unsuccessful installation:
 
-```
+```cpp
 WdfCoInstaller: ReadComponents:  WdfSection for Driver Service ECHO using KMDF lib version Major 0x1, minor 0x9  
 WdfCoInstaller: DIF_INSTALLDEVICE: Coinstaller version: 1.9.7100
 WdfCoInstaller: DIF_INSTALLDEVICE: KMDF in-memory version: 1.7.6000
@@ -67,7 +62,7 @@ You can also check the system event log for errors related to the dynamic bindin
 
 The following output in the Setup action log describes a successful UMDF driver installation.
 
-```
+```cpp
 WudfUpdate: installing version (1,9,0,7100).
 WudfUpdate: Checking for presence of previous UMDF installation.
 WudfUpdate: Found binary %WINDIR%\system32\drivers\wudfrd.sys version (1.9.0.7100)
@@ -82,14 +77,13 @@ WudfCoInstaller: ReadWdfSection: Checking WdfSection [Echo_Install.NT.Wdf]
 WudfCoInstaller: Configuring UMDF Service  WUDFEchoDriver.
 WudfCoInstaller: Service WudfSvc is already running.
 WudfCoInstaller: Final status: error(0) The operation completed successfully.
-
 ```
 
 In the above scenario, no update is necessary because the on-disk version of the runtime is UMDF 1.9, which is the same as the version of the co-installer.
 
 Consider the following output, which details an unsuccessful installation.
 
-```
+```cpp
 WudfUpdate: installing version (1,9,0,7100).
 WudfUpdate: Checking for presence of previous UMDF installation.
 WudfUpdate: Found binary %WINDIR%\system32\drivers\wudfrd.sys version (1.5.0.6000)
@@ -110,14 +104,13 @@ WudfUpdate: update returned error 0x16 - error(22) The device does not recognize
 WudfUpdate: For additional information please look at the log files %windir%\windowsupdate.log and %windir%\Logs\CBS\CBS.log
 WudfUpdate: Cleaning up update.
 WudfUpdate: Error updating UMDF - error(22) The device does not recognize the command. Aborting installation.
-
 ```
 
 In this scenario, the on-disk version of the UMDF runtime was older than the version of the co-installer. However, in this case the update was unsuccessful. The co-installer points to additional log files where you can find more information regarding the reason for the failure.
 
- 
 
- 
+
+
 
 
 

@@ -11,11 +11,7 @@ keywords:
 - color exactness WDK Windows 2000 display
 - exact colors WDK Windows 2000 display
 - calibrating colors WDK Windows 2000 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,13 +25,13 @@ GDI supports Image Color Management (ICM) version 2.0. Display drivers can use I
 
 If the display hardware supports a [*gamma ramp*](https://msdn.microsoft.com/library/windows/hardware/ff556283#wdkgloss-gamma-ramp), the display driver should implement [**DrvIcmSetDeviceGammaRamp**](https://msdn.microsoft.com/library/windows/hardware/ff556243). Color-calibrating applications that require color exactness use this capability. DirectDraw also uses this function to allow DirectX applications -- such as a game that performs palette animation in RGB modes -- to control the gamma ramp. For example code, refer to the *Permedia* sample display drivers.
 
-**Note**   The Microsoft Windows Driver Kit (WDK) does not contain the 3Dlabs Permedia2 (*3dlabs.htm*) and 3Dlabs Permedia3 (*Perm3.htm*) sample display drivers. You can get these sample drivers from the Windows Server 2003 SP1 Driver Development Kit (DDK), which you can download from the [DDK - Windows Driver Development Kit](http://go.microsoft.com/fwlink/p/?linkid=21859) page of the WDHC website.
+**Note**   The Microsoft Windows Driver Kit (WDK) does not contain the 3Dlabs Permedia2 (*3dlabs.htm*) and 3Dlabs Permedia3 (*Perm3.htm*) sample display drivers. You can get these sample drivers from the Windows Server 2003 SP1 Driver Development Kit (DDK), which you can download from the DDK - Windows Driver Development Kit page of the WDHC website.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

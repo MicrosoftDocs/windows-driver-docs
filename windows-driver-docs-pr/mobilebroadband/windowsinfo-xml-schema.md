@@ -2,11 +2,7 @@
 title: WindowsInfo XML schema
 description: WindowsInfo XML schema
 ms.assetid: a9c440ec-189c-4148-8f76-d6476aa708c0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,7 +18,7 @@ The data within the Windowsinfo.xml document is formatted based on the WindowsIn
 **Note**  
 The XML document must be saved by using UTF-8 encoding.
 
- 
+ 
 
 For the complete definition of the WindowsInfo XML schema, see [WindowsInfo XML Schema Definition](windowsinfo-xml-schema-definition.md).
 
@@ -30,9 +26,9 @@ For information about the elements that are defined by the WindowsInfo XML schem
 
 For an example of XML data in the format that is defined by the WindowsInfo XML schema, see [WindowsInfo XML Example](windowsinfo-xml-example.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,15 +1,10 @@
 ---
 title: OID_TCP_CONNECTION_OFFLOAD_CURRENT_CONFIG
-author: windows-driver-content
 description: This topic describes the OID_TCP_CONNECTION_OFFLOAD_CURRENT_CONFIG object identifier (OID). 
 ms.assetid: 29CB74B1-8D7F-4EC2-AAAC-93D454824031
 keywords:
 - OID_TCP_CONNECTION_OFFLOAD_CURRENT_CONFIG, WDK OIDs, WDK networking object identifiers, WDK networking OIDs
-ms.author: windowsdriverdev
 ms.date: 11/01/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

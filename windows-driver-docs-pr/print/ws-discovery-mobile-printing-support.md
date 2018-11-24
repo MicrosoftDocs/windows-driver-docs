@@ -1,13 +1,8 @@
 ---
 title: WS-Discovery Mobile Printing Support
-author: windows-driver-content
 description: WS-Discovery Mobile Printing Support
 ms.assetid: 788E2A1C-FBE9-40CD-A3EB-14A2DE266A2C
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -16,7 +11,7 @@ ms.localizationpriority: medium
 
 Devices that support printing from Windows 10 Mobile, must add the MobilePrinter category to their WS-Discovery ThisModel response, as shown in the following example:
 
-```XML
+```xml
 <soap:Envelope
     xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
     xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing"
@@ -98,13 +93,13 @@ The following table provides additional information about the MobilePrinter cate
 </tbody>
 </table>
 
- 
+ 
 
 For more information about how to add the device category to the WS-Discovery metadata exchange, see the [PnP-X specification](http://go.microsoft.com/fwlink/p/?linkid=509797).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,14 +1,9 @@
 ---
 title: Sending a Device Set-Power IRP in Response to a System Set-Power IRP
-author: windows-driver-content
 description: Sending a Device Set-Power IRP in Response to a System Set-Power IRP
 ms.assetid: b2029292-d770-4095-8bd7-9358b282216c
 keywords: ["sending set-power IRPs", "set-power IRPs WDK power management"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -58,9 +53,9 @@ The power-completion callback routine must do the following:
 
 4.  Return the status with which the set-power IRPs completed.
 
- 
+ 
 
- 
+ 
 
 
 

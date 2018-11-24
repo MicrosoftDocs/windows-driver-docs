@@ -9,11 +9,7 @@ api_name:
 - wscn ImageInformation
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **ImageInformation** element contains information about the resulti
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ImageInformation>
   child elements
 </wscn:ImageInformation>
@@ -50,10 +46,10 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>MediaBackImageInfo</strong>](mediabackimageinfo.md)</p></td>
+<td><p><a href="mediabackimageinfo.md" data-raw-source="[&lt;strong&gt;MediaBackImageInfo&lt;/strong&gt;](mediabackimageinfo.md)"><strong>MediaBackImageInfo</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>MediaFrontImageInfo</strong>](mediafrontimageinfo.md)</p></td>
+<td><p><a href="mediafrontimageinfo.md" data-raw-source="[&lt;strong&gt;MediaFrontImageInfo&lt;/strong&gt;](mediafrontimageinfo.md)"><strong>MediaFrontImageInfo</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -72,10 +68,10 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>CreateScanJobResponse</strong>](createscanjobresponse.md)</p></td>
+<td><p><a href="createscanjobresponse.md" data-raw-source="[&lt;strong&gt;CreateScanJobResponse&lt;/strong&gt;](createscanjobresponse.md)"><strong>CreateScanJobResponse</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>ValidationInfo</strong>](validationinfo.md)</p></td>
+<td><p><a href="validationinfo.md" data-raw-source="[&lt;strong&gt;ValidationInfo&lt;/strong&gt;](validationinfo.md)"><strong>ValidationInfo</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -85,7 +81,7 @@ Remarks
 
 The WSD Scan Service returns the **ImageInformation** element through the [**CreateScanJobResponse**](createscanjobresponse.md) operation element. Scan applications can use the data that is specified within **ImageInformation** to decode the image within an image file.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**CreateScanJobResponse**](createscanjobresponse.md)
@@ -96,9 +92,9 @@ The WSD Scan Service returns the **ImageInformation** element through the [**Cre
 
 [**ValidationInfo**](validationinfo.md)
 
- 
+ 
 
- 
+ 
 
 
 

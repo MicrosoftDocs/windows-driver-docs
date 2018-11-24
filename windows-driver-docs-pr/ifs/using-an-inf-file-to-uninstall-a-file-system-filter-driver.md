@@ -1,16 +1,11 @@
 ---
 title: Using an INF File to Uninstall a File System Filter Driver
-author: windows-driver-content
 description: Using an INF File to Uninstall a File System Filter Driver
 ms.assetid: e41deb65-7977-479c-ac42-c550aa6a3f1b
 keywords:
 - INF files WDK file system , uninstalling filter drivers
 - uninstalling filter drivers WDK file system
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,7 +23,7 @@ There is no "right-click uninstall" option.
 
 To execute the **DefaultUninstall** and **DefaultUninstall.Services** sections of your INF file on the command line, type the following command at the command prompt, or create and run a batch file that contains this command:
 
-```
+```cpp
 RUNDLL32.EXE SETUPAPI.DLL,InstallHinfSection DefaultUninstall 132 path-to-uninstall-dir\infname.inf
 ```
 
@@ -38,7 +33,7 @@ RUNDLL32.EXE SETUPAPI.DLL,InstallHinfSection DefaultUninstall 132 path-to-uninst
 
 You can also execute the **DefaultUninstall** and **DefaultUninstall.Services** sections of your INF file from an uninstall application, as shown in the following code example:
 
-```
+```cpp
 InstallHinfSection(NULL,NULL,TEXT("DefaultUninstall 132 path-to-uninstall-dir\infname.inf"),0); 
 ```
 
@@ -58,9 +53,9 @@ If you use an application to uninstall your driver, observe the following guidel
 
 For more information about uninstall applications, see [Writing a Device Installation Application](https://msdn.microsoft.com/library/windows/hardware/ff554015).
 
- 
+ 
 
- 
+ 
 
 
 

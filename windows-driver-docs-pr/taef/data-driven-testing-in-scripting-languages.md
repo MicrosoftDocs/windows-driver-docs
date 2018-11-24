@@ -2,11 +2,7 @@
 title: Data-driven Testing in Scripting Languages
 description: Data-driven Testing in Scripting Languages
 ms.assetid: CF60C594-8877-4f09-AF82-9F4CA27123C7
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,7 +25,7 @@ Data-driven testing in TAEF allows you to specify the **DataSource** at the clas
 
 The following example shows how to specify the **DataSource** property.
 
-```
+```cpp
 1   <?xml version="1.0" ?>
 2   <?component error="true" debug="true"?>
 3   <package>
@@ -219,7 +215,7 @@ In the JScriptSampleTests, you can see an example of a data-driven class. Becaus
 
 The following parameter types are available for scripting languages. These are the types that you can specify in table based data-driven testing. The default parameter type is *String* or *BSTR* (representing *VT\_BSTR*).
 
-The section [Parameter Types in Table based DataSource](parameter-types-in-table-data-sources.md) shows how to view the available parameter types (in Native and Managed code) while authoring tests in a scripting langauge.
+The section [Parameter Types in Table based DataSource](parameter-types-in-table-data-sources.md) shows how to view the available parameter types (in Native and Managed code) while authoring tests in a scripting language.
 
 ## <span id="Executing_data-driven_scripts"></span><span id="executing_data-driven_scripts"></span><span id="EXECUTING_DATA-DRIVEN_SCRIPTS"></span>Executing data-driven scripts
 
@@ -292,9 +288,9 @@ te Examples\DataDrivenTest.wsc /select:"@Name='VBSampleTests::TestOne*' and @Dat
 
 Using PICT based and light weight data-driven tests in a script test is left as an exercise to the reader.
 
- 
+ 
 
- 
+ 
 
 
 

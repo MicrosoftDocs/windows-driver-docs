@@ -3,11 +3,7 @@ title: KSPROPSETID\_SynthClock
 description: KSPROPSETID\_SynthClock
 ms.assetid: 8baad0d2-ea86-4d27-8fb0-03cdd9e978f0
 keywords: ["KSPROPSETID_SynthClock"]
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -52,13 +48,13 @@ The KSPROPERTY\_SYNTH\_MASTERCLOCK property is used to get the master clock time
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p>[<strong>KSPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564262)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564262" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564262)"><strong>KSPROPERTY</strong></a></p></td>
 <td align="left"><p>ULONGLONG</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is of type ULONGLONG and represents the master clock time. This time is specified in 100-nanosecond units.
 
@@ -68,9 +64,9 @@ A KSPROPERTY\_SYNTH\_MASTERCLOCK property request returns STATUS\_SUCCESS to ind
 
 For more information, see [Master Clocks](https://msdn.microsoft.com/library/windows/hardware/ff567717).
 
- 
+ 
 
- 
+ 
 
 
 

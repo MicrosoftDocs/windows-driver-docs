@@ -12,6 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # GUID_DEVINTERFACE_USB_HUB
@@ -42,7 +43,7 @@ The GUID_DEVINTERFACE_USB_HUB [device interface class](https://msdn.microsoft.co
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -78,9 +79,9 @@ Requirements
 
 [**GUID_DEVINTERFACE_USB_HOST_CONTROLLER**](guid-devinterface-usb-host-controller.md)
 
- 
+ 
 
- 
+ 
 
 
 

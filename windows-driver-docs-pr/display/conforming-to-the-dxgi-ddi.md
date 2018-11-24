@@ -9,11 +9,7 @@ keywords:
 - DirectX Graphics Infrastructure DDI conformance WDK Windows Server 2008 R2 display
 - DXGI DDI conformance WDK Windows 7 display
 - DXGI DDI conformance WDK Windows Server 2008 R2 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -44,9 +40,9 @@ There are back buffer restrictions with the Direct3D version 11 DDI. If DXGI\_US
 
 Note that no CPU access flags are allowed for back buffers.
 
- 
+ 
 
- 
+ 
 
 
 

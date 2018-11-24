@@ -10,6 +10,7 @@ api_name:
 api_type:
 - NA
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # eula XML Element
@@ -21,7 +22,7 @@ The **eula** XML element is an empty XML element that includes two attributes th
 
 ### Element Tag
 
-```
+```cpp
 <eula>
 ```
 
@@ -44,7 +45,7 @@ The **eula** XML element is an empty XML element that includes two attributes th
 </tbody>
 </table>
 
- 
+ 
 
 ### Element Information
 
@@ -56,7 +57,7 @@ The **eula** XML element is an empty XML element that includes two attributes th
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Parent elements</strong></p></td>
-<td align="left"><p>[<strong>language</strong>](language-xml-element.md)</p></td>
+<td align="left"><p><a href="language-xml-element.md" data-raw-source="[&lt;strong&gt;language&lt;/strong&gt;](language-xml-element.md)"><strong>language</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Child elements</strong></p></td>
@@ -73,13 +74,13 @@ The **eula** XML element is an empty XML element that includes two attributes th
 </tbody>
 </table>
 
- 
+ 
 
 ### <a href="" id="comments"></a>Remarks
 
 The following code example demonstrates a **eula** element that specifies that *Data\\Eula409.txt* contains custom EULA text. The *Eula409.txt* file is in the *Data* directory, which must be a subdirectory under the DPInst root directory. The text that specifies the custom EULA file is shown below using the &lt;eula&gt; tag.
 
-```
+```cpp
 <dpinst>
   ...
   <language code="0x0409">
@@ -96,9 +97,9 @@ The following code example demonstrates a **eula** element that specifies that *
 
 [**language**](language-xml-element.md)
 
- 
+ 
 
- 
+ 
 
 
 

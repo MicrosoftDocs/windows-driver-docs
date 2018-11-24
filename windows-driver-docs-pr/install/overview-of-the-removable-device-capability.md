@@ -2,11 +2,7 @@
 title: Overview of the Removable Device Capability
 description: Overview of the Removable Device Capability
 ms.assetid: c6dfb2ac-89a5-40fd-ae9a-1f2800af9ef8
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ The following Device Manager screen shot shows the devnode topology for a generi
 
 ![screen shot of device manager window showing devnode topology for a usb mouse](images/containerid-2.png)
 
- 
+ 
 
- 
+ 
 
 
 

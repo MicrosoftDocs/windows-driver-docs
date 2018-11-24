@@ -2,11 +2,7 @@
 title: Source Parameter Token
 description: Source Parameter Token
 ms.assetid: 280b9fb2-9b5c-4830-9ba5-cfb6201960e0
-ms.author: windowsdriverdev
 ms.date: 01/05/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -68,7 +64,7 @@ Bits 16 through 23 indicate channel *swizzle*. All arithmetic operations are per
 </tbody>
 </table>
 
- 
+ 
 
 The following values in any set of preceding bits specify the source component to be used in the channel of operation:
 
@@ -103,7 +99,7 @@ The following values in any set of preceding bits specify the source component t
 </tbody>
 </table>
 
- 
+ 
 
 For example, if the 19:18 bits are set to 0x2, then component Z is used as the source for the channel Y operation.
 
@@ -185,7 +181,7 @@ Bits 24 through 27 indicate the source modifier. This 4-bit value indicates the 
 </tbody>
 </table>
 
- 
+ 
 
 <span id="_30_28_"></span>**\[30:28\]**
 Bits 28 through 30 are the first three bits \[0,1,2\] for indicating the [register type](https://msdn.microsoft.com/library/windows/hardware/ff569707).
@@ -202,9 +198,9 @@ Bits 28, 29, 30, 11, and 12 form a 5-bit value that indicates the register type.
 
 Available in Windows Vista and later versions of the Windows operating systems.
 
- 
+ 
 
- 
+ 
 
 
 

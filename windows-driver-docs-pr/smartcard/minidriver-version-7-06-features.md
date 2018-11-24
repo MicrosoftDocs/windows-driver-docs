@@ -2,11 +2,7 @@
 title: Minidriver Version 7.06 Features
 description: Minidriver Version 7.06 Features
 ms.assetid: 6066C6F9-DF03-4886-A5AE-FFE50B2B34D8
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -110,9 +106,9 @@ For more information about PIV, see the “About Personal Identity Verification 
 
 For more information about the process that Windows follows to identify and pair a PIV card with the inbox driver, see [Windows Inbox Smart Card Minidriver](windows-inbox-smart-card-minidriver.md).
 
- 
+ 
 
- 
+ 
 
 
 

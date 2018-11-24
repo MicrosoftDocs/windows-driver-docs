@@ -9,11 +9,7 @@ keywords:
 - removing network interfaces
 - unregistering network interfaces
 - NdisIfDeregisterInterface
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,11 +25,11 @@ An NDIS interface provider calls the [**NdisIfDeregisterInterface**](https://msd
 
 **Note**  The NDIS proxy provider deregisters interfaces for miniport adapters when they are uninstalled and filter modules when they are detached.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

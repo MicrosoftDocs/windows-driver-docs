@@ -5,11 +5,7 @@ ms.assetid: 62c030cf-8eb6-4a94-bd15-730b9219291c
 keywords:
 - version numbers WDK DirectX 9.0
 - notifying DirectX versions WDK DirectX 9.0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ In a D3DGDI2\_TYPE\_GETFORMATCOUNT query, the DirectX 9.0 driver is notified of 
 
 In a D3DGDI2\_TYPE\_GETFORMAT query, the DirectX 9.0 driver is notified of the runtime version in the **dwSize** member of the DDPIXELFORMAT structure that is specified in the **format** member of the [**DD\_GETFORMATDATA**](https://msdn.microsoft.com/library/windows/hardware/ff551569) structure. The **dwSize** member is also set to DD\_RUNTIME\_VERSION.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,11 +3,7 @@ title: wdfkd.wdfsettraceprefix
 description: The wdfkd.wdfsettraceprefix extension sets the trace prefix format string.
 ms.assetid: dec47b55-4b6a-4ff5-8622-4a377a1903b8
 keywords: ["wdfkd.wdfsettraceprefix Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!wdfkd.wdfsettraceprefix** extension sets the trace prefix format string.
 
-```
+```dbgcmd
 !wdfkd.wdfsettraceprefix String
 ```
 
@@ -51,9 +47,9 @@ The trace prefix string is prepended to each trace message in the Kernel-Mode Dr
 
 The format of the trace prefix string is defined by the Microsoft Windows tracing tools. For more information about the format of this string and how to customize it, see the "Trace Message Prefix" topic in the Driver Development Tools section of the Windows Driver Kit (WDK).
 
- 
+ 
 
- 
+ 
 
 
 

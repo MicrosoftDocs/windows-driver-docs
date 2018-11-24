@@ -5,11 +5,7 @@ ms.assetid: a0d853b2-06d3-4d93-ba65-7fa8d5b50a9b
 keywords:
 - display driver model WDK Windows Vista , tasks
 - Windows Vista display driver model WDK , tasks
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +29,9 @@ These topics discuss solutions for tasks you can perform by using the Windows Di
 
 [Registering Hardware Information](registering-hardware-information.md)
 
- 
+ 
 
- 
+ 
 
 
 

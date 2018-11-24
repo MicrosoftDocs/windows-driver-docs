@@ -1,6 +1,5 @@
 ---
 title: Property Sheet Options
-author: windows-driver-content
 description: Property Sheet Options
 ms.assetid: 572330d6-1a1b-46fd-bfb4-be2b0990bca4
 keywords:
@@ -9,11 +8,7 @@ keywords:
 - property sheet pages WDK print , property sheet options
 - property sheets WDK print
 - selectable property sheet page items WDK print
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,9 +30,9 @@ Each property sheet page typically contains several options. For each property s
 
 To use these CPSUI structures to describe property sheet options, the page containing the option must be defined using a [**COMPROPSHEETUI**](https://msdn.microsoft.com/library/windows/hardware/ff546211) structure.
 
- 
+ 
 
- 
+ 
 
 
 

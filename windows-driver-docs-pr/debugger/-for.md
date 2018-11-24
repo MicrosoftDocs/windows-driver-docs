@@ -3,11 +3,7 @@ title: .for
 description: The .for token behaves like the for keyword in C, except that multiple increment commands must be separated by semicolons, not by commas.
 ms.assetid: 35f54c4c-e7f5-42a9-b579-1e4958b7286b
 keywords: [".for Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **.for** token behaves like the **for** keyword in C, except that multiple increment commands must be separated by semicolons, not by commas.
 
-```
+```dbgcmd
 .for (InitialCommand ; Condition ; IncrementCommands) { Commands } 
 ```
 
@@ -52,15 +48,15 @@ If all the work is being done by the increment commands, you can omit *Condition
 
 Here is an example of a **.for** statement with multiple increment commands:
 
-```
+```dbgcmd
 0:000> .for (r eax=0; @eax < 7; r eax=@eax+1; r ebx=@ebx+1) { .... }
 ```
 
 The [**.break**](https://msdn.microsoft.com/library/windows/hardware/ff556242) and [**.continue**](-continue.md) tokens can be used to exit or restart the *Commands* block.
 
- 
+ 
 
- 
+ 
 
 
 

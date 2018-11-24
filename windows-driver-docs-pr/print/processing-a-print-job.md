@@ -1,6 +1,5 @@
 ---
 title: Processing a Print Job
-author: windows-driver-content
 description: Processing a Print Job
 ms.assetid: c5e291d9-069c-4877-a167-862ba5794368
 keywords:
@@ -15,11 +14,7 @@ keywords:
 - input formats WDK print processor
 - jobs WDK print
 - print jobs WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -41,9 +36,9 @@ The **PrintDocumentOnPrintProcessor** function can be interrupted by asynchronou
 
 After **PrintDocumentOnPrintProcessor** finishes converting the data stream and returns, the spooler calls the print processor's [**ClosePrintProcessor**](https://msdn.microsoft.com/library/windows/hardware/ff545976) function.
 
- 
+ 
 
- 
+ 
 
 
 

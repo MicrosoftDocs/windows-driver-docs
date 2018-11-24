@@ -3,11 +3,7 @@ title: .detach (Detach from Process)
 description: The .detach command ends the debugging session, but leaves any user-mode target application running.
 ms.assetid: 4f0fbd8b-3037-4549-99da-be40a091a363
 keywords: [".detach (Detach from Process) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **.detach** command ends the debugging session, but leaves any user-mode target application running.
 
-```
+```dbgcmd
 .detach [ /h | /n ]
 ```
 
@@ -60,7 +56,7 @@ For live user-mode debugging, this command is only supported in Windows XP and l
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -77,9 +73,9 @@ If you are only debugging a single target, the debugger will return to dormant m
 
 If you are [debugging multiple targets](debugging-multiple-targets.md), the debugging session will continue with the remaining targets.
 
- 
+ 
 
- 
+ 
 
 
 

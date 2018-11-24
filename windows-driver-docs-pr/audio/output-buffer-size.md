@@ -6,11 +6,7 @@ keywords:
 - data-intersection handlers WDK audio , output buffer size
 - output buffers WDK audio
 - buffer size WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +24,9 @@ If the wave format supports more than two channels, the [**WAVEFORMATEX**](https
 
 **sizeof**([**WAVEFORMATEXTENSIBLE**](https://msdn.microsoft.com/library/windows/hardware/ff538802)) - **sizeof**([**WAVEFORMATEX**](https://msdn.microsoft.com/library/windows/hardware/ff538799))
 
- 
+ 
 
- 
+ 
 
 
 

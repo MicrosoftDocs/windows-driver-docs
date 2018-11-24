@@ -2,11 +2,7 @@
 title: UWP device apps for internal devices
 description: This topic introduces the ways that UWP device apps can access internal devices.
 ms.assetid: 864EDABF-C734-425D-A532-A01E545E4E51
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -17,7 +13,7 @@ This topic introduces the ways that UWP device apps can access internal devices.
 
 **Note**  Some APIs that are mentioned in this topic can be used to access external devices too. This topic focuses specifically on accessing internal devices. For more info about each API, see the [Windows API reference](http://go.microsoft.com/fwlink/p/?LinkId=250938).
 
- 
+ 
 
 ## <span id="Accessing_internal_devices"></span><span id="accessing_internal_devices"></span><span id="ACCESSING_INTERNAL_DEVICES"></span>Accessing internal devices
 
@@ -30,7 +26,7 @@ There are three ways that UWP apps can access internal devices:
 | Yes          | Device protocol APIs (USB, HID, etc.)                | OEM            | yes (for internal devices only) |
 | No           | Custom driver access                                 | OEM            | yes                             |
 
- 
+ 
 
 ## <span id="Device_scenario_APIs"></span><span id="device_scenario_apis"></span><span id="DEVICE_SCENARIO_APIS"></span>Device scenario APIs
 
@@ -49,7 +45,7 @@ When an OEM/component supplier needs to access an internal device in a way that 
 | USB                 | [Windows.Devices.Usb](http://go.microsoft.com/fwlink/p/?LinkId=306694)                  | exclusive read & exclusive write |
 | HID                 | [Windows.Devices.HumanInterfaceDevice](http://go.microsoft.com/fwlink/p/?LinkId=306697) | shared read & exclusive write    |
 
- 
+ 
 
 To access peripheral devices that use only Microsoft class drivers - the most common use for the device protocol APIs - device metadata is not required. However, to access internal devices with those APIs, metadata is required. When accessing an internal device, the app must be specified in the device metadata as a privileged app for the system container. This requirements restricts internal device access to OEMs.
 
@@ -84,9 +80,9 @@ For more info about these workflows, see [UWP device apps design guide for speci
 
 [Identifying the location of internal cameras (UWP device apps)](identifying-the-location-of-internal-cameras.md)
 
- 
+ 
 
- 
+ 
 
 
 

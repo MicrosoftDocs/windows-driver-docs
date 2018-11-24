@@ -6,11 +6,7 @@ keywords:
 - NDIS 6.20 WDK , virtual machine queue (VMQ)
 - virtual machine queue (VMQ) WDK NDIS 6.20
 - VMQ WDK NDIS 6.20
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +30,9 @@ Microsoft Hyper-V network performance enhancements also provide chimney support 
 
 For more information about VMQ, see [Virtual Machine Queue (VMQ)](virtual-machine-queue--vmq-.md).
 
- 
+ 
 
- 
+ 
 
 
 

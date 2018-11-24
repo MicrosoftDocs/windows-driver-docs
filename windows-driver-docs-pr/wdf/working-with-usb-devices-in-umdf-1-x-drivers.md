@@ -1,6 +1,5 @@
 ---
 title: Working with USB Devices in UMDF 1.x Drivers
-author: windows-driver-content
 description: Working with USB Devices in UMDF 1.x Drivers
 ms.assetid: 144898a2-c4e1-495f-a6ca-72d9f09bda90
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - User-Mode Driver Framework WDK , USB devices
 - user-mode drivers WDK UMDF , USB devices
 - USB devices WDK UMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,7 +30,7 @@ The framework represents each USB device as a framework USB device object. A UMD
 
 To use the framework's USB I/O target capabilities, a UMDF driver must first obtain a pointer to the [IWDFUsbTargetFactory](https://msdn.microsoft.com/library/windows/hardware/ff560387) interface. To obtain the pointer, the driver must call the **QueryInterface** method of the device's [IWDFDevice](https://msdn.microsoft.com/library/windows/hardware/ff556917) interface. The following code example shows how to call **QueryInterface** to obtain the pointer:
 
-```
+```cpp
 hr = pdevice->QueryInterface(IID_IWDFUsbTargetFactory, (LPVOID*)&ppUsbTargetFactory);
 ```
 
@@ -73,9 +68,9 @@ A UMDF driver can call the [**IWDFUsbTargetDevice::FormatRequestForControlTransf
 
 A UMDF driver can call the [**IWDFUsbTargetDevice::SetPowerPolicy**](https://msdn.microsoft.com/library/windows/hardware/ff560385) method to set the power policy that is used by WinUsb for a USB device. The power policy for a USB device effects changes to power management states for the device.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,13 +1,8 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_P2P_OPERATING_CHANNEL_ATTRIBUTES
-author: windows-driver-content
 description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_P2P_OPERATING_CHANNEL_ATTRIBUTES to indicate the preferred operating channel to start a GO, the preferred listen channel if asked to enter listen state, and the full set of supported channels at any point of time. The indication is sent once when adapter initializes, and then sent each time one of these parameters changes due to events such as roaming or connecting or disconnecting from an access point.
 ms.assetid: F7D27328-99B3-4EB5-9F48-864338EF8D8A
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WDI_INDICATION_P2P_OPERATING_CHANNEL_ATTRIBUTES Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -22,7 +17,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_P2P\_OPERATING\_CHANNEL\_ATT
 |--------|
 | Port   |
 
- 
+ 
 
 The operating channel and channel list values are local settings and do not account for the actual channel negotiation during GO negotiation/invitation. The driver is still expected to negotiate the channel when GO negotiation/invitation is performed.
 
@@ -37,7 +32,7 @@ It is expected that the listen channel reported by the driver is honored if list
 | [**WDI\_TLV\_P2P\_CHANNEL\_LIST\_ATTRIBUTE**](https://msdn.microsoft.com/library/windows/hardware/dn897868) |                                |          | The full set of channels supported by the local adapter. |
 | [**WDI\_TLV\_P2P\_LISTEN\_CHANNEL**](https://msdn.microsoft.com/library/windows/hardware/mt269138)                  |                                |          | The Wi-Fi Direct Listen channel attribute.               |
 
- 
+ 
 
 Requirements
 ------------
@@ -63,9 +58,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

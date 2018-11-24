@@ -4,11 +4,7 @@ description: Driver Coverage Filter Driver
 ms.assetid: 8d345081-b9be-4e22-9276-dacd7815f506
 keywords:
 - Driver Coverage Toolkit WDK , filter driver
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -17,7 +13,7 @@ ms.localizationpriority: medium
 
 **Note**  The Driver Coverage Toolkit is no longer needed in Windows 10 and the installer is no longer included in the WDK. To perform tasks described here in Windows 10, instead use [Driver Verifier](driver-verifier.md) and [IRP Logging](irp-logging.md).
 
- 
+ 
 
 The Driver Coverage filter driver (Drvcov.sys) monitors the I/O request packets (IRPs) that enter or leave the driver stack of specified devices. You specify the devices that the Driver Coverage filter driver monitors by using the *DQ* parameter when you run the **Enable IRP Coverage data collection** tool. See [How to select and configure the Device Fundamentals tests](https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests) and [Device Fundamentals Test Parameters](https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests).
 
@@ -47,11 +43,11 @@ The following rules define the best way to install the Driver Coverage filter dr
 
 **Note**   How you install the Driver Coverage filter driver for optimal IRP coverage depends on the topology of the driver stack and requires that you understand the relationship and order of the drivers within the stack.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

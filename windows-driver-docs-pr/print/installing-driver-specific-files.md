@@ -1,16 +1,11 @@
 ---
 title: Installing Driver-Specific Files
-author: windows-driver-content
 description: Installing Driver-Specific Files
 ms.assetid: 19beaf89-c0c2-4706-8d25-12d76dc936d7
 keywords:
 - Point and Print WDK , driver-specific files
 - driver-specific files WDK printer
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,9 +19,9 @@ Files are associated with a printer driver by including them in the printer's IN
 
 To provide Point and Print support for Windows 95/98/98 clients connected to Windows 2000 and later servers, see the description of the "Previous Names" data section in [Printer INF File Data Sections](printer-inf-file-data-sections.md).
 
- 
+ 
 
- 
+ 
 
 
 

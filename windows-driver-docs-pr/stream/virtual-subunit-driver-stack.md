@@ -1,6 +1,5 @@
 ---
 title: Virtual Subunit Driver Stack
-author: windows-driver-content
 description: Virtual Subunit Driver Stack
 ms.assetid: 5aa1804f-b871-4577-8e8a-ce4ad5150ee0
 keywords:
@@ -11,11 +10,7 @@ keywords:
 - AV/C WDK , driver stacks
 - Avc.sys function driver WDK , driver stacks
 - compatible IDs WDK AV/C
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,9 +33,9 @@ The virtual IEEE 1394 device provides the following support:
 
 -   Ability to implement extensions to AV/C subunit target functionality, such as Authentication and Key Exchange (AKE) and the Connection and Compatibility Management (CCM) protocol by third parties on the computer.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,11 +3,7 @@ title: .logopen (Open Log File)
 description: The .logopen command sends a copy of the events and commands from the Debugger Command window to a new log file.
 ms.assetid: 00ccc09b-3fd7-462f-a688-2f7b45b584fb
 keywords: ["Open Log File (.logopen) command", "log file, Open Log File (.logopen) command", ".logopen (Open Log File) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **.logopen** command sends a copy of the events and commands from the [Debugger Command window](debugger-command-window.md) to a new log file.
 
-```
+```dbgcmd
 .logopen [Options] [FileName] 
 .logopen /d
 ```
@@ -68,7 +64,7 @@ Automatically chooses a file name based on the name of the target process or tar
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -77,14 +73,14 @@ If you already have a log file open when you run the **.logopen** command, the d
 
 The **.logopen /t** command appends the process ID, date, and time to the log file name. In the following example, the process ID in hexadecimal is 0x02BC, the date is February 28, 2005, and the time is 9:05:50.935.
 
-```
+```dbgcmd
 0:000> .logopen /t c:\logs\mylogfile.txt
 Opened log file 'c:\logs\mylogfile_02BC_2005-02-28_09-05-50-935.txt'
 ```
 
- 
+ 
 
- 
+ 
 
 
 

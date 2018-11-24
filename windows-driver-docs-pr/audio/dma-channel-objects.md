@@ -9,11 +9,7 @@ keywords:
 - slave devices WDK audio
 - IDmaChannel interface
 - channel objects WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -113,9 +109,9 @@ The **IDmaChannelSlave** interface extends **IDmaChannel** by adding the followi
 
 [**IDmaChannelSlave::WaitForTC**](https://msdn.microsoft.com/library/windows/hardware/ff536552)
 
- 
+ 
 
- 
+ 
 
 
 

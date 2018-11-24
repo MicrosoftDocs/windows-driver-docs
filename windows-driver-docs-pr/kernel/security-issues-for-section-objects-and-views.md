@@ -1,14 +1,9 @@
 ---
 title: Security Issues for Section Objects and Views
-author: windows-driver-content
 description: Security Issues for Section Objects and Views
 ms.assetid: a2044ea1-c90c-4487-850b-d07ac55aea6d
 keywords: ["memory sections WDK kernel", "section objects WDK kernel", "views WDK memory section", "security WDK memory section", "protocols WDK memory section"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -46,9 +41,9 @@ A driver that must share a section object with a user-mode application (that mus
 
 On systems that run Microsoft Windows Server 2003 with Service Pack 1 (SP1) and later versions, only kernel-mode drivers can open \\**Device**\\**PhysicalMemory**. However, drivers can decide to give a handle to a user application. To prevent security issues, only user applications that the driver trusts should be given access to \\**Device**\\**PhysicalMemory**.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Using Control Device Objects
-author: windows-driver-content
 description: Using Control Device Objects
 ms.assetid: 6367954f-6916-46df-a5a0-e80f045b69e5
 keywords:
@@ -14,11 +13,7 @@ keywords:
 - notifications WDK KMDF
 - names WDK KMDF
 - names WDK KMDF , device objects
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -111,9 +106,9 @@ Some drivers have to delete their control device objects before the driver unloa
 
     In this case, the framework deletes the control device objects after the driver's [*EvtDriverUnload*](https://msdn.microsoft.com/library/windows/hardware/ff541694) callback function returns.
 
- 
+ 
 
- 
+ 
 
 
 

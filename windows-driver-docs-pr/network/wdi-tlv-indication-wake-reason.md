@@ -1,13 +1,8 @@
 ---
 title: WDI_TLV_INDICATION_WAKE_REASON
-author: windows-driver-content
 description: WDI_TLV_INDICATION_WAKE_REASON is a TLV that contains a wake reason for NDIS_STATUS_WDI_INDICATION_WAKE_REASON.
 ms.assetid: 3D3F93EA-4733-44FC-9CB3-721F0552F3E2
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_INDICATION_WAKE_REASON Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -35,7 +30,7 @@ The size (in bytes) of a UINT32.
 |--------|----------------------------|
 | UINT32 | Specifies the wake reason. |
 
- 
+ 
 
 Valid wake reason values are:
 
@@ -53,7 +48,7 @@ Valid wake reason values are:
 | WDI\_WAKE\_REASON\_CODE\_FIRMWARE\_STALLED        | 0x1010 | Firmware hang is detected (for example, by the watchdog timer) and wake logic is still functioning to wake the host. |
 | WDI\_WAKE\_REASON\_CODE\_GTK\_HANDSHAKE\_REQUEST  | 0x1020 | Group Key rekey request.                                                                                             |
 
- 
+ 
 
 Requirements
 ------------
@@ -79,9 +74,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

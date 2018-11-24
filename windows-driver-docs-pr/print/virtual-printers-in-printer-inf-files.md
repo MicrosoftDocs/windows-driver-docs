@@ -1,13 +1,8 @@
 ---
 title: Virtual Printers in Printer INF Files
-author: windows-driver-content
 description: Virtual Printers in Printer INF Files
 ms.assetid: a7308b0f-61b8-4b4d-a116-ce940787882b
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -18,15 +13,15 @@ A virtual printer is a print destination, such as a fax server or electronic doc
 
 To insert a null hardware ID in an INF file, add a second comma in the models section of the INF between the Install section name and the Compatible ID. The following example shows how to create a null hardware ID for the indicated fax printer.
 
-```
+```cpp
 "Objectworld Fax Printer"=OWFAX,,Objectworld_Fax_Printer
 ```
 
 For more information about virtual printers in INF files, see **DriverCategory** in [Printer INF File Entries](printer-inf-file-entries.md).
 
- 
+ 
 
- 
+ 
 
 
 

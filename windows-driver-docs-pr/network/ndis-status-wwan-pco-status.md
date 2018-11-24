@@ -1,21 +1,16 @@
 ---
 title: NDIS_STATUS_WWAN_PCO_STATUS
-author: windows-driver-content
 description: Miniport drivers use the NDIS_STATUS_WWAN_PCO_STATUS notification to inform the MB service about the completion of a previous OID_WWAN_PCO query request.
 ms.assetid: E0F70FAE-B7C6-4BE4-B89A-88084463EEA5
 keywords:
 - NDIS_STATUS_WWAN_PCO_STATUS, PCO status notification, Mobile Broadband PCO status notification, MB PCO status notification
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # NDIS_STATUS_WWAN_PCO_STATUS
 
-The **NDIS_STATUS_WWAN_PCO_STATUS** notification is sent by a modem miniport driver to inform the OS of the current PCO state in the modem. Modem miniport drivers will send this notification in the following three scenarios:
+The **NDIS_STATUS_WWAN_PCO_STATUS** notification is sent by a modem miniport driver to inform the OS of the current Protocol Configuration Options (PCO) state in the modem. Modem miniport drivers will send this notification in the following three scenarios:
 
 1.	When a new PCO value has arrived on an activated connection.
 2.	When the modem has PCO value readily available when a connection is activated or bridged by the host.
@@ -32,7 +27,7 @@ If PCO functionality is supported by the modem but no PCO value is received from
 This notification uses the [NDIS_WWAN_PCO_STATUS](https://msdn.microsoft.com/library/windows/hardware/C71187C5-74B6-450A-8461-BB9FDF60DB8D) structure.
 
 > [!NOTE]
-> Currently, in Windows 10, version 1709, some modems are only able to provide operator specific PCO elements. If a PCO data structure is received by modem but there is no applicable operator specific PCO element, to avoid unnecessary device wakeup, the modem should not advertise the PCO notification to the OS. 
+> Currently, in Windows 10, version 1709 and later, some modems are only able to provide operator specific PCO elements. If a PCO data structure is received by modem but there is no applicable operator specific PCO element, to avoid unnecessary device wakeup, the modem should not advertise the PCO notification to the OS. 
 
 ## Requirements
 
@@ -49,6 +44,4 @@ This notification uses the [NDIS_WWAN_PCO_STATUS](https://msdn.microsoft.com/lib
 
 [WWAN_PCO_VALUE](https://msdn.microsoft.com/library/windows/hardware/45A499CE-2C9A-4070-BEF8-880E7673FA8E)
 
-[MB Protocol Configuration Operations (PCO)](mb-protocol-configuration-operations--pco-.md)
- 
-
+[MB Protocol Configuration Options (PCO) operations](mb-protocol-configuration-options-pco-operations.md)

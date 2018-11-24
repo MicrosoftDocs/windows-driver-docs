@@ -7,11 +7,7 @@ keywords:
 - spatial scalable video coding WDK DirectX VA
 - reference picture resampling WDK DirectX VA
 - resampling pictures WDK DirectX VA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +25,9 @@ Note that picture resampling control does not require a connection configuration
 
 A single buffer type defined in the [**DXVA\_PicResample**](https://msdn.microsoft.com/library/windows/hardware/ff564010) structure controls the resampling process.
 
- 
+ 
 
- 
+ 
 
 
 

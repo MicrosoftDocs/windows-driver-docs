@@ -3,11 +3,7 @@ title: .logclose (Close Log File)
 description: The .logclose command closes any open log file.
 ms.assetid: 730cfab3-5529-4054-ba62-8a780572603d
 keywords: [".logclose (Close Log File) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **.logclose** command closes any open log file.
 
-```
+```dbgcmd
     .logclose 
 ```
 
@@ -52,11 +48,11 @@ The **.logclose** command closes any open log file.
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

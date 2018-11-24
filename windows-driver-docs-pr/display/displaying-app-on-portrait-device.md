@@ -2,11 +2,7 @@
 title: Example code for displaying an app on a portrait device
 description: Here is code that you can use to make your app display correctly on a portrait device.
 ms.assetid: 5653E920-A068-4EBA-869E-0E2D65118B33
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -15,7 +11,7 @@ ms.localizationpriority: medium
 
 Here is code that you can use to make your app display correctly on a portrait device.
 
-```ManagedCPlusPlus
+```cpp
 //
 // This file contains utility functions for use in desktop applications for getting the current
 // orientation as Landscape/Portrait/LandscapeFlipped/PortraitFlipped (abbr: L/P/LF/PF). These
@@ -447,9 +443,9 @@ int __cdecl main(int argc, const char* argv[])
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

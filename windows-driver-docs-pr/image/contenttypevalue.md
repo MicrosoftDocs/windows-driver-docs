@@ -9,11 +9,7 @@ api_name:
 - wscn ContentTypeValue
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **ContentTypeValue** element specifies one document content type th
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ContentTypeValue>
   text
 </wscn:ContentTypeValue>
@@ -76,7 +72,7 @@ Required. One of the following values:
 </tbody>
 </table>
 
- 
+ 
 
 ## Child elements
 
@@ -97,7 +93,7 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ContentTypesSupported</strong>](contenttypessupported.md)</p></td>
+<td><p><a href="contenttypessupported.md" data-raw-source="[&lt;strong&gt;ContentTypesSupported&lt;/strong&gt;](contenttypessupported.md)"><strong>ContentTypesSupported</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -107,14 +103,14 @@ Remarks
 
 You can both extend and subset the allowed values for this element.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ContentTypesSupported**](contenttypessupported.md)
 
- 
+ 
 
- 
+ 
 
 
 

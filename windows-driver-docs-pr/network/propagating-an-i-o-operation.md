@@ -5,11 +5,7 @@ ms.assetid: 566243b3-a272-4de5-aab1-d358d5c3a5e7
 keywords:
 - propagating TCP chimney I/O operation
 - I/O WDK TCP chimney offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -62,9 +58,9 @@ To propagate the I/O operation to the underlying driver or offload target, the i
 
 From the intermediate driver's NDIS\_OFFLOAD\_HANDLE structure, NDIS extracts the **MiniportOffloadContext** pointer and passes it, as the *MiniportOffloadContext* parameter, to the offload target's *MiniportTcpOffloadXxx* function. This pointer references the offload target's context for the offloaded TCP connection. NDIS also passes the same PNET\_BUFFER\_LIST pointer that the intermediate driver passed to the **NdisOffloadTcp*Xxx*** function.
 
- 
+ 
 
- 
+ 
 
 
 

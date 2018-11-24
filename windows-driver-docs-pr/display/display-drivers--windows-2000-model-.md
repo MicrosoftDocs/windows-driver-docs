@@ -7,11 +7,7 @@ keywords:
 - Windows 2000 display driver model WDK , display drivers
 - display drivers WDK Windows 2000
 - display drivers WDK Windows 2000 , about display drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,9 +33,9 @@ Display driver writers can also implement the following DDIs:
 
 For complete descriptions of the graphics DDI entry points and structures, as well as GDI service functions and objects, see [GDI Functions](https://msdn.microsoft.com/library/windows/hardware/ff566543).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,6 +3,7 @@ title: Storage class memory
 description: To support device-class-specific communications between the storage driver stack in Windows and the platform firmware, Microsoft defines Device-Specific Methods (\_DSM) that can be used with storage drivers.
 ms.assetid: e4f354d0-f292-4dc2-a7e3-edd8dfa63b90
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Storage class memory
@@ -21,9 +22,9 @@ The \_DSM Interface for Byte Addressable Energy Backed Function Class (Function 
 
 [\_DSM Interface for Byte Addressable Energy Backed Function Class (Function Interface 1)](-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,11 +3,7 @@ title: ndiskd.pkt
 description: Warning  This extension is for legacy NDIS 5.x drivers. The ndiskd.pkt extension displays information about an NDIS_PACKET structure.
 ms.assetid: 8e704173-3b09-4377-b73a-ba67a3c3c930
 keywords: ["ndiskd.pkt Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,11 +18,11 @@ ms.localizationpriority: medium
 
 **Warning**  This extension is for legacy NDIS 5.x drivers. The [NDIS\_PACKET](https://msdn.microsoft.com/library/windows/hardware/ff557086) structure and its associated architecture have been deprecated.
 
- 
+ 
 
 The **!ndiskd.pkt** extension displays information about an [NDIS\_PACKET](https://msdn.microsoft.com/library/windows/hardware/ff557086) structure.
 
-```
+```console
 !ndiskd.pkt [-packet] [-verbosity] 
 ```
 
@@ -52,9 +48,9 @@ Ndiskd.dll
 
 [NDIS\_PACKET](https://msdn.microsoft.com/library/windows/hardware/ff557086)
 
- 
+ 
 
- 
+ 
 
 
 

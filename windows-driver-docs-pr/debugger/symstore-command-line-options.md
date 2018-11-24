@@ -3,11 +3,7 @@ title: SymStore Command-Line Options
 description: The following syntax forms are supported for SymStore transactions. The first parameter must always be add or del. The order of the other parameters is immaterial.
 ms.assetid: 44009878-8f8a-4301-b075-eb0164b4f3a3
 keywords: ["SymStore Command-Line Options Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The following syntax forms are supported for SymStore transactions. The first parameter must always be **add** or **del**. The order of the other parameters is immaterial.
 
-```
+```dbgcmd
 symstore add [/r] [/p [/l] [-:MSG Message] [-:REL] [-:NOREFS]] /f File /s Store /t Product [/v Version] [/o] [/c Comment] [/d LogFile] [/compress]
 
 symstore add [/r] [/p [/l] [-:REL] [-:NOREFS]] /g Share /f File /x IndexFile [/a] [/o] [/d LogFile] 
@@ -34,8 +30,6 @@ symstore query [/r] /f File /s Store [/o] [/d LogFile]
 symstore del /i ID /s Store [/o] [/d LogFile] 
 
 symstore /? 
-
-   
 ```
 
 ## <span id="ddk_symstore_command_line_options_dbg"></span><span id="DDK_SYMSTORE_COMMAND_LINE_OPTIONS_DBG"></span>Parameters
@@ -117,9 +111,9 @@ Displays help text for the SymStore command.
 
 For more information about SymStore, see [Using Symbol Servers and Symbol Stores](symbol-stores-and-symbol-servers.md).
 
- 
 
- 
+
+
 
 
 

@@ -3,11 +3,7 @@ title: bthkd.l2capinterface
 description: The bthkd.l2capinterface command displays information about the L2CAP interface.
 ms.assetid: 8290A422-04DD-427B-B816-85DD27F845C8
 keywords: ["bthkd.l2capinterface Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!bthkd.l2capinterface** command displays information about the L2CAP interface.
 
-```
+```dbgsyntax
 !bthkd.l2capinterface
 ```
 
@@ -36,9 +32,9 @@ Bthkd.dll
 
 [Bluetooth Extensions (Bthkd.dll)](bluetooh-extensions--bthkd-dll-.md)
 
- 
+ 
 
- 
+ 
 
 
 

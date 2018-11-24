@@ -3,11 +3,7 @@ title: pte2va
 description: The pte2va extension displays the virtual address that corresponds to the specified page table entry (PTE).
 ms.assetid: 9a94ce3a-dbbc-4566-9ef5-3ec76c1505eb
 keywords: ["pte2va Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!pte2va** extension displays the virtual address that corresponds to the specified page table entry (PTE).
 
-```
+```dbgcmd
 !pte2va Address
 ```
 
@@ -51,7 +47,7 @@ Specifies the PTE.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -64,14 +60,14 @@ To examine the contents of a specific PTE, use the [**!pte**](-pte.md) extension
 
 Here is an example of the output from the **!pte2va** extension:
 
-```
+```dbgcmd
 kd> !pte2va 9230
 000800000248c000 
 ```
 
- 
+ 
 
- 
+ 
 
 
 

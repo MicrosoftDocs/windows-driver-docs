@@ -2,11 +2,7 @@
 title: Overview of Executing Tests
 description: Overview of Executing Tests
 ms.assetid: 3D58D074-DC06-4b01-9EB5-7A17E69D6935
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -74,9 +70,9 @@ For any generic test case, the test result depends on whether the Verify calls m
 
 You can find explantions for all command options available by specifying the **"/?"** option for TE.exe. For extended explanations, see [Te.exe Command Options](te-exe-command-line-parameters.md).
 
- 
+ 
 
- 
+ 
 
 
 

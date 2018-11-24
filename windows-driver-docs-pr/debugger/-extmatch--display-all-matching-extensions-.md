@@ -3,11 +3,7 @@ title: .extmatch (Display All Matching Extensions)
 description: The .extmatch command displays extension commands exported by the currently loaded extension DLLs that match the specified pattern.
 ms.assetid: 068a32ce-c5ac-4fee-9e9d-e47393097675
 keywords: [".extmatch (Display All Matching Extensions) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **.extmatch** command displays extension commands exported by the currently loaded extension DLLs that match the specified pattern.
 
-```
+```dbgcmd
 .extmatch [Options] Pattern 
 ```
 
@@ -67,7 +63,7 @@ Specifies a pattern that the extension must contain. *Pattern*can contain a vari
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -76,7 +72,7 @@ To display a list of loaded extension DLLs, use the [**.chain**](-chain--list-de
 
 Here is an example of this command, showing all the loaded extension DLLs that have an export named !help:
 
-```
+```dbgcmd
 0:000> .extmatch help 
 !ext.help
 !exts.help
@@ -86,7 +82,7 @@ Here is an example of this command, showing all the loaded extension DLLs that h
 
 The following example lists all extension commands beginning with the string "he" that are exported by extension DLLs whose names begin with the string "ex":
 
-```
+```dbgcmd
 0:000> .extmatch /e ext* he* 
 !ext.heap
 !ext.help
@@ -98,9 +94,9 @@ The following example lists all extension commands, so we can see which ones sup
 
 ![screen shot of .extmatch /d output](images/extmatch01.png)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -4,11 +4,7 @@ description: Compressed Picture Decoding Set
 ms.assetid: 7d6e2050-663e-4370-a210-1d319cfbde6d
 keywords:
 - compressed picture decoding set WDK DirectX VA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,9 +20,9 @@ The first six configurations in this set are for all [restricted profiles](restr
 
 The minimal interoperability configuration set of configurations for compressed picture decoding is defined by the third through the last members of the [**DXVA\_ConfigPictureDecode**](https://msdn.microsoft.com/library/windows/hardware/ff563133) structure.
 
- 
+ 
 
- 
+ 
 
 
 

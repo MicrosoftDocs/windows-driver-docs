@@ -5,11 +5,7 @@ ms.assetid: d36e041f-efa5-450f-b4de-c84c4880e44d
 keywords:
 - dynamic verification tools WDK
 - static verification tools WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -48,9 +44,9 @@ Use the following dynamic verification tools as soon as the driver is built and 
     -   **DDI Compliance Checking.** (Available starting with Windows 8) Driver Verifier applies a set of device driver interface (DDI) rules that check for the proper interaction between a driver and the kernel interface of the operating system. These rules correspond to rules that Static Driver Verifier uses in analyzing driver source code. If Driver Verifier finds an error when DDI Compliance Checking is enabled, run [Static Driver Verifier](static-driver-verifier.md) and select the same rule that caused the error. Static Driver Verifier can help you locate the cause of the defect in the driver source code.
 -   [Application Verifier](application-verifier.md) is a dynamic verification tool for user-mode applications and drivers written in C/C++. It does not verify managed code. Application Verifier is not included in the WDK, but you can download and install it from the [Microsoft Download Center website](http://go.microsoft.com/fwlink/p/?linkid=11573).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,13 +1,8 @@
 ---
 title: WDI_TLV_CONFIGURED_MAC_ADDRESS
-author: windows-driver-content
 description: WDI_TLV_CONFIGURED_MAC_ADDRESS is a TLV that contains a custom MAC address.
 ms.assetid: 2AB4AFF3-70E9-4E4B-885D-2578A5810A38
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_CONFIGURED_MAC_ADDRESS Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -35,7 +30,7 @@ The size (in bytes) of a [**WDI\_MAC\_ADDRESS**](https://msdn.microsoft.com/libr
 |---------------------------------------------------|---------------------------------------------------|
 | [**WDI\_MAC\_ADDRESS**](https://msdn.microsoft.com/library/windows/hardware/dn926071) | The MAC address that should be used for the port. |
 
- 
+ 
 
 Requirements
 ------------
@@ -61,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

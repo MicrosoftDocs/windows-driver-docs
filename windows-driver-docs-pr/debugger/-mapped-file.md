@@ -3,11 +3,7 @@ title: mapped_file
 description: The mapped_file extension displays the name of the file that backs the file mapping that contains a specified address.
 ms.assetid: 1d6d4d14-01ca-47ce-a044-778c9a56e9a5
 keywords: ["mapped_file Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!mapped\_file** extension displays the name of the file that backs the file mapping that contains a specified address.
 
-```
+```dbgcmd
 !mapped_file Address
 ```
 
@@ -51,20 +47,20 @@ Specifies the address of the file mapping. If *Address* is not in a mapping, the
 </tbody>
 </table>
 
- 
+ 
 
 The **!mapped\_file** extension can only be used during live, nonremote debugging.
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
-For more information about file mapping, see [MapViewOfFile](http://go.microsoft.com/fwlink/p/?linkid=123354) in the Windows SDK.
+For more information about file mapping, see [MapViewOfFile](https://go.microsoft.com/fwlink/p/?linkid=123354) in the Windows SDK.
 
 Remarks
 -------
 
 Here are three examples. The first two addresses used are mapped from a file, and the third is not.
 
-```
+```dbgcmd
 0:000> !mapped_file 4121ec 
 Mapped file name for 004121ec: '\Device\HarddiskVolume2\CODE\TimeTest\Debug\TimeTest.exe'
 
@@ -75,9 +71,9 @@ Mapped file name for 77150000: '\Device\HarddiskVolume2\Windows\System32\kernel3
 No information found for 80310000: error 87
 ```
 
- 
+ 
 
- 
+ 
 
 
 

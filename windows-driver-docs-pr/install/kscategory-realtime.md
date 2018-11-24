@@ -12,6 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # KSCATEGORY_REALTIME
@@ -42,7 +43,7 @@ The KSCATEGORY_REALTIME [device interface class](https://msdn.microsoft.com/libr
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -73,9 +74,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

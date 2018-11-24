@@ -2,11 +2,7 @@
 ms.assetid: 5BF7AB90-FF2E-4679-8C84-2E8091917F5D
 title: UMDF Verifier Properties for Driver Package Projects
 description: Sets the properties for the UMDF Verifier on a test computer. You can use these settings when you build and deploy a driver to a test computer.
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -14,9 +10,9 @@ ms.localizationpriority: medium
 
 Sets the properties for the UMDF Verifier on a test computer. You can use these settings when you build and deploy a driver to a test computer.
 
-For information about deployment, see [Provision a computer for driver deployment and testing (WDK 8.1)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn745909) and [Deploying a Driver to a Test Computer](deploying-a-driver-to-a-test-computer.md)
+For information about deployment, see [Provision a computer for driver deployment and testing (WDK 8.1)](https://msdn.microsoft.com/Library/Windows/Hardware/Dn745909) and [Deploying a Driver to a Test Computer](deploying-a-driver-to-a-test-computer.md)
 
-For information about debugging UMDF drivers, see [How to Enable Debugging of a UMDF Driver](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff554716) and [WDF Verifier Control Application](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff556129).
+For information about debugging UMDF drivers, see [How to Enable Debugging of a UMDF Driver](https://msdn.microsoft.com/Library/Windows/Hardware/Ff554716) and [WDF Verifier Control Application](https://msdn.microsoft.com/Library/Windows/Hardware/Ff556129).
 
 ## <span id="Setting_UMDF_Verifier_properties_for_driver_projects"></span><span id="setting_umdf_verifier_properties_for_driver_projects"></span><span id="SETTING_UMDF_VERIFIER_PROPERTIES_FOR_DRIVER_PROJECTS"></span>Setting UMDF Verifier properties for driver projects
 
@@ -93,17 +89,17 @@ For information about debugging UMDF drivers, see [How to Enable Debugging of a 
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
 
 * [User-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/)
-* [Driver Verifier](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff545448)
+* [Driver Verifier](https://msdn.microsoft.com/Library/Windows/Hardware/Ff545448)
 * [Deploying a Driver to a Test Computer](deploying-a-driver-to-a-test-computer.md)
- 
+ 
 
- 
+ 
 
 
 

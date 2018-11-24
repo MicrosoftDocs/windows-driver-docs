@@ -2,11 +2,7 @@
 title: SR-IOV Architecture
 description: SR-IOV Architecture
 ms.assetid: 548856F5-823A-4064-A6C3-28CA9FBA3860
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,7 +22,7 @@ The extensible switch module that configures the NIC switch on the SR-IOV networ
 
 **Note**  Hyper-V child partitions are known as *virtual machines (VMs)*.
 
- 
+ 
 
 If the child partitions are connected to a PCI Express (PCIe) Virtual Function (VF), the extensible switch module does not participate in data traffic between the VM and the network adapter. Instead, data traffic is passed directly between the VM and the VF to which it is attached.
 
@@ -65,9 +61,9 @@ For more information, see [NIC Switches](nic-switches.md).
 <a href="" id="physical-port"></a>Physical Port  
 The physical port is a hardware component of the network adapter that supports the SR-IOV interface. The physical port provides the interface on the adapter to the external networking medium.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -9,11 +9,7 @@ keywords:
 - NDIS miniport drivers WDK , writing miniport drivers
 - writing NDIS miniport drivers WDK networking
 - NDIS miniport drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -57,9 +53,9 @@ This section includes the following topics:
 
 [Miniport Adapter Shutdown](miniport-adapter-shutdown.md)
 
- 
+ 
 
- 
+ 
 
 
 

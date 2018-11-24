@@ -12,6 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # DEVPKEY_DrvPkg_Icon
@@ -31,7 +32,7 @@ The DEVPKEY_DrvPkg_Icon device property represents a list of device icons that W
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Property-data-type identifier</strong></p></td>
-<td align="left"><p>[<strong>DEVPROP_TYPE_STRING_LIST</strong>](devprop-type-string-list.md)</p></td>
+<td align="left"><p><a href="devprop-type-string-list.md" data-raw-source="[&lt;strong&gt;DEVPROP_TYPE_STRING_LIST&lt;/strong&gt;](devprop-type-string-list.md)"><strong>DEVPROP_TYPE_STRING_LIST</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Property access</strong></p></td>
@@ -44,7 +45,7 @@ The DEVPKEY_DrvPkg_Icon device property represents a list of device icons that W
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -59,7 +60,7 @@ The icon list is a NULL-separated list of icon specifiers. An icon specifier is 
 
 -   An icon-resource specifier has the following entries:
 
-    ```
+    ```cpp
     @executable-file-path,resource-identifier
     ```
 
@@ -79,7 +80,7 @@ You can set the value of DEVPKEY_DrvPkg_Icon by an [**INF AddProperty directive*
 
 The following is an example of how to use an INF **AddProperty** directive to set DEVPKEY_DrvPkg_Icon for a device that is installed by an INF *DDInstall* section "SampleDDInstallSection":
 
-```
+```cpp
 [SampleDDinstallSection]
 ...
 AddProperty=SampleAddPropertySection
@@ -119,9 +120,9 @@ Requirements
 
 [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963)
 
- 
+ 
 
- 
+ 
 
 
 

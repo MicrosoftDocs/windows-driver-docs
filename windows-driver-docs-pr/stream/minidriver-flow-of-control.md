@@ -1,6 +1,5 @@
 ---
 title: Minidriver Flow of Control
-author: windows-driver-content
 description: Minidriver Flow of Control
 ms.assetid: c3c23d32-4023-445b-bd89-e0b454bec1ed
 keywords:
@@ -9,11 +8,7 @@ keywords:
 - minidrivers WDK Windows 2000 Kernel Streaming , flow of control
 - uninitialized streaming minidrivers WDK streaming minidriver
 - initializing streaming minidrivers WDK Windows 2000 Kernel
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -47,9 +42,9 @@ The following set of steps is typically followed in initializing, using, and uni
 
 10. When it is time to uninitialize the adapter, the stream class driver calls the function specified in the [**HW\_INITIALIZATION\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff559682) structure's **HwReceivePacket** member with SRB\_UNINITIALIZE\_DEVICE. The minidriver then uninitializes the device.
 
- 
+ 
 
- 
+ 
 
 
 

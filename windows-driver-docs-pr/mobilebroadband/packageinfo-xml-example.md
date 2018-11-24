@@ -2,11 +2,7 @@
 title: PackageInfo XML Example
 description: PackageInfo XML Example
 ms.assetid: 4e514e79-d450-4cae-a40d-16ce86f95e43
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,7 +19,7 @@ MBAE:0:L9@E}}DT2.\*F65MQA57Y+L
 **Note**  
 Hardware IDs that are included in PackageInfo.xml must have the “DOID:” prefix added to them.
 
- 
+ 
 
 The package is also for the EN-US locale, which the document sets as the default locale for the components of the metadata package.
 
@@ -50,9 +46,9 @@ The package is also for the EN-US locale, which the document sets as the default
 </PackageInfo>
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -12,11 +12,7 @@ keywords:
 - CoNDIS WDK networking , MCM drivers
 - MCM drivers WDK networking
 - call managers WDK networking , call setup
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +30,9 @@ This section includes:
 
 [Indicating an Incoming Call](indicating-an-incoming-call.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,8 @@
 title: Service icon requirements
 description: Service icon requirements
 ms.assetid: ce018a26-f5ce-4fbb-8339-b3207ca5ed68
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
@@ -54,18 +51,17 @@ The file must be an .ICO file with one of the following requirements:
 </tbody>
 </table>
 
- 
+ 
 
 The service icon is associated with the [ServiceIconFile](https://msdn.microsoft.com/library/windows/hardware/dn973162) element in the [ServiceInfo XML schema](https://msdn.microsoft.com/library/windows/hardware/dn973167) of a service metadata package.
 
 ## <span id="related_topics"></span>Related topics
 
+- [Create a mobile broadband experience](https://msdn.microsoft.com/library/windows/hardware/dn236414.aspx)
 
-[Create a mobile broadband experience](https://msdn.microsoft.com/library/windows/hardware/dn236414.aspx)
+ 
 
- 
-
- 
+ 
 
 
 

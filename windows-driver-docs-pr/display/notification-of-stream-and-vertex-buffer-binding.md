@@ -8,11 +8,7 @@ keywords:
 - vertex multiple streams WDK DirectX 8.0
 - vertex buffers WDK DirectX 8.0
 - stream binding to vertex buffer WDK DirectX 8.0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,9 +20,9 @@ ms.localizationpriority: medium
 
 A driver is notified of the binding of a vertex buffer to a particular stream through a new DP2 token, D3DDP2OP\_SETSTREAMSOURCE, and its associated HAL data structure, [**D3DHAL\_DP2SETSTREAMSOURCE**](https://msdn.microsoft.com/library/windows/hardware/ff545798).
 
- 
+ 
 
- 
+ 
 
 
 

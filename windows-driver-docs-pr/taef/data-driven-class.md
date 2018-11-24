@@ -2,11 +2,7 @@
 title: Data-driven Class
 description: Data-driven Class
 ms.assetid: 2998D5BB-A873-4df9-86B2-88937736862F
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +23,7 @@ You specify that a given class is data-driven in a similar way to how you specif
 
 ### <span id="native1_authoring"></span><span id="NATIVE1_AUTHORING"></span>Native code
 
-```
+```cpp
 1     class 2     {
 2         BEGIN_TEST_CLASS(DataDrivenClassExample)
 3             TEST_CLASS_PROPERTY(L"DataSource", L"Table:DataDrivenClassExample.xml#ClassTable")
@@ -68,7 +64,7 @@ You specify that a given class is data-driven in a similar way to how you specif
 
 ### <span id="managed1_authoring"></span><span id="MANAGED1_AUTHORING"></span>Managed code
 
-```
+```cpp
 1     [TestClass]
 2     public class CSharpDataDrivenClassExample
 3     {
@@ -120,7 +116,7 @@ You construct the **DataSource** XML file for a data-driven class in exactly the
 
 ### <span id="native3_authoring"></span><span id="NATIVE3_AUTHORING"></span>Native
 
-```
+```cpp
 1 <?xml version="1.0"?>
 2 <Data>
 3   <Table Id="ClassTable">
@@ -149,7 +145,7 @@ You construct the **DataSource** XML file for a data-driven class in exactly the
 
 ### <span id="manged2_authoring"></span><span id="MANGED2_AUTHORING"></span>Managed
 
-```
+```cpp
 1 <?xml version="1.0"?>
 2 <Data>
 3   <Table Id="ClassTable">
@@ -398,9 +394,9 @@ For example, consider the case when you have a parameter called **Size** that is
 
 If you have any such conflicting data in your code, TAEF shows a warning during execution and lists the properties, but the conflicting data will not result in any failure.
 
- 
+ 
 
- 
+ 
 
 
 

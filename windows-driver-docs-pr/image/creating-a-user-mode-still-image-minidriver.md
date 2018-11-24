@@ -1,13 +1,8 @@
 ---
 title: Creating a User-Mode Still Image Minidriver
-author: windows-driver-content
 description: Creating a User-Mode Still Image Minidriver
 ms.assetid: 94fdbeba-5b4a-4b66-b381-ec362b6d38c9
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,9 +32,9 @@ This section provides information about the following topics:
 
 [Security Issues for Still Image Drivers](security-issues-for-still-image-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

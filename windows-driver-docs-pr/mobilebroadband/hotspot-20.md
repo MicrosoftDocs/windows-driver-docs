@@ -2,11 +2,7 @@
 title: Hotspot 2.0
 description: Hotspot 2.0
 ms.assetid: 4dbd242d-8745-4ab2-b1dc-9f9dd9a73b42
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -46,20 +42,20 @@ The following table describes common credential types that are defined by Hotspo
 <td><p>Certificate</p></td>
 <td><p>EAP-TTLS</p></td>
 <td><p>Yes</p></td>
-<td><p>Yes*</p></td>
+<td><p>Yes<em></p></td>
 <td><p>No</p></td>
 </tr>
 <tr class="odd">
 <td><p>SIM</p></td>
 <td><p>EAP-SIM or EAP-AKA</p></td>
 <td><p>Yes</p></td>
-<td><p>Yes*</p></td>
+<td><p>Yes</em></p></td>
 <td><p>Yes</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 \*User can select from certificates or the SIM is already present on the system.
 
@@ -74,9 +70,9 @@ Windows 10 fully supports Hotspot 2.0 Release 1, including discovery and profil
 
 [Hotspot authentication methods](hotspot-authentication-methods.md)
 
- 
+ 
 
- 
+ 
 
 
 

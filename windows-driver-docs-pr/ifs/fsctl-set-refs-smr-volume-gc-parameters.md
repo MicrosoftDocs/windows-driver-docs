@@ -1,5 +1,5 @@
 ---
-title: FSCTL\_SET\_REFS\_SMR\_VOLUME\_GC\_PARAMETERS control code
+title: FSCTL_SET_REFS_SMR_VOLUME_GC_PARAMETERS control code
 description: The FSCTL\_SET\_REFS\_SMR\_VOLUME\_GC\_PARAMETERS control code controls the garbage collection on a Shingled Magnetic Recording (SMR) volume.
 ms.assetid: 782542C4-CFC5-4BF7-AF38-3247A3AC6AB9
 keywords: ["FSCTL_SET_REFS_SMR_VOLUME_GC_PARAMETERS control code Installable File System Drivers"]
@@ -11,11 +11,7 @@ api_location:
 - WinIoctl.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -46,7 +42,7 @@ A handle to the device. To obtain a device handle, call the [**CreateFile**](htt
 The control code for the operation. Use **FSCTL\_SET\_REFS\_SMR\_VOLUME\_GC\_PARAMETERS** for this operation.
 
 *lpInBuffer*   
-A pointer to a a caller-allocated [**REFS\_SMR\_VOLUME\_GC\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/mt842917) structure.
+A pointer to a caller-allocated [**REFS\_SMR\_VOLUME\_GC\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/mt842917) structure.
 
 *nInBufferSize* \[in\]  
 The size of the input buffer, in bytes.
@@ -101,9 +97,9 @@ Requirements
 
 [**DeviceIoControl**](https://msdn.microsoft.com/library/windows/desktop/aa363216)
 
- 
+ 
 
- 
+ 
 
 
 

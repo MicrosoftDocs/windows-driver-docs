@@ -1,6 +1,5 @@
 ---
 title: customData element
-author: windows-driver-content
 description: The optional customData element specifies a custom data source for this asynchronous notification XML schema.
 ms.assetid: 5e14a627-72c0-440d-b616-6963c3d69d2b
 keywords: ["customData element Print Devices"]
@@ -10,11 +9,7 @@ api_name:
 - customData
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,7 +23,7 @@ The **customData** element is defined in the *asyncui* namespace at this URI: ht
 Usage
 -----
 
-``` syntax
+```xml
 <customData
   dll = "xs:string"
   entryPoint = "xs:string"
@@ -119,7 +114,7 @@ Attributes
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>requestOpen</strong>](requestopen.md)</p></td>
+<td><p><a href="requestopen.md" data-raw-source="[&lt;strong&gt;requestOpen&lt;/strong&gt;](requestopen.md)"><strong>requestOpen</strong></a></p></td>
 <td><p></p>
 <p>An element that is used to open an event notification message on the client computer.</p></td>
 </tr>
@@ -136,7 +131,7 @@ Examples
 
 The following code example shows how you can use the **customData** element to obtain your custom data.
 
-```
+```xml
 <?xml version="1.0"?>
   <asyncPrintUIRequest xmlns="http://schemas.microsoft.com/2003/print/asyncui/v1/request"
       xmlns:myco="http://www.myprintercompany.com">
@@ -149,15 +144,6 @@ The following code example shows how you can use the **customData** element to o
 </asyncPrintUIRequest>
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
-
-[**requestOpen**](requestopen.md)
-
- 
-
- 
-
-
-
-
+[requestOpen](requestopen.md)

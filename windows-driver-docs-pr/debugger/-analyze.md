@@ -3,11 +3,7 @@ title: analyze
 description: The analyze extension displays information about the current exception or bug check.
 ms.assetid: dec760fb-0af6-4504-9855-8fe63c1c9783
 keywords: ["analyze Windows Debugging"]
-ms.author: domars
-ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 09/17/2018
 topic_type:
 - apiref
 api_name:
@@ -24,17 +20,17 @@ The **!analyze** extension displays information about the current exception or b
 
 User-Mode
 
-```
-!analyze [-v] [-f | -hang] [-D BucketID] 
-!analyze -c [-load KnownIssuesFile | -unload | -help ]
+```dbgcmd
+    !analyze [-v] [-f | -hang] [-D BucketID] 
+    !analyze -c [-load KnownIssuesFile | -unload | -help ]
 ```
 
 Kernel-Mode
 
-```
-!analyze [-v] [-f | -hang] [-D BucketID] 
-!analyze -c [-load KnownIssuesFile | -unload | -help ]
-!analyze -show BugCheckCode [BugParameters]
+```dbgcmd    
+    !analyze [-v] [-f | -hang] [-D BucketID] 
+    !analyze -c [-load KnownIssuesFile | -unload | -help ]
+    !analyze -show BugCheckCode [BugParameters]
 ```
 
 ## <span id="ddk__analyze_dbg"></span><span id="DDK__ANALYZE_DBG"></span>Parameters
@@ -90,9 +86,9 @@ In kernel mode, **!analyze** displays information about the most recent bug chec
 
 For drivers that use User-Mode Driver Framework (UMDF) version 2.15 or later, **!analyze** provides information about UMDF verifier failures and unhandled exceptions. This functionality is available when performing live kernel-mode debugging, as well when analyzing a user-mode memory dump file. For UMDF driver crashes, **!analyze** attempts to identify the responsible driver.
 
- 
+ 
 
- 
+ 
 
 
 

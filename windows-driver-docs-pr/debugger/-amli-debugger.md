@@ -3,11 +3,7 @@ title: amli debugger
 description: The amli debugger extension breaks into the AMLI Debugger.
 ms.assetid: ef55a45f-445a-4b05-a2a9-b21be3667ec3
 keywords: ["amli debugger Windows Debugging"]
-ms.author: domars
-ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 09/17/2018
 topic_type:
 - apiref
 api_name:
@@ -24,8 +20,8 @@ The **!amli debugger** extension breaks into the AMLI Debugger.
 
 Syntax
 
-```
-!amli debugger
+```dbgcmd
+    !amli debugger
 ```
 
 ## <span id="ddk__amli_debugger_dbg"></span><span id="DDK__AMLI_DEBUGGER_DBG"></span>
@@ -46,9 +42,9 @@ When this command is issued, notification is sent to the AML interpreter. The ne
 
 The **!amli debugger** extension only causes one break. If you want it to break again, you need to use this extension again, or set a breakpoint.
 
- 
+ 
 
- 
+ 
 
 
 

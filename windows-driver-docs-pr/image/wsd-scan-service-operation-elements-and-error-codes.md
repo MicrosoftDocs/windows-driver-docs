@@ -2,11 +2,7 @@
 title: WSD Scan Service Operation Elements and Error Codes
 description: WSD Scan Service Operation Elements and Error Codes
 ms.assetid: c3dde1b9-fb81-4e33-8970-ec20bb83e13f
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,9 +15,9 @@ This section describes the XML operation elements, operation-specific child elem
 
 [WSD Scan Service Operation Error Reporting](wsd-scan-service-operation-error-reporting.md)
 
- 
+ 
 
- 
+ 
 
 
 

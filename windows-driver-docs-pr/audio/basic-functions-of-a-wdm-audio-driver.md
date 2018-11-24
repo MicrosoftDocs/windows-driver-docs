@@ -5,11 +5,7 @@ ms.assetid: 88013d17-c28c-4c99-9c43-17532f03bfdd
 keywords:
 - WDM audio drivers WDK , about WDM audio drivers
 - audio drivers WDK , about audio drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +25,9 @@ A Microsoft Windows Driver Model (WDM) audio driver provides the following funct
 
 -   The driver optionally supports other media interfaces, such as [**KSINTERFACE\_STANDARD\_STREAMING**](https://msdn.microsoft.com/library/windows/hardware/ff563384), [**KSINTERFACE\_MEDIA\_WAVE\_QUEUED**](https://msdn.microsoft.com/library/windows/hardware/ff563377), or [**KSINTERFACE\_STANDARD\_LOOPED\_STREAMING**](https://msdn.microsoft.com/library/windows/hardware/ff563381).
 
- 
+ 
 
- 
+ 
 
 
 

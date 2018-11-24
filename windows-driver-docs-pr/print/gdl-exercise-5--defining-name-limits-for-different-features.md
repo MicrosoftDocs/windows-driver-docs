@@ -1,6 +1,5 @@
 ---
 title: GDL Exercise 5 Defining Name Limits for Different Features
-author: windows-driver-content
 description: GDL Exercise 5 Defining Name Limits for Different Features
 ms.assetid: 8e6c59d7-c748-4133-ba70-e5be413bae54
 keywords:
@@ -9,11 +8,7 @@ keywords:
 - tutorials WDK GDL
 - GDL WDK , tutorials
 - templates WDK GDL , defining name limits
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,7 +25,7 @@ Make this change without deleting or modifying any of the previously defined tem
 
 The following template satisfies the conditions.
 
-```
+```cpp
 *Template:  PAPER_SIZE_OPT_NAME
 {
 *Name:  "*Name"  *% isolate this branch from base templates
@@ -110,11 +105,11 @@ The following template satisfies the conditions.
 
 **Note**   Using [inheritance](gdl-template-inheritance.md), you can further refine and derive variations on a base class without altering any of the previous templates or subverting the intent of the schema that the previous templates established. This feature is another strength of inheritance. Inheritance provides a third party the ability to extend the master schema without changing or violating the master schema.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

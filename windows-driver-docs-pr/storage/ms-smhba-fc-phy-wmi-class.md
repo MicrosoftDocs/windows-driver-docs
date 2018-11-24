@@ -3,6 +3,7 @@ title: MS\_SMHBA\_FC\_PHY WMI Class
 description: MS\_SMHBA\_FC\_PHY WMI Class
 ms.assetid: 8256eb6a-511f-4954-875e-755bd2bb3d65
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MS\_SMHBA\_FC\_PHY WMI Class
@@ -12,7 +13,7 @@ An HBA miniport driver that supports the Storage Management API uses the MS\_SMH
 
 The MS\_SMHBA\_FC\_PHY class is defined as follows in *Hbaapi.mof*:
 
-```
+```cpp
 class MS_SMHBA_FC_PHY 
 {
     [WmiDataId(1), HBAType("HBA_FCPHYSPEED")]
@@ -35,9 +36,9 @@ When this class definition is compiled by the WMI tool suite, it produces the fo
 
 There are no methods associated with this WMI class.
 
- 
+ 
 
- 
+ 
 
 
 

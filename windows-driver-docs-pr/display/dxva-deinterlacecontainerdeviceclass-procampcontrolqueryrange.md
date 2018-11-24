@@ -11,11 +11,7 @@ api_location:
 - N/A
 api_type:
 - COM
-ms.author: windowsdriverdev
 ms.date: 01/05/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -72,7 +68,7 @@ Identifies the ProcAmp control property for which the driver should return infor
 </tbody>
 </table>
 
- 
+ 
 
 *lpVideoDescription* \[in\]
 Supplies a pointer to a [**DXVA\_VideoDesc**](https://msdn.microsoft.com/library/windows/hardware/ff564070) structure. This structure provides the driver with a description of the video to which the ProcAmp adjustment will be applied. Drivers can adjust their ProcAmp support for particular video streams.
@@ -120,16 +116,16 @@ The sample **ProcAmpControlQueryRange** function maps directly to a call to the 
 </tr>
 <tr class="even">
 <td align="left"><p>lpInputData</p></td>
-<td align="left"><p>Pointer to a [<strong>DXVA_ProcAmpControlQueryRange</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564032) structure.</p></td>
+<td align="left"><p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564032" data-raw-source="[&lt;strong&gt;DXVA_ProcAmpControlQueryRange&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564032)"><strong>DXVA_ProcAmpControlQueryRange</strong></a> structure.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>lpOutputData</p></td>
-<td align="left"><p>Pointer to a [<strong>DXVA_VideoPropertyRange</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564083) structure.</p></td>
+<td align="left"><p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564083" data-raw-source="[&lt;strong&gt;DXVA_VideoPropertyRange&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564083)"><strong>DXVA_VideoPropertyRange</strong></a> structure.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Note that the RenderMoComp function will be called without the display driver-supplied BeginMoCompFrame or EndMoCompFrame function being called first.
 
@@ -137,7 +133,7 @@ Note that the RenderMoComp function will be called without the display driver-su
 
 The following code provides an example of how you can implement your *ProcAmpControlQueryRange* function:
 
-```
+```cpp
 HRESULT
 DXVA_DeinterlaceContainerDeviceClass::ProcAmpControlQueryRange(
     DWORD VideoProperty,
@@ -210,9 +206,9 @@ Requirements
 
 [**DXVA\_VideoPropertyRange**](https://msdn.microsoft.com/library/windows/hardware/ff564083)
 
- 
+ 
 
- 
+ 
 
 
 

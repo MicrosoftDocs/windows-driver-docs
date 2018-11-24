@@ -1,17 +1,12 @@
 ---
 title: Connections Between Two Subunit Plugs in Different AV/C Units
-author: windows-driver-content
 description: Connections Between Two Subunit Plugs in Different AV/C Units
 ms.assetid: 20d209b3-2516-4913-9f31-b14afddb78fb
 keywords:
 - connections WDK AV/C
 - AV/C WDK , connection scenarios
 - AVCCONNECTINFO
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -57,7 +52,7 @@ Each column in the following table corresponds to a member of the [**AVCCONNECTI
 </tbody>
 </table>
 
- 
+ 
 
 Each column in the following table corresponds to a member of the AVCCONNECTINFO structure and specifies values for these members for a destination subunit plug.
 
@@ -86,7 +81,7 @@ Each column in the following table corresponds to a member of the AVCCONNECTINFO
 </tbody>
 </table>
 
- 
+ 
 
 ### <a href="" id="scenario-6"></a> Scenario 6
 
@@ -125,7 +120,7 @@ Each column in the following table corresponds to a member of the AVCCONNECTINFO
 </tbody>
 </table>
 
- 
+ 
 
 Each column in the following table corresponds to a member of the AVCCONNECTINFO structure and specifies values for these members for a destination subunit plug.
 
@@ -154,7 +149,7 @@ Each column in the following table corresponds to a member of the AVCCONNECTINFO
 </tbody>
 </table>
 
- 
+ 
 
 The following list describes the meaning of values that appear in the preceding tables :
 
@@ -168,9 +163,9 @@ The following list describes the meaning of values that appear in the preceding 
 
 -   The values in the **Device ID** columns (for source and destination subunit plugs) are used to search for the physical device object (PDO) of the target AV/C device to issue AV/C CCM commands to.
 
- 
+ 
 
- 
+ 
 
 
 

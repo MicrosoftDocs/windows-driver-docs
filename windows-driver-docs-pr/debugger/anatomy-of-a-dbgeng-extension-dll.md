@@ -3,11 +3,7 @@ title: Anatomy of a DbgEng Extension DLL
 description: Anatomy of a DbgEng Extension DLL
 ms.assetid: 5131115b-b9a0-479b-9391-7ab384633d92
 keywords: ["DbgEng Extensions, DLL anatomy"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -57,9 +53,9 @@ See [Loading Debugger Extension DLLs](loading-debugger-extension-dlls.md) for in
 
 The debugger engine will place a **try / except** block around a call to an extension DLL. This protects the engine from some types of bugs in the extension code; but, since the extension calls are executed in the same thread as the engine, they can still cause it to crash.
 
- 
+ 
 
- 
+ 
 
 
 

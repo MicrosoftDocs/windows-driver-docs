@@ -9,11 +9,7 @@ api_name:
 - wscn Documents
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **Documents** element contains the actual scan characteristics that
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:Documents>
   child elements
 </wscn:Documents>
@@ -50,10 +46,10 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>Document</strong>](document.md)</p></td>
+<td><p><a href="document.md" data-raw-source="[&lt;strong&gt;Document&lt;/strong&gt;](document.md)"><strong>Document</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>DocumentFinalParameters</strong>](documentfinalparameters.md)</p></td>
+<td><p><a href="documentfinalparameters.md" data-raw-source="[&lt;strong&gt;DocumentFinalParameters&lt;/strong&gt;](documentfinalparameters.md)"><strong>DocumentFinalParameters</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -72,12 +68,12 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>Job</strong>](job.md)</p></td>
+<td><p><a href="job.md" data-raw-source="[&lt;strong&gt;Job&lt;/strong&gt;](job.md)"><strong>Job</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**Document**](document.md)
@@ -86,9 +82,9 @@ There are no attributes.
 
 [**Job**](job.md)
 
- 
+ 
 
- 
+ 
 
 
 

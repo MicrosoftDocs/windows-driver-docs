@@ -6,11 +6,7 @@ keywords:
 - miniport drivers WDK networking , types
 - NDIS miniport drivers WDK , types
 - serialized NDIS miniport drivers WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,9 +20,9 @@ Serialized NDIS miniport drivers are obsolete for Windows Vista and later versio
 
 If you are writing a new miniport driver, you should write a [deserialized driver](deserialized-ndis-miniport-drivers.md). If possible, you should also port older drivers to NDIS 6.0 or later. For more information about porting drivers to NDIS 6.0, see [Porting NDIS 5.x Drivers to NDIS 6.0](porting-ndis-5-x-drivers-to-ndis-6-0.md).
 
- 
+ 
 
- 
+ 
 
 
 

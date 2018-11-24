@@ -1,5 +1,5 @@
 ---
-title: FSCTL\_SET\_REPARSE\_POINT control code
+title: FSCTL_SET_REPARSE_POINT control code
 description: The FSCTL\_SET\_REPARSE\_POINT control code sets a reparse point on a file or directory.
 ms.assetid: db38cc62-845e-4690-a430-a9c834382b56
 keywords: ["FSCTL_SET_REPARSE_POINT control code Installable File System Drivers"]
@@ -11,11 +11,7 @@ api_location:
 - ntifs.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -94,7 +90,7 @@ Status block
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -137,9 +133,9 @@ Requirements
 
 [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -9,11 +9,7 @@ keywords:
 - etl files
 - trace logs WDK
 - storing trace messages
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +25,9 @@ The system first stores the trace messages that [trace providers](trace-provider
 
 Because the messages can occupy a large amount of disk space, trace logs store them in a compressed binary format. To read the messages, trace consumers use information supplied by the trace provider (the *FormatString* parameter in the [**DoTraceMessage**](https://msdn.microsoft.com/library/windows/hardware/ff544918) macro) to parse and format the messages so that they are readable. The trace consumer can find this information in the [PDB symbol file](pdb-symbol-files.md) or the [trace message format file](trace-message-format-file.md) for the provider.
 
- 
+ 
 
- 
+ 
 
 
 

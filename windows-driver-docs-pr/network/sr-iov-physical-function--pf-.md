@@ -2,11 +2,7 @@
 title: SR-IOV Physical Function (PF)
 description: SR-IOV Physical Function (PF)
 ms.assetid: 176ABEA4-B6BE-41D6-9171-8E9A537F8CA1
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,9 +32,9 @@ The PF also provides the mechanism for the management operating system to commun
 
 The PF miniport driver is responsible for managing resources on the network adapter that are used by one or more VFs. Because of this, the PF miniport driver is loaded in the management operating system before any resources are allocated for a VF. The PF miniport driver is halted after all resources that were allocated for VFs are freed.
 
- 
+ 
 
- 
+ 
 
 
 

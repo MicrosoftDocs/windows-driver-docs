@@ -12,11 +12,7 @@ keywords:
 - hardware acceleration WDK audio
 - miniport drivers WDK audio , kernel-mode hardware acceleration
 - synthesizers WDK audio , kernel-mode hardware acceleration
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -62,9 +58,9 @@ The miniport driver object is created by the IHV's adapter driver. While there i
 
 The section [DirectMusic Miniport Driver Interface](directmusic-miniport-driver-interface.md) presents the details of a DirectMusic miniport driver implementation.
 
- 
+ 
 
- 
+ 
 
 
 

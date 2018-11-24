@@ -7,11 +7,7 @@ keywords:
 - video copy protection WDK COPP , video miniport driver code template
 - protected video WDK COPP , video miniport driver code template
 - video miniport drivers WDK Windows 2000 , COPP code template
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -45,9 +41,9 @@ This section includes:
 
 [COPP Video Miniport Driver Close Template Code](copp-video-miniport-driver-close-template-code.md)
 
- 
+ 
 
- 
+ 
 
 
 

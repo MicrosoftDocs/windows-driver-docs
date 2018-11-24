@@ -1,17 +1,9 @@
 ---
 title: WinDbg Preview - Data Model 
 description: This section describes how to work with the data model menu in the WinDbg preview debugger.
-ms.author: domars
-ms.date: 08/03/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 10/12/2018
 ms.localizationpriority: medium
 ---
-
-> [!NOTE]
-> The information in this topic is preliminary. Updated information will be provided in a later release of the documentation. 
->
 
 # WinDbg Preview - Data Model 
 
@@ -32,7 +24,7 @@ For general information about the debugger objects refer to [dx (Display Debugge
 
 Use LINQ queries to dig deeper into the session. This query shows the top 5 processes running the most threads. 
 
-```
+```dbgcmd
 Debugger.Sessions.First().Processes.Select(p => new { Name = p.Name, ThreadCount = p.Threads.Count() }).OrderByDescending(p => p.ThreadCount),5
 ```
 ![Data model explore window showing process and threads](images/windbgx-data-model-process-threads.png)
@@ -63,21 +55,21 @@ When you click on any underlined item a new tab is opened and a query is run to 
 
 This query shows the devices in the plug and play device tree grouped by the name of the physical device object's driver.
 
-```
+```dbgcmd
 Debugger.Sessions.First().Devices.DeviceTree.Flatten(n => n.Children).GroupBy(n => n.PhysicalDeviceObject->Driver->DriverName.ToDisplayString()) 
 ```
 ![Data model explore window showing plug and play device tree in a grid view](images/windbgx-data-model-pnp-device.png)
 
 ---
- 
+ 
 ## See Also
 
 [dx (Display Debugger Object Model Expression)](dx--display-visualizer-variables-.md)
 
 [Debugging Using WinDbg Preview](debugging-using-windbg-preview.md)
- 
+ 
 
- 
+ 
 
 
 

@@ -1,13 +1,8 @@
 ---
 title: Vendor-Extended Features
-author: windows-driver-content
 description: Vendor-Extended Features
 ms.assetid: 8063622e-efc4-4940-893f-2916bf297d12
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,7 +24,7 @@ This section discusses vendor-extended features a PTP device can support the fol
 
 Vendor-extended properties and events must be listed in the **DeviceData** INF file entry and the events must be provided a name in the **Events** INF file entry (see [INF files for WIA devices](inf-files-for-wia-devices.md) for more information). An entry listing the vendor extension ID is required. This must match the **VendorExtensionID** field in the DeviceInfo dataset. An example of the other entries is shown here and described in the following sections.
 
-```
+```INF
 [DeviceData]
 VendorExtID=0x12345678
 PropCode="0xD001,0xD002,0xD003"
@@ -47,11 +42,11 @@ EventCodeC002="Vendorevent2",{8162F5ED-62B7-42c5-9C2B-B1625AC0DB93},*
 
 **Note**   In INF files for WIA devices, vendor property names must be a single word, with no spaces, and comprised of only alphanumeric values.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

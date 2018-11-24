@@ -9,11 +9,7 @@ api_name:
 - wscn ScannerStateReason
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The optional **ScannerStateReason** element specifies one piece of information a
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ScannerStateReason>
   text
 </wscn:ScannerStateReason>
@@ -100,7 +96,7 @@ Required. One of the following values:
 </tbody>
 </table>
 
- 
+ 
 
 ## Child elements
 
@@ -121,7 +117,7 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ScannerStateReasons</strong>](scannerstatereasons.md)</p></td>
+<td><p><a href="scannerstatereasons.md" data-raw-source="[&lt;strong&gt;ScannerStateReasons&lt;/strong&gt;](scannerstatereasons.md)"><strong>ScannerStateReasons</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -135,14 +131,14 @@ The WSD Scan Service must support the values that represent conditions that are 
 
 You can extend the allowed values, but there are implications when you extend this list on a client. The client typically localizes the [**ScannerStateReasons**](scannerstatereasons.md) value (as with other string variable values) to the language of the end user, so the client will not recognize a vendor extension value. However, the client can display the value that is received directly. This value should be in English, so some end users might not understand the value. Alternatively, the Scan Service can use the general **AttentionRequired** value and then explain the problem on the scanner console, which the user will see when they are at the scanner.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ScannerStateReasons**](scannerstatereasons.md)
 
- 
+ 
 
- 
+ 
 
 
 

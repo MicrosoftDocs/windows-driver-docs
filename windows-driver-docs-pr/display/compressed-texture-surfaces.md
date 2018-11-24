@@ -11,11 +11,7 @@ keywords:
 - drawing compressed textures WDK DirectDraw
 - DirectDraw compressed textures WDK Windows 2000 display
 - compressed texture surfaces WDK DirectDraw
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,7 +25,7 @@ A surface can contain a bitmap to be used for texturing 3D objects. To reduce th
 
 **Note**   No new callbacks have been added to support compressed texture surfaces. DirectDraw passes information about compressed texture surfaces to the driver through the existing driver callbacks.
 
- 
+ 
 
 <table>
 <colgroup>
@@ -43,7 +39,7 @@ A surface can contain a bitmap to be used for texturing 3D objects. To reduce th
 <th align="left">Description</th>
 <th align="left">Alpha
 <div>
- 
+ 
 </div>
 premultiplied?</th>
 </tr>
@@ -77,15 +73,15 @@ premultiplied?</th>
 </tbody>
 </table>
 
- 
+ 
 
 The preceding shows the five types of compressed textures that drivers should support.
 
 For more information about the format of compressed textures, see **Compressed Texture Formats** in the DirectDraw SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

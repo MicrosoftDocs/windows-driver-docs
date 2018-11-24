@@ -3,11 +3,7 @@ title: uf (Unassemble Function)
 description: The uf command displays an assembly translation of the specified function in memory.
 ms.assetid: 344e3afd-6b8d-48f2-9e07-dd7e1937f71b
 keywords: ["uf (Unassemble Function) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **uf** command displays an assembly translation of the specified function in memory.
 
-```
+```dbgcmd
 uf [Options] Address
 ```
 
@@ -76,7 +72,7 @@ Specifies the address of the function to disassemble. For more information about
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -87,9 +83,9 @@ Remarks
 
 The display shows the whole function, according to the function order.
 
- 
+ 
 
- 
+ 
 
 
 

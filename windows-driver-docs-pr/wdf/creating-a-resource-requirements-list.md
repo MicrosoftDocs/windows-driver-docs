@@ -1,6 +1,5 @@
 ---
 title: Creating a Resource Requirements List
-author: windows-driver-content
 description: Creating a Resource Requirements List
 ms.assetid: 1254aa21-c64b-4c62-93dc-6758cef382f9
 keywords:
@@ -9,11 +8,7 @@ keywords:
 - resource requirements lists WDK KMDF , creating
 - resource-requirements-list objects WDK KMDF
 - framework resource-requirements-list objects WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -49,9 +44,9 @@ The driver must then do the following to add information to a resource requireme
 
 After the driver's [*EvtDeviceResourceRequirementsQuery*](https://msdn.microsoft.com/library/windows/hardware/ff540894) callback function returns, the framework passes the resource requirements list to the PnP manager.
 
- 
+ 
 
- 
+ 
 
 
 

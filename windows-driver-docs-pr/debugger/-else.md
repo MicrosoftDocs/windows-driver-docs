@@ -3,11 +3,7 @@ title: .else
 description: The .else token behaves like the else keyword in C.
 ms.assetid: aa783a66-2b28-40d1-a943-67a26e668612
 keywords: [".else Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **.else** token behaves like the **else** keyword in C.
 
-```
+```dbgcmd
 .if (Condition) { Commands } .else { Commands } 
 
 .if (Condition) { Commands } .elsif (Condition) { Commands } .else { Commands } 
@@ -38,9 +34,9 @@ Specifies one or more commands that will be executed conditionally. This block o
 
 For information about other control flow tokens and their use in debugger command programs, see [Using Debugger Command Programs](using-debugger-command-programs.md).
 
- 
+ 
 
- 
+ 
 
 
 

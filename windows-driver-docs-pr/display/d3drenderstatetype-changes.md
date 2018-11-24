@@ -5,11 +5,7 @@ ms.assetid: b62bc1f9-b9f1-40f1-aed1-752285adb3c4
 keywords:
 - multimatrix vertex blending WDK Direct3D , D3DRENDERSTATETYPE
 - D3DRENDERSTATETYPE
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +29,9 @@ For a description of the D3DTRANSFORMSTATE\_WORLD *n* transformation states, see
 
 Even though additional blending world matrices have been defined with the **IDirect3DDevice7::SetTransform** method (described in the Direct3D SDK documentation), the contributions (that is, weights) of any matrices beyond the number specified in this render state are set to zero.
 
- 
+ 
 
- 
+ 
 
 
 

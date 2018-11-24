@@ -7,11 +7,7 @@ keywords:
 - NMR WDK , client module operations
 - client modules WDK Network Module Registrar , operations
 - network modules WDK Network Module Registrar , client module operations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +26,9 @@ This section discusses the operations for a client module to interact with the N
 
 [Unloading a Client Module](unloading-a-client-module.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -9,11 +9,7 @@ keywords:
 - PortCls WDK audio , device support
 - port drivers WDK audio , miniport drivers
 - port drivers WDK audio , Port Class
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -50,9 +46,9 @@ PortCls implements the following port drivers:
 
 [DMus Port Driver](dmus-port-driver.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,13 +1,8 @@
 ---
 title: GPIO Driver Support Overview
-author: windows-driver-content
 description: Starting with Windows 8, the GPIO framework extension (GpioClx) simplifies the task of writing a driver for a GPIO controller device.
 ms.assetid: 450E7F80-D9AC-4F52-8062-2DA5343C8D0F
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -18,8 +13,9 @@ Starting with Windows 8, the GPIO framework extension (GpioClx) simplifies the 
 
 This overview discusses the following topics:
 
--   [GPIO Controller Drivers](#gpio-controller-drivers)
--   [Drivers for Peripheral Devices That Use GPIO Pins](#drivers-for-peripheral-devices-that-use-gpio-pins)
+- [GPIO Driver Support Overview](#gpio-driver-support-overview)
+    - [GPIO Controller Drivers](#gpio-controller-drivers)
+    - [Drivers for Peripheral Devices That Use GPIO Pins](#drivers-for-peripheral-devices-that-use-gpio-pins)
 
 ## GPIO Controller Drivers
 
@@ -54,21 +50,21 @@ For more information about primary and secondary interrupts, see [GPIO Interrupt
 
 At startup, the Plug and Play (PnP) manager enumerates both PnP devices and non-PnP devices. For non-PnP devices that have fixed connections to GPIO pins, the PnP manager queries the platform firmware to determine which GPIO pins are assigned as system-managed hardware resources to these devices.
 
-The KMDF driver for a peripheral device receives its assigned hardware resources during an [*EvtDevicePrepareHardware*](https://msdn.microsoft.com/library/windows/hardware/ff540880) callback. The UMDF driver for a peripheral device receives its assigned hardware resources during a call to the driver's [**IPnpCallbackHardware2::OnPrepareHardware**](https://msdn.microsoft.com/library/windows/hardware/hh439734) method. These resources might include GPIO pins that are configured as data outputs, data inputs, or interrupt request inputs.
+The KMDF driver for a peripheral device receives its assigned hardware resources during an [*EvtDevicePrepareHardware*](https://msdn.microsoft.com/library/windows/hardware/ff540880) callback. These resources might include GPIO pins that are configured as data outputs, data inputs, or interrupt request inputs.
 
 A GPIO I/O resource is a new Windows resource type in Windows 8. This resource consists of a set of one or more GPIO pins that can be used either as data inputs or data outputs. If a peripheral device driver opens a GPIO I/O resource for reads, the driver uses all of the pins in the resource as data inputs. If a driver opens a GPIO I/O resource for writes, the driver uses all of the pins in the resource as data outputs. For code examples that show how a peripheral device driver opens a logical connection to a set of GPIO I/O pins, see the following topics:
 
 [Connecting a KMDF Driver to GPIO I/O Pins](https://msdn.microsoft.com/library/windows/hardware/hh406474)
-[Connecting a UMDF Driver to GPIO I/O Pins](https://msdn.microsoft.com/library/windows/hardware/hh698244)
+
 A GPIO pin that is configured as an interrupt input is assigned to a driver as an ordinary Windows interrupt resource. The interrupt resource abstraction hides the fact that an interrupt might be implemented by a GPIO pin instead of, for example, a programmable interrupt controller. Thus, the driver can treat a GPIO-based interrupt resource the same as any other interrupt resource.
 
-To access the GPIO pins in a GPIO I/O resource, a peripheral device driver must open a logical connection to the pins. A KMDF driver calls the [**WdfIoTargetOpen**](https://msdn.microsoft.com/library/windows/hardware/ff548634) method to open the connection. A UMDF driver calls the [**IWDFRemoteTarget::OpenFileByName**](https://msdn.microsoft.com/library/windows/hardware/ff560273) method. Through this connection, the driver can send I/O requests to the GPIO pins. The driver sends [**IOCTL\_GPIO\_READ\_PINS**](https://msdn.microsoft.com/library/windows/hardware/hh406483) requests to read data from these pins (if they are input pins) or [**IOCTL\_GPIO\_WRITE\_PINS**](https://msdn.microsoft.com/library/windows/hardware/hh406487) requests to write data to them (if they are output pins).
+To access the GPIO pins in a GPIO I/O resource, a peripheral device driver must open a logical connection to the pins. A KMDF driver calls the [**WdfIoTargetOpen**](https://msdn.microsoft.com/library/windows/hardware/ff548634) method to open the connection. Through this connection, the driver can send I/O requests to the GPIO pins. The driver sends [**IOCTL\_GPIO\_READ\_PINS**](https://msdn.microsoft.com/library/windows/hardware/hh406483) requests to read data from these pins (if they are input pins) or [**IOCTL\_GPIO\_WRITE\_PINS**](https://msdn.microsoft.com/library/windows/hardware/hh406487) requests to write data to them (if they are output pins).
 
-To receive interrupts from the GPIO pin in an interrupt resource, a peripheral device driver must register its interrupt service routine (ISR) to receive interrupts from the interrupt resource that is implemented by this pin. A KMDF driver calls the [**WdfInterruptCreate**](https://msdn.microsoft.com/library/windows/hardware/ff547345) method to connect an ISR to the interrupt. A UMDF driver calls the [**IWDFDevice3::CreateInterrupt**](https://msdn.microsoft.com/library/windows/hardware/hh451208) method.
+To receive interrupts from the GPIO pin in an interrupt resource, a peripheral device driver must register its interrupt service routine (ISR) to receive interrupts from the interrupt resource that is implemented by this pin. A KMDF driver calls the [**WdfInterruptCreate**](https://msdn.microsoft.com/library/windows/hardware/ff547345) method to connect an ISR to the interrupt. 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: bitmap element
-author: windows-driver-content
 description: The optional bitmap element is used to display a bitmap image to the left of the body text in a message box.
 ms.assetid: 6dd1a82f-7a9e-4ed6-9d0d-76e025331d2c
 keywords: ["bitmap element Print Devices"]
@@ -10,11 +9,7 @@ api_name:
 - bitmap
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,7 +23,7 @@ The **bitmap** element is defined in the *asyncui* namespace at this URI: http:/
 Usage
 -----
 
-``` syntax
+```xml
 <bitmap
   bitmapID = "xs:string"
   resourceDll = "xs:string"/>
@@ -91,7 +86,7 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>messageBoxUI</strong>](messageboxui.md)</p></td>
+<td><p><a href="messageboxui.md" data-raw-source="[&lt;strong&gt;messageBoxUI&lt;/strong&gt;](messageboxui.md)"><strong>messageBoxUI</strong></a></p></td>
 <td><p></p>
 <p>An optional element that is used to display a message box on the client computer.</p></td>
 </tr>
@@ -103,7 +98,7 @@ Examples
 
 The following code example shows how to use the **bitmap** element.
 
-```
+```xml
 <?xml version="1.0" ?>
    <asyncPrintUIRequest xmlns="http://schemas.microsoft.com/2003/print/asyncui/v1/request">
     <v1>
@@ -121,15 +116,6 @@ The following code example shows how to use the **bitmap** element.
   </asyncPrintUIRequest>
 ```
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**messageBoxUI**](messageboxui.md)
-
- 
-
- 
-
-
-
-

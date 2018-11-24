@@ -4,11 +4,7 @@ description: Setting Copy Protection Hardware
 ms.assetid: c9733d74-faa8-44af-8de7-9530ebcfe949
 keywords:
 - copy protection WDK video miniport , setting
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +24,9 @@ Miniport drivers that returned VP\_FLAGS\_PROTECTED in [**VIDEOPARAMETERS**](htt
 
 Miniport drivers of devices that do not have copy protection hardware should simply return NO\_ERROR in the **Status** field of the [**VRP**](https://msdn.microsoft.com/library/windows/hardware/ff570547)'s **StatusBlock**.
 
- 
+ 
 
- 
+ 
 
 
 

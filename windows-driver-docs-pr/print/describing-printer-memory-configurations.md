@@ -1,6 +1,5 @@
 ---
 title: Describing Printer Memory Configurations
-author: windows-driver-content
 description: Describing Printer Memory Configurations
 ms.assetid: 4a85788a-9713-42fb-a788-4d45f9aaabac
 keywords:
@@ -9,11 +8,7 @@ keywords:
 - printer memory configurations WDK Unidrv
 - memory configurations WDK Unidrv
 - Unidrv WDK print
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,7 +26,7 @@ Within a GPD file, you can use two methods to describe a printer's possible memo
 
     For example, to specify that a printer can have two memory configurations, a 1-megabyte configuration with 450 kilobytes available and a 2-megabyte configuration with 1350 kilobytes available, you can use the following GPD entries:
 
-    ```
+    ```cpp
     *Feature: Memory
     {
         *Name: "Printer Memory"
@@ -54,7 +49,7 @@ Within a GPD file, you can use two methods to describe a printer's possible memo
 
     For example, to specify the same two configurations, a 1-megabyte configuration with 450 kilobytes available and a 2-megabyte configuration with 1350 kilobytes available, you can use the following GPD entries:
 
-    ```
+    ```cpp
     *Feature: Memory
     {
         *Name: "Printer Memory"
@@ -75,9 +70,9 @@ Whichever method you use, the [Unidrv user interface](unidrv-user-interface.md) 
 
 If your minidriver specifies memory configurations, it can also specify the types of data that can be stored in printer memory and use up its available space. The \*MemoryUsage attribute is one of the [printer capability attributes](printer-capability-attributes.md), and you can use it to indicate to Unidrv whether font, raster, or vector data, or a combination of the three, are stored within printer memory. For each type specified, Unidrv attempts to keep track of how much printer memory is in use.
 
- 
+ 
 
- 
+ 
 
 
 

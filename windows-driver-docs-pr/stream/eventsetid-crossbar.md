@@ -2,11 +2,7 @@
 title: EVENTSETID\_CROSSBAR
 description: EVENTSETID\_CROSSBAR
 ms.assetid: 19e8e431-00fd-462b-bb01-e41e0a7b7f6d
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,9 +18,9 @@ The event item in this set is specified in the KSEVENT\_CROSSBAR enumeration.
 
 The only event in this set is [**KSEVENT\_CROSSBAR\_CHANGED**](ksevent-crossbar-changed.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,15 +1,10 @@
 ---
 title: HS_HOST_UPDATE_CONFIGURATION_COMPLETION function
-author: windows-driver-content
 description: The HS_HOST_UPDATE_CONFIGURATION_COMPLETION function indicates the success or failure of a request to check for updates.
 ms.assetid: 7e9eda04-db8e-4181-90e3-8716a99429a8
 keywords: 
 - typedef DWORD (WINAPI HS_HOST_UPDATE_CONFIGURATION_COMPLETION) function Network Drivers Starting with Windows Vista
-ms.author: windowsdriverdev
-ms.date: 07/31/2017 
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 07/31/2017
 ms.localizationpriority: medium
 ---
 
@@ -76,9 +71,9 @@ Requirements
 
 [**HS\_PLUGIN\_CHECK\_FOR\_UPDATES**](hs-plugin-check-for-updates.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -5,11 +5,7 @@ ms.assetid: 49b00396-479f-471a-8c79-bb8ef33ebcaa
 keywords:
 - GeneralConfigData section
 - INF files WDK Windows 2000 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,12 +17,11 @@ ms.localizationpriority: medium
 
 If your miniport driver maps more than 8 MB of device memory, include a **GeneralConfigData** section in your INF file.
 
-```
+```inf
 [GeneralConfigData]
- 
+
 [MaximumDeviceMemoryConfiguration = n]
 [MaximumNumberOfDevices = n]
- 
 ```
 
 The following are **GeneralConfigData** entries and values:
@@ -39,9 +34,9 @@ Specifies how many video devices (as enumerated by PCI and driven by your minipo
 
 For information about supporting more than one monitor, see [Supporting DualView (Windows 2000 Model)](supporting-dualview--windows-2000-model-.md) and [Multiple-Monitor Support in the Display Driver](multiple-monitor-support-in-the-display-driver.md).
 
- 
 
- 
+
+
 
 
 

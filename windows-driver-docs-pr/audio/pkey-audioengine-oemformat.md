@@ -2,11 +2,7 @@
 title: PKEY\_AudioEngine\_OEMFormat
 description: PKEY\_AudioEngine\_OEMFormat
 ms.assetid: a1587f46-1c21-4419-a1a4-81fe299c6871
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -17,7 +13,7 @@ In Windows Vista and later, the **PKEY\_AudioEngine\_OEMFormat** property key id
 
 An INF file specifies the default format for an audio endpoint device in the add-registry section for that device. The following INF example shows an add-registry section that loads the default format for an endpoint device into the registry.
 
-```
+```inf
 ;;
 ;; Identify endpoint device as a set of speakers.
 ;; Set default format to 48-kHz, 16-bit stereo.
@@ -33,7 +29,7 @@ HKR,"EP\\0", %PKEY_AudioEndpoint_ControlPanelProvider%,,%AUDIOENDPOINT_EXT_UI_CL
 
 The preceding example is taken from the file Sysfx.inf in the Sysfx audio sample in the Windows Driver Kit. The Strings section of this INF file contains the following definitions.
 
-```
+```inf
 PKEY_AudioEndpoint_ControlPanelProvider = "{1DA5D803-D492-4EDD-8C23-E0C0FFEE7F0E},1"
 PKEY_AudioEndpoint_Association          = "{1DA5D803-D492-4EDD-8C23-E0C0FFEE7F0E},2"
 PKEY_AudioEngine_OEMFormat              = "{E4870E26-3CC5-4CD2-BA46-CA0A9A70ED04},3"
@@ -49,7 +45,7 @@ In the preceding INF example, the property value that is associated with the **P
 
 The following code example is a console application that prints the REG\_BINARY data that appears in the preceding INF example.
 
-```
+```cpp
 //
 // Embed a WAVEFORMATEXTENSIBLE structure in a PropVariant
 // container, and print the PropVariant structure as a
@@ -121,9 +117,9 @@ The main function in the preceding code example creates a [**WAVEFORMATEXTENSIBL
 
 The PrintSerializedFormat function in the preceding code example serializes the format description and prints the serialized format description as REG\_BINARY data. You can copy the printed output produced by the function and paste it into your INF file.
 
- 
+ 
 
- 
+ 
 
 
 

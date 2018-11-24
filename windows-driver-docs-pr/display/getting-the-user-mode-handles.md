@@ -8,11 +8,7 @@ keywords:
 - kernel-mode video transport WDK DirectDraw , user-mode handles
 - video transport kernel-mode WDK DirectDraw , user-mode handles
 - user-mode handles WDK DirectDraw
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +22,9 @@ The following procedures show how to obtain the user-mode (ring 3) handles.
 
 To get the DirectDraw handle for a DirectDraw object:
 
-1.  Call **QueryInterface(***lpDD*, &*IID\_IDirectDrawKernel*, &*pNewInterface***)** on the DirectDraw interface.
+1. Call **QueryInterface(**<em>lpDD</em>, &*IID\_IDirectDrawKernel*, &<em>pNewInterface</em>**)** on the DirectDraw interface.
 
-2.  Call the [**IDirectDrawKernel::GetKernelHandle**](https://msdn.microsoft.com/library/windows/hardware/ff567404) method on the new interface.
+2. Call the [**IDirectDrawKernel::GetKernelHandle**](https://msdn.microsoft.com/library/windows/hardware/ff567404) method on the new interface.
 
 The **IDirectDrawKernel::GetKernelHandle** method returns a kernel-mode handle for the DirectDraw object. To release the handle, use the [**IDirectDrawKernel::ReleaseKernelHandle**](https://msdn.microsoft.com/library/windows/hardware/ff567407) method.
 
@@ -36,7 +32,7 @@ A user-mode component can also call the [**IDirectDrawKernel::GetCaps**](https:/
 
 ### <span id="code_sample"></span><span id="CODE_SAMPLE"></span>Code Sample
 
-```
+```cpp
 ddRVal = IDirectDraw_QueryInterface( lpDD, &IID_IDirectDrawKernel, &pDDK );
 if( ( ddRVal == DD_OK ) && ( pDDK != NULL ) )
 {
@@ -51,15 +47,15 @@ if( ( ddRVal == DD_OK ) && ( pDDK != NULL ) )
 
 To get the DirectDrawSurface handle:
 
-1.  Call **QueryInterface(***lpSurface*, &*IID\_IDirectDrawSurfaceKernel*, &*pDDSK***)** on the DirectDrawSurface interface.
+1. Call **QueryInterface(**<em>lpSurface</em>, &*IID\_IDirectDrawSurfaceKernel*, &<em>pDDSK</em>**)** on the DirectDrawSurface interface.
 
-2.  Call the [**IDirectDrawSurfaceKernel::GetKernelHandle**](https://msdn.microsoft.com/library/windows/hardware/ff567411) method on the new interface.
+2. Call the [**IDirectDrawSurfaceKernel::GetKernelHandle**](https://msdn.microsoft.com/library/windows/hardware/ff567411) method on the new interface.
 
 The **IDirectDrawSurfaceKernel::GetKernelHandle** method returns a kernel-mode handle for the DirectDrawSurface driver. To release the handle, use the [**IDirectDrawSurfaceKernel::ReleaseKernelHandle**](https://msdn.microsoft.com/library/windows/hardware/ff567413) method.
 
 ### <span id="code_sample2"></span><span id="CODE_SAMPLE2"></span>Code Sample
 
-```
+```cpp
 ddRVal = IDirectDraw_QueryInterface( lpSurface,
              &IID_IDirectDrawSurfaceKernel, &pDDSK );
 if( ( ddRVal == DD_OK ) && ( pDDK != NULL ) )
@@ -73,9 +69,9 @@ if( ( ddRVal == DD_OK ) && ( pDDK != NULL ) )
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -21,11 +21,7 @@ keywords:
 - KMixer system driver WDK audio , about KMixer system driver
 - IEEE 1394 WDK audio
 - WDM audio components WDK
-ms.author: windowsdriverdev
 ms.date: 05/08/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -90,8 +86,6 @@ The KMixer system driver (Kmixer.sys) is the KS filter that does the following:
 -   Mixing of multiple PCM audio streams
 
 -   High-quality format conversion
-
--   Mixing and sample-rate conversion (See [KMixer Driver Sample Rate Conversion and Mixing Policy](kmixer-driver-sample-rate-conversion-and-mixing-policy.md).)
 
 -   Bit-depth conversion
 
@@ -165,7 +159,7 @@ To work with the system-supplied drivers, hardware vendors should design their a
 
 -   Updates to the AV/C Audio Subunit Specifications currently in process
 
-These specifications are available at the [1394 Trade Association](http://go.microsoft.com/fwlink/p/?linkid=8728) website. The AVCAudio driver supports a subset of the features that are described in these specifications.
+These specifications are available at the [1394 Trade Association](https://go.microsoft.com/fwlink/p/?linkid=8728) website. The AVCAudio driver supports a subset of the features that are described in these specifications.
 
 When an audio device identifies itself as an IEEE 1394-compliant audio device during Plug and Play device enumeration, the system automatically loads the AVCAudio driver to drive the device. AVCAudio drives the device directly, without the aid of a proprietary adapter driver. This means that a device that complies with the appropriate IEEE 1394 specifications requires no proprietary adapter driver.
 
@@ -183,9 +177,9 @@ For more information about the driver components in the figure, see the followin
 
 [IEEE 1394 Bus](https://msdn.microsoft.com/library/windows/hardware/ff537207)
 
- 
+ 
 
- 
+ 
 
 
 

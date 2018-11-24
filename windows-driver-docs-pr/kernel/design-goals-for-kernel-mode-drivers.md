@@ -1,14 +1,9 @@
 ---
 title: Design Goals for Kernel-Mode Drivers
-author: windows-driver-content
 description: Design Goals for Kernel-Mode Drivers
 ms.assetid: 2799556e-0359-4388-acf3-74d90eb86a0f
 keywords: ["kernel-mode drivers WDK , design goals"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +29,9 @@ Kernel-mode drivers share many of the design goals of the operating system, part
 
 -   Capable of [supporting asynchronous I/O](supporting-asynchronous-i-o.md).
 
- 
+ 
 
- 
+ 
 
 
 

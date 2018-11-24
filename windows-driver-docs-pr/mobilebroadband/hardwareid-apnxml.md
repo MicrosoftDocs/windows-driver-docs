@@ -2,11 +2,7 @@
 title: HardwareId (APN element)
 description: HardwareId (APN element)
 ms.assetid: 9c09915c-d0f6-4ddf-b2e1-79f00599c3a0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -55,13 +51,13 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[HardwareIdList](hardwareidlist-apnxml.md)</p></td>
+<td><p><a href="hardwareidlist-apnxml.md" data-raw-source="[HardwareIdList](hardwareidlist-apnxml.md)">HardwareIdList</a></p></td>
 <td><p>Specifies the list of hardware IDs for an operator.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="XSD"></span><span id="xsd"></span>XSD
 
@@ -91,9 +87,9 @@ The HardwareId element must represent one of the following:
 
 The HardwareId element is required.
 
- 
+ 
 
- 
+ 
 
 
 

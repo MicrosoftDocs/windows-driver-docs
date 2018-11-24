@@ -4,11 +4,7 @@ description: Smart Card Driver Environment
 ms.assetid: f1b369c6-84a0-4a0a-9e70-40dd3009c59e
 keywords:
 - smart card drivers WDK , environment
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +30,9 @@ In addition, the figure shows the following components of the smart card environ
 
 -   Both native and vendor-supplied reader drivers must use the smart card driver library to perform many of their key operations, as explained in the section, [Smart Card Driver Library](smart-card-driver-library.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -4,11 +4,7 @@ description: Responding to Battery Information Queries
 ms.assetid: 5d215ff8-d41f-471e-bc54-570a94f3c23f
 keywords:
 - battery information WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,7 +16,7 @@ ms.localizationpriority: medium
 
 The battery class driver calls the [*BatteryMiniQueryInformation*](https://msdn.microsoft.com/library/windows/hardware/ff536273) routine to get a variety of information about the current battery. This routine is declared as follows:
 
-```
+```cpp
 typedef 
 NTSTATUS
 (*BCLASS_QUERY_INFORMATION)(
@@ -58,9 +54,9 @@ A miniclass driver should be prepared to handle requests for the following:
 
 Some batteries are not capable of reporting all this information. A miniclass driver should return STATUS\_INVALID\_DEVICE\_REQUEST for any information that its device cannot supply.
 
- 
+ 
 
- 
+ 
 
 
 

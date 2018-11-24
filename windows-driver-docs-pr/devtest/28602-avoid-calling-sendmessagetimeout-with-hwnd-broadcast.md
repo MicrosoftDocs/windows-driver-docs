@@ -2,11 +2,7 @@
 title: C28602
 description: Warning C28602 Avoid calling SendMessageTimeout with HWND_BROADCAST.
 ms.assetid: 511df04e-97dc-43a2-9c48-ea1ffe62b813
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,9 +15,9 @@ The Code Analysis tool reports this warning when applications use **SendMessageT
 
 To fix this, consider use **PostMessage** instead,so that it is not a blocking call. Alternatively, avoid the use of **HWND\_BROADCAST** to direct the message to a particular window.
 
- 
+ 
 
- 
+ 
 
 
 

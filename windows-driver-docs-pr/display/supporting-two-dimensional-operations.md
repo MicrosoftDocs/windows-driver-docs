@@ -5,11 +5,7 @@ ms.assetid: 09611bba-5b36-4b7d-8d93-a99590eb5bbe
 keywords:
 - two-dimensional operations WDK DirectX 9.0
 - 2D operations WDK DirectX 9.0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,9 +19,9 @@ The DirectX 9.0 runtime directs a driver to perform two-dimensional (2D) pixel-c
 
 If the runtime specifies the DDBLT\_COLORFILL flag in a call to a DirectX 8.1 or earlier driver's *DdBlt* function, the runtime converts the D3DCOLOR fill-color type to an explicit pixel value as long as the runtime recognizes the target surface format (that is, the code for the format is one of the codes in the D3DFORMAT enumerated type). If the format is supplied by the vendor and not recognized by the runtime, the runtime passes the D3DCOLOR fill-color type directly to the driver for processing. However, the runtime converts, to explicit pixel values, the D3DCOLOR fill-color types of certain color formats that are used by DirectShow but are otherwise private to the driver.
 
- 
+ 
 
- 
+ 
 
 
 

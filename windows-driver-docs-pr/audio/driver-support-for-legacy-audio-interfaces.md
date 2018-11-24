@@ -12,11 +12,7 @@ keywords:
 - Windows multimedia support WDK audio
 - multimedia WDK audio
 - miniport interfaces WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -50,9 +46,9 @@ This section discusses the following topics:
 
 [WDM Audio Extensions to Legacy Windows Multimedia APIs](wdm-audio-extensions-to-legacy-windows-multimedia-apis.md)
 
- 
+ 
 
- 
+ 
 
 
 

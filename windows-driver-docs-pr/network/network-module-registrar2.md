@@ -8,11 +8,7 @@ keywords:
 - modules WDK Network Module Registrar
 - registered network modules WDK Network Module Registrar
 - software modules WDK Network Module Registrar
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,9 +31,9 @@ This section discusses the Network Module Registrar and includes the following t
 
 Using the [**WskRegister**](https://msdn.microsoft.com/library/windows/hardware/ff571143) and [**WskDeregister**](https://msdn.microsoft.com/library/windows/hardware/ff571128) functions is the preferred method for registering and unregistering WSK applications. The Network Module Registrar remains available for compatibility. For more information, see [Registering a Winsock Kernel Application](registering-a-winsock-kernel-application.md).
 
- 
+ 
 
- 
+ 
 
 
 

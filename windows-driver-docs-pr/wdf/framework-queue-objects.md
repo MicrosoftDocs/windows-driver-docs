@@ -1,6 +1,5 @@
 ---
 title: Framework Queue Objects
-author: windows-driver-content
 description: Framework Queue Objects
 ms.assetid: 42736e2d-2482-46b4-bf52-4efe369db40b
 keywords:
@@ -15,11 +14,7 @@ keywords:
 - callback functions WDK KMDF
 - event callback functions WDK KMDF
 - framework objects WDK KMDF , I/O queue objects
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -49,9 +44,9 @@ This section includes:
 
 [Example Uses of I/O Queues](example-uses-of-i-o-queues.md)
 
- 
+ 
 
- 
+ 
 
 
 

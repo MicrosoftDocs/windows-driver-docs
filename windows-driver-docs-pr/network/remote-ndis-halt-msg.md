@@ -1,13 +1,8 @@
 ---
 title: 'REMOTE_NDIS_HALT_MSG'
-author: windows-driver-content
 Description: 'This message is sent by the host to terminate the network connection.'
 ms.assetid: ad7802ff-20ee-4228-b236-a2ca39e8c478
-ms.author: windowsdriverdev
 ms.date: 07/31/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -53,7 +48,7 @@ This message is sent by the host to terminate the network connection. Unlike the
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -82,9 +77,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: Bluetooth FAQ
 description: This FAQ section provides information about Bluetooth wireless technology support for the Windows family of operating systems.
 ms.assetid: 529DD4A2-4E4B-47F4-BD65-BE89EA21E217
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -62,11 +58,11 @@ To enable Remote Wake in software, verify that the Bluetooth module can support 
 
 **Note**  If the Bluetooth radio’s property page in Device Manager has a **Power Management** tab, the radio can support wake. If no **Power Management** tab exists, the radio might support wake, but it is unlikely.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

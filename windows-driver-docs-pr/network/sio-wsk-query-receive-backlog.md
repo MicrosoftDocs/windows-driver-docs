@@ -1,13 +1,8 @@
 ---
 title: SIO_WSK_QUERY_RECEIVE_BACKLOG
-author: windows-driver-content
 description: SIO_WSK_QUERY_RECEIVE_BACKLOG
 ms.assetid: 5924c6ae-fa9d-4a8c-acbe-65ca0664ad74
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - SIO_WSK_QUERY_RECEIVE_BACKLOG Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -69,12 +64,6 @@ To query the current backlog of received data for a connection-oriented socket, 
 </tbody>
 </table>
 
- 
-
-```
-
-```
-
 A WSK application must specify a pointer to an IRP when calling the **WskControlSocket** function to query the current backlog of received data for a connection-oriented socket.
 
 Requirements
@@ -97,9 +86,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

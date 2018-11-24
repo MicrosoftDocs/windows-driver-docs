@@ -2,11 +2,7 @@
 title: WDI TLV generator interface overview
 description: This section describes an overview of function models for the WDI TLV generator interface
 ms.assetid: 8A344BF7-932E-4404-9B3E-E7D3C33722C3
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -64,9 +60,9 @@ When you are done with the TLV byte array, call back to release the memory in th
     pOutput = NULL;
 ```
 
- 
+ 
 
- 
+ 
 
 
 

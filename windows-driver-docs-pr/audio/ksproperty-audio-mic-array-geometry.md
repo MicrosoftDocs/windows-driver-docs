@@ -11,11 +11,7 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 05/08/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -48,13 +44,13 @@ Usage Summary Table
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left">[<strong>KSP_PIN</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566722)</td>
-<td align="left">[<strong>KSAUDIO_MIC_ARRAY_GEOMETRY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537087)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/ff566722" data-raw-source="[&lt;strong&gt;KSP_PIN&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566722)"><strong>KSP_PIN</strong></a></td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/ff537087" data-raw-source="[&lt;strong&gt;KSAUDIO_MIC_ARRAY_GEOMETRY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537087)"><strong>KSAUDIO_MIC_ARRAY_GEOMETRY</strong></a></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is of type KSAUDIO\_MIC\_ARRAY\_GEOMETRY. See the definition of the [**KSAUDIO\_MIC\_ARRAY\_GEOMETRY**](https://msdn.microsoft.com/library/windows/hardware/ff537087) structure for details.
 
@@ -75,7 +71,7 @@ The KSPROPERTY\_AUDIO\_MIC\_ARRAY\_GEOMETRY property only supports KSPROPERTY\_T
 
 For more information about how to process a microphone array in Windows, refer to the following resources:
 
-[Microphone Array Support in Windows (white paper)](http://go.microsoft.com/fwlink/p/?linkid=120592)
+[Microphone Array Support in Windows (white paper)](https://go.microsoft.com/fwlink/p/?linkid=120592)
 
 [Microphone Array Geometry Property](https://msdn.microsoft.com/library/windows/hardware/ff537516.aspx)
 
@@ -102,9 +98,9 @@ Requirements
 
 [**KSP\_PIN**](https://msdn.microsoft.com/library/windows/hardware/ff566722)
 
- 
+ 
 
- 
+ 
 
 
 

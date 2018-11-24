@@ -1,6 +1,5 @@
 ---
 title: Registering and Deregistering an Operation Region Handler
-author: windows-driver-content
 description: Registering and Deregistering an Operation Region Handler
 ms.assetid: de40488d-7935-431c-b1f4-87f8aff1125b
 keywords:
@@ -10,11 +9,7 @@ keywords:
 - WDM function drivers WDK ACPI , operation regions
 - registering operation region handlers
 - deregistering operation region handlers
-ms.author: windowsdriverdev
 ms.date: 01/24/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -53,7 +48,7 @@ An ACPI device function driver deregisters an operation region handler by callin
 
 Typically, a driver deregisters an operation region handler in the driver's Plug and Play dispatch routine before it stops an FDO in response to an [**IRP\_MN\_STOP\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551755) request. The driver must deregister the handler before it frees the handler's operation region context. If the driver creates a vendor-defined device interface, the driver should disable the device interface before it deregisters the handler.
 
- 
+ 
 
 
 

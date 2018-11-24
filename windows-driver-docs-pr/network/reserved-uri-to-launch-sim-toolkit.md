@@ -2,11 +2,7 @@
 title: Reserved URI to launch SIM toolkit
 description: Reserved URI to launch SIM toolkit
 ms.assetid: d194b37e-427b-4fe2-a49a-050d06a7d3b9
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,7 +16,7 @@ The URI scheme, `"ms-settings-uicctoolkit"`, has been defined for the SIM toolki
 ## Launching a URI
 
 
-A UWP app can load the SIM applications CPL by using a call to the [Launcher.LaunchUriAsync(Uri)](http://msdn.microsoft.com/library/windows/apps/hh701480.aspx) method from the **Launcher** object of the **Windows.System** namespace.
+A UWP app can load the SIM applications CPL by using a call to the [Launcher.LaunchUriAsync(Uri)](https://msdn.microsoft.com/library/windows/apps/hh701480.aspx) method from the **Launcher** object of the **Windows.System** namespace.
 
 The following example shows how partners can launch the SIM applications CPL from the app.
 
@@ -33,9 +29,9 @@ Windows.System.Launcher.LaunchUriAsync("ms-settings-uicctoolkit:");
 
 [SIM toolkit](sim-toolkit.md)
 
- 
+ 
 
- 
+ 
 
 
 

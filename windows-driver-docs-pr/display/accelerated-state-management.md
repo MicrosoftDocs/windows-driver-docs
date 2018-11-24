@@ -5,11 +5,7 @@ ms.assetid: 276d3cdb-34bf-49e8-aae5-94315746c5ff
 keywords:
 - accelerated state management WDK Direct3D
 - states WDK Direct3D
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -41,9 +37,9 @@ The **sbType** member is only valid for D3DHAL\_STATESETBEGIN and D3DHAL\_STATES
 
 The driver should ignore the**sbType** member unless it implements render state extensions. If the driver implements extended render states, that is, render states beyond those the Direct3D runtime supplies, it can use **sbType**to determine what type of predefined render states are being used. From this information it can determine how to append the state block appropriately, to support its extensions.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,13 +1,8 @@
 ---
 title: GPIO-Based Hardware Resources
-author: windows-driver-content
 description: Starting with Windows 8, the general-purpose I/O (GPIO) pins that are controlled by a GPIO controller driver are available to other drivers as system-managed hardware resources.
 ms.assetid: 03A6ACDF-8BB7-40C0-A331-7F61F48A44DC
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,7 +37,7 @@ Drivers A and B receive their assigned resources in their [*EvtDevicePrepareHard
 For code examples that show how to connect to a set of GPIO I/O pins and send I/O requests to this pins, see the following topics:
 
 [Connecting a KMDF Driver to GPIO I/O Pins](https://msdn.microsoft.com/library/windows/hardware/hh406474)
-[Connecting a UMDF Driver to GPIO I/O Pins](https://msdn.microsoft.com/library/windows/hardware/hh698244)
+
 In both topics, the `IoRoutine` function in the code example opens a GPIO I/O pin resource either for reads or for writes, depending on the `ReadOperation` parameter value. If the resource is opened for reads (`DesiredAccess` = GENERIC\_READ), the pins in the resource are configured as inputs, and an [**IOCTL\_GPIO\_READ\_PINS**](https://msdn.microsoft.com/library/windows/hardware/hh406483) request sent to the pin resource reads the input values at these pins. GpioClx does not allow a [**IOCTL\_GPIO\_WRITE\_PINS**](https://msdn.microsoft.com/library/windows/hardware/hh406487) request to be sent a set of input pins, and completes such a request with a STATUS\_GPIO\_OPERATION\_DENIED error status. Similarly, if the pin resource is opened for writes (`DesiredAccess` = GENERIC\_WRITE), the pins in the resource are configured as outputs, and an **IOCTL\_GPIO\_WRITE\_PINS** request sent to the pin resource sets the values in the output latches that drive these pins. Typically, sending an **IOCTL\_GPIO\_READ\_PINS** request to a set of output pins simply reads the last values written to the output latches.
 
 To use an interrupt resource to receive interrupts, a client driver must connect an interrupt service routine (ISR) to the interrupt. Typically, the driver makes this connection by calling the [**WdfInterruptCreate**](https://msdn.microsoft.com/library/windows/hardware/ff547345) method (or, possibly, the [**IoConnectInterruptEx**](https://msdn.microsoft.com/library/windows/hardware/ff548378) routine). For more information about KMDF interrupts, see [Creating an Interrupt Object](https://msdn.microsoft.com/library/windows/hardware/ff540757).
@@ -57,9 +52,9 @@ After a peripheral device driver opens a connection to a GPIO I/O resource, an [
 
 For more information about **IOCTL\_GPIO\_READ\_PINS** requests, including the mapping of data input pins to the bits in the request output buffer, see [**IOCTL\_GPIO\_READ\_PINS**](https://msdn.microsoft.com/library/windows/hardware/hh406483). For more information about **IOCTL\_GPIO\_WRITE\_PINS** requests, including the mapping of the bits in the request input buffer to data output pins, see [**IOCTL\_GPIO\_WRITE\_PINS**](https://msdn.microsoft.com/library/windows/hardware/hh406487).
 
- 
+ 
 
- 
+ 
 
 
 

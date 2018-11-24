@@ -9,11 +9,7 @@ api_name:
 - wscn MediaSides wscn MustHonor ""
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The optional **MediaSides** element contains the parameters that are unique to e
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:MediaSides wscn:MustHonor=""
   MustHonor = "xs:string">
   child elements
@@ -75,10 +71,10 @@ Attributes
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>MediaBack</strong>](mediaback.md)</p></td>
+<td><p><a href="mediaback.md" data-raw-source="[&lt;strong&gt;MediaBack&lt;/strong&gt;](mediaback.md)"><strong>MediaBack</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>MediaFront</strong>](mediafront.md)</p></td>
+<td><p><a href="mediafront.md" data-raw-source="[&lt;strong&gt;MediaFront&lt;/strong&gt;](mediafront.md)"><strong>MediaFront</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -97,10 +93,10 @@ Attributes
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>DocumentFinalParameters</strong>](documentfinalparameters.md)</p></td>
+<td><p><a href="documentfinalparameters.md" data-raw-source="[&lt;strong&gt;DocumentFinalParameters&lt;/strong&gt;](documentfinalparameters.md)"><strong>DocumentFinalParameters</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>DocumentParameters</strong>](documentparameters.md)</p></td>
+<td><p><a href="documentparameters.md" data-raw-source="[&lt;strong&gt;DocumentParameters&lt;/strong&gt;](documentparameters.md)"><strong>DocumentParameters</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -118,7 +114,7 @@ The client can specify the optional **MustHonor** attribute only when the **Medi
 
 The WSD Scan Service can specify the optional **Override** and **UsedDefault** attributes only when the **MediaSides** element is contained within a **DocumentFinalParameters** hierarchy. For more information about **Override** and **UsedDefault** and their usage, see [**DocumentFinalParameters**](documentfinalparameters.md).
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**CreateScanJobRequest**](createscanjobrequest.md)
@@ -133,9 +129,9 @@ The WSD Scan Service can specify the optional **Override** and **UsedDefault** a
 
 [**MediaFront**](mediafront.md)
 
- 
+ 
 
- 
+ 
 
 
 

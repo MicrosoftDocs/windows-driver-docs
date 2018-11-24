@@ -16,11 +16,7 @@ keywords:
 - wave-capturing applications WDK audio
 - wave-out applications WDK audio
 - wave-in applications WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -96,9 +92,9 @@ If KMixer is inserted into the path of the capture stream, it performs sample-ra
 
 At the top-right corner of the preceding figure, the application reads the wave data from the DirectSoundCapture buffer and writes it to the file.
 
- 
+ 
 
- 
+ 
 
 
 

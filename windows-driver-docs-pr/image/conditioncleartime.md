@@ -9,11 +9,7 @@ api_name:
 - wscn ConditionClearTime
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **ConditionClearTime** element specifies the date and time at which
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ConditionClearTime>
   text
 </wscn:ConditionClearTime>
@@ -60,19 +56,19 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>DeviceConditionCleared</strong>](deviceconditioncleared.md)</p></td>
+<td><p><a href="deviceconditioncleared.md" data-raw-source="[&lt;strong&gt;DeviceConditionCleared&lt;/strong&gt;](deviceconditioncleared.md)"><strong>DeviceConditionCleared</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**DeviceConditionCleared**](deviceconditioncleared.md)
 
- 
+ 
 
- 
+ 
 
 
 

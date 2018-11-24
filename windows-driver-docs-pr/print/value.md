@@ -1,15 +1,10 @@
 ---
 title: Value (WSD)
-author: windows-driver-content
 description: The WSD Value construct allows you to extend the bidi communications schema with queries that retrieve data from a particular schema element.
 ms.assetid: 8930e012-88ee-44ff-9abc-a15367f04ca3
 keywords:
 - Value construct
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -48,7 +43,7 @@ The WSD `Value` construct allows you to extend the bidi communications schema wi
 </tr>
 <tr class="odd">
 <td><p><strong>type</strong></p></td>
-<td><p>The type of data in the <code>Value</code> construct, a value in the [<strong>BIDI_TYPE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff545211) enumeration.</p></td>
+<td><p>The type of data in the <code>Value</code> construct, a value in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545211" data-raw-source="[&lt;strong&gt;BIDI_TYPE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff545211)"><strong>BIDI_TYPE</strong></a> enumeration.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>xmllang</strong></p></td>
@@ -57,7 +52,7 @@ The WSD `Value` construct allows you to extend the bidi communications schema wi
 </tbody>
 </table>
 
- 
+ 
 
 The XPath language is implemented in Windows and provides a convenient way to specify elements in an XML file. See the XML Developer's Guide in the Windows SDK and [XPath Reference](http://go.microsoft.com/fwlink/p/?linkid=33165) for more information.
 
@@ -69,22 +64,22 @@ The `Value` construct is defined in WsdBidi.xsd.
 
 In the following code example, the WSD monitor determines the size, as an integer value, of RAM memory.
 
-```
-<Schema xmlns:nprt=&#39;http://schemas.microsoft.com/windows/2005/05/wdp/print&#39;>
-  <Property name=&#39;Printer&#39;>
-    <Property name=&#39;DeviceInfo&#39;>
-      <Value name=&#39;PrinterString&#39; 
- query=&#39;nprt:PrinterDescription&#39;
- filter=&#39;nprt:PrinterDescription/nprt:PrinterName&#39; 
- type=&#39;BIDI_STRING&#39; 
- xmllang=&#39;true&#39;/>
+```cpp
+<Schema xmlns:nprt='http://schemas.microsoft.com/windows/2005/05/wdp/print'>
+  <Property name='Printer'>
+    <Property name='DeviceInfo'>
+      <Value name='PrinterString' 
+ query='nprt:PrinterDescription'
+ filter='nprt:PrinterDescription/nprt:PrinterName' 
+ type='BIDI_STRING' 
+ xmllang='true'/>
     </Property>
-    <Property name=&#39;Configuration&#39;>
-      <Property name=&#39;Memory&#39;>
-        <Value name=&#39;Size&#39;
-          query=&#39;wprt:PrinterConfiguration&#39;
-          filter=&#39;wprt:PrinterConfiguration/wprt:Storage/wprt:StorageEntry[wprt:Type="RAM"]/wprt:Size&#39;
-          type=&#39;BIDI_INT&#39;/>
+    <Property name='Configuration'>
+      <Property name='Memory'>
+        <Value name='Size'
+          query='wprt:PrinterConfiguration'
+          filter='wprt:PrinterConfiguration/wprt:Storage/wprt:StorageEntry[wprt:Type="RAM"]/wprt:Size'
+          type='BIDI_INT'/>
       </Property>
     </Property>
    </Property>
@@ -93,14 +88,14 @@ In the following code example, the WSD monitor determines the size, as an intege
 
 The preceding example results in the following queries:
 
-```
+```cpp
 \Printer.DeviceInfo:PrinterString
 \Printer.Configuration.Memory:Size
 ```
 
- 
+ 
 
- 
+ 
 
 
 

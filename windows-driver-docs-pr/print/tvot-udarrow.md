@@ -1,6 +1,5 @@
 ---
 title: TVOT\_UDARROW
-author: windows-driver-content
 description: TVOT\_UDARROW
 ms.assetid: c1182cc5-5d82-4db5-8ef2-7d2601499e72
 keywords: ["TVOT_UDARROW Print Devices"]
@@ -12,11 +11,7 @@ api_location:
 - compstui.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -117,7 +112,7 @@ Otherwise, **BegCtrlID** must contain the first control identifier of a sequenti
 </tbody>
 </table>
 
- 
+ 
 
 For additional information, see [Customizing CPSUI-Supported Window Controls](https://msdn.microsoft.com/library/windows/hardware/ff547296).
 
@@ -137,9 +132,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

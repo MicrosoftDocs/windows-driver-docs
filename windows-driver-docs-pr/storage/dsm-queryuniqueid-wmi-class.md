@@ -3,6 +3,7 @@ title: DSM\_QueryUniqueId WMI Class
 description: DSM\_QueryUniqueId WMI Class
 ms.assetid: 576e208d-972c-47ba-ab30-a05bf3d0943d
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # DSM\_QueryUniqueId WMI Class
@@ -10,7 +11,7 @@ ms.localizationpriority: medium
 
 MPIO publishes the DSM\_QueryUniqueId WMI class but expects the DSM to register the GUID and handle its implementation. A WMI client uses the DSM\_QueryUniqueId WMI class to query the unique identifier for a path.
 
-```
+```cpp
 class DSM_QueryUniqueId
 {
 
@@ -37,9 +38,9 @@ class DSM_QueryUniqueId
 
 When this class definition is compiled by the WMI tool suite, it produces the [**DSM\_QueryUniqueId**](https://msdn.microsoft.com/library/windows/hardware/ff552742) data structure. There are no methods associated with this WMI class.
 
- 
+ 
 
- 
+ 
 
 
 

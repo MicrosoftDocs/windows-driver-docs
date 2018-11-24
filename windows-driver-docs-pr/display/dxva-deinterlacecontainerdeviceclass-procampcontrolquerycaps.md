@@ -11,11 +11,7 @@ api_location:
 - N/A
 api_type:
 - COM
-ms.author: windowsdriverdev
 ms.date: 01/05/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -81,16 +77,16 @@ The sample *ProcAmpControlQueryCaps* function maps directly to a call to the **R
 </tr>
 <tr class="even">
 <td align="left"><p><strong>lpInputData</strong></p></td>
-<td align="left"><p>Pointer to a filled [<strong>DXVA_VideoDesc</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564070) structure.</p></td>
+<td align="left"><p>Pointer to a filled <a href="https://msdn.microsoft.com/library/windows/hardware/ff564070" data-raw-source="[&lt;strong&gt;DXVA_VideoDesc&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564070)"><strong>DXVA_VideoDesc</strong></a> structure.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>lpOutputData</strong></p></td>
-<td align="left"><p>Pointer to a [<strong>DXVA_ProcAmpControlCaps</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564019) structure.</p></td>
+<td align="left"><p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564019" data-raw-source="[&lt;strong&gt;DXVA_ProcAmpControlCaps&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564019)"><strong>DXVA_ProcAmpControlCaps</strong></a> structure.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Note that the RenderMoComp function will be called without the display driver-supplied BeginMoCompFrame or EndMoCompFrame function being called first.
 
@@ -98,7 +94,7 @@ Note that the RenderMoComp function will be called without the display driver-su
 
 The following code provides an example of how you can implement your *ProcAmpControlQueryCaps* function:
 
-```
+```cpp
 HRESULT
 DXVA_DeinterlaceContainerDeviceClass::ProcAmpControlQueryCaps(
     LPDXVA_VideoDesc lpVideoDesc,
@@ -153,9 +149,9 @@ Requirements
 
 [**DD\_RENDERMOCOMPDATA**](https://msdn.microsoft.com/library/windows/hardware/ff551693)
 
- 
+ 
 
- 
+ 
 
 
 

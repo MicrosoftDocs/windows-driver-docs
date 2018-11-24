@@ -9,11 +9,7 @@ keywords:
 - DirectDraw VPEs WDK Windows 2000 display , kernel-mode video transport
 - video port extensions WDK DirectDraw , kernel-mode video transport
 - VPEs WDK DirectDraw , kernel-mode video transport
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ The kernel-mode video transport must keep track of surface information for each 
 
 A good example of how a driver can use these **dwDriverReserved***N* members is to set a flag indicating which physical overlay an overlay surface is using if the hardware supports more than one physical overlay.
 
- 
+ 
 
- 
+ 
 
 
 

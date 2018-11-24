@@ -1,6 +1,5 @@
 ---
 title: Return from HwScsiStartIo
-author: windows-driver-content
 description: Return from HwScsiStartIo
 ms.assetid: e3d5e21a-4dc2-41bf-97a2-9ac2aa5a1af2
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - HwScsiStartIo
 - return values WDK SCSI
 - status values WDK SCSI
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -40,9 +35,9 @@ Eventually, every miniport driver must call **ScsiPortNotification** twice for e
 
 The *HwScsiStartIo* routine of a miniport driver that manages its HBA exclusively by polling calls **ScsiPortNotification** with the *NotificationType***RequestTimerCall** and a pointer to its *HwScsiTimer* routine. For more information about the *HwScsiTimer* routine, see [SCSI Miniport Driver's HwScsiTimer Routine](scsi-miniport-driver-s-hwscsitimer-routine.md).
 
- 
+ 
 
- 
+ 
 
 
 

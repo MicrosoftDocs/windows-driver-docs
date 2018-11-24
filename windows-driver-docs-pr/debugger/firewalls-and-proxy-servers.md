@@ -3,11 +3,7 @@ title: Firewalls and Proxy Servers
 description: Firewalls and Proxy Servers
 ms.assetid: 6b438602-299e-4cc5-ac75-ac9ee3cb50bb
 keywords: ["SymSrv, firewalls and proxy servers", "firewalls and SymSrv", "internet firewalls and SymSrv", "proxy servers and SymSrv"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,7 +29,7 @@ If you refuse an authentication request, or if the debugger automatically refuse
 
 **Note**   If you are using KD or CDB, the authentication dialog box may appear behind an open window. If this occurs, you may have to move or minimize some windows in order to find this dialog box.
 
- 
+ 
 
 In WinDbg, authentication requests are allowed by default. In KD and CDB, authentication requests are automatically refused by default.
 
@@ -47,15 +43,15 @@ To select a default proxy server for Windows, open **Internet Options** in Contr
 
 To select a specific proxy server for symsrv to use, set the \_NT\_SYMBOL\_PROXY environment variable equal to the name or IP of the proxy server, followed by a colon and then the port number. For example:
 
-```
+```console
 set _NT_SYMBOL_PROXY=myproxyserver:80
 ```
 
 When a proxy server is chosen in this way, it will be used by any Windows debugger that is using SymSrv to access a symbol server. It will also be used by any other debugging tool that uses DbgHelp as its symbol handler. No other programs will be affected by this setting.
 
- 
+ 
 
- 
+ 
 
 
 

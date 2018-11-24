@@ -7,11 +7,7 @@ keywords:
 - network interfaces WDK , interface providers
 - interface providers WDk network interface
 - registering interface providers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +29,9 @@ For more information about interface provider query and set handlers, see [Handl
 
 NDIS drivers can call the [**NdisIfDeregisterProvider**](https://msdn.microsoft.com/library/windows/hardware/ff562703) function to deregister as a network interface provider. For example, NDIS drivers should deregister as a interface providers when they are unloaded. An interface provider must ensure that it does not have any interfaces registered before it calls **NdisIfDeregisterProvider**. The provider must not use the provider handle that it passed at the *NdisProviderHandle* parameter of **NdisIfDeregisterProvider** after it calls **NdisIfDeregisterProvider**.
 
- 
+ 
 
- 
+ 
 
 
 

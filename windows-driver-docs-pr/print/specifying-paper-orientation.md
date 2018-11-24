@@ -1,6 +1,5 @@
 ---
 title: Specifying Paper Orientation
-author: windows-driver-content
 description: Specifying Paper Orientation
 ms.assetid: 2d62e1ff-965b-4fd7-922c-319ec1bc39a5
 keywords:
@@ -12,11 +11,7 @@ keywords:
 - landscape mode WDK Unidrv
 - portrait mode WDK Unidrv
 - Unidrv WDK print
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -40,7 +35,7 @@ For a printer that supports landscape mode as well as portrait mode, you should 
 
 However, a printer that supports landscape mode (for which the LANDSCAPE\_CC90 option ordinarily would be used), can still operate with the LANDSCAPE\_CC270 option. Under this option, Unidrv is directed to treat the printer as if it supported only portrait mode (that is, with only a single coordinate system, with the origin at the upper left corner). Consequently, Unidrv must not be directed to issue a command to change coordinate systems. Unidrv presents the transformed text and graphics to the printer with coordinates relative to this upper-left-corner origin. Because Unidrv assumes this location of the origin, such a printer must not be issued a landscape mode command string, even when the user has selected the Landscape orientation on the printer's property page. In the following GPD file example, notice that the \*Option: LANDSCAPE\_CC270 section contains a command to place the printer into portrait mode (ORIENT\_PORTRAIT\_CMD), and not one to place it into landscape mode.
 
-```
+```cpp
 *Feature: Orientation
 {
   *rcNameID: =ORIENTATION_DISPLAY
@@ -68,11 +63,11 @@ However, a printer that supports landscape mode (for which the LANDSCAPE\_CC90 o
 
 **Note**   For Windows 7, the **MxdcGetPDEVAdjustment** function has new parameters for landscape rotation. For more information, see [**MxdcXDCGetPDEVAdjustment**](https://msdn.microsoft.com/library/windows/hardware/ff557558).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

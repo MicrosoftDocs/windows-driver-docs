@@ -10,11 +10,7 @@ keywords:
 - current boot entry WDK
 - NVRAM boot options WDK , default boot entries
 - EFI NVRAM boot options WDK , default boot entries
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -48,9 +44,9 @@ To change the default boot entry to the earlier Windows operating system loader 
 bcdedit /default {ntldr}
 ```
 
- 
+ 
 
- 
+ 
 
 
 

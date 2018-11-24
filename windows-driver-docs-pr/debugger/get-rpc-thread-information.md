@@ -3,11 +3,7 @@ title: Get RPC Thread Information
 description: Get RPC Thread Information
 ms.assetid: 4cb8d11f-5b0a-4526-9f64-ee69fd15d1ba
 keywords: ["RPC thread information"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,7 +19,7 @@ The PID of a process must be specified. You may specify a thread within that pro
 
 In the following example, the process ID is 0x278 and the thread ID is omitted:
 
-```
+```console
 D:\wmsg>dbgrpc -t -P 278
 Searching for thread info ...
 ## PID  CELL ID   ST TID      LASTTIME
@@ -36,9 +32,9 @@ For details on the optional parameters, see [**DbgRpc Command-Line Options**](db
 
 For a similar example using the RPC debugger extensions, see [**!rpcexts.getthreadinfo**](-rpcexts-getthreadinfo.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: Execution Groups
 description: Execution Groups
 ms.assetid: CC196843-A225-4193-9386-EE024B5D0B68
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,7 +27,7 @@ Before discussing Execution Groups, it is important to note and remember that **
 
 Consider a native example:
 
-```
+```cpp
 1     class ExecutionDependencyExample
 2     {
 3         BEGIN_TEST_CLASS(ExecutionDependencyExample)
@@ -122,7 +118,7 @@ The message also says that Test3 should be run in the same environment as Test2.
 
 Let's consider another example: Examples\\TAEF\\CSharp\\ExecutionDependentGroupsExample (please refer to the latest TAEF release share)
 
-```
+```cpp
 1     [TestClass]
 2     public class CSharpExecutionDependentGroupsExample
 3     {
@@ -291,9 +287,9 @@ Summary: Total=9, Passed=6, Failed=2, Blocked=1, Not Run=0, Skipped=0
 
 Notice that the test execution order is as expected.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -5,11 +5,7 @@ ms.assetid: 52c65b9f-e3b3-4b0d-8334-7db1abb2c971
 keywords:
 - Winsock Kernel WDK networking , about Winsock Kernel
 - WSK WDK networking , about Winsock Kernel
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,11 +18,11 @@ Kernel-mode network modules targeted for Windows Vista and later versions of Mic
 
 **Note**  TDI will not be supported in Microsoft Windows versions after Windows Vista. Use [Windows Filtering Platform](windows-filtering-platform-callout-drivers2.md) or [Winsock Kernel](https://msdn.microsoft.com/library/windows/hardware/ff571083) instead.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

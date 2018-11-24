@@ -6,11 +6,7 @@ keywords:
 - BugcheckDataSize
 - video miniport driver bug-check data WDK DirectX 9.0
 - bug-check data size WDK DirectX 9.0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +22,9 @@ A video miniport driver must set the value for the *BugcheckDataSize* parameter 
 
 The Windows XP SP1 DDK documentation incorrectly specified the maximum value for *BugcheckDataSize*.
 
- 
+ 
 
- 
+ 
 
 
 

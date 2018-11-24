@@ -7,11 +7,7 @@ keywords:
 - NDIS miniport drivers WDK , unloading
 - porting miniport drivers WDK networking , unload operations
 - unloading miniport drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ In *MiniportDriverUnload*, a miniport driver must call the [**NdisMDeregisterMin
 
 For more information about unloading an NDIS 6.0 miniport driver, see [Unloading a Miniport Driver](unloading-a-miniport-driver.md).
 
- 
+ 
 
- 
+ 
 
 
 

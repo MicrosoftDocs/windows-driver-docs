@@ -7,11 +7,7 @@ keywords:
 - logs WDK tracing
 - custom trace logs WDK
 - event trace logs WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -49,9 +45,9 @@ tracelog -start MyTrace −guid MyProvider.guid -f testtrace%d.etl -newfile 1
 
 The resulting 1 MB files are numbered in the order that they are created, for example testtrace1.etl.
 
- 
+ 
 
- 
+ 
 
 
 

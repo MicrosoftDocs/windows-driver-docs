@@ -11,11 +11,7 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -73,7 +69,7 @@ The following table describes the valid values for the **WIA\_IPS\_BARCODE\_SEAR
 </tbody>
 </table>
 
- 
+ 
 
 This property is required for all Barcode Reader items, but it can be implemented to support only the WIA\_BARCODE\_AUTO\_SEARCH value.
 
@@ -93,9 +89,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

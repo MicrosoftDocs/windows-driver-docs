@@ -1,13 +1,8 @@
 ---
 title: WDI_TLV_BSS_SELECTION_PARAMETERS
-author: windows-driver-content
 description: WDI_TLV_BSS_SELECTION_PARAMETERS is a TLV that contains WDI_BSS_SELECTION_FLAGS that are used by host for BSS selection.
 ms.assetid: 5EDA0FAC-DF2E-437B-BB4F-F69468CE856E
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_BSS_SELECTION_PARAMETERS Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -35,7 +30,7 @@ The size (in bytes) of a UINT32.
 |--------|-----------------------------------------------------------------------------------------------------------------|
 | UINT32 | [**WDI\_BSS\_SELECTION\_FLAGS**](https://msdn.microsoft.com/library/windows/hardware/mt297629) that are used by the host for BSS selection. |
 
- 
+ 
 
 Requirements
 ------------
@@ -61,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

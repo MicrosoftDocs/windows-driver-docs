@@ -6,11 +6,7 @@ keywords:
 - proxy drivers WDK SANs , IOCTLs
 - SAN proxy drivers WDK , IOCTLs
 - IOCTLs WDK SANs
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +22,9 @@ The proxy driver's device control routine calls the [**IoGetCurrentIrpStackLocat
 
 After the current IOCTL request completes, the device control routine calls the [**IoCompleteRequest**](https://msdn.microsoft.com/library/windows/hardware/ff548343) function and passes the status of the operation. This status is returned to the SAN service provider.
 
- 
+ 
 
- 
+ 
 
 
 

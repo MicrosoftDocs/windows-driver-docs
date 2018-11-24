@@ -1,13 +1,8 @@
 ---
 title: OID_RECEIVE_FILTER_PARAMETERS
-author: windows-driver-content
 description: An overlying driver issues an OID method request of OID_RECEIVE_FILTER_PARAMETERS to obtain the current configuration parameters of a filter on a network adapter.
 ms.assetid: 1bb12945-0dad-47b9-9f44-e05efe292979
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_RECEIVE_FILTER_PARAMETERS Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -91,9 +86,9 @@ Requirements
 
 [OID\_RECEIVE\_FILTER\_SET\_FILTER](oid-receive-filter-set-filter.md)
 
- 
+ 
 
- 
+ 
 
 
 

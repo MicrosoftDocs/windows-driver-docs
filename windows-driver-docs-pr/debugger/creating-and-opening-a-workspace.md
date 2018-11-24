@@ -3,11 +3,7 @@ title: Creating and Opening a Workspace
 description: Creating and Opening a Workspace
 ms.assetid: 0163f380-f982-4635-a450-ed83f0b52e03
 keywords: ["workspaces, creating", "workspaces, opening", "workspaces, named workspaces", "workspaces, default workspaces", "workspaces, types of workspaces"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -45,7 +41,7 @@ For greatest efficiency, you should save settings in lower-level workspaces if y
 
 **Note**   The layout of the debugging information windows is one exception to the cumulative behavior of workspaces. The position, docking status, and size of each window are determined by only the most recent workspace that you opened. This behavior includes the contents of the Watch window and the locations that you viewed in each [Memory window](memory-window.md). The command history in the [Debugger Command window](debugger-command-window.md) is not cleared when a new workspace is opened, but all other window states are reset.
 
- 
+ 
 
 To access the base workspace, start WinDbg with no target, or click [Stop Debugging](debug---stop-debugging.md) on the **Debug** menu after your session is complete. You can then make any edits that are allowed in the base workspace.
 
@@ -79,9 +75,9 @@ To control workspaces, you can do the following:
 
 -   Save a workspace to a file by clicking [Save Workspace to File](file---save-workspace-to-file.md) on the **File** menu.
 
- 
+ 
 
- 
+ 
 
 
 

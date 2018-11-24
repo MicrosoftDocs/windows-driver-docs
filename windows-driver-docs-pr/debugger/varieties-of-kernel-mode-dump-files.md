@@ -3,11 +3,7 @@ title: Varieties of Kernel-Mode Dump Files
 description: Varieties of Kernel-Mode Dump Files
 ms.assetid: 6db2a755-ed9c-492a-a650-9ae34ae59968
 keywords: ["dump file, kernel-mode file types"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -41,7 +37,7 @@ After a Complete Memory Dump or Kernel Memory Dump has been created, it is possi
 
 **Note**   Much information can be obtained by analyzing a kernel-mode dump file. However, no kernel-mode dump file can provide as much information as actually debugging the crash directly with a kernel debugger.
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -50,9 +46,9 @@ After a Complete Memory Dump or Kernel Memory Dump has been created, it is possi
 
 [Enabling a Kernel-Mode Dump File](enabling-a-kernel-mode-dump-file.md)
 
- 
+ 
 
- 
+ 
 
 
 

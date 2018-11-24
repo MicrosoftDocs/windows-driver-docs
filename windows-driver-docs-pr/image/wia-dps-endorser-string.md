@@ -11,11 +11,7 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,7 +25,7 @@ The WIA\_DPS\_ENDORSER\_STRING property contains a string that is to be endorsed
 
 **Note**  This property is now obsolete. Use [**WIA\_IPS\_PRINTER\_ENDORSER\_STRING**](wia-ips-printer-endorser-string.md) instead.
 
- 
+ 
 
 Property Type: VT\_BSTR
 
@@ -80,16 +76,16 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**WIA\_DPS\_ENDORSER\_CHARACTERS**](wia-dps-endorser-characters.md)
 
 [**WIA\_IPS\_PRINTER\_ENDORSER\_STRING**](wia-ips-printer-endorser-string.md)
 
- 
+ 
 
- 
+ 
 
 
 

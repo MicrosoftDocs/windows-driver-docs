@@ -2,11 +2,7 @@
 title: PKEY\_SFX\_ProcessingModes\_Supported\_For\_Streaming
 description: In Windows 8.1 and later, the PKEY\_SFX\_ProcessingModes\_Supported\_For\_Streaming property key identifies the streaming processing modes supported by the driver.
 ms.assetid: 10E436BC-A4A1-4A2D-A22B-14DDD958FDB3
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,7 +18,7 @@ The INF file property key instructs the audio endpoint builder to set the CLSIDs
 
 An INF file specifies settings for an audio processing mode effect in the add-registry section for that device. The following INF example shows the strings and add-registry sections that loads the mode effect processing modes into the registry.
 
-```
+```inf
 [Strings]
 PKEY_SFX_ProcessingModes_Supported_For_Streaming = "{D3993A3F-99C2-4402-B5EC-A92A0367664B},5"
 ...
@@ -33,7 +29,6 @@ AUDIO_SIGNALPROCESSINGMODE_COMMUNICATIONS = "{98951333-B9CD-48B1-A0A3-FF40682D73
 [SWAPAPO.I.Association0.AddReg]
 ;To register an APO for streaming in multiple modes, use a REG_MULTI_SZ property and include all the desired modes:
 HKR,"FX\\0",%PKEY_SFX_ProcessingModes_For_Streaming%,%REG_MULTI_SZ%,%AUDIO_SIGNALPROCESSINGMODE_DEFAULT%,%AUDIO_SIGNALPROCESSINGMODE_MOVIE%,%AUDIO_SIGNALPROCESSINGMODE_COMMUNICATIONS%
- 
 ```
 
 ## <span id="related_topics"></span>Related topics
@@ -41,9 +36,9 @@ HKR,"FX\\0",%PKEY_SFX_ProcessingModes_For_Streaming%,%REG_MULTI_SZ%,%AUDIO_SIGNA
 
 [Media-Class INF Extensions](media-class-inf-extensions.md)
 
- 
 
- 
+
+
 
 
 

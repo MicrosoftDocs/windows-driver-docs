@@ -9,11 +9,7 @@ api_name:
 - wscn FilmScanModeValue
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **FilmScanModeValue** element identifies a specific film exposure t
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:FilmScanModeValue>
   text
 </wscn:FilmScanModeValue>
@@ -72,7 +68,7 @@ Required. One of the following values:
 </tbody>
 </table>
 
- 
+ 
 
 ## Child elements
 
@@ -93,7 +89,7 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>FilmScanModesSupported</strong>](filmscanmodessupported.md)</p></td>
+<td><p><a href="filmscanmodessupported.md" data-raw-source="[&lt;strong&gt;FilmScanModesSupported&lt;/strong&gt;](filmscanmodessupported.md)"><strong>FilmScanModesSupported</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -103,16 +99,16 @@ Remarks
 
 You can both extend and subset the allowed values for this element.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**DefaultScanTicket**](defaultscanticket.md)
 
 [**FilmScanModesSupported**](filmscanmodessupported.md)
 
- 
+ 
 
- 
+ 
 
 
 

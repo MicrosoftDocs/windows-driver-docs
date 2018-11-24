@@ -1,15 +1,10 @@
 ---
 title: Creating Varying Resource Maps
-author: windows-driver-content
 description: Creating Varying Resource Maps
 ms.assetid: bfe3a760-d8fe-4213-9bbe-2bad6927d8e2
 keywords:
 - varying resource maps WDK multifunction devices
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -70,11 +65,11 @@ Based on these assumptions, mf.sys will return a resource requirements list for 
 </tbody>
 </table>
 
- 
+ 
 
 Vendors use INF file directives to specify the sharing of these resources among the card's 16550 UART functions. For each function that requires a segment of the device's resources, you must use a **VaryingResourceMap** entry in the INF to create a registry entry. Following is an excerpt from the INF file for this device:
 
-```
+```cpp
 [DDInstall.RegHW] 
 ; for each "child" function list hardware ID and resource map 
 ; and/or varying resource map
@@ -97,7 +92,7 @@ The **ResourceMap** parameter is described in [Creating Standard Resource Maps](
 
 Following is a more complete example for this device, specifying four child functions:
 
-```
+```cpp
 [Version]
 Signature="$Windows NT$"
 Class=MultiFunction
@@ -143,9 +138,9 @@ MYCOMPANY= "MYCOMPANY Inc."
 MYCOMPANY_4PORT="MYCOMPANY 4PORT"
 ```
 
- 
+ 
 
- 
+ 
 
 
 

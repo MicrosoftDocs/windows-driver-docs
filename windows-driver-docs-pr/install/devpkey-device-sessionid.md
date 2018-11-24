@@ -12,6 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # DEVPKEY_Device_SessionId
@@ -31,7 +32,7 @@ The DEVPKEY_Device_SessionId device property represents a value that indicates t
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Property-data-type identifier</strong></p></td>
-<td align="left"><p>[<strong>DEVPROP_TYPE_UINT32</strong>](devprop-type-uint32.md)</p></td>
+<td align="left"><p><a href="devprop-type-uint32.md" data-raw-source="[&lt;strong&gt;DEVPROP_TYPE_UINT32&lt;/strong&gt;](devprop-type-uint32.md)"><strong>DEVPROP_TYPE_UINT32</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Property access</strong></p></td>
@@ -44,7 +45,7 @@ The DEVPKEY_Device_SessionId device property represents a value that indicates t
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -88,9 +89,9 @@ Requirements
 
 [**SetupDiSetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff552163)
 
- 
+ 
 
- 
+ 
 
 
 

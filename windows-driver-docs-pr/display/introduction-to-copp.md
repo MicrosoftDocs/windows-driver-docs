@@ -7,11 +7,7 @@ keywords:
 - video copy protection WDK COPP , about COPP
 - COPP WDK DirectX VA , about COPP
 - protected video WDK COPP , about COPP
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +29,9 @@ The following topics describe COPP:
 
 [Graphics Adapter Output Requirements to Support COPP](graphics-adapter-output-requirements-to-support-copp.md)
 
- 
+ 
 
- 
+ 
 
 
 

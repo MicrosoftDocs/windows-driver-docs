@@ -1,13 +1,8 @@
 ---
 title: Application Items and Driver Items
-author: windows-driver-content
 description: Application Items and Driver Items
 ms.assetid: 33b602dc-4a0b-47e1-90e2-b77ecc05f66d
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -47,9 +42,9 @@ The remainder of this section contains the following topics:
 
 [Common, Camera, and Scanner Properties](common--camera--and-scanner-properties.md)
 
- 
+ 
 
- 
+ 
 
 
 

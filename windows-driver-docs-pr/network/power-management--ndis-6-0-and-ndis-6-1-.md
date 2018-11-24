@@ -8,11 +8,7 @@ keywords:
 - power management WDK networking , miniport drivers
 - power management WDK NDIS miniport
 - power management WDK NDIS miniport , about miniport driver power management
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -58,11 +54,11 @@ This section includes the following topics:
 
 **Note**  Starting with NDIS 6.20, the NDIS power management interface has been revised and extended. If you are developing NDIS 6.20 miniport drivers that support power management, please review the information in [Power Management (NDIS 6.20 and Later)](https://msdn.microsoft.com/library/windows/hardware/hh205401). If you are developing NDIS 6.30 miniport drivers that support power management, please review the information in [Power Management (NDIS 6.30 and Later)](https://msdn.microsoft.com/library/windows/hardware/hh440160).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

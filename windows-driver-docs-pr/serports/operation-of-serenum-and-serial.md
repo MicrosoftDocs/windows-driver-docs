@@ -1,6 +1,5 @@
 ---
 title: Operation of Serenum and Serial
-author: windows-driver-content
 description: Operation of Serenum and Serial
 ms.assetid: d14b6655-c031-42dd-921e-b6a09afde86d
 keywords:
@@ -11,11 +10,7 @@ keywords:
 - serial drivers WDK
 - serial devices WDK , Serial driver
 - serial devices WDK , Serenum driver
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -63,9 +58,9 @@ For more information about operating Serenum and Serial, see the following resou
 
 -   Communications resources that are supported by the Windows Base Services in the Microsoft Windows SDK
 
- 
+ 
 
- 
+ 
 
 
 

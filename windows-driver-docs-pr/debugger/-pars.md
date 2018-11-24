@@ -3,11 +3,7 @@ title: pars
 description: The pars extension displays a specified processor application registers file.
 ms.assetid: cd952f00-a135-411c-99e0-20153f2539cd
 keywords: ["processor application register", "pars Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,13 +18,13 @@ ms.localizationpriority: medium
 
 The **!pars** extension displays a specified processor application registers file.
 
-```
+```dbgcmd
 !pars Address
 ```
 
 **Important**  This command has been deprecated in the Windows Debugger Version 10.0.14257 and later, and is no longer available.
 
- 
+ 
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 
@@ -55,13 +51,13 @@ Specifies the address of a processor application registers file.
 </tbody>
 </table>
 
- 
+ 
 
 This extension command can only be used with an Itanium-based target computer.
 
- 
+ 
 
- 
+ 
 
 
 

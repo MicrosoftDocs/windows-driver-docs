@@ -1,6 +1,5 @@
 ---
 title: Setting Up Isochronous Transfer for IEEE 1394 Devices
-author: windows-driver-content
 description: Setting Up Isochronous Transfer for IEEE 1394 Devices
 ms.assetid: 5161da54-0f20-496c-bf64-dc756b987de2
 keywords:
@@ -11,11 +10,7 @@ keywords:
 - buffers WDK IEEE 1394 bus
 - speed WDK IEEE 1394 bus
 - allocating bandwidth
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -84,9 +79,9 @@ Once the operation has begun, the driver can detach buffers that it no longer ne
 
 To read from the device, the driver issues the [**REQUEST\_ISOCH\_LISTEN**](https://msdn.microsoft.com/library/windows/hardware/ff537655) request. To write to the device, the driver issues the [**REQUEST\_ISOCH\_TALK**](https://msdn.microsoft.com/library/windows/hardware/ff537660) request. The driver can then activate the device for reading or writing, in the appropriate device-specific fashion.
 
- 
+ 
 
- 
+ 
 
 
 

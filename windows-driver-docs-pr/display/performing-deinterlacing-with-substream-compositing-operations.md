@@ -6,11 +6,7 @@ keywords:
 - deinterlacing WDK DirectX VA , combining substream compositing
 - combining substream compositing WDK DirectX VA
 - substream compositing WDK DirectX VA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,7 +20,7 @@ ms.localizationpriority: medium
 
 Use the following example code to perform operations that combine deinterlacing the video stream and compositing video substreams on top of the video stream. The example code implements the [*DdMoCompRender*](https://msdn.microsoft.com/library/windows/hardware/ff550248) callback function. The **RenderMoComp** member of the [**DD\_MOTIONCOMPCALLBACKS**](https://msdn.microsoft.com/library/windows/hardware/ff551660) structure points to the callback function. The example code only shows how *DdMoCompRender* is used for deinterlacing with substream compositing operations. For an implementation of *DdMoCompRender* that performs ProcAmp control and deinterlacing operations, see [Performing ProcAmp Control and Deinterlacing Operations](performing-procamp-control-and-deinterlacing-operations.md).
 
-```
+```cpp
 DWORD APIENTRY
 MOCOMPCB_RENDER(PDD_RENDERMOCOMPDATA lpData)
 {
@@ -74,9 +70,9 @@ return DDHAL_DRIVER_HANDLED;
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

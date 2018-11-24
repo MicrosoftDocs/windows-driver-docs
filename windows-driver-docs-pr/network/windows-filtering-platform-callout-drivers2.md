@@ -6,11 +6,7 @@ keywords:
 - Windows Filtering Platform callout drivers WDK
 - callout drivers WDK Windows Filtering Platform
 - WFP WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,9 +33,9 @@ For an overview of WFP, see [Windows Filtering Platform](https://msdn.microsoft.
 
 For WFP reference information, see [Windows Filtering Platform Callout Drivers](https://msdn.microsoft.com/library/windows/hardware/ff571067).
 
- 
+ 
 
- 
+ 
 
 
 

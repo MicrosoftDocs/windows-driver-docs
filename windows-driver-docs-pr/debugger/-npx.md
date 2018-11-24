@@ -3,11 +3,7 @@ title: npx
 description: The npx extension displays the contents of the floating-point register save area.
 ms.assetid: 1601e4fe-0aba-4507-90a1-402c02fba59d
 keywords: ["registers, floating-point register save area", "npx Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!npx** extension displays the contents of the floating-point register save area.
 
-```
+```dbgcmd
 !npx Address
 ```
 
@@ -51,13 +47,13 @@ Specifies the hexadecimal address of the FLOATING\_SAVE\_AREA structure.
 </tbody>
 </table>
 
- 
+ 
 
 This extension command can only be used with an x86-based target computer.
 
- 
+ 
 
- 
+ 
 
 
 

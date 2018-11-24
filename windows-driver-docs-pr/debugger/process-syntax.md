@@ -3,11 +3,7 @@ title: Process Syntax
 description: Process Syntax
 ms.assetid: fe08b5fe-ec27-4264-baee-de4c11bcb2bf
 keywords: ["process, command syntax", "(process identifier)", "process, process identifier ( )", "process, process ID (PID)", "PID (process ID)", "(process identifier)", "syntax rules for commands, (process identifier)", "syntax rules for commands, (process identifier)", "process identifier ( )"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -60,7 +56,7 @@ The process identifier can be one of the following values.
 </tbody>
 </table>
 
- 
+ 
 
 Processes are assigned ordinals as they are created. Note that this number differs from the process ID (PID) that the Microsoft Windows operating system uses.
 
@@ -74,9 +70,9 @@ An example of the |\[*Expression*\] syntax would be \[|@$t0\]. In this example, 
 
 In kernel mode, you cannot control processes by using process identifiers. For more information about how to access process-specific information in kernel mode, see [Changing Contexts](changing-contexts.md).
 
- 
+ 
 
- 
+ 
 
 
 

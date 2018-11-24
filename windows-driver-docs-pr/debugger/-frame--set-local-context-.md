@@ -3,11 +3,7 @@ title: .frame (Set Local Context)
 description: The .frame command specifies which local context (scope) is used to interpret local variables or displays the current local context.
 ms.assetid: eb843712-204f-4bbd-b711-a10756c9279a
 keywords: ["Set Local Context (.frame) command", "memory, Set Local Context (.frame) command", "context, Set Local Context (.frame) command", ".frame (Set Local Context) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **.frame** command specifies which local context (scope) is used to interpret local variables or displays the current local context.
 
-```
+```dbgcmd
 .frame [/c] [/r] [FrameNumber] 
 .frame [/c] [/r] = BasePtr [FrameIncrement] 
 .frame [/c] [/r] = BasePtr StackPtr InstructionPtr 
@@ -77,7 +73,7 @@ Specifies an additional quantity of frames past the base pointer. For example, i
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -98,9 +94,9 @@ You can set the local context to a different stack frame to enable you to view n
 
 The local context is reset to the scope of the program counter if any application execution occurs. The local context is reset to the top stack frame if the register context is changed.
 
- 
+ 
 
- 
+ 
 
 
 

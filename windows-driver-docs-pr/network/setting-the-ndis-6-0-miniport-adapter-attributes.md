@@ -6,11 +6,7 @@ keywords:
 - miniport adapters WDK networking , attributes
 - adapters WDK networking , attributes
 - porting miniport drivers WDK networking , adapters
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,7 +32,7 @@ All NDIS 6.0 and later miniport drivers are deserialized. Therefore, the NDIS\_A
 
 The following code sample shows initialization of a registration attributes structure:
 
-```
+```C++
 MiniportAttributes.Header.Type = NDIS_OBJECT_TYPE_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES;
 MiniportAttributes.Header.Revision = NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES_REVISION_1;
 MiniportAttributes.Header.Size = sizeof(MiniportAttributes);
@@ -47,9 +43,9 @@ MiniportAttributes.InterfaceType = NdisInterfacePci;
 
 For more information about setting miniport driver attributes, see [Initializing an Adapter](initializing-a-miniport-adapter.md).
 
- 
+ 
 
- 
+ 
 
 
 

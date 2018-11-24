@@ -8,11 +8,7 @@ keywords:
 - ALE flow established filtering layers WDK Windows Filtering Platform
 - kernel-mode callout drivers WDK Windows Filtering Platform
 - user-mode callout drivers WDK Windows Filtering Platform
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -56,9 +52,9 @@ The MDL that describes the IP header in a net buffer list ([**NET\_BUFFER\_CURRE
 
 [Windows Filtering Platform Callout Drivers](windows-filtering-platform-callout-drivers2.md)
 
- 
+ 
 
- 
+ 
 
 
 

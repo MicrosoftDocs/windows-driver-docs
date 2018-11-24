@@ -10,11 +10,7 @@ api_name:
 - CertMgr
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -92,9 +88,9 @@ CertMgr /add OutputFile.cer /s /r localMachine root
 CertMgr /add OutputFile.cer /s /r localMachine trustedpublisher
 ```
 
- 
+ 
 
- 
+ 
 
 
 

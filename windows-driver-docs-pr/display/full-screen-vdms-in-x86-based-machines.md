@@ -7,11 +7,7 @@ keywords:
 - VGA WDK video miniport , full-screen VDMs in x86-based machines
 - full-screen VDMs in x86-based machines WDK video miniport
 - x86-based machines WDK VGA-compatible video miniport
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +27,9 @@ Direct access to I/O ports for the application is determined by the IOPM (named 
 
 By default, all I/O ports set up in such a miniport driver's emulator access ranges array are trapped to the corresponding *SvgaHwIoPortXxx* function. However, VGA-compatible miniport drivers usually call **VideoPortSetTrappedEmulatorPorts** on receipt of an IOCTL\_VIDEO\_ENABLE\_VDM request to reset the IOPM for the [*VDM*](https://msdn.microsoft.com/library/windows/hardware/ff556344#wdkgloss-vdm) to allow direct access to some of these I/O ports. Usually, such a driver allows direct access to all video adapter registers except the VGA sequencer registers and the miscellaneous output register, plus any SVGA adapter-specific registers that the driver writer has determined should always be validated by an *SvgaHwIoPortXxx* function.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,15 +1,10 @@
 ---
 title: XPS Support in Earlier Versions of Windows
-author: windows-driver-content
 description: XPS Support in Earlier Versions of Windows
 ms.assetid: e13b43f5-e926-404d-9f76-c2dfef6e0637
 keywords:
 - XPSDrv printer drivers WDK , earlier Windows versions
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,12 +21,4 @@ Support for Windows Server 2003 and Windows XP is provided in the following mann
 
 -   XPS-based print processor. For Windows Server 2003 and Windows XP, there is an XPS-based print processor that enables XPSDrv. The XPS-based print processor hosts XPSDrv drivers and communicates with the existing spooler on these operating systems. Certain XPS print path features are available only on Windows Vista, so the XPSDrv driver must be able to degrade gracefully on earlier versions of Windows.
 
-For more information about XPS, see the [XML Paper Specification Overview](https://msdn.microsoft.com/library/windows/hardware/dn641615).
-
- 
-
- 
-
-
-
-
+For more information about XPS, download the [XML Paper Specification Overview](http://download.microsoft.com/download/1/6/a/16acc601-1b7a-42ad-8d4e-4f0aa156ec3e/XPS_1_0.exe).

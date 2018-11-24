@@ -2,11 +2,7 @@
 title: Software Volume Control Support
 description: Software Volume Control Support
 ms.assetid: 2bdc7d01-9e47-4deb-b551-13e9cbc9c844
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -41,9 +37,9 @@ Since there is no physical volume control to be modeled, a KSNODETYPE\_VOLUME no
 
 For information about the volume ranges and the default volume levels for the different versions of Windows, see [Default Audio Volume Settings](default-audio-volume-settings.md).
 
- 
+ 
 
- 
+ 
 
 
 

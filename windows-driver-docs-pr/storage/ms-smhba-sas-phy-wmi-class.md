@@ -3,6 +3,7 @@ title: MS\_SMHBA\_SAS\_PHY WMI Class
 description: MS\_SMHBA\_SAS\_PHY WMI Class
 ms.assetid: c4fcf9ae-d2ab-4791-bf1e-55087fe03185
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MS\_SMHBA\_SAS\_PHY WMI Class
@@ -12,7 +13,7 @@ An HBA miniport driver that supports the Storage Management API uses the MS\_SMH
 
 The MS\_SMHBA\_SAS\_PHY class is defined as follows in *Hbaapi.mof*:
 
-```
+```cpp
 class MS_SMHBA_SAS_PHY
 {
     [WmiDataId(1)]
@@ -44,9 +45,9 @@ When this class definition is compiled by the WMI tool suite, it produces the fo
 
 There are no methods associated with this WMI class.
 
- 
+ 
 
- 
+ 
 
 
 

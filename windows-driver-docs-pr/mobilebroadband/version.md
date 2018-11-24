@@ -2,11 +2,7 @@
 title: Version
 description: Version
 ms.assetid: 1a476586-bef9-41ec-8e8a-f4343361dc92
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -51,13 +47,13 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[MetadataBuilderInformation](metadatabuilderinformation.md)</p></td>
-<td><p>The [MetadataBuilderInformation](metadatabuilderinformation.md) element specifies the application that created the service metadata package.</p></td>
+<td><p><a href="metadatabuilderinformation.md" data-raw-source="[MetadataBuilderInformation](metadatabuilderinformation.md)">MetadataBuilderInformation</a></p></td>
+<td><p>The <a href="metadatabuilderinformation.md" data-raw-source="[MetadataBuilderInformation](metadatabuilderinformation.md)">MetadataBuilderInformation</a> element specifies the application that created the service metadata package.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="XSD"></span><span id="xsd"></span>XSD
 
@@ -78,9 +74,9 @@ There are no child elements.
 
 The Version element is not used by the Windows 7 operating system. It is reserved for use by the OEM and developers.
 
- 
+ 
 
- 
+ 
 
 
 

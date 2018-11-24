@@ -4,11 +4,7 @@ description: INF File Platform Extensions and x86-Based Systems
 ms.assetid: d0e1c6ba-32c4-413d-b0d9-620e3617a62b
 keywords:
 - x86 INF file platform extensions WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,6 +34,14 @@ The following table summarizes Windows support for platform extensions for x86-b
 <td align="left"><p>Not supported.</p></td>
 </tr>
 <tr class="odd">
+<td align="left"><p><strong>.ntarm</strong></p></td>
+<td align="left"><p>Not supported.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p><strong>.ntarm64</strong></p></td>
+<td align="left"><p>Not supported.</p></td>
+</tr>
+<tr class="odd">
 <td align="left"><p><strong>.ntx86</strong></p></td>
 <td align="left"><p>Optional on sections that support extensions.</p></td>
 </tr>
@@ -52,7 +56,7 @@ The following table summarizes Windows support for platform extensions for x86-b
 </tbody>
 </table>
 
- 
+ 
 
 For more information about how to use platform extensions with x86-based systems, see the following sections:
 
@@ -68,11 +72,11 @@ Windows 2000 does not support platform extensions on an [**INF *Models* section*
 
 For sections that support optional platform extensions, Windows selects which section to process, as follows:
 
-1.  Windows checks for a *section-name***.ntx86** section and, if one exists, processes it. Windows checks for the **.ntx86** extension in the INF file that is being processed and in any included INF files (that is, any INF files that are included with **Include** entries).
+1. Windows checks for a <em>section-name</em>**.ntx86** section and, if one exists, processes it. Windows checks for the **.ntx86** extension in the INF file that is being processed and in any included INF files (that is, any INF files that are included with **Include** entries).
 
-2.  If a *section-name***.ntx86** section does not exist, Windows checks for a *section-name***.nt** section in the INF file or any included INF files. If one exists, Windows processes the *section-name***.nt** section.
+2. If a <em>section-name</em>**.ntx86** section does not exist, Windows checks for a <em>section-name</em>**.nt** section in the INF file or any included INF files. If one exists, Windows processes the <em>section-name</em>**.nt** section.
 
-3.  If a *section-name***.nt** section does not exist, Windows processes a *section-name* section that does not include a platform extension.
+3. If a <em>section-name</em>**.nt** section does not exist, Windows processes a *section-name* section that does not include a platform extension.
 
 ### <a href="" id="creating-inf-files-for-x86-based-systems--windows-2000-and-later-"></a> Creating INF Files for x86-Based Systems
 
@@ -88,7 +92,7 @@ To create a single cross-operating system INF file for x86-based systems that ru
 
 2.  Include an INF **Manufacturer** section that includes a *manufacturer-identifier* that specifies the *Models* section name for the device, but does not specify an optional **.nt** or **.ntx86** platform extension. For example, the following **Manufacturer** section specifies a *Models* section name of "AbcModelSection" for an Abc device.
 
-    ```
+    ```cpp
     [Manufacturer]
     ; The manufacturer-identifier for the Abc device.
     %ManufacturerName%=AbcModelSection
@@ -96,14 +100,14 @@ To create a single cross-operating system INF file for x86-based systems that ru
 
 3.  Include a *Models* section whose name matches the *Models* section name that is specified by the *manufacturer-identifier* in the **Manufacturer** section. For example, the following AbcModelSection section for an Abc device includes a *device-description* that specifies an *install-section-name* of "AbcInstallSection."
 
-    ```
+    ```cpp
     [AbcModelSection]
     %AbcDeviceName%=AbcInstallSection,Abc-hw-id
     ```
 
 4.  Include a *DDInstall* section whose name matches the *install-section-name* that is specified by the *Models* section. For example, the *device-description* in the AbcModelSection section specifies the following AbcInstallSection section for an Abc device. Windows processes this section to install the Abc device on x86-based systems that run Windows 2000 and later versions of Windows.
 
-    ```
+    ```cpp
     [AbcInstallSection]
     ; Install section entries go here.
     ...
@@ -115,9 +119,9 @@ For more information about INF file sections and directives, see [Summary of INF
 
 For information about how to create a single cross-platform INF file for all platform types, see [Cross-Platform INF Files](cross-platform-inf-files.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -6,11 +6,7 @@ keywords:
 - audio miniport drivers WDK , WavePci
 - miniport drivers WDK audio , WavePci
 - WavePci miniport drivers WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 **Important**  The use of WavePci is no longer recommended, instead use WaverRT.
 
- 
+ 
 
 A WavePci miniport driver manages the hardware-dependent functions of a wave-rendering or wave-capture device that has scatter/gather DMA hardware that can transfer audio data to or from any location in physical memory. A wave device that lacks the ability to perform scatter/gather transfers or is able to access only restricted regions in physical memory should use a [WaveCyclic miniport driver](wavecyclic-miniport-driver.md) instead.
 
@@ -79,9 +75,9 @@ Sets the data format of the wave stream.
 [**IMiniportWavePciStream::SetState**](https://msdn.microsoft.com/library/windows/hardware/ff536733)
 
 Sets the state of the wave stream.
- 
+ 
 
- 
+ 
 
 
 

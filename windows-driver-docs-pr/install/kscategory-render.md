@@ -12,6 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # KSCATEGORY_RENDER
@@ -42,7 +43,7 @@ The KSCATEGORY_RENDER [device interface class](https://msdn.microsoft.com/librar
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -69,9 +70,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

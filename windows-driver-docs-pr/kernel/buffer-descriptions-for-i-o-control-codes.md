@@ -1,14 +1,9 @@
 ---
 title: Buffer Descriptions for I/O Control Codes
-author: windows-driver-content
 description: Buffer Descriptions for I/O Control Codes
 ms.assetid: a458f3fb-a6c7-42ae-870e-1617a96b496f
 keywords: ["I/O control codes WDK kernel , buffer descriptions", "control codes WDK IOCTLs , buffer descriptions", "IOCTLs WDK kernel , buffer descriptions", "buffer descriptions WDK IOCTLs"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -51,9 +46,9 @@ Buffer sizes are supplied by **Parameters.DeviceIoControl.InputBufferLength** an
 
 For more information about the **CTL\_CODE** macro and the transfer types listed above, see [Defining I/O Control Codes](defining-i-o-control-codes.md).
 
- 
+ 
 
- 
+ 
 
 
 

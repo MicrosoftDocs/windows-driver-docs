@@ -7,11 +7,7 @@ keywords:
 - Bluetooth WDK , debugging profile drivers
 - debugging drivers WDK Bluetooth
 - profile drivers WDK Bluetooth , debugging
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +30,9 @@ The verification checks can help to catch the following kinds of errors:
 
 While debugging your profile driver, you can use the **!analyze-v** debugger command after a BC\_BLUETOOTH\_VERIFIER\_FAULT to obtain an explanation of the fault.
 
- 
+ 
 
- 
+ 
 
 
 

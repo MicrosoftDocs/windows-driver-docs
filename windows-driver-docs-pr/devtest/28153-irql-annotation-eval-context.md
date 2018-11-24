@@ -5,11 +5,7 @@ ms.assetid: 384d0925-b23b-4ba7-b5fb-34bb7106ca3f
 keywords:
 - warnings listed WDK PREfast for Drivers
 - errors listed WDK PREfast for Drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,15 +28,15 @@ warning C28153: The value for an IRQL from annotation could not be evaluated in 
 </tbody>
 </table>
 
- 
+ 
 
 This warning indicates that the Code Analysis tool cannot interpret the function annotation because the annotation is not coded correctly. As a result, the Code Analysis tool cannot determine the specified IRQL value.
 
 This warning can occur with any of the driver-specific annotations that mention an IRQL when the Code Analysis tool cannot evaluate the expression for the IRQL.
 
- 
+ 
 
- 
+ 
 
 
 

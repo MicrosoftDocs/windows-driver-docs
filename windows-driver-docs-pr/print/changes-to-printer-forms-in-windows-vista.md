@@ -1,6 +1,5 @@
 ---
 title: Changes to Printer Forms in Windows Vista
-author: windows-driver-content
 description: Changes to Printer Forms in Windows Vista
 ms.assetid: 6e970cbd-1c7f-4c48-8d05-a29f922a3f33
 keywords:
@@ -11,11 +10,7 @@ keywords:
 - paper sizes WDK forms
 - custom forms WDK printer
 - FORM_INFO_2 data structure WDK printer
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -40,9 +35,9 @@ This section describes the following improvements in printer forms for Windows V
 
 For more information about using printer forms, see the Microsoft Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

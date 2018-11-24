@@ -1,13 +1,8 @@
 ---
 title: WDI_TLV_COALESCING_FILTER_MATCH_COUNT
-author: windows-driver-content
 description: WDI_TLV_COALESCING_FILTER_MATCH_COUNT is a TLV that contains the number of packets that have matched receive filters on the network port.
 ms.assetid: 9B9A1ED9-B842-4788-94C9-829876EB5D73
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_COALESCING_FILTER_MATCH_COUNT Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -35,7 +30,7 @@ The size (in bytes) of the a UINT64.
 |--------|------------------------------------------------------------------------------|
 | UINT64 | The number of packets that have matched receive filters on the network port. |
 
- 
+ 
 
 Requirements
 ------------
@@ -61,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

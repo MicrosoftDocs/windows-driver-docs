@@ -1,12 +1,7 @@
 ---
 title: IRP_MN_QUERY_DEVICE_RELATIONS
-author: windows-driver-content
 description: The PnP manager sends this request to determine certain relationships among devices.
-ms.author: windowsdriverdev
 ms.date: 08/12/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.assetid: 32437c5a-ad92-433c-8255-83775751a44d
 keywords:
  - IRP_MN_QUERY_DEVICE_RELATIONS Kernel-Mode Driver Architecture
@@ -66,7 +61,7 @@ A driver sets **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS or to a failure sta
 
 On success, a driver sets **Irp-&gt;IoStatus.Information** to a PDEVICE\_RELATIONS pointer that points to the requested relations information. The **DEVICE\_RELATIONS** structure is defined as follows:
 
-```
+```cpp
 typedef struct _DEVICE_RELATIONS {
   ULONG  Count;
   PDEVICE_OBJECT  Objects[1];  // variable length
@@ -92,7 +87,7 @@ When the PnP manager queries for the bus relations (child devices) of an adapter
 
 **Warning**   A device object cannot be passed to any routine that takes a PDO as an argument until the PnP manager creates a device node ([*devnode*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode)) for that object. (If the driver does pass a device object, the system will bug check with [**Bug Check 0xCA: PNP\_DETECTED\_FATAL\_ERROR**](https://msdn.microsoft.com/library/windows/hardware/ff560209).) The PnP manager creates the devnode in response to the **IRP\_MN\_QUERY\_DEVICE\_RELATIONS** request. The driver can safely assume that the PDO's devnode has been created when it receives an [**IRP\_MN\_QUERY\_RESOURCE\_REQUIREMENTS**](irp-mn-query-resource-requirements.md) request.
 
- 
+ 
 
 The bus driver that responds to this IRP is the function driver for the bus adapter or controller, not the parent bus driver for the bus that the adapter or controller is connected to. Function drivers for non-bus devices do not handle this query. Such drivers just pass the IRP to the next lower driver. (See the following figure.) Filter drivers typically do not handle this query.
 
@@ -253,9 +248,9 @@ Requirements
 
 [**ObReferenceObjectByHandle**](https://msdn.microsoft.com/library/windows/hardware/ff558679)
 
- 
+ 
 
- 
+ 
 
 
 

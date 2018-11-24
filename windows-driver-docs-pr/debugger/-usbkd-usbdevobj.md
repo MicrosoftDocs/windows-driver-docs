@@ -3,11 +3,7 @@ title: usbkd.usbdevobj
 description: The usbkd.usbdevobj command displays information from a USB device object.
 ms.assetid: 81A284DB-4830-4F7E-876A-31E7DC2F2819
 keywords: ["usbkd.usbdevobj Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!usbkd.usbdevobj** command displays information from a USB device object.
 
-```
+```dbgcmd
 !usbkd.usbdevobj DeviceObject
 ```
 
@@ -42,11 +38,11 @@ Usbkd.dll
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](http://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
- 
+ 
 
- 
+ 
 
 
 

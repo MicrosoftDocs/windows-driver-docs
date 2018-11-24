@@ -3,6 +3,7 @@ title: MSiSCSI\_LUNMappingInformation WMI Class
 description: MSiSCSI\_LUNMappingInformation WMI Class
 ms.assetid: 646add52-f946-4169-9f6b-974253ec30af
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MSiSCSI\_LUNMappingInformation WMI Class
@@ -29,9 +30,9 @@ Initiators must register the MSiSCSI\_LUNMappingInformation class using the name
 
 Initiators must create one instance of the MSiSCSI\_LUNMappingInformation class for each logical unit that it enumerates.
 
- 
+ 
 
- 
+ 
 
 
 

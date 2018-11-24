@@ -1,6 +1,5 @@
 ---
 title: Specifying Feature and Option Display Order
-author: windows-driver-content
 description: Specifying Feature and Option Display Order
 ms.assetid: 51e18121-540b-40f0-85f8-eb2755a583f7
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - display order of features/options WDK Unidrv
 - property sheet pages WDK print , feature and option display order
 - Unidrv WDK print
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,7 +21,7 @@ To control the order in which features and options are displayed on Unidrv-gener
 
 Following is an example of a set of empty \*Feature and \*Option entries:
 
-```
+```cpp
 *Feature: EconoMode
 {
     *Option: Off{}
@@ -54,9 +49,9 @@ If a GPD file does not include empty \*Feature and \*Option entries specifying t
 
 Including empty \*Feature and \*Option entries to explicitly specify display order is recommended over allowing the parser to create the order.
 
- 
+ 
 
- 
+ 
 
 
 

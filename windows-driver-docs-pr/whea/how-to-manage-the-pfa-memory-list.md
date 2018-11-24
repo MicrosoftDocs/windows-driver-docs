@@ -1,13 +1,8 @@
 ---
 title: How to Manage the PFA Memory List
-author: windows-driver-content
 description: How to Manage the PFA Memory List
 ms.assetid: 28463f91-275b-4ad4-af64-59bed7fd3806
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -62,11 +57,11 @@ C:\Windows\system32>bcdedit /deletevalue {badmemory} badmemorylist
 
 **Note**  Improper changes to the BCD system store can prevent Windows from starting. Therefore, you must review the commands and their results carefully before you restart Windows.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

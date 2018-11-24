@@ -11,11 +11,7 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
-ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 09/10/2018
 ms.localizationpriority: medium
 ---
 
@@ -24,7 +20,7 @@ ms.localizationpriority: medium
 
 KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FACEDETECTION is a property ID that is used to turn on and off face detection.
 
-## <span id="Usage_summary_table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage summary table
+## Usage summary table
 
 
 <table>
@@ -49,12 +45,12 @@ KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FACEDETECTION is a property ID that is used
 </tbody>
 </table>
 
- 
+ 
 
 The following flags can be placed in the KSCAMERA\_EXTENDEDPROP\_HEADER.Flags field to control face detection in the driver. By default, the driver should have FACEDETECTION\_OFF.
 
-``` syntax
-#define KSCAMERA_EXTENDEDPROP_FACEDETECTION_PREVIEW   0x0000000000000001
+```cpp
+#define KSCAMERA_EXTENDEDPROP_FACEDETECTION_PREVIEW         0x0000000000000001
 #define KSCAMERA_EXTENDEDPROP_FACEDETECTION_VIDEO           0x0000000000000002
 #define KSCAMERA_EXTENDEDPROP_FACEDETECTION_PHOTO           0x0000000000000004
 #define KSCAMERA_EXTENDEDPROP_FACEDETECTION_BLINK           0x0000000000000008
@@ -106,17 +102,17 @@ The following table describes the flag capabilities.
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  MFT0 shall further attach the face information as a MF\_CAPTURE\_METADATA\_FACEROIS, the timestamp as a MF\_CAPTURE\_METADATA\_FACEROITIMESTAMPS, and the blink and/or smile information as a MF\_CAPTURE\_METADATA\_FACEROICHARACTERIZATIONS on the sample.
 
- 
+ 
 
 **Note**  PREVIEW, VIDEO, and PHOTO capabilities are optional. However, at least one of PREVIEW, VIDEO, and PHOTO capabilities must be supported if this control is supported.
 
- 
+ 
 
-The following table contains the descriptions and requirements for the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/dn925136) structure fields when using the control.
+The following table contains the descriptions and requirements for the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure fields when using the control.
 
 <table>
 <colgroup>
@@ -157,7 +153,7 @@ The following table contains the descriptions and requirements for the [**KSCAME
 </tbody>
 </table>
 
- 
+ 
 
 The table below contains the descriptions and requirements for the KSCAMERA\_EXTENDEDPROP\_VIDEOPROCSETTING structure fields for the KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FACEDETECTION property. This structure is defined in Ksmedia.h.
 
@@ -194,9 +190,9 @@ The table below contains the descriptions and requirements for the KSCAMERA\_EXT
 </tbody>
 </table>
 
- 
+ 
 
-### <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
+### Remarks
 
 When face detection is turned on, the face region of interests (ROIs) can be consumed directly by the driver to aid 3A processing as needed. If any user specified ROIs are configured via KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ROI\_ISPCONTROL at the same time, the user specified ROIs will take precedence over the face ROIs detected. If the user specified ROIs are cleared, the face ROIs detected will take effect.
 
@@ -215,12 +211,3 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
-
-

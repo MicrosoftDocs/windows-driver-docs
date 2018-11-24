@@ -6,11 +6,7 @@ keywords:
 - video decoding WDK DirectX VA , synchronization
 - decoding video WDK DirectX VA , synchronization
 - synchronization WDK DirectX VA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +24,9 @@ DirectX VA 2.0 uses the synchronization model that Direct3D already uses on vert
 
 Typically, for DirectX VA 2.0, synchronization is only an issue if the hardware can consume the compressed buffers directly without additional buffer copies.
 
- 
+ 
 
- 
+ 
 
 
 

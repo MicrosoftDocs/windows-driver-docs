@@ -12,11 +12,7 @@ api_location:
 - FltMgr.dll
 api_type:
 - LibDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -87,7 +83,7 @@ Requirements
 <tbody>
 <tr class="odd">
 <td align="left"><p>Target platform</p></td>
-<td align="left">[Universal](http://go.microsoft.com/fwlink/p/?linkid=531356)</td>
+<td align="left"><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" data-raw-source="[Universal](http://go.microsoft.com/fwlink/p/?linkid=531356)">Universal</a></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Header</p></td>
@@ -123,9 +119,9 @@ Requirements
 
 [**KeEnterCriticalRegion**](https://msdn.microsoft.com/library/windows/hardware/ff552021)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -5,11 +5,7 @@ ms.assetid: a2593b6d-03df-49d1-ae77-efec4c2ac8be
 keywords:
 - Boot.ini files WDK
 - boot options WDK , Boot.ini files
-ms.author: windowsdriverdev
 ms.date: 07/03/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

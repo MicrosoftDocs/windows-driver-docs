@@ -1,14 +1,9 @@
 ---
 title: Filter Drivers
-author: windows-driver-content
 description: Filter Drivers
 ms.assetid: 4def5503-bb0e-4bae-b048-4c8d25d62020
 keywords: ["filter drivers WDK WDM", "bus filter drivers WDK WDM", "lower-level filter drivers WDK WDM", "upper-level filter drivers WDK WDM", "WDM filter drivers WDK"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -44,9 +39,9 @@ An upper-level *device* filter driver adds value for a particular device. For ex
 
 An upper-level *class* filter driver adds value for all devices of a particular class.
 
- 
+ 
 
- 
+ 
 
 
 

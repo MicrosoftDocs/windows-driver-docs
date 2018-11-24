@@ -3,6 +3,7 @@ title: ISCSI\_STATUS\_QUALIFIERS
 description: ISCSI\_STATUS\_QUALIFIERS
 ms.assetid: d39ed448-5608-4f19-b49c-bbd6727e9491
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # ISCSI\_STATUS\_QUALIFIERS
@@ -197,7 +198,7 @@ The following table describes the ISCSI\_STATUS\_QUALIFIERS values.
 </tr>
 <tr class="odd">
 <td align="left"><p>ISDSC_LOGIN_USER_INFO_BAD (0xEFFF002A)</p></td>
-<td align="left"><p>One or more parameters that are specified in the [<strong>LoginToTarget_IN</strong>](https://msdn.microsoft.com/library/windows/hardware/ff561600) structure are invalid.</p></td>
+<td align="left"><p>One or more parameters that are specified in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561600" data-raw-source="[&lt;strong&gt;LoginToTarget_IN&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff561600)"><strong>LoginToTarget_IN</strong></a> structure are invalid.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>ISDSC_TARGET_MAPPING_EXISTS (0xEFFF002B)</p></td>
@@ -442,11 +443,11 @@ The following table describes the ISCSI\_STATUS\_QUALIFIERS values.
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

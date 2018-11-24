@@ -16,11 +16,7 @@ keywords:
 - pattern fills WDK DirectDraw
 - fill colors WDK DirectDraw
 - fill patterns WDK DirectDraw
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +30,9 @@ A color fill, as described by a rectangle, fills an area of the screen with a pa
 
 Some cards use a pattern fill, which can accomplish the same thing as a color fill. An 8 x 8 region of pixels (the pattern) makes up the desired color, and that pattern is used to fill the specified area. The pattern is set to equal the color desired and filled in the same as a color fill. A pattern fill takes four separate colors that can be blended, reducing the number of necessary instructions.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,11 +3,7 @@ title: File Open Workspace
 description: File Open Workspace
 ms.assetid: 589d782c-c6b4-4b5a-a533-1ed02129fb9c
 keywords: ["File Open Workspace", "workspaces, File Open Workspace"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +27,9 @@ Enter the name of the workspace that you want to open in the **Workspace** box o
 
 For more information about the different levels of workspaces and how to use them, see [Using Workspaces](using-workspaces.md).
 
- 
+ 
 
- 
+ 
 
 
 

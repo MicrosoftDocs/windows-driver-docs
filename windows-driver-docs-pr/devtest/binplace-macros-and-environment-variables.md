@@ -5,11 +5,7 @@ ms.assetid: f990e132-f6d7-46e1-8c86-6ae3f0483bd5
 keywords:
 - BinPlace WDK , environment variables
 - environment variables WDK BinPlace
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -39,9 +35,9 @@ Specifies the path to be used for trace format files when the **-:TMF** switch i
 <span id="_________NTTREE_______"></span><span id="_________nttree_______"></span> \_NTTREE   
 Specifies the root destination directory in which all files will be placed if the **-r** switch is not used. For more information, see [BinPlace Destination Directories](binplace-destination-directories.md).
 
- 
+ 
 
- 
+ 
 
 
 

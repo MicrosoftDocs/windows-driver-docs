@@ -8,11 +8,7 @@ keywords:
 - COPP WDK DirectX VA , mapping COPP DDI
 - protected video WDK COPP , mapping COPP DDI
 - mapping COPP DDI WDK DirectX VA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,9 +34,9 @@ The following topics describe how the COPP DDI is mapped to the motion compensat
 
 [Calling the COPP DDI from the Display Driver](calling-the-copp-ddi-from-the-display-driver.md)
 
- 
+ 
 
- 
+ 
 
 
 

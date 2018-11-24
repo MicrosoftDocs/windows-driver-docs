@@ -1,15 +1,10 @@
 ---
 title: FORM_INFO_2 Data Structure
-author: windows-driver-content
 description: FORM_INFO_2 Data Structure
 ms.assetid: df953fe9-00a2-468a-a2ae-ba8f3fce9982
 keywords:
 - FORM_INFO_2 data structure WDK printer
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,7 +15,7 @@ The print spooler and the Unidrv printer driver are enhanced in Windows Vista to
 
 The FORM\_INFO\_1 data structure is defined as follows.
 
-```
+```cpp
 typedef struct _FORM_INFO_1 { 
   DWORD  Flags; 
   LPTSTR  pName; 
@@ -33,7 +28,7 @@ In FORM\_INFO\_1, the pName member is the only string field, so you can use it t
 
 The FORM\_INFO\_2 structure, which is defined in the following code example, adds additional fields to provide MUI support.
 
-```
+```cpp
 typedef struct _FORM_INFO_2 { 
   DWORD    Flags; 
   LPTSTR   pName; 
@@ -56,9 +51,9 @@ Printer drivers that continue to use the FORM\_INFO\_1 structure when they call 
 
 For more information about adding printer forms and about using the FORM\_INFO\_1 and FORM\_INFO\_2 data structures, see the Microsoft Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

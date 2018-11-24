@@ -2,11 +2,7 @@
 title: Container IDs for eSATA Devices
 description: Container IDs for eSATA Devices
 ms.assetid: 991836f1-936c-4051-ac3b-ad491a4ca221
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -50,7 +46,7 @@ The ATA bus driver determines that the eSATA device is removable by reading the 
 <strong>Note</strong>  This only applies to blindmate connectors that support hot-plug capabilities.
 </div>
 <div>
- 
+ 
 </div>
 .</td>
 </tr>
@@ -64,7 +60,7 @@ The ATA bus driver determines that the eSATA device is removable by reading the 
 </tbody>
 </table>
 
- 
+ 
 
 The ATA bus driver marks any device that is attached to the eSATA port as removable if one of the following is true:
 
@@ -74,13 +70,13 @@ The ATA bus driver marks any device that is attached to the eSATA port as remova
 
 **Note**   These conditions are mutually exclusive. An eSATA port may declare itself to be either an external hot-plug-capable port or an external signal-only port, but not both.
 
- 
+ 
 
 For more information about the SATA and eSATA interface, refer to the [Serial ATA Advanced Host Controller Interface (AHCI) 1.3 specification](http://go.microsoft.com/fwlink/p/?linkid=148284).
 
- 
+ 
 
- 
+ 
 
 
 

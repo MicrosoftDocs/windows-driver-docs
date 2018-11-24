@@ -3,11 +3,7 @@ title: Sending Output to the Debugger
 description: Sending Output to the Debugger
 ms.assetid: e0640e70-9846-4239-a3ff-b78788751384
 keywords: ["sending output to the debugger", "OutputDebugString function", "DbgPrint function", "DbgPrintEx function", "KdPrint function", "KdPrintEx function"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,15 +29,15 @@ For complete documentation of this routine, see the Microsoft Windows SDK.
 
 **Note**   In Windows Vista and later versions of Windows, **DbgPrint** produces tagged messages as well. This is a change from previous versions of Windows.
 
- 
+ 
 
 **KdPrint** and **KdPrintEx** are identical to **DbgPrint** and **DbgPrintEx**, respectively, when compiled in the checked build environment. When compiled in the free build environment, they have no effect.
 
 For complete documentation of these routines, as well as the build environment, see the Windows Driver Kit.
 
- 
+ 
 
- 
+ 
 
 
 

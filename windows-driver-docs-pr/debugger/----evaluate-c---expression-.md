@@ -3,11 +3,7 @@ title: (Evaluate C++ Expression)
 description: The double question mark ( ) command evaluates and displays the value of an expression according to C++ expression rules.
 ms.assetid: 3a15a0a3-03d0-4807-a6df-054de819c0a0
 keywords: ["(Evaluate C++ Expression) Windows Debugging"]
-ms.author: domars
-ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 09/17/2018
 topic_type:
 - apiref
 api_name:
@@ -22,8 +18,8 @@ ms.localizationpriority: medium
 
 The double question mark (**??**) command evaluates and displays the value of an expression according to C++ expression rules.
 
-```
-?? Expression
+```dbgcmd
+    ?? Expression
 ```
 
 ## <span id="ddk_cmd_evaluate_c_expression_dbg"></span><span id="DDK_CMD_EVALUATE_C_EXPRESSION_DBG"></span>Parameters
@@ -55,7 +51,7 @@ Specifies the C++ expression to evaluate. For more information about the syntax,
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -71,9 +67,9 @@ If you want to evaluate a part of the **Expression** expression according to MAS
 
 [**.formats (Show Number Formats)**](-formats--show-number-formats-.md)
 
- 
+ 
 
- 
+ 
 
 
 

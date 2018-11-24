@@ -11,11 +11,7 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -45,7 +41,7 @@ Also beginning with Windows Vista, if the **IPAutoconfigurationEnabled** registr
 
 **HKEY\_LOCAL\_MACHINE\\SYSTEM\\Current Control Set\\Services\\Tcpip\\Parameters\\Interfaces\\*GUID*\\IPAutoconfigurationEnabled**
 
- 
+ 
 
 Requirements
 ------------
@@ -67,9 +63,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

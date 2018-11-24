@@ -6,11 +6,7 @@ keywords:
 - intermediate drivers WDK networking , status indications
 - NDIS intermediate drivers WDK , status indications
 - status indications WDK networking , intermediate drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,9 +20,9 @@ The implementation of status indications in intermediate drivers is nearly ident
 
 When an intermediate driver receives a status indication, it can indicate the status indication up to the higher-level drivers by calling [**NdisMIndicateStatusEx**](https://msdn.microsoft.com/library/windows/hardware/ff563600). An intermediate driver should indicate status changes to overlying drivers as appropriate for its specific design requirements.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -5,11 +5,7 @@ ms.assetid: b93278fc-c05f-40d4-aec1-7a90aed18ff4
 keywords:
 - vertex buffers WDK Direct3D
 - buffers WDK Direct3D
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +29,9 @@ Drivers must provide FVF support.
 
 The actual vertices and the order in which they should be processed depends on the D3DDP2OP\_*Xxx* primitive command just parsed from the command buffer. For details, see the individual D3DHAL\_DP2*Xxx* structure reference pages.
 
- 
+ 
 
- 
+ 
 
 
 

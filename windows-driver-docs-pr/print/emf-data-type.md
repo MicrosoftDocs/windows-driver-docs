@@ -1,17 +1,12 @@
 ---
 title: EMF Data Type
-author: windows-driver-content
 description: EMF Data Type
 ms.assetid: d5a05778-3637-4dba-b036-5f0fc236d52d
 keywords:
 - print processors WDK , data types
 - data types WDK print processor
 - EMF data type WDK print processor
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +22,9 @@ NT-based operating system clients send EMF data to NT-based operating system pri
 
 For more information about the EMF data type, see the *Windows 2000 Professional Resource Kit* or the *Windows 2000 Server Resource Kit*. For more information about enhanced metafiles, see the Windows SDK documentation. (These resources may not be available in some languages and countries.)
 
- 
+ 
 
- 
+ 
 
 
 

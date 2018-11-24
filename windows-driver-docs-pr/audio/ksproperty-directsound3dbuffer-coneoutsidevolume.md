@@ -11,11 +11,7 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -51,13 +47,13 @@ The KSPROPERTY\_DIRECTSOUND3DBUFFER\_CONEOUTSIDEVOLUME property specifies the co
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left">[<strong>KSNODEPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537143)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/ff537143" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537143)"><strong>KSNODEPROPERTY</strong></a></td>
 <td align="left"><p>LONG</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is of type LONG and specifies the cone-outside volume level. The volume level is expressed in units of 1/100ths of a decibel.
 
@@ -95,9 +91,9 @@ Requirements
 
 [**KSNODEPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff537143)
 
- 
+ 
 
- 
+ 
 
 
 

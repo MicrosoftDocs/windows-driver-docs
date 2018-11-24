@@ -5,11 +5,7 @@ ms.assetid: 4d8a8a89-0617-4ab8-8609-37bbdb8999f0
 keywords:
 - DMA buffers WDK display , patching
 - patching DMA buffers WDK display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,9 +17,9 @@ ms.localizationpriority: medium
 
 After the video memory manager is informed where every memory resource for the DMA buffer is located, the GPU scheduler calls the display miniport driver's [**DxgkDdiPatch**](https://msdn.microsoft.com/library/windows/hardware/ff559737) function to patch the resource with a physical address (that is, assign a physical address to the resource).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -5,11 +5,7 @@ ms.assetid: df2b68dc-b22b-4aaa-b1ba-b34bfdd9b886
 keywords:
 - warnings listed WDK PREfast for Drivers
 - errors listed WDK PREfast for Drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +24,9 @@ FunctionalDeviceObject->Flags &= ~DO_DEVICE_INITIALIZING;
 
 For more information about **AddDevice** routines, see [AddDevice Routines in Function or Filter Drivers](https://msdn.microsoft.com/library/windows/hardware/ff540529)
 
- 
+ 
 
- 
+ 
 
 
 

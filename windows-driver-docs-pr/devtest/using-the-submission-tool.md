@@ -4,11 +4,7 @@ description: Creating a device metadata submission package in Visual Studio
 ms.assetid: 17CF8185-C9EE-4B25-BEE7-A1FFB8C92EE0
 keywords:
 - Creating a device metadata submission package in Visual Studio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,7 +20,7 @@ To create a device metadata submission package, use the Submission tool in Micro
 5.  Next to **Experience Name**, type a name for the experience.
     **Note**  This step is required for all package submissions.
 
-     
+     
 
 6.  Next to **Qualification**, select one of the following options from the list:
     -   **This device has an associated logo or unclassified submission**
@@ -42,7 +38,7 @@ To create a device metadata submission package, use the Submission tool in Micro
     5.  Select the certificate from the dialog box.
         **Note**   The file name in the Signature Wizard is what you receive after you complete the submission metadata wizard. Therefore, unless you have a specific reason, do not change the file name or path.
 
-         
+         
 
     6.  Complete the signing process.
 
@@ -52,9 +48,9 @@ For more information about how to submit your package, see [Submit a Device Meta
 
 For more information about the bulkmetadata file, see [Submit a Bulk Metadata Package](http://go.microsoft.com/fwlink/p/?linkid=248427).
 
- 
+ 
 
- 
+ 
 
 
 

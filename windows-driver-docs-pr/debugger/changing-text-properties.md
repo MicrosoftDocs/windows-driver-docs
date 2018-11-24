@@ -3,11 +3,7 @@ title: Changing Text Properties
 description: Changing Text Properties
 ms.assetid: 90f514da-064e-4d14-a4f3-856ccb534e76
 keywords: ["debugging information windows, text properties", "text properties of debugging information windows"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +29,9 @@ The **Options** dialog box then appears. In the **Tab width** box, enter the num
 
 The tab settings affect the display of the code in any Source window.
 
- 
+ 
 
- 
+ 
 
 
 

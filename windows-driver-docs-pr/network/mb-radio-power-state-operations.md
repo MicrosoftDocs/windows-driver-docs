@@ -2,11 +2,7 @@
 title: MB Radio Power State Operations
 description: MB Radio Power State Operations
 ms.assetid: 9b745ff3-c00b-4a43-9bf3-52f9bf61e062
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +25,9 @@ Be aware that the radio power state may change on portable computers (laptops) b
 
 For more information about radio power state operations, see [OID\_WWAN\_RADIO\_STATE](https://msdn.microsoft.com/library/windows/hardware/ff569832).
 
- 
+ 
 
- 
+ 
 
 
 

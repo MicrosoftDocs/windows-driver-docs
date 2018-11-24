@@ -9,11 +9,7 @@ api_name:
 - KSNODETYPE_FM_RX
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,9 +28,9 @@ The filter associated with the **KSNODETYPE\_FM\_RX** node should support the fo
 
 [**KSPROPERTY\_FMRX\_VOLUME**](ksproperty-fmrx-volume.md)
 
- 
+ 
 
- 
+ 
 
 
 

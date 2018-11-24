@@ -1,6 +1,5 @@
 ---
 title: Hardware Support App (HSA) Steps for Driver Developers
-author: windows-driver-content
 description: Creating a custom capability to pair a driver with a Hardware Support App (HSA)
 keywords:
 - Custom , Capabilities
@@ -8,11 +7,7 @@ keywords:
 - custom capabilities
 - UWP
 - Hardware
-ms.author: windowsdriverdev
 ms.date: 08/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -60,7 +55,7 @@ To allow access to a driver to a UWP app with the custom capability, add a few l
 
 In the INF file, specify your custom capability as follows:
 
-```
+```cpp
 [WDMPNPB003_Device.NT.Interfaces] 
 AddInterface= {zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz},,AddInterfaceSection 
  
@@ -144,6 +139,27 @@ To do so, before getting the SCCD signed by Microsoft, add **DeveloperModeOnly**
 ```
 
 The resulting signed SCCD works only on devices in [Developer Mode](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development). 
+
+## Allowing any app to use a custom capability
+
+We recommend specifying authorized entities (apps) that can use a custom capability. In some cases, however, you might want to permit any app to include an SCCD.  Starting in Windows 10 version 1809, you can do this by adding **AllowAny** to the AuthorizedEntities element. Because the best practice is to declare authorized entities in the SCCD file, please provide a justification for using **AllowAny** when submitting your SCCD to be signed by Microsoft.
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<CustomCapabilityDescriptor xmlns="http://schemas.microsoft.com/appx/2018/sccd" xmlns:s="http://schemas.microsoft.com/appx/2018/sccd">
+<CustomCapabilities>
+    <CustomCapability Name="microsoft.hsaTestCustomCapability_q536wpkpf5cy2"></CustomCapability>
+</CustomCapabilities>
+<AuthorizedEntities AllowAny="true"/>
+<Catalog>0000</Catalog>
+</CustomCapabilityDescriptor>
+```
+
+The resulting signed SCCD will validate in any app package. 
+
+## Multiple SCCDs
+
+Starting in Windows 10 version 1803, apps can declare custom capabilities from one or more SCCD files. Place the SCCD files in the root of the app package.
 
 ## Summary
 

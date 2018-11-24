@@ -1,13 +1,8 @@
 ---
 title: OID_QOS_CURRENT_CAPABILITIES
-author: windows-driver-content
 description: An overlying driver issues an object identifier (OID) query request of OID_QOS_CURRENT_CAPABILITIES to obtain the currently enabled NDIS Quality of Service (QoS) hardware capabilities of a network adapter.
 ms.assetid: E9013EB2-5EDB-4BCB-BC1D-17345B85D1C4
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_QOS_CURRENT_CAPABILITIES Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -22,7 +17,7 @@ After a successful return from the OID query request, the **InformationBuffer** 
 
 **Note**  This OID query request is handled by NDIS for miniport drivers that support the IEEE 802.1 Data Center Bridging (DCB) interface.
 
- 
+ 
 
 Remarks
 -------
@@ -37,7 +32,7 @@ Miniport drivers register the currently-enabled NDIS QoS hardware capabilities o
 
 **Note**  NDIS does not report the currently-enabled NDIS QoS hardware capabilities of a network adapter to overlying protocol and filter drivers during the bind or attach operations.
 
- 
+ 
 
 For more information on how to register NDIS QoS capabilities, see [Registering NDIS QoS Capabilities](https://msdn.microsoft.com/library/windows/hardware/hh440188).
 
@@ -67,7 +62,7 @@ NDIS handles the OID query request of OID\_QOS\_CURRENT\_CAPABILITIES request fo
 </tr>
 <tr class="odd">
 <td><p>NDIS_STATUS_INVALID_LENGTH</p></td>
-<td><p>The length of the information buffer is less than sizeof([<strong>NDIS_QOS_CAPABILITIES</strong>](https://msdn.microsoft.com/library/windows/hardware/hh451629)). NDIS sets the <strong>DATA.QUERY_INFORMATION.BytesNeeded</strong> member in the [<strong>NDIS_OID_REQUEST</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure to the minimum buffer size that is required.</p></td>
+<td><p>The length of the information buffer is less than sizeof(<a href="https://msdn.microsoft.com/library/windows/hardware/hh451629" data-raw-source="[&lt;strong&gt;NDIS_QOS_CAPABILITIES&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh451629)"><strong>NDIS_QOS_CAPABILITIES</strong></a>). NDIS sets the <strong>DATA.QUERY_INFORMATION.BytesNeeded</strong> member in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710" data-raw-source="[&lt;strong&gt;NDIS_OID_REQUEST&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566710)"><strong>NDIS_OID_REQUEST</strong></a> structure to the minimum buffer size that is required.</p></td>
 </tr>
 <tr class="even">
 <td><p>NDIS_STATUS_FAILURE</p></td>
@@ -76,7 +71,7 @@ NDIS handles the OID query request of OID\_QOS\_CURRENT\_CAPABILITIES request fo
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -112,9 +107,9 @@ Requirements
 
 [**NDIS\_QOS\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/hh451629)
 
- 
+ 
 
- 
+ 
 
 
 

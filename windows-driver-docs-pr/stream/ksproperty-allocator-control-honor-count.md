@@ -11,11 +11,7 @@ api_location:
 - ksmedia.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +23,7 @@ The KSPROPERTY\_ALLOCATOR\_CONTROL\_HONOR\_COUNT property informs the Overlay Mi
 ## <span id="ddk_ksproperty_allocator_control_honor_count_ks"></span><span id="DDK_KSPROPERTY_ALLOCATOR_CONTROL_HONOR_COUNT_KS"></span>
 
 
-### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
+### Usage Summary Table
 
 <table>
 <colgroup>
@@ -51,13 +47,13 @@ The KSPROPERTY\_ALLOCATOR\_CONTROL\_HONOR\_COUNT property informs the Overlay Mi
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p>[<strong>KSPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564262)</p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
 <td><p>DWORD</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a DWORD that specifies how the Overlay Mixer is to calculate the number of and use of overlay surfaces.
 
@@ -82,16 +78,16 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
-[**KSPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff564262)
+[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)
 
 [**KSPROPERTY\_CONNECTION\_ALLOCATORFRAMING**](ksproperty-connection-allocatorframing.md)
 
- 
+ 
 
- 
+ 
 
 
 

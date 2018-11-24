@@ -1,16 +1,11 @@
 ---
 title: Non-COM-Based Rendering Plug-Ins
-author: windows-driver-content
 description: Non-COM-Based Rendering Plug-Ins
 ms.assetid: 435f9754-50be-4a4b-a5b4-b2bc8d66f034
 keywords:
 - non-COM-based rendering plug-ins WDK print
 - rendering plug-ins WDK print , non-COM-based
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,7 +25,7 @@ An IHV can implement **OEMLineTo**, or any of the other hook-out functions descr
 
 **OEMLineTo** could be implemented as shown in the following pseudocode example:
 
-```
+```cpp
 BOOL APIENTRY
   OEMLineTo(
     SURFOBJ  *pso,
@@ -48,7 +43,7 @@ if ( OEM intends to handle the call ) {
  code to handle the call
 }
 else
-// OEM calls Unidrv&#39;s DrvLineTo DDI
+// OEM calls Unidrv's DrvLineTo DDI
   bRetVal = (((PFN_DrvLineTo)(poempdev->pfnUnidrv[UD_DrvLineTo])) (
  pso,
             pco,
@@ -64,7 +59,7 @@ else
 
 In the preceding example, the expression
 
-```
+```cpp
 poempdev->pfnUnidrv[UD_DrvLineTo]
 ```
 
@@ -72,9 +67,9 @@ evaluates to the address of the core driver's **DrvLineTo** DDI. The (**PFN\_Drv
 
 Note that when an **OEM***Xxx* DDI calls back to the Unidrv core driver and the surface involved is a device-managed surface, Unidrv can simply ignore the call by returning **FALSE**.
 
- 
+ 
 
- 
+ 
 
 
 

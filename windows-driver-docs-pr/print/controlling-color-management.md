@@ -1,15 +1,10 @@
 ---
 title: Controlling Color Management
-author: windows-driver-content
 description: Controlling Color Management
 ms.assetid: cb210b8d-fee1-4904-8c50-f03d2445085e
 keywords:
 - color management WDK print , controlling
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -46,7 +41,7 @@ Color management for a printer can be controlled by an application, the system (
 </tbody>
 </table>
 
- 
+ 
 
 The following topics describe driver support for these color management scenarios:
 
@@ -58,9 +53,9 @@ The following topics describe driver support for these color management scenario
 
 [Color Management of JPEG and PNG Images](color-management-of-jpeg-and-png-images.md)
 
- 
+ 
 
- 
+ 
 
 
 

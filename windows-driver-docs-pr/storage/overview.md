@@ -1,13 +1,8 @@
 ---
 title: Overview
-author: windows-driver-content
 description: Overview
 ms.assetid: e150228e-820f-49ac-bc3f-644e77f3d544
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,9 +17,9 @@ This topic describes the underlying design and architecture of the storage silo 
 
 3.  The Windows shell and any installed third party applications can discover, access, manage, and interact with the device in accordance with the IEEE 1667 specification.
 
- 
+ 
 
- 
+ 
 
 
 

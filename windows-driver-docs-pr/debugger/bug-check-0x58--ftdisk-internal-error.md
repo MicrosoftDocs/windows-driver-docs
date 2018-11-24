@@ -3,11 +3,7 @@ title: Bug Check 0x58 FTDISK_INTERNAL_ERROR
 description: The FTDISK_INTERNAL_ERROR bug check has a value of 0x00000058. This is issued if the system is booted from the wrong copy of a mirrored partition.
 ms.assetid: c8de6a04-740d-415e-bf23-b28da066a225
 keywords: ["Bug Check 0x58 FTDISK_INTERNAL_ERROR", "FTDISK_INTERNAL_ERROR"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The FTDISK\_INTERNAL\_ERROR bug check has a value of 0x00000058. This is issued if the system is booted from the wrong copy of a mirrored partition.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## FTDISK\_INTERNAL\_ERROR Parameters
 
@@ -41,9 +37,9 @@ Resolution
 
 Reboot the system from the shadow partition.
 
- 
+ 
 
- 
+ 
 
 
 

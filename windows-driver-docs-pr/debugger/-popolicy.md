@@ -3,11 +3,7 @@ title: popolicy
 description: The popolicy extension displays the power policy of the target computer.
 ms.assetid: 4917e6e8-982f-41d7-acd8-047e590e1253
 keywords: ["popolicy Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!popolicy** extension displays the power policy of the target computer.
 
-```
+```dbgcmd
 !popolicy [Address]
 ```
 
@@ -51,7 +47,7 @@ Specifies the address of the power policy structure to display. If this is omitt
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -62,7 +58,7 @@ Remarks
 
 Here is an example of this command's output:
 
-```
+```dbgcmd
 kd> !popolicy
 SYSTEM_POWER_POLICY (R.1) @ 0x80164d58
   PowerButton:      Shutdown  Flags: 00000003   Event: 00000000   Query UI
@@ -85,9 +81,9 @@ SYSTEM_POWER_POLICY (R.1) @ 0x80164d58
 
 [Plug and Play and Power Debugger Commands](plug-and-play-and-power-debugger-commands.md)
 
- 
+ 
 
- 
+ 
 
 
 

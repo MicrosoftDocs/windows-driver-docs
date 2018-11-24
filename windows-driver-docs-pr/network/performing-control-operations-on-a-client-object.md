@@ -7,11 +7,7 @@ keywords:
 - WSK WDK networking , control operations
 - control operations WDK Winsock Kernel
 - client objects WDK Winsock Kernel
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,7 +20,7 @@ A WSK application performs client control operations by calling the [**WskContro
 
 The following code example shows how a WSK application can use the [**WSK\_TRANSPORT\_LIST\_QUERY**](https://msdn.microsoft.com/library/windows/hardware/ff571195) client control operation to retrieve a list of available network transports that can be specified when creating a new socket.
 
-```
+```C++
 // Function to retrieve a list of available network transports
 NTSTATUS
   GetTransportList(
@@ -59,9 +55,9 @@ NTSTATUS
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

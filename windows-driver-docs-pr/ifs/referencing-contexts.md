@@ -1,16 +1,11 @@
 ---
 title: Referencing Contexts
-author: windows-driver-content
 description: Referencing Contexts
 ms.assetid: 9ac3aedb-e057-4e19-9de5-709311072b09
 keywords:
 - contexts WDK file system minifilter , referencing
 - referencing contexts
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +21,9 @@ The initial reference to the context is typically released when the object is to
 
 A minifilter driver can add its own reference to a context by calling [**FltReferenceContext**](https://msdn.microsoft.com/library/windows/hardware/ff544291) to increment the context's reference count. This added reference must eventually be removed by calling [**FltReleaseContext**](https://msdn.microsoft.com/library/windows/hardware/ff544314).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,11 +3,7 @@ title: .clients (List Debugging Clients)
 description: The .clients command lists all debugging clients currently connected to the debugging session.
 ms.assetid: a5f760d7-f454-49c5-853d-bcb545c0b05e
 keywords: [".clients (List Debugging Clients) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **.clients** command lists all debugging clients currently connected to the debugging session.
 
-```
+```dbgsyntax
     .clients 
 ```
 
@@ -52,15 +48,15 @@ The **.clients** command lists all debugging clients currently connected to the 
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
 For more details and other commands that can be used while performing remote debugging through the debugger, see [Controlling a Remote Debugging Session](controlling-a-remote-debugging-session.md).
 
- 
+ 
 
- 
+ 
 
 
 

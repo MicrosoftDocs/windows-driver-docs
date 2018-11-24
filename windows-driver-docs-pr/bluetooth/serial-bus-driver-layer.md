@@ -2,11 +2,7 @@
 title: Serial Bus Driver Layer
 description: The serial bus driver is loaded based on a PDO created by ACPI, and can query and access the system resources, such as GPIO and I2C controllers to perform signaling control.
 ms.assetid: E6A3E1CF-C25B-429B-946D-B300BAF3CF9B
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -176,9 +172,9 @@ The following is a simplified flowchart to illustrate a typical sequence and log
 
 The serial bus driver is a function driver (FD) and the power policy owner (PPO) of its layer. Thus, it needs to handle its own power management. After all of its children have entered lower device power states, it can then enter into a lower power state itself. When it’s ready to enter this lower power state, it can cancel any pending I/O requests to the UART controller driver – this will allow the UART driver to also enter a lower power state. However, the UART driver should persist and restore its device settings (including the baud rate) when its power state is later resumed to active.
 
- 
+ 
 
- 
+ 
 
 
 

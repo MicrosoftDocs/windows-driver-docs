@@ -1,6 +1,5 @@
 ---
 title: Plug and Play Bus Enumerators
-author: windows-driver-content
 description: Plug and Play Bus Enumerators
 ms.assetid: 6cfab5a2-7d5c-42c2-86d7-5585e5853a1f
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - bus enumeration WDK print
 - enumeration WDK print
 - ports WDK , Plug and Play for printers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +25,9 @@ The following sections provide information about Plug and Play bus enumeration o
 
 [Printer Connected to an Infrared Port](printer-connected-to-an-infrared-port.md)
 
- 
+ 
 
- 
+ 
 
 
 

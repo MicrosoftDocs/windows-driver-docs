@@ -15,11 +15,7 @@ keywords:
 - migration DLL WDK networking
 - vendor-supplied installation files WDK networking
 - files WDK network component installs
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -69,9 +65,9 @@ A vendor supplies one or more drivers for the device, which typically consists o
 
 An optional text-mode setup information file (txtsetup.oem) may also be supplied by the vendor. If a network device is required to boot the machine, the driver or drivers for the device must be included in the operating system kit or the vendor of such a device must provide a txtsetup.oem file. The txtsetup.oem file contains information that is used by the system setup components to install the device during text-mode setup.
 
- 
+ 
 
- 
+ 
 
 
 

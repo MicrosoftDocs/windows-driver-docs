@@ -9,11 +9,7 @@ api_name:
 - KSNODETYPE_PROLOGIC_DECODER
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,9 +33,9 @@ A KSNODETYPE\_PROLOGIC\_DECODER node should support the following required prope
 
 The KSPROPERTY\_AUDIO\_CHANNEL\_CONFIG property sets and gets the channel configuration of the node's output stream.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,17 +1,12 @@
 ---
 title: Spooler Notification
-author: windows-driver-content
 description: Spooler Notification
 ms.assetid: b5d9b909-f2e4-4773-903e-1dd73b0ca567
 keywords:
 - spooler notification WDK print
 - print spooler notification WDK
 - notification WDK print spooler
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +28,9 @@ The spooler notification mechanism solves the problem that occurs when printing 
 
 [Public Interfaces](public-interfaces.md)
 
- 
+ 
 
- 
+ 
 
 
 

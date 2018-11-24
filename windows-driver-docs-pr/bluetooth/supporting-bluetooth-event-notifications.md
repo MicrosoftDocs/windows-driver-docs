@@ -7,11 +7,7 @@ keywords:
 - event notifications WDK Bluetooth
 - notifications WDK Bluetooth
 - profile drivers WDK Bluetooth
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,7 +38,7 @@ After the profile driver registers the appropriate callback function, the Blueto
 
 **Note**  A profile driver can register the same callback function to send it change notifications about an open channel and about remote devices attempting to connect to it.
 
- 
+ 
 
 For L2CAP connections, the [*L2CAP callback function*](https://msdn.microsoft.com/library/windows/hardware/ff536755) accepts three parameters:
 
@@ -93,7 +89,7 @@ The value passed in the [*L2CAP callback function's*](https://msdn.microsoft.com
 </tbody>
 </table>
 
- 
+ 
 
 For SCO connections, the [*SCO callback function*](https://msdn.microsoft.com/library/windows/hardware/ff536772) accepts three arguments:
 
@@ -128,7 +124,7 @@ The value passed in the [*SCO callback function's*](https://msdn.microsoft.com/l
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="handling_plug_and_play_removal_irps"></span><span id="HANDLING_PLUG_AND_PLAY_REMOVAL_IRPS"></span>Handling Plug and Play Removal IRPs
 
@@ -138,9 +134,9 @@ After the Bluetooth driver stack receives the surprise removal IRP, it will pass
 
 Profile drivers should unregister all servers when processing [**IRP\_MN\_REMOVE\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551738) IRPs. To unregister a SCO server, a profile driver should [build and send](building-and-sending-a-brb.md) a [**BRB\_SCO\_UNREGISTER\_SERVER**](https://msdn.microsoft.com/library/windows/hardware/ff536630) request. To unregister an L2CAP server, a profile driver should build and send a [**BRB\_L2CA\_UNREGISTER\_SERVER**](https://msdn.microsoft.com/library/windows/hardware/ff536619) request.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -9,11 +9,7 @@ keywords:
 - porting drivers WDK networking , protocol drivers
 - network driver porting WDK , protocol drivers
 - porting protocol drivers WD
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -49,9 +45,9 @@ This section also includes the following topics that describe porting a protocol
 
 [Porting Protocol Driver Plug and Play Event Notification Handling to NDIS 6.0](porting-protocol-driver-plug-and-play-event-notification-handling-to-n.md)
 
- 
+ 
 
- 
+ 
 
 
 

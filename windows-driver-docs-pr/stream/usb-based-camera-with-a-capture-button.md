@@ -1,6 +1,5 @@
 ---
 title: USB-Based Camera with a Capture Button
-author: windows-driver-content
 description: USB-Based Camera with a Capture Button
 ms.assetid: abbd824c-1ade-4dbc-8807-e558c444a3ea
 keywords:
@@ -11,11 +10,7 @@ keywords:
 - capturing still images WDK video capture
 - still image capturing WDK video capture
 - cameras WDK video capture
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -48,9 +43,9 @@ Some still pin implementations can only be rendered after the capture pin becaus
 
 For more information about WIA driver development, see the [still imaging technologies](http://go.microsoft.com/fwlink/p/?linkid=8768) website.
 
- 
+ 
 
- 
+ 
 
 
 

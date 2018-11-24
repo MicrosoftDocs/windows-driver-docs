@@ -3,11 +3,7 @@ title: ready
 description: The ready extension displays summary information about each thread in the system in a READY state.
 ms.assetid: 1dc94ceb-7d06-4874-999c-059c86f51ea0
 keywords: ["thread, ready threads", "ready Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!ready** extension displays summary information about each thread in the system in a READY state.
 
-```
+```dbgcmd
 !ready [Flags]
 ```
 
@@ -63,7 +59,7 @@ If this is included without Bit 1 (0x2), this has no effect. If this is included
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -74,9 +70,9 @@ Remarks
 
 The output from this extension is similar to that of [**!thread**](-thread.md), except that only ready threads are displayed, and they are sorted in order of decreasing priority.
 
- 
+ 
 
- 
+ 
 
 
 

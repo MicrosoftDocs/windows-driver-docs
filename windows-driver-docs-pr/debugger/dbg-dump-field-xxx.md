@@ -2,11 +2,7 @@
 title: DBG\_DUMP\_FIELD\_XXX
 description: DBG\_DUMP\_FIELD\_XXX
 ms.assetid: c168c1b7-c4ef-4a70-9060-611b86120635
-ms.author: domars
 ms.date: 12/07/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: ["DBG_DUMP_FIELD_XXX Windows Debugging"]
 topic_type:
 - apiref
@@ -67,7 +63,7 @@ The following flags can be present.
 </tr>
 <tr class="odd">
 <td align="left"><p>DBG_DUMP_FIELD_RETURN_ADDRESS</p></td>
-<td align="left"><p>During a callback or when <strong>Ioctl</strong> returns, the FIELD_INFO.<strong>address</strong> member contains the address of the symbol's member.</p>
+<td align="left"><p>During a callback or when <strong>Ioctl</strong> returns, the FIELD_INFO.<strong>address</strong> member contains the address of the symbol&#39;s member.</p>
 <p>If no address is supplied for the type, FIELD_INFO.<strong>address</strong> contains total offset of the member from the beginning of the type.</p></td>
 </tr>
 <tr class="even">
@@ -85,7 +81,7 @@ The following flags can be present.
 </tbody>
 </table>
 
- 
+ 
 
 In addition, the result of the macro DBG\_DUMP\_RECUR\_LEVEL(*Level*) can be added to the bit-set to specify how deep into structures to recurse. *Level* can be a number between 0 and 15.
 
@@ -114,9 +110,9 @@ Requirements
 
 [**FIELD\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff545316)
 
- 
+ 
 
- 
+ 
 
 
 

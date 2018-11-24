@@ -3,11 +3,7 @@ title: Analyzing Stalled Drivers and Time-Outs
 description: Analyzing Stalled Drivers and Time-Outs
 ms.assetid: c305acba-48b9-4597-925a-8b1ded4f0048
 keywords: ["SCSI Miniport Debugging, hangs and time-outs"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,7 +20,7 @@ When debugging a SCSI miniport driver, the three most common causes for hangs an
 
 If you suspect that the SCSI miniport DPC is not running, use [**!pcr**](-pcr.md) to display the DPC queue for the current processor. If the SCSI port DPC routine is in the DPC queue, place a breakpoint on this routine to determine whether this routine is ever called. Otherwise, use [**!scsikd.scsiext**](-scsikd-scsiext.md) on each device. Consider the following sample output from the **!scsikd.scsiext** extension:
 
-```
+```dbgcmd
 0: kd> !scsikd.scsiext 86353040 
 Common Extension:
    < ..omitted.. >
@@ -51,9 +47,9 @@ Alternatively, if the retry slot and the busy slot are nonzero, a request may no
 
 The [**!devobj**](-devobj.md) extension determines whether the SCSI miniport is waiting for map registers. Use the device object address of the device that is issuing the request as input to **!devobj**. If the current IRQ is nonzero, it is highly probable that the SCSI miniport is waiting for map registers.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,11 +3,7 @@ title: wdfkd.wdfpoolusage
 description: The wdfkd.wdfpoolusage extension displays pool usage information for a specified driver, if the Kernel-Mode Driver Framework (KMDF) verifier is enabled for the driver.
 ms.assetid: 6a77b76b-c970-447c-a8dd-e1ceb7add611
 keywords: ["wdfkd.wdfpoolusage Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!wdfkd.wdfpoolusage** extension displays pool usage information for a specified driver, if the Kernel-Mode Driver Framework (KMDF) verifier is enabled for the driver.
 
-```
+```dbgcmd
 !wdfkd.wdfpoolusage [DriverName [SearchAddress] [Flags]]]
 ```
 
@@ -66,7 +62,7 @@ If you omit the *DriverName* parameter, the default driver is used. You can disp
 
 The following example shows the output from the **!wdfpoolusage** extension when no pool allocation is marked and the *Flags* value is set to 0.
 
-```
+```dbgcmd
 ## kd> !wdfpoolusage wdfrawbusenumtest 0 0 
 -----------------------------------
 ## FxDriverGlobals 83b7af18 pool stats
@@ -82,7 +78,7 @@ pool 82dbae00, Size  512 Tag 'RawB', NonPaged, Caller:  Wdf01000!FxVerifierLock:
 
 The following example shows the output from **!wdfpoolusage** that appears when the value of *Flags* is 1. (Note that the ellipsis (...) on the second line indicates the omission of some output that is the same as that shown in the preceding example.)
 
-```
+```dbgcmd
 kd> !wdfpoolusage wdfrawbusenumtest 0 1 
 . . . 
 100 PeakNonPaged Allocations, 14 PeakPaged Allocations
@@ -93,9 +89,9 @@ NonPaged (0x0)
 Caller:  Wdf01000!FxVerifierLock::AllocateThreadTable+5d
 ```
 
- 
+ 
 
- 
+ 
 
 
 

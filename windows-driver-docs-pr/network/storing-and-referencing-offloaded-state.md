@@ -5,11 +5,7 @@ ms.assetid: 596ec8b5-0a8e-488c-a2d3-162cc440d45f
 keywords:
 - offload state WDK TCP chimney offload , context area
 - context area WDK TCP chimney offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -41,9 +37,9 @@ Each NDIS\_MINIPORT\_OFFLOAD\_BLOCK\_LIST structure contains an **NdisOffloadHan
 
 Although the offload target is not required to store such a handle for a path state object, it should do so anyway. The offload target never references a path state object when it calls an indication function. However, it is possible that a change in the TCP chimney architecture could require the offload target to do so in the future.
 
- 
+ 
 
- 
+ 
 
 
 

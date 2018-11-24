@@ -1,11 +1,7 @@
 ---
 Description: Supporting I/O
 title: Supporting I/O
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -61,9 +57,9 @@ For the sample driver, there is no perceived performance overhead when using UMD
 
 [The WPD Driver Samples](the-wpd-driver-samples.md)
 
- 
+ 
 
- 
+ 
 
 
 

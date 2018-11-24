@@ -2,11 +2,7 @@
 title: KSNODETYPE\_VIDEO\_PROCESSING
 description: KSNODETYPE\_VIDEO\_PROCESSING
 ms.assetid: e297c6c0-e4ff-420c-b22c-5185e97e6a6f
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,9 +15,9 @@ The **IKsTopologyInfo** interface may be used by applications that are communica
 
 See also [Audio Topology Nodes](https://msdn.microsoft.com/library/windows/hardware/ff536219).
 
- 
+ 
 
- 
+ 
 
 
 

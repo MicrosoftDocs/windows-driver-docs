@@ -1,13 +1,8 @@
 ---
 title: OID_GEN_VLAN_ID
-author: windows-driver-content
 description: As a query, the OID_GEN_VLAN_ID OID reports the configured VLAN identifier (ID) for a NIC.
 ms.assetid: 4e024951-a578-4f69-873d-879aecc96e68
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_GEN_VLAN_ID Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -46,7 +41,7 @@ When a transport uses OID\_GEN\_VLAN\_ID in a query, the miniport driver returns
 
 During the miniport driver's [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) function for a particular NIC, the driver initially sets the NIC's VLAN ID to zero. The driver's *MiniportInitializeEx* function then reads the following configuration parameter from the registry, and, if the parameter is present, sets the NIC's VLAN ID to the parameter's value.
 
-```
+```syntax
 VlanId, REG_DWORD
 ```
 
@@ -71,9 +66,9 @@ Requirements
 
 [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389)
 
- 
+ 
 
- 
+ 
 
 
 

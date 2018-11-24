@@ -1,14 +1,9 @@
 ---
 title: Creating Export Drivers
-author: windows-driver-content
 description: Creating Export Drivers
 ms.assetid: 60ce7d0d-0eab-4af6-890a-45ab206816aa
 keywords: ["export drivers WDK kernel", "loading export drivers WDK kernel", "importing export driver functions", "module-definition files WDK kernel", ".def files", "def files", "kernel-mode drivers WDK , export drivers"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,13 +29,13 @@ To build a driver as an export driver you must define several Build utility macr
 
 First, you must assign the appropriate value to the **TARGETTYPE** macro, as follows:
 
-```
+```cpp
 TARGETTYPE=EXPORT_DRIVER
 ```
 
 You must also specify a module-definition (.def) file using the **DLLDEF** macro. For example:
 
-```
+```cpp
 DLLDEF="c:\project\driver.def"
 ```
 
@@ -52,11 +47,10 @@ For instance, the entry point for a kernel-mode DLL is always **DllInitialize**.
 
 You cannot specify the entry point using the **DLLENTRY** macro. 
 
-```
+```cpp
 NTSTATUS DllInitialize(
   _In_ PUNICODE_STRING RegistryPath
 );
-
 ```
 RegistryPath is a pointer to a counted Unicode string specifying the path to the DLL's registry key, **HKEY_LOCAL_MACHINE\CurrentControlSet\Services\DllName**. DLL routines can use this key to store DLL-specific information. The buffer pointed to by RegistryPath is freed once **DllInitialize** exits. Therefore, if the DLL makes use of the key, **DllInitialize** must duplicate the key name. 
 
@@ -67,7 +61,7 @@ The build process generates an export library with a .lib extension, and an expo
 
 To import functions that are exported by an export driver, you should declare the functions using the DECLSPEC\_IMPORT macro, which is defined in Ntdef.h. For example:
 
-```
+```cpp
 DECLSPEC_IMPORT int LoadPrinterDriver (int arg1); 
 ```
 
@@ -77,19 +71,18 @@ In the export driver, the function to be exported should be declared with the DE
 
 ### Loading and Unloading an Export Driver
 
-Export drivers must be installed in the %Windir%\\System32\\Drivers directory. Starting with Windows 2000, the operating system keeps a reference count that indicates the number of times that the export driver's functions have been imported by other drivers. The system decrements this count whenever one of the importing drivers unloads. When the reference count falls to zero, the system unloads the export driver. However, the export driver must contain the standard entry point and unload routines, **DllInitialize** and **DllUnload**, or the operating system will not activate this reference count mechanism.
+Export drivers must be installed in the %Windir%\\System32\\Drivers directory. Starting with Windows 2000, the operating system keeps a reference count that indicates the number of times that the export driver's functions have been imported by other drivers. The system decrements this count whenever one of the importing drivers unloads. When the reference count falls to zero, the system unloads the export driver. However, the export driver must contain the standard entry point and unload routines, **DllInitialize** and **DllUnload**, or the operating system will not activate this reference count mechanism.
 
 The system calls a kernel-mode DLL's DllUnload routine when it unloads the DLL.
 
-```
+```cpp
 NTSTATUS DllUnload(void);
- 
 ```
 Export drivers must provide DllUnload routines. You can use the DllUnload routine to release any resources used by the routines in the DLL. 
 
- 
 
- 
+
+
 
 
 

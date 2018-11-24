@@ -5,11 +5,7 @@ ms.assetid: e6dd12c3-03e3-4f7d-8ad7-2511bf46c4f8
 keywords:
 - add-registry-sections WDK networking , WAN adapter endpoints
 - WAN adapter endpoints WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,18 +19,18 @@ A INF file for a WAN adapter must add a **WanEndpoints** value to the instance k
 
 **Note**   ISDN drivers are deprecated in Windows 8.1, Windows Server 2012 R2, and later.
 
- 
+ 
 
 The following is an example of an *add-registry-section* that adds a **WanEndpoints** value of 2 for a BRI ISDN adapter:
 
-```
+```INF
 [a1.reg]
 HKR,, WanEndpoints, 0x00010001, 2
 ```
 
- 
+ 
 
- 
+ 
 
 
 

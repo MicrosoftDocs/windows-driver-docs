@@ -1,6 +1,5 @@
 ---
 title: WHEA Changes for Windows Server 2008 and Windows Vista SP1
-author: windows-driver-content
 description: WHEA Changes for Windows Server 2008 and Windows Vista SP1
 ms.assetid: fd66ee01-e262-45c2-bced-549192b0eca3
 keywords:
@@ -12,11 +11,7 @@ keywords:
 - Windows Server 2008 WDK WHEA , WHEA changes
 - Windows Vista SP1 WDK WHEA
 - Windows Vista SP1 WDK WHEA , WHEA changes
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -41,9 +36,9 @@ Starting with Windows Server 2008 and Windows Vista SP1, the following changes h
 
 -   In addition to WHEA hardware error event processing applications, [WHEA management applications](whea-management-applications.md) are now supported in Windows Server 2008, Windows Vista SP1 and later versions of Windows. Through a WMI interface that is provided by WHEA, user-mode applications can perform WHEA management operations, such as enabling or disabling an error source and injecting hardware errors for testing purposes.
 
- 
+ 
 
- 
+ 
 
 
 

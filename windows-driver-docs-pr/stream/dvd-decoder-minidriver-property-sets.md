@@ -2,11 +2,7 @@
 title: DVD Decoder Minidriver Property Sets
 description: DVD Decoder Minidriver Property Sets
 ms.assetid: c24685bd-ea20-4cc2-b419-feb1fa2ea03e
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,10 +16,10 @@ This section describes DVD decoder-specific property sets that are available for
 
 The reference page for each property contains a table with the column headings that are shown below.
 
+
 | Get | Set | Target | Property descriptor type | Property value type |
 |-----|-----|--------|--------------------------|---------------------|
-
- 
+|     |     |        |                          |                     |
 
 These headings have the following meanings:
 
@@ -41,7 +37,7 @@ These headings have the following meanings:
 
 -   **Property descriptor type**
 
-    The property descriptor specifies the property and the operation to perform on that property. The descriptor always begins with a [**KSPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff564262) structure.
+    The property descriptor specifies the property and the operation to perform on that property. The descriptor always begins with a [**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier) structure.
 
 -   **Property value type**
 
@@ -77,9 +73,9 @@ The following property sets are defined for DVD decoder minidrivers:
 
 [KSPROPSETID\_Wave](kspropsetid-wave.md)
 
- 
+ 
 
- 
+ 
 
 
 

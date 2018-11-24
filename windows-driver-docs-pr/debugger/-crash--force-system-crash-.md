@@ -3,11 +3,7 @@ title: .crash (Force System Crash)
 description: The .crash command causes the target computer to issue a bug check.
 ms.assetid: 625d174d-7011-4b15-aad7-1b39aa3742a4
 keywords: [".crash (Force System Crash) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **.crash** command causes the target computer to issue a bug check.
 
-```
+```dbgsyntax
 .crash
 ```
 
@@ -52,7 +48,7 @@ The **.crash** command causes the target computer to issue a bug check.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -67,9 +63,9 @@ If you are already in a bug check handler, do not use **.crash**. Use [**g (Go)*
 
 A kernel-mode dump file will be written if crash dumps have been enabled. See [Creating a Kernel-Mode Dump File](creating-a-kernel-mode-dump-file.md) for details.
 
- 
+ 
 
- 
+ 
 
 
 

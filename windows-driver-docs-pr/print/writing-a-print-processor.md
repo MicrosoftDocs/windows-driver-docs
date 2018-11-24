@@ -1,6 +1,5 @@
 ---
 title: Writing a Print Processor
-author: windows-driver-content
 description: Writing a Print Processor
 ms.assetid: 2443ec67-ef5d-46eb-b00a-deafad9abc69
 keywords:
@@ -10,11 +9,7 @@ keywords:
 - print processors WDK
 - processors WDK print
 - writing print processors
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,9 +33,9 @@ This section provides the following topics:
 
 [Installing a Print Processor](installing-a-print-processor.md)
 
- 
+ 
 
- 
+ 
 
 
 

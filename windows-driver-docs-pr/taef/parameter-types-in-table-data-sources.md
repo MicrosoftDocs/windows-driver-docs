@@ -2,11 +2,7 @@
 title: Parameter Types in Table Data Sources
 description: Parameter Types in Table Data Sources
 ms.assetid: 034F171E-716F-4795-9B07-46A109052227
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -80,7 +76,7 @@ WEX::Common::String
 string
 "XML"
 VT\_BSTR
- 
+ 
 
 NOTE: The "String", "int", "bool", "double", "\_\_int64", "unsigned \_\_int64", and "XML" types can be used in all, managed, native or script tests.
 
@@ -88,9 +84,9 @@ By default, if the type is not specified, the type is assumed to be "String". Se
 
 To specify array type in conjuction with any types specified above, just append "\[\]" to the end of the type.
 
- 
+ 
 
- 
+ 
 
 
 

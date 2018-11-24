@@ -1,6 +1,5 @@
 ---
 title: Removing IEEE 1394 Virtual Devices
-author: windows-driver-content
 description: Removing IEEE 1394 Virtual Devices
 ms.assetid: ea2d4b9e-7774-42dc-98dd-d95298012d72
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - hardware emulation drivers WDK IEEE 1394 bus
 - virtual devices WDK IEEE 1394 bus
 - removing virtual devices
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -47,9 +42,9 @@ The first method (IRP\_MN\_REMOVE\_DEVICE) will remove the device, but if the de
 
 Note that an upper-level driver or user-mode service can determine, through the usual PnP mechanism, which virtual devices are present. This mechanism uses the class GUID that is provided in the virtual driver's INF file.
 
- 
+ 
 
- 
+ 
 
 
 

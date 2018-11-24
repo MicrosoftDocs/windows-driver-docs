@@ -1,6 +1,5 @@
 ---
 title: DMA Transactions and DMA Transfers
-author: windows-driver-content
 description: DMA Transactions and DMA Transfers
 ms.assetid: afcbe756-1a45-410b-8260-2c2c611e6a70
 keywords:
@@ -12,11 +11,7 @@ keywords:
 - DMA transfers WDK KMDF
 - DMA transactions WDK KMDF , about DMA transactions
 - DMA transfers WDK KMDF , about DMA transfers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -40,9 +35,9 @@ A single DMA transaction always consists of at least one DMA transfer, but a tra
 
 When a framework-based driver receives an I/O request, the driver typically creates a single DMA transaction object to represent the request. When the framework begins servicing the transaction, it determines if the device can handle the entire transaction in a single transfer. If the transaction is too large, the framework breaks the transaction into multiple transfers.
 
- 
+ 
 
- 
+ 
 
 
 

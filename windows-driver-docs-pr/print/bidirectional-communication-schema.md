@@ -1,6 +1,5 @@
 ---
 title: Bidirectional Communication Schema
-author: windows-driver-content
 description: Bidirectional Communication Schema
 ms.assetid: b15b1aff-623e-4159-ab0f-ce386a1377eb
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - bidi communication schema WDK print
 - property WDK bidi communication
 - value WDK bidi communication
-ms.author: windowsdriverdev
 ms.date: 06/11/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,20 +22,10 @@ The bidirectional (bidi) communication schema is a hierarchy of printer attribut
 
 For example, the following query can be used to access the *Installed* value under the Staple property.
 
-```
-"\Printer.Finishing.Staple:Installed"
-```
+`\Printer.Finishing.Staple:Installed`
 
 The bidi schema can be extended in by creating a bidi extension file. This file is an XML file that defines new schemas specific to a particular driver. The schemas in a bidi extension file are a subset of the standard print schema and are defined by using constructs of the XSD file (Bidi Extension Framework).
 
 For a complete listing of the schema properties and values, see [Bidirectional Communication Schema Hierarchy](bidirectional-communication-schema-hierarchy.md). To learn how to construct queries, see [Constructing a Bidi Communication Schema Query](constructing-a-bidi-communication-schema-query.md). For details of the properties and values in the Bidi Communication Schema, see [Bidi Communication Schema Reference](bidi-communications-schema-reference.md).
 
 A convenient way to install a bidi extension file is to make the file a *dependent file* of the printer driver. For more information about dependent files, see [Printer INF File Entries](printer-inf-file-entries.md).
-
- 
-
- 
-
-
-
-

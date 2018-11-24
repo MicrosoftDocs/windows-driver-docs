@@ -1,14 +1,9 @@
 ---
 title: Wait/Wake IRP Requests
-author: windows-driver-content
 description: Wait/Wake IRP Requests
 ms.assetid: c67d6dcb-f4a9-4df0-abb8-9d84fc44ec40
 keywords: ["sending wait/wake IRPs", "wake-up signal enabled WDK kernel", "wait/wake IRPs WDK power management , sending"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +25,9 @@ If no errors occur, **PoRequestPowerIrp** returns STATUS\_PENDING. This status m
 
 A wait/wake IRP does not change the power state of the system or of a device. It simply enables a device's wake-up signal. The IRP remains pending until an external signal causes the system or device to awaken.
 
- 
+ 
 
- 
+ 
 
 
 

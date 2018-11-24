@@ -1,16 +1,11 @@
 ---
 title: Configuring a Port
-author: windows-driver-content
 description: Configuring a Port
 ms.assetid: f5996e94-aa48-4aa0-82f5-331a57d2fb6b
 keywords:
 - port management WDK print , configuring ports
 - ConfigurePort
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +29,9 @@ The port monitor UI DLL's [**ConfigurePortUI**](https://msdn.microsoft.com/libra
 
 For more information about these operations, see the description of [**ConfigurePortUI**](https://msdn.microsoft.com/library/windows/hardware/ff546290). Also see [Storing Port Configuration Information](storing-port-configuration-information.md).
 
- 
+ 
 
- 
+ 
 
 
 

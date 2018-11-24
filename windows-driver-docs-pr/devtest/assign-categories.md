@@ -4,11 +4,7 @@ description: Assign categories in the Device Metadata Authoring Wizard
 ms.assetid: B96C46A7-A276-4410-83D1-BCE4CC8D2807
 keywords:
 - Assign categories in the Device Metadata Authoring Wizard
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,13 +19,13 @@ Categories determine how devices are grouped.
 2.  Under **Available categories**, select the categories that you want to associate with the device.
     **Note**  A device can belong to multiple categories. Select all that apply.
 
-     
+     
 
 3.  Under **Primary category**, select the category that most people use to identify the device.
 
- 
+ 
 
- 
+ 
 
 
 

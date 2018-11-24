@@ -3,11 +3,7 @@ title: Other Data Spaces
 description: Other Data Spaces
 ms.assetid: f676a478-c02a-4400-8173-a1b3103c6c1b
 keywords: ["Debugger Engine API, memory, data spaces"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -39,11 +35,11 @@ System handles for thread and process system objects can be obtained by using th
 
 **Note**   In kernel mode, the process and thread handles are artificial handles. They are not system handles.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

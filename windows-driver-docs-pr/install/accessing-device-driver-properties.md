@@ -2,11 +2,7 @@
 title: Accessing Device Driver Properties
 description: Accessing Device Driver Properties
 ms.assetid: 433ad114-46aa-470b-b529-e6b6fb7f6bd7
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -49,9 +45,9 @@ To access device driver properties on Windows Server 2003, Windows XP, and Windo
 
 On Windows Server 2003, Windows XP, and Windows 2000, you can retrieve the rank of a driver that is currently installed for a device by calling [**SetupDiGetDriverInstallParams**](https://msdn.microsoft.com/library/windows/hardware/ff551978). **SetupDiGetDriverInstallParams** retrieves a pointer to an [**SP_DRVINSTALL_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff553290) structure for the driver in the output parameter *DriverInstallParams*. The **Rank** member of the retrieved SP_DRVINSTALL_PARAMS structure contains the driver rank.
 
- 
+ 
 
- 
+ 
 
 
 

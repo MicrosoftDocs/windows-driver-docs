@@ -1,14 +1,9 @@
 ---
 title: Logging Errors
-author: windows-driver-content
 description: Logging Errors
 ms.assetid: 02d77bdf-f94d-47c6-8824-d5643cf4a89c
 keywords: ["errors WDK kernel", "logs WDK kernel", "logging errors WDK kernel", "log files WDK kernel", "messages WDK error logs"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +25,9 @@ This section includes the following topics:
 
 [Registering as a Source of Error Messages](registering-as-a-source-of-error-messages.md)
 
- 
+ 
 
- 
+ 
 
 
 

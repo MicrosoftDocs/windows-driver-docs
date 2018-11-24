@@ -4,11 +4,7 @@ description: Summary of Changes Required to Port a CoNDIS Driver to CoNDIS 6.0
 ms.assetid: 151bdcf8-5f7c-494d-a0a2-d1fac997d82e
 keywords:
 - porting CoNDIS drivers WDK networking , required changes
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -74,9 +70,9 @@ To run in the CoNDIS 6.0 environment, CoNDIS 5.*x* drivers must be modified in t
 <a href="" id="binding-and-adapter-states"></a>**Binding and Adapter States**  
 -   Include NDIS 6.0 pause and restart functionality. For more information about pause and restart, see [Driver Stack Management](driver-stack-management.md).
 
- 
+ 
 
- 
+ 
 
 
 

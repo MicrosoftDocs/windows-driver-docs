@@ -8,11 +8,7 @@ keywords:
 - offload service porting WDK networking , filter drivers
 - porting task offload services WDK networking , filter drivers
 - filter drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,9 +28,9 @@ NDIS 6.0 filter drivers can modify the task offload services that an underlying 
 
 For general information about NDIS 6.0 filter drivers, see [Introduction to NDIS Filter Drivers](introduction-to-ndis-filter-drivers.md).
 
- 
+ 
 
- 
+ 
 
 
 

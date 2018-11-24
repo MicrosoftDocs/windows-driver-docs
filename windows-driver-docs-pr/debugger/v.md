@@ -3,11 +3,7 @@ title: V (Windows Debugger Glossary)
 description: Glossary page - V
 Robots: noindex, nofollow
 ms.assetid: bbafe8f0-f77e-4fb4-ad28-7e57f866869a
-ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,9 +16,9 @@ In kernel-mode debugging the debugger engine creates a single *virtual process* 
 <span id="virtual_thread"></span><span id="VIRTUAL_THREAD"></span>**virtual thread**  
 In kernel-mode debugging the debugger engine creates a *virtual thread* for each processor in the target computer.
 
- 
+ 
 
- 
+ 
 
 
 

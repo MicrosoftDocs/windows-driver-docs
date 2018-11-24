@@ -12,6 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # CdRomClassGuid
@@ -49,9 +50,9 @@ Requirements
 
 [**GUID_DEVINTERFACE_CDROM**](guid-devinterface-cdrom.md)
 
- 
+ 
 
- 
+ 
 
 
 

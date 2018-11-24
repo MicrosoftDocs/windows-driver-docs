@@ -1,13 +1,8 @@
 ---
 title: Attaching a Debugger to the Print Filter Pipeline Service
-author: windows-driver-content
 description: Attaching a Debugger to the Print Filter Pipeline Service
 ms.assetid: d2e032f8-bdce-415a-8cf4-d9816b7c9de5
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -48,9 +43,9 @@ After setting the **PipelineHostTimeout** value, use the following procedure to 
 
 The filter host process should break into the debugger at the first breakpoint or the first verifier stop, whichever comes first. From there, you can step through code, examine variables, and so on.
 
- 
+ 
 
- 
+ 
 
 
 

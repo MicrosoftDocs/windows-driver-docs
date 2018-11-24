@@ -1,14 +1,9 @@
 ---
 title: Callback Objects
-author: windows-driver-content
 description: Callback Objects
 ms.assetid: d6ccb064-5936-4996-a5cd-795803958b5d
 keywords: ["synchronization WDK kernel , callback objects", "callback objects WDK kernel", "objects WDK callback objects", "kernel callback mechanism WDK"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +29,9 @@ This section contains the following topics:
 
 [Using a System-Defined Callback Object](using-a-system-defined-callback-object.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: CC Category
-author: windows-driver-content
 description: CC Category
 ms.assetid: 742955f3-85a2-4627-b1b1-0bd85cdb1e77
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - CC category WDK video capture
 - PINNAME_VIDEO_CC
 - closed-captioning category WDK video capture
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -82,11 +77,11 @@ When specifying **PINNAME\_VIDEO\_CC** pins, use the information listed in the f
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

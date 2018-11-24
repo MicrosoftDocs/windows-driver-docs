@@ -4,11 +4,7 @@ description: Analog Audio Stream Data Range
 ms.assetid: e4503ace-1e96-401e-b410-18ee6b07a37b
 keywords:
 - analog audio WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,7 +16,7 @@ ms.localizationpriority: medium
 
 This example uses a [**KSDATARANGE**](https://msdn.microsoft.com/library/windows/hardware/ff561658) structure to describe the data range for an analog audio stream.
 
-```
+```cpp
   DataRange.FormatSize  = sizeof(KSDATARANGE);
   DataRange.Flags       = 0;
   DataRange.SampleSize  = 0;
@@ -32,9 +28,9 @@ This example uses a [**KSDATARANGE**](https://msdn.microsoft.com/library/windows
 
 Typically, a miniport driver uses this type of data range to describe the analog signal passing through a [*bridge pin*](https://msdn.microsoft.com/library/windows/hardware/ff556272#wdkgloss_bridge_pin), which represents a hardwired connection on an audio adapter card. For more information about bridge pins, see [Audio Filter Graphs](audio-filter-graphs.md). Also, see the code example in [Exposing Filter Topology](exposing-filter-topology.md).
 
- 
+ 
 
- 
+ 
 
 
 

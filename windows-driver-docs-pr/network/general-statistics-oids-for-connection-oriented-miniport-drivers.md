@@ -1,15 +1,10 @@
 ---
 title: General statistics OIDs for connection-oriented miniport drivers
-author: windows-driver-content
 description: This topic describes general statistics OIDs for connection-oriented objects.
 ms.assetid: 1967ebb9-0cc9-46ca-b9db-fc505f41c38e
 keywords:
 - General statistics OIDs connection-oriented miniport drivers
-ms.author: windowsdriverdev
 ms.date: 11/02/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

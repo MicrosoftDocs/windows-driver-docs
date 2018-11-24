@@ -1,13 +1,8 @@
 ---
 title: Device Maintenance
-author: windows-driver-content
 description: A device maintenance feature has been introduced in Windows 8.1 and later versions of Windows.
 ms.assetid: 310E92A9-F751-4346-9B2D-0578A136AD20
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -44,7 +39,7 @@ After the operation is completed, the callback object is invoked on the IPrinter
 
 The following C# snippet outlines how to issue a device maintenance task from a UWP device app.
 
-```CSharp
+```csharp
 //
 // Declare a global constant that will be used
 // to determine whether method calls were successful
@@ -82,7 +77,7 @@ public class BidiSetResultCallback :
     {
         if (S_OK == hr)
         {
-            // parse and interpret &#39;bidiResponse&#39;
+            // parse and interpret 'bidiResponse'
         }
     }
 } 

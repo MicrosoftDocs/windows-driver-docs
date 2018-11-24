@@ -9,11 +9,7 @@ api_name:
 - wscn Time
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **Time** element specifies the time at which a condition occurred.
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:Time>
   text
 </wscn:Time>
@@ -60,10 +56,10 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ConditionHistoryEntry</strong>](conditionhistoryentry.md)</p></td>
+<td><p><a href="conditionhistoryentry.md" data-raw-source="[&lt;strong&gt;ConditionHistoryEntry&lt;/strong&gt;](conditionhistoryentry.md)"><strong>ConditionHistoryEntry</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>DeviceCondition</strong>](devicecondition.md)</p></td>
+<td><p><a href="devicecondition.md" data-raw-source="[&lt;strong&gt;DeviceCondition&lt;/strong&gt;](devicecondition.md)"><strong>DeviceCondition</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -73,16 +69,16 @@ Remarks
 
 The specified **Time** is according to the internal clock of the scanner.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ConditionHistoryEntry**](conditionhistoryentry.md)
 
 [**DeviceCondition**](devicecondition.md)
 
- 
+ 
 
- 
+ 
 
 
 

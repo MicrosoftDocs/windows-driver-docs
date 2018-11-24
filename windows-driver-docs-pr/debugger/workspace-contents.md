@@ -3,11 +3,7 @@ title: Workspace Contents
 description: Workspace Contents
 ms.assetid: aa0a3bab-2907-4bcf-9a48-5669c423447a
 keywords: ["workspaces, contents of workspaces", "workspaces, automatically starting a session"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -93,9 +89,9 @@ Breakpoints that you specify by a symbol expression, by a line number, by a nume
 
 If you are debugging multiple user-mode processes, only breakpoints that are associated with process zero are saved.
 
- 
+ 
 
- 
+ 
 
 
 

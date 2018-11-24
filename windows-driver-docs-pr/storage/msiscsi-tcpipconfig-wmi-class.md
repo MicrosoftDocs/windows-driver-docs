@@ -3,6 +3,7 @@ title: MSiSCSI\_TCPIPConfig WMI Class
 description: MSiSCSI\_TCPIPConfig WMI Class
 ms.assetid: 57451576-a900-4eaa-b229-bda79a81d014
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MSiSCSI\_TCPIPConfig WMI Class
@@ -19,7 +20,7 @@ Because the MSiSCSI\_TCPIPConfig class is associated with a particular instance 
 
 The MSiSCSI\_TCPIPConfig class is defined in *Config.mof*.
 
-```
+```cpp
 class MSiSCSI_TCPIPConfig {
   [key] string  InstanceName;
   boolean  Active;
@@ -60,9 +61,9 @@ class MSiSCSI_TCPIPConfig {
 
 When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_TCPIPConfig**](https://msdn.microsoft.com/library/windows/hardware/ff563149) data structure.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -7,11 +7,7 @@ keywords:
 - point sprites WDK DirectX 8.0
 - size WDK point sprites
 - point size WDK DirectX 8.0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,9 +19,9 @@ ms.localizationpriority: medium
 
 DirectX 8.0 introduces support for point sprites. A point sprite is an extension to basic point rendering that allows the size of the point to be specified, either by a render state or by a vertex component. When accelerated, the point sprites are rendered in hardware as a screen space quadrilateral formed of two triangles, and render states such as textures and blending are used.
 
- 
+ 
 
- 
+ 
 
 
 

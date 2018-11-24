@@ -4,11 +4,7 @@ description: Defining the ProcAmp Control Device Class
 ms.assetid: 382f5ecf-ce87-4100-adc7-7006cc7dc5ed
 keywords:
 - ProcAmp WDK DirectX VA , defining device class
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,7 +16,7 @@ ms.localizationpriority: medium
 
 Use the following example code to define the ProcAmp control device class:
 
-```
+```cpp
 // ProcAmp control device class.
 struct DXVA_ProcAmpControlDeviceClass : public DXVA_DeviceBaseClass
 {
@@ -40,9 +36,9 @@ struct DXVA_ProcAmpControlDeviceClass : public DXVA_DeviceBaseClass
 };
 ```
 
- 
+ 
 
- 
+ 
 
 
 

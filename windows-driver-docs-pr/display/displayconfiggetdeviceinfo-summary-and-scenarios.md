@@ -11,11 +11,7 @@ keywords:
 - CCD concepts WDK Windows Server 2008 R2 display , DisplayConfigGetDeviceInfo
 - DisplayConfigGetDeviceInfo WDK Windows 7 display
 - DisplayConfigGetDeviceInfo WDK Windows Server 2008 R2 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -40,9 +36,9 @@ The caller can use [**DisplayConfigGetDeviceInfo**](https://msdn.microsoft.com/l
 
 -   The display control panel applet calls [**DisplayConfigGetDeviceInfo**](https://msdn.microsoft.com/library/windows/hardware/ff553903) to obtain the native resolution of each connected monitor so the resolution can be highlighted in the user interface.
 
- 
+ 
 
- 
+ 
 
 
 

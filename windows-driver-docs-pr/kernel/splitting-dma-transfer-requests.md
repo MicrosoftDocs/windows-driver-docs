@@ -1,14 +1,9 @@
 ---
 title: Splitting DMA Transfer Requests
-author: windows-driver-content
 description: Splitting DMA Transfer Requests
 ms.assetid: 7d5b1649-1021-4876-a9c0-e6b156785ef2
 keywords: ["I/O WDK kernel , splitting transfer requests", "splitting transfer requests", "transfer request splitting WDK kernel", "data transfers WDK kernel , splitting requests", "transferring data WDK kernel , splitting requests"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -72,9 +67,9 @@ A monolithic driver (that is, a driver not part of a class/port pair) for a DMA 
 
 If a transfer request is too large for the underlying device driver to handle, a higher-level driver can call [**MmGetMdlVirtualAddress**](https://msdn.microsoft.com/library/windows/hardware/ff554539) and [**IoBuildPartialMdl**](https://msdn.microsoft.com/library/windows/hardware/ff548324), then set up a sequence of partial-transfer IRPs for underlying device drivers.
 
- 
+ 
 
- 
+ 
 
 
 

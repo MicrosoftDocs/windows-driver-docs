@@ -2,11 +2,7 @@
 title: Input Buffer Order Example 2
 description: Input Buffer Order Example 2
 ms.assetid: e480bd93-4ae2-4a6c-b669-69c44c0154d0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -63,11 +59,11 @@ The VMR initiates a call to the driver's [**DeinterlaceBltEx**](https://msdn.mic
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

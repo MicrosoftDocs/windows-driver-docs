@@ -5,11 +5,7 @@ ms.assetid: bf35a034-1bb9-4106-aafe-7692d0ff92d0
 keywords:
 - battery miniclass drivers WDK , battery class driver interaction
 - battery class drivers WDK , battery miniclass driver interaction
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +25,9 @@ The class driver receives information and status from all the miniclass drivers 
 
 The class driver is designed to handle the superset of possible battery information and conditions, including temperature, changes in capacity, and so forth; individual batteries vary in their ability to detect and report all these conditions. Each miniclass driver should be designed to manage its specific battery type and must respond appropriately to the class driver when asked for any information that the battery does not support.
 
- 
+ 
 
- 
+ 
 
 
 

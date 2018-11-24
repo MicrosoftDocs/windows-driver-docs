@@ -5,11 +5,7 @@ ms.assetid: 49224987-ed46-4631-a47b-70cd855cfa40
 keywords:
 - SAN sockets WDK , closing
 - closing SAN sockets
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +27,9 @@ As long as a SAN service provider performs the preceding procedure to close a SA
 
 To prevent race conditions between a SAN service provider and the switch initiating socket closures, the SAN service provider should never release data structures related to a SAN socket until the switch calls **WSPCloseSocket**.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,8 @@
 title: Get a code signing certificate
 description: Get a code signing certificate
 ms.assetid: 6CF4111A-C645-40F5-8D45-55F46B3C0740
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
@@ -76,11 +73,11 @@ Before you can establish a Hardware Dev Center hardware dashboard account, you n
 </tbody>
 </table>
 
- 
+ 
 > [!NOTE] 
 > The Hardware Dev Center dashboard will enforce mandatory EV certificates for submissions later this year.
 
- 
+ 
 
 ### <span id="standardcode"></span><span id="STANDARDCODE"></span>Code signing certificates for Hardware Dev Center Dashboard
 
@@ -161,7 +158,7 @@ Once the certificate authority has verified your contact information and your ce
 **Note**  
 You must use the same computer and browser to retrieve your certificate.
 
- 
+ 
 
 ## <span id="Next_steps"></span><span id="next_steps"></span><span id="NEXT_STEPS"></span>Next steps
 
@@ -180,7 +177,7 @@ This section provides answers to frequently asked questions about code signing f
 
 **HLK Tested and Dashboard Signed Drivers**
 
--   A dashboard signed driver that has passed the HLK tests will work on Windows Vista through Windows 10, including Windows Server editions. This is the recommended method for driver signing, because it allows a single process for all OS versions. In addition, HLK tested drivers demonstrate that a manufacturer has rigorously tested their hardware to meet all of Microsoft's requirements with regards to reliability, security, power efficiency, serviceability, and performance, so as to provide a great Windows experience. This includes compliance with industry standards and adherence with Microsoft specifications for technology-specific features, helping to ensure correct installation, deployment, connectivity and interoperability. For more information about the HLK, see [Windows Hardware Compatibility Program](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/index).
+-   A dashboard signed driver that has passed the HLK tests will work on Windows Vista through Windows 10, including Windows Server editions. This is the recommended method for driver signing, because it allows a single process for all OS versions. In addition, HLK tested drivers demonstrate that a manufacturer has rigorously tested their hardware to meet all of Microsoft's requirements with regards to reliability, security, power efficiency, serviceability, and performance, so as to provide a great Windows experience. This includes compliance with industry standards and adherence with Microsoft specifications for technology-specific features, helping to ensure correct installation, deployment, connectivity and interoperability. For more information about the HLK, see [Windows Hardware Compatibility Program](https://docs.microsoft.com/windows-hardware/design/compatibility/index).
 
 **Windows 10 Desktop Attestation Signing**
 
@@ -195,7 +192,7 @@ This section provides answers to frequently asked questions about code signing f
 
 **Cross-Signing and SHA-256 Certificates**
 
-Cross-signing describes a process where a driver is signed with a certificate issued by a Certificate Authority (CA) that is trusted by Microsoft. For more information, see [Cross-Certificates Overview](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/cross-certificates-for-kernel-mode-code-signing).
+Cross-signing describes a process where a driver is signed with a certificate issued by a Certificate Authority (CA) that is trusted by Microsoft. For more information, see [Cross-Certificates Overview](https://docs.microsoft.com/windows-hardware/drivers/install/cross-certificates-for-kernel-mode-code-signing).
 
 -   Windows 8 and later versions support SHA-256.
 -   Windows 7, if patched, supports SHA-256. If you need to support unpatched devices that run Windows 7, you need to either cross-sign with a SHA-1 certificate or submit to the Dashboard for signing. Otherwise, you can either cross-sign with SHA-1 or SHA-2 certificate or create an HLK/HCK submission for signing.
@@ -242,13 +239,13 @@ This table summarizes the driver signing requirements for Windows.
 | Windows IoT Enterprise- DG Enabled | \*Configuration Dependent      | \*Configuration Dependent          | \*Configuration Dependent                                                      |
 | Windows IoT Core(1)                | Yes (Not Required)             | Yes (Not Required)                 | Yes (Cross signing will also work for certificates issued after July 29, 2015) |
 
- 
+ 
 
 \*Configuration Dependent –With Windows 10 Enterprise edition, organizations can use Device Guard to define custom driver signing requirements. For more information about Device Guard, see [Device Guard certification and compliance](https://technet.microsoft.com/library/mt219733.aspx).
 
-(1) Driver signing is required for manufacturers building retail products (i.e. for a non-development purpose) with IoT Core. For a list of approved Certificate Authorities (CAs), see [Cross-Certificates for Kernel Mode Code Signing](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/cross-certificates-for-kernel-mode-code-signing). Note that if UEFI Secure Boot is enabled, then drivers must be signed.
+(1) Driver signing is required for manufacturers building retail products (i.e. for a non-development purpose) with IoT Core. For a list of approved Certificate Authorities (CAs), see [Cross-Certificates for Kernel Mode Code Signing](https://docs.microsoft.com/windows-hardware/drivers/install/cross-certificates-for-kernel-mode-code-signing). Note that if UEFI Secure Boot is enabled, then drivers must be signed.
 
- 
+ 
 
- 
+ 
 

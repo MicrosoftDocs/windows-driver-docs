@@ -3,6 +3,7 @@ title: SetCHAPSharedSecret
 description: SetCHAPSharedSecret
 ms.assetid: d1f1d6f2-154e-4e41-8ebf-4071de4ceafe
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # SetCHAPSharedSecret
@@ -20,9 +21,9 @@ The **SetCHAPSharedSecret** WMI method belongs to the unpublished [MSiSCSI\_Oper
 
 Miniport drivers that implement the MSiSCSI\_Operations WMI class are not required to support **SetCHAPSharedSecret**.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: WDF Driver Call Tracer (WdfCallTracer)
 description: WDF Driver Call Tracer (WdfCallTracer)
 ms.assetid: 67ad4b5e-9117-435e-bd81-90069a806d3c
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -66,9 +62,9 @@ Now you are ready to register the driver and enable tracing so that you can view
 
 You should now see driver communication in the TraceView application.
 
- 
+ 
 
- 
+ 
 
 
 

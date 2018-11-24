@@ -1,5 +1,5 @@
 ---
-title: FLT\_PARAMETERS for IRP\_MJ\_SYSTEM\_CONTROL union
+title: FLT_PARAMETERS for IRP_MJ_SYSTEM_CONTROL union
 description: Union component used when the MajorFunction field of the FLT\_IO\_PARAMETER\_BLOCK structure for the operation is IRP\_MJ\_SYSTEM\_CONTROL.
 ms.assetid: 6f1c34b2-1c79-4372-8b94-afe4b50294d5
 keywords: ["FLT_PARAMETERS for IRP_MJ_SYSTEM_CONTROL union Installable File System Drivers", "FLT_PARAMETERS union Installable File System Drivers", "PFLT_PARAMETERS union pointer Installable File System Drivers"]
@@ -11,11 +11,7 @@ api_location:
 - fltkernel.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -142,9 +138,9 @@ Requirements
 
 [**IRP\_MN\_REGINFO\_EX**](https://msdn.microsoft.com/library/windows/hardware/ff551734)
 
- 
+ 
 
- 
+ 
 
 
 

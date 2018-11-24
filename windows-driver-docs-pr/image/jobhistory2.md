@@ -9,11 +9,7 @@ api_name:
 - wscn JobHistory
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The optional **JobHistory** element contains information about scan jobs that ha
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:JobHistory>
   child elements
 </wscn:JobHistory>
@@ -50,10 +46,10 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>Job</strong>](job.md)</p></td>
+<td><p><a href="job.md" data-raw-source="[&lt;strong&gt;Job&lt;/strong&gt;](job.md)"><strong>Job</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>JobSummary</strong>](jobsummary.md)</p></td>
+<td><p><a href="jobsummary.md" data-raw-source="[&lt;strong&gt;JobSummary&lt;/strong&gt;](jobsummary.md)"><strong>JobSummary</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -72,10 +68,10 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>GetJobHistoryResponse</strong>](getjobhistoryresponse.md)</p></td>
+<td><p><a href="getjobhistoryresponse.md" data-raw-source="[&lt;strong&gt;GetJobHistoryResponse&lt;/strong&gt;](getjobhistoryresponse.md)"><strong>GetJobHistoryResponse</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>JobTable</strong>](jobtable.md)</p></td>
+<td><p><a href="jobtable.md" data-raw-source="[&lt;strong&gt;JobTable&lt;/strong&gt;](jobtable.md)"><strong>JobTable</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -87,7 +83,7 @@ The **JobHistory** element contains a subset of the most recent jobs that have f
 
 A client can ask for job history through the [**GetJobHistoryRequest**](getjobhistoryrequest.md) operation element. The WSD Scan Service returns this history in a [**GetJobHistoryResponse**](getjobhistoryresponse.md) operation element.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**GetJobHistoryRequest**](getjobhistoryrequest.md)
@@ -100,9 +96,9 @@ A client can ask for job history through the [**GetJobHistoryRequest**](getjobhi
 
 [**JobTable**](jobtable.md)
 
- 
+ 
 
- 
+ 
 
 
 

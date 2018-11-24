@@ -11,11 +11,7 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -50,13 +46,13 @@ The following table summarizes the features of this property.
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p>[<strong>KSRTAUDIO_NOTIFICATION_EVENT_PROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537499)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537499" data-raw-source="[&lt;strong&gt;KSRTAUDIO_NOTIFICATION_EVENT_PROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537499)"><strong>KSRTAUDIO_NOTIFICATION_EVENT_PROPERTY</strong></a></p></td>
 <td align="left"><p><strong>NULL</strong></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property descriptor (instance data) consists of a KSRTAUDIO\_NOTIFICATION\_EVENT\_PROPERTY structure that contains a [**KSPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff564262) structure along with a user-mode event handle.
 
@@ -93,7 +89,7 @@ A KSPROPERTY\_ RTAUDIO\_UNREGISTER\_NOTIFICATION\_EVENT property request returns
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -135,9 +131,9 @@ Requirements
 
 [**KSPROPERTY\_RTAUDIO\_REGISTER\_NOTIFICATION\_EVENT**](ksproperty-rtaudio-register-notification-event.md)
 
- 
+ 
 
- 
+ 
 
 
 

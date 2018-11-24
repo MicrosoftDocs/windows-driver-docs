@@ -1,13 +1,8 @@
 ---
 title: Required WIA Child Item Properties for Scanner Storage
-author: windows-driver-content
 description: Required WIA Child Item Properties for Scanner Storage
 ms.assetid: 47640b56-d6d9-4ad6-b973-be9fd8992a2c
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,9 +19,9 @@ The WIA scanner storage child (file) item is required to support the following W
 
 [**WIA\_IPA\_ITEM\_NAME**](https://msdn.microsoft.com/library/windows/hardware/ff551590)
 
- 
+ 
 
- 
+ 
 
 
 

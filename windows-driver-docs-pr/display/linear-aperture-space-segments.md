@@ -6,11 +6,7 @@ keywords:
 - memory segments WDK display , linear aperture-space segments
 - linear aperture-space segments WDK display
 - aperture-space segments WDK display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +30,9 @@ The following figure shows a visual representation of a linear aperture-space se
 
 ![diagram illustrating a linear aperture-space segment](images/aptrspac.png)
 
- 
+ 
 
- 
+ 
 
 
 

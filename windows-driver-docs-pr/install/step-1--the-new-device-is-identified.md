@@ -2,11 +2,7 @@
 title: Step 1 The New Device is Identified
 description: Step 1 The New Device is Identified
 ms.assetid: e0df70ca-cea3-44a1-b5ff-407f72a216f9
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -44,9 +40,9 @@ For example, when a user plugs a wireless local area network (WLAN) adapter into
 
     For more information about this process, see [Step 2: A Driver for the Device is Selected](step-2--a-driver-for-the-device-is-selected.md).
 
- 
+ 
 
- 
+ 
 
 
 

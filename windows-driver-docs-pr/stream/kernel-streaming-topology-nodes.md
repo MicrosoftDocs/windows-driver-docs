@@ -2,11 +2,7 @@
 title: Kernel Streaming Topology Nodes
 description: Kernel Streaming Topology Nodes
 ms.assetid: 3e62200c-1dfa-4dde-8710-0ab8f01375de
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +25,9 @@ This section describes the following kernel streaming topology node types:
 
 [KSNODETYPE\_VIDEO\_OUTPUT\_MTT](ksnodetype-video-output-mtt.md)
 
- 
+ 
 
- 
+ 
 
 
 

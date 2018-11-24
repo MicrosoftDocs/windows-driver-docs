@@ -6,11 +6,7 @@ keywords:
 - multiple textures WDK Direct3D , texture stages
 - texture stages WDK Direct3D
 - texture management WDK Direct3D , stages
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,9 +32,9 @@ For example, if two textures, Texture0 and Texture1, are blended together, the r
 
 Each texture stage introduces one texture into the pipeline. The pixel pipeline is separate and comes after multiple texture operations. This may include fog application or frame buffer alpha blending.
 
- 
+ 
 
- 
+ 
 
 
 

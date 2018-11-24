@@ -10,11 +10,7 @@ keywords:
 - WMA Pro WDK audio
 - AC-3 WDK audio
 - Sony/Philips digital interface
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -54,9 +50,9 @@ Dolby Laboratories introduced the AC-3 (Dolby Digital) compressed audio format i
 
 In Windows XP and later, the waveOut, DirectSound, and DirectShow APIs support non-PCM formats. The DirectSound and waveOut APIs are implemented in such a way that any PCM or non-PCM format that the driver exposes is automatically available to clients of these APIs.
 
- 
+ 
 
- 
+ 
 
 
 

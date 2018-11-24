@@ -2,11 +2,7 @@
 title: Driver Implementation for Offloaded Audio
 description: When you implement a driver for offloaded audio, you develop a driver that is able to process offloaded audio streams.
 ms.assetid: 371D7D15-17DA-40C5-8E20-D17399DB2A1E
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,9 +21,9 @@ The following topics in this section discuss the UI considerations, the applicat
 
 [Glitch Reporting for Offloaded Audio](glitch-reporting-for-offloaded-audio.md)
 
- 
+ 
 
- 
+ 
 
 
 

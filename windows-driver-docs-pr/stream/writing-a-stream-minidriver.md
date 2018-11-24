@@ -1,17 +1,12 @@
 ---
 title: Writing a Stream Minidriver
-author: windows-driver-content
 description: Writing a Stream Minidriver
 ms.assetid: 83540dff-3774-4197-8ba1-d28e12b4e366
 keywords:
 - Stream.sys class driver WDK Windows 2000 Kernel , writing
 - streaming minidrivers WDK Windows 2000 Kernel , writing
 - minidrivers WDK Windows 2000 Kernel Streaming , writing
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -67,9 +62,9 @@ The minidriver must provide two additional routines for manipulating stream requ
 
 When a hardware interrupt occurs, the operating system signals the class driver, which then calls the minidriver's [*StrMiniInterrupt*](https://msdn.microsoft.com/library/windows/hardware/ff568459) routine to handle the interrupt.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: Debugging Bug Check 0xC4 DRIVER_VERIFIER_DETECTED_VIOLATION
 description: If Driver Verifier detects a violation, it generates a bug check to stop the computer.
 ms.assetid: 4B957C57-9095-4C81-9EBC-C92C620C5824
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +29,9 @@ When [Driver Verifier](driver-verifier.md) issues a [**Bug Check 0xC4: DRIVER\_V
 
 For more information see [Windows Debugging](https://msdn.microsoft.com/library/windows/hardware/ff551063) and [Handling a Bug Check When Driver Verifier is Enabled](https://msdn.microsoft.com/library/windows/hardware/hh450984).
 
- 
+ 
 
- 
+ 
 
 
 

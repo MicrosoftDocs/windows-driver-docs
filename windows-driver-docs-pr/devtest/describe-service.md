@@ -4,11 +4,7 @@ description: Describe your service in the Mobile Broadband Metadata Authoring Wi
 ms.assetid: 0FA4945C-3CD9-4106-BC47-F89CEF168FDC
 keywords:
 - Describe your service in the Mobile Broadband Metadata Authoring Wizard
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,18 +21,20 @@ You can provide descriptive information about your service in Windows, such as m
     -   **Service Name**. This optional field isn't used in Windows 8.
     -   **Service Provider**. The operator name that appears in Windows Connection Manager.
     -   **Service Number**. Specify a GUID that uniquely identifies your service. This GUID is used to identify the operator when using operator XML provisioning. If you update the device metadata package, this GUID should remain the same.
-        **Note**  This is a different value than the Experience ID and the file name of the device metadata package. For more information on selecting a GUID for Service Number, see [Guide to Providing Mobile Broadband Metadata](http://go.microsoft.com/fwlink/p/?linkid=242064).
+        **Note**  This is a different value than the Experience ID and the file name of the device metadata package. For more information on selecting a GUID for Service Number, see [Guide to Providing Mobile Broadband Metadata](http://go.microsoft.com/fwlink/p/?linkid=242064).
 
-         
 
-    -   **Description 1**. This optional field isn't used in Windows 8.
-    -   **Description 2**. This optional field isn't used in Windows 8.
 
-    For detailed information about metadata properties, see [Service Metadata Package Schema Reference for Windows 8](http://go.microsoft.com/fwlink/p/?LinkId=226755).
 
- 
+-   **Description 1**. This optional field isn't used in Windows 8.
+-   **Description 2**. This optional field isn't used in Windows 8.
 
- 
+For detailed information about metadata properties, see [Service Metadata Package Schema Reference for Windows 8](http://go.microsoft.com/fwlink/p/?LinkId=226755).
+
+
+
+
+
 
 
 

@@ -5,11 +5,7 @@ ms.assetid: 997d6b06-110b-403d-bcf5-350a26ecffbd
 keywords:
 - Direct3D version 11 WDK Windows 7 display , enabling DDI support
 - Direct3D version 11 WDK Windows Server 2008 R2 display , enabling DDI support
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,7 +22,7 @@ You can use the same user-mode display driver DLL name in multiple locations to 
 
 The following example shows how support for the version 11 DDI is enabled if the version 11 DDI is contained in *Umd11*.dll (that is, a separate DLL from the version 9 and 10 DDIs):
 
-```
+```inf
  [Xxx_SoftwareDeviceSettings]
 ...
  HKR,, UserModeDriverName,    %REG_MULTI_SZ%, umd9.dll, umd10.dll,  umd11.dll
@@ -35,16 +31,16 @@ The following example shows how support for the version 11 DDI is enabled if the
 
 The following example shows how support for the version 11 DDI is enabled if the version 11 DDI is contained in *Umd*.dll (that is, a shared implementation of Direct3D version 9, 10 and 11 drivers):
 
-```
+```inf
 [Xxx_SoftwareDeviceSettings]
 ...
  HKR,, UserModeDriverName,    %REG_MULTI_SZ%, umd.dll, umd.dll, umd.dll
  HKR,, InstalledDisplayDrivers,    %REG_MULTI_SZ%, umd, umd, umd 
 ```
 
- 
+ 
 
- 
+ 
 
 
 

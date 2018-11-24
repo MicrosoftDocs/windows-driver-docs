@@ -9,11 +9,7 @@ keywords:
 - data-range formats WDK audio
 - formats WDK audio , pins
 - intersections WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -40,11 +36,11 @@ For more information, see [Audio Data Formats and Data Ranges](audio-data-format
 **Note**  
 The KSPROPERTY\_PIN\_DATARANGES and KSPROPERTY\_PIN\_CONSTRAINEDDATARANGES each begin on an 8-byte-aligned address.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

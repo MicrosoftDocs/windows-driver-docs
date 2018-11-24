@@ -10,11 +10,7 @@ keywords:
 - notifications WDK networking
 - notifications WDK PnP , NDIS ports
 - events WDK networkin
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +30,9 @@ The following topics describe how to handle port PnP events:
 
 [Handling the Port Deactivation PnP Event](handling-the-port-deactivation-pnp-event.md)
 
- 
+ 
 
- 
+ 
 
 
 

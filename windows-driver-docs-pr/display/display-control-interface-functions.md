@@ -2,11 +2,7 @@
 title: Display Control Interface Functions
 description: Display Control Interface Functions
 ms.assetid: 3e0ecf09-9723-4550-a095-5102a2f4ee9d
-ms.author: windowsdriverdev
 ms.date: 01/05/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -18,9 +14,9 @@ ms.localizationpriority: medium
 
 This section provides reference pages for Display Control Interface (DCI) functions that applications use to control a display's device context. These functions are declared in the *dciman.h* header file. Do not use these functions in new applications; use the latest DirectX Graphics interfaces to communicate with your DirectDraw-supported driver instead. For information about DirectX Graphics interfaces, see the latest DirectX SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

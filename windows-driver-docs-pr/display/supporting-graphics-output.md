@@ -6,11 +6,7 @@ keywords:
 - GDI WDK Windows 2000 display , graphics output
 - graphics drivers WDK Windows 2000 display , output
 - drawing WDK GDI , graphics output
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,9 +34,9 @@ The topics that follow describe how a driver can implement the following operati
 
 [Image Color Management](image-color-management.md)
 
- 
+ 
 
- 
+ 
 
 
 

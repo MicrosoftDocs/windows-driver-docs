@@ -2,11 +2,7 @@
 title: Te.Service
 description: Some TAEF features, such as Cross Machine Test Execution and RunAs, require that Te.Service is installed and started.
 ms.assetid: 2F137748-865C-45de-8F60-B607EEB791C0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,14 +23,16 @@ Some TAEF features, such as [Cross Machine Test Execution](cross-machine-executi
     sc start Te.Service
     ```
 
-    **Note**  On CoreSystem, Te.Service can run as a console application instead of a service.
+    **Note**  On CoreSystem, Te.Service can run as a console application instead of a service.
 
-     
 
-    ``` syntax
-    cd [your Wex.Services.exe directory]
-    Wex.Services.exe /run:Te.Service
-    ```
+
+
+``` syntax
+cd [your Wex.Services.exe directory]
+Wex.Services.exe /run:Te.Service
+```
+
 
 ## <span id="stopping_and_removing_te.service"></span><span id="STOPPING_AND_REMOVING_TE.SERVICE"></span>Stopping and Removing Te.Service
 
@@ -86,7 +84,7 @@ To subscribe:
 
 Example:
 
-```
+```cpp
     // define a call back function
     DWORD WINAPI HandlerEx(DWORD dwControl, DWORD dwEventType, LPVOID, LPVOID)
     {
@@ -98,9 +96,9 @@ Example:
     TestNotification::RegisterHandler(HandlerEx));
 ```
 
- 
 
- 
+
+
 
 
 

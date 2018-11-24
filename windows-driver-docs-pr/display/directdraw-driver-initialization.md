@@ -6,11 +6,7 @@ keywords:
 - DirectDraw driver initialization WDK Windows 2000 display , about DirectDraw driver initialization
 - initializing DirectDraw drivers
 - DirectDraw driver initialization WDK Windows 2000 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,9 +20,9 @@ This section provides information about the driver initialization process, as it
 
 [Windows 2000 Driver Initialization](windows-2000-driver-initialization.md)
 
- 
+ 
 
- 
+ 
 
 
 

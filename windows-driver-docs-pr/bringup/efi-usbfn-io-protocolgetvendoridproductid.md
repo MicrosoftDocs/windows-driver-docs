@@ -1,13 +1,8 @@
 ---
 title: EFI_USBFN_IO_PROTOCOL.GetVendorIdProductId
-author: windows-driver-content
 description: EFI_USBFN_IO_PROTOCOL.GetVendorIdProductId
 ms.assetid: 78dbc589-3ffd-4ee2-9d80-4570b3b20b2f
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,7 +14,7 @@ The **GetVendorIdProductId** function returns the vendor-id and product-id of th
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef
 EFI_STATUS
 (EFIAPI * EFI_USBFN_IO_GET_VENDOR_ID_PRODUCT_ID) (
@@ -71,7 +66,7 @@ Returned product-id of the device. Product IDs (PIDs) are 16-bit numbers assigne
 </tbody>
 </table>
 
- 
+ 
 
 ## Remarks
 
@@ -81,9 +76,9 @@ Returned product-id of the device. Product IDs (PIDs) are 16-bit numbers assigne
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
 

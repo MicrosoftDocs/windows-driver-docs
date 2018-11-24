@@ -5,11 +5,7 @@ ms.assetid: e1826811-cb1c-400f-a3e1-aaa6ae83ef42
 keywords:
 - trace sessions WDK , private
 - private trace sessions WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -49,9 +45,9 @@ In this example, the command starts the critical section process logger on two r
 tracelog -start MyTrace -um -critsec -pids 2 4806 5164 -f testtrace.etl
 ```
 
- 
+ 
 
- 
+ 
 
 
 

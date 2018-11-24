@@ -9,11 +9,7 @@ api_name:
 - DEBUG_REQUEST_READ_CAPTURED_EVENT_CODE_STREAM
 api_type:
 - NA
-ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -44,9 +40,9 @@ The current event's instruction pointer is returned by the [**Request**](request
 
 [**DEBUG\_REQUEST\_GET\_CAPTURED\_EVENT\_CODE\_OFFSET**](debug-request-get-captured-event-code-offset.md)
 
- 
+ 
 
- 
+ 
 
 
 

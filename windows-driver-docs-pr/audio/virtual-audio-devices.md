@@ -9,11 +9,7 @@ keywords:
 - audio virtual devices WDK
 - audio filter graphs WDK
 - filter graphs WDK audio , virtual audio devices
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,9 +33,9 @@ After determining the list of filter graphs that it can build from the available
 
 A SysAudio client can treat a filter factory for a virtual audio device similarly to a filter factory for a hardware or software component. When asked by a client to instantiate a particular pin on a virtual device, SysAudio constructs the graph automatically and manages the graph's internal pin connections transparently to the client. This allows the client to treat a filter graph as a single filter, thereby avoiding complexities of graph management such as inter-filter communication.
 
- 
+ 
 
- 
+ 
 
 
 

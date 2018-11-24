@@ -3,11 +3,7 @@ title: ahcache
 description: The ahcache extension displays the application compatibility cache.
 ms.assetid: 65a7c320-3ea3-4657-b271-ec3d9c2bd5de
 keywords: ["ahcache Windows Debugging"]
-ms.author: domars
-ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 09/17/2018
 topic_type:
 - apiref
 api_name:
@@ -22,8 +18,8 @@ ms.localizationpriority: medium
 
 The **!ahcache** extension displays the application compatibility cache.
 
-```
-    !ahcache [Flags] 
+```dbgcmd
+!ahcache [Flags] 
 ```
 
 ## <span id="ddk__ahcache_dbg"></span><span id="DDK__AHCACHE_DBG"></span>Parameters
@@ -57,11 +53,11 @@ Verbose display: includes all entry details, not just the names.
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

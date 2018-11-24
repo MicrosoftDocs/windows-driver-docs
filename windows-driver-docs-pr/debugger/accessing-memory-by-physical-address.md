@@ -3,11 +3,7 @@ title: Accessing Memory by Physical Address
 description: Accessing Memory by Physical Address
 ms.assetid: 248871dc-dac0-413e-8971-2ee2c2fe5290
 keywords: ["physical address, accessing memory"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +25,9 @@ To search physical memory for a piece of data or a range of data, use the [**!se
 
 Also, for more information about physical addresses, see [Converting Virtual Addresses to Physical Addresses](converting-virtual-addresses-to-physical-addresses.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: TrustedCertificate (APN element)
 description: TrustedCertificate (APN element)
 ms.assetid: 8b1b09ab-7ab8-4d6d-9ea6-395a109def91
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -57,7 +53,7 @@ The TrustedCertificate element specifies a trusted certificate for the specified
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Child_elements"></span><span id="child_elements"></span><span id="CHILD_ELEMENTS"></span>Child elements
 
@@ -80,13 +76,13 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[TrustedCertificateList](trustedcertificatelist.md)</p></td>
+<td><p><a href="trustedcertificatelist.md" data-raw-source="[TrustedCertificateList](trustedcertificatelist.md)">TrustedCertificateList</a></p></td>
 <td><p>Specifies a list of trusted certificates for the operator.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="XSD"></span><span id="xsd"></span>XSD
 
@@ -107,9 +103,9 @@ There are no child elements.
 
 The TrustedCertificate element is optional.
 
- 
+ 
 
- 
+ 
 
 
 

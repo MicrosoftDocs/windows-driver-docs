@@ -9,11 +9,7 @@ api_name:
 - SRB_READ_DATA
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,7 +34,7 @@ Indicates that the function is not supported by the minidriver.
 <span id="STATUS_IO_DEVICE_ERROR"></span><span id="status_io_device_error"></span>STATUS\_IO\_DEVICE\_ERROR  
 Indicates that a hardware failure occurred.
 
-### <span id="comments"></span><span id="COMMENTS"></span>Comments
+### Comments
 
 The value of *pSrb*-&gt;**CommandData**.**DataBufferArray** points to an array of [**KSSTREAM\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/ff567138) structures, which together describe the data buffer. The *pSrb* pointer points to a [**HW\_STREAM\_REQUEST\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff559702) structure. *pSrb*-&gt;**CommandData**.**NumberOfBuffers** specifies the size of the array.
 
@@ -48,9 +44,9 @@ The value of *pSrb*-&gt;**CommandData**.**DataBufferArray** points to an array o
 
 2.  Place the SRB in the queue.
 
- 
+ 
 
- 
+ 
 
 
 

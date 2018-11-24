@@ -1,14 +1,9 @@
 ---
 title: Specifying Device Types
-author: windows-driver-content
 description: Specifying Device Types
 ms.assetid: 32e179f9-ab11-4360-b2fd-4276c6b6b3a0
 keywords: ["device objects WDK kernel , device types", "device types WDK device objects"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,7 +19,7 @@ Every kernel-mode driver that creates a device object must specify an appropriat
 
 The system defines the following device type values, listed in alphabetical order:
 
-```
+```cpp
 #define FILE_DEVICE_8042_PORT           0x00000027
 #define FILE_DEVICE_ACPI                0x00000032
 #define FILE_DEVICE_BATTERY             0x00000029
@@ -95,9 +90,9 @@ FILE\_DEVICE\_*XXX* values in the range of 0 through 32767 are reserved for Micr
 
 If a type of hardware does not match any of the defined types, specify a value of either FILE\_DEVICE\_UNKNOWN, or a value within the range of 32768 through 65535.
 
- 
+ 
 
- 
+ 
 
 
 

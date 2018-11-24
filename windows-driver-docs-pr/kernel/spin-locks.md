@@ -1,14 +1,9 @@
 ---
 title: Spin Locks
-author: windows-driver-content
 description: Spin Locks
 ms.assetid: 0585fc2a-0d0b-434d-92b3-da07a9385444
 keywords: ["synchronization WDK kernel , spin locks", "locking WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,9 +31,9 @@ This section contains the following topics:
 
 [Reader/Writer Spin Locks](reader-writer-spin-locks.md)
 
- 
+ 
 
- 
+ 
 
 
 

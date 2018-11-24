@@ -4,11 +4,7 @@ description: Overview of the Driver Coverage Toolkit
 ms.assetid: eead0c9a-fc26-4777-b19a-e97b898e28a2
 keywords:
 - Driver Coverage Toolkit WDK , about the Driver Coverage Toolkit
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -17,7 +13,7 @@ ms.localizationpriority: medium
 
 **Note**  The Driver Coverage Toolkit is no longer needed in Windows 10 and the installer is no longer included in the WDK. To perform tasks described here in Windows 10, instead use [Driver Verifier](driver-verifier.md) and [IRP Logging](irp-logging.md).
 
- 
+ 
 
 The Driver Coverage toolkit monitor and report on the I/O request packets (IRPs) that enter or leave the driver stack for one or more specified devices. The coverage data is collected by the [Driver Coverage filter driver](driver-coverage-filter-driver.md) for these devices. The Driver Coverage tool is used to enable or disable IRP coverage on specified devices, as well as produce reports from the coverage data.
 
@@ -267,9 +263,9 @@ Getting coverage data
 |--------------------------------------------------------|
 ```
 
- 
+ 
 
- 
+ 
 
 
 

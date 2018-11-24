@@ -4,11 +4,7 @@ description: System Effects Audio Processing Objects
 ms.assetid: 54ac63b4-9846-44ce-8afb-ded52ae2cd71
 keywords:
 - sAPO WDK
-ms.author: windowsdriverdev
 ms.date: 05/20/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,9 +31,9 @@ This section contains the following topics:
 
 [Windows Vista sAPO Feature Reference](windows-vista-sapo-feature-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

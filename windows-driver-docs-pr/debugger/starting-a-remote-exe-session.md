@@ -3,11 +3,7 @@ title: Starting a Remote.exe Session
 description: Starting a Remote.exe Session
 ms.assetid: 2b70e54e-ab02-46f1-9af1-e7379c89cf3c
 keywords: ["remote debugging through remote.exe, starting the session"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,13 +27,13 @@ Change the values for the height and width of the "Windows Size" section if you 
 
 The general syntax for starting a Remote.exe Server is as follows:
 
-```
+```console
 remote /s "Command_Line" Unique_Id [/f Foreground_Color] [/b Background_Color] 
 ```
 
 This can be used to start KD or CDB on the remote computer, as in the following examples:
 
-```
+```console
 remote /s "KD [options]" MyBrokenBox 
 
 remote /s "CDB [options]" MyBrokenApp 
@@ -55,13 +51,13 @@ Since the **.remote** command is issued after the debugger has started, this met
 
 Here is an example. First, start the debugger in the normal fashion:
 
-```
+```console
 KD [options] 
 ```
 
 Once the debugger is running, use the **.remote** command:
 
-```
+```dbgcmd
 .remote MyBrokenBox 
 ```
 
@@ -73,13 +69,13 @@ One advantage of this method is that you do not have to decide in advance if you
 
 The general syntax for starting a Remote.exe Client is as follows:
 
-```
+```console
 remote /c ServerNetBIOSName Unique_ID [/l Lines_to_Get] [/f Foreground_Color] [/b Background_Color] 
-```
+```dbgcmd
 
 For example, if the "MyBrokenBox" session, described above, was started on a local host computer whose network name was "Server2", you can connect to it with the command:
 
-```
+```console
 remote /c server2 MyBrokenBox 
 ```
 
@@ -89,13 +85,13 @@ Anyone on the network with appropriate permission can connect to this debug sess
 
 Commands are issued through the Remote.exe Client and are sent to the Remote.exe Server. You can enter any command into the client as if you were directly entering it into the debugger.
 
-To exit from the remote.exe session on the Remote.exe Client, enter the **@Q** command. This leaves the Remote.exe Server and the debugger running.
+To exit from the remote.exe session on the Remote.exe Client, enter the <strong>@Q</strong> command. This leaves the Remote.exe Server and the debugger running.
 
-To end the server session, enter the **@K** command on the Remote.exe Server.
+To end the server session, enter the <strong>@K</strong> command on the Remote.exe Server.
 
- 
+ 
 
- 
+ 
 
 
 

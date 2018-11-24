@@ -5,11 +5,7 @@ ms.assetid: 53ce6be1-14e1-4ee8-ba29-f198dcdacdaa
 keywords:
 - color values for pixel formats WDK DirectX 9.0
 - pixel format color values WDK DirectX 9.0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +23,7 @@ The display driver receives color values when it processes the D3DDP2OP\_CLEAR a
 
 The display driver can use the following code to convert color values for the ARGB and YUV class formats:
 
-```
+```cpp
 DWORD Convert2N(DWORD Color, DWORD n)
 {
     return (Color * (1 << n)) / 256;
@@ -159,9 +155,9 @@ DWORD CPixel::ConvertFromARGB(D3DCOLOR  InputColor,
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

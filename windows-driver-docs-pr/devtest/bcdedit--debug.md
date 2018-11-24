@@ -2,11 +2,7 @@
 title: BCDEdit /debug
 description: The /debug boot option enables or disables kernel debugging of the Windows operating system associated with the specified boot entry or the current boot entry.
 ms.assetid: 013ec247-f2ca-4918-9dfa-8b1348d0b4e5
-ms.author: windowsdriverdev
 ms.date: 07/02/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: ["BCDEdit /debug Driver Development Tools"]
 topic_type:
 - apiref
@@ -25,7 +21,7 @@ The **/debug** boot option enables or disables kernel debugging of the Windows o
 > [!NOTE]
 > Before setting BCDEdit options you might need to disable or suspend BitLocker and Secure Boot on the computer.
 
- 
+ 
 
 ``` syntax
     bcdedit /debug [{ID}] { on | off } 
@@ -36,8 +32,8 @@ The **/debug** boot option enables or disables kernel debugging of the Windows o
 Parameters
 ----------
 
-**{***ID***}**   
-The **{***ID***}** is the GUID that is associated with the boot entry. If you do not specify an **{***ID***}**, the command modifies the operating system that is currently active. If a boot entry is specified, the GUID associated with the boot entry must be enclosed in braces **{ }**.
+**{**<em>ID</em>**}**   
+The **{**<em>ID</em>**}** is the GUID that is associated with the boot entry. If you do not specify an **{**<em>ID</em>**}**, the command modifies the operating system that is currently active. If a boot entry is specified, the GUID associated with the boot entry must be enclosed in braces **{ }**.
 
  **on**   
 Enables kernel debugging of the specified boot entry. If a boot entry is not specified, kernel debugging is enabled for the current operating system.
@@ -76,7 +72,7 @@ The **/debug** boot option enables kernel debugging for a specific boot entry. U
 </tbody>
 </table>
 
- 
+ 
 
 For information about Windows debugging tools, see [Windows Debugging](https://msdn.microsoft.com/library/windows/hardware/ff551063). For information about setting up and configuring a kernel-mode debugging session, see [Setting Up Kernel-Mode Debugging Manually](https://msdn.microsoft.com/library/windows/hardware/hh439378).
 
@@ -93,9 +89,9 @@ bcdedit /dbgsettings usb targetname:myVistaTarget
 bcdedit /debug ON 
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -9,11 +9,7 @@ keywords:
 - bandwidth WDK audio
 - allocating bandwidth
 - link bandwidth WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +26,9 @@ A function driver can call [**ChangeBandwidthAllocation**](https://msdn.microsof
 
 The Allocate*Xxx*DmaEngine and [**ChangeBandwidthAllocation**](https://msdn.microsoft.com/library/windows/hardware/ff536229) routines are available in both versions of the HD Audio DDI.
 
- 
+ 
 
- 
+ 
 
 
 

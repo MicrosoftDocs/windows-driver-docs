@@ -4,11 +4,7 @@ description: Processing a Library
 ms.assetid: 8ae9ae3b-885d-4eb5-b55b-415edcfc041a
 keywords:
 - library WDK Static Driver Verifier , processing
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +26,9 @@ You can also process libraries from a Visual Studio Command Prompt window using 
 
 If you are unable to process a required library for any reason, you can still verify the driver that uses it. However, the results are less reliable.
 
- 
+ 
 
- 
+ 
 
 
 

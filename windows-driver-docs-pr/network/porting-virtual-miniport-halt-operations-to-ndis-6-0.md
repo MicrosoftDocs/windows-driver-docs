@@ -9,11 +9,7 @@ keywords:
 - porting intermediate drivers WDK networking , virtual miniports
 - halting virtual miniports
 - stopping virtual
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,9 +33,9 @@ For more information about halting a virtual miniport, see [Halting a Virtual Mi
 
 NDIS 6.0 filter drivers do not require a virtual miniport. For more information about filter drivers, see [NDIS 6.0 Filter Drivers](ndis-filter-drivers.md).
 
- 
+ 
 
- 
+ 
 
 
 

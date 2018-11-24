@@ -2,11 +2,7 @@
 title: Design account balance and usage info in a mobile broadband app
 description: Design account balance and usage info in a mobile broadband app
 ms.assetid: aec4e4b3-d207-4319-a134-29b4a773c3a6
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -57,7 +53,7 @@ Appropriate design for displaying account info:
     **Tip**  
     You can implement a bar chart by using a determinate progress bar control, as discussed in [Adding progress controls](https://msdn.microsoft.com/library/windows/apps/hh465428).
 
-     
+     
 
 -   When remaining usage is low, show a link to the Plans page to upgrade the plan
 
@@ -70,9 +66,9 @@ Inappropriate design for displaying account information:
 
 [Designing the user experience of a mobile broadband app](designing-the-user-experience-of-a-mobile-broadband-app.md)
 
- 
+ 
 
- 
+ 
 
 
 

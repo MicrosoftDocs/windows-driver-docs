@@ -1,13 +1,8 @@
 ---
 title: 'REMOTE_NDIS_SET_MSG'
-author: windows-driver-content
 Description: 'This message is sent to a Remote NDIS device from a host, when it requires to set the value of some operational parameter on the device.'
 ms.assetid: d39032e2-e3a5-415f-8bd6-b60b9049ce33
-ms.author: windowsdriverdev
 ms.date: 07/31/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 
 ms.localizationpriority: medium
 ---
@@ -78,7 +73,7 @@ This message is sent to a Remote NDIS device from a host, when it requires to se
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -100,9 +95,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

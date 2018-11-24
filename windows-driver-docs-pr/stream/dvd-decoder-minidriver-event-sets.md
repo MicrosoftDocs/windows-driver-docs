@@ -2,11 +2,7 @@
 title: DVD Decoder Minidriver Event Sets
 description: DVD Decoder Minidriver Event Sets
 ms.assetid: 16dc9c31-1755-40f7-810d-60ecc814165a
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,9 +16,9 @@ The following event set is defined for WDM DVD decoder minidrivers:
 
 [KSEVENTSETID\_VPNotify](kseventsetid-vpnotify.md)
 
- 
+ 
 
- 
+ 
 
 
 

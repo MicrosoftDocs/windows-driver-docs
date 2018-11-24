@@ -10,11 +10,7 @@ keywords:
 - format negotiations WDK audio
 - IsInputFormatSupported WDK
 - LockForProcess WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,9 +33,9 @@ Audio endpoint refers to components such as headphones and loudspeakers collecti
 
 The concepts of pipes, APOs, and sAPOs are explained in more detail in the [Exploring the Windows Vista Audio Engine](exploring-the-windows-vista-audio-engine.md) topic. For more information about the system-supplied sAPOs, see the [Windows Vista Default sAPOs](windows-vista-default-sapos.md) topic.
 
- 
+ 
 
- 
+ 
 
 
 

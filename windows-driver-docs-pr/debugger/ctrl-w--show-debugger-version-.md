@@ -3,11 +3,7 @@ title: CTRL+W (Show Debugger Version)
 description: The CTRL+W key displays version information for the debugger and all loaded extension DLLs.
 ms.assetid: 9651965e-fbf5-4084-adcd-63de60998b8b
 keywords: ["CTRL+W (Show Debugger Version) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,13 +20,13 @@ The CTRL+W key displays version information for the debugger and all loaded exte
 
 CDB / KD Syntax
 
-```
+```dbgcmd
 CTRL+W  ENTER 
 ```
 
 WinDbg Syntax
 
-```
+```dbgcmd
 CTRL+ALT+W 
 ```
 
@@ -64,7 +60,7 @@ CTRL+ALT+W
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -80,9 +76,9 @@ In WinDbg, this can also be accomplished by selecting [View | Show Version](view
 
 [**vertarget (Show Target Computer Version)**](vertarget--show-target-computer-version-.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Notification Errors
-author: windows-driver-content
 description: Notification Errors
 ms.assetid: ffead40c-5c1c-45f6-83d2-48e4af357255
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - print spooler notification WDK , errors
 - notification errors WDK print spooler
 - errors WDK spooler notification
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -182,7 +177,7 @@ Sender
 <td><p>0x14</p></td>
 <td><p>Bidirectional and Unidirectional</p></td>
 <td><p>Sender</p></td>
-<td><p><strong>SendNotification</strong> returns this value when the notification's type is different than the channel's type.</p></td>
+<td><p><strong>SendNotification</strong> returns this value when the notification&#39;s type is different than the channel&#39;s type.</p></td>
 </tr>
 <tr class="odd">
 <td><p>MAX_REGISTRATION_COUNT_EXCEEDED</p></td>
@@ -201,11 +196,11 @@ Sender
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

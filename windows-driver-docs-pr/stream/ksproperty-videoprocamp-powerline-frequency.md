@@ -11,11 +11,7 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +23,7 @@ The KSPROPERTY\_VIDEOPROCAMP\_POWERLINE\_FREQUENCY property specifies the local 
 ## <span id="ddk_ksproperty_videoprocamp_powerline_frequency_ks"></span><span id="DDK_KSPROPERTY_VIDEOPROCAMP_POWERLINE_FREQUENCY_KS"></span>
 
 
-### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
+### Usage Summary Table
 
 <table>
 <colgroup>
@@ -51,13 +47,13 @@ The KSPROPERTY\_VIDEOPROCAMP\_POWERLINE\_FREQUENCY property specifies the local 
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Filter or node</p></td>
-<td><p>[<strong>KSPROPERTY_VIDEOPROCAMP_S</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566089) or [<strong>KSPROPERTY_VIDEOPROCAMP_NODE_S</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566080)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566089" data-raw-source="[&lt;strong&gt;KSPROPERTY_VIDEOPROCAMP_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566089)"><strong>KSPROPERTY_VIDEOPROCAMP_S</strong></a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff566080" data-raw-source="[&lt;strong&gt;KSPROPERTY_VIDEOPROCAMP_NODE_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566080)"><strong>KSPROPERTY_VIDEOPROCAMP_NODE_S</strong></a></p></td>
 <td><p>LONG</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a LONG that specifies the local power line frequency. The value indicates the current power-line setting of the camera.
 
@@ -92,13 +88,13 @@ The property value (operation data) is a LONG that specifies the local power lin
 <strong>Note</strong>  The auto property value (3) is not available on all cameras (UVC 1.1 specifically).
 </div>
 <div>
- 
+ 
 </div></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -123,18 +119,18 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
-[**KSPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff564262)
+[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)
 
 [**KSPROPERTY\_VIDEOPROCAMP\_S**](https://msdn.microsoft.com/library/windows/hardware/ff566089)
 
 [**PowerlineFrequency enumeration**](https://msdn.microsoft.com/library/windows/apps/br226651)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: KSPROPSETID\_BdaPIDFilter
 description: KSPROPSETID\_BdaPIDFilter
 ms.assetid: 9a2655cb-d7e9-4f61-803a-63fe3fd3501b
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +25,9 @@ Informs the PID filter node about packets identified with specific PIDs to filte
 <span id="KSPROPERTY_BDA_PIDFILTER_LIST_PIDS"></span><span id="ksproperty_bda_pidfilter_list_pids"></span>[**KSPROPERTY\_BDA\_PIDFILTER\_LIST\_PIDS**](ksproperty-bda-pidfilter-list-pids.md)  
 Returns an array of PIDs that identify groups of packets that the PID filter node delivers from the input stream to the output stream.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -7,11 +7,7 @@ keywords:
 - properties WDK TraceView
 - changeable properties WDK TraceView
 - displaying trace session properties
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -44,9 +40,9 @@ The values in the **Flags** and **Level** columns represent the [trace flags](tr
 
 A value of **SET** indicates that the trace flags and trace level are set in the **Tracing Flags and Level Selection** dialog box. To open the **Tracing Flags and Level Selection** dialog box, click the **SET** value.
 
- 
+ 
 
- 
+ 
 
 
 

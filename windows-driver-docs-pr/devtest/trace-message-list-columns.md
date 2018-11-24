@@ -4,11 +4,7 @@ description: Trace Message List Columns
 ms.assetid: d0f5873e-9b01-4a74-8448-90194545da1f
 keywords:
 - Trace Message Lists WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -83,9 +79,9 @@ Displays the name of the subcomponent of the provider that generated the trace m
 <span id="Save_As_Default"></span><span id="save_as_default"></span><span id="SAVE_AS_DEFAULT"></span>**Save As Default**  
 This option is not a column name. It is a command that saves the currently displayed column configuration as the default for future trace sessions. For more information, see "Saving the Column Configuration" in [Trace Message List Features](trace-message-list-features.md).
 
- 
+ 
 
- 
+ 
 
 
 

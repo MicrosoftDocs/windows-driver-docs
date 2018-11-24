@@ -1,6 +1,5 @@
 ---
 title: Writing a Network Print Provider
-author: windows-driver-content
 description: Writing a Network Print Provider
 ms.assetid: 9dbe8a00-6b5f-41ae-8ab5-218dcbe37833
 keywords:
@@ -13,11 +12,7 @@ keywords:
 - print providers WDK , about network print providers
 - network print providers WDK , about network print providers
 - providers WDK print
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,9 +32,9 @@ This section provides the following topics:
 
 [Installing a Network Print Provider](installing-a-network-print-provider.md)
 
- 
+ 
 
- 
+ 
 
 
 

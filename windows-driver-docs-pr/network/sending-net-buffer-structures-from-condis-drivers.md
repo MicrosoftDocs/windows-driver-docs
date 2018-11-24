@@ -2,11 +2,7 @@
 title: Sending NET_BUFFER Structures from CoNDIS Drivers
 description: Sending NET_BUFFER Structures from CoNDIS Drivers
 ms.assetid: 63bca3f0-b598-4006-bfd0-6df32ab2cbe7
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +30,9 @@ Intermediate drivers also set the **SourceHandle** member in the NET\_BUFFER\_LI
 
 Protocol drivers can cancel send requests by using the same mechanisms as connectionless drivers. For more information about canceling send requests, see [Canceling a Send Operation](canceling-a-send-operation.md).
 
- 
+ 
 
- 
+ 
 
 
 

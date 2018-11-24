@@ -1,13 +1,8 @@
 ---
 title: WIA Item Trees
-author: windows-driver-content
 description: WIA Item Trees
 ms.assetid: 98c43595-8547-4916-8671-86652212ac92
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +26,9 @@ This section contains more information in the following sections:
 
 [WIA Scanner Item Tree for Windows 7](wia-scanner-item-tree-for-windows-7.md)
 
- 
+ 
 
- 
+ 
 
 
 

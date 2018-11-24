@@ -1,6 +1,5 @@
 ---
 title: GDL Schema Root Element
-author: windows-driver-content
 description: GDL Schema Root Element
 ms.assetid: 6148f026-52fa-452d-aa81-564d6ee5288d
 keywords:
@@ -9,11 +8,7 @@ keywords:
 - SnapshotRoot element WDK GDL
 - root element WDK GDL
 - snapshots WDK GDL , structure
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,7 +17,7 @@ ms.localizationpriority: medium
 
 The XSD schema that is produced by the GDL parser defines a root element (&lt;SnapshotRoot&gt;) as follows:
 
-```
+```cpp
     <element name="SnapshotRoot" type="gdl:GDL_RootType"/>
 
     <complexType name="GDL_RootType"  >
@@ -36,9 +31,9 @@ The XSD schema does not allow &lt;any&gt; elements to coexist with defined eleme
 
 The &lt;SnapshotRoot&gt; element is the outermost element in the snapshot document and it contains all of the other elements in the snapshot. There is only one &lt;SnapshotRoot&gt; element in each snapshot.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,15 +1,10 @@
 ---
 title: TCP chimney offload OIDs
-author: windows-driver-content
 description: This topic describes TCP chimney offload OIDs 
 ms.assetid: 50886e4e-b4c4-4734-931e-ed3e7f4c389e
 keywords:
 - TCP chimney offload OIDs, task offload NDIS OIDs, TCP chimney offload OIDs WDK, TCP chimney offload OIDs networking
-ms.author: windowsdriverdev
 ms.date: 11/06/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

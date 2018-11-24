@@ -10,6 +10,7 @@ api_name:
 api_type:
 - COM
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # CreateVirtualPort method
@@ -22,11 +23,11 @@ Syntax
 
 ```ManagedCPlusPlus
 void CreateVirtualPort(
-   [in] uint8   WWPN[8],
-   [in] uint8   WWNN[8],
-   [in] uint8   Tag[16],
-   [in] uint16  VirtualName[64],
-   [out] uint16 Status
+   [in] uint8   WWPN[8],
+   [in] uint8   WWNN[8],
+   [in] uint8   Tag[16],
+   [in] uint16  VirtualName[64],
+   [out] uint16 Status
 );
 ```
 
@@ -58,9 +59,9 @@ Not applicable to WMI methods.
 
 [NPIV Status Codes](https://msdn.microsoft.com/library/windows/hardware/dn386176)
 
- 
+ 
 
- 
+ 
 
 
 

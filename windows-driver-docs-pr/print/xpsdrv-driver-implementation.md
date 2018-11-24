@@ -1,15 +1,10 @@
 ---
 title: XPSDrv Driver Implementation
-author: windows-driver-content
 description: XPSDrv Driver Implementation
 ms.assetid: 7b5b9a51-a8d4-433b-8bd5-01bd629c4c63
 keywords:
 - Version 3 XPS drivers WDK XPSDrv , implementing
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,9 +19,9 @@ This section describes the technical details of implementing an XPSDrv print dri
 
 [XPS Driver Document Events](xps-driver-document-events.md)
 
- 
+ 
 
- 
+ 
 
 
 

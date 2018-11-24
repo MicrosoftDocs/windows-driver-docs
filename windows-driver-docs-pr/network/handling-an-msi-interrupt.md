@@ -7,11 +7,7 @@ keywords:
 - message-signaled interrupts WDK networking , handling interrupts
 - MSIs WDK networking , handling interrupts
 - interrupts WDK networking , handling
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,9 +31,9 @@ NDIS 6.1 and later versions guarantees that DPCs for different messages that are
 
 NDIS also guarantees that DPCs for the same message that are scheduled on different CPUs are queued separately. For example, if a miniport driver schedules two DPCs (one DPC on CPU 0 for message 0 and one DPC on CPU 1 for message 0), two separate DPCs are queued on CPU 0 and CPU 1, both for message 0.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,13 +1,8 @@
 ---
 title: Serial driver samples
-author: windows-driver-content
 description: The driver samples in this directory provide a starting point for writing a custom serial driver for your device.
 ms.assetid: C4C6ED0B-50EA-4483-A81F-FC3C7F5CCE12
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,11 +21,11 @@ The driver samples in this directory provide a starting point for writing a cust
 | Virtual Serial   | [VirtualSerial](http://go.microsoft.com/fwlink/p/?LinkId=617963) | This sample demonstrates serial drivers. It includes a simple virtual serial driver (ComPort) and a controller-less modem driver (FakeModem). |
 | Virtual Serial 2 | [VirtualSerial](http://go.microsoft.com/fwlink/p/?LinkId=617965) | This sample demonstrates serial drivers. It includes a simple virtual serial driver (ComPort) and a controller-less modem driver (FakeModem). |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

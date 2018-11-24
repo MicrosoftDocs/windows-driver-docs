@@ -1,14 +1,9 @@
 ---
 title: Passing IRPs down the Driver Stack
-author: windows-driver-content
 description: Passing IRPs down the Driver Stack
 ms.assetid: 69d912c5-83cf-4651-b379-de6baea8ddd0
 keywords: ["IRPs WDK kernel , passing down stack", "passing IRPs down driver stack WDK", "transferring IRPs down driver stack", "I/O stack locations WDK kernel", "stack locations WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -61,9 +56,9 @@ When a driver's dispatch routine receives an IRP, it must call [**IoGetCurrentIr
 
 3.  Return STATUS\_PENDING.
 
- 
+ 
 
- 
+ 
 
 
 

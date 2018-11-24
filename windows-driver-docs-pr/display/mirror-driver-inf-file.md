@@ -6,11 +6,7 @@ keywords:
 - display drivers WDK Windows 2000 , mirror drivers
 - mirror drivers WDK Windows 2000 display
 - INF files WDK Windows 2000 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,11 +22,11 @@ For more information, see [Installing a Boot Driver](https://msdn.microsoft.com/
 
 **Note**  Starting with Windows 8, mirror drivers will not install on the system. For more information, see [Mirror Drivers](mirror-drivers.md).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

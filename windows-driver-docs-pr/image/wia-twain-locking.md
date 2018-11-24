@@ -1,13 +1,8 @@
 ---
 title: WIA-TWAIN Locking
-author: windows-driver-content
 description: WIA-TWAIN Locking
 ms.assetid: bf2dc7f5-f3a0-4c51-86e1-854d0704074a
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,9 +20,9 @@ So, when you use this vendor-supplied software, make sure you adhere to reliable
 
 For additional information, see [Locking and Unlocking Best Practices](locking-and-unlocking-best-practices.md).
 
- 
+ 
 
- 
+ 
 
 
 

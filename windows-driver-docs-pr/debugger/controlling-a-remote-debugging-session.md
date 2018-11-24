@@ -3,11 +3,7 @@ title: Controlling a Remote Debugging Session
 description: Controlling a Remote Debugging Session
 ms.assetid: dedd277d-1aa0-468c-919c-29b25b0b5c0d
 keywords: ["remote debugging through the debugger, controlling a session"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -57,9 +53,9 @@ To exit from one debugging client without terminating the server, you must issue
 
 To terminate the entire session and exit the debugging server, use the [**q (Quit)**](q--qq--quit-.md) command. This command can be entered from any server or client, and it will terminate the entire session for all users.
 
- 
+ 
 
- 
+ 
 
 
 

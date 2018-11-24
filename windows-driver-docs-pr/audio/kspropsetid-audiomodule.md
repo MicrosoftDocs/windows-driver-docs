@@ -2,11 +2,7 @@
 title: KSPROPSETID\_AudioModule
 description: The KSPROPSETID\_AudioModule property set is used by the audio driver to retrieve the list of audio modules.
 ms.assetid: 6F167E5E-CA11-45F3-BF21-6B9A3F90DB9F
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,9 +32,9 @@ This property name is defined in the [**KSPROPERTY\_AUDIOMODULE**](ksproperty-au
 
 For more information about audio modules, see [Implementing Audio Module Discovery](https://msdn.microsoft.com/windows/hardware/drivers/audio/implementing-audio-module-communication).
 
- 
+ 
 
- 
+ 
 
 
 

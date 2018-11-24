@@ -1,11 +1,7 @@
 ---
 Description: Handling the Entry and Exit Points
 title: Handling the Entry and Exit Points
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,7 +16,7 @@ Each time a device is loaded in a driver's host process, the user-mode driver fr
 | **IDriverEntry::OnDeviceAdd**    | Adds a new device to the system.       |
 | **IDriverEntry::OnInitialize**   | Handles driver initialization.         |
 
- 
+ 
 
 In the WpdHelloWorldDriver, the **OnDeviceAdd** method is the only method that does meaningful work; the **OnInitialize** method simply returns S\_OK and the **OnDeinitialize** method returns no value.
 
@@ -36,9 +32,9 @@ CDriver also implements **IObjectCleanup::OnCleanup**, which contains code to re
 
 For more information about each interface and its methods, see the [UMDF](http://go.microsoft.com/fwlink/p/?linkid=153678) documentation.
 
- 
+ 
 
- 
+ 
 
 
 

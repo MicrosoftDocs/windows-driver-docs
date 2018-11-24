@@ -9,11 +9,7 @@ api_name:
 - SRB_INDICATE_MASTER_CLOCK
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,7 +34,7 @@ Indicates that the function is not supported by the minidriver.
 <span id="STATUS_IO_DEVICE_ERROR"></span><span id="status_io_device_error"></span>STATUS\_IO\_DEVICE\_ERROR  
 Indicates that a hardware failure occurred.
 
-### <span id="comments"></span><span id="COMMENTS"></span>Comments
+### Comments
 
 The class driver sets the **CommandData**.**MasterClockHandle** member pointed to by *pSrb* to the handle for the clock object that represents the master clock. The *pSrb* pointer points to a [**HW\_STREAM\_REQUEST\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff559702) structure.
 
@@ -48,9 +44,9 @@ Until the minidriver receives a SRB\_INDICATE\_MASTER\_CLOCK for a particular st
 
 The minidriver should retain the **CommandData.MasterClockHandle** field in the SRB that points to the handle for the master clock. If this handle is zero, it indicates to the minidriver that this stream is now free running and cannot be subordinate to a master clock.
 
- 
+ 
 
- 
+ 
 
 
 

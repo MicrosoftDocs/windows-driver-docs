@@ -8,11 +8,7 @@ keywords:
 - Application Verifier
 - AppVerif.exe
 - user-mode application testing
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ You can use Application Verifier alone or in conjunction with a user-mode debugg
 
 Application Verifier is included in the [Windows Software Development Kit]( http://go.microsoft.com/fwlink/p/?linkid=309790) (SDK) for desktop apps and is available as a separate downloadable component when you download the SDK from [Downloads for developing desktop apps]( http://go.microsoft.com/fwlink/p/?linkid=309790). The tool comes with its own documentation. To read the documentation, start Application Verifier and from the **Help** menu, click **Help**, or press F1.
 
- 
+ 
 
- 
+ 
 
 
 

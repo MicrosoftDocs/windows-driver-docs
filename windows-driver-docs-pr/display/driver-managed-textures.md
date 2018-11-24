@@ -6,11 +6,7 @@ keywords:
 - texture management WDK Direct3D , driver-managed
 - driver-managed textures WDK Direct3D
 - manageable textures WDK Direct3D
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +30,9 @@ The driver should handle [*DdBlt*](https://msdn.microsoft.com/library/windows/ha
 
 The driver is allowed to perform texture management in order to perform optimization transformations on the textures or to decide for itself where and when to transfer textures in memory.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,13 +1,8 @@
 ---
 title: WIA Error Handler Return Values
-author: windows-driver-content
 description: WIA Error Handler Return Values
 ms.assetid: 9b8efcd7-e767-4344-b3a1-96b1898e102f
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -40,7 +35,7 @@ Additionally, an error handler must be consistent in handling device status code
 
 The following code is an example of an invalid error handler:
 
-```
+```cpp
 STDMETHODIMP
 CErrHandler::ReportStatus(
     IN  LONG        lFlags,
@@ -60,9 +55,9 @@ CErrHandler::ReportStatus(
 
 Removing the *HandleMessageNow* routine would make this a valid error handler.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -4,11 +4,7 @@ description: Rectangular Memory Allocation
 ms.assetid: 27e60130-3a6e-410a-86a7-19acad5ecb53
 keywords:
 - rectangular memory allocation WDK DirectDraw
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,7 +32,7 @@ In the preceding figure, the starting point (indicated by the **fpStart** member
 
 The following pseudocode shows how a [**VIDEOMEMORY**](https://msdn.microsoft.com/library/windows/hardware/ff570171) structure is set up for rectangular memory:
 
-```
+```cpp
 /*
  * video memory pool usage
  */
@@ -50,7 +46,7 @@ The only difference between the code for rectangular memory and its linear count
 
 The following pseudocode shows how rectangular memory heaps are set up:
 
-```
+```cpp
 /*
  * video memory pool information
  */
@@ -75,9 +71,9 @@ The following pseudocode shows how rectangular memory heaps are set up:
 
 The memory heap starting point is set to the starting address of the primary surface plus the width of the primary surface. The width is determined by the pitch minus the width of the primary surface. The height is set to the height of the primary surface. The surface capabilities are set to zero to indicate that there are no imposed surface use restrictions (therefore, the surface can be used for sprites or any other type of surface).
 
- 
+ 
 
- 
+ 
 
 
 

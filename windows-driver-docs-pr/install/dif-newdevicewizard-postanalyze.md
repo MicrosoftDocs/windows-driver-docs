@@ -12,6 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # DIF_NEWDEVICEWIZARD_POSTANALYZE
@@ -46,7 +47,7 @@ After Windows registers the device, which makes the devnode "live," but before W
 </tbody>
 </table>
 
- 
+ 
 
 ### Installer Input
 
@@ -127,9 +128,9 @@ Requirements
 
 [**SP_NEWDEVICEWIZARD_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff553305)
 
- 
+ 
 
- 
+ 
 
 
 

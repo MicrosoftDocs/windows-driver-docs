@@ -1,6 +1,5 @@
 ---
 title: GDL Schema Attribute Element
-author: windows-driver-content
 description: GDL Schema Attribute Element
 ms.assetid: b46c0c6c-28af-4121-9182-65dc23b0ce7d
 keywords:
@@ -11,11 +10,7 @@ keywords:
 - GDL_UntypedAtt WDK GDL
 - untyped attribute WDK GDL
 - snapshots WDK GDL , structure
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,7 +19,7 @@ ms.localizationpriority: medium
 
 The data type of all &lt;GDL\_ATTRIBUTE&gt; elements is specified on a per-instance basis by using **xsi:type**. Attributes without a specific data type definition are designated instances of the generic attribute element (&lt;GDL\_UntypedAtt&gt;), which is defined in the GDL-produced schema as follows:
 
-```
+```cpp
     <complexType name="GDL_UntypedAtt"  mixed="true">
         <sequence>
             <any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
@@ -44,9 +39,9 @@ GDL compound data types are represented by the generic data type. Instances of c
 
 Values of GDL attributes that have no defined data type or are not associated with a template or do not conform to the syntax that is expected for the specified data type are represented by a &lt;CDATA&gt; section in the &lt;GDL\_ATTRIBUTE&gt; element. This section enables clients or other Parser-Filters to process the value as they desire. Such unknown data types will not contain the **xsi:type** attribute. More than one &lt;CDATA&gt; section might be required to represent the value if the value contains the string "\]\]&gt;".
 
- 
+ 
 
- 
+ 
 
 
 

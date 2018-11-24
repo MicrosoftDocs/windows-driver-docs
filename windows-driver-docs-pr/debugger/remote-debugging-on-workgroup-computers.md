@@ -2,11 +2,7 @@
 title: Remote Debugging on Workgroup Computers
 description: You can perform remote debugging with computers that are joined to a workgroup.
 ms.assetid: 0E740E1A-8DEA-4086-AE9D-6B135BF278B0
-ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -60,20 +56,20 @@ There are several ways to activate a debugging client. For more information, see
 **Note**  
 If you are using a named pipe to connect a debugging client to a debugging server, you must provide the user name and password of an account that has access to the computer running the debugging server. Use one, but not both, of the following options.
 
--   Log on to the debugging client computer with an account that shares the user name and password of an account on the debugging server computer.
--   On the debugging client computer, in a Command Prompt window, enter the following command.
+- Log on to the debugging client computer with an account that shares the user name and password of an account on the debugging server computer.
+- On the debugging client computer, in a Command Prompt window, enter the following command.
 
-    **net use \\\\***Server***\\ipc$ /user:***UserName*
+  **net use \\\\**<em>Server</em>**\\ipc$ /user:**<em>UserName</em>
 
-    where *Server* is the name of the server computer, and *UserName* is the name of an account that has access to the server computer.
+  where *Server* is the name of the server computer, and *UserName* is the name of an account that has access to the server computer.
 
-    When you are prompted, enter the password for *UserName*.
+  When you are prompted, enter the password for *UserName*.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

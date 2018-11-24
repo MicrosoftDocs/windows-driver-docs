@@ -1,33 +1,24 @@
 ---
-title: !index
+title: Time Travel Debugging Extension !index Command
 description: The !index extension indexes time travel traces or displays index status information.
-ms.author: domars
-ms.date: 09/21/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 10/12/2018
 ms.localizationpriority: medium
 ---
 
+#  !index
 
-> [!NOTE]
-> The information in this topic is preliminary. Updated information will be provided in a later release of the documentation. 
->
-
-
-# ![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png) !index
-
+![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png)
 
 The **!index** extension indexes time travel traces or displays index status information.
 
-```
+```dbgsyntax
 !index [-status] [-force] 
 ```
 
 
-Use ```!index``` to run an indexing pass over the current trace. 
+Use `!index` to run an indexing pass over the current trace. 
 
-```
+```dbgcmd
 0:000> !index
 Indexed 10/14 keyframes
 Indexed 14/14 keyframes
@@ -36,7 +27,7 @@ Successfully created the index in 535ms.
 
 If the current trace is already indexed, the !index command does nothing.
 
-```
+```dbgcmd
 0:000> !index
 Successfully created the index in 0ms.
 ```
@@ -47,17 +38,17 @@ Successfully created the index in 0ms.
 
 **-status**
 
-Use ```!index -status``` to report the status of the trace index.
+Use `!index -status` to report the status of the trace index.
 
-```
+```dbgcmd
 0:000> !tt.index -status
 Index file loaded.
 ```
 **-force**
 
-Use ```!index -force``` to reindex the trace even if an an unloadable index file exists on disk.
+Use `!index -force` to reindex the trace even if an unloadable index file exists on disk.
 
-```
+```dbgcmd
 0:000> !tt.index -force
 Successfully created the index in 152ms.
 ```
@@ -79,7 +70,7 @@ This extension only works with time travel traces. For more information about ti
 
 -------
 
- 
+ 
 
 
 

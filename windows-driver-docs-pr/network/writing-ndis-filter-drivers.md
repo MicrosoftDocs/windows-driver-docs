@@ -6,11 +6,7 @@ keywords:
 - filter drivers WDK networking , writing
 - NDIS filter drivers WDK , writing
 - writing NDIS filter drivers WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,9 +33,9 @@ The following topics provide information about how to write filter drivers:
 -   [Filter Module PnP Event Notifications](filter-module-pnp-event-notifications.md)
 -   [Filter Module Status Indications](filter-module-status-indications.md)
 
- 
+ 
 
- 
+ 
 
 
 

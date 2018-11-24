@@ -1,16 +1,11 @@
 ---
 title: Initializing a BDA Minidriver
-author: windows-driver-content
 description: Initializing a BDA Minidriver
 ms.assetid: 4df2efc6-e666-48d5-9a7b-cbf724c027f0
 keywords:
 - BDA minidrivers WDK AVStream , initializing
 - initializing BDA minidrivers WDK AVStream
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,7 +23,7 @@ A BDA minidriver is initialized similarly to other AVStream minidrivers. The BDA
 
 The following code snippet shows examples of an array of filter descriptors, a dispatch table for the BDA device, and the descriptor for the BDA device:
 
-```
+```cpp
 //
 //  Array containing descriptors for all filter factories
 //  available on the device.
@@ -92,9 +87,9 @@ DeviceDescriptor =
 #endif // DYNAMIC_TOPOLOGY
 ```
 
- 
+ 
 
- 
+ 
 
 
 

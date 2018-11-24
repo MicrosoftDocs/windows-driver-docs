@@ -7,11 +7,7 @@ keywords:
 - jack-presence detection WDK audio
 - registering subdevices
 - dynamic subdevices WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -56,9 +52,9 @@ Audio adapters that support dynamic topologies have the following benefits:
 
     After removing a subdevice, the driver can use the hardware resources that were bound to the subdevice's internal topology to create a new subdevice with a possibly different topology.
 
- 
+ 
 
- 
+ 
 
 
 

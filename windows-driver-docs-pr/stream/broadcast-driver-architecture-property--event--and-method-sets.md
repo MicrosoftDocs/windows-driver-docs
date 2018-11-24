@@ -2,11 +2,7 @@
 title: Broadcast Driver Architecture Property, Event, and Method Sets
 description: Broadcast Driver Architecture Property, Event, and Method Sets
 ms.assetid: 4323c19a-e47d-4ec6-a39c-3f2e95c526e4
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -70,11 +66,11 @@ The BDA void transform property set controls when a node starts and stops operat
 
 **Note**   The BDA property, event, and method sets are available on Windows XP and later. These sets are available on the Windows 2000 platform only if DirectX 9.0 and later is installed on that platform.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

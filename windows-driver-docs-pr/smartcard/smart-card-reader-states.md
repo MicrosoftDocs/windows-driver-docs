@@ -7,11 +7,7 @@ keywords:
 - reader states WDK smart card
 - states WDK smart card
 - vendor-supplied drivers WDK smart card , reader states
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -66,11 +62,11 @@ The following table defines the smart card reader states.
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

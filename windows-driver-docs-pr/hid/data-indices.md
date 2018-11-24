@@ -1,16 +1,11 @@
 ---
 title: Data Indices
-author: windows-driver-content
 description: Data Indices
 ms.assetid: 84577544-515a-4fdc-86e5-518182c6c461
 keywords:
 - data index WDK HID
 - index WDK HID data
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +25,9 @@ Capability structures cross-reference usages and data indices in the following w
 
 For more information about how to use data indices, see [Extracting and Setting Control Data by Data Indices](extracting-and-setting-control-data-by-data-indices.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: Minidriver Version 5.07 Features
 description: Minidriver Version 5.07 Features
 ms.assetid: BFB38805-D2D3-40D2-B336-127B3B84141D
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -44,9 +40,9 @@ Registration of a recognized card ATRs is now handled through the manifest, not 
 
 Interfaces for Secret Agreement Changes to ECDH are updated.
 
- 
+ 
 
- 
+ 
 
 
 

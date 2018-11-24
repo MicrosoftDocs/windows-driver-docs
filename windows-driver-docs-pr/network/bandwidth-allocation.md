@@ -2,11 +2,7 @@
 title: Bandwidth Allocation
 description: Bandwidth Allocation
 ms.assetid: 775B4085-6028-441F-9D52-341077FF1647
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,9 +17,9 @@ NDIS Quality of Service (QoS) parameters are specified through the [**NDIS\_QOS\
 
 For more information about priority levels, see [IEEE 802.1p Priority Levels](ieee-802-1p-priority-levels.md).
 
- 
+ 
 
- 
+ 
 
 
 

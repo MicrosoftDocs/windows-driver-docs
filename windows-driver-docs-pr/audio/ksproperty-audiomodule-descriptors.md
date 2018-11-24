@@ -9,11 +9,7 @@ api_name:
 - KSPROPERTY_AUDIOMODULE_DESCRIPTORS
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -53,7 +49,7 @@ ms.localizationpriority: medium
 </tbody>
 </table>
 
- 
+ 
 
 The property value is a structure, followed by zero (0) or more [**KSAUDIOMODULE\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/mt808137) structures.
 
@@ -96,9 +92,9 @@ Requirements
 
 [KSPROPSETID\_AudioModule](kspropsetid-audiomodule.md)
 
- 
+ 
 
- 
+ 
 
 
 

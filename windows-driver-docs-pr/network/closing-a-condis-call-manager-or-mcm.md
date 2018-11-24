@@ -8,11 +8,7 @@ keywords:
 - miniport call managers WDK networking , closing
 - closing call managers
 - closing miniport call managers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +26,9 @@ If a stand-alone call manager or MCM calls **NdisCmNotifyCloseAddressFamily** or
 
 For more information about closing an address family in a CoNDIS client, see [Closing an Address Family in a CoNDIS Client](closing-an-address-family-in-a-condis-client.md).
 
- 
+ 
 
- 
+ 
 
 
 

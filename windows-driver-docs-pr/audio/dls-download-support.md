@@ -13,11 +13,7 @@ keywords:
 - user-mode synths WDK audio , downloadable sounds
 - custom synths WDK audio , downloadable sounds
 - synthesizers WDK audio , downloadable sounds
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -51,9 +47,9 @@ The DLS data format is identical in kernel and user modes.
 
 The [KSPROPSETID\_Synth\_Dls](https://msdn.microsoft.com/library/windows/hardware/ff537488) property set contains properties that are used to download DLS samples and instruments to a DirectMusic synthesizer. This property set can be used to download both DLS Level 1 and DLS Level 2 data. Only the format of the downloaded data changes between DLS Levels 1 and 2.
 
- 
+ 
 
- 
+ 
 
 
 

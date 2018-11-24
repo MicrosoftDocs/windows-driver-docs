@@ -7,11 +7,7 @@ keywords:
 - TCP/IP offload service porting WDK networking , backward compatibility
 - offload service porting WDK networking , backward compatibility
 - porting task offload services WDK networking , backwa
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,9 +31,9 @@ The following compatibility restrictions apply to NDIS 5.*x* drivers:
 
 -   Protocol drivers must handle the case where a miniport driver reports offload capabilities but all of the values are zero. All values set to zero does not indicate that there is an error.
 
- 
+ 
 
- 
+ 
 
 
 

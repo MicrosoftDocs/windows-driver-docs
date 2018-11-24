@@ -3,11 +3,7 @@ title: tokenfields
 description: The tokenfields extension displays the names and offsets of the fields within the access token object (the TOKEN structure).
 ms.assetid: dfadfdb0-1ed8-4c21-9207-dc02d7435475
 keywords: ["token", "tokenfields Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!tokenfields** extension displays the names and offsets of the fields within the access token object (the TOKEN structure).
 
-```
+```dbgcmd
 !tokenfields
 ```
 
@@ -48,7 +44,7 @@ The **!tokenfields** extension displays the names and offsets of the fields with
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -59,7 +55,7 @@ Remarks
 
 This extension command is not available in Windows XP or later versions of Windows. Instead, use the [**dt (Display Type)**](dt--display-type-.md) command to show the TOKEN structure directly:
 
-```
+```dbgcmd
 kd> dt nt!_TOKEN 
 ```
 
@@ -67,7 +63,7 @@ To see a specific instance of the TOKEN structure, use the [**!token**](-token.m
 
 Here is an example of **!tokenfields** from a Windows 2000 system:
 
-```
+```dbgcmd
 kd> !tokenfields
  TOKEN structure offsets:
     TokenSource:           0x0
@@ -90,9 +86,9 @@ kd> !tokenfields
     VariablePart:          0x84
 ```
 
- 
+ 
 
- 
+ 
 
 
 

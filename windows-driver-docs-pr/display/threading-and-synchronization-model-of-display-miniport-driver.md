@@ -7,11 +7,7 @@ keywords:
 - synchronization WDK display , miniport drivers
 - miniport drivers WDK display , synchronization
 - miniport drivers WDK display , threading
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +29,9 @@ Multiple threads can be present within the display miniport driver at the same t
 
 -   [Thread Synchronization and TDR](thread-synchronization-and-tdr.md)
 
- 
+ 
 
- 
+ 
 
 
 

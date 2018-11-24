@@ -2,11 +2,7 @@
 title: ConnectionInfo
 description: ConnectionInfo
 ms.assetid: bbdba286-4d28-46b6-bafa-83cbddd883ae
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -83,7 +79,7 @@ The ConnectionInfo element specifies a list of connections for the specified ope
 <td><p>AutoConnectOrder</p></td>
 <td><p>xs:positiveinteger</p></td>
 <td><p>No</p></td>
-<td><p>Determines the order in which Windows tries to connect to each of the APNs in the [ConnectionInfoList](connectioninfolist.md) element.</p></td>
+<td><p>Determines the order in which Windows tries to connect to each of the APNs in the <a href="connectioninfolist.md" data-raw-source="[ConnectionInfoList](connectioninfolist.md)">ConnectionInfoList</a> element.</p></td>
 </tr>
 <tr class="even">
 <td><p>Compression</p></td>
@@ -102,7 +98,7 @@ The ConnectionInfo element specifies a list of connections for the specified ope
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Child_elements"></span><span id="child_elements"></span><span id="CHILD_ELEMENTS"></span>Child elements
 
@@ -125,13 +121,13 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[ConnectionInfoList](connectioninfolist.md)</p></td>
+<td><p><a href="connectioninfolist.md" data-raw-source="[ConnectionInfoList](connectioninfolist.md)">ConnectionInfoList</a></p></td>
 <td><p>Specifies the details for an operator in the APN database.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="XSD"></span><span id="xsd"></span>XSD
 
@@ -208,9 +204,9 @@ There are no child elements.
 
 The ConnectionInfo element is required.
 
- 
+ 
 
- 
+ 
 
 
 

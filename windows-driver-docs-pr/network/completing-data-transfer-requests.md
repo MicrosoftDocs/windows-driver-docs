@@ -2,11 +2,7 @@
 title: Completing Data Transfer Requests
 description: Completing Data Transfer Requests
 ms.assetid: 4c187202-c7a8-4fd8-984a-5bae647b74b0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +22,9 @@ Whenever possible, the switch attempts to call the SAN service provider's [**WSP
 
 If the switch requires notification of the completion of an overlapped data transfer operation, it sets the low-order bit of the **hEvent** member in the WSAOVERLAPPED structure to zero. The SAN service provider must complete data transfer operations that are initiated in this way by calling the **WPUCompleteOverlappedRequest** function to signal completion. In this call, the SAN service provider passes a pointer to the WSAOVERLAPPED structure that corresponds to a completed data transfer operation. In this **WPUCompleteOverlappedRequest** call, the SAN service provider also passes the socket descriptor that was acquired from the switch in a call to the **WPUCreateSocketHandle** function. The switch receives completion notifications, matches them to an application's I/O requests, and completes those I/O requests, as appropriate, for the application. For information about the **WPUCompleteOverlappedRequest** and **WPUCreateSocketHandle** functions, see the Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -7,11 +7,7 @@ keywords:
 - audio drivers WDK , miniport drivers
 - audio miniport drivers WDK
 - miniport drivers WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -53,9 +49,9 @@ Various aspects of miniport driver development are discussed in the following to
 
 [Other Implementation Issues for Audio Drivers](other-implementation-issues-for-audio-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,13 +1,8 @@
 ---
 title: WDI_TLV_FIRMWARE_VERSION
-author: windows-driver-content
 description: WDI_TLV_FIRMWARE_VERSION is a TLV that contains the firmware version.
 ms.assetid: 31E61ACA-AF2F-4E5D-9448-363630A27E39
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_FIRMWARE_VERSION Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -35,7 +30,7 @@ The size (in bytes) of the array of char elements. The array must contain 1 or m
 |----------|-----------------------------------------------------------------|
 | char\[\] | The firmware version, stored as a null-terminated ASCII string. |
 
- 
+ 
 
 Requirements
 ------------
@@ -61,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

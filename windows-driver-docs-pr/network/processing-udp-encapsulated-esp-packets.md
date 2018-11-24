@@ -4,11 +4,7 @@ description: Processing UDP-Encapsulated ESP Packets
 ms.assetid: b5b10a2c-1080-4c21-a187-1c0aff30b229
 keywords:
 - UDP-encapsulated ESP packets WDK IPsec offload , processing
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +25,9 @@ When a NIC receives a UDP-encapsulated packet on port 4500, it checks whether th
 
 If the incoming ESP packet is a UDP-encapsulated transport-over-tunnel packet, as described in [UDP-ESP Encapsulation Types](udp-esp-encapsulation-types.md), the NIC first decrypts the ESP payload of tunnel-mode portion of the packet, which is not UDP-encapsulated. Then the NIC processes the UDP-encapsulated tunnel-mode portion of the packet.
 
- 
+ 
 
- 
+ 
 
 
 

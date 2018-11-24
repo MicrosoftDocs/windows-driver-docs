@@ -3,11 +3,7 @@ title: handle
 description: The handle extension displays information about a handle or handles that one or all processes in the target system own.
 ms.assetid: ae3b7e7e-cdc1-4b83-88d7-63fe207044e3
 keywords: ["handle", "handle, handle extension", "handle Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,14 +20,14 @@ The **!handle** extension displays information about a handle or handles that on
 
 User-Mode
 
-```
+```dbgcmd
 !handle [Handle [UMFlags [TypeName]]] 
 !handle -?
 ```
 
 Kernel-Mode
 
-```
+```dbgcmd
     !handle [Handle [KMFlags [Process [TypeName]]]] 
 ```
 
@@ -108,7 +104,7 @@ Ntsdexts.dll</td>
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -117,13 +113,13 @@ For more information about handles, see the [**!htrace**](-htrace.md) extension,
 Remarks
 -------
 
-You can use the **!handle** extension during user-mode and kernel-mode live debugging. You can also use this extension on kernel-mode dump files. However, you cannot use this extension on user-mode dump files, unless you specifically created them with handle information. (You can create create such dump files by using the [**.dump /mh (Create Dump File)**](-dump--create-dump-file-.md) command.)
+You can use the **!handle** extension during user-mode and kernel-mode live debugging. You can also use this extension on kernel-mode dump files. However, you cannot use this extension on user-mode dump files, unless you specifically created them with handle information. (You can create such dump files by using the [**.dump /mh (Create Dump File)**](-dump--create-dump-file-.md) command.)
 
 During live user-mode debugging, you can use the [**.closehandle (Close Handle)**](-closehandle--close-handle-.md) command to close one or more handles.
 
 The following examples are user-mode examples of the **!handle** extension. The following command displays a list of all handles.
 
-```
+```dbgcmd
 0:000> !handle
 Handle 4
   Type          Section
@@ -147,7 +143,7 @@ Directory       1
 
 The following command displays detailed information about handle 0x8.
 
-```
+```dbgcmd
 0:000> !handle 8 f
 Handle 8
   Type          Event
@@ -165,7 +161,7 @@ Handle 8
 
 The following examples are kernel-mode examples of **!handle**. The following command lists all handles, including free handles.
 
-```
+```dbgcmd
 kd> !handle 0 4
 processor number 0
 PROCESS 80559800  SessionId: 0  Cid: 0000    Peb: 00000000  ParentCid: 0000
@@ -189,7 +185,7 @@ New version of handle table at e1002000 with 380 Entries in use
 
 The following command show detailed information about handle 0x14 in the kernel handle table.
 
-```
+```dbgcmd
 kd> !handle 14 13
 processor number 0
 PROCESS 80559800  SessionId: 0  Cid: 0000    Peb: 00000000  ParentCid: 0000
@@ -206,7 +202,7 @@ Object: e12751d0  Type: (80ec8db8) Key
 
 The following command shows information about all handles to Section objects in all processes.
 
-```
+```dbgcmd
 !handle 0 3 0 Section
 ...
 PROCESS fffffa8004f48940
@@ -223,9 +219,9 @@ Object: fffff8a000633f00  Type: (fffffa80035fef20) Section
 ...
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: Managing NIC Switches
 description: Managing NIC Switches
 ms.assetid: EE198C8D-427B-4013-8D19-5323332A4D87
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,11 +27,11 @@ For more information on NIC switches for SR-IOV network adapters, see [NIC Switc
 
 **Note**  Only the PF miniport driver can configure the network adapter's hardware resources, such as the NIC switch. The miniport driver for a PCIe Virtual Function (VF) on the SR-IOV network adapter cannot directly access most of the adapter's hardware resources. For more information, see [Writing SR-IOV VF Miniport Drivers](writing-sr-iov-vf-miniport-drivers.md).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

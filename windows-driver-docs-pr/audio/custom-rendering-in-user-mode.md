@@ -16,11 +16,7 @@ keywords:
 - DirectMusic WDK audio , user mode
 - default synthesizers
 - synthesizers WDK audio , user-mode custom rendering
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -50,9 +46,9 @@ The remainder of this section discusses various aspects of customizing the rende
 
 [Registering Your Synthesizer](registering-your-synthesizer.md)
 
- 
+ 
 
- 
+ 
 
 
 

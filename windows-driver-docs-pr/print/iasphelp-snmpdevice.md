@@ -1,6 +1,5 @@
 ---
 title: Iasphelp get\_SNMPDevice method
-author: windows-driver-content
 description: The SNMPDevice property enables an ASP Web page to obtain a printer's SNMP device index (as defined by RFC 1759).
 MS-HAID:
 - 'webfnc\_e4a9d1b3-1168-45a7-98cb-9c19fdf83009.xml'
@@ -16,18 +15,18 @@ api_name:
 - Iasphelp.get_SNMPDevice
 api_type:
 - COM
+ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # Iasphelp::get\_SNMPDevice method
-
 
 The **SNMPDevice** property enables an ASP Web page to obtain a printer's SNMP device index (as defined by RFC 1759).
 
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT get_SNMPDevice(
   [out] DWORD *pVal
 );
@@ -62,7 +61,7 @@ Win32 error codes can also be returned.
 </tr>
 <tr class="even">
 <td><strong>E_HANDLE</strong></td>
-<td><p>The [<strong>Iasphelp::Open</strong>](iasphelp-open.md) method has not been called.</p></td>
+<td><p>The <a href="iasphelp-open.md" data-raw-source="[&lt;strong&gt;Iasphelp::Open&lt;/strong&gt;](iasphelp-open.md)"><strong>Iasphelp::Open</strong></a> method has not been called.</p></td>
 </tr>
 <tr class="odd">
 <td><strong>E_OUTOFMEMORY</strong></td>
@@ -71,24 +70,16 @@ Win32 error codes can also be returned.
 </tbody>
 </table>
 
- 
-
-## <span id="ddk_iasphelp_snmpdevice_gg"></span><span id="DDK_IASPHELP_SNMPDEVICE_GG"></span>
-
-
-### <span id="vbscript_example"></span><span id="VBSCRIPT_EXAMPLE"></span>VBScript Example
-
-Remarks
--------
+## VBScript Example
 
 The [**Iasphelp::Open**](iasphelp-open.md) method must be called before the **Iasphelp::SNMPDevice** property can be queried.
 
-```
-    Dim objPrinter, SNMPDeviceIndex
-    strPrinter = Session("MS_printer")
-    Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
-    objPrinter.Open strPrinter
-    SNMPDeviceIndex = objPrinter.SNMPDevice
+```vb
+Dim objPrinter, SNMPDeviceIndex
+strPrinter = Session("MS_printer")
+Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
+objPrinter.Open strPrinter
+SNMPDeviceIndex = objPrinter.SNMPDevice
 ```
 
 Requirements
@@ -104,22 +95,9 @@ Requirements
 <td><p>Target platform</p></td>
 <td>Desktop</td>
 </tr>
-<tr class="even">
-<td><p>Version</p></td>
-<td><p>Available in Windows 2000 and later versions of the Windows operating systems.</p></td>
-</tr>
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**Iasphelp::Open**](iasphelp-open.md)
-
- 
-
- 
-
-
-
-

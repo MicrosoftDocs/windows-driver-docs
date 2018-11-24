@@ -9,11 +9,7 @@ api_name:
 - wscn FormatValue
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **FormatValue** element specifies a single supported file format an
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:FormatValue>
   text
 </wscn:FormatValue>
@@ -124,7 +120,7 @@ Required. One of the following values:
 </tbody>
 </table>
 
- 
+ 
 
 ## Child elements
 
@@ -145,7 +141,7 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>FormatsSupported</strong>](formatssupported.md)</p></td>
+<td><p><a href="formatssupported.md" data-raw-source="[&lt;strong&gt;FormatsSupported&lt;/strong&gt;](formatssupported.md)"><strong>FormatsSupported</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -157,14 +153,14 @@ You can both extend and subset the allowed values for this element.
 
 Although the WSD Scan Service supports the JBIG file format (ISO/IEC 11544:1993), it does *not* currently support JBIG2 (ISO/IEC 14492:2001).
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**FormatsSupported**](formatssupported.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,13 +1,8 @@
 ---
 title: OID_GEN_MULTICAST_BYTES_RCV
-author: windows-driver-content
 description: As a query, the OID_GEN_MULTICAST_BYTES_RCV OID specifies the number of bytes in multicast/functional packets that are received without errors.
 ms.assetid: 9c360aeb-f9b0-41d2-a6e0-feacd5419f55
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_GEN_MULTICAST_BYTES_RCV Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -61,9 +56,9 @@ Requirements
 
 [OID\_GEN\_STATISTICS](oid-gen-statistics.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: Audio Port Object Interfaces
 description: Audio Port Object Interfaces
 ms.assetid: 16026a03-4859-4fe8-a106-0d8a2b2a7f14
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -44,9 +40,9 @@ This section describes the following audio port object interfaces:
 
 [IPortWMIRegistration](https://msdn.microsoft.com/library/windows/hardware/ff536935)
 
- 
+ 
 
- 
+ 
 
 
 

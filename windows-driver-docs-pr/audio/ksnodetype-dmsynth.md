@@ -9,11 +9,7 @@ api_name:
 - KSNODETYPE_DMSYNTH
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,9 +21,9 @@ ms.localizationpriority: medium
 
 This parameter name is reserved for future use.
 
- 
+ 
 
- 
+ 
 
 
 

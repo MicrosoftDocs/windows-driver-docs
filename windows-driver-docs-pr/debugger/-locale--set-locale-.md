@@ -3,11 +3,7 @@ title: .locale (Set Locale)
 description: The .locale command sets the locale or displays the current locale.
 ms.assetid: 66c2a522-886f-41ef-ab90-176a3e0b7d88
 keywords: [".locale (Set Locale) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **.locale** command sets the locale or displays the current locale.
 
-```
+```dbgcmd
 .locale [Locale] 
 ```
 
@@ -55,7 +51,7 @@ Specifies the locale that you want. If you omit this parameter, the debugger dis
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -68,7 +64,7 @@ The locale controls how Unicode strings are displayed.
 
 The following examples show the **.locale** command.
 
-```
+```dbgcmd
 kd> .locale
 Locale: C
 
@@ -82,9 +78,9 @@ kd> .locale C
 Locale: C
 ```
 
- 
+ 
 
- 
+ 
 
 
 

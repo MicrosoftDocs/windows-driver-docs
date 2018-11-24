@@ -3,11 +3,7 @@ title: Initial Breakpoint
 description: Initial Breakpoint
 ms.assetid: c7fda1f0-bbfb-41d8-b3c9-568f2f0a74e1
 keywords: ["initial breakpoint", "breakpoints, initial breakpoint"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,9 +20,9 @@ If you want to start a new target and break into it when the execution of the ac
 
 For more information about automatic breakpoints in kernel mode, see [Crashing and Rebooting the Target Computer](crashing-and-rebooting-the-target-computer.md).
 
- 
+ 
 
- 
+ 
 
 
 

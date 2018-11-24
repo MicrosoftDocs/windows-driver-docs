@@ -2,11 +2,7 @@
 title: WDI data transfer
 description: This section covers WDI data transfer. The following terminology is used in this section.
 ms.assetid: DA07E2C2-6478-40DD-AAD8-8ABD2777CA73
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -66,11 +62,11 @@ This section covers WDI data transfer. The following terminology is used in this
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,6 +3,7 @@ title: iSCSI WMI Network Classes
 description: iSCSI WMI Network Classes
 ms.assetid: 7aedba15-d8f9-478c-a2e6-caefa67175f5
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # iSCSI WMI Network Classes
@@ -29,9 +30,9 @@ This section includes the following topics:
 
 [MSiSCSI\_TCPIPConfig WMI Class](msiscsi-tcpipconfig-wmi-class.md)
 
- 
+ 
 
- 
+ 
 
 
 

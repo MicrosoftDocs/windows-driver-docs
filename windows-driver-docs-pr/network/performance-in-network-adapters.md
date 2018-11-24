@@ -2,11 +2,7 @@
 title: Performance in Network Adapters
 description: There are always tradeoffs in deciding which hardware functions to implement on a network adapter.
 ms.assetid: 7BE3FC13-DEE1-41A2-9B4A-D04CF5D0FC9B
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -81,9 +77,9 @@ One of the most important factors in the network adapter hardware performance is
 
 Supporting larger Maximum Transmission Units (MTUs) and thus larger frame sizes, specifically Jumbo Frames, will reduce the network stack overhead incurred per byte. A 20% TCP throughput increase has been measured when the MTU was changed from 1514 to 9000. Also, a significant reduction of CPU utilization is obtained due to the fewer number of calls from the network stack to the network driver.
 
- 
+ 
 
- 
+ 
 
 
 

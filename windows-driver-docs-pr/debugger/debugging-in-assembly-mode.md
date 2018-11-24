@@ -3,11 +3,7 @@ title: Debugging in Assembly Mode
 description: Debugging in Assembly Mode
 ms.assetid: 048c43ff-7f9e-4a20-a524-44f66d92eefe
 keywords: ["assembly debugging", "assembly mode", "assembly debugging, overview"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -43,7 +39,7 @@ You can display the resulting code (known as *disassembly code*) in several diff
 
 The disassembly display appears in four columns: address offset, binary code, assembly language mnemonic, and assembly language details. The following example shows this display.
 
-```
+```dbgcmd
 0040116b    45          inc         ebp            
 0040116c    fc          cld                        
 0040116d    8945b0      mov         eax,[ebp-0x1c] 
@@ -87,9 +83,9 @@ If your application was written in assembly language, the disassembly that the d
 
 If you want to debug your code by referencing the original .asm files, you must use source mode debugging. You can load the assembly file like a C or C++ source file. For more information about this kind of debugging, see [Debugging in Source Mode](debugging-in-source-mode.md).
 
- 
+ 
 
- 
+ 
 
 
 

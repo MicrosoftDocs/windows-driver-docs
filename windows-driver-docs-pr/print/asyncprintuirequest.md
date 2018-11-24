@@ -1,6 +1,5 @@
 ---
 title: asyncPrintUIRequest element
-author: windows-driver-content
 description: The required asyncPrintUIRequest element describes a request issued by the printer driver to create a message on a client computer.
 ms.assetid: 992e3c97-b148-4802-be48-3067adb6dd0d
 keywords: ["asyncPrintUIRequest element Print Devices"]
@@ -10,11 +9,7 @@ api_name:
 - asyncPrintUIRequest
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,7 +23,7 @@ The **asyncPrintUIRequest** element is defined in the *asyncui* namespace at thi
 Usage
 -----
 
-``` syntax
+```xml
 <asyncPrintUIRequest>
   child elements
 </asyncPrintUIRequest>
@@ -55,12 +50,12 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>requestClose</strong>](requestclose.md)</p></td>
+<td><p><a href="requestclose.md" data-raw-source="[&lt;strong&gt;requestClose&lt;/strong&gt;](requestclose.md)"><strong>requestClose</strong></a></p></td>
 <td><p></p>
 <p>An optional element that is used to close an event notification message on the client computer.</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>requestOpen</strong>](requestopen.md)</p></td>
+<td><p><a href="requestopen.md" data-raw-source="[&lt;strong&gt;requestOpen&lt;/strong&gt;](requestopen.md)"><strong>requestOpen</strong></a></p></td>
 <td><p></p>
 <p>An element that is used to open an event notification message on the client computer.</p></td>
 </tr>
@@ -77,7 +72,7 @@ Examples
 
 The following code example shows how to use the **asyncPrintUIRequest** element.
 
-```
+```xml
 <?xml version="1.0" ?>
    <asyncPrintUIRequest
     xmlns="http://schemas.microsoft.com/2003/print/asyncui/v1/request">
@@ -95,16 +90,16 @@ The following code example shows how to use the **asyncPrintUIRequest** element.
   </asyncPrintUIRequest>
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**requestClose**](requestclose.md)
 
 [**requestOpen**](requestopen.md)
 
- 
+ 
 
- 
+ 
 
 
 

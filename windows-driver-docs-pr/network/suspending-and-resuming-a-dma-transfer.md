@@ -9,11 +9,7 @@ keywords:
 - DMA transfers WDK NetDMA , suspending DMA transfers
 - NetDMA WDK networking , suspending DMA transfers
 - suspendi
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 **Note**  The NetDMA interface is not supported in Windows 8 and later.
 
- 
+ 
 
 
 
@@ -37,9 +33,9 @@ The NetDMA interface calls the [**ProviderResumeDma**](https://msdn.microsoft.co
 
 When the DMA engine resumes transfers, the hardware reloads the DMA descriptor that it processed last to get the new next descriptor.
 
- 
+ 
 
- 
+ 
 
 
 

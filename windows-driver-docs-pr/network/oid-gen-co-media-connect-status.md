@@ -1,15 +1,10 @@
 ---
 title: OID_GEN_CO_MEDIA_CONNECT_STATUS
-author: windows-driver-content
 description: This topic describes the OID_GEN_CO_MEDIA_CONNECT_STATUS object identifier (OID).
 ms.assetid: d49ebdfb-1c41-40dc-86bf-01db50a73607
 keywords:
 - OID_GEN_CO_MEDIA_CONNECT_STATUS
-ms.author: windowsdriverdev
 ms.date: 11/02/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

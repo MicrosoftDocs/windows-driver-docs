@@ -1,5 +1,5 @@
 ---
-title: FSCTL\_GET\_RETRIEVAL\_POINTERS control code
+title: FSCTL_GET_RETRIEVAL_POINTERS control code
 description: The FSCTL\_GET\_RETRIEVAL\_POINTERS control code retrieves a variably sized data structure that describes the allocation and location on disk of a specific file.
 ms.assetid: d77790c8-9fe6-4b36-995e-40a7ea54c18a
 keywords: ["FSCTL_GET_RETRIEVAL_POINTERS control code Installable File System Drivers"]
@@ -11,11 +11,7 @@ api_location:
 - Ntifs.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,7 +38,7 @@ The control code for the operation. Use FSCTL\_GET\_RETRIEVAL\_POINTER for this 
 <a href="" id="inputbuffer"></a>*InputBuffer*  
 A pointer to a STARTING\_VCN\_INPUT\_BUFFER structure that indicates the virtual cluster number (VCN) that marks the beginning of the alternate stream, file, or directory. The STARTING\_VCN\_INPUT\_BUFFER structure is defined as follows:
 
-```
+```cpp
 typedef struct {
   LARGE_INTEGER  ;
 } STARTING_VCN_INPUT_BUFFER, *PSTARTING_VCN_INPUT_BUFFER;
@@ -61,7 +57,7 @@ Length, in bytes, of the input buffer at *InputBuffer.*
 <a href="" id="outputbuffer"></a>*OutputBuffer*  
 A pointer to a variably sized structure of type RETRIEVAL\_POINTERS\_BUFFER that contains an enumeration of the extents on the disk that correspond to the alternate stream, file, or directory:
 
-```
+```cpp
 typedef struct RETRIEVAL_POINTERS_BUFFER {
  ULONG  ExtentCount;
   LARGE_INTEGER  StartingVcn;
@@ -129,9 +125,9 @@ Requirements
 
 [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462)
 
- 
+ 
 
- 
+ 
 
 
 

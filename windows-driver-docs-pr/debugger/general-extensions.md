@@ -3,11 +3,7 @@ title: General Extensions
 description: General Extensions
 ms.assetid: 99ff4111-9f65-4e3d-beb3-0aa49f35a015
 keywords: ["extension commands ( commands), general extensions", "exts.dll (general extensions)", "dbghelp.dll (general extensions)", "general extensions (exts.dll - dbghelp.dll)"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,9 +21,9 @@ Each extension command reference topics lists the DLLs that expose that command.
 
 -   If your target computer is running Microsoft Windows XP or a later version of Windows, use winxp\\kdexts.dll, winxp\\ntsdexts.dll, winxp\\exts.dll, winext\\ext.dll, or dbghelp.dll.
 
- 
+ 
 
- 
+ 
 
 
 

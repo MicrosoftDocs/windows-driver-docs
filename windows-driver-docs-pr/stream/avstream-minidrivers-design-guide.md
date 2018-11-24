@@ -1,6 +1,5 @@
 ---
 title: AVStream Minidrivers Design Guide
-author: windows-driver-content
 description: AVStream Minidrivers Design Guide
 ms.assetid: ad717dca-55fe-428a-8d5c-239324251eda
 keywords:
@@ -13,11 +12,7 @@ keywords:
 - integrated audio/video streaming WDK AVStream
 - audio/video streaming WDK AVStream
 - audio WDK AVStream
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -49,9 +44,9 @@ This Design Guide describes how to design AVStream minidrivers that control stre
 
 [Using Hardware Codec Support in AVStream](hardware-codec-support-in-avstream.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -10,11 +10,7 @@ keywords:
 - ChangeDisplaySettingsEx
 - analog content protection WDK COPP
 - ACP protection type WDK COPP
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +26,9 @@ Because applications can alter analog content protection (ACP) levels by calling
 
 For more information about the **ChangeDisplaySettingsEx** function, see the Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

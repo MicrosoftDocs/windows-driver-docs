@@ -6,11 +6,7 @@ keywords:
 - debugging code WDK , attached debuggers
 - attached debuggers WDK
 - status information WDK debugging
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +26,9 @@ To determine the status of kernel debugging, the following variables and routine
 
 -   (Microsoft Windows Server 2003 and later) The [**KdRefreshDebuggerNotPresent**](https://msdn.microsoft.com/library/windows/hardware/ff548109) routine refreshes the value of KD\_DEBUGGER\_NOT\_PRESENT.
 
- 
+ 
 
- 
+ 
 
 
 

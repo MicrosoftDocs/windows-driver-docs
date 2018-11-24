@@ -9,11 +9,7 @@ keywords:
 - reference counts WDK audio
 - input parameter reference counting WDK audio
 - output parameter reference counting WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -41,9 +37,9 @@ For example, the [**IMiniportWaveCyclic::NewStream**](https://msdn.microsoft.com
 
 For a description of the unconventional reference counting that this method performs on its *DmaChannel* output parameter, see [**IMiniportWavePci::NewStream**](https://msdn.microsoft.com/library/windows/hardware/ff536735).
 
- 
+ 
 
- 
+ 
 
 
 

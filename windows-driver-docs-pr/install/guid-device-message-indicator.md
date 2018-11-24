@@ -12,6 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # GUID_DEVICE_MESSAGE_INDICATOR
@@ -42,7 +43,7 @@ The GUID_DEVICE_MESSAGE_INDICATOR [device interface class](https://msdn.microsof
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -67,9 +68,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

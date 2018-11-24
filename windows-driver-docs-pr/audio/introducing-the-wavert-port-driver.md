@@ -2,11 +2,7 @@
 title: Introducing the WaveRT Port Driver
 description: Introducing the WaveRT Port Driver
 ms.assetid: 48b2b59e-385e-4814-ac20-c4b1a08f32dc
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +29,9 @@ If you want your audio device to take advantage of the improvements in audio off
 
 The main client of the WaveRT port driver is the audio engine running in shared mode. For more information about the Windows Vista audio engine, see the [Exploring the Windows Vista Audio Engine](exploring-the-windows-vista-audio-engine.md) topic.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -7,11 +7,7 @@ keywords:
 - network drivers WDK , filter drivers
 - NDIS WDK , filter drivers
 - NDIS filter drivers WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,11 +26,11 @@ NDIS filter drivers are supported in NDIS 6.0 and later. The following sections 
 
 **Note**  You should use NDIS filter drivers instead of NDIS filter intermediate drivers. NDIS filter intermediate drivers are obsolete.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

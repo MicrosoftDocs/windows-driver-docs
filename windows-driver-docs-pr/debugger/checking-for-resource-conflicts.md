@@ -3,11 +3,7 @@ title: Checking for Resource Conflicts
 description: Checking for Resource Conflicts
 ms.assetid: c994085c-8610-487f-88a5-f11b4a68ec4a
 keywords: ["Plug and Play (PnP), resource conflicts", "resource conflicts"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,7 +17,7 @@ This section discusses techniques that can be used to detect resource conflicts.
 
 The first technique involves dumping the arbiter data. The following example examines the arbiter data for the I/O ranges:
 
-```
+```dbgcmd
 kd> !arbiter 1
 
 DEVNODE ff0daf48
@@ -85,7 +81,7 @@ Note that there are two arbiters: one located in the root of the device tree, an
 
 In the following example, the PCI bridge passes I/O 0xD000-0xDFFFF so its arbiter will contain the following two ranges:
 
-```
+```text
 0-CFFFF            Owner 00000000
 E0000-FFFFFFFFFFFFFFFF   Owner 00000000
 ```
@@ -94,7 +90,7 @@ The FFFFFFFFFFFFFFFF is because all arbitrated resources are treated as 64-bit r
 
 **Examples:**
 
-```
+```dbgcmd
 kd> !devobj ff0bb900
 
 Device object (ff0bb900) is for:
@@ -138,7 +134,7 @@ As shown in the example, this operation retrieved the legacy video card that own
 
 A similar technique is required to translate the interrupts:
 
-```
+```dbgcmd
 kd> !arbiter 4
 
 DEVNODE ff0daf48
@@ -159,7 +155,7 @@ Note that there is a single arbiter for interrupts: the root arbiter.
 
 For example, translate the interrupt 3F to an IRQ. First dump the device object, then the devnode:
 
-```
+```dbgcmd
 kd> !devobj ff0cf030
 
 Device object (ff0cf030) is for:
@@ -224,7 +220,7 @@ DevNode 0xff0cfe88 for PDO 0xff0cf030 at level 0x3
 
 For example, try to determine if there is a resource conflict that caused this device not to start, starting with a **devnode**:
 
-```
+```dbgcmd
 kd> !devnode 0xff0d4bc8 6
 
 DevNode 0xff0d4bc8 for PDO 0xff0d4cb0 at level 0
@@ -268,7 +264,7 @@ ing (0)
 
 First, make the assumption that this is an I/O conflict and dump the arbiters (see the preceding example). The result shows that the range 0x3EC-0x3EF is owned by 0xFF0D0B50, which overlaps the serial device's resources request. Next, dump the device object for the owner of this range, and then dump the devnode for the owner:
 
-```
+```dbgcmd
 kd> !devobj ff0d0b50
 
 Device object (ff0d0b50) is for:
@@ -302,7 +298,7 @@ To determine the resources that the PnP Manager assigned to a particular device 
 
 **Example:**
 
-```
+```dbgcmd
 ntoskrnl!IopStartDevice:
 80420212 55               push    ebp
 kd> kb
@@ -370,7 +366,7 @@ DevNode 0xff0cde88 for PDO 0xff0ce870 at level 0x2
 
 Example for PCMCIA:
 
-```
+```dbgcmd
 kd> bp pcmcia!pcmciastartpccard
 Loading symbols for 0x8039d000       pcmcia.sys ->   pcmcia.sys
 kd> kb
@@ -412,9 +408,9 @@ CmResourceList at 0xe11d8808  Version 0.0  Interface 0x1  Bus #0
 kd> g 
 ```
 
- 
+ 
 
- 
+ 
 
 
 

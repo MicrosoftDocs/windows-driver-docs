@@ -3,11 +3,7 @@ title: .readmem (Read Memory from File)
 description: The .readmem command reads raw binary data from the specified file and copies the data to the target computer's memory.
 ms.assetid: 128cbea1-5fb5-4685-8587-f814f94cc658
 keywords: [".readmem (Read Memory from File) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **.readmem** command reads raw binary data from the specified file and copies the data to the target computer's memory.
 
-```
+```dbgcmd
 .readmem FileName Range 
 ```
 
@@ -58,7 +54,7 @@ Specifies the address range for putting the data in memory. This parameter can c
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -67,9 +63,9 @@ The memory data is copied literally to the target computer. The debugger does no
 
 The **.readmem** command is the opposite of the [**.writemem (Write Memory to File)**](-writemem--write-memory-to-file-.md) command.
 
- 
+ 
 
- 
+ 
 
 
 

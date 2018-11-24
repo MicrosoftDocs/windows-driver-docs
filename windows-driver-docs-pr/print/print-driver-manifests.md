@@ -1,17 +1,12 @@
 ---
 title: Print Driver Manifests
-author: windows-driver-content
 description: Print Driver Manifests
 ms.assetid: fca0c211-1daa-4295-a03e-c0038b66a898
 keywords:
 - installing drivers WDK printer , manifests
 - printer driver installations WDK , manifests
 - manifests WDK printer
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +24,9 @@ A print driver package may contain two kinds of manifest:
 
 For more information on theme manifests, see [Using Theme Manifests](using-theme-manifests.md).
 
- 
+ 
 
- 
+ 
 
 
 

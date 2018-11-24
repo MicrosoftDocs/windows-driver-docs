@@ -9,11 +9,7 @@ api_name:
 - wscn ScannerDescription
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,7 +19,7 @@ ms.localizationpriority: medium
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ScannerDescription>
   child elements
 </wscn:ScannerDescription>
@@ -53,13 +49,13 @@ None
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ScannerInfo</strong>](scannerinfo.md)</p></td>
+<td><p><a href="scannerinfo.md" data-raw-source="[&lt;strong&gt;ScannerInfo&lt;/strong&gt;](scannerinfo.md)"><strong>ScannerInfo</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>ScannerLocation</strong>](scannerlocation.md)</p></td>
+<td><p><a href="scannerlocation.md" data-raw-source="[&lt;strong&gt;ScannerLocation&lt;/strong&gt;](scannerlocation.md)"><strong>ScannerLocation</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>ScannerName</strong>](scannername.md)</p></td>
+<td><p><a href="scannername.md" data-raw-source="[&lt;strong&gt;ScannerName&lt;/strong&gt;](scannername.md)"><strong>ScannerName</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -78,10 +74,10 @@ None
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ElementChanges</strong>](elementchanges.md)</p></td>
+<td><p><a href="elementchanges.md" data-raw-source="[&lt;strong&gt;ElementChanges&lt;/strong&gt;](elementchanges.md)"><strong>ElementChanges</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>ElementData for parent ScannerElements</strong>](elementdata-for-scannerelements-element.md)</p></td>
+<td><p><a href="elementdata-for-scannerelements-element.md" data-raw-source="[&lt;strong&gt;ElementData for parent ScannerElements&lt;/strong&gt;](elementdata-for-scannerelements-element.md)"><strong>ElementData for parent ScannerElements</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -93,7 +89,7 @@ Remarks
 
 The **ScannerDescription** element contains information about the scanner that rarely or never changes. A client retrieves this information by calling the [**GetScannerElementsRequest**](getscannerelementsrequest.md) operation element.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ElementChanges**](elementchanges.md)
@@ -108,9 +104,9 @@ The **ScannerDescription** element contains information about the scanner that r
 
 [**ScannerName**](scannername.md)
 
- 
+ 
 
- 
+ 
 
 
 

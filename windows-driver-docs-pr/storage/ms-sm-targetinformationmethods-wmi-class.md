@@ -3,6 +3,7 @@ title: MS\_SM\_TargetInformationMethods WMI Class
 description: MS\_SM\_TargetInformationMethods WMI Class
 ms.assetid: faedf8cf-d69f-4a4c-bc32-fd6df102d027
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MS\_SM\_TargetInformationMethods WMI Class
@@ -30,7 +31,7 @@ The MOF syntax for each method that belongs to this class is described in the re
 
 The MS\_SM\_TargetInformationMethods class is defined as follows in *Hbaapi.mof*:
 
-```
+```cpp
 class MS_SM_TargetInformationMethods
 {
     [key]
@@ -135,9 +136,9 @@ class MS_SM_TargetInformationMethods
 };
 ```
 
- 
+ 
 
- 
+ 
 
 
 

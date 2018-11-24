@@ -10,11 +10,7 @@ keywords:
 - succession requirements WDK DirectX VA
 - multiple uncompressed surfaces for decoding WDK DirectX VA
 - uncompressed surfaces example for decoding WDK DirectX VA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +24,9 @@ More than four uncompressed surfaces can be used for decoding, allowing the time
 
 Although a minimum of four buffers is required for effective use of DirectX VA with B pictures, the use of five or more buffers is encouraged, particularly in scenarios that do not require keeping delay to a minimum. DirectX VA decoders for I, B, and P-structured video decoding are therefore expected to set their minimum and maximum requested uncompressed surface allocation counts to at least four and five, respectively, when allocating uncompressed surfaces. Using one or more extra uncompressed surfaces can achieve reliable, tear-free operation.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,11 +3,7 @@ title: File Open Crash Dump
 description: File Open Crash Dump
 ms.assetid: 0a398f9a-776b-4438-bde4-7654e1f813b7
 keywords: ["File Open Crash Dump", "starting the debugger, File Open Crash Dump", "dump file, File Open Crash Dump"]
-ms.author: domars
 ms.date: 08/01/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +27,9 @@ After you choose the proper file, click **Open**.
 
 For more information about analyzing crash dump files, see [Analyzing a User-Mode Dump File](analyzing-a-user-mode-dump-file.md) or [Analyzing a Kernel-Mode Dump File with WinDbg](analyzing-a-kernel-mode-dump-file-with-windbg.md).
 
- 
+ 
 
- 
+ 
 
 
 

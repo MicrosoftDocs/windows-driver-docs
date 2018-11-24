@@ -4,11 +4,7 @@ description: COPP Video Miniport Driver Get Certificate Template Code
 ms.assetid: 13810013-389a-458d-be9d-e81a0b248dec
 keywords:
 - certificates WDK COPP
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,7 +18,7 @@ This section applies only to Windows Server 2003 SP1 and later, and Windows XP S
 
 Use the following example code to retrieve the size, in bytes, of the graphics hardware certificate for the COPP DirectX VA device object.
 
-```
+```cpp
 VP_STATUS
 IoctlCOPPGetCertificateLength(
     PHW_DEVICE_EXTENSION pHwDeviceExtension,
@@ -40,9 +36,9 @@ IoctlCOPPGetCertificateLength(
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

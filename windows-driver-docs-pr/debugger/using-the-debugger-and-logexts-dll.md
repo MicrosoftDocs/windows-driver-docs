@@ -3,11 +3,7 @@ title: Using the Debugger and Logexts.dll
 description: Using the Debugger and Logexts.dll
 ms.assetid: 7f7d3ca2-9b40-41ce-b66c-4367b93a7ff7
 keywords: ["Logger, logexts.dll", "Logger, CDB", "Logger, WinDbg", "logexts.dll"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -60,9 +56,9 @@ Since the buffer memory is managed by the target application, the automatic writ
 <span id="_LOGEXTS.LOGM"></span>[**!logexts.logm**](-logexts-logm.md)  
 Displays or creates a module inclusion/exclusion list. It is often desirable to only log those API calls that are made from a certain module or set of modules. To facilitate that, Logger allows you to specify a module inclusion list or, alternatively, a module exclusion list. For instance, you would use an inclusion list if you only wanted to log calls from one or two modules. If you wanted to log calls made from all modules except a short list of modules, you would use an exclusion list. The modules Logexts.dll and Kernel32.dll are always excluded, since Logger is not permitted to log itself.
 
- 
+ 
 
- 
+ 
 
 
 

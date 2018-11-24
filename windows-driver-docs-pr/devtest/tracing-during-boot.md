@@ -8,11 +8,7 @@ keywords:
 - boot-time tracing WDK
 - kernel-mode software tracing WDK
 - boot-time tracing WDK , about boot-time tracing
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -39,9 +35,9 @@ This section describes the following methods of tracing during boot:
 
 When using the Global Logger trace session, be sure that you are aware of its limitations. For information, see Limitations of the Global Logger trace session.
 
- 
+ 
 
- 
+ 
 
 
 

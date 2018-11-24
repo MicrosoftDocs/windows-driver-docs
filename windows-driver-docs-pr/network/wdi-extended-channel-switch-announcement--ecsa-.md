@@ -2,11 +2,7 @@
 title: WDI Extended channel switch announcement (ECSA)
 description: This section provides suggested driver/firmware changes to implement Extended Channel Switch Announcement (ECSA)
 ms.assetid: 9C59C8A2-335F-4BA4-8682-6DFFB82E1CAF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,9 +21,9 @@ Here are the suggested driver/firmware changes.
     -   If an ECSA request comes from the remote peer, then support it.
 -   Send channel change notifications to the operating system with [NDIS\_STATUS\_WDI\_INDICATION\_P2P\_GROUP\_OPERATING\_CHANNEL](https://msdn.microsoft.com/library/windows/hardware/dn925643).
 
- 
+ 
 
- 
+ 
 
 
 

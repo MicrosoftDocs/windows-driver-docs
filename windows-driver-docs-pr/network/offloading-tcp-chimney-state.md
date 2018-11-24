@@ -8,11 +8,7 @@ keywords:
 - offload state WDK TCP chimney offload , offloading process
 - offloading state process WDK TCP chimney offload
 - state offloading process WDK TCP chimney offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -46,9 +42,9 @@ This section includes:
 
 [Terminating the Offload of a Connection Because of Resource Constraints](terminating-the-offload-of-a-connection-because-of-resource-constraint.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -7,11 +7,7 @@ keywords:
 - high order surfaces WDK DirectX 8.0 , render states
 - render states WDK DirectX 8.0
 - render states WDK DirectX 8.0 , high order surfaces
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,9 +31,9 @@ This render state gives the number of segments to be used for each edge of the p
 
 This render state notifies the driver that a patch is to be deleted. For more information, see [**D3DRENDERSTATETYPE**](https://msdn.microsoft.com/library/windows/hardware/ff549036).
 
- 
+ 
 
- 
+ 
 
 
 

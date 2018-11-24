@@ -11,11 +11,7 @@ keywords:
 - video copy protection WDK COPP
 - COPP WDK DirectX VA
 - protected video WDK COPP
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -47,9 +43,9 @@ The following topics describe the COPP DDI and how to support COPP:
 
 [Implementation Tips and Requirements for COPP](implementation-tips-and-requirements-for-copp.md)
 
- 
+ 
 
- 
+ 
 
 
 

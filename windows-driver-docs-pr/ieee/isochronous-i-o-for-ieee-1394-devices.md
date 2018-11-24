@@ -1,6 +1,5 @@
 ---
 title: Isochronous I/O for IEEE 1394 Devices
-author: windows-driver-content
 description: Isochronous I/O for IEEE 1394 Devices
 ms.assetid: fc544776-af45-40e2-9699-7dcc50275d1e
 keywords:
@@ -14,11 +13,7 @@ keywords:
 - bandwidth WDK IEEE 1394 bus
 - isochronous I/O WDK IEEE 1394 bus , about isochronous I/O
 - transferring data WDK IEEE 1394 bus
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -44,9 +39,9 @@ This section includes:
 
 [Completing an Isochronous Data Transfer](https://msdn.microsoft.com/library/windows/hardware/ff537058)
 
- 
+ 
 
- 
+ 
 
 
 

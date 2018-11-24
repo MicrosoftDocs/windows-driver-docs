@@ -5,11 +5,7 @@ ms.assetid: 82222357-1e5a-4aec-879a-68f19f3faa4f
 keywords:
 - DirectDraw driver initialization WDK Windows 2000 display , Windows 2000
 - Windows 2000 display driver model WDK , DirectDraw
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -53,9 +49,9 @@ The driver initialization sequence is achieved by calling the following function
 
 Locking the surface memory (whether the whole surface or part of a surface) ensures that an application and the hardware cannot obtain access to the surface memory at the same time. This prevents errors from occurring while an application is writing to surface memory. In addition, an application cannot page flip until the surface memory is unlocked.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -7,11 +7,7 @@ keywords:
 - NDIS-WDM miniport drivers WDK networking , entry-point functions
 - lower edge of NDIS miniport drivers WDK networking , entry-point functions
 - WDM lower edge WDK networking , entry-point functions
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,9 +31,9 @@ A miniport driver that has a WDM lower edge must call the [**NdisMRegisterMinipo
 
     The miniport driver can rely on NDIS to determine if its miniport instance has stopped responding, based on sends and requests that time out, so this routine is not typically required.
 
- 
+ 
 
- 
+ 
 
 
 

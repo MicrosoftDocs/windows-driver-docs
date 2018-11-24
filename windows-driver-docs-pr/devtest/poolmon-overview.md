@@ -5,11 +5,7 @@ ms.assetid: c540e156-f0ce-4ac2-88e3-2e199b513abe
 keywords:
 - PoolMon WDK , about PoolMon
 - Memory Pool Monitor WDK , about Memory Pool Monitor
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -41,9 +37,9 @@ Using PoolMon, you can also:
 
 -   Generate a file of the tags used by drivers on the local system (32-bit Windows only).
 
- 
+ 
 
- 
+ 
 
 
 

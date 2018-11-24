@@ -12,6 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # GUID_DEVINTERFACE_TAPE
@@ -42,7 +43,7 @@ The GUID_DEVINTERFACE_TAPE [device interface class](https://msdn.microsoft.com/l
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -72,9 +73,9 @@ Requirements
 
 [**TapeClassGuid**](tapeclassguid.md)
 
- 
+ 
 
- 
+ 
 
 
 

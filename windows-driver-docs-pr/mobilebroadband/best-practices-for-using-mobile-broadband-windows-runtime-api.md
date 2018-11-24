@@ -2,11 +2,7 @@
 title: Best practices for using Mobile Broadband Windows Runtime API
 description: Best practices for using Mobile Broadband Windows Runtime API
 ms.assetid: c9d60bb3-34ea-44a0-ae9e-1415b93e2fd8
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,9 +20,9 @@ Use the following topics to learn more about the best practices for using the Mo
 
 [Mobile broadband WinRT API overview](mobile-broadband-winrt-api-overview.md)
 
- 
+ 
 
- 
+ 
 
 
 

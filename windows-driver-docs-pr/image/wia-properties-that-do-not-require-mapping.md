@@ -1,13 +1,8 @@
 ---
 title: WIA Properties That Do Not Require Mapping
-author: windows-driver-content
 description: WIA Properties That Do Not Require Mapping
 ms.assetid: 094c3b3e-17c7-439f-a945-175835bbf4ce
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -40,9 +35,9 @@ WIA\_DPS\_MAX\_SCAN\_TIME
 
 WIA\_IPC\_*Xxx*
 
- 
+ 
 
- 
+ 
 
 
 

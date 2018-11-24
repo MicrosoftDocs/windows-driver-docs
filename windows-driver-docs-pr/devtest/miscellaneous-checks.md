@@ -6,11 +6,7 @@ keywords:
 - Miscellaneous Checks option WDK Driver Verifier
 - lookasides WDK Driver Verifier
 - freed memory WDK Driver Verifier
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -185,9 +181,9 @@ ChildEBP RetAddr  Args to Child
 92f63d34 6a22b204 0000004c 00000000 00000000 nt!KiFastCallEntry+0x12c 
 ```
 
- 
+ 
 
- 
+ 
 
 
 

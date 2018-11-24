@@ -2,11 +2,7 @@
 title: IssuerName
 description: IssuerName
 ms.assetid: 189c9b8f-11de-4ef2-9474-b0068b8178bc
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -56,13 +52,13 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[TrustedCertificate](trustedcertificate.md)</p></td>
+<td><p><a href="trustedcertificate.md" data-raw-source="[TrustedCertificate](trustedcertificate.md)">TrustedCertificate</a></p></td>
 <td><p>Specifies a trusted certificate.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="XSD"></span><span id="xsd"></span>XSD
 
@@ -76,9 +72,9 @@ There are no child elements.
 
 The IssuerName element is optional.
 
- 
+ 
 
- 
+ 
 
 
 

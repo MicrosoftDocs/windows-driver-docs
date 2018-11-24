@@ -3,11 +3,7 @@ title: .formats (Show Number Formats)
 description: The .formats command evaluates an expression or symbol in the context of the current thread and process and displays it in multiple numeric formats.
 ms.assetid: 9eac92b3-5137-4adb-a074-31510dc9bff7
 keywords: [".formats (Show Number Formats) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **.formats** command evaluates an expression or symbol in the context of the current thread and process and displays it in multiple numeric formats.
 
-```
+```dbgcmd
 .formats expression 
 ```
 
@@ -55,7 +51,7 @@ Specifies the expression to evaluate. For more information about the syntax, see
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -64,7 +60,7 @@ The evaluated expression is displayed in hexadecimal, decimal, octal, and binary
 
 The following example shows a **.formats** command.
 
-```
+```dbgcmd
 0:000> .formats 1c407e62
 Evaluate expression:
   Hex:     1c407e62
@@ -86,9 +82,9 @@ The **Time** field displays a 32-bit value in CRT time stamp format and displays
 
 [**?? (Evaluate C++ Expression)**](----evaluate-c---expression-.md)
 
- 
+ 
 
- 
+ 
 
 
 

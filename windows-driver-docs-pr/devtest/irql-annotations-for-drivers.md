@@ -2,11 +2,7 @@
 title: IRQL annotations for drivers
 description: When the driver code has IRQL annotations, the code analysis tools can make a better inference about the range of levels at which a function should run and can more accurately find errors.
 ms.assetid: E4C1D490-BE06-483A-90E4-6F3223E269A3
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,7 +34,7 @@ You can use the annotations in the following table to indicate the correct IRQL 
 |\_IRQL_always_function_max_(_value_)|The IRQL value is the maximum value to which the function can raise the IRQL.|
 |\_IRQL_requires_same_|The annotated function must enter and exit at the same IRQL. The function can change the IRQL, but it must restore the IRQL to its original value before exiting.|
 |\_IRQL_uses_cancel_|The annotated parameter is the IRQL value that should be restored by a DRIVER_CANCEL callback function. In most cases, use the IRQL_is_cancel annotation instead.|
- 
+ 
 
 ## <span id="Annotations_for_DRIVER_CANCEL"></span><span id="annotations_for_driver_cancel"></span><span id="ANNOTATIONS_FOR_DRIVER_CANCEL"></span>Annotations for DRIVER\_CANCEL
 
@@ -115,9 +111,9 @@ typedef DRIVER_CANCEL *PDRIVER_CANCEL;
 
 [SAL 2.0 Annotations for Drivers](sal-2-annotations-for-windows-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

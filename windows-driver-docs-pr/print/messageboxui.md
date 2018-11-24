@@ -1,6 +1,5 @@
 ---
 title: messageBoxUI element
-author: windows-driver-content
 description: The optional messageBoxUI element is used to display a message box on the client computer.
 ms.assetid: 83fe67fe-72b0-42e2-864e-242b7b9989d9
 keywords: ["messageBoxUI element Print Devices"]
@@ -10,11 +9,7 @@ api_name:
 - messageBoxUI
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,7 +23,7 @@ The **messageBoxUI** element is defined in the *asyncui* namespace at this URI: 
 Usage
 -----
 
-``` syntax
+```xml
 <messageBoxUI>
   child elements
 </messageBoxUI>
@@ -55,22 +50,22 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>bitmap</strong>](bitmap.md)</p></td>
+<td><p><a href="bitmap.md" data-raw-source="[&lt;strong&gt;bitmap&lt;/strong&gt;](bitmap.md)"><strong>bitmap</strong></a></p></td>
 <td><p></p>
 <p>An optional element that is used to display a bitmap image to the left of the body text in a message box.</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>body</strong>](body.md)</p></td>
+<td><p><a href="body.md" data-raw-source="[&lt;strong&gt;body&lt;/strong&gt;](body.md)"><strong>body</strong></a></p></td>
 <td><p></p>
 <p>A required element that provides text that is displayed in the event notification message. This text should provide the user specific details about the printer event.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>buttons</strong>](buttons.md)</p></td>
+<td><p><a href="buttons.md" data-raw-source="[&lt;strong&gt;buttons&lt;/strong&gt;](buttons.md)"><strong>buttons</strong></a></p></td>
 <td><p></p>
 <p>A required element that specifies one or more buttons that are displayed in the event notification message box on the client computer.</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>title</strong>](title.md)</p></td>
+<td><p><a href="title.md" data-raw-source="[&lt;strong&gt;title&lt;/strong&gt;](title.md)"><strong>title</strong></a></p></td>
 <td><p></p>
 <p>A required element that provides text that is displayed in the title of the event notification message.</p></td>
 </tr>
@@ -93,7 +88,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>requestOpen</strong>](requestopen.md)</p></td>
+<td><p><a href="requestopen.md" data-raw-source="[&lt;strong&gt;requestOpen&lt;/strong&gt;](requestopen.md)"><strong>requestOpen</strong></a></p></td>
 <td><p></p>
 <p>An element that is used to open an event notification message on the client computer.</p></td>
 </tr>
@@ -110,7 +105,7 @@ Examples
 
 The following code example shows how to notify the printer driver that the **OK** button was clicked on the message box.
 
-```
+```xml
 <?xml version="1.0" ?> 
   <asyncPrintUIResponse xmlns="http://schemas.microsoft.com/2003/print/asyncui/v1/response">
     <v1>
@@ -123,25 +118,16 @@ The following code example shows how to notify the printer driver that the **OK*
   </asyncPrintUIResponse>
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
+[bitmap](bitmap.md)
 
-[**bitmap**](bitmap.md)
+[body](body.md)
 
-[**body**](body.md)
+[button](button.md)
 
-[**button**](button.md)
+[buttons](buttons.md)
 
-[**buttons**](buttons.md)
+[requestOpen](requestopen.md)
 
-[**requestOpen**](requestopen.md)
-
-[**title**](title.md)
-
- 
-
- 
-
-
-
-
+[title](title.md)

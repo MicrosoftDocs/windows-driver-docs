@@ -2,11 +2,7 @@
 title: Determining the RSC Capabilities of a Network Adapter
 description: A receive segment coalescing (RSC)-capable miniport driver reports its RSC capability by means of the NDIS_OFFLOAD structure that it passes to NdisMSetMiniportAttributes.
 ms.assetid: 043A09F9-7D5D-4401-9645-19FDBD614659
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,9 +32,9 @@ The miniport driver must support RSC for at least IEEE 802.3 encapsulation. In a
 
 To determine whether a miniport driver supports RSC, protocol drivers and other drivers can issue the [OID\_TCP\_OFFLOAD\_HARDWARE\_CAPABILITIES](https://msdn.microsoft.com/library/windows/hardware/ff569806) OID request, which will return an [**NDIS\_OFFLOAD**](https://msdn.microsoft.com/library/windows/hardware/ff566599) structure.
 
- 
+ 
 
- 
+ 
 
 
 

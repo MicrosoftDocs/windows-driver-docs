@@ -1,5 +1,5 @@
 ---
-title: FSCTL\_OPBATCH\_ACK\_CLOSE\_PENDING control code
+title: FSCTL_OPBATCH_ACK_CLOSE_PENDING control code
 description: The FSCTL\_OPBATCH\_ACK\_CLOSE\_PENDING control code responds to notification that an exclusive (level 1, batch, or filter) opportunistic lock (oplock) on a file has been broken.
 ms.assetid: 310cd778-5a1c-46e2-8c05-127fc754ecfe
 keywords: ["FSCTL_OPBATCH_ACK_CLOSE_PENDING control code Installable File System Drivers"]
@@ -11,11 +11,7 @@ api_location:
 - ntifs.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -78,7 +74,7 @@ Status block
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -123,9 +119,9 @@ Requirements
 
 [**IRP\_MJ\_FILE\_SYSTEM\_CONTROL**](irp-mj-file-system-control.md)
 
- 
+ 
 
- 
+ 
 
 
 

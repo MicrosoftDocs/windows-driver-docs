@@ -7,11 +7,7 @@ keywords:
 - porting miniport drivers to NDIS 6.20 WDK
 - miniport drivers WDK
 - miniport drivers WDK , porting to NDIS 6.20
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -70,9 +66,9 @@ Replace the preprocessor definition NDIS60\_MINIPORT\_DRIVER or NDIS61\_MINIPORT
 
 -   Optionally support the virtual machine queue (VMQ) interface. For more information about VMQ, see [Virtual Machine Queue (VMQ) in NDIS 6.20](virtual-machine-queue--vmq--in-ndis-6-20.md).
 
- 
+ 
 
- 
+ 
 
 
 

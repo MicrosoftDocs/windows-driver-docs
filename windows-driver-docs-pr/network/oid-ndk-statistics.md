@@ -1,13 +1,8 @@
 ---
 title: OID_NDK_STATISTICS
-author: windows-driver-content
 description: As a query, NDIS and overlying drivers or user-mode applications use the OID_NDK_STATISTICS OID to get the NDK statistics of a miniport adapter.
 ms.assetid: 30F16DEC-AEE6-49D4-8599-95374ACBD446
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_NDK_STATISTICS Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -22,7 +17,7 @@ NDIS 6.30 and later miniport drivers that provide NDK services must support this
 
 **Note**  NDIS supports this OID with the direct OID request interface. For more information about the direct OID request interface, see [NDIS 6.1 Direct OID Request Interface](https://msdn.microsoft.com/library/windows/hardware/ff564736).
 
- 
+ 
 
 Remarks
 -------
@@ -74,9 +69,9 @@ Requirements
 
 [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710)
 
- 
+ 
 
- 
+ 
 
 
 

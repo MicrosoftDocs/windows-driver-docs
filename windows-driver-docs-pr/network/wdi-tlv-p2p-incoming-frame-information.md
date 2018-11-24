@@ -1,13 +1,8 @@
 ---
 title: WDI_TLV_P2P_INCOMING_FRAME_INFORMATION
-author: windows-driver-content
 description: WDI_TLV_P2P_INCOMING_FRAME_INFORMATION is a TLV that contains incoming Wi-Fi Direct action frame information.
 ms.assetid: 7E7EF56D-625B-4B79-9AE4-A9C9B7C8547A
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_INCOMING_FRAME_INFORMATION Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -37,7 +32,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 | [**WDI\_TLV\_P2P\_ACTION\_FRAME\_IES**](wdi-tlv-p2p-action-frame-ies.md)                   |                                |          | Specifies the IEs section of the received public action frame.                                                                                                                                                                  |
 | [**WDI\_TLV\_ACTION\_FRAME\_DEVICE\_CONTEXT**](wdi-tlv-action-frame-device-context.md)     |                                | X        | Specifies the vendor-specific information that is passed back down if the host decides to send a response to this incoming message. To avoid lifetime management issues, the IHV component must not use pointers in this field. |
 
- 
+ 
 
 Requirements
 ------------
@@ -63,9 +58,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

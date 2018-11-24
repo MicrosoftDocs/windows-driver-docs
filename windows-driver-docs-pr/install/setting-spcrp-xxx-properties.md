@@ -2,11 +2,7 @@
 title: Setting SPCRP_Xxx Properties
 description: Setting SPCRP_Xxx Properties
 ms.assetid: efb0d02e-ec4c-4c1b-900b-c81f504d2919
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,9 +33,9 @@ To set device setup class properties on Windows Server 2003, Windows XP, and Win
 
 If this call to [**SetupDiSetClassRegistryProperty**](https://msdn.microsoft.com/library/windows/hardware/ff552135) succeeds, **SetupDiSetClassRegistryProperty** sets the device setup class property and returns **TRUE**. If the function call fails, **SetupDiSetClassRegistryProperty** will return **FALSE** and a call to [GetLastError](http://go.microsoft.com/fwlink/p/?linkid=169416) will return the most recently logged error code.
 
- 
+ 
 
- 
+ 
 
 
 

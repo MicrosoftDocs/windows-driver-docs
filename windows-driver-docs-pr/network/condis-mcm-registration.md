@@ -6,11 +6,7 @@ keywords:
 - MCMs WDK networking , registering CoNDIS miniport call managers
 - miniport call managers WDK networking , registering CoNDIS miniport call managers
 - registering miniport call managers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +24,9 @@ To register call manager entry points, MCMs initialize an [**NDIS\_CO\_CALL\_MAN
 
 For more information about configuring optional miniport driver services, see [Configuring Optional Miniport Driver Services](configuring-optional-miniport-driver-services.md).
 
- 
+ 
 
- 
+ 
 
 
 

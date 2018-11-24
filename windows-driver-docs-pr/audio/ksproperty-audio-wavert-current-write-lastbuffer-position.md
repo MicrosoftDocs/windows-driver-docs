@@ -11,11 +11,7 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -54,7 +50,7 @@ The KSPROPERTY\_AUDIO\_WAVERT\_CURRENT\_WRITE\_LASTBUFFER\_POSITION property is 
 </tbody>
 </table>
 
- 
+ 
 
 The property value is of type ULONG and represents the last valid byte in the WaveRT audio buffer.
 
@@ -100,9 +96,9 @@ Requirements
 
 [**SetStreamCurrentWritePositionForLastBuffer**](https://msdn.microsoft.com/library/windows/hardware/dn338128)
 
- 
+ 
 
- 
+ 
 
 
 

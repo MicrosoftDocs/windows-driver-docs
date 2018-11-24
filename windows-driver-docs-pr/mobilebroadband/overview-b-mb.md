@@ -2,11 +2,7 @@
 title: Overview for mobile broadband technologies
 description: Overview for mobile broadband technologies
 ms.assetid: b9b79b7d-35b3-4058-ad6d-1dbead76c4fb
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,9 +16,9 @@ This section contains an overview of mobile broadband in Windows 8, Windows 8.
 
 -   [Mobile operator hardware overview](mobile-operator-hardware-overview.md)
 
- 
+ 
 
- 
+ 
 
 
 

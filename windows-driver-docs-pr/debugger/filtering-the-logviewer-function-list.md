@@ -3,11 +3,7 @@ title: Filtering the LogViewer Function List
 description: Filtering the LogViewer Function List
 ms.assetid: 258da8c3-ab94-40bd-bfa5-344571d34428
 keywords: ["LogViewer, filtering the LogViewer function list"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +25,9 @@ There are several ways to filter out function calls in LogViewer:
 
 -   Select **View | First Level Calls Only**. This will display only calls that have "d0" in the left column. It is often desirable to hide function calls that are made by other logged functions. (For example, it is usually not interesting to know that **ShellExecuteEx** makes thirty different registry calls during its course of execution.)
 
- 
+ 
 
- 
+ 
 
 
 

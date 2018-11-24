@@ -9,11 +9,7 @@ api_name:
 - EXT_TDOP_SET_FROM_TYPE_ID_AND_U64
 api_type:
 - NA
-ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -66,9 +62,9 @@ The parameters for this sub-operation are members of the [**EXT\_TYPED\_DATA**](
 
 [**Request**](request.md)
 
- 
+ 
 
- 
+ 
 
 
 

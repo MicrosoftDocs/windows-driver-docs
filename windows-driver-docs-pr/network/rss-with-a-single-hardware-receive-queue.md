@@ -9,11 +9,7 @@ keywords:
 - receive queuing WDK RSS
 - single receive queue WDK RSS
 - multiple receive queues WDK RSS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -59,9 +55,9 @@ The following process repeats for each interrupt:
     1.  Processes the receive buffers that are associated with its receive queue and indicates the data up the driver stack. For more information, see [Indicating RSS Receive Data](indicating-rss-receive-data.md).
     2.  Enables the interrupts, if it is the last DPC to complete. This interrupt is complete and the process starts again. The driver must use an atomic operation to identify the last DPC to complete. For example, the driver can use the [**NdisInterlockedDecrement**](https://msdn.microsoft.com/library/windows/hardware/ff562751) function to implement an atomic counter.
 
- 
+ 
 
- 
+ 
 
 
 

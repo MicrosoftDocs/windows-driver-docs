@@ -2,11 +2,7 @@
 title: What is the syntax of the complex types definition
 description: What is the syntax of the complex types definition
 ms.assetid: c378839a-3714-4b4e-94a6-d3e1dcf8a610
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -43,7 +39,7 @@ To format the argument properly, you must use the [**WPP\_LOGPAIR**](https://msd
 
 **Note**  Depending on the tracing logic that you want to implement, you may need to define the macro by using multiple WPP\_LOGPAIR macros.
 
- 
+ 
 
 <span id="Argument_Type"></span><span id="argument_type"></span><span id="ARGUMENT_TYPE"></span>*Argument Type*  
 Indicates the value that arguments of *TypeName* type can accept. For example, **const xwcs\_t&**.
@@ -126,9 +122,9 @@ When calling the [WPP Preprocessor](wpp-preprocessor.md), use the **Ignore Excla
 
 For a complete list of the WPP Tracing options and information about how to set them from the project property page, see [WPP Preprocessor](wpp-preprocessor.md).
 
- 
+ 
 
- 
+ 
 
 
 

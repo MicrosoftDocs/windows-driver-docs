@@ -2,11 +2,7 @@
 title: Implementing an NDIS 6.40 Driver
 description: An NDIS 6.40 driver must follow the requirements that are defined in Implementing an NDIS 6.30 Driver.
 ms.assetid: 860DFD3E-F324-417A-A625-3C2935752DA2
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,9 +19,9 @@ In addition, an NDIS 6.40 driver must be compliant with the following requiremen
 
 -   NDIS 6.40 miniport drivers for the Windows 8.1 and Windows Server 2012 R2 operating systems must use the NDIS 6.40 versions of data structures. For more information, see [Using NDIS 6.40 Data Structures](using-ndis-6-40-data-structures.md).
 
- 
+ 
 
- 
+ 
 
 
 

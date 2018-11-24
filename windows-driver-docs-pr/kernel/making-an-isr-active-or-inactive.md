@@ -1,9 +1,9 @@
 ---
 title: Making an ISR Active or Inactive
-author: windows-driver-content
 description: Starting with Windows 8, a driver can call the IoReportInterruptActive or IoReportInterruptInactive routine to make a registered interrupt service routine (ISR) active or inactive.
 ms.assetid: 788D9341-D1F8-4126-8C30-AA49DE27F4BB
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Making an ISR Active or Inactive
@@ -13,7 +13,7 @@ Starting with Windows 8, a driver can call the [**IoReportInterruptActive**](ht
 
 To register an ISR, and to connect the ISR to an interrupt or a set of interrupts, the driver calls the [**IoConnectInterruptEx**](https://msdn.microsoft.com/library/windows/hardware/ff548378) routine. After the ISR is registered, the driver can use **IoReportInterruptActive** and **IoReportInterruptInactive** to perform lightweight (or "soft") connect and disconnect operations that leave the ISR's registration unchanged. **IoReportInterruptInactive** disables calls to the ISR by soft-disconnecting the associated interrupt or interrupts. **IoReportInterruptActive** soft-connects these interrupts to enable calls to the ISR.
 
-For example, a driver might call **IoReportInterruptInactive** to soft-disconnect a set of interrupts before a device exits the D0 power state, and call **IoReportInterruptActive** to soft-connect these interrupts after the device reenters D0. In principle, a driver might instead call [**IoDisconnectInterruptEx**](https://msdn.microsoft.com/library/windows/hardware/ff549093) before the device exits D0, and call **IoConnectInterruptEx** after the device reenters D0. However, **IoReportInterrupt*Xxx*** calls are faster than than **IoConnectInterruptEx** and **IoDisconnectInterruptEx** calls. In contrast to **IoConnectInterruptEx** and **IoDisconnectInterruptEx** calls, which might fail for a variety of reasons (for example, insufficient system resources), **IoReportInterrupt*Xxx*** calls rarely, if ever, fail. Additionally, the **IoReportInterrupt*Xxx*** routines can be called at IRQL &lt;= DISPATCH\_LEVEL, whereas **IoConnectInterruptEx** and **IoDisconnectInterruptEx** can be called only at PASSIVE\_LEVEL.
+For example, a driver might call **IoReportInterruptInactive** to soft-disconnect a set of interrupts before a device exits the D0 power state, and call **IoReportInterruptActive** to soft-connect these interrupts after the device reenters D0. In principle, a driver might instead call [**IoDisconnectInterruptEx**](https://msdn.microsoft.com/library/windows/hardware/ff549093) before the device exits D0, and call **IoConnectInterruptEx** after the device reenters D0. However, **IoReportInterrupt*Xxx*** calls are faster than **IoConnectInterruptEx** and **IoDisconnectInterruptEx** calls. In contrast to **IoConnectInterruptEx** and **IoDisconnectInterruptEx** calls, which might fail for a variety of reasons (for example, insufficient system resources), **IoReportInterrupt*Xxx*** calls rarely, if ever, fail. Additionally, the **IoReportInterrupt*Xxx*** routines can be called at IRQL &lt;= DISPATCH\_LEVEL, whereas **IoConnectInterruptEx** and **IoDisconnectInterruptEx** can be called only at PASSIVE\_LEVEL.
 
 By default, the ISR is active (and calls to the ISR are enabled) after **IoConnectInterruptEx** successfully registers the ISR.
 
@@ -25,9 +25,9 @@ To unregister an ISR, a driver can call **IoDisconnectInterruptEx** regardless o
 
 An **IoReportInterruptActive** call that occurs when the ISR is already active has no effect, but is not treated as an error. Similarly, an **IoReportInterruptInactive** call that occurs when the ISR is already inactive has no effect, but is not treated as an error.
 
- 
+ 
 
- 
+ 
 
 
 

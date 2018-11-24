@@ -7,11 +7,7 @@ keywords:
 - providers WDK software tracing
 - tracing WDK , providers
 - multiple providers WDK software tracing
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -76,9 +72,9 @@ tracelog -enable MyTraces -guid #1540ff4c-3fd7-4bba-9938-1d1bf31573a7 -flag 2 -l
 tracelog -enable MyTraces -guid #dab01d4d-2d48-477d-b1c3-daad0ce6f06b -flag 3 -level ffff
 ```
 
- 
+ 
 
- 
+ 
 
 
 

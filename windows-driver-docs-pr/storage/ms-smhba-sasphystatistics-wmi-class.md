@@ -3,6 +3,7 @@ title: MS\_SMHBA\_SASPHYSTATISTICS WMI Class
 description: MS\_SMHBA\_SASPHYSTATISTICS WMI Class
 ms.assetid: 72afc856-8232-492f-b8d2-4e88dd9fe723
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MS\_SMHBA\_SASPHYSTATISTICS WMI Class
@@ -12,7 +13,7 @@ An HBA miniport driver that supports the Storage Management API uses the MS\_SMH
 
 The MS\_SMHBA\_SASPHYSTATISTICS class is defined as follows in *Hbaapi.mof*:
 
-```
+```cpp
 class MS_SMHBA_SASPHYSTATISTICS
 {
     [WmiDataId(1)]
@@ -50,9 +51,9 @@ When this class definition is compiled by the WMI tool suite, it produces the fo
 
 There are no methods associated with this WMI class.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: Implementing Hardware Offloaded APO Effects
 description: Hardware offloading of audio processing objects (APOs) provides possible performance enhancements, as well as power savings.
 ms.assetid: 159DFFD2-2434-4EDC-A83C-455BA80F74C6
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -48,7 +44,7 @@ For hardware offloaded APOs, some additional consideration must be given to supp
 
 Each APO implements [**IAudioProcessingObject::IsInputFormatSupported**](https://msdn.microsoft.com/library/windows/hardware/ff536511) method which is used during audio graph building to determine the output audio format and whether any format conversion is needed.
 
-```
+```cpp
 HRESULT IsInputFormatSupported(
   [in, optional]  IAudioMediaType *pOppositeFormat,
   [in, optional]  IAudioMediaType *pRequestedInputFormat,
@@ -78,7 +74,7 @@ Implement the following INF file entries to define the effects that will be load
 | [PKEY\_SFX\_Offload\_ProcessingModes\_Supported\_For\_Streaming](https://msdn.microsoft.com/library/windows/hardware/mt604871) | {D3993A3F-99C2-4402-B5EC-A92A0367664B},11 |
 | [PKEY\_MFX\_Offload\_ProcessingModes\_Supported\_For\_Streaming](https://msdn.microsoft.com/library/windows/hardware/mt604870) | {D3993A3F-99C2-4402-B5EC-A92A0367664B},12 |
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 [Implementing Audio Processing Objects](implementing-audio-processing-objects.md)  

@@ -1,6 +1,5 @@
 ---
 title: Rendering Plug-Ins
-author: windows-driver-content
 description: Rendering Plug-Ins
 ms.assetid: e55ca083-2790-4929-9e5b-6fce49eb0404
 keywords:
@@ -12,11 +11,7 @@ keywords:
 - printer rendering options WDK
 - Pscript WDK print
 - plug-ins WDK print , customized rendering
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -44,9 +39,9 @@ The following topics describe how to customize printer rendering operations:
 
 [Unidrv-Specific Customized Rendering](unidrv-specific-customized-rendering.md)
 
- 
+ 
 
- 
+ 
 
 
 

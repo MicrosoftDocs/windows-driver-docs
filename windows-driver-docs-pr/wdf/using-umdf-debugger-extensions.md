@@ -1,17 +1,12 @@
 ---
 title: Summary of Debugger Extensions in Wudfext.dll
-author: windows-driver-content
 description: This topic describes the debugger extension commands in WudfExt.dll, which you can use to debug certain User-Mode Driver Framework (UMDF) drivers.
 ms.assetid: af84ed3a-33a1-4736-9080-c43e87052064
 keywords:
 - UMDF debugger extensions WDK
 - debugger extensions WDK UMDF
 - extensions WDK debuggers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -102,7 +97,7 @@ The following table summarizes the extension commands that the WudfExt.dll exten
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>!umfile</strong></p></td>
-<td align="left"><p>Shows information about a UMDF [intra-stack file](creating-a-file-object-to-handle-i-o.md)</p></td>
+<td align="left"><p>Shows information about a UMDF <a href="creating-a-file-object-to-handle-i-o.md" data-raw-source="[intra-stack file](creating-a-file-object-to-handle-i-o.md)">intra-stack file</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>!wudffilehandletarget</strong></p></td>
@@ -127,11 +122,11 @@ The following table summarizes the extension commands that the WudfExt.dll exten
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

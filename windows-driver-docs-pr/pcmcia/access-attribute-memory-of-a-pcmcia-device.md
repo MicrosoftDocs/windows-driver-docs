@@ -6,11 +6,7 @@ keywords:
 - PCMCIA WDK buses , attribute memory
 - attribute memory WDK PCMCIA bus
 - attribute memory WDK PCMCIA bus , about attribute memory
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,9 +38,9 @@ This section describes how drivers for PCMCIA devices in Microsoft Windows 2000 
 
 These methods are supported by *pcmcia.sys*, the system driver for a PCMCIA bus in Windows 2000 and later operating systems.
 
- 
+ 
 
- 
+ 
 
 
 

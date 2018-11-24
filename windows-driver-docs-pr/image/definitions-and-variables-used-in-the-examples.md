@@ -1,13 +1,8 @@
 ---
 title: Definitions and Variables Used in the Examples
-author: windows-driver-content
 description: Definitions and Variables Used in the Examples
 ms.assetid: 55dd0618-2171-406b-a22a-437412c77cbc
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -18,7 +13,7 @@ ms.localizationpriority: medium
 
 The following code shows constant definitions and common variables that are used in the code examples in this section.
 
-```
+```cpp
 //
 // WSD Challenge DLL name (including a forward path separator) and public API names
  
@@ -48,9 +43,9 @@ PFN_WSDCHNR_INITIALIZE m_pfnInitializeChallenge;
 PFN_WSDCHNR_SHUTDOWN m_pfnShutdownChallenge;
 ```
 
- 
+ 
 
- 
+ 
 
 
 

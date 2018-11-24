@@ -1,22 +1,13 @@
 ---
 title: Local and Global MS-DOS Device Names
-author: windows-driver-content
 description: Local and Global MS-DOS Device Names
 ms.assetid: bfb7e41c-0f80-4cb9-b036-d1b44473f9fb
 keywords: ["MS-DOS device names WDK kernel", "local MS-DOS device names WDK kernel", "global MS-DOS device names WDK kernel", "DosDevices contexts WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # Local and Global MS-DOS Device Names
-
-
-
-
 
 The Microsoft Windows 2000 and later versions of the Windows NT-based operating system maintain multiple versions of the **DosDevices** directory.
 
@@ -36,17 +27,17 @@ On Windows XP and later, when the object manager looks up a name in **\\DosDevic
 
 On Windows 2000, whenever a new terminal server session is initiated, the system builds local \\**DosDevices** directory by copying the global **\\DosDevices** directory. Any subsequent changes to the global directory are not propagated to the local directory.
 
-A driver that must create its MS-DOS device names in the global **\\DosDevices** directory can do so by creating its symbolic links in a standard driver routine that is guaranteed to run in a system thread context, such as **DriverEntry**. Alternatively, the global **\\DosDevices** directory is available as **\\DosDevices\\Global**; drivers can use a name of the **\\DosDevices\\Global\\***DosDeviceName* to specify a name in the global directory.
+A driver that must create its MS-DOS device names in the global **\\DosDevices** directory can do so by creating its symbolic links in a standard driver routine that is guaranteed to run in a system thread context, such as **DriverEntry**. Alternatively, the global **\\DosDevices** directory is available as **\\DosDevices\\Global**; drivers can use a name of the **\\DosDevices\\Global\\**<em>DosDeviceName</em> to specify a name in the global directory.
 
 Note that **\\DosDevices\\Global** does not exist on platforms that do not support local and global versions of **\\DosDevices**, such as Windows 98/Me. The following code example creates a global symbolic link that works on Windows 98/Me as well as Windows 2000 and later operating systems:
 
-```
+```cpp
 UNICODE_STRING deviceName; // Already initialized.
 UNICODE_STRING symbolicLinkName; // Initializing below.
 NTSTATUS status;
 
 if (IoIsWdmVersionAvailable(1, 0x10)) {
-    // We&#39;re on Windows 2000 or later, so we use \DosDevices\Global.
+    // We're on Windows 2000 or later, so we use \DosDevices\Global.
  
     RtlInitUnicodeString(&symbolicLinkName, L"\\DosDevices\\Global\\SymbolicLinkName");
 
@@ -74,9 +65,9 @@ The system distinguishes local **\\DosDevices** directories as follows:
 
 Windows NT 4.0 Terminal Server Edition supports local \\**DosDevices** directories in the exact same manner as Windows 2000.
 
- 
+ 
 
- 
+ 
 
 
 

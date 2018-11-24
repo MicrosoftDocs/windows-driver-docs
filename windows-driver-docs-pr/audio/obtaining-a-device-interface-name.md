@@ -6,11 +6,7 @@ keywords:
 - WDM audio extensions WDK , device interface names
 - device interface names WDK audio
 - interface names WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,9 +32,9 @@ The system intercepts and handles the DRV\_QUERYDEVICEINTERFACESIZE and DRV\_QUE
 
 The first parameter to the *xxx*Message function is the device ID, which the caller must cast to the appropriate handle type: HWAVEIN, HWAVEOUT, HMIDIIN, HMIDIOUT, or HMIXER. For more information about the *xxx*Message functions, see [System-Intercepted Device Messages](system-intercepted-device-messages.md).
 
- 
+ 
 
- 
+ 
 
 
 

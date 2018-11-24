@@ -1,6 +1,5 @@
 ---
 title: Opening and Initializing a 16550 UART-Compatible Interface
-author: windows-driver-content
 description: Opening and Initializing a 16550 UART-Compatible Interface
 ms.assetid: 341cc1cb-bbcf-4514-8f5d-8970e49923c2
 keywords:
@@ -9,11 +8,7 @@ keywords:
 - UART WDK serial devices
 - 16550 UART-compatible interfaces WDK serial devices
 - initializing 16550 UART-compatible interfaces
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +26,9 @@ When Serial is used as a lower-level device filter driver, the following conside
 
     A client should initialize the filter device to a known state before using it. A user-mode client can use the [IOCTL\_SERIAL\_SET\_Xxx](https://msdn.microsoft.com/library/windows/hardware/ff547466) requests. Note, however, that a Win32-compliant application must use the communication functions that are supported by the Windows Base Services in the Microsoft Windows SDK. A kernel-mode client can use the IOCTL\_SERIAL\_Xxx and the [IOCTL\_SERIAL\_INTERNAL\_Xxx](https://msdn.microsoft.com/library/windows/hardware/ff547480) requests.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -8,11 +8,7 @@ keywords:
 - files WDK Tracefmt
 - .sum files
 - sum files
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -68,9 +64,9 @@ The preceding summary shows that Tracedrv generates a header message and two tra
 
 The summary message file is used primarily to debug software tracing, and its format is subject to change.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Customizing Microsoft Printer Drivers
-author: windows-driver-content
 description: Customizing Microsoft Printer Drivers
 ms.assetid: b7761209-1f6f-4288-af47-4ed855c2e629
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - customizing printer drivers WDK
 - printer driver customizing WDK , about customizing printer drivers
 - customizing printer drivers WDK , about customizing printer drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -43,9 +38,9 @@ This section includes the following topics:
 
 [Device Stage for Document Devices](device-stage-for-document-devices.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -4,11 +4,7 @@ description: Creating Instances of DirectX VA Device Objects
 ms.assetid: af98ab63-33bb-4294-a902-695ea278654e
 keywords:
 - DirectX Video Acceleration WDK Windows 2000 display , creating instances
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,7 +16,7 @@ ms.localizationpriority: medium
 
 Use the following example code to create instances of DirectX VA device objects. This code is an implementation of the [*DdMoCompCreate*](https://msdn.microsoft.com/library/windows/hardware/ff549656) callback function. The **CreateMoComp** member of the [**DD\_MOTIONCOMPCALLBACKS**](https://msdn.microsoft.com/library/windows/hardware/ff551660) structure points to the callback function.
 
-```
+```cpp
 // Determine that the passed in GUID is valid. 
 BOOL
 ValidDXVAGuid(LPGUID lpGuid) {
@@ -143,9 +139,9 @@ DWORD APIENTRY
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

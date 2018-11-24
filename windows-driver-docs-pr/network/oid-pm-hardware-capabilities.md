@@ -1,13 +1,8 @@
 ---
 title: OID_PM_HARDWARE_CAPABILITIES
-author: windows-driver-content
 description: As a query, overlying drivers can use the OID_PM_HARDWARE_CAPABILITIES OID to query the power management hardware capabilities of a network adapter.
 ms.assetid: 52446584-bb73-4cf4-bda9-bf92ef2488e3
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_PM_HARDWARE_CAPABILITIES Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -70,9 +65,9 @@ Requirements
 
 [**NDIS\_STATUS\_PM\_CAPABILITIES\_CHANGE**](https://msdn.microsoft.com/library/windows/hardware/ff567410)
 
- 
+ 
 
- 
+ 
 
 
 

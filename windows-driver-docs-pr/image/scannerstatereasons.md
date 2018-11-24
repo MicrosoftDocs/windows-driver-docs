@@ -9,11 +9,7 @@ api_name:
 - wscn ScannerStateReasons
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **ScannerStateReasons** element is a list of [**ScannerStateReason*
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ScannerStateReasons>
   child elements
 </wscn:ScannerStateReasons>
@@ -55,7 +51,7 @@ None
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ScannerStateReason</strong>](scannerstatereason.md)</p></td>
+<td><p><a href="scannerstatereason.md" data-raw-source="[&lt;strong&gt;ScannerStateReason&lt;/strong&gt;](scannerstatereason.md)"><strong>ScannerStateReason</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -74,10 +70,10 @@ None
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ScannerStatus</strong>](scannerstatus.md)</p></td>
+<td><p><a href="scannerstatus.md" data-raw-source="[&lt;strong&gt;ScannerStatus&lt;/strong&gt;](scannerstatus.md)"><strong>ScannerStatus</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>StatusSummary</strong>](statussummary.md)</p></td>
+<td><p><a href="statussummary.md" data-raw-source="[&lt;strong&gt;StatusSummary&lt;/strong&gt;](statussummary.md)"><strong>StatusSummary</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -89,7 +85,7 @@ The **ScannerStateReasons** element is a list of **ScannerStateReason** elements
 
 The WSD Scan Service informs a client about changes to the scanner's status by sending a [**ScannerStatusSummaryEvent**](scannerstatussummaryevent.md) event. A client can directly query the scanner's state by calling the [**GetScannerElementsRequest**](getscannerelementsrequest.md) operation.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**GetScannerElementsRequest**](getscannerelementsrequest.md)
@@ -102,9 +98,9 @@ The WSD Scan Service informs a client about changes to the scanner's status by s
 
 [**StatusSummary**](statussummary.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,12 +1,7 @@
 ---
 title: IRP_MJ_POWER
-author: windows-driver-content
 description: All drivers must be prepared to service IRP_MJ_POWER requests in a DispatchPower routine.
-ms.author: windowsdriverdev
 ms.date: 08/12/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.assetid: ca53ceef-2755-49d3-aab9-0d12a0e51e75
 keywords:
  - IRP_MJ_POWER Kernel-Mode Driver Architecture
@@ -61,9 +56,9 @@ Requirements
 
 [*DispatchPower*](https://msdn.microsoft.com/library/windows/hardware/ff543354)
 
- 
+ 
 
- 
+ 
 
 
 

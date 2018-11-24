@@ -12,6 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # GUID_DISPLAY_ADAPTER_INTERFACE
@@ -40,9 +41,9 @@ Requirements
 
 [**GUID_DEVINTERFACE_DISPLAY_ADAPTER**](guid-devinterface-display-adapter.md)
 
- 
+ 
 
- 
+ 
 
 
 

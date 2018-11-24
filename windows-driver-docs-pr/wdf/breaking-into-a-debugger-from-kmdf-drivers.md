@@ -1,16 +1,11 @@
 ---
 title: Breaking into a Debugger from KMDF Drivers
-author: windows-driver-content
 description: Breaking into a Debugger from KMDF Drivers
 ms.assetid: b18e210c-cc9b-436c-b762-6346b946357c
 keywords:
 - debugging drivers WDK KMDF , breaking into the debugger
 - breaking into the debugger WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,9 +30,9 @@ The code for the WDFVERIFY and VERIFY\_IS\_IRQL\_PASSIVE\_LEVEL macros is includ
 
 For more information about project configurations, see [Building a Driver](https://msdn.microsoft.com/windows-drivers/develop/building_a_driver).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -10,6 +10,7 @@ api_name:
 api_type:
 - NA
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Defaults Section of a TxtSetup.oem File
@@ -45,9 +46,9 @@ oemscsi2 = "OEM Fast SCSI Controller 2"
 ; ...
 ```
 
- 
+ 
 
- 
+ 
 
 
 

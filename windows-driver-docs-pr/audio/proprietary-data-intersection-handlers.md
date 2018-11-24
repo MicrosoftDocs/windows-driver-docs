@@ -5,11 +5,7 @@ ms.assetid: 8ed497d3-2344-4979-9859-e66a4713e6c5
 keywords:
 - data-intersection handlers WDK audio , proprietary
 - proprietary data-intersection handlers WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ A proprietary data-intersection handler has the option of handling data intersec
 
 The remainder of this section presents guidelines for implementing proprietary data-intersection handlers.
 
- 
+ 
 
- 
+ 
 
 
 

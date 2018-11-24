@@ -3,11 +3,7 @@ title: usbkd.usbhubs
 description: The usbkd.usbhubs command displays information about USB hubs.
 ms.assetid: 88642A67-5105-45A4-8374-7E4D01FFAEB6
 keywords: ["usbkd.usbhubs Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!usbkd.usbhubs** command displays information about USB hubs.
 
-```
+```dbgcmd
 !usbkd.usbhubs a[v]
 !usbkd.usbhubs x[v]
 !usbkd.usbhubs r[v]
@@ -53,7 +49,7 @@ Examples
 
 Here is an example of verbose output from the **!usbhubs** command.
 
-```
+```dbgcmd
 0: kd> !usbkd.usbhubs rv
 
 args 'rv'
@@ -112,11 +108,11 @@ On Host Controller (0x8086, 0x2937)
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](http://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
- 
+ 
 
- 
+ 
 
 
 

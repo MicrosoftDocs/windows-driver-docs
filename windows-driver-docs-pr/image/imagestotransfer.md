@@ -9,11 +9,7 @@ api_name:
 - wscn ImagesToTransfer wscn MustHonor "" wscn Override "" wscn UsedDefault ""
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The optional **ImagesToTransfer** element specifies the number of images to scan
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ImagesToTransfer wscn:MustHonor=""                       wscn:Override=""                       wscn:UsedDefault=""
   MustHonor = "xs:string"
   Override = "xs:string"
@@ -101,10 +97,10 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>DocumentFinalParameters</strong>](documentfinalparameters.md)</p></td>
+<td><p><a href="documentfinalparameters.md" data-raw-source="[&lt;strong&gt;DocumentFinalParameters&lt;/strong&gt;](documentfinalparameters.md)"><strong>DocumentFinalParameters</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>DocumentParameters</strong>](documentparameters.md)</p></td>
+<td><p><a href="documentparameters.md" data-raw-source="[&lt;strong&gt;DocumentParameters&lt;/strong&gt;](documentparameters.md)"><strong>DocumentParameters</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -122,7 +118,7 @@ The client can specify the optional **MustHonor** attribute only when the **Imag
 
 The WSD Scan Service can specify the optional **Override** and **UsedDefault** attributes only when the **ImagesToTransfer** element is contained within a **DocumentFinalParameters** hierarchy. For more information about **Override** and **UsedDefault** and their usage, see [**DocumentFinalParameters**](documentfinalparameters.md).
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**CreateScanJobRequest**](createscanjobrequest.md)
@@ -133,9 +129,9 @@ The WSD Scan Service can specify the optional **Override** and **UsedDefault** a
 
 [**InputSource**](inputsource.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -7,11 +7,7 @@ keywords:
 - Direct3D WDK Windows 2000 display , initialization
 - DrvGetDirectDrawInfo
 - DdGetDriverInfo
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -54,7 +50,7 @@ When the driver's [**DrvGetDirectDrawInfo**](https://msdn.microsoft.com/library/
     </tbody>
     </table>
 
-     
+     
 
 <!-- -->
 
@@ -89,9 +85,9 @@ The driver should store the pointer to the Direct3D runtime's **D3DParseUnknownC
 
 For more information, see [DirectDraw Driver Initialization](directdraw-driver-initialization.md).
 
- 
+ 
 
- 
+ 
 
 
 

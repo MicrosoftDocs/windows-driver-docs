@@ -5,11 +5,7 @@ ms.assetid: 2696a9ca-38b5-47f2-9639-029bba1173b5
 keywords:
 - attribute memory WDK PCMCIA bus , BUS_INTERFACE_STANDARD interface
 - BUS_INTERFACE_STANDARD
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +25,9 @@ A driver usually obtains a BUS\_INTERFACE\_STANDARD interface during its initial
 
 After the driver obtains the standard bus interface, the driver can call the interface routines **GetBusData** or **SetBusData** to access attribute memory.
 
- 
+ 
 
- 
+ 
 
 
 

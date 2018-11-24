@@ -3,11 +3,7 @@ title: bs (Update Breakpoint Command)
 description: The bs command changes the command executed when the specified breakpoint is encountered.
 ms.assetid: 624c9a30-a0d8-49bd-aba6-a46250022677
 keywords: ["bs (Update Breakpoint Command) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **bs** command changes the command executed when the specified breakpoint is encountered.
 
-```
+```dbgcmd
 bs ID ["CommandString"] 
 ```
 
@@ -64,7 +60,7 @@ Any command that resumes program execution after a breakpoint (such as **g** or 
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -75,9 +71,9 @@ Remarks
 
 If the *CommandString* is not specified, any commands already set on the breakpoint are removed.
 
- 
+ 
 
- 
+ 
 
 
 

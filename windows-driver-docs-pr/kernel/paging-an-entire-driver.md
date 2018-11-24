@@ -1,14 +1,9 @@
 ---
 title: Paging an Entire Driver
-author: windows-driver-content
 description: Paging an Entire Driver
 ms.assetid: d861160f-e429-4ff3-9ca6-4fce4d5d6c1b
 keywords: ["pageable drivers WDK kernel , paging entire drivers", "paging entire drivers WDK", "reference counts WDK pageable drivers", "overriding pageable or nonpageable attributes WDK"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,9 +31,9 @@ Such a driver must keep a reference count of open handles to its devices. The dr
 
 It is the driver's responsibility to do whatever synchronization is necessary when changing the reference count, and to prevent the reference count from changing while the pageable state of the driver is changing. That is, in SMP computers, the driver must make sure that **MmPageEntireDriver** cannot be in progress on one processor, while on another processor, an open call is causing interrupts to be connected and the reference count to be incremented.
 
- 
+ 
 
- 
+ 
 
 
 

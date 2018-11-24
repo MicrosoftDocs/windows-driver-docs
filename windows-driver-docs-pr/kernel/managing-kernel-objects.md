@@ -1,14 +1,9 @@
 ---
 title: Managing Kernel Objects
-author: windows-driver-content
 description: Managing Kernel Objects
 ms.assetid: d45aca94-67b7-444d-8585-713ec982e3bc
 keywords: ["kernel-mode drivers WDK , object management", "object manager WDK kernel", "object management WDK kernel", "referencing objects", "object names WDK user-mode", "object management WDK user-mode", "kernel-mode objects WDK"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,7 +33,7 @@ Typical kernel-mode objects include the following objects:
 
 -   Section objects. (See [Section Objects and Views](section-objects-and-views.md).)
 
-Kernel-mode objects enable you to manipulate objects in partnership with the object manager without damaging the portions of the objects that the operating system needs. This principle is called *encapsulation* and is one of the core concepts of object-orientated programming. (Because kernel-mode objects do not provide other aspects of object-orientation, kernel-mode programming is typically referred to as [*object-based*](object-based.md).) Kernel-mode objects do not follow the same rules as objects in C++ or Microsoft COM.
+Kernel-mode objects enable you to manipulate objects in partnership with the object manager without damaging the portions of the objects that the operating system needs. This principle is called *encapsulation* and is one of the core concepts of object-oriented programming. (Because kernel-mode objects do not provide other aspects of object-orientation, kernel-mode programming is typically referred to as [*object-based*](object-based.md).) Kernel-mode objects do not follow the same rules as objects in C++ or Microsoft COM.
 
 Kernel-mode objects can be referenced by pointers. An object may have an object name. For more information about object names, see [Object Names](object-names.md).
 
@@ -50,9 +45,9 @@ Object security is a prime concern for kernel-mode programming. For more informa
 
 The kernel-mode environment stores objects in a virtual directory system, also known as the object namespace. This allows objects to be accessed in a hierarchical way with parent and child objects. This namespace is similar to a file system set of directories but does not exactly correspond to a particular file system on your computer. For more information about object directories, see [Object Directories](object-directories.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,17 +1,12 @@
 ---
 title: Returning Status
-author: windows-driver-content
 description: Returning Status
 ms.assetid: fd490517-f4c5-4e20-9eac-6a9ac7d04992
 keywords:
 - status values WDK file system
 - success status values WDK file system
 - returning status WDK file system
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,9 +20,9 @@ A file system filter driver's **DriverEntry** routine normally returns STATUS\_S
 
 If the **DriverEntry** routine returns a status value that is not a success status value, the system responds by unloading the driver. For this reason, the **DriverEntry** routine must always free any memory that was allocated for system resources, such as device objects, before returning a status value that is not a success status value.
 
- 
+ 
 
- 
+ 
 
 
 

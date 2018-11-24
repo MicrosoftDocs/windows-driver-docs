@@ -2,11 +2,7 @@
 title: KSPROPSETID\_VPConfig and KSPROPSETID\_VPVBIConfig
 description: KSPROPSETID\_VPConfig and KSPROPSETID\_VPVBIConfig
 ms.assetid: 3e9a79a2-f217-4736-87b2-a968b358bbc7
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -52,9 +48,9 @@ Minidrivers that use video ports should implement support for the following prop
 
 [**KSPROPERTY\_VPCONFIG\_SURFACEPARAMS**](ksproperty-vpconfig-surfaceparams.md)
 
- 
+ 
 
- 
+ 
 
 
 

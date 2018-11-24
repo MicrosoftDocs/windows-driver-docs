@@ -9,11 +9,7 @@ api_name:
 - wscn FilmOpticalResolution
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **FilmOpticalResolution** element specifies the maximum optical res
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:FilmOpticalResolution/>
 ```
 
@@ -53,7 +49,7 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>Film</strong>](film.md)</p></td>
+<td><p><a href="film.md" data-raw-source="[&lt;strong&gt;Film&lt;/strong&gt;](film.md)"><strong>Film</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -65,7 +61,7 @@ Resolution is specified as a [**Width**](width.md) x [**Height**](height.md) pai
 
 If **Height** is absent, the WSD Scan Service should assume a square image resolution. For example, if only a **Width** element of 100 is provided, assume that the resolution is 100 x 100 pixels per square inch.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**Film**](film.md)
@@ -74,9 +70,9 @@ If **Height** is absent, the WSD Scan Service should assume a square image resol
 
 [**Width**](width.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,11 +3,7 @@ title: wdfkd.wdfinterrupt
 description: The wdfkd.wdfinterrupt extension displays information about a WDFINTERRUPT object.
 ms.assetid: 3e032095-94fe-41d5-aeed-645d6b544105
 keywords: ["wdfkd.wdfinterrupt Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!wdfkd.wdfinterrupt** extension displays information about a WDFINTERRUPT object.
 
-```
+```dbgcmd
 !wdfkd.wdfinterrupt Handle [Flags]
 ```
 
@@ -55,7 +51,7 @@ Remarks
 
 The following example shows the output of the **!wdfinterrupt** extension with bit 0 set in the *Flags* parameter (so the output displays information about the IDT).
 
-```
+```dbgcmd
 kd> !wdfkd.wdfinterrupt 0x7a988698  1 
 
 # Dumping WDFINTERRUPT 0x7a988698
@@ -89,9 +85,9 @@ To get ISR from KINTERRUPT:
 
 In the preceding example, the display concludes with two suggested [**dt (Display Type)**](dt--display-type-.md) commands that can be used to display additional data.
 
- 
+ 
 
- 
+ 
 
 
 

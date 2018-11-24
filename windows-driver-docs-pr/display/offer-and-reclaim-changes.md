@@ -2,11 +2,7 @@
 title: Offer and reclaim changes
 description: For Windows Display Driver Model (WDDM) v2, requirements around Offer and Reclaim are being relaxed.
 ms.assetid: 1A987708-DE73-4998-B5F9-03A9D502205A
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,9 +19,9 @@ Calling reclaim will automatically page in an allocation if it is in the residen
 
 Immediately after returning from [**ReclaimAllocationsCb**](https://msdn.microsoft.com/library/windows/hardware/hh451695)/[**ReclaimAllocations2Cb**](https://msdn.microsoft.com/library/windows/hardware/dn903528), the backing store of the allocation is guaranteed to be valid and the allocation may be placed under CPU access via [*Lock2Cb*](https://msdn.microsoft.com/library/windows/hardware/dn914483). The driver does not need to wait on the paging fence to do so.
 
- 
+ 
 
- 
+ 
 
 
 

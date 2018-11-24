@@ -7,11 +7,7 @@ keywords:
 - NDIS filter drivers WDK , types
 - modifying filter drivers WDK networking
 - monitoring filter drivers WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +29,9 @@ The **FilterType** entry in the INF file is 0x00000001 for monitoring filter dri
 
 You can specify that a filter driver is mandatory. This feature is generally used with modifying filter drivers. If a mandatory filter driver does not load, the associated driver stack will be torn down. For more information about mandatory filter drivers, see [Mandatory Filter Drivers](mandatory-filter-drivers.md).
 
- 
+ 
 
- 
+ 
 
 
 

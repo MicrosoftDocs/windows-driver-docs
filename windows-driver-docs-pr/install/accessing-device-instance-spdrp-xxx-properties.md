@@ -2,11 +2,7 @@
 title: Accessing Device Instance SPDRP_Xxx Properties
 description: Accessing Device Instance SPDRP_Xxx Properties
 ms.assetid: 15ee51f8-1904-43ee-8bc2-311688c860e0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -72,9 +68,9 @@ To set a device property on Windows Server 2003, Windows XP, and Windows 2000, c
 
 If this call to **SetupDiSetDeviceRegistryProperty** succeeds, **SetupDiSetDeviceRegistryProperty** sets the device instance property and returns **TRUE**. If the function call fails, **SetupDiSetDeviceRegistryProperty** returns **FALSE** and a call to [GetLastError](http://go.microsoft.com/fwlink/p/?linkid=169416) will return the logged error code.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,15 +1,10 @@
 ---
 title: ACPI_MANIPULATE_LOCK_BUFFER structure
-author: windows-driver-content
 description: The ACPI_MANIPULATE_LOCK_BUFFER macro is reserved for internal use only with an IOCTL_ACPI_ACQUIRE_GLOBAL_LOCK and IIOCTL_ACPI_RELEASE_GLOBAL_LOCK.
 ms.assetid: 7af24f15-66e1-4f68-8d8a-d22617616806
 keywords: 
 - ACPI_MANIPULATE_LOCK_BUFFER structure ACPI Devices
-ms.author: windowsdriverdev
-ms.date: 07/18/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
@@ -27,11 +22,7 @@ Requirements
 <col width="50%" />
 </colgroup>
 <tbody>
-<tr class="odd">
-<td><p>Version</p></td>
-<td><p>Windows Vista and later versions of Windows.</p></td>
-</tr>
-<tr class="even">
+<tr>
 <td><p>Header</p></td>
 <td>Acpiioct.h (include Acpiioct.h)</td>
 </tr>
@@ -45,9 +36,9 @@ Requirements
 
 [**IOCTL\_ACPI\_RELEASE\_GLOBAL\_LOCK**](https://msdn.microsoft.com/library/windows/hardware/ff536150)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,11 +3,7 @@ title: OID_GEN_RSS_SET_INDIRECTION_TABLE_ENTRIES
 description: This topic describes OID_GEN_RSS_SET_INDIRECTION_TABLE_ENTRIES
 ms.assetid: F59D861C-B7DB-4C28-8842-4FDBAE1B95F1
 keywords: OID_GEN_RSS_SET_INDIRECTION_TABLE_ENTRIES, OID_GEN_RSS_SET_INDIRECTION_TABLE_ENTRIES RSSv2
-ms.author: windowsdriverdev
 ms.date: 10/11/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

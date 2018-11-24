@@ -1,13 +1,8 @@
 ---
 title: WIA Compatibility Layer Data Transfer Design
-author: windows-driver-content
 description: WIA Compatibility Layer Data Transfer Design
 ms.assetid: f3e83be1-603f-4f29-9511-0c5f89506cc1
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,9 +17,9 @@ This section contains information on the following topics:
 
 [Data Transfer Between Windows Vista Application and Legacy Driver](data-transfer-between-windows-vista-application-and-legacy-driver.md)
 
- 
+ 
 
- 
+ 
 
 
 

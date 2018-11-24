@@ -2,11 +2,7 @@
 title: Can I preserve the last-error code before TraceMessage is called
 description: Can I preserve the last-error code before TraceMessage is called
 ms.assetid: 57390fb1-5e01-4b98-960f-0201213d673c
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -62,11 +58,11 @@ The following examples show how you can preserve the last-error code before you 
 
     **Note**   This method increases the code size of your binary files because the same code will be generated for each WPP\_SF function.
 
-     
+     
 
- 
+ 
 
- 
+ 
 
 
 

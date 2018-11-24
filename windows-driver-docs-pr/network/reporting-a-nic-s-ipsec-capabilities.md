@@ -6,11 +6,7 @@ keywords:
 - task offload WDK TCP/IP transport , IPsec tasks
 - IPsec offload WDK TCP/IP transport , capabilities
 - IPsec offload WDK TCP/IP transport
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -66,9 +62,9 @@ A miniport driver specifies the following capabilities of a NIC to process ESP p
 
 [Determining Task Offload Capabilities](determining-task-offload-capabilities.md)
 
- 
+ 
 
- 
+ 
 
 
 

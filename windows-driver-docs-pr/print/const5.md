@@ -1,15 +1,10 @@
 ---
 title: Const (WSD)
-author: windows-driver-content
 description: The Web Services for Devices (WSD) Const construct defines the data type and value that must be returned.
 ms.assetid: e9bcf007-0117-48a9-9873-a9bbc5702e29
 keywords:
 - Const construct
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,7 +31,7 @@ The Web Services for Devices (WSD) Const construct defines the data type and val
 </tr>
 <tr class="even">
 <td><p><strong>type</strong></p></td>
-<td><p>The type of data in the <strong>value</strong> attribute, a value in the [<strong>BIDI_TYPE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff545211) enumeration.</p></td>
+<td><p>The type of data in the <strong>value</strong> attribute, a value in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545211" data-raw-source="[&lt;strong&gt;BIDI_TYPE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff545211)"><strong>BIDI_TYPE</strong></a> enumeration.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>value</strong></p></td>
@@ -45,13 +40,13 @@ The Web Services for Devices (WSD) Const construct defines the data type and val
 </tbody>
 </table>
 
- 
+ 
 
 ### Code Example
 
 The following code example returns a constant value that has been defined in the bidi extension file for the particular bidi schema query.
 
-```
+```cpp
 <Property name="Printer">
   <Property name="Extension">
     <Const name="Version" type="BIDI_INT">1</Const>
@@ -61,13 +56,13 @@ The following code example returns a constant value that has been defined in the
 
 This example results in the following query:
 
-```
+```cpp
 \Printer.Extension.Version:1
 ```
 
- 
+ 
 
- 
+ 
 
 
 

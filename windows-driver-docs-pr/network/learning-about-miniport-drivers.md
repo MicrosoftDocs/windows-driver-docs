@@ -17,11 +17,7 @@ keywords:
 - miniport drivers WDK networking , scalable networking support
 - NDIS miniport drivers WDK , scalable networking support
 - network drivers WDK , types
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -76,9 +72,9 @@ To learn about miniport drivers that offload TCP/IP to hardware, read:
 
 -   [TCP/IP Offload](tcp-ip-offload.md)
 
- 
+ 
 
- 
+ 
 
 
 

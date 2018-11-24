@@ -3,11 +3,7 @@ title: scsikd.classext
 description: The scsikd.classext extension displays the specified class Plug and Play (PnP) device.
 ms.assetid: 2b56966c-7ae1-4d44-ad60-19f31e47efff
 keywords: ["scsikd.classext Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!scsikd.classext** extension displays the specified class Plug and Play (PnP) device.
 
-```
+```dbgcmd
 !scsikd.classext [Device [Level]] 
 ```
 
@@ -54,7 +50,7 @@ Specifies the amount of detail to display. This parameter can take 0, 1, or 2 as
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -65,7 +61,7 @@ Remarks
 
 Here is an example of the **!scsikd.classext** display:
 
-```
+```dbgcmd
 0: kd> !scsikd.classext
   ' !scsikd.classext 8633e3f0 '   (             ) "IBM     " / "DDYS-T09170M    " / "S93E" / "        XBY45906"
   ' !scsikd.classext 86347b48 '   (paging device) "IBM     " / "DDYS-T09170M    " / "S80D" / "        VDA60491"
@@ -75,9 +71,9 @@ Here is an example of the **!scsikd.classext** display:
  usage: !classext <class fdo> <level [0-2]> 
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -7,11 +7,7 @@ keywords:
 - SAN service providers WDK , installing
 - SAN service providers WDK , registering
 - registering SAN service providers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +23,7 @@ A SAN service provider that is indirectly exposed to applications through the Wi
 
 The SAN service provider's installation mechanism must add a value of type REG\_BINARY to the following key in the registry before the SAN service provider can be detected by the Windows Sockets switch as a base Windows Sockets service provider:
 
-```
+```Console
 HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Winsock\
 Parameters\TCP on SAN
 ```
@@ -68,11 +64,11 @@ The vendor can also assign a unique name that represents this GUID, for example:
 
     **HKEY\_LOCAL\_MACHINE\\SYSTEM\\Current Control Set\\Services\\Tcpip\\Parameters\\Interfaces\\*GUID*\\IPAutoconfigurationEnabled**
 
-     
+     
 
- 
+ 
 
- 
+ 
 
 
 

@@ -6,11 +6,7 @@ keywords:
 - delivering received data WDK TCP chimney offload , completing requests
 - delivering received data WDK TCP chimney offload , posting requests
 - posting receive requests WDK TCP chimney offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -47,9 +43,9 @@ If the receive request is in nonpush mode, the offload target does not start a p
 
 Note that, if a receive buffer is in push mode, the host stack will not pass down receive data in that buffer. However, if a receive buffer is in nonpush mode, the host stack can pass down receive data in that buffer. The offload target continues to fill the buffer with receive data and, when the buffer is full, completes the buffer by calling the [**NdisTcpOffloadReceiveComplete**](https://msdn.microsoft.com/library/windows/hardware/ff564599) function. If data is received on an offloaded connection while the push timer is running, the offload target must restart the push timer for that connection.
 
- 
+ 
 
- 
+ 
 
 
 

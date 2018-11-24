@@ -1,5 +1,5 @@
 ---
-title: FSCTL\_SET\_ZERO\_DATA control code
+title: FSCTL_SET_ZERO_DATA control code
 description: The FSCTL\_SET\_ZERO\_DATA control code fills a specified range of a file with zeros (0).
 ms.assetid: AEC4DAD4-17EB-412B-881B-E54F6A578637
 keywords: ["FSCTL_SET_ZERO_DATA control code Installable File System Drivers"]
@@ -11,11 +11,7 @@ api_location:
 - ntifs.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -90,9 +86,9 @@ Requirements
 
 [**FILE\_ZERO\_DATA\_INFORMATION\_EX**](https://msdn.microsoft.com/library/windows/hardware/mt668764)
 
- 
+ 
 
- 
+ 
 
 
 

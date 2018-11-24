@@ -1,13 +1,8 @@
 ---
 title: Creating a Single Driver Package for Windows XP and Windows Vista
-author: windows-driver-content
 description: Creating a Single Driver Package for Windows XP and Windows Vista
 ms.assetid: 5e350152-edd7-4afb-bcba-dd0217d0d17a
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -58,9 +53,9 @@ If your driver requires updated versions of the core driver package to work prop
 
 6.  In your install section for Windows operating systems earlier than Windows Vista, copy the required files directly out of the included core driver package as if they were part of your driver.
 
- 
+ 
 
- 
+ 
 
 
 

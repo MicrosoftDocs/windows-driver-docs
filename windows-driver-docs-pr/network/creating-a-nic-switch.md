@@ -2,11 +2,7 @@
 title: Creating a NIC Switch
 description: Creating a NIC Switch
 ms.assetid: 5A184EBD-95F4-4C11-AACD-49DF04578CA0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,11 +31,11 @@ For more information on NIC switches for SR-IOV network adapters, see [NIC Switc
 
 **Note**  The miniport driver for a PCIe Virtual Function (VF) on the SR-IOV network adapter does not create or configure the network adapter's hardware resources, such as the NIC switch. For more information, see [Writing SR-IOV VF Miniport Drivers](writing-sr-iov-vf-miniport-drivers.md).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: NFC glossary
-author: windows-driver-content
 description: This topic provides a glossary of NFC class extension (CX) terms.
 Robots: noindex, nofollow
 ms.assetid: F8674D9B-AD43-452A-A146-473ABE65A298
@@ -10,11 +9,7 @@ keywords:
 - proximity
 - near field proximity
 - NFP
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -83,9 +78,9 @@ User Mode Driver Framework 2.0
 <a href="" id="nfpdrivers-wdf"></a>**WDF**  
 Windows Driver Framework
 
- 
+ 
 
- 
+ 
 ## Related topics
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [NFC class extension (CX) reference](https://msdn.microsoft.com/library/windows/hardware/dn905536)  

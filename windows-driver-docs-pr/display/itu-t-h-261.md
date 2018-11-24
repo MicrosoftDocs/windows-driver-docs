@@ -6,11 +6,7 @@ keywords:
 - ITU-T H.261 WDK DirectX VA
 - H.261 WDK DirectX VA
 - prediction blocks WDK DirectX VA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +24,9 @@ All H.261 prediction blocks use forward-only prediction from the previous pictur
 
 Recommendation H.261 Annex D Graphic Transfer mode can be supported by reading four decoded pictures from the accelerator back onto the host and interleaving them there for display as a higher-resolution graphic picture.
 
- 
+ 
 
- 
+ 
 
 
 

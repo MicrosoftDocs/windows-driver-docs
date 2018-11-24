@@ -9,11 +9,7 @@ api_name:
 - wscn FilmMaximumSize
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **FilmMaximumSize** element specifies the largest size original tha
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:FilmMaximumSize>
   child elements
 </wscn:FilmMaximumSize>
@@ -50,10 +46,10 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>Height</strong>](height.md)</p></td>
+<td><p><a href="height.md" data-raw-source="[&lt;strong&gt;Height&lt;/strong&gt;](height.md)"><strong>Height</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>Width</strong>](width.md)</p></td>
+<td><p><a href="width.md" data-raw-source="[&lt;strong&gt;Width&lt;/strong&gt;](width.md)"><strong>Width</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -72,7 +68,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>Film</strong>](film.md)</p></td>
+<td><p><a href="film.md" data-raw-source="[&lt;strong&gt;Film&lt;/strong&gt;](film.md)"><strong>Film</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -84,7 +80,7 @@ The [**Width**](width.md) child element specifies the maximum size of media that
 
 All media dimensions are measured in one-thousandths (1/1000) of an inch. The possible values for both **Width** and **Height** range from 1 through 2147483648.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**Film**](film.md)
@@ -93,9 +89,9 @@ All media dimensions are measured in one-thousandths (1/1000) of an inch. The po
 
 [**Width**](width.md)
 
- 
+ 
 
- 
+ 
 
 
 

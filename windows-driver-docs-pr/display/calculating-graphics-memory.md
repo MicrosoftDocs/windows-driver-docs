@@ -2,11 +2,7 @@
 title: Calculating Graphics Memory
 description: Calculating Graphics Memory
 ms.assetid: 030a332b-d1f0-4a86-b11f-cfd2fbe42ac2
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,7 +17,7 @@ Total amount of system memory that is accessible to the operating system. Memory
 <span id="Total_system_memory_that_is_available_for_graphics_use"></span><span id="total_system_memory_that_is_available_for_graphics_use"></span><span id="TOTAL_SYSTEM_MEMORY_THAT_IS_AVAILABLE_FOR_GRAPHICS_USE"></span>Total system memory that is available for graphics use  
 Total amount of system memory that is dedicated or shared to the GPU. This number is calculated as follows:
 
-```
+```cpp
 TotalSystemMemoryAvailableForGraphics = MAX((TotalSystemMemory / 2), 64MB)
 ```
 
@@ -43,26 +39,26 @@ Sum of the size of all memory segments for which the display miniport driver spe
 <span id="Shared_system_memory"></span><span id="shared_system_memory"></span><span id="SHARED_SYSTEM_MEMORY"></span>Shared system memory  
 The maximum amount of system memory that is shared to the GPU. This number is calculated as follows:
 
-```
+```cpp
 MaxSharedSystemMemory = TotalSystemMemoryAvailableForGraphics - DedicatedSystemMemory
 ```
 
 The amount of system memory that is shared to the GPU. This number is calculated as follows:
 
-```
+```cpp
 SharedSystemMemory = MIN(MIN(SumOfCommitLimitOnAllApertureSegment, DXGK_DRIVERCAPS.ApertureSegmentCommitLimit), MaxSharedSystemMemory)
 ```
 
 <span id="Total_video_memory"></span><span id="total_video_memory"></span><span id="TOTAL_VIDEO_MEMORY"></span>Total video memory  
 The total amount of video memory. This number is calculated as follows:
 
-```
+```cpp
 TotalVideoMemory = DedicatedVideoMemory + DedicatedSystemMemory + SharedSystemMemory
 ```
 
- 
+ 
 
- 
+ 
 
 
 

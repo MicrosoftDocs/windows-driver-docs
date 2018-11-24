@@ -1,15 +1,10 @@
 ---
 title: WDI_FRAME_ID
-author: windows-driver-content
 description: This topic describes the WDI_FRAME_ID data type for WDI miniport drivers.
 ms.assetid: 7D886BA2-EDD2-4770-948C-9C891D07EF58
 keywords:
 - WDI_FRAME_ID, WDK WDI_FRAME_ID network drivers
-ms.author: windowsdriverdev
 ms.date: 11/27/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

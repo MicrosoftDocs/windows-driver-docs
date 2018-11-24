@@ -1,6 +1,5 @@
 ---
 title: PCI-Based TV Capture
-author: windows-driver-content
 description: PCI-Based TV Capture
 ms.assetid: ae97d5f7-82de-4d6e-9835-ff4c7427f333
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - PCI-based TV capture WDK video capture
 - TV capture WDK video capture
 - television capture WDK video capture
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +28,9 @@ The video capture minidriver then can retain ownership of the buffers indefinite
 
 If your video capture hardware includes an FM radio tuner, see [Video Capture Devices with Radio Tuners](video-capture-devices-with-radio-tuners.md).
 
- 
+ 
 
- 
+ 
 
 
 

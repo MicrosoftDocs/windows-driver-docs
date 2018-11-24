@@ -1,14 +1,9 @@
 ---
 title: Controlling Device Access
-author: windows-driver-content
 description: Controlling Device Access
 ms.assetid: b5e562ad-573b-4b0f-9d85-2410fda16e4e
 keywords: ["device objects WDK kernel , security", "security WDK device objects", "device access controls WDK kernel", "non-WDM driver device access WDK kernel", "security descriptors WDK device objects"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -60,9 +55,9 @@ Use the **IoCreateDeviceSecure** routine to create the named device object and t
 
 The system overrides the default security descriptor with any security settings in the registry for the specified class GUID. The driver must specify its own unique GUID for the device. Use the GuidGen tool to generate a unique GUID. (GuidGen is included in the Microsoft Windows SDK.)
 
- 
+ 
 
- 
+ 
 
 
 

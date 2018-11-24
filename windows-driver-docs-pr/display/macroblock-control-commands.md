@@ -8,11 +8,7 @@ keywords:
 - DXVA_MBctrl_I_OffHostIDCT_1
 - DXVA_MBctrl_P_HostResidDiff_1
 - DXVA_MBctrl_P_OffHostIDCT_1
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -108,9 +104,9 @@ The following structure members and flags must equal the indicated values:
 
 -   **bConfigResidDiffHost** must equal zero (off-host residual difference decoding).
 
- 
+ 
 
- 
+ 
 
 
 

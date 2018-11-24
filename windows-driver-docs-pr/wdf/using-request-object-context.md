@@ -1,16 +1,11 @@
 ---
 title: Using Request Object Context
-author: windows-driver-content
 description: Using Request Object Context
 ms.assetid: befb4a22-0640-45e3-890e-6ff17969b017
 keywords:
 - request objects WDK KMDF , context space
 - context space WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +25,9 @@ The framework allocates context space for request objects as follows:
 
 For more information about allocating and accessing context space for framework objects, see [Framework Object Context Space](framework-object-context-space.md).
 
- 
+ 
 
- 
+ 
 
 
 

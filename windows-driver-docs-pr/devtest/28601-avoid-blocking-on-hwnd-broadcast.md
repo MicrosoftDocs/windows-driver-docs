@@ -2,11 +2,7 @@
 title: C28601
 description: Warning C28601 Avoid blocking on HWND_BROADCAST.
 ms.assetid: 51fc27da-012a-4cf3-adbf-bd7f7c497b01
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ The following call could cause the process to stop responding.
 SendMessage(HWND_BROADCAST, ... );
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Install Serial Devices with a 16550 UART-Compatible Interface
-author: windows-driver-content
 description: Installing Serial Devices that Use a 16550 UART-Compatible Interface
 ms.assetid: d80db651-b890-44dc-98ad-32e72e244d8c
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - universal asynchronous receiver-transmitters WDK serial devices
 - UART WDK serial devices
 - 16550 UART-compatible interfaces WDK serial devices
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +23,9 @@ To install a Plug and Play device that uses Serial as a lower-level device filte
 
 -   Set the **SerialSkipExternalNaming** entry value for the device to a nonzero value -- see [Registry Settings for a Plug and Play Serial Device](registry-settings-for-a-plug-and-play-serial-device.md).
 
- 
+ 
 
- 
+ 
 
 
 

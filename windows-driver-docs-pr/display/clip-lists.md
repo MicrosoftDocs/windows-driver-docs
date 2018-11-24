@@ -10,11 +10,7 @@ keywords:
 - blt WDK DirectDraw , clip lists
 - clip lists WDK DirectDraw
 - clipped blts WDK DirectDraw
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +22,9 @@ ms.localizationpriority: medium
 
 Clipped blts are never passed to the driver on Microsoft Windows 2000 and later. The **IsClipped** member of [**DD\_BLTDATA**](https://msdn.microsoft.com/library/windows/hardware/ff550474) is always **FALSE**, and the clipped list is always **NULL**.
 
- 
+ 
 
- 
+ 
 
 
 

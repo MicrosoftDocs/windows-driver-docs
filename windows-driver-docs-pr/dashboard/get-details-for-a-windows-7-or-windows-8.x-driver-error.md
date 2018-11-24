@@ -1,18 +1,25 @@
 ---
-author: mcleanbyron
 ms.assetid: 2FBA0B73-17C6-4F25-A79D-63F2F262491A
 description: Use this method in the Microsoft Store analytics API to get detailed data for a Windows 7 or Windows 8.x driver error. This method is intended only for IHVs.
 title: Get details for a Windows 7 or Windows 8.x driver error
-ms.author: mcleans
-ms.date: 06/04/2018
 ms.topic: article
-ms.prod: windows
-ms.technology: uwp
+ms.date: 08/28/2018
 keywords: windows 10, uwp, Store services, Microsoft Store analytics API, errors, details
 ms.localizationpriority: medium
 ---
 
 # Get details for a Windows 7 or Windows 8.x driver error
+
+> [!IMPORTANT]
+> This topic contains deprecated material. It describes older methods for collecting data about driver submission failures. It is supplied only for legacy support.
+>
+> Use these newer topics instead:
+>
+> - [Schedule Custom Reports for your driver failure details](schedule-custom-reports-for-driver-failure-details.md)
+> - [Create new report template](create-a-new-report-template.md)
+> - [Schedule a new report](schedule-a-new-report.md)
+> - [Get Report Data](get-report-data.md)
+> - [Download Failure Cabs](download-failure-cabs.md)
 
 Use this method in the Microsoft Store analytics API to get detailed data for a specific Windows 7/Windows 8.x driver error in JSON format. Before you can use this method, you must first use the [get error reporting data for Windows 7 and Windows 8.x drivers](get-error-reporting-data-for-windows-7-and-windows-8.x-drivers.md) method to retrieve the ID of the error for which you want to get detailed info.
 
@@ -35,7 +42,7 @@ To use this method, you need to first do the following:
 
 | Method | Request URI                                                          |
 |--------|----------------------------------------------------------------------|
-| GET    | ```https://manage.devcenter.microsoft.com/v1.0/my/analytics/ihvdriver/failuredetails``` |
+| GET    | `https://manage.devcenter.microsoft.com/v1.0/my/analytics/ihvdriver/failuredetails` |
 
 
 ### Request header
@@ -139,5 +146,6 @@ The following example demonstrates an example JSON response body for this reques
 
 ## Related topics
 
-* [Get error reporting data for Windows 7 and Windows 8.x drivers](get-error-reporting-data-for-windows-7-and-windows-8.x-drivers.md)
-* [Download the CAB file for a Windows 7 or Windows 8.x driver error](download-the-cab-file-for-a-windows-7-or-windows-8.x-driver-error.md)
+- [Get error reporting data for Windows 7 and Windows 8.x drivers](get-error-reporting-data-for-windows-7-and-windows-8.x-drivers.md)
+
+- [Download the CAB file for a Windows 7 or Windows 8.x driver error](download-the-cab-file-for-a-windows-7-or-windows-8.x-driver-error.md)

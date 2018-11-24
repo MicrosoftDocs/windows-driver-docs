@@ -6,11 +6,7 @@ keywords:
 - intermediate drivers WDK networking , binding
 - NDIS intermediate drivers WDK , binding
 - unbinding WDK NDIS intermediate
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,9 +28,9 @@ After an intermediate driver calls **NdisCloseAdapterEx**, it should fail any se
 
 For additional information about intermediate driver unbinding operations, see [Unbinding from an Adapter](unbinding-from-an-adapter.md).
 
- 
+ 
 
- 
+ 
 
 
 

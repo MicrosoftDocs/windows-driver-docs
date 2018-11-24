@@ -5,11 +5,7 @@ ms.assetid: 716fc6dc-b1e9-4c81-ae84-03f8a91cc47f
 keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , header files
 - header files WDK DirectX 8.0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,9 +19,9 @@ A DirectX 8.0 display driver's source code must include the *d3d8.h* header file
 
 The DirectX 8.0 Driver Development Kit (DDK) introduces a new DDI-only header file called *d3dhalex.h*. This header file contains optional helper definitions and macros. Currently, this header contains some macros to assist with reporting D3DCAPS8 to the runtime.
 
- 
+ 
 
- 
+ 
 
 
 

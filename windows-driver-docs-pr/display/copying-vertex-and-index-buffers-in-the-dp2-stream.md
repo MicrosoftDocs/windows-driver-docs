@@ -7,11 +7,7 @@ keywords:
 - DP2 drawing tokens WDK DirectX 8.0
 - drawing tokens WDK DirectX 8.0
 - tokens WDK DirectX 8.0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,9 +19,9 @@ ms.localizationpriority: medium
 
 A new DP2 token, D3DDP2OP\_BUFFERBLT, has been added to support optimal copying and updating of index and vertex buffers. This token is very similar to the existing D3DDP2OP\_TEXBLT that copies and updates textures but has been modified to support subbuffer copying rather than simple rectangles.
 
- 
+ 
 
- 
+ 
 
 
 

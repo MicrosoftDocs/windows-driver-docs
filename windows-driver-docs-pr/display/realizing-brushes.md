@@ -18,11 +18,7 @@ keywords:
 - fills WDK GDI
 - lines WDK GDI
 - drawing WDK GDI , brushes
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -85,13 +81,13 @@ The function *DrvDitherColor* is optional and is called only if the GCAPS\_COLOR
 </tbody>
 </table>
 
- 
+ 
 
 Monochrome drivers should support *DrvDitherColor* in order for GDI to obtain good gray-level patterns.
 
- 
+ 
 
- 
+ 
 
 
 

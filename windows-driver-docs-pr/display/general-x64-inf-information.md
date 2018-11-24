@@ -5,11 +5,7 @@ ms.assetid: a1a96e8f-74d3-403d-994a-b21436d166d2
 keywords:
 - INF files WDK display , 64-bit
 - 64-bit WDK display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -18,7 +14,7 @@ ms.localizationpriority: medium
 
 The following x64-specific information is required for an INF file that loads display drivers that run on 64-bit Windows Vista and later:
 
-```
+```inf
 [DestinationDirs]
 DefaultDestDir  = 11
 R200.Miniport   = 12  ; drivers
@@ -51,12 +47,3 @@ r200umd.dll,,,0x00004000  ; COPYFLG_IN_USE_TRY_RENAME
 [R200.DispWow]
 r2umd32.dll,,,0x00004000  ; COPYFLG_IN_USE_TRY_RENAME
 ```
-
- 
-
- 
-
-
-
-
-

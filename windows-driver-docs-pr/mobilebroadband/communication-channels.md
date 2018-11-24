@@ -2,11 +2,7 @@
 title: Communication channels
 description: Communication channels
 ms.assetid: e26e22a2-4cc2-46a2-9d6c-02ab5df35041
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,9 +28,9 @@ The following topics are available in this section:
 
 [Enabling mobile broadband experiences using portable hotspot devices](enabling-mobile-broadband-experiences-using-portable-hotspot-devices.md)
 
- 
+ 
 
- 
+ 
 
 
 

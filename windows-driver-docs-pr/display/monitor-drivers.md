@@ -6,11 +6,7 @@ keywords:
 - display devices WDK
 - monitor drivers WDK
 - display drivers WDK , monitor drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +22,9 @@ Each monitor has a device stack that includes a Microsoft monitor class function
 
 [Monitor Filter Drivers](monitor-filter-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

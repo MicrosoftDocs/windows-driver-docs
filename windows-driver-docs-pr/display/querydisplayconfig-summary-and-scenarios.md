@@ -11,11 +11,7 @@ keywords:
 - CCD concepts WDK Windows Server 2008 R2 display , QueryDisplayConfig
 - QueryDisplayConfig WDK Windows 7 display
 - QueryDisplayConfig WDK Windows Server 2008 R2 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -52,9 +48,9 @@ The caller can use [**QueryDisplayConfig**](https://msdn.microsoft.com/library/w
 
 -   A third party application might call [**QueryDisplayConfig**](https://msdn.microsoft.com/library/windows/hardware/ff569215) to query the current settings that are stored in the database for the set of connected displays.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: ServiceInfo XML Example
 description: ServiceInfo XML Example
 ms.assetid: b2114044-ca4b-4c1e-ab2e-73f4f56142b5
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +27,9 @@ The following XML document uses the [ServiceInfo XML schema](serviceinfo-xml-sch
 </ServiceInfo>
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,11 +3,7 @@ title: Edit Find Next
 description: Edit Find Next
 ms.assetid: 0fa53035-555a-4f7f-9d15-dea60759121b
 keywords: ["Edit Find Next"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +25,9 @@ If you have not previously performed any searches, use the **Edit | Find Next** 
 
 For more information about other ways of finding text in debugging information windows, see [Moving Through a Window](moving-through-a-window.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -20,11 +20,7 @@ keywords:
 - Remote NDIS WDK networking , resetting communication channels
 - communication channels WDK networking
 - Remote NDIS WDK networking , message encapsulation
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -84,9 +80,9 @@ This section presents an overview of the Remote NDIS requirements on the communi
 
     There is no Remote NDIS specification for the way NDIS messages are encapsulated in native bus messages or primitives.
 
- 
+ 
 
- 
+ 
 
 
 

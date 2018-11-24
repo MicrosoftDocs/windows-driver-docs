@@ -1,13 +1,8 @@
 ---
 title: WDI_TLV_CREATE_PORT_MAC_ADDRESS
-author: windows-driver-content
 description: WDI_TLV_CREATE_PORT_MAC_ADDRESS is a TLV that contains a MAC address for OID_WDI_TASK_CREATE_PORT.
 ms.assetid: CE2174E2-CFD7-40E7-B8A2-B96DDB6D6AA4
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_CREATE_PORT_MAC_ADDRESS Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -35,7 +30,7 @@ The size (in bytes) of a [**WDI\_MAC\_ADDRESS**](https://msdn.microsoft.com/libr
 |---------------------------------------------------|-----------------------------------------------|
 | [**WDI\_MAC\_ADDRESS**](https://msdn.microsoft.com/library/windows/hardware/dn926071) | The MAC address to be used for port creation. |
 
- 
+ 
 
 Requirements
 ------------
@@ -61,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

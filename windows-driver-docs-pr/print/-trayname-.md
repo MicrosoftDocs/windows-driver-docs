@@ -1,13 +1,8 @@
 ---
 title: \ TrayName\
-author: windows-driver-content
 description: \ TrayName\
 ms.assetid: 7fa03413-5b95-443f-9b0f-75d82d0e41cf
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -182,9 +177,9 @@ Data Type:BIDI\_INT
 
 Description:The amount of capacity remaining in the currently referenced input bin, expressed as a percentage. A full tray would have a value of 100, while an empty tray a value of 0. If the level is not measurable, a value of -1 (indicating an unknown Level) should be returned.
 
- 
+ 
 
- 
+ 
 
 
 

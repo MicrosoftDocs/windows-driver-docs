@@ -1,20 +1,18 @@
 ---
-title: 
-description: 
+title: Manage product submissions
+description: Manage hardware dashboard submissions for your products and get them signed by Microsoft
 author: balapv
 ms.author: balapv
-ms.date: 04/05/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 04/05/2018
 ms.localizationpriority: medium
 ---
 
 # Manage Product Submissions
 
-Use the following methods in *Microsoft Hardware APIs* to manage submissions for your products and for getting them signed by Microsoft. For an introduction to Microsoft Hardware APIs, including prerequisites for using the API, see [Manage hardware submissions using APIs](dashboard-api.md).
+Use the following methods in *Microsoft Hardware APIs* to manage submissions for your products and for getting them signed by Microsoft. For an introduction to Microsoft Hardware APIs, including prerequisites for using the API, see [Hardware dashboard API](dashboard-api.md).
 
-```
+```cpp
 https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/
 ```
 
@@ -37,7 +35,7 @@ Methods for managing product submissions
 
 3.	[Create a new product](create-a-new-product.md)  by executing the following method in the Microsoft Hardware API. This creates a new in-progress product and allows you to submit packages for this product.
 
-    ```
+    ```cpp
     https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/
     ```
 
@@ -45,7 +43,7 @@ Methods for managing product submissions
 
 4.	[Create a submission](create-a-new-submission-for-a-product.md)  for this product by executing the following method in the Microsoft Hardware API.  Use the ProductID created in the step above.
 
-    ```
+    ```cpp
     https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/{productID}/submissions/
     ```
 
@@ -62,13 +60,13 @@ The following C# code example demonstrates how to upload a package to Azure Blob
     ```
 6.	[Commit the product submission](commit-a-product-submission.md)  by executing the following method. This will alert Hardware Dev Center that you are done with your product submission and validation will be started for the submission.
 
-    ```
+    ```cpp
     https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/{productID}/submissions/{submissionId}/commit
     ```
 
 7.	Check on the commit status by executing the following method to [get the status of the product submission](get-a-submission.md).
 
-    ```
+    ```cpp
     https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/{productID}/submissions/{submissionId}
     ```
     To confirm the submission status, review the *commitStatus* value in the response body. This value should change from *commitReceived* to *commitCompleted* if the request succeeds or to *commitFailed* if there are errors in the request. If there are errors, the *error* field contains further details about the error.
@@ -84,4 +82,9 @@ The following code examples demonstrates how to use the Microsoft Hardware API:
 The Microsoft Hardware APIs methods for creating and managing product data use the following JSON data resources:
 
 * [Product resource](get-product-data.md#product-resource)
+
 * [Submission resource](get-product-data.md#submission-resource)
+
+## See also
+
+[Hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)

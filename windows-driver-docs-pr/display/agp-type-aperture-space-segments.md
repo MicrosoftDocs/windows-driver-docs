@@ -6,11 +6,7 @@ keywords:
 - memory segments WDK display , AGP-type aperture-space segments
 - AGP-type aperture-space segments WDK display
 - aperture-space segments WDK display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,9 +20,9 @@ An AGP-type aperture-space segment is similar to a linear aperture-space segment
 
 The driver must set the **Agp** bit-field flag in the **Flags** member of the [**DXGK\_SEGMENTDESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff562035) structure to specify an AGP-type aperture-space segment.
 
- 
+ 
 
- 
+ 
 
 
 

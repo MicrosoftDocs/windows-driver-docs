@@ -6,11 +6,7 @@ keywords:
 - user-mode display drivers WDK Windows Vista , runtime function error codes
 - runtime function error codes WDK display
 - error codes WDK display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,11 +17,11 @@ Calls to the [Direct3D version 9 user-mode display driver-supplied functions](ht
 
 **Note**   There is one exception to the rule that a driver must pass a runtime error code back to the runtime. When the driver calls the [**pfnAllocateCb**](https://msdn.microsoft.com/library/windows/hardware/ff568893) runtime-supplied function, to allocate video memory for optional resources when the video memory is already allocated, the rule does not apply. If **pfnAllocateCb** fails to allocate this video memory for optional resources that are only required to optimize performance, the driver should not report the out-of-memory error (E\_OUTOFMEMORY) back to the runtime.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

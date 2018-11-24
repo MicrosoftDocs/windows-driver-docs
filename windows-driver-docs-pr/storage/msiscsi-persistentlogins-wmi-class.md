@@ -3,6 +3,7 @@ title: MSiSCSI\_PersistentLogins WMI Class
 description: MSiSCSI\_PersistentLogins WMI Class
 ms.assetid: 259220f8-af38-42b4-a0e3-88b4c396173d
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MSiSCSI\_PersistentLogins WMI Class
@@ -19,9 +20,9 @@ The MSiSCSI\_PersistentLogins class is unpublished and is defined in *Operations
 
 When the WMI tool suite compiles this class definition, it produces the [**MSiSCSI\_PersistentLogins**](https://msdn.microsoft.com/library/windows/hardware/ff563093) data structure.
 
- 
+ 
 
- 
+ 
 
 
 

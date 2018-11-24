@@ -5,11 +5,7 @@ ms.assetid: 9363e0f9-4a58-4473-969f-eb54d0678632
 keywords:
 - Direct3D WDK Windows 2000 display , cross platform development
 - cross-platform development WDK Direct3D
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,9 +19,9 @@ The Microsoft Windows 2000 and later and Windows 98/Me Direct3D DDI types are no
 
 If your code will be portable between Windows 2000 and later and Windows 98/Me, use *dx95type.h*, a utility file that is included in the Windows Driver Kit (WDK) and previous Driver Development Kits (DDKs). It contains type definitions and macros that map some naming differences that occur between the Windows 98/Me and Windows 2000 and later platforms, enabling common driver code to be used between them.
 
- 
+ 
 
- 
+ 
 
 
 

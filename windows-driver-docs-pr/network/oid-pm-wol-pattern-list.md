@@ -1,13 +1,8 @@
 ---
 title: OID_PM_WOL_PATTERN_LIST
-author: windows-driver-content
 description: As a query, overlying drivers can use the OID_PM_WOL_PATTERN_LIST OID to enumerate the wake on LAN patterns that are set on an underlying network adapter.
 ms.assetid: 7e5a65d8-39ec-4624-aede-97df945ef5e5
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_PM_WOL_PATTERN_LIST Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -76,9 +71,9 @@ Requirements
 
 [OID\_PNP\_WAKE\_UP\_PATTERN\_LIST](oid-pnp-wake-up-pattern-list.md)
 
- 
+ 
 
- 
+ 
 
 
 

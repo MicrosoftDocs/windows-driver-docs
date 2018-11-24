@@ -7,11 +7,7 @@ keywords:
 - data transfers WDK SANs
 - transferring data WDK SANs
 - SAN data transfers WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +25,9 @@ Many system area networks (SANs) lack flow control; therefore, the Windows Socke
 
 [Completing Data Transfer Requests](completing-data-transfer-requests.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -7,11 +7,7 @@ keywords:
 - registry WDK smart card
 - WDM device registering WDK smart card
 - registering smart card drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,7 +19,7 @@ ms.localizationpriority: medium
 
 To make a smart card reader driver visible to Device Manager, you must put the indicated registry values under the following key:
 
-**HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Services\\***SmartCardDriver*
+**HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Services\\**<em>SmartCardDriver</em>
 
 The required values are listed in the following table.
 
@@ -64,11 +60,11 @@ The required values are listed in the following table.
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,15 +1,10 @@
 ---
 title: Metadata fields at each filtering layer
-author: windows-driver-content
 description: This section describes metadata fields at each filtering layer for Windows Filtering Platform callout drivers.
 ms.assetid: 77152ebe-1721-48b3-9380-7f565931a0e5
 keywords:
 - Metadata fields at each filtering layer network drivers
-ms.author: windowsdriverdev
 ms.date: 11/09/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

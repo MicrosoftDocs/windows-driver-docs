@@ -1,13 +1,8 @@
 ---
 title: Creating a WIA Camera Item Tree Layout
-author: windows-driver-content
 description: Creating a WIA Camera Item Tree Layout
 ms.assetid: 83b496dc-8c47-46fb-b703-837eb536cb66
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -39,9 +34,9 @@ Through the WIA service, an application can perform the following actions:
 
 -   Request a data transfer.
 
- 
+ 
 
- 
+ 
 
 
 

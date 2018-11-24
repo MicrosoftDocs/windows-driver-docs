@@ -1,6 +1,5 @@
 ---
 title: Handling Installable Features and Options
-author: windows-driver-content
 description: Handling Installable Features and Options
 ms.assetid: b970808f-55bd-4a3a-9464-c9cd3567fa6f
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - installable features and options WDK Unidrv
 - GPD files WDK Unidrv , installable features and options
 - Unidrv WDK print
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,7 +25,7 @@ Some of a printer's features or options might be installable. For example, a pri
 
 First, to specify the envelope feeder, along with an automatic feeder, as options for the InputBin feature, the following GPD entries could be used.
 
-```
+```cpp
 *Feature: InputBin
 {
     *Name: "Input Bin"
@@ -49,7 +44,7 @@ First, to specify the envelope feeder, along with an automatic feeder, as option
 
 To make the envelope feeder installable, additional GPD entries are needed, as follows:
 
-```
+```cpp
 *InstalledOptionName: "Installed"
 *NotInstalledOptionName: "Not installed"
 *Feature: InputBin
@@ -84,7 +79,7 @@ Sometimes, it is necessary to indicate that certain installable options cannot b
 
 You cannot use the \*Installable? attribute with optional features that require a \*DisabledFeatures entry. For these features, you must explicitly specify the optional feature with "Installed" and "Not installed" options. For example, suppose a printer has an optional duplexing unit. The Duplex feature (see [Standard Features](standard-features.md)) must be disabled if the duplexing unit is not installed. You must define an "Optional Duplexing Unit" feature, with "Installed" and "Not Installed" options. Within the "Not Installed" \*Option entry, you would include a \*DisabledFeatures entry for the Duplex feature. The following GPD entries can be used:
 
-```
+```cpp
 *Feature: DuplexUnit
 {
     *ConflictPriority: 3   *% Make priority higher than Duplex feature
@@ -104,9 +99,9 @@ You cannot use the \*Installable? attribute with optional features that require 
 
 Be sure to also specify any relevant [option constraints](option-constraints.md), as illustrated.
 
- 
+ 
 
- 
+ 
 
 
 

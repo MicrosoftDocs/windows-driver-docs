@@ -4,11 +4,7 @@ description: XML reference
 ms.assetid: 54ACDF08-D3EA-4AAD-AE5D-4E2FC4D40E87
 keywords:
 - device metadata XML Reference
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,9 +18,9 @@ You can create your own command-line tool to create device metadata packages. Fo
 -   [Device Metadata Package Schema Reference for Windows 8](http://go.microsoft.com/fwlink/p/?LinkId=226753)
 -   [Service Metadata Package Schema Reference for Windows 8](http://go.microsoft.com/fwlink/p/?LinkId=226755)
 
- 
+ 
 
- 
+ 
 
 
 

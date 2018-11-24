@@ -12,6 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # DIF_TROUBLESHOOTER
@@ -21,7 +22,7 @@ The DIF_TROUBLESHOOTER request allows an installer to start a troubleshooter for
 
 **Note**  This DIF code is only supported on Windows Server 2003, Windows XP, and Microsoft Windows 2000.
 
- 
+ 
 
 ### When Sent
 
@@ -50,7 +51,7 @@ When a user clicks the "Troubleshooter" button for a device in Device Manager.
 </tbody>
 </table>
 
- 
+ 
 
 ### Installer Input
 
@@ -130,9 +131,9 @@ Requirements
 
 [**SP_TROUBLESHOOTER_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff553341)
 
- 
+ 
 
- 
+ 
 
 
 

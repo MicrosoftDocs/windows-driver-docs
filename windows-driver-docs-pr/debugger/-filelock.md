@@ -3,11 +3,7 @@ title: filelock
 description: The filelock extension displays a file lock structure.
 ms.assetid: 943a0ed8-b7a5-4ab6-8579-6a27e06e1dac
 keywords: ["filelock Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,7 +20,7 @@ The **!filelock** extension displays a file lock structure.
 
 Syntax
 
-```
+```dbgcmd
 !filelock FileLockAddress 
 !filelock ObjectAddress 
 ```
@@ -46,9 +42,9 @@ Kdexts.dll
 
 For information about file objects, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
- 
+ 
 
- 
+ 
 
 
 

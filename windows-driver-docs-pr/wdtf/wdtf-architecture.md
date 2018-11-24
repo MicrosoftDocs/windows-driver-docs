@@ -1,6 +1,5 @@
 ---
 title: WDTF Architecture
-author: windows-driver-content
 description: WDTF Architecture
 ms.assetid: 8c110e97-6870-41f1-a4f3-4d44b2974c1a
 keywords:
@@ -18,11 +17,7 @@ keywords:
 - SDEL WDK WDTF
 - code modules WDK WDTF
 - query languages WDK WDTF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -68,9 +63,9 @@ For more information about these interfaces, see [Controlling Targets](controlli
 
 WDTF includes a simple query language, Simple Data Evaluation Language (SDEL), that is similar to XPath and that simplifies the task of collecting targets based on attributes or relationships. SDEL enables you to form brief query statements that define selection constraints based on both the attributes of each target and relationships between them. For more information about SDEL, see [Simple Data Evaluation Language Overview](simple-data-evaluation-language-overview.md).
 
- 
+ 
 
- 
+ 
 
 
 

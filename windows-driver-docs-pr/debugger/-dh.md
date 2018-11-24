@@ -3,11 +3,7 @@ title: dh
 description: The dh extension displays the headers for the specified image.
 ms.assetid: 1b4f94ae-42cc-4381-a2d1-c2f248e4d5a6
 keywords: ["NTFS file object", "dh Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!dh** extension displays the headers for the specified image.
 
-```
+```dbgcmd
 !dh [Options] Address 
 !dh -h
 ```
@@ -70,16 +66,16 @@ Ntsdexts.dll</td>
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
 
 The [**!lmi**](-lmi.md) extension extracts the most important information from the image header and displays it in a concise summary format. That extension is frequently more useful than **!dh**.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: IRP\_MJ\_CREATE
+title: IRP_MJ_CREATE
 description: IRP\_MJ\_CREATE
 ms.assetid: fdcc81f0-e571-4194-88cd-d0956ca1577e
 keywords: ["IRP_MJ_CREATE Installable File System Drivers"]
@@ -9,11 +9,7 @@ api_name:
 - IRP_MJ_CREATE
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -46,7 +42,7 @@ File system filter driver writers should note that [**IoCreateStreamFileObject**
 &gt; \[!Note\]
 &gt;  When legacy filter drivers re-issue a create in a post-create callback, they must release and set the buffer that is associated with their reparse point (the auxiliary buffer) to **NULL**. If a legacy filter driver does not free this buffer and set it to **NULL**, the driver will leak memory. Minifilter drivers do not have to do this because the Filter Manager does this for them.
 
- 
+ 
 
 ## Parameters
 
@@ -125,12 +121,12 @@ One or more of the following:
 </tr>
 <tr class="even">
 <td align="left"><p>SL_OPEN_TARGET_DIRECTORY</p></td>
-<td align="left"><p>If this flag is set, the file's parent directory should be opened.</p></td>
+<td align="left"><p>If this flag is set, the file&#39;s parent directory should be opened.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 <a href="" id="irpsp--majorfunction"></a>*IrpSp-&gt;MajorFunction*
 Specifies IRP\_MJ\_CREATE.
@@ -217,9 +213,9 @@ Bitmask of share access rights requested for the file. If this member is zero, e
 
 [**ZwOpenFile**](https://msdn.microsoft.com/library/windows/hardware/ff567011)
 
- 
+ 
 
- 
+ 
 
 
 

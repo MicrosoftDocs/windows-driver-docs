@@ -2,11 +2,7 @@
 title: Device Settings Configuration Elements
 description: Device Settings Configuration Elements
 ms.assetid: 1393f384-b688-48af-86d7-9a422a1e3cc6
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -51,9 +47,9 @@ The schema includes the following device settings elements:
 
 [**ScalingWidth**](scalingwidth2.md)
 
- 
+ 
 
- 
+ 
 
 
 

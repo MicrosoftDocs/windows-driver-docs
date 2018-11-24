@@ -3,11 +3,7 @@ title: Exporting LogViewer Files to Text
 description: Exporting LogViewer Files to Text
 ms.assetid: b014dc23-ca6e-4563-aa8d-f4dd19c89f80
 keywords: ["LogViewer, exporting files to text"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,9 +31,9 @@ This option splits up the text file by thread, making it easier to follow a thre
 <span id="Export_Range"></span><span id="export_range"></span><span id="EXPORT_RANGE"></span>**Export Range**  
 This option specifies the range of rows to export.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: NFC class extension interface
-author: windows-driver-content
 description: The NFC CX interface is based on the UMDF class extension model.
 ms.assetid: 400043BE-4C16-40C7-B0EB-BA223F882F21
 keywords:
@@ -9,11 +8,7 @@ keywords:
 - proximity
 - near field proximity
 - NFP
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +29,9 @@ The NFC CX interface includes the following methods:
 -   [**NfcCxRegisterSequenceHandler**](https://msdn.microsoft.com/library/windows/hardware/dn905614)
 -   [**NfcCxUnRegisterSequenceHandler**](https://msdn.microsoft.com/library/windows/hardware/dn905617)
 
- 
+ 
 
- 
+ 
 ## Related topics
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [NFC class extension (CX) reference](https://msdn.microsoft.com/library/windows/hardware/dn905536)  

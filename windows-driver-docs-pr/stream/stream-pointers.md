@@ -1,6 +1,5 @@
 ---
 title: Stream Pointers
-author: windows-driver-content
 description: Stream Pointers
 ms.assetid: 4bac68a0-34d2-431a-9ed9-8a42751a736f
 keywords:
@@ -10,11 +9,7 @@ keywords:
 - frames WDK AVStream
 - queues WDK AVStream
 - SRBs WDK AVStream
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,9 +33,9 @@ ms.localizationpriority: medium
 
 [Stream Pointer Timers](stream-pointer-timers.md)
 
- 
+ 
 
- 
+ 
 
 
 

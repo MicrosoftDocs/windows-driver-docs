@@ -2,11 +2,7 @@
 ms.assetid: EB2264A4-BAE8-446B-B9A5-19893936DDCA
 title: Target platform on driver reference pages
 description: In the Requirements block at the bottom of Microsoft driver reference pages, you''ll see an entry called Target Platform.
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -45,7 +41,7 @@ Here are the values you might see for **Target Platform**, and what they mean:
 <li>Windows 10 IoT Core</li>
 <li>Windows Server 2016</li>
 </ul>
-<p>For more info, see [Getting Started with Universal Windows drivers](getting-started-with-universal-drivers.md).</p></td>
+<p>For more info, see <a href="getting-started-with-universal-drivers.md" data-raw-source="[Getting Started with Universal Windows drivers](getting-started-with-universal-drivers.md)">Getting Started with Universal Windows drivers</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><span id="Desktop"></span><span id="desktop"></span><span id="DESKTOP"></span>Desktop</p></td>
@@ -58,11 +54,11 @@ Here are the values you might see for **Target Platform**, and what they mean:
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

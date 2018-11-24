@@ -1,14 +1,9 @@
 ---
 title: Using KTM
-author: windows-driver-content
 description: Using KTM
 ms.assetid: 79a3ec0b-7a88-43ae-843f-10c7df92def4
 keywords: ["Kernel Transaction Manager WDK , creating transaction processing systems", "KTM WDK , creating transaction processing systems", "transaction processing systems WDK KTM , creating transaction processing systems", "TPS WDK KTM , creating TPSs"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,9 +30,9 @@ This section includes the following topics:
 
 [Using Tm*Xxx* Routines](using-tmxxx-routines.md)
 
- 
+ 
 
- 
+ 
 
 
 

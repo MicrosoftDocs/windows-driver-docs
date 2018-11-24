@@ -3,11 +3,7 @@ title: ks.devhdr
 description: The ks.devhdr extension displays the kernel streaming device header associated with the given WDM object.
 ms.assetid: 1418ccfe-3842-422c-b2ce-124d0019d7b8
 keywords: ["ks.devhdr Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!ks.devhdr** extension displays the kernel streaming device header associated with the given WDM object.
 
-```
+```dbgcmd
 !ks.devhdr DeviceObject 
 ```
 
@@ -51,7 +47,7 @@ This parameter specifies a pointer to a WDM device object. If *DeviceObject* is 
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -64,7 +60,7 @@ The output from [**!ks.allstreams**](-ks-allstreams.md) can be used as the input
 
 Here is an example of the **!ks.devhdr** display:
 
-```
+```dbgcmd
 kd> !devhdr 827aedf0 7
 Device Header 824ca1e0
     Child Create Handler List:
@@ -74,9 +70,9 @@ Device Header 824ca1e0
             Flags = 0
 ```
 
- 
+ 
 
- 
+ 
 
 
 

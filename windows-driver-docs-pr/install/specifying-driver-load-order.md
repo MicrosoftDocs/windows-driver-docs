@@ -7,11 +7,7 @@ keywords:
 - driver load order WDK INF files
 - load order WDK INF files
 - service-install-sections WDK INF files
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -104,9 +100,9 @@ The operating system can promote a driver's **StartType** to be a boot start dri
 
 For more information about promoting a driver's **StartType** at boot, depending on the boot scenario, see [**INF AddService directive**](inf-addservice-directive.md).
 
- 
+ 
 
- 
+ 
 
 
 

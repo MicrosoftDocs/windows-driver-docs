@@ -13,11 +13,7 @@ keywords:
 - user-mode trace sessions WDK
 - process trace sessions WDK
 - reserved trace sessions WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -69,9 +65,9 @@ You cannot send the trace messages from a private trace session to the debugger.
 
 For more information about private event tracing sessions, see the Microsoft Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

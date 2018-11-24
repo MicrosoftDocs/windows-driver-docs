@@ -1,13 +1,8 @@
 ---
 title: Device Stage for Document Devices
-author: windows-driver-content
 description: Device Stage for Document Devices
 ms.assetid: 7188573a-d214-4f57-8b92-013c06e53d9e
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +29,9 @@ This section includes the following topics:
 
 The document devices include Printers, Scanners, and Multifunction Printers (MFP). In addition to providing the basics of the device stage platform, Windows 7 also includes a variety of printing and scanning specific features, which can easily be included in a Device Stage experience.
 
- 
+ 
 
- 
+ 
 
 
 

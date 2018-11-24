@@ -3,6 +3,7 @@ title: MSFC\_DH\_Chap\_Parameters WMI Class
 description: MSFC\_DH\_Chap\_Parameters WMI Class
 ms.assetid: 259E3935-0F37-4DBE-BED3-C55A6715A810
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MSFC\_DH\_Chap\_Parameters WMI Class
@@ -38,9 +39,9 @@ When compiled by the WMI tool suite, this class definition produces the followin
 
 There are no methods associated with this WMI class.
 
- 
+ 
 
- 
+ 
 
 
 

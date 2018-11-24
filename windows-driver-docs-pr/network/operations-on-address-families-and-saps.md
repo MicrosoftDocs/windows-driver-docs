@@ -7,11 +7,7 @@ keywords:
 - CoNDIS WDK networking , address families
 - connection-oriented NDIS WDK , service access points
 - CoNDIS WDK networking , service access points
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,9 +31,9 @@ The following connection-oriented operations pertain to address families and SAP
 
 [Closing an Address Family](closing-an-address-family.md)
 
- 
+ 
 
- 
+ 
 
 
 

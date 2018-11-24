@@ -3,11 +3,7 @@ title: EngExtCpp Extension Design Guide
 description: EngExtCpp Extension Design Guide
 ms.assetid: 7fc21b10-9f79-4dab-90cc-5e2609414f72
 keywords: ["EngExtCpp extensions, design guide"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +27,9 @@ This section includes:
 
 [Typed Data](typed-data.md)
 
- 
+ 
 
- 
+ 
 
 
 

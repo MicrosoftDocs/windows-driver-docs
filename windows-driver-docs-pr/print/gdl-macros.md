@@ -1,17 +1,12 @@
 ---
 title: GDL Macros
-author: windows-driver-content
 description: GDL Macros
 ms.assetid: 4ac8d76e-b52a-4987-920c-38d375559777
 keywords:
 - GDL WDK , macros
 - macros WDK GDL
 - GDL WDK , elements
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,9 +27,9 @@ This section includes:
 
 [GDL Miscellaneous Macros](gdl-miscellaneous-macros.md)
 
- 
+ 
 
- 
+ 
 
 
 

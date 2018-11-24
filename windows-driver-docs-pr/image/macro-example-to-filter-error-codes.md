@@ -1,13 +1,8 @@
 ---
 title: Macro Example to Filter Error Codes
-author: windows-driver-content
 description: Macro Example to Filter Error Codes
 ms.assetid: 68aa0a75-82c7-4dd9-8f8f-eca5de6ea102
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -18,7 +13,7 @@ ms.localizationpriority: medium
 
 The following macro example filters communication failure error codes.
 
-```
+```cpp
 //
 // Example of a macro to filter device communication errors
 //
@@ -30,7 +25,7 @@ The following macro example filters communication failure error codes.
     ((HRESULT_FROM_WIN32(ERROR_WINHTTP_NAME_NOT_RESOLVED)) == hr))
 ```
 
- 
+ 
 
 
 

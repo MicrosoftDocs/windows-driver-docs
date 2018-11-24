@@ -3,6 +3,7 @@ title: HBAFCPBindingEntry WMI Class
 description: HBAFCPBindingEntry WMI Class
 ms.assetid: 58993d0d-2044-430d-b8f6-5ea3b68d460b
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # HBAFCPBindingEntry WMI Class
@@ -15,7 +16,7 @@ An HBA miniport driver that supports the T11 committee's *Fibre Channel HBA API*
 
 The HBAFCPBindingEntry class is defined as follows in *Hbaapi.mof*:
 
-```
+```cpp
 class HBAFCPBindingEntry {
   [HBAType("HBA_FCPBINDINGTYPE"),
     Values{"TO_D_ID", "TO_WWN", "TO_OTHER"},
@@ -32,9 +33,9 @@ When compiled by the WMI tool suite this class definition produces the following
 
 There are no methods associated with this WMI class.
 
- 
+ 
 
- 
+ 
 
 
 

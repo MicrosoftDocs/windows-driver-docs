@@ -2,11 +2,7 @@
 title: XPS rasterization on the GPU
 description: XML Paper Specification (XPS) rasterization on the GPU does not require any independent hardware vendor (IHV) code or behavioral changes in drivers.
 ms.assetid: 3C43552A-7D2B-4C10-9AD3-66755171D997
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,7 +18,7 @@ XML Paper Specification (XPS) rasterization on the GPU does not require any inde
 | Driver implementation—Full graphics and Display only                              | Mandatory                                         |
 | [WHCK](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) requirements and tests | **Device.Graphics¦XPSRasterizationConformance** |
 
- 
+ 
 
 ## <span id="xps"></span><span id="XPS"></span>XPS rasterization conformance
 
@@ -38,9 +34,9 @@ For info on requirements that hardware devices must meet when they implement thi
 
 See [WDDM 1.2 features](wddm-v1-2-features.md) for a review of features added with Windows 8.
 
- 
+ 
 
- 
+ 
 
 
 

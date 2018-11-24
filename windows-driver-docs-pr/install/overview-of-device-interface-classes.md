@@ -7,11 +7,7 @@ keywords:
 - device interfaces WDK device installations
 - interfaces WDK device
 - device interface classes WDK device installations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,9 +33,9 @@ When a driver registers an instance of a device interface class, the I/O manager
 
 Do not confuse device interfaces with the interfaces that drivers can export in response to an [**IRP_MN_QUERY_INTERFACE**](https://msdn.microsoft.com/library/windows/hardware/ff551687) request. That IRP is used to pass routine entry points between kernel-mode drivers.
 
- 
+ 
 
- 
+ 
 
 
 

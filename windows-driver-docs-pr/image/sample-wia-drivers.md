@@ -1,13 +1,8 @@
 ---
 title: Sample WIA Drivers
-author: windows-driver-content
 description: Sample WIA Drivers
 ms.assetid: 1d69602f-67d7-4000-b499-aa448fd50fef
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,9 +18,9 @@ For more information about the WIA samples, see the [Windows Image Acquisition (
 
 You can also find an additional sample in [Creating a 'Hello World' WIA Minidriver](creating-a---hello-world---wia-minidriver.md).
 
- 
+ 
 
- 
+ 
 
 
 

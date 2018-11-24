@@ -2,11 +2,7 @@
 title: MB identity morphing solution details
 description: Describes configuration requirements and compatible IDs for MB identity morphing devices
 ms.assetid: E4E17B4F-665B-425C-B90B-F60561B71CAB
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -76,9 +72,9 @@ Device morphs its Microsoft OS descriptor based on the new configuration. USBCCG
 
 Device does not return any CompatID. Based on the Class / Subclass / Protocol, USBCCGP loads USBSTOR and MBCD.
 
- 
+ 
 
- 
+ 
 
 
 

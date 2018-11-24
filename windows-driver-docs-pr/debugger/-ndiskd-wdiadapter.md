@@ -3,11 +3,7 @@ title: ndiskd.wdiadapter
 description: The ndiskd.wdiadapter extension displays information about a WDIWiFi CAdapter structure. If you run this extension with no parameters, ndiskd will display a list of all WDIWiFi CAdapter structures.
 ms.assetid: 1AC069E8-CF87-459B-9C56-DDC1A6F765A8
 keywords: ["ndiskd.wdiadapter Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -26,7 +22,7 @@ For more information about WDI miniport drivers, see the [WDI Miniport Driver De
 
 For more information about WDI miniport driver reference, see [WDI Miniport Driver Reference](https://msdn.microsoft.com/library/windows/hardware/dn926075).
 
-```
+```console
 !ndiskd.wdiadapter [-handle <x>] [-pm] [-rcvfilter] 
 ```
 
@@ -51,7 +47,7 @@ Examples
 
 Run the **!ndiskd.wdiadapter** extension with no parameters to see a list of all CAdapter objects, along with details for each of their WDI Adapters. In the following example, there is only one CAdapter structure. The handle for its associated WDI Adapter is ffffc804af396000.
 
-```
+```console
 1: kd> !ndiskd.wdiadapter
     CAdapter                                                                    
     ffffc804af396000 - WDI Adapter
@@ -108,7 +104,7 @@ MORE INFORMATION
 
 Now you can either click on the "Power management" and "Receive filtering" links at the bottom of the CAdapter structure's description, or you can enter the **!ndiskd.wdiadapter -handle** command with either the *-pm* or *-rcvfilter* option. The following example shows output for the *-rcvfilter* option.
 
-```
+```console
 1: kd> !ndiskd.wdiadapter ffffc804af396000 -rcvfilter
 
 
@@ -149,9 +145,9 @@ RECEIVE FILTER
 
 [WDI Miniport Driver Reference](https://msdn.microsoft.com/library/windows/hardware/dn926075)
 
- 
+ 
 
- 
+ 
 
 
 

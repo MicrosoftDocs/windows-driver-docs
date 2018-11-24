@@ -1,17 +1,12 @@
 ---
 title: System-Supplied Changer Drivers
-author: windows-driver-content
 description: System-Supplied Changer Drivers
 ms.assetid: 52f052c2-4780-45ce-b0dc-4a152e9b23f6
 keywords:
 - changer drivers WDK storage , system-supplied
 - storage changer drivers WDK , system-supplied
 - system-supplied changer drivers WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +28,9 @@ This section includes information about:
 
 For a discussion of vendor-supplied changer drivers, see [Vendor-Supplied Changer Drivers](vendor-supplied-changer-drivers.md).
 
- 
+ 
 
- 
+ 
 
 
 

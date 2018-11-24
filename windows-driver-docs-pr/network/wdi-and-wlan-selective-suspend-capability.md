@@ -2,11 +2,7 @@
 title: WDI and WLAN Selective Suspend capability
 description: This section describes how to enable USB Selective Suspend support for WDI drivers
 ms.assetid: 4FCF726B-4CCF-4F0F-9088-2EABA0DA7D3C
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,9 +31,9 @@ The WDI driver exposes two callback functions for the LE.
 
 -   [**IdleNotificationConfirm**](https://msdn.microsoft.com/library/windows/hardware/mt297601)
 
- 
+ 
 
- 
+ 
 
 
 

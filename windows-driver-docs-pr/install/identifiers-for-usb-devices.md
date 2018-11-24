@@ -7,11 +7,7 @@ keywords:
 - identification strings WDK device , USB devices
 - identifiers WDK device , USB devices
 - USB identifiers WDK device installations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,11 +29,11 @@ For all USB devices, the USB bus driver generates a standard set of identifiers 
 
 **Note**  Starting with Microsoft Windows 2000, the numbers that are embedded in USB identifiers is in hexadecimal format.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

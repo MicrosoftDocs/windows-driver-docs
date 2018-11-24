@@ -6,11 +6,7 @@ keywords:
 - receive-side scaling WDK networking , about receive-side scaling
 - RSS WDK networking , about receive-side scaling
 - CPU determination WDK RSS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,7 +20,7 @@ Receive side scaling (RSS) is a network driver technology that enables the effic
 
 **Note**  Because hyper-threaded CPUs on the same core processor share the same execution engine, the effect is not the same as having multiple core processors. For this reason, RSS does not use hyper-threaded processors.
 
- 
+ 
 
 To process received data efficiently, a miniport driver's receive interrupt service function schedules a deferred procedure call (DPC). Without RSS, a typical DPC indicates all received data within the DPC call. Therefore, all of the receive processing that is associated with the interrupt runs on the CPU where the receive interrupt occurs. For an overview of non-RSS receive processing, see [Non-RSS Receive Processing](non-rss-receive-processing.md).
 
@@ -97,9 +93,9 @@ The NIC interrupts the CPU that should handle the received packets. For more inf
 
 The NIC always passes on the 32-bit hash value.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,13 +1,8 @@
 ---
 title: Adding UI to a WIA Minidriver
-author: windows-driver-content
 description: Adding UI to a WIA Minidriver
 ms.assetid: 70440de2-0554-4f5b-9ce4-fe060d3077a4
-ms.author: windowsdriverdev
 ms.date: 07/18/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

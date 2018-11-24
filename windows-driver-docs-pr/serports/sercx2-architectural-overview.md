@@ -1,13 +1,8 @@
 ---
 title: SerCx2 Architectural Overview
-author: windows-driver-content
 description: SerCx2 works together with a serial controller driver to enable communication between a peripheral driver and a serially connected peripheral device.
 ms.assetid: BA5D8966-ACC5-44ED-8CB8-61D1BCF39522
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -16,7 +11,7 @@ ms.localizationpriority: medium
 
 SerCx2 works together with a serial controller driver to enable communication between a peripheral driver and a serially connected peripheral device. Typically, the serial controller is integrated into a System on a Chip (SoC) chip to provide low-pin-count communication with a peripheral device that is external to the SoC chip but is soldered to the same printed circuit board.
 
-The following diagram shown the communication path between a serially connected peripheral device and the driver for this device. This peripheral driver runs in either kernel mode or user mode, and sends I/O requests to the serial port to which the peripheral device is connected.
+The following diagram shows the communication path between a serially connected peripheral device and the driver for this device. This peripheral driver runs in either kernel mode or user mode, and sends I/O requests to the serial port to which the peripheral device is connected.
 
 ![block diagram of sercx2 and associated components](images/sercx2modules.png)
 
@@ -32,9 +27,9 @@ The peripheral driver that sends I/O requests to the serial controller is either
 
 In response to a read or write request, SerCx2 initiates one or more I/O transactions to move data between the serial controller and the data buffer in the request. Each I/O transaction uses either programmed I/O (PIO) or DMA to transfer data between the serial controller and the data buffer in the request. The types of I/O transactions supported by a serial controller driver depend on the hardware capabilities of the serial controller. For more information, see [Overview of SerCx2 I/O Transactions](overview-of-sercx2-i-o-transactions.md).
 
- 
+ 
 
- 
+ 
 
 
 

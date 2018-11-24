@@ -3,11 +3,7 @@ title: Bug Check 0x1A MEMORY_MANAGEMENT
 description: The MEMORY_MANAGEMENT bug check has a value of 0x0000001A. This indicates that a severe memory management error occurred.
 ms.assetid: 7d3ff54e-e61a-43fa-a378-fb8d32565586
 keywords: ["Bug Check 0x1A MEMORY_MANAGEMENT", "MEMORY_MANAGEMENT"]
-ms.author: domars
-ms.date: 06/28/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 09/12/2018
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The MEMORY\_MANAGEMENT bug check has a value of 0x0000001A. This indicates that a severe memory management error occurred.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## MEMORY\_MANAGEMENT Parameters
 
@@ -49,9 +45,13 @@ Parameter 1 is the only parameter of interest; this identifies the exact violati
 <td align="left"><p>0x31</p></td>
 <td align="left"><p>The image relocation fix-up table or code stream has been corrupted. This is probably a hardware error.</p></td>
 </tr>
+<tr class="even">
+<td align="left"><p>0x3f</p></td>
+<td align="left"><p>An inpage operation failed with a CRC error. Parameter 2 contains the pagefile offset. Parameter 3 contains the page CRC value. Parameter 4 contains the expected CRC value.</p></td>
+</tr>
 <tr class="odd">
 <td align="left"><p>0x403</p></td>
-<td align="left"><p>The page table and PFNs are out of sync . This is probably a hardware error, especially if parameters 3 & 4 differ by only a single bit.</p></td>
+<td align="left"><p>The page table and PFNs are out of sync . This is probably a hardware error, especially if parameters 3 &amp; 4 differ by only a single bit.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x411</p></td>
@@ -89,6 +89,10 @@ Parameter 1 is the only parameter of interest; this identifies the exact violati
 <tr class="even">
 <td align="left"><p>0x1235</p></td>
 <td align="left"><p>The caller is trying to protect an MDL with an invalid mapping.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>0x1236</p></td>
+<td align="left"><p>The caller specified an MDL that contains an unlocked (or invalid) physical page. Parameter 2 contains a pointer to the MDL. Parameter 3 contains a pointer to the invalid PFN. Parameter 4 contains the invalid PFN value.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x3451</p></td>
@@ -151,6 +155,10 @@ Parameter 1 is the only parameter of interest; this identifies the exact violati
 <td align="left"><p>0x41792</p></td>
 <td align="left"><p>A corrupted PTE has been detected. Parameter 2 contains the address of the PTE. Parameters 3/4 contain the low/high parts of the PTE.</p></td>
 </tr>
+<tr class="odd">
+<td align="left"><p>0x41793</p></td>
+<td align="left"><p> A page table page has been corrupted. Parameter 2 contains a pointer to the last processed PTE. Parameter 3 contains the number of non-zero PTEs found. Parameter 4 contains the expected number of non-zero PTEs in the page table.</p><p>This memory parameter has been deprecated and is no longer available after Windows 10 version 1803.</p></td>
+</tr>
 <tr class="even">
 <td align="left"><p>0x61940</p></td>
 <td align="left"><p>A PDE has been unexpectedly invalidated.</p></td>
@@ -178,11 +186,11 @@ Parameter 1 is the only parameter of interest; this identifies the exact violati
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

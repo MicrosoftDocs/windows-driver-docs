@@ -5,11 +5,7 @@ ms.assetid: 12f67a8d-9281-4f79-88c0-e1c9dff5a05d
 keywords:
 - smart card drivers WDK , library
 - library WDK smart card
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -67,16 +63,16 @@ The following files are used by the smart card driver library and by drivers tha
 </tr>
 <tr class="even">
 <td align="left"><p><em>Smclib.sys</em></p></td>
-<td align="left"><p>The library's binary file for WDM drivers.</p></td>
+<td align="left"><p>The library&#39;s binary file for WDM drivers.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

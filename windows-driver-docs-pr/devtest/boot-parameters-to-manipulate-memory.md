@@ -10,11 +10,7 @@ keywords:
 - low-memory environments WDK boot parameters
 - simulating low-memory environments WDK boot parameters
 - memory WDK boot parameters
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -54,9 +50,9 @@ Because the **removememory** option makes more efficient use of system memory, i
 
 When you are finished testing, you can remove the **removememory** and **truncatememory** boot entry options using the [**BCDEdit /deletevalue**](https://msdn.microsoft.com/library/windows/hardware/jj856916) command.
 
- 
+ 
 
- 
+ 
 
 
 

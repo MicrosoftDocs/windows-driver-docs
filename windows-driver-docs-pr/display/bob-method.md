@@ -12,11 +12,7 @@ keywords:
 - interleaved video displays WDK video port extensions
 - bob WDK DirectDraw
 - deinterlacing WDK video port extensions
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,9 +28,9 @@ The bob method produces 60 (NTSC) progressive frames per second and retains all 
 
 By default, DirectShow uses the bob method for correcting interlaced display.
 
- 
+ 
 
- 
+ 
 
 
 

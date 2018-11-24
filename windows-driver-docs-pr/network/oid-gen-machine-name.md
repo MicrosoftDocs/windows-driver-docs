@@ -1,13 +1,8 @@
 ---
 title: OID_GEN_MACHINE_NAME
-author: windows-driver-content
 description: As a set, the OID_GEN_MACHINE_NAME OID indicates the local computer name to a miniport driver.
 ms.assetid: 771d21ff-e989-4717-8f3e-28f4b8afe274
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_GEN_MACHINE_NAME Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -63,9 +58,9 @@ Requirements
 
 [*MiniportOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff559416)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: AVStream Descriptors
-author: windows-driver-content
 description: AVStream Descriptors
 ms.assetid: fd436406-311b-4537-994d-fbd8d92d4673
 keywords:
@@ -16,11 +15,7 @@ keywords:
 - filter factories WDK AVStream
 - filter types WDK AVStream
 - pin types WDK AVStream
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -44,9 +39,9 @@ There are other types of descriptors as well, such as the node descriptor [**KSN
 
 The dispatch table is common to each of the three main descriptor types. See [AVStream Dispatch Tables](avstream-dispatch-tables.md).
 
- 
+ 
 
- 
+ 
 
 
 

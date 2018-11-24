@@ -1,17 +1,12 @@
 ---
 title: XPS Printing Features
-author: windows-driver-content
 description: XPS Printing Features
 ms.assetid: 5315a424-ea5a-4da3-bf51-80efa8f07758
 keywords:
 - XPSDrv printer drivers WDK , printing features
 - XPS printing features WDK XPSDrv
 - color management WDK print , XPS printing advantages
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +25,9 @@ The XPS print path and the XPSDrv printer drivers offer the following advantages
 
 [Extensible Architecture](extensible-architecture.md)
 
- 
+ 
 
- 
+ 
 
 
 

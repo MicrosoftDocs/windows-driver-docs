@@ -5,11 +5,7 @@ ms.assetid: 1338d199-2cd8-430a-a0a5-95aaea04c384
 keywords:
 - protocol drivers WDK networking , CoNDIS
 - NDIS protocol drivers WDK , CoNDIS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -43,9 +39,9 @@ If an underlying driver should associate the OID request with a subsequent statu
 
 A driver can call [**NdisCoOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff561711) when a binding is in the *Restarting*, *Running*, *Pausing*, or *Paused* state.
 
- 
+ 
 
- 
+ 
 
 
 

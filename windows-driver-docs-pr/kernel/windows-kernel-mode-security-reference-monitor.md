@@ -1,9 +1,9 @@
 ---
 title: Windows Kernel-Mode Security Reference Monitor
-author: windows-driver-content
 description: Windows Kernel-Mode Security Reference Monitor
 ms.assetid: 80c63d9c-cb8e-47c0-8afd-ca78dbc43327
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Windows Kernel-Mode Security Reference Monitor
@@ -15,9 +15,9 @@ Windows uses an access control list (ACL) to determine which objects have what s
 
 Routines that provide a direct interface to the security reference monitor are prefixed with the letters "**Se**"; for example, **SeAccessCheck**. For a list of security reference monitor routines, see [Security Reference Monitor Routines](https://msdn.microsoft.com/library/windows/hardware/ff563711).
 
- 
+ 
 
- 
+ 
 
 
 

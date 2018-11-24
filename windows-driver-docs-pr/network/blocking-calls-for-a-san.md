@@ -6,11 +6,7 @@ keywords:
 - blocking calls WDK SANs
 - Windows Sockets Direct WDK , blocking calls
 - SAN blocking calls WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,11 +26,11 @@ The switch handles the following blocking requests and corresponding cancellatio
 
 **Note**  If an application cancels a blocking call, it cannot rely on a connection being preserved. Only the **WSPCloseSocket** call is guaranteed to succeed on the socket after the cancellation of a blocking request. For more information, see the Windows Sockets SPI documentation in the Microsoft Windows SDK.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

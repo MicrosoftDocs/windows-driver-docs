@@ -11,11 +11,7 @@ api_location:
 - pixel.hpp
 api_type:
 - COM
-ms.author: windowsdriverdev
 ms.date: 01/05/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,13 +23,13 @@ The **CPixel::ComputeMipMapOffset** method determines the sublevel offset of a m
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 static void  ComputeMipMapOffset(
-   const D3DSURFACE_DESC *pDescTopLevel,
-         UINT            iLevel,
-         BYTE            *pBits,
-   const RECT            *pRect,
-         D3DLOCKED_RECT  *pLockedRectData
+   const D3DSURFACE_DESC *pDescTopLevel,
+         UINT            iLevel,
+         BYTE            *pBits,
+   const RECT            *pRect,
+         D3DLOCKED_RECT  *pLockedRectData
 );
 ```
 
@@ -87,9 +83,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

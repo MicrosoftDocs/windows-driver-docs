@@ -1,6 +1,5 @@
 ---
 title: Printer Driver Architecture
-author: windows-driver-content
 description: Printer Driver Architecture
 ms.assetid: 68a61007-8f0d-4fd4-b4a7-c8acbc101236
 keywords:
@@ -9,11 +8,7 @@ keywords:
 - Windows printing architecture WDK
 - printer driver architecture WDK
 - printer drivers WDK , architecture
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -65,9 +60,9 @@ This section contains the following topics, which describe the Windows printing 
 
 [Writing 64-Bit Printer Drivers](writing-64-bit-printer-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

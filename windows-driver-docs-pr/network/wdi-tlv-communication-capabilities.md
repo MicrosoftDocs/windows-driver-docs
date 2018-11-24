@@ -1,13 +1,8 @@
 ---
 title: WDI_TLV_COMMUNICATION_CAPABILITIES
-author: windows-driver-content
 description: WDI_TLV_COMMUNICATION_CAPABILITIES is a TLV that specifies the communication capabilities.
 ms.assetid: 0A603358-05EA-4796-8D7F-E8F86F1C30F1
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_COMMUNICATION_CAPABILITIES Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -35,7 +30,7 @@ The size (in bytes) of a UINT32.
 |--------|------------------------------------|
 | UINT32 | The maximum command size in bytes. |
 
- 
+ 
 
 Requirements
 ------------
@@ -61,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

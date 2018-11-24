@@ -1,6 +1,5 @@
 ---
 title: TCP/IP Schema Extensions for Input and Output Bins
-author: windows-driver-content
 description: TCP/IP Schema Extensions for Input and Output Bins
 ms.assetid: 942325e8-588c-4171-91fa-366db6e2cb16
 keywords:
@@ -10,11 +9,7 @@ keywords:
 - InputBin construct
 - output bins WDK printer
 - input bins WDK printer
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -50,13 +45,13 @@ The Tcpbidi.xsd file, which is used to extend the bidi schema, defines two const
 </tbody>
 </table>
 
- 
+ 
 
 ### Code Example
 
 The following code example shows how the InputBin and OutputBin constructs can be used to identify two input bins and one output bin.
 
-```
+```cpp
 <Property name="Printer">
   <Property name="Layout">
     <Property name="InputBins">
@@ -80,9 +75,9 @@ This section includes the following topics.
 
 [Driver-Specific Bins](driver-specific-bins.md)
 
- 
+ 
 
- 
+ 
 
 
 

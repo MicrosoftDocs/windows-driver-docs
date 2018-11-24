@@ -7,11 +7,7 @@ keywords:
 - display drivers WDK Windows 2000 , pointers
 - pointers WDK Windows 2000 display
 - passing pointer information WDK Windows 2000 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +27,9 @@ The display driver can control the pointer in situations for which the processor
 
 To write a display driver and miniport driver pair, you must include IOCTLs for passing pointer information between the two drivers, and to allow the miniport driver to assume the drawing of any or all pointers, if necessary.
 
- 
+ 
 
- 
+ 
 
 
 

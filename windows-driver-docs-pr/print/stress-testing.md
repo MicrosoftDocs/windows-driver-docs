@@ -1,16 +1,11 @@
 ---
 title: Stress Testing
-author: windows-driver-content
 description: Stress Testing
 ms.assetid: 14d20ce2-7d98-4fa3-b639-a4e9b7b07a72
 keywords:
 - stress testing WDK printer
 - bus stress testing WDK printer
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -41,9 +36,9 @@ For Bluetooth-enabled printers, run stress tests on print jobs as follows:
 
 3.  Send a job to a printer outside the maximum range of the Bluetooth radio. Wait for an error state to occur, and then move the printer back within range to verify that it recovers gracefully.
 
- 
+ 
 
- 
+ 
 
 
 

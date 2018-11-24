@@ -1,6 +1,5 @@
 ---
 title: KS Mediums
-author: windows-driver-content
 description: KS Mediums
 ms.assetid: c94c738c-66c6-491b-9157-28cccf95af4d
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - KSPIN_MEDIUM
 - kernel streaming WDK , mediums
 - KS WDK , mediums
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +23,9 @@ Clients specify the medium to use for a connection by setting the **Medium** mem
 
 Clients request a list of mediums supported by a filter or pin by using the [**KSPROPERTY\_PIN\_MEDIUMS**](https://msdn.microsoft.com/library/windows/hardware/ff565202) property.
 
- 
+ 
 
- 
+ 
 
 
 

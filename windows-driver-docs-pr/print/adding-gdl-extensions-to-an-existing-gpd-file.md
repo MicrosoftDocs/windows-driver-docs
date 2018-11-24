@@ -1,6 +1,5 @@
 ---
 title: Adding GDL Extensions to an Existing GPD File
-author: windows-driver-content
 description: Adding GDL Extensions to an Existing GPD File
 ms.assetid: 5ba2a447-e133-47bb-aa1e-93abe75c6eef
 keywords:
@@ -9,11 +8,7 @@ keywords:
 - extensions WDK GDL files
 - GPD files WDK GDL extensions
 - GPD files WDK GDL extensions , adding
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +29,9 @@ This section includes:
 
 [Adding Constructs to Your GDL File for GPD](adding-constructs-to-your-gdl-file-for-gpd.md)
 
- 
+ 
 
- 
+ 
 
 
 

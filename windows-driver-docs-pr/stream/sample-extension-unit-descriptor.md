@@ -1,6 +1,5 @@
 ---
 title: Sample Extension Unit Descriptor
-author: windows-driver-content
 description: Sample Extension Unit Descriptor
 ms.assetid: 283a28e6-9f73-4131-bcfb-b4983a92cecd
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - descriptors WDK USB Video Class
 - descriptors WDK USB Video Class , sample code
 - sample code WDK USB Video Class , extension unit descriptors
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,7 +16,7 @@ ms.localizationpriority: medium
 
 This code demonstrates how to provide an Extension Unit descriptor at the hardware level.
 
-```
+```cpp
 BYTE  Length:            0x1a    
 BYTE  DescriptorType:    0x24               
 BYTE  DescriptorSubtype: 0x06             
@@ -34,9 +29,9 @@ BYTE  baSourceID[0]:     0x01
 
 For more detailed information on hardware requirements for USB Video Class, see the *Universal Serial Bus Device Class Definition for Video DevicesSpecification*. This specification is available at the [USB Implementers Forum](http://go.microsoft.com/fwlink/p/?linkid=8780) website.
 
- 
+ 
 
- 
+ 
 
 
 

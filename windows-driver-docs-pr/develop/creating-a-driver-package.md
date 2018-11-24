@@ -2,11 +2,7 @@
 ms.assetid: eaefc81a-b5e3-4763-bf51-8ec47f620e72
 title: Creating a Driver Package
 description: Creating a Driver Package
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,13 +21,13 @@ A driver package is a separate project which collects output from one or more pr
 
 **Note**  
 
- 
+ 
 
 If you use a driver template to create a driver solution, then the template should automatically create a solution that contains two projects. One for the driver, and another for the driver package.
 ## <span id="Manually_creating_a_driver_package"></span><span id="manually_creating_a_driver_package"></span><span id="MANUALLY_CREATING_A_DRIVER_PACKAGE"></span>Manually creating a driver package
 
 
-If your solution does not have a driver package, you can manually create one in Visual Studio by choosing **New &gt; Project** from the **File** menu. For examples of how to create a driver package, see [Writing Your First Driver](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff554811).
+If your solution does not have a driver package, you can manually create one in Visual Studio by choosing **New &gt; Project** from the **File** menu. For examples of how to create a driver package, see [Writing Your First Driver](https://msdn.microsoft.com/Library/Windows/Hardware/Ff554811).
 
 To manually create a new driver package for an existing solution that does not already have one, use the "Driver Install Package" template. Select **New &gt; Project** from the **File** menu. Then select **Windows Driver &gt; Package &gt; "Driver Install Package"** from the dialog. Visual Studio will associate the newly created driver package with all the driver projects that were present in the solution when the driver package is created.
 
@@ -65,9 +61,9 @@ See the "Toaster Sample Driver" sample for an example of a single solution that 
 
 
 * [Signing a Driver](signing-a-driver.md)
- 
+ 
 
- 
+ 
 
 
 

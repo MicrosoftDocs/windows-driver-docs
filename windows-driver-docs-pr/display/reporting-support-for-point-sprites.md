@@ -7,11 +7,7 @@ keywords:
 - point sprites WDK DirectX 8.0
 - size WDK point sprites
 - point size WDK DirectX 8.0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +29,9 @@ Point sprites present a challenge when user clip planes are being used. It is po
 
 DX8 drivers that perform transform and lighting (that is, offer hardware vertex processing) are responsible for a correct point sprite implementation. No emulation is performed by the DirectX 8.0 runtime. This means that even if the hardware is used with software vertex processing, point sprites are the DX8 driver's responsibility. However, in DirectX 8.1 and later, if the hardware is used with software vertex processing, the runtime can provide emulation.
 
- 
+ 
 
- 
+ 
 
 
 

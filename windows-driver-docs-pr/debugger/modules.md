@@ -3,11 +3,7 @@ title: Modules
 description: Modules
 ms.assetid: 0cd99869-4014-4f9f-b5f1-d06c69fd134e
 keywords: ["symbols, modules", "modules"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,7 +19,7 @@ The [debugger engine](introduction.md#debugger-engine) caches a list of *modules
 
 **Note**   In kernel-mode debugging, the engine's module list for the virtual process contains both the system-wide kernel-mode modules and the current process's user-mode modules.
 
- 
+ 
 
 A module can be specified by its base address in the target's virtual address space, or by its index in the list of modules the engine maintains for the target. The module's index equals its position in the list of modules, and therefore this index will change if a module with a lower index is unloaded. All unloaded modules have indexes; these are always higher than the indexes of loaded modules. The base address of a module will not change as long as it remains loaded; in some cases it may change if the module is unloaded and then reloaded.
 
@@ -67,9 +63,9 @@ To add a directory to the executable image path, use the method [**AppendImagePa
 
 For more information about processes and virtual processes, see [Threads and Processes](controlling-threads-and-processes.md).
 
- 
+ 
 
- 
+ 
 
 
 

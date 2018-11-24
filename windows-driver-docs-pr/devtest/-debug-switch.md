@@ -10,11 +10,7 @@ api_name:
 - /Debug
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,14 +25,13 @@ The /**Debug** switch of the Enhanced Storage Certificate Management tool report
 
 -   The number of occupied and empty certificate slots.
 
-**Note**  In this topic, the specified IEEE 1667-compliant USB storage device is referred to as the *target device*.
+**Note**  In this topic, the specified IEEE 1667-compliant USB storage device is referred to as the *target device*.
 
- 
+
 
 ```
     EhStorCertMgrCmd /Debug -Volume:
     VolumeName
-
 ```
 
 ## <span id="Subparameters"></span><span id="subparameters"></span><span id="SUBPARAMETERS"></span>Subparameters
@@ -45,9 +40,9 @@ The /**Debug** switch of the Enhanced Storage Certificate Management tool report
 <span id="_______-Volume_______"></span><span id="_______-volume_______"></span><span id="_______-VOLUME_______"></span> **-Volume:**   
 The volume name of the target device. For more information about the format of this parameter, see [Overview of the Enhanced Storage Certificate Management Tool](overview-of-the-enhanced-storage-certificate-management-tool.md).
 
-**Note**  To produce a list of the volume names of the IEEE 1667-compliant USB storage devices that are currently connected to a computer, enter **EhStorCertMgrCmd /List** from the command-line.
+**Note**  To produce a list of the volume names of the IEEE 1667-compliant USB storage devices that are currently connected to a computer, enter **EhStorCertMgrCmd /List** from the command-line.
 
- 
+
 
 ### <span id="example"></span><span id="EXAMPLE"></span>Example
 
@@ -92,7 +87,7 @@ Occupied slots          :- 3
 Free slots              :- 13
 ```
 
- 
 
- 
+
+
 

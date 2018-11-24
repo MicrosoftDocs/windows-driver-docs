@@ -1,6 +1,5 @@
 ---
 title: Iasphelp get\_SNMPSupported method
-author: windows-driver-content
 description: The SNMPSupported property enables an ASP Web page to determine if SNMP is being used with a printer.
 MS-HAID:
 - 'webfnc\_2128dc9d-a113-4061-a6c9-3ebe2a304dd5.xml'
@@ -16,18 +15,18 @@ api_name:
 - Iasphelp.get_SNMPSupported
 api_type:
 - COM
+ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # Iasphelp::get\_SNMPSupported method
-
 
 The **SNMPSupported** property enables an ASP Web page to determine if SNMP is being used with a printer.
 
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT get_SNMPSupported(
   [out] BOOL *pVal
 );
@@ -62,7 +61,7 @@ Win32 error codes can also be returned.
 </tr>
 <tr class="even">
 <td><strong>E_HANDLE</strong></td>
-<td><p>The [<strong>Iasphelp::Open</strong>](iasphelp-open.md) method has not been called.</p></td>
+<td><p>The <a href="iasphelp-open.md" data-raw-source="[&lt;strong&gt;Iasphelp::Open&lt;/strong&gt;](iasphelp-open.md)"><strong>Iasphelp::Open</strong></a> method has not been called.</p></td>
 </tr>
 <tr class="odd">
 <td><strong>E_OUTOFMEMORY</strong></td>
@@ -71,24 +70,16 @@ Win32 error codes can also be returned.
 </tbody>
 </table>
 
- 
-
-## <span id="ddk_iasphelp_snmpsupported_gg"></span><span id="DDK_IASPHELP_SNMPSUPPORTED_GG"></span>
-
-
-### <span id="vbscript_example"></span><span id="VBSCRIPT_EXAMPLE"></span>VBScript Example
-
-Remarks
--------
+## VBScript Example
 
 The [**Iasphelp::Open**](iasphelp-open.md) method must be called before the **Iasphelp::SNMPSupported** property can be queried.
 
-```
-    Dim objPrinter, UsingSNMP
-    strPrinter = Session("MS_printer")
-    Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
-    objPrinter.Open strPrinter
-    UsingSNMP = objPrinter.SNMPSupported
+```vb
+Dim objPrinter, UsingSNMP
+strPrinter = Session("MS_printer")
+Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
+objPrinter.Open strPrinter
+UsingSNMP = objPrinter.SNMPSupported
 ```
 
 Requirements
@@ -104,22 +95,9 @@ Requirements
 <td><p>Target platform</p></td>
 <td>Desktop</td>
 </tr>
-<tr class="even">
-<td><p>Version</p></td>
-<td><p>Available in Windows 2000 and later versions of the Windows operating systems.</p></td>
-</tr>
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**Iasphelp::Open**](iasphelp-open.md)
-
- 
-
- 
-
-
-
-

@@ -10,11 +10,7 @@ keywords:
 - interrupt service routines WDK audio
 - ISRs WDK audio
 - non-interrupt routines WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -63,7 +59,7 @@ A miniport driver calls the [**PcNewInterruptSync**](https://msdn.microsoft.com/
 </tbody>
 </table>
 
- 
+ 
 
 In the **InterruptSyncModeNormal** mode, the sync object calls each ISR in the list until one of them returns STATUS\_SUCCESS. Any ISRs in the list that follow this ISR are not called. This mode emulates the way that the operating system normally handles ISRs. If none of the ISRs return STATUS\_SUCCESS, the behavior is the same as **InterruptSyncModeAll**.
 
@@ -85,9 +81,9 @@ The **IInterruptSync** interface supports the following methods:
 
 [**IInterruptSync::RegisterServiceRoutine**](https://msdn.microsoft.com/library/windows/hardware/ff536600)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,11 +3,7 @@ title: KdSrv Command-Line Options
 description: The KdSrv command line uses the following syntax.
 ms.assetid: 95b144c0-4507-4ce4-b828-1ac385dd7165
 keywords: ["KdSrv Command-Line Options Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The KdSrv command line uses the following syntax.
 
-```
+```console
 kdsrv -t ServerTransport 
 ```
 
@@ -36,9 +32,9 @@ If you type **kdsrv** with no parameters, a message box with help text appears.
 
 For information about using KdSrv, see [KD Connection Servers (Kernel Mode)](kd-connection-servers--kernel-mode-.md).
 
- 
+ 
 
- 
+ 
 
 
 

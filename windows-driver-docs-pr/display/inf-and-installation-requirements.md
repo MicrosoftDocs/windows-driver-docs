@@ -4,11 +4,7 @@ description: INF and Installation Requirements
 ms.assetid: d3b21de9-5eb0-4278-91b1-c49c4368c047
 keywords:
 - INF files WDK Windows 2000 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,9 +16,9 @@ ms.localizationpriority: medium
 
 NT-based operating system display and video miniport drivers must be installed using an INF file. To ensure that all registry entries associated with a video driver are properly initialized, this INF must be interpreted by the system-supplied display class installer and marked as **Class=Display**.
 
- 
+ 
 
- 
+ 
 
 
 

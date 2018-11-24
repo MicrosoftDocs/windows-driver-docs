@@ -2,11 +2,7 @@
 title: PwrTest Battery Scenario
 description: The PwrTest Battery Scenario is designed to facilitate automated inspection of battery and power source information.
 ms.assetid: e0bad871-a826-4951-9a84-93c9b1aa0653
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,10 +19,10 @@ PwrTest is capable of logging battery capacity, voltage, rate of drain, and gene
 pwrtest /battery [/c:n] [/i:n] [/?] 
 ```
 
-<span id="_c_n"></span><span id="_C_N"></span>**/c:***n*  
+<span id="_c_n"></span><span id="_C_N"></span>**/c:**<em>n</em>  
 Specifies the number of cycles (100 is the default) to run.
 
-<span id="_i_n"></span><span id="_I_N"></span>**/i:***n*  
+<span id="_i_n"></span><span id="_I_N"></span>**/i:**<em>n</em>  
 Specifies the polling interval in milliseconds (the default is 5000).
 
 **Examples**
@@ -163,16 +159,16 @@ The following table describes the XML elements that appear in the log file.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
 
 [PwrTest Syntax](pwrtest-syntax.md)
 
- 
+ 
 
- 
+ 
 
 
 

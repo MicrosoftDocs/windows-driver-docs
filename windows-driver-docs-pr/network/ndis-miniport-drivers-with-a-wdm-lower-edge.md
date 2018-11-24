@@ -7,11 +7,7 @@ keywords:
 - NDIS miniport drivers WDK , types
 - WDM lower edge WDK networking
 - lower edge of NDIS miniport drivers WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ A miniport driver with a WDM lower edge must be deserialized. For more informati
 
 For more information about miniport drivers with a WDM lower edge, see [Miniport Drivers with a WDM Lower Interface](miniport-drivers-with-a-wdm-lower-interface.md).
 
- 
+ 
 
- 
+ 
 
 
 

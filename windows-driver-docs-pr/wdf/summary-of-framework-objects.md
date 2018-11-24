@@ -1,16 +1,11 @@
 ---
 title: Summary of Framework Objects
-author: windows-driver-content
 description: Summary of Framework Objects
 ms.assetid: 799284a5-91c0-47b0-8f20-75a5f8e2284d
 keywords:
 - framework objects WDK KMDF , listed
 - framework objects WDK KMDF , summary
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -44,7 +39,7 @@ For a list of callbacks and methods and which frameworks are applicable, see [Su
 |Resource range list object|WDFIORESLIST|Represents a logical configuration.|Resource requirements list object|No|KM|[WDF Resource Object Reference](https://msdn.microsoft.com/library/windows/hardware/dn265665)|
 |Resource requirements list object|WDFIORESREQLIST|Represents a resource requirements list.|Driver object|No|KM|[WDF Resource Object Reference](https://msdn.microsoft.com/library/windows/hardware/dn265665)|
 |Spin-lock object|WDFSPINLOCK|Represents a spin lock.|Driver object|Yes|KM/UM|[WDF Synchronization Methods](https://msdn.microsoft.com/library/windows/hardware/dn265669)|
-|String object|WDFSTRING|Repesents a Unicode string.|Driver object|Yes|KM/UM|[WDF String Object Reference](https://msdn.microsoft.com/library/windows/hardware/dn265667)|
+|String object|WDFSTRING|Represents a Unicode string.|Driver object|Yes|KM/UM|[WDF String Object Reference](https://msdn.microsoft.com/library/windows/hardware/dn265667)|
 |Timer object|WDFTIMER|Represents a timer.|None|Yes|KM/UM|[WDF Timer Object Reference](https://msdn.microsoft.com/library/windows/hardware/dn265670)|
 |USB device object|WDFUSBDEVICE|Represents a device connected to a USB.|Device object|No|KM/UM|[WDF USB Reference](https://msdn.microsoft.com/library/windows/hardware/dn265671)|
 |USB interface object|WDFUSBINTERFACE|Represents a USB device interface.|USB device object|No|KM/UM|[WDF USB Reference](https://msdn.microsoft.com/library/windows/hardware/dn265671)|
@@ -55,11 +50,11 @@ For a list of callbacks and methods and which frameworks are applicable, see [Su
 |Work-item object|WDFWORKITEM|Represents a work item.|None|Yes|KM/UM|[WDF Work-Item Object Reference](https://msdn.microsoft.com/library/windows/hardware/dn265673)|
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

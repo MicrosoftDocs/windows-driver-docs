@@ -2,11 +2,7 @@
 title: Design messages in a mobile broadband app
 description: Design messages in a mobile broadband app
 ms.assetid: 314fd479-7dcf-4559-a195-26e4c020446c
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,7 +31,7 @@ The following table shows some example operator messages and alerts.
 <tbody>
 <tr class="odd">
 <td><p>International roaming</p></td>
-<td><p>Welcome to the UK. For $5 per day you have 25 MB of data, and then it's $1 per 1 MB. SMS is $0.49 per msg. Learn more at www.contoso.com/rates/uk.</p></td>
+<td><p>Welcome to the UK. For $5 per day you have 25 MB of data, and then it&#39;s $1 per 1 MB. SMS is $0.49 per msg. Learn more at www.contoso.com/rates/uk.</p></td>
 </tr>
 <tr class="even">
 <td><p>Data usage overage</p></td>
@@ -56,7 +52,7 @@ The following table shows some example operator messages and alerts.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Quick_summary"></span><span id="quick_summary"></span><span id="QUICK_SUMMARY"></span>Quick summary
 
@@ -85,9 +81,9 @@ Inappropriate design for showing operator messages:
 
 [Designing the user experience of a mobile broadband app](designing-the-user-experience-of-a-mobile-broadband-app.md)
 
- 
+ 
 
- 
+ 
 
 
 

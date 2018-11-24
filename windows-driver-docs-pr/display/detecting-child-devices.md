@@ -7,11 +7,7 @@ keywords:
 - child devices WDK video miniport , detecting
 - detecting child devices WDK video miniport
 - HwVidGetVideoChildDescriptor
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +29,9 @@ Some devices generate an interrupt when new hardware is connected to the system 
 
 [**VideoPortEnumerateChildren**](https://msdn.microsoft.com/library/windows/hardware/ff570297) forces the reenumeration of the adapter's child devices by causing the miniport driver's [*HwVidGetVideoChildDescriptor*](https://msdn.microsoft.com/library/windows/hardware/ff567341) function to be called for each of the parent device's children. The Plug and Play manager will update the relationship between the parent device and its children accordingly.
 
- 
+ 
 
- 
+ 
 
 
 

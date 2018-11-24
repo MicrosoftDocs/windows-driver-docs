@@ -3,11 +3,7 @@ title: $$ (Comment Specifier)
 description: If two dollar signs ( $$ ) appear at the start of a command, then the rest of the line is treated as a comment, unless the comment is terminated by a semicolon.
 ms.assetid: bafd5e97-d443-4bfc-b3ee-c2867ed139a2
 keywords: ["comment token ($$)", "$$ (Comment Specifier) Windows Debugging"]
-ms.author: domars
-ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 09/17/2018
 topic_type:
 - apiref
 api_name:
@@ -22,9 +18,9 @@ ms.localizationpriority: medium
 
 If two dollar signs ( **$$** ) appear at the start of a command, then the rest of the line is treated as a comment, unless the comment is terminated by a semicolon.
 
-```
-$$ [any text]
-```
+
+   $$ [any text]
+
 
 Remarks
 -------
@@ -35,15 +31,15 @@ The **$$** token will cause the text after it to be ignored until the end of the
 
 For example, the following command will display **eax** and **ebx**, but not **ecx**:
 
-```
+```console
 0:000> r eax; $$ some text; r ebx; * more text; r ecx 
 ```
 
-Text prefixed by the [**\***](----comment-line-specifier-.md) or **$$** tokens is not processed in any way. If you are performing remote debugging, a comment entered in the debugging server will not be visible in the debugging client, nor vice-versa. If you wish to make comment text appear in the Debugger Command window in a way visible to all parties, you should use [**.echo (Echo Comment)**](-echo--echo-comment-.md).
+Text prefixed by the [**\\***](----comment-line-specifier-.md) or **$$** tokens is not processed in any way. If you are performing remote debugging, a comment entered in the debugging server will not be visible in the debugging client, nor vice-versa. If you wish to make comment text appear in the Debugger Command window in a way visible to all parties, you should use [**.echo (Echo Comment)**](-echo--echo-comment-.md).
 
- 
+ 
 
- 
+ 
 
 
 

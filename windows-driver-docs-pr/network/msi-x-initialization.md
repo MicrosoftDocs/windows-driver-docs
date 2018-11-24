@@ -7,11 +7,7 @@ keywords:
 - message-signaled interrupts WDK networking , initializing
 - MSIs WDK networking , initializing
 - initializing MSI-X
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +29,9 @@ This section includes:
 
 [Registering and Deregistering an MSI Interrupt](registering-and-deregistering-an-msi-interrupt.md)
 
- 
+ 
 
- 
+ 
 
 
 

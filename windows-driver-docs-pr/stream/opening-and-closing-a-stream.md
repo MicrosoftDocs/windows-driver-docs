@@ -1,6 +1,5 @@
 ---
 title: Opening and Closing a Stream
-author: windows-driver-content
 description: Opening and Closing a Stream
 ms.assetid: a4895e99-ab2e-482e-b89f-04b01177ec03
 keywords:
@@ -10,11 +9,7 @@ keywords:
 - capturing video WDK AVStream , closing streams
 - opening streams WDK AVStream
 - closing streams WDK AVStream
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +20,7 @@ The Stream class interface sends an [**SRB\_OPEN\_STREAM**](https://msdn.microso
 
 The following example code obtains the stream index, kernel streaming data format, and kernel streaming video info header.
 
-```
+```cpp
 int StreamNumber = pSrb->StreamObject->StreamNumber;
 PKS_DATAFORMAT_VIDEOINFOHEADER  pKSDataFormat = 
     (PKS_DATAFORMAT_VIDEOINFOHEADER) pSrb->CommandData.OpenFormat;
@@ -43,7 +38,7 @@ Special rules apply when the output buffer is a DirectDraw surface. In this case
 
 To determine the requested image width, use the following code example:
 
-```
+```cpp
 if (IsRectEmpty(&pVideoInfoHdrRequested->rcTarget) {
     Width =  pVideoInfoHdrRequested->bmiHeader.biWidth;
     Height = pVideoInfoHdrRequested->bmiHeader.biHeight;
@@ -58,9 +53,9 @@ else {
 
 The Stream class interface sends an [**SRB\_CLOSE\_STREAM**](https://msdn.microsoft.com/library/windows/hardware/ff568165) request to the minidriver to close a stream. The minidriver should then return all outstanding stream SRBs to the Stream class interface.
 
- 
+ 
 
- 
+ 
 
 
 

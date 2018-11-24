@@ -2,11 +2,7 @@
 title: Vendor-Provided Device Installation Components
 description: Vendor-Provided Device Installation Components
 ms.assetid: d86bdf75-9726-4b44-8753-7e9c19e88a61
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +27,9 @@ For more information, see [Choosing a Driver Model](https://msdn.microsoft.com/l
 
 For more information about drivers for Windows, see [Getting Started with Windows Drivers](https://msdn.microsoft.com/library/windows/hardware/ff554690).
 
- 
+ 
 
- 
+ 
 
 
 

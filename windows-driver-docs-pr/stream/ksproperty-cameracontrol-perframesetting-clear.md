@@ -11,20 +11,15 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
-ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 09/11/2018
 ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_CAMERACONTROL\_PERFRAMESETTING\_CLEAR
 
-
 The **KSPROPERTY\_CAMERACONTROL\_PERFRAMESETTING\_CLEAR** property ID that is defined in **KSPROPERTY\_CAMERACONTROL\_PERFRAMESETTING\_PROPERTY** is used to clear the per-frame settings in the driver. This is a SET only control and there is no payload for this. This is usually used while finishing (unpreparing) a photo sequence.
 
-## <span id="Photo_sequence_usage_summary"></span><span id="photo_sequence_usage_summary"></span><span id="PHOTO_SEQUENCE_USAGE_SUMMARY"></span>Photo sequence usage summary
+## Photo sequence usage summary
 
 
 **Infinite photo sequence**
@@ -49,8 +44,7 @@ After a photo sequence stop trigger KS\_VideoControlFlag\_StopPhotoSequenceCaptu
 
 The photo sequence enters the unprepare state when a finish command is issued by the app client. The driver pin will be transited from the running state to the paused or stopped state by the pipeline depending on whether the warm state is enabled or not.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -64,12 +58,3 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
-
-

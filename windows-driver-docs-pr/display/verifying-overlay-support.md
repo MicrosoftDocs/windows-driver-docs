@@ -9,11 +9,7 @@ keywords:
 - overlay support WDK Windows 7 display , verifying
 - overlay support WDK Windows Server 2008 R2 display
 - overlay support WDK Windows Server 2008 R2 display , verifying
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +24,9 @@ To verify overlay support, a user-mode display driver should implement the new O
 
 [Overlay DDI Programming Considerations](overlay-ddi-programming-considerations.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -11,11 +11,7 @@ keywords:
 - sample building WDK
 - building software components WDK
 - software component building WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +29,9 @@ ms.localizationpriority: medium
 -   [Nmake2MsBuild](nmake2msbuild.md)
 -   [ProjectUpgradeTool](projectupgradetool.md)
 
- 
+ 
 
- 
+ 
 
 
 

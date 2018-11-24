@@ -1,15 +1,10 @@
 ---
 title: Selection Constraints
-author: windows-driver-content
 description: Selection Constraints
 ms.assetid: 9537e4c7-2cee-494d-b1ec-95d8c91a90e6
 keywords:
 - selection constraints WDK Unidrv
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,13 +31,13 @@ The \*InvalidCombination entry has the following format:
 </tbody>
 </table>
 
- 
+ 
 
 where *FeatureName* is the name of a feature and *OptionName* is the name of an option associated with the feature.
 
 The options listed in a single \*InvalidCombination entry indicate a set of options that cannot be used in combination. For example, the following entry specifies that [*CMYK*](https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-cmyk) color mode cannot be used with plain paper and 720 DPI.
 
-```
+```cpp
 *InvalidCombination: LIST(Resolution.720dpi, MediaType.Plain, ColorMode.CMYK)
 ```
 
@@ -61,11 +56,11 @@ If you only need to indicate an invalid combination relationship between two opt
 </tbody>
 </table>
 
- 
+ 
 
 where *FeatureName* is the name of a feature and *OptionName* is the name of an option associated with the feature. A \*Constraints entry must be placed inside an \*Option entry. For example, to indicate that letter-sized and A4-sized paper cannot be used with the envelope feeder, you can use the following entries:
 
-```
+```cpp
 *Feature: InputBin
 {
     *Option: ENVFEED
@@ -78,7 +73,7 @@ where *FeatureName* is the name of a feature and *OptionName* is the name of an 
 
 or, equivalently:
 
-```
+```cpp
 *Feature: InputBin
 {
     *Option: ENVFEED
@@ -90,9 +85,9 @@ or, equivalently:
 
 These examples specify that if a user attempts to select the envelope feeder and letter-sized paper, or the envelope feeder and A4-sized paper, Unidrv rejects the selection.
 
- 
+ 
 
- 
+ 
 
 
 

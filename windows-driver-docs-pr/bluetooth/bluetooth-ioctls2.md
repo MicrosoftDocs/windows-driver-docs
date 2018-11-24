@@ -7,11 +7,7 @@ keywords:
 - IOCTLs WDK Bluetooth
 - local Bluetooth WDK
 - remote Bluetooth WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,9 +34,9 @@ A profile driver uses [**IOCTL\_INTERNAL\_BTHENUM\_GET\_ENUMINFO**](https://msdn
 
 For more information about using Bluetooth IOCTLs and BRBs, see [Building and Sending a BRB](building-and-sending-a-brb.md).
 
- 
+ 
 
- 
+ 
 
 
 

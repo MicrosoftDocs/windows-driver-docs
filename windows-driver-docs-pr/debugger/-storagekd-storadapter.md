@@ -3,11 +3,7 @@ title: storagekd.storadapter
 description: The storagekd.storadapter extension displays information about the specified Storport adapter.
 ms.assetid: E7EBC2F7-676A-4DD9-ADAA-5C240299013C
 keywords: ["storagekd.storadapter Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!storagekd.storadapter** extension displays information about the specified Storport adapter.
 
-```
+```dbgcmd
 !storagekd.storadapter [Address]  
 ```
 
@@ -47,7 +43,7 @@ Specifies the address of a Storport adapter device object. If *Address* is omitt
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -56,7 +52,7 @@ Here is an example of the **!storagekd.storadapter** display:
 
 **1: kd&gt; ! storagekd.storadapter**
 
-```
+```dbgcmd
 # STORPORT adapters:
 ==================
 ## Driver                 Object            Extension          State
@@ -66,7 +62,7 @@ Here is an example of the **!storagekd.storadapter** display:
 
 **1: kd&gt; ! storagekd.storadapter fffffa800649a050**
 
-```
+```dbgcmd
 ADAPTER
    DeviceObj : fffffa800649a050   AdapterExt: fffffa800649a1a0   DriverObj :  fffffa800507fcb0   
 DeviceState : Working
@@ -91,9 +87,9 @@ Normal Logical Units:
    --------------------------------------------------------------------------------------
 ```
 
- 
+ 
 
- 
+ 
 
 
 

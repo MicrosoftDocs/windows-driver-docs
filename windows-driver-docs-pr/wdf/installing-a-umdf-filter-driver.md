@@ -1,13 +1,8 @@
 ---
 title: Installing a UMDF Filter Driver
-author: windows-driver-content
 description: A filter driver can support a specific device or all devices in a setup class.
 ms.assetid: AE6D4E36-B758-451A-983E-6F0D7ADFD7A7
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,7 +21,7 @@ As you structure your device stack, keep in mind that the framework currently su
 
 2.  In addition to any UMDF-specific directives your driver may specify, you must specify the **UmdfService** and **UmdfServiceOrder** directives. In this topic, we'll specify an upper filter driver:
 
-    ```
+    ```cpp
     [<mydriver>_Install.NT.Wdf]
     UmdfService=UMDFFunction,WUDFFuncDriver_Install
     UmdfService=UMDFFilter,UMDFFilter_Install
@@ -41,7 +36,7 @@ As you structure your device stack, keep in mind that the framework currently su
 
     If your driver's device stack contains any drivers that are not UMDF, your INF file must include an **AddReg** section that specifies the reflector as an upper filter driver:
 
-    ```
+    ```cpp
     [<mydriver>_Device_AddReg]
     ; Load the redirector as an upperfilter on this specific device.
     ; 0x00010008 - FLG_ADDREG_TYPE_MULTI_SZ | FLG_ADDREG_APPEND
@@ -52,7 +47,7 @@ As you structure your device stack, keep in mind that the framework currently su
 
     First, retrieve the interface of the default I/O target (next driver in the stack). Then, format and send the request. The simplest scenario would look like this:
 
-    ```
+    ```cpp
     IWDFIoTarget * kmdfIoTarget = NULL;
         
         this->GetFxDevice()->GetDefaultIoTarget (&kmdfIoTarget);
@@ -65,9 +60,9 @@ As you structure your device stack, keep in mind that the framework currently su
             0);
     ```
 
- 
+ 
 
- 
+ 
 
 
 

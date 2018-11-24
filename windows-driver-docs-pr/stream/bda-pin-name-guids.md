@@ -2,11 +2,7 @@
 title: BDA Pin Name GUIDs
 description: BDA Pin Name GUIDs
 ms.assetid: 098e4c49-13dd-4c9a-8ce4-06b99b7c5fa3
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -44,9 +40,9 @@ Pin name for an input pin to a BDA IP sink node (KSNODE\_BDA\_IP\_SINK).
 <span id="PINNAME_MPE"></span><span id="pinname_mpe"></span>PINNAME\_MPE  
 Pin name for a multiprotocol encapsulation (MPE) pin.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: Submitting the desktop COSA/APN database update
 description: Submitting the desktop COSA/APN database update
 ms.assetid: 1ad1be32-74c9-4f84-b680-9124135a3b66
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -60,7 +56,7 @@ Use the following procedure to submit COSA or APN connectivity database updates 
 
 4.  **Update is released** -- Once you have signed off on the new APN database, it will go through the update publishing process. Once it is ready, it will appear in Windows Update for users to install. You’ll be provided a more detailed release timeline after completing your APN database submission.
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > If you do not sign-off within the allotted time period, your changes will be reverted from the next released update of the APN connectivity database. You’ll need to resubmit your APN submission and wait until the next scheduled update.   
 
 ### Deleting an APN database entry
@@ -90,7 +86,7 @@ Provide your contact information:
    [E-mail from a corporate email account for the company you are submitting for]
    [phone 1]
    [phone 2]
-``` 
+``` 
 
 
 

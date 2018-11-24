@@ -2,11 +2,7 @@
 title: Security Guidelines for Offload-Capable Miniport Drivers
 description: Security Guidelines for Offload-Capable Miniport Drivers
 ms.assetid: 178be416-3936-4e17-b055-134897b3e2eb
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +30,9 @@ The following topics provide more information about security attacks and how to 
 
 [Security Checklist for NDIS Drivers](security-checklist-for-ndis-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

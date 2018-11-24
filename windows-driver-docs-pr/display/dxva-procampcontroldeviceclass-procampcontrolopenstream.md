@@ -9,11 +9,7 @@ api_name:
 - DXVA_ProcAmpControlDeviceClass.ProcAmpControlOpenStream
 api_type:
 - COM
-ms.author: windowsdriverdev
 ms.date: 01/05/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -62,9 +58,9 @@ The *ProcAmpControlOpenStream* function maps directly to a call to the CreateMoC
 
 [**ProcAmpControlQueryRange**](dxva-deinterlacecontainerdeviceclass-procampcontrolqueryrange.md)
 
- 
+ 
 
- 
+ 
 
 
 

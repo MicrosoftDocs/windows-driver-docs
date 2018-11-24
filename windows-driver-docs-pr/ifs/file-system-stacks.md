@@ -1,6 +1,5 @@
 ---
 title: File System Stacks
-author: windows-driver-content
 description: File System Stacks
 ms.assetid: 67839ffb-fe38-42c2-8f33-89d01d796d8a
 keywords:
@@ -11,11 +10,7 @@ keywords:
 - VDOs WDK file system
 - control device objects WDK file system
 - CDOs WDK file system
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -39,11 +34,11 @@ File system volume device objects represent volumes mounted by file systems. A f
 
 **Note**   Unlike control device objects, volume device objects must never be named, because naming a volume device object would create a security hole.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

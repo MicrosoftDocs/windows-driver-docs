@@ -2,11 +2,7 @@
 title: MB Device Services
 description: Windows 7 introduced a NDIS (Network Device Interface Specification) based driver model for supporting Mobile Broadband (MB) devices.
 ms.assetid: 7F9DFD96-2221-4F64-AC51-F336CCBED6BF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,7 +15,7 @@ Windows 8 provides an updated class driver that works with devices conforming t
 
 **Note**  Functionality to extend MB devices services is accomplished via a user-mode application, not a kernel-mode driver extension.
 
- 
+ 
 
 While the class driver introduced in Windows 7 featured limited MB device feature support, the MB Class Driver in Windows 8 added native support for some additional features such as USSD, EAP-SIM/AKA and USB selective suspend, and offers an extensible device representation and control mechanisms. The [Mobile broadband WinRT API overview](http://go.microsoft.com/fwlink/p/?linkid=242060) provides some additional information about extending device services.
 
@@ -31,9 +27,9 @@ For more information see:
 
 -   The "MBIM Service and CID Extensibility" section of the [Mobile Broadband Interface Model (MBIM) specification]( http://go.microsoft.com/fwlink/p/?linkid=320791)
 
- 
+ 
 
- 
+ 
 
 
 

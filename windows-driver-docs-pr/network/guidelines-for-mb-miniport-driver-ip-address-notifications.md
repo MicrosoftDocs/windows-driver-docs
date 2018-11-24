@@ -2,11 +2,7 @@
 title: Guidelines for MB Miniport Driver IP Address Notifications
 description: Guidelines for MB Miniport Driver IP Address Notifications
 ms.assetid: 23d74bc4-5648-45e3-a603-350d71bb16e3
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,7 +25,7 @@ IP addresses and default gateways that are set by using the IP Helper API persis
 
 **Note**  Miniport drivers can find the **LUID** and **Index** of the MB interface from the **NetLuid** or **IfIndex** members of [**NDIS\_MINIPORT\_INIT\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff565972) structure that is passed to the miniport driver's [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) function.
 
- 
+ 
 
 ### Resetting the IP Address and Gateway Address
 
@@ -96,9 +92,9 @@ To set an IPv4 gateway address, use the following procedure. You can use similar
 
 -   Set the **NameServer** registry key as described in [MB DNS Updates](mb-dns-updates.md) to notify Windows about updated DNS addresses.
 
- 
+ 
 
- 
+ 
 
 
 

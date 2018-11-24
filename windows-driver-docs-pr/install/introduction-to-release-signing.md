@@ -2,11 +2,7 @@
 title: Introduction to Release-Signing
 description: Introduction to Release-Signing
 ms.assetid: 87583d0a-f7c9-49f0-953a-f51891260d75
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,7 +29,7 @@ The [Hardware Certification Kit (HCK)](http://go.microsoft.com/fwlink/p/?linkid=
 
 **Note**  On Windows Server 2003, Windows XP, and Windows 2000, the INF file from the WHQL-signed [driver package](driver-packages.md) must use a [device setup class](device-setup-classes.md) that is defined in *%SystemRoot%/inf/Certclas.inf*. Otherwise, Windows treats the driver package as unsigned.
 
- 
+ 
 
 If a driver package is digitally-signed by WHQL, it can be distributed through the Windows Update program or other Microsoft-supported distribution mechanisms. WHQL signs the driver package [catalog file](catalog-files.md), but does not embed signatures in driver files. If a driver is a [*boot-start driver*](https://msdn.microsoft.com/library/windows/hardware/ff556272#wdkgloss-boot-start-driver) for 64-bit processors, the driver publisher must also [embed a signature](embedded-signatures-in-a-driver-file.md) in the kernel-mode driver files before submitting the driver package to WHQL.
 
@@ -49,11 +45,11 @@ For more information about the release-signing requirements and procedures, see 
 
 **Note**  To understand the steps that are involved in release-signing driver packages, see [How to Release-Sign a Driver Package](how-to-release-sign-a-driver-package.md). This topic provides a summary of the release-signing process, and steps through many examples of release-signing by using the *ToastPkg* sample driver package within the Windows Driver Kit (WDK).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

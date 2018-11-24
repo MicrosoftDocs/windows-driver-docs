@@ -5,11 +5,7 @@ ms.assetid: c8f1cdd6-1beb-43bd-b96c-2eea3a51321e
 keywords:
 - Overlay DDI WDK Windows 7 display
 - Overlay DDI WDK Server 2008 R2 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -39,9 +35,9 @@ The Overlay DDI is an extension to the [Direct3D version 9 DDI](https://msdn.mic
 
 -   When the display format is 64 bits rather than 32 bits (for example, when the Desktop Windows Manager (DWM) uses D3DFMT\_A16B16G16R16F for the display mode), the runtime places the lower 32 bits of the overlay colorkey in the **DstColorKeyLow** member of the [**D3DDDI\_OVERLAYINFO**](https://msdn.microsoft.com/library/windows/hardware/ff544621) structure and the upper 32 bits in the **DstColorKeyHigh** member of D3DDDI\_OVERLAYINFO.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,15 +3,11 @@ title: Using Breakpoints - Debugging Techniques
 description: Overview of Using Breakpoints with the Windows Debugger (Debugging Techniques)
 ms.assetid: 93c46047-ab04-41ca-ad13-89741735c055
 keywords: ["breakpoints", "breakpoints, overview"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
-# Using Breakpoints
+# Using Breakpoints - Debugging Techniques
 
 
 A *breakpoint* is a location in executable code at which the operating system stops execution and breaks into the debugger. This allows you to analyze the target and issue debugger commands.
@@ -32,9 +28,9 @@ This section includes the following topics:
 
 [Risks Entailed When Setting Breakpoints](risks-entailed-when-setting-breakpoints.md)
 
- 
+ 
 
- 
+ 
 
 
 

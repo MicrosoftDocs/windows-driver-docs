@@ -4,11 +4,7 @@ description: Splitting Frames Other Than TCP and UDP
 ms.assetid: 3c3f3e2d-eb6b-41db-a376-c665c4cd5dfe
 keywords:
 - Ethernet frame splitting WDK networking , non-TCP and UDP protocols
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,9 +20,9 @@ This section includes:
 
 [Splitting IPsec Frames](splitting-ipsec-frames.md)
 
- 
+ 
 
- 
+ 
 
 
 

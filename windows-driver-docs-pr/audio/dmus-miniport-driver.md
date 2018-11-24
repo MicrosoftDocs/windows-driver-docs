@@ -7,11 +7,7 @@ keywords:
 - miniport drivers WDK audio , DMus
 - DirectMusic WDK audio , miniport drivers
 - DMus miniport drivers WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -91,9 +87,9 @@ The miniport driver calls the following interfaces on the DMus port driver:
 
 PortCls contains a built-in DMus miniport driver for a MIDI device with a UART function. For more information, see [**PcNewMiniport**](https://msdn.microsoft.com/library/windows/hardware/ff537714).
 
- 
+ 
 
- 
+ 
 
 
 

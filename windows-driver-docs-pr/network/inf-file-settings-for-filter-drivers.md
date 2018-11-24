@@ -4,11 +4,7 @@ description: INF File Settings for Filter Drivers
 ms.assetid: e2714e67-62ac-4d9a-bec3-971d1c8b5bd8
 keywords:
 - INF files WDK network , filter drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +22,9 @@ This section includes:
 
 [Configuring an INF File for a Modifying Filter Driver](configuring-an-inf-file-for-a-modifying-filter-driver.md)
 
- 
+ 
 
- 
+ 
 
 
 

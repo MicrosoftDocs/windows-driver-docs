@@ -3,11 +3,7 @@ title: ndiskd.netadapter
 description: The ndiskd.netadapter extension displays information about NDIS miniports, or network adapters, that are active on the system. 
 ms.assetid: 7D55F7CE-5DDB-4C80-8C27-F619F2FB7F15
 keywords: ["ndiskd.netadapter Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!ndiskd.netadapter** extension displays information about NDIS miniports, or network adapters, that are active on the system. If you run this command with no parameters, !ndiskd will display a list of all network adapters.
 
-```
+```console
      !ndiskd.netadapter [-handle <x>] [-basic] [-diag] [-state] [-bindings] 
         [-ports] [-offloads] [-filterdb] [-timers] [-rst]
         [-pm] [-ss] [-aoac] [-wol] [-protocoloffloads]
@@ -146,7 +142,7 @@ Examples
 
 By running **!ndiskd.netadapter** with no parameters, you can get a list of all network adapters on the system along with their associated miniport drivers. In this example output, look for the Microsoft Kernel Debug Network Adapter, whose handle is ffffdf80140c71a0. For more information about what the Kernel Debug Network Adapter is, see [Kernel debugging over the network](https://go.microsoft.com/fwlink/p/?linkid=845868) on the NDIS blog.
 
-```
+```console
 3: kd> !ndiskd.netadapter
     Driver             NetAdapter          Name                                 
     ffffdf8015a98380   ffffdf8015aa11a0    Microsoft ISATAP Adapter #2
@@ -157,7 +153,7 @@ By clicking on the handle for the miniport driver or entering the **!ndiskd.neta
 
 At the bottom of the report for this net adapter, there are many other links you can click on to explore further information, such as any pending OIDs and the state of task offloads. These links correspond to many of the parameters for **!ndiskd.netadapter**.
 
-```
+```console
 3: kd> !ndiskd.netadapter ffffdf80140c71a0
 
 
@@ -231,12 +227,11 @@ MORE INFORMATION
     Hardware resources                     Selective suspend
     NDIS ports                             WMI guids
     Diagnostic log
-
 ```
 
 As example of using **!ndiskd.netadapter** as a starting place for further debugging, click on the "Driver handlers" link at the bottom of the report to see a list of all registered driver callback handlers for this net adapter's miniport driver. In the following example, clicking the link causes !ndiskd to run the [**!ndiskd.minidriver**](-ndiskd-minidriver.md) extension with the handle of this net adapter's miniport driver. The miniport driver is the kdnic 4.2 and its handle is ffffdf801418d650.
 
-```
+```console
 3: kd> !ndiskd.minidriver ffffdf801418d650 -handlers
 
 
@@ -284,9 +279,9 @@ You can now click the "bp" link to the right of each handler to set a breakpoint
 
 [**!ndiskd.minidriver**](-ndiskd-minidriver.md)
 
- 
 
- 
+
+
 
 
 

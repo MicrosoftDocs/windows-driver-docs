@@ -3,11 +3,7 @@ title: usb3kd.xhci_transferring
 description: The usb3kd.xhci_transferring extension displays a transfer ring (used by a USB 3.0 host controller) until it detects a cycle bit change.
 ms.assetid: BCF6DEF0-FB58-4FE6-88AD-BF778E00F052
 keywords: ["usb3kd.xhci_transferring Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The [**!usb3kd.xhci\_transferring**](-usb3kd-device-info.md) extension displays a transfer ring (used by a USB 3.0 host controller) until it detects a cycle bit change.
 
-```
+```dbgcmd
 !usb3kd.xhci_transferring VirtualAddress
 !usb3kd.xhci_transferring PhysicalAddress 1
 ```
@@ -47,7 +43,7 @@ Usb3kd.dll
 Remarks
 -------
 
-The output of the **!xhci\_transferring** command is based on the data structures maintained by the USB 3.0 host controller driver (UsbXhci.sys). For more information about the USB 3.0 host controller driver and other drivers in the USB stack, see [USB Driver Stack Architecture](http://go.microsoft.com/fwlink/p?LinkID=251983).
+The output of the **!xhci\_transferring** command is based on the data structures maintained by the USB 3.0 host controller driver (UsbXhci.sys). For more information about the USB 3.0 host controller driver and other drivers in the USB stack, see [USB Driver Stack Architecture](https://go.microsoft.com/fwlink/p?LinkID=251983).
 
 The transfer ring is a structure used by the USB 3.0 host controller driver to maintain a list of transfer request blocks (TRBs). This command takes the virtual or physical address of a transfer ring, but displays the physical address of the TRBs. This is done so the command can correctly traverse LINK TRBs.
 
@@ -56,7 +52,7 @@ Examples
 
 To obtain the address of the transfer ring, look at the output of the [**!xhci\_deviceslots**](-usb3kd-xhci-deviceslots.md) command. In the following example, the virtual address of the transfer ring is 0xfffffa8005b2fe00.
 
-```
+```dbgcmd
 3: kd> !usb3kd.xhci_deviceslots 0xfffffa800523a2d0
 
 ## Dumping dt _DEVICESLOT_DATA 0xfffffa80051a3300
@@ -84,7 +80,7 @@ DeviceContextBase: VA 0xfffffa8005a41000 LA 0x116841000 !wdfcommonbuffer 0x57ffa
 
 Now you can pass the address of the transfer ring to the **!xhci\_transferring** command.
 
-```
+```dbgcmd
 kd> !xhci_transferring 0xfffffa8005b2fe00
 
         [  0] NORMAL       0x000000011692fe00 CycleBit 1 IOC 0 BEI 0 InterrupterTarget 0 TransferLength    13 TDSize  0
@@ -102,11 +98,11 @@ kd> !xhci_transferring 0xfffffa8005b2fe00
 
 [**!xhci\_dumpall**](-usb3kd-xhci-dumpall.md)
 
-[Universal Serial Bus (USB) Drivers](http://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
- 
+ 
 
- 
+ 
 
 
 

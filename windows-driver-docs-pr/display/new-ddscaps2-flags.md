@@ -7,11 +7,7 @@ keywords:
 - presentation WDK DirectX 8.0
 - rendering results visible WDK DirectX 8.0
 - visible results WDK DirectX 8.0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ DX8 runtimes now set another new flag, DDSCAPS2\_NOTUSERLOCKABLE, on the primary
 
 The driver can also determine whether the depth/stencil buffer is lockable by the presence of the DDSCAPS2\_NOTUSERLOCKABLE flag.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: OperatorList
 description: OperatorList
 ms.assetid: 28006331-aa65-4b33-ae94-a027c8a60d48
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -45,13 +41,13 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Operator](operator.md)</p></td>
+<td><p><a href="operator.md" data-raw-source="[Operator](operator.md)">Operator</a></p></td>
 <td><p>Specifies the details of the operator.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Parent_elements"></span><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Parent elements
 
@@ -76,9 +72,9 @@ There are no parent elements.
 
 The OperatorList element is required.
 
- 
+ 
 
- 
+ 
 
 
 

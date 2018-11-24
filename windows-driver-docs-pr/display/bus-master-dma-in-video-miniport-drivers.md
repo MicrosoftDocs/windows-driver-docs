@@ -10,11 +10,7 @@ keywords:
 - common-buffer DMA WDK video miniport , overview
 - packet-based DMA WDK video miniport
 - packet-based DMA WDK video miniport , overview
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -48,9 +44,9 @@ The following subsections describe how to use the packet-based and common-buffer
 
 [Points to Consider When Using DMA](points-to-consider-when-using-dma.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -7,11 +7,7 @@ keywords:
 - IETF RFC compliance WDK TCP chimney offload
 - task-offload engine NIC WDK TCP chimney offload
 - TOE NIC WDK TCP chimney offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -94,9 +90,9 @@ The following RFCs are of interest but are not required for TCP chimney-capable 
 
 -   Draft-ietf-zeroconf-ipv4-linklocal-07.txt, Dynamic Configuration of IPv4 Link-Local Addresses
 
- 
+ 
 
- 
+ 
 
 
 

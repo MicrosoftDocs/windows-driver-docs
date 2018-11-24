@@ -3,11 +3,7 @@ title: Debug Stop Debugging
 description: Debug Stop Debugging
 ms.assetid: 40c8a266-ffea-488e-ac10-89e61c5c9781
 keywords: ["Debug Stop Debugging", "controlling the target, Debug Stop Debugging", "exiting the debugger, Debug Stop Debugging", "quitting the debugger, Debug Stop Debugging", "ending the debugging session, Debug Stop Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,9 +21,9 @@ This command is equivalent to pressing SHIFT+F5 or clicking the **Stop debugging
 
 For more information about the effects of this action, other methods of issuing this command, and other ways to control program execution, see [Controlling the Target](controlling-the-target.md).
 
- 
+ 
 
- 
+ 
 
 
 

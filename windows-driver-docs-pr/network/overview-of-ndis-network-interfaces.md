@@ -5,11 +5,7 @@ ms.assetid: 55cbdf2d-389f-457e-a901-eedca93a3005
 keywords:
 - NDIS network interfaces WDK , about NDIS network interfaces
 - network interfaces WDK , about NDIS network interfaces
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,11 +30,11 @@ This section includes:
 > [!NOTE]
 > The NDIS 6.0 Network Interfaces section refers to many Request for Comments (RFCs) from the Internet Engineering Task Force (IETF). To view an IETF RFC, visit the [IETF Request for Comments](http://go.microsoft.com/fwlink/p/?linkid=45661) Web site, and search for the RFC in the **RFC number** box under **IETF repository retrieval**.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

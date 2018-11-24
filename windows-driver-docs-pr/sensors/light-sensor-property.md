@@ -2,11 +2,7 @@
 title: Light sensor property
 description: The property key for the light sensor.
 ms.assetid: 87C58F14-E23D-4567-BBD5-AA42DF9371B0
-ms.author: windowsdriverdev
 ms.date: 01/04/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -57,7 +53,7 @@ The property key for the light sensor.
 </tbody>
 </table>
 
- 
+ 
 
 For more information about the data type shown in the **Type** column, see [PROPVARIANT structure](http://go.microsoft.com/fwlink/p/?linkid=313395).
 
@@ -94,9 +90,9 @@ For a complete example of sensor properties being set by using their related pro
 
 [Other sensor properties](other-sensor-properties.md)
 
- 
+ 
 
- 
+ 
 
 
 

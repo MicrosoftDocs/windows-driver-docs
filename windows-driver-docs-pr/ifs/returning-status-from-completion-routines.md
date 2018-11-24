@@ -1,6 +1,5 @@
 ---
 title: Returning Status from Completion Routines
-author: windows-driver-content
 description: Returning Status from Completion Routines
 ms.assetid: fb12720b-10fe-43ab-ade7-c1b09d00d922
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - status values WDK file system
 - success status values WDK file system
 - returning status WDK file system
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,9 +31,9 @@ If any other NTSTATUS value is returned, the I/O Manager resets it to STATUS\_SU
 
 For more information about returning STATUS\_MORE\_PROCESSING\_REQUIRED, see [Constraints on Completion Routines](constraints-on-completion-routines.md).
 
- 
+ 
 
- 
+ 
 
 
 

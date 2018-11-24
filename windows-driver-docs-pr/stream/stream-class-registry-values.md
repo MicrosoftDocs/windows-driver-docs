@@ -1,6 +1,5 @@
 ---
 title: Stream Class Registry Values
-author: windows-driver-content
 description: Stream Class Registry Values
 ms.assetid: a6800f53-4d55-4a28-839b-47f0cecc17bf
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - streaming minidrivers WDK Windows 2000 Kernel , registry
 - minidrivers WDK Windows 2000 Kernel Streaming , registry
 - registry WDK streaming minidriver
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -45,7 +40,7 @@ This registry string is only valid for drivers running on Windows 98. It is not 
 
 The following is an extract from the *Usbintel.inf* file that demonstrates how to set these registry values. This file, part of the UsbIntel sample, is available in the Driver Development Kit (DDK) and Windows Driver Kit (WDK) for Windows XP through Windows 7 (Build 7600).
 
-```
+```INF
 [Intel.USBDCam]
 Include= ks.inf, kscaptur.inf
 Needs= KS.Registration,KSCAPTUR.Registration
@@ -67,9 +62,9 @@ HKR,,HardwareConfig,1,1
 HKR,,USDClass,,"{0527d1d0-88c2-11d2-82c7-00c04f8ec183}"
 ```
 
- 
+ 
 
- 
+ 
 
 
 

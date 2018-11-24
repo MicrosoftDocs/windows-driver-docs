@@ -3,11 +3,7 @@ title: dbgerr003 Mismatched Symbols
 description: dbgerr003 Mismatched Symbols
 ms.assetid: 95251f5a-5479-4dc8-b3bb-4eb6096bdb6e
 keywords: ["dbgerr003", "Mismatched symbols (dbgerr003)"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,9 +17,9 @@ Debugger error **dbgerr003** displays the message "*File* has mismatched symbols
 
 The debugger might load the specified symbol file despite this error, depending on other requirements in the path.
 
- 
+ 
 
- 
+ 
 
 
 

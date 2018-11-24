@@ -2,11 +2,7 @@
 title: Accessing the PCI Configuration Space of a Virtual Function
 description: Accessing the PCI Configuration Space of a Virtual Function
 ms.assetid: 727E6FC5-F61F-4CB0-B6EB-9B372F2C59E1
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,11 +21,11 @@ For more information on VFs for SR-IOV network adapters, see [SR-IOV Virtual Fun
 
 **Note**  Only the PF miniport driver can configure the PCI configuration space for a VF. The VF miniport driver cannot directly access most of the SR-IOV adapter's hardware resources, such as the PCI configuration space. For more information, see [Writing SR-IOV VF Miniport Drivers](writing-sr-iov-vf-miniport-drivers.md).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

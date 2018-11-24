@@ -6,11 +6,7 @@ keywords:
 - INF files WDK network , ControlFlags section
 - network INF files WDK , ControlFlags section
 - ControlFlags section WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,13 +26,13 @@ Adapters that are not compatible with Plug and Play must be added manually by th
 
 **Note**  An **ExcludeFromSelect** entry performs a different function than does the NCF\_HIDDEN value of the **Characteristics** entry in the *DDInstall* section. For more information, see [DDInstall Section](ddinstall-section-in-a-network-inf-file.md).
 
- 
+ 
 
 An **ExcludeFromSelect** entry prevents an adapter or software component from being listed in the **Select Component for Installation** dialog box. The adapter or component, however, can still be listed in the **Connections** dialog box. The NCF\_HIDDEN value prevents the adapter or component from being displayed in any part of the user interface, including the **Connections** dialog box.
 
- 
+ 
 
- 
+ 
 
 
 

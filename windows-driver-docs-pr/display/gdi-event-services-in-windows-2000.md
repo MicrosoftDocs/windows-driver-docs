@@ -5,11 +5,7 @@ ms.assetid: bf7f2127-cd3e-430c-99fd-62c824394a57
 keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , GDI event services
 - GDI WDK Windows 2000 display , events
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,11 +31,11 @@ This value is an NTSTATUS status value that indicates the specific error conditi
 
 **Note**   The [**EngClearEvent**](https://msdn.microsoft.com/library/windows/hardware/ff564190) and [**EngReadStateEvent**](https://msdn.microsoft.com/library/windows/hardware/ff565001) functions are not available in Windows 2000.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -6,11 +6,7 @@ keywords:
 - terminating offload state WDK TCP chimney offload , sequence
 - terminating offload state WDK TCP chimney offload , requested by offload target
 - terminating offload state WDK TCP chimney offload , initiated by host stack
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -46,9 +42,9 @@ The offload target calls either of the following:
 
 5.  The offload target frees all resources, such as memory, that are associated with the terminated state objects.
 
- 
+ 
 
- 
+ 
 
 
 

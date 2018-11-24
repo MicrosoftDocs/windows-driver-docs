@@ -4,11 +4,7 @@ description: Example of Handle Assignments
 ms.assetid: 44239e13-ebe7-48c4-83b2-40f603dc1c98
 keywords:
 - multiple-head hardware WDK DirectX 9.0 , handle assignments
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -82,11 +78,11 @@ The following table shows an example arrangement of Direct3D handle values (supp
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

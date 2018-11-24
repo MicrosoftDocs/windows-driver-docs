@@ -6,11 +6,7 @@ keywords:
 - filter drivers WDK networking , writing filter drivers
 - NDIS filter drivers WDK , writing filter drivers
 - writing filter drivers WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,9 +28,9 @@ When compared to filter intermediate drivers, filter drivers provide the followi
 
 For more information about NDIS 6.0 filter drivers, see [NDIS 6.0 Filter Drivers](ndis-filter-drivers.md).
 
- 
+ 
 
- 
+ 
 
 
 

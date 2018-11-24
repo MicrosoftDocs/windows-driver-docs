@@ -11,11 +11,7 @@ api_location:
 - ksmedia.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +23,7 @@ The KSPROPERTY\_WAVE\_BUFFER property describes a wave device's buffer.
 ## <span id="ddk_ksproperty_wave_buffer_ks"></span><span id="DDK_KSPROPERTY_WAVE_BUFFER_KS"></span>
 
 
-### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
+### Usage Summary Table
 
 <table>
 <colgroup>
@@ -51,13 +47,13 @@ The KSPROPERTY\_WAVE\_BUFFER property describes a wave device's buffer.
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
-<td><p>[<strong>KSPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564262)</p></td>
-<td><p>[<strong>KSWAVE_BUFFER</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567239)</p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567239" data-raw-source="[&lt;strong&gt;KSWAVE_BUFFER&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567239)"><strong>KSWAVE_BUFFER</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a KSWAVE\_BUFFER structure that describes the looping attributes of the buffer, buffer size (in bytes), and starting address of the buffer.
 
@@ -77,16 +73,16 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
-[**KSPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff564262)
+[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)
 
 [**KSWAVE\_BUFFER**](https://msdn.microsoft.com/library/windows/hardware/ff567239)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,11 +3,7 @@ title: .fnret (Display Function Return Value)
 description: The .fnret command displays information about a function's return value.
 ms.assetid: b7ce3047-5b0a-43ba-877f-76235139d66c
 keywords: [".fnret (Display Function Return Value) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **.fnret** command displays information about a function's return value.
 
-```
+```dbgcmd
 .fnret [/s] Address [Value] 
 ```
 
@@ -61,7 +57,7 @@ Specifies the return value to display. If you include *Value*, **.fnret** casts 
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -70,9 +66,9 @@ If you include the *Value* parameter, the **.fnret** command only casts this val
 
 If you omit *Value*, the debugger uses the return value registers to determine this value. If a function has returned more recently than the function that the *Address* parameter specifies, the value that is displayed will probably not be a value that this function returned.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,11 +3,7 @@ title: c (Compare Memory)
 description: The c command compares the values held in two memory areas.
 ms.assetid: caa02ec3-35d6-4d41-a777-daa264b0dd18
 keywords: ["c (Compare Memory) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **c** command compares the values held in two memory areas.
 
-```
+```dbgcmd
 c Range Address 
 ```
 
@@ -58,7 +54,7 @@ The starting address of the second memory range to be compared. The size of this
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -71,7 +67,7 @@ If the two areas are not identical, the debugger will display all memory address
 
 As an example, consider the following code:
 
-```
+```cpp
 void main()
 {
     char rgBuf1[100];
@@ -86,15 +82,15 @@ void main()
 
 To compare **rgBuf1** and **rgBuf2**, use either of the following commands:
 
-```
+```dbgcmd
 0:000> c rgBuf1 (rgBuf1+0n100) rgBuf2
 
 0:000> c rgBuf1 L 0n100 rgBuf2
 ```
 
- 
+ 
 
- 
+ 
 
 
 

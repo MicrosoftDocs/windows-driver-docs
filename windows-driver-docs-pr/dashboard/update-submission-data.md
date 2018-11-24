@@ -3,10 +3,8 @@ title: Update submission data
 description: This method, in the Microsoft Hardware API, updates details of a submission.
 author: balapv
 ms.author: balapv
-ms.date: 04/05/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 04/05/2018
 ms.localizationpriority: medium
 ---
 
@@ -65,3 +63,6 @@ After this step, use the method [get submission details](get-a-submission.md) to
 ## Error codes
 Refer to [Error codes](get-product-data.md#error-codes) for details.
 
+## See also
+
+- [Hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)

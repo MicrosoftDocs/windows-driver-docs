@@ -1,12 +1,7 @@
 ---
 title: IRP_MN_EXECUTE_METHOD
-author: windows-driver-content
 description: All drivers that support methods within data blocks must handle this IRP.
-ms.author: windowsdriverdev
 ms.date: 08/12/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.assetid: cc42340e-4a7c-475c-b44d-2127e8a0d7dc
 keywords:
  - IRP_MN_EXECUTE_METHOD Kernel-Mode Driver Architecture
@@ -148,9 +143,9 @@ Requirements
 
 [**WNODE\_METHOD\_ITEM**](https://msdn.microsoft.com/library/windows/hardware/ff566376)
 
- 
+ 
 
- 
+ 
 
 
 

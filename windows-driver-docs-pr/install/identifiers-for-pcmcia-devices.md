@@ -10,11 +10,7 @@ keywords:
 - device IDs WDK device installations
 - hardware IDs WDK device installations
 - compatible IDs WDK device installations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -73,11 +69,11 @@ PCMCIA-compatible IDs correspond to the generic device IDs mentioned in the [Gen
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>*PNP0600</p></td>
+<td align="left"><p><em>PNP0600</p></td>
 <td align="left"><p>An AT Attachment (ATA) disk driver</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>*PNP0D00</p></td>
+<td align="left"><p></em>PNP0D00</p></td>
 <td align="left"><p>A multifunction 3.0 PC Card</p></td>
 </tr>
 <tr class="odd">
@@ -87,11 +83,11 @@ PCMCIA-compatible IDs correspond to the generic device IDs mentioned in the [Gen
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

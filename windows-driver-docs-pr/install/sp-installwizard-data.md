@@ -10,6 +10,7 @@ api_name:
 api_type:
 - NA
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # SP_INSTALLWIZARD_DATA
@@ -21,9 +22,9 @@ SP_INSTALLWIZARD_DATA is a parameter to the **SetupDiGetWizardPage** function.
 
 Instead of DIF_INSTALLWIZARD, Windows uses the DIF_NEWDEVICEWIZARD_*XXX* requests such as DIF_NEWDEVICEWIZARD_FINISHINSTALL.
 
- 
+ 
 
- 
+ 
 
 
 

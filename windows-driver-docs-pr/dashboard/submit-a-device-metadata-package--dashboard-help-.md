@@ -2,11 +2,8 @@
 title: Submit a Device Metadata Package (Dashboard help)
 description: Submit a Device Metadata Package (Dashboard help)
 ms.assetid: dcd35784-51c3-410a-8704-94f07fa8959a
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
@@ -68,18 +65,17 @@ For info about submitting service metadata for a mobile broadband app, see [Serv
 
 ## <span id="related_topics"></span>Related topics
 
+- [Create a Device Metadata Experience](https://msdn.microsoft.com/library/windows/hardware/br230794.aspx)
 
-[Create a Device Metadata Experience](https://msdn.microsoft.com/library/windows/hardware/br230794.aspx)
+- [Manage Device Metadata Experiences](https://msdn.microsoft.com/library/windows/hardware/br230797.aspx)
 
-[Manage Device Metadata Experiences](https://msdn.microsoft.com/library/windows/hardware/br230797.aspx)
+- [Submit a Bulk Metadata Package](https://msdn.microsoft.com/library/windows/hardware/hh801895.aspx)
 
-[Submit a Bulk Metadata Package](https://msdn.microsoft.com/library/windows/hardware/hh801895.aspx)
+- [Errors and Solutions When Submitting Device Metadata Experiences](https://msdn.microsoft.com/library/windows/hardware/br230786.aspx)
 
-[Errors and Solutions When Submitting Device Metadata Experiences](https://msdn.microsoft.com/library/windows/hardware/br230786.aspx)
+ 
 
- 
-
- 
+ 
 
 
 

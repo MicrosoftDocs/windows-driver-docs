@@ -1,13 +1,8 @@
 ---
 title: WIA Security and Security Descriptors
-author: windows-driver-content
 description: WIA Security and Security Descriptors
 ms.assetid: 2919f3fc-1eb5-4801-a589-ae3000320763
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,7 +18,7 @@ Generally, the **LocalService** account has access to resources whose ACLs allow
 
 The following code example illustrates how to set the security descriptor. This approach can be used if an application and driver need to share a named event object.
 
-```
+```cpp
 //
 //  Security descriptor in SDDL form:
 //  D:           - Indicates what follows is a 
@@ -37,7 +32,7 @@ The following code example illustrates how to set the security descriptor. This 
 //
 //  Allocate appropriate security attributes for the named event
 //  to be shared between driver and app running under 
-//  interactive user&#39;s account.
+//  interactive user's account.
 //
 SECURITY_ATTRIBUTES sa = { sizeof(sa), FALSE, NULL };
 if(ConvertStringSecurityDescriptorToSecurityDescriptor(
@@ -76,7 +71,7 @@ else
 
 Registry keys can also be created with the appropriate ACLs through an INF file. For example, to create a registry key in the SOFTWARE key that is accessible only to Administrators and the driver running under **LocalService**, add the following entries to your INF file:
 
-```
+```INF
 [DDInstallSection]
 Addreg=MyAddReg
 
@@ -91,9 +86,9 @@ For more information about INF files, see [INF Files for WIA Devices](inf-files-
 
 See the Windows Security documentation for more information about the Windows Security model. Driver writers should also be aware of general security best practices that reduce the chance of destructive users successfully exploiting vulnerabilities in their drivers. "*Writing Secure Code*" (ISBN 0-7356-1588-8) from Microsoft Press is one of the several helpful resources available.
 
- 
+ 
 
- 
+ 
 
 
 

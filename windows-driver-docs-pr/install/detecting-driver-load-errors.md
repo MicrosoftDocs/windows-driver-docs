@@ -8,11 +8,7 @@ keywords:
 - detecting driver loaded
 - load errors WDK driver signing
 - status information WDK driver signing
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,9 +21,9 @@ The following screen shot shows the type of device status message that indicates
 
 ![screen shot of an unsigned driver error message](images/signing-driver-load-error-message.png)
 
- 
+ 
 
- 
+ 
 
 
 

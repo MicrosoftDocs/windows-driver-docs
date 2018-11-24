@@ -12,6 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # SM\_GetTargetMapping function
@@ -24,13 +25,13 @@ Syntax
 
 ```ManagedCPlusPlus
 void SM_GetTargetMapping(
-   [in, HBAType("HBA_WWN")] uint8                       HbaPortWWN[8],
-   [in, HBAType("HBA_WWN")] uint8                       DomainPortWWN[8],
-   [in] uint32                                          InEntryCount,
-   [out, HBA_STATUS_QUALIFIERS] HBA_STATUS              HBAStatus,
-   [out] uint32                                         TotalEntryCount,
-   [out] uint32                                         OutEntryCount,
-   [out, WmiSizeIs("OutEntryCount")] MS_SMHBA_SCSIENTRY Entry[]
+   [in, HBAType("HBA_WWN")] uint8                       HbaPortWWN[8],
+   [in, HBAType("HBA_WWN")] uint8                       DomainPortWWN[8],
+   [in] uint32                                          InEntryCount,
+   [out, HBA_STATUS_QUALIFIERS] HBA_STATUS              HBAStatus,
+   [out] uint32                                         TotalEntryCount,
+   [out] uint32                                         OutEntryCount,
+   [out, WmiSizeIs("OutEntryCount")] MS_SMHBA_SCSIENTRY Entry[]
 );
 ```
 
@@ -97,9 +98,9 @@ Requirements
 
 [**SM\_GetTargetMapping\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff566258)
 
- 
+ 
 
- 
+ 
 
 
 

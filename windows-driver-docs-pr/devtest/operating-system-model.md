@@ -8,11 +8,7 @@ keywords:
 - SDV WDK , operating system model
 - operating system model WDK Static Driver Verifier
 - harness WDK Static Driver Verifier
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,9 +19,9 @@ An SDV *operating system model* or *harness* consists of partial and abstracted 
 
 There is also a harness that executes parts of your driver in the same manner as the Windows Operating System by calling into entry points in the driver.
 
- 
+ 
 
- 
+ 
 
 
 

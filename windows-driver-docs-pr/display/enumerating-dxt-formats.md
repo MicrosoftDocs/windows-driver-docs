@@ -10,11 +10,7 @@ keywords:
 - textures WDK DirectDraw , compressed
 - enumerating DXT formats WDK DirectDraw
 - DXT formats WDK DirectDraw
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +24,9 @@ In Microsoft DirectX, there are two ways for your driver to enumerate pixel form
 
 Because DXT formats are primarily intended to be used as textures, your driver enumerates DXT formats only through the first method. There is no need to add DXT formats to the **lpdwFourCC** array.
 
- 
+ 
 
- 
+ 
 
 
 

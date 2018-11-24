@@ -3,6 +3,7 @@ title: iSCSI WMI Classes That Manage Initiators, Ports, Sessions and Connections
 description: iSCSI WMI Classes That Manage Initiators, Ports, Sessions and Connections
 ms.assetid: 83584b7a-3513-4180-a41b-9dd9b68a2123
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # iSCSI WMI Classes That Manage Initiators, Ports, Sessions and Connections
@@ -53,9 +54,9 @@ This section includes:
 
 [MSiSCSI\_RedirectPortalInfoClass WMI Class](msiscsi-redirectportalinfoclass-wmi-class.md)
 
- 
+ 
 
- 
+ 
 
 
 

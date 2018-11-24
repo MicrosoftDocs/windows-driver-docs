@@ -4,11 +4,7 @@ description: Managing Multiple-Head Memory
 ms.assetid: 37cda124-0c3b-4af4-92b8-329440dd3221
 keywords:
 - multiple-head hardware WDK DirectX 9.0 , memory management
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,9 +32,9 @@ For the most part, this choice of which head owns video memory is inherent in th
 
 -   Finally, note that the runtime guarantees that all heads in the group participate in the multiple-head scenario. Therefore, the driver must only maintain one bit of state indicating whether it is currently in multiple-head mode.
 
- 
+ 
 
- 
+ 
 
 
 

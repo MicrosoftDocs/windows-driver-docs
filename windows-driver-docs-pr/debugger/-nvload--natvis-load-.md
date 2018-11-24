@@ -3,11 +3,7 @@ title: .nvload (NatVis Load)
 description: The .nvload command loads a NatVis file into the debugger environment. After the visualization is loaded, it will be used to render data defined in the visualization.
 ms.assetid: 9B14B3B4-EA90-426E-8555-0E5B8F63E0A9
 keywords: [".nvload (NatVis Load) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,9 +18,8 @@ ms.localizationpriority: medium
 
 The .nvload command loads a NatVis file into the debugger environment. After the visualization is loaded, it will be used to render data defined in the visualization.
 
-```
-.nvload FileName|ModuleName 
-   
+```dbgcmd
+.nvload FileName|ModuleName   
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
@@ -60,20 +55,20 @@ The **ModuleName** is the name of a module in the target process being debugged.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
-For more information, see [Writing debugger type visualizers for C++ using .natvis files](http://code.msdn.microsoft.com/windowsdesktop/Writing-type-visualizers-2eae77a2).
+For more information, see [Writing debugger type visualizers for C++ using .natvis files](https://code.msdn.microsoft.com/windowsdesktop/Writing-type-visualizers-2eae77a2).
 
 ## <span id="see_also"></span>See also
 
 
 [**dx (Display NatVis Expression)**](dx--display-visualizer-variables-.md)
 
- 
+ 
 
- 
+ 
 
 
 

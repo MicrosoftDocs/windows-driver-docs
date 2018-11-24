@@ -1,11 +1,7 @@
 ---
 Description: Support for base-driver commands (WpdServiceSampleDriver)
 title: Support for base-driver commands (WpdServiceSampleDriver)
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,7 +20,7 @@ The following table describes the two commands that are supported by the base dr
 | WPD\_COMMAND\_COMMON\_GET\_OBJECT\_IDS\_FROM\_PERSISTENT\_UNIQUE\_IDS | OnGetOjectIDsFromPersistentUniqueIDs | Issued when an application tries to retrieve the object identifier that matches a given persistent-unique identifier. |
 | WPD\_COMMAND\_COMMON\_SAVE\_CLIENT\_INFORMATION                       | OnSaveClientInfo                     | Issued when an application tries to open a connection to a device or a service.                                       |
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -34,9 +30,9 @@ The following table describes the two commands that are supported by the base dr
 
 [The WPD Driver Samples](the-wpd-driver-samples.md)
 
- 
+ 
 
- 
+ 
 
 
 

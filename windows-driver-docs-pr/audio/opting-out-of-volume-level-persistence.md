@@ -2,11 +2,7 @@
 title: Opting Out of Volume Level Persistence
 description: Opting Out of Volume Level Persistence
 ms.assetid: e96533be-25e8-49ae-8e56-7105dfa92b5a
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,7 +17,7 @@ To opt out of volume persistence using an INF file, use the [**AddProperty**](ht
 
 The following INF file fragment shows how to opt out of volume persistence:
 
-```
+```inf
  
 ;; INF file fragment to show how to use AddProperty
 ;; to opt out of volume persistence
@@ -56,7 +52,7 @@ DeviceDescription = "My WDM device driver"
 
 **Note**  The preceding INF file fragment, only shows the **Version** section and the sections relevant to the [**AddProperty**](https://msdn.microsoft.com/library/windows/hardware/ff546318) directive.
 
- 
+ 
 
 The **%MfgName% = CompanyName** line entry in the **Manufacturer** section references the **CompanyName** section where the model and hardware ID (hw-id) of the audio adapter are provided. This section in an INF file, where model and hw-id information is provided, is called the *models section*. The actual title of the section is user-defined and in the preceding example it is **CompanyName**. For more information about the models section of an INF file, see [**INF Models Section**](https://msdn.microsoft.com/library/windows/hardware/ff547456).
 
@@ -72,9 +68,9 @@ For more information about the AddProperty directive, see [**INF AddProperty Dir
 
 The property name that corresponds to the property category GUID and property ID in the preceding INF file fragment is PKEY\_AudioDevice\_DontPersistControls.
 
- 
+ 
 
- 
+ 
 
 
 

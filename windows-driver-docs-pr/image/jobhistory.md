@@ -9,11 +9,7 @@ api_name:
 - wscn JobHistory
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **JobHistory** element contains a list of [**JobSummary**](jobsumma
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:JobHistory>
   child elements
 </wscn:JobHistory>
@@ -50,7 +46,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>JobSummary</strong>](jobsummary.md)</p></td>
+<td><p><a href="jobsummary.md" data-raw-source="[&lt;strong&gt;JobSummary&lt;/strong&gt;](jobsummary.md)"><strong>JobSummary</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -69,7 +65,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>GetJobHistoryResponse</strong>](getjobhistoryresponse.md)</p></td>
+<td><p><a href="getjobhistoryresponse.md" data-raw-source="[&lt;strong&gt;GetJobHistoryResponse&lt;/strong&gt;](getjobhistoryresponse.md)"><strong>GetJobHistoryResponse</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -81,16 +77,16 @@ The **JobHistory** element contains a [**JobSummary**](jobsummary.md) element fo
 
 The amount of job history that the WSD Scan Service stores and returns is implementation-specific.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**GetJobHistoryResponse**](getjobhistoryresponse.md)
 
 [**JobSummary**](jobsummary.md)
 
- 
+ 
 
- 
+ 
 
 
 

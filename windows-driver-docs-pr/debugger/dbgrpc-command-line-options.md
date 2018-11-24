@@ -3,11 +3,7 @@ title: DbgRpc Command-Line Options
 description: The DbgRpc command line must always contain exactly one of the -l, -e, -t, -c, or -a switches. The options following these switches depend on the switch used. 
 ms.assetid: 1c90f97c-f054-402d-a559-2459528029b9
 keywords: ["DbgRpc Command-Line Options Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The DbgRpc command line must always contain exactly one of the -l, -e, -t, -c, or -a switches. The options following these switches depend on the switch used. The -s, -p, and -r options can be used with any other options.
 
-```
+```console
  dbgrpc [-s Server -p ProtSeq] [-r Radix] -l -P ProcessID -L CellID1.CellID2 
 
 dbgrpc [-s Server -p ProtSeq] [-r Radix] -e [-E EndpointName] 
@@ -86,9 +82,9 @@ Specifies the procedure number of this call. (The RPC Run-Time identifies indivi
 
 For more information about debugging Microsoft Remote Procedure Call (RPC), see [RPC Debugging](rpc-debugging.md).
 
- 
+ 
 
- 
+ 
 
 
 

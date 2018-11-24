@@ -5,11 +5,7 @@ ms.assetid: 32ca214a-5103-4472-bbdb-1338188750d9
 keywords:
 - header-data split WDK , requirements
 - Ethernet frame splitting WDK networking , requirements
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -43,9 +39,9 @@ The following list contains the minimum requirements for header-data split suppo
 
 For more information about header-data split requirements for protocol drivers and filter drivers, see [Supporting Header-Data Split in Protocol Driver and Filter Drivers](supporting-header-data-split-in-protocol-driver-and-filter-drivers.md).
 
- 
+ 
 
- 
+ 
 
 
 

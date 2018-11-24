@@ -9,11 +9,7 @@ api_name:
 - wscn ScalingRangeSupported
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **ScalingRangeSupported** element describes the range of values tha
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ScalingRangeSupported>
   child elements
 </wscn:ScalingRangeSupported>
@@ -50,10 +46,10 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ScalingHeight</strong>](scalingheight2.md)</p></td>
+<td><p><a href="scalingheight2.md" data-raw-source="[&lt;strong&gt;ScalingHeight&lt;/strong&gt;](scalingheight2.md)"><strong>ScalingHeight</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>ScalingWidth</strong>](scalingwidth2.md)</p></td>
+<td><p><a href="scalingwidth2.md" data-raw-source="[&lt;strong&gt;ScalingWidth&lt;/strong&gt;](scalingwidth2.md)"><strong>ScalingWidth</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -72,7 +68,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>DeviceSettings</strong>](devicesettings.md)</p></td>
+<td><p><a href="devicesettings.md" data-raw-source="[&lt;strong&gt;DeviceSettings&lt;/strong&gt;](devicesettings.md)"><strong>DeviceSettings</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -82,7 +78,7 @@ Remarks
 
 The [**ScalingWidth**](scalingwidth2.md) and [**ScalingHeight**](scalingheight2.md) elements specify the scaling range for the width and height of an image, respectively.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**DeviceSettings**](devicesettings.md)
@@ -91,9 +87,9 @@ The [**ScalingWidth**](scalingwidth2.md) and [**ScalingHeight**](scalingheight2.
 
 [**ScalingWidth**](scalingwidth2.md)
 
- 
+ 
 
- 
+ 
 
 
 

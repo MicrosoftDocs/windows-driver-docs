@@ -5,11 +5,7 @@ ms.assetid: 2de45c31-6a44-4a57-84b9-3cb21c905f4b
 keywords:
 - TV connector WDK video miniport
 - copy protection WDK video miniport , setting
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +25,9 @@ For any bit set by a miniport driver in the **dwFlags** member of [**VIDEOPARAME
 
 A VIDEOPARAMETERS field contains undefined data if the corresponding bit is not set in **dwFlags**.
 
- 
+ 
 
- 
+ 
 
 
 

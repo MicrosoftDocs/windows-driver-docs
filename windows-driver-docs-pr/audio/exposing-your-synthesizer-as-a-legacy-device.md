@@ -5,11 +5,7 @@ ms.assetid: 25e5e14f-1db5-45dc-9048-674420d79824
 keywords:
 - synthesizers WDK audio , legacy devices
 - legacy device support WDK DirectMusic
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,9 +33,9 @@ You may want to write a single device driver that exposes your synth hardware as
 
     This case is problematic because the [WDMAud system driver](user-mode-wdm-audio-components.md#wdmaud_system_driver) and other clients are not aware that they need to download a collection. They just start sending MIDI update changes and notes.
 
- 
+ 
 
- 
+ 
 
 
 

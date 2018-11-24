@@ -1,6 +1,5 @@
 ---
 title: Custom Property Sets and Interfaces
-author: windows-driver-content
 description: Custom Property Sets and Interfaces
 ms.assetid: ea1337e4-c8e5-4971-b602-c066b5a6fd07
 keywords:
@@ -10,11 +9,7 @@ keywords:
 - capturing video WDK AVStream , property sets
 - property sets WDK video capture
 - custom interfaces WDK video capture
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -41,7 +36,7 @@ The following code demonstrates an implementation of IAMCameraControl:
 
 **Camera.h**
 
-```
+```cpp
 /*
 Implements IAMCameraControl via KSPROPERTY_VIDCAP_CAMERACONTROL
 */
@@ -65,21 +60,20 @@ public:
     STDMETHODIMP NonDelegatingQueryInterface(
         REFIID riid,
         PVOID* ppv);
- 
+
     STDMETHODIMP Set( 
             IN long Property,
             IN long lValue,
             IN long Flags);
- 
+
 private:
     HANDLE m_ObjectHandle;
 };
- 
 ```
 
 **Camera.cpp**
 
-```
+```cpp
 /*
 Implements IAMCameraControl via KSPROPERTY_VIDCAP_CAMERACONTROL
 */
@@ -170,7 +164,7 @@ CCameraControlInterfaceHandler::NonDelegatingQueryInterface(
 
 **MyINF.inf**
 
-```
+```INF
 ;IAMCameraControl
 HKCR,CLSID\{C6E13370-30AC-11d0-A18C-00A0C9118956},,,%PlugIn_IAMCameraControl%
 HKCR,CLSID\{C6E13370-30AC-11d0-A18C-00A0C9118956}\InprocServer32,,,kswdmcap.ax
@@ -187,9 +181,9 @@ HKCR,CLSID\{71F96465-78F3-11d0-A18C-00A0C9118956}\InprocServer32,ThreadingModel,
 HKLM,System\CurrentControlSet\Control\MediaSets\{C6E13370-30AC-11d0-A18C-00A0C9118956}\PropertyPages\{71F96465-78F3-11d0-A18C-00A0C9118956},,,%PropPage_CameraControl%
 ```
 
- 
 
- 
+
+
 
 
 

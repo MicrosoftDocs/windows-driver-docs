@@ -6,11 +6,7 @@ keywords:
 - state offloading process WDK TCP chimney offload , buffered receive data
 - offloading state process WDK TCP chimney offload , buffered receive data
 - buffered receive data WDK TCP chimney offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +30,9 @@ Before completing the offload of the TCP connection, the offload target must cop
 
 After offloading the TCP connection, the offload target must wait until receive requests are posted to its [*MiniportTcpOffloadReceive*](https://msdn.microsoft.com/library/windows/hardware/ff559460) function. After such receive requests have been posted, the offload target copies the buffered data into the posted receive requests and completes the requests by calling the [**NdisTcpOffloadReceiveComplete**](https://msdn.microsoft.com/library/windows/hardware/ff564599) function. If the posted receive requests are not large enough to contain all of the buffered data, the offload target calls the [**NdisTcpOffloadReceiveHandler**](https://msdn.microsoft.com/library/windows/hardware/ff564606) function to indicate the additional buffered data. The offload target must indicate such additional buffered data before indicating any other data that it receives on the connection. For more information about the algorithm that the offload target uses to process received data, see [Delivery Algorithm](delivery-algorithm.md).
 
- 
+ 
 
- 
+ 
 
 
 

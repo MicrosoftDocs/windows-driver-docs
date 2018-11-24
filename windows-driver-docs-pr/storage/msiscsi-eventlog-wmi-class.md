@@ -3,6 +3,7 @@ title: MSiSCSI\_EventLog WMI Class
 description: MSiSCSI\_EventLog WMI Class
 ms.assetid: 8fe6c3fd-bb4f-46ac-a69c-5508467b4c70
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MSiSCSI\_EventLog WMI Class
@@ -10,7 +11,7 @@ ms.localizationpriority: medium
 
 The MSiSCSI\_EventLog WMI class is used to log any iSCSI events to system event logs. This class is defined as follows in *Mgmt.mof.*
 
-```
+```cpp
 class MSiSCSI_Eventlog : __ExtrinsicEvent
 {
     [key] 
@@ -43,9 +44,9 @@ class MSiSCSI_Eventlog : __ExtrinsicEvent
 
 When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_EventLog**](https://msdn.microsoft.com/library/windows/hardware/ff563001) data structure.
 
- 
+ 
 
- 
+ 
 
 
 

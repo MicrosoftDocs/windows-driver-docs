@@ -3,6 +3,7 @@ title: MSiSCSI\_PortalInfoClass WMI Class
 description: MSiSCSI\_PortalInfoClass WMI Class
 ms.assetid: f22c36a9-28be-4de1-9e80-0f0c1bd6473d
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MSiSCSI\_PortalInfoClass WMI Class
@@ -17,7 +18,7 @@ Because this class is associated with a particular instance of a storage minipor
 
 The MSiSCSI\_PortalInfoClass class is defined in *Mgmt.mof*.
 
-```
+```cpp
 class MSiSCSI_PortalInfoClass {
   [read,key] String  InstanceName;
   [read] boolean  Active;
@@ -40,9 +41,9 @@ class MSiSCSI_PortalInfoClass {
 
 When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_PortalInfoClass**](https://msdn.microsoft.com/library/windows/hardware/ff563097) data structure.
 
- 
+ 
 
- 
+ 
 
 
 

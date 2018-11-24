@@ -14,11 +14,7 @@ keywords:
 - GDI WDK Windows 2000 display , curves
 - graphics drivers WDK Windows 2000 display , curves
 - drawing WDK GDI , curves
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,9 +28,9 @@ GDI offers improved definitions of lines and curves. Lines are not required to h
 
 GDI can download regions to be filled in the form of paths, as well as rectangles. Drivers can decompose paths into trapezoids or spans for filling.
 
- 
+ 
 
- 
+ 
 
 
 

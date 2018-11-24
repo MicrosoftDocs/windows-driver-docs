@@ -6,11 +6,7 @@ keywords:
 - monitor configurations WDK display , restore previous
 - monitor configurations WDK display , existing monitors
 - TMM WDK display , existing monitor configurations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,9 +19,9 @@ The following figure shows the flow of operations that occur when TMM restores a
 
 ![diagram illustrating restoring an existing monitor configuration](images/tmm-existconfig.png)
 
- 
+ 
 
- 
+ 
 
 
 

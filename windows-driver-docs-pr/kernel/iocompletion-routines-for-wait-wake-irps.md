@@ -1,14 +1,9 @@
 ---
 title: IoCompletion Routines for Wait/Wake IRPs
-author: windows-driver-content
 description: IoCompletion Routines for Wait/Wake IRPs
 ms.assetid: 61239398-2d37-4163-8128-7a4a0916a262
 keywords: ["receiving wait/wake IRPs", "wait/wake IRPs WDK power management , receiving", "IoCompletion routines"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +29,9 @@ As each successive driver completes the IRP, the I/O manager passes control to t
 
 After calling the *IoCompletion* routines set by drivers as they passed the wait/wake IRP down the device stack, the I/O manager calls the callback routine passed to [**PoRequestPowerIrp**](https://msdn.microsoft.com/library/windows/hardware/ff559734) by the driver that sent the IRP. For further information, see [Wait/Wake Callback Routines](wait-wake-callback-routines.md).
 
- 
+ 
 
- 
+ 
 
 
 

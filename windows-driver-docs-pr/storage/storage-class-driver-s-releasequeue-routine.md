@@ -1,6 +1,5 @@
 ---
 title: Storage Class Driver's ReleaseQueue Routine
-author: windows-driver-content
 description: Storage Class Driver's ReleaseQueue Routine
 ms.assetid: 4d0f74f2-6c98-4de1-bc28-dfff3c01e319
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - queues WDK storage
 - freezing queues WDK storage
 - frozen queues WDK storage
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,9 +37,9 @@ Failing to release a frozen queue makes the device inaccessible, so a driver's *
 
 Note that a class driver's *ReleaseQueue* routine is called asynchronously, generally from its *IoCompletion* routine. A class driver's *IoCompletion* routine cannot call *ReleaseQueue* to flush a queue that is not frozen. However, it can call *ReleaseQueue* to release an unfrozen queue, and the port driver simply ignores such a request.
 
- 
+ 
 
- 
+ 
 
 
 

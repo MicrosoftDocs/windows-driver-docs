@@ -9,11 +9,7 @@ keywords:
 - video substream compositing WDK DirectX VA
 - substream compositing WDK DirectX VA
 - VMR WDK DirectX VA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -45,9 +41,9 @@ The following topics describe how to support **DeinterlaceBltEx**:
 
 [Deinterlacing and Compositing on 64-bit Operating Systems](deinterlacing-and-compositing-on-64-bit-operating-systems.md)
 
- 
+ 
 
- 
+ 
 
 
 

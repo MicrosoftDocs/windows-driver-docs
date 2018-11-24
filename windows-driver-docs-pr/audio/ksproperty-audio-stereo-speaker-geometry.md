@@ -11,11 +11,7 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -51,13 +47,13 @@ The KSPROPERTY\_AUDIO\_STEREO\_SPEAKER\_GEOMETRY property is used in combination
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Pin/Filter</p></td>
-<td align="left"><p>[<strong>KSNODEPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537143)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537143" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537143)"><strong>KSNODEPROPERTY</strong></a></p></td>
 <td align="left"><p>LONG</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is of type LONG and specifies the speaker geometry. This value can be set to one of the following constants, which are defined in header file Ksmedia.h:
 
@@ -121,9 +117,9 @@ Requirements
 
 [**KSNODEPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff537143)
 
- 
+ 
 
- 
+ 
 
 
 

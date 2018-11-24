@@ -8,11 +8,7 @@ keywords:
 - 2D mixing WDK audio
 - pins WDK audio , 2D
 - pins WDK audio , 3D
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,9 +34,9 @@ In summary, if your driver exposes a mixture of 2D and 3D pins, it should follow
 
 These workarounds are unnecessary with later versions of DirectSound. The problem that is described above is fixed in Windows Me and in Windows XP and later. It is also fixed in DirectSound 8, which is redistributed for use with earlier Windows versions. With this fix, your driver can safely combine 2D and 3D pins in a single pin factory and DirectSound will correctly report the 2D- and 3D-pin counts. Also, when DirectSound requires a 2D pin, it uses a 3D pin in place of a 2D pin only when it has exhausted the supply of 2D pins from all pin factories.
 
- 
+ 
 
- 
+ 
 
 
 

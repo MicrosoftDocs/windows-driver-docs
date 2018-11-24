@@ -9,11 +9,7 @@ keywords:
 - negotiation WDK GDI
 - PDEV WDK GDI
 - DrvEnablePDEV
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,9 +33,9 @@ If *DrvStrokePath* is to report an error, it must return DDI\_ERROR.
 
 This kind of negotiation between GDI and the driver, for functions that depend on the PDEV, permits GDI and the driver to produce high quality output without excess communication.
 
- 
+ 
 
- 
+ 
 
 
 

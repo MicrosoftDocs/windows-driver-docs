@@ -4,11 +4,7 @@ description: Using the Device Metadata Authoring Wizard
 ms.assetid: 77809258-C14C-481F-AE6C-07580294EBD8
 keywords:
 - Using the Device Metadata Authoring Wizard
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,11 +22,11 @@ After you launch the **Authoring** tool, the **Welcome to the Metadata Authoring
 -   To update an existing device metadata package, select **Update existing device metadata package**, click **Browse** to select the package, and then click **Next**.
     **Note**  You can't edit Device Stage experiences with the tool. However, the Device Stage folder isn't changed if you update the package by using this tool. For more information about Device Stage, please see [Windows 7 Device Experience](http://go.microsoft.com/fwlink/p/?linkid=221801).
 
-     
+     
 
- 
+ 
 
- 
+ 
 
 
 

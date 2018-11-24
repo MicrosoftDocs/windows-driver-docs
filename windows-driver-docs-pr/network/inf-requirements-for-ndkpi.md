@@ -2,11 +2,7 @@
 title: INF Requirements for NDKPI
 description: The INF file for a miniport driver that supports Network Direct kernel (NDK) must meet the following requirements.
 ms.assetid: 1399CEB8-82A5-4F91-833E-66FC5A5663C7
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -17,7 +13,7 @@ The INF file for a miniport driver that supports Network Direct kernel (NDK) mus
 
 -   The miniport driver's INF file must specify an NDIS upper range value of "ndis5" in order for Windows components to discover and use the NDK-capable miniport adapters that are serviced by the driver. This value is specified as follows:
 
-    ``` syntax
+    ```INF
     HKR, Ndi\Interfaces, UpperRange, 0, "ndis5"
     ```
 
@@ -25,7 +21,7 @@ The INF file for a miniport driver that supports Network Direct kernel (NDK) mus
 
     **Note**   The miniport driver is automatically restarted after a change is made in the **Advanced** property page for the adapter.
 
-    ``` syntax
+    ```INF
     HKR, Ndi\Params\*NetworkDirect,        ParamDesc,  0, "NetworkDirect Functionality"
     HKR, Ndi\Params\*NetworkDirect,        Type,       0, "enum"
     HKR, Ndi\Params\*NetworkDirect,        Default,    0, "1"
@@ -39,7 +35,7 @@ The INF file for a miniport driver that supports Network Direct kernel (NDK) mus
 
     **Note**   The miniport driver is automatically restarted after a change is made in the **Advanced** property page for the adapter.
 
-    ```
+    ```INF
     HKR, Ndi\Params\*NetworkDirectTechnology,        ParamDesc,  0,  "NetworkDirect Technology"
     HKR, Ndi\Params\*NetworkDirectTechnology,        Default,    0,  "0"
     HKR, Ndi\Params\*NetworkDirectTechnology,        Type,       0,  "enum"

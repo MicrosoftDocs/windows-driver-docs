@@ -1,6 +1,5 @@
 ---
 title: IPrinterBidiSchemaResponses AddRequeryKey method
-author: windows-driver-content
 description: The AddRequeryKey method adds a new QueryKey to re-query upon return from the getSchemas call.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
@@ -13,18 +12,18 @@ api_name:
 - IPrinterBidiSchemaResponses.AddRequeryKey
 api_type:
 - COM
+ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # IPrinterBidiSchemaResponses::AddRequeryKey method
-
 
 The AddRequeryKey method adds a new QueryKey to re-query upon return from the getSchemas call.
 
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT AddRequeryKey(
   [in] BSTR   bstrQueryKey
 );
@@ -56,20 +55,11 @@ Requirements
 </tr>
 <tr class="even">
 <td><p>Version</p></td>
-<td><p>Windows 8</p></td>
+<td><p>Windows 8 and later</p></td>
 </tr>
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**IPrinterBidiSchemaResponses**](iprinterbidischemaresponses.md)
-
- 
-
- 
-
-
-
-

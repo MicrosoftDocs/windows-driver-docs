@@ -5,11 +5,7 @@ ms.assetid: 5fb64c9e-1c6d-4a8a-9a8f-7d4ed6d5c301
 keywords:
 - texture sizes WDK Direct3D
 - texture filtering WDK Direct3D
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -49,7 +45,7 @@ The device must be able to apply all supported filter modes to textures of any s
 
 **Note**   DirectX 9.0 and later applications can use values in the D3DSAMPLERSTATETYPE enumeration to control the characteristics of sampler texture-related render states. In DirectX 8.0 and earlier, these sampler states were included in the D3DTEXTURESTAGESTATETYPE enumeration. The runtime maps user-mode sampler states (D3DSAMP\_*Xxx*) to kernel-mode D3DTSS\_*Xxx* values so that drivers are not required to process user-mode sampler states. For more information about D3DSAMPLERSTATETYPE, see the latest DirectX SDK documentation.
 
- 
+ 
 
 ### <span id="idirect3ddevice7_validatedevice"></span><span id="IDIRECT3DDEVICE7_VALIDATEDEVICE"></span>IDirect3DDevice7::ValidateDevice
 
@@ -57,9 +53,9 @@ If a device supports a particular combination of texture stage state blending op
 
 If a device does not support a particular combination of texture stage state blending operations in a single pass, or does not support one or more of the blending operations or operands, then it must return one of the error codes allowable for the **IDirect3DDevice7::ValidateDevice** method. Invalid blending operations cannot silently fail the **IDirect3DDevice7::ValidateDevice** method.
 
- 
+ 
 
- 
+ 
 
 
 

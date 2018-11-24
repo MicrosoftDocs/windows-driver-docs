@@ -1,6 +1,5 @@
 ---
 title: AVStream Allocators
-author: windows-driver-content
 description: AVStream Allocators
 ms.assetid: cda90faa-d4e3-4f17-aa5a-87dcde314bfd
 keywords:
@@ -11,11 +10,7 @@ keywords:
 - buffers WDK AVStream
 - allocating frames WDK AVStream
 - freeing frames WDK AVStream
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -57,9 +52,9 @@ A kernel-mode allocator is only chosen if the connection is in kernel mode. In a
 
 Also see [AVStream DMA Services](avstream-dma-services.md) and [Stream Pointers](stream-pointers.md).
 
- 
+ 
 
- 
+ 
 
 
 

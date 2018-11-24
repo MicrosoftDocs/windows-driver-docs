@@ -6,11 +6,7 @@ keywords:
 - Direct3D version 10.1 WDK Windows 7 display , BGRA scan-out support
 - BGRA scan-out support WDK Windows 7 display
 - scan-out support WDK Windows 7 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +25,9 @@ The scan-out bit is turned on for the DXGI\_FORMAT\_B8G8R8A8\_UNORM and DXGI\_FO
 
 -   Handle calls to its [**BltDXGI**](https://msdn.microsoft.com/library/windows/hardware/ff538252) function to copy these formats through stretch, rotate, and resolve (in fact, all the bitblt operations that are expected for the RGBA variants).
 
- 
+ 
 
- 
+ 
 
 
 

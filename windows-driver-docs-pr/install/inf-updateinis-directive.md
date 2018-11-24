@@ -10,11 +10,7 @@ api_name:
 - INF UpdateInis Directive
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,11 +19,11 @@ ms.localizationpriority: medium
 
 **Note**  If you are building a universal or mobile driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
- 
+ 
 
 An **UpdateInis** directive references one or more named sections, specifying an INI file from which a particular section or line is to be read and applied to an existing INI file of the same name on the target computer. Optionally, line-by-line modifications from and to such INI files can be specified in the *update-ini-section*.
 
-```
+```cpp
 [DDInstall] | 
 [DDInstall.CoInstallers] | 
 [ClassInstall32] | 
@@ -42,7 +38,7 @@ This directive is almost never specified in INF files for installation on Window
 
 Each named section referenced by an **UpdateInis** directive has the following form:
 
-```
+```cpp
 [update-ini-section]
  
 ini-file,ini-section[,old-ini-entry][,new-ini-entry][,flags]
@@ -63,11 +59,11 @@ Specifies the name of the section within the given INI file. If the next two val
 <a href="" id="old-ini-entry"></a>*old-ini-entry*  
 This optional value specifies the name of an entry in the given *ini-section*, usually expressed in the following form:
 
-```
+```cpp
 "key=value"
 ```
 
-Either or both of *key* and *value* can be expressed as %*strkey*% tokens defined in a **Strings** section of the INF file. The asterisk (**\***) can be specified as a wild-card for either the *key* or the *value*.
+Either or both of *key* and *value* can be expressed as %*strkey*% tokens defined in a **Strings** section of the INF file. The asterisk (**\\**<em>) can be specified as a wild-card for either the *key</em> or the *value*.
 
 <a href="" id="new-ini-entry"></a>*new-ini-entry*  
 This optional value specifies either a change to a given *old-ini-entry* or the addition of a new entry. This value can be expressed in the same manner as *old-ini-entry*.
@@ -117,7 +113,7 @@ This optional value controls the interpretation of the given *old-ini-entry* and
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -160,9 +156,9 @@ Any *filename* specified within an *old-ini-entry* or *new-ini-entry* should des
 
 [**Version**](inf-version-section.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,13 +1,8 @@
 ---
 title: JavaScript Constraints
-author: windows-driver-content
 description: The v4 printer driver model supports extended constraint and PrintTicket handling derived from the v3 IPrintOemPrintTicketProvider interface.
 ms.assetid: CD2EF726-CF0F-4BB6-9F41-794699568F17
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -18,7 +13,7 @@ The v4 printer driver model supports a new model for extended constraint and Pri
 
 Instead of using a compiled configuration plug-in however, v4 printer drivers use JavaScript to implement APIs called JavaScript constraints, and the printer driver can implement one or more of them as needed. For more information, see the functions in the **JavaScript Constraint APIs** section at the end of this topic.
 
-JavaScript constraints can be used to augment PrintCapabilties, validate PrintTickets and handle conversion of PrintTicket to DEVMODE and vice versa. However, JavaScript constraints have a few limitations. The following is a list of the main limitations:
+JavaScript constraints can be used to augment PrintCapabilities, validate PrintTickets and handle conversion of PrintTicket to DEVMODE and vice versa. However, JavaScript constraints have a few limitations. The following is a list of the main limitations:
 
 -   Features and options added using CompletePrintCapabilities, as well as constraints specified in validatePrintTicket are not shown in the desktop printer preferences window.
 
@@ -47,17 +42,17 @@ Interactive debugging can be enabled by creating the following registry key:
 
 **Value:** 1
 
-However, since *PrintConfig.dll* is loaded and unloaded frequently, debugging an app that prints is not a recommended testing/debugging strategy. Instead, Microsoft recommends that manufacturers build a test app that calls each of the relevant entry points for JavaScript constraints using these public APIs: [PTGetPrintCapabilities](http://msdn.microsoft.com/library/windows/desktop/dd162881.aspx), [PTConvertDevModeToPrintTicket](http://msdn.microsoft.com/library/windows/desktop/dd162879.aspx), [PTConvertPrintTicketToDevMode](http://msdn.microsoft.com/library/windows/desktop/dd162880.aspx), and [PTMergeAndValidatePrintTicket](http://msdn.microsoft.com/library/windows/desktop/dd162884.aspx).
+However, since *PrintConfig.dll* is loaded and unloaded frequently, debugging an app that prints is not a recommended testing/debugging strategy. Instead, Microsoft recommends that manufacturers build a test app that calls each of the relevant entry points for JavaScript constraints using these public APIs: [PTGetPrintCapabilities](https://msdn.microsoft.com/library/windows/desktop/dd162881.aspx), [PTConvertDevModeToPrintTicket](https://msdn.microsoft.com/library/windows/desktop/dd162879.aspx), [PTConvertPrintTicketToDevMode](https://msdn.microsoft.com/library/windows/desktop/dd162880.aspx), and [PTMergeAndValidatePrintTicket](https://msdn.microsoft.com/library/windows/desktop/dd162884.aspx).
 
 The test app alone is sufficient to enable debugging, but it is also beneficial to add unit tests to ensure that the whole driver is handling PrintTicket, PrintCapabilities and constraints as expected. For more information on how to build Unit tests in Visual Studio, please see the following topics:
 
-[A Unit Testing Walkthrough with Visual Studio Team Test](http://msdn.microsoft.com/library/ms379625.aspx)
+[A Unit Testing Walkthrough with Visual Studio Team Test](https://msdn.microsoft.com/library/ms379625.aspx)
 
 [Unit Testing with Microsoft Visual Studio 2010 and Team Foundation Server](http://channel9.msdn.com/Events/TechEd/Australia/2010/DEV362)
 
 After the registry key shown in the preceding text is created, and the hosting process has been restarted, you can debug your JavaScript source file.
 
-It is important to note that if the source file fails to parse, then the debugger is not invoked and it will seem as if the debug environment has failed. If the source file fails to parse, see [Windows Script Host](http://msdn.microsoft.com/library/9bbdkx3k.aspx) for more information about how to proceed.
+It is important to note that if the source file fails to parse, then the debugger is not invoked and it will seem as if the debug environment has failed. If the source file fails to parse, see [Windows Script Host](https://msdn.microsoft.com/library/9bbdkx3k.aspx) for more information about how to proceed.
 
 If there are no errors and your source file is parsed successfully, debug your source file as follows:
 
@@ -102,7 +97,7 @@ This API is called in order to validate that a PrintTicket object is valid for a
 
 Syntax
 
-```JavaScript
+```javascript
 function validatePrintTicket(printTicket, scriptContext)
 ```
 
@@ -118,11 +113,11 @@ Return value
 
 | Return value | Description                                                                                                                                                                                                |
 |--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 0            | Indicates that the *printTicket* parameter was invalid and could not be corrected. Equivalent to [E\_PRINTTICKET\_FORMAT](http://msdn.microsoft.com/library/windows/desktop/dd162884.aspx). |
-| 1            | Indicates that the *printTicket* parameter is a valid PrintTicket for this printer. Equivalent to [S\_PT\_NO\_CONFLICT](http://msdn.microsoft.com/library/windows/desktop/dd162884.aspx).   |
-| 2            | Indicates that the *printTicket* parameter was modified to make it valid. Equivalent to [S\_PT\_CONFLICT\_RESOLVED](http://msdn.microsoft.com/library/windows/desktop/dd162884.aspx).       |
+| 0            | Indicates that the *printTicket* parameter was invalid and could not be corrected. Equivalent to [E\_PRINTTICKET\_FORMAT](https://msdn.microsoft.com/library/windows/desktop/dd162884.aspx). |
+| 1            | Indicates that the *printTicket* parameter is a valid PrintTicket for this printer. Equivalent to [S\_PT\_NO\_CONFLICT](https://msdn.microsoft.com/library/windows/desktop/dd162884.aspx).   |
+| 2            | Indicates that the *printTicket* parameter was modified to make it valid. Equivalent to [S\_PT\_CONFLICT\_RESOLVED](https://msdn.microsoft.com/library/windows/desktop/dd162884.aspx).       |
 
- 
+ 
 
 ## completePrintCapabilities function
 
@@ -131,7 +126,7 @@ This API is called to allow the PrintCapabilities object to be modified. This sh
 
 Syntax
 
-```JavaScript
+```javascript
 function completePrintCapabilities(printTicket, scriptContext, printCapabilities)
 ```
 
@@ -157,7 +152,7 @@ This API is called to convert values from the DEVMODE property bag into a PrintT
 
 Syntax
 
-```JavaScript
+```javascript
 function convertDevModeToPrintTicket(devModeProperties, scriptContext, printTicket)
 ```
 
@@ -183,7 +178,7 @@ This API is called to convert values from a PrintTicket into the DEVMODE propert
 
 Syntax
 
-```JavaScript
+```javascript
 function convertPrintTicketToDevMode(printTicket, scriptContext, devModeProperties)
 ```
 
@@ -213,9 +208,9 @@ If a driver does not utilize JavaScript constraints, there is no requirement tha
 
 For more information about how to use JavaScript constraints, see the [Print driver constraints sample](http://go.microsoft.com/fwlink/p/?LinkId=617946).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -11,11 +11,7 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
-ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 09/10/2018
 ms.localizationpriority: medium
 ---
 
@@ -24,7 +20,7 @@ ms.localizationpriority: medium
 
 **KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FACEAUTH\_MODE** is a property ID that is used to turn on and off face authentication.
 
-### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
+### Usage Summary Table
 
 <table>
 <colgroup>
@@ -48,11 +44,11 @@ ms.localizationpriority: medium
 </tbody>
 </table>
 
- 
+ 
 
 The following bit flags control face authentication in the driver:
 
-``` syntax
+```cpp
 #define KSCAMERA_EXTENDEDPROP_FACEAUTH_MODE_DISABLED                        0x0000000000000001
 #define KSCAMERA_EXTENDEDPROP_FACEAUTH_MODE_ALTERNATIVE_FRAME_ILLUMINATION  0x0000000000000002
 #define KSCAMERA_EXTENDEDPROP_FACEAUTH_MODE_BACKGROUND_SUBTRACTION          0x0000000000000004
@@ -90,7 +86,7 @@ The following table describes the flag capabilities:
 </tbody>
 </table>
 
- 
+ 
 
 By default, the driver should have **KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FACEAUTH\_MODE** set to **KSCAMERA\_EXTENDEDPROP\_FACEAUTH\_MODE\_DISABLED** if it is a general purpose IR camera. Otherwise it should be set to **KSCAMERA\_EXTENDEDPROP\_FACEAUTH\_MODE\_BACKGROUND\_SUBTRACTION** or **KSCAMERA\_EXTENDEDPROP\_FACEAUTH\_MODE\_ALTERNATIVE\_FRAME\_ILLUMINATION**.
 
@@ -98,7 +94,7 @@ IR cameras should advertise **KSCAMERA\_EXTENDEDPROP\_FACEAUTH\_MODE\_DISABLED**
 
 IR cameras used for face login should support either **KSCAMERA\_EXTENDEDPROP\_FACEAUTH\_MODE\_ALTERNATIVE\_FRAME\_ILLUMINATION** or **KSCAMERA\_EXTENDEDPROP\_FACEAUTH\_MODE\_BACKGROUND\_SUBTRACTION** capability they should only support one of these flags not both.
 
-The following table contains the descriptions and requirements for the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/dn925136) structure fields when using the control.
+The following table contains the descriptions and requirements for the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure fields when using the control.
 
 <table>
 <colgroup>
@@ -122,7 +118,7 @@ The following table contains the descriptions and requirements for the [**KSCAME
 </tr>
 <tr class="odd">
 <td><p>Size</p></td>
-<td><p>This must be <strong>sizeof</strong>(<strong>KSCAMERA_EXTENDEDPROP_HEADER</strong>) + <strong>sizeof</strong>([<strong>KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING</strong>](https://msdn.microsoft.com/library/windows/hardware/dn567566)).</p></td>
+<td><p>This must be <strong>sizeof</strong>(<strong>KSCAMERA_EXTENDEDPROP_HEADER</strong>) + <strong>sizeof</strong>(<a href="https://msdn.microsoft.com/library/windows/hardware/dn567566" data-raw-source="[&lt;strong&gt;KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn567566)"><strong>KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING</strong></a>).</p></td>
 </tr>
 <tr class="even">
 <td><p>Result</p></td>
@@ -140,7 +136,7 @@ The following table contains the descriptions and requirements for the [**KSCAME
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -157,12 +153,3 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
-
-

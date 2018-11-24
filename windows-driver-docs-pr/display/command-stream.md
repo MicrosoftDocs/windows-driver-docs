@@ -6,11 +6,7 @@ keywords:
 - Direct3D WDK Windows 2000 display , operation codes
 - operation codes WDK Direct3D
 - command stream WDK Direct3D
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +22,9 @@ In other words, the D3DHAL\_DP2OPERATION operation code specifies what type of s
 
 For an example of how a driver process operation codes, see [Processing Texture Stages](processing-texture-stages.md).
 
- 
+ 
 
- 
+ 
 
 
 

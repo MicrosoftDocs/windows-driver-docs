@@ -1,13 +1,8 @@
 ---
 title: WDI_TLV_P2P_LISTEN_CHANNEL
-author: windows-driver-content
 description: WDI_TLV_P2P_LISTEN_CHANNEL is a TLV that contains Wi-Fi Direct channel information.
 ms.assetid: 45D1B507-C02B-432B-A552-78F2539ECE68
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_LISTEN_CHANNEL Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -37,7 +32,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | UINT8                         | The operating class/frequency band for the channel number.                         |
 | WDI\_CHANNEL\_NUMBER (UINT32) | The channel number for the Wi-Fi Direct Device or Group.                           |
 
- 
+ 
 
 Requirements
 ------------
@@ -63,9 +58,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

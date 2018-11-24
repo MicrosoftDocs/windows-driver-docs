@@ -3,11 +3,7 @@ title: ndiskd.ifprovider
 description: The ndiskd.ifprovider extension displays information about an NDIS interface provider (IfProvider). 
 ms.assetid: 89C406E5-81D3-42AA-BA15-3D7C093BCD3C
 keywords: ["ndiskd.ifprovider Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!ndiskd.ifprovider** extension displays information about an [NDIS interface provider](https://msdn.microsoft.com/windows/hardware/drivers/network/registering-as-an-interface-provider) (IfProvider). If you run this extension with no parameters, !ndiskd will display a list of all registered NDIS interface providers.
 
-```
+```console
 !ndiskd.ifprovider [-handle <x>] 
 ```
 
@@ -41,7 +37,7 @@ Examples
 
 Run the **!ndiskd.ifprovider** extension with no parameters to get a list of all registered IfProviders.
 
-```
+```console
 1: kd> !ndiskd.ifprovider
     IfProvider                                                                  
     ffffd20d14334180 - wanarp
@@ -54,11 +50,11 @@ You can see from the previous example that the debugee machine has four interfac
 
 **Note**  Interface providers are a generic concept and aren't required to be miniport drivers. While a miniport driver may choose to register as an interface provider if desired, most miniport drivers do not do so because NDIS has a built-in interface provider. The NDIS built-in interface provider automatically provides interfaces for every miniport driver, every Light-Weight Filter (LWF) module, and the loopback interface. For more information, see [NDIS interface provider](https://msdn.microsoft.com/windows/hardware/drivers/network/registering-as-an-interface-provider).
 
- 
+ 
 
 The following example shows the details for the "wanarp" interface provider in the previous example, whose handle is ffffd20d14334180.
 
-```
+```console
 1: kd> !ndiskd.ifprovider ffffd20d14334180
 
 
@@ -96,9 +92,9 @@ HANDLERS
 
 [Registering as an Interface Provider](https://msdn.microsoft.com/windows/hardware/drivers/network/registering-as-an-interface-provider)
 
- 
+ 
 
- 
+ 
 
 
 

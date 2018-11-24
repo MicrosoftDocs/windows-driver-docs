@@ -12,6 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # GUID_61883_CLASS
@@ -42,7 +43,7 @@ The GUID_61883_CLASS [device interface class](https://msdn.microsoft.com/library
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -76,9 +77,9 @@ Requirements
 
 [**BUS1394_CLASS_GUID**](bus1394-class-guid.md)
 
- 
+ 
 
- 
+ 
 
 
 

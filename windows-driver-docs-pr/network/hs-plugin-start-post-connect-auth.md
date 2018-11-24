@@ -1,15 +1,10 @@
 ---
 title: HS_PLUGIN_START_POST_CONNECT_AUTH function
-author: windows-driver-content
 description: The HS_PLUGIN_START_POST_CONNECT_AUTH function is called to perform any post-connect authentication required to authenticate the device over the network.
 ms.assetid: f52236fc-2afd-46e2-ae88-7c4fa10f8d59
 keywords: 
 - typedef DWORD (WINAPI HS_PLUGIN_START_POST_CONNECT_AUTH) function Network Drivers Starting with Windows Vista
-ms.author: windowsdriverdev
-ms.date: 07/31/2017 
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 07/31/2017
 ms.localizationpriority: medium
 ---
 
@@ -94,9 +89,9 @@ Requirements
 
 [**HS\_NETWORK\_PROFILE**](hs-network-profile.md)
 
- 
+ 
 
- 
+ 
 
 
 

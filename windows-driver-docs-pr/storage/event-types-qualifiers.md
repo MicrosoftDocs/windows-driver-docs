@@ -3,6 +3,7 @@ title: EVENT\_TYPES\_QUALIFIERS
 description: EVENT\_TYPES\_QUALIFIERS
 ms.assetid: 528e5eaa-aaeb-4e5b-a4b2-0f518fcd79ee
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # EVENT\_TYPES\_QUALIFIERS
@@ -96,13 +97,13 @@ The EVENT\_TYPES\_QUALIFIERS WMI class qualifier contains a list of the types of
 </tbody>
 </table>
 
- 
+ 
 
 By including *Hbaapi.h* your software will have access to a series of symbolic constants that correspond to the type names in the previous table. The definitions for these symbolic constants is not included in *Hbapiwmi.h* (the file that the WMI tool suite generates when it compiles).
 
- 
+ 
 
- 
+ 
 
 
 

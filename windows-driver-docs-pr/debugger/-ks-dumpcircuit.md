@@ -3,11 +3,7 @@ title: ks.dumpcircuit
 description: The ks.dumpcircuit extension lists details of the transport circuit associated with the given object.
 ms.assetid: 34e6fa0f-7479-4616-ba7e-f2b12ccc836d
 keywords: ["ks.dumpcircuit Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!ks.dumpcircuit** extension lists details of the transport circuit associated with the given object.
 
-```
+```dbgcmd
 !ks.dumpcircuitextension Object [Level] 
 ```
 
@@ -56,7 +52,7 @@ Optional. Specifies the level of detail to display on a 0-7 scale with progressi
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -71,15 +67,15 @@ You can first use [**!ks.graph**](-ks-graph.md) with a filter address to list pi
 
 Here is an example of the **!ks.dumpcircuit** display:
 
-```
+```dbgcmd
 kd> !dumpcircuit 8293f4f0
 Pin8293f4f0 0 (snk, out)
 Queue82990e20 r/w/c=2489/2/0
 ```
 
- 
+ 
 
- 
+ 
 
 
 

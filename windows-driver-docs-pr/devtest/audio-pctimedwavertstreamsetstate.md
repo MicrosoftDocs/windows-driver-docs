@@ -2,11 +2,7 @@
 title: PcTimedWaveRtStreamSetState rule (audio)
 description: The PcTimedWaveRtStreamSetState rule specifies that a ProtCls miniport driver makes state transitions through IMiniportWaveRTStream SetState within the required time.
 ms.assetid: D49869E0-9108-460B-8FA3-4FD99C3EA81E
-ms.author: windowsdriverdev
 ms.date: 05/21/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: ["PcTimedWaveRtStreamSetState rule (audio)"]
 topic_type:
 - apiref
@@ -47,16 +43,16 @@ How to test
 <td align="left"><p>To verify this rule, open a Command Prompt window. Enter a Driver Verifier command and specify <strong>/domain audio</strong>.</p>
 <p>For example:</p>
 <p><strong>verifier /domain audio</strong> [<em>options</em>] <strong>/driver</strong> <em>&lt;yourdriver&gt;</em></p>
-<p>For more information, see [Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff545448).</p></td>
+<p>For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff545448" data-raw-source="[Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff545448)">Driver Verifier</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

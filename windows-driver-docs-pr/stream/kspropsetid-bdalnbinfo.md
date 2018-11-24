@@ -2,11 +2,7 @@
 title: KSPROPSETID\_BdaLNBInfo
 description: KSPROPSETID\_BdaLNBInfo
 ms.assetid: 2b385e93-2d0d-44ca-9cfc-58afea946db6
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,19 +25,19 @@ Informs the RF tuner node about the LOF that is used by the LNB for shifting the
 <span id="KSPROPERTY_BDA_LNB_SWITCH_FREQUENCY"></span><span id="ksproperty_bda_lnb_switch_frequency"></span>[**KSPROPERTY\_BDA\_LNB\_SWITCH\_FREQUENCY**](ksproperty-bda-lnb-switch-frequency.md)  
 Informs the RF tuner node about the frequency of incoming RF signals at which the tuner should inform the LNB device to switch from using low-band LOF to using high-band LOF or vice versa.
 
-### <span id="comments"></span><span id="COMMENTS"></span>Comments
+### Comments
 
 The LNB is the device at the focal point of a satellite dish. The LNB gathers the signal reflected by the dish and sends it to the RF tuner's LNB amplifier.
 
 The KSPROPSETID\_BdaLNBInfo property set communicates information about a satellite dish's LNB device to an RF tuner. When a client sends a [**KSPROPERTY\_BDA\_RF\_TUNER\_FREQUENCY**](ksproperty-bda-rf-tuner-frequency.md) request to tune an RF tuner to a specific frequency, the tuner can send, if required, control signals to the LNB device to adjust internal parameters according to the properties of the LNB.
 
-### <span id="see_also"></span><span id="SEE_ALSO"></span>See Also
+### See Also
 
 [**KSPROPERTY\_BDA\_RF\_TUNER\_FREQUENCY**](ksproperty-bda-rf-tuner-frequency.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: IoSpy and IoAttack
 description: IoSpy and IoAttack
 ms.assetid: 4cc5bf5c-f9e4-43d4-8532-dd7813b6f2a0
-ms.author: windowsdriverdev
 ms.date: 07/10/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,7 +38,7 @@ IoSpy and IoAttack are supported on systems that run Windows Vista or later vers
 
 **Important**   IoSpy and IoAttack should be run on test systems that have been previously prepared for kernel-mode debugging.
 
- 
+ 
 
 This section includes the following topics:
 
@@ -52,9 +48,9 @@ This section includes the following topics:
 
 [How to Perform Fuzz tests with IoSpy and IoAttack](how-to-perform-fuzz-tests-with-iospy-and-ioattack.md)
 
- 
+ 
 
- 
+ 
 
 
 

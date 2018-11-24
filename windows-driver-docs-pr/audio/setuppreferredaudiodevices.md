@@ -2,11 +2,7 @@
 title: SetupPreferredAudioDevices
 description: SetupPreferredAudioDevices
 ms.assetid: cc6b7da4-335d-4629-ba54-32aa32a1eb09
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,7 +34,7 @@ When upgrading or reinstalling the driver for a device that has already been ins
 
 The following example is a part of an INF file that shows how to use the SetupPreferredAudioDevices keyword:
 
-```
+```inf
   AddReg = XYZ-Audio-Device.AddReg
   ...
   [XYZ-Audio-Device.AddReg]
@@ -49,9 +45,9 @@ The directive at the end of the example specifies that the device named "XYZ-Aud
 
 With the current implementation of the SetupPreferredAudioDevices keyword in Windows Vista, any audio endpoint with its *dword-value* set to an odd number can be set as the default device. To make sure that the correct endpoint is set as the default device, make sure that the KS filter that contains the relevant endpoint is exposed last. You have to do this because of the algorithm that the AudioEndpointBuilder service uses to populate property stores and setting default devices.
 
- 
+ 
 
- 
+ 
 
 
 

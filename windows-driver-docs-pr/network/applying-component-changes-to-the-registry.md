@@ -6,11 +6,7 @@ keywords:
 - notify objects WDK networking , registry values
 - network notify objects WDK , registry values
 - registry WDK notify objects
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,9 +28,9 @@ To open and retrieve a component's registry key to modify information about the 
 
 For more information about the registry, writing data to it, and retrieving data from it, see the Microsoft Windows SDK.
 
- 
+ 
 
- 
+ 
 
 
 

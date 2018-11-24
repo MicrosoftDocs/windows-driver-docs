@@ -1,13 +1,8 @@
 ---
 title: WIA-TWAIN Risks
-author: windows-driver-content
 description: WIA-TWAIN Risks
 ms.assetid: f202a0f6-ceec-4658-a499-b3024f6ebb71
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +24,9 @@ When you write your driver, verify incoming values so only valid data is sent to
 
 For the proper validation sequence when using **IStiUSD::Escape**, see [Using the IStiUSD Escape Method](using-the-istiusd-escape-method.md). For additional information about proper locking, see [Locking and Unlocking Best Practices](locking-and-unlocking-best-practices.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,11 +3,7 @@ title: usbkd._ehciep
 description: The usbkd._ehciep command displays information from a usbehci _ENDPOINT_DATA structure. Use this command to display information about asynchronous endpoints (that is, control and bulk endpoints).
 ms.assetid: 0DA42FDD-41D6-4234-9D9C-36872F0CE0C1
 keywords: ["usbkd._ehciep Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!usbkd.\_ehciep** command displays information from a **usbehci!\_ENDPOINT\_DATA** structure. Use this command to display information about asynchronous endpoints (that is, control and bulk endpoints).
 
-```
+```dbgcmd
 !usbkd._ehciep StructAddr
 ```
 
@@ -42,7 +38,7 @@ Examples
 
 This example shows one way to get the address of a **usbehci!\_ENDPOINT\_DATA** structure. Start with the [**!usb2tree**](-usbkd-usb2tree.md) command.
 
-```
+```dbgcmd
 0: kd> !usbkd.usb2tree
 ...
 2)!ehci_info ffffe0000206e1a0 !devobj ffffe0000206e050 PCI: VendorId 8086 DeviceId 293c RevisionId 0002 
@@ -56,7 +52,7 @@ This example shows one way to get the address of a **usbehci!\_ENDPOINT\_DATA** 
 
 In the preceding output, the address of the device extension of the FDO is displayed as the argument of the [DML](debugger-markup-language-commands.md) command **!ehci\_info ffffe0000206e1a0**. Either click the DML command or pass the address of the device extension to [**!usbhcdext**](https://msdn.microsoft.com/library/windows/hardware/dn367072).
 
-```
+```dbgcmd
 0: kd> !usbkd.usbhcdext ffffe0000206e1a0
 ...
 DeviceHandleList: !usblist ffffe0000206f3b8, DL 
@@ -67,7 +63,7 @@ GlobalEndpointList: !usblist ffffe0000206f388, EP
 
 The preceding output displays the command **!usblist ffffe0000206f388, EP**. Use this command to display a list of endpoints.
 
-```
+```dbgcmd
 0: kd> !usblist ffffe0000206f388, EP 
 list: ffffe0000206f388 EP
 ...
@@ -80,7 +76,7 @@ Device Address: 0x01, ep 0x81 Bulk In Flags: 00000041 dt _USB_ENDPOINT_FLAGS fff
 
 In the preceding output, `ffffe000026dcc38` is the address of a **usbehci!\_ENDPOINT\_DATA** structure. Pass this address to **!\_ehciep**.
 
-```
+```dbgcmd
 0: kd> !usbkd._ehciep ffffe000026dcc38
 *USBEHCI
 dt usbehci!_ENDPOINT_DATA ffffe000026dcc38
@@ -120,11 +116,11 @@ slot[0] dt usbehci!_ENDPOINT_SLOT ffffe000026dcdb8 - slot_NotBusy
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](http://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
- 
+ 
 
- 
+ 
 
 
 

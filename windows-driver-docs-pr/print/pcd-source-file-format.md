@@ -1,6 +1,5 @@
 ---
 title: PCD Source File Format
-author: windows-driver-content
 description: PCD Source File Format
 ms.assetid: 8651d6ca-7cd7-4c07-aa66-2766dd2222e0
 keywords:
@@ -10,11 +9,7 @@ keywords:
 - PCD files WDK MSPlot
 - .pcd files
 - keywords WDK MSPlot
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,7 +25,7 @@ All plotter device characteristics are specified using the following format:
 
 where *keyword* is one of the PCD source file keywords and *value* is a quoted string or numeric value. For example, the following statement specifies that the plotter supports color:
 
-```
+```cpp
 ColorCap {1}
 ```
 
@@ -64,7 +59,7 @@ Keywords are described in the following table.
 </tr>
 <tr class="odd">
 <td><p><strong>COLORINFO</strong></p></td>
-<td><p>Thirty DWORD-sized values representing the contents of a [<strong>COLORINFO</strong>](https://msdn.microsoft.com/library/windows/hardware/ff539441) structure.</p></td>
+<td><p>Thirty DWORD-sized values representing the contents of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff539441" data-raw-source="[&lt;strong&gt;COLORINFO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff539441)"><strong>COLORINFO</strong></a> structure.</p></td>
 <td><p></p>
 {
 {6810,3050,0}, // xr, yr, Yr
@@ -96,7 +91,7 @@ Keywords are described in the following table.
 </tr>
 <tr class="even">
 <td><p><strong>DevicePelsDPI</strong></p></td>
-<td><p>One DWORD-sized value representing the device's effective DPI. For more information see the <strong>upDevicePelsDPI</strong> member of [<strong>GDIINFO</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566484).</p></td>
+<td><p>One DWORD-sized value representing the device&#39;s effective DPI. For more information see the <strong>upDevicePelsDPI</strong> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff566484" data-raw-source="[&lt;strong&gt;GDIINFO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566484)"><strong>GDIINFO</strong></a>.</p></td>
 <td><p>The default is zero, causing GDI to calculate a value.</p></td>
 </tr>
 <tr class="odd">
@@ -119,7 +114,7 @@ Keywords are described in the following table.
 </tr>
 <tr class="even">
 <td><p><strong>InitString</strong></p></td>
-<td><p>Quoted C-language string representing commands sent to the printer by the driver's [<strong>DrvStartPage</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556298) function.</p></td>
+<td><p>Quoted C-language string representing commands sent to the printer by the driver&#39;s <a href="https://msdn.microsoft.com/library/windows/hardware/ff556298" data-raw-source="[&lt;strong&gt;DrvStartPage&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556298)"><strong>DrvStartPage</strong></a> function.</p></td>
 <td><p>NULL string.</p></td>
 </tr>
 <tr class="odd">
@@ -168,7 +163,7 @@ Keywords are described in the following table.
 </tr>
 <tr class="odd">
 <td><p><strong>PlotDPI</strong></p></td>
-<td><p>Two DWORD-sized values representing a pen plotter's <em>x</em> and <em>y</em> resolution, in dots per inch.</p></td>
+<td><p>Two DWORD-sized values representing a pen plotter&#39;s <em>x</em> and <em>y</em> resolution, in dots per inch.</p></td>
 <td><p></p>
 {1016,
 1016}</td>
@@ -258,17 +253,17 @@ Keywords are described in the following table.
 </tbody>
 </table>
 
- 
+ 
 
 ### <a href="" id="ddk-pen-descriptions-gg"></a>Pen Descriptions
 
 Each pen description must have the following format:
 
-**PlotPenData {***Pen Number***,** *Color***}**
+**PlotPenData {**<em>Pen Number</em>**,** <em>Color</em>**}**
 
 where *Pen Number* identifies the pen's slot number and *Color* is a PC\_IDX\_-prefixed color identifier. Following are example pen descriptions:
 
-```
+```cpp
 PlotPenData {1, PC_IDX_WHITE}
 PlotPenData {2, PC_IDX_BLACK}
 PlotPenData {3, PC_IDX_RED}
@@ -278,19 +273,19 @@ PlotPenData {3, PC_IDX_RED}
 
 Each form description must have the following format:
 
-**FormInfo {"***Form Description***",** *Width***,** *Length***,** *Left Margin***,** *Top Margin***,** *Right Margin***,** *Bottom Margin***}**
+**FormInfo {"**<em>Form Description</em>**",** <em>Width</em>**,** <em>Length</em>**,** <em>Left Margin</em>**,** <em>Top Margin</em>**,** <em>Right Margin</em>**,** <em>Bottom Margin</em>**}**
 
 where *Form Description* is a string describing the form, *Width* and *Length* specify the form size in 1/1000 mm units, and the margins are also specified in 1/1000 mm units. Following are three examples:
 
-```
+```cpp
 FormInfo {"Roll Paper 24 in",    609600,      0, 0, 0, 0, 0}
 FormInfo {"ANSI A 8.5 x 11 in",  215900, 279400, 0, 0, 0, 0}
 FormInfo {"ISO A4 210 x 297 mm", 210000, 297000, 0, 0, 0, 0}
 ```
 
- 
+ 
 
- 
+ 
 
 
 

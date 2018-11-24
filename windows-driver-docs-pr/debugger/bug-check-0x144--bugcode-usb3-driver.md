@@ -3,11 +3,7 @@ title: Bug Check 0x144 BUGCODE_USB3_DRIVER
 description: The BUGCODE_USB3_DRIVER bug check has a value of 0x00000144. This is the code used for all USB 3 bug checks.
 ms.assetid: 39414287-3E20-405B-846A-B7F9F8AEE078
 keywords: ["Bug Check 0x144 BUGCODE_USB3_DRIVER", "BUGCODE_USB3_DRIVER"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **BUGCODE\_USB3\_DRIVER** bug check has a value of 0x00000144. This is the code used for all USB 3 bug checks. Parameter 1 specifies the type of the USB 3 bug check, and the meanings of the other parameters are dependent on Parameter 1.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## BUGCODE\_USB3\_DRIVER Parameters
 
@@ -49,7 +45,7 @@ The **BUGCODE\_USB3\_DRIVER** bug check has a value of 0x00000144. This is the c
 <td align="left"><p>0x1</p></td>
 <td align="left"><p>Optional. Pointer to the IRP used to resend the URB</p></td>
 <td align="left"><p>Pointer to the URB</p></td>
-<td align="left"><p>Pointer to the client driver's device object</p></td>
+<td align="left"><p>Pointer to the client driver&#39;s device object</p></td>
 <td align="left"><p>A client driver used an URB that it had previously sent to the core stack.</p></td>
 </tr>
 <tr class="even">
@@ -63,64 +59,64 @@ The **BUGCODE\_USB3\_DRIVER** bug check has a value of 0x00000144. This is the c
 <td align="left"><p>0x3</p></td>
 <td align="left"><p>Optional. Pointer to the IRP used to send the URB</p></td>
 <td align="left"><p>Pointer to the corrupted URB</p></td>
-<td align="left"><p>Pointer to the client driver's device object</p></td>
+<td align="left"><p>Pointer to the client driver&#39;s device object</p></td>
 <td align="left"><p>A client driver sent a corrupted URB to the core stack. This can happen because the client driver did not allocate the URB using <strong>USBD_<em>xxx</em>UrbAllocate</strong> or because the client driver did a buffer underrun for the URB.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x800</p></td>
 <td align="left"><p>IRQL at which the Open Static Streams request was sent</p></td>
 <td align="left"><p>Pointer to the Open Static Streams IRP</p></td>
-<td align="left"><p>Pointer to the client driver's device object</p></td>
+<td align="left"><p>Pointer to the client driver&#39;s device object</p></td>
 <td align="left"><p>An Open Static Streams request was sent at IRQL &gt; PASSIVE LEVEL.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x801</p></td>
 <td align="left"><p>Pointer to the Open Static Streams IRP</p></td>
 <td align="left"><p>Pointer to the Open Static Streams URB</p></td>
-<td align="left"><p>Pointer to the client driver's device object</p></td>
+<td align="left"><p>Pointer to the client driver&#39;s device object</p></td>
 <td align="left"><p>A client driver attempted to open static streams before querying for streams capability. A client driver cannot open a static stream until after it successfully queries for the streams capability. For more information, see Remarks.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x802</p></td>
 <td align="left"><p>Number of static streams that the client driver tried to open</p></td>
 <td align="left"><p>Number of static streams that were granted to the client driver</p></td>
-<td align="left"><p>Pointer to the client driver's device object</p></td>
+<td align="left"><p>Pointer to the client driver&#39;s device object</p></td>
 <td align="left"><p>A Client driver tried to open an invalid number of static streams. The number of streams cannot be 0 and cannot be greater than the value returned to the client driver in the query USB capability call.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x803</p></td>
 <td align="left"><p>Pointer to the Open Static Streams IRP</p></td>
 <td align="left"><p>Pointer to the Open Static Streams URB</p></td>
-<td align="left"><p>Pointer to the client driver's device object</p></td>
+<td align="left"><p>Pointer to the client driver&#39;s device object</p></td>
 <td align="left"><p>A client driver attempted to open static streams for an endpoint that already had static streams open. Before opening static streams, the client driver must close the previously opened static streams.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x804</p></td>
 <td align="left"><p>The leaked handle context. Run <strong>!usbanalyze -v</strong> to get information about the leaked handle and URBs. You must enable Driver Verifier for the client driver.</p></td>
-<td align="left"><p>Device object passed to <strong>[USBD_CreateHandle](https://msdn.microsoft.com/library/windows/hardware/hh406241)</strong>.</p></td>
+<td align="left"><p>Device object passed to <strong><a href="https://msdn.microsoft.com/library/windows/hardware/hh406241" data-raw-source="[USBD_CreateHandle](https://msdn.microsoft.com/library/windows/hardware/hh406241)">USBD_CreateHandle</a></strong>.</p></td>
 <td align="left"><p>Reserved</p></td>
-<td align="left"><p>A client driver forgot to close a handle it created earlier using <strong>[USBD_CreateHandle](https://msdn.microsoft.com/library/windows/hardware/hh406241)</strong> or forgot to free an URB it allocated.</p></td>
+<td align="left"><p>A client driver forgot to close a handle it created earlier using <strong><a href="https://msdn.microsoft.com/library/windows/hardware/hh406241" data-raw-source="[USBD_CreateHandle](https://msdn.microsoft.com/library/windows/hardware/hh406241)">USBD_CreateHandle</a></strong> or forgot to free an URB it allocated.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x805</p></td>
-<td align="left"><p>[WDFREQUEST](https://msdn.microsoft.com/library/windows/hardware/ff542962) handle for the Close Static Streams URB</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff542962" data-raw-source="[WDFREQUEST](https://msdn.microsoft.com/library/windows/hardware/ff542962)">WDFREQUEST</a> handle for the Close Static Streams URB</p></td>
 <td align="left"><p>Pointer to the Close Static Streams URB</p></td>
-<td align="left"><p>Pointer to the client driver's device object</p></td>
+<td align="left"><p>Pointer to the client driver&#39;s device object</p></td>
 <td align="left"><p>A client driver sent a Close Static Streams URB in an invalid state (for example, after processing D0 Exit).</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x806</p></td>
 <td align="left"><p>Pointer to the IRP</p></td>
 <td align="left"><p>Pointer to the URB</p></td>
-<td align="left"><p>Pointer to the client driver's device object</p></td>
-<td align="left"><p>A client driver attempted to send a chained <strong>[MDL](https://msdn.microsoft.com/library/windows/hardware/ff554414)</strong> before querying for chained <strong>MDL</strong> capability. A client driver cannot send a chained <strong>MDL</strong> until after it successfully queries for the chained <strong>MDL</strong> capability. For more information, see Remarks.</p></td>
+<td align="left"><p>Pointer to the client driver&#39;s device object</p></td>
+<td align="left"><p>A client driver attempted to send a chained <strong><a href="https://msdn.microsoft.com/library/windows/hardware/ff554414" data-raw-source="[MDL](https://msdn.microsoft.com/library/windows/hardware/ff554414)">MDL</a></strong> before querying for chained <strong>MDL</strong> capability. A client driver cannot send a chained <strong>MDL</strong> until after it successfully queries for the chained <strong>MDL</strong> capability. For more information, see Remarks.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x807</p></td>
-<td align="left"><p>Pointer to the chained <strong>[MDL](https://msdn.microsoft.com/library/windows/hardware/ff554414)</strong></p></td>
+<td align="left"><p>Pointer to the chained <strong><a href="https://msdn.microsoft.com/library/windows/hardware/ff554414" data-raw-source="[MDL](https://msdn.microsoft.com/library/windows/hardware/ff554414)">MDL</a></strong></p></td>
 <td align="left"><p>Pointer to the URB</p></td>
-<td align="left"><p>Pointer to the client driver's device object if available</p></td>
-<td align="left"><p>A client driver sent an URB to the core stack with a transfer buffer length longer than the byte count (returned by <strong>[MmGetMdlByteCount](https://msdn.microsoft.com/library/windows/hardware/ff554530)</strong>) of the <strong>[MDL](https://msdn.microsoft.com/library/windows/hardware/ff554414)</strong> passed in. For more information, see Remarks.</p></td>
+<td align="left"><p>Pointer to the client driver&#39;s device object if available</p></td>
+<td align="left"><p>A client driver sent an URB to the core stack with a transfer buffer length longer than the byte count (returned by <strong><a href="https://msdn.microsoft.com/library/windows/hardware/ff554530" data-raw-source="[MmGetMdlByteCount](https://msdn.microsoft.com/library/windows/hardware/ff554530)">MmGetMdlByteCount</a></strong>) of the <strong><a href="https://msdn.microsoft.com/library/windows/hardware/ff554414" data-raw-source="[MDL](https://msdn.microsoft.com/library/windows/hardware/ff554414)">MDL</a></strong> passed in. For more information, see Remarks.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x1001</p></td>
@@ -330,7 +326,7 @@ The **BUGCODE\_USB3\_DRIVER** bug check has a value of 0x00000144. This is the c
 <td align="left"><p>XHCI_LIVEDUMP_CONTEXT</p></td>
 <td align="left"><p>Reserved</p></td>
 <td align="left"><p>Reserved</p></td>
-<td align="left"><p>The controller indicated a transfer completion that was not pending on the controller. EventData == 1 (dereferencing the Transfer Event TRB's pointer would have caused a bugcheck)</p></td>
+<td align="left"><p>The controller indicated a transfer completion that was not pending on the controller. EventData == 1 (dereferencing the Transfer Event TRB&#39;s pointer would have caused a bugcheck)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x101F</p></td>
@@ -391,7 +387,7 @@ The **BUGCODE\_USB3\_DRIVER** bug check has a value of 0x00000144. This is the c
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -405,9 +401,9 @@ To send a chained [**MDL**](https://msdn.microsoft.com/library/windows/hardware/
 
 [Universal Serial Bus (USB)](https://msdn.microsoft.com/library/windows/hardware/ff538930)
 
- 
+ 
 
- 
+ 
 
 
 

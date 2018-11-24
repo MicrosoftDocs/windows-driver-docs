@@ -9,11 +9,7 @@ keywords:
 - porting drivers WDK networking , CoNDIS drivers
 - network driver porting WDK , CoNDIS drivers
 - porting CoNDIS driv
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -41,9 +37,9 @@ The following topics describe how to port a CoNDIS 5.*x* driver to CoNDIS 6.0 in
 
 [Porting Status Indication Operations to CoNDIS 6.0](porting-status-indication-operations-to-condis-6-0.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: Guidelines for Implementing Finish-Install Actions
 description: Guidelines for Implementing Finish-Install Actions
 ms.assetid: 455d520a-ccd7-470b-ab5f-5786ee90b91d
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -53,15 +49,15 @@ Consider the following guidelines when you implement finish-install actions in a
 
     **Note**  Starting with Windows 7, if UAC is set to the default setting ("Notify me only when programs try to make changes to my computer") or a lower setting, the operating system does not display the prompt for users with administrative privileges when it processes finish-install actions.
 
-     
+     
 
 -   Before you register an installer that implements finish-install actions, you must include and install all the files that are needed to run the finish-install actions in the [**CopyFiles directive**](inf-copyfiles-directive.md) of the [INF file](inf-files.md) for the device. This is required so that the files get placed during the installation in a location that is accessible by the installer.
 
     For more information about the registration requirements of a device or class co-installer, see [Registering a Class Co-installer](registering-a-class-co-installer.md).
 
- 
+ 
 
- 
+ 
 
 
 

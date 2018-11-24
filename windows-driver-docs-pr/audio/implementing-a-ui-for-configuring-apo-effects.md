@@ -2,11 +2,7 @@
 title: Implementing a UI for Configuring APO Effects
 description: This topic describes how to implement a user interface (UI) that allows a user to configure the effects. 
 ms.assetid: C8D1CB20-2E77-430A-9933-4BDFFB997158
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,7 +18,7 @@ An APO commonly provides a UI that allows a user to configure the effects. This 
 
 **Note**   Manufacturers can replace this property page with a custom property page that is designed to support their APOs. Manufacturers can also opt to not have any UI at all, if their custom APO does not have user-accessible settings.
 
- 
+ 
 
 The standard enhancements tab is shown below.
 
@@ -54,19 +50,19 @@ If you design the custom APO using the **CBaseAudioProcessingObject** base class
 
 Microsoft supplies an enhancements property page for the Sound applet on the Control Panel. This is the default property page that is associated with the system-supplied system effects APO. Vendors can replace this default property page with a custom page by implementing and registering a custom property page provider.
 
-See [About Property Sheets](http://go.microsoft.com/fwlink/p/?linkid=106006) and [Replacing the Default Property Page](replacing-the-default-property-page.md) for information about how to replace the enhancements property page.
+See [About Property Sheets](https://go.microsoft.com/fwlink/p/?linkid=106006) and [Replacing the Default Property Page](replacing-the-default-property-page.md) for information about how to replace the enhancements property page.
 
 To design and implement the custom property page provider, perform the following steps.
 
-1.  Create a custom property page. See [Creating property sheets](http://go.microsoft.com/fwlink/p/?linkid=106006) for more information.
+1.  Create a custom property page. See [Creating property sheets](https://go.microsoft.com/fwlink/p/?linkid=106006) for more information.
 
-2.  Package your property page as a DLL. See [Creating and using a DLL](http://go.microsoft.com/fwlink/p/?linkid=106014) topic for more information on packaging your custom page as a DLL.
+2.  Package your property page as a DLL. See [Creating and using a DLL](https://go.microsoft.com/fwlink/p/?linkid=106014) topic for more information on packaging your custom page as a DLL.
 
 3.  Modify your [INF file](https://msdn.microsoft.com/library/windows/hardware/ff549520) to install and register the DLL for the property page.
 
     The following INF file fragment shows how to modify the INF file to register your custom property page.
 
-    ```
+    ```inf
     [SysFx.AddReg]
     ...
     HKR,"FX\\0",%PKEY_SYSFX_UiClsid%,,%SYSFX_UI_CLSID%
@@ -78,7 +74,7 @@ To design and implement the custom property page provider, perform the following
 
     And as a result of the preceding INF file instructions, the installation process modifies the appropriate registry key as follows.
 
-    ```
+    ```text
     HKLM
      SOFTWARE
       Microsoft
@@ -100,7 +96,7 @@ To design and implement the custom property page provider, perform the following
 
     The sample INF file sections, taken from the SYSVAD tabletaudiosample.inf file, shows how to do this. The \[SWAPAPO.AddReg\] section is in the global AddReg section. The \[SWAPAPO.I.Association0.AddReg\] is part of the AddReg section for the specific KSCATEGORY\_AUDIO interfaces.
 
-    ```
+    ```inf
     [SWAPAPO.AddReg]
     …
 
@@ -129,7 +125,7 @@ If you are using the Windows-provided effects directly or wrapping them, complet
 
 2.  Follow step 4 above, to register the CLSID with COM. In addition, you will need to invoke the supplied wdmaudio.inf via *Include* and *Needs* statements in your INF file as shown below.
 
-    ```
+    ```cpp
     [YourGlobalSection]
     Include=wdmaudio.inf
     Needs=mssysfx.CopyFilesAndRegister
@@ -149,7 +145,7 @@ There are six projects in the SYSVAD sample The PropPageExtensions project conta
 | **Project**        | **Description**                                            |
 | PropPageExtensions | Sample code for example custom property page UI extensions |
 
- 
+ 
 
 The following code samples are useful to look at as you work on developing your custom UI.
 
@@ -163,7 +159,7 @@ The following code samples are useful to look at as you work on developing your 
 | Parts.cpp               | Implementation of CPart and derived classes.                                                         |
 | TopologyExaminers.cpp   | Implementation of methods to support examining the audio topology, such as connectors and endpoints. |
 
- 
+ 
 
 The following header files are used in the property page extensions sample.
 
@@ -176,7 +172,7 @@ The following header files are used in the property page extensions sample.
 | parts.h               |
 | topologyexaminers.h   |
 
- 
+ 
 
 To become familiar with the PropPageExtensions sample, you might want to review the headers and then examine the source code related to defining the text on the properties page. If your requirements are similar to what the sample code provides, you may be able to reuse much of the code that creates and updates the custom UI page.
 

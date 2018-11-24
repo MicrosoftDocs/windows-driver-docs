@@ -1,14 +1,9 @@
 ---
 title: Sending a Wait/Wake IRP
-author: windows-driver-content
 description: Sending a Wait/Wake IRP
 ms.assetid: ed582644-af51-4841-be59-6a3deb6d9de5
 keywords: ["power management WDK kernel , wake-up capabilities", "external wake signals WDK", "awakening devices", "wake-up capabilities WDK power management", "device wake ups WDK power management", "IRP_MN_WAIT_WAKE", "wait/wake IRPs WDK power management , sending", "sending wait/wake IRPs"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,9 +27,9 @@ A driver sends an **IRP\_MN\_WAIT\_WAKE** request for one of two reasons:
 
 Whether a device is prepared to wake itself or the system, the actions its drivers must take are the same. The primary difference lies in how the device and system hardware respond to the initial wake-up signal. Driver behavior is the same in either case.
 
- 
+ 
 
- 
+ 
 
 
 

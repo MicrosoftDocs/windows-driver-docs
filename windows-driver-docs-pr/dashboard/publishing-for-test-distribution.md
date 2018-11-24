@@ -2,11 +2,8 @@
 title: Test distribution guidance to self-host desktop drivers
 description: Test distribution guidance to self-host desktop drivers
 ms.assetid: 67E31BC1-6209-4264-B9F4-8CDFE8CE2E65
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
@@ -38,7 +35,7 @@ Once a driver has been published for test distribution it can be manually expire
 
 ### <span id="How_long_does_my_driver_published_for_test_distribution_last_"></span><span id="how_long_does_my_driver_published_for_test_distribution_last_"></span><span id="HOW_LONG_DOES_MY_DRIVER_PUBLISHED_FOR_TEST_DISTRIBUTION_LAST_"></span>How long does my driver published for test distribution last?
 
-Once you have published your driver for test distribution, the expiration time is set to 14 days from the time of publication to Windows Update. Once expired, test distributed drivers are removed from the Windows Update server and are no longer available to client machines.
+Drivers do not automatically expire from the test distribution workflow. After you complete testing, manually remove a driver using the procedure described in [Expire a driver from Windows Update](expire-a-driver-from-windows-update.md).
 
 ## <span id="Client_PC_configuration"></span><span id="client_pc_configuration"></span><span id="CLIENT_PC_CONFIGURATION"></span>Client PC configuration
 
@@ -70,7 +67,7 @@ To stop receiving test distribution drivers, remove the **TargetRing** registry 
 
 **Note**  Your system will continue to receive all production drivers from Windows Update.
 
- 
+ 
 
 1.  Open the Windows Registry Editor (regedit.exe)
 2.  Go to HKLM\\Software\\Microsoft\\DriverFlighting\\Partner. If these keys do not exist then you are done, otherwise continue to the next step.
@@ -84,9 +81,9 @@ To stop receiving test distribution drivers, remove the **TargetRing** registry 
     -   Run Windows Update and check for updates
     -   In Device Manager, right click on the target device, and select **Update Device Software**.
 
- 
+ 
 
- 
+ 
 
 
 

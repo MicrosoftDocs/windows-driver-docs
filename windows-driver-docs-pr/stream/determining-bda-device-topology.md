@@ -1,6 +1,5 @@
 ---
 title: Determining BDA Device Topology
-author: windows-driver-content
 description: Determining BDA Device Topology
 ms.assetid: fdac317e-d4fc-47c9-87d3-bec597f758f5
 keywords:
@@ -10,11 +9,7 @@ keywords:
 - KSPROPERTY_BDA_PIN_TYPES
 - KSPROPERTY_BDA_TEMPLATE_CONNECTIONS
 - template filter topology WDK BDA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -46,7 +41,7 @@ When a filter instance is first created and added to the graph, it typically has
 
 The following code snippet shows how to define functions that are exported by the BDA support library as dispatch routines for the KSPROPSETID\_BdaTopology property set:
 
-```
+```cpp
 //
 //  KSPROPSETID_BdaTopology property set
 //
@@ -74,9 +69,9 @@ DEFINE_KSPROPERTY_TABLE(FilterTopologyProperties)
 };
 ```
 
- 
+ 
 
- 
+ 
 
 
 

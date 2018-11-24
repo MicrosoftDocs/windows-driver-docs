@@ -3,11 +3,7 @@ title: usb3kd.hub_info_from_fdo
 description: The usb3kd.hub_info_from_fdo command displays information about a hub in the USB 3.0 tree.
 ms.assetid: 07A1C3EC-76A9-49A5-8467-53FCE3667203
 keywords: ["usb3kd.hub_info_from_fdo Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!usb3kd.hub\_info\_from\_fdo** command displays information about a hub in the [USB 3.0 tree](usb-3-extensions.md#usb-3-tree).
 
-```
+```dbgcmd
 !usb3kd.hub_info_from_fdo DeviceObject
 ```
 
@@ -42,7 +38,7 @@ Examples
 
 You can get the address of the FDO from the output of [**!usb\_tree**](-usb3kd-usb-tree.md) or from a variety of other debugger commands. For example, the [**!devstack**](-devstack.md) command displays the address of the FDO. In the following example, the address of the FDO is fffffa800597a660.
 
-```
+```dbgcmd
 3: kd> !devnode 0 1 usbhub3
 Dumping IopRootDeviceNode (= 0xfffffa8003609cc0)
 DevNode 0xfffffa8005981730 for PDO 0xfffffa8004ffc550
@@ -56,7 +52,7 @@ DevNode 0xfffffa8005981730 for PDO 0xfffffa8004ffc550
 
 Now you can pass the address of the FDO to the **!usb3kd.hub\_info\_from\_fdo** command.
 
-```
+```dbgcmd
  3: kd> !hub_info_from_fdo fffffa800597a660
 
 ## Dumping HUB Information fffffa800597a660
@@ -102,11 +98,11 @@ Hub Event History:
 
 [**!usb3kd.hub\_info**](-usb3kd-hub-info.md)
 
-[Universal Serial Bus (USB) Drivers](http://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
- 
+ 
 
- 
+ 
 
 
 

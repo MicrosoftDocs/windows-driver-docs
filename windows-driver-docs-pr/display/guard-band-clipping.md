@@ -6,11 +6,7 @@ keywords:
 - Direct3D WDK Windows 2000 display , guard band clipping
 - guard band clipping WDK Direct3D
 - clipping WDK Direct3D
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +22,9 @@ Guard band clipping is also beneficial for anti-aliasing hardware, because the f
 
 To do the correct clipping, the driver is passed the viewport information. This specifies the actual viewport that the application requires the geometry to be clipped to. Driver writers who do not want to implement guard band clipping can ignore this information. It is recommended that drivers do not use this data to implement clipping through scissors or masking operations because these are likely to be slower than letting Direct3D do the clipping.
 
- 
+ 
 
- 
+ 
 
 
 

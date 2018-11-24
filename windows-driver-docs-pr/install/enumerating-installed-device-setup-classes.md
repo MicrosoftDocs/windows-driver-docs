@@ -7,11 +7,7 @@ keywords:
 - installed device setup classes WDK
 - installed device setup classes WDK , enumerating
 - device setup classes WDK device installations , enumerating
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +26,9 @@ To safely discover the installed device setup classes, and to query and modify t
 
 4.  Use [**SetupDiOpenClassRegKey**](https://msdn.microsoft.com/library/windows/hardware/ff552065) or [**SetupDiOpenClassRegKeyEx**](https://msdn.microsoft.com/library/windows/hardware/ff552067) to access the persistent registry storage for custom device setup class settings.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,6 +3,7 @@ title: HBAFCPBindingEntry2 WMI Class
 description: HBAFCPBindingEntry2 WMI Class
 ms.assetid: b9423b59-1d55-4487-bebb-e3eb786fc1be
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # HBAFCPBindingEntry2 WMI Class
@@ -15,7 +16,7 @@ An HBA miniport driver that supports the T11 committee's *Fibre Channel HBA API*
 
 The HBAFCPBindingEntry2 class is defined as follows in *Hbaapi.mof*:
 
-```
+```cpp
 class HBAFCPBindingEntry2 {
   [WmiDataId(1), HBA_BIND_TYPE_QUALIFIERS] HBA_BIND_TYPE  Type;
   [HBAType("HBA_FCPSCSIENTRY"), WmiDataId(4)] HBAScsiID  ScsiId;
@@ -30,9 +31,9 @@ When compiled by the WMI tool suite this class definition produces the following
 
 There are no methods associated with this WMI class.
 
- 
+ 
 
- 
+ 
 
 
 

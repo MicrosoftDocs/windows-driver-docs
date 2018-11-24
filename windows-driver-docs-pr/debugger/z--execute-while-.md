@@ -3,11 +3,7 @@ title: z (Execute While)
 description: The z command executes a command while a given condition is true.
 ms.assetid: 075dc012-68c2-4172-9d37-57bc8358297c
 keywords: ["z (Execute While) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,13 +20,13 @@ The **z** command executes a command while a given condition is true.
 
 User-Mode
 
-```
+```dbgcmd
 Command ; z( Expression ) 
 ```
 
 Kernel-Mode
 
-```
+```dbgcmd
 Command ; [Processor] z( Expression )
 ```
 
@@ -69,7 +65,7 @@ Specifies the condition to test. If this condition evaluates to a nonzero value,
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -86,19 +82,19 @@ To break a loop that is continuing for too long, use [**CTRL+C**](ctrl-c--break-
 
 The following code example shows an unnecessarily complex way to zero the **eax** register.
 
-```
+```dbgcmd
 0:000> reax = eax - 1 ; z(eax)
 ```
 
 The following example increments the **eax** and **ebx** registers until one of them is at least 8 and then it increments the **ecx** register once.
 
-```
+```dbgcmd
 0:000> reax=eax+1; rebx=ebx+1; z((eax<8)|(ebx<8)); recx=ecx+1
 ```
 
 The following example uses C++ expression syntax and uses the pseudo-register **$t0** as a loop variable.
 
-```
+```dbgcmd
 0:000> .expr /s c++
 Current expression evaluator: C++ - C++ source expressions
 
@@ -110,9 +106,9 @@ Current expression evaluator: C++ - C++ source expressions
 
 [**j (Execute If-Else)**](j--execute-if---else-.md)
 
- 
+ 
 
- 
+ 
 
 
 

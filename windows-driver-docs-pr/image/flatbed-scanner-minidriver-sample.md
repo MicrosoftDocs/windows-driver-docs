@@ -1,13 +1,8 @@
 ---
 title: Flatbed Scanner Minidriver Sample
-author: windows-driver-content
 description: Flatbed Scanner Minidriver Sample
 ms.assetid: 8c1ad90a-cff9-45a0-b2d9-e2605436f128
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +26,9 @@ This sample shows how to write a WIA user-mode minidriver for a scanner. It simu
 
     Run the small application, *Scanpanl.exe* (which is provided with the Windows DDK) to simulate button presses.
 
- 
+ 
 
- 
+ 
 
 
 

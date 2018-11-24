@@ -1,11 +1,7 @@
 ---
 Description: Using the WpdInfo Tool
 title: Using the WpdInfo Tool
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -40,9 +36,9 @@ You can right-click a given object, resource, or property to display a menu of o
 
 ![wpdinfo options](images/wpdinfo3.png)
 
- 
+ 
 
- 
+ 
 
 
 

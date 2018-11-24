@@ -1,6 +1,5 @@
 ---
 title: Generic Description Language
-author: windows-driver-content
 description: Generic Description Language
 ms.assetid: 818037fd-90bb-46dd-a2e3-239d57ed5fcf
 keywords:
@@ -20,11 +19,7 @@ keywords:
 - snapshots WDK GDL
 - GDL WDK , directives
 - directives WDK GDL
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -63,9 +58,9 @@ The following sections provide more information about GDL:
 
 [GDL Examples](gdl-examples.md)
 
- 
+ 
 
- 
+ 
 
 
 

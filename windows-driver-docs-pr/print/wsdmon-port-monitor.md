@@ -1,6 +1,5 @@
 ---
 title: WSDMON Port Monitor
-author: windows-driver-content
 description: WSDMON Port Monitor
 ms.assetid: fd6b0136-ca6e-4882-b6b9-be868f0dfc18
 keywords:
@@ -9,11 +8,7 @@ keywords:
 - port monitors WDK print , WSDMON
 - Web Services for Devices WDK WIA , port monitor
 - WSD compliance WDK print
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -56,9 +51,9 @@ WSDMON supports the following Xcv commands:
 
 For more information about Web Services for Devices, see the Microsoft Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

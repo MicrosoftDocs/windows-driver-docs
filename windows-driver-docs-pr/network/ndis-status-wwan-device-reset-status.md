@@ -1,15 +1,10 @@
 ---
 title: NDIS_STATUS_WWAN_DEVICE_RESET_STATUS
-author: windows-driver-content
 description: NDIS_STATUS_WWAN_DEVICE_RESET_STATUS
 ms.assetid: 3745E3A8-6807-4BAF-8074-90C661EAD15E
 keywords:
 - NDIS_STATUS_WWAN_DEVICE_RESET_STATUS, modem reset status notification, Mobile Broadband modem reset status notification, MB modem reset status notification
-ms.author: windowsdriverdev
 ms.date: 08/18/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

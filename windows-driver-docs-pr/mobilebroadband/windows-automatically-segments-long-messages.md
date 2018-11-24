@@ -2,11 +2,7 @@
 title: Windows automatically segments long messages
 description: Windows automatically segments long messages
 ms.assetid: 0c1d7347-4e53-4f17-bdb5-908479f903de
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,9 +18,9 @@ Mobile network operators charge users per message segment. SMS platform automati
 
 [Send SMS by using the text-mode interface](send-sms-by-using-the-text-mode-interface.md)
 
- 
+ 
 
- 
+ 
 
 
 

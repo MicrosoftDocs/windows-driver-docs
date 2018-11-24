@@ -1,16 +1,11 @@
 ---
 title: Command Execution Order
-author: windows-driver-content
 description: Command Execution Order
 ms.assetid: 2bf7438c-bfb0-407f-9c80-be3b8a9322f9
 keywords:
 - printer commands WDK Unidrv , execution order
 - sequence numbers WDK Unidrv
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -58,7 +53,7 @@ where *SectionName* is one of JOB\_SETUP, DOC\_SETUP, PAGE\_SETUP, PAGE\_FINISH,
 
 Sequence numbers do not have to be consecutive, but each number specified within a section must be unique. Commands within a section are executed from the one with the lowest sequence number to that with the highest. For example, the following entries indicate that options for the **InputBin**, **PaperSize**, and **Resolution** features are assigned to the DOC\_SETUP section and are sent in the specified order:
 
-```
+```cpp
 *Feature: InputBin
 {
     *Option: Auto
@@ -102,9 +97,9 @@ Sequence numbers do not have to be consecutive, but each number specified within
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

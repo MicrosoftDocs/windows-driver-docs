@@ -2,11 +2,7 @@
 title: Live Kernel-Mode Debugging Using WinDbg
 description: There are two ways you can use WinDbg to initiate a live kernel-mode debugging session.
 ms.assetid: CC911199-A16D-4B06-A5BE-FA476F916F21
-ms.author: domars
 ms.date: 06/21/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -123,7 +119,7 @@ Causes the debugger to perform local kernel-mode debugging. For more information
 
 The following batch file could be used to set up and start a debugging session over a COM port connection.
 
-```
+```console
 set _NT_SYMBOL_PATH=d:\mysymbols
 set _NT_DEBUG_PORT=com1
 set _NT_DEBUG_BAUD_RATE=115200
@@ -133,7 +129,7 @@ windbg -k
 
 The following batch file could be used to set up and start a debugging session over a 1394 connection.
 
-```
+```console
 set _NT_SYMBOL_PATH=d:\mysymbols
 set _NT_DEBUG_BUS=1394
 set _NT_DEBUG_1394_CHANNEL=44
@@ -162,9 +158,9 @@ The following command lines could be used to start WinDbg without any environmen
 
 [Kernel-Mode Environment Variables](kernel-mode-environment-variables.md)
 
- 
+ 
 
- 
+ 
 
 
 

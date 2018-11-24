@@ -9,11 +9,7 @@ keywords:
 - network component installations WDK , installation requirements
 - installing network components WDK , INF files
 - network component installations WDK , INF files
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -39,9 +35,9 @@ This section summarizes the installation requirements for certain types of netwo
 
 [Installation Requirements for Network Services](installation-requirements-for-network-services.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: Child Devices of the Display Adapter (Windows 2000 Model)
 description: Child Devices of the Display Adapter (Windows 2000 Model)
 ms.assetid: 953e0e2d-214e-456e-8f5f-8e927887cab3
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,9 +20,9 @@ The following sections discuss issues that affect miniport drivers of graphics a
 
 [Using I2C to Communicate with a Child Device](using-i2c-to-communicate-with-a-child-device.md)
 
- 
+ 
 
- 
+ 
 
 
 

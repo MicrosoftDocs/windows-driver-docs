@@ -2,11 +2,7 @@
 title: Sample INF File for Device Installation on Multiple Versions of Windows
 description: Sample INF File for Device Installation on Multiple Versions of Windows
 ms.assetid: b7165a14-ab2f-46ee-bb05-c89e2b33ab5f
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -15,9 +11,9 @@ ms.localizationpriority: medium
 
 The sample INF file (*MultiOS.inf*), which is included in the Windows Driver Kit (WDK), shows how a single INF file can be used to install a device on multiple versions of Windows. This file is in the *src\\print\\infs\\MultiOS* directory of the WDK.
 
- 
+ 
 
- 
+ 
 
 
 

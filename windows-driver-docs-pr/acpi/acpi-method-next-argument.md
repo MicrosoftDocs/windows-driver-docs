@@ -1,15 +1,10 @@
 ---
 title: ACPI_METHOD_NEXT_ARGUMENT macro
-author: windows-driver-content
 description: The ACPI_METHOD_NEXT_ARGUMENT structure returns a pointer to the next ACPI_METHOD_ARGUMENT structure in an array of ACPI_METHOD_ARGUMENT structures.
 ms.assetid: c723b11b-1657-4a78-a6a1-26bd916604a4
 keywords: 
 - ACPI_METHOD_NEXT_ARGUMENT macro ACPI Devices
-ms.author: windowsdriverdev
-ms.date: 07/18/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 10/12/2018
 ms.localizationpriority: medium
 ---
 
@@ -21,9 +16,9 @@ The ACPI\_METHOD\_NEXT\_ARGUMENT structure returns a pointer to the next [**ACPI
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
  ACPI_METHOD_NEXT_ARGUMENT(
-    Argument
+    Argument
 );
 ```
 
@@ -52,15 +47,11 @@ Requirements
 <col width="50%" />
 </colgroup>
 <tbody>
-<tr class="odd">
+<tr>
 <td><p>Target platform</p></td>
 <td>Desktop</td>
 </tr>
-<tr class="even">
-<td><p>Version</p></td>
-<td><p>Windows 2000 and later versions of Windows.</p></td>
-</tr>
-<tr class="odd">
+<tr>
 <td><p>Header</p></td>
 <td>Acpiioct.h (include Acpiioct.h)</td>
 </tr>
@@ -71,11 +62,3 @@ Requirements
 
 
 [**ACPI\_METHOD\_ARGUMENT**](https://msdn.microsoft.com/library/windows/hardware/ff536125)
-
- 
-
- 
-
-
-
-

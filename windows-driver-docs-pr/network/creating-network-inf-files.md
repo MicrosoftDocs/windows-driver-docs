@@ -9,11 +9,7 @@ keywords:
 - network component installations WDK , INF files
 - INF files WDK network
 - network INF files WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,9 +33,9 @@ This section includes:
 -   [Sections in a Network INF File](sections-in-a-network-inf-file.md)
 -   [Installation Requirements for Network Components](installation-requirements-for-network-components.md)
 
- 
+ 
 
- 
+ 
 
 
 

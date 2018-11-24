@@ -1,6 +1,5 @@
 ---
 title: Unidrv Minidrivers
-author: windows-driver-content
 description: Unidrv Minidrivers
 ms.assetid: ebf12f61-6194-4033-92a2-2bbccc40a6fd
 keywords:
@@ -10,11 +9,7 @@ keywords:
 - printer descriptions WDK Unidrv
 - GPD files WDK Unidrv , Unidrv capabilities
 - Unidrv WDK print
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -50,9 +45,9 @@ When a printer is installed, Unidrv's GPD parser reads all the printer's GPD fil
 
 Typically, a minidriver must provide resources, such as fonts, bitmaps, and localizable text strings. These resources are placed in a resource DLL. For more information, see [Using Resource DLLs in a Minidriver](using-resource-dlls-in-a-minidriver.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: GpuMmu Example Scenarios
 description: This topic describes common usage scenarios and the sequence of operations necessary to implement them.
 ms.assetid: 30F7D158-3D99-40EE-8FED-48EC1615AC71
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -103,7 +99,7 @@ When a new process is created, the DirectX graphics kernel will:
 -   Create the initial page table allocations.
 -   Initialize the page table allocations when the first allocation from the process is made resident.
 
- 
+ 
 
- 
+ 
 

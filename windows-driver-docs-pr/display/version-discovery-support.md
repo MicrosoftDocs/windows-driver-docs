@@ -5,11 +5,7 @@ ms.assetid: 9e37eaad-02b2-43a9-bd1a-4c5b2b02d1b6
 keywords:
 - Direct3D version 10.1 WDK Windows 7 display , version discovery support
 - version discovery support WDK Windows 7 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,7 +20,7 @@ Windows 7 provides a way for Direct3D applications to discover the DDI versions 
 
 [**OpenAdapter10\_2**](https://msdn.microsoft.com/library/windows/hardware/ff568603) returns a table of the driver's adapter-specific functions in the **pAdapterFuncs\_2** member of the [**D3D10DDIARG\_OPENADAPTER**](https://msdn.microsoft.com/library/windows/hardware/ff541724) structure. **pAdapterFuncs\_2** points to a [**D3D10\_2DDI\_ADAPTERFUNCS**](https://msdn.microsoft.com/library/windows/hardware/ff541900) structure. The Direct3D runtime calls the driver's adapter-specific [**GetSupportedVersions**](https://msdn.microsoft.com/library/windows/hardware/ff566807) function to query for the DDI versions and hardware capabilities that the driver supports. **GetSupportedVersions** returns the DDI versions and hardware capabilities in an array of 64-bit values. The following code example shows a **GetSupportedVersions** implementation:
 
-```
+```cpp
 // Array of 64-bit values that are defined in D3d10umddi.h
 const UINT64 c_aSupportedVersions[] = {
     D3D10_0_7_DDI_SUPPORTED, // 10.0 on Windows 7
@@ -71,11 +67,11 @@ If you are porting your driver from Direct3D version 10.0 to Direct3D version 10
 
 **Note**  [**OpenAdapter10\_2**](https://msdn.microsoft.com/library/windows/hardware/ff568603) has the same function signature as [**OpenAdapter10**](https://msdn.microsoft.com/library/windows/hardware/ff568602) (that is, PFND3D10DDI\_OPENADAPTER as defined in the *D3d10umddi.h* header). You can implement both functions in the same user-mode display driver DLL.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

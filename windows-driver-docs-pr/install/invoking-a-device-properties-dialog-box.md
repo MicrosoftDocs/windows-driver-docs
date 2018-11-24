@@ -2,11 +2,7 @@
 title: Invoking a Device Properties Dialog Box
 description: Invoking a Device Properties Dialog Box
 ms.assetid: 43164b2a-282e-4cef-8c89-b9695ab30539
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,9 +21,9 @@ For information about how to call **DeviceProperties_RunDLL**, see the following
 
 For more information about invoking **DeviceProperties_RunDLL**, see the [Knowledge Base article 815320](http://go.microsoft.com/fwlink/p/?linkid=3100&ID=815320) on the [Microsoft Help and Support](http://go.microsoft.com/fwlink/p/?linkid=8713) website.
 
- 
+ 
 
- 
+ 
 
 
 

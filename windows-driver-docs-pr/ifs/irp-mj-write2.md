@@ -1,13 +1,8 @@
 ---
 title: Checking the Oplock State of an IRP_MJ_WRITE operation
-author: windows-driver-content
 description: Checking the Oplock State of an IRP_MJ_WRITE operation
 ms.assetid: 04d09810-f157-4140-8bfb-c780a65cdf77
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -97,9 +92,9 @@ The following only applies when a *stream* is being written and the write is not
 </td>
 </tr>
 </table>
- 
+ 
 
- 
+ 
 
 
 

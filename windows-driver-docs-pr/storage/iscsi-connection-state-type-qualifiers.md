@@ -3,6 +3,7 @@ title: ISCSI\_CONNECTION\_STATE\_TYPE\_QUALIFIERS
 description: ISCSI\_CONNECTION\_STATE\_TYPE\_QUALIFIERS
 ms.assetid: 53242205-4fd3-471d-abe2-35474491b29d
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # ISCSI\_CONNECTION\_STATE\_TYPE\_QUALIFIERS
@@ -42,11 +43,11 @@ The following table describes the ISCSI\_CONNECTION\_STATE\_TYPE\_QUALIFIERS val
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

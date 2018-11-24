@@ -4,11 +4,7 @@ description: Building a NetAdapterCx client driver
 ms.assetid: 0A6957B4-E63A-4687-B31E-064AE3A34936
 keywords:
 - building a NetAdapterCx client driver, building a NIC driver
-ms.author: windowsdriverdev
 ms.date: 06/05/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,10 +21,10 @@ Use the following steps to create a new NetAdapter client driver in Visual Studi
 3. To open the Driver Property Page dialog, choose **Project > Properties**.
 4. In the **Configuration Properties > Driver Settings > Network Adapter Driver** dialog box, select the **Link to the Network Adapter Class Extension** dropdown and set to **Yes**.
 5. In the **Configuration Properties > Driver Settings > Network Adapter Driver** dialog box, select **Network Adapter Major Version** and **Network Adapter Minor Version**.
-    1. The current version of NetAdapterCx is **1.2**.
+    1. The current version of NetAdapterCx is **1.3**.
 6. Add the following header to every source file (or to your common/precompiled header):
 
-```cpp
+```C++
 #include <ntddk.h>
 #include <wdf.h>
 #include <netadaptercx.h>

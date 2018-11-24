@@ -3,11 +3,7 @@ title: Analyze UMDH Logs
 description: Use the following commands to analyze User-Mode Dump Heap (UMDH) logs that were created by running UMDH with the syntax described in Analyze a Running Process.
 ms.assetid: 66e559b2-0335-4a1d-ba6c-dde6b826dc5f
 keywords: ["Analyze UMDH Logs Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,7 +20,7 @@ Use the following commands to analyze User-Mode Dump Heap (UMDH) logs that were 
 
 You can analyze a single log file or compare logs from different runs to detect the changes in the program or driver's memory dump allocations over time.
 
-```
+```dbgcmd
 umdh [-d] [-v] [-l] File1 [File2] [-h | ?]
 ```
 
@@ -54,7 +50,7 @@ Displays help.
 
 ### <span id="sample_usage"></span><span id="SAMPLE_USAGE"></span>Sample Usage
 
-```
+```dbgcmd
 umdh dump.txt
 umdh -d -v dump.txt
 umdh dump1.txt dump2.txt
@@ -65,9 +61,9 @@ Remarks
 
 Suppose you have two computers: a *logging computer* where you create a UMDH log and an *analysis computer* where you analyze the UMDH log. The symbol path on your analysis computer must point to the symbols for the version of Windows that was loaded on the logging computer at the time the log was made. Do not point the symbol path on the analysis computer to a symbol server. If you do, UMDH will retrieve symbols for the version of Windows that is running on the analysis computer, and UMDH will not display meaningful results.
 
- 
+ 
 
- 
+ 
 
 
 

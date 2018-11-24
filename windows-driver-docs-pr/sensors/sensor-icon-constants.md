@@ -1,6 +1,5 @@
 ---
 title: Sensor Icon Constants
-author: windows-driver-content
 description: Sensor drivers can specify one of a set of platform-defined icons, or a custom icon, to represent the device in Control Panel. The following table lists the platform-defined icon resource IDs.
 ms.assetid: 1cfe925c-f291-48b0-a002-0916118a93b2
 keywords: ["Sensor Icon Constants Sensor Devices"]
@@ -10,11 +9,7 @@ api_name:
 - Sensor Icon Constants
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 01/04/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -110,7 +105,7 @@ Sensor drivers can specify one of a set of platform-defined icons, or a custom i
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -141,9 +136,9 @@ Requirements
 
 [Specifying an Icon](https://msdn.microsoft.com/library/windows/hardware/ff545876)
 
- 
+ 
 
- 
+ 
 
 
 

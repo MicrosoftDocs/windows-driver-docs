@@ -5,11 +5,7 @@ ms.assetid: 575499a9-e572-4ccc-bcee-8f2843310b05
 keywords:
 - wave rendering WDK audio
 - wave capturing WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -49,9 +45,9 @@ See the following for more information about the configuration of the port class
 
 [Rendering and Capturing Audio Content by Using the USBAudio Driver](rendering-and-capturing-audio-content-by-using-the-usbaudio-driver.md)
 
- 
+ 
 
- 
+ 
 
 
 

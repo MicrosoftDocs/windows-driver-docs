@@ -1,12 +1,7 @@
 ---
 title: Sample configuration XML
-author: windows-driver-content
 description: Use the sample configuration XML in this topic to develop configuration files for your device.
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -14,7 +9,7 @@ ms.localizationpriority: medium
 
 You can use the following example configuration XML to develop the configuration files for your device.
 
-```
+```xml
 <?xml version="1.0"?>
 <PrintDeviceCapabilities
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -154,7 +149,7 @@ You can use the following example configuration XML to develop the configuration
           <psk3dx:log>c:\windows\temp\3DPrint\StandardGCode.log</psk3dx:log>
         </psk3dx:debug>
       -->  
-    
+
       <psk3dx:communication>
         <!-- communication parameters -->
         <psk3dx:connection name="serialport">
@@ -227,7 +222,7 @@ You can use the following example configuration XML to develop the configuration
         <psk3dx:layer>
           <psk3dx:command>M106 S$rampup$</psk3dx:command>
         </psk3dx:layer>
-        
+
       </psk3dx:customcommands>
 
       <psk3dx:print>
@@ -345,7 +340,6 @@ You can use the following example configuration XML to develop the configuration
   </psk3dx:MS3DPrinter>
 
 </PrintDeviceCapabilities>
-
 ```
 
 

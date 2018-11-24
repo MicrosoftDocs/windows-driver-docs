@@ -1,6 +1,5 @@
 ---
 title: Printer Attributes
-author: windows-driver-content
 description: Printer Attributes
 ms.assetid: 46254c16-ecd3-47a4-ab2e-5a6687cde1ee
 keywords:
@@ -10,11 +9,7 @@ keywords:
 - attributes WDK Unidrv
 - printer attributes WDK Unidrv , about printer attributes
 - Unidrv WDK print
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +29,9 @@ The following topics describe how to specify printer attributes in GPD files:
 
 [General Attributes](general-attributes.md)
 
- 
+ 
 
- 
+ 
 
 
 

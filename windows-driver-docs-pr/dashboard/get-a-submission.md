@@ -3,10 +3,8 @@ title:
 description: 
 author: balapv
 ms.author: balapv
-ms.date: 04/05/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 04/05/2018
 ms.localizationpriority: medium
 ---
 
@@ -46,7 +44,7 @@ Do not provide a request body for this method.
 The following example demonstrates how to retrieve information about all submissions of a product.
 
 
-```
+```cpp
 GET https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/13635057453741329/submissions/1152921504621441930 HTTP/1.1
 Authorization: Bearer <your access token>
 ```
@@ -80,7 +78,7 @@ The following example demonstrates the JSON response body returned by a successf
       },
       {
         "type": "certificationReport",
-        "url": "https:// manage.devcenter.microsoft.com/en-us/dashboard/hardware/Driver/DownloadCertificationReport/29963920/13635057453741329/1152921504621441930"
+        "url": "https:// manage.devcenter.microsoft.com/dashboard/hardware/Driver/DownloadCertificationReport/29963920/13635057453741329/1152921504621441930"
       }
     ],
     "messages": []
@@ -97,6 +95,9 @@ The following example demonstrates the JSON response body returned by a successf
       "method": "PATCH"
     }
   ],
+  "isExtensionInf": true,
+  "isUniversal": true,
+  "isDeclarativeInf": true,
   "name": "HARRY-Duatest2",
   "type": "initial"
 }
@@ -109,3 +110,7 @@ Refer to [Submission resource](get-product-data.md#submission-resource)  for mor
 ## Error codes
 
 For more info, see [Error codes](get-product-data.md#error-codes).
+
+## See also
+
+- [Hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)

@@ -5,11 +5,7 @@ ms.assetid: ea721b1e-1b75-4982-bcc5-f1359191cc72
 keywords:
 - intermediate drivers WDK TCP chimney offload , referencing offloaded state
 - referencing offloaded state via intermediate driver
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,9 +38,9 @@ When calling a state-manipulation function ([**NdisInitiateOffload**](https://ms
 
 When making an indication on an offloaded state object (that is, when referencing the offloaded state object in a call to the [**NdisTcpOffloadEventHandler**](https://msdn.microsoft.com/library/windows/hardware/ff564595) function or the [**NdisTcpOffloadReceiveHandler**](https://msdn.microsoft.com/library/windows/hardware/ff564606) function), the offload target or intermediate driver supplies its stored handle for the offloaded state object. The overlying driver receives this pointer in the **OffloadHandle** member of the NDIS\_PROTOCOL\_OFFLOAD\_BLOCK\_LIST structure that is passed to its corresponding indication function ( [**ProtocolTcpOffloadEvent**](https://msdn.microsoft.com/library/windows/hardware/ff570272) or [*ProtocolTcpOffloadReceiveIndicate*](https://msdn.microsoft.com/library/windows/hardware/ff570275)).
 
- 
+ 
 
- 
+ 
 
 
 

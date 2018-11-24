@@ -10,11 +10,7 @@ api_name:
 - DevCon UpdateNI
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,8 +21,6 @@ Forcibly replaces the current device drivers with drivers listed in the specifie
 
 ```
     devcon [/r] updateni INFfile HardwareID 
-
-   
 ```
 
 ## <span id="ddk_devcon_updateni_tools"></span><span id="DDK_DEVCON_UPDATENI_TOOLS"></span>Parameters
@@ -64,9 +58,9 @@ devcon /r updateni c:\windows\inf\newdvc.inf *PNP030b
 
 [Example 32: Update the driver for communication ports](devcon-examples.md#ddk_example_32_update_the_driver_for_communication_ports_tools)
 
- 
 
- 
+
+
 
 
 

@@ -5,11 +5,7 @@ ms.assetid: 6c6300e9-aea6-4da3-a91a-73db6ba8ff1f
 keywords:
 - driver stacks WDK networking , pausing
 - pausing driver stacks WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,11 +31,11 @@ NDIS pauses a driver stack to complete operations such as inserting a filter mod
 
 **Note**  NDIS drivers cannot fail a pause request. You should log any errors that occur.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

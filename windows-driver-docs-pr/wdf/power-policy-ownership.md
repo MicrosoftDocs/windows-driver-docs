@@ -1,6 +1,5 @@
 ---
 title: Power Policy Ownership
-author: windows-driver-content
 description: Power Policy Ownership
 ms.assetid: 8e44eedd-6afe-45c6-bbe8-42cfb6f6a644
 keywords:
@@ -14,11 +13,7 @@ keywords:
 - device power states WDK KMDF
 - working states WDK KMDF
 - power states WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -56,9 +51,9 @@ For more information about the power policy owner's responsibilities, see the fo
 -   [User Control of Device Idle and Wake Behavior](user-control-of-device-idle-and-wake-behavior.md)
 -   [Supporting Functional Power States](supporting-functional-power-states.md)
 
- 
+ 
 
- 
+ 
 
 
 

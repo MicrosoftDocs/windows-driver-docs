@@ -1,13 +1,8 @@
 ---
 title: WIA Scanner Storage
-author: windows-driver-content
 description: WIA Scanner Storage
 ms.assetid: d47d2c30-1f2f-4baf-927c-eda30377ab6b
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +21,9 @@ This section includes:
 
 [WIA Scanner Storage Compatibility for Windows XP and Windows Me](wia-scanner-storage-compatibility-for-windows-xp-and-windows-me.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,14 +1,9 @@
 ---
 title: Avoid Polling Devices
-author: windows-driver-content
 description: Avoid Polling Devices
 ms.assetid: c50c9c6f-c8eb-4e52-854a-3ebc4fdc874c
 keywords: ["I/O WDK kernel , device polling", "device polling WDK I/O", "polling devices WDK I/O", "loop counters WDK I/O", "counters WDK I/O"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,11 +28,11 @@ The granularity of a **KeStallExecutionProcessor** interval is one microsecond.
 
 If the device frequently requires more than 50 microseconds to update state, consider setting up a [device-dedicated thread](device-dedicated-threads.md) in the driver.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

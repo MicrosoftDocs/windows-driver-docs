@@ -10,6 +10,7 @@ api_name:
 api_type:
 - NA
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # DEVPRIVATE_RANGE
@@ -17,13 +18,13 @@ ms.localizationpriority: medium
 
 **Note**  This structure is for internal use only.
 
- 
+ 
 
 The DEVPRIVATE_RANGE structure specifies a resource requirements list that describes private device-specific resource usage for a device instance. For more information about resource requirements list, see [Hardware Resources](https://msdn.microsoft.com/library/windows/hardware/ff547012).
 
- 
+ 
 
- 
+ 
 
 
 

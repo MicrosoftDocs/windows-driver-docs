@@ -1,16 +1,11 @@
 ---
 title: Value Macros
-author: windows-driver-content
 description: Value Macros
 ms.assetid: 265b2d35-5e91-4c47-a145-1e9f8c497c2c
 keywords:
 - value macros WDK GPD files
 - referencing macros
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -51,7 +46,7 @@ To define one or more value macros in a GPD file, use the following format:
 </tbody>
 </table>
 
- 
+ 
 
 where *ValueMacroGroupName* is a unique name, and *ValueMacroBody* is a set of unique value names and associated values, as follows:
 
@@ -61,7 +56,7 @@ where *ValueMacroName* is a unique macro name, and *MacroValue* represents a [GP
 
 As an example, you might define value macros for a set of frequently used command prefixes as follows:
 
-```
+```cpp
 *Macros: HP4L
 {
     LetterCmdPrefix: "<1B>&l2a8c1E<1B>*p0x0Y"
@@ -82,7 +77,7 @@ where *ValueMacroName* is a unique name, previously specified in the \*Macros en
 
 For example, to reference one of the HP4L macros within a command specification, you could use the following entries:
 
-```
+```cpp
 *Command: CmdSelect
 {
     *Cmd: =LetterCmdPrefix "<1B>*c0t5760x7680Y"
@@ -91,9 +86,9 @@ For example, to reference one of the HP4L macros within a command specification,
 
 The only time you can assign a value by combining macro references with nonmacro values is when all macro definitions and other values represent text or command substrings, as illustrated in the example. In all other cases, the macro reference must represent the entire value to be assigned.
 
- 
+ 
 
- 
+ 
 
 
 

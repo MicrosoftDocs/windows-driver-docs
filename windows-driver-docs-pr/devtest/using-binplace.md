@@ -5,11 +5,7 @@ ms.assetid: 58bef00a-bd0e-4200-8e5e-10a418aea64b
 keywords:
 - BinPlace WDK , about BinPlace
 - place files WDK BinPlace
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +24,9 @@ BinPlace is controlled through a combination of the BinPlace command line, vario
 -   [BinPlace Macros and Environment Variables](binplace-macros-and-environment-variables.md)
 -   [**Place File Syntax**](place-file-syntax.md)
 
- 
+ 
 
- 
+ 
 
 
 

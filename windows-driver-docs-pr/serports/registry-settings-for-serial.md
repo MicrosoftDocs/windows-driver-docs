@@ -1,6 +1,5 @@
 ---
 title: Registry Settings for Serial
-author: windows-driver-content
 description: Registry Settings for Serial
 ms.assetid: be64d9d7-6d6b-4430-96a3-ac071d48b121
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - registry WDK serial devices
 - serial devices WDK , registry settings
 - serial devices WDK , Serial driver
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,9 +33,9 @@ Serial uses the registry settings to configure a serial device in the following 
 
 -   If a device-specific entry value is not present and there is no corresponding Serial service entry value, Serial uses a default service value that is statically defined in *serial.sys*.
 
- 
+ 
 
- 
+ 
 
 
 

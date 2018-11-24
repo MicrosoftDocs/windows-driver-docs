@@ -9,11 +9,7 @@ api_name:
 - DXVA_DeinterlaceBobDeviceClass.DeinterlaceBlt
 api_type:
 - COM
-ms.author: windowsdriverdev
 ms.date: 01/05/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -93,7 +89,7 @@ The *DeinterlaceBlt* function maps directly to a call to the **RenderMoComp** me
 </tr>
 <tr class="even">
 <td align="left"><p><strong>lpBufferInfo</strong></p></td>
-<td align="left"><p>Points to an array of [<strong>DDMOCOMPBUFFERINFO</strong>](https://msdn.microsoft.com/library/windows/hardware/ff549652) structures, one for each input reference sample and one for the destination sample. The destination sample is the first element of the array.</p></td>
+<td align="left"><p>Points to an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff549652" data-raw-source="[&lt;strong&gt;DDMOCOMPBUFFERINFO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549652)"><strong>DDMOCOMPBUFFERINFO</strong></a> structures, one for each input reference sample and one for the destination sample. The destination sample is the first element of the array.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>dwFunction</strong></p></td>
@@ -101,7 +97,7 @@ The *DeinterlaceBlt* function maps directly to a call to the **RenderMoComp** me
 </tr>
 <tr class="even">
 <td align="left"><p><strong>lpInputData</strong></p></td>
-<td align="left"><p>Points to a filled [<strong>DXVA_DeinterlaceBlt</strong>](https://msdn.microsoft.com/library/windows/hardware/ff563912) structure.</p></td>
+<td align="left"><p>Points to a filled <a href="https://msdn.microsoft.com/library/windows/hardware/ff563912" data-raw-source="[&lt;strong&gt;DXVA_DeinterlaceBlt&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff563912)"><strong>DXVA_DeinterlaceBlt</strong></a> structure.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>lpOutputData</strong></p></td>
@@ -110,7 +106,7 @@ The *DeinterlaceBlt* function maps directly to a call to the **RenderMoComp** me
 </tbody>
 </table>
 
- 
+ 
 
 For the DirectX VA device used for deinterlacing, the driver-supplied callback pointed to by **RenderMoComp** is called without calling the display driver-supplied **BeginMoCompFrame** or **EndMoCompFrame** function.
 
@@ -127,9 +123,9 @@ For the DirectX VA device used for deinterlacing, the driver-supplied callback p
 
 [**DXVA\_VideoSample**](https://msdn.microsoft.com/library/windows/hardware/ff564085)
 
- 
+ 
 
- 
+ 
 
 
 

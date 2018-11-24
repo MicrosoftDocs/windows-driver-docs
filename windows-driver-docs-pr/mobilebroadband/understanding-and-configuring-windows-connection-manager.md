@@ -2,11 +2,7 @@
 title: Understanding and configuring Windows Connection Manager
 description: Understanding and configuring Windows Connection Manager
 ms.assetid: 5ef0034f-5b30-4484-a11c-ed19931484a2
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -18,7 +14,7 @@ Automatic connection management, introduced in Windows 8, makes connection deci
 **Note**  
 Windows responds to Ethernet connections but does not automatically manage Ethernet connections.
 
- 
+ 
 
 This topic describes how Windows automatically manages physical wireless connectivity, and does not consider these connections:
 
@@ -29,7 +25,7 @@ This topic describes how Windows automatically manages physical wireless connect
 ## <span id="Connection_management_policies"></span><span id="connection_management_policies"></span><span id="CONNECTION_MANAGEMENT_POLICIES"></span>Connection management policies
 
 
-Windows 8, Windows 8.1, and Windows 10 include a number of policies to control connection management. These policies are not exposed in the Windows user interface but can be configured by using the [WcmSetProperty](http://msdn.microsoft.com/library/windows/desktop/hh437602.aspx) API or Group Policy.
+Windows 8, Windows 8.1, and Windows 10 include a number of policies to control connection management. These policies are not exposed in the Windows user interface but can be configured by using the [WcmSetProperty](https://msdn.microsoft.com/library/windows/desktop/hh437602.aspx) API or Group Policy.
 
 ### <span id="Minimize_simultaneous_connections"></span><span id="minimize_simultaneous_connections"></span><span id="MINIMIZE_SIMULTANEOUS_CONNECTIONS"></span>Minimize simultaneous connections
 
@@ -214,9 +210,9 @@ When multiple profiles exist for the same network, Windows 8 and Windows 8.1 us
 
 2.  **Interface Arrival** The profile on the most recently installed interface will be used.
 
- 
+ 
 
- 
+ 
 
 
 

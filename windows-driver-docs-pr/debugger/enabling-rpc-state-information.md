@@ -3,11 +3,7 @@ title: Enabling RPC State Information
 description: Enabling RPC State Information
 ms.assetid: 8804d941-c241-44cb-8d91-05b94a875d94
 keywords: ["RPC debugging, enabling RPC state information"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -48,9 +44,9 @@ If you want to simultaneously set these levels on a set of networked computers, 
 
 If the network includes computers running versions of Windows that are earlier than Windows XP, the settings will be ignored on those machines.
 
- 
+ 
 
- 
+ 
 
 
 

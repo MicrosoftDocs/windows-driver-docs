@@ -2,11 +2,7 @@
 title: GPU segments
 description: graphics processing unit (GPU) access to physical memory is abstracted in the device driver interface (DDI) by a segmentation model.
 ms.assetid: E6CAD808-73C0-48AB-BF95-76911D5C104A
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -62,7 +58,7 @@ Primary surfaces are understood to be accessed physically by the display control
 <td align="left"></td>
 <td align="left">AccessedPhysically==0</td>
 <td align="left">AccessedPhysically==1</td>
-<td align="left">Primary && AccessedPhysically==0</td>
+<td align="left">Primary &amp;&amp; AccessedPhysically==0</td>
 </tr>
 <tr class="even">
 <td align="left">Memory Segment</td>
@@ -86,11 +82,11 @@ Primary surfaces are understood to be accessed physically by the display control
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

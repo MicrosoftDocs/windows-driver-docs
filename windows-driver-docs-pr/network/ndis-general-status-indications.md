@@ -1,13 +1,8 @@
 ---
 title: NDIS General Status Indications
-author: windows-driver-content
 description: NDIS General Status Indications
 ms.assetid: 0ce19114-9861-4904-8222-1c229aa0008d
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 ms.localizationpriority: medium
 ---
 
@@ -43,9 +38,9 @@ This section includes:
 
 [**NDIS\_STATUS\_PACKET\_FILTER**](ndis-status-packet-filter.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,13 +1,8 @@
 ---
 title: Still Image I/O
-author: windows-driver-content
 description: Still Image I/O
 ms.assetid: 1dd23545-e13a-4a69-b9bc-e2305e4c2163
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +22,9 @@ This section contains additional information about SCSI and USB I/O control code
 
 [Still Image USB I/O](still-image-usb-i-o.md)
 
- 
+ 
 
- 
+ 
 
 
 

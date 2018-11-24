@@ -2,11 +2,7 @@
 title: Opening a Dump File Using WinDbg
 description: There are several ways you can use WinDbg to open a dump file.
 ms.assetid: DE2EABE7-2B7A-4DF9-82FD-EF19D69E31A7
-ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +27,9 @@ The **-v** option (verbose mode) is also useful. For more information about the 
 
 If WinDbg is already in a kernel-mode debugging session, you can open a dump file by using the [**.opendump (Open Dump File)**](-opendump--open-dump-file-.md) command, followed by [**g (Go)**](g--go-.md).
 
- 
+ 
 
- 
+ 
 
 
 

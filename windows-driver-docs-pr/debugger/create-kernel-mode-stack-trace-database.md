@@ -3,11 +3,7 @@ title: Create kernel mode stack trace database
 description: Create kernel mode stack trace database
 ms.assetid: 0c1f94c0-ebc7-4e3c-8101-ba3cf830e7f8
 keywords: ["Create kernel mode stack trace database (global flag)"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -44,15 +40,15 @@ The **Create kernel mode stack trace database** flag creates a run-time stack tr
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
 GFlags displays this flag as a kernel flag setting, but it is not effective at run time, because the kernel is already started.
 
- 
+ 
 
- 
+ 
 
 
 

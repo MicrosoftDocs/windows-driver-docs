@@ -2,11 +2,7 @@
 title: Virtual Machine Queue (VMQ) Interface
 description: Virtual Machine Queue (VMQ) Interface
 ms.assetid: AE0F65F0-7A5B-48FA-8635-617E71D86479
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,9 +31,9 @@ Under VMQ, the physical network adapter transfers the data that matches a receiv
 
 For more information about the VMQ interface, see [Virtual Machine Queue (VMQ)](virtual-machine-queue--vmq-.md).
 
- 
+ 
 
- 
+ 
 
 
 

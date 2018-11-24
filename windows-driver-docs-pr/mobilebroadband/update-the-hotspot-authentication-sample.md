@@ -2,11 +2,7 @@
 title: Update the hotspot authentication sample
 description: Update the hotspot authentication sample
 ms.assetid: 68ebcdee-7b21-4177-b032-ba725ad2aee4
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +30,9 @@ The [Hotspot Authentication Sample](http://go.microsoft.com/fwlink/p/?linkid=313
 
 [Get started with a hotspot authentication app](get-started-with-a-hotspot-authentication-app.md)
 
- 
+ 
 
- 
+ 
 
 
 

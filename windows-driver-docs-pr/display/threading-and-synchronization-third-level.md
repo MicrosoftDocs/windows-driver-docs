@@ -5,11 +5,7 @@ ms.assetid: 780d37d9-40c6-4737-9042-473810868227
 keywords:
 - threading WDK display , third level
 - synchronization WDK display , third level
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,9 +32,9 @@ The Windows Display Driver Model (WDDM) guarantees that the following calls into
 
 -   [*DxgkDdiUnload*](https://msdn.microsoft.com/library/windows/hardware/ff560801)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,6 +3,7 @@ title: MPIO\_EventEntry WMI Class
 description: MPIO\_EventEntry WMI Class
 ms.assetid: 37160002-fe65-4d02-80f5-375f169b7d11
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MPIO\_EventEntry WMI Class
@@ -10,7 +11,7 @@ ms.localizationpriority: medium
 
 An MPIO driver uses the MPIO\_EventEntry WMI class to report any MPIO-related events. This class is currently not implemented.
 
-```
+```cpp
 class MPIO_EventEntry : WMIEvent
 {
         [key, read]
@@ -68,9 +69,9 @@ class MPIO_EventEntry : WMIEvent
 
 There are no methods associated with this WMI class.
 
- 
+ 
 
- 
+ 
 
 
 

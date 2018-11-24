@@ -7,11 +7,7 @@ keywords:
 - audio drivers WDK , architecture
 - architecture WDK audio
 - Windows Driver Model WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +29,9 @@ This section discusses advanced architectural features of Microsoft Windows Driv
 
 [High Definition Audio DDI](high-definition-audio-ddi.md)
 
- 
+ 
 
- 
+ 
 
 
 

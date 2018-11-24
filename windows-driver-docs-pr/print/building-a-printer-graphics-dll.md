@@ -1,16 +1,11 @@
 ---
 title: Building a Printer Graphics DLL
-author: windows-driver-content
 description: Building a Printer Graphics DLL
 ms.assetid: bec1e9cc-a846-43e5-bc9e-e43a151ef6c4
 keywords:
 - printer graphics DLL WDK , building
 - graphics DLL WDK printer , building
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,7 +19,7 @@ When building a printer graphics DLL, you must be aware of the following differe
 
 **Note**   In Windows Vista, printer graphics DLLs can only execute in user mode. For more information, see [Choosing User Mode or Kernel Mode](choosing-user-mode-or-kernel-mode.md).
 
- 
+ 
 
 ### Rules for Building a Printer Graphics DLL
 
@@ -53,17 +48,17 @@ When building a printer graphics DLL, you must be aware of the following differe
 <td><p>Object modules must be linked with the win32k.lib import library.</p></td>
 </tr>
 <tr class="even">
-<td><p>The [<strong>DrvQueryDriverInfo</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556261) function must return <strong>TRUE</strong> for DRVQUERY_USERMODE.</p></td>
-<td><p>The [<strong>DrvQueryDriverInfo</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556261) function must return <strong>FALSE</strong> for DRVQUERY_USERMODE. (Alternatively, the function can be omitted.)</p></td>
+<td><p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff556261" data-raw-source="[&lt;strong&gt;DrvQueryDriverInfo&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556261)"><strong>DrvQueryDriverInfo</strong></a> function must return <strong>TRUE</strong> for DRVQUERY_USERMODE.</p></td>
+<td><p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff556261" data-raw-source="[&lt;strong&gt;DrvQueryDriverInfo&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556261)"><strong>DrvQueryDriverInfo</strong></a> function must return <strong>FALSE</strong> for DRVQUERY_USERMODE. (Alternatively, the function can be omitted.)</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

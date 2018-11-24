@@ -2,11 +2,7 @@
 title: KsCallbackReturn rule ()
 description: The KsCallbackReturn rule specifies that a kernel-streaming (KS) miniport driver callback function returns only allowed status values.
 ms.assetid: 1779301C-5C2C-471F-88D8-3E5F2C90357D
-ms.author: windowsdriverdev
 ms.date: 05/21/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: ["KsCallbackReturn rule ()"]
 topic_type:
 - apiref
@@ -47,12 +43,12 @@ How to test
 <td align="left"><p>To verify this rule, open a Command Prompt window. Enter a Driver Verifier command and specify <strong>/domain ks</strong>.</p>
 <p>For example:</p>
 <p><strong>verifier /domain ks</strong> [<em>options</em>] <strong>/driver</strong> <em>&lt;yourdriver&gt;</em></p>
-<p>For more information, see [Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff545448).</p></td>
+<p>For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff545448" data-raw-source="[Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff545448)">Driver Verifier</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 See also
 --------
@@ -60,9 +56,9 @@ See also
 [Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff545448)
 [*AVStrMiniPinSetDeviceState*](https://msdn.microsoft.com/library/windows/hardware/ff556359)
 [*AVStrMiniPinSetDataFormat*](https://msdn.microsoft.com/library/windows/hardware/ff556355)
- 
+ 
 
- 
+ 
 
 
 

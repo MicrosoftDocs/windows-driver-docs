@@ -7,11 +7,7 @@ keywords:
 - SCO profile drivers WDK Bluetooth
 - incoming SCO connection requests WDK Bluetooth
 - remote connection notifications WDK Bluetooth
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,9 +34,9 @@ To stop receiving notifications of remote device SCO connection attempts, profil
 
 For more information about notifications and callback functions, see [Supporting Bluetooth Event Notifications](supporting-bluetooth-event-notifications.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -8,11 +8,7 @@ keywords:
 - reference counts WDK Network Module Registrar
 - in-progress calls WDK Network Module Registrar
 - counting references WDK Network Module Registrar
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,7 +19,7 @@ A network module should use some form of reference counting to keep track of the
 
 For example, a client module might use an implementation similar to the following for tracking the number of in-progress calls to an attached provider module's NPI functions:
 
-```
+```C++
 // Context structure for the client&#39;s binding to a provider module
 typedef struct CLIENT_BINDING_CONTEXT_ {
   LIST_ENTRY Link;
@@ -435,11 +431,11 @@ Likewise, a provider module might use an implementation along the same lines as 
 
 **Note**  The above code example shows one possible method of tracking the number of in-progress calls to an attached network module's NPI functions. A network module might use an alternate method depending on the implementation details of the particular NPI that the network module supports.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

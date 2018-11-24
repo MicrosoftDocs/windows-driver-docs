@@ -3,11 +3,7 @@ title: gpiokd.clientlist
 description: The gpiokd.clientlist command displays all registered GPIO controllers.
 ms.assetid: 4951C2D2-FA98-4600-A98D-1BC98080D2EB
 keywords: ["gpiokd.clientlist Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!gpiokd.clientlist** command displays all registered GPIO controllers.
 
-```
+```dbgcmd
 !gpiokd.clientlist [Flags] 
 ```
 
@@ -59,7 +55,7 @@ Flags that specify which information is displayed. This parameter is a bitwise O
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="DLL"></span><span id="dll"></span>DLL
 
@@ -71,9 +67,9 @@ Gpiokd.dll
 
 [GPIO Extensions](gpio-extensions.md)
 
- 
+ 
 
- 
+ 
 
 
 

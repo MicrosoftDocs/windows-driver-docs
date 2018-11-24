@@ -1,13 +1,8 @@
 ---
 title: WDI_TLV_WAKE_PACKET_MAGIC_PACKET
-author: windows-driver-content
 description: WDI_TLV_WAKE_PACKET_MAGIC_PACKET is a TLV that contains a pattern ID of a magic packet for OID_WDI_SET_ADD_WOL_PATTERN.
 ms.assetid: F1DEB65B-8DD4-4D4A-9DCB-950C3B562F0A
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_WAKE_PACKET_MAGIC_PACKET Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -35,7 +30,7 @@ The size (in bytes) of a UINT32.
 |--------|----------------------------------------------------|
 | UINT32 | Specifies the wake-on-LAN magic packet pattern ID. |
 
- 
+ 
 
 Requirements
 ------------
@@ -61,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

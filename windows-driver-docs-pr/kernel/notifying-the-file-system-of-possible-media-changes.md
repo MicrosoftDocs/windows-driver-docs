@@ -1,14 +1,9 @@
 ---
 title: Notifying the File System of Possible Media Changes
-author: windows-driver-content
 description: Notifying the File System of Possible Media Changes
 ms.assetid: b1956370-ec9c-4a43-90a8-12705d28e314
 keywords: ["removable media WDK kernel , notifying of media changes", "notifications WDK removable media", "media change notifications WDK removable media"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,9 +37,9 @@ If its physical device indicates that the state of the media might have changed 
 
     If **IoIsErrorUserInduced** returns **TRUE**, the driver must call [**IoSetHardErrorOrVerifyDevice**](https://msdn.microsoft.com/library/windows/hardware/ff549707) so the FSD can open a dialog box to the user, who can then choose to supply the correct media, retry the original request, or cancel the requested operation.
 
- 
+ 
 
- 
+ 
 
 
 

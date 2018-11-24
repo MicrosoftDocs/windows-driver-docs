@@ -1,17 +1,12 @@
 ---
 title: Installing Pages for a Manufacturer
-author: windows-driver-content
 description: Installing Pages for a Manufacturer
 ms.assetid: 637b265f-9138-4696-b52a-ce63cd1f2c01
 keywords:
 - installing customized print Web pages WDK
 - customized print Web pages WDK , installing
 - manufacturer-specific printer installations WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +24,9 @@ The manufacturer-specific page will be used for all of the manufacturer's printe
 
 The system determines a printer's manufacturer by reading the printer's INF file at installation time. When a user attempts to view a printer details page, the system first checks to see if a file named Page1.asp exists in &lt;Root&gt;\\&lt;Manufacturer&gt;\\&lt;Printer Type&gt;. If a file is not found, the system checks &lt;Root&gt;\\&lt;Manufacturer&gt;.
 
- 
+ 
 
- 
+ 
 
 
 

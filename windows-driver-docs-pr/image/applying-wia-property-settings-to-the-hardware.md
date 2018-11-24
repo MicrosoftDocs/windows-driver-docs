@@ -1,13 +1,8 @@
 ---
 title: Applying WIA Property Settings to the Hardware
-author: windows-driver-content
 description: Applying WIA Property Settings to the Hardware
 ms.assetid: adb85f77-1814-427b-8b75-0bfce4c8ca06
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +22,7 @@ When this method is called, the WIA minidriver has been committed to performing 
 
 The following example shows an implementation of the [**IWiaMiniDrv::drvWriteItemProperties**](https://msdn.microsoft.com/library/windows/hardware/ff545020) method:
 
-```
+```cpp
 HRESULT _stdcall CWIADevice::drvWriteItemProperties(
   BYTE                      *pWiasContext,
   LONG                      lFlags,
@@ -101,9 +96,9 @@ HRESULT _stdcall CWIADevice::drvWriteItemProperties(
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

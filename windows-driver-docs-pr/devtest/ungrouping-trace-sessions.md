@@ -6,11 +6,7 @@ keywords:
 - grouping trace sessions
 - trace sessions WDK , groups
 - ungrouping trace sessions
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ To ungroup a trace session group:
 
 When you ungroup stopped trace sessions, they start running again. To remove the trace sessions, stop them, and then [remove them](removing-a-trace-session.md).
 
- 
+ 
 
- 
+ 
 
 
 

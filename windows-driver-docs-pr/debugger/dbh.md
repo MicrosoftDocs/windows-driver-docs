@@ -3,11 +3,7 @@ title: DBH
 description: DBH
 ms.assetid: b5cdc9ef-eca8-4b23-8fbe-06532ffcc12c
 keywords: ["DBH", "DBH, overview", "symbols, DBH"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +26,9 @@ This section includes:
 
 For more information about the DbgHelp API, see the Debug Help Library documentation, which is installed as part of Debugging Tools for Windows if you perform a custom install and select the **SDK** feature and its subfeatures.
 
- 
+ 
 
- 
+ 
 
 
 

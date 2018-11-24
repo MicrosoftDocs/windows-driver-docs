@@ -5,11 +5,7 @@ ms.assetid: 663cbedb-6637-4d7c-86d0-70d962459856
 keywords:
 - video miniport drivers WDK Windows 2000 , graphics
 - architecture WDK video miniport
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +29,9 @@ The video port driver is a system-supplied module provided to support video mini
 
 For more information about NT-based operating system display drivers, see [Introduction to Display (Windows 2000 Model)](introduction-to-display--windows-2000-model-.md) and [Display Drivers (Windows 2000 Model)](display-drivers--windows-2000-model-.md).
 
- 
+ 
 
- 
+ 
 
 
 

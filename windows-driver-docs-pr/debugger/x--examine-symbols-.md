@@ -3,11 +3,7 @@ title: x (Examine Symbols)
 description: The x command displays the symbols in all contexts that match the specified pattern.
 ms.assetid: 8c71c2ca-4a9d-43e4-91b3-f05b5475316d
 keywords: ["x (Examine Symbols) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **x** command displays the symbols in all contexts that match the specified pattern.
 
-```
+```dbgcmd
 x [Options] Module!Symbol 
 x [Options] *
 ```
@@ -115,52 +111,52 @@ Because this pattern is matched to a symbol, the match is not case sensitive, an
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
 
 The following command finds all of the symbols in MyModule that contain the string "spin".
 
-```
+```dbgcmd
 0:000> x mymodule!*spin* 
 ```
 
 The following command quickly locates the "DownloadMinor" and "DownloadMajor" symbols in MyModule.
 
-```
+```dbgcmd
 0:000> x mymodule!downloadm??or 
 ```
 
 You can also show all symbols in the MyModule by using the following command.
 
-```
+```dbgcmd
 0:000> x mymodule!* 
 ```
 
 The preceding commands also force the debugger to reload symbol information from MyModule. If you want to reload the symbols in the module with a minimal display, use the following command.
 
-```
+```dbgcmd
 0:000> x mymodule!*start* 
 ```
 
-A few symbols always contain the string "start". Therefore, the preceding command always displays some output to verify that the command works. But the preceding command avoids the excessive display length of **x mymodule!\***.
+A few symbols always contain the string "start". Therefore, the preceding command always displays some output to verify that the command works. But the preceding command avoids the excessive display length of **x mymodule!\\***.
 
 The display shows the starting address of each symbol and the full symbol name. If the symbol is a function name, the display also includes a list of its argument types. If the symbol is a global variable, its current value is displayed.
 
 There is one other special case of the **x** command. To display the addresses and names of all local variables for the current context, use the following command.
 
-```
+```dbgcmd
 0:000> x * 
 ```
 
 **Note**   In most cases, you cannot access local variables unless private symbols have been loaded. For more information about this situation, see [dbgerr005: Private Symbols Required](dbgerr005--private-symbols-required.md). To display the values of local variables, use the [**dv (Display Local Variables)**](dv--display-local-variables-.md) command.
 
- 
+ 
 
 The following example illustrates the **/0**, **/1**, and **/2** options.
 
-```
+```dbgcmd
 0:000:x86> x /0 MyApp!Add*
 00b51410          
 00b513d0 
@@ -176,13 +172,13 @@ MyApp!AddTwoIntegers
 
 The **/0**, **/1**, and **/2** options are useful if you want to use the output of the **x** command as input to the [**.foreach**](-foreach.md) command.
 
-```
+```dbgcmd
 .foreach ( place { x /0 MyApp!*MySym*} ) { .echo ${place}+0x18 }
 ```
 
 The following example demonstrates the switch **/f** when used to filter functions on the module notepad.exe.
 
-```
+```dbgcmd
 0:000> x /f /v notepad!*main*
 prv func   00000001`00003340  249 notepad!WinMain (struct HINSTANCE__ *, struct HINSTANCE__ *, char *, int)
 prv func   00000001`0000a7b0   1c notepad!WinMainCRTStartup$filt$0 (void)
@@ -191,7 +187,7 @@ prv func   00000001`0000a540  268 notepad!WinMainCRTStartup (void)
 
 When you use the **/v** option, the first column of the display shows the symbol type (local, global, parameter, function, or unknown). The second column is the address of the symbol. The third column is the size of the symbol, in bytes. The fourth column shows the module name and symbol name. In some cases, this display is followed by an equal sign (=) and then the data type of the symbol. The source of the symbol (public or full symbol information) is also displayed.
 
-```
+```dbgcmd
 kd> x /v nt!CmType*
 global 806c9e68    0 nt!CmTypeName = struct _UNICODE_STRING []
 global 806c9e68  150 nt!CmTypeName = struct _UNICODE_STRING [42]
@@ -204,7 +200,7 @@ In the preceding example, the size is given in hexadecimal format, while the dat
 
 You can use the **/s***Size* option to display only those symbols whose size, in bytes, is a certain value. For example, you can restrict the command in the preceding example to symbols that represent objects whose size is 0xA8.
 
-```
+```dbgcmd
 kd> x /v /s a8 nt!CmType*
 global 805bd7b0   a8 nt!CmTypeString = unsigned short *[42]
 ```
@@ -213,7 +209,7 @@ global 805bd7b0   a8 nt!CmTypeString = unsigned short *[42]
 
 The **/t** option causes the debugger to display information about each symbol's data type. Note that for many symbols, this information is displayed even without the **/t** option. When you use **/t**, such symbols have their data type information displayed twice.
 
-```
+```dbgcmd
 0:001> x prymes!__n*
 00427d84 myModule!__nullstring = 0x00425de8 "(null)"
 0042a3c0 myModule!_nstream = 512
@@ -231,21 +227,21 @@ Type information missing error for _nh_malloc
 
 The x command will display an instance of a type.
 
-```
+```dbgcmd
 0:001> x foo!MyClassInstance
 00f4f354          foo!MyClassInstance = 0x00f78768
 ```
 
 The x command does not display anything based on just the name of a type.
 
-```
+```dbgcmd
 0:001> x foo!MyClass
 0:001>
 ```
 
 To display type information using the name of a type, consider using [**dt (Display Type)**](dt--display-type-.md), it provides information for both types and instances of types:
 
-```
+```dbgcmd
 0:001> dt foo!MyClass
    +0x000 IntMemberVariable : Int4B
    +0x004 FloatMemberVariable : Float
@@ -257,7 +253,7 @@ To display type information using the name of a type, consider using [**dt (Disp
 
 You can use wild cards with the x command to display template classes as shown in this sample.
 
-```
+```dbgcmd
 0:001>  x Fabric!Common::ConfigEntry*TimeSpan?
 000007f6`466a2f9c Fabric!Common::ConfigEntry<Common::TimeSpan>::ConfigEntry<Common::TimeSpan> (void)
 000007f6`466a3020 Fabric!Common::ConfigEntry<Common::TimeSpan>::~ConfigEntry<Common::TimeSpan> (void)
@@ -265,7 +261,7 @@ You can use wild cards with the x command to display template classes as shown i
 
 Consider using the [**dt (Display Type)**](dt--display-type-.md) command when working with templates, as the x command does not display individual template class items.
 
-```
+```dbgcmd
 0:001> dt foo!Common::ConfigEntry<Common::TimeSpan>
    +0x000 __VFN_table : Ptr64 
    +0x008 componentConfig_ : Ptr64 Common::ComponentConfig
@@ -280,9 +276,9 @@ Consider using the [**dt (Display Type)**](dt--display-type-.md) command when wo
 
 [**dv (Display Local Variables)**](dv--display-local-variables-.md)
 
- 
+ 
 
- 
+ 
 
 
 

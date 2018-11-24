@@ -7,11 +7,7 @@ keywords:
 - unregistering Winsock Kernel applications
 - WSK WDK networking , registering
 - WskDeregister
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,7 +18,7 @@ A Winsock Kernel (WSK) application that has successfully registered as a WSK cli
 
 For example:
 
-```
+```C++
 // Unload function
 VOID
   Unload(
@@ -39,9 +35,9 @@ VOID
 
 A WSK application is not necessarily required to always call **WskDeregister** from within its *Unload* function. For example, if a WSK application is a subcomponent of a complex driver, the WSK application's call to **WskDeregister** might occur when the WSK application subcomponent is deactivated. In such a scenario, before the driver returns from its *Unload* function, it must still ensure that the WSK application has been successfully unregistered with a call to **WskDeregister**.
 
- 
+ 
 
- 
+ 
 
 
 

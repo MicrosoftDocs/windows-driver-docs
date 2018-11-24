@@ -10,11 +10,7 @@ api_name:
 - INF Manufacturer Section
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,7 +19,7 @@ ms.localizationpriority: medium
 
 The **Manufacturer** section identifies the manufacturer of one or more devices that can be installed by using the INF file.
 
-```
+```cpp
 [Manufacturer]
 
 manufacturer-identifier
@@ -38,7 +34,7 @@ manufacturer-identifier
 <a href="" id="manufacturer-identifier"></a>*manufacturer-identifier*  
 Uniquely identifies a manufacturer and an INF section that contains information that identifies a manufacturer's device models. Each *manufacturer-identifier* entry must exist on a separate line and use the following format:
 
-```
+```cpp
 manufacturer-name |
 %strkey%=models-section-name |
 %strkey%=models-section-name [,TargetOSVersion] [,TargetOSVersion] ...  (Windows XP and later versions of Windows)
@@ -62,7 +58,7 @@ For a description of the *TargetOSVersion* decoration, see the following **Remar
 
 **Important**  Starting with Windows Server 2003 SP1, INF files must decorate models-section-name entries in the **INF Manufacturer section**, along with the associated INF ***Models*** section names, with .ntia64 or .ntamd64 platform extensions to specify non-x86 target operating system versions. These platform extensions are not required in INF files for x86-based target operating system versions or non-PnP driver INF files (such as file system driver INF files for x64-based architectures).
 
- 
+ 
 
 Remarks
 -------
@@ -79,11 +75,11 @@ For Windows XP and later versions of Windows, *models-section-name* entries in t
 
 For Windows XP to Windows 10, version 1511, the format of *TargetOSVersion* decoration is as follows:
 
-```
+```cpp
 nt[Architecture][.[OSMajorVersion][.[OSMinorVersion][.[ProductType][.SuiteMask]]]]
 ```
 Starting with Windows 10, version 1607 (Build 14310 and later), the format of the *TargetOSVersion* decoration is as follows:
-```
+```cpp
 nt[Architecture][.[OSMajorVersion][.[OSMinorVersion][.[ProductType][.[SuiteMask][.[BuildNumber]]]]]
 ```
 
@@ -118,7 +114,7 @@ A number that represents the operating system's major version number. The follow
 | Windows XP             | 5             |
 | Windows 2000           | 5             |
 
- 
+ 
 
 <a href="" id="osminorversion"></a>*OSMinorVersion*  
 A number that represents the operating system's minor version number. The following table defines the minor version for the Windows operating system.
@@ -139,7 +135,7 @@ A number that represents the operating system's minor version number. The follow
 | Windows XP             | 1             |
 | Windows 2000           | 0             |
 
- 
+ 
 
 <a href="" id="producttype"></a>*ProductType*  
 A number that represents one of the VER_NT_xxxx flags defined in *Winnt.h*, such as the following:
@@ -190,7 +186,7 @@ For more information about the *TargetOSVersion* decoration, see [Combining Plat
 
 **Important**  We highly recommend that you always decorate *models-section-name* entries in the **Manufacturer** and [***Models***](inf-models-section.md) sections with platform extensions for target operating systems of Windows XP or later versions of Windows. For x86-based hardware platforms, you should avoid the use of the **.nt** platform extension and use **.ntx86** instead.
 
- 
+ 
 
 If your INF contains **Manufacturer** section entries with decorations, it must also include [**INF *Models* sections**](inf-models-section.md) with names that match the operating system decorations. For example, if an INF contains the following **Manufacturer** section:
 
@@ -243,7 +239,7 @@ Examples
 
 This example shows a **Manufacturer** section typical to an INF for a single IHV.
 
-```
+```cpp
 [Manufacturer]
 %Mfg%=Contoso        ; Models section == Contoso
 
@@ -256,7 +252,7 @@ Mfg = "Contoso, Ltd."
 
 The next example shows part of a **Manufacturer** section typical to an INF for a device-class-specific installer:
 
-```
+```cpp
 [Manufacturer]
 %CONTOSO%=Contoso_Section
 ; several entries omitted here for brevity
@@ -266,7 +262,7 @@ The next example shows part of a **Manufacturer** section typical to an INF for 
 
 The following example shows a **Manufacturer** section that is specific to x86 platforms, Windows XP and later:
 
-```
+```cpp
 [Manufacturer]
 %foo%=foosec,NTx86.5.1
 
@@ -275,7 +271,7 @@ The following example shows a **Manufacturer** section that is specific to x86 p
 
 The following example shows a **Manufacturer** section that is specific to x64 platforms, Windows 10 build 14393 and later:
 
-```
+```cpp
 [Manufacturer]
 %foo%=foosec,NTamd64.10.0...14393
 
@@ -286,7 +282,7 @@ The following two examples show skeletal INF files with a variety of OS-specific
 
 Example 1:
 
-```
+```cpp
 [Manufacturer]
 %MyName% = MyName,NTx86.5.1
 .
@@ -305,7 +301,7 @@ Example 1:
 
 Example 2:
 
-```
+```cpp
 [Manufacturer]
 %MyName% = MyName,NTx86.6.0,NTx86.5.1,
 .
@@ -323,7 +319,7 @@ Example 2:
 
 Example 3:
 
-```
+```cpp
 [Manufacturer]
 %MyMfg% = MyMfg, NTamd64.6.1, NTamd64.10.0, NTamd64.10.0...14310
 .
@@ -346,9 +342,9 @@ Example 3:
 
 [**Strings**](inf-strings-section.md)
 
- 
+ 
 
- 
+ 
 
 
 

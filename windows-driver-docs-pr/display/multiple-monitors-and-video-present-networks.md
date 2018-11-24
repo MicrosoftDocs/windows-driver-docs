@@ -9,11 +9,7 @@ keywords:
 - VidPN WDK display
 - multiple monitors WDK video present networks
 - monitors WDK video present networks
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,9 +34,9 @@ This section describes how the video present network (VidPN) manager, the displa
 
 -   [Determining Whether a VidPN is Supported on a Display Adapter](determining-whether-a-vidpn-is-supported-on-a-display-adapter.md)
 
- 
+ 
 
- 
+ 
 
 
 

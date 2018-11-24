@@ -6,11 +6,7 @@ keywords:
 - header-data split WDK , buffer allocation
 - maximum header size WDK header-data split
 - buffer allocations WDK header-data split
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +24,9 @@ If an IP header contains IPv4 options, IPsec headers, or IPv6 extension headers,
 
 If a header that includes the UDP header, TCP header, or TCP options exceeds the **MaxHeaderSize** value, the NIC must either split the frame at the [beginning of the upper-layer-protocol header](splitting-frames-at-the-beginning-of-the-upper-layer-protocol-headers.md) or must not split the frame.
 
- 
+ 
 
- 
+ 
 
 
 

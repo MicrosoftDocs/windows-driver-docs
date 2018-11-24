@@ -1,17 +1,12 @@
 ---
 title: INF Files for PSHED Plug-Ins
-author: windows-driver-content
 description: INF Files for PSHED Plug-Ins
 ms.assetid: 60bb9902-c558-4ee1-9b33-1a08885e7c06
 keywords:
 - PSHED plug-ins WDK WHEA , INF files
 - platform-specific hardware error driver plug-ins WDK WHEA , INF files
 - INF files WDK WHEA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -44,7 +39,7 @@ A PSHED plug-in's INF file must also include an [**AddReg**](https://msdn.micros
 
 For example:
 
-```
+```cpp
 ;
 ; Example PSHED plug-in INF file
 ;
@@ -105,9 +100,9 @@ ServiceBinary = %12%\%FileName%
 %PSHEDControlPath% = "System\CurrentControlSet\Control\PSHED\Plugins"
 ```
 
- 
+ 
 
- 
+ 
 
 
 

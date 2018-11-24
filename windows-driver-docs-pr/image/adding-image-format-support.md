@@ -1,13 +1,8 @@
 ---
 title: Adding Image Format Support
-author: windows-driver-content
 description: Adding Image Format Support
 ms.assetid: 1ffa7c0d-23ec-402a-a0b5-fb5596a851bf
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -43,7 +38,7 @@ TYMED\_MULTIPAGE\_CALLBACK
 
 The following example shows an implementation of [**IWiaMiniDrv::drvGetWiaFormatInfo**](https://msdn.microsoft.com/library/windows/hardware/ff543986):
 
-```
+```cpp
 HRESULT _stdcall CWIADevice::drvGetWiaFormatInfo(
   BYTE            *pWiasContext,
   LONG            lFlags,
@@ -90,9 +85,9 @@ HRESULT _stdcall CWIADevice::drvGetWiaFormatInfo(
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

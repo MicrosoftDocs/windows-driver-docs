@@ -2,11 +2,7 @@
 title: Wi-Fi device model and objects
 description: The Wi-Fi device is used by the host in the context of two types of objects adapter and port.
 ms.assetid: 0F375ED7-CB20-4F32-8ECE-4822D7787327
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -40,7 +36,7 @@ The operating system configures each port with an operation mode, such as 802.11
 | Wi-Fi Direct Device              | 1 (if supported)      |
 | Wi-Fi Direct Role (GO or Client) | 1 or 2 (if supported) |
 
- 
+ 
 
 ## Port concurrency requirements
 
@@ -54,9 +50,9 @@ The following concurrency requirements for the different port types are as follo
     2.  1 Client
     3.  1 GO, 1 Client
 
- 
+ 
 
- 
+ 
 
 
 

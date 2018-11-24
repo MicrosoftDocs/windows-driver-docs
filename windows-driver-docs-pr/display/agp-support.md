@@ -16,11 +16,7 @@ keywords:
 - drawing AGP support WDK DirectDraw
 - DirectDraw AGP support WDK Windows 2000 display
 - memory WDK DirectDraw AGP
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,9 +38,9 @@ Drivers should set the DDCAPS2\_TEXMANINNONLOCALVIDMEM flag as much as possible 
 
 The remainder of this section discusses the steps necessary to modify your existing driver to support AGP memory using DirectDraw nonlocal display memory features.
 
- 
+ 
 
- 
+ 
 
 
 

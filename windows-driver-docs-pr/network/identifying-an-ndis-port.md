@@ -7,11 +7,7 @@ keywords:
 - NDIS ports WDK , identifyng
 - identifyng NDIS ports
 - port numbers WDK NDIS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,9 +21,9 @@ An NDIS port is identified by its port number. When a miniport driver calls the 
 
 If a driver maintains separate context areas for each port, the driver must provide an efficient algorithm for translating the port number to the corresponding context area.
 
- 
+ 
 
- 
+ 
 
 
 

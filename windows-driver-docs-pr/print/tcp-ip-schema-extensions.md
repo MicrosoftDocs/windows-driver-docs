@@ -1,15 +1,10 @@
 ---
 title: TCP/IP Schema Extensions
-author: windows-driver-content
 description: TCP/IP Schema Extensions
 ms.assetid: fe0f12ee-3e91-40a2-b4fa-f0d4a62460a3
 keywords:
 - in-box autoconfiguration support WDK printer , TCP/IP schema extensions
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +21,9 @@ The following topics describe how you can use the bidi schema extensions availab
 
 [Bidi Extension Sample for TCP/IP Port Monitor](bidi-extension-sample-for-tcp-ip-port-monitor.md)
 
- 
+ 
 
- 
+ 
 
 
 

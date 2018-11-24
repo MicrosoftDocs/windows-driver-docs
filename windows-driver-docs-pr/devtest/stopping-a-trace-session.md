@@ -6,11 +6,7 @@ keywords:
 - trace sessions WDK , stopping
 - stopping trace sessions
 - TraceView WDK , stopping trace
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +29,9 @@ Stopping a trace session does not remove the session from the display or delete 
 
 TraceView uses the **EnableTrace** function to stop the trace session. For more information about this function, see the Microsoft Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

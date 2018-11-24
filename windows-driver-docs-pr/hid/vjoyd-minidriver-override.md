@@ -1,6 +1,5 @@
 ---
 title: VJoyD Minidriver Override
-author: windows-driver-content
 description: VJoyD Minidriver Override
 ms.assetid: a77d2464-7785-44a9-b527-2224d261feac
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - virtual joystick drivers WDK HID , overrides
 - VJoyD WDK HID , overrides
 - overriding virtual minidrivers WDK joysticks
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -63,13 +58,13 @@ If needed, you can set registry values to arbitrary values to prevent JoyHID fro
 </tbody>
 </table>
 
- 
+ 
 
 Note that values like these merely prevent JoyHID from attempting to read data from the device. If your device uses a VJoyD minidriver, you should set the preceding values to properly reflect the device name and driver to be loaded.
 
- 
+ 
 
- 
+ 
 
 
 

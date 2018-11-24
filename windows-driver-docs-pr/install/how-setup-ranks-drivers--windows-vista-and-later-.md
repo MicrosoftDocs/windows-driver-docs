@@ -8,11 +8,7 @@ keywords:
 - driver selections WDK device installations , ranking drivers
 - locating drivers for device installation WDK device installations , ranking drivers
 - searching for drivers during device installation WDK devi
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,9 +31,9 @@ A rank is represented by a value of type DWORD. A rank is sum of a signature sco
 
 For information about entries in the SetupAPI log that indicate the rank of a driver and the type of driver signature, see [Driver Rank Information in the SetupAPI Log](driver-rank-information-in-the-setupapi-log.md).
 
- 
+ 
 
- 
+ 
 
 
 

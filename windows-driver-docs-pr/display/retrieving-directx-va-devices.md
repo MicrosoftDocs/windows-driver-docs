@@ -5,11 +5,7 @@ ms.assetid: 7af82243-7cb3-4e66-a6ee-3f4220baa459
 keywords:
 - DirectX Video Acceleration WDK Windows 2000 display , retrieving devices
 - retrieving DirectX VA devices
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,7 +17,7 @@ ms.localizationpriority: medium
 
 Use the following example code to retrieve DirectX VA devices. This code is an implementation of the [*DdMoCompGetGuids*](https://msdn.microsoft.com/library/windows/hardware/ff550236) callback function. The **GetMoCompGuids** member of the [**DD\_MOTIONCOMPCALLBACKS**](https://msdn.microsoft.com/library/windows/hardware/ff551660) structure points to the callback function.
 
-```
+```cpp
 DWORD g_dwDXVANumSupportedGUIDs = 4;
 const GUID* g_DXVASupportedGUIDs[4] = {
  &DXVA_DeinterlaceContainerDevice,
@@ -57,9 +53,9 @@ DWORD APIENTRY
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

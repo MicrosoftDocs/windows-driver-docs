@@ -1,6 +1,5 @@
 ---
 title: GDL Directives for Namespaces
-author: windows-driver-content
 description: GDL Directives for Namespaces
 ms.assetid: 8927291e-60d8-4a7b-9393-8650c142227d
 keywords:
@@ -11,11 +10,7 @@ keywords:
 - UsingNameSpace directive WDK GDL
 - namespaces WDK GDL , directives
 - namespace directives WDK GDL
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,9 +27,9 @@ GDL contains the following namespace directives:
 
 For more information about namespace directives, see [GDL Namespaces](gdl-namespaces.md).
 
- 
+ 
 
- 
+ 
 
 
 

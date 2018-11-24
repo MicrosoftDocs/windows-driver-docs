@@ -1,13 +1,8 @@
 ---
 title: Driver update methods
-author: windows-driver-content
 ms.assetid: F809BCE4-9176-4503-9EC7-B80AC229ABB5
 description: Update methods supported by the sensor driver.
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -69,7 +64,6 @@ DriverUpdateCS(sensorID)
 
     effectiveCS[] = DriverUpdateSensorDeviceCS(sensorID, selectedCS[])
 }
-
 ```
 
 ```cpp
@@ -88,7 +82,6 @@ DriverUpdateLDA(sensorID)
 
     effectiveLDA = DriverUpdateSensorDeviceLDA(sensorID, selectedLDA)
 }
-
 ```
 
 ## Sensor state updates

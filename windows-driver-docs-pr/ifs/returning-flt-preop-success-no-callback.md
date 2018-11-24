@@ -1,15 +1,10 @@
 ---
 title: Returning FLT_PREOP_SUCCESS_NO_CALLBACK
-author: windows-driver-content
 description: Returning FLT_PREOP_SUCCESS_NO_CALLBACK
 ms.assetid: cde708b0-b572-4444-ba4b-158b6906884e
 keywords:
 - FLT_PREOP_SUCCESS_NO_CALLBACK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,9 +20,9 @@ If the minifilter driver's preoperation callback routine returns FLT\_PREOP\_SUC
 
 The FLT\_PREOP\_SUCCESS\_NO\_CALLBACK status value can be returned for all types of I/O operations.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,11 +3,7 @@ title: Reading the LogViewer Display
 description: Reading the LogViewer Display
 ms.assetid: 425aff5d-780e-4600-a43a-8012d70263f1
 keywords: ["LogViewer, display"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -65,7 +61,7 @@ Each row of the display contains several columns. The significance of each colum
 </tbody>
 </table>
 
- 
+ 
 
 Double-clicking on a row in the viewer will expand the row to reveal the parameters to the function and their values "going in" to the function. If they are designated as OUT parameters, their value "coming out" is shown on the right.
 
@@ -73,9 +69,9 @@ You can also use the ENTER key or the right and left arrow keys to expand and co
 
 Function calls that returned failure status codes are shaded in pink.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -11,11 +11,7 @@ keywords:
 - miniport call managers WDK networking , voice streaming
 - MCMs WDK networking , voice streaming
 - calls WDK CoNDIS WAN
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +29,9 @@ This section describes requirements that a call manager or integrated miniport c
 
 [Specifying Parameters for an Incoming Call](specifying-parameters-for-an-incoming-call.md)
 
- 
+ 
 
- 
+ 
 
 
 

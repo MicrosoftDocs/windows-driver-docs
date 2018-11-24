@@ -18,11 +18,7 @@ keywords:
 - PCCONNECTION_DESCRIPTOR array
 - audio jacks WDK
 - digital connectors WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -62,7 +58,7 @@ Similar to other types of audio filters, a topology filter uses an array of [**P
 
 A typical audio adapter can play wave and MIDI files through a speaker, and can capture audio signals from a microphone and a MIDI synthesizer. The code example below contains the PCCONNECTION\_DESCRIPTOR array for a topology filter that exposes these capabilities:
 
-```
+```cpp
     // topology pins
     enum
     {
@@ -151,9 +147,9 @@ The topology filter's physical connections to other filters that represent other
 
 During device startup, the adapter driver registers the topology filter's physical connections by calling [**PcRegisterPhysicalConnection**](https://msdn.microsoft.com/library/windows/hardware/ff537726) once per connection. The port driver needs this information in order to respond to [**KSPROPERTY\_PIN\_PHYSICALCONNECTION**](https://msdn.microsoft.com/library/windows/hardware/ff565205) get-property requests.
 
- 
+ 
 
- 
+ 
 
 
 

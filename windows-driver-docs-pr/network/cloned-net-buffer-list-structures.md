@@ -9,11 +9,7 @@ keywords:
 - parent/child NET_BUFFER_LIST relationships WDK networking
 - child/parent NET_BUFFER_LIST relationships WDK networking
 - relationships WDK NET_BUFFER_LIST
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,9 +38,9 @@ Drivers call the [**NdisFreeCloneNetBufferList**](https://msdn.microsoft.com/lib
 
 [Derived NET\_BUFFER\_LIST Structures](derived-net-buffer-list-structures.md)
 
- 
+ 
 
- 
+ 
 
 
 

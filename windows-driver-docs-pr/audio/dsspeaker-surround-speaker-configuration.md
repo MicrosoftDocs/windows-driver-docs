@@ -4,11 +4,7 @@ description: DSSPEAKER_SURROUND Speaker Configuration
 ms.assetid: de8f861b-f190-4915-b3f0-95d39965b612
 keywords:
 - DSSPEAKER_SURROUND speaker configuration WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,7 +16,7 @@ ms.localizationpriority: medium
 
 **Note**  This information applies to Windows XP and earlier operating systems. Starting with Windows Vista, **IDirectSound::GetSpeakerConfig** and **IDirectSound::SetSpeakerConfig** have been deprecated.
 
- 
+ 
 
 An application program can change the DirectSound speaker configuration to surround mode by calling the **IDirectSound::SetSpeakerConfig** method with the speaker-configuration parameter set to DSSPEAKER\_SURROUND. This specifies a four-channel PCM format in which the channels are mapped to left, right, center, and back speakers.
 
@@ -40,9 +36,9 @@ In case (3) above, the application should avoid using hardware buffers for any o
 
 A stereo stream that has been surround-encoded by a KSNODETYPE\_PROLOGIC\_ENCODER node can be decoded into four channels (left, right, center, and back) by a [**KSNODETYPE\_PROLOGIC\_DECODER**](https://msdn.microsoft.com/library/windows/hardware/ff537185) node.
 
- 
+ 
 
- 
+ 
 
 
 

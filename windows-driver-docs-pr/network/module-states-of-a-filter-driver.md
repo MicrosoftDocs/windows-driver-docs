@@ -9,11 +9,7 @@ keywords:
 - filter modules WDK networking , states of filter drivers
 - filter drivers WDK networking , filter modules
 - NDIS filter drivers WDK ,
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -68,9 +64,9 @@ In the *Pausing* state, a filter driver completes any operations that are requir
 
 [NDIS Filter Drivers](ndis-filter-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

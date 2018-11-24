@@ -4,11 +4,7 @@ description: Packet descriptors and extensions
 ms.assetid: 7B2357AE-F446-4AE8-A873-E13DF04D8D71
 keywords:
 - WDF Network Adapter Class Extension Packet descriptors and extensions, NetAdapterCx datapath descriptors, multi-ring buffers, NetAdapterCx packet descriptors, NetAdapterCx packet extensions
-ms.author: windowsdriverdev
-ms.date: 03/18/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 07/31/2018
 ms.localizationpriority: medium
 ---
 
@@ -16,7 +12,7 @@ ms.localizationpriority: medium
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-In NetAdapterCx, *packet descriptors* are small, compact and runtime-extensible structures that describe a network packet. Each packet requires the following:
+In NetAdapterCx, *packet descriptors* are small, compact, runtime-extensible structures that describe a network packet. Each packet requires the following:
 
 - One core descriptor 
 - One or more fragment descriptors
@@ -53,7 +49,7 @@ Extensibility is a core feature of the NetAdapterCx packet descriptor, forming t
 
 ![NetAdapterCx packet descriptor layout](images/packet-descriptors-1-layout.png)
 
-NIC client drivers are not permitted to hardcode the offset to any extension block. Instead, they must query at runtime for the offset to any particular extension. For example, a driver might query the offset to Extension B, and get back 70 bytes like in the following figure:
+NIC client drivers are not permitted to hardcode the offset to any extension block. Instead, they must query at runtime for the offset to any particular extension. For example, a driver might query the offset to Extension B and get back 70 bytes like in the following figure:
 
 ![Querying the offset to an extension of the core packet descriptor](images/packet-descriptors-2-offset-query.png)
 
@@ -86,52 +82,13 @@ The extensibility feature outlined previously provides benefits to help client d
 
 ### Registering packet extensions
 
-The first step in working with packet extensions in your NIC client driver is to declare and register them in your *[EvtNetAdapterSetCapabilities](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nc-netadapter-evt_net_adapter_set_capabilities)* callback function. You might do so like in the following example. Note that the example leaves out error handling for clarity.
+The first step in working with packet extensions in your NIC client driver is to declare your supported hardware offloads. When you advertise support for offloads such as checksum and LSO, NetAdapterCx automatically registers the associated packet extensions on your behalf.
 
-> [!WARNING]
-> This example calls the **NetAdapterRegisterPacketExtension** method, which is available in the *NetPacketExtensionP.h* header from the [Realtek Github sample driver](https://github.com/Microsoft/NetAdapter-Cx-Driver-Samples/tree/master/RtEthSample). Because this header is prereleased product, it may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the contents of this header.
-
-```C++
-NTSTATUS
-MyAdapterSetCapabilities(
-    _In_ NETADAPTER Adapter
-)
-{
-    NTSTATUS status = STATUS_SUCCESS;
-
-    // Set various capabilities such as link layer MTU size, link layer capabilities, power capabilities,
-    // and datapath capabilities
-    ...   
-
-    // Register the checksum extension
-    NET_PACKET_EXTENSION extension;
-    NET_PACKET_EXTENSION_INIT(
-        &extension,
-        NET_PACKET_EXTENSION_CHECKSUM_NAME,
-        NET_PACKET_EXTENSION_CHECKSUM_VERSION_1,
-        NET_PACKET_EXTENSION_CHECKSUM_VERSION_1_SIZE,
-        sizeof(ULONG) - 1);
-
-    status = NetAdapterRegisterPacketExtension(netAdapter, &extension);
-
-    // Register the LSO extension
-    NET_PACKET_EXTENSION_INIT(
-        &extension,
-        NET_PACKET_EXTENSION_LSO_NAME,
-        NET_PACKET_EXTENSION_LSO_VERSION_1,
-        NET_PACKET_EXTENSION_LSO_VERSION_1_SIZE,
-        sizeof(ULONG) - 1);
-
-    status = NetAdapterRegisterPacketExtension(netAdapter, &extension);
-
-    // Set other needed capabilities
-    ...
-}
-```
+For a code example of advertising hardware offloads for checksum and LSO, see [NetAdapterCx hardware offloads](netadaptercx-hardware-offloads.md).
 
 ### Querying packet extension offsets for datapath queues
 
-After registering packet extensions during *EvtNetAdapterSetCapabilities*, you'll need the extension offsets to access each one as you process your packets. To reduce calls out of your driver and improve performance, you can query the offsets for your extensions during the *EvtNetAdapterCreateTx(Rx)Queue* callback function and store the offset information in your queue context. Here is an example for a transmit queue. This example is similar to the example on *[EvtNetAdapterCreateTxQueue](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nc-netadapter-evt_net_adapter_create_txqueue)* but focuses only on packet extensions.
+After registering packet extensions by declaring your hardware offload support, you'll need the extension offsets to access each one as you process your packets. To reduce calls out of your driver and improve performance, you can query the offsets for your extensions during the *EvtNetAdapterCreateTx(Rx)Queue* callback function and store the offset information in your queue context. Here is an example for a transmit queue. This example is similar to the example on *[EvtNetAdapterCreateTxQueue](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nc-netadapter-evt_net_adapter_create_txqueue)* but focuses only on packet extensions.
 
 ```C++
 NTSTATUS
@@ -143,8 +100,8 @@ MyAdapterCreateTxQueue(
     NTSTATUS status = STATUS_SUCCESS;
 
     // Prepare the configuration structure
-    NET_TXQUEUE_CONFIG txConfig;
-    NET_TXQUEUE_CONFIG_INIT(
+    NET_PACKET_QUEUE_CONFIG txConfig;
+    NET_PACKET_QUEUE_CONFIG_INIT(
         &txConfig,
         EvtTxQueueAdvance,
         EvtTxQueueSetNotificationEnabled,
@@ -154,7 +111,7 @@ MyAdapterCreateTxQueue(
     ...
 
     // Create the transmit queue
-    NETTXQUEUE txQueue;
+    NETPACKETQUEUE txQueue;
     status = NetTxQueueCreate(
         txQueueInit,
         &txAttributes,

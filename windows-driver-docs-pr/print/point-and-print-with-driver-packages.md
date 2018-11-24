@@ -1,15 +1,10 @@
 ---
 title: Point and Print with Driver Packages
-author: windows-driver-content
 description: Point and Print with Driver Packages
 ms.assetid: 4574d0c3-2ec5-4870-96ac-f828ba8515b3
 keywords:
 - Point and Print WDK , packages
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +23,9 @@ The point and print process is different in Windows Vista from earlier versions 
 
 Driver package installation requires a driver store, which is not available on versions of Windows earlier than Windows Vista. When a client that is running an earlier version of Windows connects to a Windows Vista print server, the print server uses point and print without packages to install the printer on the client computer.
 
- 
+ 
 
- 
+ 
 
 
 

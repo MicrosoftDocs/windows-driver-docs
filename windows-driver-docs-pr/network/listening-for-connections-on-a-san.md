@@ -10,11 +10,7 @@ keywords:
 - nonblocking mode WDK SANs
 - WSPListen
 - SAN sockets WDK , listening for connections
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,9 +38,9 @@ The switch accepts incoming connections only in nonblocking mode. The switch cal
 
 If a connection request arrives and the SAN service provider's backlog of connection requests is full, the SAN service provider should immediately indicate to the remote peer that it refuses the connection request. In this case, the SAN service provider does not signal the event object to inform the switch to accept or reject the connection request. The SAN service provider on the remote peer must then fail its connection operation that was initiated by a **WSPConnect** call with the WSAECONNREFUSED error code.
 
- 
+ 
 
- 
+ 
 
 
 

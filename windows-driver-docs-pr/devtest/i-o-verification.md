@@ -6,11 +6,7 @@ keywords:
 - I/O Verification feature WDK Driver Verifier
 - Level 1 I/O Verification WDK Driver Verifier
 - Level 2 I/O Verification WDK Driver Verifier
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -144,9 +140,9 @@ You can activate the I/O Verification feature for one or more drivers by using D
 
     The I/O Verification feature is also included in the standard settings. To use this feature, in Driver Verifier Manager, click **Create Standard Settings**.
 
- 
+ 
 
- 
+ 
 
 
 

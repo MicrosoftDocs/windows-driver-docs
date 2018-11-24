@@ -11,11 +11,7 @@ keywords:
 - virtual device mirroring WDK Windows 2000 display
 - video miniport drivers WDK Windows 2000 , mirror drivers
 - assistive technologies and mirror drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -71,7 +67,7 @@ A [*mirror driver*](https://msdn.microsoft.com/library/windows/hardware/ff556308
 </tbody>
 </table>
 
- 
+ 
 
 GDI supports a *virtual desktop* and provides the ability to replicate a portion of the virtual desktop on a mirror device. GDI implements the virtual desktop as a graphics layer above the physical display driver layer. All drawing operations start in this virtual desktop space; GDI clips and renders them on the appropriate physical display devices that exist in the virtual desktop.
 
@@ -79,11 +75,11 @@ A mirror device can specify an arbitrary [*clip region*](https://msdn.microsoft.
 
 **Note**   In Windows 2000 and later, the mirror driver's clip region must include the primary display device.
 
- 
+ 
 
 **Note**   In Windows Vista and later, the Desktop Windows Manager (DWM) will be turned off when the mirror driver is loaded.
 
- 
+ 
 
 The *mirror* driver code sample illustrates how to implement a mirror driver. For more information that will help you understand the sample:
 
@@ -123,11 +119,11 @@ GDI allows the same driver to run on both a single and multiple-monitor system. 
 
 **Note**   Mirror drivers are not required to render with pixel-perfect accuracy when rendering on the client side with such accuracy may be difficult. For example, the adapter/monitor receiving the mirrored image is not required to render [Grid Intersect Quantization](cosmetic-lines.md) (GIQ) line drawing and polygon fills with the same precision as the adapter/monitor being mirrored.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

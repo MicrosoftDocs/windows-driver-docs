@@ -6,11 +6,7 @@ keywords:
 - Static Driver Verifier WDK , limitations
 - StaticDV WDK , limitations
 - SDV WDK , limitations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -149,9 +145,9 @@ The SDV [verification engine](verification-engine.md) has technical limitations 
 
 -   SDV does not support virtual inheritance or virtual functions. SDV does not generate defects that follow a code path through virtual functions, which might lead to lost true defects. Virtual inheritance is treated like regular inheritance, which might lead to false defects or lost true defects.
 
- 
+ 
 
- 
+ 
 
 
 

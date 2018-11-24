@@ -3,11 +3,7 @@ title: Window Automatically Open Disassembly
 description: Window Automatically Open Disassembly
 ms.assetid: f3fbdb58-e41b-4150-b762-2b8ef2baed55
 keywords: ["Window Automatically Open Disassembly"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,9 +17,9 @@ Select **Automatically Open Disassembly** on the **Window** menu to cause the [D
 
 If you clear this command, you can still open the Disassembly window by clicking **Disassembly** on the **View** menu, pressing ALT+7, or clicking the **Disassembly (Alt+F7)** button (![screen shot of the disassembly button](images/tbdisasm2.png)) on the toolbar.
 
- 
+ 
 
- 
+ 
 
 
 

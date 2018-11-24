@@ -1,6 +1,5 @@
 ---
 title: Sample User-Mode Code for Methods and Events
-author: windows-driver-content
 description: Sample User-Mode Code for Methods and Events
 ms.assetid: 0d564eb7-8e81-43bd-b539-f1240b3a21de
 keywords:
@@ -11,11 +10,7 @@ keywords:
 - automation tables WDK AVStream
 - notifications WDK AVStream
 - KsProxy plug-in sample WDK AVStream
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,7 +23,7 @@ To learn how to support properties, methods, and events in your kernel-mode mini
 
 After you have provided a minidriver that supports a given method, you can invoke that method by calling [**IKsControl::KsMethod**](https://msdn.microsoft.com/library/windows/hardware/ff559785) from a user-mode plug-in, as shown in the following code example.
 
-```
+```cpp
 PVOID MethodBuffer; // Your method arguments buffer
 ULONG MethodBufferSize; // Your method buffer size
 
@@ -52,7 +47,7 @@ In the automation tables you provide in kernel mode, you can use the **Flags** m
 
 To register for an event that you support in your minidriver, use the following user-mode code example.
 
-```
+```cpp
 HANDLE EventHandle; // Your event handle.
 
 KSEVENT Event;
@@ -82,9 +77,9 @@ In the above example, notification continues until the minidriver disables the e
 
 If you are supporting events with USB Video Class Extension Units, see [Supporting Autoupdate Events with Extension Units](supporting-autoupdate-events-with-extension-units.md).
 
- 
+ 
 
- 
+ 
 
 
 

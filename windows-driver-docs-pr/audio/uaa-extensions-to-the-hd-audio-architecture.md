@@ -7,11 +7,7 @@ keywords:
 - High Definition Audio (HD Audio), Universal Audio Architecture
 - UAA WDK
 - Universal Audio Architecture WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +30,9 @@ A bus controller design can omit these features and still be fully compatible wi
 
 For UAA version 1.0, the HD Audio hardware version must be 1.0. (The VMAJ and VMIN registers must specify a major version number of 01h and a minor version number of 00h.)
 
- 
+ 
 
- 
+ 
 
 
 

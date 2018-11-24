@@ -2,11 +2,7 @@
 title: Using TraceView
 description: Using TraceView
 ms.assetid: 2feedbe0-ee42-487d-b8b9-06c2bc4532ee
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,9 +33,9 @@ This section explains how to use the features of TraceView. It includes:
 
 [TraceView Command-Line Interface](traceview-command-line-interface.md)
 
- 
+ 
 
- 
+ 
 
 
 

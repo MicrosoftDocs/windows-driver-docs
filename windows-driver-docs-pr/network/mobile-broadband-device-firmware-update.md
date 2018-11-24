@@ -2,11 +2,7 @@
 title: Mobile Broadband Device Firmware Update
 description: This topic provides guidance to Mobile Broadband (MB) module manufacturers intending to support firmware upgrade devices via Windows Update (WU).
 ms.assetid: EBB95A11-14EF-4BF5-BE90-DB99624554CD
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -41,9 +37,9 @@ The following diagram shows the high level design and interaction between the th
 -   Once the IHV UMDF is loaded on the soft dev-node it is responsible for controlling the firmware update flow. It should be noted that the life time of the soft dev-node is tied to physical presence of the MBIM device. The UMDF driver shall perform the following steps to performing firmware updates
     -   It is acceptable for the device to reboot multiple times during the firmware update process, but would cause the UMDF driver to get unloaded/reloaded
     -   The entire firmware upgrade process, including reboots, should take place no more than 60 seconds.
-    -   After the firmware update is completed and device has reverted to MBIM mode, Windows should be notified. This is done by clearing the previously set DEVPKEY\_Device\_PostInstallInProgress property. **http://msdn.microsoft.com/library/windows/hardware/hh451399(v=vs.85).aspx** describes how to set a property on dev-node. A previously set property can be cleared using DEVPROP\_TYPE\_EMPTY.
+    -   After the firmware update is completed and device has reverted to MBIM mode, Windows should be notified. This is done by clearing the previously set DEVPKEY\_Device\_PostInstallInProgress property. **https://msdn.microsoft.com/library/windows/hardware/hh451399(v=vs.85).aspx** describes how to set a property on dev-node. A previously set property can be cleared using DEVPROP\_TYPE\_EMPTY.
     -   During OnPrepareHardware UMDF callback, the UMDF driver shall check if the firmware on the device needs to be updated. This is done by comparing the version of the firmware on the device against the one that came in via Windows Update. Additional guidance is provided later in the document regarding placement location of firmware binary. If firmware update is required, the UMDF driver should:
-        -   Schedule a work-item as described in **http://msdn.microsoft.com/library/windows/hardware/hh463997(v=VS.85).aspx**. The actual firmware upgrade happens in the context of the work-item.
+        -   Schedule a work-item as described in **https://msdn.microsoft.com/library/windows/hardware/hh463997(v=VS.85).aspx**. The actual firmware upgrade happens in the context of the work-item.
         -   Once the work-item is successfully scheduled, notify Windows about the start of firmware update. It is done by setting the DEVPKEY\_Device\_PostInstallInProgress property on the soft dev-node in the context of OnPrepareHardware UMDF callback.
         -   It is important not to block the OnPrepareHardware callback while the firmware update is in progress. It is expected that OnPrepareHardware callback is completed within a second or two at the most.
 
@@ -57,7 +53,7 @@ This section provides a sample INF that is part of the WU package. The key point
 -   The UMDF driver is aware of this predefined well-known location.
 -   The sample INF template below has highlighted items that need to be filled by the IHV.
 
-```
+```cpp
 [Version]
 Signature       = "$WINDOWS NT$"
 Class           = Firmware
@@ -171,10 +167,10 @@ Unsolicited Event = **Unsupported**
 
 As indicated earlier, the UMDF driver should indicate to the Windows when it starts and completes firmware upgrade. This section provides code snippets that show how the driver should notify Windows of these events.
 
-```
+```cpp
 /**
  * This is the IPnpCallbackHardware*:OnPrepareHardware handler 
- * in the UMDF driver. This is called everytime the firmware 
+ * in the UMDF driver. This is called every time the firmware 
  * update is device is started. Since this handler should be 
  * blocked from returning actual the firmware update process 
  * should be done in a workitem 
@@ -192,7 +188,7 @@ CMyDevice::OnPrepareHardware(IWDFDevice* pDevice)
     // update against a MB device that loads the updated firmware 
     // on device boot. So the firmware update driver needs to
     // send the new firmware down to the device and then tell 
-    // the device to initate a stop/start. Once the device has
+    // the device to initiate a stop/start. Once the device has
     // reappeared, it would have automatically loaded the 
     // new firmware
     // 
@@ -418,9 +414,9 @@ CMyDevice::SignalFirmwareUpdateComplete(
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,12 +1,7 @@
 ---
 Description: This topic describes the steps that are required to submit an initialized URB to the USB driver stack to process a particular request.
 title: How to Submit an URB
-author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -139,7 +134,7 @@ Exit:
 // Parameters:
 //
 //      DeviceObject: Pointer to the device object. 
-//      Irp:          Pointer to an an I/O Request Packet. 
+//      Irp:          Pointer to an I/O Request Packet. 
 //      CompletionContext: Context for the completion routine.
 //
 // Return Value:                                                       
@@ -164,7 +159,6 @@ NTSTATUS SyncCompletionRoutine ( PDEVICE_OBJECT DeviceObject,
 
     return STATUS_MORE_PROCESSING_REQUIRED;
 } 
-
 ```
 
 ## Complete example

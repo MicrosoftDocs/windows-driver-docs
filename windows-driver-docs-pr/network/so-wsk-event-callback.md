@@ -1,13 +1,8 @@
 ---
 title: SO_WSK_EVENT_CALLBACK
-author: windows-driver-content
 description: SO_WSK_EVENT_CALLBACK
 ms.assetid: cb697103-20ef-4667-8823-060a68d904c8
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - SO_WSK_EVENT_CALLBACK Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -54,7 +49,7 @@ To enable or disable event callback functions on a socket, a WSK application cal
 </tr>
 <tr class="odd">
 <td><p><em>InputBuffer</em></p></td>
-<td><p>A pointer to a [<strong>WSK_EVENT_CALLBACK_CONTROL</strong>](https://msdn.microsoft.com/library/windows/hardware/ff571166) structure</p></td>
+<td><p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff571166" data-raw-source="[&lt;strong&gt;WSK_EVENT_CALLBACK_CONTROL&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff571166)"><strong>WSK_EVENT_CALLBACK_CONTROL</strong></a> structure</p></td>
 </tr>
 <tr class="even">
 <td><p><em>OutputSize</em></p></td>
@@ -71,11 +66,6 @@ To enable or disable event callback functions on a socket, a WSK application cal
 </tbody>
 </table>
 
- 
-
-```
-
-```
 
 A WSK application does not specify a pointer to an IRP when calling the **WskControlSocket** function to enable event callback functions on a socket.
 
@@ -113,16 +103,11 @@ The following table shows the valid event flags for a listening socket.
 <tbody>
 <tr class="odd">
 <td><p>WSK_EVENT_ACCEPT</p></td>
-<td><p>[<em>WskAcceptEvent</em>](https://msdn.microsoft.com/library/windows/hardware/ff571120)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff571120" data-raw-source="[&lt;em&gt;WskAcceptEvent&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff571120)"><em>WskAcceptEvent</em></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
-
-```
-
-```
 
 The following table shows the valid event flags for a datagram socket.
 
@@ -140,16 +125,12 @@ The following table shows the valid event flags for a datagram socket.
 <tbody>
 <tr class="odd">
 <td><p>WSK_EVENT_RECEIVE_FROM</p></td>
-<td><p>[<em>WskReceiveFromEvent</em>](https://msdn.microsoft.com/library/windows/hardware/ff571142)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff571142" data-raw-source="[&lt;em&gt;WskReceiveFromEvent&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff571142)"><em>WskReceiveFromEvent</em></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
 
-```
-
-```
 
 The following table shows the valid event flags for a connection-oriented socket.
 
@@ -167,24 +148,19 @@ The following table shows the valid event flags for a connection-oriented socket
 <tbody>
 <tr class="odd">
 <td><p>WSK_EVENT_DISCONNECT</p></td>
-<td><p>[<em>WskDisconnectEvent</em>](https://msdn.microsoft.com/library/windows/hardware/ff571130)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff571130" data-raw-source="[&lt;em&gt;WskDisconnectEvent&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff571130)"><em>WskDisconnectEvent</em></a></p></td>
 </tr>
 <tr class="even">
 <td><p>WSK_EVENT_RECEIVE</p></td>
-<td><p>[<em>WskReceiveEvent</em>](https://msdn.microsoft.com/library/windows/hardware/ff571140)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff571140" data-raw-source="[&lt;em&gt;WskReceiveEvent&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff571140)"><em>WskReceiveEvent</em></a></p></td>
 </tr>
 <tr class="odd">
 <td><p>WSK_EVENT_SEND_BACKLOG</p></td>
-<td><p>[<em>WskSendBacklogEvent</em>](https://msdn.microsoft.com/library/windows/hardware/ff571147)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff571147" data-raw-source="[&lt;em&gt;WskSendBacklogEvent&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff571147)"><em>WskSendBacklogEvent</em></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
-
-```
-
-```
 
 A listening socket can automatically enable event callback functions on connection-oriented sockets that are accepted by the listening socket. A WSK application automatically enables these callback functions by enabling the connection-oriented socket event callback functions on the listening socket. The event callback functions are automatically enabled on an accepted connection-oriented socket only if the socket is accepted by the listening socket's [*WskAcceptEvent*](https://msdn.microsoft.com/library/windows/hardware/ff571120) event callback function. If the connection-oriented socket is accepted by the listening socket's [**WskAccept**](https://msdn.microsoft.com/library/windows/hardware/ff571109) function, the accepted socket's event callback functions are not automatically enabled.
 
@@ -212,9 +188,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

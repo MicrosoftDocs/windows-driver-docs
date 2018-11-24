@@ -1,19 +1,18 @@
 ---
 title: MagneticStripeReaderErrorOccured
-description: MagneticStripeReaderErrorOccured
+description: The MagneticStripeReaderErrorOccured event occurs when there is a magnetic stripe reader (MSR) error, such as a scanning error.
 ms.assetid: 'c2402411-1bbf-44c1-bf7f-813f6d967822'
+ms.date: 09/07/2018
 ms.localizationpriority: medium
 ---
 
 # MagneticStripeReaderErrorOccured
 
-
 This event occurs when there is a magnetic stripe reader (MSR) error, such as a scanning error.
 
-Syntax
-------
+## Syntax
 
-``` syntax
+```cpp
 typedef struct _MSR_ERROR_EVENT
 {
     PosEventDataHeader Header;
@@ -71,23 +70,10 @@ The following table shows the memory layout of the data buffer for this event.
 | wchar\_T \[MSR\_ERROR\_MAX\_MESSAGE\_LENGTH\]                       | Up to **MSR\_ERROR\_MAX\_MESSAGE\_LENGTH** wchar\_t of error **Null**-terminated message text                                  |
 
 
-
-Remarks
--------
+## Remarks
 
 If a scanning error occurs, and some scan data was obtained, the event data contains the partial scan data.
 
-Requirements
-------------
+## Requirements
 
 **Header:** pointofservicedriverinterface.h
-
-
-
-
-
-
-
-
-
-

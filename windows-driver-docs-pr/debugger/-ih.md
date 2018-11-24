@@ -3,11 +3,7 @@ title: ih
 description: The ih extension displays the interrupt history record for the specified processor.
 ms.assetid: 4c81bde4-da8b-4c44-8013-6c586c08e22b
 keywords: ["interrupt history record", "ih Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,13 +18,13 @@ ms.localizationpriority: medium
 
 The **!ih** extension displays the interrupt history record for the specified processor.
 
-```
+```dbgcmd
 !ih Processor
 ```
 
 **Important**  This command has been deprecated in the Windows Debugger Version 10.0.14257 and later, and is no longer available.
 
- 
+ 
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 
@@ -55,7 +51,7 @@ Specifies a processor. If *Processor* is omitted, the current processor is used.
 </tbody>
 </table>
 
- 
+ 
 
 This extension command can only be used with an Itanium-based target computer.
 
@@ -66,7 +62,7 @@ This extension displays the interrupt history record without referencing the pro
 
 Here is an example of the output from this extension:
 
-```
+```dbgcmd
 kd> !ih
 Total # of interruptions = 2093185
 Vector              IIP                   IPSR          ExtraField 
@@ -99,9 +95,9 @@ EXTERNAL INTERRUPT  e0000000830623b0      1010092a6018  IVR=               d0
 ...
 ```
 
- 
+ 
 
- 
+ 
 
 
 

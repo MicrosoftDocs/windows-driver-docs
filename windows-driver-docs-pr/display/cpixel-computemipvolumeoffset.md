@@ -11,11 +11,7 @@ api_location:
 - pixel.hpp
 api_type:
 - COM
-ms.author: windowsdriverdev
 ms.date: 01/05/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,11 +25,11 @@ Syntax
 
 ```ManagedCPlusPlus
 static void  ComputeMipVolumeOffset(
-   const D3DVOLUME_DESC *pDescTopLevel,
-         UINT           iLevel,
-         BYTE           *pBits,
-   const D3DBOX         *pBox,
-   const D3DLOCKED_BOX  *pLockedBoxData
+   const D3DVOLUME_DESC *pDescTopLevel,
+         UINT           iLevel,
+         BYTE           *pBits,
+   const D3DBOX         *pBox,
+   const D3DLOCKED_BOX  *pLockedBoxData
 );
 ```
 
@@ -87,9 +83,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

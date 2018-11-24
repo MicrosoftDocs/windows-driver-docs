@@ -8,11 +8,7 @@ keywords:
 - SDV WDK , output files
 - files WDK Static Driver Verifier
 - output files WDK Static Driver Verifier
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +25,9 @@ This section includes:
 
 When evaluating the results of a SDV verification, you must examine all of the output carefully and investigate any errors.
 
- 
+ 
 
- 
+ 
 
 
 

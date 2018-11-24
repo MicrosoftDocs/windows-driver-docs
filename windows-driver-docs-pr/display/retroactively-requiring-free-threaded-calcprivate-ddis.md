@@ -2,11 +2,7 @@
 title: Retroactively Requiring Free-Threaded CalcPrivate DDIs
 description: Retroactively Requiring Free-Threaded CalcPrivate DDIs
 ms.assetid: a25fbe8e-737a-4b47-8293-7cf13ebc8ac2
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -17,9 +13,9 @@ Direct3D version 11 retroactively requires user-mode display driver functions th
 
 A notable exception to this retroactive free-threaded requirement is the [**CalcPrivateDeviceSize**](https://msdn.microsoft.com/library/windows/hardware/ff538288) function that is used to satisfy display device creation. *CalcPrivateDeviceSize* is located on the adapter function table ([**D3D10\_2DDI\_ADAPTERFUNCS**](https://msdn.microsoft.com/library/windows/hardware/ff541900) or [**D3D10DDI\_ADAPTERFUNCS**](https://msdn.microsoft.com/library/windows/hardware/ff541811)). *CalcPrivateDeviceSize* does not fall underneath the group of functions that experienced the relaxation in threading model. It is not required to free-thread the *CalcPrivateDeviceSize* function.
 
- 
+ 
 
- 
+ 
 
 
 

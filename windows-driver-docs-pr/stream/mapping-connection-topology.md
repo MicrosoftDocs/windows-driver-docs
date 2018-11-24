@@ -1,6 +1,5 @@
 ---
 title: Mapping Connection Topology
-author: windows-driver-content
 description: Mapping Connection Topology
 ms.assetid: f11ffc48-a117-4b75-bc19-7a3762e6ba19
 keywords:
@@ -10,11 +9,7 @@ keywords:
 - mapping connection topology
 - connection topology mapping WDK BDA
 - BDA_TEMPLATE_CONNECTION
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,7 +31,7 @@ Setting the node type to a value of −1 indicates that the connection begins or
 
 The following code snippet shows example arrays of node types and pin types that are available in the template filter descriptor for the BDA minidriver:
 
-```
+```cpp
 //
 //  Template Node Descriptors
 //
@@ -128,7 +123,7 @@ TemplatePinDescriptors[] =
 
 The following code snippet shows examples of arrays of template connections and joints:
 
-```
+```cpp
 //
 //  BDA Template Topology Connections
 //
@@ -159,9 +154,9 @@ ULONG   AntennaTransportJoints[] =
 };
 ```
 
- 
+ 
 
- 
+ 
 
 
 

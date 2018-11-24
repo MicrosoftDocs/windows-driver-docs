@@ -1,16 +1,11 @@
 ---
 title: Deleting Contexts
-author: windows-driver-content
 description: Deleting Contexts
 ms.assetid: 43a30a75-4344-4fc5-ad57-28b48c2e54a8
 keywords:
 - contexts WDK file system minifilter , deleting
 - deleting contexts
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,7 +25,7 @@ In the call to **FltDelete***Xxx***Context**, the old context is returned in the
 
 The following code example shows how to delete a stream context:
 
-```
+```cpp
 status = FltDeleteStreamContext(
  FltObjects->Instance,      //Instance
  FltObjects->FileObject,    //FileObject
@@ -43,9 +38,9 @@ if (oldContext != NULL) {
 
 In this example, [**FltDeleteStreamContext**](https://msdn.microsoft.com/library/windows/hardware/ff541997) removes the stream context from the stream, but it does not decrement the context's reference count, because the *OldContext* parameter is non-**NULL**. **FltDeleteStreamContext** returns the address of the deleted context in the *OldContext* parameter. After performing any needed processing, the caller must release the deleted context by calling **FltReleaseContext**.
 
- 
+ 
 
- 
+ 
 
 
 

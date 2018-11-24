@@ -3,11 +3,7 @@ title: bthkd.bthtree
 description: The bthkd.bthtree command displays the complete Bluetooth device tree.
 ms.assetid: A51F4747-0013-4483-92B2-D14B3917CC72
 keywords: ["bthkd.bthtree Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!bthkd.bthtree** command displays the complete Bluetooth device tree.
 
-```
+```dbgsyntax
 !bthkd.bthtree
 ```
 
@@ -36,9 +32,9 @@ Bthkd.dll
 
 [Bluetooth Extensions (Bthkd.dll)](bluetooh-extensions--bthkd-dll-.md)
 
- 
+ 
 
- 
+ 
 
 
 

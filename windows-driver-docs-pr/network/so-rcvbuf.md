@@ -1,13 +1,8 @@
 ---
 title: SO_RCVBUF
-author: windows-driver-content
 description: SO_RCVBUF
 ms.assetid: 218b52ac-95ee-4047-ad75-76d6ae6ab14e
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -SO_RCVBUF Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -50,7 +45,7 @@ To set the value of this socket option, a WSK application calls the [**WskContro
 </tr>
 <tr class="odd">
 <td><p><em>InputBuffer</em></p></td>
-<td><p>A pointer to a ULONG-typed variable that contains the new size of the socket's receive buffer</p></td>
+<td><p>A pointer to a ULONG-typed variable that contains the new size of the socket&#39;s receive buffer</p></td>
 </tr>
 <tr class="even">
 <td><p><em>OutputSize</em></p></td>
@@ -66,12 +61,6 @@ To set the value of this socket option, a WSK application calls the [**WskContro
 </tr>
 </tbody>
 </table>
-
- 
-
-```
-
-```
 
 To retrieve the value of the SO\_RCVBUF socket option, a WSK application calls the **WskControlSocket** function with the following parameters.
 
@@ -113,7 +102,7 @@ To retrieve the value of the SO\_RCVBUF socket option, a WSK application calls t
 </tr>
 <tr class="odd">
 <td><p><em>OutputBuffer</em></p></td>
-<td><p>A pointer to a ULONG-typed variable that receives the current size of the socket's receive buffer</p></td>
+<td><p>A pointer to a ULONG-typed variable that receives the current size of the socket&#39;s receive buffer</p></td>
 </tr>
 <tr class="even">
 <td><p><em>OutputSizeReturned</em></p></td>
@@ -122,11 +111,6 @@ To retrieve the value of the SO\_RCVBUF socket option, a WSK application calls t
 </tbody>
 </table>
 
- 
-
-```
-
-```
 
 A WSK application must specify a pointer to an IRP when calling the **WskControlSocket** function to set or retrieve the value of the SO\_RCVBUF socket option.
 
@@ -154,9 +138,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -4,6 +4,7 @@ description: Glossary page
 Robots: noindex, nofollow
 ms.assetid: 6897E3E2-9F93-4100-BB99-1B224AFE2B68
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Storage class memory glossary
@@ -90,9 +91,9 @@ The process of copying the DRAM contents of the NVDIMM-N into non-volatile memor
 <span></span>**Vendor Log Page**  
 An optional area on the module that is accessible by the host and contains vendor specific data useful to triage issues on the NVDIMM-N module.
 
- 
+ 
 
- 
+ 
 
 
 

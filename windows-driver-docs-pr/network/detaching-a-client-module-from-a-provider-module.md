@@ -9,11 +9,7 @@ keywords:
 - deregistering network modules
 - Network Module Registrar WDK , detaching network modules
 - NMR WDK , detaching network modules
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,7 +30,7 @@ If a client module implements a [*ClientCleanupBindingContext*](https://msdn.mic
 
 For example:
 
-```
+```C++
 // ClientDetachProvider callback function
 NTSTATUS
   ClientDetachProvider(
@@ -96,9 +92,9 @@ VOID
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

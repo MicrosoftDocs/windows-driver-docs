@@ -8,11 +8,7 @@ keywords:
 - transferring data WDK NetDMA , writing provider drivers
 - NetDMA WDK networking , writing provider drivers
 - DMA transfers WDK N
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,7 +17,7 @@ ms.localizationpriority: medium
 
 **Note**  The NetDMA interface is not supported in Windows 8 and later.
 
- 
+ 
 
 
 
@@ -48,9 +44,9 @@ This section includes:
 
 [Managing NetDMA Interrupts](managing-netdma-interrupts.md)
 
- 
+ 
 
- 
+ 
 
 
 

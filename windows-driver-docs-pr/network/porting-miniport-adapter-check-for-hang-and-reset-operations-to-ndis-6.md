@@ -6,11 +6,7 @@ keywords:
 - adapters WDK networking , hang and reset operations
 - hang and reset operations WDK networking
 - porting miniport drivers WDK networking , hang and reset operations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +26,9 @@ An NDIS 6.0 miniport driver's *MiniportResetEx* function differs from the NDIS 5
 
 For more information about check-for-hang and reset operations, see [Adapter Check-for-Hang and Reset](miniport-adapter-check-for-hang-and-reset-operations.md).
 
- 
+ 
 
- 
+ 
 
 
 

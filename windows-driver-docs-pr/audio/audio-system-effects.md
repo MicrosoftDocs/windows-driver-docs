@@ -6,11 +6,7 @@ keywords:
 - sAPO WDK
 - LFX WDK
 - GFX WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,13 +23,11 @@ Conversely, sAPOs are not minidrivers and are not part of the audio driver. sAPO
 
 This section includes the following topics:.
 
-[GFX Filters](gfx-filters.md)
-
 [System Effects Audio Processing Objects](system-effects-audio-processing-objects.md)
 
- 
+ 
 
- 
+ 
 
 
 

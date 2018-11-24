@@ -4,11 +4,7 @@ description: MB modem reset operations
 ms.assetid: E33073B5-53D5-4F6F-85EC-5B46FDE9EA4D
 keywords:
 - MB modem reset, Mobile Broadband modem reset, Mobile Broadband miniport driver modem reset
-ms.author: windowsdriverdev
-ms.date: 08/17/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 08/09/2018
 ms.localizationpriority: medium
 ---
 
@@ -22,7 +18,7 @@ The host sends MBIM_CID_MS_DEVICE_RESET to the MBIM function to reset the modem 
 
 | Service name | UUID | UUID value |
 | --- | --- | --- |
-| Microsoft Basic IP Connectivity Extensions | UUID_BASIC_CONNECT_EXTENSIONS | 3d01dcc5-fef5-4d05-9d3a-bef7058e9aaf |
+| Microsoft Basic IP Connectivity Extensions | UUID_BASIC_CONNECT_EXTENSIONS | 3d01dcc5-fef5-4d05-0d3a-bef7058e9aaf |
 
 | CID | Command code | Set | Query | Notify |
 | --- | --- | --- | --- | --- |
@@ -65,4 +61,3 @@ The following status codes are applicable. Status is returned as an asynchronous
 ## OID_WWAN_DEVICE_RESET
 
 The NDIS equivalent for MBIM_CID_MS_DEVICE_RESET is [OID_WWAN_DEVICE_RESET](oid-wwan-device-reset.md).
-

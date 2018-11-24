@@ -2,11 +2,7 @@
 title: What's new for Windows 8.1 display drivers (WDDM 1.3)
 description: This topic lists display driver features that are new or updated for Windows 8.1. Windows 8.1 introduces version 1.3 of the Windows Display Driver Model (WDDM).
 ms.assetid: 0B699676-A43B-4E53-9598-CE2930E126AB
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -51,9 +47,9 @@ Describes how a user-mode display driver can pass device status and frame latenc
 <span id="Supporting_Path-Independent_Rotation"></span><span id="supporting_path-independent_rotation"></span><span id="SUPPORTING_PATH-INDEPENDENT_ROTATION"></span>[Supporting Path-Independent Rotation](supporting-path-independent-rotation.md)  
 Supported starting with Windows 8.1 Update. Describes how a display miniport driver can support cloning portrait-first displays on landscape-first displays with the greatest possible resolution.
 
- 
+ 
 
- 
+ 
 
 
 

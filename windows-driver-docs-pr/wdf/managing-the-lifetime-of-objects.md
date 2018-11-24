@@ -1,6 +1,5 @@
 ---
 title: Managing the Lifetime of Objects
-author: windows-driver-content
 description: Managing the Lifetime of Objects
 ms.assetid: 55ad8133-a70a-462f-87cd-6aeaffb0aec8
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - framework objects WDK UMDF , lifetimes
 - lifetimes WDK UMDF
 - callback objects WDK UMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -57,9 +52,9 @@ However, if there is no parent whose lifetime closely matches your object's life
 
 Similarly, if you are creating an object that does not allow you to override the default parent and if you want the object to be deleted before the default parent is deleted, the driver must explicitly delete the object.
 
- 
+ 
 
- 
+ 
 
 
 

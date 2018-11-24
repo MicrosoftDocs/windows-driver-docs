@@ -1,13 +1,8 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_P2P_DISCOVERY_COMPLETE
-author: windows-driver-content
 description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_P2P_DISCOVERY_COMPLETE to indicate the completion of OID_WDI_TASK_P2P_DISCOVER.
 ms.assetid: 638e0a36-d4d0-44c1-8eb5-cb6bcc34daa8
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WDI_INDICATION_P2P_DISCOVERY_COMPLETE Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -22,7 +17,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_P2P\_DISCOVERY\_COMPLETE to 
 |--------|
 | Port   |
 
- 
+ 
 
 ## Payload data
 
@@ -53,9 +48,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

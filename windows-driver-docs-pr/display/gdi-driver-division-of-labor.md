@@ -5,11 +5,7 @@ ms.assetid: 280addc6-3fc2-4763-ba87-5e9c5e83d22e
 keywords:
 - GDI WDK Windows 2000 display , driver division of labor
 - graphics drivers WDK Windows 2000 display , driver division of labor
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,9 +17,9 @@ ms.localizationpriority: medium
 
 To understand graphics driver design, it is important to understand the roles of GDI and the driver, and how they negotiate. GDI, with its enhanced capabilities, can handle many operations that previously required a graphics driver. GDI also has the responsibility of managing data structures critical to graphics operations, such as surfaces, although each graphics driver must have access to them.
 
- 
+ 
 
- 
+ 
 
 
 

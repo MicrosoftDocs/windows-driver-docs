@@ -1,14 +1,9 @@
 ---
 title: Servicing Interrupts
-author: windows-driver-content
 description: Servicing Interrupts
 ms.assetid: c4567d35-c4ec-4bde-8d10-e613de787bf7
 keywords: ["kernel-mode drivers WDK , servicing interrupts", "servicing interrupts WDK kernel", "device interrupts WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +23,9 @@ This section contains the following sections:
 
 [Managing Hardware Priorities](managing-hardware-priorities.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,13 +1,8 @@
 ---
 title: WDI_TLV_CIPHER_KEY_TKIP_MIC
-author: windows-driver-content
 description: WDI_TLV_CIPHER_KEY_TKIP_MIC is a TLV that contains the TKIP MIC material.
 ms.assetid: 5F1AE81C-6AB4-468C-9DEE-D1BB16A2EC4D
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_CIPHER_KEY_TKIP_MIC Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -35,7 +30,7 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 |-----------|------------------------------------------------------------------|
 | UINT8\[\] | An array of UINT8 elements that specifies the TKIP MIC material. |
 
- 
+ 
 
 Requirements
 ------------
@@ -61,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

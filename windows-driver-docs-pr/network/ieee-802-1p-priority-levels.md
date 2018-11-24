@@ -2,11 +2,7 @@
 title: IEEE 802.1p Priority Levels
 description: IEEE 802.1p Priority Levels
 ms.assetid: C7EB3D85-544E-4898-A456-843621F6488D
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,9 +15,9 @@ IEEE 802.1p defines a 3-bit field called the Priority Code Point (PCP) within an
 
 The PCP value defines 8 priority levels, with 7 the highest priority and 1 the lowest priority. The priority level of 0 is the default. Each priority level defines a *class of service* that identifies separate traffic classes of transmitted packets.
 
- 
+ 
 
- 
+ 
 
 
 

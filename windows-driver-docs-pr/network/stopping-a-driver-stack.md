@@ -5,11 +5,7 @@ ms.assetid: 2ecc0ebb-89d8-4cd8-ac1c-f9f1da7d2ca8
 keywords:
 - driver stacks WDK networking , stopping
 - stopping driver stacks WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -39,9 +35,9 @@ If a device is removed, NDIS stops a driver stack. A driver stack stop operation
 
 6.  If all the miniport adapters that a miniport driver manages are halted, the system can unload the miniport driver.
 
- 
+ 
 
- 
+ 
 
 
 

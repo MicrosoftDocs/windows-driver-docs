@@ -1,6 +1,5 @@
 ---
 title: 1394 Bridges
-author: windows-driver-content
 description: 1394 Bridges
 ms.assetid: 208cceaa-dd26-46f9-b015-723c5940b02b
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - 1394 WDK buses , bridges
 - bridges WDK IEEE 1394 bus
 - 1394 bridges WDK IEEE 1394 bus
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +21,9 @@ The 1394 base stack (*ohci1394.sys* and *1394bus.sys*) does not support 1394 bri
 
 Since bridges require that the operating system support multiple bus numbers in order to function properly, Microsoft does not guarantee that 1394 devices attached to a bridge will work.
 
- 
+ 
 
- 
+ 
 
 
 

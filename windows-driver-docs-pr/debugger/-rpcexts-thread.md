@@ -3,11 +3,7 @@ title: rpcexts.thread
 description: The rpcexts.thread extension displays the per-thread RPC information.This extension command should not be confused with the .thread command.
 ms.assetid: eecc4eb6-7789-47ed-8b3f-5ec21cc6117c
 keywords: ["rpcexts.thread Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,7 +20,7 @@ The **!rpcexts.thread** extension displays the per-thread RPC information.
 
 This extension command should not be confused with the [**.thread (Set Register Context)**](-thread--set-register-context-.md) command or the [**!thread**](-thread.md) (!kdextx86.thread and !kdexts.thread) extension.
 
-```
+```dbgcmd
 !rpcexts.thread TEB
 ```
 
@@ -53,7 +49,7 @@ Specifies the address of the thread environment block (TEB).
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -66,7 +62,7 @@ This extension displays the per-thread RPC information. A field in the per-threa
 
 Here is an example:
 
-```
+```dbgcmd
 0:001> !rpcexts.thread 7ffdd000
 RPC TLS at 692e70
 
@@ -85,9 +81,9 @@ buffer cache array at - 0x00692E84
 fAsync - 0x0
 ```
 
- 
+ 
 
- 
+ 
 
 
 

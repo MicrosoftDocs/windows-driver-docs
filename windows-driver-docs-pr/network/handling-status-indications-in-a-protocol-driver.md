@@ -2,11 +2,7 @@
 title: Handling Status Indications in a Protocol Driver
 description: Handling Status Indications in a Protocol Driver
 ms.assetid: 1a021919-fd27-49b2-95a0-5ccb9029abd4
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,9 +20,9 @@ For more information about indicating status from a filter driver, see [Filter M
 
 If the status indication is associated with an OID request, the underlying driver can set the **DestinationHandle** and **RequestId** members so that NDIS can provide the status indication to a specific protocol binding. For more information about OID requests, see [Protocol Driver OID Requests](protocol-driver-oid-requests.md).
 
- 
+ 
 
- 
+ 
 
 
 

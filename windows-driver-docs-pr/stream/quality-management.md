@@ -1,6 +1,5 @@
 ---
 title: Quality Management
-author: windows-driver-content
 description: Quality Management
 ms.assetid: 359e6e12-903f-4037-8f35-b090ce41f770
 keywords:
@@ -11,11 +10,7 @@ keywords:
 - complaints WDK kernel streaming
 - kernel streaming WDK , quality management
 - KS WDK , quality management
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,9 +30,9 @@ If the pin allows degradation strategies, the minidriver supports the [**KSPROPE
 
 For more information, see [**KSDEGRADE**](https://msdn.microsoft.com/library/windows/hardware/ff561671) and [**KSDEGRADE\_STANDARD**](https://msdn.microsoft.com/library/windows/hardware/ff561673).
 
- 
+ 
 
- 
+ 
 
 
 

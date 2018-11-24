@@ -1,6 +1,5 @@
 ---
 title: Miscellaneous GDL Directives
-author: windows-driver-content
 description: Miscellaneous GDL Directives
 ms.assetid: 8a1c4bdf-7a84-44b5-8dad-4518edc2b560
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - source files WDK GDL , miscellaneous directives
 - parser WDK GDL , directives
 - IgnoreBlock directive WDK GDL
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,9 +20,9 @@ GDL provides two miscellaneous directives:
 
 -   \*% (asterisk plus the percent sign) causes the parser to ignore the remainder of the line. You can use this directive for adding a comment.
 
- 
+ 
 
- 
+ 
 
 
 

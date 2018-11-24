@@ -1,13 +1,8 @@
 ---
 title: NDIS_STATUS_PD_CURRENT_CONFIG
-author: windows-driver-content
 description: This status indication is a notification that the NDIS_PD_CONFIG structure has changed.
 ms.assetid: 0B63E85E-36A8-4DC4-A060-C40DCB6BE454
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_PD_CURRENT_CONFIG Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -65,9 +60,9 @@ Requirements
 
 [OID\_PD\_OPEN\_PROVIDER](https://msdn.microsoft.com/library/windows/hardware/dn931852)
 
- 
+ 
 
- 
+ 
 
 
 

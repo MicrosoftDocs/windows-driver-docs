@@ -7,11 +7,7 @@ keywords:
 - WSDAPI Basic Interoperability Tool WDK , sample
 - WSDBIT tool WDK , WSDL
 - WSDAPI Basic Interoperability Tool WDK , WSDL
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +26,9 @@ This section includes the following topics:
 
 [EventingService WSDL](eventingservice-wsdl.md)
 
- 
+ 
 
- 
+ 
 
 
 

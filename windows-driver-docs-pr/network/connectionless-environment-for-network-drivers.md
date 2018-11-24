@@ -5,11 +5,7 @@ ms.assetid: 998d4630-ae85-4219-9da1-f4f4c5e93d44
 keywords:
 - connectionless environments WDK networking
 - connectionless drivers WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +30,9 @@ The following figure shows the NDIS environment for connectionless network drive
 
 [NDIS Miniport Drivers](ndis-miniport-drivers2.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -8,11 +8,7 @@ keywords:
 - disconnections WDK SANs
 - SAN service providers WDK , shutting down SAN
 - Windows Sockets Direct WDK , shutting down SAN use
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +26,9 @@ The following topics describe how to terminate the use of a SAN:
 
 [Cleaning up a Process for a SAN](cleaning-up-a-process-for-a-san.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: NDIS Wake Reason Status Indications
 description: NDIS Wake Reason Status Indications
 ms.assetid: 0229A4F3-8CC1-4A81-9AF4-33BAEBDAE954
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -17,7 +13,7 @@ Starting with NDIS 6.30, miniport drivers issue an NDIS wake reason status indic
 
 **Note**  Support for NDIS wake reason status indications is optional for Mobile Broadband (MB) miniport drivers.
 
- 
+ 
 
 This section includes the following topics:
 
@@ -27,9 +23,9 @@ This section includes the following topics:
 
 [Issuing NDIS Wake Reason Status Indications](issuing-ndis-wake-reason-indications.md)
 
- 
+ 
 
- 
+ 
 
 
 

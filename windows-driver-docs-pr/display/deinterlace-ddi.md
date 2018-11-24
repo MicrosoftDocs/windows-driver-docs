@@ -2,11 +2,7 @@
 title: Deinterlace DDI
 description: Deinterlace DDI
 ms.assetid: 06b85f76-950a-4a9b-af6b-ded823bfda6a
-ms.author: windowsdriverdev
 ms.date: 01/05/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,9 +16,9 @@ So that the Video Mixing Renderer (VMR) can deinterlace and perform frame-rate c
 
 To simplify driver development, use motion-compensation code templates and implement the deinterlacing functions in this section. The functions are member functions of either the deinterlace container device or the deinterlace mode device classes. For more information, see [Defining the Deinterlace Container Device Class](https://msdn.microsoft.com/library/windows/hardware/ff552682) and [Defining the Deinterlace Bob Device Class](https://msdn.microsoft.com/library/windows/hardware/ff552679).
 
- 
+ 
 
- 
+ 
 
 
 

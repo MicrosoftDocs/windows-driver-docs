@@ -3,11 +3,7 @@ title: CTRL+D (Toggle Debug Info)
 description: The CTRL+D key toggles debugger internal information flow on and off. This is used to restart communication in cases where the debugger is not communicating properly.
 ms.assetid: fcc5d597-6a3f-4d6c-82f9-3624efb4f434
 keywords: ["CTRL+D (Toggle Debug Info) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,13 +20,13 @@ The CTRL+D key toggles debugger internal information flow on and off. This is us
 
 KD Syntax
 
-```
+```dbgcmd
 CTRL+D  ENTER 
 ```
 
 WinDbg Syntax
 
-```
+```dbgcmd
 CTRL+ALT+D 
 ```
 
@@ -64,7 +60,7 @@ CTRL+ALT+D
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -77,9 +73,9 @@ If the target is not responding, use CTRL+R ENTER CTRL+C. If time-out messages c
 
 This is also useful for debugging the KD debugger itself.
 
- 
+ 
 
- 
+ 
 
 
 

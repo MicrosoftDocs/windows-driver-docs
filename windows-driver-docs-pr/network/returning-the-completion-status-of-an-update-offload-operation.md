@@ -5,11 +5,7 @@ ms.assetid: ca305816-8723-4643-9f23-0b2e939e4b78
 keywords:
 - updating offloaded TCP chimney state, completion status
 - completion status of updates WDK TCP chimney offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +25,9 @@ The offload target successfully updated the state object variables, successfully
 <a href="" id="ndis-status-failure"></a>NDIS\_STATUS\_FAILURE  
 The update operation did not succeed. The host stack will terminate the offload of the state objects that could not be updated.
 
- 
+ 
 
- 
+ 
 
 
 

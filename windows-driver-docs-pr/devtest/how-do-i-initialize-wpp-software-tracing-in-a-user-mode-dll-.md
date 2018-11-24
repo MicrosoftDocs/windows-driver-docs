@@ -2,11 +2,7 @@
 title: How do I initialize WPP software tracing in a user-mode DLL
 description: How do I initialize WPP software tracing in a user-mode DLL
 ms.assetid: 386ed1ba-8a6e-469d-9a03-c8879efd2613
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +26,9 @@ To avoid errors, use the following method.
 
 You cannot initialize WPP software tracing in a **DllMain** function on Microsoft Windows 2000. Because WPP runs as part of a service on Windows 2000, initializing software tracing generates a remote procedure call, which is prohibited during DLL initialization.
 
- 
+ 
 
- 
+ 
 
 
 

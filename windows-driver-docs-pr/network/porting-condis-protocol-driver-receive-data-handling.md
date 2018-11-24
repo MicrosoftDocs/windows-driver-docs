@@ -4,11 +4,7 @@ description: Porting CoNDIS Protocol Driver Receive Data Handling
 ms.assetid: da180754-673a-428f-b6a1-eb66faa4e8d7
 keywords:
 - porting protocol drivers WDK networking , send and receive operations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +26,9 @@ NDIS 6.0 can call the protocol driver's receive entry point at IRQL&lt;= DISPATC
 
 For an overview of receive operations, see [Receiving Network Data](receiving-network-data.md). For more information about CoNDIS protocol driver receive operations, see [Receiving NET\_BUFFER Structures in CoNDIS Drivers](receiving-net-buffer-structures-in-condis-drivers.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -9,11 +9,7 @@ api_name:
 - wscn JobStateReasons
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **JobStateReasons** element contains all additional information abo
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:JobStateReasons>
   child elements
 </wscn:JobStateReasons>
@@ -50,7 +46,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>JobStateReason</strong>](jobstatereason.md)</p></td>
+<td><p><a href="jobstatereason.md" data-raw-source="[&lt;strong&gt;JobStateReason&lt;/strong&gt;](jobstatereason.md)"><strong>JobStateReason</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -69,10 +65,10 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>JobStatus</strong>](jobstatus.md)</p></td>
+<td><p><a href="jobstatus.md" data-raw-source="[&lt;strong&gt;JobStatus&lt;/strong&gt;](jobstatus.md)"><strong>JobStatus</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>JobSummary</strong>](jobsummary.md)</p></td>
+<td><p><a href="jobsummary.md" data-raw-source="[&lt;strong&gt;JobSummary&lt;/strong&gt;](jobsummary.md)"><strong>JobSummary</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -82,7 +78,7 @@ Remarks
 
 The **JobStateReasons** element contains a list of [**JobStateReason**](jobstatereason.md) elements, each of which specifies one reason why a job is in its current state.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**JobStateReason**](jobstatereason.md)
@@ -91,9 +87,9 @@ The **JobStateReasons** element contains a list of [**JobStateReason**](jobstate
 
 [**JobSummary**](jobsummary.md)
 
- 
+ 
 
- 
+ 
 
 
 

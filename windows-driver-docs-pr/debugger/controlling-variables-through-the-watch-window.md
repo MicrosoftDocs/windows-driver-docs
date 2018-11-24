@@ -3,11 +3,7 @@ title: Controlling Variables Through the Watch Window
 description: Controlling Variables Through the Watch Window
 ms.assetid: bd857442-fbd7-4c00-9743-6077d38ee38e
 keywords: ["Watch window, global variables", "Watch window, local variables"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,9 +19,9 @@ The Watch window can display any list of variables that you want. These variable
 
 Unlike the Locals window, the Watch window is not affected by changes to the local context. Only those variables that are defined in the scope of the current program counter can have their values displayed or modified.
 
- 
+ 
 
- 
+ 
 
 
 

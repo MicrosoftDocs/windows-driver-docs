@@ -5,11 +5,7 @@ ms.assetid: 16fb8c2a-60d8-4c0a-879d-447a1cda5415
 keywords:
 - Driver Verifier WDK , volatile settings
 - volatile settings WDK Driver Verifier
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,7 +32,7 @@ You can activate and deactivate all of the Driver Verifier options, except for [
 
 -   [Low Resources Simulation](low-resources-simulation.md)
 
- 
+ 
 
 ### <span id="changing_drivers_without_rebooting"></span><span id="CHANGING_DRIVERS_WITHOUT_REBOOTING"></span>Changing Drivers Without Rebooting
 
@@ -159,9 +155,9 @@ Each of these screens shows the Driver Verifier options currently in effect, inc
 
 [Controlling Driver Verifier](controlling-driver-verifier.md)
 
- 
+ 
 
- 
+ 
 
 
 

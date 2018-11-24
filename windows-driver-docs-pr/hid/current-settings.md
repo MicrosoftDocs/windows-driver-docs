@@ -1,10 +1,10 @@
 ---
 title: Current Settings
-author: windows-driver-content
 description: Current Settings
 ms.assetid: 4de99ad0-fcd9-4f8d-8125-8f622443a0c6
 keywords: ["current registry settings WDK joysticks"]
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Current Settings
@@ -19,7 +19,7 @@ A minidriver that is used to poll devices that do not have an associated minidri
 
 The remaining settings are stored under the REGSTR\_KEY\_JOYCURR key. When a device is first configured to a particular joystick ID, Control Panel copies values from the relevant OEM key under REGSTR\_PATH\_JOYOEM to the REGSTR\_KEY\_JOYCURR key. Each of the key value names under this key contains the joystick ID as a part of the name so each joystick has its own settings. The REGSTR\_VAL\_JOYOEMNAME value is copied to the relevant REGSTR\_VAL\_JOYNOEMNAME and, if present, the REGSTR\_VAL\_JOYOEMCALLOUT value is copied to REGSTR\_VAL\_JOYNOEMCALLOUT. The REGSTR\_VAL\_JOYOEMDATA value is used as the first two doublewords of the REGSTR\_VAL\_JOYNCONFIG value, with the whole of that value defined (when expanded) as follows:
 
-```
+```cpp
 struct {
     /* usage settings, copied from REGSTR_VAL_JOYOEMNAME */
     struct {
@@ -90,27 +90,27 @@ The usage settings are a combination of the following values:
 <tr class="odd">
 <td><p>JOY_US_HASRUDDER</p></td>
 <td><p>0x00000001l</p></td>
-<td><p>/* joystick configured with rudder */</p></td>
+<td><p>/* joystick configured with rudder <em>/</p></td>
 </tr>
 <tr class="even">
 <td><p>JOY_US_PRESENT</p></td>
 <td><p>0x00000002l</p></td>
-<td><p>/* is joystick actually present? */</p></td>
+<td><p>/</em> is joystick actually present? <em>/</p></td>
 </tr>
 <tr class="odd">
 <td><p>JOY_US_ISOEM</p></td>
 <td><p>0x00000004l</p></td>
-<td><p>/* joystick is an OEM-defined type */</p></td>
+<td><p>/</em> joystick is an OEM-defined type <em>/</p></td>
 </tr>
 <tr class="even">
 <td><p>JOY_US_RESERVED</p></td>
 <td><p>0x80000000l</p></td>
-<td><p>/* reserved */</p></td>
+<td><p>/</em> reserved */</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The calibration flags are a combination of the following values:
 
@@ -124,43 +124,43 @@ The calibration flags are a combination of the following values:
 <tr class="odd">
 <td><p>JOY_ISCAL_XY</p></td>
 <td><p>0x00000001l</p></td>
-<td><p>/* XY are calibrated */</p></td>
+<td><p>/* XY are calibrated <em>/</p></td>
 </tr>
 <tr class="even">
 <td><p>JOY_ISCAL_Z</p></td>
 <td><p>0x00000002l</p></td>
-<td><p>/* Z is calibrated */</p></td>
+<td><p>/</em> Z is calibrated <em>/</p></td>
 </tr>
 <tr class="odd">
 <td><p>JOY_ISCAL_R</p></td>
 <td><p>0x00000004l</p></td>
-<td><p>/* R is calibrated */</p></td>
+<td><p>/</em> R is calibrated <em>/</p></td>
 </tr>
 <tr class="even">
 <td><p>JOY_ISCAL_U</p></td>
 <td><p>0x00000008l</p></td>
-<td><p>/* U is calibrated */</p></td>
+<td><p>/</em> U is calibrated <em>/</p></td>
 </tr>
 <tr class="odd">
 <td><p>JOY_ISCAL_V</p></td>
 <td><p>0x00000010l</p></td>
-<td><p>/* V is calibrated */</p></td>
+<td><p>/</em> V is calibrated <em>/</p></td>
 </tr>
 <tr class="even">
 <td><p>JOY_ISCAL_POV</p></td>
 <td><p>0x00000020l</p></td>
-<td><p>/* POV is calibrated */</p></td>
+<td><p>/</em> POV is calibrated */</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The **dwType** member holds a number representing the type of a predefined joystick. If an OEM calibration utility sets up this value, it should set a value outside the range of values defined in Mmddk.h. The exact value is unimportant as it is reset by the standard control panel.
 
- 
+ 
 
- 
+ 
 
 
 

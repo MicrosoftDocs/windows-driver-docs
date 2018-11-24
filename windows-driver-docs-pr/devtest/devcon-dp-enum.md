@@ -10,11 +10,7 @@ api_name:
 - DevCon Dp_enum
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,8 +21,6 @@ Lists the third-party (OEM) driver packages in the driver store on the local com
 
 ```
     devcon dp_enum
-
-   
 ```
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
@@ -43,9 +37,9 @@ devcon dp_enum
 
 [Example 45: Add and Remove Driver Packages](example-45--add-and-remove-driver-packages.md)
 
- 
 
- 
+
+
 
 
 

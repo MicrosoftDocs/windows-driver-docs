@@ -6,11 +6,7 @@ keywords:
 - drawing extended surface capabilities WDK DirectDraw , exposing
 - DirectDraw extended surface capabilities WDK Windows 2000 display , exposing
 - extended surface capabilities WDK DirectDraw , exposing
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,9 +28,9 @@ Responding to the GUID\_DDMoreSurfaceCaps query is entirely optional. It is inte
 
 The first item has been covered in the previous section and is fairly self-explanatory. The second item is more complex, and readers should be familiar with the significance of the **ddsCaps** and **ddsCapsAlt** members of the [**VIDEOMEMORY**](https://msdn.microsoft.com/library/windows/hardware/ff570171) structure, described in [Memory Heap Allocation](memory-heap-allocation.md), before reading the next section.
 
- 
+ 
 
- 
+ 
 
 
 

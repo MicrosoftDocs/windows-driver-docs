@@ -2,11 +2,7 @@
 title: How are flag values assigned
 description: How are flag values assigned
 ms.assetid: de74e2d9-0ebf-4125-9dbb-42f7755010f4
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,6 @@ Flag values are defined in the WPP\_DEFINE\_BIT elements of the [WPP\_CONTROL\_G
         WPP_DEFINE_BIT(Error)  \
         WPP_DEFINE_BIT(Unusual)  \
         WPP_DEFINE_BIT(Noise) )
- 
 ```
 
 Windows assigns to each WPP\_DEFINE\_BIT element a consecutive bit value beginning with 1. For example, it would assign 1 to the first bit (Error), 2 to the second bit (Unusual), and 4 to the third bit (Noise).
@@ -36,9 +31,9 @@ When you start a [trace session](trace-session.md), use the bit value to represe
 tracelog -start MyTrace -guid MyDriver.guid -flags 4
 ```
 
- 
 
- 
+
+
 
 
 

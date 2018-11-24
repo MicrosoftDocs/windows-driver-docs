@@ -1,16 +1,11 @@
 ---
 title: Commands for Simulated Fonts
-author: windows-driver-content
 description: Commands for Simulated Fonts
 ms.assetid: 3bfdcf86-35ac-4b95-9efd-31f79a8b9871
 keywords:
 - simulated font commands WDK Unidrv
 - font commands WDK Unidrv
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -119,13 +114,13 @@ The following table lists the commands for controlling simulated fonts. All comm
 </tbody>
 </table>
 
- 
+ 
 
 For examples, see the [sample GPD files](sample-gpd-files.md).
 
- 
+ 
 
- 
+ 
 
 
 

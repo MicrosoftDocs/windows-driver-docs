@@ -6,11 +6,7 @@ keywords:
 - receive-side scaling WDK networking , indicating receive data
 - RSS WDK networking , indicating receive data
 - indicating receive data WDK RSS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,9 +34,9 @@ If the NIC runs out of receive buffers, each buffer must be returned as soon as 
 
 For more information about receiving network data, see [Receiving Network Data](receiving-network-data.md).
 
- 
+ 
 
- 
+ 
 
 
 

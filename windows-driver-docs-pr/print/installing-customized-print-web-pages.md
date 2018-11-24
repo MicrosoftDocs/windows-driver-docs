@@ -1,6 +1,5 @@
 ---
 title: Installing Customized Print Web Pages
-author: windows-driver-content
 description: Installing Customized Print Web Pages
 ms.assetid: 8a50e7ea-0e91-476f-86cb-935329b76f91
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - print Web pages WDK , customizing
 - Web pages WDK printer , customizing
 - INF files WDK print , customized print Web pages
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +25,9 @@ The methods used for installing customized print Web pages depend on whether you
 
 [Installing Pages for a Port Monitor](installing-pages-for-a-port-monitor.md)
 
- 
+ 
 
- 
+ 
 
 
 

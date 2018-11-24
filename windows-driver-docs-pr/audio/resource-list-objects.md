@@ -11,11 +11,7 @@ keywords:
 - hardware resource assignments WDK audio
 - start up resource assignments WDK audio
 - start-device routines WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -87,9 +83,9 @@ The [**IPort::Init**](https://msdn.microsoft.com/library/windows/hardware/ff5369
 
 For a code example, see the Sb16 sample audio driver in the Microsoft Windows Driver Kit (WDK).
 
- 
+ 
 
- 
+ 
 
 
 

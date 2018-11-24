@@ -10,11 +10,7 @@ keywords:
 - OPM WDK display , connectors
 - OPM WDK display , protection types
 - OPM WDK display , protection levels
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,9 +28,9 @@ The type of protection that can be applied to a video signal that is passed thro
 <span id="Protection_level"></span><span id="protection_level"></span><span id="PROTECTION_LEVEL"></span>**Protection level**  
 The level of protection that is applied to a video signal that is passed through a graphics adapter's connector. The level value is dependent on the protection type. Some protection types (for example, High-bandwidth Digital Content Protection (HDCP)) have only two protection levels (for example, on and off).
 
- 
+ 
 
- 
+ 
 
 
 

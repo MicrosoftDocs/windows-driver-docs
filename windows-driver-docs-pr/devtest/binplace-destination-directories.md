@@ -11,11 +11,7 @@ keywords:
 - place files WDK BinPlace
 - directories WDK BinPlace
 - symbol files WDK BinPlace
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -57,11 +53,11 @@ There is one exception to this algorithm. If neither **-s** nor **-n** is suppli
 
 **Note**   If you list the symbol file name in BinPlace's command line, BinPlace will move it like any other file and will not examine its contents. To use BinPlace's symbol file manipulation techniques, you must list the executable file name, not the symbol file name.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

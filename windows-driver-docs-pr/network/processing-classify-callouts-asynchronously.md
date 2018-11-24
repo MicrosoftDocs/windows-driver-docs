@@ -7,11 +7,7 @@ keywords:
 - Windows Filtering Platform Callout Drivers WDK , asynchronous processing of classify callouts
 - pending WFP classify callouts WDK Windows Filtering Platform
 - classify callouts WDK Windows Filtering Platform , asynchronous processing
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -58,9 +54,9 @@ At a stream layer (**FWPS\_LAYER\_STREAM\_V4** or **FWPS\_LAYER\_STREAM\_V6**), 
 
 Because of the ordered delivery nature of stream layer data, a callout driver must continue to clone and absorb data as long any stream data is still pending. Mixing asynchronous and synchronous operations for a given stream flow can result in undefined behavior.
 
- 
+ 
 
- 
+ 
 
 
 

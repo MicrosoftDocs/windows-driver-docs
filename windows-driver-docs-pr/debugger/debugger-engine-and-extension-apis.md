@@ -2,11 +2,7 @@
 title: Debugger Engine and Extension APIs
 description: Debugger Engine and Extension APIs
 ms.assetid: 2d651c4b-e123-4285-b69c-d7fd5e1f9a81
-ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -85,9 +81,9 @@ You can customize debugger output using DML. For more information see [Customizi
 
 Use JavaScript to create scripts that understand debugger objects and extend and customize the capabilities of the debugger. JavaScript providers bridge a scripting language to the debugger's internal object model. The JavaScript debugger scripting provider, allows the for use of JavaScript with the debugger. For more information, see [JavaScript Debugger Scripting](javascript-debugger-scripting.md).
 
- 
+ 
 
- 
+ 
 
 
 

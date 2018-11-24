@@ -3,11 +3,7 @@ title: TList Commands
 description: The syntax of the TList command is as follows
 ms.assetid: d1527ffe-ea80-4e02-9a32-b6eccddc1c6a
 keywords: TList Commands, Windows debugging
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The syntax of the TList command is as follows:
 
-```
+```dbgcmd
 tlist [/p ProcessName | PID | Pattern | /t | /c | /e | /k | /m [Module] | /s | /v
 ```
 
@@ -92,9 +88,9 @@ When using the **/e** parameter, valid session identifiers appear in the process
 
 -   On Windows Vista, where all processes are associated with two Terminal Services sessions by default, at least one user must be connected to the non-console session.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,16 +1,11 @@
 ---
 title: Improved Color Printing
-author: windows-driver-content
 description: Improved Color Printing
 ms.assetid: b0487ee0-9b4a-4083-9416-ad22b97ed94b
 keywords:
 - XPSDrv printer drivers WDK , color printing
 - color printing WDK XPSDrv
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,9 +32,9 @@ Through the XPS spool file, the XPS print path delivers this advanced color info
 
 -   Improved communication of color capabilities and settings. Applications can control color processing by enabling or disabling system color management in the new print path. Drivers can more completely express color capabilities of their devices.
 
- 
+ 
 
- 
+ 
 
 
 

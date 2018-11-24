@@ -6,11 +6,7 @@ keywords:
 - textures WDK DirectX 8.0
 - DirectX 8.0 release notes WDK Windows 2000 display , volume textures
 - volume textures WDK DirectX 8.0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,9 +18,9 @@ ms.localizationpriority: medium
 
 A new DP2 token, D3DDP2OP\_VOLUMEBLT, has been added to support optimal copying and updating of volume textures. This token is very similar to the existing D3DDP2OP\_TEXBLT that copies and updates textures but has been extended to support subvolume (box) copying rather than simple rectangles.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,13 +1,8 @@
 ---
 title: EnumSchema Request and Response Schemas
-author: windows-driver-content
 description: The EnumSchema request schema and corresponding response schema definition, and an example of each, are below.
 ms.assetid: 031FA2EA-A33B-409C-82FD-B4FE9D0A2E93
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,13 +18,13 @@ An EnumSchema request is used to obtain a list of the printer's properties.
 
 All EnumSchema requests are exactly the same and consist of only a root element.
 
-``` syntax
+```xml
 <bidi:EnumSchema xmlns:bidi="http://schemas.microsoft.com/windows/2005/03/printing/bidi"/>
 ```
 
 Formal Definition of the EnumSchema Request Schema
 
-``` syntax
+```xml
 <?xml version='1.0'?>
 <schema targetNamespace="http://schemas.microsoft.com/windows/2005/03/printing/bidi" 
   xmlns:bidi="http://schemas.microsoft.com/windows/2005/03/printing/bidi" 
@@ -49,7 +44,7 @@ The EnumSchema response has a &lt;Schema&gt; element for each property.
 
 In this example, the printer has only a few accessible properties.
 
-``` syntax
+```xml
 <bidi:EnumSchema xmlns:bidi="http://schemas.microsoft.com/windows/2005/03/printing/bidi">
   <Schema name='\Printer.Configuration.DuplexUnit:Installed' />
   <Schema name='\Printer.Configuration.HardDisk:Installed'/>
@@ -60,7 +55,7 @@ In this example, the printer has only a few accessible properties.
 
 Formal Definition of the EnumSchema Response Schema
 
-``` syntax
+```xml
 <?xml version='1.0'?>
 <schema targetNamespace="http://schemas.microsoft.com/windows/2005/03/printing/bidi" 
   xmlns:bidi="http://schemas.microsoft.com/windows/2005/03/printing/bidi" 
@@ -85,9 +80,12 @@ Formal Definition of the EnumSchema Response Schema
 ```
 
 ## Related topics
+
 [Bidirectional Communication Schema](bidirectional-communication-schema.md)  
-[**SendRecvXMLStream**](https://msdn.microsoft.com/library/windows/hardware/dd144983)  
-[**SendRecvXMLString**](https://msdn.microsoft.com/library/windows/hardware/dd144984)  
+
+[SendRecvXMLStream](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bidispl/nf-bidispl-ibidispl2-sendrecvxmlstream)  
+
+[SendRecvXMLString](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bidispl/nf-bidispl-ibidispl2-sendrecvxmlstring)  
 
 
 

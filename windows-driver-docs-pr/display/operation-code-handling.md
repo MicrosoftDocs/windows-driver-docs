@@ -6,11 +6,7 @@ keywords:
 - Direct3D WDK Windows 2000 display , operation codes
 - operation codes WDK Direct3D
 - D3dDrawPrimitives2
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -46,7 +42,7 @@ In order to support the Microsoft DirectX 7.0 and later Direct3D driver model, d
 </tr>
 <tr class="even">
 <td align="left"><p>D3DDP2OP_CLEAR</p></td>
-<td align="left"><p><strong>Always required.</strong> Used to clear the context's render target, Z-buffer. Replaces <em>D3dClear2</em>. Also used to clear hardware stencil buffers, and depth buffers that cannot be cleared properly by a depth fill bit-block transfer.</p></td>
+<td align="left"><p><strong>Always required.</strong> Used to clear the context&#39;s render target, Z-buffer. Replaces <em>D3dClear2</em>. Also used to clear hardware stencil buffers, and depth buffers that cannot be cleared properly by a depth fill bit-block transfer.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>D3DDP2OP_SETPALETTE</p></td>
@@ -63,11 +59,11 @@ In order to support the Microsoft DirectX 7.0 and later Direct3D driver model, d
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

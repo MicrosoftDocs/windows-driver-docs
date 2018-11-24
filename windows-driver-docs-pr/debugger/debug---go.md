@@ -3,11 +3,7 @@ title: Debug Go
 description: Debug Go
 ms.assetid: d6b4bcb2-60f1-42ed-a125-8f754f2fd235
 keywords: ["Debug Go", "controlling the target, Debug Go"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,9 +21,9 @@ This command is equivalent to pressing F5 or clicking the **Go (F5)** button (![
 
 For more information about the effects of this action, other methods of issuing this command, and other ways to control program execution, see [Controlling the Target](controlling-the-target.md).
 
- 
+ 
 
- 
+ 
 
 
 

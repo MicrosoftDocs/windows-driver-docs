@@ -1,15 +1,10 @@
 ---
 title: Handling Stride in AVStream Codecs
-author: windows-driver-content
 description: Handling Stride in AVStream Codecs
 ms.assetid: 816a0ddc-8ab8-4259-9842-76f5e4dadee0
 keywords:
 - AVStream hardware codec support WDK , handling stride
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,7 +17,7 @@ Unlike system memory buffers, which must be copied to a D3D surface before rende
 
 When a SHED-capable minidriver receives D3D buffers, the D3D surface is locked and a pointer to it is located in [**KSSTREAM\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/ff567138).**Data**. The surface stride information is supplied in the [**KS\_FRAME\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff567645) extension to KSSTREAM\_HEADER, as shown in the following code example:
 
-```
+```cpp
 typedef struct KS_FRAME_INFO {
     ULONG                   ExtendedHeaderSize; // Size of this extended header
     DWORD                   dwFrameFlags;       // Field1, Field2, or Frame
@@ -50,9 +45,9 @@ Minidrivers should use the **biWidth** member of the [**KS\_BITMAPINFOHEADER**](
 
 If KS\_FRAME\_INFO.**lSurfacePitch** has a nonzero value, the minidriver must use **lSurfacePitch** as the width/stride for the buffer that is specified in the related KSSTREAM\_HEADER. Otherwise, the output image appears garbled.
 
- 
+ 
 
- 
+ 
 
 
 

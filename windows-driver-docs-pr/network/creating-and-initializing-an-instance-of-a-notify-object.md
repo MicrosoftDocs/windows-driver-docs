@@ -7,11 +7,7 @@ keywords:
 - network notify objects WDK , instances of
 - instance of notify objects WDK networking
 - initializing notify object instance
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -43,9 +39,9 @@ The **Initialize** method should assign the **INetCfgComponent** and **INetCfg**
 
 No other notify object interface methods are called until **Initialize** returns.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -7,11 +7,7 @@ keywords:
 - NDIS miniport drivers WDK , code features
 - driver code features WDK networking
 - code features WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +29,9 @@ This section introduces major features of miniport driver code. These features a
 
 [Network OIDs](network-oids.md)
 
- 
+ 
 
- 
+ 
 
 
 

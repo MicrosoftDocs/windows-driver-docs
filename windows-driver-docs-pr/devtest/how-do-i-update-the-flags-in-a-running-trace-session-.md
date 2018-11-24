@@ -2,11 +2,7 @@
 title: How do I update the flags in a running trace session
 description: How do I update the flags in a running trace session
 ms.assetid: 952cc60f-1877-49d5-b87c-493c1b90cfdf
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,9 +17,9 @@ For information about the **tracelog -enable** command, see [**Tracelog Command 
 
 You can also use [TraceView](traceview.md) to change the flags or levels in a trace session that you started by using TraceView. The graphical user interface makes it easy to see what properties can be changed while the session runs, and to change them.
 
- 
+ 
 
- 
+ 
 
 
 

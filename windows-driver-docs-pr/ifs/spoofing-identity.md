@@ -1,6 +1,5 @@
 ---
 title: Spoofing Identity
-author: windows-driver-content
 description: Spoofing Identity
 ms.assetid: adc0b986-a8c2-45ce-a4d5-9d4d867603b5
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - security threat models WDK file systems , spoofing identity
 - spoofing identity WDK file systems
 - identity spoofing WDK file systems
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +25,9 @@ A driver that attempts to perform its own security checks must be particularly v
 
 In general, drivers are best designed and implemented if they take advantage of the existing security mechanisms within the operating system, rather than constructing their own. This minimizes the number of potential locations where the implementation may contain errors.
 
- 
+ 
 
- 
+ 
 
 
 

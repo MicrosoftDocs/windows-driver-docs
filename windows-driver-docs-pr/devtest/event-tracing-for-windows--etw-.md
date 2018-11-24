@@ -7,11 +7,7 @@ keywords:
 - ETW WDK
 - tracing WDK , ETW
 - software tracing WDK , ETW
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +24,9 @@ Topics in this section include:
 
 [ETW Kernel-Mode Reference](https://msdn.microsoft.com/library/windows/hardware/ff545650)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -11,11 +11,7 @@ keywords:
 - settable palettes WDK Windows 2000 display
 - indexed palettes WDK Windows 2000 display
 - RGB colors WDK Windows 2000 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,9 +31,9 @@ This entry point is required if the device supports a palette that can be set, a
 
 The service routine [**PALOBJ\_cGetColors**](https://msdn.microsoft.com/library/windows/hardware/ff568845) is available to display drivers. This function downloads RGB colors from an indexed palette, and should be called from within the implementation of *DrvSetPalette*.
 
- 
+ 
 
- 
+ 
 
 
 

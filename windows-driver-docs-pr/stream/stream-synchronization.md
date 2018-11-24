@@ -1,16 +1,11 @@
 ---
 title: Stream Synchronization
-author: windows-driver-content
 description: Stream Synchronization
 ms.assetid: bbf589f1-ca4b-41a2-970d-b31c7761eb1a
 keywords:
 - synchronization WDK DVD decoder
 - stream synchronization WDK DVD decoder
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +29,9 @@ DVD stream inputs may be composed of two or more streams. The stream class drive
 
 If a decoder provides decoding capabilities for both audio and video, the decoder may use hardware synchronization only when the audio stream is opened as the system master clock. If the audio stream is not the master clock, the video stream must synchronize video decoding to the stream class master clock.
 
- 
+ 
 
- 
+ 
 
 
 

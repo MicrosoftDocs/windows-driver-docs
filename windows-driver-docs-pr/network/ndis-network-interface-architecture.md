@@ -5,11 +5,7 @@ ms.assetid: ce51008e-678c-421c-b796-36baab3df6b3
 keywords:
 - NDIS network interfaces WDK , architecture
 - network interfaces WDK , architecture
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -41,9 +37,9 @@ An NDIS driver that provides the NDISIF provider services for interfaces that th
 
 The NDIS proxy interface provider uses the standard NDIS miniport driver and NDIS filter driver interfaces to provide NDISIF services for miniport adapters and filter modules. Therefore, miniport drivers and filter drivers are not required to provide any additional support for NDISIF.
 
- 
+ 
 
- 
+ 
 
 
 

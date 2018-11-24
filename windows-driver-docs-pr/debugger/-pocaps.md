@@ -3,11 +3,7 @@ title: pocaps
 description: The pocaps extension displays the power capabilities of the target computer.
 ms.assetid: 011d923a-a5c4-4d3b-ba06-fe5dc884adaa
 keywords: ["pocaps Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!pocaps** extension displays the power capabilities of the target computer.
 
-```
+```dbgcmd
 !pocaps
 ```
 
@@ -48,7 +44,7 @@ The **!pocaps** extension displays the power capabilities of the target computer
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -59,7 +55,7 @@ Remarks
 
 Here is an example of this command's output:
 
-```
+```dbgcmd
 kd> !pocaps
 PopCapabilities @ 0x8016b100
   Misc Supported Features:  S4 FullWake
@@ -74,9 +70,9 @@ PopCapabilities @ 0x8016b100
     Default Wake:           Sx
 ```
 
- 
+ 
 
- 
+ 
 
 
 

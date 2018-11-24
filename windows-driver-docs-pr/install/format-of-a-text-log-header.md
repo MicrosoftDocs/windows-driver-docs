@@ -6,11 +6,7 @@ keywords:
 - headers WDK SetupAPI logging
 - formats WDK SetupAPI logging
 - text logs WDK SetupAPI , headers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,7 +15,7 @@ ms.localizationpriority: medium
 
 A *text log header* consists of the first few log entries in a SetupAPI text log. The text log header contains information about the operating system and system architecture. The following is an example of a text log header:
 
-```
+```cpp
 [Device Install Log]
      OS Version = 6.0.5033
      Service Pack = 0.0
@@ -32,9 +28,9 @@ A *text log header* consists of the first few log entries in a SetupAPI text log
 
 The information in a text log header is a subset of the information that is returned by a call to [GetVersionEx](http://go.microsoft.com/fwlink/p/?linkid=179601) in an [OVSERVERSIONINFOEX](http://go.microsoft.com/fwlink/p/?linkid=179602) structure. For more information, see the Microsoft Windows SDK.
 
- 
+ 
 
- 
+ 
 
 
 

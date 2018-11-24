@@ -6,11 +6,7 @@ keywords:
 - shaders WDK DirectX 9.0 , shader 2.0 support
 - vertex shaders WDK DirectX 9.0 , shader 2.0 support
 - pixel shaders WDK DirectX 9.0 , shader 2.0 support
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +30,9 @@ If a device supports pixel shader 2.0 and later, its driver must configure the f
 
 -   Set the D3DPTEXTURECAPS\_POW2 and D3DPTEXTURECAPS\_NONPOW2CONDITIONAL bits to 0 (that is, do not set these bits) to indicate unconditional support.
 
- 
+ 
 
- 
+ 
 
 
 

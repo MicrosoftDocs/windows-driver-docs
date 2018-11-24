@@ -2,11 +2,7 @@
 title: Bug Check 0x1A4 DRIPS_SW_HW_DIVERGENCE_LIVEDUMP
 description: The DRIPS_SW_HW_DIVERGENCE_LIVEDUMP live dump has a value of 0x000001A4.
 keywords: ["Bug Check 0x1A4 DRIPS_SW_HW_DIVERGENCE_LIVEDUMP",  "DRIPS_SW_HW_DIVERGENCE_LIVEDUMP"]
-ms.author: domars
 ms.date: 05/25/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,7 +20,7 @@ Software and hardware DRIPS divergence exceeds default/programmed threshold time
 
 (This code can never be used for a real bugcheck; it is used to identify live dumps.)
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## DRIPS\_SW\_HW\_DIVERGENCE\_LIVEDUMP Parameters
 
@@ -38,9 +34,9 @@ Parameter | Description
 3 |  Reserved.
 4 |  Reserved.
 
- 
+ 
 
- 
+ 
 
 
 

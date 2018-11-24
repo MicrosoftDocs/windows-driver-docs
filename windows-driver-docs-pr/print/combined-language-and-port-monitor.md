@@ -1,6 +1,5 @@
 ---
 title: Combined Language and Port Monitor
-author: windows-driver-content
 description: Combined Language and Port Monitor
 ms.assetid: 5da362cf-92b8-4c78-80b2-57106b978600
 keywords:
@@ -9,11 +8,7 @@ keywords:
 - language monitors WDK print , port monitor interaction
 - port monitors WDK print , language monitor interaction
 - combined language and port monitors WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +22,9 @@ Specialized printer hardware can be supported by a single customized print monit
 
 A combined monitor's UI DLL must define [port monitor client DLL functions](port-monitor-client-dll-functions.md). Its server DLL must define both [port monitor server DLL functions](port-monitor-server-dll-functions.md) and [language monitor functions](language-monitor-functions.md).
 
- 
+ 
 
- 
+ 
 
 
 

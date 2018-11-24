@@ -3,11 +3,7 @@ title: Edit Open/Close Log File
 description: Edit Open/Close Log File
 ms.assetid: f63549f7-1516-48a0-8af8-38cca103215c
 keywords: ["Edit Open/Close Log File", "log file, Edit Open/Close Log File"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +29,9 @@ If you click **OK** when no log file name appears in the **Log file name** box, 
 
 However, if a log file is already active and you click **OK** without clearing its name or selecting **Append**, WinDbg deletes the log file and uses a new file that has the same name.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -6,11 +6,7 @@ keywords:
 - network component upgrades WDK , phases
 - upgrading network components WDK , phases
 - text mode phase WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,13 +18,13 @@ ms.localizationpriority: medium
 
 **Note**  Vendor-supplied network upgrades are not supported in Microsoft Windows XP (SP1 and later), Microsoft Windows Server 2003, and later operating systems.
 
- 
+ 
 
 Setup strips all comments from the AnswerFile and writes the AnswerFile to the System32 directory under the name $Winnt$.inf. Then the system boots into GUI mode setup. No network-specific processing occurs during the text mode phase.
 
- 
+ 
 
- 
+ 
 
 
 

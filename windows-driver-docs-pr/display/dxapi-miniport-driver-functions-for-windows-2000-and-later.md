@@ -8,11 +8,7 @@ keywords:
 - autoflipping WDK DirectDraw
 - field skipping WDK DirectDraw
 - bus mastering WDK DirectDraw
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +30,9 @@ DxApi interface support is useful for the following operations:
 
 -   Capturing video and VBI. In the miniport driver, it is easy to capture video that is based on a hardware video port IRQ or graphics IRQ.
 
- 
+ 
 
- 
+ 
 
 
 

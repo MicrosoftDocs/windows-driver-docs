@@ -2,11 +2,7 @@
 title: NdisOidDoubleRequest rule (ndis)
 description: This NdisOidDoubleRequest rule verifies that Minport driver must complete the NDIS\_OID\_REQUEST that is currently pending.
 ms.assetid: 67B179ED-EEAF-4717-B714-9601BE806269
-ms.author: windowsdriverdev
 ms.date: 05/21/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: ["NdisOidDoubleRequest rule (ndis)"]
 topic_type:
 - apiref
@@ -46,21 +42,21 @@ How to test
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Run [Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff545448) and select the [NDIS/WIFI verification](https://msdn.microsoft.com/library/windows/hardware/dn312128) option.</p></td>
+<td align="left"><p>Run <a href="https://msdn.microsoft.com/library/windows/hardware/ff545448" data-raw-source="[Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff545448)">Driver Verifier</a> and select the <a href="https://msdn.microsoft.com/library/windows/hardware/dn312128" data-raw-source="[NDIS/WIFI verification](https://msdn.microsoft.com/library/windows/hardware/dn312128)">NDIS/WIFI verification</a> option.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Applies to
 ----------
 
 [**MiniportOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff559416)
 [**NdisMOidRequestComplete**](https://msdn.microsoft.com/library/windows/hardware/ff563622)
- 
+ 
 
- 
+ 
 
 
 

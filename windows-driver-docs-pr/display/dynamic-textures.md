@@ -5,11 +5,7 @@ ms.assetid: 5e96b33c-a07c-4f58-a016-14d8d925285e
 keywords:
 - textures WDK DirectX 9.0
 - dynamic textures WDK DirectX 9.0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ Dynamic textures are almost exactly the same as [dynamic buffers](dynamic-vertex
 
 -   Set up multiple buffering similar to the description in [Dynamic Vertex and Index Buffers](dynamic-vertex-and-index-buffers.md). That is, set the DDLOCK\_OKTOSWAP bit to lock dynamic textures. Similarly, storing dynamic textures in local video memory can also cause system performance to suffer if the application writes to such textures in a nonsequential manner. Therefore, the driver should store dynamic textures in [AGP](agp-support.md) memory.
 
- 
+ 
 
- 
+ 
 
 
 

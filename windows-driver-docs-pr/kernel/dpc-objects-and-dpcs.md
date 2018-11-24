@@ -1,14 +1,9 @@
 ---
 title: DPC Objects and DPCs
-author: windows-driver-content
 description: DPC Objects and DPCs
 ms.assetid: 962e6b38-afed-4711-a556-ed9cbc139a1a
 keywords: ["deferred procedure calls WDK kernel", "DPCs WDK kernel", "interrupt service routines WDK kernel , DPCs", "ISRs WDK kernel , DPCs", "DPC objects WDK kernel", "objects WDK DPC"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -40,9 +35,9 @@ This section contains the following topics:
 
 [Organization of DPC Queues](organization-of-dpc-queues.md)
 
- 
+ 
 
- 
+ 
 
 
 

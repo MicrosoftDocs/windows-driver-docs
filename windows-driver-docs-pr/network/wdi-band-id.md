@@ -1,15 +1,10 @@
 ---
 title: WDI_BAND_ID
-author: windows-driver-content
 description: This topic describes the WDI_BAND_ID data type for WDI miniport drivers.
 ms.assetid: 28E34D2C-94A5-4035-ACAA-60CECABF3A02
 keywords:
 - WDI_BAND_ID, WDK WDI_BAND_ID network drivers
-ms.author: windowsdriverdev
 ms.date: 11/27/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

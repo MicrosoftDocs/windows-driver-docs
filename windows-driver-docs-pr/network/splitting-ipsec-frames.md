@@ -5,11 +5,7 @@ ms.assetid: 2d6841f2-6eb6-4c59-80fb-5c777fa2bf56
 keywords:
 - Ethernet frame splitting WDK networking , IPsec frames
 - IPsec frame splitting WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,9 +20,9 @@ A NIC can split IPsec frames at the [beginning of the upper-layer-protocol heade
 
 The NIC might not be able to split the frame if the resulting header buffer has a greater length than the maximum header size. For more information about the maximum header size, see [Allocating the Header Buffer](allocating-the-header-buffer.md).
 
- 
+ 
 
- 
+ 
 
 
 

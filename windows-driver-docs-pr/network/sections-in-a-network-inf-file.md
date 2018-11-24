@@ -8,11 +8,7 @@ keywords:
 - installing network components WDK , INF files
 - network component installations WDK , INF files
 - sections WDK network INF files
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +27,9 @@ This section includes:
 -   [NetworkProvider and PrintProvider Sections in a Network INF File](networkprovider-and-printprovider-sections-in-a-network-inf-file.md)
 -   [Winsock Sections in a Network INF File](winsock-sections-in-a-network-inf-file.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -5,11 +5,7 @@ ms.assetid: eb1270c3-0eaa-47a4-8fc6-53aea981b597
 keywords:
 - Direct3D WDK Windows 2000 display , w-buffering
 - w-buffering WDK Direct3D
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,9 +19,9 @@ The driver supports w-buffering by enabling the D3DPRASTERCAPS\_WBUFFER cap in t
 
 The [**D3DHAL\_DP2VIEWPORTINFO**](https://msdn.microsoft.com/library/windows/hardware/ff545936) structure supports fields that correspond to world-space front and back clip planes (hither and yon respectively). This information can be used to adjust fog tables as well.
 
- 
+ 
 
- 
+ 
 
 
 

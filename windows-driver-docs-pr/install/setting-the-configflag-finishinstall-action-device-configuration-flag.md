@@ -2,11 +2,7 @@
 title: Marking a Device as having a Finish-Install Action to Perform
 description: Marking a Device as having a Finish-Install Action to Perform
 ms.assetid: 7f2560e6-94a7-4dd0-aa2a-e6cdd96c6d9b
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,9 +20,9 @@ An *installer* (a class installer, class co-installer, or device co-installer) i
 
 2.  If the DI_FLAGSEX_FINISHINSTALL_ACTION flag is set for a device after all installers have processed the [**DIF_NEWDEVICEWIZARD_FINISHINSTALL**](https://msdn.microsoft.com/library/windows/hardware/ff543702) request for the device, Windows flags the device as needing to perform a finish install action.
 
- 
+ 
 
- 
+ 
 
 
 

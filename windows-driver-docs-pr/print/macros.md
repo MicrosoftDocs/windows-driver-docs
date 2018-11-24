@@ -1,16 +1,11 @@
 ---
 title: Macros
-author: windows-driver-content
 description: Macros
 ms.assetid: 071051fe-d15a-45dc-8f76-5818916aef9f
 keywords:
 - GPD file entries WDK Unidrv , macros
 - macros WDK GPD files
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +21,9 @@ The GPD language supports two types of macros:
 
 -   [Value macros](value-macros.md), which allow you to specify sets of values that can be inserted individually anywhere in a GPD file.
 
- 
+ 
 
- 
+ 
 
 
 

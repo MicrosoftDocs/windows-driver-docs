@@ -8,11 +8,7 @@ keywords:
 - GDI DirectDraw support WDK Windows 2000 display
 - display drivers WDK Windows 2000 , graphics
 - graphics WDK Windows 2000 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,9 +32,9 @@ DirectDraw has priority over the graphics DDI portion of the driver for off-scre
 
 Both [**HeapVidMemAllocAligned**](https://msdn.microsoft.com/library/windows/hardware/ff567267) and [**VidMemFree**](https://msdn.microsoft.com/library/windows/hardware/ff570554) are declared in *dmemmgr.h*, which ships with the Windows Driver Kit (WDK). A driver might have to define \_\_NTDDKCOMP\_\_ before including this header file.
 
- 
+ 
 
- 
+ 
 
 
 

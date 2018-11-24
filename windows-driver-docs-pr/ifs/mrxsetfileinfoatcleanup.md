@@ -11,11 +11,7 @@ api_location:
 - mrx.h
 api_type:
 - UserDefined
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -68,7 +64,7 @@ The **Info.FileInformationClass** member is set to a FILE\_INFORMATION\_CLASS va
 
 The **Info.Buffer** member is set to a FILE\_END\_OF\_FILE\_INFORMATION structure allocated on the stack.
 
-The **Info.Length** member is set to **sizeof(**FILE\_END\_OF\_FILE\_INFORMATION**)**.
+The **Info.Length** member is set to <strong>sizeof(</strong>FILE\_END\_OF\_FILE\_INFORMATION<strong>)</strong>.
 
 RDBSS ignores the return value from *MRxSetFileInfoAtCleanup*.
 
@@ -121,9 +117,9 @@ Requirements
 
 [**MRxSetVolumeInfo**](mrxsetvolumeinfo.md)
 
- 
+ 
 
- 
+ 
 
 
 

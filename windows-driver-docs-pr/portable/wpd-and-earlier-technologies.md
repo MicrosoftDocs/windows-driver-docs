@@ -1,11 +1,7 @@
 ---
 Description: WPD and Earlier Technologies
 title: WPD and Earlier Technologies
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,9 +17,9 @@ The WPD MTP driver also supports Picture Transfer Protocol (PTP) devices. PTP de
 
 [**WPD Drivers Overview**](wpd-drivers-overview.md)
 
- 
+ 
 
- 
+ 
 
 
 

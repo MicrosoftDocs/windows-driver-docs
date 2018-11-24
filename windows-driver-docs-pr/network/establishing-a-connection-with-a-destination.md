@@ -10,11 +10,7 @@ keywords:
 - established socket connections WDK Winsock Kernel
 - connections WDK Winsock Kernel
 - destination connections WDK Winsock Kernel
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +23,7 @@ A WSK application connects a socket to a remote transport address by calling the
 
 The following code example shows how a WSK application can connect a connection-oriented socket to a remote transport address.
 
-```
+```C++
 // Prototype for the connect IoCompletion routine
 NTSTATUS
   ConnectComplete(
@@ -128,9 +124,9 @@ NTSTATUS
 
 A WSK application can call the [**WskSocketConnect**](https://msdn.microsoft.com/library/windows/hardware/ff571150) function to create, bind, and connect a connection-oriented socket in a single function call.
 
- 
+ 
 
- 
+ 
 
 
 

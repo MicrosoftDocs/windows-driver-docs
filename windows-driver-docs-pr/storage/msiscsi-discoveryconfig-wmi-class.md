@@ -3,6 +3,7 @@ title: MSiSCSI\_DiscoveryConfig WMI Class
 description: MSiSCSI\_DiscoveryConfig WMI Class
 ms.assetid: dbf170ba-92ab-47bd-a076-5f54129305a5
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MSiSCSI\_DiscoveryConfig WMI Class
@@ -15,7 +16,7 @@ The MSiSCSI\_DiscoveryConfig WMI class reports what methods an initiator uses to
 
 This class is defined as follows in *Config.mof*.
 
-```
+```cpp
 class MSiSCSI_DiscoveryConfig {
   [key] string  InstanceName;
   boolean  Active;
@@ -40,9 +41,9 @@ class MSiSCSI_DiscoveryConfig {
 
 When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_DiscoveryConfig**](https://msdn.microsoft.com/library/windows/hardware/ff562991) data structure.
 
- 
+ 
 
- 
+ 
 
 
 

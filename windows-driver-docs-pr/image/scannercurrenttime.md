@@ -9,11 +9,7 @@ api_name:
 - wscn ScannerCurrentTime
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **ScannerCurrentTime** element indicates the current date and time 
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ScannerCurrentTime>
   text
 </wscn:ScannerCurrentTime>
@@ -60,7 +56,7 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ScannerStatus</strong>](scannerstatus.md)</p></td>
+<td><p><a href="scannerstatus.md" data-raw-source="[&lt;strong&gt;ScannerStatus&lt;/strong&gt;](scannerstatus.md)"><strong>ScannerStatus</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -72,14 +68,14 @@ The scanner's internal clock does not have to be a real-time clock. The clock ca
 
 All times are based on the time at startup, so the client can calculate duration and relative time by reading the **ScannerCurrentTime** element and comparing it to the previous time value.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ScannerStatus**](scannerstatus.md)
 
- 
+ 
 
- 
+ 
 
 
 

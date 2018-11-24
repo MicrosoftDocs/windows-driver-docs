@@ -3,6 +3,7 @@ title: MSFC\_EventBuffer WMI Class
 description: MSFC\_EventBuffer WMI Class
 ms.assetid: ce16e42c-5d0b-47e9-9baa-53dcec482940
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MSFC\_EventBuffer WMI Class
@@ -15,7 +16,7 @@ An HBA miniport driver that supports the T11 committee's *Fibre Channel HBA API*
 
 The MSFC\_EventBuffer class is defined as follows in *Hbaapi.mof*:
 
-```
+```cpp
 class MSFC_EventBuffer { 
   [WmiDataId(1)] uint32  EventType;
   [WmiDataId(2)] uint32  EventInfo[4];
@@ -28,9 +29,9 @@ When compiled by the WMI tool suite this class definition produces the following
 
 There are no methods associated with this WMI class.
 
- 
+ 
 
- 
+ 
 
 
 

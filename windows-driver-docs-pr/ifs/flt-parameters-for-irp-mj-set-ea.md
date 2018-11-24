@@ -1,5 +1,5 @@
 ---
-title: FLT\_PARAMETERS for IRP\_MJ\_SET\_EA union
+title: FLT_PARAMETERS for IRP_MJ_SET_EA union
 description: Union component used when the MajorFunction field of the FLT\_IO\_PARAMETER\_BLOCK structure for the operation is IRP\_MJ\_SET\_EA.
 ms.assetid: 92136272-b40b-4f03-ab31-15184aaccd16
 keywords: ["FLT_PARAMETERS for IRP_MJ_SET_EA union Installable File System Drivers", "FLT_PARAMETERS union Installable File System Drivers", "PFLT_PARAMETERS union pointer Installable File System Drivers"]
@@ -11,11 +11,7 @@ api_location:
 - fltkernel.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -98,9 +94,9 @@ Requirements
 
 [**IRP\_MJ\_SET\_EA**](irp-mj-set-ea.md)
 
- 
+ 
 
- 
+ 
 
 
 

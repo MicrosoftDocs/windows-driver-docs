@@ -1,6 +1,5 @@
 ---
 title: GDL Schemas
-author: windows-driver-content
 description: GDL Schemas
 ms.assetid: 1020bec8-3b34-4391-9e75-9ffcd8b07785
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - schemas WDK GDL
 - schemas WDK GDL , examples
 - constructs WDK GDL , examples
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +20,7 @@ A *schema* describes the structure and format of the data in the associated GDL 
 
 The GDL data might look something like the following code example.
 
-```
+```cpp
 *Person: person_ID
 {
   *Name:
@@ -39,7 +34,7 @@ The GDL data might look something like the following code example.
 
 Because \*HomeAddress and \*EmploymentInfo represent logical groupings of information, they can also be defined as constructs, as the following code example shows.
 
-```
+```cpp
 *HomeAddress:
 {
   *StreetAddress:
@@ -67,7 +62,7 @@ The schema allows the definition of entries to be shared and inherited. For exam
 
 The schema can be used to specify the format of a given attribute value. For example, the schema can require that the date value be specified in the MM-DD-YYYY format. You can also have the parser decompose complex value expressions into their constituent components and display them in the snapshot. For example, your client application might want the date decomposed into three separate fields, as the following code example shows.
 
-```
+```cpp
 *Date:
 {
   *Month: Jan
@@ -82,9 +77,9 @@ As the preceding example demonstrates, inheritance enables you to factor out com
 
 For more information about how to use inheritance-based schemas, see [GDL Templates](gdl-template-structure.md).
 
- 
+ 
 
- 
+ 
 
 
 

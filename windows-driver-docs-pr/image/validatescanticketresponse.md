@@ -9,11 +9,7 @@ api_name:
 - wscn ValidateScanTicketResponse
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **ValidateScanTicketResponse** operation notifies the client whethe
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ValidateScanTicketResponse>
   child elements
 </wscn:ValidateScanTicketResponse>
@@ -50,7 +46,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ValidationInfo</strong>](validationinfo.md)</p></td>
+<td><p><a href="validationinfo.md" data-raw-source="[&lt;strong&gt;ValidationInfo&lt;/strong&gt;](validationinfo.md)"><strong>ValidationInfo</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -70,7 +66,7 @@ Examples
 
 The following code example shows a response to a client when it has submitted a valid scan ticket.
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope
   xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
@@ -78,7 +74,7 @@ The following code example shows a response to a client when it has submitted a 
   xmlns:xop="http://www.w3.org/2003/12/xop/include"
   xmlns:xop-mime="http://www.w3.org/2003/12/xop/mime"
   xmlns:wscn="http://schemas.microsoft.com/windows/2006/01/wdp/scan"
-  soap:encodingStyle=&#39;http://www.w3.org/2002/12/soap-encoding&#39; >
+  soap:encodingStyle='http://www.w3.org/2002/12/soap-encoding' >
 
   <soap:Header>
     <wsa:To>
@@ -110,7 +106,7 @@ The following code example shows a response to a client when it has submitted a 
 
 The following code example shows a response to a client when it has submitted an invalid scan ticket.
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope
   xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
@@ -118,7 +114,7 @@ The following code example shows a response to a client when it has submitted an
   xmlns:xop="http://www.w3.org/2003/12/xop/include"
   xmlns:xop-mime="http://www.w3.org/2003/12/xop/mime"
   xmlns:wscn="http://schemas.microsoft.com/windows/2006/01/wdp/scan"
-  soap:encodingStyle=&#39;http://www.w3.org/2002/12/soap-encoding&#39; >
+  soap:encodingStyle='http://www.w3.org/2002/12/soap-encoding' >
 
   <soap:Header>
     <wsa:To>
@@ -172,25 +168,12 @@ The following code example shows a response to a client when it has submitted an
     </wscn:ValidateScanTicketResponse>
   </soap:Body>
 </soap:Envelope>
-
-
 ```
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**ScanTicket**](scanticket.md)
 
 [**ValidateScanTicketRequest**](validatescanticketrequest.md)
 
 [**ValidationInfo**](validationinfo.md)
-
- 
-
- 
-
-
-
-
-
-

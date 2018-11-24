@@ -1,6 +1,5 @@
 ---
 title: '#SetPPPrefix Preprocessor Directive'
-author: windows-driver-content
 description: '#SetPPPrefix Preprocessor Directive'
 ms.assetid: 3520aa66-1090-40db-9c9f-cfba0e6e2bee
 keywords:
@@ -8,18 +7,14 @@ keywords:
 - keywords WDK GDL
 - reserved keywords WDK
 - SetPPPrefix directive WDK GDL
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # \#SetPPPrefix Preprocessor Directive
 
 
-```
+```GDL
 #SetPPPrefix: prefix
 ```
 
@@ -27,7 +22,7 @@ The \#SetPPPrefix directive makes the *prefix* value the current preprocessor pr
 
 You can define the same prefix more than once. The prefix is user-selectable because it allows directives to be unambiguously distinguished from any existing not-to-be-processed data. The following code example shows how to change a prefix if a normal GDL entry contains a value that might be confused with an actual directive.
 
-```
+```GDL
 *%  assume current prefix is #
 #SetPPPrefix: #Temp#
 #Temp#Ifdef:  WINNT_60
@@ -37,11 +32,3 @@ You can define the same prefix more than once. The prefix is user-selectable bec
 #Temp#UndefinePrefix
 *%  now back to normal # prefix.
 ```
-
- 
-
- 
-
-
-
-

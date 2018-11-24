@@ -6,11 +6,7 @@ keywords:
 - NDIS network interfaces WDK , interface providers
 - network interfaces WDK , interface providers
 - interface providers WDk network interface
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +26,9 @@ The following topics describe how to handle query and set requests for interface
 
 [Handling an Interface Object Set Request](handling-an-interface-object-set-request.md)
 
- 
+ 
 
- 
+ 
 
 
 

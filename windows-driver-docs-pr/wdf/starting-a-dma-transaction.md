@@ -1,6 +1,5 @@
 ---
 title: Starting a DMA Transaction
-author: windows-driver-content
 description: Starting a DMA Transaction
 ms.assetid: fa26ef08-01c0-4502-9cb3-865000242e4a
 keywords:
@@ -9,11 +8,7 @@ keywords:
 - bus-master DMA WDK KMDF , transactions
 - starting DMA transactions WDK KMDF
 - scatter/gather DMA WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,7 +26,7 @@ Before your driver calls **WdfDmaTransactionExecute**, the driver must store the
 
 The following code example from the [PLX9x5x](http://go.microsoft.com/fwlink/p/?linkid=256157) sample shows how to initialize and then execute a DMA transaction. This code appears in the *Read.c* file.
 
-```
+```cpp
 VOID PLxEvtIoRead(
     IN WDFQUEUE         Queue,
     IN WDFREQUEST       Request,
@@ -79,12 +74,11 @@ VOID PLxEvtIoRead(
     }
     return;
 }
-
 ```
 
- 
 
- 
+
+
 
 
 

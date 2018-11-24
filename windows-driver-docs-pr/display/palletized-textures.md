@@ -6,11 +6,7 @@ keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , palletized textures
 - textures WDK DirectX 8.0
 - palletized textures WDK DirectX 8.0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +22,9 @@ It cannot be assumed, because an association between a surface and a palette has
 
 Furthermore, DirectDraw's palette DDI entry points are not called for these palettes. All DDI notifications of texture palette operations are done through the DP2 stream.
 
- 
+ 
 
- 
+ 
 
 
 

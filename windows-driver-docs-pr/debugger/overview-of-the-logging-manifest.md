@@ -3,11 +3,7 @@ title: Overview of the Logging Manifest
 description: Overview of the Logging Manifest
 ms.assetid: abf550c5-6b70-4043-b2e9-d3dc5096cc4e
 keywords: ["LogViewer, manifest", "LogViewer, manifest, overview"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +25,9 @@ For example, the manifest format facilitates the following features:
 
 -   Designation of parameters that can be aliased for log differencing. This feature gives LogViewer the option of assigning a constant string to a value that changes from execution to execution like pointers and handles when it exports the data to a file. You can then use a differencing tool to compare two execution logs for discrepancies. If pointers and handle values were not aliased, they would produce uninteresting discrepancies when the two files are compared.
 
- 
+ 
 
- 
+ 
 
 
 

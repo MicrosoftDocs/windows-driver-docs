@@ -12,11 +12,7 @@ keywords:
 - tears WDK DirectDraw
 - scan lines WDK DirectDraw
 - surfaces WDK DirectDraw , flipping
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,9 +38,9 @@ Once it is okay to flip, the reference to the surface to display next is loaded 
 
 Checking whether the register has been read is just a matter of checking a flag in most newer cards. In older cards, however, a hardware interrupt was often used for this purpose. When a certain point was crossed that read in the flip register, whatever function was hooked to that interrupt would be called. The problem is that this interrupt may be used for other purposes in some newer hardware.
 
- 
+ 
 
- 
+ 
 
 
 

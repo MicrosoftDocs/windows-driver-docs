@@ -5,11 +5,7 @@ ms.assetid: a77ceb1b-d4b9-4a42-aa5b-685295722fa3
 keywords:
 - ports WDK NDIS , types
 - NDIS ports WDK , types
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,7 +34,7 @@ Reserved for system use.
 
 **Note**  This value is supported only in NDIS 6.30 and later.
 
- 
+ 
 
 The characteristics of an NDIS port vary from one port application to another. For example, for a bridge interface, the miniport driver upper edge of an intermediate driver creates an **NdisPortTypeBridge** port when the protocol edge of the intermediate driver binds to a physical miniport adapter that requires a bridge at layer three.
 
@@ -49,9 +45,9 @@ The characteristics of an NDIS port vary from one port application to another. F
 
 [Overview of NDIS Ports](overview-of-ndis-ports.md)
 
- 
+ 
 
- 
+ 
 
 
 

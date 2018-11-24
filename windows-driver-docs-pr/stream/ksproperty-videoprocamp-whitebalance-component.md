@@ -11,11 +11,7 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +23,7 @@ The KSPROPERTY\_VIDEOPROCAMP\_WHITEBALANCE\_COMPONENT property specifies the whi
 ## <span id="ddk_ksproperty_videoprocamp_whitebalance_component_ks"></span><span id="DDK_KSPROPERTY_VIDEOPROCAMP_WHITEBALANCE_COMPONENT_KS"></span>
 
 
-### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
+### Usage Summary Table
 
 <table>
 <colgroup>
@@ -51,13 +47,13 @@ The KSPROPERTY\_VIDEOPROCAMP\_WHITEBALANCE\_COMPONENT property specifies the whi
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>node</p></td>
-<td>[<strong>KSPROPERTY_VIDEOPROCAMP_NODE_S2</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566082)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/ff566082" data-raw-source="[&lt;strong&gt;KSPROPERTY_VIDEOPROCAMP_NODE_S2&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566082)"><strong>KSPROPERTY_VIDEOPROCAMP_NODE_S2</strong></a></td>
 <td><p>Pair of LONG integers</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a pair of LONG integers that specify the red and blue components of a camera's white balance setting. The values indicate the current red and blue component values of the camera.
 
@@ -88,16 +84,16 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
-[**KSPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff564262)
+[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)
 
 [**KSPROPERTY\_VIDEOPROCAMP\_NODE\_S2**](https://msdn.microsoft.com/library/windows/hardware/ff566082)
 
- 
+ 
 
- 
+ 
 
 
 

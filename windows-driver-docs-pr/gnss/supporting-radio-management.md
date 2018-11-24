@@ -1,6 +1,5 @@
 ---
 title: Supporting radio management
-author: windows-driver-content
 description: When the user chooses the Wireless option in PC settings on their Windows 8 laptop, notebook, or tablet, they can turn any connected wireless devices on or off.
 ms.assetid: AA7AB429-30C5-4C10-AA85-41ED9EAEE69A
 keywords:
@@ -9,11 +8,7 @@ keywords:
 - radio management, example
 - GPS radio management
 - radio management, GPS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -57,7 +52,7 @@ The following table lists the methods in the Radio Management API and the corres
 | IMediaRadioManagerNotifySink::OnInstanceRadioChange | CSampleRadioManager::\_FireEventOnInstanceRadioChange |
 | IMediaRadioManagerNotifySink::OnInstanceRemove      | CSampleRadioManager::\_FireEventOnInstanceRemove      |
 
- 
+ 
 
 ## Communicating with the device driver
 
@@ -90,9 +85,9 @@ You can debug the radio-management DLL in Visual Studio by completing the follow
 
 Note that if multiple instances of dllhost.exe are running, you may need to choose each one in a process of elimination in order to determine the process associated with the radio-management DLL. Once you’ve attached to the correct process, you can set breakpoints in Visual Studio and begin debugging.
 
- 
+ 
 
- 
+ 
 
 
 

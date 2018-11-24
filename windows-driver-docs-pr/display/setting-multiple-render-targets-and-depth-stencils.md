@@ -6,11 +6,7 @@ keywords:
 - render targets WDK DirectX 9.0 , multiple
 - multiple render targets WDK DirectX 9.0
 - depth stencils WDK DirectX 9.0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,9 +18,9 @@ ms.localizationpriority: medium
 
 A DirectX 9.0 version driver must process D3DDP2OP\_SETRENDERTARGET2 and D3DDP2OP\_SETDEPTHSTENCIL operation codes in its [**D3dDrawPrimitives2**](https://msdn.microsoft.com/library/windows/hardware/ff544704) function even if it does not support [rendering to multiple targets simultaneously](rendering-to-multiple-targets-simultaneously.md). [**D3DHAL\_DP2SETRENDERTARGET2**](https://msdn.microsoft.com/library/windows/hardware/ff545785) and [**D3DHAL\_DP2SETDEPTHSTENCIL**](https://msdn.microsoft.com/library/windows/hardware/ff545724) structures respectively follow these codes in the [command stream](command-stream.md).
 
- 
+ 
 
- 
+ 
 
 
 

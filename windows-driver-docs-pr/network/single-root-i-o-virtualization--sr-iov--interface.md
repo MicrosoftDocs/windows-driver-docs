@@ -2,11 +2,7 @@
 title: Single Root I/O Virtualization (SR-IOV) Interface
 description: Single Root I/O Virtualization (SR-IOV) Interface
 ms.assetid: B65160F9-DB7E-427E-999C-09BD00173076
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,13 +31,13 @@ The use of the VF data path provides the following benefits:
 
     **Note**  Packets to or from child partitions to which no VF is attached are forwarded by the NIC switch to the extensible switch module. This module runs in the Hyper-V parent partition and delivers these packets to the child partition by using the synthetic data path.
 
-     
+     
 
 For more information about the SR-IOV interface, see [Single Root I/O Virtualization (SR-IOV)](single-root-i-o-virtualization--sr-iov-.md).
 
- 
+ 
 
- 
+ 
 
 
 

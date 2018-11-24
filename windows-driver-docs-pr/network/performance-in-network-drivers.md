@@ -2,11 +2,7 @@
 title: Performance in network drivers
 description: This section describes techniques to improve performance in network drivers
 ms.assetid: 7EA23AA6-7673-4D88-91CA-BDDD8FBB2A4F
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -115,9 +111,9 @@ To minimize disruptions during media playback in multimedia applications, NDIS 6
 
 [Receive Side Throttle in NDIS 6.20](receive-side-throttle-in-ndis-6-20.md)
 "Send and Receive Code Paths" in [Summary of Changes Required to Port a Miniport Driver to NDIS 6.20](summary-of-changes-required-to-port-a-miniport-driver-to-ndis-6-20.md)
- 
+ 
 
- 
+ 
 
 
 

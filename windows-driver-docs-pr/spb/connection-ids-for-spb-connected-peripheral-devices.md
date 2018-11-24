@@ -1,13 +1,8 @@
 ---
 title: Connection IDs for SPB-Connected Peripheral Devices
-author: windows-driver-content
 description: Before a driver can send I/O requests to a peripheral device on a simple peripheral bus (SPB), the driver must open a logical connection to the device.
 ms.assetid: 234B5858-5930-40AD-BE4C-4A774A809D10
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -44,9 +39,9 @@ User-mode applications cannot open logical connections to SPB-connected peripher
 
 Only one driver can hold an open logical connection to an SPB-connected peripheral device at a time. An attempt by another driver to open a second connection to the same device fails.
 
- 
+ 
 
- 
+ 
 
 
 

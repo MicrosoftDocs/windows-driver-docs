@@ -1,6 +1,5 @@
 ---
 title: SENSOR\_CATEGORY\_ENVIRONMENTAL
-author: windows-driver-content
 description: The SENSOR\_CATEGORY\_ENVIRONMENTAL category contains sensors that provide information about the surrounding environment or weather.
 ms.assetid: 49839092-0792-4e89-bc3a-7defc4730937
 keywords: ["SENSOR_CATEGORY_ENVIRONMENTAL Sensor Devices"]
@@ -12,11 +11,7 @@ api_location:
 - Sensors.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 01/04/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,7 +32,7 @@ This category includes the following platform-defined sensor types.
 |SENSOR_TYPE_ENVIRONMENTAL_WIND_DIRECTION|Weather vanes.|
 |SENSOR_TYPE_ENVIRONMENTAL_WIND_SPEED|Anemometers.|
 
- 
+ 
 
 ### Platform-defined Data Fields
 
@@ -51,12 +46,12 @@ This category includes the following platform-defined data fields.
 |SENSOR_DATA_TYPE_WIND_DIRECTION_DEGREES_ANTICLOCKWISE|VT_R4|Wind direction relative to magnetic north, in degrees. North is represented as 0.0 (top of the x-axis), with values increasing in an anticlockwise rotation. The z-axis points upwards.|
 |SENSOR_DATA_TYPE_WIND_SPEED_METERS_PER_SECOND|VT_R4|Wind speed in meters per second.|
 
- 
+ 
 
 >[!IMPORTANT]
 > Each platform-defined environmental data type **PROPERTYKEY** is based on a common **GUID** that is named SENSOR\_DATA\_TYPE\_ENVIRONMENTAL\_GUID. As it is a reserved base value, do not use this **GUID** to define your own property keys.
 
- 
+ 
 
 ## Requirements
 
@@ -69,9 +64,9 @@ This category includes the following platform-defined data fields.
 |Header|Sensors.h|
 
 
- 
+ 
 
- 
+ 
 
 
 

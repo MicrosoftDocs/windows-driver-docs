@@ -1,6 +1,5 @@
 ---
 title: WHEA Hardware Error Events
-author: windows-driver-content
 description: WHEA Hardware Error Events
 ms.assetid: c9f88e3b-3915-4a77-8d60-f0f3da514abc
 keywords:
@@ -11,11 +10,7 @@ keywords:
 - errors WDK WHEA , events
 - hardware error events WDK WHEA
 - events WDK WHEA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,9 +27,9 @@ Regardless of whether a particular hardware error event was obtained by querying
 
 Each hardware error event contains an [error record](error-records.md) that describes the error condition that occurred. The error record can be retrieved from each event for further analysis.
 
- 
+ 
 
- 
+ 
 
 
 

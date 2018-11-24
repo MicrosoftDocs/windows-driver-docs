@@ -2,11 +2,7 @@
 title: WlanTimedScan rule (ndis)
 description: The WlanTimedScan rule verifies that a WLAN scan operation is completed within 15 seconds.
 ms.assetid: 6BFA0DAD-00A4-43EB-A226-40E1B0892E91
-ms.author: windowsdriverdev
 ms.date: 05/21/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: ["WlanTimedScan rule (ndis)"]
 topic_type:
 - apiref
@@ -44,12 +40,12 @@ How to test
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Run [Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff545448) and select the [NDIS/WIFI verification](https://msdn.microsoft.com/library/windows/hardware/dn312128) option.</p></td>
+<td align="left"><p>Run <a href="https://msdn.microsoft.com/library/windows/hardware/ff545448" data-raw-source="[Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff545448)">Driver Verifier</a> and select the <a href="https://msdn.microsoft.com/library/windows/hardware/dn312128" data-raw-source="[NDIS/WIFI verification](https://msdn.microsoft.com/library/windows/hardware/dn312128)">NDIS/WIFI verification</a> option.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Applies to
 ----------
@@ -64,9 +60,9 @@ See also
 [General Connection Operation Guidelines](https://msdn.microsoft.com/library/windows/hardware/ff552458)
 [OID\_DOT11\_CONNECT\_REQUEST](https://msdn.microsoft.com/library/windows/hardware/ff569122)
 [NDIS\_STATUS\_DOT11\_CONNECTION\_START](https://msdn.microsoft.com/library/windows/hardware/ff567328)
- 
+ 
 
- 
+ 
 
 
 

@@ -10,11 +10,7 @@ keywords:
 - NdisAllocateMemory
 - NdisAllocateMemoryWithTag
 - NdisAllocateMemoryWithTagPriority
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +22,9 @@ ms.localizationpriority: medium
 
 In NDIS 6.0, the [**NdisAllocateMemoryWithTagPriority**](https://msdn.microsoft.com/library/windows/hardware/ff561606) function replaces the [**NdisAllocateMemory**](https://msdn.microsoft.com/library/windows/hardware/ff550762) and [**NdisAllocateMemoryWithTag**](https://msdn.microsoft.com/library/windows/hardware/ff550767) functions. In addition to specifying the protocol driver handle, pool size, and tag, **NdisAllocateMemoryWithTagPriority** requires an allocation priority that indicates the importance of the request. The priority is the same as that defined for the [**ExAllocatePoolWithTagPriority**](https://msdn.microsoft.com/library/windows/hardware/ff544523) function.
 
- 
+ 
 
- 
+ 
 
 
 

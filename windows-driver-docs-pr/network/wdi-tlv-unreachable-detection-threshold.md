@@ -1,13 +1,8 @@
 ---
 title: WDI_TLV_UNREACHABLE_DETECTION_THRESHOLD
-author: windows-driver-content
 description: WDI_TLV_UNREACHABLE_DETECTION_THRESHOLD is a TLV that contains the unreachable detection threshold.
 ms.assetid: D2C41B26-90EF-4A62-A105-DBEF3822BA6E
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_UNREACHABLE_DETECTION_THRESHOLD Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -35,7 +30,7 @@ The size (in bytes) of a UINT32.
 |--------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | UINT32 | The unreachable detection threshold. Specifies the maximum amount of time, in milliseconds, before the 802.11 station determines that it has lost connectivity to a peer device. The station must include missed beacons in making this connectivity loss determination but can also use any other heuristics it desires. |
 
- 
+ 
 
 Requirements
 ------------
@@ -61,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

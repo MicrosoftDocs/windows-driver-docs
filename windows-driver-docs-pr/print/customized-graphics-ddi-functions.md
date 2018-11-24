@@ -1,17 +1,12 @@
 ---
 title: Customized Graphics DDI Functions
-author: windows-driver-content
 description: Customized Graphics DDI Functions
 ms.assetid: 33d7d567-5371-4873-a4ef-cd2b06f65d73
 keywords:
 - rendering plug-ins WDK print , graphics DDI functions
 - graphics DDI functions WDK print
 - hooking graphics DDI functions WDK print
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +26,9 @@ The rest of this section contains the following topics:
 
 [Non-COM-Based Rendering Plug-Ins](non-com-based-rendering-plug-ins.md)
 
- 
+ 
 
- 
+ 
 
 
 

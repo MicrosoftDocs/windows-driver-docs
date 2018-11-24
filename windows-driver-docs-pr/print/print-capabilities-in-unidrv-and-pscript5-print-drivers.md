@@ -1,16 +1,11 @@
 ---
 title: Print Capabilities in Unidrv and PScript5 Print Drivers
-author: windows-driver-content
 description: Print Capabilities in Unidrv and PScript5 Print Drivers
 ms.assetid: 70f8b846-3e05-4345-baad-a3db6b8df620
 keywords:
 - Print Capabilities WDK , Unidrv
 - Print Capabilities WDK , PScript5
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,9 +16,9 @@ The Unidrv and PScript5 minidrivers provide the Print Ticket and Print Capabilit
 
 [XPSDrv print drivers](xpsdrv-printer-drivers.md) can also use the Unidrv printer configuration DLL to provide the required support for both the GDI-based printer configuration interface and the [IPrintTicketProvider interface](https://msdn.microsoft.com/library/windows/hardware/ff554375). If you use the Unidrv configuration DLL, you can expedite the development of XPSDrv printer drivers for basic-functionality printers or pass-through print drivers.
 
- 
+ 
 
- 
+ 
 
 
 

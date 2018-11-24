@@ -9,11 +9,7 @@ api_name:
 - AVC_FUNCTION_CLR_CONNECTINFO
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ ms.localizationpriority: medium
 
 The AVC\_FUNCTION\_CLR\_CONNECT\_INFO function code causes *avc.sys* to remove any cached AVCCONNECTINFO values.
 
-### <span id="i_o_status_block"></span><span id="I_O_STATUS_BLOCK"></span>I/O Status Block
+### I/O Status Block
 
 If successful, the AV/C protocol driver sets **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS.
 
@@ -58,13 +54,13 @@ Possible other return values include:
 </tbody>
 </table>
 
- 
+ 
 
-### <span id="comments"></span><span id="COMMENTS"></span>Comments
+### Comments
 
 This function uses the **PinId** member of the AVC\_MULTIFUNC\_IRB structure as shown below.
 
-```
+```cpp
 typedef struct _AVC_MULTIFUNC_IRB {
   AVC_IRB  Common;
   union {
@@ -79,16 +75,16 @@ typedef struct _AVC_MULTIFUNC_IRB {
 } AVC_MULTIFUNC_IRB, *PAVC_MULTIFUNC_IRB;
 ```
 
-### <span id="requirements"></span><span id="REQUIREMENTS"></span>Requirements
+### Requirements
 
 **Headers:** Declared in *avc.h*. Include *avc.h*.
 
-### <span id="avc_multifunc_irb_input"></span><span id="AVC_MULTIFUNC_IRB_INPUT"></span>AVC\_MULTIFUNC\_IRB Input
+### AVC\_MULTIFUNC\_IRB Input
 
-<span id="Common"></span><span id="common"></span><span id="COMMON"></span>**Common**  
+**Common**  
 The **Function** submember of this member must be set to **AVC\_FUNCTION\_CLR\_CONNECTINFO** from the AVC\_FUNCTION enumeration.
 
-<span id="PinId"></span><span id="pinid"></span><span id="PINID"></span>**PinId**  
+**PinId**  
 Specifies the offset (or ID) of the pin for which a connection is to be released.
 
 This function code is not supported by virtual instances of *avc.sys*.
@@ -97,13 +93,13 @@ A subunit driver must use this function when the plug connections should no long
 
 This must be called at IRQL = PASSIVE\_LEVEL.
 
-### <span id="see_also"></span><span id="SEE_ALSO"></span>See Also
+### See Also
 
 [**AVC\_MULTIFUNC\_IRB**](https://msdn.microsoft.com/library/windows/hardware/ff554177), [**AVC\_PIN\_ID**](https://msdn.microsoft.com/library/windows/hardware/ff554187), [**AVC\_FUNCTION**](https://msdn.microsoft.com/library/windows/hardware/ff554145)
 
- 
+ 
 
- 
+ 
 
 
 

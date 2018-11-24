@@ -3,11 +3,7 @@ title: ivt
 description: The ivt extension displays the Itanium interrupt vector table.
 ms.assetid: 855c50ed-361e-4236-a1b0-e1b2a3ae2a62
 keywords: ["interrupt vector table", "ivt Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,14 +18,14 @@ ms.localizationpriority: medium
 
 The !ivt extension displays the Itanium interrupt vector table.
 
-```
+```dbgcmd
 !ivt [-v] [-a] [Vector] 
 !ivt -? 
 ```
 
 **Important**  This command has been deprecated in the Windows Debugger Version 10.0.14257 and later, and is no longer available.
 
- 
+ 
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 
@@ -65,7 +61,7 @@ Displays help for this extension in the Debugger Command window.
 </tbody>
 </table>
 
- 
+ 
 
 This extension command can only be used with an Itanium target computer.
 
@@ -78,7 +74,7 @@ Remarks
 
 Here is an example of the output from this extension:
 
-```
+```dbgcmd
 kd> !ivt
 
 Dumping IA64 IVT:
@@ -107,9 +103,9 @@ fd:e000000083576b10 hal!HalpMcRzHandler
 fe:e000000083576830 hal!HalpPCIISALine2Pin
 ```
 
- 
+ 
 
- 
+ 
 
 
 

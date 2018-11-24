@@ -6,11 +6,7 @@ keywords:
 - display drivers WDK Windows 2000 , multiple monitors
 - multiple monitors WDK
 - multiple-monitor systems WDK Windows 2000 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +24,9 @@ To track window changes in a multiple-monitor system, a driver can request GDI t
 
 In a multiple-monitor system, GDI stores the device's desktop position in the **dmPosition** member of the [**DEVMODEW**](https://msdn.microsoft.com/library/windows/hardware/ff552837) structure.
 
- 
+ 
 
- 
+ 
 
 
 

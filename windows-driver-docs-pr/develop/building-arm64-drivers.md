@@ -1,17 +1,13 @@
 ---
 title: Building ARM64 Drivers with the WDK
 description: This topic describes how to build an ARM64 driver with the Windows Driver Kit (WDK).
-ms.author: windowsdriverdev
 ms.date: 01/18/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # Building ARM64 Drivers with the WDK
 
-Starting with the Fall Creators Update, Windows 10 Desktop (Pro and S editions) can run on machines that are powered by ARM64 processors.  However, because Windows 10 on ARM does not support x86 emulation of kernel-mode drivers, you must recompile kernel-mode drivers to ARM64 using the instructions below.
+Starting with version 1709, Windows 10 Desktop (Pro and S editions) can run on machines that are powered by ARM64 processors.  However, because Windows 10 on ARM does not support x86 emulation of kernel-mode drivers, you must recompile kernel-mode drivers to ARM64 using the instructions below.
 
 ## Setup
 
@@ -25,8 +21,8 @@ Starting with the Fall Creators Update, Windows 10 Desktop (Pro and S editions) 
 ![Selecting ARM-specific components to install](images/VS-individual-components.png)
 
 3.	Install and restart Visual Studio.
-4.  Download the [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk).  Ensure that you have SDK version 16299 (Fall Creators Update) or later.
-5.	Download the [Insider WDK](https://www.microsoft.com/software-download/windowsinsiderpreviewWDK).  Ensure that you have WDK version 16299 or later.
+4.  Download the [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk).  Ensure that you have SDK version 16299 (Windows 10, version 1709) or later.
+5.	Download the [WDK](../download-the-wdk.md).  Ensure that you have WDK version 16299 or later.
 
 ## Building an ARM64 Driver with the WDK
 
@@ -46,3 +42,4 @@ Starting with the Fall Creators Update, Windows 10 Desktop (Pro and S editions) 
 
 * [Debugging ARM64](../debugger/debugging-arm64.md)
 * [Windows 10 on ARM](https://docs.microsoft.com/windows/uwp/porting/apps-on-arm)
+* [HLK ARM64 Getting Started Guide](https://docs.microsoft.com/windows-hardware/test/hlk/getstarted/hlk-arm64-getting-started-guide)

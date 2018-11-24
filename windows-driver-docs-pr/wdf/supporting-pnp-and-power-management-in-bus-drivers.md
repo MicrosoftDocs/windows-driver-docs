@@ -1,6 +1,5 @@
 ---
 title: Supporting PnP and Power Management in Bus Drivers
-author: windows-driver-content
 description: Supporting PnP and Power Management in Bus Drivers
 ms.assetid: 35a3d734-7d7e-46ee-aba6-fc6a579d4394
 keywords:
@@ -10,11 +9,7 @@ keywords:
 - bus drivers WDK KMDF
 - child devices WDK KMDF
 - bus enumeration WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +24,9 @@ Bus drivers are essentially function drivers, or rarely a filter driver, that al
 
 Bus drivers also have the same PnP and power management responsibilities that function drivers have. For information about these responsibilities, see [Supporting PnP and Power Management in Function Drivers](supporting-pnp-and-power-management-in-function-drivers.md).
 
- 
+ 
 
- 
+ 
 
 
 

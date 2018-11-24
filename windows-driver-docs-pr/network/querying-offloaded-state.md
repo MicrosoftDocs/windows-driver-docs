@@ -7,11 +7,7 @@ keywords:
 - chimney offload WDK networking , querying offloaded state
 - offload state WDK TCP chimney offload , querying offloaded state
 - querying offloaded TCP chimney state
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +29,9 @@ This section includes:
 
 [Returning the Completion Status of a Query Offload Operation](returning-the-completion-status-of-a-query-offload-operation.md)
 
- 
+ 
 
- 
+ 
 
 
 

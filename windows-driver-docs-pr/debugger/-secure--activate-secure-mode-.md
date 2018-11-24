@@ -3,11 +3,7 @@ title: .secure (Activate Secure Mode)
 description: The .secure command activates or displays the status of Secure Mode.
 ms.assetid: 58a8936e-898f-4608-b1b0-399d5152f410
 keywords: [".secure (Activate Secure Mode) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **.secure** command activates or displays the status of Secure Mode.
 
-```
+```dbgcmd
 .secure 1 
 .secure 
 ```
@@ -55,7 +51,7 @@ Secure Mode can only be enabled while the debugger is dormant. Secure Mode appli
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -68,9 +64,9 @@ To activate Secure Mode, use the command **.secure 1** (or **.secure** followed 
 
 The command **.secure** will show whether Secure Mode is currently active.
 
- 
+ 
 
- 
+ 
 
 
 

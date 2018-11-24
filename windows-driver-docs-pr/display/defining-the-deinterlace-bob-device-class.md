@@ -5,11 +5,7 @@ ms.assetid: 1efe0a08-c3aa-4083-a19f-96e5ba94d517
 keywords:
 - deinterlacing WDK DirectX VA , bob
 - bob deinterlacing WDK DirectX VA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,7 +17,7 @@ ms.localizationpriority: medium
 
 Use the following example code to define the deinterlace bob device class:
 
-```
+```cpp
 // Deinterlace bob device class.
 struct DXVA_DeinterlaceBobDeviceClass : public DXVA_DeviceBaseClass
 {
@@ -55,9 +51,9 @@ struct DXVA_DeinterlaceBobDeviceClass : public DXVA_DeviceBaseClass
 };
 ```
 
- 
+ 
 
- 
+ 
 
 
 

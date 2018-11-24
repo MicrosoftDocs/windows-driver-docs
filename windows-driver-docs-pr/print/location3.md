@@ -1,13 +1,8 @@
 ---
 title: Location
-author: windows-driver-content
 description: Location
 ms.assetid: cbe6ec7f-36dd-484e-8db6-42e91e69577c
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -66,9 +61,9 @@ Data Type:BIDI\_STRING
 
 Description:A comma-separated list of all the values supported for staple Location.
 
- 
+ 
 
- 
+ 
 
 
 

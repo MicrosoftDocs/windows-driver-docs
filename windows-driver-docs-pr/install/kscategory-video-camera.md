@@ -12,6 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # KSCATEGORY_VIDEO_CAMERA
@@ -42,7 +43,7 @@ The KSCATEGORY_VIDEO_CAMERA GUID is defined as follows:
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -60,9 +61,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

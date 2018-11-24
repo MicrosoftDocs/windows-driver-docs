@@ -12,6 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # KSCATEGORY_VIDEO
@@ -42,7 +43,7 @@ The KSCATEGORY_VIDEO [device interface class](https://msdn.microsoft.com/library
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -80,9 +81,9 @@ Requirements
 
 [**KSCATEGORY_TVTUNER**](kscategory-tvtuner.md)
 
- 
+ 
 
- 
+ 
 
 
 

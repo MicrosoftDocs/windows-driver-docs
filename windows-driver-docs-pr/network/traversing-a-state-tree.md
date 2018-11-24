@@ -6,11 +6,7 @@ keywords:
 - offloading state process WDK TCP chimney offload , state tree transversing
 - transversing state tree WDK TCP chimney offload
 - state offloading process WDK TCP chimney offload , state tree traversing
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -64,9 +60,9 @@ It is extremely important that an offload target offload the state from a state 
 
 Note that a TCP connection is enabled as soon as it is offloaded.
 
- 
+ 
 
- 
+ 
 
 
 

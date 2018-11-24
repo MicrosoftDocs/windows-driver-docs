@@ -5,11 +5,7 @@ ms.assetid: e9ea5f0e-9b95-4671-a947-55692eca8902
 keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , index buffers
 - index buffers WDK Directx 8.0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,12 +19,12 @@ Before DirectX 8.0, vertex indices were restricted to 16-bit quantities. DirectX
 
 **DirectX 9.0 and later versions only.**
 
- 
+ 
 
 In order for a driver to expose its Direct3D hardware abstraction layer (HAL) device to applications through DirectX 9.0 interfaces, the driver must set the value of **MaxVertexIndex** to a value greater than or equal to 0xFFFF.
- 
+ 
 
- 
+ 
 
 
 

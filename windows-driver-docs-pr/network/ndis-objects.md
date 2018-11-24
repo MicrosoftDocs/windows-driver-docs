@@ -5,11 +5,7 @@ ms.assetid: 1a1338d7-f668-475b-99a9-4819de0a70c3
 keywords:
 - allocating generic NDIS objects
 - generic NDIS objects WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,9 +19,9 @@ Components that do not have an NDIS handle use the [**NdisAllocateGenericObject*
 
 For information about using generic objects, see [Obtaining Pool Handles](obtaining-pool-handles.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: PwrTest Monitor Scenario
 description: The PwrTest Monitor Scenario logs user idle statistics related to monitor or display auto-dimming and blanking.
 ms.assetid: 8B45C85A-01E8-4256-82F3-097871CB9021
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -17,7 +13,7 @@ The PwrTest Monitor Scenario logs user idle statistics related to monitor or dis
 
 When you run the PwrTest Monitor Scenario, you might want to also run the [PwrTest Requests Scenario](pwrtest-requests-scenario.md) (**/requests**) scenario in another window. The PwrTest Requests Scenario might help to understand why the monitor might still be on or the system still awake, even though the user has been idle long enough for the idle timers to expire.
 
-If you run both scenarios, be sure to use the **/ln:***name* parameter so that you can change the log file and ETW trace session names. The names need to be different to avoid a conflict between the two instances of the tool.
+If you run both scenarios, be sure to use the **/ln:**<em>name</em> parameter so that you can change the log file and ETW trace session names. The names need to be different to avoid a conflict between the two instances of the tool.
 
 ## <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>Syntax
 
@@ -26,7 +22,7 @@ If you run both scenarios, be sure to use the **/ln:***name* parameter so that y
 pwrtest /monitor  [/t:n] [/?] 
 ```
 
-<span id="_t_n"></span><span id="_T_N"></span>**/t:***n*  
+<span id="_t_n"></span><span id="_T_N"></span>**/t:**<em>n</em>  
 Specifies the total time (in minutes) for the scenario to run (the default value for *n* is 30 minutes).
 
 **Examples**
@@ -197,16 +193,16 @@ The following table describes the XML elements that appear in the log file.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
 
 [PwrTest Syntax](pwrtest-syntax.md)
 
- 
+ 
 
- 
+ 
 
 
 

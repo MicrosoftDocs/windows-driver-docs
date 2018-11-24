@@ -4,11 +4,7 @@ description: ACPI Keyboard Shortcut Logic
 ms.assetid: cd62380b-1393-403e-b0e6-c52f60c06936
 keywords:
 - ACPI hotkeys WDK display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ The behavior of calls to the following functions has changed for drivers running
 
 -   This function is not supported on Windows 7 and later for display miniport drivers with version &gt;= DXGKDDI\_INTERFACE\_VERSION\_WIN7. If called, the status code STATUS\_NOT\_SUPPORTED is returned.
 
- 
+ 
 
- 
+ 
 
 
 

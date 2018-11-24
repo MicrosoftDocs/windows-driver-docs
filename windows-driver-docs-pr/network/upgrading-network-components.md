@@ -7,11 +7,7 @@ keywords:
 - upgrading network components WDK
 - network component upgrades WDK , about upgrading network components
 - upgrading network components WDK , about upgrading network components
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,7 +19,7 @@ ms.localizationpriority: medium
 
 **Note**  Vendor-supplied network upgrades are not supported in Microsoft Windows XP (Service Pack 1 \[SP1\] and later), Microsoft Windows Server 2003, and later operating systems.
 
- 
+ 
 
 The network upgrade process migrates parameter values for network components during an operating system upgrade. The network upgrade process thus eliminates the need to reconfigure upgraded network components after the new operating system is installed.
 
@@ -51,9 +47,9 @@ The network upgrade process is described in the following topics:
 
 Network components whose drivers are released as part of Windows 2000 or later operating systems are automatically upgraded when the operating system is installed. No additional upgrade support is required for such components.
 
- 
+ 
 
- 
+ 
 
 
 

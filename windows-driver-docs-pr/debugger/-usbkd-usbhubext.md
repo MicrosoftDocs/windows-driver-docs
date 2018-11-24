@@ -3,11 +3,7 @@ title: usbkd.usbhubext
 description: The usbkd.usbhubext command displays information about a USB hub..
 ms.assetid: 1EC75753-3743-4384-8068-E796083D8239
 keywords: ["usbkd.usbhubext Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -20,9 +16,9 @@ ms.localizationpriority: medium
 # !usbkd.usbhubext
 
 
-The **!usbkd.usbhubext** command displays information about a USB hub..
+The **!usbkd.usbhubext** command displays information about a USB hub.
 
-```
+```dbgcmd
 !usbkd.usbhubext DeviceExtension
 ```
 
@@ -45,7 +41,7 @@ Examples
 
 Here is one way to find the address of the device extension for the FDO of USB hub. First enter [**!usbkd.usb2tree**](-usbkd-usb2tree.md).
 
-```
+```dbgcmd
 0: kd> !usbkd.usb2tree
 ...
 2)!ehci_info ffffe00001ca11a0 !devobj ffffe00001ca1050 PCI: VendorId 8086 DeviceId 293c RevisionId 0002 
@@ -54,7 +50,7 @@ Here is one way to find the address of the device extension for the FDO of USB h
 
 In the preceding output, you can see the suggested command **!devstack ffffe00002320050**. Enter this command.
 
-```
+```dbgcmd
 0: kd> !kdexts.devstack ffffe00002320050
 
   !DevObj           !DrvObj            !DevExt           ObjectName
@@ -67,7 +63,7 @@ In the preceding output, you can see that the address of the device extension fo
 
 Now pass the address of the device extension to the **!usbkd.usbhubext** command.
 
-```
+```dbgcmd
 0: kd> !usbkd.usbhubext ffffe000023201a0
 
 FDO ffffe00002320050 PDO ffffe0000213c050 HubNumber# 3
@@ -142,7 +138,7 @@ PortData 1: !port2_info ffffe000021bf000 Port State = PS_WAIT_CONNECT PortChange
 
 Here is one way to find the address of the device extension for the PDO of a device that is connected to a USB hub. First enter [**!usbkd.usb2tree**](-usbkd-usb2tree.md).
 
-```
+```dbgcmd
 0: kd> !usbkd.usb2tree
 ...
 2)!ehci_info ffffe00001ca11a0 !devobj ffffe00001ca1050 PCI: VendorId 8086 DeviceId 293c RevisionId 0002 
@@ -154,7 +150,7 @@ Here is one way to find the address of the device extension for the PDO of a dev
 
 In the preceding output, you can see suggested command **!devstack ffffe00007c882a0**. Enter this command.
 
-```
+```dbgcmd
 0: kd> !kdexts.devstack ffffe00007c882a0
 
   !DevObj           !DrvObj            !DevExt           ObjectName
@@ -167,7 +163,7 @@ In the preceding output, you can see that the address of the device extension fo
 
 Now pass the address of the device extension to the [**!usbhcdpnp**](-usbkd-usbhcdpnp.md) command.
 
-```
+```dbgcmd
 0: kd> !usbkd.usbhubext ffffe00007c883f0
 
 dt USBHUB!_DEVICE_EXTENSION_PDO ffffe00007c883f0
@@ -227,11 +223,11 @@ ProductId:Cruzer
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](http://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
- 
+ 
 
- 
+ 
 
 
 

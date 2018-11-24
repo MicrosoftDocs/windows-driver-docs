@@ -17,11 +17,7 @@ keywords:
 - video port extensions WDK DirectDraw , interlaced video
 - VPEs WDK DirectDraw , interlaced video
 - NTSC/PAL WDK video port extensions
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,9 +33,9 @@ For the following two scenarios, interlaced video must be integrated for playbac
 
 -   Existing interlaced content that is authored for display on an interlaced television, which also needs to be displayed with the best-possible quality on a progressive scan (proscan) computer monitor.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -6,11 +6,7 @@ keywords:
 - drawing extended surface capabilities WDK DirectDraw , description structure
 - DirectDraw extended surface capabilities WDK Windows 2000 display , description structure
 - extended surface capabilities WDK DirectDraw , description structure
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +22,9 @@ The data blocks for the [*DdCreateSurface*](https://msdn.microsoft.com/library/w
 
 If the size returned is sizeof(DDSURFACEDESC2), the driver can then examine the **dwCaps2**, **dwCaps3**, and **dwCaps4** members of the [**DDSCAPS2**](https://msdn.microsoft.com/library/windows/hardware/ff550292) structure.
 
- 
+ 
 
- 
+ 
 
 
 

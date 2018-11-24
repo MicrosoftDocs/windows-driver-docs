@@ -4,11 +4,7 @@ description: Alpha-Blend Combination Set
 ms.assetid: e7a11459-4f81-4b6d-a30f-04f4260d0df9
 keywords:
 - alpha-blend combination set WDK DirectX VA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,9 +16,9 @@ ms.localizationpriority: medium
 
 The minimal interoperability configuration set for alpha-blend combination consists of the **bConfigBlendType** member of the [**DXVA\_ConfigAlphaCombine**](https://msdn.microsoft.com/library/windows/hardware/ff563126) structure having a choice of values according to the [restricted profile](restricted-profiles.md) being implemented.
 
- 
+ 
 
- 
+ 
 
 
 

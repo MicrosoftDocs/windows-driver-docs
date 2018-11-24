@@ -1,13 +1,8 @@
 ---
 title: WIA Property Mapping
-author: windows-driver-content
 description: WIA Property Mapping
 ms.assetid: decd46b1-6a03-4c48-8b61-12d506cd419e
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,9 +27,9 @@ This section contains information on the following topics:
 
 [Mapping WIA Properties That Need No Changes - Special Cases](mapping-wia-properties-that-need-no-changes---special-cases.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,11 +3,7 @@ title: .allow_image_mapping (Allow Image Mapping)
 description: The .allow_image_mapping command controls whether image files will be mapped.
 ms.assetid: 3d216d17-f2af-48f7-9d91-e12c3c305a67
 keywords: [".allow_image_mapping (Allow Image Mapping) Windows Debugging"]
-ms.author: domars
-ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 09/17/2018
 topic_type:
 - apiref
 api_name:
@@ -22,10 +18,10 @@ ms.localizationpriority: medium
 
 The **.allow\_image\_mapping** command controls whether image files will be mapped.
 
-```
-.allow_image_mapping [/r] 0 
-.allow_image_mapping [/r] 1 
-.allow_image_mapping 
+```dbgcmd
+    .allow_image_mapping [/r] 0 
+    .allow_image_mapping [/r] 1 
+    .allow_image_mapping 
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
@@ -63,7 +59,7 @@ Allows image files to be mapped.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -72,9 +68,9 @@ With no parameters, **.allow\_image\_mapping** will display whether image file m
 
 Image mapping is most common when a minidump is being debugged. Image mapping can also occur if DbgHelp is unable to access debug records (for example, during kernel debugging when memory has been paged out).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: VBI Category
-author: windows-driver-content
 description: VBI Category
 ms.assetid: c33c0427-5162-435a-bb96-a230455a1035
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - VBI WDK video capture
 - vertical blanking interval WDK video capture
 - PINNAME_VIDEO_VBI
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -41,7 +36,7 @@ When specifying **PINNAME\_VIDEO\_VBI** pins, use the information listed in the 
 <tbody>
 <tr class="odd">
 <td><p><strong>DataRange Structure</strong></p></td>
-<td><p>[<strong>KS_DATARANGE_VIDEO_VBI</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567631)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567631" data-raw-source="[&lt;strong&gt;KS_DATARANGE_VIDEO_VBI&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567631)"><strong>KS_DATARANGE_VIDEO_VBI</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>DataFormat Structure</strong></p></td>
@@ -61,7 +56,7 @@ When specifying **PINNAME\_VIDEO\_VBI** pins, use the information listed in the 
 </tr>
 <tr class="even">
 <td><p><strong>Extended Header Size</strong></p></td>
-<td><p>[<strong>KS_VBI_FRAME_INFO</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567694)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567694" data-raw-source="[&lt;strong&gt;KS_VBI_FRAME_INFO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567694)"><strong>KS_VBI_FRAME_INFO</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Required Property Sets</strong></p></td>
@@ -82,11 +77,11 @@ When specifying **PINNAME\_VIDEO\_VBI** pins, use the information listed in the 
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Introduction to Parallel Ports and Devices
-author: windows-driver-content
 description: Introduction to Parallel Ports and Devices
 ms.assetid: b0aaf63d-cc2d-4273-9760-6446cbb28938
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - ports WDK , parallel
 - parallel ports WDK , about parallel ports
 - parallel devices WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -52,9 +47,9 @@ For more information about Windows support for parallel ports and devices, see:
 
 [Client Interfaces to System-Supplied Parallel Drivers](https://msdn.microsoft.com/library/windows/hardware/ff543926)
 
- 
+ 
 
- 
+ 
 
 
 

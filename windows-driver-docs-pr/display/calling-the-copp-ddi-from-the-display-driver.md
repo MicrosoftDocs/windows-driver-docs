@@ -5,11 +5,7 @@ ms.assetid: d91d8a62-f212-4ae7-be61-b973d6495880
 keywords:
 - calling COPP DDI WDK DirectX VA
 - COPP WDK DirectX VA , calling from the display driver
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The display driver initiates calls to the video miniport driver's [COPP DDI](htt
 
 The following sample data structure and IOCTLs can be used to transfer COPP information between the display driver and the video miniport driver. Your drivers can either use the data structure and IOCTLs or create new ones, as appropriate.
 
-```
+```cpp
 typedef struct {
     PVOID* ppThis;
     PVOID InputBuffer;
@@ -50,9 +46,9 @@ typedef struct {
 
 If you do not use the preceding IOCTLs, then you can define your own private IOCTLs, which must be formatted as described in [Defining I/O Control Codes](https://msdn.microsoft.com/library/windows/hardware/ff543023).
 
- 
+ 
 
- 
+ 
 
 
 

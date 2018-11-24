@@ -6,11 +6,7 @@ keywords:
 - Disk Integrity Checking feature WDK Driver Verifier
 - disk storage accuracy WDK Driver Verifier
 - storage accuracy WDK Driver Verifier
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -43,7 +39,7 @@ In addition, there are some circumstances that might lead to false bug checks on
 
 -   Concurrent in-flight reads and writes to the same sector
 
- 
+ 
 
 ### <span id="activating_this_option"></span><span id="ACTIVATING_THIS_OPTION"></span>Activating This Option
 
@@ -64,9 +60,9 @@ You can activate the Disk Integrity Checking option by using Driver Verifier Man
     2.  Select **Select individual settings from a full list**.
     3.  Select (check) **Disk integrity checking**.
 
- 
+ 
 
- 
+ 
 
 
 

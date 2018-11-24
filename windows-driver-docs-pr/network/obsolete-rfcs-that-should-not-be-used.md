@@ -7,11 +7,7 @@ keywords:
 - IETF RFC compliance WDK TCP chimney offload
 - task-offload engine NIC WDK TCP chimney offload
 - TOE NIC WDK TCP chimney offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,9 +38,9 @@ The following RFCs are obsolete and therefore should not be used:
 
 -   RFC 2815--Integrated Service Mappings on IEEE 802 Networks, May 2000
 
- 
+ 
 
- 
+ 
 
 
 

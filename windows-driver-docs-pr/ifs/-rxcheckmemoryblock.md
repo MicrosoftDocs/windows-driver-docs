@@ -11,11 +11,7 @@ api_location:
 - ntrxdef.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +25,9 @@ Syntax
 
 ```ManagedCPlusPlus
 BOOLEAN _RxCheckMemoryBlock(
-   PVOID Buffer,
-   PSZ   FileName,
-   ULONG LineNumber
+   PVOID Buffer,
+   PSZ   FileName,
+   ULONG LineNumber
 );
 ```
 
@@ -90,9 +86,9 @@ Requirements
 
 [**\_RxFreePool**](-rxfreepool.md)
 
- 
+ 
 
- 
+ 
 
 
 

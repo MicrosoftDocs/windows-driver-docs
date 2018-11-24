@@ -1,5 +1,5 @@
 ---
-title: FLT\_PARAMETERS for IRP\_MJ\_SET\_VOLUME\_INFORMATION union
+title: FLT_PARAMETERS for IRP_MJ_SET_VOLUME_INFORMATION union
 description: Union component used when the MajorFunction field of the FLT\_IO\_PARAMETER\_BLOCK structure for the operation is IRP\_MJ\_SET\_VOLUME\_INFORMATION.
 ms.assetid: 316ce14c-02ea-45ab-8a2f-1b096f631d23
 keywords: ["FLT_PARAMETERS for IRP_MJ_SET_VOLUME_INFORMATION union Installable File System Drivers", "FLT_PARAMETERS union Installable File System Drivers", "PFLT_PARAMETERS union pointer Installable File System Drivers"]
@@ -11,11 +11,7 @@ api_location:
 - fltkernel.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -65,20 +61,20 @@ Type of information to be set for the volume. One of the following:
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>FileFsControlInformation</strong></p></td>
-<td align="left"><p>Set [<strong>FILE_FS_CONTROL_INFORMATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540258) for the volume.</p></td>
+<td align="left"><p>Set <a href="https://msdn.microsoft.com/library/windows/hardware/ff540258" data-raw-source="[&lt;strong&gt;FILE_FS_CONTROL_INFORMATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540258)"><strong>FILE_FS_CONTROL_INFORMATION</strong></a> for the volume.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>FileFsLabelInformation</strong></p></td>
-<td align="left"><p>Set [<strong>FILE_FS_LABEL_INFORMATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540271) for the volume.</p></td>
+<td align="left"><p>Set <a href="https://msdn.microsoft.com/library/windows/hardware/ff540271" data-raw-source="[&lt;strong&gt;FILE_FS_LABEL_INFORMATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540271)"><strong>FILE_FS_LABEL_INFORMATION</strong></a> for the volume.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>FileFsObjectIdInformation</strong></p></td>
-<td align="left"><p>Set [<strong>FILE_FS_OBJECTID_INFORMATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540274) for the volume.</p></td>
+<td align="left"><p>Set <a href="https://msdn.microsoft.com/library/windows/hardware/ff540274" data-raw-source="[&lt;strong&gt;FILE_FS_OBJECTID_INFORMATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540274)"><strong>FILE_FS_OBJECTID_INFORMATION</strong></a> for the volume.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 **VolumeBuffer**  
 Pointer to the input buffer that contains the values of the volume information to be set.
@@ -131,9 +127,9 @@ Requirements
 
 [**ZwSetVolumeInformationFile**](https://msdn.microsoft.com/library/windows/hardware/ff567112)
 
- 
+ 
 
- 
+ 
 
 
 

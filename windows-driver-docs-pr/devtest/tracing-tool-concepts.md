@@ -5,11 +5,7 @@ ms.assetid: 539c6cd2-ea32-48ec-92da-7a4b78404b93
 keywords:
 - tracing WDK , terminology
 - software tracing WDK , terminology
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -57,9 +53,9 @@ The following concepts are used in the discussion of event tracing tools in Wind
 
 For conceptual information about event tracing, see the Microsoft Windows SDK documentation. For information about the Windows software trace preprocessor (WPP), see [WPP Software Tracing](wpp-software-tracing.md).
 
- 
+ 
 
- 
+ 
 
 
 

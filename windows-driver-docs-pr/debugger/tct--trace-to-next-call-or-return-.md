@@ -3,11 +3,7 @@ title: tct (Trace to Next Call or Return)
 description: The tct command executes the program until it reaches a call instruction or return instruction.
 ms.assetid: 059d8071-577f-4306-8273-8fdff6a80626
 keywords: ["tct (Trace to Next Call or Return) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,13 +20,13 @@ The **tct** command executes the program until it reaches a call instruction or 
 
 User-Mode
 
-```
+```dbgcmd
 [~Thread] tct [r] [= StartAddress] [Count] 
 ```
 
 Kernel-Mode
 
-```
+```dbgcmd
 tct [r] [= StartAddress] [Count] 
 ```
 
@@ -74,7 +70,7 @@ Specifies the number of **call** or **return** instructions that the debugger mu
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -89,9 +85,9 @@ If the program counter is already on a **call** or **return** instruction, the d
 
 In source mode, you can associate one source line with multiple assembly instructions. This command does not stop at a **call** or **return** instruction that is associated with the current source line.
 
- 
+ 
 
- 
+ 
 
 
 

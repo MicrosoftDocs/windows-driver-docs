@@ -5,11 +5,7 @@ ms.assetid: 342f534e-d203-4823-a4d8-a8a51b7ff0bd
 keywords:
 - connection-oriented clients WDK
 - client operations WDK CoNDIS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -71,9 +67,9 @@ A connection-oriented client:
 
     A client can input [status indicated by a connection-oriented miniport driver](indicating-miniport-driver-status.md) or an MCM driver.
 
- 
+ 
 
- 
+ 
 
 
 

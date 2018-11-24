@@ -1,6 +1,5 @@
 ---
 title: Using BDA Property and Method Sets
-author: windows-driver-content
 description: Using BDA Property and Method Sets
 ms.assetid: d4e55f32-620b-4978-9935-ebd4c2c3ed39
 keywords:
@@ -22,11 +21,7 @@ keywords:
 - filter topology WDK BDA
 - property sets WDK BDA
 - method sets WDK BDA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -50,9 +45,9 @@ The following sections show how BDA property and method sets are used to impleme
 
 [Accessing Frequency Properties of a BDA Tuner Node](accessing-frequency-properties-of-a-bda-tuner-node.md)
 
- 
+ 
 
- 
+ 
 
 
 

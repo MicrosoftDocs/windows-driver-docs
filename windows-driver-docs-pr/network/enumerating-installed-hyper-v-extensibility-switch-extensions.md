@@ -2,11 +2,7 @@
 title: Enumerating Hyper-V Extensible Switch Extensions
 description: Enumerating Hyper-V Extensible Switch Extensions
 ms.assetid: AC468A8F-5C48-419B-9E9E-D63925E1CE9D
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -52,7 +48,7 @@ Enabled       : True
 
 **Note**  In order to minimize the amount of information, the example pipes the returned extension objects through the filter command "fl". This causes a subset of information to be displayed that matches the attributes of the **-property** switch.
 
- 
+ 
 
 ## Related topics
 
@@ -61,9 +57,9 @@ Enabled       : True
 
 [**Msvm\_EthernetSwitchExtension**](https://msdn.microsoft.com/library/hh850139)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -5,11 +5,7 @@ ms.assetid: 14746a36-0126-4924-85ad-ecca01779937
 keywords:
 - terminating offload state WDK TCP chimney offload , buffered receive data
 - buffered receive data WDK TCP chimney offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +25,9 @@ The host stack copies the buffered data into its own buffer and indicates the re
 
 Note that the offload target releases ownership of the NET\_BUFFER\_LIST structures that it passes up as buffered data. The offload target does not regain ownership of these NET\_BUFFER\_LIST structures until they are returned to its *MiniportTcpOffloadReceiveReturn* function.
 
- 
+ 
 
- 
+ 
 
 
 

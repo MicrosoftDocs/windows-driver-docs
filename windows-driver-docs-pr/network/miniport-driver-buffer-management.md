@@ -4,11 +4,7 @@ description: Miniport Driver Buffer Management
 ms.assetid: 3b8844e0-9b38-4030-9aec-b713643de523
 keywords:
 - buffers WDK NDIS miniport
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +26,9 @@ The [*MiniportReturnNetBufferLists*](https://msdn.microsoft.com/library/windows/
 
 A miniport driver should free all the NET\_BUFFER\_LIST structures and associated data when NDIS halts the adapter. A driver can call **NdisFreeNetBufferList** to free the structures and the [**NdisFreeNetBufferListPool**](https://msdn.microsoft.com/library/windows/hardware/ff562590) function to free the NET\_BUFFER\_LIST pool.
 
- 
+ 
 
- 
+ 
 
 
 

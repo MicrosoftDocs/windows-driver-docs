@@ -1,13 +1,8 @@
 ---
 title: WSK_SET_STATIC_EVENT_CALLBACKS
-author: windows-driver-content
 description: WSK_SET_STATIC_EVENT_CALLBACKS
 ms.assetid: fa95bc7d-c7b2-4cca-a419-ef5eb2520976
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WSK_SET_STATIC_EVENT_CALLBACKS Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -44,7 +39,7 @@ To automatically enable certain event callback functions on every socket it crea
 </tr>
 <tr class="odd">
 <td><p><em>InputBuffer</em></p></td>
-<td><p>A pointer to a [<strong>WSK_EVENT_CALLBACK_CONTROL</strong>](https://msdn.microsoft.com/library/windows/hardware/ff571166) structure that specifies the desired event callback functions to be automatically enabled</p></td>
+<td><p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff571166" data-raw-source="[&lt;strong&gt;WSK_EVENT_CALLBACK_CONTROL&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff571166)"><strong>WSK_EVENT_CALLBACK_CONTROL</strong></a> structure that specifies the desired event callback functions to be automatically enabled</p></td>
 </tr>
 <tr class="even">
 <td><p><em>OutputSize</em></p></td>
@@ -64,12 +59,6 @@ To automatically enable certain event callback functions on every socket it crea
 </tr>
 </tbody>
 </table>
-
- 
-
-```
-
-```
 
 A WSK application can specify a combination of event flags for different socket types in the **EventMask** member of the [**WSK\_EVENT\_CALLBACK\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff571166) structure. When the WSK application creates a new socket, the WSK subsystem will automatically enable the appropriate event callback functions for the specific [category](https://msdn.microsoft.com/library/windows/hardware/ff571093) of WSK socket that is being created.
 
@@ -99,9 +88,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

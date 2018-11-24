@@ -2,11 +2,7 @@
 title: Summary of Connection-Oriented Operations
 description: Summary of Connection-Oriented Operations
 ms.assetid: fa8490f0-1460-4b13-86ee-4617d3e87abc
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +22,9 @@ This section includes:
 
 [Connection-Oriented Operations Performed by Miniport Drivers](connection-oriented-operations-performed-by-miniport-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

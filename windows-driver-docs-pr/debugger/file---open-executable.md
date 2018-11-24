@@ -3,11 +3,7 @@ title: File Open Executable
 description: File Open Executable
 ms.assetid: dee75298-903d-438f-a66e-fddcfcd74ec7
 keywords: ["File Open Executable", "starting the debugger, File Open Executable"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,7 +33,7 @@ After you make your selections, click **Open**.
 
 **Note**   When you use this command to open a source file, the path to that file is automatically appended to the [source path](source-path.md).
 
- 
+ 
 
 If WinDbg is connected to a process server, you cannot use the **Open Executable** command.
 
@@ -45,9 +41,9 @@ If WinDbg is connected to a process server, you cannot use the **Open Executable
 
 For more information and other methods of starting new processes for debugging, see [Debugging a User-Mode Process Using WinDbg](debugging-a-user-mode-process-using-windbg.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,17 +1,9 @@
 ---
 title: WinDbg Preview - Scripting 
 description: This section describes how to use the home menu in the WinDbg preview debugger.
-ms.author: domars
 ms.date: 08/04/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
-
-> [!NOTE]
-> The information in this topic is preliminary. Updated information will be provided in a later release of the documentation. 
->
 
 # WinDbg Preview - Home Menu 
 
@@ -36,13 +28,13 @@ Use *Source Mode* buttons to toggle between source code and assembly views.
 
 Use *Help* buttons to do the following:
 - Review Help
-- Send Feedback (For more information on sending feedback to improve WinDbg, see [Providing feedback](debugging-using-windbg-preview.md#providingfeedback).) 
+- Send Feedback (For more information on sending feedback to improve WinDbg, see [Providing feedback](debugging-using-windbg-preview.md#providing-feedback).) 
 
- 
+ 
 ## See Also
 
 [Debugging Using WinDbg Preview](debugging-using-windbg-preview.md)
- 
+ 
 
 
 

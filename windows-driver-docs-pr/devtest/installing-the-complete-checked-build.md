@@ -5,11 +5,7 @@ ms.assetid: 92953679-ab38-4df2-9241-135b57429b66
 keywords:
 - checked builds WDK , installing
 - complete checked build WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,9 +19,9 @@ Probably the easiest way to use the checked build for debugging drivers is to in
 
 This installation results in maximum debugging checks, but it also causes the system to run considerably slower than it would if the free build of the operating system were installed.
 
- 
+ 
 
- 
+ 
 
 
 

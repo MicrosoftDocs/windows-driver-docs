@@ -11,11 +11,7 @@ keywords:
 - text log sections WDK SetupAPI
 - SetupAPI logging WDK Windows Vista , text logs
 - text logs WDK SetupAPI , about text logs
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -40,9 +36,9 @@ The SetupAPI text logs have the following internal format:
 
 -   A text log can contain log entries that are not part of the text log header or a text log section. Such entries are associated with operations that are not part of any particular text log section and, in general, are interspersed between text log sections. Log entries that are not part of a text log section appear in the log in the same order in which they are written to the text log. For more information about such log entries, see [Format of Log Entries That Are Not Part of a Text Log Section](format-of-log-entries-that-are-not-part-of-a-text-log-section.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: Sample INF Models Sections for Only One Target Operating System
 description: Sample INF Models Sections for Only One Target Operating System
 ms.assetid: 4cad05f6-ec88-4bc8-b69a-0d6b06dfeec0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -17,7 +13,7 @@ It is possible to use decorated [**INF *Models* sections**](inf-models-section.m
 
 The following example shows an [**INF Manufacturer section**](inf-manufacturer-section.md) with various [**INF *Models* sections**](inf-models-section.md) that will prevent Windows from installing a device on x86-based systems not running Windows Vista.
 
-```
+```cpp
 [Manufacturer]
 %Msft% = Msft, NTx86.6.0, NT.6.1
 
@@ -38,9 +34,9 @@ In this example, the [**INF Manufacturer section**](inf-manufacturer-section.md)
 
 -   An empty INF *Models* section for Windows 7 and later versions of Windows on any hardware platform. Windows will select this section for device installation on these platforms. However, because the section contains no specific device descriptions or hardware IDs, Windows will not install any devices through this INF file.
 
- 
+ 
 
- 
+ 
 
 
 

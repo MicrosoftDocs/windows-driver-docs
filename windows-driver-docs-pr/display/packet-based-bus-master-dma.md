@@ -7,11 +7,7 @@ keywords:
 - DMA bus-master WDK video miniport , packet based
 - packet-based DMA WDK video miniport , description
 - VideoPortStartDma
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -55,9 +51,9 @@ The miniport driver performs the following sequence of operations to use packet-
 
     *This step is optional*. If, for some reason, the miniport driver decides that there will be no further DMA operations for the rest of its lifetime, it should discard the DMA adapter object by calling the video port driver's [**VideoPortPutDmaAdapter**](https://msdn.microsoft.com/library/windows/hardware/ff570335) function.
 
- 
+ 
 
- 
+ 
 
 
 

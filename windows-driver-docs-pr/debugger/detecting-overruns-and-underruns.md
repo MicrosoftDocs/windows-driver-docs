@@ -2,11 +2,7 @@
 title: Detecting Overruns and Underruns
 description: Detecting Overruns and Underruns
 ms.assetid: d7d282c8-adde-49fc-a20e-d633abd6dd3f
-ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -40,9 +36,9 @@ In Windows Vista and later versions of Windows, this option is available on the 
 
 The **Verify Start** and **Verify End** alignment settings apply to all allocations from the special pool, including special pool allocation requests set in Driver Verifier. If you set the alignment without specifying a pool tag or allocation size, then the settings apply only to requests set in Driver Verifier.
 
- 
+ 
 
- 
+ 
 
 
 

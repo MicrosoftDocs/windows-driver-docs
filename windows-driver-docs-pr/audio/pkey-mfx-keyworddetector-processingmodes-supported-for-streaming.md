@@ -2,11 +2,7 @@
 title: PKEY\_MFX\_KeywordDetector\_ProcessingModes\_Supported\_For\_Streaming
 description: In Windows 10 and later, the PKEY\_MFX\_KeywordDetector\_ProcessingModes\_Supported\_For\_Streaming property key identifies the keyword detector mode effect processing modes supported for streaming supported by the driver.
 ms.assetid: 17DEDF05-482C-44A8-91E8-50AF252F540D
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,7 +20,7 @@ The INF file property key instructs the audio endpoint builder to set the CLSIDs
 
 An INF file specifies settings for an audio processing mode effect in the add-registry section for that device. The following INF example shows the strings and add-registry sections that loads the keyword detector mode effect processing modes into the registry.
 
-```
+```inf
 [Strings]
 PKEY_MFX_KeywordDetector_ProcessingModes_Supported_For_Streaming = "{D3993A3F-99C2-4402-B5EC-A92A0367664B},9"
 ...
@@ -42,9 +38,9 @@ HKR,"FX\\0",%PKEY_MFX_KeywordDetector_ProcessingModes_Supported_For_Streaming%,%
 
 [Media-Class INF Extensions](media-class-inf-extensions.md)
 
- 
+ 
 
- 
+ 
 
 
 

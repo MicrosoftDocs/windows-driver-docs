@@ -1,6 +1,5 @@
 ---
 title: Pairing Bluetooth protocol
-author: windows-driver-content
 description: Pairing Bluetooth protocol
 ms.assetid: 6C95CA57-A226-4252-91E2-FAD8F1A0432B
 keywords:
@@ -9,11 +8,7 @@ keywords:
 - proximity
 - near field proximity
 - NFP
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,11 +19,11 @@ The “Pairing:Bluetooth” protocol is a means of abstracting a subscription fo
 
 **Note**  The behavior for publications of Pairing:Bluetooth is undefined
 
- 
+ 
 
 **Note**  For NFC-enabled NFP providers, both defined formats (Static Connection Handover Single Bluetooth Carrier and Simplified Tag Format) must be supported. Negotiated Connection Handover must NOT be supported.
 
- 
+ 
 
 ### Required Actions
 
@@ -43,9 +38,9 @@ The “Pairing:Bluetooth” protocol is a means of abstracting a subscription fo
 -   The driver MAY support publication of the “Pairing:Bluetooth” type. This publication format is undefined for NFC.
 -   The driver MAY support other compatible schemes as well.
 
- 
+ 
 
- 
+ 
 ## Related topics
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [Near field proximity DDI reference](https://msdn.microsoft.com/library/windows/hardware/jj866056)  

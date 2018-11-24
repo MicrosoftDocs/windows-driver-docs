@@ -1,11 +1,7 @@
 ---
 Description: Supporting WPP Tracing
 title: Supporting WPP Tracing
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -153,9 +149,9 @@ After you update the DllMain routine, update each .CPP source file and include t
 
 [WDK and Visual Studio build environment](https://msdn.microsoft.com/library/windows/hardware/hh454286)
 
- 
+ 
 
- 
+ 
 
 
 

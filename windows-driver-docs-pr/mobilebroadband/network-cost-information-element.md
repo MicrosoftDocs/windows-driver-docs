@@ -2,11 +2,7 @@
 title: Network cost information element
 description: Network cost information element
 ms.assetid: 973294b5-0c4f-4056-ad28-62c58f10c232
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -18,7 +14,7 @@ To communicate the cost of the Wi-Fi network to clients, Microsoft has defined a
 **Note**  
 The 802.11 protocol allows vendor-defined information elements (IEs), and requires clients that do not understand a particular IE to ignore it and continue processing the remaining IEs. This minimizes the compatibility risk of adding a new IE to products that interact with existing clients of other operating system types.
 
- 
+ 
 
 The following table shows the Network Cost IE format:
 
@@ -71,7 +67,7 @@ The following table shows the Network Cost IE format:
 </tbody>
 </table>
 
- 
+ 
 
 The following figure shows the format of the cost attribute field:
 
@@ -111,7 +107,7 @@ The following table shows the possible cost level bits (exactly one is required)
 </tbody>
 </table>
 
- 
+ 
 
 The following tables shows the possible cost flag bits:
 
@@ -152,7 +148,7 @@ The following tables shows the possible cost flag bits:
 </tbody>
 </table>
 
- 
+ 
 
 The following table shows some sample cost attribute values:
 
@@ -198,7 +194,7 @@ The following table shows some sample cost attribute values:
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Add_network_cost_support_to_your_device"></span><span id="add_network_cost_support_to_your_device"></span><span id="ADD_NETWORK_COST_SUPPORT_TO_YOUR_DEVICE"></span>Add network cost support to your device
 
@@ -222,9 +218,9 @@ The following table shows some sample cost attribute values:
 
 [Communication channels](communication-channels.md)
 
- 
+ 
 
- 
+ 
 
 
 

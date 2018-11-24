@@ -4,11 +4,7 @@ description: Summary of Changes Required to Port an Intermediate Driver to NDIS 
 ms.assetid: 4992cf66-7775-434a-b9ff-3e9ef10d938f
 keywords:
 - porting intermediate drivers WDK networking , required changes
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -73,9 +69,9 @@ To run in the NDIS 6.0 environment, NDIS 5.*x* intermediate drivers must be modi
 <a href="" id="binding-and-adapter--------states-------"></a>**Binding and Adapter States**   
 -   Include NDIS 6.0 pause and restart functionality. Optionally include support for pause and restart of virtual miniports when NDIS pauses an underlying driver stack. For more information about pause and restart, see [Driver Stack Management](driver-stack-management.md).
 
- 
+ 
 
- 
+ 
 
 
 

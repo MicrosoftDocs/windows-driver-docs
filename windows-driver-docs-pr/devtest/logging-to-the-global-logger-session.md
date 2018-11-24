@@ -8,11 +8,7 @@ keywords:
 - Global Logger trace session WDK , logging
 - boot-time Global Logger trace session WDK , logging
 - logs WDK tracing during boot
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +27,9 @@ This section includes:
 
 [Example: Global Logger Provider](example--global-logger-provider.md)
 
- 
+ 
 
- 
+ 
 
 
 

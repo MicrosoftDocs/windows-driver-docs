@@ -3,11 +3,7 @@ title: ndiskd.dbgsystems
 description: The ndiskd.dbgsystems extension displays and optionally changes the NDIS subsystems that have debug traces enabled.  ndiskd.dbgsystems has been superceded by WPP and Driver Verifier.
 ms.assetid: f36a26b6-18a8-4a01-96c7-99826e6b662f
 keywords: ["ndiskd.dbgsystems Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -25,7 +21,7 @@ The **!ndiskd.dbgsystems** extension displays and optionally changes the NDIS su
 **Warning**  
 **!ndiskd.dbgsystems** has been superceded by WPP (Windows software trace preprocessor) and Driver Verifier. !ndiskd will give you the following warning if your target system does not support **!ndiskd.dbgsystems**.
 
-```
+```console
 0: kd> !ndiskd.dbgsystems
     This target does not support tracing through !ndiskd.dbglevel or
     !ndiskd.dbgsystems.
@@ -34,7 +30,7 @@ The **!ndiskd.dbgsystems** extension displays and optionally changes the NDIS su
 
 If you click on the link at the bottom of the warning, !ndiskd will give you more information.
 
-```
+```console
 0: kd> !ndiskd.help wpptracing
     WPP traces are fast, flexible, and detailed.  Plus, starting with Windows 8
     and Windows Server 2012, you can automatically decode NDIS traces using the
@@ -49,7 +45,7 @@ If you click on the link at the bottom of the warning, !ndiskd will give you mor
     !wmitrace.enable ndis {DD7A21E6-A651-46D4-B7C2-66543067B869} -level 4 -flag 0x31f3
 ```
 
- 
+ 
 
 For more information about WPP, see [WPP Software Tracing](https://msdn.microsoft.com/windows/hardware/drivers/devtest/wpp-software-tracing).
 
@@ -57,7 +53,7 @@ For more information about Driver Verifier, see [Driver Verifier](https://msdn.m
 
 For more information about WMI tracing, see [WMI Tracing Extensions (Wmitrace.dll)](https://msdn.microsoft.com/library/windows/hardware/ff561362).
 
-```
+```console
 !ndiskd.dbgsystems [-subsystem <any>] 
 ```
 
@@ -162,7 +158,7 @@ If multiple components are selected, separate them with spaces. If a previously-
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="DLL"></span><span id="dll"></span>DLL
 
@@ -194,9 +190,9 @@ This extension applies to checked NDIS.sys only. To check the build info of NDIS
 
 [WMI Tracing Extensions (Wmitrace.dll)](https://msdn.microsoft.com/library/windows/hardware/ff561362)
 
- 
+ 
 
- 
+ 
 
 
 

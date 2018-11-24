@@ -2,11 +2,7 @@
 title: DirectDraw Driver Fundamentals
 description: DirectDraw Driver Fundamentals
 ms.assetid: 45cf2d9a-3365-4ff4-b4d6-ee57cc763351
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +30,9 @@ This section contains general information about the design of display drivers fo
 
 [Return Values for DirectDraw](return-values-for-directdraw.md)
 
- 
+ 
 
- 
+ 
 
 
 

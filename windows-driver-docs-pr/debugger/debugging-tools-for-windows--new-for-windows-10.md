@@ -2,11 +2,7 @@
 title: Debugging Tools for Windows New for Windows 10
 description: For Windows 10, Debugging Tools for Windows includes these new features.
 ms.assetid: DCF1222F-6A67-463E-8C31-B7753CAFFC20
-ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -63,9 +59,9 @@ This section describes new debugging tools in Windows 10, version 1607.
 -   [Crash dump analysis using the Windows debuggers (WinDbg)](crash-dump-files.md) - Performance has increased in taking a memory dump over KDNET.
 -   [Debug Universal Drivers - Step by Step Lab (Echo Kernel-Mode)](debug-universal-drivers---step-by-step-lab--echo-kernel-mode-.md)- New step by step lab that shows how to use WinDbg to debug the sample KMDF echo driver.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: FSCTL\_GET\_WOF\_VERSION control code
+title: FSCTL_GET_WOF_VERSION control code
 description: The FSCTL\_GET\_WOF\_VERSION I/O control code (IOCTL) is used to query the version of the driver used to support a particular provider.
 ms.assetid: 0E3C3C7E-2A89-4CA8-8741-7C057E063155
 keywords: ["FSCTL_GET_WOF_VERSION control code Installable File System Drivers"]
@@ -11,11 +11,7 @@ api_location:
 - Ntifs.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -108,9 +104,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

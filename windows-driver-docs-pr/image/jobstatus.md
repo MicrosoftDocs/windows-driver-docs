@@ -9,11 +9,7 @@ api_name:
 - wscn JobStatus
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **JobStatus** element contains all information about the status of 
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:JobStatus>
   child elements
 </wscn:JobStatus>
@@ -50,22 +46,22 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>JobCompletedTime</strong>](jobcompletedtime.md)</p></td>
+<td><p><a href="jobcompletedtime.md" data-raw-source="[&lt;strong&gt;JobCompletedTime&lt;/strong&gt;](jobcompletedtime.md)"><strong>JobCompletedTime</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>JobCreatedTime</strong>](jobcreatedtime.md)</p></td>
+<td><p><a href="jobcreatedtime.md" data-raw-source="[&lt;strong&gt;JobCreatedTime&lt;/strong&gt;](jobcreatedtime.md)"><strong>JobCreatedTime</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>JobId</strong>](jobid.md)</p></td>
+<td><p><a href="jobid.md" data-raw-source="[&lt;strong&gt;JobId&lt;/strong&gt;](jobid.md)"><strong>JobId</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>JobState</strong>](jobstate.md)</p></td>
+<td><p><a href="jobstate.md" data-raw-source="[&lt;strong&gt;JobState&lt;/strong&gt;](jobstate.md)"><strong>JobState</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>JobStateReasons</strong>](jobstatereasons.md)</p></td>
+<td><p><a href="jobstatereasons.md" data-raw-source="[&lt;strong&gt;JobStateReasons&lt;/strong&gt;](jobstatereasons.md)"><strong>JobStateReasons</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>ScansCompleted</strong>](scanscompleted.md)</p></td>
+<td><p><a href="scanscompleted.md" data-raw-source="[&lt;strong&gt;ScansCompleted&lt;/strong&gt;](scanscompleted.md)"><strong>ScansCompleted</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -84,7 +80,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>Job</strong>](job.md)</p></td>
+<td><p><a href="job.md" data-raw-source="[&lt;strong&gt;Job&lt;/strong&gt;](job.md)"><strong>Job</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -98,7 +94,7 @@ The WSD Scan Service notifies a client about changes to a job's status through a
 
 A client can query for job status through the [**GetJobElementsRequest**](getjobelementsrequest.md) operation.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**CancelJobRequest**](canceljobrequest.md)
@@ -121,9 +117,9 @@ A client can query for job status through the [**GetJobElementsRequest**](getjob
 
 [**ScansCompleted**](scanscompleted.md)
 
- 
+ 
 
- 
+ 
 
 
 

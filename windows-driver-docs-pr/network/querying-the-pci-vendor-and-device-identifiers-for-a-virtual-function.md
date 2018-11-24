@@ -2,11 +2,7 @@
 title: Querying the PCI vendor and device IDs for a virtual function
 description: Querying the PCI Vendor and Device Identifiers for a Virtual Function
 ms.assetid: A2FB0A35-A89B-4028-92BA-E75739B080FD
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +24,9 @@ Before it issues this OID method request, the overlying driver must initialize a
 
 When it handles this OID request, the PF miniport driver must verify that the specified VF has resources that have been previously allocated. The PF miniport driver allocates resources for a VF during an OID method request of [OID\_NIC\_SWITCH\_ALLOCATE\_VF](https://msdn.microsoft.com/library/windows/hardware/hh451814). If resources for the specified VF have not been allocated, the driver must fail the OID request.
 
- 
+ 
 
- 
+ 
 
 
 

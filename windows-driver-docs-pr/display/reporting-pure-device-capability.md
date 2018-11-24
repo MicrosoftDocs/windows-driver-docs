@@ -5,11 +5,7 @@ ms.assetid: 6bf97e93-2ebf-400f-8321-08268c21f89f
 keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , pure devices, reporting capability
 - pure devices WDK DirectX 8.0 , reporting capability
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,9 +17,9 @@ ms.localizationpriority: medium
 
 A driver reports the ability to support pure devices by setting the new device capability D3DDEVCAPS\_PUREDEVICE in the **DevCaps** field of the D3DCAPS8 structure.
 
- 
+ 
 
- 
+ 
 
 
 

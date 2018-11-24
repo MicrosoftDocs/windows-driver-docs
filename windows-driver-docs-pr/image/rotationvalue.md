@@ -9,11 +9,7 @@ api_name:
 - wscn RotationValue
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **RotationValue** element specifies a single rotation value support
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:RotationValue>
   text
 </wscn:RotationValue>
@@ -60,7 +56,7 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>RotationsSupported</strong>](rotationssupported.md)</p></td>
+<td><p><a href="rotationssupported.md" data-raw-source="[&lt;strong&gt;RotationsSupported&lt;/strong&gt;](rotationssupported.md)"><strong>RotationsSupported</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -72,14 +68,14 @@ The **RotationValue** element specifies the number of degrees that the scanner s
 
 All WSD Scan Services must support the value of 0. You can both extend and subset the allowed values for this element.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**RotationsSupported**](rotationssupported.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -5,11 +5,7 @@ ms.assetid: 5f485b61-ddc7-4433-bd2c-9ba0aec9e243
 keywords:
 - stream offsets WDK DirectX 9.0 , reporting support
 - vertex stream offsets WDK DirectX 9.0 , reporting support
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,9 +17,9 @@ ms.localizationpriority: medium
 
 A DirectX 9.0 version driver must indicate support for stream offsets by setting the D3DDEVCAPS2\_STREAMOFFSET capability bit in the **DevCaps2** member of the D3DCAPS9 structure.
 
- 
+ 
 
- 
+ 
 
 
 

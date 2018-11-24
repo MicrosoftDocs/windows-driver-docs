@@ -11,11 +11,7 @@ keywords:
 - volume-control events WDK audio
 - mute switch events WDK audio
 - port drivers WDK audio , events
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,16 +31,16 @@ When an application later calls the **mixerOpen** function (described in the Mic
 
 When the hardware event occurs and your driver's interrupt-service routine detects a mute or a volume change, your driver signals the event to the port driver by calling [**IPortEvents::GenerateEventList**](https://msdn.microsoft.com/library/windows/hardware/ff536889) with a set of parameters that describe the event. For example, the following call describes a control change in a lineout-volume node:
 
-```
+```cpp
     pPE->GenerateEventList(NULL, KSEVENT_CONTROL_CHANGE,
                            FALSE, ULONG(-1), TRUE, LINEOUT_VOL);
 ```
 
 During this call, the port driver searches its event list for all events that match the call parameters and sends notification to the clients that are monitoring these events. In this example, pPE is a pointer to the **IPortEvents** object, and LINEOUT\_VOL is the node ID that the miniport driver assigns to the lineout-volume node. Unspecified parameters (such as the event-set GUID and pin ID in the preceding example) are treated as wildcards and always match the corresponding parameters in the list.
 
- 
+ 
 
- 
+ 
 
 
 

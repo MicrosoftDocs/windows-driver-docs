@@ -1,13 +1,8 @@
 ---
 title: Registry Access for WIA Drivers
-author: windows-driver-content
 description: Registry Access for WIA Drivers
 ms.assetid: 0e0b7493-858b-4add-9e1d-fd71bae21b6e
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +20,7 @@ Drivers often need write access to their registry key outside of **IStiUSD::Init
 
 The following code example illustrates using the **DeviceData** registry subkey.
 
-```
+```cpp
 STDMETHODIMP CWIADevice::Initialize(
   PSTIDEVICECONTROL   pIStiDevControl,
   DWORD               dwStiVersion,
@@ -50,7 +45,7 @@ STDMETHODIMP CWIADevice::Initialize(
       //  m_hMyWritableRegistryKey now contains a handle to the
       //  DeviceData subkey which can be used to store information
       //  in the registry.
-      //  Notice that it isn&#39;t closed here, but instead,
+      //  Notice that it isn't closed here, but instead,
       //  kept open because it is needed later.
      //
   }
@@ -115,7 +110,7 @@ CWIADevice::~CWIADevice(void)
   .
   .
   //
-  // If the writable registry key isn&#39;t closed  yet, do it now,
+  // If the writable registry key isn't closed  yet, do it now,
   // because the driver is about to be unloaded.
   //
   if (m_hMyWritableRegistryKey) 
@@ -134,11 +129,11 @@ The **DeviceData** registry subkey is open for read/write access to the driver o
 
 **Note**   The driver *must* close any registry keys it opened when they are no longer needed, and must close all registry keys prior to unloading.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

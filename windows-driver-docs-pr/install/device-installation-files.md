@@ -7,11 +7,7 @@ keywords:
 - device installations WDK , files
 - installing devices WDK , files
 - files WDK device installations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -49,9 +45,9 @@ Also, see the device-type-specific documentation in the WDK.
 
 The WDK includes various sample installation files. For more information, see [Sample Device Installation Files](sample-device-installation-files.md)
 
- 
+ 
 
- 
+ 
 
 
 

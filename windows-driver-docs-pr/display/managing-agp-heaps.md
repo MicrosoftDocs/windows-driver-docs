@@ -11,11 +11,7 @@ keywords:
 - DirectDraw AGP support WDK Windows 2000 display , heaps
 - memory WDK DirectDraw AGP , heaps
 - GetDriverInfo2
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -47,9 +43,9 @@ In the D3DGDI2\_TYPE\_DEFER\_AGP\_FREES and D3DGDI2\_TYPE\_FREE\_DEFERRED\_AGP n
 
 Note that an application can terminate without the runtime sending the D3DGDI2\_TYPE\_FREE\_DEFERRED\_AGP notification to the driver. Therefore, the driver should free all of the user-mode mappings of the AGP memory when it receives a call to its [**D3dDestroyDDLocal**](https://msdn.microsoft.com/library/windows/hardware/ff544685) function.
 
- 
+ 
 
- 
+ 
 
 
 

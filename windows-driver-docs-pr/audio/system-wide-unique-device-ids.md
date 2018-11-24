@@ -15,11 +15,7 @@ keywords:
 - subdevices WDK audio
 - proprietary bus drivers WDK audio
 - device-ID strings WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -59,9 +55,9 @@ A bus driver provides a device ID for one of its children in response to an [**I
 
 All audio bus drivers should set **UniqueID** = **FALSE** for their children. This causes the Plug and Play manager to extend the child's device ID string by adding information about the device's parent to make the ID unique on the machine.
 
- 
+ 
 
- 
+ 
 
 
 

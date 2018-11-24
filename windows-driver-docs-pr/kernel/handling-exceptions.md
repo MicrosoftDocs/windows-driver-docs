@@ -1,14 +1,9 @@
 ---
 title: Handling Exceptions
-author: windows-driver-content
 description: Handling Exceptions
 ms.assetid: 20040d86-5088-48ec-a5b9-54760d143871
 keywords: ["structured exception handling WDK kernel", "exceptions WDK kernel", "access violations WDK kernel", "hardware-defined exceptions WDK kernel", "software-defined exceptions WDK kernel", "errors WDK kernel", "guard-page violations WDK kernel", "page-read errors WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -47,7 +42,7 @@ An *access violation* is an attempt to perform an operation on a page that is no
 
 If an operation might cause an exception, the driver should enclose the operation in a **try/except** block. Accesses of locations in user-mode are typical causes of exceptions. For example, the [**ProbeForWrite**](https://msdn.microsoft.com/library/windows/hardware/ff559879) routine checks that the driver can actually write to a user-mode buffer. If it cannot, the routine raises a STATUS\_ACCESS\_VIOLATION exception. In the following code example, the driver calls **ProbeForWrite** in a **try/except** so that it can handle the resulting exception, if one should occur.
 
-```
+```cpp
 try {
     ...
     ProbeForWrite(Buffer, BufferSize, BufferAlignment);
@@ -82,9 +77,9 @@ Note that structured exception handling is distinct from C++ exceptions. The ker
 
 For more information about structured exception handling, see the Microsoft Windows SDK, and the Visual Studio documentation.
 
- 
+ 
 
- 
+ 
 
 
 

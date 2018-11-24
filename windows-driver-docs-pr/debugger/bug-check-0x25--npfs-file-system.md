@@ -3,11 +3,7 @@ title: Bug Check 0x25 NPFS_FILE_SYSTEM
 description: The NPFS_FILE_SYSTEM bug check has a value of 0x00000025. This indicates that a problem occurred in the NPFS file system.
 ms.assetid: 099c93ec-78c0-4bb9-827d-712cfdfec0bb
 keywords: ["Bug Check 0x25 NPFS_FILE_SYSTEM", "NPFS_FILE_SYSTEM"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The NPFS\_FILE\_SYSTEM bug check has a value of 0x00000025. This indicates that a problem occurred in the NPFS file system.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## NPFS\_FILE\_SYSTEM Parameters
 
@@ -58,7 +54,7 @@ The NPFS\_FILE\_SYSTEM bug check has a value of 0x00000025. This indicates that 
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -70,9 +66,9 @@ Resolution
 
 **To resolve a nonpaged pool memory depletion problem:** Add new physical memory to the computer. This will increase the quantity of nonpaged pool memory available to the kernel.
 
- 
+ 
 
- 
+ 
 
 
 

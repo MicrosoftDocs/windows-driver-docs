@@ -5,11 +5,7 @@ ms.assetid: c33e9382-331d-4c68-8a5d-0ef3205ed925
 keywords:
 - TCP chimney offload WDK networking , connection closing
 - chimney offload WDK networking , connection closing
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,9 +20,9 @@ Either the local host stack or the remote host can initiate a disconnect request
 
 -   For more information about responding to a disconnect request that was initiated by the remote host, see [Responding to the Reception of a FIN or RST Segment](responding-to-the-reception-of-a-fin-or-rst-segment.md).
 
- 
+ 
 
- 
+ 
 
 
 

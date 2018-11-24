@@ -10,11 +10,7 @@ keywords:
 - intermediate drivers WDK networking , connection-oriented lower edge
 - NDIS intermediate drivers WDK , connection-oriented lower edge
 - network drivers WDK , types
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,9 +34,9 @@ If you are writing an intermediate driver whose lower edge provides an interface
 
 -   [Connection-Oriented NDIS](connection-oriented-ndis.md)
 
- 
+ 
 
- 
+ 
 
 
 

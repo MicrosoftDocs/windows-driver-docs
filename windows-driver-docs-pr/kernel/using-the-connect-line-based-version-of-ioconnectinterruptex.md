@@ -1,14 +1,9 @@
 ---
 title: Using the CONNECT_LINE_BASED Version of IoConnectInterruptEx
-author: windows-driver-content
 description: Using the CONNECT_LINE_BASED Version of IoConnectInterruptEx
 ms.assetid: 245be266-f76c-43f6-9ea7-2dc853b1d5e2
 keywords: ["IoConnectInterruptEx", "CONNECT_LINE_BASED", "line-based interrupts WDK kernel", "automatic interrupt detections WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,7 +14,7 @@ For Windows Vista and later operating systems, a driver can use the CONNECT\_LIN
 
 **Note**   You can use this method only for drivers that register a single interrupt service routine (ISR) for all of its line-based interrupts. If the driver can receive multiple interrupts, it must use the CONNECT\_FULLY\_SPECIFIED version of **IoConnectInterruptEx**.
 
- 
+ 
 
 The driver specifies a value of CONNECT\_LINE\_BASED for *Parameters*-&gt;**Version** and uses the members of *Parameters*-&gt;**LineBased** to specify the other parameters of the operation:
 
@@ -33,7 +28,7 @@ The driver specifies a value of CONNECT\_LINE\_BASED for *Parameters*-&gt;**Vers
 
 The following code example demonstrates how to register an *InterruptService* routine using CONNECT\_LINE\_BASED:
 
-```
+```cpp
 IO_CONNECT_INTERRUPT_PARAMETERS params;
 
 // deviceExtension is a pointer to the driver&#39;s device extension. 
@@ -60,9 +55,9 @@ if (!NT_SUCCESS(status)) {
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

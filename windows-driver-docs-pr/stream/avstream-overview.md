@@ -1,15 +1,10 @@
 ---
 title: AVStream Overview
-author: windows-driver-content
 description: AVStream Overview
 ms.assetid: 305039fe-0a00-4f3e-ae1a-61c50a2f2fb3
 keywords:
 - AVStream WDK , about AVStream minidrivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -41,9 +36,9 @@ In the AVStream driver model, vendors provide a minidriver that interacts with a
 
 ![diagram illustrating the relationship between the avstream and ks services](images/avstream.png)
 
- 
+ 
 
- 
+ 
 
 
 

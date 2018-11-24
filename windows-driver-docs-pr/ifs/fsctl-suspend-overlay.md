@@ -1,5 +1,5 @@
 ---
-title: FSCTL\_SUSPEND\_OVERLAY control code
+title: FSCTL_SUSPEND_OVERLAY control code
 description: The FSCTL\_SUSPEND\_OVERLAY control code suspends a backing source attached to a volume, preventing access to the backing source and allowing it to be modified or removed.
 ms.assetid: 5BC73E77-86A0-4A7D-BCBA-F3E8DA980701
 keywords: ["FSCTL_SUSPEND_OVERLAY control code Installable File System Drivers"]
@@ -11,11 +11,7 @@ api_location:
 - Ntifs.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -101,7 +97,7 @@ Status block
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -137,9 +133,9 @@ Requirements
 
 [**FSCTL\_SET\_EXTERNAL\_BACKING**](fsctl-set-external-backing.md)
 
- 
+ 
 
- 
+ 
 
 
 

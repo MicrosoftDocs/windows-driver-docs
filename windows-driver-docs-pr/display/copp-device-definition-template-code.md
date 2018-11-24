@@ -6,11 +6,7 @@ keywords:
 - COPP device WDK DirectX VA
 - copy protection WDK COPP , COPP device
 - COPP WDK DirectX VA , COPP device
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,7 +20,7 @@ This section applies only to Windows Server 2003 SP1 and later, and Windows XP S
 
 Use the following example code to define a COPP DirectX VA device object.
 
-```
+```cpp
 #define COPP_OPENED                 0
 #define COPP_CERT_LENGTH_RETURNED   1
 #define COPP_KEY_EXCHANGED          2
@@ -43,9 +39,9 @@ typedef struct {
 } COPP_DeviceData;
 ```
 
- 
+ 
 
- 
+ 
 
 
 

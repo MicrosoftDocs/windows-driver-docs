@@ -9,11 +9,7 @@ api_name:
 - wscn DocumentSizeAutoDetectSupported
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **DocumentSizeAutoDetectSupported** element indicates whether the s
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:DocumentSizeAutoDetectSupported>
   text
 </wscn:DocumentSizeAutoDetectSupported>
@@ -60,7 +56,7 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>DeviceSettings</strong>](devicesettings.md)</p></td>
+<td><p><a href="devicesettings.md" data-raw-source="[&lt;strong&gt;DeviceSettings&lt;/strong&gt;](devicesettings.md)"><strong>DeviceSettings</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -72,14 +68,14 @@ If the scan device can detect the size of the original media, the WSD Scan Servi
 
 You cannot extend the allowed values for this element.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**DeviceSettings**](devicesettings.md)
 
- 
+ 
 
- 
+ 
 
 
 

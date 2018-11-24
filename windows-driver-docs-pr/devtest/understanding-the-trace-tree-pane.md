@@ -5,11 +5,7 @@ ms.assetid: 98640d7e-29fc-4397-ac6b-47f4e17f88a1
 keywords:
 - Static Driver Verifier Report WDK , Trace Tree pane
 - Trace Tree pane WDK Static Driver Verifier
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +30,9 @@ IoReleaseCancelSpinLock(KeGetCurrentIrql());
 
 In this situation, the **Trace Tree** pane would include a critical element for the [**KeGetCurrentIrql**](https://msdn.microsoft.com/library/windows/hardware/ff552054) function call, a few calls to the SDV operating system model to randomly generate an IRQL, and then a call to [**IoReleaseCancelSpinLock**](https://msdn.microsoft.com/library/windows/hardware/ff549550) with the returned IRQL.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,13 +1,8 @@
 ---
 title: About Item Properties
-author: windows-driver-content
 description: About Item Properties
 ms.assetid: f8d00e29-ce7d-4949-a713-07755f495d6a
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,11 +20,11 @@ Certain properties are mandatory for some device types. For example, a device wi
 
 **Note**   If you are more familiar with TWAIN than you are with WIA, it may be helpful to know that WIA properties are synonymous with TWAIN capabilities.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

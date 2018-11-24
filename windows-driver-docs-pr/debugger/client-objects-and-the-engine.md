@@ -3,11 +3,7 @@ title: Client Objects and the Engine
 description: Client Objects and the Engine
 ms.assetid: 959912c0-bce9-4d5b-9119-1ac07a8ea1ad
 keywords: ["EngExtCpp extensions, client objects"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,37 +28,37 @@ An EngExtCpp extension interacts with the [debugger engine](introduction.md#debu
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[IDebugAdvanced](https://msdn.microsoft.com/library/windows/hardware/ff549798)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff549798" data-raw-source="[IDebugAdvanced](https://msdn.microsoft.com/library/windows/hardware/ff549798)">IDebugAdvanced</a></p></td>
 <td align="left"><p><strong>m_Advanced</strong></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[IDebugClient](https://msdn.microsoft.com/library/windows/hardware/ff549827)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff549827" data-raw-source="[IDebugClient](https://msdn.microsoft.com/library/windows/hardware/ff549827)">IDebugClient</a></p></td>
 <td align="left"><p><strong>m_Client</strong></p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[IDebugControl](https://msdn.microsoft.com/library/windows/hardware/ff550508)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff550508" data-raw-source="[IDebugControl](https://msdn.microsoft.com/library/windows/hardware/ff550508)">IDebugControl</a></p></td>
 <td align="left"><p><strong>m_Control</strong></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[IDebugDataSpaces](https://msdn.microsoft.com/library/windows/hardware/ff550528)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff550528" data-raw-source="[IDebugDataSpaces](https://msdn.microsoft.com/library/windows/hardware/ff550528)">IDebugDataSpaces</a></p></td>
 <td align="left"><p><strong>m_Data</strong></p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[IDebugRegisters](https://msdn.microsoft.com/library/windows/hardware/ff550825)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff550825" data-raw-source="[IDebugRegisters](https://msdn.microsoft.com/library/windows/hardware/ff550825)">IDebugRegisters</a></p></td>
 <td align="left"><p><strong>m_Registers</strong></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[IDebugSymbols](https://msdn.microsoft.com/library/windows/hardware/ff550856)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff550856" data-raw-source="[IDebugSymbols](https://msdn.microsoft.com/library/windows/hardware/ff550856)">IDebugSymbols</a></p></td>
 <td align="left"><p><strong>m_Symbols</strong></p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[IDebugSystemObjects](https://msdn.microsoft.com/library/windows/hardware/ff550875)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff550875" data-raw-source="[IDebugSystemObjects](https://msdn.microsoft.com/library/windows/hardware/ff550875)">IDebugSystemObjects</a></p></td>
 <td align="left"><p><strong>m_System</strong></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The following members provide access to later versions of the engine API interfaces. These interfaces may not be available in all versions of the debugger engine. If they are not available, any attempt to use them will result in a exception being thrown.
 
@@ -153,7 +149,7 @@ The following members provide access to later versions of the engine API interfa
 </tbody>
 </table>
 
- 
+ 
 
 The members in these tables are initialized each time the extension library is used to execute an extension command or format a structure for output. Once a task is completed, these members are uninitialized. Consequently, extensions should not cache the values of these members and should use the **ExtExtension** members directly.
 
@@ -161,9 +157,9 @@ An extension library can also create its own client objects using the method [**
 
 For an overview of client objects, see [Client Objects](client-objects.md).
 
- 
+ 
 
- 
+ 
 
 
 

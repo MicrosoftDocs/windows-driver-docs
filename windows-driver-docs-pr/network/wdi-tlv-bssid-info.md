@@ -1,13 +1,8 @@
 ---
 title: WDI_TLV_BSSID_INFO
-author: windows-driver-content
 description: WDI_TLV_BSSID_INFO is a TLV that contains BSSID information.
 ms.assetid: C9E2B2D5-16CA-438D-AD86-1FA4F4F11CD1
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_BSSID_INFO Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -45,7 +40,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | UINT8 | This is set to 1 if the AP represented by this BSSID includes an MDE in its Beacon frames.                                                                                                                                                                                                                                                |
 | UINT8 | This is set to 1 to indicate that the AP represented by this BSSID is an HT AP, including the HT Capabilities element in its Beacon.                                                                                                                                                                                                      |
 
- 
+ 
 
 Requirements
 ------------
@@ -71,9 +66,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

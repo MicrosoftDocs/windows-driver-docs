@@ -2,11 +2,7 @@
 title: Captive portals
 description: Captive portals
 ms.assetid: 6f710440-3012-4bf4-92cc-3743b0f4fd34
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,19 +38,19 @@ To determine Internet connectivity and captive portal status when a client first
 
 To avoid false positive or false negative test results, your captive portal should not do the following:
 
--   Allow access to **www.msftncsi.com** when the user does not have access to the Internet.
+- Allow access to <strong>www.msftncsi.com</strong> when the user does not have access to the Internet.
 
--   Change the captive portal behavior that is displayed to clients. For example, do not redirect some requests and drop other requests; you should continue to redirect all requests until authentication succeeds.
+- Change the captive portal behavior that is displayed to clients. For example, do not redirect some requests and drop other requests; you should continue to redirect all requests until authentication succeeds.
 
-    **Note**  
-    Denial of Service mitigations should be based on the frequency of attempts per client, not the number of attempts per client or the total attempts from all clients.
+  **Note**  
+  Denial of Service mitigations should be based on the frequency of attempts per client, not the number of attempts per client or the total attempts from all clients.
 
-     
+     
 
 ## <span id="touchfr"></span><span id="TOUCHFR"></span>Touch-friendly web pages
 
 
-The Windows 8, Windows 8.1, and Windows 10 experience is designed to be touch-first. This extends to web pages. Consider laying out your web page with larger, easy-to-target controls for a touch user. Use layouts that do not require excessive scrolling to interact with, and break flows into multiple pages if necessary. For more information on touch-friendly web design, see [Designing for Touch Input](https://msdn.microsoft.com/en-us/library/windows/apps/hh465415.aspx).
+The Windows 8, Windows 8.1, and Windows 10 experience is designed to be touch-first. This extends to web pages. Consider laying out your web page with larger, easy-to-target controls for a touch user. Use layouts that do not require excessive scrolling to interact with, and break flows into multiple pages if necessary. For more information on touch-friendly web design, see [Designing for Touch Input](https://msdn.microsoft.com/library/windows/apps/hh465415.aspx).
 
 ## <span id="pap"></span><span id="PAP"></span>Provision after purchase
 
@@ -64,7 +60,7 @@ The same provisioning file that can be applied by an app can also be applied by 
 **Note**  
 This provisioning file must be signed when it is provided by a website or an app that is not the mobile broadband app.
 
- 
+ 
 
 Passing an XML provisioning file enables the operating system to automatically connect to other networks that are included in the user’s service, even if they have different service set identifiers (SSIDs). If you use static Wireless Internet Service Provider roaming (WISPr) credentials, it also enables a smoother connection experience because in the future, Windows can automatically authenticate with those credentials.
 
@@ -78,9 +74,9 @@ The richest experience of Windows 8, Windows 8.1, and Windows 10 is through t
 
 [Hotspot authentication methods](hotspot-authentication-methods.md)
 
- 
+ 
 
- 
+ 
 
 
 

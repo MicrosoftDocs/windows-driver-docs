@@ -1,16 +1,11 @@
 ---
 title: File System Drivers
-author: windows-driver-content
 description: File System Drivers
 ms.assetid: a64d83c6-d4cd-432d-bc1a-a3ff4656527c
 keywords:
 - drivers WDK file system
 - file system drivers WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,9 +20,9 @@ This section includes the following topics.
 
 [Using Extra Create Parameters with an IRP\_MJ\_CREATE Operation](using-extra-create-parameters-with-an-irp-mj-create-operation.md)
 
- 
+ 
 
- 
+ 
 
 
 

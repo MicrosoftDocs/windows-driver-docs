@@ -1,6 +1,5 @@
 ---
 title: Bug Checks from KMDF Drivers
-author: windows-driver-content
 description: Bug Checks from KMDF Drivers
 ms.assetid: 4fde9586-3455-4692-8eeb-bbf64c0a437e
 keywords:
@@ -9,11 +8,7 @@ keywords:
 - verifying KMDF code
 - KMDF bug checks WDK
 - WDF_VIOLATION
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +21,9 @@ For information about the types of driver errors that the framework checks for, 
 
 Your driver can create a bug check by calling [**WdfVerifierKeBugCheck**](https://msdn.microsoft.com/library/windows/hardware/ff551166).
 
- 
+ 
 
- 
+ 
 
 
 

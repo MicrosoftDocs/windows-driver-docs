@@ -1,10 +1,10 @@
 ---
 title: Joystick Identification Callback
-author: windows-driver-content
 description: Joystick Identification Callback
 ms.assetid: d5e859d2-bfe4-41ef-9d09-ebb945d299bd
 keywords: ["callbacks WDK joysticks", "joysticks WDK HID , ID requests", "ID requests WDK joysticks", "identification callbacks WDK joysticks"]
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Joystick Identification Callback
@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-```
+```cpp
 int __stdcall JoyIdRoutine( int joyid, BOOL used );
 ```
 
@@ -23,9 +23,9 @@ Whenever any change is made and joyConfigChanged is called to update the driver,
 
 Minidrivers that service callbacks for more than one device should attempt to keep joystick identifiers tied to a single physical device, where possible, to avoid user confusion. You can implement this relatively easily during a single session, but is probably not necessary over reboots.
 
- 
+ 
 
- 
+ 
 
 
 

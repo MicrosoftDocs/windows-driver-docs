@@ -2,11 +2,7 @@
 title: Macro Definitions for Obsolete Functions
 description: Macro Definitions for Obsolete Functions
 ms.assetid: 3d69b089-4875-4860-b5eb-3b5edcf3fc89
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,9 +20,9 @@ The following topics are discussed:
 
 [Obsolete Kernel-Mode Driver-Support Functions](obsolete-kernel-mode-driver-support-functions.md)
 
- 
+ 
 
- 
+ 
 
 
 

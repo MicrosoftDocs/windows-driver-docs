@@ -3,11 +3,7 @@ title: Bug Check 0x196 LOADER_ROLLBACK_DETECTED
 description: The LOADER_ROLLBACK_DETECTED bug check has a value of 0x00000196. This indicates that the version of the OS loader does not match the operating system.
 ms.assetid: 122AAC03-999A-456D-AFD8-749B19267D41
 keywords: ["Bug Check 0x196 LOADER_ROLLBACK_DETECTED", "LOADER_ROLLBACK_DETECTED"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The LOADER\_ROLLBACK\_DETECTED bug check has a value of 0x00000196. This indicates that the version of the OS loader does not match the operating system.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## LOADER\_ROLLBACK\_DETECTED Parameters
 
@@ -34,11 +30,11 @@ The LOADER\_ROLLBACK\_DETECTED bug check has a value of 0x00000196. This indicat
 | 3         | Reserved                |
 | 4         | Reserved                |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

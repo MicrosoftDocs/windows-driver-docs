@@ -1,15 +1,10 @@
 ---
 title: Filtering condition data types
-author: windows-driver-content
 description: This section describes filtering condition data types.
 ms.assetid: 43810fc0-f386-4a21-9229-c8c8f8d6710f
 keywords:
 - Filtering condition data types network drivers
-ms.author: windowsdriverdev
 ms.date: 11/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

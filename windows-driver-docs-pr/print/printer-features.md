@@ -1,6 +1,5 @@
 ---
 title: Printer Features
-author: windows-driver-content
 description: Printer Features
 ms.assetid: eabbb833-2c0a-4a55-bfa4-a3dc0619c22c
 keywords:
@@ -9,11 +8,7 @@ keywords:
 - printer features WDK Unidrv
 - printer features WDK Unidrv , about printer features
 - Unidrv WDK print
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +26,9 @@ All features and their associated options are listed on either the printer prope
 
 This section explains GPD language support for both [standard features](standard-features.md) and [customized features](customized-features.md). Additional topics in this section include [Feature Entry Format](feature-entry-format.md), [Feature Attributes](feature-attributes.md), and [Feature Conflict Priority](feature-conflict-priority.md).
 
- 
+ 
 
- 
+ 
 
 
 

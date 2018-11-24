@@ -2,11 +2,7 @@
 title: Te.exe Command Options
 description: Te.exe Command Options
 ms.assetid: E9A9292D-FA30-410d-9322-BD0F321314F9
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -87,7 +83,7 @@ Executes tests and removes potential blocking UI (for example, Windows Error Rep
 
 Lists the names of all the [test\_binaries](#testbinaries) and the classes and methods within them. If selection criteria is specified, lists only the names of those which meet the criteria.
 
-```
+```cpp
  te.exe test1.dll test2.dll /list
 
  WEX::UnitTests::Test1
@@ -101,7 +97,7 @@ Lists the names of all the [test\_binaries](#testbinaries) and the classes and m
   WEX::UnitTests::Test2::Example3
 ```
 
-```
+```cpp
  te.exe test1.dll test2.dll /select:@name=&#39;*Example2*&#39; /list
 
  WEX::UnitTests::Test1
@@ -115,7 +111,7 @@ Lists the names of all the [test\_binaries](#testbinaries) and the classes and m
 
 Lists the names and properties of all the test\_binaries and the classes and methods in them along with Setup and Teardown function names, if available. If selection criteria is specified, lists only the names of those which meet the criteria.
 
-```
+```cpp
  te.exe test1.dll test2.dll /listProperties
 
  WEX::UnitTests::Test1
@@ -131,7 +127,7 @@ Lists the names and properties of all the test\_binaries and the classes and met
    Setup: Test1Setup
    Teardown: Test1Teardown
    Property[ThreadingModel] = STA
-            
+
  WEX::UnitTests::Test2
   WEX::UnitTests::Test2::Example1
    Property[ThreadingModel] = MTA
@@ -141,7 +137,7 @@ Lists the names and properties of all the test\_binaries and the classes and met
    Property[ThreadingModel] = MTA
 ```
 
-```
+```cpp
  te.exe test1.dll test2.dll /select:@name=&#39;*Example2*&#39; /listProperties
 
  WEX::UnitTests::Test1
@@ -179,12 +175,11 @@ Defines a runtime parameter with parameter name=ParamName and parameter value=Pa
 
 You can grab x as one of several supported types in your test code. For example, here you can see us retrieving it as both an int and a WEX::Common::String:
 
-```
+```cpp
                 int x = 0;
                 String xString;
                 RuntimeParameters::TryGetValue(L"x", x);
                 RuntimeParameters::TryGetValue(L"x", xString);
-            
 ```
 
 For more information, please visit the [TAEF.Runtime Parameters](runtime-parameters.md) help page.
@@ -288,7 +283,7 @@ Sets a session time-out for the entire execution of Te.exe. If the time-out expi
 
 **Note:** The time-out value must be specified in the following format:
 
-```
+```cpp
 [Day.]Hour[:Minute[:Second[.FractionalSeconds]]] 
 ```
 
@@ -328,7 +323,7 @@ Sets a global test time-out for the entire execution of Te.exe. This value overr
 
 **Note:** The time-out value must be specified in the following format:
 
-```
+```cpp
 [Day.]Hour[:Minute[:Second[.FractionalSeconds]]] 
 ```
 
@@ -511,9 +506,9 @@ In 'stress' test mode, TAEF will run tests indefinitely, until Ctrl+C is entered
 
 For detailed information and other parameters supported in this mode, see the documentation [here](test-modes.md).
 
- 
 
- 
+
+
 
 
 

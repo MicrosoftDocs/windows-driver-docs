@@ -1,17 +1,12 @@
 ---
 title: Required Changer Miniclass Routines
-author: windows-driver-content
 description: Required Changer Miniclass Routines
 ms.assetid: bd706c00-5f6b-4bda-b6a1-a61046303e12
 keywords:
 - changer drivers WDK storage , miniclass drivers
 - storage changer drivers WDK , miniclass drivers
 - miniclass drivers WDK changer
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -43,9 +38,9 @@ If a changer does not support the functionality implied by a given routine, its 
 
 For more information about the required **Changer***Xxx* routines for changer miniclass drivers, see [Changer Miniclass Driver Routines](https://msdn.microsoft.com/library/windows/hardware/ff551472). For more information about the changer-specific I/O control codes for device control requests, see [Changer I/O Control Codes](https://msdn.microsoft.com/library/windows/hardware/ff551469).
 
- 
+ 
 
- 
+ 
 
 
 

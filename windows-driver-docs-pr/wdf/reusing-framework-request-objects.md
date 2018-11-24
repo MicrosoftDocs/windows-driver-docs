@@ -1,17 +1,12 @@
 ---
 title: Reusing Framework Request Objects
-author: windows-driver-content
 description: Reusing Framework Request Objects
 ms.assetid: 9e3090a9-62d0-48b3-9f3b-7171dc6d2766
 keywords:
 - request processing WDK KMDF , reusing request objects
 - request objects WDK KMDF , reusing
 - reusing request objects WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +24,9 @@ If you are careful to avoid situations that cause the unsuccessful return values
 
 If your driver provides a [*CompletionRoutine*](https://msdn.microsoft.com/library/windows/hardware/ff540745) callback function for a request object that it reuses, the driver must call [**WdfRequestSetCompletionRoutine**](https://msdn.microsoft.com/library/windows/hardware/ff550030) after calling [**WdfRequestReuse**](https://msdn.microsoft.com/library/windows/hardware/ff550026).
 
- 
+ 
 
- 
+ 
 
 
 

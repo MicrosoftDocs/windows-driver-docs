@@ -1,17 +1,12 @@
 ---
 title: Connections Between Two Subunit Plugs Within One AV/C Unit
-author: windows-driver-content
 description: Provides information about connections between two subunit plugs within one AV/C unit
 ms.assetid: 2acd5f23-89b6-40f9-9154-22f1bb51d08c
 keywords:
 - connections WDK AV/C
 - AV/C WDK , connection scenarios
 - AVCCONNECTINFO
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -47,7 +42,7 @@ Each column in the following table corresponds to a member of the [**AVCCONNECTI
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Not used because the source unit's device identifier is the unit that contains the subunit</p></td>
+<td><p>Not used because the source unit&#39;s device identifier is the unit that contains the subunit</p></td>
 <td><p>Subunit address</p></td>
 <td><p>Destination plug (0x0 to 0x1E, or 0xFF)</p></td>
 <td><p>N/A</p></td>
@@ -55,7 +50,7 @@ Each column in the following table corresponds to a member of the [**AVCCONNECTI
 </tbody>
 </table>
 
- 
+ 
 
 Each column in the following table corresponds to a member of the AVCCONNECTINFO structure and specifies values for these members for a destination subunit plug.
 
@@ -84,7 +79,7 @@ Each column in the following table corresponds to a member of the AVCCONNECTINFO
 </tbody>
 </table>
 
- 
+ 
 
 ### **Scenario 4**
 
@@ -113,7 +108,7 @@ Each column in the following table corresponds to a member of the AVCCONNECTINFO
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Not used because the source unit's device identifier is the unit that contains the subunit</p></td>
+<td><p>Not used because the source unit&#39;s device identifier is the unit that contains the subunit</p></td>
 <td><p>Self (same subunit)</p></td>
 <td><p>Source plug (0xFF)</p></td>
 <td><p>N/A</p></td>
@@ -121,7 +116,7 @@ Each column in the following table corresponds to a member of the AVCCONNECTINFO
 </tbody>
 </table>
 
- 
+ 
 
 Each column in the following table corresponds to a member of the AVCCONNECTINFO structure and specifies values for these members for a destination subunit plug.
 
@@ -150,7 +145,7 @@ Each column in the following table corresponds to a member of the AVCCONNECTINFO
 </tbody>
 </table>
 
- 
+ 
 
 The following list describes the meaning of values that appear in the preceding tables:
 
@@ -162,9 +157,9 @@ The following list describes the meaning of values that appear in the preceding 
 
 -   The values in the **DeviceID** columns (for source and destination subunit plugs) are used to search for the physical device object (PDO) of the target AV/C device to issue AV/C CCM commands to.
 
- 
+ 
 
- 
+ 
 
 
 

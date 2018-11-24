@@ -3,11 +3,7 @@ title: Syntax Rules
 description: This section describes the syntax rules that you must follow to use debugger commands.
 ms.assetid: bd1605f9-8e98-4d80-8742-acba222872ef
 keywords: commands, syntax rules, meta-commands 
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,13 +25,13 @@ When you are debugging, you should obey the following general syntax rules:
 
 The command reference topics in this section use the following items:
 
--   Characters in **bold** font style indicate items that you must literally type.
+- Characters in **bold** font style indicate items that you must literally type.
 
--   Characters in *italic* font style indicate parameters that are explained in the "Parameters" section of the reference topic.
+- Characters in *italic* font style indicate parameters that are explained in the "Parameters" section of the reference topic.
 
--   Parameters in brackets (**\[***xxx***\]**) are optional. Brackets with a vertical bar (**\[***xxx***|***yyy***\]**) indicate that you can use one, or none, of the enclosed parameters.
+- Parameters in brackets (**\[**<em>xxx</em>**\]**) are optional. Brackets with a vertical bar (**\[**<em>xxx</em>**|**<em>yyy</em>**\]**) indicate that you can use one, or none, of the enclosed parameters.
 
--   Braces with vertical bars (**{***xxx***|***yyy***}**) indicate that you must use exactly one of the enclosed parameters .
+- Braces with vertical bars (**{**<em>xxx</em>**|**<em>yyy</em>**}**) indicate that you must use exactly one of the enclosed parameters .
 
 The following topics describe the syntax that the following parameter types use:
 
@@ -61,9 +57,9 @@ The following topics describe the syntax that the following parameter types use:
 
 Syntax also plays an important role in using symbols. For further details, see [Symbol Syntax and Symbol Matching](symbol-syntax-and-symbol-matching.md).
 
- 
+ 
 
- 
+ 
 
 
 

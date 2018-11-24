@@ -1,13 +1,8 @@
 ---
 title: WIA Driver Error Reporting for Windows Me and Windows XP
-author: windows-driver-content
 description: WIA Driver Error Reporting for Windows Me and Windows XP
 ms.assetid: 5f696e16-0c22-4d71-98d2-d642e721ac8c
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +24,9 @@ A WIA minidriver should implement the following methods to perform error reporti
 
 The WIA service asks for error information if any of the [IWiaMiniDrv COM Interface](iwiaminidrv-com-interface.md) methods fail.
 
- 
+ 
 
- 
+ 
 
 
 

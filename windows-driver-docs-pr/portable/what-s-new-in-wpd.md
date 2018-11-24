@@ -1,11 +1,7 @@
 ---
 Description: This topic summarizes the new features and improvements for Windows Portable Devices (WPD) in Windows 8.
 title: What's New in WPD
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,9 +20,9 @@ The *NetMon.exe*tool is a Windows-based application that you can use to view tra
 
 [Using the NetMon Tool](using-the-netmon-tool.md)
 
- 
+ 
 
- 
+ 
 
 
 

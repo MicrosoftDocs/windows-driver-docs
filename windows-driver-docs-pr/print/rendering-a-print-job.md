@@ -1,6 +1,5 @@
 ---
 title: Rendering a Print Job
-author: windows-driver-content
 description: Rendering a Print Job
 ms.assetid: 78967839-b518-41c0-8825-b00f8b8560e6
 keywords:
@@ -10,11 +9,7 @@ keywords:
 - jobs WDK print , rendering
 - print jobs WDK , rendering
 - banding WDK print
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -58,7 +53,7 @@ For each banding pass on a physical page{
 [*DrvQueryPerBandInfo*](https://msdn.microsoft.com/library/windows/hardware/ff556268)
 Rendering operations
 [**DrvNextBand**](https://msdn.microsoft.com/library/windows/hardware/ff556250) // Send raster data for this band, then clear surface to reuse with next band
-    }
+    }
 }
 [**DrvEndDoc**](https://msdn.microsoft.com/library/windows/hardware/ff556215)
 ### <a href="" id="banding-not-in-use"></a> Banding not in use
@@ -100,9 +95,9 @@ A printer graphics DLL can provide a [**DrvEscape**](https://msdn.microsoft.com/
 
 **CreateDC**, **ResetDC**, and **DeleteDC** are described in the Microsoft Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

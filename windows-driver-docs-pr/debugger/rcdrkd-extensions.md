@@ -2,11 +2,7 @@
 title: RCDRKD Extensions
 description: This section describes the RCDRKD debugger extension commands. These commands display WPP trace messages created by drivers.
 ms.assetid: 11CEBCED-2C11-4450-A5FB-BC5B48B1E1A3
-ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,7 +15,7 @@ Starting in Windows 10, kernel-mode and user-mode drivers can use [Inflight Tra
 
 **Note**  You cannot use the RCDRKD commands to view UMDF driver logs, UMDF framework logs, and KMDF framework logs. To view those logs, use [Windows Driver Framework Extensions (Wdfkd.dll)](kernel-mode-driver-framework-extensions--wdfkd-dll-.md) commands.
 
- 
+ 
 
 The RCDRKD debugger extension commands are implemented in Rcdrkd.dll. To load the RCDRKD commands, enter **.load rcdrkd.dll** in the debugger.
 
@@ -42,15 +38,15 @@ The [**!rcdrkd.rcdrhelp**](-rcdrkd-rcdrhelp.md) displays help for the RCDRKD com
 ## <span id="related_topics"></span>Related topics
 
 
-[WPP Software Tracing](http://go.microsoft.com/fwlink/p?LinkID=251984)
+[WPP Software Tracing](https://go.microsoft.com/fwlink/p?LinkID=251984)
 
-[Using the Framework's Event Logger](http://go.microsoft.com/fwlink/p?LinkID=251985)
+[Using the Framework's Event Logger](https://go.microsoft.com/fwlink/p?LinkID=251985)
 
 [USB 3.0 Extensions](usb-3-extensions.md)
 
- 
+ 
 
- 
+ 
 
 
 

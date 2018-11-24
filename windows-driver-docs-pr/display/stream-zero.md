@@ -8,11 +8,7 @@ keywords:
 - vertex multiple streams WDK DirectX 8.0
 - stream zero WDK DirectX 8.0
 - vertex stream zero WDK DirectX 8.0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +22,9 @@ Vertex stream zero is treated differently from the other streams because it is t
 
 Stream zero is also the implied vertex source when one of the special, fixed-function vertex shaders is the current vertex shader handle.
 
- 
+ 
 
- 
+ 
 
 
 

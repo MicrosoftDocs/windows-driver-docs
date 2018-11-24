@@ -1,6 +1,5 @@
 ---
 title: Filter Manager and Minifilter Driver Architecture
-author: windows-driver-content
 description: Filter Manager and Minifilter Driver Architecture
 ms.assetid: d3fde421-3475-4327-95cf-eaa520f5c132
 keywords:
@@ -9,11 +8,7 @@ keywords:
 - filter manager WDK file system minifilter
 - file system minifilter drivers WDK , filter manager
 - minifilter drivers WDK , filter manager
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -39,8 +34,8 @@ This section includes:
 
 [Guidelines for Porting Legacy Filter Drivers](guidelines-for-porting-legacy-filter-drivers.md)
 
- 
+ 
 
- 
+ 
 
 

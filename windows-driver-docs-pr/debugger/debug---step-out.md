@@ -3,11 +3,7 @@ title: Debug Step Out
 description: Debug Step Out
 ms.assetid: 628a9f15-745a-4502-9999-a9139d4a91de
 keywords: ["Debug Step Out", "controlling the target, Debug Step Out"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,9 +21,9 @@ This command is equivalent to pressing SHIFT+F11 or clicking the **Step out (Shi
 
 For more information about the effects of this action, other methods of issuing this command, and other ways to control program execution, see [Controlling the Target](controlling-the-target.md).
 
- 
+ 
 
- 
+ 
 
 
 

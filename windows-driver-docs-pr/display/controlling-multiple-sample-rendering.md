@@ -5,11 +5,7 @@ ms.assetid: 29ebe5ac-3917-417e-9fc9-1aa978748ee9
 keywords:
 - multiple-sample rendering WDK DirectX 9.0
 - rendering multisamples WDK DirectX 9.0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,9 +21,9 @@ The following topics describe how drivers support operations that control multip
 
 [Dynamically Controlling Multiple-Sample Rendering](dynamically-controlling-multiple-sample-rendering.md)
 
- 
+ 
 
- 
+ 
 
 
 

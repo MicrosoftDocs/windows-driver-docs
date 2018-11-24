@@ -2,11 +2,7 @@
 title: IoFreeIrp rule (storport)
 description: This rule verifies that an IRP that was allocated by IoAllocateIrp either will be freed by IoFreeIrp or its completion routine will get set by IoSetCompletionRoutine.
 ms.assetid: CAEDE78A-B0FF-4963-8C9B-146E4A489E1D
-ms.author: windowsdriverdev
 ms.date: 05/21/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: ["IoFreeIrp rule (storport)"]
 topic_type:
 - apiref
@@ -40,14 +36,14 @@ How to test
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Run [Static Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff552808) and specify the <strong>IoFreeIrp</strong> rule.</p>
+<td align="left"><p>Run <a href="https://msdn.microsoft.com/library/windows/hardware/ff552808" data-raw-source="[Static Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff552808)">Static Driver Verifier</a> and specify the <strong>IoFreeIrp</strong> rule.</p>
 Use the following steps to run an analysis of your code:
 <ol>
-<li>[Prepare your code (use role type declarations).](https://msdn.microsoft.com/library/windows/hardware/hh454281#preparing-your-source-code)</li>
-<li>[Run Static Driver Verifier.](https://msdn.microsoft.com/library/windows/hardware/hh454281#running-static-driver-verifier)</li>
-<li>[View and analyze the results.](https://msdn.microsoft.com/library/windows/hardware/hh454281#viewing-and-analyzing-the-results)</li>
+<li><a href="https://msdn.microsoft.com/library/windows/hardware/hh454281#preparing-your-source-code" data-raw-source="[Prepare your code (use role type declarations).](https://msdn.microsoft.com/library/windows/hardware/hh454281#preparing-your-source-code)">Prepare your code (use role type declarations).</a></li>
+<li><a href="https://msdn.microsoft.com/library/windows/hardware/hh454281#running-static-driver-verifier" data-raw-source="[Run Static Driver Verifier.](https://msdn.microsoft.com/library/windows/hardware/hh454281#running-static-driver-verifier)">Run Static Driver Verifier.</a></li>
+<li><a href="https://msdn.microsoft.com/library/windows/hardware/hh454281#viewing-and-analyzing-the-results" data-raw-source="[View and analyze the results.](https://msdn.microsoft.com/library/windows/hardware/hh454281#viewing-and-analyzing-the-results)">View and analyze the results.</a></li>
 </ol>
-<p>For more information, see [Using Static Driver Verifier to Find Defects in Drivers](https://msdn.microsoft.com/library/windows/hardware/hh454281).</p></td>
+<p>For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh454281" data-raw-source="[Using Static Driver Verifier to Find Defects in Drivers](https://msdn.microsoft.com/library/windows/hardware/hh454281)">Using Static Driver Verifier to Find Defects in Drivers</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -58,9 +54,9 @@ Applies to
 [**IoAllocateIrp**](https://msdn.microsoft.com/library/windows/hardware/ff548257)
 [**IoFreeIrp**](https://msdn.microsoft.com/library/windows/hardware/ff549113)
 [**IoSetCompletionRoutine**](https://msdn.microsoft.com/library/windows/hardware/ff549679)
- 
+ 
 
- 
+ 
 
 
 

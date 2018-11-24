@@ -5,11 +5,7 @@ ms.assetid: c4e8e0ae-7dd5-4c4e-900a-b1f7e5eecb16
 keywords:
 - CoNDIS WAN drivers WDK networking , vs. non-WAN CoNDIS drivers
 - non-WAN CoNDIS drivers WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,9 +31,9 @@ CoNDIS WAN drivers differ from a non-WAN CoNDIS drivers as follows:
 
 -   CoNDIS WAN miniport drivers never attempt to loop back any packets; NDISWAN provides loop-back support.
 
- 
+ 
 
- 
+ 
 
 
 

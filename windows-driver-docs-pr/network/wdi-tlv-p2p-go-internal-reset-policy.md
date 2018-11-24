@@ -1,13 +1,8 @@
 ---
 title: WDI_TLV_P2P_GO_INTERNAL_RESET_POLICY
-author: windows-driver-content
 description: WDI_TLV_P2P_GO_INTERNAL_RESET_POLICY is a TLV that contains the policy used by the firmware for operating channel selection after a Wi-Fi Direct GO Reset is stopped/restarted.
 ms.assetid: 6EA61C65-8573-491D-9268-8A02440A1175
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_GO_INTERNAL_RESET_POLICY Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -35,7 +30,7 @@ The size (in bytes) of a UINT32.
 |-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**WDI\_P2P\_GO\_INTERNAL\_RESET\_POLICY**](https://msdn.microsoft.com/library/windows/hardware/dn926096) (UINT32) | If an Wi-Fi Direct GO Reset is stopped/restarted by the IHV component on its own (for example, for Bluetooth co-ex spatial stream downgrade), this configuration defines the policy to be adopted by the firmware for operating channel selection after the reset. |
 
- 
+ 
 
 Requirements
 ------------
@@ -61,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

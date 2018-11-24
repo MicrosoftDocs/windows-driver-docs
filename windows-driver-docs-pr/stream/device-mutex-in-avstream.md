@@ -1,6 +1,5 @@
 ---
 title: Device Mutex in AVStream
-author: windows-driver-content
 description: Device Mutex in AVStream
 ms.assetid: cec2a040-59d6-44ef-aef1-04f434811d60
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - mutexes WDK AVStream
 - device mutex WDK AVStream
 - synchronization WDK AVStream
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -50,9 +45,9 @@ To manipulate the device mutex, use the following functions:
 
 [**KsAcquireDevice**](https://msdn.microsoft.com/library/windows/hardware/ff560911), [**KsReleaseDevice**](https://msdn.microsoft.com/library/windows/hardware/ff566783)
 
- 
+ 
 
- 
+ 
 
 
 

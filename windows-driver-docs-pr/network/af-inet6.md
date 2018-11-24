@@ -1,13 +1,8 @@
 ---
 title: AF_INET6
-author: windows-driver-content
 description: AF_INET6
 ms.assetid: 58d36a1e-cda2-42aa-9563-96df2f7319b2
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -AF_INET6 Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -171,9 +166,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

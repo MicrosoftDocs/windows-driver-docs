@@ -1,6 +1,5 @@
 ---
 title: Obtaining HID Reports
-author: windows-driver-content
 description: Obtaining HID Reports
 ms.assetid: b6312dce-39af-4fff-b17d-4a50b9ab823b
 keywords:
@@ -9,11 +8,7 @@ keywords:
 - IRP_MJ_READ requests WDK HID
 - IOCTL_HID_GET_Xxx requests WDK HID
 - HID reports WDK , obtaining
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +26,9 @@ This section includes the following topics:
 
 [Obtaining HID Reports by Kernel-Mode Drivers](obtaining-hid-reports-by-kernel-mode-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

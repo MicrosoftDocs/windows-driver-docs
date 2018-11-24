@@ -1,14 +1,9 @@
 ---
 title: Overview of Wait/Wake Operation
-author: windows-driver-content
 description: Overview of Wait/Wake Operation
 ms.assetid: 63453f7e-f656-4efc-bb44-9e2cb0232270
 keywords: ["power management WDK kernel , wake-up capabilities", "external wake signals WDK", "awakening devices", "wake-up capabilities WDK power management", "device wake ups WDK power management", "IRP_MN_WAIT_WAKE", "wait/wake IRPs WDK power management , about wait/wake IRPs"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -46,9 +41,9 @@ Because computers and devices vary in design, particularly with respect to power
 
 For further details on wait/wake operations, see [Understanding the Path of Wait/Wake IRPs through a Device Tree](understanding-the-path-of-wait-wake-irps-through-a-device-tree.md) and [Overview of Wait/Wake IRP Completion](overview-of-wait-wake-irp-completion.md).
 
- 
+ 
 
- 
+ 
 
 
 

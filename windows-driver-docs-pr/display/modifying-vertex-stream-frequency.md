@@ -4,11 +4,7 @@ description: Modifying Vertex Stream Frequency
 ms.assetid: 81bbced4-7331-4e54-9617-1ef29b02f162
 keywords:
 - vertex stream frequency division WDK DirectX 9.0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,13 +22,13 @@ After the stream's frequency divisor is set--for example, to 2, then the driver 
 
 The driver uses this divisor to compute the vertex offset into the vertex buffer according to the following formula:
 
-```
+```cpp
 VertexOffset = VertexIndex / Divider * StreamStride + StreamOffset 
 ```
 
 For each vertex stream used, if the driver receives a start-vertex value during a call to the driver's *D3dDrawPrimitives2* function using the D3DDP2OP\_DRAWPRIMITIVE operation code, the driver also divides this start-vertex value by the frequency divisor and factors the result in the formula. This start-vertex value is provided in the **VStart** member of the [**D3DHAL\_DP2DRAWPRIMITIVE**](https://msdn.microsoft.com/library/windows/hardware/ff545526) structure. The following formula factors in the start-vertex value:
 
-```
+```cpp
 VertexOffset = StartVertex / Divider + 
                VertexIndex / Divider * StreamStride + StreamOffset 
 ```
@@ -45,9 +41,9 @@ The driver ignores the setting of a stream's frequency divisor either for indexe
 
 For more information about **IDirect3DDevice*Xxx*::SetStreamSourceFreq** and **IDirect3DDevice*Xxx*::CreateStateBlock**, see the latest DirectX SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

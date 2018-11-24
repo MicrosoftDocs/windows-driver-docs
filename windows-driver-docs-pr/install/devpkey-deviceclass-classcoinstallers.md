@@ -12,6 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # DEVPKEY_DeviceClass_ClassCoInstallers
@@ -31,7 +32,7 @@ The DEVPKEY_DeviceClass_ClassCoInstallers device property represents a list of t
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Property-data-type identifier</strong></p></td>
-<td align="left"><p>[<strong>DEVPROP_TYPE_STRING_LIST</strong>](devprop-type-string-list.md)</p></td>
+<td align="left"><p><a href="devprop-type-string-list.md" data-raw-source="[&lt;strong&gt;DEVPROP_TYPE_STRING_LIST&lt;/strong&gt;](devprop-type-string-list.md)"><strong>DEVPROP_TYPE_STRING_LIST</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Data format</strong></p></td>
@@ -43,7 +44,7 @@ The DEVPKEY_DeviceClass_ClassCoInstallers device property represents a list of t
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Corresponding registry value name</strong></p></td>
-<td align="left"><p><strong>HLM\System\CurrentControlSet\Control\CoDeviceInstallers\{</strong><em>device-setup-class-guid</em><strong>}</strong></p></td>
+<td align="left"><p><strong>HLM\System\CurrentControlSet\Control\CoDeviceInstallers{</strong><em>device-setup-class-guid</em><strong>}</strong></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Localized?</strong></p></td>
@@ -52,7 +53,7 @@ The DEVPKEY_DeviceClass_ClassCoInstallers device property represents a list of t
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -96,9 +97,9 @@ Requirements
 
 [**SetupDiSetClassPropertyEx**](https://msdn.microsoft.com/library/windows/hardware/ff552132)
 
- 
+ 
 
- 
+ 
 
 
 

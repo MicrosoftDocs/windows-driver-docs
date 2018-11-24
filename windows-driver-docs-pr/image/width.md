@@ -9,11 +9,7 @@ api_name:
 - wscn Width wscn Override "" wscn UsedDefault ""
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **Width** element specifies a width value that the scan device supp
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:Width wscn:Override="" wscn:UsedDefault=""
   Override = "xs:string"
   UsedDefault = "xs:string">
@@ -93,22 +89,22 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ADFOpticalResolution</strong>](adfopticalresolution.md)</p></td>
+<td><p><a href="adfopticalresolution.md" data-raw-source="[&lt;strong&gt;ADFOpticalResolution&lt;/strong&gt;](adfopticalresolution.md)"><strong>ADFOpticalResolution</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>InputMediaSize</strong>](inputmediasize.md)</p></td>
+<td><p><a href="inputmediasize.md" data-raw-source="[&lt;strong&gt;InputMediaSize&lt;/strong&gt;](inputmediasize.md)"><strong>InputMediaSize</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>PlatenMaximumSize</strong>](platenmaximumsize.md)</p></td>
+<td><p><a href="platenmaximumsize.md" data-raw-source="[&lt;strong&gt;PlatenMaximumSize&lt;/strong&gt;](platenmaximumsize.md)"><strong>PlatenMaximumSize</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>PlatenMinimumSize</strong>](platenminimumsize.md)</p></td>
+<td><p><a href="platenminimumsize.md" data-raw-source="[&lt;strong&gt;PlatenMinimumSize&lt;/strong&gt;](platenminimumsize.md)"><strong>PlatenMinimumSize</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>PlatenOpticalResolution</strong>](platenopticalresolution.md)</p></td>
+<td><p><a href="platenopticalresolution.md" data-raw-source="[&lt;strong&gt;PlatenOpticalResolution&lt;/strong&gt;](platenopticalresolution.md)"><strong>PlatenOpticalResolution</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>Widths</strong>](widths.md)</p></td>
+<td><p><a href="widths.md" data-raw-source="[&lt;strong&gt;Widths&lt;/strong&gt;](widths.md)"><strong>Widths</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -120,7 +116,7 @@ The **Width** element is a required child element for all of its parent elements
 
 The WSD Scan Service can specify the optional **Override** and **UsedDefault** attributes only when the **Width** element is contained within a **DocumentFinalParameters** hierarchy. For more information about **Override** and **UsedDefault** and about their usage, see [**DocumentFinalParameters**](documentfinalparameters.md).
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ADFOpticalResolution**](adfopticalresolution.md)
@@ -139,9 +135,9 @@ The WSD Scan Service can specify the optional **Override** and **UsedDefault** a
 
 [**Widths**](widths.md)
 
- 
+ 
 
- 
+ 
 
 
 

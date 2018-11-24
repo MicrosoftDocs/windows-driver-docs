@@ -1,6 +1,5 @@
 ---
 title: Iasphelp CalcJobETA method
-author: windows-driver-content
 description: The CalcJobETA method enables an ASP Web page to calculate the time at which a print job is to be completed.
 MS-HAID:
 - 'webfnc\_65577773-9d44-429e-a2fe-eb1a1475b7f6.xml'
@@ -16,18 +15,18 @@ api_name:
 - Iasphelp.CalcJobETA
 api_type:
 - COM
+ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # Iasphelp::CalcJobETA method
-
 
 The **CalcJobETA** method enables an ASP Web page to calculate the time at which a print job is to be completed.
 
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT CalcJobETA();
 ```
 
@@ -68,12 +67,9 @@ The following table shows possible return values for this method.
 </tbody>
 </table>
 
- 
+ 
 
-### <span id="vbscript_example"></span><span id="VBSCRIPT_EXAMPLE"></span>VBScript Example
-
-Remarks
--------
+## VBScript Example
 
 The **CalcJobETA** method calculates print job information that can be subsequently retrieved by using Iasphelp properties. Call **CalcJobETA** before getting any of the following properties:
 
@@ -89,12 +85,12 @@ Before **CalcJobETA** is called, the value of any of these properties is zero. I
 
 The [**Iasphelp::Open**](iasphelp-open.md) method must be called before the **CalcJobETA** method can be called.
 
-```
-    Dim objPrinter
-    strPrinter = Session("MS_printer")
-    Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
-    objPrinter.Open strPrinter
-    objPrinter.CalcJobETA
+```vb
+Dim objPrinter
+strPrinter = Session("MS_printer")
+Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
+objPrinter.Open strPrinter
+objPrinter.CalcJobETA
 ```
 
 Requirements
@@ -110,15 +106,10 @@ Requirements
 <td><p>Target platform</p></td>
 <td>Desktop</td>
 </tr>
-<tr class="even">
-<td><p>Version</p></td>
-<td><p>Available in Windows 2000 and later versions of the Windows operating systems.</p></td>
-</tr>
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**Iasphelp::JobCompletionMinute**](iasphelp-jobcompletionminute.md)
 
@@ -129,11 +120,3 @@ Requirements
 [**Iasphelp::AvgJobSizeUnit**](iasphelp-avgjobsizeunit.md)
 
 [**Iasphelp::Open**](iasphelp-open.md)
-
- 
-
- 
-
-
-
-

@@ -3,6 +3,7 @@ title: System-Defined Device Setup Classes Reserved for System Use
 description: System-Defined Device Setup Classes Reserved for System Use
 ms.assetid: 519a8833-8ed0-40c8-b7cb-a86f13191227
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # System-Defined Device Setup Classes Reserved for System Use
@@ -75,9 +76,9 @@ Class = USB<br/>
 ClassGuid = {36fc9e60-c465-11cf-8056-444553540000}<br/>
 This class includes USB host controllers and USB hubs, but not USB peripherals. Drivers for this class are system-supplied.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,11 +3,7 @@ title: for_each_process
 description: The for_each_process extension executes the specified debugger command once for each process in the target.
 ms.assetid: 28cc0982-43a4-41ba-a26f-6910cc1b77b8
 keywords: ["for_each_process Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!for\_each\_process** extension executes the specified debugger command once for each process in the target.
 
-```
+```dbgcmd
 !for_each_process ["CommandString"] 
 !for_each_process -? 
 ```
@@ -59,7 +55,7 @@ This extension works only in kernel mode, even though it resides in Ext.dll.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -72,9 +68,9 @@ If no arguments are supplied, the debugger displays a list of all processes, alo
 
 To terminate execution at any point, press CTRL+BREAK (in WinDbg) or CTRL+C (in KD).
 
- 
+ 
 
- 
+ 
 
 
 

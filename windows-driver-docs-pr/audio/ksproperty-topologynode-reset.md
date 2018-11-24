@@ -11,11 +11,7 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -51,13 +47,13 @@ The KSPROPERTY\_TOPOLOGYNODE\_RESET property resets the node completely, restori
 <td align="left"><p>No</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p>[<strong>KSNODEPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537143)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537143" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537143)"><strong>KSNODEPROPERTY</strong></a></p></td>
 <td align="left"><p>BOOL</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is of type BOOL and indicates whether the node should be reset. A value of **TRUE** resets the node to its default initial state at the time of creation. A value of **FALSE** has no effect, but should not be treated as an error.
 
@@ -90,9 +86,9 @@ Requirements
 
 [**KSNODEPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff537143)
 
- 
+ 
 
- 
+ 
 
 
 

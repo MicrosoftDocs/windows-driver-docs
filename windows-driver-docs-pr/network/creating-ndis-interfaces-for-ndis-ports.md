@@ -6,11 +6,7 @@ keywords:
 - ports WDK NDIS , creating NDIS interfaces
 - NDIS ports WDK , creating NDIS interfaces
 - registering NDIS interface providers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,9 +20,9 @@ By default, NDIS does not create an NDIS network interface for an NDIS port. If 
 
 For more information about NDIS network interfaces, see [NDIS 6.0 Network Interfaces](https://msdn.microsoft.com/library/windows/hardware/ff566525).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -8,11 +8,7 @@ keywords:
 - registration porting WDK CoNDIS
 - porting CoNDIS drivers WDK networking , registration
 - client registration WDK CoNDIS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +26,9 @@ NDIS 6.0 protocol drivers do not call [**NdisClOpenAddressFamily**](https://msdn
 
 For more information about CoNDIS client registration, see [CoNDIS Client Registration](condis-client-registration.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -9,11 +9,7 @@ keywords:
 - pins WDK audio , hardware mixing
 - SRC WDK audio , hardware acceleration
 - sample-rate conversion WDK audio , hardware acceleration
-ms.author: windowsdriverdev
 ms.date: 10/27/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -41,9 +37,9 @@ This section describes WDM audio driver support for hardware acceleration of Dir
 
 [Prefetch Offsets](prefetch-offsets.md)
 
- 
+ 
 
- 
+ 
 
 
 

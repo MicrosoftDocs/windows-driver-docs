@@ -2,11 +2,7 @@
 title: Custom Switch Feature Status
 description: Custom Switch Feature Status
 ms.assetid: 2362EE05-9CC9-451D-80D1-C18CC9274BAB
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ Custom switch feature status definitions are registered with the WMI management 
 
 The following shows an example of a MOF class for a custom feature status definition of an extensible switch.
 
-```
+```C++
 #pragma namespace("\\\\.\\root\\virtualization\\v2")
 
 [ Dynamic,
@@ -54,7 +50,7 @@ The MOF classes for custom feature status definition of an extensible switch are
 
 The following example shows the commands that must be entered to register a file (Fabrikam\_CustomSwitchData.mof) that contains the MOF class for a custom switch feature status definition.
 
-```
+```PowerShell
 net stop vmms
 mofcomp -N:root\virtualization\v2 Fabrikam_CustomSwitchData.mof
 net start vmms
@@ -64,7 +60,7 @@ For more information about how to use the MOF compiler, see [Compiling a Driver'
 
 The following example shows how you can use the custom switch feature status definition to obtain switch data. In this example, the Fabrikam\_CustomSwitchData MOF class is used to obtain switch status from a switch named “TestSwitch”. The Fabrikam, Inc. extension is enabled on the vSwitch “TestSwitch”, and is returning 123 for the status.
 
-```
+```PowerShell
 PS C:\> $switchData = Get-VMSwitchExtensionSwitchData -SwitchName TestSwitch -FeatureId B3E57D77-8E95-4977-97DE-524F8DAF03E4
 # Output the current value
 PS C:\> $switchData$customSwitchData.Data.CurrentStatus
@@ -73,9 +69,9 @@ PS C:\> $switchData$customSwitchData.Data.CurrentStatus
 
 For more information on how extensible switch extensions manage switch feature status information, see [Managing Custom Switch Feature Status Information](managing-custom-switch-feature-status-information.md).
 
- 
+ 
 
- 
+ 
 
 
 

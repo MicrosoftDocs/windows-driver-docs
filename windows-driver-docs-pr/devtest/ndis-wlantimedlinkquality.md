@@ -2,11 +2,7 @@
 title: WlanTimedLinkQuality rule (ndis)
 description: The WlanTimedLinkQuality rule specifies the NDIS\_STATUS\_DOT11\_LINK\_QUALITY indication is made in 15 seconds after a successful NDIS\_STATUS\_DOT11\_ASSOCIATION\_COMPLETION.
 ms.assetid: B7055493-C09B-4565-A10F-32A34CCD5621
-ms.author: windowsdriverdev
 ms.date: 05/21/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: ["WlanTimedLinkQuality rule (ndis)"]
 topic_type:
 - apiref
@@ -44,12 +40,12 @@ How to test
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Run [Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff545448) and select the [NDIS/WIFI verification](https://msdn.microsoft.com/library/windows/hardware/hh454208) option.</p></td>
+<td align="left"><p>Run <a href="https://msdn.microsoft.com/library/windows/hardware/ff545448" data-raw-source="[Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff545448)">Driver Verifier</a> and select the <a href="https://msdn.microsoft.com/library/windows/hardware/hh454208" data-raw-source="[NDIS/WIFI verification](https://msdn.microsoft.com/library/windows/hardware/hh454208)">NDIS/WIFI verification</a> option.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Applies to
 ----------
@@ -62,9 +58,9 @@ See also
 --------
 
 [NDIS\_STATUS\_DOT11\_LINK\_QUALITY](https://msdn.microsoft.com/library/windows/hardware/ff567344)
- 
+ 
 
- 
+ 
 
 
 

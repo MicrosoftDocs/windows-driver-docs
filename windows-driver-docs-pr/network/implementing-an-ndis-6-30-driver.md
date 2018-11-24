@@ -2,11 +2,7 @@
 title: Implementing an NDIS 6.30 Driver
 description: Implementing an NDIS 6.30 Driver
 ms.assetid: B1B48ED9-10F1-45F2-AA7C-270B637B5A36
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +27,9 @@ In addition, an NDIS 6.30 driver must be compliant with the following requiremen
 
 -   NDIS 6.30 miniport drivers for the Windows 8 and Windows Server 2012 operating systems must use the NDIS 6.30 versions of data structures. For more information, see [Using NDIS 6.30 Data Structures](using-ndis-6-30-data-structures.md).
 
- 
+ 
 
- 
+ 
 
 
 

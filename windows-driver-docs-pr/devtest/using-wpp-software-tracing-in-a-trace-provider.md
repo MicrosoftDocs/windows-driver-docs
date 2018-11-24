@@ -5,11 +5,7 @@ ms.assetid: e215a99b-5082-4e81-84b6-184a2fd4e270
 keywords:
 - Windows software trace preprocessor WDK , about WPP
 - WPP software tracing WDK , about WPP
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +25,9 @@ To use the default form of WPP software tracing in a [trace provider](trace-prov
 
 -   Use other tools for software tracing, such as [TraceView](traceview.md), [Tracelog](tracelog.md), [Tracefmt](tracefmt.md), and [Tracepdb](tracepdb.md) to configure, start, and stop tracing sessions and to display and filter trace messages. These tools are included in the Windows Driver Kit (WDK) in the \\tools\\tracing directory.
 
- 
+ 
 
- 
+ 
 
 
 

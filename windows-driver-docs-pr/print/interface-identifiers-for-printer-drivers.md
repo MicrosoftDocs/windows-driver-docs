@@ -1,6 +1,5 @@
 ---
 title: Interface Identifiers for Printer Drivers
-author: windows-driver-content
 description: Interface Identifiers for Printer Drivers
 ms.assetid: 8182cba5-4461-4ca0-8b01-342519609b1f
 keywords:
@@ -9,11 +8,7 @@ keywords:
 - plug-ins WDK print , interface identifiers
 - identifiers WDK printer
 - GUIDs WDK printer
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -45,9 +40,9 @@ User interface plug-ins and rendering plug-ins must identify the interface versi
 
 Likewise, Unidrv and Pscript5 provide **IUnknown::QueryInterface** methods for the [IPrintOemDriverUI](iprintoemdriverui-com-interface.md), [IPrintCoreUI2](iprintcoreui2-com-interface.md), [IPrintOemDriverUni](iprintoemdriveruni-com-interface.md), [IPrintOemDriverPS](iprintoemdriverps-com-interface.md), or [IPrintCorePS2](iprintcoreps2-com-interface.md) COM interfaces. Plug-ins should call the appropriate interface's **QueryInterface** method to determine the driver's supported interface version and to receive an interface pointer.
 
- 
+ 
 
- 
+ 
 
 
 

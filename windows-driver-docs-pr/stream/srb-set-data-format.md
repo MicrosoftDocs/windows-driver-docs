@@ -9,11 +9,7 @@ api_name:
 - SRB_SET_DATA_FORMAT
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,15 +29,15 @@ Indicates successful completion of the command.
 <span id="STATUS_NOT_SUPPORTED"></span><span id="status_not_supported"></span>STATUS\_NOT\_SUPPORTED  
 Indicates that the minidriver does not support the requested data format.
 
-### <span id="comments"></span><span id="COMMENTS"></span>Comments
+### Comments
 
 The class driver passes the new data format in the **CommandData**.**OpenFormat** member of the *pSrb* pointer. (This pointer points to a [**HW\_STREAM\_REQUEST\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff559702) structure.)
 
 For more information about data formats, see the [Stream Class Minidriver Design Guide](https://msdn.microsoft.com/library/windows/hardware/ff568277). Also see [Data Range Intersections in AVStream](https://msdn.microsoft.com/library/windows/hardware/ff558680).
 
- 
+ 
 
- 
+ 
 
 
 

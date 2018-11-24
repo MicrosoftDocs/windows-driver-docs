@@ -5,11 +5,7 @@ ms.assetid: 39e3e313-e40f-4cb9-a534-c9e74fd1e88b
 keywords:
 - warnings listed WDK PREfast for Drivers
 - errors listed WDK PREfast for Drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,13 +27,13 @@ warning: C28114: Copying a whole IRP stack entry leaves certain fields initializ
 </tbody>
 </table>
 
- 
+ 
 
 The driver is copying an IRP improperly. Improperly copying an IRP can cause serious problems with a driver, including loss of data and system crashes. If an IRP must be copied and [**IoCopyCurrentIrpStackLocationToNext**](https://msdn.microsoft.com/library/windows/hardware/ff548387) does not suffice, then certain members of the IRP should not be copied or should be zeroed after copying.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -9,11 +9,7 @@ keywords:
 - levels WDK software tracing
 - displaying trace flags
 - displaying trace levels
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +26,9 @@ In the **Tracing Flags and Level Selection** dialog box, the **G** (GUID) icon r
     -   Right-click the **Flags** item, and then click **Set All Flags** or **Clear All Flags**.
 -   To save the changes, click **OK**.
 
- 
+ 
 
- 
+ 
 
 
 

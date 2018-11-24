@@ -1,6 +1,5 @@
 ---
 title: Print Capabilities
-author: windows-driver-content
 description: Print Capabilities
 ms.assetid: 8ccbdab3-5be4-4ee1-9798-3b90e8b5b4d4
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - XML PrintCapabilities WDK print
 - PrintCapabilities document WDK print
 - IPrintTicketProvider
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,9 +30,9 @@ This section covers the following aspects of Print Capabilities:
 
 [Print Capabilities Support in GDI-based, Monolithic Print Drivers](print-capabilities-support-in-gdi-based--monolithic-print-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

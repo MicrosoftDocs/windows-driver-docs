@@ -2,11 +2,7 @@
 title: Installing an in-box Bluetooth driver on new hardware
 description: This appendix describes the procedure for installing an in-box Bluetooth driver on new hardware in Windows Vista
 ms.assetid: 399514FD-2BD8-4DC2-8446-F5EEB4120876
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -50,9 +46,9 @@ If the driver loads correctly, Device Manager should have a Generic Bluetooth Ad
 
 If the driver failed to start, for example, if Windows returned a start error code, examine the event log to help determine the cause.
 
- 
+ 
 
- 
+ 
 
 
 

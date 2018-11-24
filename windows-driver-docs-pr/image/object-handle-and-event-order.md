@@ -1,13 +1,8 @@
 ---
 title: Object Handle and Event Order
-author: windows-driver-content
 description: Object Handle and Event Order
 ms.assetid: 5abbcda2-66cc-4460-99b6-e7796e65af68
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +24,9 @@ When the Microsoft PTP WIA minidriver issues the **GetObjectHandles** command (s
 
     In other words, an ObjectRemoved event for an object should not occur until all of its children have been removed as a result of ObjectRemoved events. If the image inside an ancillary association is to be removed, the other objects in the association must be removed in response to ObjectRemoved events before the image itself is removed.
 
- 
+ 
 
- 
+ 
 
 
 

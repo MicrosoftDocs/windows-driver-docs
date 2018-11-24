@@ -2,11 +2,7 @@
 title: WOL Methods in NDIS 6.20
 description: WOL Methods in NDIS 6.20
 ms.assetid: A46C213D-B356-44A3-8863-D7B183B73C77
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +30,9 @@ Although some network adapters report support for the *wake device on media conn
 
 For more information about the *wake device on media connect* method, see [Low Power on Media Disconnect](low-power-on-media-disconnect.md).
 
- 
+ 
 
- 
+ 
 
 
 

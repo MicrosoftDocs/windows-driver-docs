@@ -9,11 +9,7 @@ api_name:
 - wscn ADFMaximumSize
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **ADFMaximumSize** element specifies the largest size document that
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ADFMaximumSize>
   child elements
 </wscn:ADFMaximumSize>
@@ -50,10 +46,10 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>Height</strong>](height.md)</p></td>
+<td><p><a href="height.md" data-raw-source="[&lt;strong&gt;Height&lt;/strong&gt;](height.md)"><strong>Height</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>Width</strong>](width.md)</p></td>
+<td><p><a href="width.md" data-raw-source="[&lt;strong&gt;Width&lt;/strong&gt;](width.md)"><strong>Width</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -72,10 +68,10 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ADFBack</strong>](adfback.md)</p></td>
+<td><p><a href="adfback.md" data-raw-source="[&lt;strong&gt;ADFBack&lt;/strong&gt;](adfback.md)"><strong>ADFBack</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>ADFFront</strong>](adffront.md)</p></td>
+<td><p><a href="adffront.md" data-raw-source="[&lt;strong&gt;ADFFront&lt;/strong&gt;](adffront.md)"><strong>ADFFront</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -89,7 +85,7 @@ If the parent element of the **ADFMaximumSize** element is [**ADFFront**](adffro
 
 All media dimensions are measured in one-thousandths (1/1000) of an inch. The possible values for both **Width** and **Height** range from 1 through 2147483648.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ADFBack**](adfback.md)
@@ -100,9 +96,9 @@ All media dimensions are measured in one-thousandths (1/1000) of an inch. The po
 
 [**Width**](width.md)
 
- 
+ 
 
- 
+ 
 
 
 

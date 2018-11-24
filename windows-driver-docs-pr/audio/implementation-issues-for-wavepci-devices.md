@@ -7,11 +7,7 @@ keywords:
 - audio drivers WDK , WavePci
 - WavePci design guidelines WDK audio
 - scatter/gather DMA WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -49,9 +45,9 @@ This experience is distilled into the following topics, which address the key ha
 
 [Reliability Issues for a WavePci Miniport Driver](reliability-issues-for-a-wavepci-miniport-driver.md)
 
- 
+ 
 
- 
+ 
 
 
 

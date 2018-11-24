@@ -3,11 +3,7 @@ title: ndiskd.cxadapter
 description: The ndiskd.cxadapter extension displays information about a NETADAPTER object.
 ms.assetid: 5BE91B1C-9795-4E2C-834A-B7424FF1FCDB
 keywords: ["ndiskd.cxadapter Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,7 +20,7 @@ The **!ndiskd.cxadapter** extension displays information about a NETADAPTER obje
 
 For more information about the Network Adapter WDF Class Extension (NetAdapterCx), see [Network Adapter WDF Class Extension (Cx)](https://docs.microsoft.com/windows-hardware/drivers/netcx).
 
-```
+```console
 !ndiskd.cxadapter [-handle <x>] [-basic] [-power] [-datapath] 
 ```
 
@@ -52,7 +48,7 @@ Examples
 
 To obtain a handle for a NETADAPTER object, first run the [**!ndiskd.netadapter**](-ndiskd-netadapter.md) command to see a list of all NIC drivers and NetAdapters on the system. In the following example, look for the handle for the NetAdapter named Realtek PCIe GBE Family Controller NetAdapter Sample Driver \#2. Its handle is ffffd1022d048030.
 
-```
+```console
 0: kd> !ndiskd.netadapter
     Driver             NetAdapter          Name                                 
     ffffd1022e8ecae0   ffffd1022d048030    Realtek PCIe GBE Family Controller NetAdapter Sample Driver #2
@@ -61,7 +57,7 @@ To obtain a handle for a NETADAPTER object, first run the [**!ndiskd.netadapter*
 
 By clicking on this NetAdapter's handle or by entering the **!ndiskd.netadapter -handle** command with its handle on the command line, you can see details for this NetAdapter, including its NETADAPTER object. The Realtek PCIe GBE Family Controller NetAdapter Sample Driver \#2's NETADAPTER handle is 00002efdd0e5f988.
 
-```
+```console
 0: kd> !ndiskd.netadapter ffffd1022d048030
 
 
@@ -144,7 +140,7 @@ MORE INFORMATION
 
 Because the NETADAPTER object is a WDF object, clicking its handle will cause the debugger to run the [**!wdfkd.wdfhandle**](-wdfkd-wdfhandle.md) command which will give you more information about it from a WDF perspective. To see more detailed information about the NETADAPTER from a networking perspective, click the "More Information" link to the right of the NETADAPTER's handle to run the **!ndiskd.cxadapter** command with its handle.
 
-```
+```console
 0: kd> !ndiskd.cxadapter ffffd1022f1a0720
 
 
@@ -155,7 +151,6 @@ NETADAPTER
     WDFDEVICE          00002efdcf45f2f8    
 
     Event Callbacks                        Function pointer   Symbol (if available)
-    EvtAdapterSetCapabilities              fffff800341519ac   RtEthSample+19ac
     EvtAdapterCreateTxQueue                fffff80034151508   RtEthSample+1508
     EvtAdapterCreateRxQueue                fffff800341510ec   RtEthSample+10ec
 
@@ -165,7 +160,7 @@ NETADAPTER
 
 You can also combine this command other parameters such as *-datapath* to see more information for this NETADAPTER.
 
-```
+```console
 0: kd> !ndiskd.cxadapter ffffd1022f1a0720 -basic -datapath
 
 
@@ -176,7 +171,6 @@ NETADAPTER
     WDFDEVICE          00002efdcf45f2f8    
 
     Event Callbacks                        Function pointer   Symbol (if available)
-    EvtAdapterSetCapabilities              fffff800341519ac   RtEthSample+19ac
     EvtAdapterCreateTxQueue                fffff80034151508   RtEthSample+1508
     EvtAdapterCreateRxQueue                fffff800341510ec   RtEthSample+10ec
 
@@ -206,9 +200,9 @@ DATAPATH QUEUES
 
 [**!wdfkd.wdfhandle**](-wdfkd-wdfhandle.md)
 
- 
+ 
 
- 
+ 
 
 
 

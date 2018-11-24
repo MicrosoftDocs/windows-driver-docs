@@ -2,11 +2,7 @@
 title: Driver matching criteria
 description: This topic describes the elements that are used to choose the best match on a driver.
 ms.assetid: C41549AE-3FE0-44E8-9D45-1ED1124D010B
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -64,9 +60,9 @@ The following elements are used to choose the best match on a driver. They are l
 7.  Driver date
 8.  Driver version number
 
- 
+ 
 
- 
+ 
 
 
 

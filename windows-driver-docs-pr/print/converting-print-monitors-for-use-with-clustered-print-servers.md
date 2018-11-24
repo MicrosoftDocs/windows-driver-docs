@@ -1,6 +1,5 @@
 ---
 title: Converting Print Monitors for Use with Clustered Print Servers
-author: windows-driver-content
 description: Converting Print Monitors for Use with Clustered Print Servers
 ms.assetid: 6b374d61-bb2b-42a4-9609-3cde9b82bb2b
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - clustered print servers WDK
 - print server clustering WDK
 - converting print monitors for clustered print servers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -40,9 +35,9 @@ Once a printer port monitor running on a clustered node of a machine running Win
 
 When a failover from one cluster node to another occurs, the spooler must wait for all current printing jobs to complete or fail. If a pending print job is held up in a port monitor for longer than the spooler resource time-out, the spooler may come back online in an incomplete state, with printers temporarily missing. This may affect users who have connections to those missing printers.
 
- 
+ 
 
- 
+ 
 
 
 

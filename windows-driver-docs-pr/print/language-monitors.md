@@ -1,17 +1,12 @@
 ---
 title: Language Monitors
-author: windows-driver-content
 description: Language Monitors
 ms.assetid: 26ba1c22-390a-4187-b67a-3f3497964f8e
 keywords:
 - print monitors WDK , language monitors
 - language monitors WDK print
 - language monitors WDK print , about language monitors
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,11 +37,11 @@ Language monitors should always implement the **SendRecvBidiDataFromPort** funct
 
 In the event that the language monitor does not support Bidi, or the request contains Bidi Schema values that the Language Monitor does not support, the Language Monitor should forward the calls to the Port Monitor's **SendRecvBidiDataFromPort** function.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

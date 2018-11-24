@@ -2,11 +2,7 @@
 title: CODECAPI\_ALLSETTINGS
 description: CODECAPI\_ALLSETTINGS
 ms.assetid: 0ae11200-af21-476a-89a8-515bd98920a0
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -46,11 +42,11 @@ The CODECAPI\_ALLSETTINGS property is used to pass back and forth a minidriver-g
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is of type PVOID, which is a pointer to a user-mode buffer for the minidriver-generated block of data.
 
-### <span id="comments"></span><span id="COMMENTS"></span>Comments
+### Comments
 
 On a property get call:
 
@@ -66,17 +62,17 @@ On a property set call:
 
 The minidriver must verify the data's integrity and check that the data block size is under the maximum data size (for example, reject anything over a certain size). It must also verify the CRC and the header length. The minidriver must also cache any changes to be propagated for [CODECAPI\_CURRENTCHANGELIST](codecapi-currentchangelist.md).
 
-### <span id="requirements"></span><span id="REQUIREMENTS"></span>Requirements
+### Requirements
 
 **Headers:** Declared in *ksmedia.h*. Include *ksmedia.h*.
 
-### <span id="see_also"></span><span id="SEE_ALSO"></span>See Also
+### See Also
 
-[**KSPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff564262), [CODECAPI\_CURRENTCHANGELIST](codecapi-currentchangelist.md)
+[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier), [CODECAPI\_CURRENTCHANGELIST](codecapi-currentchangelist.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -5,11 +5,7 @@ ms.assetid: cefede2e-3e82-4de3-ae49-4982578fd2fe
 keywords:
 - context WDK Direct3D , surface handles
 - surface handles WDK Direct3D
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +27,9 @@ Handles are guaranteed by the runtime to be unique for each device and for each 
 
 There is no corresponding **DestroySurfaceEx** call, so driver-side surface structures are destroyed at [*DdDestroySurface*](https://msdn.microsoft.com/library/windows/hardware/ff549281) time.
 
- 
+ 
 
- 
+ 
 
 
 

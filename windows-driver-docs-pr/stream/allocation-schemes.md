@@ -1,15 +1,10 @@
 ---
 title: Allocation Schemes
-author: windows-driver-content
 description: Allocation Schemes
 ms.assetid: bd51205d-53e6-42d0-b5e3-36968acba3a3
 keywords:
 - allocation options WDK kernel streaming
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,9 +30,9 @@ This filter graph contains two allocators: the transform's allocator and the dev
 
 Flow control is maintained in this filter graph by the number of total outstanding frames that can be allocated from the allocators and by the rate of completion of the I/O operations. Note that there must be a separate allocator for each separate list of source/sink segments created through connecting pins. If separate allocators are not present, a given segment may consume all frames available, leaving none for the next segment, which may require one or more frames to process the data created by the previous segment.
 
- 
+ 
 
- 
+ 
 
 
 

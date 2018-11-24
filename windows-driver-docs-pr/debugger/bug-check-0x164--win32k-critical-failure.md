@@ -3,11 +3,7 @@ title: Bug Check 0x164 WIN32K_CRITICAL_FAILURE
 description: The WIN32K_CRITICAL_FAILURE bug check has a value of 0x00000164. This indicates that Win32k has encountered a critical failure.
 ms.assetid: 6274C852-53DA-4E01-B2A6-D7485501BE50
 keywords: ["Bug Check 0x164 WIN32K_CRITICAL_FAILURE", "WIN32K_CRITICAL_FAILURE"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The WIN32K\_CRITICAL\_FAILURE bug check has a value of 0x00000164. This indicates that Win32k has encountered a critical failure.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## WIN32K\_CRITICAL\_FAILURE Parameters
 
@@ -55,7 +51,7 @@ The WIN32K\_CRITICAL\_FAILURE bug check has a value of 0x00000164. This indicate
 <p>2 - wchar_t* to the name of the missing function</p>
 <p>3 - Reserved</p>
 <p>4 - Reserved</p>
-0x4 : GDI_SPRITE_SURFACE_INVALID_DELETE - GDI sprite's shape is being deleted without deleting the sprite.
+0x4 : GDI_SPRITE_SURFACE_INVALID_DELETE - GDI sprite&#39;s shape is being deleted without deleting the sprite.
 <p>2 - Handle to the SURFACE</p>
 <p>3 - Reference count to the SURFACE</p>
 <p>4 - PID of the SURFACE owner</p>
@@ -100,11 +96,11 @@ The WIN32K\_CRITICAL\_FAILURE bug check has a value of 0x00000164. This indicate
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

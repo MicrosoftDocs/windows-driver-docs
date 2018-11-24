@@ -1,13 +1,8 @@
 ---
 title: WDI_TLV_VIRTUALIZATION_ATTRIBUTES
-author: windows-driver-content
 description: WDI_TLV_VIRTUALIZATION_ATTRIBUTES is a TLV that contains virtualization attributes.
 ms.assetid: BFB21903-2532-46FB-97E3-6AF254B6BB1E
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_VIRTUALIZATION_ATTRIBUTES Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -35,7 +30,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 |---------------------------------------------------------------------------------------|--------------------------------|----------|----------------------------------|
 | [**WDI\_TLV\_VIRTUALIZATION\_CAPABILITIES**](wdi-tlv-virtualization-capabilities.md) |                                |          | The virtualization capabilities. |
 
- 
+ 
 
 Requirements
 ------------
@@ -61,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,15 +1,10 @@
 ---
 title: HS_PLUGIN_QUERY_CELLULAR_EXCEPTION_HOSTS function
-author: windows-driver-content
 description: The HS_PLUGIN_QUERY_CELLULAR_EXCEPTION_HOSTS function queries the list of hosts that the plugin will need to connect to over cellular as part of its authentication process.
 ms.assetid: 7f38f146-a637-4ec3-8610-ea4934c4a57a
 keywords: 
 - typedef DWORD (WINAPI HS_PLUGIN_QUERY_CELLULAR_EXCEPTION_HOSTS) function Network Drivers Starting with Windows Vista
-ms.author: windowsdriverdev
-ms.date: 07/31/2017 
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 07/31/2017
 ms.localizationpriority: medium
 ---
 
@@ -72,9 +67,9 @@ Requirements
 
 [**HS\_PLUGIN\_PROFILE**](hs-plugin-profile.md)
 
- 
+ 
 
- 
+ 
 
 
 

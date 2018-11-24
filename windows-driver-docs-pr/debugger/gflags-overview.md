@@ -3,11 +3,7 @@ title: GFlags Overview
 description: GFlags Overview
 ms.assetid: fa5c48bf-c0d0-4010-a101-381c692082bf
 keywords: ["GFlags, overview"]
-ms.author: domars
 ms.date: 06/12/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -50,9 +46,9 @@ Enable, disable, and configure page heap verification for a program. When enable
 <span id="Silent_process_exit"></span><span id="silent_process_exit"></span><span id="SILENT_PROCESS_EXIT"></span>Silent process exit  
 Enable, disable, and configure monitoring and reporting of silent exits for a process. You can specify actions that occur when a process exits silently, including notification, event logging, and creation of dump files. For more information, see [Monitoring Silent Process Exit](registry-entries-for-silent-process-exit.md).
 
- 
+ 
 
- 
+ 
 
 
 

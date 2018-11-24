@@ -2,11 +2,7 @@
 title: USB Remote NDIS overview
 description: USB Remote NDIS overview
 ms.assetid: 05714f49-38bc-4a36-83db-2eeb16c6add6
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,11 +16,11 @@ A USB Remote NDIS device is implemented as a USB Communication Device Class (CDC
 >[!NOTE]
 > An understanding of the Universal Serial Bus (USB) Specification versions 1.1 and 2.0 is required. The USB Communication Device Class (CDC) Specifications are suggested as references. These documents can be found at http://www.usb.org.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

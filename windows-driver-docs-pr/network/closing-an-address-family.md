@@ -6,11 +6,7 @@ keywords:
 - address families WDK networking
 - AFs WDK networking
 - closing address families
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +26,9 @@ This section includes the following topics:
 
 [Closing an Address Family in a CoNDIS Client](closing-an-address-family-in-a-condis-client.md)
 
- 
+ 
 
- 
+ 
 
 
 

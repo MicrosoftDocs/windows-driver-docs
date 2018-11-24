@@ -7,11 +7,7 @@ keywords:
 - data pools WDK networking
 - network data pools WDK networking
 - allocating data pools
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +27,9 @@ Before freeing these pools, the driver should ensure that all outstanding send o
 
 For more information about NDIS 6.0 data buffer management, see [Protocol Driver Buffer Management](protocol-driver-buffer-management.md).
 
- 
+ 
 
- 
+ 
 
 
 

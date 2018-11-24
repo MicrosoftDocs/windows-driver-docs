@@ -3,11 +3,7 @@ title: .lines (Toggle Source Line Support)
 description: The .lines command enables or disables support for source-line information.
 ms.assetid: 5d923592-7aba-42a0-893b-2c6621e4b87f
 keywords: [".lines (Toggle Source Line Support) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **.lines** command enables or disables support for source-line information.
 
-```
+```dbgcmd
 .lines [-e|-d|-t]
 ```
 
@@ -61,7 +57,7 @@ Turns source line support on or off. If you do not specify parameters for **.lin
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -76,9 +72,9 @@ You can enable source line support by using the **.lines** command or the [-line
 
 By default, if you do not use the **.lines** command, WinDbg turns on source line support, and console debuggers (KD, CDB, NTSD) turn off the support. For more information about how to change this setting, see [Setting Symbol Options](symbol-options.md).
 
- 
+ 
 
- 
+ 
 
 
 

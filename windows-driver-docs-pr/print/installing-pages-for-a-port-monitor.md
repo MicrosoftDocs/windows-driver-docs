@@ -1,17 +1,12 @@
 ---
 title: Installing Pages for a Port Monitor
-author: windows-driver-content
 description: Installing Pages for a Port Monitor
 ms.assetid: acb1a6f9-65d1-4097-b702-28dc4da8e4cf
 keywords:
 - installing customized print Web pages WDK
 - customized print Web pages WDK , installing
 - port monitors WDK print , customized Web pages
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,9 +20,9 @@ You can provide a customized printer details page for use with printers that do 
 
 The page's initial ASP file must be named Page1.asp. All ASP file names with a format of Page*N*.asp, where *N* is 1, 2, 3, and so on, are reserved by Microsoft.
 
- 
+ 
 
- 
+ 
 
 
 

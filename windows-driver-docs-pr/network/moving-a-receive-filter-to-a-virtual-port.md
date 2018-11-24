@@ -2,11 +2,7 @@
 title: Moving a Receive Filter to a Virtual Port
 description: Moving a Receive Filter to a Virtual Port
 ms.assetid: 6315FB18-3F57-43C2-B864-3759058092BB
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,7 +27,7 @@ Before the overlying driver issues the [OID\_RECEIVE\_FILTER\_MOVE\_FILTER](http
 
     **Note**  The overlying driver obtained the filter identifier from an earlier OID method request of [OID\_RECEIVE\_FILTER\_SET\_FILTER](https://msdn.microsoft.com/library/windows/hardware/ff569795) or [OID\_RECEIVE\_FILTER\_ENUM\_FILTERS](https://msdn.microsoft.com/library/windows/hardware/ff569787).
 
-     
+     
 
 -   The driver sets the **SourceQueueId** member to NDIS\_DEFAULT\_RECEIVE\_QUEUE\_ID.
 
@@ -45,9 +41,9 @@ NDIS validates the members of the [**NDIS\_RECEIVE\_FILTER\_MOVE\_FILTER\_PARAME
 
 When the PF miniport driver handles this OID set request, it must move the receive filter in an atomic operation. The driver must be able to configure the network adapter to simultaneously remove the filter from a receive queue and VPort and set it on a different receive queue and VPort.
 
- 
+ 
 
- 
+ 
 
 
 

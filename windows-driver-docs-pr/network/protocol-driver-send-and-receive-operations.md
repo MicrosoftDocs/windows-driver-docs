@@ -2,11 +2,7 @@
 title: Protocol Driver Send and Receive Operations
 description: Protocol Driver Send and Receive Operations
 ms.assetid: c621d673-167e-41e1-a121-68e0d0bc6f8a
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +24,9 @@ The following topics provide more information about protocol driver buffer manag
 
 [Receiving Data in Protocol Drivers](receiving-data-in-protocol-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

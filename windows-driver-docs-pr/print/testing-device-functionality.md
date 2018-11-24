@@ -1,17 +1,12 @@
 ---
 title: Testing Device Functionality
-author: windows-driver-content
 description: Testing Device Functionality
 ms.assetid: 51b3e55d-b071-4dbe-b687-5e3ed25aed20
 keywords:
 - testing device functionality WDK printer
 - device functionality testing WDK printer
 - functionality testing WDK printer
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +23,9 @@ You should also perform the following additional functionality tests.
 
 3.  **Job Control:** Verify that print jobs can be paused, canceled, resumed, and restarted. Also verify that multiple print jobs can be started, printed, canceled, and restarted at the same time.
 
- 
+ 
 
- 
+ 
 
 
 

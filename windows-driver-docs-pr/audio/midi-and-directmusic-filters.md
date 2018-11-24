@@ -13,11 +13,7 @@ keywords:
 - synthesizers WDK audio , filters
 - filters WDK audio , MIDI
 - filters WDK audio , DirectMusic
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -119,9 +115,9 @@ DMusUART is an example of a DMus miniport driver that exposes both MIDI and Dire
 
 Note that in Windows XP and later, the MIDI and DMus port drivers use the same internal software implementation. This means that the **CLSID\_PortMidi** and **CLSID\_PortDMus** GUIDs are equivalent when calling **PcNewPort**. Applications written for previous versions of Windows should see no change in behavior resulting from consolidation of the MIDI and DMus port drivers.
 
- 
+ 
 
- 
+ 
 
 
 

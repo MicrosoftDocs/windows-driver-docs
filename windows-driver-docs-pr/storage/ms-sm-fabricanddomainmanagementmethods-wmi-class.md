@@ -3,6 +3,7 @@ title: MS\_SM\_FabricAndDomainManagementMethods WMI Class
 description: MS\_SM\_FabricAndDomainManagementMethods WMI Class
 ms.assetid: dfd6afd3-0a0c-4620-b961-2235a91d8b17
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MS\_SM\_FabricAndDomainManagementMethods WMI Class
@@ -38,7 +39,7 @@ SM\_SendSMPPassThru
 
 The MS\_SM\_FabricAndDomainManagementMethods class is defined as follows in *Hbaapi.mof*:
 
-```
+```cpp
 class MS_SM_FabricAndDomainManagementMethods
 {
     [key]
@@ -208,9 +209,9 @@ class MS_SM_FabricAndDomainManagementMethods
 };
 ```
 
- 
+ 
 
- 
+ 
 
 
 

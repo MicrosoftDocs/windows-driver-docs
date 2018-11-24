@@ -1,17 +1,12 @@
 ---
 title: Handling an IRP that the Framework Does Not Support
-author: windows-driver-content
 description: Handling an IRP that the Framework Does Not Support
 ms.assetid: 0481f335-f63b-4f93-8eb4-523a70082302
 keywords:
 - unsupported WDM IRPs WDK KMDF
 - IRPs WDK KMDF , unsupported
 - WDM IRPs WDK KMDF , unsupported
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -48,9 +43,9 @@ When the driver receives an IRP that contains an I/O function code that the driv
 
 For an example of an [*EvtDeviceWdmIrpPreprocess*](https://msdn.microsoft.com/library/windows/hardware/ff540925) callback function that handles an IRP that the framework does not support, see the [Serial](sample-kmdf-drivers.md) sample driver.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Printing to URLs from Applications
-author: windows-driver-content
 description: Printing to URLs from Applications
 ms.assetid: bc9aedb4-1d64-4b70-b14b-1392f914a635
 keywords:
@@ -10,11 +9,7 @@ keywords:
 - printing to URLs WDK
 - print Web pages WDK , printing to URLs
 - Web pages WDK printer , printing to URLs
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -52,7 +47,7 @@ For a Windows XP print server to accept print requests containing URLs, it must 
 
 **Note**   A Windows XP Home Edition print server cannot accept requests containing URLs.
 
- 
+ 
 
 On the print server, IIS or the Peer Web Server receives the URL string. Arguments appended to the string by Inetpp.dll on the client system cause the server to call the HTTP print server, which is contained in Msw3prt.dll. The HTTP print server accepts RAW-formatted printer data and sends it to the local print spooler.
 
@@ -68,9 +63,9 @@ Print server security is provided by IIS, which executes on the print server. Se
 
 *Microsoft Windows 2000 Server Resource Kit*. Additionally, the resource kit describes specifically how system administrators can control security methods associated with printing to URLs.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -6,11 +6,7 @@ keywords:
 - context WDK Direct3D , D3dCreateSurfaceEx
 - D3dCreateSurfaceEx
 - surface handles WDK Direct3D
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +24,9 @@ It is not recommended that a surface keep a pointer to a context, because one su
 
 The concept of *lost* surfaces was introduced in the DirectDraw SDK documentation. Lost surfaces have some implications in the DirectX 7.0 DDI model. For more information, see [Losing and Restoring DirectDraw Surfaces](losing-and-restoring-directdraw-surfaces.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: NetworkDirect Disconnect Scheme
 description: This section describes the NetworkDirect disconnect scheme
 ms.assetid: A7973588-5AED-494E-92CA-D5EFB2C7950A
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -40,9 +36,9 @@ A consumer should typically call *NdDisconnect* only after it gets completions f
 
 [Network Direct Kernel Provider Interface (NDKPI)](network-direct-kernel-programming-interface--ndkpi-.md)
 
- 
+ 
 
- 
+ 
 
 
 

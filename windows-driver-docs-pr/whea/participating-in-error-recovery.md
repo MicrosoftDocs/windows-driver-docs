@@ -1,6 +1,5 @@
 ---
 title: Participating in Error Recovery
-author: windows-driver-content
 description: Participating in Error Recovery
 ms.assetid: 79f534b2-a5eb-4249-bfff-2f40c25805a6
 keywords:
@@ -11,11 +10,7 @@ keywords:
 - platform-specific hardware error driver plug-ins WDK WHEA , error recovery
 - PSHED plug-ins WDK WHEA , error recovery
 - error recovery WDK WHEA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,7 +21,7 @@ To participate in error recovery, a PSHED plug-in must implement an [*AttemptRec
 
 The following code example shows how to implement this callback function.
 
-```
+```cpp
 //
 // The PSHED plug-in&#39;s AttemptRecovery callback function
 //
@@ -71,9 +66,9 @@ NTSTATUS
 
 A PSHED plug-in that participates in error recovery must specify the **PshedFAErrorRecovery** flag when it [registers](registering-a-pshed-plug-in.md) itself with the operating system.
 
- 
+ 
 
- 
+ 
 
 
 

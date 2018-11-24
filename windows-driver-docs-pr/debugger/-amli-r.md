@@ -3,11 +3,7 @@ title: amli r
 description: The amli r extension displays information about the current context or the specified context.
 ms.assetid: 1a8977ed-a420-4f68-8580-8e7446075283
 keywords: ["amli r Windows Debugging"]
-ms.author: domars
-ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 09/17/2018
 topic_type:
 - apiref
 api_name:
@@ -24,8 +20,8 @@ The **!amli r** extension displays information about the current context or the 
 
 Syntax
 
-```
-!amli r [ContextAddress]
+```dbgcmd
+   !amli r [ContextAddress]
 ```
 
 ## <span id="ddk__amli_r_dbg"></span><span id="DDK__AMLI_R_DBG"></span>Parameters
@@ -49,7 +45,7 @@ If the AMLI Debugger prompt appears suddenly, this is a useful command to use.
 
 For example, the following command will display the current context of the interpreter:
 
-```
+```console
 AMLI(? for help)-> r
 
 Context=c18b4000*, Queue=00000000, ResList=00000000
@@ -78,9 +74,9 @@ ffffffff80e630e5 : | Store(Zero, S4BW)
 ffffffff80e630eb : }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

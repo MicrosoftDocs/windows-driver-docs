@@ -3,11 +3,7 @@ title: .process (Set Process Context)
 description: The .process command specifies which process is used for the process context.
 ms.assetid: f454faef-bc28-43f1-b511-bcee0c12fc24
 keywords: ["Set Process Context (.process) command", "addresses, Set Process Context (.process) command", "context, Set Process Context (.process) command", "Process, Set Process Context (.process) command", ".process (Set Process Context) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **.process** command specifies which process is used for the process context.
 
-```
+```dbgcmd
 .process [/i] [/p [/r]] [/P] [Process]
 ```
 
@@ -69,7 +65,7 @@ Specifies the address of the process that you want. (More precisely, this parame
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -86,7 +82,7 @@ The [**.context (Set User-Mode Address Context)**](-context--set-user-mode-addre
 
 **Note**   If you are performing live debugging, you should use the **/i** or the **/p** parameter. Without one of these parameters, you cannot correctly display user-mode or session memory.
 
- 
+ 
 
 The **/i** parameter activates the target process. When you use this option, you must execute the target once for this command to take effect. If you execute again, the process context is lost.
 
@@ -98,7 +94,7 @@ If you want to use the kernel debugger to set breakpoints in user space, use the
 
 The following example shows how to use the [**!process**](-process.md) extension to find the address of the EPROCESS block for the desired process.
 
-```
+```dbgcmd
 kd> !process 0 0
 **** NT ACTIVE PROCESS DUMP ****
 PROCESS fe5039e0  SessionId: 0  Cid: 0008    Peb: 00000000  ParentCid: 0000
@@ -114,21 +110,21 @@ PROCESS fe3c0d60  SessionId: 0  Cid: 0208    Peb: 7ffdf000  ParentCid: 00d4
 
 Now the example uses the **.process** command with this process address.
 
-```
+```dbgcmd
 kd> .process fe3c0d60
 Implicit process is now fe3c0d60
 ```
 
 Notice that this command makes the [**.context**](-context--set-user-mode-address-context-.md) command unnecessary. The user-mode address context already has the desired value.
 
-```
+```dbgcmd
 kd> .context 
 User-mode page directory base is 11f000
 ```
 
 This value enables you to examine the address space in various ways. For example, the following example shows the output of the [**!peb**](-peb.md) extension.
 
-```
+```dbgcmd
 kd> !peb
 PEB at 7FFDF000
     InheritedAddressSpace:    No
@@ -155,9 +151,9 @@ PEB at 7FFDF000
         Environment:  0x10000
 ```
 
- 
+ 
 
- 
+ 
 
 
 

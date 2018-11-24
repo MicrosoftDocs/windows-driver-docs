@@ -9,11 +9,7 @@ keywords:
 - CoNDIS TAPI WDK networking , closing operations
 - shutdown WDK networking
 - closing CoNDIS TAPI operations calls WDK CoNDIS WAN
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -49,9 +45,9 @@ Driver-initiated session termination can occur if the miniport driver is being u
 
 The CoNDIS WAN miniport driver might also initiate session termination if it underwent some dynamic reconfiguration that necessitated a complete reinitialization of all clients and drivers. For example, if an adapter's line-device modeling (for example, the number of line devices supported) was changed on the fly.
 
- 
+ 
 
- 
+ 
 
 
 

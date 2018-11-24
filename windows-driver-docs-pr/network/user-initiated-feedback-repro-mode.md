@@ -1,13 +1,8 @@
 ---
 title: User-initiated feedback - repro mode
-author: windows-driver-content
 description: This topic describes repro mode for user-initiated feedback with IHV trace logging in WDI drivers.
 ms.assetid: C9784C2D-75B1-4229-A219-748C52F430D5
-ms.author: windowsdriverdev 
 ms.date: 06/15/2018
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
 ms.localizationpriority: medium
 ---
 

@@ -1,16 +1,11 @@
 ---
 title: The Filter Driver's Control Device Object
-author: windows-driver-content
 description: The Filter Driver's Control Device Object
 ms.assetid: ac49b5d0-110d-4e47-814b-05f59791de41
 keywords:
 - control device objects WDK file system
 - CDOs WDK file system
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,13 +21,13 @@ Most file system filter drivers create and use a CDO. However, support for I/O r
 
 For example, consider a hypothetical "MyLegacyFilter" kernel-mode driver. This driver can create a CDO with the name:
 
-```
+```cpp
 \Device\MyLegacyFilter
 ```
 
 and calls [**IoCreateSymbolicLink**](https://msdn.microsoft.com/library/windows/hardware/ff549043) to link this name to an equivalent user-mode-visible name. This is done so that MyLegacyFilter's user-mode application can open a handle to the kernel-mode driver's CDO by supplying the name:
 
-```
+```cpp
 \\.\MyLegacyFilter
 ```
 
@@ -52,9 +47,9 @@ File system filter drivers are not required to support any I/O operations on the
 
 Note that, unlike all other device objects that a file system filter driver creates, the CDO is not attached to a driver stack. No device objects are attached above or below the filter driver's CDO. Thus, for any I/O request it receives, the CDO can safely assume that it is the sole intended recipient. This is not true for filter device objects or file system CDOs. Accordingly, the CDO must eventually complete every IRP it receives. For fast I/O requests, it must return **TRUE** or **FALSE**.
 
- 
+ 
 
- 
+ 
 
 
 

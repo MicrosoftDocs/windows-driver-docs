@@ -1,17 +1,12 @@
 ---
 title: Using Customized Compression
-author: windows-driver-content
 description: Using Customized Compression
 ms.assetid: 959c0015-4b31-4790-8d2b-26d6acc19ac7
 keywords:
 - raster data compression WDK Unidrv
 - compressing raster data WDK Unidrv
 - customized raster data compression WDK Unidrv
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +24,9 @@ For more information about CmdEnableOEMComp and CmdDisableCompression entries, s
 
 For more information about customized compression, see [Customized Data Stream Compression](customized-data-stream-compression.md).
 
- 
+ 
 
- 
+ 
 
 
 

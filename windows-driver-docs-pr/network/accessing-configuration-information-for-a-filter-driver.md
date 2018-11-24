@@ -5,11 +5,7 @@ ms.assetid: 7d6bd7d4-3c06-4fc3-874b-fb8369ac227e
 keywords:
 - filter drivers WDK networking , configuration information
 - NDIS filter drivers WDK , configuration information
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ If a filter driver obtained the handle in **NdisHandle** from the *NdisFilterHan
 
 After a driver is done accessing the configuration information, the driver must call the [**NdisCloseConfiguration**](https://msdn.microsoft.com/library/windows/hardware/ff561642) function to release the configuration handle and related resources.
 
- 
+ 
 
- 
+ 
 
 
 

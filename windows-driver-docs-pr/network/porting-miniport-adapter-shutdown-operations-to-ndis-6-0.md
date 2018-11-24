@@ -6,11 +6,7 @@ keywords:
 - shutdown WDK networking
 - porting miniport drivers WDK networking , shutdown operations
 - adapters WDK networking , shutdown operations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +25,9 @@ For more information about shutdown operations, see [Miniport Adapter Shutdown](
 
 [Miniport Adapter States and Operations](miniport-adapter-states-and-operations.md)
 
- 
+ 
 
- 
+ 
 
 
 

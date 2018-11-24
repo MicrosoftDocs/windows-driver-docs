@@ -1,6 +1,5 @@
 ---
 title: Access Control List
-author: windows-driver-content
 description: Access Control List
 ms.assetid: e682c2cc-ddd7-482b-b4f2-3e163d914752
 keywords:
@@ -15,11 +14,7 @@ keywords:
 - object security WDK file systems
 - access control entry WDK file systems
 - ACE WDK file systems
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -47,7 +42,7 @@ A driver constructing an ACL would follow a few key steps:
 
 The following code examples demonstrate how to construct an ACL:
 
-```
+```cpp
     dacl = ExAllocatePool(PagedPool, PAGE_SIZE);
     if (!dacl) {
         return;
@@ -63,7 +58,7 @@ The previous code fragment creates an empty ACL. The code sample allocates a sig
 
 At this point, the ACL is empty because it has no ACE entries. An empty ACL denies access to anyone trying to access the object because there are no entries that grant such access. The following code fragment adds an ACE to this ACL:
 
-```
+```cpp
     status = RtlAddAccessAllowedAce(dacl, ACL_REVISION,  FILE_ALL_ACCESS, SeExports->SeWorldSid);
     if (!NT_SUCCESS(status)) {
         ExFreePool(dacl);
@@ -75,9 +70,9 @@ This entry would now grant access to any entity that accessed the object. This i
 
 Note that when constructing ACLs, it is important to order access denied ACE entries at the beginning of the ACL, and then access allowed ACE entries at the end of the ACL. This is because when the security reference monitor does the evaluation of the ACL it will grant access if it finds an ACE granting access, before it finds the denied ACEs. This behavior is well documented in the Microsoft Windows SDK, but it relates to the specific mechanism the security reference monitor uses to determine whether access should be granted or denied.
 
- 
+ 
 
- 
+ 
 
 
 

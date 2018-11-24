@@ -5,11 +5,7 @@ ms.assetid: 9f20c6fa-c515-43b8-a947-f6290d15bd35
 keywords:
 - macroblocks WDK DirectX VA , deblocking filter commands
 - deblocking filter commands WDK DirectX VA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -39,11 +35,11 @@ The deblocking filter operations can be performed in the accelerator in one of t
 
 **Note**   The destination picture surface for the deblocked picture could differ from that of the picture reconstructed prior to deblocking. This would then support "outside the loop" deblocking as a postdecoding process that did not affect the sample values used for prediction of the next picture.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

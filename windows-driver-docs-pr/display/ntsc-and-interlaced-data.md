@@ -13,11 +13,7 @@ keywords:
 - scan lines WDK video port extensions
 - frames WDK video port extensions
 - National Television Systems Committee WDK VPEs
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,9 +31,9 @@ If the video contains high-motion content, the data in the odd field could be di
 
 The process of putting video onto a digital video disc (DVD) and then replaying it is complex. Typically, the source material being put on the disk was created for television, so each frame has two fields that are interlaced. Film shot at 24 frames per second (fps), however, must be converted to 59.94 fields per second to be compatible with a television display.
 
- 
+ 
 
- 
+ 
 
 
 

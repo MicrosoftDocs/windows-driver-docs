@@ -1,14 +1,9 @@
 ---
 title: Synchronizing IRP Cancellation
-author: windows-driver-content
 description: Synchronizing IRP Cancellation
 ms.assetid: a110c6ad-794d-4b8a-a89d-bceb08ea82b8
 keywords: ["canceling IRPs, synchronization", "Cancel routines, synchronization", "synchronization WDK IRPs", "cancelable IRPs WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -48,9 +43,9 @@ This section includes the following topics on synchronizing IRP cancellation.
 
 [Using a Driver-Supplied Spin Lock](using-a-driver-supplied-spin-lock.md)
 
- 
+ 
 
- 
+ 
 
 
 

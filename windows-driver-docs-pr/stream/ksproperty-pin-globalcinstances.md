@@ -11,11 +11,7 @@ api_location:
 - ks.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +23,7 @@ The client uses the KSPROPERTY\_PIN\_GLOBALCINSTANCES to determine the current n
 ## <span id="ddk_ksproperty_pin_globalcinstances_ks"></span><span id="DDK_KSPROPERTY_PIN_GLOBALCINSTANCES_KS"></span>
 
 
-### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
+### Usage Summary Table
 
 <table>
 <colgroup>
@@ -51,13 +47,13 @@ The client uses the KSPROPERTY\_PIN\_GLOBALCINSTANCES to determine the current n
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p>[<strong>KSP_PIN</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566722)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566722" data-raw-source="[&lt;strong&gt;KSP_PIN&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566722)"><strong>KSP_PIN</strong></a></p></td>
 <td><p>KSPIN_CINSTANCES</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -66,7 +62,7 @@ Specify this property using KSP\_PIN, where the **PinId** member specifies the p
 
 KSPIN\_CINSTANCES is a data structure of the form:
 
-```
+```cpp
 typedef struct {
     ULONG PossibleCount;
     ULONG CurrentCount;
@@ -101,16 +97,16 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**KSP\_PIN**](https://msdn.microsoft.com/library/windows/hardware/ff566722)
 
 [**KSPROPERTY\_PIN\_CINSTANCES**](ksproperty-pin-cinstances.md)
 
- 
+ 
 
- 
+ 
 
 
 

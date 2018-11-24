@@ -1,6 +1,5 @@
 ---
 title: HP-GL/2 Monochrome (PCL-5e) Vector Graphics Support
-author: windows-driver-content
 description: HP-GL/2 Monochrome (PCL-5e) Vector Graphics Support
 ms.assetid: 00a8704c-c7aa-4ecd-9c99-03ef6c75574d
 keywords:
@@ -10,11 +9,7 @@ keywords:
 - HP-GL/2 monochrome WDK Unidrv , about HP-GL/2 monochrome
 - monochrome vector graphics WDK Unidrv
 - PCL-5e WDK Unidrv , about PCL-5e
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,9 +33,9 @@ The following topics are covered:
 
 [HP-GL/2 Caveats](hp-gl-2-caveats.md)
 
- 
+ 
 
- 
+ 
 
 
 

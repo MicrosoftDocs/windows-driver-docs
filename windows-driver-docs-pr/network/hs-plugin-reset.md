@@ -1,15 +1,10 @@
 ---
 title: HS_PLUGIN_RESET function
-author: windows-driver-content
 description: The HS_PLUGIN_RESET function is called by the host to notify the plugin that it must reset its state.
 ms.assetid: 9f5683c9-b426-4802-85bd-c1ce770b9e46
 keywords: 
 - typedef DWORD (WINAPI HS_PLUGIN_RESET) function Network Drivers Starting with Windows Vista
-ms.author: windowsdriverdev
-ms.date: 07/31/2017 
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 07/31/2017
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +20,7 @@ Syntax
 
 ```ManagedCPlusPlus
  typedef DWORD (WINAPI *HS_PLUGIN_RESET)(
-    
+    
 );
 ```
 
@@ -68,9 +63,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

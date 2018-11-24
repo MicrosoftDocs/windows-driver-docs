@@ -5,11 +5,7 @@ ms.assetid: 19eb2328-0ffa-4c40-bfab-6a5a3a3b4b7b
 keywords:
 - 802.1Q and 802.1p information WDK TCP chimney offload , failing requests
 - failing requests for 802.1Q information WDK TCP chimney offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,9 +28,9 @@ When processing an initiate offload request in its [*MiniportInitiateOffload*](h
     -   If the neighbor **VlanId** is nonzero and matches one of the interface VLAN identifiers, the offload target must not fail the initiate offload request because of the neighbor **VlanId** unless it has run out of VLAN identifiers resources.
     -   If the neighbor **VlanId** is nonzero and does not match one of the interface VLAN identifiers, the offload target must fail the initiate offload request with the **Status** member set to NDIS\_STATUS\_VLAN\_MISMATCH.
 
- 
+ 
 
- 
+ 
 
 
 

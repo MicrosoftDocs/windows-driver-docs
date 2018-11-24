@@ -12,11 +12,7 @@ keywords:
 - monochromatic lighting WDK Direct3D
 - color fog calculations WDK Direct3D
 - blending fog factor WDK Direct3D
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,9 +38,9 @@ As the following figure shows, linear fog density increases in a linear fashion 
 
 This linear increase differs from exponential fog where the fog density increases exponentially. A linear fog profile might be set up as follows: the D3DRENDERSTATE\_FOGSTART render state is set to ZFront and *f* = 1.0; the D3DRENDERSTATE\_FOGEND render state is set to ZBack and *f* = 0.0. The D3DRENDERSTATE\_FOGDENSITY render state is ignored.
 
- 
+ 
 
- 
+ 
 
 
 

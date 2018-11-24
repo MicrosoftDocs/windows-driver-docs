@@ -1,6 +1,5 @@
 ---
 title: Video Capture Devices with Radio Tuners
-author: windows-driver-content
 description: Video Capture Devices with Radio Tuners
 ms.assetid: 36e3ca98-cb1b-46cc-809a-8c9ad08a53c8
 keywords:
@@ -9,11 +8,7 @@ keywords:
 - signal strength WDK video capture
 - manual radio tuning WDK video capture
 - FM tuners WDK video capture
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -56,9 +51,9 @@ A **PLLOffset** member value of -1 or 1 on the first tuning request causes *KsTv
 
 However, if **PLLOffset** is greater than 1 or less than -1, fine-tuning either does not start, or is abandoned. Fine-tuning mode is independent of the search through the 200 kHz band around the center frequency, although both use the step size specified in **TuningGranularity** (thus the caution against always returning a **PLLOffset** of -1..1).
 
- 
+ 
 
- 
+ 
 
 
 

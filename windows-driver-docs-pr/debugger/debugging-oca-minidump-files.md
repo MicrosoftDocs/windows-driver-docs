@@ -2,18 +2,14 @@
 title: Debugging OCA minidump files
 description: Online Crash Analysis (OCA) is the reporting facility for Windows Error Reporting (WER) information. Your company can use OCA crash dumps to analyze customer problems.
 ms.assetid: 56F4202D-6A5F-4177-BBFD-70DA717FF24A
-ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # Debugging OCA minidump files
 
 
-Online Crash Analysis (OCA) is the reporting facility for [Windows Error Reporting (WER)](http://msdn.microsoft.com/en-US/library/windows/hardware/gg487440) information. Your company can use OCA crash dumps to analyze customer problems.
+Online Crash Analysis (OCA) is the reporting facility for [Windows Error Reporting (WER)](https://msdn.microsoft.com/library/windows/hardware/gg487440) information. Your company can use OCA crash dumps to analyze customer problems.
 
 ## <span id="Analyze_dump_files"></span><span id="analyze_dump_files"></span><span id="ANALYZE_DUMP_FILES"></span>Analyze dump files
 
@@ -41,7 +37,7 @@ Symbol files can include any or all of the following:
 -   The names, data types, addresses, and scopes of local variables.
 -   The line number in the source code that corresponds to each binary instruction.
 
-The [Windows Driver Kit (WDK)](http://msdn.microsoft.com/en-US/library/windows/hardware/gg487463) includes tools that can be used to reduce the number of symbols in a symbol file. The symbol files that contain all of the source-level information are called full symbol files. The symbol files with reduced information are called stripped symbol files.
+The [Windows Driver Kit (WDK)](https://msdn.microsoft.com/library/windows/hardware/gg487463) includes tools that can be used to reduce the number of symbols in a symbol file. The symbol files that contain all of the source-level information are called full symbol files. The symbol files with reduced information are called stripped symbol files.
 
 Because symbol data is crucial for getting meaningful crash information from Windows Error Report (WER) data, we encourage you to submit your symbols when you submit drivers to be signed. When symbols are submitted, they are stored on a server that synchronizes symbol data with the associated WER processes. With this storage process, you can easily categorize the crashes reported in the minidump files and ultimately receive better data back from Microsoft.
 
@@ -50,30 +46,28 @@ Microsoft provides a symbol server on the Internet that you can use to analyze t
 ## <span id="Integrate_WER_into_applications"></span><span id="integrate_wer_into_applications"></span><span id="INTEGRATE_WER_INTO_APPLICATIONS"></span>Integrate WER into applications
 
 
-For more information on integrating WER into applications, see [Using WER](http://msdn.microsoft.com/library/bb513616.aspx).
+For more information on integrating WER into applications, see [Using WER](https://msdn.microsoft.com/library/bb513616.aspx).
 
 ## <span id="related_topics"></span>Related topics
 
 
-[Advanced Driver Debugging \[336 KB\] \[PPT\]](http://download.microsoft.com/download/f/0/5/f05a42ce-575b-4c60-82d6-208d3754b2d6/adv-drv_debug.ppt)
+[Advanced Driver Debugging \[336 KB\] \[PPT\]](https://download.microsoft.com/download/f/0/5/f05a42ce-575b-4c60-82d6-208d3754b2d6/adv-drv_debug.ppt)
 
 [WDK and WinDbg downloads](https://go.microsoft.com/fwlink/p/?LinkId=733614)
 
-[Driver Debugging Basics \[WinHEC 2007; 633 KB\] \[PPT\]](http://download.microsoft.com/download/a/f/d/afdfd50d-6eb9-425e-84e1-b4085a80e34e/dvr-t410_wh07.pptx)
+[Driver Debugging Basics \[WinHEC 2007; 633 KB\] \[PPT\]](https://download.microsoft.com/download/a/f/d/afdfd50d-6eb9-425e-84e1-b4085a80e34e/dvr-t410_wh07.pptx)
 
-[How to read the small memory dump file that is created by Windows if a crash occurs](http://support.microsoft.com/kb/315263)
+[How to read the small memory dump file that is created by Windows if a crash occurs](https://support.microsoft.com/kb/315263)
 
-[Resource-Definition Statements](http://msdn.microsoft.com/library/aa381043.aspx)
+[Resource-Definition Statements](https://msdn.microsoft.com/library/aa381043.aspx)
 
-[Windows Error Reporting](http://msdn.microsoft.com/library/bb513641(vs.85).aspx)
+[Windows Error Reporting](https://msdn.microsoft.com/library/bb513641(vs.85).aspx)
 
-[Webcast: Windows Error Reporting (Level 200)](https://msevents.microsoft.com/CUI/EventDetail.aspx?EventId=1032314332)
+[VERSIONINFO resource](https://msdn.microsoft.com/library/aa381058.aspx)
 
-[VERSIONINFO resource](http://msdn.microsoft.com/library/aa381058.aspx)
+ 
 
- 
-
- 
+ 
 
 
 

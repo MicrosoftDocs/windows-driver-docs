@@ -1,6 +1,5 @@
 ---
 title: Supporting Autoupdate Events with Extension Units
-author: windows-driver-content
 description: Supporting Autoupdate Events with Extension Units
 ms.assetid: 3dc75f48-adc7-4443-8090-2e61b3306798
 keywords:
@@ -10,11 +9,7 @@ keywords:
 - events WDK USB Video Class , autoupdate with extension units
 - extension units WDK USB Video Class , samples
 - sample code WDK USB Video Class , autoupdate events
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +20,7 @@ This topic contains sample code that demonstrates how to support autoupdate even
 
 Include the following code in the application source, arbitrarily named TestApp.cpp:
 
-```
+```cpp
 hEvent = CreateEvent(NULL, FALSE, FALSE, NULL);
 if (!hEvent)
 {
@@ -78,9 +73,9 @@ printf("Wait returned : %d\n", dwError);
 // handle the autoupdate event..
 ```
 
- 
+ 
 
- 
+ 
 
 
 

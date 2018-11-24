@@ -1,9 +1,7 @@
 ---
 title: Serial Controller Driver Design Guide
-author: windows-driver-content
 description: You can design a driver or application that uses the serial I/O request interface to communicate with a peripheral device connected to a serial port.
 ms.assetid: 66120e14-20dc-4220-b340-c05cbc59dac8
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -25,9 +23,9 @@ You can design a driver or application that uses the [serial I/O request interfa
 -   [Using Version 2 of the Serial Framework Extension (SerCx2)](using-version-2-of-the-serial-framework-extension.md)
 -   [Using Serial.sys and Serenum.sys](using-serial-sys-and-serenum-sys.md)
 
- 
+ 
 
- 
+ 
 
 
 

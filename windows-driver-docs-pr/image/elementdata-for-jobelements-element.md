@@ -9,11 +9,7 @@ api_name:
 - wscn ElementData Name "" Valid ""
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **ElementData** element contains the data that is returned for a jo
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ElementData Name="" Valid=""
   Name = "xs:string"
   Valid = "xs:string">
@@ -86,13 +82,13 @@ Attributes
 <td><p>Any vendor-defined elements</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>Documents</strong>](documents.md)</p></td>
+<td><p><a href="documents.md" data-raw-source="[&lt;strong&gt;Documents&lt;/strong&gt;](documents.md)"><strong>Documents</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>JobStatus</strong>](jobstatus.md)</p></td>
+<td><p><a href="jobstatus.md" data-raw-source="[&lt;strong&gt;JobStatus&lt;/strong&gt;](jobstatus.md)"><strong>JobStatus</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>ScanTicket</strong>](scanticket.md)</p></td>
+<td><p><a href="scanticket.md" data-raw-source="[&lt;strong&gt;ScanTicket&lt;/strong&gt;](scanticket.md)"><strong>ScanTicket</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -111,7 +107,7 @@ Attributes
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>JobElements</strong>](jobelements.md)</p></td>
+<td><p><a href="jobelements.md" data-raw-source="[&lt;strong&gt;JobElements&lt;/strong&gt;](jobelements.md)"><strong>JobElements</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -121,7 +117,7 @@ Remarks
 
 The WSD Scan Service returns the **ElementData** element in a [**GetJobElementsResponse**](getjobelementsresponse.md) operation element.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**Documents**](documents.md)
@@ -134,9 +130,9 @@ The WSD Scan Service returns the **ElementData** element in a [**GetJobElementsR
 
 [**ScanTicket**](scanticket.md)
 
- 
+ 
 
- 
+ 
 
 
 

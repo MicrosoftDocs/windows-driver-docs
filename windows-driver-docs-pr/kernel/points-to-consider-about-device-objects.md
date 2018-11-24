@@ -1,14 +1,9 @@
 ---
 title: Points to Consider About Device Objects
-author: windows-driver-content
 description: Points to Consider About Device Objects
 ms.assetid: 4c54340b-3b4c-4c67-b28d-fac769e4feb7
 keywords: ["device objects WDK kernel , design considerations"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +29,9 @@ Keep the following points in mind when designing a kernel-mode driver:
 
 For more information about the device objects a specific driver must create, see the device-type-specific documentation in the Windows Driver Kit (WDK).
 
- 
+ 
 
- 
+ 
 
 
 

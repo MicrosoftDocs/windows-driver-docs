@@ -2,11 +2,7 @@
 title: Debugging Support for Software Tracing
 description: Debugging Support for Software Tracing
 ms.assetid: cfa272ba-e117-4ba1-9e3a-5d380ac299c0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,9 +19,9 @@ This section includes the following topics:
 
 [How do I enable debugging without starting an ETW trace session?](how-do-i-enable-debugging-without-starting-an-etw-trace-session-.md)
 
- 
+ 
 
- 
+ 
 
 
 

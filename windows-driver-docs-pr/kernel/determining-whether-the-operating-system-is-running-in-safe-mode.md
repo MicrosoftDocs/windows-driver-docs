@@ -1,14 +1,9 @@
 ---
 title: Determining Whether the Operating System Is Running in Safe Mode
-author: windows-driver-content
 description: Determining Whether the Operating System Is Running in Safe Mode
 ms.assetid: 5724a731-81a2-4c4e-a9e2-146859977e44
 keywords: ["Safe Mode WDK kernel", "operating system Safe Mode WDK kernel", "InitSafeBootMode", "preventing Safe Mode WDK kernel", "checking Safe Mode", "verifying Safe Mode", "startup Safe Mode WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -52,21 +47,21 @@ The following table lists the modes for values of the **InitSafeBootMode** varia
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  \* The value 3 applies to Windows domain controllers only.
 
- 
+ 
 
 To use the **InitSafeBootMode** variable, you must declare it in your driver, as the following code example shows.
 
-```
+```cpp
 extern PULONG InitSafeBootMode;
 ```
 
 After you declare **InitSafeBootMode**, you can use the following code example to determine whether the operating system is running in Safe Mode.
 
-```
+```cpp
 if (*InitSafeBootMode > 0) {
     // The operating system is in Safe Mode.
     // Take appropriate action.
@@ -82,7 +77,7 @@ To prevent a driver from operating in Safe Mode, use the technique in the follow
 
     **Note**   You must never return failure from the **DriverEntry** routine.
 
-     
+     
 
 -   **Filter drivers**
 
@@ -94,9 +89,9 @@ To prevent a driver from operating in Safe Mode, use the technique in the follow
 
     For drivers other than function or filter drivers, check the value of **InitSafeBootMode** in the driver's **DriverEntry** routine. If the operating system is in Safe Mode, return a failure status.
 
- 
+ 
 
- 
+ 
 
 
 

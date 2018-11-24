@@ -1,11 +1,7 @@
 ---
 Description: Object Enumeration
 title: Object Enumeration
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,7 +19,7 @@ When a Windows-based application invokes**IPortableDeviceContent::EnumObject** o
 | **IEnumPortableDeviceObjectIDs::Next**    | **OnFindNext**                          |
 | **IEnumPortableDeviceObjectIDs::Release** | **OnEndFind**                           |
 
- 
+ 
 
 The **WpdObjectEnumerator** command handlers are invoked by the **WpdObjectEnumerator::DispatchWpdMessage** method. The following excerpt from the sample driver contains the code for **WpdObjectEnumerator::DispatchWpdMessage.**
 
@@ -74,9 +70,9 @@ HRESULT WpdObjectEnumerator::DispatchWpdMessage(const PROPERTYKEY&     Command,
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

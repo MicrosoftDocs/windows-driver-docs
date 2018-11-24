@@ -3,11 +3,7 @@ title: rpcexts.getthreadinfo
 description: The rpcexts.getthreadinfo extension searches the system's RPC state information for thread information.
 ms.assetid: 904605e7-c53b-4e29-874f-7a055fc7a02b
 keywords: ["rpcexts.getthreadinfo Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!rpcexts.getthreadinfo** extension searches the system's RPC state information for thread information.
 
-```
+```dbgcmd
 !rpcexts.getthreadinfo ProcessID [ThreadID] 
 !rpcexts.getthreadinfo -? 
 ```
@@ -58,7 +54,7 @@ Displays some brief Help text for this extension in the Command Prompt window.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -71,7 +67,7 @@ This extension can only be used with CDB or with user-mode WinDbg.
 
 Here is an example:
 
-```
+```dbgcmd
 0:002> !rpcexts.getthreadinfo 26c
 Searching for thread info ...
 ## PID  CELL ID   ST TID      LASTTIME
@@ -82,9 +78,9 @@ Searching for thread info ...
 
 For a similar example using the DbgRpc tool, see [Get RPC Thread Information](get-rpc-thread-information.md).
 
- 
+ 
 
- 
+ 
 
 
 

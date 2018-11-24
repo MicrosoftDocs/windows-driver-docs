@@ -6,11 +6,7 @@ keywords:
 - audio miniport drivers WDK , MIDI
 - miniport drivers WDK audio , MIDI
 - MIDI miniport drivers WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -64,9 +60,9 @@ The MIDI port driver handles all timing issues in both directions and relies on 
 
 PortCls contains built-in MIDI miniport drivers for MIDI devices that have FM synth and UART functions. For more information, see [**PcNewMiniport**](https://msdn.microsoft.com/library/windows/hardware/ff537714).
 
- 
+ 
 
- 
+ 
 
 
 

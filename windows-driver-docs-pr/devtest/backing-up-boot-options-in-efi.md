@@ -10,11 +10,7 @@ keywords:
 - saving boot options
 - boot options WDK , backing up
 - Nvrboot tool
-ms.author: windowsdriverdev
 ms.date: 07/02/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,7 +29,7 @@ This section includes:
 - [Identifying Backup Files for Existing Boot Entries](identifying-backup-files-for-existing-boot-entries.md)
 - [Identifying Backup Files for Deleted Boot Entries](identifying-backup-files-for-deleted-boot-entries.md)
 - [Recognizing Unusable Boot Entry Backup Files](recognizing-unusable-boot-entry-backup-files.md)
- 
+ 
 
 
 

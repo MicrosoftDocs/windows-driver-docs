@@ -12,6 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # DEVPROPKEY structure
@@ -37,7 +38,7 @@ A DEVPROPGUID-typed value that specifies a property category.
 
 The DEVPROPGUID data type is defined as:
 
-```
+```cpp
 typedef GUID  DEVPROPGUID, *PDEVPROPGUID;
 ```
 
@@ -46,7 +47,7 @@ A DEVPROPID-typed value that uniquely identifies the property within the propert
 
 The DEVPROPID data type is defined as:
 
-```
+```cpp
 typedef ULONG DEVPROPID, *PDEVPROPID;
 ```
 
@@ -80,9 +81,9 @@ Requirements
 
 [**DEFINE\_DEVPROPKEY**](https://msdn.microsoft.com/library/windows/hardware/ff541072)
 
- 
+ 
 
- 
+ 
 
 
 

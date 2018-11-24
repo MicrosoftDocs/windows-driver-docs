@@ -12,6 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # SM\_SendRPL function
@@ -24,15 +25,15 @@ Syntax
 
 ```ManagedCPlusPlus
 void SM_SendRPL(
-   [in, HBAType("HBA_WWN")] uint8              PortWWN[8],
-   [in, HBAType("HBA_WWN")] uint8              AgentWWN[8],
-   [in] uint32                                 AgentDomain,
-   [in] uint32                                 PortIndex,
-   [in] uint32                                 InRespBufferMaxSize,
-   [out, HBA_STATUS_QUALIFIERS] HBA_STATUS     HBAStatus,
-   [out] uint32                                TotalRespBufferSize,
-   [out] uint32                                OutRespBufferSize,
-   [out, WmiSizeIs("OutRespBufferSize")] uint8 RespBuffer[]
+   [in, HBAType("HBA_WWN")] uint8              PortWWN[8],
+   [in, HBAType("HBA_WWN")] uint8              AgentWWN[8],
+   [in] uint32                                 AgentDomain,
+   [in] uint32                                 PortIndex,
+   [in] uint32                                 InRespBufferMaxSize,
+   [out, HBA_STATUS_QUALIFIERS] HBA_STATUS     HBAStatus,
+   [out] uint32                                TotalRespBufferSize,
+   [out] uint32                                OutRespBufferSize,
+   [out, WmiSizeIs("OutRespBufferSize")] uint8 RespBuffer[]
 );
 ```
 
@@ -105,9 +106,9 @@ Requirements
 
 [**SM\_SendRPL\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff566315)
 
- 
+ 
 
- 
+ 
 
 
 

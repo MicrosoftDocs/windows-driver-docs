@@ -3,11 +3,7 @@ title: amli ln
 description: The amli ln extension displays the specified method or the method containing a given address.
 ms.assetid: f763f185-cce2-4bfb-948d-243acfb53aaa
 keywords: ["amli ln Windows Debugging"]
-ms.author: domars
-ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 09/17/2018
 topic_type:
 - apiref
 api_name:
@@ -24,8 +20,8 @@ The **!amli ln** extension displays the specified method or the method containin
 
 Syntax
 
-```
-!amli ln [ MethodName | CodeAddress ]
+```dbgcmd
+    !amli ln [ MethodName | CodeAddress ]
 ```
 
 ## <span id="ddk__amli_ln_dbg"></span><span id="DDK__AMLI_LN_DBG"></span>Parameters
@@ -52,16 +48,16 @@ If neither *MethodName* nor *CodeAddress* is specified, the method associated wi
 
 The following command shows the method being currently run:
 
-```
+```console
 kd> !amli ln
 c29accf5: \_WAK
 ```
 
 The method \_WAK is shown, with address 0xC29ACCF5.
 
- 
+ 
 
- 
+ 
 
 
 

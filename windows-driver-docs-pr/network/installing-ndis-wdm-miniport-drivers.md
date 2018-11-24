@@ -6,11 +6,7 @@ keywords:
 - NDIS-WDM miniport driver WDK networking , installing
 - lower edge of NDIS miniport drivers WDK networking , driver installations
 - WDM lower edge WDK networking , driver installations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +22,9 @@ When you implement the installation mechanism for an NDIS-WDM miniport driver, y
 
 -   Include Plug and Play (PnP) identifiers (ID) of devices as is typically done for any **Net** class of network component; however, make these IDs specific to the bus type to which the devices are attached.
 
- 
+ 
 
- 
+ 
 
 
 

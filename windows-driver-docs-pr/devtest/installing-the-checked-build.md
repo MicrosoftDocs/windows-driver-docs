@@ -2,11 +2,7 @@
 title: Installing the Checked Build of Windows
 description: Installing the Checked Build of Windows
 ms.assetid: 88bbd0a2-2b72-4000-87ba-cbdafeb4c609
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,9 +20,9 @@ This section includes:
 
 [Installing Just the Checked Operating System and HAL (For Windows XP and Windows Server 2003)](installing-just-the-checked-operating-system-and-hal--for-windows-xp-a.md)
 
- 
+ 
 
- 
+ 
 
 
 

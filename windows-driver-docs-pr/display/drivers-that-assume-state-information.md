@@ -9,11 +9,7 @@ keywords:
 - blitting WDK DirectDraw , state information
 - blt WDK DirectDraw , state information
 - states WDK DirectDraw
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +27,9 @@ If this forces DirectDraw to wait while operations are being done so it can rest
 
 Care must be taken in these cases to minimize the changes being made to the display state. Moving the origin in this scenario also wastes room on the stack that could otherwise be used for passing parameters.
 
- 
+ 
 
- 
+ 
 
 
 

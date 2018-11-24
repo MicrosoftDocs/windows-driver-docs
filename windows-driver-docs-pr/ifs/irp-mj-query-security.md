@@ -1,5 +1,5 @@
 ---
-title: IRP\_MJ\_QUERY\_SECURITY
+title: IRP_MJ_QUERY_SECURITY
 description: IRP\_MJ\_QUERY\_SECURITY
 ms.assetid: f0f73bfe-c016-49e2-b725-380f46a9b9d6
 keywords: ["IRP_MJ_QUERY_SECURITY Installable File System Drivers"]
@@ -9,11 +9,7 @@ api_name:
 - IRP_MJ_QUERY_SECURITY
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -96,7 +92,7 @@ A pointer to the [**SECURITY\_INFORMATION**](security-information.md) structure 
 </tbody>
 </table>
 
- 
+ 
 
 ## See also
 
@@ -117,9 +113,9 @@ A pointer to the [**SECURITY\_INFORMATION**](security-information.md) structure 
 
 [**SECURITY\_INFORMATION**](security-information.md)
 
- 
+ 
 
- 
+ 
 
 
 

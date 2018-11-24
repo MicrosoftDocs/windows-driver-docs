@@ -3,11 +3,7 @@ title: .srcpath, .lsrcpath (Set Source Path)
 description: The .srcpath and .lsrcpath commands set or display the source file search path.
 ms.assetid: 416c062f-cbf9-4134-aa2c-306147a466b5
 keywords: [".srcpath, .lsrcpath (Set Source Path) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **.srcpath** and **.lsrcpath** commands set or display the source file search path.
 
-```
+```dbgcmd
 .srcpath[+] [Directory [; ...]] 
 .lsrcpath[+] [Directory [; ...]] 
 ```
@@ -61,7 +57,7 @@ The **.srcpath** command is available on all debuggers. The **.lsrcpath** comman
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -74,9 +70,9 @@ If you include `srv*` in your source path, the debugger uses [SrcSrv](srcsrv.md)
 
 When this command is issued from a debugging client, **.srcpath** sets the source path on the debugging server, while **.lsrcpath** sets the source path on the local machine.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -6,11 +6,7 @@ keywords:
 - Windows software trace preprocessor WDK , macros
 - WPP software tracing WDK , macros
 - macros WDK WPP
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -50,9 +46,9 @@ To add the default form of WPP software tracing to a [trace provider](trace-prov
 
 -   [**DoTraceMessage**](https://msdn.microsoft.com/library/windows/hardware/ff544918) macro calls to log trace messages.
 
- 
+ 
 
- 
+ 
 
 
 

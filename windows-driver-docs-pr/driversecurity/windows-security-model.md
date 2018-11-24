@@ -2,11 +2,7 @@
 title: Windows security model for driver developers
 description: The Windows security model is based primarily on per-object rights, with a small number of system-wide privileges.
 ms.assetid: 3A7ECA7C-1FE6-4ADB-97A9-A61C6FCE9F04
-ms.author: windowsdriverdev
 ms.date: 02/01/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -118,7 +114,7 @@ Example 1 shows how the system compares an ACL to the access token for a caller�
 | Deny       | Legal      | Append, write, delete |
 | Allow      | Everyone   | Read                  |
 
- 
+ 
 
 This ACL has four ACEs, which apply specifically to the Accounting, Sales, Legal, and Everyone groups.
 
@@ -157,9 +153,9 @@ A privilege is the right for a user to perform a system-related operation on the
 
 Privileges are different from access rights because they apply to system-related tasks and resources rather than objects, and because they are assigned to a user or group by a system administrator, rather than by the operating system.
 
-The access token for each process contains a list of the privileges granted to the process. Privileges must be specifically enabled before use. For more information on privilges, see [Privileges](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/privileges) in the kernel driver documentation.
+The access token for each process contains a list of the privileges granted to the process. Privileges must be specifically enabled before use. For more information on privilges, see [Privileges](https://docs.microsoft.com/windows-hardware/drivers/kernel/privileges) in the kernel driver documentation.
 
- 
+ 
 
 ## <span id="Creating-A-File"></span><span id="CREATING-A-FILE"></span><span id="creating-a-file"></span>Windows security model scenario: Creating a file
 
@@ -195,14 +191,14 @@ If the handle is duplicated, rights can be removed from the copy, but not added 
 
 When the I/O Manager creates an object, it converts generic Win32 access modes to object-specific rights. For example, the following rights apply to files and directories:
 
-| Win32 access mode | Object-specific rights                |
-|-------------------|---------------------------------------|
-| GENERIC\_READ     | ReadData | ReadAttributes | ReadEA    |
-| GENERIC\_WRITE    | WriteData | WriteAttributes | WriteEA |
-| GENERIC\_EXECUTE  | ReadAttributes | Execute/Traverse     |
-| GENERIC\_ALL      | All                                   |
 
- 
+| Win32 access mode | Object-specific rights |
+|-------------------|------------------------|
+|   GENERIC\_READ   |        ReadData        |
+|  GENERIC\_WRITE   |       WriteData        |
+| GENERIC\_EXECUTE  |     ReadAttributes     |
+|   GENERIC\_ALL    |          All           |
+ 
 To create a file, a process must have traversal rights to the parent directories in the target path. For example, to create \\Device\\CDROM0\\Directory\\File.txt, a process must have the right to traverse \\Device, \\Device\\CDROM0, and \\Device\\CDROM0\\Directory. The I/O Manager checks only the traversal rights for these directories.
 
 The I/O Manager checks traversal rights when it parses the file name. If the file name is a symbolic link, the I/O Manager resolves it to a full path and then checks traversal rights, starting from the root. For example, assume the symbolic link \\DosDevices\\D maps to the Windows NT device name \\Device\\CDROM0. The process must have traversal rights to the \\Device directory.
@@ -215,7 +211,7 @@ The operating system kernel treats every driver, in effect, as a file system wit
 
 With WDM drivers, the I/O Manager does not perform security checks against the namespace, unless the Device Object has been created specifying FILE_DEVICE_SECURE_OPEN.  When FILE_DEVICE_SECURE_OPEN is not set, the driver is responsible for ensuring the security of its namespace. For more information, see [Controlling Device Namespace Access](https://docs.microsoft.com/windows-hardware/drivers/kernel/controlling-device-namespace-access) and [Securing Device Objects](https://docs.microsoft.com/windows-hardware/drivers/kernel/securing-device-objects).
 
-For WDF drivers, the FILE_DEVICE_SECURE_OPEN flag is always set, so that there will be a check of the device's security descriptor before allowing an application to access any names within the device's namespace. For more information, see [Controlling Device Access in KMDF Drivers](https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/controlling-device-access-in-kmdf-drivers).
+For WDF drivers, the FILE_DEVICE_SECURE_OPEN flag is always set, so that there will be a check of the device's security descriptor before allowing an application to access any names within the device's namespace. For more information, see [Controlling Device Access in KMDF Drivers](https://docs.microsoft.com/windows-hardware/drivers/wdf/controlling-device-access-in-kmdf-drivers).
 
 
 
@@ -256,7 +252,7 @@ All inputs coming into the driver from user mode is untrusted and should be vali
 
 ### See Also
 
-[Securing Device Objects](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/securing-device-objects)
+[Securing Device Objects](https://docs.microsoft.com/windows-hardware/drivers/kernel/securing-device-objects)
 
 [Driver security checklist](driver-security-checklist.md)
 

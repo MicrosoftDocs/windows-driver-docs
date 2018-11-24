@@ -7,11 +7,7 @@ keywords:
 - TCP/IP offload service porting WDK networking , about porting task offload services
 - offload service porting WDK networking , about porting task offload services
 - porting task of
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,9 +33,9 @@ This section includes:
 
 [Summary of Task Offload Support in NDIS 6.0 Filter Drivers](summary-of-task-offload-support-in-ndis-6-0-filter-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

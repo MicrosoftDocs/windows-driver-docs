@@ -1,13 +1,8 @@
 ---
 title: Using the IStiUSD Escape Method
-author: windows-driver-content
 description: Using the IStiUSD Escape Method
 ms.assetid: f9b1ede6-8311-4cc9-8bf7-20018cb35a3d
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -49,9 +44,9 @@ The code samples in the following sections illustrate the use of pass-though fun
 
 [ESC\_TWAIN\_CAPABILITY Escape Code](esc-twain-capability-escape-code.md)
 
- 
+ 
 
- 
+ 
 
 
 

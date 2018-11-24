@@ -1,6 +1,5 @@
 ---
 title: AV/C Overview
-author: windows-driver-content
 description: AV/C Overview
 ms.assetid: ff9e6dfc-7ab4-4b56-8b47-d3ea46b579e0
 keywords:
@@ -9,11 +8,7 @@ keywords:
 - peer Avc.sys mode WDK AV/C
 - virtual Avc.sys mode WDK AV/C
 - Avc.sys function driver WDK , about Avc.sys function driver
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -47,9 +42,9 @@ Typically, vendors write an AV/C subunit driver to provide support to:
 
 -   Manage plug connections to stream data based on IEC-61883 standards across the IEEE 1394 bus. For more information about the 61883 standards, see the [IEC](http://go.microsoft.com/fwlink/p/?linkid=8732) website.
 
- 
+ 
 
- 
+ 
 
 
 

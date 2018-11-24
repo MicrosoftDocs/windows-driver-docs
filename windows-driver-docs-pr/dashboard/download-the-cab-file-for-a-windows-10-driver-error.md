@@ -1,18 +1,25 @@
 ---
-author: mcleanbyron
 ms.assetid: 3D6EE7D7-7D75-499D-AA7A-55DA1C485BA6
 description: Use this method in the Microsoft Store analytics API to download the CAB file for a Windows 10 driver error. This method is intended only for IHVs.
 title: Download the CAB file for a Windows 10 driver error
-ms.author: mcleans
-ms.date: 03/17/2017
+ms.date: 08/28/2018
 ms.topic: article
-ms.prod: windows
-ms.technology: uwp
 keywords: windows 10, uwp, Microsoft Store analytics API, download CAB
 ms.localizationpriority: medium
 ---
 
 # Download the CAB file for a Windows 10 driver error
+
+> [!IMPORTANT]
+> This topic contains deprecated material. It describes older methods for collecting data about driver submission failures. It is supplied only for legacy support.
+>
+> Use these newer topics instead:
+>
+> - [Schedule Custom Reports for your driver failure details](schedule-custom-reports-for-driver-failure-details.md)
+> - [Create new report template](create-a-new-report-template.md)
+> - [Schedule a new report](schedule-a-new-report.md)
+> - [Get Report Data](get-report-data.md)
+> - [Download Failure Cabs](download-failure-cabs.md)
 
 Use this method in the Microsoft Store analytics API to download the CAB file that is associated with a particular Windows 10 driver error. Before you can use this method, you must first use the [get details for a Windows 10 driver error](get-details-for-a-windows-10-driver-error.md) method to retrieve the ID of the CAB file you want to download.
 
@@ -36,7 +43,7 @@ To use this method, you need to first do the following:
 
 | Method | Request URI                                                          |
 |--------|----------------------------------------------------------------------|
-| GET    | ```https://manage.devcenter.microsoft.com/v1.0/my/analytics/driver/cabdownload``` |
+| GET    | `https://manage.devcenter.microsoft.com/v1.0/my/analytics/driver/cabdownload` |
 
 
 ### Request header
@@ -53,7 +60,7 @@ To use this method, you need to first do the following:
 | applicationId | string | The product ID value of the driver for which you want to retrieve error data. |  Yes  |
 | cabIdHash | string | The unique ID of the CAB file you want to download. To get this ID, use the [get details for a Windows 10 driver error](get-details-for-a-windows-10-driver-error.md) method to retrieve details for a specific error in your app, and use the **cabIdHash** value in the response body of that method. |  Yes  |
 
- 
+ 
 ### Request example
 
 The following example demonstrates how to download a CAB file using this method.
@@ -69,5 +76,5 @@ This method returns a 302 (redirect) response code, and the **Location** header 
 
 ## Related topics
 
-* [Get error reporting data for Windows 10 drivers](get-error-reporting-data-for-windows-10-drivers.md)
-* [Get details for a Windows 10 driver error](get-details-for-a-windows-10-driver-error.md)
+- [Get error reporting data for Windows 10 drivers](get-error-reporting-data-for-windows-10-drivers.md)
+- [Get details for a Windows 10 driver error](get-details-for-a-windows-10-driver-error.md)

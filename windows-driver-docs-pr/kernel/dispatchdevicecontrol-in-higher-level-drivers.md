@@ -1,14 +1,9 @@
 ---
 title: DispatchDeviceControl in Higher-Level Drivers
-author: windows-driver-content
 description: DispatchDeviceControl in Higher-Level Drivers
 ms.assetid: baff49c4-8764-4b65-84f4-ce5e10d51ed2
 keywords: ["dispatch routines WDK kernel , DispatchDeviceControl routine", "dispatch DispatchDeviceControl routine", "IRP_MJ_DEVICE_CONTROL I/O function code", "device control dispatch routines WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,7 +21,7 @@ Any new higher-level driver that is not closely associated with a particular dev
 
 A device control request is usually handled synchronously. That is, a higher-level driver's *DispatchDeviceControl* routine can frequently return control to the system as follows:
 
-```
+```cpp
         :    : 
     return IoCallDriver(DeviceObject->NextDeviceObject, Irp);
 ```
@@ -39,9 +34,9 @@ Almost all system-defined I/O control codes require the underlying device driver
 
 A higher-level driver that allocates IRPs with [**IoBuildDeviceIoControlRequest**](https://msdn.microsoft.com/library/windows/hardware/ff548318) for an underlying device driver can handle these device control requests synchronously. The higher-level driver can wait for an optional event object to be passed to **IoBuildDeviceIoControlRequest** and associated with the driver-allocated IRP.
 
- 
+ 
 
- 
+ 
 
 
 

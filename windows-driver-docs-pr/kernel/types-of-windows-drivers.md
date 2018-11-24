@@ -1,14 +1,9 @@
 ---
 title: Types of Windows Drivers
-author: windows-driver-content
 description: Types of Windows Drivers
 ms.assetid: e6696c6b-2d3c-473c-9f46-576fe0c40496
 keywords: ["Windows drivers WDK , types", "drivers WDK , types", "kernel-mode drivers WDK , types", "highest-level drivers WDK", "intermediate drivers WDK kernel", "lowest-level drivers WDK"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -66,9 +61,9 @@ As shown in the figure, there are three basic types of kernel-mode drivers in a 
 
     -   [*Legacy drivers*](https://msdn.microsoft.com/library/windows/hardware/ff556305#wdkgloss-legacy-driver) that directly control a physical device are lowest-level drivers.
 
- 
+ 
 
- 
+ 
 
 
 

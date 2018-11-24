@@ -7,11 +7,7 @@ keywords:
 - message-signaled interrupts WDK networking , resource-requirements filter function
 - MSIs WDK networking , resource-requirements filter function
 - resource-requirements filter function WDK net
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,9 +31,9 @@ After NDIS calls [*MiniportAddDevice*](https://msdn.microsoft.com/library/window
 
 When NDIS receives a remove-device request from the PnP manager, NDIS calls the miniport driver's [*MiniportRemoveDevice*](https://msdn.microsoft.com/library/windows/hardware/ff559427) function. The *MiniportRemoveDevice* function should undo the operations that the [*MiniportAddDevice*](https://msdn.microsoft.com/library/windows/hardware/ff559332) function performed.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,16 +1,11 @@
 ---
 title: Required and Optional SCSI Miniport Driver Routines
-author: windows-driver-content
 description: Required and Optional SCSI Miniport Driver Routines
 ms.assetid: 6fd1f7af-e8ba-4679-bd8c-f757b57821b0
 keywords:
 - SCSI miniport drivers WDK storage , required routines
 - SCSI miniport drivers WDK storage , optional routines
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -52,9 +47,9 @@ The following sections describe the requirements for and functionality of each o
 
 [Error Handling in SCSI Miniport Drivers](error-handling-in-scsi-miniport-drivers.md) describes error-handling requirements for SCSI miniport drivers.
 
- 
+ 
 
- 
+ 
 
 
 

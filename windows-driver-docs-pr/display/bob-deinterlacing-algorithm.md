@@ -5,11 +5,7 @@ ms.assetid: ef3220bd-841d-4187-bc86-11b999eae2bd
 keywords:
 - bob deinterlacing WDK DirectX VA , algorithm
 - deinterlacing WDK DirectX VA , bob, algorithm
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,11 +33,11 @@ Each definition uses a finite impulse response (FIR) filter with an impulse resp
 
 ![calculation illustrating a filter algorithm](images/firfiltr.png)
 
-The preferred form of bob-style deinterlacing uses K=2 and h₀ = 9/16 (so h₁ = 1/16). This filter should be implemented as (9\*(b+c)(a+d)+8)&gt;&gt;4, where a, b, c, and d are the four input samples used to produce one output sample.
+The preferred form of bob-style deinterlacing uses K=2 and h₀ = 9/16 (so h₁ = 1/16). This filter should be implemented as (9\*(b+c)-(a+d)+8)&gt;&gt;4, where a, b, c, and d are the four input samples used to produce one output sample.
 
- 
+ 
 
- 
+ 
 
 
 

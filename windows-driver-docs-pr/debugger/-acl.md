@@ -3,11 +3,7 @@ title: acl
 description: The acl extension formats and displays the contents of an access control list (ACL).
 ms.assetid: 591f56b6-5a70-4037-a285-a1bffd5bd387
 keywords: ["acl Windows Debugging"]
-ms.author: domars
-ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 09/17/2018
 topic_type:
 - apiref
 api_name:
@@ -24,7 +20,7 @@ The **!acl** extension formats and displays the contents of an access control li
 
 Syntax
 
-```
+```dbgcmd
     !acl Address [Flags] 
 ```
 
@@ -50,7 +46,7 @@ Remarks
 
 The following example shows the **!acl** extension.
 
-```
+```console
 kd> !acl e1bf35d4 1
 ACL is:
 ACL is: ->AclRevision: 0x2
@@ -71,9 +67,9 @@ ACL is: ->Ace[1]: ->Mask : 0x10000000
 ACL is: ->Ace[1]: ->SID: S-1-5-18 (Well Known Group: NT AUTHORITY\SYSTEM)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

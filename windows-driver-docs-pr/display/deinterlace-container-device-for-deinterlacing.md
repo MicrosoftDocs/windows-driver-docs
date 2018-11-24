@@ -5,11 +5,7 @@ ms.assetid: e14db243-46e5-4ab3-b134-8aadfa99e614
 keywords:
 - deinterlace container device WDK DirectX VA
 - container device WDK DirectX VA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,11 +21,11 @@ If a driver supports accelerated decoding of compressed video, when initiated by
 
 **Note**   The deinterlace container device is a software construct only and does not represent any functional hardware contained on a device.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

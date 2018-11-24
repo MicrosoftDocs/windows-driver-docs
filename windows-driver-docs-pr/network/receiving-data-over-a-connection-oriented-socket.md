@@ -5,11 +5,7 @@ ms.assetid: 189fa236-25d6-4eea-ad77-df76363576db
 keywords:
 - connection-oriented sockets WDK Winsock Kernel
 - WskReceive
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,7 +16,7 @@ After a Winsock Kernel (WSK) application has connected a connection-oriented soc
 
 The following code example shows how a WSK application can receive data over a connection-oriented socket.
 
-```
+```C++
 // Prototype for the receive IoCompletion routine
 NTSTATUS
   ReceiveComplete(
@@ -127,7 +123,7 @@ As an alternative to calling the [**WskReceive**](https://msdn.microsoft.com/lib
 
 The following code example shows how a WSK application can receive data by the WSK subsystem calling a connection-oriented socket's *WskReceiveEvent* event callback function.
 
-```
+```C++
 // A connection-oriented socket&#39;s WskReceiveEvent
 // event callback function
 NTSTATUS WSKAPI
@@ -172,9 +168,9 @@ If a connection-oriented socket's [*WskReceiveEvent*](https://msdn.microsoft.com
 
 If a connection-oriented socket's *WskReceiveEvent* event callback function only accepts a portion of the total number of bytes of received data, it must set the variable pointed to by the *BytesAccepted* parameter to the number of bytes of data that were actually accepted. However, if the socket's *WskReceiveEvent* event callback function accepts all of the received data, it does not need to set the variable pointed to by the *BytesAccepted* parameter.
 
- 
+ 
 
- 
+ 
 
 
 

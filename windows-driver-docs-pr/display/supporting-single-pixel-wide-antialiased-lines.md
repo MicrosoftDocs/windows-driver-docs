@@ -7,11 +7,7 @@ keywords:
 - alias single-pixel-wide lines WDK DirectX 9.0
 - antialias single-pixel-wide lines WDK DirectX 9.0
 - line antialiasing WDK DirectX 9.0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +25,9 @@ The D3DRS\_ANTIALIASEDLINEENABLE render state applies to triangles drawn in wire
 
 When rendering to a multiple-sample render target, the driver must ignore a request to enable line antialiasing and render all lines aliased.
 
- 
+ 
 
- 
+ 
 
 
 

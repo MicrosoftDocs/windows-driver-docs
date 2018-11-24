@@ -2,11 +2,7 @@
 title: PwrTest Disk Scenario
 description: The PwrTest Disk Scenario monitors disk idle statistics and spin-down events.
 ms.assetid: E54AA721-27C6-4E42-B42A-77AC70711A26
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,7 +16,7 @@ This scenario is primarily used for Windows 7 hard disk power activity, subseque
 **Note**  
 This scenario does not work for all types of disks or controllers because not all storage drivers register for idle detection. See [Handling PnP Start in a Storage Class Driver](https://msdn.microsoft.com/library/windows/hardware/ff554995) for more information.
 
- 
+ 
 
 ## <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>Syntax
 
@@ -29,7 +25,7 @@ This scenario does not work for all types of disks or controllers because not al
 pwrtest /disk  [/t:n] [/?] 
 ```
 
-<span id="_t_n"></span><span id="_T_N"></span>**/t:***n*  
+<span id="_t_n"></span><span id="_T_N"></span>**/t:**<em>n</em>  
 Specifies the total time (in minutes) for the scenario to run (the default value for *n* is 30 minutes).
 
 **Examples**
@@ -140,11 +136,11 @@ The following table describes the XML elements that appear in the log file.
 </tr>
 <tr class="even">
 <td align="left"><strong>&lt;BusyCount&gt;</strong></td>
-<td align="left"><p>The number of times the device driver called [<strong>PoSetDeviceBusy</strong>](https://msdn.microsoft.com/library/windows/hardware/ff559755) during the period.</p></td>
+<td align="left"><p>The number of times the device driver called <a href="https://msdn.microsoft.com/library/windows/hardware/ff559755" data-raw-source="[&lt;strong&gt;PoSetDeviceBusy&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff559755)"><strong>PoSetDeviceBusy</strong></a> during the period.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><strong>&lt;AccruedBusyCount&gt;</strong></td>
-<td align="left"><p>The number of times the device driver call [<strong>PoSetDeviceBusy</strong>](https://msdn.microsoft.com/library/windows/hardware/ff559755) total.</p></td>
+<td align="left"><p>The number of times the device driver call <a href="https://msdn.microsoft.com/library/windows/hardware/ff559755" data-raw-source="[&lt;strong&gt;PoSetDeviceBusy&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff559755)"><strong>PoSetDeviceBusy</strong></a> total.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><strong>&lt;IdlePowerState&gt;</strong></td>
@@ -177,16 +173,16 @@ The following table describes the XML elements that appear in the log file.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
 
 [PwrTest Syntax](pwrtest-syntax.md)
 
- 
+ 
 
- 
+ 
 
 
 

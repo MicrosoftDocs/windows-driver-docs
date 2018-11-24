@@ -1,13 +1,8 @@
 ---
 title: Properties for WIA Video Minidrivers
-author: windows-driver-content
 description: Properties for WIA Video Minidrivers
 ms.assetid: 1d02baba-c9af-4596-9d7a-2b6c6675c87c
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,9 +20,9 @@ The following properties are not implemented at this time. They are reserved by 
 
 [**WIA\_DPV\_LAST\_PICTURE\_TAKEN**](https://msdn.microsoft.com/library/windows/hardware/ff551452)
 
- 
+ 
 
- 
+ 
 
 
 

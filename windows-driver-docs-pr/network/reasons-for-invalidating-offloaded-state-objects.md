@@ -4,11 +4,7 @@ description: Reasons for Invalidating Offloaded State Objects
 ms.assetid: 5abcf094-d361-4724-8bb7-c34dd7b2769d
 keywords:
 - invalidating offloaded state WDK TCP chimney offload , about invalidating offloaded state
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,9 +20,9 @@ The host stack invalidates offloaded state to quickly stop data transmission on 
 
 The host stack typically does not invalidate the state for a single TCP connection. However, in this situation, it is faster for the host stack to terminate the offload of the connection and wait for the offload target's retransmit timer to time out. In the timeout interval, the host stack might find a new route, which would enable the host stack to offload a new neighbor state object to the offload target.
 
- 
+ 
 
- 
+ 
 
 
 

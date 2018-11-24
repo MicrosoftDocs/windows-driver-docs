@@ -2,11 +2,7 @@
 title: Hyper-V Extensible Switch OID Requests
 description: Hyper-V Extensible Switch OID Requests
 ms.assetid: 0B6D1628-DD83-4EA6-B5D5-33D74AD45EFD
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +27,9 @@ The Hyper-V extensible switch interface includes object identifier (OID) request
 
 For more information on how extensions and NDIS filter drivers handle OID requests, see [Filter Module OID Requests](filter-module-oid-requests.md).
 
- 
+ 
 
- 
+ 
 
 
 

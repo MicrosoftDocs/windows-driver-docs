@@ -7,11 +7,7 @@ keywords:
 - source disks WDK display
 - source files WDK display
 - identifying display source disks or files
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,7 +16,7 @@ ms.localizationpriority: medium
 
 You must specify all in-box display drivers in the **SourceDisksNames** and **SourceDisksFiles** sections. The following example shows how to identify the CD-ROM discs and the names of the source files that are contained on the disks. The source files are transferred to the target computer during installation.
 
-```
+```inf
 [SourceDisksNames]
 3426=windows cd
 
@@ -32,9 +28,9 @@ UserModeDriverName2.dll  = 3426
 
 For more information about the **SourceDisksNames** and **SourceDisksFiles** sections, see [**INF SourceDisksNames Section**](https://msdn.microsoft.com/library/windows/hardware/ff547478) and [**INF SourceDisksFiles Section**](https://msdn.microsoft.com/library/windows/hardware/ff547472).
 
- 
+ 
 
- 
+ 
 
 
 

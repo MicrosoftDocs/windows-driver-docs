@@ -1,17 +1,12 @@
 ---
 title: Operations That Can Be IRP-Based or Fast I/O
-author: windows-driver-content
 description: Operations That Can Be IRP-Based or Fast I/O
 ms.assetid: 768f5744-1aea-4fa8-b81b-d2670d6c878e
 keywords:
 - fast I/O buffers WDK file system
 - Flags member WDK file system
 - device object flags WDK file system
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,9 +32,9 @@ When IRP\_MJ\_DEVICE\_CONTROL is a fast I/O operation, it always uses neither bu
 
 Although IRP\_MJ\_LOCK\_CONTROL can be an IRP-based or fast I/O operation, it has no buffers.
 
- 
+ 
 
- 
+ 
 
 
 

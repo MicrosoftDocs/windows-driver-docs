@@ -1,13 +1,8 @@
 ---
 title: Installing a WIA Minidriver
-author: windows-driver-content
 description: Installing a WIA Minidriver
 ms.assetid: 03340e9a-700c-4eb6-8505-57a09455117f
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,9 +20,9 @@ This section covers the following topics on the installation of a WIA minidriver
 
 [Installing Scanning Functionality in an MFP with a Single PDO](installing-scanning-functionality-in-an-mfp-with-a-single-pdo.md)
 
- 
+ 
 
- 
+ 
 
 
 

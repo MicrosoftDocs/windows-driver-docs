@@ -1,6 +1,5 @@
 ---
 title: Raising sensor events
-author: windows-driver-content
 description: Raising sensor events
 ms.assetid: a6e428f8-1613-4e8d-813d-5a54824dab82
 keywords:
@@ -10,11 +9,7 @@ keywords:
 - sensor data update event
 - state change event
 - sensor state change event
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -265,7 +260,7 @@ DWORD WINAPI CSampleEvents::_EventThreadProc(__in LPVOID pvData)
 ```
 
 ## Related topics
-[The Sensors Geolocation Driver Sample](https://docs.microsoft.com/en-us/windows-hardware/drivers/gnss/sensors-geolocation-driver-sample)
+[The Sensors Geolocation Driver Sample](https://docs.microsoft.com/windows-hardware/drivers/gnss/sensors-geolocation-driver-sample)
 
 
 

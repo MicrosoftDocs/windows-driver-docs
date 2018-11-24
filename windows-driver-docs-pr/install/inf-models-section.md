@@ -10,11 +10,7 @@ api_name:
 - INF Models Section
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ A per-manufacturer *Models* section identifies at least one device, references t
 
 Any entry in the per-manufacturer *Models* section can also specify one or more additional device IDs for models that are compatible with the device designated by the initial hardware ID and are controlled by the same drivers.
 
-```
+```cpp
 [models-section-name] |
 [models-section-name.TargetOSVersion]  (Windows XP and later versions of Windows)
 
@@ -37,7 +33,7 @@ device-description=install-section-name[,hw-id][,compatible-id...]
 
 
 <a href="" id="device-description"></a>*device-description*  
-Identifies a device to be installed, expressed as any unique combination of visible characters or as a **%***strkey***%** token defined in an [**INF Strings section**](inf-strings-section.md). The maximum length, in characters, of a device description is LINE_LEN.
+Identifies a device to be installed, expressed as any unique combination of visible characters or as a **%**<em>strkey</em>**%** token defined in an [**INF Strings section**](inf-strings-section.md). The maximum length, in characters, of a device description is LINE_LEN.
 
 <a href="" id="install-section-name"></a>*install-section-name*  
 Specifies the undecorated name of the INF install sections to be used for the device (and compatible models of device, if any). For more information, see [**INF *DDInstall* Section**](inf-ddinstall-section.md).
@@ -74,14 +70,14 @@ Starting with Windows XP, a *models section name* can include a *TargetOSVersion
 
 **Important**  Starting with Windows Server 2003 SP1, INF files must decorate *models-section-name* entries in the INF **Manufacturer** section, along with the associated INF *Models* section names, with **.ntia64** or **.ntamd64** platform extensions to specify non-x86 target operating system versions. These platform extensions are not required in INF files for x86-based target operating system versions or non-PnP driver INF files (such as file system driver INF files for x64-based architectures). Each entry in a *Models* section is sometimes called a *driver node*.
 
- 
+ 
 
 Examples
 --------
 
 This example shows a per-manufacturer *Models* section with some representative entries from the system mouse class installer's INF file, defining the [***DDInstall***](inf-ddinstall-section.md) sections for some devices/models.
 
-```
+```cpp
 [Manufacturer]
 %StdMfg%    =StdMfg         ; (Standard types)
 %MSMfg%     =MSMfg          ; Microsoft
@@ -106,9 +102,9 @@ This example shows a per-manufacturer *Models* section with some representative 
 
 [**Strings**](inf-strings-section.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -5,11 +5,7 @@ ms.assetid: 44ed69a0-da0e-4335-9128-a78a83ea80dd
 keywords:
 - user-mode memory WDK Windows 2000 display
 - user-mode memory WDK Windows 2000 display , exception handling
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -43,7 +39,7 @@ A display driver can use the **try/except** mechanism to implement exception han
 
 The following code example shows how the driver can use the **try/except** mechanism to throw an exception if an error occurs due to accessing invalid memory.
 
-```
+```cpp
 __try
 {
     // Access user-mode memory.
@@ -56,11 +52,11 @@ __except(EXCEPTION_EXECUTE_HANDLER)
 
 **Note**   Aside from accessing and copying the user-mode value into a local variable, the driver should not perform any other operations inside the **\_\_try** block. Other operations can cause their own exceptions to occur. The operating system handles these exceptions differently.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

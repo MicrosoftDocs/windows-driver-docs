@@ -3,11 +3,7 @@ title: Debugging a User-Mode Failure with KD
 description: Debugging a User-Mode Failure with KD
 ms.assetid: c7ef3c04-45bf-4e7b-bcc6-35fe2ffa43d1
 keywords: ["KD, user-mode debugging with KD"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +25,9 @@ Similar to the video DLLs, almost all executables load at the same address, so K
 
 Sometimes KD or WinDbg has trouble loading the correct user-mode symbols even when the full symbol tree is in the symbol path. In this case, ntdll.dll and kernel32.dll are two of the most common symbols that would be required. In the case of debugging CSRSS from KD, winsrv.dll and csrsrv.dll are also common DLLs to load.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: balloonUI element
-author: windows-driver-content
 description: The optional balloonUI element is used to display a message balloon on the client computer.
 ms.assetid: 8db15dcb-26ed-429e-ad4c-e5dc59f9bbca
 keywords: ["balloonUI element Print Devices"]
@@ -10,11 +9,7 @@ api_name:
 - balloonUI
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,7 +23,7 @@ The **balloonUI** element is defined in the *asyncui* namespace at this URI: htt
 Usage
 -----
 
-``` syntax
+```xml
 <balloonUI
   iconID = "xs:string"
   resourceDll = "xs:string">
@@ -88,12 +83,12 @@ Attributes
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>body</strong>](body.md)</p></td>
+<td><p><a href="body.md" data-raw-source="[&lt;strong&gt;body&lt;/strong&gt;](body.md)"><strong>body</strong></a></p></td>
 <td><p></p>
 <p>A required element that provides text that is displayed in the event notification message. This text should provide the user specific details about the printer event.</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>title</strong>](title.md)</p></td>
+<td><p><a href="title.md" data-raw-source="[&lt;strong&gt;title&lt;/strong&gt;](title.md)"><strong>title</strong></a></p></td>
 <td><p></p>
 <p>A required element that provides text that is displayed in the title of the event notification message.</p></td>
 </tr>
@@ -116,7 +111,7 @@ Attributes
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>requestOpen</strong>](requestopen.md)</p></td>
+<td><p><a href="requestopen.md" data-raw-source="[&lt;strong&gt;requestOpen&lt;/strong&gt;](requestopen.md)"><strong>requestOpen</strong></a></p></td>
 <td><p></p>
 <p>An element that is used to open an event notification message on the client computer.</p></td>
 </tr>
@@ -133,7 +128,7 @@ Examples
 
 The following code example shows how to use an interactive balloon to pass **CDATA** type data to a DLL.
 
-```
+```xml
 <?xml version="1.0" ?> 
   <asyncPrintUIRequest xmlns="http://schemas.microsoft.com/2003/print/asyncui/v1/request">
     <v1>
@@ -154,7 +149,7 @@ The following code example shows how to use an interactive balloon to pass **CDA
   </asyncPrintUIRequest>
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**action**](action.md)
@@ -165,9 +160,9 @@ The following code example shows how to use an interactive balloon to pass **CDA
 
 [**title**](title.md)
 
- 
+ 
 
- 
+ 
 
 
 

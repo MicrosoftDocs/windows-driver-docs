@@ -5,11 +5,7 @@ ms.assetid: 7ad53801-fa7f-49c1-a1f0-715c9f4951d1
 keywords:
 - warnings listed WDK PREfast for Drivers
 - errors listed WDK PREfast for Drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,15 +27,15 @@ warning C28150: The function causes the IRQ Level to be set above the maximum ac
 </tbody>
 </table>
 
- 
+ 
 
 The specified function has raised the IRQL above the maximum IRQL permitted for the current function call.
 
 This warning occurs inside a function that has been annotated with the **\_\_drv\_maxIRQL** annotation and indicates either a coding error in the function or a misunderstanding of the function's contract in the annotations.
 
- 
+ 
 
- 
+ 
 
 
 

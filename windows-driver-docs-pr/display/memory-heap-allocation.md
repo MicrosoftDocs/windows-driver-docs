@@ -14,11 +14,7 @@ keywords:
 - allocating memory heaps
 - VIDEOMEMORY
 - surfaces WDK DirectDraw , memory heap allocation
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,14 +38,14 @@ A surface's memory *pitch*, also called stride or offset, is the number of bytes
 
 As noted previously, you must also take into account alignment requirements when determining the pitch value. For example, suppose a one byte per pixel (bpp) surface is 97 pixels wide. Also, suppose that the hardware or display driver requires DWORD (4 bytes) alignment. If the runtime has not reserved cache bytes, the pitch is 100, which is the next higher number above 97 that is evenly divisible by 4. The following calculation determines this pitch value:
 
-```
-pitch = bpp * width + ( 4 - ( bpp * width) % 4 ), 
-that is, pitch = 97 + (4 - 1) = 100
+```cpp
+pitch = bpp * width + ( 4 - ( bpp * width) % 4 )
+// that is, pitch = 97 + (4 - 1) = 100
 ```
 
- 
+ 
 
- 
+ 
 
 
 

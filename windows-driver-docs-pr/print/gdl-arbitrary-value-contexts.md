@@ -1,6 +1,5 @@
 ---
 title: GDL Arbitrary Value Contexts
-author: windows-driver-content
 description: GDL Arbitrary Value Contexts
 ms.assetid: 6de79b2b-5f0f-4d6c-8a95-d9ef2266c2ef
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - contexts WDK GDL , arbitrary value contexts
 - arbitrary value contexts WDK GDL
 - values WDK GDL , contexts
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +22,9 @@ An arbitrary value context can be defined in any value context except within a c
 
 An arbitrary value context symbol is a token that consists of characters from the set \[A-Z, a-z, 0-9, \_ \]. There is no limit to the length of a symbol.
 
- 
+ 
 
- 
+ 
 
 
 

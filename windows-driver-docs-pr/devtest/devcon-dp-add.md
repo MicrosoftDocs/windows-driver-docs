@@ -10,11 +10,7 @@ api_name:
 - DevCon Dp_add
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,8 +21,6 @@ Adds a third-party (OEM) driver package to the driver store on the local compute
 
 ```
     devcon dp_add inf
-
-   
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
@@ -54,9 +48,9 @@ r\inf\i386\toaster.inf
 
 [Example 45: Add and Remove Driver Packages](example-45--add-and-remove-driver-packages.md)
 
- 
 
- 
+
+
 
 
 

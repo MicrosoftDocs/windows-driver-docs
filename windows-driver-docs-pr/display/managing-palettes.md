@@ -8,11 +8,7 @@ keywords:
 - color management WDK GDI
 - palettes WDK Windows 2000 display
 - drawing WDK GDI , colors
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +22,9 @@ As described in [GDI Support for Graphics Drivers](gdi-support-for-graphics-driv
 
 Drivers that support settable palettes also must support the [**DrvSetPalette**](https://msdn.microsoft.com/library/windows/hardware/ff556282) function. This function is used exclusively by display drivers.
 
- 
+ 
 
- 
+ 
 
 
 

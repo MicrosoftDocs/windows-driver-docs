@@ -1,13 +1,8 @@
 ---
 title: Memory Buffer Life Cycle
-author: windows-driver-content
 description: Memory Buffer Life Cycle
 ms.assetid: abf43bf5-a4a3-4aeb-9ec5-3458252933d5
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -44,7 +39,7 @@ When the driver [completes the request](completing-i-o-requests.md), the framewo
 
 In this scenario, the driver [forwards the request](forwarding-i-o-requests.md) to an I/O target. The following sample code shows how a driver retrieves a handle to the memory object from an incoming request object, formats the request to send to the I/O target, and sends the request:
 
-```
+```cpp
 VOID
 EvtIoRead(
     IN WDFQUEUE Queue,
@@ -57,12 +52,12 @@ EvtIoRead(
     WDFIOTARGET ioTarget;
     BOOLEAN ret;
     ioTarget = WdfDeviceGetIoTarget(WdfIoQueueGetDevice(Queue));
- 
+
     status = WdfRequestRetrieveOutputMemory(Request, &memory);
     if (!NT_SUCCESS(status)) {
         goto End;
     }
- 
+
     status = WdfIoTargetFormatRequestForRead(ioTarget,
                                     Request,
                                     memory,
@@ -71,30 +66,29 @@ EvtIoRead(
     if (!NT_SUCCESS(status)) {
         goto End;
     }
- 
+
     WdfRequestSetCompletionRoutine(Request,
                                     RequestCompletionRoutine,
                                     WDF_NO_CONTEXT);
- 
+
     ret = WdfRequestSend (Request, ioTarget, WDF_NO_SEND_OPTIONS);
     if (!ret) {
         status = WdfRequestGetStatus (Request);
         goto End;
     }
- 
+
     return;
- 
+
 End:
     WdfRequestComplete(Request, status);
     return;
- 
-}
 
+}
 ```
 
 When the I/O target has completed the request, the framework calls the completion callback that the driver set for the request. The following code shows a simple completion callback:
 
-```
+```cpp
 VOID
 RequestCompletionRoutine(
     IN WDFREQUEST                  Request,
@@ -105,14 +99,12 @@ RequestCompletionRoutine(
 {
     UNREFERENCED_PARAMETER(Target);
     UNREFERENCED_PARAMETER(Context);
- 
+
     WdfRequestComplete(Request, CompletionParams->IoStatus.Status);
- 
+
     return;
- 
+
 }
-
-
 ```
 
 When the driver calls [**WdfRequestComplete**](https://msdn.microsoft.com/library/windows/hardware/ff549945) from its completion callback, the framework deletes the memory object. The memory object handle that the driver retrieved is now invalid.
@@ -148,9 +140,9 @@ A driver can reuse the request objects that it creates, but it must reinitialize
 
 For sample code that reinitializes a request object, see the [Toaster](http://go.microsoft.com/fwlink/p/?linkid=256195) and [NdisEdge](http://go.microsoft.com/fwlink/p/?linkid=256154) samples that are provided with the KMDF release.
 
- 
 
- 
+
+
 
 
 

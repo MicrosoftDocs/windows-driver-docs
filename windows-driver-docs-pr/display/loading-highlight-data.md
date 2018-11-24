@@ -7,11 +7,7 @@ keywords:
 - blended pictures WDK DirectX VA , alpha-blend data loading
 - highlighted rectangular area WDK DirectX VA
 - rectangular highlighted area WDK DirectX VA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,9 +19,9 @@ ms.localizationpriority: medium
 
 The [**DXVA\_Highlight**](https://msdn.microsoft.com/library/windows/hardware/ff563979) structure specifies a highlighted rectangular area of a subpicture, and is used along with DCCMD data and a DPXD surface to create an alpha-blending surface. The highlight data is formatted in a manner compatible with the DVD ROM specification. For further clarification of DVD subpicture definition and data field interpretation, see *DVD Specifications for Read-Only Disk: Part 3 - Video Specification (v. 1.11, May 1999)*.
 
- 
+ 
 
- 
+ 
 
 
 

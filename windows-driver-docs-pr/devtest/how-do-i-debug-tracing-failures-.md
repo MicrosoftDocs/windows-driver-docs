@@ -2,11 +2,7 @@
 title: How do I debug tracing failures
 description: How do I debug tracing failures
 ms.assetid: 9f974482-e19d-4bcc-a884-4425741aa465
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +27,9 @@ WppDebug(level,(format,...));
 
 Do not confuse the **WppDebug** macro, which traces WPP actions, with the **WPP\_DEBUG** macro, which sends trace messages to a debugger.
 
- 
+ 
 
- 
+ 
 
 
 

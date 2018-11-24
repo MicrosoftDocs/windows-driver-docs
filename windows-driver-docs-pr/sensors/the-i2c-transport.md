@@ -1,13 +1,8 @@
 ---
 title: I2C transport
-author: windows-driver-content
 description: I2C transport
 ms.assetid: A483FAA6-9FA6-4C91-B8D4-021DDBB9B869
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,7 +14,7 @@ ms.localizationpriority: medium
 | AccelerometerDevice.cpp | CAccelerometerDevice |
 | Adxl345.h               | N/A                  |
 
- 
+ 
 
 The I²C (Inter-IC) transport is a two-wire serial transport that was introduced by the Phillips Corporation for their consumer products. Sensors are one category of device that support this transport. Examples include:
 
@@ -59,7 +54,7 @@ Full-resolution has been set with maximum range (+/- 16G).
 . . .
 . . .
 . . .
- 
+ 
 
 The complete register map for the accelerometer is in Table 16 of the device's data sheet. The sample driver supports a subset of these registers. These supported values are found within the Adxl345.h header file:
 
@@ -100,9 +95,9 @@ The complete register map for the accelerometer is in Table 16 of the device's d
 #define ADXL345_FIFO_STATUS                 0x39
 ```
 
- 
+ 
 
- 
+ 
 
 
 

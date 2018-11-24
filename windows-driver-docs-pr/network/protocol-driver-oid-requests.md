@@ -5,11 +5,7 @@ ms.assetid: ab664e75-d17d-4664-8c37-91fd651d23c2
 keywords:
 - protocol drivers WDK networking , OID requests
 - OIDs WDK networking , protocol drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +29,9 @@ The following topics provide more information about protocol driver OID requests
 
 [Protocol Driver Synchronous OID Requests](protocol-driver-synchronous-oid-requests.md)
 
- 
+ 
 
- 
+ 
 
 
 

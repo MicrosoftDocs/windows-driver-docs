@@ -1,12 +1,7 @@
 ---
 Description: Describes the limitations of the Universal Serial Bus (USB) 2.0 Selective Suspend mechanism.
 title: Limitations of USB 2.0 mechanism
-author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,9 +16,9 @@ Selective Suspend also imposes strict power consumption limits on the device in 
 
 For example, at a certain current limit, a mouse might not be able to wake up from Selective Suspend when a user moves the mouse, because there is not enough power for the optical sensors. The same mouse might be able to wake up as a result of a button press. Such a mouse cannot be sent to Selective Suspend without compromising the user experience.
 
- 
+ 
 
- 
+ 
 
 
 

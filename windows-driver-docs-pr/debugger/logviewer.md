@@ -3,11 +3,7 @@ title: LogViewer
 description: LogViewer
 ms.assetid: 0aeda310-4b4c-4156-ac8d-76a0cf14f402
 keywords: ["LogViewer, overview"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +25,9 @@ This section includes:
 
 [Exporting LogViewer Files to Text](exporting-logviewer-files-to-text.md)
 
- 
+ 
 
- 
+ 
 
 
 

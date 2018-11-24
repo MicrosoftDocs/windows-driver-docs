@@ -1,12 +1,7 @@
 ---
 Description: This topic provides information about Activity ID GUIDs, how to add those GUIDs in the event trace providers, and view them in Netmon.
 title: Using activity ID GUIDs in USB ETW traces
-author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -15,9 +10,9 @@ ms.localizationpriority: medium
 
 This topic provides information about Activity ID GUIDs, how to add those GUIDs in the event trace providers, and view them in Netmon.
 
-Drivers in the [USB driver stack](usb-3-0-driver-stack-architecture.md) (both 2.0 and 3.0) are ETW event trace providers. In Windows 7, while capturing event traces from the USB driver stack, you can capture traces from other providers, such as other drivers and applications. You can then read the combined log (assuming that you have created a Netmon parser for your provider's event traces).
+Drivers in the [USB driver stack](usb-3-0-driver-stack-architecture.md) (both 2.0 and 3.0) are ETW event trace providers. In Windows 7, while capturing event traces from the USB driver stack, you can capture traces from other providers, such as other drivers and applications. You can then read the combined log (assuming that you have created a Netmon parser for your provider's event traces).
 
-Starting in Windows 8, you can associate events across providers (from applications, client driver, and the USB driver stack) by using *activity ID GUIDs*. Events from multiple providers can be associated in Netmon when the events have the same activity ID GUID. Based on those GUIDs, Netmon can show you the set of USB events that resulted from an instrumented activity at an upper layer.
+Starting in Windows 8, you can associate events across providers (from applications, client driver, and the USB driver stack) by using *activity ID GUIDs*. Events from multiple providers can be associated in Netmon when the events have the same activity ID GUID. Based on those GUIDs, Netmon can show you the set of USB events that resulted from an instrumented activity at an upper layer.
 
 While viewing combined event traces from other providers in Netmon, right-click an event from an application and choose **Find Conversations -&gt; NetEvent** to see associated driver events.
 
@@ -36,10 +31,10 @@ An application can include activity ID GUIDs by calling [**EventActivityIdContro
 
 This example code shows how an application can set an activity ID GUID and send it to the ETW provider, a UMDF driver.
 
-```
+```cpp
 EventActivityIdControl(EVENT_ACTIVITY_CTRL_CREATE_ID, &activityIdStruct.ActivityId); 
 EventActivityIdControl(EVENT_ACTIVITY_CTRL_SET_ID,    &activityIdStruct.ActivityId); 
-                
+
 if (!DeviceIoControl(hRead,
                      IOCTL_OSRUSBFX2_SET_ACTIVITY_ID,
                      &activityIdStruct,         // Ptr to InBuffer
@@ -80,7 +75,7 @@ A user-mode driver creates and sets activity ID GUIDs by calling [**EventActivit
 
 This example code shows how a UMDF driver sets the activity ID GUID that was created and specified by the application through an IOCTL.
 
-```
+```cpp
 VOID
 STDMETHODCALLTYPE
 CMyControlQueue::OnDeviceIoControl(
@@ -98,7 +93,7 @@ Routine Description:
     DeviceIoControl dispatch routine
 
 Aruments:
-    
+
     FxQueue - Framework Queue instance
     FxRequest - Framework Request  instance
     ControlCode - IO Control Code
@@ -193,15 +188,13 @@ CMyReadWriteQueue::ForwardFormattedRequest(
 
     return;
 }
-
-
 ```
 
 Let's see how the activity ID GUID that was created by the application gets associated with a [User-Mode Driver Framework](https://msdn.microsoft.com/library/windows/hardware/ff560027) (UMDF) client driver. When the driver receives the IOCTL request from the application, it copies the GUID in a private member. At some point, the application calls [**ReadFile**](https://msdn.microsoft.com/library/windows/desktop/aa365467) to perform a read operation. The framework creates a request and invokes the driver's handler, ForwardFormattedRequest. In the handler, the driver sets the previously stored activity ID GUID on the thread by calling [**EventActivityIdControl**](https://msdn.microsoft.com/library/windows/desktop/aa363720) and EventWriteReadFail to trace event messages.
 
-**Note**  The UMDF driver must also include the header file that is generated through the instrumentation manifest file. The header file defines macros such as EventWriteReadFail that write trace messages.
+**Note**  The UMDF driver must also include the header file that is generated through the instrumentation manifest file. The header file defines macros such as EventWriteReadFail that write trace messages.
 
- 
+
 
 ## How to add activity ID GUID in a kernel-mode driver
 

@@ -1,11 +1,7 @@
 ---
 Description: The Windows Portable Devices Files
 title: The Windows Portable Devices Files
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,11 +23,11 @@ The WpdHelloWorldDriver project contains the following Windows Portable Devices 
 | WpdObjectResources.cpp  | Contains an implementation of the WpdObjectResources member functions.                                                                                                             |
 | WpdObjectResources.h    | Contains the definition for the WpdObjectResources class. This class contains a member function that retrieves the resources supported by the driver.                              |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

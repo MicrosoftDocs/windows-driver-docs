@@ -1,15 +1,10 @@
 ---
 title: HS_HOST_SEND_USER_MESSAGE function
-author: windows-driver-content
 description: The HS_HOST_SEND_USER_MESSAGE function is called to communicate with the user. The message content is contained in custom UI display strings that are passed to the hotspot offload service.
 ms.assetid: c4ab1fda-18eb-44e4-aa64-f7b37b4147a3
 keywords: 
 - typedef DWORD (WINAPI HS_HOST_SEND_USER_MESSAGE) function Network Drivers Starting with Windows Vista
-ms.author: windowsdriverdev
-ms.date: 07/31/2017 
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 07/31/2017
 ms.localizationpriority: medium
 ---
 
@@ -73,9 +68,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: Scan Tickets
 description: Scan Tickets
 ms.assetid: 0d0d351e-2e15-4cc3-8130-7cfaf96a62f7
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,9 +17,9 @@ This section includes:
 
 [**ScanTicket**](scanticket.md)
 
- 
+ 
 
- 
+ 
 
 
 

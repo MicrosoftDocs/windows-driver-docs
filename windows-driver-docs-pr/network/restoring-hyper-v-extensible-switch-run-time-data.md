@@ -2,11 +2,7 @@
 title: Restoring Hyper-V Extensible Switch Run-Time Data
 description: Restoring Hyper-V Extensible Switch Run-Time Data
 ms.assetid: 7904FF12-06E9-433F-A0C1-E1FDEF3427B1
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ If the extension owns the run-time data for an extensible switch NIC, it restore
 
     **Note**  The value of the **PortId** member of the [**NDIS\_SWITCH\_NIC\_SAVE\_STATE**](https://msdn.microsoft.com/library/windows/hardware/hh598216) structure may be different from the **PortId** value at the time that the run-time data was saved. This can occur if run-time data was saved during a Live Migration from one host to another. However, the configuration of the extensible switch NIC is retained during the Live Migration. This enables the extension to restore the run-time data to the extensible switch NIC by using the new **PortId** value.
 
-     
+     
 
 2.  The extension completes the OID set request with NDIS\_STATUS\_SUCCESS.
 
@@ -46,11 +42,11 @@ For more information about this OID request, see [OID\_SWITCH\_NIC\_RESTORE\_COM
 
 **Note**  If the [OID\_SWITCH\_NIC\_RESTORE](https://msdn.microsoft.com/library/windows/hardware/hh598267) set request is received by the miniport edge of the extensible switch, it completes the OID request with NDIS\_STATUS\_SUCCESS. This notifies the protocol edge of the extensible switch that no extension owns the run-time data. If this happens, the extensible switch interface logs an event that documents the **ExtensionId** and **PortId** member values for the extension that originally saved the run-time port data.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

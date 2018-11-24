@@ -4,11 +4,7 @@ description: Remote NDIS Messaging
 ms.assetid: 6364a9a1-c65f-463d-971b-cf94cd2a5cde
 keywords:
 - Remote NDIS WDK networking , messaging
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -54,9 +50,9 @@ There are two types of Remote NDIS messages: *control messages* and *data messag
 
     Both connectionless (for example, 802.3) and connection-oriented (for example, ATM) devices use the same **REMOTE\_NDIS\_PACKET\_MSG** message structure, in order to facilitate common code for packet processing.
 
- 
+ 
 
- 
+ 
 
 
 

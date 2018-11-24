@@ -2,11 +2,7 @@
 title: Provisioning Windows using a website
 description: Provisioning Windows using a website
 ms.assetid: ba60fddd-a248-4afb-9390-f9277ef1f094
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -134,7 +130,7 @@ The following table lists the properties that can be included. If a property val
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Configure_the_computer"></span><span id="configure_the_computer"></span><span id="CONFIGURE_THE_COMPUTER"></span>Configure the computer
 
@@ -155,11 +151,11 @@ For more info about account provisioning metadata, see [Account provisioning](ac
 **Note**  
 Account provisioning metadata must be signed with an extended validation (EV) certificate when provided by the web site.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

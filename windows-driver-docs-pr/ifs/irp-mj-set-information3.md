@@ -1,6 +1,5 @@
 ---
 title: IRP_MJ_SET_INFORMATION
-author: windows-driver-content
 description: IRP_MJ_SET_INFORMATION
 ms.assetid: 2a6c837c-85c9-46d8-85d8-d779f22be54e
 keywords:
@@ -10,11 +9,7 @@ keywords:
 - rename operations WDK file systems
 - hard link operations WDK file systems
 - names WDK file systems
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,7 +18,7 @@ ms.localizationpriority: medium
 
 The rename and hard link cases in set information might require a security check under certain circumstances. Specifically, if the caller wants to delete the target of the rename or hard link by setting the **ReplaceIfExists** field to **TRUE**, the file system must perform a security check to ensure that the caller has appropriate permission to delete the target. In addition, there can be certain types of files that the file system, as a matter of policy, does not wish to allow to be deleted in this fashion (registry hives and paging files, for example). The following code example determines if the caller has the appropriate security permissions to delete the file:
 
-```
+```cpp
 NTSTATUS FsdCheckDeleteFileAccess(POW_IRP_CONTEXT IrpContext, 
                                   PSECURITY_DESCRIPTOR targetSD, 
                                   PFCB ParentFcb)
@@ -108,9 +103,9 @@ This code can be used for both the rename and hard link creation case.
 
 Note that it is outside the scope of this document to discuss policy level code where the file system decides to disallow the delete based upon the type of file being deleted.
 
- 
+ 
 
- 
+ 
 
 
 

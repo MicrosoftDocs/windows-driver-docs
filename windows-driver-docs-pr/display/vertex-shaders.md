@@ -4,11 +4,7 @@ description: Vertex Shaders
 ms.assetid: dfc421f7-b2fe-4023-a47b-cfd59fe5bdb4
 keywords:
 - vertex shaders WDK DirectX 8.0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +24,9 @@ If the FVF code of a vertex buffer conflicts with that specified by D3DDP2OP\_SE
 
 The DirectX runtime guarantees that only FVF codes are passed as vertex shader handles to a driver that does not support programmable vertex processing. However, such a driver should have debug code to verify that the FVF code that is passed is supported.
 
- 
+ 
 
- 
+ 
 
 
 

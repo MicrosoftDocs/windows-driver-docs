@@ -2,11 +2,7 @@
 title: Supporting Path-Independent Rotation
 description: Starting with Windows 8.1 Update, the operating system supports cloning portrait-first displays on landscape-first displays with the greatest possible resolution.
 ms.assetid: 136CEDA5-2839-4E6E-A032-1A9222C769C6
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -74,9 +70,9 @@ If, in the **Display** control panel's **Orientation** drop-down box, the user c
 
 If the Desktop Window Manager (DWM) has already rotated the content 180 degrees, the driver must still rotate it another 270 degrees in the secondary clone path. Otherwise, the driver must rotate the content 180 degrees for the TV and 90 degrees for the device. Note that to rotate the content, the driver must set the **Rotate** member of the [**DXGK\_PRESENTFLAGS**](https://msdn.microsoft.com/library/windows/hardware/ff562005) structure.
 
- 
+ 
 
- 
+ 
 
 
 

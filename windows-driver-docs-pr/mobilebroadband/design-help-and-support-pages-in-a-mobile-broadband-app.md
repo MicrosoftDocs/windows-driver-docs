@@ -2,11 +2,7 @@
 title: Design help and support pages in a mobile broadband app
 description: Design help and support pages in a mobile broadband app
 ms.assetid: bac8987e-e801-4488-b204-5532fb3ced1b
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -54,9 +50,9 @@ Inappropriate design for help and support page:
 
 [Designing the user experience of a mobile broadband app](designing-the-user-experience-of-a-mobile-broadband-app.md)
 
- 
+ 
 
- 
+ 
 
 
 

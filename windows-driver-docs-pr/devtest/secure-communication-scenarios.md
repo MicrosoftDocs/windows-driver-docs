@@ -8,11 +8,7 @@ keywords:
 - scenarios WDK WSDBIT
 - test scenarios WDK WSDBIT
 - Secure Communication scenario WDK WSDBIT
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -48,7 +44,7 @@ Responds with a ProbeMatches.
 **Note**  
 If a **wsd:XAddrs** is supplied, this address must be an https URI and the **wsa:EndpointReference/wsa:Address** must be the same as the **wsd:XAddrs**.
 
- 
+ 
 
 Go to step 5.1.2 (or 5.1.3).
 
@@ -63,7 +59,7 @@ Responds with a ResolveMatches.
 **Note**  
 The **wsd:XAddrs** must be an https URI and the **wsa:EndpointReference/wsa:Address** must be the same as the **wsd:XAddrs**.
 
- 
+ 
 
 Go to step 5.1.3.
 
@@ -120,7 +116,7 @@ Responds with a ProbeMatches that uses the HTTPS response.
 **Note**  
 If a **wsd:XAddrs** is supplied, this address must be an https URI and the **wsa:EndpointReference/wsa:Address** must be the same as the **wsd:XAddrs**.
 
- 
+ 
 
 Confirm that the **wsa:EndpointReference/wsa:Address** for the TestDevice is correct.
 
@@ -134,9 +130,9 @@ Discovery of the secure device is determined by using the methods that are teste
 
 Subscribes to SimpleEvent with:
 
--   **wse:Filter/@Dialect == "http://schemas.xmlsoap.org/ws/2006/02/devprof/Action"**
+- **wse:Filter/@Dialect == "<http://schemas.xmlsoap.org/ws/2006/02/devprof/Action>"**
 
--   **wse:Filter == http://schemas.example.org/EventingService/SimpleEvent**
+- **wse:Filter == http://schemas.example.org/EventingService/SimpleEvent**
 
 The client can choose to include an expiration of type **xs:duration**.
 
@@ -188,11 +184,11 @@ Fires the SimpleEvent.
 
 No event is received at the client.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

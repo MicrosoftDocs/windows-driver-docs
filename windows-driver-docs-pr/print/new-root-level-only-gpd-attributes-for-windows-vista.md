@@ -1,16 +1,11 @@
 ---
 title: New Root-Level-Only GPD Attributes for Windows Vista
-author: windows-driver-content
 description: New Root-Level-Only GPD Attributes for Windows Vista
 ms.assetid: 09f38459-6062-4d2a-9aee-929aa60193cf
 keywords:
 - root-level-only attributes WDK Unidrv
 - general printer attributes WDK Unidrv , root-level-only
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,7 +14,7 @@ ms.localizationpriority: medium
 
 The following list describes the GPD attributes that are new starting with Windows Vista. To maintain backwards compatibility with pre-Windows Vista versions of Windows, you should surround these attributes with the following code.
 
-```
+```cpp
 *Ifdef: WINNT_60 ... *Endif: WINNT_60 blocks
 ```
 
@@ -47,7 +42,7 @@ Before Windows Vista, a print processor would print the order in format 2 \[(3,4
 
 But if your printer works correctly with format 1, you will not need to change anything for Windows Vista and later. However, if your printer works incorrectly with format 1 and you want to revert to format 2, add the following code example to your GPD file.
 
-```
+```cpp
 *Ifdef: WINNT_60
 *PrintProcDuplexOptions: 1
 *Endif: WINNT_60
@@ -86,7 +81,7 @@ Note that even if this attribute is set, blank page optimization is performed on
 
 **Usage of PrintProcDuplexOptions**
 
-```
+```cpp
 *Ifdef: WINNT_60
 *PrintProcDuplexOptions: 2
 *Endif: WINNT_60 
@@ -138,21 +133,21 @@ The **PrintSchemaKeywordMap** attribute appears under feature and option constru
 
 **Note**   The GPD parser ignores this attribute for features that are explicitly recognized, including page size and color.
 
- 
+ 
 
 All values should be enclosed in quotation marks. They will be converted to Unicode by using the code page that is specified in the GPD, if any. Duplicate definitions of any attributes resolve in the same way as other GPD attributes: The last definition that is read is given precedence.
 
 **Important**  If you map a feature to a Print Schema keyword that is already being used in the GPD file, the corresponding PrintCapabilities document might list that feature more than once. Multiple occurrences might be confusing, so you should not map features to Print Schema keywords that are used in the GPD file.
 
- 
+ 
 
 **Note**  The GPD parser automatically generates the FORMSOURCE option for the InputBin feature and maps it to the AutoSelect keyword in the Print Schema. If your GPD file contains an InputBin option that uses the **PrintSchemaKeywordMap** attribute to map the option to a Print Schema keyword, the feature in the Print Schema will contain a FORMSOURCE option in the device namespace. AutoSelect will appear in the PrintCapabilities document and refer to the option that is specified in the **PrintSchemaKeywordMap** attribute of the GPD file.
 
- 
+ 
 
 The following code example shows a partial GPD file to show the layout.
 
-```
+```cpp
 *Feature: HPSTAPLER
 {
     *Name: "Staple"
@@ -177,7 +172,7 @@ The following code example shows a partial GPD file to show the layout.
 
 The **IsXPSDriver** attribute uses the following GPD syntax.
 
-```
+```cpp
 *IsXPSDriver?: TRUE | FALSE
 ```
 
@@ -185,7 +180,7 @@ You can use the Windows Vista Unidrv configuration module (Unidrvui.dll) for bot
 
 For example, if you have an XPS driver, use the following code.
 
-```
+```cpp
 *IsXPSDriver?: TRUE
 ```
 
@@ -195,7 +190,7 @@ To use the Unidrv configuration module for Win32 GDI drivers, you do not need to
 
 The **UseImageForHatchBrush?** attribute uses the following GPD syntax.
 
-```
+```cpp
 *Ifdef: WINNT_60
 *UseImageForHatchBrush?: TRUE
 *Endif: WINNT_60 
@@ -209,7 +204,7 @@ In Windows Vista, if the GPD specifies the **UseImageForHatchBrush?** attribute,
 
 The **ReverseBandOrder?** attribute uses the following GPD syntax.
 
-```
+```cpp
 *Ifdef: WINNT_60
 *ReverseBandOrder?: TRUE
 *Endif: WINNT_60 
@@ -235,7 +230,7 @@ When both **ReverseBandOrder?** and **ReverseBandOrderForEvenPages?** are set, t
 
 The **BidiQueryFile** attribute uses the following GPD syntax.
 
-```
+```cpp
 *BidiQueryFile: <GPD or GDL file name>
 ```
 
@@ -243,15 +238,15 @@ Use **BidiQueryFile** to specify the GPD or GDL file name that contains the prin
 
 The following code example shows an example of this attribute in a partial GPD file.
 
-```
+```cpp
 *Ifdef: WINNT_60
 *BidiQueryFile: "ACnfgUni.GDL"
 *Endif: WINNT_60
 ```
 
- 
+ 
 
- 
+ 
 
 
 

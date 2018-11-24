@@ -2,11 +2,7 @@
 title: Optimizing conditional checks that the WPP macros produce before tracing
 description: Can I optimize the conditional checks that the WPP macros produce before the tracing
 ms.assetid: 0d0ad0de-561f-4480-be91-2304242fee91
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -17,7 +13,7 @@ You can remove the conditional check for WPP\_INIT\_TRACING so that it is not ca
 
 **Important**  You should not remove this check if tracing is made in your object constructors or macros. Otherwise, access violations could occur in your trace provider.
 
- 
+ 
 
 Before you include the [trace message header (.tmh) file](trace-message-header-file.md) in your source code, add the following definition to disable the conditional check for WPP\_INIT\_TRACING:
 
@@ -25,9 +21,9 @@ Before you include the [trace message header (.tmh) file](trace-message-header-f
 #define WPP_CHECK_INIT
 ```
 
- 
+ 
 
- 
+ 
 
 
 

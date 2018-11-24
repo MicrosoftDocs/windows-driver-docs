@@ -3,11 +3,7 @@ title: wdmaud
 description: Displays a variety of WDM Audio (WDMAud) structures.
 ms.assetid: fa41e3e2-a767-4c8c-9604-e3ea924ac571
 keywords: ["wdmaud Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 Displays a variety of WDM Audio (WDMAud) structures.
 
-```
+```dbgcmd
 !wdmaud Address Flags
 ```
 
@@ -69,7 +65,7 @@ Causes the display to include verbose information.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -80,9 +76,9 @@ Remarks
 
 The contexts attached to wdmaud.sys (**pContext**) contain most of the state data for each device. Whenever wdmaud.drv is loaded into a new process, wdmaud.sys is notified of its arrival. Whenever wdmaud.drv is unloaded, wdmaud.sys cleans up any allocations made in that context.
 
- 
+ 
 
- 
+ 
 
 
 

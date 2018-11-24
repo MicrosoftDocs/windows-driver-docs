@@ -9,11 +9,7 @@ api_name:
 - SRB_INITIALIZATION_COMPLETE
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,15 +21,15 @@ ms.localizationpriority: medium
 
 The class driver sends this request to signal the minidriver that it has completed its initialization.
 
-### <span id="comments"></span><span id="COMMENTS"></span>Comments
+### Comments
 
 Once the minidriver completes this request, the class driver can begin to send [**SRB\_OPEN\_STREAM**](srb-open-stream.md) requests.
 
 When this SRB is received by the minidriver, the minidriver should create any necessary Registry entries. For example, a DirectShow filter might register a TV tuner or Crossbar for use with the FilterGraph using the [**StreamClassRegisterFilterWithNoKSPins**](https://msdn.microsoft.com/library/windows/hardware/ff568261) routine.
 
- 
+ 
 
- 
+ 
 
 
 

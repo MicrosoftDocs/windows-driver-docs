@@ -2,11 +2,7 @@
 title: NDIS QoS Traffic Classifications
 description: NDIS QoS Traffic Classifications
 ms.assetid: 62D7B69F-A64E-4E3C-9AEA-8C56495E3FF5
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ NDIS Quality of Service (QoS) classifies transmit, or *egress*, packets for prio
 
 **Note**  Traffic classifications are also known as "application priorities" in the IEEE 802.1 specifications.
 
- 
+ 
 
 NDIS QoS traffic classifications are intended for the following types of egress packet traffic:
 
@@ -45,9 +41,9 @@ The DCB component specifies a *default* traffic classification that is applied t
 
 For more information on the DCB component, see [NDIS QoS Architecture for Data Center Bridging](ndis-qos-architecture-for-data-center-bridging.md).
 
- 
+ 
 
- 
+ 
 
 
 

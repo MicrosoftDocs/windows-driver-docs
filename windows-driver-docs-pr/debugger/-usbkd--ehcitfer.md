@@ -3,11 +3,7 @@ title: usbkd._ehcitfer
 description: The usbkd._ehcitfer command displays information from a usbehci _HCD_TRANSFER_DESCRIPTOR structure.
 ms.assetid: 745B8891-150C-4E25-8814-E8F35FB939F5
 keywords: ["usbkd._ehcitfer Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!usbkd.\_ehcitfer** command displays information from a **usbehci!\_HCD\_TRANSFER\_DESCRIPTOR** structure.
 
-```
+```dbgcmd
 !usbkd._ehcitfer StructAddr
 ```
 
@@ -42,11 +38,11 @@ Usbkd.dll
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](http://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
- 
+ 
 
- 
+ 
 
 
 

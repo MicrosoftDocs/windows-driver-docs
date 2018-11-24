@@ -2,11 +2,7 @@
 title: Overview of Hyper-V Extensible Switch Policies
 description: Overview of Hyper-V Extensible Switch Policies
 ms.assetid: 1D0AC55B-60F7-400E-A376-F3E2F7373A92
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,7 +17,7 @@ In addition to custom policy properties, the Hyper-V extensible switch interface
 
 Extensible switch custom policy data is registered with the WMI management layer by using managed object format (MOF) class definitions. The following shows an example of a MOF class for a custom port policy property.
 
-```
+```C++
 #pragma namespace("\\\\.\\root\\virtualization\\v2")
 
 [ Dynamic, 
@@ -82,7 +78,7 @@ class Vendor_SampleFeatureSettingData: Msvm_EthernetSwitchPortFeatureSettingData
 
 The WMI management layer serializes the MOF data when it is transferred to an underlying extensible switch extension. The MOF class is serialized to a corresponding C structure that can be processed by the Hyper-V extensible switch extension. The following shows an example of the C structure that was serialized for the MOF class from the previous example.
 
-```
+```C++
 #pragma pack(8)
 
 typedef struct _VARIABLE_LENGTH_ARRAY
@@ -126,9 +122,9 @@ This example highlights the following points that occur when a MOF class is seri
 
 -   All variable-length strings are serialized into offsets within the buffer that contains the serialized C structure. Each variable-length string is formatted as a **VARIABLE\_LENGTH\_STRING** structure within this buffer offset.
 
- 
+ 
 
- 
+ 
 
 
 

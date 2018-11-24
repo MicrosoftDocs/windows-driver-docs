@@ -9,11 +9,7 @@ api_name:
 - wscn ExposureSettings
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **ExposureSettings** element contains individual adjustment values 
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ExposureSettings>
   child elements
 </wscn:ExposureSettings>
@@ -50,13 +46,13 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>Brightness</strong>](brightness.md)</p></td>
+<td><p><a href="brightness.md" data-raw-source="[&lt;strong&gt;Brightness&lt;/strong&gt;](brightness.md)"><strong>Brightness</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>Contrast</strong>](contrast.md)</p></td>
+<td><p><a href="contrast.md" data-raw-source="[&lt;strong&gt;Contrast&lt;/strong&gt;](contrast.md)"><strong>Contrast</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>Sharpness</strong>](sharpness.md)</p></td>
+<td><p><a href="sharpness.md" data-raw-source="[&lt;strong&gt;Sharpness&lt;/strong&gt;](sharpness.md)"><strong>Sharpness</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -75,12 +71,12 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>Exposure</strong>](exposure.md)</p></td>
+<td><p><a href="exposure.md" data-raw-source="[&lt;strong&gt;Exposure&lt;/strong&gt;](exposure.md)"><strong>Exposure</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**Brightness**](brightness.md)
@@ -91,9 +87,9 @@ There are no attributes.
 
 [**Sharpness**](sharpness.md)
 
- 
+ 
 
- 
+ 
 
 
 

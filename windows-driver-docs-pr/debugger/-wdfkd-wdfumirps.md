@@ -3,11 +3,7 @@ title: wdfkd.wdfumirps
 description: The wdfkd.wdfumirps extension displays the list of pending user-mode I/O request packets (UM IRPs) in the implicit process.
 ms.assetid: 1BFFDAC0-AA1F-434A-BB05-6864810F9B98
 keywords: ["wdfkd.wdfumirps Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!wdfkd.wdfumirps** extension displays the list of pending user-mode I/O request packets (UM IRPs) in the [implicit process](controlling-threads-and-processes.md).
 
-```
+```dbgcmd
 !wdfkd.wdfumirps NumberOfIrps Flags
 ```
 
@@ -64,7 +60,7 @@ You can use [**!process**](-process.md) to get a list of all UMDF host processes
 
 Here is an example of the output of **!wdfkd.wdfumirps**.
 
-```
+```dbgcmd
 0: kd> !wdfkd.wdfumirps
 Number of pending IRPS: 0x4
 ####  CWudfIrp     Current Type           UniqueId KernelIrp         Device Stack
@@ -75,9 +71,9 @@ Number of pending IRPS: 0x4
 0003  1ab9eae370   Power (WAIT_WAKE)          0     ffffe00000c53010  1ab9eaa6d0
 ```
 
- 
+ 
 
- 
+ 
 
 
 

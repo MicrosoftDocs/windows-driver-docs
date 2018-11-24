@@ -3,11 +3,7 @@ title: .open (Open Source File)
 description: The .open command searches the source path for a source file and opens this file.
 ms.assetid: 49944fc8-5ecb-47a4-a046-0df18a242e72
 keywords: [".open (Open Source File) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **.open** command searches the source path for a source file and opens this file.
 
-```
+```dbgcmd
 .open [-m Address] FileName 
 .open -a Address 
 ```
@@ -66,15 +62,15 @@ You can use the **.open** command only in WinDbg, and you cannot use it in scrip
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
 For more information about source files and source paths and for other ways to load source files, see [Source Path](source-path.md).
 
- 
+ 
 
- 
+ 
 
 
 

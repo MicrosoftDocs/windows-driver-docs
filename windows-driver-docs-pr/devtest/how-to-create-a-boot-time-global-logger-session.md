@@ -6,11 +6,7 @@ keywords:
 - Global Logger trace session WDK , creating
 - boot-time Global Logger trace session WDK , creating
 - EnableKernelFlags WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -58,9 +54,9 @@ For more information about the Tracelog commands, see [**Tracelog Command Syntax
 
 [**Tracelog Command Syntax**](tracelog-command-syntax.md)
 
- 
+ 
 
- 
+ 
 
 
 

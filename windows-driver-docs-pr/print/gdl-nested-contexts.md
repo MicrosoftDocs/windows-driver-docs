@@ -1,6 +1,5 @@
 ---
 title: GDL Nested Contexts
-author: windows-driver-content
 description: GDL Nested Contexts
 ms.assetid: c679937a-fa36-487a-84f2-f61a7ef0198e
 keywords:
@@ -9,11 +8,7 @@ keywords:
 - nested contexts WDL GDL
 - GDL WDK , values
 - values WDK GDL , nested contexts
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,33 +25,33 @@ The nested context can appear outside of any context or within another nested co
 
 The following code example shows a GDL nested context.
 
-```
+```cpp
 *good_nests: ( { } [ ( ) ] )
 ```
 
 The following code examples shows GDL nested contexts that contain errors.
 
-```
+```cpp
 *bad_nests: (  ] *%  end nesting delimiter can only be used within its nesting context.
 *bad_nests: (  ]  )
 *bad_nests:   ] [   *%  end nesting delimiter can only be used within its nesting context.
-*bad_nests: (  [  )   ]   *%  end nesting delimiter can only be used within its nesting*% context.  In this case the &#39;)&#39; char cannot be used within the context begun 
-*%by &#39;[&#39; .
+*bad_nests: (  [  )   ]   *%  end nesting delimiter can only be used within its nesting*% context.  In this case the ')' char cannot be used within the context begun 
+*%by '[' .
 *bad_nests:  {  [ ]  }  *% attempt to use construct delimiter to define a nesting context 
 *%  outside of a nesting context.
 ```
 
 The entire contents of a nested context is treated as part of the [value](gdl-values.md). For example, the following GDL code represents one entry with a keyword of "\*KeywordA". The remainder of the fragment is the value of \*KeywordA, because what appears to be separate entries for \*KeywordB and \*KeywordC are contained within a nested context. In fact, the numbers "12, 38, 709" are themselves in a nested context that is defined by parentheses delimiters that are nested within the outer context that is defined by the square bracket delimiters.
 
-```
+```cpp
 *KeywordA: [
 *KeywordB:  List(12, 38, 709)
 *KeywordC:  "the small brown fox" ]
 ```
 
- 
+ 
 
- 
+ 
 
 
 

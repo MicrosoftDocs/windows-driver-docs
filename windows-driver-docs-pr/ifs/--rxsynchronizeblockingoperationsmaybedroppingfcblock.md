@@ -11,11 +11,7 @@ api_location:
 - rxcontx.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -75,7 +71,7 @@ Return value
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -139,9 +135,9 @@ Requirements
 
 [**\_\_RxSynchronizeBlockingOperations**](https://msdn.microsoft.com/library/windows/hardware/ff557377)
 
- 
+ 
 
- 
+ 
 
 
 

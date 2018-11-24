@@ -3,11 +3,7 @@ title: wmitrace.logsave
 description: The wmitrace.logsave extension writes the current contents of the trace buffers for a trace session to a file.
 ms.assetid: 713fea09-d405-4142-b2e8-29c813a4c3b6
 keywords: ["wmitrace.logsave Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!wmitrace.logsave** extension writes the current contents of the trace buffers for a trace session to a file.
 
-```
+```dbgcmd
 !wmitrace.logsave {LoggerID|LoggerName} Filename 
 ```
 
@@ -61,9 +57,9 @@ When you use Tracelog to start a trace session with circular buffering (-bufferi
 
 To find the logger ID of a trace session, use the [**!wmitrace.strdump**](-wmitrace-strdump.md) extension. Alternatively, you can use the Tracelog command tracelog -l to list the trace sessions and their basic properties, including the logger ID.
 
- 
+ 
 
- 
+ 
 
 
 

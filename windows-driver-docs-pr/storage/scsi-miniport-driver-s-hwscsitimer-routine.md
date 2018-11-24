@@ -1,17 +1,12 @@
 ---
 title: SCSI Miniport Driver's HwScsiTimer Routine
-author: windows-driver-content
 description: SCSI Miniport Driver's HwScsiTimer Routine
 ms.assetid: 57ac7a6e-ada5-4185-89cf-b6c5ef9006d4
 keywords:
 - SCSI miniport drivers WDK storage , HwScsiTimer
 - HwScsiTimer
 - timers WDK SCSI
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,9 +30,9 @@ After the HBA has been programmed for such an operation, the miniport driver cal
 
 The interval passed in to **ScsiPortNotification** is in microseconds, and the minimum overhead for each call to an *HwScsiTimer* routine is approximately 10 microseconds. An input interval of zero cancels the preceding request to call the *HwScsiTimer* routine, provided it has not been called or dispatched for execution on another processor in a NT-based SMP machine.
 
- 
+ 
 
- 
+ 
 
 
 

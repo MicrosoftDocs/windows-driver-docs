@@ -1,13 +1,8 @@
 ---
 title: GUID_NDIS_GEN_PCI_DEVICE_CUSTOM_PROPERTIES
-author: windows-driver-content
 description: WMI clients can use the GUID_NDIS_GEN_PCI_DEVICE_CUSTOM_PROPERTIES method GUID to determine the current link state.
 ms.assetid: a02b9049-e521-41df-ab4d-41e334ef779e
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -GUID_NDIS_GEN_PCI_DEVICE_CUSTOM_PROPERTIES Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -54,9 +49,9 @@ Requirements
 
 [**NDIS\_WMI\_METHOD\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/ff567903)
 
- 
+ 
 
- 
+ 
 
 
 

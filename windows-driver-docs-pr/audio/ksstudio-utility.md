@@ -10,11 +10,7 @@ keywords:
 - testing KS filter graphs WDK audio
 - audio filter graphs WDK
 - graphical representation WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,9 +34,9 @@ An earlier version of KsStudio, which is named Grapher (Grapher.exe), is include
 
 For more information about KsStudio, see the help file for the KsStudio utility in the WDK.
 
- 
+ 
 
- 
+ 
 
 
 

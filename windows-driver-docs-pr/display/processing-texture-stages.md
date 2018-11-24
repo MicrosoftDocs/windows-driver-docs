@@ -8,11 +8,7 @@ keywords:
 - D3DDP2OP_TEXTURESTAGESTATE
 - D3DHAL_DP2TEXTURESTAGESTATE
 - texture management WDK Direct3D , stages
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,11 +30,11 @@ Other useful information pertaining to multiple texture implementation can be fo
 
 **Note**   DirectX 9.0 and later applications can use values in the D3DSAMPLERSTATETYPE enumeration to control the characteristics of sampler texture-related render states. In DirectX 8.0 and earlier, these sampler states were included in the D3DTEXTURESTAGESTATETYPE enumeration. The runtime maps user-mode sampler states (D3DSAMP\_*Xxx*) to kernel-mode D3DTSS\_*Xxx* values so that drivers are not required to process user-mode sampler states. For more information about D3DSAMPLERSTATETYPE, see the latest DirectX SDK documentation.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

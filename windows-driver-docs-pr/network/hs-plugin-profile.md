@@ -1,16 +1,11 @@
 ---
 title: HS_PLUGIN_PROFILE structure
-author: windows-driver-content
 description: The HS_PLUGIN_PROFILE structure provides information about the plugin. The members of this structure are set by the plugin during execution of the HSPluginInitPlugin function that is called by the host.
 ms.assetid: 0c4f7088-737e-479a-b46e-a55e96719775
 keywords: 
 - HS_PLUGIN_PROFILE structure Network Drivers Starting with Windows Vista
 - PHS_PLUGIN_PROFILE structure pointer Network Drivers Starting with Windows Vista
-ms.author: windowsdriverdev
-ms.date: 07/31/2017 
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 07/31/2017
 ms.localizationpriority: medium
 ---
 
@@ -43,7 +38,7 @@ Members
 **dwPluginCapabilities**  
 Required.
 
-A subset of the possible **HS\_FLAG\_CAPABILITY\_NETWORK\_\*** values. For more information about hotspot host capabilities, see [**Wi-Fi Hotspot Offloading Constants**](wi-fi-hotspot-offloading-constants.md).
+A subset of the possible **HS\_FLAG\_CAPABILITY\_NETWORK\_\\*** values. For more information about hotspot host capabilities, see [**Wi-Fi Hotspot Offloading Constants**](wi-fi-hotspot-offloading-constants.md).
 
 **dwNumNetworksSupported**  
 Required.
@@ -101,9 +96,9 @@ Requirements
 
 [**Wi-Fi Hotspot Offloading Constants**](wi-fi-hotspot-offloading-constants.md)
 
- 
+ 
 
- 
+ 
 
 
 

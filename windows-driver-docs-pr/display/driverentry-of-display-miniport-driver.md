@@ -11,11 +11,7 @@ api_location:
 - NtosKrnl.exe
 api_type:
 - DllExport
-ms.author: windowsdriverdev
 ms.date: 01/05/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -145,21 +141,17 @@ The [**DRIVER\_INITIALIZATION\_DATA**](https://msdn.microsoft.com/library/window
 
 **DriverEntry** should be made pageable.
 
-For kernel mode display-only driver (KMDOD) interface, the [KMDDOD_INITIALIZATION_DATA](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/dispmprt/ns-dispmprt-_kmddod_initialization_data) structure lists all functions that can be implemented by a KMDOD. All of these functions, except for the [DxgkDdiPresentDisplayOnly](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkddi_presentdisplayonly) function, can also be implemented by a full display miniport driver.  The DriverEntry function of the kernel mode display-only driver (KMDOD) supplies function pointers to the display port driver by filling in all members of a KMDDOD_INITIALIZATION_DATA structure and then passing that structure to the [DxgkInitializeDisplayOnlyDriver](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/dispmprt/nf-dispmprt-dxgkinitializedisplayonlydriver) function.
+For kernel mode display-only driver (KMDOD) interface, the [KMDDOD_INITIALIZATION_DATA](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dispmprt/ns-dispmprt-_kmddod_initialization_data) structure lists all functions that can be implemented by a KMDOD. All of these functions, except for the [DxgkDdiPresentDisplayOnly](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkddi_presentdisplayonly) function, can also be implemented by a full display miniport driver.  The DriverEntry function of the kernel mode display-only driver (KMDOD) supplies function pointers to the display port driver by filling in all members of a KMDDOD_INITIALIZATION_DATA structure and then passing that structure to the [DxgkInitializeDisplayOnlyDriver](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dispmprt/nf-dispmprt-dxgkinitializedisplayonlydriver) function.
 
 Note that if a KMDOD does not support the VSync control feature, it should not implement certain functions—see Saving Energy with VSync Control.
 
 The following structures and enumeration are also used with kernel mode display-only drivers:
 
-* [D3DKMT_MOVE_RECT](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/d3dkmdt/ns-d3dkmdt-_d3dkmt_move_rect)
-* [D3DKMT_PRESENT_DISPLAY_ONLY_FLAGS](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/d3dkmddi/ns-d3dkmddi-_d3dkmt_present_display_only_flags)
-* [DXGK_PRESENT_DISPLAY_ONLY_PROGRESS_ID](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/d3dkmddi/ne-d3dkmddi-_dxgk_present_display_only_progress_id)
-* [DXGKARG_PRESENT_DISPLAYONLY](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/d3dkmddi/ns-d3dkmddi-_dxgkarg_present_displayonly)
-* [DXGKARGCB_PRESENT_DISPLAYONLY_PROGRESS](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/d3dkmddi/ns-d3dkmddi-_dxgkargcb_present_displayonly_progress)
-
-
->[!Note]
->A KMDOD does not support the sleep power state. If it is placed in the sleep state, the driver will cause a system bugcheck to occur. There is no workaround available, by design.<br/>If the current display driver is not a Windows Display Driver Model (WDDM) 1.2 compliant driver, a KMDOD might fail to install, with error code 43 displayed. The KMDOD driver is actually installed, but it cannot be started. The workaround for this issue is to switch to the Microsoft Basic Display Adapter Driver before installing the KMDOD, or simply to reboot your system after installing the KMDOD.
+* [D3DKMT_MOVE_RECT](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmdt/ns-d3dkmdt-_d3dkmt_move_rect)
+* [D3DKMT_PRESENT_DISPLAY_ONLY_FLAGS](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/ns-d3dkmddi-_d3dkmt_present_display_only_flags)
+* [DXGK_PRESENT_DISPLAY_ONLY_PROGRESS_ID](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/ne-d3dkmddi-_dxgk_present_display_only_progress_id)
+* [DXGKARG_PRESENT_DISPLAYONLY](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/ns-d3dkmddi-_dxgkarg_present_displayonly)
+* [DXGKARGCB_PRESENT_DISPLAYONLY_PROGRESS](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/ns-d3dkmddi-_dxgkargcb_present_displayonly_progress)
 
 
 Requirements
@@ -197,9 +189,9 @@ Requirements
 
 [*DxgkDdiUnload*](https://msdn.microsoft.com/library/windows/hardware/ff560801)
 
- 
+ 
 
- 
+ 
 
 
 

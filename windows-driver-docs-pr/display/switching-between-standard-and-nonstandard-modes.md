@@ -5,11 +5,7 @@ ms.assetid: 15939910-b325-47ff-b4ed-bbaeec4149bd
 keywords:
 - nonstandard display modes WDK DirectX 9.0 , switching between standard and nonstandard modes
 - switching between standard and nonstandard modes WDK DirectX 9.0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -53,9 +49,9 @@ A DirectX 9.0 driver creates the standard primary surface for a standard display
 
     When the driver destroys the dummy surface, it should ensure that the standard format is reprogrammed in the display device.
 
- 
+ 
 
- 
+ 
 
 
 

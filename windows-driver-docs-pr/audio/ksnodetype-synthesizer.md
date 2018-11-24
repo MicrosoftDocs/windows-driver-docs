@@ -9,11 +9,7 @@ api_name:
 - KSNODETYPE_SYNTHESIZER
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -69,9 +65,9 @@ A synth node can also support the following optional [KSPROPSETID\_Synth](ksprop
 
 [**KSPROPERTY\_SYNTH\_DLS\_WAVEFORMAT**](https://msdn.microsoft.com/library/windows/hardware/ff537400)
 
- 
+ 
 
- 
+ 
 
 
 

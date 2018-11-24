@@ -10,23 +10,11 @@ api_name:
 api_type:
 - NA
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # CM_Remove_SubTree
 
 This function is reserved for system use.
 
-
-
-
-
-This function is obsolete and no longer supported in Windows 2000 and later versions of Windows. Use [**CM_Query_And_Remove_Subtree**](https://msdn.microsoft.com/library/windows/hardware/ff539722) instead.
-
- 
-
- 
-
-
-
-
-
+This function is obsolete and no longer supported in Windows 2000 and later versions of Windows. Use [**CM_Query_And_Remove_Subtree**](https://docs.microsoft.com/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_query_and_remove_subtreew) instead.

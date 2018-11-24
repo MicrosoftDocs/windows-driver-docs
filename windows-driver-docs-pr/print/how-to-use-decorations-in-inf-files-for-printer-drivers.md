@@ -1,6 +1,5 @@
 ---
 title: How to Use Decorations in INF Files for Printer Drivers
-author: windows-driver-content
 description: How to Use Decorations in INF Files for Printer Drivers
 ms.assetid: 772e2797-8019-4715-870c-b7cd2b8e65f2
 keywords:
@@ -10,11 +9,7 @@ keywords:
 - undecorated INF WDK printer
 - INF files WDK print , decorations
 - decorated INF WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,7 +24,7 @@ The following examples show how to write an INF file that can be used to install
 
 The first example shows how to use an undecorated INF Models section to install an x64 driver on versions of Windows before Windows XP, or on an x86 or Itanium-based machine running Windows XP or Windows Server 2003. The NTamd64 decoration in the second INF Models section causes an x64 driver to be installed on a machine of any processor architecture that is running Windows Server 2003 with SP1 or later.
 
-```
+```cpp
 [MANUFACTURER]
 %Acme Corp.% = Acme, NTamd64
 ...
@@ -45,7 +40,7 @@ The first example shows how to use an undecorated INF Models section to install 
 
 The next example shows how to use an undecorated INF Models section to install an Itanium-based driver on versions of Windows before Windows XP, or on an x86 machine running Windows XP or Windows Server 2003 before SP1. The NTia64 decoration in the second INF Models section causes an Itanium-based driver to be installed on a machine of any processor architecture that is running Windows Server 2003 with SP1 or later.
 
-```
+```cpp
 [MANUFACTURER]
 %Acme Corp.% = Acme, NTia64
 ...
@@ -61,7 +56,7 @@ The next example shows how to use an undecorated INF Models section to install a
 
 In the next example, the INF Models section does not require a decoration. It is unnecessary to specify the processor architecture because an undecorated section is assumed to refer to an x86 driver. It is permissible to add an INF Models section with an NTx86 decoration, but keep in mind that you should also include an undecorated INF Models section for versions of Windows before Windows Server 2003 with SP1.
 
-```
+```cpp
 [MANUFACTURER]
 %Acme Corp.% = Acme
 ...
@@ -76,7 +71,7 @@ This section shows how to write an INF file that can be used to install printer 
 
 To create an INF file that can be used to install drivers for multiple architectures, write an INF Models section, and then make as many copies of it as necessary so that each architecture that is supported has its own INF Models section. Add the appropriate decoration for each processor architecture to each of the resulting INF Models sections, as shown in the following example.
 
-```
+```cpp
 [MANUFACTURER]
 %Acme Corp% = Acme, NTamd64, NTia64
 ...
@@ -135,9 +130,9 @@ Acme Model 1 = "Acme LaserWhiz 100 PS"
 Location = "Acme CD ROM"
 ```
 
- 
+ 
 
- 
+ 
 
 
 

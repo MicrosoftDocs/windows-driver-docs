@@ -2,11 +2,7 @@
 title: Determine which Windows device is connecting to the network
 description: Determine which Windows device is being used to connect to the network
 ms.assetid: ea9a07cd-ad6e-4c49-aae0-fc9eee9b17c8
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,9 +21,9 @@ account.currentDeviceInformation.deviceId
 
 [Common tasks for mobile broadband Windows Runtime APIs](common-tasks-for-mobile-broadband-windows-runtime-apis.md)
 
- 
+ 
 
- 
+ 
 
 
 

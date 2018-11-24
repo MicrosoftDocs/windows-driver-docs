@@ -3,11 +3,7 @@ title: Manifest File Format
 description: Manifest File Format
 ms.assetid: 1b0dc305-878c-4eb2-9e92-f7f7017ae4eb
 keywords: ["LogViewer, manifest, file format"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +23,7 @@ A manifest file is made up of the following basic elements: module labels, categ
 
 A module label simply declares what DLL exports the functions that are declared thereafter. For example, if your manifest file is for logging a group of functions from Comctl32.dll, you would include the following module label before declaring any function prototypes:
 
-```
+```cpp
 module COMCTL32.DLL:
 ```
 
@@ -37,7 +33,7 @@ A module label must appear before any function declarations in a manifest file. 
 
 Similar to a module label, a category label identifies which "category" all subsequent functions and/or COM interfaces belong to. For example, if you are creating a Comctl32.dll manifest file, you can use the following as your category label:
 
-```
+```cpp
 category CommonControls:
 ```
 
@@ -47,7 +43,7 @@ A manifest file can contain any number of category labels.
 
 A function declaration is what actually prompts Logger to log something. It is nearly identical to a function prototype found in a C/C++ header file. There are a few notable additions to the format, which can be best illustrated by the following example:
 
-```
+```cpp
 HANDLE [gle] FindFirstFileA(
        LPCSTR lpFileName,
        [out] LPWIN32_FIND_DATAA lpFindFileData);
@@ -57,7 +53,7 @@ The function **FindFirstFileA** takes two parameters. The first is *lpFileName*,
 
 The HANDLE type is declared as follows:
 
-```
+```cpp
 value DWORD HANDLE
 {
 #define NULL                       0 [fail]
@@ -75,7 +71,7 @@ A COM interface is basically a vector of functions that can be called by a COM o
 
 Consider the following example:
 
-```
+```cpp
 interface IDispatch : IUnknown
 {
     HRESULT GetTypeInfoCount( UINT pctinfo  );
@@ -203,11 +199,11 @@ nBottom 300</td>
 </tbody>
 </table>
 
- 
+ 
 
 Type definitions in manifest files work like C/C++ typedefs. For example, the following statement defines PLONG as a pointer to a LONG:
 
-```
+```cpp
 typedef LONG *PLONG;
 ```
 
@@ -218,7 +214,7 @@ There are four special types: value, mask, GUID, and COM\_INTERFACE\_PTR.
 <span id="Value_Types"></span><span id="value_types"></span><span id="VALUE_TYPES"></span>Value Types  
 A value is a basic type that is broken out into human-readable labels. Most function documentation only refers to the **\#define** value of a particular constant used in a function. For example, most programmers are unaware of what the actual value is for all the codes returned by **GetLastError**, making it unhelpful to see a cryptic numerical value in LogViewer. The manifest value overcomes this by allowing value declarations like as in the following example:
 
-```
+```cpp
 value LONG ChangeNotifyFlags
 {
 #define SHCNF_IDLIST      0x0000        // LPITEMIDLIST
@@ -235,7 +231,7 @@ This declares a new type called "ChangeNotifyFlags" derived from LONG. If this i
 <span id="Mask_Types"></span><span id="mask_types"></span><span id="MASK_TYPES"></span>Mask Types  
 Similar to value types, a mask type is a basic type (usually a DWORD) that is broken out into human-readable labels for each of the bits that have meaning. Take the following example:
 
-```
+```cpp
 mask DWORD DirectDrawOptSurfaceDescCapsFlags
 {
 #define DDOSDCAPS_OPTCOMPRESSED                 0x00000001
@@ -246,20 +242,20 @@ mask DWORD DirectDrawOptSurfaceDescCapsFlags
 
 This declares a new type derived from DWORD that, if used as a function parameter, will have the individual values broken out for the user in LogViewer. So, if the value is 0x00000005, LogViewer will display:
 
-```
+```cpp
 DDOSDCAPS_OPTCOMPRESSED | DDOSDCAPS_MONOLITHICMIPMAP
 ```
 
 <span id="GUID_Types"></span><span id="guid_types"></span><span id="GUID_TYPES"></span>GUID Types  
 GUIDs are 16-byte globally-unique identifiers that are used extensively in COM. They are declared in two ways:
 
-```
+```cpp
 struct __declspec(uuid("00020400-0000-0000-C000-000000000046")) IDispatch;
 ```
 
 or
 
-```
+```cpp
 class __declspec(uuid("11219420-1768-11D1-95BE-00609797EA4F")) ShellLinkObject;
 ```
 
@@ -272,7 +268,7 @@ The COM\_INTERFACE\_PTR type is the base type of a COM interface pointer. When y
 
 Here is an example:
 
-```
+```cpp
 STDAPI CoCreateInstance(
   REFCLSID rclsid,     //Class identifier (CLSID) of the object
   LPUNKNOWN pUnkOuter, //Pointer to controlling IUnknown
@@ -288,15 +284,15 @@ In this example, *riid* has an \[iid\] modifier. This indicates to Logger that t
 
 It is also possible to declare a function as follows:
 
-```
+```cpp
 DDRESULT DirectDrawCreateClipper( DWORD dwFlags, [out] LPDIRECTDRAWCLIPPER *lplpDDClipper, IUnknown *pUnkOuter );
 ```
 
 In this example, LPDIRECTDRAWCLIPPER is defined as a pointer to the **IDirectDrawClipper** interface. Since Logger can identify which interface type is being returned in the *lplpDDClipper* parameter, there is no need for an \[iid\] modifier on any of the other parameters.
 
- 
+ 
 
- 
+ 
 
 
 

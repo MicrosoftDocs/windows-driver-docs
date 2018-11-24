@@ -1,13 +1,8 @@
 ---
 title: TWAIN Compatibility
-author: windows-driver-content
 description: TWAIN Compatibility
 ms.assetid: 270e62dd-590c-4495-be22-002957932031
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,9 +20,9 @@ This section discusses TWAIN compatibility and covers the following topics:
 
 [Support for TWAIN-Compatible Applications](support-for-twain-compatible-applications.md)
 
- 
+ 
 
- 
+ 
 
 
 

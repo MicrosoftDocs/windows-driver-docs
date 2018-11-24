@@ -11,11 +11,7 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +23,7 @@ The KSPROPERTY\_CROSSBAR\_PININFO property retrieves the type of physical connec
 ## <span id="ddk_ksproperty_crossbar_pininfo_ks"></span><span id="DDK_KSPROPERTY_CROSSBAR_PININFO_KS"></span>
 
 
-### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
+### Usage Summary Table
 
 <table>
 <colgroup>
@@ -51,13 +47,13 @@ The KSPROPERTY\_CROSSBAR\_PININFO property retrieves the type of physical connec
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Filter</p></td>
-<td><p>[<strong>KSPROPERTY_CROSSBAR_PININFO_S</strong>](https://msdn.microsoft.com/library/windows/hardware/ff565123)</p></td>
-<td><p>[<strong>KSPROPERTY_CROSSBAR_PININFO_S</strong>](https://msdn.microsoft.com/library/windows/hardware/ff565123)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565123" data-raw-source="[&lt;strong&gt;KSPROPERTY_CROSSBAR_PININFO_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565123)"><strong>KSPROPERTY_CROSSBAR_PININFO_S</strong></a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565123" data-raw-source="[&lt;strong&gt;KSPROPERTY_CROSSBAR_PININFO_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565123)"><strong>KSPROPERTY_CROSSBAR_PININFO_S</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a KSPROPERTY\_CROSSBAR\_PININFO\_S structure.
 
@@ -77,16 +73,16 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
-[**KSPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff564262)
+[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)
 
 [**KSPROPERTY\_CROSSBAR\_PININFO\_S**](https://msdn.microsoft.com/library/windows/hardware/ff565123)
 
- 
+ 
 
- 
+ 
 
 
 

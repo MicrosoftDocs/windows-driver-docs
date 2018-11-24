@@ -7,11 +7,7 @@ keywords:
 - HD Audio, Universal Audio Architecture
 - UAA WDK
 - Universal Audio Architecture WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,9 +28,9 @@ This section includes:
 
 [Communicating Verbs with the HD Audio Codec](communicating-verbs-with-the-hd-audio-codec.md)
 
- 
+ 
 
- 
+ 
 
 
 

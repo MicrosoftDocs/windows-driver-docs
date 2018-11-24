@@ -2,11 +2,7 @@
 title: SMS API
 description: SMS API
 ms.assetid: d39d82b0-d88d-4448-a24a-22f329e95106
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +30,9 @@ For more info about the SMS API, see [**Windows.Devices.Sms namespace**](https:/
 
 [List of mobile broadband Windows Runtime APIs](list-of-mobile-broadband-windows-runtime-apis.md)
 
- 
+ 
 
- 
+ 
 
 
 

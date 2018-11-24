@@ -9,11 +9,7 @@ api_name:
 - IRP_MJ_READ
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -148,9 +144,9 @@ File systems round write and read operations at end of file up to a multiple of 
 
 [**ZwReadFile**](https://msdn.microsoft.com/library/windows/hardware/ff567072)
 
- 
+ 
 
- 
+ 
 
 
 

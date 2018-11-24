@@ -7,11 +7,7 @@ keywords:
 - network drivers WDK , miniport drivers
 - NDIS WDK , miniport drivers
 - NDIS miniport drivers WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -45,9 +41,9 @@ This section describes NDIS miniport drivers and includes the following topics:
 
 [Standardized INF Keywords for Network Devices](standardized-inf-keywords-for-network-devices.md)
 
- 
+ 
 
- 
+ 
 
 
 

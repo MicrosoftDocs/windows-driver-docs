@@ -5,11 +5,7 @@ ms.assetid: 08f51612-2e2b-439a-8318-43884086828c
 keywords:
 - SAN service providers WDK , extensions
 - extensions WDK SANs
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -49,9 +45,9 @@ Transfers data from an RDMA buffer in the address space that a socket's remote p
 <a href="" id="wsprdmawrite"></a>[**WSPRdmaWrite**](https://msdn.microsoft.com/library/windows/hardware/ff566306)  
 Transfers data from a source buffer in the address space that a local socket can access to a target RDMA buffer in the address space that the socket's remote peer can access.
 
- 
+ 
 
- 
+ 
 
 
 

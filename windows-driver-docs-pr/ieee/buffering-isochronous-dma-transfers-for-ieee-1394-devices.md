@@ -1,17 +1,12 @@
 ---
 title: Buffering Isochronous DMA Transfers for IEEE 1394 Devices
-author: windows-driver-content
 description: Buffering Isochronous DMA Transfers for IEEE 1394 Devices
 ms.assetid: 5a08303b-8a4a-4c55-ba48-c4d5ea06157e
 keywords:
 - isochronous I/O WDK IEEE 1394 bus , buffering DMA transfers
 - buffers WDK IEEE 1394 bus
 - DMA transfers WDK IEEE 1394 bus
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +22,9 @@ The following diagram illustrates buffers used in isochronous transfer.
 
 ![diagram illustrating buffers used in isochronous transfer](images/1394lin.png)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,11 +3,7 @@ title: Bug Check 0x2B PANIC_STACK_SWITCH
 description: The PANIC_STACK_SWITCH bug check has a value of 0x0000002B. This indicates that the kernel mode stack was overrun.
 ms.assetid: 0ab28a16-979d-4b40-812a-a31fac3f6be8
 keywords: ["Bug Check 0x2B PANIC_STACK_SWITCH", "PANIC_STACK_SWITCH"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The PANIC\_STACK\_SWITCH bug check has a value of 0x0000002B. This indicates that the kernel mode stack was overrun.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## PANIC\_STACK\_SWITCH Parameters
 
@@ -58,16 +54,16 @@ The PANIC\_STACK\_SWITCH bug check has a value of 0x0000002B. This indicates tha
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
 
 This error normally appears when a kernel-mode driver uses too much stack space. It can also appear when serious data corruption occurs in the kernel.
 
- 
+ 
 
- 
+ 
 
 
 

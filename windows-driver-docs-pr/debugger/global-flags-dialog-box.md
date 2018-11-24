@@ -3,11 +3,7 @@ title: Global Flags Dialog Box
 description: Global Flags Dialog Box
 ms.assetid: c6987d72-4141-45f2-af06-f4c7040a7e6b
 keywords: ["GFlags, dialog box"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -51,9 +47,9 @@ Use care in interpreting the **Enable page heap** check box for an image file in
 
 To determine whether a full or standard page heap verification is enabled for a program, at the command line, type **gflags /p**. In the resulting display, **traces** indicates that standard page heap verification is enabled for the program and **full traces** indicates that full page heap verification is enabled for the program.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -10,11 +10,7 @@ keywords:
 - audio jacks WDK
 - speakers WDK audio , filter factories
 - instantiating filters WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -56,9 +52,9 @@ To obtain the filter descriptor from the miniport driver, the port driver calls 
 
 For an example of how a driver sets up its PCFILTER\_DESCRIPTOR structure, see the header file Table.h in the sb16 sample audio driver in the Windows Driver Kit (WDK).
 
- 
+ 
 
- 
+ 
 
 
 

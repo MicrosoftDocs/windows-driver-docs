@@ -7,11 +7,7 @@ keywords:
 - adapters WDK networking , starting
 - miniport adapters WDK networking , pausing
 - adapters WDK networking , pausing
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +26,9 @@ The following topics provide more information about starting and pausing and ada
 -   [Starting an Adapter](starting-an-adapter.md)
 -   [Pausing an Adapter](pausing-an-adapter.md)
 
- 
+ 
 
- 
+ 
 
 
 

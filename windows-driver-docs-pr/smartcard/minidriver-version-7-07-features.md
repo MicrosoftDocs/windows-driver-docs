@@ -2,11 +2,7 @@
 title: Minidriver Version 7.07 Features
 description: Minidriver Version 7.07 Features
 ms.assetid: F23211BB-798D-45C4-9729-D8D7CB4D3A1D
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,9 +18,9 @@ The following features are introduced in this version.
 
     Windows 8 includes with a generic minidriver that supports the GIDS Card Edge with Microsoft Electrical profile. Refer to [Windows Inbox Smart Card Minidriver](windows-inbox-smart-card-minidriver.md) for more information on the process that Windows follows to identify and pair a GIDS card with the inbox minidriver. The generic minidriver is also available starting with Windows 7 with Service Pack 1 (SP1).
 
- 
+ 
 
- 
+ 
 
 
 

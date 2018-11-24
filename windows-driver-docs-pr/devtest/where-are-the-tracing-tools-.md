@@ -2,11 +2,7 @@
 title: Where are the tracing tools
 description: Where are the tracing tools
 ms.assetid: fceb5c8b-bc0a-4708-b925-e6fb76328f7e
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,9 +15,9 @@ In the Windows Driver Kit (WDK) 8.1, many of the tracing tools, such as [Tracef
 
 For a complete list of the tracing tools and their locations, see [Survey of Software Tracing Tools](survey-of-software-tracing-tools.md) and the [Index of Windows Driver Kit Tools](index-of-windows-driver-kit-tools.md).
 
- 
+ 
 
- 
+ 
 
 
 

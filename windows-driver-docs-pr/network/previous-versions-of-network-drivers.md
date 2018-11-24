@@ -4,11 +4,7 @@ description: Previous Versions of Network Drivers
 ms.assetid: BA8A0740-311E-4251-89C0-E0439D55C81D
 keywords:
 - Previous versions of network drivers WDK, older Windows network drivers, deprecated network drivers
-ms.author: windowsdriverdev
 ms.date: 12/06/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

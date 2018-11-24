@@ -1,13 +1,8 @@
 ---
 title: WDI_TLV_UNICAST_CIPHER_ALGO_LIST
-author: windows-driver-content
 description: WDI_TLV_UNICAST_CIPHER_ALGO_LIST is a TLV that contains a list of unicast cipher algorithms.
 ms.assetid: 67FAEE8A-1CD6-4430-92C1-84E9F43BEF63
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_UNICAST_CIPHER_ALGO_LIST Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -35,7 +30,7 @@ The size (in bytes) of the array of [**WDI\_CIPHER\_ALGORITHM**](https://msdn.mi
 |-----------------------------------------------------------------|----------------------------------------|
 | [**WDI\_CIPHER\_ALGORITHM**](https://msdn.microsoft.com/library/windows/hardware/dn897802)\[\] | An array of unicast cipher algorithms. |
 
- 
+ 
 
 Requirements
 ------------
@@ -61,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

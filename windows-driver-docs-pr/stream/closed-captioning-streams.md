@@ -1,17 +1,12 @@
 ---
 title: Closed Captioning Streams
-author: windows-driver-content
 description: Closed Captioning Streams
 ms.assetid: ee6cfac6-c532-4e73-81b2-ee767d2d6a4d
 keywords:
 - closed captioning streams WDK DVD decoder
 - group of pictures WDK DVD decoder
 - GOP WDK DVD decoder
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,9 +20,9 @@ Support for closed captioning is required. The DVD decoder minidriver must provi
 
 When a group of pictures (GOP) start code is processed in the video stream, the DVD decoder minidriver looks for user data (closed captioning information) and returns that information using one of the stream request blocks (SRBs) present on the closed captioning stream queue. All data discontinuity and format block changes should be propagated from the video pin to the closed captioning pin.
 
- 
+ 
 
- 
+ 
 
 
 

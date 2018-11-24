@@ -3,6 +3,7 @@ title: ScsiReadCapacity
 description: ScsiReadCapacity
 ms.assetid: ee4a0d3f-028b-4d25-badf-393198da3191
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # ScsiReadCapacity
@@ -14,9 +15,9 @@ This WMI method belongs to the unpublished [MSiSCSI\_Operations WMI Class](msisc
 
 Miniport drivers that implement the MSiSCSI\_Operations WMI class must support **ScsiReadCapacity**.
 
- 
+ 
 
- 
+ 
 
 
 

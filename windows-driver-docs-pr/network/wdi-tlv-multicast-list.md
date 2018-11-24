@@ -1,13 +1,8 @@
 ---
 title: WDI_TLV_MULTICAST_LIST
-author: windows-driver-content
 description: WDI_TLV_MULTICAST_LIST is a TLV that contains an array of multicast MAC addresses.
 ms.assetid: 5023557A-1BC5-4A4E-A77C-20353C0CA3FD
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_MULTICAST_LIST Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -35,7 +30,7 @@ The size (in bytes) of the array of [**WDI\_MAC\_ADDRESS**](https://msdn.microso
 |-------------------------------------------------------|--------------------------------------|
 | [**WDI\_MAC\_ADDRESS**](https://msdn.microsoft.com/library/windows/hardware/dn926071)\[\] | An array of multicast MAC addresses. |
 
- 
+ 
 
 Requirements
 ------------
@@ -61,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

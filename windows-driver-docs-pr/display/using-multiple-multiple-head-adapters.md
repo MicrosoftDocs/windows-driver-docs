@@ -4,11 +4,7 @@ description: Using Multiple Multiple-Head Adapters
 ms.assetid: 632652f9-8d21-4a2f-91a6-03e3ba47d632
 keywords:
 - multiple-head hardware WDK DirectX 9.0 , adapters
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,9 +16,9 @@ ms.localizationpriority: medium
 
 The driver can provide multiple-head support if the system is equipped with more than one multiple-head card. If the driver owns more than one multiple-head card, then the driver must ensure that the separate multiple-head cards remain independent.
 
- 
+ 
 
- 
+ 
 
 
 

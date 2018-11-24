@@ -6,11 +6,7 @@ keywords:
 - Device setup WDK device installations , about device installations
 - device installations WDK , about device installations
 - installing devices WDK , about device installations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,9 +32,9 @@ Windows installs devices when the system restarts and at any time after a system
 
 For more information about device management and installation, see the [Driver Installation](http://go.microsoft.com/fwlink/p/?linkid=70230) website.
 
- 
+ 
 
- 
+ 
 
 
 

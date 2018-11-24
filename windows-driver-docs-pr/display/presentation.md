@@ -9,11 +9,7 @@ keywords:
 - visible results WDK DirectX 8.0
 - DDLT_PRESENTATION
 - DDBLT_LAST_PRESENTATION
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +29,9 @@ If the driver cannot effectively determine when a DDBLT\_LAST\_PRESENTATION blt 
 
 Finally, in the case of multiple windowed applications running simultaneously, the driver should count presentation blts based on the source of each blt, rather than the primary, that is, the driver is allowed to queue three frames per window/render target. This results in better performance.
 
- 
+ 
 
- 
+ 
 
 
 

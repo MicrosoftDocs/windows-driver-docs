@@ -2,11 +2,7 @@
 title: Rendering on a discrete GPU using cross-adapter resources
 description: Starting in Windows 8.1, a discrete GPU uses a cross-adapter resource as A destination for bit-block transfer (bitblt) or present operations, but without stretching or color conversion.The resource that the operating system requests the user-mode display driver to perform the bitblt or present operation to and from.integrated GPU uses a cross-adapter resource as A texture during composition by the Desktop Window Manager (DWM).A render target for GDI hardware acceleration.A display primary.Not as a render target for 3-D operations.
 ms.assetid: 88CE2D2F-BBD8-4CE4-9183-BBFB0659990E
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -61,9 +57,9 @@ The following sections describe the architecture and processes involved in three
 4.  When the application calls a **Present** method, the Direct3D runtime instructs the discrete GPU's user-mode display driver to perform a copy to a cross-adapter resource.
 5.  The integrated GPU's user-mode display driver and display miniport driver are instructed to flip to this cross-adapter resource.
 
- 
+ 
 
- 
+ 
 
 
 

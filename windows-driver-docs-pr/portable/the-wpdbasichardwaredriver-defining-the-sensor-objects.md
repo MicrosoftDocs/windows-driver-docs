@@ -1,11 +1,7 @@
 ---
 Description: Defining the Sensor Objects
 title: Defining the Sensor Objects
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,7 +19,7 @@ The WpdHelloWorldDriver supports the objects that are shown in the following tab
 | Folder  | An object that exposes properties, for example, a folder name.                                                             |
 | File    | An object that exposes properties, for example, a file name and actual file contents.                                      |
 
- 
+ 
 
 Because the sample sensors do not support a storage, folder, or file object, the WpdBasicHardwareDriver does not implement these objects. Instead, each sensor type is represented by a single object. The following table lists the objects that the WpdBasicHardwareDriver supports.
 
@@ -40,17 +36,17 @@ Because the sample sensors do not support a storage, folder, or file object, the
 | Memsic       | A functional object that displays the 2-axis accelerometer reading, as well as an update interval property that can be edited.             |
 | Hitachi      | A functional object that displays the 3-axis accelerometer reading, as well as an update interval property that can be edited.             |
 
- 
+ 
 
 In WPD, objects are identified by strings. The string identifier for the device object is defined in the *Portabledevice.h* file:
 
-```
+```cpp
 #define WPD_DEVICE_OBJECT_ID  L"DEVICE"
 ```
 
 The string identifiers for the sensor objects are defined in the *WpdObjectProperties.h* file for the WpdBasicHardwareDriver:
 
-```
+```cpp
 #define SENSOR_OBJECT_ID             L"Sensor"
 #define SENSOR_OBJECT_NAME_VALUE          L"Parallax Sensor"
 #define COMPASS_SENSOR_OBJECT_ID              L"Compass"
@@ -75,7 +71,7 @@ The string identifiers for the sensor objects are defined in the *WpdObjectPrope
 
 These object identifier constants are passed to the methods in source modules that handle object enumeration (*WpdObjectEnum.cpp*), property handling (*WpdObjectProperties.cpp*), and device-capability retrieval (*WpdCapabilities.cpp*). The following excerpt from the **WpdObjectEnumerator::OnFindNext** method shows how these identifiers are used in object enumeration for the sample driver:
 
-```
+```cpp
 // If the enumeration context reports that there are more objects to return, then continue, if not,
     // return an empty results set.
     if ((hr == S_OK) && (pEnumeratorContext != NULL) && (pEnumeratorContext->HasMoreChildrenToEnumerate() == TRUE))
@@ -131,9 +127,9 @@ These object identifier constants are passed to the methods in source modules th
 
 In the WpdBasicHardwareDriver sample, the driver defines a single functional category that encompasses all sensors. A driver developer can extend this sample and define separate functional categories for each sensor type so that applications can identify which sensors the driver supports. This requires that the developer modify the WpdCapabilities::OnGetFunctionalCategories method so that it correctly returns these new categories.
 
- 
+ 
 
- 
+ 
 
 
 

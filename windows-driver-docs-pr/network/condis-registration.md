@@ -5,11 +5,7 @@ ms.assetid: 6db5a4a2-f090-4688-99fa-9d22ca7077ed
 keywords:
 - CoNDIS WDK networking , registration
 - registering CoNDIS drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +27,9 @@ This section includes the following topics:
 
 [CoNDIS MCM Registration](condis-mcm-registration.md)
 
- 
+ 
 
- 
+ 
 
 
 

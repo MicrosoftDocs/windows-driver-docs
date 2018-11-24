@@ -6,11 +6,7 @@ keywords:
 - video processing WDK DirectX VA , video frame processing
 - video frame processing WDK DirectX VA
 - frames WDK DirectX VA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,9 +17,9 @@ The Microsoft Direct3D runtime calls the user-mode display driver's [**VideoProc
 
 After the render target surface for video processing is set, the user-mode display driver can receive calls to its [**VideoProcessBlt**](https://msdn.microsoft.com/library/windows/hardware/ff570495) function to process video frames between the begin-frame and end-frame time period.
 
- 
+ 
 
- 
+ 
 
 
 

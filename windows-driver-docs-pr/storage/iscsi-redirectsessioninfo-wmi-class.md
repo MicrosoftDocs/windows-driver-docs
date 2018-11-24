@@ -3,6 +3,7 @@ title: ISCSI\_RedirectSessionInfo WMI Class
 description: ISCSI\_RedirectSessionInfo WMI Class
 ms.assetid: eb1ec866-2dcd-4099-a24f-ae1d0c702b95
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # ISCSI\_RedirectSessionInfo WMI Class
@@ -10,7 +11,7 @@ ms.localizationpriority: medium
 
 The ISCSI\_RedirectSessionInfo WMI class contains a collection of connections for an iSCSI session. This class is defined as follows in *Mgmt.mof.*
 
-```
+```cpp
 class ISCSI_RedirectSessionInfo
 {
     [read,
@@ -43,9 +44,9 @@ class ISCSI_RedirectSessionInfo
 
 When the WMI tool suite compiles the preceding class definition, it produces the [**ISCSI\_RedirectSessionInfo**](https://msdn.microsoft.com/library/windows/hardware/ff561563) data structure.
 
- 
+ 
 
- 
+ 
 
 
 

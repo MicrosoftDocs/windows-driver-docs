@@ -1,13 +1,8 @@
 ---
 title: Device-Specific Method for Microsoft thermal extensions
-author: windows-driver-content
 description: To support more flexible design of thermal zones and thermal sensors, Windows supports extensions to the ACPI thermal zone model.
 ms.assetid: A8D90493-EE4A-40EC-BE8D-54B1C9EE94AD
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -57,11 +52,11 @@ If a temperature sensor device is reported via \_DSM function index 2, the therm
 
 **Note**  Function index 0 of every \_DSM is a query function that returns the set of supported function indexes, and is always required. For more information, see section 9.14.1, "\_DSM (Device Specific Method)", of the ACPI 5.0 specification.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

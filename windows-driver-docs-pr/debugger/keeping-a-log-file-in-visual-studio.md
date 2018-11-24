@@ -2,17 +2,13 @@
 title: Keeping a Log File in Visual Studio
 description: The Windows Debugger can write a log file that records the debugging session.
 ms.assetid: 6A7588D0-A477-4BE9-874F-3AFB52561903
-ms.author: domars
 ms.date: 05/11/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # Keeping a Log File in Visual Studio
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > This feature is not available in Windows 10, version 1507 and later versions of the WDK.
 >
 
@@ -42,9 +38,9 @@ To close an open log file, enter the [**.logclose (Close Log File)**](-logclose-
 
 To determine the log file status, enter the [**.logfile (Display Log File Status)**](-logfile--display-log-file-status-.md) command.
 
- 
+ 
 
- 
+ 
 
 
 

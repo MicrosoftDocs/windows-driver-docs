@@ -7,11 +7,7 @@ keywords:
 - multiple operating systems WDK , INF files
 - cross-platform INF files WDK
 - operating systems WDK , cross-operating system INF files
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -50,6 +46,14 @@ The following table summarizes the system-supported platform extensions that can
 <td align="left"><p>The section contains instructions for installing a device or set of device-compatible models on x86-based systems that are supported by Windows XP and later.</p></td>
 </tr>
 <tr class="even">
+<td align="left"><p><strong>.ntarm</strong></p></td>
+<td align="left"><p>The section contains instructions for installing a device or set of device-compatible models on ARM-based systems that are supported by Windows 8 and later.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p><strong>.ntarm64</strong></p></td>
+<td align="left"><p>The section contains instructions for installing a device or set of device-compatible models on ARM64-based systems that are supported by Windows 10 version 1709 and later.</p></td>
+</tr>
+<tr class="even">
 <td align="left"><p><strong>.nt</strong></p></td>
 <td align="left"><p>In versions of Windows earlier than Windows Server 2003 SP1, the section contains instructions for installing a device or set of device-compatible models on all systems that are supported by the operating system.</p>
 <p>Starting with Windows Server 2003 SP1, the section contains instructions for installing a device or set of device-compatible models on x86-based systems that are supported by the operating system.</p></td>
@@ -62,15 +66,15 @@ The following table summarizes the system-supported platform extensions that can
 </tbody>
 </table>
 
- 
+ 
 
-**Important**  Starting with Windows Server 2003 SP1, INF files must decorate entries in the [**INF Models section**](inf-models-section.md) with .**ntia64** or .**ntamd64** platform extensions to specify non-x86 target operating system versions. These platform extensions are not required in INF files for x86-based target operating system versions or non-PnP driver INF files (such as file system driver INF files for x64-based architectures).
+**Important**  Starting with Windows Server 2003 SP1, INF files must decorate entries in the [**INF Models section**](inf-models-section.md) with .**ntia64**, .**ntarm**, .**ntarm64** or .**ntamd64** platform extensions to specify non-x86 target operating system versions. These platform extensions are not required in INF files for x86-based target operating system versions or non-PnP driver INF files (such as file system driver INF files for x64-based architectures).
 
- 
+ 
 
-**Tip**   We highly recommend that you always decorate entries in the [**INF Models section**](inf-models-section.md) with platform extensions for target operating systems of Windows XP and later versions of Windows. For x86-based hardware platforms, you should avoid the use of the **.nt** platform extension and use **.ntx86** instead.
+**Tip**  We highly recommend that you always decorate entries in the [**INF Models section**](inf-models-section.md) with platform extensions for target operating systems of Windows XP and later versions of Windows. For x86-based hardware platforms, you should avoid the use of the **.nt** platform extension and use **.ntx86** instead.
 
- 
+ 
 
 ## In this section
 
@@ -88,9 +92,9 @@ For information about how to specify target operating systems through platform e
 
 For information about a sample INF file that can be used to install drivers in multiple operating system versions, see [Sample INF File for Device Installation on Multiple Versions of Windows](sample-inf-file-for-device-installation-on-multiple-versions-of-windows.md).
 
- 
+ 
 
- 
+ 
 
 
 

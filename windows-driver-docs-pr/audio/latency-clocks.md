@@ -7,11 +7,7 @@ keywords:
 - latency WDK audio , clocks
 - clocks WDK audio , latency
 - latency WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -39,9 +35,9 @@ All rendering devices have some amount of latency between the time they accept a
 
     The miniport driver is queried for [KSPROPSETID\_Synth](https://msdn.microsoft.com/library/windows/hardware/ff537486) and KSPROPERTY\_SYNTH\_LATENCYCLOCK. The miniport driver's property handler should return a latency clock that specifies, in terms of the master clock, the next time that data can be rendered on time. For example, if the master clock currently reads 50, and there are currently 25 units of latency, then the latency clock reads 75. The reason the clock is implemented in this way is that the latency does not need to be constant, and the returned value is of more use to applications than just the delta.
 
- 
+ 
 
- 
+ 
 
 
 

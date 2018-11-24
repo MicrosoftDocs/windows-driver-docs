@@ -1,6 +1,5 @@
 ---
 title: Version 3 XPSDrv Print Driver Components
-author: windows-driver-content
 description: Version 3 XPSDrv Print Driver Components
 ms.assetid: 7eced017-a6a6-4fa5-8965-ff6655f86b8c
 keywords:
@@ -10,11 +9,7 @@ keywords:
 - conversion rendering modules WDK XPSDrv
 - Version 3 XPS drivers WDK XPSDrv , about Version 3 XPS drivers
 - XPSDrv printer drivers WDK , Version 3 XPS drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -39,9 +34,9 @@ The following topics cover XPSDrv configuration issues:
 
 [Unidrv-based or PScript5-based XPSDrv Driver Changes](unidrv-based-or-pscript5-based-xpsdrv-driver-changes.md)
 
- 
+ 
 
- 
+ 
 
 
 

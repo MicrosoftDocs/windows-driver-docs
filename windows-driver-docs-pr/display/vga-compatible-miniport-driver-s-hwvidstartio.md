@@ -8,11 +8,7 @@ keywords:
 - HwVidStartIO
 - non-VGA-compatible video miniport drivers WDK
 - SVGA WDK video miniport
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +24,9 @@ Note that the miniport driver's *SvgaHwIoPortXxx* function might have buffered a
 
 When the miniport driver completes a save operation, the port driver automatically disables the current IOPM for [*VDM*](https://msdn.microsoft.com/library/windows/hardware/ff556344#wdkgloss-vdm)s and the miniport driver's *SvgaHwIoPortXxx* functions. The video port driver restores the IOPM automatically if the application is switched to full-screen mode again. It also resumes calling the miniport driver's *SvgaHwIoPortXxx* function, after it calls the miniport driver's *HwVidStartIO* function with the IOCTL\_VIDEO\_RESTORE\_HARDWARE\_STATE request.
 
- 
+ 
 
- 
+ 
 
 
 

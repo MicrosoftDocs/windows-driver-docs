@@ -1,13 +1,8 @@
 ---
 title: Device management namespace objects
-author: windows-driver-content
 description: The ACPI 5.0 specification defines several types of namespace objects that can be used to manage devices.
 ms.assetid: 26C3312D-B1B0-4843-BF4E-1B03630C0BDD
-ms.author: windowsdriverdev
 ms.date: 06/26/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,7 +18,7 @@ Windows Plug and Play finds and loads device drivers based on a device identifie
 
 The [Windows ACPI driver](https://docs.microsoft.com/windows-hardware/drivers/kernel/acpi-driver), Acpi.sys, assembles the values found in these objects into a variety of device identifier strings that can identify a device very specifically, or quite generically, depending on the needs of the driver. Some of the string patterns created to identify ACPI-enumerated devices are:
 
-``` syntax
+```syntax
 ACPI\VEN_vvv[v]&DEV_dddd&SUBSYS_sss[s]nnnn&REV_rrrr
 ACPI\VEN_vvv[v]&DEV_dddd&SUBSYS_sss[s]nnnn
 ACPI\VEN_vvv[v]&DEV_dddd&REV_rrrr

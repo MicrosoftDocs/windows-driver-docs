@@ -1,15 +1,10 @@
 ---
 title: Installing a Custom Plug and Play Printer Driver
-author: windows-driver-content
 description: Installing a Custom Plug and Play Printer Driver
 ms.assetid: 0269afbe-c7d1-4227-ad77-b921852d6a0c
 keywords:
 - customizing printer drivers WDK , Plug and Play
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,7 +28,7 @@ If you are developing a driver that replaces a Windows 2000 in-box driver, make 
 
 An IHV can avoid a dialog box asking for user interaction in client-side installations by providing two lines in the INF Models section for each model, as in the following example.
 
-```
+```cpp
 ; Models section
 
 [OEM Company Name]
@@ -48,9 +43,9 @@ In this example, the two lines are nearly identical, differing only by the inclu
 
 In either case, Setup does not require a response from the user on whether to install the driver, so does not display a dialog box asking for a response. Note, however, that if the match is not a hardware ID match, but rather a [*compatible ID*](https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-compatible-id) match, and installation occurs on the client side, Setup displays a dialog box asking for user interaction.
 
- 
+ 
 
- 
+ 
 
 
 

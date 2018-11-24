@@ -7,11 +7,7 @@ keywords:
 - registry WDK smart card
 - logs WDK smart card
 - events WDK smart card
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -48,7 +44,7 @@ The registry values that enable event logging are listed in the following table.
 <strong>Important</strong>   The file name extension must be included in the <strong>EventMessageFile</strong> value name, but it must never appear in any other part of the registry path.
 </div>
 <div>
- 
+ 
 </div></td>
 </tr>
 <tr class="even">
@@ -58,13 +54,13 @@ The registry values that enable event logging are listed in the following table.
 </tbody>
 </table>
 
- 
+ 
 
 For more information about specifying these registry entries, see [**INF AddService Directive**](https://msdn.microsoft.com/library/windows/hardware/ff546326).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -6,11 +6,7 @@ keywords:
 - trace sessions WDK , basic options
 - tracing WDK , basic options
 - software tracing WDK , basic options
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,7 +32,7 @@ You must select **Log Trace Event Data To File**, **Real Time Display**, or both
 <span id="Log_File_Name"></span><span id="log_file_name"></span><span id="LOG_FILE_NAME"></span>**Log File Name**  
 Specifies a path and file name for the [trace log](trace-log.md) (.etl). This option is enabled only when the **Log Trace Event Data To File** option is selected.
 
-By default, the trace log is named "LogSession*\_date\_time*.etl" and it is saved in the local directory. To change the name or location, type a path and file name in the text box or, to navigate to a directory, click the ellipsis button (...).
+By default, the trace log is named "LogSession<em>\_date\_time</em>.etl" and it is saved in the local directory. To change the name or location, type a path and file name in the text box or, to navigate to a directory, click the ellipsis button (...).
 
 > [!CAUTION]
 > If you select the path and name of an existing file, TraceView overwrites that file without warning.

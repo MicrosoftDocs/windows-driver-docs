@@ -6,11 +6,7 @@ keywords:
 - notify objects WDK networking , driver configuration
 - network notify objects WDK , driver configuration
 - driver configuration WDK network component
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +24,9 @@ Alternatively, the notify object can call the Win32 [**CreateFile**](https://msd
 
 The notify object is not required to use **INetCfgPnpReconfigCallback**. But, if the notify object uses **INetCfgPnpReconfigCallback**, a user will not be required to reboot the operating system to cause configuration changes to take effect in the driver.
 
- 
+ 
 
- 
+ 
 
 
 

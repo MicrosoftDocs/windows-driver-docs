@@ -9,11 +9,7 @@ api_name:
 - wscn BytesPerLine
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **BytesPerLine** element specifies the number of bytes per scan lin
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:BytesPerLine>
   text
 </wscn:BytesPerLine>
@@ -62,12 +58,12 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>MediaBackImageInfo</strong>](mediabackimageinfo.md)</p></td>
+<td><p><a href="mediabackimageinfo.md" data-raw-source="[&lt;strong&gt;MediaBackImageInfo&lt;/strong&gt;](mediabackimageinfo.md)"><strong>MediaBackImageInfo</strong></a></p></td>
 <td><p></p>
 <p>MediaBackImageInfo</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>MediaFrontImageInfo</strong>](mediafrontimageinfo.md)</p></td>
+<td><p><a href="mediafrontimageinfo.md" data-raw-source="[&lt;strong&gt;MediaFrontImageInfo&lt;/strong&gt;](mediafrontimageinfo.md)"><strong>MediaFrontImageInfo</strong></a></p></td>
 <td><p></p>
 <p>MediaFrontImageInfo</p></td>
 </tr>
@@ -83,7 +79,7 @@ The integer value that the WSD Scan Service returns is the total bytes that are 
 
 The **BytesPerLine** element is valid only if the requested [**Format**](format.md) value is an uncompressed file format. If the file format indicates compression, the Scan Service must return a value of zero for **BytesPerLine**.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**Format**](format.md)
@@ -92,9 +88,9 @@ The **BytesPerLine** element is valid only if the requested [**Format**](format.
 
 [**MediaFrontImageInfo**](mediafrontimageinfo.md)
 
- 
+ 
 
- 
+ 
 
 
 

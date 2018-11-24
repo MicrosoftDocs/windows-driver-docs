@@ -1,15 +1,10 @@
 ---
 title: Overview of VRAM Capture in AVStream
-author: windows-driver-content
 description: Overview of VRAM Capture in AVStream
 ms.assetid: b5fd026f-75e3-49e0-a39e-4883dd6cacf2
 keywords:
 - VRAM capture WDK AVStream , about VRAM capture
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +21,9 @@ The following diagram shows how a VRAM capture-enabled AVStream minidriver inter
 
 ![diagram illustrating how a vram capture-enabled avstream minidriver interacts with the display miniport driver and other modules](images/lddmcapturearchitectureoverview.gif)
 
- 
+ 
 
- 
+ 
 
 
 

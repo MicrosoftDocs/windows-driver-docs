@@ -6,11 +6,7 @@ keywords:
 - INF files WDK display , user-mode driver loading
 - user-mode display drivers WDK Windows Vista , loading
 - loading drivers WDK display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,7 +15,7 @@ ms.localizationpriority: medium
 
 You must set the following entry in an add-registry section of the INF file so that the user-mode display driver's DLL name is added to the registry during driver installation and so that the Microsoft Direct3D runtime can subsequently load the DLL:
 
-```
+```inf
 [Xxx_SoftwareDeviceSettings]
 ...
 HKR,, UserModeDriverName,    %REG_MULTI_SZ%, Xxx.dll
@@ -29,9 +25,9 @@ The INF file must contain information to direct the operating system to copy the
 
 The Direct3D runtime obtains the user-mode display driver's DLL name from the registry in order to load the user-mode display driver in the runtime's process space.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -4,11 +4,7 @@ description: Monitor Filter Drivers
 ms.assetid: cf2bd4c5-d586-4202-ad79-4e7ff9ad6061
 keywords:
 - filter drivers WDK monitors
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +22,9 @@ Note that programmatic control of a monitor through the Display Data Channel Com
 
 For a representation of a monitor device stack, see [Monitor Class Function Driver](monitor-class-function-driver.md).
 
- 
+ 
 
- 
+ 
 
 
 

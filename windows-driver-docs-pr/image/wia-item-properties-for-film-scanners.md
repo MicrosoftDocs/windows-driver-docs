@@ -1,13 +1,8 @@
 ---
 title: WIA Item Properties for Film Scanners
-author: windows-driver-content
 description: WIA Item Properties for Film Scanners
 ms.assetid: a94ca7f2-90ee-49a7-b011-12947485f37b
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +26,9 @@ This section includes:
 
 [Optional WIA Child Item Properties for Film Scanners](optional-wia-child-item-properties-for-film-scanners.md)
 
- 
+ 
 
- 
+ 
 
 
 

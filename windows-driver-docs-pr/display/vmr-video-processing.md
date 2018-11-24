@@ -13,11 +13,7 @@ keywords:
 - hardware WDK VRM
 - resizing video image horizontally
 - converting color space
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -67,9 +63,9 @@ The following illustration shows the video pipelines used by the VMR to process 
 
 The VMR uses the first pipeline if the application does not request any alpha blending or mirroring of the video image. The VMR uses the second pipeline if the application requests either alpha blending or mirroring of the video image.
 
- 
+ 
 
- 
+ 
 
 
 

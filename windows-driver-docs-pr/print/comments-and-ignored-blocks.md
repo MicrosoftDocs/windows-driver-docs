@@ -1,6 +1,5 @@
 ---
 title: Comments and Ignored Blocks
-author: windows-driver-content
 description: Comments and Ignored Blocks
 ms.assetid: 8b3a0195-b2c8-491d-abcd-bfaebefbc77d
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - ignored blocks WDK GPD files
 - GPD file entries WDK Unidrv , comments
 - comments WDK GPD files
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,7 +25,7 @@ where *CommentString* is any string of characters ending with a line terminator.
 
 The following are examples of valid comments:
 
-```
+```cpp
 *% This section of the GPD file
 *% contains macro definitions.
 *Macros: HP4L
@@ -55,13 +50,13 @@ To request the GPD parser to ignore a group of GPD entries, you can create an ig
 </tbody>
 </table>
 
- 
+ 
 
 where *IgnoredEntries* is a set of GPD file entries, containing an equal number of left and right braces.
 
 In the following example, the GPD parser ignores the GPD entries describing the LANDSCAPE\_CC90 option.
 
-```
+```cpp
 *Feature: Orientation
 {
     *Name: "Orientation"
@@ -90,9 +85,9 @@ In the following example, the GPD parser ignores the GPD entries describing the 
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

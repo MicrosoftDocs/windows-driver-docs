@@ -1,13 +1,8 @@
 ---
 title: Device Experience in Devices and Printers
-author: windows-driver-content
 description: Device Experience in Devices and Printers
 ms.assetid: 95c5ce1d-8a38-4d88-bea2-e6728f83f010
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,9 +17,9 @@ As shown in Figure 3, the device icon and the context menu that appears when the
 
 ![figures comparing the menus for the default device experience and the custom device experience](images/devicestage004.png)
 
- 
+ 
 
- 
+ 
 
 
 

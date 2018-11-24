@@ -12,6 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # KSCATEGORY_BDA_NETWORK_TUNER
@@ -42,7 +43,7 @@ The KSCATEGORY_BDA_NETWORK_TUNER [device interface class](https://msdn.microsoft
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -73,9 +74,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

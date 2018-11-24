@@ -3,11 +3,7 @@ title: hidkd.hidppd HID extension
 description: The hidkd.hidppd command displays HID preparsed data.
 ms.assetid: 049D206D-669D-49F4-81FE-2D8E443F9A9E
 keywords: ["hidkd.hidppd Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!hidkd.hidppd** command displays HID preparsed data.
 
-```
+```dbgcmd
 !hidkd.hidppd ppd
 ```
 
@@ -42,7 +38,7 @@ Examples
 
 This example shows how to use [**!hidpdo**](-hidkd-hidpdo.md) followed by **!hidppd**. The output of **!hidpdo** shows the address of a **HIDP\_PREPARSED\_DATA** structure.
 
-```
+```dbgcmd
 
 0: kd> !hidpdo 0xffffe000029f6060
 ## PDO 0xffffe000029f6060  (!devobj/!devstack)
@@ -81,9 +77,9 @@ Preparsed Data at 0xffffe000029d1010
 
 [HID Extensions](hid-extensions.md)
 
- 
+ 
 
- 
+ 
 
 
 

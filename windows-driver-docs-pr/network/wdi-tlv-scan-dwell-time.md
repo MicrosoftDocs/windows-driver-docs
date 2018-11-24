@@ -1,13 +1,8 @@
 ---
 title: WDI_TLV_SCAN_DWELL_TIME
-author: windows-driver-content
 description: WDI_TLV_SCAN_DWELL_TIME is a TLV that contains scanning dwell time settings.
 ms.assetid: A0C597E7-879C-43CC-BB86-4908AC31828F
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_SCAN_DWELL_TIME Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -37,7 +32,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | UINT32 | Specifies the time in milliseconds to dwell on passive channels. This is a hint and if the adapter decides to use its own dwell time, it must meet the Maximum Scan Time requirement. |
 | UINT32 | Specifies the time in milliseconds for total scan. If the adapter limits its dwell times to below the values specified above, it can ignore the Maximum Scan Time parameter.          |
 
- 
+ 
 
 Requirements
 ------------
@@ -63,9 +58,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: Audio Drivers Structures
 description: Audio Drivers Structures
 ms.assetid: 8257342f-474a-42b3-809d-96fdeede398b
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -182,9 +178,9 @@ This section describes the structures that are used by WDM audio miniport driver
 
 [**WAVEFORMATEXTENSIBLE**](https://msdn.microsoft.com/library/windows/hardware/ff538802)
 
- 
+ 
 
- 
+ 
 
 
 

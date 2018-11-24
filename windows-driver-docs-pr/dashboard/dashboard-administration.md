@@ -2,11 +2,8 @@
 title: Dashboard Administration
 description: Administration tasks for the Windows Hardware Dev Center dashboard, such as registration, managing settings, code signing, and managing users and permissions.
 ms.assetid: 078FDCAE-0012-481A-8328-0EF0A199C0ED
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
@@ -22,7 +19,7 @@ ms.localizationpriority: medium
 -   [Adding or Removing Users](adding-or-removing-users.md)
 -   [Managing User Roles](managing-user-roles.md)
 
- 
+ 
 
- 
+ 
 

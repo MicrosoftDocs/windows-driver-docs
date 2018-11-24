@@ -11,11 +11,7 @@ keywords:
 - graphics device display miniport drivers WDK Windows Vista
 - INF files WDK display , about driver installations
 - miniport drivers WDK display , installing
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -63,11 +59,11 @@ You should refer to the [Overview of INF Files](https://msdn.microsoft.com/libra
 
 **Note**   There are no INF sections and directives for uninstalling display drivers that are specific to graphic devices.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: Optimized screen rotation support
 description: Windows 8 ensures a flicker-free screen rotation experience by ensuring that the output from the graphics adapter stays enabled during a rotational mode change.
 ms.assetid: CFDB4713-EC90-4FAB-B379-742C52888BB3
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -17,7 +13,7 @@ Windows 8 ensures a flicker-free screen rotation experience by ensuring that th
 
 **Note**  Starting with Windows 8.1 Update, device driver interfaces (DDIs) are updated to support the highest possible resolution on cloned monitors when the primary display is rotated. See [Supporting Path-Independent Rotation](supporting-path-independent-rotation.md).
 
- 
+ 
 
 |                                                      |           |
 |------------------------------------------------------|-----------|
@@ -25,7 +21,7 @@ Windows 8 ensures a flicker-free screen rotation experience by ensuring that th
 | Minimum Windows version                              | 8         |
 | Driver implementation—Full graphics and Display only | Mandatory |
 
- 
+ 
 
 ## <span id="Smooth_rotation_DDI"></span><span id="smooth_rotation_ddi"></span><span id="SMOOTH_ROTATION_DDI"></span>Smooth rotation DDI
 
@@ -47,9 +43,9 @@ On traditional desktop and laptop systems, screen rotation is not a frequently u
 -   The desktop composition manager is on and is actively composing.
 -   The mode change request is determined to be compatible with smooth rotation mode transition. Two modes are compatible if they have the same dimensions (width and height), topology, refresh rates, pixel formats, and stride, and differ only in screen orientation (that is, are rotated).
 
- 
+ 
 
- 
+ 
 
 
 

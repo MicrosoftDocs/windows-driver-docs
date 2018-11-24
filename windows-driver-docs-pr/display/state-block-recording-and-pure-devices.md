@@ -7,11 +7,7 @@ keywords:
 - pure devices WDK DirectX 8.0 , state block handling
 - state block handling WDK DirectX 8.0
 - state block handling WDK DirectX 8.0 , pure devices
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,9 +19,9 @@ ms.localizationpriority: medium
 
 State block handling is different for a device operating in pure device mode. In this mode, the state block control DP2 token (D3DDP2OP\_STATESET) is sent to the driver with a new operation type (in the **dwOperations** field). This new operation type is D3DHAL\_STATESETCREATE.
 
- 
+ 
 
- 
+ 
 
 
 

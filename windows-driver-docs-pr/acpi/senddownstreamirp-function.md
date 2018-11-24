@@ -1,13 +1,8 @@
 ---
 title: SendDownStreamIrp Function
-author: windows-driver-content
 description: SendDownStreamIrp Function
 ms.assetid: 09a06041-5b26-4796-b9b8-d7d27321d955
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,7 +23,7 @@ The example code for the `SendDownStreamIrp` function that is included in this s
 
 -   Returns the status of the request to the caller.
 
-```
+```cpp
 NTSTATUS
 SendDownStreamIrp(
     IN PDEVICE_OBJECT   Pdo,
@@ -101,9 +96,9 @@ Return Value:
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

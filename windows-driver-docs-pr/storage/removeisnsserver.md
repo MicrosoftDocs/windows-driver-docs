@@ -3,6 +3,7 @@ title: RemoveiSNSServer
 description: RemoveiSNSServer
 ms.assetid: 3d7d5454-bfd4-4219-ad2e-125e37fb81ff
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # RemoveiSNSServer
@@ -14,9 +15,9 @@ The **RemoveiSNSServer** method removes an iSNS server from the list of iSNS ser
 
 Miniport drivers that implement the MSiSCSI\_Operations WMI class are not required to support this method.
 
- 
+ 
 
- 
+ 
 
 
 

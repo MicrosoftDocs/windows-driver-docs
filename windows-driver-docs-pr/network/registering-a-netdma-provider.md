@@ -5,11 +5,7 @@ ms.assetid: 63f60ed9-4a35-4c70-89f5-9bdfb7b9e732
 keywords:
 - NetDMA provider drivers WDK networking , registering
 - registering NetDMA provider drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -18,7 +14,7 @@ ms.localizationpriority: medium
 
 **Note**  The NetDMA interface is not supported in Windows 8 and later.
 
- 
+ 
 
 
 
@@ -47,9 +43,9 @@ If a computer supports MSI-X, the NetDMA interface, while in the context of the 
 
 To deregister a NetDMA provider, a NetDMA provider driver calls the [**NetDmaDeregisterProvider**](https://msdn.microsoft.com/library/windows/hardware/ff568328) function. For more information about deregistering a NetDMA provider, see [Deregistering a NetDMA Provider](deregistering-a-netdma-provider.md).
 
- 
+ 
 
- 
+ 
 
 
 

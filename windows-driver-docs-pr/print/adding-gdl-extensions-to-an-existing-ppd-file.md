@@ -1,6 +1,5 @@
 ---
 title: Adding GDL Extensions to an Existing PPD File
-author: windows-driver-content
 description: Adding GDL Extensions to an Existing PPD File
 ms.assetid: 4d425701-85af-43e8-9ff2-ddfcc755f90c
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - GDL files WDK printer
 - extensions WDK GDL files
 - PPD files WDK autoconfiguration , GDL extensions
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +28,9 @@ This section includes:
 
 [Adding Constructs to Your GDL File for PPD](adding-constructs-to-your-gdl-file-for-ppd.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,15 +1,10 @@
 ---
 title: HS_PLUGIN_DEINIT function
-author: windows-driver-content
 description: The HS_PLUGIN_DEINIT function is called by the host to notify the plugin that it will be unloaded.
 ms.assetid: 3bb0ad85-91db-476e-b347-0fa8ed4ae24e
 keywords: 
 - typedef DWORD (WINAPI HS_PLUGIN_DEINIT) function Network Drivers Starting with Windows Vista
-ms.author: windowsdriverdev
-ms.date: 07/31/2017 
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 07/31/2017
 ms.localizationpriority: medium
 ---
 
@@ -70,9 +65,9 @@ Requirements
 
 [**eHS\_UNLOAD\_REASON**](ehs-unload-reason.md)
 
- 
+ 
 
- 
+ 
 
 
 

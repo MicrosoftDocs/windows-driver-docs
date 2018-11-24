@@ -1,6 +1,5 @@
 ---
 title: IPrinterScriptUsbJobContext TemporaryStreams method
-author: windows-driver-content
 description: Returns an array of IPrinterScriptableSequentialStream interfaces for the persistent data streams that can be used by the IHV JavaScript functions for the current job.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
@@ -13,18 +12,18 @@ api_name:
 - IPrinterScriptUsbJobContext.TemporaryStreams
 api_type:
 - COM
+ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # IPrinterScriptUsbJobContext::TemporaryStreams method
 
-
-Returns an array of [IPrinterScriptableSequentialStream](https://msdn.microsoft.com/library/windows/hardware/hh439697) interfaces for the persistent data streams that can be used by the IHV JavaScript functions for the current job.
+Returns an array of [IPrinterScriptableSequentialStream](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printerextension/nn-printerextension-iprinterscriptablesequentialstream) interfaces for the persistent data streams that can be used by the IHV JavaScript functions for the current job.
 
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT TemporaryStreams(
   [out, retval] IDispatch **ppArray
 );
@@ -34,7 +33,7 @@ Parameters
 ----------
 
 *ppArray* \[out, retval\]  
-Pointer to an array of [IPrinterScriptableSequentialStream](https://msdn.microsoft.com/library/windows/hardware/hh439697) interfaces.
+Pointer to an array of [IPrinterScriptableSequentialStream](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printerextension/nn-printerextension-iprinterscriptablesequentialstream) interfaces.
 
 Return value
 ------------
@@ -70,17 +69,8 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**IPrinterScriptUsbJobContext**](iprinterscriptusbjobcontext.md)
 
-[IPrinterScriptableSequentialStream](https://msdn.microsoft.com/library/windows/hardware/hh439697)
-
- 
-
- 
-
-
-
-
+[IPrinterScriptableSequentialStream](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printerextension/nn-printerextension-iprinterscriptablesequentialstream)

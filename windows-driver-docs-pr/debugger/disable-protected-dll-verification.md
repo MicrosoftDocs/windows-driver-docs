@@ -3,11 +3,7 @@ title: Disable protected DLL verification
 description: Disable protected DLL verification
 ms.assetid: 28b5c4f8-18d3-44ed-a424-92e8e04dcdbc
 keywords: ["Disable protected DLL verification (global flag)"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -44,11 +40,11 @@ The **Disable protected DLL verification** flag appears in GFlags, but it has no
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

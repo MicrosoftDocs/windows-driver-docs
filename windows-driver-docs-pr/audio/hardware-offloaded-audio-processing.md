@@ -2,11 +2,7 @@
 title: Hardware-Offloaded Audio Processing
 description: Hardware-offloaded audio processing allows the main audio processing tasks to be performed outside the computer's main CPU.
 ms.assetid: DB20A1D4-F253-4FC0-8445-A92DF5D14605
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,9 +21,9 @@ With Windows 8 and later operating systems, the audio driver model has been upd
 
 [PortCls Power Management Updates for SoC](portcls-power-management-updates-for-soc.md)
 
- 
+ 
 
- 
+ 
 
 
 

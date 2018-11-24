@@ -7,11 +7,7 @@ keywords:
 - proxy drivers WDK SANs , NIC notifications
 - SAN proxy drivers WDK , NIC notifications
 - registering NIC notifications
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -41,11 +37,11 @@ TDI calls the proxy driver's address-removal callback whenever the TCP/IP transp
 
 **Note**  TDI will not be supported in Microsoft Windows versions after Windows Vista. Use [Windows Filtering Platform](https://msdn.microsoft.com/library/windows/hardware/ff571067) or [Winsock Kernel](https://msdn.microsoft.com/library/windows/hardware/ff571083) instead.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

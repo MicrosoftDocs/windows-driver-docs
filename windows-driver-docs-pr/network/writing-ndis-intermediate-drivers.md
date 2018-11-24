@@ -9,11 +9,7 @@ keywords:
 - NDIS intermediate drivers WDK
 - NDIS intermediate drivers WDK , NDIS 6.0
 - intermediate drivers WDK networking , NDIS 6.0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +29,9 @@ The following topics provide more information about intermediate driver initiali
 -   [Initializing a Virtual Miniport](initializing-a-virtual-miniport.md)
 -   [Halting a Virtual Miniport](halting-a-virtual-miniport.md)
 
- 
+ 
 
- 
+ 
 
 
 

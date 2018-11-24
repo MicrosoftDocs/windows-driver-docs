@@ -8,11 +8,7 @@ keywords:
 - Port Class audio adapters WDK , media-specific INF file keywords
 - media-specific INF file keywords WDK audio
 - INF file media keywords WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +24,9 @@ The list of INF file keywords at [INF File Sections and Directives](https://msdn
 
 The **SetupPreferredAudioDevices** keyword is supported in Windows 2000 and later. For more information, see [Media-Class INF Extensions](https://msdn.microsoft.com/library/windows/hardware/ff537513).
 
- 
+ 
 
- 
+ 
 
 
 

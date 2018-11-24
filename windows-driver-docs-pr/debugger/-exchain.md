@@ -3,11 +3,7 @@ title: exchain
 description: The exchain extension displays the current exception handler chain.
 ms.assetid: 6e5c935b-e475-4213-83d8-94510a58fde5
 keywords: ["exchain Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!exchain** extension displays the current exception handler chain.
 
-```
+```dbgcmd
 !exchain [Options]
 ```
 
@@ -60,7 +56,7 @@ Displays information that is obtained by walking the CRT function tables, even i
 </tbody>
 </table>
 
- 
+ 
 
 The **!exchain** extension is available only for an x86-based target computer.
 
@@ -71,7 +67,7 @@ The **!exchain** extension displays the list of exception handlers for the curre
 
 The list begins with the first handler on the chain (the one that is given the first opportunity to handle an exception) and continues on to the end. The following example shows this extension.
 
-```
+```dbgcmd
 0:000> !exchain
 0012fea8: Prymes!_except_handler3+0 (00407604)
   CRT scope  0, filter: Prymes!dzExcepError+e6 (00401576)
@@ -82,9 +78,9 @@ The list begins with the first handler on the chain (the one that is given the f
 0012ffe0: KERNEL32!GetThreadContext+1c (77ea1856)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

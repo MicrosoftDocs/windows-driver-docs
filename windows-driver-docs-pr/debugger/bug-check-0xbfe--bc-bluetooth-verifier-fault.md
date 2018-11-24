@@ -3,11 +3,7 @@ title: Bug Check 0xBFE BC_BLUETOOTH_VERIFIER_FAULT
 description: The BC_BLUETOOTH_VERIFIER_FAULT bug check has a value of 0x00000BFE. This indicates that a driver has caused a violation.
 ms.assetid: EC1368CE-46A2-4B69-8405-3118503D35C2
 keywords: ["Bug Check 0xBFE BC_BLUETOOTH_VERIFIER_FAULT", "BC_BLUETOOTH_VERIFIER_FAULT"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The BC\_BLUETOOTH\_VERIFIER\_FAULT bug check has a value of 0x00000BFE. This indicates that a driver has caused a violation.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## BC\_BLUETOOTH\_VERIFIER\_FAULT Parameters
 
@@ -43,8 +39,7 @@ The BC\_BLUETOOTH\_VERIFIER\_FAULT bug check has a value of 0x00000BFE. This ind
 <td align="left">1</td>
 <td align="left"><p>The subtype of the Bluetooth verifier fault.</p>
 <div class="code">
-```
-            0x1 : An attempt was made to submit a Bluetooth Request Block that is already in use
+<code>0x1 : An attempt was made to submit a Bluetooth Request Block that is already in use
                   2 - Brb pointer
                   3 - Reserved
                   4 - Reserved
@@ -79,8 +74,7 @@ The BC\_BLUETOOTH\_VERIFIER\_FAULT bug check has a value of 0x00000BFE. This ind
             0x9 : BRB_SCO_UNREGISTER_SERVER was submitted with an invalid server handle
                   2 - Server handle
                   3 - Reserved
-                  4 - Reserved
-```
+                  4 - Reserved</code>
 </div></td>
 </tr>
 <tr class="even">
@@ -98,16 +92,16 @@ The BC\_BLUETOOTH\_VERIFIER\_FAULT bug check has a value of 0x00000BFE. This ind
 </tbody>
 </table>
 
- 
+
 
 Resolution
 ----------
 
 Parameter 1 describes the type of violation. Look at the call stack to determine the misbehaving driver.
 
- 
 
- 
+
+
 
 
 

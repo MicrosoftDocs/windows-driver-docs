@@ -7,11 +7,7 @@ keywords:
 - signing drivers WDK , selecting signature type
 - digital signatures WDK , selecting signature type
 - signatures WDK , selecting signature type
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,9 +20,9 @@ Selecting the appropriate signature type for a [driver package](driver-packages.
 -   [PnP Device Installation Signing Requirements](pnp-device-installation-signing-requirements--windows-vista-and-later-.md)
 -   [Authenticode Signing of Third-party CSPs](authenticode-signing-of-csps.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: WindowsUri protocol
-author: windows-driver-content
 description: WindowsUri protocol
 ms.assetid: 79589ECE-9DF9-40C8-897D-95B432C4C9C8
 keywords:
@@ -9,11 +8,7 @@ keywords:
 - proximity
 - near field proximity
 - NFP
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,9 +37,9 @@ This is a special type of WindowsUri publication that allows a URI to be written
 -   The common “\*:WriteTag” requirements described elsewhere apply.
 -   The above “WindowsUri” publication requirements also apply to “WindowsUri:WriteTag” publications.
 
- 
+ 
 
- 
+ 
 ## Related topics
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [Near field proximity DDI reference](https://msdn.microsoft.com/library/windows/hardware/jj866056)  

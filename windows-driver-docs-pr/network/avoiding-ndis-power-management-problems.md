@@ -6,11 +6,7 @@ keywords:
 - power management WDK NDIS miniport , problems
 - network interface cards WDK networking , power problems
 - NICs WDK networking , power problems
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +24,9 @@ The following rules will help you avoid power-management problems with your netw
 
 -   Do not attempt to provide custom power-management controls in the user interface.
 
- 
+ 
 
- 
+ 
 
 
 

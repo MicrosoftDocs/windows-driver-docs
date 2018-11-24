@@ -2,11 +2,7 @@
 title: Using Function Role Type Declarations
 description: Using Function Role Type Declarations
 ms.assetid: aaa37aa7-808c-48aa-bd83-96b9aeb00234
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ For more information about adding these declarations, see the following.
 
 [Declaring Functions by Using Function Role Types for Storport Drivers](declaring-functions-by-using-function-role-types-for-storport-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

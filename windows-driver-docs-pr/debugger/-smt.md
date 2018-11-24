@@ -3,11 +3,7 @@ title: smt
 description: The smt extension displays a summary of the simultaneous multithreaded processor information.
 ms.assetid: 28c07f89-6208-4b04-b7b9-825dda4f5f5a
 keywords: ["smt Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!smt** extension displays a summary of the simultaneous multithreaded processor information.
 
-```
+```dbgcmd
 !smt
 ```
 
@@ -45,14 +41,14 @@ The **!smt** extension displays a summary of the simultaneous multithreaded proc
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
 
 Here is an example:
 
-```
+```dbgcmd
 lkd> !smt 
 SMT Summary:
 ------------
@@ -76,9 +72,9 @@ The **SMT Set** column lists the processor's simultaneous multithreaded processo
 
 The **IAID** column lists the initial Advanced Programmable Interrupt Controller identifier (APIC ID). On a true x64 computer, each processor starts with a hard-coded initial APIC ID. This ID value can be retrieved through the CPUID instruction. On certain other computers, the initial APIC ID is not necessarily unique across all processors, so the APIC ID that is accessible through the APIC's memory-mapped input/output (MMIO) space can be modified. This technique enables software to allocate unique APIC IDs for all processors within the computer. Depending on the target computer's processors, the **IAID** column may show this ID or may be blank.
 
- 
+ 
 
- 
+ 
 
 
 

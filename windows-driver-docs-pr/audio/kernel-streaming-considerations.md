@@ -2,11 +2,7 @@
 title: Kernel Streaming Considerations
 description: The Kernel Streaming considerations topic clarifies the requirements and other special considerations related to Bluetooth bypass audio streaming.
 ms.assetid: CFC4ACA0-050D-48E1-AA6A-7649040EBF7A
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,7 +26,7 @@ All Bluetooth Hands-Free devices support both capture and render. So the audio d
 
 **Note**  The audio driver developer can choose whether or not to implement a single filter for both capture and render paths, or separate filters. However, the HFP device only allows a single file object on the GUID\_DEVINTERFACE\_BLUETOOTH\_HFP\_SCO\_HCIBYPASS device interface. Therefore a design that uses two filters needs to allow both filters to share the single file object.
 
- 
+ 
 
 The DAC and ADC nodes represent the analog/digital conversions, but do not support any KS properties.
 

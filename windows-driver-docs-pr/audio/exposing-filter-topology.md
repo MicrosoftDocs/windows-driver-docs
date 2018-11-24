@@ -8,11 +8,7 @@ keywords:
 - KS filters WDK audio , topology
 - exposing filter topology
 - audio filters WDK audio , exposing topology
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,7 +32,7 @@ The miniport driver exposes these three arrays in the [**PCFILTER\_DESCRIPTOR**]
 
 The following code example specifies the internal topology of a simple KS filter that has one input pin and one output pin. The filter contains a single node, which is a volume-level control.
 
-```
+```cpp
 #define KSPIN_WAVEOUT_SRC  0
 #define KSPIN_SPEAKERS_DST  1
 
@@ -134,7 +130,7 @@ The following table illustrates a potential source of confusion when discussing 
 </tbody>
 </table>
 
- 
+ 
 
 Note that KSPIN\_WAVEOUT\_SRC is a source mixer line, and KSPIN\_SPEAKERS\_DST is a source pin. For more information, see the discussion of KS and mixer-line terminology in [Kernel Streaming Topology to Audio Mixer API Translation](kernel-streaming-topology-to-audio-mixer-api-translation.md).
 
@@ -146,7 +142,7 @@ The volume node has two "logical" pins, which are numbered 0 and 1. The two conn
 
 The KSPIN\_WAVEOUT\_SRC and KSPIN\_SPEAKERS\_DST pins are both [*bridge pins*](https://msdn.microsoft.com/library/windows/hardware/ff556272#wdkgloss_bridge_pin), which means that they represent hardwired connections in the adapter. In the preceding sample code, the two pin descriptors in the MiniportPins array both specify their IRP-flow direction as KSPIN\_COMMUNICATION\_NONE, which is appropriate because bridge pins neither send nor receive IRPs. The two pin descriptors also refer to a PinDataRangePointersBridge array, which is defined as follows:
 
-```
+```cpp
 static KSDATARANGE PinDataRangesBridge[] =
 {
    {
@@ -168,9 +164,9 @@ The PinDataRangePointersBridge array defines the data range for a bridge pin tha
 
 For an example of a more complex topology, see [Topology Filters](topology-filters.md).
 
- 
+ 
 
- 
+ 
 
 
 

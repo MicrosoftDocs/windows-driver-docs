@@ -3,11 +3,7 @@ title: htrace
 description: The htrace extension displays stack trace information for one or more handles.
 ms.assetid: 1da92c8d-8f77-4b30-a908-bcc33ad05cce
 keywords: ["handle, htrace extension", "htrace Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,7 +20,7 @@ The **!htrace** extension displays stack trace information for one or more handl
 
 User-Mode Syntax
 
-```
+```dbgcmd
 !htrace [Handle [Max_Traces]] 
 !htrace -enable [Max_Traces]
 !htrace -snapshot
@@ -35,7 +31,7 @@ User-Mode Syntax
 
 Kernel-Mode Syntax
 
-```
+```dbgcmd
     !htrace [Handle [Process [Max_Traces]]] 
 !htrace -? 
 ```
@@ -88,7 +84,7 @@ Ntsdexts.dll</td>
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -101,13 +97,13 @@ Before **!htrace** can be used, handle tracing must be enabled. One way to enabl
 
 **Note**   You can also enable handle tracing by activating Application Verifier for the target process and selecting the **Handles** option.
 
- 
+ 
 
 Some of the traces reported by **!htrace** may be from a different process context. In this case, the return addresses may not resolve properly in the current process context, or may resolve to the wrong symbols.
 
 The following example displays information about all handles in process 0x81400300:
 
-```
+```dbgcmd
 kd> !htrace 0 81400300
 Process 0x81400300
 ObjectTable 0xE10CCF60
@@ -160,9 +156,9 @@ Parsed 0x6 stack traces.
 Dumped 0x5 stack traces.
 ```
 
- 
+ 
 
- 
+ 
 
 
 

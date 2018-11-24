@@ -9,11 +9,7 @@ api_name:
 - KSMETHOD_STREAMALLOCATOR_ALLOC
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +23,7 @@ For example, a kernel-mode client could use the following sample code to allocat
 Remarks
 -------
 
-```
+```cpp
 Method.Identifier.Set = KSMETHODSETID_StreamAllocator;
 Method.Identifier.Id = KSMETHOD_STREAMALLOCATOR_ALLOC;
 Method.Flags = KSMETHOD_TYPE_WRITE;
@@ -42,9 +38,9 @@ DeviceIoControl(
     &amp;Overlapped);
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -10,11 +10,7 @@ keywords:
 - WDM audio drivers WDK , nodes
 - audio drivers WDK , nodes
 - filters WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -56,9 +52,9 @@ This section presents the features of filters, pins, and nodes that are specific
 
 For a more general discussion of kernel-streaming filters, pins, and nodes, see [KS Minidriver Architecture](https://msdn.microsoft.com/library/windows/hardware/ff567656).
 
- 
+ 
 
- 
+ 
 
 
 

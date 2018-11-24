@@ -3,11 +3,7 @@ title: Bug Check 0xC0000221 STATUS_IMAGE_CHECKSUM_MISMATCH
 description: The STATUS_IMAGE_CHECKSUM_MISMATCH bug check has a value of 0xC0000221. This indicates that a driver or a system DLL has been corrupted.
 ms.assetid: d0baccb0-51a2-45c7-ae08-507217d0ac96
 keywords: ["Bug Check 0xC0000221 STATUS_IMAGE_CHECKSUM_MISMATCH", "STATUS_IMAGE_CHECKSUM_MISMATCH"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The STATUS\_IMAGE\_CHECKSUM\_MISMATCH bug check has a value of 0xC0000221. This indicates that a driver or a system DLL has been corrupted.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## STATUS\_IMAGE\_CHECKSUM\_MISMATCH Parameters
 
@@ -47,7 +43,7 @@ If you want to replace the file on a single-boot system with an NTFS partition, 
 
 **Note**   If the original file from the product CD has a filename extension ending in an \_ (underscore), the file needs to be uncompressed before it can be used. The Recovery Console's **Copy** command automatically detects compressed files and expands them as they are copied to the target location. If you are using Safe Mode to access a drive, use the **Expand** command to uncompress and copy the file to the target folder. You can use the **Expand** command in the command line environment of Safe Mode.
 
- 
+ 
 
 **Resolving a disk error problem:** Disk errors can be a source of file corruption. Run **Chkdsk /f /r** to detect and resolve any file system structural corruption. You must restart the system before the disk scan begins on a system partition.
 
@@ -75,9 +71,9 @@ When you can log on to the system again, check the System Log in Event Viewer fo
 
 Disabling memory caching of the BIOS might also resolve this error.
 
- 
+ 
 
- 
+ 
 
 
 

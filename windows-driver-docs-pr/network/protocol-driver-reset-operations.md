@@ -6,11 +6,7 @@ keywords:
 - protocol drivers WDK networking , reset operations
 - NDIS protocol drivers WDK , reset operations
 - reset operations WDK NDIS protocol
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,9 +32,9 @@ When a protocol driver receives a status of NDIS\_STATUS\_RESET\_START, it shoul
 
 After *ProtocolStatusEx*(or *ProtocolCoStatusEx*) receives an NDIS\_STATUS\_RESET\_END message, the protocol driver can resume sending network data and OID requests.
 
- 
+ 
 
- 
+ 
 
 
 

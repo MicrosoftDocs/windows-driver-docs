@@ -14,11 +14,7 @@ keywords:
 - interrupt notifications WDK audio
 - interrupt service routines WDK audio
 - ISRs WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -108,9 +104,9 @@ The [IServiceGroup](https://msdn.microsoft.com/library/windows/hardware/ff536994
 
 In addition, the PortCls system driver provides a [**PcNewServiceGroup**](https://msdn.microsoft.com/library/windows/hardware/ff537719) function for creating a new service group object. However, no similar function exists for creating a service sink object. The port driver simply adds an [IServiceSink](https://msdn.microsoft.com/library/windows/hardware/ff537006) interface to the implementation of its main port object--when the object is created, so is the service sink. The port driver can add the port object's IServiceSink interface to the service group that it receives from the miniport driver's **Init** or **NewStream** method. For convenience, header file Portcls.h defines **IMP\_IServiceSink** and **IMP\_IServiceGroup** constants for adding IServiceSink and [IServiceGroup](https://msdn.microsoft.com/library/windows/hardware/ff536994) interfaces to driver objects.
 
- 
+ 
 
- 
+ 
 
 
 

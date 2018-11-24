@@ -7,11 +7,7 @@ keywords:
 - DXVA-HD DDI WDK Server 2008 R2 display , programming considerations
 - high-definition video WDK Windows 7 display , DXVA-HD DDI, programming considerations
 - high-definition video WDK Server 2008 R2 display , DXVA-HD DDI, programming considerations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,9 +38,9 @@ When you implement the [DXVA-HD DDI](dxva-hd-ddi.md) in your user-mode display d
 
 -   Any [DXVA-HD DDI](dxva-hd-ddi.md) function should return S\_OK, E\_INVALIDARG or E\_OUTOFMEMORY.
 
- 
+ 
 
- 
+ 
 
 
 

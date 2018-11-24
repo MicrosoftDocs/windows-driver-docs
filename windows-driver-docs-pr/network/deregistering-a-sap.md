@@ -8,11 +8,7 @@ keywords:
 - deregistering SAPs
 - unregistering SAPs
 - removing SAPs
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -40,9 +36,9 @@ A call to **Ndis(M)CmDeregisterSapComplete** causes NDIS to call the client's [*
 
 Note that a client can deregister a SAP without affecting an incoming call that has already been received on that SAP and without affecting the VC for that incoming call.
 
- 
+ 
 
- 
+ 
 
 
 

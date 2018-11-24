@@ -1,13 +1,8 @@
 ---
 title: Storport Idle Power Management
-author: windows-driver-content
 description: Storport Idle Power Management
 ms.assetid: 1ad47775-4d7a-47c4-83eb-774e58c863d3
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,9 +19,9 @@ Storport Idle Power Management (IPM) allows the classpnp and disk class drivers 
 
 [IPM Hard Disk Drive Idle Timeout](ipm-hard-disk-drive-idle-timeout.md)
 
- 
+ 
 
- 
+ 
 
 
 

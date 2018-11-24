@@ -1,15 +1,10 @@
 ---
 title: OID_TCP_CONNECTION_OFFLOAD_PARAMETERS
-author: windows-driver-content
 description: This topic describes the OID_TCP_CONNECTION_OFFLOAD_PARAMETERS object identifier (OID). 
 ms.assetid: 6481D565-900A-4B75-A60F-72701FB45FAD
 keywords:
 - OID_TCP_CONNECTION_OFFLOAD_PARAMETERS, WDK OIDs, WDK networking object identifiers, WDK networking OIDs
-ms.author: windowsdriverdev
 ms.date: 11/01/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -2,11 +2,7 @@
 title: WdfFiTester Overview
 description: WdfFiTester Overview
 ms.assetid: 87acefcd-8db3-4b1e-972a-13fba629d52d
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -41,9 +37,9 @@ Because the tool uses the WMI interface, you can run it from a script (vbscript 
 
 Apart from other operations, with the tool's WMI interface you can get a list of DDIs that were called by a specific KMDF driver, and that are waiting on a WMI event that fires every time a DDI fault injection completes successfully.
 
- 
+ 
 
- 
+ 
 
 
 

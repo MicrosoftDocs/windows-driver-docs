@@ -12,11 +12,7 @@ keywords:
 - interleaved video displays WDK video port extensions
 - weave WDK DirectDraw
 - deinterlacing WDK video port extensions
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,9 +28,9 @@ Each source-film frame is represented in the NTSC signal by two or three fields.
 
 The weave method produces 24 progressive frames per second and retains the full vertical resolution from an interlaced source. If a video was created from film using a 3:2 pulldown, or if it contains no motion, weave is the best affordable display process for a progressive monitor.
 
- 
+ 
 
- 
+ 
 
 
 

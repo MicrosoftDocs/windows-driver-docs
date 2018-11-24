@@ -10,6 +10,7 @@ api_name:
 api_type:
 - NA
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # headerPath XML Element
@@ -21,7 +22,7 @@ The **headerPath** XML element specifies the source file name for a custom heade
 
 ### Element Tag
 
-```
+```cpp
 <headerPath>
 ```
 
@@ -39,7 +40,7 @@ None
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Parent elements</strong></p></td>
-<td align="left"><p>[<strong>dpinst</strong>](dpinst-xml-element.md) or [<strong>language</strong>](language-xml-element.md)</p></td>
+<td align="left"><p><a href="dpinst-xml-element.md" data-raw-source="[&lt;strong&gt;dpinst&lt;/strong&gt;](dpinst-xml-element.md)"><strong>dpinst</strong></a> or <a href="language-xml-element.md" data-raw-source="[&lt;strong&gt;language&lt;/strong&gt;](language-xml-element.md)"><strong>language</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Child elements</strong></p></td>
@@ -56,7 +57,7 @@ None
 </tbody>
 </table>
 
- 
+ 
 
 ### <a href="" id="comments"></a>Remarks
 
@@ -64,7 +65,7 @@ A **headerPath** element is customized, but not localized, if it is a child elem
 
 The following code example demonstrates a **headerPath** element that specifies *Data\\Header.bmp* as the header bitmap file that DPInst displays in the upper-right corner of a DPInst EULA and installation pages and an installation page. The text that specifies the custom header bitmap file is shown in bold font style.
 
-```
+```cpp
 <dpinst>
   ...
   <headerPath>Data\Header.bmp</headerPath>
@@ -81,9 +82,9 @@ If a **headerPath** element is not specified, DPInst uses a default header bitma
 
 [**language**](language-xml-element.md)
 
- 
+ 
 
- 
+ 
 
 
 

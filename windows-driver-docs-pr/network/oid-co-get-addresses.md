@@ -1,15 +1,10 @@
 ---
 title: OID_CO_GET_ADDRESSES
-author: windows-driver-content
 description: This topic describes the OID_CO_GET_ADDRESSES object identifier (OID).
 ms.assetid: 0c30e184-be01-49ab-b9ad-3ccc2fdf9fc5
 keywords:
 - OID_CO_GET_ADDRESSES
-ms.author: windowsdriverdev
 ms.date: 11/03/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

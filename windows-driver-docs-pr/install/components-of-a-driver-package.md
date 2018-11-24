@@ -12,11 +12,7 @@ keywords:
 - .sys files
 - SYS files
 - .cat files
-ms.author: windowsdriverdev
 ms.date: 05/09/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -72,9 +68,9 @@ A driver package can also contain other files, such as a device installation app
 
 [Installing a Boot-Start Driver](installing-a-boot-start-driver.md)
 
- 
+ 
 
- 
+ 
 
 
 

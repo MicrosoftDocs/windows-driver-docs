@@ -1,13 +1,8 @@
 ---
 title: Firmware requirements for D3cold
-author: windows-driver-content
 description: Starting with Windows 8, devices can enter the D3cold power sub-state even when the system stays in the S0 power state.
 ms.assetid: 4BADC310-CC53-4084-A592-66197C348279
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -86,7 +81,7 @@ The following block diagram shows an embedded device (labeled **EMBD**) on a sys
 
 The following ASL code example describes the power resources used by the embedded device in the previous diagram. This example starts with a declaration of an \_OSC control method that describes the capabilities of the device driver. Next, the device's two power resources are declared—the resource names PVCC and PVAX are assigned to the device's main and auxiliary power sources, **Vcc** and **Vaux**. Finally, the power resource requirements are listed for each device power state that the device supports, and the device's wake capabilities are described.
 
-``` syntax
+```asl
 Scope (\_SB)
 {
      Method(_OSC, 4, NotSerialized) // Platform-wide Capabilities Check.
@@ -191,7 +186,7 @@ The **RP01** device in this diagram has a main power source, **Vcc1**, and an au
 
 The following ASL code describes the parent bus controller (**PCI0**) and the power resources required for the **ENDP** and **HD Audio** devices shown in the preceding diagram.
 
-``` syntax
+```asl
 Scope (\_SB)
 {
      Method(_OSC, 4, NotSerialized) // Platform-wide Capabilities Check.
@@ -353,9 +348,9 @@ A device that fails to meet either requirement might, after entering D3cold, be 
 
 For more information, see [Supporting D3cold in a Driver](https://msdn.microsoft.com/library/windows/hardware/hh967717).
 
- 
+ 
 
- 
+ 
 
 
 

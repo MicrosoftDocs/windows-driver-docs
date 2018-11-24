@@ -11,11 +11,7 @@ keywords:
 - decoding video WDK DirectX VA , compressed pictures
 - video decoding WDK DirectX VA , uncompressed video pixel formats
 - decoding video WDK DirectX VA , uncompressed video pixel formats
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ ms.localizationpriority: medium
 
 In order for applications to use uncompressed decoded pictures, pictures must be produced in a known video pixel format. The list of uncompressed picture formats supported by any DirectX VA accelerator must contain at least one of the pixel formats described in [4:2:2 Video Pixel Formats](4-2-2-video-pixel-formats.md) or [4:2:0 Video Pixel Formats](4-2-0-video-pixel-formats.md).
 
- 
+ 
 
- 
+ 
 
 
 

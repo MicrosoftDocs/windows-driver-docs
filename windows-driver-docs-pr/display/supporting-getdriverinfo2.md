@@ -5,11 +5,7 @@ ms.assetid: 5e2dd363-9e72-4674-940e-8b4f06f6eb14
 keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , GetDriverInfo2
 - GetDriverInfo2
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,7 +19,7 @@ The DirectX 8.0 DDI introduces a new mechanism for querying the driver for infor
 
 **Note**   As you read the following you may question why the **GetDriverInfo2** mechanism is necessary. It would seem preferable to simply define a new **GetDriverInfo** GUID that the driver would handle by returning a D3DCAP8 structure. **GetDriverInfo2**, introduced in the following paragraphs, is a mechanism to minimize the changes required to the Windows Operating Systems to enable DirectX 8.0 level functionality and thus make redistributing the DirectX 8.0 runtime practical.
 
- 
+ 
 
 This extension to **GetDriverInfo** takes the form of a *DdGetDriverInfo* call with GUID\_GetDriverInfo2. When a *DdGetDriverInfo* call with that GUID is received by the driver, it must examine the data structure passed in the **lpvData** field of the [**DD\_GETDRIVERINFODATA**](https://msdn.microsoft.com/library/windows/hardware/ff551550) data structure to see what information is being requested. As described below, **lpvData** can point to either a [**DD\_GETDRIVERINFO2DATA**](https://msdn.microsoft.com/library/windows/hardware/ff551548) or [**DD\_STEREOMODE**](https://msdn.microsoft.com/library/windows/hardware/ff551716) structure.
 
@@ -37,9 +33,9 @@ In order to be called with **GetDriverInfo2**, and report DirectX 8.0 capabiliti
 
 The runtime uses **GetDriverInfo2** with type D3DGDI2\_TYPE\_DXVERSION to notify the driver of the current DX runtime version being used by the application. The runtime provides a pointer to a [**DD\_DXVERSION**](https://msdn.microsoft.com/library/windows/hardware/ff551515) structure in the **lpvData** field of DD\_GETDRIVERINFODATA.
 
- 
+ 
 
- 
+ 
 
 
 

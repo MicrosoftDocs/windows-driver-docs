@@ -2,11 +2,7 @@
 title: Hyper-V Extensible Switch Architecture
 description: Hyper-V Extensible Switch Architecture
 ms.assetid: AEFF534A-56AF-47AC-AA94-46EA0C2FC50A
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ This section describes the architecture of the Microsoft Hyper-V extensible swit
 
 [Hyper-V Extensible Switch Save and Restore Operations](hyper-v-extensible-switch-save-and-restore-operations.md)
 
- 
+ 
 
- 
+ 
 
 
 

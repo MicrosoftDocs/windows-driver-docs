@@ -7,11 +7,7 @@ keywords:
 - catalog files WDK driver signing , commercial release certificates
 - public release driver signing WDK , commercial release certificates
 - release signing WDK , commercial release certificates
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +22,9 @@ Follow the instructions that are provided by the CA about how to obtain and inst
 
 For more information about how to obtain a digital certificate from a CA, see the [Microsoft Root Certificate Program Members](http://go.microsoft.com/fwlink/p/?linkid=74266) website.
 
- 
+ 
 
- 
+ 
 
 
 

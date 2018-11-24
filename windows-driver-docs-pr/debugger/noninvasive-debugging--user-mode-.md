@@ -3,11 +3,7 @@ title: Noninvasive Debugging (User Mode)
 description: Noninvasive Debugging (User Mode)
 ms.assetid: 91f09fb1-9f5e-4081-89b3-78c95eada817
 keywords: ["process, debugging noninvasively", "noninvasive debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -79,9 +75,9 @@ If the .attach -v command is successful, the debugger debugs the specified proce
 
 For more information about how to begin a debugging session, see [Debugger Operation](debugger-operation-win8.md).
 
- 
+ 
 
- 
+ 
 
 
 

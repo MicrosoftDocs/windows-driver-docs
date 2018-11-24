@@ -7,11 +7,7 @@ keywords:
 - High Definition Audio (HD Audio), DDI version differences
 - HDAUDIO_BUS_INTERFACE structure
 - HDAUDIO_BUS_INTERFACE_BDL structure
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -66,9 +62,9 @@ For more information, see the *Intel High Definition Audio Specification*.
 
 However, nearly all clients will use the HDAUDIO\_BUS\_INTERFACE version of the DDI. Only a few clients that require precise control over the timing of interrupts will use the HDAUDIO\_BUS\_INTERFACE\_BDL version.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -9,11 +9,7 @@ keywords:
 - Switched 56K framing WDK WAN
 - WAN packet framing WDK networking , ISDN framing
 - WAN packet framing WDK networking , Switched 56K framing
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,9 +21,9 @@ ms.localizationpriority: medium
 
 Initially, ISDN B channels (not D channels) should be used. Multiple B channel support is done through NDISWAN's multilink support. Initially, bit-synchronous HDLC framing with NRZ encoding should be used. Transparency should be provided by the driver or ISDN hardware. It is also the responsibility of the ISDN driver or hardware to provide for NRZ encoding, to calculate the FCS to add the PPP end flag (0x7E), and to insert any inter-frame time fill. Switched 56K drivers should frame in the same manner as ISDN.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -7,11 +7,7 @@ keywords:
 - bridge pins WDK audio
 - mixer API WDK audio
 - KS filters WDK audio , non-PCM wave formats
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +27,9 @@ SysAudio (Sysaudio.sys) is the system audio device in Windows Server 2003, Windo
 
 You are not required to connect a non-PCM data path to the Topology miniport driver. This connection is of benefit only if the non-PCM data path interacts with the rest of the device's topology; for instance, if it feeds into a common mixer or sample-rate converter. Connecting a streaming pin to a bridge pin, where both pins are on the wave miniport driver, forms a valid, complete topology for a non-PCM data stream that flows directly to an S/PDIF port, for example.
 
- 
+ 
 
- 
+ 
 
 
 

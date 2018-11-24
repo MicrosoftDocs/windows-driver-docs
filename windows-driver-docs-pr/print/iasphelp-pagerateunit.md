@@ -1,6 +1,5 @@
 ---
 title: Iasphelp get\_PageRateUnit method
-author: windows-driver-content
 description: The PageRateUnit enables an ASP Web page to determine the units in which the page rate is expressed.
 MS-HAID:
 - 'webfnc\_c3c557fb-2ce9-4260-838a-4bd0e56fb63d.xml'
@@ -16,18 +15,18 @@ api_name:
 - Iasphelp.get_PageRateUnit
 api_type:
 - COM
+ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # Iasphelp::get\_PageRateUnit method
-
 
 The **PageRateUnit** enables an ASP Web page to determine the units in which the page rate is expressed.
 
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT get_PageRateUnit(
   [out] long *pVal
 );
@@ -70,8 +69,6 @@ A caller-supplied pointer to a memory location that receives a value that indica
 </tbody>
 </table>
 
- 
-
 These values correspond to the constants PRINTRATEUNIT\_PPM, PRINTRATEUNIT\_CPS, PRINTRATEUNIT\_LPM, and PRINTRATEUNIT\_IPM, which are defined in the Wingdi.h header file. For more information about these constants, see the description of the **DeviceCapabilities** function in the Windows SDK documentation.
 
 Return value
@@ -97,7 +94,7 @@ This property returns one of the values in the following table.
 </tr>
 <tr class="even">
 <td><strong>E_HANDLE</strong></td>
-<td><p>The [<strong>Iasphelp::Open</strong>](iasphelp-open.md) method has not been called.</p></td>
+<td><p>The <a href="iasphelp-open.md" data-raw-source="[&lt;strong&gt;Iasphelp::Open&lt;/strong&gt;](iasphelp-open.md)"><strong>Iasphelp::Open</strong></a> method has not been called.</p></td>
 </tr>
 <tr class="odd">
 <td><strong>E_OUTOFMEMORY</strong></td>
@@ -106,23 +103,18 @@ This property returns one of the values in the following table.
 </tbody>
 </table>
 
- 
-
-### <span id="vbscript_example"></span><span id="VBSCRIPT_EXAMPLE"></span>VBScript Example
-
-Remarks
--------
+## VBScript Example
 
 Query this property to determine the units in which the [**Iasphelp::PageRate**](iasphelp-pagerate.md) property value is expressed.
 
 The [**Iasphelp::Open**](iasphelp-open.md) method must be called before the **Iasphelp::PageRateUnit** property can be queried.
 
-```
-    Dim objPrinter, PtrPageRateUnit
-    strPrinter = Session("MS_printer")
-    Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
-    objPrinter.Open strPrinter
-    PtrPageRate = objPrinter.PageRateUnit
+```vb
+Dim objPrinter, PtrPageRateUnit
+strPrinter = Session("MS_printer")
+Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
+objPrinter.Open strPrinter
+PtrPageRate = objPrinter.PageRateUnit
 ```
 
 Requirements
@@ -138,24 +130,11 @@ Requirements
 <td><p>Target platform</p></td>
 <td>Desktop</td>
 </tr>
-<tr class="even">
-<td><p>Version</p></td>
-<td><p>Available in Windows 2000 and later versions of the Windows operating systems.</p></td>
-</tr>
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**Iasphelp::PageRate**](iasphelp-pagerate.md)
 
 [**Iasphelp::Open**](iasphelp-open.md)
-
- 
-
- 
-
-
-
-

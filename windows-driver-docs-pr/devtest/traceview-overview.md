@@ -4,11 +4,7 @@ description: TraceView Overview
 ms.assetid: 5aae01ec-a33c-42d2-93db-883b10b7abea
 keywords:
 - TraceView WDK , about TraceView
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

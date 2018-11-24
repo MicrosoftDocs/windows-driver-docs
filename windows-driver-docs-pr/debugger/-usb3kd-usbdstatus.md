@@ -3,11 +3,7 @@ title: usb3kd.usbdstatus
 description: The usb3kd.usbdstatus extension displays the name of a USBD status code.
 ms.assetid: B79B4E6E-7281-4BB0-9708-23F1462171BB
 keywords: ["usb3kd.usbdstatus Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The [**!usb3kd.usbdstatus**](-usb3kd-device-info.md) extension displays the name of a USBD status code.
 
-```
+```dbgcmd
 !usb3kd.ucx_usbdstatus UrbStatus
 ```
 
@@ -47,7 +43,7 @@ Examples
 
 The following example passes the numeric value 0x80000200 to the **!usbdstatus** command. The command returns the name of the status code, USBD\_STATUS\_INVALID\_URB\_FUNCTION.
 
-```
+```dbgcmd
 3: kd> !usbdstatus 0x80000200
 USBD_STATUS_INVALID_URB_FUNCTION (0x80000200)
 ```
@@ -57,11 +53,11 @@ USBD_STATUS_INVALID_URB_FUNCTION (0x80000200)
 
 [USB 3.0 Extensions](usb-3-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](http://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
- 
+ 
 
- 
+ 
 
 
 

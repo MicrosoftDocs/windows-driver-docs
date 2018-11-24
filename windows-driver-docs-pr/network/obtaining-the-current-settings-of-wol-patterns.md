@@ -2,11 +2,7 @@
 title: Obtaining the Current Settings of WOL Patterns
 description: Obtaining the Current Settings of WOL Patterns
 ms.assetid: 113ea75a-83d8-41aa-b61c-711ef90bccca
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,9 +16,9 @@ Overlying drivers can use the [OID\_PM\_WOL\_PATTERN\_LIST](https://msdn.microso
 
 NDIS handles OID\_PM\_WOL\_PATTERN\_LIST OID requests on behalf of the miniport driver. Therefore, NDIS miniport drivers are not required to support OID\_PM\_WOL\_PATTERN\_LIST OID request.
 
- 
+ 
 
- 
+ 
 
 
 

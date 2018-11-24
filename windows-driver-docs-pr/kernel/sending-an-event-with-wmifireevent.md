@@ -1,14 +1,9 @@
 ---
 title: Sending an Event with WmiFireEvent
-author: windows-driver-content
 description: Sending an Event with WmiFireEvent
 ms.assetid: f9cf8491-0f5a-4d83-849f-3edb77488092
 keywords: ["WMI WDK kernel , event tracking", "events WDK WMI", "tracing WDK WMI", "sending WMI events", "event blocks WDK WMI", "notifications WDK WMI", "WmiFireEvent", "dynamic instance names WDK WMI"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,9 +37,9 @@ A driver should not send events until WMI has enabled the event. After the event
 
 After **WmiFireEvent** returns, the driver resumes monitoring the event's trigger condition and sends the event each time its trigger condition occurs until WMI disables that event.
 
- 
+ 
 
- 
+ 
 
 
 

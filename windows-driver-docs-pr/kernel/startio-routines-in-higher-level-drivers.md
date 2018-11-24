@@ -1,14 +1,9 @@
 ---
 title: StartIo Routines in Higher-Level Drivers
-author: windows-driver-content
 description: StartIo Routines in Higher-Level Drivers
 ms.assetid: 8b0e3bef-4a73-4cf8-b71a-6aedf451d648
 keywords: ["StartIo routines, higher-level drivers"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,9 +33,9 @@ Most higher-level drivers simply send IRPs to lower-level drivers from their dis
 
 However, higher-level drivers can set up internal queues for IRPs that request particular kinds of operations, or set up internal queues to hold IRPs bound for a set of heterogeneous underlying devices like the SCSI port driver. For more information, see [Queuing and Dequeuing IRPs](queuing-and-dequeuing-irps.md).
 
- 
+ 
 
- 
+ 
 
 
 

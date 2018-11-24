@@ -2,11 +2,7 @@
 title: SR-IOV VF Failover and Live Migration Support
 description: SR-IOV VF Failover and Live Migration Support
 ms.assetid: 93D6EFC7-B701-4D10-8114-FA437E80096B
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -47,9 +43,9 @@ The transition between the VF and synthetic data paths occurs with minimum loss 
 
 For more information about this process, see [Virtual Function Teardown Sequence](virtual-function-teardown-sequence.md).
 
- 
+ 
 
- 
+ 
 
 
 

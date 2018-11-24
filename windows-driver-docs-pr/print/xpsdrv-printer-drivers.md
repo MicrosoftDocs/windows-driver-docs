@@ -1,6 +1,5 @@
 ---
 title: XPSDrv Printer Drivers
-author: windows-driver-content
 description: XPSDrv Printer Drivers
 ms.assetid: 9e61cb21-4e02-48dc-b291-576d37bb640d
 keywords:
@@ -10,11 +9,7 @@ keywords:
 - XPS Documents WDK XPSDrv
 - XPS spool files WDK XPSDrv
 - spool files WDK print
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -41,16 +36,8 @@ This section includes:
 
 [XPS Printing Features](xps-printing-features.md)
 
-[Windows Vista Print Path Overview](windows-print-path-overview.md)
+[Windows Print Path Overview](windows-print-path-overview.md)
 
 [XPS Support in Earlier Versions of Windows](xps-support-in-earlier-versions-of-windows.md)
 
 For more detailed information about XPS printing for printer driver developers, see [XPSDrv Printer Driver](xpsdrv-printer-driver.md).
-
- 
-
- 
-
-
-
-

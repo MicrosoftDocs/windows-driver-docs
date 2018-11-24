@@ -2,11 +2,8 @@
 title: Hardware dashboard FAQ
 description: This article provides answers to frequently asked questions about the Windows Hardware Dev Center dashboard.
 ms.assetid: AA3D1147-7015-4D21-84A6-D127F57DDC97
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
@@ -17,7 +14,7 @@ This article provides answers to frequently asked questions about the Windows Ha
 
 ## <span id="How_do_I_contact_Hardware_Dev_Center_Dashboard_Support_"></span><span id="how_do_i_contact_hardware_dev_center_dashboard_support_"></span><span id="HOW_DO_I_CONTACT_HARDWARE_DEV_CENTER_DASHBOARD_SUPPORT_"></span>How do I contact Hardware Dev Center Dashboard Support?
 
-If you are having problems accessing the Dashboard or need Dashboard Support please open a support ticket here: https://developer.microsoft.com/en-us/windows/support.  Select **Contact us** then **Dashboard issue** from the dropdown.
+If you are having problems accessing the Dashboard or need Dashboard Support please open a support ticket here: https://developer.microsoft.com/windows/support.  Select **Contact us**,  **Dashboard issue**, and then **Hardware submissions & signing (all OS version)** from the dropdown.
 
 
 ## <span id="Can_I_associate_multiple_certificates_with_a_dashboard_account_"></span><span id="can_i_associate_multiple_certificates_with_a_dashboard_account_"></span><span id="CAN_I_ASSOCIATE_MULTIPLE_CERTIFICATES_WITH_A_DASHBOARD_ACCOUNT_"></span>Can I associate multiple certificates with a dashboard account?
@@ -75,8 +72,8 @@ Check the announcement date that has been set. If the announcement date has pass
 | Component | Description |
 | ---       | ---         |
 |SellerID   | The identification number of your partner account. This can be found on the account management page, under **Account settings**. |
-|PrivateProductID | The identification number generated with each product creation. Located on the driver details page for your product. See [Dashboard ID definitions](https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/id-definitions) for more information. |
-|SubmissionID | The idenfication number given to each submission and submission update. Located on the driver details page for your product. See [Dashboard ID definitions](https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/id-definitions) for more information. |
+|PrivateProductID | The identification number generated with each product creation. Located on the driver details page for your product. See [Dashboard ID definitions](https://docs.microsoft.com/windows-hardware/drivers/dashboard/id-definitions) for more information. |
+|SubmissionID | The idenfication number given to each submission and submission update. Located on the driver details page for your product. See [Dashboard ID definitions](https://docs.microsoft.com/windows-hardware/drivers/dashboard/id-definitions) for more information. |
 
 - To create a sharable link, replace **SellerID**, **PrivateProductID**, and **SubmissionID** in the example URL above with the appropriate identification numbers.
 - This URL allows the report to be accessed and downloaded without prior authorization or access to the Windows Hardware Dev Center Dashboard.   
@@ -108,7 +105,7 @@ This error is caused when the uploaded archive's filetype is .zip64 instead of .
 
 -   Use [HLK studio](https://msdn.microsoft.com/library/windows/hardware/dn939927) to open the downloaded DUA shell package and to create DUA submission.
 
- 
+ 
 
- 
+ 
 

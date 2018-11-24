@@ -9,11 +9,7 @@ api_name:
 - KSEVENT_CONNECTION_DATADISCONTINUITY
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,9 +18,9 @@ ms.localizationpriority: medium
 
 The **KSEVENT\_CONNECTION\_DATADISCONTINUITY** event allows a client to receive notification of data discontinuity. This event occurs when a data discontinuity flag is sent through the stream interface on a pin. There are no parameters to this event.
 
- 
+ 
 
- 
+ 
 
 
 

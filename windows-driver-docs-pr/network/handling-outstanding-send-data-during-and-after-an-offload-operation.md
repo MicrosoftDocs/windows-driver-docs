@@ -7,11 +7,7 @@ keywords:
 - offloading state process WDK TCP chimney offload , outstanding send data
 - outstanding send data WDK TCP chimney offload
 - send data outstanding WDK TCP chimney offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -50,9 +46,9 @@ The sequence number for the next byte to send on the connection (see SND.NEXT in
 <a href="" id="sndmax"></a>**SndMax**  
 The maximum sequence number that has been sent on the connection.
 
- 
+ 
 
- 
+ 
 
 
 

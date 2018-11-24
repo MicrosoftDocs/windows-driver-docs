@@ -2,11 +2,7 @@
 title: WIA Microdriver Commands
 description: WIA Microdriver Commands
 ms.assetid: 54d0c35b-d8b3-4e38-85cf-d5b4f80f6daa
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,9 +32,9 @@ The following set of constants form the set of WIA microdriver commands. The com
 
 These commands are defined in *Wiamicro.h*, and are available in Windows Me and in Windows XP and later.
 
- 
+ 
 
- 
+ 
 
 
 

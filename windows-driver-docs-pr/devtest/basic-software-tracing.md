@@ -2,11 +2,7 @@
 title: Basic Software Tracing
 description: Basic Software Tracing
 ms.assetid: 52b95ffe-2b99-4dcc-a668-ecb55b02838e
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +25,9 @@ This section includes the following topics:
 
 [How do I include the source line number in the trace message prefix?](how-do-i-include-the-source-line-number-in-the-trace-message-prefix-.md)
 
- 
+ 
 
- 
+ 
 
 
 

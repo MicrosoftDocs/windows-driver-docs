@@ -5,11 +5,7 @@ ms.assetid: 63cde3d1-122c-4411-91b6-97e97bdd2df3
 keywords:
 - call managers WDK networking , CoNDIS
 - registering call managers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +25,9 @@ Miniport call managers (MCMs) also register call manager *ProtocolXxx* functions
 
 For more information about configuring optional protocol driver services, see [Configuring Optional Protocol Driver Services](configuring-optional-protocol-driver-services.md).
 
- 
+ 
 
- 
+ 
 
 
 

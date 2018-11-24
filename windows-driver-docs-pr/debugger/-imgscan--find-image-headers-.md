@@ -3,11 +3,7 @@ title: .imgscan (Find Image Headers)
 description: The .imgscan command scans virtual memory for image headers.
 ms.assetid: 8b524665-0471-4634-aa31-1c82d6cc8569
 keywords: ["Find Image Headers (.imgscan) command", ".imgscan (Find Image Headers) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **.imgscan** command scans virtual memory for image headers.
 
-```
+```dbgcmd
 .imgscan [Options] 
 ```
 
@@ -64,7 +60,7 @@ Displays verbose information.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -75,7 +71,7 @@ The **.imgscan** command displays any image headers that it finds and the header
 
 The following example shows the **.imgscan** command.
 
-```
+```dbgcmd
 0:000> .imgscan
 MZ at 00400000, prot 00000002, type 01000000 - size 2d000
 MZ at 77f80000, prot 00000002, type 01000000 - size 7d000
@@ -84,9 +80,9 @@ MZ at 7c570000, prot 00000002, type 01000000 - size b8000
   Name: KERNEL32.dll
 ```
 
- 
+ 
 
- 
+ 
 
 
 

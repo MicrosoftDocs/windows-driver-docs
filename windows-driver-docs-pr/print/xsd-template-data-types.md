@@ -1,6 +1,5 @@
 ---
 title: XSD Template Data Types
-author: windows-driver-content
 description: XSD Template Data Types
 ms.assetid: 96d3a75a-fa15-47bb-8331-e3994d25c42d
 keywords:
@@ -13,11 +12,7 @@ keywords:
 - ComplexType directive WDK GDL
 - parser WDK GDL , escaping special XML characters
 - escaping special XML characters WDK GDL
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -48,7 +43,7 @@ XML values with such incompatible syntaxes, or whose syntax is incompatible with
 
 For example, consider the following template.
 
-```
+```cpp
 *Template:  USAddress
 {
     *Type:  DATATYPE
@@ -81,7 +76,7 @@ In the following example, the **zipCode** type is referenced in the declaration 
 
 The preceding template definition will cause the creation of the following XML schema entry (it is the value of \*XSDTypeDefinition unchanged).
 
-```
+```cpp
     <complexType name="USAddress">
         <sequence>
             <element name="name"   type="string"/>
@@ -104,7 +99,7 @@ The parser automatically constructs another data type that defines a new type th
 
 The following code example shows the additional data type definition.
 
-```
+```cpp
     <complexType name = "GDLW_USAddress">
         <complexContent>
             <extension base="gdl:USAddress">
@@ -117,11 +112,11 @@ The following code example shows the additional data type definition.
 
 **Note**   The **GDLW\_USAddress** data type is declared as &lt;complexContent&gt; because the template for **USAddress** set \*ComplexType?: **TRUE**.
 
- 
+ 
 
 Consider the following GDL entry.
 
-```
+```cpp
 *Address: <BeginValue:XML> 
    <name>Alice Smith</name>
    <street>123 Maple Street</street>
@@ -133,7 +128,7 @@ Consider the following GDL entry.
 
 And consider the ADDRESS template, which declares the \*Address GDL aAttribute to have a \*ValueType that is defined by the template **USAddress**, as the following code example shows.
 
-```
+```cpp
 *Template:  ADDRESS
 {
     *Name: "*Address"
@@ -144,7 +139,7 @@ And consider the ADDRESS template, which declares the \*Address GDL aAttribute t
 
 If the earlier GDL entry is interpreted by using the ADDRESS template, the resulting XML output would occur.
 
-```
+```cpp
     <GDL_ATTRIBUTE Name="*Address"  xsi:type="GDLW_USAddress" >
     <name>Ben Smith</name>
     <street>123 Maple Street</street>
@@ -156,9 +151,9 @@ If the earlier GDL entry is interpreted by using the ADDRESS template, the resul
 
 The XML attribute xsi:type defines this instance of the ATTRIBUTE element to hold an XSD-defined data type named **GDLW\_USAddress**. The entire value of the GDL attribute instance is inserted as element content into the &lt;GDL\_ATTRIBUTE&gt; element in the XML snapshot without any modification. Thus, the value must be valid XML and must follow all XML syntax rules, like representation of special characters.
 
- 
+ 
 
- 
+ 
 
 
 

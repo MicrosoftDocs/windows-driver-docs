@@ -6,11 +6,7 @@ keywords:
 - displaying 16 9 video
 - 4 3 destination surface displays 16 9 video WDK DirectX VA
 - 16 9 video on 4 3 destination surface WDK DirectX VA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +30,9 @@ Note that for clarity the preceding example does not contain any video substream
     -   Source rectangle = {0, 0, 720, 480},
     -   Destination rectangle = {0, 60,640,300}
 
- 
+ 
 
- 
+ 
 
 
 

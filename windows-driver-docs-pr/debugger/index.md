@@ -3,7 +3,6 @@ title: Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)
 description: Start here for an overview of Debugging Tools for Windows. This tool set includes WinDbg and other debuggers.
 ms.assetid: 938ef180-84de-442f-9b6c-1138c2fc8d5a
 keywords: ["Debugging Tools for Windows", "Windows debugging", "Windows Debugger", "Kernel debugging", "Kernel debugger", "WinDbg"]
-ms.author: domars
 ms.date: 02/22/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -12,8 +11,6 @@ ms.technology: windows-devices
 
 # Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)
 
-
-February 2018
 
 Start here for an overview of Debugging Tools for Windows. This tool set includes WinDbg and other debuggers.
 
@@ -48,7 +45,7 @@ After you install Visual Studio and the WDK, you'll have six available [debuggin
 
 **Note**  Visual Studio includes its own debugging environment and debugging engine, which together are called the *Visual Studio debugger*. For information on debugging in Visual Studio, see [Visual Studio debugger](https://go.microsoft.com/fwlink/p/?LinkID=238333). If you are looking to debug managed code such as C#, using the Visual Studio debugger is often the easiest way to get started.
 
- 
+ 
 
 ## <span id="Windows_debuggers"></span><span id="windows_debuggers"></span><span id="WINDOWS_DEBUGGERS"></span>Windows debuggers
 
@@ -95,9 +92,9 @@ For additional information related to Debugging Tools for Windows, see [Debuggin
 -   [Bug Checks (Blue Screens)](bug-checks--blue-screens-.md)
 -   [Debugger Reference](debugger-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

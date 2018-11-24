@@ -6,11 +6,7 @@ keywords:
 - floating-point operations WDK Direct3D
 - Direct3D WDK Windows 2000 display , floating-point operations
 - callback functions WDK Direct3D
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -44,9 +40,9 @@ For the following callback functions, a Direct3D-supported display driver must s
 
 For more information about floating-point operations, see [Floating-Point Operations in Graphics Driver Functions](floating-point-operations-in-graphics-driver-functions.md).
 
- 
+ 
 
- 
+ 
 
 
 

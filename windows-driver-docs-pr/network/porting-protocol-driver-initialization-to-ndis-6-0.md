@@ -7,11 +7,7 @@ keywords:
 - NDIS protocol drivers WDK , initialization
 - initializing protocol drivers
 - porting protocol drivers WDK networking , initialization
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +27,9 @@ The following topics provide more information about porting protocol driver init
 
 [Registering Optional NDIS 6.0 Protocol Driver Entry Points](registering-optional-ndis-6-0-protocol-driver-entry-points.md)
 
- 
+ 
 
- 
+ 
 
 
 

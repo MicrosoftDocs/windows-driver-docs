@@ -9,11 +9,7 @@ keywords:
 - symbolic-link names WDK smart card
 - kernel device names WDK smart card
 - WDM device names WDK smart card
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,9 +33,9 @@ Because every driver must communicate with the smart card resource manager, the 
 
 The unit number for the device in the Win32 name space does not have to be the same as the one used to form the kernel device name. It should be the first available unit number. Use [**SmartcardCreateLink (WDM)**](https://msdn.microsoft.com/library/windows/hardware/ff548935) to automatically generate a symbolic-link name.
 
- 
+ 
 
- 
+ 
 
 
 

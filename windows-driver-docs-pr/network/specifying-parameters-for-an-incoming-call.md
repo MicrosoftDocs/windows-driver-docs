@@ -9,11 +9,7 @@ keywords:
 - voice streaming WDK networing , incoming calls
 - incoming calls WDK CoNDIS WAN
 - calls WDK CoNDIS WAN
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -65,9 +61,9 @@ A call manager or an MCM that supports the CO\_ADDRESS\_FAMILY\_TAPI\_PROXY fami
 
 For a description of the members in the LINE\_CALL\_INFO structure, see the LINECALLINFO structure in the Microsoft Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

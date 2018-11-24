@@ -14,11 +14,7 @@ keywords:
 - flipping WDK DirectDraw
 - primary surfaces WDK DirectDraw
 - surfaces WDK DirectDraw , flipping
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -46,9 +42,9 @@ If a front buffer has one or more back buffers attached, it is a flippable surfa
 
 Flipping solves most screen flicker problems. The ability to render to a surface that is not being displayed allows smooth, tear-free animation for game play and video playback.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -11,11 +11,7 @@ api_location:
 - ks.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +23,7 @@ Clients use the KSPROPERTY\_PIN\_PROPOSEDATAFORMAT property to determine if pins
 ## <span id="ddk_ksproperty_pin_proposedataformat_ks"></span><span id="DDK_KSPROPERTY_PIN_PROPOSEDATAFORMAT_KS"></span>
 
 
-### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
+### Usage Summary Table
 
 <table>
 <colgroup>
@@ -51,18 +47,18 @@ Clients use the KSPROPERTY\_PIN\_PROPOSEDATAFORMAT property to determine if pins
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Filter</p></td>
-<td><p>[<strong>KSP_PIN</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566722)</p></td>
-<td><p>[<strong>KSDATAFORMAT</strong>](https://msdn.microsoft.com/library/windows/hardware/ff561656)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566722" data-raw-source="[&lt;strong&gt;KSP_PIN&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566722)"><strong>KSP_PIN</strong></a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff561656" data-raw-source="[&lt;strong&gt;KSDATAFORMAT&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff561656)"><strong>KSDATAFORMAT</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
 
-[**KSPROPERTY\_TYPE\_GET**](https://msdn.microsoft.com/library/windows/hardware/ff564262) is only supported in Windows 7 and later versions of Windows. This function allows the audio driver to provide information about the default data format on a pin. In Windows Vista **KSPROPERTY\_TYPE\_GET** is *not supported*.
+[**KSPROPERTY\_TYPE\_GET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier) is only supported in Windows 7 and later versions of Windows. This function allows the audio driver to provide information about the default data format on a pin. In Windows Vista **KSPROPERTY\_TYPE\_GET** is *not supported*.
 
 Specify this property using KSP\_PIN, where the member specifies the relevant pin factory.
 
@@ -90,16 +86,16 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**KSP\_PIN**](https://msdn.microsoft.com/library/windows/hardware/ff566722)
 
 [**KSDATAFORMAT**](https://msdn.microsoft.com/library/windows/hardware/ff561656)
 
- 
+ 
 
- 
+ 
 
 
 

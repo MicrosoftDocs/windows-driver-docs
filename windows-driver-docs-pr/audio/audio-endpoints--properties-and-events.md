@@ -18,11 +18,7 @@ keywords:
 - KS events WDK audio
 - properties WDK audio
 - pins WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -120,9 +116,9 @@ This section discusses audio-specific properties and events. It contains the fol
 
 [Hardware Events](hardware-events.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,11 +3,7 @@ title: Register Syntax
 description: Register Syntax
 ms.assetid: 64a566b1-c10b-4329-947c-af69904a21f8
 keywords: ["expressions, registers", "registers, command syntax", "(register prefix)", "syntax rules for commands, (register prefix)", "syntax rules for commands, registers"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +23,7 @@ If you are using C++ expression syntax, the at sign is always required.
 
 The [**r (Registers)**](r--registers-.md) command is an exception to this rule. The debugger always interprets its first argument as a register. (An at sign is not required or permitted.) If there is a second argument for the **r** command, it is interpreted according to the default expression syntax. If the default expression syntax is C++, you must use the following command to copy the **ebx** register to the **eax** register.
 
-```
+```dbgcmd
 0:000> r eax = @ebx
 ```
 
@@ -45,9 +41,9 @@ In user mode, any reference to a register is interpreted as the register that is
 
 In kernel mode, any reference to a register is interpreted as the register that is associated with the current register context. You can set the register context to match a specific thread, context record, or trap frame. You can display only the most important registers for the specified register context, and you cannot change their values.
 
- 
+ 
 
- 
+ 
 
 
 

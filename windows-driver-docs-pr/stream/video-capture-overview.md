@@ -1,17 +1,12 @@
 ---
 title: Video Capture Overview
-author: windows-driver-content
 description: Video Capture Overview
 ms.assetid: 3f299905-beab-48e2-b5c9-9850452115c6
 keywords:
 - video capture WDK AVStream , about video capture
 - capturing video WDK AVStream , about video capture
 - video capture WDK AVStream
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,9 +33,9 @@ Video capture minidrivers interact with either the AVStream of Stream class inte
 
 -   Provide WDM streaming (for kernel mode) and DirectShow (for user mode) compatibility.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: Low Power for Wake on LAN
 description: Low Power for Wake on LAN
 ms.assetid: 9ab8fa19-e75a-4266-accf-4e8b2964f82e
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -58,9 +54,9 @@ Starting with NDIS 6.30, if the miniport driver supports [**NDIS\_STATUS\_PM\_WA
 
 For more information, see [NDIS Wake Reason Status Indications](ndis-wake-reason-status-indications.md).
 
- 
+ 
 
- 
+ 
 
 
 

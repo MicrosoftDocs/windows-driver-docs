@@ -2,11 +2,7 @@
 title: Transport Bus Driver for Bluetooth
 description: The following diagram of a sample system, depicts the driver stacks used to support a multifunction controller, using UART as its transport.
 ms.assetid: C47FA9B7-9627-452F-8FDC-4B97FFF79E9D
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ The roles of these two layers in power management are discussed in the following
 -   [Bluetooth Core Driver Layer and Supported Power Transitions](bluetooth-core-driver-layer-and-supported-power-transitions.md)
 -   [Serial Bus Driver Layer](serial-bus-driver-layer.md)
 
- 
+ 
 
- 
+ 
 
 
 

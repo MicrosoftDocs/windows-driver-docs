@@ -1,13 +1,8 @@
 ---
 title: Unidrv Keywords
-author: windows-driver-content
 description: Unidrv Keywords
 ms.assetid: b76fcf53-cd75-4e85-a7a2-00a69cc82a97
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -66,13 +61,13 @@ Unidrv plug-ins should use strings as they appear in the GPD view (not the GDL v
 </tbody>
 </table>
 
- 
+ 
 
 Some GPD syntax is expanded at parse time to create features and options. The most common syntax that falls into this category is the \***MemConfigKB** keyword. Others include the \***MemConfigMB**, \***MemoryConfigKB**, and \***Installable** keywords.
 
- 
+ 
 
- 
+ 
 
 
 

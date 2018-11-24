@@ -3,11 +3,7 @@ title: Forcing a System Crash from the Keyboard
 description: Forcing a System Crash from the Keyboard
 ms.assetid: 0c3ec6f3-d233-46e4-b599-1a0f89318ed2
 keywords: ["boot process, causing system crash from keyboard", "CTRL+SCROLL LOCK", "system crash, causing from keyboard", "bug check, causing from keyboard", "keyboard-caused system crash", "USB keyboard and system crash", "PS/2 keyboard and system crash", "forcing system crash from keyboard"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,21 +21,21 @@ This feature is available in Windows 2000 and later versions of Windows operatin
 <span id="________USB_keyboards_______"></span><span id="________usb_keyboards_______"></span><span id="________USB_KEYBOARDS_______"></span> USB keyboards   
 This feature is available in:
 
--   Windows Server 2003 Service Pack 1 if the hotfix available with [KB 244139](http://go.microsoft.com/fwlink/p/?linkid=106065) is installed.
+-   Windows Server 2003 Service Pack 1 if the hotfix available with [KB 244139](https://go.microsoft.com/fwlink/p/?linkid=106065) is installed.
 
 -   Windows Server 2003 (with Service Pack 2 or later).
 
--   Windows Vista Service Pack 1 if the hotfix available with [KB 971284](http://go.microsoft.com/fwlink/p/?LinkId=241349) is installed.
+-   Windows Vista Service Pack 1 if the hotfix available with [KB 971284](https://go.microsoft.com/fwlink/p/?LinkId=241349) is installed.
 
 -   Windows Vista Service Pack 2.
 
--   Windows Server 2008 Service Pack 1 if the hotfix available with [KB 971284](http://go.microsoft.com/fwlink/p/?LinkId=241349) is installed.
+-   Windows Server 2008 Service Pack 1 if the hotfix available with [KB 971284](https://go.microsoft.com/fwlink/p/?LinkId=241349) is installed.
 -   Windows Server 2008 (with Service Pack 2 or later).
 -   Windows 7 and later versions of Windows operating system.
 
 **Note**  This feature is not available in Windows XP.
 
- 
+ 
 
 You must ensure the following three settings before the keyboard can cause a system crash:
 
@@ -57,7 +53,7 @@ The system then calls **KeBugCheck** and issues [**bug check 0xE2**](bug-check-0
 
 If a kernel debugger is attached to the crashed machine, the machine will break into the kernel debugger after the crash dump file has been written.
 
-For more information on using this feature, refer to the article [Generate a memory dump file by using the keyboard (KB 244139)](http://go.microsoft.com/fwlink/p/?linkid=106065).
+For more information on using this feature, refer to the article [Generate a memory dump file by using the keyboard (KB 244139)](https://go.microsoft.com/fwlink/p/?linkid=106065).
 
 ### <span id="defining_alternate_keyboard_shortcuts_to_force_a_system_crash_from_the"></span><span id="DEFINING_ALTERNATE_KEYBOARD_SHORTCUTS_TO_FORCE_A_SYSTEM_CRASH_FROM_THE"></span>Defining Alternate Keyboard Shortcuts to Force a System Crash from the Keyboard
 
@@ -117,16 +113,16 @@ The values for the first hot key are described in the following table.
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  You can assign **Dump1Keys** a value that enables one or more keys as the first key used in the keyboard shortcut sequence. For example, assign **Dump1Keys** a value of 0x11 to define both the rightmost and leftmost SHIFT keys as the first key in the keyboard shortcut sequence.
 
- 
+ 
 
 <span id="Dump2Key"></span><span id="dump2key"></span><span id="DUMP2KEY"></span>**Dump2Key**  
 The **Dump2Key** registry value is the index into the scancode table for the keyboard layout of the target computer. The following is the actual table in the driver.
 
-```
+```cpp
 const UCHAR keyToScanTbl[134] = { 
         0x00,0x29,0x02,0x03,0x04,0x05,0x06,0x07,0x08,0x09,
         0x0A,0x0B,0x0C,0x0D,0x7D,0x0E,0x0F,0x10,0x11,0x12,
@@ -146,7 +142,7 @@ const UCHAR keyToScanTbl[134] = {
 
 **Note**   Index 124 (sysreq) is a special case because an 84-key keyboard has a different scan code.
 
- 
+ 
 
 If you define alternate keyboard shortcuts to force a system crash from a USB or PS/2 keyboard, you must either set the **CrashOnCtrlScroll** registry value to 0 or remove it from the registry.
 
@@ -156,9 +152,9 @@ It is possible for a system to freeze in such a way that the keyboard shortcut s
 
 Forcing a system crash from the keyboard does not work if the computer stops responding at a high interrupt request level (IRQL). This limitation exists because the Kbdhid.sys driver, which allows the memory dump process to run, operates at a lower IRQL than the i8042prt.sys driver.
 
- 
+ 
 
- 
+ 
 
 
 

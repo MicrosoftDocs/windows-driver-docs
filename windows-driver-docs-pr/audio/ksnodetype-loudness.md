@@ -9,11 +9,7 @@ api_name:
 - KSNODETYPE_LOUDNESS
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +27,9 @@ A KSNODETYPE\_LOUDNESS node should support at least one of the following propert
 
 [**KSPROPERTY\_AUDIO\_DYNAMIC\_RANGE**](ksproperty-audio-dynamic-range.md)
 
- 
+ 
 
- 
+ 
 
 
 

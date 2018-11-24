@@ -1,9 +1,9 @@
 ---
 title: Serial IRP major function codes
-author: windows-driver-content
 description: Documents serial IRP major function codes
 keywords: ["serial devices WDK", "serial drivers WDK", "Serial IRP codes"]
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Serial IRP major function codes

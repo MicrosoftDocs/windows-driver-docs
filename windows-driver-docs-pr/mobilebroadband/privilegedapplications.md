@@ -2,11 +2,7 @@
 title: PrivilegedApplications
 description: PrivilegedApplications
 ms.assetid: fb0c4a7e-173e-4768-b1ba-a6c5149d61aa
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -46,13 +42,13 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Package](package-privapps.md)</p></td>
+<td><p><a href="package-privapps.md" data-raw-source="[Package](package-privapps.md)">Package</a></p></td>
 <td><p>The app that should have access to the privileged Mobile Broadband interfaces.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Parent_elements"></span><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Parent elements
 
@@ -70,13 +66,13 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[SoftwareInfo](softwareinfo.md)</p></td>
-<td><p>The parent element of the [SoftwareInfo XML schema](softwareinfo-xml-schema.md).</p></td>
+<td><p><a href="softwareinfo.md" data-raw-source="[SoftwareInfo](softwareinfo.md)">SoftwareInfo</a></p></td>
+<td><p>The parent element of the <a href="softwareinfo-xml-schema.md" data-raw-source="[SoftwareInfo XML schema](softwareinfo-xml-schema.md)">SoftwareInfo XML schema</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="XSD"></span><span id="xsd"></span>XSD
 
@@ -110,9 +106,9 @@ There are no attributes.
 
 The PrivilegedApplications element is optional.
 
- 
+ 
 
- 
+ 
 
 
 

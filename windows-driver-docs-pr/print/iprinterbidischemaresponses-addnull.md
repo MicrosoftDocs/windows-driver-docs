@@ -1,6 +1,5 @@
 ---
 title: IPrinterBidiSchemaResponses AddNull method
-author: windows-driver-content
 description: The AddNull method adds a new response of type BIDI\_NULL to the collection.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
@@ -13,18 +12,18 @@ api_name:
 - IPrinterBidiSchemaResponses.AddNull
 api_type:
 - COM
+ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # IPrinterBidiSchemaResponses::AddNull method
-
 
 The AddNull method adds a new response of type BIDI\_NULL to the collection.
 
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT AddNull(
   [in] BSTR bstrSchema
 );
@@ -56,20 +55,11 @@ Requirements
 </tr>
 <tr class="even">
 <td><p>Version</p></td>
-<td><p>Windows 8</p></td>
+<td><p>Windows 8 and later</p></td>
 </tr>
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**IPrinterBidiSchemaResponses**](iprinterbidischemaresponses.md)
-
- 
-
- 
-
-
-
-

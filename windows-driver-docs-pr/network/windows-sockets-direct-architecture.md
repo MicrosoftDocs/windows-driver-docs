@@ -6,11 +6,7 @@ keywords:
 - Windows Sockets Direct WDK , architecture
 - TCP/IP WDK SANs
 - NIC components WDK SANs
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -58,9 +54,9 @@ The switch works closely with the standard base TCP/IP service provider to obtai
 
 The TCP/IP service provider also handles all communication over standard LAN and WAN interconnects, raw IP sockets, all UDP sockets, and connections between subnets.
 
- 
+ 
 
- 
+ 
 
 
 

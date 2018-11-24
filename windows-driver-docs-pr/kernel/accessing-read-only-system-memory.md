@@ -1,14 +1,9 @@
 ---
 title: Accessing Read-Only System Memory
-author: windows-driver-content
 description: Accessing Read-Only System Memory
 ms.assetid: d2c1f933-3a7e-4e82-b96d-4f019b27abd5
 keywords: ["memory management WDK kernel , read-only memory", "read-only memory WDK kernel", "intercepting system calls", "global strings WDK memory"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,7 +27,7 @@ Some drivers intercept system calls by overwriting the driver's own code and ins
 
 If a global string is to be modified, it must not be declared as a pointer to a constant value:
 
-```
+```cpp
 CHAR *myString = "This string cannot be modified.";
 ```
 
@@ -40,15 +35,15 @@ In this case, the linker might put the string in a read-only memory segment. The
 
 Instead, the string should be explicitly declared as an array of L-value characters:
 
-```
+```cpp
 CHAR myString[] = "This string can be modified.";
 ```
 
 This declaration makes sure that the string is put in writable memory.
 
- 
+ 
 
- 
+ 
 
 
 

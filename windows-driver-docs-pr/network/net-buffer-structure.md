@@ -8,11 +8,7 @@ keywords:
 - data WDK networking , structures
 - packets WDK networking , data structures
 - NDIS_PACKET
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -81,9 +77,9 @@ Retreat operations increase the size of the *used data space*.
 <a href="" id="advance"></a>Advance  
 Advance operations decrease the size of the *used data space*.
 
- 
+ 
 
- 
+ 
 
 
 

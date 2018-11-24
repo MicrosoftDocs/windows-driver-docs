@@ -1,13 +1,8 @@
 ---
 title: Example DetectSubregions
-author: windows-driver-content
 description: Example DetectSubregions
 ms.assetid: 8fd5271a-587a-4b29-82a4-b84f70f5478f
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,7 +14,7 @@ ms.localizationpriority: medium
 
 The segmentation filter performs region detection on the stream (*pImageStream*) passed into the **DetectSubregions** method. For information on the **CreateSegmentationFilter** function, which is used in this example, see the **IWiaItem2::GetExtension** method in the Microsoft Windows SDK documentation.
 
-```
+```cpp
 HRESULT
 DetectSubregions(
    IN IStream   *pImageStream,
@@ -53,9 +48,9 @@ DetectSubregions(
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

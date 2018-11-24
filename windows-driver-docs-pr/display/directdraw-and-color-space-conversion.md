@@ -12,11 +12,7 @@ keywords:
 - FOURCCs
 - color space WDK DirectDraw
 - converting color space
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,9 +34,9 @@ Three common YUV color spaces are:
 
 There are many varieties of these color spaces and many other YUV formats in use today. For information about FOURCC, go to the [FOURCC](http://go.microsoft.com/fwlink/p/?linkid=8697) website.
 
- 
+ 
 
- 
+ 
 
 
 

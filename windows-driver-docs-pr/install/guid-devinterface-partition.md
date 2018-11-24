@@ -12,6 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # GUID_DEVINTERFACE_PARTITION
@@ -42,7 +43,7 @@ The GUID_DEVINTERFACE_PARTITION [device interface class](https://msdn.microsoft.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -76,9 +77,9 @@ Requirements
 
 [**PartitionClassGuid**](partitionclassguid.md)
 
- 
+ 
 
- 
+ 
 
 
 

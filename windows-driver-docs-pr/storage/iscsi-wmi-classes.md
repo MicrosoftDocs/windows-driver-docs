@@ -3,6 +3,7 @@ title: iSCSI WMI Classes
 description: iSCSI WMI Classes
 ms.assetid: a3742c51-b38e-4ac2-923d-3f48a561b04d
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # iSCSI WMI Classes
@@ -31,9 +32,9 @@ In addition to status values that are associated with property qualifiers, there
 
 -   [ISCSI\_STATUS\_QUALIFIERS](iscsi-status-qualifiers.md)
 
- 
+ 
 
- 
+ 
 
 
 

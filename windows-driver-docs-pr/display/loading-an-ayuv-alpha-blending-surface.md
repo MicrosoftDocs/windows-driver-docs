@@ -6,11 +6,7 @@ keywords:
 - alpha-blend data loading WDK DirectX VA
 - blended pictures WDK DirectX VA , alpha-blend data loading
 - AYUV alpha-blending surface WDK DirectX VA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -58,9 +54,9 @@ The *SampleAlpha4* field for both *DXVA\_IA44sample* and *DXVA\_AI44sample* cont
 
 The width and height of the IA44 alpha-blending surface are specified in the associated [buffer description list](buffer-description-list.md).
 
- 
+ 
 
- 
+ 
 
 
 

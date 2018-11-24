@@ -2,11 +2,8 @@
 title: Creating a Preview Package
 description: Creating a Preview Package
 ms.assetid: 49880681-480d-4f2d-bf8f-d621ac275244
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
@@ -57,9 +54,9 @@ Any preview package submitted by the partner of a company will require the compa
 
 [Device Metadata Business Rules](https://msdn.microsoft.com/library/windows/hardware/br230767.aspx)
 
- 
+ 
 
- 
+ 
 
 
 

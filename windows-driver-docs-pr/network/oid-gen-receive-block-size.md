@@ -1,13 +1,8 @@
 ---
 title: OID_GEN_RECEIVE_BLOCK_SIZE
-author: windows-driver-content
 description: As a query.
 ms.assetid: 92a7a388-4a41-41cf-96e5-a65b5559553d
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_GEN_RECEIVE_BLOCK_SIZE Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -63,9 +58,9 @@ Requirements
 
 [OID\_GEN\_CURRENT\_LOOKAHEAD](oid-gen-current-lookahead.md)
 
- 
+ 
 
- 
+ 
 
 
 

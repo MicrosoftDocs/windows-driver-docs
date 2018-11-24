@@ -19,11 +19,7 @@ keywords:
 - kernel streaming WDK audio
 - filter graphs WDK audio
 - speakers WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -65,11 +61,11 @@ This section contains the following topics:
 
 [KsStudio Utility](ksstudio-utility.md)
 
-For updates and information about new features of the WDM audio architecture, see the [audio technology](http://go.microsoft.com/fwlink/p/?linkid=8751) website.
+For updates and information about new features of the WDM audio architecture, see the [audio technology](https://go.microsoft.com/fwlink/p/?linkid=8751) website.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,11 +3,7 @@ title: q, qq (Quit)
 description: The q and qq commands end the debugging session.
 ms.assetid: 94d35997-8b21-4d25-b2ae-4b2a78240153
 keywords: ["q, qq (Quit) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **q** and **qq** commands end the debugging session. (In CDB and KD, this command also exits the debugger itself. In WinDbg, this command returns the debugger to dormant mode.)
 
-```
+```dbgcmd
 q 
 qq 
 ```
@@ -53,7 +49,7 @@ qq
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -66,9 +62,9 @@ If this command does not work in KD, press [**CTRL+R+ENTER**](ctrl-r--re-synchro
 
 The **qq** command behaves exactly like the **q** command, unless you are performing remote debugging. During remote debugging, the **q** command has no effect, but the **qq** command ends the debugging server. For more information about this effect, see [Remote Debugging Through the Debugger](remote-debugging-through-the-debugger.md).
 
- 
+ 
 
- 
+ 
 
 
 

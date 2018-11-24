@@ -1,13 +1,8 @@
 ---
 title: WIA Item Flags
-author: windows-driver-content
 description: WIA Item Flags
 ms.assetid: 2b96bc23-705b-47f0-811c-1cb4a8be8b34
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +28,9 @@ For example: **WiaItemTypeImage** is a data representation flag that tells the a
 
 For a complete list of the WIA item flags and their definitions see [**WIA\_IPA\_ITEM\_FLAGS**](https://msdn.microsoft.com/library/windows/hardware/ff551585).
 
- 
+ 
 
- 
+ 
 
 
 

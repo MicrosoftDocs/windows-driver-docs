@@ -1,13 +1,8 @@
 ---
 title: PTP Required Commands
-author: windows-driver-content
 description: PTP Required Commands
 ms.assetid: 98f4be09-0f13-45a1-b28a-c027e57c0dd7
-ms.author: windowsdriverdev
 ms.date: 07/18/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

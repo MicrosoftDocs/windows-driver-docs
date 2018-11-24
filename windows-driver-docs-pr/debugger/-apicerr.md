@@ -3,11 +3,7 @@ title: apicerr
 description: The apicerr extension displays the local Advanced Programmable Interrupt Controller (APIC) error log.
 ms.assetid: b058412b-a4df-42cc-8550-b5db4e0bbccc
 keywords: ["APIC (Advanced Programmable Interrupt Controller)", "apicerr Windows Debugging"]
-ms.author: domars
-ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 09/17/2018
 topic_type:
 - apiref
 api_name:
@@ -22,8 +18,8 @@ ms.localizationpriority: medium
 
 The **!apicerr** extension displays the local Advanced Programmable Interrupt Controller (APIC) error log.
 
-```
-    !apicerr [Format] 
+```dbgcmd
+     !apicerr [Format] 
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
@@ -57,7 +53,7 @@ Displays the error log according to processor.
 </tbody>
 </table>
 
- 
+ 
 
 This extension command can only be used with an x86-based or an x64-based target computer.
 
@@ -65,9 +61,9 @@ This extension command can only be used with an x86-based or an x64-based target
 
 For information about APICs, see *Microsoft Windows Internals* by Mark Russinovich and David Solomon. (This book may not be available in some languages and countries.)
 
- 
+ 
 
- 
+ 
 
 
 

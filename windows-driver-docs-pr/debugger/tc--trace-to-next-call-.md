@@ -3,11 +3,7 @@ title: tc (Trace to Next Call)
 description: The tc command executes the program until a call instruction is reached.
 ms.assetid: cdeb448e-1032-46b1-a791-2fb84005fce4
 keywords: ["tc (Trace to Next Call) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,13 +20,13 @@ The **tc** command executes the program until a call instruction is reached.
 
 User-Mode
 
-```
+```dbgcmd
 [~Thread] tc [r] [= StartAddress] [Count] 
 ```
 
 Kernel-Mode
 
-```
+```dbgcmd
 tc [r] [= StartAddress] [Count] 
 ```
 
@@ -74,7 +70,7 @@ Specifies the number of **call** instructions that the debugger must encounter f
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -89,9 +85,9 @@ If the program counter is already on a **call** instruction, the debugger traces
 
 In source mode, you can associate one source line with multiple assembly instructions. This command does not stop at a **call** instruction that is associated with the current source line.
 
- 
+ 
 
- 
+ 
 
 
 

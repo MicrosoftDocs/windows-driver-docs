@@ -6,11 +6,7 @@ keywords:
 - display driver model WDK Windows Vista , migrating
 - Windows Vista display driver model WDK , migrating
 - migrating display driver model WDK Windows Vista
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,7 +31,7 @@ Although driver writers can reuse low-level hardware-dependent code in their WDD
     [**IOCTL\_VIDEO\_QUERY\_COLOR\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff567817)
     [**IOCTL\_VIDEO\_HANDLE\_VIDEOPARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff567805)
 
-     
+     
 
 <!-- -->
 
@@ -47,9 +43,9 @@ Although driver writers can reuse low-level hardware-dependent code in their WDD
     -   The [**D3dDrawPrimitives2**](https://msdn.microsoft.com/library/windows/hardware/ff544704) function and [**DP2**](https://msdn.microsoft.com/library/windows/hardware/ff545678) operation codes
     -   The [motion compensation callback functions](https://msdn.microsoft.com/library/windows/hardware/ff568441) and [DirectX Video Acceleration structures](https://msdn.microsoft.com/library/windows/hardware/ff553882)
 
- 
+ 
 
- 
+ 
 
 
 

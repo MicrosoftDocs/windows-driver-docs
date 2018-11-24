@@ -3,11 +3,7 @@ title: running
 description: The running extension displays a list of running threads on all processors of the target computer.
 ms.assetid: 08fd9806-36e9-4589-bf92-87dc02efebac
 keywords: ["running Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!running** extension displays a list of running threads on all processors of the target computer.
 
-```
+```dbgcmd
 !running [-i] [-t]
 ```
 
@@ -54,7 +50,7 @@ Causes a stack trace to be displayed for each processor.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -67,7 +63,7 @@ With no options, **!running** will display the affinity of all active processors
 
 Here is an example from a multiprocessor Itanium system:
 
-```
+```dbgcmd
 0: kd> !running
  
 System Processors 3 (affinity mask)
@@ -82,7 +78,7 @@ The 16 characters at the end of each line indicate the built-in queued spin lock
 
 Here is an example that shows active and idle processors, along with their stack traces:
 
-```
+```dbgcmd
 0: kd> !running -it
  
 System Processors f (affinity mask)
@@ -113,9 +109,9 @@ ChildEBP RetAddr
 f8800980 f8800980 nt!KiIdleLoop+0x14
 ```
 
- 
+ 
 
- 
+ 
 
 
 

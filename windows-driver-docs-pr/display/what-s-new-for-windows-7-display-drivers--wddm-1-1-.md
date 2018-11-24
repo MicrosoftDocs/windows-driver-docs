@@ -2,11 +2,7 @@
 title: What's new for Windows 7 display drivers (WDDM 1.1)
 description: What's new for Windows 7 display drivers (WDDM 1.1)
 ms.assetid: 516A9C56-7ABC-49F4-8E92-3B6C3DB78CF6
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -53,9 +49,9 @@ The INF files for display drivers that are written to the Windows Vista display
 
 The release of the Windows 7 operating system also introduces GPUView (GPUView.exe), which is a new development tool that monitors the performance of the graphics processing unit (GPU). For more information about GPUView, see [Using GPUView](using-gpuview.md).
 
- 
+ 
 
- 
+ 
 
 
 

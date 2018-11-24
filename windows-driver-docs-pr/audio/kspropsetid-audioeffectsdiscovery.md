@@ -2,11 +2,7 @@
 title: KSPROPSETID\_AudioEffectsDiscovery
 description: The KSPROPSETID\_AudioEffectsDiscovery property set is implemented by audio device drivers that use Microsoft’s generic proxy audio processing object (APO).
 ms.assetid: 68229885-1446-4BF0-B4E1-96A777006567
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,9 +28,9 @@ The **KSPROPSETID\_AudioEffectsDiscovery** property set contains the following K
 
 This property name is defined in the [**KSPROPERTY\_AUDIOEFFECTSDISCOVERY**](https://msdn.microsoft.com/library/windows/hardware/dn457705) enum.
 
- 
+ 
 
- 
+ 
 
 
 

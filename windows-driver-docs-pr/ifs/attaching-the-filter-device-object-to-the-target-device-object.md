@@ -1,6 +1,5 @@
 ---
 title: Attaching the Filter Device Object to the Target Device Object
-author: windows-driver-content
 description: Attaching the Filter Device Object to the Target Device Object
 ms.assetid: 1df293db-417a-4fee-afb8-06ab527331fb
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - file system filter drivers WDK , attaching filters
 - attaching filters to file system or volume
 - volumes WDK file system , attaching filters
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,7 +19,7 @@ ms.localizationpriority: medium
 
 Call [**IoAttachDeviceToDeviceStackSafe**](https://msdn.microsoft.com/library/windows/hardware/ff548236) to attach the filter device object to the filter driver stack for the target file system or volume.
 
-```
+```cpp
 devExt = myLegacyFilterDeviceObject->DeviceExtension;
 
 status = IoAttachDeviceToDeviceStackSafe(
@@ -39,7 +34,7 @@ Note that the device object pointer received by the *AttachedToDeviceObject* out
 
 Every file system is required to create one or more named control device objects. To attach to a particular file system directly, a file system filter driver passes the name of the appropriate file system control device object to [**IoGetDeviceObjectPointer**](https://msdn.microsoft.com/library/windows/hardware/ff549198) to get a device object pointer. The following code snippet shows how to get such a pointer to one of the two control device objects for the RAW file system:
 
-```
+```cpp
 RtlInitUnicodeString(&nameString, L"\\Device\\RawDisk");
 
 status = IoGetDeviceObjectPointer(
@@ -57,11 +52,11 @@ If the call to [**IoGetDeviceObjectPointer**](https://msdn.microsoft.com/library
 
 **Note**   In addition to the control device object pointer (*rawDeviceObject*), [**IoGetDeviceObjectPointer**](https://msdn.microsoft.com/library/windows/hardware/ff549198) returns a pointer to a file object (*fileObject*) that represents the device object in user mode. In the code snippet above, the file object is not needed, so it is closed by calling [**ObDereferenceObject**](https://msdn.microsoft.com/library/windows/hardware/ff557724). It is important to note that decrementing the reference count on the file object returned by **IoGetDeviceObjectPointer** causes the reference count on the device object to be decremented as well. Thus the *fileObject* and *rawDeviceObject* pointers should both be considered invalid after the above call to **ObDereferenceObject**, unless the reference count on the device object is incremented by an additional call to [**ObReferenceObject**](https://msdn.microsoft.com/library/windows/hardware/ff558678) before **ObDereferenceObject** is called for the file object.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

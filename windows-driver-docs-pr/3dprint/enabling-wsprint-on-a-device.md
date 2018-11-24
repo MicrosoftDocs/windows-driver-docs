@@ -1,12 +1,7 @@
 ---
 title: Enable WSPrint 2.0 on a device
-author: windows-driver-content
 description: Use these settings to enable WSPrint 2.0 on a device
-ms.author: windowsdriverdev
 ms.date: 01/30/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,12 +22,12 @@ The endpoint needs to be able to respond to WSPrint 2.0 operations. You do not n
 
 Once the WSPrint endpoint is functioning, you need to customize the XML returned from the GetPrinterElements call with a custom device id:
 
-```
+```xml
 <wprt:DeviceId>MFG:MS3D; CMD:XPS; MDL:Compat; CLS:Printer; DES:Compat; CID:MS3DWSD</wprt:DeviceId>
 ```
 This matches with the Compatible ID in the published INF:
 
-```
+```xml
 WSDPRINT\MS3DCompatE2D2
 ```
 
@@ -45,7 +40,6 @@ The following diagram shows WSPrint 2.0 interactions:
 
 The following steps are a more detailed description of WSPrint 2.0 interactions:
 
-```
 1.  Probe – Network Discovery bootstrap
 
 2.  Resolve – Network Discovery bootstrap
@@ -85,7 +79,6 @@ The following steps are a more detailed description of WSPrint 2.0 interactions:
 19. GetJobElements – Get job statuses
 
 20. SendDocument – Actual print data (Multi Part Incoming Request)
-```
 
 For more information on WSPrint 2.0, see the following resources:
 

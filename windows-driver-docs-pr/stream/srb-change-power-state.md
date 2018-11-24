@@ -9,11 +9,7 @@ api_name:
 - SRB_CHANGE_POWER_STATE
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,15 +34,15 @@ Indicates that the function is not supported by the minidriver.
 <span id="STATUS_IO_DEVICE_ERROR"></span><span id="status_io_device_error"></span>STATUS\_IO\_DEVICE\_ERROR  
 Indicates that a hardware failure occurred and low power cannot be invoked.
 
-### <span id="comments"></span><span id="COMMENTS"></span>Comments
+### Comments
 
 If the minidriver needs to save or restore device-specific data it should do so when processing an SRB\_CHANGE\_POWER\_STATE request.
 
 For more information about power states, see [Managing Power for Individual Devices](https://msdn.microsoft.com/library/windows/hardware/ff554397).
 
- 
+ 
 
- 
+ 
 
 
 

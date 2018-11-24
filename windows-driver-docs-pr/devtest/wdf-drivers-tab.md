@@ -11,11 +11,7 @@ keywords:
 - verifying drivers WDK WDF
 - KMDF verifier tools WDK WDF
 - UMDF verifier tools WDK WDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -69,9 +65,9 @@ If you start and stop devices or install new drivers, you must restart WDF Verif
 
 If you make changes on the **WDF Drivers** page, you'll see those changes reflected on the **Devices using WDF** page.
 
- 
+ 
 
- 
+ 
 
 
 

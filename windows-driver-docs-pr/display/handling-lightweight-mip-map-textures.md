@@ -5,11 +5,7 @@ ms.assetid: f541b046-2937-428c-ab98-eb1020728e04
 keywords:
 - MIP map textures WDK DirectX 9.0 , lightweight
 - lightweight MIP-map textures WDK DirectX 9.0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,9 +38,9 @@ The DirectX 9.0 version driver observes the following rules when handling lightw
 
 -   Driver-managed lightweight MIP-map textures are also restricted to a single surface and must use exactly the same layout that Direct3D uses with system memory lightweight MIP-map textures. Note that this has no adverse effect (other than implementation cost) because the corresponding resident (video and AGP) MIP-map textures can have their own implementation-specific layout.
 
- 
+ 
 
- 
+ 
 
 
 

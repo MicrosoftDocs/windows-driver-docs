@@ -1,6 +1,5 @@
 ---
 title: CPSUI-Supported Window Controls
-author: windows-driver-content
 description: CPSUI-Supported Window Controls
 ms.assetid: 557aa4e6-e48e-44fe-b833-93728426b056
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - CPSUI WDK print , window controls
 - property sheet pages WDK print , window controls
 - window controls WDK CPSUI
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -40,9 +35,9 @@ This set of window controls must always be used when specifying [property sheet 
 
 CPSUI also defines two special controls, called an extended check box and an extended push button. These controls, which provide capabilities beyond those of standard check boxes and push buttons, can be specified using the [**EXTCHKBOX**](https://msdn.microsoft.com/library/windows/hardware/ff548781) and [**EXTPUSH**](https://msdn.microsoft.com/library/windows/hardware/ff548795) structures, respectively.
 
- 
+ 
 
- 
+ 
 
 
 

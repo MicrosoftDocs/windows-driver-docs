@@ -10,11 +10,7 @@ keywords:
 - textures WDK DirectDraw , compressed
 - reference rasterizers WDK DirectDraw
 - rasterizers WDK DirectDraw
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -40,7 +36,7 @@ The DDCAPS2\_COPYFOURCC flag has some additional implications. Your driver must 
 
 **Note**   Microsoft DirectShow uses the DDCAPS2\_COPYFOURCC flag to accelerate some video functionality; the requirement for this flag implies that all FOURCC formats can be copied.
 
- 
+ 
 
 If a blt operation requires compression to a DXT format, the DirectDraw HEL always performs the blt. This means that DirectDraw never requests the driver to perform a blt for which:
 
@@ -52,7 +48,7 @@ The semantics of the DirectDraw DDCAPS\_CANBLTSYSMEM capability bit imply that t
 
 DirectDraw display memory allocation routines do not handle pixel format considerations. [**HeapVidMemAllocAligned**](https://msdn.microsoft.com/library/windows/hardware/ff567267), for example, expects a count of bytes as its input parameter. Likewise, DDHAL\_PLEASEALLOC\_BLOCKSIZE (see the **fpVidMem** member of the [**DD\_SURFACE\_GLOBAL**](https://msdn.microsoft.com/library/windows/hardware/ff551726) structure) signifies that the **dwBlockSizeX** and **dwBlockSizeY** members of the DD\_SURFACE\_GLOBAL structure are counts of bytes and lines, respectively. Consequently, if your driver uses either of these mechanisms to allocate display memory through DirectDraw allocators, your driver must be able to calculate the memory consumption, in bytes, of a DXT surface by itself. The following sample shows one way to perform this calculation:
 
-```
+```cpp
 DWORD dx, dy;
 DWORD blksize, surfsize;
 LPVOID pmem;
@@ -94,7 +90,7 @@ Your hardware or driver can convert and store the compressed texture in any form
 
 Under Windows 2000, system memory DXT surfaces have had some of their fields mapped for memory allocation purposes. The mapping is:
 
-```
+```cpp
 wWidth = lPitch = dx * blksize;
 wHeight         = dy;
 dwRGBBitCount   = 8;
@@ -102,7 +98,7 @@ dwRGBBitCount   = 8;
 
 When the driver encounters a system memory DXT surface, for example in [**D3dCreateSurfaceEx**](https://msdn.microsoft.com/library/windows/hardware/ff542840), it must map the fields back before making use of them. The back mapping is:
 
-```
+```cpp
 realWidth        = (wWidth  << 2) / blksize;
 realHeight       =  wHeight << 2;
 realLinearSize   = dwLinearSize * wHeight;
@@ -116,7 +112,7 @@ The following three items should be observed when implementing reference rasteri
 1.  The section entitled *3-Bit Linear Alpha Interpolation (DXT4 and DXT5 format)* in the DirectDraw SDK documentation shows the correct order in which to ramp the Alpha values for DXT4 and DXT5 formats.
 
 2.  Reference rasterizer code should have the following logic guarding the color comparison logic.
-    ```
+    ```cpp
     if ((color_0 > color_1) OR !DXT1) {
     /*  color comparison logic */
     }
@@ -124,9 +120,9 @@ The following three items should be observed when implementing reference rasteri
 
 3.  Because hardware implementations of reference rasterizers can perform the rounding of calculations to better approximate the original value in slightly different ways, testing should allow for slight variations in the color and alpha values obtained from the decompression logic.
 
- 
+ 
 
- 
+ 
 
 
 

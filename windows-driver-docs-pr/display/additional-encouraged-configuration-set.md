@@ -2,11 +2,7 @@
 title: Additional Encouraged Configuration Set
 description: Additional Encouraged Configuration Set
 ms.assetid: f79e4edc-74c7-4b28-aefe-5ba933ff06c3
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,9 +16,9 @@ Implementation of additional configurations for software decoders is encouraged.
 
 This additional configuration set is defined in terms of the members of the [**DXVA\_ConfigPictureDecode**](https://msdn.microsoft.com/library/windows/hardware/ff563133) structure.
 
- 
+ 
 
- 
+ 
 
 
 

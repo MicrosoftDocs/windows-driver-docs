@@ -3,11 +3,7 @@ title: .hh (Open HTML Help File)
 description: The .hh command opens the Debugging Tools for Windows documentation.
 ms.assetid: 6c6d5b33-ad54-4325-93d7-ed63f9f012e8
 keywords: [".hh (Open HTML Help File) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **.hh** command opens the Debugging Tools for Windows documentation.
 
-```
+```dbgcmd
 .hh [Text] 
 ```
 
@@ -55,7 +51,7 @@ Specifies the text to find in the index of the Help documentation.
 </tbody>
 </table>
 
- 
+ 
 
 You cannot use this command when you are performing [remote debugging through Remote.exe](remote-debugging-through-remote-exe.md).
 
@@ -68,9 +64,9 @@ Remarks
 
 The **.hh** command opens the Debugging Tools for Windows documentation (Debugger.chm). If you specify *Text*, the debugger opens the **Index** pane in the documentation and searches for *Text* as a keyword in the index. If you do not specify *Text*, the debugger opens the **Contents** pane of the documentation.
 
- 
+ 
 
- 
+ 
 
 
 

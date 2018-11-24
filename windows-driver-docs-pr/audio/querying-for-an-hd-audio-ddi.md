@@ -6,11 +6,7 @@ keywords:
 - HD Audio, querying
 - High Definition Audio (HD Audio), querying
 - queries WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +27,9 @@ The procedures for obtaining references to the HDAUDIO\_BUS\_INTERFACE, the HDAU
 
 [Obtaining an HDAUDIO\_BUS\_INTERFACE\_BDL DDI Object](obtaining-an-hdaudio-bus-interface-bdl-ddi-object.md)
 
- 
+ 
 
- 
+ 
 
 
 

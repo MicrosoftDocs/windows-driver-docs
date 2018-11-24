@@ -3,11 +3,7 @@ title: .restart (Restart Kernel Connection)
 description: The .restart command restarts the kernel connection.Do not confuse this command with the .restart (Restart Target Application) command, which works only in user mode.
 ms.assetid: 2c81625b-d75f-4c5f-9437-9619bf33b500
 keywords: [".restart (Restart Kernel Connection) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,7 +20,7 @@ The **.restart** command restarts the kernel connection.
 
 Do not confuse this command with the [**.restart (Restart Target Application)**](-restart--restart-target-application-.md) command, which works only in user mode.
 
-```
+```dbgcmd
 .restart 
 ```
 
@@ -56,7 +52,7 @@ You can use the **.restart** command only in KD.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -69,9 +65,9 @@ The **.restart** command is similar to the [**CTRL+R (Re-synchronize)**](ctrl-r-
 
 The **.restart** command is most useful when you are performing [remote debugging through remote.exe](remote-debugging-through-remote-exe.md) and ending and restarting the debugger might be difficult. However, you cannot use **.restart** from a debugging client if you are performing remote debugging through the debugger.
 
- 
+ 
 
- 
+ 
 
 
 

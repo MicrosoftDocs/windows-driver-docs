@@ -2,11 +2,7 @@
 title: Immediate Idle Timeout Opt-in
 description: This topic discusses the ImmediateIdle registry value that a Windows 8 driver can use to opt-in to an immediate power down state, when power is no longer needed.
 ms.assetid: 43721EC9-4901-4C68-9CCC-E0A71BF2200E
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -41,9 +37,9 @@ If a driver opts-in to immediate idle power management, it must ensure that the 
 
 In addition, the new interface introduced in Windows 7 that allows drivers to programmatically enable or disable idle power management, continues to be honored when the driver has not opted-in to immediate idle power management. This is done via the [**IPortClsPower::SetIdlePowerManagement**](https://msdn.microsoft.com/library/windows/hardware/ff536875) method and would override the settings in the registry, except for the case in which *ImmediateIdle* is set to 1 (TRUE).
 
- 
+ 
 
- 
+ 
 
 
 

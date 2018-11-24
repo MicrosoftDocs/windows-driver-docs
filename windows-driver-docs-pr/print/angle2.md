@@ -1,13 +1,8 @@
 ---
 title: Angle
-author: windows-driver-content
 description: Angle
 ms.assetid: a5bc6a00-ca65-4c4b-9372-1d0db8dd7e41
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -52,9 +47,9 @@ Data Type:BIDI\_STRING
 
 Description:A comma-separated list of all the values supported for staple Angle.
 
- 
+ 
 
- 
+ 
 
 
 

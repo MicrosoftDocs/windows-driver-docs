@@ -1,6 +1,5 @@
 ---
 title: User Interface Plug-Ins
-author: windows-driver-content
 description: User Interface Plug-Ins
 ms.assetid: 22ac2af6-37d8-4913-95af-9c3dc8576d40
 keywords:
@@ -12,11 +11,7 @@ keywords:
 - Unidrv, user interface
 - PostScript Printer Driver WDK print , user interface plug-ins
 - UI plug-ins WDK print
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -46,9 +41,9 @@ This section contains the following topics that explain how to develop a user in
 
 [Customizing Other Printer Interface Operations](customizing-other-printer-interface-operations.md)
 
- 
+ 
 
- 
+ 
 
 
 

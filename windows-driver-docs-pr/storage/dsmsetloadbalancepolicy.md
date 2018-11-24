@@ -12,6 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # DsmSetLoadBalancePolicy function
@@ -24,8 +25,8 @@ Syntax
 
 ```ManagedCPlusPlus
 void DsmSetLoadBalancePolicy(
-   [in, Description("New Load Balance policy to be set"):amended] DSM_Load_Balance_Policy LoadBalancePolicy,
-   [out, Description("Status of the operation"):amended] uint32                           Status
+   [in, Description("New Load Balance policy to be set"):amended] DSM_Load_Balance_Policy LoadBalancePolicy,
+   [out, Description("Status of the operation"):amended] uint32                           Status
 );
 ```
 
@@ -68,9 +69,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

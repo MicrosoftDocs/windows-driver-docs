@@ -3,11 +3,7 @@ title: token
 description: The token extension displays a formatted view of a security token object.
 ms.assetid: 3df89255-5e8c-4a09-9fe9-6977b26f5631
 keywords: ["token", "security token", "token Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,14 +20,14 @@ The **!token** extension displays a formatted view of a security token object.
 
 Kernel-Mode Syntax:
 
-```
+```dbgcmd
 !token [-n] [Address] 
 !token -?
 ```
 
 User-Mode Syntax:
 
-```
+```dbgcmd
 !token [-n] [Handle] 
 !token -?
 ```
@@ -70,7 +66,7 @@ You can get the token address from the output of [**!process**](-process.md). To
 
 Here is an example:
 
-```
+```dbgcmd
 kd> !process 81464da8 1
 PROCESS 81464da8  SessionId: 0  Cid: 03bc    Peb: 7ffdf000  ParentCid: 0124
     DirBase: 0dec2000  ObjectTable: e1a31198  TableSize: 275.
@@ -173,9 +169,9 @@ Modified ID:               (0, 18298)
 RestrictedSidCount: 0      RestrictedSids: 00000000
 ```
 
- 
+ 
 
- 
+ 
 
 
 

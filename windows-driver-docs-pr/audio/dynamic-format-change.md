@@ -2,11 +2,7 @@
 title: Dynamic Format Change
 description: Dynamic Format Change
 ms.assetid: 41e6ec8c-3a96-4103-a991-3b9ba6acad6c
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,11 +30,11 @@ When the audio endpoint builder receives the dynamic format change notification,
 
 And in the case where a redesigned audio driver now supports a new format, it can force the endpoint builder to select the new format as the default format for the device. To force a changeover to the new format as the default for the device, the audio driver must fail the format support query that it receives regarding the old format. The failed format support query triggers a format change notification, and the endpoint builder then calculates a new default format for the device.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

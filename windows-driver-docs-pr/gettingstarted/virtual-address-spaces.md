@@ -2,11 +2,7 @@
 title: Virtual address spaces
 description: Virtual address spaces
 ms.assetid: 5A3E1918-E5A4-4129-B0C2-45B6EEB7EFB3
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -69,9 +65,9 @@ Memory that is allocated in paged pool can be paged out to a disk file as needed
 
 [User mode and kernel mode](user-mode-and-kernel-mode.md)
 
- 
+ 
 
- 
+ 
 
 
 

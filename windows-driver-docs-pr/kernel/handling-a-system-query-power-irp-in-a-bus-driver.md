@@ -1,14 +1,9 @@
 ---
 title: Handling a System Query-Power IRP in a Bus Driver
-author: windows-driver-content
 description: Handling a System Query-Power IRP in a Bus Driver
 ms.assetid: d42c268e-d57d-41a6-8e61-67c651082106
 keywords: ["query-power IRPs WDK power management", "bus drivers WDK power management"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +21,9 @@ In Windows Server 2003, Windows XP, and Windows 2000, the bus driver first calls
 
 After the bus driver completes the IRP, the power manager calls [*IoCompletion*](https://msdn.microsoft.com/library/windows/hardware/ff548354) routines set by other drivers as they passed the IRP down the stack.
 
- 
+ 
 
- 
+ 
 
 
 

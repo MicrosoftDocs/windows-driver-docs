@@ -1,13 +1,8 @@
 ---
 title: Properties and Data Management
-author: windows-driver-content
 description: Properties and Data Management
 ms.assetid: 773367dc-26cc-41cf-b8a6-68370ae49306
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,9 +20,9 @@ This section contains the following topics:
 
 [Driver Items](driver-items.md)
 
- 
+ 
 
- 
+ 
 
 
 

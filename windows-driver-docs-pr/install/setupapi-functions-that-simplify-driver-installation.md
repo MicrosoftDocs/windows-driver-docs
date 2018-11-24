@@ -10,18 +10,14 @@ keywords:
 - UpdateDriverForPlugAndPlayDevices
 - PnP WDK device installations , SetupAPI
 - Plug and Play WDK device installations , SetupAPI
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # SetupAPI Functions that Simplify Driver Installation
 
 
-Driver Install Frameworks (DIFx) includes tools that greatly simplify the installation of Plug and Play (PnP) function drivers and class filter drivers. An installation application should use the DIFx tools if they provide the functionality that the installation application requires. Otherwise, an installation application can use the following SetupAPI functions to simplify the installation of a PnP function driver.
+An installation application can use the following SetupAPI functions to simplify the installation of a PnP function driver.
 
 ### <a href="" id="diinstalldevice--windows-vista-and-later-versions-of-windows-"></a> DiInstallDevice (Windows Vista and later versions of Windows)
 
@@ -59,7 +55,7 @@ A caller can also call **DiInstallDriver** to do the following:
 
     **Caution**   Forcing the installation of the driver can result in replacing a more compatible or newer driver with a less compatible or older driver.
 
-     
+     
 
 -   Indicate to the caller whether a system restart is required to complete the installation.
 
@@ -91,7 +87,7 @@ A caller can also optionally call **UpdateDriverForPlugAndPlayDevices** to do th
 
     **Caution**   Forcing the installation of the driver can result in replacing a more compatible or newer driver with a less compatible or older driver.
 
-     
+     
 
 -   Suppress copying, renaming, or deleting installation files.
 
@@ -99,9 +95,9 @@ A caller can also optionally call **UpdateDriverForPlugAndPlayDevices** to do th
 
 -   Indicate to the caller whether a system restart is required to complete the installation.
 
- 
+ 
 
- 
+ 
 
 
 

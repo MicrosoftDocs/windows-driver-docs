@@ -6,11 +6,7 @@ keywords:
 - command buffers WDK Direct3D
 - vertex buffers WDK Direct3D
 - buffers WDK Direct3D
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +24,9 @@ If the D3DHALDP2\_USERMEMVERTICES flag is set, the vertex buffer is specified by
 
 The vertex buffer API can create, destroy, lock and unlock vertex buffers, and can use the **IDirect3DVertexBuffer7::ProcessVertices** method to process vertices from source to destination buffers. The **IDirect3DDevice7::DrawPrimitiveVB** and **IDirect3DDevice7::DrawIndexedPrimitiveVB** methods are the primary API-level calls. Vertex buffers can also be optimized, but optimized vertex buffers cannot be locked. For descriptions of these three methods, see the Direct3D SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

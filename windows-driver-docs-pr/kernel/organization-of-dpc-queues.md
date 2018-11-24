@@ -1,14 +1,9 @@
 ---
 title: Organization of DPC Queues
-author: windows-driver-content
 description: Organization of DPC Queues
 ms.assetid: df176a6d-d7a7-4d8b-ab1b-fd7f5b89fcbe
 keywords: ["DPC queues WDK kernel", "queues WDK DPC"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +24,9 @@ For ordinary (non-threaded) DPCs, **KeSetImportanceDpc** also determines whether
 
 -   Processing of the DPC queue begins immediately on the target processor if the DPC is assigned to a processor that is different than the current processor and *Importance* equals **MediumHighImportance** or **HighImportance**, or if the DPC queue depth of the target processor exceeds a system-defined limit. Otherwise, processing of the DPC is deferred until the appropriate queue depth and rate requirements are met.
 
- 
+ 
 
- 
+ 
 
 
 

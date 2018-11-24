@@ -8,11 +8,7 @@ keywords:
 - porting protocol drivers WDK networking , Plug and Play event notifications
 - Plug and Play WDK networking , porting event notifications
 - event notifications WD
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +24,9 @@ NDIS 6.0 protocol drivers must handle pause and restart events. For more informa
 
 For more information about NDIS 6.0 Plug and Play notifications, see [Handling PnP Event Notifications in a Protocol Driver](handling-pnp-event-notifications-in-a-protocol-driver.md).
 
- 
+ 
 
- 
+ 
 
 
 

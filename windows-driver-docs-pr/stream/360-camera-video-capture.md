@@ -1,11 +1,7 @@
 ---
 title: 360 camera video capture
 description: Provides information about 360 camera video capture.
-ms.author: windowsdriverdev
 ms.date: 07/20/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -121,7 +117,7 @@ If the application implements its own custom spherical projection component, the
 
 ## .INF file example to publish a DMFT
 
-```
+```INF
 ;=================================================================================
 ; Microsoft Sample Extension INF for USB Camera SampleDeviceMFT installation
 ; Copyright (C) Microsoft Corporation. All rights reserved.
@@ -198,7 +194,6 @@ MediaDescription="Contoso Camera Sample Device MFT Installation Media"
 SampleDeviceMFT.CLSID = "{zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz}" ; replace with your Device MFT COM object's CoClass ID
 SampleDeviceMFT.FriendlyName = "Contoso Camera Device MFT"
 KSCATEGORY_VIDEO_CAMERA="{E5323777-F976-4f5b-9B55-B94699C46E44}"
-
 ```
 
 ## Example frame flow with a UVC device

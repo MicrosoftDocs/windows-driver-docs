@@ -11,11 +11,7 @@ api_location:
 - wdm.h
 api_type:
 - UserDefined
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -56,17 +52,17 @@ For remarks about synchronizing access to per file context objects or to per str
 &gt; \[!Note\]
 &gt;   The *FreeCallback* routine cannot recursively call down into the file system or acquire any file system resources.
 
- 
+ 
 
 To define a *FreeCallback* callback function that is named *MyFreeFunction*, you must first provide a function declaration that the [Static Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff552808) (SDV) and other verification tools require, as follows:
 
-```
+```cpp
 FREE_FUNCTION MyFreeFunction;
 ```
 
 And then implement your callback function as follows:
 
-```
+```cpp
 VOID 
  MyFreeFunction (
  __in PVOID Buffer
@@ -117,9 +113,9 @@ Requirements
 
 [Tracking Per-Stream Context in a Legacy File System Filter Driver](https://msdn.microsoft.com/library/windows/hardware/ff556859)
 
- 
+ 
 
- 
+ 
 
 
 

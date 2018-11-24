@@ -6,11 +6,7 @@ keywords:
 - CoNDIS WAN drivers WDK networking , registering
 - NdisMRegisterMiniportDriver
 - registering CoNDIS WAN drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -40,9 +36,9 @@ For more information about CoNDIS driver registration, see [CoNDIS Registration]
 
 .
 
- 
+ 
 
- 
+ 
 
 
 

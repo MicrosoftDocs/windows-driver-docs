@@ -2,11 +2,7 @@
 title: Release-Signing a Driver through an Embedded Signature
 description: Release-Signing a Driver through an Embedded Signature
 ms.assetid: ffea2479-83ee-4d94-a5e6-73ecea9fc17d
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,7 +29,7 @@ As with [catalog files](catalog-files.md), the [**SignTool**](https://msdn.micro
 
 To test-sign the *toaster.sys* file, run the following command line:
 
-```
+```cpp
 Signtool sign /v /ac MSCV-VSClass3.cer /s MyPersonalStore /n contoso.com /t http://timestamp.verisign.com/scripts/timstamp.dll amd64\toaster.sys
 ```
 
@@ -53,7 +49,7 @@ Where:
 
     **Important**   Including a time stamp provides the necessary information for key revocation in case the signer's code signing private key is compromised.
 
-     
+     
 
 -   *amd64\\toaster.sys* specifies the name of the kernel-mode binary file which will be embedded-signed.
 
@@ -61,9 +57,9 @@ For more information about SignTool and its command-line arguments, see [**SignT
 
 For more information about release-signing a driver through an embedded signature, see [Release-Signing Driver Packages](release-signing-driver-packages.md) and [Release-Signing a Driver File](release-signing-a-driver-file.md).
 
- 
+ 
 
- 
+ 
 
 
 

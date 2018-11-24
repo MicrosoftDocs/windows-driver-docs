@@ -10,11 +10,7 @@ api_name:
 - INF DDInstall.WMI Section
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,10 +19,12 @@ ms.localizationpriority: medium
 
 An INF *DDInstall*.**WMI** section contains one or more **WMIInterface** directives that specify characteristics for each WMI class that the driver provides.
 
-```
+```cpp
 [install-section-name.WMI] |
 [install-section-name.nt.WMI] | 
 [install-section-name.ntx86.WMI] |
+[install-section-name.ntarm.WMI] |  (Windows 8 and later versions of Windows)
+[install-section-name.ntarm64.WMI]  (Windows 10 version 1709 and later versions of Windows)
 [install-section-name.ntia64.WMI] |  (Windows XP and later versions of Windows)
 [install-section-name.ntamd64.WMI]  (Windows XP and later versions of Windows)
  
@@ -50,7 +48,7 @@ Specifies an INF file section that contains directives for setting characteristi
 
 The following directives can be specified within a *WMI-class-section*:
 
-<a href="" id="security--security-descriptor-string-"></a>**Security="***security-descriptor-string***"**  
+<a href="" id="security--security-descriptor-string-"></a>**Security="**<em>security-descriptor-string</em>**"**  
 Specifies a security descriptor that will be stored in the registry and applied to the GUID that is specified by *WmiClassGUID*. This security descriptor specifies the permissions that are required to access data blocks associated with the class. The *security-descriptor-string* value is a string with tokens that indicate the DACL (**D:**) security component.
 
 Only one **Security** entry can be present. If more than one **Security** entry is present, security is not set for the WMI class.
@@ -58,20 +56,20 @@ Only one **Security** entry can be present. If more than one **Security** entry 
 Remarks
 -------
 
-The INF *DDInstall***.WMI** section is available on Microsoft Windows Server 2003 and later versions of the operating system.
+The INF <em>DDInstall</em>**.WMI** section is available on Microsoft Windows Server 2003 and later versions of the operating system.
 
 A security descriptor is associated with every WMI GUID. For Windows XP and earlier operating system versions, the default security descriptor for WMI GUIDs allows full access to all users. For Windows Server 2003 and later versions, the default security descriptor allows access only to administrators.
 
-If your driver defines WMI classes, and if you do not want to use the default descriptor, include a *DDInstall***.WMI** section to specify a security descriptor that is stored in the registry and overrides the system's default descriptor.
+If your driver defines WMI classes, and if you do not want to use the default descriptor, include a <em>DDInstall</em>**.WMI** section to specify a security descriptor that is stored in the registry and overrides the system's default descriptor.
 
 For more information about how to specify security descriptors in INF files, see [Creating Secure Device Installations](creating-secure-device-installations.md).
 
 Examples
 --------
 
-The following example shows a single *DDInstall***.WMI** section that contains two **WMIInterface** directives. Each directive identifies a WMI class and specifies a *WMI-class-section* for the class.
+The following example shows a single <em>DDInstall</em>**.WMI** section that contains two **WMIInterface** directives. Each directive identifies a WMI class and specifies a *WMI-class-section* for the class.
 
-```
+```cpp
 [InstallA.NT.WMI]
 WMIInterface = {99999999-4cf9-11d2-ba4a-00a0c9062910},,WMISecurity1
 WMIInterface = {99999998-4cf9-11d2-ba4a-00a0c9062910},1,WMISecurity2
@@ -90,9 +88,9 @@ security = "O:BAG:BAD:(A;;0x120fff;;;BA)(A;;CC;;;WD)(A;;0x120fff;;;SY)"
 
 [***Models***](inf-models-section.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: GDL Source File Preprocessor Directives
-author: windows-driver-content
 description: GDL Source File Preprocessor Directives
 ms.assetid: cc0f807f-5c06-4add-bed1-c15c8251dc98
 keywords:
@@ -20,11 +19,7 @@ keywords:
 - UndefinePrefix directive WDK GDL
 - EnablePPDirective directive WDK GDL
 - DisablePPDirective directive WDK GDL
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -63,9 +58,9 @@ This section includes:
 
 [GDL Preprocessor Guidelines](gdl-preprocessor-guidelines.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -13,11 +13,7 @@ keywords:
 - DrvStretchBlt
 - DrvTransparentBlt
 - stretching WDK Windows 2000 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -103,9 +99,9 @@ When the blt operation takes place, these four regions are not copied, which cau
 
 This is illustrated in the right-most image: the portions of the letter 'M' in the four corners and the center were overwritten with the colors in the source bitmap. The portions of the letter 'M' under the four regions whose color is the same as that in *iTransColor* remain visible.
 
- 
+ 
 
- 
+ 
 
 
 

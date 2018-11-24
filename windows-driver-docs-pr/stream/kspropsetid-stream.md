@@ -2,11 +2,7 @@
 title: KSPROPSETID\_Stream
 description: KSPROPSETID\_Stream
 ms.assetid: 68bfe15c-9be0-412e-a0d0-c2af13982377
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,9 +38,9 @@ The KSPROPSETID\_Stream property set is enumerated by KSPROPERTY\_STREAM and inc
 
 [**KSPROPERTY\_STREAM\_PIPE\_ID**](ksproperty-stream-pipe-id.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -14,11 +14,7 @@ keywords:
 - bit-block transfers WDK Windows 2000 display
 - stretching WDK Windows 2000 display
 - animations WDK Windows 2000 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -81,9 +77,9 @@ No error is permitted in gradient fills for any of these surfaces. For an 8-bpp 
 
 Note that in all surfaces, clipping does not affect results.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -10,11 +10,7 @@ keywords:
 - overlay surfaces WDK DirectDraw
 - surfaces WDK DirectDraw , overlay
 - surfaces WDK DirectDraw , flipping
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +26,9 @@ The overlay surface can have a different pixel depth than the primary surface. F
 
 Overlays flip in exactly the same way as the primary surface. The DirectDraw surface objects swap pointers so that the new overlay surface is read when the scan line reaches the rectangle bounding the overlay. The same flipping algorithm described in [Timing a Flip](timing-a-flip.md) prevents tearing.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,13 +1,8 @@
 ---
 title: Microsoft ASL compiler
-author: windows-driver-content
 description: Version 5.0 of the Microsoft ASL compiler supports the features in the ACPI 5.0 specification.
 ms.assetid: E6EC168F-DB4B-461A-874A-F5278E8F9200
-ms.author: windowsdriverdev
-ms.date: 07/26/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +20,7 @@ The Microsoft ASL compiler supports several command line options. To list the av
 
 The ASL compiler supports the following command line options:
 
-``` syntax
+```console
 asl /?
 asl [/nologo] /d <BinFile>
 asl [/nologo] /u [/Fa=<ASMFile>] [/Fl=<LSTFile>] [/Fn=<NSDFile>] <AMLFile>
@@ -45,11 +40,10 @@ asl [/nologo] [/Fo=<AMLFile>] [/Fa=<ASMFile>] [/Fl=<LSTFile>] [/Fn=<NSDFile>] <A
 | tab=&lt;TabSig&gt; | Unassemble ASL table to a .ASL file (default) or a .LST file. Dump non-ASL table to a .TXT file. If &lt;TabSig&gt; is '\*', all tables are dumped to ACPI.TXT. &lt;TabSig&gt; can also be the physical address of the table. |
 | c                  | Create binary files from tables.                                              |
 
- 
+ 
 ## Using the Microsoft ASL compiler's ACPI-table-load feature
 
-
-During system development, it is useful to have a way to simulate various ACPI BIOS constructs and test them on the development system. Starting with Windows XP, the Windows operating system allows certain ACPI tables to be loaded from the Windows registry instead of from the PC's BIOS ROM. Use of this feature requires administrator privileges, and also requires that test signing be enabled on the system. For systems that support UEFI Secure Boot, test signing cannot be enabled, and the compiler's table-load feature cannot be used unless UEFI Secure Boot is disabled or the Windows Debug Policy is installed on the system.
+During system development, it is useful to have a way to simulate various ACPI BIOS constructs and test them on the development system. The Windows operating system allows certain ACPI tables to be loaded from the Windows registry instead of from the PC's BIOS ROM. Use of this feature requires administrator privileges, and also requires that test signing be enabled on the system. For systems that support UEFI Secure Boot, test signing cannot be enabled, and the compiler's table-load feature cannot be used unless UEFI Secure Boot is disabled or the Windows Debug Policy is installed on the system.
 
 To use the table-load feature, the ACPI table to be overloaded must meet the following requirements:
 
@@ -66,7 +60,7 @@ To use the table-load feature, the ACPI table to be overloaded must meet the fol
 
 To load an ACPI table into the registry for test purposes, the ASL compiler is invoked as follows:
 
-``` syntax
+```console
 asl.exe /loadtable [-v] [-d] <AMLFile>
 ```
 

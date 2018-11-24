@@ -1,14 +1,9 @@
 ---
 title: Processing an Application Notification
-author: windows-driver-content
 description: Processing an Application Notification
 ms.assetid: 475d8e37-5d31-4989-92ce-3c4a7c09d292
 keywords: ["dynamic hardware partitioning WDK , application notification", "hardware partitioning WDK dynamic , application notification", "partitions WDK dynamic hardware , application notification", "application notification WDK dynamic hardware partitioning , registering", "notification WDK dynamic hardware partitioning , application", "registering for application notifications WDK dynamic hardware partitioning", "processing application notifications WDK dynamic hardware partitioning"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,7 +18,7 @@ Win32-based applications process the messages that are sent to the application's
 
 The following code example shows how to process WM\_DEVICECHANGE messages in a Win32-based application:
 
-```
+```cpp
 // Prototype for the function that handles the
 // processing of WM_DEVICECHANGE messages.
 LRESULT
@@ -164,7 +159,7 @@ The MFC framework processes the messages that are sent to an MFC-based applicati
 
 The following code example shows how to implement an **OnDeviceChange** member function in an MFC-based application:
 
-```
+```cpp
 afx_msg BOOL
 CAppWnd::OnDeviceChange(
   UINT nEventType,
@@ -245,9 +240,9 @@ CAppWnd::OnDeviceChange(
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

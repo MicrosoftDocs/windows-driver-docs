@@ -6,11 +6,7 @@ keywords:
 - non-PCM audio formats WDK , pin factories
 - pin factories WDK audio
 - data-intersection handlers WDK audio , non-PCM wave formats
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +30,9 @@ Second, implement a [data-intersection handler](proprietary-data-intersection-ha
 
 -   Miniport-stream method **SetFormat** (For example, see [**IMiniportWavePciStream::SetFormat**](https://msdn.microsoft.com/library/windows/hardware/ff536732).)
 
- 
+ 
 
- 
+ 
 
 
 

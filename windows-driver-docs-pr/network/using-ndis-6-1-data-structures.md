@@ -5,11 +5,7 @@ ms.assetid: 425cd2dc-99b0-4bed-8f7b-c291769c420a
 keywords:
 - data structures WDK networking
 - NDIS WDK , structures
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,11 +19,11 @@ NDIS can support multiple versions of the same data structure. NDIS 6.1 drivers 
 
 **Note**  To determine the correct version and size information, see the reference pages for each structure that includes a **Header** member. The reference pages for structures that contain a **Header** member and that have been updated for NDIS 6.1 include new information for NDIS 6.1 drivers. If there is no update to the structure for NDIS 6.1, the information that is provided for NDIS 6.0 drivers also applies to NDIS 6.1 drivers.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,12 +1,7 @@
 ---
 title: IRP_MN_QUERY_REMOVE_DEVICE
-author: windows-driver-content
 description: All PnP drivers must handle this IRP.
-ms.author: windowsdriverdev
 ms.date: 08/12/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.assetid: 95ec9ed8-014f-4d01-bed7-3aeb29cd9e73
 keywords:
  - IRP_MN_QUERY_REMOVE_DEVICE Kernel-Mode Driver Architecture
@@ -82,9 +77,9 @@ Requirements
 
 [**IRP\_MN\_REMOVE\_DEVICE**](irp-mn-remove-device.md)
 
- 
+ 
 
- 
+ 
 
 
 

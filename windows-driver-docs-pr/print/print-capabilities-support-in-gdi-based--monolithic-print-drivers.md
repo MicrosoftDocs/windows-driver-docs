@@ -1,17 +1,12 @@
 ---
 title: Print Capabilities Support in GDI-based, Monolithic Print Drivers
-author: windows-driver-content
 description: Print Capabilities Support in GDI-based, Monolithic Print Drivers
 ms.assetid: 4b8116a8-7aee-44cb-9c9d-560662b61073
 keywords:
 - Print Capabilities WDK , GDI-based monolithic print drivers
 - GDI-based monolithic print drivers WDK
 - monolithic print drivers WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,11 +17,11 @@ To provide complete Print Ticket and Print Capabilities support, GDI-based, mono
 
 **Note**   For Windows 7, the **MxdcGetPDEVAdjustment** function has new parameters for landscape rotation. For more information, see [**MxdcXDCGetPDEVAdjustment**](https://msdn.microsoft.com/library/windows/hardware/ff557558).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

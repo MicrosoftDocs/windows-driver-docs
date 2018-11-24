@@ -2,11 +2,7 @@
 title: Summary of changes to port protocol or filter drivers to NDIS 6.3
 description: To update an NDIS 6.x protocol or filter driver to support NDIS 6.30, you must modify it as outlined in the following sections.
 ms.assetid: 1C6CB2E1-C129-4F3B-AF7D-357580BEE7F8
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -47,9 +43,9 @@ A filter driver should always complete **NetEventSetPower** without waiting for 
 
 For more information about NDIS 6.30 features, see [Introduction to NDIS 6.30](introduction-to-ndis-6-30.md).
 
- 
+ 
 
- 
+ 
 
 
 

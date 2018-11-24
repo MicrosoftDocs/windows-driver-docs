@@ -8,11 +8,7 @@ keywords:
 - COPP WDK DirectX VA , commands
 - protected video WDK COPP , commands
 - commands WDK COPP
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +26,9 @@ The video miniport driver can receive a request to perform an operation on the p
 
 -   [Instructing how to protect the signal](instructing-how-to-protect-the-signal.md)
 
- 
+ 
 
- 
+ 
 
 
 

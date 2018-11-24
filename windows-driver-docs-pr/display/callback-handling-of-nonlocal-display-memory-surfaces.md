@@ -10,11 +10,7 @@ keywords:
 - DirectDraw AGP support WDK Windows 2000 display , callbacks
 - memory WDK DirectDraw AGP , callbacks
 - callbacks WDK DirectDraw nonlocal memory
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,7 +26,7 @@ Because the same driver functions are used for both local and nonlocal display m
 
 Applications and AGP hardware access the bits of a DirectDraw surface using two different addresses. Applications use a virtual address that is translated through the operating system's page table to a portion of physical address space. This physical address space is mapped by the GART hardware to appear contiguous. Hardware accesses this physical linear address (again remapped to real, discontinuous pages of memory by the GART). The **fpVidMem** member of the [**DD\_SURFACE\_GLOBAL**](https://msdn.microsoft.com/library/windows/hardware/ff551726) structure holds the virtual linear address useful to applications (and potentially some driver operations). The device-side physical address can be found from:
 
-```
+```cpp
 fpStartOffset = pSurface->fpHeapOffset - pSurface->lpVidMemHeap->fpStart;
 ```
 
@@ -42,9 +38,9 @@ Furthermore, although DirectDraw manages the allocation and freeing of nonlocal 
 
 Nonlocal display memory is [lost](losing-and-restoring-directdraw-surfaces.md) in exactly the same way as local display memory, that is, when a mode switch occurs or when exclusive mode changes, all local and nonlocal display memory surfaces are lost and the [*DdDestroySurface*](https://msdn.microsoft.com/library/windows/hardware/ff549281) driver callback is invoked for each surface. However, DirectDraw does not guarantee that the actual reserved address ranges and committed memory are preserved. DirectDraw may choose to discard all committed memory and the reserved address ranges, or it may choose to decommit memory but preserve the address range. It may also preserve both and simply mark the surfaces as lost. A driver should not make assumptions based on any one of these scenarios.
 
- 
+ 
 
- 
+ 
 
 
 

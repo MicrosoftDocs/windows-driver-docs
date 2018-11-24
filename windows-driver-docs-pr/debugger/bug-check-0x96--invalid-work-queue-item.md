@@ -3,11 +3,7 @@ title: Bug Check 0x96 INVALID_WORK_QUEUE_ITEM
 description: The INVALID_WORK_QUEUE_ITEM bug check has a value of 0x00000096. This bug check indicates that a queue entry was removed that contained a NULL pointer.
 ms.assetid: 18d7d8b2-814c-4207-aac9-e3affc2ccebd
 keywords: ["Bug Check 0x96 INVALID_WORK_QUEUE_ITEM", "INVALID_WORK_QUEUE_ITEM"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The INVALID\_WORK\_QUEUE\_ITEM bug check has a value of 0x00000096. This bug check indicates that a queue entry was removed that contained a **NULL** pointer.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## INVALID\_WORK\_QUEUE\_ITEM Parameters
 
@@ -58,7 +54,7 @@ The INVALID\_WORK\_QUEUE\_ITEM bug check has a value of 0x00000096. This bug che
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -71,9 +67,9 @@ An entry on a queue can be inserted on the list only one time. When an item is r
 
 In most situations, the queue that is being referenced is an **ExWorkerQueue** (executive worker queue). To help identify the driver that caused the error, Parameter 4 displays the address of the worker routine that would have been called if this work item had been valid. However, if the queue that is being referenced is not an **ExWorkerQueue**, this parameter is not useful.
 
- 
+ 
 
- 
+ 
 
 
 

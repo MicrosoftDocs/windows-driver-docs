@@ -1,13 +1,8 @@
 ---
 title: Battery Device-Specific Method
-author: windows-driver-content
 description: This topic describes _DSM control method and parameters for passive thermal battery management.
 ms.assetid: 622803F4-2548-4E8A-A330-179ABDF374AD
-ms.author: windowsdriverdev
 ms.date: 05/16/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +28,9 @@ The \_DSM control method parameters for the battery charging thermal limit funct
 ### Return
 
 None. Firmware is responsible for taking the current thermal limit into account when engaging charging.
- 
+ 
 
- 
+ 
 
 
 

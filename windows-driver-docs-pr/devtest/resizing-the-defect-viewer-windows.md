@@ -6,11 +6,7 @@ keywords:
 - Static Driver Verifier Report WDK , Defect Viewer
 - Defect Viewer WDK Static Driver Verifier
 - resizing Defect Viewer
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,9 +16,9 @@ To resize a Defect Viewer window, place the cursor over the window border until 
 
 ![screen shot showing how to resize the defect viewer window](images/sdvresize.png)
 
- 
+ 
 
- 
+ 
 
 
 

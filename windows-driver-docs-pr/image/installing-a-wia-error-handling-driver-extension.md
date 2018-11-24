@@ -1,13 +1,8 @@
 ---
 title: Installing a WIA Error Handling Driver Extension
-author: windows-driver-content
 description: Installing a WIA Error Handling Driver Extension
 ms.assetid: 8a16b0db-25ed-4512-8b45-0256fed6b83e
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -18,7 +13,7 @@ The error handling extension should be installed together with the WIA driver. I
 
 The following example shows how an existing driver INF file can be modified to include the error handler.
 
-```
+```INF
 MyDriver.AddReg]
 ...
 HKCR,CLSID\{UiClassId}\shellex\ErrorHandler\{ErrorHandlerCLSID}
@@ -45,9 +40,9 @@ The first entry in the **AddReg** section is to register the error handler as a 
 
 The *ThreadingModel* value for the error handling extension must be **Both**.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -10,11 +10,7 @@ keywords:
 - consistency checks WDK
 - informational checks WDK
 - tracing output checks WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -44,9 +40,9 @@ Thus, even when one of the checks in the checked build fails, it does not necess
 
 Do not ignore problems that are identified by the checked build. The key to successfully debug drivers with the checked build is to be sure that you can explain the reason for each failure that the checked build finds.
 
- 
+ 
 
- 
+ 
 
 
 

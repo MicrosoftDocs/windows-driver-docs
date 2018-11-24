@@ -8,11 +8,7 @@ keywords:
 - virtual miniports WDK networking
 - porting intermediate drivers WDK networking , virtual miniports
 - initializing virtual miniports
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,9 +34,9 @@ For more information about initializing a virtual miniport, see [Initializing a 
 
 NDIS 6.0 filter drivers do not require a virtual miniport. For more information about filter drivers, see [NDIS 6.0 Filter Drivers](ndis-filter-drivers.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -8,11 +8,7 @@ keywords:
 - PortCls WDK audio , port drivers
 - audio miniport drivers WDK , port drivers
 - miniport drivers WDK audio , port drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -58,9 +54,9 @@ For more information about driver support for DirectMusic, see [Synthesizer Mini
 
 In Windows XP and later, the **IPortDMus** and [IPortMidi](https://msdn.microsoft.com/library/windows/hardware/ff536891) interfaces are both implemented in a single internal driver module. This consolidation is facilitated by the similarity of these two interfaces. For example, the same methods are defined for both interfaces. Applications written for previous versions of Windows should see no change in the behavior of the **IPortMidi** and **IPortDMus** interfaces resulting from consolidation of the MIDI and DMus port drivers.
 
- 
+ 
 
- 
+ 
 
 
 

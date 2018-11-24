@@ -1,13 +1,8 @@
 ---
 title: WDI_TLV_P2P_SERVICE_TYPE
-author: windows-driver-content
 description: WDI_TLV_P2P_SERVICE_TYPE is a TLV that contains the Service Type of the service.
 ms.assetid: D9C3F099-DED1-400E-9D3F-7AF6D2D286DF
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_SERVICE_TYPE Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -20,7 +15,7 @@ WDI\_TLV\_P2P\_SERVICE\_TYPE is a TLV that contains the Service Type of the serv
 
 **Note**  This TLV was added in Windows 10, version 1607, WDI version 1.0.21.
 
- 
+ 
 
 ## TLV Type
 
@@ -39,7 +34,7 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 |-----------|----------------------------------------------------------------|
 | UINT8\[\] | The Service Type of the service in UTF-8, up to 21 bytes long. |
 
- 
+ 
 
 Requirements
 ------------
@@ -65,9 +60,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -10,11 +10,7 @@ keywords:
 - video content WDK Windows Server 2008 R2 display , protecting
 - Content Protection DDI WDK Windows 7 display
 - Content Protection DDI WDK Windows Server 2008 R2 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -100,9 +96,9 @@ Only specific processes should be allowed access to the shared resource.
 
 The driver should restrict shared access to this resource. The runtime can only call the driver's [**OpenResource**](https://msdn.microsoft.com/library/windows/hardware/ff568611) function to open this resource with display devices (**hDevice**) within the process that created the resource or by those devices that were explicitly granted access via the authenticated channel.
 
- 
+ 
 
- 
+ 
 
 
 

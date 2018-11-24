@@ -2,11 +2,7 @@
 title: Implementing a UI for Configuring sAPOs
 description: Implementing a UI for Configuring sAPOs
 ms.assetid: 52ce61fd-e5cf-4c84-885e-e46c7bfdad4a
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,9 +19,9 @@ You have the following two options for implementing your user interface.
 
 -   If you replace the system-supplied sAPOs with ones that you developed, you must provide a separate UI for configuring your sAPOs. See the [Custom UI Design Information](custom-ui-design-information.md) topic for details about how to do this.
 
- 
+ 
 
- 
+ 
 
 
 

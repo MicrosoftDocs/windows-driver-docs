@@ -1,5 +1,5 @@
 ---
-title: FSCTL\_GET\_EXTERNAL\_BACKING control code
+title: FSCTL_GET_EXTERNAL_BACKING control code
 description: The FSCTL\_GET\_EXTERNAL\_BACKING control code gets the backing information for a file from an external backing provider.
 ms.assetid: 18A8E71E-CAED-4E0A-95D0-18E99F9733B2
 keywords: ["FSCTL_GET_EXTERNAL_BACKING control code Installable File System Drivers"]
@@ -11,11 +11,7 @@ api_location:
 - ntifs.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -83,7 +79,7 @@ Status block
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -123,9 +119,9 @@ Requirements
 
 [**WOF\_EXTERNAL\_INFO**](https://msdn.microsoft.com/library/windows/hardware/dn632452)
 
- 
+ 
 
- 
+ 
 
 
 

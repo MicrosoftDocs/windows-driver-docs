@@ -3,11 +3,7 @@ title: ~u (Unfreeze Thread)
 description: The ~u command unfreezes the specified thread.Do not confuse this command with the U (Unassemble) command.
 ms.assetid: 6ac3c84a-3734-4b16-a239-4233e186c2df
 keywords: ["~u (Unfreeze Thread) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,7 +20,7 @@ The **~u** command unfreezes the specified thread.
 
 Do not confuse this command with the [**U (Unassemble)**](u--unassemble-.md) command.
 
-```
+```dbgcmd
 ~Thread u 
 ```
 
@@ -57,7 +53,7 @@ Specifies the thread or threads to unfreeze. For more information about the synt
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -72,31 +68,31 @@ The following examples show you how to use the ~ commands.
 
 The following command displays the current status of all threads.
 
-```
+```dbgcmd
 0:000> ~* k
 ```
 
 The following command freeze the thread that caused the current exception.
 
-```
+```dbgcmd
 0:000> ~# f
 ```
 
 The following command checks that the status of this thread is suspended.
 
-```
+```dbgcmd
 0:000> ~* k
 ```
 
 The following command unfreezes thread number 123.
 
-```
+```dbgcmd
 0:000> ~123 u
 ```
 
- 
+ 
 
- 
+ 
 
 
 

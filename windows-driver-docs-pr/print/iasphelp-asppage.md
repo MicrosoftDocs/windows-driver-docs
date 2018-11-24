@@ -1,6 +1,5 @@
 ---
 title: Iasphelp get\_AspPage method
-author: windows-driver-content
 description: The AspPage property enables an ASP Web page to obtain the directory path to the initial ASP file used for describing printer-specific details.
 MS-HAID:
 - 'webfnc\_6b636ee3-bc4f-4fbd-8ad9-87d6abcf3b35.xml'
@@ -16,6 +15,7 @@ api_name:
 - Iasphelp.get_AspPage
 api_type:
 - COM
+ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +27,7 @@ The **AspPage** property enables an ASP Web page to obtain the directory path to
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT get_AspPage(
   [in]  DWORD dwPage,
   [out] BSTR  *pVal
@@ -66,7 +66,7 @@ This method can return one of these values.
 </tr>
 <tr class="even">
 <td><strong>E_HANDLE</strong></td>
-<td><p>The [<strong>Iasphelp::Open</strong>](iasphelp-open.md) method has not been called.</p></td>
+<td><p>The <a href="iasphelp-open.md" data-raw-source="[&lt;strong&gt;Iasphelp::Open&lt;/strong&gt;](iasphelp-open.md)"><strong>Iasphelp::Open</strong></a> method has not been called.</p></td>
 </tr>
 <tr class="odd">
 <td><strong>E_NOTIMPL</strong></td>
@@ -79,21 +79,13 @@ This method can return one of these values.
 </tbody>
 </table>
 
- 
+## VBScript Example
 
-## <span id="ddk_iasphelp_asppage_gg"></span><span id="DDK_IASPHELP_ASPPAGE_GG"></span>
-
-
-### <span id="vbscript_example"></span><span id="VBSCRIPT_EXAMPLE"></span>VBScript Example
-
-Remarks
--------
-
-To determine where to find the page's ASP file, the method uses the algorithm described in [Which Printer Details Page is Displayed?](https://msdn.microsoft.com/library/windows/hardware/ff563765).
+To determine where to find the page's ASP file, the method uses the algorithm described in [Which Printer Details Page is Displayed?](https://docs.microsoft.com/windows-hardware/drivers/print/which-printer-details-page-is-displayed-).
 
 The [**Iasphelp::Open**](iasphelp-open.md) method must be called before the **Iasphelp::AspPage** property can be queried.
 
-```
+```vb
     Dim objPrinter, strPrinter, str
     strPrinter = Session("MS_printer")
     Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
@@ -114,22 +106,9 @@ Requirements
 <td><p>Target platform</p></td>
 <td>Desktop</td>
 </tr>
-<tr class="even">
-<td><p>Version</p></td>
-<td><p>Available in Windows 2000 and later versions of the Windows operating systems.</p></td>
-</tr>
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**Iasphelp::Open**](iasphelp-open.md)
-
- 
-
- 
-
-
-
-

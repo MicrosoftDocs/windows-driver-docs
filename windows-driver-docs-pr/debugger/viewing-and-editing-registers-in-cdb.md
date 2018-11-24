@@ -2,11 +2,7 @@
 title: Viewing and Editing Registers in CDB
 description: In CDB, you can view registers by entering the r (Registers) command in the Debugger Command window. You can customize the display by using several options or by using the rm (Register Mask) command.
 ms.assetid: 33A2AF32-B4A6-430A-AD08-73B51D5D6301
-ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,9 +17,9 @@ Registers are also automatically displayed every time that the target stops. If 
 
 On an x86-based processor, the **r** option also controls several one-bit registers known as flags. To change these flags, you use a slightly different syntax than when changing regular registers. For more information about these flags and an explanation of this syntax, see [x86 Flags](x86-architecture.md#x86-flags).
 
- 
+ 
 
- 
+ 
 
 
 

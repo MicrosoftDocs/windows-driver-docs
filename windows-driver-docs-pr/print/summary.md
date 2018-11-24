@@ -1,13 +1,8 @@
 ---
 title: Summary
-author: windows-driver-content
 description: Summary
 ms.assetid: 8ed412b2-1e7c-440f-8949-a3b1fff09b16
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -76,9 +71,9 @@ OutputAreaAlmostFull
 
 OutputAreaFull
 
- 
+ 
 
- 
+ 
 
 
 

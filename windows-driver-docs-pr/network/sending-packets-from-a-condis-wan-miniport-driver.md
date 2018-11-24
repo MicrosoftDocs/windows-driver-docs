@@ -7,11 +7,7 @@ keywords:
 - loopbacks WDK networking
 - software loopbacks WDK networking
 - promiscuous-mode loopbacks WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,9 +33,9 @@ Packets that a WAN miniport driver sends contain simple HDLC PPP framing if PPP 
 
 A WAN miniport driver must not attempt to provide software loopback or promiscuous-mode loopback. Both of these loopback types are fully supported by the NDISWAN driver.
 
- 
+ 
 
- 
+ 
 
 
 

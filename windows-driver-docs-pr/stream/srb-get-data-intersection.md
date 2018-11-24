@@ -9,11 +9,7 @@ api_name:
 - SRB_GET_DATA_INTERSECTION
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,7 +28,7 @@ The minidriver should set one of the following as the status in the SRB:
 <span id="STATUS_SUCCESS"></span><span id="status_success"></span>STATUS\_SUCCESS  
 Indicates that a match was found.
 
-### <span id="comments"></span><span id="COMMENTS"></span>Comments
+### Comments
 
 *pSrb*-&gt;**CommandData**.**IntersectInfo** specifies both the data range to search for a match and the buffer to return the format. The *pSrb* pointer points to a [**HW\_STREAM\_REQUEST\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff559702) structure. (The **IntersectInfo** member is of type pointer to a [**STREAM\_DATA\_INTERSECT\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff568299) structure.)
 
@@ -40,9 +36,9 @@ The class driver uses this request to satisfy [**KSPROPERTY\_PIN\_DATAINTERSECTI
 
 Generally, the resulting data format is immediately used to open a stream in that format. For more information about data formats and data ranges, see [Data Range Intersections in AVStream](https://msdn.microsoft.com/library/windows/hardware/ff558680).
 
- 
+ 
 
- 
+ 
 
 
 

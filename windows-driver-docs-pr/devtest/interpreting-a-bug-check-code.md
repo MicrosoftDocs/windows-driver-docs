@@ -5,11 +5,7 @@ ms.assetid: b5c8e18e-c2d3-47d9-b2bd-38aaaedcfde9
 keywords:
 - tools WDK , bug check codes
 - driver development tools WDK , bug check codes
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -80,9 +76,9 @@ For a full list of bug check codes, see the Bugcodes.h file. This file can be fo
 
 [Windows Debugging](https://msdn.microsoft.com/library/windows/hardware/ff551063)
 
- 
+ 
 
- 
+ 
 
 
 

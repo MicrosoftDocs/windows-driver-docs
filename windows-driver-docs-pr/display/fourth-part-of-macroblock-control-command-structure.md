@@ -4,11 +4,7 @@ description: Fourth Part of Macroblock Control Command Structure
 ms.assetid: 26540693-09a2-4664-b0ac-4cc69e909e99
 keywords:
 - macroblocks WDK DirectX VA , generic command structure
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,9 +18,9 @@ If the **bPicIntra** and the **bMV\_RPS** members of [**DXVA\_PictureParameters*
 
 If the **bPicIntra** member of DXVA\_PictureParameters is zero and the **bMV\_RPS** member of DXVA\_PictureParameters is 1, the fourth part of the macroblock control command structure is an array of bytes called *bRefPicSelect*. The number of elements in that array is the same as the number of elements in the **MVector** array shown in the preceding table. Each element of the array specifies the index of the uncompressed surface associated with the corresponding motion vector found in the **MVector** array. Then, the macroblock control command structure ends and is padded with zero-valued data, if necessary, to align the next macroblock control command structure to a 16-byte boundary.
 
- 
+ 
 
- 
+ 
 
 
 

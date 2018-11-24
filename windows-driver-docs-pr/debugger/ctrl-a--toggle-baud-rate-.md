@@ -3,11 +3,7 @@ title: CTRL+A (Toggle Baud Rate)
 description: The CTRL+A key toggles the baud rate used in the kernel debugging connection.
 ms.assetid: 77a95ca1-073c-480a-abda-f484adbc1d23
 keywords: ["CTRL+A (Toggle Baud Rate) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,13 +20,13 @@ The CTRL+A key toggles the baud rate used in the kernel debugging connection.
 
 KD Syntax
 
-```
+```dbgcmd
 CTRL+A  ENTER 
 ```
 
 WinDbg Syntax
 
-```
+```dbgcmd
 CTRL+ALT+A 
 ```
 
@@ -64,7 +60,7 @@ CTRL+ALT+A
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -77,9 +73,9 @@ In WinDbg, this can also be accomplished by selecting [Debug | Kernel Connection
 
 You cannot actually use this control key to change the baud rate at which you are debugging. The baud rate of the host computer and the target computer must match, and the baud rate of the target computer cannot be changed without rebooting. Therefore, you only need to toggle through the baud rates if the two computers are attempting to communicate at different rates. In this case, you must change the host computer's baud rate to match that of the target computer.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Viewing Print Web Pages
-author: windows-driver-content
 description: Viewing Print Web Pages
 ms.assetid: c2cf782c-0f53-47e1-8c5e-1e2aa87613c4
 keywords:
@@ -12,11 +11,7 @@ keywords:
 - print server pages WDK
 - viewing print server pages
 - print URLs WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -66,9 +61,9 @@ The following figure illustrates the process by which a printer URL is sent from
 
 ![diagram illustrating sending a print url from the client to the print server](images/prnturl.png)
 
- 
+ 
 
- 
+ 
 
 
 

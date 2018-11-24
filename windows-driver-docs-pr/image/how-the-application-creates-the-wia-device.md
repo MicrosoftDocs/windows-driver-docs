@@ -1,13 +1,8 @@
 ---
 title: How the Application Creates the WIA Device
-author: windows-driver-content
 description: How the Application Creates the WIA Device
 ms.assetid: f4268c61-11e5-4796-b7cb-80c8112be4d8
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -46,7 +41,7 @@ All WIA devices have a root item, which is the parent to all WIA device items. T
 
 The following example shows how to create a WIA device root item.
 
-```
+```cpp
 LONG lItemFlags = WiaItemTypeFolder|WiaItemTypeDevice|WiaItemTypeRoot;
 IWiaDrvItem  *pIWiaDrvRootItem  = NULL;
 HRESULT hr = 
@@ -73,9 +68,9 @@ To create a WIA child item, located directly under the root item created in the 
 
 **Note**  **** Notice that the [**IWiaDrvItem::AddItemToFolder**](https://msdn.microsoft.com/library/windows/hardware/ff543856) method is called to add the newly created child item to the root item.
 
- 
+ 
 
-```
+```cpp
 LONG lItemFlags = WiaItemTypeFile|WiaItemTypeDevice|WiaItemTypeImage;
 PMINIDRIVERITEMCONTEXT pItemContext    = NULL;
 IWiaDrvItem           *pIWiaDrvNewItem = NULL;
@@ -112,7 +107,7 @@ if(S_OK == hr){
 
 The following example shows an implementation of the **IWiaMiniDrv::drvInitializeWia** method.
 
-```
+```cpp
 HRESULT _stdcall CWIADevice::drvInitializeWia(
   BYTE        *pWiasContext,
   LONG        lFlags,
@@ -268,9 +263,9 @@ HRESULT _stdcall CWIADevice::drvInitializeWia(
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

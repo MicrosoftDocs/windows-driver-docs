@@ -1,13 +1,8 @@
 ---
 title: OID_PNP_WAKE_UP_PATTERN_LIST
-author: windows-driver-content
 description: OID_PNP_WAKE_UP_PATTERN_LIST
 ms.assetid: 36e4243f-5df6-4231-b1e3-63fcb2e2ec04
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_PNP_WAKE_UP_PATTERN_LIST Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -46,7 +41,7 @@ Requirements
 <tbody>
 <tr class="odd">
 <td><p>Version</p></td>
-<td><p>Supported in NDIS 6.0 and 6.1. For NDIS 6.20 and later, use [OID_PM_WOL_PATTERN_LIST](oid-pm-wol-pattern-list.md) instead.</p></td>
+<td><p>Supported in NDIS 6.0 and 6.1. For NDIS 6.20 and later, use <a href="oid-pm-wol-pattern-list.md" data-raw-source="[OID_PM_WOL_PATTERN_LIST](oid-pm-wol-pattern-list.md)">OID_PM_WOL_PATTERN_LIST</a> instead.</p></td>
 </tr>
 <tr class="even">
 <td><p>Header</p></td>
@@ -68,9 +63,9 @@ Requirements
 
 [OID\_PNP\_REMOVE\_WAKE\_UP\_PATTERN](oid-pnp-remove-wake-up-pattern.md)
 
- 
+ 
 
- 
+ 
 
 
 

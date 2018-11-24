@@ -1,6 +1,5 @@
 ---
 title: Connecting Between Pins of Filters for BDA Minidrivers
-author: windows-driver-content
 description: Connecting Between Pins of Filters for BDA Minidrivers
 ms.assetid: 549031f3-1501-43c0-b172-bc88613d7e61
 keywords:
@@ -12,11 +11,7 @@ keywords:
 - pin connections WDK BDA
 - connecting pins WDK BDA
 - connections WDK BDA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -47,11 +42,11 @@ To let pins of BDA capture and demultiplex filters connect, the output pin of th
 **Note**   You can only set a demultiplex filter's input pin to the STATIC\_KSDATAFORMAT\_SUBTYPE\_BDA\_MPEG2\_TRANSPORT subformat if the AVStream minidriver for the filter is BDA compliant.
 If the media type for the input pin is set to STATIC\_KSDATAFORMAT\_SUBTYPE\_BDA\_MPEG2\_TRANSPORT and the filter does not comply to BDA rules, the broadcast signal might not render properly.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

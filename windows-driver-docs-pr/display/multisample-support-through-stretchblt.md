@@ -7,11 +7,7 @@ keywords:
 - multisample rendering WDK DirectX 8.0 , StretchBlt
 - rendering multisamples WDK DirectX 8.0 , StretchBlt
 - stretch blit operations WDK DirectX 8.0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +27,9 @@ When the driver sets the D3DPRASTERCAPS\_STRETCHBLTMULTISAMPLE bit, it indicates
 
 It is important to note that if the driver uses a stretch blt to perform a page flip in fullscreen mode, the driver should specify the supported sample counts in the **wFlipMSTypes** member of the [**DDPIXELFORMAT**](https://msdn.microsoft.com/library/windows/hardware/ff550274)'s **MultiSampleCaps** structure and not the **wBltMSTypes** member as a flip is being performed.
 
- 
+ 
 
- 
+ 
 
 
 

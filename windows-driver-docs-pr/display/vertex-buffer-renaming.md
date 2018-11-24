@@ -5,11 +5,7 @@ ms.assetid: b76552b4-77a9-43f4-984b-10de92dffa83
 keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , vertex buffers, renaming
 - vertex buffers WDK DirectX 8.0 , renaming
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +25,9 @@ Note that the D3DLOCK\_DISCARD flag will not be passed to the driver by the init
 
 In DirectX 7.0, vertex buffer renaming could also be accomplished via *LockExecuteBuffer* using the flag DDLOCK\_DISCARDCONTENTS. However, the synchronization between runtime and driver on the original release of DirectX 7.0 prevents this mechanism from working correctly. However, the version of DirectX 7.0 released with DirectX 8.0 corrects this problem and vertex buffer renaming at lock time are functional through DirectX 7.0 interfaces.
 
- 
+ 
 
- 
+ 
 
 
 

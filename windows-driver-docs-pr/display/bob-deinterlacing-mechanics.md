@@ -7,11 +7,7 @@ keywords:
 - interleaved fields WDK DirectX VA
 - stride WDK DirectX VA
 - deinterlacing WDK DirectX VA , bob, mechanics
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,9 +31,9 @@ If the video sample contains two interleaved fields as specified by the **DXVA\_
 
 The end time of the first field is the start time of the second field.
 
- 
+ 
 
- 
+ 
 
 
 

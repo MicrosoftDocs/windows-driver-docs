@@ -9,11 +9,7 @@ keywords:
 - deadlocks WDK audio
 - interrupt service routines WDK audio
 - ISRs WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -39,9 +35,9 @@ For example, a set of mappings to be revoked might contain a mapping that has ju
 
 For a working code example, see the Ac97 sample driver in the Windows Driver Kit (WDK).
 
- 
+ 
 
- 
+ 
 
 
 

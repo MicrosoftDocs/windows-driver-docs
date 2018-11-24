@@ -8,11 +8,7 @@ keywords:
 - SDV WDK , input files
 - input files WDK Static Driver Verifier
 - files WDK Static Driver Verifier
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -39,9 +35,9 @@ This section includes detailed descriptions of the following files:
 
 [Static Driver Verifier Options File](static-driver-verifier-options-file.md)
 
- 
+ 
 
- 
+ 
 
 
 

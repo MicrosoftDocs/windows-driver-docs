@@ -4,11 +4,7 @@ description: Applying Speaker-Configuration Settings
 ms.assetid: 98fe96cc-8436-4400-9b39-86d188e085c9
 keywords:
 - failed speaker-configuration requests WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,7 +16,7 @@ ms.localizationpriority: medium
 
 **Note**  This information applies to Windows XP and earlier operating systems. Starting with Windows Vista, **IDirectSound::GetSpeakerConfig** and **IDirectSound::SetSpeakerConfig** have been deprecated.
 
- 
+ 
 
 DirectSound keeps track of its current speaker-configuration setting in the registry and applies that setting to the audio hardware each time a new DirectSound device is created.
 
@@ -64,9 +60,9 @@ At boot time, an audio adapter driver initializes the hardware's speaker configu
 
 Immediately after installing an audio device or when a speaker-configuration error occurs, the DirectSound speaker configuration defaults to stereo.
 
- 
+ 
 
- 
+ 
 
 
 

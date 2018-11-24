@@ -1,16 +1,11 @@
 ---
 title: Handle Management
-author: windows-driver-content
 description: Handle Management
 ms.assetid: 09d9c836-1754-4a50-92a3-229a3ae05ccb
 keywords:
 - handles WDK file systems
 - security WDK file systems , minimizing threats
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -44,9 +39,9 @@ No driver should ever rely on handles or parameters passed from a user-mode appl
 
 Note that if the Nt variant is used to open a file, then the Nt variant must also be used to close the file.
 
- 
+ 
 
- 
+ 
 
 
 

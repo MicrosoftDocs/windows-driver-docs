@@ -3,6 +3,7 @@ title: DSM\_COUNTERS WMI Class
 description: DSM\_COUNTERS WMI Class
 ms.assetid: 11ff77d7-5643-45ec-ac38-26ee70e6ea94
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # DSM\_COUNTERS WMI Class
@@ -10,7 +11,7 @@ ms.localizationpriority: medium
 
 An MPIO driver uses the DSM\_COUNTERS WMI class to identify all timer values that are associated with a DSM.
 
-```
+```cpp
 class DSM_COUNTERS
 {
     //
@@ -56,9 +57,9 @@ class DSM_COUNTERS
 
 When this class definition is compiled by the WMI tool suite, it produces the [**DSM\_COUNTERS**](https://msdn.microsoft.com/library/windows/hardware/ff552683) data structure. There are no methods associated with this WMI class.
 
- 
+ 
 
- 
+ 
 
 
 

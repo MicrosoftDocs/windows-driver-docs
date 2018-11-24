@@ -4,11 +4,7 @@ description: Using Session Protocol
 ms.assetid: 355286f9-ef85-4ba6-b21a-fc51e0b93fed
 keywords:
 - session protocol WDK SANs
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,7 +20,7 @@ This section describes how to set up and perform a data transfer.
 
 **Note**  Depending on the behavior of applications that load the switch, the switch optimizes its session protocol to reduce the overhead involved in transferring application data.
 
- 
+ 
 
 This section also provides examples of how the switch's session protocol performs data transfers. However, these examples do not include definitive descriptions of these operations.
 
@@ -77,9 +73,9 @@ The following figure shows an overview of how the switch completes the transfer 
 
 [Transferring Data on a SAN](transferring-data-on-a-san.md)
 
- 
+ 
 
- 
+ 
 
 
 

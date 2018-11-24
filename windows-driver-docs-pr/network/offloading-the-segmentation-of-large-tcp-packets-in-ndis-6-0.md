@@ -9,11 +9,7 @@ keywords:
 - task offload porting WDK networking , segmentation of large TCP packets
 - TCP/IP offload service porting WDK networking , segmentation of large TCP packets
 - offload servi
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,9 +31,9 @@ Offloading the segmentation of large TCP packets at run time in NDIS 6.0 is simi
 
 For more information about the segmentation of large TCP packets for large send offload (LSO), see [Offloading the Segmentation of Large TCP Packets](offloading-the-segmentation-of-large-tcp-packets.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -6,11 +6,7 @@ keywords:
 - clamping fog intensity per pixel WDK DirectX 9.0
 - fog intensity per pixel WDK DirectX 9.0
 - pixel fog intensity clamping WDK DirectX 9.0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +24,9 @@ The driver determines how to obtain the fog value by verifying if the D3DFVF\_FO
 
 When the driver sets D3DPMISCCAPS\_FOGINFVF, the runtime in turn sets the D3DPMISCCAPS\_FOGANDSPECULARALPHA capability bit in the **PrimitiveMiscCaps** member of the D3DCAPS9 structure.
 
- 
+ 
 
- 
+ 
 
 
 

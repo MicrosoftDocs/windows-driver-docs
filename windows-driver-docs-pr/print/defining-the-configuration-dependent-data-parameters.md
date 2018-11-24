@@ -1,6 +1,5 @@
 ---
 title: Defining the Configuration-Dependent Data Parameters
-author: windows-driver-content
 description: Defining the Configuration-Dependent Data Parameters
 ms.assetid: a5bb2e3a-22e0-41d7-8035-5437ac473b21
 keywords:
@@ -10,11 +9,7 @@ keywords:
 - PICKMANY parameters WDK GDL
 - PICKONE parameters WDK GDL
 - null-value parameters WDK GDL
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +22,7 @@ The content of the **\*Features** construct can consist of one or more **\*Optio
 
 For example,you can define a parameter named *Today* that can take a day of the week as its value, as the following code example shows.:
 
-```
+```cpp
 *Feature: Today
 {
   *Option: Sunday{}
@@ -46,13 +41,13 @@ The **\*UIType** reserved directive enables you to designate whether a parameter
 
 **Note**   GDL does not allow "nothing" to be assigned to a parameter. Thus, to describe the robot holding no pens, you must declare an option called None or Off for PICKMANY parameters. The option name that is used is not important; you can designate which option is assigned this property by using the **\*NoneOption** directive. The option that **\*NoneOption** designates is not compatible with any of the other options.
 
- 
+ 
 
 You can define as many **\*Feature** constructs as you have parameters. All **\*Feature** constructs must reside at the *root context*. The root context has no parent construct.
 
- 
+ 
 
- 
+ 
 
 
 

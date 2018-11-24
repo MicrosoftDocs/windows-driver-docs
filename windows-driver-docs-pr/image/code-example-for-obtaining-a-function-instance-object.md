@@ -1,13 +1,8 @@
 ---
 title: Code Example for Obtaining a Function Instance Object
-author: windows-driver-content
 description: Code Example for Obtaining a Function Instance Object
 ms.assetid: d4e3c5e0-d904-4049-9bc2-6c21d2a6f905
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,7 +17,7 @@ The following code example contains the declaration of a sample class (CWSDDevic
 
 The code example also shows methods to initialize these members and methods to read device properties from the current Function Instance property store. The **CWSDDevice::InitializeConnection** method illustrates the procedure that is described in [Obtaining a Function Instance Object](obtaining-a-function-instance-object.md) to obtain the current Function Instance object that represents the current web services scanner device instance.
 
-```
+```cpp
 /**************************************************************************\
 * Sample CWSDDevice class that encapsulates the device communication interface 
 \**************************************************************************/
@@ -365,9 +360,9 @@ CWSDDevice::~CWSDDevice()
 };
 ```
 
- 
+ 
 
- 
+ 
 
 
 

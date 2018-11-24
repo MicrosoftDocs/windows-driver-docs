@@ -3,11 +3,7 @@ title: Bug Check 0xF3 DISORDERLY_SHUTDOWN
 description: The DISORDERLY_SHUTDOWN bug check has a value of 0x000000F3. This indicates that Windows was unable to shut down due to lack of memory.
 ms.assetid: e113cd2f-96b2-43b8-a67e-a851cc5c0da8
 keywords: ["Bug Check 0xF3 DISORDERLY_SHUTDOWN", "DISORDERLY_SHUTDOWN"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The DISORDERLY\_SHUTDOWN bug check has a value of 0x000000F3. This indicates that Windows was unable to shut down due to lack of memory.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## DISORDERLY\_SHUTDOWN Parameters
 
@@ -60,7 +56,7 @@ The DISORDERLY\_SHUTDOWN bug check has a value of 0x000000F3. This indicates tha
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -69,9 +65,9 @@ Windows attempted to shut down, but there were no free pages available to contin
 
 Because applications were not terminated and drivers were not unloaded, they continued to access pages even after the modified writer had terminated. This causes the system to run out of pages, since the page files could be used.
 
- 
+ 
 
- 
+ 
 
 
 

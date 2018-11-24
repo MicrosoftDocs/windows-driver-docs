@@ -9,11 +9,7 @@ keywords:
 - DMA engine allocation WDK audio
 - render DMA engines WDK audio
 - capture DMA engines WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,9 +32,9 @@ Similarly, when allocating a DMA engine for a capture stream, the [**AllocateRen
 
 The Allocate*Xxx*DmaEngine routines are available in both versions of the HD Audio DDI.
 
- 
+ 
 
- 
+ 
 
 
 

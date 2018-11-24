@@ -12,6 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # KSCATEGORY_CLOCK
@@ -42,7 +43,7 @@ The KSCATEGORY_CLOCK [device interface class](https://msdn.microsoft.com/library
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -67,9 +68,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

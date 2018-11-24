@@ -2,11 +2,7 @@
 title: Kiosk apps for assigned access Best practices
 description: Kiosk apps for assigned access Best practices
 ms.assetid: 2405B5BB-2214-4B40-B3A1-C47073390B21
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -43,7 +39,7 @@ There are two different experiences that assigned access provides:
 <tbody>
 <tr class="odd">
 <td><p><span id="assigned_access"></span><span id="ASSIGNED_ACCESS"></span>assigned access</p></td>
-<td><p>A feature that allows a system administrator to manage the user’s experience by limiting application entry points exposed to the user of the device. For example, you can restrict customers at your business to using one app so your PC acts like a kiosk. Whenever someone signs in with the specified account, they'll only be able to use that one app. They won't be able to switch apps or close the app using touch gestures, a mouse, the keyboard, or hardware buttons. They also won't see any app notifications.</p></td>
+<td><p>A feature that allows a system administrator to manage the user’s experience by limiting application entry points exposed to the user of the device. For example, you can restrict customers at your business to using one app so your PC acts like a kiosk. Whenever someone signs in with the specified account, they&#39;ll only be able to use that one app. They won&#39;t be able to switch apps or close the app using touch gestures, a mouse, the keyboard, or hardware buttons. They also won&#39;t see any app notifications.</p></td>
 </tr>
 <tr class="even">
 <td><p><span id="lock_screen_app__or_lock_app_"></span><span id="LOCK_SCREEN_APP__OR_LOCK_APP_"></span>lock screen app (or lock app)</p></td>
@@ -58,17 +54,17 @@ There are two different experiences that assigned access provides:
 <td><p>An application that runs normally, in an unlocked Windows context.</p></td>
 </tr>
 <tr class="odd">
-<td><p><span id="LockApplicationHost"></span><span id="lockapplicationhost"></span><span id="LOCKAPPLICATIONHOST"></span>[LockApplicationHost](http://go.microsoft.com/fwlink/?LinkId=691219)</p></td>
+<td><p><span id="LockApplicationHost"></span><span id="lockapplicationhost"></span><span id="LOCKAPPLICATIONHOST"></span><a href="http://go.microsoft.com/fwlink/?LinkId=691219" data-raw-source="[LockApplicationHost](http://go.microsoft.com/fwlink/?LinkId=691219)">LockApplicationHost</a></p></td>
 <td><p>A WinRT class that allows above lock screen apps to request that the device unlocks, and allows the app to register to be notified when the device begins to unlock.</p></td>
 </tr>
 <tr class="even">
 <td><p><span id="View_or_Application_View"></span><span id="view_or_application_view"></span><span id="VIEW_OR_APPLICATION_VIEW"></span>View or Application View</p></td>
-<td><p>Each view is a separate window into the app. An app can have a main view, and create multiple and secondary views on demand. See [ApplicationView]( http://go.microsoft.com/fwlink/?LinkId=691220) for more information.</p></td>
+<td><p>Each view is a separate window into the app. An app can have a main view, and create multiple and secondary views on demand. See <a href="http://go.microsoft.com/fwlink/?LinkId=691220" data-raw-source="[ApplicationView]( http://go.microsoft.com/fwlink/?LinkId=691220)">ApplicationView</a> for more information.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ## The windows.aboveLockScreen extension
 
@@ -92,15 +88,15 @@ If the app does not have the **windows.aboveLockScreen** extension, no secondary
 Regardless of whether your app uses the extension, be sure to secure its data. See the [guidelines for assigned access apps](https://docs.microsoft.com/windows/configuration/guidelines-for-assigned-access-app#secure-your-information) for more information.
 
 > [!NOTE]
-> Starting in Windows 10, version 1607, there is no longer a restriction on the Universal Windows Platform (UWP) extension, so most apps can be shown in **Settings** when user configures assigned access.
+> Starting in Windows 10, version 1607, there is no longer a restriction on the Universal Windows Platform (UWP) extension, so most apps can be shown in **Settings** when user configures assigned access.
 
 ## Best practices
 
 
-> [!NOTE]  
+> [!NOTE]
 > This section applies to a Kiosk application that uses the **windows.aboveLockScreen** extension.
 
- 
+
 
 ### Secure your information <a name="secureinfo"></a>
 
@@ -113,7 +109,7 @@ If the kiosk app is meant to run both above lock in assigned access and also in 
 The following sample demonstrates how to do this. AssignedAccessPage.xaml is predefined, and the app navigates to AssignedAccessPage.xaml once it detects that is running in above lock mode. As a result, the normal page would display only in the under lock scenario.
 
 You can use this method to determine if the app is running above lock screen anytime in the app lifecycle and react accordingly.
-```
+```cpp
 using Windows.ApplicationModel.LockScreen;
 
 // inside the override OnLaunched function in App.xaml.cs
@@ -153,7 +149,7 @@ When a kiosk app has the **windows.aboveLockScreen** extension, and is running a
 
 You can run the following code in the main window of your app (in assigned access mode) to see the view count and whether the current screen is the main view.
 
-```
+```cpp
 using Windows.ApplicationModel.Core;
 
 CoreApplication.GetCurrentView().IsMain //false
@@ -164,7 +160,7 @@ CoreApplication.Views.Count //2
 
 Each view or window has its own dispatcher. Because the main view is hidden to the user, use **GetCurrentView()** to access the app’s secondary view running above the lock instead of MainView(). 
 
-```
+```cpp
 using Windows.ApplicationModel.Core;
 
 private async void Button_Click(object sender, RoutedEventArgs e)
@@ -188,12 +184,11 @@ private async void Button_Click(object sender, RoutedEventArgs e)
             button.IsEnabled = true;
         });
 }
-
 ```
 
 When the app has windows.aboveLockScreen and runs as a kiosk experience, creating new views will cause an exception within the app:
 
-```
+```cpp
 Windows.ApplicationModel.Core.CoreApplication.CreateNewView(); //causes exception
 ```
 
@@ -204,7 +199,7 @@ Because of this, you cannot have multiple views or run on multiple monitors. If 
 
 In some situations, the power button, escape button, or other buttons used to stop an application may not be enabled or available on the keyboard. In these situations, provide a way to stop assigned access, for instance a software key. The following event handler shows how to stop assigned access mode by responding to button click event that could be triggered by a software key.
 
-```
+```cpp
 LockApplicationHost^ lockHost = LockApplicationHost::GetForCurrentView();
     if (lockHost != nullptr)
     {
@@ -218,7 +213,7 @@ A kiosk app's lifecycle is handled by the assigned access framework. If the app 
 
 Your kiosk app can also register a handler for this event and perform actions before exiting. Saving any data is an example of this. See the code below for an example of registering a handler.
 
-```
+```cpp
 using Windows.ApplicationModel.LockScreen;
 
 public AssignedAccessPage()
@@ -248,9 +243,8 @@ After the user presses Ctrl+Alt+Del and a login screen is shown, two things coul
 
 The following function call will end up with a runtime exception if it’s invoked in assigned access mode. If the same app, when used under lock, calls the function, it does not cause a runtime exception. It’s helpful to use [LockApplicationHost](http://go.microsoft.com/fwlink/?LinkId=691219) to determine the app's assigned access mode, and code your app accordingly, such as not creating new views if the app is in assigned access mode.
 
-```
+```cpp
 Windows.ApplicationModel.Core.CoreApplication.CreateNewView(); //causes exception
-
 ```
 
 ## <span id="Appendix_1__UWP_extension"></span><span id="appendix_1__uwp_extension"></span><span id="APPENDIX_1__UWP_EXTENSION"></span>Appendix 1: UWP extension
@@ -259,10 +253,10 @@ Windows.ApplicationModel.Core.CoreApplication.CreateNewView(); //causes exceptio
 The following sample application manifest uses the **windows.aboveLockScreen**UWP extension. 
 
 > [!NOTE]
-> Starting in Windows 10, version 1607, there is no longer a restriction on the Universal Windows Platform (UWP) extension, so most apps can be shown in **Settings** when user configures assigned access.
+> Starting in Windows 10, version 1607, there is no longer a restriction on the Universal Windows Platform (UWP) extension, so most apps can be shown in **Settings** when user configures assigned access.
 
 
-```
+```cpp
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
   <Identity Name="bd4df68b-dc18-4748-a14e-bc21dac13736" Publisher="Contoso" Version="1.0.0.0" />
   <mp:PhoneIdentity PhoneProductId="bd4df68b-dc18-4748-a14e-bc21dac13736" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
@@ -294,7 +288,6 @@ The following sample application manifest uses the **windows.aboveLockScreen**UW
     <Capability Name="internetClient" />
   </Capabilities>
 </Package>
-
 ```
 
 ## <span id="Appendix_2__troubleshooting"></span><span id="appendix_2__troubleshooting"></span><span id="APPENDIX_2__TROUBLESHOOTING"></span>Appendix 2: troubleshooting
@@ -315,7 +308,7 @@ Note that because kiosk apps with assigned access do not run in full-screen mode
 
 [Show multiple views for an app]( http://go.microsoft.com/fwlink/?LinkId=708251)
 
- 
 
- 
+
+
 

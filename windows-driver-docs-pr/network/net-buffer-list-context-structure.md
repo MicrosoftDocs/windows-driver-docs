@@ -11,11 +11,7 @@ keywords:
 - data WDK networking , context data
 - packets WDK networking , context data
 - context da
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -43,9 +39,9 @@ Drivers should use the following NDIS macros and functions to access and manipul
 
 [**NET\_BUFFER\_LIST\_CONTEXT\_DATA\_SIZE**](https://msdn.microsoft.com/library/windows/hardware/ff568390)
 
- 
+ 
 
- 
+ 
 
 
 

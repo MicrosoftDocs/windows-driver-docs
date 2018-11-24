@@ -1,13 +1,8 @@
 ---
 title: Windows Image Acquisition Drivers
-author: windows-driver-content
 description: Windows Image Acquisition Drivers
 ms.assetid: ac145e5f-82c5-4c44-a0cc-c1ea7726d34e
-ms.author: windowsdriverdev
 ms.date: 07/18/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,4 +30,4 @@ This section contains the following topics:
 
 [Installing a WIA Minidriver](installing-a-wia-minidriver.md)
 
- 
+ 

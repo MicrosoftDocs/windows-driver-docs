@@ -1,17 +1,12 @@
 ---
 title: Static Enumeration
-author: windows-driver-content
 description: Static Enumeration
 ms.assetid: 58377f17-a9dc-4096-af23-36f8d8dbb87e
 keywords:
 - static enumeration WDK KMDF
 - static child lists WDK KMDF
 - traversing static child lists WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -64,9 +59,9 @@ If you need to retrieve the contents of a static child list, the driver can trav
 
 3.  Calling [**WdfFdoUnlockStaticChildListFromIteration**](https://msdn.microsoft.com/library/windows/hardware/ff547297).
 
- 
+ 
 
- 
+ 
 
 
 

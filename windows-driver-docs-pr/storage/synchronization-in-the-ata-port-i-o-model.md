@@ -1,16 +1,11 @@
 ---
 title: Synchronization in the ATA Port I/O Model
-author: windows-driver-content
 description: Synchronization in the ATA Port I/O Model
 ms.assetid: 91b95588-8cf7-4833-84c2-a991fd066fb2
 keywords:
 - ATA Port drivers WDK , synchronization
 - synchronization WDK ATA Port driver
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,7 +15,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_synchronization_in_the_ata_port_i_o_model_kg"></span><span id="DDK_SYNCHRONIZATION_IN_THE_ATA_PORT_I_O_MODEL_KG"></span>
 
 
-**NOTE** The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the [Storport driver](https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver) and [Storport miniport](https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers) driver models.
+**NOTE** The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the [Storport driver](https://msdn.microsoft.com/windows/hardware/drivers/storage/storport-driver) and [Storport miniport](https://msdn.microsoft.com/windows/hardware/drivers/storage/storport-miniport-drivers) driver models.
 
 
 The ATA port driver can be configured to synchronize access to critical data structures, such as the device extension, by ATA miniport driver routines. It is especially important that accesses by the interrupt handler are synchronized with accesses by other miniport driver routines, because these accesses might occur within different thread contexts.
@@ -115,14 +110,14 @@ DIRQL
 
 DIRQL
 
- 
+ 
 
 Even when **SyncWithIsr** is set to **FALSE**, the miniport driver can synchronize a callback routine with the interrupt handler by calling [**AtaPortRequestSynchronizedRoutine**](https://msdn.microsoft.com/library/windows/hardware/ff550223) and passing it a pointer to the callback routine.
 
 Synchronization is on a per channel basis. Therefore, on a synchronized channel, no two miniport driver routines will execute at the same time, but routines running on separate synchronized channels can execute concurrently.
 
- 
+ 
 
- 
+ 
 
 

@@ -21,11 +21,7 @@ keywords:
 - Static Driver Verifier WDK , Static Driver Verifier Report
 - StaticDV WDK , Static Driver Verifier Report
 - SDV WDK , Static Driver Verifier Report
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -124,9 +120,9 @@ The following screen shot shows how to close the Defect Viewer.
 
 ![screen shot showing how to close the defect viewer for a rule](images/sdv-defectviewerclose.png)
 
- 
+ 
 
- 
+ 
 
 
 

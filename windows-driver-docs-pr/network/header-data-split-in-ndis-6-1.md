@@ -4,11 +4,7 @@ description: Header-Data Split in NDIS 6.1
 ms.assetid: f4380956-b18b-46f4-9c2e-d8124cbf5c3f
 keywords:
 - header-data split WDK , about header-data split
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,9 +20,9 @@ The header-data split interface is an optional service that is provided for head
 
 For more information about header-data split, see [Header-Data Split](header-data-split.md).
 
- 
+ 
 
- 
+ 
 
 
 

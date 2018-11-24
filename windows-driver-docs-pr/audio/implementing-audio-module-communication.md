@@ -1,11 +1,7 @@
 ---
 title: Implementing Audio Module Communication
 description: An Audio Module is a distinct piece of audio processing logic performing a relatively atomic function.
-ms.author: windowsdriverdev
 ms.date: 07/07/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -224,11 +220,11 @@ For more information, see:
 
 The miniport will call into their port to create and send the notification.  The general call sequence is shown in this diagram.
 
-![AudioIPortClsNotifications Calling Sequence](images\AudioIPortClsNotificationsCallingSequenceDiagram.png)
+![AudioIPortClsNotifications Calling Sequence](images/AudioIPortClsNotificationsCallingSequenceDiagram.png)
 
 
 
- 
+ 
 
 
 

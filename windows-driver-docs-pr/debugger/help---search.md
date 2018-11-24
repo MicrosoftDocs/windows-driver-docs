@@ -3,11 +3,7 @@ title: Help Search
 description: Help Search
 ms.assetid: 27cc64cc-50bc-4f3b-8346-d95fb3ffdf9c
 keywords: ["Help Search", "help file, Help Search"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,9 +19,9 @@ Click **Search** on the **Help** menu to open the **Search** tab in this Help do
 
 For more information about how to use this Help file, see [Using the Help File](using-the-help-documentation.md).
 
- 
+ 
 
- 
+ 
 
 
 

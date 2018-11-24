@@ -3,11 +3,7 @@ title: up (Unassemble from Physical Memory)
 description: The up command displays an assembly translation of the specified program code in physical memory.
 ms.assetid: 4db66566-b7b8-4f1e-9492-b4b78016b45a
 keywords: ["up (Unassemble from Physical Memory) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **up** command displays an assembly translation of the specified program code in physical memory.
 
-```
+```dbgcmd
 up Range 
 up Address 
 up 
@@ -60,7 +56,7 @@ Specifies the beginning of the memory range in physical memory to disassemble. E
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -73,9 +69,9 @@ If you do not specify a parameter for the **up** command, the disassembly begins
 
 Do not confuse this command with the [**u (Unassemble)**](u--unassemble-.md). The **up** command disassembles only physical memory, while the **u** command disassembles only virtual memory.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: MB Miniport Driver INF Requirements
 description: MB Miniport Driver INF Requirements
 ms.assetid: 1f248e1c-7faf-4a11-a4c2-3c0e829e1583
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -15,7 +11,7 @@ ms.localizationpriority: medium
 
 MB miniport drivers must have the following entries in their INF file:
 
-```
+```INF
 *IfType  = 243; IF_TYPE_WWANPP 
 *MediaType  = 9; <mark type="enumval">NdisMediumWirelessWan</mark> 
 *PhysicalMediaType  = 8; NdisPhysicalMediumWirelessWan
@@ -57,7 +53,7 @@ Dual-mode devices can specify either of the *IfType* values from the following t
 </tbody>
 </table>
 
- 
+ 
 
 ### <a href="" id="-mediatype"></a>\*MediaType
 
@@ -88,7 +84,7 @@ MB miniport drivers must specify one of the MediaType values from the following 
 </tbody>
 </table>
 
- 
+ 
 
 ### EnableDhcp
 
@@ -115,7 +111,7 @@ MB miniport drivers must specify one of the EnableDhcp values from the following
 </tbody>
 </table>
 
- 
+ 
 
 ### UpperRange
 
@@ -142,7 +138,7 @@ This keyword is set with one or more combinations of the following strings as ap
 </tbody>
 </table>
 
- 
+ 
 
 ### LowerRange
 
@@ -165,11 +161,11 @@ This keyword must have, at the minimum, the following value when media type is N
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

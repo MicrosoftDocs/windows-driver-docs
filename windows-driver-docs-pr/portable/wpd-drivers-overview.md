@@ -1,11 +1,7 @@
 ---
 Description: WPD Drivers Overview
 title: WPD Drivers Overview
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,9 +16,9 @@ The object-based Device-Driver Interface (DDI) enables convergent devices, initi
 -   Media Transfer Protocol (MTP) over USB, IP, and Bluetooth
 -   Mass Storage Class (MSC) over USB
 
- 
+ 
 
- 
+ 
 
 
 

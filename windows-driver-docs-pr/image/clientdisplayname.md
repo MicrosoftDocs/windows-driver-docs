@@ -9,11 +9,7 @@ api_name:
 - wscn ClientDisplayName
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **ClientDisplayName** element specifies the string that the scanner
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ClientDisplayName>
   text
 </wscn:ClientDisplayName>
@@ -60,7 +56,7 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ScanDestination</strong>](scandestination.md)</p></td>
+<td><p><a href="scandestination.md" data-raw-source="[&lt;strong&gt;ScanDestination&lt;/strong&gt;](scandestination.md)"><strong>ScanDestination</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -70,16 +66,16 @@ Remarks
 
 The displayed name enables a user to select the requesting client as a scan destination. When the user chooses this display name and presses the scan button, the WSD Scan Service will send a [**ScanAvailableEvent**](scanavailableevent.md) event to the scan destination that subscribed to receive it.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ScanAvailableEvent**](scanavailableevent.md)
 
 [**ScanDestination**](scandestination.md)
 
- 
+ 
 
- 
+ 
 
 
 

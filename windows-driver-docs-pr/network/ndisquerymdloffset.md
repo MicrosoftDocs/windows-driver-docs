@@ -1,13 +1,8 @@
 ---
 title: NdisQueryMdlOffset macro
-author: windows-driver-content
 description: The NdisQueryMdlOffset macro retrieves the offset within a physical page at which a given MDL buffer begins and the length of the buffer.
 ms.assetid: d6f23e9c-5015-4087-b7a2-badee00bdafa
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - NdisQueryMdlOffset macro Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -23,9 +18,9 @@ Syntax
 
 ```ManagedCPlusPlus
 VOID NdisQueryMdlOffset(
-    _Mdl,
-    _Offset,
-    _Length
+    _Mdl,
+    _Offset,
+    _Length
 );
 ```
 
@@ -78,7 +73,7 @@ Requirements
 </tr>
 <tr class="odd">
 <td><p>DDI compliance rules</p></td>
-<td>[<strong>Irql_NetBuffer_Function</strong>](https://msdn.microsoft.com/library/windows/hardware/ff547985)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/ff547985" data-raw-source="[&lt;strong&gt;Irql_NetBuffer_Function&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff547985)"><strong>Irql_NetBuffer_Function</strong></a></td>
 </tr>
 </tbody>
 </table>
@@ -88,9 +83,9 @@ Requirements
 
 [**NdisQueryBufferOffset**](https://msdn.microsoft.com/library/windows/hardware/ff554411)
 
- 
+ 
 
- 
+ 
 
 
 

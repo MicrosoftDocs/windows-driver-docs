@@ -1,12 +1,7 @@
 ---
 title: IRP_MJ_SET_INFORMATION
-author: windows-driver-content
 description: Device drivers can optionally handle an IRP_MJ_SET_INFORMATION request.
-ms.author: windowsdriverdev
 ms.date: 08/12/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.assetid: 1bcca676-2926-4d0f-9c0f-c6ea56481153
 keywords:
  - IRP_MJ_SET_INFORMATION Kernel-Mode Driver Architecture
@@ -65,9 +60,9 @@ Requirements
 
 [**ZwSetInformationFile**](https://msdn.microsoft.com/library/windows/hardware/ff567096)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -7,11 +7,7 @@ keywords:
 - multipoint calls WDK CoNDIS
 - dropping party from multipoint calls
 - removing party from multipoint calls
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -45,9 +41,9 @@ The next figure shows the client of an MCM driver requesting to drop a party fro
 
 The call to **Ndis(M)CmDropPartyComplete** causes NDIS to call the client's [**ProtocolClDropPartyComplete**](https://msdn.microsoft.com/library/windows/hardware/ff570227) function. If the client is in the process of tearing down a multipoint VC that it created, *ProtocolClDropPartyComplete* can call **NdisClDropParty** with any valid *NdisPartyHandle* to one of the remaining parties on the client's active multipoint VC. If only one party remains on its multipoint VC, the client should drop that party by passing its *NdisPartyHandle* to **NdisClCloseCall**(see [Client-Initiated Request to Close a Call](client-initiated-request-to-close-a-call.md)).
 
- 
+ 
 
- 
+ 
 
 
 

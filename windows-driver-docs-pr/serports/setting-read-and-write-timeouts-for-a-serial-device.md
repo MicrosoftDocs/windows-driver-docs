@@ -1,6 +1,5 @@
 ---
 title: Setting Read and Write Timeouts for a Serial Device
-author: windows-driver-content
 description: Setting Read and Write Timeouts for a Serial Device
 ms.assetid: ed5b80a9-93cb-4e3f-9038-e715be35f206
 keywords:
@@ -9,11 +8,7 @@ keywords:
 - serial devices WDK , time-outs
 - read time-outs WDK serial devices
 - write time-outs WDK serial devices
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,9 +30,9 @@ For more information about the read and write time-outs, see the following:
 
 -   The [**SetCommTimeouts**](https://msdn.microsoft.com/library/windows/desktop/aa363437) function and the [**COMMTIMEOUTS**](https://msdn.microsoft.com/library/windows/desktop/aa363190) structure that are supported by the Windows Base Services in the Windows SDK.
 
- 
+ 
 
- 
+ 
 
 
 

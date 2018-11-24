@@ -2,11 +2,7 @@
 title: Applications
 description: Applications
 ms.assetid: 40d73650-556e-4221-a679-0b8e9ead4df5
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -46,13 +42,13 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Application](application-softwareinfo-schema.md)</p></td>
+<td><p><a href="application-softwareinfo-schema.md" data-raw-source="[Application](application-softwareinfo-schema.md)">Application</a></p></td>
 <td><p>Specifies the app that will be downloaded when the operator’s Mobile Broadband hardware is detected on the PC.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Parent_elements"></span><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Parent elements
 
@@ -70,13 +66,13 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Package](package.md)</p></td>
+<td><p><a href="package.md" data-raw-source="[Package](package.md)">Package</a></p></td>
 <td><p>Specifies the app that will be downloaded when the operator’s Mobile Broadband hardware is detected on the PC.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="XSD"></span><span id="xsd"></span>XSD
 
@@ -97,9 +93,9 @@ There are no attributes.
 
 The Applications element is optional.
 
- 
+ 
 
- 
+ 
 
 
 

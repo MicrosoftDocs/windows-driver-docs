@@ -3,11 +3,7 @@ title: View WinDbg Command Line
 description: View WinDbg Command Line
 ms.assetid: 8127d6c9-ad63-47cb-8975-b2671d896e44
 keywords: ["View WinDbg Command Line"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,9 +17,9 @@ Click **WinDbg Command Line** on the **View** menu to display the command that w
 
 The command appears in a small message window. Click **OK** to close this window.
 
- 
+ 
 
- 
+ 
 
 
 

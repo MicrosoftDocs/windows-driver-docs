@@ -12,6 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # GUID_AVC_CLASS
@@ -42,7 +43,7 @@ The GUID_AVC_CLASS [device interface class](https://msdn.microsoft.com/library/w
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -76,9 +77,9 @@ Requirements
 
 [**GUID_VIRTUAL_AVC_CLASS**](guid-virtual-avc-class.md)
 
- 
+ 
 
- 
+ 
 
 
 

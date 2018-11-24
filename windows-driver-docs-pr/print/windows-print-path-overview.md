@@ -1,6 +1,5 @@
 ---
 title: Windows Print Path Overview
-author: windows-driver-content
 description: Windows Print Path Overview
 ms.assetid: c06e122b-a4d8-4b3a-9db0-0bc8f2728177
 keywords:
@@ -8,18 +7,13 @@ keywords:
 - print paths WDK XPSDrv
 - GDI print path WDK XPSDrv
 - XPS print path WDK XPSDrv
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # Windows Print Path Overview
 
-
-Windows Vista and later versions of Windows provide two primary print paths and two additional conversion paths. The two primary print paths are:
+Windows provides two primary print paths and two additional conversion paths. The two primary print paths are:
 
 -   GDI print path (similar to the Windows Server 2003 print path). This path is also called the Win32 path and originates in a Win32 application by using the GDI graphic API.
 
@@ -40,11 +34,3 @@ The following illustration shows the different print path and conversion options
 For more information about configuring the filter pipeline service, see [Filter Pipeline Configuration File](filter-pipeline-configuration-file.md).
 
 For more information about configuring the Version 3 Print Driver for Windows Vista and later versions of Windows, see [Version 3 XPSDrv Print Driver Components](version-3-xpsdrv-print-driver-components.md).
-
- 
-
- 
-
-
-
-

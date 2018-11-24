@@ -4,11 +4,7 @@ description: COPP Video Miniport Driver Command Template Code
 ms.assetid: a772fc78-0024-4834-8ff3-a1cf6672b316
 keywords:
 - commands WDK COPP
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,7 +18,7 @@ This section applies only to Windows Server 2003 SP1 and later, and Windows XP S
 
 Use the following example code to perform an operation on the COPP DirectX VA device object.
 
-```
+```cpp
 VP_STATUS
 IoctlCOPPCommand(
     PHW_DEVICE_EXTENSION pHwDeviceExtension,
@@ -37,9 +33,9 @@ IoctlCOPPCommand(
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,6 +3,7 @@ title: SetTunnelModeOuterAddress
 description: SetTunnelModeOuterAddress
 ms.assetid: 0f67a15c-5077-460a-923c-8d86cc79a1bb
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # SetTunnelModeOuterAddress
@@ -18,9 +19,9 @@ The initiator HBA or HBA miniport driver should maintain the default tunnel-mode
 
 Miniport drivers that implement the MSiSCSI\_SecurityConfigOperations WMI class must support **SetTunnelModeOuterAddress**.
 
- 
+ 
 
- 
+ 
 
 
 

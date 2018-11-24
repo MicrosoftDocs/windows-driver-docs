@@ -11,11 +11,7 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,7 +38,7 @@ An application can read WIA\_IPA\_BUFFER\_SIZE to determine the driver-specified
 
 **Note**   The value that the WIA\_IPA\_BUFFER\_SIZE property contains is the minimum amount of data that an application can request at any given time. The larger the buffer size, the larger the requests to the device will be. This larger buffer size can make the device seem slow and unresponsive, can slow the overall computer performance, and can consume excessive resources. Buffer sizes that are too small can slow performance of the data transfer by requiring many smaller requests. Choose a reasonable buffer size by considering the typical size of a data request to your device, the number of requests, and the size of those requests.
 
- 
+ 
 
 Requirements
 ------------
@@ -64,14 +60,14 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**WIA\_IPA\_MIN\_BUFFER\_SIZE**](wia-ipa-min-buffer-size.md)
 
- 
+ 
 
- 
+ 
 
 
 

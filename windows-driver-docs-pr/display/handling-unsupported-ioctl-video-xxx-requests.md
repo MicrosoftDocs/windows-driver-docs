@@ -8,11 +8,7 @@ keywords:
 - unsupported IOCTL_VIDEO_XXX requests WDK video miniport
 - IOCTL_VIDEO_XXX requests WDK video miniport
 - I/O WDK video miniport
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,9 +28,9 @@ Every [*HwVidStartIO*](https://msdn.microsoft.com/library/windows/hardware/ff567
 
 See the [**VIDEO\_REQUEST\_PACKET**](https://msdn.microsoft.com/library/windows/hardware/ff570547) and [**STATUS\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff569732) structures for more details.
 
- 
+ 
 
- 
+ 
 
 
 

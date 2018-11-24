@@ -3,11 +3,7 @@ title: wmitrace.setprefix
 description: The wmitrace.setprefix extension specifies the trace message prefix that is prepended to the trace messages from this session. 
 ms.assetid: 8712af44-f231-48f6-97ac-56a1d737cd6b
 keywords: ["wmitrace.setprefix Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!wmitrace.setprefix** extension specifies the trace message prefix that is prepended to the trace messages from this session. This extension allows you to change the prefix during the debugging session.
 
-```
+```dbgcmd
 !wmitrace.setprefix [+] PrefixVariables 
 !wmitrace.setprefix 
 ```
@@ -137,7 +133,7 @@ Each %n variable represents a parameter that is described in the following table
 </tbody>
 </table>
 
- 
+ 
 
 The symbol within exclamation marks is a conversion character that specifies the format and precision of the variable. For example, %8!04X! specifies the process ID formatted as a four-digit, unsigned, hexadecimal number.
 
@@ -159,7 +155,7 @@ This extension command sets the trace message prefix to the following format:
 
 As a result, the trace messages are prepended with the specified information in the specified format. The following code example is taken from a trace of the Tracedrv sample driver in the WDK.
 
-```
+```dbgcmd
 tracedrv_c258: TracedrvDispatchDeviceControl: 0af4.0c64: 07/25/2003-13:55:39.998:  IOCTL = 1
 ```
 
@@ -176,13 +172,13 @@ The *trace message prefix* consists of data about the trace message that is prep
 
 The default trace message prefix is as follows:
 
-```
+```dbgcmd
 [%9!d!]%8!04X!.%3!04X!::%4!s! [%1!s!]
 ```
 
 and produces the following prefix:
 
-```
+```dbgcmd
 [CPUNumber]ProcessID.ThreadID::SystemTime [ProviderDirectory] 
 ```
 
@@ -192,9 +188,9 @@ The prefix that you set by using this extension command affects only the debugge
 
 This extension is only useful during WPP software tracing, and earlier (legacy) methods of Event Tracing for Windows. Trace events that are produced by other manifested providers do not use trace message format (TMF) files, and therefore this extension does not affect them.
 
- 
+ 
 
- 
+ 
 
 
 

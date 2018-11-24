@@ -1,6 +1,5 @@
 ---
 title: Controlling Image Quality
-author: windows-driver-content
 description: Controlling Image Quality
 ms.assetid: b6d25178-6726-4ce0-ab34-efeedc618044
 keywords:
@@ -13,11 +12,7 @@ keywords:
 - print jobs WDK , image quality
 - formats WDK image quality
 - Unidrv WDK print
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -39,10 +34,10 @@ The options that Unidrv should select when a radio button is pressed are specifi
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>*<strong>DraftQualitySettings</strong></p></td>
+<td><p><em><strong>DraftQualitySettings</strong></p></td>
 </tr>
 <tr class="even">
-<td><p>*<strong>BetterQualitySettings</strong></p></td>
+<td><p></em><strong>BetterQualitySettings</strong></p></td>
 </tr>
 <tr class="odd">
 <td><p>*<strong>BestQualitySettings</strong></p></td>
@@ -50,7 +45,7 @@ The options that Unidrv should select when a radio button is pressed are specifi
 </tbody>
 </table>
 
- 
+ 
 
 Each of these entries is associated with one of the radio buttons, and each entry accepts a list of options. When a user selects the corresponding button, Unidrv goes through the list and sets the specified options.
 
@@ -73,13 +68,13 @@ An additional, required entry specifies the default image quality. The format is
 </tbody>
 </table>
 
- 
+ 
 
 where *DefaultQuality* is one of `DRAFTQUALITY`, `BETTERQUALITY`, or `BESTQUALITY`.
 
 These GPD file entries can be associated with any option of the `ColorMode` and `MediaType` features. Typically, they are placed in [conditional statements](conditional-statements.md), as illustrated in the following example.
 
-```
+```cpp
 *switch: ColorMode {
     *case: Mono {
         *BestQualitySettings: LIST(ColorMode.Mono,
@@ -109,7 +104,7 @@ As illustrated in the example, a good strategy is to specify one \***Case** entr
 
 Following is a more complex example, which ties image quality to both color mode and media type:
 
-```
+```cpp
 *switch: Colormode {
     *case: Mono {
     *switch: MediaType {
@@ -160,9 +155,9 @@ When using the quality setting GPD entries, the following rules must be observed
 
 If a feature is included in a conditional statement that specifies quality settings, the parser sets the feature's \*UpdateQualityMacro? attribute to **TRUE**. (See [Feature Attributes](feature-attributes.md).)
 
- 
+ 
 
- 
+ 
 
 
 

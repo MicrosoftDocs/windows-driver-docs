@@ -3,11 +3,7 @@ title: rm (Register Mask)
 description: The rm command modifies or displays the register display mask. This mask controls how registers are displayed by the r (Registers) command.
 ms.assetid: b3203bf3-b614-490b-8cbd-6abb291a801a
 keywords: ["rm (Register Mask) Windows Debugging"]
-ms.author: domars
 ms.date: 07/12/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **rm** command modifies or displays the register display mask. This mask controls how registers are displayed by the [**r (Registers)**](r--registers-.md) command.
 
-```
+```dbgcmd
 rm 
 rm ? 
 rm Mask 
@@ -60,7 +56,7 @@ Specifies the mask to use when the debugger displays the registers. *Mask* is a 
 </tbody>
 </table>
 
- 
+
 
 Remarks
 -------
@@ -165,13 +161,13 @@ The following *Mask* bits are supported for an x86-based processor or an x64-bas
 </tr>
 </tbody>
 </table>
- 
+
 
 ## Examples
 
 Enable the integer state and segment registers.
 
-```
+```dbgcmd
 0: kd> rm 0x00a
 0: kd> rm
 Register output mask is a:
@@ -182,7 +178,7 @@ Register output mask is a:
 
 Enable 0x1000 (Displays the AVX-512 zmm0-zmm31 registers in floating point format).
 
-```
+```dbgcmd
 0: kd> rm 0x100a
 0: kd> rm
 Register output mask is 100a:
@@ -194,7 +190,7 @@ Register output mask is 100a:
 
 Enable mask 0x2000 (Displays the  AVX-512 zmm00-zmm31 registers in integer format).
 
-```
+```dbgcmd
 0: kd> rm 0x200a
 0: kd> rm
 Register output mask is 200a:
@@ -206,7 +202,7 @@ Register output mask is 200a:
 
 Enable all AVX-512 register masks:
 
-```
+```dbgcmd
 0: kd> rm 0x700a
 0: kd> rm
 Register output mask is 700a:
@@ -219,14 +215,13 @@ Register output mask is 700a:
 
 If you try and set a register mask on hardware that does not support it, the invalid bits of the register mask will be ignored.
 
-```
+```dbgcmd
 kd> rm 0x100a
 Ignored invalid bits 1000
 kd> rm
 Register output mask is a:
       2 - Integer state (64-bit)
        8 - Segment registers
-
 ```
 
 

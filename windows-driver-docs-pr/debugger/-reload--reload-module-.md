@@ -3,11 +3,7 @@ title: .reload (Reload Module)
 description: The .reload command deletes all symbol information for the specified module and reloads these symbols as needed. In some cases, this command also reloads or unloads the module itself.
 ms.assetid: 750eb1a2-7af9-4f2d-81ca-9ea0fb157961
 keywords: ["Reload Module (.reload) command", "symbols, Reload Module (.reload) command", ".reload (Reload Module) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **.reload** command deletes all symbol information for the specified module and reloads these symbols as needed. In some cases, this command also reloads or unloads the module itself.
 
-```
+```dbgcmd
 .reload [Options] [Module[=Address[,Size[,Timestamp]]]] 
 .reload -?
 ```
@@ -87,7 +83,7 @@ Specifies the timestamp of the module image. In many situations, the debugger kn
 
 **Note**   There must be no blank space between the *Address*, *Size*, and *Timestamp* parameters.
 
- 
+ 
 
 <span id="_______-_______"></span> **-?**   
 Displays a short help text for this command.
@@ -115,7 +111,7 @@ Displays a short help text for this command.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -134,7 +130,7 @@ If the image header is incorrect for some reason, such as the module being unloa
 
 The **.reload /u** command performs a broad search. The debugger first tries to match *Module* with an exact module name, regardless of path. If the debugger cannot find this match, *Module* is treated as the name of the loaded image. For example, if the HAL that resides in memory has the module name of halacpi.dll, both of the following commands unload its symbols.
 
-```
+```dbgcmd
 kd> .reload /u halacpi.dll
 
 kd> .reload /u hal
@@ -142,16 +138,16 @@ kd> .reload /u hal
 
 If you are performing user-mode debugging and want to load a module that is not part of the target application's module list, you must include the **/s** option, as the following example shows.
 
-```
+```dbgcmd
 0:000> .reload /u ntdll.dll
 Unloaded ntdll.dll
 
 0:000> .reload /s /f ntdll.dll
 ```
 
- 
+ 
 
- 
+ 
 
 
 

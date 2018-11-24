@@ -5,11 +5,7 @@ ms.assetid: a2d71cae-aed2-4c23-9ad2-5c32d4ab2294
 keywords:
 - NDIS 6.20 WDK , backward compatibility
 - backward compatibility WDK NDIS 6.20
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ NDIS 6.20 supports updated versions of the features that were added for NDIS 6.1
 
 **Note**  The NDIS 6.20 interface supports more than 64 processors. Previous NDIS versions are limited to no more than 64 processors (32 in x86 versions of the operating system).
 
- 
+ 
 
 To remain backward compatible with older NDIS versions, drivers that have not been updated to support more than 64 processors default to processor group zero. For more information about processor groups, see the Kernel-Mode Driver Architecture Design documentation for processor groups.
 
@@ -47,9 +43,9 @@ NDIS WAN drivers will not be supported in Microsoft Windows versions after Windo
 
 ATM and Token Ring drivers will not be supported in Microsoft Windows versions after Windows 7.
 
- 
+ 
 
- 
+ 
 
 
 

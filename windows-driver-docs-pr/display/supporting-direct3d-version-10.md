@@ -2,11 +2,7 @@
 title: Supporting Direct3D Version 10
 description: Supporting Direct3D Version 10
 ms.assetid: 2f7ff2a4-25ac-4e82-9b44-f64a8b814601
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +29,9 @@ The following sections describe the new features of Direct3D version 10 and how 
 
 [DirectX Graphics Infrastructure DDI](directx-graphics-infrastructure-ddi.md)
 
- 
+ 
 
- 
+ 
 
 
 

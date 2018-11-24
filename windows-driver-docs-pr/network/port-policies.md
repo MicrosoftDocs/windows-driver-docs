@@ -2,11 +2,7 @@
 title: Port Policies
 description: Port Policies
 ms.assetid: F23B4A2F-4E33-4A8F-AF57-E4805DE48C15
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,9 +15,9 @@ This section includes the following topics that describe custom properties for H
 
 [Custom Port Property Definition and Registration](custom-port-property-definition-and-registration.md)
 
- 
+ 
 
- 
+ 
 
 
 

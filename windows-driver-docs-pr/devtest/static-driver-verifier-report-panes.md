@@ -2,11 +2,7 @@
 title: Static Driver Verifier Report Panes
 description: Static Driver Verifier Report Panes
 ms.assetid: 12487bd0-70f6-4d97-b1a5-c0e5ea055698
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,9 +21,9 @@ Together, the **Trace Tree** pane, the **Source Code** pane, and the **State** p
 
 You can open the Defect Viewer only when SDV has detected a "defect" (rule violation).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -10,6 +10,7 @@ api_name:
 api_type:
 - COM
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # RemoveVirtualPort method
@@ -22,8 +23,8 @@ Syntax
 
 ```ManagedCPlusPlus
 void RemoveVirtualPort(
-   [in] uint8   WWPN[8],
-   [out] uint16 Status
+   [in] uint8   WWPN[8],
+   [out] uint16 Status
 );
 ```
 
@@ -46,9 +47,9 @@ Not applicable to WMI methods.
 
 [NPIV Status Codes](https://msdn.microsoft.com/library/windows/hardware/dn386176)
 
- 
+ 
 
- 
+ 
 
 
 

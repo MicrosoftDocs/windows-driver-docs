@@ -12,11 +12,7 @@ keywords:
 - data buffers WDK networking
 - network data WDK , structures
 - data WDK networking , structures
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +26,9 @@ In NDIS 6.0 and later versions, a higher layer driver allocates [**NET\_BUFFER**
 
 For more information about the structure of network data buffers in NDIS drivers, see [NET\_BUFFER Architecture](net-buffer-architecture.md).
 
- 
+ 
 
- 
+ 
 
 
 

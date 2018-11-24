@@ -5,11 +5,7 @@ ms.assetid: 03da539d-9613-4454-8f79-514e76767af6
 keywords:
 - Remote NDIS WDK networking , architecture
 - Remote NDIS WDK networking , USB transport
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -62,9 +58,9 @@ This section includes the following additional topics:
 
 [USB class drivers included in Windows](https://msdn.microsoft.com/library/windows/hardware/ff538820)
 
- 
+ 
 
- 
+ 
 
 
 

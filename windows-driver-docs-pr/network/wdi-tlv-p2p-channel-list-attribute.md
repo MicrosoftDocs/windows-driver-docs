@@ -1,13 +1,8 @@
 ---
 title: WDI_TLV_P2P_CHANNEL_LIST_ATTRIBUTE
-author: windows-driver-content
 description: WDI_TLV_P2P_CHANNEL_LIST_ATTRIBUTE is a TLV that contains channel list attributes.
 ms.assetid: 2378AC49-1530-45E2-A7C8-FEAF5E6CDBE5
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_CHANNEL_LIST_ATTRIBUTE Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -36,7 +31,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | [**WDI\_TLV\_COUNTRY\_REGION\_LIST**](wdi-tlv-country-region-list.md)        |                                |          | The country/region list. |
 | [**WDI\_TLV\_P2P\_CHANNEL\_ENTRY\_LIST**](wdi-tlv-p2p-channel-entry-list.md) | X                              |          | The list of channels.    |
 
- 
+ 
 
 Requirements
 ------------
@@ -62,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

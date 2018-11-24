@@ -1,14 +1,9 @@
 ---
 title: Hot Replace of Partition Units
-author: windows-driver-content
 description: Hot Replace of Partition Units
 ms.assetid: 6d50dc7d-6c3b-41e5-b6eb-aead9833dd1e
 keywords: ["dynamic hardware partitioning WDK , hot replace", "hardware partitioning WDK dynamic , hot replace", "partitioning WDK dynamic hardware , hot replace", "hot replace WDK dynamic hardware partitioning"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,9 +20,9 @@ For more information about how to implement support for power management in a de
 
 A device driver must not bind itself to a uniquely identifiable instance of system hardware such as a specific processor. Otherwise, the driver might fail if the partition unit that contains that hardware is replaced in the hardware partition.
 
- 
+ 
 
- 
+ 
 
 
 

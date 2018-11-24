@@ -1,5 +1,5 @@
 ---
-title: IRP\_MJ\_SHUTDOWN
+title: IRP_MJ_SHUTDOWN
 description: IRP\_MJ\_SHUTDOWN
 ms.assetid: 4f7ba339-87f5-4011-8981-de6c31a9239a
 keywords: ["IRP_MJ_SHUTDOWN Installable File System Drivers"]
@@ -9,11 +9,7 @@ api_name:
 - IRP_MJ_SHUTDOWN
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -62,9 +58,9 @@ Specifies IRP\_MJ\_SET\_SHUTDOWN.
 
 [**IRP\_MJ\_SHUTDOWN (WDK Kernel Reference)**](https://msdn.microsoft.com/library/windows/hardware/ff550807)
 
- 
+ 
 
- 
+ 
 
 
 

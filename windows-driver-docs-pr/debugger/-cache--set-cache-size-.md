@@ -3,11 +3,7 @@ title: .cache (Set Cache Size)
 description: The .cache command sets the size of the cache used to hold data obtained from the target. Also sets a number of cache and memory options.
 ms.assetid: 638cb2e6-b333-4311-967c-d86c2e93b4ec
 keywords: [".cache (Set Cache Size) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **.cache** command sets the size of the cache used to hold data obtained from the target. Also sets a number of cache and memory options.
 
-```
+```dbgsyntax
 .cache Size 
 .cache Option 
 .cache 
@@ -57,7 +53,7 @@ All user-mode virtual addresses will be translated into physical addresses befor
 
 **Note**   You must activate **forcedecodeuser** (or **forcedecodeptes**) before using [**.thread (Set Register Context)**](-thread--set-register-context-.md), [**.context (Set User-Mode Address Context)**](-context--set-user-mode-address-context-.md), [**.process (Set Process Context)**](-process--set-process-context-.md), or [**!session**](-session.md) during live debugging. If you use the **/p** option with **.thread** and **.process**, the **forcedecodeuser** option is automatically set. In any other case, you will need to use the **.cache forcedecodeuser** command explicitly.
 
- 
+ 
 
 <span id="noforcedecodeptes"></span><span id="NOFORCEDECODEPTES"></span>**noforcedecodeptes**  
 Turns off the **forcedecodeptes** and **forcedecodeuser** options. (This is the default setting.)
@@ -94,7 +90,7 @@ Deletes a 4096-byte block of the cache, beginning at *Address*.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -103,9 +99,9 @@ If **.cache** is used with no arguments, the current cache size, status, and opt
 
 The **.cache forcedecodeuser** or **.cache forcedecodeptes** option will only last as long as the debugger remains broken into the target computer. If any stepping or execution of the target takes place, the **noforcedecodeptes** state will again take effect. This prevents the debugger from interfering with execution or a reboot in an unproductive manner.
 
- 
+ 
 
- 
+ 
 
 
 

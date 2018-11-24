@@ -3,11 +3,7 @@ title: PROPSETID\_VIDCAP\_CAMERACONTROL
 description: PROPSETID\_VIDCAP\_CAMERACONTROL
 ms.assetid: 8899a474-fa6f-4d5c-bd68-2433428bb5c5
 keywords: ["KSPROPERTY_VIDCAP_CAMERACONTROL"]
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -82,9 +78,9 @@ Starting with Windows 8, these additional properties are supported for user-mod
 
 [**KSPROPERTY\_CAMERACONTROL\_VIDEO\_STABILIZATION\_MODE\_PROPERTY**](ksproperty-cameracontrol-video-stabilization-mode-property.md)
 
- 
+ 
 
- 
+ 
 
 
 

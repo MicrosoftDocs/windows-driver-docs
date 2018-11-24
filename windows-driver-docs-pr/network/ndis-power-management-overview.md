@@ -2,11 +2,7 @@
 title: NDIS Power Management Overview
 description: NDIS Power Management Overview
 ms.assetid: 8ae3803f-c3e4-4499-9e61-678f4ab61fbc
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -40,9 +36,9 @@ This section includes the following topics:
 
 [Protocol Offloads for NDIS Power Management](protocol-offloads-for-ndis-power-management.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,11 +3,7 @@ title: rpcexts.getdbgcell
 description: The rpcexts.getdbgcell extension displays RPC state information for the specified cell.
 ms.assetid: 28be074f-6756-4610-aa86-1162b83fd0a7
 keywords: ["rpcexts.getdbgcell Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!rpcexts.getdbgcell** extension displays RPC state information for the specified cell.
 
-```
+```dbgcmd
 !rpcexts.getdbgcell ProcessID CellID1.CellID2 
 !rpcexts.getdbgcell -?
 ```
@@ -58,7 +54,7 @@ Displays some brief Help text for this extension in the Command Prompt window.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -71,7 +67,7 @@ This extension can only be used with CDB or with user-mode WinDbg.
 
 Here is an example:
 
-```
+```dbgcmd
 0:002> !rpcexts.getdbgcell c4 0.19
 Getting cell info ...
 Call
@@ -87,9 +83,9 @@ Caller (PID/TID) is: d0.1ac (208.428)
 
 For a similar example using the DbgRpc tool, see [Get RPC Cell Information](get-rpc-cell-information.md).
 
- 
+ 
 
- 
+ 
 
 
 

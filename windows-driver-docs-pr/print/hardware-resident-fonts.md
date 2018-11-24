@@ -1,16 +1,11 @@
 ---
 title: Hardware-Resident Fonts
-author: windows-driver-content
 description: Hardware-Resident Fonts
 ms.assetid: 359735c2-bfa3-4c32-82a5-1d455c4eacb1
 keywords:
 - printer font descriptions WDK Unidrv , hardware-resident fonts
 - hardware-resident fonts WDK Unidrv
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -43,13 +38,13 @@ The format of the \*DeviceFonts entry is as follows:
 </tbody>
 </table>
 
- 
+ 
 
 where *FontResourceID* is the RC\_UFM resource identifier associated with a .ufm file, or the RC\_FONT resource identifier associated with an .ifi file.
 
 Following is an example:
 
-```
+```cpp
 *% Assume that RC_FONT_xxx ids are references to 
 *% value macros defined by the GPD file creator.
 *DeviceFonts: LIST(=RC_FONT_COURIER10, =RC_FONT_ARIALR,
@@ -61,9 +56,9 @@ Following is an example:
 
 You can include several \*DeviceFonts entries in [Unidrv minidrivers](unidrv-minidrivers.md). The GPD parser concatenates multiple entries and makes all listed fonts available for all configurations of the printer's features. If you need to specify that some fonts are only available with certain configurations, you can include \*DeviceFonts entries within [conditional statements](conditional-statements.md).
 
- 
+ 
 
- 
+ 
 
 
 

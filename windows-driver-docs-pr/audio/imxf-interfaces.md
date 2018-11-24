@@ -7,11 +7,7 @@ keywords:
 - MIDI transport WDK audio
 - wave sinks WDK audio , MIDI transport
 - synthesizers WDK audio , MIDI transport
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -51,9 +47,9 @@ The [IAllocatorMXF](https://msdn.microsoft.com/library/windows/hardware/ff536491
 
 For more information about the use of these interfaces, see [Allocator](allocator.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -8,11 +8,7 @@ keywords:
 - classifyFn
 - classify callouts WDK Windows Filtering Platform
 - classify callouts WDK Windows Filtering Platform , about classify callouts
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -51,9 +47,9 @@ For callouts that process data at a filtering layer that supports data flows, th
 
 WFP supports asynchronous processing of the *classifyFn* callout function. For more information about asynchronous processing, see [Processing Classify Callouts Asynchronously](processing-classify-callouts-asynchronously.md).
 
- 
+ 
 
- 
+ 
 
 
 

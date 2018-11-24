@@ -11,11 +11,7 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -81,7 +77,7 @@ The following table describes the valid values for the **WIA\_IPS\_SUPPORTED\_PA
 </tbody>
 </table>
 
- 
+ 
 
 The WIA minidriver can extend this list with additional custom values defined as WIA\_PATCH\_CODE\_CUSTOM\_BASE + N, where N is a positive integer.
 
@@ -103,9 +99,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

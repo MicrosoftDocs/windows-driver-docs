@@ -1,16 +1,11 @@
 ---
 title: PSHED Plug-In Guidelines
-author: windows-driver-content
 description: PSHED Plug-In Guidelines
 ms.assetid: 2d17ebef-9474-4825-be09-c924ebd60c44
 keywords:
 - platform-specific hardware error driver plug-ins WDK WHEA , guidelines
 - PSHED plug-ins WDK WHEA , guidelines
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,11 +24,11 @@ The following is a list of guidelines that must be followed by PSHED plug-ins.
 
 **Note**   The platform firmware should not assume absolute control over all machine resources, as is generally the case for system management mode error handling code, because in a virtualized or partitioned system, the hardware might be partitioned in such a way that this assumption is false.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

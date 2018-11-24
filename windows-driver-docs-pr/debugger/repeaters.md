@@ -3,11 +3,7 @@ title: Repeaters
 description: Repeaters
 ms.assetid: 10f4f033-f6c1-4b4f-a35f-eadb4e15686d
 keywords: ["remote debugging through a repeater", "repeater", "repeater, overview", "DbEngPrx", "DbEngPrx, overview"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +27,9 @@ This section includes:
 
 [Repeater Examples](repeater-examples.md)
 
- 
+ 
 
- 
+ 
 
 
 

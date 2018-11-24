@@ -9,11 +9,7 @@ api_name:
 - wscn ConditionId
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **ConditionId** element uniquely identifies the device condition th
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ConditionId>
   text
 </wscn:ConditionId>
@@ -60,7 +56,7 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>DeviceConditionCleared</strong>](deviceconditioncleared.md)</p></td>
+<td><p><a href="deviceconditioncleared.md" data-raw-source="[&lt;strong&gt;DeviceConditionCleared&lt;/strong&gt;](deviceconditioncleared.md)"><strong>DeviceConditionCleared</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -70,7 +66,7 @@ Remarks
 
 The **ConditionId** element must be the **Id** attribute of a **DeviceCondition** element that the WSD Scan Service previously reported through [**ScannerStatusConditionEvent**](scannerstatusconditionevent.md).
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**DeviceCondition**](devicecondition.md)
@@ -79,9 +75,9 @@ The **ConditionId** element must be the **Id** attribute of a **DeviceCondition*
 
 [**ScannerStatusConditionEvent**](scannerstatusconditionevent.md)
 
- 
+ 
 
- 
+ 
 
 
 

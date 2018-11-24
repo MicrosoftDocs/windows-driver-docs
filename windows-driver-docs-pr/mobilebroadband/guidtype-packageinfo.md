@@ -2,11 +2,7 @@
 title: GUIDType (PackageInfo)
 description: GUIDType (PackageInfo)
 ms.assetid: 3f88df5a-2a17-4006-ad3b-aab9a12cbcb9
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,9 +32,9 @@ The GUIDType simple type is a **xs:string** that is restricted by the following 
 
 The GUIDType XML simple type specifies a GUID that uniquely identifies components within the device metadata package, such as the device's [ExperienceID](experienceid.md), [LanguageNeutralIdentifier](languageneutralidentifier.md), and [ModelID](modelid.md) values.
 
- 
+ 
 
- 
+ 
 
 
 

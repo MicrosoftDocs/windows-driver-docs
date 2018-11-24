@@ -4,11 +4,7 @@ description: Review and save package in the Mobile Broadband Metadata Authoring 
 ms.assetid: D719BB8A-9629-4B67-B2A2-4324D0318117
 keywords:
 - Review and save package in the Mobile Broadband Metadata Authoring Wizard
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +29,9 @@ After completing all of the tabs in the wizard, review and save your package.
 3.  If you want to test the package on your PC, select **Copy packages to your system's local metadata store**.
 4.  Click **Finish**.
 
- 
+ 
 
- 
+ 
 
 
 

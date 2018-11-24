@@ -9,11 +9,7 @@ keywords:
 - WDM lower edge WDK networking
 - lower edge of NDIS miniport drivers WDK networking , about WDM lower edge
 - WDM lower edge WDK networking , about WDM lower edge
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -49,9 +45,9 @@ Other vendor-supplied USB client drivers.
 <a href="" id="usb-driver-stack"></a>USB Driver Stack  
 Driver stack for USB devices. For more information, see [USB Driver Stack Architecture](https://msdn.microsoft.com/library/windows/hardware/hh406256).
 
- 
+ 
 
- 
+ 
 
 
 

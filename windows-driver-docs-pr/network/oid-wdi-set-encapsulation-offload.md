@@ -1,13 +1,8 @@
 ---
 title: OID_WDI_SET_ENCAPSULATION_OFFLOAD
-author: windows-driver-content
 description: OID_WDI_SET_ENCAPSULATION_OFFLOAD is sent by the OS to indicate that the lower edge driver (LE) should start doing the TCP Checksum/LSO offloads.
 ms.assetid: 1095DBE0-2C6B-40F4-8E01-39F4BBA2FDBC
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - OID_WDI_SET_ENCAPSULATION_OFFLOAD Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -22,7 +17,7 @@ OID\_WDI\_SET\_ENCAPSULATION\_OFFLOAD is sent by the OS to indicate that the low
 |-------|--------------------------|---------------------------------|
 | Port  | Yes                      | 1                               |
 
- 
+ 
 
 When this message is received, the LE should indicate its current encapsulation offload configuration with [NDIS\_STATUS\_WDI\_INDICATION\_TASK\_OFFLOAD\_CURRENT\_CONFIG](ndis-status-wdi-indication-task-offload-current-config.md). For receive operations, the LE should not start the checksum offload until after it receives the OID\_WDI\_SET\_ENCAPSULATION\_OFFLOAD message.
 
@@ -34,7 +29,7 @@ When this message is received, the LE should indicate its current encapsulation 
 | [**WDI\_TLV\_SET\_ENCAPSULATION\_OFFLOAD\_V4\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/dn898058) |                                |          | Specifies if IPv4 offloading should be started. |
 | [**WDI\_TLV\_SET\_ENCAPSULATION\_OFFLOAD\_V6\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/dn898059) |                                |          | Specifies if IPv6 offloading should be started. |
 
- 
+ 
 
 ## Set property results
 
@@ -64,9 +59,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

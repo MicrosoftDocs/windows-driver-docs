@@ -1,16 +1,11 @@
 ---
 title: Checking for Other Special Cases on IRP_MJ_CREATE
-author: windows-driver-content
 description: Checking for Other Special Cases on IRP_MJ_CREATE
 ms.assetid: e6af44c2-fd39-469b-8530-cf88edb329f7
 keywords:
 - IRP_MJ_CREATE
 - security checks WDK file systems , IRP_MJ_CREATE
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,7 +33,7 @@ The cases you may wish to consider in your file system:
 
 The following code example demonstrates the special case handling for FILE\_SUPERSEDE and FILE\_OVERWRITE, both cases where additional access is implicitly required by the caller, even if it was not requested.
 
-```
+```cpp
 {
 ULONG NewAccess = Supersede ? DELETE : FILE_WRITE_DATA;
 ACCESS_MASK AddedAccess = 0;
@@ -73,9 +68,9 @@ if (0 == (AccessState->Flags & TOKEN_HAS_RESTORE_PRIVILEGE)) {
 
 This code sample is a good example of where file system policy takes precedence. The caller did not request DELETE access or FILE\_WRITE\_DATA access, but such access is inherent in the operation being performed based upon the semantics of the file system.
 
- 
+ 
 
- 
+ 
 
 
 

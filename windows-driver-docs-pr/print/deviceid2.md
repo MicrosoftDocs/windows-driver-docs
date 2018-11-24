@@ -1,16 +1,11 @@
 ---
 title: DeviceID
-author: windows-driver-content
 description: DeviceID
 ms.assetid: 0fb02802-a7b6-4efa-b9b1-6d73059b425f
 keywords:
 - WSDMON port monitors WDK , DeviceID command
 - DeviceID
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,9 +16,9 @@ The **DeviceID** command returns the device identifier (ID) in the form of the f
 
 For more information about function discovery keys, see the Microsoft Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

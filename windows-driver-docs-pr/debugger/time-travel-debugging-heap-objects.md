@@ -1,17 +1,9 @@
 ---
 title: TTD Heap Objects
 description: This section describes the heap model objects associated with time travel debugging.
-ms.author: domars
 ms.date: 09/24/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
-
-> [!NOTE]
-> The information in this topic is preliminary. Updated information will be provided in a later release of the documentation. 
->
 
 # TTD Heap Objects
 ## Description
@@ -20,6 +12,7 @@ ms.localizationpriority: medium
 
 ## Properties
 Every heap object will have these properties.
+
 | Property | Description |
 | --- | --- |
 | Action | Describes the action that occurred. Possible values are: Alloc, ReAlloc, Free, Create, Protect, Lock, Unlock, Destroy. |
@@ -27,6 +20,7 @@ Every heap object will have these properties.
 
 ### Conditional properties
 Depending on the heap object, it may have some of the properties below.
+
 | Property | Description |
 | --- | --- |
 | Address | The address of the allocated object. |
@@ -40,6 +34,7 @@ Depending on the heap object, it may have some of the properties below.
 | MakeReadOnly | A non-zero value indicates a request to make the heap read-only; A zero value indicates the heap should be read-write. |
 
 ## Children
+
 | Object | Description |
 | --- | --- |
 | TimeStart | A [position object](time-travel-debugging-position-objects.md) that describes the position at the start of the allocation. |
@@ -50,7 +45,7 @@ Depending on the heap object, it may have some of the properties below.
 
 Use this dx command to display the heap memory in a grid using the -g option.
 
-```
+```dbgcmd
 0:0:000> dx -g @$cursession.TTD.Data.Heap()
 ==================================================================================================================================
 =           = (+) Function               = (+) FunctionAddress = (+) ReturnValue  = (+) Parameters = (+) TimeStart = (+) TimeEnd =
@@ -67,7 +62,7 @@ Clicking on TimeStart or TimeEnd will navigate you to that point in the trace.
 
 Click on the parameters field next to a specific entry, to display available parameter information.
 
-```
+```dbgcmd
 dx -r1 @$cursession.TTD.Data.Heap()[2].@"Parameters"
 @$cursession.TTD.Data.Heap()[2].@"Parameters"                
     [0x0]            : 0x16c7d780000

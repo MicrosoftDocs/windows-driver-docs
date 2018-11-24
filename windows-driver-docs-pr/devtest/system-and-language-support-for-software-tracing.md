@@ -2,11 +2,7 @@
 title: System and Language Support for Software Tracing
 description: System and Language Support for Software Tracing
 ms.assetid: 2607770e-3152-4d13-9f7a-d9eae4595154
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ This section includes the following topics:
 
 [How Do I Enable WPP Tracing Through the Windows Event Log Service?](enabling-wpp-tracing-through-windows-event-log.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -5,11 +5,7 @@ ms.assetid: 5fce137b-001c-49f6-85ad-94c9eead9aa0
 keywords:
 - busy present queues WDK DirectX 9.0
 - present queues WDK DirectX 9.0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ If D3DPRESENT\_DONOTWAIT is not set, **Present** behaves as in DirectX 8.1 and e
 
 For more information about **IDirect3DSwapChain*Xxx*::Present**, see the latest DirectX SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

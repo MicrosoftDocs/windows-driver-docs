@@ -13,11 +13,7 @@ keywords:
 - GPU WDK Windows 2008 Resource R2 display , multiple, managing resources for
 - multiple GPUs WDK Windows 2008 Resource R2 display
 - multiple GPUs WDK Windows 2008 Resource R2 display , managing resources for
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +26,9 @@ To appropriately manage resources for multiple GPU scenarios, a user-mode displa
 
 Starting in Windows 8.1, a user-mode driver can support cross-adapter resources that are shared between a discrete GPU and an integrated GPU. See [Using cross-adapter resources in a hybrid system](using-cross-adapter-resources-in-a-hybrid-system.md).
 
- 
+ 
 
- 
+ 
 
 
 

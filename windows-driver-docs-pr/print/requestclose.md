@@ -1,6 +1,5 @@
 ---
 title: requestClose element
-author: windows-driver-content
 description: The optional requestClose element is used to close an event notification message on the client computer.
 ms.assetid: b2f21ab2-9205-483c-9f56-1c877edb7da2
 keywords: ["requestClose element Print Devices"]
@@ -10,11 +9,7 @@ api_name:
 - requestClose
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,7 +23,7 @@ The **requestClose** element is defined in the *asyncui* namespace at this URI: 
 Usage
 -----
 
-``` syntax
+```xml
 <requestClose/>
 ```
 
@@ -58,7 +53,7 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>asyncPrintUIRequest</strong>](asyncprintuirequest.md)</p></td>
+<td><p><a href="asyncprintuirequest.md" data-raw-source="[&lt;strong&gt;asyncPrintUIRequest&lt;/strong&gt;](asyncprintuirequest.md)"><strong>asyncPrintUIRequest</strong></a></p></td>
 <td><p></p>
 <p>A required element that describes a request issued by the printer driver to create a message on a client computer.</p></td>
 </tr>
@@ -70,7 +65,7 @@ Examples
 
 The following code example shows how to close an event notification after a button-click on the message box has been captured for the **OK** button.
 
-```
+```cpp
 <?xml version="1.0" ?>
    <asyncPrintUIResponse
     xmlns="http://schemas.microsoft.com/2003/print/asyncui/v1/response">
@@ -84,17 +79,8 @@ The following code example shows how to close an event notification after a butt
   </asyncPrintUIResponse>
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
+[asyncPrintUIRequest](asyncprintuirequest.md)
 
-[**asyncPrintUIRequest**](asyncprintuirequest.md)
-
-[**requestOpen**](requestopen.md)
-
- 
-
- 
-
-
-
-
+[requestOpen](requestopen.md)

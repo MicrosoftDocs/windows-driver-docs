@@ -6,11 +6,7 @@ keywords:
 - context WDK Direct3D
 - Direct3D WDK Windows 2000 display , context management
 - context WDK Direct3D , about context management
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,9 +20,9 @@ A context encapsulates the state information for an application-created Microsof
 
 A Direct3D driver is responsible for creating and managing its own rendering contexts.
 
- 
+ 
 
- 
+ 
 
 
 

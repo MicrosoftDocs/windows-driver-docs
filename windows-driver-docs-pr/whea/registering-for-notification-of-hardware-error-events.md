@@ -1,6 +1,5 @@
 ---
 title: Registering for Notification of Hardware Error Events
-author: windows-driver-content
 description: Registering for Notification of Hardware Error Events
 ms.assetid: 86816fc7-fa69-4ecf-9d50-822b0fa6992d
 keywords:
@@ -9,11 +8,7 @@ keywords:
 - notifications WDK WHEA
 - WHEA WDK , registering for event notifications
 - Windows Hardware Error Architecture WDK , registering for event notifications
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,7 +29,7 @@ The channel to which the WHEA provider raises the hardware error events is as fo
 
 The following code example shows how to register for the notification of new hardware error events for this version of Windows.
 
-```
+```cpp
 // Prototype for the notification callback function
 DWORD WINAPI HwErrorEventCallback(
   EVT_SUBSCRIBE_NOTIFY_ACTION Action,
@@ -96,7 +91,7 @@ VOID UnsubscribeHwErrorEvents(EVT_HANDLE SubHandle)
 
 The following code example shows how to register for the notification of new hardware error events for these versions of Windows.
 
-```
+```cpp
 // Prototype for the notification callback function
 DWORD WINAPI HwErrorEventCallback(
   EVT_SUBSCRIBE_NOTIFY_ACTION Action,
@@ -170,11 +165,11 @@ VOID UnsubscribeHwErrorEvents(EVT_HANDLE SubHandle)
 
 **Note**  All of the **Evt*Xxx*** functions and the EVT\_*XXX* data types that were used in the previous examples are documented in the [Windows Event Log](http://go.microsoft.com/fwlink/p/?linkid=81187) section in the Microsoft Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -6,11 +6,7 @@ keywords:
 - device metadata resources
 - device experience resources
 - UWP device app resources
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +25,9 @@ For more information about UWP device apps, see:
 -   [Printers: UWP device apps](http://go.microsoft.com/fwlink/p/?LinkId=241444)
 -   [Specialized devices: UWP device apps](http://go.microsoft.com/fwlink/p/?LinkId=241447)
 
- 
+ 
 
- 
+ 
 
 
 

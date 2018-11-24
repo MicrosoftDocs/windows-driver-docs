@@ -1,5 +1,5 @@
 ---
-title: IRP\_MJ\_DEVICE\_CONTROL
+title: IRP_MJ_DEVICE_CONTROL
 description: IRP\_MJ\_DEVICE\_CONTROL
 ms.assetid: 7a7f7372-ed69-42c1-95e2-b5a593d77d22
 keywords: ["IRP_MJ_DEVICE_CONTROL Installable File System Drivers"]
@@ -9,11 +9,7 @@ api_name:
 - IRP_MJ_DEVICE_CONTROL
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -101,9 +97,9 @@ Input buffer for kernel-mode requests that use METHOD\_NEITHER.
 
 [**ZwDeviceIoControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566441)
 
- 
+ 
 
- 
+ 
 
 
 

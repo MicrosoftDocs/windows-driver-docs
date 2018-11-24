@@ -5,11 +5,7 @@ ms.assetid: 4c5192aa-ffba-4c75-aa4d-ad62a087dba4
 keywords:
 - TCP chimney offload WDK networking , event indications
 - chimney offload WDK networking , event indications
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,9 +20,9 @@ An offload target indicates the following types of chimney-related events:
 
 -   Events that are TCP chimney-specific. For more information about indicating these events, see [Indicating TCP Chimney-Specific Events](indicating-tcp-chimney-specific-events.md).
 
- 
+ 
 
- 
+ 
 
 
 

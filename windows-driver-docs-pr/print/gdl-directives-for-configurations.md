@@ -1,6 +1,5 @@
 ---
 title: GDL Directives for Configurations
-author: windows-driver-content
 description: GDL Directives for Configurations
 ms.assetid: c7b3c364-06b2-4de8-9fe6-2c77d313a2f8
 keywords:
@@ -16,11 +15,7 @@ keywords:
 - Constraints directive WDK GDL
 - InvalidCombinations directive WDK GDL
 - configurations WDK GDL , directives
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -43,9 +38,9 @@ GDL contains the following configuration directives:
 
 For more information about configuration directives, see [GDL Configurations](gdl-configurations.md).
 
- 
+ 
 
- 
+ 
 
 
 

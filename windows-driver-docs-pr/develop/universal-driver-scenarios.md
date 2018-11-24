@@ -1,11 +1,7 @@
 ---
 title: Universal Driver Scenarios
 description: Describes how the DCHU universal driver sample applies the DCHU design principles (Declarative, Componentized, Hardware Support Apps [HSA], and Universal API compliance).
-ms.author: windowsdriverdev
 ms.date: 04/04/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -39,7 +35,7 @@ Next, Fabrikam separates customizations that are specific to OEM partners (such 
 
 The following snippet, updated from [`osrfx2_DCHU_extension.inx`], specifies the `Extension` class and identifies Contoso as the provider since they will own the extension driver package:
 
-```
+```cpp
 [Version]
 Class       = Extension
 ClassGuid   = {e2f84ce7-8efa-411c-aa69-97454ca4cb57}
@@ -49,7 +45,7 @@ ExtensionId = {zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz} ; replace with your own GUI
 
 In [`osrfx2_DCHU_base.inx`], Fabrikam specifies the following entries:
 
-```
+```cpp
 [OsrUsbFx2_AddReg]
 HKR, OSR, "OperatingMode",, "Default" ; FLG_ADDREG_TYPE_SZ
 HKR, OSR, "OperatingParams",, "None" ; FLG_ADDREG_TYPE_SZ
@@ -57,7 +53,7 @@ HKR, OSR, "OperatingParams",, "None" ; FLG_ADDREG_TYPE_SZ
 
 In [`osrfx2_DCHU_extension.inx`], Contoso overrides the **OperatingParams** registry value set by the base and adds **OperatingExceptions**:
 
-```
+```cpp
 [OsrUsbFx2Extension_AddReg]
 HKR, OSR, "OperatingParams",, "-Extended"
 HKR, OSR, "OperatingExceptions",, "x86"	
@@ -69,7 +65,7 @@ Note that extensions are always processed after the base INF in no definite orde
 
 Fabrikam uses a Win32 service to control the LEDs on the OSR board. They view this component as part of the core functionality of the device, so they include it as part of their base INF ([`osrfx2_DCHU_base.inx`]).  This user-mode service (usersvc) can be added and started declaratively by specifying the [**AddService**](../install/inf-addservice-directive.md) directive in the INF file:
 
-```
+```cpp
 [OsrFx2_Install.NT]
 CopyFiles = OsrFx2_UserSvcCopyFiles
 
@@ -94,7 +90,7 @@ Fabrikam has an executable file `osrfx2_DCHU_componentsoftware.exe` that they pr
 
 The following snippet from [`osrfx2_DCHU_extension.inx`] uses the [**AddComponent**](../install/inf-addcomponent-directive.md) directive to create a virtual child device:
 
-```
+```cpp
 [OsrFx2Extension_Install.NT.Components]
 AddComponent = osrfx2_DCHU_component,,OsrFx2Extension_ComponentInstall
 
@@ -105,7 +101,7 @@ ComponentIds=VID_045e&PID_94ab
 
 Then, in the component INF [`osrfx2_DCHU_component.inx`], Fabrikam specifies the [**AddSoftware**](../install/inf-addsoftware-directive.md) directive to install the optional executable:
 
-```
+```cpp
 [OsrFx2Component_Install.NT.Software]
 AddSoftware = osrfx2_DCHU_componentsoftware,, OsrFx2Component_SoftwareInstall
 	
@@ -148,9 +144,9 @@ The new app (not included in the DCHU sample) is secure and can be updated easil
 
 ## Registering a COM component in an INF file
 
-Fabrikam needs to register a COM component without using a co-installer.  In order to accomplish this in a universal INF file, they use the [Reg2inf tool](https://docs.microsoft.com/en-us/windows-hardware/drivers/devtest/reg2inf) distributed in the WDK.  After building their COM server project (taken from the [In-process ATL COM server sample](https://code.msdn.microsoft.com/ATLDllCOMServer-b52a7d5d)), they provide the COM .dll as an input to the Reg2inf tool.  The tool then generates the following INF directives that Fabrikam includes in their base INF ([`osrfx2_DCHU_base.inx`]):
+Fabrikam needs to register a COM component without using a co-installer.  In order to accomplish this in a universal INF file, they use the [Reg2inf tool](https://docs.microsoft.com/windows-hardware/drivers/devtest/reg2inf) distributed in the WDK.  After building their COM server project (taken from the [In-process ATL COM server sample](https://code.msdn.microsoft.com/ATLDllCOMServer-b52a7d5d)), they provide the COM .dll as an input to the Reg2inf tool.  The tool then generates the following INF directives that Fabrikam includes in their base INF ([`osrfx2_DCHU_base.inx`]):
 
-```
+```cpp
 ; Add all registry keys to successfully register the
 ; In-Process ATL COM Server MSFT Sample.
 [OsrFx2_AddReg_COM]
@@ -174,23 +170,23 @@ HKCR,CLSID\{92FCF37F-F6C7-4F8A-AA09-1A14BA118084}\VersionIndependentProgID,,,"AT
 
 Ideally, there should be strong versioning contracts between base, extensions and components.  There are servicing advantages in having these three packages serviced independently (the "loosely coupled" scenario), but there are scenarios where they need to be bundled in a single driver package ("tightly coupled") due to poor versioning contracts.  The sample includes examples of both scenarios:
 
- * [DCHU_Sample\osrfx2_DCHU_extension_loose](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU/osrfx2_DCHU_extension_loose)
- * [DCHU_Sample\osrfx2_DCHU_extension_tight](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU/osrfx2_DCHU_extension_tight)
+* [DCHU_Sample\osrfx2_DCHU_extension_loose](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU/osrfx2_DCHU_extension_loose)
+* [DCHU_Sample\osrfx2_DCHU_extension_tight](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU/osrfx2_DCHU_extension_tight)
  
- When the extension and component are in the same driver package ("tightly coupled"), the extension INF specifies the [CopyINF directive](../install/inf-copyinf-directive.md) to cause the component INF to be copied to the target system.  This is demonstrated in [DCHU_Sample\osrfx2_DCHU_extension_tight\osrfx2_DCHU_extension\osrfx2_DCHU_extension.inx](https://github.com/Microsoft/Windows-driver-samples/blob/master/general/DCHU/osrfx2_DCHU_extension_tight/osrfx2_DCHU_extension/osrfx2_DCHU_extension.inx):
+  When the extension and component are in the same driver package ("tightly coupled"), the extension INF specifies the [CopyINF directive](../install/inf-copyinf-directive.md) to cause the component INF to be copied to the target system.  This is demonstrated in [DCHU_Sample\osrfx2_DCHU_extension_tight\osrfx2_DCHU_extension\osrfx2_DCHU_extension.inx](https://github.com/Microsoft/Windows-driver-samples/blob/master/general/DCHU/osrfx2_DCHU_extension_tight/osrfx2_DCHU_extension/osrfx2_DCHU_extension.inx):
 
-```
+```cpp
 [OsrFx2Extension_Install.NT]
 CopyInf=osrfx2_DCHU_component.inf
 ```
 
-This directive can also be used to coordinate installation of INF files in multifunction devices.  For more details, see [Copying INF files](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/copying-inf-files). 
+This directive can also be used to coordinate installation of INF files in multifunction devices.  For more details, see [Copying INF files](https://docs.microsoft.com/windows-hardware/drivers/install/copying-inf-files). 
 
 ## Run from the driver store
 
-To make it easier to update the driver, Fabrikam specifies the [Driver Store](../install/driver-store.md) as the destination to copy the driver files by using [DirId 13](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/using-dirids) where possible.  Here is an example from [`osrfx2_DCHU_base.inx`]:
+To make it easier to update the driver, Fabrikam specifies the [Driver Store](../install/driver-store.md) as the destination to copy the driver files by using [DirId 13](https://docs.microsoft.com/windows-hardware/drivers/install/using-dirids) where possible.  Here is an example from [`osrfx2_DCHU_base.inx`]:
 
-```
+```cpp
 [DestinationDirs]
 OsrFx2_UserSvcCopyFiles = 13 ; copy to Driver Store
 ```

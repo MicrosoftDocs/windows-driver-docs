@@ -3,11 +3,7 @@ title: Using Debugging Information Windows
 description: Using Debugging Information Windows
 ms.assetid: b7dab453-24ac-4ef4-a48b-e734989b87bf
 keywords: ["debugging information windows"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,9 +31,9 @@ This section describes the features that are common to all of these windows:
 
 [Positioning the Windows](positioning-the-windows.md)
 
- 
+ 
 
- 
+ 
 
 
 

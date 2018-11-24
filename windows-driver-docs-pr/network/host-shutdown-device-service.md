@@ -2,11 +2,7 @@
 title: HOST Shutdown Device Service
 description: This topic provides guidelines for Mobile Broadband Interface Model (MBIM)-compliant devices to implement and report the described device service when queried by CID_MBIM_DEVICE_SERVICES.
 ms.assetid: 62BFC796-EDB2-489E-B487-65E2DD7C4256
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,7 +32,7 @@ UUID Value = **883b7c26-985f-43fa-9804-27d7fb80959c**
 | CID\_MBIM\_MSHOSTSHUTDOWN    | Windows 8                |
 | CID\_MBIM\_MSHOSTPRESHUTDOWN | Windows 10, version 1511 |
 
- 
+ 
 
 ## CID\_MBIM\_MSHOSTSHUTDOWN
 
@@ -54,7 +50,7 @@ This command informs the device that the host is shutting down. The MB device ma
 | Query InformationBuffer payload      | N/A                       |
 | Completion InformationBuffer payload | N/A                       |
 
- 
+ 
 
 |                   |                                                                                                      |
 |-------------------|------------------------------------------------------------------------------------------------------|
@@ -62,7 +58,7 @@ This command informs the device that the host is shutting down. The MB device ma
 | Query             | Unsupported                                                                                          |
 | Unsolicited Event | Unsupported                                                                                          |
 
- 
+ 
 
 ### Remarks
 
@@ -124,7 +120,7 @@ The following information summarizes the list of host sent CIDs/CMDs to the devi
 </tbody>
 </table>
 
- 
+ 
 
 ## CID\_MBIM\_MSHOSTPRESHUTDOWN
 
@@ -142,7 +138,7 @@ This command notifies the MBIM modem that the system is undergoing pre-shutdown 
 | Query InformationBuffer payload      | N/A                          |
 | Completion InformationBuffer payload | N/A                          |
 
- 
+ 
 
 Parameters:
 
@@ -177,7 +173,7 @@ Parameters:
 </tbody>
 </table>
 
- 
+ 
 
 For the Set operation, InformationBuffer and InformationBufferLength are empty.
 
@@ -188,11 +184,11 @@ Status Codes:
 | MBIM\_STATUS\_SUCCESS             | Pre-shutdown operations completed by the modem.                                     |
 | MBIM\_STATUS\_NO\_DEVICE\_SUPPORT | The device does not support pre-shutdown and no pre-shutdown operations are needed. |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -9,11 +9,7 @@ api_name:
 - wscn RotationsSupported
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **RotationsSupported** element contains the list of rotation values
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:RotationsSupported>
   child elements
 </wscn:RotationsSupported>
@@ -50,7 +46,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>RotationValue</strong>](rotationvalue.md)</p></td>
+<td><p><a href="rotationvalue.md" data-raw-source="[&lt;strong&gt;RotationValue&lt;/strong&gt;](rotationvalue.md)"><strong>RotationValue</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -69,7 +65,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>DeviceSettings</strong>](devicesettings.md)</p></td>
+<td><p><a href="devicesettings.md" data-raw-source="[&lt;strong&gt;DeviceSettings&lt;/strong&gt;](devicesettings.md)"><strong>DeviceSettings</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -79,16 +75,16 @@ Remarks
 
 The WSD Scan Service must apply all rotation values to the scan data after data acquisition. All rotations must be applied in the clockwise direction.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**DeviceSettings**](devicesettings.md)
 
 [**RotationValue**](rotationvalue.md)
 
- 
+ 
 
- 
+ 
 
 
 

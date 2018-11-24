@@ -1,14 +1,9 @@
 ---
 title: Thread Priorities
-author: windows-driver-content
 description: Thread Priorities
 ms.assetid: 87a9641c-0569-45c1-acb8-adf5856dc60d
 keywords: ["thread objects WDK kernel", "thread priorities WDK kernel", "priorities WDK threads"]
-ms.author: windowsdriverdev
 ms.date: 05/08/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +21,9 @@ Threads, whatever their respective run-time priorities, are run at IRQL = PASSIV
 
 For more information about thread priorities, see the [Scheduling, Thread Context, and IRQL](http://go.microsoft.com/fwlink/p/?linkid=59757) white paper.
 
- 
+ 
 
- 
+ 
 
 
 

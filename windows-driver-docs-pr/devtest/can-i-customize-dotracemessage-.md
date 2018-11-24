@@ -2,11 +2,7 @@
 title: Can I customize DoTraceMessage
 description: Can I customize DoTraceMessage
 ms.assetid: 4c5c4990-6095-4ab8-a20b-7597b3169f52
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -41,7 +37,6 @@ Consider the following code example.
 
 ```
 DoTraceMessage(ERROR, "IOCTL = %d", ControlCode);
- 
 ```
 
 This call generates the trace message when the ERROR flag is enabled. The message is "IOCTL=%d" and the *MessageVariables* is the value of *ControlCode*.
@@ -139,15 +134,15 @@ To add the custom tracing function to WPP, add the **-func** parameter to the RU
 RUN_WPP=$(SOURCES) -km -func:DoTraceLevelMessage(LEVEL,FLAGS,MSG,...)
 ```
 
-**Note**  You must not specify the **-km** switch in the RUN\_WPP directive for user-mode applications or dynamic-link libraries (DLLs).
+**Note**  You must not specify the **-km** switch in the RUN\_WPP directive for user-mode applications or dynamic-link libraries (DLLs).
 
- 
+
 
 For a complete list of the optional parameters for RUN\_WPP, see [WPP Preprocessor](wpp-preprocessor.md).
 
- 
 
- 
+
+
 
 
 

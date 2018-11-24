@@ -2,11 +2,7 @@
 title: BufAfterReqCompletedIntIoctlA rule (kmdf)
 description: The BufAfterReqCompletedIntIoctlA rule verifies that after a request is completed, its buffer cannot be accessed (inside EvtIoInternalDeviceControl callback only).
 ms.assetid: 3635DB6D-00C7-44DD-B05A-7EAA16B18937
-ms.author: windowsdriverdev
 ms.date: 05/21/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: ["BufAfterReqCompletedIntIoctlA rule (kmdf)"]
 topic_type:
 - apiref
@@ -42,14 +38,14 @@ How to test
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Run [Static Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff552808) and specify the <strong>BufAfterReqCompletedIntIoctlA</strong> rule.</p>
+<td align="left"><p>Run <a href="https://msdn.microsoft.com/library/windows/hardware/ff552808" data-raw-source="[Static Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff552808)">Static Driver Verifier</a> and specify the <strong>BufAfterReqCompletedIntIoctlA</strong> rule.</p>
 Use the following steps to run an analysis of your code:
 <ol>
-<li>[Prepare your code (use role type declarations).](https://msdn.microsoft.com/library/windows/hardware/hh454281#preparing-your-source-code)</li>
-<li>[Run Static Driver Verifier.](https://msdn.microsoft.com/library/windows/hardware/hh454281#running-static-driver-verifier)</li>
-<li>[View and analyze the results.](https://msdn.microsoft.com/library/windows/hardware/hh454281#viewing-and-analyzing-the-results)</li>
+<li><a href="https://msdn.microsoft.com/library/windows/hardware/hh454281#preparing-your-source-code" data-raw-source="[Prepare your code (use role type declarations).](https://msdn.microsoft.com/library/windows/hardware/hh454281#preparing-your-source-code)">Prepare your code (use role type declarations).</a></li>
+<li><a href="https://msdn.microsoft.com/library/windows/hardware/hh454281#running-static-driver-verifier" data-raw-source="[Run Static Driver Verifier.](https://msdn.microsoft.com/library/windows/hardware/hh454281#running-static-driver-verifier)">Run Static Driver Verifier.</a></li>
+<li><a href="https://msdn.microsoft.com/library/windows/hardware/hh454281#viewing-and-analyzing-the-results" data-raw-source="[View and analyze the results.](https://msdn.microsoft.com/library/windows/hardware/hh454281#viewing-and-analyzing-the-results)">View and analyze the results.</a></li>
 </ol>
-<p>For more information, see [Using Static Driver Verifier to Find Defects in Drivers](https://msdn.microsoft.com/library/windows/hardware/hh454281).</p></td>
+<p>For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh454281" data-raw-source="[Using Static Driver Verifier to Find Defects in Drivers](https://msdn.microsoft.com/library/windows/hardware/hh454281)">Using Static Driver Verifier to Find Defects in Drivers</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -73,9 +69,9 @@ Applies to
 [**RtlMoveMemory**](https://msdn.microsoft.com/library/windows/hardware/ff562030)
 [**RtlZeroMemory**](https://msdn.microsoft.com/library/windows/hardware/ff563610)
 [**ZwReadFile**](https://msdn.microsoft.com/library/windows/hardware/ff567072)
- 
+ 
 
- 
+ 
 
 
 

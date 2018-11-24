@@ -12,11 +12,7 @@ keywords:
 - services browsing WDK Bluetooth
 - advertising services WDK Bluetooth
 - services advertising WDK Bluetooth
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +29,9 @@ After the profile driver has advertised its services, other Bluetooth devices ca
 
 To stop advertising services with SDP, a profile driver uses [**IOCTL\_BTH\_SDP\_REMOVE\_RECORD**](https://msdn.microsoft.com/library/windows/hardware/ff536690).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Differences from Previous Versions of Microsoft Windows
-author: windows-driver-content
 description: Differences from Previous Versions of Microsoft Windows
 ms.assetid: 9c30c5c6-27a7-424e-b5f0-ab625eed4b8a
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - WHEA WDK , comparison with earlier Windows versions
 - hardware errors WDK WHEA , earlier Windows versions
 - errors WDK WHEA , earlier Windows versions
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -77,11 +72,11 @@ The following lists summarize the differences between the Windows Hardware Error
 
 **Note**   Items identified with an asterisk (\*) are supported in Windows Server 2008, Windows Vista SP1 and later versions of Windows.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

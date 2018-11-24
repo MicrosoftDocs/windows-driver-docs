@@ -2,11 +2,7 @@
 title: Hotspot authentication methods
 description: Hotspot authentication methods
 ms.assetid: 10334e20-693c-4fa3-a38d-e82e77fcd865
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +22,9 @@ The topics in this section include the following:
 
 [Integrating Windows with wireless hotspots](integrating-windows-with-wireless-hotspots.md)
 
- 
+ 
 
- 
+ 
 
 
 

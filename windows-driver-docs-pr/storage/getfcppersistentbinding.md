@@ -13,6 +13,7 @@ api_location:
 api_type:
 - LibDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # GetFcpPersistentBinding function
@@ -25,11 +26,11 @@ Syntax
 
 ```ManagedCPlusPlus
 void GetFcpPersistentBinding(
-   [in] uint32                                          InEntryCount,
-   [out, HBA_STATUS_QUALIFIERS] HBA_STATUS              HBAStatus,
-   [out] uint32                                         TotalEntryCount,
-   [out] uint32                                         OutEntryCount,
-   [out, WmiSizeIs("OutEntryCount")] HBAFCPBindingEntry Entry[]
+   [in] uint32                                          InEntryCount,
+   [out, HBA_STATUS_QUALIFIERS] HBA_STATUS              HBAStatus,
+   [out] uint32                                         TotalEntryCount,
+   [out] uint32                                         OutEntryCount,
+   [out, WmiSizeIs("OutEntryCount")] HBAFCPBindingEntry Entry[]
 );
 ```
 
@@ -94,9 +95,9 @@ Requirements
 
 [**HBAFCPBindingEntry**](https://msdn.microsoft.com/library/windows/hardware/ff556034)
 
- 
+ 
 
- 
+ 
 
 
 

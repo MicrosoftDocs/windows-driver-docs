@@ -1,6 +1,5 @@
 ---
 title: Introduction to Registry Keys for Drivers
-author: windows-driver-content
 description: Introduction to Registry Keys for Drivers
 ms.assetid: ec1a21db-1a31-4041-941d-31156884ffae
 keywords:
@@ -15,11 +14,7 @@ keywords:
 - driver keys WDK KMDF
 - hardware keys WDK KMDF
 - keys WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -62,9 +57,9 @@ For more information about registry keys for drivers, see:
 
 -   [Using the Registry in a Driver](https://msdn.microsoft.com/library/windows/hardware/ff565537)
 
- 
+ 
 
- 
+ 
 
 
 

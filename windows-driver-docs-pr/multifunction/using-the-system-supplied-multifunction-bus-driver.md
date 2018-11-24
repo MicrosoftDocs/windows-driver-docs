@@ -1,6 +1,5 @@
 ---
 title: Using the System-Supplied Multifunction Bus Driver
-author: windows-driver-content
 description: Using the System-Supplied Multifunction Bus Driver
 ms.assetid: 75fe659d-5311-4bc6-adfb-fd608e10c718
 keywords:
@@ -11,11 +10,7 @@ keywords:
 - FDOs WDK multifunction devices
 - physical device objects WDK multifunction devices
 - PDOs WDK multifunction devices
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -45,7 +40,7 @@ In either case, the vendor also supplies drivers and INF files for the individua
 
 The following skeleton of a custom multifunction INF illustrates the required syntax for specifying mf.sys as the driver for a multifunction device:
 
-```
+```cpp
 [Version]
 Signature = "$Windows NT$"
 ; ...
@@ -95,9 +90,9 @@ The PnP manager treats each child device like a typical device, locating INF fil
 
 The illustration focuses on the function drivers and parent bus drivers and their associated FDOs and PDOs. Any filter drivers (and filter DOs) are omitted for simplicity.
 
- 
+ 
 
- 
+ 
 
 
 

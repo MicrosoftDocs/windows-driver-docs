@@ -2,11 +2,7 @@
 title: Managing Virtual Ports
 description: Managing Virtual Ports
 ms.assetid: BF3DFE01-6583-4FBB-AFFA-2C017A3D9A05
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -41,11 +37,11 @@ For more information on NIC switches, see [NIC Switches](nic-switches.md).
 
 **Note**  Only the miniport driver for the PCI Express (PCIe) Physical Function (PF) can configure the network adapter's hardware resources, such as the VPorts. The miniport driver for the PCIe Virtual Function (VF) cannot directly access most of the SR-IOV adapter's hardware resources. For more information, see [Writing SR-IOV VF Miniport Drivers](writing-sr-iov-vf-miniport-drivers.md).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

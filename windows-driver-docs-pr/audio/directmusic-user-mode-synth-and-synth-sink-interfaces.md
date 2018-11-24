@@ -2,11 +2,7 @@
 title: DirectMusic User-Mode Synth and Synth Sink Interfaces
 description: DirectMusic User-Mode Synth and Synth Sink Interfaces
 ms.assetid: 2b25f605-d9e6-415e-8f45-08f7cdd2f625
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +24,9 @@ Interface for a user-mode synth sink
 
 [IDirectMusicSynthSink](https://msdn.microsoft.com/library/windows/hardware/ff536520)
 
- 
+ 
 
- 
+ 
 
 
 

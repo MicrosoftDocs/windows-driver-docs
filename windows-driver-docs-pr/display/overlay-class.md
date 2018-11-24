@@ -4,11 +4,7 @@ description: Overlay Class
 ms.assetid: 698eb8af-ff9a-4c11-b764-6e5773886aaa
 keywords:
 - overlay class WDK display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,9 +21,9 @@ The Windows Display Driver Model (WDDM) does not permit a call into one of the o
 
 -   [*DxgkDdiUpdateOverlay*](https://msdn.microsoft.com/library/windows/hardware/ff560804)
 
- 
+ 
 
- 
+ 
 
 
 

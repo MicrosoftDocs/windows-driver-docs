@@ -2,11 +2,7 @@
 title: Opening a Dump File Using KD
 description: Opening a Dump File Using KD
 ms.assetid: 458E9BA6-6FA0-4FEF-93A0-062C9E11D21F
-ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ The **-v** option (verbose mode) is also useful. For more information about the 
 
 You can also open a dump file after the debugger is running by entering the [**.opendump (Open Dump File)**](-opendump--open-dump-file-.md) command, followed by [**g (Go)**](g--go-.md).
 
- 
+ 
 
- 
+ 
 
 
 

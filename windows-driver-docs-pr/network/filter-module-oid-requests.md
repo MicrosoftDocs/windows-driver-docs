@@ -7,11 +7,7 @@ keywords:
 - filter drivers WDK networking , OID requests
 - NDIS filter drivers WDK , OID requests
 - OIDs WDK networking , filter drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -39,9 +35,9 @@ The following topics provide more information about filter driver OID requests:
 
 [Filter Module Synchronous OID Requests](filter-module-synchronous-oid-requests.md)
 
- 
+ 
 
- 
+ 
 
 
 

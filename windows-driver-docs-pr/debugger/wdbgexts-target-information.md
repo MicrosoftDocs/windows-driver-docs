@@ -3,11 +3,7 @@ title: WdbgExts Target Information
 description: WdbgExts Target Information
 ms.assetid: 70b26047-2f3a-4d35-861f-a9ca17d1d5f9
 keywords: ["WdbgExts extensions, target"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +22,9 @@ The debugger caches some information obtained from the target. The function [**G
 
 For a more powerful target API, see [Target Information](target-information.md) in the [Using the Debugger Engine API](using-the-debugger-engine-api.md) section of this documentation.
 
- 
+ 
 
- 
+ 
 
 
 

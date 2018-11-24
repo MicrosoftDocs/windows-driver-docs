@@ -8,11 +8,7 @@ keywords:
 - SDV WDK , libraries
 - library WDK Static Driver Verifier
 - library WDK Static Driver Verifier , about library processing
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -39,9 +35,9 @@ This section includes:
 
 SDV includes processed library files for system libraries. You do not need to direct SDV to process these libraries. When SDV detects that a driver depends on these libraries, it uses its processed files for these libraries without displaying a warning message. For information about library requirements, see [Determining if Static Driver Verifier supports your driver or library](determining-if-static-driver-verifier-supports-your-driver-or-library.md).
 
- 
+ 
 
- 
+ 
 
 
 

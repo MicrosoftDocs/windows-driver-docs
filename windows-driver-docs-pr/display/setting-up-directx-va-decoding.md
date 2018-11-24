@@ -11,11 +11,7 @@ keywords:
 - picture decoding WDK DirectX VA , formats
 - formats WDK DirectX VA
 - picture decoding WDK DirectX VA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +27,9 @@ In order for a decoder to operate correctly with an accelerator, the decoder and
 
 -   The configuration determining the format used for data exchange between the host and the accelerator, and establishing which process resides on the host and which on the accelerator. This configuration is established by the negotiation of a connection configuration for each DirectX VA function to be used (as determined by the [bDXVA\_Func](bdxva-func-variable.md) variable). The [**DXVA\_ConfigPictureDecode**](https://msdn.microsoft.com/library/windows/hardware/ff563133) structure specifies the configuration.
 
- 
+ 
 
- 
+ 
 
 
 

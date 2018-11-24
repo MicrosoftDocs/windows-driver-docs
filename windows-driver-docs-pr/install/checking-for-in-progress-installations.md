@@ -6,11 +6,7 @@ keywords:
 - in-progress installations WDK
 - checking in-progress installations
 - verifying in-progress installations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,7 +20,7 @@ Your [*device installation application*](https://msdn.microsoft.com/library/wind
 
 To make your [*device installation application*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-installation-application) compatible with platforms that do not support **CMP_WaitNoPendingInstallEvents**, the application should include the following code:
 
-```
+```cpp
 BOOL
 IsDeviceInstallInProgress (VOID)
 {
@@ -71,9 +67,9 @@ Use of this code is based on the premise that if a platform does not support **C
 
 For a sample usage of this code, see the toaster installation package under the *src\\general\\toaster* subdirectory of the Windows Driver Kit (WDK).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,9 +1,9 @@
 ---
 title: PIO Techniques
-author: windows-driver-content
 description: PIO Techniques
 ms.assetid: bd673e43-c864-416b-b0d0-23c4ba1b870c
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # PIO Techniques
@@ -13,9 +13,9 @@ On some computer hardware architectures, the transfer of data from the CPU (cent
 
 For information on using caches with PIO, see [Flushing Cached Data during PIO Operations](flushing-cached-data-during-pio-operations.md).
 
- 
+ 
 
- 
+ 
 
 
 

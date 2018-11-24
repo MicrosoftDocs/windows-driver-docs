@@ -3,11 +3,7 @@ title: Activating a Smart Client (Kernel Mode)
 description: Once the KD connection server has been activated, you can create a smart client on another computer and begin a debugging session.
 ms.assetid: bf0f1dd5-e6dc-4168-8476-cf21e77bd335
 keywords: ["Activating a Smart Client (Kernel Mode) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -28,7 +24,7 @@ You need to specify the remote transfer protocol used by the KD connection serve
 
 The general syntax for starting a smart client depends on the protocol used. The following options exist:
 
-```
+```console
 Debugger -k kdsrv:server=@{npipe:server=Server,pipe=PipeName[,password=Password]},trans=@{ConnectType} [Options]
 
 Debugger -k kdsrv:server=@{tcp:server=Server,port=Socket[,password=Password][,ipversion=6]},trans=@{ConnectType} [Options]
@@ -46,7 +42,7 @@ Debugger -k kdsrv:server=@{ssl:proto=Protocol,{certuser=Cert|machuser=Cert},clic
 
 To use the graphical interface to connect to a KD connection server, WinDbg must be in dormant mode -- it must either have been started with no command-line parameters, or it must have ended the previous debugging session. Select the **File | Connect to Remote Stub** menu command. When the **Connect to Remote Stub Server** dialog box appears, enter one of the following strings into the **Connection string** text box:
 
-```
+```dbgcmd
 npipe:server=Server,pipe=PipeName[,password=Password] 
 
 tcp:server=Server,port=Socket[,password=Password][,ipversion=6] 
@@ -80,7 +76,7 @@ If NPIPE or SPIPE protocol is used, *PipeName* is the name that was given to the
 
 If you are not logged on to the client computer with an account that has access to the server computer, you must provide a user name and password. On the client computer, in a Command Prompt window, enter the following command.
 
-**net use \\\\***Server***\\ipc$ /user:***UserName*
+**net use \\\\**<em>Server</em>**\\ipc$ /user:**<em>UserName</em>
 
 where *Server* is the name of the server computer, and *UserName* is the name of an account that has access to the server computer.
 
@@ -107,7 +103,7 @@ If COM protocol is used, *COMChannel* should match the channel number chosen whe
 If SSL or SPIPE protocol is used, *Protocol* should match the secure protocol used when the KD connection server was created.
 
 <span id="________Cert"></span><span id="________cert"></span><span id="________CERT"></span> *Cert*  
-If SSL or SPIPE protocol is used, you should use the identical **certuser=***Cert* or **machuser=***Cert* parameter that was used when the KD connection server was created.
+If SSL or SPIPE protocol is used, you should use the identical **certuser=**<em>Cert</em> or **machuser=**<em>Cert</em> parameter that was used when the KD connection server was created.
 
 <span id="________password_________Password"></span><span id="________password_________password"></span><span id="________PASSWORD_________PASSWORD"></span> **password=** *Password*  
 If a password was used when the KD connection server was created, *Password* must be supplied in order to create the smart client. It must match the original password. Passwords are case-sensitive. If the wrong password is supplied, the error message will specify "Error 0x80004005."
@@ -118,7 +114,7 @@ If a password was used when the KD connection server was created, *Password* mus
 <span id="________trans___________ConnectType_________"></span><span id="________trans___________connecttype_________"></span><span id="________TRANS___________CONNECTTYPE_________"></span> **trans=@{** *ConnectType* **}**  
 Tells the debugger how to connect to the target. The following kernel connection protocols are permitted:
 
-```
+```dbgcmd
 com:port=ComPort,baud=BaudRate 
 1394:channel=1394Channel[,symlink=1394Protocol] 
 usb2:targetname=String 
@@ -133,9 +129,9 @@ Any additional command-line parameters can be placed here. See [Command-Line Opt
 
 Since the KD connection server simply acts as a gateway for the smart client, the additional *Options* will be the same as those you would use if you were starting a kernel debugger on computer where KdSrv is running. The exception to this is any option that specifies a path or filename will be taken as a path on the computer where the smart client is running.
 
- 
+ 
 
- 
+ 
 
 
 

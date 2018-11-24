@@ -3,11 +3,7 @@ title: storagekd.storhelp
 description: The storagekd.storhelp extension displays help text for Storagekd.dll extension commands.
 ms.assetid: 17FFB5CC-1FA3-4D13-AA30-6D48D2435CDC
 keywords: ["storagekd.storhelp Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!storagekd.storhelp** extension displays help text for Storagekd.dll extension commands.
 
-```
+```dbgcmd
 !storagekd.storhelp 
 ```
 
@@ -42,7 +38,7 @@ The **!storagekd.storhelp** extension displays help text for Storagekd.dll exten
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -51,7 +47,7 @@ Here is an example of the **!storagekd.storhelp** display:
 
 **0: kd&gt; !storagekd.storhelp**
 
-```
+```dbgcmd
 # Storage Debugger Extension
 ===============================================
 ## General Commands
@@ -71,9 +67,9 @@ Here is an example of the **!storagekd.storhelp** display:
 !storsrb <address>     - display details for the specified SCSI or STORAGE request block
 ```
 
- 
+ 
 
- 
+ 
 
 
 

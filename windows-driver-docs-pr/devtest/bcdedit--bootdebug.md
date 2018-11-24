@@ -2,11 +2,7 @@
 title: BCDEdit /bootdebug
 description: The /bootdebug boot option enables or disables boot debugging of the current or specified Windows operating system boot entry.
 ms.assetid: 85d0a25e-c411-4d7e-ae11-ce5bed1a37b8
-ms.author: windowsdriverdev
 ms.date: 05/21/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: ["BCDEdit /bootdebug Driver Development Tools"]
 topic_type:
 - apiref
@@ -25,7 +21,7 @@ The **/bootdebug** boot option enables or disables boot debugging of the current
 > [!NOTE]
 > Before setting BCDEdit options you might need to disable or suspend BitLocker and Secure Boot on the computer.
 
- 
+ 
 
 ``` syntax
     bcdedit /bootdebug [{ID}] { on | off } 
@@ -35,9 +31,9 @@ The **/bootdebug** boot option enables or disables boot debugging of the current
 Parameters
 ----------
 
-**{***ID***}**   
+**{**<em>ID</em>**}**   
 
-The **{***ID***}** is the GUID that is associated with the boot entry. If you do not specify an **{***ID***}**, the command modifies the operating system that is currently active. If a boot entry is specified, the GUID associated with the boot entry must be enclosed in braces **{}**.
+The **{**<em>ID</em>**}** is the GUID that is associated with the boot entry. If you do not specify an **{**<em>ID</em>**}**, the command modifies the operating system that is currently active. If a boot entry is specified, the GUID associated with the boot entry must be enclosed in braces **{}**.
 
 **on**   
 
@@ -78,7 +74,7 @@ The **/bootdebug** boot option enables boot debugging for a specific boot entry.
 </tbody>
 </table>
 
- 
+ 
 
 For information about Windows debugging tools, see [Windows Debugging](https://msdn.microsoft.com/library/windows/hardware/ff551063). For information about setting up and configuring a kernel-mode debugging session, see [Setting Up Kernel-Mode Debugging Manually](https://msdn.microsoft.com/library/windows/hardware/hh439378).
 
@@ -103,9 +99,9 @@ bcdedit /bootdebug on
 bcdedit /debug on 
 ```
 
- 
+ 
 
- 
+ 
 
 
 

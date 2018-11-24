@@ -2,11 +2,7 @@
 title: Clearing a Receive Filter on a Virtual Port
 description: Clearing a Receive Filter on a Virtual Port
 ms.assetid: 8431322B-2BF0-4F82-AAAE-0E0396BBC857
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,9 +19,9 @@ Before the overlying driver issues the [OID\_RECEIVE\_FILTER\_CLEAR\_FILTER](htt
 
 An overlying driver must clear all of the filters that it set on a VPort before it frees the VPort. An overlying driver must also clear all of the filters that it set on the default VPort before it closes its binding to or detached from the network adapter.
 
- 
+ 
 
- 
+ 
 
 
 

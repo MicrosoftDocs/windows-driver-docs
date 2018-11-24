@@ -3,11 +3,7 @@ title: Debugging a Deadlock
 description: Debugging a Deadlock
 ms.assetid: ee7990d9-2d4e-4e48-9214-539eebd1d8db
 keywords: ["deadlocks", "thread, no ready threads"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,7 +33,7 @@ When a deadlock occurs in user mode, use the following procedure to debug it:
 
 Here is an illustration of this procedure. You begin with the **!ntdexts.locks** extension:
 
-```
+```dbgcmd
 0:006>  !locks 
 CritSec ftpsvc2!g_csServiceEntryLock+0 at 6833dd68
 LockCount          0
@@ -70,7 +66,7 @@ The second critical section displayed has a lock count of 2 and is, therefore, a
 
 You can find this thread by listing all threads with the [**~ (Thread Status)**](---thread-status-.md) command, and looking for the thread with this ID:
 
-```
+```dbgcmd
 0:006>  ~ 
    0  Id: 1364.1330 Suspend: 1 Teb: 7ffdf000 Unfrozen
    1  Id: 1364.17e0 Suspend: 1 Teb: 7ffde000 Unfrozen
@@ -87,7 +83,7 @@ In this display, the first item is the debugger's internal thread number. The se
 
 You then use the [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command to display the stack that corresponds to thread number 4:
 
-```
+```dbgcmd
 0:006>  ~4 kb 
   4  id: 97.a3   Suspend: 0 Teb 7ffd9000 Unfrozen
 ChildEBP RetAddr  Args to Child
@@ -109,7 +105,7 @@ Notice that this thread has a call to the **WaitForCriticalSection** function, w
 
 In other words, thread 4, which owns the second critical section, is waiting on the third critical section. Now turn your attention to the third critical section, which is also locked. The owning thread has thread ID 0xA9. Returning to the output of the **~** command that you saw previously, note that the thread with this ID is thread number 6. Display the stack backtrace for this thread:
 
-```
+```dbgcmd
 0:006>  ~6 kb 
 ChildEBP RetAddr  Args to Child
 0155fe38 77f6cc7b 00000414 00000000 00000000 ntdll!NtWaitForSingleObject+0xb
@@ -151,9 +147,9 @@ When a deadlock occurs in kernel mode, use the **!kdexts.locks** extension to li
 
 You can usually pinpoint the deadlock by finding one non-executing thread that holds an exclusive lock on a resource that is required by an executing thread. Most of the locks are shared.
 
- 
+ 
 
- 
+ 
 
 
 

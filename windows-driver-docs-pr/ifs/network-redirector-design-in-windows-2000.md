@@ -1,6 +1,5 @@
 ---
 title: Network Redirector Design in Windows 2000
-author: windows-driver-content
 description: Network Redirector Design in Windows 2000
 ms.assetid: d5a78712-02ee-48f4-86b9-c294b41245a6
 keywords:
@@ -10,11 +9,7 @@ keywords:
 - RDBSS WDK file systems , Windows 2000
 - buffering code WDK network redirectors
 - kernel network redirectors WDK , Windows 2000
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -46,9 +41,9 @@ This RDBSS design change offers several of the following benefits:
 
 The RDBSS model was introduced with Windows 2000. This same model is also used on Windows Server 2003 and Windows XP.
 
- 
+ 
 
- 
+ 
 
 
 

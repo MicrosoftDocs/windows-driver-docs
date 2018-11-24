@@ -1,5 +1,5 @@
 ---
-title: FSCTL\_GET\_BOOT\_AREA\_INFO control code
+title: FSCTL_GET_BOOT_AREA_INFO control code
 description: The FSCTL\_GET\_BOOT\_AREA\_INFO control code retrieves the locations of boot sectors for a volume.
 ms.assetid: 0e842609-65f9-4a61-ab7f-f525650dfd14
 keywords: ["FSCTL_GET_BOOT_AREA_INFO control code Installable File System Drivers"]
@@ -11,11 +11,7 @@ api_location:
 - Ntifs.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -70,7 +66,7 @@ Status block
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>STATUS_SUCCESS</strong></p></td>
-<td align="left"><p>The operation was successful. OutputBuffer contains a pointer to a [<strong>BOOT_AREA_INFO</strong>](https://msdn.microsoft.com/library/windows/hardware/ff728836) structure.</p></td>
+<td align="left"><p>The operation was successful. OutputBuffer contains a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff728836" data-raw-source="[&lt;strong&gt;BOOT_AREA_INFO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff728836)"><strong>BOOT_AREA_INFO</strong></a> structure.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>STATUS_INVALID_PARAMETER</strong></p></td>
@@ -87,7 +83,7 @@ Status block
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -119,9 +115,9 @@ Requirements
 
 [**DeviceIoControl**](https://msdn.microsoft.com/library/windows/desktop/aa363216)
 
- 
+ 
 
- 
+ 
 
 
 

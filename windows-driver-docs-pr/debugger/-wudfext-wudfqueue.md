@@ -3,11 +3,7 @@ title: wudfext.wudfqueue
 description: The wudfext.wudfqueue extension displays information about an I/O queue.
 ms.assetid: b3ede1af-c85a-42d6-a8e5-e4094dd80d1c
 keywords: ["wudfext.wudfqueue Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!wudfext.wudfqueue** extension displays information about an I/O queue.
 
-```
+```dbgcmd
 !wudfext.wudfqueue pWDFQueue
 ```
 
@@ -51,7 +47,7 @@ Specifies the address of the **IWDFIoQueue** interface to display information ab
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -62,7 +58,7 @@ Remarks
 
 The following is an example of the **!wudfext.wudfqueue** display:
 
-```
+```dbgcmd
 kd> !wudfqueue 0x000f3500 
     WdfIoQueueDispatchSequential, POWER MANAGED, WdfIoQueuePowerOn, CAN ACCEPT, CAN DISPATCH
     Number of driver owned requests: 1
@@ -80,9 +76,9 @@ kd> !wudfqueue 0x000f3500
       IQueueCallbackWrite 0x000f3440
 ```
 
- 
+ 
 
- 
+ 
 
 
 

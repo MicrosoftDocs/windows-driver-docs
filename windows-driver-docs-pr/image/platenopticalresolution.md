@@ -9,11 +9,7 @@ api_name:
 - wscn PlatenOpticalResolution
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **PlatenOpticalResolution** element specifies the maximum optical r
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:PlatenOpticalResolution>
   child elements
 </wscn:PlatenOpticalResolution>
@@ -50,10 +46,10 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>Height</strong>](height.md)</p></td>
+<td><p><a href="height.md" data-raw-source="[&lt;strong&gt;Height&lt;/strong&gt;](height.md)"><strong>Height</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>Width</strong>](width.md)</p></td>
+<td><p><a href="width.md" data-raw-source="[&lt;strong&gt;Width&lt;/strong&gt;](width.md)"><strong>Width</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -72,7 +68,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>Platen</strong>](platen.md)</p></td>
+<td><p><a href="platen.md" data-raw-source="[&lt;strong&gt;Platen&lt;/strong&gt;](platen.md)"><strong>Platen</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -84,7 +80,7 @@ Resolution is specified as a [**Width**](width.md) x [**Height**](height.md) pai
 
 If the Height element is not specified, the WSD Scan Service should assume a square image resolution. For example, if only a **Width** element of 100 is provided, assume a resolution is 100 x 100 pixels per square inch.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**Height**](height.md)
@@ -93,9 +89,9 @@ If the Height element is not specified, the WSD Scan Service should assume a squ
 
 [**Width**](width.md)
 
- 
+ 
 
- 
+ 
 
 
 

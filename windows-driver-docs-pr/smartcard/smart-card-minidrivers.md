@@ -2,11 +2,7 @@
 title: Smart Card Minidrivers
 description: Smart Card Minidrivers
 ms.assetid: BE24E8C3-663A-47A3-B30C-CBB0AEF89E45
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -44,9 +40,9 @@ The following figure shows the interfaces between card minidrivers and CAPI2-bas
 
 It is recommend that developers take advantage of the rich set of libraries that Microsoft provides for cryptographic operations that the minidriver performs. This lets developers benefit from the Microsoft Windows Update infrastructure for the distribution of critical security updates.
 
- 
+ 
 
- 
+ 
 
 
 

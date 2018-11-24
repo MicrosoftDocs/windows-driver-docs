@@ -1,6 +1,5 @@
 ---
 title: Error Record Persistence
-author: windows-driver-content
 description: Error Record Persistence
 ms.assetid: fe43f93a-59bd-4158-ad00-8fef595528cb
 keywords:
@@ -16,11 +15,7 @@ keywords:
 - hardware errors WDK WHEA , error record persistence
 - platform-specific hardware error driver plug-ins WDK WHEA , error record persistence
 - PSHED plug-ins WDK WHEA , error record persistence
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -41,9 +36,9 @@ For more information about how to implement a PSHED plug-in that participates in
 
 For more information about error record persistence, see [Error Record Persistence Mechanism](error-record-persistence-mechanism.md).
 
- 
+ 
 
- 
+ 
 
 
 

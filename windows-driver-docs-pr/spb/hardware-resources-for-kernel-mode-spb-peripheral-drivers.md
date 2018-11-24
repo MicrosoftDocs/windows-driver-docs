@@ -1,13 +1,8 @@
 ---
 title: Hardware Resources for Kernel-Mode SPB Peripheral Drivers
-author: windows-driver-content
 description: Code examples for a KMDF driver for a peripheral device on an SPB, and obtains the hardware resources.
 ms.assetid: ABFFCBEC-16AB-44AF-BEF6-34AEE612EAF7
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,7 +17,7 @@ When power is restored to the peripheral device, the driver framework calls the 
 
 The following code example shows how the *EvtDevicePrepareHardware* function obtains the connection ID from the *ResourcesTranslated* parameter.
 
-```
+```cpp
 BOOLEAN fConnectionIdFound = FALSE;
 LARGE_INTEGER connectionId = 0;
 ULONG resourceCount;
@@ -95,7 +90,7 @@ The preceding code example copies the connection ID for an SPB-connected periphe
 
 The following code example shows how to incorporate this connection ID into a device path name that can be used to open a logical connection to the peripheral device. This device path name identifies the resource hub as the system component from which to obtain the parameters required to access the peripheral device.
 
-```
+```cpp
 // Use the connection ID to create the full device path name.
  
 DECLARE_UNICODE_STRING_SIZE(szDeviceName, RESOURCE_HUB_PATH_SIZE);
@@ -115,7 +110,7 @@ In the preceding code example, the **DECLARE\_UNICODE\_STRING\_SIZE** macro crea
 
 The following code example uses the device path name to open a file handle (named `SpbIoTarget`) to the SPB-connected peripheral device.
 
-```
+```cpp
 // Open the SPB peripheral device as a remote I/O target.
  
 WDF_IO_TARGET_OPEN_PARAMS openParams;
@@ -142,7 +137,7 @@ In the *EvtDriverDeviceAdd* event callback function, the SPB peripheral driver c
 
 In the following code example, the driver calls **WdfIoTargetSendWriteSynchronously** to synchronously send an [**IRP\_MJ\_WRITE**](https://msdn.microsoft.com/library/windows/hardware/ff550819) request to the SPB-connected peripheral device. At the start of this example, the `pBuffer` variable points to a nonpaged buffer that contains the data that is to be written to the peripheral device, and the `dataSize` variable specifies the size, in bytes, of this data.
 
-```
+```cpp
 ULONG_PTR bytesWritten;
 NTSTATUS status;
 
@@ -180,9 +175,9 @@ The preceding code example does the following:
 
 In the **WdfIoTargetSendWriteSynchronously** call, the driver supplies a variable named `SpbRequest`, which is a handle to a framework request object that the driver previously created. After the **WdfIoTargetSendWriteSynchronously** call, the driver should typically call the [**WdfRequestReuse**](https://msdn.microsoft.com/library/windows/hardware/ff550026) method to prepare the framework request object to be used again.
 
- 
+ 
 
- 
+ 
 
 
 

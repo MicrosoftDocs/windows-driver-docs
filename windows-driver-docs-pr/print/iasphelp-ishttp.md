@@ -1,6 +1,5 @@
 ---
 title: Iasphelp get\_IsHTTP method
-author: windows-driver-content
 description: The IsHTTP property enables an ASP Web page to determine whether the printer is connected to an HTTP port.
 MS-HAID:
 - 'webfnc\_e3e58eea-498f-4e85-8072-2c49ac50d733.xml'
@@ -16,18 +15,18 @@ api_name:
 - Iasphelp.get_IsHTTP
 api_type:
 - COM
+ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # Iasphelp::get\_IsHTTP method
-
 
 The **IsHTTP** property enables an ASP Web page to determine whether the printer is connected to an HTTP port.
 
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT get_IsHTTP(
   [out] BOOL *pVal
 );
@@ -62,7 +61,7 @@ The property return one of the values in the following table.
 </tr>
 <tr class="even">
 <td><strong>E_HANDLE</strong></td>
-<td><p>The [<strong>Iasphelp::Open</strong>](iasphelp-open.md) method has not been called.</p></td>
+<td><p>The <a href="iasphelp-open.md" data-raw-source="[&lt;strong&gt;Iasphelp::Open&lt;/strong&gt;](iasphelp-open.md)"><strong>Iasphelp::Open</strong></a> method has not been called.</p></td>
 </tr>
 <tr class="odd">
 <td><strong>E_OUTOFMEMORY</strong></td>
@@ -71,21 +70,16 @@ The property return one of the values in the following table.
 </tbody>
 </table>
 
- 
-
-### <span id="vbscript_example"></span><span id="VBSCRIPT_EXAMPLE"></span>VBScript Example
-
-Remarks
--------
+## VBScript Example
 
 The [**Iasphelp::Open**](iasphelp-open.md) method must be called before the **Iasphelp::IsHTTP** property can be queried.
 
-```
-    Dim objPrinter, IsHTTPPort
-    strPrinter = Session("MS_printer")
-    Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
-    objPrinter.Open strPrinter
-    IsHTTPPort = objPrinter.IsHTTP
+```vb
+Dim objPrinter, IsHTTPPort
+strPrinter = Session("MS_printer")
+Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
+objPrinter.Open strPrinter
+IsHTTPPort = objPrinter.IsHTTP
 ```
 
 Requirements
@@ -101,22 +95,9 @@ Requirements
 <td><p>Target platform</p></td>
 <td>Desktop</td>
 </tr>
-<tr class="even">
-<td><p>Version</p></td>
-<td><p>Available in Windows 2000 and later versions of the Windows operating systems.</p></td>
-</tr>
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**Iasphelp::Open**](iasphelp-open.md)
-
- 
-
- 
-
-
-
-

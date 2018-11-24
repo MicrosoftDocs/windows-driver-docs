@@ -1,5 +1,5 @@
 ---
-title: FSCTL\_ENUM\_OVERLAY control code
+title: FSCTL_ENUM_OVERLAY control code
 description: The FSCTL\_ENUM\_OVERLAY control code enumerates all the data sources from a backing provider for a specified volume.
 ms.assetid: 146A7D77-034F-4C06-99B8-8EBA6E7F0A40
 keywords: ["FSCTL_ENUM_OVERLAY control code Installable File System Drivers"]
@@ -11,11 +11,7 @@ api_location:
 - ntifs.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -91,7 +87,7 @@ Status block
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -131,9 +127,9 @@ Requirements
 
 [**WOF\_EXTERNAL\_INFO**](https://msdn.microsoft.com/library/windows/hardware/dn632452)
 
- 
+ 
 
- 
+ 
 
 
 

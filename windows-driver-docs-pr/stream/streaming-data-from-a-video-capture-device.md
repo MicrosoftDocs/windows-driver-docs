@@ -1,16 +1,11 @@
 ---
 title: Streaming Data from a Video Capture Device
-author: windows-driver-content
 description: Streaming Data from a Video Capture Device
 ms.assetid: c83aae8e-70a7-4d65-a888-00a7c21eebdd
 keywords:
 - video capture WDK AVStream , streaming data from
 - capturing video WDK AVStream , streaming data from
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +28,9 @@ A minidriver must propagate a tuning packet from its tuner filter, through the c
 
 The minidriver must also propagate the tuning packet to the VBI output pins of its capture filter using the [video stream extended header](video-stream-extended-headers.md). VBI decoders that operate as a chain must similarly propagate the extended header information from their input pins to their output pins.
 
- 
+ 
 
- 
+ 
 
 
 

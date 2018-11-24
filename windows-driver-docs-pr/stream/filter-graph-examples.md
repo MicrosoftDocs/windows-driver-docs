@@ -1,6 +1,5 @@
 ---
 title: Filter Graph Examples
-author: windows-driver-content
 description: Filter Graph Examples
 ms.assetid: 7888da79-b21d-4935-ac6c-25ef2f947931
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - capturing video WDK AVStream , filter graph configurations
 - filter graph configurations WDK video capture
 - filter graph configurations WDK video capture , listed
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +26,9 @@ Video capture minidrivers can expose a variety of filters that correspond to the
 
 [Video port based capture](video-port-based-capture.md)
 
- 
+ 
 
- 
+ 
 
 
 

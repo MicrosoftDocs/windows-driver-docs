@@ -3,11 +3,7 @@ title: Debug Menu
 description: Debug Menu
 ms.assetid: 52bad9c4-91e8-48e8-a6b6-41208ca0aa6b
 keywords: ["Debug Menu (complete listing)", "graphical interface, debug menu"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -55,9 +51,9 @@ This section describes the following commands on the **Debug** menu of WinDbg:
 
 [Debug | Kernel Connection | Resynchronize](debug---kernel-connection---resynchronize.md)
 
- 
+ 
 
- 
+ 
 
 
 

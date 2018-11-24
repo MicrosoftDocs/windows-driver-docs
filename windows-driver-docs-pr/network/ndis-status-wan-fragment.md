@@ -1,13 +1,8 @@
 ---
 title: NDIS_STATUS_WAN_FRAGMENT
-author: windows-driver-content
 description: The NDIS_STATUS_WAN_FRAGMENT status indicates that a WAN-capable miniport driver has received a partial packet from a remote node.
 ms.assetid: 1ac00110-8b97-4905-b409-454e3d9a09e0
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WAN_FRAGMENT Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -56,9 +51,9 @@ Requirements
 
 [**NdisMIndicateStatus**](https://msdn.microsoft.com/library/windows/hardware/ff553538)
 
- 
+ 
 
- 
+ 
 
 
 

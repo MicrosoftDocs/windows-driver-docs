@@ -2,11 +2,7 @@
 title: PackageInfo XML elements
 description: PackageInfo XML elements
 ms.assetid: eb08c164-d901-4806-a9f1-f538f3ff00e3
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -50,9 +46,9 @@ This section describes the XML elements defined by the [PackageInfo XML schema](
 
         -   [Version](version.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -13,11 +13,7 @@ keywords:
 - geometry blending WDK Direct3D
 - joint blending WDK Direct3D
 - matrix vertex blending WDK Direct3D
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -63,9 +59,9 @@ The following sections provide implementation details for multimatrix vertex ble
 
 [D3DRENDERSTATETYPE Changes](d3drenderstatetype-changes.md)
 
- 
+ 
 
- 
+ 
 
 
 

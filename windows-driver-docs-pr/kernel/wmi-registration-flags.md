@@ -1,14 +1,9 @@
 ---
 title: WMI Registration Flags
-author: windows-driver-content
 description: WMI Registration Flags
 ms.assetid: 001d4840-0ed4-464d-8379-7bbd0afce28c
 keywords: ["dynamic instance names WDK WMI", "static instance names WDK WMI", "registration flags WDK WMI", "flags WDK WMI", "WMI WDK kernel , registering with WMI", "registering WMI data providers", "data providers WDK WMI", "driver registrations WDK WMI", "event blocks WDK WMI", "blocks WDK WMI", "registering blocks"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -46,9 +41,9 @@ A driver indicates an event block by setting WMIREG\_FLAG\_EVENT\_ONLY\_GUID. Th
 
 A driver instructs WMI to remove a previously registered block by setting WMIREG\_FLAG\_REMOVE\_GUID. This flag is valid only in response to a request to update registration information ([**IRP\_MN\_REGINFO**](https://msdn.microsoft.com/library/windows/hardware/ff551731) or [**IRP\_MN\_REGINFO\_EX**](https://msdn.microsoft.com/library/windows/hardware/ff551734) with WMIUPDATE). For more information, see [Updating WMI Registration Information](updating-wmi-registration-information.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,16 +1,11 @@
 ---
 title: Starting a BDA Minidriver
-author: windows-driver-content
 description: Starting a BDA Minidriver
 ms.assetid: c71e1483-756c-4e98-a413-64ff02ee4a9b
 keywords:
 - BDA minidrivers WDK AVStream , starting
 - starting BDA minidrivers WDK AVStream
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,7 +28,7 @@ When a BDA device starts operating, the Plug and Play (PnP) manager dispatches [
 
 The following code snippet shows an example of an initial filter descriptor for the device that **BdaCreateFilterFactory** sets as the filter factory:
 
-```
+```cpp
 const KSFILTER_DESCRIPTOR    InitialTunerFilterDescriptor;
 //
 //  Filter Factory Descriptor for the tuner filter
@@ -69,7 +64,7 @@ DEFINE_KSFILTER_DESCRIPTOR(InitialTunerFilterDescriptor)
 
 The following code snippet shows an example of an array of initial pin descriptors that are exposed by an initialized filter. The network provider initializes a filter using such an array before the network provider configures that filter. However, when configuring an initialized filter, the network provider selects pins that are referenced in the pointer to the filter descriptor member of the BDA\_FILTER\_TEMPLATE structure. See [Configuring a BDA Filter](configuring-a-bda-filter.md) for more information.
 
-```
+```cpp
 //
 //  Initial Pin Descriptors
 //
@@ -113,7 +108,7 @@ Note that an initialized filter must have one or more input pins exposed so that
 
 The following code snippet shows examples of a BDA\_FILTER\_TEMPLATE structure and related structures and arrays:
 
-```
+```cpp
 const KSFILTER_DESCRIPTOR  TemplateTunerFilterDescriptor;
 const BDA_PIN_PAIRING  *TemplateTunerPinPairings;
 //
@@ -187,9 +182,9 @@ BDA_PIN_PAIRING TemplateTunerPinPairings[] =
 };
 ```
 
- 
+ 
 
- 
+ 
 
 
 

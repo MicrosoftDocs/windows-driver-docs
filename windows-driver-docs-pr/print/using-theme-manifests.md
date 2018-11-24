@@ -1,13 +1,8 @@
 ---
 title: Using Theme Manifests
-author: windows-driver-content
 description: Using Theme Manifests
 ms.assetid: 8b3feb56-501b-4f35-937e-0be99338ae01
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,9 +19,9 @@ An application can have a global (or application) manifest. If this global manif
 
 For more information about manifests and assemblies, activation contexts, isolated applications and side-by-side assembly sharing, see the Microsoft Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

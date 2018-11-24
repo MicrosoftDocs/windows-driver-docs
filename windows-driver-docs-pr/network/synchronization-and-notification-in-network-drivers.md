@@ -13,11 +13,7 @@ keywords:
 - timers WDK networking
 - event notifications WDK networking
 - events WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -56,17 +52,17 @@ A driver must take care not to overprotect a queue. For example, the driver can 
 
 To avoid a possible deadlock, an NDIS driver should release all NDIS spin locks before calling an NDIS function other than an **Ndis*Xxx*Spinlock** function. If an NDIS driver does not comply with this requirement, a deadlock could occur as follows:
 
-1.  Thread 1, which holds NDIS spin lock A, calls an **Ndis*Xxx*** function that attempts to acquire NDIS spin lock B by calling the [**NdisAcquireSpinLock**](https://msdn.microsoft.com/library/windows/hardware/ff560699) function.
+1. Thread 1, which holds NDIS spin lock A, calls an **Ndis*Xxx*** function that attempts to acquire NDIS spin lock B by calling the [**NdisAcquireSpinLock**](https://msdn.microsoft.com/library/windows/hardware/ff560699) function.
 
-2.  Thread 2, which holds NDIS spin lock B, calls an **Ndis*Xxx*** function that attempts to acquire NDIS spin lock A by calling the **NdisAcquireSpinLock** function.
+2. Thread 2, which holds NDIS spin lock B, calls an **Ndis*Xxx*** function that attempts to acquire NDIS spin lock A by calling the **NdisAcquireSpinLock** function.
 
-3.  Thread 1 and thread 2, which are each waiting for the other to release its spin lock, become deadlocked.
+3. Thread 1 and thread 2, which are each waiting for the other to release its spin lock, become deadlocked.
 
 Microsoft Windows operating systems do not restrict a network driver from simultaneously holding more than one spin lock. However, if one section of the driver attempts to acquire spin lock A while holding spin lock B, and another section attempts to acquire spin lock B while holding spin lock A, deadlock results. If it acquires more than one spin lock, a driver should avoid deadlock by enforcing an order of acquisition. That is, if a driver enforces acquiring spin lock A before spin lock B, the situation described above will not occur.
 
 Acquiring a spin lock raises the IRQL to DISPATCH\_LEVEL and stores the old IRQL in the spin lock. Releasing the spin lock sets the IRQL to the value stored in the spin lock. Because NDIS sometimes enters drivers at PASSIVE\_LEVEL, problems can arise with the following code sequence:
 
-```
+```syntax
 NdisAcquireSpinLock(A);
 NdisAcquireSpinLock(B);
 NdisReleaseSpinLock(A);
@@ -98,9 +94,9 @@ Typically, the event is set by a cooperating thread that calls **NdisSetEvent**.
 
 [Multiprocessor Support in Network Drivers](multiprocessor-support-in-network-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

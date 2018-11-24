@@ -1,13 +1,8 @@
 ---
 title: OID_WDI_ABORT_TASK
-author: windows-driver-content
 description: OID_WDI_ABORT_TASK is a property that is sent down to cancel a specific pending task.
 ms.assetid: 0E454DC9-1CED-497F-90A8-7065883BB945
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - OID_WDI_ABORT_TASK Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -22,7 +17,7 @@ OID\_WDI\_ABORT\_TASK is a property that is sent down to cancel a specific pendi
 |-------|--------------------------|---------------------------------|
 | Port  | No                       | 1                               |
 
- 
+ 
 
 This command follows property semantics. It should be treated as a signal, should be handled as quickly as possible, and should be completed independently of task completion. The IHV component must then attempt to complete the pending task as soon as possible.
 
@@ -33,7 +28,7 @@ This command follows property semantics. It should be treated as a signal, shoul
 |------------------------------------------------------------------------|--------------------------------|----------|------------------------------------------------------|
 | [**WDI\_TLV\_CANCEL\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/dn926163) |                                |          | Information for the command that is being cancelled. |
 
- 
+ 
 
 ## Command result
 
@@ -78,7 +73,7 @@ TLV Payload
 TLV Payload
 Various
 Payload data
- 
+ 
 
 Abort task input command (with message header):
 
@@ -122,7 +117,7 @@ UINT16
 OriginalTransactionId
 UINT32
 0x1111 (example)
- 
+ 
 
 Abort task command result:
 
@@ -156,7 +151,7 @@ UINT32
 IhvSpecificId
 UINT32
 N/A
- 
+ 
 
 Requirements
 ------------
@@ -182,9 +177,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

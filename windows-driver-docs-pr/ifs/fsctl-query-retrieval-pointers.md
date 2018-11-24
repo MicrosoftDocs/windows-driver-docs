@@ -1,5 +1,5 @@
 ---
-title: FSCTL\_QUERY\_RETRIEVAL\_POINTERS control code
+title: FSCTL_QUERY_RETRIEVAL_POINTERS control code
 description: The FSCTL\_QUERY\_RETRIEVAL\_POINTERS control code retrieves a mapping between virtual cluster numbers (VCN, offsets within the file/stream space) and logical cluster numbers (LCN, offsets within the volume space), starting at the beginning of the file up to the map size specified in InputBuffer.
 ms.assetid: 463a5cb9-d4eb-42d6-9103-956b45a5abfb
 keywords: ["FSCTL_QUERY_RETRIEVAL_POINTERS control code Installable File System Drivers"]
@@ -11,11 +11,7 @@ api_location:
 - Ntifs.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -48,7 +44,7 @@ Length, in bytes, of the input buffer at *InputBuffer*.
 <a href="" id="outputbuffer"></a>*OutputBuffer*  
 A pointer to a buffer of paged pool memory that contains an array of elements of the following type:
 
-```
+```cpp
 struct {
  LONGLONG  SectorLengthInBytes;
  LONGLONG  StartingLogicalOffsetInBytes;
@@ -95,9 +91,9 @@ Requirements
 
 [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462)
 
- 
+ 
 
- 
+ 
 
 
 

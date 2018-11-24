@@ -5,11 +5,7 @@ ms.assetid: 87a43865-74bc-412c-9ae2-3ba38589c8f8
 keywords:
 - device installations WDK , device properties
 - device properties WDK device installations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,9 +20,9 @@ Microsoft Windows Server 2003, Windows XP, and Windows 2000 do not support this 
 
 For reference information about the components of the unified device property model—including device property functions, system-defined device properties, data structures, and INF file directives—see [Device Property Reference](https://msdn.microsoft.com/library/windows/hardware/ff541483).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -4,11 +4,7 @@ description: DirectX Runtime Behavior
 ms.assetid: 98cfb09c-74ed-4329-b663-5f813a84debe
 keywords:
 - DirectX runtime rotation WDK display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,9 +19,9 @@ Various versions of the Microsoft DirectX runtime handle the following rotation 
 
 -   All versions of the DirectX runtime handle all accesses to a rotated primary surface that are made by a windowed-mode device that uses various forms of emulation.
 
- 
+ 
 
- 
+ 
 
 
 

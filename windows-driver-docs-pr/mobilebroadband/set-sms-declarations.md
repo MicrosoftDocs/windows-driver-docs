@@ -2,11 +2,7 @@
 title: Set SMS declarations
 description: Set SMS declarations
 ms.assetid: fad7fb60-eb08-43e9-bc58-afb8d6b5633c
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -47,9 +43,9 @@ The mobile broadband device can determine which apps it trusts to send and recei
 
 [Developing SMS apps](developing-sms-apps.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: Starting Device Installation Applications through Co-installers
 description: Guidelines for Starting Device Installation Applications through Co-installers
 ms.assetid: 94b21eef-5660-4d05-8eb5-da6589c85e65
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,9 +31,9 @@ The following guidelines must be followed for co-installers which supply [finish
 
 For more information about co-installers, see [Writing a Co-installer](writing-a-co-installer.md).
 
- 
+ 
 
- 
+ 
 
 
 

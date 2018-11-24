@@ -2,11 +2,7 @@
 title: Release-Signing a Driver Package's Catalog File
 description: Release-Signing a Driver Package's Catalog File
 ms.assetid: 8bfedf24-403a-406e-993d-5ab8cc790f60
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,7 +27,7 @@ The following command line shows how to run SignTool to do the following:
 
 To release-sign the *tstamd64.cat* catalog file, run the following command line:
 
-```
+```cpp
 Signtool sign /v /ac MSCV-VSClass3.cer /s MyPersonalStore /n contoso.com /t http://timestamp.verisign.com/scripts/timstamp.dll tstamd64.cat
 ```
 
@@ -50,7 +46,7 @@ Where:
 -   The **/t** option specifies URL of the TSA (*http://timestamp.verisign.com/scripts/timstamp.dll*) which will timestamp the digital signature.
     **Important**   Including a time stamp provides the necessary information for key revocation in case the signer's code signing private key is compromised.
 
-     
+     
 
 -   *tstamd64.cat* specifies the name of the catalog file, which will be digitally-signed.
 
@@ -58,9 +54,9 @@ For more information about SignTool and its command-line arguments, see [**SignT
 
 For more information about release-signing driver packages, see [Release-Signing Driver Packages](release-signing-driver-packages.md).
 
- 
+ 
 
- 
+ 
 
 
 

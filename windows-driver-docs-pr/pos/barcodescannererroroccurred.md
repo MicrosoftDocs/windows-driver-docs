@@ -1,21 +1,20 @@
 ---
 title: BarcodeScannerErrorOccurred
-description: BarcodeScannerErrorOccurred
+description: The BarcodeScannerErrorOccurred event occurs when there is an error, such as a scanning error.
 ms.assetid: '38cfbd87-0526-49d1-8580-96f4e1adf7bb'
+ms.date: 09/07/2018
 ms.localizationpriority: medium
 ---
 
 # BarcodeScannerErrorOccurred
 
-
 This event occurs when there is an error, such as a scanning error.
 
 The data buffer for this event is as follows.
 
-Syntax
-------
+## Syntax
 
-``` syntax
+```cpp
 // Error occurred data should fill the ReadFile buffer in this order:
 //    PosBarcodeScannerErrorOccurredEventData structure (length = sizeof(PosBarcodeScannerErrorOccurredEventData))
 //    Error Message (length = MessageLength)
@@ -59,22 +58,10 @@ The following table shows the memory layout of the data buffer for this event.
 
 
 
-Remarks
--------
+## Remarks
 
 If a scanning error occurs, and some scan data was obtained, the event data contains the partial scan data.
 
-Requirements
-------------
+## Requirements
 
 **Header:** pointofservicedriverinterface.h
-
-
-
-
-
-
-
-
-
-

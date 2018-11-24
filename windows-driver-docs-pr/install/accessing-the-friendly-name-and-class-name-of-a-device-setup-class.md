@@ -2,11 +2,7 @@
 title: Accessing Friendly Name and Class Name of a Device Setup Class
 description: Accessing the Friendly Name and Class Name of a Device Setup Class
 ms.assetid: 52775fc6-1c52-4bed-a943-1afcee67e7e9
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,9 +19,9 @@ Windows Server 2003, Windows XP, and Windows 2000 also support these device setu
 
 To maintain compatibility with these earlier versions of Windows, Windows Vista and later versions also support these mechanisms to access the friendly name and class name of a device setup class. However, you should use the property keys to access these properties in Windows Vista and later versions.
 
- 
+ 
 
- 
+ 
 
 
 

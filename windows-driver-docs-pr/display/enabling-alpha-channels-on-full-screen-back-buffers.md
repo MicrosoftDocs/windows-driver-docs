@@ -8,11 +8,7 @@ keywords:
 - primary flipping chain WDK DirectX 8.0
 - full-screen flipping chain WDK DirectX 8.0
 - alpha channels WDK DirectX 8.0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +30,9 @@ If the driver detects this bit, the driver determines that the surfaces take on 
 
 This feature is available on Windows XP and later versions and on Windows 2000 operating system versions that have the DirectX 8.1 runtime installed.
 
- 
+ 
 
- 
+ 
 
 
 

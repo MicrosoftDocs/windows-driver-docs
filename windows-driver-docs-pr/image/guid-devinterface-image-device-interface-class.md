@@ -2,11 +2,7 @@
 title: GUID\_DEVINTERFACE\_IMAGE Device Interface Class
 description: GUID\_DEVINTERFACE\_IMAGE Device Interface Class
 ms.assetid: 2bf0bb35-c047-481e-a0f3-b8a8c06e259b
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,7 +34,7 @@ The image [device interface class](https://msdn.microsoft.com/library/windows/ha
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="headers"></span><span id="HEADERS"></span>Headers
 
@@ -50,9 +46,9 @@ The system-supplied kernel-mode drivers for still image devices register an inst
 
 This interface is applicable to both still image drivers and WIA drivers and is available for Microsoft Windows XP and later versions of Windows.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -7,11 +7,7 @@ keywords:
 - NDIS intermediate drivers WDK , events
 - Plug and Play WDK networking , intermediate drivers
 - power management WDK networking , intermediate drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -43,9 +39,9 @@ This section includes the following topics:
 
 [Handling a Set Power Request](handling-a-set-power-request.md)
 
- 
+ 
 
- 
+ 
 
 
 

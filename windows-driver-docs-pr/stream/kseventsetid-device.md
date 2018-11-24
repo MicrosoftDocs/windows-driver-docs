@@ -9,11 +9,7 @@ api_name:
 - KSEVENTSETID_Device
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,9 +20,9 @@ The **KSEVENTSETID\_Device** event set specifies device events that can be enabl
 
 [**KSEVENT\_DEVICE\_LOST**](ksevent-device-lost.md)
 [**KSEVENT\_DEVICE\_PREEMPTED**](ksevent-device-preempted.md)
- 
+ 
 
- 
+ 
 
 
 

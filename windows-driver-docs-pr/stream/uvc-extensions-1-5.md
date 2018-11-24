@@ -1,11 +1,7 @@
 ---
 title: Microsoft extensions to USB Video Class 1.5 specification
 description: Describes Microsoft extensions to the USB Video Class 1.5 Specification that enables new controls as well as the capability to carry well-defined frame-metadata in a standard format.
-ms.author: windowsdriverdev
 ms.date: 01/30/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -53,7 +49,7 @@ When this entry is set to Enabled (0x1), the capture pipeline will leverage Meth
 
 An example for the custom INF section would be as follows:
 
-```
+```INF
 [USBVideo.NT.Interfaces]
 AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,USBVideo.Interface
 AddInterface=%KSCATEGORY_RENDER%,GLOBAL,USBVideo.Interface
@@ -75,7 +71,7 @@ HKR,,EnableDependentStillPinCapture,0x00010001,0x00000001
 
 Microsoft’s extension to the **USB Video Class specification** for enabling new controls is done through an extension unit identified by GUID MS_CAMERA_CONTROL_XU (referred to as Microsoft-XU).
 
-```
+```cpp
 // {0F3F95DC-2632-4C4E-92C9-A04782F43BC8}
 DEFINE_GUID(MS_CAMERA_CONTROL_XU,
     0xf3f95dc, 0x2632, 0x4c4e, 0x92, 0xc9, 0xa0, 0x47, 0x82, 0xf4, 0x3b, 0xc8);
@@ -247,7 +243,7 @@ The Microsoft standard-format metadata is one or more instances of the following
 
 ![Standard format metadata](images/extension-standard-format-metadata.png)
 
-```
+```cpp
 typedef struct tagKSCAMERA_METADATA_ITEMHEADER {
     ULONG MetadataId;
     ULONG Size; // Size of this header + metadata payload following
@@ -256,7 +252,7 @@ typedef struct tagKSCAMERA_METADATA_ITEMHEADER {
 
 The MetadataId field is filled by an identifier from the following enum definition which contains well-defined identifiers as well as custom identifiers (identifiers >= MetadataId_Custom_Start).
 
-```
+```cpp
 typedef enum {
     MetadataId_Standard_Start = 1,
     MetadataId_PhotoConfirmation = MetadataId_Standard_Start,
@@ -348,7 +344,7 @@ The firmware can choose whether or not to produce metadata corresponding to an i
 
 The metadata format for this identifier is defined by the following structure:
 
-```
+```cpp
 typedef struct tagKSCAMERA_METADATA_CAPTURESTATS {
     KSCAMERA_METADATA_ITEMHEADER Header;
     ULONG Flags;
@@ -370,7 +366,7 @@ typedef struct tagKSCAMERA_METADATA_CAPTURESTATS {
 
 The **Flags** field indicates which of the later fields in the structure are filled and have valid data. The Flags field shall not vary from frame to frame. Currently, the following flags are defined:
 
-```
+```cpp
 #define KSCAMERA_METADATA_CAPTURESTATS_FLAG_EXPOSURETIME            0x00000001
 #define KSCAMERA_METADATA_CAPTURESTATS_FLAG_EXPOSURECOMPENSATION    0x00000002
 #define KSCAMERA_METADATA_CAPTURESTATS_FLAG_ISOSPEED                0x00000004
@@ -420,7 +416,7 @@ The metadata format for this identifier involves the standard KSCAMERA_METADATA_
 
 The metadata format for this identifier is defined by the following structure:
 
-```
+```cpp
 typedef struct tagKSCAMERA_METADATA_FRAMEILLUMINATION {
     KSCAMERA_METADATA_ITEMHEADER Header;
     ULONG Flags;
@@ -429,7 +425,7 @@ typedef struct tagKSCAMERA_METADATA_FRAMEILLUMINATION {
 ```
 The **Flags** field indicates information about the captured frame. Currently, the following flags are defined:
 
-```
+```cpp
 #define KSCAMERA_METADATA_FRAMEILLUMINATION_FLAG_ON 0x00000001
 ```
 

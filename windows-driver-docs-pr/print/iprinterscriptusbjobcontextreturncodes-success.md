@@ -1,6 +1,5 @@
 ---
 title: IPrinterScriptUsbJobContextReturnCodes Success method
-author: windows-driver-content
 description: Returns a value of zero (0) to inform USBMon that the function call completed successfully.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
@@ -13,18 +12,18 @@ api_name:
 - IPrinterScriptUsbJobContextReturnCodes.Success
 api_type:
 - COM
+ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # IPrinterScriptUsbJobContextReturnCodes::Success method
-
 
 Returns a value of zero (0) to inform USBMon that the function call completed successfully.
 
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT Success(
   [out, retval] UINT32 *value
 );
@@ -70,15 +69,6 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**IPrinterScriptUsbJobContextReturnCodes**](iprinterscriptusbjobcontextreturncodes.md)
-
- 
-
- 
-
-
-
-

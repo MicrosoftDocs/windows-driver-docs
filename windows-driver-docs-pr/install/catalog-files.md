@@ -12,11 +12,7 @@ keywords:
 - digital signatures WDK , catalog files
 - signatures WDK , catalog files
 - catalog files WDK driver signing
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -39,9 +35,9 @@ Starting with Windows 2000, if the [driver package](driver-packages.md) installs
 
 If you have more than one driver package, you should create a separate catalog file for each driver package and give each catalog file a unique file name. Two unrelated driver packages cannot share a single catalog file. However, a single driver package that serves multiple devices requires only one catalog file.
 
- 
+ 
 
- 
+ 
 
 
 

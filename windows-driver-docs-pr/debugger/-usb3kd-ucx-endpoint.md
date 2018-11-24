@@ -3,11 +3,7 @@ title: usb3kd.ucx_endpoint
 description: The usb3kd.ucx_endpoint command displays information about an endpoint on a USB device in the USB 3.0 tree. The display is based on data maintained by UcxVersion.sys.
 ms.assetid: 37667665-ACA1-48D3-B79E-5B9BBD689034
 keywords: ["usb3kd.ucx_endpoint Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The [**!usb3kd.ucx\_endpoint**](-usb3kd-device-info.md) command displays information about an endpoint on a USB device in the [USB 3.0 tree](usb-3-extensions.md#usb-3-tree). The display is based on data structures maintained by the USB host controller extension driver (Ucx*Version*.sys).
 
-```
+```dbgcmd
 !usb3kd.ucx_endpoint UcxEndpointPrivContext
 ```
 
@@ -47,7 +43,7 @@ Examples
 
 To obtain the address of the UCX endpoint private context, look at the output of the [**!ucx\_controller\_list**](-usb3kd-ucx-controller-list.md) command. In the following example, the address of the private context for the first endpoint on the second device is 0xfffffa8003694860.
 
-```
+```dbgcmd
 3: kd> !ucx_controller_list
 
 ## Dumping List of UCX controller objects
@@ -69,7 +65,7 @@ To obtain the address of the UCX endpoint private context, look at the output of
 
 Now you can pass the address of the UCX endpoint private context to the **!ucx\_endpoint** command.
 
-```
+```dbgcmd
 3: kd> !ucx_endpoint 0xfffffa8003694860
 
 ## Dumping Ucx USB Endpoint Information fffffa8003694860
@@ -102,11 +98,11 @@ EventCallbacks:
 
 [**!usb3kd.ucx\_controller\_list**](-usb3kd-ucx-controller-list.md)
 
-[Universal Serial Bus (USB) Drivers](http://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
- 
+ 
 
- 
+ 
 
 
 

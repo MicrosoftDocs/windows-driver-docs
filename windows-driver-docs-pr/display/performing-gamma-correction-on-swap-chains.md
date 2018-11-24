@@ -5,11 +5,7 @@ ms.assetid: 4912cd15-bd56-43b6-9419-66917bf3f72c
 keywords:
 - gamma correction WDK DirectX 9.0 , swap chains
 - swap chains WDK DirectX 9.0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ The driver sets the D3DCAPS3\_LINEAR\_TO\_SRGB\_PRESENTATION capability bit in t
 
 For more information about **IDirect3DSwapChain*Xxx*::Present**, see the latest DirectX SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

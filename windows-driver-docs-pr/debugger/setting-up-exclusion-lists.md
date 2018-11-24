@@ -3,11 +3,7 @@ title: Setting Up Exclusion Lists
 description: Setting Up Exclusion Lists
 ms.assetid: 0b50e8a6-f68c-43e5-b8d5-4b2c40252d38
 keywords: ["SymProxy, exclusion lists"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -18,7 +14,7 @@ In some environments, you may find yourself debugging systems that have a large 
 
 The exclusion list is made up of the names of the files for which you want to prevent processing. The file names can contain wildcards. For example:
 
-```
+```console
 dbghelp.pdb
 symsrv.*
 mso*
@@ -26,7 +22,7 @@ mso*
 
 The list can be implemented in two ways. The first is in an .ini file, %WINDIR%\\system32\\inetsrv\\Symsrv.ini. A section called "exclusions" should contain the list:
 
-```
+```console
 [exclusions]
 dbghelp.pdb
 symsrv.*
@@ -35,7 +31,7 @@ mso*
 
 Alternatively, you can store the exclusions in the registry. Create a key named
 
-```
+```text
 HKLM\ Software\Microsoft\Symbol Server\Exclusions
 ```
 
@@ -45,11 +41,11 @@ SymProxy reads from the exclusion list every half-hour so that you do not need t
 
 **Note**   SymProxy does not support the use of both Symsrv.ini and the registry. If the .ini file exists, it is used. Otherwise, the registry is checked.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

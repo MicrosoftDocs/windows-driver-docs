@@ -1,6 +1,5 @@
 ---
 title: KS Data Formats and Data Ranges
-author: windows-driver-content
 description: KS Data Formats and Data Ranges
 ms.assetid: 44b55a5a-ec58-4c1e-b780-e20829fe3edf
 keywords:
@@ -16,11 +15,7 @@ keywords:
 - KS WDK , data ranges
 - kernel streaming WDK , data formats
 - KS WDK , data formats
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -52,9 +47,9 @@ Once a pin is instantiated, a user-mode client can determine the current data fo
 
 KS minidrivers and clients can dynamically negotiate data formats. When the data format of a stream changes, the minidriver specifies the KSSTREAM\_HEADER\_OPTIONSF\_DATADISCONTINUITY flag in the **OptionsFlags** member of a KSSTREAM\_HEADER. The minidriver passes the new data format itself, described in a [**KSDATAFORMAT**](https://msdn.microsoft.com/library/windows/hardware/ff561656) structure, in the corresponding data buffer.
 
- 
+ 
 
- 
+ 
 
 
 

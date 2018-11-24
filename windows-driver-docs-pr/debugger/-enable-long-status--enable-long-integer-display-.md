@@ -3,11 +3,7 @@ title: .enable_long_status (Enable Long Integer Display)
 description: The .enable_long_status command specifies whether the debugger displays long integers in decimal format or in the default radix.
 ms.assetid: e08f5a40-5246-4120-ae43-37e876269463
 keywords: ["Enable Long Integer Display (.enable_long_status) command", ".enable_long_status (Enable Long Integer Display) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **.enable\_long\_status** command specifies whether the debugger displays long integers in decimal format or in the default radix.
 
-```
+```dbgcmd
 .enable_long_status 0 
 .enable_long_status 1
 ```
@@ -59,7 +55,7 @@ Displays all long integers in the default radix.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -74,13 +70,13 @@ This command affects only the display of long integers. To control whether stand
 
 **Note**   The [**dv (Display Local Variables)**](dv--display-local-variables-.md) command always displays long integers in the current number base.
 
- 
+ 
 
 To change the default radix, use the [**n (Set Number Base)**](n--set-number-base-.md) command.
 
- 
+ 
 
- 
+ 
 
 
 

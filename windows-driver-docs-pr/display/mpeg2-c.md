@@ -4,11 +4,7 @@ description: MPEG2_C
 ms.assetid: 610ca80d-b29a-4c30-98df-8df8fe825157
 keywords:
 - MPEG2_C restricted profile WDK DirectX VA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -45,7 +41,7 @@ The restrictions for MPEC2\_C are defined by the restrictions listed for MPEG2\_
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Restrictions_on_DXVA_ConfigPictureDecode"></span><span id="restrictions_on_dxva_configpicturedecode"></span><span id="RESTRICTIONS_ON_DXVA_CONFIGPICTUREDECODE"></span>Restrictions on DXVA\_ConfigPictureDecode
 
@@ -74,11 +70,11 @@ This profile adds an additional configuration to the [minimal interoperability s
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

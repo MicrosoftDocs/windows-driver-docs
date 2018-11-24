@@ -1,6 +1,5 @@
 ---
 title: What Determines When a Driver Is Loaded
-author: windows-driver-content
 description: What Determines When a Driver Is Loaded
 ms.assetid: fe0f27e4-84d4-483e-8b4e-69c39ae332de
 keywords:
@@ -18,11 +17,7 @@ keywords:
 - SERVICE_DISABLED
 - boot drivers WDK file system
 - boot-start drivers WDK file system
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -71,7 +66,7 @@ Driver whose start type is SERVICE\_SYSTEM\_START are also loaded in the order o
 
 **Note**   Load order groups are ignored for drivers whose start type is SERVICE\_AUTO\_START, SERVICE\_DEMAND\_START, or SERVICE\_DISABLED.
 
- 
+ 
 
 A complete, ordered list of load order groups can be found under the **ServiceGroupOrder** subkey of the following registry key:
 
@@ -89,9 +84,9 @@ A driver writer can specify the load order group for a driver at installation ti
 
 For more general information about driver load order and load order groups, see [Specifying Driver Load Order](https://msdn.microsoft.com/library/windows/hardware/ff552319).
 
- 
+ 
 
- 
+ 
 
 
 

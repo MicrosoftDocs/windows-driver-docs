@@ -6,11 +6,7 @@ keywords:
 - ESP-protected packets WDK IPsec offload , receive path offload
 - AH-protected packets WDK IPsec offload , receive path offload
 - receive path offload WDK IPsec offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +25,9 @@ Note that, if the miniport driver is not decrypting an incoming packet, it clear
 
 After the miniport driver indicates the NET\_BUFFER\_LIST structure to the TCP/IP transport, the transport examines the results of the IPsec checks that the NIC performed, checks the sequence numbers for the packet, and determines what to do with a packet that fails the checksum or sequencing tests.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -9,11 +9,7 @@ keywords:
 - command lists support WDK Windows 7 display , Direct3D version 11
 - command lists support WDK Windows 2008 R2 display
 - command lists support WDK Windows 2008 R2 display , Direct3D version 11
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -85,7 +81,7 @@ The runtime calls the driver's [**RecycleCreateCommandList**](https://msdn.micro
 
 These recycling DDI functions provide optimization opportunities to help recycle resources for small-memory-amount command lists. The following pseudocode shows the implementation of the runtime through the flow of function calls from the API to the DDI :
 
-```
+```cpp
 ::FinishCommandList()
 {
   // Empty InterlockedSList, integrating into the cache
@@ -122,9 +118,9 @@ The following state diagram shows the validity of an immediate-context DDI comma
 
 ![diagram illustrating a command-list handle validity state](images/d3d11ddi2.png)
 
- 
+ 
 
- 
+ 
 
 
 

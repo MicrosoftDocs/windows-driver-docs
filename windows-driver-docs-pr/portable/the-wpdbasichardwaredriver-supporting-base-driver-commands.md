@@ -1,11 +1,7 @@
 ---
 Description: Support for base-driver commands (WpdBasicHardwareDriverSample)
 title: Support for base-driver commands (WpdBasicHardwareDriverSample)
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,7 +18,7 @@ The information in the following table describes the command that is supported b
 |-----------------------------------------------------------------------|--------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
 | WPD\_COMMAND\_COMMON\_GET\_OBJECT\_IDS\_FROM\_PERSISTENT\_UNIQUE\_IDS | OnGetOjectIDsFromPersistentUniqueIDs | Issued when an application attempts to retrieve the object identifier that matches a given persistent-unique identifier. |
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -32,9 +28,9 @@ The information in the following table describes the command that is supported b
 
 [The WPD Driver Samples](the-wpd-driver-samples.md)
 
- 
+ 
 
- 
+ 
 
 
 

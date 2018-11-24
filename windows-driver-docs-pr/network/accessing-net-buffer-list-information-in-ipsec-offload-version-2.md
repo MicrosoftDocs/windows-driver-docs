@@ -5,11 +5,7 @@ ms.assetid: 0c27b594-2c61-4459-96df-1d7445100bc5
 keywords:
 - IPsecOV2 WDK TCP/IP transport , NET_BUFFER_LIST information
 - NET_BUFFER_LIST
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +29,9 @@ Specifies IPsecOV2 tunnel information that is used in offloading IPsec tasks fro
 <a href="" id="ipsecoffloadv2headernetbufferlistinfo"></a>**IPsecOffloadV2HeaderNetBufferListInfo**  
 Specifies the header offsets for IPsec headers in the [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) and the values for the next header and pad length. When you specify **IPsecOffloadV2HeaderNetBufferListInfo**, NET\_BUFFER\_LIST\_INFO returns an [**NDIS\_IPSEC\_OFFLOAD\_V2\_HEADER\_NET\_BUFFER\_LIST\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff565812) structure.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -6,11 +6,7 @@ keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , multisample rendering, accessing a primary surface
 - multisample rendering WDK DirectX 8.0 , accessing a primary surface
 - rendering multisamples WDK DirectX 8.0 , accessing a primary surface
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,9 +28,9 @@ Calls by applications to the cursor methods of the **IDirect3DDevice8** interfac
 
 For more information about **IDirect3DDevice8**, see the DirectX 8.0 SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

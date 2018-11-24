@@ -1,6 +1,5 @@
 ---
 title: Enumerator Template Data Type
-author: windows-driver-content
 description: Enumerator Template Data Type
 ms.assetid: deb95ca1-05a5-47f4-8e2a-1d1aa1ae2261
 keywords:
@@ -11,11 +10,7 @@ keywords:
 - XMLDataType directive WDK GDL
 - EnumeratorList directive WDK GDL
 - ElementTags directive WDK GDL
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,7 +31,7 @@ The value to be parsed as an ENUMERATOR data type must match one of the tokens t
 
 Consider the following template.
 
-```
+```cpp
 *Template:  COLORS
 {
     *Type:  DATATYPE
@@ -48,7 +43,7 @@ Consider the following template.
 
 The preceding template will cause the parser filter to create the following XML schema entry.
 
-```
+```cpp
     <simpleType name = "colors">
         <restriction base="string">
             <enumeration value="YELLOW"/>
@@ -64,7 +59,7 @@ The preceding template will cause the parser filter to create the following XML 
 
 The parser filter will also create the corresponding wrapped data type.
 
-```
+```cpp
     <complexType name = "GDLW_colors">
         <simpleContent>
             <extension base="gdl:colors">
@@ -77,13 +72,13 @@ The parser filter will also create the corresponding wrapped data type.
 
 Consider the following GDL entry.
 
-```
+```cpp
 *Color: GREEN
 ```
 
 And consider the ACOLOR template, which declares the **\*Color** GDL attribute to have a **\*ValueType** that is defined by the template COLORS, as the following code example shows.
 
-```
+```cpp
 *Template:  ACOLOR
 {
     *Name:  "*Color"
@@ -95,15 +90,15 @@ And consider the ACOLOR template, which declares the **\*Color** GDL attribute t
 
 If the earlier GDL entry is interpreted by using the ACOLOR template, the resulting XML output would occur.
 
-```
+```cpp
     <GDL_ATTRIBUTE Name="*Color"  xsi:type="GDLW_colors" >GREEN</GDL_ATTRIBUTE>
 ```
 
 The XML attribute **xsi:type** defines this instance of the GDL\_ATTRIBUTE element to hold a template-defined value type that represents an enumeration that is defined in the XML default namespace.
 
- 
+ 
 
- 
+ 
 
 
 

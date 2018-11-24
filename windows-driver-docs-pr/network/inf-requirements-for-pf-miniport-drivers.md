@@ -2,11 +2,7 @@
 title: INF Requirements for PF Miniport Drivers
 description: INF Requirements for PF Miniport Drivers
 ms.assetid: B301514E-BCC2-401D-B63B-A819BF3D265A
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,9 +19,9 @@ This section includes the following topics:
 
 [Handling SR-IOV, VMQ, and RSS Standardized INF Keywords](handling-sr-iov--vmq--and-rss-standardized-inf-keywords.md)
 
- 
+ 
 
- 
+ 
 
 
 

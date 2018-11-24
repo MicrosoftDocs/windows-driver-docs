@@ -1,6 +1,5 @@
 ---
 title: Print Driver Packages
-author: windows-driver-content
 description: Print Driver Packages
 ms.assetid: 902e1634-e705-4902-baab-a93818288b08
 keywords:
@@ -9,11 +8,7 @@ keywords:
 - packages WDK print
 - driver pacakges WDK print
 - printer driver packages WDK print
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -40,9 +35,9 @@ This section includes:
 
 [Using Updated Core Print Drivers](using-updated-core-print-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

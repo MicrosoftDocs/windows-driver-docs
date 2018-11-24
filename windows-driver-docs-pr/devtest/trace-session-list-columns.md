@@ -4,11 +4,7 @@ description: Trace Session List Columns
 ms.assetid: 2e9d7636-3cff-459c-827a-719062bb778c
 keywords:
 - Trace Session List WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -131,9 +127,9 @@ Displays the name and location of the event trace log (.etl) file. For a real-ti
 <span id="Save_As_Default"></span><span id="save_as_default"></span><span id="SAVE_AS_DEFAULT"></span>**Save As Default**  
 This option is not a column name. It is a command that saves the currently displayed column configuration as the default for future trace sessions. For more information, see "Saving the Column Configuration" in [Trace Session List Features](trace-session-list-features.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: End Token
 description: End Token
 ms.assetid: c76890fd-46fb-42b9-802a-e083840f46d8
-ms.author: windowsdriverdev
 ms.date: 01/05/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +24,9 @@ Bits 0 through 31 indicate the end of the shader code. This value is 0x0000FFFF.
 
 Available in Windows Vista and later versions of the Windows operating systems.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,11 +3,7 @@ title: .abandon (Abandon Process)
 description: The .abandon command ends the debugging session, but leaves the target application in a debugging state. This returns the debugger to dormant mode.
 ms.assetid: e44ae9b8-b6a2-4648-911d-61ff3c94527c
 keywords: [".abandon (Abandon Process) Windows Debugging"]
-ms.author: domars
-ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 09/17/2018
 topic_type:
 - apiref
 api_name:
@@ -22,8 +18,8 @@ ms.localizationpriority: medium
 
 The **.abandon** command ends the debugging session, but leaves the target application in a debugging state. This returns the debugger to dormant mode.
 
-```
-    .abandon [/h|/n] 
+```dbgcmd
+.abandon [/h|/n] 
 ```
 
 ## <span id="ddk_meta_abandon_process_dbg"></span><span id="DDK_META_ABANDON_PROCESS_DBG"></span>Parameters
@@ -60,15 +56,15 @@ This command is only supported in Windows XP and later versions of Windows.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
 If the target is left in a debugging state, a new debugger can be attached to it. See [Re-attaching to the Target Application](reattaching-to-the-target-application.md) for details. However, after a process has been abandoned once, it can never be restored to a running state without a debugger attached.
 
- 
+ 
 
- 
+ 
 
 
 

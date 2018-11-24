@@ -10,11 +10,7 @@ api_name:
 - PoolMon Run-time Commands
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,8 +21,6 @@ To change the display while PoolMon is running, use the run-time commands. Each 
 
 ```
     [p] [( | )] [s] [TSSessionID] [i] [l] [e] [t] [a] [f] [d] [b] [m] [h | ?] [q | ESC]
-
-   
 ```
 
 ## <span id="ddk_poolmon_run_time_commands_tools"></span><span id="DDK_POOLMON_RUN_TIME_COMMANDS_TOOLS"></span>Parameters
@@ -81,9 +75,9 @@ Displays the startup command parameters, the run-time commands, and a descriptio
 <span id="_______q_or_ESC"></span><span id="_______q_or_esc"></span><span id="_______Q_OR_ESC"></span> **q** or **ESC**  
 Stops PoolMon.
 
- 
 
- 
+
+
 
 
 

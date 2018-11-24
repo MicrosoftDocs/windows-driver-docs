@@ -3,11 +3,7 @@ title: dp ( ntsdexts.dp)
 description: The dp extension in Ntsdexts.dll displays a CSR process.
 ms.assetid: 9e489cfc-2105-4605-b94d-88eea7883420
 keywords: ["dp ( ntsdexts.dp) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,7 +20,7 @@ The **!dp** extension in Ntsdexts.dll displays a CSR process.
 
 This extension command should not be confused with the [**dp (Display Memory)**](d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md) command, or with the [**!kdext\*.dp**](-db---dc---dd---dp---dq---du---dw.md) extension command.
 
-```
+```dbgcmd
 !dp [v] [ PID | CSR-Process ]
 ```
 
@@ -59,7 +55,7 @@ Specifies the hexadecimal address of the CSR process.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -73,9 +69,9 @@ If no process is specified, all processes are displayed.
 
 [**!dt**](-dt.md)
 
- 
+ 
 
- 
+ 
 
 
 

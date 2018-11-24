@@ -1,6 +1,5 @@
 ---
 title: GDL Templates
-author: windows-driver-content
 description: GDL Templates
 ms.assetid: 9cce885d-395e-4f8d-8076-951d75d82410
 keywords:
@@ -12,11 +11,7 @@ keywords:
 - constructs WDK GDL , in templates
 - inheritance WDK GDL
 - schemas WDK GDL , inheritance-based schemas
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +28,9 @@ The GDL parser associates every data entry in a GDL file with a template. If a d
 
 GDL uses specific [directives](gdl-template-directives.md) for templates.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -4,11 +4,7 @@ description: NetDMA 2.0 Extensions for NetDMA 2.0 and Later Providers
 ms.assetid: e1034aa2-fec8-4f8c-af99-84b7a11b6135
 keywords:
 - extensions WDK NetDMA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -17,7 +13,7 @@ ms.localizationpriority: medium
 
 **Note**  The NetDMA interface is not supported in Windows 8 and later.
 
- 
+ 
 
 
 
@@ -32,9 +28,9 @@ This section includes the following topics:
 
 [Specifying a NetDMA Provider Friendly Name](specifying-a-netdma-provider-friendly-name.md)
 
- 
+ 
 
- 
+ 
 
 
 

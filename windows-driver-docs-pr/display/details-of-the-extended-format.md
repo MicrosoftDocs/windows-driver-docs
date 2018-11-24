@@ -5,11 +5,7 @@ ms.assetid: e9cd2bc7-99c1-4aca-91b0-9faefa4a856d
 keywords:
 - Direct3D version 10.1 WDK Windows 7 display , extended format
 - extended format WDK Windows 7 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -454,7 +450,7 @@ R
 
 R
 
- 
+ 
 
 **Note**   In the preceding table, cell entries have the following meaning:
 -   "R" indicates that hardware support is required
@@ -463,15 +459,15 @@ R
 
 -   N/A indicates that the resource attribute either is not applicable to the extended format or does not allow the extended format
 
- 
+ 
 
 **Note**   The DXGI\_FORMAT\_B8G8R8A8\_UNORM and DXGI\_FORMAT\_B8G8R8X8\_UNORM formats already existed in the DXGI\_FORMAT enumeration. However, they are now considered members of the appropriate new family. Their requirements have changed compared to their original definitions.
 
- 
+ 
 
 **Note**   Rows for the "Input Assembler Index Buffer", "Shader sample\_c (comparison filter)", "Shader sample (mono 1-bit filter)", "Shader gather4", and "Depth-Stencil Target" resource attributes are not included in the preceding table for readability. All meaning for these resource attributes is N/A.
 
- 
+ 
 
 The following sections describe the details of the new extended formats:
 
@@ -487,9 +483,9 @@ The following sections describe the details of the new extended formats:
 
 [Interpretation of X Channel](interpretation-of-x-channel.md)
 
- 
+ 
 
- 
+ 
 
 
 

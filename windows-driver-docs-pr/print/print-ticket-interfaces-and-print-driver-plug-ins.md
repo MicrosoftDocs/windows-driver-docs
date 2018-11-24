@@ -1,16 +1,11 @@
 ---
 title: Print Ticket Interfaces and Print Driver Plug-ins
-author: windows-driver-content
 description: Print Ticket Interfaces and Print Driver Plug-ins
 ms.assetid: 5c5237a1-f4ff-42f9-8992-753743fd5e15
 keywords:
 - IPrintTicketProvider
 - IPrintOemPrintTicketProvider
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +24,9 @@ This section discusses the context of the following Microsoft Win32 functions:
 
 [ValidatePrintTicket](validateprintticket.md)
 
- 
+ 
 
- 
+ 
 
 
 

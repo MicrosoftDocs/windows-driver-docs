@@ -6,11 +6,7 @@ keywords:
 - network drivers WDK , NDIS
 - NDIS WDK , about NDIS
 - Network Driver Interface Specification WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -45,9 +41,9 @@ For a description of the differences between NDIS 6.0 and earlier versions, and 
 
 [Introduction to NDIS 6.30](introduction-to-ndis-6-30.md)
 
- 
+ 
 
- 
+ 
 
 
 

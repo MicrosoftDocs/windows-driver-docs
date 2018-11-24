@@ -6,11 +6,7 @@ keywords:
 - ProtocolBindAdapter
 - ProtocolBindAdapterEx
 - updating ProtocolBindAdapter
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,9 +32,9 @@ The *ProtocolBindAdapterEx* function must:
 
 -   Optionally, read configuration parameters from the registry. For more information, see [Reading the Registry in NDIS 6.0 Protocol Drivers](reading-the-registry-in-an-ndis-6-0-protocol-driver.md).
 
- 
+ 
 
- 
+ 
 
 
 

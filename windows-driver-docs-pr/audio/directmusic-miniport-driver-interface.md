@@ -12,11 +12,7 @@ keywords:
 - hardware acceleration WDK audio
 - miniport drivers WDK audio , kernel-mode hardware acceleration
 - synthesizers WDK audio , kernel-mode hardware acceleration
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -66,9 +62,9 @@ This section includes:
 
 [Exposing Your Synthesizer as a Legacy Device](exposing-your-synthesizer-as-a-legacy-device.md)
 
- 
+ 
 
- 
+ 
 
 
 

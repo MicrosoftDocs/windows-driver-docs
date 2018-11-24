@@ -10,11 +10,7 @@ keywords:
 - log tokens WDK SetupAPI
 - thread log tokens WDK SetupAPI
 - SetupSetThreadLogToken
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,7 +31,7 @@ The following are examples of how a log context can be established for a thread:
 
     **Note**  If the log context is set by using a system-defined [log token](log-tokens.md), subsequent calls to a [SetupAPI logging function](https://msdn.microsoft.com/library/windows/hardware/ff550878) that are made from that log context, write log entries to the installation text log, which are not part of a [text log section](format-of-a-text-log-section.md).
 
-     
+     
 
 -   If a class installer or co-installer starts a new thread, the installer can set the log context for that thread to be the same as the parent thread. This is done in the following way:
     1.  Before the parent thread starts the new thread, it acquires the current log token by calling [**SetupGetThreadLogToken**](https://msdn.microsoft.com/library/windows/hardware/ff552211).
@@ -44,11 +40,11 @@ The following are examples of how a log context can be established for a thread:
 
     **Note**  If a thread of a class installer or co-installer sets the log context by using this method, subsequent calls to a [SetupAPI logging function](https://msdn.microsoft.com/library/windows/hardware/ff550878) that are made from that log context write log entries to the installation text log that may be part of a [text log section](format-of-a-text-log-section.md). This only happens if a text log section was established by the SetupAPI installation operation that called the installer.
 
-     
+     
 
 The following is an example of a call to **SetupSetThreadLogToken** that sets the log context of the current thread to the device installation text log (*SetupAPI.app.log)* by specifying the system-defined log token of LOGTOKEN_SETUPAPI_APPLOG. A subsequent call to a [SetupAPI logging function](https://msdn.microsoft.com/library/windows/hardware/ff550878) that uses this log context would write the log entry to the device installation text log, but not as part of a [text log section](format-of-a-text-log-section.md).
 
-```
+```cpp
 SP_LOG_TOKEN LogToken = LOGTOKEN_SETUPAPI_APPLOG;
 SetupSetThreadLogToken(LogToken);
 ```
@@ -61,17 +57,17 @@ For example, a class installer can call **SetupGetThreadLogToken** to retrieve t
 
 **Note**  If the log context of a thread was not previously set by a call to [**SetupSetThreadLogToken**](https://msdn.microsoft.com/library/windows/hardware/ff552216), a call to **SetupGetThreadLogToken** returns a log token with a value of LOGTOKEN_UNSPECIFIED.
 
- 
+ 
 
 The following is an example of a call to **SetupGetThreadLogToken** that retrieves the log token for the current thread.
 
-```
+```cpp
 SP_LOG_TOKEN LogToken = SetupGetThreadLogToken();
 ```
 
- 
+ 
 
- 
+ 
 
 
 

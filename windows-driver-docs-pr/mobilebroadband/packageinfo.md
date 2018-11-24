@@ -2,11 +2,7 @@
 title: PackageInfo
 description: PackageInfo
 ms.assetid: b74bfc2a-6779-4f53-9e46-71ca8ae26fda
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -46,29 +42,29 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[MetadataBuilderInformation](metadatabuilderinformation.md)</p></td>
-<td><p>The [MetadataBuilderInformation](metadatabuilderinformation.md) element specifies information about the application that created the service metadata package.</p></td>
+<td><p><a href="metadatabuilderinformation.md" data-raw-source="[MetadataBuilderInformation](metadatabuilderinformation.md)">MetadataBuilderInformation</a></p></td>
+<td><p>The <a href="metadatabuilderinformation.md" data-raw-source="[MetadataBuilderInformation](metadatabuilderinformation.md)">MetadataBuilderInformation</a> element specifies information about the application that created the service metadata package.</p></td>
 </tr>
 <tr class="even">
-<td><p>[MetadataKey](metadatakey.md)</p></td>
-<td><p>The [MetadataKey](metadatakey.md) element specifies the attributes of the service metadata package. These include the following:</p>
+<td><p><a href="metadatakey.md" data-raw-source="[MetadataKey](metadatakey.md)">MetadataKey</a></p></td>
+<td><p>The <a href="metadatakey.md" data-raw-source="[MetadataKey](metadatakey.md)">MetadataKey</a> element specifies the attributes of the service metadata package. These include the following:</p>
 <ul>
 <li><p>The identifier for each hardware function supported by the device.</p></li>
 <li><p>The language-specific locale for the text strings within the package.</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td><p>[PackageStructure](packagestructure.md)</p></td>
-<td><p>The [PackageStructure](packagestructure.md) element specifies the XML schemas which are referenced by the service metadata package.</p></td>
+<td><p><a href="packagestructure.md" data-raw-source="[PackageStructure](packagestructure.md)">PackageStructure</a></p></td>
+<td><p>The <a href="packagestructure.md" data-raw-source="[PackageStructure](packagestructure.md)">PackageStructure</a> element specifies the XML schemas which are referenced by the service metadata package.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Relationships](relationships.md)</p></td>
-<td><p>The [Relationships](relationships.md) element, through its child elements, specifies data that is used to track a service metadata package within the device metadata cache.</p></td>
+<td><p><a href="relationships.md" data-raw-source="[Relationships](relationships.md)">Relationships</a></p></td>
+<td><p>The <a href="relationships.md" data-raw-source="[Relationships](relationships.md)">Relationships</a> element, through its child elements, specifies data that is used to track a service metadata package within the device metadata cache.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Parent_elements"></span><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Parent elements
 
@@ -98,9 +94,9 @@ There are no parent elements.
 
 The PackageInfo element must contain one instance of the [MetadataKey](metadatakey.md), [PackageStructure](packagestructure.md), and [Relationships](relationships.md) elements.
 
- 
+ 
 
- 
+ 
 
 
 

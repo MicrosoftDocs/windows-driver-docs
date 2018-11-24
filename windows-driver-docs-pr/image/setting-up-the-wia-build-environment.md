@@ -1,13 +1,8 @@
 ---
 title: Setting Up the WIA Build Environment
-author: windows-driver-content
 description: Setting Up the WIA Build Environment
 ms.assetid: 0e961aca-1b0c-483c-9269-e656daee3e5e
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,9 +20,9 @@ This section describes the files required to build Microsoft WIA minidrivers and
 
 For details about how to build a driver in the WDK environment, see [Tools for Building Drivers](https://msdn.microsoft.com/library/windows/hardware/ff552950).
 
- 
+ 
 
- 
+ 
 
 
 

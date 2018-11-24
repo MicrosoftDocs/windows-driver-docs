@@ -1,6 +1,5 @@
 ---
 title: Frame Injection
-author: windows-driver-content
 description: Frame Injection
 ms.assetid: cdfb1763-92a8-4a60-8f49-2af34a8beca5
 keywords:
@@ -13,11 +12,7 @@ keywords:
 - default frame behavior WDK AVStream
 - overriding default frame behavior WDK streaming media
 - circuits WDK AVStream
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -43,9 +38,9 @@ The diagram below shows an AVStream filter set composed of a source filter, an [
 
 ![diagram illustrating an avstream filter set](images/inject1.png)
 
- 
+ 
 
- 
+ 
 
 
 

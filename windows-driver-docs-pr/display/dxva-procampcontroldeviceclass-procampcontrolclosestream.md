@@ -9,11 +9,7 @@ api_name:
 - DXVA_ProcAmpControlDeviceClass.ProcAmpControlCloseStream
 api_type:
 - COM
-ms.author: windowsdriverdev
 ms.date: 01/05/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +23,7 @@ Syntax
 
 ```ManagedCPlusPlus
 HRESULT ProcAmpControlCloseStream(
-   void
+   void
 );
 ```
 
@@ -54,9 +50,9 @@ The **ProcAmpControlCloseStream** function maps directly to a **DestroyMoComp** 
 
 [**ProcAmpControlOpenStream**](dxva-procampcontroldeviceclass-procampcontrolopenstream.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -8,11 +8,7 @@ keywords:
 - connections WDK SANs
 - addresses WDK SANs
 - linking computer clusters WDK SANs
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +26,9 @@ This section includes:
 
 [Windows Sockets Direct](windows-sockets-direct.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,13 +1,8 @@
 ---
 title: WDI_TLV_HOTSPOT_INDICATION_ELEMENT
-author: windows-driver-content
 description: WDI_TLV_HOTSPOT_INDICATION_ELEMENT is a TLV that contains a Hotspot Indication Element that is used in a Association Request.
 ms.assetid: 7A5B61B5-DFFF-4525-A6CD-2AC2822D8B86
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_HOTSPOT_INDICATION_ELEMENT Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -35,7 +30,7 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 |-----------|---------------------------------------------------------------------|
 | UINT8\[\] | A Hotspot Indication Element that is used in a Association Request. |
 
- 
+ 
 
 Requirements
 ------------
@@ -61,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

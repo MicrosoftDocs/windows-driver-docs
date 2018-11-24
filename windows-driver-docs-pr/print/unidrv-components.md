@@ -1,16 +1,11 @@
 ---
 title: Unidrv Components
-author: windows-driver-content
 description: Unidrv Components
 ms.assetid: 358eed9e-05e3-4670-b6b1-d5413c46edf0
 keywords:
 - Unidrv, components
 - Unidrv WDK print
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -56,9 +51,9 @@ Optional, printer-specific, [user interface plug-in](user-interface-plug-ins.md)
 <a href="" id="rendering-plug-in"></a>**Rendering Plug-In**  
 Optional, printer-specific, [rendering plug-in](rendering-plug-ins.md).
 
- 
+ 
 
- 
+ 
 
 
 

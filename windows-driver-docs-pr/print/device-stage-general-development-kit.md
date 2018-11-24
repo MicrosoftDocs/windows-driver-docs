@@ -1,13 +1,8 @@
 ---
 title: Device Stage General Development Kit
-author: windows-driver-content
 description: Device Stage General Development Kit
 ms.assetid: 259b3ac8-b9d3-4cbd-a003-e2d59e76bc1f
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +22,7 @@ The Device Stage General Development Kit contains the following information:
 -   **Windows 7 Device Stage Development Samples** - A collection of sample graphics and tools to help with developing Device Stage experiences.
 
 ## Related topics
-[Microsoft Device Experience Development Kit](http://msdn.microsoft.com/library/windows/hardware/gg463154)  
+[Microsoft Device Experience Development Kit](https://msdn.microsoft.com/library/windows/hardware/gg463154)  
 
 
 

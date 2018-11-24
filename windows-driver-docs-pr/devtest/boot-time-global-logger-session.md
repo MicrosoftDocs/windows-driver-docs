@@ -9,11 +9,7 @@ keywords:
 - Global Logger trace session WDK , about Global Logger sessions
 - boot-time Global Logger trace session WDK , about Global Logger sessions
 - tracing WDK , during boot
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +26,9 @@ This section includes:
 
 [How to Create a Boot-Time Global Logger Session](how-to-create-a-boot-time-global-logger-session.md)
 
- 
+ 
 
- 
+ 
 
 
 

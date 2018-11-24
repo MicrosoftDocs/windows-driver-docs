@@ -1,6 +1,5 @@
 ---
 title: Stream Class Debugging
-author: windows-driver-content
 description: Stream Class Debugging
 ms.assetid: 544b922b-58e4-4cbb-a76c-d8e13ae17e55
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - streaming minidrivers WDK Windows 2000 Kernel , debugging
 - minidrivers WDK Windows 2000 Kernel Streaming , debugging
 - debugging stream class minidrivers WDK Windows 2000 Kernel
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,9 +27,9 @@ The following, additional tips can be used when debugging stream class minidrive
 
 -   Minidrivers can print their own messages, using *stream.sys* facilities previously described, by calling [**StreamClassDebugPrint**](https://msdn.microsoft.com/library/windows/hardware/ff568235). Note that the output level as previously described must be set to be greater than or equal to the output level chosen in the call.
 
- 
+ 
 
- 
+ 
 
 
 

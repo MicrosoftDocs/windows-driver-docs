@@ -1,6 +1,5 @@
 ---
 title: Print Spooler Architecture
-author: windows-driver-content
 description: Print Spooler Architecture
 ms.assetid: 712da599-29cb-4df9-9627-49907f0aa500
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - print spooler architecture WDK
 - jobs WDK print , print spoolers
 - print jobs WDK , print spoolers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,9 +37,9 @@ The Microsoft Windows 2000 and later print spooler is made up of a set of Micros
 
 -   For Windows 7, print drivers can run in a separate process from the spooler. This feature is called [Printer Driver Isolation](printer-configuration.md).
 
- 
+ 
 
- 
+ 
 
 
 

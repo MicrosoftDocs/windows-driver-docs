@@ -1,13 +1,8 @@
 ---
 title: Set Request and Response Schemas
-author: windows-driver-content
 description: The Set request schema and corresponding response schema definition, and an example of each, are below.
 ms.assetid: 88E7F06C-3232-48C3-A0D6-2BEFF4ABA188
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,7 +18,7 @@ The Set request is used to write values to printer properties.
 
 In this example, the request attempts to set two properties. The second is a deliberate mistake: the Memory property is not writable. For the response to this request, see Set Response Schema below.
 
-``` syntax
+```xml
 <bidi:Set xmlns:bidi="http://schemas.microsoft.com/windows/2005/03/printing/bidi">
   <Query schema='\Printer.DeviceInfo:Location'>
     <BIDI_STRING>supply room</BIDI_STRING>
@@ -36,7 +31,7 @@ In this example, the request attempts to set two properties. The second is a del
 
 Formal Definition of the Set Request Schema
 
-``` syntax
+```xml
 <?xml version='1.0'?>
 <schema targetNamespace="http://schemas.microsoft.com/windows/2005/03/printing/bidi" 
      xmlns:bidi="http://schemas.microsoft.com/windows/2005/03/printing/bidi" 
@@ -76,7 +71,7 @@ Formal Definition of the Set Request Schema
 
 This is the response to the Set request above. Note that when the write operation succeeds, the original query value is returned without any value. If the operation fails, an error code is returned.
 
-``` syntax
+```xml
 <bidi:Set xmlns:bidi="http://schemas.microsoft.com/windows/2005/03/printing/bidi">
   <Query schema='\Printer.DeviceInfo:Location'/>
   <Query schema='\Printer.Configuration.Memory:Size'>
@@ -87,7 +82,7 @@ This is the response to the Set request above. Note that when the write operatio
 
 Formal Definition of the Set Response Schema
 
-``` syntax
+```xml
 <?xml version='1.0'?>
 <schema targetNamespace="http://schemas.microsoft.com/windows/2005/03/printing/bidi" 
      xmlns:bidi="http://schemas.microsoft.com/windows/2005/03/printing/bidi" 
@@ -115,9 +110,9 @@ Formal Definition of the Set Response Schema
 ```
 
 ## Related topics
+
 [Bidirectional Communication Schema](bidirectional-communication-schema.md)  
-[**SendRecvXMLStream**](https://msdn.microsoft.com/library/windows/hardware/dd144983)  
-[**SendRecvXMLString**](https://msdn.microsoft.com/library/windows/hardware/dd144984)  
 
+[SendRecvXMLStream](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bidispl/nf-bidispl-ibidispl2-sendrecvxmlstream)  
 
-
+[SendRecvXMLString](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bidispl/nf-bidispl-ibidispl2-sendrecvxmlstring)  

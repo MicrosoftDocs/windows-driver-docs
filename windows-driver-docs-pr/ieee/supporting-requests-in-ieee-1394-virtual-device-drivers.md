@@ -1,6 +1,5 @@
 ---
 title: Supporting Requests in IEEE 1394 Virtual Device Drivers
-author: windows-driver-content
 description: Supporting Requests in IEEE 1394 Virtual Device Drivers
 ms.assetid: 17e0c84b-29d9-461f-a5f6-7677ecb7fb6e
 keywords:
@@ -13,11 +12,7 @@ keywords:
 - REQUEST_ALLOCATE_ADDRESS_RANGE
 - REQUEST_GET_ADDR_FROM_DEVICE_OBJECT
 - REQUEST_SET_DEVICE_XMIT_PROPERTIES
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -53,9 +48,9 @@ Virtual PDOs and the drivers that are loaded above them have the same level of a
 
 For all other requests, the behavior between virtual and physical devices is identical.
 
- 
+ 
 
- 
+ 
 
 
 

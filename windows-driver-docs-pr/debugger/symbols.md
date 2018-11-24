@@ -3,11 +3,7 @@ title: Symbols for Windows debugging (WinDbg, KD, CDB, NTSD)
 description: Symbols for the Windows debuggers (WinDbg, KD, CDB, and NTSD) are available from a public symbol server. 
 ms.assetid: 9a6977d9-91c8-4366-a545-064e77cd6600
 keywords: ["symbols", "setup, symbols", "symbols, setup"]
-ms.author: domars
 ms.date: 08/03/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +29,9 @@ These topics explain what symbols are, how to access them during a debugging ses
 
 If you simply want to configure your debugger to access symbols for your own programs and for Windows, you may find it quicker to read the less-detailed introductory topics [Symbol Path](symbol-path.md) and [Using a Symbol Server](using-a-symbol-server.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,11 +3,7 @@ title: .scriptlist (List Loaded Scripts)
 description: The .scriptlist command lists the loaded scripts.
 ms.assetid: 98F24BE6-3F34-44E7-9546-3D5AB6D521DD
 keywords: [".scriptlist (List Loaded Scripts) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **.scriptlist** command lists the loaded scripts.
 
-```
+```dbgcmd
 .scriptlist 
 ```
 
@@ -55,7 +51,7 @@ None
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -63,7 +59,7 @@ The .scriptlist command will list any scripts which have been loaded via the .sc
 
 If the TestScript was successfully loaded using .scriptload, the .scriptlist command would display the name of the loaded script.
 
-```
+```dbgcmd
 0:000> .scriptlist
 Command Loaded Scripts:
     JavaScript script from 'C:\WinDbg\Scripts\TestScript.js'
@@ -73,7 +69,7 @@ Command Loaded Scripts:
 
 Before using any of the .script commands, a scripting provider needs to be loaded. Use the [**.load (Load Extension DLL)**](-load---loadby--load-extension-dll-.md) command to load the JavaScript provider.
 
-```
+```dbgcmd
 0:000> .load jsprovider.dll
 ```
 
@@ -84,9 +80,9 @@ Before using any of the .script commands, a scripting provider needs to be loade
 
 [**.scriptload (Load Script)**](-scriptload--load-script-.md)
 
- 
+ 
 
- 
+ 
 
 
 

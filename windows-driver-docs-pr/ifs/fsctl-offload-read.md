@@ -1,5 +1,5 @@
 ---
-title: FSCTL\_OFFLOAD\_READ control code
+title: FSCTL_OFFLOAD_READ control code
 description: The FSCTL\_OFFLOAD\_READ control code initiates an offload read for a block of data in a storage system that supports offload read primitives.
 ms.assetid: D9A22A8F-9B7E-4BF7-8FBD-267BE4C8DC59
 keywords: ["FSCTL_OFFLOAD_READ control code Installable File System Drivers"]
@@ -11,11 +11,7 @@ api_location:
 - ntifs.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -79,10 +75,10 @@ Status block
 <p>-or-</p>
 <p><em>InputBufferLength</em> &lt; <strong>sizeof</strong>(FSCTL_OFFLOAD_READ_INPUT).</p>
 <p>-or-</p>
-<p>One or more of these members of [<strong>FSCTL_OFFLOAD_READ_INPUT</strong>](https://msdn.microsoft.com/library/windows/hardware/hh451104) are incorrect:</p>
+<p>One or more of these members of <a href="https://msdn.microsoft.com/library/windows/hardware/hh451104" data-raw-source="[&lt;strong&gt;FSCTL_OFFLOAD_READ_INPUT&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh451104)"><strong>FSCTL_OFFLOAD_READ_INPUT</strong></a> are incorrect:</p>
 <strong>FileOffset</strong> is not a multiple of the logical sector size of the volume.
 <strong>CopyLength</strong> is not a multiple of the logical sector size of the volume.
-<strong>Size</strong> is not the size of the [<strong>FSCTL_OFFLOAD_READ_INPUT</strong>](https://msdn.microsoft.com/library/windows/hardware/hh451104) structure.
+<strong>Size</strong> is not the size of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451104" data-raw-source="[&lt;strong&gt;FSCTL_OFFLOAD_READ_INPUT&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh451104)"><strong>FSCTL_OFFLOAD_READ_INPUT</strong></a> structure.
 <strong>FileOffset</strong> + <strong>CopyLength</strong> &gt; <strong>MAXULONGLONG</strong>.</td>
 </tr>
 <tr class="odd">
@@ -123,7 +119,7 @@ Status block
 </tr>
 <tr class="even">
 <td align="left"><p><strong>STATUS_END_OF_FILE</strong></p></td>
-<td align="left"><p>The<strong>FileOffset</strong> member of [<strong>FSCTL_OFFLOAD_READ_INPUT</strong>](https://msdn.microsoft.com/library/windows/hardware/hh451104) begins after end-of-file (EOF).</p></td>
+<td align="left"><p>The<strong>FileOffset</strong> member of <a href="https://msdn.microsoft.com/library/windows/hardware/hh451104" data-raw-source="[&lt;strong&gt;FSCTL_OFFLOAD_READ_INPUT&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh451104)"><strong>FSCTL_OFFLOAD_READ_INPUT</strong></a> begins after end-of-file (EOF).</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>STATUS_DISMOUNTED_VOLUME</strong></p></td>
@@ -135,12 +131,12 @@ Status block
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>STATUS_BUFFER_TOO_SMALL</strong></p></td>
-<td align="left"><p><em>OutputBufferLength</em> is too small for <em>OutputBuffer</em> to receive an [<strong>FSCTL_OFFLOAD_READ_OUTPUT</strong>](https://msdn.microsoft.com/library/windows/hardware/hh451109) structure.</p></td>
+<td align="left"><p><em>OutputBufferLength</em> is too small for <em>OutputBuffer</em> to receive an <a href="https://msdn.microsoft.com/library/windows/hardware/hh451109" data-raw-source="[&lt;strong&gt;FSCTL_OFFLOAD_READ_OUTPUT&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh451109)"><strong>FSCTL_OFFLOAD_READ_OUTPUT</strong></a> structure.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -180,9 +176,9 @@ Requirements
 
 [**FSCTL\_OFFLOAD\_READ\_OUTPUT**](https://msdn.microsoft.com/library/windows/hardware/hh451109)
 
- 
+ 
 
- 
+ 
 
 
 

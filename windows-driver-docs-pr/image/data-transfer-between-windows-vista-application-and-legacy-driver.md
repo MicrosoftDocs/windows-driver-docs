@@ -1,13 +1,8 @@
 ---
 title: Data Transfer Between Windows Vista Application and Legacy Driver
-author: windows-driver-content
 description: Data Transfer Between Windows Vista Application and Legacy Driver
 ms.assetid: 0acb2ca3-6ac6-441d-a12d-446ae5b70295
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,9 +33,9 @@ A legacy driver can send "out-of-band" messages during transfers (for example fo
 
 For more information on the TYMED constants, please see [Understanding TYMED](understanding-tymed.md).
 
- 
+ 
 
- 
+ 
 
 
 

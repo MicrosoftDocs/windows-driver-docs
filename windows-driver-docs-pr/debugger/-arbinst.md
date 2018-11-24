@@ -3,11 +3,7 @@ title: arbinst
 description: The arbinst extension displays information about a specified arbiter.
 ms.assetid: 6aa06283-9cd7-4579-9e5d-40bbaf53f782
 keywords: ["arbiter", "arbinst Windows Debugging"]
-ms.author: domars
-ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 09/17/2018
 topic_type:
 - apiref
 api_name:
@@ -22,8 +18,8 @@ ms.localizationpriority: medium
 
 The **!arbinst** extension displays information about a specified arbiter.
 
-```
-!arbinst Address [Flags]
+```dbgcmd
+    !arbinst Address [Flags]
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
@@ -55,7 +51,7 @@ Specifies how much information to display for each arbiter. At present, the only
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -69,7 +65,7 @@ For the arbiter specified, **!arbinst** displays each allocated range of system 
 
 Here is an example:
 
-```
+```console
 kd> !arbinst e0000106002ee8e8
 Port Arbiter "PCI I/O Port (b=02)" at e0000106002ee8e8
   Allocated ranges:
@@ -89,9 +85,9 @@ Memory Arbiter "PCI Memory (b=02)" at e0000106002ec458
     < none >
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,6 +3,7 @@ title: ISCSI\_SESSION\_TYPE\_QUALIFIERS
 description: ISCSI\_SESSION\_TYPE\_QUALIFIERS
 ms.assetid: e293c4c3-3e98-4481-b71f-9433ede0cc61
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # ISCSI\_SESSION\_TYPE\_QUALIFIERS
@@ -46,11 +47,11 @@ The following table describes the ISCSI\_SESSION\_TYPE\_QUALIFIERS values.
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

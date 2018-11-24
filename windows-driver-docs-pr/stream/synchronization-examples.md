@@ -1,6 +1,5 @@
 ---
 title: Synchronization Examples
-author: windows-driver-content
 description: Synchronization Examples
 ms.assetid: b9290fab-8213-4083-bda5-0e6c2af737a6
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - streaming minidrivers WDK Windows 2000 Kernel , synchronization
 - minidrivers WDK Windows 2000 Kernel Streaming , synchronization
 - synchronization WDK streaming minidriver
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -53,9 +48,9 @@ The following examples illustrate what a minidriver needs to do regarding synchr
 
     -   When the minidriver is a bus-on-bus type driver (for example, a USB or 1394 peripheral driver) that does not really worry about synchronization of the actual hardware, but just calls requests down to the next layer at PASSIVE\_LEVEL and receives callbacks typically at DISPATCH\_LEVEL.
 
- 
+ 
 
- 
+ 
 
 
 

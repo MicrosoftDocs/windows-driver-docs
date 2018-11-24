@@ -1,14 +1,9 @@
 ---
 title: Video Accessing driver IFR logs without a debugger
-author: windows-driver-content
 description: This topic contains a video tutorial that shows how a driver can access IFR logs without a debugger attached.
 Search.SourceType: Video
 ms.assetid: 1cda1d84-e3e3-42ab-9e45-ae5a465e5bf7
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,9 +15,9 @@ To learn how to configure your driver to use Inflight Recorder (IFR), see [Infli
 
 You can find the GetIfr.ps1 script described in the video in the [WDF GitHub repository](https://github.com/Microsoft/Windows-Driver-Frameworks/tree/master/Tools).
 
->[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/1f5e92ab-d3b0-46d6-bb86-83373aa4c2d9]
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/1f5e92ab-d3b0-46d6-bb86-83373aa4c2d9]
 
- 
+ 
 
- 
+ 
 

@@ -1,12 +1,7 @@
 ---
 Description: Microsoft provides a USB Type-C Connector System Software Interface (UCSI) Specification-compliant driver.
 title: USB Type-C Connector System Software Interface (UCSI) driver
-author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,7 +14,7 @@ ms.localizationpriority: medium
 
 **Last Updated**
 
--   December 2016
+-   October 2018
 
 **Windows version**
 
@@ -32,12 +27,12 @@ ms.localizationpriority: medium
 -   [USB Type-C Connector System Software Interface Specification](http://go.microsoft.com/fwlink/p/?LinkId=703713)
 -   [Hardware design: USB Type-C components for systems with embedded controllers](hardware-design-of-a-usb-type-c-system.md#emb)
 
-\[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.\]
 
-Microsoft provides a USB Type-C Connector System Software Interface (UCSI) Specification-compliant driver. If your design includes an embedded controller, implement UCSI in your system's BIOS/EC and load the in-box UCSI driver (UcmUcsi.sys). Otherwise, you need to [write a USB Type-C connector driver](bring-up-a-usb-type-c-connector-on-a-windows-system.md).
+Microsoft provides a USB Type-C Connector System Software Interface (UCSI) Specification-compliant driver for ACPI transport. If your design includes an embedded controller with ACPI transport, implement UCSI in your system's BIOS/EC and load the in-box UCSI driver (UcmUcsiCx.sys and UcmUcsiAcpiClient.sys).
+
+If your UCSI-compliant hardware uses a transport other than ACPI, you need to [write a UCSI client driver](write-a-ucsi-driver.md).
 
 ## Drivers for supporting USB Type-C components for systems with embedded controllers
-
 
 Here is an example of a system with an embedded controller.
 
@@ -59,11 +54,11 @@ In the preceding image,
 
     **Note**  Not [all USB devices classes](supported-usb-classes.md) are supported on Windows 10 Mobile.
 
-     
+     
 
 -   **USB connector manager**
 
-    Microsoft provides a UCSI in-box driver with Windows (UcmUcsi.sys) that implements the features defined by the UCSI specification available [here](http://go.microsoft.com/fwlink/p/?LinkId=703713). The specification describes the capabilities of UCSI and explains the registers and data structures, for hardware component designers, system builders, and device driver developers.
+    Microsoft provides a UCSI in-box driver with Windows (UcmUcsiCx.sys) that implements the features defined by the UCSI specification available [here](http://go.microsoft.com/fwlink/p/?LinkId=703713). The specification describes the capabilities of UCSI and explains the registers and data structures, for hardware component designers, system builders, and device driver developers.
 
     This driver is intended for systems with embedded controllers. This driver is a client to the Microsoft-provided USB connector manager class extension driver (Ucmcx.sys). The driver handles tasks such as initiating a request to the firmware to change the data or power roles and getting information needed to provide troubleshooting messages to the user.
 
@@ -85,6 +80,7 @@ In addition to the commands marked as "Required", Windows requires these command
     -   Negotiated Power Level Change
 
 For information about the tasks required to implement UCSI in the BIOS, see [Intel BIOS Implementation of UCSI](http://go.microsoft.com/fwlink/p/?LinkId=760658).
+
 ## Example flow for UCSI
 
 
@@ -107,13 +103,13 @@ The examples given in this section describe interaction between the USB Type-C h
     1.  The firmware sends a notification indicating a change in the connector.
     2.  The UCSI driver sends a ​ GET\_CONNECTOR\_STATUS request.
     3.  The firmware responds with Connect Status = 1​, Connector Partner Type=DFP, and Battery Charging Status = Slow/Trickle.
-   ​
+    
 3.  The USB connector manager class extension sends notification to the UI to display the charger mismatch troubleshoot message.
 
 ## How to test UCSI
 
 
-There are a number of ways to test your UCSI implementation. To test individual commands in your UCSI BIOS/EC implementation, use UCSIControl.exe, which is provided in the[MUTT Software Pack](mutt-software-package.md). To test your complete UCSI implementation, use both the UCSI tests that can be found in the Windows Hardware Lab Kit (HLK) and the steps in the [Type-C Manual Interop Procedures](https://msdn.microsoft.com/library/windows/hardware/mt422725).
+There are a number of ways to test your UCSI implementation. To test individual commands in your UCSI BIOS/EC implementation, use UCSIControl.exe, which is provided in the [MUTT Software Pack](mutt-software-package.md). To test your complete UCSI implementation, use both the UCSI tests that can be found in the Windows Hardware Lab Kit (HLK) and the steps in the [Type-C Manual Interop Procedures](https://msdn.microsoft.com/library/windows/hardware/mt422725).
 
 **UCSIControl.exe**
 
@@ -205,7 +201,7 @@ Here are the common commands:
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 [Architecture: USB Type-C design for a Windows system](architecture--usb-type-c-in-a-windows-system.md)  

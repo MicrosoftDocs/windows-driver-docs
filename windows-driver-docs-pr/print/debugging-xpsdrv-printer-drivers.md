@@ -1,6 +1,5 @@
 ---
 title: Debugging XPSDrv Printer Drivers
-author: windows-driver-content
 description: Debugging XPSDrv Printer Drivers
 ms.assetid: 7193f007-de25-4b77-9133-9937b3d37db0
 keywords:
@@ -9,11 +8,7 @@ keywords:
 - XPSDrv printer drivers WDK , debugging
 - spoolsv.exe process WDK print
 - printfilterpipelinesvc.exe process WDK print
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -60,9 +55,9 @@ If the printer driver that you want to debug causes the printfilterpipelinesvc.e
 
 8.  Print to the print queue with the driver that you want to debug.
 
- 
+ 
 
- 
+ 
 
 
 

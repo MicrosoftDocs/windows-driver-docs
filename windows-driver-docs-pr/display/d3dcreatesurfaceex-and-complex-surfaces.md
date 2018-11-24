@@ -9,11 +9,7 @@ keywords:
 - implicit surface attachments WDK Direct3D
 - explicit surface attachments WDK Direct3D
 - surface attachments WDK Direct3D
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +29,9 @@ The driver can distinguish between implicit and explicit attachments by means of
 
 For more information, see the section on surface attachments in [DirectDraw Driver Fundamentals](directdraw-driver-fundamentals.md) and see the sample code included in [**D3dCreateSurfaceEx**](https://msdn.microsoft.com/library/windows/hardware/ff542840).
 
- 
+ 
 
- 
+ 
 
 
 

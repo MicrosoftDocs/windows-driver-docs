@@ -1,13 +1,8 @@
 ---
 title: EFI_USBFN_IO_PROTOCOL.GetDeviceInfo
-author: windows-driver-content
 description: EFI_USBFN_IO_PROTOCOL.GetDeviceInfo
 ms.assetid: b72f6ba1-7704-4661-8855-1ff88bd08e5a
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,7 +16,7 @@ Specifying **EfiUsbDeviceInfoUnknown** as Id is treated as an invalid parameter.
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef
 EFI_STATUS
 (EFIAPI * EFI_USBFN_IO_GET_DEVICE_INFO) (
@@ -85,7 +80,7 @@ A pointer to a buffer in which the requested information will be returned as a U
 </tbody>
 </table>
 
- 
+ 
 
 ## Remarks
 
@@ -97,9 +92,9 @@ If the supplied Buffer is too small or NULL, the method fails with **EFI\_BUFFER
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
 

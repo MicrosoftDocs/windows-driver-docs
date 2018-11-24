@@ -1,16 +1,11 @@
 ---
 title: Writing Preoperation Callback Routines
-author: windows-driver-content
 description: Writing Preoperation Callback Routines
 ms.assetid: 3f863c44-152e-43c9-8ef5-ec426986a3fe
 keywords:
 - preoperation callback routines WDK file system minifilter , writing
 - writing callback routines
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -39,7 +34,7 @@ The following table shows the preoperation callback routine implementation for a
 
 Every preoperation callback routine is defined as follows:
 
-```
+```cpp
 typedef FLT_PREOP_CALLBACK_STATUS 
 (*PFLT_PRE_OPERATION_CALLBACK) ( 
     IN OUT PFLT_CALLBACK_DATA Data, 
@@ -68,9 +63,9 @@ This section includes:
 
 [Pending an I/O Operation in a Preoperation Callback Routine](pending-an-i-o-operation-in-a-preoperation-callback-routine.md)
 
- 
+ 
 
- 
+ 
 
 
 

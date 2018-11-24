@@ -6,11 +6,7 @@ keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , shaders
 - shaders WDK DirectX 8.0
 - Direct3D shaders WDK DirectX 8.0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +22,9 @@ DirectX 8.0 includes support for programmable vertex and pixel shaders. The foll
 
 [Pixel Shaders](pixel-shaders.md)
 
- 
+ 
 
- 
+ 
 
 
 

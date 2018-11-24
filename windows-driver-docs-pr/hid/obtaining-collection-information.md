@@ -1,16 +1,11 @@
 ---
 title: Obtaining Collection Information
-author: windows-driver-content
 description: Obtaining Collection Information
 ms.assetid: 0568993b-ff50-48ac-a875-95ab643d6c28
 keywords:
 - collections WDK HID , informatin gathering
 - HID collections WDK , information gathering
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +29,9 @@ This information includes the [HID usage](hid-usages.md) of the collection and a
 
 After obtaining this information, an application or driver has the information it requires to access control data in HID reports.
 
- 
+ 
 
- 
+ 
 
 
 

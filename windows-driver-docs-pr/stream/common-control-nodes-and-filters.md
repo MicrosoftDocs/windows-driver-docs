@@ -1,6 +1,5 @@
 ---
 title: Common Control Nodes and Filters
-author: windows-driver-content
 description: Common Control Nodes and Filters
 ms.assetid: 33e0605b-0fd1-4506-a48b-427976e94dfc
 keywords:
@@ -15,11 +14,7 @@ keywords:
 - NDISIP WDK BDA
 - Broadcast Driver Architecture WDK AVStream , control nodes
 - BDA WDK AVStream , control nodes
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -71,11 +66,11 @@ An NDIS miniport driver that acts as a receiver for a network adapter for the da
 
 **Note**   Starting with Windows Vista, the IPSink filter is not supported.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,6 +3,7 @@ title: MPIO\_DSM\_Path\_V2 WMI Class
 description: MPIO\_DSM\_Path\_V2 WMI Class
 ms.assetid: ec7d75a0-cb40-46e8-ab1d-137a9331193e
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MPIO\_DSM\_Path\_V2 WMI Class
@@ -10,7 +11,7 @@ ms.localizationpriority: medium
 
 MPIO publishes the MPIO\_DSM\_Path\_V2 WMI class but expects the DSM to register the GUID and handle its implementation. An MPIO driver uses the MPIO\_DSM\_Path\_V2 WMI class to identify the path ID as reported by a DSM.
 
-```
+```cpp
 class MPIO_DSM_Path_V2
 {
     //
@@ -170,9 +171,9 @@ class MPIO_DSM_Path_V2
 
 When this class definition is compiled by the WMI tool suite, it produces the [**MPIO\_DSM\_Path\_V2**](https://msdn.microsoft.com/library/windows/hardware/ff562386) data structure. There are no methods associated with this WMI class.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,17 +1,12 @@
 ---
 title: Accessing Data Buffers in UMDF 1.x Drivers
-author: windows-driver-content
 description: Accessing Data Buffers in UMDF 1.x Drivers
 ms.assetid: cbd67ada-696e-403e-9b35-d8ed06a844d5
 keywords:
 - data buffers WDK UMDF
 - buffers WDK UMDF
 - request processing WDK UMDF , data buffers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -144,9 +139,9 @@ However, the [definitions](https://msdn.microsoft.com/library/windows/hardware/f
 
 You should enable support of IOCTL requests that use the "neither" method only if you are sure that UMDF can convert the access method to buffered I/O or direct I/O. For example, if the IOCTL specifies a customized request that does not follow the buffer specification rules that are described at [Buffer Descriptions for I/O Control Codes](https://msdn.microsoft.com/library/windows/hardware/ff540663), UMDF cannot convert the buffers.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Error Processing
-author: windows-driver-content
 description: Error Processing
 ms.assetid: d9cb2f62-1ccf-4ab6-b547-dc54f6d07820
 keywords:
@@ -16,11 +15,7 @@ keywords:
 - LLHEHs WDK WHEA
 - platform-specific hardware error drivers WDK WHEA
 - PSHED WDK WHEA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -89,9 +84,9 @@ The following describes the sequence of actions taken by WHEA in response to eac
 
 8.  The Windows kernel generates a bug check.
 
- 
+ 
 
- 
+ 
 
 
 

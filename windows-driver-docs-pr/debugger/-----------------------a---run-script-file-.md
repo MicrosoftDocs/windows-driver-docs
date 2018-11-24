@@ -3,11 +3,7 @@ title: $ , $ , $$ , $$ , $$ a (Run Script File)
 description: The $ , $ , $$ , $$ , and $$ a commands read the contents of the specified script file and use its contents as debugger command input.
 ms.assetid: b3584680-765d-4aaf-ad43-c7d73552e5fb
 keywords: ["$ (Run Script File) command", "$$ (Run Script File) command", "$$ (Run Script File) command", "Run Script File ($ ) command", "Run Script File ($ ) command", "Run Script File ($$ ) command", "Run Script File ($$ ) comm", "$ , $ , $$ , $$ , $$ a (Run Script File) Windows Debugging"]
-ms.author: domars
-ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 09/17/2018
 topic_type:
 - apiref
 api_name:
@@ -22,12 +18,12 @@ ms.localizationpriority: medium
 
 The **$&lt;**, **$&gt;&lt;**, **$$&lt;**, **$$&gt;&lt;**, and **$$&gt;a&lt;** commands read the contents of the specified script file and use its contents as debugger command input.
 
-```
-$<Filename 
-$><Filename 
-$$<Filename 
-$$><Filename 
-$$>a<Filename [arg1 arg2 arg3 ...] 
+```dbgcmd
+    $<Filename 
+    $><Filename 
+    $$<Filename 
+    $$><Filename 
+    $$>a<Filename [arg1 arg2 arg3 ...] 
 ```
 
 ## <span id="ddk_cmd_run_script_file_dbg"></span><span id="DDK_CMD_RUN_SCRIPT_FILE_DBG"></span>Parameters
@@ -62,7 +58,7 @@ Specifies any number of string arguments for the debugger to pass to the script.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -137,7 +133,7 @@ The following table summarizes how you can use these tokens.
 </tbody>
 </table>
 
- 
+ 
 
 The **$&lt;**, **$&gt;&lt;**, **$$&lt;**, and **$$&gt;&lt;** commands echo the commands contained in the script file and display the output of these commands. The **$$&gt;a&lt;** command does not echo the commands found in the script file, but merely displays their output.
 
@@ -150,27 +146,27 @@ Examples
 
 The following example demonstrates how to pass arguments to a script file, Myfile.txt. Assume that the file contains the following text:
 
-```
+```console
 .echo The first argument is ${$arg1}.
 .echo The second argument is ${$arg2}.
 ```
 
 Then you can pass arguments to this file by using a command like this:
 
-```
+```console
 0:000> $$>a<myfile.txt myFirstArg mySecondArg 
 ```
 
 The result of this command would be:
 
-```
+```console
 The first argument is myFirstArg.
 The second argument is mySecondArg.
 ```
 
 Here is an example of what happens when the wrong number of argument is supplied. Assume that the file My Script.txt contains the following text:
 
-```
+```console
 .echo The first argument is ${$arg1}.
 .echo The fifth argument is ${$arg5}.
 .echo The fourth argument is ${$arg4}.
@@ -178,7 +174,7 @@ Here is an example of what happens when the wrong number of argument is supplied
 
 Then the following semicolon-delimited command line produces output thus:
 
-```
+```console
 0:000> $$>a< "c:\binl\my script.txt" "First one" Two "Three More" Four; recx 
 The first argument is First one.
 The fifth argument is ${$arg5}.
@@ -188,11 +184,6 @@ ecx=0021f4ac
 
 In the preceding example, the file name is enclosed in quotation marks because it contains a space, and arguments that contain spaces are enclosed in quotation marks as well. Although a fifth argument seems to be expected by the script, the semicolon terminates the **$$&gt;a&lt;** command after the fourth argument.
 
- 
-
- 
-
-
-
+ 
 
 

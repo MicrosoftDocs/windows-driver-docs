@@ -2,11 +2,7 @@
 title: Static Driver Verifier Limitations
 description: Static Driver Verifier Limitations
 ms.assetid: ea00e00d-34ea-4403-8f3c-85893645b890
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ This section includes:
 
 [Using \_\_sdv\_save\_adapter\_context to Track Adapter Context Fields](using---sdv-save-adapter-context-to-track-adapter-context-fields.md)
 
- 
+ 
 
- 
+ 
 
 
 

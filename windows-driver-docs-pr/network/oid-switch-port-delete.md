@@ -1,13 +1,8 @@
 ---
 title: OID_SWITCH_PORT_DELETE
-author: windows-driver-content
 description: The protocol edge of the Hyper-V extensible switch issues an object identifier (OID) set request of OID_SWITCH_PORT_DELETE to notify extensible switch extensions about the deletion of an extensible switch port.
 ms.assetid: D8893395-3D33-4777-B8F0-4DD6BE9B8A37
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_SWITCH_PORT_DELETE Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -41,7 +36,7 @@ The protocol edge of the extensible switch follows these steps when it deletes a
 
     **Note**  If the extension had previously called [*ReferenceSwitchPort*](https://msdn.microsoft.com/library/windows/hardware/hh598295) to increment the port's reference counter, it must call [*DereferenceSwitchPort*](https://msdn.microsoft.com/library/windows/hardware/hh598142) before the protocol edge issues the [OID\_SWITCH\_NIC\_DELETE](oid-switch-nic-delete.md) request.
 
-     
+     
 
 The extension must follow these guidelines for handling OID set requests of OID\_SWITCH\_PORT\_DELETE:
 
@@ -53,7 +48,7 @@ The extension must follow these guidelines for handling OID set requests of OID\
 
 **Note**  Extensible switch extensions must not issue OID set requests of OID\_SWITCH\_PORT\_DELETE.
 
- 
+ 
 
 For more information about the states of extensible switch ports and network adapter connections, see [Hyper-V Extensible Switch Port and Network Adapter States](https://msdn.microsoft.com/library/windows/hardware/hh598182).
 
@@ -80,7 +75,7 @@ The underlying miniport edge of the extensible switch completes the OID set requ
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -120,9 +115,9 @@ Requirements
 
 [*ReferenceSwitchPort*](https://msdn.microsoft.com/library/windows/hardware/hh598295)
 
- 
+ 
 
- 
+ 
 
 
 

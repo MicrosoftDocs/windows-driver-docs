@@ -4,11 +4,7 @@ description: Initialization and DMA Buffer Creation
 ms.assetid: d84aed8a-9e22-4172-89c2-807b4e06108f
 keywords:
 - DMA buffers WDK display , creating for GDI hardware acceleration
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +22,9 @@ When the display port driver of the DirectX graphics kernel subsystem (*Dxgkrnl.
 
 Similarly, when the display port driver calls the [**DxgkDdiCreateDevice**](https://msdn.microsoft.com/library/windows/hardware/ff559615) function, it sets the [**pCreateDevice**](https://msdn.microsoft.com/library/windows/hardware/ff557570)-&gt;[**Flags**](https://msdn.microsoft.com/library/windows/hardware/ff561039)-&gt;**GdiDevice** member to indicate the device that is used for GDI Hardware Acceleration.
 
- 
+ 
 
- 
+ 
 
 
 

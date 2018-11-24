@@ -1,13 +1,8 @@
 ---
 title: WDI_TLV_BAND_INFO
-author: windows-driver-content
 description: WDI_TLV_BAND_INFO is a TLV that contains band information.
 ms.assetid: 37F1CE39-5471-489A-8DA2-F058B631B31F
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_BAND_INFO Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -38,7 +33,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 | [**WDI\_TLV\_CHANNEL\_LIST**](wdi-tlv-channel-list.md)              |                                |          | A list of valid channel numbers in this band. |
 | [**WDI\_TLV\_CHANNEL\_WIDTH\_LIST**](wdi-tlv-channel-width-list.md) |                                |          | A list of channel widths in MHz               |
 
- 
+ 
 
 Requirements
 ------------
@@ -64,9 +59,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

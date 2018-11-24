@@ -3,11 +3,7 @@ title: Bug Check 0xA0 INTERNAL_POWER_ERROR
 description: The INTERNAL_POWER_ERROR bug check has a value of 0x000000A0. This bug check indicates that the power policy manager experienced a fatal error.
 ms.assetid: a763e865-8591-4ed3-b3cd-1cdaecad6e97
 keywords: ["Bug Check 0xA0 INTERNAL_POWER_ERROR", "INTERNAL_POWER_ERROR"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The INTERNAL\_POWER\_ERROR bug check has a value of 0x000000A0. This bug check indicates that the power policy manager experienced a fatal error.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## INTERNAL\_POWER\_ERROR Parameters
 
@@ -64,7 +60,7 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 <td align="left"><p>Reserved</p></td>
 <td align="left"><p>Reserved</p></td>
 <td align="left"><p>Reserved</p></td>
-<td align="left"><p>An internal failure has occurred while attempting to process a power event. For more information, see [Debugging bug check 0xA0 when parameter 1 equals 0x2](#parameter-1-equals-0x2).</p></td>
+<td align="left"><p>An internal failure has occurred while attempting to process a power event. For more information, see <a href="#parameter-1-equals-0x2" data-raw-source="[Debugging bug check 0xA0 when parameter 1 equals 0x2](#parameter-1-equals-0x2)">Debugging bug check 0xA0 when parameter 1 equals 0x2</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x3</p></td>
@@ -92,7 +88,7 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 <td align="left"><p>Reserved</p></td>
 <td align="left"><p>Reserved</p></td>
 <td align="left"><p>Reserved</p></td>
-<td align="left"><p>An unhandled exception has occurred. For more information, see [Debugging bug check 0xA0 when parameter 1 equals 0x7](#parameter-1-equals-0x7).</p></td>
+<td align="left"><p>An unhandled exception has occurred. For more information, see <a href="#parameter-1-equals-0x7" data-raw-source="[Debugging bug check 0xA0 when parameter 1 equals 0x7](#parameter-1-equals-0x7)">Debugging bug check 0xA0 when parameter 1 equals 0x7</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x8</p></td>
@@ -143,7 +139,7 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 <td align="left"><p>Reserved</p></td>
 <td align="left"><p>Exception pointer.</p></td>
 <td align="left"><p>Reserved</p></td>
-<td align="left"><p>An unhandled exception occured while processing a system power event. For more information, see [Debugging bug check 0xA0 when parameter 1 equals 0x101](#parameter-1-equals-0x101).</p></td>
+<td align="left"><p>An unhandled exception occured while processing a system power event. For more information, see <a href="#parameter-1-equals-0x101" data-raw-source="[Debugging bug check 0xA0 when parameter 1 equals 0x101](#parameter-1-equals-0x101)">Debugging bug check 0xA0 when parameter 1 equals 0x101</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x102</p></td>
@@ -463,12 +459,12 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 <td align="left"><p>The index of the selected idle state of the processor</p></td>
 <td align="left"><p>The idle synchronization state of the processor</p></td>
 <td align="left"><p>The PRCB address of the hung processor</p></td>
-<td align="left"><p>A processor woke up from a non-interruptible state without the the OS initiating an explicit wake through the PEP (using the necessary PPM idle synchronization).</p></td>
+<td align="left"><p>A processor woke up from a non-interruptible state without the OS initiating an explicit wake through the PEP (using the necessary PPM idle synchronization).</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Resolution
 ----------
@@ -484,7 +480,7 @@ In the preceding table, several of the parameters are pointers to structures. Fo
 
 Some of the structures that appear in the preceding table are not defined in any public header file. You can see the definitions of those structures by using the [**dt**](dt--display-type-.md) debugger command. The following example shows how to use the **dt** command to see the **DEVICE\_OBJECT\_POWER\_EXTENSION** structure.
 
-```
+```dbgcmd
 3: kd> dt nt!DEVICE_OBJECT_POWER_EXTENSION
    +0x000 IdleCount        : Uint4B
    +0x004 BusyCount        : Uint4B
@@ -508,7 +504,7 @@ The following procedures will help you debug certain instances of this bug check
 
 1.  Examine the stack. Look for the **ntoskrnl!PopExceptionFilter** function. This function contains the following code as its first argument.
 
-    ```
+    ```cpp
      (error_code << 16) | _LINE_
     ```
 
@@ -516,7 +512,7 @@ The following procedures will help you debug certain instances of this bug check
 
 2.  Use the [**dt (Display Type)**](dt--display-type-.md) command and specify the value that you found in the previous step as *argument*.
 
-    ```
+    ```dbgcmd
     dt nt!_EXCEPTION_POINTERS argument 
     ```
 
@@ -524,7 +520,7 @@ The following procedures will help you debug certain instances of this bug check
 
 3.  Use the [**.cxr (Display Context Record)**](-cxr--display-context-record-.md) command and specify the context record that you found in the previous step as *record*.
 
-    ```
+    ```dbgcmd
     .cxr record 
     ```
 
@@ -539,7 +535,7 @@ The following procedures will help you debug certain instances of this bug check
 
 2.  Use the [**dt (Display Type)**](dt--display-type-.md) command and specify the value that you found in the previous step as *argument*.
 
-    ```
+    ```dbgcmd
     dt nt!_EXCEPTION_POINTERS argument 
     ```
 
@@ -547,7 +543,7 @@ The following procedures will help you debug certain instances of this bug check
 
 3.  Use the [**.cxr (Display Context Record)**](-cxr--display-context-record-.md) command and specify the context record that you found in the previous step as *record*.
 
-    ```
+    ```dbgcmd
     .cxr record 
     ```
 
@@ -560,7 +556,7 @@ The following procedures will help you debug certain instances of this bug check
 
 1.  Use the [**dt (Display Type)**](dt--display-type-.md) command and specify the value of Parameter 3 as *argument*.
 
-    ```
+    ```dbgcmd
     dt nt!_EXCEPTION_POINTERS argument 
     ```
 
@@ -568,7 +564,7 @@ The following procedures will help you debug certain instances of this bug check
 
 2.  Use the [**.cxr (Display Context Record)**](-cxr--display-context-record-.md) command and specify the context record that you found the previous step as *record*.
 
-    ```
+    ```dbgcmd
     .cxr record 
     ```
 
@@ -576,9 +572,9 @@ The following procedures will help you debug certain instances of this bug check
 
 3.  Use a variety of commands to analyze the source of the error. Start with [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) .
 
- 
+ 
 
- 
+ 
 
 
 

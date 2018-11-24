@@ -1,6 +1,5 @@
 ---
 title: GDL Construct Unions
-author: windows-driver-content
 description: GDL Construct Unions
 ms.assetid: 0ca237fe-7f47-4b9c-8963-676a2afd1140
 keywords:
@@ -12,11 +11,7 @@ keywords:
 - unions WDK GDL
 - parser WDK GDL , handling unions
 - GDL WDK , unions
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,7 +24,7 @@ The construct type and the construct tag together uniquely specify or define a l
 
 The contents of the logical construct is a union of the contents of the siblings. What appears in the snapshot are the logical constructs, not the constructs as they are originally syntactically defined in the GDL source file. In the following code example, there are two sibling constructs, both with Construct Type: \*Person and with Construct Tag: FlorenceF.
 
-```
+```cpp
 *Person: FlorenceF
 {
 *Name: Florence Flipo
@@ -50,7 +45,7 @@ The contents of the logical construct is a union of the contents of the siblings
 
 According to the preceding rule, the two siblings define a single logical construct that contains the union of both siblings.
 
-```
+```cpp
 *Person: FlorenceF
 {
 *Name: Florence Flipo
@@ -70,7 +65,7 @@ Note that the merge in the preceding example has created two new sibling constru
 
 If the same rule was applied again (recursively), the following code would result.
 
-```
+```cpp
 *Person: FlorenceF
 {
 *Name: Florence Flipo
@@ -89,9 +84,9 @@ When [attributes](gdl-attributes.md) with the same [keyword](gdl-keywords.md) ar
 
 The GDL parser takes the syntactical representation of the GDL stream and creates an internal logical representation of the GDL commands. The internal representation of these commands is then converted to XML and becomes a snapshot.
 
- 
+ 
 
- 
+ 
 
 
 

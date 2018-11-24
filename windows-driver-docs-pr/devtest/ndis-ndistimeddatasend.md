@@ -2,11 +2,7 @@
 title: NdisTimedDataSend rule (ndis)
 description: The NdisTimedDataSend rule verifies that when an NDIS driver calls MiniportSendNetBufferLists, the miniport driver completes the send request within 30 seconds.
 ms.assetid: 2240254E-4381-4009-ACF2-DA481CB065FE
-ms.author: windowsdriverdev
 ms.date: 05/21/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: ["NdisTimedDataSend rule (ndis)"]
 topic_type:
 - apiref
@@ -46,21 +42,21 @@ How to test
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Run [Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff545448) and select the [NDIS/WIFI verification](https://msdn.microsoft.com/library/windows/hardware/dn312128) option.</p></td>
+<td align="left"><p>Run <a href="https://msdn.microsoft.com/library/windows/hardware/ff545448" data-raw-source="[Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff545448)">Driver Verifier</a> and select the <a href="https://msdn.microsoft.com/library/windows/hardware/dn312128" data-raw-source="[NDIS/WIFI verification](https://msdn.microsoft.com/library/windows/hardware/dn312128)">NDIS/WIFI verification</a> option.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Applies to
 ----------
 
 [**MiniportSendNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff559440)
 [**NdisMSendNetBufferListsComplete**](https://msdn.microsoft.com/library/windows/hardware/ff563668)
- 
+ 
 
- 
+ 
 
 
 

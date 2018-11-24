@@ -1,6 +1,5 @@
 ---
 title: '#DisablePPDirective Preprocessor Directive'
-author: windows-driver-content
 description: '#DisablePPDirective Preprocessor Directive'
 ms.assetid: 5f85a6b1-a72f-45e2-901a-7bce94b4793c
 keywords:
@@ -8,18 +7,14 @@ keywords:
 - keywords WDK GDL
 - reserved keywords WDK
 - DisablePPDirective directive WDK GDL
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # \#DisablePPDirective Preprocessor Directive
 
 
-```
+```GDL
 #DisablePPDirective:    Directive
 ```
 
@@ -29,7 +24,7 @@ This preprocessor directive is new for GDL.
 
 The following code examples shows how you can use this directive.
 
-```
+```GDL
 #DisablePPDirective: duplicateDirective
 #Include: "OlderFile.gdl"  *%  This file uses the name 
     *%  duplicateDirective because it does not expect that name to be interpreted by 
@@ -39,9 +34,9 @@ The following code examples shows how you can use this directive.
     *%  the newer host file.
 ```
 
- 
+ 
 
- 
+ 
 
 
 

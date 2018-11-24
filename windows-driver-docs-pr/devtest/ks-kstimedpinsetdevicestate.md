@@ -2,11 +2,7 @@
 title: KsTimedPinSetDeviceState rule ()
 description: The KsTimedPinSetDeviceState rule specifies that a AVStream (KS) miniport driver makes state transitions using the AVStream minidriver's AVStrMiniPinSetDeviceState routine within the required time.
 ms.assetid: 2BDA0358-A3B1-4A47-AA08-8B086041BC52
-ms.author: windowsdriverdev
 ms.date: 05/21/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: ["KsTimedPinSetDeviceState rule ()"]
 topic_type:
 - apiref
@@ -47,20 +43,20 @@ How to test
 <td align="left"><p>To verify this rule, open a Command Prompt window. Enter a Driver Verifier command and specify <strong>/domain ks</strong>.</p>
 <p>For example:</p>
 <p><strong>verifier /domain ks</strong> [<em>options</em>] <strong>/driver</strong> <em>&lt;yourdriver&gt;</em></p>
-<p>For more information, see [Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff545448).</p></td>
+<p>For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff545448" data-raw-source="[Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff545448)">Driver Verifier</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 See also
 --------
 
 [*AVStrMiniPinSetDeviceState*](https://msdn.microsoft.com/library/windows/hardware/ff556359)
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Page Creation Callbacks
-author: windows-driver-content
 description: Page Creation Callbacks
 ms.assetid: ec514d17-415e-417b-bb29-b37be43c3cf6
 keywords:
@@ -10,11 +9,7 @@ keywords:
 - property sheet pages WDK print , callbacks
 - page creation callbacks WDK CPSUI
 - CommonPropertySheetUI
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,9 +27,9 @@ CPSUI's **CommonPropertySheetUI** function immediately calls back to the PFNPROP
 
 For more information, see [Methods for Specifying Pages](methods-for-specifying-pages.md).
 
- 
+ 
 
- 
+ 
 
 
 

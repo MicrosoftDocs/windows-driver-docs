@@ -3,6 +3,7 @@ title: MS\_SM\_EventControl WMI Class
 description: MS\_SM\_EventControl WMI Class
 ms.assetid: d5c6a308-2782-4846-81f9-f4932d8caac6
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MS\_SM\_EventControl WMI Class
@@ -26,7 +27,7 @@ The MOF syntax for each method that belongs to this class is described in the re
 
 The MS\_SM\_EventControl class is defined as follows in *Hbaapi.mof*:
 
-```
+```cpp
 class MS_SM_EventControl 
 { 
     [key] 
@@ -87,9 +88,9 @@ class MS_SM_EventControl
 };
 ```
 
- 
+ 
 
- 
+ 
 
 
 

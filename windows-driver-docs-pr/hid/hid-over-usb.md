@@ -1,6 +1,5 @@
 ---
 title: HID over USB
-author: windows-driver-content
 description: USB was the first supported HID transport in the Windows operating system.
 ms.assetid: F892C910-BA33-4795-A803-9D3FD55782BC
 keywords:
@@ -10,11 +9,7 @@ keywords:
 - USB 2.0
 - USB 3.0
 - USB, HID
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,9 +27,9 @@ Recent updates to HID over USB also include:
 -   Support for USB 1.1, USB 2.0 and USB 3.0.
 -   A HID over USB driver is available on all client SKUs of Windows and is included in WinPE.
 
- 
+ 
 
- 
+ 
 
 
 

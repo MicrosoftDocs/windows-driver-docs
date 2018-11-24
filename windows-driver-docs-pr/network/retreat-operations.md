@@ -10,11 +10,7 @@ keywords:
 - sending data WDK networking
 - receiving data WDK networking
 - allocating MDLs
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,9 +38,9 @@ For send operations, NDIS allocates memory if there isn't enough *unused data sp
 
 For the receive return case, NDIS simply adjusts the **DataOffset** and **DataLength** accordingly. The retreat operation reverses the advance operation that took place during receive processing. After the retreat operation, the *used data space* contains the header data that underlying drivers used during receive processing.
 
- 
+ 
 
- 
+ 
 
 
 

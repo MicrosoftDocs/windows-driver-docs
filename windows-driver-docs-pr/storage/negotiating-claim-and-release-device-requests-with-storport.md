@@ -1,13 +1,8 @@
 ---
 title: Negotiating Claim and Release Device Requests with Storport
-author: windows-driver-content
 description: Negotiating Claim and Release Device Requests with Storport
 ms.assetid: 9212f2b0-6319-47a6-8c61-02002ad81178
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,9 +27,9 @@ To release a previously claimed device, higher-level drivers must send a release
 
 For a discussion of claim device requests from the point of view of the storage class driver, see [Storage Class Driver's ClaimDevice Routine](storage-class-driver-s-claimdevice-routine.md).
 
- 
+ 
 
- 
+ 
 
 
 

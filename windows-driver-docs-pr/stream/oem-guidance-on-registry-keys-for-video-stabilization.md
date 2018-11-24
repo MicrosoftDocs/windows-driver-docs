@@ -1,13 +1,8 @@
 ---
 title: Video stabilization registry settings
-author: windows-driver-content
 description: The OEM-set MaxPixelsPerSecond value in the VideoStabilization registry key enables OEMs to configure video stabilization settings on a device and apply video stabilization to a video at capture-time.
 ms.assetid: F0F7A705-0F39-4A62-A110-A2E47DFB7B42
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -47,9 +42,7 @@ A device is considered capable of running video stabilization when all of the fo
 
 -   **MaxPixelsPerSecond** is defined as follows:
 
-    ```
-    MaxPixelsPerSecond = width * height * frame-rate
-    ```
+    `MaxPixelsPerSecond = width * height * frame-rate`
 
     For example, for 1080p resolution at 30 fps, **MaxPixelsPerSecond** would be defined as 1920 \* 1080 \* 30 = 62208000.
 
@@ -61,7 +54,7 @@ A device is considered capable of running video stabilization when all of the fo
 
     To set the **VideoStabilization** registry key **MaxPixelsPerSecond** value on a 32-bit machine, use the following command at an elevated command prompt:
 
-    ```
+    ```console
     reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Media Foundation\Platform\VideoStabilization" /v "MaxPixelsPerSecond" /t REG_QWORD /d 62208000 /f 
     ```
 
@@ -71,7 +64,7 @@ A device is considered capable of running video stabilization when all of the fo
 
     To set the **VideoStabilization** registry key **MaxPixelsPerSecond** value on a 64-bit machine, use the following command at an elevated command prompt:
 
-    ```
+    ```console
     reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Windows Media Foundation\Platform\VideoStabilization" /v "MaxPixelsPerSecond" /t REG_QWORD /d 62208000 /f 
     ```
 
@@ -108,8 +101,3 @@ OEMs must verify the following:
 
 
 **Note** The **VideoStabilization** registry key **MaxPixelsPerSecond** value functions only when attribute [MF\_LOW\_LATENCY](https://msdn.microsoft.com/library/windows/desktop/hh162832) is set on the effect. When the provided video stabilization effect is added to the MediaCapture pipeline, the attribute is automatically set. However, if the video stabilization effect is inserted into a custom pipeline or a pipeline that does not set the **MF\_LOW\_LATENCY** attribute, the registry key has no effect.
-
-
-
-
-

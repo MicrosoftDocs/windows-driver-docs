@@ -1,18 +1,12 @@
 ---
 title: WinDbg Preview - What's New 
 description: This topic provides inofmration on what's new in WinDbg preview debugger.
-ms.author: domars
 ms.date: 05/23/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
-
-> [!NOTE]
-> The information in this topic is preliminary. Updated information will be provided in a later release of the documentation. 
->
-
 
 # WinDbg Preview - What's New
 
@@ -72,16 +66,32 @@ This version includes these updates.
 - Faster source window
 - Minor changes and bug fixes
 
+## 1.0.1807.11002 
+
+This version includes these updates.
+
+- Automatic saving and loading of breakpoints
+- Minor changes and bug fixes
+
+## 1.0.1810.2001 
+
+This version includes these updates.
+
+- New Settings dialog that is accessed from the File menu or the Home ribbon. 
+- Events and exceptions settings dialog
+- Improved TTD indexer with better performance
+- New *debugArch* launch flag for specifying architecture
+- Minor changes and bug fixes
 
 ---
- 
+ 
 ## See Also
 
 
 [https://blogs.msdn.microsoft.com/windbg/](https://blogs.msdn.microsoft.com/windbg/)
 
 [Debugging Using WinDbg Preview](debugging-using-windbg-preview.md)
- 
+ 
 
 
 

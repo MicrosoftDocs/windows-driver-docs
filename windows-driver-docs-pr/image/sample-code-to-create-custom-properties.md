@@ -1,25 +1,16 @@
 ---
 title: Sample Code to Create Custom Properties
-author: windows-driver-content
 description: Sample Code to Create Custom Properties
 ms.assetid: cf3e5e5b-8853-43a3-857f-87945cea2aa7
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # Sample Code to Create Custom Properties
 
-
-
-
-
 To create a custom property, your WIA driver might have code that looks similar to the following:
 
-```
+```cpp
   //
   // My Custom Property
   //
@@ -122,9 +113,9 @@ To create a custom property, your WIA driver might have code that looks similar 
   }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,14 +1,9 @@
 ---
 title: Errors in Referencing User-Space Addresses
-author: windows-driver-content
 description: Errors in Referencing User-Space Addresses
 ms.assetid: 87944805-e4ba-431e-b673-b0125dc9ec24
 keywords: ["reliability WDK kernel , user-space addresses", "user-space address referencing WDK kernel", "referencing user-space address", "embedded pointers WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,7 +21,7 @@ The I/O manager does no validation whatsoever for METHOD\_NEITHER IOCTLs and FSC
 
 In the following example, the driver assumes that the value passed in the **Type3InputBuffer** represents a valid address.
 
-```
+```cpp
    case IOCTL_GET_HANDLER:
    {
       PULONG EntryPoint;
@@ -40,7 +35,7 @@ In the following example, the driver assumes that the value passed in the **Type
 
 The following code avoids this problem:
 
-```
+```cpp
    case IOCTL_GET_HANDLER:
    {
       PULONG_PTR EntryPoint;
@@ -72,7 +67,7 @@ Note also that the correct code casts **DriverEntryPoint** to a ULONG\_PTR, inst
 
 Often drivers embed pointers within buffered requests, as in the following example:
 
-```
+```cpp
    struct ret_buf
    {
       void  *arg;  // Pointer embedded in request
@@ -92,9 +87,9 @@ In this example, the driver should validate the embedded pointer by using the **
 
 For more information about using **try/except** blocks to handle invalid addresses, see [Handling Exceptions](handling-exceptions.md).
 
- 
+ 
 
- 
+ 
 
 
 

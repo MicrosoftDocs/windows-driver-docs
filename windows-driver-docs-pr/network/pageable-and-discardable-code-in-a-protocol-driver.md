@@ -6,11 +6,7 @@ keywords:
 - protocol drivers WDK networking , pageable and discardable code
 - NDIS protocol drivers WDK , pageable and discardable code
 - pageable and discardable code WDK NDIS protocol
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +24,9 @@ A driver function that runs at IRQL = PASSIVE\_LEVEL can be made pageable as lon
 
 The [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff544113) function of NDIS protocol drivers, as well as code that is called only from **DriverEntry**, should be specified as initialization-only code, by using the [**NDIS\_INIT\_FUNCTION**](https://msdn.microsoft.com/library/windows/hardware/ff557007) macro. Code that is identified with this macro is assumed to run only once at system initialization time, and, as a result, is mapped only during that time. After a function marked as initialization-only returns, it is discarded.
 
- 
+ 
 
- 
+ 
 
 
 

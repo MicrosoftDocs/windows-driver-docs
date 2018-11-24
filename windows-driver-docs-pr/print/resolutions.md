@@ -1,13 +1,8 @@
 ---
 title: Resolutions
-author: windows-driver-content
 description: Resolutions
 ms.assetid: 1106cd77-1085-4487-a81a-268f619824e5
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,9 +37,9 @@ Data Type:BIDI\_STRING
 
 Description:A comma-separated list of all the values supported for Resolutions, in dots per inch (dpi).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: IOleCvt EncodeUnicodeName method
-author: windows-driver-content
 description: The EncodeUnicodeName property enables an ASP Web page to translate an ANSI string to its Unicode equivalent.
 MS-HAID:
 - 'webfnc\_e31e8dae-76bb-4250-9d16-090a987c0dbf.xml'
@@ -16,18 +15,18 @@ api_name:
 - IOleCvt.EncodeUnicodeName
 api_type:
 - COM
+ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # IOleCvt::EncodeUnicodeName method
-
 
 The **EncodeUnicodeName** property enables an ASP Web page to translate an ANSI string to its Unicode equivalent.
 
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 [propget, id(2), helpstring("property EncodeUnicodeName")] HRESULT EncodeUnicodeName(
   [in]          BSTR bstrSrcName,
   [out, retval] BSTR *pVal
@@ -69,21 +68,13 @@ Return value
 </tbody>
 </table>
 
- 
+## VBScript Example
 
-## <span id="ddk_iolecvt_encodeunicodename_gg"></span><span id="DDK_IOLECVT_ENCODEUNICODENAME_GG"></span>
-
-
-### <span id="vbscript_example"></span><span id="VBSCRIPT_EXAMPLE"></span>VBScript Example
-
-Remarks
--------
-
-```
-    Dim OleCvt, strPrinter, strEncodedPrinter
-    Set OleCvt = Server.CreateObject("OlePrn.OleCvt")
-    strMyUrl = "MyPage.asp?MyVariable=" &amp; 
-                OleCvt.EncodeUnicodeName("My&amp;Unicode&amp;Parameter")
+```vb
+Dim OleCvt, strPrinter, strEncodedPrinter
+Set OleCvt = Server.CreateObject("OlePrn.OleCvt")
+strMyUrl = "MyPage.asp?MyVariable=" & 
+            OleCvt.EncodeUnicodeName("My&Unicode&Parameter")
 ```
 
 Requirements
@@ -99,17 +90,5 @@ Requirements
 <td><p>Target platform</p></td>
 <td>Desktop</td>
 </tr>
-<tr class="even">
-<td><p>Version</p></td>
-<td><p>Available in Windows 2000 and later versions of the Windows operating systems.</p></td>
-</tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
-

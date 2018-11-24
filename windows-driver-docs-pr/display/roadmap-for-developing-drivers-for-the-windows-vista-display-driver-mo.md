@@ -2,11 +2,7 @@
 title: Roadmap for Developing Drivers for the Windows Display Driver Model (WDDM)
 description: Roadmap for Developing Drivers for the Windows Display Driver Model (WDDM)
 ms.assetid: 4f7ea2f4-ca2f-4b1d-97be-fb22e81c8080
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -56,9 +52,9 @@ To create these display drivers, perform the following steps:
 
 These are the basic steps. Additional steps might be necessary based on the needs of your individual driver.
 
- 
+ 
 
- 
+ 
 
 
 

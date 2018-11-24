@@ -5,11 +5,7 @@ ms.assetid: 7524c15a-e487-43b6-9101-7cdd0c5e6e0c
 keywords:
 - hardware acceleration WDK DirectSound , 3D mixing
 - 3D mixing WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +25,9 @@ DirectSound exposes hardware-accelerated 3D mixing for WDM audio miniport driver
 
 -   The pin must support the [KSPROPSETID\_DirectSound3DListener](https://msdn.microsoft.com/library/windows/hardware/ff537449) property set on the 3D node.
 
- 
+ 
 
- 
+ 
 
 
 

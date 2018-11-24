@@ -3,11 +3,7 @@ title: tls
 description: The tls extension displays a thread local storage (TLS) slot.
 ms.assetid: 43325322-8e6e-47fc-b1ec-8b1c304bb1e9
 keywords: ["TLS (thread local storage)", "thread local storage (TLS)", "tls Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!tls** extension displays a thread local storage (TLS) slot.
 
-```
+```dbgcmd
 !tls Slot [TEB]
 ```
 
@@ -54,14 +50,14 @@ Specifies the thread environment block (TEB). If this is 0 or omitted, the curre
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
 
 Here is an example:
 
-```
+```dbgcmd
 0:000> !tls -1
 TLS slots on thread: c08.f54
 0x0000 : 00000000
@@ -70,9 +66,9 @@ TLS slots on thread: c08.f54
 c08.f54: 00000000
 ```
 
- 
+ 
 
- 
+ 
 
 
 

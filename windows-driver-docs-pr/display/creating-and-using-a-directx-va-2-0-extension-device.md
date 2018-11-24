@@ -7,11 +7,7 @@ keywords:
 - Video Acceleration WDK DirectX , extended support
 - VA WDK DirectX , extended support
 - extension device WDK DirectX VA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,9 +20,9 @@ The Direct3D runtime calls the user-mode display driver's [**DecodeExtensionExec
 
 The Direct3D runtime calls the user-mode display driver's [**ExtensionExecute**](https://msdn.microsoft.com/library/windows/hardware/ff565604) function to perform nonstandard DirectX VA 2.0 operations on an extension device.
 
- 
+ 
 
- 
+ 
 
 
 

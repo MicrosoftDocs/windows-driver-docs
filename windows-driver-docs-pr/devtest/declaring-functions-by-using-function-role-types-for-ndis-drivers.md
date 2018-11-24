@@ -2,11 +2,7 @@
 title: Declaring Functions by Using Function Role Types for NDIS Drivers
 description: Declaring Functions by Using Function Role Types for NDIS Drivers
 ms.assetid: 232c4272-0bf0-4a4e-9560-3bceeca8a3e3
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -97,9 +93,9 @@ myMPIsr(
 
 To help you determine whether the source code is prepared, run [Code Analysis for Drivers](code-analysis-for-drivers.md). Code Analysis for Drivers checks for function role type declarations and can help identify function declarations that might have been missed or warn you when the parameters of the function definition do not match those in the function role type.
 
- 
+ 
 
- 
+ 
 
 
 

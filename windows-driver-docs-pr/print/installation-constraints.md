@@ -1,15 +1,10 @@
 ---
 title: Installation Constraints
-author: windows-driver-content
 description: Installation Constraints
 ms.assetid: 0adf5a6a-e9de-4bb0-bf1c-fe7eef565840
 keywords:
 - installation constraints WDK Unidrv
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,13 +31,13 @@ The \*InvalidInstallableCombination entry has the following format:
 </tbody>
 </table>
 
- 
+ 
 
 where *FeatureName* is the name of a feature and *OptionName* is the name of an option associated with the feature. This list can include features as well as options, in which case the period and *OptionName* are not included.
 
 The features and options listed in a single \*InvalidInstallableCombination entry indicate a set of features and options that cannot be used in combination. For example, the following entry specifies that the envelope feeder and the duplexing unit cannot be simultaneously installed.
 
-```
+```cpp
 *InvalidInstallableCombination: LIST(InputBin.ENVFEED, Duplex)
 ```
 
@@ -50,9 +45,9 @@ All \*InvalidInstallationCombination entries must be located at the GPD file's r
 
 If a feature or option is included in an \*InvalidInstallationCombination entry, the feature or option's \*Installable? attribute must be set to **TRUE**.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: NDEF protocol
-author: windows-driver-content
 description: NDEF protocol
 ms.assetid: 5AF082EC-70D6-4117-BFCE-B28A8DBAC210
 keywords:
@@ -9,11 +8,7 @@ keywords:
 - proximity
 - near field proximity
 - NFP
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -135,9 +130,9 @@ This allows a client to subscribe to an un-typed payload of data.
 
 The driver MUST match subscriptions for “NDEF:Unknown” ONLY with NDEF messages that have a TNF field value of 0x05 as specified in \[NDEF\].
 
- 
+ 
 
- 
+ 
 ## Related topics
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [Near field proximity DDI reference](https://msdn.microsoft.com/library/windows/hardware/jj866056)  

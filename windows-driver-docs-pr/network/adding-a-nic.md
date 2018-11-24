@@ -7,11 +7,7 @@ keywords:
 - network interface cards WDK networking , adding
 - Plug and Play WDK NDIS miniport , adding NIC
 - adding NICs WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,9 +34,9 @@ The following description starts with the loading of the miniport driver and des
 
 6.  The PnP manager assigns resources to the NIC, if necessary.
 
- 
+ 
 
- 
+ 
 
 
 

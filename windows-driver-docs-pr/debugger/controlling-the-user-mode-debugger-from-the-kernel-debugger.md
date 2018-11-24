@@ -3,11 +3,7 @@ title: Controlling the User-Mode Debugger from the Kernel Debugger
 description: Controlling the User-Mode Debugger from the Kernel Debugger
 ms.assetid: 8fba2187-cf22-41ad-9b06-228a5b082822
 keywords: ["KD, controlling CDB or NTSD", "WinDbg, controlling CDB or NTSD", "CDB, redirecting control to the kernel debugger", "NTSD, redirecting control to the kernel debugger", "redirecting user-mode output to the kernel debugger", "controlling the user-mode debugger from the kernel debugger", "controlling the user-mode debugger from the kernel debugger, overview", "controlling the user-mode debugger from the kernel debugger, sleep mode", "sleep mode"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ You can use either CDB or NTSD as the user-mode debugger. NTSD is the better cho
 
 **Note**  The [**.shell**](-shell--command-shell-.md) command is not supported when the output of a user-mode debugger is redirected to the kernel debugger.
 
- 
+ 
 
 This section includes the following:
 
@@ -37,9 +33,9 @@ This section includes the following:
 
 -   [Combining This Method with Remote Debugging](combining-this-method-with-remote-debugging.md) describes how to control the user-mode debugger from a kernel debugger, and use it as a debugging server at the same time. This combination can be useful if your user-mode symbols are located on a symbol server.
 
- 
+ 
 
- 
+ 
 
 
 

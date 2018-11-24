@@ -2,11 +2,7 @@
 title: Example 10 Detecting a Heap Memory Leak in a Process
 description: Example 10 Detecting a Heap Memory Leak in a Process
 ms.assetid: ec98dd96-b12b-4f83-85e8-2c5ee32fc17e
-ms.author: domars
-ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 10/12/2018
 ms.localizationpriority: medium
 ---
 
@@ -24,7 +20,7 @@ This example uses GFlags and User Mode Dump Heap (UMDH, umdh.exe), a tool includ
 
     The following command uses GFlags to set the **Create user mode stack trace database** flag. It uses the **/i** parameter to identify the image file and the **ust** abbreviation for the flag.
 
-    ```
+    ```console
     gflags /i Notepad.exe +ust 
     ```
 
@@ -34,7 +30,7 @@ This example uses GFlags and User Mode Dump Heap (UMDH, umdh.exe), a tool includ
 
     The following command creates an environment variable that stores the path to the directory of symbol files:
 
-    ```
+    ```console
     set _NT_SYMBOL_PATH=C:\Windows\symbols
     ```
 
@@ -48,15 +44,15 @@ This example uses GFlags and User Mode Dump Heap (UMDH, umdh.exe), a tool includ
 
     The following command runs UMDH (umdh.exe). It uses the **-p:** parameter to specify the PID that, in this example, is 1228. It uses the **/f:** parameter to specify the name and location of the output file for the heap dump, notepad.dmp.
 
-    ```
+    ```console
     umdh -p:1228 -f:notepad.dmp 
     ```
 
     In response, UMDH writes a complete dump of all active heaps to the notepad.dmp file.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,13 +1,8 @@
 ---
 title: Sample PrintTicket File for PIN Printing
-author: windows-driver-content
 description: Here is a sample PrintTicket file to show how to specify PIN printing.
 ms.assetid: FC1BE797-7097-4BEF-A530-3846CED3E400
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -16,7 +11,7 @@ ms.localizationpriority: medium
 
 Here is a sample PrintTicket file to show how to specify PIN printing.
 
-```XML
+```xml
 <?xml version="1.0"?>
    <psf:PrintTicket xmlns:psf="http://schemas.microsoft.com/windows/2003/08/printing/printschemaframework" 
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
@@ -34,9 +29,9 @@ Here is a sample PrintTicket file to show how to specify PIN printing.
 
 For more information about protected printing, see [Driver support For Protected Printing](driver-support-for-protected-printing.md).
 
- 
+ 
 
- 
+ 
 
 
 

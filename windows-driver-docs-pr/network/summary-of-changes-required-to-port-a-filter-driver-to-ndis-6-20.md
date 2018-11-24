@@ -7,11 +7,7 @@ keywords:
 - porting filter drivers to NDIS 6.20 WDK
 - filter drivers WDK
 - filter drivers WDK , porting to NDIS 6.20
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -64,9 +60,9 @@ Replace the preprocessor definition NDIS61 or NDIS60 with NDIS620.
 
 -   Optionally support the virtual machine queue (VMQ) interface. For more information about VMQ, see [Virtual Machine Queue (VMQ) in NDIS 6.20](virtual-machine-queue--vmq--in-ndis-6-20.md).
 
- 
+ 
 
- 
+ 
 
 
 

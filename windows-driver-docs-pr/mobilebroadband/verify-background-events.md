@@ -2,11 +2,7 @@
 title: Verify background events
 description: Verify background events
 ms.assetid: c840f555-2e09-409d-9d4f-4d9e8bd8d5a5
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,9 +32,9 @@ Next, check that you can successfully authenticate to the network. In particular
 
 [Get started with a hotspot authentication app](get-started-with-a-hotspot-authentication-app.md)
 
- 
+ 
 
- 
+ 
 
 
 

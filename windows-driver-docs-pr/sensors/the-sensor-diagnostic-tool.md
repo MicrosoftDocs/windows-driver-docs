@@ -1,6 +1,5 @@
 ---
 title: Testing sensor functionality with the Sensor Diagnostic Tool
-author: windows-driver-content
 description: Use the Sensor Diagnostic Tool to test your driver, firmware, and hardware functionality.
 ms.assetid: 447E1348-53BA-4AD4-9010-A6452F46A827
 keywords:
@@ -15,11 +14,7 @@ keywords:
 - sensor, change sensitivity
 - report interval
 - change sensitivity
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

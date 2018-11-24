@@ -11,11 +11,7 @@ api_location:
 - ks.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +23,7 @@ Clients use the KSPROPERTY\_CLOCK\_CORRELATEDTIME property to compare the curren
 ## <span id="ddk_ksproperty_clock_correlatedtime_ks"></span><span id="DDK_KSPROPERTY_CLOCK_CORRELATEDTIME_KS"></span>
 
 
-### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
+### Usage Summary Table
 
 <table>
 <colgroup>
@@ -51,13 +47,13 @@ Clients use the KSPROPERTY\_CLOCK\_CORRELATEDTIME property to compare the curren
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p>[<strong>KSPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564262)</p></td>
-<td><p>[<strong>KSCORRELATED_TIME</strong>](https://msdn.microsoft.com/library/windows/hardware/ff561033)</p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff561033" data-raw-source="[&lt;strong&gt;KSCORRELATED_TIME&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff561033)"><strong>KSCORRELATED_TIME</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -82,16 +78,16 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**KSPROPERTY\_CLOCK\_PHYSICALTIME**](ksproperty-clock-physicaltime.md)
 
 [**KeQueryPerformanceCounter**](https://msdn.microsoft.com/library/windows/hardware/ff553053)
 
- 
+ 
 
- 
+ 
 
 
 

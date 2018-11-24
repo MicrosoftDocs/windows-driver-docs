@@ -3,6 +3,7 @@ title: Get Critical Health Info (Function Index 10)
 description: This function returns critical health-related information.
 ms.assetid: 2083628D-FB46-4104-9F70-F7124B35DD04
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Get Critical Health Info (Function Index 10)
@@ -13,7 +14,7 @@ This function returns critical health-related information. Call [Get NVDIMM-N He
 &gt; \[!Note\]   
 &gt;All registers marked with a star (\*) are registers defined in the Byte Addressable Energy Backed Interface specification.
 
- 
+ 
 
 ## <span id="Input"></span><span id="input"></span><span id="INPUT"></span>Input
 
@@ -45,7 +46,7 @@ None.
 <td align="left"><strong>Status</strong></td>
 <td align="left">4</td>
 <td align="left">0</td>
-<td align="left"><p>Go to [_DSM Method Output](-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md#dsm-method-output) for information.</p></td>
+<td align="left"><p>Go to <a href="-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md" data-raw-source="[_DSM Method Output](-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md)">_DSM Method Output</a> for information.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><strong>Critical Health Info</strong></td>
@@ -57,7 +58,7 @@ None.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -68,9 +69,9 @@ None.
 
 [\_DSM Interface for Byte Addressable Energy Backed Function Class (Function Interface 1)](-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md)
 
- 
+ 
 
- 
+ 
 
 
 

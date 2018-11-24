@@ -9,11 +9,7 @@ api_name:
 - ExtExtension
 api_type:
 - NA
-ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -186,7 +182,7 @@ The **ExtExtension** class includes the following methods, which can be used by 
 
 The **ExtExtension** class also contains the following fields that can be used by the subclass:
 
-``` syntax
+```cpp
 class ExtExtension
 {
 public:
@@ -242,7 +238,6 @@ public:
     ULONG  m_AppendBufferChars;
     PSTR  m_AppendAt;
 };
-
 ```
 
 ## <span id="Members"></span><span id="members"></span><span id="MEMBERS"></span>Members
@@ -355,9 +350,9 @@ A character buffer used to return strings from the extension library to the engi
 <span id="m_AppendBufferChars"></span><span id="m_appendbufferchars"></span><span id="M_APPENDBUFFERCHARS"></span>**m\_AppendBufferChars**  
 The size, in characters, of the buffer **m\_AppendBuffer**.
 
- 
 
- 
+
+
 
 
 

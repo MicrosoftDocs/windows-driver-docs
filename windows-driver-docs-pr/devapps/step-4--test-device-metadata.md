@@ -2,11 +2,7 @@
 title: Step 4 Test the device metadata for your UWP device app
 description: This topic describes how you can test device metadata for your UWP device app locally before you submit it to the Windows Dev Center Dashboard.
 ms.assetid: C1DA36DE-DB89-4A2A-8B9F-DF2A279D3EDD
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,7 +17,7 @@ A UWP device app is a special kind of UWP app that device manufacturers create t
 
 **Note**  This topic is part of a step-by-step series. See [Build a UWP device app step-by-step](build-a-uwp-device-app-step-by-step.md) for the introduction.
 
- 
+ 
 
 ## <span id="Before_you_begin"></span><span id="before_you_begin"></span><span id="BEFORE_YOU_BEGIN"></span>Before you begin
 
@@ -61,16 +57,16 @@ You can validate your device metadata against a UWP device app or a device by us
 5.  After validation is done, you can save the report. Click **Close**.
     **Caution**  You might get an error in the validation report saying "The experience ID does not match between storeManifest.xml in the app package and packageInfo.xml in the device metadata file." You can safely ignore this message.
 
-     
+     
 
 ## <span id="Next_step"></span><span id="next_step"></span><span id="NEXT_STEP"></span>Next step
 
 
 [Step 5: Submit the app](step-5--submit-the-app.md)
 
- 
+ 
 
- 
+ 
 
 
 

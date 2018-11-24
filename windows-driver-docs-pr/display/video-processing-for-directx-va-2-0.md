@@ -7,11 +7,7 @@ keywords:
 - Video Acceleration WDK DirectX , video processing
 - VA WDK DirectX , video processing
 - video processing WDK DirectX VA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +24,9 @@ The following topics discuss video processing for DirectX VA 2.0:
 
 [Processing Video Frames](processing-video-frames.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: KSPROPSETID\_BdaFrequencyFilter
 description: KSPROPSETID\_BdaFrequencyFilter
 ms.assetid: 7650a239-3d49-4cb1-99bb-12bac55d70d2
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,13 +34,13 @@ Informs the tuner node of the bandwidth of the transmitted signal.
 <span id="KSPROPERTY_BDA_RF_TUNER_FREQUENCY_MULTIPLIER"></span><span id="ksproperty_bda_rf_tuner_frequency_multiplier"></span>[**KSPROPERTY\_BDA\_RF\_TUNER\_FREQUENCY\_MULTIPLIER**](ksproperty-bda-rf-tuner-frequency-multiplier.md)  
 Informs the tuner node about the value with which to multiply the value of the KSPROPERTY\_BDA\_RF\_TUNER\_FREQUENCY property to obtain the actual frequency.
 
-### <span id="comments"></span><span id="COMMENTS"></span>Comments
+### Comments
 
 The KSPROPSETID\_BdaFrequencyFilter property set is generic across almost all tuners. It is used to inform the tuner node how to tune the RF signal.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,11 +3,7 @@ title: Finding a Memory Leak
 description: Finding a Memory Leak
 ms.assetid: 1227c5e8-d83b-4f27-aa69-6e54aebc3ad8
 keywords: ["memory leak", "memory leak, debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ This section includes the following:
 
 -   [Finding a User-Mode Memory Leak](finding-a-user-mode-memory-leak.md) describes how to find a leak that is caused by a user-mode driver or application.
 
- 
+ 
 
- 
+ 
 
 
 

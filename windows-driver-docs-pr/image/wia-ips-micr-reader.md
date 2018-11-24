@@ -11,11 +11,7 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -61,7 +57,7 @@ The following table describes the required values for the **WIA\_IPS\_MICR\_READ
 </tbody>
 </table>
 
- 
+ 
 
 This property is required for all MICR Reader items. The WIA\_MICR\_READER\_DISABLED and WIA\_MICR\_READER\_AUTO values are required. WIA\_MICR\_READER\_DISABLED is the required default value.
 
@@ -98,11 +94,11 @@ The following table describes the optional values for the **WIA\_IPS\_MICR\_READ
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  The WIA minidriver is allowed to accept property configuration for the optional values but at scan time ignore requests to enable MICR detection to an inactive scan input source.
 
- 
+ 
 
 The [**WIA\_IPA\_FORMAT**](wia-ipa-format.md) property is also required for all MICR Reader items.
 
@@ -131,7 +127,7 @@ The following table describes the required values for the [**WIA\_IPA\_FORMAT**]
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -149,9 +145,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

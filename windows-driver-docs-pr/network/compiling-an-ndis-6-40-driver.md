@@ -2,11 +2,7 @@
 title: Compiling an NDIS 6.40 driver
 description: This section explains how to compile an NDIS 6.40 driver
 ms.assetid: AF027939-06C7-435C-90D9-82272CED6A84
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,9 +21,9 @@ For information on building a driver with the Windows 8.1 release of the WDK, s
 
 For information on converting an driver's build files to a Visual Studio project , see [Creating a Driver From Existing Source Files](https://msdn.microsoft.com/windows-drivers/develop/creating_a_driver_from_existing_source_files).
 
- 
+ 
 
- 
+ 
 
 
 

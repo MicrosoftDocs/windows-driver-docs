@@ -3,11 +3,7 @@ title: dg (Display Selector)
 description: The dg command shows the segment descriptor for the specified selector.
 ms.assetid: bf680931-f4f9-4b72-bb25-42d095514d2a
 keywords: ["dg (Display Selector) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **dg** command shows the segment descriptor for the specified selector.
 
-```
+```dbgcmd
 dg FirstSelector [LastSelector]
 ```
 
@@ -58,7 +54,7 @@ Specifies the hexadecimal selector value of the last selector to be displayed. I
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -144,11 +140,11 @@ Common selector values are:
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

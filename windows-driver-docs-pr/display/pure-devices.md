@@ -5,11 +5,7 @@ ms.assetid: 6ad3412c-fd80-41c0-9abc-117aacc5ddae
 keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , pure devices
 - pure devices WDK DirectX 8.0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,9 +21,9 @@ Only vertex processing directly supported by the hardware is available to the ap
 
 In order to use a pure device the application must request it with the device creation flag D3DCREATE\_PUREDEVICE and the driver must report its ability to act as a pure device.
 
- 
+ 
 
- 
+ 
 
 
 

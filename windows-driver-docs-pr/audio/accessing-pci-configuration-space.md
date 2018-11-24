@@ -6,11 +6,7 @@ keywords:
 - PCI configuration space WDK audio
 - audio adapter drivers WDK , PCI configuration space
 - adapter drivers WDK audio , PCI configuration space
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +22,9 @@ In Windows 2000 and later, PCI driver stacks export the [**BUS\_INTERFACE\_STAND
 
 For more information, see [Accessing Device Configuration Space](https://msdn.microsoft.com/library/windows/hardware/ff540450).
 
- 
+ 
 
- 
+ 
 
 
 

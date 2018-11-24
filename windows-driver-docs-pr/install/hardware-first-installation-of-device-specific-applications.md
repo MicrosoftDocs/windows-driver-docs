@@ -2,11 +2,7 @@
 title: Hardware-First Installation of Device-Specific Applications
 description: Hardware-First Installation of Device-Specific Applications
 ms.assetid: aa6a0533-6053-41fb-8599-5fc29e36c039
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,9 +19,9 @@ During a [hardware-first installation](hardware-first-installation.md), the user
 
 [Guidelines for Starting Device Installation Applications through Co-installers](guidelines-for-starting-device-installation-applications-through-co-in.md)
 
- 
+ 
 
- 
+ 
 
 
 

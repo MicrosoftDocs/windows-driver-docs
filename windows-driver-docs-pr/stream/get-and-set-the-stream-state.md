@@ -1,6 +1,5 @@
 ---
 title: Get and Set the Stream State
-author: windows-driver-content
 description: Get and Set the Stream State
 ms.assetid: e2fde528-d0cf-4ffe-945a-8672b76db61f
 keywords:
@@ -11,11 +10,7 @@ keywords:
 - KSSTATE_ACQUIRE
 - KSSTATE_PAUSE
 - KSSTATE_RUN
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,7 +24,7 @@ A subunit receives IOCTLs from a client application to get the current stream st
 
 The following code sample sets the stream to a new state:
 
-```
+```cpp
 INIT_AVCSTRM_HEADER(pAVCStrmReq, AVCSTRM_SET_STATE);
 pAVCStrmReq->AVCStreamContext = pStrmExt->AVCStreamContext; //  From cached context saved in OPEN_STREAM request
 pAVCStrmReq->CommandData.StreamState = StreamState; // New stream state
@@ -44,7 +39,7 @@ Status =
 
 The following code sample queries for the current stream state:
 
-```
+```cpp
 INIT_AVCSTRM_HEADER(pAVCStrmReq, AVCSTRM_GET_STATE);
 pAVCStrmReq->AVCStreamContext = pStrmExt->AVCStreamContext;  // From cached context saved in OPEN_STREAM request
 
@@ -59,9 +54,9 @@ Status =
 // pAVCStrmReq->CommandData.StreamState 
 ```
 
- 
+ 
 
- 
+ 
 
 
 

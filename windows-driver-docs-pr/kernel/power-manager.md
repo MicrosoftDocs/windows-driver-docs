@@ -1,14 +1,9 @@
 ---
 title: Power Manager
-author: windows-driver-content
 description: Power Manager
 ms.assetid: f7727368-6edd-427b-9fb3-02f80538807b
 keywords: ["power manager WDK kernel", "usage manager WDK power management", "power IRPs WDK kernel , power manager", "system-wide power policy WDK kernel", "power policy WDK kernel", "sleep power management WDK kernel", "hibernation power management WDK kernel", "shutdown power management WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,9 +31,9 @@ When sleep, hibernation, or shutdown is required, the power manager requests the
 
 For more information, see [Windows Kernel-Mode Power Manager](windows-kernel-mode-power-manager.md).
 
- 
+ 
 
- 
+ 
 
 
 

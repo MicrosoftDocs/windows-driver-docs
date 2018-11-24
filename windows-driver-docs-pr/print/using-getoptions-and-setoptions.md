@@ -1,16 +1,11 @@
 ---
 title: Using GetOptions and SetOptions
-author: windows-driver-content
 description: Using GetOptions and SetOptions
 ms.assetid: c8b5c235-0b74-47c8-b6ba-eba810a8467b
 keywords:
 - GetOptions
 - SetOptions
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,13 +19,13 @@ ms.localizationpriority: medium
 
 For example, in a call to **GetOptions**, suppose that the *pmszFeaturesRequested* input buffer contains this string (in MULTI\_SZ format):
 
-```
+```cpp
 "PageSize\0Duplex\0Resolution\0\0"
 ```
 
 After the **GetOptions** method returns, the output *pmszFeatureOptionBuf* could contain the following string (also in MULTI\_SZ format):
 
-```
+```cpp
 "PageSize\0Letter\0Duplex\0DuplexTumble\0Resolution\0300dpi\0\0"
 ```
 
@@ -44,9 +39,9 @@ There are two categories of features that are supported:
 
 [Driver Features](driver-features.md)
 
- 
+ 
 
- 
+ 
 
 
 

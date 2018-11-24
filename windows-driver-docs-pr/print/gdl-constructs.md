@@ -1,6 +1,5 @@
 ---
 title: GDL Constructs
-author: windows-driver-content
 description: GDL Constructs
 ms.assetid: e579bff0-4e28-4e9e-bef2-f6748c3849e5
 keywords:
@@ -17,11 +16,7 @@ keywords:
 - constructs WDK GDL , unions
 - constructs WDK GDL , delimiters
 - constructs WDK GDL , examples
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -44,7 +39,7 @@ An arbitrary amount of whitespace and linebreak sequences can precede or follow 
 
 The following code example shows a GDL construct.
 
-```
+```cpp
 *ConstructType: ConstructTag
 {   *%  Begin Construct Delimiter
 *%  this is the Construct Body
@@ -77,9 +72,9 @@ This section includes:
 
 [GDL Strings](gdl-strings.md)
 
- 
+ 
 
- 
+ 
 
 
 

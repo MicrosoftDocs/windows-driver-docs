@@ -2,11 +2,7 @@
 title: Updates for Windows DDK
 description: Updates for Windows DDK
 ms.assetid: 6e0ac7f6-8072-4688-b195-58625a9f2284
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,9 +18,9 @@ The DirectX 9.0 DDK can be installed and used with many versions of the Microsof
 
 [Specifying Maximum Size of Bug-check Data in a Video Miniport Driver](specifying-maximum-size-of-bug-check-data-in-a-video-miniport-driver.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -7,11 +7,7 @@ keywords:
 - Windows Vista display driver model WDK , tips
 - display driver model WDK Windows Vista , requirements
 - Windows Vista display driver model WDK , requirements
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -59,9 +55,9 @@ These topics discuss tips and requirements for implementing Windows Display Driv
 
 [Adaptive refresh for playing 24 fps video content](adaptive-refresh-for-playing-24-fps-content.md)
 
- 
+ 
 
- 
+ 
 
 
 

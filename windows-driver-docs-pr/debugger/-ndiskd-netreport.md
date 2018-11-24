@@ -3,11 +3,7 @@ title: ndiskd.netreport
 description: The ndiskd.netreport extension generates a visual report of the entire network stack.
 ms.assetid: 0FC134A8-8D91-4299-8D15-4E8EDD9ED855
 keywords: ["ndiskd.netreport Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!ndiskd.netreport** extension generates a visual report of the entire network stack. The report **!ndiskd.netreport** generates is an HTML file, and it will give you a link to its location. The HTML file contains detailed information about the network stack, so if you need to share it for analysis you can email it instead of having to send a large crash dump file.
 
-```
+```console
 !ndiskd.netreport [-outputpath <str>] [-jsononly] 
 ```
 
@@ -44,7 +40,7 @@ Examples
 
 Run the **!ndiskd.netreport** extension to draw a box diagram of your network stack.
 
-```
+```console
 1: kd> !ndiskd.netreport
 
 
@@ -97,9 +93,9 @@ The Data flows tab, which appears if NBL tracking was enabled on the target syst
 
 [Using NIC Teaming for Network Subsystem Performance](https://msdn.microsoft.com/library/windows/hardware/dn567652)
 
- 
+ 
 
- 
+ 
 
 
 

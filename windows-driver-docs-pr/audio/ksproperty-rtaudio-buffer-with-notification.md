@@ -11,11 +11,7 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -50,13 +46,13 @@ The following table summarizes the features of this property.
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p>[<strong>KSRTAUDIO_BUFFER_PROPERTY_WITH_NOTIFICATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537495)</p></td>
-<td align="left"><p>[<strong>KSRTAUDIO_BUFFER</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537493)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537495" data-raw-source="[&lt;strong&gt;KSRTAUDIO_BUFFER_PROPERTY_WITH_NOTIFICATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537495)"><strong>KSRTAUDIO_BUFFER_PROPERTY_WITH_NOTIFICATION</strong></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537493" data-raw-source="[&lt;strong&gt;KSRTAUDIO_BUFFER&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537493)"><strong>KSRTAUDIO_BUFFER</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property descriptor (instance data) consists of a KSRTAUDIO\_BUFFER\_PROPERTY\_WITH\_NOTIFICATION structure that contains a [**KSPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff564262) structure along with other members. The client writes its requested buffer size into the structure. The client must specify the base address as **NULL** unless a specific base address is needed.
 
@@ -95,7 +91,7 @@ A KSPROPERTY\_RTAUDIO\_BUFFER\_WITH\_NOTIFICATION property request returns STATU
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -141,9 +137,9 @@ Requirements
 
 [**KSPROPERTY\_RTAUDIO\_REGISTER\_NOTIFICATION\_EVENT**](ksproperty-rtaudio-register-notification-event.md)
 
- 
+ 
 
- 
+ 
 
 
 

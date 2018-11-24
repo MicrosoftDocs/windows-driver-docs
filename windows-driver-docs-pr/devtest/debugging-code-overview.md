@@ -6,11 +6,7 @@ keywords:
 - debugging drivers WDK , debugging code
 - debugging code WDK
 - debugging code WDK , about debugging code
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +30,9 @@ This topic includes:
 
 [Determining if a Debugger is Attached](determining-if-a-debugger-is-attached.md)
 
- 
+ 
 
- 
+ 
 
 
 

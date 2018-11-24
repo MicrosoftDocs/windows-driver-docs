@@ -3,11 +3,7 @@ title: Two Firewalls
 description: Two Firewalls
 ms.assetid: e6192cf8-02a4-4dbe-8ed7-a64f8efc24f6
 keywords: ["remote debugging, two firewalls", "firewalls and remote debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,19 +31,19 @@ First, make sure the target computer is configured for debugging and is attached
 
 Second, start the repeater on 127.0.20.20:
 
-```
+```console
 dbengprx -p -s tcp:port=9001 -c tcp:port=9000,clicon=127.0.10.10 
 ```
 
 Third, start the KD connection server on 127.0.10.10 in Building A as follows:
 
-```
+```console
 kdsrv -t tcp:port=9000,clicon=127.0.20.20,password=longjump 
 ```
 
 Finally, start the smart client on 127.0.30.30 in Building C. (This can actually be done before or after starting the server in Building A.)
 
-```
+```console
 windbg -k kdsrv:server=@{tcp:server=127.0.20.20,port=9001,password=longjump},trans=@{1394:channel=9} -y SymbolPath
 ```
 
@@ -57,21 +53,21 @@ This scenario can be made even more complicated if you suppose that the symbols 
 
 Suppose that 127.0.30.30 has the symbols, as before, and that its local name is \\\\BOXC. The smart client can be started with the same command as above but with an additional **-server** parameter. Since no one will be using this machine, it will take less processing time if you use KD instead of WinDbg:
 
-```
+```console
 kd -server npipe:pipe=randomname -k kdsrv:server=@{tcp:server=127.0.20.20,port=9001,password=longjump},trans=@{1394:channel=9} -y SymbolPath
 ```
 
 Then the technician, elsewhere in the building, can start a debugging client as follows:
 
-```
+```console
 windbg -remote npipe:server=\\BOXC,pipe=randomname 
 ```
 
 Notice that the password must be supplied by the first non-repeater in the chain (the smart client on \\\\BOXC), not by the final debugger in the chain.
 
- 
+ 
 
- 
+ 
 
 
 

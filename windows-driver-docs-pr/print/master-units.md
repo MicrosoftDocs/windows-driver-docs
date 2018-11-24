@@ -1,16 +1,11 @@
 ---
 title: Master Units
-author: windows-driver-content
 description: Master Units
 ms.assetid: 6c3abf16-1206-4b90-a7e9-c8a581191502
 keywords:
 - GPD files WDK Unidrv , master units
 - master units WDK GPD files
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,7 +27,7 @@ To determine a plane's master units, calculate the least common multiple (LCM) o
 
 **Important**   Both of the master unit values and the vertical and horizontal resolutions should be a multiple of the number of pins in the print head (that is, the **PinsPerPhysPass** value). If this condition is not met, it is possible that extra blank lines will be produced for certain paper sizes.
 
- 
+ 
 
 To specify a printer's master units, use the \***MasterUnits** attribute. The attribute's format is as follows:
 
@@ -47,17 +42,17 @@ To specify a printer's master units, use the \***MasterUnits** attribute. The at
 </tbody>
 </table>
 
- 
+ 
 
 where *X\_Denominator* is the LCM of the denominators for the horizontal resolutions, and *Y\_Denominator* is the LCM of the denominators for the vertical resolutions. The following GPD entry specifies the master units for the example:
 
-```
+```cpp
 *MasterUnits: PAIR(320, 576)
 ```
 
 Generally, position and size values used in GPD file entries must be specified in master units. For example, to specify that the maximum custom page size for our example printer is 9 inches by 12 inches, the following entry would be used, where 9x320=2880 and 12x576=6912:
 
-```
+```cpp
 *MaxSize: PAIR(2880, 6912)
 ```
 
@@ -65,16 +60,16 @@ When calculating values for master units, use only the device resolutions that y
 
 If your printer supports [cursor commands](cursor-commands.md) for moving the cursor position, then the values specified for the \***XMoveUnit** and \***YMoveUnit**[cursor attributes](cursor-attributes.md) must be included in master unit calculations. Suppose, for example, that a GPD file contains the following entries:
 
-```
+```cpp
 *XMoveUnit: 60
 *YMoveUnit: 60
 ```
 
 When calculating this printer's master units, 1/60th of an inch must be included in the horizontal and vertical master unit calculations.
 
- 
+ 
 
- 
+ 
 
 
 

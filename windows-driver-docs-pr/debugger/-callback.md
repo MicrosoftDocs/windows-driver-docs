@@ -3,11 +3,7 @@ title: callback
 description: The callback extension displays the callback data related to the trap for the specified thread.
 ms.assetid: afbd7884-d63d-4e37-a437-91bc910a3ae2
 keywords: ["callback data for system traps", "callback Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!callback** extension displays the callback data related to the trap for the specified thread.
 
-```
+```dbgsyntax
 !callback Address [Number]
 ```
 
@@ -54,7 +50,7 @@ Specifies the number of the desired callback frame. This frame is noted in the d
 </tbody>
 </table>
 
- 
+ 
 
 This extension command can only be used with an x86-based target computer.
 
@@ -67,9 +63,9 @@ Remarks
 
 If the system has not experienced a system trap, this extension will not produce useful data.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,12 +1,7 @@
 ---
 title: Sample PowerShell script to query SMBIOS locally
 description: Sample PowerShell script to query SMBIOS locally
-author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 05/07/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -16,7 +11,7 @@ ms.localizationpriority: medium
 
 The following list of ChassisTypes is copied from the latest DMTF SMBIOS specification.
 
-```
+```powershell
 # Set-ExecutionPolicy or Script Signing documentation needs to be reviewed
 # Current script is designed to run on individual machines
 #
@@ -105,6 +100,3 @@ $list
 Sample output:
 
 ![Sample output](images/sample-output.png)
-
-
-

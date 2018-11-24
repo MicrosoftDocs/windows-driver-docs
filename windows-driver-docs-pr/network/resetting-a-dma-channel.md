@@ -8,11 +8,7 @@ keywords:
 - transferring data WDK NetDMA , resetting channels
 - DMA transfers WDK NetDMA , resetting channels
 - NetDMA WDK networking , resetting channe
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,7 +17,7 @@ ms.localizationpriority: medium
 
 **Note**  The NetDMA interface is not supported in Windows 8 and later.
 
- 
+ 
 
 
 
@@ -32,9 +28,9 @@ In *ProviderResetChannel*, the NetDMA provider should terminate any active trans
 
 Before the reset operation is complete, the NetDMA provider must set the DMA channel to the initial state that existed after the channel was allocated. After the NetDMA interface calls *ProviderResetChannel*, the NetDMA provider cannot access any of the previously submitted DMA descriptors. The DMA channel must be ready for the NetDMA interface to call the [**ProviderStartDma**](https://msdn.microsoft.com/library/windows/hardware/ff570404) function.
 
- 
+ 
 
- 
+ 
 
 
 

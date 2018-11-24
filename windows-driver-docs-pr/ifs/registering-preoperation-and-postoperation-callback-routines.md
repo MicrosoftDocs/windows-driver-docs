@@ -1,17 +1,12 @@
 ---
 title: Registering Preoperation and Postoperation Callback Routines
-author: windows-driver-content
 description: Registering Preoperation and Postoperation Callback Routines
 ms.assetid: 9f89ca46-8a8f-422f-9dbe-2620b944a3ae
 keywords:
 - preoperation callback routines WDK file system minifilter , registering
 - postoperation callback routines WDK file system minifilter , registering
 - registering callback routines
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,7 +30,7 @@ The last element in the array must be {IRP\_MJ\_OPERATION\_END}.
 
 The following code example, which is taken from the Scanner sample minifilter driver, shows an array of FLT\_OPERATION\_REGISTRATION structures. The Scanner sample minifilter driver registers preoperation and postoperation callback routines for IRP\_MJ\_CREATE and preoperation callback routines for IRP\_MJ\_CLEANUP and IRP\_MJ\_WRITE operations.
 
-```
+```cpp
 const FLT_OPERATION_REGISTRATION Callbacks[] = {
     {IRP_MJ_CREATE,
      0,
@@ -53,9 +48,9 @@ const FLT_OPERATION_REGISTRATION Callbacks[] = {
 };
 ```
 
- 
+ 
 
- 
+ 
 
 
 

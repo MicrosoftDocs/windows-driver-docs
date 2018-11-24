@@ -2,11 +2,7 @@
 title: WDI_TLV_RSN_KEY_INFO
 description: WDI_TLV_RSN_KEY_INFO is a TLV that contains Rsn Eapol key parameters.
 ms.assetid: 8C7C77F7-FF62-485C-94C4-EE0F1E57D771
-ms.author: windowsdriverdev 
-ms.date: 04/02/2018 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 04/02/2018
 keywords:
  - WDI_TLV_RSN_KEY_INFO Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -14,7 +10,7 @@ ms.localizationpriority: medium
 
 # WDI_TLV_RSN_KEY_INFO
 
-WDI_TLV_RSN_KEY_INFO is a TLV that contains contains Rsn Eapol key parameters. This TLV is a value of the [WDI_TLV_PM_PROTOCOL_OFFLOAD_80211RSN_REKEY](wdi-tlv-pm-protocol-offload-80211rsn-rekey.md) TLV.
+WDI_TLV_RSN_KEY_INFO is a TLV that contains Rsn Eapol key parameters. This TLV is a value of the [WDI_TLV_PM_PROTOCOL_OFFLOAD_80211RSN_REKEY](wdi-tlv-pm-protocol-offload-80211rsn-rekey.md) TLV.
 
 ## TLV Type
 
@@ -32,7 +28,7 @@ The size (in bytes) of the following values.
 | UINT64 | A UINT64 value that specifies the replay counter. |
 | UINT8\[16\] | A UINT8 array that specifies the IEEE 802.11 key confirmation key (KCK). |
 | UINT8\[16\] | A UINT8 array that specifies the IEEE 802.11 key encryption key (KEK).  |
- 
+ 
 
 ## Requirements
 

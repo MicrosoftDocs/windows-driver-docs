@@ -6,11 +6,7 @@ keywords:
 - video miniport drivers WDK Windows 2000
 - Windows 2000 display driver model WDK , video miniport drivers
 - display drivers WDK Windows 2000 , video miniport drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,9 +20,9 @@ This section describes the role of the video miniport driver, which is part of t
 
 For more information about the differences between the two display driver models, see [Windows 2000 Display Driver Model](windows-2000-display-driver-model-design-guide.md).
 
- 
+ 
 
- 
+ 
 
 
 

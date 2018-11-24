@@ -6,11 +6,7 @@ keywords:
 - SetupAPI functions WDK , determining parents
 - parent device determining WDK SetupAPI
 - device parents WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +24,9 @@ When the [Plug and Play](https://msdn.microsoft.com/library/windows/hardware/ff5
 
 -   If a device has a fixed relationship with its parent, you can save and retrieve the device instance ID of its parent. When a device becomes nonpresent, you can use its device instance handle to obtain an SP_DEVINFO_DATA structure for the device. For more information, see [Determining the Parent of a Nonpresent Device](determining-the-parent-of-a-nonpresent-device.md).
 
- 
+ 
 
- 
+ 
 
 
 

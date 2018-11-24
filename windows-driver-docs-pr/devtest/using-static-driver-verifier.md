@@ -2,11 +2,7 @@
 title: Using Static Driver Verifier
 description: Using Static Driver Verifier
 ms.assetid: 25530e74-a9d2-4e38-a8b8-7bd85e99f171
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,9 +21,9 @@ For information about what you need to do to get up and running quickly, see [Us
 -   [Recommendations for Troubleshooting Static Driver Verifier](recommendations-for-troubleshooting-static-driver-verifier.md)
 -   [Using SDV and the Sample Drivers](using-sdv-and-the-sample-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

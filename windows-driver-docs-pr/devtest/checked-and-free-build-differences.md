@@ -6,11 +6,7 @@ keywords:
 - checked builds WDK , vs. free builds
 - free builds WDK
 - retail builds WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -69,9 +65,9 @@ As an alternative to a full checked build, you can configure a computer to use a
 
 For more complete testing of your driver when you are using a partial checked build, you also consider installing the checked versions of the related system-provided drivers. For example, if you are developing a lower disk filter driver, you should consider extracting and installing the checked build of Disk.sys and Storport.sys from the full checked build.
 
- 
+ 
 
- 
+ 
 
 
 

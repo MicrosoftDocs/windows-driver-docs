@@ -7,11 +7,7 @@ keywords:
 - DMA operations WDK networking , porting DMA operations
 - scatter/gather DMA WDK networking , porting DMA operations
 - porting miniport drivers WDK networking , DMA operations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,7 +31,7 @@ For miniport drivers that call the [**NdisMAllocateSharedMemoryAsyncEx**](https:
 
 **Note**  In NDIS 6.0, you must call the [**NdisMRegisterDmaChannel**](https://msdn.microsoft.com/library/windows/hardware/ff563646) function before calling [**NdisMAllocateSharedMemoryAsyncEx**](https://msdn.microsoft.com/library/windows/hardware/ff562784).
 
- 
+ 
 
 While processing send requests, a miniport driver can call the [**NdisMAllocateNetBufferSGList**](https://msdn.microsoft.com/library/windows/hardware/ff562776) function to obtain a scatter gather DMA list (SGL) for a NET\_BUFFER structure.
 
@@ -45,9 +41,9 @@ Miniport drivers must call the [**NdisMFreeNetBufferSGList**](https://msdn.micro
 
 For more information about scatter gather DMA, see [Scatter/Gather DMA](https://msdn.microsoft.com/library/windows/hardware/ff570739). For more information about porting send request handling, see [Porting NDIS Miniport Driver Send Data Handling](porting-ndis-miniport-driver-send-data-handling.md).
 
- 
+ 
 
- 
+ 
 
 
 

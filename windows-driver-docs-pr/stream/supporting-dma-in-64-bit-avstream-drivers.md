@@ -1,6 +1,5 @@
 ---
 title: Supporting DMA in 64-Bit AVStream Drivers
-author: windows-driver-content
 description: Supporting DMA in 64-Bit AVStream Drivers
 ms.assetid: 1173a83f-8d9e-4678-bfb5-f2fb91e827be
 keywords:
@@ -10,11 +9,7 @@ keywords:
 - Direct Memory Access WDK AVStream
 - 64-bit WDK AVStream
 - 32-bit addressable devices WDK AVStream
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,7 +27,7 @@ All drivers compiled for Win64 platforms should use [**IKsDeviceFunctions::Regis
 
 The following code example illustrates how to support DMA on both the x64-based client release and 32-bit platforms:
 
-```
+```cpp
 NTSTATUS MyDeviceStart (...) {
 // Get the DMA adapter object and store it in the Context member of the I/O stack location.
 Context -> AdapterObject = IoGetDmaAdapter (
@@ -84,9 +79,9 @@ This code example works on 64-bit as well as 32-bit platforms. If the driver doe
 
 In addition, when authoring a 64-bit AVStream driver, minimize the number of concurrent frame locks held. Since AVStream generates scatter/gather mappings when the minidriver first locks frames, your driver might run out of resources if it does not follow this guideline. In particular, if you are writing a driver to run on a Win64 platform with a 32-bit card, increasing the number of simultaneous locks increases the chance that a lock will fail because low memory buffers are a limited resource.
 
- 
+ 
 
- 
+ 
 
 
 

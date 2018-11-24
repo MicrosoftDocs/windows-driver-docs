@@ -11,11 +11,7 @@ keywords:
 - split frames WDK header-data split
 - storage WDK header-data split
 - space managemen
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -41,9 +37,9 @@ This section includes:
 
 [Supporting Header-Data Split in Protocol Driver and Filter Drivers](supporting-header-data-split-in-protocol-driver-and-filter-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

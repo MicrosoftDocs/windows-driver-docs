@@ -5,11 +5,7 @@ ms.assetid: 0c0516b0-1fc4-43b5-8c7c-58255c72a4e7
 keywords:
 - intermediate drivers WDK networking , architecture
 - NDIS intermediate drivers WDK , architecture
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -48,9 +44,9 @@ You can use intermediate drivers to:
 
 [NDIS Intermediate Driver Reference](https://msdn.microsoft.com/library/windows/hardware/ff565782)
 
- 
+ 
 
- 
+ 
 
 
 

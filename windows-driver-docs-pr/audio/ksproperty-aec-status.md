@@ -11,11 +11,7 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -51,13 +47,13 @@ The KSPROPERTY\_AEC\_STATUS property is used to monitor the status of an AEC nod
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p>[<strong>KSNODEPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537143)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537143" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537143)"><strong>KSNODEPROPERTY</strong></a></p></td>
 <td align="left"><p>ULONG</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is of type ULONG. This is a status value that can be set to the bitwise OR of one or more of the flag bits in the left column of the following table, which are defined in header file Ksmedia.h. The corresponding DSCFX\_AEC\_STATUS flags from header file Dsound.h are shown in the right column of the table. See the Microsoft Windows SDK documentation for information about these flags.
 
@@ -98,7 +94,7 @@ The property value (operation data) is of type ULONG. This is a status value tha
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -142,9 +138,9 @@ Requirements
 
 [**KSNODETYPE\_ACOUSTIC\_ECHO\_CANCEL**](ksnodetype-acoustic-echo-cancel.md)
 
- 
+ 
 
- 
+ 
 
 
 

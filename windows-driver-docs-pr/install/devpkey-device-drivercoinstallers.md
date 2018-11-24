@@ -12,6 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # DEVPKEY_Device_DriverCoInstallers
@@ -31,7 +32,7 @@ The DEVPKEY_Device_DriverCoInstallers device property represents a list of DLL n
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Property-data-type identifier</strong></p></td>
-<td align="left"><p>[<strong>DEVPROP_TYPE_STRING_LIST</strong>](devprop-type-string-list.md)</p></td>
+<td align="left"><p><a href="devprop-type-string-list.md" data-raw-source="[&lt;strong&gt;DEVPROP_TYPE_STRING_LIST&lt;/strong&gt;](devprop-type-string-list.md)"><strong>DEVPROP_TYPE_STRING_LIST</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Data format</strong></p></td>
@@ -53,7 +54,7 @@ The DEVPKEY_Device_DriverCoInstallers device property represents a list of DLL n
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -91,9 +92,9 @@ Requirements
 
 [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963)
 
- 
+ 
 
- 
+ 
 
 
 

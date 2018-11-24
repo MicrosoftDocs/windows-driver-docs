@@ -1,6 +1,5 @@
 ---
 title: Troubleshooting GDL Parsing
-author: windows-driver-content
 description: Troubleshooting GDL Parsing
 ms.assetid: 8c678a2f-b15b-4693-9bed-0edec06b3485
 keywords:
@@ -10,11 +9,7 @@ keywords:
 - troubleshooting GDL parsing WDK
 - GDL WDK , parsing errors
 - GDL WDK , errors
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -64,13 +59,13 @@ Solution: Xpath assumes that element names without a namespace prefix refer to t
 
 To access these elements by using Xpath, the client must first map this default namespace to an explict prefix. To map the default namespace in this way, use the document pbjects setProperty method. The property that needs to be set is SelectionNamespaces. Use this property to assign the default namespace an explict prefix. In the snapshot, the default namespace is http://schemas.microsoft.com/2002/print/gdl/1.0 so the call to setProperty might look like the following code example.
 
-```
+```cpp
 XMLDoc->setProperty(L"SelectionNamespaces", "xmlns:gdl=\"http://schemas.microsoft.com/2002/print/gdl/1.0\"");
 ```
 
 The second argument in the preceding example is actually a Variant, but this added complexity is omitted for simplicity. The Xpath query must now explicitly reference the namespace prefix gdl when referencing elements in the default namespace. The query then becomes the following code example.
 
-```
+```cpp
 selectSingleNode("/gdl:SnapshotRoot/gdl:GDL_ATTRIBUTE")
 ```
 
@@ -86,9 +81,9 @@ Solution: Creating your own XML by using the PASSTHROUGH or XSD\_DEFINED data ty
 <a href="" id="symptom---the-parser-says--preface-cannot-be-used-with-a-precompiled-file---but-the-root-file-does-not-contain-a--precompiled-directive-"></a>Symptom: The parser says "Preface cannot be used with a precompiled file", but the root file does not contain a \#Precompiled directive.  
 Solution: The \#Precompiled directive might actually reside in the preface itself. The parser cannot distinguish whether GDL content came from the preface or the root file.
 
- 
+ 
 
- 
+ 
 
 
 

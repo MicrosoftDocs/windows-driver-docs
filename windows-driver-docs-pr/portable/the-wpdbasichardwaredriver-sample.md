@@ -1,11 +1,7 @@
 ---
 Description: The WpdBasicHardwareDriver Sample
 title: The WpdBasicHardwareDriver Sample
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,7 +28,7 @@ The sensors that are supported by the WpdBasicHardwareDriver are described in th
 | Piezo Film Vibration Sensor QTI (light) Sensor | Senses vibration.                                   |
 | QTI (light) Sensor                             | Senses light intensity.                             |
 
- 
+ 
 
 These nine sensors are sold by the [Parallax Corporation](http://go.microsoft.com/fwlink/p/?linkid=154730) in Rocklin, California. They can be purchased separately, or together in a Sensor Sample kit.
 
@@ -42,9 +38,9 @@ The circuit designs are based on the sample circuits provided by Parallax in the
 
 The microcontroller firmware for each of the nine circuits is included in the src\\wpd\\WpdBasicHardwareDriver\\firmware subdirectory in the Windows Driver Kit (WDK).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Printer Options
-author: windows-driver-content
 description: Printer Options
 ms.assetid: 48033d01-e701-4bc5-aac9-9ac2f0fd4de9
 keywords:
@@ -11,11 +10,7 @@ keywords:
 - printer features WDK Unidrv , printer options
 - printer options WDK Unidrv , about printer options
 - Unidrv WDK print
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +26,9 @@ This section discusses GPD language support for both [standard options](standard
 
 Additional topics in this section include [Option Entry Format](option-entry-format.md), [Option Attributes](option-attributes.md), and [Option Constraints](option-constraints.md).
 
- 
+ 
 
- 
+ 
 
 
 

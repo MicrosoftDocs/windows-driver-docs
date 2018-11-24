@@ -8,11 +8,7 @@ keywords:
 - identifiers WDK device , ISAPNP devices
 - ISAPNP device identifiers WDK device installations
 - hardware IDs WDK device installations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -46,9 +42,9 @@ The second of the two hardware identifiers is also a compatible ID. The ISAPNP e
 
 PNP0501
 
- 
+ 
 
- 
+ 
 
 
 

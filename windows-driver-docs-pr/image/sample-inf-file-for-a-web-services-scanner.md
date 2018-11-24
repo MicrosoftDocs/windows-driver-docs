@@ -1,13 +1,8 @@
 ---
 title: Sample INF File for a Web Services Scanner
-author: windows-driver-content
 description: Sample INF File for a Web Services Scanner
 ms.assetid: 1e65739f-9216-4962-9108-60ba291ff052
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -18,9 +13,9 @@ The following INF file, *Sti.inf*, shows how to install a WIA driver. Entries th
 
 **Note**   The requirements for the device hardware IDs and the **PKEY\_Device\_HardwareIds** property that are referenced in the following INF example are described in the [PNP-X Implementer's Guide](http://go.microsoft.com/fwlink/p/?linkid=242570).
 
- 
+ 
 
-```
+```INF
 ;
 ; MyWSScanner.inf - sample installation file that shows how
 ; to install a WIA driver for a WS scanner by using the inbox 
@@ -62,7 +57,7 @@ DefaultDestDir = 11
 ; Replace UMB\PnPX_YourDevice_HardwareID in the three Models 
 ; sections below to match the actual hardware IDs and compatible 
 ; IDs from the metadata that is supplied by the device, as it 
-; is described in the PNP-X Implementer&#39;s Guide for the 
+; is described in the PNP-X Implementer's Guide for the 
 ; PKEY_Device_HardwareIds property:
 ;
 
@@ -136,9 +131,9 @@ ScanToOCREvent.Desc="Scan To OCR"
 ScanToEmailEvent.Desc="Scan To E-mail"
 ```
 
- 
+ 
 
- 
+ 
 
 
 

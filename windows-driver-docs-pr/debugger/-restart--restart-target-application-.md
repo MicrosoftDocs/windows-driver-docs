@@ -3,11 +3,7 @@ title: .restart (Restart Target Application)
 description: The .restart command restarts the target application.Do not confuse this command with the .restart (Restart Kernel Connection) command, which works only in kernel mode.
 ms.assetid: abfa1817-41d8-4bb2-a6d2-e9c9027b50df
 keywords: [".restart (Restart Target Application) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,7 +20,7 @@ The **.restart** command restarts the target application.
 
 Do not confuse this command with the [**.restart (Restart Kernel Connection)**](-restart--restart-kernel-connection-.md) command, which works only in kernel mode.
 
-```
+```dbgcmd
 .restart 
 ```
 
@@ -54,7 +50,7 @@ Do not confuse this command with the [**.restart (Restart Kernel Connection)**](
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -71,9 +67,9 @@ After the process is restarted, it immediately breaks into the debugger.
 
 In WinDbg, use the [View | WinDbg Command Line](view---windbg-command-line.md) command if you started your target from the WinDbg command prompt and you want to review this command line before you decide whether to use **.restart**.
 
- 
+ 
 
- 
+ 
 
 
 

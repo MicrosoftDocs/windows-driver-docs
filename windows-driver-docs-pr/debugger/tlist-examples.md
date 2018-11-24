@@ -3,11 +3,7 @@ title: TList Examples
 description: TList Examples
 ms.assetid: 9c9a1e81-03c2-4b7c-b0da-b25942548aa9
 keywords: ["TList, TList examples"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,7 +19,7 @@ The following examples demonstrate how to use TList.
 
 Typing **tlist** without additional parameters displays a list of running processes, their process IDs (PIDs), and the title of the window in which they are running, if any.
 
-```
+```console
 c:\>tlist
 
    0 System Process  
@@ -56,7 +52,7 @@ The following command uses the **-p** parameter and process name to find the pro
 
 In response, TList displays the process ID of the Explorer process, 328.
 
-```
+```console
 c:\>tlist -p explorer
 328
 ```
@@ -65,7 +61,7 @@ c:\>tlist -p explorer
 
 The following command uses the process ID of the process in which Explorer is running to find detailed information about the Explorer process.
 
-```
+```console
 c:\>tlist 328
 ```
 
@@ -87,7 +83,7 @@ In response, TList displays details of the Explorer process including the follow
 
 The following is an excerpt of the output resulting from this command.
 
-```
+```console
  328 explorer.exe      Program Manager
    CWD:     C:\Documents and Settings\user01\
    CmdLine: C:\WINDOWS\Explorer.EXE
@@ -118,7 +114,7 @@ The following is an excerpt of the output resulting from this command.
 
 The following command searches for processes by a regular expression that represents the process name or window name of one or more processes. In this example, the command searches for a process whose process name or window name begins with "ino."
 
-```
+```console
 c:\>tlist ino*
 ```
 
@@ -128,13 +124,13 @@ In response, TList displays process details for Inorpc.exe, Inort.exe, and Inota
 
 The following command displays a tree that represents the processes running on the computer. Processes appear as the children of the process that created them.
 
-```
+```console
 c:\>tlist /t
 ```
 
 The resulting process tree follows. This tree shows, among other things, that the System (4) process created the Smss.exe process, which created Csrss.exe, Winlogon.exe, Lsass.exe and Rundll32.exe. Also, Winlogon.exe created Services.exe, which created all of the service-related processes.
 
-```
+```console
 System Process (0)
 System (4)
   smss.exe (404)
@@ -168,15 +164,15 @@ explorer.exe (328) Program Manager
 
 The following command finds all of the processes running on the computer that load a particular DLL.
 
-```
+```console
 c:\>tlist /m 
 ```
 
 In response, TList displays process details for Inorpc.exe, Inort.exe, and Inotask.exe. For a description of the output, see the "Find process details using PID" subsection above.
 
- 
+ 
 
- 
+ 
 
 
 

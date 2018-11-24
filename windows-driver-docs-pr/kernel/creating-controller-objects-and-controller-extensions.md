@@ -1,14 +1,9 @@
 ---
 title: Creating Controller Objects and Controller Extensions
-author: windows-driver-content
 description: Creating Controller Objects and Controller Extensions
 ms.assetid: 1f5bfcbc-1d8e-4ace-9539-a25e226444a6
 keywords: ["controller objects WDK kernel , creating", "IoCreateController", "controller extensions WDK I/O", "extensions WDK controller objects", "controller objects WDK kernel , extensions"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +29,9 @@ If the physical controller represented by a controller object generates interrup
 
 **IoCreateController** allocates resident storage for the controller object and extension, which it initializes with zeros. If it cannot allocate the memory, **IoCreateController** returns a **NULL** pointer. If this occurs, the driver must fail device startup and should return STATUS\_INSUFFICIENT\_RESOURCES.
 
- 
+ 
 
- 
+ 
 
 
 

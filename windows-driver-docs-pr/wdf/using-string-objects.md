@@ -1,17 +1,12 @@
 ---
 title: Using String Objects
-author: windows-driver-content
 description: This topic describes the support that Windows Driver Frameworks (WDF) provides for string objects. It applies to both Kernel-Mode Driver Framework (KMDF).
 ms.assetid: b1d52a18-ebd5-4ba7-b5c7-3ef3d298c82e
 keywords:
 - string objects WDK KMDF
 - framework objects WDK KMDF , string objects
 - Unicode strings WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +28,9 @@ Some of the framework's object methods, such as [**WdfRegistryQueryString**](htt
 
 To access the string that is assigned to a string object, your driver can call [**WdfStringGetUnicodeString**](https://msdn.microsoft.com/library/windows/hardware/ff550049).
 
- 
+ 
 
- 
+ 
 
 
 

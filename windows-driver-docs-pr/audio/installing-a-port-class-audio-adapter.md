@@ -12,11 +12,7 @@ keywords:
 - registry WDK audio
 - add-registry-sections WDK audio
 - audio adapter drivers WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,7 +26,7 @@ This section describes the device-class-specific information that a vendor shoul
 
 The description of the required INF file entries in this section is based on a hypothetical XYZ Audio Device. The driver for this device is contained in a file named Xyzaudio.sys. Example **Manufacturer** and **Models** sections for the device are shown in the following:
 
-```
+```inf
   [VendorName]  ; Manufacturer section
   %XYZ-Audio-Device-Description%=XYZ-Audio-Device, <Plug and Play hardware ID>
   [XYZ-Audio-Device]  ; Models section
@@ -57,9 +53,9 @@ The following topics present examples of the key sections in the INF file that i
 
 [Miscellaneous Installation Issues for an Audio Adapter](miscellaneous-installation-issues-for-an-audio-adapter.md)
 
- 
+ 
 
- 
+ 
 
 
 

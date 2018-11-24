@@ -1,16 +1,11 @@
 ---
 title: Defining Automation Tables
-author: windows-driver-content
 description: Defining Automation Tables
 ms.assetid: 1c0dace6-b618-4705-bf5d-65457d14c072
 keywords:
 - BDA minidrivers WDK AVStream , automation tables
 - automation tables WDK AVStream
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,7 +21,7 @@ A BDA minidriver should define arrays of property and method sets and then defin
 
 The following code snippet shows examples of filter automation tables and arrays of property and method sets:
 
-```
+```cpp
 //
 //  Filter Level Property Set supported
 //
@@ -84,7 +79,7 @@ DEFINE_KSAUTOMATION_TABLE(FilterAutomation) {
 
 The following code snippet shows an example of a node automation table and an array of property sets:
 
-```
+```cpp
 //
 //  RF tuner node property set supported
 //
@@ -113,9 +108,9 @@ DEFINE_KSAUTOMATION_TABLE(RFTunerNodeAutomation) {
 };
 ```
 
- 
+ 
 
- 
+ 
 
 
 

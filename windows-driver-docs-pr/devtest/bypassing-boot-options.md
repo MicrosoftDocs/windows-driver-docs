@@ -9,11 +9,7 @@ keywords:
 - kernel debugging support WDK boot options
 - Debugging Mode WDK boot options
 - skipping boot options
-ms.author: windowsdriverdev
 ms.date: 07/02/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,7 +25,7 @@ Pressing F8 will cause the Troubleshooting and Advanced Startup Options menu to 
 
 Starting with Windows 8 and Windows Server 2012, the boot loader no longer responds to F8. Instead, when the boot loader detects that the operating system is in trouble, e.g. the login screen cannot be reached, it automatically presents you with the relevant diagnostics options, among which the **Debugging Mode** could be found. If the login screen can be reached, however, one can trigger the display of diagnostics option during the next startup by holding down Shift key while issuing a Restart command.
 
- 
+ 
 
 
 

@@ -1,13 +1,8 @@
 ---
 title: WDI_TLV_BSSID
-author: windows-driver-content
 description: WDI_TLV_BSSID is a TLV that contains the BSSID of a BSS.
 ms.assetid: 0B3AB317-D1E7-4E61-9F6E-C3134B5A3984
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_BSSID Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -35,7 +30,7 @@ The size (in bytes) of a [**WDI\_MAC\_ADDRESS**](https://msdn.microsoft.com/libr
 |---------------------------------------------------|---------------------------------------------|
 | [**WDI\_MAC\_ADDRESS**](https://msdn.microsoft.com/library/windows/hardware/dn926071) | A Wi-Fi MAC address that specifies a BSSID. |
 
- 
+ 
 
 Requirements
 ------------
@@ -61,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

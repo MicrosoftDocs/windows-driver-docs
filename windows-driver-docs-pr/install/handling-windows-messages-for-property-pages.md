@@ -12,11 +12,7 @@ keywords:
 - friendly names WDK property pages
 - WM_NOTIFY
 - PSN_APPLY
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,7 +28,7 @@ In response to a WM_INITDIALOG message, the dialog box procedure initializes inf
 
 [**SetupDiLoadClassIcon**](https://msdn.microsoft.com/library/windows/hardware/ff552053) loads the icons for a specified device class and returns a handle to the loaded large icon that can be used in a subsequent call to **SendDlgItemMessage**. For example:
 
-```
+```cpp
 if (SetupDiLoadClassIcon(
         &pTestPropPageData->DeviceInfoData->ClassGuid, &ClassIcon, 
         NULL)) {
@@ -74,9 +70,9 @@ When it receives the PSN_APPLY notification, the provider must do the following:
 
 The property sheet sends a PSN_RESET notification message when the user clicks **Cancel**. In response to this message, the dialog box procedure should discard any changes that were made by the user.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: Remote Display Drivers
 description: A remote display driver is based on the Windows 2000 Mirror Driver model and is used to render the desktop in a remote session.
 ms.assetid: 249528D3-B5F1-41D8-86BF-B9DC623FB480
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,9 +28,9 @@ To successfully install and run starting with Windows 8, a remote display drive
 -   [**DrvResetPDEV**](https://msdn.microsoft.com/library/windows/hardware/ff556276)
 -   [**DrvSetPointerShape**](https://msdn.microsoft.com/library/windows/hardware/ff556289)
 
- 
+ 
 
- 
+ 
 
 
 

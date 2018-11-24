@@ -3,11 +3,7 @@ title: Symbols and Symbol Files
 description: Symbols and Symbol Files
 ms.assetid: b9ace4f0-8363-4dec-806f-798d30983dc1
 keywords: ["symbols, overview"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -94,11 +90,11 @@ The following table lists several of the directories which exist in a standard W
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

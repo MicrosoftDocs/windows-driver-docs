@@ -2,11 +2,7 @@
 title: MB Miniport driver Error Logging
 description: MB Miniport driver Error Logging
 ms.assetid: 57f83d03-29e5-4a20-8c0c-2d00954e7ccb
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -52,13 +48,13 @@ Miniport drivers should specify the error code in the first element of the last 
 </tbody>
 </table>
 
- 
+ 
 
 Miniport drivers can put other values in the remainder of the elements of variable-sized array.
 
- 
+ 
 
- 
+ 
 
 
 

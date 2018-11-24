@@ -1,6 +1,5 @@
 ---
 title: Supporting Property Sets
-author: windows-driver-content
 description: Supporting Property Sets
 ms.assetid: 49a3e3e6-3a09-4202-a2cb-df65806d3336
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - streaming minidrivers WDK Windows 2000 Kernel , property sets
 - minidrivers WDK Windows 2000 Kernel Streaming , property sets
 - property sets WDK streaming minidriver
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,9 +27,9 @@ The class driver gets or sets minidriver properties by passing a [**SRB\_GET\_DE
 
 The class driver handles many properties on behalf of the minidriver, with an occasional assist from the minidriver through one of the minidriver's callbacks. The minidriver does not define these properties in its property set arrays. For an explanation of how the class driver handles the [KSPROPSETID\_Pin](https://msdn.microsoft.com/library/windows/hardware/ff566584) and [KSPROPSETID\_Topology](https://msdn.microsoft.com/library/windows/hardware/ff566598) property sets, see [Supporting Multiple Streams](supporting-multiple-streams.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,11 +3,7 @@ title: s (Search Memory)
 description: The s command searches through memory to find a specific byte pattern.
 ms.assetid: fdca07c3-95c8-46cf-8da1-07a5e6767f67
 keywords: ["s (Search Memory) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,7 +20,7 @@ The **s** command searches through memory to find a specific byte pattern.
 
 Do not confuse this command with the [**~s (Change Current Processor)**](-s--change-current-processor-.md), [**~s (Set Current Thread)**](-s--set-current-thread-.md), [**|s (Set Current Process)**](-s--set-current-process-.md), or [**||s (Set Current System)**](--s--set-current-system-.md) commands.
 
-```
+```dbgcmd
 s [-[[Flags]Type]] Range Pattern 
 s -[[Flags]]v Range Object 
 s -[[Flags]]sa Range 
@@ -103,7 +99,7 @@ Unicode string
 </tbody>
 </table>
 
- 
+ 
 
 If you omit *Type*, byte values are used. However, if you use *Flags*, you cannot omit *Type*.
 
@@ -148,7 +144,7 @@ Specifies the address of an object or the address of a pointer to an object. The
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -164,7 +160,7 @@ You must specify the *Pattern* parameter as a series of bytes, unless you specif
 -   Numeric values are interpreted as numbers in the current radix (16, 10, or 8). To change the default radix, use the [**n (Set Number Base)**](n--set-number-base-.md) command. You can override the default radix by specifying the **0x** prefix (hexadecimal), the **0n** prefix (decimal), the **0t** prefix (octal), or the **0y** prefix (binary).
     **Note**   The default radix behaves differently when you use C++ expressions. For more information about these expressions and the radix, see [Evaluating Expressions](evaluating-expressions.md).
 
-     
+     
 
 -   You must enclose ASCII characters in single straight quotation marks. You cannot use C-style escape characters (such as '\\0' or '\\n').
 
@@ -176,25 +172,25 @@ The **s-sa** and **s-su** commands search for unspecified ASCII and Unicode stri
 
 Example: The following command finds ASCII strings that are of length &gt;=3 in the range beginning at 0000000140000000 and ending 400 bytes later.
 
-```
+```dbgcmd
 s-sa 0000000140000000 L400
 ```
 
 The following command finds ASCII strings that are of length &gt;=4 in the range beginning at 0000000140000000 and ending 400 bytes later
 
-```
+```dbgcmd
 s -[l4]sa 0000000140000000 L400
 ```
 
 The following command does the same thing, but it limits the search to writeable memory regions.
 
-```
+```dbgcmd
 s -[wl4]sa 0000000140000000 L400
 ```
 
 The following command does the same thing, but displays only the address of the match, rather than the address and the value.
 
-```
+```dbgcmd
 s -[1wl4]sa 0000000140000000 L400
 ```
 
@@ -202,15 +198,15 @@ The **s-v** command searches for objects of the same data type as the *Object* o
 
 Example: Assume the current radix is 16. The following three command all do the same thing: search memory locations 0012FF40 through 0012FF5F for "Hello".
 
-```
+```dbgcmd
 0:000> s 0012ff40 L20 'H' 'e' 'l' 'l' 'o' 
 ```
 
-```
+```dbgcmd
 0:000> s 0012ff40 L20 48 65 6c 6c 6f 
 ```
 
-```
+```dbgcmd
 0:000> s -a 0012ff40 L20 "Hello" 
 ```
 
@@ -220,15 +216,15 @@ The debugger returns only patterns that are completely contained in the search r
 
 The following example shows a search that uses the *Type* parameter. This command searches memory locations 0012FF40 through 0012FF5F for the double-word 'VUTS':
 
-```
+```dbgcmd
 0:000> s -d 0012ff40 L20 'VUTS' 
 ```
 
 On little-endian computers, 'VUTS' is the same as the byte pattern 'S' 'T' 'U' 'V'. However, searches for WORDs, DWORDs, and QWORDs return only results that are correctly byte-aligned.
 
- 
+ 
 
- 
+ 
 
 
 

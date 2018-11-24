@@ -9,11 +9,7 @@ api_name:
 - KSNODETYPE_DEMUX
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +25,9 @@ A KSNODETYPE\_DEMUX node should support the following property:
 
 [**KSPROPERTY\_AUDIO\_DEMUX\_DEST**](ksproperty-audio-demux-dest.md)
 
- 
+ 
 
- 
+ 
 
 
 

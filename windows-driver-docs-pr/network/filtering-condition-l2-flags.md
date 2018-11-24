@@ -1,15 +1,10 @@
 ---
 title: Filtering condition L2 flags
-author: windows-driver-content
 description: This section describes filtering condition L2 flags.
 ms.assetid: D24A261D-6324-43CC-BD2A-CDB9B024432C
 keywords:
 - Filtering condition L2 flags network drivers
-ms.author: windowsdriverdev
 ms.date: 11/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

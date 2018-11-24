@@ -1,6 +1,5 @@
 ---
 title: Creating an Interrupt Object
-author: windows-driver-content
 description: Creating an Interrupt Object
 ms.assetid: 8bea7498-9fee-4d84-9e6b-976102c54876
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - interrupts WDK KMDF , object creation
 - message-signaled interrupts WDK KMDF
 - MSIs WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,7 +30,7 @@ UMDF supports the following types of interrupts:
 
 **Note**  UMDF does not support *shared* edge-triggered interrupts.
 
- 
+ 
 
 Starting in UMDF version 2.15, UMDF supports interrupts for simple devices like hardware push-buttons, usually backed by GPIO pins, that you cannot enable or disable explicitly using hardware registers. To support such devices, a UMDF driver must use exclusive edge-triggered interrupts.
 
@@ -79,9 +74,9 @@ If the device driver exceeds this limit, the device might fail to start. To oper
 
 A driver must tolerate, without failures, system rebalancing of interrupt resources in which the PnP manager assigns to the device any set of alternative interrupt resources from the resource requirements list. For example, the device might be assigned a smaller number of message interrupts than the driver requested. In the worst case, the driver must be prepared to operate the device with just one line-based interrupt.
 
- 
+ 
 
- 
+ 
 
 
 

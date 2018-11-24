@@ -7,11 +7,7 @@ keywords:
 - installed device interfaces WDK
 - installed device interfaces WDK , enumerating
 - device interfaces WDK device installations , enumerating
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,9 +28,9 @@ Use the following guidelines to safely discover the attributes of device interfa
 
 -   Kernel-mode drivers should use [**IoGetDeviceInterfaces**](https://msdn.microsoft.com/library/windows/hardware/ff549186) to enumerate the device interface classes that are installed in the system.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -11,11 +11,7 @@ api_location:
 - D3dumddi.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 01/05/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +23,7 @@ Reserved for system use. Do not use it in your driver.
 &gt; \[!Note\]
 &gt;  This structure is available only in the D3dumddi.h header provided with Windows Driver Kit (WDK) Version 8 that shipped with Windows 8. It has been removed from later versions of the header.
 
- 
+ 
 
 Syntax
 ------
@@ -79,9 +75,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

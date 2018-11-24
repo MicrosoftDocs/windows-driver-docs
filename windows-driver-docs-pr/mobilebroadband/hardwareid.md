@@ -2,11 +2,7 @@
 title: HardwareId (PackageInfo)
 description: HardwareId (PackageInfo)
 ms.assetid: edd05106-1bbc-45da-80cc-792d7fcce192
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -64,13 +60,13 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[HardwareIDList](hardwareidlist.md)</p></td>
-<td><p>The [HardwareIDList](hardwareidlist.md) element specifies one or more hardware identification strings for the service metadata package.</p></td>
+<td><p><a href="hardwareidlist.md" data-raw-source="[HardwareIDList](hardwareidlist.md)">HardwareIDList</a></p></td>
+<td><p>The <a href="hardwareidlist.md" data-raw-source="[HardwareIDList](hardwareidlist.md)">HardwareIDList</a> element specifies one or more hardware identification strings for the service metadata package.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="XSD"></span><span id="xsd"></span>XSD
 
@@ -98,9 +94,9 @@ There are no child elements.
 
 The HardwareID element is required.
 
- 
+ 
 
- 
+ 
 
 
 

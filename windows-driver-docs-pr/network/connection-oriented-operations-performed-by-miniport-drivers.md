@@ -6,11 +6,7 @@ keywords:
 - miniport drivers WDK networking , CoNDIS
 - connection-oriented NDIS WDK , miniport drivers
 - CoNDIS WDK networking , miniport drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -54,9 +50,9 @@ In addition to controlling NIC hardware, a connection-oriented miniport driver:
 
     At the request of NDIS, a connection-oriented miniport driver [resets](reset.md) a NIC.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,14 +1,12 @@
 ---
 title: Streaming media device driver design guide
-author: windows-driver-content
 description: Streaming media device driver design guide
 ms.assetid: 321edd72-4f6a-4eaf-85bf-3b36680a522c
 keywords:
 - streaming media WDK
 - media streaming WDK
 - data streaming WDK
-ms.author: windowsdriverdev
-ms.date: 06/14/2018
+ms.date: 10/2/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -20,6 +18,7 @@ Use the guidance in this section to design and implement drivers for devices tha
 
 ## In this section
 
+-   [Frame Server Custom Media Source](frame-server-custom-media-source.md)
 -   [360 camera video capture](360-camera-video-capture.md) (new for Windows 10, version 1803)
 -   [Camera intrinsics](camera-intrinsics.md)
 -   [DShow Bridge implementation guidance for UVC devices](dshow-bridge-implementation-guidance-for-usb-video-class-devices.md)
@@ -33,7 +32,7 @@ Use the guidance in this section to design and implement drivers for devices tha
 -   [OEM guidance on settings for the Windows 10 in-box camera app](oem-guidance-on-settings-for-the-windows-10-in-box-camera-app.md)
 -   [Video stabilization registry settings](oem-guidance-on-registry-keys-for-video-stabilization.md)
 -   [Extended camera controls](standardized-extended-controls-.md) (updated for Windows 10, version 1607)
--   [Windows Hello camera driver bring up guide](windows-hello-camera-driver-bring-up-guide.md) (new for Windows 10, version 1607)
+-   [Camera driver bring up guide](windows-hello-camera-driver-bring-up-guide.md) (new for Windows 10, version 1607)
 -   [Universal camera driver design guide for Windows 10](windows-10-technical-preview-camera-drivers-design-guide.md)
 -   [AVStream Property Sets](avstream-property-sets.md)
 -   [Broadcast Driver Architecture Property, Event, and Method Sets](broadcast-driver-architecture-property--event--and-method-sets.md)
@@ -55,14 +54,6 @@ Use the guidance in this section to design and implement drivers for devices tha
 -   [DVD Decoder Minidriver Event Sets](dvd-decoder-minidriver-event-sets.md)
 -   [COM Interfaces](com-interfaces.md)
 
-
 ## Related sections
 
-
 -   [Streaming media DDI reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_stream)
-
-
-
-
-
-

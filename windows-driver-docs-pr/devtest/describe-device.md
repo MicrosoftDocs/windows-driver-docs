@@ -4,11 +4,7 @@ description: Describe the device in the Device Metadata Authoring Wizard
 ms.assetid: C14E8E3F-FACF-497E-9E6C-17397E6DF9DB
 keywords:
 - Describe the device in the Device Metadata Authoring Wizard
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,11 +25,11 @@ Windows displays descriptive information that you provide about a device, such a
 
 **Note**  If you selected **Multiple Locales** in the **Package Definition** tab, you see multiple **Locale** tabs. Click each tab to define the information for all locales. If you don't complete the required fields in each locale tab, you receive an error message when you click the **Finish** button on the **Finish** tab.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

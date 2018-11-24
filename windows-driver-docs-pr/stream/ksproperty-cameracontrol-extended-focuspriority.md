@@ -11,11 +11,7 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
-ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 09/10/2018
 ms.localizationpriority: medium
 ---
 
@@ -24,7 +20,7 @@ ms.localizationpriority: medium
 
 The **KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FOCUSPRIORITY** property ID defined in the [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PROPERTY**](https://msdn.microsoft.com/library/windows/hardware/dn917962) enumeration is used to configure the focus priority. When focus priority is set, focusing will take priority over the picture taken to ensure that the picture taken is always in focus. Otherwise, the picture will be taken immediately regardless of whether the picture is in focus . The behavior in handling a failed focus and whether timeout is required is internal to the driver and up to the OEM.
 
-## <span id="Usage_summary_table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage summary table
+## Usage summary table
 
 
 <table>
@@ -49,21 +45,21 @@ The **KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FOCUSPRIORITY** property ID defined i
 </tbody>
 </table>
 
- 
+ 
 
 To configure the focus priority, the **KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FOCUSPRIORITY** property ID must be used. When focus priority is set, focusing will take priority over picture taken to ensure that the picture taken is always in focus. If focus priority is not set, the picture will be taken immediately regardless of whether the picture was in focus. The behavior in handling a failed focus failed and timeouts are determined by the OEM and is internal to the driver.
 
-For the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/dn925136), the following flags are defined as values. In a get call, the camera driver returns its current focus priority configuration using one of these flags. In a set call, the camera driver sets the new focus priority configuration using one of these flags.
+For the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header), the following flags are defined as values. In a get call, the camera driver returns its current focus priority configuration using one of these flags. In a set call, the camera driver sets the new focus priority configuration using one of these flags.
 
-``` syntax
-#define KSCAMERA_EXTENDEDPROP_FOCUSPRIORITY_OFF 0x0000000000000000
-#define KSCAMERA_EXTENDEDPROP_FOCUSPRIORITY_ON 0x0000000000000001
+```cpp
+#define KSCAMERA_EXTENDEDPROP_FOCUSPRIORITY_OFF     0x0000000000000000
+#define KSCAMERA_EXTENDEDPROP_FOCUSPRIORITY_ON      0x0000000000000001
 ```
 
 **Note**  
 This is a synchronous control and there are no capabilities defined for this control.
 
- 
+ 
 
 The table below contains the descriptions and requirements for the **KSCAMERA\_EXTENDEDPROP\_HEADER** structure fields when using the focus priority control.
 
@@ -89,7 +85,7 @@ The table below contains the descriptions and requirements for the **KSCAMERA\_E
 </tr>
 <tr class="odd">
 <td><p>Size</p></td>
-<td><p>This must be sizeof(<strong>KSCAMERA_EXTENDEDPROP_HEADER</strong>)+sizeof([<strong>KSCAMERA_EXTENDEDPROP_VALUE</strong>](https://msdn.microsoft.com/library/windows/hardware/dn567565)),</p></td>
+<td><p>This must be sizeof(<strong>KSCAMERA_EXTENDEDPROP_HEADER</strong>)+sizeof(<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_value" data-raw-source="[&lt;strong&gt;KSCAMERA_EXTENDEDPROP_VALUE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_value)"><strong>KSCAMERA_EXTENDEDPROP_VALUE</strong></a>),</p></td>
 </tr>
 <tr class="even">
 <td><p>Result</p></td>
@@ -106,10 +102,9 @@ The table below contains the descriptions and requirements for the **KSCAMERA\_E
 </tbody>
 </table>
 
- 
+ 
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -123,12 +118,3 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
-
-

@@ -9,11 +9,7 @@ keywords:
 - MAC layer WDK networking
 - physical layer WDK networking
 - Windows network architecture WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -60,9 +56,9 @@ The transport layer ensures that messages are delivered error-free, in sequence,
 
 In the Windows network architecture, the LLC, network, and transport layers are implemented by software drivers known as [protocol drivers](ndis-protocol-drivers.md), which are sometimes referred to as *transport drivers*.
 
- 
+ 
 
- 
+ 
 
 
 

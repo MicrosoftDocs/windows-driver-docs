@@ -1,14 +1,9 @@
 ---
 title: The New Data Types
-author: windows-driver-content
 description: The New Data Types
 ms.assetid: 13a0d51e-0a9a-471f-8427-d4a7a7eb6459
 keywords: ["64-bit WDK kernel , porting drivers to", "porting drivers to 64-bit Windows", "data types WDK 64-bit", "fixed-precision integer types WDK 64-bit", "pointer-precision integer types WDK 64-bit", "specific-precision pointer types WDK 64-bit", "converting data types", "64-bit WDK kernel , data types"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -81,7 +76,7 @@ Fixed-precision data types are the same length for 32-bit and 64-bit programming
 </tbody>
 </table>
 
- 
+ 
 
 ### Pointer-Precision Integer Types
 
@@ -138,7 +133,7 @@ As the pointer precision changes (that is, as it becomes 32 bits when compiled f
 </tbody>
 </table>
 
- 
+ 
 
 ### Fixed-Precision Pointer Types
 
@@ -168,13 +163,13 @@ There are also new pointer types that explicitly size the pointer. Be cautious w
 </tbody>
 </table>
 
- 
+ 
 
 ### Helper Functions
 
 The following inline functions (defined in Basetsd.h) can help you safely convert values from one type to another:
 
-```
+```cpp
 unsigned long HandleToUlong( const void *h )
 long HandleToLong( const void *h )
 void * LongToHandle( const long h )
@@ -192,11 +187,11 @@ void * ULongToPtr( const unsigned long ul )
 
 **Warning**  **IntToPtr** sign-extends the **int** value, **UIntToPtr** zero-extends the unsigned **int** value, **LongToPtr** sign-extends the **long** value, and **ULongToPtr** zero-extends the **unsigned long** value.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

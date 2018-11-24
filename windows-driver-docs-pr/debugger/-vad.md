@@ -3,11 +3,7 @@ title: vad
 description: The vad extension displays details of a virtual address descriptor (VAD) or a tree of VADs.
 ms.assetid: 96bd5a38-016d-4ce9-b128-cc730577be45
 keywords: ["virtual address descriptor (VAD)", "VAD (virtual address descriptor)", "addresses, virtual address descriptor (VAD)", "vad Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -26,7 +22,7 @@ The **!vad** extension displays details of a virtual address descriptor (VAD) or
 -   Displays details of a tree of VADs.
 -   Displays information about the VADs for a particular user-mode module and provides a string that you can use to load the symbols for that module.
 
-```
+```dbgcmd
 !vad VAD-Root [Flag]
 !vad Address 1
 ```
@@ -68,7 +64,7 @@ Address in the virtual address range of a user-mode module.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -83,7 +79,7 @@ The **!vad** command can be helpful when you need to load symbols for a user-mod
 
 Here is an example of the **!vad** extension:
 
-```
+```dbgcmd
 kd> !vad 824bc2f8
 VAD     level      start      end    commit
 82741bf8 ( 1)      78000    78045         8 Mapped  Exe  EXECUTE_WRITECOPY
@@ -105,9 +101,9 @@ VAD @ 824bc2f8
 SecNoChange 
 ```
 
- 
+ 
 
- 
+ 
 
 
 

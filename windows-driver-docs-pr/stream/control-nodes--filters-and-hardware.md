@@ -1,6 +1,5 @@
 ---
 title: Control Nodes, Filters and Hardware
-author: windows-driver-content
 description: Control Nodes, Filters and Hardware
 ms.assetid: c299f5d9-634f-46c9-becf-cf59aaa0257f
 keywords:
@@ -9,11 +8,7 @@ keywords:
 - tuner control nodes WDK BDA
 - Broadcast Driver Architecture WDK AVStream , control nodes
 - BDA WDK AVStream , control nodes
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +28,9 @@ BDA control nodes in BDA receiver topology can be separated into individual filt
 
 [Control Nodes for Processing IP Data](control-nodes-for-processing-ip-data.md)
 
- 
+ 
 
- 
+ 
 
 
 

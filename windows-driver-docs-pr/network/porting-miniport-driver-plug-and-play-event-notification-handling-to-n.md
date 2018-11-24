@@ -8,11 +8,7 @@ keywords:
 - Plug and Play WDK networking , porting event notifications
 - event notifications WDK networking
 - porting miniport drivers WDK networking , Plug and
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +22,9 @@ In NDIS 6.0 miniport drivers, replace the NDIS 5.x [**MiniportPnPEventNotify**](
 
 For more information about NDIS 6.0 Plug and Play notifications, see [Adapter PnP Event Notifications](miniport-adapter-device-pnp-event-notifications.md).
 
- 
+ 
 
- 
+ 
 
 
 

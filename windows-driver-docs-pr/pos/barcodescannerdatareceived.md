@@ -1,7 +1,8 @@
 ---
 title: BarcodeScannerDataReceived
-description: BarcodeScannerDataReceived
+description: The BarcodeScannerDataReceived event occurs after a successful scan event.
 ms.assetid: '3dd7699a-5e2b-484b-bd83-c37ee7f0e851'
+ms.date: 09/07/2018
 ms.localizationpriority: medium
 ---
 
@@ -9,12 +10,12 @@ ms.localizationpriority: medium
 
 This event occurs after a successful scan event.
 
-The scanned data is variable length and consists of the [PosBarcodeScannerDataReceivedEventData](https://msdn.microsoft.com/library/windows/hardware/dn772207) structure followed by **ScanDataLength** bytes of raw scan data followed by **ScanDataLabelLength** bytes of decoded scan data in which the header and footer information is removed, leaving only the scanner data. The data buffer for this event is as follows.
+The scanned data is variable length and consists of the [PosBarcodeScannerDataReceivedEventData](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/pointofservicedriverinterface/ns-pointofservicedriverinterface-_posbarcodescannerdatareceivedeventdata
+) structure followed by **ScanDataLength** bytes of raw scan data followed by **ScanDataLabelLength** bytes of decoded scan data in which the header and footer information is removed, leaving only the scanner data. The data buffer for this event is as follows.
 
-Syntax
-------
+## Syntax
 
-``` syntax
+```cpp
 typedef struct _PosBarcodeScannerDataReceivedEventData
 {
     PosEventDataHeader Header;
@@ -36,14 +37,6 @@ The following table shows the memory layout of the data buffer for this event.
 | byte \[\]                                    | **ScanDataLength** bytes of raw scan data                                                                                 |
 | byte \[\]                                    | **ScanDataLabelLength** bytes of decoded scan data                                                                     |
 
-Requirements
-------------
+## Requirements
 
 **Header:** pointofservicedriverinterface.h
-
-
-
-
-
-
-

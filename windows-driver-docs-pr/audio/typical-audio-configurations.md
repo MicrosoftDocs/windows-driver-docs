@@ -9,11 +9,7 @@ keywords:
 - capturing audio content WDK audio
 - capture configurations WDK audio
 - rendering configurations WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,9 +31,9 @@ This section presents a collection of typical audio configurations for rendering
 
 [Rendering Wave Content Using DirectSound Software and Hardware Buffers](rendering-wave-content-using-directsound-software-and-hardware-buffers.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -8,11 +8,7 @@ keywords:
 - COPP WDK DirectX VA , COPP device
 - protected video WDK COPP , COPP device
 - COPP device WDK DirectX VA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,7 +22,7 @@ This section applies only to Windows Server 2003 SP1 and later, and Windows XP S
 
 Use the following example code to define the COPP device class:
 
-```
+```cpp
 // COPP device class.
 struct DXVA_COPPDeviceClass : public DXVA_DeviceBaseClass
 {
@@ -34,9 +30,9 @@ struct DXVA_COPPDeviceClass : public DXVA_DeviceBaseClass
 };
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -11,11 +11,7 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -51,13 +47,13 @@ The KSPROPERTY\_AUDIO\_MUTE property specifies whether a channel on a mute node 
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Node via Filter or Pin instance</p></td>
-<td align="left">[<strong>KSNODEPROPERTY_AUDIO_CHANNEL</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537145)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/ff537145" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY_AUDIO_CHANNEL&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537145)"><strong>KSNODEPROPERTY_AUDIO_CHANNEL</strong></a></td>
 <td align="left"><p>BOOL</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value is of type BOOL and indicates whether the channel of a given stream is muted. A value of **TRUE** indicates that the channel is muted. **FALSE** indicates that it is not muted.
 
@@ -88,9 +84,9 @@ Requirements
 
 [**KSNODETYPE\_MUTE**](ksnodetype-mute.md)
 
- 
+ 
 
- 
+ 
 
 
 

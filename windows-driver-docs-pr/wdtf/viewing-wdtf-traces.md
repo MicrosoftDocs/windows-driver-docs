@@ -1,17 +1,12 @@
 ---
 title: Enabling and Viewing WDTF Traces
-author: windows-driver-content
 description: Enabling and Viewing WDTF Traces
 ms.assetid: 9bed6042-3691-4a5e-a143-51acf746b1ae
 keywords:
 - Windows Device Testing Framework WDK , tracing events
 - WDTF WDK , tracing events
 - tracing WDK WDTF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -131,7 +126,7 @@ The following table describes the trace levels that you can set.
 </tbody>
 </table>
 
- 
+ 
 
 When you are debugging by using trace content, consider setting the trace levels to 1 for all objects and then setting trace levels much higher for the objects that you are examining.
 

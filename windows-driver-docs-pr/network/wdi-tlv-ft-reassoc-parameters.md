@@ -1,13 +1,8 @@
 ---
 title: WDI_TLV_FT_REASSOC_PARAMETERS
-author: windows-driver-content
 description: WDI_TLV_FT_REASSOC_PARAMETERS is a TLV that contains reassociation parameters for Fast Transition.
 ms.assetid: 36F260FF-E80A-4EFF-B009-B06446229470
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_FT_REASSOC_PARAMETERS Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -37,7 +32,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | [**WDI\_TLV\_FT\_PMKR0NAME**](wdi-tlv-ft-pmkr0name.md) | The PMKR0Name. This is needed during Fast Transition. The STA needs to send the PMKR0Name during the authentication request to the AP. |
 | [**WDI\_TLV\_FT\_FTE**](wdi-tlv-ft-fte.md)             | The Fast Transition Element that contains the R0KHID and SNonce.                                                                       |
 
- 
+ 
 
 Requirements
 ------------
@@ -63,9 +58,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

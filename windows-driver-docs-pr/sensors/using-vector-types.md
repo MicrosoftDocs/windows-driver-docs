@@ -1,13 +1,8 @@
 ---
 title: Using vector types with sensors
-author: windows-driver-content
 description: Using vector types with sensors
 ms.assetid: cadc2cd3-10aa-4a4a-926f-edc01b046f27
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -46,11 +41,10 @@ InitPropVariantFromBuffer(responseCurve, 10 * sizeof (UINT), &pvCurve);
 hr = m_pSensorProperties->SetValue(SENSOR_PROPERTY_LIGHT_RESPONSE_CURVE, &pvCurve);
 
 PropVariantClear(&pvCurve);
-
 ```
 
 ## Related topics
-[The Sensors Geolocation Driver Sample](https://docs.microsoft.com/en-us/windows-hardware/drivers/gnss/sensors-geolocation-driver-sample)
+[The Sensors Geolocation Driver Sample](https://docs.microsoft.com/windows-hardware/drivers/gnss/sensors-geolocation-driver-sample)
 
 
 

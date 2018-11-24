@@ -2,11 +2,7 @@
 title: Room Correction
 description: Room Correction
 ms.assetid: da7a8a88-d1d9-498f-896f-9d9c2b31b807
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,9 +15,9 @@ The room correction feature better matches sound to the image on the video scree
 
 Calibration is performed with the help of a microphone, and the procedure can be used with both stereo and multichannel systems. The user places the microphone where the user intends to sit and then activates a wizard that measures the room response. The wizard plays a set of specially designed tones from each loudspeaker in turn, and measures the distance, frequency response, and overall gain of each loudspeaker from the microphone's location.
 
- 
+ 
 
- 
+ 
 
 
 

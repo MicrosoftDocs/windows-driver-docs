@@ -3,11 +3,7 @@ title: ipi
 description: The ipi extension displays the interprocessor interrupt (IPI) state for a specified processor.
 ms.assetid: 2727d429-82f5-44a6-943b-0a3f2d3385a3
 keywords: ["IPI (interprocessor interrupt)", "ipi Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!ipi** extension displays the interprocessor interrupt (IPI) state for a specified processor.
 
-```
+```dbgcmd
 !ipi [Processor]
 ```
 
@@ -51,7 +47,7 @@ Specifies a processor. If *Processor* is omitted, the IPI state for every proces
 </tbody>
 </table>
 
- 
+ 
 
 This extension command can only be used with an x86-based target computer.
 
@@ -64,7 +60,7 @@ Remarks
 
 Here is an example of the output from this extension:
 
-```
+```dbgcmd
 0: kd> !ipi
 IPI State for Processor 0
   Worker Routine:  nt!KiFlushTargetMultipleTb [Stale]
@@ -91,9 +87,9 @@ IPI State for Processor 1
   Packet Barrier:  0
 ```
 
- 
+ 
 
- 
+ 
 
 
 

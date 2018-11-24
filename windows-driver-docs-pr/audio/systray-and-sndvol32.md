@@ -13,11 +13,7 @@ keywords:
 - volume sliders WDK audio
 - hidden speaker icons WDK audio
 - mute control WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -57,9 +53,9 @@ WDM Audio topology nodes that do not map well into a mixer line control are not 
 
 For information about the volume ranges and the default volume levels in the various versions of Windows, see [Default Audio Volume Settings](default-audio-volume-settings.md).
 
- 
+ 
 
- 
+ 
 
 
 

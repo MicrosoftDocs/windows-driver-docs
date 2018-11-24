@@ -3,11 +3,7 @@ title: dbgerr002 Bad Pointer
 description: dbgerr002 Bad Pointer
 ms.assetid: d5f2404e-3e7d-4de2-a772-0d42169eb9ad
 keywords: ["dbgerr002", "Bad pointer (dbgerr002)"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +25,9 @@ Two common causes of this problem are:
 
 If your symbol store was created by using SymStore, you can find the full path to this file by examining file.ptr. For details, see [Using SymStore](symstore.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: DVD Decoder Minidrivers
-author: windows-driver-content
 description: DVD Decoder Minidrivers
 ms.assetid: 1dec271d-47cf-4ab6-9149-7f5b9b92b189
 keywords:
@@ -13,11 +12,7 @@ keywords:
 - audio playbacks WDK DVD decoder
 - video playbacks WDK DVD decoder
 - playback WDK DVD decoder
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -45,9 +40,9 @@ The following topics are discussed:
 
 [Master Clock](master-clock.md)
 
- 
+ 
 
- 
+ 
 
 
 

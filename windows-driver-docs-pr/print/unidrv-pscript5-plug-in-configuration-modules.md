@@ -1,6 +1,5 @@
 ---
 title: Unidrv/PScript5 Plug-in Configuration Modules
-author: windows-driver-content
 description: Unidrv/PScript5 Plug-in Configuration Modules
 ms.assetid: 806175ba-18a9-48f3-8f50-06e794d1f304
 keywords:
@@ -10,11 +9,7 @@ keywords:
 - Pscript WDK print , XPSDrv print drivers
 - Unidrv, XPSDrv print drivers
 - Unidrv WDK print
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -49,7 +44,7 @@ The **IPrintCoreHelper** interface enables the print driver configuration plug-i
 
 The only way for a plug-in to properly set the Unidrv or PScript5 configuration and enable full user interface (UI) replacement functionality is by using the following **IPrintCoreHelper** interface.
 
-```
+```cpp
 DECLARE_INTERFACE_(IPrintCoreHelper, IUnknown) {
   // IUnknown methods skipped
   STDMETHOD(CreateInstanceOfMSXMLObject)(...)
@@ -64,7 +59,7 @@ DECLARE_INTERFACE_(IPrintCoreHelper, IUnknown) {
 
 The following two additional interfaces, [IPrintCoreHelperUni](https://msdn.microsoft.com/library/windows/hardware/ff552940) and [IPrintCoreHelperPS](https://msdn.microsoft.com/library/windows/hardware/ff552906), are derived from the **IPrintCoreHelper** interface. These interfaces are specific to Unidrv and PScript5 print drivers, respectively, and include additional methods that are unique to each driver.
 
-```
+```cpp
 DECLARE_INTERFACE_(IPrintCoreHelperUni, IUnknown) {
   // IUnknown methods skipped
   // IPrintCoreHelper methods skipped
@@ -83,7 +78,7 @@ DECLARE_INTERFACE_(IPrintCoreHelperPS, IUnknown) {
 
 The following code example illustrates how you can use the **IPrintCoreHelper** interface to query information from the DEVMODE structure. This example is part of the XPSDrv print driver sample code in the Windows Driver Kit (WDK).
 
-```
+```cpp
 HRESULT
 CBookletDMPTConv::GetDrvSettingsFromDM(
     __in    PDEVMODE                         pDevmode,
@@ -117,9 +112,9 @@ CBookletDMPTConv::GetDrvSettingsFromDM(
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

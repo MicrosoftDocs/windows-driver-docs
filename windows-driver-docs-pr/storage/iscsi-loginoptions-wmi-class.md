@@ -3,6 +3,7 @@ title: ISCSI\_LoginOptions WMI Class
 description: ISCSI\_LoginOptions WMI Class
 ms.assetid: dc05f8e9-599d-4963-98a8-64e1d23c37a1
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # ISCSI\_LoginOptions WMI Class
@@ -13,7 +14,7 @@ ms.localizationpriority: medium
 
 The ISCSI\_LoginOptions class describes the characteristics of a target logon session. This class is defined as follows in *Common.mof*.
 
-```
+```cpp
 class ISCSI_LoginOptions {
   [WmiDataId(1),
      description("Bit flags that specify which login 
@@ -69,9 +70,9 @@ class ISCSI_LoginOptions {
 
 When the WMI tool suite compiles the preceding class definition, it produces the [**ISCSI\_LoginOptions**](https://msdn.microsoft.com/library/windows/hardware/ff561541) data structure.
 
- 
+ 
 
- 
+ 
 
 
 

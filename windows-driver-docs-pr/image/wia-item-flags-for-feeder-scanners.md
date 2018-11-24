@@ -1,13 +1,8 @@
 ---
 title: WIA Item Flags for Feeder Scanners
-author: windows-driver-content
 description: WIA Item Flags for Feeder Scanners
 ms.assetid: b1256646-be6c-436c-86da-9dff43ef9867
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,9 +37,9 @@ The WIA feeder scanner item can optionally support the following WIA item flag:
 <a href="" id="wiaitemtypefolder"></a>**WiaItemTypeFolder**  
 The item is a folder. This flag is required for the root item if the automatic document feeder supports front and back items. This flag allows enumeration of the front and back of a page as child items. Child items *cannot* have this flag.
 
- 
+ 
 
- 
+ 
 
 
 

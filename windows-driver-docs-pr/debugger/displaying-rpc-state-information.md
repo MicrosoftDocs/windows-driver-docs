@@ -3,11 +3,7 @@ title: Displaying RPC State Information
 description: Displaying RPC State Information
 ms.assetid: 9931cf62-a7c2-4270-8664-a77a82207aa9
 keywords: ["RPC debugging, displaying RPC state information"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -43,9 +39,9 @@ The following high-level queries are also available:
 
 [Get RPC Client Call Information](get-rpc-client-call-information.md)
 
- 
+ 
 
- 
+ 
 
 
 

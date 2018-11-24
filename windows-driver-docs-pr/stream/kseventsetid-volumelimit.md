@@ -2,11 +2,7 @@
 title: KSEVENTSETID\_VolumeLimit
 description: KSEVENTSETID\_VolumeLimit
 ms.assetid: B71ED9F9-BA2C-43D1-8162-CCA4CD5C5B22
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,9 +15,9 @@ The event item in this set is specified in the **KSEVENT\_VOLUMELIMIT** enumerat
 
 The only event in this set is [**KSEVENT\_VOLUMELIMIT\_CHANGED**](ksevent-volumelimit-changed.md).
 
- 
+ 
 
- 
+ 
 
 
 

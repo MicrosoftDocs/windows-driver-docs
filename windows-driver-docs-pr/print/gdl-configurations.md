@@ -1,17 +1,12 @@
 ---
 title: GDL Configurations
-author: windows-driver-content
 description: GDL Configurations
 ms.assetid: ce698737-c9d8-4502-8823-e249820a06fa
 keywords:
 - GDL WDK , configurations
 - configurations WDK GDL
 - configurations WDK GDL , examples
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,7 +19,7 @@ For example, the prices that are charged for a phone call depend on the origin a
 
 For example, a client might compose a configuration that contains the following data.
 
-```
+```cpp
 OriginationPoint: Seattle
 DestinationPoint: SanFrancisco
 LengthOfCall: 10minutes
@@ -34,7 +29,7 @@ CallingPlan: OneRate
 
 And the snapshot that generated will contain one piece of data (out of all of the possible combinations) that might look like the following example.
 
-```
+```cpp
 CostOfCall: $0.49
 ```
 
@@ -44,9 +39,9 @@ In addition, GDL enables selected configurations to be excluded as "not allowed"
 
 For more information about creating data that is configuration-dependent, see [Creating GDL Configuration-Dependent Data](creating-gdl-configuration-dependent-data.md).
 
- 
+ 
 
- 
+ 
 
 
 

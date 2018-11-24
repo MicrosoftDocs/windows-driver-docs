@@ -5,11 +5,7 @@ ms.assetid: 3235d1e9-f6f7-4efe-a50c-5ea7a9956e7e
 keywords:
 - device setup classes WDK device installations
 - setup classes WDK device installations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -41,9 +37,9 @@ Before creating a new device setup class, contact Microsoft to find out if a new
 
 You can create a new device setup class by using an INF file. In addition to installing support for a device, an INF file can initialize a new device setup class for the device. Such an INF file has an [**INF ClassInstall32 section**](inf-classinstall32-section.md).
 
- 
+ 
 
- 
+ 
 
 
 

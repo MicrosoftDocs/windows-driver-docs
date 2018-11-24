@@ -1,5 +1,5 @@
 ---
-title: FSCTL\_DELETE\_REPARSE\_POINT control code
+title: FSCTL_DELETE_REPARSE_POINT control code
 description: The FSCTL\_DELETE\_REPARSE\_POINT control code deletes a reparse point from the specified file or directory. Using FSCTL\_DELETE\_REPARSE\_POINT does not delete the file or directory.
 ms.assetid: c8a06477-457b-47e5-b5c5-48d798fe08b3
 keywords: ["FSCTL_DELETE_REPARSE_POINT control code Installable File System Drivers"]
@@ -11,11 +11,7 @@ api_location:
 - ntifs.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -108,9 +104,9 @@ Requirements
 
 [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462)
 
- 
+ 
 
- 
+ 
 
 
 

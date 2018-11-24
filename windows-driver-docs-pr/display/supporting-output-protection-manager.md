@@ -9,18 +9,14 @@ keywords:
 - copy protection WDK display
 - video copy protection WDK display
 - protected video WDK display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # Supporting Output Protection Manager
 
 
-The [Output Protection Manager (OPM) device driver interface (DDI)](https://msdn.microsoft.com/library/windows/hardware/ff568627) enables the copy protection of video signals that are output by various connectors of the graphics adapter. To learn more about how Windows Vista protects the content that graphics adapters output, download the Output Content Protection document at the [Output Content Protection and Windows Vista](http://go.microsoft.com/fwlink/p/?linkid=204788) website.
+The [Output Protection Manager (OPM) device driver interface (DDI)](https://msdn.microsoft.com/library/windows/hardware/ff568627) enables the copy protection of video signals that are output by various connectors of the graphics adapter. To learn more about how Windows Vista protects the content that graphics adapters output, download the Output Content Protection document at the [Output Content Protection and Windows Vista](http://download.microsoft.com/download/5/D/6/5D6EAF2B-7DDF-476B-93DC-7CF0072878E6/output_protect.doc) website.
 
 OPM is the successor to the [Certified Output Protection Protocol (COPP)](copp-processing.md) that the [Windows 2000 display driver model](windows-2000-display-driver-model-design-guide.md) provides. OPM supports all of COPP's features. For information about COPP's features, see [Introduction to COPP](introduction-to-copp.md). OPM also supports new features.
 
@@ -54,9 +50,9 @@ The following topics describe the new features of OPM and how to support and use
 
 [Implementation Tips and Requirements for OPM](implementation-tips-and-requirements-for-opm.md)
 
- 
+ 
 
- 
+ 
 
 
 

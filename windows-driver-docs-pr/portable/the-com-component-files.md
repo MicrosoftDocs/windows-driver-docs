@@ -1,11 +1,7 @@
 ---
 Description: The COM Component Files
 title: The COM Component Files
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,11 +20,11 @@ The WpdHelloWorldDriver project contains the following COM component files.
 | WpdHelloWorldDriver.rc  | Contains definitions for resources required by the driver. These resources include the file type, the file description string, and the original filename. |
 | WpdHelloWorldDriver.rgs | Contains the registration script for the driver's COM component.                                                                                          |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

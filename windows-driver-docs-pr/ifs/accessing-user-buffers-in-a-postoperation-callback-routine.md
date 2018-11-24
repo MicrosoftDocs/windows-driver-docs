@@ -1,15 +1,10 @@
 ---
 title: Accessing User Buffers in a Postoperation Callback Routine
-author: windows-driver-content
 description: Accessing User Buffers in a Postoperation Callback Routine
 ms.assetid: a980f302-6fde-461e-8b11-313530aff350
 keywords:
 - postoperation callback routines WDK file system minifilter , buffers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -101,9 +96,9 @@ if (*DirectoryControlMdl == NULL)
 
 For operations that can be either fast I/O or IRP-based, all buffer references should be enclosed in **try**/**except** blocks. Although you do not have to enclose these references for IRP-based operations that use buffered I/O, the **try**/**except** blocks are a safe precaution.
 
- 
+ 
 
- 
+ 
 
 
 

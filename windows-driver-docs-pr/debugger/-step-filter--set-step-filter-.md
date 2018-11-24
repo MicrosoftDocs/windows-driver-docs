@@ -3,11 +3,7 @@ title: .step_filter (Set Step Filter)
 description: The .step_filter command creates a list of functions that are skipped (stepped over) when tracing.
 ms.assetid: 9ce2bed4-fac0-4537-a129-7cb9f1e8725e
 keywords: [".step_filter (Set Step Filter) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **.step\_filter** command creates a list of functions that are skipped (stepped over) when tracing. This allows you to trace through code and skip only certain functions. It can also be used in source mode to control stepping when there are multiple function calls on one line.
 
-```
+```dbgcmd
 .step_filter "FilterList" 
 .step_filter /c 
 .step_filter 
@@ -31,8 +27,8 @@ The **.step\_filter** command creates a list of functions that are skipped (step
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 
 
-<span id="_FilterList_"></span><span id="_filterlist_"></span><span id="_FILTERLIST_"></span>**"***FilterList***"**  
-Specifies the symbols associated with functions to be stepped over. *FilterList* can contain any number of text patterns separated by semicolons. Each of these patterns may contain a variety of wildcards and specifiers; see [String Wildcard Syntax](string-wildcard-syntax.md) for details. A function whose symbol matches at least one of these patterns will be stepped over during tracing. Each time **"***FilterList***"** is used, any previous filter list is discarded and completely replaced with the new list.
+<span id="_FilterList_"></span><span id="_filterlist_"></span><span id="_FILTERLIST_"></span>**"**<em>FilterList</em>**"**  
+Specifies the symbols associated with functions to be stepped over. *FilterList* can contain any number of text patterns separated by semicolons. Each of these patterns may contain a variety of wildcards and specifiers; see [String Wildcard Syntax](string-wildcard-syntax.md) for details. A function whose symbol matches at least one of these patterns will be stepped over during tracing. Each time **"**<em>FilterList</em>**"** is used, any previous filter list is discarded and completely replaced with the new list.
 
 <span id="________c______"></span><span id="________C______"></span> **/c**   
 Clears the filter list.
@@ -60,7 +56,7 @@ Clears the filter list.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -73,7 +69,7 @@ If the instruction pointer is located within code that is listed in the filter l
 
 For example, the following command will cause trace commands to skip over all CRT calls:
 
-```
+```dbgcmd
 .step_filter "msvcrt!*" 
 ```
 
@@ -81,7 +77,7 @@ The **.step\_filter** command is most useful when you are debugging in source mo
 
 For example, in the following line, the [**t**](t--trace-.md) command will step into both GetTickCount and printf, while the [**p**](p--step-.md) command will step over both function calls:
 
-```
+```dbgcmd
 printf( "%x\n", GetTickCount() );
 ```
 
@@ -91,9 +87,9 @@ Because the functions are identified by symbol, a single filter can include an e
 
 When debugging in assembly mode, each call is on a different line, so you can choose whether to step or trace line-by-line. So **.step\_filter** is not very useful in assembly mode.
 
- 
+ 
 
- 
+ 
 
 
 

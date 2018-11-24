@@ -3,11 +3,7 @@ title: F (Windows Debugger Glossary)
 description: Glossary page - F
 Robots: noindex, nofollow
 ms.assetid: 9e5917b2-0f7d-4d6c-8e92-249b29b546ca
-ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,9 +21,9 @@ Distribution media containing the free build of the operating system do not have
 <span id="first_chance_exception"></span><span id="FIRST_CHANCE_EXCEPTION"></span>**first-chance exception**  
 The first opportunity to handle an exception. If an exception is not handled by any handler on the first opportunity, the handlers are given a second chance.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -6,11 +6,7 @@ keywords:
 - video miniport drivers WDK Windows 2000 , timers
 - timers WDK video miniport
 - HwVidTimer
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +24,9 @@ After a call to [**VideoPortStartTimer**](https://msdn.microsoft.com/library/win
 
 Note that a *HwVidTimer* function cannot disable calls to itself with **VideoPortStopTimer**. Another video miniport driver function must control the enabling or disabling of calls to a *HwVidTimer* function through the use of **VideoPortStartTimer** and **VideoPortStopTimer**.
 
- 
+ 
 
- 
+ 
 
 
 

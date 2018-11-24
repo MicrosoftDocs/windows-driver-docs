@@ -3,11 +3,7 @@ title: Configuring Special Pool
 description: Configuring Special Pool
 ms.assetid: a6c90e88-8d67-47e8-8862-b7585a5d8bec
 keywords: ["GFlags, configuring kernel special pool", "kernel special pool", "special pool", "pool tags and special pool"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,11 +33,11 @@ This section includes the following topics.
 
 **Note**   Use *Driver Verifier* to request special pool for allocations by a particular driver. For more information, see the "Special Pool" topic in the "Driver Verifier" section of the Windows Driver Kit (WDK).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Kernel Streaming
-author: windows-driver-content
 description: Kernel Streaming
 ms.assetid: dcd28218-b3bf-4e5d-b1a7-6910103afb96
 keywords:
@@ -12,11 +11,7 @@ keywords:
 - KS WDK
 - KS WDK , about kernel streaming
 - minidrivers WDK kernel streaming
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -56,9 +51,9 @@ To read about AVStream, see the [AVStream Overview](avstream-overview.md).
 
 [Broadcast Driver Architecture Minidrivers](broadcast-driver-architecture-minidrivers.md) run under AVStream.
 
- 
+ 
 
- 
+ 
 
 
 

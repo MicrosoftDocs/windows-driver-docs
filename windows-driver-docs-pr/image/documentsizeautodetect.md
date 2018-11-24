@@ -9,11 +9,7 @@ api_name:
 - wscn DocumentSizeAutoDetect
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The optional **DocumentSizeAutoDetect** element specifies whether the scan devic
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:DocumentSizeAutoDetect>
   text
 </wscn:DocumentSizeAutoDetect>
@@ -60,7 +56,7 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>InputSize</strong>](inputsize.md)</p></td>
+<td><p><a href="inputsize.md" data-raw-source="[&lt;strong&gt;InputSize&lt;/strong&gt;](inputsize.md)"><strong>InputSize</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -70,16 +66,16 @@ Remarks
 
 If the specified text value is 1 or **true**, the scan device will automatically determine the size of the original scan media. If the **DocumentSizeAutoDetect** element is specified along with a [**ScanRegion**](scanregion.md) element, the scan region will be ignored if it falls outside of the media size that the device detected.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ScanRegion**](scanregion.md)
 
 [**InputSize**](inputsize.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: Using the Checked Build of Windows
 description: Using the Checked Build of Windows
 ms.assetid: 0666cdab-21d3-4eff-ba57-4a73dcbaa742
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +24,9 @@ This section includes:
 
 [The Checked Build and Driver Verifier](the-checked-build-and-driver-verifier.md)
 
- 
+ 
 
- 
+ 
 
 
 

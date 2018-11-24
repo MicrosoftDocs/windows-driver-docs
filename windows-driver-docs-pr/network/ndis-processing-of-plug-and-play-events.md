@@ -5,11 +5,7 @@ ms.assetid: 3e9ae945-4241-4c66-bdb1-b9e3466167be
 keywords:
 - Plug and Play WDK NDIS miniport , IRP processing for NIC
 - IRP processing for NIC WDK NDIS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +29,9 @@ The following sections describe how NDIS processes PnP IRPs on behalf of a NIC:
 
 [Processing the Surprise Removal of a NIC](processing-the-surprise-removal-of-a-nic.md)
 
- 
+ 
 
- 
+ 
 
 
 

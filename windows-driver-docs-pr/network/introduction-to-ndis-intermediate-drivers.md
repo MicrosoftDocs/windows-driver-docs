@@ -8,11 +8,7 @@ keywords:
 - stacks WDK networking
 - internal bindings WDK NDIS intermediate
 - bindings WDK NDIS intermediate
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -54,9 +50,9 @@ There are two types of NDIS intermediate drivers: filter intermediate drivers an
 
 [NDIS MUX Intermediate Drivers](ndis-mux-intermediate-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

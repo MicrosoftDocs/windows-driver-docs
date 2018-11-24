@@ -3,11 +3,7 @@ title: Bug Check 0x36 DEVICE_REFERENCE_COUNT_NOT_ZERO
 description: The DEVICE_REFERENCE_COUNT_NOT_ZERO bug check has a value of 0x00000036. This indicates that a driver attempted to delete a device object that still had a positive reference count.
 ms.assetid: 8379d034-44fd-412a-8a2d-d234d41227ac
 keywords: ["Bug Check 0x36 DEVICE_REFERENCE_COUNT_NOT_ZERO", "DEVICE_REFERENCE_COUNT_NOT_ZERO"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The DEVICE\_REFERENCE\_COUNT\_NOT\_ZERO bug check has a value of 0x00000036. This indicates that a driver attempted to delete a device object that still had a positive reference count.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## DEVICE\_REFERENCE\_COUNT\_NOT\_ZERO Parameters
 
@@ -58,7 +54,7 @@ The DEVICE\_REFERENCE\_COUNT\_NOT\_ZERO bug check has a value of 0x00000036. Thi
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -69,9 +65,9 @@ This means there are still outstanding references to the device. (The reference 
 
 This is a bug in the calling device driver.
 
- 
+ 
 
- 
+ 
 
 
 

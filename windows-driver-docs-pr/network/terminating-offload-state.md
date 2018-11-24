@@ -8,11 +8,7 @@ keywords:
 - offload state WDK TCP chimney offload , terminating offload state
 - terminating offload state WDK TCP chimney offload
 - terminating offload state WDK TCP chimney offload , about terminating offload state
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -48,9 +44,9 @@ This section includes:
 
 [Returning the Completion Status of a Terminate Offload Operation](returning-the-completion-status-of-a-terminate-offload-operation.md)
 
- 
+ 
 
- 
+ 
 
 
 

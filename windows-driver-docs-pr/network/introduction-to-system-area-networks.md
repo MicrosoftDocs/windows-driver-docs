@@ -8,11 +8,7 @@ keywords:
 - hubs WDK SANs
 - nodes WDK SANs
 - SAN NIC WDK SANs
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -78,9 +74,9 @@ The physical SAN network interface controller (NIC).
 []()  
 A kernel-mode provider for a particular SAN. (Reserved for future use.)
 
- 
+ 
 
- 
+ 
 
 
 

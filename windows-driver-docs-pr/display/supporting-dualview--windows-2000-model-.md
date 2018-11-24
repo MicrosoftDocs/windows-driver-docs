@@ -7,11 +7,7 @@ keywords:
 - DualView WDK video miniport
 - multiple display devices simultaneously WDK video miniport
 - SingleView WDK video miniport
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +30,9 @@ The following subsections provide more information about DualView:
 
 [DualView Advanced Implementation Details](dualview-advanced-implementation-details.md)
 
- 
+ 
 
- 
+ 
 
 
 

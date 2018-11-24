@@ -9,11 +9,7 @@ api_name:
 - wscn AutoExposure
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **AutoExposure** element specifies that the WSD Scan Service should
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:AutoExposure>
   text
 </wscn:AutoExposure>
@@ -60,7 +56,7 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>Exposure</strong>](exposure.md)</p></td>
+<td><p><a href="exposure.md" data-raw-source="[&lt;strong&gt;Exposure&lt;/strong&gt;](exposure.md)"><strong>Exposure</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -72,14 +68,14 @@ When the Boolean value of the **AutoExposure** element is 1 or **true**, the sca
 
 When the value is 0 or **false**, the device should use the default settings for each of the exposure settings.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**Exposure**](exposure.md)
 
- 
+ 
 
- 
+ 
 
 
 

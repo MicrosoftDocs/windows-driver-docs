@@ -1,17 +1,12 @@
 ---
 title: Hardware-based DVD Decoding
-author: windows-driver-content
 description: Hardware-based DVD Decoding
 ms.assetid: 73a32be7-f740-47e8-8177-f204e432c5a6
 keywords:
 - DVD decoder minidrivers WDK , hardware-based DVD decoding
 - decoder minidrivers WDK DVD , hardware-based DVD decoding
 - hardware-based DVD decoding WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +24,9 @@ Computers using Microsoft DVD support both DVD storage and, if the proper decodi
 
 ![diagram illustrating a hardware dvd decoding solution](images/hwdvddec.png)
 
- 
+ 
 
- 
+ 
 
 
 

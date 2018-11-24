@@ -3,11 +3,7 @@ title: .scriptrun (Run Script)
 description: The .scriptrun command will load and run a JavaScript.
 ms.assetid: 6481B852-F0B4-4B02-BF7F-81DA21457A40
 keywords: [".scriptrun (Run Script) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The .scriptrun command will load and run a JavaScript.
 
-```
+```dbgcmd
 .scriptrun ScriptFile  
 ```
 
@@ -55,7 +51,7 @@ Specifies the name of the script file to load and execute. *ScriptFile* should i
 </tbody>
 </table>
 
- 
+
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -67,7 +63,7 @@ The .scriptrun command will load a script and, execute the following code.
 
 A confirmation message is displayed when the code is loaded and executed.
 
-```
+```dbgcmd
 0:000> .scriptrun C:\WinDbg\Scripts\helloWorld.js
 JavaScript script successfully loaded from 'C:\WinDbg\Scripts\helloWorld.js'
 Hello World!  We are in JavaScript!
@@ -86,7 +82,7 @@ This table summarizes which functions are executed by .scriptload and .scriptrun
 <tbody>
 <tr class="odd">
 <td align="left"></td>
-<td align="left"><strong>[.scriptload](-scriptload--load-script-.md)</strong></td>
+<td align="left"><strong><a href="-scriptload--load-script-.md" data-raw-source="[.scriptload](-scriptload--load-script-.md)">.scriptload</a></strong></td>
 <td align="left"><strong>.scriptrun</strong></td>
 </tr>
 <tr class="even">
@@ -112,30 +108,28 @@ This table summarizes which functions are executed by .scriptload and .scriptrun
 </tbody>
 </table>
 
- 
+
 
 You can use this code to see which functions are called with the .script run command.
 
-```
+```dbgcmd
 // Root of Script
 host.diagnostics.debugLog("***>; Code at the very top (root) of the script is always run \n");
 
 
 function initializeScript()
 {
-    // Add code here that you want to run everytime the script is loaded. 
+    // Add code here that you want to run every time the script is loaded. 
     // We will just send a message to indicate that function was called.
     host.diagnostics.debugLog("***>; initializeScript was called \n");
 }
 
 function invokeScript()
 {
-    // Add code here that you want to run everytime the script is executed. 
+    // Add code here that you want to run every time the script is executed. 
     // We will just send a message to indicate that function was called.
     host.diagnostics.debugLog("***>; invokeScript was called \n");
 }
-
- 
 ```
 
 For more information about working with JavaScript, see [JavaScript Debugger Scripting](javascript-debugger-scripting.md). For more information about the debugger objects, see [Native Objects in JavaScript Extensions](native-objects-in-javascript-extensions.md).
@@ -144,7 +138,7 @@ For more information about working with JavaScript, see [JavaScript Debugger Scr
 
 Before using any of the .script commands, a scripting provider needs to be loaded. Use the [**.load (Load Extension DLL)**](-load---loadby--load-extension-dll-.md) command to load the JavaScript provider dll.
 
-```
+```dbgcmd
 0:000> .load C:\ScriptProviders\jsprovider.dll
 ```
 
@@ -155,9 +149,9 @@ Before using any of the .script commands, a scripting provider needs to be loade
 
 [JavaScript Debugger Scripting](javascript-debugger-scripting.md)
 
- 
 
- 
+
+
 
 
 

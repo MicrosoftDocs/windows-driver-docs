@@ -3,11 +3,7 @@ title: View Processes and Threads
 description: View Processes and Threads
 ms.assetid: 00a496e9-6791-4df4-bf95-18b20d5d9677
 keywords: ["View Processes and Threads"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,9 +19,9 @@ This command is equivalent to pressing ALT+9 or clicking the **Processes and Thr
 
 For more information about this window and its uses, see [Processes and Threads Window](processes-and-threads-window.md).
 
- 
+ 
 
- 
+ 
 
 
 

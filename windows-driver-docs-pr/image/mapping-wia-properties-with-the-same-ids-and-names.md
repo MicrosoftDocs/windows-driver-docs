@@ -1,13 +1,8 @@
 ---
 title: Mapping WIA Properties with the Same IDs and Names
-author: windows-driver-content
 description: Mapping WIA Properties with the Same IDs and Names
 ms.assetid: 40a1094d-50fa-42b6-9976-ec6b05fdc384
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -583,7 +578,7 @@ There are Windows XP properties that have the same property IDs and property nam
 </tbody>
 </table>
 
- 
+ 
 
 <a href="" id="note-a-"></a>Note a:  
 FEEDER item (ADF) or FEEDER context on the Windows XP root or child item (WIA\_DPS\_DOCUMENT\_HANDLING\_SELECT is set to FEEDER).
@@ -644,11 +639,11 @@ If these properties are not supplied by the Windows Vista driver, the compatibil
 
 **Note**   When possible, applications should always parse the image header data to get accurate information on the image. They should not rely on this property since it is not accurate.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

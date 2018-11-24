@@ -2,11 +2,7 @@
 title: KSPROPSETID\_BdaAutodemodulate
 description: KSPROPSETID\_BdaAutodemodulate
 ms.assetid: b7c3c934-5b31-48da-9fb0-98007267711b
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,13 +22,13 @@ Informs the demodulator node that, when it is in pause or run state, it should a
 <span id="KSPROPERTY_BDA_AUTODEMODULATE_STOP"></span><span id="ksproperty_bda_autodemodulate_stop"></span>[**KSPROPERTY\_BDA\_AUTODEMODULATE\_STOP**](ksproperty-bda-autodemodulate-stop.md)  
 Informs the demodulator node that it should stop trying to automatically demodulate the signal.
 
-### <span id="comments"></span><span id="COMMENTS"></span>Comments
+### Comments
 
 KSPROPSETID\_BdaAutodemodulate is also used for demodulator nodes, such as the 8VSB demodulator node which only support one configuration of modulation parameters. For these types of nodes, the demodulator is not informed to set specific values such as Inner and Outer forward error correction (FEC) method.
 
- 
+ 
 
- 
+ 
 
 
 

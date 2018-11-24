@@ -2,11 +2,7 @@
 title: Get information about the currently registered network
 description: Get information about the currently registered network
 ms.assetid: 94321933-fc93-4203-8de1-e715d66fd1e3
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +26,9 @@ if (myNetwork != null && myNetwork.registeredDataClass == DataClasses.LteAdvance
 
 [Common tasks for mobile broadband Windows Runtime APIs](common-tasks-for-mobile-broadband-windows-runtime-apis.md)
 
- 
+ 
 
- 
+ 
 
 
 

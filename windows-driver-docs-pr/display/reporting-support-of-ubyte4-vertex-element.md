@@ -4,11 +4,7 @@ description: Reporting Support of UBYTE4 Vertex Element
 ms.assetid: d5091ceb-71de-4310-95d9-c52361772ebc
 keywords:
 - UBYTE4 vertex element WDK DirectX 9.0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,9 +16,9 @@ ms.localizationpriority: medium
 
 A DirectX 9.0 version driver must report support of the UBYTE4 vertex element type by setting the D3DDTCAPS\_UBYTE4 bit in the **DeclTypes** member of the D3DCAPS9 structure. To indicate nonsupport of the UBYTE4 vertex element type, the driver does not set the D3DDTCAPS\_UBYTE4 bit. In contrast, A DirectX 8.1 and earlier driver sets the D3DVTXPCAPS\_NO\_VSDT\_UBYTE4 bit to indicate nonsupport of the UBYTE4 vertex element type.
 
- 
+ 
 
- 
+ 
 
 
 

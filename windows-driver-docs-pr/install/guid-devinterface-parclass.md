@@ -12,6 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # GUID_DEVINTERFACE_PARCLASS
@@ -42,7 +43,7 @@ The GUID_DEVINTERFACE_PARCLASS [device interface class](https://msdn.microsoft.c
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -84,9 +85,9 @@ Requirements
 
 [**GUID_PARCLASS_DEVICE**](guid-parclass-device.md)
 
- 
+ 
 
- 
+ 
 
 
 

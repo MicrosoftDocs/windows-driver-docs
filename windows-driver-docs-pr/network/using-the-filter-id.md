@@ -2,11 +2,7 @@
 title: Using the Filter ID
 description: Using the Filter ID
 ms.assetid: 005AD1CF-37EB-44E8-BFA0-676ACCF69D47
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,9 +19,9 @@ Overlying drivers download receive filters to the miniport driver by issuing OID
 
 The miniport driver must retain the filter IDs for the allocated receive filters. When it receives an OID request to modify, query, or free a receive filter, the miniport driver must verify that the specified filter ID in the OID request matches an allocated receive filter from a previous OID method request of [OID\_RECEIVE\_FILTER\_SET\_FILTER](https://msdn.microsoft.com/library/windows/hardware/ff569795). If the filter ID does not match any of the allocated receive filters, the miniport driver must complete the OID request with a failed status.
 
- 
+ 
 
- 
+ 
 
 
 

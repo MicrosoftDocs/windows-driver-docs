@@ -8,11 +8,7 @@ keywords:
 - returning display modes WDK Windows 2000 display
 - DrvGetModes
 - display modes WDK Windows 2000 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -74,9 +70,9 @@ and the driver specifies the list of available display modes as follows:
 
 In this situation, if the application attempts to set the monitor to 800x600x32bpp@60Hz, the system will choose display mode D.
 
- 
+ 
 
- 
+ 
 
 
 

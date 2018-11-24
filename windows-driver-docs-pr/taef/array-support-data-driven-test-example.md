@@ -2,11 +2,7 @@
 title: Array Support Data Driven Test Example
 description: Array Support Data Driven Test Example
 ms.assetid: ECCDE395-C887-4485-8C8F-312EFCFD16A2
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,7 +28,7 @@ If any other data type is specified, the test throws a warning and considers it 
 
 The following example shows how to specify that the parameter is an array of one of the basic types. It is important to note that there are no default types allowed in the case of arrays - you must explictly specify the type and set the **Array** attribute for the parameter to be true.
 
-```
+```cpp
 1  <?xml version="1.0"?>
 2  <Data>
 3    <Table Id="ArraySupportTable">
@@ -86,7 +82,7 @@ Now, take a look at the retrieval APIs.
 
 Array elements can be retrieved in native code, by using the **WEX::TestExecution::TestDataArray&lt;&gt;** template class. See the published header TestData.h for details. The **TestDataArray** class manages the lifetime of the array elements and provides useful APIs to retrieve specific values within the array:
 
-```
+```cpp
 1  namespace WEX { namespace TestExecution
 2  {
 3      template <typename T>
@@ -109,7 +105,7 @@ You can obtain the length of the array by calling **GetSize** and can get a spec
 
 The next example shows how to use these functions in the code. Consider the cpp file in the native example:
 
-```
+```cpp
 1  TestDataArray<int> sizes;
 2  if (SUCCEEDED(TestData::TryGetValue(L"size", sizes)))
 3  {
@@ -137,7 +133,7 @@ First, you define a local TestDataArray of the array type. In this case, **sizes
 
 If an array parameter is not specified in the XML Row at all, an attempt to retrieve the parameter fails. For example, if a Row looked like:
 
-```
+```cpp
        <Row>
          <Parameter Name="Color">
            <Value>White</Value>
@@ -150,7 +146,7 @@ Notice that the parameter **Size**, which is an array, is not specified in the R
 
 On the other hand, you can specify an empty array by specifying an empty parameter tag for **Size** as follows:
 
-```
+```cpp
        <Row>
          <Parameter Name="Size"></Parameter>
          <Parameter Name="Color">
@@ -167,7 +163,7 @@ In this case, an attempt to retrieve **size** would succeed, but the array size 
 
 Managed retrieval remains almost the same as before - only you need to make sure to retrieve the values into a local variable of the appropriate array type. Consider the following managed example:
 
-```
+```cpp
 1  Int32[] sizes = m_testContext.DataRow["Size"] as Int32[];
 2  foreach (int size in sizes)
 3  {
@@ -184,7 +180,7 @@ Managed retrieval remains almost the same as before - only you need to make sure
 
 Similar to the native retrieval, if an array parameter is not specified in the XML Row at all, an attempt to retrieve the parameter returns an object of type **System.DBNull**. For example, if a Row looked like:
 
-```
+```cpp
        <Row>
          <Parameter Name="Color">
            <Value>White</Value>
@@ -197,7 +193,7 @@ Notice that the parameter **Size**, which is an array, is not specified in the R
 
 On the other hand, you may specify an empty array by specifying an empty parameter tag for **Size** as follows:
 
-```
+```cpp
        <Row>
          <Parameter Name="Size"></Parameter>
          <Parameter Name="Color">
@@ -228,9 +224,9 @@ This command runs the data driven tests with index \#0 and \#3 in both of the ab
 
 You can build more complex queries which say, for example, select only the test in which the **color** array contains **white** and the **color** array contains **black**, which would only select data driven tests with index \#3. As an exercise, try writing and executing this query yourself.
 
- 
+ 
 
- 
+ 
 
 
 

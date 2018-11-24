@@ -6,11 +6,7 @@ keywords:
 - memory segments WDK display , about memory segments
 - hidden video memory WDK display
 - video memory manager WDK display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,11 +32,11 @@ The following figure shows how the driver can configure memory segments from the
 
 **Note**   Video memory that is hidden from the video memory manager cannot be mapped into user space or be made exclusively available to any particular process. To do so breaks the fundamental rules of virtual memory that require that all processes running on the system have access to all memory.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

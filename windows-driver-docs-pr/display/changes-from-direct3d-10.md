@@ -8,11 +8,7 @@ keywords:
 - Direct3D version 10 WDK Windows 7 display
 - Direct3D version 10 WDK Windows 7 display , changes in Direct3D version 11
 - Direct3D version 10 WDK Windows Server 2008 R2 display , changes in Direct3D version 11
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -78,14 +74,14 @@ Due to the ratification of deferred destruction, the Direct3D runtime advocates 
 Those applications that require a form of synchronous destruction must use one of the following patterns, depending on how heavyweight a destruction they require:
 
 -   After the application ensures that all dependencies on that object are released (that is, command lists, views, middle ware, and so on), the application uses the following pattern:
-    ```
+    ```cpp
     Object::Release(); // Final release
     ImmediateContext::ClearState(); // Remove all ImmediateContext references as well.
     ImmediateContext::Flush(); // Destroy all objects as quickly as possible.
     ```
 
 -   The following pattern is a more heavywight destruction:
-    ```
+    ```cpp
     Object::Release(); // Final release
     ImmediateContext::ClearState(); // Remove all ImmediateContext references as well.
     ImmediateContext::Flush();
@@ -102,7 +98,7 @@ Primaries are resources that the runtime creates in calls to the driver's [**Cre
 
 -   Primary destruction cannot be deferred by the Direct3D runtime, and the driver must call the [*pfnDeallocateCb*](https://msdn.microsoft.com/library/windows/hardware/ff568898) function appropriately within a call to the driver's [**DestroyResource(D3D10)**](https://msdn.microsoft.com/library/windows/hardware/ff552797) function.
 
- 
+ 
 
- 
+ 
 

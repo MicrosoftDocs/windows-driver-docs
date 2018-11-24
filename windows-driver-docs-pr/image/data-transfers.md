@@ -1,13 +1,8 @@
 ---
 title: Data Transfers
-author: windows-driver-content
 description: Data Transfers
 ms.assetid: 55ef8125-40d3-44f3-8520-cc3a0912c3d2
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +28,9 @@ This section contains the following topics:
 
 For more information about data transfers, see [Transferring Data to a WIA Application](transferring-data-to-a-wia-application.md).
 
- 
+ 
 
- 
+ 
 
 
 

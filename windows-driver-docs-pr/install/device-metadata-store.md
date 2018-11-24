@@ -4,11 +4,7 @@ description: Device Metadata Store
 ms.assetid: 59af6173-28f3-44f5-874e-305bf570d683
 keywords:
 - device metadata store WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -17,13 +13,13 @@ ms.localizationpriority: medium
 
 The device metadata store is the directory where device metadata packages are stored on the local computer. The device metadata store is accessed from the following directory:
 
-```
+```cpp
 %PROGRAMDATA%\Microsoft\Windows\DeviceMetadataStore\<locale>
 ```
 
 The &lt;locale&gt; subdirectory represents the locale of the device metadata package. The name of this subdirectory can be in the following format:
 
-```
+```cpp
 <Language>[-<Region>] 
 ```
 
@@ -39,11 +35,11 @@ A device metadata package is copied to the device metadata store in one of the f
 
 **Note**   We do not recommend that end-users copy device metadata packages to the device metadata store. Instead, end-users should install device metadata packages by using either the [Windows Metadata and Internet Services (WMIS)](installing-device-metadata-packages-from-wmis.md) or an application provided by the OEM.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

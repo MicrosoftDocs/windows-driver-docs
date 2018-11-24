@@ -2,11 +2,8 @@
 title: Device Metadata Business Rules
 description: Device Metadata Business Rules
 ms.assetid: 19a0ced7-bb31-4899-abb4-2de803f179a6
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
@@ -157,7 +154,7 @@ Different types of device metadata packages must follow different rules. Additio
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Experience-rules"></span><span id="experience-rules"></span><span id="EXPERIENCE-RULES"></span>Experience rules
 
@@ -182,7 +179,7 @@ Device manufacturers are limited in the number of UWP apps that may be specified
 **Important**  
 There is no limit to the total number of UWP device apps that a device manufacturer can submit to the Microsoft Store; these limits apply only to a single device metadata package.
 
- 
+ 
 
 Mobile operators and OEMs have different limits on the number of apps that they can specify in device metadata. For more info, OEMs should contact their Microsoft OEM representative.
 
@@ -220,20 +217,20 @@ In each device metadata package, the following limits apply:
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
 
-[Create a Device Metadata Experience](https://msdn.microsoft.com/library/windows/hardware/br230794.aspx)
+- [Create a Device Metadata Experience](https://msdn.microsoft.com/library/windows/hardware/br230794.aspx)
 
-[Manage Device Metadata Experiences](https://msdn.microsoft.com/library/windows/hardware/br230797.aspx)
+- [Manage Device Metadata Experiences](https://msdn.microsoft.com/library/windows/hardware/br230797.aspx)
 
-[Submit a Device Metadata Package (Dashboard help)](https://msdn.microsoft.com/library/windows/hardware/br230807.aspx)
+- [Submit a Device Metadata Package (Dashboard help)](https://msdn.microsoft.com/library/windows/hardware/br230807.aspx)
 
- 
+ 
 
- 
+ 
 
 
 

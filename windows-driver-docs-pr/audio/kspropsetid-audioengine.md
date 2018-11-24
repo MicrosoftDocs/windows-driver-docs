@@ -2,11 +2,7 @@
 title: KSPROPSETID\_AudioEngine
 description: The KSPROPSETID\_AudioEngine property set contains KS properties that the audio driver can use to provide more information about the hardware audio engine node.
 ms.assetid: F3155DF6-0710-4941-94DC-478A8F5DE8D1
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -55,9 +51,9 @@ The **KSPROPSETID\_AudioEngine** property set contains the following KS properti
 
 These property names are defined in the [**KSPROPERTY\_AUDIOENGINE**](ksproperty-audioengine.md) enum.
 
- 
+ 
 
- 
+ 
 
 
 

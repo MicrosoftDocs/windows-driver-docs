@@ -1,6 +1,5 @@
 ---
 title: Flow Control Gates in AVStream
-author: windows-driver-content
 description: Flow Control Gates in AVStream
 ms.assetid: c5592f92-a432-44e3-afe0-60fcf917a443
 keywords:
@@ -11,11 +10,7 @@ keywords:
 - KSGATE
 - flow control gates WDK AVStream
 - processing control gates WDK AVStream
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -61,9 +56,9 @@ If this value is equal to zero, the gate is closed. If **Count** is greater than
 
 AND gates have a valid **Count** range of one or less; OR gates have a valid **Count** range of zero or greater. Do not set **Count** to invalid values; *AVStream does not verify that a minidriver has set the gate to a valid state.*
 
- 
+ 
 
- 
+ 
 
 
 

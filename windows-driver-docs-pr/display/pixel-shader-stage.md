@@ -2,11 +2,7 @@
 title: Pixel Shader Stage
 description: Pixel Shader Stage
 ms.assetid: 969b6cb9-7b03-4c9f-bf4a-e8d9b442c847
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +29,9 @@ The Direct3D runtime calls the following driver functions to create, set up, and
 
 [**PsSetShaderResources**](https://msdn.microsoft.com/library/windows/hardware/ff569210)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -12,11 +12,7 @@ keywords:
 - restoring surfaces WDK DirectDraw
 - lost surfaces WDK DirectDraw
 - suspended surfaces WDK DirectDraw
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,9 +28,9 @@ Normally, drivers do not have to be aware of this intermediate lost state. Howev
 
 Driver writers can elect to handle complex surface restoration in one atomic call. At surface restoration time, the DirectDraw runtime examines the driver's [**D3dCreateSurfaceEx**](https://msdn.microsoft.com/library/windows/hardware/ff542840) entry point. If this entry point is defined, then the DirectDraw runtime restores all complex surfaces in one call to [*DdCreateSurface*](https://msdn.microsoft.com/library/windows/hardware/ff549263). The driver probably will not be able to differentiate between the original creation and the creation caused by restoring a surface.
 
- 
+ 
 
- 
+ 
 
 
 

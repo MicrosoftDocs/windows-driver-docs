@@ -1,14 +1,9 @@
 ---
 title: Failure to Check a Driver's State
-author: windows-driver-content
 description: Failure to Check a Driver's State
 ms.assetid: 963f79f6-2282-41bd-9cf4-bd5bc02a510e
 keywords: ["reliability WDK kernel , driver state checking", "checking driver states", "driver state checking", "verifying driver states", "correct device states WDK kernel", "device states WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,7 +15,7 @@ ms.localizationpriority: medium
 
 In the following example, the driver uses the **ASSERT** macro to check for the correct device state in the checked build, but does not check device state in the free build:
 
-```
+```cpp
    case IOCTL_WAIT_FOR_EVENT:
 
       ASSERT((!Extension->WaitEventIrp));
@@ -33,9 +28,9 @@ In the checked build, if the driver already holds the IRP pending, the system wi
 
 On a multiprocessor system, this code fragment might cause additional problems. Assume that on entry this routine has ownership of (the right to manipulate) this IRP. When the routine saves the **Irp** pointer in the global structure at **Extension-&gt;WaitEventIrp**, another thread can get the IRP address from that global structure and perform operations on the IRP. To prevent this problem, the driver should mark the IRP pending before it saves the IRP and should include both the call to [**IoMarkIrpPending**](https://msdn.microsoft.com/library/windows/hardware/ff549422) and the assignment in an interlocked sequence. A [*Cancel*](https://msdn.microsoft.com/library/windows/hardware/ff540742) routine for the IRP might also be necessary.
 
- 
+ 
 
- 
+ 
 
 
 

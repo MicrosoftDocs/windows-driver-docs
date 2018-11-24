@@ -1,6 +1,5 @@
 ---
 title: Delete on Close
-author: windows-driver-content
 description: Delete on Close
 ms.assetid: 340e470f-7791-4677-9369-75ed8fa9f8ad
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - semantic model checks WDK file systems , delete on close
 - FILE_DELETE_ON_CLOSE
 - delete on close WDK file systems
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +21,9 @@ When a caller specifies the **FILE\_DELETE\_ON\_CLOSE** option, it is necessary 
 
 The file system may also need to check that the volume is not write protected and that this operation does not apply to a directory where this operation is not allowed. For example, the FASTFAT file system code does checks for a write-protected volume and does not allow the root directory to be deleted using FILE\_DELETE\_ON\_CLOSE. An example of these checks can be found in the **FatCommonCreate** function in the Create.c source file from the fastfat sample that the WDK contains.
 
- 
+ 
 
- 
+ 
 
 
 

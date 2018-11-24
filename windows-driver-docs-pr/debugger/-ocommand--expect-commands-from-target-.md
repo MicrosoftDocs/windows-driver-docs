@@ -3,11 +3,7 @@ title: .ocommand (Expect Commands from Target)
 description: The .ocommand command enables the target application to send commands to the debugger.
 ms.assetid: a4363395-111f-48eb-b1da-c17c0ad9f067
 keywords: ["Expect Commands from Target (.ocommand) command", ".ocommand (Expect Commands from Target) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **.ocommand** command enables the target application to send commands to the debugger.
 
-```
+```dbgcmd
 .ocommand  String 
 .ocommand -d 
 .ocommand 
@@ -60,7 +56,7 @@ Deletes the command prefix string.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -81,13 +77,13 @@ The comparison between the command prefix string and the target output is not ca
 
 For this example, assume that you enter the following command in the debugger.
 
-```
+```dbgcmd
 0:000> .ocommand magiccommand
 ```
 
 Then, the target application executes the following line.
 
-```
+```dbgcmd
 OutputDebugString("MagicCommand kb;g");
 ```
 
@@ -95,7 +91,7 @@ The debugger recognizes the command string prefix and executes **kb;g** immediat
 
 However, the following line does not cause any commands to be executed.
 
-```
+```dbgcmd
 OutputDebugString("Command on next line.\nmagiccommand kb;g");
 ```
 
@@ -103,11 +99,11 @@ There are no commands executed from the preceding example because the command st
 
 **Note**   You should choose a command string prefix that will not likely appear in any target output other than your own commands.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

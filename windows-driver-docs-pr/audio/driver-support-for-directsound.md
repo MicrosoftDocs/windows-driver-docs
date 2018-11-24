@@ -8,11 +8,7 @@ keywords:
 - DirectSound WDK audio
 - DirectSound WDK audio , about DirectSound
 - miniport drivers WDK audio , DirectSound
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +30,9 @@ This section presents the following topics:
 
 [DirectSound Capture Effects](directsound-capture-effects.md)
 
- 
+ 
 
- 
+ 
 
 
 

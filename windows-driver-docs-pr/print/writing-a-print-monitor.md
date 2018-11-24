@@ -1,6 +1,5 @@
 ---
 title: Writing a Print Monitor
-author: windows-driver-content
 description: Writing a Print Monitor
 ms.assetid: ca5600fc-9e2c-4735-90c4-9509c31dee29
 keywords:
@@ -11,11 +10,7 @@ keywords:
 - writing print monitors
 - monitors WDK print
 - print monitors WDK , about print monitors
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -53,9 +48,9 @@ The following topics are provided:
 
 [Installing a Print Monitor](installing-a-print-monitor.md)
 
- 
+ 
 
- 
+ 
 
 
 

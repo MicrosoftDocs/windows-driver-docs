@@ -1,5 +1,5 @@
 ---
-title: IRP\_MJ\_SET\_SECURITY
+title: IRP_MJ_SET_SECURITY
 description: IRP\_MJ\_SET\_SECURITY
 ms.assetid: 8d8b06b9-5d63-4506-831c-9c533dbe95f4
 keywords: ["IRP_MJ_SET_SECURITY Installable File System Drivers"]
@@ -9,11 +9,7 @@ api_name:
 - IRP_MJ_SET_SECURITY
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -91,7 +87,7 @@ A value of type [**SECURITY\_INFORMATION**](security-information.md) that specif
 </tbody>
 </table>
 
- 
+ 
 
 ## See also
 
@@ -110,9 +106,9 @@ A value of type [**SECURITY\_INFORMATION**](security-information.md) that specif
 
 [**SECURITY\_INFORMATION**](security-information.md)
 
- 
+ 
 
- 
+ 
 
 
 

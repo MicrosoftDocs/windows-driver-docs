@@ -2,11 +2,7 @@
 title: PROPSETID\_VIDCAP\_VIDEODECODER
 description: PROPSETID\_VIDCAP\_VIDEODECODER
 ms.assetid: 86b581b7-51fd-4662-8291-4c5baf9d3b16
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -40,9 +36,9 @@ Video capture minidrivers may optionally implement the following properties:
 
 The DirectShow **IAMAnalogVideoDecoder** interface (see the DirectShow documentation in the Microsoft Windows SDK) provides access to the properties of this set.
 
- 
+ 
 
- 
+ 
 
 
 

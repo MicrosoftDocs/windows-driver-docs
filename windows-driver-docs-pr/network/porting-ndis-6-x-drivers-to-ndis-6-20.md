@@ -6,11 +6,7 @@ keywords:
 - NDIS 6.20 WDK , porting NDIS 6.x drivers
 - NDIS 6.x drivers WDK
 - NDIS 6.x drivers WDK , porting to NDIS 6.20
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,9 +34,9 @@ The following topics describe how to port miniport, protocol, and intermediate d
 -   [Summary of Changes Required to Port a Filter Driver to NDIS 6.20](summary-of-changes-required-to-port-a-filter-driver-to-ndis-6-20.md)
 -   [Summary of Changes Required to Port an Intermediate Driver to NDIS 6.20](summary-of-changes-required-to-port-an-intermediate-driver-to-ndis-6-2.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: PPD-Specific Interface
-author: windows-driver-content
 description: PPD-Specific Interface
 ms.assetid: 12d5baa2-4fd4-4eca-84c7-1ee168ee8259
 keywords:
@@ -9,11 +8,7 @@ keywords:
 - IPrintCoreUI2
 - PPD files WDK Pscript
 - PPD-specific interface WDK Pscript
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -67,9 +62,9 @@ Note that in this section, the phrase "PPD feature is not currently available" m
 
 For example, "Duplex feature is not currently available" means either the PPD does not specify the \***Duplex** feature keyword, or the \***Duplex** feature keyword's non-None options are currently constrained by the fact that the duplex unit is not installed.
 
- 
+ 
 
- 
+ 
 
 
 

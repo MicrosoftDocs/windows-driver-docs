@@ -1,12 +1,7 @@
 ---
 Description: Provides an example of how to use USB ETW and Netmon to troubleshoot a USB device that Windows does not recognize.
 title: Case Study - Troubleshooting an unknown USB device
-author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -77,7 +72,7 @@ In this example, the device of interest was not connected to the system when we 
 
 In the sample log, the first event after the device summary events is a USB Hub Wait Wake IRP Completed event. We plugged in a device, and a host controller or a hub is waking up in response. To determine which component is waking up, look at the event's data. The data is in the Frame Details pane, which is shown in a tree structure in approximately the following form:
 
-```
+```cpp
 Frame information
 ETW event header information
     ETW event descriptor (Constant information about the event ID such
@@ -87,7 +82,6 @@ Event payload (Data logged at the time of the event)
         Structure members and their values (Types: numbers, strings,
         or arrays)
     ...
-
 ```
 
 Expand the payload data for the USB Hub Wait Wake IRP Completed event, and you will see an ETW structure that is named fid\_USBHUB\_Hub. The name of the structure has the following components:
@@ -114,12 +108,12 @@ Expand the payload data for the USB Hub Wait Wake IRP Completed event, and you w
 </tr>
 <tr class="odd">
 <td><p><strong>The rest of the string</strong></p></td>
-<td><p>The name of the object that the structure's data describes. For this event, it is a Hub object.</p></td>
+<td><p>The name of the object that the structure&#39;s data describes. For this event, it is a Hub object.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 The USB hub driver uses the **fid\_USBHUB\_Hub** structure to describe a USB hub. Events that have this hub structure in their data payload refer to a hub, and we can identify the specific hub by using the contents of the structure. Figure 4 shows the Frame Details pane, with the **fid\_USBHUB\_Hub** structure expanded to show its fields.
 
@@ -142,7 +136,7 @@ The list of one-based hub port numbers through which a USB device is attached. T
 | \[3, 0, 0, 0, 0, 0\] | The event refers to a hub or a device that is plugged into a root hub's port number 3.                                            |
 | \[3, 1, 0, 0, 0, 0\] | A hub is plugged into a root hub's port 3. The event refers to a hub or a device that is plugged into this external hub's port 1. |
 
- 
+
 
 You should monitor the port paths of any devices of interest. When a device is being enumerated, the VID and PID are unknown and logged as 0. The VID and PID do not appear during some low-level device requests such as reset and suspend. These requests are sent to the hub that the device is plugged into.
 
@@ -166,7 +160,7 @@ The USB error filter narrows the list of events to only those that meet the crit
 | (NetEvent.Header.Descriptor.Level == 0x2)                                         | Events that have level 0x2 are usually errors.                                                                                                            |
 | (USBHub\_MicrosoftWindowsUSBUSBHUB AND NetEvent.Header.Descriptor.Id == 210)      | USB hub events with ID 210 are ”USB Hub Exception Logged” events. For more information, see [Understanding Error Events and Status Codes](#status-codes). |
 
- 
+
 
 This image shows the smaller set of events that appear in the **Frame Summary** pane after we applied the USB error filter to our sample trace log.
 
@@ -194,7 +188,7 @@ USB error events, and other events, have status values in their data that provid
 | **fid\_NtStatus**                                                    | See [NTSTATUS values](http://go.microsoft.com/fwlink/p/?linkid=617532).                                                                                                                                                          |
 | The status field of a USB request block (URB) or **fid\_UsbdStatus** | Look up the value as a USBD\_STATUS in inc\\api\\usb.h in the Windows Driver Kit (WDK). You can also use the [USBD\_STATUS](https://msdn.microsoft.com/library/windows/hardware/ff539136). This topic lists the symbolic names and the meanings of the USBD\_STATUS values. |
 
- 
+
 
 ## Reading Backwards from Problem Events
 
@@ -211,14 +205,13 @@ The next previous event is Endpoint Close. This event means that an endpoint is 
 
 The next previous event is a completed USB control transfer. The event data shows that the target of the transfer is the device (the port path is 1). The fid\_USBPORT\_Endpoint\_Descriptor structure indicates that the endpoint's address is 0, so this is the USB-defined default control endpoint. The URB status is 0xC0000004. Because the status is not zero, the transfer was probably not successful. For more details about this USBD\_STATUS value, see usb.h and [Understanding Error Events and Status Codes](#status-codes).
 
-```
+```cpp
 #define USBD_STATUS_STALL_PID ((USBD_STATUS)0xC0000004L)
-
 ```
 
 Meaning: The device returned a stall packet identifier. What request was stalled by the endpoint? The other data that was logged for the event indicates that the request was a standard device control request. Here is the parsed request:
 
-```
+```cpp
   Frame: Number = 184, Captured Frame Length = 252, MediaType = NetEvent 
 + NetEvent: 
 - MicrosoftWindowsUSBUSBPORT: Complete Internal URB_FUNCTION_CONTROL_TRANSFER 
@@ -237,7 +230,6 @@ Meaning: The device returned a stall packet identifier. What request was stalled
        Value_DescriptorType: (1) DEVICE 
        _wIndex: 0 (0x0) 
        wLength: 64 (0x40)
-
 ```
 
 Combine the bRequest (GET\_DESCRIPTOR) with the Value\_DescriptorType (DEVICE), and you can determine that the request was get-device descriptor.

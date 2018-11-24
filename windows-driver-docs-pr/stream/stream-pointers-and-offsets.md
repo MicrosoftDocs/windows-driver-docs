@@ -1,6 +1,5 @@
 ---
 title: Stream Pointers and Offsets
-author: windows-driver-content
 description: Stream Pointers and Offsets
 ms.assetid: ef9dc015-f0ee-49a6-8774-cfb0223c8b12
 keywords:
@@ -11,11 +10,7 @@ keywords:
 - output positions WDK AVStream
 - AVStream pointers WDK
 - AVStream offsets WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +26,9 @@ To advance a stream pointer within a frame, the minidriver calls [**KsStreamPoin
 
 Minidrivers that access stream data with virtual addresses can use these offsets to specify a stream position at byte resolution. Minidrivers that use scatter/gather physical mappings can specify stream position at the granularity of a [**KSMAPPING**](https://msdn.microsoft.com/library/windows/hardware/ff563394) structure.
 
- 
+ 
 
- 
+ 
 
 
 

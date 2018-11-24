@@ -3,11 +3,7 @@ title: .send_file (Send File)
 description: The .send_file command copies files. If you are performing remote debugging through a process server, it sends a file from the smart client's computer to the process server's computer.
 ms.assetid: ad12ec46-79a3-458a-acdc-c2ccb06f8c96
 keywords: [".send_file (Send File) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **.send\_file** command copies files. If you are performing remote debugging through a process server, it sends a file from the smart client's computer to the process server's computer.
 
-```
+```dbgcmd
 .send_file [-f] Source Destination 
 .send_file [-f] -s Destination 
 ```
@@ -65,16 +61,16 @@ Causes the debugger to copy all loaded symbol files.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
 
 This command is particularly useful when you have been performing remote debugging through a process server, but wish to begin debugging locally instead. In this case you can use the .send\_file -s command to copy all the symbol files that the debugger has been using to the process server. These symbol files can then be used by a debugger running on the local computer.
 
- 
+ 
 
- 
+ 
 
 
 

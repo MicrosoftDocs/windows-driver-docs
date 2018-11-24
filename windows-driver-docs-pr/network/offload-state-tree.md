@@ -5,11 +5,7 @@ ms.assetid: c96608bd-5e8f-499b-872a-b6f7f33c9e0c
 keywords:
 - offload state WDK TCP chimney offload , trees
 - trees WDK TCP chimney offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -45,9 +41,9 @@ As the preceding figure shows, multiple state objects at one level in the tree c
 
 -   More than one path state object can share the same neighbor state object. For example, the Path1 and Path2 state objects share the Neighbor1 state object. All of the paths that share the same neighbor have the same next hop destination.
 
- 
+ 
 
- 
+ 
 
 
 

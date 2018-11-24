@@ -4,11 +4,7 @@ description: Update Offload Sequence
 ms.assetid: 1cf73af7-3a2e-4687-880a-60f53a5cf8f7
 keywords:
 - updating offloaded TCP chimney state, sequence
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,9 +34,9 @@ After the *MiniportUpdateOffload* function has returned, the offload target uses
 
 -   The tree might indicate that path-to-neighbor links must be updated. (For more information about how these links are updated, see [Linking Path State Objects to a New Neighbor State Object](linking-path-state-objects-to-a-new-neighbor-state-object.md).) In this situation, the offload target must update its internal representation of offloaded state to reflect the updated links.
 
- 
+ 
 
- 
+ 
 
 
 

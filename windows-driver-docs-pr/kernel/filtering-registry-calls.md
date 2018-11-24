@@ -1,14 +1,9 @@
 ---
 title: Filtering Registry Calls
-author: windows-driver-content
 description: Filtering Registry Calls
 ms.assetid: 6b35c3a0-4ece-4101-b348-e71f5cccf0c8
 keywords: ["filtering registry calls WDK kernel", "registry filtering drivers WDK kernel", "RegistryCallback", "filtering registry calls WDK kernel , about filtering registry calls", "registry filtering drivers WDK kernel , about filtering registry calls"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -55,9 +50,9 @@ To learn more about filtering registry calls, see the following topics:
 
 [Filtering Registry Operations on Application Hives](filtering-registry-operations-on-application-hives.md)
 
- 
+ 
 
- 
+ 
 
 
 

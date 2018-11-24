@@ -3,11 +3,7 @@ title: NDIS Extensions (Ndiskd.dll)
 description: NDIS Extensions (Ndiskd.dll)
 ms.assetid: bf4a7cc2-0116-4d6d-8a6f-2e9dc77d3631
 keywords: ["NDIS extensions (ndiskd.dll)", "ndiskd.dll (NDIS extensions)", "extensions, NDIS"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,7 +17,7 @@ This section describes commands available in !ndiskd, a debugger extension that 
 
 The commands can be found in Ndiskd.dll. To load the symbols, enter **.reload /f ndis.sys** in the debugger command window. To confirm the symbols loaded successfully, use the [**!lmi ndis**](-lmi.md) extension and look for the phrase "Symbols loaded successfully" toward the bottom. Your output should look similar to the following example:
 
-```
+```dbgcmd
 3: kd> !lmi ndis
 Loaded Module Info: [ndis] 
          Module: ndis
@@ -186,9 +182,9 @@ For more information about reference for NDIS drivers for Windows Vista and late
 
 For a demonstration of using the !ndiskd debugger commands to debug the network stack, see [Debugging the Network Stack](https://go.microsoft.com/fwlink/p/?linkid=845311).
 
- 
+ 
 
- 
+ 
 
 
 

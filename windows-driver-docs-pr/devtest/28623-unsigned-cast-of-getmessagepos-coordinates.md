@@ -2,11 +2,7 @@
 title: C28623
 description: Warning C28623 Unsigned cast of GetMessagePos() coordinates. Use GET_X_LPARAM/GET_Y_LPARAM instead of LOWORD/HIWORD.
 ms.assetid: 155da4f5-4e77-451e-b26b-69a39c32effa
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -39,9 +35,9 @@ ppt.x = GET_X_LPARAM(dw);
 ppt.y = GET_Y_LPARAM(dw);
 ```
 
- 
+ 
 
- 
+ 
 
 
 

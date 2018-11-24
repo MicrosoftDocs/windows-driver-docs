@@ -3,11 +3,7 @@ title: findxmldata
 description: The findxmldata extension retrieves XML data from a CAB file that contains a kernel-mode Small Memory Dump file.
 ms.assetid: 6d0b5294-b086-4b33-ac0d-0428521a3489
 keywords: ["XML data in CAB files", "sysdata.xml", "findxmldata Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!findxmldata** extension retrieves XML data from a CAB file that contains a kernel-mode Small Memory Dump file.
 
-```
+```dbgcmd
 !findxmldata [ -d DeviceName | -h HwId ] 
 !findxmldata -r Driver 
 !findxmldata -chksum [ -z CabFile ]
@@ -69,7 +65,7 @@ Displays system version information.
 </tbody>
 </table>
 
- 
+ 
 
 The **!findxmldata** extension works only on a kernel-mode Small Memory Dump file that is stored in a CAB file.
 
@@ -86,7 +82,7 @@ When you do not use any options, the extension displays all devices.
 
 The following examples show you how to use **!findxmldata**.
 
-```
+```dbgcmd
 kd> !findxmldata -v
 SYSTEM Info:
 OSVER: 5.1.2600 2.0
@@ -132,9 +128,9 @@ Node DEVICE
         DRIVER         : msmpu401.sys
 ```
 
- 
+ 
 
- 
+ 
 
 
 

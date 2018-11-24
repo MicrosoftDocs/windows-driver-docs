@@ -3,11 +3,7 @@ title: Disable paging of kernel stacks
 description: Disable paging of kernel stacks
 ms.assetid: 3bf0ae20-4569-41de-9d7c-dd6a2790dac6
 keywords: ["Disable paging of kernel stacks (global flag)"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -44,7 +40,7 @@ The **Disable paging of kernel stacks** flag prevents paging of the kernel-mode 
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
@@ -52,9 +48,9 @@ Generally, the kernel-mode stack cannot be paged; it is guaranteed to be residen
 
 The kernel debugger can provide information about a thread only when its stack is in physical memory. This flag is particularly important when debugging deadlocks and in other cases when every thread must be tracked.
 
- 
+ 
 
- 
+ 
 
 
 

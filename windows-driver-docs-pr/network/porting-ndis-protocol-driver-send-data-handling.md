@@ -4,11 +4,7 @@ description: Porting NDIS Protocol Driver Send Data Handling
 ms.assetid: 0d0a071d-5d4c-46c1-8b4f-b8bff9e3d465
 keywords:
 - send operation porting WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +22,9 @@ NDIS 6.0 does not provide loopback of send data by default. NDIS 6.0 protocol dr
 
 NDIS 6.0 protocol drivers can cancel send operations. For more information about canceling send operations, see [Canceling a Send Operation](canceling-a-send-operation.md). For an overview of send operations, see [Sending Network Data](sending-network-data.md). For more information about protocol driver send operations, see [Sending Data from a Protocol Driver](sending-data-from-a-protocol-driver.md).
 
- 
+ 
 
- 
+ 
 
 
 

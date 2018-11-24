@@ -1,6 +1,5 @@
 ---
 title: TVOT\_LISTBOX
-author: windows-driver-content
 description: TVOT\_LISTBOX
 ms.assetid: 2426ae5a-33e6-4f16-ad49-ff38ea19e392
 keywords: ["TVOT_LISTBOX Print Devices"]
@@ -12,11 +11,7 @@ api_location:
 - compstui.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -119,7 +114,7 @@ Otherwise, **BegCtrlID** must contain the first control identifier of a sequenti
 </tbody>
 </table>
 
- 
+ 
 
 For additional information, see [Customizing CPSUI-Supported Window Controls](https://msdn.microsoft.com/library/windows/hardware/ff547296).
 
@@ -139,9 +134,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

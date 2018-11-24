@@ -10,6 +10,7 @@ api_name:
 api_type:
 - NA
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # suppressAddRemovePrograms XML Element
@@ -21,11 +22,11 @@ The **suppressAddRemovePrograms** XML element is an empty element that sets the 
 
 **Note**  In versions of Windows earlier than Windows Vista, DPInst added the entry for the driver package to **Add or Remove Programs** in Control Panel.
 
- 
+ 
 
 ### Element Tag
 
-```
+```cpp
 <suppressAddRemovePrograms>
 ```
 
@@ -43,7 +44,7 @@ None
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Parent elements</strong></p></td>
-<td align="left"><p>[<strong>dpinst</strong>](dpinst-xml-element.md) or [<strong>group</strong>](group-xml-element.md)</p></td>
+<td align="left"><p><a href="dpinst-xml-element.md" data-raw-source="[&lt;strong&gt;dpinst&lt;/strong&gt;](dpinst-xml-element.md)"><strong>dpinst</strong></a> or <a href="group-xml-element.md" data-raw-source="[&lt;strong&gt;group&lt;/strong&gt;](group-xml-element.md)"><strong>group</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Child elements</strong></p></td>
@@ -60,7 +61,7 @@ None
 </tbody>
 </table>
 
- 
+ 
 
 ### <a href="" id="comments"></a>Remarks
 
@@ -68,7 +69,7 @@ By default, the **suppressAddRemovePrograms** flag is set to OFF. To set the **s
 
 The following code example demonstrates a **suppressAddRemovePrograms** element that is child element of a **dpinst** element.
 
-```
+```cpp
 <dpinst>
   ...
    <suppressAddRemovePrograms/>
@@ -78,7 +79,7 @@ The following code example demonstrates a **suppressAddRemovePrograms** element 
 
 The following code example demonstrates a **suppressAddRemovePrograms** element that is child element of a **group** element.
 
-```
+```cpp
 <dpinst>
   ...
   <group>
@@ -97,9 +98,9 @@ The following code example demonstrates a **suppressAddRemovePrograms** element 
 
 [**group**](group-xml-element.md)
 
- 
+ 
 
- 
+ 
 
 
 

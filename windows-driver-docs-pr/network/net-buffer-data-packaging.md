@@ -9,11 +9,7 @@ keywords:
 - receiving data WDK networking
 - NDIS_PACKET
 - NET_BUFFER data packaging WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +29,9 @@ NDIS propagates a driver's data backfill requirements to higher-level drivers. W
 
 For more information about the NET\_BUFFER architecture, see [NET\_BUFFER Architecture](net-buffer-architecture.md).
 
- 
+ 
 
- 
+ 
 
 
 

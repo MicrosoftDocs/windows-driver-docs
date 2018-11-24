@@ -1,6 +1,5 @@
 ---
 title: Cloning Stream Pointers
-author: windows-driver-content
 description: Cloning Stream Pointers
 ms.assetid: bbe01f48-db86-41c9-b7b8-b48a4a295d21
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - cloning stream pointers WDK AVStream
 - duplicating stream pointers WDK AVStream
 - copying stream pointers WDK AVStream
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,9 +31,9 @@ Clones exist until you delete them by calling [**KsStreamPointerDelete**](https:
 
 See [AVStream DMA Services](avstream-dma-services.md) for an example of how to use stream pointer clones.
 
- 
+ 
 
- 
+ 
 
 
 

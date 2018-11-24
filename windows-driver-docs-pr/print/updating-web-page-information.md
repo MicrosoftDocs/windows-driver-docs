@@ -1,6 +1,5 @@
 ---
 title: Updating Web Page Information
-author: windows-driver-content
 description: Updating Web Page Information
 ms.assetid: 3ea2c8c0-7e46-47ff-8c32-82760eafd893
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - Web pages WDK printer , updating information
 - customized print Web pages WDK , updating information
 - updating print Web page information
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,9 +19,9 @@ ms.localizationpriority: medium
 
 The print server does not support server push for updating information about a print server Web page. Client pull operations are supported (assuming the user's browser recognizes HTML-specified "refresh" parameters) and can be included in customized pages. (For more information about client pull, refer to the appropriate HTML documentation.)
 
- 
+ 
 
- 
+ 
 
 
 

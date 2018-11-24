@@ -1,6 +1,5 @@
 ---
 title: GDL Namespaces
-author: windows-driver-content
 description: GDL Namespaces
 ms.assetid: 111bc393-a44a-4c42-98ef-36f6f225b8a0
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - namespaces WDK GDL
 - namespaces WDK GDL , examples
 - unnamed namespaces WDK GDL
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,11 +24,11 @@ A template or macro name can be referenced in a qualified or unqualified form in
 
 **Note**   The symbol name that is supplied as the value of \*Template, \*Macros, or \*BlockMacro definitions cannot be qualified by a namespace. The namespace of a definition can be defined only by using \*DefineInNameSpace.
 
- 
+ 
 
 For example, after a template that is named "TEMPNAME" has been defined within a namespace that is named "NSName", that template can be referenced by another template definition by using the namespace qualified form, as the following code example shows.
 
-```
+```cpp
 *DefineInNameSpace: NSName
 {
     *Template:  TEMPNAME
@@ -45,7 +40,7 @@ For example, after a template that is named "TEMPNAME" has been defined within a
 
 This template can now be referenced from another template by using the namespace qualified syntax, as the following code example shows.
 
-```
+```cpp
 *Template:  ANOTHER_TEMPLATE
 {
     *Inherits: NSName:TEMPNAME
@@ -60,7 +55,7 @@ You can specify multiple namespaces by nesting several constructs. The search or
 
 **Note**   If you need to insulate the namespace search order from outside influences, all of the namespaces that are needed to resolve references should be specified by using \*UsingNameSpace constructs.
 
- 
+ 
 
 You should not rely on the \*DefineInNameSpace construct to establish the search order because the host might surround the included file with additional \*UsingNameSpace constructs and the host-specified namespaces will be searched before the namespaces that are named by the \*DefineInNameSpace constructs.
 
@@ -68,7 +63,7 @@ For example, the template that was defined earlier showed two namespaces that ha
 
 The following code example shows how to specify the "unnamed" namespace to define the search order.
 
-```
+```cpp
 *UsingNameSpace: NSName2
 {
     *UsingNameSpace:  *%%%%%  omitting symbol specifies the  Unnamed 
@@ -91,13 +86,13 @@ Because GDL data entries never explicitly reference template names, the use of \
 
 **Note**   Macro definitions are scope-limited by the enclosing nesting level. However, namespace nesting levels do not limit the scope of macro definitions because you do not need to define a macro to belong to a particular namespace if the scope of the macro is not large enough to be visible outside of that namespace.
 
- 
+ 
 
 Namespace constructs can be interleaved between other types of constructs. There is almost no restriction on where a namespace construct can appear. The non-namespace constructs do not affect namespace resolution.
 
- 
+ 
 
- 
+ 
 
 
 

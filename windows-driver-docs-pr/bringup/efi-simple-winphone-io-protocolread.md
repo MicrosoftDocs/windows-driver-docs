@@ -1,13 +1,8 @@
 ---
 title: EFI_SIMPLE_WINPHONE_IO_PROTOCOL.Read
-author: windows-driver-content
 description: EFI_SIMPLE_WINPHONE_IO_PROTOCOL.Read
 ms.assetid: 9b5525a4-d98c-4328-8ebe-55ede53befca
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,7 +14,7 @@ The **Read** function reads data from the device.
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef
 EFI_STATUS
 (EFIAPI * EFI_SIMPLE_WINPHONE_IO_READ) (
@@ -89,7 +84,7 @@ The function returns one of the following values:
 </tbody>
 </table>
 
- 
+ 
 
 ## Remarks
 
@@ -103,9 +98,9 @@ In case of errors, no more bytes will be read, and the appropriate status code w
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
 

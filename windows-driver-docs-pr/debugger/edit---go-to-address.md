@@ -3,11 +3,7 @@ title: Edit Go to Address
 description: Edit Go to Address
 ms.assetid: 152bdbb1-87e5-4a73-a1b7-1c4997f4a41c
 keywords: ["Edit Go to Address"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +23,7 @@ When you click **Go to Address**, the **View Code Offset** dialog box appears. I
 
 **Note**   If you put the cursor on a line within the [Disassembly window](disassembly-window.md) or a [Source window](source-window.md) and then use the**Go to Address** command, the address of the line that you have selected will appear in the **View Code Offset** dialog box. You can use this address or replace it with any address of your choice.
 
- 
+ 
 
 After you click **OK**, the debugger moves the caret (^) to the beginning of the function or address in the Disassembly window or a Source window.
 
@@ -39,9 +35,9 @@ The **Go to Address** command only changes the WinDbg display. This command does
 
 For more information about other ways of finding text in debugging information windows, see [Moving Through a Window](moving-through-a-window.md).
 
- 
+ 
 
- 
+ 
 
 
 

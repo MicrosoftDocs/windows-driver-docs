@@ -3,6 +3,7 @@ title: MSiSCSI\_TargetMappings WMI Class
 description: MSiSCSI\_TargetMappings WMI Class
 ms.assetid: 12bfe80a-8431-4607-99f5-ddd6815aecc6
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MSiSCSI\_TargetMappings WMI Class
@@ -27,9 +28,9 @@ The iSCSI initiator service relies on the MSiSCSI\_TargetMappings class to commu
 
 Initiators must register the MSiSCSI\_TargetMappings class using the name of the PDO for the HBA.
 
- 
+ 
 
- 
+ 
 
 
 

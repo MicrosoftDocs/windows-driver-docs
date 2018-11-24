@@ -1,14 +1,9 @@
 ---
 title: Properties of Device Objects
-author: windows-driver-content
 description: Properties of Device Objects
 ms.assetid: 6cd31263-e725-4a62-bec9-f40feb0b66cc
 keywords: ["device objects WDK kernel , properties", "properties WDK device objects"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,9 +27,9 @@ For each of these properties, a default value can be set when the device object 
 
 Values for device object properties can also be set in the registry. See [Setting Device Object Properties in the Registry](setting-device-object-properties-in-the-registry.md) for more information.
 
- 
+ 
 
- 
+ 
 
 
 

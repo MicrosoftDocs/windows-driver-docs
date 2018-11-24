@@ -2,11 +2,7 @@
 title: KSPROPSETID\_BdaSignalStats
 description: KSPROPSETID\_BdaSignalStats
 ms.assetid: ea368344-e56d-47d1-bc1f-241ba8aa0bc4
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -41,13 +37,13 @@ Indicates the lock types that the driver can support for a signal.
 <span id="KSPROPERTY_BDA_SIGNAL_LOCK_TYPE"></span><span id="ksproperty_bda_signal_lock_type"></span>[**KSPROPERTY\_BDA\_SIGNAL\_LOCK\_TYPE**](ksproperty-bda-signal-lock-type.md)
 Required.
 Indicates the current lock type for a signal.
-### <span id="comments"></span><span id="COMMENTS"></span>Comments
+### Comments
 
 When specifying the particular property of the KSPROPSETID\_BdaSignalStats property set to get a signal statistic from a pin, set the **NodeId** member of the KSP\_NODE structure to −1.
 
- 
+ 
 
- 
+ 
 
 
 

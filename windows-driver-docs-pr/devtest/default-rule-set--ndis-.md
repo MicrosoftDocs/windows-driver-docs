@@ -2,11 +2,7 @@
 title: Default rule set (NDIS)
 description: The Default rule set (Default.sdv) specifies the recommended sets of rules to use when you analyze your driver.
 ms.assetid: ED809122-5938-4087-AAB8-0D3EB6DB1092
-ms.author: windowsdriverdev
 ms.date: 05/21/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,9 +31,9 @@ The Default rule set (Default.sdv) specifies the recommended sets of rules to us
 
     For more information, see [Using Static Driver Verifier to Find Defects in Drivers](https://msdn.microsoft.com/library/windows/hardware/hh454281) and [Static Driver Verifier commands (MSBuild)](https://msdn.microsoft.com/library/windows/hardware/hh466459).
 
- 
+ 
 
- 
+ 
 
 
 

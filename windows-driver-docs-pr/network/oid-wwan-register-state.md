@@ -1,13 +1,8 @@
 ---
 title: OID_WWAN_REGISTER_STATE
-author: windows-driver-content
 description: OID_WWAN_REGISTER_STATE selects a network provider to register with.
 ms.assetid: 564de5bf-10d9-47fe-a4c1-3409d9b2aee8
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_WWAN_REGISTER_STATE Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -74,9 +69,9 @@ Requirements
 
 [WWAN Registration Operations](https://msdn.microsoft.com/library/windows/hardware/ff559116)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: Connection Profile API
 description: Connection Profile API
 ms.assetid: 671b0df6-4f4b-4867-86dd-5eb832d86b4b
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,9 +28,9 @@ This API also includes a status change event that notifies the application whene
 
 [**NetworkStatusChangedEventHandler delegate**](https://msdn.microsoft.com/library/windows/apps/br207303)
 
- 
+ 
 
- 
+ 
 
 
 

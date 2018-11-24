@@ -1,6 +1,5 @@
 ---
 title: Differences between UVC 1.0 and UVC 1.1
-author: windows-driver-content
 description: Differences between UVC 1.0 and UVC 1.1
 ms.assetid: 5199fc4f-7bc2-4edb-bb52-cd2028756f64
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - USB Video Class drivers WDK AVStream , differences between UVC 1.0 and UVC 1.1
 - Video Class drivers WDK USB , differences between UVC 1.0 and UVC 1.1
 - UVC drivers WDK AVStream , differences between UVC 1.0 and UVC 1.1
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -224,15 +219,15 @@ The following table summarizes the differences between UVC 1.0 and 1.1.
 </tbody>
 </table>
 
- 
+ 
 
 For UVC 1.0 devices, the length of the MPEG2TS format descriptor is 7. Because UVC 1.1 includes a new 16 byte GUID field, the length of the MPEG2TS format descriptor is 23.
 
 Accordingly, if you update the MPEG2TS descriptor to 23 bytes, you must also set the **bcdUVC** flag in the Class-Specific VC Interface to 0x110.
 
- 
+ 
 
- 
+ 
 
 
 

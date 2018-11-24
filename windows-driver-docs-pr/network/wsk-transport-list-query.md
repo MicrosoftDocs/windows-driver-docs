@@ -1,13 +1,8 @@
 ---
 title: WSK_TRANSPORT_LIST_QUERY
-author: windows-driver-content
 description: WSK_TRANSPORT_LIST_QUERY
 ms.assetid: feb6aed2-fac9-4d3f-a36b-f721c737aacf
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WSK_TRANSPORT_LIST_QUERY Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -50,7 +45,7 @@ To retrieve a list of available network transports, a WSK application calls the 
 </tr>
 <tr class="odd">
 <td><p><em>OutputBuffer</em></p></td>
-<td><p>A pointer to an array of [<strong>WSK_TRANSPORT</strong>](https://msdn.microsoft.com/library/windows/hardware/ff571193) structures that receives the list of available network transports</p></td>
+<td><p>A pointer to an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff571193" data-raw-source="[&lt;strong&gt;WSK_TRANSPORT&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff571193)"><strong>WSK_TRANSPORT</strong></a> structures that receives the list of available network transports</p></td>
 </tr>
 <tr class="even">
 <td><p><em>OutputSizeReturned</em></p></td>
@@ -62,12 +57,6 @@ To retrieve a list of available network transports, a WSK application calls the 
 </tr>
 </tbody>
 </table>
-
- 
-
-```
-
-```
 
 A WSK application can specify zero in the *OutputSize* parameter and **NULL** in the *OutputBuffer* parameter to determine the size of the array of [**WSK\_TRANSPORT**](https://msdn.microsoft.com/library/windows/hardware/ff571193) structures, in bytes, that is required to contain the complete list of available network transports. In such a situation, the call to the [**WskControlClient**](https://msdn.microsoft.com/library/windows/hardware/ff571126) function returns STATUS\_BUFFER\_OVERFLOW, and the variable that is pointed to by the *OutputSizeReturned* parameter contains the required buffer size. The application can then allocate a buffer that is large enough to contain the complete list of available network transports and can call the **WskControlClient** function a second time, specifying the parameters that are shown in the preceding table.
 
@@ -93,9 +82,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

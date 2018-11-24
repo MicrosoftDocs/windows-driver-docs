@@ -6,11 +6,7 @@ keywords:
 - display driver model WDK Windows Vista , initialization
 - Windows Vista display driver model WDK , initialization
 - initializing Windows Vista display drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,9 +34,9 @@ The following topics describe how the display miniport driver and the user-mode 
 
 [Providing Kernel-Mode Support to the OpenGL Installable Client Driver](providing-kernel-mode-support-to-the-opengl-installable-client-driver.md)
 
- 
+ 
 
- 
+ 
 
 
 

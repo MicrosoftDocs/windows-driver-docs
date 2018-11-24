@@ -6,11 +6,7 @@ keywords:
 - Direct3D version 10.1 WDK Windows 7 display , DXGI_FORMAT_R10G10B10_XR_BIAS_A2_UNORM
 - extended format WDK Windows 7 display , DXGI_FORMAT_R10G10B10_XR_BIAS_A2_UNORM
 - DXGI_FORMAT_R10G10B10_XR_BIAS_A2_UNORM WDK Windows 7 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ The DXGI\_FORMAT\_R10G10B10\_XR\_BIAS\_A2\_UNORM format has only the display sca
 
 For full functionality, the display miniport driver must support XR\_BIAS as a display format. The new D3DDDIFMT\_A2B10G10R10\_XR\_BIAS value was added to the [**D3DDDIFORMAT**](https://msdn.microsoft.com/library/windows/hardware/ff544312) enumeration for XR\_BIAS support.
 
- 
+ 
 
- 
+ 
 
 
 

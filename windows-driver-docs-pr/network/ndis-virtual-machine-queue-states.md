@@ -2,11 +2,7 @@
 title: NDIS Virtual Machine Queue States
 description: NDIS Virtual Machine Queue States
 ms.assetid: 69a301ac-71f4-4591-80ff-356c32187aa8
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -61,9 +57,9 @@ In the *Stop DMA* state, the miniport driver received a free queue request and t
 <a href="" id="freeing"></a>Freeing  
 In the *Freeing* state, a miniport driver is waiting for all of the outstanding receive indications on a queue to complete and freeing the resources that are associated with the queue. After all of the resources are freed, the queue enters the Undefined state.
 
- 
+ 
 
- 
+ 
 
 
 

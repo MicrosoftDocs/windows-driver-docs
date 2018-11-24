@@ -8,11 +8,7 @@ keywords:
 - segments received during termination WDK TCP chimney offload
 - TCP SACK WDK TCP chimney offload
 - selective acknowledgment for out-of-order segments WDK TCP chimney offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +26,9 @@ After the offload of a TCP connection has been terminated, the offload target co
 
 If the offload target supports TCP SACK (that is, selective acknowledgment for out-of-order segments), it should drop any receive segments that it has not yet acknowledged with a TCP acknowledgment--not just a SACK acknowledgment. The offload target should not indicate the received SACK data to the local host, and it should not acknowledge such data to the remote host.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,17 +1,12 @@
 ---
 title: Serial Device Control Requests
-author: windows-driver-content
 description: Serial Device Control Requests
 ms.assetid: 12dab038-e4da-47b5-ada8-e1c7ee980cde
 keywords:
 - serial devices WDK , device control requests
 - device control requests WDK serial devices
 - Serial driver WDK , device control requests
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -55,9 +50,9 @@ For more information about the high-level operation of [COM ports](configuration
 
 For more information about Serial I/O requests, see [Serial Driver Reference](https://msdn.microsoft.com/library/windows/hardware/ff547476).
 
- 
+ 
 
- 
+ 
 
 
 

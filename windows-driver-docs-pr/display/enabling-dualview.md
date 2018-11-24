@@ -4,11 +4,7 @@ description: Enabling DualView
 ms.assetid: 7779c74d-2076-419d-94e4-07c36501524e
 keywords:
 - DualView WDK video miniport
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -46,9 +42,9 @@ For a minimal DualView implementation, perform the following actions:
 
 -   For laptop computers supporting multichild devices, the miniport driver should handle [**IOCTL\_VIDEO\_GET\_CHILD\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff567801) requests and return logical child relationships (discussed in the following section).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,13 +1,8 @@
 ---
 title: Memory
-author: windows-driver-content
 description: Memory
 ms.assetid: 9e1ad59f-9a97-49d7-b749-14380067cf64
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,9 +37,9 @@ Data Type:BIDI\_INT
 
 Description:The amount of memory, in kilobytes (KB), available to the Postscript interpreter in the device. This amount should be less than the amount of physical memory installed.
 
- 
+ 
 
- 
+ 
 
 
 

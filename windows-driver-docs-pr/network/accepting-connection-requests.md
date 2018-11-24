@@ -10,11 +10,7 @@ keywords:
 - accepting connection requests WDK SANs
 - refusing SAN connection requests
 - rejecting SAN connection requests
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -82,9 +78,9 @@ After the switch has successfully used a SAN service provider to accept a connec
 
 6.  If the application cancels its own **accept** call, the switch calls the appropriate SAN service provider's [**WSPCloseSocket**](https://msdn.microsoft.com/library/windows/hardware/ff566273) function to close the accepting SAN socket.
 
- 
+ 
 
- 
+ 
 
 
 

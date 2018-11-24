@@ -2,11 +2,7 @@
 title: Best practices for connecting to the mobile broadband network
 description: Best practices for connecting to the mobile broadband network
 ms.assetid: 6106d026-1c5f-4990-8ef2-467c1a77a38e
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +26,9 @@ Use the following best practices regarding connectivity to the mobile broadband 
 
 [Best practices for using Mobile Broadband Windows Runtime API](best-practices-for-using-mobile-broadband-windows-runtime-api.md)
 
- 
+ 
 
- 
+ 
 
 
 

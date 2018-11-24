@@ -1,13 +1,8 @@
 ---
 title: WSK Socket IOCTL Operations
-author: windows-driver-content
 description: The WSK subsystem supports the following socket I/O control operations
 ms.assetid: ffdf74d4-4795-4d3f-aaf0-49db89f5ad93
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WSK WDK networking, IOCTL operations
  - Winsock Kernel WDK networking, IOCTL operations
@@ -34,9 +29,9 @@ The underlying network protocol might support additional socket I/O control oper
 -   [**SIO\_WSK\_SET\_SENDTO\_ADDRESS**](sio-wsk-set-sendto-address.md)
 -   [**SIO\_WSK\_SET\_TCP\_SILENT\_MODE**](sio-wsk-set-tcp-silent-mode.md)
 
- 
+ 
 
- 
+ 
 
 
 

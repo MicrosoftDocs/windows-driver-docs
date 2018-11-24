@@ -5,11 +5,7 @@ ms.assetid: da8d16cd-583f-42b0-857f-64e5103aa379
 keywords:
 - Static Driver Verifier Report WDK , Source Code pane
 - Source Code pane WDK Static Driver Verifier
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +24,9 @@ You can use the **Source Code** pane to read any file, but the cursor steps thro
 
 You can also copy the code from any tab of the **Source Code** pane and paste it into an application that supports rich text format (RTF) files, such as Microsoft Word or WordPad. To copy the code, from the **Edit** menu, select **Select All** and then, from the **Edit** menu, select **Copy**. Or, press CTRL+A (select all) and then CTRL+C (copy).
 
- 
+ 
 
- 
+ 
 
 
 

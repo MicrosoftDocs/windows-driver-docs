@@ -2,11 +2,7 @@
 title: External Network Adapters
 description: External Network Adapters
 ms.assetid: 4029437C-97EA-4F21-A3F0-3B29DC650233
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -39,9 +35,9 @@ The following steps occur when the extensible switch with an external network ad
 
 4.  The protocol edge of the extensible switch issues an OID set request of [OID\_SWITCH\_PORT\_DELETE](https://msdn.microsoft.com/library/windows/hardware/hh598273) down the extensible switch driver stack. This OID request notifies the underlying extensible switch extensions that the port that was used for the external network adapter connection has been torn down and deleted.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -11,11 +11,7 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 05/10/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -51,13 +47,13 @@ The KSPROPERTY\_AUDIO\_MIC\_SENSITIVITY property specifies the microphone sensit
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Pin Instance</p></td>
-<td align="left">[<strong>KSP_PIN</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566722)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/ff566722" data-raw-source="[&lt;strong&gt;KSP_PIN&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566722)"><strong>KSP_PIN</strong></a></td>
 <td align="left">LONG</td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is of type LONG and contains sensitivity information in decibels relative to dBFS units. The sensitivity value uses the following scale. The value uses fixed point decimal representation. The data is stored as a 16.16 fixed point value. The upper 16 bits are used for the whole number of the value and the lower 16 bits are used for the fractional portion of the value.
 
@@ -90,9 +86,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

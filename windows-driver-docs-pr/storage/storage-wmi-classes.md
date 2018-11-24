@@ -3,6 +3,7 @@ title: Storage management and WMI classes
 description: Storage management and WMI classes
 ms.assetid: 32cfb51e-b02a-4624-88ea-804d823256a6
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Storage management and WMI classes
@@ -32,9 +33,9 @@ Storage Management Providers, SMI-S requirements, and system-supplied WMI classe
 
 [Storage driver design guide](http://go.microsoft.com/fwlink/p/?LinkId=798409)
 
- 
+ 
 
- 
+ 
 
 
 

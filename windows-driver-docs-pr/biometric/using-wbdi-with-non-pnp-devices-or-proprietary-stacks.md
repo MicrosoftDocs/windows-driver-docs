@@ -9,11 +9,7 @@ keywords:
 - legacy driver stacks WDK biometric
 - non-PnP devices WDK biometric
 - proprietary stacks WDK biometric
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +26,9 @@ There are two primary methods to use a legacy driver stack with WBDI:
 
 Creating a filter to manage WBDI PDOs is the simpler of the two solutions, and this is the method recommended by Microsoft.
 
- 
+ 
 
- 
+ 
 
 
 

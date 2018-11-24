@@ -5,11 +5,7 @@ ms.assetid: 887624a7-0293-4add-94a7-d490ebd93205
 keywords:
 - Overlay DDI WDK Windows 7 display , programming considerations
 - Overlay DDI WDK Server 2008 R2 display , programming considerations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,9 +20,9 @@ When you implement the [Overlay DDI](overlay-ddi.md) in your user-mode display d
 
 -   When the display format is 64 bits rather than 32 bits (for example, when the DWM uses the D3DDDIFMT\_A16B16G16R16F value from the [**D3DDDIFORMAT**](https://msdn.microsoft.com/library/windows/hardware/ff544312) enumeration for the display mode), the Direct3D runtime places the low 32 bits of the overlay color key in the **DstColorKeyLow** member of the [**D3DDDI\_OVERLAYINFO**](https://msdn.microsoft.com/library/windows/hardware/ff544621) structure and the upper 32 bits in the **DstColorKeyHigh** member of **D3DDDI\_OVERLAYINFO**.
 
- 
+ 
 
- 
+ 
 
 
 

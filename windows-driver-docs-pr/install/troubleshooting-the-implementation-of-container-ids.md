@@ -4,11 +4,7 @@ description: Troubleshooting the Implementation of Container IDs
 ms.assetid: 9c992f5a-73b6-4567-977f-1cd92862bf60
 keywords:
 - container IDs WDK , troubleshooting
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -46,9 +42,9 @@ In such a case, you should examine the following:
 
     If the device is concurrently connected to the computer by two or more buses, two or more instances of the device can appear in the Devices and Printers UI. These instances can have one or more device instances for each bus to which the device is attached. To resolve this problem, make sure that the device reports a container ID or a device-specific unique identifier, and reports the same value on each bus.
 
- 
+ 
 
- 
+ 
 
 
 

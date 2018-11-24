@@ -7,11 +7,7 @@ keywords:
 - connection-oriented NDIS WDK , miniport drivers
 - CoNDIS WDK networking , miniport drivers
 - miniport drivers WDK networking , CoNDIS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +27,9 @@ This section includes the following topics:
 
 [Handling Status Indications in a CoNDIS Protocol Driver](handling-status-indications-in-a-condis-protocol-driver.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -9,11 +9,7 @@ keywords:
 - unique device IDs WDK audio
 - identifying audio devices
 - hardware-specific information WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -82,7 +78,7 @@ An application can access the data from the driver's KSCOMPONENTID structure thr
 </tbody>
 </table>
 
- 
+ 
 
 After receiving the KSCOMPONENTID structure from the filter's property handler, the WDMAud system driver (Wdmaud.sys) converts the data from this structure to the *XXX*CAPS2 format that the *xxx*GetDevCaps functions use.
 
@@ -131,9 +127,9 @@ On Windows releases earlier than Windows XP, the legacy members of the capabilit
 
 The INIT\_MMREG\_MID and INIT\_MMREG\_PID macros above are defined in Ksmedia.h. These macros are used to convert the manufacturer and product IDs in the **wMid** and **wPid** members to GUIDs that are loaded into the **ManufacturerGuid** and **ProductGuid** members.
 
- 
+ 
 
- 
+ 
 
 
 

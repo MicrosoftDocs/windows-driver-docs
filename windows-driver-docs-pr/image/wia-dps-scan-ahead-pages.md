@@ -11,11 +11,7 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,7 +25,7 @@ The WIA\_DPS\_SCAN\_AHEAD\_PAGES property contains a value that indicates whethe
 
 **Note**  This property is now obsolete. Use [**WIA\_IPS\_SCAN\_AHEAD**](wia-ips-scan-ahead.md) instead.
 
- 
+ 
 
 Property Type: VT\_I4
 
@@ -60,14 +56,14 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**WIA\_IPS\_SCAN\_AHEAD**](wia-ips-scan-ahead.md)
 
- 
+ 
 
- 
+ 
 
 
 

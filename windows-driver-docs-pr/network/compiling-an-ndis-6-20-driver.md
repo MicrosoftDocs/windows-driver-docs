@@ -5,11 +5,7 @@ ms.assetid: 07940d98-63fb-4629-943c-f56ebdfcdd76
 keywords:
 - NDIS 6.20 WDK , compiling a driver
 - compiling an NDIS 6.20 driver WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +25,9 @@ For each type of driver, add information to the SOURCES file as follows:
 
 -   For a filter driver, add NDIS620=1.
 
- 
+ 
 
- 
+ 
 
 
 

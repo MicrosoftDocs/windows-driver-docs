@@ -3,11 +3,7 @@ title: idt
 description: The idt extension displays the interrupt service routines (ISRs) for a specified interrupt dispatch table (IDT).
 ms.assetid: 6b289fde-85a3-4a40-8354-db6861ca8cb2
 keywords: ["ISR (interrupt service routine)", "IDT (interrupt dispatch table)", "idt Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!idt** extension displays the interrupt service routines (ISRs) for a specified interrupt dispatch table (IDT).
 
-```
+```dbgcmd
 !idt IDT 
 !idt [-a] 
 !idt -? 
@@ -59,7 +55,7 @@ Displays help for this extension in the Debugger Command window.
 </tbody>
 </table>
 
- 
+ 
 
 This extension command can only be used with an x64-based or x86-based target computer.
 
@@ -74,7 +70,7 @@ Remarks
 
 Here is an example of the output from this extension:
 
-```
+```dbgcmd
 0: kd> !idt
 
 Dumping IDT:
@@ -102,9 +98,9 @@ e3:806baca8 hal!HalpLocalApicErrorService
 fd:806bb460 hal!HalpProfileInterrupt
 ```
 
- 
+ 
 
- 
+ 
 
 
 

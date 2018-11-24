@@ -10,6 +10,7 @@ api_name:
 api_type:
 - NA
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # SP_MOVEDEV_PARAMS
@@ -19,9 +20,9 @@ This structure is obsolete.
 
 This structure is associated with the [**DIF_MOVEDEVICE**](dif-movedevice.md) request, which is obsolete and cannot be used with any version of Microsoft Windows.
 
- 
+ 
 
- 
+ 
 
 
 

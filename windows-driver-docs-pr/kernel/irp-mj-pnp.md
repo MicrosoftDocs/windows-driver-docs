@@ -1,12 +1,7 @@
 ---
 title: IRP_MJ_PNP
-author: windows-driver-content
 description: All drivers must be prepared to service IRP_MJ_PNP requests in a DispatchPnP routine.
-ms.author: windowsdriverdev
 ms.date: 08/12/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.assetid: db838761-b838-44fd-bc77-c9d55d2c4a41
 keywords:
  - IRP_MJ_PNP Kernel-Mode Driver Architecture
@@ -59,9 +54,9 @@ Requirements
 
 [*DispatchPnP*](https://msdn.microsoft.com/library/windows/hardware/ff543341)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: Bluetooth Core Driver Layer and Supported Power Transitions
 description: The following table summarizes device and system power states that the Bluetooth core driver supports.
 ms.assetid: 25A3598E-51A7-4B16-92F7-9D2F39177946
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,7 +22,7 @@ The following table summarizes device and system power states that the Bluetooth
         <td></td>
         <td>D0 (Active)</td>
         <td>D2 (sleep) – some power is maintained to the Bluetooth chip for persisting its internal state</td>
-        <td>D3 (Off) - Power is removed (\*)</td>
+        <td>D3 (Off) - Power is removed (*)</td>
     </tr>
     <tr>
         <td rowspan="6"><b>System power states</b></td>
@@ -68,12 +64,6 @@ The following table summarizes device and system power states that the Bluetooth
 </table>
 
 
-<<<<<<< HEAD
-
-
- 
-=======
->>>>>>> master
 
 \*Re-initialization by Bluetooth core driver is required since power is lost to the Bluetooth chip
 
@@ -125,9 +115,9 @@ The system is off, and the Bluetooth radio is assumed to be off or in a low powe
 
 Going forward, Radio Management (RM) will be standardized for Bluetooth 4.0 radios. The Bluetooth stack will send down an HCI\_RESET command, which the radio is expected to respond by putting the radio in no transmission mode and the device in D3 power state. The stack will then surprise remove all child devnodes, effectively putting the radio in "airplane" mode. The serial bus driver will stay loaded while in the Radio off state, so it can receive a request from the stack to turn the radio back on. The inbox stack will handle the re-enumeration of devnodes. For more details on implementation of radio management, please refer to the [Bluetooth Software Radio Switch Function Prototypes](https://msdn.microsoft.com/library/windows/hardware/hh450832).
 
- 
+ 
 
- 
+ 
 
 
 

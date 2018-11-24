@@ -3,11 +3,7 @@ title: usb3kd.hub_info
 description: The usb3kd.device_info command displays information about a hub in the USB 3.0 tree.
 ms.assetid: B46B48C1-C14A-410D-9C34-F8AB1640682C
 keywords: ["usb3kd.hub_info Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The [**!usb3kd.device\_info**](-usb3kd-device-info.md) command displays information about a hub in the [USB 3.0 tree](usb-3-extensions.md#usb-3-tree).
 
-```
+```dbgcmd
 !usb3kd.hub_info DeviceExtension
 ```
 
@@ -42,7 +38,7 @@ Examples
 
 To obtain the address of the device extension, look at the output of the [**!usb\_tree**](-usb3kd-usb-tree.md) command. In the following example, the address of the device extension for the root hub is 0xfffffa8005ad92d0.
 
-```
+```dbgcmd
 3: kd> !usb_tree
 
 ## Dumping HUB Tree - !drvObj 0xfffffa800597f770
@@ -57,7 +53,7 @@ Topology
 
 Now you can pass the address of the device extension to the **!hub\_info** command.
 
-```
+```dbgcmd
 3: kd> !hub_info fffffa8005ad92d0 
 
 ## Dumping HUB Information fffffa8005ad92d0
@@ -102,11 +98,11 @@ Hub Event History:
 
 [**!usb3kd.hub\_info\_from\_fdo**](-usb3kd-hub-info-from-fdo.md)
 
-[Universal Serial Bus (USB) Drivers](http://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
- 
+ 
 
- 
+ 
 
 
 

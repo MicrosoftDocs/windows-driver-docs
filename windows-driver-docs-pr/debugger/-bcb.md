@@ -3,11 +3,7 @@ title: bcb
 description: The bcb extension displays the specified buffer control block.
 ms.assetid: 4e98e900-5e9d-40a4-9c39-4dc3611d8ea3
 keywords: ["cache manager", "bcb Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!bcb** extension displays the specified buffer control block.
 
-```
+```dbgcmd
 !bcb Address
 ```
 
@@ -51,7 +47,7 @@ Specifies the address of the buffer control block.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -64,9 +60,9 @@ Remarks
 
 This extension is available for Windows 2000 only. In Windows XP or later, use the [**dt nt!\_BCB Address**](dt--display-type-.md) command to display the buffer control block directly.
 
- 
+ 
 
- 
+ 
 
 
 

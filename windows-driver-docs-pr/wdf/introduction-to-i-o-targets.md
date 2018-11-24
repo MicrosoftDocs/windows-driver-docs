@@ -1,6 +1,5 @@
 ---
 title: Introduction to I/O Targets
-author: windows-driver-content
 description: Introduction to I/O Targets
 ms.assetid: 06ab7b3e-6b3e-4cfe-a7a6-17292300c472
 keywords:
@@ -13,11 +12,7 @@ keywords:
 - miniport drivers WDK KMDF
 - specialized I/O targets WDK KMDF
 - I/O targets WDK KMDF , types
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -44,9 +39,9 @@ The framework supports both *general I/O targets* and *specialized I/O targets*:
 
 If the framework provides specialized I/O targets that support your device's data format, your driver should use the specialized I/O targets. Otherwise, the driver should use general I/O targets.
 
- 
+ 
 
- 
+ 
 
 
 

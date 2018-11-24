@@ -1,13 +1,8 @@
 ---
 title: Hard-Coded UniDrv and PScript5 Features for XPSDrv
-author: windows-driver-content
 description: Hard-Coded UniDrv and PScript5 Features for XPSDrv
 ms.assetid: d2922bc4-83d7-40da-adee-15c0810f2321
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +23,9 @@ The hard-coded features are disabled in the following manner:
 
 The remaining topics in this section further describe the changes in Unidrv/PScript5-based XPSDrv in the preceding areas to disable hard-coded features.
 
- 
+ 
 
- 
+ 
 
 
 

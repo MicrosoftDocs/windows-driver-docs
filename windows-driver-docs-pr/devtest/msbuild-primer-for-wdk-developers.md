@@ -2,11 +2,7 @@
 title: MSBuild primer for WDK developers
 description: This section introduces some basic MSBuild terminology to WDK developers, who are familiar with Build.exe and NMake.exe. This section shows the construction of simple MSBuild projects.
 ms.assetid: EA223DF3-71FF-442F-B3E8-56C3B57F7B67
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -54,9 +50,9 @@ If you have worked with Build.exe and previous versions of the WDK (prior to WDK
 -   MSBuild has a number of [built-in properties](http://go.microsoft.com/fwlink/p/?linkid=236149) that you can also reference in a project file.
 -   For more information about MSBuild and build tasks, see [MSBuild Concepts](http://go.microsoft.com/fwlink/p/?linkid=236157) and [MSBuild Reference](http://go.microsoft.com/fwlink/p/?linkid=236161).
 
- 
+ 
 
- 
+ 
 
 
 

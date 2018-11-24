@@ -1,13 +1,8 @@
 ---
 title: OID_WWAN_MODEM_CONFIG_INFO
-author: windows-driver-content
 description: OID_WWAN_MODEM_CONFIG_INFO retrieves information about the modem configuration information.
 ms.assetid: 527B970C-09FC-4E49-A309-44D5C6A39778
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  - OID_WWAN_MODEM_CONFIG_INFO Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

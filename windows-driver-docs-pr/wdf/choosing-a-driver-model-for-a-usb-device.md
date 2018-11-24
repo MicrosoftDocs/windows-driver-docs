@@ -1,6 +1,5 @@
 ---
 title: Choosing a Driver Model for a USB Device
-author: windows-driver-content
 description: Choosing a Driver Model for a USB Device
 ms.assetid: 7272c491-bb41-4827-98be-17f1c784d2dd
 keywords:
@@ -10,11 +9,7 @@ keywords:
 - framework-based drivers WDK UMDF , USB devices
 - USB device WDK UMDF
 - USB device WDK UMDF , driver model
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,9 +19,9 @@ ms.localizationpriority: medium
 
 For information about how to determine what type of driver you need for your USB device, see [Choosing a driver model for developing a USB client driver](https://msdn.microsoft.com/library/windows/hardware/ff540215).
 
- 
+ 
 
- 
+ 
 
 
 

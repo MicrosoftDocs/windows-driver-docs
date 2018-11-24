@@ -2,11 +2,7 @@
 title: Copy flags to support PnP stop directive
 description: The Plug and Play (PnP) stop directive file section flag is required for the Windows Display Driver Model (WDDM) to support driver upgrades that don't require a reboot.
 ms.assetid: 0D78350C-52D9-49D5-817D-2672F4A1D41A
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -18,7 +14,7 @@ The Plug and Play (PnP) stop directive file section flag is required for the Win
 **Note**  
 This is required only for the user-mode driver binaries, not for the kernel-mode driver entry.
 
- 
+ 
 
 For example:
 
@@ -35,9 +31,9 @@ r200umd.dll,,,0x00004000             ; COPYFLG_IN_USE_TRY_RENAME
 r200umd2.dll,,,0x00004000           ; COPYFLG_IN_USE_TRY_RENAME
 ```
 
- 
+ 
 
- 
+ 
 
 
 

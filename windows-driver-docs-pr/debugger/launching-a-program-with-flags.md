@@ -3,11 +3,7 @@ title: Launching a Program with Flags
 description: Launching a Program with Flags
 ms.assetid: 81c0ac6a-3114-4b6a-b154-248801a07f8b
 keywords: ["GFlags, launching a program with flags"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,11 +34,11 @@ This feature runs a program once with the specified flags. These settings affect
 **Note**   Flags set in the registry do not affect the instance of the program that is launched.
 Flags set in the dialog box are used for the launched instance even when they are not image file flags.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -9,11 +9,7 @@ keywords:
 - battery class drivers WDK , notifications
 - canceling battery notifications
 - stopping battery notifications
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ ms.localizationpriority: medium
 
 A miniclass driver provides a [*BatteryMiniSetStatusNotify*](https://msdn.microsoft.com/library/windows/hardware/ff536277) routine so that the class driver can request notification of specific conditions. The routine is declared as follows:
 
-```
+```cpp
 typedef
 NTSTATUS
 (*BCLASS_SET_STATUS_NOTIFY)(
@@ -43,7 +39,7 @@ The *BatteryNotify* parameter contains a set of flags indicating the battery pow
 
 The class driver calls the [*BatteryMiniDisableStatusNotify*](https://msdn.microsoft.com/library/windows/hardware/ff536272) routine to cancel notification of battery status changes previously requested by BatteryMiniSetStatusNotify. This routine is declared as follows:
 
-```
+```cpp
 typedef
 NTSTATUS
 (*BCLASS_DISABLE_STATUS_NOTIFY)(
@@ -55,9 +51,9 @@ The *Context* parameter is a pointer to the context area allocated by the minicl
 
 Miniclass drivers can omit functionality for both routines and return STATUS\_NOT\_SUPPORTED. However, a miniclass driver that provides a *BatteryMiniSetStatusNotify* routine must provide a corresponding *BatteryMiniDisableStatusNotify* routine, and vice versa.
 
- 
+ 
 
- 
+ 
 
 
 

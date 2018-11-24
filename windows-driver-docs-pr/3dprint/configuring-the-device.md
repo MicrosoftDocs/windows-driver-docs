@@ -1,13 +1,8 @@
 ---
 title: Configuring the device
-author: windows-driver-content
 description: To configure the device, you should have a 3D printer device in the Devices and Printers Control Panel and can print to G-Code using the Microsoft Slicer.
 ms.assetid: 897081C3-47A4-46A0-9A45-A49E4569216D
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,9 +31,9 @@ For simplicity, edit the **MS3DPrinterDeviceConfig.xml** file as an **Administra
 
 Now you are ready to 3D print from an application like the 3D Builder app in Windows, or any store or desktop application that implements Windows native 3D printing.
 
- 
+ 
 
- 
+ 
 
 
 

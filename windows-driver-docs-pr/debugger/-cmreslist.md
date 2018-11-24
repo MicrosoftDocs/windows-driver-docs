@@ -3,11 +3,7 @@ title: cmreslist
 description: The cmreslist extension displays the CM_RESOURCE_LIST structure for the specified device object.
 ms.assetid: 56b48f62-c638-4082-95d7-5a0c62c94212
 keywords: ["CM_RESOURCE_LIST", "cmreslist Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!cmreslist** extension displays the CM\_RESOURCE\_LIST structure for the specified device object.
 
-```
+```dbgsyntax
 !cmreslist Address
 ```
 
@@ -51,15 +47,15 @@ Specifies the hexadecimal address of the CM\_RESOURCE\_LIST structure.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
 See [Plug and Play Debugging](plug-and-play-debugging.md) for applications of this extension command. For information about the CM\_RESOURCE\_LIST structure, see the Windows Driver Kit (WDK) documentation.
 
- 
+ 
 
- 
+ 
 
 
 

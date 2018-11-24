@@ -1,13 +1,8 @@
 ---
 title: Using KMDF Verifier
-author: windows-driver-content
 description: Using KMDF Verifier
 ms.assetid: ab6a0149-9341-435b-b7e7-9c5d6520ebd8
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -81,9 +76,9 @@ As a general rule, if you set the above registry values, delete them when they a
 
 For full descriptions of these registry values, see [Registry Values for Debugging Framework-based Drivers](registry-values-for-debugging-kmdf-drivers.md).
 
- 
+ 
 
- 
+ 
 
 
 

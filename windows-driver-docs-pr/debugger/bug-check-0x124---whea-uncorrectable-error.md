@@ -3,11 +3,7 @@ title: Bug Check 0x124 WHEA_UNCORRECTABLE_ERROR
 description: The WHEA_UNCORRECTABLE_ERROR bug check has a value of 0x00000124. This bug check indicates that a fatal hardware error has occurred. 
 ms.assetid: b3b7c6dd-3891-4ccb-96d1-49e8a2de34c8
 keywords: ["Bug Check 0x124 WHEA_UNCORRECTABLE_ERROR", "WHEA_UNCORRECTABLE_ERROR"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The WHEA\_UNCORRECTABLE\_ERROR bug check has a value of 0x00000124. This bug check indicates that a fatal hardware error has occurred. This bug check uses the error data that is provided by the Windows Hardware Error Architecture (WHEA).
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## WHEA\_UNCORRECTABLE\_ERROR Parameters
 
@@ -133,7 +129,7 @@ The WHEA\_UNCORRECTABLE\_ERROR bug check has a value of 0x00000124. This bug che
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -163,9 +159,9 @@ For more information see the following topics:
 
 This bug check is not supported in Windows versions prior to Windows Vista. Instead, machine check exceptions are reported through [**bug check 0x9C**](bug-check-0x9c--machine-check-exception.md).
 
- 
+ 
 
- 
+ 
 
 
 

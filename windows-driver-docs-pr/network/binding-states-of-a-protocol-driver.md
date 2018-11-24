@@ -9,11 +9,7 @@ keywords:
 - protocol bindings WDK networking
 - protocol drivers WDK networking , protocol bindings
 - NDIS protocol drivers WDK , protocol
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -73,9 +69,9 @@ In the *Restarting* state, a protocol driver completes any operations that are r
 
 [NDIS Protocol Drivers](ndis-protocol-drivers2.md)
 
- 
+ 
 
- 
+ 
 
 
 

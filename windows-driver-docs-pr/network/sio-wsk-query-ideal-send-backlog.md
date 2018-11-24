@@ -1,13 +1,8 @@
 ---
 title: SIO_WSK_QUERY_IDEAL_SEND_BACKLOG
-author: windows-driver-content
 description: SIO_WSK_QUERY_IDEAL_SEND_BACKLOG
 ms.assetid: 8d05b1dc-9dbf-4726-9eaf-721d1fb8282e
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - SIO_WSK_QUERY_IDEAL_SEND_BACKLOG Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -71,12 +66,6 @@ To query the ideal send backlog size for a connection-oriented socket, a WSK app
 </tbody>
 </table>
 
- 
-
-```
-
-```
-
 A WSK application must specify a pointer to an IRP when calling the **WskControlSocket** function to query the ideal send backlog size for a connection-oriented socket.
 
 A connection-oriented socket can be notified of changes to the ideal send backlog size by enabling its [*WskSendBacklogEvent*](https://msdn.microsoft.com/library/windows/hardware/ff571147) event callback function.
@@ -101,9 +90,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

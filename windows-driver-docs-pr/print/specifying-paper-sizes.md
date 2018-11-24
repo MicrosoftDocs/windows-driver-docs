@@ -1,6 +1,5 @@
 ---
 title: Specifying Paper Sizes
-author: windows-driver-content
 description: Specifying Paper Sizes
 ms.assetid: 81352d15-c446-4d61-91ad-0c22d69da8ed
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - paper sizes WDK Unidrv
 - size WDK paper
 - Unidrv WDK print
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,9 +33,9 @@ User-defined paper sizes (also called customized paper sizes) are defined by sys
 
 For information about how to use the system locale to specify a default paper size, see [Referencing Locales](referencing-locales.md).
 
- 
+ 
 
- 
+ 
 
 
 

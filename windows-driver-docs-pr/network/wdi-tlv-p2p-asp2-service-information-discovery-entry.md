@@ -1,13 +1,8 @@
 ---
 title: WDI_TLV_P2P_ASP2_SERVICE_INFORMATION_DISCOVERY_ENTRY
-author: windows-driver-content
 description: WDI_TLV_P2P_ASP2_SERVICE_INFORMATION_DISCOVERY_ENTRY is a TLV that contains an ASP2 Service Information Discovery Entry.
 ms.assetid: 67F1CDE2-8003-44D3-B338-FE7C5EA48C29
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_ASP2_SERVICE_INFORMATION_DISCOVERY_ENTRY Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -20,7 +15,7 @@ WDI\_TLV\_P2P\_ASP2\_SERVICE\_INFORMATION\_DISCOVERY\_ENTRY is a TLV that contai
 
 **Note**  This TLV was added in Windows 10, version 1607, WDI version 1.0.21.
 
- 
+ 
 
 ## TLV Type
 
@@ -43,7 +38,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 | [**WDI\_TLV\_P2P\_SERVICE\_UPDATE\_INDICATOR**](wdi-tlv-p2p-service-update-indicator.md) |                                | X        | Service Update indicator to be used for the ANQP query request.                                                     |
 | [**WDI\_TLV\_P2P\_SERVICE\_TRANSACTION\_ID**](wdi-tlv-p2p-service-transaction-id.md)     |                                | X        | Service transaction ID to be used for the ANQP query request.                                                       |
 
- 
+ 
 
 Requirements
 ------------
@@ -69,9 +64,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

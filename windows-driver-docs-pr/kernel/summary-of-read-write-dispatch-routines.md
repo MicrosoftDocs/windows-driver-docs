@@ -1,14 +1,9 @@
 ---
 title: Summary of Read/Write Dispatch Routines
-author: windows-driver-content
 description: Summary of Read/Write Dispatch Routines
 ms.assetid: 2ab1cde7-89e8-449f-b2a0-12aa0762ebf3
 keywords: ["DispatchRead routine", "DispatchWrite routine", "DispatchReadWrite routine", "dispatch routines WDK kernel , DispatchReadWrite routine", "dispatch routines WDK kernel , DispatchWrite routine", "dispatch routines WDK kernel , DispatchRead routine", "read/write dispatch routines WDK kernel", "IRP_MJ_WRITE I/O function codes", "IRP_MJ_READ I/O function codes", "data transfers WDK kernel , read/write dispatch routines", "transferring data WDK kernel , read/write dispatch routines"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,9 +37,9 @@ Keep the following points in mind when implementing a [*DispatchRead*](https://m
 
 -   If a higher-level driver allocates IRPs for lower drivers that might include an underlying removable-media device driver, the allocating driver must establish the thread context in each IRP it allocates.
 
- 
+ 
 
- 
+ 
 
 
 

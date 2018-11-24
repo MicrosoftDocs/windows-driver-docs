@@ -9,11 +9,7 @@ api_name:
 - KSEVENT_CLOCK_POSITION_MARK
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +27,9 @@ Remarks
 
 For information about how to register for events, see [KS Events](https://msdn.microsoft.com/library/windows/hardware/ff567643).
 
- 
+ 
 
- 
+ 
 
 
 

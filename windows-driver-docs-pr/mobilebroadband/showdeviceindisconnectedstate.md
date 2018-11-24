@@ -2,11 +2,7 @@
 title: ShowDeviceInDisconnectedState
 description: ShowDeviceInDisconnectedState
 ms.assetid: f2f517dd-68e5-4013-83ee-777579562db3
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -56,13 +52,13 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[WindowsInfo](windowsinfo.md)</p></td>
-<td><p>The parent element of the [WindowsInfo XML schema](windowsinfo-xml-schema.md).</p></td>
+<td><p><a href="windowsinfo.md" data-raw-source="[WindowsInfo](windowsinfo.md)">WindowsInfo</a></p></td>
+<td><p>The parent element of the <a href="windowsinfo-xml-schema.md" data-raw-source="[WindowsInfo XML schema](windowsinfo-xml-schema.md)">WindowsInfo XML schema</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="XSD"></span><span id="xsd"></span>XSD
 
@@ -76,9 +72,9 @@ There are no child elements.
 
 The ShowDeviceInDisconnectedState element is required.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,11 +3,7 @@ title: Extensions for Debugging Plug and Play Drivers
 description: Extensions for Debugging Plug and Play Drivers
 ms.assetid: 0b60c4ce-5c2d-4cce-a1e6-8275186aa147
 keywords: ["Plug and Play (PnP), extensions", "extensions, plug and play"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,7 +22,7 @@ You must know the address of the CM Resource List.
 
 Here is an example:
 
-```
+```dbgcmd
 kd> !cmreslist 0xe12576e8
 
 CmResourceList at 0xe12576e8  Version 0.0  Interface 0x1  Bus #0
@@ -53,7 +49,7 @@ Device node 0 (zero) is the root of the device tree.
 
 Here is an example:
 
-```
+```dbgcmd
 0: kd> !devnode 0xfffffa8003634af0
 DevNode 0xfffffa8003634af0 for PDO 0xfffffa8003658590
   Parent 0xfffffa8003604010   Sibling 0xfffffa80036508e0   Child 0000000000
@@ -81,7 +77,7 @@ Displays detailed information about a DEVICE\_OBJECT.
 
 Here is an example:
 
-```
+```dbgcmd
 kd> !devobj 0xff0d4af0
 
 Device object (ff0d4af0) is for:
@@ -102,7 +98,7 @@ Lists all the device objects created by the specified driver.
 
 Here is an example:
 
-```
+```dbgcmd
 kd> !drvobj serial
 
 Driver object (ff0ba630) is for:
@@ -135,7 +131,7 @@ Displays information about all IRPs currently allocated in the target system, or
 
 The following example displays the devices on the primary bus:
 
-```
+```dbgcmd
 kd> !pci
 PCI Bus 0
 00:0  8086:1237.02  Cmd[0106:.mb..s]  Sts[2280:.....]  Device  Host bridge
@@ -168,7 +164,7 @@ PCI Bus 1
 
 The following example displays the PCI configuration space for the SCSI controller (bus 1, device 9, function 0):
 
-```
+```dbgcmd
 kd> !pci 100 1 9 0 
 00: 9004    ;VendorID=9004
 02: 8178    ;DeviceID=8178
@@ -216,9 +212,9 @@ Displays the PnP device event queue.
 [**!rellist**](-rellist.md)  
 Displays a PnP relation list and any related CM\_RESOURCE\_LIST and IO\_RESOURCE\_LIST structures.
 
- 
+ 
 
- 
+ 
 
 
 

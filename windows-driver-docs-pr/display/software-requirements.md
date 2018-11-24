@@ -2,11 +2,7 @@
 title: Direct3D software requirements in Windows 8
 description: This topic describes software requirements to support Microsoft Direct3D in Windows 8.
 ms.assetid: EB9AB15A-4E47-48AE-AE39-6051F8FC39A8
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -74,7 +70,7 @@ For example, Microsoft Direct3D 9-capable hardware must, at minimum, support th
 </tbody>
 </table>
 
- 
+ 
 
 The following tables describe the functionality that's exposed by using user-mode driver (UMD) DDI changes in Windows 8.
 
@@ -85,7 +81,7 @@ The following tables describe the functionality that's exposed by using user-mod
 | Required  | No overwrite and discard |
 | Required  | Tileable copy flag       |
 
- 
+ 
 
 **D3D11.1 - UMD DDI exposes the following new features in Windows 8 across feature levels 10, 10.1, 11, and 11.1**
 
@@ -103,7 +99,7 @@ The following tables describe the functionality that's exposed by using user-mod
 | Required       | Improved resource sharing                                                          |
 | Required       | SampleCount=1 (limited Target-independent rasterization (TIR) on 10, 10.1, and 11) |
 
- 
+ 
 
 **D3D11.1 - UMD DDI exposes the following new features for feature level 11 & 11.1**
 
@@ -113,7 +109,7 @@ The following tables describe the functionality that's exposed by using user-mod
 | If Implemented | Double-precision shader functionality     |
 | Required       | Masked sum of absolute differences (MSAD) |
 
- 
+ 
 
 **D3D11.1 - UMD DDI exposes the following new features for feature level 11.1**
 
@@ -123,11 +119,11 @@ The following tables describe the functionality that's exposed by using user-mod
 | Required  | UAV-MSAA (at 16 samples) |
 | Required  | TIR                      |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

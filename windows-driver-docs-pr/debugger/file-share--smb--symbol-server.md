@@ -2,11 +2,7 @@
 title: File Share (SMB) Symbol Server
 description: Running a SMB Symbol Server is simply a matter of creating a file share and granting users access to that file share.
 ms.assetid: C5CF9665-9289-48EB-AA12-8881F812488A
-ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -79,7 +75,7 @@ Complete these steps using Computer Management:
 
 Configure a debugger to use this symbol path:
 
-```
+```text
 srv*C:\Symbols*\\MachineName\Symbols
 ```
 
@@ -92,19 +88,19 @@ There are multiples ways to configure your debugger’s symbol path (.sympath) t
 
 Direct File Share use (no local caching):
 
-```
+```text
 srv*\\MachineName\Symbols
 ```
 
 Local Caching of the File Share’s files to a particular local folder (e.g. c:\\Symbols):
 
-```
+```text
 srv*c:\Symbols*\\MachineName\Symbols
 ```
 
 Local Caching of the File Share’s files to the %DBGHELP\_HOMEDIR%\\Sym folder:
 
-```
+```text
 srv**\\MachineName\Symbols
 ```
 
@@ -117,9 +113,9 @@ If the DBGHELP\_HOMEDIR variable is not set, DBGHELP\_HOMEDIR defaults to the de
 
 [Symbol Store Folder Tree](symbol-store-folder-tree.md)
 
- 
+ 
 
- 
+ 
 
 
 

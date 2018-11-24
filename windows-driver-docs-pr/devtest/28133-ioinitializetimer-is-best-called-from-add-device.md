@@ -5,11 +5,7 @@ ms.assetid: c832cf67-1fc2-491b-a9e3-d35c5d9f6b73
 keywords:
 - warnings listed WDK PREfast for Drivers
 - errors listed WDK PREfast for Drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,13 +27,13 @@ warning C28133: IoInitializeTimer is best called from AddDevice
 </tbody>
 </table>
 
- 
+ 
 
 The driver is calling [**IoInitializeTimer**](https://msdn.microsoft.com/library/windows/hardware/ff549344) in a routine other than its **AddDevice** routine. The Code Analysis tool is using this opportunity to suggest a best practice recommendation that can prevent errors and make the driver code more reliable.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,11 +3,7 @@ title: The dbgeng.h Header File
 description: This topic describes the dbgeng.h Header File. Routines in the dbgeng.h header file are used to write DbgEng extensions.
 ms.assetid: a1328e9a-2910-4446-938d-1b2d1434ff10
 keywords: DbgEng API, dbgeng.h header file, dbgeng.h
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,9 +19,9 @@ For details on the dbgeng.h header file and information about how to write debug
 
 For information about how to write debugger extensions, see [Writing DbgEng Extensions](writing-dbgeng-extensions.md) and [Using the Debugger Engine API](using-the-debugger-engine-api.md).
 
- 
+ 
 
- 
+ 
 
 
 

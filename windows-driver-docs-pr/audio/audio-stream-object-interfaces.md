@@ -2,11 +2,7 @@
 title: Audio Stream Object Interfaces
 description: Audio Stream Object Interfaces
 ms.assetid: 9d68016a-ddb1-4fbb-b6cc-384f8c76552c
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -60,9 +56,9 @@ Handles wave output for a DirectMusic synthesizer device. Implemented by a DMus 
 
 [ISynthSinkDMus](https://msdn.microsoft.com/library/windows/hardware/ff537011)
 
- 
+ 
 
- 
+ 
 
 
 

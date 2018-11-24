@@ -3,11 +3,7 @@ title: poolval
 description: The poolval extension analyzes the headers for a pool page and diagnoses any possible corruption. This extension is only available in Windows XP and later versions.
 ms.assetid: b67ab2d4-c765-4721-81ed-c6b7c9a0ba6d
 keywords: ["poolval Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!poolval** extension analyzes the headers for a pool page and diagnoses any possible corruption. This extension is only available in Windows XP and later versions.
 
-```
+```dbgcmd
 !poolval Address [DisplayLevel]
 ```
 
@@ -66,15 +62,15 @@ Causes basic information, linked header lists, and full header information to be
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
 For information about memory pools, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals*, by Mark Russinovich and David Solomon. (These resources may not be available in some languages and countries.)
 
- 
+ 
 
- 
+ 
 
 
 

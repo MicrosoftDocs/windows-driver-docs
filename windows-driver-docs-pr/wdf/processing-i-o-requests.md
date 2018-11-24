@@ -1,17 +1,12 @@
 ---
 title: Processing I/O Requests
-author: windows-driver-content
 description: Processing I/O Requests
 ms.assetid: 90b1cc51-da40-45c1-9d6c-57f637f474d9
 keywords:
 - I/O requests WDK KMDF , processing
 - request objects WDK KMDF , processing I/O requests
 - request processing WDK KMDF , options
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +28,9 @@ When a driver [receives](receiving-i-o-requests.md) an I/O request, it can:
 
 The driver cannot ignore or delete the request.
 
- 
+ 
 
- 
+ 
 
 
 

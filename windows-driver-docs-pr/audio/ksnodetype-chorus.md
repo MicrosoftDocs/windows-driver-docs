@@ -9,11 +9,7 @@ api_name:
 - KSNODETYPE_CHORUS
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +29,9 @@ A KSNODETYPE\_CHORUS node should support the following required properties:
 
 [**KSPROPERTY\_AUDIO\_CHORUS\_MODULATION\_RATE**](ksproperty-audio-chorus-modulation-rate.md)
 
- 
+ 
 
- 
+ 
 
 
 

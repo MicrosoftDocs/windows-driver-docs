@@ -1,13 +1,8 @@
 ---
 title: OID_PNP_CAPABILITIES
-author: windows-driver-content
 description: The OID_PNP_CAPABILITIES OID requests a miniport driver to return the wake-up capabilities of its network adapter or requests an intermediate driver to return the intermediate driver's wake-up capabilities.
 ms.assetid: f2e3a867-d7d2-4d09-b84b-e8f8610b8535
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_PNP_CAPABILITIES Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -18,12 +13,11 @@ ms.localizationpriority: medium
 
 The OID\_PNP\_CAPABILITIES OID requests a miniport driver to return the wake-up capabilities of its network adapter or requests an intermediate driver to return the intermediate driver's wake-up capabilities. The wake-up capabilities are formatted as an **NDIS\_PNP\_CAPABILITIES** structure, which is defined as follows:
 
-```ManagedCPlusPlus
+```C++
     typedef struct _NDIS_PNP_CAPABILITIES {
          ULONG Flags;
          NDIS_PM_WAKE_UP_CAPABILITIES WakeUpCapabilities;
-    } NDIS_PNP_CAPABILITIES, *PNDIS_PNP_CAPABILITIES;
-  
+    } NDIS_PNP_CAPABILITIES, *PNDIS_PNP_CAPABILITIES;  
 ```
 
 
@@ -39,7 +33,7 @@ NDIS sets this flag if the underlying miniport driver supports one or more wake-
 <a href="" id="wakeupcapabilities"></a>**WakeUpCapabilities**  
 An **NDIS\_PM\_WAKE\_UP\_CAPABILITIES** structure that specifies the wake-up capabilities of the miniport driver's network adapter. The **NDIS\_PM\_WAKE\_UP\_CAPABILITIES** structure is defined as follows:
 
-```
+```C++
 typedef struct _NDIS_PM_WAKE_UP_CAPABILITIES {
          NDIS_DEVICE_POWER_STATE MinMagicPacketWakeUp;
          NDIS_DEVICE_POWER_STATE MinPatternWakeUp;
@@ -114,7 +108,7 @@ If the underlying network adapter is not PM-aware, the intermediate driver shoul
 
 **Note**  For information about how NDIS 6.20 and later miniport drivers report power management capabilities, see [Reporting Power Management Capabilities](https://msdn.microsoft.com/library/windows/hardware/ff570672).
 
- 
+ 
 
 Requirements
 ------------
@@ -127,7 +121,7 @@ Requirements
 <tbody>
 <tr class="odd">
 <td><p>Version</p></td>
-<td><p>Supported in NDIS 6.0 and NDIS 6.1. For NDIS 6.20 and later, use [OID_PM_CURRENT_CAPABILITIES](oid-pm-current-capabilities.md) instead.</p></td>
+<td><p>Supported in NDIS 6.0 and NDIS 6.1. For NDIS 6.20 and later, use <a href="oid-pm-current-capabilities.md" data-raw-source="[OID_PM_CURRENT_CAPABILITIES](oid-pm-current-capabilities.md)">OID_PM_CURRENT_CAPABILITIES</a> instead.</p></td>
 </tr>
 <tr class="even">
 <td><p>Header</p></td>
@@ -153,9 +147,9 @@ Requirements
 
 [Reporting Power Management Capabilities](https://msdn.microsoft.com/library/windows/hardware/ff570672)
 
- 
+ 
 
- 
+ 
 
 
 

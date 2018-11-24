@@ -4,11 +4,7 @@ description: Specify AutoPlay Handler and options in the Device Metadata Authori
 ms.assetid: 7604E8D4-BCBB-45C4-9510-3860304CE7C8
 keywords:
 - Specify AutoPlay Handler and options in the Device Metadata Authoring Wizard
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -40,11 +36,11 @@ To define an AutoPlay Handler for a device, select from the following options un
 -   To define an AutoPlay Handler for a desktop app, fill out the fields under **Desktop AutoPlay Handler**.
     **Note**  You can't define both AutoPlay Handler and Desktop AutoPlay Handler.
 
-     
+     
 
- 
+ 
 
- 
+ 
 
 
 

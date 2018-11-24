@@ -10,6 +10,7 @@ api_name:
 api_type:
 - NA
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # legacyMode XML Element
@@ -21,7 +22,7 @@ The **legacyMode** XML element is an empty element that sets the **legacyMode** 
 
 **Element Tag**
 
-```
+```cpp
 <legacyMode>
 ```
 
@@ -39,7 +40,7 @@ None
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Parent elements</strong></p></td>
-<td align="left"><p>[<strong>dpinst</strong>](dpinst-xml-element.md)</p></td>
+<td align="left"><p><a href="dpinst-xml-element.md" data-raw-source="[&lt;strong&gt;dpinst&lt;/strong&gt;](dpinst-xml-element.md)"><strong>dpinst</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Child elements</strong></p></td>
@@ -56,7 +57,7 @@ None
 </tbody>
 </table>
 
- 
+ 
 
 **Remarks**
 
@@ -64,7 +65,7 @@ By default, DPInst installs only signed [driver packages](https://msdn.microsoft
 
 The following code example demonstrates a **legacyMode** element.
 
-```
+```cpp
 <dpinst>
   ...
   <legacyMode/>
@@ -77,9 +78,9 @@ The following code example demonstrates a **legacyMode** element.
 
 [**dpinst**](dpinst-xml-element.md)
 
- 
+ 
 
- 
+ 
 
 
 

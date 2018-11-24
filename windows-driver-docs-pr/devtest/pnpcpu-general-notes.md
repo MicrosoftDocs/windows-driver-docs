@@ -2,11 +2,7 @@
 title: PNPCPU General Notes
 description: PNPCPU General Notes
 ms.assetid: 7b74ac26-8aeb-495d-af8a-1a3b33eec1fa
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +25,9 @@ The PNPCPU directory should contain:
 
 No specific path settings are required to run the PNPCPU tool, although it is required that Pnpcpu.exe be run from a directory that contains all of the files listed above.
 
- 
+ 
 
- 
+ 
 
 
 

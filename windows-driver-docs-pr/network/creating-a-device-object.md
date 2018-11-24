@@ -9,11 +9,7 @@ keywords:
 - device objects WDK Windows Filtering Platform
 - WDM-based callout drivers WDK Windows Filtering Platform
 - WDF-based callout drivers WDK Windows Filtering Platform
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,7 +22,7 @@ A callout driver must create a device object before it can register its callouts
 
 If a callout driver is based on WDM, it creates a device object by calling the [**IoCreateDevice**](https://msdn.microsoft.com/library/windows/hardware/ff548397) function. For example:
 
-```
+```C++
 PDEVICE_OBJECT deviceObject;
 
 NTSTATUS
@@ -61,7 +57,7 @@ NTSTATUS
 
 If a callout driver is based on WDF, it creates a framework device object by calling the [**WdfDeviceCreate**](https://msdn.microsoft.com/library/windows/hardware/ff545926) function. To register its callouts with the filter engine, a WDF-based callout driver must obtain a pointer to the WDM device object that is associated with the framework device object. A WDF-based callout driver obtains a pointer to this WDM device object by calling the [**WdfDeviceWdmGetDeviceObject**](https://msdn.microsoft.com/library/windows/hardware/ff546942) function. For example:
 
-```
+```C++
 WDFDEVICE wdfDevice;
 
 NTSTATUS
@@ -117,9 +113,9 @@ NTSTATUS
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

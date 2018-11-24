@@ -1,14 +1,9 @@
 ---
 title: Failure to Validate Object Handles
-author: windows-driver-content
 description: Failure to Validate Object Handles
 ms.assetid: 67d52ca8-4e86-4fe2-a541-f7a0e4040b93
 keywords: ["reliability WDK kernel , object handle validation", "validation failures WDK kernel", "object handles WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,7 +17,7 @@ Some drivers must manipulate objects passed to them by callers or must handle tw
 
 For example, in the following code snippet, the driver has been passed the handle **AscInfo-&gt;AddressHandle**, but has not validated it before calling [**ObReferenceObjectByHandle**](https://msdn.microsoft.com/library/windows/hardware/ff558679):
 
-```
+```cpp
    //
    // This handle is embedded in a buffered request.
    //
@@ -43,7 +38,7 @@ Although the call to **ObReferenceObjectByHandle** succeeds, the code fails to e
 
 Even if all the parameters for the call to **ObReferenceObjectByHandle** are correct, and the call succeeds, a driver can still get unexpected results if the file object is not intended for its driver. In the following code fragment, the driver assumes that a successful call returns a pointer to the file object it expected:
 
-```
+```cpp
    status = ObReferenceObjectByHandle (
                              AcpInfo->Handle,
                              0L,
@@ -75,9 +70,9 @@ To avoid such problems, a driver should check for valid data, as follows:
 
 -   If your driver supports multiple kinds of file objects (such as the control channels, address objects, and connections of TDI drivers or Volume, Directory, and File objects of file systems), make sure you have a way to differentiate them.
 
- 
+ 
 
- 
+ 
 
 
 

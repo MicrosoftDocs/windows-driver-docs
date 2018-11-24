@@ -1,14 +1,9 @@
 ---
 title: Standard Driver Routine Requirements
-author: windows-driver-content
 description: Standard Driver Routine Requirements
 ms.assetid: 49b382ad-c282-41d2-b8b3-68eca4e12b9c
 keywords: ["standard driver routines WDK kernel , requirements", "driver routines WDK kernel , requirements", "routines WDK kernel , requirements"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +29,9 @@ Keep the following points in mind when designing a kernel-mode driver:
 
 -   Whether a driver has any other kind of standard routine depends on its functionality and on how that driver fits into the system (for example, whether it interoperates with system-supplied drivers). See the device-type specific documentation in the WDK for details.
 
- 
+ 
 
- 
+ 
 
 
 

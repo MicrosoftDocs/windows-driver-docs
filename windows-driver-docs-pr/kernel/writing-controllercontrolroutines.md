@@ -1,14 +1,9 @@
 ---
 title: Writing ControllerControl Routines
-author: windows-driver-content
 description: Writing ControllerControl Routines
 ms.assetid: 9330e0ff-c4bb-4aa6-985e-ef89791f74df
 keywords: ["controller objects WDK kernel , writing ControllerControl routines", "ControllerControl routines, writing"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,11 +21,11 @@ When a driver calls [**IoAllocateController**](https://msdn.microsoft.com/librar
 
 **Note**  WDM drivers cannot use controller objects and *ControllerControl* routines.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

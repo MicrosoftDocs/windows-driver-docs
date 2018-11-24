@@ -4,11 +4,7 @@ description: Code integrity checks for Driver Verifier
 ms.assetid: ad6c4762-354d-446d-bcda-a2e99c37c589
 keywords:
 - Code integrity checks for Driver Verifier
-ms.author: windowsdriverdev
-ms.date: 
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 09/14/2017 
 ms.localizationpriority: medium
 ---
 
@@ -24,24 +20,23 @@ ms.localizationpriority: medium
   <tr>
     <td>0x2000:
         <ul>
-            <li>2 - The address in the driver's code where the error was detected.</li>
+            <li>2 - The address in the driver&#39;s code where the error was detected.</li>
             <li>3 - Pool Type.</li>
             <li>4 - Pool Tag (if provided).</li>
-        </ul>  
-    </td>
+        </ul><br/>    </td>
     <td>The caller specified an executable pool type. (Expected: NonPagedPoolNx)</td>
   </tr>
   <tr>
     <td>0x2001:
-        <ul><li>2 - The address in the driver's code where the error was detected.</li>
+        <ul><li>2 - The address in the driver&#39;s code where the error was detected.</li>
         <li>3 - Page Protection (WIN32_PROTECTION_MASK).
     </td>
     <td>The caller specified an executable page protection. (Expected: cleared PAGE_EXECUTE* bits)</td>
   </tr>
   <tr>
     <td>0x2002:
-        <ul><li>2 - The address in the driver's code where the error was detected.</li>
-            <li>3 - Page Priority (MM_PAGE_PRIORITY logically OR'd with MdlMapping*).</li></ul>
+        <ul><li>2 - The address in the driver&#39;s code where the error was detected.</li>
+            <li>3 - Page Priority (MM_PAGE_PRIORITY logically OR&#39;d with MdlMapping*).</li></ul>
     </td>
     <td>The caller specified an executable MDL mapping. (Expected: MdlMappingNoExecute).</td>
   </tr>
@@ -78,7 +73,7 @@ You can activate port/miniport interface checking for one or more drivers by usi
 * **At the command line**
 
     At the command line, the port miniport interface checking is represented by **0x02000000 (Bit 25)**. For example:
-    
+
     `verifier /flags 0x02000000 /driver MyDriver.sys`
 
     The feature will be active after the next boot.

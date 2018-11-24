@@ -2,11 +2,7 @@
 title: ProvisioningEngine
 description: ProvisioningEngine
 ms.assetid: b6b10145-d554-43be-8682-1355145b3241
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -48,13 +44,13 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[TrustedCertificates](trustedcertificates.md)</p></td>
+<td><p><a href="trustedcertificates.md" data-raw-source="[TrustedCertificates](trustedcertificates.md)">TrustedCertificates</a></p></td>
 <td><p>Specifies the trusted certificates.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Parent_elements"></span><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Parent elements
 
@@ -72,13 +68,13 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[MobileBroadbandInfo](mobilebroadbandinfo.md)</p></td>
-<td><p>The [MobileBroadbandInfo](mobilebroadbandinfo.md) element is the parent element of the [MobileBroadbandInfo XML schema](mobilebroadbandinfo-xml-schema.md).</p></td>
+<td><p><a href="mobilebroadbandinfo.md" data-raw-source="[MobileBroadbandInfo](mobilebroadbandinfo.md)">MobileBroadbandInfo</a></p></td>
+<td><p>The <a href="mobilebroadbandinfo.md" data-raw-source="[MobileBroadbandInfo](mobilebroadbandinfo.md)">MobileBroadbandInfo</a> element is the parent element of the <a href="mobilebroadbandinfo-xml-schema.md" data-raw-source="[MobileBroadbandInfo XML schema](mobilebroadbandinfo-xml-schema.md)">MobileBroadbandInfo XML schema</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="XSD"></span><span id="xsd"></span>XSD
 
@@ -103,9 +99,9 @@ There are no attributes.
 
 The ProvisioningEngine element is optional.
 
- 
+ 
 
- 
+ 
 
 
 

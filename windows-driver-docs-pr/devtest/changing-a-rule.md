@@ -5,11 +5,7 @@ ms.assetid: 7415ee62-90b9-4fa0-ae94-438e60c713e4
 keywords:
 - filtering trace messages, changing rules WDK
 - trace message filters WDK , changing rules
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +26,9 @@ To change a rule in a filter:
 
 If you have saved the rule in a [workspace](using-traceview-workspaces.md), you must [resave the workspace](saving-or-resaving-a-workspace.md) after changing the rule. Otherwise, the original rule remains in the workspace.
 
- 
+ 
 
- 
+ 
 
 
 

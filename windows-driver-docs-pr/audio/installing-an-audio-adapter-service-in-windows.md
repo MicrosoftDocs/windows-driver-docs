@@ -7,11 +7,7 @@ keywords:
 - adapter drivers WDK audio , service installations
 - Port Class audio adapters WDK , service installations
 - adapter services WDK audio
-ms.author: windowsdriverdev
 ms.date: 10/26/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,7 +15,7 @@ ms.localizationpriority: medium
 
 The following [**INF AddService directive**](https://msdn.microsoft.com/library/windows/hardware/ff546326) installs the adapter driver Xyzaud.sys for the XYZ Audio Device:
 
-```
+```cpp
   [XYZ-Audio-Device.Services.NTX86]
   AddService = XYZ-Audio-Device, 0x00000002, XYZ-Audio-Device.Service.Install
 
@@ -31,9 +27,9 @@ The following [**INF AddService directive**](https://msdn.microsoft.com/library/
   ServiceBinary = %12%\system32\drivers\xyzaud.sys
 ```
 
- 
+ 
 
- 
+ 
 
 
 

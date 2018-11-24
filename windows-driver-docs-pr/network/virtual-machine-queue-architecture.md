@@ -2,11 +2,7 @@
 title: Virtual Machine Queue Architecture
 description: Virtual Machine Queue Architecture
 ms.assetid: 7aa8c9a4-1bb2-48a5-be28-9806e16d4e94
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,9 +32,9 @@ This section includes the following topics:
 
 [NDIS VM Queue States](ndis-virtual-machine-queue-states.md)
 
- 
+ 
 
- 
+ 
 
 
 

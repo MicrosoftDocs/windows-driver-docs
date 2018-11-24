@@ -5,11 +5,7 @@ ms.assetid: 0f06a709-11dc-4407-a230-85a689fb46a2
 keywords:
 - Direct3D WDK Windows 2000 display , w-buffering
 - w-buffering WDK Direct3D
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -50,7 +46,7 @@ Typically, the hardware stores a floating-point value in the buffer. The followi
 </tbody>
 </table>
 
- 
+ 
 
 Conventional z-buffering was developed for the technical markets that use CAD or authoring tools, in which the viewing volume/workspace is of known and limited extent. The range of depth values stored can therefore be of limited extent, allowing the ratio of far/near (the distances to the far and near clip planes) to be on the order of two to ten.
 
@@ -58,9 +54,9 @@ Typical hardware designed for such applications iterates perspective-correct z a
 
 By contrast, when *w* (or eye-relative *z*) is used, the buffer bits can be more evenly allocated between the near and far clip planes in world space. The key benefit is that the ratio of far to near is no longer an issue, allowing applications to support a maximum range of miles, yet still get reasonably accurate depth buffering within inches of the eye point.
 
- 
+ 
 
- 
+ 
 
 
 

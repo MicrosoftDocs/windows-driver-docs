@@ -1,12 +1,7 @@
 ---
 Description: This section describes the generic WinUSB driver (Winusb.sys) and its user-mode component (Winusb.dll) provided by Microsoft for all USB devices.
 title: WinUSB (Winusb.sys)
-author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -49,7 +44,7 @@ The following table summarizes WinUSB support in different versions of Windows.
 | Windows XP           | Yes³           |
 | Windows 2000         | No             |
 
- 
+ 
 
 **Note**  
 Yes¹: All SKUs of this version of Windows support WinUSB on x86-based, x64-based, and Itanium-based systems.
@@ -60,7 +55,7 @@ Yes³: All client SKUs of Windows XP with SP2 service packs support WinUSB. Win
 
 No: WinUSB is not supported in this version of Windows.
 
- 
+ 
 
 ## USB Features Supported by WinUSB
 
@@ -75,7 +70,7 @@ The following table shows the high-level USB features that are supported by WinU
 | Selective suspend                      | Supported             | Supported          |
 | Remote wake                            | Supported             | Supported          |
 
- 
+ 
 
 ## Related topics
 [Microsoft-provided USB drivers](system-supplied-usb-drivers.md)  

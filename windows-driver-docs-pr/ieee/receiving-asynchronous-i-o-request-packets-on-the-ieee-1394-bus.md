@@ -1,6 +1,5 @@
 ---
 title: Receiving Asynchronous I/O Request Packets on the IEEE 1394 Bus
-author: windows-driver-content
 description: The computer itself is a node on the IEEE 1394 bus, and therefore can receive asynchronous I/O requests.
 ms.assetid: 7b8eaf40-7fdc-4c25-86a7-8377d2d51877
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - allocating address ranges
 - addresses WDK IEEE 1394 bus
 - backing store WDK IEEE 1394 bus
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -58,7 +53,7 @@ The bus driver receives all asynchronous packet requests on behalf of the driver
 
     Here's an example:
 
-    ```
+    ```cpp
     pIRB->u.AllocateAddressRange.Mdl = an MDL previously allocated by the driver.
     pIRB->u.AllocateAddressRange.fulNotificationOptions = NOTIFY_FLAGS_NEVER
      
@@ -70,7 +65,7 @@ The bus driver receives all asynchronous packet requests on behalf of the driver
 
     Here is an example of how the driver can set up the request for the physical mapping routine. The physical mapping routine does not change, so the driver would normally only submit this request once.
 
-    ```
+    ```cpp
     GET_LOCAL_HOST_INFO5 PhysMapInfo;
     pGetInfoIRB->FunctionNumber = GET_LOCAL_HOST_INFO;
     pGetInfoIRB->GET_PHYS_ADDR_ROUTINE;
@@ -81,7 +76,7 @@ The bus driver receives all asynchronous packet requests on behalf of the driver
 
     Continuing the example, here is how the driver can use the physical mapping routine to submit the request at an elevated IRQL.
 
-    ```
+    ```cpp
     VOID AllocationCompletionRoutine(PVOID Context);
     /* Driver fills out the members of the IRB, including these: */
     pIRB->u.AllocateAddressRange.Mdl = an MDL previously allocated by the driver.
@@ -110,7 +105,7 @@ The bus driver receives all asynchronous packet requests on behalf of the driver
 
     Here is an extended example of using this type of notification. Globally, the driver creates an interlocked, singly-linked list, and a spin lock. The driver needs to access the linked list and the spin lock at raised IRQLs, so they must be in nonpaged memory. Typically, drivers keep them in their device extensions.
 
-    ```
+    ```cpp
     PSLIST_HEADER FifoSListHead;
     KSPIN_LOCK FifoSpinLock;
      
@@ -121,7 +116,7 @@ The bus driver receives all asynchronous packet requests on behalf of the driver
 
     When the driver submits the request, it can set up the relevant IRB members as follows:
 
-    ```
+    ```cpp
     VOID DriverNotificationRoutine(PNOTIFICATION_INFO NotificationInfo);
      
     pIRB->u.AllocateAddressRange.Mdl = NULL;
@@ -136,7 +131,7 @@ The bus driver receives all asynchronous packet requests on behalf of the driver
 
     In the callback, the driver either needs to allocate a new MDL and push it onto the list, or push the original MDL back on the list. For the latter, the bus driver passes the original ADDRESS\_FIFO for the current MDL. Here is an example of the driver pushing the current MDL back on the list:
 
-    ```
+    ```cpp
     ExInterlockedPushEntrySList(FifoSListHead, NotificationInfo->Fifo->FifoList, FifoSpinLock);
      
     ```
@@ -149,7 +144,7 @@ The bus driver receives all asynchronous packet requests on behalf of the driver
 
     The driver must set the **Mdl**, **FifoSListHead**, and **FifoSpinLock** members of **u.AllocateAddressRange** to **NULL**. Here is an example of the settings for a driver that wishes to be notified when it receives asynchronous request packets of all three types.
 
-    ```
+    ```cpp
     VOID DriverNotificationRoutine( IN PNOTIFICATION_INFO NotificationInfo );
      
     pIRB->u.AllocateAddressRange.Callback = DriverNotificationRoutine;
@@ -168,7 +163,7 @@ The bus driver receives all asynchronous packet requests on behalf of the driver
 
     Here is an example of how the device driver can fill in the necessary information in its notification routine.
 
-    ```
+    ```cpp
     /* Suppose the driver creates its response packet in PVOID ResponsePacket, of length ResponseLength. It has created a kernel event ResponseEvent. */
     MmInitializeMdl(NotificationInfo->ResponseMdl, ResponsePacket, ResponseLength);
     MmBuildMdlFForNonPagedPool(Notification->ResponseMdl);
@@ -214,7 +209,7 @@ For the new 1394 bus driver, the expected behavior of the client driver's notifi
 
 The following code examples shows the work item implementation and the client driver's notification routine.
 
-```
+```cpp
 VOID
 kmdf1394_NotifyRoutineWorkItem (
                                  IN WDFWORKITEM  WorkItem)
@@ -479,9 +474,9 @@ kmdf1394_NotificationCallback (
 } // kmdf1394_NotificationCallback
 ```
 
- 
+ 
 
- 
+ 
 
 
 

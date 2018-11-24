@@ -3,11 +3,7 @@ title: cpuid
 description: The cpuid extension displays information about the processors on the system.
 ms.assetid: 3dbd1079-d129-4e17-8d06-18b25fdd17c9
 keywords: ["cpuid Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!cpuid** extension displays information about the processors on the system.
 
-```
+```dbgsyntax
 !cpuid [Processor]
 ```
 
@@ -51,7 +47,7 @@ Specifies the processor whose information will be displayed. If you omit this pa
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -66,7 +62,7 @@ If you are debugging in user mode, the **!cpuid** extension describes the comput
 
 The following example shows this extension.
 
-```
+```dbgcmd
 kd> !cpuid 
 CP  F/M/S  Manufacturer        MHz 
  0  6,5,1  GenuineIntel        700 
@@ -79,9 +75,9 @@ For an x86-based processor or an x64-based processor, the **F** column displays 
 
 For an Itanium-based processor, the **M** column displays the processor model number, the R column displays the processor revision number, the **F** column displays the processor family number, and the **A** column displays the architecture revision number.
 
- 
+ 
 
- 
+ 
 
 
 

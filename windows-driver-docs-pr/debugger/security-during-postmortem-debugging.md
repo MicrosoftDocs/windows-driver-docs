@@ -3,11 +3,7 @@ title: Security During Postmortem Debugging
 description: Security During Postmortem Debugging
 ms.assetid: 59c411c4-d829-4d1c-9820-e58188f0656c
 keywords: ["security considerations, postmortem debugging", "postmortem debugging, security considerations"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,9 +21,9 @@ Also, a postmortem debugger inherits the same privileges as the application that
 
 You should take this into account when choosing to enable postmortem debugging.
 
- 
+ 
 
- 
+ 
 
 
 

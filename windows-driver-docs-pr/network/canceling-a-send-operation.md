@@ -10,11 +10,7 @@ keywords:
 - NDIS_SET_NET_BUFFER_LIST_CANCEL_ID
 - canceling send operations WDK networking
 - cancellation IDs WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -40,9 +36,9 @@ NDIS calls the [*MiniportCancelSend*](https://msdn.microsoft.com/library/windows
 
 In its *ProtocolSendNetBufferListsComplete* function, a protocol driver can call NDIS\_SET\_NET\_BUFFER\_LIST\_CANCEL\_ID with *CancelId* set to **NULL**. This prevents the NET\_BUFFER\_LIST from inadvertently being used again with a stale cancellation ID.
 
- 
+ 
 
- 
+ 
 
 
 

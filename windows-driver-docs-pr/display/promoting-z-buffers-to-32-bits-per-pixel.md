@@ -6,11 +6,7 @@ keywords:
 - z buffers WDK DirectX 9.0
 - color buffers WDK DirectX 9.0
 - D3DFORMAT_OP_ZSTENCIL_WITH_ARBITRARY_COLOR_DEPTH
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +30,9 @@ If D3DFORMAT\_OP\_ZSTENCIL\_WITH\_ARBITRARY\_COLOR\_DEPTH is not set, the runtim
 
 -   Any z format whose depth stencil does not occupy the same number of bits per pixel as the color buffer (in other words, mismatching z and stencil surfaces). For rendering to succeed in this scenario, the driver would have to change the number of stencil bits, which would also cause noticeable artifacts.
 
- 
+ 
 
- 
+ 
 
 
 

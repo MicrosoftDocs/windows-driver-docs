@@ -9,11 +9,7 @@ api_name:
 - KSNODETYPE_VOLUME
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +27,9 @@ A KSNODETYPE\_VOLUME node should support the following required property:
 
 [**KSPROPERTY\_AUDIO\_VOLUMELEVEL**](ksproperty-audio-volumelevel.md)
 
- 
+ 
 
- 
+ 
 
 
 

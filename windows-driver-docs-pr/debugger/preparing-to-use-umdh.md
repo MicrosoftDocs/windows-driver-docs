@@ -3,11 +3,7 @@ title: Preparing to Use UMDH
 description: Preparing to Use UMDH
 ms.assetid: 9adebe43-3167-4e1a-ac98-db19ace944be
 keywords: ["UMDH, preparing to use UMDH", "UMDH, disabling BSTR caching", "SetNoOaCache function", "OANOCACHE environment variable", "stack trace database"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,7 +31,7 @@ By default, the amount of stack trace data that Windows gathers is limited to 32
 
 **Note**   Increase this database only when necessary, because it may deplete limited Windows resources. When you no longer need the larger size, return this setting to its original value.
 
- 
+ 
 
 These settings affects all new instances of the program. It does not affect currently running instances of the program.
 
@@ -47,19 +43,19 @@ If you also include a path to Windows symbols, the analysis may be more complete
 
 For example, if the symbols for your application are located at C:\\MyApp\\Symbols, and you have installed the Windows symbol files to \\\\myshare\\winsymbols, you would use the following command to set your symbol path:
 
-```
+```console
 set _NT_SYMBOL_PATH=c:\myapp\symbols;\\myshare\winsymbols
 ```
 
 As another example, if the symbols for your application are located at C:\\MyApp\\Symbols, and you want to use the public Microsoft symbol store for your Windows symbols, using C:\\MyCache as your downstream store, you would use the following command to set your symbol path:
 
-```
+```console
 set _NT_SYMBOL_PATH=c:\myapp\symbols;srv*c:\mycache*https://msdl.microsoft.com/download/symbols
 ```
 
 **Important**  Suppose you have two computers: a *logging computer* where you create a UMDH log and an *analysis computer* where you analyze the UMDH log. The symbol path on your analysis computer must point to the symbols for the version of Windows that was loaded on the logging computer at the time the log was made. Do not point the symbol path on the analysis computer to a symbol server. If you do, UMDH will retrieve symbols for the version of Windows that is running on the analysis computer, and UMDH will not display meaningful results.
 
- 
+ 
 
 ### <span id="disable_bstr_caching"></span><span id="DISABLE_BSTR_CACHING"></span>Disable BSTR Caching
 
@@ -71,15 +67,15 @@ Alternatively, you can disable BSTR caching from within the application itself b
 
 If you need to trace the allocations made by a service, you must set OANOCACHE as a system environment variable and then restart Windows for this setting to take effect.
 
-On Windows 2000, in addition to setting OANOCACHE equal to 1, you must also install the hotfix available with [Microsoft Support Article 139071](http://go.microsoft.com/fwlink/p/?LinkId=241583). This hotfix is not needed on Windows XP and later versions of Windows.
+On Windows 2000, in addition to setting OANOCACHE equal to 1, you must also install the hotfix available with [Microsoft Support Article 139071](https://go.microsoft.com/fwlink/p/?LinkId=241583). This hotfix is not needed on Windows XP and later versions of Windows.
 
 ### <span id="find_the_process_id"></span><span id="FIND_THE_PROCESS_ID"></span>Find the Process ID
 
 UMDH identifies the process by its process identifier (PID). You can find the PID of any running process by using Task Manager, Tasklist (Windows XP and later operating systems), or [TList](tlist.md).
 
- 
+ 
 
- 
+ 
 
 
 

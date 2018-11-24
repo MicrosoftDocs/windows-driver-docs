@@ -1,6 +1,5 @@
 ---
 title: KS Pins
-author: windows-driver-content
 description: KS Pins
 ms.assetid: 04d0d17b-c326-417d-b2e8-58b33420455a
 keywords:
@@ -11,11 +10,7 @@ keywords:
 - data source pins WDK kernel streaming
 - pin connections WDK kernel streaming
 - kernel streaming WDK , pins
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -59,9 +54,9 @@ To support requests, the minidriver supplies a pointer to a [**KSDISPATCH\_TABLE
 
 Write requests contain a pointer to an array of [**KSSTREAM\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/ff567138) structures that in turn contain pointers to stream data. Read requests contain a pointer to an array of empty header structures where the read data should be returned.
 
- 
+ 
 
- 
+ 
 
 
 

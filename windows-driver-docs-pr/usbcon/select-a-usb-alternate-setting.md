@@ -1,12 +1,7 @@
 ---
 Description: This topic describes the steps for issuing a select-interface request to activate an alternate setting in a USB interface.
 title: How to select an alternate setting in a USB interface
-author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -65,7 +60,7 @@ Instructions
 
     **Note**  During device enumeration, the USB driver stack assigns numbers to the alternate settings. The interface numbers are zero-based and sequential. Those numbers might be different to the device-defined setting index. To obtain the device-defined setting index, call the [**WdfUsbInterfaceGetInterfaceNumber**](https://msdn.microsoft.com/library/windows/hardware/ff550065) method.
 
-     
+     
 
 2.  Initiate a select-interface request by calling the [**WdfUsbInterfaceSelectSetting**](https://msdn.microsoft.com/library/windows/hardware/ff550073) method. In the *Params* parameter of the call, choose one of these options:
 
@@ -85,7 +80,7 @@ Instructions
 
     After selecting an alternate setting, the client driver must always get the pipe handles for endpoints in the new setting. Failure to do so might cause the driver to send data transfer requests by using stale pipe handles. For information about retrieving pipe handles, see [How to enumerate USB pipes](how-to-get-usb-pipe-handles.md).
 
-```
+```cpp
 NTSTATUS  FX3SelectInterfaceSetting(  
     _In_ WDFDEVICE Device,
     _In_ UCHAR SettingIndex)

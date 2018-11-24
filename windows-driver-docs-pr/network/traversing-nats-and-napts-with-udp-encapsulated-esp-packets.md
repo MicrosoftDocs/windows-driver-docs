@@ -6,11 +6,7 @@ keywords:
 - UDP-encapsulated ESP packets WDK IPsec offload , transversing NATs and NAPTs
 - network address translators WDK IPsec offload
 - network address port translators WDK IPsec offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -47,9 +43,9 @@ To support UDP-ESP encapsulation, a miniport driver or the NIC (or both) must:
     -   [OID\_TCP\_TASK\_IPSEC\_ADD\_UDPESP\_SA](https://msdn.microsoft.com/library/windows/hardware/ff569809)
     -   [OID\_TCP\_TASK\_IPSEC\_DELETE\_UDPESP\_SA](https://msdn.microsoft.com/library/windows/hardware/ff569811)
 
- 
+ 
 
- 
+ 
 
 
 

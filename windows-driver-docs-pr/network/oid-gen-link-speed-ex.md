@@ -1,13 +1,8 @@
 ---
 title: OID_GEN_LINK_SPEED_EX
-author: windows-driver-content
 description: As a query, the OID_GEN_LINK_SPEED_EX OID provides the transmit and receive link speeds of an interface. Version Information Windows Vista and laterSupported. NDIS 6.0 and later miniport driversNot requested. For NDIS interface providers only.
 ms.assetid: 86cc281b-3898-484c-9418-4408a45ebe71
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_GEN_LINK_SPEED_EX Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -64,9 +59,9 @@ Requirements
 
 [NDIS Network Interface OIDs](https://msdn.microsoft.com/library/windows/hardware/ff566545)
 
- 
+ 
 
- 
+ 
 
 
 

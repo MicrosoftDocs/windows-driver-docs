@@ -10,11 +10,7 @@ api_name:
 - DevCon ClassFilter
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,8 +21,6 @@ Adds, deletes, displays, and changes the order of filter drivers for a device se
 
 ```
     devcon classfilter class {upper | lower} [ = | @driver | -driver | +driver | !driver ]...
-
-   
 ```
 
 ## <span id="ddk_devcon_classfilter_tools"></span><span id="DDK_DEVCON_CLASSFILTER_TOOLS"></span>Parameters
@@ -44,7 +38,7 @@ Indicates that the specified drivers are lower-class filter drivers.
 <span id="______________"></span> **=**   
 Moves the cursor to the beginning of the filter driver list (before the first driver).
 
-<span id="________driver______"></span><span id="________DRIVER______"></span> **@***driver*   
+<span id="________driver______"></span><span id="________DRIVER______"></span> **@**<em>driver</em>   
 Positions the cursor on the next instance of the specified driver.
 
 <span id="-driver"></span><span id="-DRIVER"></span>**-***driver*  
@@ -52,12 +46,12 @@ Add before. Inserts the specified driver before the driver on which the cursor i
 
 If the cursor is not positioned on a driver, DevCon inserts the specified driver at the beginning of the list. When the subcommand completes, the cursor is positioned on the newly added driver.
 
-<span id="________driver______"></span><span id="________DRIVER______"></span> **+***driver*   
+<span id="________driver______"></span><span id="________DRIVER______"></span> **+**<em>driver</em>   
 Add after. Inserts the specified driver after the driver on which the cursor is positioned.
 
 If the cursor is not positioned on a driver, DevCon inserts the specified driver at the end of the list. When the subcommand completes, the cursor is positioned on the newly added driver.
 
-<span id="________driver______"></span><span id="________DRIVER______"></span> **!***driver*   
+<span id="________driver______"></span><span id="________DRIVER______"></span> **!**<em>driver</em>   
 Deletes the next occurrence of the specified driver from the list.
 
 When the subcommand completes, the cursor occupies the position of the deleted driver. Subsequent **+** or **-** subcommands insert a new driver at the cursor position.
@@ -95,9 +89,9 @@ devcon /r classfilter volume upper !volsnap =!volsnap2
 
 [Example 27: Change the order of filter drivers](devcon-examples.md#ddk_example_27_change_the_order_of_filter_drivers_tools)
 
- 
 
- 
+
+
 
 
 

@@ -2,11 +2,7 @@
 title: Using mbidgenerator.exe to generate hardware IDs
 description: Using mbidgenerator.exe to generate hardware IDs
 ms.assetid: 2f2286e2-9300-4ef8-8e13-0851b60cd8eb
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,7 +15,7 @@ To generate hardware ID values for your service metadata package, you can use th
 **Note**  
 In Windows 8 MBIDGenerator.exe was included in the WDK.
 
- 
+ 
 
 ## <span id="Input"></span><span id="input"></span><span id="INPUT"></span>Input
 
@@ -33,7 +29,7 @@ MBIDGenerator.exe [/Test] <input file> [<output file>]
 **Note**  
 The *Test* parameter provides non-hashed output and should not be used for generating hardware IDs for submission to the Windows Dev Center Dashboard.
 
- 
+ 
 
 ## <span id="Output"></span><span id="output"></span><span id="OUTPUT"></span>Output
 
@@ -52,9 +48,9 @@ The output values appear in the following way:
 
 You can take the output from MBIDGenerator.exe and insert it into the [PackageInfo XML schema](packageinfo-xml-schema.md) of your service metadata package.
 
- 
+ 
 
- 
+ 
 
 
 

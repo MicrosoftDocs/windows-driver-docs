@@ -2,11 +2,7 @@
 title: Appendix 4 Driver Signing Issues
 description: Two known driver signing issues are described below.
 ms.assetid: EC244022-A02B-4AAD-93EE-B9AE3E72A674
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,7 +27,7 @@ To resolve the issue, you may ask VeriSign to provide a replacement certificate 
 
 Alternatively, you can buy another SHA1 certificate and sign the file with two signatures as shown below if you want to keep both certificates. Note that only .sys files can be dual signed because they are PE files.
 
-```
+```cpp
 Signtool sign /fd sha256 /ac C:\MyCrossCert\Crosscert.cer /s my /n “MyCompany Inc. “ /ph /as /sha1 XX...XX C:\DriverDir\toaster.SYS
 ```
 
@@ -39,15 +35,15 @@ Where XX...XX is the hash of the certificate you are using for the secondary sig
 
 **Note**  Please review Microsoft Security Advisory ([2880823](https://technet.microsoft.com/library/security/2880823)) "Deprecation of SHA-1 Hashing Algorithm for Microsoft Root Certificate Program" which describes a policy change wherein Microsoft will no longer allow root certificate authorities to issue X.509 certificates using the SHA-1 hashing algorithm for the purposes of SSL and code signing after January 1, 2016.
 
- 
+ 
 
 Use of SHA1 certificate will be deprecated by Microsoft starting from January 1, 2016. All CA vendors must to issue signing certificates with the SHA256 hash algorithm.
 
 Windows will stop accepting SHA1 code signing certificates without time stamps after 1 January 2016.
 
- 
+ 
 
- 
+ 
 
 
 

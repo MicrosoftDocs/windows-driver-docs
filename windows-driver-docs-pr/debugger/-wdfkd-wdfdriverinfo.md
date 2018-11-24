@@ -3,11 +3,7 @@ title: wdfkd.wdfdriverinfo
 description: The wdfkd.wdfdriverinfo extension displays information about the specified driver, including its device tree, and version information.
 ms.assetid: dc758fd3-1226-46e3-b249-2cf37ef3e539
 keywords: ["wdfkd.wdfdriverinfo Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!wdfkd.wdfdriverinfo** extension displays information about the specified driver, including its device tree, the version of the Kernel-Mode Driver Framework (KMDF) library that the driver was compiled with, and a list of the framework device objects that the driver created.
 
-```
+```dbgcmd
 !wdfkd.wdfdriverinfo [DriverName [Flags]]
 ```
 
@@ -78,7 +74,7 @@ If you omit the *DriverName* parameter, the default driver is used. You can disp
 
 The following example shows the display from the **!wdfkd.wdfdriverinfo** extension.
 
-```
+```dbgcmd
 ## kd> !wdfdriverinfo wdfrawbusenumtest 
 ----------------------------------
 Default driver image name:   wdfrawbusenumtest
@@ -98,9 +94,9 @@ WDFDRIVER: 0x7cbc90d0
              <no associated attribute callbacks>
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,11 +3,7 @@ title: m (Move Memory)
 description: The m command copies the contents of memory from one location to another. Do not confuse this command with the ~m (Resume Thread) command.
 ms.assetid: afcac933-6bba-4566-ae07-bb9110f851d2
 keywords: ["m (Move Memory) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,7 +20,7 @@ The **m** command copies the contents of memory from one location to another.
 
 Do not confuse this command with the [**~m (Resume Thread)**](-m--resume-thread-.md) command.
 
-```
+```dbgcmd
 m Range Address 
 ```
 
@@ -60,7 +56,7 @@ Specifies the starting address of the destination memory area. For more informat
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -71,9 +67,9 @@ Remarks
 
 The memory area that *Address* specifies can be part of the memory area that *Range* specifies. Overlapping moves are handled correctly.
 
- 
+ 
 
- 
+ 
 
 
 

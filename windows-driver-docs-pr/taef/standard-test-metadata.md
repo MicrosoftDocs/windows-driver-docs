@@ -2,11 +2,7 @@
 title: Standard Test Metadata
 description: Standard Test Metadata
 ms.assetid: A95FC176-B3A1-4bbf-833E-411CDE73C571
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -172,9 +168,9 @@ The following metadata may be used in the future - please don't use it.
 -   Timeout
 -   HostType
 
- 
+ 
 
- 
+ 
 
 
 

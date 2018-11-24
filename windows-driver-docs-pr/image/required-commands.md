@@ -2,11 +2,7 @@
 title: Required Commands
 description: Required Commands
 ms.assetid: e4a82cc6-8031-4d67-bef8-1d73e2d98b6b
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -63,9 +59,9 @@ Called by the WIA Flatbed Driver when the user requests a test of the device.
 <span id="CMD_UNINITIALIZE"></span><span id="cmd_uninitialize"></span>CMD\_UNINITIALIZE  
 Uninitialize the microdriver and close Device I/O handles. The WIA Flatbed Driver will automatically close the device I/O handle in the **DeviceIOHandles** array member of the [**SCANINFO**](https://msdn.microsoft.com/library/windows/hardware/ff547361) structure, at index 0. This command will be sent to the microdriver when the WIA Flatbed driver is unloading.
 
- 
+ 
 
- 
+ 
 
 
 

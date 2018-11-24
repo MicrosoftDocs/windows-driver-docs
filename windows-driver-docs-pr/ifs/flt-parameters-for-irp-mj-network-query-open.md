@@ -1,5 +1,5 @@
 ---
-title: FLT\_PARAMETERS for IRP\_MJ\_NETWORK\_QUERY\_OPEN union
+title: FLT_PARAMETERS for IRP_MJ_NETWORK_QUERY_OPEN union
 description: The following union component is used when the MajorFunction field of the FLT\_IO\_PARAMETER\_BLOCK structure for the operation is IRP\_MJ\_NETWORK\_QUERY\_OPEN.
 ms.assetid: bafe015c-a747-4d18-95d5-adad2ad1570b
 keywords: ["FLT_PARAMETERS for IRP_MJ_NETWORK_QUERY_OPEN union Installable File System Drivers", "FLT_PARAMETERS union Installable File System Drivers", "PFLT_PARAMETERS union pointer Installable File System Drivers"]
@@ -11,11 +11,7 @@ api_location:
 - fltkernel.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -58,7 +54,7 @@ The [**FLT\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff
 &gt; \[!Note\]   The file object associated with IRP\_MJ\_NETWORK\_QUERY\_OPEN is a stack-based object.
 &gt;A filter registered for the NetworkQueryOpen callback must not reference this object. That is, do not call ObReferenceObject or ObDereferenceObject on this stack-based file object. Also, do not save a pointer to the object.
 
- 
+ 
 
 IRP\_MJ\_NETWORK\_QUERY\_OPEN is a fast I/O operation. It is the equivalent of the FastIoQueryOpen (not FastIoQueryNetworkOpenInfo) operation. A filter must register for this operation.
 
@@ -101,9 +97,9 @@ Requirements
 
 [**ZwQueryInformationFile**](https://msdn.microsoft.com/library/windows/hardware/ff567052)
 
- 
+ 
 
- 
+ 
 
 
 

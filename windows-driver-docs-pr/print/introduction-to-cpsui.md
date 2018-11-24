@@ -1,17 +1,12 @@
 ---
 title: Introduction to CPSUI
-author: windows-driver-content
 description: Introduction to CPSUI
 ms.assetid: 737c2dbf-1ce6-4f83-af94-265c948f3128
 keywords:
 - Common Property Sheet User Interface WDK print , about CPSUI
 - CPSUI WDK print , about CPSUI
 - property sheet pages WDK print , about CPSUI with printer drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,9 +32,9 @@ The print spooler, in conjunction with [printer interface DLLs](printer-interfac
 
 Customized user interface code created for Microsoft's [*Unidrv*](https://msdn.microsoft.com/library/windows/hardware/ff556343#wdkgloss-unidrv) and [*Pscript*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-pscript) drivers can also use CPSUI. For more information, see [User Interface Plug-Ins](user-interface-plug-ins.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,11 +3,7 @@ title: srb
 description: The srb extension displays information about a SCSI Request Block (SRB).
 ms.assetid: 38f40a78-c991-465e-9203-a8171d1a86f6
 keywords: ["srb Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!srb** extension displays information about a SCSI Request Block (SRB).
 
-```
+```dbgcmd
 !srb Address 
 ```
 
@@ -51,7 +47,7 @@ Specifies the hexadecimal address of the SRB on the target computer.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -62,9 +58,9 @@ Remarks
 
 An SRB is a system-defined structure used to communicate I/O requests from a SCSI class driver to a SCSI port driver.
 
- 
+ 
 
- 
+ 
 
 
 

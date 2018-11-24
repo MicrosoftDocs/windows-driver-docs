@@ -2,11 +2,7 @@
 title: Rasterizer Block
 description: Rasterizer Block
 ms.assetid: 115c265d-0264-4a8a-b07b-710438394c68
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +27,9 @@ The Direct3D runtime calls the following driver functions to create, set up, and
 
 [**SetViewports**](https://msdn.microsoft.com/library/windows/hardware/ff569698)
 
- 
+ 
 
- 
+ 
 
 
 

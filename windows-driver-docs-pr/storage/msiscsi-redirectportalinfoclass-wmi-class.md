@@ -3,6 +3,7 @@ title: MSiSCSI\_RedirectPortalInfoClass WMI Class
 description: MSiSCSI\_RedirectPortalInfoClass WMI Class
 ms.assetid: 38f510ed-1f31-4b3c-84c6-515f5d42a1f8
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MSiSCSI\_RedirectPortalInfoClass WMI Class
@@ -10,7 +11,7 @@ ms.localizationpriority: medium
 
 The MSiSCSI\_RedirectPortalInfoClass WMI class contains a collection of sessions for an adapter ID. Additionally, it contains the portal redirect information for each of the sessions. This class is defined as follows in *Mgmt.mof.*
 
-```
+```cpp
 class MSiSCSI_RedirectPortalInfoClass
 {
     [read,key] String InstanceName;
@@ -45,9 +46,9 @@ class MSiSCSI_RedirectPortalInfoClass
 
 When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_RedirectPortalInfoClass**](https://msdn.microsoft.com/library/windows/hardware/ff563117) data structure.
 
- 
+ 
 
- 
+ 
 
 
 

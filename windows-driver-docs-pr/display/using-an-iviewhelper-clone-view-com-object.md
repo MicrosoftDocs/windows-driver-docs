@@ -9,11 +9,7 @@ keywords:
 - monitor configurations WDK display , persisted
 - video present networks WDK display , about IViewHelper
 - VidPN WDK display , about IViewHelper
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,7 +22,7 @@ Errors from a [Video Present Network (VidPN)](multiple-monitors-and-video-presen
 
 TMM determines the [IViewHelper](https://msdn.microsoft.com/library/windows/hardware/ff568164) COM interface object through the **UserModeDriverGUID** string registry value. Hardware vendors should add this value under the registry keys that the **DeviceKey** member of the DISPLAY\_DEVICE structure specifies. A call to the Win32 **EnumDisplayDevices** function returns this registry key information in DISPLAY\_DEVICE that the *lpDisplayDevice* parameter points to. If multiple **DeviceKey** names exist, this value should appear under each of those keys. The following is an example of a device key and the **UserModeDriverGUID** string registry value:
 
-```
+```registry
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Video\{7661971C-A9BD-48B5-ACBC-298A8826535D}\0000]
 "UserModeDriverGUID"="{YYYYYYYY-YYYY-YYYY-YYYY-YYYYYYYYYYYY}"
 ```
@@ -35,9 +31,9 @@ For COM to load the [IViewHelper](https://msdn.microsoft.com/library/windows/har
 
 You should only copy and register the correctly compiled versions of [IViewHelper](https://msdn.microsoft.com/library/windows/hardware/ff568164) COM interface object DLLs in the system directory. That is, you should only copy and register the 64-bit **IViewHelper** DLL for 64-bit operating systems and the 32-bit **IViewHelper** DLL for 32-bit operating systems. The two DLL binaries should not be concurrently present on the same computer. TMM will not operate properly if the two binaries are concurrently present on the same computer, even with Windows on Windows (WOW).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: Virtualized Networking
 description: Virtualized Networking
 ms.assetid: 5CDB7E42-BCD6-4385-AC99-6659261C2B2C
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ This section describes the following components of virtualized networking:
 
 [Hyper-V Extensible Switch](hyper-v-extensible-switch.md)
 
- 
+ 
 
- 
+ 
 
 
 

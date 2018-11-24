@@ -7,11 +7,7 @@ keywords:
 - state-manipulation operations WDK TCP chimney offload , block list types
 - block list types WDK TCP chimney offload
 - NDIS_MINIPORT_OFFLOAD_BLOCK_LIST
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +30,9 @@ The intermediate driver writes a pointer into the **ImReserved** member of the N
 
 When calling the **Ndis*Xxx*Offload** function to propagate the operation to the underlying driver, the intermediate driver passes a pointer to the newly constructed NDIS\_PROTOCOL\_OFFLOAD\_BLOCK\_LIST structure.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: Updated feature score directive in Windows 8
 description: The updated feature score directive is a general installation setting that's required for all Windows 8 drivers that follow the Windows Display Driver Model (WDDM).
 ms.assetid: E50E132A-DEC8-42F4-AAF8-05F658990CF5
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,7 +30,7 @@ This table shows the values that apply for Windows 8. Key changes are italicize
 | Default or No Score              | FF                           |
 | Unsigned drivers                 | No feature score = FF        |
 
- 
+ 
 
 Each operating system release introduces a new feature score value. For Windows 8 this is *E3* for in-box and pre-release drivers, and *E0* for WHQL drivers. The feature score is used by Windows to determine which driver to install when multiple possible drivers exist. A driver with a higher ranked feature score is selected.
 
@@ -44,9 +40,9 @@ All Windows 8 in-box driver devices have a higher ranked feature score than all
 -   The driver has fixes that make it better than the in-box driver.
 -   The driver is intended to be retained on upgrade to Windows 8.
 
- 
+ 
 
- 
+ 
 
 
 

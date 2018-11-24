@@ -3,11 +3,7 @@ title: db, dc, dd, dp, dq, du, dw
 description: The db, dc, dd, dp, dq, du, and dw extensions display data at the specified physical address on the target computer.
 ms.assetid: d34eebb7-bc91-4bff-9787-d92f74195ee1
 keywords: ["db extension", "dc extension", "dd extension", "dp extension", "dq extension", "du extension", "dw extension", "memory, Display Physical ( d ) extensions", "db, dc, dd, dp, dq, du, dw Windows Debugging"]
-ms.author: domars
 ms.date: 01/18/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,7 +20,7 @@ The **!db**, **!dc**, **!dd**, **!dp**, **!dq**, **!du**, and **!dw** extensions
 
 These extension commands should not be confused with the [**d\* (Display Memory)**](d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md) command, or with the [**!ntsdexts.dp**](-dp---ntsdexts-dp-.md) extension command.
 
-```
+```dbgcmd
 !db [Caching] [-m] [PhysicalAddress] [L Size] 
 !dc [Caching] [-m] [PhysicalAddress] [L Size] 
 !dd [Caching] [-m] [PhysicalAddress] [L Size] 
@@ -88,11 +84,11 @@ Specifies the number of chunks of memory to display. The size of a chunk is dete
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
-To write to physical memory, use the [**!e\***](-eb---ed.md) extensions. For an overview of memory manipulation and a description of other memory-related commands, see [Reading and Writing Memory](reading-and-writing-memory.md).
+To write to physical memory, use the [**!e\\***](-eb---ed.md) extensions. For an overview of memory manipulation and a description of other memory-related commands, see [Reading and Writing Memory](reading-and-writing-memory.md).
 
 Remarks
 -------
@@ -117,7 +113,7 @@ Consequently, using two of these extensions that are distinct with the same valu
 
 Here is an example in which the caching attribute flag is needed:
 
-```
+```dbgcmd
 kd> !dc e9000
 physical memory read at e9000 failed
 If you know the caching attributes used for the memory,
@@ -132,9 +128,9 @@ kd> !dc [c] e9000
 #   e9010 000ea002 000ea002 000ea002 000ea002 ................
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,6 +3,7 @@ title: ISCSI\_SessionStaticInfo WMI Class
 description: ISCSI\_SessionStaticInfo WMI Class
 ms.assetid: e6ef8389-c4f3-4498-9864-6e4c1e8ca5b5
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # ISCSI\_SessionStaticInfo WMI Class
@@ -13,7 +14,7 @@ ms.localizationpriority: medium
 
 The ISCSI\_SessionStaticInfo class is used to store the static characteristics of a session. This class is defined as follows in *Mgmt.mof*.
 
-```
+```cpp
 class ISCSI_SessionStaticInfo {
   [read, WmiDataId(1), Description("A uniquely generated
     session ID used only internally.  Do not confuse this
@@ -162,9 +163,9 @@ class ISCSI_SessionStaticInfo {
 
 When the WMI tool suite compiles the preceding class definition, it produces the [**ISCSI\_SessionStaticInfo**](https://msdn.microsoft.com/library/windows/hardware/ff561565) data structure.
 
- 
+ 
 
- 
+ 
 
 
 

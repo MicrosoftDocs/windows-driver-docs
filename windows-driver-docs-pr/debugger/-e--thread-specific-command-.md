@@ -3,11 +3,7 @@ title: ~e (Thread-Specific Command)
 description: The ~e command executes one or more commands for a specific thread or for all threads in the target process.Do not confuse this command with the e (Enter Values) command.
 ms.assetid: a14f0a5f-48f9-46dd-baa6-b7d91b15772c
 keywords: ["Thread-Specific Command (~e) command", "thread, Thread-Specific Command (~e) command", "~e (Thread-Specific Command) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,7 +20,7 @@ The **~e** command executes one or more commands for a specific thread or for al
 
 Do not confuse this command with the [**e (Enter Values)**](e--ea--eb--ed--ed--ef--ep--eq--eu--ew--eza--ezu--enter-values-.md) command.
 
-```
+```dbgcmd
 ~Thread e CommandString
 ```
 
@@ -60,7 +56,7 @@ Specifies one or more commands to execute. You should separate multiple commands
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -73,7 +69,7 @@ You can specify threads only in user mode. In kernel mode, the tilde (~) refers 
 
 When you use the **~e** command together with one thread, the **~e** command only saves some typing. For example, the following two commands are equivalent.
 
-```
+```dbgcmd
 0:000> ~2e r; k; kd 
 
 0:000> ~2r; ~2k; ~2kd 
@@ -81,7 +77,7 @@ When you use the **~e** command together with one thread, the **~e** command onl
 
 However, you can use the **~e** qualifier to repeat a command or extension command several times. When you use the qualifier in this manner, it can eliminate extra typing. For example, the following command repeats the [**!gle**](-gle.md) extension command for every thread that you are debugging.
 
-```
+```dbgcmd
 0:000> ~*e !gle 
 ```
 
@@ -93,9 +89,9 @@ You cannot use the **~e** qualifier together with the [**j (Execute If-Else)**](
 
 If you are debugging more than one process, you cannot use the **~e** command to access the virtual memory space for a inactive process.
 
- 
+ 
 
- 
+ 
 
 
 

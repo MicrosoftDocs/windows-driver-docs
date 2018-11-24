@@ -2,11 +2,7 @@
 title: Traffic Class Priority Assignment
 description: Traffic Class Priority Assignment
 ms.assetid: 846AC7E6-28D9-4610-9493-BE547869AB15
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,9 +17,9 @@ NDIS QoS parameters are specified through the [**NDIS\_QOS\_PARAMETERS**](https:
 
 For more information about priority levels, see [IEEE 802.1p Priority Levels](ieee-802-1p-priority-levels.md).
 
- 
+ 
 
- 
+ 
 
 
 

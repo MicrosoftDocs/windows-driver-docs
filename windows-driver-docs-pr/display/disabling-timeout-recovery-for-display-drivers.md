@@ -5,11 +5,7 @@ ms.assetid: 71fa0273-be21-4603-8491-09078a38cdf2
 keywords:
 - display drivers WDK Windows 2000 , timeout recovery
 - timeout recovery WDK Windows 2000 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,13 +18,13 @@ Because timeout recovery code is complex, it might cause incompatibility with di
 
 To disable timeout recovery, create the following REG\_DWORD entry in the registry, and set its value to 0:
 
-```
+```registry
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Watchdog\Display\EaRecovery
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -11,11 +11,7 @@ keywords:
 - color space WDK Windows 2000 display
 - color gamut WDK Windows 2000 display
 - device-independent color space WDK Windows 2000 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -96,7 +92,7 @@ Although you can create custom monitor profiles using third-party tools, you may
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Installing_a_Monitor_Profile"></span><span id="installing_a_monitor_profile"></span><span id="INSTALLING_A_MONITOR_PROFILE"></span>Installing a Monitor Profile
 
@@ -128,9 +124,9 @@ A monitor profile, unlike a printer profile, supports very little communication 
 
 7.  The display driver (or video hardware) performs gamma correction to the image.
 
- 
+ 
 
- 
+ 
 
 
 

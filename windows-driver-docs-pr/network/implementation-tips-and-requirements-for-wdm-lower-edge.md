@@ -6,11 +6,7 @@ keywords:
 - NDIS-WDM miniport drivers WDK networking , implemention tips
 - lower edge of NDIS miniport drivers WDK networking , driver implemention
 - WDM lower edge WDK networking , driver implemention
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,9 +33,9 @@ When implementing an NDIS-WDM miniport driver, keep the following in mind:
 
     For the preceding scenarios, the NDIS-WDM miniport driver should call the appropriate WDM routines to allocate or release resources for the non-NDIS entity.
 
- 
+ 
 
- 
+ 
 
 
 

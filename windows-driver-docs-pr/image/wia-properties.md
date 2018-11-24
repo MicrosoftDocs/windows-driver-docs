@@ -2,11 +2,7 @@
 title: WIA Properties
 description: WIA Properties
 ms.assetid: 3b9d4d90-775b-450e-b5d1-646ea45253d7
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -69,9 +65,9 @@ The preceding lists describe only those types that are used in the WIA propertie
 
 The Windows SDK contain information about the [WIA\_RAW\_HEADER](http://go.microsoft.com/fwlink/p/?linkid=153316) structure. It also contains information about the WIA\_EVENT\_XXX and WIA\_CMD\_XXX constants, discussed in the [WIA Event Identifiers](http://go.microsoft.com/fwlink/p/?linkid=153318) topic.
 
- 
+ 
 
- 
+ 
 
 
 

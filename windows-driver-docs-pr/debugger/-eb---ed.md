@@ -3,11 +3,7 @@ title: eb, ed
 description: The eb and ed extensions write a sequence of values into a specified physical address. These extension commands should not be confused with the e\\ (Enter Values) command.
 ms.assetid: 368937e4-0989-4dca-983a-65bc63142108
 keywords: ["eb extension", "ed extension", "memory, Write Physical ( e ) extensions", "eb, ed Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,7 +20,7 @@ The **!eb** and **!ed** extensions write a sequence of values into a specified p
 
 These extension commands should not be confused with the [**e\* (Enter Values)**](e--ea--eb--ed--ed--ef--ep--eq--eu--ew--eza--ezu--enter-values-.md) command.
 
-```
+```dbgcmd
 !eb [Flag] PhysicalAddress Data [ ... ] 
 !ed [Flag] PhysicalAddress Data [ ... ]
 ```
@@ -71,15 +67,15 @@ Kdextx86.dll</td>
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
-To read physical memory, use the [**!d\***](-db---dc---dd---dp---dq---du---dw.md) extensions. For an overview of memory manipulation and a description of other memory-related commands, see [Reading and Writing Memory](reading-and-writing-memory.md).
+To read physical memory, use the [**!d\\***](-db---dc---dd---dp---dq---du---dw.md) extensions. For an overview of memory manipulation and a description of other memory-related commands, see [Reading and Writing Memory](reading-and-writing-memory.md).
 
- 
+ 
 
- 
+ 
 
 
 

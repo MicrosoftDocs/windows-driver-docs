@@ -3,11 +3,7 @@ title: Crashing and Rebooting the Target Computer
 description: This topic covers crashing and rebooting the Target Computer
 ms.assetid: 7480e572-05ca-40c6-aa91-b1ab35e4496b
 keywords: debugging, debug, controlling the target, crashing the target computer, rebooting the target computer, reboot, boot process, system crash, bug check
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -45,9 +41,9 @@ You can also change the break state after the debugger is running:
 
 -   Use the [**CTRL+K**](ctrl-k--change-post-reboot-break-state-.md) shortcut keys in KD, the [CTRL+ALT+K](debug---kernel-connection---cycle-initial-break.md) shortcut keys in WinDbg, and the Debug | Kernel Connection | Cycle Initial Break command in WinDbg to change the break state. Every time that you use these commands, the debugger switches between three states: no automatic break, break upon kernel initialization, and break on first kernel module load. This method cannot activate both automatic breakpoints at the same time.
 
- 
+ 
 
- 
+ 
 
 
 

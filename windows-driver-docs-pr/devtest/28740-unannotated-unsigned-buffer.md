@@ -2,11 +2,7 @@
 title: C28740
 description: Warning C28740 Unannotated unsigned buffer.
 ms.assetid: 849BA4E4-89E7-4E8C-B73C-CA303487A5E3
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +30,9 @@ The following code example avoids this warning by using the SAL annotation **\_O
     int foo( _Out_writes_(cch) BYTE * buffer, size_t cch );
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: Accessing Icon Properties of a Device Setup Class
 description: Accessing Icon Properties of a Device Setup Class
 ms.assetid: 082b23ee-8f5c-41ad-9bb1-1437b71aa921
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,9 +19,9 @@ Windows Server 2003, Windows XP, and Windows 2000 do not directly support these 
 
 To maintain compatibility with these earlier versions of Windows, Windows Vista and later versions also support these mechanisms to access the icons of a device setup class. However, you should use the property keys to access the icon properties in Windows Vista and later versions.
 
- 
+ 
 
- 
+ 
 
 
 

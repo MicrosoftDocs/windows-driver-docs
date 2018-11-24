@@ -5,11 +5,7 @@ ms.assetid: 848b6fd5-64f8-4e62-9c54-c23bbc3d9ede
 keywords:
 - Windows Sockets Direct WDK , service providers
 - SAN service providers WDK , creating
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,9 +21,9 @@ The [Windows Sockets Direct reference](https://msdn.microsoft.com/library/window
 
 This section also lists the [Windows Sockets SPI functions that a SAN service provider is not required to supply](windows-sockets-spi-functions-not-required-for-sans.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Using CPSUI with Printer Drivers
-author: windows-driver-content
 description: Using CPSUI with Printer Drivers
 ms.assetid: 898a855d-6a9a-4f98-9ee4-bad439427326
 keywords:
@@ -11,11 +10,7 @@ keywords:
 - Common Property Sheet User Interface WDK print , about CPSUI
 - CPSUI WDK print , about CPSUI
 - property sheet pages WDK print , about CPSUI with printer drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -51,9 +46,9 @@ When the user dismisses the property sheet by clicking on the **Ok** or **Cancel
 
 When an application displays a property sheet for a printer device instead of a print document, the same steps are followed, except that the application calls the spooler's **PrinterProperties** function and the spooler passes the address of the printer interface DLL's [**DrvDevicePropertySheets**](https://msdn.microsoft.com/library/windows/hardware/ff548542) function to CPSUI.
 
- 
+ 
 
- 
+ 
 
 
 

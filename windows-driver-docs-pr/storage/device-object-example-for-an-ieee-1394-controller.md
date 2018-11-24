@@ -1,6 +1,5 @@
 ---
 title: Device Object Example for an IEEE 1394 Controller
-author: windows-driver-content
 description: Device Object Example for an IEEE 1394 Controller
 ms.assetid: 9a83786b-8821-43b7-bf86-c85f2dcb9749
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - device objects WDK storage
 - IEEE 1394 controller example WDK storage
 - PCI IEEE 1394 controller example WDK storage
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,9 +33,9 @@ Starting from the bottom of the figure, the following describes each device obje
 
 4.  The CD-ROM class driver creates an FDO and attaches it to the next-lower device object, which is either the SBP2 port filter DO or another filter DO attached to the stack by an intervening filter driver. The class driver issues all subsequent requests to the device through the lower driver's device object.
 
- 
+ 
 
- 
+ 
 
 
 

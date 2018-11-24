@@ -2,11 +2,7 @@
 title: KSPROPSETID\_BdaVoidTransform
 description: KSPROPSETID\_BdaVoidTransform
 ms.assetid: a204a221-891a-4039-bae9-634b9f678290
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +22,9 @@ Starts operation of a node.
 <span id="KSPROPERTY_BDA_VOID_TRANSFORM_STOP"></span><span id="ksproperty_bda_void_transform_stop"></span>[**KSPROPERTY\_BDA\_VOID\_TRANSFORM\_STOP**](ksproperty-bda-void-transform-stop.md)  
 Stops operation of a node.
 
- 
+ 
 
- 
+ 
 
 
 

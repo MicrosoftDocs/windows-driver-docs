@@ -14,11 +14,7 @@ keywords:
 - D3DRENDERSTATE_FOGSTART
 - RSTATE_FOGEND
 - D3DRENDERSTATE_FOGDENSITY
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -80,9 +76,9 @@ In this formula,
 
 If **f**, the fog blending factor, is 0.0, then the final fogged color is identical to the fog color. If **f** is 1.0, there is no fog effect.
 
- 
+ 
 
- 
+ 
 
 
 

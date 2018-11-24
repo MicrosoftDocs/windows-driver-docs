@@ -1,15 +1,10 @@
 ---
 title: Filtering conditions
-author: windows-driver-content
 description: This section describes filtering conditions.
 ms.assetid: 7ce9455e-b938-4f44-b1f3-7f0a155f8807
 keywords:
 - Filtering conditions network drivers
-ms.author: windowsdriverdev
 ms.date: 11/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

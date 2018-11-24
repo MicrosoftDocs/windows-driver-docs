@@ -2,11 +2,7 @@
 title: Test Modes
 description: Test Modes
 ms.assetid: 1E9C0198-8C74-4966-A401-329723B5A933
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -65,9 +61,9 @@ The 'loop' parameter controls looping at the *largest possible scope*; the entir
 
 When running in stress test mode, you also need to specify the "/inproc" switch - which means that all stress execution runs in the Te.exe process. This restriction removes the need for TAEF to launch and maintain the separate sandbox process for execution, thereby minimizing test failures due to failed memory allocations.
 
- 
+ 
 
- 
+ 
 
 
 

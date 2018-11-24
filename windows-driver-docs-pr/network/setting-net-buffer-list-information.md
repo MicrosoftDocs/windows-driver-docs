@@ -6,11 +6,7 @@ keywords:
 - NET_BUFFER_LIST
 - header-data split WDK , NET_BUFFER_LIST
 - flags WDK header-data split
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,7 +20,7 @@ A header-data split provider must set the header-data split flags in the **NblFl
 
 **Note**  A miniport driver can set the **DataPhysicalAddress** member of the NET\_BUFFER structure, even if the NET\_BUFFER is not associated with a split frame. In this case, **DataPhysicalAddress** contains the physical address of the header MDL.
 
- 
+ 
 
 The header-data split provider combines the flags in the **NblFlags** member with a bitwise OR operation.
 
@@ -63,9 +59,9 @@ If the header-data split provider does not split a frame, the frame must be indi
 
 -   NDIS\_NBL\_FLAGS\_SPLIT\_AT\_UPPER\_LAYER\_PROTOCOL\_PAYLOAD
 
- 
+ 
 
- 
+ 
 
 
 

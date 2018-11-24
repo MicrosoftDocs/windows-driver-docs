@@ -11,11 +11,7 @@ keywords:
 - network wake-up events WDK networking
 - power management WDK NDIS miniport , wake-up capabilities
 - wake-up frames WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -55,9 +51,9 @@ This section includes:
 
 [Handling Wake-Up Events](handling-wake-up-events.md)
 
- 
+ 
 
- 
+ 
 
 
 

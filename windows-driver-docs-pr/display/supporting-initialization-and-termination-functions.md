@@ -15,11 +15,7 @@ keywords:
 - graphics drivers WDK Windows 2000 display , termination
 - drawing WDK GDI , termination
 - terminating graphics drivers WDK GDI
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -39,9 +35,9 @@ A graphics driver can support multiple devices and multiple concurrent use of ea
 
 Termination occurs in the reverse order.
 
- 
+ 
 
- 
+ 
 
 
 

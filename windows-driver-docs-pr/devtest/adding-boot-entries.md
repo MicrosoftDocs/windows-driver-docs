@@ -7,11 +7,7 @@ keywords:
 - boot entries WDK
 - adding boot entries
 - Boot.ini files WDK , adding boot entries
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,7 +30,7 @@ In Windows, you use BCDEdit to modify your boot options. To add a new boot entry
 
 **Note**  Before setting BCDEdit options you might need to disable or suspend BitLocker and Secure Boot on the computer.
 
- 
+ 
 
 The easiest way to create a new boot entry is to copy an existing entry and then modify it as you need. To do this, use BCDEdit with the **/copy** option. For example, in the following command, BCDEdit copies the Microsoft Windows boot entry that was last used to boot Windows, identified as **{current}**, and creates a new boot entry. The **/d** description option specifies DebugEntry as the name of the new boot entry.
 

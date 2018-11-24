@@ -3,11 +3,7 @@ title: exca
 description: The exca extension displays PC-Card Interrupt Controller (PCIC) Exchangable Card Architecture (ExCA) registers.
 ms.assetid: a395f7f3-0e1d-4f4c-80a1-018ca52a20fd
 keywords: ["PCIC (PC Card Interrupt Controller)", "ExCA registers", "exca Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!exca** extension displays PC-Card Interrupt Controller (PCIC) Exchangable Card Architecture (ExCA) registers.
 
-```
+```dbgcmd
 !exca BasePort.SocketNumber
 ```
 
@@ -56,7 +52,7 @@ Kdextx86.dll</td>
 </tbody>
 </table>
 
- 
+ 
 
 The **!exca** extension is only available for an x86-based target computer.
 
@@ -64,9 +60,9 @@ The **!exca** extension is only available for an x86-based target computer.
 
 The [**!cbreg**](-cbreg.md) extension can be used to display CardBus Socket registers and CardBus ExCA registers by address.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,11 +3,7 @@ title: Checking for Stuck Threads
 description: Checking for Stuck Threads
 ms.assetid: ffb1ff13-fc4c-4aaf-a8fe-b473b51b9db0
 keywords: ["RPC debugging, stuck threads"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ A similar problem can result if a faulty driver prevents IRPs from completing an
 
 If you suspect that one of these problems may be occurring, use DbgRpc with the **-t** switch (or use the [**!rpcexts.getthreadinfo**](-rpcexts-getthreadinfo.md) extension). The process ID should be used as a parameter. In the following example, assume the process ID is 0xC4:
 
-```
+```dbgcmd
 D:\wmsg>dbgrpc -t -P c4
 Searching for thread info ...
 ## PID  CELL ID   ST TID      LASTTIME
@@ -43,9 +39,9 @@ The TID column gives the thread ID for each thread. The LASTTIME column contains
 
 Whenever the server receives a request, at least one thread will change state, and its time stamp will be updated. Therefore, if an RPC request is made to the server and the request fails but none of the time stamps change, this indicates that the request is not actually reaching the RPC Run-Time. You should investigate the cause of this.
 
- 
+ 
 
- 
+ 
 
 
 

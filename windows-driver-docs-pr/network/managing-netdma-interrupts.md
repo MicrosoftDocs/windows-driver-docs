@@ -10,11 +10,7 @@ keywords:
 - NetDMA WDK networking , interrupts
 - interrupts WDK NetDMA
 - interrupts
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,7 +19,7 @@ ms.localizationpriority: medium
 
 **Note**  The NetDMA interface is not supported in Windows 8 and later.
 
- 
+ 
 
 
 
@@ -40,9 +36,9 @@ This section includes:
 
 [Handling a NetDMA Interrupt DPC](handling-a-netdma-interrupt-dpc.md)
 
- 
+ 
 
- 
+ 
 
 
 

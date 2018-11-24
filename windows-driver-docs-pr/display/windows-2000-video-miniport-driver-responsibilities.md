@@ -6,11 +6,7 @@ keywords:
 - display driver model WDK Windows 2000 , responsibilities
 - Windows 2000 display driver model WDK , responsibilities
 - video miniport drivers WDK Windows 2000 , responsibilities
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,7 +22,7 @@ The display driver uses the video miniport driver for operations that are not fr
 
 **Note**   The video miniport driver must manage all resources (for example, memory resources) shared between the video miniport driver and the display driver. The system does not guarantee that resources acquired in the display driver will always be accessible to the video miniport driver.
 
- 
+ 
 
 The video miniport driver also handles:
 
@@ -38,9 +34,9 @@ The video miniport driver also handles:
 
 The video miniport driver is discussed in detail in [Video Miniport Drivers in the Windows 2000 Display Driver Model](video-miniport-drivers-in-the-windows-2000-display-driver-model.md).
 
- 
+ 
 
- 
+ 
 
 
 

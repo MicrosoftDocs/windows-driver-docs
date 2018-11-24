@@ -11,11 +11,7 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -39,7 +35,7 @@ WIA\_IPS\_PAGE\_HEIGHT must provide a measurement in thousandths of an inch that
 
 **Note**  The compatibility layer within the WIA service does not add support for the WIA\_IPS\_PAGE\_HEIGHT property to the ADF item that is translated from a Windows XP WIA device if the property is not supported on the child item of the device. Applications should not expect that an ADF item will always support WIA\_IPS\_PAGE\_HEIGHT and should always check if it is supported at run time. (Applications should typically check for this support for any property that is be negotiated.)
 
- 
+ 
 
 Requirements
 ------------
@@ -61,7 +57,7 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**WIA\_DPS\_PAGE\_HEIGHT**](wia-dps-page-height.md)
@@ -72,9 +68,9 @@ Requirements
 
 [**WIA\_IPS\_YEXTENT**](wia-ips-yextent.md)
 
- 
+ 
 
- 
+ 
 
 
 

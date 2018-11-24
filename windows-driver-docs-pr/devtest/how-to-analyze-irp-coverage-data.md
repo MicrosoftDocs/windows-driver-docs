@@ -4,11 +4,7 @@ description: How to Analyze IRP Coverage Data
 ms.assetid: 71b87948-8e69-4b4a-9546-ea27e96a4bf8
 keywords:
 - Driver Coverage Toolkit WDK , analyzing data
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -17,7 +13,7 @@ ms.localizationpriority: medium
 
 **Note**  The Driver Coverage Toolkit is no longer needed in Windows 10 and the installer is no longer included in the WDK. To perform tasks described here in Windows 10, instead use [Driver Verifier](driver-verifier.md) and [IRP Logging](irp-logging.md).
 
- 
+ 
 
 This topic provides guidelines to help you analyze IRP coverage data. For guidelines to help you collect IRP coverage data, see [How to Collect IRP Coverage Data](how-to-collect-irp-coverage-data.md).
 
@@ -64,7 +60,7 @@ This section provides information about the following:
 
 **Note**  Decisions about which IRPs to test is dependent on your driver and the IRPs the driver supports. The IRP MJ and MN coverage data can help you evaluate the efficiency of your code coverage tests for your driver.
 
- 
+ 
 
 The IRP MJ and MN coverage data for devnode 9740 is shown in the following example:
 
@@ -287,9 +283,9 @@ The IRP pair coverage data for devnode 9740 is shown in the following example:
 |--------------------------------------------------------|
 ```
 
- 
+ 
 
- 
+ 
 
 
 

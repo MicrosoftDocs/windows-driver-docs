@@ -9,11 +9,7 @@ api_name:
 - wscn Height wscn Override "" wscn UsedDefault ""
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The **Height** element specifies a height value that the scan device supports fo
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:Height wscn:Override="" wscn:UsedDefault=""
   Override = "xs:string"
   UsedDefault = "xs:string">
@@ -93,19 +89,19 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>Heights</strong>](heights.md)</p></td>
+<td><p><a href="heights.md" data-raw-source="[&lt;strong&gt;Heights&lt;/strong&gt;](heights.md)"><strong>Heights</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>InputMediaSize</strong>](inputmediasize.md)</p></td>
+<td><p><a href="inputmediasize.md" data-raw-source="[&lt;strong&gt;InputMediaSize&lt;/strong&gt;](inputmediasize.md)"><strong>InputMediaSize</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>PlatenMaximumSize</strong>](platenmaximumsize.md)</p></td>
+<td><p><a href="platenmaximumsize.md" data-raw-source="[&lt;strong&gt;PlatenMaximumSize&lt;/strong&gt;](platenmaximumsize.md)"><strong>PlatenMaximumSize</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>PlatenMinimumSize</strong>](platenminimumsize.md)</p></td>
+<td><p><a href="platenminimumsize.md" data-raw-source="[&lt;strong&gt;PlatenMinimumSize&lt;/strong&gt;](platenminimumsize.md)"><strong>PlatenMinimumSize</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>PlatenOpticalResolution</strong>](platenopticalresolution.md)</p></td>
+<td><p><a href="platenopticalresolution.md" data-raw-source="[&lt;strong&gt;PlatenOpticalResolution&lt;/strong&gt;](platenopticalresolution.md)"><strong>PlatenOpticalResolution</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -119,7 +115,7 @@ The value of the **Height** element depends on its parent element. For more info
 
 The WSD Scan Service can specify the optional **Override** and **UsedDefault** attributes only when the **Height** element is contained within a **DocumentFinalParameters** hierarchy. For more information about **Override** and **UsedDefault** and their usage, see [**DocumentFinalParameters**](documentfinalparameters.md).
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**DocumentFinalParameters**](documentfinalparameters.md)
@@ -136,9 +132,9 @@ The WSD Scan Service can specify the optional **Override** and **UsedDefault** a
 
 [**Width**](width.md)
 
- 
+ 
 
- 
+ 
 
 
 

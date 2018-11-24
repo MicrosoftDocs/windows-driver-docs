@@ -2,11 +2,7 @@
 title: Mobile operator notification scenarios
 description: Mobile operator notification scenarios
 ms.assetid: 3749d9ab-3dff-4216-a23b-0e75c04d9a22
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -111,9 +107,9 @@ Some MNOs or MVNOs do not support Internet Sharing features on their network or 
 
 [Creating and configuring Internet Sharing experiences](creating-and-configuring-internet-sharing-experiences.md)
 
- 
+ 
 
- 
+ 
 
 
 

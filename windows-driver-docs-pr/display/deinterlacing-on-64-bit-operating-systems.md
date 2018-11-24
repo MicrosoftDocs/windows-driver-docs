@@ -5,11 +5,7 @@ ms.assetid: ffac0c1a-2c92-4beb-9622-26d10e1a06aa
 keywords:
 - deinterlacing WDK DirectX VA , 64-bit
 - 64-bit WDK DirectX VA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,7 +16,7 @@ To ensure that deinterlacing operations initiated by a 32-bit application run su
 
 The following example code demonstrates how the driver should handle the thunk:
 
-```
+```cpp
 switch (lpData->dwFunction) {
 case DXVA_DeinterlaceBltFnCode:
     {   
@@ -39,9 +35,9 @@ case DXVA_DeinterlaceBltFnCode:
     }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

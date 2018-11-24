@@ -2,11 +2,7 @@
 title: I/O request packets
 description: I/O request packets
 ms.assetid: 72288D9A-86F7-4145-8470-FFA1AC26E9BF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +27,9 @@ Some IRPs are passed all the way down the device stack to the physical device ob
 
 The IRP structure is self-contained in the sense that it holds all of the information that a driver needs to handle an I/O request. Some parts of the IRP structure hold information that is common to all of the participating drivers in the stack. Other parts of the IRP hold information that is specific to a particular driver in the stack.
 
- 
+ 
 
- 
+ 
 
 
 

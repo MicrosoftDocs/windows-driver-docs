@@ -2,11 +2,7 @@
 title: Performance bottlenecks in a virtualized networking environment
 description: Potential Performance Bottlenecks in an NDIS Virtualized Networking Environment
 ms.assetid: D295E450-C8AF-43A9-B169-5387EB2A2CF0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -46,7 +42,7 @@ To address performance issues, the virtual machine queue (VMQ) interface allows:
 
 **Note**  Packets that are received from the external network still have to be forwarded by the management operating system to the guest operating system over the VMBus.
 
- 
+ 
 
 For more information about the VMQ interface, see [Virtual Machine Queue (VMQ)](virtual-machine-queue--vmq-.md).
 
@@ -66,9 +62,9 @@ In all cases, the SR-IOV interface eliminates the need for any involvement of th
 
 For more information about the SR-IOV interface, see [Single Root I/O Virtualization (SR-IOV)](single-root-i-o-virtualization--sr-iov-.md).
 
- 
+ 
 
- 
+ 
 
 
 

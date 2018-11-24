@@ -1,15 +1,10 @@
 ---
 title: Package-Aware Print Drivers that Do Not Share Files
-author: windows-driver-content
 description: Package-Aware Print Drivers that Do Not Share Files
 ms.assetid: cd114766-37f4-43b5-8e2a-d85f95c973ab
 keywords:
 - package-aware print drivers WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -18,7 +13,7 @@ ms.localizationpriority: medium
 
 When the files in the driver package are uniquely named and do not occur in any other driver package, add a PrinterPackageInstallation section to the INF file. In that section, add the **PackageAware**=TRUE keyword as shown in line 23 of the following example:
 
-```
+```cpp
 [Version]
 Signature="$Windows NT$"
 ClassGUID={4D36E979-E325-11CE-BFC1-08002BE10318}
@@ -59,9 +54,9 @@ OEMCORE.DLL = 1
 MediaDescription = "Description for Vendor provided media"
 ```
 
- 
+ 
 
- 
+ 
 
 
 

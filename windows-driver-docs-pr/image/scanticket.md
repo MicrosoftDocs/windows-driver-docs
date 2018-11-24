@@ -9,11 +9,7 @@ api_name:
 - wscn ScanTicket
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **ScanTicket** element defines all of the description and processin
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ScanTicket>
   child elements
 </wscn:ScanTicket>
@@ -50,10 +46,10 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>DocumentParameters</strong>](documentparameters.md)</p></td>
+<td><p><a href="documentparameters.md" data-raw-source="[&lt;strong&gt;DocumentParameters&lt;/strong&gt;](documentparameters.md)"><strong>DocumentParameters</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>JobDescription</strong>](jobdescription.md)</p></td>
+<td><p><a href="jobdescription.md" data-raw-source="[&lt;strong&gt;JobDescription&lt;/strong&gt;](jobdescription.md)"><strong>JobDescription</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -72,13 +68,13 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>CreateScanJobRequest</strong>](createscanjobrequest.md)</p></td>
+<td><p><a href="createscanjobrequest.md" data-raw-source="[&lt;strong&gt;CreateScanJobRequest&lt;/strong&gt;](createscanjobrequest.md)"><strong>CreateScanJobRequest</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>Job</strong>](job.md)</p></td>
+<td><p><a href="job.md" data-raw-source="[&lt;strong&gt;Job&lt;/strong&gt;](job.md)"><strong>Job</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>ValidateScanTicketRequest</strong>](validatescanticketrequest.md)</p></td>
+<td><p><a href="validatescanticketrequest.md" data-raw-source="[&lt;strong&gt;ValidateScanTicketRequest&lt;/strong&gt;](validatescanticketrequest.md)"><strong>ValidateScanTicketRequest</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -92,7 +88,7 @@ The member elements of **ScanTicket** map directly to an instance of a [**Job**]
 
 The client can request the **ScanTicket** element for a particular job by calling.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**CreateScanJobRequest**](createscanjobrequest.md)
@@ -111,9 +107,9 @@ The client can request the **ScanTicket** element for a particular job by callin
 
 [**ValidateScanTicketRequest**](validatescanticketrequest.md)
 
- 
+ 
 
- 
+ 
 
 
 

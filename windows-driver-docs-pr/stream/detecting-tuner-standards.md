@@ -1,6 +1,5 @@
 ---
 title: Detecting Tuner Standards
-author: windows-driver-content
 description: Detecting Tuner Standards
 ms.assetid: 02923d8f-d8a2-427d-8957-2ffb0273b84a
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - TV signal formats WDK video capture
 - KSPROPERTY_TUNER_STANDARD_MODE
 - detecting tuner standards WDK video capture
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +22,9 @@ A video capture minidriver that supports the KSPROPERTY\_TUNER\_STANDARD\_MODE p
 
 For analog signals, the audio standards (PAL\_B / PAL\_G - NICAM / BTSC) are the most difficult to detect. However, if suitable logic is embedded in the minidriver, the minidriver will be able to automatically detect these audio standards too.
 
- 
+ 
 
- 
+ 
 
 
 

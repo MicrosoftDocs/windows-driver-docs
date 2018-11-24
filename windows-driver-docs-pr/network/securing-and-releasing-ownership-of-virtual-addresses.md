@@ -7,11 +7,7 @@ keywords:
 - SAN proxy drivers WDK , virtual addresses
 - virtual addresses WDK SANs
 - ownership WDK virtual addresses
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,13 +23,13 @@ If the virtual-to-physical mappings for the cached buffer are scheduled to chang
 
 **Note**  A driver that tries to access a user-mode buffer that was secured through a call to **MmSecureVirtualMemory** can potentially bring down the operating system. Therefore, when the proxy driver accesses such a user-mode buffer, it must also use the **try/except** mechanism around the code that accesses the buffer. For more information about **try/except**, see the Visual C++ documentation.
 
- 
+ 
 
 A SAN service provider can send I/O control (IOCTL) requests to the proxy driver to secure and release ownership of a buffer. For more information, see [Implementing IOCTLs for a SAN Service Provider](implementing-ioctls-for-a-san-service-provider.md).
 
- 
+ 
 
- 
+ 
 
 
 

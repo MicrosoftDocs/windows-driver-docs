@@ -2,11 +2,7 @@
 title: Notifications
 description: Notifications
 ms.assetid: 55292cae-9255-4dae-9f60-93ce22253e60
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +27,9 @@ Your app can receive background events to process SMS or USSD notifications. For
 
 [Mobile broadband app scenarios](mobile-broadband-app-scenarios.md)
 
- 
+ 
 
- 
+ 
 
 
 

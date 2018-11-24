@@ -1,5 +1,5 @@
 ---
-title: FSCTL\_IS\_PATHNAME\_VALID control code
+title: FSCTL_IS_PATHNAME_VALID control code
 description: The FSCTL\_IS\_PATHNAME\_VALID control code performs static analysis of the supplied pathname and returns a status value that indicates whether the pathname is well formed (for example, no illegal characters, acceptable path length, and so on).
 ms.assetid: 3f95ae2c-a376-4c68-9e84-dde22aa7e315
 keywords: ["FSCTL_IS_PATHNAME_VALID control code Installable File System Drivers"]
@@ -11,11 +11,7 @@ api_location:
 - Ntifs.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -72,9 +68,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

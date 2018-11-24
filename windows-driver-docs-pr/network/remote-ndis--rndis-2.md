@@ -6,11 +6,7 @@ keywords:
 - Remote NDIS WDK networking
 - network drivers WDK , Remote NDIS
 - RNDIS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,9 +31,9 @@ This section includes:
 [Remote NDIS To USB Mapping](remote-ndis-to-usb-mapping.md)
 
 
- 
+ 
 
- 
+ 
 
 
 

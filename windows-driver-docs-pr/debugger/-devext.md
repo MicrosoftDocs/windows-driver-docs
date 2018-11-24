@@ -3,11 +3,7 @@ title: devext
 description: The devext extension displays bus-specific device extension information for devices on a variety of buses.
 ms.assetid: b4d4f595-9b0b-40e2-8790-2c913a50c8fe
 keywords: ["usbhub extension (obsolete)", "hidfdo extension (obsolete)", "hidpdo extension (obsolete)", "device extension", "bus", "devext Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,9 +18,9 @@ ms.localizationpriority: medium
 
 The **!devext** extension displays bus-specific device extension information for devices on a variety of buses.
 
-```
+```dbgcmd
 !devext Address TypeCode
-```
+```dbgcmd
 
 ## <span id="ddk__devext_dbg"></span><span id="DDK__DEVEXT_DBG"></span>Parameters
 
@@ -86,7 +82,7 @@ Specifies the type of object that owns the device extension to be displayed. Typ
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="DLL"></span><span id="dll"></span>DLL
 
@@ -107,7 +103,7 @@ Specifies the type of object that owns the device extension to be displayed. Typ
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -122,7 +118,7 @@ For those object types that are no longer supported by **!devext**, use the [**d
 
 Here is an example for an ISA PnP device extension:
 
-```
+```dbgcmd
 kd> !devext e0000165fff32190 ISAPNP
 ISA PnP FDO @ 0x00000000, DevExt @ 0xe0000165fff32190, Bus # 196639
 Flags (0x854e2530)  DF_ACTIVATED, DF_QUERY_STOPPED, 
@@ -144,7 +140,7 @@ DevicePowerState     - Unspecified
 
 Here is an example for a PCI device:
 
-```
+```dbgcmd
 kd> !devext e0000000858c31b0 PCI
 PDO Extension, Bus 0x0, Device 0, Function 0.
   DevObj 0xe0000000858c3060 PCI Parent Bus FDO DevExt 0xe0000000858c4960
@@ -158,9 +154,9 @@ PDO Extension, Bus 0x0, Device 0, Function 0.
   Requirements: <none>
 ```
 
- 
+ 
 
- 
+ 
 
 
 

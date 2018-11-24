@@ -2,11 +2,7 @@
 title: Managing Hyper-V Extensible Switch Policies
 description: Managing Hyper-V Extensible Switch Policies
 ms.assetid: F58A4BC0-C5C6-440D-BEA3-2224F7051BA5
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,9 +17,9 @@ This section describes how a Hyper-V extensible switch extension manages port an
 
 For more information on extensible switch policies, see [Overview of Hyper-V Extensible Switch Policies](overview-of-hyper-v-extensible-switch-policies.md).
 
- 
+ 
 
- 
+ 
 
 
 

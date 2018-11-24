@@ -1,11 +1,7 @@
 ---
 Description: Scoping Service Events
 title: Scoping Service Events
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -43,9 +39,9 @@ For objects within the Contact Service, *pContent-&gt;ContainerFunctionalObjectI
 
 [The WPD Driver Samples](the-wpd-driver-samples.md)
 
- 
+ 
 
- 
+ 
 
 
 

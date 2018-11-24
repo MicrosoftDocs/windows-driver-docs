@@ -4,11 +4,7 @@ description: MPEG2_D
 ms.assetid: f5cb5e49-c64c-46d2-92bb-68db1d9c5d18
 keywords:
 - MPEG2_D restricted profile WDK DirectX VA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -43,7 +39,7 @@ Because the MPEG2\_D restricted profile is defined by a relaxation of the accele
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Restrictions_on_DXVA_ConfigPictureDecode"></span><span id="restrictions_on_dxva_configpicturedecode"></span><span id="RESTRICTIONS_ON_DXVA_CONFIGPICTUREDECODE"></span>Restrictions on DXVA\_ConfigPictureDecode
 
@@ -72,7 +68,7 @@ These restrictions add an additional configuration to the [minimal interoperabil
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Restrictions_on_DXVA_ConfigAlphaCombine"></span><span id="restrictions_on_dxva_configalphacombine"></span><span id="RESTRICTIONS_ON_DXVA_CONFIGALPHACOMBINE"></span>Restrictions on DXVA\_ConfigAlphaCombine
 
@@ -90,12 +86,12 @@ These restrictions add an additional configuration to the [minimal interoperabil
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>bConfigBlendType</strong></p></td>
-<td align="left"><p>Zero or 1 (at the accelerator's discretion).</p></td>
+<td align="left"><p>Zero or 1 (at the accelerator&#39;s discretion).</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Restrictions_on_DXVA_ConfigAlphaLoad"></span><span id="restrictions_on_dxva_configalphaload"></span><span id="RESTRICTIONS_ON_DXVA_CONFIGALPHALOAD"></span>Restrictions on DXVA\_ConfigAlphaLoad
 
@@ -113,16 +109,16 @@ These restrictions add an additional configuration to the [minimal interoperabil
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>bConfigDataType</strong></p></td>
-<td align="left"><p>Any value (at the accelerator's discretion).</p></td>
+<td align="left"><p>Any value (at the accelerator&#39;s discretion).</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

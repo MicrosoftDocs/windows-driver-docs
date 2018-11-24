@@ -1,6 +1,5 @@
 ---
 title: Framework I/O Queue Object
-author: windows-driver-content
 description: Framework I/O Queue Object
 ms.assetid: b343c61a-8252-4e46-9013-bef29d9ec360
 keywords:
@@ -9,11 +8,7 @@ keywords:
 - I/O queue objects WDK UMDF
 - IWDFIoQueue
 - queue objects WDK UMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +23,9 @@ When the driver creates an I/O queue, it specifies a dispatch model that control
 
 When drivers create I/O queues, they can provide interfaces for callback functions that the framework calls to notify the driver when events related to the interfaces occur. For more information, see [I/O Queue Event Callback Functions](i-o-queue-event-callback-functions.md).
 
- 
+ 
 
- 
+ 
 
 
 

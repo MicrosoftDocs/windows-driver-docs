@@ -1,17 +1,12 @@
 ---
 title: Event Handling in AVStream
-author: windows-driver-content
 description: Event Handling in AVStream
 ms.assetid: 7add2055-8d3f-432d-8aa1-44459ac197dd
 keywords:
 - events WDK AVStream
 - AVStream events WDK
 - automation tables WDK AVStream
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +26,9 @@ When AVStream receives an event enable request, it generates a KSEVENT\_ENTRY st
 
 If you do not provide an *AVStrAddEvent* handler, then by default AVStream adds the event to the object list. Your minidriver does not receive a [**KSEVENT\_ENTRY**](https://msdn.microsoft.com/library/windows/hardware/ff561853) pointer. Your minidriver can trigger the event by calling [**KsFilterGenerateEvents**](https://msdn.microsoft.com/library/windows/hardware/ff562541) or [**KsPinGenerateEvents**](https://msdn.microsoft.com/library/windows/hardware/ff563500).
 
- 
+ 
 
- 
+ 
 
 
 

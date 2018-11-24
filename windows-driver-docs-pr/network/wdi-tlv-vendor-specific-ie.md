@@ -1,13 +1,8 @@
 ---
 title: WDI_TLV_VENDOR_SPECIFIC_IE
-author: windows-driver-content
 description: WDI_TLV_VENDOR_SPECIFIC_IE is a TLV that contains a list of vendor-specific IEs.
 ms.assetid: 66995086-329A-49F1-B531-2AD2383473CF
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_VENDOR_SPECIFIC_IE Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -35,7 +30,7 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 |-----------|--------------------------------------------------------------------|
 | UINT8\[\] | An array of UINT8 elements that specifies the vendor-specific IEs. |
 
- 
+ 
 
 Requirements
 ------------
@@ -61,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

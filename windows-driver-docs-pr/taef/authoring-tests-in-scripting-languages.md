@@ -2,11 +2,7 @@
 title: Authoring Tests in Scripting Languages
 description: Authoring Tests in Scripting Languages
 ms.assetid: 4F5328E4-4817-4391-BF56-EC9E7F469AA7
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,9 +21,9 @@ Out of the box, Windows supports JScript and VBScript only.
 ## <span id="Script_Test_File_Format"></span><span id="script_test_file_format"></span><span id="SCRIPT_TEST_FILE_FORMAT"></span>Script Test File Format
 
 
-For script language tests, TAEF uses a slightly modified [Windows Script Components](http://msdn.microsoft.com/library/07zhfkh8.aspx) file format. The following examples shows a test file that contains VBScript and JScript test classes.
+For script language tests, TAEF uses a slightly modified [Windows Script Components](https://msdn.microsoft.com/library/07zhfkh8.aspx) file format. The following examples shows a test file that contains VBScript and JScript test classes.
 
-```
+```cpp
 1   <?xml version="1.0" ?>
 2
 3   <!-- Debugging helpers -->
@@ -139,13 +135,13 @@ For script language tests, TAEF uses a slightly modified [Windows Script Compone
 
 This example is an XML file and starts with an ordinary XML header:
 
-```
+```cpp
 <?xml version="1.0" ?>
 ```
 
 You configure debug settings for your file by setting the attributes **error** and **debug**:
 
-```
+```cpp
 <?component error="true" debug="true"?>
 ```
 
@@ -154,7 +150,7 @@ You configure debug settings for your file by setting the attributes **error** a
 
 The **&lt;package&gt;** element encloses test class definitions in a **.wsc** file. After this element, you can insert module level metadata by adding **ModuleProperty** elements:
 
-```
+```cpp
 <ModuleProperty name = "Owner" value = "Someone"/>
 ```
 
@@ -164,7 +160,7 @@ The **Component** element starts the declaration for the script test class. This
 
 After the **Component** element, you can insert class level metadata by using the **TestClassProperty** element. As with the **ModuleProperty** element, it must have the **name** and **value** attributes.
 
-At this point, you can also create objects and define references to the objects. See [Other Components section](http://msdn.microsoft.com/library/ye6w00x4.aspx) for more information. Lines 15, 18, 49, and 52 in the XML example show how to reference and initialize the **WEX.Logger.Log** object.
+At this point, you can also create objects and define references to the objects. See [Other Components section](https://msdn.microsoft.com/library/ye6w00x4.aspx) for more information. Lines 15, 18, 49, and 52 in the XML example show how to reference and initialize the **WEX.Logger.Log** object.
 
 The **&lt;public&gt;** element encloses the test script module's test method declarations. You declare a test method by specifying the test method name in the **name** attribute of a **&lt;method&gt;** element. You can also add the test method property inside the **&lt;method&gt;** element. As with properties at other levels, it is not mandatory. However, if you add it, you must include the **name** and **value** attributes.
 
@@ -172,9 +168,9 @@ The **&lt;script&gt;** element identifies the test script language and encloses 
 
 The **&lt;!\[CDATA\[\]\]&gt;** section contains the actual implementation of the tests - the code written in the scripting language. In this section, you implement the test methods that you declared in the **&lt;public&gt; &lt;/public&gt;** section.
 
- 
+ 
 
- 
+ 
 
 
 

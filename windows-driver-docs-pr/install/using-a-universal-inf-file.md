@@ -2,11 +2,7 @@
 title: Using a Universal INF File
 description: If you are building a universal or mobile driver package, you must use a universal INF file.
 ms.assetid: 2CBEB814-974D-4E8B-A44A-2CFAA8D4C94E
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -59,10 +55,10 @@ You can use any INF directive in a universal INF file except for the following:
 The following directives are valid with some caveats:
 
 -   The [**INF AddReg Directive**](inf-addreg-directive.md) is valid if entries in the specified *add-registry-section* have a *reg-root* value of **HKR**, or in the following cases:
-	-	For registration of [Component Object Model](https://msdn.microsoft.com/en-us/library/ee663262(v=vs.85).aspx) (COM) objects, a key may be written under:
+	-	For registration of [Component Object Model](https://msdn.microsoft.com/library/ee663262(v=vs.85).aspx) (COM) objects, a key may be written under:
 		-	HKCR
 		-	HKLM\SOFTWARE\Classes
-	-	For creation of [Hardware Media Foundation Transforms](https://msdn.microsoft.com/en-us/library/windows/desktop/ms703138.aspx) (MFTs), a key may be written under:
+	-	For creation of [Hardware Media Foundation Transforms](https://msdn.microsoft.com/library/windows/desktop/ms703138.aspx) (MFTs), a key may be written under:
 		-	HKLM\SOFTWARE\Microsoft\Windows Media Foundation
 		-	HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows Media Foundation
 		-	HKLM\SOFTWARE\WOW3232Node\Microsoft\Windows Media Foundation
@@ -75,7 +71,7 @@ The following directives are valid with some caveats:
         	**Note:**  CopyFiles may not be used to rename a file for which **DestinationDirs** includes *dirid* 13. Also, *dirid* 13 is only valid on Windows 10 products for a limited subset of device installation scenarios.  Please consult guidance and samples for your specific device class for more details.
     -   10,SysWOW64 (corresponds to %WINDIR%\\SysWOW64)
 	-   10,*vendor-specific subdirectory name*  
-			**Note:** In Windows 10 Fall Creators Update, using *dirid* 10 with a vendor-specific subdirectory name is valid in a universal INF as measured using the [InfVerif](../devtest/infverif.md) tool.  In later releases, this value may not be supported.  We recommend moving to *dirid* 13.
+			**Note:** In Windows 10, version 1709, using *dirid* 10 with a vendor-specific subdirectory name is valid in a universal INF as measured using the [InfVerif](../devtest/infverif.md) tool.  In later releases, this value may not be supported.  We recommend moving to *dirid* 13.
 
 ## See Also
 

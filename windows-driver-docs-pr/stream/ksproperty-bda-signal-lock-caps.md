@@ -11,11 +11,7 @@ api_location:
 - Bdamedia.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,7 +20,7 @@ ms.localizationpriority: medium
 
 Clients use KSPROPERTY\_BDA\_SIGNAL\_LOCK\_CAPS to determine the lock types that the driver can support for a signal.
 
-### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
+### Usage Summary Table
 
 <table>
 <colgroup>
@@ -49,12 +45,12 @@ Clients use KSPROPERTY\_BDA\_SIGNAL\_LOCK\_CAPS to determine the lock types that
 <td><p>No</p></td>
 <td><p>Pin or Filter</p></td>
 <td><p>KSP_NODE</p></td>
-<td><p>A 32-bit value that contains a bitwise OR of [<strong>BDA_LockType</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556526)-typed values</p></td>
+<td><p>A 32-bit value that contains a bitwise OR of <a href="https://msdn.microsoft.com/library/windows/hardware/ff556526" data-raw-source="[&lt;strong&gt;BDA_LockType&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556526)"><strong>BDA_LockType</strong></a>-typed values</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -81,7 +77,7 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**BDA\_LockType**](https://msdn.microsoft.com/library/windows/hardware/ff556526)
@@ -90,9 +86,9 @@ Requirements
 
 [**KSPROPERTY\_BDA\_SIGNAL\_LOCK\_TYPE**](ksproperty-bda-signal-lock-type.md)
 
- 
+ 
 
- 
+ 
 
 
 

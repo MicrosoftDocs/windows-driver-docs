@@ -3,11 +3,7 @@ title: Bug Check 0xF8 RAMDISK_BOOT_INITIALIZATION_FAILED
 description: The RAMDISK_BOOT_INITIALIZATION_FAILED bug check has a value of 0x000000F8. This indicates that an initialization failure occurred while attempting to boot from the RAM disk.
 ms.assetid: 73b053af-6ecb-48a3-b09d-e28d39390d11
 keywords: ["Bug Check 0xF8 RAMDISK_BOOT_INITIALIZATION_FAILED", "RAMDISK_BOOT_INITIALIZATION_FAILED"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The RAMDISK\_BOOT\_INITIALIZATION\_FAILED bug check has a value of 0x000000F8. This indicates that an initialization failure occurred while attempting to boot from the RAM disk.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## RAMDISK\_BOOT\_INITIALIZATION\_FAILED Parameters
 
@@ -63,11 +59,11 @@ The RAMDISK\_BOOT\_INITIALIZATION\_FAILED bug check has a value of 0x000000F8. T
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

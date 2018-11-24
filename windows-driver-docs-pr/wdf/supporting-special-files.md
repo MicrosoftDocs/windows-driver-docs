@@ -1,6 +1,5 @@
 ---
 title: Supporting Special Files
-author: windows-driver-content
 description: Supporting Special Files
 ms.assetid: 350e715f-be36-4999-99a2-6175d9763b3f
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - paging files WDK KMDF
 - dump files WDK KMDF
 - hibernation files WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +28,9 @@ If your driver calls [**WdfDeviceSetSpecialFileSupport**](https://msdn.microsoft
 
 After a driver has called [**WdfDeviceAddDependentUsageDeviceObject**](https://msdn.microsoft.com/library/windows/hardware/ff545864), it can call [**WdfDeviceRemoveDependentUsageDeviceObject**](https://msdn.microsoft.com/library/windows/hardware/ff546829) to remove a device's dependency on another device.
 
- 
+ 
 
- 
+ 
 
 
 

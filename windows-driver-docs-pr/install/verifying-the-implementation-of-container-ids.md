@@ -2,11 +2,7 @@
 title: Verifying the Implementation of Container IDs
 description: Verifying the Implementation of Container IDs
 ms.assetid: 961f3c69-8010-4bf5-9bdf-cc01ff40546a
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +25,9 @@ The physical device, which has one primary function, or "container," is represen
 
 For more information about the removable device capability, see [Container IDs Generated from the Removable Device Capability](container-ids-generated-from-the-removable-device-capability.md).
 
- 
+ 
 
- 
+ 
 
 
 

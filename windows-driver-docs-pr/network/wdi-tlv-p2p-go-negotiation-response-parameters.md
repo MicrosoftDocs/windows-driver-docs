@@ -1,13 +1,8 @@
 ---
 title: WDI_TLV_P2P_GO_NEGOTIATION_RESPONSE_PARAMETERS
-author: windows-driver-content
 description: WDI_TLV_P2P_GO_NEGOTIATION_RESPONSE_PARAMETERS is a TLV that contains incoming GO Negotiation Response parameters.
 ms.assetid: 78C9B274-FAF0-4B2E-98A9-865A65105DA1
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_GO_NEGOTIATION_RESPONSE_PARAMETERS Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -42,7 +37,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | UINT8                                             | Specifies the Wi-Fi Direct Group capability bitmask. The bitmask matches those defined in Table 13-Group Capability Bitmap definition of the Wi-Fi P2P technical specification. |
 | UINT8                                             | Specifies the bits set by the operating system in the Group capability bitmap above.                                                                                            |
 
- 
+ 
 
 Requirements
 ------------
@@ -68,9 +63,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

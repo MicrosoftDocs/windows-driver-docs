@@ -11,11 +11,7 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -56,7 +52,7 @@ The accepted values for the **WIA\_IPS\_PRINTER\_ENDORSER\_FONT\_TYPE** property
 | WIA\_PRINT\_FONT\_LARGE\_ITALIC\_EXTRA\_BOLD | Large italic and extra bold font. |
 | WIA\_PRINT\_FONT\_LARGE\_ITALIC              | Large italic font.                |
 
- 
+ 
 
 The **WIA\_IPS\_PRINTER\_ENDORSER\_FONT\_TYPE** property is optional for the Imprinter/Endorser items. When this is not supported, the printer/endorser device does not support font configuration.
 
@@ -76,9 +72,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

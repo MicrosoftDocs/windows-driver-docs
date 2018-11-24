@@ -1,6 +1,5 @@
 ---
 title: GDL Parser
-author: windows-driver-content
 description: GDL Parser
 ms.assetid: abb0e9b7-db98-4f8c-af15-83cd1841e5c2
 keywords:
@@ -12,11 +11,7 @@ keywords:
 - parsing GDL data WDK
 - snapshots WDK GDL , GDL parser
 - parser WDK GDL
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,9 +30,9 @@ For more information about template data types, see [GDL Template Data Types](gd
 
 For troubleshooting information about parsing, see [Troubleshooting GDL Parsing](troubleshooting-gdl-parsing.md).
 
- 
+ 
 
- 
+ 
 
 
 

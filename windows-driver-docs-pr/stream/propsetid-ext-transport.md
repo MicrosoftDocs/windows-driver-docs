@@ -2,11 +2,7 @@
 title: PROPSETID\_EXT\_TRANSPORT
 description: PROPSETID\_EXT\_TRANSPORT
 ms.assetid: 2e96dec7-43a9-44a4-9636-4ccb5244d5bd
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -48,9 +44,9 @@ Support for this property set is optional and should be implemented only by mini
 
 The DirectShow **IAMExtTransport** interface (see the DirectShow documentation in the Microsoft Windows SDK). provides access to the properties of this set. The interface defines many methods, but only a subset for external device control are implemented.
 
- 
+ 
 
- 
+ 
 
 
 

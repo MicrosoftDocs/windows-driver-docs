@@ -1,6 +1,5 @@
 ---
 title: Setting Error Source Information
-author: windows-driver-content
 description: Setting Error Source Information
 ms.assetid: 87c61c3e-768a-4784-b9ec-1ec85d65ea81
 keywords:
@@ -9,11 +8,7 @@ keywords:
 - WHEA WDK , setting error source information
 - Windows Hardware Error Architecture WDK , setting error source information
 - hardware error sources WDK WHEA , setting information
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,7 +19,7 @@ A user-mode application can set the information for a particular [error source](
 
 The following code example shows how to set the error source information for a particular error source.
 
-```
+```cpp
 IWbemServices *pIWbemServices;
 WHEA_ERROR_SOURCE_DESCRIPTOR ErrorSourceInfo;
 BSTR ClassName;
@@ -177,9 +172,9 @@ An application typically sets the information for an error source when it modifi
 
 Any changes that are made to the configuration of an error source will not take effect until after the system is restarted.
 
- 
+ 
 
- 
+ 
 
 
 

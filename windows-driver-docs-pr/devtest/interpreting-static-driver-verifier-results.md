@@ -10,11 +10,7 @@ keywords:
 - StaticDV WDK , verification results
 - SDV WDK , verification results
 - verification results WDK Static Driver Verifier
-ms.author: windowsdriverdev
 ms.date: 04/02/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -78,9 +74,9 @@ A spaceout is considered to be an inconclusive result. If SDV reports a spaceout
 
 The number of times that SDV encountered an internal error from which it could not recover.  See the [Static Driver Verifier Error Messages](https://docs.microsoft.com/windows-hardware/drivers/devtest/static-driver-verifier-error-messages) page for more information on errors and debugging.
 
- 
+ 
 
- 
+ 
 
 
 

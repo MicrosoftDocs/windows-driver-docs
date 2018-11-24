@@ -1,14 +1,9 @@
 ---
 title: Reading Restart Records from a CLFS Stream
-author: windows-driver-content
 description: Reading Restart Records from a CLFS Stream
 ms.assetid: 310545f6-d10d-481e-829d-287b045b98cd
 keywords: ["Common Log File System WDK kernel , restart records", "CLFS WDK kernel , restart records", "restart records WDK CLFS", "reading restart records"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,11 +21,11 @@ To read all of the restart records in a Common Log File System (CLFS) stream (in
 
 **Note**  When you call [**ClfsWriteRestartArea**](https://msdn.microsoft.com/library/windows/hardware/ff541770) to write a restart record to a stream, CLFS automatically sets the previous LSN of that record to the LSN of the previous restart record in the stream. Those previous LSNs form the chain that is followed by repeated calls to **ClfsReadPreviousRestartArea**.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

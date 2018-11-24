@@ -1,6 +1,5 @@
 ---
 title: Notification Callback
-author: windows-driver-content
 description: Notification Callback
 ms.assetid: cf884097-45a4-4ef3-8ebb-64c006838235
 keywords:
@@ -9,11 +8,7 @@ keywords:
 - notification callback WDK print spooler
 - IPrintAsyncNotifyCallback
 - callbacks WDK spooler notification
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +22,7 @@ Any print component or listening application that is interested in receiving not
 
 A listening application must provide a pointer to an **IPrintAsyncNotifyCallback** interface when it registers to receive notifications. The notification sender must provide a pointer to an **IPrintAsyncNotifyCallback** interface if it is interested in a response and it creates a bidirectional channel.
 
-```
+```cpp
 #define INTERFACE IPrintAsyncNotifyCallback
 DECLARE_INTERFACE_(IPrintAsyncNotifyCallback, IUnknown)
 {
@@ -65,9 +60,9 @@ When the notification channel is closed at one end, the spooler service calls th
 
 If either the server or the listening application dies, the spooler rundown code detects this condition and the "still alive" end of the channel that is still alive is notified by a **IPrintAsyncNotifyCallback::ChannelClosed** call, in which a NOTIFICATION\_RELEASE message is delivered.
 
- 
+ 
 
- 
+ 
 
 
 

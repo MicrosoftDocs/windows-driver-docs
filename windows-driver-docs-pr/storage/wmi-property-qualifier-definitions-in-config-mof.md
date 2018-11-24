@@ -3,6 +3,7 @@ title: WMI Property Qualifier Definitions in Config.mof
 description: WMI Property Qualifier Definitions in Config.mof
 ms.assetid: f277c3f4-f1a8-48e4-9ef5-9b5af2db2ef3
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # WMI Property Qualifier Definitions in Config.mof
@@ -21,9 +22,9 @@ If you apply one of the preceding qualifiers to a data field in a WMI class defi
 
 For a general discussion of WMI property qualifiers, see [WMI Property Qualifiers](https://msdn.microsoft.com/library/windows/hardware/ff566365).
 
- 
+ 
 
- 
+ 
 
 
 

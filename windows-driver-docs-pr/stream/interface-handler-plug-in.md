@@ -1,16 +1,11 @@
 ---
 title: Interface Handler Plug-in
-author: windows-driver-content
 description: Interface Handler Plug-in
 ms.assetid: cd81f622-d11c-4b40-ac78-9324716e0a2c
 keywords:
 - Kernel Streaming Proxy WDK AVStream , interface handler
 - interface handler WDK AVStream
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,7 +16,7 @@ You can write an interface handler plug-in to provide programmatic user-mode acc
 
 Your interface plug-in class could derive from [CUnknown](http://go.microsoft.com/fwlink/p/?linkid=106451):
 
-```
+```cpp
 class CMyPluginInterface : public CUnknown 
 {
 public:
@@ -39,7 +34,7 @@ Specifically, the **CreateInstance** method of the plug-in receives a pointer to
 
 You can then query this outer object for a pointer to the MS-provided [IKsPropertySet](https://msdn.microsoft.com/library/windows/hardware/ff560718) interface:
 
-```
+```cpp
 hResult = piOuterUnknown->QueryInterface(
                 __uuidof( piKsPropertySet ),
                  &piKsPropertySet );
@@ -53,9 +48,9 @@ Now you can implement Get and Set methods in your class that call [**IKsProperty
 
 Alternatively, you can query the outer unknown for a pointer to its **IKsObject** interface. Then call [**IKsObject::KsGetObjectHandle**](https://msdn.microsoft.com/library/windows/hardware/ff559890) to obtain a file handle. Now you manipulate device properties by calling [**KsSynchronousIoControlDevice**](https://msdn.microsoft.com/library/windows/hardware/ff567143) with this file handle.
 
- 
+ 
 
- 
+ 
 
 
 

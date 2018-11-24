@@ -2,11 +2,7 @@
 title: Bluetooth Proximity Profile
 description: The Proximity Profile defines two roles intended to allow devices to detect their proximity.
 ms.assetid: 6BA67CA4-AAE4-4D01-97A4-65970704E7ED
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -82,7 +78,7 @@ The *Short Id* service IDs assigned for a Proximity profile service are:
 </tbody>
 </table>
 
- 
+ 
 
 The Bluetooth SIG maintains the most up to date [list of services](http://go.microsoft.com/fwlink/p/?linkid=320723).
 
@@ -103,13 +99,13 @@ Therefore, to establish a Bluetooth LE connection an app needs to register a han
 
 **Note**  In order to minimize power consumption, Windows does not actively monitor the RSSI value of the link by polling the local Bluetooth radio controller.
 
- 
+ 
 
 Power considerations are described in [Proximity Profile Implementation Details](proximity-profile-implementation-details.md).
 
- 
+ 
 
- 
+ 
 
 
 

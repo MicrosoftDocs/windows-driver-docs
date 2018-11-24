@@ -12,6 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # DIF_NEWDEVICEWIZARD_SELECT
@@ -46,7 +47,7 @@ Immediately before Windows displays the "Select a Device Driver" page.
 </tbody>
 </table>
 
- 
+ 
 
 ### Installer Input
 
@@ -135,9 +136,9 @@ Requirements
 
 [**SP_NEWDEVICEWIZARD_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff553305)
 
- 
+ 
 
- 
+ 
 
 
 

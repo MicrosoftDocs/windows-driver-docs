@@ -3,11 +3,7 @@ title: Bug Check 0x85 SETUP_FAILURE
 description: The SETUP_FAILURE bug check has a value of 0x00000085. This bug check indicates that a fatal error occurred during setup.
 ms.assetid: 52c93485-7c20-4a7e-8fc7-d520753973ed
 keywords: ["Bug Check 0x85 SETUP_FAILURE", "SETUP_FAILURE"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The SETUP\_FAILURE bug check has a value of 0x00000085. This bug check indicates that a fatal error occurred during setup.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## SETUP\_FAILURE Parameters
 
@@ -102,11 +98,11 @@ Parameter 1 indicates the type of violation. Parameter 4 is not used. The meanin
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

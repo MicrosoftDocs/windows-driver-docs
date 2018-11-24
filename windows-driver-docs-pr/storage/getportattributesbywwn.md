@@ -13,6 +13,7 @@ api_location:
 api_type:
 - LibDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # GetPortAttributesByWWN function
@@ -25,9 +26,9 @@ Syntax
 
 ```ManagedCPlusPlus
 void GetPortAttributesByWWN(
-   [in, HBAType("HBA_WWN")] uint8                                     wwn[8],
-   [out, HBA_STATUS_QUALIFIERS] HBA_STATUS                            HBAStatus,
-   [out, HBAType("HBA_PORTATTRIBUTES")] MSFC_HBAPortAttributesResults PortAttributes
+   [in, HBAType("HBA_WWN")] uint8                                     wwn[8],
+   [out, HBA_STATUS_QUALIFIERS] HBA_STATUS                            HBAStatus,
+   [out, HBAType("HBA_PORTATTRIBUTES")] MSFC_HBAPortAttributesResults PortAttributes
 );
 ```
 
@@ -86,9 +87,9 @@ Requirements
 
 [**MSFC\_HBAPortAttributesResults**](https://msdn.microsoft.com/library/windows/hardware/ff562510)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,16 +1,11 @@
 ---
 title: Filter Specific Allocators
-author: windows-driver-content
 description: Filter Specific Allocators
 ms.assetid: 581f3000-4e66-4ba0-979d-b187115a30b2
 keywords:
 - filter specific allocators WDK kernel streaming
 - filter allocators WDK kernel streaming
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -40,9 +35,9 @@ When a free request is submitted to the allocator, the allocator signals the str
 
 It is possible for both the DISPATCH\_LEVEL interface and the IRP-based interface to contend for free frames. KS synchronizes this queue using the cancel spin lock.
 
- 
+ 
 
- 
+ 
 
 
 

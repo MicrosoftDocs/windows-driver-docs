@@ -12,6 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # KSCATEGORY_BDA_NETWORK_EPG
@@ -42,7 +43,7 @@ The KSCATEGORY_BDA_NETWORK_EPG [device interface class](https://msdn.microsoft.c
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -71,9 +72,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

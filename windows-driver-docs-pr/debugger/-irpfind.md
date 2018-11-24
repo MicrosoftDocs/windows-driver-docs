@@ -3,11 +3,7 @@ title: irpfind
 description: The irpfind extension displays information about all I/O request packets (IRP) currently allocated in the target system, or about those IRPs matching the specified search criteria.
 ms.assetid: f0d850d9-8804-40df-90a3-b9c6a6b4540f
 keywords: ["irpfind Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,7 +20,7 @@ The **!irpfind** extension displays information about all I/O request packets (I
 
 Syntax
 
-```
+```dbgcmd
 !irpfind [-v][PoolType[RestartAddress[CriteriaData]]]
 ```
 
@@ -94,7 +90,7 @@ Specifies the criteria for the search. Only those IRPs that satisfy the given ma
 </tbody>
 </table>
 
- 
+ 
 
 <span id="_______Data______"></span><span id="_______data______"></span><span id="_______DATA______"></span> *Data*   
 Specifies the data to be matched in the search.
@@ -112,13 +108,13 @@ Remarks
 
 This example finds the IRP in the nonpaged pool that is going to set user event FF9E4F48 upon completion:
 
-```
+```dbgcmd
 kd> !irpfind 0 0 userevent ff9e4f48
 ```
 
 The following example produces a full listing of all IRPs in the nonpaged pool:
 
-```
+```dbgcmd
 kd> !irpfind
 Searching NonPaged pool (8090c000 : 8131e000) for Tag: Irp
 8097c008 Thread 8094d900 current stack belongs to  \Driver\symc810
@@ -129,9 +125,9 @@ Searching NonPaged pool (8090c000 : 8131e000) for Tag: Irp
 80986728 Thread 8094dda0 current stack belongs to  \Driver\symc810
 ```
 
- 
+ 
 
- 
+ 
 
 
 

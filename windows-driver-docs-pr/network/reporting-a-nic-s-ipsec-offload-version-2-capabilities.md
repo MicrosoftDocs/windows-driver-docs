@@ -4,11 +4,7 @@ description: Reporting a NIC's IPsec Offload Version 2 Capabilities
 ms.assetid: 0ce5c42d-5c0c-4dfa-8a9f-a80c8924201d
 keywords:
 - IPsecOV2 WDK TCP/IP transport , capabilities
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,13 +21,13 @@ Miniport drivers must report changes in the IPsecOV2 capabilities, if any, in th
 
 **Note**  NDIS provides a direct OID request interface for NDIS 6.1 and later drivers. The [direct OID request path](https://msdn.microsoft.com/library/windows/hardware/ff564736) supports OID requests that are queried or set frequently.
 
- 
+ 
 
 In response to a query of [OID\_TCP\_OFFLOAD\_CURRENT\_CONFIG](https://msdn.microsoft.com/library/windows/hardware/ff569805), NDIS includes the NDIS\_IPSEC\_OFFLOAD\_V2 structure in the [**NDIS\_OFFLOAD**](https://msdn.microsoft.com/library/windows/hardware/ff566599) structure that NDIS returns in the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure. NDIS uses the information that the miniport driver provided.
 
- 
+ 
 
- 
+ 
 
 
 

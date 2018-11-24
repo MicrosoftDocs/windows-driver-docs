@@ -10,11 +10,7 @@ keywords:
 - NetDMA WDK networking , extensions
 - NetDMA 2.0 WDK , extensions
 - NetDMA 2.0 WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,7 +19,7 @@ ms.localizationpriority: medium
 
 **Note**  The NetDMA interface is not supported in Windows 8 and later.
 
- 
+ 
 
 
 
@@ -36,9 +32,9 @@ This section includes the following topics:
 
 [NetDMA 2.0 Extensions for NetDMA 2.0 and Later Providers](netdma-2-0-extensions-for-netdma-2-0-and-later-providers.md)
 
- 
+ 
 
- 
+ 
 
 
 

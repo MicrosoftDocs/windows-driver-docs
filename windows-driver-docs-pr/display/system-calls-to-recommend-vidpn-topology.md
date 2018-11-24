@@ -2,11 +2,7 @@
 title: System Calls to Recommend VidPN Topology
 description: System Calls to Recommend VidPN Topology
 ms.assetid: cc23be93-be31-4069-960c-268a8b151063
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -17,9 +13,9 @@ On a computer running Windows 7, the display mode manager (DMM) determines an ap
 
 On Windows Vista and its service packs, DMM continues to call *DxgkDdiRecommendVidPnTopology* to request that the driver provide a recommended functional VidPN topology.
 
- 
+ 
 
- 
+ 
 
 
 

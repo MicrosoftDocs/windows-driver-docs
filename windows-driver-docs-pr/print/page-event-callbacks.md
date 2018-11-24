@@ -1,6 +1,5 @@
 ---
 title: Page Event Callbacks
-author: windows-driver-content
 description: Page Event Callbacks
 ms.assetid: 891f62ec-d009-42c8-8143-73bfe737a946
 keywords:
@@ -10,11 +9,7 @@ keywords:
 - property sheet pages WDK print , callbacks
 - page event callbacks WDK CPSUI
 - event callbacks WDK CPSUI
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,9 +27,9 @@ When a user interacts with a property sheet page, the operation system sends not
 
 A CPSUI application supplies CPSUI with the address of a page event callback when it calls the [**ComPropSheet**](https://msdn.microsoft.com/library/windows/hardware/ff546207) function.
 
- 
+ 
 
- 
+ 
 
 
 

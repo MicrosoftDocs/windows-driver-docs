@@ -2,11 +2,7 @@
 title: SIM toolkit commands
 description: SIM toolkit commands
 ms.assetid: 7c13c27a-7a2d-4eae-a64e-1133aa533343
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -166,7 +162,7 @@ PROVIDE LOCAL INFORMATION, Access Technology
 
 PROVIDE LOCAL INFORMATION, IMEISV \[Needs OEM NVRAM setting\]
 
-**\***PROVIDE LOCAL INFORMATION, Search Mode information—Network search mode **\*\*Not supported\*\***
+<strong>\\</strong>*PROVIDE LOCAL INFORMATION, Search Mode information—Network search mode **\*\*Not supported\*\\***
 
 PROVIDE LOCAL INFORMATION, Intra-Frequency UTRAN Measurements
 
@@ -275,7 +271,7 @@ SEND SHORT MESSAGE, Packing not required, 8-bit data, no alpha identifier, succe
 
 SEND SS, call forward unconditional, all bearers, successful
 
-SEND SS, call forward unconditional, all bearers, Return Error **\*\*Not fully verified\*\***
+SEND SS, call forward unconditional, all bearers, Return Error **\*\*Not fully verified\*\\***
 
 SEND SS, call forward unconditional, all bearers, Reject
 
@@ -466,7 +462,7 @@ EVENT DOWNLOAD, Data available, GPRS
 
 EVENT DOWNLOAD, Channel Status on a link dropped
 
-**\***EVENT DOWNLOAD, Network Search Mode Change Event**\*\*Not supported\*\***
+**\\**<em>EVENT DOWNLOAD, Network Search Mode Change Event</em>*\*\*Not supported\*\***
 
 ## Open channel
 
@@ -552,7 +548,7 @@ BIP TCP download, 3G, incoming call
 
 BIP UDP download, 2G, incoming call
 
-**\***BIP Download, lost network during download **\*\*Not supported\*\***
+<strong>\\</strong>*BIP Download, lost network during download **\*\*Not supported\*\\***
 
 ## SMS CB
 
@@ -560,20 +556,20 @@ BIP UDP download, 2G, incoming call
 **Note**  
 The OEM must modify and enable SMS providers for cell broadcast
 
- 
+ 
 
 SMS CB, No display
 
-**\***SMS CB, Display **\*\*Not supported\*\***
+<strong>\\</strong>*SMS CB, Display **\*\*Not supported\*\\***
 
 ## Related topics
 
 
 [SIM toolkit](sim-toolkit.md)
 
- 
+ 
 
- 
+ 
 
 
 

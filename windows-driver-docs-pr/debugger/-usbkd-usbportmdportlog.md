@@ -3,11 +3,7 @@ title: usbkd.usbportmdportlog
 description: The usbkd.usbportmdportlog command displays the USBPORT debug log if it is present in a crash dump that was generated as a result of Bug Check 0xFE.
 ms.assetid: C0E32BDE-8186-4477-AB57-530B0AF6F27F
 keywords: ["usbkd.usbportmdportlog Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!usbkd.usbportmdportlog** command displays the USBPORT debug log if it is present in a crash dump that was generated as a result of [**Bug Check 0xFE**](bug-check-0xfe--bugcode-usb-driver.md).
 
-```
+```dbgcmd
 !usbkd.usbportmdportlog
 ```
 
@@ -41,7 +37,7 @@ Examples
 
 Here is an example of a portion of the output of **!usbportmdportlog**.
 
-```
+```dbgcmd
 1: kd> !analyze -v
 *** ...
 BUGCODE_USB_DRIVER (fe) 
@@ -110,11 +106,11 @@ Minidump USBPORT DEBUG_LOG buffer size 32768, entries 1024, index 400
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](http://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
- 
+ 
 
- 
+ 
 
 
 

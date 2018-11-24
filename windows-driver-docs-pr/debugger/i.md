@@ -3,11 +3,7 @@ title: I (Windows Debugger Glossary)
 description: Glossary page - H
 Robots: noindex, nofollow
 ms.assetid: 4415522d-6ea3-42f6-9acc-0e3ceaa36dc7
-ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -59,9 +55,9 @@ A condition that disrupts normal command execution and transfers control to an i
 <span id="interrupt_request_level__irql_"></span><span id="INTERRUPT_REQUEST_LEVEL__IRQL_"></span>**Interrupt Request Level (IRQL)**  
 The priority ranking of an interrupt. Each processor has an IRQL setting that threads can raise or lower. Interrupts that occur at or below the processor's IRQL setting are masked and will not interfere with the current operation. Interrupts that occur above the processor's IRQL setting take precedence over the current operation.
 
- 
+ 
 
- 
+ 
 
 
 

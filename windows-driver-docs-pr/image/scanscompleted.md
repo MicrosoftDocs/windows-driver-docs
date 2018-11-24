@@ -9,11 +9,7 @@ api_name:
 - wscn ScansCompleted
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **ScansCompleted** element specifies the number of images that are 
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ScansCompleted>
   text
 </wscn:ScansCompleted>
@@ -60,13 +56,13 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>JobEndState</strong>](jobendstate.md)</p></td>
+<td><p><a href="jobendstate.md" data-raw-source="[&lt;strong&gt;JobEndState&lt;/strong&gt;](jobendstate.md)"><strong>JobEndState</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>JobStatus</strong>](jobstatus.md)</p></td>
+<td><p><a href="jobstatus.md" data-raw-source="[&lt;strong&gt;JobStatus&lt;/strong&gt;](jobstatus.md)"><strong>JobStatus</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>JobSummary</strong>](jobsummary.md)</p></td>
+<td><p><a href="jobsummary.md" data-raw-source="[&lt;strong&gt;JobSummary&lt;/strong&gt;](jobsummary.md)"><strong>JobSummary</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -78,7 +74,7 @@ If a sheet of media is scanned multiple times, the WSD Scan Service must increme
 
 The **ScansCompleted** count might not be known until the scanner has completed processing the job. The WSD Scan Service must update the **ScansCompleted** element when more exact information is available.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**JobEndState**](jobendstate.md)
@@ -87,9 +83,9 @@ The **ScansCompleted** count might not be known until the scanner has completed 
 
 [**JobSummary**](jobsummary.md)
 
- 
+ 
 
- 
+ 
 
 
 

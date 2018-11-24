@@ -2,11 +2,7 @@
 title: Sample Custom Property Page
 description: Sample Custom Property Page
 ms.assetid: 96dd5f08-1543-4e13-9344-767cd9e6df78
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,11 +17,11 @@ In the previous dialog box, a provider supplies a property page named Properties
 
 **Note**  A setup component can define more than one property page for its device or device class. Each tab should have a name that concisely describes the purpose of the page. The system does not check to make sure that the names are unique.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

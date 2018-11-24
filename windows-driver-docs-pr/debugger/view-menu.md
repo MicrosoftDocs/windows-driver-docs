@@ -3,11 +3,7 @@ title: View Menu
 description: View Menu
 ms.assetid: 2ebdff44-5593-46be-8bd8-8ececf8d9031
 keywords: ["View Menu (complete listing)", "graphical interface, view menu"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -61,9 +57,9 @@ This section describes the following commands on the **View** menu of WinDbg:
 
 [View | WinDbg Command Line](view---windbg-command-line.md)
 
- 
+ 
 
- 
+ 
 
 
 

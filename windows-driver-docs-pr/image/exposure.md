@@ -9,11 +9,7 @@ api_name:
 - wscn Exposure wscn MustHonor ""
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The optional **Exposure** element specifies the exposure settings of the documen
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:Exposure wscn:MustHonor=""
   MustHonor = "xs:string">
   child elements
@@ -75,10 +71,10 @@ Attributes
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>AutoExposure</strong>](autoexposure.md)</p></td>
+<td><p><a href="autoexposure.md" data-raw-source="[&lt;strong&gt;AutoExposure&lt;/strong&gt;](autoexposure.md)"><strong>AutoExposure</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>ExposureSettings</strong>](exposuresettings.md)</p></td>
+<td><p><a href="exposuresettings.md" data-raw-source="[&lt;strong&gt;ExposureSettings&lt;/strong&gt;](exposuresettings.md)"><strong>ExposureSettings</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -97,10 +93,10 @@ Attributes
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>DocumentFinalParameters</strong>](documentfinalparameters.md)</p></td>
+<td><p><a href="documentfinalparameters.md" data-raw-source="[&lt;strong&gt;DocumentFinalParameters&lt;/strong&gt;](documentfinalparameters.md)"><strong>DocumentFinalParameters</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>DocumentParameters</strong>](documentparameters.md)</p></td>
+<td><p><a href="documentparameters.md" data-raw-source="[&lt;strong&gt;DocumentParameters&lt;/strong&gt;](documentparameters.md)"><strong>DocumentParameters</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -112,7 +108,7 @@ The **Exposure** element can contain a [**AutoExposure**](autoexposure.md) or [*
 
 The client can specify the optional **MustHonor** attribute only when the **Exposure** element is contained within a **CreateScanJobRequest** hierarchy. For more information about **MustHonor** and its usage, see [**CreateScanJobRequest**](createscanjobrequest.md).
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**AutoExposure**](autoexposure.md)
@@ -125,9 +121,9 @@ The client can specify the optional **MustHonor** attribute only when the **Expo
 
 [**ExposureSettings**](exposuresettings.md)
 
- 
+ 
 
- 
+ 
 
 
 

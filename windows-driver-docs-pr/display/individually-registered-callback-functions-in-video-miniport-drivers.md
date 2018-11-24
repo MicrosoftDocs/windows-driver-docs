@@ -8,11 +8,7 @@ keywords:
 - individually registered callback functions WDK video miniport
 - registered callback functions WDK video miniport
 - temporary registration WDK video miniport
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,9 +32,9 @@ In some instances, it makes sense for the video miniport driver to implement sev
 
 For a list of callback functions that can be implemented by the video miniport driver and For information about how those callback functions are registered, see [Individually Registered Video Miniport Driver Functions](https://msdn.microsoft.com/library/windows/hardware/ff567672).
 
- 
+ 
 
- 
+ 
 
 
 

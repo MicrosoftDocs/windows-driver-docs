@@ -1,14 +1,9 @@
 ---
 title: Setting Device Object Properties in the Registry
-author: windows-driver-content
 description: Setting Device Object Properties in the Registry
 ms.assetid: a2cfe098-0d5d-42fb-bbdc-25376ce50a9b
 keywords: ["device objects WDK kernel , registry", "registry WDK device objects"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +29,9 @@ This section contains the following subsections:
 
 [Setting Device Object Registry Properties After Installation](setting-device-object-registry-properties-after-installation.md)
 
- 
+ 
 
- 
+ 
 
 
 

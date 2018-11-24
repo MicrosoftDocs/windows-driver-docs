@@ -11,11 +11,7 @@ api_location:
 - ksmedia.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -48,13 +44,13 @@ The **KSPROPERTY\_TELEPHONY\_ENDPOINTIDPAIR** property contains the render and c
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p>[<strong>KSPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564262)</p></td>
-<td align="left"><p>[<strong>KSTOPOLOGY_ENDPOINTIDPAIR</strong>](https://msdn.microsoft.com/library/windows/hardware/mt169887)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564262" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564262)"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/mt169887" data-raw-source="[&lt;strong&gt;KSTOPOLOGY_ENDPOINTIDPAIR&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/mt169887)"><strong>KSTOPOLOGY_ENDPOINTIDPAIR</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value is of type [**KSTOPOLOGY\_ENDPOINTIDPAIR**](https://msdn.microsoft.com/library/windows/hardware/mt169887), which specifies the render and capture endpoints.
 
@@ -95,9 +91,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,11 +3,7 @@ title: Accessing Local Variables
 description: Accessing Local Variables
 ms.assetid: 0aab3fdf-fe0c-46ad-aa2f-90992811b001
 keywords: ["local variables, accessing"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +29,9 @@ The debugger interprets local variables according to the [local context](changin
 
 When the local context is changed, the Locals window is immediately updated to reflect the new collection of local variables. The [**dv**](dv--display-local-variables-.md) command also shows the new variables. All of these variable names are then interpreted correctly by the memory commands that are described earlier. You can then read or write to these variables.
 
- 
+ 
 
- 
+ 
 
 
 

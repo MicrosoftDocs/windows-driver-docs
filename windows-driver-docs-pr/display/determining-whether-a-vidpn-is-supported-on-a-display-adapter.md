@@ -7,11 +7,7 @@ keywords:
 - VidPN WDK display , determining if supported
 - functional VidPN WDK display
 - determining VidPN supported WDK display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,9 +38,9 @@ Part of determining whether a VidPN is supported is determining whether the VidP
 
 From time to time, the VidPN manager calls [**DxgkDdiIsSupportedVidPn**](https://msdn.microsoft.com/library/windows/hardware/ff559684) to ask the display miniport driver whether a certain VidPN is supported on a display adapter. One of the arguments passed to **DxgkDdiIsSupportedVidPn** is a handle to a VidPN object called the desired VidPN. **DxgkDdiIsSupportedVidPn** must inspect the topology of the desired VidPN and must take note of which video present sources and targets in the desired VidPN already have pinned modes. Then it must return a Boolean value that indicates whether the desired VidPN is supported (according to the definition given previously in this topic). For information about inspecting the topology, source mode sets, and target mode sets of a VidPN, see [VidPN Objects and Interfaces](vidpn-objects-and-interfaces.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: Setting the Protection Level for a Protected Output
 description: Setting the Protection Level for a Protected Output
 ms.assetid: 2f041190-8001-4e79-8398-8b642884f751
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,11 +21,11 @@ OPM configuration can set the protection level of a protection type on a protect
 
 **Note**   The DXGKMDT\_OPM\_SET\_PROTECTION\_LEVEL\_ACCORDING\_TO\_CSS\_DVD GUID is new for Windows 7 and is used to indicate that the driver should enable HDCP according to the new CSS rules. Setting the DXGKMDT\_OPM\_SET\_PROTECTION\_LEVEL\_ACCORDING\_TO\_CSS\_DVD command is identical to setting the existing DXGKMDT\_OPM\_SET\_PROTECTION\_LEVEL command except that DXGKMDT\_OPM\_SET\_PROTECTION\_LEVEL\_ACCORDING\_TO\_CSS\_DVD has no absolute requirement to enable the requested protection.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

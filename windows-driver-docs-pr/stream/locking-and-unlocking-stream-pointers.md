@@ -1,17 +1,12 @@
 ---
 title: Locking and Unlocking Stream Pointers
-author: windows-driver-content
 description: Locking and Unlocking Stream Pointers
 ms.assetid: 3826a5bc-4ba5-4ada-a8aa-e7bbd949187e
 keywords:
 - stream pointers WDK AVStream , locked and unlocked
 - locked stream pointers WDK AVStream
 - unlocked stream pointers WDK AVStream
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,9 +32,9 @@ When an IRP is canceled, AVStream calls the cancellation callbacks for all unloc
 
 Unlock the leading and trailing edge stream pointers only when they are not in use.
 
- 
+ 
 
- 
+ 
 
 
 

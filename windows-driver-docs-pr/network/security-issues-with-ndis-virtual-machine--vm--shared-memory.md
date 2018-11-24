@@ -2,11 +2,7 @@
 title: Security Issues with NDIS Virtual Machine (VM) Shared Memory
 description: Security Issues with NDIS Virtual Machine (VM) Shared Memory
 ms.assetid: 42b903b0-6729-4314-9305-9345fff9b2ba
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,7 +22,7 @@ This topic discusses the potential security issues involved with allocating shar
 
 **Note**  In Hyper-V, a child partition is also known as a VM.
 
- 
+ 
 
 ### <a href="" id="overview"></a>Overview of the Security Issues with VM Shared Memory
 
@@ -44,7 +40,7 @@ However, when VMQ is configured to use shared memory, the network adapter uses D
 
 In Windows Server 2008 R2, before the VSP configures a VM queue to use shared memory that is allocated from the VM address space, it uses the following filtering test for the queue.
 
-```
+```syntax
 (MAC address == x) && (VLAN identifier == n)
 ```
 
@@ -92,9 +88,9 @@ The following points apply to VMQ miniport drivers that run on Windows Server 2
 
     For more information about how to register VMQ capabilities, see [Determining the VMQ Capabilities of a Network Adapter](determining-the-vmq-capabilities-of-a-network-adapter.md).
 
- 
+ 
 
- 
+ 
 
 
 

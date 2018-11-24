@@ -1,5 +1,5 @@
 ---
-title: FSCTL\_IS\_VOLUME\_DIRTY control code
+title: FSCTL_IS_VOLUME_DIRTY control code
 description: The FSCTL\_IS\_VOLUME\_DIRTY control code determines whether the specified volume is dirty.
 ms.assetid: 77263957-cf7f-4db1-81b7-c58438202518
 keywords: ["FSCTL_IS_VOLUME_DIRTY control code Installable File System Drivers"]
@@ -11,11 +11,7 @@ api_location:
 - ntifs.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -75,7 +71,7 @@ Pointer to a caller-allocated, 32-bit-aligned buffer that receives a ULONG bitma
 </tbody>
 </table>
 
- 
+ 
 
 <a href="" id="outputbufferlength"></a>*OutputBufferLength*  
 Size, in bytes, of the buffer that is pointed to by the *OutputBuffer* parameter. This size must be at least sizeof(ULONG).
@@ -116,7 +112,7 @@ Status block
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -147,9 +143,9 @@ Requirements
 
 [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462)
 
- 
+ 
 
- 
+ 
 
 
 

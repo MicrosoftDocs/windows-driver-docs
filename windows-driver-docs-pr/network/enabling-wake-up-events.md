@@ -4,11 +4,7 @@ description: Enabling Wake-Up Events
 ms.assetid: 48ed0f41-efa0-4040-8589-8d477c5ddd0e
 keywords:
 - wake-up capabilities WDK networking , enabling wake-up events
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,9 +18,9 @@ A protocol driver can send an [OID\_PNP\_ENABLE\_WAKE\_UP](https://msdn.microsof
 
 Before the miniport driver transitions to a low-power state (that is, before NDIS sends the miniport driver an OID\_PNP\_SET\_POWER request), NDIS sends the miniport driver an OID\_PNP\_ENABLE\_WAKE\_UP request to enable the network adapter's wake-up capabilities.
 
- 
+ 
 
- 
+ 
 
 
 

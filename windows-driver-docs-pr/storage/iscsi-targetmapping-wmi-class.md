@@ -3,6 +3,7 @@ title: ISCSI\_TargetMapping WMI Class
 description: ISCSI\_TargetMapping WMI Class
 ms.assetid: b2c4634a-852b-471a-8764-025780e36c0f
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # ISCSI\_TargetMapping WMI Class
@@ -19,7 +20,7 @@ The mapping that this class defines is associated with a particular target logon
 
 This class is defined as follows in *Common.mof*.
 
-```
+```cpp
 class ISCSI_TargetMapping {
   [WmiDataId(1), description("OS Scsi bus number target 
     is mapped to. If 0xffffffff then any value can be picked
@@ -48,9 +49,9 @@ class ISCSI_TargetMapping {
 };
 ```
 
- 
+ 
 
- 
+ 
 
 
 

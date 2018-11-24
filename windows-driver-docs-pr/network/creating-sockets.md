@@ -7,11 +7,7 @@ keywords:
 - WSK WDK networking , socket creation
 - listening sockets WDK Winsock Kernel
 - WskSocket
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,7 +26,7 @@ If the socket is created successfully, the **IoStatus.Information** field of the
 
 The following code example shows how a WSK application can create a listening socket.
 
-```
+```C++
 // Context structure for each socket
 typedef struct _WSK_APP_SOCKET_CONTEXT {
   PWSK_SOCKET Socket;
@@ -154,9 +150,9 @@ NTSTATUS
 
 For connection-oriented sockets, a WSK application can call the [**WskSocketConnect**](https://msdn.microsoft.com/library/windows/hardware/ff571150) function to create, bind, and connect a socket in a single function call.
 
- 
+ 
 
- 
+ 
 
 
 

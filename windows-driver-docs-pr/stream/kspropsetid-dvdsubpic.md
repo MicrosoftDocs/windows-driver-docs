@@ -2,11 +2,7 @@
 title: KSPROPSETID\_DvdSubPic
 description: KSPROPSETID\_DvdSubPic
 ms.assetid: 91d92878-fd6d-4403-ae48-ab4d41680c88
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +24,9 @@ DVD decoder minidrivers should implement support for the following properties:
 
 [**KSPROPERTY\_DVDSUBPIC\_COMPOSIT\_ON**](ksproperty-dvdsubpic-composit-on.md)
 
- 
+ 
 
- 
+ 
 
 
 

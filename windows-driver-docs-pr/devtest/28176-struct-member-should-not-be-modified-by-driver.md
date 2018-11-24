@@ -5,11 +5,7 @@ ms.assetid: 837b2dcd-0682-460f-a3ae-ebd82bcc451b
 keywords:
 - warnings listed WDK PREfast for Drivers
 - errors listed WDK PREfast for Drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,9 +18,9 @@ This warning indicates that a driver changed an undocumented structure member th
 
 Drivers should not write to the specified undocumented structure member. For most undocumented members of opaque or partially opaque structures, this prohibition is absolute. However, drivers may write certain undocumented structure members from within particular routines. For example, the [**DEVICE\_OBJECT.NextDevice**](https://msdn.microsoft.com/library/windows/hardware/ff543147) member can be written only within a DRIVER\_INITIALIZE or DRIVER\_UNLOAD routine.
 
- 
+ 
 
- 
+ 
 
 
 

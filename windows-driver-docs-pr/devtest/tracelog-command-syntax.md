@@ -10,11 +10,7 @@ api_name:
 - Tracelog Command Syntax
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -75,7 +71,7 @@ Enumerates (or lists) providers on the system that are [registered](registered-p
 
 Tracelog uses the **EnumerateTraceGuids** function to implement a **tracelog -enumguid** command. For more information about this function, see the Microsoft Windows SDK documentation.
 
-<span id="_______-enumguidex___guid_"></span><span id="_______-ENUMGUIDEX___GUID_"></span> **-enumguidex** \[**\#***guid*\]  
+<span id="_______-enumguidex___guid_"></span><span id="_______-ENUMGUIDEX___GUID_"></span> **-enumguidex** \[**\#**<em>guid</em>\]  
 Enumerates (or lists) providers on the system that are [registered](registered-provider.md) with Event Tracing for Windows (ETW). For a description of the EnumguidEx display, see [Tracelog Enumguid Display](tracelog-enumguid-display.md).
 
 Tracelog uses the **EnumerateTraceGuidsEx** function to implement a **tracelog -enumguidex** command. For more information about this function, see the Microsoft Windows SDK documentation.
@@ -176,9 +172,7 @@ This parameter is valid only in commands that include **-f** and do not include 
 Specifies the size, in KB, of each buffer allocated for the trace session. The default value is determined by the number of processors, the amount of physical memory, and the operating system in use.
 
 <span id="-bt_n"></span><span id="-BT_N"></span>**-bt** *n*  
-Specifies the number (*n*) of buffers to fill before starting to flush them.
-
-This option is only available on Windows 8.1 and later versions of Windows.
+Specifies the number (*n*) of buffers to fill before starting to flush them. This option is available starting in Windows 8.1.
 
 <span id="_______-buffering______"></span><span id="_______-BUFFERING______"></span> **-buffering**   
 Starts a buffered trace session.
@@ -212,14 +206,10 @@ Enables kernel events using additional flags for [NT Kernel Logger trace session
 See the description of *EnabledProperties* in the *EnableParameters* struct passed as a parameter to [EnableTraceEx2](http://go.microsoft.com/fwlink/p/?linkid=155061) for descriptions and supported values.
 
 <span id="-EventIdFilter_____-in-out_n_id1_id2_..."></span><span id="-eventidfilter_____-in-out_n_id1_id2_..."></span><span id="-EVENTIDFILTER_____-IN-OUT_N_ID1_ID2_..."></span>**-EventIdFilter** {**-in**|**-out**} **** *n* **** *id1 id2 ...*  
-Specifies an event ID filter with *n* event IDs (maximum 64 event IDs allowed).
-
-This option is only available on Windows 8.1 and later versions of Windows..
+Specifies an event id filter with *n* event ids (maximum 64 event ids allowed). This option is available starting in Windows 8.1.
 
 <span id="___-ExeFilter____Executable_file____Executable_file_...__"></span><span id="___-exefilter____executable_file____executable_file_...__"></span><span id="___-EXEFILTER____EXECUTABLE_FILE____EXECUTABLE_FILE_...__"></span> **-ExeFilter** *Executable\_file* \[**;** *Executable\_file* ...\]   
-Specifies the names of executable files to filter. You can specify a list of files. Separate the names of the files using semi-colons. Files not listed are excluded.
-
-This option is only available on Windows 8.1 and later versions of Windows.
+Specifies the names of executable files to filter. You can specify a list of files. Separate the names of the files using semi-colons. Files not listed are excluded. This option is available starting in Windows 8.1.
 
 <span id="_______-f___LogFile_"></span><span id="_______-f___logfile_"></span><span id="_______-F___LOGFILE_"></span> **-f** \[*LogFile*\]  
 Starts a trace log session. *LogFile* specifies the path (optional) and file name of the event trace log (.etl) file. The default is C:\\LogFile.etl. To place the file on a remote computer, include the computer name or IP address in the path.
@@ -281,12 +271,10 @@ Use **-pids** to specify the process. Do not use **-guid** with **-heap**. The s
 Enables tracing of hard page faults (page faults that require disk access to resolve). This parameter is valid only for an NT Kernel Logger trace session.
 
 <span id="-hybridshutdown_stoppersist"></span><span id="-HYBRIDSHUTDOWN_STOPPERSIST"></span>**-hybridshutdown** {**stop**|**persist**}  
-Controls hybrid shutdown logger behavior.
+Controls hybrid shutdown logger behavior. This option is available starting in Windows 8.
 
 *stop* will cause the session to stop when the system performs a hybrid shutdown.
 *persist* will cause the session to continue after the system starts up again from a hybrid shutdown.
-
-This option is only available on Windows 8 and later versions of Windows.
 
 <span id="_______-img______"></span><span id="_______-IMG______"></span> **-img**   
 Enables tracing of image load events. This parameter is valid only for an NT Kernel Logger trace session.
@@ -295,9 +283,7 @@ Enables tracing of image load events. This parameter is valid only for an NT Ker
 > [!NOTE]
 > Independent mode should be enabled on every trace session.
 
-Enables independent mode on the trace session. Independent mode allows the session to collect events that other non-independent-mode sessions have dropped.
-
-This option is only available on Windows 8.1 and later versions of Windows.
+Enables independent mode on the trace session. Independent mode allows the session to collect events that other non-independent-mode sessions have dropped. This option is available starting in Windows 8.1.
 
 <span id="_______-kb______"></span><span id="_______-KB______"></span> **-kb**   
 Use kilobytes (KB) for log file size. The default is megabytes (MB).
@@ -386,9 +372,7 @@ Specifies the user-mode processes in which a heap memory or critical section tra
 List multiple PIDs when the provider runs in more than one process, such as when a single program creates multiple processes.
 
 <span id="___-PidFilter____n_pid1_pid2_..."></span><span id="___-pidfilter____n_pid1_pid2_..."></span><span id="___-PIDFILTER____N_PID1_PID2_..."></span> **-PidFilter** *n* *pid1 pid2 ...*  
-Specifies a Pid filter with *n* Pids (maximum 8 allowed).
-
-This option is only available on Windows 8.1 and later versions of Windows.
+Specifies a Pid filter with *n* Pids (maximum 8 allowed). This option is available starting in Windows 8.1.
 
 <span id="_______-pf______"></span><span id="_______-PF______"></span> **-pf**   
 Enables tracing of all page faults. This parameter is valid only for an NT Kernel Logger trace session.
@@ -397,15 +381,13 @@ Enables tracing of all page faults. This parameter is valid only for an NT Kerne
 Specifies a package ID filter. You can specify a list of package files. Separate the names of the files using semi-colons.
 
 <span id="___-PkgAppIdFilter_____PRAID____PRAID..._"></span><span id="___-pkgappidfilter_____praid____praid..._"></span><span id="___-PKGAPPIDFILTER_____PRAID____PRAID..._"></span> **-PkgAppIdFilter** *PRAID* \[**;***PRAID*...\]  
-Specifies a package-relative app identifier (PRAID) filter. The PRAID is the unique identifier of the application within the package. You can specify more than one *PRAID*. Separate the IDs using semi-colons.
+Specifies a package-relative app identifier (PRAID) filter. The PRAID is the unique identifier of the application within the package. You can specify more than one *PRAID*. Separate the IDs using semi-colons. This option is available for UWP apps starting in Windows 8.1.
 
 <span id="-Pmc_Ctrs_Events"></span><span id="-pmc_ctrs_events"></span><span id="-PMC_CTRS_EVENTS"></span>**-Pmc** *Ctr1,Ctr2,...:Name+Name+...*  
-Configures performance monitor counter (PMC) sampling on the specified kernel events.
+Configures performance monitor counter (PMC) sampling on the specified kernel events. This option is available starting in Windows 8.
 
 Use **-ProfileSource Help** for a list of counters.
 Use **-eflag Help** for a list of kernel events.
-
-This option is only available on Windows 8 and later versions of Windows.
 
 <span id="_______-prealloc______"></span><span id="_______-PREALLOC______"></span> **-prealloc**   
 Reserves space for the .etl file before starting the session.
@@ -413,7 +395,7 @@ Reserves space for the .etl file before starting the session.
 This parameter requires **-seq** or **-cir** with *MaxFileSize*. It is not valid with **-newfile**.
 
 <span id="-ProfileSource_src"></span><span id="-profilesource_src"></span><span id="-PROFILESOURCE_SRC"></span>**-ProfileSource** *src*  
-Configure profiling source to use. For list of sources, use the command **tracelog -ProfileSource Help**.
+Configure profiling source to use. For list of sources, use the command **tracelog -ProfileSource Help**. This option is available starting in Windows 8.
 
 This option is only available on Windows 8 and later versions of Windows.
 
@@ -432,9 +414,7 @@ Specifies the autologger session GUID registry value.
 > [!IMPORTANT]
 > Changing the profiling interval is not recommended.
 
-Configure the profiling interval (*n*) for the specified source, where *n* is in units of 100ns. The default is 10000 (which is equivalent to 1ms).
-
-This option is only available on Windows 8 and later versions of Windows.
+Configure the profiling interval (*n*) for the specified source, where *n* is in units of 100ns. The default is 10000 (which is equivalent to 1ms). This option is available starting in Windows 8.
 
 <span id="_______-seq_______MaxFileSize______"></span><span id="_______-seq_______maxfilesize______"></span><span id="_______-SEQ_______MAXFILESIZE______"></span> **-seq** *MaxFileSize*   
 Specifies sequential logging (at end-of-file, stop recording events) to the event trace log (.etl) file. *MaxFileSize* specifies the maximum size of the file in MB. Without a *MaxFileSize* value, this parameter is ignored.
@@ -448,14 +428,10 @@ Specifies the GUID passed as the *SourceId* parameter to the [EnableTraceEx](htt
 Specifies kernel events to collect stacks on. Use **-eflag Help** for a list of kernel events. This parameter is valid only for the NT Kernel Logger or system logger trace sessions.
 
 <span id="________________-StackWalkFilter_-in-outnid1_id2_..."></span><span id="________________-stackwalkfilter_-in-outnid1_id2_..."></span><span id="________________-STACKWALKFILTER_-IN-OUTNID1_ID2_..."></span> **-StackWalkFilter** {**-in**|**-out**}*nid1 id2 ...*  
-Specifies an event ID filter with *n* event IDs (maximum 64 event IDs allowed).
-
-This option is only available on Windows 8.1 and later versions of Windows.
+Specifies an event ID filter with *n* event IDs (maximum 64 event IDs allowed). This option is available starting in Windows 8.1.
 
 <span id="-systemlogger"></span><span id="-SYSTEMLOGGER"></span>**-systemlogger**  
-Logger can receive SystemTraceProvider events. See [Configuring and Starting a SystemTraceProvider Session](https://msdn.microsoft.com/library/windows/desktop/jj883720).
-
-This option is only available on Windows 8 and later versions of Windows.
+Logger can receive SystemTraceProvider events. See [Configuring and Starting a SystemTraceProvider Session](https://msdn.microsoft.com/library/windows/desktop/jj883720). This option is available starting in Windows 8.
 
 <span id="_______-um______"></span><span id="_______-UM______"></span> **-um**   
 Specifies a private trace session This parameter is required for a private trace session.

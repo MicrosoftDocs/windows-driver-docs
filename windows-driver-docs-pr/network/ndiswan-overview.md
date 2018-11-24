@@ -7,11 +7,7 @@ keywords:
 - NDIS intermediate drivers WDK , NDISWAN driver
 - intermediate drivers WDK networking , NDISWAN driver
 - architecture WDK WAN , NDISWAN
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -49,9 +45,9 @@ NDISWAN provides the following functionality:
 
     In an NDIS WAN environment, NDISWAN examines the header of the descriptor of a send packet and determines over which link the packet will be sent. NDISWAN copies the packet into a contiguous buffer and forwards it to the underlying miniport driver. In a CoNDIS WAN environment, NDISWAN forwards packets based on the packet's associated virtual connection (VC). For more information about WAN driver links and connections, see [WAN Driver Bindings and Connections](wan-driver-bindings-and-connections.md).
 
- 
+ 
 
- 
+ 
 
 
 

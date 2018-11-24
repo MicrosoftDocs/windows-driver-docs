@@ -2,11 +2,8 @@
 title: View partner shipping labels for a shared driver
 description: After you share a driver with a partner, the partner can create shipping labels for your driver. To view a list of partner shipping labels for your shared driver, follow the steps below.
 ms.assetid: EC27412D-1695-4B14-AAB2-2ECE636265C0
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
@@ -23,14 +20,13 @@ After you share a driver with a partner, the partner can create shipping labels 
 
 ## <span id="related_topics"></span>Related topics
 
+- [Share a driver with a partner](sharing-drivers-with-your-partners.md)
 
-[Share a driver with a partner](sharing-drivers-with-your-partners.md)
+- [Publish a shared driver to Windows Update](https://msdn.microsoft.com/library/windows/hardware/mt786464)
 
-[Publish a shared driver to Windows Update](https://msdn.microsoft.com/library/windows/hardware/mt786464)
+ 
 
- 
-
- 
+ 
 
 
 

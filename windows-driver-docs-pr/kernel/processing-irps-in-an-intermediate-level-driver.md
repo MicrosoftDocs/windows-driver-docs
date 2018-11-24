@@ -1,14 +1,9 @@
 ---
 title: Processing IRPs in an Intermediate-Level Driver
-author: windows-driver-content
 description: Processing IRPs in an Intermediate-Level Driver
 ms.assetid: 7606ab1b-68af-4d27-8668-7662969b85b8
 keywords: ["IRPs WDK kernel , processing examples", "IoCompletion routines", "IoSetCompletionRoutine", "mirror drivers WDK IRPs", "allocating IRPs", "IoCallDriver"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -76,9 +71,9 @@ Assuming the I/O status block in DupIRP2 also is set with STATUS\_SUCCESS, the *
 
 If either set of lower-level drivers does not complete the mirror driver's IRPs successfully, the mirror driver's *IoCompletion* routine should log an error and attempt appropriate mirrored-data recovery. For more information, see [Logging Errors](logging-errors.md).
 
- 
+ 
 
- 
+ 
 
 
 

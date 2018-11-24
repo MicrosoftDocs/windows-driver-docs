@@ -8,11 +8,7 @@ keywords:
 - task offload WDK TCP/IP transport
 - task offload WDK TCP/IP transport , about task offload
 - capabilities WDK TCP/IP offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -80,9 +76,9 @@ This section includes:
     - \[The IPsec Task Offload feature is deprecated and should not be used.\]
 -   [Offloading the Segmentation of Large TCP Packets](offloading-the-segmentation-of-large-tcp-packets.md)
 
- 
+ 
 
- 
+ 
 
 
 

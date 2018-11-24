@@ -5,11 +5,7 @@ ms.assetid: 1b4532f4-18ee-4c65-9373-2ca635d2f40d
 keywords:
 - biometric drivers WDK , secure channels
 - secure channels WDK biometric
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,9 +16,9 @@ To support a secure channel between the host and the device in a WBDI driver, yo
 
 Security considerations should be transparent to WBF applications.
 
- 
+ 
 
- 
+ 
 
 
 

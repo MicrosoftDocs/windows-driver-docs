@@ -1,16 +1,11 @@
 ---
 title: HS_SIM_DATA structure
-author: windows-driver-content
 description: The HS_SIM_DATA structure contains information stored in the SIM card.
 ms.assetid: 9e29a85e-e764-4841-b218-c63bba0ca9fa
 keywords: 
 - HS_SIM_DATA structure Network Drivers Starting with Windows Vista
 - PHS_SIM_DATA structure pointer Network Drivers Starting with Windows Vista
-ms.author: windowsdriverdev
-ms.date: 07/31/2017 
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 07/31/2017
 ms.localizationpriority: medium
 ---
 
@@ -64,9 +59,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

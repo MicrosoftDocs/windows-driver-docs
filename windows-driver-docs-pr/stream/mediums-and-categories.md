@@ -1,6 +1,5 @@
 ---
 title: Mediums and Categories
-author: windows-driver-content
 description: Mediums and Categories
 ms.assetid: 2bc83ce6-7f79-44e7-a0fb-7b9f56771730
 keywords:
@@ -12,11 +11,7 @@ keywords:
 - stream categories WDK video capture
 - mediums WDK video capture
 - pin connections WDK video capture
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +26,9 @@ Mediums are a method to ensure connectivity between two pins on separate filters
 
 The DirectShow graph builder interfaces, **IFilterMapper2** and **ICaptureGraphBuilder**, use these methods to construct filter graphs based on both mediums and stream categories.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Compressing Raster Data
-author: windows-driver-content
 description: Compressing Raster Data
 ms.assetid: 8c74e7f3-5601-4510-9fcd-261f5cd48e9c
 keywords:
@@ -9,11 +8,7 @@ keywords:
 - raster data compression WDK Unidrv
 - compressing raster data WDK Unidrv
 - Unidrv WDK print
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -41,9 +36,9 @@ For more information about raster data compression, see the following topics:
 
 [Using Customized Compression](using-customized-compression.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: How do you define custom data types
 description: How do you define custom data types
 ms.assetid: 849f83ae-5fe7-447b-9d02-3d980757bf7d
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -95,7 +91,7 @@ RUN_WPP -km -ini:localwpp.ini
 > [!IMPORTANT]
 > You must not specify the **-km** switch in the RUN\_WPP directive for user-mode applications or dynamic-link libraries (DLLs).
 
- 
+ 
 
 ### <span id="using_the_custom_data_type"></span><span id="USING_THE_CUSTOM_DATA_TYPE"></span>Using the Custom Data Type
 

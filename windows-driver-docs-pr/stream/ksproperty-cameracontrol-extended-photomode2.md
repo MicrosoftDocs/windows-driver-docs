@@ -11,25 +11,19 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
-ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 09/11/2018
 ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PHOTOMODE
 
-
 The KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PHOTOMODE property allows a submode to be configured.
 
-## <span id="Usage_summary"></span><span id="usage_summary"></span><span id="USAGE_SUMMARY"></span>Usage summary
-
+## Usage summary
 
 The following submodes are defined as follows.
 
-``` syntax
+```cpp
 #define KSCAMERA_EXTENDEDPROP_PHOTOMODE_SEQUENCE_SUB_NONE       0x00000000
 #define KSCAMERA_EXTENDEDPROP_PHOTOMODE_SEQUENCE_SUB_VARIABLE   0x00000001
 ```
@@ -40,7 +34,7 @@ KSCAMERA\_EXTENDEDPROP\_PHOTOMODE\_SEQUENCE\_SUB\_VARIABLE is used to indicate a
 
 The following is a definition of the KSCAMERA\_EXTENDEDPROP\_PHOTOMODE structure defined in ksmedia.h
 
-``` syntax
+```cpp
 typedef struct tagKSCAMERA_EXTENDEDPROP_PHOTOMODE {  
     ULONG       RequestedHistoryFrames;  
     ULONG       MaxHistoryFrames;  
@@ -63,8 +57,9 @@ Variable photo sequence mode has the following unique characteristics on a photo
 
 -   Neither the pipeline nor the driver\\MFT0 generates any photo thumbnail.
 
-Requirements
-------------
+This property is asynchronous and not cancelable.
+
+## Requirements
 
 <table>
 <colgroup>
@@ -78,12 +73,3 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
-
-

@@ -2,11 +2,7 @@
 title: Accessing Device Instance Properties
 description: Accessing Device Instance Properties
 ms.assetid: b571201a-e765-45d0-993b-5855041b4697
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +25,9 @@ In Windows Vista and later versions of Windows, applications and installers can
 
 For information about how to access device properties on Windows Server 2003, Windows XP, and Windows 2000, see [Using SetupAPI and Configuration Manager to Access Device Properties](using-setupapi-and-configuration-manager-to-access-device-properties.md).
 
- 
+ 
 
- 
+ 
 
 
 

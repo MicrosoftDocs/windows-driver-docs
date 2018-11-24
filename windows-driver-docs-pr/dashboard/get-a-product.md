@@ -3,10 +3,8 @@ title: Get a product
 description: This method in the Microsoft Hardware API retrieves data for a specific product registered to your Windows Dev Center account.
 author: balapv
 ms.author: balapv
-ms.date: 04/05/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 04/05/2018
 ms.localizationpriority: medium
 ---
 
@@ -46,7 +44,7 @@ Do not provide a request body for this method.
 
 The following example demonstrates how to retrieve information about a specific product registered to your account.
 
-```
+```cpp
 GET https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/14039471039847257 HTTP/1.1
 Authorization: Bearer <your access token>
 ```
@@ -72,10 +70,11 @@ The following example demonstrates the JSON response body returned by a successf
     }
   ],
   "isCommitted": true,
-  "isExtensionInf": false,
+  "isExtensionInf": false, "_comment": "This field is deprecated and moved to submission resource",
   "deviceMetadataIds": [],
   "deviceType": "notSet",
   "isTestSign": false,
+  "isFlightSign": false,  
   "marketingNames": [],
   "productName": "NewDriverHacked",
   "selectedProductTypes": {},
@@ -91,3 +90,7 @@ The following example demonstrates the JSON response body returned by a successf
 ## Error codes
 
 For more info, see [Error codes](get-product-data.md#error-codes).
+
+## See also
+
+- [Hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)

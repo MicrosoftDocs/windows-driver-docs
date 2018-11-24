@@ -2,11 +2,7 @@
 title: NDKPI deferred processing scheme
 description: This section describes the deferred processing used with NDKPI
 ms.assetid: DA2D0FCA-D84B-4599-A560-8F87A0918D99
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -47,9 +43,9 @@ For example, consider a case where a consumer has a chain of two fast register r
 
 [Network Direct Kernel Provider Interface (NDKPI)](network-direct-kernel-programming-interface--ndkpi-.md)
 
- 
+ 
 
- 
+ 
 
 
 

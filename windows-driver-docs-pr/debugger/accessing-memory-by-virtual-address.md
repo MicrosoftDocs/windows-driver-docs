@@ -3,11 +3,7 @@ title: Accessing Memory by Virtual Address
 description: Accessing Memory by Virtual Address
 ms.assetid: 13e97cba-c4a4-4240-99b3-88a7537b0ca8
 keywords: ["virtual address, accessing memory"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -55,9 +51,9 @@ To change the default radix, use the [**n (Set Number Base)**](n--set-number-bas
 
 When you are performing user-mode debugging, the meaning of virtual addresses is determined by the current process. When you are performing kernel-mode debugging, the meaning of virtual addresses can be controlled by the debugger. For more information, see [Process Context](changing-contexts.md#process-context).
 
- 
+ 
 
- 
+ 
 
 
 

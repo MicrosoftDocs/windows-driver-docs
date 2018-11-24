@@ -1,5 +1,5 @@
 ---
-title: FSCTL\_OPLOCK\_BREAK\_NOTIFY control code
+title: FSCTL_OPLOCK_BREAK_NOTIFY control code
 description: The FSCTL\_OPLOCK\_BREAK\_NOTIFY control code allows the calling application to wait for completion of an opportunistic lock (oplock) break.
 ms.assetid: 80fe4e5f-fb6f-4c11-8574-97d7f0e7cc6b
 keywords: ["FSCTL_OPLOCK_BREAK_NOTIFY control code Installable File System Drivers"]
@@ -11,11 +11,7 @@ api_location:
 - ntifs.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -78,7 +74,7 @@ Status block
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -125,9 +121,9 @@ Requirements
 
 [**IRP\_MJ\_FILE\_SYSTEM\_CONTROL**](irp-mj-file-system-control.md)
 
- 
+ 
 
- 
+ 
 
 
 

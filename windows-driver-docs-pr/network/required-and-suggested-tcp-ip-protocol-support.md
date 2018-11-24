@@ -7,11 +7,7 @@ keywords:
 - IETF RFC compliance WDK TCP chimney offload
 - task-offload engine NIC WDK TCP chimney offload
 - TOE NIC WDK TCP chimney offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -64,9 +60,9 @@ In particular, a TOE NIC must:
 
 A TOE NIC can optionally support the selective acknowledgment (SACK) option for both transmit and receive operations. If the NIC does not support the SACK option, it must be able to ignore the SACK option in a TCP segment and process the rest of the segment normally.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: Jack Descriptions for Dynamic Audio Subdevices
 description: Jack Descriptions for Dynamic Audio Subdevices
 ms.assetid: e04f4000-3b93-4f4b-afec-007e5821f125
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,9 +15,9 @@ When the user inserts a plug into a jack on a dynamic subdevice, the adapter dri
 
 When the user removes the plug from the jack on the dynamic subdevice, the adapter driver should call the [**IUnregisterSubdevice::UnregisterSubdevice**](https://msdn.microsoft.com/library/windows/hardware/ff537032) method to delete the subdevice's registration. While the subdevice is not registered, if the adapter driver receives an IOCTL containing a KSPROPERTY\_JACK\_DESCRIPTION request for the subdevice, the driver should set the **IsConnected** member of the property value to **FALSE**.
 
- 
+ 
 
- 
+ 
 
 
 

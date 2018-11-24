@@ -3,11 +3,7 @@ title: lockedpages
 description: The lockedpages extension displays driver-locked pages for a specified process.
 ms.assetid: a3f70b5f-350c-482f-a172-3abb2b22f408
 keywords: ["driver-locked pages", "lockedpages Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,7 +20,7 @@ The **!lockedpages** extension displays driver-locked pages for a specified proc
 
 Syntax
 
-```
+```dbgcmd
 !lockedpages [Process]
 ```
 
@@ -43,9 +39,9 @@ Remarks
 
 You can stop execution at any point by pressing CTRL+BREAK (in WinDbg) or CTRL+C (in KD).
 
- 
+ 
 
- 
+ 
 
 
 

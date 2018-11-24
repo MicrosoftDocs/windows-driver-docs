@@ -3,6 +3,7 @@ title: MSiSCSI\_BootConfiguration WMI Class
 description: MSiSCSI\_BootConfiguration WMI Class
 ms.assetid: 5ca350ba-8689-46c2-8313-8f523354db98
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MSiSCSI\_BootConfiguration WMI Class
@@ -15,7 +16,7 @@ The MSiSCSI\_BootConfiguration WMI class describes how a boot device is configur
 
 This class is defined as follows in *Config.mof*.
 
-```
+```cpp
 class MSiSCSI_BootConfiguration {
   [key] string  InstanceName;
   boolean  Active;
@@ -65,9 +66,9 @@ class MSiSCSI_BootConfiguration {
 
 When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_BootConfiguration**](https://msdn.microsoft.com/library/windows/hardware/ff562976) data structure.
 
- 
+ 
 
- 
+ 
 
 
 

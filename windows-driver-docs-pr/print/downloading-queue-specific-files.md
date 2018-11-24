@@ -1,6 +1,5 @@
 ---
 title: Downloading Queue-Specific Files
-author: windows-driver-content
 description: Downloading Queue-Specific Files
 ms.assetid: b6aad46a-2934-461a-ad11-6ad699687fc1
 keywords:
@@ -9,11 +8,7 @@ keywords:
 - queue-specific files WDK printer
 - print queues WDK , Point and Print
 - queues WDK printer , Point and Print
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -57,13 +52,13 @@ As an example, assume that an installation application has defined the server re
 
 To connect to the print queue named HpColor on NTPRINT, a user application on MyClient calls **AddPrinterConnection** as follows:
 
-```
+```cpp
 AddPrinterConnection("\\NTPRINT\HpColor")
 ```
 
 On the server, the spooler loads Mscms.dll and calls [**GenerateCopyFilePaths**](https://msdn.microsoft.com/library/windows/hardware/ff549896) as follows:
 
-```
+```cpp
 GenerateCopyFilePaths(
     "HpColor",
     "Color",
@@ -80,7 +75,7 @@ Microsoft ICM's Mscms.dll module does not modify the source or destination paths
 
 The server spooler returns the following keys to MyClient:
 
-```
+```cpp
 SourceDir: \\NTPRINT\PRINT$\Color
 TargetDir: "Color"
 ```
@@ -91,7 +86,7 @@ The spooler on MyClient performs the following operations:
 
 -   Downloads Mscms.dll and calls [**GenerateCopyFilePaths**](https://msdn.microsoft.com/library/windows/hardware/ff549896) as follows:
 
-    ```
+    ```cpp
     GenerateCopyFilePaths(
         "\\NTPRINT\HpColor",
         "Color",
@@ -118,9 +113,9 @@ The spooler on MyClient performs the following operations:
 
 -   Calls the [**SpoolerCopyFileEvent**](https://msdn.microsoft.com/library/windows/hardware/ff562681) function in Mscms.dll, specifying a COPYFILE\_EVENT\_ADD\_PRINTER\_CONNECTION event.
 
- 
+ 
 
- 
+ 
 
 
 

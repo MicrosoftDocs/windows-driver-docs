@@ -9,11 +9,7 @@ api_name:
 - wscn JobCompletedTime
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The optional **JobCompletedTime** element specifies the time at which the scan j
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:JobCompletedTime>
   text
 </wscn:JobCompletedTime>
@@ -60,10 +56,10 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>JobEndState</strong>](jobendstate.md)</p></td>
+<td><p><a href="jobendstate.md" data-raw-source="[&lt;strong&gt;JobEndState&lt;/strong&gt;](jobendstate.md)"><strong>JobEndState</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>JobStatus</strong>](jobstatus.md)</p></td>
+<td><p><a href="jobstatus.md" data-raw-source="[&lt;strong&gt;JobStatus&lt;/strong&gt;](jobstatus.md)"><strong>JobStatus</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -75,16 +71,16 @@ A scan job is *complete* when all processing has completed, either because scann
 
 The specified time refers to the internal clock of the scan device and does not need to be a real time clock.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**JobEndState**](jobendstate.md)
 
 [**JobStatus**](jobstatus.md)
 
- 
+ 
 
- 
+ 
 
 
 

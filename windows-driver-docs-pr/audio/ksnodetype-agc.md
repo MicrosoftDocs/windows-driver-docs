@@ -9,11 +9,7 @@ api_name:
 - KSNODETYPE_AGC
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,9 +33,9 @@ A KSNODETYPE\_AGC node can also support the following optional properties:
 
 The KSPROPERTY\_TOPOLOGYNODE\_ENABLE property is used to both enable and disable the node. When disabled, the node operates in pass-through mode (that is, it allows the input stream to pass through to the output without modification).
 
- 
+ 
 
- 
+ 
 
 
 

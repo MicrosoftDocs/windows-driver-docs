@@ -1,13 +1,8 @@
 ---
 title: Example Default Segmentation Filter
-author: windows-driver-content
 description: Example Default Segmentation Filter
 ms.assetid: 96c74ca6-0162-4991-b3f9-86c17c92ffc3
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -16,7 +11,7 @@ ms.localizationpriority: medium
 
 A driver is not required to have its own segmentation filter in order to take advantage of the Microsoft segmentation filter, as long as it implements the WIA\_IPS\_SEGMENTATION property. Another possibility is for an IHV to provide its own segmentation filter, which during certain circumstances calls into the Microsoft default WIA segmentation filter. For example, an IHV might want to provide a very device-specific segmentation filter for multi-region detection during film scanning and use the segmentation filter provided by Microsoft during scans from the flatbed. To do this, an IHV WIA segmentation filter only needs to create *CLSID\_WiaDefaultSegFilter*, which implements *IWiaSegmentationFilter;* the segmentation filter would then call *DetectRegions*. The following code example shows how this can be done.
 
-```
+```cpp
 STDMETHODIMP
 SegFilter::DetectRegions(
    IN LONG       lFlags,
@@ -91,9 +86,9 @@ SegFilter::DetectRegions(
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

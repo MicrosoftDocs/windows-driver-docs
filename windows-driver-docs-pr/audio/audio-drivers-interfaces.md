@@ -2,11 +2,7 @@
 title: Audio Drivers Interfaces
 description: Audio Drivers Interfaces
 ms.assetid: f0c3b2b6-e38b-4088-a70d-749cd772ac4c
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,9 +33,9 @@ The following topics provide information about the interfaces and the methods th
 
 [Audio Processing Objects Utility Functions](https://msdn.microsoft.com/library/windows/hardware/ff536213)
 
- 
+ 
 
- 
+ 
 
 
 

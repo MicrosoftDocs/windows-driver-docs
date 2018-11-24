@@ -1,15 +1,10 @@
 ---
 title: Registry Settings for the Serial Service
-author: windows-driver-content
 description: Registry Settings for the Serial Service
 ms.assetid: 5c4a28ab-e2e5-45b4-8179-6f5d40e9c98c
 keywords:
 - Serial service WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -40,9 +35,9 @@ Specifies a Boolean flag that indicates whether to permit the system to share th
 <a href="" id="breakonentry--debuglevel--and-logfifo"></a>**BreakOnEntry**, **DebugLevel**, and **LogFifo**  
 Specify entry values that are used for debugging. For more information about these entry values, see the Serial sample code that is included in the WDK.
 
- 
+ 
 
- 
+ 
 
 
 

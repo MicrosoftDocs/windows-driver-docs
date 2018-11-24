@@ -6,11 +6,7 @@ keywords:
 - trace sessions WDK , removing
 - removing trace sessions
 - TraceView WDK , removing trace
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +25,9 @@ You can remove a real-time trace session or a trace log session from the Trace S
 
 To remove a real-time trace session, the session must be [stopped](stopping-a-trace-session.md) (that is, all providers must be disabled). If any providers in the session are still running (that is, are enabled), the **Remove Log Session** command is dimmed.
 
- 
+ 
 
- 
+ 
 
 
 

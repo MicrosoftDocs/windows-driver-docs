@@ -3,11 +3,7 @@ title: br (Breakpoint Renumber)
 description: The br command renumbers one or more breakpoints.
 ms.assetid: 1b41eb37-3375-4203-bbf5-f55869383db8
 keywords: ["br (Breakpoint Renumber) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **br** command renumbers one or more breakpoints.
 
-```
+```dbgcmd
 br OldID NewID [OldID2 NewID2 ...] 
 ```
 
@@ -58,7 +54,7 @@ Specifies a new number that becomes the ID of the breakpoint.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -71,9 +67,9 @@ You can use the **br** command to renumber any number of breakpoints at the same
 
 If there is already a breakpoint with an ID equal to *NewID*, the command fails and an error message is displayed.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: customUI element
-author: windows-driver-content
 description: The optional customUI element specifies a custom user interface to be displayed on a client computer.
 ms.assetid: 4408dcf2-0928-4ecb-97eb-0027eceef457
 keywords: ["customUI element Print Devices"]
@@ -10,11 +9,7 @@ api_name:
 - customUI
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,7 +23,7 @@ The **customUI** element is defined in the *asyncui* namespace at this URI: http
 Usage
 -----
 
-``` syntax
+```xml
 <customUI
   dll = "xs:string"
   entrypoint = "xs:string"
@@ -119,7 +114,7 @@ Attributes
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>requestOpen</strong>](requestopen.md)</p></td>
+<td><p><a href="requestopen.md" data-raw-source="[&lt;strong&gt;requestOpen&lt;/strong&gt;](requestopen.md)"><strong>requestOpen</strong></a></p></td>
 <td><p></p>
 <p>An element that is used to open an event notification message on the client computer.</p></td>
 </tr>
@@ -136,7 +131,7 @@ Examples
 
 The following code example shows how to use the **customUI** element to call and display a custom user interface on a client computer.
 
-```
+```cpp
 <?xml version="1.0"?>
   <asyncPrintUIRequest xmlns="http://schemas.microsoft.com/2003/print/asyncui/1.0"
       xmlns:myco="http://www.myprintercompany.com">
@@ -149,14 +144,14 @@ The following code example shows how to use the **customUI** element to call and
   </asyncPrintUIRequest>
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**requestOpen**](requestopen.md)
 
- 
+ 
 
- 
+ 
 
 
 

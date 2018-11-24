@@ -4,11 +4,7 @@ description: DirectX 8.0 Release Notes
 ms.assetid: 8d1b6a86-ca46-432e-886a-95a75dbea3f1
 keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,9 +16,9 @@ ms.localizationpriority: medium
 
 The following section contains update information for DirectX 8.0 and it focuses on those areas of the DDI that have been modified or extended for DirectX 8.0.
 
- 
+ 
 
- 
+ 
 
 
 

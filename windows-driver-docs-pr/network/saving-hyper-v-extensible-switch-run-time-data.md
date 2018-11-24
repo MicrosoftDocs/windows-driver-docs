@@ -2,11 +2,7 @@
 title: Saving Hyper-V Extensible Switch Run-Time Data
 description: Saving Hyper-V Extensible Switch Run-Time Data
 ms.assetid: 7AC57344-E8BD-4692-BD49-173111AF8579
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,9 +17,9 @@ This section includes the following topics:
 
 [Handling the OID\_SWITCH\_NIC\_SAVE\_COMPLETE Request](handling-the-oid-switch-nic-save-complete-request.md)
 
- 
+ 
 
- 
+ 
 
 
 

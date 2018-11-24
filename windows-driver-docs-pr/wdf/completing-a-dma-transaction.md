@@ -1,6 +1,5 @@
 ---
 title: Completing a DMA Transaction
-author: windows-driver-content
 description: Completing a DMA Transaction
 ms.assetid: 90531b72-e51d-451e-ae84-a9bbf0245665
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - DMA operations WDK KMDF , transactions
 - bus-master DMA WDK KMDF , transactions
 - completing DMA transactions WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,7 +31,7 @@ If the driver calls [**WdfRequestCompleteWithInformation**](https://msdn.microso
 
 These steps are illustrated in the following code example, taken from the [PLX9x5x](http://go.microsoft.com/fwlink/p/?linkid=256157) sample’s [*EvtInterruptDpc*](https://msdn.microsoft.com/library/windows/hardware/ff541721) callback function in the *Isrdpc.c* file:
 
-```
+```cpp
 if (readComplete) {
     BOOLEAN              transactionComplete;
     WDFDMATRANSACTION    dmaTransaction;
@@ -60,12 +55,11 @@ if (readComplete) {
         WdfRequestCompleteWithInformation(request, status, bytesTransferred);
     }
 }
-
 ```
 
- 
 
- 
+
+
 
 
 

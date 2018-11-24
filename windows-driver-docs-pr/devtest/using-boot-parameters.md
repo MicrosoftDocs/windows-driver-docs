@@ -12,11 +12,7 @@ keywords:
 - NVRAM boot options WDK , boot parameters
 - EFI NVRAM boot options WDK , boot parameters
 - Boot.ini files WDK , boot parameters
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -40,9 +36,9 @@ This section contains the following topics:
 
 [Boot Parameters to Configure DEP and PAE](boot-parameters-to-configure-dep-and-pae.md)
 
- 
+ 
 
- 
+ 
 
 
 

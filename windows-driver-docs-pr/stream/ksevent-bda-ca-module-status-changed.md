@@ -11,11 +11,7 @@ api_location:
 - Bdamedia.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -51,7 +47,7 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**KSEVENT**](https://msdn.microsoft.com/library/windows/hardware/ff561744)
@@ -60,9 +56,9 @@ Requirements
 
 [**KSPROPERTY\_BDA\_CA\_MODULE\_STATUS**](ksproperty-bda-ca-module-status.md)
 
- 
+ 
 
- 
+ 
 
 
 

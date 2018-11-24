@@ -6,11 +6,7 @@ keywords:
 - NdisRegisterProtocol
 - updating DriverEntry
 - DriverEntry WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +26,9 @@ If an error occurs after a successful call to **NdisRegisterProtocolDriver**, th
 
 For more information about NDIS 6.0 driver initialization, see [Initializing a Protocol Driver](initializing-a-protocol-driver.md).
 
- 
+ 
 
- 
+ 
 
 
 

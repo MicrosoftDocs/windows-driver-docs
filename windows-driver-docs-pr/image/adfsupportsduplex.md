@@ -9,11 +9,7 @@ api_name:
 - wscn ADFSupportsDuplex
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **ADFSupportsDuplex** element specifies whether the attached automa
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ADFSupportsDuplex>
   text
 </wscn:ADFSupportsDuplex>
@@ -60,7 +56,7 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ADF</strong>](adf.md)</p></td>
+<td><p><a href="adf.md" data-raw-source="[&lt;strong&gt;ADF&lt;/strong&gt;](adf.md)"><strong>ADF</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -72,14 +68,14 @@ If the scan device has an ADF that supports duplex scanning, the WSD Scan Servic
 
 You cannot extend the allowed values for this element.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ADF**](adf.md)
 
- 
+ 
 
- 
+ 
 
 
 

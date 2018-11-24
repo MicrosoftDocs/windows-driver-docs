@@ -1,14 +1,9 @@
 ---
 title: Handling IRP_MN_QUERY_POWER for System Power States
-author: windows-driver-content
 description: Handling IRP_MN_QUERY_POWER for System Power States
 ms.assetid: 1904a1cb-a220-41cc-8894-5f90919e7383
 keywords: ["IRP_MN_QUERY_POWER", "system power states WDK kernel , IRP_MN_QUERY_POWER", "query-power IRPs WDK power management"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -46,9 +41,9 @@ Because the power manager sends the system query IRP to each device stack on the
 
 Usually, however, a driver receives a system set-power IRP following a system query IRP. Regardless, a driver must be ready to change the system power state even if the driver fails a query-power IRP.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: Signal Strength Indication Semantics
 description: Signal Strength Indication Semantics
 ms.assetid: d28476f8-d567-4fe0-9cb9-4a78d8b0e05b
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,9 +33,9 @@ To update signal strength indications, use the following procedure:
 
 9.  The miniport driver sends [**NDIS\_WWAN\_SIGNAL\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff567931) to the MB Service.
 
- 
+ 
 
- 
+ 
 
 
 

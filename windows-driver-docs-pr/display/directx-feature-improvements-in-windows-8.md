@@ -2,11 +2,7 @@
 title: DirectX feature improvements in Windows 8
 description: Windows 8 includes Microsoft DirectX feature improvements that benefit developers, end users and system manufacturers.
 ms.assetid: 0622DA0D-41ED-4B47-B090-8D5B85E10EB3
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -63,7 +59,7 @@ These additional formats provide increased performance on lower-power hardware i
 | Multisample Resolve              | Required (if MSAA supported) for 565, no for 4444, 5551 | Required (if MSAA supported) for 565, optional for 4444, 5551  | Required for 565, optional for 4444, 5551 | Required for 565, optional for 4444, 5551 |
 | Multisample Load                 | No                                                      | Required (if MSAA supported) for 565, optional for 4444, 5551) | Required for 565, optional for 4444, 5551 | Required for 565, optional for 4444, 5551 |
 
- 
+ 
 
 ## <span id="dblshader"></span><span id="DBLSHADER"></span>Double-precision shader functionality
 
@@ -79,7 +75,7 @@ Because the runtime can pass these instructions directly to the driver, the impl
 **Note**  
 To use these features, developers must ensure that they are running with FEATURE\_LEVEL\_11 or higher with double-precision support (D3D11\_FEATURE\_DOUBLES) on a WDDM 1.2 or later driver.
 
- 
+ 
 
 ### <span id="Sum_of_absolute_differences"></span><span id="sum_of_absolute_differences"></span><span id="SUM_OF_ABSOLUTE_DIFFERENCES"></span>Sum of absolute differences
 
@@ -90,7 +86,7 @@ Ideally, the MSAD instruction should be implemented so that overflow results in 
 
 Developers must check to make sure that they are running with FEATURE\_LEVEL\_11 or higher on a WDDM 1.2 or later driver to use this feature. Developers must not rely on result accuracy for accumulation values that overflow (that is, go above 65535).
 
- 
+ 
 
 ## <span id="tir"></span><span id="TIR"></span>Target-independent rasterization (TIR)
 
@@ -179,11 +175,11 @@ This feature must be supported for all Direct3D 10+ hardware with Direct3D 11.1 
 **Note**  
 You must specify either the NO\_OVERWRITE or DISCARD flag.
 
- 
+ 
 
 ### <span id="Offsetting_constant_buffer_updates"></span><span id="offsetting_constant_buffer_updates"></span><span id="OFFSETTING_CONSTANT_BUFFER_UPDATES"></span>Offsetting constant buffer updates
 
-A common desire for high-performance game engines is to collect a large batch of constant buffer updates for constants to be referenced by separate **Draw\*** calls, each needing its own constants, all at once. This is facilitated by allowing the application to create a large buffer and then pointing individual shaders to regions within it (similar to a view, but without having to make a whole object to describe the view).
+A common desire for high-performance game engines is to collect a large batch of constant buffer updates for constants to be referenced by separate **Draw\\*** calls, each needing its own constants, all at once. This is facilitated by allowing the application to create a large buffer and then pointing individual shaders to regions within it (similar to a view, but without having to make a whole object to describe the view).
 
 Constant buffers now can be created that have a size larger than the maximum constant buffer size addressable by an individual shader (at most 4096 16-byte elements - 65kB, where each element is one four-component shader constant). The constant buffer resource size is now limited only by the size of memory allocation that the system is capable of handling.
 
@@ -231,9 +227,9 @@ These functions and structures are new or updated for Windows 8:
 -   [**D3DDDICAPS\_SHADER\_MIN\_PRECISION\_SUPPORT**](https://msdn.microsoft.com/library/windows/hardware/hh451154)
 -   [**D3DDDICAPS\_TYPE**](https://msdn.microsoft.com/library/windows/hardware/ff544132)
 
- 
+ 
 
- 
+ 
 
 
 

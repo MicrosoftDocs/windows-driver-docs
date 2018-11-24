@@ -5,11 +5,7 @@ ms.assetid: 3ef92943-6462-4fe7-bd9b-8235083e8e16
 keywords:
 - INF files WDK device installations , copying
 - copying INF files
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,9 +31,9 @@ Doing so will:
 
 Installation software must never copy INF files directly into a system's *%SystemRoot%/inf* directory. Copying INF files by using techniques not described in this section will invalidate a driver's digital signature.
 
- 
+ 
 
- 
+ 
 
 
 

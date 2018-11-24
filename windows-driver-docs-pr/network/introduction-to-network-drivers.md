@@ -4,11 +4,7 @@ description: Introduction to Network Drivers
 ms.assetid: a3160487-666b-470d-a551-d04b0723d0e7
 keywords:
 - network drivers WDK , about network drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +24,9 @@ This section discusses introductory concepts for kernel-mode network drivers and
 -   [NET\_BUFFER Architecture](net-buffer-architecture.md)
 -   [Introduction to NDIS PDPI](introduction-to-ndis-pdpi.md)
 
- 
+ 
 
- 
+ 
 
 
 

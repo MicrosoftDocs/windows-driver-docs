@@ -2,11 +2,7 @@
 title: PICT Data Source
 description: PICT Data Source
 ms.assetid: 75D3E086-C277-410d-B474-742A47ABB6AC
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,7 +38,7 @@ One you are done authoring your model file (and seed file) for PICT and have ver
 
 Native code:
 
-```
+```cpp
 1     class PictExample
 2     {
 3         TEST_CLASS(PictExample)
@@ -65,7 +61,7 @@ Native code:
 
 Managed code:
 
-```
+```cpp
 1     [TestClass]
 2     public class CSharpPictExample
 3     {
@@ -98,18 +94,17 @@ As shown in the above examples, you need to specify the name of the model file a
 
 If you want to pass command options to PICT, you can use metadata for this purpose. Use the following table to map the command options of Pict.exe to TAEF metadata.
 
-| pict.exe command syntax | Native TAEF metadata syntax                               | Managed TAEF metadata syntax                      |
-|-------------------------|-----------------------------------------------------------|---------------------------------------------------|
-| /o:3                    | TEST\_METHOD\_PROPERTY(L"Pict:Order", L"3")               | \[TestProperty("Pict:Order", "3")\]               |
-| /d:,                    | TEST\_METHOD\_PROPERTY(L"Pict:ValueSeparator", L",")      | \[TestProperty("Pict:ValueSeparator", ",")\]      |
-| /a:|                    | TEST\_METHOD\_PROPERTY(L"Pict:AliasSeparator", L"|")      | \[TestProperty("Pict:AliasSeparator", "|")\]      |
-| /n:~                    | TEST\_METHOD\_PROPERTY(L"Pict:NegativeValuePrefix", L"~") | \[TestProperty("Pict:NegativeValuePrefix", "~")\] |
-| /e:test.seed            | TEST\_METHOD\_PROPERTY(L"Pict:SeedingFile", L"test.seed") | \[TestProperty("Pict:SeedingFile", "test.seed")\] |
-| /r                      | TEST\_METHOD\_PROPERTY(L"Pict:Random", L"true")           | \[TestProperty("Pict:Random", "true")\]           |
-| /r:33                   | TEST\_METHOD\_PROPERTY(L"Pict:RandomSeed", L"33")         | \[TestProperty("Pict:RandomSeed", "33")\]         |
-| /c                      | TEST\_METHOD\_PROPERTY(L"Pict:CaseSensitive", L"true")    | \[TestProperty("Pict:CaseSensitive", "true")\]    |
 
- 
+| pict.exe command syntax |                Native TAEF metadata syntax                |           Managed TAEF metadata syntax            |
+|-------------------------|-----------------------------------------------------------|---------------------------------------------------|
+|          /o:3           |        TEST\_METHOD\_PROPERTY(L"Pict:Order", L"3")        |        \[TestProperty("Pict:Order", "3")\]        |
+|          /d:,           |   TEST\_METHOD\_PROPERTY(L"Pict:ValueSeparator", L",")    |   \[TestProperty("Pict:ValueSeparator", ",")\]    |
+|           /a:           |                                                           | TEST\_METHOD\_PROPERTY(L"Pict:AliasSeparator", L" |
+|          /n:~           | TEST\_METHOD\_PROPERTY(L"Pict:NegativeValuePrefix", L"~") | \[TestProperty("Pict:NegativeValuePrefix", "~")\] |
+|      /e:test.seed       | TEST\_METHOD\_PROPERTY(L"Pict:SeedingFile", L"test.seed") | \[TestProperty("Pict:SeedingFile", "test.seed")\] |
+|           /r            |      TEST\_METHOD\_PROPERTY(L"Pict:Random", L"true")      |      \[TestProperty("Pict:Random", "true")\]      |
+|          /r:33          |     TEST\_METHOD\_PROPERTY(L"Pict:RandomSeed", L"33")     |     \[TestProperty("Pict:RandomSeed", "33")\]     |
+|           /c            |  TEST\_METHOD\_PROPERTY(L"Pict:CaseSensitive", L"true")   |  \[TestProperty("Pict:CaseSensitive", "true")\]   |
 
 Any of the above metadata can be set at the command prompt, in the DataSource property, or as test, class, or module level metadata, with precedence in that order. To set it at the command prompt, use the syntax:
 
@@ -119,7 +114,7 @@ te.exe <test dll> /Pict:Order=3 /Pict:SeedingFile=test.seed
 
 To set metadata in the DataSource property, append the model file name with a question mark character (?) then a set of ampersand-separated metadata name = metadata value pairs. When using this method, the "Pict:" prefix for metadata names is optional. Here is an example:
 
-```
+```cpp
 TEST_METHOD_PROPERTY(L"DataSource", L"Pict:model.txt?Order=3&CaseSensitive=true&Random=true")
 ```
 
@@ -133,7 +128,7 @@ You can access the data values during a given invocation from your test method a
 
 Native code:
 
-```
+```cpp
 1     void PictExample::SimpleTest()
 2     {
 3         String valueA;
@@ -164,7 +159,7 @@ Native code:
 
 Managed code:
 
-```
+```cpp
 1      [TestClass]
 2      public class CSharpPictExample
 3      {
@@ -286,7 +281,7 @@ If persisting the PICT results, and using cached data is something you want to d
 set te_cmd = /persistPictResults
 ```
 
-The cached result files are stored in a folder called "TAEF-PICT" in %temp% directory, if Te.exe has access to it, or in the current execution directory from where Te.exe was launched. The only time you may have the results in an inconsistent state is if you hit Ctrl + C during execution. In such a case, TAEF will attempt to delete the cached results, but if it is unable to do so, you will see an error to the effect. The error will prompt you to delete the the cached results location. Failing to do may result in undefined or erroneous behaviour in subsequent tests.
+The cached result files are stored in a folder called "TAEF-PICT" in %temp% directory, if Te.exe has access to it, or in the current execution directory from where Te.exe was launched. The only time you may have the results in an inconsistent state is if you hit Ctrl + C during execution. In such a case, TAEF will attempt to delete the cached results, but if it is unable to do so, you will see an error to the effect. The error will prompt you to delete the cached results location. Failing to do may result in undefined or erroneous behaviour in subsequent tests.
 
 With in-built PICT support in TAEF, you can now make the most of both, features in PICT as well as features in TAEF in your test automation.
 
@@ -297,7 +292,7 @@ You can add PICT models and seeding files as resources in your test module.
 
 In native code, this is done by specifying the resource name instead of the file name in the DataSource metadata. Here is an example:
 
-```
+```cpp
 BEGIN_TEST_METHOD(ResourceNameDataSource)
     TEST_METHOD_PROPERTY(L"DataSource", L"Pict:MyModelResourceName?SeedingFile=MySeedingResourceName")
 END_TEST_METHOD()
@@ -305,16 +300,16 @@ END_TEST_METHOD()
 
 "MyModelResourceName" and "MySeedingResourceName" are the resource names defined in a .rc file. The resource type needs to be DATAFILE, unlike in [table data sources](table-data-source.md) where the resource type needs to be DATASOURCE\_XML.
 
-```
+```cpp
 MyModelResourceName DATAFILE "model.txt"
 MySeedingResourceName DATAFILE "seed.txt"
 ```
 
 The DataSource metadata value will remain the same as it did when the model was a file. Likewise in native code, you could make the resource name be the same as the file name. TAEF will first look for the presence of the actual file with the DataSource name. If the file is not found, it proceed by looking in the test module's resources. Since changing the DataSource stored in the resource requires recompiling, you can leverage this design by copying over the DataSource file to the same location as the test dll while developing (and naming the resource name to be the same as the file name). Once you are done testing, move (not copy) the file back to the code directory and recompile to embed the resource.
 
- 
 
- 
+
+
 
 
 

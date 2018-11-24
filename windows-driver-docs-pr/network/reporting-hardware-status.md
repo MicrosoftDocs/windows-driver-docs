@@ -8,11 +8,7 @@ keywords:
 - NDIS miniport drivers WDK , hardware status
 - hardware status WDK networking
 - status information WDK NDIS miniport
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -48,9 +44,9 @@ A miniport driver can also be interrogated by an upper layer driver or by NDIS a
 
 The miniport driver can be queried so that NDIS can synchronize operations between layers of NDIS drivers--for example, by determining whether a NIC is ready to accept packets.
 
- 
+ 
 
- 
+ 
 
 
 

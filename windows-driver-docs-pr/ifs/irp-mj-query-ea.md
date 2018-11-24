@@ -1,5 +1,5 @@
 ---
-title: IRP\_MJ\_QUERY\_EA
+title: IRP_MJ_QUERY_EA
 description: IRP\_MJ\_QUERY\_EA
 ms.assetid: 5d60a6e9-e940-44cf-844b-86837b36237a
 keywords: ["IRP_MJ_QUERY_EA Installable File System Drivers"]
@@ -9,11 +9,7 @@ api_name:
 - IRP_MJ_QUERY_EA
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -90,7 +86,7 @@ Specifies one or more of the following values.
 </tbody>
 </table>
 
- 
+ 
 
 <a href="" id="irpsp--majorfunction"></a>*IrpSp-&gt;MajorFunction*  
 Specifies IRP\_MJ\_QUERY\_EA.
@@ -115,7 +111,7 @@ When a short buffer is supplied and STATUS\_BUFFER\_OVERFLOW is returned, NTFS r
 &gt; \[!Note\]
 &gt;   On Windows Vista and later, FAT16 no longer supports extended attributes.
 
- 
+ 
 
 ## See also
 
@@ -136,9 +132,9 @@ When a short buffer is supplied and STATUS\_BUFFER\_OVERFLOW is returned, NTFS r
 
 [**IRP\_MJ\_SET\_EA**](irp-mj-set-ea.md)
 
- 
+ 
 
- 
+ 
 
 
 

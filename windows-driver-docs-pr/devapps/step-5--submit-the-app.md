@@ -2,11 +2,7 @@
 title: Step 5 Submit the Microsoft Store device app
 description: This topic describes how to submit your UWP device app to the Microsoft Store dashboard.
 ms.assetid: B25F9953-6EFD-4A08-AFD6-B334C46E910F
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,7 +15,7 @@ This topic describes how to submit your UWP device app to the Microsoft Store da
 
 **Note**  If your app is specified as a privileged app and it is not configured for automatic installation, you can submit your device metdata to the Windows Dev Center hardware dashboard before you submit your privileged app to the Microsoft Store. In this case, this step 5 can take place after [step 6](step-6--submit-device-metadata.md).
 
- 
+ 
 
 A UWP device app is a special kind of UWP app that device manufacturers create to serve as a companion to their internal or peripheral device. By using device metadata, device apps can run privileged operations, such as device update. For more info about UWP device apps, see [Meet UWP device apps](meet-uwp-device-apps.md).
 
@@ -87,9 +83,9 @@ The Microsoft Store dashboard validates the Microsoft Store device app package a
 
 [Step 6: Submit device metadata](step-6--submit-device-metadata.md)
 
- 
+ 
 
- 
+ 
 
 
 

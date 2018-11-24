@@ -1,6 +1,5 @@
 ---
 title: Programming Considerations for USBPRINT
-author: windows-driver-content
 description: Programming Considerations for USBPRINT
 ms.assetid: 351b3124-d584-4817-a5ce-09e16b54d41b
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - USBPRINT
 - USBMON
 - USB printers WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -50,11 +45,11 @@ The following IOCTLs are specific to the USB printing stack:
 
 **Note**   Usbprint.sys does not provide a mechanism for obtaining descriptors from the device, nor for directly manipulating USB pipes.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

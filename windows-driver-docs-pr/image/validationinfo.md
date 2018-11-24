@@ -9,11 +9,7 @@ api_name:
 - wscn ValidationInfo
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **ValidationInfo** element contains all [**ScanTicket**](scanticket
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ValidationInfo>
   child elements
 </wscn:ValidationInfo>
@@ -50,13 +46,13 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ImageInformation</strong>](imageinformation.md)</p></td>
+<td><p><a href="imageinformation.md" data-raw-source="[&lt;strong&gt;ImageInformation&lt;/strong&gt;](imageinformation.md)"><strong>ImageInformation</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>ValidScanTicket</strong>](validscanticket.md)</p></td>
+<td><p><a href="validscanticket.md" data-raw-source="[&lt;strong&gt;ValidScanTicket&lt;/strong&gt;](validscanticket.md)"><strong>ValidScanTicket</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>ValidTicket</strong>](validticket.md)</p></td>
+<td><p><a href="validticket.md" data-raw-source="[&lt;strong&gt;ValidTicket&lt;/strong&gt;](validticket.md)"><strong>ValidTicket</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -75,7 +71,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ValidateScanTicketResponse</strong>](validatescanticketresponse.md)</p></td>
+<td><p><a href="validatescanticketresponse.md" data-raw-source="[&lt;strong&gt;ValidateScanTicketResponse&lt;/strong&gt;](validatescanticketresponse.md)"><strong>ValidateScanTicketResponse</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -85,7 +81,7 @@ Remarks
 
 The **ValidationInfo** element contains elements that define whether the client's [**ScanTicket**](scanticket.md) is valid and, if not, what data the WSD Scan Service changed to make the ticket valid. The Scan Service returns this information in its [**ValidateScanTicketResponse**](validatescanticketresponse.md) operation.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ImageInformation**](imageinformation.md)
@@ -100,9 +96,9 @@ The **ValidationInfo** element contains elements that define whether the client'
 
 [**ValidateScanTicketResponse**](validatescanticketresponse.md)
 
- 
+ 
 
- 
+ 
 
 
 

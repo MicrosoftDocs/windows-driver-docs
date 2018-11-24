@@ -7,11 +7,7 @@ keywords:
 - header-data split WDK , filter drivers
 - protocol drivers WDK networking , header-data split
 - filter drivers WDK networking , header-data split
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,11 +31,11 @@ With split buffers, the data length that is associated with the NET\_BUFFER stru
 
 **Note**  After the receive indication call returns to a miniport driver, the miniport driver can reclaim the header MDLs. The overlying drivers or their clients must not access the header MDLs after the receive indication call returns to the miniport driver. This restriction also applies even when the miniport driver is not indicating the received data with a status of NDIS\_RECEIVE\_FLAGS\_RESOURCES.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

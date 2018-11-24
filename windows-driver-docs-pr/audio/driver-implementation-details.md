@@ -2,11 +2,7 @@
 title: Driver Implementation Details
 description: This topic presents the implementation details for an audio driver that is developed for an audio adapter that is capable of processing hardware-offloaded audio streams.
 ms.assetid: FB17FADD-D683-4ECC-95F9-86DF7A289C63
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -127,9 +123,9 @@ In addition to the support described in the preceding sections for hardware-offl
 
 [Glitch Reporting for Offloaded Audio](glitch-reporting-for-offloaded-audio.md)
 
- 
+ 
 
- 
+ 
 
 
 

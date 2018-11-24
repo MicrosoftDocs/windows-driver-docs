@@ -2,11 +2,7 @@
 title: Roadmap for Developing Biometric Drivers
 description: Roadmap for Developing Biometric Drivers
 ms.assetid: 8ed13c75-86d1-4ac0-9f44-05162521b915
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -69,9 +65,9 @@ To create a biometric driver, follow these steps:
 
 These are the basic steps. Additional steps might be necessary based on the needs of your individual driver.
 
- 
+ 
 
- 
+ 
 
 
 

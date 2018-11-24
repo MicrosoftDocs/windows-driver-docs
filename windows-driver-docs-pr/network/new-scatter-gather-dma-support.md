@@ -6,11 +6,7 @@ keywords:
 - scatter/gather DMA WDK networking
 - miniport drivers WDK networking , scatter/gather DMA
 - NDIS miniport drivers WDK , scatter/gather DMA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +30,9 @@ This provides the following benefits:
 
 For more information about NDIS 6.0 scatter/gather DMA, see [NDIS 6.0 Scatter/Gather DMA](ndis-scatter-gather-dma.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: C28645
 description: Warning C28645 MessageBox was called using the question mark message symbol which is no longer recommended.
 ms.assetid: 1d95b2a3-9d29-4fbb-9473-d2f1a57c9c2e
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,9 +15,9 @@ The use of the question mark message icon in a modal dialog box is no longer rec
 
 Therefore, do not use this question mark message symbol in your message boxes. The system continues to support its inclusion only for backward compatibility.
 
- 
+ 
 
- 
+ 
 
 
 

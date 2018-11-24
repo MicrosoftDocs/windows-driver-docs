@@ -9,11 +9,7 @@ keywords:
 - chrominance prediction blocks WDK DirectX VA
 - prediction blocks WDK DirectX VA
 - macroblocks WDK DirectX VA , partitioning
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -39,9 +35,9 @@ Chrominance prediction blocks usually have half the size in both horizontal and 
 
 Exceptions to the method of scaling chrominance block dimensions are often made when the luminance prediction block becomes too small. For example, in the H.263 Advanced Prediction mode, the chrominance prediction block remains 8x8 in shape, and the chrominance motion vector is derived from a scaled average of the four 8x8 luminance motion vectors.
 
- 
+ 
 
- 
+ 
 
 
 

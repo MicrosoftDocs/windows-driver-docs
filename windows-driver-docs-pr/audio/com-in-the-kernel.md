@@ -9,11 +9,7 @@ keywords:
 - IUnknown interface
 - port class drivers WDK audio
 - PortCls WDK audio , COM
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,9 +31,9 @@ This section discusses the following topics:
 
 [Reference-Counting Conventions for COM Objects](reference-counting-conventions-for-com-objects.md)
 
- 
+ 
 
- 
+ 
 
 
 

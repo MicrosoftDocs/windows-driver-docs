@@ -3,11 +3,7 @@ title: ndiskd.netqueue
 description: The ndiskd.netqueue extension displays information about a NETTXQUEUE or NETRXQUEUE object.
 ms.assetid: 101F29AA-5CEE-41F8-A3EC-AA2E74B8E074
 keywords: ["ndiskd.netqueue Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,7 +20,7 @@ The **!ndiskd.netqueue** extension displays information about a NETTXQUEUE or NE
 
 For more information about the Network Adapter WDF Class Extension (NetAdapterCx), see [Network Adapter WDF Class Extension (Cx)](https://docs.microsoft.com/windows-hardware/drivers/netcx).
 
-```
+```console
 !ndiskd.netqueue [-handle <x>] [-basic] 
 ```
 
@@ -46,7 +42,7 @@ Examples
 
 **Note**  See [Summary of Objects](https://docs.microsoft.com/windows-hardware/drivers/netcx/summary-of-objects) to see a diagram explaining the relationship of the NETTXQUEUE and NETRXQUEUE objects with other objects in the NetAdapterCx.
 
- 
+ 
 
 To obtain a handle for a NETTXQUEUE or NETRXQUEUE, follow these steps:
 
@@ -58,7 +54,7 @@ To obtain a handle for a NETTXQUEUE or NETRXQUEUE, follow these steps:
 For details on this procedure, see the examples on the **!ndiskd.cxadapter** topic.
 In the following example, look for the handle for this NETADAPTER's NETTXQUEUE, ffffd1022f512700.
 
-```
+```console
 0: kd> !ndiskd.cxadapter ffffd1022f1a0720 -basic -datapath
 
 
@@ -69,7 +65,6 @@ NETADAPTER
     WDFDEVICE          00002efdcf45f2f8   
 
     Event Callbacks                        Function pointer   Symbol (if available)
-    EvtAdapterSetCapabilities              fffff800341519ac   RtEthSample+19ac
     EvtAdapterCreateTxQueue                fffff80034151508   RtEthSample+1508
     EvtAdapterCreateRxQueue                fffff800341510ec   RtEthSample+10ec
 
@@ -82,7 +77,7 @@ DATAPATH QUEUES
 
 By clicking on the NETTXQUEUE's handle or entering the **!ndiskd.netqueue -handle** command on the command line, you can see details for this queue, including the handle to its companion WDF object, the handle to its ring buffer, and function pointers for its registered callbacks.
 
-```
+```console
 0: kd> !ndiskd.netqueue ffffd1022f512700
 
     NETTXQUEUE         00002efdd0aed9a8
@@ -117,9 +112,9 @@ By clicking on the NETTXQUEUE's handle or entering the **!ndiskd.netqueue -handl
 
 [**!ndiskd.cxadapter**](-ndiskd-cxadapter.md)
 
- 
+ 
 
- 
+ 
 
 
 

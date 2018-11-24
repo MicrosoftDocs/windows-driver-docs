@@ -1,17 +1,12 @@
 ---
 title: Option Attributes
-author: windows-driver-content
 description: Option Attributes
 ms.assetid: 140837b9-2af6-485c-8b59-95fcd6502e18
 keywords:
 - printer attributes WDK Unidrv , options
 - option attributes WDK Unidrv
 - printer options WDK Unidrv , attributes
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -49,9 +44,9 @@ This section contains the following topics:
 
 [Option Attributes for the Resolution Feature](option-attributes-for-the-resolution-feature.md)
 
- 
+ 
 
- 
+ 
 
 
 

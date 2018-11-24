@@ -1,6 +1,5 @@
 ---
 title: Preanalysis Infrastructure
-author: windows-driver-content
 description: Preanalysis Infrastructure
 ms.assetid: 4c07145a-9a08-4507-8bab-769617e73d77
 keywords:
@@ -12,11 +11,7 @@ keywords:
 - DrvStartBanding
 - DrvNextBand
 - DrvQueryPerBandInfo
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,7 +27,7 @@ To allow a full-page preanalysis, Unidrv first specifies a full-page device surf
 
 The following pseudocode illustrates the logic used for preanalysis.
 
-```
+```cpp
 DrvEnableSurface
 if( preanalysis enabled )
    Use dummy device surface
@@ -97,11 +92,11 @@ Enable device StretchBlt operations.
 
 Enable OEM object-level preanalysis.
 
- 
+ 
 
 ### Monochrome Z-Order Text Analysis with Blank Band Optimization
 
-```
+```cpp
 *PreAnalysisOptions: 1
 ```
 
@@ -137,7 +132,7 @@ During the preanalysis pass, Unidrv determines where drawing will occur on the p
 
 ### Black Band Optimization
 
-```
+```cpp
 *PreAnalysisOptions: 2  *% 1 bpp ImageProcessing bitmaps
 ```
 
@@ -151,7 +146,7 @@ This functionality requires OEMs to support the **IPrintOemUni::ImageProcessing*
 
 ### Support for Device StretchBlt Operations
 
-```
+```cpp
 *PreAnalysisOptions: 4
 ```
 
@@ -165,7 +160,7 @@ Whenever objects are directly downloaded to a device while other data is rendere
 
 ### OEM Object-Level Preanalysis Hooks
 
-```
+```cpp
 *PreAnalysisOptions: 8
 ```
 
@@ -179,9 +174,9 @@ OEMs are required to hook both **DrvStartBanding** and [**DrvNextBand**](https:/
 
 The end of preanalysis is signaled by a call to the **OEMNextBand** function. The *pptl* parameter that is passed to **OEMNextBand** is not **NULL**. This call is used only to return the appropriate *pptl* value to Unidrv. Plug-ins can set the *pptl* value themselves or can call back into Unidrv (like the preceding pseudocode example at the beginning of this topic does). Because the banding surface that the *pso* parameter of **OEMNextBand** specified in the first call to **OEMNextBand** has not rendered yet, a plug-in should not send its contents to the device.
 
- 
+ 
 
- 
+ 
 
 
 

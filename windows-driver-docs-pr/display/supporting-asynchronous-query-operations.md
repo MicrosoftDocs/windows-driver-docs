@@ -5,11 +5,7 @@ ms.assetid: fe7dff3b-8941-4ab1-9539-0be9b59af5e6
 keywords:
 - asynchronous query operations WDK DirectX 9.0
 - query operations WDK DirectX 9.0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ The following topics describe how drivers support operations that query for info
 
 [Imposing Requirements on the D3dDrawPrimitives2 DDI](imposing-requirements-on-the-d3ddrawprimitives2-ddi.md)
 
- 
+ 
 
- 
+ 
 
 
 

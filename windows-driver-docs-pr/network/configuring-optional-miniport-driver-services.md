@@ -7,11 +7,7 @@ keywords:
 - NDIS miniport drivers WDK , optional services
 - MiniportSetOptions
 - characteristics structure WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -43,9 +39,9 @@ Starting with NDIS 6.30, the valid characteristics structures also include the f
 
 [**NDIS\_NDK\_PROVIDER\_CHARACTERISTICS**](https://msdn.microsoft.com/library/windows/hardware/hh451566)
 
- 
+ 
 
- 
+ 
 
 
 

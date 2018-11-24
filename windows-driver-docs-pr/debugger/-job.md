@@ -3,11 +3,7 @@ title: job
 description: The job extension displays a job object.
 ms.assetid: 1fbadcc7-d81b-4cfb-a54a-7843e2f78ea1
 keywords: ["job Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!job** extension displays a job object.
 
-```
+```dbgcmd
 !job [Process [Flags]] 
 ```
 
@@ -60,7 +56,7 @@ Causes the display to include a list of all processes in the job.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -71,7 +67,7 @@ Remarks
 
 Here is an example of the output from this extension:
 
-```
+```dbgcmd
 kd> !process 52c
 Searching for Process with Cid == 52c
 PROCESS 8276c550  SessionId: 0  Cid: 052c    Peb: 7ffdf000  ParentCid: 0060
@@ -102,9 +98,9 @@ Job at ffffffff8256e1f0
   Token                    00000000
 ```
 
- 
+ 
 
- 
+ 
 
 
 

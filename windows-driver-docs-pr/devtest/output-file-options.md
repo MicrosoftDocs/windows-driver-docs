@@ -8,11 +8,7 @@ keywords:
 - listing files WDK
 - output files WDK TraceView
 - files WDK TraceView
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -39,9 +35,9 @@ If you specify the path and file name of an existing output or summary file, Tra
 
 TraceView creates the summary file when you stop the trace session. If you close the TraceView window before stopping the trace session, TraceView does not create a summary file for the session.
 
- 
+ 
 
- 
+ 
 
 
 

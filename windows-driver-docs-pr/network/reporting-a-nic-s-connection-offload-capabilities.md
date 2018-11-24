@@ -5,11 +5,7 @@ ms.assetid: a9bf798b-382c-4904-b0b2-ed1e54f9c36b
 keywords:
 - connection offload WDK TCP/IP transport , reporting capabilities
 - reporting connection offload capabilities
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ In response to a query of [OID\_TCP\_CONNECTION\_OFFLOAD\_CURRENT\_CONFIG](https
 
 For more information about specifying connection offload capabilities, see Initializing an Offload Target in the [NDIS 6.0 TCP chimney offload documentation](full-tcp-offload.md).
 
- 
+ 
 
- 
+ 
 
 
 

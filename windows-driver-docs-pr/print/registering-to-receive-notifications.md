@@ -1,6 +1,5 @@
 ---
 title: Registering to Receive Notifications
-author: windows-driver-content
 description: Registering to Receive Notifications
 ms.assetid: 2442c204-c9d8-49fa-93ae-02623d08119c
 keywords:
@@ -11,11 +10,7 @@ keywords:
 - RegisterForPrintAsyncNotifications
 - UnRegisterForPrintAsyncNotifications
 - unregistering for spooler notifications
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,7 +24,7 @@ Listening clients call the [RegisterForPrintAsyncNotifications](http://go.micros
 
 Spoolss.lib exposes this functionality so that port monitors can register for notifications. Components that run inside the spooler and that link to Spoolss.lib can call **RegisterForPrintAsyncNotifications**. The following procedure details the information that must be passed in a call to this function. The first step of the procedure applies to the first parameter, the second step applies to the second parameter, and so on.
 
-```
+```cpp
 HRESULT
  RegisterForPrintAsyncNotifications(
     IN LPCWSTR,
@@ -39,7 +34,6 @@ HRESULT
     IN IPrintAsyncNotifyCallback*,
     OUT HANDLE*
     );
- 
 ```
 
 **To register for notifications, specify**
@@ -58,16 +52,16 @@ When this function returns, the sixth parameter (of type HANDLE\*) points to a r
 
 To notify the spooler that the listening client should no longer receive notifications, the client must use this handle when it calls [UnRegisterForPrintAsyncNotifications](http://go.microsoft.com/fwlink/p/?linkid=124754). For unidirectional communication, any pending notifications on the server side are dismissed. For bidirectional communication, if there are open bidirectional channels, communication continues until they are closed.
 
-```
+```cpp
 HRESULT
  UnRegisterForPrintAsyncNotifications(
     IN HANDLE
     );
 ```
 
- 
 
- 
+
+
 
 
 

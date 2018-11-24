@@ -11,11 +11,7 @@ keywords:
 - aperture-space segments WDK display
 - linear memory-space segments WDK display
 - memory-space segments WDK display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -57,9 +53,9 @@ If a surface will be directly accessible through the CPU by an application but w
 
 5.  The user-mode display driver returns the unswizzled allocation's virtual address to the application in the **pSurfData** member of D3DDDIARG\_LOCK.
 
- 
+ 
 
- 
+ 
 
 
 

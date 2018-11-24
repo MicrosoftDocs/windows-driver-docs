@@ -1,6 +1,5 @@
 ---
 title: Converting a Windows NT 4.0 SCSI Miniport for Plug and Play
-author: windows-driver-content
 description: Converting a Windows NT 4.0 SCSI Miniport for Plug and Play
 ms.assetid: 46e5eb41-ff41-4054-856b-cc32f286e543
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - PnP WDK SCSI
 - Plug and Play WDK SCSI
 - converting SCSI miniport drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +23,9 @@ To run successfully under Plug and Play, a Microsoft Windows
 
 NT 4.0 miniport driver's source code might need to be modified as described in the following sections.
 
- 
+ 
 
- 
+ 
 
 
 

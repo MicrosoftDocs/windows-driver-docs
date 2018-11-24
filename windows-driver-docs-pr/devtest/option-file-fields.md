@@ -5,11 +5,7 @@ ms.assetid: 5ca79c91-5d19-4393-aa5e-be3d47e62967
 keywords:
 - options files WDK Static Driver Verifier
 - fields WDK Static Driver Verifier
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,9 +34,9 @@ If SDV reports a **Spaceout**, consider increasing the value of **SDV\_SlamConfi
 <span id="SDV_SlamConfig_NumberOfThreads"></span><span id="sdv_slamconfig_numberofthreads"></span><span id="SDV_SLAMCONFIG_NUMBEROFTHREADS"></span>**SDV\_SlamConfig\_NumberOfThreads**  
 Sets the number of threads to use during a verification. If the value is 0, this limits the number of threads to the number of processors on the computer (this includes hyper-threaded processors). If the value is set to a number greater than 0, the value specifies the number of threads that SDV can use during the verification. Increasing the number of threads might increase the run time performance of SDV, but it might also increase the number of time outs that occur. The default value is 0. If you are running SDV on a multiprocessor computer that uses the default value, SDV will automatically take advantage of the additional processors.
 
- 
+ 
 
- 
+ 
 
 
 

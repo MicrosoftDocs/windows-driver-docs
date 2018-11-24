@@ -5,11 +5,7 @@ ms.assetid: 340453ab-4736-4191-b9d4-08ee7d9190fe
 keywords:
 - Tracefmt WDK , real-time trace sessions
 - real-time trace sessions WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -55,9 +51,9 @@ Event traces dumped to mytrace.txt
 Event Summary dumped to mytrace.txt.sum
 ```
 
- 
+ 
 
- 
+ 
 
 
 

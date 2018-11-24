@@ -2,11 +2,7 @@
 title: BDA Stream Format GUIDs
 description: BDA Stream Format GUIDs
 ms.assetid: 216fb02c-b49b-4b9f-b7a5-220c718fb202
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -65,9 +61,9 @@ A BDA minidriver assigns this GUID to the **SubFormat** member of a KSDATARANGE 
 <span id="KSDATAFORMAT_TYPE_MPE"></span><span id="ksdataformat_type_mpe"></span>KSDATAFORMAT\_TYPE\_MPE  
 A BDA minidriver assigns this GUID to the **MajorFormat** member of a KSDATARANGE structure to enable connecting to a pin of a filter that also assigns this major format.
 
- 
+ 
 
- 
+ 
 
 
 

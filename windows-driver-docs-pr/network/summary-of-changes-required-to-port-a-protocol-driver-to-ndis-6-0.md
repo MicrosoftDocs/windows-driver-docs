@@ -4,11 +4,7 @@ description: Summary of Changes Required to Port a Protocol Driver to NDIS 6.0
 ms.assetid: a2d17b63-81fc-44c9-a437-cd7c9f04be5b
 keywords:
 - porting protocol drivers WDK networking , required changes
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -79,9 +75,9 @@ Replace the preprocessor definition NDIS51 with NDIS60.
 <a href="" id="binding-states"></a>**Binding States**  
 -   Include NDIS 6.0 protocol binding pause and restart functionality. For more information about binding states, see [Supporting NDIS 6.0 Protocol Binding Pause and Restart Operations](supporting-ndis-6-0-protocol-binding-pause-and-restart-operations.md).
 
- 
+ 
 
- 
+ 
 
 
 

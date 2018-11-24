@@ -3,11 +3,7 @@ title: dreg
 description: The dreg extension displays registry information.
 ms.assetid: a54ed14e-eb9d-48fd-877d-d6d0fe4a8d3f
 keywords: ["dreg Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!dreg** extension displays registry information.
 
-```
+```dbgcmd
 !dreg [-d|-w] KeyPath[!Value] 
 !dreg
 ```
@@ -75,7 +71,7 @@ Specifies the name of the registry value to be displayed. If an asterisk (\*) is
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -94,27 +90,27 @@ If **!dreg** is used during kernel-mode debugging, the results shown will be for
 
 Here are some examples. The following will display all subkeys of the specified registry key:
 
-```
+```dbgcmd
 !dreg hkcu\Software\Microsoft
 ```
 
 The following will display all values in the specified registry key:
 
-```
+```dbgcmd
 !dreg System\CurrentControlSet\Services\Tcpip!*
 ```
 
 The following will display the value Start in the specified registry key:
 
-```
+```dbgcmd
 !dreg System\CurrentControlSet\Services\Tcpip!Start
 ```
 
 Typing **!dreg** without any arguments will display some brief Help text for this extension in the Debugger Command window.
 
- 
+ 
 
- 
+ 
 
 
 

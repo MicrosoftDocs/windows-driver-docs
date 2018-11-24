@@ -6,11 +6,7 @@ keywords:
 - gamma correction WDK DirectX 9.0 , marking formats for gamma conversion
 - marking formats for conversion WDK DirectX 9.0
 - linear conversions WDK DirectX 9.0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +26,9 @@ The driver specifies the following flags in the **dwOperations** member of the [
 
 -   D3DFORMAT\_OP\_SRGBWRITE to indicate whether the pixel pipeline should gamma correct back to sRGB space when writing out to the render target.
 
- 
+ 
 
- 
+ 
 
 
 

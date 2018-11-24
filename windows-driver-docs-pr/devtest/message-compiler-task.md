@@ -2,11 +2,7 @@
 title: Message compiler task
 description: The Windows Driver Kit (WDK) provides the MessageCompiler task so that you can run the MC.exe tool when you build your driver using MSBuild. For information about using MC.exe, see Message Compiler (MC.exe).
 ms.assetid: 77B2DBF4-64EB-4396-BAA5-80F23C9899CC
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,7 +30,7 @@ The following example shows the command-line invocation:
 mc.exe –s "c:\test\" a.mc
 ```
 
-In the example above, MSBuild invokes mc.exe on on the file a.mc, with the –s switch because the metadata GenerateBaselineResource is set to true. Also, MSBuild uses the BaselineResourcePath metadata to specify the argument for –s switch.
+In the example above, MSBuild invokes mc.exe on the file a.mc, with the –s switch because the metadata GenerateBaselineResource is set to true. Also, MSBuild uses the BaselineResourcePath metadata to specify the argument for –s switch.
 
 <table>
 <colgroup>
@@ -131,7 +127,7 @@ In the example above, MSBuild invokes mc.exe on on the file a.mc, with the –s 
 </tr>
 <tr class="even">
 <td align="left"><strong>HeaderFilePath</strong>
-<p>Specifies the path of where to create the C include file. The default is .\.</p></td>
+<p>Specifies the path of where to create the C include file. The default is ..</p></td>
 <td align="left">%(MessageCompile.HeaderFilePath)</td>
 <td align="left"><strong>-h</strong><em>&lt;path&gt;</em></td>
 </tr>
@@ -143,7 +139,7 @@ In the example above, MSBuild invokes mc.exe on on the file a.mc, with the –s 
 </tr>
 <tr class="even">
 <td align="left"><strong>RCFilePath</strong>
-<p>Specifies the path of the RC includes file and the binary message resource files that it includes. The default is .\.</p></td>
+<p>Specifies the path of the RC includes file and the binary message resource files that it includes. The default is ..</p></td>
 <td align="left">%(MessageCompile.RCFilePath)</td>
 <td align="left"><strong>-r</strong><em>&lt;path&gt;</em></td>
 </tr>
@@ -258,16 +254,16 @@ In the example above, MSBuild invokes mc.exe on on the file a.mc, with the –s 
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
 
 [**Message Compiler (MC.exe)**](https://msdn.microsoft.com/library/windows/desktop/aa385638)
 
- 
+ 
 
- 
+ 
 
 
 

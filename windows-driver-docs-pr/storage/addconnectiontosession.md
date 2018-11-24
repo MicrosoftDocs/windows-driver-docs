@@ -3,6 +3,7 @@ title: AddConnectionToSession
 description: AddConnectionToSession
 ms.assetid: c2762e75-8732-4c48-83a9-24ccd39218eb
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # AddConnectionToSession
@@ -14,9 +15,9 @@ Miniport drivers that support the [MSiSCSI\_Operations class](msiscsi-operations
 
 **AddConnectionToSession** belongs to the unpublished MSiSCSI\_Operations WMI Class. For a description of the parameters of the **AddConnectionToSession** method, see the member descriptions for the [**AddConnectionToSession\_IN**](https://msdn.microsoft.com/library/windows/hardware/ff550122) and [**AddConnectionToSession\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff550123) structures.
 
- 
+ 
 
- 
+ 
 
 
 

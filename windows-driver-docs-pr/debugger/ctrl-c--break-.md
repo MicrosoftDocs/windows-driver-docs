@@ -3,11 +3,7 @@ title: CTRL+C (Break)
 description: The CTRL+C key breaks into the debugger, stopping the target application or target computer, and cancels debugger commands.
 ms.assetid: ee9df6d7-4a40-4006-90df-478e06899e3a
 keywords: ["CTRL+C (Break) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,19 +20,19 @@ The CTRL+C key breaks into the debugger, stopping the target application or targ
 
 CDB Syntax
 
-```
+```dbgcmd
 CTRL+C 
 ```
 
 KD Syntax
 
-```
+```dbgcmd
 CTRL+C 
 ```
 
 Target Computer Syntax
 
-```
+```dbgcmd
 SYSRQ 
 ALT+SYSRQ 
 F12 
@@ -72,7 +68,7 @@ F12
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -105,7 +101,7 @@ SYSRQ (or ALT+SYSRQ on an enhanced keyboard) is similar. It works from the host 
 
 The SYSRQ key can be disabled by editing the registry. In the registry key
 
-```
+```text
 HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\i8042prt\Parameters
 ```
 
@@ -117,11 +113,11 @@ If you are debugging KD with CDB, then CTRL+C will be intercepted by the host de
 
 **Note**   Note that in WinDbg, CTRL+C is a [shortcut key](keyboard-shortcuts.md) that is used to copy text from a window. To issue a break command in WinDbg, use [CTRL+BREAK](debug---break.md) or select Debug | Break from the menu.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

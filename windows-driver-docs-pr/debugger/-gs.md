@@ -3,11 +3,7 @@ title: gs
 description: The gs extension analyzes a /GS stack overflow.
 ms.assetid: 4c73fd73-e476-4836-80f7-ab9b9c797d8b
 keywords: ["gs Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!gs** extension analyzes a /GS stack overflow.
 
-```
+```dbgcmd
 !gs
 ```
 
@@ -45,14 +41,14 @@ The **!gs** extension analyzes a /GS stack overflow.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
 
 The **!gs**extension helps debug buffer overruns. Run **!gs**when you encounter a STATUS\_STACK\_BUFFER\_OVERRUN error, as the following example shows.
 
-```
+```dbgcmd
 0:000> !gs
 Corruption occurred in mshtml!CDoc::OnPaint or one of its callers
 Real canary not found at 0x74866010
@@ -90,9 +86,9 @@ Candidate buffer : ps 0013e268 to 0013e2a7
 0:000>
 ```
 
- 
+ 
 
- 
+ 
 
 
 

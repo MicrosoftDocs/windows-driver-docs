@@ -9,11 +9,7 @@ api_name:
 - wscn InputSize wscn MustHonor ""
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The optional **InputSize** element specifies the size of the original scan media
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:InputSize wscn:MustHonor=""
   MustHonor = "xs:string">
   child elements
@@ -75,10 +71,10 @@ Attributes
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>DocumentSizeAutoDetect</strong>](documentsizeautodetect.md)</p></td>
+<td><p><a href="documentsizeautodetect.md" data-raw-source="[&lt;strong&gt;DocumentSizeAutoDetect&lt;/strong&gt;](documentsizeautodetect.md)"><strong>DocumentSizeAutoDetect</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>InputMediaSize</strong>](inputmediasize.md)</p></td>
+<td><p><a href="inputmediasize.md" data-raw-source="[&lt;strong&gt;InputMediaSize&lt;/strong&gt;](inputmediasize.md)"><strong>InputMediaSize</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -97,10 +93,10 @@ Attributes
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>DocumentFinalParameters</strong>](documentfinalparameters.md)</p></td>
+<td><p><a href="documentfinalparameters.md" data-raw-source="[&lt;strong&gt;DocumentFinalParameters&lt;/strong&gt;](documentfinalparameters.md)"><strong>DocumentFinalParameters</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>DocumentParameters</strong>](documentparameters.md)</p></td>
+<td><p><a href="documentparameters.md" data-raw-source="[&lt;strong&gt;DocumentParameters&lt;/strong&gt;](documentparameters.md)"><strong>DocumentParameters</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -112,7 +108,7 @@ The **InputSize** element can contain the [**DocumentSizeAutoDetect**](documents
 
 The client can specify the optional **MustHonor** attribute only when the **InputSize** element is contained within a **CreateScanJobRequest** hierarchy. For more information about **MustHonor** and its usage, see [**CreateScanJobRequest**](createscanjobrequest.md).
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**CreateScanJobRequest**](createscanjobrequest.md)
@@ -125,9 +121,9 @@ The client can specify the optional **MustHonor** attribute only when the **Inpu
 
 [**InputMediaSize**](inputmediasize.md)
 
- 
+ 
 
- 
+ 
 
 
 

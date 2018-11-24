@@ -1,13 +1,8 @@
 ---
 title: Bypass a Class Driver with SCSI Pass-Through Requests to Storport
-author: windows-driver-content
 description: Bypass a Class Driver with SCSI Pass-Through Requests to Storport
 ms.assetid: 1162a1e7-a4f8-446f-8106-527f9b916382
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,9 +18,9 @@ Storport does not check the validity of the SCSI command that is embedded in a p
 
 For a discussion of SCSI pass-through requests from the perspective of a storage class driver, see [Handling SCSI Pass-Through Requests](handling-scsi-pass-through-requests.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: PNPCPU Typical Session
 description: PNPCPU Typical Session
 ms.assetid: d0c1b6aa-fe23-4d01-aecf-897aba3672c9
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,9 +32,9 @@ Restart the system either by executing shutdown from the command line, or from a
 
 After you restart your computer, Windows will only be using one logical processor. You can confirm this in Device Manager by finding processors with error code 28.
 
- 
+ 
 
- 
+ 
 
 
 

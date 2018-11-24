@@ -13,11 +13,7 @@ keywords:
 - node-ordering requirements WDK DirectSound
 - logical pins WDK audio
 - node pin assignments WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -123,13 +119,13 @@ The following table shows the pin IDs that the adapter driver should assign to t
 </tbody>
 </table>
 
- 
+ 
 
 The pin IDs in the preceding table are defined in the header file Ksmedia.h.
 
 The following code example shows how an adapter driver can specify the internal topology of an AEC filter that contains both an AEC node and an NS node:
 
-```
+```cpp
     // AEC Filter Topology
 
     // Pin IDs for external pins on AEC filter
@@ -164,9 +160,9 @@ The AecConnections array in the preceding code example defines the filter topolo
 
 The preceding figure represents each connection inside the filter with a dashed arrow that points in the direction of data flow. A total of five connections appear in the figure. Each connection corresponds to one of the five elements in the AecConnections array in the code example.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -9,11 +9,7 @@ api_name:
 - KSNODETYPE_ADC
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +27,9 @@ A KSNODETYPE\_ADC node can support the following optional properties:
 
 [**KSPROPERTY\_AUDIO\_DYNAMIC\_SAMPLING\_RATE**](ksproperty-audio-dynamic-sampling-rate.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,17 +1,12 @@
 ---
 title: Bidirectional Communication
-author: windows-driver-content
 description: Bidirectional Communication
 ms.assetid: c88f5f43-4a14-4f63-9f17-b6680fc0d645
 keywords:
 - printer configuration WDK , bidirectional communication
 - bidirectional communication WDK print
 - bidi communication WDK print
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -44,9 +39,9 @@ For a description of how the print spooler supports bidirectional communication,
 
 [Bidirectional Communication Error Codes](https://msdn.microsoft.com/library/windows/hardware/dd183367)
 
- 
+ 
 
- 
+ 
 
 
 

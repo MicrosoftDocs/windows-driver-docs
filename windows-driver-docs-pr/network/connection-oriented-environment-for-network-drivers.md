@@ -8,11 +8,7 @@ keywords:
 - call managers WDK networking , connection-oriented environment
 - miniport call managers WDK networking , connection-oriented environment
 - MCMs WDK networking , connection-oriented environment
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +22,9 @@ Connection-oriented drivers are supported by the [Connection-Oriented NDIS (CoND
 
 For detailed information about the CoNDIS architecture, see [Connection-Oriented Environment](connection-oriented-environment.md)
 
- 
+ 
 
- 
+ 
 
 
 

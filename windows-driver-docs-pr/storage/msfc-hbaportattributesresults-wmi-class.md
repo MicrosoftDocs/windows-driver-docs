@@ -3,6 +3,7 @@ title: MSFC\_HBAPortAttributesResults WMI Class
 description: MSFC\_HBAPortAttributesResults WMI Class
 ms.assetid: f268a653-e3ee-47d0-9af8-925dc0545a2b
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MSFC\_HBAPortAttributesResults WMI Class
@@ -15,7 +16,7 @@ A WMI client uses the MSFC\_HBAPortAttributesResults WMI class to query an HBA m
 
 The MSFC\_HBAPortAttributesResults class is defined as follows in *Hbaapi.mof*:
 
-```
+```cpp
 class MSFC_HBAPortAttributesResults {
     [HBAType("HBA_WWN"), WmiDataId(1) ] uint8  NodeWWN[8];
     [HBAType("HBA_WWN"), WmiDataId(2) ] uint8  PortWWN[8];
@@ -62,9 +63,9 @@ When compiled this class definition produces the following data structure:
 
 There are no methods associated with this WMI class.
 
- 
+ 
 
- 
+ 
 
 
 

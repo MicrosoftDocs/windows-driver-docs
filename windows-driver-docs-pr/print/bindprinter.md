@@ -1,15 +1,10 @@
 ---
 title: BindPrinter
-author: windows-driver-content
 description: The IPrintTicketProvider BindPrinter method binds a printer or print queue to a specific version of the Print Ticket schema.
 ms.assetid: 81f32a9a-417a-4851-972e-373112590e1c
 keywords:
 - BindPrinter
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,7 +19,7 @@ The [**IPrintTicketProvider::BindPrinter**](https://msdn.microsoft.com/library/w
 
 The following sample code illustrates the method's arguments.
 
-``` syntax
+```cpp
 STDMETHODIMP 
 CPrintTicketProvider::
 BindPrinter( THIS_ HANDLE    hPrinter,
@@ -34,11 +29,3 @@ BindPrinter( THIS_ HANDLE    hPrinter,
                    INT      *pcNamespaces,
                    BSTR    **ppNamespaces)
 ```
-
- 
-
- 
-
-
-
-

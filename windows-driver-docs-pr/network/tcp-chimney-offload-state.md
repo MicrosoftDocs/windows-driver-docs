@@ -7,11 +7,7 @@ keywords:
 - chimney offload WDK networking , offload state
 - offload state WDK TCP chimney offload
 - states WDK TCP chimney offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -45,9 +41,9 @@ This section includes:
 
 [Placeholders, Linkers, and New Offloads](placeholders--linkers--and-new-offloads.md)
 
- 
+ 
 
- 
+ 
 
 
 

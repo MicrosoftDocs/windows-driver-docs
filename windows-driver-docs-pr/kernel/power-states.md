@@ -1,14 +1,9 @@
 ---
 title: Power States
-author: windows-driver-content
 description: Power States
 ms.assetid: 33043903-9db6-4c51-b33c-921ade237ccf
 keywords: ["power management WDK kernel , power states", "power states WDK kernel", "states WDK power management", "system power states WDK kernel", "device power states WDK kernel", "power consumption levels WDK kernel", "consumption levels WDK power management", "computing activity WDK power management", "physical device objects WDK power management", "PDOs WDK power management", "functional device objects WDK power management", "FDOs WDK power management", "filter DOs WDK power management"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +21,9 @@ The ACPI specification defines two sets of discrete power states: *system power 
 
 These clearly defined power states allow many devices from various manufacturers to work together consistently and predictably. For example, when the power manager sets the system in state S3, it can rely upon drivers that support power management not only to put their devices in the corresponding device power state but also to return to the working state in a predictable fashion.
 
- 
+ 
 
- 
+ 
 
 
 

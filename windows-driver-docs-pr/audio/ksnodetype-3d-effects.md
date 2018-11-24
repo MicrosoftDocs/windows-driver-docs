@@ -9,11 +9,7 @@ api_name:
 - KSNODETYPE_3D_EFFECTS
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -83,9 +79,9 @@ A KSNODETYPE\_3D\_EFFECTS node might implement an interaural time delay (ITD) al
 
 [**KSPROPERTY\_ITD3D\_PARAMS**](ksproperty-itd3d-params.md)
 
- 
+ 
 
- 
+ 
 
 
 

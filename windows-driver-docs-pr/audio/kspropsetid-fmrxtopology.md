@@ -2,11 +2,7 @@
 title: KSPROPSETID\_FMRXTopology
 description: The KSPROPSETID\_FMRXTopology property set is used to set FM radio properties.
 ms.assetid: 66ACE82D-F0C2-4BF8-9B16-8A1B3A2C05E0
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +26,9 @@ FM radio can be enabled or disabled by setting the [**KSPROPERTY\_FMRX\_STATE**]
 
 A new [**KSNODETYPE\_FM\_RX**](ksnodetype-fm-rx.md) topology node endpoint is implemented as any other audio endpoint is in the system, and it supports all audio endpoint properties. This endpoint also supports jack properties that are defined under the [KSPROPSETID\_Jack](kspropsetid-jack.md) property set. This endpoint is in the unplugged state at boot. If capturing FM radio is supported by driver, this endpoint becomes active when FM radio is enabled. Creating a capture pin on the **KSNODETYPE\_FM\_RX** topology node allows audio capture that comes over from FM receiver.
 
- 
+ 
 
- 
+ 
 
 
 

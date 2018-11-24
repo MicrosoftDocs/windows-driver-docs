@@ -9,11 +9,7 @@ api_name:
 - DXVA_DeinterlaceBobDeviceClass.DeinterlaceCloseStream
 api_type:
 - COM
-ms.author: windowsdriverdev
 ms.date: 01/05/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -51,9 +47,9 @@ The *DeinterlaceCloseStream* function maps directly to the **DestroyMoComp** mem
 
 [**DeinterlaceOpenStream**](dxva-deinterlacebobdeviceclass-deinterlaceopenstream.md)
 
- 
+ 
 
- 
+ 
 
 
 

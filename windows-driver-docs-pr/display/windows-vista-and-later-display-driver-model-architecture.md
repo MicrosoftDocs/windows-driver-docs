@@ -7,11 +7,7 @@ keywords:
 - Windows Vista display driver model WDK , architecture
 - architecture WDK display
 - user-mode display drivers WDK Windows Vista , architecture
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ The display driver model architecture for the Windows Display Driver Model (WDDM
 
 A graphics hardware vendor must supply the user-mode display driver and the display miniport driver. The user-mode display driver is a dynamic-link library (DLL) that is loaded by the Microsoft Direct3D runtime. The display [*miniport driver*](https://msdn.microsoft.com/library/windows/hardware/ff556308#wdkgloss-miniport-driver) communicates with the Microsoft DirectX graphics kernel subsystem. For more information about the user-mode display driver and display miniport driver, see the [Windows Display Driver Model (WDDM) Reference](https://msdn.microsoft.com/library/windows/hardware/ff570595).
 
- 
+ 
 
- 
+ 
 
 
 

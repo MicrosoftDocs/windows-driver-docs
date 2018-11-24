@@ -11,20 +11,15 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
-ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 09/11/2017
 ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PHOTOMODE
 
-
 This property sets or retrieves the photo mode setting for the camera.
 
-### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
+## Usage Summary Table
 
 <table>
 <colgroup>
@@ -48,35 +43,29 @@ This property sets or retrieves the photo mode setting for the camera.
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
-<td><p>[<strong>KSPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564262)</p></td>
-<td><p>[<strong>KSCAMERA_EXTENDEDPROP_HEADER</strong>](https://msdn.microsoft.com/library/windows/hardware/dn567563)</p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header" data-raw-source="[&lt;strong&gt;KSCAMERA_EXTENDEDPROP_HEADER&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header)"><strong>KSCAMERA_EXTENDEDPROP_HEADER</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+The property value (operation data) contains a [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure and a [**KSCAMERA\_EXTENDEDPROP\_PHOTOMODE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_photomode) structure. These specify the photo mode and the history frame counts when sequence mode is set.
 
-The property value (operation data) contains a [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/dn567563) structure and a [**KSCAMERA\_EXTENDEDPROP\_PHOTOMODE**](https://msdn.microsoft.com/library/windows/hardware/dn567564) structure. These specify the photo mode and the history frame counts when sequence mode is set.
-
-The desired photo mode is set in the **Flags** member of [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/dn567563). The photo mode is set to one of the following.
+The desired photo mode is set in the **Flags** member of [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header). The photo mode is set to one of the following.
 
 | Photo mode                                  | Description                      |
 |---------------------------------------------|----------------------------------|
 | KSCAMERA\_EXTENDEDPROP\_PHOTOMODE\_NORMAL   | Normal still photo operation     |
 | KSCAMERA\_EXTENDEDPROP\_PHOTOMODE\_SEQUENCE | Photo sequence capture operation |
 
- 
+The total property data size is **sizeof**(KSCAMERA\_EXTENDEDPROP\_HEADER) + **sizeof**(KSCAMERA\_EXTENDEDPROP\_PHOTOMODE). The **Size** member of [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) is set to this total property data size.
 
-The total property data size is **sizeof**(KSCAMERA\_EXTENDEDPROP\_HEADER) + **sizeof**(KSCAMERA\_EXTENDEDPROP\_PHOTOMODE). The **Size** member of [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/dn567563) is set to this total property data size.
+> [!NOTE]
+> Setting the photo mode is an asynchronous control operation and KSCAMERA\_EXTENDEDPROP\_CAPS\_ASYNCCONTROL must be set in the **Capability** member of [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header).
 
-**Note**  Setting the photo mode is an asynchronous control operation and KSCAMERA\_EXTENDEDPROP\_CAPS\_ASYNCCONTROL must be set in the **Capability** member of [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/dn567563).
+## Remarks
 
- 
-
-Remarks
--------
-
-When responding to a KSPROPERTY\_TYPE\_GET request, the driver sets the members of the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/dn567563) to the following.
+When responding to a KSPROPERTY\_TYPE\_GET request, the driver sets the members of the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) to the following.
 
 <table>
 <colgroup>
@@ -119,10 +108,7 @@ When responding to a KSPROPERTY\_TYPE\_GET request, the driver sets the members 
 </tbody>
 </table>
 
- 
-
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -141,19 +127,8 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
+[**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header)
 
-[**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/dn567563)
-
-[**KSCAMERA\_EXTENDEDPROP\_PHOTOMODE**](https://msdn.microsoft.com/library/windows/hardware/dn567564)
-
- 
-
- 
-
-
-
-
-
-
+[**KSCAMERA\_EXTENDEDPROP\_PHOTOMODE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_photomode)

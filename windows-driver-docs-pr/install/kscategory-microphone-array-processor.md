@@ -12,6 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # KSCATEGORY_MICROPHONE_ARRAY_PROCESSOR
@@ -42,7 +43,7 @@ The KSCATEGORY_MICROPHONE_ARRAY_PROCESSOR [device interface class](https://msdn.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -78,9 +79,9 @@ Requirements
 
 [**KSPROPERTY_TOPOLOGY_CATEGORIES**](https://msdn.microsoft.com/library/windows/hardware/ff565799)
 
- 
+ 
 
- 
+ 
 
 
 

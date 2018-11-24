@@ -5,11 +5,7 @@ ms.assetid: 1f1174ba-8b0a-4d43-96c9-2d92f50a22c4
 keywords:
 - miniport drivers WDK networking , CoNDIS
 - NDIS miniport drivers WDK , CoNDIS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,9 +21,9 @@ The status indication includes information to identify the type of status and a 
 
 The miniport driver should set the **SourceHandle** member of the NDIS\_STATUS\_INDICATION structure to the handle that NDIS passed to the *MiniportAdapterHandle* parameter of the [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) function. If the status indication is associated with an OID request, the miniport driver can set the **DestinationHandle** and **RequestId** members of NDIS\_STATUS\_INDICATION so that NDIS can provide the status indication to a specific protocol binding. For more information about OID requests, see [CoNDIS Miniport Driver OID Requests](condis-miniport-driver-oid-requests.md).
 
- 
+ 
 
- 
+ 
 
 
 

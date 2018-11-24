@@ -1,11 +1,7 @@
 ---
 title: Device MFT design guide
 description: This topic outlines the design of a device-wide extension running in user mode that can be used to perform post-processing common to all streams.
-ms.author: windowsdriverdev
 ms.date: 01/30/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -181,7 +177,7 @@ With this architecture, photo sequence is implemented with the camera device dri
 
 ### Photo confirmation
 
-Device MFT supports photo confirmation through the **IMFCapturePhotoConfirmation** interface. The pipeline retrieves this interface through [IMFGetService::GetService] (https://msdn.microsoft.com/library/windows/desktop/ms696978) method.
+Device MFT supports photo confirmation through the **IMFCapturePhotoConfirmation** interface. The pipeline retrieves this interface through [IMFGetService::GetService](https://msdn.microsoft.com/library/windows/desktop/ms696978) method.
 
 ### Metadata
 
@@ -233,7 +229,7 @@ Device MFTs must support the following interfaces:
 
 - [IMFRealtimeClientEx](https://msdn.microsoft.com/library/windows/desktop/hh448047)
 
-- [IMFMediaEventGenerator] (https://docs.microsoft.com/en-us/windows/desktop/api/mfobjects/nn-mfobjects-imfmediaeventgenerator)
+- [IMFMediaEventGenerator](https://docs.microsoft.com/windows/desktop/api/mfobjects/nn-mfobjects-imfmediaeventgenerator)
 
 - [IMFShutdown](https://msdn.microsoft.com/library/windows/desktop/ms703054)
 
@@ -249,7 +245,7 @@ Device MFTs must use the following messages to inform DTM about the availability
 
 ### Thread Requirements
 
-Device MFT must not create its own threads. Instead it must use MF Work Queues, whose ID is passed through the [IMFRealtimeClientEx] (https://msdn.microsoft.com/library/windows/desktop/hh448047) interface. This is to make sure that all the threads running in the Device MFT gets the correct priority at which the capture pipeline is running. Otherwise it may cause thread priority inversions.
+Device MFT must not create its own threads. Instead it must use MF Work Queues, whose ID is passed through the [IMFRealtimeClientEx](https://msdn.microsoft.com/library/windows/desktop/hh448047) interface. This is to make sure that all the threads running in the Device MFT gets the correct priority at which the capture pipeline is running. Otherwise it may cause thread priority inversions.
 
 ### InputStream Requirements
 
@@ -269,7 +265,7 @@ Device MFT must not create its own threads. Instead it must use MF Work Queues, 
 
 The camera device INF must have the following device interface entry that specifies the CLSID of the CoClass of the Device MFT.
 
-```
+```INF
 [CaptureAvstrm.Device.NTarm.Interfaces]
 AddInterface = %KSCATEGORY_VIDEO_CAMERA%, %Capture.FilterDescBack%, Capture.FilterBack
 
@@ -285,14 +281,9 @@ The above INF entries result in the following registry keys being entered:
     
 **Note** This is an example only (not the actual regkey)
 
-```
+```console
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceClasses\{E5323777-F976-4f5b-9B55-B94699C46E44}\##?#USB#VID_045E&PID_075D&MI_00#8&23C3DB65&0&0000#{E5323777-F976-4f5b-9B55-B94699C46E44}\#GLOBAL\Device Parameters]
 "CLSID"="{17CCA71B-ECD7-11D0-B908-00A0C9223196}"
 "FriendlyName"="USB Video Device"
 "CameraDeviceMftClsid"="{3456A71B-ECD7-11D0-B908-00A0C9223196}"<<< Device MFT CoClass ID >>>
 ```
-
-
-
-
-

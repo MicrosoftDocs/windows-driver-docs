@@ -1,6 +1,5 @@
 ---
 title: Power Management for I/O Queues
-author: windows-driver-content
 description: Power Management for I/O Queues
 ms.assetid: 2e1bf9d2-615b-49b0-b677-f41b23c42eda
 keywords:
@@ -14,11 +13,7 @@ keywords:
 - sleep power management WDK KMDF
 - power states WDK KMDF
 - device power states WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -60,9 +55,9 @@ For more information about power-managed I/O queues, see [Using Power-Managed I/
 
 A few drivers require some direct control over Plug and Play (PnP) and power management operations. These drivers can use *self-managed I/O*. For more information, see [Using Self-Managed I/O](using-self-managed-i-o.md).
 
- 
+ 
 
- 
+ 
 
 
 

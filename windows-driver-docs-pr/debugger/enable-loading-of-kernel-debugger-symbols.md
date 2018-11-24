@@ -3,11 +3,7 @@ title: Enable loading of kernel debugger symbols
 description: Enable loading of kernel debugger symbols
 ms.assetid: ce047073-9cfd-4ab2-bd58-48a2acc55351
 keywords: ["Enable loading of kernel debugger symbols (global flag)"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -44,15 +40,15 @@ The **Enable loading of kernel debugger symbols** flag loads kernel symbols into
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
 The kernel symbols are used in kernel profiling and by advanced kernel debugging tools.
 
- 
+ 
 
- 
+ 
 
 
 

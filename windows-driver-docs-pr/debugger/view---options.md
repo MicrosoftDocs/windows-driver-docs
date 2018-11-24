@@ -3,11 +3,7 @@ title: View Options
 description: View Options
 ms.assetid: 2579c586-f1f3-4b03-a47f-22be98fe6c51
 keywords: ["View Options"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -70,9 +66,9 @@ In the **Colors** menu, you can change the colors of the following items:
 
 These color changes take effect when you click **OK**. To discard these changes, click **Cancel**.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,6 +3,7 @@ title: WMI Class Qualifier Definitions in Hbaapi.mof
 description: WMI Class Qualifier Definitions in Hbaapi.mof
 ms.assetid: 9db543f1-f6ad-4735-8ba0-21476aa229ba
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # WMI Class Qualifier Definitions in Hbaapi.mof
@@ -25,9 +26,9 @@ However, by including *Hbaapi.h* your driver or application can use a set of sym
 
 For a general discussion of WMI class qualifiers, see [WMI Class Qualifiers](https://msdn.microsoft.com/library/windows/hardware/ff566348).
 
- 
+ 
 
- 
+ 
 
 
 

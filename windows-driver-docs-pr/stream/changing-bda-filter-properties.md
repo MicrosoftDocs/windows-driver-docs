@@ -1,17 +1,12 @@
 ---
 title: Changing BDA Filter Properties
-author: windows-driver-content
 description: Changing BDA Filter Properties
 ms.assetid: 1833864a-5759-437c-ba60-0b38602d9e41
 keywords:
 - property sets WDK BDA , filter property changes
 - filter property changes WDK BDA
 - method sets WDK BDA , filter property changes
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -39,7 +34,7 @@ Typically, a BDA minidriver's filter object intercepts and supplies methods for 
 
 The following code snippet shows how to intercept method requests of the KSMETHODSETID\_BdaChangeSync method set using an internal method:
 
-```
+```cpp
 //
 //  BDA Change Sync Method Set
 //
@@ -69,7 +64,7 @@ DEFINE_KSMETHOD_TABLE(BdaChangeSyncMethods)
 
 The following code snippet shows how the internal start-changes method in a BDA minidriver resets pending resource changes after the minidriver calls the **BdaStartChanges** support function to initiate the setting of new BDA topology changes:
 
-```
+```cpp
 //
 // StartChanges ()
 //
@@ -122,9 +117,9 @@ errExit:
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

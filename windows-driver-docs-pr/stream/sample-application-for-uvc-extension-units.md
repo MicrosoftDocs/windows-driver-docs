@@ -1,16 +1,11 @@
 ---
 title: Sample Application for UVC Extension Units
-author: windows-driver-content
 description: Sample Application for UVC Extension Units
 ms.assetid: f900b0b1-3469-442f-8593-2094a0966d4a
 keywords:
 - extension units WDK USB Video Class , samples, sample application
 - sample code WDK USB Video Class , UVC extension units
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +20,7 @@ Include the following code in the application source, arbitrarily named TestApp.
 
 Also include in TestApp.cpp the code shown in [Supporting Autoupdate Events with Extension Units](supporting-autoupdate-events-with-extension-units.md).
 
-```
+```cpp
   // pUnkOuter is the unknown associated with the base filter
   hr = pUnkOuter->QueryInterface(__uuidof(IKsTopologyInfo), 
                                (void **) &pKsTopologyInfo);
@@ -85,9 +80,9 @@ In this case, **pUnkOuter** should be a pointer to the capture filter that repre
 
 Write the code for the **FindExtensionNode** function to locate the necessary extension unit node and to return its ID in *dwExtensionNode*. This ID is used in this sample code's subsequent call to the **IKsTopologyInfo::CreateNodeInstance** method.
 
- 
+ 
 
- 
+ 
 
 
 

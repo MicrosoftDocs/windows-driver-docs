@@ -8,11 +8,7 @@ keywords:
 - runtime-handled multiple-processor optimizations WDK display
 - driver-handled multiple-processor optimizations WDK display
 - multiple-processor optimizations WDK display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -43,9 +39,9 @@ If the driver performs its own multiple-processor optimizations, it should follo
 
 If vendors want to enable multiple-processor optimizations in one of these situations, they should first contact Microsoft.
 
- 
+ 
 
- 
+ 
 
 
 

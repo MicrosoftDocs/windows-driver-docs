@@ -4,11 +4,7 @@ description: Third Part of Macroblock Control Command Structure
 ms.assetid: 4e378d2f-dbb2-42b6-984e-b231bb806a7c
 keywords:
 - macroblocks WDK DirectX VA , generic command structure
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -87,15 +83,15 @@ If the **bPicIntra** member of [**DXVA\_PictureParameters**](https://msdn.micros
 </tbody>
 </table>
 
- 
+ 
 
 **Note**   The number of motion vectors specified in the **MVector** arrays for the macroblock control command structures defined in the *dxva.h* file is four, as this is the most commonly used form of the structure.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

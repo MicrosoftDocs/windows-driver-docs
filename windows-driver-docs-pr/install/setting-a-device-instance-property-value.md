@@ -2,11 +2,7 @@
 title: Setting a Device Instance Property Value
 description: Setting a Device Instance Property Value
 ms.assetid: 45f63ee3-278e-4b8c-a666-c860074fa172
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +29,9 @@ To set the value of a device instance property on Windows Vista and later versio
 
 If this call to [**SetupDiSetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff552163) succeeds, **SetupDiSetDeviceProperty** sets the device instance property and returns **TRUE**. If the function call fails, **SetupDiGetDeviceProperty** returns **FALSE** and a call to [GetLastError](http://go.microsoft.com/fwlink/p/?linkid=169416) will return the logged error code.
 
- 
+ 
 
- 
+ 
 
 
 

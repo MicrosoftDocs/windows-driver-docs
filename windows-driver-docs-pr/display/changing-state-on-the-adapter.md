@@ -6,11 +6,7 @@ keywords:
 - video adapter state changes WDK video miniport
 - states WDK video miniport
 - adapter states WDK video miniport
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +22,9 @@ While [*HwVidFindAdapter*](https://msdn.microsoft.com/library/windows/hardware/f
 
 For example, [*HwVidFindAdapter*](https://msdn.microsoft.com/library/windows/hardware/ff567332) should defer determining the DAC type of an adapter to the [*HwVidInitialize*](https://msdn.microsoft.com/library/windows/hardware/ff567345) function, because making this determination does not affect whether the miniport driver will be loaded but does change the state of the adapter permanently.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -5,11 +5,7 @@ ms.assetid: fc8634ab-0ecd-4390-9834-825f60fe68ce
 keywords:
 - biometric drivers WDK , ranking on Windows Update
 - ranking biometric drivers WDK biometric
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,7 +26,7 @@ If a customer decides to opt into a legacy stack, the customer can install a hig
 
 Feature Score is represented in the third and fourth digit of the overall driver rank. For instance, *GG* is the feature score from the following driver rank:
 
-```
+```cpp
 0x00GG0000 
 ```
 
@@ -42,7 +38,7 @@ The feature score for a driver is set by an INF FeatureScore directive in the [*
 
 For example, the following code sets the feature score of a driver to 0x20:
 
-```
+```cpp
 [DDInstallSectionName]
 . . .
 FeatureScore=x20
@@ -50,9 +46,9 @@ FeatureScore=x20
 
 For more information about how to set the feature score on drivers, see [Feature Score (Windows Vista)](http://go.microsoft.com/fwlink/p/?linkid=132806).
 
- 
+ 
 
- 
+ 
 
 
 

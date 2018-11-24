@@ -2,11 +2,7 @@
 title: Writing an Information Log Entry
 description: Writing an Information Log Entry
 ms.assetid: 624d2a3e-2a11-47fd-941e-1ab59e299821
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,7 +25,7 @@ The application calls [**SetupWriteTextLog**](https://msdn.microsoft.com/library
 
 -   The comma-separated parameter list supplies the variable *SomeVariable*, which corresponds to "%d" field in *MessageStr*.
 
-```
+```cpp
 //The LogToken value was previously returned by call to
 //SetupGetThreadLogToken or one of the system-defined log token values
 DWORD Category = TXTLOG_VENDOR; 
@@ -41,13 +37,13 @@ SetupWriteTextLog(LogToken, Category, Flags, TEXT("Variable of interest: = %d"),
 
 If the TXTLOG_VENDOR event category is enabled and the TXTLOG_DETAILS event level is set for the device installation text log, this code would create an entry in the device installation log in the following format, where the time stamp would be replaced by an actual time stamp.
 
-```
+```cpp
      2005/02/13 22:06:28.109:    :  Variable of interest: Abc = 1
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -11,11 +11,7 @@ keywords:
 - certificates WDK , test
 - Authenticode signatures WDK
 - test signing drivers WDK , test certificates
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +26,9 @@ A development and test team can use the following types of test certificates to 
 
 [Enterprise CA Test Certificate](enterprise-ca-test-certificate.md)
 
- 
+ 
 
- 
+ 
 
 
 

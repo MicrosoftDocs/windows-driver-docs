@@ -6,11 +6,7 @@ keywords:
 - DxApi miniport drivers WDK DirectDraw , notifying callback functions
 - notifying callback functions WDK kernel-mode video transport
 - callback functions WDK kernel-mode video transport
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,9 +32,9 @@ The video capture driver supplies a *NotifyCallback* function to the DirectDraw 
 
 Thereafter, when an event that is associated with the function identifier occurs, the DirectDraw runtime calls the *NotifyCallback* function. The video capture driver's *NotifyCallback* is implemented to perform operations related to the event.
 
- 
+ 
 
- 
+ 
 
 
 

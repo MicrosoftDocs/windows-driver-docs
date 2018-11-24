@@ -3,11 +3,7 @@ title: session
 description: The session extension controls the session context. It can also display a list of all user sessions.
 ms.assetid: c5f32bf0-59b5-4274-9271-1ad4913ffa1a
 keywords: ["session Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,7 +20,7 @@ The **!session** extension controls the session context. It can also display a l
 
 Syntax
 
-```
+```dbgcmd
 !session 
 !session -s DefaultSession 
 !session -?
@@ -56,9 +52,9 @@ When you set the session context, the process context is automatically changed t
 
 For more details and a list of all the session-related extensions that are affected by the session context, see [Changing Contexts](changing-contexts.md).
 
- 
+ 
 
- 
+ 
 
 
 

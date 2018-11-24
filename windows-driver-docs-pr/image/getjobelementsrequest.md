@@ -9,11 +9,7 @@ api_name:
 - wscn GetJobElementsRequest
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **GetJobElementsRequest** element requests information that is rela
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:GetJobElementsRequest>
   child elements
 </wscn:GetJobElementsRequest>
@@ -50,10 +46,10 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>JobId</strong>](jobid.md)</p></td>
+<td><p><a href="jobid.md" data-raw-source="[&lt;strong&gt;JobId&lt;/strong&gt;](jobid.md)"><strong>JobId</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>RequestedElements</strong>](requestedelements.md)</p></td>
+<td><p><a href="requestedelements.md" data-raw-source="[&lt;strong&gt;RequestedElements&lt;/strong&gt;](requestedelements.md)"><strong>RequestedElements</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -85,20 +81,20 @@ This operation can return all of the [**common WSD Scan Service operation error 
     | \[Reason\]     | The specified JobId was not found. |
     | \[Detail\]     | JobId: Incorrect JobId             |
 
-     
+     
 
 Examples
 --------
 
 The following code example requests the status of the scan job that Fault property 1 identifies.
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope
   xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
   xmlns:wsa="http://schemas.xmlsoap.org/ws/2003/03/addressing"
   xmlns:wscn="http://schemas.microsoft.com/windows/2006/01/wdp/scan"
-  soap:encodingStyle=&#39;http://www.w3.org/2002/12/soap-encoding&#39; >
+  soap:encodingStyle='http://www.w3.org/2002/12/soap-encoding' >
 
   <soap:Header>
     <wsa:To>AddressofScannerService</wsa:To>
@@ -119,7 +115,7 @@ The following code example requests the status of the scan job that Fault proper
 </soap:Envelope>
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**GetJobElementsResponse**](getjobelementsresponse.md)
@@ -128,9 +124,9 @@ The following code example requests the status of the scan job that Fault proper
 
 [**RequestedElements**](requestedelements.md)
 
- 
+ 
 
- 
+ 
 
 
 

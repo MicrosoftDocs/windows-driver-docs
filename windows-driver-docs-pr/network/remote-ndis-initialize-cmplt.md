@@ -1,12 +1,7 @@
 ---
 title: 'REMOTE_NDIS_INITIALIZE_CMPLT'
-author: windows-driver-content
 ms.assetid: e1e057bf-aa92-4b90-b993-a82cc260ff7f
-ms.author: windowsdriverdev
 ms.date: 07/31/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -114,7 +109,7 @@ The REMOTE\_NDIS\_INITIALIZE\_CMPLT message is sent by the Remote NDIS device to
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -149,9 +144,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

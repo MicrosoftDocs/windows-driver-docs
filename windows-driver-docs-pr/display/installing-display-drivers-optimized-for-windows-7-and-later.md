@@ -2,11 +2,7 @@
 title: Installation Requirements for Display Drivers
 description: Installation Requirements for Display Drivers Optimized for Windows 7 and Later
 ms.assetid: 6dcf7c03-e39c-4c1c-b892-2e3e2c8c4b20
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ The following requirements are new for display driver INF files starting with Wi
 
 [Encoding Windows 7 Display Driver INF Files in Unicode](encoding-windows-7-display-driver-inf-files-in-unicode.md)
 
- 
+ 
 
- 
+ 
 
 
 

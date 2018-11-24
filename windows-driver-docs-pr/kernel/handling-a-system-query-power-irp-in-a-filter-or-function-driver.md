@@ -1,14 +1,9 @@
 ---
 title: Handling a System Query-Power IRP in a Filter or Function Driver
-author: windows-driver-content
 description: Handling a System Query-Power IRP in a Filter or Function Driver
 ms.assetid: 81d921d5-6db8-4858-b86e-1484781faba5
 keywords: ["query-power IRPs WDK power management", "filter drivers WDK power management", "function drivers WDK power management"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,9 +31,9 @@ A filter or function driver (that is not the power policy owner for a device) sh
 
 7.  Return STATUS\_PENDING from its [*DispatchPower*](https://msdn.microsoft.com/library/windows/hardware/ff543354) routine.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: Stream Latency During Playback
 description: Stream Latency During Playback
 ms.assetid: 70b41245-f463-4225-b79c-0ee65d8a0132
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -41,9 +37,9 @@ After the client determines the amount of separation to maintain between the wri
 
 If the audio device has a position register as shown in the preceding diagram, the property request maps the register to a virtual memory address that is accessible to the user-mode client. After the position register is mapped, the client can read the contents of the memory address to determine the current play position.
 
- 
+ 
 
- 
+ 
 
 
 

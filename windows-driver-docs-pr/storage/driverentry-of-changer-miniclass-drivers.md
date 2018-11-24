@@ -12,6 +12,7 @@ api_location:
 api_type:
 - DllExport
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # DriverEntry of Changer Miniclass Drivers routine
@@ -85,9 +86,9 @@ Requirements
 
 [**MCD\_INIT\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff562210)
 
- 
+ 
 
- 
+ 
 
 
 

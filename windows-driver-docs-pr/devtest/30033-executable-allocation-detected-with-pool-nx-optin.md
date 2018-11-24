@@ -2,11 +2,7 @@
 title: C30033
 description: Warning C30033 Executable allocation was detected in a driver compiled with POOL_NX_OPTIN.
 ms.assetid: A5212960-F33D-485A-9B80-23F3D95D475C
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -91,9 +87,9 @@ The following code avoids this warning:
 ExAllocatePoolWithTag(NonPagedPoolNx, numberOfBytes, 'xppn');
 ```
 
- 
+ 
 
- 
+ 
 
 
 

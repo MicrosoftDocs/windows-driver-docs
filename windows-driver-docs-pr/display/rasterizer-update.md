@@ -6,11 +6,7 @@ keywords:
 - rasterizers WDK Direct3D
 - production rasterizers WDK Direct3D
 - reference rasterizers WDK Direct3D
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +22,9 @@ The production rasterizer may not be updated to support these techniques, becaus
 
 This rasterizer is likely to be upgraded in terms of performance on key cases that are identified.
 
- 
+ 
 
- 
+ 
 
 
 

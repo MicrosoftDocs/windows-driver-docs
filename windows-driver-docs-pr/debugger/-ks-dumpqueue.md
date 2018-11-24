@@ -3,11 +3,7 @@ title: ks.dumpqueue
 description: The ks.dumpqueue extension displays information about the queues associated with a given AVStream object, or the stream associated with a port class object.
 ms.assetid: d641b4e6-73d9-4c44-b2c6-0b6c688da368
 keywords: ["ks.dumpqueue Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!ks.dumpqueue** extension displays information about the queues associated with a given AVStream object, or the stream associated with a port class object.
 
-```
+```dbgcmd
 !ks.dumpqueue Object [Level] 
 ```
 
@@ -54,7 +50,7 @@ Optional. Specifies the level of detail to display on a 0-7 scale with progressi
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -69,7 +65,7 @@ This command can take some time to execute.
 
 Here is an example of the **!ks.dumpqueue** display:
 
-```
+```dbgcmd
 kd> !dumpqueue 829493c4
 Filter 829493c4: Output Queue 82990e20:
  Queue 82990e20:
@@ -91,9 +87,9 @@ Filter 829493c4: Output Queue 82990e20:
             Refcount = 1
 ```
 
- 
+ 
 
- 
+ 
 
 
 

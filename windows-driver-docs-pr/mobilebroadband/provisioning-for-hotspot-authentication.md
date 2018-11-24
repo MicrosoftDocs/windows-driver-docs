@@ -2,11 +2,7 @@
 title: Provisioning for hotspot authentication
 description: Provisioning for hotspot authentication
 ms.assetid: bfb4e1ec-9887-4b25-bfcc-be642b1a0101
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -98,16 +94,16 @@ Because provisioning modifies system settings that persist after the user has ex
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
 
 [WISPr authentication](wispr-authentication.md)
 
- 
+ 
 
- 
+ 
 
 
 

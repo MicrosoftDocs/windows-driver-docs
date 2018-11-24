@@ -7,11 +7,7 @@ keywords:
 - NDIS ports WDK , PnP event notifications
 - PnP event notifications WDK NDIS ports
 - deactivation PnP events WDK NDIS ports
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ Before a protocol driver completes the handling of a port deactivation PnP event
 
 Miniport drivers specify the **NetEventPortDeactivation** PnP event code in the [**NET\_PNP\_EVENT\_NOTIFICATION**](https://msdn.microsoft.com/library/windows/hardware/ff568752) structure that the *NetPnPEvent* parameter points to in the call to the [**NdisMNetPnPEvent**](https://msdn.microsoft.com/library/windows/hardware/ff563616) function to report that some ports have been deactivated. The miniport driver specifies an array of NDIS\_PORT\_NUMBER values to list the deactivated ports. For more information about the array of port numbers, see [Deactivating NDIS Ports](deactivating-an-ndis-port.md).
 
- 
+ 
 
- 
+ 
 
 
 

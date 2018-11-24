@@ -6,11 +6,7 @@ keywords:
 - filter drivers WDK networking , mandatory
 - NDIS filter drivers WDK , mandatory
 - mandatory filter drivers WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +26,9 @@ When a computer restarts, NDIS will not bind any protocol drivers to a miniport 
 
 To install a mandatory filter driver, you must specify a value of 0x00000001 for **FilterRunType** in the INF file. To install an optional filter driver, you must specify a value of 0x00000002 for **FilterRunType** in the INF file.
 
- 
+ 
 
- 
+ 
 
 
 

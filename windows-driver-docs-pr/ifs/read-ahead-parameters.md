@@ -11,11 +11,8 @@ api_location:
 - NtosKrnl.exe
 api_type:
 - DllExport
-ms.author:
-ms.date: 
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.author: eliotgra
+ms.date: 09/14/2017
 ms.localizationpriority: medium
 ---
 
@@ -72,7 +69,7 @@ Requirements
 <tbody>
 <tr class="odd">
 <td align="left"><p>Target platform</p></td>
-<td align="left">[Universal](http://go.microsoft.com/fwlink/p/?linkid=531356)</td>
+<td align="left"><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" data-raw-source="[Universal](http://go.microsoft.com/fwlink/p/?linkid=531356)">Universal</a></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Version</p></td>

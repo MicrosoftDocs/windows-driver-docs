@@ -1,13 +1,8 @@
 ---
 title: New camera driver functions for Windows 10
-author: windows-driver-content
 description: The following camera driver functions are new for Windows 10.
 ms.assetid: 42116C2B-BEB8-4A8C-99AC-0D0B2E7B124C
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +25,9 @@ The following camera driver functions are new for Windows 10.
 
 [**KsReleaseCachedMdl**](https://msdn.microsoft.com/library/windows/hardware/mt186396)
 
- 
+ 
 
- 
+ 
 
 
 

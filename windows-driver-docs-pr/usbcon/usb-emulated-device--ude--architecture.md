@@ -1,12 +1,7 @@
 ---
 Description: The section describes architecture of USB Device Emulation(UDE) that emulates the behavior of a USB host controller and a connected device.
 title: Architecture of USB Device Emulation (UDE)
-author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,9 +30,9 @@ Here are the device stacks loaded for the UDE client driver:
 
 ![usb device emulation (ude) device nodes](images/ude-dev-nodes.png)
 
- 
+ 
 
- 
+ 
 
 
 

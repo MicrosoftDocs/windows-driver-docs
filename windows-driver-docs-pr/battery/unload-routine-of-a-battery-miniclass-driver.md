@@ -7,11 +7,7 @@ keywords:
 - Unload routine
 - verifying device unloads
 - unloading devices
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,7 +27,7 @@ The *Unload* routine should first check to ensure that all its devices have been
 
 3.  Delete the device object for the device by calling [**IoDeleteDevice**](https://msdn.microsoft.com/library/windows/hardware/ff549083), as follows:
 
-    ```
+    ```cpp
         IoDeleteDevice (NewBatt->DeviceObject);
     ```
 
@@ -39,9 +35,9 @@ After all the miniclass driver's devices are unloaded, the *Unload* routine shou
 
 The miniclass driver's *Unload* routine can be called at any time after all the driver's devices have been removed. The PnP Manager calls the *Unload* routine in the context of a system thread at IRQL = PASSIVE\_LEVEL.
 
- 
+ 
 
- 
+ 
 
 
 

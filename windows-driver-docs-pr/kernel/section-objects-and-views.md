@@ -1,14 +1,9 @@
 ---
 title: Section Objects and Views
-author: windows-driver-content
 description: Section Objects and Views
 ms.assetid: 9c60b761-6326-4d1a-b884-cc2acee4bedd
 keywords: ["memory management WDK kernel , section objects", "memory management WDK kernel , shared memory", "shared memory WDK kernel", "section objects WDK kernel", "memory sections WDK kernel", "sharing memory address space", "views WDK memory section"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +25,9 @@ This section contains the following topics:
 
 [Security Issues for Section Objects and Views](security-issues-for-section-objects-and-views.md)
 
- 
+ 
 
- 
+ 
 
 
 

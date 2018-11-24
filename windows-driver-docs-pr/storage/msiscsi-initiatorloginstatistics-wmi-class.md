@@ -3,6 +3,7 @@ title: MSiSCSI\_InitiatorLoginStatistics WMI Class
 description: MSiSCSI\_InitiatorLoginStatistics WMI Class
 ms.assetid: cbbfdc11-2c8a-4afa-b62f-187f8c959750
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MSiSCSI\_InitiatorLoginStatistics WMI Class
@@ -17,7 +18,7 @@ Because this class is associated with a particular instance of a storage minipor
 
 The MSiSCSI\_InitiatorLoginStatistics class is defined in *Iscsiprf.mof*.
 
-```
+```cpp
 class MSiSCSI_InitiatorLoginStatistics : Win32_PerfRawData {
   [read,key] String  InstanceName;
   [read] boolean  Active;
@@ -96,9 +97,9 @@ class MSiSCSI_InitiatorLoginStatistics : Win32_PerfRawData {
 
 When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_InitiatorLoginStatistics**](https://msdn.microsoft.com/library/windows/hardware/ff563040) data structure.
 
- 
+ 
 
- 
+ 
 
 
 

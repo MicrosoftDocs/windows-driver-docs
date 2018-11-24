@@ -6,11 +6,7 @@ keywords:
 - asynchronous query operations WDK DirectX 9.0 , verifying support of query types
 - query operations WDK DirectX 9.0 , verifying support of query types
 - query types WDK DirectX 9.0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,9 +20,9 @@ The DirectX 9.0 runtime must verify which query types that a driver supports bef
 
 To receive information about each supported query type, the runtime sends a **GetDriverInfo2** request using the D3DGDI2\_TYPE\_GETD3DQUERY value for each type. The driver then returns information about the query type in a [**DD\_GETD3DQUERYDATA**](https://msdn.microsoft.com/library/windows/hardware/ff551541) structure. For more information about **GetDriverInfo2**, see [Supporting GetDriverInfo2](supporting-getdriverinfo2.md).
 
- 
+ 
 
- 
+ 
 
 
 

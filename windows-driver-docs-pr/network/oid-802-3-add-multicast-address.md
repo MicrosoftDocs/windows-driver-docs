@@ -1,13 +1,8 @@
 ---
 title: OID_802_3_ADD_MULTICAST_ADDRESS
-author: windows-driver-content
 description: As a set request, NDIS and overlying protocol drivers use the OID_802_3_ADD_MULTICAST_ADDRESS OID request to add an 802.3 multicast address to the multicast address list of a miniport adapter.
 ms.assetid: e3e6defe-e65f-46bb-9cd6-cb65ffa7d7f0
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_802_3_ADD_MULTICAST_ADDRESS Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -74,9 +69,9 @@ Requirements
 
 [OID\_GEN\_CURRENT\_PACKET\_FILTER](oid-gen-current-packet-filter.md)
 
- 
+ 
 
- 
+ 
 
 
 

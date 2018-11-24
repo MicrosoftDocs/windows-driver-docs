@@ -1,13 +1,8 @@
 ---
 title: Supporting Passive-Level Interrupts
-author: windows-driver-content
 description: Starting with framework version 1.11, WDF drivers can create interrupt objects that require passive-level handling.
 ms.assetid: E464F885-928C-40BC-A09F-7A7921F8FF37
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -50,7 +45,7 @@ Drivers typically complete I/O requests in their [*EvtInterruptWorkItem*](https:
 
 The following code example demonstrates how a driver using passive-level interrupts might schedule a [*EvtInterruptWorkItem*](https://msdn.microsoft.com/library/windows/hardware/hh406422) callback from within its [*EvtInterruptIsr*](https://msdn.microsoft.com/library/windows/hardware/ff541735) function.
 
-```
+```cpp
 BOOLEAN
 
 EvtInterruptIsr(
@@ -162,7 +157,7 @@ EvtInterruptIsr(
     }
     
     //
-    // Retrive the request buffer.
+    // Retrieve the request buffer.
     //
     status = WdfRequestRetrieveOutputMemory(request, &reqMemory);
 
@@ -321,9 +316,9 @@ To prevent deadlock, follow these guidelines when writing a driver that implemen
 
 For more information about using interrupt locks, see [Synchronizing Interrupt Code](synchronizing-interrupt-code.md).
 
- 
+ 
 
- 
+ 
 
 
 

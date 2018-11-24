@@ -3,11 +3,7 @@ title: ndiskd.nbl
 description: The ndiskd.nbl extension displays information about a NET_BUFFER_LIST (NBL) structure.
 ms.assetid: 1806ac7c-b438-4c28-bab0-1b65dba651ea
 keywords: ["ndiskd.nbl Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!ndiskd.nbl** extension displays information about a [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/windows/hardware/drivers/network/net-buffer-list-structure) (NBL) structure.
 
-```
+```console
     !ndiskd.nbl [-handle <x>] [-basic] [-chain] [-info] [-data] 
     [-netmon] [-capfile <str>] [-launch] [-overwrite] [-log]
     [-stacks] [-NblCurrentOwner]
@@ -78,7 +74,7 @@ In the following example, NBL tracking has been enabled to extract a handle for 
 
 At the time of log collection, the NBL in this example was returned by the TCPIP6 protocol to the WFP Native Mac Layer LightWeight Filter.
 
-```
+```console
 2: kd> !ndiskd.nbl ffffdf80149524a0
     NBL                ffffdf80149524a0    Next NBL           NULL
     First NB           ffffdf8014952610    Source             ffffdf80140c71a0 - Microsoft Kernel Debug Network Adapter
@@ -92,7 +88,7 @@ At the time of log collection, the NBL in this example was returned by the TCPIP
 
 By clicking on the "Dump data payload" link from the previous example or by entering the **!ndiskd.nbl -handle -data** command, you can see the data payload of this NBL. In the following example, the NBL contains only one **NET\_BUFFER** structure. To further explore the contents of that **NET\_BUFFER** structure, run the [**!ndiskd.nb -handle**](-ndiskd-nb.md) command with its handle.
 
-```
+```console
 2: kd> !ndiskd.nbl ffffdf80149524a0 -data
 NET_BUFFER ffffdf8014952610
 ```
@@ -118,9 +114,9 @@ NET_BUFFER ffffdf8014952610
 
 [**!ndiskd.nb**](-ndiskd-nb.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -8,11 +8,7 @@ keywords:
 - WMI WDK networking , OIDs
 - OIDs WDK networking , WMI
 - Windows Management Instrumentation WDK networking , OIDs
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +26,9 @@ NDIS drivers can also register custom GUIDs with WMI. For more information about
 
 NDIS also translates status indications to WMI events. For more information about translating status indications to WMI events, see [Standard Miniport Driver Status Registered with WMI](standard-miniport-driver-status-indications-registered-with-wmi.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -6,11 +6,7 @@ keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , multiple vertex streams
 - multiple vertex streams WDK DirectX 8.0
 - vertex multiple streams WDK DirectX 8.0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,9 +18,9 @@ ms.localizationpriority: medium
 
 A driver reports the ability to support multiple vertex streams by setting the value of the **MaxStreams** field of the D3DCAPS8 structure. A driver that supports multiple vertex streams should specify a value greater than one. A DX8 level driver that does not support multiple vertex streams should set **MaxStreams** to one. No DX8 level driver should specify a value of zero for this field. The driver should also set the **MaxStreamStride** field to the maximum supported stride (in bytes) between vertex elements in a vertex stream.
 
- 
+ 
 
- 
+ 
 
 
 

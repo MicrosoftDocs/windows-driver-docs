@@ -1,13 +1,8 @@
 ---
 title: EFI_USBFN_IO_PROTOCOL.GetMaxTransferSize
-author: windows-driver-content
 description: EFI_USBFN_IO_PROTOCOL.GetMaxTransferSize
 ms.assetid: 61160708-029b-4691-87fe-22d06424220d
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,7 +14,7 @@ The **GetMaxTransferSize** function returns the maximum transfer size as support
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef
 EFI_STATUS
 (EFIAPI * EFI_USBFN_IO_GET_MAXTRANSFER_SIZE) (
@@ -73,7 +68,7 @@ This function returns the following values:
 </tbody>
 </table>
 
- 
+ 
 
 ## Remarks
 
@@ -83,9 +78,9 @@ This function returns the following values:
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
 

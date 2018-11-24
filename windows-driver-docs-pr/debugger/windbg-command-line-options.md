@@ -3,7 +3,6 @@ title: WinDbg Command-Line Options
 description: First-time users of WinDbg should begin with the Debugging Using WinDbg section.
 ms.assetid: bd169c73-0a46-41b5-bd7b-71adf7747069
 keywords: ["WinDbg Command-Line Options Windows Debugging"]
-ms.author: domars
 ms.date: 08/10/2018
 ms.topic: article
 ms.prod: windows-hardware
@@ -24,7 +23,7 @@ First-time users of WinDbg should begin with the [Debugging Using WinDbg](debugg
 
 The WinDbg command line uses the following syntax:
 
-```
+```dbgsyntax
 windbg [ -server ServerTransport | -remote ClientTransport ] [-lsrcpath ]
    [ -premote SmartClientTransport ] [-?] [-ee {masm|c++}] 
    [-clines lines] [-b] [-d] [-aExtension]  
@@ -91,7 +90,7 @@ Causes the debugger to ignore any questionable symbols. When debugging a user-mo
 (User mode only) Ignores the final breakpoint at process termination. Typically, the debugging session ends during the image run-down process. This option will cause the debugging session to end immediately when the child terminates. This has the same effect as entering the command **sxd epr**. For more information, see [Controlling Exceptions and Events](controlling-exceptions-and-events.md).
 
 <span id="_______-hd______"></span><span id="_______-HD______"></span> **-hd**   
-(Windows XP and later, user mode only) Specifies that the debug heap should not be used.
+(User mode only) Specifies that the debug heap should not be used.
 
 <span id="_______-I_S_"></span><span id="_______-i_s_"></span> **-I**\[**S**\]  
 Installs WinDbg as the postmortem debugger. For details, see [Enabling Postmortem Debugging](enabling-postmortem-debugging.md).
@@ -120,7 +119,7 @@ Allow journaling.
 (Kernel mode only) Starts a kernel debugging session. For details, see [Live Kernel-Mode Debugging Using WinDbg](performing-kernel-mode-debugging-using-windbg.md). If **-k** is used without any *ConnectType* options following it, it must be the final entry on the command line.
 
 <span id="_______-kl______"></span><span id="_______-KL______"></span> **-kl**   
-(Windows XP and later, kernel mode only) Starts a kernel debugging session on the same machine as the debugger.
+(Kernel mode only) Starts a kernel debugging session on the same machine as the debugger.
 
 <span id="_______-kx_______ExdiOptions______"></span><span id="_______-kx_______exdioptions______"></span><span id="_______-KX_______EXDIOPTIONS______"></span> **-kx** *ExdiOptions*   
 (Kernel mode only) Starts a kernel debugging session using an EXDI driver. EXDI drivers are not described in this documentation. If you have an EXDI interface to your hardware probe or hardware simulator, please contact Microsoft for debugging information.
@@ -153,19 +152,19 @@ Specifies the handle of a crash dump file to debug.
 Specifies the decimal process ID to be debugged. This is used to debug a process that is already running.
 
 <span id="_______-pb______"></span><span id="_______-PB______"></span> **-pb**   
-(Windows XP and later, user mode only) Prevents the debugger from requesting an initial break-in when attaching to a target process. This can be useful if the application is already suspended, or if you wish to avoid creating a break-in thread in the target.
+(User mode only) Prevents the debugger from requesting an initial break-in when attaching to a target process. This can be useful if the application is already suspended, or if you wish to avoid creating a break-in thread in the target.
 
 <span id="_______-pd______"></span><span id="_______-PD______"></span> **-pd**   
-(Windows XP and later, user mode only) Causes the target application not to be terminated at the end of the debugging session. See [Ending a Debugging Session in WinDbg](ending-a-debugging-session-in-windbg.md) for details.
+(User mode only) Causes the target application not to be terminated at the end of the debugging session. See [Ending a Debugging Session in WinDbg](ending-a-debugging-session-in-windbg.md) for details.
 
 <span id="_______-pe______"></span><span id="_______-PE______"></span> **-pe**   
-(Windows XP and later, user mode only) Indicates that the target application is already being debugged. See [Re-attaching to the Target Application](reattaching-to-the-target-application.md) for details.
+(User mode only) Indicates that the target application is already being debugged. See [Re-attaching to the Target Application](reattaching-to-the-target-application.md) for details.
 
 <span id="_______-pn_______Name______"></span><span id="_______-pn_______name______"></span><span id="_______-PN_______NAME______"></span> **-pn** *Name*   
 Specifies the name of the process to be debugged. (This name must be unique.) This is used to debug a process that is already running.
 
 <span id="_______-pr______"></span><span id="_______-PR______"></span> **-pr**   
-(Windows XP and later, user mode only) Causes the debugger to start the target process running when it attaches to it. This can be useful if the application is already suspended and you wish it to resume execution.
+(User mode only) Causes the debugger to start the target process running when it attaches to it. This can be useful if the application is already suspended and you wish it to resume execution.
 
 <span id="_______-psn_______ServiceName______"></span><span id="_______-psn_______servicename______"></span><span id="_______-PSN_______SERVICENAME______"></span> **-psn** *ServiceName*   
 Specifies the name of a service contained in the process to be debugged. This is used to debug a process that is already running.
@@ -253,13 +252,13 @@ Pops up this HTML Help window.
 
 When you are running the debugger from the command line, specify arguments for the target application after application's file name. For instance:
 
-```
+```dbgcmd
 windbg myexe arg1 arg2
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -5,11 +5,7 @@ ms.assetid: 029bbf2b-7286-494c-96e4-f6f99a97436d
 keywords:
 - connectionless drivers WDK networking
 - network drivers WDK , types
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,9 +19,9 @@ If you are writing a filter driver whose lower edge provides an interface to con
 
 -   [NDIS Filter Drivers](ndis-filter-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

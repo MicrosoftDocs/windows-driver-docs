@@ -5,11 +5,7 @@ ms.assetid: a4cc7780-b6fb-486a-b54b-96c90d4fe1f5
 keywords:
 - display drivers WDK Windows 2000 , initializing
 - initializing display drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -53,9 +49,9 @@ A display driver must implement [**DrvNotify**](https://msdn.microsoft.com/libra
 
 See the [Plug and Play](https://msdn.microsoft.com/library/windows/hardware/ff547125) section for more information about the boot process.
 
- 
+ 
 
- 
+ 
 
 
 

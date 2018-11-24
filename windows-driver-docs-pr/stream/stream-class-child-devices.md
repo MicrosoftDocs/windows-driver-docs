@@ -1,6 +1,5 @@
 ---
 title: Stream Class Child Devices
-author: windows-driver-content
 description: Stream Class Child Devices
 ms.assetid: 2885a77d-5e39-4730-b715-99f0a426f273
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - streaming minidrivers WDK Windows 2000 Kernel , child devices
 - minidrivers WDK Windows 2000 Kernel Streaming , child devices
 - child devices WDK streaming minidriver
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,7 +27,7 @@ In releases earlier than DirectX 9.0, stream class creates a child device hardwa
 
 For example, the vendor specifies the following in the **AddReg** section of the INF file:
 
-```
+```INF
 [MyTVDevice.AddReg]
 HKR,"ENUM\CrossbarDevice",pnpid,,"MyCrossbar"
 HKR,"ENUM\TunerDevice",pnpid,,"MyTuner"
@@ -107,11 +102,11 @@ Stream\\MyCrossbar
 **Note**   In DirectX 9.0 and later, the legacy hardware ID, Stream\\*&lt;pnpid&gt;*, is still reported as the lowest rank compatible ID. As a result, legacy drivers continue to work unmodified on these platforms.
 However, as of the DirectX 9.0 release, Microsoft recommends that vendors writing *new or revised drivers that leverage the stream class bus enumerator use the new hardware ID formats*. Drivers can support platforms running earlier versions of stream class by including the old ID in the compatible IDs list in the INF file.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

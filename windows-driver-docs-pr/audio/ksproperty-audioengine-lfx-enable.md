@@ -11,11 +11,7 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -54,7 +50,7 @@ The **KSPROPERTY\_AUDIOENGINE\_LFXENABLE** property request retrieves or alters 
 </tbody>
 </table>
 
- 
+ 
 
 The property value is of type **BOOL** and indicates whether local effect processing on the specified stream is enabled. A value of **TRUE** indicates that processing is enabled. **FALSE** indicates that it is disabled.
 
@@ -89,9 +85,9 @@ Requirements
 
 [**KSPROPERTY\_AUDIOENGINE\_GFXENABLE**](ksproperty-audioengine-gfx-enable.md)
 
- 
+ 
 
- 
+ 
 
 
 

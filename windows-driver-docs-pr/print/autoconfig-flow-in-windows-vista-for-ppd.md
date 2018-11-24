@@ -1,16 +1,11 @@
 ---
 title: Autoconfig Flow in Windows Vista for PPD
-author: windows-driver-content
 description: Autoconfig Flow in Windows Vista for PPD
 ms.assetid: 60675cd3-fe98-4772-aa1b-a73529480d8a
 keywords:
 - PPD files WDK autoconfiguration , sequence of steps
 - in-box autoconfiguration support WDK printer , sequence of steps
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +28,9 @@ Autoconfig follows the following sequence:
 
 7.  The IHV plug-in will update the driver UI according to the latest configuration.
 
- 
+ 
 
- 
+ 
 
 
 

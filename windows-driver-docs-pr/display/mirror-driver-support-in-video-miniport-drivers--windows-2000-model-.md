@@ -5,11 +5,7 @@ ms.assetid: ca91e0a6-d619-432a-829e-49012951f27c
 keywords:
 - video miniport drivers WDK Windows 2000 , mirror drivers
 - mirror drivers WDK Windows 2000 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,11 +29,11 @@ Since there is no physical display device associated with a mirrored surface, al
 
 **Note**  Starting with Windows 8, mirror drivers will not install on the system. For more information, see [Mirror Drivers](mirror-drivers.md).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

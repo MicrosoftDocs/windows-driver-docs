@@ -3,6 +3,7 @@ title: MSiSCSI\_HBASessionConfig WMI Class
 description: MSiSCSI\_HBASessionConfig WMI Class
 ms.assetid: ef3ac7d0-be4a-457e-b837-a6434776dfc1
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MSiSCSI\_HBASessionConfig WMI Class
@@ -17,7 +18,7 @@ Because this class is associated with a particular instance of a storage minipor
 
 The MSiSCSI\_HBASessionConfig class is defined as follows in *Mgmt.mof*.
 
-```
+```cpp
 class MSiSCSI_HBASessionConfig {
   [key] string  InstanceName;
   boolean  Active;
@@ -65,9 +66,9 @@ class MSiSCSI_HBASessionConfig {
 
 When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_HBASessionConfig**](https://msdn.microsoft.com/library/windows/hardware/ff563021) data structure.
 
- 
+ 
 
- 
+ 
 
 
 

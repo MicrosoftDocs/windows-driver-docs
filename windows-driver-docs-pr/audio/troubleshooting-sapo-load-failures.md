@@ -8,11 +8,7 @@ keywords:
 - IsInputFormatSupported WDK
 - LockForProcess WDK
 - DisableProtectedAudioDG WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -45,7 +41,7 @@ For [**CoCreateInstance**](https://msdn.microsoft.com/library/windows/desktop/ms
 
 The audio engine does not load unsigned sAPOs into the audio processing graph. So while you are testing your sAPO, you must disable the protected process for Audiodg.exe. To disable the protected process, set the value of the **DisableProtectedAudioDG** registry key to '1'. The following registry excerpt shows this.
 
-```
+```text
 ...
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Audio
  "DisableProtectedAudioDG" = dword:00000001
@@ -54,9 +50,9 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Audio
 
 Also, if the failure count value for an LFX or a GFX sAPO reaches a system-specified limit, both the LFX and the GFX sAPOs are disabled by setting the PKEY\_Endpoint\_Disable\_SysFx registry key to '1'. The system-specified limit is currently a value of 10.
 
- 
+ 
 
- 
+ 
 
 
 

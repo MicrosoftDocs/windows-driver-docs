@@ -1,13 +1,8 @@
 ---
 title: OID_WDI_TASK_CONNECT
-author: windows-driver-content
 description: OID_WDI_TASK_CONNECT requests that the IHV component connects to an Access Point or to a Wi-Fi Direct GO.
 ms.assetid: 63ba3979-6b30-49bf-91a9-fa01f0ef4922
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - OID_WDI_TASK_CONNECT Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -22,7 +17,7 @@ OID\_WDI\_TASK\_CONNECT requests that the IHV component connects to an Access Po
 |--------|---------------------------------------------------|---------------------------------------|---------------------------------|
 | Port   | Yes. The abort must be followed by a dot11 reset. | 4                                     | 10                              |
 
- 
+ 
 
 As part of the connect, the IHV component must synchronize with, authenticate to, and associate to the BSS. The host provides the BSS entries that the IHV component can attempt to connect to. Once the IHV component has successfully connected to one of those entries, it should complete the connect process. If it is unable to connect to any of the BSS entries, it should complete the connect process with a failure.
 
@@ -59,7 +54,7 @@ The connection parameters must not have MFPEnabled and HostFIPSModeEnabled both 
 | [**WDI\_TLV\_CONNECT\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/dn926266) |                                |          | The connection parameters.                                                                                                                                                                                                                                                                                                                                                                                   |
 | [**WDI\_TLV\_CONNECT\_BSS\_ENTRY**](https://msdn.microsoft.com/library/windows/hardware/dn926264)  | X                              |          | The preferred list of candidate connect BSS entries. The port should attempt to connect to any of these BSS entries until the list is exhausted or the connection completed successfully. The port can reprioritize the entries if needed. If the adapter has set the Connect BSS Selection Override bit, then it can pick a BSS that is not in this list as long as it follows the Allowed/Disallowed list. |
 
- 
+ 
 
 ## Task completion indication
 
@@ -93,9 +88,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

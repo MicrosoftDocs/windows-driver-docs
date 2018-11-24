@@ -10,20 +10,11 @@ api_name:
 api_type:
 - NA
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # CM_Run_Detection
 
 This function is reserved for system use.
 
-
 This function is obsolete and no longer supported.
-
- 
-
- 
-
-
-
-
-

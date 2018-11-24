@@ -12,6 +12,7 @@ api_location:
 api_type:
 - DllExport
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # DriverEntry of Tape Miniclass Driver routine
@@ -93,9 +94,9 @@ Requirements
 
 [**TAPE\_STATUS**](https://msdn.microsoft.com/library/windows/hardware/ff567975)
 
- 
+ 
 
- 
+ 
 
 
 

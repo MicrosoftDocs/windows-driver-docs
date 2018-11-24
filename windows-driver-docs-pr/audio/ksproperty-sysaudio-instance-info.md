@@ -11,11 +11,7 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -51,13 +47,13 @@ The KSPROPERTY\_SYSAUDIO\_INSTANCE\_INFO property opens a virtual audio device a
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p>[<strong>SYSAUDIO_INSTANCE_INFO</strong>](https://msdn.microsoft.com/library/windows/hardware/ff538490)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff538490" data-raw-source="[&lt;strong&gt;SYSAUDIO_INSTANCE_INFO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff538490)"><strong>SYSAUDIO_INSTANCE_INFO</strong></a></p></td>
 <td align="left"><p>None</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property descriptor (instance data) is a structure of type SYSAUDIO\_INSTANCE\_INFO that specifies which virtual audio device to open and also specifies the configuration flags for that device.
 
@@ -88,9 +84,9 @@ Requirements
 
 [**SYSAUDIO\_INSTANCE\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff538490)
 
- 
+ 
 
- 
+ 
 
 
 

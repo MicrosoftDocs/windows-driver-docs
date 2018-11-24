@@ -1,6 +1,5 @@
 ---
 title: Handling PnP Requests to Storage Peripherals
-author: windows-driver-content
 description: Handling PnP Requests to Storage Peripherals
 ms.assetid: 9c7ea576-11e6-46d7-b04c-ce412a0fc569
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - storage peripherals WDK , PnP requests
 - PnP WDK storage
 - Plug and Play WDK storage
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +29,9 @@ A storage class driver's *DispatchPnP* routine is responsible for the following 
 
 The storage class driver forwards PnP query, cancel, and stop requests (except for failed query requests) to the next-lower driver.
 
- 
+ 
 
- 
+ 
 
 
 

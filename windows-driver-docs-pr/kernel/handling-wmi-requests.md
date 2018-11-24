@@ -1,14 +1,9 @@
 ---
 title: Handling WMI Requests
-author: windows-driver-content
 description: Handling WMI Requests
 ms.assetid: d95b736c-045d-4888-8bab-b0a6201f8830
 keywords: ["WMI WDK kernel , requests", "requests WDK WMI", "IRPs WDK WMI"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,7 +37,7 @@ The WMI kernel-mode component sends WMI IRPs any time following a driver's succe
 
 For a list of the WMI minor IRPs, see [WMI Minor IRPs](wmi-minor-irps.md). 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Creating WDTF Scenarios
-author: windows-driver-content
 description: With WDTF scenarios, you build device-focused automated and customized test scenarios using the WDTF framework.
 ms.assetid: f9e3de20-28be-40c6-802c-f4637b3f6c20
 keywords:
@@ -11,11 +10,7 @@ keywords:
 - phantom devices WDK WDTF
 - removed devices WDK WDTF
 - hot-swapped devices WDK WDTF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,7 +31,7 @@ The following sections in this topic describe how to create basic WDTF scenarios
 
 The following VBScript code sample (WDTF\_Sample1.vbs) shows a simplified scenario that uses WDTF to enable and disable every non-phantom device. A *non-phantom device* is any physically present device. For complete samples, see [Sample WDTF Scenarios](sample-wdtf-scenarios.md).
 
-```
+```cpp
 Set WDTF = WScript.CreateObject("WDTF.WDTF")
 For Each Device In WDTF.DeviceDepot.Query("IsPhantom=false AND IsDisableable")
     On Error Resume Next
@@ -54,13 +49,13 @@ You can run this scenario by running **CScript.exe WDTF\_Sample1.vbs**.
 
 Some programming languages, such as VBScript, do not easily manage object references. To simplify this management in WDTF, each target provides a [**Context**](https://msdn.microsoft.com/library/windows/hardware/hh439393) property that you can use to store arbitrary key/value pairs, including references to active objects. This property is especially useful for storing action interfaces so you can use them later. The following VBScript code example stores an [**IWDTFSimpleIOStressAction2**](https://msdn.microsoft.com/library/windows/hardware/hh451157) action within a named **Context** item.
 
-```
+```cpp
 deviceObj.Context("IWDTFSimpleIOStressAction2") = SimpleIOObj
 ```
 
 Later, your scenario can stop, pause, or restart the [**IWDTFSimpleIOStressAction2**](https://msdn.microsoft.com/library/windows/hardware/hh451157) interface by accessing it through [**Context**](https://msdn.microsoft.com/library/windows/hardware/hh439393) again, as the following code example shows.
 
-```
+```cpp
 Device.Context("IWDTFSimpleIOStressAction2").Stop
 ```
 
@@ -70,15 +65,15 @@ Phantom devices are devices that were physically installed on the computer in th
 
 Device-type targets include an **IsPhantom** attribute (and **IsAttached** attribute, which is equivalent to **IsPhantom**=false) that specifies the hardware's physical presence. The following VBScript code example lists a collection of all devices that are physically present in the computer.
 
-```
+```cpp
 Set NonPhantomDevices = WDTF.DeviceDepot.Query ("IsAttached")
 ```
 
 For more attribute keywords, see [SDEL Tokens](https://msdn.microsoft.com/library/windows/hardware/ff539571).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,13 +1,8 @@
 ---
 title: WDI_TLV_MULTICAST_MGMT_ALGORITHM_LIST
-author: windows-driver-content
 description: WDI_TLV_MULTICAST_MGMT_ALGORITHM_LIST is a TLV that contains an array of multicast management algorithm pairs.
 ms.assetid: 96EAD5FE-71C7-4B3E-BB52-06FA50F375D8
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_MULTICAST_MGMT_ALGORITHM_LIST Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -30,7 +25,7 @@ The size (in bytes) of the array of WDI\_ALGO\_PAIRS elements. The array must co
 
 **Note**  WDI\_ALGO\_PAIRS is not a WDI structure. It is defined in the WDI TLV parser generator, and is used for documentation purposes only.
 
- 
+ 
 
 The size (in bytes) of the array of algorithm pairs.
 
@@ -41,7 +36,7 @@ The size (in bytes) of the array of algorithm pairs.
 |----------------------|--------------------------------------------------------|
 | WDI\_ALGO\_PAIRS\[\] | An array of authentication and cipher algorithm pairs. |
 
- 
+ 
 
 WDI\_ALGO\_PAIRS consists of the following elements.
 
@@ -50,7 +45,7 @@ WDI\_ALGO\_PAIRS consists of the following elements.
 | UINT8 | Authentication algorithm as defined in [**WDI\_AUTH\_ALGORITHM**](https://msdn.microsoft.com/library/windows/hardware/dn897792). |
 | UINT8 | Cipher algorithm as defined in [**WDI\_CIPHER\_ALGORITHM**](https://msdn.microsoft.com/library/windows/hardware/dn897802).     |
 
- 
+ 
 
 Requirements
 ------------
@@ -76,9 +71,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

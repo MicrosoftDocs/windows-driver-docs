@@ -4,11 +4,7 @@ description: Network data buffer management
 ms.assetid: BFE1D376-88FB-41CB-AB6D-A0D6BB83128C
 keywords:
 - WDF Network Adapter Class Extension Buffer Manager, Network data buffer management
-ms.author: windowsdriverdev
 ms.date: 02/20/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,11 +28,15 @@ For non-DMA capabile NICs like a USB-based network dongle, or for other advanced
 
 ## How to leverage buffer management
 
+> [!IMPORTANT]
+> If your hardware is DMA-capable, you will need to create a WDFDMAENABLER object before setting your Rx and Tx capabilities. When you configure your WDFDMAENABLER object with the [**WDF_DMA_ENABLER_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdmaenabler/ns-wdfdmaenabler-_wdf_dma_enabler_config) structure, make sure to set the **WdmDmaVersionOverride** member to **3** to specify DMA version 3.
+
 To opt in to buffer management, follow these steps:
 
-1. In your *[EvtNetAdapterSetCapabilities](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nc-netadapter-evt_net_adapter_set_capabilities)* callback, tell the system about your hardware's data buffer capabilities and constraints using the [NET_ADAPTER_RX_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/ns-netadapter-_net_adapter_rx_capabilities) and [NET_ADAPTER_TX_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/ns-netadapter-_net_adapter_tx_capabilities) data structure for the Rx and Tx path respectively. 
-2. Initialize the two capabilities structures by calling one of the initialization functions. For instance, a DMA-capable NIC client driver would use [NET_ADAPTER_TX_CAPABILITIES_INIT_FOR_DMA](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-net_adapter_tx_capabilities_init_for_dma) and [NET_ADAPTER_RX_CAPABILITIES_INIT_SYSTEM_MANAGED](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-net_adapter_rx_capabilities_init_system_managed) to declare its hardware DMA capablities and to instruct the system to fully manage the data buffers on its behalf.
-3. Pass the initialized Tx and Rx capabilities structures to the [NetAdapterSetDatapathCapabilities](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadaptersetdatapathcapabilities) method in your *[EvtNetAdapterSetCapabilities](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nc-netadapter-evt_net_adapter_set_capabilities)* callback function.
+1. When starting your net adapter, but before calling [**NetAdapterStart**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadapterstart), tell the system about your hardware's data buffer capabilities and constraints using the [**NET_ADAPTER_RX_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/ns-netadapter-_net_adapter_rx_capabilities) and [**NET_ADAPTER_TX_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/ns-netadapter-_net_adapter_tx_capabilities) data structure for the Rx and Tx path respectively. 
+2. Initialize the two capabilities structures by calling one of the initialization functions. For example, a DMA-capable NIC client driver would use [**NET_ADAPTER_TX_CAPABILITIES_INIT_FOR_DMA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-net_adapter_tx_capabilities_init_for_dma) and [**NET_ADAPTER_RX_CAPABILITIES_INIT_SYSTEM_MANAGED**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-net_adapter_rx_capabilities_init_system_managed) to declare its hardware DMA capablities and to instruct the system to fully manage the data buffers on its behalf.
+3. Pass the initialized Tx and Rx capabilities structures to the [**NetAdapterSetDatapathCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadaptersetdatapathcapabilities) method.
+
 
 ## Example
 
@@ -47,13 +47,11 @@ Note that the example also sets some hints about its fragment buffers after it i
 Error handling has been left out for clarity.
 
 ```C++
-NTSTATUS
-MyAdapterSetCapabilities(
+VOID
+MyAdapterSetDatapathCapabilities(
     _In_ NETADAPTER Adapter
 )
 {
-    NTSTATUS status = STATUS_SUCCESS;
-
     // Get the device context
     PMY_DEVICE_CONTEXT deviceContext = GetMyContextFromDevice(Adapter);
 
@@ -63,38 +61,34 @@ MyAdapterSetCapabilities(
     // Initialize the Tx DMA capabilities structure
     NET_ADAPTER_DMA_CAPABILITIES txDmaCapabilities;
     NET_ADAPTER_DMA_CAPABILITIES_INIT(&txDmaCapabilities,
-                                      deviceContext->dmaEnabler
-                                      );
+                                      deviceContext->dmaEnabler);
 
     // Set Tx capabilities
     NET_ADAPTER_TX_CAPABILITIES txCapabilities;
     NET_ADAPTER_TX_CAPABILITIES_INIT_FOR_DMA(&txCapabilities,
                                              &txDmaCapabilities,
                                              MAX_PACKET_SIZE,
-                                             1
-                                             );
+                                             1);
     txCapabilities.FragmentRingNumberOfElementsHint = deviceContext->NumTransmitControlBlocks * MAX_PHYS_BUF_COUNT;
+    txCapabilities.MaximumNumberOfFragments = MAX_PHYS_BUF_COUNT;
 
     // Initialize the Rx DMA capabilities structure
     NET_ADAPTER_DMA_CAPABILITIES rxDmaCapabilities;
     NET_ADAPTER_DMA_CAPABILITIES_INIT(&rxDmaCapabilities,
-                                      deviceContext->dmaEnabler
-                                      );
+                                      deviceContext->dmaEnabler);
 
     // Set Rx capabilities
     NET_ADAPTER_RX_CAPABILITIES rxCapabilities;
     NET_ADAPTER_RX_CAPABILITIES_INIT_SYSTEM_MANAGED_DMA(&rxCapabilities,
                                                         &rxDmaCapabilities,
                                                         MAX_PACKET_SIZE + FRAME_CRC_SIZE + RSVD_BUF_SIZE,
-                                                        1
-                                                        );
+                                                        1);
     rxCapabilities.FragmentBufferAlignment = 64;
     rxCapabilities.FragmentRingNumberOfElementsHint = deviceContext->NumReceiveBuffers;
 
     // Set the adapter's datapath capabilities
-    NetAdapterSetDatapathCapabilities(Adapter, &txCapabilities, &rxCapabilities);
-
-    // Set other needed capabilities such as registering for packet extensions
-    ...
+    NetAdapterSetDatapathCapabilities(Adapter, 
+                                      &txCapabilities, 
+                                      &rxCapabilities);
 }
 ```

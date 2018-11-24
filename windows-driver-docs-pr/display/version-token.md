@@ -2,11 +2,7 @@
 title: Version Token
 description: Version Token
 ms.assetid: e38ae148-3bb8-41b4-acdd-55bd67c24d48
-ms.author: windowsdriverdev
 ms.date: 01/05/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,9 +31,9 @@ For a vertex shader, the value is 0xFFFE.
 
 Available in Windows Vista and later versions of the Windows operating systems.
 
- 
+ 
 
- 
+ 
 
 
 

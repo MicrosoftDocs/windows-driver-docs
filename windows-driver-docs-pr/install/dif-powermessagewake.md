@@ -12,6 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # DIF_POWERMESSAGEWAKE
@@ -48,7 +49,7 @@ Windows only sends this DIF request if the drivers for the device support power 
 </tbody>
 </table>
 
- 
+ 
 
 ### Installer Input
 
@@ -116,9 +117,9 @@ Requirements
 
 [**SP_POWERMESSAGEWAKE_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff553311)
 
- 
+ 
 
- 
+ 
 
 
 

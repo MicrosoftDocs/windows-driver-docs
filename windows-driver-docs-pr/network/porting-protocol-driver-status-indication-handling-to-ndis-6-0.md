@@ -8,11 +8,7 @@ keywords:
 - status indications WDK networking , porting
 - porting protocol drivers WDK networking , status indications
 - porting status indications WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +26,9 @@ NDIS 6.0 serializes status indications for each protocol binding. To determine l
 
 For more information about status indications in a protocol driver, see [Handling Status Indications in a Protocol Driver](handling-status-indications-in-a-protocol-driver.md).
 
- 
+ 
 
- 
+ 
 
 
 

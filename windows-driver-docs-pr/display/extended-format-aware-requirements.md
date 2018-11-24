@@ -10,11 +10,7 @@ keywords:
 - XR_BIAS WDK Windows 7 display , BltDXGI
 - PresentDXGI and XR_BIAS WDK Windows 7 display
 - BltDXGI and XR_BIAS WDK Windows 7 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,7 +33,7 @@ If an extended format aware driver returns any support bits for any of the new f
 
 The Direct3D 10.1 and later DDIs are updated to allow the user-mode display driver to claim support for two new versions. One version corresponds to drivers that want to support feature level 10.0, and the other version corresponds to drivers that want to support feature level 10.1. The following are the new version definitions:
 
-```
+```cpp
 // D3D10.0 or D3D10.1 with extended format support (but not Windows 7 scheduling)
 #define D3D10_0_x_DDI_BUILD_VERSION 10
 #define D3D10_0_x_DDI_SUPPORTED ((((UINT64)D3D10_0_DDI_INTERFACE_VERSION) << 32) | (((UINT64)D3D10_0_x_DDI_BUILD_VERSION) << 16))
@@ -63,9 +59,9 @@ The Direct3D runtime calls a driver's [**BltDXGI**](https://msdn.microsoft.com/l
 
 Because XR\_BIAS does not support Multiple Sample Anti Aliasing (MSAA), drivers are not required to resolve XR\_BIAS resources.
 
- 
+ 
 
- 
+ 
 
 
 

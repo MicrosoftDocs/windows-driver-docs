@@ -1,13 +1,8 @@
 ---
 title: WDI_TLV_P2P_CONFIG_METHODS
-author: windows-driver-content
 description: WDI_TLV_P2P_CONFIG_METHODS is a TLV that contains Wi-Fi Direct configuration methods.
 ms.assetid: 95F81FBB-CF78-47EC-8DB3-90F639C30865
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_CONFIG_METHODS Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -35,7 +30,7 @@ The size (in bytes) of a UINT16.
 |--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | UINT16 | Configuration methods as defined in [**WDI\_WPS\_CONFIGURATION\_METHOD**](https://msdn.microsoft.com/library/windows/hardware/dn898198). Only PIN display, PIN keypad, and WFDS are applicable. |
 
- 
+ 
 
 Requirements
 ------------
@@ -61,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

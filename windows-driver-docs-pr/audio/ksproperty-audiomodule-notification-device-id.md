@@ -9,11 +9,7 @@ api_name:
 - KSPROPERTY_AUDIOMODULE_NOTIFICATION_DEVICE_ID
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -52,7 +48,7 @@ The **KSPROPERTY\_AUDIOMODULE\_NOTIFICATION\_DEVICE\_ID** retrieves the audio mo
 </tbody>
 </table>
 
- 
+ 
 
 The returned property value is a single GUID.
 
@@ -102,9 +98,9 @@ Requirements
 
 [**KSAUDIOMODULE\_NOTIFICATION**](https://msdn.microsoft.com/library/windows/hardware/mt808138)
 
- 
+ 
 
- 
+ 
 
 
 

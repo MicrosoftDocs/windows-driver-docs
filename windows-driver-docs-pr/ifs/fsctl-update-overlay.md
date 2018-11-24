@@ -1,5 +1,5 @@
 ---
-title: FSCTL\_UPDATE\_OVERLAY control code
+title: FSCTL_UPDATE_OVERLAY control code
 description: The FSCTL\_UPDATE\_OVERLAY control code updates a new data source identifier for a backing source attached to a volume.
 ms.assetid: 2A420AE7-68CA-4B6A-82D2-C4C39A892F16
 keywords: ["FSCTL_UPDATE_OVERLAY control code Installable File System Drivers"]
@@ -11,11 +11,7 @@ api_location:
 - ntifs.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -88,7 +84,7 @@ Status block
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -130,9 +126,9 @@ Requirements
 
 [**FSCTL\_SET\_EXTERNAL\_BACKING**](fsctl-set-external-backing.md)
 
- 
+ 
 
- 
+ 
 
 
 

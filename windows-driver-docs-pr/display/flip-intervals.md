@@ -23,11 +23,7 @@ keywords:
 - flipping WDK DirectDraw , timing
 - timing flips WDK DirectDraw
 - surfaces WDK DirectDraw , flipping
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -61,11 +57,11 @@ DirectDraw does not preclude the use of these flags with overlay surfaces, but d
 
 **Note**   The DDFLIP\_INTERVAL2, DDFLIP\_INTERVAL3, and DDFLIP\_INTERVAL4 flags are intended to exploit hardware capabilities. Drivers should not attempt to emulate these flags by looping in the driver until the flip can be retired as requested. Because important operating system mutexes are held while calling a DirectDraw driver, such an implementation can affect system performance.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

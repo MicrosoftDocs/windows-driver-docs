@@ -1,13 +1,8 @@
 ---
 title: IRP-Based I/O Operations That Have No Buffers
-author: windows-driver-content
 description: IRP-Based I/O Operations That Have No Buffers
 ms.assetid: f1666a01-11f1-47e4-9e8d-bbfb5f85893a
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,9 +20,9 @@ The following IRP-based I/O operations have no buffers and thus no buffering met
 
 -   IRP\_MJ\_LOCK\_CONTROL
 
- 
+ 
 
- 
+ 
 
 
 

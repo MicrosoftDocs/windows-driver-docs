@@ -9,11 +9,7 @@ api_name:
 - KSNODETYPE_SUM
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ The KSNODETYPE\_SUM node represents a simple summation (SUM) function. The SUM n
 
 A KSNODETYPE\_SUM node is not required to support any properties.
 
- 
+ 
 
- 
+ 
 
 
 

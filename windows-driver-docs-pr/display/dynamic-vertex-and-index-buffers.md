@@ -6,11 +6,7 @@ keywords:
 - dynamic vertex WDK DirectX 9.0
 - index buffers WDK DirectX 9.0
 - dynamic buffers WDK DirectX 9.0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +22,9 @@ The DDLOCK\_OKTOSWAP bit can only be set to lock dynamic buffers and never to lo
 
 Note that drivers should store dynamic buffers in [AGP](agp-support.md) memory because if dynamic buffers are stored in local video memory and an application writes data into those buffers in a nonsequential manner, bus performance might be seriously affected.
 
- 
+ 
 
- 
+ 
 
 
 

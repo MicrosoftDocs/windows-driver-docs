@@ -10,6 +10,7 @@ api_name:
 api_type:
 - NA
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # DIF_DESTROYWIZARDDATA
@@ -19,9 +20,9 @@ This DIF code is obsolete and no longer supported in Microsoft Windows 2000 and 
 
 Windows uses the DIF_NEWDEVICEWIZARD_*XXX* requests instead, such as [**DIF_NEWDEVICEWIZARD_FINISHINSTALL**](dif-newdevicewizard-finishinstall.md).
 
- 
+ 
 
- 
+ 
 
 
 

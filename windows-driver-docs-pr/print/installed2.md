@@ -1,15 +1,10 @@
 ---
 title: Installed (TCP/IP)
-author: windows-driver-content
 description: The TCP/IP Installed construct contains the object ID (OID) of the MIB table's row and a list of lookup values.
 ms.assetid: 4e14d8c1-7c66-4035-845d-f3f92dad8c4f
 keywords:
 - Installed construct
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,7 +27,7 @@ The TCP/IP Installed construct contains the object ID (OID) of the MIB table's r
 <tbody>
 <tr class="odd">
 <td><p><strong>deviceIndex</strong></p></td>
-<td><p>(Optional) A flag that, when <strong>TRUE</strong>, means that the associated algorithm must include the device index in the specified OID; when <strong>FALSE</strong>, a trailing zero is appended to the OID. The default value is <strong>FALSE</strong>. For more information, see the note on the page for [Value](value.md).</p></td>
+<td><p>(Optional) A flag that, when <strong>TRUE</strong>, means that the associated algorithm must include the device index in the specified OID; when <strong>FALSE</strong>, a trailing zero is appended to the OID. The default value is <strong>FALSE</strong>. For more information, see the note on the page for <a href="value.md" data-raw-source="[Value](value.md)">Value</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>drvPrinterEvent</strong></p></td>
@@ -53,13 +48,13 @@ The TCP/IP Installed construct contains the object ID (OID) of the MIB table's r
 </tbody>
 </table>
 
- 
+ 
 
 ### Code Example
 
 In the following code example, the lookup algorithm retrieves the MIB table row from 1.3.6.1.2.1.43.13.4.1.9.&lt;**deviceIndex**&gt;. If this table row contains either 3 or 4, the query returns **TRUE**; otherwise the query returns **FALSE**.
 
-```
+```cpp
 <Property name="DuplexUnit">
   <Installed name="Installed" oid="1.3.6.1.2.1.43.13.4.1.9" deviceIndex="true">
     <Lookup value="3"/>
@@ -70,13 +65,13 @@ In the following code example, the lookup algorithm retrieves the MIB table row 
 
 The preceding example results in the following query:
 
-```
+```cpp
 \Printer.Configuration.DuplexUnit:Installed
 ```
 
- 
+ 
 
- 
+ 
 
 
 

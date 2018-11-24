@@ -2,11 +2,7 @@
 title: Multipacket Messages
 description: Multipacket Messages
 ms.assetid: 58979799-4618-43b9-a6dc-0635f6ade9b3
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -116,12 +112,12 @@ The following table is an example of a multipacket message that is made up of tw
 <td align="left"><p>70</p></td>
 <td align="left"><p>2</p></td>
 <td align="left"><p>Padding</p></td>
-<td align="left"><p>Doesn't matter - unused</p></td>
+<td align="left"><p>Doesn&#39;t matter - unused</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>72</p></td>
 <td align="left"><p>4</p></td>
-<td align="left"><p>MessageType (start of second [<strong>REMOTE_NDIS_PACKET_MSG</strong>](https://msdn.microsoft.com/library/windows/hardware/ff570635))</p></td>
+<td align="left"><p>MessageType (start of second <a href="https://msdn.microsoft.com/library/windows/hardware/ff570635" data-raw-source="[&lt;strong&gt;REMOTE_NDIS_PACKET_MSG&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff570635)"><strong>REMOTE_NDIS_PACKET_MSG</strong></a>)</p></td>
 <td align="left"><p>0x1</p></td>
 </tr>
 <tr class="odd">
@@ -193,11 +189,11 @@ The following table is an example of a multipacket message that is made up of tw
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,16 +1,11 @@
 ---
 title: Minidriver-Supplied Halftoning
-author: windows-driver-content
 description: Minidriver-Supplied Halftoning
 ms.assetid: 15af499a-c541-4d61-ace3-5a211574674c
 keywords:
 - minidriver-supplied halftoning WDK Unidrv
 - customized halftoning WDK Unidrv
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,7 +27,7 @@ To provide customized halftoning capabilities, you must do the following:
 
 The following example defines two color formats and four halftoning methods. The example uses [option constraints](option-constraints.md) to specify which halftoning methods Unidrv should allow a user to select for each color format.
 
-```
+```cpp
 *Feature: ColorMode
 {
     *Option: ColorFormat1
@@ -81,9 +76,9 @@ In the example, both the ColorFormat1 and ColorFormat2 ColorMode options represe
 
 For more information about halftoning, see [Customized Halftoning](customized-halftoning.md).
 
- 
+ 
 
- 
+ 
 
 
 

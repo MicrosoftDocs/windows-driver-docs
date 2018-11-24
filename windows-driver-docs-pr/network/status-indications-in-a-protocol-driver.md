@@ -6,11 +6,7 @@ keywords:
 - protocol drivers WDK networking , status indications
 - NDIS protocol drivers WDK , status indications
 - status indications WDK networking , protocol drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +22,9 @@ A connection-oriented protocol driver must supply a [**ProtocolCoStatusEx**](htt
 
 For a complete list of the possible status indications, see [Status Indications](https://msdn.microsoft.com/library/windows/hardware/ff570879).
 
- 
+ 
 
- 
+ 
 
 
 

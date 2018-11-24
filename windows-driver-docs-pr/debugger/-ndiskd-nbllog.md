@@ -3,11 +3,7 @@ title: ndiskd.nbllog
 description: The ndiskd.nbllog extension displays the log of all NBL (NET_BUFFER_LIST) activity on the system.
 ms.assetid: 59CB6B60-E0B3-435E-A6F6-82A715E87C69
 keywords: ["ndiskd.nbllog Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!ndiskd.nbllog** extension displays the log of all NBL ([**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/windows/hardware/drivers/network/net-buffer-list-structure)) activity on the system.
 
-```
+```console
 !ndiskd.nbllog [-stacks] 
 ```
 
@@ -42,7 +38,7 @@ Remarks
 **Important**  
 **!ndiskd.nbllog** requires NBL tracking to be enabled on the debugee target machine. NBL tracking is not enabled by default in all configurations of Windows. If NBL tracking is not enabled, !ndiskd will give you instructions on how to enable it, as shown in the following snippet.
 
-```
+```console
 0: kd> !ndiskd.nbllog
     This command requires NBL tracking to be enabled on the debugee target
     machine.  (By default, client operating systems have level 1, and servers
@@ -59,7 +55,7 @@ Remarks
     This command requires level 3 or higher.
 ```
 
- 
+ 
 
 The NBL log shows network traffic on the system. [**!ndiskd.netreport**](-ndiskd-netreport.md) parses the NBL tracking log to display this network traffic visually. Therefore, if NBL tracking is not enabled, **!ndiskd.netreport** will not be able to show you this information.
 
@@ -68,7 +64,7 @@ Examples
 
 After you have enabled NBL tracking on the target debugee machine, enter the **!ndiskd.nbllog** command to see the log of all NBL traffic on the system. As shown in the example below, running **!ndiskd.nbllog** with no parameters will limit output to 200 events, which can be bypassed by rerunning the command with the *-force* option. The middle of the output in this example has been excised for brevity.
 
-```
+```console
 0: kd> !ndiskd.nbllog
     NBLs               Processor           Event              Detail            
                                                                      
@@ -119,9 +115,9 @@ For a more detailed description of how to interpret the results of **!ndiskd.nbl
 
 [!ndiskd.nbl -log](https://go.microsoft.com/fwlink/p/?linkid=846176)
 
- 
+ 
 
- 
+ 
 
 
 

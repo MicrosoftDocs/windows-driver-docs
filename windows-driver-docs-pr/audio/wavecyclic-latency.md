@@ -5,11 +5,7 @@ ms.assetid: 6de639c6-ddd5-4013-8d67-00731c328f47
 keywords:
 - WaveCyclic latency WDK audio
 - silence intervals WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ After a period of near starvation, a KMixer stream can contain intervals of sile
 
 The amount of silence written to the DMA buffer is kept fairly small, and if KMixer does succeed in supplying the WaveCyclic port driver with additional data before the silence has been played, that data overwrites the silence in the buffer. In the absence of starvation, the audio device receives a continuous stream of mixed data without intervals of forced silence. When you are debugging your driver, however, you might see your miniport driver's [**IMiniportWaveCyclicStream::Silence**](https://msdn.microsoft.com/library/windows/hardware/ff536721) method being called even though your audio renderer is not starving.
 
- 
+ 
 
- 
+ 
 
 
 

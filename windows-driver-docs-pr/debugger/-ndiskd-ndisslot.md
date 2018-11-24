@@ -3,11 +3,7 @@ title: ndiskd.ndisslot
 description: The **!ndiskd.ndisslot** extension displays the contents of an NDIS per-processor variable.
 ms.assetid: 0EF37FE7-31A1-4A71-9CAC-E2A43F0EEBCF
 keywords: ["ndiskd.ndisslot Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,11 +18,11 @@ ms.localizationpriority: medium
 
 **Note**  Third party network driver developers are not expected to manually use this extension command. You can run it to see the information it displays but you are not able to reuse the details it provides in your driver.
 
- 
+ 
 
 The **!ndiskd.ndisslot** extension displays the contents of an NDIS per-processor variable. If you run this extension with no parameters, !ndiskd will display a list of all NDIS per-processor variables on the system.
 
-```
+```console
 !ndiskd.ndisslot [-handle <x>] [-itemtype <str>] 
 ```
 
@@ -48,7 +44,7 @@ Examples
 
 Run the **!ndiskd.ndisslot** extension with no parameters to see a list of all per-processor slot variables. The following example output has excised the middle portion of the list for brevity.
 
-```
+```console
 1: kd> !ndiskd.ndisslot
     Per-processor slot                     Summary of contents                  
     ffffc804ae060000 - NDrw                All values are zero
@@ -85,7 +81,7 @@ Run the **!ndiskd.ndisslot** extension with no parameters to see a list of all p
 
 Clicking on one of the handles for the per-processor slot variables will show you the details for that variable. The following example uses the handle ffffc804ae060920 for the tsR variable, from the previous example.
 
-```
+```console
 1: kd> !ndiskd.ndisslot ffffc804ae060920
     Processor          Slot value                                               
     00                 00000006
@@ -107,9 +103,9 @@ Clicking on one of the handles for the per-processor slot variables will show yo
 
 [**!ndiskd.help**](-ndiskd-help.md)
 
- 
+ 
 
- 
+ 
 
 
 

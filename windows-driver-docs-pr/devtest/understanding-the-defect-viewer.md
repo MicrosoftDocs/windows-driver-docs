@@ -5,11 +5,7 @@ ms.assetid: 2b839e7f-770f-4bf4-96e1-98524768f4f0
 keywords:
 - Static Driver Verifier Report WDK , Defect Viewer
 - Defect Viewer WDK Static Driver Verifier
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +30,9 @@ SDV automatically coordinates the display in the three Defect Viewer windows. Fo
 
 Similarly, if the source code element that is selected in the **Trace Tree** or **Source Code** panes changes the values of variables that SDV monitors, those changes automatically appear in the **State** pane.
 
- 
+ 
 
- 
+ 
 
 
 

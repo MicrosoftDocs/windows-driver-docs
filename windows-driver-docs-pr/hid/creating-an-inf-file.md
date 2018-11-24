@@ -1,6 +1,5 @@
 ---
 title: Creating an INF File
-author: windows-driver-content
 description: Creating an INF File
 ms.assetid: c45fb42c-f0d6-4ab8-9a19-4bbf98c4cf8c
 keywords:
@@ -9,11 +8,7 @@ keywords:
 - VJoyD WDK HID , INF files
 - INF files WDK joysticks
 - INF files WDK joysticks , creating
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,9 +32,9 @@ The INF file contains the elements described in the following topics:
 
 [Setting Up AddReg Entries](setting-up-addreg-entries.md)
 
- 
+ 
 
- 
+ 
 
 
 

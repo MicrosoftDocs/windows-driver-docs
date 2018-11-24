@@ -1,6 +1,5 @@
 ---
 title: Error Recovery
-author: windows-driver-content
 description: Error Recovery
 ms.assetid: 5710625f-bb65-41d4-a5c9-d61a48178859
 keywords:
@@ -11,11 +10,7 @@ keywords:
 - platform-specific hardware error driver plug-ins WDK WHEA , error recovery
 - PSHED plug-ins WDK WHEA , error recovery
 - error recovery WDK WHEA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +21,9 @@ During the handling of a recoverable hardware error, the operating system attemp
 
 For more information about how to implement a PSHED plug-in that participates in error recovery, see [Participating in Error Recovery](participating-in-error-recovery.md).
 
- 
+ 
 
- 
+ 
 
 
 

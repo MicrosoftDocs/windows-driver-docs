@@ -5,11 +5,7 @@ ms.assetid: 7a3740aa-53fc-4219-9606-edc0e9bd9879
 keywords:
 - warnings listed WDK PREfast for Drivers
 - errors listed WDK PREfast for Drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,9 +20,9 @@ Functions in a paged section must have exactly one instance of the PAGED\_CODE o
 
 PREfast for Drivers uses these macros when **\#pragma alloc\_text** or **\#pragma code\_seg** is used to move a function into a pageable code section. The Code Analysis tool infers that a section is pageable when the section name begins with PAGE. For more information, see [Warning C28170](28170-pageable-code-macro-not-found.md).
 
- 
+ 
 
- 
+ 
 
 
 

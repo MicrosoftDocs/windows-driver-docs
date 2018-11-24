@@ -11,11 +11,7 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -57,7 +53,7 @@ The following table describes a constant that is valid with Windows Vista and la
 </tbody>
 </table>
 
- 
+ 
 
 The following table describes the constants that are valid with Windows Vista and Windows XP.
 
@@ -96,7 +92,7 @@ The following table describes the constants that are valid with Windows Vista an
 </tbody>
 </table>
 
- 
+ 
 
 The values DUPLEX and FRONT\_ONLY are mutually exclusive--set one or the other, but not both.
 
@@ -139,7 +135,7 @@ The following table describes the constants that are valid with Windows XP but a
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -161,14 +157,14 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**WIA\_DPS\_DOCUMENT\_HANDLING\_SELECT**](wia-dps-document-handling-select.md)
 
- 
+ 
 
- 
+ 
 
 
 

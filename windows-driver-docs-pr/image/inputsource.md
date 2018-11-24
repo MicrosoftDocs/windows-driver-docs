@@ -9,11 +9,7 @@ api_name:
 - wscn InputSource wscn MustHonor "" wscn Override "" wscn UsedDefault ""
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The optional **InputSource** element specifies the source of the original docume
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:InputSource wscn:MustHonor=""                  wscn:Override=""                  wscn:UsedDefault=""
   MustHonor = "xs:string"
   Override = "xs:string"
@@ -113,7 +109,7 @@ Required. One of the following values:
 </tbody>
 </table>
 
- 
+ 
 
 ## Child elements
 
@@ -134,10 +130,10 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>DocumentFinalParameters</strong>](documentfinalparameters.md)</p></td>
+<td><p><a href="documentfinalparameters.md" data-raw-source="[&lt;strong&gt;DocumentFinalParameters&lt;/strong&gt;](documentfinalparameters.md)"><strong>DocumentFinalParameters</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>DocumentParameters</strong>](documentparameters.md)</p></td>
+<td><p><a href="documentparameters.md" data-raw-source="[&lt;strong&gt;DocumentParameters&lt;/strong&gt;](documentparameters.md)"><strong>DocumentParameters</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -151,7 +147,7 @@ The WSD Scan Service can specify the optional **Override** and **UsedDefault** a
 
 You can both extend and subset the allowed values for this element.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**CreateScanJobRequest**](createscanjobrequest.md)
@@ -160,9 +156,9 @@ You can both extend and subset the allowed values for this element.
 
 [**DocumentParameters**](documentparameters.md)
 
- 
+ 
 
- 
+ 
 
 
 

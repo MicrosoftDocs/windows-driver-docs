@@ -10,6 +10,7 @@ api_name:
 api_type:
 - NA
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # icon XML Element
@@ -21,11 +22,11 @@ The **icon** XML element specifies the source file for a custom icon that DPInst
 
 **Note**  Prior to Windows Vista, DPInst added the entry for the driver package to **Add or Remove Programs** in Control Panel.
 
- 
+ 
 
 ### Element Tag
 
-```
+```cpp
 <icon>
 ```
 
@@ -43,7 +44,7 @@ None
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Parent elements</strong></p></td>
-<td align="left"><p>[<strong>dpinst</strong>](dpinst-xml-element.md) or [<strong>language</strong>](language-xml-element.md)</p></td>
+<td align="left"><p><a href="dpinst-xml-element.md" data-raw-source="[&lt;strong&gt;dpinst&lt;/strong&gt;](dpinst-xml-element.md)"><strong>dpinst</strong></a> or <a href="language-xml-element.md" data-raw-source="[&lt;strong&gt;language&lt;/strong&gt;](language-xml-element.md)"><strong>language</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Child elements</strong></p></td>
@@ -60,7 +61,7 @@ None
 </tbody>
 </table>
 
- 
+ 
 
 ### <a href="" id="comments"></a>Remarks
 
@@ -68,7 +69,7 @@ An **icon** element is customized, but not localized, if it is a child element o
 
 The following code example demonstrates an **icon** element that specifies Data\\Small.ico as the source of a custom icon that DPInst displays on the DPInst EULA page. The text that specifies the custom icon file is shown in bold font style.
 
-```
+```cpp
 <dpinst>
   ...
   <icon>Data\Eula.ico</icon>
@@ -85,9 +86,9 @@ If an **icon** element is not specified, DPInst displays a default icon. The pos
 
 [**language**](language-xml-element.md)
 
- 
+ 
 
- 
+ 
 
 
 

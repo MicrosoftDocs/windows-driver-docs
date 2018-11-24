@@ -1,16 +1,11 @@
 ---
 title: Setting and Clearing the Communication Mode on a Parallel Port
-author: windows-driver-content
 description: Setting and Clearing the Communication Mode on a Parallel Port
 ms.assetid: a22cdeef-4ae7-49f8-b0b5-a4d68feb4235
 keywords:
 - parallel ports WDK , communication modes
 - communication modes WDK parallel ports
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,9 +33,9 @@ A client must first clear the communication mode before it can set a new communi
 
 To determine the current mode, a client can use the IOCTL\_INTERNAL\_GET\_PARALLEL\_PNP\_INFO request, which returns a PARALLEL\_PNP\_INFORMATION structure that contains information about the current communication mode.
 
- 
+ 
 
- 
+ 
 
 
 

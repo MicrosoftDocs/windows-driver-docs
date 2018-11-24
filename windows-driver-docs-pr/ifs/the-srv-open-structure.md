@@ -1,6 +1,5 @@
 ---
 title: The SRV_OPEN Structure
-author: windows-driver-content
 description: The SRV_OPEN Structure
 ms.assetid: 6cf4c6f6-a21f-4919-92b5-2403b650d8d0
 keywords:
@@ -14,11 +13,7 @@ keywords:
 - file structures WDK RDBSS
 - structures WDK RDBSS
 - connection information WDK RDBSS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -52,9 +47,9 @@ A SRV\_OPEN structure contains the following:
 
 -   Additional storage requested by the network mini-redirector or the creator of the SRV\_OPEN structure
 
- 
+ 
 
- 
+ 
 
 
 

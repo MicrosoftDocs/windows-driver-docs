@@ -12,11 +12,7 @@ keywords:
 - interleaved video displays WDK video port extensions
 - interlaced video WDK video port extensions
 - deinterlacing WDK video port extensions
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +26,9 @@ Many methods exist for deinterlacing. Professional television producers use devi
 
 Two simple methods are available for displaying interlace on a progressive computer monitor: [bob](bob-method.md) and [weave](weave-method.md). These terms are used here for simplicity, because computer and television industry terms are different.
 
- 
+ 
 
- 
+ 
 
 
 

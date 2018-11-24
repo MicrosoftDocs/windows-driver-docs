@@ -1,12 +1,7 @@
 ---
 title: IRP_MJ_CREATE
-author: windows-driver-content
 description: Every kernel-mode driver must handle IRP_MJ_CREATE requests in a DispatchCreate or DispatchCreateClose routine.
-ms.author: windowsdriverdev
 ms.date: 08/12/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.assetid: 2947f8dc-2e7d-401e-8014-6140cac6905f
 keywords:
  - IRP_MJ_CREATE Kernel-Mode Driver Architecture
@@ -16,7 +11,7 @@ ms.localizationpriority: medium
 # IRP\_MJ\_CREATE
 
 
-Every kernel-mode driver must handle **IRP\_MJ\_CREATE** requests in a [*DRIVER_DISPATCH*](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) callback function.
+Every kernel-mode driver must handle **IRP\_MJ\_CREATE** requests in a [*DRIVER_DISPATCH*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) callback function.
 
 When Sent
 ---------
@@ -42,7 +37,7 @@ None
 Operation
 ---------
 
-Most device and intermediate drivers set STATUS\_SUCCESS in the I/O status block of the IRP and complete the create request, but drivers can optionally use their [*DRIVER_DISPATCH*](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) callback function to reserve resources for any subsequent I/O requests for that handle. For example, the system serial driver maps its paged-out code and allocates any resources that are necessary to handle subsequent I/O requests for the user-mode thread that is attempting to open the device for input and output.
+Most device and intermediate drivers set STATUS\_SUCCESS in the I/O status block of the IRP and complete the create request, but drivers can optionally use their [*DRIVER_DISPATCH*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) callback function to reserve resources for any subsequent I/O requests for that handle. For example, the system serial driver maps its paged-out code and allocates any resources that are necessary to handle subsequent I/O requests for the user-mode thread that is attempting to open the device for input and output.
 
 Requirements
 ------------
@@ -63,7 +58,7 @@ Requirements
 ## See also
 
 
-[*DRIVER_DISPATCH*](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch)
+[*DRIVER_DISPATCH*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch)
 
 [*DispatchCreateClose*](https://msdn.microsoft.com/library/windows/hardware/ff543270)
 
@@ -71,9 +66,9 @@ Requirements
 
 [**ZwCreateFile**](https://msdn.microsoft.com/library/windows/hardware/ff566424)
 
- 
+ 
 
- 
+ 
 
 
 

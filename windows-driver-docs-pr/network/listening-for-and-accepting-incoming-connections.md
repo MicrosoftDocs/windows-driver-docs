@@ -12,11 +12,7 @@ keywords:
 - SO_CONDITIONAL_ACCEPT
 - accepting connections WDK Winsock Kernel
 - WskAccept
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +23,7 @@ After a Winsock Kernel (WSK) application binds a listening socket to a local tra
 
 The following code example shows how a WSK application can accept an incoming connection by calling the **WskAccept** function.
 
-```
+```C++
 // Prototype for the accept IoCompletion routine
 NTSTATUS
   AcceptComplete(
@@ -48,7 +44,7 @@ NTSTATUS
   PIRP Irp;
   NTSTATUS Status;
 
-  // Get pointer to the socket&#39;s provider dispatch structure
+  // Get pointer to the socket's provider dispatch structure
   Dispatch =
     (PWSK_PROVIDER_LISTEN_DISPATCH)(Socket->Dispatch);
 
@@ -111,7 +107,7 @@ NTSTATUS
     // Get the accepted socket object from the IRP
     Socket = (PWSK_SOCKET)(Irp->IoStatus.Information);
 
-    // Get the accepted socket&#39;s context
+    // Get the accepted socket's context
     AcceptSocketContext = Context;
 
     // Perform the next operation on the accepted socket
@@ -138,7 +134,7 @@ As an alternative to calling the [**WskAccept**](https://msdn.microsoft.com/libr
 
 The following code example shows how a WSK application can accept an incoming connection by the WSK subsystem calling a listening socket's *WskAcceptEvent* event callback function.
 
-```
+```cpp
 // Dispatch table of event callback functions for accepted sockets
 const WSK_CLIENT_CONNECTION_DISPATCH ConnectionDispatch =
 {
@@ -148,9 +144,9 @@ const WSK_CLIENT_CONNECTION_DISPATCH ConnectionDispatch =
 };
 
 // Pool tag used for allocating the socket context
-#define SOCKET_CONTEXT_POOL_TAG &#39;tpcs&#39;
+#define SOCKET_CONTEXT_POOL_TAG 'tpcs'
 
-// A listening socket&#39;s WskAcceptEvent event callback function
+// A listening socket's WskAcceptEvent event callback function
 NTSTATUS WSKAPI
   WskAcceptEvent(
     PVOID SocketContext,
@@ -187,10 +183,10 @@ NTSTATUS WSKAPI
     SocketContext->Socket = AcceptSocket;
     ...
 
-    // Set the accepted socket&#39;s client context
+    // Set the accepted socket's client context
     *AcceptSocketContext = SocketContext;
 
-    // Set the accepted socket&#39;s dispatch table of callback functions
+    // Set the accepted socket's dispatch table of callback functions
     *AcceptSocketDispatch = ConnectionDispatch;
 
     // Perform additional operations on the accepted socket
@@ -218,11 +214,11 @@ If conditional accept mode is enabled on a listening socket, the WSK subsystem f
 
 The following code example shows how a WSK application can inspect an incoming connection request by the WSK subsystem calling the listening socket's *WskInspectEvent* event callback function.
 
-```
+```C++
 // Inspect ID for a pending inspection
 WSK_INSPECT_ID PendingInspectID
 
-// A listening socket&#39;s WskInspectEvent event callback function
+// A listening socket's WskInspectEvent event callback function
 WSK_INSPECT_ACTION WSKAPI
   WskInspectEvent(
     PVOID SocketContext,
@@ -281,7 +277,7 @@ WSK_INSPECT_ACTION WSKAPI
   }
 }
 
-// A listening socket&#39;s WskAbortEvent event callback function
+// A listening socket's WskAbortEvent event callback function
 NTSTATUS WSKAPI
   WskAbortEvent(
     PVOID SocketContext,
@@ -298,9 +294,9 @@ NTSTATUS WSKAPI
 
 If a WSK application determines that it will accept an incoming connection request on a listening socket that has conditional accept mode enabled, the incoming connection will be established and it can be accepted normally by either the application calling to the [**WskAccept**](https://msdn.microsoft.com/library/windows/hardware/ff571109) function or the WSK subsystem calling the socket's [*WskAcceptEvent*](https://msdn.microsoft.com/library/windows/hardware/ff571120) event callback function as described previously.
 
- 
+ 
 
- 
+ 
 
 
 

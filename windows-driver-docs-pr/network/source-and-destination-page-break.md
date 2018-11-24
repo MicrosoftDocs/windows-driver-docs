@@ -12,11 +12,7 @@ keywords:
 - destination page breaks WDK NetDMA
 - page breaks WDK NetDMA
 - NetDMA 2.0 WDK networking , page breaks
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ ms.localizationpriority: medium
 
 **Note**  The NetDMA interface is not supported in Windows 8 and later.
 
- 
+ 
 
 
 
@@ -42,9 +38,9 @@ The second part of the source or destination must start on a page boundary. Ther
 
 Note that the source and destination page breaks are specified separately. And, if both exist, they might break at different points.
 
- 
+ 
 
- 
+ 
 
 
 

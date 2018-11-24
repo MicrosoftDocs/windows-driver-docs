@@ -1,16 +1,11 @@
 ---
 title: Unidrv Capabilities
-author: windows-driver-content
 description: Unidrv Capabilities
 ms.assetid: e715e6c7-32cf-4db1-a6d2-3577824249c1
 keywords:
 - Unidrv, capabilities
 - Unidrv WDK print
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +23,9 @@ The Universal Printer Driver (Unidrv) provides the following capabilities:
 
 -   A single [Unidrv renderer](unidrv-renderer.md) that, along with the GDI graphics engine, converts Microsoft Win32 GDI calls from applications into printer commands that can be sent to the print spooler.
 
- 
+ 
 
- 
+ 
 
 
 

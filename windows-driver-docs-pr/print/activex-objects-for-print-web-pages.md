@@ -1,6 +1,5 @@
 ---
 title: ActiveX Objects for Print Web Pages
-author: windows-driver-content
 description: ActiveX Objects for Print Web Pages
 ms.assetid: 85c37895-542f-4399-bf87-517eaab99a09
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - Web pages WDK printer , ActiveX objects
 - customized print Web pages WDK , ActiveX objects
 - ActiveX objects WDK printer
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -40,9 +35,9 @@ The following list contains a brief description of each interface:
 
 For information about ActiveX and Automation, see the Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

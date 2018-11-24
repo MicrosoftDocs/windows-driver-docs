@@ -6,11 +6,7 @@ keywords:
 - Tracepdb WDK
 - trace message control files WDK
 - TMC files WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,9 +33,9 @@ On systems prior to Windows Vista, you must copy the Dbghelp.dll file from the b
 
 For more information about event tracing, see the Windows SDK documentation. For information about using event tracing in kernel-mode drivers and user-mode applications, see [WPP Software Tracing](wpp-software-tracing.md).
 
- 
+ 
 
- 
+ 
 
 
 

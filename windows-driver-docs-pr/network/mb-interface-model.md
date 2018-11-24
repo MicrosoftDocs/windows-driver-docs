@@ -2,11 +2,7 @@
 title: MB Interface Model
 description: This section provides information for mobile broadband devices that are implemented based on the Mobile Broadband Interface Model (MBIM) specification.
 ms.assetid: B1C6D5F4-63E2-4C46-8038-71B8144AB474
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -64,7 +60,7 @@ These scenarios are discussed in more detail throughout the MB Interface Model t
 </tbody>
 </table>
 
- 
+ 
 
 The MB Interface Model in described further in the following subtopics:
 
@@ -72,9 +68,9 @@ The MB Interface Model in described further in the following subtopics:
 [MB Union Function Descriptors](mb-union-function-descriptors.md)
 [MB Identity Morphing](mb-identity-morphing.md)
 [MB Interface Model Supplement](mb-interface-model-supplement.md)
- 
+ 
 
- 
+ 
 
 
 

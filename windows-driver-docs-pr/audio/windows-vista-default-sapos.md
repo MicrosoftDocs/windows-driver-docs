@@ -6,11 +6,7 @@ keywords:
 - sAPO WDK
 - Enhancements tab WDK
 - default sAPO WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -41,9 +37,9 @@ Windows Vista provides an **Enhancements** tab with the Sound applet on the Cont
 
 [Virtualized Surround Sound over Headphones](virtualized-surround-sound-over-headphones.md)
 
- 
+ 
 
- 
+ 
 
 
 

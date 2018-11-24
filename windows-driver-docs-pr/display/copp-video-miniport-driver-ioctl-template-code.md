@@ -4,11 +4,7 @@ description: COPP Video Miniport Driver IOCTL Template Code
 ms.assetid: 55a77261-016e-4ba6-8cb6-c45171759035
 keywords:
 - IOCTLs WDK COPP
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,7 +18,7 @@ This section applies only to Windows Server 2003 SP1 and later, and Windows XP S
 
 The video miniport driver must implement a [*HwVidStartIO*](https://msdn.microsoft.com/library/windows/hardware/ff567367) function to process the I/O requests that originate in the display driver. The following example code shows only how the video miniport driver processes COPP IOCTLs:
 
-```
+```cpp
 BOOLEAN
 HwVidStartIO(
     PHW_DEVICE_EXTENSION pHwDeviceExtension,
@@ -62,9 +58,9 @@ HwVidStartIO(
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

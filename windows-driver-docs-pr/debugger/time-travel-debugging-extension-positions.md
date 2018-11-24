@@ -1,28 +1,20 @@
 ---
-title: !positions
+title: Time Travel Debugging Extension !positions Command 
 description: The !positions extension displays all the active threads, including their current positions.
 keywords: ["positions Windows Debugging"]
-ms.author: domars
 ms.date: 09/21/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
+![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png) 
 
-> [!NOTE]
-> The information in this topic is preliminary. Updated information will be provided in a later release of the documentation. 
->
-
-
-# ![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png) !positions
+# !positions
 
 
 The **!positions** extension displays all the active threads, including their current positions in the time travel trace.
 
 
-```
+```dbgcmd
 !postions 
 ```
 
@@ -36,7 +28,7 @@ None
 
 This output shows four threads. Thread 3824 is the current thread indicated by **>** in the left column.
 
-```
+```dbgcmd
 0:000> !positions
 >Thread ID=0x3824 - Position: F:0
  Thread ID=0x2684 - Position: A5:0
@@ -59,9 +51,9 @@ This extension only works with time travel traces. For more information about ti
 [Time Travel Debugging - Extension Commands](time-travel-debugging-extension-commands.md)
 
 
- 
+ 
 
- 
+ 
 
 
 

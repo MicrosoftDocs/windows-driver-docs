@@ -1,6 +1,5 @@
 ---
 title: Privileges
-author: windows-driver-content
 description: Privileges
 ms.assetid: a8df1a44-6fb7-4c16-a29d-785d06dd50e4
 keywords:
@@ -15,11 +14,7 @@ keywords:
 - traverse right privileges WDK file systems
 - backup privileges WDK file systems
 - restore privileges WDK file systems
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -61,9 +56,9 @@ The key Windows routines for managing privileges within a file system are:
 
 -   [**SeAppendPrivileges**](https://msdn.microsoft.com/library/windows/hardware/ff554762)--this routine adds enabled privileges to an ACCESS\_STATE structure. Typically, a file system would use the ACCESS\_STATE passed to it during IRP\_MJ\_CREATE processing.
 
- 
+ 
 
- 
+ 
 
 
 

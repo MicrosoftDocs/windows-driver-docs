@@ -1,6 +1,5 @@
 ---
 title: Problems with Logical Operators in GDL Preprocessing
-author: windows-driver-content
 description: Problems with Logical Operators in GDL Preprocessing
 ms.assetid: 8ba1758c-8b8e-4eb2-8625-ffee213025aa
 keywords:
@@ -12,11 +11,7 @@ keywords:
 - NOT operator WDK GDL
 - AND operator WDK GDL
 - OR operator WDK GDL
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,7 +24,7 @@ Logical operators in GDL preprocessor conditionals are not currently supported, 
 
 You might typically use the NOT operator as the following code example shows.
 
-```
+```cpp
 #Ifdef:  symbol
 --do this--
 #Endif: 
@@ -37,7 +32,7 @@ You might typically use the NOT operator as the following code example shows.
 
 However, you should use the following code example instead.
 
-```
+```cpp
 #Ifdef:  symbol
 #Else:
 --do this--
@@ -48,7 +43,7 @@ However, you should use the following code example instead.
 
 You might typically use the AND operator as the following code example shows.
 
-```
+```cpp
 #Ifdef:  (symbolA  *AND* symbolB)
 --do this--
 #Endif: 
@@ -56,7 +51,7 @@ You might typically use the AND operator as the following code example shows.
 
 However, you should use the following code example instead.
 
-```
+```cpp
 #Ifdef:  symbolA
 #Ifdef:  symbolB
 --do this--
@@ -68,7 +63,7 @@ However, you should use the following code example instead.
 
 You might typically use the OR operator as the following code example shows.
 
-```
+```cpp
 #Ifdef:  (symbolA  *OR* symbolB)
 --do this--
 #Endif: 
@@ -76,7 +71,7 @@ You might typically use the OR operator as the following code example shows.
 
 However, you should use the following code example instead.
 
-```
+```cpp
 #Ifdef:  symbolA
 #Define: TempSymbol
 #Elseifdef: symbolB
@@ -88,9 +83,9 @@ However, you should use the following code example instead.
 #Undefine: TempSymbol
 ```
 
- 
+ 
 
- 
+ 
 
 
 

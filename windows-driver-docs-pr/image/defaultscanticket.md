@@ -9,11 +9,7 @@ api_name:
 - wscn DefaultScanTicket
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,7 +19,7 @@ ms.localizationpriority: medium
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:DefaultScanTicket>
   child elements
 </wscn:DefaultScanTicket>
@@ -48,10 +44,10 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>DocumentParameters</strong>](documentparameters.md)</p></td>
+<td><p><a href="documentparameters.md" data-raw-source="[&lt;strong&gt;DocumentParameters&lt;/strong&gt;](documentparameters.md)"><strong>DocumentParameters</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>JobDescription</strong>](jobdescription.md)</p></td>
+<td><p><a href="jobdescription.md" data-raw-source="[&lt;strong&gt;JobDescription&lt;/strong&gt;](jobdescription.md)"><strong>JobDescription</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -70,10 +66,10 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ElementChanges</strong>](elementchanges.md)</p></td>
+<td><p><a href="elementchanges.md" data-raw-source="[&lt;strong&gt;ElementChanges&lt;/strong&gt;](elementchanges.md)"><strong>ElementChanges</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>ElementData Element for ScannerElements</strong>](elementdata-for-scannerelements-element.md)</p></td>
+<td><p><a href="elementdata-for-scannerelements-element.md" data-raw-source="[&lt;strong&gt;ElementData Element for ScannerElements&lt;/strong&gt;](elementdata-for-scannerelements-element.md)"><strong>ElementData Element for ScannerElements</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -90,7 +86,7 @@ Examples
 
 The following code example shows a sample DefaultScanTicket.
 
-```
+```xml
 <wscn:DefaultScanTicket>
   <wscn:JobDescription>
     <wscn:JobName>Scan Job</wscn:JobName>
@@ -137,7 +133,7 @@ The following code example shows a sample DefaultScanTicket.
 </wscn:DefaultScanTicket>
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**CreateScanJobRequest**](createscanjobrequest.md)
@@ -154,9 +150,9 @@ The following code example shows a sample DefaultScanTicket.
 
 [**ScanTicket**](scanticket.md)
 
- 
+ 
 
- 
+ 
 
 
 

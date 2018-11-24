@@ -1,6 +1,5 @@
 ---
 title: Repudiation
-author: windows-driver-content
 description: Repudiation
 ms.assetid: ccb50b6c-9e7d-4a90-a049-6c62b1b57376
 keywords:
@@ -9,11 +8,7 @@ keywords:
 - repudiation WDK file systems
 - ownership WDK file systems
 - denying performed operation WDK file systems
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +22,9 @@ The concept of repudiation is that a user might perform a particular operation, 
 
 Additionally, the operating system can assign ownership of objects to specific security identifiers. The ownership information cannot be changed without appropriate privileges (**SeTakeOwnershipPrivilege**) in order to ensure that ownership of specific objects can be tracked. Object ownership provides another form of protection against repudiation.
 
- 
+ 
 
- 
+ 
 
 
 

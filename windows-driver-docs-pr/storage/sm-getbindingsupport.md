@@ -12,6 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # SM\_GetBindingSupport function
@@ -24,10 +25,10 @@ Syntax
 
 ```ManagedCPlusPlus
 void SM_GetBindingSupport(
-   [in, HBAType("HBA_WWN")] uint8                 HbaPortWWN[8],
-   [in, HBAType("HBA_WWN")] uint8                 DomainPortWWN[8],
-   [out, HBA_STATUS_QUALIFIERS] HBA_STATUS        HBAStatus,
-   [out, HBAType("SMHBA_BIND_CAPABILITY")] uint32 Flags
+   [in, HBAType("HBA_WWN")] uint8                 HbaPortWWN[8],
+   [in, HBAType("HBA_WWN")] uint8                 DomainPortWWN[8],
+   [out, HBA_STATUS_QUALIFIERS] HBA_STATUS        HBAStatus,
+   [out, HBAType("SMHBA_BIND_CAPABILITY")] uint32 Flags
 );
 ```
 
@@ -85,9 +86,9 @@ Requirements
 
 [**SM\_GetBindingSupport\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff566233)
 
- 
+ 
 
- 
+ 
 
 
 

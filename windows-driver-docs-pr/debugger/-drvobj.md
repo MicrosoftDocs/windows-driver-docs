@@ -3,11 +3,7 @@ title: drvobj
 description: The drvobj extension displays detailed information about a DRIVER_OBJECT.
 ms.assetid: 98f3cacf-311c-4000-8336-4964cc2cb9b0
 keywords: ["drvobj Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,9 +18,9 @@ ms.localizationpriority: medium
 
 The **!drvobj** extension displays detailed information about a DRIVER\_OBJECT.
 
-```
+```dbgcmd
 !drvobj DriverObject [Flags] 
-```
+```dbgcmd
 
 ## <span id="ddk__drvobj_dbg"></span><span id="DDK__DRVOBJ_DBG"></span>Parameters
 
@@ -63,7 +59,7 @@ Lists with detailed information the device objects owned by the driver (requires
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -80,7 +76,7 @@ This extension command will display a list of all device objects created by a sp
 
 The following is an example for the Symbios Logic 810 SCSI miniport driver:
 
-```
+```dbgcmd
 kd> bp DriverEntry          //  breakpoint at DriverEntry
 
 kd> g
@@ -99,9 +95,9 @@ Device Object list:
 
 You can also use [**!devobj 809d50d0**](-devobj.md) to get information about the device object.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,11 +3,7 @@ title: Kernel-Mode Driver Framework Debugging
 description: Kernel-Mode Driver Framework Debugging
 ms.assetid: bec840f8-b500-464f-8e49-53f03f34aa6a
 keywords: ["Kernel-Mode Driver Framework debugging", "Windows Driver Foundation"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,13 +20,13 @@ These extensions can be used on Microsoft Windows XP and later operating systems
 
 **Note**  When you create a new KMDF or UMDF driver, you must select a driver name that has 32 characters or less. This length limit is defined in wdfglobals.h. If your driver name exceeds the maximum length, your driver will fail to load.
 
- 
+ 
 
 To use this extension library, you must load the library into your debugger. For information about how to load extension libraries into a debugger, see [Loading Debugger Extension DLLs](loading-debugger-extension-dlls.md).
 
- 
+ 
 
- 
+ 
 
 
 

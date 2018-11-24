@@ -2,11 +2,7 @@
 title: Making the Most of TAEF
 description: Making the Most of TAEF
 ms.assetid: DCB06C5A-DF2C-4e1c-A297-C9AA5496D162
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,7 +20,7 @@ There may only be one assembly level setup and cleanup method per assembly, one 
 
 If exceptions are enabled (the default case), the execution of any method is terminated on the first Verify call that fails. If you have explicitly disabled exception-based Verify calls (see the Verify section in Authoring Tests for details), you will need to have explicit conditional statements to govern the control flow after a Verify call fails.
 
-In the case where the failure happens in a Setup method (either by way of exception based verify failure or by setup explicitly returning a failure), the tests that were to follow are considered "Blocked" and logged as such. For example, if your Class level Setup method fails, all the test methods in the Class are considered "Blocked" and each of them will be logged as such.
+In the case where the failure happens in a Setup method (either by way of exception based verify failure or by setup explicitly returning a failure), the tests that were to follow are considered "Blocked" and logged as such. For example, if your Class level Setup method fails, all the test methods in the Class are considered "Blocked" and each of them will be logged as such. In addition to that, the Cleanup method won't be invoked if the failure happens in a Setup method.
 
 ## <span id="Test_Method"></span><span id="test_method"></span><span id="TEST_METHOD"></span>Test Method
 
@@ -38,9 +34,9 @@ Similarly, if you have a VERIFY (depends on the return type and what determines 
 
 Metadata lookup is hierarchical. This means if your select statement is **/select:"@Priority=2"**, and if your TestMethod does not specify Priority, TAEF will look up at the class that contains it. If the Class level metadata does not specify it, TAEF looks up at the assembly level.
 
-So, if you want all or most of the tests in your class to have the same "Priority", or say "Owner, you can get by by just specifying it at the class level. For the one or few tests that are an exception to this rule, you can explicitly provide the metadata at the "TestMethod" level. See the following test for details:
+So, if you want all or most of the tests in your class to have the same "Priority", or say "Owner, you can get that by just specifying it at the class level. For the one or few tests that are an exception to this rule, you can explicitly provide the metadata at the "TestMethod" level. See the following test for details:
 
-```
+```cpp
 1    namespace WEX { namespace UnitTests { namespace Samples
 2    {
 3        //
@@ -103,9 +99,9 @@ NOTE: For managed tests, the authoring is done similarly. Module level is the sa
 
 In case of table based data-driven tests you can take this a step further and override test level metadata by specifying it at the Row level. See [Metadata Overriding Data Driven Test Example](metadata-overriding-data-driven-test-example.md) for details.
 
- 
+ 
 
- 
+ 
 
 
 

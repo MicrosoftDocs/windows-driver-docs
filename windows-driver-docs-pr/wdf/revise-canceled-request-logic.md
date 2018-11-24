@@ -1,13 +1,8 @@
 ---
 title: Revise Canceled Request Logic
-author: windows-driver-content
 description: Revise Canceled Request Logic
 ms.assetid: 8246826A-BDBD-4A9B-9FFC-B813033E0FDC
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,9 +15,9 @@ The WDF queuing mechanism greatly simplifies cancellation. If a request is cance
 
 For more information, see [Canceling I/O Requests](canceling-i-o-requests.md).
 
- 
+ 
 
- 
+ 
 
 
 

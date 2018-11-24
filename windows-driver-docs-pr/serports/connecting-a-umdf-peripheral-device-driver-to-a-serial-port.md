@@ -1,13 +1,8 @@
 ---
 title: Connecting a UMDF Peripheral Driver to a Serial Port
-author: windows-driver-content
 description: The UMDF driver for a peripheral device on a SerCx2-managed serial port requires certain hardware resources to operate the device. Included in these resources is the information that the driver needs to open a logical connection to the serial port.
 ms.assetid: 75FC5E79-59E9-4C07-9119-A4FE81CC318E
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +22,7 @@ For more information about this directive, see [Specifying WDF Directives in INF
 
 The following code example shows how the driver's **OnPrepareHardware** method obtains the connection ID from the *pWdfResourcesTranslated* parameter.
 
-```
+```cpp
 BOOLEAN fConnectIdFound = FALSE;
 BOOLEAN fDuplicateFound = FALSE;
 LARGE_INTEGER connectionId = 0;
@@ -99,7 +94,7 @@ for (ULONG ix = 0; ix < resourceCount; ix++)
 
 The preceding code example copies the connection ID for the serially connected peripheral device into a variable named `connectionId`. The following code example shows how to incorporate the connection ID into a device path name that can be used to identify the serial controller that the peripheral device is connected to.
 
-```
+```cpp
 WCHAR szTargetPath[100];
 HRESULT hres;
 
@@ -120,7 +115,7 @@ if (FAILED(hres))
 
 The preceding code example writes the device path name for the serial controller into the `szTargetPath` array. The following code example uses this path name to open a file handle to the serial controller.
 
-```
+```cpp
 UMDF_IO_TARGET_OPEN_PARAMS openParams;
 
 openParams.dwShareMode = 0;
@@ -144,7 +139,7 @@ To send an I/O control request to the serial controller, the driver first calls 
 
 In the following code example, the peripheral driver sends an I/O control request to the serial controller.
 
-```
+```cpp
 HRESULT hres;
 IWDFMemory *pInputMemory = NULL;
 
@@ -228,9 +223,9 @@ The preceding code example does the following:
 5.  The **Send** method sends the formatted write request to the serially connected peripheral device. The `Flags` variable indicates whether the write request is to be sent synchronously or asynchronously.
 6.  If the request is sent synchronously, the [**IWDFIoRequest::DeleteWdfObject**](https://msdn.microsoft.com/library/windows/hardware/ff560210) method deletes both the I/O request object pointed to by `pWdfIoRequest` and the child object pointed to by `pInputMemory`. The **IWDFIoRequest** interface inherits this method from the [**IWDFObject**](https://msdn.microsoft.com/library/windows/hardware/ff560200) interface. If the request is sent asynchronously, the call to the **DeleteWdfObject** method should occur later, in the driver's **OnCompletion** method.
 
- 
+ 
 
- 
+ 
 
 
 

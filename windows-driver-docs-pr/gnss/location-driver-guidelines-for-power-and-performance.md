@@ -1,13 +1,8 @@
 ---
 title: Location driver guidelines for power and performance
-author: windows-driver-content
 description: The following sections describe guidelines to ensure that your location driver conserves power and provides data efficiently.
 ms.assetid: 81B9A3A1-D273-48C8-A808-CDB1533A1B6A
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -41,7 +36,7 @@ The following table provides another view of the various input combinations and 
 | Yes           | On          | &gt;120 seconds  | Any               | Off        | Ready         | D3          |
 | Yes           | On          | &gt;120 seconds  | Any               | On         | Ready         | D0          |
 
- 
+ 
 
 The [Sensors Geolocation Driver Sample](sensors-geolocation-driver-sample.md) in the WDK provides an example of a driver that tracks the number of connected clients and the radio state.
 
@@ -65,7 +60,7 @@ If any app requests DESIRED\_ACCURACY\_HIGH, the sensor should deliver the highe
 
 ### Detecting Idle States
 
-Your driver should detect an idle state and enter a low-power state. For example, an idle state may occur when the location of a GPS device is not changing, there are no pending I/O requests, or data is not available. If your GPS or GNSS device is implemented over USB, it must support selective suspend. See [Supporting Idle Power-Down in UMDF-based Drivers](http://msdn.microsoft.com/library/windows/hardware/ff561211.aspx) for more info.
+Your driver should detect an idle state and enter a low-power state. For example, an idle state may occur when the location of a GPS device is not changing, there are no pending I/O requests, or data is not available. If your GPS or GNSS device is implemented over USB, it must support selective suspend. See [Supporting Idle Power-Down in UMDF-based Drivers](https://msdn.microsoft.com/library/windows/hardware/ff561211.aspx) for more info.
 
 ### Position Injection for GPS and GNSS
 
@@ -77,21 +72,21 @@ If the GNSS driver does not get a position from the Sensor API within 15 seconds
 
 **Important**  A persistent connection to the Windows Location Provider (or any other sensor through the Sensor API) should not be kept open.
 
- 
+ 
 
 **Important**  Do not instantiate [**ILocation**](https://msdn.microsoft.com/library/windows/desktop/dd317674) to get data from other location sensors. Instead, use the Sensor API ([**ISensorManager**](https://msdn.microsoft.com/library/windows/desktop/dd318946)).
 
- 
+ 
 
 **Note**  Sensors should not get data from location sensors of the same type. For instance, a triangulation sensor should not use data from other triangulation sensors.
 
- 
+ 
 
 To access triangulation sensors, call [**ISensorManager::GetSensorByType**](https://msdn.microsoft.com/library/windows/desktop/dd318866) with type SENSOR\_TYPE\_LOCATION\_TRIANGULATION. This will return all triangulation sensors, including the Windows Location Provider that is built into Windows 8. Your GPS driver needs to be able to handle anywhere from zero sensors returned to multiple sensors. See [Retrieving a Sensor Object](https://msdn.microsoft.com/library/windows/desktop/dd318960) for more information on the use of **GetSensorsByType**.
 
 **Note**  The Windows Location Provider does not provide any guarantee of accuracy or availability.
 
- 
+ 
 
 The use of the Sensor API for sensor-to-sensor communication to enable location fusion (for example, the use of accelerometer or gyro magnetometer data to estimate physical location) is not supported.
 

@@ -8,11 +8,7 @@ keywords:
 - testing drivers WDK , tools
 - system crash testing WDK
 - crash testing WDK
-ms.author: windowsdriverdev
 ms.date: 06/28/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +27,9 @@ ms.localizationpriority: medium
 - [Tools for Debugging Drivers](tools-for-debugging-drivers.md)
  
 - [Tools for Device Metadata Packages](tools-for-device-metadata-packages.md)
- 
+ 
 
- 
+ 
 
 
 

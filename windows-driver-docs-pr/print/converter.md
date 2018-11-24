@@ -1,13 +1,8 @@
 ---
 title: Converter
-author: windows-driver-content
 description: Converter
 ms.assetid: eadbbaf5-3fe3-484f-b3f1-3d543ddc817f
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -55,11 +50,11 @@ The TCP/IP Converter construct enables you to extend the [bidi communications](b
 </tbody>
 </table>
 
- 
+ 
 
 **Note**   A network device that supports the SNMP protocol can be the host for different subdevices, such as Processor, Network, Printer, and Disk Storage. The MIB tables that are implemented in network printers have entries that are indexed by device indexes. To retrieve data from the MIB table (such as the name of an input bin), the query must have a device index that correctly identifies the subdevice. The standard TCP/IP port monitor allows the device index to be manually configured through the port configuration UI. A bidi extension with the **deviceIndex** attribute set to **TRUE** generates an OID with the appropriate device index that is obtained from the port configuration UI. In addition, if the Converter construct is contained in a Property instance and the **deviceIndex** attribute is missing or set to **FALSE**, the OID will have a zero index appended to its end.
 
- 
+ 
 
 The following MIB data types are supported by the conversion routines:
 
@@ -110,13 +105,13 @@ Each Converter construct will include one or more Conversion elements to define 
 </tbody>
 </table>
 
- 
+ 
 
 ### <a href="" id="code-example"></a> Code Example
 
 The following code example extends the bidi communications schema by adding new properties and Converter constructs.
 
-```
+```cpp
 <Property name="Printer">
   <Property name="Layout">
     <Property name="InputBins">
@@ -151,7 +146,7 @@ The following code example extends the bidi communications schema by adding new 
 
 The preceding example results in the following queries.
 
-```
+```cpp
 \Printer.Layout.InputBins.Bin###:BinType
 \Printer.Layout.Orientation:CurrentValue
 \Printer.Custom.HostResourceMIB:InterfaceName
@@ -163,9 +158,9 @@ Because the Converter construct for `CurrentValue `is contained in a Property in
 
 The Converter construct for `InterfaceName` is contained in a Property instance, so a trailing zero automatically being appended to the OID.
 
- 
+ 
 
- 
+ 
 
 
 

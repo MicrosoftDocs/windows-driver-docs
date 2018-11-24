@@ -4,11 +4,7 @@ description: Alpha-Blend Data Loading Set
 ms.assetid: 87f33411-be5d-4148-986b-8b7136ed5351
 keywords:
 - alpha-blend data loading set WDK DirectX VA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,9 +16,9 @@ ms.localizationpriority: medium
 
 The minimal interoperability configuration set for alpha-blend data loading consists of all defined values of the **bConfigDataType** member of the [**DXVA\_ConfigAlphaLoad**](https://msdn.microsoft.com/library/windows/hardware/ff563129) structure.
 
- 
+ 
 
- 
+ 
 
 
 

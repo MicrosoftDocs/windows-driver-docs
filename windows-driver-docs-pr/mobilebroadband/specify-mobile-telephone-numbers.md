@@ -2,11 +2,7 @@
 title: Specify mobile telephone numbers
 description: Specify mobile telephone numbers
 ms.assetid: 3b7037c5-4ad6-4285-a9dd-05955621d149
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -39,7 +35,7 @@ The following table is an example:
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="SMS_short_codes"></span><span id="sms_short_codes"></span><span id="SMS_SHORT_CODES"></span>SMS short codes
 
@@ -51,9 +47,9 @@ SMS short codes that have short phone numbers that are four to six digits long a
 
 [Send SMS by using the text-mode interface](send-sms-by-using-the-text-mode-interface.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -5,11 +5,7 @@ ms.assetid: E62906AB-CE32-4b07-B7DB-F523FFE4E6C2
 keywords:
 - device installations WDK , general guidelines
 - driver installations WDK , general guidelines
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +26,9 @@ To provide the best possible user experience, use the following guidelines to de
 
 -   Do not make assumptions about the location, format, or meaning of registry keys or values. For more information about registry keys and trees, see [Registry Trees and Keys for Devices and Drivers](registry-trees-and-keys.md).
 
- 
+ 
 
- 
+ 
 
 
 

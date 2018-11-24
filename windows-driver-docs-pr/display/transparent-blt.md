@@ -10,11 +10,7 @@ keywords:
 - blt WDK DirectDraw , transparent
 - color keys WDK DirectDraw
 - transparent blts WDK DirectDraw
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,9 +28,9 @@ An example of a partially supported transparent blt is a display card that requi
 
 Once the alpha mask is built, it is compared to the source surface. Everything that is not set on the alpha mask is copied to the destination surface. This accomplishes the same effect as a source color key, but requires a mask to be built first, rather than comparing and copying at the same time. The mask must be rebuilt any time the color key is set. It also must be checked whenever a blt occurs because a color key override can be specified at that time. When the application's **Blt** function is called, check that the color key override (the only color key passed to the blt) is the same as the color key that is set on the surface. If they are the same, it is not really an override and the mask does not need to be rebuilt. If they are different, then the mask must be rebuilt. (The driver's [*DdBlt*](https://msdn.microsoft.com/library/windows/hardware/ff549205) function always sees the color key as an override.)
 
- 
+ 
 
- 
+ 
 
 
 

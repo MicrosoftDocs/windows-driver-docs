@@ -5,11 +5,7 @@ ms.assetid: d8720084-460e-4b62-90de-abfd96cd6364
 keywords:
 - network drivers WDK , IRQLs
 - IRQLs WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,9 +21,9 @@ The IRQL at which a driver function runs affects which NDIS functions it can cal
 
 Any driver function that shares resources with the driver's interrupt service routine (ISR) must be able to raise its IRQL to DIRQL to prevent race conditions. NDIS provides such a mechanism.
 
- 
+ 
 
- 
+ 
 
 
 

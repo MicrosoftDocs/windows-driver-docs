@@ -1,13 +1,8 @@
 ---
 title: Extended camera controls
-author: windows-driver-content
 description: Extended controls use the KSPROPERTY mechanism to expose camera controls to the application.
 ms.assetid: B480C007-7DCA-4CFB-9169-BE2D0B2D2137
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -41,7 +36,7 @@ Some of the controls are exposed to applications as asynchronous controls and ot
 
 These extended controls are part of the following KS property set defined in ksmedia.h:
 
-```
+```cpp
 #define STATIC_KSPROPERTYSETID_ExtendedCameraControl \
      0x1CB79112, 0xC0D2, 0x4213, 0x9C, 0xA6, 0xCD, 0x4F, 0xDB, 0x92, 0x79, 0x72
 DEFINE_GUIDSTRUCT("1CB79112-C0D2-4213-9CA6-CD4FDB927972", KSPROPERTYSETID_ExtendedCameraControl);
@@ -59,7 +54,7 @@ Once user mode component has obtained the metadata buffer requirements from the 
 
 The [**KSSTREAM\_METADATA\_INFO**](https://msdn.microsoft.com/library/windows/hardware/dn936959) structure, along with the following flag, is used to send the metadata buffer to the driver.
 
-```
+```cpp
 #define KSSTREAM_HEADER_OPTIONSF_METADATA           0x00001000
 ```
 
@@ -95,7 +90,7 @@ The following IMFAttributes are defined in **mfapi.h**. These are required by th
 | **MF\_CAPTURE\_METADATA\_FACEROIS**         | Blob      |
 | **MF\_CAPTURE\_METADATA\_FRAME\_RAWSTREAM** | IUnknown  |
 
- 
+ 
 
 The **MF\_CAPTURE\_METADATA\_FRAME\_RAWSTREAM** IMFAttributes are created and attached to **MFSampleExtension\_CaptureMetadata** by the DevProxy, which contains a pointer to the IMFMediaBuffer interface associated with the raw metadata buffer (**KSSTREAM\_METADATA\_INFO.Data**). When the MFT0 receives an IMFSample, it gets the raw metadata buffer from the **MF\_CAPTURE\_METADATA\_FRAME\_RAWSTREAM** and parses any additional custom metadata items such as focus state and converts them into corresponding IMFAttributes defined above and attaches them to the **MFSampleExtension\_CaptureMetadata** attribute bag.
 
@@ -154,7 +149,7 @@ The MFT0 parses the metadata buffer provided by the driver and attaches the requ
 | **MFSampleExtension\_PhotoThumbnail**          | **IUnknown** (IMFMediaBuffer) |
 | **MFSampleExtension\_PhotoThumbnailMediaType** | **IUnknown** (IMFMediaType)   |
 
- 
+ 
 
 **Mandatory metadata attributes**
 
@@ -187,7 +182,7 @@ The MFT0 parses the metadata buffer provided by the driver and attaches the requ
 <tr class="odd">
 <td><strong>MF_CAPTURE_METADATA_EXPOSURE_COMPENSATION</strong></td>
 <td><strong>Blob</strong></td>
-<td>This attribute contains an EV compensation step flag and an EV compensation value in units of the step that was applied to the driver when the photo was captured. The [<strong>CapturedMetadataExposureCompensation</strong>](https://msdn.microsoft.com/library/windows/hardware/dn897242) data structure describes the blob format for this attribute only. The metadata item structure format for EV compensation (<strong>KSCAMERA_METADATA_ITEMHEADER</strong> + EV compensation metadata payload) is provided by the driver and must be 8 byte aligned.</td>
+<td>This attribute contains an EV compensation step flag and an EV compensation value in units of the step that was applied to the driver when the photo was captured. The <a href="https://msdn.microsoft.com/library/windows/hardware/dn897242" data-raw-source="[&lt;strong&gt;CapturedMetadataExposureCompensation&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn897242)"><strong>CapturedMetadataExposureCompensation</strong></a> data structure describes the blob format for this attribute only. The metadata item structure format for EV compensation (<strong>KSCAMERA_METADATA_ITEMHEADER</strong> + EV compensation metadata payload) is provided by the driver and must be 8 byte aligned.</td>
 </tr>
 <tr class="even">
 <td><strong>MF_CAPTURE_METADATA_ISO_SPEED</strong></td>
@@ -225,7 +220,7 @@ The MFT0 parses the metadata buffer provided by the driver and attaches the requ
 <td><strong>MF_CAPTURE_METADATA_ZOOMFACTOR</strong></td>
 <td><p><strong>UINT32</strong></p>
 <p>(Q16)</p></td>
-<td>This attribute contains the zoom value applied and is the same value that can be queried from [<strong>KSPROPERTY_CAMERACONTROL_EXTENDED_ZOOM</strong>](https://msdn.microsoft.com/library/windows/hardware/dn936756) in a GET call. The value must be in Q16.</td>
+<td>This attribute contains the zoom value applied and is the same value that can be queried from <a href="https://msdn.microsoft.com/library/windows/hardware/dn936756" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_EXTENDED_ZOOM&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn936756)"><strong>KSPROPERTY_CAMERACONTROL_EXTENDED_ZOOM</strong></a> in a GET call. The value must be in Q16.</td>
 </tr>
 <tr class="odd">
 <td><strong>MF_CAPTURE_METADATA_FRAME_ILLUMINATION</strong></td>
@@ -241,7 +236,7 @@ The MFT0 parses the metadata buffer provided by the driver and attaches the requ
 </tbody>
 </table>
 
- 
+ 
 
 **EXIF and HW JPEG encoder**
 
@@ -253,7 +248,7 @@ The encoder option property bag contains an array of PROPBAG2 structures that sp
 |--------------------|-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|
 | **SampleMetaData** | **VT\_UNKNOWN** | Pointer to an IMFAttributes interface for **MFSampleExtension\_CaptureMetaData** attribute bag that contains an OEM sub attribute containing the EXIF data. | JPEG              |
 
- 
+ 
 
 The **MFSampleExtension\_CaptureMetaData** attribute bag can only contain any OEM defined EXIF sub attribute that the MFT0 and HW JPEG encoder can read to hold the EXIF data. To pass EXIF data from the driver to the HW JPEG encoder, the driver and MFT0 must do the following:
 
@@ -302,9 +297,9 @@ The [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ZOOM**](https://msdn.microsoft.com/l
 
 The [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_SCENEMODE**](https://msdn.microsoft.com/library/windows/hardware/dn567585) property ID is the only control associated with the scene mode DDI.
 
- 
+ 
 
- 
+ 
 
 
 

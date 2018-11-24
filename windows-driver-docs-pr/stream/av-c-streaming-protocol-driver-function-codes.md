@@ -2,11 +2,7 @@
 title: AV/C Streaming Protocol Driver Function Codes
 description: AV/C Streaming Protocol Driver Function Codes
 ms.assetid: c76662fc-8bb9-411a-8672-d00a4533e952
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,9 +18,9 @@ To communicate with *avcstrm.sys*, subunit drivers must set their IRP's **IoCont
 
 To make I/O requests, include the header file *avcstrm.h*, which is included with the Microsoft Windows Driver Kit (WDK).
 
- 
+ 
 
- 
+ 
 
 
 

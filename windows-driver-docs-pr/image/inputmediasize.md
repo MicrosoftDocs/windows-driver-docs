@@ -9,11 +9,7 @@ api_name:
 - wscn InputMediaSize
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **InputMediaSize** element specifies the size of the media to be sc
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:InputMediaSize>
   child elements
 </wscn:InputMediaSize>
@@ -50,10 +46,10 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>Height</strong>](height.md)</p></td>
+<td><p><a href="height.md" data-raw-source="[&lt;strong&gt;Height&lt;/strong&gt;](height.md)"><strong>Height</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>Width</strong>](width.md)</p></td>
+<td><p><a href="width.md" data-raw-source="[&lt;strong&gt;Width&lt;/strong&gt;](width.md)"><strong>Width</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -72,7 +68,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>InputSize</strong>](inputsize.md)</p></td>
+<td><p><a href="inputsize.md" data-raw-source="[&lt;strong&gt;InputSize&lt;/strong&gt;](inputsize.md)"><strong>InputSize</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -84,7 +80,7 @@ The **InputMediaSize** element contains the width and height of the input media 
 
 The **Width** element contains the width of the original media in the fast scan direction, and the **Height** element contains the height of the original media in the slow scan direction. Both **Width** and **Height** must be in the range from 1 through 2147483648 and are in units of one-thousandths (1/1000) of an inch.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**Height**](height.md)
@@ -93,9 +89,9 @@ The **Width** element contains the width of the original media in the fast scan 
 
 [**Width**](width.md)
 
- 
+ 
 
- 
+ 
 
 
 

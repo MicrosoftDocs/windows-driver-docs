@@ -3,6 +3,7 @@ title: MSiSCSI\_MMIPSECStats WMI Class
 description: MSiSCSI\_MMIPSECStats WMI Class
 ms.assetid: fda67ca5-58b6-4338-a7c2-b1058bd11a57
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MSiSCSI\_MMIPSECStats WMI Class
@@ -17,7 +18,7 @@ Because this class is associated with a particular instance of a storage minipor
 
 The MSiSCSI\_MMIPSECStats class is defined in *Iscsiprf.mof*.
 
-```
+```cpp
 class MSiSCSI_MMIPSECStats : Win32_PerfRawData {
   // instance name is pnp id
   [read,key] String  InstanceName;
@@ -255,9 +256,9 @@ class MSiSCSI_MMIPSECStats : Win32_PerfRawData {
 
 When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_MMIPSECStats**](https://msdn.microsoft.com/library/windows/hardware/ff563073) data structure.
 
- 
+ 
 
- 
+ 
 
 
 

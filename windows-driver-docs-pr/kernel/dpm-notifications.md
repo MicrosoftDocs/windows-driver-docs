@@ -1,14 +1,9 @@
 ---
 title: Device power management (DPM) notifications
-author: windows-driver-content
 description: Each device power management (DPM) notification that the PEP's AcceptDeviceNotification callback routine receives is accompanied by a Notification parameter that indicates the type of notification, and a Data parameter that points to a data structure that contains the information for the specified notification type.
 ms.assetid: 47B487A3-2707-4B0F-BD61-8C4A89F99AE1
 keywords: [AcceptDeviceNotification]
-ms.author: windowsdriverdev
 ms.date: 01/17/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

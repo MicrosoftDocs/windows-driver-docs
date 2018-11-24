@@ -6,11 +6,7 @@ keywords:
 - INF files WDK network , Version section
 - network INF files WDK , Version section
 - Version section WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -48,18 +44,18 @@ Specifies a network client, such as the Microsoft Client for Networks or the Net
 
 **Note**  **NetClient** components are deprecated in Windows 8.1, Windows Server 2012 R2, and later.
 
- 
+ 
 
 <a href="" id="netservice"></a>**NetService**  
 Specifies a network service, such as a file service or a print service.
 
 **Note**  Infrared Data Association (IrDA) compliant devices are not categorized as any of the previous four network classes, even though they are installed by the network class installer. An INF file that is used to install an IrDA device should have a **Class** value of **Infrared**. This class includes both Serial-IR and Fast-IR devices.
 
- 
+ 
 
 **Note**  Support for IrDA miniport drivers has been removed from NDIS 6.30 (Windows 8) and later.
 
- 
+ 
 
 ### ClassGuid
 
@@ -98,7 +94,7 @@ There are four network **ClassGuid** values, each of which corresponds to a netw
 </tbody>
 </table>
 
- 
+ 
 
 An INF file for an IrDA device should have a **ClassGuid** value of
 
@@ -120,7 +116,7 @@ The **CatalogFile** entry is used to declare an optional driver-supplied .cat fi
 
 The following is an example of a **Version** section for an INF file that installs a network adapter:
 
-```
+```INF
 [Version]
 Signature = $Windows NT$
 Class=Net
@@ -134,11 +130,11 @@ CatalogFile = netvmini630.cat
 **Note**  
 The **Provider** entry indicates the developer of the INF file, not the developer of the component that is installed by the INF file.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

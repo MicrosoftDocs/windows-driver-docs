@@ -1,17 +1,12 @@
 ---
 title: KS Allocators
-author: windows-driver-content
 description: KS Allocators
 ms.assetid: 07812703-a66f-450a-b28e-4cf765267c4a
 keywords:
 - kernel streaming WDK , allocators
 - KS WDK , allocators
 - allocators WDK kernel streaming
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -43,9 +38,9 @@ This section contains the following additional information:
 
 [Allocation Schemes](allocation-schemes.md)
 
- 
+ 
 
- 
+ 
 
 
 

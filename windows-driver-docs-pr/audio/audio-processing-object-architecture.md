@@ -2,11 +2,7 @@
 title: Audio Processing Object Architecture
 description: Audio processing objects (APOs), provide customizable software based digital signal processing for Windows audio streams.
 ms.assetid: 2F57B4C7-8C83-4DDF-BFAF-B9308752E91D
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,7 +20,7 @@ Audio processing objects (APOs), provide software based digital signal processin
 
 **Note**   The descriptions and terminology in this documentation refers mostly to output devices. However, the technology is symmetric and works essentially in reverse for input devices.
 
- 
+ 
 
 **Software APOs vs. Hardware DSP**
 
@@ -129,7 +125,7 @@ This diagram illustrates how multiple applications can access multiple combinati
 
 **Note**  You can use the scroll bar at the very bottom of this page to view all of this diagram.
 
- 
+ 
 
 **Software Mode Effects and Hardware Endpoint Effects for Render and Capture**
 

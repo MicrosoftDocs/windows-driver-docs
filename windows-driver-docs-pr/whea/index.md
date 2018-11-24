@@ -1,6 +1,5 @@
 ---
 title: Windows Hardware Error Architecture (WHEA) design guide
-author: windows-driver-content
 description: Windows Hardware Error Architecture (WHEA) design guide
 ms.assetid: 7a42bacd-cafe-48e0-8568-402738fd6e7c
 keywords:
@@ -11,7 +10,6 @@ keywords:
 - detecting hardware errors WDK
 - reporting hardware errors WDK
 - recovering from hardware errors WDK WHEA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -33,7 +31,7 @@ For more detailed information about WHEA and how to implement WHEA on a hardware
 
 **Note**   WHEA is supported in Windows Vista, Windows Server 2008, and later versions of the Windows operating system. For hardware error reporting that is supported on versions of Microsoft Windows prior to Windows Vista, see [Machine Check Architecture (MCA)](https://msdn.microsoft.com/library/windows/hardware/ff540685).
 
- 
+ 
 
 ## In this section
 
@@ -55,7 +53,7 @@ This section includes the following topics:
 [Windows Hardware Error Architecture Debugger Extensions](windows-hardware-error-architecture-debugger-extensions.md)
 
 ## Related topics
-[Windows Hardware Error Architecture ACPI Table Specification](http://msdn.microsoft.com/windows/hardware/gg463511)  
+[Windows Hardware Error Architecture ACPI Table Specification](https://msdn.microsoft.com/windows/hardware/gg463511)  
 [Hardware Management and Security](https://msdn.microsoft.com/library/windows/hardware/dn614601)  
 [**Bug Check 0x124: WHEA\_UNCORRECTABLE\_ERROR (Windows Debuggers)**](https://msdn.microsoft.com/library/windows/hardware/ff557321)  
 

@@ -1,6 +1,5 @@
 ---
 title: Link Collections
-author: windows-driver-content
 description: Link Collections
 ms.assetid: 3f934661-c33c-4c08-82ac-ee2e0f519c8e
 keywords:
@@ -10,11 +9,7 @@ keywords:
 - aliased collections WDK HID
 - link collection nodes WDK HID
 - arrays WDK HID
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -89,7 +84,7 @@ As indicated in the previous figure, link collections are linked together in a t
 </tbody>
 </table>
 
- 
+ 
 
 In a link collection array, the following definitions hold:
 
@@ -112,7 +107,7 @@ An application or driver can determine all a parent collection's children by, st
 
 The following code shows how to use a link collection node index to find the first child of link collection seven:
 
-```
+```cpp
 HIDP_LINK_COLLECTION_NODE Collection[10] ;
 HIDP_LINK_COLLECTION_NODE Node1 ;
  
@@ -131,9 +126,9 @@ An application or driver can determine which collections are aliased by repeated
 
 [Button capability arrays](button-capability-arrays.md) and [value capability arrays](value-capability-arrays.md) identify, for each usage they describe, the link collection that contains the usage. If a link collection is aliased, the capability arrays specify the preferred usage.
 
- 
+ 
 
- 
+ 
 
 
 

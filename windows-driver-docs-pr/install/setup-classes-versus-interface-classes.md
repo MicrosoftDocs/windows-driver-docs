@@ -7,11 +7,7 @@ keywords:
 - device setup classes WDK device installations
 - interface classes WDK device installations
 - setup classes WDK device installations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,9 +33,9 @@ When defining a new setup class or interface class, *do not use a single GUID to
 
 For more information about GUIDs, see [Using GUIDs in Drivers](https://msdn.microsoft.com/library/windows/hardware/ff565392).
 
- 
+ 
 
- 
+ 
 
 
 

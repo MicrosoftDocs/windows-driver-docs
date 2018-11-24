@@ -6,11 +6,7 @@ keywords:
 - filtering trace messages, deleting rules WDK
 - trace message filters WDK , deleting rules
 - deleting rules
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ To delete a rule from a filter:
 
 If you have saved the rule in a [workspace](using-traceview-workspaces.md), you must [resave the workspace](saving-or-resaving-a-workspace.md) after deleting the rule. Otherwise, the rule is not deleted from the workspace.
 
- 
+ 
 
- 
+ 
 
 
 

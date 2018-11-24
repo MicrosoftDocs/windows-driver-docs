@@ -2,11 +2,7 @@
 title: Bluetooth Version and Profile Support in Previous Windows Versions
 description: Bluetooth Version and Profile Support in Previous Windows Versions
 ms.assetid: A5A81EAA-0DC7-4725-AA0D-5C4867DDE47C
-ms.author: windowsdriverdev
 ms.date: 02/12/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,7 +20,7 @@ The DLL must export two functions:
 
 -    BluetoothEnableRadio: The radio support DLL implements BluetoothEnableRadio to enable Windows to turn power to the radio on or off.
 
-```
+```cpp
 C++ 
 DWORD WINAPI BluetoothEnableRadio(
    BOOL fEnable
@@ -37,12 +33,11 @@ Return value: Return ERROR_SUCCESS if current state was changed to state of fEna
 
 -    IsBluetoothRadioEnabled: The radio support DLL implements IsBluetoothRadioEnabled to enable Windows to determine if power to the radio is on or off.
 
-```
+```cpp
 C++ 
 DWORD WINAPI IsBluetoothRadioEnabled(
    BOOL* pfEnabled
 );
- 
 ```
 pfEnabled: Pointer to buffer describing if power to the radio is on or off.
 
@@ -97,7 +92,7 @@ Windows Registry Editor Version 5.00
 
 
 MAKEFILE
-```
+```cpp
 ###### --------------------------------------------------------------------
 
 ######
@@ -235,5 +230,5 @@ C_DEFINES=-DWIN32 -DUNICODE -D_UNICODE
 SOURCES = RSupport.cpp 
 
 
- 
+
 

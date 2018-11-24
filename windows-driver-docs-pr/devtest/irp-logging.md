@@ -5,11 +5,7 @@ ms.assetid: 368356df-7fa7-4555-b5cf-59c26d70075e
 keywords:
 - IRP Logging feature WDK Driver Verifier
 - DC2WMIParser tool
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -136,9 +132,9 @@ The second device begins here:
       2d,420,0,0,c,0              Device type 2d, function 420, method 0, access 0, inbuflen c, outbuflen 0
 ```
 
- 
+ 
 
- 
+ 
 
 
 

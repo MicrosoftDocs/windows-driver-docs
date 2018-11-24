@@ -1,6 +1,5 @@
 ---
 title: Configuration Modules Based on GPD or PPD Files
-author: windows-driver-content
 description: Configuration Modules Based on GPD or PPD Files
 ms.assetid: b0aeea58-1c58-475e-8d4a-597778e42a7c
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - Version 3 XPS drivers WDK XPSDrv , PPD files
 - GPD files WDK XPSDrv
 - PPD files WDK XPSDrv
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,13 +26,13 @@ To create a Version 3 print driver configuration module for an XPSDrv print driv
 
     For Msxpsinc.gpd, it contains:
 
-    ```
+    ```cpp
     IsXPSDriver?: TRUE
     ```
 
     For Msxpsinc.ppd, it contains:
 
-    ```
+    ```cpp
     *MSIsXPSDriver: True
     ```
 
@@ -47,13 +42,13 @@ The root GPD or PPD files (which are specified in the INF file as the driver's `
 
 For example, for Model-foo.gpd, include:
 
-```
+```cpp
 *Include: "msxpsinc.gpd"
 ```
 
 For Model-foo.ppd, include:
 
-```
+```cpp
 *Include: "msxpinc.ppd"
 ```
 
@@ -69,7 +64,7 @@ Print Schema mapping is a feature of the Unidrv and PScript5 configuration modul
 
 The following code example shows a GPD file that illustrates the entries and keywords to create a Version 3 configuration module for an XPSDrv print driver.
 
-```
+```cpp
 *%
 *% Copyright (c) 2004 - 2006 Microsoft Corporation
 *% All Rights Reserved.
@@ -104,9 +99,9 @@ The following code example shows a GPD file that illustrates the entries and key
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

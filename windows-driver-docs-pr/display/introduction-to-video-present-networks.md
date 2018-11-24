@@ -17,11 +17,7 @@ keywords:
 - video output codecs WDK video present network
 - codecs WDK video present network
 - CRTC WDK video present network
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -76,9 +72,9 @@ Implementing the clone view with two CRTCs has some advantages over implementing
 
 The important point is that the VidPN manager never knows anything about how the video output codecs on a display adapter are assigned to the video present sources and targets. The VidPN manager knows only the associations between sources and targets. The underlying composite associations that involve the video output codecs are known only to the display miniport driver.
 
- 
+ 
 
- 
+ 
 
 
 

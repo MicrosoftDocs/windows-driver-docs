@@ -3,6 +3,7 @@ title: MSiSCSI\_QueryLBPolicy WMI Class
 description: MSiSCSI\_QueryLBPolicy WMI Class
 ms.assetid: 1d80f525-491a-4c81-8827-7c5c13107a54
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MSiSCSI\_QueryLBPolicy WMI Class
@@ -10,7 +11,7 @@ ms.localizationpriority: medium
 
 The MSiSCSI\_QueryLBPolicy WMI class contains information about the load balance policies. This class is defined as follows in *Mgmt.mof.*
 
-```
+```cpp
 class MSiSCSI_QueryLBPolicy 
 {
     [key]
@@ -48,9 +49,9 @@ class MSiSCSI_QueryLBPolicy
 
 When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_QueryLBPolicy**](https://msdn.microsoft.com/library/windows/hardware/ff563107) data structure.
 
- 
+ 
 
- 
+ 
 
 
 

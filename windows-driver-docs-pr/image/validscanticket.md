@@ -9,11 +9,7 @@ api_name:
 - wscn ValidScanTicket
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The optional **ValidScanTicket** element contains a valid [**ScanTicket**](scant
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ValidScanTicket>
   child elements
 </wscn:ValidScanTicket>
@@ -50,10 +46,10 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>DocumentParameters</strong>](documentparameters.md)</p></td>
+<td><p><a href="documentparameters.md" data-raw-source="[&lt;strong&gt;DocumentParameters&lt;/strong&gt;](documentparameters.md)"><strong>DocumentParameters</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>JobDescription</strong>](jobdescription.md)</p></td>
+<td><p><a href="jobdescription.md" data-raw-source="[&lt;strong&gt;JobDescription&lt;/strong&gt;](jobdescription.md)"><strong>JobDescription</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -72,7 +68,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ValidationInfo</strong>](validationinfo.md)</p></td>
+<td><p><a href="validationinfo.md" data-raw-source="[&lt;strong&gt;ValidationInfo&lt;/strong&gt;](validationinfo.md)"><strong>ValidationInfo</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -82,7 +78,7 @@ Remarks
 
 A client submits a [**ScanTicket**](scanticket.md) for validation through the [**ValidateScanTicketRequest**](validatescanticketrequest.md) operation. If the submitted **ScanTicket** contains invalid settings, the WSD Scan Service must return a **ValidScanTicket** element in which it has changed any invalid settings to be valid settings. The Scan Service returns validation information, which includes **ValidScanTicket**, in [**ValidateScanTicketResponse**](validatescanticketresponse.md).
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**DocumentParameters**](documentparameters.md)
@@ -97,9 +93,9 @@ A client submits a [**ScanTicket**](scanticket.md) for validation through the [*
 
 [**ValidationInfo**](validationinfo.md)
 
- 
+ 
 
- 
+ 
 
 
 

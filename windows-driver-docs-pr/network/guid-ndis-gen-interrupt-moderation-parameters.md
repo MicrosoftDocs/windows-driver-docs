@@ -1,15 +1,10 @@
 ---
 title: GUID_NDIS_GEN_INTERRUPT_MODERATION_PARAMETERS
-author: windows-driver-content
 description: This topic describes the GUID_NDIS_GEN_INTERRUPT_MODERATION_PARAMETERS GUID for the NDIS WMI interface.
 ms.assetid: f4be78b8-421b-467a-a0a6-b8256b8a4ab3
 keywords:
 - GUID_NDIS_GEN_INTERRUPT_MODERATION_PARAMETERS, WDK GUID_NDIS_GEN_INTERRUPT_MODERATION_PARAMETERS network drivers
-ms.author: windowsdriverdev
 ms.date: 11/22/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

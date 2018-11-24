@@ -11,11 +11,7 @@ api_location:
 - pixel.hpp
 api_type:
 - COM
-ms.author: windowsdriverdev
 ms.date: 01/05/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,10 +25,10 @@ Syntax
 
 ```ManagedCPlusPlus
 static void ComputeSurfaceOffset(
-   const D3DSURFACE_DESC *pDescTopLevel,
-         BYTE            *pBits,
-   const RECT            *pRect,
-         D3DLOCKED_RECT  *pLockedRectData
+   const D3DSURFACE_DESC *pDescTopLevel,
+         BYTE            *pBits,
+   const RECT            *pRect,
+         D3DLOCKED_RECT  *pLockedRectData
 );
 ```
 
@@ -83,9 +79,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

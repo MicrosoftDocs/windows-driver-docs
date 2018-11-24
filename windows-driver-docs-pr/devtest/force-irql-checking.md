@@ -6,11 +6,7 @@ keywords:
 - Force IRQL Checking feature WDK Driver Verifier
 - IRQL monitoring WDK Driver Verifier
 - spin locks WDK Driver Verifier
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -77,9 +73,9 @@ You can activate the Force IRQL Checking feature for one or more drivers by usin
 
     The Force IRQL Checking feature is also included in the standard settings. To use this feature, in Driver Verifier Manager, click **Create Standard Settings**.
 
- 
+ 
 
- 
+ 
 
 
 

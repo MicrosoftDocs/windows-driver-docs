@@ -6,11 +6,7 @@ keywords:
 - waveOut non-PCM wave formats WDK audio
 - non-PCM audio formats WDK , waveOut
 - looping non-PCM formats
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +22,9 @@ Microsoft Windows does not currently support the looping of a wave header with a
 
 When non-PCM data is playing, a call to [**waveOutBreakLoop**](https://msdn.microsoft.com/library/windows/desktop/dd743854) fails with return code MMSYSERR\_INVALPARAM.
 
- 
+ 
 
- 
+ 
 
 
 

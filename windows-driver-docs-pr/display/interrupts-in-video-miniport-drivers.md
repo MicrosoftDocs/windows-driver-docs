@@ -6,11 +6,7 @@ keywords:
 - video miniport drivers WDK Windows 2000 , interrupts
 - interrupts WDK video miniport
 - HwVidInterrupt
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,9 +34,9 @@ A video miniport driver should adhere to the following two rules:
 
 2.  Because of Rule 1, a device driver ISR should *never* act on an interrupt if the power state is D3 (it should return **FALSE**).
 
- 
+ 
 
- 
+ 
 
 
 

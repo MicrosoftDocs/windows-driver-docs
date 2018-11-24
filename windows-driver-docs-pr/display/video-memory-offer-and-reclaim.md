@@ -2,11 +2,7 @@
 title: Video memory offer and reclaim
 description: Windows Display Driver Model (WDDM) 1.2 and later user-mode display drivers must use the memory offer and reclaim feature, available starting with Windows 8, to reduce memory overhead needed for temporary surfaces in local and system memory.
 ms.assetid: 8BB6A7A3-E102-4069-BFC2-9605DDE9F020
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,7 +18,7 @@ Windows Display Driver Model (WDDM) 1.2 and later user-mode display drivers must
 | Driver implementation—Full graphics and Render only                               | Mandatory                        |
 | [WHCK](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) requirements and tests | **Device.Graphics…OfferReclaim** |
 
- 
+ 
 
 Especially in mobile scenarios, graphics-intensive apps that need hardware acceleration can make heavy use of GPU resources. Also, in many mobile devices the GPU is integrated into the CPU chipset and the GPU uses portions of system memory as video memory. To ensure reasonable system performance when multiple apps make heavy use of a GPU that in turn makes heavy demand on system memory, the memory footprint of display drivers should be minimized. The offer/reclaim device driver interfaces (DDIs) provide a mechanism to do this.
 
@@ -72,9 +68,9 @@ For info on requirements that hardware devices must meet when they implement thi
 
 See [WDDM 1.2 features](wddm-v1-2-features.md) for a review of features added with Windows 8.
 
- 
+ 
 
- 
+ 
 
 
 

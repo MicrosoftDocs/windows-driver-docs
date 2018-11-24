@@ -1,14 +1,9 @@
 ---
 title: Using extended processor features in Windows drivers
-author: windows-driver-content
 description: Windows drivers for x86 and x64 systems that use extended processor features must wrap floating point calculations between calls to KeSaveExtendedProcessorState and KeRestoreExtendedProcessorState in order to avoid errors in concurrent applications that might be using the registers.
 ms.assetid: a42e86cf-47a2-44ed-8bf1-7407633af8b7
 keywords: ["floating point WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,7 +31,7 @@ These registers correspond to the XSTATE\_MASK\_LEGACY\_SSE flag and are used by
 
 These registers correspond to the XSTATE\_MASK\_GSSE or XSTATE\_MASK\_AVX masks. New x86 processors, such as the Intel Sandy Bridge (formerly Gesher) processor, support the AVX instructions and register set (YMM0-YMM15). In Windows 7 with Service Pack 1 (SP1), Windows Server 2008 R2, and newer versions of Windows, both x86 and x64 versions of the operating system preserve the AVX registers across thread (and process) switches. To use the AVX registers in kernel mode, drivers (x86 and x64) must explicitly save and restore the AVX registers. AVX registers cannot be used in an interrupt service routine, and arithmetic exceptions are turned off by default.
 
-```
+```cpp
 include ksamd64.inc
 
         subttl "Set YMM State."
@@ -70,7 +65,7 @@ LEAF_END SetYmmValues, _TEXT$00
         end
 ```
 
-```
+```cpp
 typedef DECLSPEC_ALIGN(32) struct _YMM_REGISTERS {
     ULONG64 Ymm4Registers[16];
 } YMM_REGISTERS, *PYMM_REGISTERS;

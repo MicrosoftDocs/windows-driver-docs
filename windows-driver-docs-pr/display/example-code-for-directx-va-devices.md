@@ -8,11 +8,7 @@ keywords:
 - VA WDK DirectX , example code
 - examples WDK DirectX VA
 - templates WDK DirectX VA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +26,9 @@ This section includes:
 
 [COPP Video Miniport Driver Template](copp-video-miniport-driver-template.md)
 
- 
+ 
 
- 
+ 
 
 
 

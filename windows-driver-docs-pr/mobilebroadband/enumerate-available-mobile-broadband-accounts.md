@@ -2,11 +2,7 @@
 title: Enumerate available mobile broadband accounts
 description: Enumerate available mobile broadband accounts
 ms.assetid: 6dcf4789-09e8-43d2-9617-a026cbe0dfbb
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,16 +30,16 @@ Account watcher objects automatically stop when the app is suspended by Windows,
 
 [**MobileBroadbandAccountWatcher**](https://msdn.microsoft.com/library/windows/apps/hh770597) objects are independent of each other. This means that you cannot depend on all watchers reporting the same set of events – as a group, they will report all events. However, any given watcher might not report any given event, because that event has been consumed by another watcher. Unless you have good reason, you should use only one account watcher object per app.
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
 
 [Common tasks for mobile broadband Windows Runtime APIs](common-tasks-for-mobile-broadband-windows-runtime-apis.md)
 
- 
+ 
 
- 
+ 
 
 
 

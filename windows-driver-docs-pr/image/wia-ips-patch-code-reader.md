@@ -11,11 +11,7 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -61,7 +57,7 @@ The following table describes the required values for the **WIA\_IPS\_PATCH\_COD
 </tbody>
 </table>
 
- 
+ 
 
 The [**WIA\_IPA\_FORMAT**](wia-ipa-format.md) property is also required for all Patch Code Reader items.
 
@@ -90,7 +86,7 @@ The following table describes the required values for the [**WIA\_IPA\_FORMAT**]
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -108,9 +104,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -10,11 +10,7 @@ keywords:
 - architecture WDK WAN , bindings
 - architecture WDK WAN , connections
 - WAN miniport drivers WDK networking , bindings
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -54,9 +50,9 @@ Before a WAN miniport driver can send or receive packets on a wide area network,
 
 -   In a CoNDIS environment, a VC must be created. The NDPROXY driver creates a VC for an outgoing call that an application originated. Similarly, a call manager (or MCM) initiates the creation of a VC for an incoming call that the call manager indicates to NDISWAN and NDPROXY. The call manager must communicate and sometimes negotiate the parameters for the VC with the remote party. The setup, supervision, and tear-down of a connection is done through TAPI. TAPI requests and status indications to TAPI all go through NDPROXY. For more information about TAPI and NDPROXY, see [NDPROXY Overview](ndproxy-overview.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: Supported Ethernet NICs for Network Kernel Debugging in Windows 10
 description: You can do kernel debugging over an Ethernet network cable when the target computer is running Windows. The target computer must have a supported network interface card (NIC) or network adapter.
 ms.assetid: F98A7ACE-DD04-423C-A438-89E21363C693
-ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,7 +19,7 @@ The list of supported adapters is for the following versions of Windows
 -   Windows 10, version 1703
 -   Windows Server 2016
 
- 
+ 
 
 ## <span id="Finding_the_vendor_ID_and_device_ID"></span><span id="finding_the_vendor_id_and_device_id"></span><span id="FINDING_THE_VENDOR_ID_AND_DEVICE_ID"></span>Finding the vendor ID and device ID
 
@@ -473,9 +469,9 @@ For vendor ID 1137, these device IDs are supported:
 
 [Supported Ethernet NICs for Network Kernel Debugging in Windows 8.1](supported-ethernet-nics-for-network-kernel-debugging-in-windows-8-1.md)
 
- 
+ 
 
- 
+ 
 
 
 

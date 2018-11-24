@@ -2,11 +2,7 @@
 title: Remote NDIS OIDs
 description: Remote NDIS OIDs
 ms.assetid: c97592e8-f395-475e-8e6c-6366d1605075
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ The following lists of Remote NDIS OIDs are broken down into two groups -- gener
 -   [Optional Power Management OIDs](optional-power-management-oids.md)
 -   [Optional Network Wake Up OIDs](optional-network-wake-up-oids.md)
 
- 
+ 
 
- 
+ 
 
 
 

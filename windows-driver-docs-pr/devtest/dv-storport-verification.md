@@ -2,11 +2,7 @@
 title: Storport Verification
 description: Storport Verification
 ms.assetid: 3731C877-1A69-447C-A5DB-0BDD1B753D3D
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,7 +16,7 @@ The Storport Verification feature monitors the interaction between a Storport mi
 
 **Note**  The Storport Verification feature is only available in Windows Vista and later versions of Windows.
 
- 
+ 
 
 ### <span id="violations_detected_by_storport_verification"></span><span id="VIOLATIONS_DETECTED_BY_STORPORT_VERIFICATION"></span>Violations Detected by Storport Verification
 
@@ -44,7 +40,7 @@ For a list of the bug check parameters that Storport Verification uses, see [**B
 
 **Note**  [**Bug Check 0xF1**](https://msdn.microsoft.com/library/windows/hardware/ff560365) is used for both SCSI Verification and Storport Verification.
 
- 
+ 
 
 ### <span id="activating_this_option"></span><span id="ACTIVATING_THIS_OPTION"></span>Activating This Option
 
@@ -64,9 +60,9 @@ If the **VerifyLevel** value does not exist, or is equal to 0xFFFFFFFF, Storport
 
 In general, you cannot activate or deactivate Storport Verification without restarting (rebooting) the computer on any Windows operating system. The *StorPort.sys* driver reads the **VerifyLevel** registry entry only when it loads, which is typically at boot time. However, if the *StorPort.sys* driver is not loaded when you add the registry entry, or if it is unloaded and reloaded, you can enable Storport Verification on Windows Vista and later versions of Windows without restarting the computer.
 
- 
+ 
 
- 
+ 
 
 
 

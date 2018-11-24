@@ -1,6 +1,5 @@
 ---
 title: TVOT\_TRACKBAR
-author: windows-driver-content
 description: TVOT\_TRACKBAR
 ms.assetid: 00140dca-c192-42dc-853d-ae84c602b206
 keywords: ["TVOT_TRACKBAR Print Devices"]
@@ -12,11 +11,7 @@ api_location:
 - compstui.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -123,7 +118,7 @@ Otherwise, **BegCtrlID** must contain the first control identifier of a sequenti
 </tbody>
 </table>
 
- 
+ 
 
 For additional information, see [Customizing CPSUI-Supported Window Controls](https://msdn.microsoft.com/library/windows/hardware/ff547296).
 
@@ -143,9 +138,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,6 +3,7 @@ title: ISCSI\_HEADER\_INTEGRITY\_TYPE\_QUALIFIERS
 description: ISCSI\_HEADER\_INTEGRITY\_TYPE\_QUALIFIERS
 ms.assetid: 32e72d48-b80a-4cfb-ad35-174219753c01
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # ISCSI\_HEADER\_INTEGRITY\_TYPE\_QUALIFIERS
@@ -38,11 +39,11 @@ The following table describes the ISCSI\_HEADER\_INTEGRITY\_TYPE\_QUALIFIERS val
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

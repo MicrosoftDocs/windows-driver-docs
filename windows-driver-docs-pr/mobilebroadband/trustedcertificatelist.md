@@ -2,11 +2,7 @@
 title: TrustedCertificateList
 description: TrustedCertificateList
 ms.assetid: 116ee448-b0a8-4441-845c-945fc5ae0ddd
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -45,13 +41,13 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[TrustedCertificate](trustedcertificate-apnxml.md)</p></td>
+<td><p><a href="trustedcertificate-apnxml.md" data-raw-source="[TrustedCertificate](trustedcertificate-apnxml.md)">TrustedCertificate</a></p></td>
 <td><p>A certificate trusted by the operator.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Parent_elements"></span><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Parent elements
 
@@ -69,13 +65,13 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[OperatorList](operatorlist.md)</p></td>
-<td><p>The parent element of the [APN XML schema](apn-xml-schema.md).</p></td>
+<td><p><a href="operatorlist.md" data-raw-source="[OperatorList](operatorlist.md)">OperatorList</a></p></td>
+<td><p>The parent element of the <a href="apn-xml-schema.md" data-raw-source="[APN XML schema](apn-xml-schema.md)">APN XML schema</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="XSD"></span><span id="xsd"></span>XSD
 
@@ -97,9 +93,9 @@ There are no attributes.
 
 The TrustedCertificateList element is optional.
 
- 
+ 
 
- 
+ 
 
 
 

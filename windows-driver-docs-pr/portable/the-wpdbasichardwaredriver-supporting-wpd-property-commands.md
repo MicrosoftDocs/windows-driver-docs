@@ -1,11 +1,7 @@
 ---
 Description: Support for property commands (WpdBasicHardwareDriverSample)
 title: Support for property commands (WpdBasicHardwareDriverSample)
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The information in the following table describes each of the supported property 
 | WPD\_COMMAND\_OBJECT\_PROPERTIES\_GET\_ATTRIBUTES | OnGetPropertyAttributes  | Returns a collection of attributes for one or more properties on a given object.                     |
 | WPD\_COMMAND\_OBJECT\_PROPERTIES\_DELETE          | OnDeleteProperties       | Deletes the properties that are identified by the given property keys.                               |
 
- 
+
 
 ## <span id="WPD_COMMAND_OBJECT_PROPERTIES_GET_SUPPORTED"></span><span id="wpd_command_object_properties_get_supported"></span>WPD\_COMMAND\_OBJECT\_PROPERTIES\_GET\_SUPPORTED
 
@@ -36,7 +32,7 @@ Because the sample device does not support the Storage, Folder, or File objects 
 
 The following code is taken from the revised **AddSupportedPropertyKeys** method. This method calls two supporting methods (**AddDevicePropertyKeys** and **AddSensorPropertyKeys**) to retrieve the keys for the requested object:
 
-```
+```cpp
 HRESULT AddSupportedPropertyKeys(
     LPCWSTR                        wszObjectID,
     IPortableDeviceKeyCollection*  pKeys)
@@ -73,7 +69,6 @@ HRESULT AddSupportedPropertyKeys(
 
     return hr;
 }
-
 ```
 
 ## <span id="WPD_COMMAND_OBJECT_PROPERTIES_GET"></span><span id="wpd_command_object_properties_get"></span>WPD\_COMMAND\_OBJECT\_PROPERTIES\_GET
@@ -85,7 +80,7 @@ The code that returned properties for the Device object remained intact. This is
 
 Although this code was unchanged, the device model (and other similar properties) that was returned by the sample driver differ from the property values that were returned by the WpdHelloWorldSample driver. This is because we updated the definitions in *WpdObjectProperties.h*:
 
-```
+```cpp
 #define DEVICE_PROTOCOL_VALUE                L"Sensor Protocol ver 1.00"
 #define DEVICE_FIRMWARE_VERSION_VALUE        L"1.0.0.0"
 #define DEVICE_POWER_LEVEL_VALUE             100
@@ -109,7 +104,7 @@ The following table lists the definitions in *WpdObjectProperties.h*, the origin
 | DEVICE\_SERIAL\_NUMBER\_VALUE          | 012345678901234567890123456 | 012345678901234567890123456 |
 | DEVICE\_SUPPORTS\_NONCONSUMABLE\_VALUE | **FALSE**                   | **FALSE**                   |
 
- 
+
 
 The most significant changes to the **GetPropertyValuesForObject** method occurred in the section that retrieves the sensor properties. This code retrieves several values that are defined in *WpdObjectProperties.h* such as the object name, its format, its content type, and whether it can be deleted.
 
@@ -117,7 +112,7 @@ In addition, this code also retrieves the current sensor reading and the sensor-
 
 The following excerpt from the **GetPropertyValuesForObject** method contains the code that retrieves the properties for the sensor object:
 
-```
+```cpp
 // Retrieve the sensor properties
 
         else if (
@@ -231,7 +226,7 @@ CHECK_HR(hr, "Failed to set WPD_OBJECT_CONTENT_TYPE");
 
 The **GetSensorReading** helper function retrieves the most recent sensor reading in numeric (DWORD) format:
 
-```
+```cpp
 LONGLONG WpdObjectProperties::GetSensorReading()
 {    
     // Ensure that this value isn&#39;t currently being accessed by another thread
@@ -241,9 +236,9 @@ LONGLONG WpdObjectProperties::GetSensorReading()
 }
 ```
 
-**Note**  A critical section is necessary to prevent concurrent accesses of the *m\_llSensorReading* member variable. This value is overwritten when each RS232 read completes asynchronously, and is read whenever the SENSOR\_READING property is retrieved by a WPD application.
+**Note**  A critical section is necessary to prevent concurrent accesses of the *m\_llSensorReading* member variable. This value is overwritten when each RS232 read completes asynchronously, and is read whenever the SENSOR\_READING property is retrieved by a WPD application.
 
- 
+
 
 The **GetUpdateInterval** helper function performs an identical operation: it accesses the *m\_dwUpdateInterval* member variable and returns the value in numeric (DWORD) format if it is available:
 
@@ -270,7 +265,7 @@ The handler first examines the object identifier for the given property and then
 
 The **SendUpdateIntervalToDevice** helper function performs the write operation by checking for a valid input value, formatting a write request with that value, and then sending the write request to the device.
 
-```
+```cpp
 HRESULT WpdObjectProperties::SendUpdateIntervalToDevice(DWORD dwNewInterval)
 {
     HRESULT      hr                           = S_OK;
@@ -344,9 +339,9 @@ In the original WpdHelloWorldSample driver, the attributes for every property we
 
 [The WPD Driver Samples](the-wpd-driver-samples.md)
 
- 
 
- 
+
+
 
 
 

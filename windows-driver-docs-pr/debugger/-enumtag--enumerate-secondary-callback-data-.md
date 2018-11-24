@@ -3,11 +3,7 @@ title: .enumtag (Enumerate Secondary Callback Data)
 description: The .enumtag command displays secondary bug check callback data and all data tags.
 ms.assetid: 2146ebb9-96ce-4eb0-8c23-c9aaa5ed7f73
 keywords: [".enumtag (Enumerate Secondary Callback Data) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **.enumtag** command displays secondary bug check callback data and all data tags.
 
-```
+```dbgcmd
 .enumtag 
 ```
 
@@ -52,7 +48,7 @@ The **.enumtag** command displays secondary bug check callback data and all data
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -67,7 +63,7 @@ For each block of secondary bug check callback data, the **.enumtag** command di
 
 Consider the following example.
 
-```
+```dbgcmd
 kd> .enumtag
 {87654321-0000-0000-0000000000000000} - 0xf9c bytes
   4D 5A 90 00 03 00 00 00 04 00 00 00 FF FF 00 00  MZ..............
@@ -87,9 +83,9 @@ kd> .enumtag
 
 In this example, the first batch of secondary data has a GUID ){87654321-0000-0000-0000000000000000}) as its tag, and the second batch of data has a GUID ({12345678-0000-0000-0000000000000000}) as its tag. However, the data is not in a useful format.
 
- 
+ 
 
- 
+ 
 
 
 

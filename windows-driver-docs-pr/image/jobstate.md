@@ -9,11 +9,7 @@ api_name:
 - wscn JobState
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **JobState** element specifies the current state of the job.
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:JobState>
   text
 </wscn:JobState>
@@ -92,7 +88,7 @@ Required. One of the following values:
 </tbody>
 </table>
 
- 
+ 
 
 ## Child elements
 
@@ -113,10 +109,10 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>JobStatus</strong>](jobstatus.md)</p></td>
+<td><p><a href="jobstatus.md" data-raw-source="[&lt;strong&gt;JobStatus&lt;/strong&gt;](jobstatus.md)"><strong>JobStatus</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>JobSummary</strong>](jobsummary.md)</p></td>
+<td><p><a href="jobsummary.md" data-raw-source="[&lt;strong&gt;JobSummary&lt;/strong&gt;](jobsummary.md)"><strong>JobSummary</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -128,7 +124,7 @@ When the **JobState** element is contained in a [**JobEndStateEvent**](jobendsta
 
 You can both extend and subset the allowed values for this element.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**CancelJobRequest**](canceljobrequest.md)
@@ -143,9 +139,9 @@ You can both extend and subset the allowed values for this element.
 
 [**JobSummary**](jobsummary.md)
 
- 
+ 
 
- 
+ 
 
 
 

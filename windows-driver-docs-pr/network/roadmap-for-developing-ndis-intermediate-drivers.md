@@ -2,11 +2,7 @@
 title: Roadmap for Developing NDIS Intermediate Drivers
 description: Roadmap for Developing NDIS Intermediate Drivers
 ms.assetid: d3bd26ff-846f-4bd2-929c-1c15dd61a122
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -69,9 +65,9 @@ To create a Network Driver Interface Specification (NDIS) intermediate driver pa
 
 These are the basic steps. Additional steps might be necessary based on the needs of your individual driver.
 
- 
+ 
 
- 
+ 
 
 
 

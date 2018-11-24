@@ -1,15 +1,10 @@
 ---
 title: ACPI_ENUM_CHILD_NEXT macro
-author: windows-driver-content
 description: The ACPI_ENUM_CHILD_NEXT macro calculates a pointer to the next ACPI_ENUM_CHILD structure in an array of variable length ACPI_ENUM_CHILD structures.
 ms.assetid: 1ff37770-b0ea-4275-9568-611ec125a0b6
 keywords: 
 - ACPI_ENUM_CHILD_NEXT macro ACPI Devices
-ms.author: windowsdriverdev
-ms.date: 07/18/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
@@ -21,9 +16,9 @@ The ACPI\_ENUM\_CHILD\_NEXT macro calculates a pointer to the next [**ACPI\_ENUM
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 void ACPI_ENUM_CHILD_NEXT(
-    Child
+    Child
 );
 ```
 
@@ -52,15 +47,11 @@ Requirements
 <col width="50%" />
 </colgroup>
 <tbody>
-<tr class="odd">
+<tr>
 <td><p>Target platform</p></td>
 <td>Desktop</td>
 </tr>
-<tr class="even">
-<td><p>Version</p></td>
-<td><p>Windows Vista and later versions of Windows.</p></td>
-</tr>
-<tr class="odd">
+<tr>
 <td><p>Header</p></td>
 <td>Acpiioct.h (include Acpiioct.h)</td>
 </tr>
@@ -76,9 +67,9 @@ Requirements
 
 [**IOCTL\_ACPI\_ENUM\_CHILDREN**](https://msdn.microsoft.com/library/windows/hardware/ff536147)
 
- 
+ 
 
- 
+ 
 
 
 

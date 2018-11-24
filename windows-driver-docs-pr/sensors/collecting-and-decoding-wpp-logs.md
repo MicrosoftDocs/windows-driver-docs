@@ -1,13 +1,8 @@
 ---
 title: Collecting and decoding WPP logs
-author: windows-driver-content
 description: This topic provides information about collecting and decoding Windows software trace preprocessor (WPP) logs for the sensor class extension (CX) trace provider.
 ms.assetid: 174CDE37-D0D1-44BF-AD50-5A90C989FDE2
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 07/20/2018
 ms.localizationpriority: medium
 ---
 
@@ -22,12 +17,12 @@ WPP provides ways to trace the operation of software components known as trace p
 
 -   SensorsUtilsV2.pdb
 
-The tracelog tool is used to collect WPP logs. For more information, see [Tracelog](http://msdn.microsoft.com/library/windows/hardware/ff552994.aspx). For more information about tracing concepts such as tracing GUIDs, trace flags, trace levels, or PDB files, see [Tracing Tool Concepts](http://msdn.microsoft.com/library/windows/hardware/ff553975.aspx).
+The tracelog tool is used to collect WPP logs. For more information, see [Tracelog](https://msdn.microsoft.com/library/windows/hardware/ff552994.aspx). For more information about tracing concepts such as tracing GUIDs, trace flags, trace levels, or PDB files, see [Tracing Tool Concepts](https://msdn.microsoft.com/library/windows/hardware/ff553975.aspx).
 
 ## Tracing GUID
 
 
-The following GUID identifies the trace provider for the CX driver in the sensor V2 stack. For more information about using this GUID with tracelog, see [Tracelog](http://msdn.microsoft.com/library/windows/hardware/ff552994.aspx).
+The following GUID identifies the trace provider for the CX driver in the sensor V2 stack. For more information about using this GUID with tracelog, see [Tracelog](https://msdn.microsoft.com/library/windows/hardware/ff552994.aspx).
 
 ``` syntax
 c88b592b-6090-480f-a839-ca2434de5844
@@ -159,7 +154,7 @@ The following are WPP macros with their associated trace levels and trace flags.
 </tbody>
 </table>
 
- 
+ 
 
 ## Decoding ETL logs
 
@@ -168,9 +163,9 @@ The tracefmt tool is used to decode ETL logs. For more information about this to
 
 If you want to do more extensive testing of your sensor driver, see [Test your universal sensor driver](test-your-universal-sensor-driver.md.
 
- 
+ 
 
- 
+ 
 
 
 

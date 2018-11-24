@@ -1,13 +1,8 @@
 ---
 title: Document Devices in Devices and Printers
-author: windows-driver-content
 description: Document Devices in Devices and Printers
 ms.assetid: 6855d8fa-1354-4af9-8c00-486b6a643f85
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -44,9 +39,9 @@ If an MFP has a fax function that does not enumerate as a print queue, the Devic
 
 Device manufacturers may author Device Stage for printers, scanners, and multi-function printers. Both locally attached printers (such as a printer that has a USB connection) and network-connected printers can have customized device experiences.
 
- 
+ 
 
- 
+ 
 
 
 

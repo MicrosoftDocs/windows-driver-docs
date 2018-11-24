@@ -12,6 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # ClearPathHealthCounters function
@@ -24,7 +25,7 @@ Syntax
 
 ```ManagedCPlusPlus
 void ClearPathHealthCounters(
-   [in, Description("64-bit Path Identifier"):amended] uint64 PathID
+   [in, Description("64-bit Path Identifier"):amended] uint64 PathID
 );
 ```
 
@@ -64,9 +65,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

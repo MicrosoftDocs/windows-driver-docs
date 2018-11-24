@@ -1,5 +1,5 @@
 ---
-title: IRP\_MJ\_QUERY\_QUOTA
+title: IRP_MJ_QUERY_QUOTA
 description: IRP\_MJ\_QUERY\_QUOTA
 ms.assetid: eb48b5ef-7eac-49d4-ab23-2d3efe783fa3
 keywords: ["IRP_MJ_QUERY_QUOTA Installable File System Drivers"]
@@ -9,11 +9,7 @@ api_name:
 - IRP_MJ_QUERY_QUOTA
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -60,28 +56,28 @@ The DO\_BUFFERED\_IO and DO\_DIRECT\_IO flags are used as follows to specify the
 <tbody>
 <tr class="odd">
 <td align="left"><p>~DO_BUFFERED_IO</p>
-<p>& ~DO_DIRECT_IO</p></td>
+<p>&amp; ~DO_DIRECT_IO</p></td>
 <td align="left"><p>METHOD_NEITHER</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>~DO_BUFFERED_IO</p>
-<p>& DO_DIRECT_IO</p></td>
+<p>&amp; DO_DIRECT_IO</p></td>
 <td align="left"><p>METHOD_DIRECT</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>DO_BUFFERED_IO</p>
-<p>& ~DO_DIRECT_IO</p></td>
+<p>&amp; ~DO_DIRECT_IO</p></td>
 <td align="left"><p>METHOD_BUFFERED</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>DO_BUFFERED_IO</p>
-<p>& DO_DIRECT_IO</p></td>
+<p>&amp; DO_DIRECT_IO</p></td>
 <td align="left"><p>METHOD_BUFFERED</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 <a href="" id="irp--associatedirp-systembuffer"></a>*Irp-&gt;AssociatedIrp.SystemBuffer*  
 Pointer to a system-supplied buffer to be used as an intermediate system buffer, if the DO\_BUFFERED\_IO flag is set in *DeviceObject-&gt;Flags*. Otherwise, this member is set to **NULL**.
@@ -127,7 +123,7 @@ This member can be one or more of the following:
 </tbody>
 </table>
 
- 
+ 
 
 <a href="" id="irpsp--majorfunction"></a>*IrpSp-&gt;MajorFunction*  
 Specifies IRP\_MJ\_QUERY\_QUOTA.
@@ -138,7 +134,7 @@ Length, in bytes, of the buffer pointed to by *Irp-&gt;UserBuffer*.
 <a href="" id="irpsp--parameters-queryquota-sidlist"></a>*IrpSp-&gt;Parameters.QueryQuota.SidList*  
 Optional pointer to a list of SIDs whose quota information is to be returned. Each entry in the list is a [**FILE\_GET\_QUOTA\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff540298) structure. This structure is defined as follows:
 
-```
+```cpp
 typedef struct _FILE_GET_QUOTA_INFORMATION {
     ULONG NextEntryOffset;
     ULONG SidLength;
@@ -173,7 +169,7 @@ typedef struct _FILE_GET_QUOTA_INFORMATION {
 </tbody>
 </table>
 
- 
+ 
 
 <a href="" id="irpsp--parameters-queryquota-sidlistlength"></a>*IrpSp-&gt;Parameters.QueryQuota.SidListLength*  
 Length, in bytes, of the list of SIDs, if one is specified.
@@ -200,9 +196,9 @@ Optional pointer to a SID that indicates that the returned information is to sta
 
 [**IRP\_MJ\_SET\_QUOTA**](irp-mj-set-quota.md)
 
- 
+ 
 
- 
+ 
 
 
 

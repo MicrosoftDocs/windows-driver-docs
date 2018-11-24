@@ -2,11 +2,7 @@
 title: Writing Hyper-V Extensible Switch Extensions
 description: Writing Hyper-V Extensible Switch Extensions
 ms.assetid: 282CEE4D-0818-4091-A327-68FDD7B0D12F
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,11 +27,11 @@ The following topics provide information about how to write Hyper-V extensible s
 
 **Note**  Extensible switch extensions are based on the NDIS filter driver architecture. For more information, see [NDIS Filter Drivers](ndis-filter-drivers.md).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

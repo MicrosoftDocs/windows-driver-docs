@@ -1,6 +1,5 @@
 ---
 title: USBCAMD2 Features
-author: windows-driver-content
 description: USBCAMD2 Features
 ms.assetid: e800948a-6903-496e-9561-697ff5ccd1d7
 keywords:
@@ -10,11 +9,7 @@ keywords:
 - USBCAMD2 features WDK Windows 2000 Kernel Streaming
 - USB-based streaming cameras WDK USBCAMD2
 - cameras WDK USBCAMD2
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -43,9 +38,9 @@ The following features are present in USBCAMD2 (the original USBCAMD minidriver 
 
     USBCAMD2 provides support for Plug and Play in Windows 2000 and later versions, such as surprise device removal. USBCAMD2 also supports system hibernation in Windows XP and later (hibernation support is not present in Windows 98 with no service packs installed, Windows 98 SE, or Windows 2000) and Windows Millennium Edition and later.
 
- 
+ 
 
- 
+ 
 
 
 

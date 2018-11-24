@@ -7,11 +7,7 @@ keywords:
 - client-side profile drivers WDK Bluetooth
 - server-side profile drivers WDK Bluetooth
 - INF files WDK Bluetooth
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -54,7 +50,7 @@ The Bluetooth driver stack supports service GUIDs as defined by the Bluetooth SI
 
 **Note**  You can use the *Guidgen.exe* tool that is provided with the Microsoft Windows SDK to create custom GUIDs.
 
- 
+ 
 
 To expose computer functionality that remote Bluetooth devices can use, you must write a user-mode installation application.
 
@@ -62,7 +58,7 @@ The installation application must communicate with the Bluetooth driver stack to
 
 The installation application must call the user-mode API **BluetoothSetLocalServiceInfo**. However, before the application can call this API, the application must have the SE\_LOAD\_DRIVER\_NAME security privilege. The following code example demonstrates how to obtain this privilege. Note, the example does not demonstrate error handling.
 
-```
+```cpp
 HANDLE procToken;
 LUID luid;
 TOKEN_PRIVILEGES tp;
@@ -120,9 +116,9 @@ You can restrict the Bluetooth driver stack to load profile driver and software 
 
 BTHENUM\\{00001124-0000-1000-8000-00805F9B34FB}\_LOCALMFG& *nnnn*
 
- 
+ 
 
- 
+ 
 
 
 

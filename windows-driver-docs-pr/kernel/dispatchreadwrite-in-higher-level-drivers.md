@@ -1,14 +1,9 @@
 ---
 title: DispatchReadWrite in Higher-Level Drivers
-author: windows-driver-content
 description: DispatchReadWrite in Higher-Level Drivers
 ms.assetid: d8406115-c62e-4362-8d2c-77d0414c4104
 keywords: ["DispatchReadWrite routine", "dispatch routines WDK kernel , DispatchReadWrite routine", "read/write dispatch routines WDK kernel", "IRP_MJ_WRITE I/O function codes", "IRP_MJ_READ I/O function codes", "data transfers WDK kernel , read/write dispatch routines", "transferring data WDK kernel , read/write dispatch routines"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +25,9 @@ If the underlying device driver returns an IRP for a partial transfer with an er
 
 If a higher-level driver's *DispatchReadWrite* routine allocates memory for partial-transfer operations and its allocation will be accessed by the driver's *IoCompletion* routine (or by the underlying device driver), the *DispatchReadWrite* routine must allocate that memory from nonpaged pool.
 
- 
+ 
 
- 
+ 
 
 
 

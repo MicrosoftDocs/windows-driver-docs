@@ -1,6 +1,5 @@
 ---
 title: Packet-based DMA in AVStream
-author: windows-driver-content
 description: Packet-based DMA in AVStream
 ms.assetid: 4246819e-d8d6-4302-9477-675ca181b1e3
 keywords:
@@ -12,11 +11,7 @@ keywords:
 - scatter/gather DMA WDK AVStream
 - capture buffers WDK AVStream
 - buffers WDK AVStream
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -66,9 +61,9 @@ If necessary to resume processing, call [**KsPinAttemptProcessing**](https://msd
 
 Note that if a mapping is less than one physical page in length, it is not guaranteed to reside on a single physical page.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -10,11 +10,7 @@ api_name:
 - Pvk2Pfx
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -64,9 +60,9 @@ The following command generates the .pfx file Mypfxfile.pfx from Mypvkfile.pvk a
 pvk2pfx -pvk mypvkfile.pvk -pi mypassword -spc myspcfile.spc -pfx mypfxfile.pfx -f
 ```
 
- 
+ 
 
- 
+ 
 
 
 

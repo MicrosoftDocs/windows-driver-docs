@@ -7,11 +7,7 @@ keywords:
 - debugging drivers WDK Windows 2000 display
 - hardware acceleration slider WDK Windows 2000 display
 - acceleration slider WDK Windows 2000 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -89,9 +85,9 @@ The slider is in the far left position. The panning driver (part of kernel-mode 
 
 Another way to limit display hardware acceleration is to set flags in the **CapabilityOverride** registry entry. For example, setting the 0x2 flag in the **CapabilityOverride** entry is equivalent to placing the hardware acceleration slider at level 3. For a description of the **CapabilityOverride** registry entry, see [Display INF File Sections](display-inf-file-sections.md).
 
- 
+ 
 
- 
+ 
 
 
 

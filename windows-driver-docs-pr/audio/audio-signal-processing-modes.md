@@ -2,11 +2,7 @@
 title: Audio Signal Processing Modes
 description: Drivers declare the supported audio signal processing modes for each device.
 ms.assetid: 104275F8-2302-484B-B673-7448CAA1F793
-ms.author: windowsdriverdev
 ms.date: 05/14/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -71,7 +67,7 @@ Audio categories (selected by applications) are mapped to audio modes (defined b
 </tbody>
 </table>
 
- 
+ 
 
 \* New in Windows 10.
 
@@ -105,7 +101,7 @@ In order to inform the system about the usage of an audio stream, applications h
 | Game Effects   | Balls bouncing, car engine sounds, bullets, etc.                                                      |
 | Other          | Uncategorized streams                                                                                 |
 
- 
+ 
 
 As mentioned previously, audio categories (selected by applications) are mapped to audio modes (defined by drivers). Applications can tag each of their streams with one of the 10 audio categories.
 
@@ -115,7 +111,7 @@ Applications do not have the option to change the mapping between an audio categ
 
 The following WASAPI code from the WASAPIAudio sample shows how to set different audio categories.
 
-```
+```cpp
 // The ActivateAudioInterfaceAsync is a replacment for IMMDevice::Activate
 IActivateAudioInterfaceAsyncOperation *asyncOp = nullptr;
 HRESULT hr = S_OK;
@@ -178,7 +174,7 @@ For more information about the static audio stream categories, see [AudioCategor
 
 This is the CLSID for the MsApoFxProxy.dll “proxy effect” which queries the driver to get the list of active effects;
 
-```
+```cpp
 FX_DISCOVER_EFFECTS_APO_CLSID  = "{889C03C8-ABAD-4004-BF0A-BC7BB825E166}"
 ```
 
@@ -188,7 +184,7 @@ KSATTRIBUTEID\_AUDIOSIGNALPROCESSING\_MODE is an identifier to Kernel Streaming 
 
 The \#define statements shown here, are available in the KSMedia.h header file.
 
-```
+```cpp
 #define STATIC_KSATTRIBUTEID_AUDIOSIGNALPROCESSING_MODE 0xe1f89eb5, 0x5f46, 0x419b, 0x96, 0x7b, 0xff, 0x67, 0x70, 0xb9, 0x84, 0x1
 DEFINE_GUIDSTRUCT("E1F89EB5-5F46-419B-967B-FF6770B98401", KSATTRIBUTEID_AUDIOSIGNALPROCESSING_MODE);
 #define KSATTRIBUTEID_AUDIOSIGNALPROCESSING_MODE DEFINE_GUIDNAMED(KSATTRIBUTEID_AUDIOSIGNALPROCESSING_MODE)
@@ -255,7 +251,7 @@ The following audio effects are available for use in Windows 10.
 <td align="left">Room Correction</td>
 <td align="left"><p>Room correction optimizes the listening experience for a particular location in the room, for example, the center cushion of your couch, by automatically calculating the optimal combination of delay, frequency response, and gain adjustments.</p>
 <p>The room correction feature better matches sound to the image on the video screen and is also useful in cases where desktop speakers are placed in nonstandard locations. room correction processing is an improvement over similar features in high-end receivers because it better accounts for the way in which the human ear processes sound.</p>
-<p>Calibration is performed with the help of a microphone, and the procedure can be used with both stereo and multichannel systems. The user places the microphone where the user intends to sit and then activates a wizard that measures the room response. The wizard plays a set of specially designed tones from each loudspeaker in turn, and measures the distance, frequency response, and overall gain of each loudspeaker from the microphone's location.</p></td>
+<p>Calibration is performed with the help of a microphone, and the procedure can be used with both stereo and multichannel systems. The user places the microphone where the user intends to sit and then activates a wizard that measures the room response. The wizard plays a set of specially designed tones from each loudspeaker in turn, and measures the distance, frequency response, and overall gain of each loudspeaker from the microphone&#39;s location.</p></td>
 </tr>
 <tr class="odd">
 <td align="left">Bass Management</td>
@@ -269,7 +265,7 @@ The following audio effects are available for use in Windows 10.
 </tr>
 <tr class="odd">
 <td align="left">Speaker Protection</td>
-<td align="left"><p>The purpose of speaker protection is to suppress resonant frequencies that would cause the speakers to do physical harm to any of the PCs' system components. For example, some physical hard drives can be damaged by playing a loud sound at just the right frequency. Secondarily, speaker protection works to minimize damage to speakers, by attenuating the signal, when it exceeds certain values.</p></td>
+<td align="left"><p>The purpose of speaker protection is to suppress resonant frequencies that would cause the speakers to do physical harm to any of the PCs&#39; system components. For example, some physical hard drives can be damaged by playing a loud sound at just the right frequency. Secondarily, speaker protection works to minimize damage to speakers, by attenuating the signal, when it exceeds certain values.</p></td>
 </tr>
 <tr class="even">
 <td align="left">Speaker Compensation</td>
@@ -277,18 +273,18 @@ The following audio effects are available for use in Windows 10.
 </tr>
 <tr class="odd">
 <td align="left">Dynamic Range Compression</td>
-<td align="left"><p>Dynamic range compression amplifies quiet sounds by narrowing or &quot;compressing&quot; an audio signal's dynamic range. Audio compression amplifies quiet sounds which are below a certain threshold while loud sounds remain unaffected.</p></td>
+<td align="left"><p>Dynamic range compression amplifies quiet sounds by narrowing or &quot;compressing&quot; an audio signal&#39;s dynamic range. Audio compression amplifies quiet sounds which are below a certain threshold while loud sounds remain unaffected.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The \#define statements shown here, are available in the KSMedia.h header file.
 
 DEFAULT
 
-```
+```cpp
 #define STATIC_AUDIO_SIGNALPROCESSINGMODE_DEFAULT 0xc18e2f7e, 0x933d, 0x4965, 0xb7, 0xd1, 0x1e, 0xef, 0x22, 0x8d, 0x2a, 0xf3
 DEFINE_GUIDSTRUCT("C18E2F7E-933D-4965-B7D1-1EEF228D2AF3", AUDIO_SIGNALPROCESSINGMODE_DEFAULT);
 #define AUDIO_SIGNALPROCESSINGMODE_DEFAULT DEFINE_GUIDNAMED(AUDIO_SIGNALPROCESSINGMODE_DEFAULT)
@@ -296,7 +292,7 @@ DEFINE_GUIDSTRUCT("C18E2F7E-933D-4965-B7D1-1EEF228D2AF3", AUDIO_SIGNALPROCESSING
 
 RAW
 
-```
+```cpp
 #define STATIC_AUDIO_SIGNALPROCESSINGMODE_RAW 0x9e90ea20, 0xb493, 0x4fd1, 0xa1, 0xa8, 0x7e, 0x13, 0x61, 0xa9, 0x56, 0xcf
 DEFINE_GUIDSTRUCT("9E90EA20-B493-4FD1-A1A8-7E1361A956CF", AUDIO_SIGNALPROCESSINGMODE_RAW);
 #define AUDIO_SIGNALPROCESSINGMODE_RAW DEFINE_GUIDNAMED(AUDIO_SIGNALPROCESSINGMODE_RAW)
@@ -304,7 +300,7 @@ DEFINE_GUIDSTRUCT("9E90EA20-B493-4FD1-A1A8-7E1361A956CF", AUDIO_SIGNALPROCESSING
 
 ACOUSTIC ECHO CANCELLATION
 
-```
+```cpp
 #define STATIC_AUDIO_EFFECT_TYPE_ACOUSTIC_ECHO_CANCELLATION 0x6f64adbe, 0x8211, 0x11e2, 0x8c, 0x70, 0x2c, 0x27, 0xd7, 0xf0, 0x01, 0xfa
 DEFINE_GUIDSTRUCT("6f64adbe-8211-11e2-8c70-2c27d7f001fa", AUDIO_EFFECT_TYPE_ACOUSTIC_ECHO_CANCELLATION);
 #define AUDIO_EFFECT_TYPE_ACOUSTIC_ECHO_CANCELLATION DEFINE_GUIDNAMED(AUDIO_EFFECT_TYPE_ACOUSTIC_ECHO_CANCELLATION)
@@ -312,7 +308,7 @@ DEFINE_GUIDSTRUCT("6f64adbe-8211-11e2-8c70-2c27d7f001fa", AUDIO_EFFECT_TYPE_ACOU
 
 NOISE SUPPRESSION
 
-```
+```cpp
 #define STATIC_AUDIO_EFFECT_TYPE_NOISE_SUPPRESSION          0x6f64adbf, 0x8211, 0x11e2, 0x8c, 0x70, 0x2c, 0x27, 0xd7, 0xf0, 0x01, 0xfa
 DEFINE_GUIDSTRUCT("6f64adbf-8211-11e2-8c70-2c27d7f001fa", AUDIO_EFFECT_TYPE_NOISE_SUPPRESSION);
 #define AUDIO_EFFECT_TYPE_NOISE_SUPPRESSION DEFINE_GUIDNAMED(AUDIO_EFFECT_TYPE_NOISE_SUPPRESSION)
@@ -320,7 +316,7 @@ DEFINE_GUIDSTRUCT("6f64adbf-8211-11e2-8c70-2c27d7f001fa", AUDIO_EFFECT_TYPE_NOIS
 
 AUTOMATIC GAIN CONTROL
 
-```
+```cpp
 #define STATIC_AUDIO_EFFECT_TYPE_AUTOMATIC_GAIN_CONTROL     0x6f64adc0, 0x8211, 0x11e2, 0x8c, 0x70, 0x2c, 0x27, 0xd7, 0xf0, 0x01, 0xfa
 DEFINE_GUIDSTRUCT("6f64adc0-8211-11e2-8c70-2c27d7f001fa", AUDIO_EFFECT_TYPE_AUTOMATIC_GAIN_CONTROL);
 #define AUDIO_EFFECT_TYPE_AUTOMATIC_GAIN_CONTROL DEFINE_GUIDNAMED(AUDIO_EFFECT_TYPE_AUTOMATIC_GAIN_CONTROL)
@@ -328,7 +324,7 @@ DEFINE_GUIDSTRUCT("6f64adc0-8211-11e2-8c70-2c27d7f001fa", AUDIO_EFFECT_TYPE_AUTO
 
 BEAMFORMING
 
-```
+```cpp
 #define STATIC_AUDIO_EFFECT_TYPE_BEAMFORMING                0x6f64adc1, 0x8211, 0x11e2, 0x8c, 0x70, 0x2c, 0x27, 0xd7, 0xf0, 0x01, 0xfa
 DEFINE_GUIDSTRUCT("6f64adc1-8211-11e2-8c70-2c27d7f001fa", AUDIO_EFFECT_TYPE_BEAMFORMING);
 #define AUDIO_EFFECT_TYPE_BEAMFORMING DEFINE_GUIDNAMED(AUDIO_EFFECT_TYPE_BEAMFORMING)
@@ -336,7 +332,7 @@ DEFINE_GUIDSTRUCT("6f64adc1-8211-11e2-8c70-2c27d7f001fa", AUDIO_EFFECT_TYPE_BEAM
 
 CONSTANT TONE REMOVAL
 
-```
+```cpp
 #define STATIC_AUDIO_EFFECT_TYPE_CONSTANT_TONE_REMOVAL      0x6f64adc2, 0x8211, 0x11e2, 0x8c, 0x70, 0x2c, 0x27, 0xd7, 0xf0, 0x01, 0xfa
 DEFINE_GUIDSTRUCT("6f64adc2-8211-11e2-8c70-2c27d7f001fa", AUDIO_EFFECT_TYPE_CONSTANT_TONE_REMOVAL);
 #define AUDIO_EFFECT_TYPE_CONSTANT_TONE_REMOVAL DEFINE_GUIDNAMED(AUDIO_EFFECT_TYPE_CONSTANT_TONE_REMOVAL)
@@ -344,7 +340,7 @@ DEFINE_GUIDSTRUCT("6f64adc2-8211-11e2-8c70-2c27d7f001fa", AUDIO_EFFECT_TYPE_CONS
 
 EQUALIZER
 
-```
+```cpp
 #define STATIC_AUDIO_EFFECT_TYPE_EQUALIZER                  0x6f64adc3, 0x8211, 0x11e2, 0x8c, 0x70, 0x2c, 0x27, 0xd7, 0xf0, 0x01, 0xfa
 DEFINE_GUIDSTRUCT("6f64adc3-8211-11e2-8c70-2c27d7f001fa", AUDIO_EFFECT_TYPE_EQUALIZER);
 #define AUDIO_EFFECT_TYPE_EQUALIZER DEFINE_GUIDNAMED(AUDIO_EFFECT_TYPE_EQUALIZER)
@@ -352,7 +348,7 @@ DEFINE_GUIDSTRUCT("6f64adc3-8211-11e2-8c70-2c27d7f001fa", AUDIO_EFFECT_TYPE_EQUA
 
 LOUDNESS EQUALIZER
 
-```
+```cpp
 #define STATIC_AUDIO_EFFECT_TYPE_LOUDNESS_EQUALIZER         0x6f64adc4, 0x8211, 0x11e2, 0x8c, 0x70, 0x2c, 0x27, 0xd7, 0xf0, 0x01, 0xfa
 DEFINE_GUIDSTRUCT("6f64adc4-8211-11e2-8c70-2c27d7f001fa", AUDIO_EFFECT_TYPE_LOUDNESS_EQUALIZER);
 #define AUDIO_EFFECT_TYPE_LOUDNESS_EQUALIZER DEFINE_GUIDNAMED(AUDIO_EFFECT_TYPE_LOUDNESS_EQUALIZER)
@@ -360,7 +356,7 @@ DEFINE_GUIDSTRUCT("6f64adc4-8211-11e2-8c70-2c27d7f001fa", AUDIO_EFFECT_TYPE_LOUD
 
 BASS BOOST
 
-```
+```cpp
 #define STATIC_AUDIO_EFFECT_TYPE_BASS_BOOST                 0x6f64adc5, 0x8211, 0x11e2, 0x8c, 0x70, 0x2c, 0x27, 0xd7, 0xf0, 0x01, 0xfa
 DEFINE_GUIDSTRUCT("6f64adc5-8211-11e2-8c70-2c27d7f001fa", AUDIO_EFFECT_TYPE_BASS_BOOST);
 #define AUDIO_EFFECT_TYPE_BASS_BOOST DEFINE_GUIDNAMED(AUDIO_EFFECT_TYPE_BASS_BOOST)
@@ -368,7 +364,7 @@ DEFINE_GUIDSTRUCT("6f64adc5-8211-11e2-8c70-2c27d7f001fa", AUDIO_EFFECT_TYPE_BASS
 
 VIRTUAL SURROUND
 
-```
+```cpp
 #define STATIC_AUDIO_EFFECT_TYPE_VIRTUAL_SURROUND           0x6f64adc6, 0x8211, 0x11e2, 0x8c, 0x70, 0x2c, 0x27, 0xd7, 0xf0, 0x01, 0xfa
 DEFINE_GUIDSTRUCT("6f64adc6-8211-11e2-8c70-2c27d7f001fa", AUDIO_EFFECT_TYPE_VIRTUAL_SURROUND);
 #define AUDIO_EFFECT_TYPE_VIRTUAL_SURROUND DEFINE_GUIDNAMED(AUDIO_EFFECT_TYPE_VIRTUAL_SURROUND)
@@ -376,7 +372,7 @@ DEFINE_GUIDSTRUCT("6f64adc6-8211-11e2-8c70-2c27d7f001fa", AUDIO_EFFECT_TYPE_VIRT
 
 VIRTUAL HEADPHONES
 
-```
+```cpp
 #define STATIC_AUDIO_EFFECT_TYPE_VIRTUAL_HEADPHONES         0x6f64adc7, 0x8211, 0x11e2, 0x8c, 0x70, 0x2c, 0x27, 0xd7, 0xf0, 0x01, 0xfa
 DEFINE_GUIDSTRUCT("6f64adc7-8211-11e2-8c70-2c27d7f001fa", AUDIO_EFFECT_TYPE_VIRTUAL_HEADPHONES);
 #define AUDIO_EFFECT_TYPE_VIRTUAL_HEADPHONES DEFINE_GUIDNAMED(AUDIO_EFFECT_TYPE_VIRTUAL_HEADPHONES)
@@ -384,7 +380,7 @@ DEFINE_GUIDSTRUCT("6f64adc7-8211-11e2-8c70-2c27d7f001fa", AUDIO_EFFECT_TYPE_VIRT
 
 ROOM CORRECTION
 
-```
+```cpp
 #define STATIC_AUDIO_EFFECT_TYPE_ROOM_CORRECTION            0x6f64adc9, 0x8211, 0x11e2, 0x8c, 0x70, 0x2c, 0x27, 0xd7, 0xf0, 0x01, 0xfa
 DEFINE_GUIDSTRUCT("6f64adc9-8211-11e2-8c70-2c27d7f001fa", AUDIO_EFFECT_TYPE_ROOM_CORRECTION);
 #define AUDIO_EFFECT_TYPE_ROOM_CORRECTION DEFINE_GUIDNAMED(AUDIO_EFFECT_TYPE_ROOM_CORRECTION)
@@ -392,7 +388,7 @@ DEFINE_GUIDSTRUCT("6f64adc9-8211-11e2-8c70-2c27d7f001fa", AUDIO_EFFECT_TYPE_ROOM
 
 BASS MANAGEMENT
 
-```
+```cpp
 #define STATIC_AUDIO_EFFECT_TYPE_BASS_MANAGEMENT            0x6f64adca, 0x8211, 0x11e2, 0x8c, 0x70, 0x2c, 0x27, 0xd7, 0xf0, 0x01, 0xfa
 DEFINE_GUIDSTRUCT("6f64adca-8211-11e2-8c70-2c27d7f001fa", AUDIO_EFFECT_TYPE_BASS_MANAGEMENT);
 #define AUDIO_EFFECT_TYPE_BASS_MANAGEMENT DEFINE_GUIDNAMED(AUDIO_EFFECT_TYPE_BASS_MANAGEMENT)
@@ -400,7 +396,7 @@ DEFINE_GUIDSTRUCT("6f64adca-8211-11e2-8c70-2c27d7f001fa", AUDIO_EFFECT_TYPE_BASS
 
 ENVIRONMENTAL EFFECTS
 
-```
+```cpp
 #define STATIC_AUDIO_EFFECT_TYPE_ENVIRONMENTAL_EFFECTS      0x6f64adcb, 0x8211, 0x11e2, 0x8c, 0x70, 0x2c, 0x27, 0xd7, 0xf0, 0x01, 0xfa
 DEFINE_GUIDSTRUCT("6f64adcb-8211-11e2-8c70-2c27d7f001fa", AUDIO_EFFECT_TYPE_ENVIRONMENTAL_EFFECTS);
 #define AUDIO_EFFECT_TYPE_ENVIRONMENTAL_EFFECTS DEFINE_GUIDNAMED(AUDIO_EFFECT_TYPE_ENVIRONMENTAL_EFFECTS)
@@ -408,7 +404,7 @@ DEFINE_GUIDSTRUCT("6f64adcb-8211-11e2-8c70-2c27d7f001fa", AUDIO_EFFECT_TYPE_ENVI
 
 SPEAKER PROTECTION
 
-```
+```cpp
 #define STATIC_AUDIO_EFFECT_TYPE_SPEAKER_PROTECTION         0x6f64adcc, 0x8211, 0x11e2, 0x8c, 0x70, 0x2c, 0x27, 0xd7, 0xf0, 0x01, 0xfa
 DEFINE_GUIDSTRUCT("6f64adcc-8211-11e2-8c70-2c27d7f001fa", AUDIO_EFFECT_TYPE_SPEAKER_PROTECTION);
 #define AUDIO_EFFECT_TYPE_SPEAKER_PROTECTION DEFINE_GUIDNAMED(AUDIO_EFFECT_TYPE_SPEAKER_PROTECTION)
@@ -416,7 +412,7 @@ DEFINE_GUIDSTRUCT("6f64adcc-8211-11e2-8c70-2c27d7f001fa", AUDIO_EFFECT_TYPE_SPEA
 
 SPEAKER COMPENSATION
 
-```
+```cpp
 #define STATIC_AUDIO_EFFECT_TYPE_SPEAKER_COMPENSATION       0x6f64adcd, 0x8211, 0x11e2, 0x8c, 0x70, 0x2c, 0x27, 0xd7, 0xf0, 0x01, 0xfa
 DEFINE_GUIDSTRUCT("6f64adcd-8211-11e2-8c70-2c27d7f001fa", AUDIO_EFFECT_TYPE_SPEAKER_COMPENSATION);
 #define AUDIO_EFFECT_TYPE_SPEAKER_COMPENSATION DEFINE_GUIDNAMED(AUDIO_EFFECT_TYPE_SPEAKER_COMPENSATION)
@@ -424,15 +420,15 @@ DEFINE_GUIDSTRUCT("6f64adcd-8211-11e2-8c70-2c27d7f001fa", AUDIO_EFFECT_TYPE_SPEA
 
 DYNAMIC RANGE COMPRESSION
 
-```
+```cpp
 #define STATIC_AUDIO_EFFECT_TYPE_DYNAMIC_RANGE_COMPRESSION  0x6f64adce, 0x8211, 0x11e2, 0x8c, 0x70, 0x2c, 0x27, 0xd7, 0xf0, 0x01, 0xfa
 DEFINE_GUIDSTRUCT("6f64adce-8211-11e2-8c70-2c27d7f001fa", AUDIO_EFFECT_TYPE_DYNAMIC_RANGE_COMPRESSION);
 #define AUDIO_EFFECT_TYPE_DYNAMIC_RANGE_COMPRESSION DEFINE_GUIDNAMED(AUDIO_EFFECT_TYPE_DYNAMIC_RANGE_COMPRESSION)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

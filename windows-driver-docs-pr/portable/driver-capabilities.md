@@ -1,11 +1,7 @@
 ---
 Description: Driver Capabilities
 title: Driver Capabilities
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,7 +26,7 @@ When a Windows-based application calls one of the methods in the **IPortableDevi
 | **IPortableDeviceCapabilities::GetSupportedEvents**           | **OnGetSupportedEvents**           |
 | **IPortableDeviceCapabilities::GetEventOptions**              | **OnGetEventOptions**              |
 
- 
+ 
 
 The WpdCapabilities command handlers are invoked by the **WpdCapabilities::DispatchMessage** method. The following excerpt from the sample driver contains the code for **WpdCapabilities::DispatchMessage**.
 
@@ -112,9 +108,9 @@ HRESULT WpdCapabilities::DispatchWpdMessage(const PROPERTYKEY&      Command,
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

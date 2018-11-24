@@ -3,11 +3,7 @@ title: amli ds
 description: The amli ds extension displays an AML stack.
 ms.assetid: 62a1a1dd-c0d8-4509-a29f-16ad2b96b412
 keywords: ["amli ds Windows Debugging"]
-ms.author: domars
-ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 09/17/2018
 topic_type:
 - apiref
 api_name:
@@ -24,7 +20,7 @@ The **!amli ds** extension displays an AML stack.
 
 Syntax
 
-```
+```dbgcmd
     !amli ds [/v] [Address] 
 ```
 
@@ -45,9 +41,9 @@ The !stacks extension displays information about the kernel stacks.
 
 For information about related commands and their uses, see [The AMLI Debugger](the-amli-debugger.md).
 
- 
+ 
 
- 
+ 
 
 
 

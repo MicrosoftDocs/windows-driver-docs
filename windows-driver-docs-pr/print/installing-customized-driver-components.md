@@ -1,6 +1,5 @@
 ---
 title: Installing Customized Driver Components
-author: windows-driver-content
 description: Installing Customized Driver Components
 ms.assetid: 88f189bd-97f5-4bc6-ba3e-3d9da18e2102
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - customizing printer drivers WDK , installing components
 - installing custom printer driver components WDK
 - INF files WDK print , customized driver components
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,7 +31,7 @@ where *n* specifies the order in which the installer installs the files. Numbers
 
 For example, if you are providing two rendering plug-ins and one user interface plug-in, and your printer model is XYZ, your .ini file might appear as follows:
 
-```
+```cpp
 [OEMFiles]
 OEMDriverFile1=XYZDRV1.DLL
 OEMConfigFile1=XYZUI1.DLL
@@ -57,9 +52,9 @@ If you provide a printer INF file, a convenient way to install and register a cu
 
 Alternatively, you can install a customized component by making the component a dependent file for another print component such as a port monitor or a status application. However, this method might create difficulties because [point-and-print](introduction-to-point-and-print.md) operations install only the driver and driver-dependent files on the client. If a customized component is not listed as a dependent file of the printer driver, the component must be installed on the client in some way other than as part of the point-and-print operation.
 
- 
+ 
 
- 
+ 
 
 
 

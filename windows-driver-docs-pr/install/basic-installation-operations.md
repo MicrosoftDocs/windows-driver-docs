@@ -7,11 +7,7 @@ keywords:
 - device installation functions WDK SetupAPI
 - general Setup functions WDK SetupAPI
 - SP_DEVINFO_DATA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,9 +31,9 @@ You can install a new [device setup class](device-setup-classes.md) by using the
 
 You can remove a device from the system by using the [**SetupDiRemoveDevice**](https://msdn.microsoft.com/library/windows/hardware/ff552097) function. This function deletes the device's registry entries and, if possible, stops the device. If the device cannot be dynamically stopped, the function sets flags that eventually cause the user to be prompted to shut down the system.
 
- 
+ 
 
- 
+ 
 
 
 

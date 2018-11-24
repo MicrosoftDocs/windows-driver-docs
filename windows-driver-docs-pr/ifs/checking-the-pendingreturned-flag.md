@@ -1,16 +1,11 @@
 ---
 title: Checking the PendingReturned Flag
-author: windows-driver-content
 description: Checking the PendingReturned Flag
 ms.assetid: cdcdffb0-4210-4bf0-984e-b0c3234df129
 keywords:
 - IRP completion routines WDK file system , PendingReturned flag
 - PendingReturned flag
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,9 +17,9 @@ ms.localizationpriority: medium
 
 If a completion routine does not signal an event, it must check the **Irp‑&gt;PendingReturned** flag. If this flag is set, the completion routine must mark the IRP pending by calling [**IoMarkIrpPending**](https://msdn.microsoft.com/library/windows/hardware/ff549422).
 
- 
+ 
 
- 
+ 
 
 
 

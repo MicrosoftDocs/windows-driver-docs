@@ -1,14 +1,9 @@
 ---
 title: Introduction to Spin Locks
-author: windows-driver-content
 description: Introduction to Spin Locks
 ms.assetid: a37c0db4-ff9c-4958-a9f4-62b671458d03
 keywords: ["KSPIN_LOCK", "executive spin locks WDK kernel", "interrupt spin locks WDK kernel", "queued spin locks WDK kernel", "spin locks WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -50,9 +45,9 @@ Every driver that has an ISR uses an *interrupt spin lock* to protect any data o
 
     -   Call an external routine that violates any of the preceding rules.
 
- 
+ 
 
- 
+ 
 
 
 

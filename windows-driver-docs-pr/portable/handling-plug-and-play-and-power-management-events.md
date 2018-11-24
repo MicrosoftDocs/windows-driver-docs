@@ -1,11 +1,7 @@
 ---
 Description: Handling Plug and Play and Power Management Events
 title: Handling Plug and Play and Power Management Events
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,7 +17,7 @@ In the WpdHelloWorldDriver sample, most of the PnP and PM event handlers either 
 | **IPnpCallbackHardware::OnPrepareHardware** | Calls the **WpdBaseDriver::Initialize** method. Initializes the WPD class extension and updates the device-friendly name. |
 | **IPnPCallbackHardware::OnReleaseHardware** | Calls the **WpdBaseDriver::Uninitialize** method and uninitializes the WPD class extension.                               |
 
- 
+ 
 
 For a description of each interface and its methods, see the [UMDF documentation](http://go.microsoft.com/fwlink/p/?linkid=153678)..
 
@@ -31,9 +27,9 @@ For a description of each interface and its methods, see the [UMDF documentation
 ****
 [The WPD Driver Samples](the-wpd-driver-samples.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: DDI Compliance Rules
 description: DDI Compliance Rules
 ms.assetid: f020fff9-f880-4aa8-b422-5452728d2fdd
-ms.author: windowsdriverdev
 ms.date: 05/21/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,9 +31,9 @@ Starting in Windows 8, you can configure [Driver Verifier](https://msdn.microso
 
 [Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff545448)
 [Static Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff552808)
- 
+ 
 
- 
+ 
 
 
 

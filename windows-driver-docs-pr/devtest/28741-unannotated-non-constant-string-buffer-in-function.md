@@ -2,11 +2,7 @@
 title: C28741
 description: Warning C28741 Unannotated buffer in the function.
 ms.assetid: 85F071C2-C91B-43D6-8F59-F1D1F955ECC1
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +30,9 @@ The following code example avoids this warning by using the SAL annotation **\_O
     int foo(_Out_writes_(cch) LPTSTR buffer, size_t cch );
 ```
 
- 
+ 
 
- 
+ 
 
 
 

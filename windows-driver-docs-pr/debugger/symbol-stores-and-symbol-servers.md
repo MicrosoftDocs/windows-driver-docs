@@ -3,11 +3,7 @@ title: Symbol Stores and Symbol Servers
 description: Symbol Stores and Symbol Servers
 ms.assetid: de35abe7-93ad-4ca0-94d4-bed1230e057b
 keywords: ["symbol servers", "symbol servers, overview", "symbol stores", "symbol stores, overview", "SymSrv", "SymSrv, overview", "SymStore", "SymStore, overview"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,9 +33,9 @@ This section includes:
 
 If you are not setting up your own symbol store, but just intend to use the public Microsoft symbol store, see [Microsoft Public Symbols](microsoft-public-symbols.md).
 
- 
+ 
 
- 
+ 
 
 
 

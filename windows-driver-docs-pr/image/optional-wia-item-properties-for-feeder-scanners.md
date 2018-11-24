@@ -1,13 +1,8 @@
 ---
 title: Optional WIA Item Properties for Feeder Scanners
-author: windows-driver-content
 description: Optional WIA Item Properties for Feeder Scanners
 ms.assetid: 2af138ea-c06d-4009-90e2-8a5c7d6242bb
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -49,9 +44,9 @@ The WIA feeder scanner item can optionally support the following WIA properties:
 
 [**WIA\_IPS\_YSCALING**](https://msdn.microsoft.com/library/windows/hardware/ff552676)
 
- 
+ 
 
- 
+ 
 
 
 

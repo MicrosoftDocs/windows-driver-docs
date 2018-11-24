@@ -1,14 +1,9 @@
 ---
 title: Enabling Message-Signaled Interrupts in the Registry
-author: windows-driver-content
 description: Enabling Message-Signaled Interrupts in the Registry
 ms.assetid: 802ad994-51e7-4aef-a0f0-865dfaf4e6ce
 keywords: ["message-signaled interrupts WDK kernel , enabling", "enabling message-signaled interrupts WDK kernel", "MSIs WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +20,7 @@ Use an [**INF AddReg Directive**](https://msdn.microsoft.com/library/windows/har
 
 The following code example shows how to set the **MSISupported** entry under **Interrupt Management\\MessageSignaledInterruptProperties** for the device. Note that you must first create the **Interrupt Management** and **Interrupt Management\\MessageSignaledInterruptProperties** keys before you can set the **MSISupported** entry.
 
-```
+```cpp
 [mydevice.HW]
 AddReg = mydevice_addreg
 
@@ -35,9 +30,9 @@ HKR,Interrupt Management\MessageSignaledInterruptProperties,,0x00000010
 HKR,Interrupt Management\MessageSignaledInterruptProperties,MSISupported,0x00010001,1
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -8,11 +8,7 @@ keywords:
 - initializing miniport adapters
 - Initializing state WDK networking
 - MiniportInitializeEx
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -79,9 +75,9 @@ If [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/
 
 [Starting a Miniport Adapter](starting-an-adapter.md)
 
- 
+ 
 
- 
+ 
 
 
 

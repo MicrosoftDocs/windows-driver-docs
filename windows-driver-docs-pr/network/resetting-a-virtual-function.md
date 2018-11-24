@@ -2,11 +2,7 @@
 title: Resetting a Virtual Function
 description: Resetting a Virtual Function
 ms.assetid: 4B7A4E02-6383-45FB-9F75-D17C047C40D0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,9 +21,9 @@ When it handles this OID request, the PF miniport driver must follow these guide
 
 -   The reset operation must only affect the specified VF. The operation must not affect other VFs or the PF on the same network adapter.
 
- 
+ 
 
- 
+ 
 
 
 

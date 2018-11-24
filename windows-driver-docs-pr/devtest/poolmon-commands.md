@@ -2,11 +2,7 @@
 title: PoolMon Commands
 description: PoolMon Commands
 ms.assetid: 29f2c664-8a04-4e98-ac80-3900e0076d29
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,9 +18,9 @@ PoolMon has two separate, but related, sets of commands.
 
 -   [**PoolMon Run-time Commands**](poolmon-run-time-commands.md): To configure PoolMon while it is running, type a run-time command.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,11 +1,7 @@
 ---
 Description: Installing the WpdHelloWorldDriver Sample
 title: Installing the WpdHelloWorldDriver Sample
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -46,9 +42,9 @@ The following list identifies the steps you should accomplish to remove the samp
 
 [The WPD Driver Samples](the-wpd-driver-samples.md)
 
- 
+ 
 
- 
+ 
 
 
 

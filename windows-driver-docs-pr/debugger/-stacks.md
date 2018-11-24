@@ -3,11 +3,7 @@ title: stacks
 description: The stacks extension displays information about the kernel stacks.
 ms.assetid: f0777609-4785-4a6b-a6f5-9efaeb608df7
 keywords: ["stacks Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,7 +20,7 @@ The **!stacks** extension displays information about the kernel stacks.
 
 Syntax
 
-```
+```dbgcmd
 !stacks [Detail [FilterString]] 
 ```
 
@@ -55,7 +51,7 @@ Specifies the level of detail to use in the display. The following table lists t
 </tbody>
 </table>
 
- 
+ 
 
 <span id="_______FilterString______"></span><span id="_______filterstring______"></span><span id="_______FILTERSTRING______"></span> *FilterString*   
 Displays only threads that contain the specified substring in a symbol.
@@ -77,7 +73,7 @@ The [**!findstack**](-findstack.md) user-mode extension also displays informatio
 
 Here is an example of the simplest **!stacks** display:
 
-```
+```dbgcmd
 kd> !stacks 0
 Proc.Thread  .Thread  ThreadState  Blocker
                                      [System]
@@ -102,7 +98,7 @@ The fourth column shows the top address on the thread's stack.
 
 Here are examples of more detailed **!stacks** output:
 
-```
+```dbgcmd
 kd> !stacks 1
 Proc.Thread  .Thread  ThreadState  Blocker
                                      [System]
@@ -138,9 +134,9 @@ Proc.Thread  .Thread  ThreadState  Blocker
 .....
 ```
 
- 
+ 
 
- 
+ 
 
 
 

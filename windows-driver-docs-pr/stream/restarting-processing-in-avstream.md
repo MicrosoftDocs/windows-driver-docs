@@ -1,6 +1,5 @@
 ---
 title: Restarting Processing in AVStream
-author: windows-driver-content
 description: Restarting Processing in AVStream
 ms.assetid: f60d4dbd-61e6-4ae2-aa43-9edc8f36c3ff
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - AVStream process restarting WDK
 - resume processing WDK AVStream
 - pending status WDK AVStream
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +29,9 @@ AVStream initiates processing when new data arrives into a previously empty queu
 
 Do not return STATUS\_SUCCESS from the processing dispatch if the minidriver does not actually process data. This causes AVStream to immediately call the minidriver again, resulting in an infinite loop between AVStream and the processing dispatch.
 
- 
+ 
 
- 
+ 
 
 
 

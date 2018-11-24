@@ -3,11 +3,7 @@ title: Bug Check 0x8E KERNEL_MODE_EXCEPTION_NOT_HANDLED
 description: The KERNEL_MODE_EXCEPTION_NOT_HANDLED bug check has a value of 0x0000008E. This bug check indicates that a kernel-mode application generated an exception that the error handler did not catch.
 ms.assetid: 987ee868-5622-44e4-979c-3ae93a98b5b1
 keywords: ["Bug Check 0x8E KERNEL_MODE_EXCEPTION_NOT_HANDLED", "KERNEL_MODE_EXCEPTION_NOT_HANDLED"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The KERNEL\_MODE\_EXCEPTION\_NOT\_HANDLED bug check has a value of 0x0000008E. This bug check indicates that a kernel-mode application generated an exception that the error handler did not catch.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## KERNEL\_MODE\_EXCEPTION\_NOT\_HANDLED Parameters
 
@@ -58,7 +54,7 @@ The KERNEL\_MODE\_EXCEPTION\_NOT\_HANDLED bug check has a value of 0x0000008E. T
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -78,6 +74,7 @@ For a complete list of exception codes, see the Ntstatus.h file that is located 
 Resolution
 ----------
 
+The [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) debug extension displays information about the bug check and can be very helpful in determining the root cause.
 If you are not equipped to debug this problem, you should use some basic troubleshooting techniques:
 
 -   Make sure you have enough disk space.
@@ -98,7 +95,7 @@ If exception code 0x80000002 occurs, the trap frame supplies additional informat
 
 If you do not know the specific cause of the exception, consider the following items:
 
--   Hardware incompatibility. Make sure that any new hardware that is installed is compatible with the installed version of Windows. For example, you can get information about compatibility with Windows 7 at the [Windows 7 Compatibility Center](http://go.microsoft.com/fwlink/p/?LinkID=246806).
+-   Hardware incompatibility. Make sure that any new hardware that is installed is compatible with the installed version of Windows. For example, you can get information about compatibility with Windows 7 at the [Windows 7 Compatibility Center](https://go.microsoft.com/fwlink/p/?LinkID=246806).
 
 -   Faulty device driver or system service. A faulty device driver or system service might be responsible for this error. Hardware issues, such as BIOS incompatibilities, memory conflicts, and IRQ conflicts can also generate this error.
 
@@ -112,9 +109,9 @@ The error that generates this message can occur after the first restart during W
 
 You can resolve BIOS problems by upgrading the system BIOS version.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: ServiceProvider
 description: ServiceProvider
 ms.assetid: 6fa22f4d-9be9-4d02-b610-e20bed4958e9
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -59,13 +55,13 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[ServiceInfo](serviceinfo.md)</p></td>
-<td><p>The [ServiceInfo](serviceinfo.md) element is the parent element of the [ServiceInfo XML schema](serviceinfo-xml-schema.md).</p></td>
+<td><p><a href="serviceinfo.md" data-raw-source="[ServiceInfo](serviceinfo.md)">ServiceInfo</a></p></td>
+<td><p>The <a href="serviceinfo.md" data-raw-source="[ServiceInfo](serviceinfo.md)">ServiceInfo</a> element is the parent element of the <a href="serviceinfo-xml-schema.md" data-raw-source="[ServiceInfo XML schema](serviceinfo-xml-schema.md)">ServiceInfo XML schema</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="XSD"></span><span id="xsd"></span>XSD
 
@@ -88,9 +84,9 @@ The ServiceProvider element is not shown in Windows Connection Manager when the 
 
 The ServiceProvider element is required.
 
- 
+ 
 
- 
+ 
 
 
 

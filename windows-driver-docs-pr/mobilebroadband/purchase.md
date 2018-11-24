@@ -2,11 +2,7 @@
 title: Purchase
 description: Purchase
 ms.assetid: e753ba12-650e-4116-bb2e-dc17fc7bddee
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -56,13 +52,13 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[MobileBroadbandProfiles](mobilebroadbandprofiles.md)</p></td>
+<td><p><a href="mobilebroadbandprofiles.md" data-raw-source="[MobileBroadbandProfiles](mobilebroadbandprofiles.md)">MobileBroadbandProfiles</a></p></td>
 <td><p>Specifies the purchase and Internet mobile broadband profile files to use</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="XSD"></span><span id="xsd"></span>XSD
 
@@ -85,9 +81,9 @@ There are no child elements.
 
 The Purchase element is optional.
 
- 
+ 
 
- 
+ 
 
 
 

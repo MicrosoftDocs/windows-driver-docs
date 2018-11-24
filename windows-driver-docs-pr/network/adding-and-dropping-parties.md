@@ -5,11 +5,7 @@ ms.assetid: ec4c10a4-6a8f-4c1c-858e-954b98922e84
 keywords:
 - connection-oriented NDIS WDK , parties
 - CoNDIS WDK networking , parties
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +25,9 @@ This section includes:
 
 [Incoming Request to Drop a Party from a Multipoint Call](incoming-request-to-drop-a-party-from-a-multipoint-call.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,11 +3,7 @@ title: sysinfo
 description: The sysinfo extension reads and displays specified SMBIOS, Advanced Configuration and Power Interface (ACPI), and CPU information from a dump file or live system.
 ms.assetid: 1637fcc8-54ff-46a4-94f4-0b2df38507d1
 keywords: ["sysinfo Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!sysinfo** extension reads and displays specified SMBIOS, Advanced Configuration and Power Interface (ACPI), and CPU information from a dump file or live system.
 
-```
+```dbgcmd
 !sysinfo cpuinfo [-csv [-noheaders]]
 !sysinfo cpumicrocode [-csv [-noheaders]]
 !sysinfo cpuspeed [-csv [-noheaders]]
@@ -112,7 +108,7 @@ Displays help for this extension in the Debugger Command window.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -133,9 +129,9 @@ Microsoft makes every effort to remove personally identifiable information (PII)
 
 To stop execution of commands that include the **cpuinfo**, **gbl**, **registers**, or **smbios** parameters at any time, press CTRL+BREAK (in WinDbg) or CTRL+C (in KD).
 
- 
+ 
 
- 
+ 
 
 
 

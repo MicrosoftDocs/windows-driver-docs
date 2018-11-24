@@ -4,11 +4,7 @@ description: PNPCPU Overview
 ms.assetid: c6bc9567-3c6a-45ea-a39e-e77b52a2279a
 keywords:
 - PNPCPU WDK , about PNPCPU
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ PNPCPU is a command line tool that performs the following functions:
     -   To remove the tool, run Pnpcpu.exe with the **-uninstall** option. This results in a complete undo of all steps performed by **-install**.
     -   This option leaves the binaries on the disk for subsequent reinstallation and use.
 
- 
+ 
 
- 
+ 
 
 
 

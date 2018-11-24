@@ -1,15 +1,10 @@
 ---
 title: OID_GEN_CO_SUPPORTED_GUIDS
-author: windows-driver-content
 description: This topic describes the OID_GEN_CO_SUPPORTED_GUIDS object identifier (OID).
 ms.assetid: d82d6ecb-f70b-4fc2-97eb-331aafe1fe57
 keywords:
 - OID_GEN_CO_SUPPORTED_GUIDS
-ms.author: windowsdriverdev
 ms.date: 11/02/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

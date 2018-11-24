@@ -3,11 +3,7 @@ title: ENTER (Repeat Last Command)
 description: The ENTER key repeats the last command that you typed.
 ms.assetid: 058e455a-8934-4b28-8cf0-2d3f09a7e7cc
 keywords: ["ENTER (Repeat Last Command) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The ENTER key repeats the last command that you typed.
 
-```
+```dbgcmd
 ENTER
 ```
 
@@ -52,7 +48,7 @@ ENTER
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -63,9 +59,9 @@ In WinDbg, the ENTER key can have no effect or you can use it to repeat the prev
 
 If you set ENTER to repeat the last command, but you want to create white space in the [Debugger Command window](debugger-command-window.md), use the [**\* (Comment Line Specifier)**](----comment-line-specifier-.md) token and then press ENTER several times.
 
- 
+ 
 
- 
+ 
 
 
 

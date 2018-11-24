@@ -3,11 +3,7 @@ title: KSPROPSETID\_Hrtf3d
 description: KSPROPSETID\_Hrtf3d
 ms.assetid: 8045991b-0409-445a-bd35-d9b8644f770e
 keywords: ["KSPROPSETID_Hrtf3d"]
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -39,9 +35,9 @@ The `KSPROPSETID_Hrtf3d` property set contains the following three members:
 
 [**KSPROPERTY\_HRTF3D\_PARAMS**](ksproperty-hrtf3d-params.md)
 
- 
+ 
 
- 
+ 
 
 
 

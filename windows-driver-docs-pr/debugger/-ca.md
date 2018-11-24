@@ -3,11 +3,7 @@ title: ca
 description: The ca extension displays information about a control area.
 ms.assetid: 7e9164a5-238e-4327-bd2a-a814bff5f7db
 keywords: ["control area", "ca Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!ca** extension displays information about a control area.
 
-```
+```dbgsyntax
 !ca [Address | 0 | -1] [Flags]
 ```
 
@@ -78,7 +74,7 @@ Flags that specify which information is displayed. This parameter is a bitwise O
 </tbody>
 </table>
 
- 
+ 
 
 If none of the last three flags are specified, all three types of control area are displayed.
 
@@ -101,7 +97,7 @@ If none of the last three flags are specified, all three types of control area a
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -114,7 +110,7 @@ To get a list of the control areas of all mapped files, use the [**!memusage**](
 
 Here is an example:
 
-```
+```dbgcmd
 kd> !memusage
  loading PFN database
 loading (99% complete)
@@ -191,9 +187,9 @@ Subsection 5. @ ff8637a0
     ReadOnly CopyOnWrite 
 ```
 
- 
+ 
 
- 
+ 
 
 
 

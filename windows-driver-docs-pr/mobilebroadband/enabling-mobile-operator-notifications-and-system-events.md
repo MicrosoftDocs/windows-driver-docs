@@ -2,11 +2,7 @@
 title: Enabling mobile operator notifications and system events
 description: Enabling mobile operator notifications and system events
 ms.assetid: 988bafcc-ad8e-446d-9336-85c19cf05577
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -49,9 +45,9 @@ In general, background events are intended as simple trigger points and are not 
 
 -   [Mobile operator notification scenarios](mobile-operator-notification-scenarios.md)
 
- 
+ 
 
- 
+ 
 
 
 

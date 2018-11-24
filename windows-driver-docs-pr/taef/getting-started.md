@@ -2,11 +2,7 @@
 title: Getting Started with TAEF
 description: Getting Started with Test Authoring and Execution Framework (TAEF)
 ms.assetid: 7F57C5EF-141A-4303-9B9F-2EC118324BF8
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -16,7 +12,7 @@ ms.localizationpriority: medium
 ## Installation
 
 
-When you install the [Windows Driver Kit](https://developer.microsoft.com/en-us/windows/hardware/windows-driver-kit), the TAEF files are placed in the Testing\\Runtimes\\TAEF subdirectory of the WDK. When you set up a test computer for deployment, following the instructions to [Provision a computer for driver deployment and testing (WDK 8.1)](https://msdn.microsoft.com/library/windows/hardware/dn745909) or [Provision a computer for driver deployment and testing (WDK 8)](https://msdn.microsoft.com/library/windows/hardware/hh698272), the TAEF files are installed on the test computer.
+When you install the [Windows Driver Kit](https://developer.microsoft.com/windows/hardware/windows-driver-kit), the TAEF files are placed in the Testing\\Runtimes\\TAEF subdirectory of the WDK. When you set up a test computer for deployment, following the instructions to [Provision a computer for driver deployment and testing (WDK 8.1)](https://msdn.microsoft.com/library/windows/hardware/dn745909) or [Provision a computer for driver deployment and testing (WDK 8)](https://msdn.microsoft.com/library/windows/hardware/hh698272), the TAEF files are installed on the test computer.
 
 You can also install the TAEF files manually, see [Manually installing and uninstalling TAEF on a test computer](#manually-installing-and-uninstalling-taef-on-a-test-computer).
 
@@ -66,9 +62,9 @@ Follow this procedure if you want to run tests on a computer without using the W
 1.  Stop the Te.Service. Open the Microsoft Management Console (compmgmt.msc). Go to Services and Applications\\Services, and locate the Te.Service. Right-click the Te.Service and click **Stop**.
 2.  Go to Control Panel\\Programs\\Programs and Features and uninstall the **Test Authoring and Execution Framework program**.
 
- 
+ 
 
- 
+ 
 
 
 

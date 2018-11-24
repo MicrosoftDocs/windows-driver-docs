@@ -10,11 +10,7 @@ keywords:
 - VGA WDK Windows 2000 display
 - switching to VGA mode WDK Windows 2000 display
 - thread watchdog timers WDK Windows 2000 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,7 +26,7 @@ If, during debugging and testing, you use software emulation for the rendering t
 
 To specify the watchdog time threshold for display drivers, create the following REG\_DWORD entry in the registry:
 
-```
+```registry
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Watchdog\Display\BreakPointDelay
 ```
 
@@ -38,15 +34,15 @@ Set the value of **BreakPointDelay** to the watchdog time threshold, in 10-secon
 
 If you test your display driver without an attached debugger, you can prevent the watchdog timer from generating a bug check. To do so, create the following REG\_DWORD entry in the registry, and set its value to 1:
 
-```
+```registry
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Watchdog\Display\DisableBugCheck
 ```
 
 The techniques described in this topic are only for debugging and testing. Do not release a driver that creates or alters **BreakPointDelay** or **DisableBugCheck**.
 
- 
+ 
 
- 
+ 
 
 
 

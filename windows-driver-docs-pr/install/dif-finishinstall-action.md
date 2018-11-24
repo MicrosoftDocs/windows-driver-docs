@@ -12,6 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # DIF_FINISHINSTALL_ACTION
@@ -56,7 +57,7 @@ If a user is signed in without administrative privileges, Windows prompts the us
 </tbody>
 </table>
 
- 
+ 
 
 ### Installer Input
 
@@ -110,7 +111,7 @@ An installer returns one of the values that are listed in the following table.
 </tbody>
 </table>
 
- 
+ 
 
 ### Default DIF Code Handler
 
@@ -151,9 +152,9 @@ Requirements
 
 [**SetupDiFinishInstallAction**](https://msdn.microsoft.com/library/windows/hardware/ff551022)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Common Property Sheet User Interface
-author: windows-driver-content
 description: Common Property Sheet User Interface
 ms.assetid: 7af3435a-19e0-40a1-9f94-319d9d323856
 keywords:
@@ -9,11 +8,7 @@ keywords:
 - Common Property Sheet User Interface WDK print
 - CPSUI WDK print
 - property sheet pages WDK print
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,9 +30,9 @@ This section describes the Common Property Sheet User Interface (CPSUI). The fol
 
 [Creating Property Sheet Pages](creating-property-sheet-pages.md)
 
- 
+ 
 
- 
+ 
 
 
 

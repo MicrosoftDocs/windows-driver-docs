@@ -1,15 +1,10 @@
 ---
 title: OID_GEN_CO_MINIMUM_LINK_SPEED
-author: windows-driver-content
 description: This topic describes the OID_GEN_CO_MINIMUM_LINK_SPEED object identifier (OID).
 ms.assetid: 2ed27ec7-b773-4751-96d3-42d839f35a97
 keywords:
 - OID_GEN_CO_MINIMUM_LINK_SPEED
-ms.author: windowsdriverdev
 ms.date: 11/02/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

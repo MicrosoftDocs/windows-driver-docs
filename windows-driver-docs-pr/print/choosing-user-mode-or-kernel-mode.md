@@ -1,6 +1,5 @@
 ---
 title: Choosing User Mode or Kernel Mode
-author: windows-driver-content
 description: Choosing User Mode or Kernel Mode
 ms.assetid: 1e63d01e-8cf2-488a-89e8-d4a3ff5cfe19
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - graphics DLL WDK printer , user-mode vs. kernel-mode
 - user-mode execution WDK printer graphics
 - kernel-mode execution WDK printer graphics
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -71,7 +66,7 @@ The following table shows allowed printer driver execution modes:
 </tbody>
 </table>
 
- 
+ 
 
 ### Using the Graphics DDI in User Mode
 
@@ -186,7 +181,7 @@ To develop a new printer graphics DLL that executes in user mode, you can contin
     </tbody>
     </table>
 
-     
+     
 
 <!-- -->
 
@@ -247,7 +242,7 @@ To develop a new printer graphics DLL that executes in user mode, you can contin
     </tbody>
     </table>
 
-     
+     
 
 <!-- -->
 
@@ -255,9 +250,9 @@ To develop a new printer graphics DLL that executes in user mode, you can contin
 
 -   Instead of using graphics DDI functions for [GDI Floating-Point Services](https://msdn.microsoft.com/library/windows/hardware/ff566535), you can use the FLOAT data type.
 
- 
+ 
 
- 
+ 
 
 
 

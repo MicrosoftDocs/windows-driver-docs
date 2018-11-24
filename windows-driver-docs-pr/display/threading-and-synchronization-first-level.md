@@ -5,11 +5,7 @@ ms.assetid: 9fce6a18-2a66-4518-b05b-e85bdaa3951f
 keywords:
 - threading WDK display , first level
 - synchronization WDK display , first level
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,11 +16,11 @@ The Windows Display Driver Model (WDDM) categorizes calls into the display minip
 
 **Note**   Although two or more threads from different classes and threads from [zero-level](threading-and-synchronization-zero-level.md) calls can be running in the driver at the same time, no two threads can belong to a single process.
 
- 
+ 
 
 **Note**   The child I/O class functions are synchronized per child device (that is, simultaneous calls to multiple child devices are allowed). However, if internal dependencies exist between child devices, the display miniport driver must block calls as required.
 
- 
+ 
 
 -   [Pointer Class](pointer-class.md)
 
@@ -38,7 +34,7 @@ The Windows Display Driver Model (WDDM) categorizes calls into the display minip
 
 -   [Display Class](display-class.md)
 
- 
+ 
 
 
 

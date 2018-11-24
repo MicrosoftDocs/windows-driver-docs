@@ -1,13 +1,8 @@
 ---
 title: OID_WDI_SET_P2P_WPS_ENABLED
-author: windows-driver-content
 description: OID_WDI_SET_P2P_WPS_ENABLED requests that the adapter enables or disables Wi-Fi Protected Setup (WPS) on the NIC.
 ms.assetid: 96F21807-464F-4B50-AF7E-779F6BF6FE37
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - OID_WDI_SET_P2P_WPS_ENABLED Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -22,7 +17,7 @@ OID\_WDI\_SET\_P2P\_WPS\_ENABLED requests that the adapter enables or disables W
 |-------|--------------------------|---------------------------------|
 | Port  | Yes                      | 1                               |
 
- 
+ 
 
 ## Set property parameters
 
@@ -31,7 +26,7 @@ OID\_WDI\_SET\_P2P\_WPS\_ENABLED requests that the adapter enables or disables W
 |---------------------------------------------------------------------|--------------------------------|----------|---------------------------------------------|
 | [**WDI\_TLV\_P2P\_WPS\_ENABLED**](https://msdn.microsoft.com/library/windows/hardware/dn898018) |                                |          | Specifies whether to enable or disable WPS. |
 
- 
+ 
 
 ## Set property results
 
@@ -61,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

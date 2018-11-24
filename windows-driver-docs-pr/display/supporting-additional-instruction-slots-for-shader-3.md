@@ -7,11 +7,7 @@ keywords:
 - shaders WDK DirectX 9.0
 - pixel shaders WDK DirectX 9.0
 - vertex shaders WDK DirectX 9.0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +27,9 @@ Because the maximum number of instruction slots for pixel and vertex 3.0 shaders
 
 The driver returns a D3DCAPS9 structure in response to a **GetDriverInfo2** query similarly to how it returns a D3DCAPS8 structure as described in [Reporting DirectX 8.0 Style Direct3D Capabilities](reporting-directx-8-0-style-direct3d-capabilities.md). Support of this query is described in [Supporting GetDriverInfo2](supporting-getdriverinfo2.md).
 
- 
+ 
 
- 
+ 
 
 
 

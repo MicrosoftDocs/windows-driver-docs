@@ -1,13 +1,8 @@
 ---
 title: Access the sensor class extension
-author: windows-driver-content
 description: Access the sensor class extension
 ms.assetid: 206A00AE-45D7-49D8-97E2-45A6DACFCB08
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 07/20/2018
 ms.localizationpriority: medium
 ---
 
@@ -18,12 +13,12 @@ ms.localizationpriority: medium
 |------------|-----------------|
 | Device.cpp | CMyDevice       |
 
- 
+ 
 
 Microsoft supports two Sensor APIs. Both simplify accessing devices, retrieving data, and setting properties:
 
 -   **Desktop API** (for traditional desktop apps) - uses COM/Win32; you write apps in C++.
--   **WinRT API** (for windows store apps) - you write apps in HtML and JavaScript, or, XAML and Visual Basic, C# or C++.
+-   **WinRT API** (for Windows apps) - you write apps in HtML and JavaScript, or, XAML and Visual Basic, C# or C++.
 
 The sensor class extension (**ISensorClassExtension**) links your sensor driver and the Sensor APIs. Your driver uses it to accomplish the following:
 
@@ -74,9 +69,9 @@ When a sensor app registers an event handler for state-change events, the sample
 HRESULT hr = m_spClassExtension->PostStateChange(SensorId, state);
 ```
 
- 
+ 
 
- 
+ 
 
 
 

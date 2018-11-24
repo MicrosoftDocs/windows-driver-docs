@@ -10,11 +10,7 @@ keywords:
 - connected sequence of ancestors WDK
 - ancestors WDK
 - immediate parents in device tree WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -48,9 +44,9 @@ This topic describes how to obtain an [**SP_DEVINFO_DATA**](https://msdn.microso
 
 For information about how to work with nonpresent devices, see [Determining the Parent of a Nonpresent Device](determining-the-parent-of-a-nonpresent-device.md).
 
- 
+ 
 
- 
+ 
 
 
 

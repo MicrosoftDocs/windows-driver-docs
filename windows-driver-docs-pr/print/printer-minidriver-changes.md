@@ -1,6 +1,5 @@
 ---
 title: Printer Minidriver Changes
-author: windows-driver-content
 description: Printer Minidriver Changes
 ms.assetid: 8f427642-a758-48bf-96e1-95a27adbaf23
 keywords:
@@ -9,11 +8,7 @@ keywords:
 - GDL files WDK printer
 - PPD files WDK autoconfiguration
 - plug-ins WDK print , in-box autoconfiguration support
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -40,9 +35,9 @@ The following topics describe the changes that must be made in the driver UI and
 
 [Naming Conventions in Pscript and Unidrv Minidrivers](naming-conventions-in-pscript-and-unidrv-minidrivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -10,11 +10,7 @@ keywords:
 - event indication interface WDK TCP chimney offload
 - interfaces WDK TCP chimney offload
 - host stacks WDK TCP chimney offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -120,9 +116,9 @@ An offload target can call the **NdisMIndicateStatusEx** function to request the
 
 -   Resume offloading state objects to the offload target.
 
- 
+ 
 
- 
+ 
 
 
 

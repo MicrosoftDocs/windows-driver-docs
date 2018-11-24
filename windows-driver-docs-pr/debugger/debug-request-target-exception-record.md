@@ -9,11 +9,7 @@ api_name:
 - DEBUG_REQUEST_TARGET_EXCEPTION_RECORD
 api_type:
 - NA
-ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +29,9 @@ The exception record for the stored event. The type of the exception record is E
 
 [**Request**](request.md)
 
- 
+ 
 
- 
+ 
 
 
 

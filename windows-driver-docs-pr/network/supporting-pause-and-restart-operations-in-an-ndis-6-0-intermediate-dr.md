@@ -7,11 +7,7 @@ keywords:
 - porting intermediate drivers WDK networking , pause and restart operations
 - pausing intermediate drivers
 - restarting intermediate drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +22,9 @@ For more information about pause and restart of the miniport upper edge of an in
 
 For more information about pause and restart of the protocol lower edge of an intermediate driver, see [Supporting NDIS 6.0 Protocol Binding Pause and Restart Operations](supporting-ndis-6-0-protocol-binding-pause-and-restart-operations.md).
 
- 
+ 
 
- 
+ 
 
 
 

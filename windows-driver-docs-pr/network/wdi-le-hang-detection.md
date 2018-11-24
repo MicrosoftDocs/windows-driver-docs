@@ -2,11 +2,7 @@
 title: LE hang detection
 description: This section describes LE hang detection in WDI
 ms.assetid: 9C0BB4B8-184A-4C1A-8B47-C30C8318AEEB
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -62,9 +58,9 @@ This is informational for IHVs. In addition to UE and LE detected hangs, other O
 
 [**WDI\_TLV\_INDICATION\_WAKE\_REASON**](https://msdn.microsoft.com/library/windows/hardware/dn897834)
 
- 
+ 
 
- 
+ 
 
 
 

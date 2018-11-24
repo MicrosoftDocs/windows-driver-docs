@@ -1,14 +1,9 @@
 ---
 title: Technique 1 Defining a "64Bit" Field
-author: windows-driver-content
 description: Defining a "64Bit" Field for drivers
 ms.assetid: 6498e66c-145e-4f7e-a065-cbd781e142cc
 keywords: ["32-bit I/O support WDK 64-bit , 64Bit field defined", "64Bit field defined WDK kernel", "bitfields WDK 64-bit", "separate control codes WDK 64-bit", "control codes WDK 64-bit", "file system control codes WDK 64-bit", "FSCTL WDK 64-bit", "I/O control codes WDK kernel , 32-bit I/O in 64-bit drivers", "IOCTLs WDK kernel , 32-bit I/O in 64-bit drivers"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -47,7 +42,7 @@ For example, the IOCTL (FSCTL) control codes used in 32-bit drivers contain four
 </tbody>
 </table>
 
- 
+ 
 
 As long as none of the existing driver-defined control codes set the MSB in the Function field, these control codes can continue to be used by 32-bit user-mode applications.
 
@@ -81,11 +76,11 @@ To accommodate 64-bit callers, the driver defines a Function field that is short
 </tbody>
 </table>
 
- 
+ 
 
 The following code example shows how to define a "64Bit" field in a driver header file:
 
-```
+```cpp
 #define REGISTER_FUNCTION 0     // Define the IOCTL function code
 
 #ifdef  _WIN64
@@ -105,9 +100,9 @@ typedef struct _IOCTL_PARAMETERS {
 } IOCTL_PARAMETERS, *PIOCTL_PARAMETERS;
 ```
 
- 
+ 
 
- 
+ 
 
 
 

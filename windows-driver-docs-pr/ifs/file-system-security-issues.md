@@ -1,13 +1,8 @@
 ---
 title: File System Security Issues
-author: windows-driver-content
 description: File System Security Issues
 ms.assetid: 8c6d6a73-6f88-4b79-8381-5724004a529c
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,9 +20,9 @@ This section includes the following topics:
 
 [Security Checks](security-checks.md)
 
- 
+ 
 
- 
+ 
 
 
 

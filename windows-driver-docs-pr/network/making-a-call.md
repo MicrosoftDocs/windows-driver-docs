@@ -5,11 +5,7 @@ ms.assetid: b5273df1-b99f-415c-a099-16a51f3329ee
 keywords:
 - call setup WDK CoNDIS
 - making calls WDK CoNDIS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -57,9 +53,9 @@ If the client's attempt to establish an outgoing call was successful, *ProtocolC
 
 If the call parameters are acceptable, *ProtocolClMakeCallComplete* simply returns control. If the call parameters are not acceptable and if the signaling protocol allows renegotiation at this point, the client can call [**NdisClModifyCallQoS**](https://msdn.microsoft.com/library/windows/hardware/ff561636) to request a change in call parameters (see [Client-Initiated Request to Close a Call](client-initiated-request-to-close-a-call.md)). If the signaling protocol does not allow renegotiation of unacceptable call parameters, *ProtocolClMakeCallComplete* must tear down the call with **NdisClCloseCall**(see Client-Initiated Request to Close a Call).
 
- 
+ 
 
- 
+ 
 
 
 

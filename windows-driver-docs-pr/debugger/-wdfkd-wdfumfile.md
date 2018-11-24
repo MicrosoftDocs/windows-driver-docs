@@ -3,11 +3,7 @@ title: wdfkd.wdfumfile
 description: The wdfkd.wdfumfile extension displays information about a UMDF intra-stack file.
 ms.assetid: AAE9E003-829D-4A52-8F67-58DFE15D5D3C
 keywords: ["wdfkd.wdfumfile Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!wdfkd.wdfumfile** extension displays information about a UMDF intra-stack file.
 
-```
+```dbgcmd
 !wdfkd.wdfumfile Address 
 ```
 
@@ -54,9 +50,9 @@ You can use this command in a kernel-mode debugging session or in a user-mode de
 
 This command displays the same information as the user-mode command [**!wudfext.umfile**](-wudfext-umfile.md).
 
- 
+ 
 
- 
+ 
 
 
 

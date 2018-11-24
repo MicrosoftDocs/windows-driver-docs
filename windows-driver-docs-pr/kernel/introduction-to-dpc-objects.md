@@ -1,9 +1,9 @@
 ---
 title: Introduction to DPC Objects
-author: windows-driver-content
 description: Introduction to DPC Objects
 ms.assetid: ae8758f5-0e23-4db2-9eac-aab31d98247b
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Introduction to DPC Objects
@@ -20,9 +20,9 @@ DPC object contents should not be directly referenced by drivers. The object's s
 
 DPC objects and DPCs can also be used with timers. For more information, see [Timer Objects and DPCs](timer-objects-and-dpcs.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,11 +3,7 @@ title: .bpcmds (Display Breakpoint Commands)
 description: The .bpcmds command displays the commands that were used to set each of the current breakpoints.
 ms.assetid: 96c13c54-8d85-414c-9775-a0373459dc7a
 keywords: [".bpcmds (Display Breakpoint Commands) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **.bpcmds** command displays the commands that were used to set each of the current breakpoints.
 
-```
+```dbgcmd
     .bpcmds
 ```
 
@@ -49,7 +45,7 @@ The **.bpcmds** command displays the commands that were used to set each of the 
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -76,7 +72,7 @@ If the breakpoint was created by **bm** without the **/d** switch, the display i
 
 Here is an example:
 
-```
+```dbgcmd
 0:000> bp notepad!winmain 
 
 0:000> .bpcmds 
@@ -117,9 +113,9 @@ Notice that because breakpoint number 0 was originally set using **bp**, and the
 
 Notice also that breakpoints 3, 4, and 5, which were created by the **bm** commands shown in this example, are displayed as either type "bp" or type "bu", depending on whether the **/d** switch was included when **bm** was used.
 
- 
+ 
 
- 
+ 
 
 
 

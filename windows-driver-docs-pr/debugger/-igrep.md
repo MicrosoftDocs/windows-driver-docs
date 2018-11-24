@@ -3,11 +3,7 @@ title: igrep
 description: The igrep extension searches for a pattern in disassembly.
 ms.assetid: f76aa84b-6d52-4b36-b2d0-d4a8d47d510e
 keywords: ["igrep Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!igrep** extension searches for a pattern in disassembly.
 
-```
+```dbgcmd
 !igrep [Pattern [StartAddress]] 
 ```
 
@@ -54,11 +50,11 @@ Specifies the hexadecimal address at which to begin searching. If omitted, the c
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

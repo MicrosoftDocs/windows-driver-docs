@@ -1,13 +1,8 @@
 ---
 title: Creating and Opening Processes by WIA Drivers
-author: windows-driver-content
 description: Creating and Opening Processes by WIA Drivers
 ms.assetid: c939eb25-b92b-41ef-ade0-98c2a707fee6
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +22,9 @@ The **LocalService** account does not have sufficient privileges to start other 
 
 If another process is required for device functionality, it is recommended that it be implemented as a system service or local COM server. See the Microsoft documentation for specific security information related to the creation of system services and COM servers.
 
- 
+ 
 
- 
+ 
 
 
 

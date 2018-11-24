@@ -1,6 +1,5 @@
 ---
 title: Iasphelp Close method
-author: windows-driver-content
 description: The Close method enables an ASP Web page to close access to a printer.
 MS-HAID:
 - 'webfnc\_62b91ac5-2f01-44d6-9289-ee2136acacc4.xml'
@@ -16,6 +15,7 @@ api_name:
 - Iasphelp.Close
 api_type:
 - COM
+ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +27,7 @@ The **Close** method enables an ASP Web page to close access to a printer.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT Close();
 ```
 
@@ -41,23 +41,18 @@ Return value
 
 The return value is always S\_OK.
 
-## <span id="ddk_iasphelp_close_gg"></span><span id="DDK_IASPHELP_CLOSE_GG"></span>
 
-
-### <span id="vbscript_example"></span><span id="VBSCRIPT_EXAMPLE"></span>VBScript Example
-
-Remarks
--------
+## VBScript Example
 
 The name of the printer being closed must have been specified in a previous call to the [**Iasphelp::Open**](iasphelp-open.md) method.
 
-```
-    Dim objPrinter
-    strPrinter = Session("MS_printer")
-    Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
-    objPrinter.Open strPrinter
-    ...
-    objPrinter.Close
+```vb
+Dim objPrinter
+strPrinter = Session("MS_printer")
+Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
+objPrinter.Open strPrinter
+...
+objPrinter.Close
 ```
 
 Requirements
@@ -73,22 +68,9 @@ Requirements
 <td><p>Target platform</p></td>
 <td>Desktop</td>
 </tr>
-<tr class="even">
-<td><p>Version</p></td>
-<td><p>Available in Windows 2000 and later versions of the Windows operating systems.</p></td>
-</tr>
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**Iasphelp::Open**](iasphelp-open.md)
-
- 
-
- 
-
-
-
-

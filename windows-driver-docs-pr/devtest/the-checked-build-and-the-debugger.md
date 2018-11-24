@@ -8,11 +8,7 @@ keywords:
 - host computers WDK checked builds
 - target computers WDK checked builds
 - null modem cables WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +26,9 @@ The *target computer* is the system on which the driver you are testing runs. It
 
 The debugger running on the host computer controls the target computer through the debugging connection you establish.
 
- 
+ 
 
- 
+ 
 
 
 

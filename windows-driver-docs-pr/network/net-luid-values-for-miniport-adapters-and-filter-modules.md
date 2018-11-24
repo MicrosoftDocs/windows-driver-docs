@@ -8,11 +8,7 @@ keywords:
 - NET_LUID
 - miniport adapters WDK networking , NET_LUID value
 - filter modules WDK networking , NET_LUID value
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +26,9 @@ A miniport driver can also query NDIS for the interface index of a miniport adap
 
 A filter driver gets an interface index and a NET\_LUID value for a filter module in the [**NDIS\_FILTER\_ATTACH\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff565481) structure.
 
- 
+ 
 
- 
+ 
 
 
 

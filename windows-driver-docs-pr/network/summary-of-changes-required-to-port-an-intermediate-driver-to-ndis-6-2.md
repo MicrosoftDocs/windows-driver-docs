@@ -7,11 +7,7 @@ keywords:
 - porting intermediate drivers to NDIS 6.20 WDK
 - intermediate drivers WDK
 - intermediate drivers WDK , porting to NDIS 6.20
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,9 +31,9 @@ To update an intermediate driver to support the NDIS 6.20 environment, you must 
 
 -   NDIS 5.x filter intermediate drivers will not be supported in Microsoft Windows versions after Windows 7. You should use the NDIS filter drivers interface for all filter drivers. For more information about NDIS filter drivers, see [Summary of Changes Required to Port a Filter Driver to NDIS 6.20](summary-of-changes-required-to-port-a-filter-driver-to-ndis-6-20.md).
 
- 
+ 
 
- 
+ 
 
 
 

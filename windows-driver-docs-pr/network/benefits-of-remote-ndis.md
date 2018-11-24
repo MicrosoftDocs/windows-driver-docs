@@ -4,11 +4,7 @@ description: Benefits of Remote NDIS
 ms.assetid: ca559f2e-c7e3-4b8e-a04d-f3a544d33a68
 keywords:
 - Remote NDIS WDK networking , advantages
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +24,9 @@ Remote NDIS is an extension of the well-understood and time-tested NDIS architec
 
 Value-added mechanisms that already exist in the NDIS network stack are supported for Remote NDIS devices.
 
- 
+ 
 
- 
+ 
 
 
 

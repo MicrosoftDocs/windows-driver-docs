@@ -6,11 +6,7 @@ keywords:
 - INF files WDK network , Models section
 - network INF files WDK , Models section
 - Models section WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,9 +34,9 @@ The *hw-id* for a network software component should consist of a provider name, 
 
 A *provider name* identifies the provider of the INF file. A *manufacturer name* identifies the manufacturer of the software component. The *product name* identifies the software component.
 
- 
+ 
 
- 
+ 
 
 
 

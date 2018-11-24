@@ -1,6 +1,5 @@
 ---
 title: Maintaining an Operation Region Memory Buffer
-author: windows-driver-content
 description: Maintaining an Operation Region Memory Buffer
 ms.assetid: 4abe82ec-d8c4-43c1-a72f-5114ba07160e
 keywords:
@@ -10,11 +9,7 @@ keywords:
 - WDM function drivers WDK ACPI , operation regions
 - operation region memory buffer WDK ACPI
 - memory buffers WDK ACPI
-ms.author: windowsdriverdev
 ms.date: 01/24/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +29,9 @@ The operation region memory buffer must comply with the following:
 
 For detailed information about constraints on operation regions, see the [Advanced Configuration and Power Interface Specification](https://go.microsoft.com/fwlink/p/?linkid=866846).
 
- 
+ 
 
- 
+ 
 
 
 

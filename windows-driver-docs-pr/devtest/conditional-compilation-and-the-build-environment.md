@@ -7,11 +7,7 @@ keywords:
 - debugging code WDK , conditional compilation
 - debugging code WDK , build environment
 - conditional compilation WDK debugging
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,13 +29,13 @@ The debugging routines [**ASSERT**](https://msdn.microsoft.com/library/windows/h
 
 **Note**   All debugging routines beginning with the letters "Kd" have no effect in a free build of a driver, except for **KdRefreshDebuggerNotPresent**.
 
- 
+ 
 
 For more information about using Visual Studio and MSBuild to create to release and debug versions of a driver, see [Building a Driver](https://msdn.microsoft.com/windows-drivers/develop/building_a_driver) and the [WDK and Visual Studio build environment](wdk-and-visual-studio-build-environment.md).
 
- 
+ 
 
- 
+ 
 
 
 

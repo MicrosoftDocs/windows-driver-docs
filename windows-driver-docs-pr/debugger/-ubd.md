@@ -3,11 +3,7 @@ title: ubd
 description: The ubd extension temporarily disables a user-space breakpoint.
 ms.assetid: a639c5e0-111c-45c7-ac7d-6b7e70c1de4f
 keywords: ["ubd Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!ubd** extension temporarily disables a user-space breakpoint.
 
-```
+```dbgcmd
 !ubd BreakpointNumber 
 ```
 
@@ -51,7 +47,7 @@ Specifies the number of the breakpoint to be disabled. An asterisk (\*) indicate
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -71,9 +67,9 @@ Disabled breakpoints will be ignored. Use [**!ube**](-ube.md) to re-enable the b
 
 [User Space and System Space](user-space-and-system-space.md)
 
- 
+ 
 
- 
+ 
 
 
 

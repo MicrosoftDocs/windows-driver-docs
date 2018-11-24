@@ -1,6 +1,5 @@
 ---
 title: Disabling an Error Source
-author: windows-driver-content
 description: Disabling an Error Source
 ms.assetid: a481ac98-0ff1-4583-a81a-1d2e4f968111
 keywords:
@@ -10,11 +9,7 @@ keywords:
 - errors WDK WHEA , disabling error sources
 - hardware error sources WDK WHEA , disabling
 - disabling an error sourc
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +20,7 @@ A user-mode application can disable an [error source](hardware-errors-and-error-
 
 The following code example shows how to disable an error source.
 
-```
+```cpp
 IWbemServices *pIWbemServices;
 ULONG ErrorSourceID;
 BSTR ClassName;
@@ -126,9 +121,9 @@ pOutParameters->Release();
 
 A user-mode application can re-enable an [error source](hardware-errors-and-error-sources.md) by calling the [**WHEAErrorSourceMethods::EnableErrorSourceRtn**](https://msdn.microsoft.com/library/windows/hardware/ff559525) method. For more information about how to enable an error source, see [Enabling an Error Source](enabling-an-error-source.md).
 
- 
+ 
 
- 
+ 
 
 
 

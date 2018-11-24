@@ -7,11 +7,7 @@ keywords:
 - large TCP packet segmentation WDK networking
 - segmentation of large TCP packets WDK networking
 - task offload WDK TCP/IP transport , LSOV1 and LSOV2
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,9 +38,9 @@ LSOV2 supports IPv4 and IPv6 packets. The miniport driver must specify the follo
 
 [Determining Task Offload Capabilities](determining-task-offload-capabilities.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: Device paging queues
 description: Various services exposed by the video memory manager can take a non-trivial amount of time to finish.
 ms.assetid: AF79ED24-1CE5-4F12-A345-8554AD29057F
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ To obtain a reference to the device paging fence object a new **GetDevicePagingF
 
 ![device paging queues](images/device-paging-queues.1.png)
 
- 
+ 
 
- 
+ 
 
 
 

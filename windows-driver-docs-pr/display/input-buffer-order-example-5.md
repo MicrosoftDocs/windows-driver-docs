@@ -2,11 +2,7 @@
 title: Input Buffer Order Example 5
 description: Input Buffer Order Example 5
 ms.assetid: f0ba80bb-ff84-4944-aae5-52eb0848edf5
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -75,13 +71,13 @@ The VMR initiates a call to the driver's [**DeinterlaceBltEx**](https://msdn.mic
 </tbody>
 </table>
 
- 
+ 
 
 The driver can ignore the surfaces at index 1 and index 3 because they are not required for the deinterlace operation. Progressive samples are marked with the DXVA\_SampleProgressiveFrame flag in the **SampleFormat** member of [**DXVA\_VideoSample2**](https://msdn.microsoft.com/library/windows/hardware/ff564092) structures for the samples. Substream samples are marked with the new DXVA\_SampleSubStream flag.
 
- 
+ 
 
- 
+ 
 
 
 

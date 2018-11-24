@@ -10,12 +10,13 @@ api_name:
 api_type:
 - NA
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Config.DriverKey Section of a TxtSetup.oem File
 
 
-A **Config.***DriverKey* section specifies values to be set in the registry for particular component options. Windows automatically creates the required values in the **Services\\***DriverKey* key. Use this section to specify additional keys to be created under **Services\\***DriverKey* and values under **Services\\***DriverKey* and **Services\\***DriverKey*\\*subkey_name*.
+A **Config.**<em>DriverKey</em> section specifies values to be set in the registry for particular component options. Windows automatically creates the required values in the **Services\\**<em>DriverKey</em> key. Use this section to specify additional keys to be created under **Services\\**<em>DriverKey</em> and values under **Services\\**<em>DriverKey</em> and **Services\\**<em>DriverKey</em>\\*subkey_name*.
 
 ``` syntax
 [Config.DriverKey]
@@ -24,9 +25,9 @@ value = subkey_name,value_name,value_type,value
 ```
 
 <a href="" id="subkey-name"></a>*subkey_name*  
-Specifies the name of a key under the **Services\\***DriverKey* tree where Windows places the specified value. Windows creates the key if it does not exist.
+Specifies the name of a key under the **Services\\**<em>DriverKey</em> tree where Windows places the specified value. Windows creates the key if it does not exist.
 
-If *subkey_name* is the empty string (""), the value is placed under the **Services\\***DriverKey*.
+If *subkey_name* is the empty string (""), the value is placed under the **Services\\**<em>DriverKey</em>.
 
 The *subkey_name* can specify more than one level of subkey, such as "subkey1\\subkey2\\subkey3".
 
@@ -45,7 +46,7 @@ For example:
 value = parameters,NumberOfButtons,REG_DWORD,2
 ```
 
-<a href="" id="reg-sz-or-reg-expand-sz"></a>REG_SZ or REG_EXPAND_SZ  
+<a href="" id="reg-sz-or-reg-expand-sz"></a>REG_SZ or [REG_EXPAND_SZ](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types)  
 One *value* is allowed; it is interpreted as the null-terminated string to be stored.
 
 For example:
@@ -75,7 +76,7 @@ value = parameters,Strings,REG_MULTI_SZ,String1,"String 2",string3
 <a href="" id="value"></a>*value*  
 Specifies the value; its format depends on *value_type*.
 
-The following example shows a **Config.***DriverKey* section:
+The following example shows a **Config.**<em>DriverKey</em> section:
 
 ``` syntax
 ; ...
@@ -84,9 +85,9 @@ value = parameters\PnpInterface,5,REG_DWORD,1
 ; ...
 ```
 
- 
+ 
 
- 
+ 
 
 
 

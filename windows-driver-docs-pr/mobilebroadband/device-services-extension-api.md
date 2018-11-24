@@ -2,11 +2,7 @@
 title: Device Services Extension API
 description: Device Services Extension API
 ms.assetid: e1539ae1-78fd-4d79-81bf-4030e69e191c
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,9 +32,9 @@ The Windows wireless platform supports APIs for the following app functions:
 
 [List of mobile broadband Windows Runtime APIs](list-of-mobile-broadband-windows-runtime-apis.md)
 
- 
+ 
 
- 
+ 
 
 
 

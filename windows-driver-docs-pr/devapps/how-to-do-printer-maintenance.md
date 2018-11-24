@@ -2,11 +2,7 @@
 title: How to do printer maintenance in a UWP device app
 description: In Windows 8.1, UWP device apps can perform printer maintenance, such as aligning print heads and cleaning nozzles.
 ms.assetid: 52141F66-872A-4381-92C8-B04ABDABA7AD
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -15,11 +11,11 @@ ms.localizationpriority: medium
 
 In Windows 8.1, UWP device apps can perform printer maintenance, such as aligning print heads and cleaning nozzles. This topic uses the C# version of the [Print job management and printer maintenance](http://go.microsoft.com/fwlink/p/?LinkID=299829) sample to demonstrate how bidirectional communication (Bidi) can be used to perform such device maintenance. To learn more about UWP device apps in general, see [Meet UWP device apps](meet-uwp-device-apps.md).
 
-The C# version of the [Print job management and printer maintenance](http://go.microsoft.com/fwlink/p/?LinkID=299829) sample demonstrates printer maintenance with the **DeviceMaintenance.xaml.cs** file in the **DeviceAppForPrinters2** project. To work with Bidi, the sample uses the printer extension library in the **PrinterExtensionLibrary** project. The printer extension library provides a convenient way to to access the printer extension interfaces of the v4 print driver. For more info, see the [Printer extension library overview](printer-extension-library-overview.md).
+The C# version of the [Print job management and printer maintenance](http://go.microsoft.com/fwlink/p/?LinkID=299829) sample demonstrates printer maintenance with the **DeviceMaintenance.xaml.cs** file in the **DeviceAppForPrinters2** project. To work with Bidi, the sample uses the printer extension library in the **PrinterExtensionLibrary** project. The printer extension library provides a convenient way to access the printer extension interfaces of the v4 print driver. For more info, see the [Printer extension library overview](printer-extension-library-overview.md).
 
 **Note**  The code examples shown in this topic are based on the C# version of the [Print job management and printer maintenance](http://go.microsoft.com/fwlink/p/?LinkID=299829) sample. This sample is also available in JavaScript and C++. Note that because C++ can access COM directly, the C++ version of the sample does not include code library projects. Download the samples to see the latest versions of the code.
 
- 
+ 
 
 ## <span id="Printer_maintenance"></span><span id="printer_maintenance"></span><span id="PRINTER_MAINTENANCE"></span>Printer maintenance
 
@@ -28,7 +24,7 @@ Windows 8.1 introduces new printer extension interfaces in the v4 printer drive
 
 **Tip**  C# and JavaScript apps can't work with COM APIs directly. If you're writing a C# or JavaScript UWP device app, use the printer extension library to access these interfaces (as shown in this topic).
 
- 
+ 
 
 ## <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
 
@@ -43,7 +39,7 @@ Before you get started:
 6.  If you're writing you're writing your app with C# or JavaScript, add the **PrinterExtensionLibrary** project to your UWP device app solution. You can find this project in the [Print job management and printer maintenance](http://go.microsoft.com/fwlink/p/?LinkID=299829) sample.
     **Note**  Because C++ can access COM directly, C++ apps do not require a separate library to work with the COM-based printer device context.
 
-     
+     
 
 ## <span id="Step_1__Prepare_Bidi_request"></span><span id="step_1__prepare_bidi_request"></span><span id="STEP_1__PREPARE_BIDI_REQUEST"></span>Step 1: Prepare Bidi request
 
@@ -103,7 +99,7 @@ private async void EnumeratePrinters_Click(object sender, RoutedEventArgs e)
 
 **Tip**  For more info about the `PrinterEnumeration` and `PrinterInfo` classes, see the **PrinterEnumeration.cs** file.
 
- 
+ 
 
 ## <span id="Step_3__Send_Bidi_request"></span><span id="step_3__send_bidi_request"></span><span id="STEP_3__SEND_BIDI_REQUEST"></span>Step 3: Send Bidi request
 
@@ -205,7 +201,7 @@ Before you can test your UWP device app, it must be linked to your printer using
 
     **Note**  To use the **Device Metadata Authoring Wizard**, you must install Microsoft Visual Studio Professional, Microsoft Visual Studio Ultimate, or the [standalone SDK for Windows 8.1](http://go.microsoft.com/fwlink/p/?linkid=309209), before completing the steps in this topic. Installing Microsoft Visual Studio Express for Windows installs a version of the SDK that doesn't include the wizard.
 
-     
+     
 
 The following steps build your app and install the device metadata.
 
@@ -220,7 +216,7 @@ The following steps build your app and install the device metadata.
 5.  Edit and save device metadata. To link the device app to your device, you must associate the device app with your device.
     **Note**  If you haven't created your device metadata yet, see [Create device metadata for your UWP device app](http://go.microsoft.com/fwlink/p/?LinkId=313644).
 
-     
+     
 
     1.  If the **Device Metadata Authoring Wizard** is not open yet, start it from *%ProgramFiles(x86)%*\\Windows Kits\\8.1\\bin\\x86, by double-clicking **DeviceMetadataWizard.exe**.
     2.  Click **Edit Device Metadata**. This will let you edit your existing device metadata package.
@@ -248,9 +244,9 @@ The following steps build your app and install the device metadata.
 
 [Create device metadata for a UWP device app (step-by-step guide)](step-2--create-device-metadata.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -5,11 +5,7 @@ ms.assetid: a2fc9d0c-d85c-484e-8cf2-09b2a84801f8
 keywords:
 - OPM WDK display , features
 - OPM WDK display , COPP and OPM comparison
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,11 +16,13 @@ OPM supports all of Certified Output Protection Protocol's (COPP) features. The 
 
 -   OPM requires that applications sign requests for information from the video output while COPP does not require that applications sign requests for information from the graphics driver.
 
-    **Note**   A COPP graphics driver is equivalent to an OPM video output.
+    **Note**   A COPP graphics driver is equivalent to an OPM video output.
 
-     
 
-    COPP applications request information from a graphics driver by causing a [**DXVA\_COPPStatusInput**](https://msdn.microsoft.com/library/windows/hardware/ff563899) structure to be passed to the driver.
+
+
+COPP applications request information from a graphics driver by causing a [**DXVA\_COPPStatusInput**](https://msdn.microsoft.com/library/windows/hardware/ff563899) structure to be passed to the driver.
+
 
 -   OPM supports High-bandwidth Digital Content Protection (HDCP) repeaters. For more information about HDCP repeaters, see the [HDCP Specification Revision 1.1](http://go.microsoft.com/fwlink/p/?linkid=38728).
 
@@ -38,9 +36,9 @@ OPM supports all of Certified Output Protection Protocol's (COPP) features. The 
 
 -   OPM's redistribution control flag has slightly different semantics than COPP's redistribution control flag (COPP\_CGMSA\_RedistributionControlRequired).
 
- 
 
- 
+
+
 
 
 

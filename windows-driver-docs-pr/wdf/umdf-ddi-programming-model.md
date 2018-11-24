@@ -1,6 +1,5 @@
 ---
 title: UMDF DDI Programming Model
-author: windows-driver-content
 description: UMDF DDI Programming Model
 ms.assetid: d4bf0791-d2c4-4504-84ad-020880124363
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - framework objects WDK UMDF , DDI
 - UMDF DDI WDK
 - DDI WDK UMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,9 +32,9 @@ As an example of driver to framework communication, consider a device's default 
 
 The framework provides any synchronization required across driver callback methods. By default, the framework synchronizes at device object level; that is, the framework does not concurrently call the event callback methods at or below the device object level. A driver can override this default by requesting no synchronization. For more information, see [Specifying a Callback Synchronization Mode](specifying-a-callback-synchronization-mode.md).
 
- 
+ 
 
- 
+ 
 
 
 

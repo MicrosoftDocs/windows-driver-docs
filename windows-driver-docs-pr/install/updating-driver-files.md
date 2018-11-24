@@ -10,11 +10,7 @@ keywords:
 - device installations WDK , updating existing drivers
 - installing devices WDK , updating existing drivers
 - existing driver updates WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,7 +26,7 @@ Drivers are updated whenever one of the following occurs:
 
     **Note**  Starting with Windows Vista, this wizard is now named the **Update Driver Software Wizard**.
 
-     
+     
 
 -   Windows Update is run.
 
@@ -67,9 +63,9 @@ Use the following guidelines when you write installation software and INF files 
 
 For more information about INF files, see [Creating an INF File](overview-of-inf-files.md) and [INF File Sections and Directives](inf-file-sections-and-directives.md).
 
- 
+ 
 
- 
+ 
 
 
 

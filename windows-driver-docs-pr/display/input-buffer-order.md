@@ -6,11 +6,7 @@ keywords:
 - input buffers WDK DirectX VA
 - deinterlacing WDK DirectX VA , input buffer order
 - buffers WDK DirectX VA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,9 +38,9 @@ The following topics describe the rules for arranging surfaces in the **lpBuffer
 
 [Input Buffer Order Example 6](input-buffer-order-example-6.md)
 
- 
+ 
 
- 
+ 
 
 
 

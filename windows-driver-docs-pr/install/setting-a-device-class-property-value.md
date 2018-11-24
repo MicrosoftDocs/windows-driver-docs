@@ -2,11 +2,7 @@
 title: Setting a Device Class Property Value
 description: Setting a Device Class Property Value
 ms.assetid: a1d6908d-e43a-413d-965b-3af226d5c26f
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -47,9 +43,9 @@ To set a device class property value on a remote computer, follow the procedure 
 
 -   In addition to supplying the parameter values that both **SetupDiSetClassPropertyEx** and **SetupDiSetClassProperty** require, supply the *MachineName* parameter, which must be set to a pointer to a NULL-terminated string that contains the UNC name, including the \\\\ prefix, of a computer.
 
- 
+ 
 
- 
+ 
 
 
 

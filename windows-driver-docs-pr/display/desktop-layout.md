@@ -9,11 +9,7 @@ keywords:
 - configuring displays WDK Windows Server 2008 R2 display , CCD concepts, desktop layout
 - CCD concepts WDK Windows 7 display , desktop layout
 - CCD concepts WDK Windows Server 2008 R2 display , desktop layout
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +22,9 @@ The caller uses the **position** member of the [**DISPLAYCONFIG\_SOURCE\_MODE**]
 
 Although [**SetDisplayConfig**](https://msdn.microsoft.com/library/windows/hardware/ff569533) attempts to rearrange sources surfaces to enforce these GDI layout rules, the caller should specify the layout of the sources surfaces. It is undefined how GDI will rearrange the sources surfaces to enforce its layout rules, and the resultant layout of sources surfaces might not be what the caller wanted to achieve.
 
- 
+ 
 
- 
+ 
 
 
 

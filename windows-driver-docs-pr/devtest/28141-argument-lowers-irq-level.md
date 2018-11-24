@@ -5,11 +5,7 @@ ms.assetid: 5cf30e4b-beef-42e0-9d1c-85418b601acb
 keywords:
 - warnings listed WDK PREfast for Drivers
 - errors listed WDK PREfast for Drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,7 +27,7 @@ warning C28141: The argument causes the IRQ Level to be set below the current IR
 </tbody>
 </table>
 
- 
+ 
 
 A function call that lowers the IRQL at which a caller is executing is being used inappropriately. Typically, the function call lowers the IRQL as part of a more general routine or is intended to raise the caller's IRQL.
 
@@ -51,9 +47,9 @@ KeRaiseIrql(DISPATCH_LEVEL, &OldIrql);
 KeLowerIrql(OldIrql);
 ```
 
- 
+ 
 
- 
+ 
 
 
 

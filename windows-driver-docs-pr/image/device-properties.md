@@ -1,13 +1,8 @@
 ---
 title: Device Properties
-author: windows-driver-content
 description: Device Properties
 ms.assetid: f41040c5-0eac-450d-b532-9165c543cc1a
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,9 +18,9 @@ Similarly, data that the device produces or stores can also be described with ch
 
 In WIA, characteristics that describe both devices and data are referred to as *properties*. Properties exist in sets; the WIA minidriver maintains them in a WIA driver item.
 
- 
+ 
 
- 
+ 
 
 
 

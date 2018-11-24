@@ -7,11 +7,7 @@ keywords:
 - non-PCM audio formats WDK , waveOut
 - waveOut non-PCM support WDK audio
 - DirectSound WDK audio , non-PCM support
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -45,9 +41,9 @@ On Windows 2000 and Windows 98, DirectSound supports only PCM data. (The same is
 
 Windows XP and later, and Windows Me, remove the limitations that prevented DirectSound applications from using non-PCM formats. DirectSound 8 (and later versions) uses the correct format subtype and no longer automatically requires volume and SRC nodes in every data path.
 
- 
+ 
 
- 
+ 
 
 
 

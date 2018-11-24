@@ -1,12 +1,7 @@
 ---
-Description: This topic describes the device capabilities that are required for a Windows store app that uses the Windows.Devices.Usb namespace.
+Description: This topic describes the device capabilities that are required for a Windows app that uses the Windows.Devices.Usb namespace.
 title: How to add USB device capabilities to the app manifest
-author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -18,7 +13,7 @@ ms.localizationpriority: medium
 -   You must update Package.appxmanifest with USB device capabilities.
 -   The device class must be one of the supported classes.
 
-This topic describes the device capabilities that are required for a Windows store app that uses the [**Windows.Devices.Usb**](https://msdn.microsoft.com/library/windows/apps/dn278466) namespace.
+This topic describes the device capabilities that are required for a Windows app that uses the [**Windows.Devices.Usb**](https://msdn.microsoft.com/library/windows/apps/dn278466) namespace.
 
 ## USB device capability usage
 
@@ -33,7 +28,7 @@ Your USB app must include certain device capabilities in its [App package manife
 
 **Note**  You cannot modify the USB device capability in Microsoft Visual Studio 2013. You must right-click the Package.appxmanifest file in **Solution Explorer** and select **Open With...**, and then **XML (Text) Editor**. The file opens in plain XML.
 
- 
+ 
 
 ``` syntax
 <DeviceCapability Name="usb">
@@ -62,7 +57,7 @@ Your USB app must include certain device capabilities in its [App package manife
 
     **Note**  Devices that belong to the DeviceFirmwareUpdate class can only be accessed by privileged apps that is explicitly declared by the OEM for that PC.
 
-     
+     
 
 -   Because these are unknown interfaces, the app is required to specify the vendor/product id for these class codes.
 
@@ -120,10 +115,10 @@ Here are some examples for defining USB device capabilities:
 <tr class="odd">
 <td><pre class="syntax" space="preserve"><code>&lt;DeviceCapability Name=&quot;usb&quot;&gt;
   &lt;Device Id=&quot;vidpid:045e 930a&quot;&gt;
-    &lt;Function Type=&quot;classId:ff * *&quot;/&gt;
+    &lt;Function Type=&quot;classId:ff * <em>&quot;/&gt;
   &lt;/Device&gt;
 &lt;/DeviceCapability&gt;</code></pre></td>
-<td><p>Allows the app to access a vendor-specific interface on a different version of the OSR USB Fx2 device. Note the classId format: &quot;ff * *&quot;. The class code is &quot;ff&quot; followed by a wildcard (*) to include any subclass and protocol code.</p></td>
+<td><p>Allows the app to access a vendor-specific interface on a different version of the OSR USB Fx2 device. Note the classId format: &quot;ff * *&quot;. The class code is &quot;ff&quot; followed by a wildcard (</em>) to include any subclass and protocol code.</p></td>
 </tr>
 <tr class="even">
 <td><pre class="syntax" space="preserve"><code>&lt;DeviceCapability Name=&quot;usb&quot;&gt;
@@ -137,7 +132,7 @@ Here are some examples for defining USB device capabilities:
 </tbody>
 </table>
 
- 
+ 
 
 **App manifest package for the CustomUsbDeviceAccess sample**
 

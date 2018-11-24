@@ -2,11 +2,7 @@
 title: Defect Viewer Actions
 description: Defect Viewer Actions
 ms.assetid: c711a927-6fab-45de-be8b-da706991da36
-ms.author: windowsdriverdev
 ms.date: 05/21/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,9 +17,9 @@ This section describes the actions that you can perform in the Defect Viewer. It
 
 [Changing the Text Size in the Defect Viewer](changing-the-text-size-in-the-defect-viewer.md)
 
- 
+ 
 
- 
+ 
 
 
 

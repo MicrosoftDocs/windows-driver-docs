@@ -1,16 +1,11 @@
 ---
 title: Design Miniport Driver Callback Routine to Handle WMI Classes
-author: windows-driver-content
 description: Designing a Miniport Driver Callback Routine that Handles WMI Classes with Methods
 ms.assetid: f5a0331a-1daa-4ef5-bf99-14b3a3393956
 keywords:
 - WMI SRBs WDK storage , designing callback routines
 - callback routines WDK WMI SRBs
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,7 +19,7 @@ This section uses example WMI classes that contain WMI methods and describes wha
 
 The following example WMI classes contain WMI methods:
 
-```
+```cpp
 class MSFC_HBAAdapterMethods
 {
     [key] 
@@ -79,7 +74,7 @@ When the SCSI Port WMI library dispatch routine calls your miniport driver's exe
 
 The following example shows how the execute method callback routine might handle the methods in the previous example.
 
-```
+```cpp
 HwScsiWmiExecuteMethod (
     IN PVOID Context,
     IN PSCSIWMI_REQUEST_CONTEXT DispatchContext,
@@ -138,7 +133,7 @@ The **wmimofck** tool forms the name of the structure that contains the method's
 
 The following code snippet shows how an execute method callback routine could validate the size of the input and output buffers for a method called **GetDiscoveredPortAttributes** in a class called **MSFC\_HBAPortMethods**:
 
-```
+```cpp
 case MSFC_HBAPortMethodsGuidIndex:
   switch(MethodId) {
     case GetDiscoveredPortAttributes:
@@ -165,9 +160,9 @@ case MSFC_HBAPortMethodsGuidIndex:
 
 Before returning, your callback routine should call [**ScsiPortWmiPostProcess**](https://msdn.microsoft.com/library/windows/hardware/ff564796). This SCSI Port WMI library routine updates the request context with information, such as the status of the request and the size of the return data. For more information about the information that is stored in the request context, see [**SCSIWMI\_REQUEST\_CONTEXT**](https://msdn.microsoft.com/library/windows/hardware/ff564946).
 
- 
+ 
 
- 
+ 
 
 
 

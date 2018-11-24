@@ -1,6 +1,5 @@
 ---
 title: Minidriver Synchronization
-author: windows-driver-content
 description: Minidriver Synchronization
 ms.assetid: 2f560e7a-4717-4b3f-9513-e34fcb2b5e6c
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - streaming minidrivers WDK Windows 2000 Kernel , synchronization
 - minidrivers WDK Windows 2000 Kernel Streaming , synchronization
 - synchronization WDK streaming minidriver
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +29,9 @@ When synchronization is off, the minidriver is responsible for performing synchr
 
 Multiple requests can be simultaneously issued to the same or different streams when stream class synchronization is off. The minidriver must queue its own requests and handle any hardware synchronization with other threads and the ISR. Spin locks, mutexes, and [**KeSynchronizeExecution**](https://msdn.microsoft.com/library/windows/hardware/ff553302) are some of the synchronization objects available to stream minidrivers running without stream class synchronization.
 
- 
+ 
 
- 
+ 
 
 
 

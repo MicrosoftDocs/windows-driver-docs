@@ -3,11 +3,7 @@ title: Other Symbol Stores
 description: Other Symbol Stores
 ms.assetid: 65bb4291-c56a-4837-ac45-6751ebdbd579
 keywords: ["symbol stores, writing your own symbol store"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,9 +19,9 @@ Since SymStore transactions are all logged in CSV-format text files, you can lev
 
 If you plan to use the SymSrv program provided with Debugging Tools for Windows package, it is recommended that you use SymStore as well. Updates to these two programs will always be released together, and therefore their versions will always match.
 
- 
+ 
 
- 
+ 
 
 
 

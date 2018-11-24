@@ -2,11 +2,7 @@
 title: WDI message structure
 description: This section describes the structure for WDI command messages
 ms.assetid: 09663C5F-A458-479F-B450-A994486A6C18
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,7 +24,7 @@ The structure of TLVs is defined in the following table. The data in TLVs is in 
 | Length of the Value buffer | UINT16   | The size of the Value buffer in bytes.                                                                                                        |
 | Value                      | BYTE\[\] | The payload buffer, which may contain a structure, a list of structures, or other TLVs. The data size must exactly match the expected length. |
 
- 
+ 
 
 There are two types of TLV groupings: statically sized TLV lists, and multi-TLV groups.
 
@@ -45,7 +41,7 @@ In this example, [**WDI\_TLV\_UNICAST\_ALGORITHM\_LIST**](https://msdn.microsoft
 | Length | N \* sizeof(WDI\_ALGO\_PAIRS)      |
 | Value  | WDI\_ALGO\_PAIRS\[N\]              |
 
- 
+ 
 
 This usage is specified in the TLV reference topics with array notation.
 
@@ -65,13 +61,13 @@ In this example, the parent buffer is a [**WDI\_MESSAGE\_HEADER**](https://msdn.
 | TLV₂ + L₂ + sizeof(TLV Header) | TLV₃ (OTHER\_TLV\_TYPE)     | Some other TLV type |
 | TLV₃ + L₃ + sizeof(TLV Header) | TLV₄ (WDI\_TLV\_BSS\_ENTRY) | WDI\_BSS\_ENTRY     |
 
- 
+ 
 
 For TLVs that contain other TLVs, the TLV reference topics have a *Multiple TLV instances allowed* column. If this column is checked, the specified TLV is allowed to appear multiple times. For an example of this, see [**WDI\_TLV\_CONNECT\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/dn926266).
 
- 
+ 
 
- 
+ 
 
 
 

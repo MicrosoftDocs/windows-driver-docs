@@ -5,8 +5,6 @@ author: balapv
 ms.author: balapv
 ms.date: 04/05/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -52,6 +50,7 @@ The following example demonstrates the JSON request body for creating a new prod
   "firmwareVersion": "980",
   "deviceType": "external",
   "isTestSign": false,
+  "isFlightSign": false,  
   "marketingNames": [],
   "productName": "VST_apdevtest1",
   "selectedProductTypes": {
@@ -73,7 +72,7 @@ For details about the fields in the request, refer to [Product resource](get-pro
 
 The following example demonstrates how to create a new product.
 
-```
+```cpp
 POST https://manage.devcenter.microsoft.com/v1.0/my/hardware/products HTTP/1.1
 Authorization: Bearer <your access token>
 ```
@@ -105,6 +104,7 @@ The following example demonstrates the JSON response body returned by a successf
   "firmwareVersion": "980",
   "deviceType": "external",
   "isTestSign": false,
+  "isFlightSign": false,  
   "marketingNames": [],
   "productName": "VST_apdevtest1",
   "selectedProductTypes": {
@@ -127,3 +127,7 @@ Refer to [Product resource](get-product-data.md#product-resource)  for more deta
 ## Error codes
 
 For more info, see [Error codes](get-product-data.md#error-codes).
+
+## See also
+
+[Hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)

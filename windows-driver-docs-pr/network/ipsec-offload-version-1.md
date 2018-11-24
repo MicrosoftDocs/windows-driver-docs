@@ -5,11 +5,7 @@ ms.assetid: 1cf6306c-bb1d-40f6-a0e3-59c14a60a8ff
 keywords:
 - IPsec offload WDK TCP/IP transport , version 1
 - IPsecOV1 WDK TCP/IP transport
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +26,9 @@ This section includes the following topics:
 
 [Offloading the Processing of UDP-Encapsulated ESP Packets](offloading-the-processing-of-udp-encapsulated-esp-packets.md)
 
- 
+ 
 
- 
+ 
 
 
 

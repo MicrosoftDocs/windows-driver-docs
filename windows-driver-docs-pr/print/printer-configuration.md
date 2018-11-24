@@ -1,6 +1,5 @@
 ---
 title: Printer Configuration
-author: windows-driver-content
 description: Printer Configuration
 ms.assetid: bbde600b-3ac1-4d37-bcc6-037a9527fb27
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - printer driver installations WDK , configuring printers
 - printer configuration WDK
 - printer drivers WDK , configuring
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +24,9 @@ This section includes the following topics:
 
 [Printer Driver Isolation](printer-driver-isolation.md)
 
- 
+ 
 
- 
+ 
 
 
 

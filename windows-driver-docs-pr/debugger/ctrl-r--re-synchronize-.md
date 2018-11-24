@@ -3,11 +3,7 @@ title: CTRL+R (Re-synchronize)
 description: The CTRL+R key synchronizes with the target computer.
 ms.assetid: 95ffa380-af90-4d56-b973-038e7ccc6760
 keywords: ["CTRL+R (Re-synchronize) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,13 +20,13 @@ The CTRL+R key synchronizes with the target computer.
 
 KD Syntax
 
-```
+```dbgcmd
 CTRL+R  ENTER 
 ```
 
 WinDbg Syntax
 
-```
+```dbgcmd
 CTRL+ALT+R 
 ```
 
@@ -64,7 +60,7 @@ CTRL+ALT+R
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -77,9 +73,9 @@ This attempts to synchronize the host computer with the target computer. Use thi
 
 If you are using a 1394 kernel connection, resynchronization may not always be successful.
 
- 
+ 
 
- 
+ 
 
 
 

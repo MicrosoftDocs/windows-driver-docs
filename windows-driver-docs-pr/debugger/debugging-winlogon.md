@@ -3,11 +3,7 @@ title: Debugging WinLogon
 description: Debugging WinLogon
 ms.assetid: 408727cd-fb59-44fe-b896-88317d2bc087
 keywords: ["WinLogon debugging", "NTSD, debugging CSRSS", "controlling the user-mode debugger from the kernel debugger, debugging WinLogon"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,7 +25,7 @@ Because you will be redirecting the user-mode debugger output to the kernel debu
 
 To attach a debugger to WinLogon, you must go through the registry so the process is debugged from the time it starts up. To set up WinLogon debugging, set **HKEY\_LOCAL\_MACHINE\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\WinLogon.EXE\\Debugger** to:
 
-```
+```console
 ntsd -d -x -g 
 ```
 
@@ -47,9 +43,9 @@ See [Controlling the User-Mode Debugger from the Kernel Debugger](controlling-th
 
 You will have to set your symbol path to a location on your host computer or to some other location on your network. When WinLogon is being debugged, network authentication on the target computer will not work properly.
 
- 
+ 
 
- 
+ 
 
 
 

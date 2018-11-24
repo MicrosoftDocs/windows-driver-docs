@@ -3,11 +3,7 @@ title: ks.pciaudio
 description: The ks.pciaudio extension displays a list of FDOs currently attached to PortCls.
 ms.assetid: 30d74f14-1cff-4b18-996a-8c91c20edebe
 keywords: ["ks.pciaudio Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!ks.pciaudio** extension displays a list of FDOs currently attached to PortCls.
 
-```
+```dbgcmd
 !ks.pciaudio [Options] [Level]  
 ```
 
@@ -63,7 +59,7 @@ Optional, and applicable only if Bit 3 is set in *Options*. Levels are the same 
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -74,15 +70,15 @@ Remarks
 
 Here is an example of the output from **!ks.pciaudio**:
 
-```
+```dbgcmd
 kd> !ks.pciaudio
 1 Audio FDOs found:
  Functional Device 8299be18 [\Driver\smwdm]
 ```
 
- 
+ 
 
- 
+ 
 
 
 

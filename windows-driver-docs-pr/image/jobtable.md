@@ -9,11 +9,7 @@ api_name:
 - wscn JobTable
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **JobTable** element contains current and historical information ab
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:JobTable>
   child elements
 </wscn:JobTable>
@@ -50,10 +46,10 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ActiveJobs</strong>](activejobs.md)</p></td>
+<td><p><a href="activejobs.md" data-raw-source="[&lt;strong&gt;ActiveJobs&lt;/strong&gt;](activejobs.md)"><strong>ActiveJobs</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>JobHistory</strong>](jobhistory2.md)</p></td>
+<td><p><a href="jobhistory2.md" data-raw-source="[&lt;strong&gt;JobHistory&lt;/strong&gt;](jobhistory2.md)"><strong>JobHistory</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -68,16 +64,16 @@ Remarks
 
 The WSD Scan Service uses a **JobTable** element to track all current and finished scan jobs that are submitted to the WSD Scan Service. Current jobs are tracked in the [**ActiveJobs**](activejobs.md) child element; finished jobs are optionally tracked in the [**JobHistory**](jobhistory2.md) child element.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ActiveJobs**](activejobs.md)
 
 [**JobHistory**](jobhistory2.md)
 
- 
+ 
 
- 
+ 
 
 
 

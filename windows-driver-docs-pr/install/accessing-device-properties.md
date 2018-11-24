@@ -5,11 +5,7 @@ ms.assetid: 7D3F3164-E530-49fb-BCCD-9C024543FA95
 keywords:
 - device properties WDK device installations , accessing
 - accessing device properties WDK device installations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,9 +38,9 @@ To safely access device properties, follow these guidelines:
 
 -   For kernel-mode drivers, use [**IoGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff549203) to access device properties.
 
- 
+ 
 
- 
+ 
 
 
 

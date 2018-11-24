@@ -2,11 +2,7 @@
 title: NDKPI Work Request Posting Requirements
 description: This section describes requirements for NDKPI work request posting
 ms.assetid: 2BF6F253-FCB4-4A61-9A67-81092F3C44E4
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -46,9 +42,9 @@ The provider must be able to handle an **NdkCloseConnector** call (on the succes
 
 [Network Direct Kernel Provider Interface (NDKPI)](network-direct-kernel-programming-interface--ndkpi-.md)
 
- 
+ 
 
- 
+ 
 
 
 

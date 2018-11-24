@@ -11,11 +11,7 @@ keywords:
 - device property pages WDK device installations , about device property pages
 - property pages WDK device installations , about device property pages
 - custom property pages WDK device installations , about custom property pages
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +23,7 @@ ms.localizationpriority: medium
 
 **Note**  Features described in this section are not supported in universal or mobile driver packages. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
- 
+ 
 
 This section includes the following topics:
 
@@ -41,9 +37,9 @@ This section includes the following topics:
 
 [Invoking a Device Properties Dialog Box](invoking-a-device-properties-dialog-box.md)
 
- 
+ 
 
- 
+ 
 
 
 

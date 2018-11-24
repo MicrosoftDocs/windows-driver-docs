@@ -1,13 +1,8 @@
 ---
 title: New AVStream Interfaces for Windows 8.1
-author: windows-driver-content
 description: AVStream streaming media driver interfaces are extended to support new camera platform functionality starting with Windows 8.1.
 ms.assetid: 1D06A754-236B-441D-A0BB-A78B419270E9
-ms.author: windowsdriverdev
 ms.date: 05/15/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,11 +21,11 @@ These device driver interfaces (DDIs) support these extensions and are new or up
 -   [**KSCAMERA\_EXTENDEDPROP\_CAMERAOFFSET**](https://msdn.microsoft.com/library/windows/hardware/dn567560)
 -   [**KSCAMERA\_EXTENDEDPROP\_EVCOMPENSATION**](https://msdn.microsoft.com/library/windows/hardware/dn567561)
 -   [**KSCAMERA\_EXTENDEDPROP\_FIELDOFVIEW**](https://msdn.microsoft.com/library/windows/hardware/dn567562)
--   [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/dn567563)
--   [**KSCAMERA\_EXTENDEDPROP\_PHOTOMODE**](https://msdn.microsoft.com/library/windows/hardware/dn567564)
--   [**KSCAMERA\_EXTENDEDPROP\_VALUE**](https://msdn.microsoft.com/library/windows/hardware/dn567565)
+-   [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header)
+-   [**KSCAMERA\_EXTENDEDPROP\_PHOTOMODE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_photomode)
+-   [**KSCAMERA\_EXTENDEDPROP\_VALUE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_value)
 -   [**KSCAMERA\_EXTENDEDPROP\_VIDEOPROCSETTING**](https://msdn.microsoft.com/library/windows/hardware/dn567566)
--   [**KSCAMERA\_MAXVIDEOFPS\_FORPHOTORES**](https://msdn.microsoft.com/library/windows/hardware/dn567567)
+-   [**KSCAMERA\_MAXVIDEOFPS\_FORPHOTORES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_maxvideofps_forphotores)
 -   [KSEVENTSETID\_VolumeLimit](https://msdn.microsoft.com/library/windows/hardware/dn567568)
 -   [**KSEVENT\_VOLUMELIMIT\_CHANGED**](https://msdn.microsoft.com/library/windows/hardware/dn567569)
 -   [KSPROPERTYSETID\_ExtendedCameraControl](https://msdn.microsoft.com/library/windows/hardware/dn567570) (includes these properties:)
@@ -60,9 +55,9 @@ These device driver interfaces (DDIs) support these extensions and are new or up
 -   [**KS\_FRAME\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff567645) (new **FrameCompletionNumber** member)
 -   Note also the additional [KSPROPERTYSETID\_ExtendedCameraControl](https://msdn.microsoft.com/library/windows/hardware/dn567570) property set listed in [Video Capture Minidriver Property Sets](https://msdn.microsoft.com/library/windows/hardware/ff568714).
 
- 
+ 
 
- 
+ 
 
 
 

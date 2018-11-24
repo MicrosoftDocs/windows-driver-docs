@@ -2,11 +2,7 @@
 title: APN example
 description: APN example
 ms.assetid: 3cf74bc4-a334-4213-8138-ebfc91b459e8
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +26,9 @@ The following XML document uses the [APN XML schema](apn-xml-schema.md) to speci
 </OperatorList>
 ```
 
- 
+ 
 
- 
+ 
 
 
 

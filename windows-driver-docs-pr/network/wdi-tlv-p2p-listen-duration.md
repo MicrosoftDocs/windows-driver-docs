@@ -1,13 +1,8 @@
 ---
 title: WDI_TLV_P2P_LISTEN_DURATION
-author: windows-driver-content
 description: WDI_TLV_P2P_LISTEN_DURATION is a TLV that contains Wi-Fi Direct listen duration information.
 ms.assetid: 6C14BB67-89E1-4795-9327-2B5B87BF2D7C
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_LISTEN_DURATION Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -36,7 +31,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | UINT32 | The duration, in milliseconds, of the listen cycle. The adapter is in listen state during this time.                                                           |
 | UINT32 | The duration, in milliseconds, that the adapter is expected to actively listen during the listen cycle. This duration must be less than listen cycle duration. |
 
- 
+ 
 
 Requirements
 ------------
@@ -62,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

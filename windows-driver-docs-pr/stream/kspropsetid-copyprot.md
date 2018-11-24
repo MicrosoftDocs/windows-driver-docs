@@ -2,11 +2,7 @@
 title: KSPROPSETID\_CopyProt
 description: KSPROPSETID\_CopyProt
 ms.assetid: f5596bed-e7be-4ad0-aaf7-cb34550e0726
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -40,9 +36,9 @@ DVD decoder minidrivers can optionally implement the following property:
 
 [**KSPROPERTY\_DVDCOPY\_SET\_COPY\_STATE**](ksproperty-dvdcopy-set-copy-state.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -11,11 +11,7 @@ keywords:
 - ISA interrupts WDK PCMCIA bus
 - INF files WDK PCMCIA bus
 - PcmciaExclusiveIrq
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +29,9 @@ For example, assume you have a modem whose driver contains an interrupt service 
 
 Note, however, that once you put the PcmciaExclusiveIrq directive in a device's INF file, the device will not function with any controller or bridge that does not have access to ISA interrupt.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -7,11 +7,7 @@ keywords:
 - child devices WDK video miniport , communicating with the driver
 - HwVidQueryInterface
 - IRP_MN_QUERY_INTERFACE
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +25,9 @@ Because the child driver can call into the miniport driver without the video por
 
 A child device is enumerated by [*HwVidGetVideoChildDescriptor*](https://msdn.microsoft.com/library/windows/hardware/ff567341).
 
- 
+ 
 
- 
+ 
 
 
 

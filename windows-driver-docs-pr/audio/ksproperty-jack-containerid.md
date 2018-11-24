@@ -11,11 +11,7 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -50,13 +46,13 @@ This property can be supported on any bridge pin that is associated with one or 
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Pin factory (via filter handle)</p></td>
-<td align="left"><p>[<strong>KSP_PIN</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566722)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566722" data-raw-source="[&lt;strong&gt;KSP_PIN&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566722)"><strong>KSP_PIN</strong></a></p></td>
 <td align="left"><p><strong>GUID</strong></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (instance data) is a GUID.
 
@@ -106,9 +102,9 @@ Requirements
 
 [**IOCTL\_BTHHFP\_DEVICE\_GET\_CONTAINERID**](https://msdn.microsoft.com/library/windows/hardware/dn265107)
 
- 
+ 
 
- 
+ 
 
 
 

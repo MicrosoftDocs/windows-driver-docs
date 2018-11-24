@@ -11,11 +11,7 @@ keywords:
 - SndUna WDK TCP chimney offload
 - SndNxt WDK TCP chimney offload
 - SndMax WDK TCP chimney offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,9 +31,9 @@ The data from the byte that is indicated by **SndUna** up to the byte before the
 
 Because the send data does not contain any data to be retransmitted, the byte that is indicated by **SndNxt** equals the byte that is indicated by **SndMax**. The data to the right of the byte that is indicated by **SndNxt** and **SndMax** is unsent data that the offload target must send before sending any other data on the offloaded connection.
 
- 
+ 
 
- 
+ 
 
 
 

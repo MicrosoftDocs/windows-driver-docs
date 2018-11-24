@@ -1,5 +1,5 @@
 ---
-title: FLT\_PARAMETERS for IRP\_MJ\_SET\_SECURITY union
+title: FLT_PARAMETERS for IRP_MJ_SET_SECURITY union
 description: Union component used when the MajorFunction field of the FLT\_IO\_PARAMETER\_BLOCK structure for the operation is IRP\_MJ\_SET\_SECURITY.
 ms.assetid: 9006ef50-bd2e-4c75-8c6b-8bb777122a75
 keywords: ["FLT_PARAMETERS for IRP_MJ_SET_SECURITY union Installable File System Drivers", "FLT_PARAMETERS union Installable File System Drivers", "PFLT_PARAMETERS union pointer Installable File System Drivers"]
@@ -11,11 +11,7 @@ api_location:
 - fltkernel.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -78,7 +74,7 @@ Pointer to a [**SECURITY\_INFORMATION**](security-information.md) value that spe
 </tbody>
 </table>
 
- 
+ 
 
 **SecurityDescriptor**  
 Pointer to a [**SECURITY\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff556610) structure that contains the values of the security information to be assigned to the object.
@@ -127,9 +123,9 @@ Requirements
 
 [**SECURITY\_INFORMATION**](security-information.md)
 
- 
+ 
 
- 
+ 
 
 
 

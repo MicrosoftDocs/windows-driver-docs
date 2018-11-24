@@ -2,11 +2,7 @@
 title: Authoring Tests in C#
 description: Authoring Tests in C#
 ms.assetid: 4DD1D673-FEAF-44a4-8BAD-0E55318DC64B
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -15,7 +11,7 @@ ms.localizationpriority: medium
 
 The example below shows a C# .cs file with a simple single test class that demostrates C# tests markup. (Please note that this example is for demonstrational purpose only, so it will not compile or run.)
 
-```
+```cpp
 1    using Microsoft.VisualStudio.TestTools.UnitTesting;
 2    using System;
 3    using System.Collections;
@@ -123,7 +119,7 @@ TAEF's NetFX 4.5 binaries support the execution of async TAEF test methods. This
 
 **Note**  Do not attempt to leverage this functionality with TAEF's NetFX 2.0/3.5 binaries; only the NetFX 4.5 binaries support this feature.
 
- 
+ 
 
 TAEF supports both async **void** and async **Task** test methods (both will result in the same functionality):
 
@@ -149,9 +145,9 @@ Alternatively:
             }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

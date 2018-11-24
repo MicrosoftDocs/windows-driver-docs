@@ -1,6 +1,5 @@
 ---
 title: Managing Contexts in a Minifilter Driver
-author: windows-driver-content
 description: Managing Contexts in a Minifilter Driver
 ms.assetid: c7186886-f083-45c9-a39d-3f8ce7df35bb
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - minifilter drivers WDK , context
 - contexts WDK file system minifilter
 - contexts WDK file system minifilter , about contexts
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -62,9 +57,9 @@ This section includes:
 
 [Best Practices](best-practices.md)
 
- 
+ 
 
- 
+ 
 
 
 

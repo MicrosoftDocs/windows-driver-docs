@@ -3,11 +3,7 @@ title: CTRL+V (Toggle Verbose Mode)
 description: The CTRL+V key toggles verbose mode on and off.
 ms.assetid: 1aca1452-86dd-4573-8ad0-e46aa474a324
 keywords: ["CTRL+V (Toggle Verbose Mode) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,13 +20,13 @@ The CTRL+V key toggles verbose mode on and off.
 
 CDB / KD Syntax
 
-```
+```dbgcmd
 CTRL+V  ENTER 
 ```
 
 WinDbg Syntax
 
-```
+```dbgcmd
 CTRL+ALT+V 
 ```
 
@@ -64,7 +60,7 @@ CTRL+ALT+V
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -73,9 +69,9 @@ When verbose mode is turned on, some display commands (such as register dumping)
 
 In WinDbg, this can also be accomplished by selecting [View | Verbose Output](view---verbose-output.md).
 
- 
+ 
 
- 
+ 
 
 
 

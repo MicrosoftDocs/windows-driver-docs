@@ -1,13 +1,8 @@
 ---
 title: Code Example for Opening a Property Store
-author: windows-driver-content
 description: Code Example for Opening a Property Store
 ms.assetid: 4d63ea52-f3f5-4af7-ad6f-0bbd57b76c52
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -16,7 +11,7 @@ ms.localizationpriority: medium
 
 The following code example shows how to open a Property Store for the current Function Instance object. The procedure for obtaining the current Function Instance object is described in [Obtaining a Function Instance Object](obtaining-a-function-instance-object.md).
 
-```
+```cpp
 /**************************************************************************\
 * CWSDDevice::OpenPropertyStore
 *
@@ -69,9 +64,9 @@ CWSDDevice::OpenPropertyStore(
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

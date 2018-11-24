@@ -7,11 +7,7 @@ keywords:
 - telephonic services WDK WAN , initiliazing
 - CoNDIS TAPI WDK networking , initializing
 - initializing CoNDIS TAPI
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -58,9 +54,9 @@ The NDPROXY driver uses the information obtained with the TAPI enumeration OIDs 
 
 -   Register one or more TAPI service access points (SAPs) on which to receive subsequent incoming TAPI calls.
 
- 
+ 
 
- 
+ 
 
 
 

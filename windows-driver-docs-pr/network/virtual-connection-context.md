@@ -6,11 +6,7 @@ keywords:
 - virtual connections WDK networking , context
 - VCs WDK networking , context
 - context WDK virtual connection
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,9 +28,9 @@ After a call is complete or a VC is otherwise not needed, the call manager can d
 
 For more information about miniport driver operations on VCs, see [Operations on VCs](operations-on-vcs.md).
 
- 
+ 
 
- 
+ 
 
 
 

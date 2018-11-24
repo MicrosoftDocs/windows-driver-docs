@@ -1,13 +1,8 @@
 ---
 title: WDI_TLV_NEXT_DIALOG_TOKEN
-author: windows-driver-content
 description: WDI_TLV_NEXT_DIALOG_TOKEN is a TLV that contains the dialog token to be used in the next Action frame.
 ms.assetid: B11331CB-50D3-4A3B-93A5-359ABD918E70
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_NEXT_DIALOG_TOKEN Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -35,7 +30,7 @@ The size (in bytes) of a UINT8.
 |-------|-------------------------------------------------------|
 | UINT8 | The dialog token to be used in the next Action frame. |
 
- 
+ 
 
 Requirements
 ------------
@@ -66,9 +61,9 @@ Requirements
 
 [OID\_WDI\_GET\_NEXT\_ACTION\_FRAME\_DIALOG\_TOKEN](https://msdn.microsoft.com/library/windows/hardware/dn925844)
 
- 
+ 
 
- 
+ 
 
 
 

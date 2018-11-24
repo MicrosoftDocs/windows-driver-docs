@@ -2,11 +2,7 @@
 title: Hardware ID
 description: A hardware ID is a vendor-defined identification string that Windows uses to match a device to an INF file.
 ms.assetid: 9eb894d6-4e83-4c08-8165-f30d6636da75
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,7 +27,7 @@ An existing device class that has established its own naming convention might us
 
 The number of characters of a hardware ID, excluding a NULL terminator, must be less than MAX_DEVICE_ID_LEN. This constraint applies to the sum of the lengths of all the fields and any "\\" field separators in a hardware ID. For more information about constraints on device IDs, see the Operations section of [**IRP_MN_QUERY_ID**](https://msdn.microsoft.com/library/windows/hardware/ff551679).
 
-To obtain the list of hardware IDs for a device, call [**IoGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff549203) with the *DeviceProperty* parameter set to **DevicePropertyHardwareID**. The list of hardware IDs that this routine retrieves is a REG_MULTI_SZ value. The maximum number of characters in a hardware list, including a NULL terminator after each hardware ID and a final NULL terminator, is REGSTR_VAL_MAX_HCID_LEN. The maximum possible number of IDs in a list of hardware IDs is 64.
+To obtain the list of hardware IDs for a device, call [**IoGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff549203) with the *DeviceProperty* parameter set to **DevicePropertyHardwareID**. The list of hardware IDs that this routine retrieves is a [REG_MULTI_SZ](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types) value. The maximum number of characters in a hardware list, including a NULL terminator after each hardware ID and a final NULL terminator, is REGSTR_VAL_MAX_HCID_LEN. The maximum possible number of IDs in a list of hardware IDs is 64.
 
 ### Examples of Hardware IDs
 
@@ -41,9 +37,9 @@ root\\\*PNP0F08
 
 PCI\\VEN_1000&DEV_0001&SUBSYS_00000000&REV_02
 
- 
+ 
 
- 
+ 
 
 
 

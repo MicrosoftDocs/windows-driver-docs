@@ -10,11 +10,7 @@ keywords:
 - device power states WDK networking
 - power states WDK networking
 - transitioning power states WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +30,9 @@ Before returning NDIS\_STATUS\_SUCCESS in response to an OID\_PNP\_SET\_POWER re
 
 -   Disable interrupts and the network adapter's DMA engine. A miniport driver cannot access the network adapter hardware after the network adapter has been set to the D3 state by the bus driver.
 
- 
+ 
 
- 
+ 
 
 
 

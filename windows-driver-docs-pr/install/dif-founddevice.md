@@ -10,6 +10,7 @@ api_name:
 api_type:
 - NA
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # DIF_FOUNDDEVICE
@@ -17,9 +18,9 @@ ms.localizationpriority: medium
 
 This DIF code is reserved for system use. Vendor-supplied installers must not handle this request.
 
- 
+ 
 
- 
+ 
 
 
 

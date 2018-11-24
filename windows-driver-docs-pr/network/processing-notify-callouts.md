@@ -9,11 +9,7 @@ keywords:
 - notify callouts WDK Windows Filtering Platform
 - Windows Filtering Platform callout drivers WDK , filter additions and deletions
 - callout drivers WDK Windows Filtering Platform , filter additions and deletions
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,7 +38,7 @@ A callout driver can specify a context to be associated with a filter when the f
 
 For example:
 
-```
+```C++
 // Context structure to be associated with the filters
 typedef struct FILTER_CONTEXT_ {
   .
@@ -126,9 +122,9 @@ NTSTATUS NTAPI
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

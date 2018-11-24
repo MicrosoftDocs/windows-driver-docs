@@ -2,11 +2,7 @@
 title: MobileBroadbandInfo XML example
 description: MobileBroadbandInfo XML example
 ms.assetid: 605566a2-55d7-456c-8999-e3bb626527fd
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,9 +33,9 @@ The following XML document uses the [MobileBroadbandInfo XML schema](mobilebroad
 </MobileBroadbandInfo>
 ```
 
- 
+ 
 
- 
+ 
 
 
 

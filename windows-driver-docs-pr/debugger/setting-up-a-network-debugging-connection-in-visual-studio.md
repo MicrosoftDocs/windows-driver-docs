@@ -3,21 +3,17 @@ title: Setting Up Kernel-Mode Debugging over a Network Cable in Visual Studio
 description: You can use Microsoft Visual Studio to set up and perform kernel-mode debugging over an Ethernet network.
 ms.assetid: 4D442355-526A-4F39-8341-614BB7A41A3E
 keywords: ["network debugging visual studio", "ethernet debugging visual studio", "debugging over ethernet visual studio"]
-ms.author: domars
 ms.date: 05/16/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # Setting Up Kernel-Mode Debugging over a Network Cable in Visual Studio
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > This feature is not available in Windows 10, version 1507 and later versions of the WDK.
 >
 
-You can use Microsoft Visual Studio to set up and perform kernel-mode debugging over an Ethernet network. To use Visual Studio for kernel-mode debugging, you must have the Windows Driver Kit (WDK) integrated with Visual Studio. For information about how to install the integrated environment, see [Windows Driver Development](http://go.microsoft.com/fwlink/p?linkid=301383).
+You can use Microsoft Visual Studio to set up and perform kernel-mode debugging over an Ethernet network. To use Visual Studio for kernel-mode debugging, you must have the Windows Driver Kit (WDK) integrated with Visual Studio. For information about how to install the integrated environment, see [Windows Driver Development](https://go.microsoft.com/fwlink/p?linkid=301383).
 
 As an alternative to using Visual Studio to set up Ethernet debugging, you can do the setup automatically. For more information, see [Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md).
 
@@ -49,8 +45,6 @@ The host computer can use any wired or wireless network adapter, but the target 
 
     **Note**  The range of port numbers that can be used for network debugging might be limited by your company's network policy. There is no way to tell from the host computer what the limitations are. To determine whether your company's policy limits the range of ports that can be used for network debugging, check with your network administrators.
 
-     
-
     For **Key**, we strongly recommend that you use the automatically generated default value. However, you can enter your own key if you prefer. For more information, see [Creating your own key](#creating-your-own-key) later in this topic. For **Host IP**, accept the default value. This is the IP address of your host computer.
 
     If your target computer has only one network adapter, you can leave **Bus Parameters** empty. If there is more than one network adapter on the target computer, use Device Manager on the target computer to determine the PCI bus, device, and function numbers for the adapter you want to use for debugging. For **Bus Parameters**, enter *b*.*d*.*f* where *b*, *d*, and *f* are the bus number, device number, and function number of the adapter.
@@ -59,11 +53,11 @@ The host computer can use any wired or wireless network adapter, but the target 
 
 **Caution**  If your target computer is in a docking station, and you have network debugging enabled for a network adapter that is part of the docking station, do not remove the computer from the docking station. If you need to remove the target computer from the docking station, disable kernel debugging first. To disable kernel debugging on the target computer, open a Command Prompt window as Administrator and enter the command **bcdedit /debug off**. Reboot the target computer.
 
- 
+ 
 
 **Note**  If you intend to install the Hyper-V role on the target computer, see [Setting Up Network Debugging of a Virtual Machine Host](setting-up-network-debugging-of-a-virtual-machine-host.md).
 
- 
+ 
 
 ## <span id="Verifying_dbgsettings_on_the_Target_Computer"></span><span id="verifying_dbgsettings_on_the_target_computer"></span><span id="VERIFYING_DBGSETTINGS_ON_THE_TARGET_COMPUTER"></span>Verifying dbgsettings on the Target Computer
 
@@ -77,7 +71,7 @@ On the target computer, open a Command Prompt window as Administrator, and enter
 
 **bcdedit /enum**
 
-```
+```console
 ...
 key                     RF8...KNE
 debugtype               NET
@@ -95,7 +89,7 @@ If you entered **Bus Parameters** in Visual Studio, verify that *busparams* matc
 
 If you do not see the value you entered for **Bus Parameters**, enter this command:
 
-**bcdedit /set "{dbgsettings}" busparams** *b***.***d***.***f*
+**bcdedit /set "{dbgsettings}" busparams** <em>b</em>**.**<em>d</em>**.**<em>f</em>
 
 where *b*, *d*, and *f* are the bus, device, and function numbers of the network adapter on the target computer that you have chosen to use for debugging.
 
@@ -116,7 +110,7 @@ For example:
 
 When you first attempt to establish a network debugging connection, you might be prompted to allow the debugging application (Microsoft Visual Studio) through the firewall. Client versions of Windows display the prompt, but Server versions of Windows do not display the prompt. Respond to the prompt by checking the boxes for all three network types: domain, private, and public. If you do not get the prompt, or if you did not check the boxes when the prompt was available, you must use Control Panel to allow access through the firewall. Open **Control Panel &gt; System and Security**, and click **Allow an app through Windows Firewall**. In the list of applications, use the check boxes to allow Visual Studio through the firewall. Restart Visual Studio.
 
-## <span id="creating_your_own_key"></span><span id="CREATING_YOUR_OWN_KEY"></span>Creating Your Own Key
+## <span id="creating-your-own-key"></span><span id="CREATING-YOUR-OWN-KEY"></span>Creating Your Own Key
 
 
 To keep the target computer secure, packets that travel between the host and target computers must be encrypted. We strongly recommend that you use an automatically generated encryption key (provided by the Visual Studio configuration wizard) when you configure the target computer). However, you can choose to create your own key. Network debugging uses a 256-bit key that is specified as four 64-bit values, in base 36, separated by periods. Each 64-bit value is specified by using up to 13 characters. Valid characters are the letters a through z and the digits 0 through 9. Special characters are not allowed. The following list gives examples of valid (although not strong) keys:
@@ -148,7 +142,7 @@ Use the following procedure if you need to change the port number.
 
 If your target computer has more than one network adapter, you must specify the bus, device, and function numbers of the network adapter that you intend to use for debugging. To specify the bus parameters, open Device Manager, and locate the network adapter that you want to use for debugging. Open the property page for the network adapter, and make a note of the bus number, device number, and function number. In an elevated Command Prompt Window, enter the following command, where *b*, *d*, and *f* are the bus, device and function numbers in decimal format:
 
-**bcdedit -set "{dbgsettings}" busparams** *b***.***d***.***f*
+**bcdedit -set "{dbgsettings}" busparams** <em>b</em>**.**<em>d</em>**.**<em>f</em>
 
 Reboot the target computer.
 
@@ -163,9 +157,9 @@ Reboot the target computer.
 
 [Supported Ethernet NICs for Network Kernel Debugging in Windows 8](supported-ethernet-nics-for-network-kernel-debugging-in-windows-8.md)
 
- 
+ 
 
- 
+ 
 
 
 

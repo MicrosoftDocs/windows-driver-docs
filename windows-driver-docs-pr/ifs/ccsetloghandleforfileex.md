@@ -11,11 +11,7 @@ api_location:
 - NtosKrnl.exe
 api_type:
 - DllExport
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -48,7 +44,7 @@ Pointer to the log handle that is to be stored.
 *FlushToLsnRoutine* \[in\]
 Pointer to a log file flush callback routine to call before flushing buffers for this file. This routine is called to ensure that a log file is flushed to the most recent logical sequence number (LSN) for any buffer control block (BCB) being flushed. This routine is declared as follows:
 
-```
+```cpp
 typedef
 VOID (*PFLUSH_TO_LSN) (
             IN PVOID LogHandle,
@@ -69,7 +65,7 @@ This is the LSN that must be on the disk on return from this callback routine.
 *QueryLogUsageRoutine* \[in\]
 Pointer to a client callback routine to call to retrieve the percentage of log usage for this file. This routine is called to check if thresholds are met to initiate a write of dirty pages. This routine is declared as follows:
 
-```
+```cpp
 typedef  
 VOID (*PQUERY_LOG_USAGE) (  
             IN PVOID LogHandle,  
@@ -110,7 +106,7 @@ Requirements
 <tbody>
 <tr class="odd">
 <td align="left"><p>Target platform</p></td>
-<td align="left">[Universal](http://go.microsoft.com/fwlink/p/?linkid=531356)</td>
+<td align="left"><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" data-raw-source="[Universal](http://go.microsoft.com/fwlink/p/?linkid=531356)">Universal</a></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Version</p></td>
@@ -142,9 +138,9 @@ Requirements
 
 [**CcSetDirtyPinnedData**](https://msdn.microsoft.com/library/windows/hardware/ff539211)
 
- 
+ 
 
- 
+ 
 
 
 

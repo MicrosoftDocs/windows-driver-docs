@@ -1,13 +1,8 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_TASK_OFFLOAD_CURRENT_CONFIG
-author: windows-driver-content
 description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_TASK_OFFLOAD_CURRENT_CONFIG to indicate when there is a change in the TCP offload capabilities of the hardware.
 ms.assetid: 4E73F09A-965F-4F32-AFF7-FDF1E3B2853C
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WDI_INDICATION_TASK_OFFLOAD_CURRENT_CONFIG Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -22,7 +17,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_TASK\_OFFLOAD\_CURRENT\_CONF
 |--------|
 | Port   |
 
- 
+ 
 
 When there is a change in the TCP offload capabilities of the hardware, the LE sends this unsolicited indication to the UE, with the new TCP checksum/LSO capabilities. Use the values **NDIS\_OFFLOAD\_SET\_OFF** and **NDIS\_OFFLOAD\_SET\_ON** for members in [**WDI\_TLV\_TCP\_OFFLOAD\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/dn898069) for indicating changes in offload capabilities. When the UE sends down a [OID\_WDI\_SET\_TCP\_OFFLOAD\_PARAMETERS](oid-wdi-set-tcp-offload-parameters.md), the LE should update the offload capabilities and then send this indication so that the OS is updated with the latest offload capabilities information.
 
@@ -33,7 +28,7 @@ When there is a change in the TCP offload capabilities of the hardware, the LE s
 |---------------------------------------------------------------------------------------|--------------------------------|----------|----------------------------------------------------------|
 | [**WDI\_TLV\_TCP\_OFFLOAD\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/dn898069) |                                | X        | The TCP/IP checksum and Large Send Offload capabilities. |
 
- 
+ 
 
 Requirements
 ------------
@@ -64,9 +59,9 @@ Requirements
 
 [OID\_WDI\_SET\_TCP\_OFFLOAD\_PARAMETERS](oid-wdi-set-tcp-offload-parameters.md)
 
- 
+ 
 
- 
+ 
 
 
 

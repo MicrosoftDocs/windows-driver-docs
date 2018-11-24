@@ -3,11 +3,7 @@ title: Edit Breakpoints
 description: Edit Breakpoints
 ms.assetid: ca55ee25-aef3-42b1-b628-0a0e849103eb
 keywords: ["Edit Breakpoints", "breakpoints, Edit Breakpoints"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -67,9 +63,9 @@ When you are entering a new breakpoint, you can also do the following:
 
 For more information about how to use breakpoints, other breakpoint commands and methods of controlling breakpoints, and setting breakpoints in user space from a kernel debugger, see [Using Breakpoints](using-breakpoints.md). For more information about conditional breakpoints, see [Setting a Conditional Breakpoint](setting-a-conditional-breakpoint.md).
 
- 
+ 
 
- 
+ 
 
 
 

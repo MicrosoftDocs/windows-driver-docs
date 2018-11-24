@@ -1,11 +1,7 @@
 ---
 Description: PROPERTYKEYs and GUIDs in Windows Portable Devices
 title: PROPERTYKEYs and GUIDs in Windows Portable Devices
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +29,9 @@ The reference section of this document describes all the PROPERTYKEY values defi
 
 [**WPD Drivers Overview**](wpd-drivers-overview.md)
 
- 
+ 
 
- 
+ 
 
 
 

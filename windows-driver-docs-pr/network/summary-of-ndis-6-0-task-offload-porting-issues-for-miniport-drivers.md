@@ -8,11 +8,7 @@ keywords:
 - offload service porting WDK networking , miniport drivers
 - porting task offload services WDK networking , miniport drivers
 - portin
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -45,9 +41,9 @@ The following list summarizes the issues that you must consider when you port of
 
 -   Miniport drivers must handle large send offload version 1 (LSOV1) and large send offload version 2 (LSOV2) out-of-band (OOB) information. The information is stored in the [**NDIS\_TCP\_LARGE\_SEND\_OFFLOAD\_NET\_BUFFER\_LIST\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff567882) structure that is part of the OOB information that is included in a [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structure.
 
- 
+ 
 
- 
+ 
 
 
 

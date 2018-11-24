@@ -4,11 +4,7 @@ description: Handling Removable Child Devices
 ms.assetid: 0edc0331-7178-4986-b818-9f1ee8f12995
 keywords:
 - removable child devices WDK Windows 2000 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ A video miniport driver can detect a change to the attached monitor and perform 
 
 For an Advanced Configuration and Power Interface (ACPI) enumerated monitor, the first mechanism is generally preferable because 32-bit device IDs are tied to the BIOS implementation. Therefore, specifying a different 32-bit device ID might not be possible.
 
- 
+ 
 
- 
+ 
 
 
 

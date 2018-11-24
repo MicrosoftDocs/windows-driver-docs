@@ -2,11 +2,7 @@
 title: WDI_TLV_PM_PROTOCOL_RSN_OFFLOAD_KEYS
 description: WDI_TLV_PM_PROTOCOL_RSN_OFFLOAD_KEYS is a TLV that contains currently configured Rsn Eapol key information.
 ms.assetid: DFF81CBD-1B10-456F-AD8D-1163DD80C981
-ms.author: windowsdriverdev 
-ms.date: 04/02/2018 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 04/02/2018
 keywords:
  - WDI_TLV_PM_PROTOCOL_RSN_OFFLOAD_KEYS Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -22,7 +18,9 @@ WDI_TLV_PM_PROTOCOL_RSN_OFFLOAD_KEYS is a TLV that contains currently configured
 
 ## Values
 
-
+| Type | Description |
+| --- | --- |
+| WDI_RSN_OFFLOAD_KEYS_CONTAINER | The currently configured Rsn Eapol key information. |
 
 ## Requirements
 

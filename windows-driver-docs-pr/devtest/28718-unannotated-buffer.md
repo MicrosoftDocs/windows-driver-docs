@@ -2,11 +2,7 @@
 title: C28718
 description: Warning C28718 Unannotated buffer.
 ms.assetid: 8417AB73-B645-451D-A359-9A66A793A78D
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -40,9 +36,9 @@ int foo( _Out_writes_(cch) LPTSTR buffer, size_t cch );
 [Using SAL Annotations to Reduce C/C++ Code Defects](http://go.microsoft.com/fwlink/p/?linkid=247283)
 
 **Annotating Function Parameters and Return Values**
- 
+ 
 
- 
+ 
 
 
 

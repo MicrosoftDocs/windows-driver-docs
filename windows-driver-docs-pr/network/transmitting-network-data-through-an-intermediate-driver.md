@@ -8,11 +8,7 @@ keywords:
 - transmitting network data
 - data transfers WDK NDIS intermediate
 - transferring data WDK NDIS intermediate
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +24,9 @@ As discussed in [Registering an Intermediate Driver as a Miniport Driver](regist
 
 NDIS always preserves the ordering of [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structure pointers as passed as a linked list to **NdisSendNetBufferLists**. The underlying miniport driver also assumes that list that is passed in to its *MiniportSendNetBufferLists* function implies the network data should be transmitted in the same order.
 
- 
+ 
 
- 
+ 
 
 
 

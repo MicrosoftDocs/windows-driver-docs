@@ -1,6 +1,5 @@
 ---
 title: Printer Forms Support
-author: windows-driver-content
 description: Printer Forms Support
 ms.assetid: 7525dc6c-7521-4a6b-923c-00b7e1c9db8c
 keywords:
@@ -11,11 +10,7 @@ keywords:
 - paper sizes WDK forms
 - custom forms WDK printer
 - databases WDK printer forms
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +25,9 @@ This section includes:
 
 [Changes to Printer Forms in Windows Vista](changes-to-printer-forms-in-windows-vista.md)
 
- 
+ 
 
- 
+ 
 
 
 

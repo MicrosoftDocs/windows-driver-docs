@@ -6,11 +6,7 @@ keywords:
 - rendering multiple targets WDK DirectX 9.0 , optional features
 - multiple render targets WDK DirectX 9.0 , optional features
 - simultaneous render targets WDK DirectX 9.0 , optional features
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,9 +32,9 @@ A DirectX 9.0 version driver that supports rendering to multiple targets simulta
 
 Note that a driver for a display device that supports pixel shader version 3.0 and later must indicate that it supports the extended features for multiple render targets. For more information, see [Reporting Capabilities for Shader 3 Support](reporting-capabilities-for-shader-3-support.md).
 
- 
+ 
 
- 
+ 
 
 
 

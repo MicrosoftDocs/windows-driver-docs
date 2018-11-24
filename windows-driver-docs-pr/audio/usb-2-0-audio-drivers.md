@@ -1,17 +1,13 @@
 ---
 title: USB Audio 2.0 Drivers
 description: Starting with Windows 10, release 1703, a USB Audio 2.0 driver is shipped with Windows. This driver provides basic functionality.
-ms.author: windowsdriverdev
-ms.date: 5/14/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 10/23/2018
 ms.localizationpriority: medium
 ---
 
-## USB Audio 2.0 Drivers
+# USB Audio 2.0 Drivers
 
-Starting with Windows 10, release 1703, a USB Audio 2.0 driver is shipped with Windows. It is designed to support the USB Audio 2.0 device class. The driver is a WaveRT audio port class miniport. For more information about the  USB Audio 2.0 device class, see [http://www.usb.org/developers/docs/devclass_docs/](http://www.usb.org/developers/docs/devclass_docs/). 
+Starting with Windows 10, release 1703, a USB Audio 2.0 driver is shipped with Windows. It is designed to support the USB Audio 2.0 device class. The driver is a WaveRT audio port class miniport. For more information about the  USB Audio 2.0 device class, see [https://www.usb.org/developers/docs/devclass_docs/](https://www.usb.org/developers/docs/devclass_docs/). 
 
 The driver is named: _usbaudio2.sys_ and the associated inf file is _usbaudio2.inf_.
 
@@ -19,7 +15,7 @@ The driver will identify in device manager as "USB Audio Class 2 Device". This n
 
 The driver is automatically enabled when a compatible device is attached to the system. However, if a third-party driver exists on the system or Windows Update, that driver will be installed and override the class driver. 
 
- 
+ 
 ## Architecture
 
 USBAudio.Sys fits within the wider architecture of Windows USB Audio as shown. 
@@ -34,7 +30,7 @@ The following USB specifications define USB Audio and are referenced in this top
 -	ADC-2 refers to the USB Device Class Definition for Audio Devices, Release 2.0.
 -	FMT-2 refers to the Audio Data Formats specification, Release 2.0.
 
-The USB-IF is a special interest group that maintains the [Official USB Specification](http://www.usb.org/developers/docs/), test specifications and tools. 
+The USB-IF is a special interest group that maintains the [Official USB Specification](https://www.usb.org/developers/docs/), test specifications and tools. 
 
 
 ## Audio formats
@@ -197,14 +193,14 @@ There is not any specific partner customization that is associated with the in-b
 
 This INF file entry (provided in a update to Windows Release 1703), is used to indentify that the in-box driver is a generic device driver. 
 
-```
+```inf
 GenericDriverInstalled,,,,1
 ```
 
 
 The in-box driver registers for the following compatible IDs with usbaudio2.inf.
 
-```
+```inf
 USB\Class_01&SubClass_00&Prot_20
 USB\Class_01&SubClass_01&Prot_20
 USB\Class_01&SubClass_02&Prot_20
@@ -216,14 +212,14 @@ See the USB audio 2.0 specification for subclass types.
 USB Audio 2.0 Devices with MIDI (subclass 0x03 above) will enumerate the MIDI function as a separate multi-function device with usbaudio.sys (USB Audio 1.0 driver) loaded. 
 
 The USB Audio 1.0 class driver registers this compatible ID with wdma_usb.inf.
- 
-```
+ 
+```inf
 USB\Class_01
 ```
- 
+ 
 And has these exclusions:
- 
-```
+ 
+```inf
 USB\Class_01&SubClass_00&Prot_20
 USB\Class_01&SubClass_01&Prot_20
 USB\Class_01&SubClass_02&Prot_20
@@ -235,6 +231,104 @@ An arbitrary number of channels (greater than eight) are not supported in shared
 
 ## IHV USB Audio 2.0 drivers and updates
 For IHV provided third party driver USB Audio 2.0 drivers, those drivers will continue to be preferred for their devices over our in-box driver unless they update their driver to explicitly override this behavior and use the in-box driver. 
+
+## Audio Jack Registry Descriptions
+
+Starting in Windows 10 release 1703, IHVs that create USB Audio Class 2.0 devices having one or more jacks have the capability to describe these jacks to the in-box Audio Class 2.0 driver. The in-box driver uses the supplied jack information when handling the KSPROPERTY_JACK_DESCRIPTION for this device.
+
+Jack information is stored in the registry in the device instance key (HW key).
+
+The following describes the audio jack information settings in the registry:
+
+```text
+REG_DWORD  T<tid>_NrJacks                 # of the jack on this device
+REG_DWORD  T<tid>_J<n>_ChannelMapping     Channel mask. The value is defined in ksmedia.h. e.g. SPEAKER_FRONT_RIGHT or KSAUDIO_SPEAKER_5POINT1_SURROUND
+REG_DWORD  T<tid>_J<n>_ConnectorType      The enum value is define in EPcxConnectionType. 
+REG_DWORD  T<tid>_J<n>_GeoLocation        The enum value is define in EPcxGeoLocation.
+REG_DWORD  T<tid>_J<n>_GenLocation        The enum value is define in EPcxGenLocation.
+REG_DWORD  T<tid>_J<n>_PortConnection     The enum value is define in EPxcPortConnection.
+REG_DWORD  T<tid>_J<n>_Color              The color needs to be represent by RGB like this: 0x00RRGGBB (NOT a COLORREF).
+```
+
+\<tid\> = terminal ID (As defined in the descriptor)
+  
+\<n\>   = Jack number (1 ~ n). 
+
+Convention for \<tid\> and \<n\> is:
+
+- Base 10 (8, 9, 10 rather than 8, 9, a)
+- No leading zeros
+- n is 1-based (first jack is jack 1 rather than jack 0)
+
+For example: 
+
+T1_NrJacks, T1_J2_ChannelMapping, T1_J2_ConnectorType
+
+For additional audio jack information, see [KSJACK_DESCRIPTION structure](https://docs.microsoft.com/windows-hardware/drivers/audio/ksjack-description).
+
+These registry values can be set in various ways: 
+
+- Using custom INFs which wrap the in-box INF for the purpose to set these values.
+
+- Directly by the h/w device via a Microsoft OS Descriptors for USB devices (see example below). For more information about creating these descriptors, see [Microsoft OS Descriptors for USB Devices](https://docs.microsoft.com/windows-hardware/drivers/usbcon/microsoft-defined-usb-descriptors).
+
+### Microsoft OS Descriptors for USB Example
+
+The following Microsoft OS Descriptors for USB example contains the channel mapping and color for one jack. The example is for a non-composite device with single feature descriptor. 
+
+The IHV vendor should extend it to contain any other information for the jack description. 
+
+
+```text
+UCHAR Example2_MSOS20DescriptorSetForUAC2 [0x76] = {
+    //
+    // Microsoft OS 2.0 Descriptor Set Header
+    //
+    0x0A, 0x00,             // wLength - 10 bytes
+    0x00, 0x00,             // MSOS20_SET_HEADER_DESCRIPTOR
+    0x00, 0x00, 0x0?, 0x06, // dwWindowsVersion – 0x060?0000 for future Windows version
+    0x76, 0x00,             // wTotalLength – 118 bytes // update later
+
+    //
+    // Microsoft OS 2.0 Registry Value Feature Descriptor
+    //
+    0x42, 0x00,             // bLength - 66 bytes
+    0x04, 0x00,             // wDescriptorType – 5 for Registry Property
+    0x04, 0x00,             // wPropertyDataType - 4 for REG_DWORD
+    0x34, 0x00,             // wPropertyNameLength – 52 bytes
+    0x54, 0x00, 0x30, 0x00, // Property Name - “T01_J01_ChannelMapping”
+    0x31, 0x00, 0x5f, 0x00,
+    0x4a, 0x00, 0x30, 0x00,
+    0x31, 0x00, 0x5f, 0x00, 
+    0x43, 0x00, 0x68, 0x00,
+    0x61, 0x00, 0x6e, 0x00,
+    0x6e, 0x00, 0x65, 0x00,
+    0x6c, 0x00, 0x4d, 0x00,
+    0x61, 0x00, 0x70, 0x00,
+    0x70, 0x00, 0x69, 0x00,
+    0x6e, 0x00, 0x67, 0x00,
+    0x00, 0x00
+    0x04, 0x00,                       // wPropertyDataLength – 4 bytes
+    0x02, 0x00, 0x00, 0x00  // PropertyData - SPEAKER_FRONT_RIGHT
+
+    //
+    // Microsoft OS 2.0 Registry Value Feature Descriptor
+    //
+    0x2A, 0x00,             // bLength - 42 bytes
+    0x04, 0x00,             // wDescriptorType – 5 for Registry Property
+    0x04, 0x00,             // wPropertyDataType - 4 for REG_DWORD
+    0x1C, 0x00,             // wPropertyNameLength – 28 bytes
+    0x54, 0x00, 0x30, 0x00, // Property Name - “T01_J01_Color”
+    0x31, 0x00, 0x5f, 0x00,
+    0x4a, 0x00, 0x30, 0x00,
+    0x31, 0x00, 0x5f, 0x00,
+    0x43, 0x00, 0x6f, 0x00,
+    0x6c, 0x00, 0x6f, 0x00,
+    0x72, 0x00, 0x00, 0x00,
+    0x04, 0x00,             // wPropertyDataLength – 4 bytes
+    0x00, 0x00, 0xff, 0x00  // PropertyData - 0xff0000 - RED }
+```
+
 
 ## Troubleshooting
 If the driver does not start, the system event log should be checked. The driver logs events which indicate the reason for the failure. Similarly, audio logs can be manually collected following the steps described in [this blog entry](https://blogs.msdn.microsoft.com/matthew_van_eerde/2017/01/09/collecting-audio-logs-the-old-fashioned-way/). If the failure may indicate a driver problem, please report it using the Feedback Hub described below, and include the logs.

@@ -5,11 +5,7 @@ ms.assetid: 44a2ac71-8852-472f-82a2-7bd4d7dffa1a
 keywords:
 - multiple-head hardware WDK DirectX 9.0 , configuring
 - multiple-head hardware WDK DirectX 9.0 , adapters
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,9 +33,9 @@ A DirectX 9.0 version driver indicates how its multiple-head hardware is configu
 
 The driver returns a D3DCAPS9 structure in response to a **GetDriverInfo2** query similarly to how it returns a D3DCAPS8 structure as described in [Reporting DirectX 8.0 Style Direct3D Capabilities](reporting-directx-8-0-style-direct3d-capabilities.md). Support of this query is described in [Supporting GetDriverInfo2](supporting-getdriverinfo2.md).
 
- 
+ 
 
- 
+ 
 
 
 

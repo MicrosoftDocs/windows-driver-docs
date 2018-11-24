@@ -5,11 +5,7 @@ ms.assetid: 5e4fad4e-a790-4294-b3ac-a796f76265ad
 keywords:
 - IPsec WDK Windows Filtering Platform , compatibility with WFP callout drivers
 - Windows Filtering Platform callout drivers WDK , IPsec compatibility
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -73,7 +69,7 @@ To make a callout driver that is registered with a transport layer (FWPS\_LAYER\
 3.  An incoming transport packet that requires ALE classification must be inspected at the ALE authorize receive/accept layers (**FWPS\_LAYER\_ALE\_AUTH\_RECV\_ACCEPT\_V4** or **FWPS\_LAYER\_ALE\_AUTH\_RECV\_ACCEPT\_V6**). Such a packet must be permitted from incoming transport layers. Beginning with Windows Vista with Service Pack 1 (SP1) and Windows Server 2008, use the **FWPS\_METADATA\_FIELD\_ALE\_CLASSIFY\_REQUIRED** metadata flag to determine whether the incoming packet will be indicated to the **FWPM\_LAYER\_ALE\_AUTH\_RECV\_ACCEPT\_V4** and **FWPM\_LAYER\_ALE\_AUTH\_RECV\_ACCEPT\_V6** filtering layers. This metadata flag replaces the **FWP\_CONDITION\_FLAG\_REQUIRES\_ALE\_CLASSIFY** condition flag that was used in Windows Vista.
 
 4.  To prevent interference with internal Windows IPsec processing, do not intercept IPsec tunnel-mode traffic at transport layers if the IPsec traffic is not yet detunneled. The following code example shows how to bypass such packets.
-    ```
+    ```C++
     FWPS_PACKET_LIST_INFORMATION0 packetInfo = {0};
     FwpsGetPacketListSecurityInformation0(
      layerData,
@@ -98,9 +94,9 @@ To make a callout driver that is registered with a transport layer (FWPS\_LAYER\
 
 When the engine indicates decrypted encapsulating security payload (ESP) packets, it truncates them to exclude trailing ESP data. Because of the way the engine handles such packets, the MDL data in the [**NET\_BUFFER**](https://msdn.microsoft.com/library/windows/hardware/ff568376) structure does not reflect the correct packet length. The correct length can be obtained by using the [**NET\_BUFFER\_DATA\_LENGTH**](https://msdn.microsoft.com/library/windows/hardware/ff568382) macro to retrieve the data length of the **NET\_BUFFER** structure.
 
- 
+ 
 
- 
+ 
 
 
 

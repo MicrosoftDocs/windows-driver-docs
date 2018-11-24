@@ -5,11 +5,7 @@ ms.assetid: fdcf3459-0fd4-4cf6-a9f5-13337fbd604b
 keywords:
 - DMRC WDK
 - Device Metadata Retrieval Client WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +22,9 @@ The [PackageInfo XML document](packageinfo-xml-document.md) (Packageinfo.xml), w
 
 For more information about the XML schema that is referenced by the [PackageInfo XML document](packageinfo-xml-document.md), see [PackageInfo XML Schema](https://msdn.microsoft.com/library/windows/hardware/ff549614).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,13 +1,8 @@
 ---
 title: Exploring the Driver Options in the Wizard
-author: windows-driver-content
 description: This topic explores the driver options in the first section of the Create a v4 Print Driver wizard.
 ms.assetid: 48FF0A37-BBAF-49D1-9BDE-128AED00BEEF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -99,9 +94,9 @@ This provides a simple WSD Bidi extension file. For more information about Bidi 
 USBMon Bidi extension XML + JS
 
 This provides a simple USB Bidi extension file. It is dependent on the existence of a matched USB Bidi Extender JavaScript. For more information, see [USB Bidi Extender](usb-bidi-extender.md).
- 
+ 
 
- 
+ 
 
 
 

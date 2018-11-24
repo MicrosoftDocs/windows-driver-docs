@@ -2,11 +2,7 @@
 title: Avoid Restarts during Device Installations and Driver Updates
 description: Avoiding System Restarts during Device Installations and Driver Updates
 ms.assetid: b30c9e5f-85af-4e7f-81aa-67fe2df8a178
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -44,7 +40,7 @@ If you are using an INF file, follow these steps:
 
 1.  Modify your driver INF file's **CopyFiles** section to use **COPYFLG_IN_USE_RENAME**, as follows:
 
-    ```
+    ```cpp
     [MyDriver_Install.NT]
     CopyFiles=MyDriverCopy
      
@@ -75,9 +71,9 @@ If you are not using an INF file, use these steps:
 
 [What Determines When a Driver Is Loaded](https://msdn.microsoft.com/library/windows/hardware/ff557272)
 
- 
+ 
 
- 
+ 
 
 
 

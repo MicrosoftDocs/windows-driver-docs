@@ -10,11 +10,7 @@ keywords:
 - passed verification WDK Static Driver Verifier
 - failed verification WDK Static Driver Verifier
 - inconclusive verification WDK Static Driver Verifier
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -41,9 +37,9 @@ A verification is *inconclusive* if it terminates before it completes because of
 
 When a rule does not apply to the driver, for example, if the driver does not make use of the device driver interfaces that the rule verifies, SDV reports that the rule is **Not Applicable**.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -9,11 +9,7 @@ api_name:
 - wscn ActiveConditions
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **ActiveConditions** element is a collection of all of the currentl
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ActiveConditions>
   child elements
 </wscn:ActiveConditions>
@@ -50,7 +46,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>DeviceCondition</strong>](devicecondition.md)</p></td>
+<td><p><a href="devicecondition.md" data-raw-source="[&lt;strong&gt;DeviceCondition&lt;/strong&gt;](devicecondition.md)"><strong>DeviceCondition</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -69,7 +65,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ScannerStatus</strong>](scannerstatus.md)</p></td>
+<td><p><a href="scannerstatus.md" data-raw-source="[&lt;strong&gt;ScannerStatus&lt;/strong&gt;](scannerstatus.md)"><strong>ScannerStatus</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -79,16 +75,16 @@ Remarks
 
 The **ActiveConditions** element is a list of [**DeviceCondition**](devicecondition.md) elements that describe all of the currently active conditions or errors in the device. Device conditions can vary in severity from informational to critical.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**DeviceCondition**](devicecondition.md)
 
 [**ScannerStatus**](scannerstatus.md)
 
- 
+ 
 
- 
+ 
 
 
 

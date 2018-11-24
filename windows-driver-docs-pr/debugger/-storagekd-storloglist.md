@@ -3,11 +3,7 @@ title: storagekd.storloglist
 description: The storagekd.storloglist extension displays the Storport adapter’s internal log entries.
 ms.assetid: 6308DDEF-8AB0-4D16-9245-3046114D5173
 keywords: ["storagekd.storloglist Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!storagekd.storloglist** extension displays the Storport adapter’s internal log entries.
 
-```
+```dbgcmd
 !storagekd.storloglist <Address> [<starting_entry> [<ending_entry>]] [L <count>] 
 ```
 
@@ -56,7 +52,7 @@ Count of entries to be displayed. If not specified, a value of 50 is used.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -65,7 +61,7 @@ Here is an example of **!storagekd.storloglist** display:
 
 **0: kd&gt; !storagekd.storloglist ffffe0010f5e01a0**
 
-```
+```dbgcmd
 Storport RaidLogList
     Circular buffer location:  0xffffe0010f5e1720
     Total logs written: 8
@@ -81,9 +77,9 @@ Storport RaidLogList
     [7]_[23:04:20.646] PauseDevice........... Caller: storport!StorPortPauseDevice+0x2f6 (fffff800`fb4b52d6), P/P/T/L: 0/3/0/0, Pause count: 1
 ```
 
- 
+ 
 
- 
+ 
 
 
 

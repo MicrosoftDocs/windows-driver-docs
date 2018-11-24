@@ -11,21 +11,15 @@ api_name:
 - INF AddEventProvider Directive
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 06/04/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # INF AddEventProvider Directive
 
-This directive is only available to [Windows Insiders](https://insider.windows.com/) via WDK Preview Builds.
+An **AddEventProvider** directive is used within an [**INF *DDInstall*.Events section**](inf-ddinstall-services-section.md). It specifies characteristics of the [Event Tracing for Windows](https://msdn.microsoft.com/library/windows/desktop/aa363668) (ETW) providers associated with drivers. This directive is supported for Windows 10 version 1809 and later.
 
-An **AddEventProvider** directive is used within an [**INF *DDInstall*.Events section**](inf-ddinstall-services-section.md). It specifies characteristics of the [Event Tracing for Windows](https://msdn.microsoft.com/library/windows/desktop/aa363668) (ETW) providers associated with drivers.
-
-```
+```cpp
 [DDInstall.Events] 
 
 AddEventProvider={ProviderGUID},event-provider-install-section
@@ -44,13 +38,13 @@ References an INF-writer-defined section that contains information for registeri
 Remarks
 -------
 
-The system-defined and case-insensitive extensions can be inserted into a *DDInstall***.Events** section that contains an **AddEventProvider** directive in cross-operating system and/or cross-platform INF files to specify platform-specific or OS-specific installations.
+The system-defined and case-insensitive extensions can be inserted into a <em>DDInstall</em>**.Events** section that contains an **AddEventProvider** directive in cross-operating system and/or cross-platform INF files to specify platform-specific or OS-specific installations.
 
 Each INF-writer-created section name must be unique within the INF file and must follow the general rules for defining section names. For more information about these rules, see [General Syntax Rules for INF Files](general-syntax-rules-for-inf-files.md).
 
 An **AddEventProvider** directive must reference a named *event-provider-install-section* elsewhere in the INF file. Each such section has the following form:
 
-```
+```cpp
 [event-provider-install-section]
  
 ProviderName=name
@@ -108,7 +102,7 @@ Debug type channels support events that are used solely by developers to diagnos
 
 An **AddChannel** sub-directive can also reference a *channel-install-section* elsewhere in the INF file. Each such section has the following form:
 
-```
+```cpp
 [channel-install-section]
 
 [Isolation=isolation-type]
@@ -160,7 +154,7 @@ Examples
 
 This example shows the event-provider-install sections referenced by the **AddEventProvider** directives as already shown earlier in the example for [***DDInstall*.Events**](inf-ddinstall-events-section.md).
 
-```
+```cpp
 [foo_Event_Provider_Inst]
 ProviderName  = FooCollector
 ResourceFile  = %13%\FooResource.dll

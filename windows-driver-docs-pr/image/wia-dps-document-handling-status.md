@@ -11,11 +11,7 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -75,7 +71,7 @@ The following table describes the constants that are valid with Windows 8 and l
 </tbody>
 </table>
 
- 
+ 
 
 The following table describes the constants that are valid with both Windows Vista and Windows XP.
 
@@ -118,7 +114,7 @@ The following table describes the constants that are valid with both Windows Vis
 </tbody>
 </table>
 
- 
+ 
 
 The following table describes the constants that are valid with Windows Vista only.
 
@@ -161,11 +157,11 @@ The following table describes the constants that are valid with Windows Vista on
 </tbody>
 </table>
 
- 
+ 
 
 **Note**   There are no custom-defined base definitions. You cannot create custom extensions for status flag values. If you need custom status reporting, you should define a custom property.
 
- 
+ 
 
 Requirements
 ------------
@@ -183,9 +179,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

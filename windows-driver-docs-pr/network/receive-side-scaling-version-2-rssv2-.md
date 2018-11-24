@@ -3,17 +3,13 @@ title: Receive Side Scaling Version 2 (RSSv2)
 description: This topic describes Receive Side Scaling Version 2 (RSSv2)
 ms.assetid: 192CAA41-0D17-4C06-8F13-68EA7C26D023
 keywords: Receive Side Scaling Version 2, RSSv2, Receive Side Scaling Version 2 WDK, RSSv2 network drivers
-ms.author: windowsdriverdev
 ms.date: 10/12/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
-[!include[RSSv2 Beta Prerelease](../rssv2-beta-prerelease.md)]
-
 # Receive Side Scaling Version 2 (RSSv2)
+
+[!include[RSSv2 Beta Prerelease](../rssv2-beta-prerelease.md)]
 
 [Receive Side Scaling](ndis-receive-side-scaling2.md) improves the system performance related to handling of network data on multiprocessor systems. NDIS 6.80 and later support RSS Version 2 (RSSv2), which extends RSS by offering dynamic, per-VPort spreading of queues.
 
@@ -29,7 +25,7 @@ This topic uses the following terms:
 
 | Term | Definition |
 | --- | --- |
-| RSSv1 | The first generation eceive side scaling mechanism. Uses [OID_GEN_RECEIVE_SCALE_PARAMETERS](oid-gen-receive-scale-parameters.md). |
+| RSSv1 | The first generation receive side scaling mechanism. Uses [OID_GEN_RECEIVE_SCALE_PARAMETERS](oid-gen-receive-scale-parameters.md). |
 | RSSv2 | The second generation receive side scaling mechanism supported in Windows 10, version 1803 and later, described in this topic. |
 | Scaling entity| The miniport adapter itself in Native RSS mode, or a VPort in RSSv2 mode. |
 | ITE | An indirection table entry (ITE) of a given scaling entity. The total number of ITEs per VPort cannot exceed **NumberOfIndirectionTableEntriesPerNonDefaultPFVPort** or **NumberOfIndirectionTableEntriesForDefaultVPort** in VMQ mode or 128 in the Native RSS case. **NumberOfIndirectionTableEntriesPerNonDefaultPFVPort** and **NumberOfIndirectionTableEntriesForDefaultVPort** are members of the [NDIS_NIC_SWITCH_CAPABILITIES](https://msdn.microsoft.com/library/windows/hardware/ff566583) structure. |

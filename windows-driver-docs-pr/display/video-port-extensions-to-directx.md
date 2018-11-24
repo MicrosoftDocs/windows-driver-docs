@@ -8,11 +8,7 @@ keywords:
 - DirectDraw VPEs WDK Windows 2000 display
 - video port extensions WDK DirectDraw
 - VPEs WDK DirectDraw
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +26,9 @@ Microsoft DirectDraw VPE objects monitor the incoming signal and pass image data
 
 The VPEs are not associated with the Microsoft Windows 2000 and later video port system module, *videoprt.sys*.
 
- 
+ 
 
- 
+ 
 
 
 

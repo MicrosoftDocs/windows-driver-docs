@@ -8,11 +8,7 @@ keywords:
 - miniport adapters WDK networking , reading registry
 - adapters WDK networking , reading registry
 - porting miniport drivers WDK networking , adapters
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +26,9 @@ If the driver obtained the handle passed at *NdisHandle* from the *MiniportAdapt
 
 The miniport driver uses the configuration handle in subsequent calls to the [**NdisReadConfiguration**](https://msdn.microsoft.com/library/windows/hardware/ff564511) and [**NdisWriteConfiguration**](https://msdn.microsoft.com/library/windows/hardware/ff564659) functions. For more information, see [NDIS 6.0 Configuration Functions](ndis-configuration-functions.md).
 
- 
+ 
 
- 
+ 
 
 
 

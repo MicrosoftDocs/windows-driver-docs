@@ -6,11 +6,7 @@ keywords:
 - validating private data WDK display
 - private data validation WDK display
 - invalid private data WDK display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +24,9 @@ A display miniport driver must validate all private data sent from the user-mode
     -   The [**DxgkDdiReleaseSwizzlingRange**](https://msdn.microsoft.com/library/windows/hardware/ff559786) function in the **PrivateDriverData** 32-bit member of the [**DXGKARG\_RELEASESWIZZLINGRANGE**](https://msdn.microsoft.com/library/windows/hardware/ff557644) structure.
     -   The [**DxgkDdiQueryAdapterInfo**](https://msdn.microsoft.com/library/windows/hardware/ff559746) function in the **pInputData** buffer member of the [**DXGKARG\_QUERYADAPTERINFO**](https://msdn.microsoft.com/library/windows/hardware/ff557621) structure when the DXGKQAITYPE\_UMDRIVERPRIVATE value is specified in the **Type** member.
 
- 
+ 
 
- 
+ 
 
 
 

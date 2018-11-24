@@ -2,11 +2,7 @@
 title: Customizing Control Panel
 description: Customizing Control Panel
 ms.assetid: 9382b359-7c36-4ea6-8665-269eabc20f6e
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,9 +17,9 @@ For more information about how to add a bitmap or an icon, or how to use an INF 
 
 [Adding New Digital Formats to Control Panel](adding-new-digital-formats-to-control-panel.md)
 
- 
+ 
 
- 
+ 
 
 
 

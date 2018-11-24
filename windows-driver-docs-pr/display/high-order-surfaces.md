@@ -5,11 +5,7 @@ ms.assetid: 2cbca6e0-ab32-454f-999a-89862eb8ece5
 keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , high order surfaces
 - high order surfaces WDK DirectX 8.0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,9 +17,9 @@ ms.localizationpriority: medium
 
 DirectX 8 introduces support for a class for high order surfaces. This section describes the mechanics of the DDI for these patch surfaces but it does not describe the algorithms used. Refer to the reference rasterizer source code in the Driver Development Kit (DDK) for the details of the algorithms that are used.
 
- 
+ 
 
- 
+ 
 
 
 

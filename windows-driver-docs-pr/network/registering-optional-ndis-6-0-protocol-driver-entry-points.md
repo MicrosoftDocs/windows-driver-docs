@@ -5,11 +5,7 @@ ms.assetid: bb26cf47-1183-470c-84f1-5cb20999a0fc
 keywords:
 - registering entry points
 - optional entry points WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,9 +19,9 @@ NDIS calls the [*ProtocolSetOptions*](https://msdn.microsoft.com/library/windows
 
 For more information about optional services, see [Configuring Optional Protocol Driver Services](configuring-optional-protocol-driver-services.md).
 
- 
+ 
 
- 
+ 
 
 
 

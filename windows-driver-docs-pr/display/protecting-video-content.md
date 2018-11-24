@@ -9,11 +9,7 @@ keywords:
 - video content WDK Windows 7 display , protecting
 - video content WDK Windows Server 2008 R2 display
 - video content WDK Windows Server 2008 R2 display , protecting
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +24,9 @@ To protect video content, a user-mode display driver should implement the Conten
 
 [Using Crypto Session with DirectX Video Accelerator 2.0 Decoder](using-crypto-session-with-directx-video-accelerator-2-0-decoder.md)
 
- 
+ 
 
- 
+ 
 
 
 

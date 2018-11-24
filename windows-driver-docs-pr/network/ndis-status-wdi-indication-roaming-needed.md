@@ -1,13 +1,8 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_ROAMING_NEEDED
-author: windows-driver-content
 description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_DISASSOCIATION to indicate that the host should try to find a better peer to connect to.
 ms.assetid: 25f920e9-af87-48ad-be64-aa3ebfe2db5f
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WDI_INDICATION_ROAMING_NEEDED Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -22,7 +17,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_DISASSOCIATION to indicate t
 |--------|
 | Port   |
 
- 
+ 
 
 ## Payload data
 
@@ -31,7 +26,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_DISASSOCIATION to indicate t
 |-----------------------------------------------------------------------------------------|--------------------------------|----------|-------------------------------------------------------------------------------------------------------------------------------------|
 | [**WDI\_TLV\_ROAMING\_NEEDED\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/dn898049) |                                |          | The reason for the roam trigger. When a [OID\_WDI\_TASK\_ROAM](oid-wdi-task-roam.md) is triggered, this reason is forwarded to it. |
 
- 
+ 
 
 Requirements
 ------------
@@ -62,9 +57,9 @@ Requirements
 
 [OID\_WDI\_TASK\_ROAM](oid-wdi-task-roam.md)
 
- 
+ 
 
- 
+ 
 
 
 

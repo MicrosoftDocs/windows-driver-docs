@@ -12,6 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # DIF_NEWDEVICEWIZARD_PRESELECT
@@ -46,7 +47,7 @@ After the user has selected the class for the device but before Windows displays
 </tbody>
 </table>
 
- 
+ 
 
 ### Installer Input
 
@@ -129,9 +130,9 @@ Requirements
 
 [**SP_NEWDEVICEWIZARD_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff553305)
 
- 
+ 
 
- 
+ 
 
 
 

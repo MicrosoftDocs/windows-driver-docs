@@ -1,13 +1,8 @@
 ---
 title: Namespaces for WIA Drivers
-author: windows-driver-content
 description: Namespaces for WIA Drivers
 ms.assetid: 67260a25-6233-4738-a08f-26223cc8e563
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,9 +18,9 @@ The solution to this problem is to ensure that both components use the same name
 
 See "Kernel Object Name Spaces" in the Microsoft Windows SDK documentation for more information.
 
- 
+ 
 
- 
+ 
 
 
 

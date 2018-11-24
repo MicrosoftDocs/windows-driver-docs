@@ -3,11 +3,7 @@ title: .srcnoisy (Noisy Source Loading)
 description: The .srcnoisy command controls the verbosity level for source file loading.
 ms.assetid: c57e0d0a-7903-455a-9a92-fab75f10ca80
 keywords: [".srcnoisy (Noisy Source Loading) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **.srcnoisy** command controls the verbosity level for source file loading.
 
-```
+```dbgcmd
 .srcnoisy [Options]
 ```
 
@@ -67,7 +63,7 @@ Displays all information displayed by options 1 and 2.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -76,9 +72,9 @@ With no parameters, **.srcnoisy** will display the current status of noisy sourc
 
 Noisy source loading should not be confused with noisy symbol loading -- that is controlled by the [**!sym noisy**](-sym.md) extension and by other means of controlling the [SYMOPT\_DEBUG](symbol-options.md#symopt-debug) setting.
 
- 
+ 
 
- 
+ 
 
 
 

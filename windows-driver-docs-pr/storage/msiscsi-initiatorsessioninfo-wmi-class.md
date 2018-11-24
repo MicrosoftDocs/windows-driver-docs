@@ -3,6 +3,7 @@ title: MSiSCSI\_InitiatorSessionInfo WMI Class
 description: MSiSCSI\_InitiatorSessionInfo WMI Class
 ms.assetid: 73053af8-80b0-4cab-8e27-c651be8f0e8c
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MSiSCSI\_InitiatorSessionInfo WMI Class
@@ -17,7 +18,7 @@ Because this class is associated with a particular instance of a storage minipor
 
 The MSiSCSI\_InitiatorSessionInfo class is defined in *Mgmt.mof*.
 
-```
+```cpp
 class MSiSCSI_InitiatorSessionInfo {
   [read,key] String  InstanceName;
   [read] boolean  Active;
@@ -43,9 +44,9 @@ class MSiSCSI_InitiatorSessionInfo {
 
 When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_InitiatorSessionInfo**](https://msdn.microsoft.com/library/windows/hardware/ff563054) data structure.
 
- 
+ 
 
- 
+ 
 
 
 

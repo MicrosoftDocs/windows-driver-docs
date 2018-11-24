@@ -9,11 +9,7 @@ api_name:
 - AVCSTRM_ABORT_STREAMING
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ ms.localizationpriority: medium
 
 The **AVCSTRM\_ABORT\_STREAMING** function code cancels *all* the pending data requests and frees the resources used.
 
-### <span id="i_o_status_block"></span><span id="I_O_STATUS_BLOCK"></span>I/O Status Block
+### I/O Status Block
 
 If successful, *avcstrm.sys* sets **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS.
 
@@ -66,9 +62,9 @@ Possible error return values include:
 </tbody>
 </table>
 
- 
+ 
 
-### <span id="comments"></span><span id="COMMENTS"></span>Comments
+### Comments
 
 Note, this functionality cancels *all* streaming IRPs. To cancel an individual IRP, use [**IoCancelIrp**](https://msdn.microsoft.com/library/windows/hardware/ff548338).
 
@@ -76,7 +72,7 @@ A subunit should call this when its target device is removed or the original dat
 
 This function does not use any member of the **CommandData** union in the AVC\_STREAM\_REQUEST\_BLOCK structure.
 
-```
+```cpp
 typedef struct _AVC_STREAM_REQUEST_BLOCK {
   ULONG  SizeOfThisBlock;
   ULONG  Version;
@@ -89,7 +85,7 @@ typedef struct _AVC_STREAM_REQUEST_BLOCK {
 } AVC_STREAM_REQUEST_BLOCK, *PAVC_STREAM_REQUEST_BLOCK;
 ```
 
-### <span id="requirements"></span><span id="REQUIREMENTS"></span>Requirements
+### Requirements
 
 **Headers:** Declared in *avcstrm.h*. Include *avcstrm.h*.
 
@@ -107,13 +103,13 @@ To send this request, a subunit submits an [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL
 
 This function code must be called at PASSIVE\_LEVEL. When a data IRP is being canceled, it can be executed at DISPATCH\_LEVEL. In this case, a subunit should start a work item and call this function in its work item routine, which is executing at the PASSIVE\_LEVEL.
 
-### <span id="see_also"></span><span id="SEE_ALSO"></span>See Also
+### See Also
 
 [**INIT\_AVCSTRM\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/ff560750), [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff550766), [**IOCTL\_AVCSTRM\_CLASS**](https://msdn.microsoft.com/library/windows/hardware/ff560778), [**AVCSTRM\_FUNCTION**](https://msdn.microsoft.com/library/windows/hardware/ff554120)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -12,6 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # SM\_GetLUNStatistics function
@@ -24,9 +25,9 @@ Syntax
 
 ```ManagedCPlusPlus
 void SM_GetLUNStatistics(
-   [in, HBAType("HBA_SCSIID")] HBAScsiID                                     Lunit,
-   [out, HBA_STATUS_QUALIFIERS] HBA_STATUS                                   HBAStatus,
-   [out, HBAType("MS_SMHBA_PROTOCOLSTATISTICS")] MS_SMHBA_PROTOCOLSTATISTICS ProtocolStatistics
+   [in, HBAType("HBA_SCSIID")] HBAScsiID                                     Lunit,
+   [out, HBA_STATUS_QUALIFIERS] HBA_STATUS                                   HBAStatus,
+   [out, HBAType("MS_SMHBA_PROTOCOLSTATISTICS")] MS_SMHBA_PROTOCOLSTATISTICS ProtocolStatistics
 );
 ```
 
@@ -81,9 +82,9 @@ Requirements
 
 [**SM\_GetLUNStatistics\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff566241)
 
- 
+ 
 
- 
+ 
 
 
 

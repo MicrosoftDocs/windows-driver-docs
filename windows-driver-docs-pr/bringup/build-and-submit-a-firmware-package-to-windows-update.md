@@ -1,12 +1,7 @@
 ---
 title: Build and submit a firmware package to Windows Update (WU)
 description: Build and submit a firmware package to Windows Update (WU)
-author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 05/15/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -55,7 +50,7 @@ The in-box Makecab.exe allows the user to create a CAB file. Though there are ot
 
 The key is to make sure that the folder that contains the driver is included in the CAB file as well. For example, the driver package may have a structure similar to the following:
 
-```
+```syntax
 C:\Desktop
         \DriverFolderOne
                 Driver.inf

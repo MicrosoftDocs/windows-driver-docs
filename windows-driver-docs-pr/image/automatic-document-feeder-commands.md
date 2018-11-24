@@ -2,11 +2,7 @@
 title: Automatic Document Feeder Commands
 description: Automatic Document Feeder Commands
 ms.assetid: dd6664d6-4853-4f97-85cc-39a7879d523e
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -79,14 +75,14 @@ Called by the WIA Flatbed driver to get the status of the ADF attached to the de
 </tbody>
 </table>
 
- 
+ 
 
 <span id="CMD_GETADFUNLOADREADY"></span><span id="cmd_getadfunloadready"></span>CMD\_GETADFUNLOADREADY  
 Called by the WIA Flatbed Driver to determine whether the ADF is ready for a page to be unloaded. If so, return S\_OK. If this command does not apply to the device, return E\_NOTIMPL.
 
- 
+ 
 
- 
+ 
 
 
 

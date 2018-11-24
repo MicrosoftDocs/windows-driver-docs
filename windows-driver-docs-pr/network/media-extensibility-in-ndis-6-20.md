@@ -5,11 +5,7 @@ ms.assetid: abc240da-be6e-4a7a-a9d1-186633c5bfd3
 keywords:
 - NDIS 6.20 WDK , media extensibility
 - media extensibility WDK NDIS 6.20
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +25,9 @@ NDIS 6.20 introduces enhanced support for media specific out of band (OOB) data.
 
 For more information about media specific information, for more information about media extensibility, see [OID\_GEN\_PHYSICAL\_MEDIUM\_EX](https://msdn.microsoft.com/library/windows/hardware/ff569622) and [**NDIS\_NBL\_MEDIA\_SPECIFIC\_INFORMATION\_EX**](https://msdn.microsoft.com/library/windows/hardware/ff566518).
 
- 
+ 
 
- 
+ 
 
 
 

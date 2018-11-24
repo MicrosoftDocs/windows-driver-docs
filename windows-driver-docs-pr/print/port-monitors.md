@@ -1,6 +1,5 @@
 ---
 title: Port Monitors
-author: windows-driver-content
 description: Port Monitors
 ms.assetid: 4758ebda-f93e-49fb-8605-17cf43194afc
 keywords:
@@ -9,11 +8,7 @@ keywords:
 - port monitors WDK print , about port monitors
 - port monitors WDK print , DLLs
 - print queues WDK , port monitors
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -47,9 +42,9 @@ The UI DLL communicates with the server DLL by calling the spooler's [**XcvData*
 
 A [sample port monitor](sample-port-monitor.md) is included in the Windows Driver Kit (WDK).
 
- 
+ 
 
- 
+ 
 
 
 

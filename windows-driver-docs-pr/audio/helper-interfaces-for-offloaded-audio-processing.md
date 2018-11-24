@@ -2,11 +2,7 @@
 title: Helper Interfaces for Offloaded Audio Processing
 description: This topic presents the PortCls helper interfaces, to simplify the drivers that support offloaded-audio processing.
 ms.assetid: 9C78621E-9824-4992-9D7E-BCF3B51F1BFB
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -81,9 +77,9 @@ class CMiniportWaveRTStream :
 
 The *Portcls.h* header file defines these interfaces. And for more information about how to develop a driver that can handle hardware-offloaded audio streams, see [Driver Implementation Details](driver-implementation-details.md).
 
- 
+ 
 
- 
+ 
 
 
 

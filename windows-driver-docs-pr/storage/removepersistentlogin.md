@@ -3,6 +3,7 @@ title: RemovePersistentLogin
 description: RemovePersistentLogin
 ms.assetid: ae83af57-3f52-421c-869a-9242d9101476
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # RemovePersistentLogin
@@ -14,9 +15,9 @@ This WMI method belongs to the unpublished [MSiSCSI\_Operations WMI class](msisc
 
 Miniport drivers that implement the MSiSCSI\_Operations WMI class must support **RemovePersistentLogin**.
 
- 
+ 
 
- 
+ 
 
 
 

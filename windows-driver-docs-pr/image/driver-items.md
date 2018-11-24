@@ -1,13 +1,8 @@
 ---
 title: Driver Items
-author: windows-driver-content
 description: Driver Items
 ms.assetid: 7b557c92-400e-45e5-bee6-328489d20cae
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -45,9 +40,9 @@ The following diagram illustrates an item tree that a minidriver creates for a s
 
 For more information about driver items, see [Developing a WIA Driver: Basic Concepts](developing-a-wia-driver--basic-concepts.md), [Developing a WIA Scanner Driver](developing-a-wia-scanner-driver.md) and [Developing a WIA Camera Driver](developing-a-wia-camera-driver.md).
 
- 
+ 
 
- 
+ 
 
 
 

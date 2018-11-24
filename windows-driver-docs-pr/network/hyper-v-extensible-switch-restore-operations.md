@@ -2,11 +2,7 @@
 title: Hyper-V Extensible Switch Restore Operations
 description: Hyper-V Extensible Switch Restore Operations
 ms.assetid: 283D9E43-79F2-47B1-8D29-39A8E7CBE2C7
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +23,7 @@ If the extension owns the run-time data, it restores this data in the following 
 
     **Note**  The value of the **PortId** member of the [**NDIS\_SWITCH\_NIC\_SAVE\_STATE**](https://msdn.microsoft.com/library/windows/hardware/hh598216) structure may be different from the **PortId** value at the time that the run-time data was saved. This can occur if run-time data was saved during a Live Migration from one host to another. However, the configuration of the extensible switch NIC is retained during the Live Migration. This enables the extension to restore the run-time data to the extensible switch NIC by using the new **PortId** value.
 
-     
+     
 
 2.  The extension completes the OID set request with NDIS\_STATUS\_SUCCESS.
 
@@ -44,13 +40,13 @@ During the restore operation for run-time data, the protocol edge of the extensi
 
 **Note**  The protocol edge of the extensible switch will not interleave restore operations for run-time data for the same NIC. The protocol edge will start a run-time data restore operation for a NIC only after a previous restore operation has completed on the same NIC. However, the protocol edge may start a restore operation for a NIC while another restore operation is in progress for another NIC. Because of this, we highly recommend that extensions perform restore operations in a non-interleaved fashion. For example, extensions should not assume that a new restore operation cannot start on another NIC before an ongoing restore operation has completed for a different NIC.
 
- 
+ 
 
 For more information about this OID request, see [Restoring Hyper-V Extensible Switch Run-Time Data](restoring-hyper-v-extensible-switch-run-time-data.md).
 
- 
+ 
 
- 
+ 
 
 
 

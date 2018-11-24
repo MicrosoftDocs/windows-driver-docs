@@ -2,11 +2,7 @@
 title: WDI TLV generator/parser XML semantics
 description: The TLV generator/parser XML file is a list of messages, containers (TLVs), and property groups (structs). This topic covers the XML syntax.
 ms.assetid: AD268E68-B969-45D8-A2F2-4025E827D496
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -67,7 +63,7 @@ List of container references (`<containerRef />`). These are the different TLVs 
 
 ### Example
 
-```
+```XML
 <message commandId="WDI_SET_P2P_LISTEN_STATE"
          type="WDI_SET_P2P_LISTEN_STATE_PARAMETERS"
          description="Parameters to set listen state."
@@ -103,7 +99,7 @@ None.
 
 ### Example
 
-```
+```XML
 <containerRef id="WDI_TLV_P2P_CHANNEL_NUMBER"
               name="ListenChannel"
               optional="true"
@@ -134,7 +130,7 @@ One of `<groupRef />` or `<namedType />`.
 
 ### Example
 
-```
+```XML
 <container name="P2PListenStateContainer"
            description="Container for P2P Listen State setting."
            type="WDI_P2P_LISTEN_STATE_CONTAINER">
@@ -161,7 +157,7 @@ None.
 
 ### Examples
 
-```
+```XML
 <container name="WFDChannelContainer"
            description="Container for a Wi-Fi Direct channel."
            type="WDI_P2P_CHANNEL_CONTAINER">
@@ -188,7 +184,7 @@ None.
 
 ### Example
 
-```
+```XML
 <container name="P2PListenStateContainer"
            description="Container for P2P Listen State setting."
            type="WDI_P2P_LISTEN_STATE_CONTAINER">
@@ -215,7 +211,7 @@ List of `<containerRef />`.
 
 ### Example
 
-```
+```XML
 <aggregateContainer
     name="P2PInvitationRequestInfoContainer"
     type="WDI_P2P_INVITATION_REQUEST_INFO_CONTAINER"
@@ -250,7 +246,7 @@ These definitions are necessary as they help to solve padding issues with struct
 
 **Note**  Order matters here. All data offsets are implied based on the property group description, and data is written/parsed in the order it is defined here. These structures have to be defined here.
 
- 
+ 
 
 ## Primitive Field Types (`<bool/> <uint8/> <uint16/> <uint32/> <int8/> <int16/> <int32/>`)
 
@@ -290,7 +286,7 @@ There are several possible property types (struct fields).
 
 ### Example
 
-```
+```XML
 <propertyGroup name="P2PDiscoverModeStruct"
                type="WDI_P2P_DISCOVER_MODE"
                description="Structure definition for P2P Discover Mode Parameters">
@@ -319,9 +315,9 @@ There are several possible property types (struct fields).
 </propertyGroup>
 ```
 
- 
+ 
 
- 
+ 
 
 
 

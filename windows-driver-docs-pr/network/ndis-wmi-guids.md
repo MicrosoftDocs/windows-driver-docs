@@ -1,15 +1,10 @@
 ---
 title: NDIS WMI GUIDs
-author: windows-driver-content
 description: This topic describes GUIDS for WMI in NDIS.
 ms.assetid: c07f5042-6193-49f5-80bb-ef1a5aa63335
 keywords:
 - NDIS WMI GUIDs, WDK NDIS WMI GUIDs network drivers
-ms.author: windowsdriverdev
 ms.date: 11/22/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

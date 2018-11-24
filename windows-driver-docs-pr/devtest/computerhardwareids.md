@@ -2,11 +2,7 @@
 title: ComputerHardwareIds
 description: ComputerHardwareIds
 ms.assetid: ee2c53d3-680d-4988-8eb9-a3713ea47ca4
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,9 +21,9 @@ This section contains the following topics:
 
 For more information about device metadata packages, see [Device Metadata Packages](https://msdn.microsoft.com/library/windows/hardware/ff541439).
 
- 
+ 
 
- 
+ 
 
 
 

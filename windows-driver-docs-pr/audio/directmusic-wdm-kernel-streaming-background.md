@@ -11,11 +11,7 @@ keywords:
 - hardware acceleration WDK audio
 - miniport drivers WDK audio , kernel-mode hardware acceleration
 - synthesizers WDK audio , kernel-mode hardware acceleration
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -63,9 +59,9 @@ When the DMus port driver receives MIDI data, it routes the data to the sequence
 
 When the DMus port driver receives a property-request containing DLS data (see [**KSPROPERTY\_SYNTH\_DLS\_DOWNLOAD**](https://msdn.microsoft.com/library/windows/hardware/ff537396)), it routes the request directly to the miniport driver. Because these are just sounds that can be played, there is no need to involve the sequencer or wave sink when they are downloaded.
 
- 
+ 
 
- 
+ 
 
 
 

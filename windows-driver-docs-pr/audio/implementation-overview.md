@@ -2,11 +2,7 @@
 title: Implementation Overview
 description: This topic is an overview of the implementation key points that you must be aware of, when you develop a driver for an audio adapter that is capable of processing hardware-offloaded audio streams.
 ms.assetid: B93B9A6D-7317-482B-A0B8-298CE8F21193
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -53,9 +49,9 @@ If a UWP app streams media content and uses Media Foundation, Media Engine, or t
 
 UWP apps that use WASAPI or streaming communications have to explicitly opt-in for hardware offloading.
 
- 
+ 
 
- 
+ 
 
 
 

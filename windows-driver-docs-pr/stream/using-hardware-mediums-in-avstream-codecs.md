@@ -1,15 +1,10 @@
 ---
 title: Using Hardware Mediums in AVStream Codecs
-author: windows-driver-content
 description: Using Hardware Mediums in AVStream Codecs
 ms.assetid: 07c25875-c549-4d47-ac0d-605f2aa9daa4
 keywords:
 - AVStream hardware codec support WDK , using hardware mediums
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +23,9 @@ To use private mediums, the minidriver should do the following in the pin's [*AV
 
 3.  The driver can then perform operations on the buffer and route it to the connected pin/filter object through its custom medium.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,11 +3,7 @@ title: j (Execute If - Else)
 description: The j command conditionally executes one of the specified commands, depending on the evaluation of a given expression.
 ms.assetid: c6bb2415-e888-458b-8fb9-9d50b90cc531
 keywords: ["j (Execute If - Else) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **j** command conditionally executes one of the specified commands, depending on the evaluation of a given expression.
 
-```
+```dbgcmd
 j Expression Command1 ; Command2 
 j Expression 'Command1' ; 'Command2' 
 ```
@@ -62,7 +58,7 @@ The command string to be executed if the expression in *Expression* evaluates to
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -71,20 +67,20 @@ You cannot add a semicolon or additional commands after the **j** command. If a 
 
 The following command displays the value of **eax** if **MySymbol** is equal to zero and displays the values of **ebx** and **ecx** otherwise.
 
-```
+```dbgcmd
 0:000> j (MySymbol=0) 'r eax'; 'r ebx; r ecx' 
 ```
 
 You could omit the single quotation marks around **r eax**, but they make the command easier to read. If you want to omit one of the commands, you can include empty quotation marks or omit the parameter for that command, as in the following commands.
 
-```
+```dbgcmd
 0:000> j (MySymbol=0) ''; 'r ebx; r ecx' 
 0:000> j (MySymbol=0)  ; 'r ebx; r ecx' 
 ```
 
 You can also use the **j** command inside other commands. For example, you can use a **j** command to create conditional breakpoints.
 
-```
+```dbgcmd
 0:000> bp `mysource.cpp:143` "j (poi(MyVar)>0n20) ''; 'gc' "
 ```
 
@@ -95,9 +91,9 @@ For more information about the syntax for conditional breakpoints, see [Setting 
 
 [**z (Execute While)**](z--execute-while-.md)
 
- 
+ 
 
- 
+ 
 
 
 

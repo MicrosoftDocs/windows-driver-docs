@@ -3,11 +3,7 @@ title: wudfext.wudfrequest
 description: The wudfext.wudfrequest extension displays information about an I/O request.
 ms.assetid: 4812c7bb-0fce-43e1-8f07-e4da9dd0c3bb
 keywords: ["wudfext.wudfrequest Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,9 +18,9 @@ ms.localizationpriority: medium
 
 The **!wudfext.wudfrequest** extension displays information about an I/O request.
 
-```
+```dbgcmd
 !wudfext.wudfrequest pWDFRequest
-```
+```dbgcmd
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 
@@ -51,7 +47,7 @@ Specifies the address of the **WDFIoRequest** interface to display information a
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -62,7 +58,7 @@ Remarks
 
 The following is an example of the **!wudfext.wudfrequest** display:
 
-```
+```dbgcmd
 kd> !wudfrequest 0x000fa530 
 CWdfIoRequest  0x000fa4b8
 Type: WdfRequestRead
@@ -98,9 +94,9 @@ UM IRP: 0x00429108  UniqueId: 0xf4  Kernel Irp: 0x0x936ef160
         Offset:               0x0
 ```
 
- 
+ 
 
- 
+ 
 
 
 

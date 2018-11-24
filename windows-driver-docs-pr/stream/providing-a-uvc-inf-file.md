@@ -1,6 +1,5 @@
 ---
 title: Providing a UVC INF File
-author: windows-driver-content
 description: Providing a UVC INF File
 ms.assetid: 44311eb8-1035-466c-878b-a5d964b34490
 keywords:
@@ -8,16 +7,11 @@ keywords:
 - UVC INF files WDK USB Video Class
 - UVC INF files WDK USB Video Class , sample code
 - sample code WDK USB Video Class , UVC INF files
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 09/12/2018
 ms.localizationpriority: medium
 ---
 
 # Providing a UVC INF File
-
 
 This section illustrates various portions of a device-specific INF file.
 
@@ -29,7 +23,7 @@ Be aware, however, that you must install this specific sample by using an INF fi
 
 To do so, include the following code in the INF file, here arbitrarily named *Xuplgin.inf*:
 
-```
+```INF
 ; Copyright (c) CompanyName. All rights reserved.
 
 [Version]
@@ -57,7 +51,7 @@ MyDevice.CopyList=11    ; %systemroot%\system32 on
 
 The device-specific INF file is matched with the device based on the VID/PID identifier. In this case, the device-specific INF file takes precedence over *Usbvideo.inf*.
 
-```
+```INF
 [CompanyName]
 %MyDevice.DeviceDesc%=MyDevice,USB\Vid_XXXX&Pid_XXXX&MI_XX
 
@@ -71,7 +65,7 @@ CopyFiles=MyDevice.CopyList
 
 The following portion of the INF file shows the registry entries for a node-based Extension Unit plug-in. Refer to *Usbvideo.inf* for similar examples.
 
-```
+```INF
 [MyDevice.PlugIns]
 HKCR,CLSID\%Plugin.CLSID%,,,%PlugIn_IExtensionUnit%
 HKCR,CLSID\%Plugin.CLSID%\InprocServer32,,,MyPlugin.ax
@@ -88,7 +82,7 @@ HKLM,System\CurrentControlSet\Control\NodeInterfaces\%XU_GUID%,
    CLSID,1,zz,zz,zz,zz,zz,zz,zz,zz,zz,zz,zz,zz,zz,zz,zz,zz
 ```
 
-```
+```INF
 [MyDevice.NT.Interfaces]
 AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,MyDevice.Interface
 AddInterface=%KSCATEGORY_RENDER%,GLOBAL,MyDevice.Interface
@@ -102,6 +96,8 @@ HKR,,CLSID,,%ProxyVCap.CLSID%
 HKR,,FriendlyName,,%MyDevice.DeviceDesc%
 HKR,,RTCFlags,0x00010001,0x00000010
 ```
+
+For USB Cameras, if the device interface registry key location contains a DWORD registry entry **EnableDependentStillPinCapture** with a non-zero value, the dependent pin on such cameras will be used for photo capture. If the registry entry is not present or set to zero, the dependent pin will not be used. Instead, the photo capture will be done using a frame taken from the preview pin.
 
 You can also define an optional registry value called **UvcFlags**. **UvcFlags** should be a DWORD value. When the device is plugged in, the UVC driver receives a Plug and Play (PnP) Start request. The driver then searches for **UvcFlags** in the device registry key. The DWORD value is a bitmask and can contain the values in the following table.
 
@@ -145,11 +141,11 @@ You can also define an optional registry value called **UvcFlags**. **UvcFlags**
 </tbody>
 </table>
 
- 
+ 
 
 Include a line similar to the following example to specify the bitmask to be applied:
 
-```
+```INF
 HKR,,UvcFlags,0x00010001,0x00000010
 ```
 
@@ -159,7 +155,7 @@ In low frame rate conditions, the EOF bit might report completion faster than th
 
 For more information about the positional syntax of AddReg directives, see [**INF AddReg Directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320).
 
-```
+```INF
 [MyDevice.NT.Services]
 AddService = usbvideo,0x00000002,MyDevice.ServiceInstall
 
@@ -174,7 +170,7 @@ ServiceBinary = %10%\System32\Drivers\usbvideo.sys
 MyPlugin.ax
 ```
 
-```
+```INF
 [Strings]
 ; Non-localizable
 Plugin.CLSID="{zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz}"
@@ -195,11 +191,3 @@ USBVideo.SvcDesc="USB Video Device (WDM)"
 
 PlugIn_IMyExtensionUnit="CompanyName Extension Unit Interface"
 ```
-
- 
-
- 
-
-
-
-

@@ -10,6 +10,7 @@ api_name:
 api_type:
 - NA
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # SetupDiMoveDuplicateDevice
@@ -17,9 +18,9 @@ ms.localizationpriority: medium
 
 This function is obsolete and no longer supported in any version of the Microsoft Windows operating system.
 
- 
+ 
 
- 
+ 
 
 
 

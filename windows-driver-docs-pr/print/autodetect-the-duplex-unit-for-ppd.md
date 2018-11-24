@@ -1,6 +1,5 @@
 ---
 title: Autodetect the Duplex Unit for PPD
-author: windows-driver-content
 description: Autodetect the Duplex Unit for PPD
 ms.assetid: bbecceb1-ba1d-4d2d-9a7b-e43f49345ca2
 keywords:
@@ -9,11 +8,7 @@ keywords:
 - in-box autoconfiguration support WDK printer , autodetecting duplex unit
 - detecting duplex unit
 - duplex unit WDK printer autoconfiguration
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,7 +17,7 @@ ms.localizationpriority: medium
 
 The following two examples show one possible mapping between a duplex unit feature as described in a PPD file and its counterpart in the GDL file. This first example is an excerpt from the PPD file.
 
-```
+```PPD
 *OpenUI *DuplexUnit: Boolean
 *DefaultDuplexUnit: True
 *DuplexUnit True/Installed: ""
@@ -39,7 +34,7 @@ The following two examples show one possible mapping between a duplex unit featu
 
 The next example is an excerpt from the GDL file, and shows the DuplexUnit feature definition that corresponds to the duplex unit feature in the preceding example.
 
-```
+```GDL
 *Feature: DuplexUnit
 {
   *FeatureType: PRINTER_PROPERTY
@@ -66,9 +61,9 @@ The next example is an excerpt from the GDL file, and shows the DuplexUnit featu
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

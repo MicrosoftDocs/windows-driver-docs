@@ -1,16 +1,11 @@
 ---
 title: Initializing an AVStream Minidriver
-author: windows-driver-content
 description: Initializing an AVStream Minidriver
 ms.assetid: 666d6efb-93ec-43f3-87c5-ea1a3983bfd0
 keywords:
 - AVStream WDK , initializing minidrivers
 - minidrivers WDK AVStream , initializing
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,14 +31,14 @@ An AVStream minidriver must have an INF file that the system uses to install the
 
 If you are writing a minidriver for a parent device, the **AddReg** section of your INF file should contain:
 
-```
+```INF
 [ParentName.AddReg]
 HKR,"ENUM\[DeviceName]",pnpid,,"[string]"
 ```
 
 If you are writing a minidriver for a child device, the **AddReg** section should contain:
 
-```
+```INF
 [Manufacturer]
 ...=ChildName
 [ChildName]
@@ -55,11 +50,3 @@ Note that "AVStream" would be "Stream" for a stream class driver.
 For all AVStream minidrivers, the filter-specific reference string in the INF file must match the **ReferenceGuid** member of the [**KSFILTER\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff562553) structure.
 
 For more information about descriptors, see [AVStream Descriptors](avstream-descriptors.md).
-
- 
-
- 
-
-
-
-

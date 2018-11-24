@@ -5,11 +5,7 @@ ms.assetid: 8f591bc1-272c-4e53-8e49-3350c6a3a33e
 keywords:
 - classify callouts WDK Windows Filtering Platform , stream data changes
 - stream data changes WDK Windows Filtering Platform
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,9 +20,9 @@ For a callout driver to inject data into a data stream, it must first create an 
 
 For information about how to modify stream data, see the "Windows Filtering Platform Stream Edit Sample" in the [Hardware Samples](http://go.microsoft.com/fwlink/p/?LinkId=618052) code gallery.
 
- 
+ 
 
- 
+ 
 
 
 

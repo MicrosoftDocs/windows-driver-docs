@@ -11,11 +11,7 @@ keywords:
 - kernel-mode interfaces WDK audio
 - custom synths WDK audio
 - DMus miniport drivers WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -61,9 +57,9 @@ Custom DMus miniport drivers use the following kernel-mode interfaces:
 
 DMus miniport drivers implement the **IMiniportDMus**, **ISynthSinkDMus**, and **IMXF** interfaces. The DMus port driver implements the **IAllocatorMXF**, **IMasterClock**, and **IPortDMus** interfaces and exposes them to miniport drivers.
 
- 
+ 
 
- 
+ 
 
 
 

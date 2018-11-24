@@ -1,6 +1,5 @@
 ---
 title: Using Timers
-author: windows-driver-content
 description: Describes how to use the framework's built-in timer support. Applies to both KMDF drivers as well as UMDF drivers starting in version 2.
 ms.assetid: f3bca5bf-fa5f-4b8f-ad28-26d29fc33963
 keywords:
@@ -10,11 +9,7 @@ keywords:
 - periodic timers WDK KMDF
 - stopping timers WDK KMDF
 - starting timers WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,7 +26,7 @@ Typically, you will know the number of timers that your driver will need for eac
 
 To start the timer, your driver calls [**WdfTimerStart**](https://msdn.microsoft.com/library/windows/hardware/ff550054), passing a "due time". The framework starts the timer's clock and calls the [*EvtTimerFunc*](https://msdn.microsoft.com/library/windows/hardware/ff541823) callback function when the specified amount of time has elapsed.
 
-If the driver supplied a periodic time interval when it called [**WdfTimerCreate**](https://msdn.microsoft.com/library/windows/hardware/ff550050), the timer is referred to as a *periodic timer*. A periodic timer's clock continues to run after the initial "due time" has elapsed, and the framework calls the driver's callback function repeatedly, whenever the periodic time interval has elapsed.
+If the driver supplied a periodic time interval when it called [**WdfTimerCreate**](https://msdn.microsoft.com/library/windows/hardware/ff550050), the timer is referred to as a *periodic timer*. A periodic timer's clock continues to run after the initial "due time" has elapsed, and the framework calls the driver's callback function repeatedly, whenever the periodic time interval has elapsed. Periodic timers do not start automatically. Like non-periodic timers, the driver must still call [**WdfTimerStart**](https://msdn.microsoft.com/library/windows/hardware/ff550054) after creating the timer to start it the first time.
 
 A driver might call [**WdfTimerStart**](https://msdn.microsoft.com/library/windows/hardware/ff550054) from its [*EvtTimerFunc*](https://msdn.microsoft.com/library/windows/hardware/ff541823) callback function in order to restart a non-periodic timer after it expires.
 
@@ -94,15 +89,15 @@ The following table shows examples of timer behavior based on different values t
 </tbody>
 </table>
 
- 
+ 
 
 For more information about high resolution timers, see [High-Resolution Timers](https://msdn.microsoft.com/library/windows/hardware/dn265247).
 
 For more information about how timer accuracy is related to the granularity of the system clock, see [Timer Accuracy](https://msdn.microsoft.com/library/windows/hardware/jj602805).
 
- 
+ 
 
- 
+ 
 
 
 

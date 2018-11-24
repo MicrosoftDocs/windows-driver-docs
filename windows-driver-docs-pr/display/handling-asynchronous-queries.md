@@ -5,11 +5,7 @@ ms.assetid: b5e289db-eb9f-46e6-b221-4aa6661a9ce1
 keywords:
 - asynchronous query operations WDK DirectX 9.0
 - query operations WDK DirectX 9.0 , asynchronous
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -39,9 +35,9 @@ A driver handles asynchronous query operations that are received in the [command
 
 6.  If the driver sent D3DDP2OP\_RESPONSECONTINUE, the runtime submits an empty command buffer in the incoming [command stream](command-stream.md) so that the driver can continue to write more responses. The driver must ensure that it can process empty command buffers.
 
- 
+ 
 
- 
+ 
 
 
 

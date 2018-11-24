@@ -2,11 +2,7 @@
 title: Retrieve ConnectionProfile objects for a MobileBroadbandAccount
 description: Retrieve ConnectionProfile objects for a MobileBroadbandAccount
 ms.assetid: 7e612aa5-1627-4ada-971a-a1d04eafeb81
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -18,7 +14,7 @@ A [**ConnectionProfile**](https://msdn.microsoft.com/library/windows/apps/br2072
 **Note**  
 A list of all [**ConnectionProfile**](https://msdn.microsoft.com/library/windows/apps/br207249) objects can be retrieved from [**Windows.Networking.Connectivity.NetworkInformation.GetConnectionProfiles**](https://msdn.microsoft.com/library/windows/apps/br207294).
 
- 
+ 
 
 ``` syntax
 var myConnectionProfileList = myNetworkAccountObject.getConnectionProfiles();
@@ -42,9 +38,9 @@ else
 
 [Common tasks for mobile broadband Windows Runtime APIs](common-tasks-for-mobile-broadband-windows-runtime-apis.md)
 
- 
+ 
 
- 
+ 
 
 
 

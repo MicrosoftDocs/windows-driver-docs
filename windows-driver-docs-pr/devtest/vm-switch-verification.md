@@ -2,11 +2,7 @@
 title: VM switch verification
 description: The VM switch verification option monitors filter drivers (extensible switch extensions) that run inside the Hyper-V Extensible Switch. Use this option to catch errors that occur in send or receive operations within the extensible switch.
 ms.assetid: 629C0C70-D6C6-4977-A36B-6BD6EEC14FE8
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -17,7 +13,7 @@ The VM switch verification option monitors filter drivers (*extensible switch ex
 
 **Note**  This option is available starting with Windows 8.1.
 
- 
+ 
 
 When this option is active, Driver Verifier will issue [**Bug Check 0xC4**](https://msdn.microsoft.com/library/windows/hardware/ff560187) (DRIVER\_VERIFIER\_DETECTED\_VIOLATION) if the extensible switch extension fails to properly call Hyper-V extensible switch handler functions.
 
@@ -44,9 +40,9 @@ You can activate the VM switch verification feature for one or more drivers by u
     4.  Select (check) **VM switch verification**.
     5.  Restart the computer.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,13 +1,8 @@
 ---
 title: New camera driver enumerations for Windows 10
-author: windows-driver-content
 description: This following camera driver enumerations are new for Windows 10.
 ms.assetid: 86C050F2-52CE-432E-B9F2-DDD61C47D9B2
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -18,7 +13,7 @@ This following camera driver enumerations are new for Windows 10.
 
 [**KSCAMERA\_EXTENDEDPROP\_FOCUSSTATE**](https://msdn.microsoft.com/library/windows/hardware/dn925132)
 
-[**KSCAMERA\_EXTENDEDPROP\_MetadataAlignment**](https://msdn.microsoft.com/library/windows/hardware/dn925140)
+[**KSCAMERA\_EXTENDEDPROP\_MetadataAlignment**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ne-ksmedia-kscamera_extendedprop_metadataalignment)
 
 [**KSCAMERA\_EXTENDEDPROP\_ROITYPE**](https://msdn.microsoft.com/library/windows/hardware/dn925151)
 
@@ -38,9 +33,9 @@ This following camera driver enumerations are new for Windows 10.
 
 [**KSPROPERTY\_CAMERACONTROL\_PERFRAMESETTING\_PROPERTY**](https://msdn.microsoft.com/library/windows/hardware/dn936802)
 
- 
+ 
 
- 
+ 
 
 
 

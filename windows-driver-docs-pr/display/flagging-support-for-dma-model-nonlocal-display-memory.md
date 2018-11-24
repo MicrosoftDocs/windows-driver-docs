@@ -13,11 +13,7 @@ keywords:
 - flags WDK DirectDraw nonlocal memory
 - DDCAPS2_NONLOCALVIDMEM
 - DDCAPS2_NONLOCALVIDMEMCAPS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +25,9 @@ ms.localizationpriority: medium
 
 In addition to specifying the DDCAPS2\_NONLOCALVIDMEM flag to report AGP support, a DMA model driver must export the capability flag DDCAPS2\_NONLOCALVIDMEMCAPS. This flag indicates that nonlocal (AGP) memory has different capabilities than local display memory.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,13 +1,8 @@
 ---
 title: Synchronizing Interrupt Code
-author: windows-driver-content
 description: Synchronizing Interrupt Code
 ms.assetid: 5E2D0063-2251-40B3-8982-46001E67EB55
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,9 +33,9 @@ The driver then sets the **AutomaticSerialization** member of its [**WUDF\_INTER
 
 As a result, UMDF serializes the driver's [*OnInterruptWorkItem*](https://msdn.microsoft.com/library/windows/hardware/hh463905) callbacks with I/O queue, request cancellation, and file object callback routines. In this scenario, UMDF uses the callback lock instead of a per-interrupt object lock.
 
- 
+ 
 
- 
+ 
 
 
 

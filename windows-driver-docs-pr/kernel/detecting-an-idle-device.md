@@ -1,14 +1,9 @@
 ---
 title: Detecting an Idle Device
-author: windows-driver-content
 description: Detecting an Idle Device
 ms.assetid: 69de45de-6c27-4ada-bd5e-369da0bd612a
 keywords: ["idle detection WDK power management", "power management WDK kernel , idle detection", "conserving power WDK kernel", "sleep power management WDK kernel", "asleep devices WDK power management", "detecting idle devices"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,9 +19,9 @@ The power policy owner for each device is responsible for determining when the d
 
 [Perform device-specific idle detection](performing-device-specific-idle-detection.md)
 
- 
+ 
 
- 
+ 
 
 
 

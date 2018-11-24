@@ -9,11 +9,7 @@ api_name:
 - IKeywordDetectorOemAdapter
 api_type:
 - COM
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +29,9 @@ Members
 
 The **IKeywordDetectorOemAdapter** interface inherits from the [**IUnknown**](https://msdn.microsoft.com/library/windows/desktop/ms680509) interface but does not have additional members.
 
- 
+ 
 
- 
+ 
 
 
 

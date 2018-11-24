@@ -1,14 +1,9 @@
 ---
 title: DispatchSystemControl Routines
-author: windows-driver-content
 description: DispatchSystemControl Routines
 ms.assetid: b885a4a3-a9b6-423c-83bb-ee502724b0d0
 keywords: ["dispatch routines WDK kernel , DispatchSystemControl routine", "system control dispatch routines WDK kernel", "IRP_MJ_SYSTEM_CONTROL I/O function code", "DispatchSystemControl routine"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,9 +19,9 @@ All drivers must provide a *DispatchSystemControl* routine. The purpose of this 
 
 To learn how to implement a *DispatchSystemControl* routine, and how to support WMI in general, see [Windows Management Instrumentation](implementing-wmi.md).
 
- 
+ 
 
- 
+ 
 
 
 

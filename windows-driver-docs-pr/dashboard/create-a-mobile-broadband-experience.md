@@ -2,11 +2,8 @@
 title: Create a mobile broadband experience
 description: Create a mobile broadband experience
 ms.assetid: bf9151cc-1587-4ff9-b482-8ebad2f57791
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
@@ -36,7 +33,7 @@ You can also get for more information about service metadata packages and how to
 
 [Device Metadata](https://msdn.microsoft.com/library/windows/hardware/br230800.aspx)
 
- 
+ 
 
- 
+ 
 

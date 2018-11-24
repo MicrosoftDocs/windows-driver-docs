@@ -1,8 +1,8 @@
 ---
 Description: Selective suspend is disabled for upgrade versions of Microsoft Windows XP. It is enabled for clean installations of Windows XP, Windows Vista, and later versions of Windows.
 title: Enabling Selective Suspend
-author: windows-driver-content
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Enabling Selective Suspend
@@ -16,7 +16,7 @@ Alternatively, you can enable or disable selective suspend by setting the value 
 
 For instance, the following lines in Usbport.inf disable selective suspend for a Hydra OHCI controller:
 
-```
+```cpp
 [OHCI_NOSS.AddReg.NT]
 HKR,,"HcDisableSelectiveSuspend",0x00010001,1
 ```
@@ -30,9 +30,9 @@ Client drivers should not try to determine whether selective suspend is enabled 
 
 [USB Power Management](usb-power-management.md)
 
- 
+ 
 
- 
+ 
 
 
 

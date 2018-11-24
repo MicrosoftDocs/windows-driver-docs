@@ -4,11 +4,7 @@ description: Setting Advanced Trace Session Options
 ms.assetid: e5bad52f-aef3-4202-9501-6960fa3143e7
 keywords:
 - trace sessions WDK , options
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +30,9 @@ For information about setting these properties in a [trace controller](trace-con
 
 The default values that TraceView sets might differ from the default values set by other trace controllers, such as [Tracelog](tracelog.md).
 
- 
+ 
 
- 
+ 
 
 
 

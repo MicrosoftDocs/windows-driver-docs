@@ -12,6 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # GUID_SERENUM_BUS_ENUMERATOR
@@ -49,9 +50,9 @@ Requirements
 
 [**GUID_DEVINTERFACE_SERENUM_BUS_ENUMERATOR**](guid-devinterface-serenum-bus-enumerator.md)
 
- 
+ 
 
- 
+ 
 
 
 

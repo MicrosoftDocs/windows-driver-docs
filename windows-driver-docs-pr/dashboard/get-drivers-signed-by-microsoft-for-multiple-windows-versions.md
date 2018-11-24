@@ -2,11 +2,8 @@
 title: Get drivers signed by Microsoft for multiple Windows versions
 description: How to get a driver signed by Microsoft for multiple versions of Windows
 ms.assetid: 519384F5-986C-4109-8C91-4352DEFF46F9
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
@@ -24,7 +21,7 @@ There are two ways to make a dashboard submission apply to Windows 10 and earli
 2.  As an alternative to HLK and HCK testing, you can [cross-sign](https://msdn.microsoft.com/library/windows/hardware/dn170454.aspx) your driver yourself and submit it to the dashboard for [attestation signing](attestation-signing-a-kernel-driver-for-public-release.md) so that it also works on Windows 10. This is more complicated, but still a valid option. But it’s important to note that a submission signed this way will not work on Windows Server 2016. For more information about how to attestation sign a driver, see [Attestation signing a kernel driver for public release](attestation-signing-a-kernel-driver-for-public-release.md).
     **Important**  You must still use [Hardware Dev Center (Sysdev)](dashboard-services.md) to attestation sign a driver until driver signing is available through the new Windows Hardware Dev Center dashboard.
 
-     
+     
 
 This topic will provide some background info about the dashboard for context, then walk through the process for using the HLK/HCK.
 
@@ -131,9 +128,11 @@ If the driver had been signed by attestation, then the OID would end with a 1:
 
 ## Related topics
 
-   *  [Create a new hardware submission](create-a-new-hardware-submission.md)
-   *  [Managing hardware submissions in the Windows Hardware Dev Center dashboard](manage-your-hardware-submissions.md)
-   *  [Driver flighting](driver-flighting.md)
+- [Create a new hardware submission](create-a-new-hardware-submission.md)
 
- 
+- [Managing hardware submissions in the Windows Hardware Dev Center dashboard](manage-your-hardware-submissions.md)
+
+- [Driver flighting](driver-flighting.md)
+
+ 
 

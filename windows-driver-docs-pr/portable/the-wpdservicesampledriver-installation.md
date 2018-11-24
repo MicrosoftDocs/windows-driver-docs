@@ -1,11 +1,7 @@
 ---
 Description: Installing the WpdServiceSampleDriver Sample
 title: Installing the WpdServiceSampleDriver Sample
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -46,9 +42,9 @@ Complete the following steps to remove the sample driver:
 
 [The WPD Driver Samples](the-wpd-driver-samples.md)
 
- 
+ 
 
- 
+ 
 
 
 

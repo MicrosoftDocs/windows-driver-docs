@@ -3,11 +3,7 @@ title: amli set
 description: The amli set extension sets or displays the AMLI Debugger options.
 ms.assetid: 521fa305-8073-4d94-bc28-fdb35cbc2acd
 keywords: ["amli set Windows Debugging"]
-ms.author: domars
-ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 09/17/2018
 topic_type:
 - apiref
 api_name:
@@ -22,8 +18,8 @@ ms.localizationpriority: medium
 
 The **!amli set** extension sets or displays the AMLI Debugger options.
 
-```
-!amli set Options
+```dbgcmd
+    !amli set Options
 ```
 
 ## <span id="ddk__amli_set_dbg"></span><span id="DDK__AMLI_SET_DBG"></span>Parameters
@@ -105,9 +101,9 @@ If the AML interpreter breaks into the AMLI Debugger, this output will be automa
 
 For more details on this output filtering, see **DbgPrintEx** and **KdPrintEx** in the Windows Driver Kit (WDK) documentation.
 
- 
+ 
 
- 
+ 
 
 
 

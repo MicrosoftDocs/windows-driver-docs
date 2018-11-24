@@ -3,11 +3,7 @@ title: Bug Check 0x9B UDFS_FILE_SYSTEM
 description: The UDFS_FILE_SYSTEM bug check has a value of 0x0000009B. This bug check indicates that a problem occurred in the UDF file system.
 ms.assetid: cf20429d-6007-47e7-9faa-db7e1489e96b
 keywords: ["Bug Check 0x9B UDFS_FILE_SYSTEM", "UDFS_FILE_SYSTEM"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The UDFS\_FILE\_SYSTEM bug check has a value of 0x0000009B. This bug check indicates that a problem occurred in the UDF file system.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## UDFS\_FILE\_SYSTEM Parameters
 
@@ -58,7 +54,7 @@ The UDFS\_FILE\_SYSTEM bug check has a value of 0x0000009B. This bug check indic
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -76,9 +72,9 @@ Resolution
 
 **To resolve a nonpaged pool memory depletion problem:** Add new physical memory to the computer. This memory increases the quantity of nonpaged pool memory that is available to the kernel.
 
- 
+ 
 
- 
+ 
 
 
 

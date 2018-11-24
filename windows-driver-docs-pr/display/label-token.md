@@ -2,11 +2,7 @@
 title: Label Token
 description: Label Token
 ms.assetid: 29b2b4b1-c599-4bea-9d83-3a10eedac4a6
-ms.author: windowsdriverdev
 ms.date: 01/05/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -46,9 +42,9 @@ Bits 28, 29, 30, 11, and 12 form a 5-bit value that indicates the register type.
 
 Available in Windows Vista and later versions of the Windows operating systems.
 
- 
+ 
 
- 
+ 
 
 
 

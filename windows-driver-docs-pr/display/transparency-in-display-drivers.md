@@ -5,11 +5,7 @@ ms.assetid: 566706fb-66bd-44f5-b98c-23ed60e27970
 keywords:
 - display drivers WDK Windows 2000 , transparency
 - transparency WDK Windows 2000 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,9 +19,9 @@ If the display hardware supports transparency, the display driver should impleme
 
 To reduce the cost of reading from video memory, drivers should implement this function when both the source and destination surfaces are in video memory. Drivers should let GDI process transparent bit-block transfers from system memory to video memory, and let GDI handle stretched bit-block transfers as well.
 
- 
+ 
 
- 
+ 
 
 
 

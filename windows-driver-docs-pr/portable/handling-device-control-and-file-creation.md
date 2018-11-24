@@ -1,11 +1,7 @@
 ---
 Description: Handling Device Control and File Creation
 title: Handling Device Control and File Creation
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,13 +18,13 @@ The following table describes the methods that are found in these modules.
 | **IQueueCallbackCreate::OnCreateFile**               | Opens the device as a result of an application that calls the Win32 **CreateFile** function.                  |
 | **IQueueCallbackDeviceIoControl::OnDeviceIoControl** | Performs a device operation as a result of an application that calls the **DeviceIOControl** function.        |
 
- 
+ 
 
 Refer to the [UMDF](http://go.microsoft.com/fwlink/p/?linkid=153678) documentation for a description of each interface and its methods.
 
- 
+ 
 
- 
+ 
 
 
 

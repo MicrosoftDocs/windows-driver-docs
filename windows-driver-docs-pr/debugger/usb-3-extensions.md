@@ -2,18 +2,14 @@
 title: USB 3.0 Extensions
 description: This section describes the USB 3.0 debugger extension commands.
 ms.assetid: 7CE2B9F8-50EF-41C0-B306-B7B7A6DA1636
-ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # USB 3.0 Extensions
 
 
-This section describes the USB 3.0 debugger extension commands. These commands display information from data structures maintained by three drivers in the USB 3.0 stack: the USB 3.0 hub driver, the USB host controller extension driver, and the USB 3.0 host controller driver. For more information about these three drivers, see [USB Driver Stack Architecture](http://go.microsoft.com/fwlink/p?LinkId=251983). For an explanation of the data structures used by the drivers in the USB 3.0 stack, see [USB 3.0 Data Structures](usb-3-0-data-structures.md) and Part 2 of the [USB Debugging Innovations in Windows 8](http://go.microsoft.com/fwlink/p/?LinkID=249153) video.
+This section describes the USB 3.0 debugger extension commands. These commands display information from data structures maintained by three drivers in the USB 3.0 stack: the USB 3.0 hub driver, the USB host controller extension driver, and the USB 3.0 host controller driver. For more information about these three drivers, see [USB Driver Stack Architecture](https://go.microsoft.com/fwlink/p?LinkId=251983). For an explanation of the data structures used by the drivers in the USB 3.0 stack, see [USB 3.0 Data Structures](usb-3-0-data-structures.md) and Part 2 of the [USB Debugging Innovations in Windows 8](https://go.microsoft.com/fwlink/p/?LinkID=249153) video.
 
 The USB 3.0 debugger extension commands are implemented in Usb3kd.dll. To load the Usb3kd commands, enter **.load usb3kd.dll** in the debugger.
 
@@ -69,7 +65,7 @@ The following extension commands display information from data structures mainta
 -   [**!usb3kd.xhci\_resourceusage**](-usb3kd-xhci-resourceusage.md)
 -   [**!usb3kd.xhci\_trb**](-usb3kd-xhci-trb.md)
 -   [**!usb3kd.xhci\_transferring**](-usb3kd-xhci-transferring.md)
--   [**!usb3kd.xhci\_findowner**](-xhci-findowner.md)
+-   [**!usb3kd.xhci\_findowner**](-usb3kd-xhci-findowner.md)
 
 ## <span id="Miscellaneous_commands"></span><span id="miscellaneous_commands"></span><span id="MISCELLANEOUS_COMMANDS"></span>Miscellaneous commands
 
@@ -82,9 +78,9 @@ The following extension commands display information from data structures mainta
 
 [RCDRKD Extensions](rcdrkd-extensions.md)
 
- 
+ 
 
- 
+ 
 
 
 

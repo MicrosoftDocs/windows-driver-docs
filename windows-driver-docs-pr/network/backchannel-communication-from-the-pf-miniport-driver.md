@@ -2,11 +2,7 @@
 title: Backchannel Communication from the PF Miniport Driver
 description: Backchannel Communication from the PF Miniport Driver
 ms.assetid: 819FC32C-D50C-480F-AE6E-078E4ECD3400
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,7 +15,7 @@ A VF configuration block is used for backchannel communication between the PF an
 
 **Note**  Data from each VF configuration block is used only by the PF and VF miniport drivers. The format and content of this data is opaque to components of the Windows operating system.
 
- 
+ 
 
 The following steps occur when issuing and handling notifications of invalid VF configuration data:
 
@@ -32,7 +28,7 @@ The following steps occur when issuing and handling notifications of invalid VF 
 
         **Note**  Each time that the PF miniport driver calls [**NdisMInvalidateConfigBlock**](https://msdn.microsoft.com/library/windows/hardware/hh451517), the virtualization stack ORs the *BlockMask* parameter data with the current value in its cache.
 
-         
+         
 
     3.  The virtualization stack notifies the virtual PCI (VPCI) driver, which runs in the guest operating system, about the invalidation of VF configuration data. The virtualization stack sends the cached *BlockMask* parameter data to the VPCI driver.
 
@@ -46,9 +42,9 @@ The following steps occur when issuing and handling notifications of invalid VF 
 
     3.  When the VF driver handles the [OID\_SRIOV\_VF\_INVALIDATE\_CONFIG\_BLOCK](https://msdn.microsoft.com/library/windows/hardware/hh451903) request, it can read data from the specified VF configuration blocks by calling [**NdisMReadConfigBlock**](https://msdn.microsoft.com/library/windows/hardware/hh451523). For more information about this process, see [Backchannel Communication from a VF Miniport Driver](backchannel-communication-from-a-vf-miniport-driver.md).
 
- 
+ 
 
- 
+ 
 
 
 

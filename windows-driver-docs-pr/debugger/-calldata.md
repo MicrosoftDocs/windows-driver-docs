@@ -3,11 +3,7 @@ title: calldata
 description: The calldata extension displays performance information in the form of procedure call statistics from the named table.
 ms.assetid: 50f63fd3-a0fa-44f0-a7aa-752ae098f4e8
 keywords: ["calldata Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!calldata** extension displays performance information in the form of procedure call statistics from the named table.
 
-```
+```dbgsyntax
     !calldata Table 
 ```
 
@@ -51,11 +47,11 @@ Name of the table that collects the call data.
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

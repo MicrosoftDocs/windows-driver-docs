@@ -9,11 +9,7 @@ api_name:
 - wscn Widths
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **Widths** element contains the list of widths at which the scanner
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:Widths>
   child elements
 </wscn:Widths>
@@ -51,7 +47,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>Width</strong>](width.md)</p></td>
+<td><p><a href="width.md" data-raw-source="[&lt;strong&gt;Width&lt;/strong&gt;](width.md)"><strong>Width</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -70,13 +66,13 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ADFResolutions</strong>](adfresolutions.md)</p></td>
+<td><p><a href="adfresolutions.md" data-raw-source="[&lt;strong&gt;ADFResolutions&lt;/strong&gt;](adfresolutions.md)"><strong>ADFResolutions</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>FilmResolutions</strong>](filmresolutions.md)</p></td>
+<td><p><a href="filmresolutions.md" data-raw-source="[&lt;strong&gt;FilmResolutions&lt;/strong&gt;](filmresolutions.md)"><strong>FilmResolutions</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>PlatenResolutions</strong>](platenresolutions.md)</p></td>
+<td><p><a href="platenresolutions.md" data-raw-source="[&lt;strong&gt;PlatenResolutions&lt;/strong&gt;](platenresolutions.md)"><strong>PlatenResolutions</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -88,7 +84,7 @@ Each [**Width**](width.md) child element specifies a valid number of horizontal 
 
 The [**Heights**](heights.md) element contains the list of heights that the scanner supports.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ADFResolutions**](adfresolutions.md)
@@ -103,9 +99,9 @@ The [**Heights**](heights.md) element contains the list of heights that the scan
 
 [**Width**](width.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: Shader Relative Addressing
 description: Shader Relative Addressing
 ms.assetid: 7f936b56-cd41-4df5-8fc0-b8a7332ca7fa
-ms.author: windowsdriverdev
 ms.date: 01/05/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -44,9 +40,9 @@ Available in Windows Vista and later versions of the Windows operating systems.
 
 Available in Windows Vista and later versions of the Windows operating systems.
 
- 
+ 
 
- 
+ 
 
 
 

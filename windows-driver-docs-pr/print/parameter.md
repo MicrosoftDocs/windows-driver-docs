@@ -1,6 +1,5 @@
 ---
 title: parameter element
-author: windows-driver-content
 description: The optional parameter element specifies a text string that is substituted for a percentage ( ) character in the text of an event notification message.
 ms.assetid: 6a43af7d-da00-4038-b1a8-a076d07c4c1a
 keywords: ["parameter element Print Devices"]
@@ -10,11 +9,7 @@ api_name:
 - parameter
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,7 +23,7 @@ The **parameter** element is defined in the *asyncui* namespace at this URI: htt
 Usage
 -----
 
-``` syntax
+```xml
 <parameter
   stringID = "xs:string"
   resourceDll = "xs:string"
@@ -73,7 +68,7 @@ Attributes
 <td><p>xs:string</p></td>
 <td><p>No</p></td>
 <td><p></p>
-<p>An optional attribute that specifies the name of the printer or document. This attribute can take one of the following values:DocumentThe name of the document being printed.PrinterNameThe name of the printer, as listed in the Printers and Faxes folder in Control Panel, for example, &quot;Fabrikam 5000 on \\printserver&quot; or &quot;Printer in upstairs bedroom.&quot;</p></td>
+<p>An optional attribute that specifies the name of the printer or document. This attribute can take one of the following values:DocumentThe name of the document being printed.PrinterNameThe name of the printer, as listed in the Printers and Faxes folder in Control Panel, for example, &quot;Fabrikam 5000 on \printserver&quot; or &quot;Printer in upstairs bedroom.&quot;</p></td>
 </tr>
 </tbody>
 </table>
@@ -99,12 +94,12 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>body</strong>](body.md)</p></td>
+<td><p><a href="body.md" data-raw-source="[&lt;strong&gt;body&lt;/strong&gt;](body.md)"><strong>body</strong></a></p></td>
 <td><p></p>
 <p>A required element that provides text that is displayed in the event notification message. This text should provide the user specific details about the printer event.</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>title</strong>](title.md)</p></td>
+<td><p><a href="title.md" data-raw-source="[&lt;strong&gt;title&lt;/strong&gt;](title.md)"><strong>title</strong></a></p></td>
 <td><p></p>
 <p>The required title element provides text that is displayed in the title of the event notification message.</p></td>
 </tr>
@@ -127,7 +122,7 @@ In this example, the **stringID** values specify the following:
 -   User interface string 5 in the Microsoft-supplied user interface DLL is "yellow".
 -   User interface string 1002 in the driver resource DLL is "Side Access Door B".
 
-```
+```xml
 <?xml version="1.0" ?>
    <asyncPrintUIRequest
     xmlns="http://schemas.microsoft.com/2003/print/asyncui/v1/request">
@@ -147,17 +142,8 @@ In this example, the **stringID** values specify the following:
 
 With the preceding XML code, the following body text (stringID="100") is displayed in the event notification message: "Printer is out of yellow ink; please open Side Access Door B and replace the ink cartridge."
 
-## <span id="see_also"></span>See also
+## See also
 
+[body](body.md)
 
-[**body**](body.md)
-
-[**title**](title.md)
-
- 
-
- 
-
-
-
-
+[title](title.md)

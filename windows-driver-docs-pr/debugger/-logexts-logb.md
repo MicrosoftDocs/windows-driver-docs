@@ -3,11 +3,7 @@ title: logexts.logb
 description: The logexts.logb extension displays or flushes the output buffer.
 ms.assetid: 3c6ec412-f800-469b-9a9f-ebc2940d00fe
 keywords: ["logexts.logb Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!logexts.logb** extension displays or flushes the output buffer.
 
-```
+```dbgcmd
 !logexts.logb p 
 !logexts.logb f 
 ```
@@ -55,7 +51,7 @@ Flushes the output buffer to the disk.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -70,9 +66,9 @@ The **!logexts.logb p** extension displays the contents of the buffer in the deb
 
 The **!logexts.logb f** extension flushes the buffer to the log files. Because the buffer memory is managed by the target application, the automatic writing of the buffer to disk will not occur if there is an access violation or some other nonrecoverable error in the target application. In such cases, you should use this command to manually flush the buffer to the disk. Otherwise, the most recently-logged APIs might not appear in the log files.
 
- 
+ 
 
- 
+ 
 
 
 

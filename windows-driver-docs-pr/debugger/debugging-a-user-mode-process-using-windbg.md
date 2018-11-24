@@ -2,11 +2,7 @@
 title: Debugging a User-Mode Process Using WinDbg
 description: You can use WinDbg to attach to a running process or to spawn and attach to a new process.
 ms.assetid: 65677DE4-4C91-4E24-B9BC-0924619C7307
-ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -97,7 +93,7 @@ After you make your selections, click **Open**.
 
 In a Command Prompt window, you can spawn a new process when you launch WinDbg. Use the following command:
 
-**windbg \[-o\]** *ProgramName* **\[***Arguments***\]**
+**windbg \[-o\]** *ProgramName* **\[**<em>Arguments</em>**\]**
 
 The **-o** option causes the debugger to attach to child processes. There are several other useful command-line options. For more information about the command-line syntax, see [**WinDbg Command-Line Options**](windbg-command-line-options.md).
 
@@ -118,9 +114,9 @@ You can activate or deactivate the debugging of child processes by using the [**
 
 If the debugger stops responding or freezes, you can attach a new debugger to the target process. For more information about how to attach a debugger in this situation, see [Reattaching to the Target Application](reattaching-to-the-target-application.md).
 
- 
+ 
 
- 
+ 
 
 
 

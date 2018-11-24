@@ -5,11 +5,7 @@ ms.assetid: 57d41fec-cedb-436e-858e-c010a8bd6506
 keywords:
 - finish-install actions WDK device installations
 - co-installers WDK device installations , finish-install actions
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,7 +28,7 @@ In this example, a co-installer performs the following operations to support fin
 
     **Note**  Starting in Windows 8 a finish-install action is only run once. Windows will not automatically run it again, especially not the next time the device is enumerated because that is not when finish-install actions are run.
 
-     
+     
 
 -   If the finish-install actions fail and the co-installer determines that the finish-install actions cannot succeed, the co-installer notifies the user of this situation.
 
@@ -40,11 +36,11 @@ In this example, a co-installer performs the following operations to support fin
 
     **Note**  Starting in Windows 8 a finish-install action is only run once. Windows will not automatically run it again, especially not the next time the device is enumerated because that is not when finish-install actions are run.
 
-     
+     
 
 The following co-installer code example shows the basic structure of co-installer code that implements finish-install actions:
 
-```
+```cpp
 DWORD CALLBACK
 SampleCoInstaller(
   IN DI_FUNCTION  InstallFunction,
@@ -116,9 +112,9 @@ SampleCoInstaller(
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

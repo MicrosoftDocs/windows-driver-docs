@@ -1,13 +1,8 @@
 ---
 title: EFI_DISPLAY_POWER_PROTOCOL
-author: windows-driver-content
 description: EFI_DISPLAY_POWER_PROTOCOL
 ms.assetid: 61ccf856-7e0b-4f1b-9be9-7b8a31339a6b
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,7 +14,7 @@ This protocol allows the UEFI battery charging application to turn off the scree
 ## Syntax
 
 
-``` syntax
+```cpp
 #define EFI_DISPLAY_POWER_PROTOCOL_GUID \
   {0xf352021d, 0x9593, 0x4432, {0xbf, 0x4, 0x67, 0xb9, 0xf3, 0xb7, 0x60, 0x8};
 
@@ -49,9 +44,9 @@ Returns the current power state of the display and backlight. For more informati
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
 

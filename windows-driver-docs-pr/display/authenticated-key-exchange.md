@@ -5,11 +5,7 @@ ms.assetid: cd8c29ab-6276-4236-9b9c-152adf2868c3
 keywords:
 - authenticated key exchange WDK COPP
 - key exchange WDK COPP
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -65,11 +61,11 @@ The following table describes the values in the preceding figure.
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

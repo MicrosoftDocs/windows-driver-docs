@@ -1,6 +1,5 @@
 ---
 title: WHEA Hardware Error Event Processing Applications
-author: windows-driver-content
 description: WHEA Hardware Error Event Processing Applications
 ms.assetid: df1790ec-5a7f-41c2-94df-757621e67ade
 keywords:
@@ -13,11 +12,7 @@ keywords:
 - hardware errors WDK WHEA , events
 - errors WDK WHEA , events
 - events WDK WHEA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,9 +27,9 @@ This section includes the following topics:
 
 [Registering for Notification of Hardware Error Events](registering-for-notification-of-hardware-error-events.md)
 
- 
+ 
 
- 
+ 
 
 
 

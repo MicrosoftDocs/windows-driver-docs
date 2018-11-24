@@ -3,11 +3,7 @@ title: .excr (Display Exception Context Record)
 description: The .excr command displays the context record that is associated with the current exception.
 ms.assetid: 18FD32B9-93DE-4E23-A73C-18CC3665417A
 keywords: [".excr (Display Exception Context Record) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **.excr** command displays the context record that is associated with the current exception.
 
-```
+```dbgcmd
 .excr
 ```
 
@@ -52,7 +48,7 @@ The **.excr** command displays the context record that is associated with the cu
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -72,9 +68,9 @@ The [**.ecxr**](-ecxr--display-exception-context-record-.md) command is a synony
 
 [**.ecxr**](-ecxr--display-exception-context-record-.md)
 
- 
+ 
 
- 
+ 
 
 
 

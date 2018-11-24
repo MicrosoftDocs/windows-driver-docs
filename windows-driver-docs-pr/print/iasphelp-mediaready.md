@@ -1,6 +1,5 @@
 ---
 title: Iasphelp get\_MediaReady method
-author: windows-driver-content
 description: The MediaReady property enables an ASP Web page to obtain a set of strings that name all of the paper forms for the printer that are currently available for use.
 MS-HAID:
 - 'webfnc\_b10e8434-7e12-4bb5-8c43-77cb890f72a8.xml'
@@ -16,18 +15,18 @@ api_name:
 - Iasphelp.get_MediaReady
 api_type:
 - COM
+ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # Iasphelp::get\_MediaReady method
-
 
 The **MediaReady** property enables an ASP Web page to obtain a set of strings that name all of the paper forms for the printer that are currently available for use.
 
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT get_MediaReady(
   [out] VARIANT *pVal
 );
@@ -62,7 +61,7 @@ This property returns one of the values in the following table.
 </tr>
 <tr class="even">
 <td><strong>E_HANDLE</strong></td>
-<td><p>The [<strong>Iasphelp::Open</strong>](iasphelp-open.md) method has not been called.</p></td>
+<td><p>The <a href="iasphelp-open.md" data-raw-source="[&lt;strong&gt;Iasphelp::Open&lt;/strong&gt;](iasphelp-open.md)"><strong>Iasphelp::Open</strong></a> method has not been called.</p></td>
 </tr>
 <tr class="odd">
 <td><strong>E_OUTOFMEMORY</strong></td>
@@ -71,23 +70,18 @@ This property returns one of the values in the following table.
 </tbody>
 </table>
 
- 
+## VBScript Example
 
-### <span id="vbscript_example"></span><span id="VBSCRIPT_EXAMPLE"></span>VBScript Example
-
-Remarks
--------
-
-This method obtains a list of the names of the paper forms that are currently available for use by calling the printer driver's [**DrvDeviceCapabilities**](https://msdn.microsoft.com/library/windows/hardware/ff548539) function with the DC\_MEDIAREADY flag set.
+This method obtains a list of the names of the paper forms that are currently available for use by calling the printer driver's [**DrvDeviceCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winddiui/nf-winddiui-drvdevicecapabilities) function with the DC\_MEDIAREADY flag set.
 
 The [**Iasphelp::Open**](iasphelp-open.md) method must be called before the **Iasphelp::MediaReady** property can be queried.
 
-```
-    Dim objPrinter, MediaReadyArray
-    strPrinter = Session("MS_printer")
-    Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
-    objPrinter.Open strPrinter
-    MediaReadyArray = objPrinter.MediaReady
+```vb
+Dim objPrinter, MediaReadyArray
+strPrinter = Session("MS_printer")
+Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
+objPrinter.Open strPrinter
+MediaReadyArray = objPrinter.MediaReady
 ```
 
 Requirements
@@ -103,24 +97,11 @@ Requirements
 <td><p>Target platform</p></td>
 <td>Desktop</td>
 </tr>
-<tr class="even">
-<td><p>Version</p></td>
-<td><p>Available in Windows 2000 and later versions of the Windows operating systems.</p></td>
-</tr>
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
-
-[**DrvDeviceCapabilities**](https://msdn.microsoft.com/library/windows/hardware/ff548539)
+[**DrvDeviceCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winddiui/nf-winddiui-drvdevicecapabilities)
 
 [**Iasphelp::Open**](iasphelp-open.md)
-
- 
-
- 
-
-
-
-

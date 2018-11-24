@@ -1,11 +1,7 @@
 ---
 Description: Mapping Object Identifiers
 title: Mapping Object Identifiers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -112,9 +108,9 @@ Some devices might store the persistent identifiers in an object, some might gen
 
 When a client application calls the **IPortableDeviceContent::GetObjectIDsFromPersistentUniqueIDs** method, the driver, in turn, calls **WpdBaseDriver::OnGetObjectIDsFromPersistentUniqueIDs**.
 
- 
+ 
 
- 
+ 
 
 
 

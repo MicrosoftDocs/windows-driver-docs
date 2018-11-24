@@ -10,21 +10,9 @@ api_name:
 api_type:
 - NA
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # CM_First_Range
 
 This function is reserved for system use.
-
-
-
-
-
- 
-
- 
-
-
-
-
-

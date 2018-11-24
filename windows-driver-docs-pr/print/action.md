@@ -1,6 +1,5 @@
 ---
 title: action element
-author: windows-driver-content
 description: The optional action element describes an action that will be completed when a user clicks a button in the balloon message.
 ms.assetid: dae207ad-072e-4de6-b6a2-f1188ce91065
 keywords: ["action element Print Devices"]
@@ -10,11 +9,7 @@ api_name:
 - action
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,7 +23,7 @@ The **action** element is defined in the *asyncui* namespace at this URI: http:/
 Usage
 -----
 
-``` syntax
+```xml
 <action
   dll = "xs:string"
   entrypoint = "xs:string">
@@ -98,7 +93,7 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>balloonUI</strong>](balloonui.md)</p></td>
+<td><p><a href="balloonui.md" data-raw-source="[&lt;strong&gt;balloonUI&lt;/strong&gt;](balloonui.md)"><strong>balloonUI</strong></a></p></td>
 <td><p></p>
 <p>Provides text that is displayed in the event notification message. This text should provide the user specific details about the printer event.</p></td>
 </tr>
@@ -115,7 +110,7 @@ Examples
 
 The following XML code example will run the *IHV.exe* program on the client computer
 
-```
+```xml
 <?xml version="1.0" ?> 
   <asyncPrintUIRequest
     xmlns="http://schemas.microsoft.com/2003/print/asyncui/v1/request">
@@ -135,7 +130,7 @@ The following XML code example will run the *IHV.exe* program on the client comp
 
 The following code example shows how to use the **action** element to pass data to a resource DLL.
 
-```
+```xml
 <?xml version="1.0" ?>
    <asyncPrintUIRequest
     xmlns="http://schemas.microsoft.com/2003/print/asyncui/v1/request">
@@ -156,14 +151,14 @@ The following code example shows how to use the **action** element to pass data 
   </asyncPrintUIRequest>
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**balloonUI**](balloonui.md)
 
- 
+ 
 
- 
+ 
 
 
 

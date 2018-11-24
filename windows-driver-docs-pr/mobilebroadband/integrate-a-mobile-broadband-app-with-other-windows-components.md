@@ -2,11 +2,7 @@
 title: Integrate a mobile broadband app with other Windows components
 description: Integrate a mobile broadband app with other Windows components
 ms.assetid: 70469f6b-70a8-4ebc-b315-08ddeffbdc0f
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -101,7 +97,7 @@ Your app should be adaptive and be able to fit a number of layouts, including:
     **Note**  
     When the touch keyboard is up, make sure that elements such as form fields scroll appropriately.
 
-     
+     
 
 The following examples show how some pages look when side by side with another app.
 
@@ -181,9 +177,9 @@ Inappropriate design for operator notifications:
 
 [Designing the user experience of a mobile broadband app](designing-the-user-experience-of-a-mobile-broadband-app.md)
 
- 
+ 
 
- 
+ 
 
 
 

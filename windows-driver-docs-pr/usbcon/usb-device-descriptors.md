@@ -1,12 +1,7 @@
 ---
 Description: The device descriptor contains information about a USB device as a whole. This topic describes the USB_DEVICE_DESCRIPTOR structure and includes information about how a client driver can send a get-descriptor request to obtain the device descriptor.
 title: USB device descriptors
-author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,7 +32,7 @@ The host can also obtain the device descriptor by sending an URB. This method on
 
 This code example shows a UsbBuildGetDescriptorRequest call that formats the buffer pointed to by pURB with the appropriate URB:
 
-```
+```cpp
 UsbBuildGetDescriptorRequest(
     pURB,                                                 // Points to the URB to be formatted
     sizeof(struct _URB_CONTROL_DESCRIPTOR_REQUEST),

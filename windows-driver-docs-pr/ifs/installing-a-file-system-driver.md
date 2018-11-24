@@ -1,6 +1,5 @@
 ---
 title: Installing a File System Driver
-author: windows-driver-content
 description: Installing a File System Driver
 ms.assetid: 1297b565-ac85-4248-927a-ab91b6cb3ab0
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - file system drivers WDK , installing
 - INF files WDK file system
 - INF files WDK file system , about file system driver installation
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,9 +31,9 @@ The following sections in the [File System Filter Drivers](file-system-filter-dr
 
 [Using an INF File to Uninstall a File System Filter Driver](using-an-inf-file-to-uninstall-a-file-system-filter-driver.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,17 +1,12 @@
 ---
 title: Framework Object Context Space
-author: windows-driver-content
 description: Framework Object Context Space
 ms.assetid: 21a46e04-2330-4a3d-ba72-c04295bfbb3c
 keywords:
 - framework objects WDK KMDF , context space
 - context space WDK KMDF
 - object context space WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -76,9 +71,9 @@ After an object has been created, the driver can obtain a pointer to the object'
 
 If your driver has a context space pointer, it can find the object that the context space belongs to by calling [**WdfObjectContextGetObject**](https://msdn.microsoft.com/library/windows/hardware/ff548727).
 
- 
+ 
 
- 
+ 
 
 
 

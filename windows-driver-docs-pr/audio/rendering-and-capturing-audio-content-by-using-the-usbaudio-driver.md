@@ -4,11 +4,7 @@ description: Rendering and Capturing Audio Content by Using the USBAudio Driver
 ms.assetid: 92a6ad18-75ba-4382-a6d1-42f28133a158
 keywords:
 - USBAudio class system driver WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -46,9 +42,9 @@ See the following for more detail about the filter graphs located above the USBA
 
 [Rendering and Capturing MIDI Content](rendering-and-capturing-midi-content.md)
 
- 
+ 
 
- 
+ 
 
 
 

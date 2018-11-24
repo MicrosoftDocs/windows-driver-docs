@@ -2,11 +2,7 @@
 title: Graphics kernel performance improvements
 description: To help evaluate graphics hardware performance, Windows Display Driver Model (WDDM) 1.3 and later drivers can optionally provide accurate timing information for API calls that are processed by the GPU. This capability is new starting with Windows 8.1.
 ms.assetid: 8A2E1392-F0B4-4F5F-AFD9-DE8C6F3C2147
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,9 +28,9 @@ These reference topics describe how to implement this capability in your display
 -   [**DXGK\_QUERYADAPTERINFOTYPE**](https://msdn.microsoft.com/library/windows/hardware/ff562010) (new **DXGKQAITYPE\_HISTORYBUFFERPRECISION** constant value)
 -   [*DxgkDdiCreateAllocation*](https://msdn.microsoft.com/library/windows/hardware/ff559606) (see "Allocating history buffers" in Remarks)
 
- 
+ 
 
- 
+ 
 
 
 

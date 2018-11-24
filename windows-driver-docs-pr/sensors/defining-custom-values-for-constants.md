@@ -1,13 +1,8 @@
 ---
 title: Defining custom values for sensor constants
-author: windows-driver-content
 description: Defining custom values for sensor constants
 ms.assetid: 0ed635c2-117d-4a49-a565-31e5a0a9861d
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 07/20/2018
 ms.localizationpriority: medium
 ---
 

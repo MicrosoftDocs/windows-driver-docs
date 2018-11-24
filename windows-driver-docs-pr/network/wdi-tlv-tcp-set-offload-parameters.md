@@ -1,13 +1,8 @@
 ---
 title: WDI_TLV_TCP_SET_OFFLOAD_PARAMETERS
-author: windows-driver-content
 description: WDI_TLV_TCP_SET_OFFLOAD_PARAMETERS is a TLV that contains TCP offload capabilities of a miniport adapter for OID_WDI_SET_TCP_OFFLOAD_PARAMETERS.
 ms.assetid: 1DE1114A-E718-473F-B0EB-92AEFA4E7F13
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_TCP_SET_OFFLOAD_PARAMETERS Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -230,7 +225,7 @@ The sum (in bytes) of the sizes of all contained elements.
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -263,9 +258,9 @@ Requirements
 
 [OID\_WDI\_SET\_TCP\_OFFLOAD\_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/dn925945)
 
- 
+ 
 
- 
+ 
 
 
 

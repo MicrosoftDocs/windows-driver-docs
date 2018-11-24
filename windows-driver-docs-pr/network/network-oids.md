@@ -7,11 +7,7 @@ keywords:
 - network OIDs WDK
 - object identifiers WDK networking
 - OIDs WDK networking , about OIDs
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +29,9 @@ NDIS maps many of the system-defined OIDs for miniport drivers to globally uniqu
 
 For more information about querying and setting OIDs, creating custom OIDs, and NDIS support for WMI, see [Obtaining and Setting Miniport Driver Information and NDIS Support for WMI](obtaining-and-setting-miniport-driver-information-and-ndis-support-for.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -9,11 +9,7 @@ api_name:
 - wscn ElementChanges
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **ElementChanges** element contains the changes to the [**ScannerDe
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ElementChanges>
   child elements
 </wscn:ElementChanges>
@@ -50,13 +46,13 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>DefaultScanTicket</strong>](defaultscanticket.md)</p></td>
+<td><p><a href="defaultscanticket.md" data-raw-source="[&lt;strong&gt;DefaultScanTicket&lt;/strong&gt;](defaultscanticket.md)"><strong>DefaultScanTicket</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>ScannerConfiguration</strong>](scannerconfiguration.md)</p></td>
+<td><p><a href="scannerconfiguration.md" data-raw-source="[&lt;strong&gt;ScannerConfiguration&lt;/strong&gt;](scannerconfiguration.md)"><strong>ScannerConfiguration</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>ScannerDescription</strong>](scannerdescription.md)</p></td>
+<td><p><a href="scannerdescription.md" data-raw-source="[&lt;strong&gt;ScannerDescription&lt;/strong&gt;](scannerdescription.md)"><strong>ScannerDescription</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -75,7 +71,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ScannerElementsChangeEvent</strong>](scannerelementschangeevent.md)</p></td>
+<td><p><a href="scannerelementschangeevent.md" data-raw-source="[&lt;strong&gt;ScannerElementsChangeEvent&lt;/strong&gt;](scannerelementschangeevent.md)"><strong>ScannerElementsChangeEvent</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -85,7 +81,7 @@ Remarks
 
 The WSD Scan Service must include an **ElementChanges** element when it generates a [**ScannerElementsChangeEvent**](scannerelementschangeevent.md) element. Each child element of **ElementChanges** must contain all of its required child elements. If an optional element is missing from the returned XML, the WSD Scan Service is indicating to the client that the service no longer supports that element.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**DefaultScanTicket**](defaultscanticket.md)
@@ -96,9 +92,9 @@ The WSD Scan Service must include an **ElementChanges** element when it generate
 
 [**ScannerElementsChangeEvent**](scannerelementschangeevent.md)
 
- 
+ 
 
- 
+ 
 
 
 

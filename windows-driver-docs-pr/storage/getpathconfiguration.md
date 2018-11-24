@@ -12,6 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # GetPathConfiguration function
@@ -24,9 +25,9 @@ Syntax
 
 ```ManagedCPlusPlus
 void GetPathConfiguration(
-   [in, Description("64-bit Path Identifier"):amended] uint64 PathID,
-   [out] uint32                                               EntryCount,
-   [out, WmiSizeIs("EntryCount")] SCSI_ADDR                   Address[]
+   [in, Description("64-bit Path Identifier"):amended] uint64 PathID,
+   [out] uint32                                               EntryCount,
+   [out, WmiSizeIs("EntryCount")] SCSI_ADDR                   Address[]
 );
 ```
 
@@ -72,9 +73,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

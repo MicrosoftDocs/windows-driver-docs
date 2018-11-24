@@ -4,11 +4,7 @@ description: How to Collect IRP Coverage Data
 ms.assetid: f65422fe-f524-41c1-a532-a2c615d65f72
 keywords:
 - Driver Coverage Toolkit WDK , collecting data
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -17,7 +13,7 @@ ms.localizationpriority: medium
 
 **Note**  The Driver Coverage Toolkit is no longer needed in Windows 10 and the installer is no longer included in the WDK. To perform tasks described here in Windows 10, instead use [Driver Verifier](driver-verifier.md) and [IRP Logging](irp-logging.md).
 
- 
+ 
 
 The following steps describe how to collect coverage data of I/O request packets (IRPs) by using the Driver Coverage tools and [Driver Coverage filter driver](driver-coverage-filter-driver.md). The tools are available as part of the [Device Fundamentals Tests](device-fundamentals-tests.md), under the Coverage category.
 
@@ -75,9 +71,9 @@ For information about setting up the WDK and the Visual Studio test environment,
 
     When the last device has been disabled for IRP coverage, the filter driver will no longer load whenever you restart the test computer. However, to unload the filter driver from memory, you must restart the test computer.
 
- 
+ 
 
- 
+ 
 
 
 

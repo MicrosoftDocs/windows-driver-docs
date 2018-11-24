@@ -1,15 +1,10 @@
 ---
 title: Creating Standard Resource Maps
-author: windows-driver-content
 description: Creating Standard Resource Maps
 ms.assetid: 97d95481-5290-41d3-a6e6-7cc142d4c2e8
 keywords:
 - standard resource maps WDK multifunction devices
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,7 +16,7 @@ ms.localizationpriority: medium
 
 If a multifunction device's INF contains an [**INF DDInstall.LogConfigOverride section**](https://msdn.microsoft.com/library/windows/hardware/ff547339), the parent resources are implicitly numbered 00 through *nn* as they appear in the INF's *log-config-section* sections (see [**INF LogConfig Directive**](https://msdn.microsoft.com/library/windows/hardware/ff547448)). For example, consider a multifunction PC Card with the following INF *DDInstall*.**LogConfigOverride** section:
 
-```
+```cpp
 [DDInstall.LogConfigOverride]
 LogConfig = DDInstall.Override0
  
@@ -37,7 +32,7 @@ The device in this example has five resources, which are numbered 00 through 04.
 
 If one child function (Child0000) requires the first and third resources listed above, the resource map for this child would be: 00,02. If another child function (Child00001) requires all five resources, then its resource map would be: 00,01,02,03,04. In this example, resources 00 (**IoConfig=2f8-2ff**) and 02 (**IRQConfig=3,4,5,7,9,10,11**) are shared. These resource maps would be specified in the INF as follows:
 
-```
+```cpp
 [DDInstall.RegHW]
     ; for each "child" function list hardware ID and resource map
 HKR,Child0000,HardwareID,,child0000-hardware-ID
@@ -50,9 +45,9 @@ The "1" following the **ResourceMap** parameter specifies that the registry entr
 
 If there are no *DDInstall*.**LogConfigOverride** sections in the INF, the parent resources are numbered in the order that the resource requirements are constructed by the driver for the underlying bus. For PC Cards, the bus driver reports resources in this order: IRQ, I/O ports, memory addresses. For multiple I/O and memory requirements, they are numbered in the same order as the tuples on the card. Other bus drivers might list resources in other orders.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,11 +3,7 @@ title: .copysym (Copy Symbol Files)
 description: The .copysym command copies the current symbol files to the specified directory.
 ms.assetid: f90d1402-4bf3-4cd0-993e-a42c220beb7a
 keywords: [".copysym (Copy Symbol Files) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **.copysym** command copies the current symbol files to the specified directory.
 
-```
+```dbgsyntax
     .copysym [/l] Path
 ```
 
@@ -58,16 +54,16 @@ Specifies the directory to which the symbol files should be copied. Copies do no
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
 
 Many times, symbols are stored on a network. The symbol access can often be slow, or you may need to transport your debugging session to another computer where you no longer have network access. In such scenarios, the **.copysym** command can be used to copy the symbols you need for your session to a local directory.
 
- 
+ 
 
- 
+ 
 
 
 

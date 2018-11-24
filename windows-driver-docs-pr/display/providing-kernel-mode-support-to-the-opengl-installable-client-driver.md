@@ -7,11 +7,7 @@ keywords:
 - kernel-mode OpenGL ICD WDK display
 - ICD WDK display
 - installable client driver WDK display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,9 +18,9 @@ The OpenGL installable client driver (ICD) can obtain the same level of support 
 
 **Note**   To obtain a license for the OpenGL ICD Development Kit, contact the [OpenGL Issues](mailto:opengl@microsoft.com) team.
 
- 
+ 
 
-```
+```cpp
 #include "d3dkmthk.h"
 
 PFND3DKMT_CREATEALLOCATION pfnKTCreateAllocation = NULL;
@@ -316,9 +312,9 @@ HRESULT InitKernelTHunks()
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

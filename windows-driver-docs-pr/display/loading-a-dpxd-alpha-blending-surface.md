@@ -8,11 +8,7 @@ keywords:
 - blended pictures WDK DirectX VA , alpha-blend data loading
 - DPXD alpha-blending surface WDK DirectX VA
 - decoded PXD alpha-blending surface WDK DirectX VA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,13 +26,13 @@ The stride of the surface must be interpreted as the stride in bytes, not in 2-b
 
 **Note**   The PXD on a DVD is in a field-structured interlaced format. The DPXD alpha-blending surface defined for DirectX VA is not. The host is therefore responsible for interleaving the data from the two fields if forming DPXD from DVD PXD data.
 
- 
+ 
 
 For more clarification of DVD subpicture definition and data field interpretation, see *DVD Specifications for Read-Only Disk: Part 3 - Video Specification (version 1.11, May 1999)*.
 
- 
+ 
 
- 
+ 
 
 
 

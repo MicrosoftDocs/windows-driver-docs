@@ -9,11 +9,7 @@ api_name:
 - wscn ClientDisplayName
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **ClientContext** element specifies a client-specific string.
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ClientDisplayName>
   text
 </wscn:ClientDisplayName>
@@ -60,13 +56,13 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>DestinationResponse</strong>](destinationresponse.md)</p></td>
+<td><p><a href="destinationresponse.md" data-raw-source="[&lt;strong&gt;DestinationResponse&lt;/strong&gt;](destinationresponse.md)"><strong>DestinationResponse</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>ScanAvailableEvent</strong>](scanavailableevent.md)</p></td>
+<td><p><a href="scanavailableevent.md" data-raw-source="[&lt;strong&gt;ScanAvailableEvent&lt;/strong&gt;](scanavailableevent.md)"><strong>ScanAvailableEvent</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>ScanDestination</strong>](scandestination.md)</p></td>
+<td><p><a href="scandestination.md" data-raw-source="[&lt;strong&gt;ScanDestination&lt;/strong&gt;](scandestination.md)"><strong>ScanDestination</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -82,7 +78,7 @@ When the parent element is [**ScanAvailableEvent**](scanavailableevent.md), **Cl
 
 The **&lt;wse:Subscribe&gt;** and **&lt;wse:SubscribeResponse&gt;** elements are described in the specification.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**DestinationResponse**](destinationresponse.md)
@@ -91,9 +87,9 @@ The **&lt;wse:Subscribe&gt;** and **&lt;wse:SubscribeResponse&gt;** elements are
 
 [**ScanDestination**](scandestination.md)
 
- 
+ 
 
- 
+ 
 
 
 

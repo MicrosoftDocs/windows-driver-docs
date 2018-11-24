@@ -11,11 +11,7 @@ keywords:
 - tokens WDK display
 - end tokens WDK display
 - declarations WDK display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,11 +26,11 @@ For more information about the format of an individual shader code and the token
 
 **Note**   When an application creates vertex shaders, pixel shaders, and vertex declarations, the shader code and declaration for each ends with an [end token](https://msdn.microsoft.com/library/windows/hardware/ff564170). When the Direct3D runtime, in turn, passes vertex and pixel shader creation requests to the user-mode display driver, the vertex and pixel shader code that accompanies the requests ends with end tokens. However, when the runtime passes vertex declaration creation requests, the vertex declarations that accompany the requests do not end with end tokens.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

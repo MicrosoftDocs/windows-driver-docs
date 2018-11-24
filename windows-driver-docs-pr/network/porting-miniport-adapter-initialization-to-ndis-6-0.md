@@ -7,11 +7,7 @@ keywords:
 - miniport adapters WDK networking , initializing
 - porting miniport drivers WDK networking , adapters
 - initializing miniport adapters
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +29,9 @@ As with NDIS 5.*x*, NDIS 6.0 miniport drivers can support multiple miniport adap
 
 [Updating Bus-Specific Configuration Space Access for NDIS 6.0](updating-bus-specific-configuration-space-access-for-ndis-6-0.md)
 
- 
+ 
 
- 
+ 
 
 
 

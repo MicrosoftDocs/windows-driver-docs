@@ -2,11 +2,7 @@
 title: Audio Helper Object Interfaces
 description: Audio Helper Object Interfaces
 ms.assetid: 94d3f7f3-7ccc-4f66-b5fa-95f18b8a0f17
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -76,9 +72,9 @@ Deletes the registration of a physical connection between two subdevices in the 
 
 Deletes the registration of a dynamic subdevice in an audio adapter.
 
- 
+ 
 
- 
+ 
 
 
 

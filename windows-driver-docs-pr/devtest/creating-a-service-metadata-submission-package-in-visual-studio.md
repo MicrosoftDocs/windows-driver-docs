@@ -4,11 +4,7 @@ description: Creating a service metadata submission package in Visual Studio
 ms.assetid: 93C2F66B-EAD3-4C7B-A761-E0AF861101D0
 keywords:
 - Creating a service metadata submission package in Visual Studio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,14 +21,14 @@ Use the Submission tool in Microsoft Visual Studio to create a submission packag
 
     **Note**  The **Model Name** field is the **Service Provider** name that is specified as part of the service metadata package.
 
-     
+     
 
 4.  Click **Next**.
 5.  Review the **Model Name**, **Hardware IDs**, and **Experience ID**.
 6.  Next to **Experience Name**, type a name for the experience.
     **Note**  This step is required for all package submissions.
 
-     
+     
 
 7.  Next to **Qualification**, select **This device has an associated logo or unclassified submission** from the list.
 8.  If the package has been submitted before, select **Update Experience**.
@@ -47,7 +43,7 @@ Use the Submission tool in Microsoft Visual Studio to create a submission packag
     5.  Select the certificate from the dialog box.
         **Note**  The file name in the Signature Wizard is what you receive after you complete the submission metadata wizard. Therefore, unless you have a specific reason, do not change the file name or path.
 
-         
+         
 
     6.  Complete the signing process.
 
@@ -59,9 +55,9 @@ For more information about the devicemanifest file, see [Submit a UWP app for Mo
 
 For more information about the bulkmetadata file, see [Submit a Bulk Metadata Package](http://go.microsoft.com/fwlink/p/?linkid=248427).
 
- 
+ 
 
- 
+ 
 
 
 

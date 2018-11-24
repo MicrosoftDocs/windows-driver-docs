@@ -3,11 +3,7 @@ title: Using Workspaces
 description: Using Workspaces
 ms.assetid: 2d729db2-a7c9-4905-a913-85d9b2a94e95
 keywords: ["workspaces", "workspaces, overview", "WinDbg, workspaces"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ This section includes the following topics:
 
 [Using and Customizing WinDbg Themes](using-and-customizing-windbg-themes.md)
 
- 
+ 
 
- 
+ 
 
 
 

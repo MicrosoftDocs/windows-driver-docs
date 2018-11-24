@@ -2,11 +2,7 @@
 title: Example 45 Add and Remove Driver Packages
 description: Example 45 Add and Remove Driver Packages
 ms.assetid: 36da02d7-0b8f-40ed-a594-0e2374595782
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -84,9 +80,9 @@ Deleting the specified Driver Package from the machine failed.
 devcon failed.
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: Static Driver Verifier Concepts
 description: Static Driver Verifier Concepts
 ms.assetid: a75b112c-6fd5-4d96-be7d-e82cfd7436c9
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ This section describes concepts that are specific to SDV and includes:
 
 [Library Processing in Static Driver Verifier](library-processing-in-static-driver-verifier.md)
 
- 
+ 
 
- 
+ 
 
 
 

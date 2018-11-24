@@ -2,11 +2,7 @@
 title: METransformNeedInput
 description: The METransformNeedInput event indicates that a device transform needs an input.
 ms.assetid: AACD80F6-90A1-4338-AE5B-4A9248747949
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ This event is sent when a device transform needs input to generate output. Typic
 |------------------------|---------------------------------------------------------------------------------------------------------------|
 | **Input stream index** | The input stream index is sent in the IMFMediaEvent attribute store as **MF\_EVENT\_MFT\_INPUT\_STREAM\_ID**. |
 
- 
+ 
 
-## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
+## Remarks
 
 
 This event will not be handled by device transform manager (DTM) for the following reasons:
@@ -37,9 +33,9 @@ This event will not be handled by device transform manager (DTM) for the followi
 -   Devproxy does not have any input pins
 -   Even though Device MFT has input pins, it is automatically fed samples when they are available on the output of Devproxy. Therefore, there is no need for Device MFT to request for samples. This request would be ignored by DTM.
 
- 
+ 
 
- 
+ 
 
 
 

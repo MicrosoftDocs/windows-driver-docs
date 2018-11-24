@@ -2,11 +2,7 @@
 title: C28168
 description: Warning C28168 The dispatch function does not have a _Dispatch_type_ annotation matching this dispatch table entry.
 ms.assetid: 5e5acc54-acb3-4366-a625-eb79865e932e
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -73,9 +69,9 @@ The function 'DispatchPassIrp' does not have a _Dispatch_type_ annotation matchi
 
 This use of a loop in the dispatch table is common in some filter drivers. In this situation, the error message can be ignored, as this is a limitation of static analysis. The Code Analysis tool reports this error when the annotations on the function do not match the dispatch table entry slot. In this case, the Code Analysis tool reports an illegal assignment (that’s undone later). However, there is no way for a static tool to know that an illegal state will be undone later. If you know you are making an assignments this way, and fixing them later, you can suppress the warning.
 
- 
+ 
 
- 
+ 
 
 
 

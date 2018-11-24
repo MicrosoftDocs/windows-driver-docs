@@ -3,11 +3,7 @@ title: ln (List Nearest Symbols)
 description: The ln command displays the symbols at or near the given address.
 ms.assetid: ff01ace7-398a-4e32-9d58-00873eca3201
 keywords: ["ln (List Nearest Symbols) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **ln** command displays the symbols at or near the given address.
 
-```
+```dbgcmd
 ln Address
 ln /D Address 
 ```
@@ -59,7 +55,7 @@ Specifies that the output is displayed using [Debugger Markup Language (DML)](de
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -70,9 +66,9 @@ If source line information is available, the **ln** display also includes the so
 
 If you are using a [source server](using-a-source-server.md), the **ln** command displays information that is related to the source server.
 
- 
+ 
 
- 
+ 
 
 
 

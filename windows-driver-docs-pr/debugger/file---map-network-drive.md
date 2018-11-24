@@ -3,11 +3,7 @@ title: File Map Network Drive
 description: File Map Network Drive
 ms.assetid: 55a5523f-5735-4b44-8d98-ded9932e630a
 keywords: ["File Map Network Drive", "shell commands, File Map Network Drive"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +27,9 @@ The **File | Map Network Drive** command affects only the network connections of
 
 For more information about accessing the command shell, see [Using Shell Commands](using-shell-commands.md).
 
- 
+ 
 
- 
+ 
 
 
 

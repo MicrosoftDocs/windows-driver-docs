@@ -8,11 +8,7 @@ keywords:
 - network configuration subsystem WDK
 - subsystem WDK network configuration
 - notifications WDK networking , notifyo object diagram
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +22,9 @@ The following diagram shows how client applications that install or control netw
 
 ![diagram illustrating how client applications that install or control networking call the network configuration subsystem](images/netcfg.png)
 
- 
+ 
 
- 
+ 
 
 
 

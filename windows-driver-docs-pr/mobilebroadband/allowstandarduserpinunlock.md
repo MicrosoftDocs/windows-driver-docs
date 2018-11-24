@@ -2,11 +2,7 @@
 title: AllowStandardUserPinUnlock
 description: AllowStandardUserPinUnlock
 ms.assetid: 3fb6de78-662b-46d0-bf0c-9efde15b0861
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -60,13 +56,13 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[NetworkConfiguration](networkconfiguration.md)</p></td>
+<td><p><a href="networkconfiguration.md" data-raw-source="[NetworkConfiguration](networkconfiguration.md)">NetworkConfiguration</a></p></td>
 <td><p>Specifies the purchase and Internet mobile broadband profiles to be used or whether standard user can perform PIN unlock operations.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="XSD"></span><span id="xsd"></span>XSD
 
@@ -80,9 +76,9 @@ There are no child elements.
 
 The AllowStandardUserPinUnlock element is optional.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -7,11 +7,7 @@ keywords:
 - friendly string names WDK display
 - graphics adapters string names WDK display
 - appending to graphics adapters string names WDK display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,21 +18,21 @@ You must append information to the string names of graphics adapters. This infor
 
 For the Windows 2000 Display Driver Model, you must append "(Microsoft Corporation)":
 
-```
+```cpp
 XDDM Foo Device Name (Microsoft Corporation)
 ```
 
 For the Windows Display Driver Model (WDDM), you must append "(Microsoft Corporation - WDDM)":
 
-```
+```cpp
 New Driver Model Foo Device Name (Microsoft Corporation - WDDM)
 ```
 
 For more information about the *Strings* section and the *%strkey%* tokens that are specified elsewhere in the INF, see [**INF Strings Section**](https://msdn.microsoft.com/library/windows/hardware/ff547485).
 
- 
+ 
 
- 
+ 
 
 
 

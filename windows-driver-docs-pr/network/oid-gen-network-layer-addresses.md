@@ -1,13 +1,8 @@
 ---
 title: OID_GEN_NETWORK_LAYER_ADDRESSES
-author: windows-driver-content
 description: As a set, the OID_GEN_NETWORK_LAYER_ADDRESSES OID notifies underlying miniport driver and other layered drivers about the list of network-layer addresses that are associated with bound instances.
 ms.assetid: 4a75c2ca-1a58-462e-876a-a65cfe63441e
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_GEN_NETWORK_LAYER_ADDRESSES Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -40,7 +35,7 @@ Remarks
 
 A bound instance is the binding between the calling transport and a driver set up by a call to [**NdisOpenAdapterEx**](https://msdn.microsoft.com/library/windows/hardware/ff563715). Transports use TRANSPORT\_ADDRESS and TA\_ADDRESS structures to notify underlying miniport drivers and other layered drivers about the list of network-layer addresses. Miniport drivers and other layered drivers use compatible NETWORK\_ADDRESS\_LIST and NETWORK\_ADDRESS structures, defined as follows, to set the list of network-layer addresses on a bound interface.
 
-```
+```C++
 typedef struct _NETWORK_ADDRESS_LIST {
   LONG  AddressCount; 
   USHORT  AddressType; 
@@ -71,7 +66,7 @@ NetBIOS protocol
 <a href="" id="address"></a>**Address**  
 Array of network-layer addresses of type NETWORK\_ADDRESS. The **AddressCount** member specifies the number of elements in this array.
 
-```
+```C++
 typedef struct _NETWORK_ADDRESS {
   USHORT  AddressLength; 
   USHORT  AddressType; 
@@ -121,9 +116,9 @@ Requirements
 
 [**NdisOpenAdapterEx**](https://msdn.microsoft.com/library/windows/hardware/ff563715)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: KS Methods
-author: windows-driver-content
 description: KS Methods
 ms.assetid: 1d7bd6f4-0aaf-4d77-8132-f551fd2ecbd2
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - KS WDK , methods
 - methods WDK kernel streaming
 - method sets WDK kernel streaming
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,9 +27,9 @@ A driver requests a specific method by providing a [**KSMETHOD**](https://msdn.m
 
 AVStream filters and pins describe methods that they support by supplying a [**KSAUTOMATION\_TABLE**](https://msdn.microsoft.com/library/windows/hardware/ff560990) structure in the **AutomationTable** member of either a [**KSFILTER\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff562553) structure or a [**KSPIN\_DESCRIPTOR\_EX**](https://msdn.microsoft.com/library/windows/hardware/ff563534) structure. For more information, see [Defining Automation Tables](defining-automation-tables.md).
 
- 
+ 
 
- 
+ 
 
 
 

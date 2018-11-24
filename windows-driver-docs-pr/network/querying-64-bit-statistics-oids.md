@@ -5,11 +5,7 @@ ms.assetid: dc43c33d-12a7-4468-9980-a9015f43e068
 keywords:
 - statistics OIDs WDK networking
 - 64-bit statistics OIDs WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -62,9 +58,9 @@ The miniport driver:
 
 -   Returns NDIS\_STATUS\_INVALID\_LENGTH from its [*MiniportOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff559416) or [**MiniportCoOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff559362) function.
 
- 
+ 
 
- 
+ 
 
 
 

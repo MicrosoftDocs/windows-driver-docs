@@ -4,11 +4,7 @@ description: This topic describes how to write a Universal Windows driver using 
 ms.assetid: 03A3E389-8350-4E4B-9345-E50DD425374D
 keywords:
 - Write a UMDF driver
-ms.author: windowsdriverdev
 ms.date: 04/20/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,7 +26,7 @@ To get started, be sure you have the most recent version of Microsoft Visual Stu
 
     **Note**  When you create a new KMDF or UMDF driver, you must select a driver name that has 32 characters or less. This length limit is defined in wdfglobals.h.
 
-     
+     
 
 4.  In the **Location** field, enter the directory where you want to create the new project.
 5.  Check **Create directory for solution**. Click **OK**.
@@ -84,7 +80,7 @@ So far, you've used Visual Studio to build a driver on the host computer. Now yo
     %DeviceName%=MyDevice_Install,Root\UmdfDriver
     ```
 
-     
+     
 
 7.  On the **Debug** menu, choose **Start Debugging**, or press **F5** on the keyboard.
 8.  Wait until your driver has been deployed, installed, and loaded on the target computer. This might take several minutes.
@@ -98,9 +94,9 @@ So far, you've used Visual Studio to build a driver on the host computer. Now yo
 
 [Write your first driver](writing-your-first-driver.md)
 
- 
+ 
 
- 
+ 
 
 
 

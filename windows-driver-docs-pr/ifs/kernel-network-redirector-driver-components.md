@@ -1,6 +1,5 @@
 ---
 title: Kernel Network Redirector Driver Components
-author: windows-driver-content
 description: Kernel Network Redirector Driver Components
 ms.assetid: 0d699794-86a0-40bd-beff-b040a8d51b42
 keywords:
@@ -9,11 +8,7 @@ keywords:
 - kernel network redirectors WDK , components
 - remote file systems WDK
 - file system drivers WDK , remote file systems
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +24,9 @@ This section discusses the various components that are important to developers w
 
 [The Kernel Network Mini-Redirector Driver](the-kernel-network-mini-redirector-driver.md)
 
- 
+ 
 
- 
+ 
 
 
 

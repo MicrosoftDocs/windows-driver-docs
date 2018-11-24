@@ -9,11 +9,7 @@ api_name:
 - DCICreateOffscreen
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 01/05/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ Do not use this function; use the latest DirectX Graphics interfaces to communic
 
 The **DCICreateOffscreen** function creates an offscreen surface for the display device.
 
- 
+ 
 
- 
+ 
 
 
 

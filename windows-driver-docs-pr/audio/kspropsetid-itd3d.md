@@ -3,11 +3,7 @@ title: KSPROPSETID\_Itd3d
 description: KSPROPSETID\_Itd3d
 ms.assetid: 87159be4-740e-47c9-b16f-16ca4d01c793
 keywords: ["KSPROPSETID_Itd3d"]
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,9 +33,9 @@ This property set contains only a single property:
 
 [**KSPROPERTY\_ITD3D\_PARAMS**](ksproperty-itd3d-params.md)
 
- 
+ 
 
- 
+ 
 
 
 

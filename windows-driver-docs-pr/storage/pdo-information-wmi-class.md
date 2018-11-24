@@ -3,6 +3,7 @@ title: PDO\_INFORMATION WMI Class
 description: PDO\_INFORMATION WMI Class
 ms.assetid: 1a972905-42ea-4cb2-b937-5ed0f287d80a
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # PDO\_INFORMATION WMI Class
@@ -10,7 +11,7 @@ ms.localizationpriority: medium
 
 An MPIO driver uses the PDO\_INFORMATION WMI class to identify the device-to-path mapping of a physical device.
 
-```
+```cpp
 class PDO_INFORMATION
 {
 
@@ -40,9 +41,9 @@ class PDO_INFORMATION
 
 When this class definition is compiled by the WMI tool suite, it produces the [**PDO\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff563828) data structure. There are no methods associated with this WMI class.
 
- 
+ 
 
- 
+ 
 
 
 

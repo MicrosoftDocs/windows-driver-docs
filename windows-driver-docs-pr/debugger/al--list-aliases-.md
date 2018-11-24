@@ -3,11 +3,7 @@ title: al (List Aliases)
 description: The al command displays a list of all currently defined user-named aliases.
 ms.assetid: 40e20edb-4545-4c5a-bb56-61e00b064efc
 keywords: ["al (List Aliases) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **al** command displays a list of all currently defined user-named aliases.
 
-```
+```dbgcmd
 al
 ```
 
@@ -52,7 +48,7 @@ al
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -63,9 +59,9 @@ Remarks
 
 The **al** command lists all user-named aliases. But this command does not list fixed-name aliases ($u0 to $u9).
 
- 
+ 
 
- 
+ 
 
 
 

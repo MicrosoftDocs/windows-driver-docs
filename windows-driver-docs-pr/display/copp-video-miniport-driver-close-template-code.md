@@ -5,11 +5,7 @@ ms.assetid: a7b088d6-a6cd-479d-b256-04def1de1736
 keywords:
 - releasing COPP DirectX VA device objects
 - closing COPP DirectX VA device objects
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,7 +19,7 @@ This section applies only to Windows Server 2003 SP1 and later, and Windows XP S
 
 Use the following example code to release instances of COPP DirectX VA device objects.
 
-```
+```cpp
 VP_STATUS
 IoctlCOPPCloseDevice(
     PHW_DEVICE_EXTENSION pHwDeviceExtension,
@@ -39,9 +35,9 @@ IoctlCOPPCloseDevice(
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,11 +3,7 @@ title: .if
 description: The .if token behaves like the if keyword in C.
 ms.assetid: ccd74461-759f-400d-90da-efba2e4498e6
 keywords: [".if Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **.if** token behaves like the **if** keyword in C.
 
-```
+```dbgcmd
 .if (Condition) { Commands } 
 
 .if (Condition) { Commands } .else { Commands } 
@@ -45,9 +41,9 @@ Specifies one or more commands that will be executed conditionally. This block o
 
 For information about other control flow tokens and their use in debugger command programs, see [Using Debugger Command Programs](using-debugger-command-programs.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Native XML Template Data Types
-author: windows-driver-content
 description: Native XML Template Data Types
 ms.assetid: a34dec46-de5d-4f12-8863-2fe6b6e5eed4
 keywords:
@@ -10,11 +9,7 @@ keywords:
 - XML_TYPE WDK GDL
 - ArrayLabel directive WDK GDL
 - XMLDataType directive WDK GDL
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,7 +32,7 @@ The syntax of the value must adhere to the syntax that the W3C XML standard defi
 
 For example, consider the following template.
 
-```
+```cpp
 *Template:  XML_STRING
 {
     *Type:  DATATYPE
@@ -48,7 +43,7 @@ For example, consider the following template.
 
 If you use the preceding template, the following XML schema entry will be created. This entry defines a new data type that is derived from the type that is originally specified by the \***XMLDataType** directive, but this new data type has additional XML attributes that can appear in the snapshot. If you used the original data type, you would receive schema validation errors because the original predefined types do not allow XML attributes to appear.
 
-```
+```cpp
     <complexType name = "GDLW_string">
         <simpleContent>
             <extension base="string">
@@ -61,13 +56,13 @@ If you use the preceding template, the following XML schema entry will be create
 
 Consider the following GDL entry.
 
-```
+```cpp
 *Text: Hello World
 ```
 
 Consider the PHRASE template, which declares the GDL attribute \***Text** to have a \***ValueType** that is defined by the XML\_STRING template, as the following code example shows.
 
-```
+```cpp
 *Template:  PHRASE
 {
     *Name:  "*Text"
@@ -78,15 +73,15 @@ Consider the PHRASE template, which declares the GDL attribute \***Text** to hav
 
 If the earlier GDL entry is interpreted by using the PHRASE template, the following XML output will occur.
 
-```
+```cpp
 <GDL_ATTRIBUTE Name="*Text"  xsi:type="GDLW_string" >Hello World</GDL_ATTRIBUTE>
 ```
 
 The XML attribute **xsi:type** is used to specify the data type that is held by this attribute element because the schema contains no declaration for this element.
 
- 
+ 
 
- 
+ 
 
 
 

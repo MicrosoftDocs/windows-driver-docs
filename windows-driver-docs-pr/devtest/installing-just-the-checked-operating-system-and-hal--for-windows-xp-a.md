@@ -11,11 +11,7 @@ keywords:
 - names WDK checked builds
 - copying checked files
 - Boot.ini files WDK , checked builds
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -114,7 +110,7 @@ In the sample setup.log file, you can see that two operating system image files 
 
 **Warning**   Some HAL files have deceptively similar names. For example, halacpi.dll and halapic.dll are two commonly used HALs. Be careful to use the correct version of the HAL for your system. Selecting the wrong HAL will result in a system that is not bootable.
 
- 
+ 
 
 ### <span id="step_2__copying_the_checked_files"></span><span id="STEP_2__COPYING_THE_CHECKED_FILES"></span>Step 2: Copying the Checked Files
 
@@ -147,7 +143,7 @@ Now that you know the names of the files that were used during your system insta
 </tbody>
 </table>
 
- 
+ 
 
 Some files in the checked distribution are provided in compressed form. These files are indicated with an underscore character as the last character in their file type. For example, if you look for the file halapic.dll in the checked build distribution kit, you will find the file halapic.dl\_, which is the correct file, but in compressed form.
 
@@ -207,9 +203,9 @@ SFCDisable:REG_DWORD:2
 
 Setting **SFCDisable** to a value of 2 disables WFP for the next boot (only). A value of 0 (the default) enables WFP. For a description of the features of WFP, see the Microsoft Windows SDK. For more information about the WFP registry settings, see [Microsoft Knowledge Base Article Q222473](http://go.microsoft.com/fwlink/p/?linkid=38360).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,13 +1,8 @@
 ---
 title: OID_WDI_SET_DEFAULT_KEY_ID
-author: windows-driver-content
 description: OID_WDI_SET_DEFAULT_KEY_ID sets the default key ID for packet transmission on a port.
 ms.assetid: 5112a661-3560-4070-b74a-0027e3adfac1
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - OID_WDI_SET_DEFAULT_KEY_ID Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -22,7 +17,7 @@ OID\_WDI\_SET\_DEFAULT\_KEY\_ID sets the default key ID for packet transmission 
 |-------|--------------------------|---------------------------------|
 | Port  | Yes                      | 1                               |
 
- 
+ 
 
 ## Set property parameters
 
@@ -31,7 +26,7 @@ OID\_WDI\_SET\_DEFAULT\_KEY\_ID sets the default key ID for packet transmission 
 |-------------------------------------------------------------------------------------------------|--------------------------------|----------|---------------------------------------------------------|
 | [**WDI\_TLV\_DEFAULT\_TX\_KEY\_ID\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/dn926281) |                                |          | The default key ID for packet transmission on the port. |
 
- 
+ 
 
 ## Set property results
 
@@ -61,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

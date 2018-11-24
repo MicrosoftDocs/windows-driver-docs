@@ -11,11 +11,7 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -63,7 +59,7 @@ The following table describes the constants that are valid with WIA\_IPS\_PHOTOM
 </tbody>
 </table>
 
- 
+ 
 
 If a device can be set to only a single value, create a WIA\_PROP\_LIST type, and place the valid value in it.
 
@@ -85,9 +81,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

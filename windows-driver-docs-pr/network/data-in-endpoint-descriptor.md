@@ -2,11 +2,7 @@
 title: Data In Endpoint Descriptor
 description: Data In Endpoint Descriptor
 ms.assetid: bf311754-3ef8-483b-8c34-419d2d9c7512
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -79,11 +75,11 @@ ms.localizationpriority: medium
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

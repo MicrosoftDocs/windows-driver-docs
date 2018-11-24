@@ -9,11 +9,7 @@ keywords:
 - device methods WDK DirectX VA
 - motion compensation WDK DirectX VA
 - callbacks WDK DirectX VA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,9 +31,9 @@ The following topics describe how the deinterlace DDI is mapped to the motion co
 
 [Calling the Deinterlace DDI from a User-Mode Component](calling-the-deinterlace-ddi-from-a-user-mode-component.md)
 
- 
+ 
 
- 
+ 
 
 
 

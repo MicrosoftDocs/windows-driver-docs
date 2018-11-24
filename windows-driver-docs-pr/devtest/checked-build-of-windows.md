@@ -7,11 +7,7 @@ keywords:
 - driver verification WDK , checked builds
 - checked builds WDK
 - debug builds WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +30,9 @@ This section describes how the Microsoft Windows *checked build* (also known as 
 
 This section does not cover Itanium-based systems, nor does it cover Windows 98/Me.
 
- 
+ 
 
- 
+ 
 
 
 

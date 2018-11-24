@@ -1,6 +1,5 @@
 ---
 title: Color Commands
-author: windows-driver-content
 description: Color Commands
 ms.assetid: 752a3c1d-05f1-4f5e-9ef2-e51721ef7cc4
 keywords:
@@ -10,11 +9,7 @@ keywords:
 - palettes WDK Unidrv
 - patterns WDK Unidrv
 - brushes WDK Unidrv
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -95,7 +90,7 @@ The [printer commands](printer-commands.md) in the following table are used by p
 </tbody>
 </table>
 
- 
+ 
 
 For examples, see the [sample GPD files](sample-gpd-files.md).
 
@@ -126,7 +121,7 @@ The [printer commands](printer-commands.md) in the following table are used by p
 <td><p><strong>CmdEndPaletteDef</strong></p></td>
 <td><p>Command to end a palette definition.</p></td>
 <td><p>Optional. If not specified, no command is required to end a palette definition.</p>
-<p>The *Order attribute can be specified. If it is not, the <strong>*Order</strong> attribute associated with the most recently executed [option selection command](option-selection-command.md) for the ColorMode feature is used.</p></td>
+<p>The <em>Order attribute can be specified. If it is not, the <strong></em>Order</strong> attribute associated with the most recently executed <a href="option-selection-command.md" data-raw-source="[option selection command](option-selection-command.md)">option selection command</a> for the ColorMode feature is used.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>CmdBeginPaletteReDef</strong></p></td>
@@ -142,7 +137,7 @@ The [printer commands](printer-commands.md) in the following table are used by p
 <td><p><strong>CmdDefinePaletteEntry</strong></p></td>
 <td><p>Command to define a palette entry.</p></td>
 <td><p>Required if the printer supports palettes.</p>
-<p>In 24 BPP mode, Unidrv allows palettes for which *PaletteSize is 1. This allows GPD developers to implement a direct RGB color selection command for their devices. To do so, set <strong>*PaletteSize</strong> to 1, and specify the selection color command in the <strong>CmdDefinePaletteEntry</strong> command. The CmdSelectPaletteEntry command must also be specified but can be defined as a <strong>NULL</strong> command.</p></td>
+<p>In 24 BPP mode, Unidrv allows palettes for which <em>PaletteSize is 1. This allows GPD developers to implement a direct RGB color selection command for their devices. To do so, set <strong></em>PaletteSize</strong> to 1, and specify the selection color command in the <strong>CmdDefinePaletteEntry</strong> command. The CmdSelectPaletteEntry command must also be specified but can be defined as a <strong>NULL</strong> command.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>CmdRedefinePaletteEntry</strong></p></td>
@@ -157,7 +152,7 @@ The [printer commands](printer-commands.md) in the following table are used by p
 </tbody>
 </table>
 
- 
+ 
 
 For examples, see the [sample GPD files](sample-gpd-files.md).
 
@@ -202,11 +197,11 @@ The [printer commands](printer-commands.md) in the following table are used by p
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

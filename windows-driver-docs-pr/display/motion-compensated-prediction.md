@@ -10,11 +10,7 @@ keywords:
 - VA WDK DirectX , video decoding
 - decoding video WDK DirectX VA , motion compensation prediction
 - video decoding WDK DirectX VA , motion compensation prediction
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -48,9 +44,9 @@ The steps required for motion-compensated prediction coding of pictures are as f
 
 Motion vectors, DCT coefficients, and other data that is not directly part of the MCP process also employ prediction to make the transmitted form of the data more compact. These instances of prediction are executed on the [*host CPU*](https://msdn.microsoft.com/library/windows/hardware/ff556288#wdkgloss-host-cpu) processor or bitstream parser/variable-length-decoding unit.
 
- 
+ 
 
- 
+ 
 
 
 

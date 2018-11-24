@@ -3,11 +3,7 @@ title: Debug Break
 description: Debug Break
 ms.assetid: fc17d0b2-3ef5-4e10-a6a3-51f7011fddcf
 keywords: ["Debug Break", "controlling the target, Debug Break"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -57,9 +53,9 @@ You can disable the SYSRQ key by editing the registry. In the HKEY\_LOCAL\_MACHI
 
 The corresponding key in KD and CDB is [**CTRL+C**](ctrl-c--break-.md). For more information about other ways to control program execution, see [Controlling the Target](controlling-the-target.md).
 
- 
+ 
 
- 
+ 
 
 
 

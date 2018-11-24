@@ -6,11 +6,7 @@ keywords:
 - connection-oriented NDIS WDK , call managers
 - CoNDIS WDK networking , call managers
 - call managers WDK networking , connection-oriented operations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -60,9 +56,9 @@ A call manager performs:
 
     A call manager inputs [status indications from a bound connection-oriented miniport driver](indicating-miniport-driver-status.md).
 
- 
+ 
 
- 
+ 
 
 
 

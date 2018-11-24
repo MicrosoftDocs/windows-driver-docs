@@ -2,11 +2,7 @@
 title: Determining Which Properties Are Set for a Device Instance
 description: Determining Which Properties Are Set for a Device Instance
 ms.assetid: aeca4da5-9632-4523-aa2d-8d1c64b1eccc
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +29,9 @@ To determine which properties are set for a device instance on Windows Vista and
 
 If the second call to **SetupDiGetDevicePropertyKeys** succeeds, **SetupDiGetDevicePropertyKeys** returns the requested property key array in the *PropertyKeyArray* buffer, sets \**RequiredPropertyKeyCount* to the number of property keys in the buffer, and returns **TRUE**. If the function call fails, **SetupDiGetDevicePropertyKeys** returns **FALSE** and calling [GetLastError](http://go.microsoft.com/fwlink/p/?linkid=74036) will return the logged error code.
 
- 
+ 
 
- 
+ 
 
 
 

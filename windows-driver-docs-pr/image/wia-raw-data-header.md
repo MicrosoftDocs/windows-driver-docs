@@ -1,13 +1,8 @@
 ---
 title: WIA RAW Data Header
-author: windows-driver-content
 description: WIA RAW Data Header
 ms.assetid: a2cb3835-7879-4f69-9784-9487df40730a
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -16,8 +11,8 @@ ms.localizationpriority: medium
 
 The header for RAW data is as follows:
 
-```
-DWORD Tag;         // must contain &#39;WRAW&#39; (single byte ASCII characters)
+```cpp
+DWORD Tag;         // must contain 'WRAW' (single byte ASCII characters)
 DWORD Version;        // must contain 0x00010000
 DWORD HeaderSize;       // contains amount of valid bytes in header
 DWORD XRes;              // X (horizontal) resolution, in DPI
@@ -57,7 +52,7 @@ Describes the photometric interpretation for the image that is transferred. This
 <a href="" id="dword-lineorder"></a>DWORD *LineOrder*  
 Describes whether the lines/rows in the image data are ordered top-to-bottom or bottom-to-top. Two new constants were defined in *wiadef.h* for this:
 
-```
+```cpp
 #define  WIA_LINE_ORDER_TOP_TO_BOTTOM        0x00000001 
 #define  WIA_LINE_ORDER_BOTTOM_TO_TOP        0x00000002
 ```
@@ -77,9 +72,9 @@ Black and white and grayscale data can omit the palette (because the information
 
 For indexed images, the number of entries in the color palette is dictated by the current *BitsPerPixel* value (2 ^ *BitsPerPixel*. For example, 2 entries for 1bpp, 16 entries for 4bpp, 256 entries for 8bpp). The format of the palette entries would be dictated by the number of entries in *BitsPerChannel* field (the number of fields/channels in each palette entry) and *BitsPerChannel* values (each field would contain exactly the value specified in the *BitsPerChannel* field for the respective channel). Each palette entry field must be BYTE-aligned.
 
- 
+ 
 
- 
+ 
 
 
 

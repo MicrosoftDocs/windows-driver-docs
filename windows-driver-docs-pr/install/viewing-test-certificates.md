@@ -4,11 +4,7 @@ description: Viewing Test Certificates
 ms.assetid: bdfa8970-fdba-4d65-8a9c-960e5f6844d6
 keywords:
 - driver signing WDK , viewing test certificates
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +29,9 @@ To view the details about the Contoso.com(Test) certificate, double-click the ce
 
 Notice that the Certificate dialog box states: "This CA Root certificate is not trusted. To enable trust, install this certificate in the Trusted Root Certification Authorities store." This is the expected behavior. The certificate cannot be verified because Windows does not trust the issuing authority, "Contoso.com(Test)" by default.
 
- 
+ 
 
- 
+ 
 
 
 

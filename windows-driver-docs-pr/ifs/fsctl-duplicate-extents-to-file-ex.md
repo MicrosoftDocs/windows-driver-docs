@@ -1,5 +1,5 @@
 ---
-title: FSCTL\_DUPLICATE\_EXTENTS\_TO\_FILE\_EX control code
+title: FSCTL_DUPLICATE_EXTENTS_TO_FILE_EX control code
 description: The FSCTL\_DUPLICATE\_EXTENTS\_TO\_FILE\_EX control code instructs the file system to copy a range of file bytes on behalf of an application. The destination file may be the same as, or different from, the source file.
 ms.assetid: B13C6415-5593-43CF-90AC-7D2DC844EC41
 keywords: ["FSCTL_DUPLICATE_EXTENTS_TO_FILE_EX control code Installable File System Drivers"]
@@ -12,11 +12,7 @@ api_location:
 - Ntifs.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -113,7 +109,7 @@ Ntifs.h</td>
 
 [**DeviceIoControl**](https://msdn.microsoft.com/library/windows/desktop/aa363216)
 
- 
+ 
 
 
 

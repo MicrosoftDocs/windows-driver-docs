@@ -1,17 +1,12 @@
 ---
 title: Unidrv User Interface
-author: windows-driver-content
 description: Unidrv User Interface
 ms.assetid: b1f34ebf-8c8a-4b43-ba48-26bcf6352360
 keywords:
 - Unidrv, user interface
 - user interface WDK Unidrv
 - Unidrv WDK print
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +28,9 @@ The Unidrv user interface is implemented as a user-mode [printer interface DLL](
 
 You can modify the Unidrv-supplied property sheet pages by providing a [user interface plug-in](user-interface-plug-ins.md).
 
- 
+ 
 
- 
+ 
 
 
 

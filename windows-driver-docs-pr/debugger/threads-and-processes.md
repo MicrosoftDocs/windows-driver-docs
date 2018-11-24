@@ -3,11 +3,7 @@ title: Threads and Processes
 description: Threads and Processes
 ms.assetid: 7ba8226c-3fb3-4ed6-8f87-69a7999e34ad
 keywords: ["Debugger Engine, threads and processes"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -40,9 +36,9 @@ The engine maintains several pieces of information about each thread and process
 
 For details about using thread and processes, see [Controlling Threads and Processes](controlling-threads-and-processes.md).
 
- 
+ 
 
- 
+ 
 
 
 

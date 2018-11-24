@@ -5,11 +5,7 @@ ms.assetid: 70be3322-fdbc-4d7e-880d-dcbc0fecc39f
 keywords:
 - Static Driver Verifier Report WDK , Source Code pane
 - Source Code pane WDK Static Driver Verifier
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +26,9 @@ Similarly, when you select a line of *executed* code in the **Source Code** pane
 
 The **Source Code** pane is a component of the Defect Viewer.
 
- 
+ 
 
- 
+ 
 
 
 

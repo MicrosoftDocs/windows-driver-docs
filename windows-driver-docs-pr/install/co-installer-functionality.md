@@ -4,11 +4,7 @@ description: Co-installer Functionality
 ms.assetid: ce8a5ab4-d5ce-4255-a959-9619ff736e37
 keywords:
 - co-installers WDK device installations , functionality
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +30,9 @@ When called for postprocessing, a co-installer must check the **InstallResult** 
 
 Co-installers can sometimes obtain information from the user. Such information might include additional device parameters, or whether the user wants device-specific applications installed. Co-installers can create user interfaces by providing "finish install" pages and device property pages. No other form of user interface is allowed. Windows displays "finish install" pages at the end of the installation (within the Found New Hardware or Hardware Update). Device Manager displays property pages, and allows users with administrator privilege to modify parameters displayed on these pages.
 
- 
+ 
 
- 
+ 
 
 
 

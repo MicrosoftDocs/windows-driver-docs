@@ -14,11 +14,7 @@ keywords:
 - master clocks WDK audio , synchronization
 - phase-locked loops WDK audio
 - synchronization WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -52,13 +48,13 @@ The wave sink then gives back a sample time (for example, 600). The note in ques
 
 **Note**   The sample time is kept as a 64-bit number to avoid rollover. (A DWORD value rolls over in 27 hours.)
 
- 
+ 
 
 To summarize, the synth does all its internal math in sample time and the wave sink does the conversion to sample time from reference time and vice versa. The wave sink also manages synchronization with the master clock and provides latency information. Hiding this functionality in the wave sink makes writing the synth easier.
 
- 
+ 
 
- 
+ 
 
 
 

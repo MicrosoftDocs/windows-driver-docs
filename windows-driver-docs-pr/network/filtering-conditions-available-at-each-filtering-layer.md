@@ -1,15 +1,10 @@
 ---
 title: Filtering conditions available at each filtering layer
-author: windows-driver-content
 description: This section describes filtering conditions available at each filtering layer.
 ms.assetid: 470f809c-7bf7-4d8b-acd6-898cc68ea7ac
 keywords:
 - Filtering conditions available at each filtering layer network drivers
-ms.author: windowsdriverdev
 ms.date: 11/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

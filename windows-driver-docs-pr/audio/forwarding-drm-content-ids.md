@@ -13,11 +13,7 @@ keywords:
 - DRM WDK audio , content IDs
 - converting digital to analog
 - authenticating DRM content IDs WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -89,9 +85,9 @@ A typical secure data path consists of the [KMixer system driver](kernel-mode-wd
 
 For more information, see the implementations of the **SetContentId** method in the sb16 and msvad sample drivers in the Microsoft Windows Driver Kit (WDK).
 
- 
+ 
 
- 
+ 
 
 
 

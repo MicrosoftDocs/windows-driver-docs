@@ -2,11 +2,7 @@
 title: Theory of Operation
 description: This theory of operation topic explains the theory behind the inner working of the new Windows 8.1.
 ms.assetid: 5897946A-5319-404B-BE9E-91FF8801652F
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -51,9 +47,9 @@ The following topics provide more information about the connection life cycle an
 
 [Management of I2S and SCO Resources](management-of-i2s-and-sco-resources.md)
 
- 
+ 
 
- 
+ 
 
 
 

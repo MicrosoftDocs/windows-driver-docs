@@ -1,13 +1,8 @@
 ---
 title: Output keywords
-author: windows-driver-content
 description: These keywords are used to describe the actual output processes for a given 3D manufacturing job.
 ms.assetid: FBCE5E9C-8411-46C1-899E-A6C8FE27D947
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -61,11 +56,11 @@ These keywords are used to describe the actual output processes for a given 3D m
 </tbody>
 </table>
 
- 
+ 
 
 Job3DQuality keyword usage
 
-```
+```xml
 <psf:Feature name="psk3d:Job3DQuality">
     <psf:Property name="SelectionType">
         <psf:Value xsi:type="xsd:QName">psk:PickOne</psf:Value>
@@ -125,11 +120,11 @@ Job3DQuality keyword usage
 </tbody>
 </table>
 
- 
+ 
 
 Job3DDensity keyword usage
 
-```
+```xml
 <psf:Feature name="psk3d:Job3DDensity">
     <psf:Property name="SelectionType">
         <psf:Value xsi:type="xsd:QName">psk:PickOne</psf:Value>
@@ -187,7 +182,7 @@ Job3DSliceHeight keyword profile
 </tbody>
 </table>
 
- 
+ 
 
 Job3DSliceHeight initialization profile
 
@@ -226,13 +221,13 @@ Job3DSliceHeight initialization profile
 </tbody>
 </table>
 
- 
+ 
 
 Job3DSliceHeight keyword usage
 
 The Parameter definition is as follows:
 
-```
+```xml
 <psf:ParameterDef name="psk3d:Job3DSliceHeight">
     <psf:Property name="psf:DataType">
         <psf:Value xsi:type="xsd:QName">xsd:integer</psf:Value>
@@ -260,7 +255,7 @@ The Parameter definition is as follows:
 
 This Parameter is initialized as follows:
 
-```
+```xml
 <psf:ParameterInit name="psk3d:Job3DSliceHeight">
     <psf:Value xsi:type="xsd:integer">150</psf:Value>
 </psf:ParameterInit>
@@ -311,11 +306,11 @@ The psk3d:Job3DOutputColor keyword specifies whether the model is to be reproduc
 </tbody>
 </table>
 
- 
+ 
 
 Job3DOutputColor keyword usage
 
-```
+```xml
 <psf:Feature name="psk3d:Job3DOutputColor">
     <psf:Property name="SelectionType">
         <psf:Value xsi:type="xsd:QName">psk:PickOne</psf:Value>
@@ -325,9 +320,9 @@ Job3DOutputColor keyword usage
 </psf:Feature>
 ```
 
- 
+ 
 
- 
+ 
 
 
 

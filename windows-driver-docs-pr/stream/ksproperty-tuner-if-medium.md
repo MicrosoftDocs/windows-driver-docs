@@ -11,11 +11,7 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +23,7 @@ KSPROPERTY\_TUNER\_IF\_MEDIUM describes the medium for the intermediate frequenc
 ## <span id="ddk_ksproperty_tuner_if_medium_ks"></span><span id="DDK_KSPROPERTY_TUNER_IF_MEDIUM_KS"></span>
 
 
-### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
+### Usage Summary Table
 
 <table>
 <colgroup>
@@ -51,13 +47,13 @@ KSPROPERTY\_TUNER\_IF\_MEDIUM describes the medium for the intermediate frequenc
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p>[<strong>KSPROPERTY_TUNER_IF_MEDIUM_S</strong>](https://msdn.microsoft.com/library/windows/hardware/ff565848)</p></td>
-<td><p>[<strong>KSPIN_MEDIUM</strong>](https://msdn.microsoft.com/library/windows/hardware/ff563538)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565848" data-raw-source="[&lt;strong&gt;KSPROPERTY_TUNER_IF_MEDIUM_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565848)"><strong>KSPROPERTY_TUNER_IF_MEDIUM_S</strong></a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff563538" data-raw-source="[&lt;strong&gt;KSPIN_MEDIUM&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff563538)"><strong>KSPIN_MEDIUM</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a KSPIN\_MEDIUM structure that specifies the Medium GUID for the pin that is capable of supporting tuning to an intermediate frequency.
 
@@ -84,16 +80,16 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
-[**KSPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff564262)
+[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)
 
 [**KSPROPERTY\_TUNER\_IF\_MEDIUM\_S**](https://msdn.microsoft.com/library/windows/hardware/ff565848)
 
- 
+ 
 
- 
+ 
 
 
 

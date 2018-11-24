@@ -12,6 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # DIF_DETECT
@@ -46,7 +47,7 @@ When the **Add Hardware Wizard** is detecting non-PnP devices.
 </tbody>
 </table>
 
- 
+ 
 
 ### Installer Input
 
@@ -137,9 +138,9 @@ Requirements
 
 [**SP_DEVINSTALL_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346)
 
- 
+ 
 
- 
+ 
 
 
 

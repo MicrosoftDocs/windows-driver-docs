@@ -2,18 +2,14 @@
 title: Setting Up Kernel-Mode Debugging using Serial over USB Manually for a Sharks cove development board
 description: This topic describes setting up Kernel-Mode Debugging manually for a Sharks cove development board.
 ms.assetid: E6157263-74E8-4704-9668-B845043737A7
-ms.author: domars
 ms.date: 05/03/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # <span id="debugger.setting_up_kernel-mode_debugging_using_serial_over_usb_manually_"></span>Setting Up Kernel-Mode Debugging using Serial over USB Manually
 
 
-The [Sharks Cove development board](http://go.microsoft.com/fwlink/p?linkid=403168) supports serial debugging over a USB cable.
+The [Sharks Cove development board](https://go.microsoft.com/fwlink/p?linkid=403168) supports serial debugging over a USB cable.
 
 The computer that runs the debugger is called the *host computer*, and the computer being debugged is called the *target computer*. In this topic, the Sharks Cove board is the target computer.
 
@@ -57,13 +53,13 @@ On the host computer, open WinDbg. On the **File** menu, choose **Kernel Debug**
 
 You can also start a session with WinDbg by entering the following command in a Command Prompt window; *n* is the number of the COM port that you noted on the host computer:
 
-**windbg -k com:port=COM***n***,baud=115200**
+**windbg -k com:port=COM**<em>n</em>**,baud=115200**
 
 ### <span id="Using_KD"></span><span id="using_kd"></span><span id="USING_KD"></span>Using KD
 
 On the host computer, open a Command Prompt window, and enter the following command, where *n* is the COM port number you noted previously:
 
-**kd -k com:port=COM***n***,baud=115200**
+**kd -k com:port=COM**<em>n</em>**,baud=115200**
 
 ## <span id="Using_Environment_Variables"></span><span id="using_environment_variables"></span><span id="USING_ENVIRONMENT_VARIABLES"></span>Using Environment Variables
 
@@ -115,9 +111,9 @@ For complete documentation of the **bcdedit** command, see Boot Options for Driv
 
 [Setting Up Kernel-Mode Debugging Manually](setting-up-kernel-mode-debugging-in-windbg--cdb--or-ntsd.md)
 
- 
+ 
 
- 
+ 
 
 
 

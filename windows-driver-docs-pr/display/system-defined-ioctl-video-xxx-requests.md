@@ -8,11 +8,7 @@ keywords:
 - I/O WDK video miniport
 - system-defined IOCTL_VIDEO_XXX requests WDK video miniport
 - IOCTL_VIDEO_XXX requests WDK video miniport
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -106,9 +102,9 @@ VGA-compatible SVGA miniport drivers are required to support the following addit
 
 Details for each IOCTL can be found in [Video Miniport Driver I/O Control Codes](https://msdn.microsoft.com/library/windows/hardware/ff570515). Miniport driver writers should not use undocumented system-defined IOCTLs.
 
- 
+ 
 
- 
+ 
 
 
 

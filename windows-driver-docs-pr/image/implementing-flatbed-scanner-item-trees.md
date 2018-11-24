@@ -1,13 +1,8 @@
 ---
 title: Implementing Flatbed Scanner Item Trees
-author: windows-driver-content
 description: Implementing Flatbed Scanner Item Trees
 ms.assetid: 43c4e6d6-129b-4633-92c1-6efd1e200b9b
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +24,9 @@ This section includes:
 
 [Advanced Scanning for Flatbed Scanners](basic-scanning-for-flatbed-scanners.md)
 
- 
+ 
 
- 
+ 
 
 
 

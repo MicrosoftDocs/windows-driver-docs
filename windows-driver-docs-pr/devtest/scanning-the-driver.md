@@ -9,11 +9,7 @@ keywords:
 - scanning DriverEntry routine WDK Static Driver Verifier
 - driver entry points WDK Static Driver Verifier
 - entry points WDK Static Driver Verifier
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -110,9 +106,9 @@ The following example shows the approved Sdv-map.h file for the KMDF sample driv
 #define fun_WDF_REQUEST_CANCEL_1 EvtRequestCancel
 ```
 
- 
+ 
 
- 
+ 
 
 
 

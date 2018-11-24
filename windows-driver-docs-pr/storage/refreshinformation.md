@@ -10,6 +10,7 @@ api_name:
 api_type:
 - NA
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # RefreshInformation function
@@ -64,9 +65,9 @@ This WMI method belongs to the [MSFC\_HBAAdapterMethods WMI Class](msfc-hbaadapt
 
 [**GetPortAttributesByWWN**](getportattributesbywwn.md)
 
- 
+ 
 
- 
+ 
 
 
 

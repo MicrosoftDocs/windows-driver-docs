@@ -8,11 +8,7 @@ keywords:
 - saving trace group logs
 - log files WDK TraceView , group logs
 - log files WDK TraceView
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,9 +21,9 @@ To create a record of the messages for the group as they appear in the [Trace Me
 
 Because the arrival of trace messages in the [Trace Session List](trace-session-list.md) is affected by the message rate, the buffer size, and the flush timer for each trace session, trace messages from different sessions that arrive together might actually have occurred at quite different times. For a more accurate view of the combined trace messages, sort them by the timestamp (in the **System Time** column) of each message.
 
- 
+ 
 
- 
+ 
 
 
 

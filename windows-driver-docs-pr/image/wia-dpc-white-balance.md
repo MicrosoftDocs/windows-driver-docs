@@ -11,11 +11,7 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -68,7 +64,7 @@ The following table describes possible values for the WIA\_DPC\_WHITE\_BALANCE p
 </tr>
 <tr class="odd">
 <td><p>WHITEBALANCE_MANUAL</p></td>
-<td><p>Your driver can set the white balance directly by using the [<strong>WIA_DPC_RGB_GAIN</strong>](wia-dpc-rgb-gain.md) property.</p></td>
+<td><p>Your driver can set the white balance directly by using the <a href="wia-dpc-rgb-gain.md" data-raw-source="[&lt;strong&gt;WIA_DPC_RGB_GAIN&lt;/strong&gt;](wia-dpc-rgb-gain.md)"><strong>WIA_DPC_RGB_GAIN</strong></a> property.</p></td>
 </tr>
 <tr class="even">
 <td><p>WHITEBALANCE_ONEPUSH_AUTO</p></td>
@@ -81,7 +77,7 @@ The following table describes possible values for the WIA\_DPC\_WHITE\_BALANCE p
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -103,14 +99,14 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**WIA\_DPC\_RGB\_GAIN**](wia-dpc-rgb-gain.md)
 
- 
+ 
 
- 
+ 
 
 
 

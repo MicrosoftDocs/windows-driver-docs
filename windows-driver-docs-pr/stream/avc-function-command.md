@@ -9,11 +9,7 @@ api_name:
 - AVC_FUNCTION_COMMAND
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ ms.localizationpriority: medium
 
 The **AVC\_FUNCTION\_COMMAND** function code is used to send an AV/C request and receive a response as one operation.
 
-### <span id="i_o_status_block"></span><span id="I_O_STATUS_BLOCK"></span>I/O Status Block
+### I/O Status Block
 
 If successful, the AV/C protocol driver sets **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS.
 
@@ -62,13 +58,13 @@ Possible other return values include:
 </tbody>
 </table>
 
- 
+ 
 
-### <span id="comments"></span><span id="COMMENTS"></span>Comments
+### Comments
 
 This function uses the AVC\_COMMAND\_IRB structure as shown below.
 
-```
+```cpp
 typedef struct _AVC_COMMAND_IRB {
   AVC_IRB  Common;
   UCHAR  SubunitAddrFlag : 1;
@@ -91,13 +87,13 @@ typedef struct _AVC_COMMAND_IRB {
 } AVC_COMMAND_IRB, *PAVC_COMMAND_IRB;
 ```
 
-### <span id="requirements"></span><span id="REQUIREMENTS"></span>Requirements
+### Requirements
 
 **Headers:** Declared in *avc.h*. Include *avc.h*.
 
 ### <span id="avc_command_irb_input"></span><span id="AVC_COMMAND_IRB_INPUT"></span>AVC\_COMMAND\_IRB Input
 
-<span id="Common"></span><span id="common"></span><span id="COMMON"></span>**Common**  
+**Common**  
 The **Function** submember of this member must be set to **AVC\_FUNCTION\_COMMAND** from the AVC\_FUNCTION enumeration.
 
 <span id="SubunitAddrFlag"></span><span id="subunitaddrflag"></span><span id="SUBUNITADDRFLAG"></span>**SubunitAddrFlag**  
@@ -134,7 +130,7 @@ Set this to the desired time-out in 100-ns units. For example, the default time-
 <span id="Retries"></span><span id="retries"></span><span id="RETRIES"></span>**Retries**  
 Set this to the desired number of times *avc.sys* should attempt to retry requests after each time-out without a response. Note that a retry count of zero means that the request is tried once. The total amount of time spent trying to process a command without getting a response is calculated by the following formula:
 
-***Timeout*** *\* (****Retries*** *+ 1)*
+***Timeout*** *\* (***<em>Retries</em>** *+ 1)*
 
 This parameter is ignored if **RetryFlag** is zero.
 
@@ -161,13 +157,13 @@ The recommended use of this structure is to first zero the structure (use **RtlZ
 
 This must be called at IRQL = PASSIVE\_LEVEL.
 
-### <span id="see_also"></span><span id="SEE_ALSO"></span>See Also
+### See Also
 
 [**AVC\_FUNCTION**](https://msdn.microsoft.com/library/windows/hardware/ff554145), [**AvcCommandType**](https://msdn.microsoft.com/library/windows/hardware/ff554099), [**AvcResponseCode**](https://msdn.microsoft.com/library/windows/hardware/ff554105), [**AVC\_FUNCTION\_FIND\_PEER\_DO**](avc-function-find-peer-do.md), [**AVC\_FUNCTION\_PEER\_DO\_LIST**](avc-function-peer-do-list.md), [**AVC\_FUNCTION\_GET\_SUBUNIT\_INFO**](avc-function-get-subunit-info.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: Direct3D 11 video playback improvements
 description: With wider adoption of Microsoft Direct3D 10 technologies in mainstream apps, some app developers want to treat all content the same.
 ms.assetid: BB32F074-16E8-46E4-B9CF-6AEBE331B549
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -41,7 +37,7 @@ With wider adoption of Microsoft Direct3D 10 technologies in mainstream apps, s
 </tbody>
 </table>
 
- 
+ 
 
 These are key benefits to using Direct3D 11:
 
@@ -203,9 +199,9 @@ For info on requirements that hardware devices must meet when they implement thi
 
 See [WDDM 1.2 features](wddm-v1-2-features.md) for a review of features added with Windows 8.
 
- 
+ 
 
- 
+ 
 
 
 

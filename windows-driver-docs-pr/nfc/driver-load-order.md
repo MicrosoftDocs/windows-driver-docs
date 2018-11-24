@@ -1,6 +1,5 @@
 ---
 title: NFC driver load order
-author: windows-driver-content
 description: When ACPI creates the device node to represent the NFCC, PnP matches against the NFC client driver-provided .inf and is installed for that device node.
 ms.assetid: 8094B525-A4A1-42D2-8D1F-4B32D77418E3
 keywords:
@@ -9,11 +8,7 @@ keywords:
 - proximity
 - near field proximity
 - NFP
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,9 +19,9 @@ When ACPI creates the device node to represent the NFCC, PnP matches against the
 
 ![driver load order](images/driverloadsequence1.png)
 
- 
+ 
 
- 
+ 
 ## Related topics
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [NFC class extension (CX) reference](https://msdn.microsoft.com/library/windows/hardware/dn905536)  

@@ -2,11 +2,7 @@
 title: PwrTest ProcessIdle Scenario
 description: The PwrTest ProcessIdle Scenario forces background maintenance tasks to run (now rather than at their scheduled time) and monitors their progress.
 ms.assetid: 14932191-C956-4623-AF62-5A6650D72164
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,7 +18,7 @@ The PwrTest ProcessIdle Scenario forces background maintenance tasks to run (now
 pwrtest /processidle [/t:n] [/?] 
 ```
 
-<span id="_t_n"></span><span id="_T_N"></span>**/t:***n*  
+<span id="_t_n"></span><span id="_T_N"></span>**/t:**<em>n</em>  
 Specifies the maximum time (in minutes) for the scenario to run, after which the wait is aborted, even if idle tasks are continuing to run (default is to run until all tasks are completed).
 
 **Examples**
@@ -180,16 +176,16 @@ The following table describes the XML elements that appear in the log file.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
 
 [PwrTest Syntax](pwrtest-syntax.md)
 
- 
+ 
 
- 
+ 
 
 
 

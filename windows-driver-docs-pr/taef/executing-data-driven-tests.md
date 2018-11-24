@@ -2,11 +2,7 @@
 title: Executing Data-driven tests
 description: Executing Data-driven tests
 ms.assetid: E8E7A66A-6E39-442d-A195-AE4633B817FE
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -69,9 +65,9 @@ will list all the methods (datadriven and otherwise) along with the metadata and
 
 Take a look at [Overriding metadata at the Row level](metadata-overriding-data-driven-test-example.md), [Specifying array parameter types](array-support-data-driven-test-example.md) and [Simple data-driven example](data-driven-testing.md) for example walk-throughs providing more insight.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: YUV-RGB data range conversions
 ms.assetid: 0A439686-0BAE-4E4D-AA23-06A6EF72C4B3
 description: Effect of input data range on expected video conversion behavior
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -154,15 +150,15 @@ If you want to convert from RGB or YUV inputs to YUV or RGB outputs, the expecte
 </tbody>
 </table>
 
- 
+ 
 
 In this case the "nominal range" is the constant value from the [**DXVAHDDDI\_NOMINAL\_RANGE**](https://msdn.microsoft.com/library/windows/hardware/dn265432) enumeration.
 
 See [YUV format ranges in Windows 8.1](yuv-format-ranges.md) for definitions of YUV format ranges.
 
- 
+ 
 
- 
+ 
 
 
 

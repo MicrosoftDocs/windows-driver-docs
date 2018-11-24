@@ -1,13 +1,8 @@
 ---
 title: Basic Scanning for Flatbed Scanners
-author: windows-driver-content
 description: Basic Scanning for Flatbed Scanners
 ms.assetid: a1100a8d-752a-4109-b1dc-cf7c4bf5a100
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -51,9 +46,9 @@ The driver must use the WIA properties on the flatbed scanner item as settings t
 
 Multiregion scanning from the flatbed is possible either though manual configuration or by automatically using the [WIA Segmentation Filter](wia-segmentation-filter.md). Note that the segmentation filter is no different from an application in what it can and cannot do. The same procedures that are described for the segmentation filter can be run directly by the application to create child items for new scan regions.
 
- 
+ 
 
- 
+ 
 
 
 

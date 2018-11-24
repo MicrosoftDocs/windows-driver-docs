@@ -3,11 +3,7 @@ title: (Command Help)
 description: The question mark ( ) character displays a list of all commands and operators.Note  A question mark by itself displays command help.
 ms.assetid: 89b61021-43a4-46b7-ae43-a52dd9d40948
 keywords: ["(Command Help) Windows Debugging"]
-ms.author: domars
-ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 09/17/2018
 topic_type:
 - apiref
 api_name:
@@ -24,10 +20,8 @@ The question mark (**?**) character displays a list of all commands and operator
 
 **Note**   A question mark by itself displays command help. The [**? expression**](---evaluate-expression-.md) syntax evaluates the given expression.
 
- 
-
-```
-?
+```dbgcmd
+    ?
 ```
 
 ## <span id="ddk_cmd_command_help_dbg"></span><span id="DDK_CMD_COMMAND_HELP_DBG"></span>
@@ -56,16 +50,16 @@ The question mark (**?**) character displays a list of all commands and operator
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
 
 For more information about standard commands, use **?**. For more information about meta-commands, use [**.help**](-help--meta-command-help-.md). For more information about extension commands, use [**!help**](-help.md).
 
- 
+ 
 
- 
+ 
 
 
 

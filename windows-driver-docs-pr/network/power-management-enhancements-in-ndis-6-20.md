@@ -6,11 +6,7 @@ keywords:
 - NDIS 6.20 WDK , power management enhancements
 - power management WDK networking , NDIS 6.20 enhancements
 - power management enhancements WDK NDIS 6.20
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -45,9 +41,9 @@ For more information about power management for NDIS 6.20 and later versions of 
 
 [Power Management Enhancements in NDIS 6.30](introduction-to-ndis-6-30.md)
 
- 
+ 
 
- 
+ 
 
 
 

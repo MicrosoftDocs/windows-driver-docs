@@ -6,11 +6,7 @@ keywords:
 - registering intermediate drivers
 - intermediate drivers WDK networking , registering
 - NDIS intermediate drivers WDK , registering
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +22,9 @@ Note that the intermediate driver controls when its virtual miniports are initia
 
 To register its *ProtocolXxx* functions, an intermediate driver must call the [**NdisRegisterProtocolDriver**](https://msdn.microsoft.com/library/windows/hardware/ff564520) function. For more information about registering *ProtocolXxx* functions, see [Registering an Intermediate Driver as a Protocol Driver](registering-an-intermediate-driver-as-a-protocol.md).
 
- 
+ 
 
- 
+ 
 
 
 

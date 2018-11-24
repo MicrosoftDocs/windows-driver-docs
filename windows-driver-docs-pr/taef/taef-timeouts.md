@@ -2,11 +2,7 @@
 title: TAEF Timeouts
 description: TAEF Timeouts
 ms.assetid: 43FE81A2-71DF-4e3a-998E-1B1F8C1398AC
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -52,9 +48,9 @@ Additionally, time-out metadata values can be overridden at runtime when you use
 <span id="te.exe_test1.dll__testTimeout_0_0_45"></span><span id="te.exe_test1.dll__testtimeout_0_0_45"></span><span id="TE.EXE_TEST1.DLL__TESTTIMEOUT_0_0_45"></span>te.exe test1.dll /testTimeout:0:0:45  
 Every test and setup/cleanup method will time out after 45 seconds.
 
- 
+ 
 
- 
+ 
 
 
 

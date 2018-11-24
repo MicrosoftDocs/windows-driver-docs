@@ -1,12 +1,7 @@
 ---
 title: IRP_MN_STOP_DEVICE
-author: windows-driver-content
 description: All PnP drivers must handle this IRP.
-ms.author: windowsdriverdev
 ms.date: 08/12/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.assetid: a5c81db0-e753-4d91-97e4-c58ea05f5ce8
 keywords:
  - IRP_MN_STOP_DEVICE Kernel-Mode Driver Architecture
@@ -94,9 +89,9 @@ Requirements
 
 [**IoRegisterDeviceInterface**](https://msdn.microsoft.com/library/windows/hardware/ff549506)
 
- 
+ 
 
- 
+ 
 
 
 

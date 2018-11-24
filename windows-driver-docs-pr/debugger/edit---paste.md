@@ -3,11 +3,7 @@ title: Edit Paste
 description: Edit Paste
 ms.assetid: e03be533-5768-40f9-899b-16adbcb49de5
 keywords: ["Edit Paste", "text, Edit Paste"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ You can use the **Paste** command only with docked or tabbed windows. But you ca
 
 For more information about how to select, copy, cut, and paste text and about how these operations vary from window to window, see [Cutting and Pasting Text](cutting-and-pasting-text.md).
 
- 
+ 
 
- 
+ 
 
 
 

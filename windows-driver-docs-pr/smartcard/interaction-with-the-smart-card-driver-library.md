@@ -5,11 +5,7 @@ ms.assetid: 44cf41f4-bbff-4193-afad-6d4106ce50c3
 keywords:
 - IOCTLs WDK smart card
 - vendor-supplied drivers WDK smart card , IOCTL request management
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -43,9 +39,9 @@ The following numbers correspond with the numbers in the previous figure. Starti
 
 The smart card library synchronizes access to the reader driver. No two callback functions will be called at the same time. However, the event handling for card insertion and removal must be processed asynchronously.
 
- 
+ 
 
- 
+ 
 
 
 

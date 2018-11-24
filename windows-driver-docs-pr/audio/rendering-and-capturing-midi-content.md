@@ -5,11 +5,7 @@ ms.assetid: 32eff06a-f3e8-471c-8fe6-b7cee208b90c
 keywords:
 - MIDI content rendering WDK audio
 - MIDI content capturing WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -49,9 +45,9 @@ See the following for more information about the configuration of the port class
 
 [Rendering and Capturing Audio Content by Using the USBAudio Driver](rendering-and-capturing-audio-content-by-using-the-usbaudio-driver.md)
 
- 
+ 
 
- 
+ 
 
 
 

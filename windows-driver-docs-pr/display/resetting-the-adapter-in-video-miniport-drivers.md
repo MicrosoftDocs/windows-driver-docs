@@ -6,11 +6,7 @@ keywords:
 - video miniport drivers WDK Windows 2000 , resetting adapters
 - resetting adapters WDK video miniport
 - HwVidResetHw
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,9 +28,9 @@ Every miniport driver must have a [*HwVidResetHw*](https://msdn.microsoft.com/li
 
 [**VideoPortZeroMemory**](https://msdn.microsoft.com/library/windows/hardware/ff570493)
 
- 
+ 
 
- 
+ 
 
 
 

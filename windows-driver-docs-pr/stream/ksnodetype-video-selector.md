@@ -2,11 +2,7 @@
 title: KSNODETYPE\_VIDEO\_SELECTOR
 description: KSNODETYPE\_VIDEO\_SELECTOR
 ms.assetid: fcd6c2d0-5dbb-454e-ac37-23c509f07b9c
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,9 +15,9 @@ The **IKsTopologyInfo** interface may be used by applications that are communica
 
 See also [Audio Topology Nodes](https://msdn.microsoft.com/library/windows/hardware/ff536219).
 
- 
+ 
 
- 
+ 
 
 
 

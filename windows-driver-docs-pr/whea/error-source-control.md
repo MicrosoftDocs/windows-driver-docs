@@ -1,6 +1,5 @@
 ---
 title: Error Source Control
-author: windows-driver-content
 description: Error Source Control
 ms.assetid: f73d9006-a7e7-4a0d-9654-004f53286743
 keywords:
@@ -11,11 +10,7 @@ keywords:
 - platform-specific hardware error driver plug-ins WDK WHEA , error source control
 - PSHED plug-ins WDK WHEA , error source control
 - error source control WDK WHEA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,9 +33,9 @@ For more information about how to implement a PSHED plug-in that participates in
 
 User-mode management applications control the error sources by calling the [WHEA Management API](https://msdn.microsoft.com/library/windows/hardware/ff560556). For more information about how to implement WHEA management applications, see [WHEA Management Applications](whea-management-applications.md).
 
- 
+ 
 
- 
+ 
 
 
 

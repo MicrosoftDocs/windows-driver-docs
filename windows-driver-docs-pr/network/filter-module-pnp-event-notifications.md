@@ -8,11 +8,7 @@ keywords:
 - NDIS filter drivers WDK , event notifications
 - event notifications WDK networking , filter drivers
 - Plug and Play WDK networking , filter
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -44,9 +40,9 @@ Filter drivers should handle driver stack changes. For more information about dr
 
 If necessary to allow handling of these events, NDIS can initiate a pause operation after the PnP or Power Management notification. For more information, see [Pausing a Driver Stack](pausing-a-driver-stack.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -5,11 +5,7 @@ ms.assetid: c13db4a1-e345-4368-9bcd-afbd2fd8db7a
 keywords:
 - processors WDK RSS
 - CPU configuration WDK RSS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,10 +25,10 @@ To avoid complicated cases (and unrealistic cases that are not implemented in ac
 
 The actual number of CPUs that are used for RSS is also limited by the total number of core processors that remain after the RSS base CPU number has been configured. For example, if the administrator sets the maximum number of RSS CPUs on a quad-core computer system to 6, the networking driver stack uses, at most, 4 CPUs for RSS. If the administrator also sets the RSS base CPU number to 1, the networking driver stack uses at most 3 CPUs (CPU numbers 1, 2, and 3).
 
- The number of CPUs that the computer uses for RSS is static and does not change at run time. Therefore, any changes to the **MaxNumRssCpus** registry value require a restart to take effect.
+ The number of CPUs that the computer uses for RSS is static and does not change at run time. Therefore, any changes to the **MaxNumRssCpus** registry value require a restart to take effect.
 
 **Note** Starting in Windows 8 and Windows Server 2012, administrators can control many aspects of Network Adapters by using PowerShell cmdlets. Directly editing the registry is now discouraged. 
 
-The PowerShell cmdlet for setting the number of RSS CPUs is [Set-NetAdapterRss](https://technet.microsoft.com/en-us/library/jj130863). The primary difference between using **Set-NetAdapterRss** and using **MaxNumRssCpus** is that PowerShell cmdlets operate on a per-Network Adapter basis while **MaxNumRssCpus** is global, meaning it applies to all Network Adapters. Generally, working with each Network Adapter separately is recommended because it offers more flexibility, granularity, and understandability in giving each Network Adapter its own configuration. However, administrators might still use the global **MaxNumRssCpus** key if they would like to apply a configuration to all current and all future Network Adapters at the same time.
+The PowerShell cmdlet for setting the number of RSS CPUs is [Set-NetAdapterRss](https://technet.microsoft.com/library/jj130863). The primary difference between using **Set-NetAdapterRss** and using **MaxNumRssCpus** is that PowerShell cmdlets operate on a per-Network Adapter basis while **MaxNumRssCpus** is global, meaning it applies to all Network Adapters. Generally, working with each Network Adapter separately is recommended because it offers more flexibility, granularity, and understandability in giving each Network Adapter its own configuration. However, administrators might still use the global **MaxNumRssCpus** key if they would like to apply a configuration to all current and all future Network Adapters at the same time.
 
 For a complete list of Network Adapter cmdlets, see [Network Adapter Cmdlets in Windows PowerShell](https://technet.microsoft.com/library/jj134956).

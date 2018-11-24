@@ -9,11 +9,7 @@ keywords:
 - authentication states WDK NDIS ports
 - link states WDK NDIS ports
 - initialization states WDK NDIS ports
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,9 +38,9 @@ Miniport drivers that support NDIS ports must use the [**NDIS\_STATUS\_PORT\_STA
 
 NDIS and overlying drivers use the [OID\_GEN\_PORT\_AUTHENTICATION\_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/ff569623) OID to set the current authentication states of an NDIS port. Miniport drivers that support NDIS ports must support this OID.
 
- 
+ 
 
- 
+ 
 
 
 

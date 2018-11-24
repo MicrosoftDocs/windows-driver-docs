@@ -1,15 +1,10 @@
 ---
 title: TAPI extension OIDs for connection-oriented NDIS
-author: windows-driver-content
 description: This topic describes TAPI extension OIDs for connection-oriented NDIS.
 ms.assetid: 06f7e2d0-b890-468e-8177-d3c28d0e9cd0
 keywords:
 - TAPI extension OIDs connection-oriented NDIS
-ms.author: windowsdriverdev
 ms.date: 11/03/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

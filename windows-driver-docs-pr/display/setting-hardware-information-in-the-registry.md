@@ -7,11 +7,7 @@ keywords:
 - registry WDK video miniport
 - VideoPortSetRegistryParameters
 - VideoPortGetRegistryParameters
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -71,11 +67,11 @@ The following table describes the information that the driver can register and p
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

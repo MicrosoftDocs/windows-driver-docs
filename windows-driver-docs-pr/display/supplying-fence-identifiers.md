@@ -4,11 +4,7 @@ description: Supplying Fence Identifiers
 ms.assetid: 0ec8a4eb-c441-47ae-b5de-d86e6065ffd4
 keywords:
 - fence identifiers WDK display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,9 +17,9 @@ The Microsoft DirectX graphics kernel subsystem supplies an identical fence iden
 
 -   The driver uses the fence identifier passed to *DxgkDdiSubmitCommand* to write into the ring buffer, which is the buffer where DMA buffers are queued for execution by the graphics processing unit (GPU) (most GPU types use a DMA buffer queuing model).
 
- 
+ 
 
- 
+ 
 
 
 

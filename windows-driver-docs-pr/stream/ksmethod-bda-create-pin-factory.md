@@ -11,11 +11,7 @@ api_location:
 - Bdamedia.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -51,16 +47,16 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**BdaMethodCreatePin**](https://msdn.microsoft.com/library/windows/hardware/ff556467)
 
 [**KSM\_PIN**](https://msdn.microsoft.com/library/windows/hardware/ff563453)
 
- 
+ 
 
- 
+ 
 
 
 

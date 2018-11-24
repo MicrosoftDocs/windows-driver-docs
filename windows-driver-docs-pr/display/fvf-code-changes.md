@@ -5,11 +5,7 @@ ms.assetid: d9db4356-570b-4e05-aec9-bf36e26e4570
 keywords:
 - FVF WDK Direct3D
 - multimatrix vertex blending WDK Direct3D , FVF code changes
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,11 +21,11 @@ These codes identify extra DWORDs of space that may alternatively be allocated t
 
 **Note**   If the number of blend weights specified is one less than the number of matrices currently being blended, then the weight assigned to the last matrix is defined to be (1.0 - Bₜ), where Bₜ is the total of the other weights for that vertex.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

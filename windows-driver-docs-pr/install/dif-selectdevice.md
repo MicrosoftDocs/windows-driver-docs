@@ -12,6 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # DIF_SELECTDEVICE
@@ -46,7 +47,7 @@ When choosing a driver for a newly enumerated device or a new driver for an exis
 </tbody>
 </table>
 
- 
+ 
 
 ### Installer Input
 
@@ -86,7 +87,7 @@ If the class installer successfully handles this request, including directly cal
 
 **Note**   The class installer can directly call the default handler, but the class installer should never attempt to supersede the operations of the default handler.
 
- 
+ 
 
 For more information about calling the default handler, see [Calling Default DIF Code Handlers](https://msdn.microsoft.com/library/windows/hardware/ff537868).
 
@@ -181,9 +182,9 @@ Requirements
 
 [**SP_SELECTDEVICE_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff553326)
 
- 
+ 
 
- 
+ 
 
 
 

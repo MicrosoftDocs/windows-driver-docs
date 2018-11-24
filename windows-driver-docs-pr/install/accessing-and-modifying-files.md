@@ -2,11 +2,7 @@
 title: Accessing and Modifying Files
 description: Accessing and Modifying Files
 ms.assetid: DD5A527F-5F8D-4892-A2D5-C0279913B6A3
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,11 +17,11 @@ The following guidelines apply to driver package components when they access or 
 
 **Important**  The INF [**RenFiles**](inf-renfiles-directive.md) and [**DelFiles**](inf-delfiles-directive.md) directives must be used carefully. You should not use these directives in the INF file for a Plug and Play (PnP) function driver.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

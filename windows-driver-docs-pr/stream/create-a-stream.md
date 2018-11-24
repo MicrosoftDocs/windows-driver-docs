@@ -1,17 +1,12 @@
 ---
 title: Create a Stream
-author: windows-driver-content
 description: Create a Stream
 ms.assetid: 9984275f-7ead-4df2-aa98-a3b4e5e85ae0
 keywords:
 - Avcstrm.sys streaming filter driver WDK , creating streams
 - stream creation WDK AV/C streaming
 - contexts WDK AV/C streaming
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +20,7 @@ A data stream context must be created before the AV/C Streaming filter driver, *
 
 This is a synchronous operation. The operation first creates a stream request structure to open a stream. It then calls the user-defined IRP synchronous routine to call the lower driver to create a data stream that is based on the given data flow direction and data format that is defined in [**AVCSTRM\_FORMAT\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff554117). The following code sample shows how to open a data stream context.
 
-```
+```cpp
 #include <avcstrm.h>
 
 INIT_AVCSTRM_HEADER(pAVCStrmReq, AVCSTRM_OPEN);
@@ -48,9 +43,9 @@ if(STATUS_SUCCESS == Status) {
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

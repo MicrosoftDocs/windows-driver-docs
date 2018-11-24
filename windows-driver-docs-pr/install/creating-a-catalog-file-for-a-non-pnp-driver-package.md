@@ -2,11 +2,7 @@
 title: Creating a Catalog File for a Non-PnP Driver Package
 description: Creating a Catalog File for a Non-PnP Driver Package
 ms.assetid: b40a6f42-53a8-468f-abf1-335c5ead3cbd
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -17,7 +13,7 @@ You can use the [MakeCat](http://go.microsoft.com/fwlink/p/?linkid=104922) tool 
 
 **Note**  You must use the MakeCat tool only to create catalog files for driver packages that are not installed by using an INF file. If the driver package is installed by using an INF file, use the [**Inf2Cat**](https://msdn.microsoft.com/library/windows/hardware/ff547089) tool to create the catalog file. Inf2Cat automatically includes all the files in the driver package that are referenced within the package's INF file. For more information about how to use the Inf2Cat tool, see [Using Inf2Cat to Create a Catalog File](using-inf2cat-to-create-a-catalog-file.md).
 
- 
+ 
 
 To create a catalog file, you must first manually create a Catalog Definition File (.*.cdf*) that describes the catalog header attributes and file entries. After this file is created, you can then run the [MakeCat](http://go.microsoft.com/fwlink/p/?linkid=104922) tool to create a catalog file
 
@@ -45,7 +41,7 @@ The MakeCat tool does the following when it processes the .*.cdf* file:
 
 Use the following MakeCat command to create a catalog file.
 
-```
+```cpp
 MakeCat -v CatalogDefinitionFileName..cdf
 ```
 
@@ -59,7 +55,7 @@ Where:
 
 The following example shows the contents of a typical catalog definition file that is named Good..cdf. The package to be cataloged contains two files, *File1* and *File2*. The resulting catalog file is named Good.cat.
 
-```
+```cpp
 [CatalogHeader]
 Name=Good.cat
 PublicVersion=0x0000001
@@ -103,7 +99,7 @@ The OSAttr attribute specifies the target Windows version whose signing requirem
 -   The value *6.0* specifies the catalog file is compatible with Windows Vista.
     **Note**  If the [driver package](driver-packages.md) is compatible with multiple Windows versions, you must use separate CATATTR options to specify the OSAttr attribute for each Windows version.
 
-     
+     
 
 <a href="" id="-hash-file1-file1"></a>&lt;hash&gt;File1=File1  
 Specifies a reference tag for the file File1 which is referenced through the catalog file. The value *&lt;hash&gt;File1* results in the tag being the file's cryptographic hash, or *thumbprint*.
@@ -113,13 +109,13 @@ Specifies a reference tag for the file, File2, which is referenced through the c
 
 The following example shows how to generate the [catalog file](catalog-files.md), *Good.cat,* from a corresponding catalog definition file *Good..cdf*. Makecat saves *Good.cat* in the same folder where *File1* and *File2* are located.
 
-```
+```cpp
 MakeCat -v Good.cdf
 ```
 
- 
+ 
 
- 
+ 
 
 
 

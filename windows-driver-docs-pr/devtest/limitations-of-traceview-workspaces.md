@@ -4,11 +4,7 @@ description: Limitations of TraceView Workspaces
 ms.assetid: 9c8cad66-251c-473e-b723-aae744b6737a
 keywords:
 - workspaces WDK TraceView , limitations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +25,9 @@ The TraceView workspaces feature has the following limitations.
 
 -   Workspaces that are created by one version of TraceView might not be supported in other versions of TraceView.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,11 +3,7 @@ title: Using Performance Monitor to Find a User-Mode Memory Leak
 description: Using Performance Monitor to Find a User-Mode Memory Leak
 ms.assetid: 07ba4c55-299c-4558-b4c7-4ffe5c47f496
 keywords: ["memory leak, user-mode, performance monitor"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +26,9 @@ Some memory leaks appear in the data file as an increase in private bytes alloca
 
 After you have determined which process is leaking memory, use the UMDH tool to determine the specific routine that is at fault. For details, see [Using UMDH to Find User-Mode Memory Leaks](using-umdh-to-find-a-user-mode-memory-leak.md).
 
- 
+ 
 
- 
+ 
 
 
 

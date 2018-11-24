@@ -2,11 +2,7 @@
 title: Debugging TAEF Tests
 description: Debugging TAEF Tests
 ms.assetid: 0239547F-EF29-45e0-BACF-ED0F6C07DB99
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -74,9 +70,9 @@ The command above will launch Te.exe under cdb. Taef will break into the debugge
 
 **Note:** It is recommended that you use this feature while running Te.exe under a debugger, and also specifing the /inProc option.
 
- 
+ 
 
- 
+ 
 
 
 

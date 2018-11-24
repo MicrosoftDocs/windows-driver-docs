@@ -10,11 +10,7 @@ api_name:
 - DevCon Reboot
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,8 +21,6 @@ Stops and then starts the operating system. Valid only on the local computer.
 
 ```
     devcon reboot 
-
-   
 ```
 
 ## <span id="ddk_devcon_reboot_tools"></span><span id="DDK_DEVCON_REBOOT_TOOLS"></span>
@@ -48,9 +42,9 @@ devcon reboot
 
 [Example 39: Reboot the local computer](devcon-examples.md#ddk_example_39_reboot_the_local_computer_tools)
 
- 
 
- 
+
+
 
 
 

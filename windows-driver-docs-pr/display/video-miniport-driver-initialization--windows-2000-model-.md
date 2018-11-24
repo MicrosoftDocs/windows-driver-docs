@@ -5,11 +5,7 @@ ms.assetid: b18b5483-f11f-4533-9434-a3a4a30fb4b2
 keywords:
 - video miniport drivers WDK Windows 2000 , initializing
 - initializing video miniport drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,9 +33,9 @@ Video miniport driver initialization occurs after the NT kernel, [*HAL*](https:/
 
 At this point, the system has loaded and initialized the video miniport driver. The next step is for the PnP manager to start the device. See [Starting the Device of the Video Miniport Driver](starting-the-device-of-the-video-miniport-driver.md) for details.
 
- 
+ 
 
- 
+ 
 
 
 

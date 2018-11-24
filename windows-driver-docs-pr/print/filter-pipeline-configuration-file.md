@@ -1,6 +1,5 @@
 ---
 title: Filter Pipeline Configuration File
-author: windows-driver-content
 description: Filter Pipeline Configuration File
 ms.assetid: 586247bd-6d06-4728-a5f0-ee3fe1d09321
 keywords:
@@ -10,11 +9,7 @@ keywords:
 - private keywords WDK XPSDrv
 - filter pipeline property bags WDK XPSDrv
 - property bags WDK filter pipeline
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,7 +26,7 @@ The *filter pipeline configuration file* is an XML file that defines the followi
 
 The following code example shows a typical filter pipeline configuration file:
 
-```XML
+```xml
 <Filters>
     <Filter      dll="XDWMark.dll"
  clsid="{D647D658-BEF6-415f-AFAC-070D64074C5D}"
@@ -78,7 +73,7 @@ Another element, **&lt;OptionalFilterServiceProvider&gt;**, allows the pipeline 
 
 The following code example shows the **DrvPopulateFilterServices** function:
 
-```XML
+```cpp
 HRESULT
 DrvPopulateFilterServices(
     __in IPrintPipelinePropertyBag  *pPropertyBag
@@ -89,7 +84,7 @@ For more information about preceding function, see [**DrvPopulateFilterServices*
 
 The following code example shows the XML syntax for the **&lt;FilterServiceProvider&gt;** element in the filter pipeline configuration file:
 
-```
+```xml
 <Filters>
     <Filter ... />
     <FilterServiceProvider dll = "providerA.dll"/>
@@ -103,7 +98,7 @@ The following code example shows the XML syntax for the **&lt;FilterServiceProvi
 
 The following example filter is an excerpt from the preceding example filter configuration file that has been modified to show how to use the interleaving option. Although this example shows both interleaving options for the purpose of illustration, a real filter configuration file has only one **&lt;Interleaving&gt;** element in the filter definition:
 
-```XML
+```xml
     <Filter     dll="XDNUp.dll"
       clsid="{1b5bee16-511c-440f-8017-2123f481091a}"
         name="NUp filter">
@@ -126,14 +121,9 @@ This feature allows print drivers to explicitly request archive-optimized XPS ou
 
 The following code example shows the XML syntax for using the &lt;Archive&gt; element in the filter pipeline configuration file to enable this feature:
 
-```XML
+```xml
 <Filters>
     ...
     <Archive enabled="true"/>
 </Filters>
 ```
-
-
-
-
-

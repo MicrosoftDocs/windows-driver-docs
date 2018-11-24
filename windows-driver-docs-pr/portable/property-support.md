@@ -1,11 +1,7 @@
 ---
 Description: Property Support
 title: Property Support
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ When a Windows application calls one of the five methods in the **IPortableDevic
 | **IPortableDeviceProperties::GetValues**              | **OnGetPropertyValues or OnGetAllPropertyValues** |
 | **IPortableDeviceProperties::SetValues**              | **OnSetPropertyValues**                           |
 
- 
+ 
 
 The WpdObjectProperties command handlers are invoked by the **WpdObjectProperty::DispatchWpdMessage** method. The following excerpt from the sample driver contains the code for **WpdObjectProperty::DispatchWpdMessage:**
 
@@ -103,9 +99,9 @@ HRESULT WpdObjectProperties::DispatchWpdMessage(
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

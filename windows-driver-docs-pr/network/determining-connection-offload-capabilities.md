@@ -4,11 +4,7 @@ description: Determining Connection Offload Capabilities
 ms.assetid: 9a7c40dd-7151-462f-b30b-0444a4177ff9
 keywords:
 - connection offload WDK TCP/IP transport , capabilities
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +22,9 @@ Administrative applications use object identifier (OID) queries to obtain TCP/IP
 
 Administrative applications (or overlying drivers) can determine the current connection offload configuration of a NIC by querying the [OID\_TCP\_CONNECTION\_OFFLOAD\_CURRENT\_CONFIG](https://msdn.microsoft.com/library/windows/hardware/ff569802) OID. The [**NDIS\_TCP\_CONNECTION\_OFFLOAD**](https://msdn.microsoft.com/library/windows/hardware/ff567875) structure that is associated with OID\_TCP\_CONNECTION\_OFFLOAD\_CURRENT\_CONFIG specifies the miniport adapter's current connection-offload configuration.
 
- 
+ 
 
- 
+ 
 
 
 

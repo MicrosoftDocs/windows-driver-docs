@@ -5,11 +5,7 @@ ms.assetid: 76abeac8-ca6e-40b1-a46e-83ae90d9192e
 keywords:
 - header-data split WDK , receive indications
 - received data formats WDK header-data split
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +29,9 @@ This section includes:
 
 [Setting NET\_BUFFER\_LIST Information](setting-net-buffer-list-information.md)
 
- 
+ 
 
- 
+ 
 
 
 

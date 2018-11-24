@@ -1,13 +1,8 @@
 ---
 title: Connecting and Disconnecting a WIA Application
-author: windows-driver-content
 description: Connecting and Disconnecting a WIA Application
 ms.assetid: 3360b707-2167-4c51-af86-4edece3b557f
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,9 +20,9 @@ This section contains the following topics
 
 [How the WIA Minidriver Receives a Disconnect Event from the WIA Service](how-the-wia-minidriver-receives-a-disconnect-event-from-the-wia-servic.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -9,11 +9,7 @@ api_name:
 - wscn Resolution wscn MustHonor ""
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The optional **Resolution** element specifies the resolution of the scanned imag
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:Resolution wscn:MustHonor=""
   MustHonor = "xs:string">
   child elements
@@ -75,10 +71,10 @@ Attributes
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>Height</strong>](height.md)</p></td>
+<td><p><a href="height.md" data-raw-source="[&lt;strong&gt;Height&lt;/strong&gt;](height.md)"><strong>Height</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>Width</strong>](width.md)</p></td>
+<td><p><a href="width.md" data-raw-source="[&lt;strong&gt;Width&lt;/strong&gt;](width.md)"><strong>Width</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -97,10 +93,10 @@ Attributes
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>MediaBack</strong>](mediaback.md)</p></td>
+<td><p><a href="mediaback.md" data-raw-source="[&lt;strong&gt;MediaBack&lt;/strong&gt;](mediaback.md)"><strong>MediaBack</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>MediaFront</strong>](mediafront.md)</p></td>
+<td><p><a href="mediafront.md" data-raw-source="[&lt;strong&gt;MediaFront&lt;/strong&gt;](mediafront.md)"><strong>MediaFront</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -114,7 +110,7 @@ The **Resolution** element contains a single [**Width**](width.md) x [**Height**
 
 The client can specify the optional **MustHonor** attribute only when the **Resolution** element is contained within a **CreateScanJobRequest** hierarchy. For more information about **MustHonor** and its usage, see [**CreateScanJobRequest**](createscanjobrequest.md).
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**CreateScanJobRequest**](createscanjobrequest.md)
@@ -127,9 +123,9 @@ The client can specify the optional **MustHonor** attribute only when the **Reso
 
 [**Width**](width.md)
 
- 
+ 
 
- 
+ 
 
 
 

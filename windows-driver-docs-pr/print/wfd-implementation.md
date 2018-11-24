@@ -1,13 +1,8 @@
 ---
 title: Wi-Fi Direct Printing implementation
-author: windows-driver-content
 description: Provides information on device requirements for a Wi-Fi Direct Printing implementation.
 ms.assetid: 03266F8F-4C91-49E7-9CAF-2D08AF5E3E18
-ms.author: windowsdriverdev
 ms.date: 01/30/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,7 +17,7 @@ For a WFD-WSD device to get the seamless connectivity experience as described in
 -   The device must support Vertical pairing and send the relevant DPWS (WSD) data in the WPS messages (formats described in "Implementing Vertical Pairing Data Blob" below)
 -   All logical devices in the physical device MUST use the same PnP-X Container ID in its PnP-X extension
     -   For details on implementing PnP-X Container IDs for Network Connected Devices, see [Overview of Container IDs](https://docs.microsoft.com/windows-hardware/drivers/install/overview-of-container-ids).
-    -   For general information on PnP-X extensions, see the [PnP-X: Plug and Play Extensions for Windows Specification](http://msdn.microsoft.com/windows/hardware/gg463082).
+    -   For general information on PnP-X extensions, see the [PnP-X: Plug and Play Extensions for Windows Specification](https://msdn.microsoft.com/windows/hardware/gg463082).
 
 Since the WFD Container ID will match the UUID of the printer, PnP-X Container ID will not be required in the device metadata. However, it is still recommended that the device supports PnP-X metadata in the device metadata and advertise a PnP-X Container ID as part of the PnP-X metadata in the device metadata. This Container ID should match the WFD Container ID.
 
@@ -94,7 +89,7 @@ Definitions:
 </tbody>
 </table>
 
- 
+ 
 
 ## Implementing Vertical Pairing Data Blob
 
@@ -152,7 +147,7 @@ Two specific TLV types are defined for Rally Vertical Pairing. These TLV types a
 </tbody>
 </table>
 
- 
+ 
 
 *Rally Vertical Pairing TLVs*
 **VERTICAL PAIRING IDENTIFIER TLV**
@@ -204,17 +199,17 @@ The Transport field specifies the transport that Windows can use to communicate 
 </tbody>
 </table>
 
- 
+ 
 
 *VPI Transport Field Values*
 
 **Note**  Windows 7 provides support for DPWS (0x01) or Secure DPWS (0x03), but not both.
 
- 
+ 
 
 **Note**  If a device does not implement Rally Vertical Pairing, it must specify only one VPI with a Transport value of 0x00 (None). In this situation, the device should not specify a Transport UUID TLV. This notifies Windows that it should not expect to pair with the device. Therefore, Windows does not try to pre-pair with the device while it configures the device's Wi-Fi settings.
 
- 
+ 
 
 **VPI PROFILE REQUEST FIELD**
 
@@ -243,13 +238,13 @@ The VPI lets a device use the WPS protocol to provision the device's services. I
 </tbody>
 </table>
 
- 
+ 
 
 *VPI Profile Request Field Values*
 
 **Note**  The VPI Profile Request field value of 0x00 is considered reserved because it is not currently supported by Windows 7. The VPI Profile Request field should only be set to a value of 0x01 (Wi-Fi profile requested), even if a value of 0x00 (none) is specified for the transport.
 
- 
+ 
 
 **TRANSPORT UUID TLV**
 
@@ -259,11 +254,11 @@ If a Transport UUID TLV is included, it must immediately follow the VPI TLV that
 
 **Note**  The Transport UUID TLV data value must be in network byte order.
 
- 
+ 
 
 **Note**  If the device specifies a VPI Transport value of 0x00 (none), do not include a Transport UUID TLV.
 
- 
+ 
 
 ## WPS Example
 
@@ -293,17 +288,17 @@ For this example, assume that a printer device uses DPWS and implements the WS P
 </tbody>
 </table>
 
- 
+ 
 
 *WPS Example—Service UUID Values*
 
 **Note**  UUID values are specified in all lowercase, and the DPWS identity string uses the format urn:uuid:uuid\_value.
 
- 
+ 
 
 **Note**  The UUID values in this example are fictitious and must not be used in a real device.
 
- 
+ 
 
 When the device sends out its WPS M7/M8 messages, it includes the Microsoft vendor extension that is shown in the following image:
 
@@ -321,9 +316,9 @@ When a customer vertically pairs the printer, Windows first configures the devic
 
 After the device connects to the Wi-Fi network and announces its DPWS services, Windows creates the appropriate PnP device nodes and installs and loads the appropriate drivers.
 
- 
+ 
 
- 
+ 
 
 
 

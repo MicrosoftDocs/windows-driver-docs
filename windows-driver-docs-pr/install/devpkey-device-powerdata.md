@@ -12,6 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # DEVPKEY_Device_PowerData
@@ -31,7 +32,7 @@ The DEVPKEY_Device_PowerData device property represents power information about 
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Property-data-type identifier</strong></p></td>
-<td align="left"><p>[<strong>DEVPROP_TYPE_BINARY</strong>](devprop-type-binary.md)</p></td>
+<td align="left"><p><a href="devprop-type-binary.md" data-raw-source="[&lt;strong&gt;DEVPROP_TYPE_BINARY&lt;/strong&gt;](devprop-type-binary.md)"><strong>DEVPROP_TYPE_BINARY</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Property access</strong></p></td>
@@ -48,7 +49,7 @@ The DEVPKEY_Device_PowerData device property represents power information about 
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -86,9 +87,9 @@ Requirements
 
 [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963)
 
- 
+ 
 
- 
+ 
 
 
 

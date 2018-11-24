@@ -1,15 +1,10 @@
 ---
 title: Installing printers that support Web Services for Devices
-author: windows-driver-content
 description: Installing printers that support Web Services for Devices
 ms.assetid: fb5f043b-bae5-4cb6-95c0-e4e6b9e9d187
 keywords:
 - Web Services Device Monitor WDK printer
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,9 +19,9 @@ For an example of device enumeration and pairing that uses **Windows.Devices.Enu
 
 For more information, see the [Enumerate devices over a network](https://msdn.microsoft.com/windows/uwp/devices-sensors/enumerate-devices-over-a-network) article in the Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

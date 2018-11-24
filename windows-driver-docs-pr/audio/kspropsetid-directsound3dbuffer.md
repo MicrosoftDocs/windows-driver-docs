@@ -3,11 +3,7 @@ title: KSPROPSETID\_DirectSound3DBuffer
 description: KSPROPSETID\_DirectSound3DBuffer
 ms.assetid: 38ee775a-9b6c-4803-a024-fecc852d122d
 keywords: ["KSPROPSETID_DirectSound3DBuffer"]
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -41,9 +37,9 @@ The `KSPROPSETID_DirectSound3DBuffer` property set contains the following proper
 
 [**KSPROPERTY\_DIRECTSOUND3DBUFFER\_VELOCITY**](ksproperty-directsound3dbuffer-velocity.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,11 +3,7 @@ title: Debugging a Failed Driver Unload
 description: Debugging a Failed Driver Unload
 ms.assetid: df4b6082-8236-4a7f-80f4-6c33dc8e887a
 keywords: ["failed driver unload", "driver unload debugging", "unload failures"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,7 +25,7 @@ Here is an example of how to debug this problem. Although **DeviceObject** is us
 
 2.  Find the object header by using the [**!object**](-object.md) extension on this object address:
 
-    ```
+    ```dbgcmd
     kd> !object 81a578c0 
     Object: 81a578c0  Type: (81bd0e70) Device
         ObjectHeader: 81a578a8
@@ -41,7 +37,7 @@ Here is an example of how to debug this problem. Although **DeviceObject** is us
 
 3.  Put a write breakpoint on the pointer count, using the **ObjectHeader**'s address:
 
-    ```
+    ```dbgcmd
     kd> ba w4 81a578a8 "k;g" 
     ```
 
@@ -49,9 +45,9 @@ Here is an example of how to debug this problem. Although **DeviceObject** is us
 
 5.  Look for the mismatched reference/dereference pair -- specifically, a missing dereference. (Note that **ObReferenceObject** is implemented as a macro inside the kernel.)
 
- 
+ 
 
- 
+ 
 
 
 

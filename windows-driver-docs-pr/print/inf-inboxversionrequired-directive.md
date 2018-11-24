@@ -1,13 +1,8 @@
 ---
 title: INF InboxVersionRequired Directive
-author: windows-driver-content
 description: INF InboxVersionRequired Directive
 ms.assetid: 75a07ca7-d279-4815-b644-10b58753f885
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -18,7 +13,7 @@ For package-aware drivers, you can use the **InboxVersionRequired** INF directiv
 
 The following example package-aware-driver section shows how you insert the **InboxVersionRequired** INF directive:
 
-```
+```cpp
 [PrinterPackageInstallation.amd64]
 PackageAware=TRUE
 CoreDriverDependencies={D20EA372-DD35-4950-9ED8-A6335AFE79F0},{D20EA372-DD35-4950-9ED8-A6335AFE79F3}
@@ -31,13 +26,13 @@ You can also specify specific version strings as the value for **InboxVersionReq
 
 The following example shows how you set **InboxVersionRequired** to a specific version string:
 
-```
+```cpp
 InboxVersionRequired=09/28/1999,5.00.2136.1
 ```
 
- 
+ 
 
- 
+ 
 
 
 

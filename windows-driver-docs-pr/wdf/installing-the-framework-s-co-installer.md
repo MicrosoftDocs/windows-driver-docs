@@ -1,6 +1,5 @@
 ---
 title: Specifying the KMDF Co-installer in an INF File
-author: windows-driver-content
 description: If you include a co-installer in your driver package, read this topic for information about sections you must provide in your driver's INF file.
 ms.assetid: e4f476ad-1ab5-44e3-9368-7467479bda85
 keywords:
@@ -11,11 +10,7 @@ keywords:
 - CoInstallers section WDK KMDF
 - DDInstall section WDK KMDF
 - Wdf INF file section WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,13 +22,13 @@ If you include a co-installer in your [driver package](https://msdn.microsoft.co
 ##  INF File Sections for the Co-installer
 
 
-Your driver's INF file must contain an INF *DDInstall***.CoInstallers** section that installs the co-installer. For example this section might be named **MyDevice.ntx86.CoInstallers**. For more information about specifying a co-installer in an INF file, see [**INF DDInstall.CoInstallers Section**](https://msdn.microsoft.com/library/windows/hardware/ff547321).
+Your driver's INF file must contain an INF <em>DDInstall</em>**.CoInstallers** section that installs the co-installer. For example this section might be named **MyDevice.ntx86.CoInstallers**. For more information about specifying a co-installer in an INF file, see [**INF DDInstall.CoInstallers Section**](https://msdn.microsoft.com/library/windows/hardware/ff547321).
 
-In addition, your driver's INF file must contain an INF *DDInstall***.Wdf** section that the co-installer reads after it has been installed. For example, this section might be named **MyDevice.ntx86.Wdf**. After the framework's co-installer has been installed, it reads this section while it is installing your driver.
+In addition, your driver's INF file must contain an INF <em>DDInstall</em>**.Wdf** section that the co-installer reads after it has been installed. For example, this section might be named **MyDevice.ntx86.Wdf**. After the framework's co-installer has been installed, it reads this section while it is installing your driver.
 
-The INF *DDInstall***.Wdf** section contains the following directive:
+The INF <em>DDInstall</em>**.Wdf** section contains the following directive:
 
--   **KmdfService =** *DriverService***,***Wdf-install-section*
+- **KmdfService =** <em>DriverService</em>**,**<em>Wdf-install-section</em>
 
 *DriverService* represents the name that the operating system will assign to your driver's kernel-mode service, and *Wdf-install-section* represents the name of an INF section that the co-installer reads to obtain information about your driver.
 
@@ -43,9 +38,9 @@ The INF section that *Wdf-install-section* identifies must contain the following
 
 *WdfLibraryVersion* represents a library version number, such as "1.0" or "1.11".
 
-For example, the following INF *DDInstall***.Wdf** section specifies **Echo\_wdfsect** as the *Wdf-install-section* name.
+For example, the following INF <em>DDInstall</em>**.Wdf** section specifies **Echo\_wdfsect** as the *Wdf-install-section* name.
 
-```
+```cpp
 [ECHO_Device.NT.Wdf]
 KmdfService = Echo, Echo_wdfsect
 [Echo_wdfsect]
@@ -56,7 +51,7 @@ You can avoid creating multiple INF files for multiple versions of the framework
 
 ### <a href="" id="sample-inf-ddinstall-coinstallers-and-ddinstall-wdf-sections"></a>**Sample INF** ***DDInstall*.CoInstallers and** ***DDInstall*.Wdf Sections**
 
-The following code example shows how to create the INF *DDInstall***.CoInstallers** section and INF *DDInstall***.Wdf** section of an INF file for a PnP driver. The example shows how to create an INF file that is called *MyDevice.inf* and is based on the [ECHO](http://go.microsoft.com/fwlink/p/?linkid=256129) sample driver's *Echo.inf* file. The Echo sample driver is located in the samples directory of the WDK.
+The following code example shows how to create the INF <em>DDInstall</em>**.CoInstallers** section and INF <em>DDInstall</em>**.Wdf** section of an INF file for a PnP driver. The example shows how to create an INF file that is called *MyDevice.inf* and is based on the [ECHO](http://go.microsoft.com/fwlink/p/?linkid=256129) sample driver's *Echo.inf* file. The Echo sample driver is located in the samples directory of the WDK.
 
 To create *MyDevice.inf*, you must change all **ECHO\_Device** substrings in *Echo.inf* to a name that is appropriate for your product. The following code example uses **MyDevice**.
 
@@ -64,7 +59,7 @@ You should attempt to match the section layout that the *Echo.inf* sample uses. 
 
 Before you have modified *echo.inf*, the sections that install the co-installer are as follows:
 
-```
+```cpp
 =============== Top of Echo.inf ====================
 ....
 ....
@@ -96,7 +91,7 @@ KmdfLibraryVersion = 1.0
 
 After you have changed all **ECHO\_Device** substrings, your *MyDevice.inf* file should appear as follows:
 
-```
+```cpp
 =============== Top of MyDevice.inf ===============
 ....
 ....
@@ -127,9 +122,9 @@ KmdfLibraryVersion = 1.0
 =============== End of MyDevice.inf ===============
 ```
 
- 
+ 
 
- 
+ 
 
 
 

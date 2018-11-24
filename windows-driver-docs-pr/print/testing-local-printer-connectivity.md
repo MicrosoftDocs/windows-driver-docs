@@ -1,6 +1,5 @@
 ---
 title: Testing Local Printer Connectivity
-author: windows-driver-content
 description: Testing Local Printer Connectivity
 ms.assetid: 08a16c04-fc64-4e19-b7f2-7a078bc151a2
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - printer drivers WDK , testing
 - local printer testing WDK
 - connections WDK printer
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,7 +18,7 @@ This section provides general guidelines for how to test the connectivity of a p
 
 **Note**   The following information describes testing on Microsoft Windows XP. Features of other operating system versions, such as control panel applications and menu options, might differ slightly.
 
- 
+ 
 
 ### Setting Up Device Testing
 
@@ -47,9 +42,9 @@ The following sections describe the common test scenarios to address when testin
 
 -   [Stress Testing](stress-testing.md)
 
- 
+ 
 
- 
+ 
 
 
 

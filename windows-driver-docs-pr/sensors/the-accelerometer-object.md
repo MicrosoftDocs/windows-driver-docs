@@ -1,13 +1,8 @@
 ---
 title: Accelerometer object
-author: windows-driver-content
 description: The sample driver treats the accelerometer as an object that’s represented by the CAccelerometerDevice class.
 ms.assetid: D8E227E1-FFB5-4F4B-A981-6BD05C8FFAF2
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,7 +14,7 @@ ms.localizationpriority: medium
 | AccelerometerDevice.cpp | CAccelerometerDevice |
 | SensorDdi.cpp           | CSensorDdi           |
 
- 
+ 
 
 The sample driver treats the accelerometer as an object that’s represented by the CAccelerometerDevice class. This object is declared in the header file AccelerometerDevice.h; and, is defined in AccelerometerDevice.cpp. If you were to extend this driver to support another sensor, in addition to the ADXL345, you'll create a similarly named header and source file that corresponded to your new device (for example, CompassDevice.h and CompassDevice.cpp). If your driver supported a single sensor, replace the existing header and source files.
 
@@ -44,7 +39,7 @@ The accelerometer object supports the methods that:
 |-------------------------|----------------------|
 | AccelerometerDevice.cpp | CAccelerometerDevice |
 
- 
+ 
 
 The object supports these methods:
 
@@ -54,7 +49,7 @@ The object supports these methods:
 | **CAccelerometerDevice::ConfigureHardware** | Allocates the read and write buffers and sets the read and writer registers.                                                                                                                                                                                                          |
 | **CAccelerometerDevice::ConnectInterrupt**  | Sreates a WUDF device interrupt. It does this by configuring a WUDF\_INTERRUPT\_CONFIG data structure and then invoking the **IWDFDevice3::CreateInterrupt** method.                                                                                                                  |
 
- 
+ 
 
 For the complete sequence of initialization methods, refer to the [Driver initialization](driver-initialization.md) section in this guide.
 
@@ -64,7 +59,7 @@ For the complete sequence of initialization methods, refer to the [Driver initia
 |-------------------------|----------------------|
 | AccelerometerDevice.cpp | CAccelerometerDevice |
 
- 
+ 
 
 The accelerometer object supports both a read- and a write-operation. These operations let the driver get the current value of a given register, or, to write a new value to a register. The **CAccelerometerDevice::ReadRegister** corresponds to the read operation and the **CAccelerometerDevice::WriteRegister** corresponds to the write operation. These operations are invoked:
 
@@ -87,7 +82,7 @@ The accelerometer object supports user-mode interrupts with the **CAccelerometer
 | 0x36     | Low-order byte of the Z-axis reading  |
 | 0x37     | High-order byte of the Z-axis reading |
 
- 
+ 
 
 The code in the **CAccelerometerDevice::RequestData** method packages the register contents for each axis into a variable of type SHORT (xRaw, yRaw, and zRaw) and then applies a scale factor of .00390625. (The scale factor is a result of dividing the range of acceleration values, 32 in this case (because +/- 16G is supported), by the number that can be represented in 13 bits (2^13)--which is the selected resolution.
 
@@ -124,7 +119,7 @@ Note that the supported acceleration range (+/- 16G) and the resolution were set
 |-------------------------|----------------------|
 | AccelerometerDevice.cpp | CAccelerometerDevice |
 
- 
+ 
 
 The sensor platform supports report intervals and lets applications set them to values within a defined range. The minimum and default report intervals for the sample driver are defined in the file Adxl345.h.
 
@@ -137,7 +132,7 @@ The sample driver limits the minimum report interval to 10 milliseconds and the 
 
 A sensor driver uses the report interval to determine when to raise event notifications. If the change-sensitivity has not been exceeded, the driver waits for the current interval and then raises a data event to give connected apps the current data reading. (If the change sensitivity has been exceeded, this overrides the report interval and the driver will immediately raise a data event.)
 
-A Windows store app can set the interval for an accelerometer by invoking the **Accelerometer.ReportInterval** property. When an app invokes this property, the driver's **CAccelerometerDevice::SetReportInterval** method is called to pass the requested interval to the device's firmware.
+A Windows app can set the interval for an accelerometer by invoking the **Accelerometer.ReportInterval** property. When an app invokes this property, the driver's **CAccelerometerDevice::SetReportInterval** method is called to pass the requested interval to the device's firmware.
 
 Setting the report interval translates into three consecutive write operations to the ADXL registers. The first write operation disables interrupts while we modify the data rate on the device:
 
@@ -164,7 +159,7 @@ hr = WriteRegister(ADXL345_INT_ENABLE, pWriteBuffer, 1);
 |-------------------------|----------------------|
 | AccelerometerDevice.cpp | CAccelerometerDevice |
 
- 
+ 
 
 The sample device supports three device modes:
 
@@ -178,7 +173,7 @@ Three methods in the source file correspond to each of the three modes: **SetDev
 
 ## Measurement mode without eventing
 
-When measurement mode without eventing is set, Windows store apps get the most recent sensor reading by invoking **Accelerometer.GetCurrentReading**.
+When measurement mode without eventing is set, Windows apps get the most recent sensor reading by invoking **Accelerometer.GetCurrentReading**.
 
 The driver sets this mode during initialization and, when returning from standby mode. It uses two write operations. The first operation disables interrupts:
 
@@ -196,7 +191,7 @@ hr = WriteRegister(ADXL345_POWER_CTL, pBuffer, 1);
 
 ## Measurement mode with eventing
 
-When measurement mode with eventing is set, Windows store apps can receive data updates from the driver by registering an event handler for the **Accelerometer.ReadingChanged** event.
+When measurement mode with eventing is set, Windows apps can receive data updates from the driver by registering an event handler for the **Accelerometer.ReadingChanged** event.
 
 The driver sets this mode during initialization (and, when it’s returning from standby mode). The driver sets this mode with two write operations. The first operation ensures that the device is placed in measurement mode:
 
@@ -234,9 +229,9 @@ pBuffer[0] = ADXL345_POWER_CTL_STANDBY;
 hr = WriteRegister(ADXL345_POWER_CTL, pBuffer, 1);
 ```
 
- 
+ 
 
- 
+ 
 
 
 

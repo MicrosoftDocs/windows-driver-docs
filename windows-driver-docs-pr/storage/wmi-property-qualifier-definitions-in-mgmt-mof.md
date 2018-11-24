@@ -3,6 +3,7 @@ title: WMI Property Qualifier Definitions in Mgmt.mof
 description: WMI Property Qualifier Definitions in Mgmt.mof
 ms.assetid: 2d8e7e83-6304-459f-b9d8-b40365834bb7
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # WMI Property Qualifier Definitions in Mgmt.mof
@@ -37,9 +38,9 @@ Thus, a WMI property qualifier resembles an enumeration because the qualifier re
 
 For a general discussion of WMI property qualifiers, see [WMI Property Qualifiers](https://msdn.microsoft.com/library/windows/hardware/ff566365).
 
- 
+ 
 
- 
+ 
 
 
 

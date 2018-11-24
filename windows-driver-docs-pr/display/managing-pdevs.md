@@ -8,11 +8,7 @@ keywords:
 - DirectDraw WDK Windows 2000 display , PDEV
 - disabled PDEV WDK DirectDraw
 - enabled PDEV WDK DirectDraw
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -64,9 +60,9 @@ Only the following limited number of driver functions can be called with a disab
 
 -   [**DrvResetPDEV**](https://msdn.microsoft.com/library/windows/hardware/ff556276)
 
- 
+ 
 
- 
+ 
 
 
 

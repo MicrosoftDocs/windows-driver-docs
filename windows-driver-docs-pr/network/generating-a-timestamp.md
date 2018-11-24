@@ -5,11 +5,7 @@ ms.assetid: 68da434c-5081-4390-ac90-c1b112a2ff79
 keywords:
 - timestamps WDK TCP chimney offload , generating
 - TCP timestamps WDK TCP chimney offload , generating
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,9 +28,9 @@ The offload target supplies this sum (*NicTime*+*NicDelta*) as the timestamp in 
 
 The host stack generates a timestamp in a similar way: it adds its delta to its current time and supplies this sum as the timestamp in a TCP segment to be transmitted.
 
- 
+ 
 
- 
+ 
 
 
 

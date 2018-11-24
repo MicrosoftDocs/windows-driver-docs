@@ -4,11 +4,7 @@ description: Generic Form of Macroblock Control Command Structures
 ms.assetid: 44009238-0a8e-4018-9b50-06729640f5e4
 keywords:
 - macroblocks WDK DirectX VA , generic command structure
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,11 +30,11 @@ This section describes the members of a generic macroblock control command struc
 
 **Note**   Macroblock control commands are aligned with 16-byte memory boundaries and constructed as packed data structures with single-byte alignment packing.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

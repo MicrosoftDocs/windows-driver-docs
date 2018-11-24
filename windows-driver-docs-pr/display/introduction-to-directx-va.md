@@ -6,11 +6,7 @@ keywords:
 - DirectX Video Acceleration WDK Windows 2000 display , about DirectX Video Acceleration
 - Video Acceleration WDK DirectX , about DirectX Video Acceleration
 - VA WDK DirectX , about DirectX Video Acceleration
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -48,9 +44,9 @@ The [Implementation of Current Standards](implementation-of-current-standards.md
 
 There are no tools supplied with DirectX VA. For more information about tools supplied for Windows media support, see the Windows Media Porting Kit.
 
- 
+ 
 
- 
+ 
 
 
 

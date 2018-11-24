@@ -1,11 +1,7 @@
 ---
 Description: Access Control
 title: Access Control
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -65,9 +61,9 @@ Because every driver has to perform payload verification, WPD supplies easy to u
 
 [**WPD Drivers Overview**](wpd-drivers-overview.md)
 
- 
+ 
 
- 
+ 
 
 
 

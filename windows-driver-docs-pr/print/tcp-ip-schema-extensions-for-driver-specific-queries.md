@@ -1,17 +1,12 @@
 ---
 title: TCP/IP Schema Extensions for Driver-Specific Queries
-author: windows-driver-content
 description: TCP/IP Schema Extensions for Driver-Specific Queries
 ms.assetid: c6f85f99-852a-418f-98da-41fe4c36e9ba
 keywords:
 - TCP/IP schema extensions WDK printer
 - schema extensions WDK TCP/IP
 - driver-specific queries WDK printer
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +25,9 @@ For queries concerning typical printer properties, you must create queries that 
 
 [Value](value.md)
 
- 
+ 
 
- 
+ 
 
 
 

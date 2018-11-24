@@ -11,11 +11,7 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -50,13 +46,13 @@ In Windows Vista and later, this property can be supported on any bridge pin tha
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Pin factory (via Filter handle)</p></td>
-<td align="left"><p>[<strong>KSP_PIN</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566722)</p></td>
-<td align="left"><p>[<strong>KSMULTIPLE_ITEM</strong>](http://msdn.microsoft.com/library/windows/hardware/ff563441.aspx) followed by an array of [<strong>KSJACK_DESCRIPTION</strong>](ksjack-description.md) structures</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566722" data-raw-source="[&lt;strong&gt;KSP_PIN&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566722)"><strong>KSP_PIN</strong></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff563441.aspx" data-raw-source="[&lt;strong&gt;KSMULTIPLE_ITEM&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff563441.aspx)"><strong>KSMULTIPLE_ITEM</strong></a> followed by an array of <a href="ksjack-description.md" data-raw-source="[&lt;strong&gt;KSJACK_DESCRIPTION&lt;/strong&gt;](ksjack-description.md)"><strong>KSJACK_DESCRIPTION</strong></a> structures</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (instance data) is a KSMULTIPLE\_ITEM, followed by an array of KSJACK\_DESCRIPTION structures.
 
@@ -112,13 +108,13 @@ Requirements
 
 [**KSJACK\_DESCRIPTION**](ksjack-description.md)
 
-[KSMULTIPLE\_ITEM](http://msdn.microsoft.com/library/windows/hardware/ff563441.aspx)
+[KSMULTIPLE\_ITEM](https://msdn.microsoft.com/library/windows/hardware/ff563441.aspx)
 
-[KSPROPERTY](http://msdn.microsoft.com/library/windows/hardware/ff564262.aspx)
+[KSPROPERTY](https://msdn.microsoft.com/library/windows/hardware/ff564262.aspx)
 
- 
+ 
 
- 
+ 
 
 
 

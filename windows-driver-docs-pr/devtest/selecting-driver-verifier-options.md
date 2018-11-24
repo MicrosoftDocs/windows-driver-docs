@@ -4,11 +4,7 @@ description: Selecting Driver Verifier Options
 ms.assetid: 02ef5dd6-7532-4979-b45c-a9ee81582788
 keywords:
 - Driver Verifier WDK , option selections
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -64,9 +60,9 @@ Beginning in Windows Vista, you can activate and deactivate all options without 
 
 On systems prior to Windows Vista, you can activate and deactivate certain options without rebooting, but only after you have enabled Driver Verifier on at least one driver then rebooted the computer. For details, see [Using Volatile Settings](using-volatile-settings.md).
 
- 
+ 
 
- 
+ 
 
 
 

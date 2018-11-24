@@ -1,11 +1,7 @@
 ---
 Description: The WpdWudfSampleDriver Sample
 title: The WpdWudfSampleDriver Sample
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,9 +21,9 @@ Some of the tasks that are accomplished by the WpdWudfSampleDriver are written f
 
 [The WPD Driver Samples](the-wpd-driver-samples.md)
 
- 
+ 
 
- 
+ 
 
 
 

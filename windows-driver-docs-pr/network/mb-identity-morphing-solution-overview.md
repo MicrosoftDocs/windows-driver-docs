@@ -2,11 +2,7 @@
 title: MB identity morphing solution overview
 description: The solution maps the morphing device’s USB configuration to a set of USB functions.
 ms.assetid: 4A3EDD12-00CC-48A0-BCD9-8F64E90FA9F6
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -53,7 +49,7 @@ The functions present in the device are grouped into the following logical sets.
 </tbody>
 </table>
 
- 
+ 
 
 The following table shows the USB configurations listed in the previous table along with possible interfaces and functions. Additional requirements for each configuration are described in the remaining subtopics.
 
@@ -105,7 +101,7 @@ The following table shows the USB configurations listed in the previous table al
 </tbody>
 </table>
 
- 
+ 
 
 Goals of the solution
 
@@ -185,9 +181,9 @@ In Windows 7, the user can install the driver package from the mass storage fun
 
 Driver stack and device configuration in Windows 7 after user installs IHV driver package
 
- 
+ 
 
- 
+ 
 
 
 

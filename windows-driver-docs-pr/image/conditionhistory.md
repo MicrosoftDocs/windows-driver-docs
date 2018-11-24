@@ -9,11 +9,7 @@ api_name:
 - wscn ConditionHistory
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The optional **ConditionHistory** element is a collection of [**ConditionHistory
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ConditionHistory>
   child elements
 </wscn:ConditionHistory>
@@ -50,7 +46,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ConditionHistoryEntry</strong>](conditionhistoryentry.md)</p></td>
+<td><p><a href="conditionhistoryentry.md" data-raw-source="[&lt;strong&gt;ConditionHistoryEntry&lt;/strong&gt;](conditionhistoryentry.md)"><strong>ConditionHistoryEntry</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -71,7 +67,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ScannerStatus</strong>](scannerstatus.md)</p></td>
+<td><p><a href="scannerstatus.md" data-raw-source="[&lt;strong&gt;ScannerStatus&lt;/strong&gt;](scannerstatus.md)"><strong>ScannerStatus</strong></a></p></td>
 <td><p></p>
 <p>ScannerStatus</p></td>
 </tr>
@@ -85,7 +81,7 @@ A client can query the scanner's **ConditionHistory** element by calling the [**
 
 The conditions vary in severity from informational to critical.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ConditionHistoryEntry**](conditionhistoryentry.md)
@@ -94,9 +90,9 @@ The conditions vary in severity from informational to critical.
 
 [**ScannerStatus**](scannerstatus.md)
 
- 
+ 
 
- 
+ 
 
 
 

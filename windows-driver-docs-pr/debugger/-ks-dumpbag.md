@@ -3,11 +3,7 @@ title: ks.dumpbag
 description: The ks.dumpbag extension displays the contents of the object bag for the specified object.
 ms.assetid: a97b4794-b5dc-45a8-b1e9-5a626959020e
 keywords: ["ks.dumpbag Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!ks.dumpbag** extension displays the contents of the object bag for the specified object.
 
-```
+```dbgcmd
 !ks.dumpbag Object [Level]  
 ```
 
@@ -54,7 +50,7 @@ Optional. Specifies the level of detail to display on a 0-7 scale with progressi
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -65,7 +61,7 @@ Remarks
 
 Here is an example of the **!ks.dumpbag** display for a filter:
 
-```
+```dbgcmd
 kd> !dumpbag 829493c4
 Filter 829493c4 [CKsFilter = 82949350]:
     Object Bag 829493d0:
@@ -74,9 +70,9 @@ Filter 829493c4 [CKsFilter = 82949350]:
             Item Cleanup Handler   : f7a21730
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -11,11 +11,7 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -75,7 +71,7 @@ The following table describes the constants that are valid with Windows 8 only.
 </tbody>
 </table>
 
- 
+ 
 
 The following table describes the constants that are valid with Windows 7 only.
 
@@ -93,12 +89,12 @@ The following table describes the constants that are valid with Windows 7 only.
 <tbody>
 <tr class="odd">
 <td><p>AUTO_SOURCE</p></td>
-<td><p>The device supports [auto-configured scanning](https://msdn.microsoft.com/library/windows/hardware/ff539393).</p></td>
+<td><p>The device supports <a href="https://msdn.microsoft.com/library/windows/hardware/ff539393" data-raw-source="[auto-configured scanning](https://msdn.microsoft.com/library/windows/hardware/ff539393)">auto-configured scanning</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The following table describes the constants that are valid with Windows 7 and Windows Vista, but not with Windows XP.
 
@@ -137,7 +133,7 @@ The following table describes the constants that are valid with Windows 7 and Wi
 </tbody>
 </table>
 
- 
+ 
 
 The following table describes the constants that are valid with Windows 7, Windows Vista, and Windows XP.
 
@@ -180,7 +176,7 @@ The following table describes the constants that are valid with Windows 7, Windo
 </tbody>
 </table>
 
- 
+ 
 
 The following table describes the constants that are valid with Windows XP only; these flags are obsolete for Windows 7 and Windows Vista and should not be used.
 
@@ -211,7 +207,7 @@ The following table describes the constants that are valid with Windows XP only;
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -229,9 +225,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

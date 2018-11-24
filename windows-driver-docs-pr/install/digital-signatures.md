@@ -12,11 +12,7 @@ keywords:
 - device installations WDK , digital signatures
 - driver signing WDK
 - certificates WDK , about digital signatures
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -59,9 +55,9 @@ For more information about how the Plug and Play (PnP) device installation uses 
 
 For more information about Microsoft public key infrastructure technology, code signing, and digital signatures, see [Introduction to Code Signing](http://go.microsoft.com/fwlink/p/?linkid=104071) and [Code Signing Best Practices](http://go.microsoft.com/fwlink/p/?linkid=68250).
 
- 
+ 
 
- 
+ 
 
 
 

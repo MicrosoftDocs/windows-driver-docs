@@ -3,11 +3,7 @@ title: driveinfo
 description: The driveinfo extension displays volume information for the specified drive.
 ms.assetid: cc63c07a-4556-4b79-9dff-c0ac09371651
 keywords: ["driveinfo Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,10 +18,10 @@ ms.localizationpriority: medium
 
 The **!driveinfo** extension displays volume information for the specified drive.
 
-```
+```dbgcmd
 !driveinfo Drive[:] 
 !driveinfo 
-```
+```dbgcmd
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 
@@ -55,14 +51,14 @@ Displays some brief Help text for this extension in the Debugger Command window.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
 
 The drive information displayed by this extension is obtained by querying the underlying file system; for example:
 
-```
+```dbgcmd
 kd> !driveinfo c:
 Drive c:, DriveObject e136cd88
     Directory Object: e1001408  Name: C:
@@ -75,9 +71,9 @@ Drive c:, DriveObject e136cd88
     8850.21 of 12001.7 MB free
 ```
 
- 
+ 
 
- 
+ 
 
 
 

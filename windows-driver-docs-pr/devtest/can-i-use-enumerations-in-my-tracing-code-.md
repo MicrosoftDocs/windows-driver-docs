@@ -2,11 +2,7 @@
 title: Can I use enumerations in my tracing code
 description: Can I use enumerations in my tracing code
 ms.assetid: c42ab1ad-6b8f-458f-ba29-e3553095c853
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,7 +24,6 @@ enum _wday {
   friday =  5,
   saturday = 6
 };
- 
 ```
 
 To use the enumeration in your trace messages, add the following configuration data to your source file. This code directs WPP to extract the symbol information for the enumeration and to use the names that you have defined when displaying the enumeration logged value.
@@ -43,7 +38,7 @@ Then you can use the **dayset** custom type in the format string of a trace mess
 
 ```
  _wday p = wednesday;
- 
+
  DoTraceMessage(NOISE " %!dayset!", p);
 ```
 
@@ -53,9 +48,9 @@ Finally, because you added configuration data to a non-configuration file (a fil
 RUN_WPP -scan:trace.c
 ```
 
- 
 
- 
+
+
 
 
 

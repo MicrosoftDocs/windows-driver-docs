@@ -1,6 +1,5 @@
 ---
 title: Writing a Simple WDF Driver
-author: windows-driver-content
 description: This topic describes the minimal functionality you need to write a Kernel-Mode Driver Framework (KMDF) driver. You need the same minimal functionality to write a User-Mode Driver Framework (UMDF) driver starting in UMDF version 2.
 ms.assetid: 6225b81c-e0da-473a-ba38-24846436dae7
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - KMDF WDK , writing a simple driver
 - Kernel-Mode Driver Framework WDK , writing a simple driver
 - framework-based drivers WDK KMDF , writing a simple driver
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -44,9 +39,9 @@ Each framework-based driver consists of a [**DriverEntry**](https://msdn.microso
 
 For more information about writing a framework-based driver, see [Using the Framework to Develop a Driver](using-the-framework-to-develop-a-driver.md).
 
- 
+ 
 
- 
+ 
 
 
 

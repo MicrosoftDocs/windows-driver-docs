@@ -5,11 +5,7 @@ ms.assetid: 311a9588-5094-432c-b696-339ff3ff8c35
 keywords:
 - checked builds WDK , Driver Verifier
 - Driver Verifier WDK checked builds
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,9 +19,9 @@ While the checked build and [Driver Verifier](driver-verifier.md) provide some c
 
 When Driver Verifier runs on the checked build, it often displays additional information in the debugger when a problem is detected. In addition, when a debugger is attached, in many cases Driver Verifier runs a breakpoint prior to halting the system with a bug check. This breakpoint gives you a chance to examine the state of the system, and debug your driver, prior to the Driver-Verifier-invoked system crash.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -5,11 +5,7 @@ ms.assetid: 0819ef06-5715-4814-a1ed-ddc757728ec4
 keywords:
 - miniport drivers WDK networking , OID requests
 - OIDs WDK networking , miniport drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,9 +33,9 @@ If *MiniportOidRequest* returns NDIS\_STATUS\_PENDING, NDIS will not call *Minip
 
 NDIS can call a miniport driver's [*MiniportCancelOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff559339) function to cancel an OID request.
 
- 
+ 
 
- 
+ 
 
 
 

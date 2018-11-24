@@ -6,11 +6,7 @@ keywords:
 - Static Driver Verifier WDK , about Static Driver Verifier
 - StaticDV WDK , about Static Driver Verifier
 - SDV WDK , about Static Driver Verifier
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +27,9 @@ This section includes:
 
 [Static Driver Verifier Limitations](static-driver-verifier-limitations.md)
 
- 
+ 
 
- 
+ 
 
 
 

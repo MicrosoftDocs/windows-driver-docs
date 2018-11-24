@@ -1,16 +1,11 @@
 ---
 title: HS_PLUGIN_CELLULAR_EXCEPTION_HOSTS structure
-author: windows-driver-content
 description: The HS_PLUGIN_CELLULAR_EXCEPTION_HOSTS structure contains the list of hosts that the plugin requires to be connected over a cellular bearer only during the authentication process.
 ms.assetid: cc7ad05b-d03b-463a-9d22-1982aee882e8
 keywords: 
 - HS_PLUGIN_CELLULAR_EXCEPTION_HOSTS structure Network Drivers Starting with Windows Vista
 - PHS_PLUGIN_CELLULAR_EXCEPTION_HOSTS structure pointer Network Drivers Starting with Windows Vista
-ms.author: windowsdriverdev
-ms.date: 07/31/2017 
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 07/31/2017
 ms.localizationpriority: medium
 ---
 
@@ -71,9 +66,9 @@ Requirements
 
 [Microsoft Interface Definition Language](https://msdn.microsoft.com//library/windows/desktop/aa367091)
 
- 
+ 
 
- 
+ 
 
 
 

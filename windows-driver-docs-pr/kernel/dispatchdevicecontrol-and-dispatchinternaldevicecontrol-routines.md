@@ -1,21 +1,16 @@
 ---
 title: DispatchDeviceControl and DispatchInternalDeviceControl Routines
-author: windows-driver-content
 description: DispatchDeviceControl and DispatchInternalDeviceControl Routines
 ms.assetid: 0bf8868e-bc5a-4fa7-9ff6-270f7a7bc850
 keywords: ["dispatch routines WDK kernel , DispatchDeviceControl routine", "dispatch routines WDK kernel , DispatchInternalDeviceControl routine", "DispatchDeviceControl routine", "DispatchInternalDeviceControl routine", "IRP_MJ_DEVICE_CONTROL I/O function code", "IRP_MJ_INTERNAL_DEVICE_CONTROL I/O function code", "internal device control dispatch routines WDK kernel", "device control dispatch routines WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # DispatchDeviceControl and DispatchInternalDeviceControl Routines
 
 
-A driver's dispatch routines (see [**DRIVER_DISPATCH**](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch)) handle IRPs with I/O function codes of [**IRP\_MJ\_DEVICE\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff550744) and [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff550766), respectively.
+A driver's dispatch routines (see [**DRIVER_DISPATCH**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch)) handle IRPs with I/O function codes of [**IRP\_MJ\_DEVICE\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff550744) and [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff550766), respectively.
 
 For every common type of peripheral device, the system defines a set of I/O control codes for **IRP\_MJ\_DEVICE\_CONTROL** requests. New drivers for each type of device must support these requests. In most cases, these public I/O control codes for each type of device are not exported to user-mode applications. 
 
@@ -32,9 +27,9 @@ In addition, a driver can define a set of private I/O control codes that other d
 
 For specific information about the set of public I/O control codes that different kinds of drivers must support and about defining private I/O control codes, see the device-specific reference sections of the Windows Driver Kit (WDK).
 
- 
+ 
 
- 
+ 
 
 
 

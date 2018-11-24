@@ -1,15 +1,10 @@
 ---
 title: OID_CO_TAPI_TRANSLATE_TAPI_SAP
-author: windows-driver-content
 description: This topic describes the OID_CO_TAPI_TRANSLATE_TAPI_SAP object identifier (OID).
 ms.assetid: 701a1d02-8528-4b61-adbb-97c817194ac7
 keywords:
 - OID_CO_TAPI_TRANSLATE_TAPI_SAP
-ms.author: windowsdriverdev
 ms.date: 11/03/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

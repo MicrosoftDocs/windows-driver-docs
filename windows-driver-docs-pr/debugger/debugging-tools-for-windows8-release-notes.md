@@ -2,11 +2,7 @@
 title: Debugging Tools For Windows8 Release Notes
 description: Debugging Tools For Windows8 Release Notes
 ms.assetid: 15776778-691F-4F76-92CE-2DB266AD31E8
-ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -50,9 +46,9 @@ In Windows 8, debugging of inline functions is turned on by default. The command
 -   User must run in an elevated context in order to install the USB 3.0 XHCI filter driver. If the user is not running elevated, the PnP manager returns an error message that does not inform the user that elevation is the problem.
 -   If kernel debugging is enabled, the device used for kernel debugging should not be removed from the system while the device is still turned on. If the device is removed, the system will hang and will need to be restarted.
 
- 
+ 
 
- 
+ 
 
 
 

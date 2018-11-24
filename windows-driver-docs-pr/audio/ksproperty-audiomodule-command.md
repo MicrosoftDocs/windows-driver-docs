@@ -9,11 +9,7 @@ api_name:
 - KSPROPERTY_AUDIOMODULE_COMMAND
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **KSPROPERTY\_AUDIOMODULE\_COMMAND** property is a command property used to get and set buffers and instructions on the hardware (pin handle) or software cache (filter handle).
 
-The *Set* value is provided as part of the command. When the *Get* is used, it returns the the results of this command.
+The *Set* value is provided as part of the command. When the *Get* is used, it returns the results of this command.
 
 ### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
 
@@ -48,13 +44,13 @@ The *Set* value is provided as part of the command. When the *Get* is used, it r
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Filter or Pin</p></td>
-<td align="left"><p>[<strong>KSAUDIOMODULE_PROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/mt808139) + [optional custom module arguments]</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/mt808139" data-raw-source="[&lt;strong&gt;KSAUDIOMODULE_PROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/mt808139)"><strong>KSAUDIOMODULE_PROPERTY</strong></a> + [optional custom module arguments]</p></td>
 <td align="left"><p>UNDEFINED</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value type is a undefined. The implementer can create a module specific custom command structure.
 
@@ -98,9 +94,9 @@ Requirements
 
 [KSPROPSETID\_AudioModule](kspropsetid-audiomodule.md)
 
- 
+ 
 
- 
+ 
 
 
 

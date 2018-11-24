@@ -9,11 +9,7 @@ api_name:
 - wscn ScanIdentifier
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **ScanIdentifier** element contains a device-specific string that t
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ScanIdentifier>
   text
 </wscn:ScanIdentifier>
@@ -60,10 +56,10 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>CreateScanJobRequest</strong>](createscanjobrequest.md)</p></td>
+<td><p><a href="createscanjobrequest.md" data-raw-source="[&lt;strong&gt;CreateScanJobRequest&lt;/strong&gt;](createscanjobrequest.md)"><strong>CreateScanJobRequest</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>ScanAvailableEvent</strong>](scanavailableevent.md)</p></td>
+<td><p><a href="scanavailableevent.md" data-raw-source="[&lt;strong&gt;ScanAvailableEvent&lt;/strong&gt;](scanavailableevent.md)"><strong>ScanAvailableEvent</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -75,16 +71,16 @@ The client can send the **ScanIdentifier** element to the WSD Scan Service in a 
 
 The **ScanIdentifier** value must be unique for every [**ScanAvailableEvent**](scanavailableevent.md) instance.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**CreateScanJobRequest**](createscanjobrequest.md)
 
 [**ScanAvailableEvent**](scanavailableevent.md)
 
- 
+ 
 
- 
+ 
 
 
 

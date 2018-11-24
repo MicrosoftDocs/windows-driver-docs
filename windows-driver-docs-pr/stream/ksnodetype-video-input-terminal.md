@@ -2,11 +2,7 @@
 title: KSNODETYPE\_VIDEO\_INPUT\_TERMINAL
 description: KSNODETYPE\_VIDEO\_INPUT\_TERMINAL
 ms.assetid: f0b43fc2-4cb0-420d-bfb7-78d391daa740
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,9 +15,9 @@ The **IKsTopologyInfo** interface may be used by applications that are communica
 
 See also [Audio Topology Nodes](https://msdn.microsoft.com/library/windows/hardware/ff536219).
 
- 
+ 
 
- 
+ 
 
 
 

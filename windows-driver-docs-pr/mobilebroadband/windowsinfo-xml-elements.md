@@ -2,11 +2,7 @@
 title: WindowsInfo XML Elements
 description: WindowsInfo XML Elements
 ms.assetid: 045f149a-4bd5-4f33-a18f-39953f2e5e19
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -40,9 +36,9 @@ This section describes the XML elements defined by the [WindowsInfo XML schema](
 
         -   [DesktopAutoplayHandler](desktopautoplayhandler.md)
 
- 
+ 
 
- 
+ 
 
 
 

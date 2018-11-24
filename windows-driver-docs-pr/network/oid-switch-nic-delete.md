@@ -1,13 +1,8 @@
 ---
 title: OID_SWITCH_NIC_DELETE
-author: windows-driver-content
 description: The protocol edge of the Hyper-V extensible switch issues an object identifier (OID) set request of OID_SWITCH_NIC_DELETE to the extensible switch driver stack.
 ms.assetid: 7564EA39-09F5-45A3-81A0-F8DD2B23B639
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_SWITCH_NIC_DELETE Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -31,7 +26,7 @@ Before the protocol edge of the extensible switch issues the OID\_SWITCH\_NIC\_D
 
 **Note**  If the extension had incremented an extensible switch reference counter for the network adapter by calling [*ReferenceSwitchNic*](https://msdn.microsoft.com/library/windows/hardware/hh598294), the OID\_SWITCH\_NIC\_DELETE request is not issued while the reference counter is nonzero. The extension decrements the extensible switch reference counter by calling [*DereferenceSwitchNic*](https://msdn.microsoft.com/library/windows/hardware/hh598141).
 
- 
+ 
 
 The extension must follow these guidelines for handling OID set requests of OID\_SWITCH\_NIC\_DELETE:
 
@@ -70,7 +65,7 @@ The underlying miniport edge of the extensible switch completes the OID query re
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -108,9 +103,9 @@ Requirements
 
 [*ReferenceSwitchNic*](https://msdn.microsoft.com/library/windows/hardware/hh598294)
 
- 
+ 
 
- 
+ 
 
 
 

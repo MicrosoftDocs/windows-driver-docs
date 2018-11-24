@@ -13,11 +13,7 @@ keywords:
 - signing drivers WDK , digital certificates
 - device installations WDK , digital certificates
 - driver signing WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,9 +38,9 @@ Software publishers must obtain a certificate from a certification authority (CA
 
 Once a certificate is obtained from the CA, software publishers must store the certificate locally in the computer. For more information about this process, see [Certificate Stores](certificate-stores.md).
 
- 
+ 
 
- 
+ 
 
 
 

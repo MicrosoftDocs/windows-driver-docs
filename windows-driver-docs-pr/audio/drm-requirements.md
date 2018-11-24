@@ -10,11 +10,7 @@ keywords:
 - testing DRM compliance WDK audio
 - Designed for Windows XP logo test WDK audio
 - logo tests WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -44,9 +40,9 @@ The DRM-compliance test requires a trusted audio driver to do the following:
 
 In addition to passing the DRM-compliance test, the audio device and driver must not allow a user to select a mode of operation that defeats or subverts the DRM components in the kernel. Specifically, the driver must not provide registry settings, user control panels, or other means of disabling the DRM functions.
 
- 
+ 
 
- 
+ 
 
 
 

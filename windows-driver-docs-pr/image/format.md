@@ -9,11 +9,7 @@ api_name:
 - wscn Format wscn Override "" wscn UsedDefault ""
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The optional **Format** element indicates a single file format and compression t
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:Format wscn:Override="" wscn:UsedDefault=""
   
       Override
@@ -161,7 +157,7 @@ Required. One of the following values:
 </tbody>
 </table>
 
- 
+ 
 
 ## Child elements
 
@@ -182,10 +178,10 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>DocumentFinalParameters</strong>](documentfinalparameters.md)</p></td>
+<td><p><a href="documentfinalparameters.md" data-raw-source="[&lt;strong&gt;DocumentFinalParameters&lt;/strong&gt;](documentfinalparameters.md)"><strong>DocumentFinalParameters</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>DocumentParameters</strong>](documentparameters.md)</p></td>
+<td><p><a href="documentparameters.md" data-raw-source="[&lt;strong&gt;DocumentParameters&lt;/strong&gt;](documentparameters.md)"><strong>DocumentParameters</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -209,7 +205,7 @@ Starting with Windows 7, WIA supports auto-configured scanning. And if auto-con
 
 **Note**  Color mode is not selectable for auto-configured scan.
 
- 
+ 
 
 The WSD Scan Service can specify the optional **Override** and **UsedDefault** attributes only when the **Format**element is contained within a **DocumentFinalParameters** hierarchy. For more information about **Override** and **UsedDefault** and their usage, see [**DocumentFinalParameters**](documentfinalparameters.md).
 
@@ -217,7 +213,7 @@ You can both extend and create a subset of the allowed values for this element.
 
 Although the WSD Scan Service supports the JBIG file format (ISO/IEC 11544:1993), it does not currently support JBIG2 (ISO/IEC 14492:2001).
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**DocumentFinalParameters**](documentfinalparameters.md)
@@ -226,9 +222,9 @@ Although the WSD Scan Service supports the JBIG file format (ISO/IEC 11544:1993)
 
 [**FormatValue**](formatvalue.md)
 
- 
+ 
 
- 
+ 
 
 
 

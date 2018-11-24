@@ -2,7 +2,6 @@
 title: Biometric Devices Design Guide
 description: Biometric Devices Design Guide
 ms.assetid: 78270890-4ea2-403e-bbd7-84a22581bbb7
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -37,9 +36,9 @@ This section describes how to write user-mode drivers that work with the Windows
 -   [Windows Hello: Steps to Submit a Fingerprint Driver](windows-hello-driver-signing.md)
 -   [Custom Control Codes](custom-control-codes.md)
 
- 
+ 
 
- 
+ 
 
 
 

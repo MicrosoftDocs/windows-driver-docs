@@ -9,11 +9,7 @@ keywords:
 - synthesizers WDK audio , property support
 - IKsControl interface
 - property-set GUIDs WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -89,9 +85,9 @@ The [**IKsControl::KsProperty**](https://msdn.microsoft.com/library/windows/hard
 
 -   Property item requests to a port that represents a pluggable software synthesizer are handled entirely in user mode. The topology of this type of port is a synthesizer (represented by an [IDirectMusicSynth](https://msdn.microsoft.com/library/windows/hardware/ff536519) interface) that is connected to a sink node (an [IDirectMusicSynthSink](https://msdn.microsoft.com/library/windows/hardware/ff536520) interface). The property request is given first to the synthesizer node, and then to the sink node if it is not recognized by the synthesizer.
 
- 
+ 
 
- 
+ 
 
 
 

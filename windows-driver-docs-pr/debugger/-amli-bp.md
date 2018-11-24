@@ -3,11 +3,7 @@ title: amli bp
 description: The amli bp extension places a breakpoint in AML code.
 ms.assetid: 830df6b8-835c-4485-a28a-e9a028f166f5
 keywords: ["amli bp Windows Debugging"]
-ms.author: domars
-ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 09/17/2018
 topic_type:
 - apiref
 api_name:
@@ -24,8 +20,8 @@ The **!amli bp** extension places a breakpoint in AML code.
 
 Syntax
 
-```
-!amli bp { MethodName | CodeAddress }
+```dbgcmd
+    !amli bp { MethodName | CodeAddress }
 ```
 
 ## <span id="ddk__amli_bp_dbg"></span><span id="DDK__AMLI_BP_DBG"></span>Parameters
@@ -52,13 +48,13 @@ The AMLI Debugger supports a maximum of 10 breakpoints.
 
 Here is an example. The following command will set a breakpoint on the \_DCK method:
 
-```
+```console
 kd> !amli bp \_sb.pci0.dock._dck
 ```
 
- 
+ 
 
- 
+ 
 
 
 

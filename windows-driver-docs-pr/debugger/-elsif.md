@@ -3,11 +3,7 @@ title: .elsif
 description: The .elsif token behaves like the else if keyword combination in C.
 ms.assetid: f5612326-9fcf-4f2e-9692-cc75e7ff4664
 keywords: [".elsif Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **.elsif** token behaves like the **else if** keyword combination in C.
 
-```
+```dbgcmd
 .if (Condition) { Commands } .elsif (Condition) { Commands } 
 
 .if (Condition) { Commands } .elsif (Condition) { Commands } .else { Commands } 
@@ -41,9 +37,9 @@ Specifies one or more commands that will be executed conditionally. This block o
 
 For information about other control flow tokens and their use in debugger command programs, see [Using Debugger Command Programs](using-debugger-command-programs.md).
 
- 
+ 
 
- 
+ 
 
 
 

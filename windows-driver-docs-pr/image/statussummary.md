@@ -9,11 +9,7 @@ api_name:
 - wscn StatusSummary
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **StatusSummary** element contains a summary of the scan device's c
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:StatusSummary>
   child elements
 </wscn:StatusSummary>
@@ -50,10 +46,10 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ScannerState</strong>](scannerstate.md)</p></td>
+<td><p><a href="scannerstate.md" data-raw-source="[&lt;strong&gt;ScannerState&lt;/strong&gt;](scannerstate.md)"><strong>ScannerState</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>ScannerStateReasons</strong>](scannerstatereasons.md)</p></td>
+<td><p><a href="scannerstatereasons.md" data-raw-source="[&lt;strong&gt;ScannerStateReasons&lt;/strong&gt;](scannerstatereasons.md)"><strong>ScannerStateReasons</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -72,7 +68,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ScannerStatusSummaryEvent</strong>](scannerstatussummaryevent.md)</p></td>
+<td><p><a href="scannerstatussummaryevent.md" data-raw-source="[&lt;strong&gt;ScannerStatusSummaryEvent&lt;/strong&gt;](scannerstatussummaryevent.md)"><strong>ScannerStatusSummaryEvent</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -82,7 +78,7 @@ Remarks
 
 The WSD Scan Service must include the **StatusSummary** element when it sends a [**ScannerStatusSummaryEvent**](scannerstatussummaryevent.md) event element to the client. The scanner's current state and reasons for why it is in this state are specified in the [**ScannerState**](scannerstate.md) and [**ScannerStateReasons**](scannerstatereasons.md) elements, respectively.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ScannerStateReasons**](scannerstatereasons.md)
@@ -92,9 +88,9 @@ The WSD Scan Service must include the **StatusSummary** element when it sends a 
 **ScannerStateReasons**
 [**ScannerStatusSummaryEvent**](scannerstatussummaryevent.md)
 
- 
+ 
 
- 
+ 
 
 
 

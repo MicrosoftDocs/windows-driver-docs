@@ -12,6 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # AddLink function
@@ -24,7 +25,7 @@ Syntax
 
 ```ManagedCPlusPlus
 void AddLink(
-   [out, HBA_STATUS_QUALIFIERS] HBA_STATUS HBAStatus
+   [out, HBA_STATUS_QUALIFIERS] HBA_STATUS HBAStatus
 );
 ```
 
@@ -69,9 +70,9 @@ Requirements
 
 [**AddLink\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff550129)
 
- 
+ 
 
- 
+ 
 
 
 

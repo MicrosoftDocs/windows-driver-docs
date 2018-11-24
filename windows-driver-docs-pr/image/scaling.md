@@ -9,11 +9,7 @@ api_name:
 - wscn Scaling wscn MustHonor ""
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The optional **Scaling** element specifies the scaling of both the width and hei
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:Scaling wscn:MustHonor=""
   MustHonor = "xs:string">
   child elements
@@ -75,10 +71,10 @@ Attributes
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ScalingHeight</strong>](scalingheight.md)</p></td>
+<td><p><a href="scalingheight.md" data-raw-source="[&lt;strong&gt;ScalingHeight&lt;/strong&gt;](scalingheight.md)"><strong>ScalingHeight</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>ScalingWidth</strong>](scalingwidth.md)</p></td>
+<td><p><a href="scalingwidth.md" data-raw-source="[&lt;strong&gt;ScalingWidth&lt;/strong&gt;](scalingwidth.md)"><strong>ScalingWidth</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -97,10 +93,10 @@ Attributes
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>DocumentFinalParameters</strong>](documentfinalparameters.md)</p></td>
+<td><p><a href="documentfinalparameters.md" data-raw-source="[&lt;strong&gt;DocumentFinalParameters&lt;/strong&gt;](documentfinalparameters.md)"><strong>DocumentFinalParameters</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>DocumentParameters</strong>](documentparameters.md)</p></td>
+<td><p><a href="documentparameters.md" data-raw-source="[&lt;strong&gt;DocumentParameters&lt;/strong&gt;](documentparameters.md)"><strong>DocumentParameters</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -112,7 +108,7 @@ The **Scaling** element must contain both the [**ScalingWidth**](scalingwidth.md
 
 The client can specify the optional **MustHonor** attribute only when the **Scaling** element is contained within a **CreateScanJobRequest** hierarchy. For more information about **MustHonor** and its usage, see [**CreateScanJobRequest**](createscanjobrequest.md).
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**CreateScanJobRequest**](createscanjobrequest.md)
@@ -125,9 +121,9 @@ The client can specify the optional **MustHonor** attribute only when the **Scal
 
 [**ScalingWidth**](scalingwidth.md)
 
- 
+ 
 
- 
+ 
 
 
 

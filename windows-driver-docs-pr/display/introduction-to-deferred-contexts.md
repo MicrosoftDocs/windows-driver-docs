@@ -7,11 +7,7 @@ keywords:
 - Direct3D version 11 WDK Windows Server 2008 R2 display , deferred contexts, introduction
 - deferred contexts WDK Windows 7 display , introduction
 - deferred contexts WDK Windows Server 2008 R2 display , introduction
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,9 +38,9 @@ The driver should not expect the [**pfnDisableDeferredStagingResourceDestruction
 
 The driver's [**RecycleCreateDeferredContext**](https://msdn.microsoft.com/library/windows/hardware/ff569239) function must clear out the pipeline state for the deferred context, similar to how the driver's [**CreateDeferredContext**](https://msdn.microsoft.com/library/windows/hardware/ff540622) clears out the pipeline state for the deferred context. After the runtime calls the driver's [**AbandonCommandList**](https://msdn.microsoft.com/library/windows/hardware/ff538199), [**CreateCommandList**](https://msdn.microsoft.com/library/windows/hardware/ff540602), or [**RecycleCreateCommandList**](https://msdn.microsoft.com/library/windows/hardware/ff569238), the runtime can use the deferred context handle with either the driver's [**DestroyDevice(D3D10)**](https://msdn.microsoft.com/library/windows/hardware/ff552768) or **RecycleCreateDeferredContext** function. For more information about **RecycleCreateDeferredContext**, see [Optimization for Small Command Lists](supporting-command-lists.md).
 
- 
+ 
 
- 
+ 
 
 
 

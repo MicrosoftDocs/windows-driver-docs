@@ -1,14 +1,9 @@
 ---
 title: Using the CONNECT_FULLY_SPECIFIED Version of IoConnectInterruptEx
-author: windows-driver-content
 description: Using the CONNECT_FULLY_SPECIFIED Version of IoConnectInterruptEx
 ms.assetid: 5b75c32e-77e5-4761-b709-fedb8e33b57a
 keywords: ["IoConnectInterruptEx", "CONNECT_FULLY_SPECIFIED", "manual interrupt detections WDK kernel", "line-based interrupts WDK kernel", "message-signaled interrupts WDK kernel", "FullySpecified"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -64,8 +59,8 @@ The **u.Interrupt** member of **CM\_PARTIAL\_RESOURCE\_DESCRIPTOR** contains the
 </tr>
 <tr class="even">
 <td><p><strong>InterruptMode</strong></p></td>
-<td><p><strong>Flags</strong> & CM_RESOURCE_INTERRUPT_LATCHED</p></td>
-<td><p><strong>Flags</strong> & CM_RESOURCE_INTERRUPT_LATCHED</p></td>
+<td><p><strong>Flags</strong> &amp; CM_RESOURCE_INTERRUPT_LATCHED</p></td>
+<td><p><strong>Flags</strong> &amp; CM_RESOURCE_INTERRUPT_LATCHED</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>ProcessorEnableMask</strong></p></td>
@@ -75,13 +70,13 @@ The **u.Interrupt** member of **CM\_PARTIAL\_RESOURCE\_DESCRIPTOR** contains the
 </tbody>
 </table>
 
- 
+ 
 
 A driver will only receive **CM\_PARTIAL\_RESOURCE\_DESCRIPTOR** structures for message-signaled interrupts on Windows Vista and later versions of Windows.
 
 The following code example demonstrates how to register an *InterruptService* routine using CONNECT\_FULLY\_SPECIFIED.
 
-```
+```cpp
 IO_CONNECT_INTERRUPT_PARAMETERS params;
 
 // deviceExtension is a pointer to the driver&#39;s device extension. 
@@ -126,9 +121,9 @@ if (!NT_SUCCESS(status)) {
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

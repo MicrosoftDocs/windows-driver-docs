@@ -1,13 +1,8 @@
 ---
 title: Overview of Microsoft STI and Microsoft WIA
-author: windows-driver-content
 description: Overview of Microsoft STI and Microsoft WIA
 ms.assetid: c973f9a2-48a5-420f-b317-0797171cf714
-ms.author: windowsdriverdev
 ms.date: 07/18/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +28,9 @@ Some differences between STI and WIA include the following:
 
 For more information about the WIA architecture, see [WIA Architecture Overview](wia-architecture-overview.md).
 
- 
+ 
 
- 
+ 
 
 
 

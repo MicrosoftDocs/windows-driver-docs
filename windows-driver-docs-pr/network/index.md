@@ -5,7 +5,6 @@ ms.assetid: 200517b2-d0a0-40cc-a5cb-9e2067e01028
 keywords:
 - network drivers WDK
 - networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -49,9 +48,9 @@ This guide includes the following sections:
 [Kernel Mode SDK Topics for Network Drivers](kernel-mode-sdk-topics-for-network-drivers.md)
 
 [Previous Versions of Network Drivers](previous-versions-of-network-drivers.md)
- 
+ 
 
- 
+ 
 
 
 

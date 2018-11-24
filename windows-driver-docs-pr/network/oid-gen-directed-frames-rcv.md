@@ -1,13 +1,8 @@
 ---
 title: OID_GEN_DIRECTED_FRAMES_RCV
-author: windows-driver-content
 description: As a query, the OID_GEN_DIRECTED_FRAMES_RCV OID specifies the number of directed packets that are received without errors.
 ms.assetid: 6f8b84d3-19d6-4a2a-a2eb-8961614fbba4
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_GEN_DIRECTED_FRAMES_RCV Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -61,9 +56,9 @@ Requirements
 
 [OID\_GEN\_STATISTICS](oid-gen-statistics.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,11 +3,7 @@ title: U (Windows Debugger Glossary)
 description: Glossary page - U
 Robots: noindex, nofollow
 ms.assetid: f3866ed9-eb94-4433-8a73-3b37f7e67303
-ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -41,9 +37,9 @@ A debugger session in which the target is running in user mode.
 <span id="user_mode_target"></span><span id="USER_MODE_TARGET"></span>**user-mode target**  
 See target application.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,13 +1,8 @@
 ---
 title: The driver sample file list
-author: windows-driver-content
 description: The following source files are in the src\SPB\SpbAccelerometer folder and are used to build the SpbAccelerometer.sys and SpbAccelerometer.inf files.
 ms.assetid: 48965F7F-1396-4E08-974B-3613684FAA6E
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -43,7 +38,7 @@ The following source files are in the src\\SPB\\SpbAccelerometer folder and are 
 | SpbRequest.cpp          | Implementation of register-based device accesses via SPB.                                                                                                                |
 | Trace.h                 | Sets up WPP tracing.                                                                                                                                                     |
 
- 
+ 
 
 ## Related topics
 [SpbAccelerometer driver sample](spbaccelerometer-driver-sample.md)  

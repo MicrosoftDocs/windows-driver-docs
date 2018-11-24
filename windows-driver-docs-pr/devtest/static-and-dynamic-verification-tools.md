@@ -5,11 +5,7 @@ ms.assetid: 8bdf1f11-5deb-427b-b058-b9173e167f8d
 keywords:
 - dynamic verification tools WDK
 - static verification tools WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,9 +20,9 @@ There are two basic types of verification tools:
 
 The best practice is to use a combination of static and dynamic verification tools. Static tools allow you to check code paths that are difficult to exercise in practice, while the dynamic tools find serious errors that are occurring in the driver.
 
- 
+ 
 
- 
+ 
 
 
 

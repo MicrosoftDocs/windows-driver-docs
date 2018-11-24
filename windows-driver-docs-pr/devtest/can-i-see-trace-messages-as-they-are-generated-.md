@@ -2,11 +2,7 @@
 title: Can I see trace messages as they are generated
 description: Can I see trace messages as they are generated
 ms.assetid: 21d8606b-5693-4f50-81f9-c5c3a65c0550
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -71,9 +67,9 @@ tracefmt -rt MyTrace -p c:\tracing -display -o mytrace.txt
 
 For a detailed example, see [Example 5: Formatting Real-Time Trace Sessions](example-5--formatting-real-time-trace-sessions.md).
 
- 
+ 
 
- 
+ 
 
 
 

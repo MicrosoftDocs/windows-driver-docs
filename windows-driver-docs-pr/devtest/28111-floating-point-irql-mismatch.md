@@ -5,11 +5,7 @@ ms.assetid: 3573ebf0-5f5b-4b04-835a-7dba36e95e8c
 keywords:
 - warnings listed WDK PREfast for Drivers
 - errors listed WDK PREfast for Drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,7 +27,7 @@ warning C28111: The IRQL where the floating-point state was saved does not match
 </tbody>
 </table>
 
- 
+ 
 
 The IRQL at which the driver is executing when it restores a floating-point state is different than the IRQL at which it was executing when it saved the floating-point state.
 
@@ -72,9 +68,9 @@ void driver_utility()
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

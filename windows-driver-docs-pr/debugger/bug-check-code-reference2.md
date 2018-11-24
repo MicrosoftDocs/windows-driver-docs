@@ -2,11 +2,7 @@
 title: Bug Check Code Reference
 description: This section contains descriptions of the common bug checks, including the parameters passed to the blue screen.
 ms.assetid: DBA85578-97CF-4BD7-A67D-1C7AD2E9B2BB
-ms.author: domars
-ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 09/24/2018
 ms.localizationpriority: medium
 ---
 
@@ -15,9 +11,9 @@ ms.localizationpriority: medium
 
 This section contains descriptions of the common bug checks, including the parameters passed to the blue screen. It also describes how you can diagnose the fault which led to the bug check, and possible ways to deal with the error.
 
-**Note**  This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://go.microsoft.com/fwlink/p/?linkid=183646).
+**Note**  This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://go.microsoft.com/fwlink/p/?linkid=183646).
 
- 
+ 
 
 If a specific bug check code does not appear in this reference, use the [**!analyze**](-analyze.md) extension command (in kernel mode) with the following syntax:
 
@@ -368,16 +364,17 @@ The following table shows the code and name of each bug check.
 | 0x0000019B | [**TTM\_FATAL\_ERROR**](bug-check-0x19b--ttm-fatal-error.md)                                                                                      |
 | 0x0000019C | [**WIN32K\_POWER\_WATCHDOG\_TIMEOUT**](bug-check-0x19c--win32k-power-watchdog-timeout.md)                                                         |
 | 0x0000019D | [**CLUSTER\_SVHDX\_LIVEDUMP**](bug-check-0x19d--cluster-svhdx-livedump.md)                                                                        |
-| 0x000001A3 | [**CALL\_HAS\_NOT\_RETURNED\_WATCHDOG\_TIMEOUT\_LIVEDUMP**](bug-check-0x1a3--call-has-not-returned-watchdog-timeout-livedump.md)                    |
+| 0x000001A3 | [**CALL\_HAS\_NOT\_RETURNED\_WATCHDOG\_TIMEOUT\_LIVEDUMP**](bug-check-0x1a3--call-has-not-returned-watchdog-timeout-livedump.md)                  |
 | 0x000001A4 | [**DRIPS\_SW\_HW\_DIVERGENCE\_LIVEDUMP**](bug-check-0x1a4--drips-sw-hw-divergence-livedump.md)                                                    |
 | 0x000001C4 | [**DRIVER\_VERIFIER\_DETECTED\_VIOLATION\_LIVEDUMP**](bug-check-0x1c4--driver-verifier-detected-violation-livedump.md)                            |
 | 0x000001C5 | [**IO\_THREADPOOL\_DEADLOCK\_LIVEDUMP**](bug-check-0x1c5--io-threadpool-deadlock-livedump.md)                                                     |
+| 0x000001C8 | [**MANUALLY\_INITIATED\_POWER\_BUTTON\_HOLD**](bug-check-0x1c8--manually-initiated-power-button-hold.md)                                          |
 | 0x000001CC | [**EXRESOURCE_TIMEOUT_LIVEDUMP**](bug-check-0x1cc--exresource-timeout-livedump.md)                                                                |
 | 0x000001CD | [**INVALID\_CALLBACK\_STACK_ADDRESS**](bug-check-0x1cd--invalid-callback-stack-address.md)                                                        |
 | 0x000001CE | [**INVALID\_KERNEL\_STACK\_ADDRESS**](bug-check-0x1ce--invalid-kernel-stack-address.md)                                                           |
 | 0x000001CF | [**HARDWARE\_WATCHDOG\_TIMEOUT**](bug-check-0x1cf--hardware-watchdog-timeout.md)                                                                  |  
 | 0x000001D0 | [**CPI\_FIRMWARE\_WATCHDOG\_TIMEOUT**](bug-check-0x1d0--acpi-firmware-watchdog-timeout.md)                                                        |
-| 0x000001D1 | [**TELEMETRY\_ASSERTS\_LIVEDUMP**](bug-check-0x1d1--telemetry-asserts-livedump.md)                                                                  |
+| 0x000001D1 | [**TELEMETRY\_ASSERTS\_LIVEDUMP**](bug-check-0x1d1--telemetry-asserts-livedump.md)                                                                |
 | 0x000001D2 | [**WORKER\_THREAD\_INVALID\_STATE**](bug-check-0x1d2--worker-thread-invalid-state.md)                                                             |
 | 0x000001D3 | [**WFP\_INVALID\_OPERATION**](bug-check-0x1d3--wfp-invalid-operation.md)                                                                          |
 | 0x000001D4 | [**UCMUCSI\_LIVEDUMP**](bug-check-0x1d4--ucmusci-livedump.md)                                                                                     |
@@ -395,11 +392,11 @@ The following table shows the code and name of each bug check.
 | 0xC0000221 | [**STATUS\_IMAGE\_CHECKSUM\_MISMATCH**](bug-check-0xc0000221--status-image-checksum-mismatch.md)                                                  |
 | 0xDEADDEAD | [**MANUALLY\_INITIATED\_CRASH1**](bug-check-0xdeaddead--manually-initiated-crash1.md)                                                             |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

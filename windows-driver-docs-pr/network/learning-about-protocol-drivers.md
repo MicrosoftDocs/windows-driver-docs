@@ -11,11 +11,7 @@ keywords:
 - NDIS protocol drivers WDK , Winsock support
 - Winsock Kernel WDK networking , protocol driver support for Winsock
 - network drivers WDK , types
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -46,9 +42,9 @@ If you are writing a protocol that provides Winsock support, read:
 
 -   [Transport Helper DLLs for Windows Sockets](https://msdn.microsoft.com/library/windows/hardware/ff565691)
 
- 
+ 
 
- 
+ 
 
 
 

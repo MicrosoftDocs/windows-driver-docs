@@ -7,11 +7,7 @@ keywords:
 - pretransformed vertices WDK DirectX 8.0
 - clipping WDK DirectX 8.0
 - vertex clipping WDK DirectX 8.0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,9 +21,9 @@ The Direct3D 8.0 runtime fully supports the clipping of pretransformed vertices 
 
 It is important to note that the runtime does not validate that the application has correctly clipped posttransformed data. It is the driver's responsibility to ensure that a crash or hang does not occur if unclipped or incorrectly clipped data is passed when this flag is set.
 
- 
+ 
 
- 
+ 
 
 
 

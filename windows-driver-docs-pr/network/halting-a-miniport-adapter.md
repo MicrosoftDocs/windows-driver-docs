@@ -9,11 +9,7 @@ keywords:
 - MiniportHaltEx
 - halting adapters
 - stopping adapters
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -44,9 +40,9 @@ After [*MiniportHaltEx*](https://msdn.microsoft.com/library/windows/hardware/ff5
 
 [Writing NDIS Miniport Drivers](writing-ndis-miniport-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

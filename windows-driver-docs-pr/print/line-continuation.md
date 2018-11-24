@@ -1,6 +1,5 @@
 ---
 title: Line Continuation
-author: windows-driver-content
 description: Line Continuation
 ms.assetid: ee4dbb3d-ba9d-45bb-82dd-ecee4682ae63
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - line continuations WDK GPD files
 - continued lines WDK GPD files
 - continuation character WDK GPD files
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,7 +19,7 @@ ms.localizationpriority: medium
 
 [GPD file entries](gpd-file-entries.md) that are too long to fit onto a single line can be continued on subsequent lines. To continue an entry, each line after the first must be preceded by a plus sign (+). The plus sign must be the first character on the line, without preceding white space, as illustrated in the following example:
 
-```
+```cpp
 *DeviceFonts:
 +    LIST(
 +        =RC_FONT_Courier_10pt_regular,
@@ -45,9 +40,9 @@ You do not need to use a line continuation character at the beginning of the fol
 
 -   Lines that start with a left brace.
 
- 
+ 
 
- 
+ 
 
 
 

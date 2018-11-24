@@ -12,6 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # DEVPROP_TYPEMOD_ARRAY
@@ -28,7 +29,7 @@ To create a property-data-type identifier that represents an array of base-data-
 
 The size, in bytes, of an array of base-data-type values is the size, in bytes, of the array.
 
-For information about how to create a property-data-type identifier that represents a REG_MULTI_SZ list of NULL-terminated Unicode strings, see [**DEVPROP_TYPEMOD_LIST**](devprop-typemod-list.md).
+For information about how to create a property-data-type identifier that represents a [REG_MULTI_SZ](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types) list of NULL-terminated Unicode strings, see [**DEVPROP_TYPEMOD_LIST**](devprop-typemod-list.md).
 
 Requirements
 ------------
@@ -53,9 +54,9 @@ Requirements
 
 [**DEVPROP_TYPEMOD_LIST**](devprop-typemod-list.md)
 
- 
+ 
 
- 
+ 
 
 
 

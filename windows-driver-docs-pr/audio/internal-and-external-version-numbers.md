@@ -12,11 +12,7 @@ keywords:
 - files WDK audio
 - driver-file version numbers WDK audio
 - driver version numbers WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -59,9 +55,9 @@ To make your driver version numbers compatible with both Windows and DirectX, fo
 
 These internal and external version numbers should match (except for the two extra zeros, as noted above).
 
- 
+ 
 
- 
+ 
 
 
 

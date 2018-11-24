@@ -8,11 +8,7 @@ keywords:
 - CoNDIS WDK networking , service access points
 - service access points WDK CoNDIS
 - SAPs WDK CoNDIS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +24,9 @@ A client does not always register a SAP, for example, if it does not handle inco
 
 For more information about SAPs, see [Registering a SAP](registering-a-sap.md) and [Deregistering a SAP](deregistering-a-sap.md).
 
- 
+ 
 
- 
+ 
 
 
 

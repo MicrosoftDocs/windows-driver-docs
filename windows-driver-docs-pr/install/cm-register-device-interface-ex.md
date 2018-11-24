@@ -11,18 +11,9 @@ api_name:
 api_type:
 - NA
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # CM_Register_Device_Interface_Ex
 
 This function is reserved for system use.
-
-
- 
-
- 
-
-
-
-
-

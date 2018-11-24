@@ -2,11 +2,7 @@
 title: Managing OID Requests to Physical Network Adapters
 description: Managing OID Requests to Physical Network Adapters
 ms.assetid: 7E828FA8-DE99-4C30-ABB6-8AF05F9EC3B7
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,9 +19,9 @@ This section includes the following topics:
 
 For more information on how to manage OID requests over the Hyper-V extensible switch control path, see [Hyper-V Extensible Switch Control Path for OID Requests](hyper-v-extensible-switch-control-path-for-oid-requests.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,11 +3,7 @@ title: ~s (Set Current Thread)
 description: The ~s command sets or displays the current thread number.
 ms.assetid: 689d578b-8d31-4049-a374-19ae94d452a9
 keywords: ["~s (Set Current Thread) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,7 +20,7 @@ The **~s** command sets or displays the current thread number.
 
 In user mode, **~s** sets the current thread. Do not confuse this command confused with the [**~s (Change Current Processor)**](-s--change-current-processor-.md) command (which works only in kernel mode), the [**|s (Set Current Process)**](-s--set-current-process-.md) command, the [**||s (Set Current System)**](--s--set-current-system-.md) command, or the [**s (Search Memory)**](s--search-memory-.md) command.
 
-```
+```dbgcmd
 ~Thread s 
 ~ s 
 ```
@@ -58,7 +54,7 @@ Specifies the thread to set or display. For more information about the syntax, s
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -73,9 +69,9 @@ If you use the **~s** syntax, the debugger displays information about the curren
 
 This command also disassembles the current instruction for the current system, process, and thread.
 
- 
+ 
 
- 
+ 
 
 
 

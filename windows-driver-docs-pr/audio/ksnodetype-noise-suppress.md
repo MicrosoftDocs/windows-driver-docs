@@ -9,11 +9,7 @@ api_name:
 - KSNODETYPE_NOISE_SUPPRESS
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -41,9 +37,9 @@ A KSNODETYPE\_NOISE\_SUPPRESS node in an AEC filter should support the following
 
 The KSPROPERTY\_TOPOLOGYNODE\_ENABLE property is used to both enable and disable the node. When disabled, the node operates in pass-through mode (that is, it allows the input stream to pass through to the output without modification).
 
- 
+ 
 
- 
+ 
 
 
 

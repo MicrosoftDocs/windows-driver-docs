@@ -2,11 +2,7 @@
 title: KSPROPSETID\_GM
 description: KSPROPSETID\_GM
 ms.assetid: e06adfad-2fc0-4d63-bd2e-28876fe3ada7
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +24,9 @@ This section contains the following topics:
 
 [**KSPROPERTY\_GM\_RENDER\_CLOCK**](ksproperty-gm-render-clock.md)
 
- 
+ 
 
- 
+ 
 
 
 

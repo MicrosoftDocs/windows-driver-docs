@@ -3,11 +3,7 @@ title: The Remote.exe Utility
 description: The Remote.exe Utility
 ms.assetid: 3780d632-939e-4adb-82f1-fd7c25706b54
 keywords: ["remote debugging through remote.exe, remote.exe utility"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,9 +21,9 @@ This utility has a large number of uses. For example, when you are developing so
 
 Please note that remote.exe does no security authorization, and will permit anyone running Remote.exe Client to connect to your Remote.exe Server. This leaves the account under which the Remote.exe Server was run open to anyone who connects.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,11 +1,7 @@
 ---
 Description: Handling Access Control
 title: Handling Access Control
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,7 +22,7 @@ These macros are defined in the file *PortableDevice.h*. They are described in t
 | VERIFY\_WPD\_COMMAND\_ACCESS                     | Compares a given IOCTL and its parameters against the command-access table that is defined in one of the driver modules.                     |
 | WPD\_COMMAND\_ACCESS\_ENTRY                      | Adds a custom entry to the command-access table.                                                                                             |
 
- 
+ 
 
 In the sample driver, the access control verification is performed in the **CQueue::OnDeviceIoControl** and **CQueue::ProcessWpdMessage** methods. These methods are found in the *Queue.cpp* file. In addition, this file contains a command-access table that lists the WPD as well as any custom IOCTLs and their access levels.
 
@@ -156,7 +152,7 @@ HRESULT CQueue::ProcessWpdMessage(
         CHECK_HR(hr, "Failed to deserialize command parameters from input buffer");
     }
 
-    // Verify that that command was sent with the appropriate access
+    // Verify that the command was sent with the appropriate access
     if (hr == S_OK)
     {
         hr = VERIFY_WPD_COMMAND_ACCESS(ControlCode, pParams, g_WpdCommandAccessMap);
@@ -172,9 +168,9 @@ HRESULT CQueue::ProcessWpdMessage(
 ****
 [The WPD Driver Samples](the-wpd-driver-samples.md)
 
- 
+ 
 
- 
+ 
 
 
 

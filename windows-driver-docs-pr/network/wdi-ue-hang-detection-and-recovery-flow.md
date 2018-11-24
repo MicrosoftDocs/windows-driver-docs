@@ -2,11 +2,7 @@
 title: UE hang detection and recovery flow
 description: This diagram shows the UE hang detection and reset flow.
 ms.assetid: 49B73223-91BA-4140-BB2B-8AB0CB355406
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +30,9 @@ This flow diagram applies generically to all NDIS OIDs and callbacks to miniport
 
 [Reset (surprise remove): steps 15-20](wdi-reset--surprise-remove---steps-15-20.md)
 
- 
+ 
 
- 
+ 
 
 
 

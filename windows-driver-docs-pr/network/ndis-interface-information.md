@@ -6,11 +6,7 @@ keywords:
 - management information base WDK networking
 - MIBs WDK networking
 - NDIS WDK , interfaces
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +27,9 @@ NDIS provides enhanced support for Management Instrumentation (WMI). For more in
 
 [**NDIS\_INTERFACE\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff565736)
 
- 
+ 
 
- 
+ 
 
 
 

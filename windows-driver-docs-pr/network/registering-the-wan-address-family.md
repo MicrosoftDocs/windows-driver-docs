@@ -9,11 +9,7 @@ keywords:
 - registering WAN address family
 - WAN address family WDK networking
 - address families WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +27,9 @@ NDIS notifies NDPROXY of the newly-registered address family. NDPROXY determines
 
 NDPROXY can enumerate the TAPI capabilities of the miniport driver and later send TAPI requests that are encapsulated in NDIS structures. For details about using CoNDIS extensions for TAPI support, see [CoNDIS WAN Operations That Support Telephonic Services](condis-wan-operations-that-support-telephonic-services.md).
 
- 
+ 
 
- 
+ 
 
 
 

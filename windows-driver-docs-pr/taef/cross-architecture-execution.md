@@ -2,11 +2,7 @@
 title: Cross Architecture Execution
 description: Cross Architecture Execution
 ms.assetid: 6E7F53A0-7C6A-4063-8300-31E1853EDD04
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -67,9 +63,9 @@ Error: Failed to create the ProcessHostController. TE.ProcessHost.exe may be una
 Error: No test cases were executed.
 ```
 
- 
+ 
 
- 
+ 
 
 
 

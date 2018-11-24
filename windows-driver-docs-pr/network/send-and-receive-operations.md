@@ -11,11 +11,7 @@ keywords:
 - receiving data WDK networking
 - NET_BUFFER_LIST
 - multiple NET_BUFFER_LIST structures WDK networki
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -41,9 +37,9 @@ This section includes the following topics:
 
 [Looping Back NDIS Packets](looping-back-ndis-packets.md)
 
- 
+ 
 
- 
+ 
 
 
 

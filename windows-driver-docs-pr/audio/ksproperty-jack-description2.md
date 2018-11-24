@@ -11,11 +11,7 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -50,13 +46,13 @@ In Windows 7 and later Windows operating systems, this property can be supported
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Pin factory (via filter handle)</p></td>
-<td align="left"><p>[<strong>KSP_PIN</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566722)</p></td>
-<td align="left"><p>[<strong>KSMULTIPLE_ITEM</strong>](http://msdn.microsoft.com/library/windows/hardware/ff563441.aspx) followed by an array of [<strong>KSJACK_DESCRIPTION2</strong>](ksjack-description2.md) structures</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566722" data-raw-source="[&lt;strong&gt;KSP_PIN&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566722)"><strong>KSP_PIN</strong></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff563441.aspx" data-raw-source="[&lt;strong&gt;KSMULTIPLE_ITEM&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff563441.aspx)"><strong>KSMULTIPLE_ITEM</strong></a> followed by an array of <a href="ksjack-description2.md" data-raw-source="[&lt;strong&gt;KSJACK_DESCRIPTION2&lt;/strong&gt;](ksjack-description2.md)"><strong>KSJACK_DESCRIPTION2</strong></a> structures</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (instance data) is a KSMULTIPLE\_ITEM, followed by an array of KSJACK\_DESCRIPTION2 structures.
 
@@ -108,11 +104,11 @@ Requirements
 
 [**KSJACK\_DESCRIPTION2**](ksjack-description2.md)
 
-[KSMULTIPLE\_ITEM](http://msdn.microsoft.com/library/windows/hardware/ff563441.aspx)
+[KSMULTIPLE\_ITEM](https://msdn.microsoft.com/library/windows/hardware/ff563441.aspx)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -11,11 +11,7 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -48,13 +44,13 @@ The **KSPROPERTY\_AUDIOSIGNALPROCESSING\_MODES** property returns the list of au
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Pin factory (via Filter instance)</p></td>
-<td align="left"><p>[KSP_PIN](http://msdn.microsoft.com/library/windows/hardware/ff566722.aspx)</p></td>
-<td align="left"><p>[KSMULTIPLE_ITEM](http://msdn.microsoft.com/library/windows/hardware/ff563441.aspx)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566722.aspx" data-raw-source="[KSP_PIN](https://msdn.microsoft.com/library/windows/hardware/ff566722.aspx)">KSP_PIN</a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff563441.aspx" data-raw-source="[KSMULTIPLE_ITEM](https://msdn.microsoft.com/library/windows/hardware/ff563441.aspx)">KSMULTIPLE_ITEM</a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value is a structure, followed by zero (0) or more GUIDs.
 
@@ -105,13 +101,13 @@ Requirements
 
 [**IMiniportAudioSignalProcessing::GetModes**](https://msdn.microsoft.com/library/windows/hardware/dn457660)
 
-[KSMULTIPLE\_ITEM](http://msdn.microsoft.com/library/windows/hardware/ff563441.aspx)
+[KSMULTIPLE\_ITEM](https://msdn.microsoft.com/library/windows/hardware/ff563441.aspx)
 
-[KSP\_PIN](http://msdn.microsoft.com/library/windows/hardware/ff566722.aspx)
+[KSP\_PIN](https://msdn.microsoft.com/library/windows/hardware/ff566722.aspx)
 
- 
+ 
 
- 
+ 
 
 
 

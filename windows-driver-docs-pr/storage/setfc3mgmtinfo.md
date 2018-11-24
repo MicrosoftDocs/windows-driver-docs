@@ -12,6 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # SetFC3MgmtInfo function
@@ -24,8 +25,8 @@ Syntax
 
 ```ManagedCPlusPlus
 void SetFC3MgmtInfo(
-   [out, HBA_STATUS_QUALIFIERS] HBA_STATUS HBAStatus,
-   [in] HBAFC3MgmtInfo                     MgmtInfo
+   [out, HBA_STATUS_QUALIFIERS] HBA_STATUS HBAStatus,
+   [in] HBAFC3MgmtInfo                     MgmtInfo
 );
 ```
 
@@ -81,9 +82,9 @@ Requirements
 
 [**SetFC3MgmtInfo\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff565667)
 
- 
+ 
 
- 
+ 
 
 
 

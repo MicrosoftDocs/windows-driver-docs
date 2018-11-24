@@ -11,11 +11,7 @@ api_location:
 - ksmedia.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +23,7 @@ The KSPROPERTY\_EXTXPORT\_STATE property sets or gets an external device's trans
 ## <span id="ddk_ksproperty_extxport_state_ks"></span><span id="DDK_KSPROPERTY_EXTXPORT_STATE_KS"></span>
 
 
-### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
+### Usage Summary Table
 
 <table>
 <colgroup>
@@ -51,13 +47,13 @@ The KSPROPERTY\_EXTXPORT\_STATE property sets or gets an external device's trans
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Device</p></td>
-<td><p>[<strong>KSPROPERTY_EXTXPORT_S</strong>](https://msdn.microsoft.com/library/windows/hardware/ff565167)</p></td>
-<td><p>[<strong>TRANSPORT_STATE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff568546)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565167" data-raw-source="[&lt;strong&gt;KSPROPERTY_EXTXPORT_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565167)"><strong>KSPROPERTY_EXTXPORT_S</strong></a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff568546" data-raw-source="[&lt;strong&gt;TRANSPORT_STATE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff568546)"><strong>TRANSPORT_STATE</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a TRANSPORT\_STATE structure that describes the current mode and state of the external transport. For example when the mode is set to play, the state might be set to freeze (paused).
 
@@ -82,18 +78,18 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
-[**KSPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff564262)
+[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)
 
 [**KSPROPERTY\_EXTXPORT\_S**](https://msdn.microsoft.com/library/windows/hardware/ff565167)
 
 [**TRANSPORT\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff568546)
 
- 
+ 
 
- 
+ 
 
 
 

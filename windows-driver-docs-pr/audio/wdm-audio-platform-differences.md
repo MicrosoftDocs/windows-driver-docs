@@ -5,11 +5,7 @@ ms.assetid: bb5d1aa6-edb3-4859-ab65-9622065608e2
 keywords:
 - WDM audio drivers WDK , about WDM audio drivers
 - audio drivers WDK , platform differences
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +29,9 @@ Additional information about WDM platform differences is available elsewhere in 
 
 -   For information about how the support for WDM drivers in general differs among Windows versions, including a discussion of floating-point issues for drivers, see [Differences in WDM Versions](https://msdn.microsoft.com/library/windows/hardware/ff543216).
 
- 
+ 
 
- 
+ 
 
 
 

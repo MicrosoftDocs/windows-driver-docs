@@ -7,11 +7,7 @@ keywords:
 - DRM WDK audio , about DRM
 - DRMK system driver WDK audio
 - decryption WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +27,9 @@ In Windows XP and later, and Windows Me, secure content remains scrambled while 
 
 A DRM-compliant driver must prevent unauthorized copying while digital content is being played. In addition, the driver must disable all digital outputs that can transmit the content over a standard interface (such as S/PDIF) through which the decrypted content can be captured. Note that this requirement does not apply to USB devices. Currently, DRMK plays secure content only through a USB speaker device with no digital outputs.
 
- 
+ 
 
- 
+ 
 
 
 

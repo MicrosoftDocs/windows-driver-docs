@@ -2,11 +2,7 @@
 title: Kernel Mode Performance Monitoring
 description: Kernel Mode Performance Monitoring
 ms.assetid: 317d2f9d-db50-4513-8bbd-28f429236877
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,9 +19,9 @@ The section includes the following topics:
 
 [Kernel Mode Performance Counter Reference](https://msdn.microsoft.com/library/windows/hardware/ff548144)
 
- 
+ 
 
- 
+ 
 
 
 

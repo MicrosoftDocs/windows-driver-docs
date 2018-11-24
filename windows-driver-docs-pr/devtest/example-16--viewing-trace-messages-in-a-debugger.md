@@ -5,11 +5,7 @@ ms.assetid: c548643c-ae0c-47e7-af0a-0d89ed78f281
 keywords:
 - trace message displaying WDK
 - displaying trace messages
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -45,9 +41,9 @@ In response, Tracelog reports that it has started the session. When the trace pr
 
 To view the messages in the debugger, use the WMI Tracing Extensions. For information, see [Debugging Tools for Windows](http://go.microsoft.com/fwlink/p/?linkid=8708).
 
- 
+ 
 
- 
+ 
 
 
 

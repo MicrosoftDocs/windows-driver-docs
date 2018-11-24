@@ -5,11 +5,7 @@ ms.assetid: 2a2e4209-6d11-433a-90df-bdbb7a60503b
 keywords:
 - non-standard packets and messages WDK TCP chimney offload , urgent data
 - urgent data WDK TCP chimney offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +30,9 @@ If an offload target receives urgent data (that is, a TCP segment in which the U
 
 At any time, the host stack can pass urgent data, as buffered receive data, to an offload target when offloading a TCP connection. (For more information about this situation, see [Handling Buffered Receive Data During and After an Offload Operation](handling-buffered-receive-data-during-and-after-an-offload-operation.md).) An offload target must process such urgent data by using the preceding procedure. That is, an offload target must process the urgent data that is received in this way in the same way that it processes urgent data that is received from the network.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,11 +3,7 @@ title: error
 description: The error extension decodes and displays information about an error value.
 ms.assetid: 4999ab4b-2f55-47d4-b9a7-6f1231271fcc
 keywords: ["error codes", "Win32 error codes", "WinSock error codes", "error Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!error** extension decodes and displays information about an error value.
 
-```
+```dbgcmd
 !error Value [Flags]
 ```
 
@@ -62,23 +58,23 @@ If *Flags* is set to 1, the error code is read as an NTSTATUS code.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
 
 The following example shows you how to use **!error**.
 
-```
+```dbgcmd
 0:000> !error 2
 Error code: (Win32) 0x2 (2) - The system cannot find the file specified.
 0:000> !error 2 1
 Error code: (NTSTATUS) 0x2 - STATUS_WAIT_2
 ```
 
- 
+ 
 
- 
+ 
 
 
 

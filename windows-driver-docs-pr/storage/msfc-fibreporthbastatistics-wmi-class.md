@@ -3,6 +3,7 @@ title: MSFC\_FibrePortHBAStatistics WMI Class
 description: MSFC\_FibrePortHBAStatistics WMI Class
 ms.assetid: 24c787b6-b9f7-4c9b-8d1d-6b2796f65622
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MSFC\_FibrePortHBAStatistics WMI Class
@@ -15,7 +16,7 @@ A WMI client uses the MSFC\_FibrePortHBAStatistics class to query an HBA minipor
 
 The MSFC\_FibrePortHBAStatistics class is defined as follows in *Hbaapi.mof*:
 
-```
+```cpp
 class MSFC_FibrePortHBAStatistics
 {
     [key] 
@@ -50,9 +51,9 @@ When compiled by the WMI tool suite this class definition produces the following
 
 There are no methods associated with this WMI class.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -7,11 +7,7 @@ keywords:
 - Video Acceleration WDK DirectX , accelerator capabilities
 - VA WDK DirectX , accelerator capabilities
 - restricted profiles WDK DirectX VA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,9 +31,9 @@ If in DirectX VA an accelerator is used without strict conformance to a restrict
 
 All defined values of the **bDXVA\_Func** variable are allowed.
 
- 
+ 
 
- 
+ 
 
 
 

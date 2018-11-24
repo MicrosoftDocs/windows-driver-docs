@@ -2,11 +2,7 @@
 title: Hyper-V Extensible Switch Components
 description: Hyper-V Extensible Switch Components
 ms.assetid: 510A4D75-8DB4-46D7-BA54-248ED4FEC349
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,9 +31,9 @@ This section includes the following topics that describe the extensible switch c
 
 [Hyper-V Extensible Switch Port and Network Adapter States](hyper-v-extensible-switch-port-and-network-adapter-states.md)
 
- 
+ 
 
- 
+ 
 
 
 

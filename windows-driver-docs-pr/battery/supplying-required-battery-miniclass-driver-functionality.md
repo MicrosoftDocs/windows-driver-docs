@@ -6,11 +6,7 @@ keywords:
 - battery miniclass drivers WDK , routines
 - routines WDK battery
 - battery miniclass drivers WDK , functionality
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -54,9 +50,9 @@ Battery miniclass drivers must include the following header files:
 
 -   Ntddk.h or Wdm.h
 
- 
+ 
 
- 
+ 
 
 
 

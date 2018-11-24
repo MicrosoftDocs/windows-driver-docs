@@ -4,11 +4,7 @@ description: Support for More than 64 Processors in NDIS 6.20
 ms.assetid: 3fb2a09c-e2dd-48b8-a631-3793bd023ef0
 keywords:
 - NDIS 6.20 WDK , support for more than 64 processors
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,7 +20,7 @@ To remain backward compatible with older implementations, NDIS supports processo
 
 To support more than 64 processors, NDIS 6.20 and later provide updated versions of these interfaces:
 
--   [Receive Side Scaling (RSS)](https://msdn.microsoft.com/library/windows/hardware/ff567232)
+-   [Receive Side Scaling (RSS)](ndis-receive-side-scaling2.md)
 
 -   Processor information device driver interfaces (see [NDIS System Information Functions](https://msdn.microsoft.com/library/windows/hardware/ff564816))
 
@@ -34,9 +30,9 @@ To support more than 64 processors, NDIS 6.20 and later provide updated versions
 
 Some of the NDIS device driver interface elements are obsolete for NDIS 6.20 and later drivers. For more information about obsolete interfaces, see [Obsolete Interfaces in NDIS 6.20](obsolete-interfaces-in-ndis-6-20.md).
 
- 
+ 
 
- 
+ 
 
 
 

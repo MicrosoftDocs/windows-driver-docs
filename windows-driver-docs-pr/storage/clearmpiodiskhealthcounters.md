@@ -12,6 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # ClearMpioDiskHealthCounters function
@@ -24,7 +25,7 @@ Syntax
 
 ```ManagedCPlusPlus
 void ClearMpioDiskHealthCounters(
-   [in, Description("MPIO Disk Ordinal"):amended] uint32 DiskOrdinal
+   [in, Description("MPIO Disk Ordinal"):amended] uint32 DiskOrdinal
 );
 ```
 
@@ -64,9 +65,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

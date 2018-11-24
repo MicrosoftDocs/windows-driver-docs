@@ -9,11 +9,7 @@ keywords:
 - data-range intersections WDK audio
 - sink pins WDK audio
 - source pins WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -69,9 +65,9 @@ To summarize, the search for an intersection between a source-pin data range and
 
 The search stops upon finding the first data intersection. This process tends to favor the elements toward the beginning of each pin's data-range array. When specifying an array of data ranges for a pin, an adapter driver should order the array elements by placing data ranges for preferred formats toward the beginning of the array.
 
- 
+ 
 
- 
+ 
 
 
 

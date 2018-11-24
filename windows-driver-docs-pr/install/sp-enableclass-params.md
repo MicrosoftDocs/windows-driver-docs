@@ -10,6 +10,7 @@ api_name:
 api_type:
 - NA
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # SP_ENABLECLASS_PARAMS
@@ -17,9 +18,9 @@ ms.localizationpriority: medium
 
 This structure is obsolete.
 
- 
+ 
 
- 
+ 
 
 
 

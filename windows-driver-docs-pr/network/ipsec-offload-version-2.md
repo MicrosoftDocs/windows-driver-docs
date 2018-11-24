@@ -5,11 +5,7 @@ ms.assetid: f83228bd-f912-4c85-92db-189949e6d60d
 keywords:
 - IPsec offload WDK TCP/IP transport , version 2
 - IPsecOV2 WDK TCP/IP transport
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,9 +32,9 @@ This section includes:
 
 [Receiving Network Data with IPsec Offload Version 2](receiving-network-data-with-ipsec-offload-version-2.md)
 
- 
+ 
 
- 
+ 
 
 
 

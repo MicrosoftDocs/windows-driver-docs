@@ -1,13 +1,8 @@
 ---
 title: Minidriver requirements for tablet PCs
-author: windows-driver-content
 description: Describes the general requirements for vendor-supplied HID minidrivers for pen devices and button devices.
 ms.assetid: 89BE7E13-4D46-4265-9522-D5A51999F633
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -53,9 +48,9 @@ A Tablet PC button device supplements pen input on a Tablet PC. A button device 
 
 -   Provide a top-level collection whose usage page is Generic Desktop and whose usage is Tablet PC System Controls. Button events are reported by using a button array whose usage page is Button and the usage values range from 1 to the number of buttons.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: Verb
 description: Verb
 ms.assetid: 38edbb37-5fd4-4301-adc0-4a66a7e8a564
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -49,13 +45,13 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[AutoplayHandler](autoplayhandler.md)</p></td>
+<td><p><a href="autoplayhandler.md" data-raw-source="[AutoplayHandler](autoplayhandler.md)">AutoplayHandler</a></p></td>
 <td><p>Specifies a UWP device app that should appear as the recommended AutoPlay action when a user plugs in a device.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="XSD"></span><span id="xsd"></span>XSD
 
@@ -76,9 +72,9 @@ There are no child elements.
 
 The Verb element is optional.
 
- 
+ 
 
- 
+ 
 
 
 

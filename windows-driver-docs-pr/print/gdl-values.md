@@ -1,6 +1,5 @@
 ---
 title: GDL Values
-author: windows-driver-content
 description: GDL Values
 ms.assetid: 0e634646-d334-4b9c-b9d2-36026f617575
 keywords:
@@ -12,11 +11,7 @@ keywords:
 - Value Macro References WDK GDL
 - values WDK GDL , examples
 - contexts WDK GDL
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -47,7 +42,7 @@ For more information about GDL contexts, see [GDL Contexts](gdl-contexts.md).
 
 The following code examples show values that are acceptable to the GDL parser.
 
-```
+```cpp
 *Value: *%  Null Value - only a comment
 
 *Value: "Quoted String"
@@ -66,9 +61,9 @@ The following code examples show values that are acceptable to the GDL parser.
 +  not continuation chars, *% this is not a comment  <EndValue:anything>
 ```
 
- 
+ 
 
- 
+ 
 
 
 

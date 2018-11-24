@@ -3,11 +3,7 @@ title: verifier
 description: The verifier extension displays the status of Driver Verifier and its actions.
 ms.assetid: e84993e1-da10-4041-8fc7-7f40806ee454
 keywords: ["Driver Verifier", "verifier Windows Debugging"]
-ms.author: domars
 ms.date: 05/03/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,11 +18,11 @@ ms.localizationpriority: medium
 
 The **!verifier** extension displays the status of Driver Verifier and its actions.
 
-Driver Verifier is included in Windows. It works on both checked and free builds. For information about Driver Verifier, see the [Driver Verifier](http://go.microsoft.com/fwlink/p/?linkid=120480) topic in the Windows Driver Kit (WDK) documentation.
+Driver Verifier is included in Windows. It works on both checked and free builds. For information about Driver Verifier, see the [Driver Verifier](https://go.microsoft.com/fwlink/p/?linkid=120480) topic in the Windows Driver Kit (WDK) documentation.
 
 Syntax
 
-```
+```dbgcmd
 !verifier [Flags [Image]] 
 !verifier 4 [Quantity] 
 !verifier 8 [Quantity]  
@@ -61,7 +57,7 @@ Displays information about pools (pool size, headers, and pool tags) and outstan
 
 **Warning**  In 64-bit versions of Windows, some of the kernel functions that raise or lower the IRQL are implemented as inline code rather than as exported functions. Driver Verifier does not report IRQL changes made by inline code, so it is possible for the IRQL transition log produced by Driver Verifier to be incomplete. See Remarks for an example of a missing IRQL transition entry.
 
- 
+ 
 
 <span id="Bit_6__0x40_"></span><span id="bit_6__0x40_"></span><span id="BIT_6__0X40_"></span>Bit 6 (0x40)  
 (Windows Vista and later) Displays information from the **Force Pending I/O Requests** option of Driver Verifier, including traces from the log of forced pending IRPs.
@@ -113,7 +109,7 @@ Kdexts.dll
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
-For information about [Driver Verifier](http://go.microsoft.com/fwlink/p/?linkid=120480), see the Windows Driver Kit (WDK) documentation.
+For information about [Driver Verifier](https://go.microsoft.com/fwlink/p/?linkid=120480), see the Windows Driver Kit (WDK) documentation.
 
 
 Remarks
@@ -121,7 +117,7 @@ Remarks
 
 The following example illustrates that on 64-bit versions of Windows, the IRQL transition log is not always complete. The two entries shown are consecutive entries in the log for Processor 2. The first entry shows the IRQL going from 2 to 0. The second entry shows the IRQL going from 2 to 2. Information about how the IRQL got raised from 0 to 2 is missing.
 
-```
+```dbgcmd
 Thread:             fffffa80068c9400
 Old irql:           0000000000000002
 New irql:           0000000000000000
@@ -159,7 +155,7 @@ Also, if *Flags* equals 0x20 (with or without additional parameters), the Driver
 
 Here is an example of the **!verifier** extension on a Windows 7 computer.
 
-```
+```dbgcmd
 2: kd> !verifier 0xf
 
 Verify Level 9bb ... enabled options are:
@@ -285,7 +281,7 @@ Time stamp:         000000000000495e
 
 Here is an example of the **!verifier** extension on a Windows Vista computer with bit 7 turned on and *Address* specified.
 
-```
+```dbgcmd
 0: kd> !verifier 80 a2b1cf20
 # Parsing 00004000 array entries, searching for address a2b1cf20.
 
@@ -320,9 +316,9 @@ Pool block a2b1ce98, Size 00000164, Thread a2b1ce98
 8204d16a nt!KiFastCallEntry+0x127
 ```
 
- 
+ 
 
- 
+ 
 
 
 

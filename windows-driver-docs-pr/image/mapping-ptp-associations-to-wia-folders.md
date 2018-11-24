@@ -1,13 +1,8 @@
 ---
 title: Mapping PTP Associations to WIA Folders
-author: windows-driver-content
 description: Mapping PTP Associations to WIA Folders
 ms.assetid: 81de26fd-1f93-4018-a628-ad0b0d7468ba
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -71,7 +66,7 @@ AncillaryData
 
 See accompanying text.
 
- 
+ 
 
 The **SequenceNumber** field of the ObjectInfo dataset is put into the WIA\_IPC\_SEQUENCE property. The PTP driver does not currently use the WIA\_IPC\_XCOORDINATE and WIA\_IPC\_YCOORDINATE properties. The **AssociationDesc** member of the ObjectInfo dataset is currently not used.
 
@@ -83,9 +78,9 @@ When an AncillaryData association is mapped to a WIA folder, the nonimage object
 
 ![wia item with attachments](images/wiaattch.png)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -4,11 +4,7 @@ description: Proprietary Speaker-Configuration Utilities
 ms.assetid: d04b8c1b-13c6-422f-b13a-909f7074ac75
 keywords:
 - proprietary speaker-configuration utilities WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,7 +16,7 @@ ms.localizationpriority: medium
 
 **Note**  This information applies to Windows XP and earlier operating systems. Starting with Windows Vista, **IDirectSound::GetSpeakerConfig** and **IDirectSound::SetSpeakerConfig** have been deprecated.
 
- 
+ 
 
 Hardware vendors occasionally provide proprietary speaker-configuration utilities to be used with their audio drivers in place of the speaker dialog in Control Panel. Such utilities have a potential problem: they sometimes change the speaker configuration in a proprietary way that fails to notify Windows of the change. This can result in a bad user experience if the settings in the proprietary utility do not match those in Control Panel. If you believe that your device requires a proprietary utility, you should take the following steps to integrate your utility with Windows:
 
@@ -38,9 +34,9 @@ If your device supports multichannel formats that have no precise Windows equiva
 
 If you make Windows more aware of your device's capabilities, DirectSound can enable some features that it could not otherwise enable (for example, multichannel 3D panning).
 
- 
+ 
 
- 
+ 
 
 
 

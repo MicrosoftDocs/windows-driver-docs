@@ -2,11 +2,7 @@
 title: Create a MobileBroadbandDeviceInformation object
 description: Create a MobileBroadbandDeviceInformation object
 ms.assetid: d7f89045-acb5-4b7c-9154-c05e4169490d
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,9 +31,9 @@ else
 
 [Common tasks for mobile broadband Windows Runtime APIs](common-tasks-for-mobile-broadband-windows-runtime-apis.md)
 
- 
+ 
 
- 
+ 
 
 
 

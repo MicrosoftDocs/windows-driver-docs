@@ -11,11 +11,7 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,7 +20,7 @@ ms.localizationpriority: medium
 
 The KSPROPERTY\_TUNER\_SCAN\_CAPS property describes the scanning capabilities of the tuning device, including the network types that the device supports. This property must be implemented for an AVStream tuning minidriver that runs on Windows Vista and later.
 
-### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
+### Usage Summary Table
 
 <table>
 <colgroup>
@@ -48,13 +44,13 @@ The KSPROPERTY\_TUNER\_SCAN\_CAPS property describes the scanning capabilities o
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p>[<strong>KSPROPERTY_TUNER_SCAN_CAPS_S</strong>](https://msdn.microsoft.com/library/windows/hardware/ff565892)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565892" data-raw-source="[&lt;strong&gt;KSPROPERTY_TUNER_SCAN_CAPS_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565892)"><strong>KSPROPERTY_TUNER_SCAN_CAPS_S</strong></a></p></td>
 <td><p>KSPROPERTY_TUNER_SCAN_CAPS_S</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a KSPROPERTY\_TUNER\_SCAN\_CAPS\_S structure that specifies the supported network types and whether the driver or firmware for the tuning device can support hardware-assisted scanning operations.
 
@@ -91,14 +87,14 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**KSPROPERTY\_TUNER\_SCAN\_CAPS\_S**](https://msdn.microsoft.com/library/windows/hardware/ff565892)
 
- 
+ 
 
- 
+ 
 
 
 

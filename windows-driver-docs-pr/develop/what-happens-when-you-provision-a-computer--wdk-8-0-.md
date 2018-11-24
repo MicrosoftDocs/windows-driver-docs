@@ -2,21 +2,17 @@
 ms.assetid: A8888EF1-5A6F-4B08-8743-27EEECD4FF72
 title: What happens when you provision a computer (WDK 8.0)
 description: Here we show what happens when you use version 8.0 of the Windows Driver Kit (WDK) to provision a target computer.
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # What happens when you provision a computer (WDK 8.0)
 
-Using Microsoft Visual Studio to configure and set up driver deployment and driver testing is called *provisioning a target computer* or *provisioning a test computer*. For information about provisioning with Windows Driver Kit (WDK) 8 , see [Provision a computer for driver deployment and testing (WDK 8)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh698272). Here we show what happens when you use version 8.0 of the Windows Driver Kit (WDK) to provision a target computer.
+Using Microsoft Visual Studio to configure and set up driver deployment and driver testing is called *provisioning a target computer* or *provisioning a test computer*. For information about provisioning with Windows Driver Kit (WDK) 8 , see [Provision a computer for driver deployment and testing (WDK 8)](https://msdn.microsoft.com/Library/Windows/Hardware/Hh698272). Here we show what happens when you use version 8.0 of the Windows Driver Kit (WDK) to provision a target computer.
 
-**Note**  WDK 8 is not the most current version of the WDK. We recommend that you get the current version of the WDK and provision your target computer according to the [provisioning instructions here](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh698272).
+**Note**  WDK 8 is not the most current version of the WDK. We recommend that you get the current version of the WDK and provision your target computer according to the [provisioning instructions here](https://msdn.microsoft.com/Library/Windows/Hardware/Hh698272).
 
- 
+ 
 
 ## <span id="when_you_provision_a_computer_wdk_8_0"></span><span id="WHEN_YOU_PROVISION_A_COMPUTER_WDK_8_0"></span>When you provision a computer (WDK 8.0)
 
@@ -27,9 +23,9 @@ Provisioning a computer performs the following tasks:
 -   Creates a user named WDKRemoteUser and switches to that user
 -   Installs .NET 4.0 if it is not already installed
 -   Installs Microsoft Visual C++ Redistributable
--   Installs [Test Authoring and Execution Framework (TAEF)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh439725) (WDK Client)
+-   Installs [Test Authoring and Execution Framework (TAEF)](https://msdn.microsoft.com/Library/Windows/Hardware/Hh439725) (WDK Client)
 -   Installs debuggers
--   Installs [Windows Device Testing Framework](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff539547) (WDTF)
+-   Installs [Windows Device Testing Framework](https://msdn.microsoft.com/Library/Windows/Hardware/Ff539547) (WDTF)
 -   Turns off AutoReboot
 -   Enables kernel memory crash dumps
 -   Disables Screen Saver
@@ -76,9 +72,9 @@ Removing provisioning does not change these items:
 -   Kernel debugging settings
 -   Test signing setting
 
- 
+ 
 
- 
+ 
 
 
 

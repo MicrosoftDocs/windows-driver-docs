@@ -9,11 +9,7 @@ api_name:
 - wscn ColorEntry
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **ColorEntry** element describes a single color-processing mode tha
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ColorEntry>
   text
 </wscn:ColorEntry>
@@ -88,7 +84,7 @@ Required. One of the following keywords:
 </tbody>
 </table>
 
- 
+ 
 
 ## Child elements
 
@@ -109,13 +105,13 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ADFColor</strong>](adfcolor.md)</p></td>
+<td><p><a href="adfcolor.md" data-raw-source="[&lt;strong&gt;ADFColor&lt;/strong&gt;](adfcolor.md)"><strong>ADFColor</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>FilmColor</strong>](filmcolor.md)</p></td>
+<td><p><a href="filmcolor.md" data-raw-source="[&lt;strong&gt;FilmColor&lt;/strong&gt;](filmcolor.md)"><strong>FilmColor</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>PlatenColor</strong>](platencolor.md)</p></td>
+<td><p><a href="platencolor.md" data-raw-source="[&lt;strong&gt;PlatenColor&lt;/strong&gt;](platencolor.md)"><strong>PlatenColor</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -136,11 +132,11 @@ Each value keyword describes the color data type and encoding, bit depth, and bi
 | RGBa32         | 32              | {8,8,8,8}        |
 | RGBa64         | 64              | {16,16,16,16}    |
 
- 
+ 
 
 You can both extend and subset the allowed values for this element.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ADFColor**](adfcolor.md)
@@ -149,9 +145,9 @@ You can both extend and subset the allowed values for this element.
 
 [**PlatenColor**](platencolor.md)
 
- 
+ 
 
- 
+ 
 
 
 

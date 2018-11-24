@@ -1,16 +1,11 @@
 ---
 title: Reparse Points in a File System Filter Driver
-author: windows-driver-content
 description: Reparse Points in a File System Filter Driver
 ms.assetid: 6aae70d9-c934-4759-bb26-728b0ac025d1
 keywords:
 - security WDK file systems , reparse points
 - reparse points WDK file systems
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,9 +19,9 @@ A filter driver that processes reparse points must be aware of the risk that an 
 
 Otherwise, it is possible that a malicious application could create reparse points that have invalid reparse point information. In this case, the file system filter driver must be prepared to handle invalid reparse point data, including self-referential data (data that creates reference loops that might cause some sort of overflow, for example), data overflow issues, and invalid data contents.
 
- 
+ 
 
- 
+ 
 
 
 

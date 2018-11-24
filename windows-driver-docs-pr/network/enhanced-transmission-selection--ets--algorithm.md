@@ -2,11 +2,7 @@
 title: Enhanced Transmission Selection (ETS) Algorithm
 description: Enhanced Transmission Selection (ETS) Algorithm
 ms.assetid: 952ECB1E-96AD-4717-8E49-68558E7E9AD4
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,9 +31,9 @@ NDIS Quality of Service (QoS) traffic classes are defined through OID method req
 
 For more information about priority levels, see [IEEE 802.1p Priority Levels](ieee-802-1p-priority-levels.md).
 
- 
+ 
 
- 
+ 
 
 
 

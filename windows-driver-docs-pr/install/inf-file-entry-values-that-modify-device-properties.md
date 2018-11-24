@@ -4,11 +4,7 @@ description: INF File Entry Values That Modify Device Properties before Windows 
 ms.assetid: b2a1f265-fc9b-47fb-83af-b4f66d79da83
 keywords:
 - device properties WDK device installations , modifying
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -49,7 +45,7 @@ Many system-defined device properties have corresponding system-defined registry
 
 For example, the INF **AddReg** directive in the following "Abc_Device_Install.HW" section would set the **DeviceCharacteristics** registry entry value for a device instance:
 
-```
+```cpp
 [Abc_Device_Install.HW]
 ...
 AddReg = Xxx_AddReg
@@ -58,7 +54,6 @@ AddReg = Xxx_AddReg
 ...
 [HKR,,DeviceCharacteristics,0x10001,0x00000001
 ] 
- 
 ```
 
 The **DeviceCharacteristics** registry entry value corresponds to the [**DEVPKEY_Device_Characteristics**](https://msdn.microsoft.com/library/windows/hardware/ff542375) property in the [unified device property model](unified-device-property-model--windows-vista-and-later-.md) in Windows Vista and later versions of Windows.
@@ -69,7 +64,7 @@ Windows manages the correspondence between system-defined registry entry values 
 
 Custom device instance properties that are set as shown in the following example, can be retrieved by calling [**SetupDiGetCustomDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551099).
 
-```
+```cpp
 [XxxDDInstall.HW]
 ...
 AddReg = Xxx_AddReg
@@ -78,14 +73,13 @@ AddReg = Xxx_AddReg
 ...
 [HKR,,CustomPropertyName,0x10001,0x00000001
 ] 
- 
 ```
 
 For more information about how to access custom device properties that have corresponding custom registry entry values, see [Accessing Custom Device Properties](accessing-custom-device-properties.md).
 
- 
 
- 
+
+
 
 
 

@@ -6,11 +6,7 @@ keywords:
 - timer services WDK NDIS
 - NDIS timer services WDK
 - canceling NDIS timers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,9 +28,9 @@ To stop calls to a *NetTimerCallback* function, call the [**NdisCancelTimerObjec
 
 If a *NetTimerCallback* function shares resources with other driver functions, the driver should synchronize access to those resources with a spin lock.
 
- 
+ 
 
- 
+ 
 
 
 

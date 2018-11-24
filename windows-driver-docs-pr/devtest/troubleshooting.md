@@ -4,11 +4,7 @@ description: Troubleshooting the metadata authoring wizards
 ms.assetid: EBAF4289-DA23-4FFE-8CC0-DD21021CBA86
 keywords:
 - Troubleshooting the Metadata Authoring Wizard
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -48,7 +44,7 @@ If you receive any of the following error messages, refer to the Resolution colu
 <tr class="even">
 <td align="left"></td>
 <td align="left">Welcome</td>
-<td align="left">The chosen file doesn't exist</td>
+<td align="left">The chosen file doesn&#39;t exist</td>
 <td align="left">Correct the file path or name.</td>
 </tr>
 <tr class="odd">
@@ -83,7 +79,7 @@ If you receive any of the following error messages, refer to the Resolution colu
 <tr class="odd">
 <td align="left"></td>
 <td align="left">Association</td>
-<td align="left">Invalid format : &quot;Value&quot; - don't add { } in the beginning and end.</td>
+<td align="left">Invalid format : &quot;Value&quot; - don&#39;t add { } in the beginning and end.</td>
 <td align="left">Remove the {} and try again.</td>
 </tr>
 <tr class="even">
@@ -96,7 +92,7 @@ If you receive any of the following error messages, refer to the Resolution colu
 <td align="left"></td>
 <td align="left">Icon</td>
 <td align="left">There were problems with the icon file: &quot;Error Message&quot; Icon Validation Error</td>
-<td align="left">The icon can't be found or doesn't meet the requirement to be displayed in Devices and Printers in Control Panel. Find or fix the icon and try again.
+<td align="left">The icon can&#39;t be found or doesn&#39;t meet the requirement to be displayed in Devices and Printers in Control Panel. Find or fix the icon and try again.
 <p>Error examples:</p>
 <ul>
 <li>Error: Image 256x256 transparency needs to be set.</li>
@@ -124,11 +120,11 @@ If you receive any of the following error messages, refer to the Resolution colu
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

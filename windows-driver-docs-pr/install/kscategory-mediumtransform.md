@@ -12,6 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # KSCATEGORY_MEDIUMTRANSFORM
@@ -42,7 +43,7 @@ The KSCATEGORY_MEDIUMTRANSFORM [device interface class](https://msdn.microsoft.c
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -72,9 +73,9 @@ Requirements
 
 [**KSPROPERTY_TOPOLOGY_CATEGORIES**](https://msdn.microsoft.com/library/windows/hardware/ff565799)
 
- 
+ 
 
- 
+ 
 
 
 

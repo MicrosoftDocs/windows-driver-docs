@@ -3,6 +3,7 @@ title: ISCSI\_RedirectPortalInfo WMI Class
 description: ISCSI\_RedirectPortalInfo WMI Class
 ms.assetid: 55730446-7c8b-4c9d-9473-f9bb6edd603e
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # ISCSI\_RedirectPortalInfo WMI Class
@@ -10,7 +11,7 @@ ms.localizationpriority: medium
 
 The ISCSI\_RedirectPortalInfo WMI class contains information about a collection of iSCSI portals. This class is defined as follows in *Mgmt.mof*.
 
-```
+```cpp
 class ISCSI_RedirectPortalInfo
 {
     [read,
@@ -53,9 +54,9 @@ class ISCSI_RedirectPortalInfo
 
 When the WMI tool suite compiles the preceding class definition, it produces the [**ISCSI\_RedirectPortalInfo**](https://msdn.microsoft.com/library/windows/hardware/ff561561) data structure.
 
- 
+ 
 
- 
+ 
 
 
 

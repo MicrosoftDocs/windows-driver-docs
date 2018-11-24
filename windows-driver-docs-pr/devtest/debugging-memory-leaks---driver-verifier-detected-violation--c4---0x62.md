@@ -2,11 +2,7 @@
 title: Debugging memory leaks - DRIVER_VERIFIER_DETECTED_VIOLATION (C4) 0x62
 description: Driver Verifier generates Bug Check 0xC4 DRIVER_VERIFIER_DETECTED_VIOLATION with a parameter 1 value of 0x62 when a driver unloads without first freeing all of its pool allocations.
 ms.assetid: CDBE9A18-4126-4AD7-8E53-6D75DCA8B022
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -75,7 +71,7 @@ Reserved
 Total number of allocations that were not freed, including both paged and non-paged pool.
 The driver is unloading without first freeing its pool allocations. In Windows 8.1, this bug check will also occur if the driver unloaded without first freeing any work items ([**IO\_WORKITEM**](https://msdn.microsoft.com/library/windows/hardware/ff550679)) it had allocated with [**IoAllocateWorkItem**](https://msdn.microsoft.com/library/windows/hardware/ff548276). A bug check with this parameter occurs only when the [Pool Tracking](pool-tracking.md) option is active.
 Specify [Pool Tracking](pool-tracking.md) (**verifier /flags 0x8**). The Pool Tracking option is enabled with Standard Flags (**verifier /standard** ).
- 
+ 
 
 ### Use the !verifier 3 extension command to find out about the pool allocations
 
@@ -279,9 +275,9 @@ For other techniques you can use, including scenarios where Driver Verifier is n
 
 [Handling a Bug Check When Driver Verifier is Enabled](https://msdn.microsoft.com/library/windows/hardware/hh450984)
 
- 
+ 
 
- 
+ 
 
 
 

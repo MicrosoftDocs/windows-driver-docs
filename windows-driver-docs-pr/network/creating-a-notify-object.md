@@ -5,11 +5,7 @@ ms.assetid: 120f78ae-3ef3-4d3c-af6a-c2aa3edbc5d5
 keywords:
 - notify objects WDK networking , creating
 - network notify objects WDK , creating
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -43,9 +39,9 @@ The following topics describe how to create a notify object:
 
 [Retrieving Network Configuration Interface Pointers](retrieving-network-configuration-interface-pointers.md)
 
- 
+ 
 
- 
+ 
 
 
 

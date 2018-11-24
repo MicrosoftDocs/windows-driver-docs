@@ -1,12 +1,7 @@
 ---
 title: IRP_MN_CHANGE_SINGLE_INSTANCE
-author: windows-driver-content
 description: All drivers that support WMI must handle this IRP.
-ms.author: windowsdriverdev
 ms.date: 08/12/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.assetid: 180d40a4-b300-4801-b9da-9239500ca15f
 keywords:
  - IRP_MN_CHANGE_SINGLE_INSTANCE Kernel-Mode Driver Architecture
@@ -126,9 +121,9 @@ Requirements
 
 [**WNODE\_SINGLE\_INSTANCE**](https://msdn.microsoft.com/library/windows/hardware/ff566377)
 
- 
+ 
 
- 
+ 
 
 
 

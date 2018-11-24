@@ -2,11 +2,7 @@
 title: KSPROPSETID\_SoundDetector
 description: .
 ms.assetid: FC4A354B-D42C-4199-B613-1E1B75A600C6
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,9 +32,9 @@ The `KSPROPSETID_SoundDetector` property set contains the following properties:
 
 -   [**KSPROPERTY\_SOUNDDETECTOR\_SUPPORTEDPATTERNS**](ksproperty-sounddetector-supportedpatterns.md)
 
- 
+ 
 
- 
+ 
 
 
 

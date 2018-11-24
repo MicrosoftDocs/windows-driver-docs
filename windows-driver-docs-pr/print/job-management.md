@@ -1,13 +1,8 @@
 ---
 title: Job Management
-author: windows-driver-content
 description: A job management feature has been introduced in Windows 8.1 and later versions of Windows to provide a live view of the job queue.
 ms.assetid: D1236DD2-D4AD-4615-9036-7EC75D6CADCE
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -44,7 +39,7 @@ Note that the print queue is a dynamic queue. So each time the status of the pri
 
 The following C# code snippet illustrates the use of the new interfaces for initiating a job management session.
 
-```CSharp
+```csharp
 void PerformJobManagement(IPrinterQueue2 queue)
 {
     //

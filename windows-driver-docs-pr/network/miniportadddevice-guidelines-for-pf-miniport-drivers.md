@@ -2,11 +2,7 @@
 title: MiniportAddDevice Guidelines for PF Miniport Drivers
 description: MiniportAddDevice Guidelines for PF Miniport Drivers
 ms.assetid: D67FDBA0-C020-4557-9199-B9FF6F91DE6B
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -17,7 +13,7 @@ This topic describes the guidelines for writing a [*MiniportAddDevice*](https://
 
 **Note**  These guidelines only apply to PF miniport drivers. For initialization guidelines for the miniport driver of a PCIe Virtual Function (VF) of the adapter, see [Initializing a VF Miniport Driver](initializing-a-vf-miniport-driver.md).
 
- 
+ 
 
 The Plug and Play (PnP) Manager calls the NDIS [*AddDevice*](https://msdn.microsoft.com/library/windows/hardware/ff540521) function to create the functional device object (FDO) for the network adapter. If the PF miniport driver registered a [*MiniportAddDevice*](https://msdn.microsoft.com/library/windows/hardware/ff559332) entry point when it called [**NdisMRegisterMiniportDriver**](https://msdn.microsoft.com/library/windows/hardware/ff563654), NDIS calls the driver's *MiniportAddDevice* function.
 
@@ -31,11 +27,11 @@ The driver can do the following within the context of the call to [*MiniportAddD
 
 **Note**  The actual allocation of hardware resources and the enabling of SR-IOV in the PCI configuration space must only be done within the context of the call to [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389). Because the network adapter's memory-mapped I/O (MMIO) space is uninitialized when [*MiniportAddDevice*](https://msdn.microsoft.com/library/windows/hardware/ff559332) is called, the miniport driver must not read or write to the adapter until *MiniportInitializeEx* is called.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

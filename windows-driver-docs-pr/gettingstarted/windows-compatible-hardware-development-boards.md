@@ -2,11 +2,7 @@
 title: Windows compatible hardware development boards
 description: Leverage the power of the Windows platform and Visual Studio to create innovative experiences and solutions that are brought to life by interfacing hardware components to Windows devices.
 ms.assetid: 241AC0DF-4DE6-481A-BBDB-13F811686B40
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,7 +25,7 @@ Windows compatible hardware development boards offer an affordable, yet a powerf
 ## <span id="Supported_Hardware_Development_Boards"></span><span id="supported_hardware_development_boards"></span><span id="SUPPORTED_HARDWARE_DEVELOPMENT_BOARDS"></span>Supported Hardware Development Boards
 
 
-For information on the latest supported development boards, see [IoT Device Options](https://developer.microsoft.com/windows/iot/getstarted/prototype/selectdevice).
+For information on the latest supported development boards, see [IoT Device Options](https://docs.microsoft.com/windows/iot-core/learn-about-hardware/socsandcustomboards).
 
 ## <span id="Learn_more"></span><span id="learn_more"></span><span id="LEARN_MORE"></span>Learn more
 
@@ -52,9 +48,9 @@ For information on the latest supported development boards, see [IoT Device Opti
 
     [Windows Hardware and Driver Developer Community](http://go.microsoft.com/fwlink/p/?linkid=393552)
 
- 
+ 
 
- 
+ 
 
 
 

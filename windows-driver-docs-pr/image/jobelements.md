@@ -9,11 +9,7 @@ api_name:
 - wscn JobElements
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **JobElements** element contains all of the job-related elements th
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:JobElements>
   child elements
 </wscn:JobElements>
@@ -50,7 +46,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ElementData for parent JobElements</strong>](elementdata-for-jobelements-element.md)</p></td>
+<td><p><a href="elementdata-for-jobelements-element.md" data-raw-source="[&lt;strong&gt;ElementData for parent JobElements&lt;/strong&gt;](elementdata-for-jobelements-element.md)"><strong>ElementData for parent JobElements</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -69,7 +65,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>GetJobElementsResponse</strong>](getjobelementsresponse.md)</p></td>
+<td><p><a href="getjobelementsresponse.md" data-raw-source="[&lt;strong&gt;GetJobElementsResponse&lt;/strong&gt;](getjobelementsresponse.md)"><strong>GetJobElementsResponse</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -79,7 +75,7 @@ Remarks
 
 The WSD Scan Service returns the **JobElements** element in [**GetJobElementsResponse**](getjobelementsresponse.md).
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ElementData for parent JobElements**](elementdata-for-jobelements-element.md)
@@ -88,9 +84,9 @@ The WSD Scan Service returns the **JobElements** element in [**GetJobElementsRes
 
 [**GetJobElementsResponse**](getjobelementsresponse.md)
 
- 
+ 
 
- 
+ 
 
 
 

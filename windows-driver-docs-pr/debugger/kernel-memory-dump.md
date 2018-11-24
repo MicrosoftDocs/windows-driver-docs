@@ -3,11 +3,7 @@ title: Kernel Memory Dump
 description: Kernel Memory Dump
 ms.assetid: 466f5b92-c9bd-4050-9ef8-469979ba0cbe
 keywords: ["dump file, Kernel Memory Dump", "Kernel Memory Dump"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,9 +34,9 @@ To suppress missing page error messages when debugging a Kernel Memory Dump, use
 
 [Varieties of Kernel-Mode Dump Files](varieties-of-kernel-mode-dump-files.md)
 
- 
+ 
 
- 
+ 
 
 
 

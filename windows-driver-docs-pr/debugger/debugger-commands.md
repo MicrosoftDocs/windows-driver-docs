@@ -3,11 +3,7 @@ title: Debugger Commands
 description: Debugger Commands
 ms.assetid: b38ba11d-27a5-462f-a2fb-df56576ec377
 keywords: ["debugger commands, reference", "debugger commands, complete listing"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +25,9 @@ This section includes the following topics:
 
 [Control Keys](control-keys.md)
 
- 
+ 
 
- 
+ 
 
 
 

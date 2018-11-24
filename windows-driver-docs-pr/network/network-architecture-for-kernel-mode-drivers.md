@@ -7,11 +7,7 @@ keywords:
 - architecture WDK networking
 - kernel-mode drivers WDK , network architecture
 - network architecture WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +27,9 @@ This section includes:
 
 [Network Driver Environments](network-driver-environments.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -9,11 +9,7 @@ api_name:
 - KSEVENT_CONNECTION_POSITIONUPDATE
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,9 +18,9 @@ ms.localizationpriority: medium
 
 The **KSEVENT\_CONNECTION\_POSITIONUPDATE** event allows a client to receive notification of changes in the current position. The margin of change is stream and filter dependent.
 
- 
+ 
 
- 
+ 
 
 
 

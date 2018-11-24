@@ -17,11 +17,7 @@ keywords:
 - levels WDK software tracing
 - WinDbg WDK software tracing
 - virtual files WDK software tracing
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -121,9 +117,9 @@ A value of **0** means that there is no maximum value. TraceView retains all mes
 
 This value appears in the **Max Trace Records** column of the [Trace Session List](trace-session-list.md).
 
- 
+ 
 
- 
+ 
 
 
 

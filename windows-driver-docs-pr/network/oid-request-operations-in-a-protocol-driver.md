@@ -7,11 +7,7 @@ keywords:
 - NDIS protocol drivers WDK , OID requests
 - OID requests WDK networking
 - OIDs WDK networking , protocol drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ Connection-oriented NDIS (CoNDIS) protocol drivers call the [**NdisCoOidRequest*
 
 For more information about OIDs, see [NDIS OIDs](https://msdn.microsoft.com/library/windows/hardware/ff566707).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: Types of Device Property Page Providers
 description: Types of Device Property Page Providers
 ms.assetid: b467543e-6907-44e5-b407-637cad7f6d78
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ You can supply custom device property pages by using the following types of prop
 
     **Note**  Although you can write a class installer that provides custom device property pages, it is generally better to provide this functionality in a co-installer, together with other device-specific or device-class-specific features.
 
-     
+     
 
 -   **Property Page Extension DLL.**
 
@@ -39,13 +35,13 @@ You can supply custom device property pages by using the following types of prop
 
     **Note**  Unless your [driver package](driver-packages.md) requires a class installer or co-installer, it is more efficient to support custom device property pages by using a property page extension DLL.
 
-     
+     
 
 All types of device property page providers must follow the guidelines described in [General Requirements for Device Property Page Providers](general-requirements-for-device-property-page-providers.md).
 
- 
+ 
 
- 
+ 
 
 
 

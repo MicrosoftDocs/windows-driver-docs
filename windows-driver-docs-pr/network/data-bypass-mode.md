@@ -7,11 +7,7 @@ keywords:
 - NDIS filter drivers WDK , data bypass mode
 - data bypass mode WDK networking
 - bypass mode WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -51,13 +47,13 @@ To change its bypass mode settings at run time, a filter driver can call the [**
 
 **Note**  Pause and restart could cause some network packets to be dropped on the transmit path, or receive path, or both. Network protocols that provide a reliable transport mechanism might retry the network I/O operation in the case of a lost packet, but other protocols that do not guarantee reliability do not retry the operation.
 
- 
+ 
 
 A filter driver can register additional optional functions that support optional driver services. The driver registers these optional services in the [*FilterSetOptions*](https://msdn.microsoft.com/library/windows/hardware/ff549972) function. For more information about these optional services, see [Configuring Optional Filter Driver Services](configuring-optional-filter-driver-services.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -11,11 +11,7 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -59,7 +55,7 @@ The following table describes the constants that are valid with WIA\_IPS\_PAGE\_
 </tr>
 <tr class="odd">
 <td><p>WIA_PAGE_CUSTOM</p></td>
-<td><p>Defined by the values of the [<strong>WIA_IPS_PAGE_HEIGHT</strong>](wia-ips-page-height.md) and [<strong>WIA_IPS_PAGE_WIDTH</strong>](wia-ips-page-width.md) properties.</p></td>
+<td><p>Defined by the values of the <a href="wia-ips-page-height.md" data-raw-source="[&lt;strong&gt;WIA_IPS_PAGE_HEIGHT&lt;/strong&gt;](wia-ips-page-height.md)"><strong>WIA_IPS_PAGE_HEIGHT</strong></a> and <a href="wia-ips-page-width.md" data-raw-source="[&lt;strong&gt;WIA_IPS_PAGE_WIDTH&lt;/strong&gt;](wia-ips-page-width.md)"><strong>WIA_IPS_PAGE_WIDTH</strong></a> properties.</p></td>
 </tr>
 <tr class="even">
 <td><p>WIA_PAGE_CUSTOM_BASE</p></td>
@@ -72,7 +68,7 @@ The following table describes the constants that are valid with WIA\_IPS\_PAGE\_
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -94,7 +90,7 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**IWiaMiniDrv::drvValidateItemProperties**](https://msdn.microsoft.com/library/windows/hardware/ff545017)
@@ -115,9 +111,9 @@ Requirements
 
 [**WIA\_IPS\_YPOS**](wia-ips-ypos.md)
 
- 
+ 
 
- 
+ 
 
 
 

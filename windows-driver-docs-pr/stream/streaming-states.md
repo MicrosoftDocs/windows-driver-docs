@@ -1,6 +1,5 @@
 ---
 title: Streaming States
-author: windows-driver-content
 description: Streaming States
 ms.assetid: 1030e5cd-441b-4f6a-8f6a-21ce11aaca96
 keywords:
@@ -12,11 +11,7 @@ keywords:
 - ACQUIRE state WDK video capture
 - PAUSE state WDK video capture
 - RUN state WDK video capture
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -39,7 +34,7 @@ Each stream provided by the minidriver exists in one of four states: KSSTATE\_ST
 <tbody>
 <tr class="odd">
 <td><p>KSSTATE_STOP</p></td>
-<td><p>When the stream state is stopped, the minidriver uses the absolute minimum of resources, and there are no outstanding data SRBs in the minidriver's queue.</p></td>
+<td><p>When the stream state is stopped, the minidriver uses the absolute minimum of resources, and there are no outstanding data SRBs in the minidriver&#39;s queue.</p></td>
 </tr>
 <tr class="even">
 <td><p>KSSTATE_ACQUIRE</p></td>
@@ -56,11 +51,11 @@ Each stream provided by the minidriver exists in one of four states: KSSTATE\_ST
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

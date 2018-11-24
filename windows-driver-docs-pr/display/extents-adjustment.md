@@ -5,11 +5,7 @@ ms.assetid: b3562744-375a-4d6f-be09-e28314282faa
 keywords:
 - Direct3D WDK Windows 2000 display , extents adjustment
 - extents adjustment WDK Direct3D
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,9 +19,9 @@ Some hardware uses an anti-aliasing kernel that influences pixels outside the ex
 
 Direct3D addresses this problem by enabling hardware drivers to request that the extents rectangle be adjusted outward by a specified number of pixels in the **dvExtentsAdjust** member of the [**D3DHAL\_D3DEXTENDEDCAPS**](https://msdn.microsoft.com/library/windows/hardware/ff544753) structure. This member is filled in response to the GUID\_D3DExtendedCaps GUID in [**DdGetDriverInfo**](https://msdn.microsoft.com/library/windows/hardware/ff549404). The extents rectangle is clipped to the extents of the render target surface for the device. The default is zero.
 
- 
+ 
 
- 
+ 
 
 
 

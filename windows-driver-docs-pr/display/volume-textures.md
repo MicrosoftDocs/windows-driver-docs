@@ -6,11 +6,7 @@ keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , volume textures
 - volume textures WDK DirectX 8.0
 - 3D textures WDK DirectX 8.0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,9 +18,9 @@ ms.localizationpriority: medium
 
 DirectX 8.0 adds support for volume or 3D textures. Such textures have depth in addition to width and height.
 
- 
+ 
 
- 
+ 
 
 
 

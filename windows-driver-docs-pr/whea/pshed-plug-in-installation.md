@@ -1,6 +1,5 @@
 ---
 title: PSHED Plug-In Installation
-author: windows-driver-content
 description: PSHED Plug-In Installation
 ms.assetid: 0c84c7c1-f976-4731-9f2b-46a95186eb18
 keywords:
@@ -15,11 +14,7 @@ keywords:
 - platform-specific hardware error driver plug-ins WDK WHEA , installing
 - PSHED plug-ins WDK WHEA , installing
 - installing PSHED plug-ins WDK WHEA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +29,9 @@ This section discusses PSHED plug-in installation and includes the following top
 
 [Qualifying and Distributing PSHED Plug-Ins](qualifying-and-distributing-pshed-plug-ins.md)
 
- 
+ 
 
- 
+ 
 
 
 

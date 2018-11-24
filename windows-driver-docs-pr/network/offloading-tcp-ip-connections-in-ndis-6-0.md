@@ -7,11 +7,7 @@ keywords:
 - offload service porting WDK networking , connections
 - connection offload WDK networking
 - chimney offload WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ The NDIS TCP/IP connection offload interface enables services such as TCP chimne
 
 For more information about offloading TCP/IP connections, see [Offloading TCP/IP Connections](offloading-tcp-ip-connections.md).
 
- 
+ 
 
- 
+ 
 
 
 

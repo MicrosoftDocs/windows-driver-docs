@@ -8,11 +8,7 @@ keywords:
 - network drivers WDK , IRQLs
 - current IRQLs WDK networking
 - dispatch IRQL tracking WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,9 +38,9 @@ If the known current IRQL is DISPATCH\_LEVEL, the caller should set this flag. I
 
 Drivers should not test for the IRQL to determine the value for the dispatch level flag. Testing would defeat the purpose of the flag. If necessary, the called function can simply do the testing itself. How a driver determines that it should or should not set the flag is left to the design of the particular driver.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -12,11 +12,7 @@ keywords:
 - protection levels WDK display , HDCP
 - protection levels WDK display , DisplayPort Content Protection
 - protection levels WDK display , DPCP
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -39,9 +35,9 @@ The following sections describe the precedence that is placed on protection leve
 
 [Determining the Protection Level for a Physical Output](determining-the-protection-level-for-a-physical-output.md)
 
- 
+ 
 
- 
+ 
 
 
 

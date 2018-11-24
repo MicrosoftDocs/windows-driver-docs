@@ -2,11 +2,7 @@
 title: VMQ Receive Filters
 description: VMQ Receive Filters
 ms.assetid: b5dbd716-1d92-400c-b612-a70de690baef
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,9 +32,9 @@ This following figure shows how filters and queues affect the receive data flow.
 
 If an incoming packet matches a filter on a queue, it is assigned to that queue. Otherwise, the packet is tested against the filters on the next queue and so on. If there is no filter match on any of the queues, the network adapter assigns the packet to the default queue.
 
- 
+ 
 
- 
+ 
 
 
 

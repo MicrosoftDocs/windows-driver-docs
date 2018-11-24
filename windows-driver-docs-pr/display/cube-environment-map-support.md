@@ -12,11 +12,7 @@ keywords:
 - real-time environment mapping WDK Direct3D
 - circular maps WDK Direct3D
 - spherical maps WDK Direct3D
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -48,11 +44,11 @@ Any faces not created by the call are assumed to be filled with the color specif
 
 **Note**   Current restrictions: All cube faces must be the same size and must be square. The cube faces can be MIP mapped. No color keying is supported with cube map textures. As with other textures, alpha channels and alpha palettes are supported.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

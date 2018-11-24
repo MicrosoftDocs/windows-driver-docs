@@ -4,11 +4,7 @@ description: Video Miniport Driver Requirements (Windows 2000 Model)
 ms.assetid: f6ae5b71-97d5-4fd8-bd3d-7ee83f34581e
 keywords:
 - video miniport drivers WDK Windows 2000 , requirements
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,7 +24,7 @@ The following are some of the requirements for video miniport drivers.
 
     A miniport driver can call only those functions that are exported by the system-supplied video port driver. (The exported video port functions are listed on the reference pages following [Video Port Driver Functions](https://msdn.microsoft.com/library/windows/hardware/ff570533).) Driver writers can also use the following to determine which functions a miniport driver is calling:
 
-    ```
+    ```cpp
     link -dump -imports my_driver.sys
     ```
 
@@ -38,9 +34,9 @@ The following are some of the requirements for video miniport drivers.
 
     Panning must be disabled by default. The miniport driver should enable it only when it is requested through a control panel. OEMs can enable panning by default as a part of their preinstall.
 
- 
+ 
 
- 
+ 
 
 
 

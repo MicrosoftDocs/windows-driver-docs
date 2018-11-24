@@ -3,11 +3,7 @@ title: icpleak
 description: The icpleak extension examines all I/O completion objects in the system for the object with the largest number of queued entries.
 ms.assetid: 8644a41a-44da-47bc-94ef-5024bb457c7d
 keywords: ["I/O completion", "icpleak Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!icpleak** extension examines all I/O completion objects in the system for the object with the largest number of queued entries.
 
-```
+```dbgcmd
 !icpleak [HandleFlag]
 ```
 
@@ -51,7 +47,7 @@ If this flag is set, the display also includes all processes that have a handle 
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -66,9 +62,9 @@ This extension works only if the system maintains type lists. If the *HandleFlag
 
 You can stop at any point by pressing CTRL+BREAK (in WinDbg) or CTRL+C (in KD).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,23 +2,19 @@
 title: Setting Up Kernel-Mode Debugging using Serial over USB in Visual Studio with a Sharks Cove development board
 description: This topic describes setting up Kernel-Mode Debugging USB in Visual Studio with a Sharks Cove development board.
 ms.assetid: D909CA2C-3870-4521-8F23-FBF93738F338
-ms.author: domars
 ms.date: 04/10/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # <span id="debugger.setting_up_kernel-mode_debugging_using_serial_over_usb_in_visual_studio"></span>Setting Up Kernel-Mode Debugging using Serial over USB in Visual Studio
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > This feature is not available in Windows 10, version 1507 and later versions of the WDK.
 >
 
-The [Sharks Cove development board](http://go.microsoft.com/fwlink/p?linkid=403168) supports serial debugging over a USB cable.
+The [Sharks Cove development board](https://go.microsoft.com/fwlink/p?linkid=403168) supports serial debugging over a USB cable.
 
-To use Microsoft Visual Studio for kernel-mode debugging, you must have the Windows Driver Kit (WDK) integrated with Visual Studio. For information about how to install the integrated environment, see [Windows Driver Kit (WDK)](http://go.microsoft.com/fwlink/p?linkid=301383).
+To use Microsoft Visual Studio for kernel-mode debugging, you must have the Windows Driver Kit (WDK) integrated with Visual Studio. For information about how to install the integrated environment, see [Windows Driver Kit (WDK)](https://go.microsoft.com/fwlink/p?linkid=301383).
 
 As an alternative to using Visual Studio to set up serial debugging over a USB cable, you can do the setup manually. For more information, see [Setting Up Kernel-Mode Debugging using Serial over USB Manually](setting-up-kernel-mode-debugging-using-serial-over-usb-manually-.md).
 
@@ -96,9 +92,9 @@ On the host computer, verify that you are using a baud rate of 115200.
 
 [Setting Up Kernel-Mode Debugging in Visual Studio](setting-up-kernel-mode-debugging-in-visual-studio.md)
 
- 
+ 
 
- 
+ 
 
 
 

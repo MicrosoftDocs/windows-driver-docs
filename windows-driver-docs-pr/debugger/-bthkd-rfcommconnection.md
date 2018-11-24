@@ -3,11 +3,7 @@ title: bthkd.rfcommconnection
 description: The bthkd.rfcommconnection command displays information about a given RFCOMM connection object.
 ms.assetid: 0F56B937-BE56-4B45-B30F-F6D1BAB8FCCB
 keywords: ["bthkd.rfcommconnection Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!bthkd.rfcommconnection** command displays information about a given RFCOMM connection object.
 
-```
+```dbgsyntax
 !bthkd.rfcommconnection addr 
 ```
 
@@ -42,9 +38,9 @@ Bthkd.dll
 
 [Bluetooth Extensions (Bthkd.dll)](bluetooh-extensions--bthkd-dll-.md)
 
- 
+ 
 
- 
+ 
 
 
 

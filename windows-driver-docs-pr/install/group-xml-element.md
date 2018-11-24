@@ -10,6 +10,7 @@ api_name:
 api_type:
 - NA
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # group XML Element
@@ -21,7 +22,7 @@ The **group** XML element specifies an ordered collection of [driver packages](h
 
 ### Element Tag
 
-```
+```cpp
 <group>
 ```
 
@@ -39,13 +40,13 @@ None
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Parent elements</strong></p></td>
-<td align="left"><p>[<strong>dpinst</strong>](dpinst-xml-element.md)</p></td>
+<td align="left"><p><a href="dpinst-xml-element.md" data-raw-source="[&lt;strong&gt;dpinst&lt;/strong&gt;](dpinst-xml-element.md)"><strong>dpinst</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Child elements</strong></p></td>
-<td align="left"><p>[<strong>package</strong>](package-xml-element.md) (zero or more)</p>
-<p>[<strong>installAllOrNone</strong>](installallornone-xml-element.md) (zero or one)</p>
-<p>[<strong>suppressAddRemovePrograms</strong>](suppressaddremoveprograms-xml-element.md) (zero or one)</p></td>
+<td align="left"><p><a href="package-xml-element.md" data-raw-source="[&lt;strong&gt;package&lt;/strong&gt;](package-xml-element.md)"><strong>package</strong></a> (zero or more)</p>
+<p><a href="installallornone-xml-element.md" data-raw-source="[&lt;strong&gt;installAllOrNone&lt;/strong&gt;](installallornone-xml-element.md)"><strong>installAllOrNone</strong></a> (zero or one)</p>
+<p><a href="suppressaddremoveprograms-xml-element.md" data-raw-source="[&lt;strong&gt;suppressAddRemovePrograms&lt;/strong&gt;](suppressaddremoveprograms-xml-element.md)"><strong>suppressAddRemovePrograms</strong></a> (zero or one)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Data contents</strong></p></td>
@@ -58,13 +59,13 @@ None
 </tbody>
 </table>
 
- 
+ 
 
 ### <a href="" id="comments"></a>Remarks
 
 The following code example demonstrates a **group** element that includes two [**package XML elements**](package-xml-element.md) and an [**installAllOrNone XML element**](installallornone-xml-element.md). The example **group** element configures DPInst to handle the "Abc" [driver package](https://msdn.microsoft.com/library/windows/hardware/ff544840) and the "Def" driver package as a group. The **installAllOrNone** XML element configures DPInst to install the driver packages in the driver package group only if both drivers can be installed.
 
-```
+```cpp
 <dpinst>
   ...
   <group>
@@ -87,9 +88,9 @@ The following code example demonstrates a **group** element that includes two [*
 
 [**suppressAddRemovePrograms**](suppressaddremoveprograms-xml-element.md)
 
- 
+ 
 
- 
+ 
 
 
 

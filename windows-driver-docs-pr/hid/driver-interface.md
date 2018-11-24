@@ -1,10 +1,10 @@
 ---
 title: Driver Interface
-author: windows-driver-content
 description: Driver Interface
 ms.assetid: cb5e06c3-6add-4eba-b794-861d567a3047
 keywords: ["force feedback drivers WDK HID , methods supported"]
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Driver Interface
@@ -37,9 +37,9 @@ If the force-feedback driver is COM-based, an instance of the driver is created 
 
 This functionality is supported by all force feedback devices.
 
- 
+ 
 
- 
+ 
 
 
 

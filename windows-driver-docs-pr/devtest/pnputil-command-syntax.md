@@ -10,11 +10,7 @@ api_name:
 - PnPUtil
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 01/31/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ To run PnPUtil, open a Command Prompt window (**Run as Administrator**) and type
 
 **Note**  PnPUtil (PnPUtil.exe) is included in every version of Windows, starting with Windows Vista (in the %windir%\\system32 directory).
 
- 
+ 
 
 ```
 pnputil [/add-driver <...> | /delete-driver <...> |
@@ -53,7 +49,7 @@ Delete driver package from the driver store.
 /reboot - reboot system if needed to complete the operation.  
 ```
 
-**/export-driver** *<oem#.inf | *> <target directory>*
+**/export-driver** <em><oem#.inf | *> <target directory></em>
 
 Export driver package(s) from the driver store into a target directory.
 
@@ -84,9 +80,9 @@ The following commands are still supported, but are legacy.  We recommend that y
 
 For examples of how to use the PnPUtil tool, see [PnPUtil Examples](pnputil-examples.md).
 
- 
+ 
 
- 
+ 
 
 
 

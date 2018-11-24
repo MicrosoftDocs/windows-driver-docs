@@ -1,15 +1,10 @@
 ---
 title: Describing Extended Sample Information in AVStream Codecs
-author: windows-driver-content
 description: Describing Extended Sample Information in AVStream Codecs
 ms.assetid: 04447525-78f5-4c77-9a41-4e6e4729f729
 keywords:
 - AVStream hardware codec support WDK , extended sample information
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,9 +19,9 @@ Encoders should include extended sample information in the extended KSSTREAM\_HE
 
 Surface stride is specified in KS\_FRAME\_INFO's lSurfacePitch member (union with **Reserved1** member). For more information about surface stride, see [Handling Stride in AVStream Codecs](handling-stride-in-avstream-codecs.md).
 
- 
+ 
 
- 
+ 
 
 
 

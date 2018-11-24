@@ -11,11 +11,7 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -49,12 +45,12 @@ The **KSPROPERTY\_AUDIOENGINE\_MIXFORMAT** property request retrieves the settin
 <td align="left"><p>No</p></td>
 <td align="left"><p>Node via filter</p></td>
 <td align="left"><p>KSP_NODE</p></td>
-<td align="left"><p>[<strong>KSDATAFORMAT_WAVEFORMATEX</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537095)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537095" data-raw-source="[&lt;strong&gt;KSDATAFORMAT_WAVEFORMATEX&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537095)"><strong>KSDATAFORMAT_WAVEFORMATEX</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -92,9 +88,9 @@ Requirements
 
 [**KSPROPERTY\_AUDIOENGINE**](ksproperty-audioengine.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -10,11 +10,7 @@ keywords:
 - video decoding WDK DirectX VA , data flow
 - decoding video WDK DirectX VA , data flow
 - picture decoding WDK DirectX VA , data flow
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,9 +32,9 @@ This section describes how data flow is managed in the DirectX Video Acceleratio
 
 [Sequence Requirements](sequence-requirements.md)
 
- 
+ 
 
- 
+ 
 
 
 

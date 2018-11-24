@@ -4,11 +4,7 @@ description: General Guidelines for INF Files
 ms.assetid: a0394708-46ed-47f8-a629-0c7d3088df3b
 keywords:
 - INF files WDK device installations , general guidelines
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,15 +32,15 @@ INF files have many common parts and follow a single set of syntax rules. Howeve
 
 You can create or modify an INF file by using any text editor in which you can control the insertion of line breaks. If your INF contains non-ASCII characters, save the file as a Unicode file.
 
-INF files that ship with Windows 7 and earlier operating systems must have a file name of *xxxxxxxx***.inf**, where "*xxxxxxxx*" does not exceed eight characters. The name of an INF file that ships separately from the operating system is not limited to eight characters.
+INF files that ship with Windows 7 and earlier operating systems must have a file name of <em>xxxxxxxx</em>**.inf**, where "*xxxxxxxx*" does not exceed eight characters. The name of an INF file that ships separately from the operating system is not limited to eight characters.
 
 Beginning with Windows 8, INF file names are not limited to eight characters, regardless if they ship with the operating system or not.
 
 Do not arbitrarily modify the time stamps of your INF files, as a version control mechanism. Version control of INF files should be based on a date and version number that is specified in an [**INF Version section**](inf-version-section.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Supporting Multifunction Devices On Other Buses
-author: windows-driver-content
 description: Supporting Multifunction Devices On Other Buses
 ms.assetid: 5fc78dc5-0553-4557-b188-a34810305061
 keywords:
@@ -9,11 +8,7 @@ keywords:
 - ISA WDK multifunction devices
 - USB WDK multifunction devices
 - IEEE 1394 WDK multifunction devices
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -39,9 +34,9 @@ Vendors of this type of multifunction device must do the following:
 
     The INF files can be the same files that are used when the functions are packaged as a individual devices. The INF files do not need any special multifunction semantics.
 
- 
+ 
 
- 
+ 
 
 
 

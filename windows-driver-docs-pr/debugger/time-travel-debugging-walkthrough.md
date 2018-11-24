@@ -1,20 +1,13 @@
 ---
 title: Time Travel Debugging - Sample App Walkthrough
 description: This section contains a walk through of a small C++ app. 
-ms.author: domars
-ms.date: 01/29/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 09/17/2018
 ms.localizationpriority: medium
 ---
 
-> [!NOTE]
-> The information in this topic is preliminary. Updated information will be provided in a later release of the documentation. 
->
+![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png)
 
-
-# ![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png) Time Travel Debugging - Sample App Walkthrough
+#  Time Travel Debugging - Sample App Walkthrough
 
 This lab introduces Time Travel Debugging (TTD), using a small sample program with a code flaw. TTD is used to debug, identify and root cause the issue. Although the issue in this small program is easy to find, the general procedure can be used on more complex code. This general procedure can be summarized as follows.
 
@@ -47,7 +40,7 @@ You will need the following hardware to be able to complete the lab.
 
 You will need the following software to be able to complete the lab.
 
--   The WinDbg Preview. For information on installing WinDbg Preview, see [WinDbg Preview - Installation](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/windbg-install-preview)
+-   The WinDbg Preview. For information on installing WinDbg Preview, see [WinDbg Preview - Installation](https://docs.microsoft.com/windows-hardware/drivers/debugger/windbg-install-preview)
 -   Visual Studio to build the sample C++ code. 
 
 The lab has the following three sections.
@@ -61,7 +54,7 @@ The lab has the following three sections.
 
 *In Section 1, you will build the sample code using Visual Studio.*
 
-**Create the sample app in in Visual Studio**
+**Create the sample app in Visual Studio**
 
 1.  In Microsoft Visual Studio, click **File** &gt; **New** &gt; **Project/Solution...** and click on the Visual **C++** templates. 
     
@@ -77,7 +70,7 @@ The lab has the following three sections.
 
 3. Paste in the following text to the DisplayGreeting.cpp pane in Visual Studio.
 
-    ```
+    ```cpp
     // DisplayGreeting.cpp : Defines the entry point for the console application.
     //
 
@@ -170,11 +163,11 @@ To launch the sample app and record a TTD trace, follow these steps. For general
 
 9. The debugger will automatically open the trace file and index it. Indexing is a process that enables efficient debugging of the trace file. This indexing process will take longer for larger trace files.
 
-    ```
+    ```dbgcmd
     0:000> !index
     Indexed 1/1 keyframes
     Successfully created the index in 95ms.
-     ```
+    ```
    
    > [!NOTE]
    > A keyframe is a location in a trace used for indexing. Keyframes are generated automatically. Larger traces will contain more keyframes. 
@@ -182,7 +175,7 @@ To launch the sample app and record a TTD trace, follow these steps. For general
  
 10. At this point you are at the beginning of the trace file and are ready to travel forward and backward in time.
 
-   Now that you have a recorded a TTD trace, you can replay the trace back or work with the trace file, for example sharing it with a co-worker. For more information about working with trace files, see [Time Travel Debugging - Working with Trace Files](time-travel-debugging-trace-file-information.md)
+    Now that you have a recorded a TTD trace, you can replay the trace back or work with the trace file, for example sharing it with a co-worker. For more information about working with trace files, see [Time Travel Debugging - Working with Trace Files](time-travel-debugging-trace-file-information.md)
 
 In the next section of this lab we will analyze the trace file to locate the issue with our code.
 
@@ -195,14 +188,14 @@ In the next section of this lab we will analyze the trace file to locate the iss
 
 1.  Add your local symbol location to the symbol path and reload the symbols, by typing the following commands.
 
-    ```
+    ```dbgcmd
     .sympath+ C:\Projects\DisplayGreeting\Debug
     .reload 
     ```
 
 2.  Add your local code location to the source path by typing the following command.
 
-    ```
+    ```dbgcmd
     .srcpath C:\Projects\DisplayGreeting\DisplayGreeting
     ```
 
@@ -214,7 +207,7 @@ In the next section of this lab we will analyze the trace file to locate the iss
 
 1. When the trace file was loaded it displays information that an exception occurred. 
 
-    ```
+    ```dbgcmd
     2fa8.1fdc): Break instruction exception - code 80000003 (first/second chance not available)
     Time Travel Position: 15:0
     eax=68ef8100 ebx=00000000 ecx=77a266ac edx=69614afc esi=6961137c edi=004da000
@@ -225,7 +218,7 @@ In the next section of this lab we will analyze the trace file to locate the iss
     ```
 2. Use the dx command to list all of the events in the recording. The exception event is listed in the events.
 
-    ```
+    ```dbgcmd
     0:000> dx -r1 @$curprocess.TTD.Events
     ...
     [0x2c]           : Module Loaded at position: 9967:0
@@ -242,7 +235,7 @@ In the next section of this lab we will analyze the trace file to locate the iss
 
 3. Click on the Exception event to display information about that TTD event. 
 
-    ```
+    ```dbgcmd
     0:000> dx -r1 @$curprocess.TTD.Events[17]
     @$curprocess.TTD.Events[17]                 : Exception at 68:0
         Type             : Exception
@@ -253,7 +246,7 @@ In the next section of this lab we will analyze the trace file to locate the iss
 
 4. Click on the Exception field to further drill down on the exception data. 
 
-    ```
+    ```dbgcmd
     0:000> dx -r1 @$curprocess.TTD.Events[17].Exception
     @$curprocess.TTD.Events[17].Exception                 : Exception of type Hardware at PC: 0X540020
         Position         : 68:0 [Time Travel]
@@ -268,7 +261,7 @@ In the next section of this lab we will analyze the trace file to locate the iss
 
 5. Click on the [Time Travel] link in the exception event to move to that position in the trace.
 
-    ```
+    ```dbgcmd
     0:000> dx @$curprocess.TTD.Events[17].Exception.Position.SeekTo()
     Setting position: 68:0
 
@@ -283,7 +276,7 @@ In the next section of this lab we will analyze the trace file to locate the iss
     
     Of note in this output is that the stack and base pointer are pointing to two very different addresses.
 
-    ```
+    ```dbgcmd
     esp=00effe4c ebp=00520055
     ```
 
@@ -299,7 +292,7 @@ At the point of failure in trace it is common to end up a fews steps after the t
 
     The command window will display the time travel position and the registers as you step back three instructions.
 
-    ```
+    ```dbgcmd
     0:000> t-
     Time Travel Position: 67:40
     eax=00000000 ebx=00cf8000 ecx=99da9203 edx=69cf1a6c esi=00191046 edi=00191046
@@ -330,7 +323,7 @@ At the point of failure in trace it is common to end up a fews steps after the t
 
 2. At this point in the trace our  stack and base pointer have values that make more sense, so it appears that we have getting closer to the point in the code where the corruption occurred.
 
-    ```
+    ```dbgcmd
     esp=00effd94 ebp=00effe44
     ```
 
@@ -360,7 +353,7 @@ Using breakpoints is a common approach to pause code execution at some event of 
 
 You can set breakpoints that fire when a memory location is accessed. Use the **ba** (break on access) command, with the following syntax.
 
-```
+```dbgcmd
 ba <access> <size> <address> {options}
 ```
 
@@ -391,7 +384,7 @@ ba <access> <size> <address> {options}
 </tbody>
 </table>
 
- 
+ 
 Note that you can only set four data breakpoints at any given time and it is up to you to make sure that you are aligning your data correctly or you won’t trigger the breakpoint (words must end in addresses divisible by 2, dwords must be divisible by 4, and quadwords by 0 or 8).
 
 
@@ -399,7 +392,7 @@ Note that you can only set four data breakpoints at any given time and it is up 
 
 1.  At this point in the trace we would like to set a breakpoint on write memory access to base pointer - ebp which in our example is 00effe44. To do this use the **ba** command using the address we want to monitor. We want to monitor writes for four bytes, so we specify w4. 
 
-    ```
+    ```dbgcmd
     0:000> ba w4 00effe44
     ```
 
@@ -410,7 +403,7 @@ Note that you can only set four data breakpoints at any given time and it is up 
 
 3.  From the Home menu, select **Go Back**  to travel back in time until the breakpoint is hit.
 
-    ```
+    ```dbgcmd
     0:000> g-
     Breakpoint 0 hit
     Time Travel Position: 5B:92
@@ -431,7 +424,7 @@ Note that you can only set four data breakpoints at any given time and it is up 
     ![Screenshot of WinDbg Preview stack window](images/ttd-time-travel-walkthrough-stack-window.png)
 
 
-As it is very unlikely that the Microsoft provided wscpy_s() function would have a code bug like this, we look further in the stack. The stack shows that that Greeting!main calls Greeting!GetCppConGreeting. In our very small code sample we could just open the code at this point and likely find the error pretty easily. But to illustrate the techniques that can be used with larger, more complex program, we will set a new breakpoint to investigate further. 
+As it is very unlikely that the Microsoft provided wscpy_s() function would have a code bug like this, we look further in the stack. The stack shows that Greeting!main calls Greeting!GetCppConGreeting. In our very small code sample we could just open the code at this point and likely find the error pretty easily. But to illustrate the techniques that can be used with larger, more complex program, we will set a new breakpoint to investigate further. 
 
 
 **Set the break on access breakpoint for the GetCppConGreeting function**        
@@ -440,7 +433,7 @@ As it is very unlikely that the Microsoft provided wscpy_s() function would have
 
 2. Determine the address of the DisplayGreeting!DetermineStringSize function using the **dx** command. 
 
-    ```
+    ```dbgcmd
     0:000> dx &DisplayGreeting!GetCppConGreeting
     &DisplayGreeting!GetCppConGreeting                 : 0xb61720 [Type: void (__cdecl*)(wchar_t *,unsigned int)]
         [Type: void __cdecl(wchar_t *,unsigned int)]
@@ -448,7 +441,7 @@ As it is very unlikely that the Microsoft provided wscpy_s() function would have
 
 3. Use the **ba** command to set a breakpoint on memory access. Because the function will just be read from memory for execution, we need to set a r - read breakpoint.
 
-    ```
+    ```dbgcmd
     0:000> ba r4 b61720
     ```
 
@@ -463,7 +456,7 @@ As it is very unlikely that the Microsoft provided wscpy_s() function would have
 
 6. On the Time Travel menu, use **Time travel to start** command to move to the start of the trace.
 
-    ```
+    ```dbgcmd
     0:000> !tt 0
     Setting position to the beginning of the trace
     Setting position: 15:0
@@ -478,7 +471,7 @@ As it is very unlikely that the Microsoft provided wscpy_s() function would have
 
 7.  On the Home menu, select **Go**  to  move forward in the code until the breakpoint is hit.
 
-    ```
+    ```dbgcmd
     0:000> g
     Breakpoint 2 hit
     Time Travel Position: 4B:1AD
@@ -487,12 +480,12 @@ As it is very unlikely that the Microsoft provided wscpy_s() function would have
     cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000202
     DisplayGreeting!GetCppConGreeting+0x1:
     00b61721 8bec            mov     ebp,esp
-    ````
+    ```
 
 
 8.  On the Home menu, select **Step Out Back** to back one step.
 
-    ```
+    ```dbgcmd
     0:000> g-u
     Time Travel Position: 4B:1AA
     eax=00ddf800 ebx=00fa2000 ecx=00ddf800 edx=00b61046 esi=00b61046 edi=00b61046
@@ -509,20 +502,20 @@ As it is very unlikely that the Microsoft provided wscpy_s() function would have
 
     As we look at the size issue further, we also notice that the message is 75 characters in length, 76 including the end of string character.
 
-    ```
+    ```dbgcmd
     HELLO FROM THE WINDBG TEAM. GOOD LUCK IN ALL OF YOUR TIME TRAVEL DEBUGGING!
     ```
 
 
 10. One way to fix the code would be to expand the size of the character array to 100.
 
-    ```
+    ```cpp
     std::array <wchar_t, 100> greeting{};
     ```
 
     And we also need to change sizeof(greeting) to size(greeting) in this line of code.
 
-    ```
+    ```cpp
      GetCppConGreeting(greeting.data(), size(greeting));
     ```
 
@@ -538,7 +531,7 @@ As it is very unlikely that the Microsoft provided wscpy_s() function would have
 
 2. On the Time Travel menu, use **Time travel to start** command to move to the start of the trace.
 
-    ```
+    ```dbgcmd
     0:000> !tt 0
     Setting position to the beginning of the trace
     Setting position: 15:0
@@ -553,7 +546,7 @@ As it is very unlikely that the Microsoft provided wscpy_s() function would have
 
 3. On the Home Ribbon click on **Go** to travel back until the breakpoint is hit.
 
-    ```
+    ```dbgcmd
     Breakpoint 0 hit
     Time Travel Position: 5B:AF
     eax=0000000f ebx=00c20000 ecx=00000000 edx=00000000 esi=013a1046 edi=00effa60
@@ -574,7 +567,7 @@ This portion of the walkthrough assumes that you are still located at the breakp
 
 2.  Use the **dx** command to examine the *greeting* array. 
 
-    ```
+    ```dbgcmd
     0:000> dx &greeting
     &greeting                 : 0xddf800 [Type: std::array<wchar_t,50> *]
        [+0x000] _Elems           : "꽘棶檙瞝???" [Type: wchar_t [50]]
@@ -588,13 +581,13 @@ This portion of the walkthrough assumes that you are still located at the breakp
 
 3.  Set the breakpoint with the **ba** command using the memory address we want to monitor for write access. 
 
-    ```
+    ```dbgcmd
     ba w4 ddf800
     ```
 
 4. On the Time Travel menu, use **Time travel to start** command to move to the start of the trace.
 
-    ```
+    ```dbgcmd
     0:000> !tt 0
     Setting position to the beginning of the trace
     Setting position: 15:0
@@ -609,7 +602,7 @@ This portion of the walkthrough assumes that you are still located at the breakp
 
 5. On the Home menu, select **Go** to travel forward to the first point of memory access of the greeting array. 
 
-    ```
+    ```dbgcmd
     0:000> g-
     Breakpoint 0 hit
     Time Travel Position: 5B:9C
@@ -629,7 +622,7 @@ Another way to determine at what points in the trace memory has been accessed, i
 
 1.  Use the **dx** command to examine the *greeting* array. 
 
-    ```
+    ```dbgcmd
     0:000> dx &greeting
     &greeting                 : 0xddf800 [Type: std::array<wchar_t,50> *]
        [+0x000] _Elems           : "꽘棶檙瞝???" [Type: wchar_t [50]]
@@ -639,7 +632,7 @@ Another way to determine at what points in the trace memory has been accessed, i
 
 2. Use the **dx** command to look at the four bytes in memory starting at that address with the read write access.
 
-    ```
+    ```dbgcmd
     0:000> dx -r1 @$cursession.TTD.Memory(0xddf800,0xddf804, "rw")
     @$cursession.TTD.Memory(0x1bf7d0,0x1bf7d4, "rw")                
         [0x0]           
@@ -658,7 +651,7 @@ Another way to determine at what points in the trace memory has been accessed, i
 
 3. Click on any of the occurrences to display more information about that occurrence of memory access.
 
-    ```
+    ```dbgcmd
     0:000> dx -r1 @$cursession.TTD.Memory(0xddf800,0xddf804, "rw")[5]
     @$cursession.TTD.Memory(0xddf800,0xddf804, "rw")[5]                
         EventType        : MemoryAccess
@@ -675,7 +668,7 @@ Another way to determine at what points in the trace memory has been accessed, i
 
 4. Click on [Time Travel] to position the trace at the point in time.
 
-    ```
+    ```dbgcmd
     0:000> dx @$cursession.TTD.Memory(0xddf800,0xddf804, "rw")[5].TimeStart.SeekTo()
     @$cursession.TTD.Memory(0xddf800,0xddf804, "rw")[5].TimeStart.SeekTo()
     (1e5c.710): Break instruction exception - code 80000003 (first/second chance not available)
@@ -689,7 +682,7 @@ Another way to determine at what points in the trace memory has been accessed, i
 
 5. If we are interested in the last occurrence of read/write memory access in the trace we can click on the last item in the list or append the .Last() function to the end of the dx command.
 
-    ```
+    ```dbgcmd
     0:000> dx -r1 @$cursession.TTD.Memory(0xddf800,0xddf804, "rw").Last()
     @$cursession.TTD.Memory(0xddf800,0xddf804, "rw").Last()                
         EventType        : MemoryAccess

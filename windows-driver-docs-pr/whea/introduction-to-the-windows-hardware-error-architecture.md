@@ -1,6 +1,5 @@
 ---
 title: Introduction to the Windows Hardware Error Architecture
-author: windows-driver-content
 description: Introduction to the Windows Hardware Error Architecture
 ms.assetid: 5a0bbf8c-d644-4a64-9a7e-400d5de2c8fa
 keywords:
@@ -9,11 +8,7 @@ keywords:
 - hardware errors WDK WHEA , about Windows Hardware Error Architecture
 - errors WDK WHEA , about Windows Hardware Error Architecture
 - source information WDK WHEA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,9 +31,9 @@ As a result, WHEA provides the following benefits:
 
 -   Provides extensibility, so that as hardware vendors add new and better hardware error reporting mechanisms to their devices, WHEA allows the operating system to gracefully accommodate the new mechanisms.
 
- 
+ 
 
- 
+ 
 
 
 

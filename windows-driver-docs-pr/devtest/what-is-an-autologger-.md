@@ -2,11 +2,7 @@
 title: What is an autologger
 description: What is an autologger
 ms.assetid: 4bf286c5-faa9-4b9a-8fb1-a7190223e590
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,9 +15,9 @@ Autologger sessions are supported only on Windows Vista and later versions of Wi
 
 For more information about autologgers and methods of boot tracing in prior versions of Windows, see [Tracing During Boot](tracing-during-boot.md).
 
- 
+ 
 
- 
+ 
 
 
 

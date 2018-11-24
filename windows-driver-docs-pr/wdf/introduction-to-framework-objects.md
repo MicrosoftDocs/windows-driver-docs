@@ -1,6 +1,5 @@
 ---
 title: Introduction to Framework Objects
-author: windows-driver-content
 description: Introduction to Framework Objects
 ms.assetid: 1314501a-bff1-4aac-a391-a72acca9cc26
 keywords:
@@ -9,11 +8,7 @@ keywords:
 - deletion callback functions WDK KMDF
 - callback functions WDK KMDF
 - parent objects WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -43,9 +38,9 @@ All framework objects can have a parent object. The framework designates a defau
 
 For an overview of all of the objects that are defined by WDF, see [Summary of Framework Objects](summary-of-framework-objects.md).
 
- 
+ 
 
- 
+ 
 
 
 

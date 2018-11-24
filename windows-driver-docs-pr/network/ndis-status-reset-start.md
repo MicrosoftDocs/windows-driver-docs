@@ -1,13 +1,8 @@
 ---
 title: NDIS_STATUS_RESET_START
-author: windows-driver-content
 description: The NDIS_STATUS_RESET_START status indicates that a miniport adapter is being reset.
 ms.assetid: 8758652b-137b-43e3-a896-8360f2b5051c
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_RESET_START Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -66,9 +61,9 @@ Requirements
 
 [*ProtocolStatusEx*](https://msdn.microsoft.com/library/windows/hardware/ff570270)
 
- 
+ 
 
- 
+ 
 
 
 

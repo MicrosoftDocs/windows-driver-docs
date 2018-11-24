@@ -12,6 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # DEVPKEY_Device_BaseContainerId
@@ -31,7 +32,7 @@ The DEVPKEY_Device_BaseContainerId device property represents the [*GUID*](https
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Property-data-type identifier</strong></p></td>
-<td align="left">[<strong>DEVPROP_TYPE_GUID</strong>](devprop-type-guid.md)</td>
+<td align="left"><a href="devprop-type-guid.md" data-raw-source="[&lt;strong&gt;DEVPROP_TYPE_GUID&lt;/strong&gt;](devprop-type-guid.md)"><strong>DEVPROP_TYPE_GUID</strong></a></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Property access</strong></p></td>
@@ -48,7 +49,7 @@ The DEVPKEY_Device_BaseContainerId device property represents the [*GUID*](https
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -75,11 +76,11 @@ The DEVPKEY_Device_BaseContainerId property can be used to force the grouping of
 
 **Note**   The value that is returned by a query of the DEVPKEY_Device_BaseContainerId or [**DEVPKEY_Device_ContainerId**](devpkey-device-containerid.md) properties can be different for the same devnode.
 
- 
+ 
 
 **Note**  Do not use the DEVPKEY_Device_BaseContainerId property to reconstruct device container groupings in the system. Use the [**DEVPKEY_Device_ContainerId**](devpkey-device-containerid.md) property instead.
 
- 
+ 
 
 For more information about container IDs, see [Container IDs](https://msdn.microsoft.com/library/windows/hardware/ff540024).
 
@@ -112,9 +113,9 @@ Requirements
 
 [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963)
 
- 
+ 
 
- 
+ 
 
 
 

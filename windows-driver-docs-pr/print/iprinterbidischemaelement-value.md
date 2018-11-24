@@ -1,6 +1,5 @@
 ---
 title: IPrinterBidiSchemaElement Value method
-author: windows-driver-content
 description: The Value method returns the Bidi Schema element value.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
@@ -13,18 +12,18 @@ api_name:
 - IPrinterBidiSchemaElement.Value
 api_type:
 - COM
+ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # IPrinterBidiSchemaElement::Value method
-
 
 The Value method returns the Bidi Schema element value.
 
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT Value(
   [out, retval] VARIANT *pValue
 );
@@ -41,15 +40,6 @@ Return value
 
 This method returns an **HRESULT** value.
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**IPrinterBidiSchemaElement**](iprinterbidischemaelement-interface.md)
-
- 
-
- 
-
-
-
-

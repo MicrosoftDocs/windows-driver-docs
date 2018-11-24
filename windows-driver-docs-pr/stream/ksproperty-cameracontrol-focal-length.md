@@ -11,11 +11,7 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +23,7 @@ The KSPROPERTY\_CAMERACONTROL\_FOCAL\_LENGTH property retrieves focal length inf
 ## <span id="ddk_ksproperty_cameracontrol_focal_length_ks"></span><span id="DDK_KSPROPERTY_CAMERACONTROL_FOCAL_LENGTH_KS"></span>
 
 
-### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
+### Usage Summary Table
 
 <table>
 <colgroup>
@@ -51,13 +47,13 @@ The KSPROPERTY\_CAMERACONTROL\_FOCAL\_LENGTH property retrieves focal length inf
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Filter or node</p></td>
-<td><p>[<strong>KSPROPERTY_CAMERACONTROL_FOCAL_LENGTH_S</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564408) or [<strong>KSPROPERTY_CAMERACONTROL_NODE_FOCAL_LENGTH_S</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564418)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564408" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_FOCAL_LENGTH_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564408)"><strong>KSPROPERTY_CAMERACONTROL_FOCAL_LENGTH_S</strong></a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff564418" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_NODE_FOCAL_LENGTH_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564418)"><strong>KSPROPERTY_CAMERACONTROL_NODE_FOCAL_LENGTH_S</strong></a></p></td>
 <td><p>LONG</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a LONG that specifies a camera's focal length.
 
@@ -90,7 +86,7 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**KSPROPERTY\_CAMERACONTROL\_FOCAL\_LENGTH\_S**](https://msdn.microsoft.com/library/windows/hardware/ff564408)
@@ -101,9 +97,9 @@ Requirements
 
 [**KSPROPERTY\_CAMERACONTROL\_ZOOM\_RELATIVE**](ksproperty-cameracontrol-zoom-relative.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: FLT\_PARAMETERS for IRP\_MJ\_ACQUIRE\_FOR\_SECTION\_SYNCHRONIZATION union
-description: The following union component is used when the MajorFunction field of the FLT\_IO\_PARAMETER\_BLOCK structure for the operation is IRP\_MJ\_ACQUIRE\_FOR\_SECTION\_SYNCHRONIZATION.
+title: FLT_PARAMETERS for IRP_MJ_ACQUIRE_FOR_SECTION_SYNCHRONIZATION union
+description: The following union component is used when the MajorFunction field of the FLT_IO_PARAMETER_BLOCK structure for the operation is IRP_MJ_ACQUIRE_FOR_SECTION_SYNCHRONIZATION.
 ms.assetid: ea3ae072-4a98-48df-871a-cc7d882b96b8
 keywords: ["FLT_PARAMETERS for IRP_MJ_ACQUIRE_FOR_SECTION_SYNCHRONIZATION union Installable File System Drivers", "FLT_PARAMETERS union Installable File System Drivers", "PFLT_PARAMETERS union pointer Installable File System Drivers"]
 topic_type:
@@ -11,11 +11,7 @@ api_location:
 - fltkernel.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -48,7 +44,7 @@ Members
   * **SyncTypeOther**
 
 **PageProtection**  
-* Specifies the type of page protection requested for the section. Must be zero if SyncType**SyncType** is SyncTypeOther. Otherwise, one of the following flags, possibly combined with PAGE\_NOCACHE:
+* Specifies the type of page protection requested for the section. Must be zero if **SyncType** is SyncTypeOther. Otherwise, one of the following flags, possibly combined with PAGE\_NOCACHE:
 
   * PAGE\_READONLY
 
@@ -59,7 +55,7 @@ Members
   * PAGE\_EXECUTE
 
 **OutputInformation**
-*  Specifies information describing the attributes of the section that is being created.
+*  A [**FS_FILTER_SECTION_SYNC_OUTPUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_fs_filter_section_sync_output) structure that specifies information describing the attributes of the section that is being created.
 
 ## Remarks
 
@@ -109,9 +105,9 @@ For more information about FSFilter callback operations, see the reference entry
 
 [**FsRtlRegisterFileSystemFilterCallbacks**](https://msdn.microsoft.com/library/windows/hardware/ff547172)
 
- 
+ 
 
- 
+ 
 
 
 

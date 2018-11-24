@@ -4,11 +4,7 @@ description: Trace Session List Features
 ms.assetid: 66853868-f873-46fa-aa9a-d344464b20bf
 keywords:
 - Trace Session List WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -49,9 +45,9 @@ When a trace session or trace log is displayed in the Trace Session List, you ca
 
 -   [Manage trace message filters](filtering-trace-messages.md)
 
- 
+ 
 
- 
+ 
 
 
 

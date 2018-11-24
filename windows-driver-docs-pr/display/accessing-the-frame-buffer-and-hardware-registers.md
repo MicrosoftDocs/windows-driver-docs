@@ -12,11 +12,7 @@ keywords:
 - banks WDK Windows 2000 display
 - banked memory WDK Windows 2000 display
 - linear frame buffers WDK Windows 2000 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,9 +28,9 @@ The display driver has direct access to I/O-mapped and memory-mapped video regis
 
 Similarly, for graphics cards, such as the S3, many of the innermost loops in the graphics engine code require reads and writes of several video controller ports (for example, text output in graphics mode, bit block transfers, and line drawing). Rather than requiring the display driver to send an IOCTL to the miniport driver for each request, the display driver is permitted to access the video hardware directly.
 
- 
+ 
 
- 
+ 
 
 
 

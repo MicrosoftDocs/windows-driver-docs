@@ -4,11 +4,7 @@ description: Enterprise CA Test Certificate
 ms.assetid: c2b075c9-cb85-446d-ac07-65aad5507e62
 keywords:
 - Enterprise CA test certificates WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -39,9 +35,9 @@ the Windows Server 2003 Deployment Kit, the Windows Server 2003 Help and Support
 
 Information about configuring an Enterprise CA to test-sign [driver packages](driver-packages.md) is also provided in the readme file *Selfsign_readme.htm*, which located in the *src\\general\\build\\driversigning* directory of the WDK.
 
- 
+ 
 
- 
+ 
 
 
 

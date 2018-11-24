@@ -1,14 +1,9 @@
 ---
 title: Hiding Devices from Device Manager
-author: windows-driver-content
 description: Hiding Devices from Device Manager
 ms.assetid: dd362ae1-ab14-44ee-982e-f972454c2623
 keywords: ["Device Manager WDK , hidden devices", "devices WDK , hiding from Device Manager", "hidden devices WDK", "hiding devices WDK", "NoDisplayClass value WDK device installations"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,7 +30,7 @@ You can mark a device as hidden in the ACPI BIOS. The BIOS can expose a \_STA me
 
 For example, the following code example shows how a USB controller on the root bus would be hidden.
 
-```
+```cpp
 Device(PCI0) // Root PCI bus
 _HID *PNP0A03 
 ...
@@ -46,7 +41,7 @@ _HID *PNP0A03
 
 In Microsoft Windows 2000, you can hide only started, working devices. In Windows XP and later versions of Windows, you can also hide broken devices. Bit 3 (mask 0x8) that is returned by the \_STA method indicates whether a device is working properly. This bit is 1 if the device is working properly and is 0 otherwise. For example, the following code example shows how a BIOS would indicate a USB controller is broken and should be hidden:
 
-```
+```cpp
 Device(PCI0) // Root PCI bus 
 _HID *PNP0A03 
 ...
@@ -57,11 +52,11 @@ _HID *PNP0A03
 
 **Note**   The "decoding" bit (0x2) does not have any relevance for devices that are described through \_ADR methods. The previous code examples also work without the decoding bit set. BIOS writers must track the decoding state only for devices that are described through \_HID methods.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

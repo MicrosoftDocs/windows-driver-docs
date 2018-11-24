@@ -1,13 +1,8 @@
 ---
 title: WIA Error Handling Example
-author: windows-driver-content
 description: WIA Error Handling Example
 ms.assetid: 7dc4b15e-40db-4e64-be41-d6bcc44603c6
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,7 +15,7 @@ For an example of a driver that sends device status messages, please see the Ext
 
 The following code snippet shows how a simple error handing extension can be implemented. This error handling extension only handles the WIA\_ERROR\_COVER\_OPEN device status error and shows a modal dialog box. Note that some of the code has been omitted to simplify this example.
 
-```
+```cpp
 STDMETHODIMP
 
 CErrHandler::ReportStatus(
@@ -126,9 +121,9 @@ OUT BSTR *pbstrDescription)
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,15 +1,10 @@
 ---
 title: Supporting Standard Paper Sizes
-author: windows-driver-content
 description: Supporting Standard Paper Sizes
 ms.assetid: 04f8fbdb-88f8-4595-b5d2-74315c02bb41
 keywords:
 - standard paper sizes WDK Unidrv
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +29,9 @@ The following option attributes can be used, but are not required:
 \*PageProtectMem
 For all standard paper sizes, the RCID\_DMPAPER\_SYSTEM\_NAME resource identifier (defined in stdnames.gpd) should be used as the argument to \***rcNameID**.
 
- 
+ 
 
- 
+ 
 
 
 

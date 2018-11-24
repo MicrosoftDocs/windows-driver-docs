@@ -9,11 +9,7 @@ keywords:
 - SAN proxy drivers WDK , unloading
 - unloading drivers
 - initializing SAN proxy drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +25,9 @@ If the proxy driver's SAN service provider sends I/O control requests down to th
 
 The **DriverEntry** routine must specify an entry point for a routine that unloads the proxy driver. This unload routine removes the device that was created in **DriverEntry**.
 
- 
+ 
 
- 
+ 
 
 
 

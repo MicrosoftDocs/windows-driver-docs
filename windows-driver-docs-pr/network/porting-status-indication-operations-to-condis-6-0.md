@@ -6,11 +6,7 @@ keywords:
 - CoNDIS drivers WDK networking , status indications
 - connection-oriented drivers WDK networking , status indications
 - status indications WDK networking , porting
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +24,9 @@ This section includes the following topics:
 
 [Porting Protocol Driver Status Indication Handling to CoNDIS 6.0](porting-protocol-driver-status-indication-handling-to-condis-6-0.md)
 
- 
+ 
 
- 
+ 
 
 
 

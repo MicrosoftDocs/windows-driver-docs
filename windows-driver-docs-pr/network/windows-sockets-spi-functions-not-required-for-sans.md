@@ -5,11 +5,7 @@ ms.assetid: 995ff59e-8ee4-4468-914d-47c14d804c38
 keywords:
 - SAN service providers WDK , not required functions
 - functions WDK SANs
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -69,9 +65,9 @@ The Windows Sockets switch does not call **WSPStartup** to start the operation o
 **WSPStringToAddress**
 The Windows Sockets switch uses the TCP/IP provider to convert a human-readable numeric string that represents the IP address of a socket into a socket address structure (SOCKADDR) that is suitable to pass to Windows Sockets routines that take such a structure.
 
- 
+ 
 
- 
+ 
 
 
 

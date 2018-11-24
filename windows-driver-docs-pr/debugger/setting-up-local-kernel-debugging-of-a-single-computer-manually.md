@@ -2,11 +2,7 @@
 title: Setting Up Local Kernel Debugging of a Single Computer Manually
 description: Setting Up Local Kernel Debugging of a Single Computer Manually
 ms.assetid: FC717B1C-A68A-4002-A528-BFC3521C5E8A
-ms.author: domars
 ms.date: 07/11/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -52,9 +48,9 @@ Open a Command Prompt window as Administrator, and enter the following command:
 
 [Setting Up Kernel-Mode Debugging Manually](setting-up-kernel-mode-debugging-in-windbg--cdb--or-ntsd.md)
 
- 
+ 
 
- 
+ 
 
 
 

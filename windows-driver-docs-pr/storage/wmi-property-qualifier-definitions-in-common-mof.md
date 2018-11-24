@@ -3,6 +3,7 @@ title: WMI Property Qualifier Definitions in Common.mof
 description: WMI Property Qualifier Definitions in Common.mof
 ms.assetid: 24a95c4b-f4f4-4042-9a06-069685ac0260
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # WMI Property Qualifier Definitions in Common.mof
@@ -25,9 +26,9 @@ Thus, a WMI property qualifier resembles an enumeration because the qualifier re
 
 For a general discussion of WMI property qualifiers, see [WMI Property Qualifiers](https://msdn.microsoft.com/library/windows/hardware/ff566365).
 
- 
+ 
 
- 
+ 
 
 
 

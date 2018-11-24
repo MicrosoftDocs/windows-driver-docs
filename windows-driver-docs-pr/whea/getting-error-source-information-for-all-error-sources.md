@@ -1,6 +1,5 @@
 ---
 title: Getting Error Source Information for All Error Sources
-author: windows-driver-content
 description: Getting Error Source Information for All Error Sources
 ms.assetid: 78e3a015-128d-44d1-b0ec-4da43c359090
 keywords:
@@ -9,11 +8,7 @@ keywords:
 - WHEA WDK , getting error source information
 - Windows Hardware Error Architecture WDK , getting error source information
 - hardware error sources WDK WHEA , getting informati
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,7 +19,7 @@ A user-mode application can get information about all of the [error sources](har
 
 The following code example shows how to get the error source information for all of the error sources in the system.
 
-```
+```cpp
 IWbemServices *pIWbemServices;
 BSTR ClassName;
 BSTR MethodName;
@@ -134,9 +129,9 @@ SysFreeString(MethodName);
 pOutParameters->Release();
 ```
 
- 
+ 
 
- 
+ 
 
 
 

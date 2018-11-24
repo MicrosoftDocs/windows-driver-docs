@@ -2,11 +2,7 @@
 title: Secure boot and device encryption overview
 description: This topic provides an overview of secure boot and device encryption functionality, with emphasis on key OEM requirements and considerations.
 ms.assetid: 4e206bd2-7bb4-48c2-9e01-8da041e798ef
-ms.author: windowsdriverdev
 ms.date: 05/02/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -83,9 +79,9 @@ You should be aware of the following requirements and considerations related to 
 
 -   After device encryption is enabled on a device, apps that run outside of the main OS (for example, customer care apps in UEFI) cannot write data to the encrypted partitions on the device. Only apps in the main OS or the update OS can write data to the encrypted partitions.
 
- 
+ 
 
- 
+ 
 
 
 

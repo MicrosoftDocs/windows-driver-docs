@@ -1,5 +1,5 @@
 ---
-title: IRP\_MJ\_SET\_QUOTA
+title: IRP_MJ_SET_QUOTA
 description: IRP\_MJ\_SET\_QUOTA
 ms.assetid: 256c349b-48cb-4a9f-a60a-89503d8f3f58
 keywords: ["IRP_MJ_SET_QUOTA Installable File System Drivers"]
@@ -9,11 +9,7 @@ api_name:
 - IRP_MJ_SET_QUOTA
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -83,9 +79,9 @@ Specifies the length, in bytes, of the buffer pointed to by *Irp-&gt;UserBuffer*
 
 [**IRP\_MJ\_QUERY\_QUOTA**](irp-mj-query-quota.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,13 +1,8 @@
 ---
 title: V4 Driver INF
-author: windows-driver-content
 description: The v4 print driver setup model continues to use INF files, but also employs a new manifest file to capture the printer specific setup directives.
 ms.assetid: 48F19796-43F9-4A69-B042-1305245C9CB9
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,7 +18,7 @@ Notice that the sample v4 print driver INF file presented in this topic does not
 
 The following sample INF file assumes that a fictional company, Fabrikam, has manufactured print devices that will be installed to run with the v4 print driver.
 
-```Text
+```INF
 [Version]
 Signature="$Windows NT$"
 Provider="Fabrikam"
@@ -111,7 +106,7 @@ The v4 driver INF requires that **DestinationDir** is specified for all files in
 </tbody>
 </table>
 
- 
+ 
 
 ## INF Restrictions
 
@@ -158,7 +153,7 @@ V4 print drivers must not define other printer-specific directives or keywords c
 | UpdateIniFields             | Directive          |
 | UpdateInis                  | Directive          |
 
- 
+ 
 
 **NTPrint References**. NTPrint references are made in the manifest file. The INF file does not require any information about the NTPrint references in its DDInstall, CopyFiles, or SourceDisksFiles sections.
 
@@ -166,9 +161,9 @@ V4 print drivers must not define other printer-specific directives or keywords c
 
 For information about how to create an INF file for a basic v4 printer driver, see [Building a basic v4 Printer Driver](building-a-basic-v4-printer-driver.md).
 
- 
+ 
 
- 
+ 
 
 
 

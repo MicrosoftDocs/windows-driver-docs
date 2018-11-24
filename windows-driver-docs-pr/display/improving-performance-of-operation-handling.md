@@ -5,11 +5,7 @@ ms.assetid: 14b5aa90-15ee-40c6-8f5b-e776b07932ab
 keywords:
 - Direct3D WDK Windows 2000 display , operation codes
 - operation codes WDK Direct3D
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ To improve the performance of your display driver, you should observe the follow
 
 For more information about **IDirect3DDevice8::SetRenderState**, see the Direct3D SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

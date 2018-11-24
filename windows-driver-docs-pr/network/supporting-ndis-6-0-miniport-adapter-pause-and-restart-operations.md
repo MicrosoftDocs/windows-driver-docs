@@ -6,11 +6,7 @@ keywords:
 - miniport adapters WDK networking , pause and restart operations
 - adapters WDK networking , pause and restart operations
 - porting miniport drivers WDK networking , adapters
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +24,9 @@ NDIS calls the miniport driver's [**MiniportRestart**](https://msdn.microsoft.co
 
 For more information about pause and restart operations, see [Driver Stack Management](driver-stack-management.md).
 
- 
+ 
 
- 
+ 
 
 
 

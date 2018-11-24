@@ -4,11 +4,7 @@ description: Background Reading on UDP Encapsulation of ESP Packets
 ms.assetid: 29709601-8ae3-43af-8f4e-5ac46efb7340
 keywords:
 - UDP-encapsulated ESP packets WDK IPsec offload , background reading
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,9 +21,9 @@ To comprehend this section, you must understand the Internet Key Exchange (IKE) 
 
 -   [Negotiation of NAT-Traversal in the IKE](http://go.microsoft.com/fwlink/p/?linkid=9857)
 
- 
+ 
 
- 
+ 
 
 
 

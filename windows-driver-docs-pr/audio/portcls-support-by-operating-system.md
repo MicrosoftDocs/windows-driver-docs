@@ -16,11 +16,7 @@ keywords:
 - audio port class interfaces WDK
 - interfaces WDK Port Class
 - prefetch offset
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -194,9 +190,9 @@ The following lists contain all the functions and interfaces that the PortCls sy
 
 [IPowerNotify](https://msdn.microsoft.com/library/windows/hardware/ff536947)
 
- 
+ 
 
- 
+ 
 
 
 

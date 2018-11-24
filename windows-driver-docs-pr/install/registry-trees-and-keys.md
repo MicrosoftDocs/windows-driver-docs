@@ -2,11 +2,7 @@
 title: Registry Trees and Keys for Devices and Drivers
 description: Registry Trees and Keys for Devices and Drivers
 ms.assetid: 8f6ac7c1-f31a-4d14-8ba7-b432615db073
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,11 +27,11 @@ Drivers must access Plug and Play (PnP) keys in the registry using system routin
 
 **Important**  *Drivers must not access these registry trees and keys directly.* This discussion of registry information in this section is solely for debugging a device installation or configuration problem.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

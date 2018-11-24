@@ -8,11 +8,7 @@ keywords:
 - capabilities WDK TCP chimney offload
 - querying TCP chimney offload capabilities
 - target capabilities WDK TCP chimney offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,9 +21,9 @@ If the offload target's [*MiniportInitializeEx*](https://msdn.microsoft.com/libr
 
 In particular, the host stack queries the [OID\_TCP\_TASK\_OFFLOAD](https://msdn.microsoft.com/library/windows/hardware/ff569815) OID to determine an offload target's task offload and TCP chimney offload capabilities. In response to this query, an offload target returns an [**NDIS\_TASK\_TCP\_CONNECTION\_OFFLOAD**](https://msdn.microsoft.com/library/windows/hardware/ff567873) structure that specifies the offload target's TCP chimney offload capabilities, in addition to other information. After querying the target's task offload and TCP chimney offload capabilities, the host stack sets OID\_TCP\_TASK\_OFFLOAD to enable the offload target's task offload and TCP chimney offload capabilities.
 
- 
+ 
 
- 
+ 
 
 
 

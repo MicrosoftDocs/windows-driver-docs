@@ -7,11 +7,7 @@ keywords:
 - NDIS ports WDK , OID requests
 - OID requests WDK NDIS ports
 - associating OID requests WDK NDIS ports
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,9 +38,9 @@ This section includes:
 -   [Querying the Port State](querying-the-port-state.md)
 -   [Setting Port Authentication Parameters](setting-port-authentication-parameters.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,6 +3,7 @@ title: MSFC\_LinkEvent WMI Class
 description: MSFC\_LinkEvent WMI Class
 ms.assetid: 9507fb1a-ce2a-4ce9-8272-77c8c9d0a92c
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MSFC\_LinkEvent WMI Class
@@ -15,7 +16,7 @@ A WMI provider uses the MSFC\_LinkEvent WMI class to report link events.
 
 The MSFC\_LinkEvent class is defined as follows in *Hbaapi.mof*:
 
-```
+```cpp
 class MSFC_LinkEvent : WMIEvent {
   [key] 
   string InstanceName;
@@ -36,9 +37,9 @@ When compiled by the WMI tool suite this class definition produces the following
 
 There are no methods associated with this WMI class.
 
- 
+ 
 
- 
+ 
 
 
 

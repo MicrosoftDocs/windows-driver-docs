@@ -1,6 +1,5 @@
 ---
 title: Registry Settings for Serenum
-author: windows-driver-content
 description: Registry Settings for Serenum
 ms.assetid: c8a8f1b7-ea58-49ed-98e0-40297ec9a769
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - registry WDK serial devices
 - serial devices WDK , registry settings
 - serial devices WDK , Serenum driver
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -70,13 +65,13 @@ Each time the system builds a serial port device stack, Serenum sets the *enumer
 </tbody>
 </table>
 
- 
+ 
 
 For example, if a serial port's **SkipEnumerations** entry value is set to three when the system builds a port device stack, Serenum will skip the first three **BusRelations** requests it receives for the port. Serenum will subsequently enumerate the port in a normal manner as long as the port remains enabled.
 
- 
+ 
 
- 
+ 
 
 
 

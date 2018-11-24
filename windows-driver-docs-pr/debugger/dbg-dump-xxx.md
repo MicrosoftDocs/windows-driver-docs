@@ -2,11 +2,7 @@
 title: DBG\_DUMP\_XXX
 description: DBG\_DUMP\_XXX
 ms.assetid: d34ecf95-3aea-4850-a2de-76f239e8b8a0
-ms.author: domars
 ms.date: 12/07/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: ["DBG_DUMP_XXX Windows Debugging"]
 topic_type:
 - apiref
@@ -91,7 +87,7 @@ The following flags can be present.
 </tr>
 <tr class="odd">
 <td align="left"><p>DBG_DUMP_READ_PHYSICAL</p></td>
-<td align="left"><p>The symbol's value will be read directly from the target's physical memory.</p></td>
+<td align="left"><p>The symbol&#39;s value will be read directly from the target&#39;s physical memory.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>DBG_DUMP_FUNCTION_FORMAT</p></td>
@@ -104,7 +100,7 @@ The following flags can be present.
 </tbody>
 </table>
 
- 
+ 
 
 In addition, the result of the macro DBG\_DUMP\_RECUR\_LEVEL(*Level*) can be added to the bit-set to specify how deep into structures to recurse. *Level* can be a number between 0 and 15.
 
@@ -131,9 +127,9 @@ Requirements
 
 [**Ioctl**](https://msdn.microsoft.com/library/windows/hardware/ff551084)
 
- 
+ 
 
- 
+ 
 
 
 

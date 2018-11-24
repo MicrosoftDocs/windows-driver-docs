@@ -1,15 +1,10 @@
 ---
 title: Connection-oriented OIDs
-author: windows-driver-content
 description: This topic describes OIDs for connection-oriented objects.
 ms.assetid: 404383e0-0a89-4968-990e-d95e72e8ba00
 keywords:
 - Connection-oriented OIDs, WDK connection-oriented OIDs network drivers
-ms.author: windowsdriverdev
 ms.date: 11/02/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

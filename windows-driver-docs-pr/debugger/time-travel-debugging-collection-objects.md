@@ -1,11 +1,7 @@
 ---
 title: TTD Collection Objects
 description: This section describes the range model objects associated with time travel debugging.
-ms.author: windowsdriverdev
 ms.date: 09/25/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -14,12 +10,11 @@ ms.localizationpriority: medium
 >
 
 # TTD Collection Objects
+
 ## Description
-*TBD.
 
 ## Children
 
-TODO 
 
 | Object | Description |
 | --- | --- |
@@ -30,7 +25,6 @@ TODO
 
 ### TTD Collection Object Methods
 
-- ToDo - Move to table?
 
 **Contains(OtherString)** -Method which returns whether the string contains a given sub string.
 

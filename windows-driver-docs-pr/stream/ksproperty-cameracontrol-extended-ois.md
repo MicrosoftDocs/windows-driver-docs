@@ -11,21 +11,15 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
-ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 09/11/2018
 ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_CAMERACONTROL\_EXTENDED\_OIS
 
-
 **KSPROPERTY\_CAMERACONTROL\_EXTENDED\_OIS** is a property ID that is used to control optical image stabilization (OIS) on the driver.
 
-## <span id="Usage_summary_table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage summary table
-
+## Usage summary table
 
 <table>
 <colgroup>
@@ -49,12 +43,10 @@ ms.localizationpriority: medium
 </tbody>
 </table>
 
- 
-
 The following flags can be placed in the **KSCAMERA\_EXTENDEDPROP\_HEADER.Flags** field to control optical image stabilization. The default should be AUTO if AUTO is supported, or ON otherwise.
 
-``` syntax
-#define KSCAMERA_EXTENDEDPROP_OIS_OFF    0x0000000000000000
+```cpp
+#define KSCAMERA_EXTENDEDPROP_OIS_OFF   0x0000000000000000
 #define KSCAMERA_EXTENDEDPROP_OIS_ON    0x0000000000000001
 #define KSCAMERA_EXTENDEDPROP_OIS_AUTO  0x0000000000000002 
 ```
@@ -94,9 +86,7 @@ The following table describes the flag capabilities.
 </tbody>
 </table>
 
- 
-
-The table below contains the descriptions and requirements for the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/dn925136) structure fields when using the control.
+The table below contains the descriptions and requirements for the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure fields when using the control.
 
 <table>
 <colgroup>
@@ -137,10 +127,7 @@ The table below contains the descriptions and requirements for the [**KSCAMERA\_
 </tbody>
 </table>
 
- 
-
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -154,12 +141,3 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
-
-

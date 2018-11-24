@@ -3,11 +3,7 @@ title: can_write_kdump
 description: The can_write_kdump extension verifies that there is enough disk space on the target computer to write a kernel dump file of the specified type.
 ms.assetid: e9fdf8a4-3294-4625-a854-5e42a69374a6
 keywords: ["kernel dump", "can_write_kdump Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!can\_write\_kdump** extension verifies that there is enough disk space on the target computer to write a kernel dump file of the specified type.
 
-```
+```dbgsyntax
 !can_write_kdump [-dn] [Options]
 ```
 
@@ -63,7 +59,7 @@ Specifies that the extension should determine if there is enough space for a ful
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -72,7 +68,7 @@ If no *Option* is specified, then the extension will determine if there is enoug
 
 In the following example, the file system is not specified:
 
-```
+```dbgcmd
 kd> !can_write_kdump
 Checking kernel summary dump...
 WARNING: Can't predict how many pages will be used, assuming worst-case.
@@ -81,9 +77,9 @@ Page file size: 1572864 KB
 NO: Page file too small
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: PwrTest Timer Scenario
 description: The PwrTest Timer Scenario logs system timer resolution changes as they happen.
 ms.assetid: 842A827F-8046-4A31-938B-B1EA2119421A
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,7 +18,7 @@ The PwrTest Timer Scenario logs system timer resolution changes as they happen.
 pwrtest /timer /?  [/t:n]  [/?] 
 ```
 
-<span id="_t_n"></span><span id="_T_N"></span>**/t:***n*  
+<span id="_t_n"></span><span id="_T_N"></span>**/t:**<em>n</em>  
 Specifies the total time (in minutes) for the scenario to run (the default value for *n* is 30 minutes).
 
 **Examples**
@@ -156,16 +152,16 @@ The following table describes the XML elements that appear in the log file.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
 
 [PwrTest Syntax](pwrtest-syntax.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Device Requirements for USB Video Class Extension Units
-author: windows-driver-content
 description: Device Requirements for USB Video Class Extension Units
 ms.assetid: 4678c3a4-9ca7-4518-afe8-99a9e61f3dcd
 keywords:
@@ -9,11 +8,7 @@ keywords:
 - descriptors WDK USB Video Class
 - Extension Unit controls WDK USB Video Class
 - controls WDK USB Video Class
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -41,7 +36,7 @@ KSPROPERTY\_EXTENSION\_UNIT\_PASS\_THROUGH (Property ID=0xffff) is not implement
 
 The following code example, taken from the complete sample shown in the Sample Extension Unit Plug-in DLL, shows how to make a KSPROPERTY\_EXTENSION\_UNIT\_INFO request:
 
-```
+```cpp
 ExtensionProp.Property.Set = PROPSETID_VIDCAP_EXTENSION_UNIT;
     ExtensionProp.Property.Id = KSPROPERTY_EXTENSION_UNIT_INFO;
     ExtensionProp.Property.Flags = KSPROPERTY_TYPE_GET | 
@@ -68,9 +63,9 @@ During device initialization, the driver issues the following control requests t
 
 The value returned by GET\_INFO tells the driver which GET and SET requests are valid for a given control. In addition, GET\_INFO tells the driver whether the control is asynchronous. Asynchronous requests are supported by Status Interrupt Endpoints.
 
- 
+ 
 
- 
+ 
 
 
 

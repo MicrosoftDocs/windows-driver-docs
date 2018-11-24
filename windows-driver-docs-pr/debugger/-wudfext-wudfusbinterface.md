@@ -3,11 +3,7 @@ title: wudfext.wudfusbinterface
 description: The wudfext.wudfusbinterface extension displays information about a USB interface object.
 ms.assetid: 4c93919a-781d-4bd8-9be2-eecdb75781b1
 keywords: ["wudfext.wudfusbinterface Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!wudfext.wudfusbinterface** extension displays information about a USB interface object.
 
-```
+```dbgcmd
 !wudfext.wudfusbinterface pWDFUSBInterface TypeName
 ```
 
@@ -54,15 +50,15 @@ Optional. Specifies the type of the interface (for example, **IWDFDevice**). If 
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
 For more information, see [User-Mode Driver Framework Debugging](user-mode-driver-framework-debugging.md).
 
- 
+ 
 
- 
+ 
 
 
 

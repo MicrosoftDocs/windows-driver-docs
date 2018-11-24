@@ -8,11 +8,7 @@ keywords:
 - converting float to XR_BIAS WDK Windows 7 display
 - float WDK Windows 7 display
 - float WDK Windows 7 display , conversion to XR_BIAS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -49,9 +45,9 @@ The conversion of float to XR\_BIAS is permitted tolerance of 0.6f Unit-Last-Pla
 
 The standard Direct3D version 10 requirement for inverting data also applies.
 
- 
+ 
 
- 
+ 
 
 
 

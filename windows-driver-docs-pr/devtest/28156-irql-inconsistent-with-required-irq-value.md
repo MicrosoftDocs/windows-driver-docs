@@ -5,11 +5,7 @@ ms.assetid: dc9c108f-adf1-4364-9d2b-711c8c9db939
 keywords:
 - warnings listed WDK PREfast for Drivers
 - errors listed WDK PREfast for Drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,13 +27,13 @@ warning C28156: The actual IRQL is inconsistent with the required IRQL
 </tbody>
 </table>
 
- 
+ 
 
 An **\_IRQL\_requires\_** annotation specifies that the driver should be executing at a particular IRQL when the function completes, but there is at least one path in which the driver is executing at a different IRQL when the function completes.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: Event Commands
 description: Event Commands
 ms.assetid: e2b9f985-be57-49a9-b546-5cc74b0b061b
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +30,9 @@ If the device supports buttons that do not use interrupts from the device and a 
 
 This command is required if the device supports polled events or you want the device to display on-line status.
 
- 
+ 
 
- 
+ 
 
 
 

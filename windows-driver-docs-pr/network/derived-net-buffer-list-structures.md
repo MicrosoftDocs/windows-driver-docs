@@ -8,11 +8,7 @@ keywords:
 - data WDK networking , structures
 - packets WDK networking , data structures
 - derived structures WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -50,9 +46,9 @@ This following topics provide more information about derived NET\_BUFFER\_LIST s
 -   [Fragmented NET\_BUFFER\_LIST Structures](fragmented-net-buffer-list-structures.md)
 -   [Reassembled NET\_BUFFER\_LIST Structures](reassembled-net-buffer-list-structures.md)
 
- 
+ 
 
- 
+ 
 
 
 

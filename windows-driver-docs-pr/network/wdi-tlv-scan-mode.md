@@ -1,13 +1,8 @@
 ---
 title: WDI_TLV_SCAN_MODE
-author: windows-driver-content
 description: WDI_TLV_SCAN_MODE is a TLV that contains scan mode parameters.
 ms.assetid: 9F954B66-4F1D-48F2-9316-BE623DF0CAE6
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_SCAN_MODE Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -38,7 +33,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | UINT8                                               | Specifies if live updates are needed and discovered entries must be reported when they are found, with the recommended throttling logic above. This value is always true when the Microsoft component manages the BSS list cache. |
 | [**WDI\_SCAN\_TRIGGER**](https://msdn.microsoft.com/library/windows/hardware/dn926114) | Specifies the trigger for the scan.                                                                                                                                                                                               |
 
- 
+ 
 
 Requirements
 ------------
@@ -64,9 +59,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

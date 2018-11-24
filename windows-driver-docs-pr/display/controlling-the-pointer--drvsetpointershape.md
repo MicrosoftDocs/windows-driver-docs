@@ -9,11 +9,7 @@ keywords:
 - DrvSetPointerShape
 - shape of pointer WDK Windows 2000 display
 - reshaping pointer WDK Windows 2000 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +29,9 @@ If a display driver controls the pointer, then the driver must support [**DrvSet
 
 The driver can call [**EngSetPointerShape**](https://msdn.microsoft.com/library/windows/hardware/ff565017) to have GDI manage a software cursor.
 
- 
+ 
 
- 
+ 
 
 
 

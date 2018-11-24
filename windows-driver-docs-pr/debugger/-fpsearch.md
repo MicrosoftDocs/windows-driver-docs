@@ -3,11 +3,7 @@ title: fpsearch
 description: The fpsearch extension searches the freed special pool for a specified address.
 ms.assetid: 70375723-7156-47ec-b6e1-b3c51b5caaf9
 keywords: ["special pool", "fpsearch Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!fpsearch** extension searches the freed special pool for a specified address.
 
-```
+```dbgcmd
 !fpsearch [Address] [Flag]
 ```
 
@@ -54,7 +50,7 @@ If set, the debugger displays the raw content of each page on the free list as i
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -65,7 +61,7 @@ If *Address* is set to -1, the debugger displays the entire freed special pool.
 
 If the debugger cannot find the specified address in the freed special pool, it does not display anything.Here is an example of the output from this extension:
 
-```
+```dbgcmd
 kd> !fpsearch -1 1
 Searching the free page list (8 entries) for all freed special pool
 
@@ -119,9 +115,9 @@ CEAD000  00000000 00000000 00000000 00000000 ................
 
 You can stop execution at any point by pressing CTRL+BREAK (in WinDbg) or CTRL+C (in KD).
 
- 
+ 
 
- 
+ 
 
 
 

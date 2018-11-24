@@ -17,11 +17,7 @@ keywords:
 - system-specific boot loaders WDK
 - boot loaders WDK
 - firmware-independent boot options WDK
-ms.author: windowsdriverdev
 ms.date: 07/03/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -88,7 +84,7 @@ To change boot options programmatically in Windows, use the Windows Management I
 
 ## Related topics
 
-- [BCD Boot Options Reference](https://msdn.microsoft.com/library/windows/hardware/ff542205)
+- [BCD Edit Options Reference](bcd-boot-options-reference.md)
 - [Editing Boot Options](editing-boot-options.md)
 - [Using Boot Parameters](using-boot-parameters.md)
 - [Boot Configuration Data](http://go.microsoft.com/fwlink/p/?linkid=74322)

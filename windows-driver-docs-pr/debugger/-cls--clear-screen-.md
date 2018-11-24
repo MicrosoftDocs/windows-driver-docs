@@ -3,11 +3,7 @@ title: .cls (Clear Screen)
 description: The .cls command clears the Debugger Command window display.
 ms.assetid: 95f3083f-19c4-42c6-b9be-32818b0e64e1
 keywords: [".cls (Clear Screen) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **.cls** command clears the Debugger Command window display.
 
-```
+```dbgsyntax
     .cls 
 ```
 
@@ -52,11 +48,11 @@ The **.cls** command clears the Debugger Command window display.
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

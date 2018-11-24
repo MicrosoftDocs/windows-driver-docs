@@ -1,12 +1,7 @@
 ---
 title: Device Guard and Credential Guard
 description: Device Guard and Credential Guard
-author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 05/07/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

@@ -8,11 +8,7 @@ keywords:
 - tracing WDK , Tracelog
 - event tracing controller WDK Tracelog
 - trace session management WDK Tracelog
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,7 +28,7 @@ Tracelog (Tracelog.exe) is an event tracing controller that runs in a Command Pr
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Tracelog (Tracelog.exe) is included when you install the WDK, Visual Studio, and the Windows SDK for desktop apps. For information about downloading the kits, see [Windows Hardware Downloads](http://go.microsoft.com/fwlink/p/?linkid=290798).</p>
+<td align="left"><p>Tracelog (Tracelog.exe) is included when you install the WDK, Visual Studio, and the Windows SDK for desktop apps. For information about downloading the kits, see <a href="http://go.microsoft.com/fwlink/p/?linkid=290798" data-raw-source="[Windows Hardware Downloads](http://go.microsoft.com/fwlink/p/?linkid=290798)">Windows Hardware Downloads</a>.</p>
 <p><strong>Windows Driver Kit (WDK) 8</strong> (installation path)</p>
 <p>%WindowsSdkDir%\tools\x64\tracelog.exe</p>
 <p>%WindowsSdkDir%\tools\x86\tracelog.exe</p>
@@ -47,7 +43,7 @@ Tracelog (Tracelog.exe) is an event tracing controller that runs in a Command Pr
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="What_you_can_do_with_Tracelog"></span><span id="what_you_can_do_with_tracelog"></span><span id="WHAT_YOU_CAN_DO_WITH_TRACELOG"></span>What you can do with Tracelog
 

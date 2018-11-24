@@ -3,11 +3,7 @@ title: SymProxy
 description: SymProxy
 ms.assetid: c0b122fe-4996-4659-a3f1-95831605c0b3
 keywords: ["symbols, SymProxy (symproxy.dll)", "symbol stores, HTTP", "symbol stores, SymProxy (symproxy.dll)", "SymProxy"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -43,33 +39,33 @@ SymProxy splits the (registry defined) symbol path value up in to the individual
 
 The (generated) symbol path used by SymProxy is equivalent to this:
 
-```
+```dbgcmd
 SRV*<Virtual Directory Folder>*<SymbolPath Entry #N>
 ```
 
 In this example, a UNC path and two HTTP paths are associated with a Virtual Directory to merge the symbols from a corporate symbol server, Microsoft and a 3rd party (Contoso). The SymProxy SymbolPath would be set like this:
 
-```
+```console
 \\MainOffice\Symbols;https://msdl.microsoft.com/download/symbols;
-http://symbols.contoso.com/symbols
+https://symbols.contoso.com/symbols
 ```
 
 The Main Office Symbol file share is queried first using a (generated) symbol path of:
 
-```
+```dbgcmd
 SRV*D:\SymStore\Symbols*\\MainOffice\Symbols
 ```
 
 If the symbol file is not found, the Microsoft Symbol Store is queried using a (generated) symbol path of:
 
-```
+```dbgcmd
 SRV*D:\SymStore\Symbols*https://msdl.microsoft.com/download/symbols
 ```
 
-If the file is still not found, the Contoso Symbol Store (http://symbols.contoso.com/symbols) is queried using a (generated) symbol path of:
+If the file is still not found, the Contoso Symbol Store (https://symbols.contoso.com/symbols) is queried using a (generated) symbol path of:
 
-```
-SRV*D:\SymStore\Symbols*http://symbols.contoso.com/symbols
+```dbgcmd
+SRV*D:\SymStore\Symbols*https://symbols.contoso.com/symbols
 ```
 
 This section includes:
@@ -92,9 +88,9 @@ This section includes:
 
 [Caching Acquired Symbol Files](caching-acquired-symbol-files.md)
 
- 
+ 
 
- 
+ 
 
 
 

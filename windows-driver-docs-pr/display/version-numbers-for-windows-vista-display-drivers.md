@@ -6,11 +6,7 @@ keywords:
 - display driver model WDK Windows Vista , version numbers
 - Windows Vista display driver model WDK , version numbers
 - version numbers WDK display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,7 +17,7 @@ To ensure that a display driver that conforms to the Windows Display Driver Mode
 
 **Note**   The **DriverVer** directive provides a way to add version information for the driver package, including the driver file and the INF file itself, to the INF file. By using the **DriverVer** directive, you can safely and definitively replace driver packages by future versions of the same package. For more information about this directive, see [**INF DriverVer Directive**](https://msdn.microsoft.com/library/windows/hardware/ff547394).
 
- 
+ 
 
 This table gives examples of the range of version numbers that are appropriate for vendor-supplied display drivers that conform to WDDM for compatibility with various versions of DirectX. \\
 
@@ -48,7 +44,7 @@ This table gives examples of the range of version numbers that are appropriate f
 </tbody>
 </table>
 
- 
+ 
 
 This table gives the range of version numbers that are appropriate for vendor-supplied display drivers that conform to the [Windows 2000 display driver model](windows-2000-display-driver-model-design-guide.md) for compatibility with DirectX 9.0.
 
@@ -71,13 +67,13 @@ This table gives the range of version numbers that are appropriate for vendor-su
 </tbody>
 </table>
 
- 
+ 
 
 For more information about versioning for display drivers, see [Version Numbers for Display Drivers](version-numbers-for-display-drivers.md).
 
- 
+ 
 
- 
+ 
 
 
 

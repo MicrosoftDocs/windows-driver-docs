@@ -2,11 +2,7 @@
 title: Bluetooth Certification
 description: Describes Windows Hardware Certification Program requirements for Bluetooth radios
 ms.assetid: B9AC4035-E52E-4B2B-8AE5-76F314C35EDD
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,9 +21,9 @@ For general information about the Windows Hardware Certification Program, see th
 
 For Windows 8.1 and Windows 8, the Windows Hardware Certification Program requires Bluetooth radios to support Bluetooth version 4.0 to qualify for a Windows logo. Updated tests are included in the latest version of the HCK. For more information about where to download the HCK, see [Windows Hardware Certification Requirements and Policies](http://go.microsoft.com/fwlink/p/?linkid=317937).
 
- 
+ 
 
- 
+ 
 
 
 

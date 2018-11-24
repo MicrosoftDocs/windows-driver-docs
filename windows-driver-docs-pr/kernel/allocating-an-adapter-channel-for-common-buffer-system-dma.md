@@ -1,14 +1,9 @@
 ---
 title: Allocating an Adapter Channel for Common-Buffer System DMA
-author: windows-driver-content
 description: Allocating an Adapter Channel for Common-Buffer System DMA
 ms.assetid: 3b426b5e-e555-458c-8e16-0d59a7cb9bd6
 keywords: ["allocating adapter channels", "adapter channel allocations WDK kernel", "AllocateAdapterChannel", "system DMA WDK kernel , common buffer", "common buffer DMA WDK kernel", "DMA transfers WDK kernel , common buffer"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -44,9 +39,9 @@ Because an *AdapterControl* routine cannot wait for the subordinate device to ca
 
 Another driver routine (probably the [*DpcForIsr*](https://msdn.microsoft.com/library/windows/hardware/ff544079) routine) must call [**FlushAdapterBuffers**](https://msdn.microsoft.com/library/windows/hardware/ff545917) and [**FreeAdapterChannel**](https://msdn.microsoft.com/library/windows/hardware/ff546507) when the DMA transfer operation is complete.
 
- 
+ 
 
- 
+ 
 
 
 

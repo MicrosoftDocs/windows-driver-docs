@@ -1,6 +1,5 @@
 ---
 title: Filter Control Mutex in AVStream
-author: windows-driver-content
 description: Filter Control Mutex in AVStream
 ms.assetid: 402795a0-e567-4e7e-a7d8-b2ce29ffb8fd
 keywords:
@@ -9,11 +8,7 @@ keywords:
 - mutexes WDK AVStream
 - synchronization WDK AVStream
 - state transitions WDK AVStream
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -63,9 +58,9 @@ To manipulate the filter control mutex, use the following functions:
 
 [**KsAcquireControl**](https://msdn.microsoft.com/library/windows/hardware/ff560908), [**KsFilterAcquireControl**](https://msdn.microsoft.com/library/windows/hardware/ff562523), [**KsPinAcquireControl**](https://msdn.microsoft.com/library/windows/hardware/ff563485), [**KsReleaseControl**](https://msdn.microsoft.com/library/windows/hardware/ff566780), [**KsFilterReleaseControl**](https://msdn.microsoft.com/library/windows/hardware/ff562551), [**KsPinReleaseControl**](https://msdn.microsoft.com/library/windows/hardware/ff563526)
 
- 
+ 
 
- 
+ 
 
 
 

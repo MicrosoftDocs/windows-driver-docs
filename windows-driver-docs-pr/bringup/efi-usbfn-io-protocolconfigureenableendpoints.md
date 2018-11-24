@@ -1,13 +1,8 @@
 ---
 title: EFI_USBFN_IO_PROTOCOL.ConfigureEnableEndpoints
-author: windows-driver-content
 description: EFI_USBFN_IO_PROTOCOL.ConfigureEnableEndpoints
 ms.assetid: 31bc58a0-ec2b-4b5e-ad1b-e6107cc083b1
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,7 +14,7 @@ The **ConfigureEnableEndpoints** function initializes endpoints based on supplie
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef
 EFI_STATUS
 (EFIAPI * EFI_USBFN_IO_CONFIGURE_ENABLE_ENDPOINTS) (
@@ -77,7 +72,7 @@ The function returns the following values:
 </tbody>
 </table>
 
- 
+ 
 
 ## Remarks
 
@@ -91,9 +86,9 @@ This function must ignore the *bMaxPacketSize0* field of the Standard Device Des
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
 

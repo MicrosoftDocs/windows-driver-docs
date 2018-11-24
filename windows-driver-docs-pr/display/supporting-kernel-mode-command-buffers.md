@@ -4,11 +4,7 @@ description: Supporting Kernel-Mode Command Buffers
 ms.assetid: c61a39b3-6fd6-461f-a68f-450ccd705f6f
 keywords:
 - command buffer WDK display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,9 +18,9 @@ The display miniport driver should submit a command buffer in response to a call
 
 The driver can use the **MultipassOffset** member of the [**DXGKARG\_RENDER**](https://msdn.microsoft.com/library/windows/hardware/ff557648) structure to track the progress of input command buffer processing. For example, the display miniport driver can use the high 16 bits as an offset to the last processed command, and the low 16 bits to track the processing of the command.
 
- 
+ 
 
- 
+ 
 
 
 

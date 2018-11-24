@@ -3,11 +3,7 @@ title: ndiskd.compartments
 description: The ndiskd.compartments extension displays all network compartments.
 ms.assetid: F9BF319D-77E9-4D12-84E9-655058F57AC4
 keywords: ["ndiskd.compartments Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!ndiskd.compartments** extension displays all network compartments.
 
-```
+```console
 !ndiskd.compartments 
 ```
 
@@ -45,7 +41,7 @@ Examples
 
 Run the **!ndiskd.compartments** extension to see a list of all network compartments. In this example, there is only one compartment (the primary one).
 
-```
+```console
 3: kd> !ndiskd.compartments
     Compartment        ffffdf80139b9940
     ID                 1
@@ -70,9 +66,9 @@ Run the **!ndiskd.compartments** extension to see a list of all network compartm
 
 [**NDIS\_BIND\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff564832)
 
- 
+ 
 
- 
+ 
 
 
 

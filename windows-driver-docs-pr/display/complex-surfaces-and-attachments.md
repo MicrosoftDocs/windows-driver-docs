@@ -10,11 +10,7 @@ keywords:
 - surfaces WDK DirectDraw , attachments
 - drawing surfaces WDK DirectDraw , attachments
 - DirectDraw surfaces WDK Windows 2000 display , attachments
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +24,9 @@ Surfaces can be *complex*, which means that they are part of a larger collection
 
 The DirectDraw runtime uses a concept known as *surface attachments* to manage the linking of different simple surfaces into complex surfaces. Surfaces can be attached implicitly, as when the application makes one call to **IDirectDraw7::CreateSurface** to build a flipping chain (front buffer and back buffers with a possible Z-buffer); or explicitly, as when the application associates a Z-buffer with a render target by calling **IDirectDrawSurface7::AddAttachedSurface**.
 
- 
+ 
 
- 
+ 
 
 
 

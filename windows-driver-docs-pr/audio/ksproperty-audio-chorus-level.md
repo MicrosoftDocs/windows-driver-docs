@@ -11,11 +11,7 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -51,13 +47,13 @@ The KSPROPERTY\_AUDIO\_CHORUS\_LEVEL property specifies the chorus level. This i
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left">[<strong>KSNODEPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537143)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/ff537143" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537143)"><strong>KSNODEPROPERTY</strong></a></td>
 <td align="left"><p>ULONG</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is of type ULONG and specifies the chorus level. Chorus-level values follow a linear range from 0 to 100\*(65536-1/65536) percent:
 
@@ -99,9 +95,9 @@ Requirements
 
 [**KSNODEPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff537143)
 
- 
+ 
 
- 
+ 
 
 
 

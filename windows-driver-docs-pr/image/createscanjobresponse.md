@@ -9,11 +9,7 @@ api_name:
 - wscn CreateScanJobResponse
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **CreateScanJobResponse** element contains the WSD Scan Service's r
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:CreateScanJobResponse>
   child elements
 </wscn:CreateScanJobResponse>
@@ -50,16 +46,16 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>DocumentFinalParameters</strong>](documentfinalparameters.md)</p></td>
+<td><p><a href="documentfinalparameters.md" data-raw-source="[&lt;strong&gt;DocumentFinalParameters&lt;/strong&gt;](documentfinalparameters.md)"><strong>DocumentFinalParameters</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>ImageInformation</strong>](imageinformation.md)</p></td>
+<td><p><a href="imageinformation.md" data-raw-source="[&lt;strong&gt;ImageInformation&lt;/strong&gt;](imageinformation.md)"><strong>ImageInformation</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>JobId</strong>](jobid.md)</p></td>
+<td><p><a href="jobid.md" data-raw-source="[&lt;strong&gt;JobId&lt;/strong&gt;](jobid.md)"><strong>JobId</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>JobToken</strong>](jobtoken.md)</p></td>
+<td><p><a href="jobtoken.md" data-raw-source="[&lt;strong&gt;JobToken&lt;/strong&gt;](jobtoken.md)"><strong>JobToken</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -90,13 +86,13 @@ Examples
 
 The following code example illustrates a WSD Scan Service response to a CreateScanJobRequest.
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope
   xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
   xmlns:wsa="http://schemas.xmlsoap.org/ws/2003/03/addressing"
   xmlns:wscn="http://schemas.microsoft.com/windows/2006/01/wdp/scan"
-  soap:encodingStyle=&#39;http://www.w3.org/2002/12/soap-encoding&#39; >
+  soap:encodingStyle='http://www.w3.org/2002/12/soap-encoding' >
 
   <soap:Header>
     <wsa:To>
@@ -175,7 +171,7 @@ The following code example illustrates a WSD Scan Service response to a CreateSc
 </soap:Envelope>
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**CreateScanJobRequest**](createscanjobrequest.md)
@@ -192,9 +188,9 @@ The following code example illustrates a WSD Scan Service response to a CreateSc
 
 [**RetrieveImageRequest**](retrieveimagerequest.md)
 
- 
+ 
 
- 
+ 
 
 
 

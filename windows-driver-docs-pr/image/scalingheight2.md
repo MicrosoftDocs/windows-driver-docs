@@ -9,11 +9,7 @@ api_name:
 - wscn ScalingHeight
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **ScalingHeight** element contains the range of allowable values fo
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ScalingHeight>
   child elements
 </wscn:ScalingHeight>
@@ -50,10 +46,10 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>MaxValue</strong>](maxvalue.md)</p></td>
+<td><p><a href="maxvalue.md" data-raw-source="[&lt;strong&gt;MaxValue&lt;/strong&gt;](maxvalue.md)"><strong>MaxValue</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>MinValue</strong>](minvalue.md)</p></td>
+<td><p><a href="minvalue.md" data-raw-source="[&lt;strong&gt;MinValue&lt;/strong&gt;](minvalue.md)"><strong>MinValue</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -72,7 +68,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ScalingRangeSupported</strong>](scalingrangesupported.md)</p></td>
+<td><p><a href="scalingrangesupported.md" data-raw-source="[&lt;strong&gt;ScalingRangeSupported&lt;/strong&gt;](scalingrangesupported.md)"><strong>ScalingRangeSupported</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -84,7 +80,7 @@ The **ScalingHeight** element contains the [**MinValue**](minvalue.md) and [**Ma
 
 **MinValue** and **MaxValue** must be integers from 1 through 1000, with **MinValue** less than or equal to **MaxValue**. A value of 100 means that the scan device should not make any adjustments to the height of the scanned image. At a minimum, the WSD Scan Service must support the value of 100.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**MaxValue**](maxvalue.md)
@@ -95,9 +91,9 @@ The **ScalingHeight** element contains the [**MinValue**](minvalue.md) and [**Ma
 
 [**ScalingWidth2**](scalingwidth.md)
 
- 
+ 
 
- 
+ 
 
 
 

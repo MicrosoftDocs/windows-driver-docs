@@ -1,15 +1,10 @@
 ---
 title: GUID_NDIS_GEN_LINK_STATE
-author: windows-driver-content
 description: This topic describes the GUID_NDIS_GEN_LINK_STATE GUID for the NDIS WMI interface.
 ms.assetid: 0b0ebb57-33fb-4a18-b6e5-3f4300729280
 keywords:
 - GUID_NDIS_GEN_LINK_STATE, WDK GUID_NDIS_GEN_LINK_STATE network drivers
-ms.author: windowsdriverdev
 ms.date: 11/22/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

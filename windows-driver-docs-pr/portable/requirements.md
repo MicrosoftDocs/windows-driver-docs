@@ -1,11 +1,7 @@
 ---
 Description: Requirements
 title: Requirements
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -44,9 +40,9 @@ Of these files, *BridgeDeviceService.h* and *DeviceService.h* are required for a
 
 [**WPD Drivers**](wpd-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

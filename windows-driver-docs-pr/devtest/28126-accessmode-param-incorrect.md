@@ -5,11 +5,7 @@ ms.assetid: be8f909e-2d4a-4e22-b457-81a048d90df8
 keywords:
 - warnings listed WDK PREfast for Drivers
 - errors listed WDK PREfast for Drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +22,9 @@ This warning is intended for the top-level driver in the driver stack. You can i
 
 The top-level driver in the driver stack should use **Irp-&gt;RequestorMode**, rather than specifying **UserMode** or **KernelMode**. This allows the senders of kernel-mode IRP to supply kernel-mode handles safely. All other drivers in the stack should specify **KernelMode**, which skips the access check and leaves responsibility for the access check to the top-level driver.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -5,11 +5,7 @@ ms.assetid: 9b976a59-329f-41a7-9eff-8f18d75cdb42
 keywords:
 - WDF Verifier WDK , managing UMDF settings
 - UMDF Verifier settings WDK WDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -40,9 +36,9 @@ When you make changes to the UMDF Verifier settings, these changes affect subseq
 4.  Leave WDF Verifier running. When a new host process starts, WDF Verifier attaches your preferred debugger to the process.
 5.  If your driver is already running, change the tracing level or select **Send Log Output to Kernel Debugger** and click **Apply**. Doing so stops and restarts all UMDF processes unless you have turned off the auto-restart feature (you can restore it on the [My Preferences](my-preferences-tab.md) page).
 
- 
+ 
 
- 
+ 
 
 
 

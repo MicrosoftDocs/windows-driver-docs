@@ -8,11 +8,7 @@ keywords:
 - converting XR_BIAS to float WDK Windows 7 display
 - XR_BIAS WDK Windows 7 display
 - XR_BIAS WDK Windows 7 display , conversion to float
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,16 +19,16 @@ This section applies only to Windows 7 and later operating systems.
 
 The following code shows how to convert XR\_BIAS to float:
 
-```
+```cpp
 float XRtoFloat( UINT XRComponent ) {
 // The & 0x3ff shows that only 10 bits contribute to the conversion. 
  return (float)( (XRComponent & 0x3ff) - 0x180 ) / 510.f;
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

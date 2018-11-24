@@ -12,11 +12,7 @@ keywords:
 - DirectMusic WDK audio , MIDI-to-wave conversions
 - custom rendering in user mode WDK audio , MIDI-to-wave conversions
 - DirectMusic custom rendering WDK audio , MIDI-to-wave conversions
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,9 +38,9 @@ The DirectSound buffer is circular. Because wraparound occurs at the end of the 
 
 Your implementation of the **Render** method is responsible for determining what must be done in response to the MIDI messages that are retrieved in **PlayBuffer**. From the *dwLength* parameter values of successive calls to **Render**, the method can keep track of the sample time and act on messages that are valid for the current rendering period. When a note-on message is processed, the note can be stored internally and rendered again on each pass through the method until a corresponding note-off message is received.
 
- 
+ 
 
- 
+ 
 
 
 

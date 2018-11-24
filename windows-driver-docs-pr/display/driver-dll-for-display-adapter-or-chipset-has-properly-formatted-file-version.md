@@ -2,11 +2,7 @@
 title: Driver DLL for display adapter or chipset has properly formatted file version
 description: This topic describes the proper formatting for display driver DLLs.
 ms.assetid: E39B2A48-D3F8-4EA5-BCF3-23B1053E8D96
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -50,9 +46,9 @@ For example:
 
 **Recommendation** (this will become a requirement in a future release): We highly recommend that the DriverVer in the display driver .INF file also conform to the above DLL version-numbering requirement, except that for Windows 8, WDDM 1.2 drivers, the BB field in the INF DriverVer must be set for the highest DirectX feature level that is supported by the driver on the graphics hardware listed in the INF.
 
- 
+ 
 
- 
+ 
 
 
 

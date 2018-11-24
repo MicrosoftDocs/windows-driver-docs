@@ -2,11 +2,7 @@
 title: Required Direct3D 9 capabilities
 ms.assetid: AE8ED273-2329-4E53-9FCD-5A8E863AED83
 description: Capabilities required for the user-mode driver to access Direct3D 9 features.
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ For applications to fully access the features of Microsoft Direct3D versions 9\_
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left">[<strong>D3DCAPS9</strong>](https://msdn.microsoft.com/library/windows/desktop/bb172513) member</th>
+<th align="left"><a href="https://msdn.microsoft.com/library/windows/desktop/bb172513" data-raw-source="[&lt;strong&gt;D3DCAPS9&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/desktop/bb172513)"><strong>D3DCAPS9</strong></a> member</th>
 <th align="left">Flag value</th>
 </tr>
 </thead>
@@ -189,7 +185,7 @@ These capabilities must be set in addition to those listed for Direct3D level 9\
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left">[<strong>D3DCAPS9</strong>](https://msdn.microsoft.com/library/windows/desktop/bb172513) member</th>
+<th align="left"><a href="https://msdn.microsoft.com/library/windows/desktop/bb172513" data-raw-source="[&lt;strong&gt;D3DCAPS9&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/desktop/bb172513)"><strong>D3DCAPS9</strong></a> member</th>
 <th align="left">Flag value</th>
 </tr>
 </thead>
@@ -264,7 +260,7 @@ These capabilities must be set in addition to those listed for Direct3D levels 9
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left">[<strong>D3DCAPS9</strong>](https://msdn.microsoft.com/library/windows/desktop/bb172513) member</th>
+<th align="left"><a href="https://msdn.microsoft.com/library/windows/desktop/bb172513" data-raw-source="[&lt;strong&gt;D3DCAPS9&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/desktop/bb172513)"><strong>D3DCAPS9</strong></a> member</th>
 <th align="left">Flag value</th>
 </tr>
 </thead>

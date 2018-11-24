@@ -1,15 +1,10 @@
 ---
 title: OID_CO_DELETE_PVC
-author: windows-driver-content
 description: This topic describes the OID_CO_DELETE_PVC object identifier (OID).
 ms.assetid: 02da08d0-9d08-4a91-b851-50e3c3b065d6
 keywords:
 - OID_CO_DELETE_PVC
-ms.author: windowsdriverdev
 ms.date: 11/03/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

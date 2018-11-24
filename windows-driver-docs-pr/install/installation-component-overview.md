@@ -9,11 +9,7 @@ keywords:
 - operating systems WDK , driver installation information
 - installing drivers WDK , information required
 - installing
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -45,9 +41,9 @@ All this information can be supplied in an INF file for the device. For most dev
 
 If your device is involved in booting the system, installation requirements differ. See [Installing a Boot Driver](installing-a-boot-start-driver.md).
 
- 
+ 
 
- 
+ 
 
 
 

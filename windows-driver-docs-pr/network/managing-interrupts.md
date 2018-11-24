@@ -8,11 +8,7 @@ keywords:
 - interrupts WDK networking , managing
 - NICs WDK networking , interrupts
 - network interface cards WDK networking , interrupts
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +30,9 @@ The following topics provide information about managing interrupt resources and 
 
 [Interrupt Moderation](interrupt-moderation.md)
 
- 
+ 
 
- 
+ 
 
 
 

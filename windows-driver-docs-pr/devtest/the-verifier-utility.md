@@ -5,11 +5,7 @@ ms.assetid: e332a6fc-b90c-49e8-8775-5332e9284e4e
 keywords:
 - Verifier utility
 - Driver Verifier WDK , Verifier utility
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,7 +25,7 @@ There are two ways to use the Verifier utility. On Windows Vista and later versi
 
 **Note**   Driver Verifier Manager in Windows XP and later differs slightly from the version of Driver Verifier Manager in Windows 2000.
 
- 
+ 
 
 This section includes:
 
@@ -39,9 +35,9 @@ This section includes:
 
 [Driver Verifier Manager (Windows XP and later)](driver-verifier-manager--windows-xp-and-later-.md)
 
- 
+ 
 
- 
+ 
 
 
 

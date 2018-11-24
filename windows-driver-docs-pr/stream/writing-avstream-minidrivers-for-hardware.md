@@ -1,6 +1,5 @@
 ---
 title: Writing AVStream Minidrivers for Hardware
-author: windows-driver-content
 description: Writing AVStream Minidrivers for Hardware
 ms.assetid: d7dc42d7-efd0-41ff-abab-d97c508a41e6
 keywords:
@@ -12,11 +11,7 @@ keywords:
 - interference between graphs WDK AVStream
 - encoding WDK AVStream
 - decoding WDK AVStream
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -44,9 +39,9 @@ An application builds a filter graph containing the encode filter. The minidrive
 
 While the hardware is encoding, another application places a decode filter in a filter graph. When the decode pins are connected, *before the pins change state into KSSTATE\_ACQUIRE*, the minidriver attempts to configure the hardware for decoding. This reconfiguration interferes with the currently active encode graph and may result in a driver instability.
 
- 
+ 
 
- 
+ 
 
 
 

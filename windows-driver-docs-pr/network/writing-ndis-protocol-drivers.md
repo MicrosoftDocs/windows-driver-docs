@@ -8,11 +8,7 @@ keywords:
 - NDIS protocol drivers WDK , writing
 - protocol drivers WDK networking , writing
 - writing NDIS protocol drivers WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,9 +33,9 @@ The following topics describe the relationship between binding states and operat
 -   [Handling Status Indications in a Protocol Driver](handling-status-indications-in-a-protocol-driver.md)
 -   [Handling PnP Event Notifications in a Protocol Driver](handling-pnp-event-notifications-in-a-protocol-driver.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -6,11 +6,7 @@ keywords:
 - state offloading process WDK TCP chimney offload , context area
 - offloading state process WDK TCP chimney offload , context area
 - context area WDK TCP chimney offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +26,9 @@ In addition to the offloaded state object, an offload context area must also con
 
 -   Any additional internal information that the offload target uses to keep track of the state object or associated resources
 
- 
+ 
 
- 
+ 
 
 
 

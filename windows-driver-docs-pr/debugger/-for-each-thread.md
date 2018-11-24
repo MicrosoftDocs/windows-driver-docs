@@ -3,11 +3,7 @@ title: for_each_thread
 description: The for_each_thread extension executes the specified debugger command once for each thread in the target.
 ms.assetid: 4ca8e1bd-1a1b-4fef-a2d9-42c26f9b746b
 keywords: ["for_each_thread Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!for\_each\_thread** extension executes the specified debugger command once for each thread in the target.
 
-```
+```dbgcmd
 !for_each_thread ["CommandString"] 
 !for_each_thread -? 
 ```
@@ -57,7 +53,7 @@ This extension works only in kernel mode, even though it resides in Ext.dll.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -70,9 +66,9 @@ If no arguments are supplied, the debugger displays a list of all threads, along
 
 You can terminate execution at any point by pressing CTRL+BREAK (in WinDbg) or CTRL+C (in KD).
 
- 
+ 
 
- 
+ 
 
 
 

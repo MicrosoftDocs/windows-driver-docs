@@ -3,6 +3,7 @@ title: ISCSI\_IP\_Address WMI Class
 description: ISCSI\_IP\_Address WMI Class
 ms.assetid: 3ceeb54f-ecc5-40c5-b0a8-8c6f86203f1c
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # ISCSI\_IP\_Address WMI Class
@@ -13,7 +14,7 @@ ms.localizationpriority: medium
 
 The ISCSI\_IP\_Address class provides a definition of IP addresses that is independent of the version of the IP protocol that is in use. This class is defined in *Common.mof*.
 
-```
+```cpp
 class ISCSI_IP_Address {
   [WmiDataId(1), read, write, DisplayName("Address Format")
     : amended, description("Type of address specified. 
@@ -54,9 +55,9 @@ class ISCSI_IP_Address {
 
 When the WMI tool suite compiles the preceding class definition, it produces the [**ISCSI\_IP\_Address**](https://msdn.microsoft.com/library/windows/hardware/ff561536) data structure.
 
- 
+ 
 
- 
+ 
 
 
 

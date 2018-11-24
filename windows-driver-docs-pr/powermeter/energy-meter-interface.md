@@ -5,11 +5,7 @@ keywords:
 - Energy Metering and Budgeting WDK , interface
 - Energy Meter Interface WDK
 - PMI WDK Energy Meter
-ms.author: windowsdriverdev
 ms.date: 11/17/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,7 +27,7 @@ The GUID for the EMI device interface is **{45BD8344-7ED6-49cf-A440-C276C933B053
 
 Client code typically interacts with the EMI using the following process:
 
-1. Call [IOCTL_EMI_GET_VERSION](https://msdn.microsoft.com/library/windows/hardware/dn957440.aspx) and verify the EMI interface version supported by the device in the returned [EMI_VERSION](https://msdn.microsoft.com/library/windows/hardware/dn957430.aspx) value. In Windows 10, devices can support EMI_VERSION_V1. Future operating system releases may introduce later versions. 
+1. Call [IOCTL_EMI_GET_VERSION](https://msdn.microsoft.com/library/windows/hardware/dn957440.aspx) and verify the EMI interface version supported by the device in the returned [EMI_VERSION](https://msdn.microsoft.com/library/windows/hardware/dn957430.aspx) value. In Windows 10, devices can support EMI_VERSION_V1. In Windows 10 Version 1809, devices can also support EMI_VERSION_V2. Future operating system releases may introduce later versions. 
 
 2. Call IOCTL_EMI_GET_METADATA_SIZE to get size of the EMI metadata. 
 
@@ -51,7 +47,7 @@ For more information see these topics.
  
 
 
- 
+ 
 
 
 

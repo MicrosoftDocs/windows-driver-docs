@@ -2,97 +2,92 @@
 title: Getting Started with WinDbg (User-Mode)
 description: WinDbg is a kernel-mode and user-mode debugger that is included in Debugging Tools for Windows. Here we provide hands-on exercises that will help you get started using WinDbg as a user-mode debugger.
 ms.assetid: 8C2D2D0C-7E54-4711-A6FD-970E040F1C50
-ms.author: domars
-ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 10/09/2017
 ms.localizationpriority: medium
 ---
 
 # Getting Started with WinDbg (User-Mode)
 
-
 WinDbg is a kernel-mode and user-mode debugger that is included in Debugging Tools for Windows. Here we provide hands-on exercises that will help you get started using WinDbg as a user-mode debugger.
 
-For information about how to get Debugging Tools for Windows, see [Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)](http://go.microsoft.com/fwlink/p?linkid=223405). After you have installed the debugging tools, locate the installation directories for 64-bit (x64) and 32-bit (x86) versions of the tools. For example:
+For information about how to get Debugging Tools for Windows, see [Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)](https://go.microsoft.com/fwlink/p?linkid=223405). 
+
+After you have installed the debugging tools, locate the installation directories for 64-bit (x64) and 32-bit (x86) versions of the tools. For example:
 
 -   C:\\Program Files (x86)\\Windows Kits\\8.1\\Debuggers\\x64
 -   C:\\Program Files (x86)\\Windows Kits\\8.1\\Debuggers\\x86
 
 ## <span id="Launch_Notepad_and_attach_WinDbg"></span><span id="launch_notepad_and_attach_windbg"></span><span id="LAUNCH_NOTEPAD_AND_ATTACH_WINDBG"></span>Launch Notepad and attach WinDbg
 
-
 1.  Navigate to your installation directory, and open WinDbg.exe.
 
-2.  On the **Help** menu, choose **Contents**. This opens the debugger documentation CHM file. The debugger documentation is also available on line [here](http://go.microsoft.com/fwlink/p?linkid=223405).
+2.  The debugger documentation is also available on line [here](https://go.microsoft.com/fwlink/p?linkid=223405).
+
 3.  On the **File** menu, choose **Open Executable**. In the Open Executable dialog box, navigate to the folder that contains notepad.exe (for example, C:\\Windows\\System32). For **File name**, enter notepad.exe. Click **Open**.
 
     ![screen shot of windbg after starting notepad](images/windbggetstart01.png)
 
 4.  Near the bottom of the WinDbg window, in the command line, enter this command:
 
-    [**.sympath srv\***](http://go.microsoft.com/fwlink/p?linkid=399238).
+    [.sympath srv\*](https://go.microsoft.com/fwlink/p?linkid=399238).
 
     The output is similar to this:
 
-    ```
+    ```dbgcmd
     Symbol search path is: srv*
-    Expanded Symbol search path is: cache*;SRV*https://msdl.microsoft.com/download/symbols
+    Expanded Symbol search path is: cache*;SRV
     ```
 
     The symbol search path tells WinDbg where to look for symbol (PDB) files. The debugger needs symbol files to obtain information about code modules (function names, variable names, and the like).
 
     Enter this command, which tells WinDbg to do its initial finding and loading of symbol files:
 
-    [**.reload**](http://go.microsoft.com/fwlink/p?linkid=399239)
+    [.reload](https://go.microsoft.com/fwlink/p?linkid=399239)
 
 5.  To see the symbols for the Notepad.exe module, enter this command:
 
-    [**x notepad!\***](http://go.microsoft.com/fwlink/p?linkid=399240)
+    [x notepad!*](https://go.microsoft.com/fwlink/p?linkid=399240)
 
-    **Note**  If you don't see any output, enter [**.reload**](http://go.microsoft.com/fwlink/p?linkid=399239) again.
-
-     
+    **Note**  If you don't see any output, enter [**.reload**](https://go.microsoft.com/fwlink/p?linkid=399239) again.
 
     To see symbols in the Notepad.exe module that contain main, enter this command:
 
-    **x notepad!\*main\***
-
+    [x notepad!\*main\*](https://go.microsoft.com/fwlink/p?linkid=399240)
+ 
     The output is similar to this:
 
-    ```
+    ```dbgcmd
     000000d0`428ff7e8 00007ff6`3282122f notepad!WinMain
     ...
     ```
 
 6.  To put a breakpoint at notepad!WinMain, enter this command:
 
-    [**bu notepad!WinMain**](http://go.microsoft.com/fwlink/p?linkid=399390)
+    [bu notepad!WinMain](https://go.microsoft.com/fwlink/p?linkid=399390)
 
     To verify that your breakpoint was set, enter this command:
 
-    [**bl**](http://go.microsoft.com/fwlink/p?linkid=399391)
+    [bl](https://go.microsoft.com/fwlink/p?linkid=399391)
 
     The output is similar to this:
 
-    ```
+    ```dbgcmd
     0 e 00007ff6`32825f64     0001 (0001)  0:**** notepad!WinMain
     ```
 
 7.  To start Notepad running, enter this command:
 
-    [**g**](http://go.microsoft.com/fwlink/p?linkid=399388)
+    [g](https://go.microsoft.com/fwlink/p?linkid=399388)
 
     Notepad runs until it comes to the **WinMain** function, and then breaks in to the debugger.
 
     To see a list of code modules that are loaded in the Notepad process, enter this command:
 
-    [**lm**](http://go.microsoft.com/fwlink/p?linkid=399237)
+    [lm](https://go.microsoft.com/fwlink/p?linkid=399237)
 
     The output is similar to this:
 
-    ```
+    ```dbgcmd
     0:000> lm
     start             end                 module name
     00007ff6`32820000 00007ff6`3285a000   notepad    (pdb symbols)          C:\...\notepad.pdb
@@ -120,11 +115,11 @@ For information about how to get Debugging Tools for Windows, see [Debugging Too
 
     To see a stack trace, enter this command:
 
-    [**k**](http://go.microsoft.com/fwlink/p?linkid=399389)
+    [k](https://go.microsoft.com/fwlink/p?linkid=399389)
 
     The output is similar to this:
 
-    ```
+    ```dbgcmd
     Breakpoint 0 hit
     notepad!WinMain:
     00007ff6`32825f64 488bc4          mov     rax,rsp
@@ -138,17 +133,17 @@ For information about how to get Debugging Tools for Windows, see [Debugging Too
 
 8.  To start Notepad running again, enter this command:
 
-    [**g**](http://go.microsoft.com/fwlink/p?linkid=399388)
+    [g](https://go.microsoft.com/fwlink/p?linkid=399388)
 
 9.  To break in to Notepad, choose **Break** from the **Debug** menu.
 
 10. To set and verify a breakpoint at **ZwWriteFile**, enter these commands:
 
-    [**bu ntdll!ZwWriteFile**](http://go.microsoft.com/fwlink/p?linkid=399390)
+    [bu ntdll!ZwWriteFile](https://go.microsoft.com/fwlink/p?linkid=399390)
 
-    [**bl**](http://go.microsoft.com/fwlink/p?linkid=399391)
+    [bl](https://go.microsoft.com/fwlink/p?linkid=399391)
 
-11. Enter [**g**](http://go.microsoft.com/fwlink/p?linkid=399388) to start Notepad running again. In the Notepad window, enter some text and choose **Save** from the **File** menu. The running code breaks in when it comes to **ZwCreateFile**. Enter [**k**](http://go.microsoft.com/fwlink/p?linkid=399389) to see the stack trace.
+11. Enter [g](https://go.microsoft.com/fwlink/p?linkid=399388) to start Notepad running again. In the Notepad window, enter some text and choose **Save** from the **File** menu. The running code breaks in when it comes to **ZwCreateFile**. Enter [k](https://go.microsoft.com/fwlink/p?linkid=399389) to see the stack trace.
 
     ![screen shot of stack trace in windbg](images/windbggetstart02.png)
 
@@ -156,11 +151,11 @@ For information about how to get Debugging Tools for Windows, see [Debugging Too
 
 12. To see a list of all threads in the Notepad process, enter this command (the tilde):
 
-    [**~**](http://go.microsoft.com/fwlink/p?linkid=399392)
+    [~](https://go.microsoft.com/fwlink/p?linkid=399392)
 
     The output is similar to this:
 
-    ```
+    ```dbgcmd
     0:011> ~
        0  Id: 10c8.128c Suspend: 1 Teb: 00007ff6`31cdd000 Unfrozen
        1  Id: 10c8.1a10 Suspend: 1 Teb: 00007ff6`31cdb000 Unfrozen
@@ -180,13 +175,13 @@ For information about how to get Debugging Tools for Windows, see [Debugging Too
 
 13. To look at the stack trace for thread 0, enter these commands:
 
-    [**~0s**](http://go.microsoft.com/fwlink/p?linkid=399393)
+    [~0s](https://go.microsoft.com/fwlink/p?linkid=399393)
 
-    [**k**](http://go.microsoft.com/fwlink/p?linkid=399389)
+    [k](https://go.microsoft.com/fwlink/p?linkid=399389)
 
     The output is similar to this:
 
-    ```
+    ```dbgcmd
     0:011> ~0s
     USER32!SystemParametersInfoW:
     00007ffc`b12a4d20 48895c2408      mov     qword ptr [rsp+8], ...
@@ -203,14 +198,14 @@ For information about how to get Debugging Tools for Windows, see [Debugging Too
 
 14. To quit debugging and detach from the Notepad process, enter this command:
 
-    [**qd**](http://go.microsoft.com/fwlink/p?linkid=399394)
+    [qd](https://go.microsoft.com/fwlink/p?linkid=399394)
 
 ## <span id="Launch_your_own_application_and_attach_WinDbg"></span><span id="launch_your_own_application_and_attach_windbg"></span><span id="LAUNCH_YOUR_OWN_APPLICATION_AND_ATTACH_WINDBG"></span>Launch your own application and attach WinDbg
 
 
 Suppose you have written and built this small console application.
 
-```
+```dbgcmd
 ...
 void MyFunction(long p1, long p2, long p3)
 {
@@ -234,21 +229,21 @@ For this exercise, we will assume that the built application (MyApp.exe) and the
 2.  On the **File** menu, choose **Open Executable**. In the Open Executable dialog box, navigate to C:\\MyApp\\x64\\Debug. For **File name**, enter MyApp.exe. Click **Open**.
 3.  Enter these commands:
 
-    [**.sympath srv\***](http://go.microsoft.com/fwlink/p?linkid=399238)
+    [.sympath srv\*](https://go.microsoft.com/fwlink/p?linkid=399238)
 
-    **.sympath+ C:\\MyApp\\x64\\Debug**
+    .sympath+ C:\\MyApp\\x64\\Debug
 
-    [**.srcpath C:\\MyApp\\MyApp**](http://go.microsoft.com/fwlink/p?linkid=399395)
+    [.srcpath C:\\MyApp\\MyApp](https://go.microsoft.com/fwlink/p?linkid=399395)
 
     Now WinDbg knows where to find symbols and source code for your application.
 
 4.  Enter these commands:
 
-    [**.reload**](http://go.microsoft.com/fwlink/p?linkid=399239)
+    [.reload](https://go.microsoft.com/fwlink/p?linkid=399239)
 
-    [**bu MyApp!main**](http://go.microsoft.com/fwlink/p?linkid=399390)
+    [bu MyApp!main](https://go.microsoft.com/fwlink/p?linkid=399390)
 
-    [**g**](http://go.microsoft.com/fwlink/p?linkid=399388)
+    [g](https://go.microsoft.com/fwlink/p?linkid=399388)
 
     Your application breaks in to the debugger when it comes to its **main** function.
 
@@ -258,7 +253,7 @@ For this exercise, we will assume that the built application (MyApp.exe) and the
 
 5.  On the **Debug** menu, choose **Step Into** (or press **F11**). Continue stepping until you have stepped into **MyFunction**. When you step into the line `y = x / p2`, your application will crash and break in to the debugger. The output is similar to this:
 
-    ```
+    ```dbgcmd
     (1450.1424): Integer divide-by-zero - code c0000094 (first chance)
     First chance exceptions are reported before any exception handling.
     This exception may be expected and handled.
@@ -268,11 +263,11 @@ For this exercise, we will assume that the built application (MyApp.exe) and the
 
 6.  Enter this command:
 
-    [**!analyze -v**](http://go.microsoft.com/fwlink/p?linkid=399396)
+    [!analyze -v](https://go.microsoft.com/fwlink/p?linkid=399396)
 
     WinDbg displays an analysis of the problem (division by 0 in this case).
 
-    ```
+    ```dbgcmd
     FAULTING_IP: 
     MyApp!MyFunction+44 [c:\myapp\myapp\myapp.cpp @ 7]
     00007ff6`3be11064 f77c2428        idiv    eax,dword ptr [rsp+28h]
@@ -321,37 +316,37 @@ For this exercise, we will assume that the built application (MyApp.exe) and the
 
 
 -   **Contents** command on the **Help** menu
--   [.sympath (Set Symbol Path)](http://go.microsoft.com/fwlink/p?linkid=399238)
--   [.reload (Reload Module)](http://go.microsoft.com/fwlink/p?linkid=399239)
--   [x (Examine Symbols)](http://go.microsoft.com/fwlink/p?linkid=399240)
--   [g (Go)](http://go.microsoft.com/fwlink/p?linkid=399388)
+-   [.sympath (Set Symbol Path)](https://go.microsoft.com/fwlink/p?linkid=399238)
+-   [.reload (Reload Module)](https://go.microsoft.com/fwlink/p?linkid=399239)
+-   [x (Examine Symbols)](https://go.microsoft.com/fwlink/p?linkid=399240)
+-   [g (Go)](https://go.microsoft.com/fwlink/p?linkid=399388)
 -   **Break** command on the **Debug** menu
--   [lm (List Loaded Modules)](http://go.microsoft.com/fwlink/p?linkid=399237)
--   [k (Display Stack Backtrace)](http://go.microsoft.com/fwlink/p?linkid=399389)
--   [bu (Set Breakpoint)](http://go.microsoft.com/fwlink/p?linkid=399390)
--   [bl (Breakpoint List)](http://go.microsoft.com/fwlink/p?linkid=399390)
--   [~ (Thread Status)](http://go.microsoft.com/fwlink/p?linkid=399392)
--   [~s (Set Current Thread)](http://go.microsoft.com/fwlink/p?linkid=399393)
--   [.sympath+ (Set Symbol Path) append to existing symbol path](http://go.microsoft.com/fwlink/p?linkid=399238)
--   [.srcpath (Set Source Path)](http://go.microsoft.com/fwlink/p?linkid=399395)
+-   [lm (List Loaded Modules)](https://go.microsoft.com/fwlink/p?linkid=399237)
+-   [k (Display Stack Backtrace)](https://go.microsoft.com/fwlink/p?linkid=399389)
+-   [bu (Set Breakpoint)](https://go.microsoft.com/fwlink/p?linkid=399390)
+-   [bl (Breakpoint List)](https://go.microsoft.com/fwlink/p?linkid=399390)
+-   [~ (Thread Status)](https://go.microsoft.com/fwlink/p?linkid=399392)
+-   [~s (Set Current Thread)](https://go.microsoft.com/fwlink/p?linkid=399393)
+-   [.sympath+ (Set Symbol Path) append to existing symbol path](https://go.microsoft.com/fwlink/p?linkid=399238)
+-   [.srcpath (Set Source Path)](https://go.microsoft.com/fwlink/p?linkid=399395)
 -   **Step Into** command on the **Debug** menu (**F11**)
--   [!analyze -v](http://go.microsoft.com/fwlink/p?linkid=399396)
--   [qd (Quit and Detach)](http://go.microsoft.com/fwlink/p?linkid=399394)
+-   [!analyze -v](https://go.microsoft.com/fwlink/p?linkid=399396)
+-   [qd (Quit and Detach)](https://go.microsoft.com/fwlink/p?linkid=399394)
 
 ## <span id="related_topics"></span>Related topics
 
 
 [Getting Started with WinDbg (Kernel-Mode)](getting-started-with-windbg--kernel-mode-.md)
 
-[Debugger Operation](http://go.microsoft.com/fwlink/p?linkid=399247)
+[Debugger Operation](https://go.microsoft.com/fwlink/p?linkid=399247)
 
-[Debugging Techniques](http://go.microsoft.com/fwlink/p?linkid=399248)
+[Debugging Techniques](https://go.microsoft.com/fwlink/p?linkid=399248)
 
-[Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)](http://go.microsoft.com/fwlink/p?linkid=223405)
+[Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)](https://go.microsoft.com/fwlink/p?linkid=223405)
 
- 
+ 
 
- 
+ 
 
 
 

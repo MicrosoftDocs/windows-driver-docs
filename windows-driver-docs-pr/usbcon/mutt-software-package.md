@@ -1,12 +1,7 @@
 ---
 Description: The MUTT software package contains several tools to be used with MUTT devices. The suite of tools include firmware upgrade application, driver installation package, and applications that send transfers to the device.
 title: Tools in the MUTT software package
-author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -15,7 +10,7 @@ ms.localizationpriority: medium
 
 **Last updated:**
 
--   April, 2018
+-   September, 2018
 
 **Applies to:**
 
@@ -30,14 +25,21 @@ The MUTT software package contains several tools to be used with [MUTT devices](
 
 The Microsoft USB Test Tool (MUTT) software package contains test tools for hardware test engineers to test interoperability of their USB controller or hub with the Microsoft USB driver stack. The included documentation provides a brief overview of the different types of MUTT hardware and suggests topologies for controller, hub, device, and BIOS/UEFI testing. The documentation also contains procedural information about how to run the tests, trace events in the USB driver stack, and capture information in the kernel debugger.
 
-File name: muttv2_4.msi
+File name: muttv2_8.msi
 
-4.82 MB
+7.0 MB
 
 [![download the mutt software package](images/download.png)](http://go.microsoft.com/fwlink/p/?LinkId=786621)
 
 ## Version Updates
 
+Changes for version 2.8
+
+-   Updated USB Type-C SuperMUTT firmware for improved compatibility with HLK UCSI tests.
+
+Changes for version 2.7
+
+- Updated USB Type-C SuperMUTT firmware, tools, and documentation. Compatible with HLK UCSI tests.
 
 Changes for version 2.4
 
@@ -79,7 +81,7 @@ Changes for version 1.9
 </thead>
 <tbody>
 <tr class="odd">
-<td>[USBTCD](usbtcd.md)</td>
+<td><a href="usbtcd.md" data-raw-source="[USBTCD](usbtcd.md)">USBTCD</a></td>
 <td><ul>
 <li>USBTCD is an application (USBTCD.exe) that communicates with a kernel-mode driver (USBTCD.sys) and performs common USB data transfer scenarios with various length transfer sizes.</li>
 <li>The driver installation files are USBTCD .sys, and USBTCD.inf.</li>
@@ -100,7 +102,7 @@ Changes for version 1.9
 <td>xhciwmi.exe</td>
 </tr>
 <tr class="odd">
-<td>[XHCIWMI](usb-xhciwmi.md)[USBLPM](usblpm-tool.md)</td>
+<td><a href="usb-xhciwmi.md" data-raw-source="[XHCIWMI](usb-xhciwmi.md)">XHCIWMI</a><a href="usblpm-tool.md" data-raw-source="[USBLPM](usblpm-tool.md)">USBLPM</a></td>
 <td><ul>
 <li>Monitors the U0/U1/U2/U3 power states of USB 3.0 ports.</li>
 <li>It verifies that transitions between U0/U1/U2 occur correctly.</li>
@@ -108,7 +110,7 @@ Changes for version 1.9
 <td>UsbLPM.exe</td>
 </tr>
 <tr class="even">
-<td>[USBStress](usbstress.md)</td>
+<td><a href="usbstress.md" data-raw-source="[USBStress](usbstress.md)">USBStress</a></td>
 <td><ul>
 <li>The USBStress application communicates with a kernel-mode driver (usbstress.sys) and performs common USB data transfer scenarios.</li>
 <li>The driver installation files are usbstress.sys, and usbstress.inf.</li>
@@ -120,7 +122,7 @@ Changes for version 1.9
 <p>UsbStressTest.bat</p></td>
 </tr>
 <tr class="odd">
-<td>[MuttUtil](muttutil.md)</td>
+<td><a href="muttutil.md" data-raw-source="[MuttUtil](muttutil.md)">MuttUtil</a></td>
 <td><ul>
 <li>Updates the firmware of the test devices.</li>
 <li>Installs drivers for MUTT devices.</li>
@@ -132,14 +134,14 @@ Changes for version 1.9
 <td><p>MuttUtil.exe</p></td>
 </tr>
 <tr class="even">
-<td>[USB hardware verifier](how-to-retrieve-information-about-a-usb-device.md)</td>
+<td><a href="how-to-retrieve-information-about-a-usb-device.md" data-raw-source="[USB hardware verifier](how-to-retrieve-information-about-a-usb-device.md)">USB hardware verifier</a></td>
 <td>Displays all hardware events on the console.</td>
 <td>USB3HWVerifierAnalyzer.exe</td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 [USB](https://msdn.microsoft.com/library/windows/hardware/ff538930)  

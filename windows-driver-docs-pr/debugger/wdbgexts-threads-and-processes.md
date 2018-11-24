@@ -3,11 +3,7 @@ title: WdbgExts Threads and Processes
 description: WdbgExts Threads and Processes
 ms.assetid: fa513435-ea91-4dc5-9488-85087d585f96
 keywords: ["WdbgExts extensions, threads", "WdbgExts extensions, processes"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,9 +32,9 @@ The method [**GetCurrentProcessHandle**](https://msdn.microsoft.com/library/wind
 
 For a more powerful thread manipulation and process manipulation API, see [Controlling Threads and Processes](controlling-threads-and-processes.md) in the [Using the Debugger Engine API](using-the-debugger-engine-api.md) section of this documentation.
 
- 
+ 
 
- 
+ 
 
 
 

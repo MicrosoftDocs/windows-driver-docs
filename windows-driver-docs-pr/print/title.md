@@ -1,6 +1,5 @@
 ---
 title: title element
-author: windows-driver-content
 description: The required title element provides text that is displayed in the title of the event notification message.
 ms.assetid: 60583593-9fe9-4c3c-ab86-3e7c37a8e199
 keywords: ["title element Print Devices"]
@@ -10,11 +9,7 @@ api_name:
 - title
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,7 +23,7 @@ The **title** element is defined in the *asyncui* namespace at this URI: http://
 Usage
 -----
 
-``` syntax
+```xml
 <title
   stringID = "xs:string"
   resourceDll = "xs:string"/>
@@ -91,7 +86,7 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>balloonUI</strong>](balloonui.md)</p></td>
+<td><p><a href="balloonui.md" data-raw-source="[&lt;strong&gt;balloonUI&lt;/strong&gt;](balloonui.md)"><strong>balloonUI</strong></a></p></td>
 <td><p></p>
 <p>An optional element that is used to display a message balloon on the client computer.</p></td>
 </tr>
@@ -110,7 +105,7 @@ Examples
 
 The following code example shows how to use the **title** element to indicate the string location in the resource DLL (in this example, stringID="1234") that contains the text to be used for the title.
 
-```
+```cpp
 <?xml version="1.0" ?>
    <asyncPrintUIRequest
     xmlns="http://schemas.microsoft.com/2003/print/asyncui/v1/request">
@@ -128,17 +123,8 @@ The following code example shows how to use the **title** element to indicate th
   </asyncPrintUIRequest>
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
+[balloonUI](balloonui.md)
 
-[**balloonUI**](balloonui.md)
-
-[**parameter**](parameter.md)
-
- 
-
- 
-
-
-
-
+[parameter](parameter.md)

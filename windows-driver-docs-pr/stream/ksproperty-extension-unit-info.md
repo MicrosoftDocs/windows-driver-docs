@@ -11,11 +11,7 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +23,7 @@ The KSPROPERTY\_EXTENSION\_UNIT\_INFO property retrieves the guidExtensionCode, 
 ## <span id="ddk_ksproperty_extension_unit_info_ks"></span><span id="DDK_KSPROPERTY_EXTENSION_UNIT_INFO_KS"></span>
 
 
-### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
+### Usage Summary Table
 
 <table>
 <colgroup>
@@ -51,13 +47,13 @@ The KSPROPERTY\_EXTENSION\_UNIT\_INFO property retrieves the guidExtensionCode, 
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Filter node</p></td>
-<td><p>[<strong>KSP_NODE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566720)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566720" data-raw-source="[&lt;strong&gt;KSP_NODE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566720)"><strong>KSP_NODE</strong></a></p></td>
 <td><p>PVOID</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -91,11 +87,11 @@ Specifically, KSPROPERTY\_EXTENSION\_UNIT\_INFO returns the extension unit GUID 
 </tbody>
 </table>
 
- 
+ 
 
 The following code example shows how to submit KSPROPERTY\_EXTENSION\_UNIT\_INFO, taken from the complete sample shown in [Sample Extension Unit Plug-in DLL](https://msdn.microsoft.com/library/windows/hardware/ff568134):
 
-```
+```cpp
 ExtensionProp.Property.Set = PROPSETID_VIDCAP_EXTENSION_UNIT;
     ExtensionProp.Property.Id = KSPROPERTY_EXTENSION_UNIT_INFO;
     ExtensionProp.Property.Flags = KSPROPERTY_TYPE_GET | 
@@ -129,12 +125,3 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
-
-

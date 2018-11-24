@@ -3,11 +3,7 @@ title: pcitree
 description: The pcitree extension displays information about PCI device objects, including child PCI buses and CardBus buses, and the devices attached to them.
 ms.assetid: cd1b2f85-b8de-4396-8b37-79bb3d62092c
 keywords: ["PCI bus", "PCI device", "pcitree Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!pcitree** extension displays information about PCI device objects, including child PCI buses and CardBus buses, and the devices attached to them.
 
-```
+```dbgcmd
 !pcitree
 ```
 
@@ -48,7 +44,7 @@ The **!pcitree** extension displays information about PCI device objects, includ
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -59,7 +55,7 @@ Remarks
 
 Here is an example:
 
-```
+```dbgcmd
 kd> !pcitree
 
 Bus 0x0 (FDO Ext fe517338)
@@ -82,15 +78,15 @@ The number after "d=" is the device number; the number after "f=" is the functio
 
 To obtain more information about a device, use the [**!devext**](-devext.md) extension command with the device extension address as the argument. For this particular device, the command to use would be:
 
-```
+```dbgcmd
 kd> !devext fe4f4428 pci 
 ```
 
 If the **!pcitree** extension generates an error, this often means that your PCI symbols were not loaded properly. Use [**.reload pci.sys**](-reload--reload-module-.md) to fix this problem.
 
- 
+ 
 
- 
+ 
 
 
 

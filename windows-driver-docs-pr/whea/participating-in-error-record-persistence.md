@@ -1,6 +1,5 @@
 ---
 title: Participating in Error Record Persistence
-author: windows-driver-content
 description: Participating in Error Record Persistence
 ms.assetid: 06cbcccf-7cda-468d-aa6e-b8ecf95adf16
 keywords:
@@ -11,11 +10,7 @@ keywords:
 - platform-specific hardware error driver plug-ins WDK WHEA , error record persistence
 - PSHED plug-ins WDK WHEA , error record persistence
 - error record persistence WDK WHEA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,7 +27,7 @@ To participate in error record persistence, a PSHED plug-in must implement the f
 
 The following code example shows how to implement these callback functions.
 
-```
+```cpp
 //
 // The PSHED plug-in&#39;s WriteErrorRecord callback function
 //
@@ -185,9 +180,9 @@ A PSHED plug-in that participates in error record persistence must specify the *
 
 For more information about error record persistence, see [Error Record Persistence Mechanism](error-record-persistence-mechanism.md).
 
- 
+ 
 
- 
+ 
 
 
 

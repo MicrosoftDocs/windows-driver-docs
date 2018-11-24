@@ -1,17 +1,12 @@
 ---
 title: Command String Argument Types
-author: windows-driver-content
 description: Command String Argument Types
 ms.assetid: c7540c3f-265a-4fee-aca9-b8cc10b6be8f
 keywords:
 - printer commands WDK Unidrv , strings
 - command strings WDK Unidrv
 - strings WDK Unidrv
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -79,22 +74,22 @@ The following table lists all the argument type specifiers.
 </tr>
 <tr class="odd">
 <td><p>%v</p></td>
-<td><p>NEC VFU (Vertical Format Unit) encoding. The specified variable's value is divided by 1/6 inch. The result is the number of times VFU data is sent to the printer.</p></td>
+<td><p>NEC VFU (Vertical Format Unit) encoding. The specified variable&#39;s value is divided by 1/6 inch. The result is the number of times VFU data is sent to the printer.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 You can specify a range of acceptable values for any argument. To do so, include the argument's minimum and maximum values by placing them inside a set of square brackets ( \[, \] ), immediately following the argument type specifier, and separating the values by a comma. For example, the following command specifies 0 through 255 as an acceptable range for the value of LinefeedSpacing/2:
 
-```
+```cpp
 *Command:CmdSetLineSpacing{*Cmd:"<1B>3"%c[0,255]{(LinefeedSpacing/2)}}
 ```
 
- 
+ 
 
- 
+ 
 
 
 

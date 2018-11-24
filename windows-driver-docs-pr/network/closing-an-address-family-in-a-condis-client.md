@@ -4,11 +4,7 @@ description: Closing an Address Family in a CoNDIS Client
 ms.assetid: 06e8128a-f3da-48f2-a045-6c4be5f85889
 keywords:
 - client closed AFs WDK CoNDIS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,9 +28,9 @@ To close the AF, the client should:
 
 4.  Call the [**NdisClCloseAddressFamily**](https://msdn.microsoft.com/library/windows/hardware/ff561626) function to close the AF.
 
- 
+ 
 
- 
+ 
 
 
 

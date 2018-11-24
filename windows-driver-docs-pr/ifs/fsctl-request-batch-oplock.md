@@ -1,5 +1,5 @@
 ---
-title: FSCTL\_REQUEST\_BATCH\_OPLOCK control code
+title: FSCTL_REQUEST_BATCH_OPLOCK control code
 description: The FSCTL\_REQUEST\_BATCH\_OPLOCK control code requests a batch opportunistic lock (oplock) on a file.
 ms.assetid: e73f6cbf-c288-4c1e-99a8-682f7c78a72d
 keywords: ["FSCTL_REQUEST_BATCH_OPLOCK control code Installable File System Drivers"]
@@ -11,11 +11,7 @@ api_location:
 - ntifs.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -76,7 +72,7 @@ Status block
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -123,9 +119,9 @@ Requirements
 
 [**IRP\_MJ\_FILE\_SYSTEM\_CONTROL**](irp-mj-file-system-control.md)
 
- 
+ 
 
- 
+ 
 
 
 

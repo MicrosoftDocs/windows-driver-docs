@@ -1,14 +1,9 @@
 ---
 title: SystemWake
-author: windows-driver-content
 description: SystemWake
 ms.assetid: 77390637-bb92-4634-a407-9a409a8a8acd
 keywords: ["SystemWake"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +23,9 @@ If both the **SystemWake** and **DeviceWake** members are nonzero (that is, not 
 
 On non-ACPI hardware, this member always contains zero (**PowerSystemUnspecified**).
 
- 
+ 
 
- 
+ 
 
 
 

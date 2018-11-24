@@ -1,13 +1,8 @@
 ---
 title: WIA Feeder Scanners
-author: windows-driver-content
 description: WIA Feeder Scanners
 ms.assetid: ba8f3006-97cb-43a9-9a77-a8bf14ce9d41
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +22,9 @@ This section includes:
 
 [WIA Feeder Scanner Compatibility for Windows Me and Windows XP](wia-feeder-scanner-compatibility-for-windows-xp-and-windows-me.md)
 
- 
+ 
 
- 
+ 
 
 
 

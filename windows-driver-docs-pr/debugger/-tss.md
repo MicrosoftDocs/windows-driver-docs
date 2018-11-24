@@ -3,11 +3,7 @@ title: tss
 description: tss
 ms.assetid: 6b6109bf-8438-4cf5-963a-f2d1a5317c4e
 keywords: ["tss extension (obsolete)"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,9 +15,9 @@ ms.localizationpriority: medium
 
 The **!tss** extension command is obsolete. Use the [**.tss (Display Task State Segment)**](-tss--display-task-state-segment-.md) command instead.
 
- 
+ 
 
- 
+ 
 
 
 

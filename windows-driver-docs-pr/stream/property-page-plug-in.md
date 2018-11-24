@@ -1,16 +1,11 @@
 ---
 title: Property Page Plug-in
-author: windows-driver-content
 description: Property Page Plug-in
 ms.assetid: cf5f5861-1670-413c-9c42-c1b6eb6d719a
 keywords:
 - Kernel Streaming Proxy WDK AVStream , property page
 - property page WDK AVStream
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +22,7 @@ For each object, generate a GUID for the class identifier (CLSID) and provide an
 
 The array must be named g\_Templates:
 
-```
+```cpp
 CFactoryTemplate g_Templates[] =
 {
     {
@@ -42,7 +37,7 @@ CFactoryTemplate g_Templates[] =
 
 Your property page should derive from the class [CBasePropertyPage](http://go.microsoft.com/fwlink/p/?linkid=106449) and should override several of the methods of **CBasePropertyPage**:
 
-```
+```cpp
 class CMyPropPage: public CBasePropertyPage
 {
 public:
@@ -71,9 +66,9 @@ The constructor receives a pointer to the outer unknown interface, which in this
 
 The property page's **OnDisconnect** method is called when the property page should release the associated object. This callback should decrement the reference count on the pointer to the interface to KS proxy by calling its **Release** method.
 
- 
+ 
 
- 
+ 
 
 
 

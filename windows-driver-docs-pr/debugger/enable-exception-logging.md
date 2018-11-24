@@ -3,11 +3,7 @@ title: Enable exception logging
 description: Enable exception logging
 ms.assetid: 3bb645f8-995a-4da8-abca-bb9ba93beb81
 keywords: ["Enable exception logging (global flag)"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -44,11 +40,11 @@ The **Enable exception logging** flag creates a log of exception records in the 
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

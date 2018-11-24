@@ -1,13 +1,8 @@
 ---
 title: IEEE 1394 Bus Driver in Windows 7
-author: windows-driver-content
 description: Windows 7 includes 1394ohci.sys, a new IEEE 1394 bus driver that supports faster speeds and alternative media as defined in the IEEE-1394b specification.
 ms.assetid: 3744C1D5-E411-4E47-9154-40E15626250D
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,7 +15,7 @@ The new 1394ohci.sys bus driver is fully backward compatible with the legacy bus
 
 **Note**  The 1394ohci.sys driver is a system driver that is included in Windows. It is automatically loaded when you install a 1394 controller. This is not a redistributable driver that you can download separately.
 
- 
+ 
 
 -   [I/O Request Completion](#io-request-completion)
 -   [Configuration ROM Retrieval](#configuration-rom-retrieval)

@@ -5,11 +5,7 @@ ms.assetid: a832bf9a-ab7e-4ec0-823b-52bc6016e791
 keywords:
 - trace sessions WDK , stopping
 - stopping trace sessions
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,9 +33,9 @@ To stop the session, type **Y**. Tracelog then lists the properties of the sessi
 The "MyTrace" session has been stopped
 ```
 
- 
+ 
 
- 
+ 
 
 
 

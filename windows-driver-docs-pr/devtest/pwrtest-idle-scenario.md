@@ -2,11 +2,7 @@
 title: PwrTest Idle Scenario
 description: The PwrTest Idle Scenario monitors user and CPU idle statistics displays idle statistics gathered by kernel every 15 seconds.
 ms.assetid: 7E40DD91-D236-41B3-BC3A-DEB6DDD76139
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,7 +15,7 @@ You can combine this scenario with the [PwrTest Execution State Scenario](pwrtes
 
 **Note**  This is a legacy scenario and its recommended replacement is the [PwrTest PPM Scenario](pwrtest-ppm-scenario.md) (**/ppm**) for monitoring CPU idle statistics, and the [PwrTest Monitor Scenario](pwrtest-monitor-scenario.md) (**/monitor**) for monitoring user idle.
 
- 
+ 
 
 ## <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>Syntax
 
@@ -28,10 +24,10 @@ You can combine this scenario with the [PwrTest Execution State Scenario](pwrtes
 pwrtest /idle  [/t:n] [/?] [/es [es_options]
 ```
 
-<span id="_t_n"></span><span id="_T_N"></span>**/t:***n*  
+<span id="_t_n"></span><span id="_T_N"></span>**/t:**<em>n</em>  
 Specifies the total time (in minutes) for the scenario to run (the default value for *n* is 30 minutes).
 
-<span id="_es___es_options_"></span><span id="_ES___ES_OPTIONS_"></span>**/es \[***es\_options***\]**  
+<span id="_es___es_options_"></span><span id="_ES___ES_OPTIONS_"></span>**/es \[**<em>es\_options</em>**\]**  
 Runs the [PwrTest Execution State (ES) Scenario](pwrtest-execution-state-scenario.md).
 
 **Examples**
@@ -167,16 +163,16 @@ The following table describes the XML elements that appear in the log file.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
 
 [PwrTest Syntax](pwrtest-syntax.md)
 
- 
+ 
 
- 
+ 
 
 
 

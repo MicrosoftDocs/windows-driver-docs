@@ -9,11 +9,7 @@ keywords:
 - porting drivers WDK networking , intermediate drivers
 - network driver porting WDK , intermediate drivers
 - porting
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -49,9 +45,9 @@ The following topics describe how to port an intermediate driver to NDIS 6.0 in 
 
 [Porting Intermediate Driver Plug and Play Event Notification Handling to NDIS 6.0](porting-intermediate-driver-plug-and-play-event-notification-handling-.md)
 
- 
+ 
 
- 
+ 
 
 
 

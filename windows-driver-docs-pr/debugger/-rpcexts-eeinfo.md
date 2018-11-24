@@ -3,11 +3,7 @@ title: rpcexts.eeinfo
 description: The rpcexts.eeinfo extension displays the extended error information chain.
 ms.assetid: dc842236-bdbf-42aa-911d-6eb5eb1798ee
 keywords: ["rpcexts.eeinfo Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!rpcexts.eeinfo** extension displays the extended error information chain.
 
-```
+```dbgcmd
 !rpcexts.eeinfo EEInfoAddress
 ```
 
@@ -51,7 +47,7 @@ Specifies the address of the extended error information.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -66,7 +62,7 @@ The records are displayed in order, with the most recent records first. The reco
 
 Here is an example (in which there is only one record):
 
-```
+```dbgcmd
 0:001> !rpcexts.eeinfo 0xb015f0
 Computer Name: (null)
 ProcessID: 708 (0x2C4)
@@ -81,9 +77,9 @@ Parameter 1:(Long value) : 16777343 (0x100007F)
 
 If the chain is very long and you wish to see only one record, use [**!rpcexts.eerecord**](-rpcexts-eerecord.md) instead.
 
- 
+ 
 
- 
+ 
 
 
 

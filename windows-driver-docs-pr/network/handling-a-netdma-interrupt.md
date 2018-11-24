@@ -4,11 +4,7 @@ description: Handling a NetDMA Interrupt
 ms.assetid: 239eb7e3-9935-4281-9215-5b0b987f7d33
 keywords:
 - interrupts WDK NetDMA , generating
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -17,7 +13,7 @@ ms.localizationpriority: medium
 
 **Note**  The NetDMA interface is not supported in Windows 8 and later.
 
- 
+ 
 
 
 
@@ -30,13 +26,13 @@ The NetDMA provider driver passes the physical address of the last completed DMA
 
 **Note**  When the ISR is called, the current DMA descriptor might already be different from the descriptor that triggered the interrupt.
 
- 
+ 
 
 A NetDMA provider driver should do as little work as possible in its ISR handler. Instead, the driver should defer I/O operations to the interrupt DPC handler. For more information about DPCs, see [Handling a NetDMA Interrupt DPC](handling-a-netdma-interrupt-dpc.md).
 
- 
+ 
 
- 
+ 
 
 
 

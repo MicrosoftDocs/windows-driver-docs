@@ -6,11 +6,7 @@ keywords:
 - deleting instances of DirectX VA device objects
 - removing instances of DirectX VA device objects
 - DirectX Video Acceleration WDK Windows 2000 display , deleting instances
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 Use the following example code to delete instances of DirectX VA device objects. This code is an implementation of the [*DdMoCompDestroy*](https://msdn.microsoft.com/library/windows/hardware/ff549664) callback function. The **DestroyMoComp** member of the [**DD\_MOTIONCOMPCALLBACKS**](https://msdn.microsoft.com/library/windows/hardware/ff551660) structure points to the callback function.
 
-```
+```cpp
 DWORD APIENTRY
   MOCOMPCB_DESTROY(
     PDD_DESTROYMOCOMPDATA  lpData
@@ -92,9 +88,9 @@ DWORD APIENTRY
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

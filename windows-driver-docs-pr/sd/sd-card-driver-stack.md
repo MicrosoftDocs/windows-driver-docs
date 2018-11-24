@@ -1,6 +1,5 @@
 ---
 title: SD Card Driver Stack
-author: windows-driver-content
 description: SD Card Driver Stack
 ms.assetid: 196739bb-530f-4a60-98a0-ece0b4c5ef34
 keywords:
@@ -13,11 +12,7 @@ keywords:
 - host controllers WDK SD bus
 - hardware WDK SD bus
 - software WDK SD bus
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -46,9 +41,9 @@ When a hardware interrupt occurs, the SD bus library intercepts the interrupt, m
 
 The *ntddsd.h* header file, which is provided in the Windows Driver Kit (WDK), declares the prototypes for the routines exposed by the SD bus library.
 
- 
+ 
 
- 
+ 
 
 
 

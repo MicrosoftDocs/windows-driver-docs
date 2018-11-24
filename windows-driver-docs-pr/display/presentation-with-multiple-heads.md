@@ -5,11 +5,7 @@ ms.assetid: 60405ea7-91d5-4deb-9161-8890faa7e897
 keywords:
 - multiple-head hardware WDK DirectX 9.0 , presentation
 - presentation WDK DirectX 9.0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,9 +19,9 @@ Applications can call the **Present** method either to present contents of back 
 
 The runtime in turn makes independent sequential calls to the driver's [*DdFlip*](https://msdn.microsoft.com/library/windows/hardware/ff549306) or [*DdBlt*](https://msdn.microsoft.com/library/windows/hardware/ff549205) function. Because the display mode and refresh rate of each head might be different, these calls are always independent at the DDI level.
 
- 
+ 
 
- 
+ 
 
 
 

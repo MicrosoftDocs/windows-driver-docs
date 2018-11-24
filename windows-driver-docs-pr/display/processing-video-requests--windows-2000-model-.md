@@ -7,11 +7,7 @@ keywords:
 - request processing WDK video miniport
 - I/O WDK video miniport
 - HwVidStartIO
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ The video port driver also manages the synchronization of incoming requests for 
 
 On receipt of a video request, [*HwVidStartIO*](https://msdn.microsoft.com/library/windows/hardware/ff567367) must examine the VRP, process the video request on the adapter, set the appropriate status and other information in the VRP, and return **TRUE**.
 
- 
+ 
 
- 
+ 
 
 
 

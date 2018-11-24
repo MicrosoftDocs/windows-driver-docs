@@ -9,11 +9,7 @@ keywords:
 - prediction blocks WDK DirectX VA
 - backward-predicted prediction blocks WDK DirectX VA
 - forward-predicted prediction blocks WDK DirectX VA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ The MPEG-1 video standard is titled ISO/IEC 11172-2. This standard was developed
 
 Two additional prediction modes, bidirectional and backward prediction, were added. These prediction modes require one additional reference frame to be buffered. The bidirectional prediction mode averages forward-predicted and backward-predicted prediction blocks. The arithmetic for averaging forward and backward prediction blocks is similar to that for creating a half-sampled interpolated prediction block. The basic structure is otherwise the same as H.261.
 
- 
+ 
 
- 
+ 
 
 
 

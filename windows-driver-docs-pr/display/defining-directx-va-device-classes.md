@@ -5,11 +5,7 @@ ms.assetid: a4b2ee88-747a-48c3-ba1d-2d605c46db58
 keywords:
 - DirectX Video Acceleration WDK Windows 2000 display , defining device classes
 - device classes WDK DirectX VA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,7 +19,7 @@ Use the example code in this section to define device classes for the deinterlac
 
 Use the following example code to define each device type and a base class that applies to each device type:
 
-```
+```cpp
 // These enumerated types specify the DirectX VA device class.
 enum DXVA_DeviceType {
     DXVA_DeviceContainer        = 0x0001,
@@ -53,9 +49,9 @@ The following topics contain example code that defines classes for the deinterla
 
 [Defining the COPP Device Class](defining-the-copp-device-class.md)
 
- 
+ 
 
- 
+ 
 
 
 

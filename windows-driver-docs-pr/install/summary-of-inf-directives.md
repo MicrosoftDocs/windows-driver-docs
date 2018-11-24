@@ -5,11 +5,7 @@ ms.assetid: 6212502c-183c-4abb-9e56-59dba15fc685
 keywords:
 - INF files WDK device installations , directives
 - directives WDK INF files
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,7 +29,7 @@ Additional *add-registry-sections* can set up registry information for vendor-su
 <a href="" id="delreg-directive"></a>[**DelReg Directive**](inf-delreg-directive.md)  
 **Note**  If you are building a universal or mobile driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
- 
+ 
 
 This directive references one or more *del-registry-section*s used to remove obsolete subkeys and/or value entries from the registry. For example, such a section might appear in an INF that upgrades a previous installation.
 
@@ -43,14 +39,14 @@ This directive references one or more *file-list-section*s specifying transfers 
 <a href="" id="delfiles-directive"></a>[**DelFiles Directive**](inf-delfiles-directive.md)  
 **Note**  If you are building a universal or mobile driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
- 
+ 
 
 This rarely used directive references one or more *file-list-section*s specifying files to be deleted from the target of the installation.
 
 <a href="" id="renfiles-directive"></a>[**RenFiles Directive**](inf-renfiles-directive.md)  
 **Note**  If you are building a universal or mobile driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
- 
+ 
 
 This rarely used directive references one or more *file-list-section*s specifying INF-associated source files to be renamed on the destination.
 
@@ -62,7 +58,7 @@ INF files for most kinds of devices (those that install drivers) have an INF-wri
 <a href="" id="delservice-directive"></a>[**DelService Directive**](inf-delservice-directive.md)  
 **Note**  If you are building a universal or mobile driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
- 
+ 
 
 This rarely used directive deletes a previously installed service.
 
@@ -72,41 +68,41 @@ This directive references an *add-interface-section* in which one or more **AddR
 <a href="" id="bitreg-directive"></a>[**BitReg Directive**](inf-bitreg-directive.md)  
 **Note**  If you are building a universal or mobile driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
- 
+ 
 
-This rarely used directive references one or more *bit-registry-section*s specifying existing REG_BINARY-type value entries in the registry for which particular bits in the values are to be modified.
+This rarely used directive references one or more *bit-registry-section*s specifying existing [REG_BINARY](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types)-type value entries in the registry for which particular bits in the values are to be modified.
 
 <a href="" id="logconfig-directive"></a>[**LogConfig Directive**](inf-logconfig-directive.md)  
 **Note**  If you are building a universal or mobile driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
- 
+ 
 
 This directive references one or more *log-config-section*s that specify acceptable bus-relative and device-specific hardware configurations in an INF for devices that are detected (by PnP device enumerators) or manually installed. For example, INF files for non-PnP ISA, EISA, and MCA devices, which are manually installed, use this directive. (Also see [**INF DDInstall.LogConfigOverride Section**](inf-ddinstall-logconfigoverride-section.md).)
 
 <a href="" id="updateinis-directive"></a>[**UpdateInis Directive**](inf-updateinis-directive.md)  
 **Note**  If you are building a universal or mobile driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
- 
+ 
 
 This rarely used directive references one or more *update-ini-section*s specifying parts of a supplied INI file to be read during installation and, possibly specifying line-by-line modifications to be made in that INI file.
 
 <a href="" id="updateinifields-directive"></a>[**UpdateIniFields Directive**](inf-updateinifields-directive.md)  
 **Note**  If you are building a universal or mobile driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
- 
+ 
 
 This rarely used directive references one or more *update-inifields-section*s specifying modifications to be made on fields within the lines of an INI file.
 
 <a href="" id="ini2reg-directive"></a>[**Ini2Reg Directive**](inf-ini2reg-directive.md)  
 **Note**  If you are building a universal or mobile driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
- 
+ 
 
 This rarely used directive references one or more *ini-to-registry-section*s specifying lines or sections of an INI file to be written into the registry.
 
 The sections under which any of the directives in the previous list can be specified is system-determined. The basic form of each directive is shown in the formal syntax of the reference for each section, as for example:
 
-```
+```cpp
 [DDInstall] | [DDInstall.HW] | [DDInstall.CoInstallers] | 
 [ClassInstall32] | [ClassInstall32.ntx86] | [ClassInstall32.ntia64] | [ClassInstall32.ntamd64]
 
@@ -115,9 +111,9 @@ AddReg=add-registry-section[,add-registry-section] ...
 
 The rest of this section describes the formal syntax and meaning for each system-defined named section, standard INF-writer-defined section, and directives that can be specified in an INF file.
 
- 
+ 
 
- 
+ 
 
 
 

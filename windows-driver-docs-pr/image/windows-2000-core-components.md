@@ -1,13 +1,8 @@
 ---
 title: Windows 2000 Core Components
-author: windows-driver-content
 description: Windows 2000 Core Components
 ms.assetid: e3c560e8-ad75-4187-84c2-f918a201d10e
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +24,9 @@ The still image core components on Windows 2000 are almost identical to the [Win
 
 3.  *Scsimap.dll* does not exist for Windows 2000 and later.
 
- 
+ 
 
- 
+ 
 
 
 

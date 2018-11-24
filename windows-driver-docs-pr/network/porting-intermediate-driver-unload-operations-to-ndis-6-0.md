@@ -7,11 +7,7 @@ keywords:
 - NDIS intermediate drivers WDK , unloading
 - porting intermediate drivers WDK networking , unload operations
 - unloading intermediate drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,9 +33,9 @@ For more information about unloading the protocol lower edge of an intermediate 
 
 For more information about unloading an NDIS 6.0 intermediate driver, see [Unloading an Intermediate Driver](unloading-an-intermediate-driver.md).
 
- 
+ 
 
- 
+ 
 
 
 

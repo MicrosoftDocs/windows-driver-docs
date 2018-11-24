@@ -5,11 +5,7 @@ ms.assetid: 95ef53d3-572d-478b-839b-0555e9051129
 keywords:
 - DirectSound WDK audio , non-PCM wave formats
 - non-PCM audio formats WDK , DirectSound
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +25,9 @@ You can extend a DirectSound application to use a non-PCM format by first creati
 
 DirectSound playback through VxD drivers or legacy waveOut drivers is still limited to PCM; non-PCM formats are not supported.
 
- 
+ 
 
- 
+ 
 
 
 

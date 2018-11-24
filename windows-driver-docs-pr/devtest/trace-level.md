@@ -5,11 +5,7 @@ ms.assetid: 7ad3f6ee-61a4-4a0e-ab76-d839ae97a2b3
 keywords:
 - trace levels WDK
 - levels WDK software tracing
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +24,9 @@ When running a trace session, users can use the trace level to determine which m
 
 Like trace flags, users can change the trace level while a trace session is running by reenabling the trace provider.
 
- 
+ 
 
- 
+ 
 
 
 

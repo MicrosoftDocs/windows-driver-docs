@@ -4,11 +4,7 @@ description: DirectMusic Stream Data Format
 ms.assetid: f3aae6c0-6b9d-43fa-9ef1-d6702017f55d
 keywords:
 - DirectMusic WDK audio , stream data formats
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,7 +16,7 @@ ms.localizationpriority: medium
 
 This example uses a [**KSDATAFORMAT**](https://msdn.microsoft.com/library/windows/hardware/ff561656) structure to describe the data format of a DirectMusic stream.
 
-```
+```cpp
   DataFormat.FormatSize  = sizeof(KSDATAFORMAT);
   DataFormat.Flags       = 0;
   DataFormat.SampleSize  = 0;
@@ -30,9 +26,9 @@ This example uses a [**KSDATAFORMAT**](https://msdn.microsoft.com/library/window
   DataFormat.Specifier   = STATICGUIDOF(KSDATAFORMAT_SPECIFIER_NONE);
 ```
 
- 
+ 
 
- 
+ 
 
 
 

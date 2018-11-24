@@ -2,11 +2,7 @@
 title: Designing the user experience of a mobile broadband app
 description: Designing the user experience of a mobile broadband app
 ms.assetid: c84e2814-69ba-4cd0-ba11-1b035ccdfbde
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -62,7 +58,7 @@ The following shows how different pages in the app can be organized:
 **Tip**  
 For prepaid plans, the account overview could directly link to a **Make a Payment** page for refill scenarios.
 
- 
+ 
 
 For more information about how to design these pages, see the following topics:
 
@@ -91,9 +87,9 @@ For more information about how to design these pages, see the following topics:
 
 -   [Overview of mobile broadband](overview-of-mobile-broadband.md)
 
- 
+ 
 
- 
+ 
 
 
 

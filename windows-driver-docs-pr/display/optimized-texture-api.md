@@ -8,11 +8,7 @@ keywords:
 - CAPS2_HINTDYNAMIC
 - DDSCAPS2_HINTSTATIC
 - DDSCAPS2_OPAQUE
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -53,9 +49,9 @@ All blts from such surfaces.
 
 The only way to put data into such surfaces is with the **IDirect3DDevice7::Load** method (described in the Direct3D SDK documentation), or a full surface blt call. For more information about **IDirectDrawSurface7::Lock** and **IDirectDrawSurface7::GetDC**, see the DirectDraw SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

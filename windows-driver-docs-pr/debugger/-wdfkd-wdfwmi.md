@@ -3,11 +3,7 @@ title: wdfkd.wdfwmi
 description: The wdfkd.wdfwmi extension displays the Microsoft Windows Management Instrumentation (WMI) information for a specified framework device object. 
 ms.assetid: fd521be8-3c7a-415b-8044-c9fb25188cbc
 keywords: ["wdfkd.wdfwmi Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!wdfkd.wdfwmi** extension displays the Microsoft Windows Management Instrumentation (WMI) information for a specified framework device object. This information includes all WMI provider objects and their associated WMI instance objects.
 
-```
+```dbgcmd
 !wdfkd.wdfwmi Handle
 ```
 
@@ -49,9 +45,9 @@ Remarks
 
 The output of the **!wdfkd.wdfwmi** extension includes information about the WMI registration, provider, and instances.
 
- 
+ 
 
- 
+ 
 
 
 

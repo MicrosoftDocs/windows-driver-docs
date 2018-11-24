@@ -8,11 +8,7 @@ keywords:
 - MSIs WDK networking , registering interrupts
 - interrupts WDK networking , registering
 - MSI-X WDK networking , deregistering interrupts
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -48,9 +44,9 @@ The line-interrupt functions include the following:
 
 Drivers should call the [**NdisMDeregisterInterruptEx**](https://msdn.microsoft.com/library/windows/hardware/ff563575) function to release resources that were previously allocated with **NdisMRegisterInterruptEx**.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: PROPSETID\_EXT\_DEVICE
 description: PROPSETID\_EXT\_DEVICE
 ms.assetid: fe1a14dc-b337-462b-ac2a-10eef036ef7f
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,9 +32,9 @@ Support for this property set is optional and should be implemented only by mini
 
 The DirectShow **IAMExtDevice** interface (see the DirectShow documentation in the Microsoft Windows SDK) provides access to the properties of this set.
 
- 
+ 
 
- 
+ 
 
 
 

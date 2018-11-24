@@ -1,6 +1,5 @@
 ---
 title: Notification Channel
-author: windows-driver-content
 description: Notification Channel
 ms.assetid: 3161342a-0737-4f3b-bb16-32d6949bceea
 keywords:
@@ -11,11 +10,7 @@ keywords:
 - channel notification WDK print spooler
 - data channels WDK spooler notification
 - IPrintAsyncNotifyChannel
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +22,7 @@ ms.localizationpriority: medium
 
 This section contains information about the [CreatePrintAsyncNotifyChannel](http://go.microsoft.com/fwlink/p/?linkid=124750) function and the [IPrintAsyncNotifyChannel](http://go.microsoft.com/fwlink/p/?linkid=124758) interface.
 
-```
+```cpp
 HRESULT
  CreatePrintAsyncNotifyChannel(
     IN LPCWSTR,
@@ -65,7 +60,7 @@ The **IPrintAsyncNotifyChannel** interface identifies a channel and is used to s
 
 This interface inherits from the **IUnknown** interface so that the clients of the spooler notification mechanism can implement either a COM or a C++ object. The interface declaration in the following code example shows this inheritance:
 
-```
+```cpp
 #define INTERFACE IPrintAsyncNotifyChannel
 DECLARE_INTERFACE_(IPrintAsyncNotifyChannel, IUnknown)
 {
@@ -116,11 +111,11 @@ If you meet one of these conditions, you must call **Release**. If you do not me
 
 **Note**   Calling **Release** under any of the preceding conditions but the first, in which you call **AddRef** explicitly, is an exception to general COM programming patterns. **IPrintAsyncNotifyChannel** differs from standard COM practice in this situation.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

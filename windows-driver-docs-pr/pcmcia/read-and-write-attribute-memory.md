@@ -5,11 +5,7 @@ ms.assetid: 8e430057-b68a-4edc-8755-1d7255412269
 keywords:
 - PCMCIA WDK buses , attribute memory
 - attribute memory WDK PCMCIA bus , read and write
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -44,9 +40,9 @@ The PCMCIA memory card driver carries out the following operations:
 
 A driver must be running at IRQL &lt; DISPATCH\_LEVEL to send this request down the driver stack.
 
- 
+ 
 
- 
+ 
 
 
 

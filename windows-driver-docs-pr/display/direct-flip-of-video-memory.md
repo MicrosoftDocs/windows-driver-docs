@@ -5,11 +5,7 @@ ms.assetid: 00A8FCB1-966A-4176-9840-7EB5BA300C8B
 keywords:
 - direct flip
 - DirectFlip
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -40,13 +36,13 @@ The direct flip feature allows for special optimizations to the composition mode
 <td align="left">Mandatory</td>
 </tr>
 <tr class="even">
-<td align="left">[WHCK](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) requirements and tests</td>
+<td align="left"><a href="https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit" data-raw-source="[WHCK](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit)">WHCK</a> requirements and tests</td>
 <td align="left"><p><strong>Device.Graphics ¦ DirectFlip</strong></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="directflip"></span><span id="DIRECTFLIP"></span>
 
@@ -77,9 +73,9 @@ For info on requirements that hardware devices must meet when they implement thi
 
 See [WDDM 1.2 features](wddm-v1-2-features.md) for a review of features added with Windows 8.
 
- 
+ 
 
- 
+ 
 
 
 

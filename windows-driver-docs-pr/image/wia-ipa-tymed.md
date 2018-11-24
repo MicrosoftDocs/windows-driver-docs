@@ -11,11 +11,7 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -73,7 +69,7 @@ The following table describes the constants that are valid with WIA\_IPA\_TYMED.
 </tbody>
 </table>
 
- 
+ 
 
 All WIA 2.0 minidrivers must set the initial value of this property to its default value, which is TYMED\_FILE.
 
@@ -93,9 +89,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

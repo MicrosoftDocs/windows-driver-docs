@@ -2,11 +2,7 @@
 title: Tile resources
 description: For tile resources, the asynchronous video memory manager services running on the device paging queue aren't sufficient.
 ms.assetid: D48D2046-64A6-4B0E-9235-84DD2A83DB39
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -65,9 +61,9 @@ On GPUs, which support the **DXGK\_PAGETABLEUPDATE\_CPU\_VIRTUAL** page table up
 
 The disadvantage of this method is that the [*UpdatePageTable*](https://msdn.microsoft.com/library/windows/hardware/ff560815) operations are not parallel with rendering operations. The advantage is that the driver does not need to implement support for paging buffers and implement *UpdatePageTable* as an immediate operation.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -6,11 +6,7 @@ keywords:
 - video miniport drivers WDK Windows 2000 , spin locks
 - spin locks WDK video miniport
 - locking WDK video miniport
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +24,9 @@ When the thread that is holding the spin lock has completed its task, the minipo
 
 When the miniport driver has no further use for the spin lock, it should destroy the spin lock by a call to [**VideoPortDeleteSpinLock**](https://msdn.microsoft.com/library/windows/hardware/ff570293).
 
- 
+ 
 
- 
+ 
 
 
 

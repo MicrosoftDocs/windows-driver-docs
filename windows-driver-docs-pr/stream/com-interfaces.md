@@ -2,11 +2,7 @@
 title: COM Interfaces
 description: The following COM interfaces are defined in headers included in the WDK.Important  Where possible, use of traditional COM provided by the SDK headers is encouraged. For more information, see COM Fundamentals. .
 ms.assetid: 8443D16A-ACE5-4A34-9FB7-CBACA7230116
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -17,7 +13,7 @@ The following COM interfaces are defined in headers included in the WDK.
 
 **Important**  Where possible, use of traditional COM provided by the SDK headers is encouraged. For more information, see [COM Fundamentals](https://msdn.microsoft.com/library/windows/desktop/ms694505).
 
- 
+ 
 
 ## <span id="UNKNOWN.H_"></span>unknown.h
 
@@ -48,9 +44,9 @@ INonDelegatingUnknown::NonDelegatingRelease
 
 PNONDELEGATINGUNKNOWN
 
- 
+ 
 
- 
+ 
 
 
 

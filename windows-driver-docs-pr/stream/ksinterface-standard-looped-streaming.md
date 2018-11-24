@@ -9,11 +9,7 @@ api_name:
 - KSINTERFACE_STANDARD_LOOPED_STREAMING
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,13 +23,13 @@ The KSINTERFACE\_STANDARD\_LOOPED\_STREAMING interface is used by clients of DSo
 
 If a pin supports KSINTERFACE\_STANDARD\_LOOPED\_STREAMING, the relevant filter does not complete buffers until the pin is placed into the *Stop* state. The filter processes data by continuously looping around the data in the single buffer submitted to the filter.
 
-### <span id="see_also"></span><span id="SEE_ALSO"></span>See Also
+### See Also
 
 [KSINTERFACESETID\_Standard](ksinterfacesetid-standard.md), [**KSPIN\_INTERFACE**](https://msdn.microsoft.com/library/windows/hardware/ff563537), [**KSPIN\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff563533)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,11 +3,7 @@ title: s (Set Current System)
 description: The s command sets or displays the current system number.
 ms.assetid: 33ad3a63-166f-4669-868c-49100c9b4d8c
 keywords: ["s (Set Current System) Windows Debugging"]
-ms.author: domars
-ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 09/17/2018
 topic_type:
 - apiref
 api_name:
@@ -19,12 +15,11 @@ ms.localizationpriority: medium
 
 # ||s (Set Current System)
 
-
 The **||s** command sets or displays the current system number.
 
-```
-||System s 
-|| s 
+```dbgcmd
+     ||System s 
+     || s 
 ```
 
 Do not confuse this command with the [**s (Search Memory)**](s--search-memory-.md), [**~s (Change Current Processor)**](-s--change-current-processor-.md), [**~s (Set Current Thread)**](-s--set-current-thread-.md), or [**|s (Set Current Process)**](-s--set-current-process-.md) command.
@@ -59,7 +54,7 @@ Specifies the system number to activate. For more information about the syntax, 
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -70,7 +65,7 @@ If you use the **||s** syntax, the debugger displays information about the curre
 
 This command also disassembles the current instruction for the current system, process, and thread.
 
- 
+ 
 **Note**   There are complications, when you debug live targets and dump targets together, because commands behave differently for each type of debugging. For example, if you use the **g (Go)** command when the current system is a dump file, the debugger begins executing, but you cannot break back into the debugger, because the break command is not recognized as valid for dump file debugging.
 
 

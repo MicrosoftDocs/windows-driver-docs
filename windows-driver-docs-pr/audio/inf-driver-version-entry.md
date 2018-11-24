@@ -10,11 +10,7 @@ keywords:
 - audio drivers WDK , version numbers
 - driver version numbers WDK audio
 - INF DriverVer Directive
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,9 +34,9 @@ When the operating system searches for drivers, it chooses a driver with a more 
 
 In Windows 2000, Windows XP and later, the INF file for a driver package must provide a **DriverVer** directive.
 
- 
+ 
 
- 
+ 
 
 
 

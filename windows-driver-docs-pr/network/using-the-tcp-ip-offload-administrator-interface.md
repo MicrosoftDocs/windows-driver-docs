@@ -7,11 +7,7 @@ keywords:
 - offload WDK TCP/IP transport , administrator interface
 - task offload WDK TCP/IP transport , administrator interface
 - connection offload WDK TCP/IP transport , administrator interface
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,9 +31,9 @@ If the hardware capabilities change (for example, because a MUX intermediate dri
 
 NDIS and overlying drivers can use the [OID\_OFFLOAD\_ENCAPSULATION](https://msdn.microsoft.com/library/windows/hardware/ff569762) OID to set or query the task offload encapsulation settings of an underlying miniport adapter. The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure contains an [**NDIS\_OFFLOAD\_ENCAPSULATION**](https://msdn.microsoft.com/library/windows/hardware/ff566702) structure.
 
- 
+ 
 
- 
+ 
 
 
 

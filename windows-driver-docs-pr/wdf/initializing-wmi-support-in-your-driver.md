@@ -1,6 +1,5 @@
 ---
 title: Initializing WMI Support in Your Driver
-author: windows-driver-content
 description: Initializing WMI Support in Your Driver
 ms.assetid: cf79176c-8e08-45f9-b2fb-a82707d8667b
 keywords:
@@ -11,11 +10,7 @@ keywords:
 - registering MOF resource names WDK KMDF
 - MOF resource names WDK KMDF
 - initializing WMI support WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -63,9 +58,9 @@ The framework automatically deregisters each provider instance when the instance
 
 Your driver can deregister an instance at any time by calling [**WdfWmiInstanceDeregister**](https://msdn.microsoft.com/library/windows/hardware/ff551179).
 
- 
+ 
 
- 
+ 
 
 
 

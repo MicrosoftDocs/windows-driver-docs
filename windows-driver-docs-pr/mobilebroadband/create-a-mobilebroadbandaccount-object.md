@@ -2,11 +2,7 @@
 title: Create a MobileBroadbandAccount object
 description: Create a MobileBroadbandAccount object
 ms.assetid: 631e885f-67bb-4c30-a82f-352c23cc973a
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -48,9 +44,9 @@ This can happen if no network hardware is detected, or if the network hardware d
 
 [Common tasks for mobile broadband Windows Runtime APIs](common-tasks-for-mobile-broadband-windows-runtime-apis.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,11 +3,7 @@ title: Debug Modules
 description: Debug Modules
 ms.assetid: 4107ff36-31c4-45a6-95f6-b647543f01be
 keywords: ["Debug Modules", "executable files and paths, Debug Modules"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -45,9 +41,9 @@ If you select a line and press CTRL+C, the whole line is copied to the clipboard
 
 Click **Close** to close this dialog box.
 
- 
+ 
 
- 
+ 
 
 
 

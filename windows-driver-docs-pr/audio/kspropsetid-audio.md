@@ -3,11 +3,7 @@ title: KSPROPSETID\_Audio
 description: KSPROPSETID\_Audio
 ms.assetid: b65620c1-0460-430d-999d-f46fe0a2702d
 keywords: ["KSPROPSETID_Audio"]
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -133,9 +129,9 @@ The following properties are part of the `KSPROPSETID_Audio` property set:
 
 [**KSPROPERTY\_AUDIO\_WIDENESS**](ksproperty-audio-wideness.md)
 
- 
+ 
 
- 
+ 
 
 
 

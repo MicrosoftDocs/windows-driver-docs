@@ -11,11 +11,7 @@ api_location:
 - ks.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +23,7 @@ The KSPROPERTY\_PIN\_DATAFLOW property specifies the direction of data flow on p
 ## <span id="ddk_ksproperty_pin_dataflow_ks"></span><span id="DDK_KSPROPERTY_PIN_DATAFLOW_KS"></span>
 
 
-### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
+### Usage Summary Table
 
 <table>
 <colgroup>
@@ -51,13 +47,13 @@ The KSPROPERTY\_PIN\_DATAFLOW property specifies the direction of data flow on p
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p>[<strong>KSP_PIN</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566722)</p></td>
-<td><p>[<strong>KSPIN_DATAFLOW</strong>](https://msdn.microsoft.com/library/windows/hardware/ff563532)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566722" data-raw-source="[&lt;strong&gt;KSP_PIN&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566722)"><strong>KSP_PIN</strong></a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff563532" data-raw-source="[&lt;strong&gt;KSPIN_DATAFLOW&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff563532)"><strong>KSPIN_DATAFLOW</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -84,16 +80,16 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**KSP\_PIN**](https://msdn.microsoft.com/library/windows/hardware/ff566722)
 
 [**KSPIN\_DATAFLOW**](https://msdn.microsoft.com/library/windows/hardware/ff563532)
 
- 
+ 
 
- 
+ 
 
 
 

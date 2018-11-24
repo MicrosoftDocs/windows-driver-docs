@@ -1,16 +1,11 @@
 ---
 title: What is a Network Redirector
-author: windows-driver-content
 description: What is a Network Redirector
 ms.assetid: 5c966d92-7796-4cba-a90e-8c83240655ce
 keywords:
 - network redirectors WDK , about network redirectors
 - redirector drivers WDK , about network redirectors
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +23,9 @@ This section includes the following topic:
 
 [Basic Architecture of a Network Redirector](basic-architecture-of-a-network-redirector.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,13 +1,8 @@
 ---
 title: Common, Camera, and Scanner Properties
-author: windows-driver-content
 description: Common, Camera, and Scanner Properties
 ms.assetid: 7d988a1b-4c2f-43f7-be09-a250d9ede35c
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -46,7 +41,7 @@ The three-letter acronym in the middle of a WIA property name contains informati
 <tr class="odd">
 <td><p>WIA_IPA_<em>Xxx</em></p></td>
 <td><p>Item Property, All</p>
-<p>Information that is common to both camera and scanner items, such as the item's name and the type of image.</p></td>
+<p>Information that is common to both camera and scanner items, such as the item&#39;s name and the type of image.</p></td>
 </tr>
 <tr class="even">
 <td><p>WIA_DPC_<em>Xxx</em></p></td>
@@ -71,13 +66,13 @@ The three-letter acronym in the middle of a WIA property name contains informati
 </tbody>
 </table>
 
- 
+ 
 
 See [WIA Properties](https://msdn.microsoft.com/library/windows/hardware/ff552739) for a complete list of WIA common, camera-specific, and scanner-specific properties.
 
- 
+ 
 
- 
+ 
 
 
 

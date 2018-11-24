@@ -8,11 +8,7 @@ keywords:
 - porting CoNDIS drivers WDK networking , send and receive operations
 - send operation porting WDK networking
 - receive
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,9 +32,9 @@ This section includes the following topics:
 
 [Porting Protocol Driver Send and Receive Operations to CoNDIS 6.0](porting-protocol-driver-send-and-receive-operations-to-condis-6-0.md)
 
- 
+ 
 
- 
+ 
 
 
 

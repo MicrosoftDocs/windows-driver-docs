@@ -7,11 +7,7 @@ keywords:
 - PortCls WDK audio , port drivers
 - audio miniport drivers WDK , port drivers
 - miniport drivers WDK audio , port drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ The Topology port driver exposes an [IPortTopology](https://msdn.microsoft.com/l
 
 The Topology port and miniport driver objects communicate with each other through their respective [IPortTopology](https://msdn.microsoft.com/library/windows/hardware/ff536896) and [IMiniportTopology](https://msdn.microsoft.com/library/windows/hardware/ff536712) interfaces.
 
- 
+ 
 
- 
+ 
 
 
 

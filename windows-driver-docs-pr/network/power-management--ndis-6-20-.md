@@ -6,11 +6,7 @@ keywords:
 - NDIS 6.20 WDK , power management
 - power management WDK networking , NDIS 6.20
 - power management WDK NDIS 6.20
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,11 +34,11 @@ This section includes the following topics:
 
 **Note**  Starting with NDIS 6.30, the NDIS power management interface has been extended. For more information about the NDIS 6.30 extensions for power management, please review the information at [Power Management (NDIS 6.30 and Later)](https://msdn.microsoft.com/library/windows/hardware/hh440160).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

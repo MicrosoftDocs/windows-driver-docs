@@ -7,11 +7,7 @@ keywords:
 - adapter drivers WDK audio , retrieving setup information
 - Port Class audio adapters WDK , retrieving setup information
 - retrieving device setup information
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -67,9 +63,9 @@ For either of these calls, the caller selects the type of setup information to r
 
 For a description of the DeviceProperty*Xxx* values above, see [**IoGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff549203).
 
- 
+ 
 
- 
+ 
 
 
 

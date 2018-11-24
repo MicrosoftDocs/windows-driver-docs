@@ -1,6 +1,5 @@
 ---
 title: Converting an Existing SCSI Class Driver for Plug and Play
-author: windows-driver-content
 description: Converting an Existing SCSI Class Driver for Plug and Play
 ms.assetid: b6570eef-f425-4b73-aa8a-7084f53bb10a
 keywords:
@@ -11,11 +10,7 @@ keywords:
 - PnP WDK storage
 - Plug and Play WDK storage
 - converting SCSI class drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,9 +32,9 @@ To run successfully as a PnP driver, an existing SCSI class driver must be modif
 
 -   The driver must handle requests to change the power state of the device (IRP\_MJ\_POWER with [**IRP\_MN\_QUERY\_POWER**](https://msdn.microsoft.com/library/windows/hardware/ff551699) and [**IRP\_MN\_SET\_POWER**](https://msdn.microsoft.com/library/windows/hardware/ff551744)), and must block I/O to the device during power state transitions.
 
- 
+ 
 
- 
+ 
 
 
 

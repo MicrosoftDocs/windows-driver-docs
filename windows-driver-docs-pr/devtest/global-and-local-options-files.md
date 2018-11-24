@@ -6,11 +6,7 @@ keywords:
 - options files WDK Static Driver Verifier
 - global options files WDK Static Driver Verifier
 - local options files WDK Static Driver Verifier
-ms.author: windowsdriverdev
 ms.date: 04/02/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,11 +23,11 @@ There are two types of options files:
 
 **Caution**   Do not move or delete the global options files from the \\tools\\sdv\\data\\*&lt;drivermodel&gt;* subdirectories and do not rename them. To create a local options file, make a copy of the global options file and place it in the driver's project directory. If the global options file is missing from the \\tools\\sdv\\data\\*&lt;drivermodel&gt;* subdirectories, SDV terminates the verification and displays the "Could not find Sdv-default.xml" error message.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

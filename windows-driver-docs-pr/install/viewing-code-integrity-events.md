@@ -6,11 +6,7 @@ keywords:
 - Event Viewer WDK driver signing
 - viewing Code Integrity events
 - displaying Code Integrity events
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -43,9 +39,9 @@ For a list of all Code Integrity event log messages, see [Code Integrity Event L
 
 The System log events are viewable in the Event Viewer under the Windows Logs, System log view.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,13 +1,8 @@
 ---
 title: WDI_TLV_ADAPTER_RESUME_REQUIRED
-author: windows-driver-content
 description: WDI_TLV_ADAPTER_RESUME_REQUIRED is a TLV that specifies if adapter resume is required.
 ms.assetid: 341B871A-F789-447E-A74C-3274B6B8B14A
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_ADAPTER_RESUME_REQUIRED Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -51,7 +46,7 @@ The size (in bytes) of a UINT8.
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -77,9 +72,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,13 +1,8 @@
 ---
 title: User-Mode Driver Framework Frequently Asked Questions
-author: windows-driver-content
 description: Windows Driver Frameworks (WDF) is a set of libraries that you can use to write device drivers that run on the Windows operating system.
 ms.assetid: 0c07e514-73f9-4d24-86ad-8ac036fdbcf4
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -99,13 +94,13 @@ Starting in UMDF version 2.0, you can use many of the commands in the *Wdfkd.dll
 
 You can find discussion of all aspects of Windows drivers on the following forums:
 
--   Microsoft maintains the [Windows Hardware WDK and Driver Development](http://social.msdn.microsoft.com/Forums/windowsdesktop/en-US/home?forum=wdk) forum.
+-   Microsoft maintains the [Windows Hardware WDK and Driver Development](http://social.msdn.microsoft.com/Forums/windowsdesktop/home?forum=wdk) forum.
 
 -   Open Systems Resources (OSR) moderates the [OSR Online NTDEV List](http://www.osronline.com/showlists.cfm?list=ntdev) forum.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -10,11 +10,7 @@ api_name:
 - Creating
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -101,7 +97,7 @@ This required entry specifies the algorithm that is used to digitally sign the c
 </tbody>
 </table>
 
- 
+ 
 
 <span id="_______KeyType______"></span><span id="_______keytype______"></span><span id="_______KEYTYPE______"></span> **KeyType**   
 This required entry specifies the key type for the subject. Starting with Windows 7 , this entry must have a value of **RSA**.
@@ -114,7 +110,7 @@ This optional entry specifies whether the certificate is to be self-signed by th
 
 **Note**  Starting with Windows 7, a value of NO is not supported. If NO is specified, the tool issues an error message.
 
- 
+ 
 
 <span id="_______ExpirationDate______"></span><span id="_______expirationdate______"></span><span id="_______EXPIRATIONDATE______"></span> **ExpirationDate**   
 This required entry specifies the end of the validity period for the certificate. The certificate is valid from the date it is created to the specified expiration date.
@@ -145,9 +141,9 @@ Entries for the certificate specification are case-sensitive but can be specifie
 
 For more information about how to create a certificate to import to an IEEE 1667-compliant USB storage device, see the **-New** parameter of the [**/Add**](enhstor-add-switch.md) and [**/Replace**](-replace-switch.md) switches of the Enhanced Storage Certificate Management tool.
 
- 
+ 
 
- 
+ 
 
 
 

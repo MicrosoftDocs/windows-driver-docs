@@ -4,11 +4,7 @@ description: Optional Network Wake Up OIDs
 ms.assetid: 0e9b4844-1623-4bfd-8e73-ebbd970c7e95
 keywords:
 - Optional Network Wakeup OIDs
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,27 +32,27 @@ To support network wake up events, a Remote NDIS device must additionally suppor
 <tbody>
 <tr class="odd">
 <td align="left"><p>Optional</p></td>
-<td align="left"><p>[OID_PNP_ENABLE_WAKE_UP](https://msdn.microsoft.com/library/windows/hardware/ff569775)</p></td>
-<td align="left"><p>The Remote NDIS device's wake-up capabilities that can be enabled</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff569775" data-raw-source="[OID_PNP_ENABLE_WAKE_UP](https://msdn.microsoft.com/library/windows/hardware/ff569775)">OID_PNP_ENABLE_WAKE_UP</a></p></td>
+<td align="left"><p>The Remote NDIS device&#39;s wake-up capabilities that can be enabled</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Optional</p></td>
-<td align="left"><p>[OID_PNP_ADD_WAKE_UP_PATTERN](https://msdn.microsoft.com/library/windows/hardware/ff569773)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff569773" data-raw-source="[OID_PNP_ADD_WAKE_UP_PATTERN](https://msdn.microsoft.com/library/windows/hardware/ff569773)">OID_PNP_ADD_WAKE_UP_PATTERN</a></p></td>
 <td align="left"><p>Wake-up patterns that the Remote NDIS miniport driver should load into the device</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Optional</p></td>
-<td align="left"><p>[OID_PNP_REMOVE_WAKE_UP_PATTERN](https://msdn.microsoft.com/library/windows/hardware/ff569779)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff569779" data-raw-source="[OID_PNP_REMOVE_WAKE_UP_PATTERN](https://msdn.microsoft.com/library/windows/hardware/ff569779)">OID_PNP_REMOVE_WAKE_UP_PATTERN</a></p></td>
 <td align="left"><p>Wake-up patterns that the Remote NDIS miniport driver should remove from the device</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

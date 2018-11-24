@@ -3,11 +3,7 @@ title: address
 description: The address extension displays information about the memory that the target process or target computer uses.
 ms.assetid: 9bbde680-8523-4db2-bb7e-fdacdaf1aa89
 keywords: ["address Windows Debugging"]
-ms.author: domars
-ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 09/17/2018
 topic_type:
 - apiref
 api_name:
@@ -24,7 +20,7 @@ The **!address** extension displays information about the memory that the target
 
 User-Mode
 
-```
+```dbgcmd
 !address Address
 !address -summary 
 !address [-f:F1,F2,...] {[-o:{csv | tsv | 1}] | [-c:"Command"]}
@@ -33,7 +29,7 @@ User-Mode
 
 Kernel-Mode
 
-```
+```dbgcmd
 !address Address 
 !address
 ```
@@ -115,7 +111,7 @@ The following filter values specify memory regions by the way that the target pr
 </tbody>
 </table>
 
- 
+ 
 
 The following filter values specify memory regions by the memory type.
 
@@ -146,7 +142,7 @@ The following filter values specify memory regions by the memory type.
 </tbody>
 </table>
 
- 
+ 
 
 The following filter values specify memory regions by the state of the memory.
 
@@ -177,7 +173,7 @@ The following filter values specify memory regions by the state of the memory.
 </tbody>
 </table>
 
- 
+ 
 
 The following filter values specify memory regions by the protection applied to the memory.
 
@@ -240,7 +236,7 @@ The following filter values specify memory regions by the protection applied to 
 </tbody>
 </table>
 
- 
+ 
 
 <span id="_______-o__csv___tsv___1_"></span><span id="_______-O__CSV___TSV___1_"></span> **-o:**{**csv** | **tsv** | **1**}  
 Displays the output according to one of the following options.
@@ -267,12 +263,12 @@ Displays the output according to one of the following options.
 </tr>
 <tr class="odd">
 <td align="left"><p>1</p></td>
-<td align="left"><p>Displays the output in bare format. This format works well when <strong>!address</strong> is used as input to <strong>[.foreach](-foreach.md)</strong>.</p></td>
+<td align="left"><p>Displays the output in bare format. This format works well when <strong>!address</strong> is used as input to <strong><a href="-foreach.md" data-raw-source="[.foreach](-foreach.md)">.foreach</a></strong>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 <span id="_______-c__Command_"></span><span id="_______-c__command_"></span><span id="_______-C__COMMAND_"></span> **-c**:"*Command*"  
 Executes a custom command for each memory region. You can use the following placeholders in your command to represent output fields of the **!address** extension.
@@ -320,7 +316,7 @@ Executes a custom command for each memory region. You can use the following plac
 </tbody>
 </table>
 
- 
+ 
 
 For example, `!address -f:Heap -c:".echo %1 %3 %5"` displays the base address, size, and state for each memory region of type **Heap**.
 
@@ -350,7 +346,7 @@ Displays minimal Help text for this extension in the [Debugger Command window](d
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -367,7 +363,7 @@ In user mode, **!address** *Address* shows the characteristics of the region tha
 
 The following example uses **!address** to retrieve information about a region of memory that is mapped to kernel32.dll.
 
-```
+```console
 0:000> !address 75831234
 Usage:                  Image
 Base Address:           75831000
@@ -387,7 +383,7 @@ If you are starting with an address and trying to determine information about it
 
 The following example uses the [**s (Search Memory)**](s--search-memory-.md) command to search each memory region of type **Image** for the wide-character string "Note".
 
-```
+```console
 !address /f:Image /c:"s -u %1 %2 \"Note\""
 
 *** Executing: s -u 0xab0000 0xab1000 "Note"
@@ -399,9 +395,9 @@ The following example uses the [**s (Search Memory)**](s--search-memory-.md) com
 . . .
 ```
 
-In kernel mode, the output of **!address** is similar to the user mode output but contains less information. The following example example shows the kernel mode output.
+In kernel mode, the output of **!address** is similar to the user mode output but contains less information. The following example shows the kernel mode output.
 
-```
+```console
 kd> !address
   804de000 - 00235000                           
  Usage       KernelSpaceUsageImage
@@ -422,9 +418,9 @@ kd> !address
 
 The meaning of "usage" is the same as in user mode. "ImageName" indicates the module that is associated with this address. "KernelStack" shows the address of this thread's ETHREAD block (0x817B4DA0), the process ID (0x324), and the thread ID (0x368).
 
- 
+ 
 
- 
+ 
 
 
 

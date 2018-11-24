@@ -12,11 +12,7 @@ keywords:
 - shader converters WDK display
 - texture stage states WDK display
 - render states WDK display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -61,7 +57,7 @@ How the fixed-function vertex and pixel shader converters work depend on the ver
 
     **Note**   For versions of DirectX prior to DirectX 8.0, the fixed function to shader mapping code is implemented in *Ddraw.dll*.
 
-     
+     
 
 ### <span id="unused_user_mode_display_driver_functions"></span><span id="UNUSED_USER_MODE_DISPLAY_DRIVER_FUNCTIONS"></span>Unused User-Mode Display Driver Functions
 
@@ -153,9 +149,9 @@ The Direct3D runtime passes all texture stage states to the driver. The driver s
 
 -   D3DTSS\_CONSTANT
 
- 
+ 
 
- 
+ 
 
 
 

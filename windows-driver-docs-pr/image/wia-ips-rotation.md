@@ -11,11 +11,7 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -71,7 +67,7 @@ The following table describes the rotation constants that are defined for WIA\_I
 </tbody>
 </table>
 
- 
+ 
 
 The WIA minidriver is responsible for rotating image data before sending it back to the application. The application is responsible for checking the image headers to see the newly rotated values.
 
@@ -99,7 +95,7 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**WIA\_IPS\_ORIENTATION**](wia-ips-orientation.md)
@@ -112,9 +108,9 @@ Requirements
 
 [**WIA\_IPS\_YPOS**](wia-ips-ypos.md)
 
- 
+ 
 
- 
+ 
 
 
 

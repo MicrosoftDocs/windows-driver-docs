@@ -8,11 +8,7 @@ keywords:
 - write cursor offsets WDK audio
 - play cursor offsets WDK audio
 - offsets WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -44,9 +40,9 @@ To remain compatible with certain older DirectSound applications, DirectSound cu
 
 For additional information about managing write cursors and play cursors at the driver level, see [Audio Position Property](audio-position-property.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,6 +3,7 @@ title: RemoveConnectionFromSession
 description: RemoveConnectionFromSession
 ms.assetid: ae23713a-c75d-4669-a643-44e95dbb713c
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # RemoveConnectionFromSession
@@ -18,9 +19,9 @@ The **RemoveConnectionFromSession** method will not remove the last connection f
 
 Miniport drivers that implement the MSiSCSI\_Operations WMI class must support this method.
 
- 
+ 
 
- 
+ 
 
 
 

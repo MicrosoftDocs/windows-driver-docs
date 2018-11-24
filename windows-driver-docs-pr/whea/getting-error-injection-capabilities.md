@@ -1,6 +1,5 @@
 ---
 title: Getting Error Injection Capabilities
-author: windows-driver-content
 description: Getting Error Injection Capabilities
 ms.assetid: d4ff0d9c-bb17-4dff-8008-bf8d59e44621
 keywords:
@@ -10,11 +9,7 @@ keywords:
 - WHEA WDK , error injection
 - Windows Hardware Error Architecture WDK , error injection
 - injecting hardware errors WDK WHEA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +20,7 @@ A user-mode application can get information about the error injection capabiliti
 
 The following code example shows how to retrieve the error injection capabilities information.
 
-```
+```cpp
 IWbemServices *pIWbemServices;
 BSTR ClassName;
 BSTR MethodName;
@@ -91,9 +86,9 @@ SysFreeString(MethodName);
 pOutParameters->Release();
 ```
 
- 
+ 
 
- 
+ 
 
 
 

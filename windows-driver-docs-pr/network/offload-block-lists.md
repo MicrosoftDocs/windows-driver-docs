@@ -6,11 +6,7 @@ keywords:
 - offload state WDK TCP chimney offload , block lists
 - block lists WDK TCP chimney offload
 - NDIS_MINIPORT_OFFLOAD_BLOCK_LIST
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,9 +32,9 @@ Before completing an offload, query, invalidate, update, or terminate operation 
 
 The host stack and offload target also use the **MiniportOffloadContext** and **NdisOffloadHandle** members to reference an offloaded state object. For more information about an offload target uses the **MiniportOffloadContext** and **NdisOffloadHandle** members, see [Storing and Referencing Offloaded State](storing-and-referencing-offloaded-state.md).
 
- 
+ 
 
- 
+ 
 
 
 

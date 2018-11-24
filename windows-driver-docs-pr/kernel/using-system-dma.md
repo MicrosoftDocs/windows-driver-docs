@@ -1,14 +1,9 @@
 ---
 title: Using System DMA
-author: windows-driver-content
 description: Using System DMA
 ms.assetid: 8d478365-a6c8-4488-9f75-53a822d1daa2
 keywords: ["AdapterControl routines, system DMA", "system DMA WDK kernel", "adapter objects WDK kernel , system DMA", "DMA transfers WDK kernel , system DMA", "slave devices WDK DMA", "system DMA WDK kernel , about system DMA"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +21,9 @@ Drivers of subordinate DMA devices use one of the following types of system-prov
 
 In addition, any driver that uses packet-based DMA can use support routines intended to streamline scatter/gather DMA, regardless of whether its device has built-in scatter/gather support. See [Using Scatter/Gather DMA](using-scatter-gather-dma.md) for details.
 
- 
+ 
 
- 
+ 
 
 
 

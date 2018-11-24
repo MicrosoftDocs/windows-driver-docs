@@ -2,11 +2,7 @@
 title: MB union function descriptors
 description: This section describes union function descriptors and MBIM backwards-compatible functions for MB devices
 ms.assetid: 4B8C63DD-4B8D-40AB-A6DF-0466343E7E45
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -49,9 +45,9 @@ The device reports any compatible ID that it has for its function. USBCCGP then 
 
 MBIM functions that are backward compatible with the NCM 1.0 specification will come up as NCM 1.0 functions by default. Mobile broadband devices that consist of an MBIM backward-compatible function should report a Microsoft OS compatible ID of "MBIM" for the MBIM function. This allows Windows 8 to detect the NCM 1.0 function as the MBIM function and load MBCD as the function driver.
 
- 
+ 
 
- 
+ 
 
 
 

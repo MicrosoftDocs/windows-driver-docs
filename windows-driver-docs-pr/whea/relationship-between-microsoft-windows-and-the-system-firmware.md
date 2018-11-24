@@ -1,6 +1,5 @@
 ---
 title: Relationship between Microsoft Windows and the System Firmware
-author: windows-driver-content
 description: Relationship between Microsoft Windows and the System Firmware
 ms.assetid: 83a43e49-cb06-4007-88d0-88f024c22825
 keywords:
@@ -9,11 +8,7 @@ keywords:
 - hardware errors WDK WHEA , Windows and firmware
 - errors WDK WHEA , Windows and firmware
 - firmware WDK WHEA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,9 +19,9 @@ Both the Microsoft Windows operating system and the system firmware play importa
 
 The operating system should own as much of the hardware error resources as is practical. However, the system firmware must continue to manage some of these resources due to the lack of hardware error resource standardization. As more hardware error reporting standards are defined and adopted, Microsoft believes that more of the hardware error handling mechanisms can be put under operating system control.
 
- 
+ 
 
- 
+ 
 
 
 

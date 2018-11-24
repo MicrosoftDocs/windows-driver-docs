@@ -5,11 +5,7 @@ ms.assetid: d8c093fa-da5c-497c-9eb8-4f689eb96cbf
 keywords:
 - command buffers WDK Direct3D
 - buffers WDK Direct3D
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -55,15 +51,15 @@ For information about how to initialize the **D3dParseUnknownCommand** callback,
 
 To simplify implementation of **D3dDrawPrimitives2**, driver writers can copy the parsing code from the *Perm3* sample code and write driver-specific rendering and state update code only.
 
-**Note**   The Microsoft Windows Driver Kit (WDK) does not contain the 3Dlabs Permedia3 sample display driver (*Perm3.h*). You can get this sample driver from the Windows Server 2003 SP1 Driver Development Kit (DDK), which you can download from the [DDK - Windows Driver Development Kit](http://go.microsoft.com/fwlink/p/?linkid=21859) page of the WDHC website.
+**Note**   The Microsoft Windows Driver Kit (WDK) does not contain the 3Dlabs Permedia3 sample display driver (*Perm3.h*). You can get this sample driver from the Windows Server 2003 SP1 Driver Development Kit (DDK), which you can download from the DDK - Windows Driver Development Kit page of the WDHC website.
 
- 
+ 
 
 Direct3D is not always informed of the current render states. For example, execute buffers are not inspected by the runtime before they reach the driver. The driver can keep track of the render state array with the **lpdwRStates** member of the [**D3DHAL\_DRAWPRIMITIVES2DATA**](https://msdn.microsoft.com/library/windows/hardware/ff545957) structure. This is a pointer to the internal render states array that the driver keeps up to date as state changes occur.
 
- 
+ 
 
- 
+ 
 
 
 

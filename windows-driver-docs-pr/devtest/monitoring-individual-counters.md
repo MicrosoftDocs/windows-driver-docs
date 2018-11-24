@@ -7,11 +7,7 @@ keywords:
 - Driver Verifier WDK , counters
 - statistics WDK Driver Verifier
 - counters WDK Driver Verifier
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -61,9 +57,9 @@ The greatest number of bytes allocated at any single time since the last boot to
 
 Allocations whose size is one page or larger are not tracked by Pool Tracking and cannot be allocated from the special pool. These individual counters do not reflect these large allocations. A count of all such allocations can be seen in the [global counters](monitoring-global-counters.md).
 
- 
+ 
 
- 
+ 
 
 
 

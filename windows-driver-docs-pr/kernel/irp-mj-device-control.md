@@ -1,12 +1,7 @@
 ---
 title: IRP_MJ_DEVICE_CONTROL
-author: windows-driver-content
 description: Every driver whose device objects belong to a particular device type (see Specifying Device Types) is required to support this request in a DispatchDeviceControl routine, if a set of system-defined I/O control codes (IOCTLs) exists for the type.
-ms.author: windowsdriverdev
 ms.date: 08/12/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.assetid: c6436b34-22bd-4e65-bfb0-b2c4d9962e29
 keywords:
  - IRP_MJ_DEVICE_CONTROL Kernel-Mode Driver Architecture
@@ -16,7 +11,7 @@ ms.localizationpriority: medium
 # IRP\_MJ\_DEVICE\_CONTROL
 
 
-Every driver whose device objects belong to a particular device type (see [Specifying Device Types](https://msdn.microsoft.com/library/windows/hardware/ff563821)) is required to support this request in a [*DispatchDeviceControl*](https://msdn.microsoft.com/library/windows/hardware/ff543287) routine, if a set of system-defined I/O control codes ([*IOCTLs*](https://msdn.microsoft.com/library/windows/hardware/ff556290#wdkgloss-ioctl)) exists for the type.
+Every driver whose device objects belong to a particular device type (see [Specifying Device Types](https://msdn.microsoft.com/library/windows/hardware/ff563821)) is required to support this request in a [*DispatchDeviceControl*](https://msdn.microsoft.com/library/windows/hardware/ff543287) routine, if a set of system-defined I/O control codes (IOCTLs) exists for the type. For more info about IOCTLs, see [Introduction to I/O Control Codes](introduction-to-i-o-control-codes.md).
 
 Higher-level drivers usually pass these requests on to an underlying device driver. Each device driver in a driver stack is assumed to support this request, along with a set of device type-specific, public or private IOCTLs. For more information about IOCTLs for specific device types, see device type-specific documentation in the Microsoft Windows Driver Kit (WDK).
 
@@ -69,9 +64,9 @@ Requirements
 
 [*DispatchDeviceControl*](https://msdn.microsoft.com/library/windows/hardware/ff543287)
 
- 
+ 
 
- 
+ 
 
 
 

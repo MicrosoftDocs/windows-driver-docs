@@ -4,11 +4,7 @@ description: FVF Update
 ms.assetid: 2bbcb1fd-b29f-41f4-93eb-5bd1cde9cb20
 keywords:
 - FVF WDK Direct3D
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,12 +32,12 @@ The texture coordinate count is a 4-bitfield that can range from zero through ei
 <tr class="header">
 <th align="left">Bit
 <div>
- 
+ 
 </div>
 Pattern</th>
 <th align="left">Decimal
 <div>
- 
+ 
 </div>
 Value</th>
 <th align="left">Meaning</th>
@@ -71,7 +67,7 @@ Value</th>
 </tbody>
 </table>
 
- 
+ 
 
 3D texture coordinate sets can be used for any of three different purposes: projected textures (signaled by D3DTTFF\_PROJECTED - see D3DTEXTURETRANSFORMFLAGS in the DirectX SDK documentation), volume textures, or cube map vector textures, as determined by a set of render states analogous to the D3DRENDERSTATE\_WRAP0 to D3DRENDERSTATE\_WRAP7 modes that are already specified on a texture coordinate set basis.
 
@@ -108,13 +104,13 @@ The flags used with the D3DRENDERSTATE\_WRAP*n* render states for 1D through 4D 
 </tbody>
 </table>
 
- 
+ 
 
 When projected textures are in use, they take the RHW value from the corresponding texture coordinate field, instead of from the position field. However, the position field's RHW is still used for both w-buffering and fog calculations, and therefore must be provided when either of these is in use.
 
- 
+ 
 
- 
+ 
 
 
 

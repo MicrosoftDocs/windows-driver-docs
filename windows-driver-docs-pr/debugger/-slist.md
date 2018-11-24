@@ -3,11 +3,7 @@ title: slist
 description: The slist extension displays a singly-linked list (SList).
 ms.assetid: 2ce6e941-eaa7-4850-9dd9-f4546659dbca
 keywords: ["SList (singly-linked list)", "slist Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!slist** extension displays a singly-linked list (SList).
 
-```
+```dbgcmd
 !slist Address [ Symbol [Offset] ] 
 !slist -?
 ```
@@ -61,14 +57,14 @@ Displays some brief Help text for this extension in the Debugger Command window.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
 
 If you know the nature of the linked structures, the *Symbol* and *Offset* parameters are very useful. To see the difference, here are two examples; the first omits the *Symbol* and *Offset* parameters, while the second includes them.
 
-```
+```dbgcmd
 0:000> !slist ListHead
 SLIST HEADER:
    +0x000 Alignment          : a000a002643e8
@@ -89,7 +85,7 @@ SLIST CONTENTS:
 00260f80  00000000 00000001 6e676953 72757461
 ```
 
-```
+```dbgcmd
 0:000> !slist ListHead _PROGRAM_ITEM 0
 SLIST HEADER:
  +0x000 Alignment          : a000a002643e8
@@ -140,9 +136,9 @@ SLIST CONTENTS:
    +0x008 Description      : [260]  "Signature is: 1"
 ```
 
- 
+ 
 
- 
+ 
 
 
 

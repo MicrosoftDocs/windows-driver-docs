@@ -1,6 +1,5 @@
 ---
 title: Customizing Print Web Pages
-author: windows-driver-content
 description: Customizing Print Web Pages
 ms.assetid: 7592e530-9f87-4d4e-a8aa-d2125014971a
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - print Web pages WDK , customizing
 - Web pages WDK printer , customizing
 - customized print Web pages WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +25,9 @@ This section provides the following topics:
 
 [Installing Customized Print Web Pages](installing-customized-print-web-pages.md)
 
- 
+ 
 
- 
+ 
 
 
 

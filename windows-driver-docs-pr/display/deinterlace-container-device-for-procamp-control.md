@@ -6,11 +6,7 @@ keywords:
 - container device WDK DirectX VA
 - deinterlacing WDK DirectX VA , ProcAmp control
 - ProcAmp WDK DirectX VA , deinterlace container device
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,11 +22,11 @@ The [deinterlace container device for deinterlacing](deinterlace-container-devic
 
 **Note**   The deinterlace container device is a software construct only and does not represent any functional hardware contained on a device.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: Performance degradation and DoS attacks in NDIS drivers
 description: Performance Degradation and Denial of Service Attacks in NDIS Drivers
 ms.assetid: 0e80c6e2-3e6d-4189-b2df-bdd9a4a40dd6
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,9 +15,9 @@ If an NDIS driver interrupt handler parses received packets, the interrupt handl
 
 Even if you are careful in how your driver handles received packets, the driver would perform receive operations at dispatch IRQL. Instead, you should let the driver stack handle the received packets. In this case, the overlying driver stack might copy the packet and operate on it later at passive IRQL.
 
- 
+ 
 
- 
+ 
 
 
 

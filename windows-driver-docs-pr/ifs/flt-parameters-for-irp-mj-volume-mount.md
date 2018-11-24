@@ -1,5 +1,5 @@
 ---
-title: FLT\_PARAMETERS for IRP\_MJ\_VOLUME\_MOUNT union
+title: FLT_PARAMETERS for IRP_MJ_VOLUME_MOUNT union
 description: The following union component is used when the MajorFunction field of the FLT\_IO\_PARAMETER\_BLOCK structure for the operation is IRP\_MJ\_VOLUME\_MOUNT.
 ms.assetid: 3fcc20da-b985-4d08-a0f7-9d95ddfb79d8
 keywords: ["FLT_PARAMETERS for IRP_MJ_VOLUME_MOUNT union Installable File System Drivers", "FLT_PARAMETERS union Installable File System Drivers", "PFLT_PARAMETERS union pointer Installable File System Drivers"]
@@ -11,11 +11,7 @@ api_location:
 - fltkernel.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -92,9 +88,9 @@ Requirements
 
 [**IRP\_MJ\_FILE\_SYSTEM\_CONTROL**](irp-mj-file-system-control.md)
 
- 
+ 
 
- 
+ 
 
 
 

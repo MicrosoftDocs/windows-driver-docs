@@ -1,13 +1,8 @@
 ---
 title: SO_KEEPALIVE
-author: windows-driver-content
 description: SO_KEEPALIVE
 ms.assetid: 47b29218-f227-4d36-b206-d8bf009252c0
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -SO_KEEPALIVE Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -71,11 +66,7 @@ To set the state of this socket option, a WSK application calls the [**WskContro
 </tbody>
 </table>
 
- 
 
-```
-
-```
 
 To retrieve the state of this socket option, a WSK application calls the **WskControlSocket** function with the following parameters.
 
@@ -130,11 +121,6 @@ To retrieve the state of this socket option, a WSK application calls the **WskCo
 </tbody>
 </table>
 
- 
-
-```
-
-```
 
 A WSK application must specify a pointer to an IRP when calling the **WskControlSocket** function to set or retrieve the state of the SO\_KEEPALIVE socket option.
 
@@ -166,9 +152,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

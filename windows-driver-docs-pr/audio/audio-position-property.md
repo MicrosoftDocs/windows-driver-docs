@@ -16,11 +16,7 @@ keywords:
 - position properties WDK audio
 - capture stream position WDK audio
 - port drivers WDK audio , position properties
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -87,9 +83,9 @@ The play or record position is zero immediately following initialization of the 
 
 For example implementations of **GetPosition** methods for WaveCyclic and WavePci miniport drivers, see the sample audio drivers in the Windows Driver Kit (WDK).
 
- 
+ 
 
- 
+ 
 
 
 

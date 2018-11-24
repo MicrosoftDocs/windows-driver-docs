@@ -2,11 +2,7 @@
 title: Instance ID
 description: An instance ID is a device identification string that distinguishes a device from other devices of the same type on a computer.
 ms.assetid: 093063a6-1855-4e36-9465-1eedaa3cd0f9
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +26,9 @@ An instance ID is persistent across system restarts.
 
 To obtain the bus-supplied instance ID for a device, use an [**IRP_MN_QUERY_ID**](https://msdn.microsoft.com/library/windows/hardware/ff551679) request and set the **Parameters.QueryId.IdType** member to **BusQueryInstanceID**.
 
- 
+ 
 
- 
+ 
 
 
 

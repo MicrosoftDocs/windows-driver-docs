@@ -9,11 +9,7 @@ api_name:
 - wscn ClearTime
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **ClearTime** element specifies the time at which a condition was c
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ClearTime>
   text
 </wscn:ClearTime>
@@ -60,7 +56,7 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ConditionHistoryEntry</strong>](conditionhistoryentry.md)</p></td>
+<td><p><a href="conditionhistoryentry.md" data-raw-source="[&lt;strong&gt;ConditionHistoryEntry&lt;/strong&gt;](conditionhistoryentry.md)"><strong>ConditionHistoryEntry</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -70,14 +66,14 @@ Remarks
 
 The specified time is according to the internal clock of the scanner.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ConditionHistoryEntry**](conditionhistoryentry.md)
 
- 
+ 
 
- 
+ 
 
 
 

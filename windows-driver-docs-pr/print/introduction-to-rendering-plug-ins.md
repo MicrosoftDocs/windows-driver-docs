@@ -1,15 +1,10 @@
 ---
 title: Introduction to Rendering Plug-Ins
-author: windows-driver-content
 description: Introduction to Rendering Plug-Ins
 ms.assetid: 7e6756ca-822a-4386-bcbd-363a10b1b2a3
 keywords:
 - rendering plug-ins WDK print , about rendering plug-ins
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,11 +26,11 @@ It supports following two types of customization:
 
 **Note**   Rendering plug-ins should never spawn a window directly. For Windows Vista and later, you can provide asynchronous event notification messages to a client computer by using the Asynchronous User Notification XML schema, asyncui.xsd. For more information, see [Asynchronous User Notification Schema](https://msdn.microsoft.com/library/windows/hardware/ff545066)..
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

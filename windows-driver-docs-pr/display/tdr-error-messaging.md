@@ -2,11 +2,7 @@
 title: TDR Error Messaging
 description: TDR Error Messaging
 ms.assetid: 0a29c701-2257-478d-bf2d-ca4a7edecfd0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,9 +15,9 @@ Throughout the TDR process (that is, the process of detecting and recovering fro
 
 The operating system also logs the preceding message in the Event Viewer application and collects diagnosis information in the form of a debug report. If the end user opted in to provide feedback, the operating system returns this debug report to Microsoft through the Online Crash Analysis (OCA) mechanism.
 
- 
+ 
 
- 
+ 
 
 
 

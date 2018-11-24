@@ -1,16 +1,11 @@
 ---
 title: Functions Defined by Print Monitors
-author: windows-driver-content
 description: Functions Defined by Print Monitors
 ms.assetid: 718682a5-4f64-47f3-9b92-88f89c1f7516
 keywords:
 - functions WDK print
 - print monitors WDK , functions
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +23,9 @@ The following sections list the functions that must be defined within print moni
 
 [Port Monitor Server DLL Functions](port-monitor-server-dll-functions.md)
 
- 
+ 
 
- 
+ 
 
 
 

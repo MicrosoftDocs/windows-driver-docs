@@ -1,5 +1,5 @@
 ---
-title: FSCTL\_LMR\_GET\_LINK\_TRACKING\_INFORMATION control code
+title: FSCTL_LMR_GET_LINK_TRACKING_INFORMATION control code
 description: The FSCTL\_LMR\_GET\_LINK\_TRACKING\_INFORMATION control code retrieves the link tracking information for a file.
 ms.assetid: 8ddb8aca-4998-47ed-b8c9-39219e342c2c
 keywords: ["FSCTL_LMR_GET_LINK_TRACKING_INFORMATION control code Installable File System Drivers"]
@@ -11,11 +11,7 @@ api_location:
 - Ntifs.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -83,9 +79,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

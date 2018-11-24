@@ -1,6 +1,5 @@
 ---
 title: Participating in Error Source Discovery
-author: windows-driver-content
 description: Participating in Error Source Discovery
 ms.assetid: 349c8f06-be79-4a40-8b9f-cbefc563f6de
 keywords:
@@ -11,11 +10,7 @@ keywords:
 - platform-specific hardware error driver plug-ins WDK WHEA , error source discovery
 - PSHED plug-ins WDK WHEA , error source discovery
 - error source discovery WDK WHEA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,7 +21,7 @@ To participate in error source discovery, a PSHED plug-in must implement a [*Get
 
 The following code example shows how to implement these callback functions.
 
-```
+```cpp
 //
 // The PSHED plug-in&#39;s GetAllErrorSources callback function
 //
@@ -105,9 +100,9 @@ NTSTATUS
 
 A PSHED plug-in that participates in error source discovery must specify the **PshedFADiscovery** flag when it [registers](registering-a-pshed-plug-in.md) itself with the operating system.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: GPU virtual address
 description: graphics processing unit (GPU) virtual addresses are managed in logical 4KB or 64 KB pages at the device driver interface (DDI) level.
 ms.assetid: 65BD05FC-06FD-4DC2-977A-7F48E72B4858
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -80,9 +76,9 @@ Expanding all allocations to 64KB can have a significant memory impact. It is th
 
 When mapping a GPU virtual address to a large 64KB memory segment page, the video memory manager will map 4KB page table entries to 16 contiguous 4KB pages in the memory segment. Both the virtual address and the physical address are guaranteed to share the same 64KB alignment (i.e. the bottom 16bits of the virtual address and the physical address are guaranteed to match.).
 
- 
+ 
 
- 
+ 
 
 
 

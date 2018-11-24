@@ -5,11 +5,7 @@ ms.assetid: f89a2f9b-6e84-4696-80c3-79b8760c9b4a
 keywords:
 - warnings listed WDK PREfast for Drivers
 - errors listed WDK PREfast for Drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,7 +27,7 @@ warning C28144: Within a cancel routine, at the point of exit, the IRQL in Irp-&
 </tbody>
 </table>
 
- 
+ 
 
 When the driver's [**Cancel**](https://msdn.microsoft.com/library/windows/hardware/ff540742) routine exits, the value of the **Irp-&gt;CancelIrql** member is not the current IRQL. Typically, this error occurs when the driver does not call [**IoReleaseCancelSpinLock**](https://msdn.microsoft.com/library/windows/hardware/ff549550) with the IRQL that was supplied by the most recent call to [**IoAcquireCancelSpinLock**](https://msdn.microsoft.com/library/windows/hardware/ff548196).
 
@@ -51,9 +47,9 @@ The following code example avoids this warning.
 IoReleaseCancelSpinLock(Irp->CancelIrql);
 ```
 
- 
+ 
 
- 
+ 
 
 
 

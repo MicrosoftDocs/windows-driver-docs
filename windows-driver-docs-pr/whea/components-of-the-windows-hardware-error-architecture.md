@@ -1,6 +1,5 @@
 ---
 title: Components of the Windows Hardware Error Architecture
-author: windows-driver-content
 description: Components of the Windows Hardware Error Architecture
 ms.assetid: d038f2ce-7012-4b8d-bf2b-a722548a32ca
 keywords:
@@ -13,11 +12,7 @@ keywords:
 - LLHEHs WDK WHEA
 - platform-specific hardware error drivers WDK WHEA
 - PSHED WDK WHEA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -58,9 +53,9 @@ Windows also provides a hardware error management API so that user-mode error ma
 
 For more information about how to implement a WHEA management application, see [WHEA Management Applications](whea-management-applications.md).
 
- 
+ 
 
- 
+ 
 
 
 

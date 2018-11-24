@@ -3,6 +3,7 @@ title: MSiSCSI\_RADIUSConfig WMI Class
 description: MSiSCSI\_RADIUSConfig WMI Class
 ms.assetid: e0fd1fea-3d8c-4d25-a9fd-0e115ecb8163
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MSiSCSI\_RADIUSConfig WMI Class
@@ -23,7 +24,7 @@ Because the MSiSCSI\_RADIUSConfig WMI class is associated with a particular inst
 
 The MSiSCSI\_RADIUSConfig class is defined in *Config.mof*.
 
-```
+```cpp
 class MSiSCSI_RADIUSConfig {
   [key] string  InstanceName;
   boolean  Active;
@@ -49,9 +50,9 @@ class MSiSCSI_RADIUSConfig {
 
 When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_RADIUSConfig**](https://msdn.microsoft.com/library/windows/hardware/ff563112) data structure.
 
- 
+ 
 
- 
+ 
 
 
 

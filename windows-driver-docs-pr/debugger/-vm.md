@@ -3,11 +3,7 @@ title: vm
 description: The vm extension displays summary information about virtual memory use statistics on the target system.
 ms.assetid: 25e4f80c-d4ca-407c-991d-e8ee5dfbb309
 keywords: ["vm Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!vm** extension displays summary information about virtual memory use statistics on the target system.
 
-```
+```dbgcmd
 !vm [Flags]
 ```
 
@@ -56,7 +52,7 @@ Causes the display to include memory management thread stacks.
 |-------|------------------|
 | Modes | kernel mode only |
 
- 
+ 
 
 ### <span id="DLL"></span><span id="dll"></span>DLL
 
@@ -77,7 +73,7 @@ Causes the display to include memory management thread stacks.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -88,7 +84,7 @@ Remarks
 
 Here is an example of the short output produced when *Flags* is 1:
 
-```
+```dbgcmd
 kd> !vm 1
 
 *** Virtual Memory Usage ***
@@ -148,11 +144,11 @@ All memory use is listed in pages and in kilobytes. The most useful information 
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

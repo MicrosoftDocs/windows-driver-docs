@@ -3,11 +3,7 @@ title: pfn
 description: The pfn extension displays information about a specific page frame or the entire page frame database.
 ms.assetid: cbdb1f04-30bc-4e12-b073-9882e4457e1a
 keywords: ["page frame", "pfn Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!pfn** extension displays information about a specific page frame or the entire page frame database.
 
-```
+```dbgcmd
 !pfn PageFrame
 ```
 
@@ -51,7 +47,7 @@ Specifies the hexadecimal number of the page frame to be displayed.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -64,7 +60,7 @@ The page frame number for a virtual address can be obtained by using the [**!pte
 
 Here is an example of the output from this extension:
 
-```
+```dbgcmd
 kd> !pte 801544f4
 801544F4  - PDE at C0300800        PTE at C0200550
           contains 0003B163      contains 00154121
@@ -85,9 +81,9 @@ kd> !pfn 154
     Modified          
 ```
 
- 
+ 
 
- 
+ 
 
 
 

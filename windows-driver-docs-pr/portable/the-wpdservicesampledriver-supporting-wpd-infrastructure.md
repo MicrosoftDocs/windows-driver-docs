@@ -1,11 +1,7 @@
 ---
 Description: Support for WPD infrastructure (WpdServiceSampleDriverSample)
 title: Support for WPD infrastructure (WpdServiceSampleDriverSample)
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,7 +20,7 @@ The WPD\_COMMAND\_SERVICE\_METHODS\_START\_INVOKE command is first handled in th
 
 The following excerpt from the **WpdService::DispatchWpdMessage** method in *WpdService.cpp* shows the call to the **WpdServiceMethod::OnStartInvoke** handler. The **DispatchWpdMessage** method passes the command parameters to the handler. These command parameters consist of a pointer to the parameters for the **Invoke** method as well as a pointer to the *pResults* variable that receives the method results:
 
-```
+```cpp
 HRESULT WpdService::DispatchWpdMessage(
             REFPROPERTYKEY         Command,
     __in    IPortableDeviceValues* pParams,
@@ -67,9 +63,9 @@ HRESULT WpdService::DispatchWpdMessage(
 
 [The WPD Driver Samples](the-wpd-driver-samples.md)
 
- 
+ 
 
- 
+ 
 
 
 

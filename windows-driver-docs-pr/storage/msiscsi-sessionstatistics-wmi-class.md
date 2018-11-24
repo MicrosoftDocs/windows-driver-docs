@@ -3,6 +3,7 @@ title: MSiSCSI\_SessionStatistics WMI Class
 description: MSiSCSI\_SessionStatistics WMI Class
 ms.assetid: fc9afa1b-dad3-4f3d-9fe2-e37d402f7bef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MSiSCSI\_SessionStatistics WMI Class
@@ -15,7 +16,7 @@ The MSiSCSI\_SessionStatistics WMI class exposes session statistics.
 
 The MSiSCSI\_SessionStatistics class is defined in Iscsiprf.mof.
 
-```
+```cpp
 class MSiSCSI_SessionStatistics : Win32_PerfRawData {
   [read,key] String  InstanceName;
   [read] boolean Active;
@@ -96,15 +97,15 @@ When the WMI tool suite compiles the preceding class definition, it produces the
 
 Initiators must register the MSiSCSI\_SessionStatistics class with the following dynamic instance name for the session:
 
-```
+```cpp
 targetname_#
 ```
 
 The number sign (\#) is the value in the **USID** member of this class.
 
- 
+ 
 
- 
+ 
 
 
 

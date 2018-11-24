@@ -6,11 +6,7 @@ keywords:
 - client registration WDK CoNDIS
 - registering entry points
 - entry points WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +24,9 @@ To specify entry points for a CoNDIS client, a protocol driver initializes an [*
 
 For more information about configuring optional protocol driver services, see [Configuring Optional Protocol Driver Services](configuring-optional-protocol-driver-services.md).
 
- 
+ 
 
- 
+ 
 
 
 

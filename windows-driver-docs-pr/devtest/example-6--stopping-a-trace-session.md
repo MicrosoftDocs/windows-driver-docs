@@ -5,11 +5,7 @@ ms.assetid: a8520531-bebb-4334-9dc3-d50f4a851e7e
 keywords:
 - trace sessions WDK , stopping
 - stopping trace sessions
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -49,9 +45,9 @@ Log Filename:           C:\Tracing\MyTrace.etl
 
 To verify that the trace session is stopped, use a list (**tracelog -l**) or query (**tracelog -q**) command.
 
- 
+ 
 
- 
+ 
 
 
 

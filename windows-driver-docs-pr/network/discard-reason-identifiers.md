@@ -1,15 +1,10 @@
 ---
 title: Discard reason identifiers
-author: windows-driver-content
 description: This section describes Discard reason identifiers for Windows Filtering Platform callout drivers.
 ms.assetid: 8364b189-36c5-40dd-8653-d57f393680b9
 keywords:
 - Discard reason identifiers network drivers
-ms.author: windowsdriverdev
 ms.date: 11/09/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

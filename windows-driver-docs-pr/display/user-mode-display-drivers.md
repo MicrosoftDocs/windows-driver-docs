@@ -8,11 +8,7 @@ keywords:
 - user-mode display drivers WDK Windows Vista , about user-mode display drivers
 - user-mode display drivers WDK Windows Vista
 - Direct3D WDK display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -58,9 +54,9 @@ Graphics hardware vendors must write user-mode display drivers for their display
 
 [Managing Resources for Multiple GPU Scenarios](managing-resources-for-multiple-gpu-scenarios.md)
 
- 
+ 
 
- 
+ 
 
 
 

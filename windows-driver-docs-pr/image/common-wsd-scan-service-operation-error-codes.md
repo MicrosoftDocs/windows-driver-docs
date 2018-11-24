@@ -9,11 +9,7 @@ api_name:
 - Common WSD Scan Service Operation Error Codes
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -57,7 +53,7 @@ This topic lists error codes that are common to all WSD Scan Service operations.
     </tbody>
     </table>
 
-     
+     
 
 -   **InvalidArgs**
 
@@ -99,7 +95,7 @@ This topic lists error codes that are common to all WSD Scan Service operations.
     </tbody>
     </table>
 
-     
+     
 
 -   **OperationFailed**
 
@@ -136,7 +132,7 @@ This topic lists error codes that are common to all WSD Scan Service operations.
     </tbody>
     </table>
 
-     
+     
 
 -   **ServerErrorTemporaryError**
 
@@ -173,7 +169,7 @@ This topic lists error codes that are common to all WSD Scan Service operations.
     </tbody>
     </table>
 
-     
+     
 
 -   **ServerErrorInternalError**
 
@@ -210,11 +206,11 @@ This topic lists error codes that are common to all WSD Scan Service operations.
     </tbody>
     </table>
 
-     
+     
 
- 
+ 
 
- 
+ 
 
 
 

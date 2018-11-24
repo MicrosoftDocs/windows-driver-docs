@@ -7,11 +7,7 @@ keywords:
 - texture transforms WDK Direct3D
 - transforms WDK Direct3D
 - lighting WDK Direct3D
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -66,7 +62,7 @@ Other flags are listed in the following table:
 </tbody>
 </table>
 
- 
+ 
 
 Because the feature sets of hardware geometry accelerators may differ (such as the number of light sources supported), the caps structures indicate which subset of geometry operations this device performs. Zero is a valid value for the number of light sources supported, indicating that the hardware does transformations only.
 
@@ -76,7 +72,7 @@ All the key state and data structures used by the software implementation of the
 
 The following render state types pertain only to devices that accelerate transform and lighting:
 
-```
+```cpp
 D3DRENDERSTATE_AMBIENT
 D3DRENDERSTATE_AMBIENTMATERIALSOURCE
 D3DRENDERSTATE_CLIPPING
@@ -93,9 +89,9 @@ D3DRENDERSTATE_SPECULARMATERIALSOURCE
 D3DRENDERSTATE_VERTEXBLEND
 ```
 
- 
+ 
 
- 
+ 
 
 
 

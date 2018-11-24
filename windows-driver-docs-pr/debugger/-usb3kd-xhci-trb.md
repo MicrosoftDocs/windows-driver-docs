@@ -3,11 +3,7 @@ title: usb3kd.xhci_trb
 description: The usb3kd.xhci_trb extension displays one or more transfer request blocks (TRBs) used by a USB 3.0 host controller
 ms.assetid: 6EC90908-320E-4908-BE53-1AD01A81B140
 keywords: ["usb3kd.xhci_trb Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The [**!usb3kd.xhci\_trb**](-usb3kd-device-info.md) extension displays one or more transfer request blocks (TRBs) used by a USB 3.0 host controller
 
-```
+```dbgcmd
 !usb3kd.xhci_trb VirtualAddress Count
 !usb3kd.xhci_trb PhysicalAddress Count 1
 ```
@@ -50,14 +46,14 @@ Usb3kd.dll
 Remarks
 -------
 
-The output the [**!xhci\_trb**](-usb3kd-device-info.md) command is based on the data structures maintained by the USB 3.0 host controller driver (UsbXhci.sys). For more information about the USB 3.0 host controller driver and other drivers in the USB stack, see [USB Driver Stack Architecture](http://go.microsoft.com/fwlink/p?LinkID=251983).
+The output the [**!xhci\_trb**](-usb3kd-device-info.md) command is based on the data structures maintained by the USB 3.0 host controller driver (UsbXhci.sys). For more information about the USB 3.0 host controller driver and other drivers in the USB stack, see [USB Driver Stack Architecture](https://go.microsoft.com/fwlink/p?LinkID=251983).
 
 Examples
 --------
 
 In the following example, **0x844d7c00** is the virtual address of a TRB. The **1** is the count, which specifies how many consecutive TRBs to display.
 
-```
+```dbgcmd
 0: kd> !xhci_trb 0x844d7c00 1
 
         [  0] ISOCH        0x844d7c00 CycleBit 1 IOC 0 CH 1 BEI 0 InterrupterTarget 1 TransferLength  2688 TDSize  0 TBC 0 TLBPC 2 Frame 0x3D2
@@ -65,7 +61,7 @@ In the following example, **0x844d7c00** is the virtual address of a TRB. The **
 
 In the following example, **0x0dced7c00** is the physical address of a TRB. The **4** is the count, which specifies how many consecutive TRBs to display. The **1** specifies that the address is a physical address.
 
-```
+```dbgcmd
 0: kd> !xhci_trb 0x0dced7c00 4 1
 
         [  0] ISOCH        0xdced7c00 CycleBit 1 IOC 0 CH 1 BEI 0 InterrupterTarget 1 TransferLength  2688 TDSize  0 TBC 0 TLBPC 2 Frame 0x3D2
@@ -81,11 +77,11 @@ In the following example, **0x0dced7c00** is the physical address of a TRB. The 
 
 [**!xhci\_dumpall**](-usb3kd-xhci-dumpall.md)
 
-[Universal Serial Bus (USB) Drivers](http://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
- 
+ 
 
- 
+ 
 
 
 

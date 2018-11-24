@@ -2,11 +2,7 @@
 title: Communication model, synchronization, and abort
 description: This section describes the WDI communication model, synchronization, and abort
 ms.assetid: 575D1314-8726-49C1-AE6C-C171FE1CD2AD
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -66,9 +62,9 @@ Properties are expected to complete in short time so they cannot be aborted.
 
 Task commands have a unique identifier that allows the host to target a specific command for abort.
 
- 
+ 
 
- 
+ 
 
 
 

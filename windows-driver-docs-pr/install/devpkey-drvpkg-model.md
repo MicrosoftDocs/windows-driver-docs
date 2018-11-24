@@ -12,6 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # DEVPKEY_DrvPkg_Model
@@ -31,7 +32,7 @@ The DEVPKEY_DrvPkg_Model device [driver package](https://msdn.microsoft.com/libr
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Property-data-type identifier</strong></p></td>
-<td align="left"><p>[<strong>DEVPROP_TYPE_STRING</strong>](devprop-type-string.md)</p></td>
+<td align="left"><p><a href="devprop-type-string.md" data-raw-source="[&lt;strong&gt;DEVPROP_TYPE_STRING&lt;/strong&gt;](devprop-type-string.md)"><strong>DEVPROP_TYPE_STRING</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Property access</strong></p></td>
@@ -44,7 +45,7 @@ The DEVPKEY_DrvPkg_Model device [driver package](https://msdn.microsoft.com/libr
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -53,7 +54,7 @@ You can set the value of DEVPKEY_DrvPkg_Model by an [**INF AddProperty directive
 
 The following is an example of how to use an INF **AddProperty** directive to set the value of DEVPKEY_DrvPkg_Model for a device that is installed by an INF *DDInstall* section "SampleDDInstallSection":
 
-```
+```cpp
 [SampleDDinstallSection]
 ...
 AddProperty=SampleAddPropertySection
@@ -93,9 +94,9 @@ Requirements
 
 [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963)
 
- 
+ 
 
- 
+ 
 
 
 

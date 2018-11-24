@@ -9,11 +9,7 @@ keywords:
 - porting drivers WDK networking , about porting drivers
 - network driver porting WDK , about porting drivers
 - driver porting WDK networ
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -39,9 +35,9 @@ The following topics describe how to port miniport, protocol, and intermediate d
 
 [Porting Task Offload Services to NDIS 6.0](porting-task-offload-services-to-ndis-6-0.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,23 +2,19 @@
 title: Debugging a User-Mode Process Using Visual Studio
 description: In Microsoft Visual Studio, you can use the Windows User Mode Debugger to attach to a running process or to spawn and attach to a new process. 
 ms.assetid: C19D1B6F-B97B-4C1B-AD84-AC974C5F5C8C
-ms.author: domars
 ms.date: 05/11/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # <span id="debugger.debugging_a_user-mode_process_using_visual_studio"></span>Debugging a User-Mode Process Using Visual Studio
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > This feature is not available in Windows 10, version 1507 and later versions of the WDK.
 >
 
 In Microsoft Visual Studio, you can use the Windows User Mode Debugger to attach to a running process or to spawn and attach to a new process. The process can run on the same computer that is running the debugger, or it can run on a separate computer.
 
-The procedures shown in this topic require that you have the Windows Driver Kit integrated into Visual Studio. To get the integrated environment, first install Visual Studio, and then install the Windows Driver Kit (WDK). For more information, see [Windows Driver Kit (WDK)](http://go.microsoft.com/fwlink/p?linkid=391063).
+The procedures shown in this topic require that you have the Windows Driver Kit integrated into Visual Studio. To get the integrated environment, first install Visual Studio, and then install the Windows Driver Kit (WDK). For more information, see [Windows Driver Kit (WDK)](https://go.microsoft.com/fwlink/p?linkid=391063).
 
 ## <span id="Attaching_to_a_running_process_on_the_same_computer"></span><span id="attaching_to_a_running_process_on_the_same_computer"></span><span id="ATTACHING_TO_A_RUNNING_PROCESS_ON_THE_SAME_COMPUTER"></span>Attaching to a running process on the same computer
 
@@ -60,11 +56,11 @@ After you have provisioned a target computer, you can use Visual Studio on the h
 **Note**  
 If you are using separate host and target computers, do not install Visual Studio and the WDK on the target computer. Debugging is not supported if Visual Studio and the WDK are installed on the target computer.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

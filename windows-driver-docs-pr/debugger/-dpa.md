@@ -3,11 +3,7 @@ title: dpa
 description: The dpa extension displays pool allocation information.
 ms.assetid: 1eb31741-bc50-4188-823d-b6324d2dfdf1
 keywords: ["pool allocation", "dpa Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!dpa** extension displays pool allocation information.
 
-```
+```dbgcmd
 !dpa Options 
 !dpa -?
 ```
@@ -73,16 +69,16 @@ Displays some brief Help text for this extension in the Debugger Command window.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
 
 Pool instrumentation must be enabled in Win32k.sys in order for this extension to work.
 
- 
+ 
 
- 
+ 
 
 
 

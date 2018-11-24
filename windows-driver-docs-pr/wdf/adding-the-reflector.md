@@ -1,6 +1,5 @@
 ---
 title: Specifying the Reflector in an INF File
-author: windows-driver-content
 description: Specifying the Reflector in an INF File
 ms.assetid: 3676c99d-4e13-4385-910a-251232b00d4c
 keywords:
@@ -10,11 +9,7 @@ keywords:
 - function drivers WDK UMDF
 - filter drivers WDK UMDF
 - loading reflectors WDK UMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +20,7 @@ To add the reflector (WUDFRd.sys) to the kernel-mode device stack, the INF file 
 
 The following code example shows how the INF file for a UMDF function driver might add the reflector.
 
-```
+```cpp
 [Skeleton_Install.Services]
 AddService=WUDFRd,0x000001fa,WUDFRD_ServiceInstall
 ```
@@ -36,7 +31,7 @@ The **AddService** directive also sets the 0x000001f8 flags to prevent overwriti
 
 The following code example, taken from the WUDFVhidmini sample, shows an **AddService** directive for a UMDF filter driver.
 
-```
+```cpp
 [hidumdf.win8.NT.Services]
 AddService=WUDFRd,0x000001f8,WUDFRD_ServiceInstall  
 AddService=mshidumdf, 0x000001fa, mshidumdf.AddService
@@ -52,7 +47,7 @@ In this case, the mshidumdf service is associated with the FDO for the device st
 
 The **AddService** directive references an service-install-section similar to the following code example. The **ServiceType** entry specifies 1 or 0x00000001, which indicates that the INF installs support for one or more devices. The **StartType** entry specifies when to start the driver. The **ErrorControl** entry specifies the level of error control that the driver provides. The **ServiceBinary** entry specifies the path to the binary (the reflector) for the service.
 
-```
+```cpp
 [WUDFRD_ServiceInstall]
 DisplayName = "Windows Driver Frameworks - User-mode Driver Framework Reflector"
 ServiceType=1
@@ -68,7 +63,7 @@ Although it is not required to do so, a UMDF driver that runs only on Windows 8
 
 The following example shows how to specify a unique service name instead of WUDFRd.
 
-```
+```cpp
 [Echo_Install.NT.Services]
 AddService=WudfEchoDriver,0x00000002,WUDFEchoDriver_ServiceInstall
 
@@ -85,7 +80,7 @@ In the above example, the driver specifies a unique value for the service name i
 
 UMDF drivers cannot specify a unique service name for the reflector on operating systems earlier than Windows 8. If your driver specifies a unique service name but must also work on operating systems earlier than Windows 8, use operating system specific sections in the INF file, as shown in the following example.
 
-```
+```cpp
 [Manufacturer]
 %MSFT% = Microsoft,NTx86.6.0,NTx86.6.2
 [Microsoft.NTx86.6.0]
@@ -100,9 +95,9 @@ UMDF drivers cannot specify a unique service name for the reflector on operating
 
 If the reflector is not added, UMDF is never loaded. The device might start, but the host process is not present and the device will not operate properly.
 
- 
+ 
 
- 
+ 
 
 
 

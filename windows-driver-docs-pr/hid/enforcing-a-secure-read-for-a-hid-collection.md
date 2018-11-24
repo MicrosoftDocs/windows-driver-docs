@@ -1,6 +1,5 @@
 ---
 title: Enforcing a Secure Read For a HID Collection
-author: windows-driver-content
 description: Enforcing a Secure Read For a HID Collection
 ms.assetid: be3c7d1b-195c-4b7f-a404-070b3b265333
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - HID collections WDK , secure reads
 - secure reads WDK HID
 - trusted secure reads WDK HID
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -43,9 +38,9 @@ Enabling and disabling a secure read for a collection works in the following way
 
 -   A client should use a disable request to cancel a corresponding enable request. However, if the client does not do this, the HID class driver appropriately decrements the secure read count for a collection when it processes an [**IRP\_MJ\_CLOSE**](https://msdn.microsoft.com/library/windows/hardware/ff550720) request for a file. When the driver processes the close request, it decrements the secure read count for the collection by the secure read count for the file being closed.
 
- 
+ 
 
- 
+ 
 
 
 

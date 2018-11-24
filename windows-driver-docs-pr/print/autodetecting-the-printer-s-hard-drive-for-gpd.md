@@ -1,6 +1,5 @@
 ---
 title: Autodetecting the Printer's Hard Drive for GPD
-author: windows-driver-content
 description: Autodetecting the Printer's Hard Drive for GPD
 ms.assetid: c3bc415e-fa4d-42d0-9686-3105a588a7ea
 keywords:
@@ -9,11 +8,7 @@ keywords:
 - in-box autoconfiguration support WDK printer , autodetecting hard drive
 - detecting printer hard drive
 - hard drive autodetection WDK printer
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,12 +17,12 @@ ms.localizationpriority: medium
 
 Add entries to the GDL file for any hard drive-related features in your GPD file. For example, if you have a Collate feature that depends on whether a hard drive is installed, you can use autoconfiguration to automatically determine whether the printer is able to collate. Consider the following code example from a GPD file.
 
-```
+```GPD
 *% Printer supports collation only if PrinterHardDisk is installed
 *Feature: Collate
 {
   *rcNameID: 392 
- 
+
   *DefaultOption: OFF
   *Option: ON
   {
@@ -43,7 +38,7 @@ Add entries to the GDL file for any hard drive-related features in your GPD file
            *%   printer collate disabled
            *% Print Processor will take care
            *%   of collated copies
- 
+
            *Cmd: ""
          }
       }
@@ -55,7 +50,7 @@ Add entries to the GDL file for any hard drive-related features in your GPD file
            *% Collate requested with disk => 
             *%   printer collate enabled
            *% Printer will take care of collated copies
- 
+
            *Cmd: "@PJL SET QTY=" %d{NumOfCopies}"<0A>"
         }
       }
@@ -71,7 +66,7 @@ Add entries to the GDL file for any hard drive-related features in your GPD file
     }
   }
 }
- 
+
 *% Feature to explicitly constrain the Collate feature
 *Feature: PrinterHardDisk
 {
@@ -89,12 +84,11 @@ Add entries to the GDL file for any hard drive-related features in your GPD file
     *rcNameID: 443
   }
 }
- 
 ```
 
 To automatically detect whether a hard disk is installed, and enable or disable collating accordingly, simply add the following code example to the GDL file.
 
-```
+```GDL
 *%The GDL parser merges this code with the corresponding feature construct in the GPD file
 *Feature: PrinterHardDisk
 {
@@ -117,12 +111,11 @@ To automatically detect whether a hard disk is installed, and enable or disable 
     *BidiValue: BOOL(TRUE)
   }
 }
- 
 ```
 
- 
 
- 
+
+
 
 
 

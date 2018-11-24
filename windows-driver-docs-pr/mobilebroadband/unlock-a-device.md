@@ -2,11 +2,7 @@
 title: Unlock a device
 description: Unlock a device
 ms.assetid: 4e6ed725-2384-429b-be1e-027b7784e95b
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -44,9 +40,9 @@ A subset of the mobile broadband API includes the PIN Management API. To unlock 
 
 [Common tasks for mobile broadband Windows Runtime APIs](common-tasks-for-mobile-broadband-windows-runtime-apis.md)
 
- 
+ 
 
- 
+ 
 
 
 

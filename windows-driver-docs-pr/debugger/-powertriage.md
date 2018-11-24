@@ -3,11 +3,7 @@ title: powertriage
 description: The powertriage extension displays summary information about the system and device power related components.
 ms.assetid: A202ED64-B706-42AC-B058-C44321C9171F
 keywords: ["powertriage Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,7 +20,7 @@ The !powertriage extension displays summary information about the system and dev
 
 Syntax
 
-```
+```dbgcmd
 !powertriage
 ```
 
@@ -48,7 +44,7 @@ None
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -61,7 +57,7 @@ The !powertriage extension displays the following information.
 4. Links to !fxdevice for PoFx devices. For more information about PoFX, see [Overview of the Power Management Framework](https://msdn.microsoft.com/library/windows/hardware/hh406637).
 Here is example output from the !powertriage command.
 
-```
+```dbgcmd
 kd> !powertriage
 
 System Capabilities :
@@ -138,9 +134,9 @@ The !powertriage extension can be useful in examining system crashes related to 
 2. Links to the [**!findthreads**](-findthreads.md) command with the related IRP. The IRP is added as part of the search criteria and displays the threads starting with higher correlation to the search criteria threads listed first.
 Dumping all device stacks with power IRPs can help in debugging cases where !analyze has not been able to correctly identify the IRP associated with the crash.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,11 +3,7 @@ title: Activating a Debugging Client
 description: Once the debugging server has been activated, you can start a debugging client on another computer and connect to the debugging session.
 ms.assetid: 45a7baa7-08dc-47ae-a137-874aaa4ec8aa
 keywords: ["Activating a Debugging Client Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -26,7 +22,7 @@ There are two ways to start a debugging client: by using the -remote [command-li
 
 The protocol of the client must match the protocol of the server. The general syntax for starting a debugging client depends on the protocol used. The following options exist:
 
-```
+```dbgcmd
 Debugger -remote npipe:server=Server,pipe=PipeName[,password=Password] 
 
 Debugger -remote tcp:server=Server,port=Socket[,password=Password][,ipversion=6] 
@@ -44,7 +40,7 @@ Debugger -remote ssl:proto=Protocol,{certuser=Cert|machuser=Cert},clicon=Server,
 
 To use the graphical interface to connect to a remote debugging session, WinDbg must be in dormant mode -- it must either have been started with no command-line parameters, or it must have ended the previous debugging session. Select the **File | Connect to Remote Session** menu command, or press the CTRL+R shortcut key. When the **Connect to Remote Debugger Session** dialog box appears, enter one of the following strings into the **Connection string** text box:
 
-```
+```dbgcmd
 npipe:server=Server,pipe=PipeName[,password=Password] 
 
 tcp:server=Server,port=Socket[,password=Password][,ipversion=6] 
@@ -78,7 +74,7 @@ If NPIPE or SPIPE protocol is used, *PipeName* is the name that was given to the
 
 If you are not logged on to the client computer with an account that has access to the server computer, you must provide a user name and password. On the client computer, in a Command Prompt window, enter the following command.
 
-**net use \\\\***Server***\\ipc$ /user:***UserName*
+**net use \\\\**<em>Server</em>**\\ipc$ /user:**<em>UserName</em>
 
 where *Server* is the name of the server computer, and *UserName* is the name of an account that has access to the server computer.
 
@@ -88,7 +84,7 @@ After this command succeeds, you can activate a debugging client by using the **
 
 **Note**  You might need to enable file and printer sharing on the server computer. In Control Panel, navigate to **Network and Internet &gt; Network and Sharing Center&gt; Advanced sharing settings**. Select **Turn on file and printer sharing**.
 
- 
+ 
 
 <span id="________port_________Socket"></span><span id="________port_________socket"></span><span id="________PORT_________SOCKET"></span> **port=** *Socket*  
 If TCP or SSL protocol is used, *Socket* is the same socket port number that was used when the server was created.
@@ -109,7 +105,7 @@ If COM protocol is used, *COMChannel* should match the channel number chosen whe
 If SSL or SPIPE protocol is used, *Protocol* should match the secure protocol used when the server was created.
 
 <span id="________Cert"></span><span id="________cert"></span><span id="________CERT"></span> *Cert*  
-If SSL or SPIPE protocol is used, you should use the identical **certuser=***Cert* or **machuser=** *Cert* parameter that was used when the server was created.
+If SSL or SPIPE protocol is used, you should use the identical **certuser=**<em>Cert</em> or **machuser=** *Cert* parameter that was used when the server was created.
 
 <span id="________password_________Password"></span><span id="________password_________password"></span><span id="________PASSWORD_________PASSWORD"></span> **password=** *Password*  
 If a password was used when the server was created, *Password* must be supplied in order to create the debugging client. It must match the original password. Passwords are case-sensitive. If the wrong password is supplied, the error message will specify "Error 0x80004005." Passwords must be twelve characters or less in length.
@@ -119,9 +115,9 @@ If a password was used when the server was created, *Password* must be supplied 
 
 Command-line options used to start new debugging sessions (like **-p**) cannot be used by the debugging client, but only by the server. Configuration options (like **-n**) will work from either the client or the server.
 
- 
+ 
 
- 
+ 
 
 
 

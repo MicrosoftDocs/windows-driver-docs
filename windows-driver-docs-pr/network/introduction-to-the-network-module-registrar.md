@@ -5,11 +5,7 @@ ms.assetid: affa7979-bc43-4e34-a528-5484982d940d
 keywords:
 - Network Module Registrar WDK , about Network Module Registrar
 - NMR WDK , about Network Module Registrar
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,9 +16,9 @@ The Network Module Registrar (NMR) is an operating system module that facilitate
 
 Although the NMR was developed for use by network modules, the design of the NMR architecture is sufficiently generic so that it can also be used by software modules in other technology areas.
 
- 
+ 
 
- 
+ 
 
 
 

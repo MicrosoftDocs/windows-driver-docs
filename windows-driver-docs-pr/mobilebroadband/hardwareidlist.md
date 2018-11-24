@@ -2,11 +2,7 @@
 title: HardwareIdList (PackageInfo)
 description: HardwareIdList (PackageInfo)
 ms.assetid: 32bd11f8-767f-4082-b753-efa9debf23cc
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -51,13 +47,13 @@ Must contain one or more [HardwareID](hardwareid.md) elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[HardwareID](hardwareid.md)</p></td>
-<td><p>The [HardwareID](hardwareid.md) elements represent the mobile network operator.</p></td>
+<td><p><a href="hardwareid.md" data-raw-source="[HardwareID](hardwareid.md)">HardwareID</a></p></td>
+<td><p>The <a href="hardwareid.md" data-raw-source="[HardwareID](hardwareid.md)">HardwareID</a> elements represent the mobile network operator.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Parent_elements"></span><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Parent elements
 
@@ -75,8 +71,8 @@ Must contain one or more [HardwareID](hardwareid.md) elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[MetadataKey](metadatakey.md)</p></td>
-<td><p>The [MetadataKey](metadatakey.md) element specifies the attributes of the device metadata package. These include the following:</p>
+<td><p><a href="metadatakey.md" data-raw-source="[MetadataKey](metadatakey.md)">MetadataKey</a></p></td>
+<td><p>The <a href="metadatakey.md" data-raw-source="[MetadataKey](metadatakey.md)">MetadataKey</a> element specifies the attributes of the device metadata package. These include the following:</p>
 <ul>
 <li><p>The identifier for each hardware function supported by the device.</p></li>
 <li><p>The language-specific locale for the text strings within the package.</p></li>
@@ -85,7 +81,7 @@ Must contain one or more [HardwareID](hardwareid.md) elements.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="XSD"></span><span id="xsd"></span>XSD
 
@@ -105,9 +101,9 @@ Must contain one or more [HardwareID](hardwareid.md) elements.
 
 The HardwareIDList element is required.
 
- 
+ 
 
- 
+ 
 
 
 

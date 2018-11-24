@@ -2,11 +2,7 @@
 title: LastModifiedDate
 description: LastModifiedDate
 ms.assetid: e0ef7ca0-0c3d-4e71-af2e-ead90013e561
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -56,8 +52,8 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[MetadataKey](metadatakey.md)</p></td>
-<td><p>The [MetadataKey](metadatakey.md) element specifies the attributes of the device metadata package. These include the following:</p>
+<td><p><a href="metadatakey.md" data-raw-source="[MetadataKey](metadatakey.md)">MetadataKey</a></p></td>
+<td><p>The <a href="metadatakey.md" data-raw-source="[MetadataKey](metadatakey.md)">MetadataKey</a> element specifies the attributes of the device metadata package. These include the following:</p>
 <ul>
 <li><p>The identifier for each hardware function supported by the device.</p></li>
 <li><p>The language-specific locale for the text strings within the package.</p></li>
@@ -66,7 +62,7 @@ There are no child elements.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="XSD"></span><span id="xsd"></span>XSD
 
@@ -84,9 +80,9 @@ There are no child elements.
 
 The LastModifiedDate element is required.
 
- 
+ 
 
- 
+ 
 
 
 

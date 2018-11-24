@@ -2,11 +2,7 @@
 title: Mofcomp task
 description: The Windows Driver Kit (WDK) provides the Mofcomp task so that you can run the Mofcomp.exe tool when you build your driver using MSBuld.
 ms.assetid: 94B70223-393F-49C9-B2C9-34FF64D26454
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -182,16 +178,16 @@ This example invokes mofcomp.exe on the file b.mof with the -WMI switch.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
 
 [**mofcomp**](https://msdn.microsoft.com/library/aa392389)
 
- 
+ 
 
- 
+ 
 
 
 

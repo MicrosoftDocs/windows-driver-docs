@@ -1,17 +1,12 @@
 ---
 title: GDL Preprocessor Guidelines
-author: windows-driver-content
 description: GDL Preprocessor Guidelines
 ms.assetid: dc8450ca-cacc-458c-a05b-8566d04d8bae
 keywords:
 - preprocessor directives WDK GDL , guidelines
 - directives WDK GDL , source file preprocessor directives
 - source files WDK GDL , preprocessor directives
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,17 +23,17 @@ The GDL parser interface will enable the client to inject an arbitrary-sized fra
 
 **Note**   When a file is included in-line, all preprocessor symbols and prefixes that are defined in the host remain defined during preprocessing of the included file. When a file is processed as precompiled, an entirely new parsing environment is created. Thus, all symbols and prefixes are returned to their defaults. Files that will be processed as precompiled should not have any dependencies on externally or host file-defined preprocessor symbols.
 
- 
+ 
 
 **Note**   Preprocessor directives and macros are unaffected by switch/case constructs because the directives are evaluated separately before any switch/case constructs.
 
- 
+ 
 
 Logical operators are not supported in GDL preprocessor directives. For more information about to solve this situation, see [Problems with Logical Operators in GDL Preprocessing](problems-with-logical-operators-in-gdl-preprocessing.md).
 
- 
+ 
 
- 
+ 
 
 
 

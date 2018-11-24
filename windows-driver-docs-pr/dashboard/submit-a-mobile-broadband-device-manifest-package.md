@@ -2,11 +2,8 @@
 title: Submit a mobile broadband device manifest package
 description: Submit a mobile broadband device manifest package
 ms.assetid: 080c3f4a-400f-426c-8296-1cd0bdfb0828
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +27,9 @@ You can use the same method to submit packages for preview or release.
 
 For more information about creating a mobile broadband device submission package, see [Mobile Broadband Device Submission Packages](https://msdn.microsoft.com/library/windows/hardware/dn247081.aspx).
 
- 
+ 
 
- 
+ 
 
 
 

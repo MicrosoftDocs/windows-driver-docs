@@ -2,11 +2,7 @@
 title: Avoiding Device Container Conflicts
 description: Avoiding Device Container Conflicts
 ms.assetid: 1c752333-8776-4c5e-bc2f-47ffde60c931
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,9 +19,9 @@ If your USB device relies on the operating system to generate a container ID bas
 
 2.  The string that results is hashed into a GUID by using the UUID Version 5 (SHA-1) hash algorithm under a USB-specific namespace. The generated container ID will be unique, provided the independent hardware vendor (IHV) provides a unique serial number on each device.
 
- 
+ 
 
- 
+ 
 
 
 

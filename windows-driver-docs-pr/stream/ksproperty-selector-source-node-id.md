@@ -11,11 +11,7 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +23,7 @@ The KSPROPERTY\_SELECTOR\_SOURCE\_NODE\_ID property specifies the pin identifier
 ## <span id="ddk_ksproperty_selector_source_node_id_ks"></span><span id="DDK_KSPROPERTY_SELECTOR_SOURCE_NODE_ID_KS"></span>
 
 
-### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
+### Usage Summary Table
 
 <table>
 <colgroup>
@@ -51,13 +47,13 @@ The KSPROPERTY\_SELECTOR\_SOURCE\_NODE\_ID property specifies the pin identifier
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Filter or node</p></td>
-<td><p>[<strong>KSPROPERTY_SELECTOR_S</strong>](https://msdn.microsoft.com/library/windows/hardware/ff565219) or [<strong>KSPROPERTY_SELECTOR_NODE_S</strong>](https://msdn.microsoft.com/library/windows/hardware/ff565217)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565219" data-raw-source="[&lt;strong&gt;KSPROPERTY_SELECTOR_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565219)"><strong>KSPROPERTY_SELECTOR_S</strong></a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff565217" data-raw-source="[&lt;strong&gt;KSPROPERTY_SELECTOR_NODE_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565217)"><strong>KSPROPERTY_SELECTOR_NODE_S</strong></a></p></td>
 <td><p>LONG</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -82,9 +78,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

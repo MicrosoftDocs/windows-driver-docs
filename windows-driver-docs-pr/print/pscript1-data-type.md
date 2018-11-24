@@ -1,6 +1,5 @@
 ---
 title: PSCRIPT1 Data Type
-author: windows-driver-content
 description: PSCRIPT1 Data Type
 ms.assetid: 0f39419e-fbb5-423f-8bcb-79a5207a29fd
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - data types WDK print processor
 - PSCRIPT1 data type WDK print processor
 - Postscript data WDK print processor
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +21,9 @@ PSCRIPT1 data is Postscript data that is targeted for printing on a non-Postscri
 
 For more information about the PSCRIPT1 data type, see the *Windows 2000 Professional Resource Kit* or the *Windows 2000 Server Resource Kit*. (These resources may not be available in some languages and countries.)
 
- 
+ 
 
- 
+ 
 
 
 

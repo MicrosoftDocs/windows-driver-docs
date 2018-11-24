@@ -2,11 +2,7 @@
 title: ComputerHardwareIds Output
 description: ComputerHardwareIds Output
 ms.assetid: 38a08dda-92db-4389-9c2c-91fe17a88051
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -40,9 +36,9 @@ Hardware IDs
 
 In this example, the vendor (Contoso Inc.) would typically use the second hardware ID (d7be59e5-29b5-589a-b49d-de7265ef6a7b) for the value of the [**HardwareID**](https://msdn.microsoft.com/library/windows/hardware/ff546114) element in the [PackageInfo XML document](https://msdn.microsoft.com/library/windows/hardware/ff549602) of the vendor's device metadata package.
 
- 
+ 
 
- 
+ 
 
 
 

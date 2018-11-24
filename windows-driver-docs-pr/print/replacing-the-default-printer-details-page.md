@@ -1,17 +1,12 @@
 ---
 title: Replacing the Default Printer Details Page
-author: windows-driver-content
 description: Replacing the Default Printer Details Page
 ms.assetid: 451f442b-a882-4540-82dd-e96dab5e7619
 keywords:
 - customized print Web pages WDK , replacing default page
 - replacing default printer details page
 - default printer details page
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -44,11 +39,11 @@ You must not modify the file named Globals.asp, which is contained in the Printe
 
 Microsoft reserves the right to modify its print Web pages without notice. Therefore, customized ASP files must not depend on the content of Microsoft-supplied ASP files.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

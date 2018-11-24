@@ -9,11 +9,7 @@ keywords:
 - preserving audio settings WDK audio
 - migration DLL WDK audio
 - migrating settings WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -67,9 +63,9 @@ As discussed above, the setup program discards the driver's registry settings du
 
 The Ac97 audio adapter sample in the Windows Driver Kit (WDK) contains an example of an INF file (Ac97smpl.inf) that migrates an audio driver from Windows Me/98 to Windows XP or Windows 2000.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -6,11 +6,7 @@ keywords:
 - drawing WDK DirectDraw , DirectDraw driver
 - DirectDraw WDK Windows 2000 display , DirectDraw driver
 - DirectDraw driver WDK Windows 2000 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +22,9 @@ Under Windows 2000 and later, the DirectDraw driver is always implemented as 32-
 
 The DirectDraw driver contains only device-dependent code and performs no emulation. If a function is not performed by the hardware, the DirectDraw driver does not report it as a hardware capability. Additionally, the DirectDraw driver does not validate parameters because the DirectDraw runtime does this before the driver is invoked.
 
- 
+ 
 
- 
+ 
 
 
 

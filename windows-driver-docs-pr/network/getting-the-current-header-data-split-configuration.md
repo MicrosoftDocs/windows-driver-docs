@@ -6,11 +6,7 @@ keywords:
 - header-data split WDK , configuration
 - current header-data split configuration WDK networking
 - status information WDK header-data split
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +30,9 @@ When NDIS calls the [*ProtocolBindAdapterEx*](https://msdn.microsoft.com/library
 
 When NDIS calls the [*FilterAttach*](https://msdn.microsoft.com/library/windows/hardware/ff549905) function of NDIS 6.1 or later filter drivers, NDIS provides an [**NDIS\_FILTER\_ATTACH\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff565481) structure with a pointer to an NDIS\_HD\_SPLIT\_CURRENT\_CONFIG structure.
 
- 
+ 
 
- 
+ 
 
 
 

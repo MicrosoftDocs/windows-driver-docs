@@ -1,13 +1,8 @@
 ---
 title: Sample PrintCapabilities File for PIN Printing
-author: windows-driver-content
 description: Here is a sample PrintCapabilities file to show how to specify personal ID number (PIN) protected printing.
 ms.assetid: 4C3BBEF1-C0DB-48F7-B4EC-BBB5D3699692
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -16,7 +11,7 @@ ms.localizationpriority: medium
 
 Here is a sample PrintCapabilities file to show how to specify personal ID number (PIN) protected printing.
 
-```XML
+```xml
 <?xml version="1.0"?>
 <psf:PrintCapabilities
    xmlns:psf="http://schemas.microsoft.com/windows/2003/08/printing/printschemaframework" 
@@ -62,9 +57,9 @@ Here is a sample PrintCapabilities file to show how to specify personal ID numbe
 
 For more information about protected printing, see [Driver Support For Protected Printing](driver-support-for-protected-printing.md).
 
- 
+ 
 
- 
+ 
 
 
 

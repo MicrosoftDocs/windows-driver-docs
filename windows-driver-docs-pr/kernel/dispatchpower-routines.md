@@ -1,14 +1,9 @@
 ---
 title: DispatchPower Routines
-author: windows-driver-content
 description: DispatchPower Routines
 ms.assetid: e385064f-cbdb-432f-951a-743217891333
 keywords: ["dispatch routines WDK kernel , DispatchPower routine", "DispatchPower routine", "power management WDK kernel , dispatch routines", "IRP_MJ_POWER I/O function code", "removable device power dispatch routines WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -46,9 +41,9 @@ In their *DispatchPower* routines, drivers of removable devices should check to 
 
 -   Return STATUS\_DELETE\_PENDING.
 
- 
+ 
 
- 
+ 
 
 
 

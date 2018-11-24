@@ -18,11 +18,7 @@ keywords:
 - driver stacks WDK audio
 - system bus drivers WDK audio
 - subdevices WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -128,9 +124,9 @@ The port class driver's [**PcRegisterSubdevice**](https://msdn.microsoft.com/lib
 
 For more information about designing drivers for multifunction audio cards, see [Multifunction Audio Devices](multifunction-audio-devices.md).
 
- 
+ 
 
- 
+ 
 
 
 

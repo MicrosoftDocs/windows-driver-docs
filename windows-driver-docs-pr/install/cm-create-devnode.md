@@ -11,21 +11,9 @@ api_name:
 api_type:
 - NA
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # CM_Create_DevNode
 
 This function is reserved for system use.
-
-
-
-
-
- 
-
- 
-
-
-
-
-

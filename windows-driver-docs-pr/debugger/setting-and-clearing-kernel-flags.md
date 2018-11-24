@@ -3,11 +3,7 @@ title: Setting and Clearing Kernel Flags
 description: Setting and Clearing Kernel Flags
 ms.assetid: 6bca8007-2d9f-4b93-b5fb-300c262604c8
 keywords: ["GFlags, kernel flags", "GFlags, run-time settings"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +29,9 @@ Kernel settings take precedence over registry settings during run time, but when
 
 3.  When you have selected or cleared all of the flags that you want, click **Apply**.
 
- 
+ 
 
- 
+ 
 
 
 

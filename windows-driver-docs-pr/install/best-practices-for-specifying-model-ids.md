@@ -2,11 +2,7 @@
 title: Best Practices for Specifying Model IDs
 description: Best Practices for Specifying Model IDs
 ms.assetid: ed0cdfb4-1de8-4b4f-8bab-7c5e06cf96f6
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -41,7 +37,7 @@ If your device metadata package supports multiple device models or model IDs, yo
 
 The following is an example of a [**ModelIDList**](https://msdn.microsoft.com/library/windows/hardware/ff549303) element that has multiple **ModelID** elements:
 
-```
+```cpp
 <ModelIDList>
 <ModelID>825AAB98-18EE-4FE2-9472-197D1D00FE31</ModelID>
 <ModelID>23F64715-AC4A-4DC4-B554-C8D56E43FE8B</ModelID>
@@ -50,9 +46,9 @@ The following is an example of a [**ModelIDList**](https://msdn.microsoft.com/li
 
 For more information about the format requirements of the **ModelID** XML element, see [**ModelID**](https://msdn.microsoft.com/library/windows/hardware/ff549295).
 
- 
+ 
 
- 
+ 
 
 
 

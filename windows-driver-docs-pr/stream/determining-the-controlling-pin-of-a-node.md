@@ -1,6 +1,5 @@
 ---
 title: Determining the Controlling Pin of a Node
-author: windows-driver-content
 description: Determining the Controlling Pin of a Node
 ms.assetid: be1236e2-c710-4833-863e-54e826e53f92
 keywords:
@@ -10,11 +9,7 @@ keywords:
 - node controlling pin WDK BDA
 - arrays WDK BDA
 - pin controller WDK BDA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -40,9 +35,9 @@ The following figure shows how the support library determines the filter pin tha
 
 ![diagram illustrating how the support library determines the filter pin that controls a specific node](images/bdajoint.png)
 
- 
+ 
 
- 
+ 
 
 
 

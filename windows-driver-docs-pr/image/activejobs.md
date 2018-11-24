@@ -9,11 +9,7 @@ api_name:
 - wscn ActiveJobs
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **ActiveJobs** element contains a list of all currently active scan
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ActiveJobs>
   child elements
 </wscn:ActiveJobs>
@@ -50,10 +46,10 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>Job</strong>](job.md)</p></td>
+<td><p><a href="job.md" data-raw-source="[&lt;strong&gt;Job&lt;/strong&gt;](job.md)"><strong>Job</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>JobSummary</strong>](jobsummary.md)</p></td>
+<td><p><a href="jobsummary.md" data-raw-source="[&lt;strong&gt;JobSummary&lt;/strong&gt;](jobsummary.md)"><strong>JobSummary</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -72,10 +68,10 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>GetActiveJobsResponse</strong>](getactivejobsresponse.md)</p></td>
+<td><p><a href="getactivejobsresponse.md" data-raw-source="[&lt;strong&gt;GetActiveJobsResponse&lt;/strong&gt;](getactivejobsresponse.md)"><strong>GetActiveJobsResponse</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>JobTable</strong>](jobtable.md)</p></td>
+<td><p><a href="jobtable.md" data-raw-source="[&lt;strong&gt;JobTable&lt;/strong&gt;](jobtable.md)"><strong>JobTable</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -87,7 +83,7 @@ The **ActiveJobs** element contains all jobs that have not yet completed process
 
 A client can ask for the list of active jobs through the [**GetActiveJobsRequest**](getactivejobsrequest.md) operation. The WSD Scan Service returns the list in a [**GetActiveJobsResponse**](getactivejobsresponse.md) operation element.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**GetActiveJobsRequest**](getactivejobsrequest.md)
@@ -100,9 +96,9 @@ A client can ask for the list of active jobs through the [**GetActiveJobsRequest
 
 [**JobTable**](jobtable.md)
 
- 
+ 
 
- 
+ 
 
 
 

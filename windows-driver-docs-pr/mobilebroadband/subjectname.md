@@ -2,11 +2,7 @@
 title: SubjectName
 description: SubjectName
 ms.assetid: 1aa9c826-c95a-4e89-931f-4e296122edc3
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -56,13 +52,13 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[TrustedCertificate](trustedcertificate.md)</p></td>
+<td><p><a href="trustedcertificate.md" data-raw-source="[TrustedCertificate](trustedcertificate.md)">TrustedCertificate</a></p></td>
 <td><p>Specifies a trusted certificate.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="XSD"></span><span id="xsd"></span>XSD
 
@@ -76,9 +72,9 @@ There are no child elements.
 
 The SubjectName element is optional.
 
- 
+ 
 
- 
+ 
 
 
 

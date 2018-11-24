@@ -2,11 +2,7 @@
 title: WDK and MSBuild overview
 description: Visual Studio can manage multiple projects. This section describes the WDK build environment.
 ms.assetid: BABF3C72-05E9-4424-AAF9-68DFD48CEC32
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,9 +19,9 @@ For C/C++ native code (user mode and kernel mode) and managed code, the WDK inst
 
 ![figure shows the wdk and msbuild platform for a visual studio driver solution.](images/build-platform-msbuild.png)
 
- 
+ 
 
- 
+ 
 
 
 

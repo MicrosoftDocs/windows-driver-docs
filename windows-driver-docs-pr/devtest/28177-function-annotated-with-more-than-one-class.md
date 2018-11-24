@@ -2,11 +2,7 @@
 title: C28177
 description: Warning C28177 Function is annotated with more than one function class. All but one will be ignored.
 ms.assetid: 59692D14-9065-4662-B54C-BB618AAC0ED1
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -17,9 +13,9 @@ warning C28177: Function is annotated with more than one function class. All but
 
 This warning can be generated when there is a chain of typedefs.
 
- 
+ 
 
- 
+ 
 
 
 

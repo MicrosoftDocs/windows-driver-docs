@@ -5,11 +5,7 @@ ms.assetid: 0512e468-7c43-4f72-9029-9cf84028f94a
 keywords:
 - Static Driver Verifier Report WDK , Source Code pane
 - Source Code pane WDK Static Driver Verifier
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,9 +32,9 @@ You can perform the following actions in the **Source Code** pane:
     2.  From the **Edit** menu, select **Select All** (or press CTRL + A).
     3.  From the **Edit** menu, select **Copy** (or press CTRL+C).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,13 +1,8 @@
 ---
 title: OID_GEN_SUPPORTED_LIST
-author: windows-driver-content
 description: As a query, the OID_GEN_SUPPORTED_LIST OID specifies an array of OIDs for objects that the miniport driver or a NIC supports.
 ms.assetid: 4e663204-eee0-4732-83c9-ec1dacd41034
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_GEN_SUPPORTED_LIST Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -67,9 +62,9 @@ Requirements
 
 [OID\_GEN\_STATISTICS](oid-gen-statistics.md)
 
- 
+ 
 
- 
+ 
 
 
 

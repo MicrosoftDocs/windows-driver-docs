@@ -1,13 +1,8 @@
 ---
 title: WDI_TLV_PRIVACY_EXEMPTION_ENTRY
-author: windows-driver-content
 description: WDI_TLV_PRIVACY_EXEMPTION_ENTRY is a TLV that contains a privacy exemption entry.
 ms.assetid: 086BD366-F54C-4BF4-8544-CC2AB2472EB2
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_PRIVACY_EXEMPTION_ENTRY Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -37,7 +32,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | [**WDI\_EXEMPTION\_ACTION\_TYPE**](https://msdn.microsoft.com/library/windows/hardware/dn897820) | Specifies the action type of the exemption.                 |
 | [**WDI\_EXEMPTION\_PACKET\_TYPE**](https://msdn.microsoft.com/library/windows/hardware/dn897823) | Specifies the type of packet that the exemption applies to. |
 
- 
+ 
 
 Requirements
 ------------
@@ -63,9 +58,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

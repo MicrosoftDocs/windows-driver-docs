@@ -1,6 +1,5 @@
 ---
 title: Process and Thread Termination Issues
-author: windows-driver-content
 description: Process and Thread Termination Issues
 ms.assetid: 11b38c60-1bd8-4f1b-a80e-14a93e4ac474
 keywords:
@@ -9,11 +8,7 @@ keywords:
 - process terminations WDK file systems
 - thread terminations WDK file systems
 - terminated processes or threads WDK file systems
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,9 +20,9 @@ ms.localizationpriority: medium
 
 File systems that store state information related to specific users might need to watch for process and thread termination conditions. For example, encryption keys associated with a particular user might need to be discarded on the termination (whether planned or premature) of a specialized control application. For more information about the routines used to handle these conditions, see [**PsSetCreateProcessNotifyRoutine**](https://msdn.microsoft.com/library/windows/hardware/ff559951) and [**PsSetCreateThreadNotifyRoutine**](https://msdn.microsoft.com/library/windows/hardware/ff559954).
 
- 
+ 
 
- 
+ 
 
 
 

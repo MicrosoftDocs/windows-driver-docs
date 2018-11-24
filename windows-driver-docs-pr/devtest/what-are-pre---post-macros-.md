@@ -2,11 +2,7 @@
 title: What are PRE / POST macros
 description: What are PRE / POST macros
 ms.assetid: f5acb047-def3-443a-b220-77543f9a71e3
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ POST macro // If defined
 
 For an example about how to define the PRE/POST macros, see [How are Trace-If expressions used?](how-are-trace-if-expressions-used-.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: Handling large numbers of SSIDs
 description: Handling large numbers of SSIDs
 ms.assetid: 52bcfbd4-98f6-43e3-b697-c632f6660717
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -91,9 +87,9 @@ This section shows an example profile containing an SSID in the v1 and v2 namesp
 
 [WISPr authentication](wispr-authentication.md)
 
- 
+ 
 
- 
+ 
 
 
 

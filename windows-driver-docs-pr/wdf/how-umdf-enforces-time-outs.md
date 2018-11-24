@@ -1,6 +1,5 @@
 ---
 title: Host Process Timeouts in UMDF
-author: windows-driver-content
 description: Host Process Timeouts in UMDF
 ms.assetid: b8a0a4cc-9c6d-40e2-a3f1-9807dbcf15d9
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - UMDF WDK , time-outs
 - user-mode drivers WDK UMDF , time-outs
 - time-outs WDK UMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +26,9 @@ Timeout expiration is the most common reason for the reflector to terminate the 
 
 You can extend the timeout period by using the [WDF Verifier Control Application](https://msdn.microsoft.com/library/windows/hardware/ff556129).
 
- 
+ 
 
- 
+ 
 
 
 

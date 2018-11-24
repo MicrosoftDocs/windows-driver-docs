@@ -4,11 +4,7 @@ description: Control Panel Requirements
 ms.assetid: ad700594-b58c-4f6c-b594-e880612923b7
 keywords:
 - Control Panel WDK Windows 2000 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +30,9 @@ The following are requirements for extensions to the display Control Panel:
 
 -   Control panel state must be stored in the registry. No *.ini* files are allowed. Any state that is maintained by your Control Panel extension must be stored in the SOFTWARE key in the registry, accessible through HKR in the INF file.
 
- 
+ 
 
- 
+ 
 
 
 

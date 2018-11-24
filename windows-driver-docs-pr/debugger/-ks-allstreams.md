@@ -3,11 +3,7 @@ title: ks.allstreams
 description: The ks.allstreams extension walks the entire device tree and finds every kernel streaming device in the system.
 ms.assetid: 3a9f4ad4-a3aa-46dc-887d-c83296bc8f84
 keywords: ["ks.allstreams Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!ks.allstreams** extension walks the entire device tree and finds every kernel streaming device in the system.
 
-```
+```dbgcmd
 !ks.allstreams [Flags] [Level] 
 ```
 
@@ -69,7 +65,7 @@ Optional. Specifies the level of detail to display on a 0-7 scale with progressi
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -82,7 +78,7 @@ This command can take some time to execute (a minute is not unusual).
 
 Here is an example of the **!ks.allstreams** display:
 
-```
+```dbgcmd
 kd> !allstreams 
 6 Kernel Streaming FDOs found:
     Functional Device 82a17690 [\Driver\smwdm]
@@ -93,9 +89,9 @@ kd> !allstreams
     Functional Device 8241c020 [\Driver\avssamp]
 ```
 
- 
+ 
 
- 
+ 
 
 
 

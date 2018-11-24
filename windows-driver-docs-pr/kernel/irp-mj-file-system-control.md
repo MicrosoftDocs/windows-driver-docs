@@ -1,12 +1,7 @@
 ---
 title: IRP_MJ_FILE_SYSTEM_CONTROL
-author: windows-driver-content
 description: Only file system drivers process IRP_MJ_FILE_SYSTEM_CONTROL requests.
-ms.author: windowsdriverdev
 ms.date: 08/12/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.assetid: 695ed61b-7082-44be-ae82-ddc3e4a0b8d0
 keywords:
  - IRP_MJ_FILE_SYSTEM_CONTROL Kernel-Mode Driver Architecture
@@ -34,9 +29,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

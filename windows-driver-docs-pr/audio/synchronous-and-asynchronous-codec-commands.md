@@ -9,11 +9,7 @@ keywords:
 - High Definition Audio (HD Audio), codec commands
 - synchronous codec commands WDK audio
 - asynchronous codec commands WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -66,9 +62,9 @@ For example, the hardware interface for writing a sequence of data bytes to a co
 
 The [*TransferCodecVerbs*](https://msdn.microsoft.com/library/windows/hardware/ff538596) routine is available in both versions of the HD Audio DDI.
 
- 
+ 
 
- 
+ 
 
 
 

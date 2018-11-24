@@ -9,11 +9,7 @@ keywords:
 - TMM WDK display , external only display configuration
 - TMM WDK display , single view
 - TMM WDK display , topology
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,9 +33,9 @@ The display mode where only one view is shown on one monitor.
 <span id="Topology"></span><span id="topology"></span><span id="TOPOLOGY"></span>**Topology**  
 Information that specifies which sources are shown on which targets for a graphics adapter.
 
- 
+ 
 
- 
+ 
 
 
 

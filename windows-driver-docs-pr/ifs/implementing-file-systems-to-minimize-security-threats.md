@@ -1,15 +1,10 @@
 ---
 title: Implementing File Systems to Minimize Security Threats
-author: windows-driver-content
 description: Implementing File Systems to Minimize Security Threats
 ms.assetid: a7c974ee-9f0b-4a51-aa56-5c67ee2d1180
 keywords:
 - security WDK file systems , minimizing threats
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -41,9 +36,9 @@ This section includes the following topics:
 
 [Handle Management](handle-management.md)
 
- 
+ 
 
- 
+ 
 
 
 

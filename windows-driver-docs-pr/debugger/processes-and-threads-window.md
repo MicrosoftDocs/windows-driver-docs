@@ -3,11 +3,7 @@ title: Controlling Processes and Threads in WinDbg
 description: Controlling Processes and Threads in WinDbg
 ms.assetid: d4755889-9a65-4e81-b3a3-e0bbc6324d3e
 keywords: ["debugging information windows, Processes and Threads window", "Processes and Threads window", "process, Processes and Threads window", "thread, Processes and Threads window"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -51,9 +47,9 @@ The Processes and Threads window has a shortcut menu with additional commands. T
 
 For other methods of displaying or controlling systems, see [Debugging Multiple Targets](debugging-multiple-targets.md). For other methods of displaying or controlling processes and threads, see [Controlling Processes and Threads](controlling-processes-and-threads.md).
 
- 
+ 
 
- 
+ 
 
 
 

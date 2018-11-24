@@ -6,11 +6,7 @@ keywords:
 - memory segments WDK display , DMA buffers
 - DMA buffers WDK display , memory segments
 - buffers WDK display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +24,9 @@ When the Microsoft DirectX graphics kernel subsystem calls the display miniport 
 
 Note that the basic video memory manager model does not support DMA buffers in local video memory.
 
- 
+ 
 
- 
+ 
 
 
 

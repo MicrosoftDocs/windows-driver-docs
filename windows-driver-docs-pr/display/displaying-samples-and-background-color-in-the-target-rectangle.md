@@ -7,11 +7,7 @@ keywords:
 - target rectangle WDK DirectX VA
 - background color options WDK DirectX VA
 - deinterlacing WDK DirectX VA , target rectangle
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,9 +31,9 @@ The following topics show how to display various samples with background color i
 
 [Combining Two Streams with Different Heights and Widths](combining-two-streams-with-different-heights-and-widths.md)
 
- 
+ 
 
- 
+ 
 
 
 

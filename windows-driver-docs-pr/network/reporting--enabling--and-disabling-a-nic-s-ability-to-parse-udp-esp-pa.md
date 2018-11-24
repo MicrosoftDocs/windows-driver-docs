@@ -5,11 +5,7 @@ ms.assetid: 3a75c5b2-2d94-428e-9b2a-d760e14df552
 keywords:
 - UDP-encapsulated ESP packets WDK IPsec offload , parsing capabilities
 - parsing capabilities WDK IPsec offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +22,9 @@ The miniport reports the NIC's ability to parse incoming UDP-encapsulated ESP pa
 
 For information about enabling and disableing UDP ESP parsing capabilities, see [Enabling and Disabling TCP/IP Offload Services](enabling-and-disabling-task-offload-services.md).
 
- 
+ 
 
- 
+ 
 
 
 

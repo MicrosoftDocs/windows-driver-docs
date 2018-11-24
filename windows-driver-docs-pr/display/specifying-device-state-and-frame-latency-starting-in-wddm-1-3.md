@@ -2,11 +2,7 @@
 title: Specifying device state and frame latency starting in WDDM 1.3
 ms.assetid: 97FC54BD-0D20-4235-B914-5F44690274AE
 description: Implementing escape flags to pass info to the miniport driver
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,9 +18,9 @@ These reference topics describe how to implement this capability in your user-mo
 -   [**D3DDDI\_FRAMELATENCYESCAPE**](https://msdn.microsoft.com/library/windows/hardware/dn482418)
 -   [**D3DDDI\_ESCAPEFLAGS**](https://msdn.microsoft.com/library/windows/hardware/ff544541) (new **DeviceStatusQuery** and **ChangeFrameLatency** members)
 
- 
+ 
 
- 
+ 
 
 
 

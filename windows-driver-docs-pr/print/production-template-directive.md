@@ -1,17 +1,12 @@
 ---
 title: Production Template Directive
-author: windows-driver-content
 description: Production Template Directive
 ms.assetid: 5deae299-389a-4de4-8f2f-7c247f045ada
 keywords:
 - Production directive WDK GDL
 - constructs WDK GDL , valid combinations
 - templates WDK GDL , host template
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,7 +27,7 @@ The value of the \*Production directive can be one of the following symbols: EXA
 
 The following example shows a production directive.
 
-```
+```cpp
 *Production: EXACTLY_ONE
 {   ... child Productions ... }
 ```
@@ -47,9 +42,9 @@ The following algorithm defines the production directive values:
 
 \*Production directives can be nested to arbitrary depth.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,13 +1,8 @@
 ---
 title: EFI_USBFN_IO_PROTOCOL.GetEndpointStallState
-author: windows-driver-content
 description: EFI_USBFN_IO_PROTOCOL.GetEndpointStallState
 ms.assetid: abf53ee7-8460-4861-a82d-827ad1dc6c40
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,7 +14,7 @@ The **GetEndpointStallState** function returns the stall state on the specified 
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef
 EFI_STATUS
 (EFIAPI * EFI_USBFN_IO_GET_ENDPOINT_STALL_STATE) (
@@ -79,7 +74,7 @@ Boolean; **TRUE** value indicates that the endpoint is in a stalled state, **FAL
 </tbody>
 </table>
 
- 
+ 
 
 ## Remarks
 
@@ -91,9 +86,9 @@ This function fails with **EFI\_INVALID\_PARAMETER** if the specified direction 
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
 

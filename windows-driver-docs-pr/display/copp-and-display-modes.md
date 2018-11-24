@@ -8,11 +8,7 @@ keywords:
 - COPP WDK DirectX VA , display modes
 - protected video WDK COPP , display modes
 - display modes WDK COPP
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +25,9 @@ If the current resolution is too high for a particular protection type, then whe
 
 -   If the DirectX VA COPP device is associated with component output connectors, a call to the video miniport driver's [*COPPQueryStatus*](https://msdn.microsoft.com/library/windows/hardware/ff539652) function with DXVA\_COPPQueryProtectionType set should also indicate support of the ACP type. However, if the driver's [*COPPCommand*](https://msdn.microsoft.com/library/windows/hardware/ff539642) function is called to set a level for the ACP type on this output when the display resolution is 720p or 1080i, the driver should return the DDERR\_TOOBIGSIZE error code because the resolution is too high to set the protection level for the ACP type on component output connectors.
 
- 
+ 
 
- 
+ 
 
 
 

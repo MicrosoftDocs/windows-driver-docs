@@ -1,17 +1,12 @@
 ---
 title: Halftone Algorithms
-author: windows-driver-content
 description: Halftone Algorithms
 ms.assetid: 1831f952-4c83-4dfa-87e7-1c755f143227
 keywords:
 - HP-GL/2 monochrome WDK Unidrv , halftone algorithms
 - PCL-5e WDK Unidrv , halftone algorithms
 - halftoning WDK Unidrv
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +20,7 @@ Some printer vendors prefer to use different halftone algorithms while printing 
 
 The first example shows how to incorporate halftone rendering while printing text.
 
-```
+```cpp
 *Ifdef: WINNT_51
 *Feature: TEXTHALFTONE
 {
@@ -53,7 +48,7 @@ The first example shows how to incorporate halftone rendering while printing tex
 
 The second example includes commands for halftone rendering while printing vector graphics.
 
-```
+```cpp
 *Ifdef:  WINNT_51
 *Feature: GRAPHICSHALFTONE
 {
@@ -80,7 +75,7 @@ The second example includes commands for halftone rendering while printing vecto
 
 The third example includes commands for halftone rendering while printing bitmaps.
 
-```
+```cpp
 *Ifdef: WINNT_51
 *Feature: PHOTOHALFTONE
 {
@@ -105,9 +100,9 @@ The third example includes commands for halftone rendering while printing bitmap
 *Endif:
 ```
 
- 
+ 
 
- 
+ 
 
 
 

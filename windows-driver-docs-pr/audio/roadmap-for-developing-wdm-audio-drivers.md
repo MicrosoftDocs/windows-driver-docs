@@ -2,11 +2,7 @@
 title: Roadmap for Developing WDM Audio Drivers
 description: Roadmap for Developing WDM Audio Drivers
 ms.assetid: fa75ff65-32fe-4002-89fd-bf345502a9ac
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -59,9 +55,9 @@ To create a WDM audio driver, perform the following steps:
 
 These are the basic steps. Additional steps might be necessary based on the needs of your individual driver.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -4,11 +4,7 @@ description: Sample Biometric Driver
 ms.assetid: 9f7392db-020c-4832-9950-5db80ac33810
 keywords:
 - biometric drivers WDK , sample drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,9 +17,9 @@ WudfBioUsbSample is based on the [umdf\_fx2](https://github.com/Microsoft/Window
 
 This documentation refers to WudfBioUsbSample to show some of the requirements of a WBDI driver.
 
- 
+ 
 
- 
+ 
 
 
 

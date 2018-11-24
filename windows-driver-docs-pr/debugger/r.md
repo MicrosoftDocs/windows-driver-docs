@@ -3,11 +3,7 @@ title: R  (Windows Debugger Glossary)
 description: Glossary page - R
 Robots: noindex, nofollow
 ms.assetid: 77bd1a66-39b3-4990-801e-4192a6e9cf47
-ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,9 +32,9 @@ For more information, see [**Register Context**](-thread--set-register-context-.
 <span id="retail_build"></span><span id="RETAIL_BUILD"></span>**retail build**  
 See free build.
 
- 
+ 
 
- 
+ 
 
 
 

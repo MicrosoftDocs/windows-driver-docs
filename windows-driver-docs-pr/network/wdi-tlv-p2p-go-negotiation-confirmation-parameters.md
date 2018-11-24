@@ -1,13 +1,8 @@
 ---
 title: WDI_TLV_P2P_GO_NEGOTIATION_CONFIRMATION_PARAMETERS
-author: windows-driver-content
 description: WDI_TLV_P2P_GO_NEGOTIATION_CONFIRMATION_PARAMETERS is a TLV that contains incoming GO Negotiation Confirmation parameters.
 ms.assetid: 69A20B64-C2B9-4C96-8119-EE64E80201EB
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_GO_NEGOTIATION_CONFIRMATION_PARAMETERS Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -37,7 +32,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | UINT8 | Wi-Fi Direct Group capability bitmask. The bitmask matches those defined in Table 13-Group Capability Bitmap definition of the Wi-Fi Direct technical specification. |
 | UINT8 | The bits in the Group capability bitmap above that are set by the operating system.                                                                                  |
 
- 
+ 
 
 Requirements
 ------------
@@ -63,9 +58,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

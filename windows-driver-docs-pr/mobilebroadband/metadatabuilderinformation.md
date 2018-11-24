@@ -2,11 +2,7 @@
 title: MetadataBuilderInformation
 description: MetadataBuilderInformation
 ms.assetid: 94403994-2165-405e-bfa0-974af8e241fe
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -52,17 +48,17 @@ A string that contains between 1 and 256 printable characters inclusive.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Application](application-service-schema.md)</p></td>
-<td><p>The [Application](application-service-schema.md) element specifies the name of the application software that created the service metadata package.</p></td>
+<td><p><a href="application-service-schema.md" data-raw-source="[Application](application-service-schema.md)">Application</a></p></td>
+<td><p>The <a href="application-service-schema.md" data-raw-source="[Application](application-service-schema.md)">Application</a> element specifies the name of the application software that created the service metadata package.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Version](version.md)</p></td>
-<td><p>The [Version](version.md) element specifies the version of the application software that created the service metadata package.</p></td>
+<td><p><a href="version.md" data-raw-source="[Version](version.md)">Version</a></p></td>
+<td><p>The <a href="version.md" data-raw-source="[Version](version.md)">Version</a> element specifies the version of the application software that created the service metadata package.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Parent_elements"></span><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Parent elements
 
@@ -80,13 +76,13 @@ A string that contains between 1 and 256 printable characters inclusive.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[PackageInfo](packageinfo.md)</p></td>
-<td><p>The [PackageInfo](packageinfo.md) element is the parent element of the [PackageInfo XML schema](packageinfo-xml-schema.md). The child elements of the PackageInfo element specify the attributes of the device metadata package.</p></td>
+<td><p><a href="packageinfo.md" data-raw-source="[PackageInfo](packageinfo.md)">PackageInfo</a></p></td>
+<td><p>The <a href="packageinfo.md" data-raw-source="[PackageInfo](packageinfo.md)">PackageInfo</a> element is the parent element of the <a href="packageinfo-xml-schema.md" data-raw-source="[PackageInfo XML schema](packageinfo-xml-schema.md)">PackageInfo XML schema</a>. The child elements of the PackageInfo element specify the attributes of the device metadata package.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="XSD"></span><span id="xsd"></span>XSD
 
@@ -122,9 +118,9 @@ A string that contains between 1 and 256 printable characters inclusive.
 
 The MetadataBuilderInformation element is not used by any component of the operating system. It is reserved for use by the OEM, IHV, and ISV.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: Using Kernel Mode Performance Counters
 description: Using Kernel Mode Performance Counters
 ms.assetid: b740dd92-ad75-4dea-98d4-dce04b273d2f
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,9 +33,9 @@ Use the following steps to develop new counters:
 
 For an example of a kernel-mode PCW provider, see the [Kernel Counter Sample (Kcs)](http://go.microsoft.com/fwlink/p/?LinkId=617718) in the [Windows driver samples](http://go.microsoft.com/fwlink/p/?LinkId=616507) repository on GitHub.
 
- 
+ 
 
- 
+ 
 
 
 

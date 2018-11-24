@@ -1,6 +1,5 @@
 ---
 title: Passthrough Template Data Types
-author: windows-driver-content
 description: Passthrough Template Data Types
 ms.assetid: 9e5e6a12-5847-45fe-bee5-68944cd546d7
 keywords:
@@ -9,11 +8,7 @@ keywords:
 - PASSTHROUGH data type WDK GDL
 - schemas WDK GDL , validating PASSTHROUGH data types
 - ArrayLabel directive WDK GDL
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,7 +27,7 @@ If the XML syntax conflicts with the basic GDL syntax rules, the entire value (o
 
 For example, consider the following example template.
 
-```
+```cpp
 *Template:  ELEMENT_CONTENT
 {
     *Type:  DATATYPE
@@ -44,7 +39,7 @@ With the preceding template, the parser filter does not create an XSD schema dat
 
 Consider the following GDL entry.
 
-```
+```cpp
 *InLineXML:  <BeginValue:XML>
  <Cell CellOrdinal="0">
          <Value xsi:type="xsd:double">16890</Value>
@@ -56,7 +51,7 @@ Consider the following GDL entry.
 
 If the preceding entry is interpreted by using the earlier example template, the following XML output would occur.
 
-```
+```cpp
 <GDL_ATTRIBUTE Name="*InLineXML"  >
   <Cell CellOrdinal="0">
     <Value xsi:type="xsd:double">16890</Value>
@@ -68,9 +63,9 @@ If the preceding entry is interpreted by using the earlier example template, the
 
 If you want to validate the PASSTHROUGH instances by using an XML schema, you should use the [XSD\_DEFINED data type](xsd-template-data-types.md) instead of PASSTHROUGH, because the XSD\_DEFINED data type allows the XSD schema to be explicitly defined in the template and is integrated into the schema output by the parser.
 
- 
+ 
 
- 
+ 
 
 
 

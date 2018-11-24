@@ -1,6 +1,5 @@
 ---
 title: Error Records
-author: windows-driver-content
 description: Error Records
 ms.assetid: 080da29a-b5cb-45a5-848d-048d9612ee2a
 keywords:
@@ -11,11 +10,7 @@ keywords:
 - error record format WDK WHEA
 - error record header WDK WHEA
 - error record section WDK WHEA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -74,9 +69,9 @@ For additional hardware error data that does not fit into one of the section typ
 
 If there is additional hardware error data that does not fit into one of the section types in the previous list or into a defined platform-specific error record section, a generic error record section is used to contain the data.
 
- 
+ 
 
- 
+ 
 
 
 

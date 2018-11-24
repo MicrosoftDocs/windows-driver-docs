@@ -11,11 +11,7 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,7 +25,7 @@ The WIA\_DPS\_ENDORSER\_CHARACTERS property contains all of the valid characters
 
 **Note**  This property is now obsolete. Use [**WIA\_IPS\_PRINTER\_ENDORSER\_VALID\_CHARACTERS**](wia-ips-printer-endorser-valid-characters.md) instead.
 
- 
+ 
 
 Property Type: VT\_BSTR
 
@@ -58,16 +54,16 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**WIA\_DPS\_ENDORSER\_STRING**](wia-dps-endorser-string.md)
 
 [**WIA\_IPS\_PRINTER\_ENDORSER\_VALID\_CHARACTERS**](wia-ips-printer-endorser-valid-characters.md)
 
- 
+ 
 
- 
+ 
 
 
 

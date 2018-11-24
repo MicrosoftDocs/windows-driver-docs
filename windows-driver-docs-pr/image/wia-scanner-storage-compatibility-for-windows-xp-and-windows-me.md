@@ -1,13 +1,8 @@
 ---
 title: WIA Scanner Storage Compatibility for Windows XP and Windows Me
-author: windows-driver-content
 description: WIA Scanner Storage Compatibility for Windows XP and Windows Me
 ms.assetid: 10f3d212-7e63-40ef-99b5-eba6bb13e3e8
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -18,9 +13,9 @@ The WIA service in Windows Vista contains an internal compatibility layer so tha
 
 For additional notes on Windows XP and Windows Me compatibility, see [WIA Flatbed Scanner Compatibility for Windows Me and Windows XP](wia-flatbed-scanner-compatibility-for-windows-xp-and-windows-me.md).
 
- 
+ 
 
- 
+ 
 
 
 

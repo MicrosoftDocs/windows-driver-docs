@@ -2,11 +2,7 @@
 title: KSMETHODSETID\_BdaChangeSync
 description: KSMETHODSETID\_BdaChangeSync
 ms.assetid: 260b227d-0d49-4efa-8f8c-4c66886cf9f6
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,13 +28,13 @@ Commits a list of requested changes.
 <span id="KSMETHOD_BDA_GET_CHANGE_STATE"></span><span id="ksmethod_bda_get_change_state"></span>[**KSMETHOD\_BDA\_GET\_CHANGE\_STATE**](ksmethod-bda-get-change-state.md)  
 Determines the current change state for a filter.
 
-### <span id="comments"></span><span id="COMMENTS"></span>Comments
+### Comments
 
 This method set is implemented on filters. The network provider filter can use this method set to begin a list of changes, make the changes, then commit them all at once.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,16 +1,11 @@
 ---
 title: Installing a PCL XL Minidriver
-author: windows-driver-content
 description: Installing a PCL XL Minidriver
 ms.assetid: 88e4e1a0-8adb-4f40-abeb-a4da761ca4ee
 keywords:
 - PCL XL vector graphics WDK Unidrv , installing minidrivers
 - minidrivers WDK PCL XL
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,14 +17,14 @@ ms.localizationpriority: medium
 
 In Windows XP and later, ntprint.inf has the following \[PCLXL.OEM\] section:
 
-```
+```cpp
 [PCLXL.OEM]
 CopyFiles=PCLXL,@PCL5ERES.DLL
 ```
 
 The [**INF CopyFiles directive**](https://msdn.microsoft.com/library/windows/hardware/ff546346) copies all of the files listed in the \[PCLXL\] section, as well as pcl5eres.dll, to the default destination directory. The \[PCLXL\] section also appears in ntprint.inf and lists the files to be copied.
 
-```
+```cpp
 [PCLXL]
 PCLXL.DLL
 PCLXL.GPD
@@ -42,7 +37,7 @@ Pclxl.dll contains the PCL XL [*UFMs*](https://msdn.microsoft.com/library/window
 
 To install a PCL XL printer minidriver, an OEM should add a section similar to the following in the printer-specific INF. This INF loads before ntprint.inf does.
 
-```
+```cpp
 [P6SAMPLE.GPD]
 CopyFiles=@P6SAMPLE.GPD
 DataSection=UNIDRV_DATA
@@ -55,9 +50,9 @@ In the preceding section, the **CopyFiles** directive in the first line copies t
 
 For additional information about using the **CopyFiles** directive for printer installations, see [Printer INF File CopyFiles Sections](printer-inf-file-copyfiles-sections.md).
 
- 
+ 
 
- 
+ 
 
 
 

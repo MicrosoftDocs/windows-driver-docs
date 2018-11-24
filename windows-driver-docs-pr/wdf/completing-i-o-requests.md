@@ -1,6 +1,5 @@
 ---
 title: Completing I/O Requests
-author: windows-driver-content
 description: Completing I/O Requests
 ms.assetid: ec5aef7a-110e-430c-902d-669ccc7095ac
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - completing I/O requests WDK KMDF
 - request processing WDK KMDF , completing requests
 - status information WDK KMDF , completing I/O requests
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -88,9 +83,9 @@ If a driver sends an I/O request synchronously, it typically calls [**WdfRequest
 
 For more information about completing I/O requests, see [Synchronizing Cancel and Completion Code](synchronizing-cancel-and-completion-code.md).
 
- 
+ 
 
- 
+ 
 
 
 

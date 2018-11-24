@@ -7,11 +7,7 @@ keywords:
 - network notify objects WDK , adding components
 - adding network components
 - network component additions WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,7 +19,7 @@ ms.localizationpriority: medium
 
 The network configuration subsystem can inform a notify object when the subsystem adds network components. After initializing a notify object, the subsystem calls the notify object's [**INetCfgComponentNotifyGlobal::GetSupportedNotifications**](https://msdn.microsoft.com/library/windows/hardware/ff547734) method to retrieve the types of notifications required by the object. If the notify object specified that it required notification when network components are added, the subsystem calls the notify object's [**INetCfgComponentNotifyGlobal::SysNotifyComponent**](https://msdn.microsoft.com/library/windows/hardware/ff547736) method and passes NCN\_ADD to inform the notify object that the subsystem installed a network component. If the component that owns the notify object should bind to the specified component, the notify object should perform operations to facilitate the binding. For example, the following code shows how the notify object can bind its component to the specified component if the specified component is a required physical network card.
 
-```
+```cpp
 HRESULT CSample::SysNotifyComponent(DWORD dwChangeFlag,
         INetCfgComponent* pnccItem)
 {
@@ -56,9 +52,9 @@ HRESULT CSample::SysNotifyComponent(DWORD dwChangeFlag,
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

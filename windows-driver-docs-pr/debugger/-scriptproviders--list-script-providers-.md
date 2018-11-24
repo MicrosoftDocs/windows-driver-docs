@@ -3,11 +3,7 @@ title: .scriptproviders (List Script Providers)
 description: The .scriptproviders command lists the active script providers.
 ms.assetid: DF2FAA60-422F-4600-9E31-0F8EF127E5A9
 keywords: [".scriptproviders (List Script Providers) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **.scriptproviders** command lists the active script providers.
 
-```
+```dbgcmd
 .scriptproviders 
 ```
 
@@ -55,7 +51,7 @@ None
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -63,7 +59,7 @@ The .scriptproviders command will list all the script languages which are presen
 
 In the example below, the JavaScript and NatVis providers are loaded.
 
-```
+```dbgcmd
 0:000> .scriptproviders
 Available Script Providers:
     NatVis (extension '.NatVis')
@@ -74,7 +70,7 @@ Available Script Providers:
 
 Before using any of the .script commands, a scripting provider needs to be loaded. Use the [**.load (Load Extension DLL)**](-load---loadby--load-extension-dll-.md) command to load the JavaScript provider.
 
-```
+```dbgcmd
 0:000> .load jsprovider.dll
 ```
 
@@ -85,9 +81,9 @@ Before using any of the .script commands, a scripting provider needs to be loade
 
 [**.scriptload (Load Script)**](-scriptload--load-script-.md)
 
- 
+ 
 
- 
+ 
 
 
 

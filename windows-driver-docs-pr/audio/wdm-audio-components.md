@@ -8,11 +8,7 @@ keywords:
 - WDM audio drivers WDK , components
 - audio drivers WDK , components
 - components WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +30,9 @@ This section describes the system-supplied Microsoft Windows Driver Model (WDM) 
 
 [Virtual Audio Devices](virtual-audio-devices.md)
 
- 
+ 
 
- 
+ 
 
 
 

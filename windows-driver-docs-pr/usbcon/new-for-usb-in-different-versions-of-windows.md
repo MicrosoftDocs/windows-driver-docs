@@ -1,12 +1,7 @@
 ---
 Description: What's new for USB in different versions of Windows.
 title: New for USB in different versions of Windows
-author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,10 +15,6 @@ The highlights do not cover versions of Windows earlier than Windows 8.
 -   [Windows 10: What's new for USB](windows-10--what-s-new-for-usb.md)
 -   [Windows 8.1: What's new for USB](what-s-new-for-usb-in-windows-blue.md)
 -   [Windows 8: What's new for USB](what-s-new-in-usb-in-windows-8.md)
-
- 
-
- 
 
 
 

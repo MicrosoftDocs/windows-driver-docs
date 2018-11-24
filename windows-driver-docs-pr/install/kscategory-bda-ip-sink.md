@@ -12,6 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # KSCATEGORY_BDA_IP_SINK
@@ -42,7 +43,7 @@ The KSCATEGORY_BDA_IP_SINK [device interface class](https://msdn.microsoft.com/l
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -71,9 +72,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

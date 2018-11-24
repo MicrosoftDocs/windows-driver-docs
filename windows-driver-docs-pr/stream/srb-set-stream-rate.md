@@ -9,11 +9,7 @@ api_name:
 - SRB_SET_STREAM_RATE
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,9 +21,9 @@ ms.localizationpriority: medium
 
 The **SRB\_SET\_STREAM\_RATE** command sets the rate at which a stream should run.
 
- 
+ 
 
- 
+ 
 
 
 

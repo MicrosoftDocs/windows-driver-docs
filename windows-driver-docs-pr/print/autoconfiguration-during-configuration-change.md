@@ -1,16 +1,11 @@
 ---
 title: Autoconfiguration During Configuration Change
-author: windows-driver-content
 description: Autoconfiguration During Configuration Change
 ms.assetid: 0294d34d-06e4-4e57-8f4d-4100ab482852
 keywords:
 - autoconfiguration WDK printer , during configuration changes
 - printer autoconfiguration WDK printer , during configuration changes
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +26,9 @@ The following figure shows the data flow in autoconfiguration when the device's 
 
 The driver can determine when there is a change in configuration for the device, because the notification message carries the changed value (the schema is defined in the Bidi Notification design specification). However, if the notification is too large to be sent through the notification mechanism, the notification will have one or more ReducedSchema instances, each of which indicates that a device characteristic has changed, but without any details of its new value.
 
- 
+ 
 
- 
+ 
 
 
 

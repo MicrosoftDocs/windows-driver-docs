@@ -1,6 +1,5 @@
 ---
 title: Encoder Code Examples
-author: windows-driver-content
 description: Encoder Code Examples
 ms.assetid: cbe773ad-2222-4d62-8e1e-6d47418a3e7c
 keywords:
@@ -15,11 +14,7 @@ keywords:
 - ENCAPIPARAM_BITRATE
 - bit rates WDK encoder
 - registry WDK encoder
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,7 +33,7 @@ The following code examples are based on the [AVStream Simulated Hardware Sample
 
 The following code snippets demonstrate how to implement support for the [ENCAPIPARAM\_BITRATE](https://msdn.microsoft.com/library/windows/hardware/ff559520) property. Use a [**KSPROPERTY\_STEPPING\_LONG**](https://msdn.microsoft.com/library/windows/hardware/ff565631) structure to specify a stepping granularity of 400 bits per second (bps) with a 400-bps lower-bound and 4,000,000-bps upper-bound.
 
-```
+```cpp
 const KSPROPERTY_STEPPING_LONG BitRateRanges [] = {
     {
         400,
@@ -53,7 +48,7 @@ If you access the encoder filter's property page by right-clicking on the filter
 
 Next, specify the default encoding bit rate of the encoder filter when an instance of it is created. Note that the data type used is a ULONG that corresponds to the property value type required by the ENCAPIPARAM\_BITRATE property. This value is the default encoding "Bit Rate" that is displayed in the encoder's property page:
 
-```
+```cpp
 const ULONG BitRateValues [] = {
     1000000
 };
@@ -61,7 +56,7 @@ const ULONG BitRateValues [] = {
 
 Specify the list of legal ranges and a default value for the ENCAPIPARAM\_BITRATE property:
 
-```
+```cpp
  const KSPROPERTY_MEMBERSLIST BitRateMembersList [] = {
     {
         {
@@ -84,7 +79,7 @@ Specify the list of legal ranges and a default value for the ENCAPIPARAM\_BITRAT
 };
 ```
 
-```
+```cpp
  const KSPROPERTY_VALUES BitRateValuesSet = {
     {
         STATICGUIDOF (KSPROPTYPESETID_General),
@@ -98,7 +93,7 @@ Specify the list of legal ranges and a default value for the ENCAPIPARAM\_BITRAT
 
 Specify the single property defined for the ENCAPIPARAM\_BITRATE property set:
 
-```
+```cpp
 DEFINE_KSPROPERTY_TABLE(ENCAPI_BitRate) {
     DEFINE_KSPROPERTY_ITEM (
         0,
@@ -117,7 +112,7 @@ DEFINE_KSPROPERTY_TABLE(ENCAPI_BitRate) {
 
 **Note**   The *get*-property handler returns the encoding bit rate, and the *Set*-property handler must test that the incoming passed-in value is valid before using it.
 
- 
+ 
 
 ### **Implementing Supported Encoding Bit Rate Modes**
 
@@ -125,7 +120,7 @@ The following code snippets demonstrate how to implement support for the [ENCAPI
 
 Define the encoding modes supported by the encoder:
 
-```
+```cpp
  const VIDEOENCODER_BITRATE_MODE BitRateModeValues [] = {
     ConstantBitRate,
     VariableBitRateAverage
@@ -134,7 +129,7 @@ Define the encoding modes supported by the encoder:
 
 Specify the default encoding bit rate mode as average variable bit rate:
 
-```
+```cpp
 const VIDEOENCODER_BITRATE_MODE BitRateModeDefaultValues [] = {
     VariableBitRateAverage
 };
@@ -142,7 +137,7 @@ const VIDEOENCODER_BITRATE_MODE BitRateModeDefaultValues [] = {
 
 Specify the list of legal ranges and default value for the ENCAPIPARAM\_BITRATE\_MODE property:
 
-```
+```cpp
 const KSPROPERTY_MEMBERSLIST BitRateModeMembersList [] = {
     {
         {
@@ -177,7 +172,7 @@ const KSPROPERTY_VALUES BitRateModeValuesSet = {
 
 Specify the single property defined for the ENCAPIPARAM\_BITRATE\_MODE property set:
 
-```
+```cpp
 DEFINE_KSPROPERTY_TABLE(ENCAPI_BitRateMode) {
     DEFINE_KSPROPERTY_ITEM (
         0,
@@ -196,11 +191,11 @@ DEFINE_KSPROPERTY_TABLE(ENCAPI_BitRateMode) {
 
 **Note**   The *get*-property handler should return the encoding bit rate mode, and the *Set*-property handler must test that the incoming passed-in value is valid before using it.
 
- 
+ 
 
 The property sets are then specified as the [**KSFILTER\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff562553) structure's automation table.
 
-```
+```cpp
 DEFINE_KSPROPERTY_SET_TABLE(PropertyTable) {
     DEFINE_KSPROPERTY_SET(
         &ENCAPIPARAM_BITRATE_MODE,
@@ -240,7 +235,7 @@ The following code sample demonstrates how to create a *Capabilities* registry k
 
 **Note:** The following code assumes the presence of a single hardware encoder per physical device. If your hardware contains more than one encoder then you must iterate through the list returned in the call to the **IoGetDeviceInterfaces** function and register the capabilities for each encoder.
 
-```
+```cpp
 /**************************************************************************
 CreateDwordValueInCapabilityRegistry()
 
@@ -326,9 +321,9 @@ NTSTATUS CreateDwordValueInCapabilityRegistry(IN PDEVICE_OBJECT pdo, IN GUID cat
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -9,11 +9,7 @@ keywords:
 - subdevices WDK audio
 - multifunction audio devices WDK , about multifunction audio devices
 - multiple function audio devices WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,9 +33,9 @@ The remainder of this section describes the steps necessary to implement approac
 
 [Multifunction Device Limits](multifunction-device-limits.md)
 
- 
+ 
 
- 
+ 
 
 
 

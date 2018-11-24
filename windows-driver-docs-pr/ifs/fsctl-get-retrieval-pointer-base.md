@@ -1,5 +1,5 @@
 ---
-title: FSCTL\_GET\_RETRIEVAL\_POINTER\_BASE control code
+title: FSCTL_GET_RETRIEVAL_POINTER_BASE control code
 description: The FSCTL\_GET\_RETRIEVAL\_POINTER\_BASE returns the sector offset to the first logical cluster number (LCN) of the file system relative to the start of the volume.
 ms.assetid: 2c342e58-ef9a-487a-beb9-4353dcbc8115
 keywords: ["FSCTL_GET_RETRIEVAL_POINTER_BASE control code Installable File System Drivers"]
@@ -11,11 +11,7 @@ api_location:
 - Ntifs.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -87,7 +83,7 @@ Status block
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -123,9 +119,9 @@ Requirements
 
 [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462)
 
- 
+ 
 
- 
+ 
 
 
 

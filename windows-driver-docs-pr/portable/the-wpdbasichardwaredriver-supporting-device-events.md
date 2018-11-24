@@ -1,11 +1,7 @@
 ---
 Description: Supporting Device Events
 title: Supporting Device Events
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,7 +18,7 @@ This custom event is sent to notify any connected client that a new sensor readi
 | SENSOR\_READING                  | An unsigned large integer value that contains the sensor reading.   |
 | SENSOR\_UPDATE\_INTERVAL         | An unsigned integer value that contains the sensor update interval. |
 
- 
+
 
 The event GUID for this custom event is defined in *Stdafx.h*. In **WpdBaseDriver::ProcessReadData**, the driver calls **WpdBaseDriver::PostSensorReadingEvent** after it extracts the sensor reading, updates interval from a read request, and then converts them to DWORD values.
 
@@ -32,7 +28,7 @@ The event GUID for this custom event is defined in *Stdafx.h*. In **WpdBaseDrive
 2.  Serializes the **IPortableDeviceValues** into a BYTE buffer.
 3.  Calls **IWDFDevice::PostEvent** that has the EventGuid set to WPD\_EVENT\_NOTIFICATION, the event type set to WdfEventBroadcast, and the serialized BYTE buffer of the event parameters:
 
-```
+```cpp
 if (hr == S_OK)
 {
     // Initialize the event parameters
@@ -75,7 +71,6 @@ if (hr == S_OK)
                                  cbBuffer);
     CHECK_HR(hr, "Failed to post the WPD broadcast event");
 }
-
 ```
 
 To receive any WPD event, an application would implement the **IPortableDeviceEventCallback::OnEvent** callback method and call **IPortableDevice::Advise** to register to receive an event notification callback.
@@ -90,9 +85,9 @@ In the event callback, the application checks if the event GUID matches WPD\_EVE
 
 [The WPD Driver Samples](the-wpd-driver-samples.md)
 
- 
 
- 
+
+
 
 
 

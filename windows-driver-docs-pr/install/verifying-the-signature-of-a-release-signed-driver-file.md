@@ -2,11 +2,7 @@
 title: Verifying the Signature of a Release-Signed Driver File
 description: Verifying the Signature of a Release-Signed Driver File
 ms.assetid: 70876389-6493-4c16-8a82-ca72fc23325c
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -15,7 +11,7 @@ ms.localizationpriority: medium
 
 To verify an embedded signature in a driver file that is created by a [Software Publisher Certificate (SPC)](software-publisher-certificate.md), use the following [**SignTool**](https://msdn.microsoft.com/library/windows/hardware/ff551778) command:
 
-```
+```cpp
 SignTool verify /v /kp DriverFileName.sys
 ```
 
@@ -31,13 +27,13 @@ Where:
 
 For example, the following command verifies that *Toaster.sys* has a valid embedded signature. In this example, T*oaster.sys* is in the *amd64* subdirectory under the directory in which the command is run.
 
-```
+```cpp
 SignTool verify /kp amd64\toaster.sys
 ```
 
- 
+ 
 
- 
+ 
 
 
 

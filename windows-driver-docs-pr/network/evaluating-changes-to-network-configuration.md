@@ -6,11 +6,7 @@ keywords:
 - notify objects WDK networking , change processing
 - network notify objects WDK , change processing
 - changes to network configuration WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +24,9 @@ The following topics describe examples of how a notify object processes changes 
 
 [Changing Bindings for a Component](changing-bindings-for-a-component.md)
 
- 
+ 
 
- 
+ 
 
 
 

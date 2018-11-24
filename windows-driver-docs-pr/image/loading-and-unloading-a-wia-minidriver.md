@@ -1,13 +1,8 @@
 ---
 title: Loading and Unloading a WIA Minidriver
-author: windows-driver-content
 description: Loading and Unloading a WIA Minidriver
 ms.assetid: a5f930c3-f92c-498a-a334-b5eb60fbd61b
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,7 +32,7 @@ If the device port must be opened, a call to [**CreateFile**](https://msdn.micro
 
 The following example shows an implementation of the **IStiUSD::Initialize** method.
 
-```
+```cpp
 STDMETHODIMP CWIADevice::Initialize(
   PSTIDEVICECONTROL   pIStiDeviceControl,
   DWORD               dwStiVersion,
@@ -135,7 +130,7 @@ STDMETHODIMP CWIADevice::Initialize(
       // This is where you read registry entries for your device.
       // The DeviceData section is the proper place to put this 
       // information. Information about your device should
-      // have been written using the WIA device&#39;s .INF installation
+      // have been written using the WIA device's .INF installation
       // file.
       // You can access this information from this location in the
       // Registry. The WIA service owns the hParameters HKEY. 
@@ -159,7 +154,7 @@ The WIA service calls [**IStiUSD::GetCapabilities**](https://msdn.microsoft.com/
 
 The following example shows an implementation of **IStiUSD::GetCapabilities**.
 
-```
+```cpp
 /********************************************************************\
 * CWIADevice::GetCapabilities
 * Remarks:
@@ -192,9 +187,9 @@ STDMETHODIMP CWIADevice::GetCapabilities(PSTI_USD_CAPS pUsdCaps)
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,20 +2,16 @@
 title: Nmake2MsBuild
 description: The Nmake2MsBuild utility generates a Visual Studio project for a driver that was built using a previous version of the WDK from your driver's source code files, and from the sources, dirs, and makefile.inc files.
 ms.assetid: D6E1C124-9A5F-486B-865E-45A0BC58A5A3
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # Nmake2MsBuild
 
 
-**Note**  The Nmake2MsBuild tool was removed from the WDK starting in Windows 10, version 1511.
+**Note**  The Nmake2MsBuild tool was removed from the WDK starting in Windows 10, version 1511.
 
- 
+
 
 The Nmake2MsBuild utility generates a Visual Studio project for a driver that was built using a previous version of the WDK from your driver's source code files, and from the *sources*, *dirs*, and *makefile.inc* files. The utility creates the Visual Studio project file in the same directory as your existing *sources* files. The utility does not alter your source code or your earlier build files.
 
@@ -36,7 +32,6 @@ NMake2MSBuild.exe  < sources [<sources>...] | dirs >
                           [-NoPackageProject]
                           [-NoSolution]
                           [-SafeMode]
-             
 ```
 
 The conversion tool is located in the %PROGRAMFILES%\\Windows Kits\\8.0\\tools\\x86\\ directory.
@@ -82,12 +77,12 @@ The conversion tool is located in the %PROGRAMFILES%\\Windows Kits\\8.0\\tools\\
 </tr>
 <tr class="odd">
 <td align="left"><strong>-SafeMode</strong></td>
-<td align="left">SafeMode does not provide IDE/UI support for NMAKE targets, but could provide a more accurate conversion for NMAKE targets. Only specify -SafeMode if you experience issues during build steps that were previously performed in your project's NMAKE targets.</td>
+<td align="left">SafeMode does not provide IDE/UI support for NMAKE targets, but could provide a more accurate conversion for NMAKE targets. Only specify -SafeMode if you experience issues during build steps that were previously performed in your project&#39;s NMAKE targets.</td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ## <span id="Comments"></span><span id="comments"></span><span id="COMMENTS"></span>Comments
 
@@ -114,9 +109,9 @@ nmake2msbuild.exe  .\myDriver\sources
 
 [Creating a Driver From Existing Source Files](https://msdn.microsoft.com/windows-drivers/develop/creating_a_driver_from_existing_source_files)
 
- 
 
- 
+
+
 
 
 

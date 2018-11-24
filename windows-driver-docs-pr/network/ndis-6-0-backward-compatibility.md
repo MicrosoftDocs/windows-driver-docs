@@ -9,11 +9,7 @@ keywords:
 - NDIS porting drivers WDK , backward compatibility
 - porting drivers WDK networking , backward compatibility
 - network driver porting WDK , backwar
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -43,9 +39,9 @@ NDIS 6.0 does not support ATM and Token Ring drivers, but NDIS 3.0 - NDIS 5.*x* 
 
 Windows Vista does not support any versions of FDDI, ARCNET, or serialized intermediate drivers.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Access Control
-author: windows-driver-content
 description: Access Control
 ms.assetid: 7f87276f-4014-4b37-b051-4bf02acbf575
 keywords:
@@ -9,11 +8,7 @@ keywords:
 - access validation WDK file systems
 - validating security WDK file systems
 - checking security
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -39,9 +34,9 @@ A driver that implements its own security policy could rely upon the standard Wi
 
 This list is incomplete, but it describes a number of the key functions that can be used within a driver to perform access validation.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,13 +1,8 @@
 ---
 title: WDI_TLV_INTERFACE_CAPABILITIES
-author: windows-driver-content
 description: WDI_TLV_INTERFACE_CAPABILITIES is a TLV that contains the capabilities of the Wi-Fi interface.
 ms.assetid: 308331DD-FEEB-4C49-BEBD-117AE58D4792
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_INTERFACE_CAPABILITIES Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -91,7 +86,7 @@ UINT8
 Added in Windows 10, version 1607, WDI version 1.0.21.
 
 Specifies if the device supports IP docking capability. Valid values are 0 (not supported) and 1 (supported).
- 
+ 
 
 Requirements
 ------------
@@ -117,9 +112,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

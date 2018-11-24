@@ -1,17 +1,12 @@
 ---
 title: Supporting PC Cards That Have Incomplete Configuration Registers
-author: windows-driver-content
 description: Supporting PC Cards That Have Incomplete Configuration Registers
 ms.assetid: 62bdb1e7-ca45-42e6-bdf5-c48fb3ddb3fc
 keywords:
 - incomplete configuration registers WDK multifunction devices
 - system-supplied multifunction bus drivers WDK
 - mf.sys
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -71,7 +66,7 @@ When specifying a **PcCardConfig** entry for a multifunction device, the format 
 
 The following example shows an INF file for installing a multifunction device that uses mf.sys as its bus driver and has incomplete configuration registers.
 
-```
+```cpp
 ; MFSupra.inf
 ; This file installs the Supra Dual 56K modem
 ; Copyright 1999 Microsoft Corporation
@@ -149,14 +144,13 @@ PCCardConfig = 49(W)                    ; ConfigIndex
 MSFT = "Microsoft"
 M_Supra = "Supra"
 Supra1 = "Supra Dual 56K modem"
- 
 ```
 
 An INF like the one shown above copies the ID and resource information for the child functions to the registry. The mf.sys driver retrieves the information from the registry when it enumerates the child functions of the device.
 
- 
 
- 
+
+
 
 
 

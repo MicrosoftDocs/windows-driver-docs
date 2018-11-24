@@ -11,11 +11,7 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -228,7 +224,7 @@ The following table shows the WIA grouped categories and their item flags. This 
 </tbody>
 </table>
 
- 
+ 
 
 The following table shows the WIA grouped categories and their WIA properties and WIA items.
 
@@ -280,7 +276,7 @@ The following table shows the WIA grouped categories and their WIA properties an
 <td><p>WIA_CATEGORY_FLATBED</p></td>
 <td><p>Properties include those for flatbed-scanner control.</p>
 <p>Image-specific and document-specific properties are typically included.</p></td>
-<td><p>WIA Flatbed items, including child items that represent the regions that are being scanned on the scanner's flatbed platen.</p></td>
+<td><p>WIA Flatbed items, including child items that represent the regions that are being scanned on the scanner&#39;s flatbed platen.</p></td>
 </tr>
 <tr class="odd">
 <td><p>WIA_CATEGORY_FOLDER</p></td>
@@ -294,13 +290,13 @@ The following table shows the WIA grouped categories and their WIA properties an
 </tr>
 <tr class="odd">
 <td><p>WIA_CATEGORY_AUTO</p></td>
-<td><p>Properties include those for auto-configured scanning. For more information, see [WIA Properties Supported by an Auto Item](https://msdn.microsoft.com/library/windows/hardware/ff552744).</p></td>
-<td><p>WIA auto item that represents the scanner's auto-configured scanning settings.</p></td>
+<td><p>Properties include those for auto-configured scanning. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552744" data-raw-source="[WIA Properties Supported by an Auto Item](https://msdn.microsoft.com/library/windows/hardware/ff552744)">WIA Properties Supported by an Auto Item</a>.</p></td>
+<td><p>WIA auto item that represents the scanner&#39;s auto-configured scanning settings.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -322,14 +318,14 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**WIA\_IPA\_ITEM\_FLAGS**](wia-ipa-item-flags.md)
 
- 
+ 
 
- 
+ 
 
 
 

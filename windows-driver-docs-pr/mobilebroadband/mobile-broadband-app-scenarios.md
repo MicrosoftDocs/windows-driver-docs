@@ -2,11 +2,7 @@
 title: Mobile broadband app scenarios
 description: Mobile broadband app scenarios
 ms.assetid: 10a90dcf-2cca-4299-b999-d9e30a7359ad
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +27,9 @@ The topics in this section describe the primary scenarios for a mobile broadband
 
 -   [Premium services](premium-services.md)
 
- 
+ 
 
- 
+ 
 
 
 

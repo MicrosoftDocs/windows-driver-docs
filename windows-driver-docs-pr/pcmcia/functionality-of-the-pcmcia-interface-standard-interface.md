@@ -2,11 +2,7 @@
 title: Functionality of the PCMCIA_INTERFACE_STANDARD Interface
 description: Functionality of the PCMCIA_INTERFACE_STANDARD Interface
 ms.assetid: 301b4165-4753-4d55-9760-17628174c043
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +22,9 @@ This section describes the functionality of the PCMCIA\_INTERFACE\_STANDARD inte
 
 For more information about the routines provided by the PCMCIA\_INTERFACE\_STANDARD interface, see [PCMCIA\_INTERFACE\_STANDARD Interface Memory Card Routines](https://msdn.microsoft.com/library/windows/hardware/ff537607).
 
- 
+ 
 
- 
+ 
 
 
 

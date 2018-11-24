@@ -1,6 +1,5 @@
 ---
 title: State Machines in the Framework
-author: windows-driver-content
 description: State Machines in the Framework
 ms.assetid: 5ef307c6-0310-4a83-a63f-3a6d96782013
 keywords:
@@ -14,11 +13,7 @@ keywords:
 - current state machine state WDK KMDF
 - status information WDK KMDF , state machines
 - power policy WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -44,9 +39,9 @@ Very few drivers need to be aware of the state of a device's state machines. How
     -   [**WdfDeviceGetDevicePowerState**](https://msdn.microsoft.com/library/windows/hardware/ff545985)
     -   [**WdfDeviceGetDevicePowerPolicyState**](https://msdn.microsoft.com/library/windows/hardware/ff545974)
 
- 
+ 
 
- 
+ 
 
 
 

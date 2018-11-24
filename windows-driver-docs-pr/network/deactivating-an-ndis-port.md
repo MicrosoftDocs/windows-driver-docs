@@ -7,11 +7,7 @@ keywords:
 - NDIS ports WDK , deactivating
 - deactivating NDIS ports WDK NDIS
 - deactivation PnP events WDK NDIS ports
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -63,9 +59,9 @@ When a miniport driver deactivates the default port, NDIS closes all of the bind
 
 After a port is successfully deactivated, the port is in the allocated state. Miniport drivers cannot indicate received data or status for the port in the allocated state.
 
- 
+ 
 
- 
+ 
 
 
 

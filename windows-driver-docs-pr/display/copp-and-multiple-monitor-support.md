@@ -9,11 +9,7 @@ keywords:
 - protected video WDK COPP , multiple monitors
 - multiple monitors WDK COPP
 - monitors WDK COPP
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ This section applies only to Windows Server 2003 SP1 and later, and Windows XP S
 
 The only multiple-monitor mode supported by COPP is DualView. Various clone and theater modes are not supported. The only exception to this rule is the case where a graphics adapter uses both composite and S-Video connectors and simultaneously feeds the same display signal through both connectors. In this case, the video miniport driver should report that the connector is S-Video and should ensure that the appropriate protections are applied to both display outputs when requested by COPP calls initiated through applications.
 
- 
+ 
 
- 
+ 
 
 
 

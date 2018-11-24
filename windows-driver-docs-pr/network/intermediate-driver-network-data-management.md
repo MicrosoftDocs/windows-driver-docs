@@ -6,11 +6,7 @@ keywords:
 - intermediate drivers WDK networking , network data management
 - NDIS intermediate drivers WDK , network data management
 - network data management WDK NDIS intermediate
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -40,9 +36,9 @@ An intermediate driver with a connectionless lower edge always receives incoming
 
 An intermediate driver with a connection-oriented lower edge always receives incoming data from an underlying miniport adapter from its [**ProtocolCoReceiveNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff570256) function.
 
- 
+ 
 
- 
+ 
 
 
 

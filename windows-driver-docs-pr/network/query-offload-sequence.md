@@ -4,11 +4,7 @@ description: Query Offload Sequence
 ms.assetid: c0570be7-f85f-443f-8472-b8881ecf27e6
 keywords:
 - querying offloaded TCP chimney state, sequence
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,9 +32,9 @@ The offload target's internal query function, which is labeled "NicQuery" in the
 
 Note that the host stack can query a state object while a query of that state object is in progress.
 
- 
+ 
 
- 
+ 
 
 
 

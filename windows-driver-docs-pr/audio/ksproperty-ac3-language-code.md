@@ -11,11 +11,7 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -51,13 +47,13 @@ The KSPROPERTY\_AC3\_LANGUAGE\_CODE property specifies the language code of the 
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p>[<strong>KSPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564262)</p></td>
-<td align="left"><p>[<strong>KSAC3_LANGUAGE_CODE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537081)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564262" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564262)"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537081" data-raw-source="[&lt;strong&gt;KSAC3_LANGUAGE_CODE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537081)"><strong>KSAC3_LANGUAGE_CODE</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a KSAC3\_LANGUAGE\_CODE structure that specifies the language code.
 
@@ -88,9 +84,9 @@ Requirements
 
 [**KSAC3\_LANGUAGE\_CODE**](https://msdn.microsoft.com/library/windows/hardware/ff537081)
 
- 
+ 
 
- 
+ 
 
 
 

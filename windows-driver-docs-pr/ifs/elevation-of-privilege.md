@@ -1,6 +1,5 @@
 ---
 title: Elevation of Privilege
-author: windows-driver-content
 description: Elevation of Privilege
 ms.assetid: 08e20c51-fbc1-4e38-b12d-f123e4a2ba10
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - security threat models WDK file systems , elevation-of-privilege
 - elevation-of-privilege WDK file systems
 - buffers WDK file systems
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +29,9 @@ For file systems and file system filter drivers, the possibility of an elevation
 
 This type of exploit is most important for those implementing file systems. This exploit can be an issue to file system filter drivers that are actively managing data storage (encryption filters, for example) that might circumvent or bypass normal file system security operations.
 
- 
+ 
 
- 
+ 
 
 
 

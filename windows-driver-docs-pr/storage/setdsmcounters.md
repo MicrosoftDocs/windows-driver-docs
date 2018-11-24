@@ -12,6 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # SetDSMCounters function
@@ -24,8 +25,8 @@ Syntax
 
 ```ManagedCPlusPlus
 void SetDSMCounters(
-   [in, Description("DSM Context"):amended] uint64              DSMcontext,
-   [in, Description("DSM Timer Counters"):amended] DSM_COUNTERS DsmCounters
+   [in, Description("DSM Context"):amended] uint64              DSMcontext,
+   [in, Description("DSM Timer Counters"):amended] DSM_COUNTERS DsmCounters
 );
 ```
 
@@ -68,9 +69,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

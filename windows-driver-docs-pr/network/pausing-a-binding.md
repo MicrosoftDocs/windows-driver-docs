@@ -8,11 +8,7 @@ keywords:
 - binding pause WDK networking
 - binding states WDK networking
 - pausing binding for protocol driver
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -46,9 +42,9 @@ For a binding in the Paused state, the protocol driver:
 
 -   Should return receive indications immediately. If necessary, the driver can copy such receive indications before it returns them.
 
- 
+ 
 
- 
+ 
 
 
 

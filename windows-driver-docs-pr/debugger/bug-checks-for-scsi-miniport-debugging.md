@@ -3,11 +3,7 @@ title: Bug Checks for SCSI Miniport Debugging
 description: Bug Checks for SCSI Miniport Debugging
 ms.assetid: 9a517096-f708-452b-83f6-e7d4f0d41ac3
 keywords: ["SCSI Miniport debugging, bug checks"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,7 +22,7 @@ Each of these bug checks indicates that a paging error has occurred. There are t
 
 To determine the precise cause of the failure, begin by using the [**!scsikd.classext**](-scsikd-classext.md) extension, which displays information about recently failed requests, including the SRB status, SCSI status, and sense data of the request.
 
-```
+```dbgcmd
 kd> !scsikd.classext 816e96b0
 Storage class device 816e96b0 with extension at 816e9768
 
@@ -49,9 +45,9 @@ In the previous example, opcode 0x2A indicates a write operation, and 0x28 indic
 
 As always, miniport driver developers are responsible for associating error codes from their hardware to the SRB status codes. Typically, timeouts are associated with SRB 0x0A, the code for a selection timeout. SRB 0x0e is typically associated with a full bus reset, but it can also be associated with controller errors.
 
- 
+ 
 
- 
+ 
 
 
 

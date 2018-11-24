@@ -11,11 +11,7 @@ api_location:
 - rxassert.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,7 +25,7 @@ Syntax
 
 ```ManagedCPlusPlus
 VOID RxDbgBreakPoint(
-   ULONG LineNumber
+   ULONG LineNumber
 );
 ```
 
@@ -84,9 +80,9 @@ Requirements
 
 [Windows Debugging](https://msdn.microsoft.com/library/windows/hardware/ff551063)
 
- 
+ 
 
- 
+ 
 
 
 

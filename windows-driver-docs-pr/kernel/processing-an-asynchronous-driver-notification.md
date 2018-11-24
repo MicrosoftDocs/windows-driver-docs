@@ -1,14 +1,9 @@
 ---
 title: Processing an Asynchronous Driver Notification
-author: windows-driver-content
 description: Processing an Asynchronous Driver Notification
 ms.assetid: 7e7ed971-5891-4b91-909a-1e140b764fed
 keywords: ["driver notification WDK dynamic hardware partitioning , processing", "asynchronous driver notification WDK dynamic hardware partitioning , processing", "registering for driver notification WDK dynamic hardware partitioning , asynchronous"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,7 +14,7 @@ When the operating system calls a registered callback function, it passes a poin
 
 The following code example shows an implementation of a callback function that processes asynchronous driver notifications for processors:
 
-```
+```cpp
 // Asynchronous processor notification callback function
 NTSTATUS
   AsyncProcessorCallback(
@@ -74,7 +69,7 @@ NTSTATUS
 
 The following code example shows an implementation of a callback function that processes asynchronous driver notifications for memory:
 
-```
+```cpp
 // Asynchronous memory notification callback function
 NTSTATUS
   AsyncMemoryCallback(
@@ -105,9 +100,9 @@ NTSTATUS
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

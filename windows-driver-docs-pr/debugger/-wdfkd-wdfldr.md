@@ -3,11 +3,7 @@ title: wdfkd.wdfldr
 description: The wdfkd.wdfldr extension displays information about the KMDF and UMDF drivers that are currently dynamically bound to the Windows Driver Frameworks. 
 ms.assetid: 0965632d-922b-4812-9cfb-7663af0e3847
 keywords: ["wdfkd.wdfldr Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!wdfkd.wdfldr** extension displays information about the drivers that are currently dynamically bound to the Windows Driver Frameworks. This includes both the Kernel-Mode Driver Framework (KMDF) and the User-Mode Driver Framework (UMDF).
 
-```
+```dbgcmd
 !wdfkd.wdfldr [DriverName]
 ```
 
@@ -49,7 +45,7 @@ Remarks
 
 Here is an example of the output of **!wdfldr**.
 
-```
+```dbgcmd
 ## 0: kd> !wdfkd.wdfldr
 
 ##  KMDF Drivers
@@ -84,7 +80,7 @@ LIBRARY_MODULE  0xffffe0000039f7c0
 
 Here is another example that supplies a driver name.
 
-```
+```dbgcmd
 0: kd> !wdfldr MyUmdf2Driver.dll
 
 Version    v2.0
@@ -98,9 +94,9 @@ Process             DevStack           DeviceId
 0xffffe00000c32900  a5a3ab5f70         \Device\00000052 !wdfdriverinfo
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -9,11 +9,7 @@ api_name:
 - SRB_UNKNOWN_STREAM_COMMAND
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,9 +21,9 @@ ms.localizationpriority: medium
 
 When the class driver receives an IRP for a stream of a type it does not handle, it hands it off to the minidriver with the SRB\_UNKNOWN\_STREAM\_COMMAND code.
 
- 
+ 
 
- 
+ 
 
 
 

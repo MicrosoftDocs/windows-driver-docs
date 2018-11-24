@@ -1,6 +1,5 @@
 ---
 title: Microsoft Plotter Driver
-author: windows-driver-content
 description: Microsoft Plotter Driver
 ms.assetid: 5c8efa08-8d66-4c0f-b1ba-8384967465d3
 keywords:
@@ -10,11 +9,7 @@ keywords:
 - plotters WDK print
 - Hewlett-Packard Graphics Language WDK MSPlot
 - Microsoft Plotter Driver WDK print
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,9 +31,9 @@ The Microsoft Plotter Driver is the Microsoft corporation's standard printer dri
 
 [Plotter Driver Renderer](plotter-driver-renderer.md)
 
- 
+ 
 
- 
+ 
 
 
 

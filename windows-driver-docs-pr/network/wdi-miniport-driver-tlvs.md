@@ -1,13 +1,8 @@
 ---
 title: WDI Miniport Driver TLVs
-author: windows-driver-content
 description: This section contains WDI TLVs (Type-Length-Value).
 ms.assetid: BAE1E159-F0CB-4A74-9E35-4361C94518E6
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 ms.localizationpriority: medium
 ---
 
@@ -107,6 +102,9 @@ This section contains WDI TLVs (Type-Length-Value).
 -   [**WDI\_TLV\_DELETE\_CIPHER\_KEY\_INFO**](wdi-tlv-delete-cipher-key-info.md)
 -   [**WDI\_TLV\_DELETE\_PEER\_STATE\_PARAMETERS**](wdi-tlv-delete-peer-state-parameters.md)
 -   [**WDI\_TLV\_DELETE\_PORT\_PARAMETERS**](wdi-tlv-delete-port-parameters.md)
+-   [**WDI_TLV_DEVICE_SERVICE_PARAMS_DATA_BLOB**](wdi-tlv-device-service-params-data-blob.md)
+-   [**WDI_TLV_DEVICE_SERVICE_PARAMS_GUID**](wdi-tlv-device-service-params-guid.md)
+-   [**WDI_TLV_DEVICE_SERVICE_PARAMS_OPCODE**](wdi-tlv-device-service-params-opcode.md)
 -   [**WDI\_TLV\_DISALLOWED\_BSSIDS\_LIST**](wdi-tlv-disallowed-bssids-list.md)
 -   [**WDI\_TLV\_DISASSOCIATION\_INDICATION\_PARAMETERS**](wdi-tlv-disassociation-indication-parameters.md)
 -   [**WDI\_TLV\_DISASSOCIATION\_PARAMETERS**](wdi-tlv-disassociation-parameters.md)

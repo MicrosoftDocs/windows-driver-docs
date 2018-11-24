@@ -7,11 +7,7 @@ keywords:
 - data pools WDK networking
 - network data pools WDK networking
 - allocating data pools
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +25,9 @@ The miniport driver's [*MiniportHaltEx*](https://msdn.microsoft.com/library/wind
 
 For more information about NDIS 6.0 data buffer management, see [Miniport Driver Buffer Management](miniport-driver-buffer-management.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,14 +1,9 @@
 ---
 title: Unload Routine Environment
-author: windows-driver-content
 description: Unload Routine Environment
 ms.assetid: 4acf66f1-7b97-494e-9f84-14292e971542
 keywords: ["Unload routines WDK kernel , environment"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +29,9 @@ Note that the *Unload* routine is not called if a driver's [**DriverEntry**](htt
 
 Neither the PnP manager nor the I/O manager calls *Unload* routines at system shutdown time. A driver that must perform shutdown processing should register a [*DispatchShutdown*](https://msdn.microsoft.com/library/windows/hardware/ff543405) routine.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: Using Driver MFTs on multi-pin cameras
 description: Some cameras provide separate pins for preview, capture, and stills. These multi-pin cameras pose unique challenges to developers. This topic covers some points to consider when developing a camera driver MFT on a multi-pin camera.
 ms.assetid: E946C676-D1CE-4759-A255-3E16EDCE599F
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -70,9 +66,9 @@ If the three instances of the MFT0 can communicate with each other, this may sol
 
 Although communication between instances of the MFT0 solves the major user experience issues, three instances of video effects must still be running concurrently. Some video effects can use most available CPU resources, particularly when full screen video is being previewed and captured at the same time. These are serious issues. For performance reasons, each ISV should consider what processing may be performed once, such as face detection, and shared with all instances of MFT0.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: How do I notify a driver when enabling, disabling, or changing certain flags
 description: How do I notify a driver when enabling, disabling, or changing certain flags
 ms.assetid: 1bdf8047-8d3f-4cdf-883b-3544dea06705
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,7 +26,6 @@ __in __int64 Logger,
 __in BOOLEAN Enable,
 __in ULONG Flags,
 __in UCHAR Level);
- 
 ```
 
 The following is an example of how to notify a driver when certain flags are enabled:
@@ -48,7 +43,7 @@ VOID MyOwnCallback (
 //                
 //                  This callback function will be called with the current values of : GUID, Logger, Enable, Flags, and Level
 //                 
- 
+
                   if (Enable) {
                         .
                         .
@@ -56,9 +51,9 @@ VOID MyOwnCallback (
 } 
 ```
 
- 
 
- 
+
+
 
 
 

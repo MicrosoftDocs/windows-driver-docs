@@ -1,13 +1,8 @@
 ---
 title: Device Stage Document Device Development Kit
-author: windows-driver-content
 description: Device Stage Document Device Development Kit
 ms.assetid: b66912d9-27f5-41e2-9e10-1e16aca14a8a
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +20,7 @@ The Device Stage Document Device Developer Kit contains the following informatio
 -   **Document Devices Templates** - Device Stage templates for document devices.
 
 ## Related topics
-[Microsoft Device Experience Development Kit](http://msdn.microsoft.com/library/windows/hardware/gg463154)  
+[Microsoft Device Experience Development Kit](https://msdn.microsoft.com/library/windows/hardware/gg463154)  
 
 
 

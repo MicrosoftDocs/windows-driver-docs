@@ -3,6 +3,7 @@ title: Set NVM Lifetime Percentage Warning Threshold (Function Index 6)
 description: This function sets the warning threshold for remaining non-volatile memory lifetime percentage.
 ms.assetid: B5568876-D9E1-4086-8819-FC5FF6BC2C15
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Set NVM Lifetime Percentage Warning Threshold (Function Index 6)
@@ -13,7 +14,7 @@ This function sets the warning threshold for remaining non-volatile memory lifet
 &gt; \[!Note\]   
 &gt;All registers marked with a star (\*) are registers defined in the Byte Addressable Energy Backed Interface specification.
 
- 
+ 
 
 ## <span id="Input"></span><span id="input"></span><span id="INPUT"></span>Input
 
@@ -46,7 +47,7 @@ This function sets the warning threshold for remaining non-volatile memory lifet
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Output"></span><span id="output"></span><span id="OUTPUT"></span>Output
 
@@ -71,12 +72,12 @@ This function sets the warning threshold for remaining non-volatile memory lifet
 <td align="left"><strong>Status</strong></td>
 <td align="left">4</td>
 <td align="left">0</td>
-<td align="left"><p>Go to [_DSM Method Output](-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md#dsm-method-output) for information.</p></td>
+<td align="left"><p>Go to <a href="-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md" data-raw-source="[_DSM Method Output](-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md)">_DSM Method Output</a> for information.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -85,9 +86,9 @@ This function sets the warning threshold for remaining non-volatile memory lifet
 
 [\_DSM Interface for Byte Addressable Energy Backed Function Class (Function Interface 1)](-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md)
 
- 
+ 
 
- 
+ 
 
 
 

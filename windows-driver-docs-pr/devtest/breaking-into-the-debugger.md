@@ -11,11 +11,7 @@ keywords:
 - conditional break macros WDK
 - break macros WDK
 - routines WDK debugging , break
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -67,9 +63,9 @@ Two conditional break macros are available for kernel-mode drivers:
 
 **ASSERT** and **ASSERTMSG** are only active when compiled in the checked build environment. When compiled in the free build environment, they have no effect.
 
- 
+ 
 
- 
+ 
 
 
 

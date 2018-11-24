@@ -8,11 +8,7 @@ keywords:
 - picture decoding WDK DirectX VA , formats
 - formats WDK DirectX VA
 - bDXVA_Func variable WDK DirectX VA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -55,7 +51,7 @@ The **bDXVA\_Func** variable is an 8-bit value that is associated with DirectX V
 </tbody>
 </table>
 
- 
+ 
 
 The **bDXVA\_Func** variable is used to perform the following tasks:
 
@@ -71,9 +67,9 @@ The **bDXVA\_Func** variable is used to perform the following tasks:
 
 -   Signal an operation to be performed by inclusion in a series of **bDXVA\_Func** byte values in the **dwFunction** member of a [**DD\_RENDERMOCOMPDATA**](https://msdn.microsoft.com/library/windows/hardware/ff551693) structure in a call to [*DdMoCompRender*](https://msdn.microsoft.com/library/windows/hardware/ff550248). The first **bDXVA\_Func** operation is specified in the most significant byte, the next operation is specified in the next most significant byte, and so on. Remaining bytes in **dwFunction** not used to signal an operation are set to zero.
 
- 
+ 
 
- 
+ 
 
 
 

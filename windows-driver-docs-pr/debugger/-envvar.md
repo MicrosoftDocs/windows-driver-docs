@@ -3,11 +3,7 @@ title: envvar
 description: The envvar extension displays the value of the specified environment variable.
 ms.assetid: 7a6e1796-08e0-414e-a092-326b30c8ce8f
 keywords: ["envvar Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!envvar** extension displays the value of the specified environment variable.
 
-```
+```dbgcmd
 !envvar Variable
 ```
 
@@ -51,7 +47,7 @@ Specifies the environment variable whose value is displayed. *Variable* is not c
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -62,14 +58,14 @@ Remarks
 
 The **!envvar** extension works both in user mode and in kernel mode. However, in kernel mode, when you set the idle thread as the current process, the pointer to the Process Environment Block (PEB) is **NULL**, so it fails. In kernel mode, the **!envvar** extension displays the environment variables on the target computer, as the following example shows.
 
-```
+```dbgcmd
 0:000> !envvar _nt_symbol_path
         _nt_symbol_path = srv*C:\mysyms*https://msdl.microsoft.com/download/symbols
 ```
 
- 
+ 
 
- 
+ 
 
 
 

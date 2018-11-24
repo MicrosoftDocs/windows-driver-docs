@@ -1,14 +1,9 @@
 ---
 title: Interrupt Service Routines
-author: windows-driver-content
 description: Interrupt Service Routines
 ms.assetid: d72a15be-772f-4cd4-a304-10981056d735
 keywords: ["interrupt service routines WDK kernel", "InterruptService", "ISRs WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +28,9 @@ This section contains the following sections:
 
 [Synchronizing Access to Device Data](synchronizing-access-to-device-data.md)
 
- 
+ 
 
- 
+ 
 
 
 

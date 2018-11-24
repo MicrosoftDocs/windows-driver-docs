@@ -2,11 +2,7 @@
 title: BCDEdit /ems
 description: The /ems option enables or disables Emergency Management Services (EMS) for the specified operating system boot entry.
 ms.assetid: 28a28fa9-e359-4fd7-be4d-9b4129db8ac7
-ms.author: windowsdriverdev
 ms.date: 05/21/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: ["BCDEdit /ems Driver Development Tools"]
 topic_type:
 - apiref
@@ -49,9 +45,9 @@ The following command enables EMS for a boot entry with the identifier of {49916
 bcdedit /ems {49916baf-0e08-11db-9af4-000bdbd316a0} on
 ```
 
- 
+ 
 
- 
+ 
 
 
 

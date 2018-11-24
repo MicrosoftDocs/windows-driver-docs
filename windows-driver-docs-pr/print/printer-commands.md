@@ -1,6 +1,5 @@
 ---
 title: Printer Commands
-author: windows-driver-content
 description: Printer Commands
 ms.assetid: 4f47ae57-cfca-4670-823e-526e2f40de82
 keywords:
@@ -10,11 +9,7 @@ keywords:
 - printer commands WDK Unidrv
 - printer commands WDK Unidrv , about printer commands
 - Unidrv WDK print
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -44,9 +39,9 @@ The following topics describe how to specify printer commands in GPD files:
 
 [Command Execution Order](command-execution-order.md)
 
- 
+ 
 
- 
+ 
 
 
 

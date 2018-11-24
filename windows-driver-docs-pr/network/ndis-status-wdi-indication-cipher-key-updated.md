@@ -2,11 +2,7 @@
 title: NDIS_STATUS_WDI_INDICATION_CIPHER_KEY_UPDATED
 description: NDIS_STATUS_WDI_INDICATION_CIPHER_KEY_UPDATED
 ms.assetid: 95AB3325-9AE7-4F10-8E00-88D502E1A5C9
-ms.author: windowsdriverdev 
-ms.date: 04/02/2018 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 04/02/2018
 keywords:
  - NDIS_STATUS_WDI_INDICATION_CIPHER_KEY_UPDATED Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

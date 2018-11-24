@@ -2,11 +2,7 @@
 ms.assetid: 47AC8BD7-7098-43C3-A198-3622D465B142
 title: Avoiding Floating Point Errors in Custom Build Environments
 description: This information is intended for developers and build engineers who compile kernel-mode drivers for Windows.
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,7 +26,7 @@ To avoid these problem with floating-point calculations, add the **/kernel** fla
 
 In addition, if you build a driver using the WDK and the Visual Studio Professional 2012 development environment, or use MSBuild, in a Visual Studio Command prompt window, the Microsoft provided platform toolset (**WindowsKernelModeDriver8.0**) sets the **/kernel** flag. As a result, floating-point generation errors are avoided.
 
-```
+```cpp
 msbuild myProject.vcxproj /p:PlatformToolset=WindowsKernelModeDriver8.0
 ```
 
@@ -43,9 +39,9 @@ Here are the recommended solutions based on the type of development environment 
 -   **Microsoft VC++ Compiler** - Add the **/kernel** flag to prevent compiler from emitting SSE2.
 -   **Custom Tooling/Non-Microsoft Compiler** - You must manually account for the assembly instructions used in the resulting binary.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: Receive notification when mobile broadband accounts are added or removed
 description: Receive notification when mobile broadband accounts are added or removed
 ms.assetid: 3131fa6f-61c3-4917-8370-26c8c0a35049
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,9 +16,9 @@ For more info on receiving notifications when mobile broadband accounts are adde
 
 [Common tasks for mobile broadband Windows Runtime APIs](common-tasks-for-mobile-broadband-windows-runtime-apis.md)
 
- 
+ 
 
- 
+ 
 
 
 

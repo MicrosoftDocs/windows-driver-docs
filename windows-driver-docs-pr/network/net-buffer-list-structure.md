@@ -7,11 +7,7 @@ keywords:
 - network data WDK , structures
 - data WDK networking , structures
 - packets WDK networking , data structures
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -77,11 +73,11 @@ Specifies a pointer to the first NET\_BUFFER structure in a linked list of NET\_
 
 **Note**  **Context** is a pointer to a [**NET\_BUFFER\_LIST\_CONTEXT**](https://msdn.microsoft.com/library/windows/hardware/ff568389) structure. NDIS provides macros and functions to manipulate the data at **Context** . For more information about the NET\_BUFFER\_LIST\_CONTEXT structure, see [NET\_BUFFER\_LIST\_CONTEXT Structure](net-buffer-list-context-structure.md).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

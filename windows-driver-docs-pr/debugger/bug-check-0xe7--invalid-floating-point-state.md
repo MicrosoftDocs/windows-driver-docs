@@ -3,11 +3,7 @@ title: Bug Check 0xE7 INVALID_FLOATING_POINT_STATE
 description: The INVALID_FLOATING_POINT_STATE bug check has a value of 0x000000E7. This indicates that a thread's saved floating-point state is invalid.
 ms.assetid: 71a61132-cb7f-4618-b3d5-95602e52c098
 keywords: ["Bug Check 0xE7 INVALID_FLOATING_POINT_STATE", "INVALID_FLOATING_POINT_STATE"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The INVALID\_FLOATING\_POINT\_STATE bug check has a value of 0x000000E7. This indicates that a thread's saved floating-point state is invalid.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## INVALID\_FLOATING\_POINT\_STATE Parameters
 
@@ -55,7 +51,7 @@ Parameter 1 indicates which validity check failed. Parameter 4 is not used. The 
 <td align="left"><p>0x1</p></td>
 <td align="left"><p>The saved IRQL</p></td>
 <td align="left"><p>The current IRQL</p></td>
-<td align="left"><p>The current processor's IRQL is not the same as when the floating-point context was saved.</p></td>
+<td align="left"><p>The current processor&#39;s IRQL is not the same as when the floating-point context was saved.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x2</p></td>
@@ -66,7 +62,7 @@ Parameter 1 indicates which validity check failed. Parameter 4 is not used. The 
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -75,9 +71,9 @@ While restoring the previously-saved floating-point state for a thread, the stat
 
 Parameter 1 indicates which validity check failed.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,13 +1,8 @@
 ---
 title: NDIS Wake Reason Status Indications
-author: windows-driver-content
 description: NDIS Wake Reason Status Indications
 ms.assetid: 2F79CB52-0359-4E14-B7A2-49CA55568C44
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 ms.localizationpriority: medium
 ---
 
@@ -24,9 +19,9 @@ This section includes the following reference topics for the data types used wit
 
 [**NDIS\_PM\_WAKE\_REASON\_TYPE**](https://msdn.microsoft.com/library/windows/hardware/hh451607)
 
- 
+ 
 
- 
+ 
 
 
 

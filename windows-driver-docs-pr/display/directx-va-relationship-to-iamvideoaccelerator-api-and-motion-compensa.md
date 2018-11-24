@@ -12,11 +12,7 @@ keywords:
 - VMR WDK DirectX VA
 - overlay mixer WDK DirectX VA
 - OVM WDK DirectX VA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,9 +34,9 @@ The motion compensation DDI establishes a common interface to access hardware ac
 
 For more information about the **IAMVideoAccelerator** and **IAMVideoAcceleratorNotify** interfaces, see the Windows SDK documentation. For more information about the motion compensation DDI, see [Motion Compensation](motion-compensation.md) and [Motion Compensation Callbacks](motion-compensation-callbacks.md).
 
- 
+ 
 
- 
+ 
 
 
 

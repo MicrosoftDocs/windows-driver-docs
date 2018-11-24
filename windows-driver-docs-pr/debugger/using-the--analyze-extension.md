@@ -3,11 +3,7 @@ title: Using the analyze Extension
 description: Using the analyze Extension
 ms.assetid: 0aa74153-e992-4d1c-b734-ccc60cff452c
 keywords: ["analyze extension, examples"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,7 +30,7 @@ This topic contains:
 
 In this example, the debugger is attached to a user-mode application that has encountered an exception.
 
-```
+```dbgcmd
 0:000> !analyze -v
 *******************************************************************************
 *                                                                             *
@@ -47,7 +43,7 @@ Debugger SolutionDb Connection::Open failed 80004005
 
 If you are connected to the internet, the debugger attempts to access a database of crash solutions maintained by Microsoft. In this case, an error message was displayed, indicating that either your machine was unable to access the internet or the web site was not working.
 
-```
+```dbgcmd
 FAULTING_IP: 
 ntdll!PropertyLengthAsVariant+73
 77f97704 cc               int     3
@@ -55,7 +51,7 @@ ntdll!PropertyLengthAsVariant+73
 
 The FAULTING\_IP field shows the instruction pointer at the time of the fault.
 
-```
+```dbgcmd
 EXCEPTION_RECORD:  ffffffff -- (.exr ffffffffffffffff)
 ExceptionAddress: 77f97704 (ntdll!PropertyLengthAsVariant+0x00000073)
    ExceptionCode: 80000003 (Break instruction exception)
@@ -68,31 +64,31 @@ NumberParameters: 3
 
 The EXCEPTION\_RECORD field shows the exception record for this crash. This information can also be viewed by using the [**.exr (Display Exception Record)**](-exr--display-exception-record-.md) command.
 
-```
+```dbgcmd
 BUGCHECK_STR:  80000003
 ```
 
 The BUGCHECK\_STR field shows the exception code. The name is a misnomer—the term *bug check* actually signifies a kernel-mode crash. In user-mode debugging, the exception code will be displayed—in this case, 0x80000003.
 
-```
+```dbgcmd
 DEFAULT_BUCKET_ID:  APPLICATION_FAULT
 ```
 
 The DEFAULT\_BUCKET\_ID field shows the general category of failures that this failure belongs to.
 
-```
+```dbgcmd
 PROCESS_NAME:  MyApp.exe
 ```
 
 The PROCESS\_NAME field specifies the name of the process that raised the exception.
 
-```
+```dbgcmd
 LAST_CONTROL_TRANSFER:  from 01050963 to 77f97704
 ```
 
 The LAST\_CONTROL\_TRANSFER field shows the last call on the stack. In this case, the code at address 0x01050963 called a function at 0x77F97704. You can use these addresses with the [**ln (List Nearest Symbols)**](ln--list-nearest-symbols-.md) command to determine what modules and functions these addresses reside in.
 
-```
+```dbgcmd
 STACK_TEXT:  
 0006b9dc 01050963 00000000 0006ba04 000603fd ntdll!PropertyLengthAsVariant+0x73
 0006b9f0 010509af 00000002 0006ba04 77e1a449 MyApp!FatalErrorBox+0x55 [D:\source_files\MyApp\util.c @ 541]
@@ -110,7 +106,7 @@ STACK_TEXT:
 
 The STACK\_TEXT field shows a stack trace of the faulting component.
 
-```
+```dbgcmd
 FOLLOWUP_IP: 
 MyApp!FatalErrorBox+55
 01050963 5e               pop     esi
@@ -128,19 +124,19 @@ DEBUG_FLR_IMAGE_TIMESTAMP:  383490a9
 
 When [**!analyze**](-analyze.md) determines the instruction that has probably caused the error, it displays it in the FOLLOWUP\_IP field. The SYMBOL\_NAME, MODULE\_NAME, IMAGE\_NAME, and DBG\_FLR\_IMAGE\_TIMESTAMP fields show the symbol, module, image name, and image timestamp corresponding to this instruction.
 
-```
+```dbgcmd
 STACK_COMMAND:  .ecxr ; kb
 ```
 
 The STACK\_COMMAND field shows the command that was used to obtain the STACK\_TEXT. You can use this command to repeat this stack trace display, or alter it to obtain related stack information.
 
-```
+```dbgcmd
 BUCKET_ID:  80000003_MyApp!FatalErrorBox+55
 ```
 
 The BUCKET\_ID field shows the specific category of failures that the current failure belongs to. This category helps the debugger determine what other information to display in the analysis output.
 
-```
+```dbgcmd
 Followup: dbg
 ---------
 ```
@@ -159,7 +155,7 @@ There are a variety of other fields that may appear:
 
 In this example, the debugger is attached to a computer that has just crashed.
 
-```
+```dbgcmd
 kd> !analyze -v
 *******************************************************************************
 *                                                                             *
@@ -176,7 +172,7 @@ If kernel debugger is available get stack backtrace.
 
 The first element of the display shows the bug check code and information about this type of bug check. Some of the text displayed may not apply to this specific instance. For more details on each bug check, see the [Bug Check Code Reference](bug-check-code-reference2.md) section.
 
-```
+```dbgcmd
 Arguments:
 Arg1: 00000004, memory referenced
 Arg2: 00000002, IRQL
@@ -186,7 +182,7 @@ Arg4: f832035c, address which referenced memory
 
 The bug check parameters are displayed next. They are each followed by a description. For example, the third parameter is 1, and the comment following it explains that this indicates that a write operation failed.
 
-```
+```dbgcmd
 ## Debugging Details:
 
 
@@ -197,7 +193,7 @@ CURRENT_IRQL:  2
 
 The next few fields vary depending on the nature of the crash. In this case, we see WRITE\_ADDRESS and CURRENT\_IRQL fields. These are simply restating the information shown in the bug check parameters. By comparing the statement "Nonpaged pool" to the bug check text that reads "an attempt was made to access a pagable (or completely invalid) address," we can see that the address was invalid. The invalid address in this case was 0x00000004.
 
-```
+```dbgcmd
 FAULTING_IP: 
 USBPORT!USBPORT_BadRequestFlush+7c
 f832035c 894204           mov     [edx+0x4],eax
@@ -205,19 +201,19 @@ f832035c 894204           mov     [edx+0x4],eax
 
 The FAULTING\_IP field shows the instruction pointer at the time of the fault.
 
-```
+```dbgcmd
 DEFAULT_BUCKET_ID:  DRIVER_FAULT
 ```
 
 The DEFAULT\_BUCKET\_ID field shows the general category of failures that this failure belongs to.
 
-```
+```dbgcmd
 BUGCHECK_STR:  0xD1
 ```
 
 The BUGCHECK\_STR field shows the bug check code, which we have already seen. In some cases additional triage information is appended.
 
-```
+```dbgcmd
 TRAP_FRAME:  f8950dfc -- (.trap fffffffff8950dfc)
 .trap fffffffff8950dfc
 ErrCode = 00000002
@@ -232,13 +228,13 @@ Resetting default context
 
 The TRAP\_FRAME field shows the trap frame for this crash. This information can also be viewed by using the [**.trap (Display Trap Frame)**](-trap--display-trap-frame-.md) command.
 
-```
+```dbgcmd
 LAST_CONTROL_TRANSFER:  from f83206e0 to f832035c
 ```
 
 The LAST\_CONTROL\_TRANSFER field shows the last call on the stack. In this case, the code at address 0xF83206E0 called a function at 0xF832035C. You can use the [**ln (List Nearest Symbols)**](ln--list-nearest-symbols-.md) command to determine what module and function these addresses reside in.
 
-```
+```dbgcmd
 STACK_TEXT:  
 f8950e90 f83206e0 024c7262 00000000 f8950edc USBPORT!USBPORT_BadRequestFlush+0x7c
 f8950eb0 804f5561 81cc8644 81cc8028 6d9a2f30 USBPORT!USBPORT_DM_TimerDpc+0x10c
@@ -249,7 +245,7 @@ f8950ff4 8052c16a efdefd44 00000000 00000000 nt!KiRetireDpcList+0x31
 
 The STACK\_TEXT field shows a stack trace of the faulting component.
 
-```
+```dbgcmd
 FOLLOWUP_IP: 
 USBPORT!USBPORT_BadRequestFlush+7c
 f832035c 894204           mov     [edx+0x4],eax
@@ -257,7 +253,7 @@ f832035c 894204           mov     [edx+0x4],eax
 
 The FOLLOWUP\_IP field shows the disassembly of the instruction that has probably caused the error.
 
-```
+```dbgcmd
 FOLLOWUP_NAME:  usbtri
 
 SYMBOL_NAME:  USBPORT!USBPORT_BadRequestFlush+7c
@@ -271,32 +267,32 @@ DEBUG_FLR_IMAGE_TIMESTAMP:  3b7d868b
 
 The SYMBOL\_NAME, MODULE\_NAME, IMAGE\_NAME, and DBG\_FLR\_IMAGE\_TIMESTAMP fields show the symbol, module, image, and image timestamp corresponding to this instruction (if it is valid), or to the caller of this instruction (if it is not).
 
-```
+```dbgcmd
 STACK_COMMAND:  .trap fffffffff8950dfc ; kb
 ```
 
 The STACK\_COMMAND field shows the command that was used to obtain the STACK\_TEXT. You can use this command to repeat this stack trace display, or alter it to obtain related stack information.
 
-```
+```dbgcmd
 BUCKET_ID:  0xD1_W_USBPORT!USBPORT_BadRequestFlush+7c
 ```
 
 The BUCKET\_ID field shows the specific category of failures that the current failure belongs to. This category helps the debugger determine what other information to display in the analysis output.
 
-```
-INTERNAL_SOLUTION_TEXT:  http://oca.microsoft.com/resredir.asp?sid=62&State=1
+```dbgcmd
+INTERNAL_SOLUTION_TEXT:  https://oca.microsoft.com/resredir.asp?sid=62&State=1
 ```
 
 If you are connected to the internet, the debugger attempts to access a database of crash solutions maintained by Microsoft. This database contains links to a tremendous number of Web pages that have information about known bugs. If a match is found for your problem, the INTERNAL\_SOLUTION\_TEXT field will show a URL that you can access for more information.
 
-```
+```dbgcmd
 Followup: usbtri
 ---------
 
       This problem has a known fix.
       Please connect to the following URL for details:
       ------------------------------------------------
-      http://oca.microsoft.com/resredir.asp?sid=62&State=1
+      https://oca.microsoft.com/resredir.asp?sid=62&State=1
 ```
 
 For information about the FOLLOWUP\_NAME and the Followup fields, see The Followup Field and the triage.ini File:
@@ -341,9 +337,9 @@ In kernel mode, if a bug check has occurred but you believe the underlying probl
 
 You can also automatically ignore known issues. To do this, you must first create an XML file containing a formatted list of known issues. Use the **!analyze -c -load***KnownIssuesFile* extension to load this file. Then when an exception or break occurs, use the **!analyze -c** extension. If the exception matches one of the known issues, the target will resume execution. If the target does not resume executing, then you can use **!analyze -v** to determine the cause of the problem. A sample XML file can be found in the sdk\\samples\\analyze\_continue subdirectory of the debugger installation directory.
 
- 
+ 
 
- 
+ 
 
 
 

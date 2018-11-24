@@ -7,11 +7,7 @@ keywords:
 - video copy protection WDK COPP , starting protected video session
 - COPP WDK DirectX VA , starting protected video session
 - protected video WDK COPP , starting session
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,9 +33,9 @@ To start the protected video session, calls should be made to the COPP device's 
 
 After the video session is set to protected mode, the video miniport driver can process [COPP commands](copp-commands.md) and requests for [COPP status](copp-status.md), and pass [COPP status events](copp-status-events.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: Bluetooth Low Energy Overview
 description: This section provides an overview of Bluetooth Low Energy introduced in Windows 8
 ms.assetid: 8783E31B-99A3-40EB-8A67-647AFAB7D4D3
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +29,9 @@ In addition to the standard [Bluetooth Profile Driver functions](https://msdn.mi
 
 These functions allows for the enumeration of services and their objects (including services, characteristics and their descriptors) as well as read and write capabilities.
 
- 
+ 
 
- 
+ 
 
 
 

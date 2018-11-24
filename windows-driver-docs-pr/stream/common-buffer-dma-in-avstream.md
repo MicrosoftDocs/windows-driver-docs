@@ -1,6 +1,5 @@
 ---
 title: Common Buffer DMA in AVStream
-author: windows-driver-content
 description: Common Buffer DMA in AVStream
 ms.assetid: 8cbadb5a-f879-4fe0-a698-cde3b9f6df83
 keywords:
@@ -10,11 +9,7 @@ keywords:
 - hardware WDK AVStream
 - DMA services WDK AVStream
 - Direct Memory Access WDK AVStream
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -46,7 +41,7 @@ Within the vendor-supplied [*AVStrMiniPinProcess*](https://msdn.microsoft.com/li
 
 1.  Call [**KsPinGetLeadingEdgeStreamPointer**](https://msdn.microsoft.com/library/windows/hardware/ff563513):
 
-    ```
+    ```cpp
     KSSTREAM_POINTER *Leading = KsPinGetLeadingEdgeStreamPointer (
                     Pin,
                     State
@@ -61,9 +56,9 @@ Within the vendor-supplied [*AVStrMiniPinProcess*](https://msdn.microsoft.com/li
 
 AVStream then manages the queue based on the flags set by the minidriver in the [**KSPIN\_DESCRIPTOR\_EX**](https://msdn.microsoft.com/library/windows/hardware/ff563534) structure.
 
- 
+ 
 
- 
+ 
 
 
 

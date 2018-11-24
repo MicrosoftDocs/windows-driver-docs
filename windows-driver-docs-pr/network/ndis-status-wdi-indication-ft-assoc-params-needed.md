@@ -1,13 +1,8 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_FT_ASSOC_PARAMS_NEEDED
-author: windows-driver-content
 description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_FT_ASSOC_PARAMS_NEEDED to request parameters for 802.11r roaming.ObjectPort .
 ms.assetid: AB745908-AA7B-416A-9C97-B376293F3DEE
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WDI_INDICATION_FT_ASSOC_PARAMS_NEEDED Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -22,7 +17,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_FT\_ASSOC\_PARAMS\_NEEDED to
 |--------|
 | Port   |
 
- 
+ 
 
 During [OID\_WDI\_TASK\_ROAM](oid-wdi-task-roam.md), WDI provides the parameters to send the 802.11 Authentication Request (PmkR0Name, R0KH-ID, SNonce, MDIE). Upon receiving the Authentication response, the LE requests additional needed parameters for the reassociation request, such as PMKR1Name and R1KH-ID. The LE also sends the parameters received in the Authentication Response (ANonce, SNonce, and R1KHID).
 
@@ -37,7 +32,7 @@ For a connection where Initial Mobility Domain is successfully done, the LE shou
 | [**WDI\_TLV\_FT\_AUTH\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/mt269116)   |                                |          | The authentication request byte blob.  |
 | [**WDI\_TLV\_FT\_AUTH\_RESPONSE**](https://msdn.microsoft.com/library/windows/hardware/mt269117) |                                |          | The authentication response byte blob. |
 
- 
+ 
 
 Requirements
 ------------
@@ -68,9 +63,9 @@ Requirements
 
 [OID\_WDI\_TASK\_ROAM](oid-wdi-task-roam.md)
 
- 
+ 
 
- 
+ 
 
 
 

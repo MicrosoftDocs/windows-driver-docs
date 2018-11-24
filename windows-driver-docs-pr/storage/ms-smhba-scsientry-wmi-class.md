@@ -3,6 +3,7 @@ title: MS\_SMHBA\_SCSIENTRY WMI Class
 description: MS\_SMHBA\_SCSIENTRY WMI Class
 ms.assetid: 8ac7a979-b3fe-4da6-a8e7-301c64b27e46
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MS\_SMHBA\_SCSIENTRY WMI Class
@@ -12,7 +13,7 @@ An HBA miniport driver that supports the Storage Management API uses the MS\_SMH
 
 The MS\_SMHBA\_SCSIENTRY class is defined as follows in *Hbaapi.mof*:
 
-```
+```cpp
 class MS_SMHBA_SCSIENTRY
 {
     [HBAType("MS_SMHBA_PORTLUN"), WmiDataId(1)]
@@ -32,9 +33,9 @@ When this class definition is compiled by the WMI tool suite, it produces the fo
 
 There are no methods associated with this WMI class.
 
- 
+ 
 
- 
+ 
 
 
 

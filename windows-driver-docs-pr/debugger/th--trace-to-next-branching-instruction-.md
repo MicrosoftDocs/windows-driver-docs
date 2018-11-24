@@ -3,11 +3,7 @@ title: th (Trace to Next Branching Instruction)
 description: The th command executes the program until it reaches any kind of branching instruction, including conditional or unconditional branches, calls, returns, and system calls.
 ms.assetid: 42b7ceb6-c507-45b3-9186-0a4014b68a28
 keywords: ["th (Trace to Next Branching Instruction) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,13 +20,13 @@ The **th** command executes the program until it reaches any kind of branching i
 
 User-Mode
 
-```
+```dbgcmd
 [~Thread] th [r] [= StartAddress] [Count] 
 ```
 
 Kernel-Mode
 
-```
+```dbgcmd
 th [r] [= StartAddress] [Count] 
 ```
 
@@ -74,7 +70,7 @@ Specifies the number of branching instructions that the debugger must encounter 
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -91,9 +87,9 @@ If the program counter is already on a branching instruction, the debugger trace
 
 In source mode, you can associate one source line with multiple assembly instructions. This command does not stop at a branching instruction that is associated with the current source line.
 
- 
+ 
 
- 
+ 
 
 
 

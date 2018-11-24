@@ -3,11 +3,7 @@ title: fxdevice
 description: The fxdevice extension displays summary information about all Power Management Framework (PoFx) registered devices. This command can be used only during kernel-mode debugging.
 ms.assetid: 98E34825-467F-46E5-BC29-AF241FF30B90
 keywords: ["fxdevice Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -26,7 +22,7 @@ For more information about PoFX, see [Overview of the Power Management Framework
 
 Syntax
 
-```
+```dbgcmd
 !fxdevice[<FxDevice Address>]
 ```
 
@@ -52,7 +48,7 @@ Provides the address of the FxDevice to display.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -65,7 +61,7 @@ The !fxdevice extension displays the following information when it is present on
 
 The following is example out from the !fxdevice extension with a supplied device address.
 
-```
+```dbgcmd
 kd> !fxdevice ffffe0012ccbda60
 !fxdevice 0xffffe0012ccbda60
     DevNode: 0xffffe0012bbb09f0
@@ -91,7 +87,7 @@ kd> !fxdevice ffffe0012ccbda60
 
 The following is the default output from the !fxdevice extension.
 
-```
+```dbgcmd
 kd> !fxdevice 
 ********************************************************************************
 Dumping non-idle PoFx devices
@@ -136,9 +132,9 @@ Dumping idle D0 PoFx devices
 ...
 ```
 
- 
+ 
 
- 
+ 
 
 
 

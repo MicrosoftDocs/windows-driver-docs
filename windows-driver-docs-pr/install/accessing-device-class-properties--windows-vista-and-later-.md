@@ -2,11 +2,7 @@
 title: Accessing Device Class Properties
 description: Accessing Device Class Properties
 ms.assetid: 51eef1f4-ca7d-46ab-a33f-be53de277541
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +25,9 @@ In Windows Vista and later versions of Windows, applications and installers can
 
 For information about how to access device class properties on Windows Server 2003, Windows XP, and Windows 2000, see [Accessing Device Setup Class Properties](accessing-device-setup-class-properties.md) and [Accessing Device Interface Class Properties](accessing-device-interface-class-properties.md).
 
- 
+ 
 
- 
+ 
 
 
 

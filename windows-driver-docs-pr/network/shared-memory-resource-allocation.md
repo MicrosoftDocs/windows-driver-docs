@@ -2,11 +2,7 @@
 title: Shared Memory Resource Allocation
 description: Shared Memory Resource Allocation
 ms.assetid: cf030a0f-1202-4d10-b9a1-58d031345678
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -46,9 +42,9 @@ The [**NdisAllocateSharedMemory**](https://msdn.microsoft.com/library/windows/ha
 
 Miniport drivers call the [**NdisFreeSharedMemory**](https://msdn.microsoft.com/library/windows/hardware/ff562601) function to free shared memory for a queue. If the miniport driver allocated the shared memory for a nondefault queue, it frees the shared memory in the context of the [OID\_RECEIVE\_FILTER\_FREE\_QUEUE](https://msdn.microsoft.com/library/windows/hardware/ff569789) OID while it is freeing the queue. Miniport drivers free shared memory that they allocated for the default queue in the context of the [*MiniportHaltEx*](https://msdn.microsoft.com/library/windows/hardware/ff559388) function.
 
- 
+ 
 
- 
+ 
 
 
 

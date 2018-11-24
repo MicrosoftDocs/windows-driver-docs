@@ -2,11 +2,7 @@
 title: Invariant MDL Checking for Driver
 description: The Invariant MDL Checking for Driver option monitors how the driver handles invariant MDL buffers on a per-driver basis.
 ms.assetid: 2FA69B7C-3EF4-4660-84D4-5108C97E395F
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -17,7 +13,7 @@ The Invariant MDL Checking for Driver option monitors how the driver handles inv
 
 **Note**  This option is available starting with Windows 8.
 
- 
+ 
 
 The Invariant MDL Checking for Driver option performs a more intensive form of the invariant MDL checking than the [Invariant MDL Checking for Stack](invariant-mdl-checking-for-stack.md) option. When the Invariant MDL Checking for Driver is active, buffer invariance is validated across every call to the [**IoCallDriver**](https://msdn.microsoft.com/library/windows/hardware/ff548336) and [**IoCompleteRequest**](https://msdn.microsoft.com/library/windows/hardware/ff548343) routines.
 
@@ -49,9 +45,9 @@ To activate the [Invariant MDL Checking for Stack](invariant-mdl-checking-for-st
     4.  Select (check)[I/O Verification](i-o-verification.md) and Invariant MDL Checking for Driver.
     5.  Restart the computer.
 
- 
+ 
 
- 
+ 
 
 
 

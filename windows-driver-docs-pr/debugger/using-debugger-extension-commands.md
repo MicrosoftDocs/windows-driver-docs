@@ -3,11 +3,7 @@ title: Using Debugger Extension Commands
 description: Using Debugger Extension Commands
 ms.assetid: 1db9a835-accb-41b9-9ab1-c4c9f0596aa5
 keywords: ["extension commands ( commands), using", "extension commands ( commands), default search order"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,7 +19,7 @@ An actual debugger extension command is an entry point in a DLL called by the de
 
 Debugger extensions are invoked by the following syntax:
 
-**!\[***module***.\]***extension* **\[***arguments***\]**
+**!\[**<em>module</em>**.\]**<em>extension</em> **\[**<em>arguments</em>**\]**
 
 The module name should not be followed with the .dll file name extension. If *module* includes a full path, the default string size limit is 255 characters.
 
@@ -75,7 +71,7 @@ The default search order is as follows:
     </tbody>
     </table>
 
-     
+     
 
 When an extension module is unloaded, it is removed from the search chain. When an extension module is loaded, it is added to the beginning of the search order. The [**.setdll (Set Default Extension DLL)**](-setdll--set-default-extension-dll-.md) command can be used to promote any module to the top of the search chain. By using this command repeatedly, you can completely control the search chain.
 
@@ -83,9 +79,9 @@ Use the [**.chain (List Debugger Extensions)**](-chain--list-debugger-extensions
 
 If you attempt to execute an extension command that is not in any of the loaded extension modules, you will get an Export Not Found error message.
 
- 
+ 
 
- 
+ 
 
 
 

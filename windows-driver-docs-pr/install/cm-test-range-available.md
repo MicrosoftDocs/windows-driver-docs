@@ -10,18 +10,9 @@ api_name:
 api_type:
 - NA
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # CM_Test_Range_Available
 
 This function is reserved for system use.
-
-
- 
-
- 
-
-
-
-
-

@@ -1,6 +1,5 @@
 ---
 title: GDL Block Macros
-author: windows-driver-content
 description: GDL Block Macros
 ms.assetid: c8b8e38d-237f-4c54-a394-148d211237ce
 keywords:
@@ -9,11 +8,7 @@ keywords:
 - block macros WDK GDL
 - BlockMacros directive WDK GDL
 - macros WDK GDL , examples
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,13 +27,13 @@ Block macros can contain references to other block or value macros . The instanc
 
 **Note**  The declarations and references of arguments that will be used to pass value macro references are prefixed with the equal sign (=) to signify that the argument type is value macro. All references to value macros are also prefixed with the equal sign to signify the reference is to a value macro instead of a block macro.
 
- 
+ 
 
 References to block macros can nest parameter lists to arbitrary depth. Block macros are referenced by using \*InsertBlock: NameOfBlockMacro. The name of the block macro is not prefixed with an equal sign because it is not a reference to a value macro. This syntax differs from the GPD syntax.
 
 The following code example shows how to use block macros.
 
-```
+```cpp
 *Macros:
 {
   LetterName: Letter
@@ -60,9 +55,9 @@ The following code example shows how to use block macros.
 *InsertBlock: PaperOption(LetterSize, =LetterName)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

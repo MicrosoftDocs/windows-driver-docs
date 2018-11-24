@@ -1,12 +1,7 @@
 ---
 title: IRP_MN_DISABLE_EVENTS
-author: windows-driver-content
 description: Any WMI driver that registers one or more event blocks must handle this IRP.
-ms.author: windowsdriverdev
 ms.date: 08/12/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.assetid: 3187643b-27d7-4a6d-8fbe-4f8eb6c251ed
 keywords:
  - IRP_MN_DISABLE_EVENTS Kernel-Mode Driver Architecture
@@ -102,9 +97,9 @@ Requirements
 
 [**WmiSystemControl**](https://msdn.microsoft.com/library/windows/hardware/ff565834)
 
- 
+ 
 
- 
+ 
 
 
 

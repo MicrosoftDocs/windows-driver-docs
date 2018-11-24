@@ -5,11 +5,7 @@ ms.assetid: 290f3a8a-6bdc-4dd9-a9bf-4eede37bf1e5
 keywords:
 - connection-oriented sockets WDK Winsock Kernel
 - WskSend
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,7 +16,7 @@ After a Winsock Kernel (WSK) application has connected a connection-oriented soc
 
 The following code example shows how a WSK application can send data over a connection-oriented socket.
 
-```
+```C++
 // Prototype for the send IoCompletion routine
 NTSTATUS
   SendComplete(
@@ -123,9 +119,9 @@ NTSTATUS
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

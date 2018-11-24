@@ -7,11 +7,7 @@ keywords:
 - network interfaces WDK , stack maintenance
 - stacks WDK networking
 - interface stack table WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +27,9 @@ To remove a stack table entry, a driver passes *HigherLayerIfIndex* and *LowerLa
 
 For an example of maintaining the interface stack, see the MUX 6.0 sample driver.
 
- 
+ 
 
- 
+ 
 
 
 

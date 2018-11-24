@@ -9,11 +9,7 @@ api_name:
 - KSNODETYPE_DAC
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,9 +33,9 @@ A KSNODETYPE\_DAC node can support the following optional properties:
 
 [**KSPROPERTY\_AUDIO\_STEREO\_SPEAKER\_GEOMETRY**](ksproperty-audio-stereo-speaker-geometry.md)
 
- 
+ 
 
- 
+ 
 
 
 

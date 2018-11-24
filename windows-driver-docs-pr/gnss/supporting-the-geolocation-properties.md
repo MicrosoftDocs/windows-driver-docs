@@ -1,13 +1,8 @@
 ---
 title: Supporting the geolocation properties
-author: windows-driver-content
 description: The source file, geolocation.cpp, contains three arrays of PROPERTYKEY structures that define the properties supported by the simulated sensor.
 ms.assetid: 0D25D58F-1023-4470-9F7D-E62544B87A42
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,7 +15,7 @@ The source file, geolocation.cpp, contains three arrays of PROPERTYKEY structure
 
 The first array defines the read-only and read-write properties supported by the simulated sensor.
 
-```ManagedCPlusPlus
+```cpp
 const PROPERTYKEY g_SupportedGeolocationProperties[] =
 {
     SENSOR_PROPERTY_TYPE,                       //[VT_CLSID]
@@ -44,7 +39,7 @@ The sample driver uses these values when retrieving a property (or properties) i
 
 The second array defines optional properties.
 
-```ManagedCPlusPlus
+```cpp
 const PROPERTYKEY g_OptionalSupportedGeolocationProperties[] =
 {
     SENSOR_PROPERTY_RANGE_MAXIMUM,              //[VT_UNKNOWN], IPortableDeviceValues
@@ -56,7 +51,7 @@ const PROPERTYKEY g_OptionalSupportedGeolocationProperties[] =
 
 The third array defines the writeable, or settable, properties supported by the pseudo sensor.
 
-```ManagedCPlusPlus
+```cpp
 const PROPERTYKEY g_SettableGeolocationProperties[] =
 {
     SENSOR_PROPERTY_CHANGE_SENSITIVITY,         //[VT_UNKNOWN], IPortableDeviceValues

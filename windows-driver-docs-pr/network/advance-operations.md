@@ -11,11 +11,7 @@ keywords:
 - receiving data WDK networking
 - freeing MDLs
 - reducing use
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -41,9 +37,9 @@ For the send complete case, advance operations can free memory that was allocate
 
 For the receive indication case, advance operations simply adjust the **DataOffset** and **DataLength** accordingly. After the advance operation, the headers of lower layers remain in the *unused data space*.
 
- 
+ 
 
- 
+ 
 
 
 

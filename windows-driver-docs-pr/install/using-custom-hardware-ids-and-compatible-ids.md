@@ -2,11 +2,7 @@
 title: Using Custom Hardware IDs and Compatible IDs
 description: Using Custom Hardware IDs and Compatible IDs
 ms.assetid: 4f0ae082-b601-4322-add8-63941c2bdad3
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -15,7 +11,7 @@ ms.localizationpriority: medium
 
 As described in [Device Identification Strings](device-identification-strings.md), the following is the generic format that a new bus driver should use for Plug and Play (PnP) hardware IDs and compatible IDs.
 
-```
+```cpp
 enumerator\enumerator-specific-device-ID 
 ```
 
@@ -27,7 +23,7 @@ Where:
 
 If the configuration or operation of a bus differs significantly from other buses, the bus driver for the bus should use a unique enumerator name to ensure that the child devices of the bus are not unintentionally and inappropriately grouped with child devices that are enumerated by the bus drivers for these other buses. The bus driver should use the following format to report device identification strings to the PnP manager:
 
-```
+```cpp
 bus-type-guid\vendor-specific-id
 ```
 
@@ -41,27 +37,27 @@ The PnP manager sends [**IRP_MN_QUERY_ID**](https://msdn.microsoft.com/library/w
 
 A device ID is the hardware ID that is the most specific description of a device. In the following example, the device ID specifies the vendor, the device, the subsystem, and the revision.
 
-```
+```cpp
 {17ed6609-9bc8-44ca-8548-abb79b13781b}\ven_1&dev_2&subsys_3&rev_4 
 ```
 
 A hardware ID list specifies IDs in order, from the most specific to the least specific. In the following list, a device identification string is reported as hardware ID if it specifies at least the vendor, the device, and the subsystem. The hardware ID that includes the most information is listed first.
 
-```
+```cpp
 {17ed6609-9bc8-44ca-8548-abb79b13781b}\ven_1&dev_2&subsys_3&rev_4 
 {17ed6609-9bc8-44ca-8548-abb79b13781b}\ven_1&dev_2&subsys_3 
 ```
 
 In the following list, a device identification string is reported as compatible ID if it specifies at least the vendor and device, but does not specify the subsystem. The compatible ID that includes the most information is listed first.
 
-```
+```cpp
 {17ed6609-9bc8-44ca-8548-abb79b13781b}\ven_1&dev_2&rev_4 
 {17ed6609-9bc8-44ca-8548-abb79b13781b}\ven_1&dev_2
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: GDL Macro Considerations
-author: windows-driver-content
 description: GDL Macro Considerations
 ms.assetid: b1e3e32f-2f5f-47ae-b69b-7645ada59c2a
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - macros WDK GDL , considerations
 - passing GDL macro references WDK
 - macros WDK GDL , passing macro references
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,13 +26,13 @@ A macro definition cannot reference itself. However, a macro reference can pass 
 
 The following code example shows how to pass a reference.
 
-```
+```cpp
 *InsertBlock:  Myself(Myself(AnotherMacro))
 ```
 
- 
+ 
 
- 
+ 
 
 
 

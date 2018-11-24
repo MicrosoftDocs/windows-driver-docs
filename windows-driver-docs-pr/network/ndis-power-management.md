@@ -2,11 +2,7 @@
 title: NDIS Power Management
 description: NDIS Power Management
 ms.assetid: 1DB8104D-33D6-429F-87AB-0BBCCA8003BF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,9 +19,9 @@ This section includes the following topics:
 
 [Power Management (NDIS 6.0 and NDIS 6.1)](power-management--ndis-6-0-and-ndis-6-1-.md)
 
- 
+ 
 
- 
+ 
 
 
 

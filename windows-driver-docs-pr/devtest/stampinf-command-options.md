@@ -10,11 +10,7 @@ api_name:
 - Stampinf
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -45,8 +41,8 @@ Specifies the INF or INX file to process.
 <span id="-s_section"></span><span id="-S_SECTION"></span>**-s** *section*  
 Specifies the INF section in which to put the [**INF DriverVer directive**](https://msdn.microsoft.com/library/windows/hardware/ff547394). The default location for this directive is the [**INF Version section**](https://msdn.microsoft.com/library/windows/hardware/ff547502).
 
-<span id="_______-d_________date_____"></span><span id="_______-D_________DATE_____"></span> **-d** \[ *date* | **\***\]  
-Specifies the date that is written in the [**INF DriverVer directive**](https://msdn.microsoft.com/library/windows/hardware/ff547394). The format for the date is *month*/*date*/*year* (for example, **-d 10/20/2011**).
+<span id="_______-d_________date_____"></span><span id="_______-D_________DATE_____"></span> **-d** \[ *date* | **\\**<em>\]  
+Specifies the date that is written in the [</em>*INF DriverVer directive*<em>](<https://msdn.microsoft.com/library/windows/hardware/ff547394>). The format for the date is *month</em>/*date*/*year* (for example, **-d 10/20/2011**).
 
 To use the current date, specify an asterisk (\*) with this parameter.
 
@@ -99,13 +95,12 @@ Shows verbose Stampinf output.
 <span id="-i_path"></span><span id="-I_PATH"></span>**-i** *path*  
 Specifies the location of the Ntverp.h file. The *path* represents a fully-qualified location of the directory that contains Ntverp.h
 
-### <span id="comments"></span><span id="COMMENTS"></span>Comments
+### Comments
 
-The date value that Stampinf puts in the [**INF DriverVer directive**](https://msdn.microsoft.com/library/windows/hardware/ff547394) is not based on *Coordinated Universal Time* (UTC), which is also known as *Greenwich Mean Time*. However, [**Inf2Cat**](inf2cat.md) interprets the date value of this INF directive as a UTC value. This could lead to errors if the local date value that is used by Stampinf is interpreted by Inf2Cat as a UTC value for tomorrow's date. To avoid this problem, do the following:
+The date value that Stampinf puts in the [**INF DriverVer directive**](https://msdn.microsoft.com/library/windows/hardware/ff547394) is not based on *Coordinated Universal Time* (UTC), which is also known as *Greenwich Mean Time*. However, [**Inf2Cat**](inf2cat.md) interprets the date value of this INF directive as a UTC value. This could lead to errors if the local date value that is used by Stampinf is interpreted by Inf2Cat as a UTC value for tomorrow's date. To avoid this problem, do *one* of the following:
 
--   Set the STAMPINF\_DATE environment variable to the appropriate UTC date value.
-
--   Run Stampinf without specifying the **-d** parameter. This instructs Stampinf to use the date value that is specified by the STAMPINF\_DATE environment variable.
+-   Set the STAMPINF\_DATE environment variable to the appropriate UTC date value. Now run Stampinf without specifying the **-d** parameter. This instructs Stampinf to use the date value that is specified by the STAMPINF\_DATE environment variable.  Now both Stampinf and Inf2Cat use UTC.
+-   Change your driver package project settings so that Inf2Cat sets `/uselocaltime`. To do so, use **Configuration Properties->Inf2Cat->General->Use Local Time**. Now both Stampinf and Inf2Cat use local time.
 
 When you develop your driver, you can set the environment variable PRIVATE\_DRIVER\_PACKAGE. When this variable is set, Stampinf sets the date and version that is used for the [**INF DriverVer directive**](https://msdn.microsoft.com/library/windows/hardware/ff547394) to the current date and time, regardless of the command line settings. In addition, Stampinf sets the **CatalogFile** directive. Stampinf writes **CatalogFile=delta.cat** in the [**INF Version section**](https://msdn.microsoft.com/library/windows/hardware/ff547502), unless a catalog was already specified with the **-c** command option.
 
@@ -115,9 +110,9 @@ Type the following command in a build window to enable this development mode:
 set PRIVATE_DRIVER_PACKAGE=1
 ```
 
- 
+ 
 
- 
+ 
 
 
 

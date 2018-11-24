@@ -8,11 +8,7 @@ keywords:
 - binding sockets WDK Winsock Kernel
 - local transport address bindings WDK Winsock Kernel
 - transport addresses WDK Winsock Kernel
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,7 +19,7 @@ After a Winsock Kernel (WSK) application has successfully created a socket, it c
 
 **Note**  Basic sockets do not support sending or receiving network data. Therefore, a WSK application cannot bind a basic socket to a local transport address.
 
- 
+ 
 
 A WSK application binds a socket to a local transport address by calling the [**WskBind**](https://msdn.microsoft.com/library/windows/hardware/ff571121) function. The **WskBind** function is pointed to by the **WskBind** member of the socket's provider dispatch structure. A socket's provider dispatch structure is pointed to by the **Dispatch** member of the socket object structure ( [**WSK\_SOCKET**](https://msdn.microsoft.com/library/windows/hardware/ff571182)) that was returned by the WSK subsystem during the creation of the socket.
 
@@ -31,7 +27,7 @@ A socket can be bound to a local wildcard address. For more information about th
 
 The following code example shows how a WSK application can bind a listening socket to a local transport address.
 
-```
+```C++
 // Prototype for the bind IoCompletion routine
 NTSTATUS
   BindComplete(
@@ -132,9 +128,9 @@ NTSTATUS
 
 For connection-oriented sockets, a WSK application can call the [**WskSocketConnect**](https://msdn.microsoft.com/library/windows/hardware/ff571150) function to create, bind, and connect a socket in a single function call.
 
- 
+ 
 
- 
+ 
 
 
 

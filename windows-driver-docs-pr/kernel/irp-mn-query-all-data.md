@@ -1,12 +1,7 @@
 ---
 title: IRP_MN_QUERY_ALL_DATA
-author: windows-driver-content
 description: All drivers that support WMI must handle this IRP.
-ms.author: windowsdriverdev
 ms.date: 08/12/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.assetid: 9d4e1c2e-73ad-4fc3-99e6-391a64edfa5c
 keywords:
  - IRP_MN_QUERY_ALL_DATA Kernel-Mode Driver Architecture
@@ -124,9 +119,9 @@ Requirements
 
 [**WNODE\_ALL\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff566372)
 
- 
+ 
 
- 
+ 
 
 
 

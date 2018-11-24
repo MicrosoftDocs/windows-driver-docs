@@ -1,15 +1,10 @@
 ---
 title: eHS_UPDATE_RESULT enumeration
-author: windows-driver-content
 description: The eHS_UPDATE_RESULT enumeration indicates the result of a “check for updates” request.
 ms.assetid: 7b9b8ddc-3101-466a-9640-b936f6d14de4
 keywords: 
 - eHS_UPDATE_RESULT enumeration Network Drivers Starting with Windows Vista
-ms.author: windowsdriverdev
-ms.date: 07/31/2017 
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 07/31/2017
 ms.localizationpriority: medium
 ---
 
@@ -79,9 +74,9 @@ Requirements
 
 [**HS\_PLUGIN\_CHECK\_FOR\_UPDATES**](hs-plugin-check-for-updates.md)
 
- 
+ 
 
- 
+ 
 
 
 

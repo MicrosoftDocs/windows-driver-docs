@@ -2,11 +2,7 @@
 title: C28715
 description: Warning C28715 Cast between semantically different integer types.
 ms.assetid: 49e37718-9950-4f63-a554-f924ae8cf0a4
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -45,9 +41,9 @@ if (SomeFunction() == TRUE) {
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

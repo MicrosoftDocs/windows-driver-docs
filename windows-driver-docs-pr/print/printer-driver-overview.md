@@ -1,15 +1,10 @@
 ---
 title: Printer Driver Overview
-author: windows-driver-content
 description: Printer Driver Overview
 ms.assetid: d6bfa85a-2094-4ff8-b32b-e8d7204bb452
 keywords:
 - printer drivers WDK , disign options
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,9 +27,9 @@ This section includes:
 
 [Microsoft Plotter Driver](microsoft-plotter-driver.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -12,6 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # BUS1394_CLASS_GUID
@@ -42,7 +43,7 @@ The BUS1394_CLASS_GUID [device interface class](https://msdn.microsoft.com/libra
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -80,9 +81,9 @@ Requirements
 
 [**GUID_61883_CLASS**](guid-61883-class.md)
 
- 
+ 
 
- 
+ 
 
 
 

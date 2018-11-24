@@ -2,11 +2,7 @@
 title: Protocol Driver Buffer Management
 description: Protocol Driver Buffer Management
 ms.assetid: 1f91b58e-d432-46c8-994e-d95c3aadfe43
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -48,9 +44,9 @@ Protocol drivers use the following functions to free the structures allocated fr
 
 Drivers should free NET\_BUFFER structures allocated with **NdisAllocateNetBuffer** before freeing the associated NET\_BUFFER\_LIST structure. NET\_BUFFER structures allocated with **NdisAllocateNetBufferAndNetBufferList** are freed when the driver calls **NdisFreeNetBufferList** for the associated NET\_BUFFER\_LIST structure.
 
- 
+ 
 
- 
+ 
 
 
 

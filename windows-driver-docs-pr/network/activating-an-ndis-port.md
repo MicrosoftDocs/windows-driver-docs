@@ -8,11 +8,7 @@ keywords:
 - activating NDIS ports
 - port states WDK NDIS
 - activation PnP events WDK NDIS ports
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -62,9 +58,9 @@ NDIS passes the authentication state of the default port to the [*MiniportInitia
 
 For more information about controlling the default port and allocating ports, see [Allocating NDIS Ports](allocating-an-ndis-port.md).
 
- 
+ 
 
- 
+ 
 
 
 

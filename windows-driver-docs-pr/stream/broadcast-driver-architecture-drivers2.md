@@ -1,6 +1,5 @@
 ---
 title: Broadcast Driver Architecture Drivers
-author: windows-driver-content
 description: Broadcast Driver Architecture Drivers
 ms.assetid: 23597c6d-791c-45d4-a1cd-8c26d9d888fb
 keywords:
@@ -13,11 +12,7 @@ keywords:
 - hardware WDK AVStream
 - signal manipulation WDK BDA
 - radio frequency tuner node WDK BDA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,9 +32,9 @@ Broadcast Driver Architecture (BDA) drivers control hardware that manipulate a d
 
 [Building and Testing BDA Drivers](building-and-testing-bda-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

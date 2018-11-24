@@ -1,17 +1,12 @@
 ---
 title: Setting and Clearing a Communication Mode for a Parallel Device
-author: windows-driver-content
 description: Setting and Clearing a Communication Mode for a Parallel Device
 ms.assetid: 2ff53ed0-dbb7-4c8f-b6e4-5f7d20124a7c
 keywords:
 - parallel devices WDK , communication modes
 - communication modes WDK parallel devices
 - clearing communication modes
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -43,9 +38,9 @@ A kernel-mode driver can also use the system-supplied [parallel device callback 
 
 For more information about the communication modes that the parallel port bus driver supports, see the modes NONE through ECP\_ANY that are defined in the header file *ntddpar.h* in the Windows Driver Kit (WDK).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -10,11 +10,7 @@ api_name:
 - DevCon Dp_delete
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,8 +21,6 @@ Deletes a third-party (OEM) driver package from the driver store on the local co
 
 ```
     devcon dp_delete [-f] inf
-
-   
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
@@ -47,9 +41,9 @@ devcon dp_delete oem2.inf
 devcon dp_delete oem0.inf -f
 ```
 
- 
 
- 
+
+
 
 
 

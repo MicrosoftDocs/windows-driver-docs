@@ -9,11 +9,7 @@ keywords:
 - Windows Vista display driver model WDK , synchronization
 - threading WDK display
 - synchronization WDK display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +25,9 @@ The following topics describe the display driver threading and synchronization m
 
 [Threading Model of User-Mode Display Driver](threading-model-of-user-mode-display-driver.md)
 
- 
+ 
 
- 
+ 
 
 
 

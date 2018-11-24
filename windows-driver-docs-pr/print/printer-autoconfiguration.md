@@ -1,6 +1,5 @@
 ---
 title: Printer Autoconfiguration
-author: windows-driver-content
 description: Printer Autoconfiguration
 ms.assetid: bbe5e58b-4ca2-4ec2-867e-27765d4f59ab
 keywords:
@@ -13,11 +12,7 @@ keywords:
 - automatic printer configuration WDK
 - printer configuration WDK , autoconfiguration
 - queues WDK printer
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,9 +31,9 @@ The main target for autoconfiguration is network printers as they are the most l
 
 [Autoconfiguration Implementation Options](autoconfiguration-implementation-options.md)
 
- 
+ 
 
- 
+ 
 
 
 

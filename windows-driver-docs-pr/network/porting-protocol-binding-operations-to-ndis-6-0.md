@@ -8,11 +8,7 @@ keywords:
 - protocol bindings WDK networking
 - binding operations WDK networking
 - porting protocol drivers WDK networking , binding operations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +30,9 @@ The following topics provide information about porting protocol binding operatio
 
 [Allocating Memory in an NDIS 6.0 Protocol Driver](allocating-memory-in-an-ndis-6-0-protocol-driver.md)
 
- 
+ 
 
- 
+ 
 
 
 

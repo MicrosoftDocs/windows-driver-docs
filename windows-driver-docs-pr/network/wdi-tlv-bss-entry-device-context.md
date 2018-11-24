@@ -1,13 +1,8 @@
 ---
 title: WDI_TLV_BSS_ENTRY_DEVICE_CONTEXT
-author: windows-driver-content
 description: WDI_TLV_BSS_ENTRY_DEVICE_CONTEXT is a TLV that contains device context for the BSS entry.
 ms.assetid: 5672294B-C6C0-43A3-9553-D6309F64F4A6
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_BSS_ENTRY_DEVICE_CONTEXT Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -35,7 +30,7 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 |-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | UINT8\[\] | An array of UINT8 elements that specifies the context data. This context is provided by the IHV component and can be used to store per-BSS entry state that the IHV component wants to maintain. To avoid lifetime management issues, the IHV component must not use pointers in this TLV. |
 
- 
+ 
 
 Requirements
 ------------
@@ -61,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

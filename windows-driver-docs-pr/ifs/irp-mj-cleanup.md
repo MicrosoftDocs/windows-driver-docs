@@ -1,5 +1,5 @@
 ---
-title: IRP\_MJ\_CLEANUP
+title: IRP_MJ_CLEANUP
 description: IRP\_MJ\_CLEANUP
 ms.assetid: e4593d99-a721-4ab1-82a5-b32b9c312b25
 keywords: ["IRP_MJ_CLEANUP Installable File System Drivers"]
@@ -9,11 +9,7 @@ api_name:
 - IRP_MJ_CLEANUP
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -94,9 +90,9 @@ Specifies IRP\_MJ\_CLEANUP.
 
 [**ZwClose**](https://msdn.microsoft.com/library/windows/hardware/ff566417)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,11 +3,7 @@ title: ndiskd.netpacket
 description: The ndiskd.netpacket extension displays information about a NET_PACKET structure.
 ms.assetid: 304BA2CF-B6BC-452C-8543-9B872054AA9E
 keywords: ["ndiskd.netpacket Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,7 +20,7 @@ The **!ndiskd.netpacket** extension displays information about a [NET\_PACKET](h
 
 For more information about the Network Adapter WDF Class Extension (NetAdapterCx), see [Network Adapter WDF Class Extension (Cx)](https://docs.microsoft.com/windows-hardware/drivers/netcx).
 
-```
+```console
 !ndiskd.netpacket [-handle <x>] [-basic] [-layout] [-checksum] [-data] 
 ```
 
@@ -55,7 +51,7 @@ Examples
 
 **Note**  See [Summary of Objects](https://docs.microsoft.com/windows-hardware/drivers/netcx/summary-of-objects) to see a diagram explaining the relationship of the NET\_PACKET object with other objects in the NetAdapterCx.
 
- 
+ 
 
 To obtain a handle for a NET\_PACKET, follow these steps:
 
@@ -70,7 +66,7 @@ To obtain a handle for a NET\_PACKET, follow these steps:
 For details on Steps 1-4 of this procedure, see the examples on the **!ndiskd.cxadapter** topic. For details on Step 5 of this procedure, see the examples on the [**!ndiskd.netqueue**](-ndiskd-netqueue.md) topic. For details on Steps 6-7 of this procedure, see the examples on the [**!ndiskd.netrb**](-ndiskd-netrb.md) topic.
 In the following example, look for the handle for the first NET\_PACKET, ffffd1022d000040.
 
-```
+```console
 0: kd> !ndiskd.netrb ffffd1022d000000 -dump
 
     [000] ffffd1022d000040 - NET_PACKET
@@ -91,7 +87,7 @@ In the following example, look for the handle for the first NET\_PACKET, ffffd10
 
 By clicking on the handle for this NET\_PACKET or by entering **!ndiskd.netpacket -handle** on the command line, you can see details for this NET\_PACKET, including the ring buffer that contains it, the datapath queue that contains its ring buffer, and the handle for its first fragment.
 
-```
+```console
 0: kd> !ndiskd.netpacket ffffd1022d000040
 
 
@@ -107,7 +103,7 @@ By clicking on the handle for this NET\_PACKET or by entering **!ndiskd.netpacke
 
 You can now combine the basic description with any of the other **!ndiskd.netpacket** parameters, or all of them, to see specific information for this fragment. The following example uses all parameters.
 
-```
+```console
 0: kd> !ndiskd.netpacket ffffd1022d000040 -basic -layout -checksum -data
 
     NET_PACKET         ffffd1022d000040    Ring Buffer        ffffd1022d000000
@@ -170,9 +166,9 @@ You can now combine the basic description with any of the other **!ndiskd.netpac
 
 [**!ndiskd.netrb**](-ndiskd-netrb.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,11 +3,7 @@ title: ndiskd.ndiskdversion
 description: The ndiskd.ndiskdversion extension displays information about ndiskd itself.
 ms.assetid: 12EB9E0F-7D2F-447B-B678-1E23EFF522FE
 keywords: ["ndiskd.ndiskdversion Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!ndiskd.ndiskdversion** extension displays information about !ndiskd itself.
 
-```
+```console
 !ndiskd.ndiskdversion 
 ```
 
@@ -40,7 +36,7 @@ Examples
 
 The following example shows output for **!ndiskd.ndiskdversion**.
 
-```
+```console
 1: kd> !ndiskd.ndiskdversion
     NDISKD Version     17.01.00 (NDISKD codename "All your WDF are belong to us")
     Build              Release
@@ -64,9 +60,9 @@ The following example shows output for **!ndiskd.ndiskdversion**.
 
 [**!ndiskd.help**](-ndiskd-help.md)
 
- 
+ 
 
- 
+ 
 
 
 

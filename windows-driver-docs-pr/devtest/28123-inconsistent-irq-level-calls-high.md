@@ -5,11 +5,7 @@ ms.assetid: 6b40a485-f4f7-4c68-8575-960faa8cb87b
 keywords:
 - warnings listed WDK PREfast for Drivers
 - errors listed WDK PREfast for Drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,7 +27,7 @@ warning C28123: The function is not permitted to be called at a high IRQ level. 
 </tbody>
 </table>
 
- 
+ 
 
 The driver is executing at an IRQL that is too high for the function that it is calling and the lowest permissible IRQL for prior calls within the function is greater than the maximum IRQL required for this call.
 
@@ -39,9 +35,9 @@ When the Code Analysis tool reports this warning, consult the WDK documentation 
 
 The Code Analysis tool infers the current IRQL and reports this warning only when it has inferred enough about the IRQL to detect the error. This inference might be based on the *function signature* (the arguments and result type) of the function being analyzed, or from prior calls in the execution path.
 
- 
+ 
 
- 
+ 
 
 
 

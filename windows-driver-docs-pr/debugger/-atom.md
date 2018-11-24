@@ -3,11 +3,7 @@ title: atom
 description: The atom extension displays the formatted atom table for the specified atom or for all atoms of the current process.
 ms.assetid: b4127e4f-a20b-497f-ad84-efea0df0dc80
 keywords: ["atom Windows Debugging"]
-ms.author: domars
-ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 09/17/2018
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!atom** extension displays the formatted atom table for the specified atom or for all atoms of the current process.
 
-```
+```dbgcmd
     !atom [Address] 
 ```
 
@@ -53,15 +49,15 @@ Ntsdexts.dll</td>
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
 For more information about atoms and atom tables, see the Microsoft Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

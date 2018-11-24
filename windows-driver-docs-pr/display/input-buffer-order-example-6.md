@@ -2,11 +2,7 @@
 title: Input Buffer Order Example 6
 description: Input Buffer Order Example 6
 ms.assetid: e94ca05a-5089-460a-bf71-ee6d8cf52f17
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -87,11 +83,11 @@ Consider an even more sophisticated deinterlace device that requires two previou
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

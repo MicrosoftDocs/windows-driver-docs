@@ -1,17 +1,12 @@
 ---
 title: Sample GPD Files
-author: windows-driver-content
 description: Sample GPD Files
 ms.assetid: 68b4ffa1-8c94-4cda-bc96-887e196cf534
 keywords:
 - Unidrv, GPD files
 - GPD files WDK Unidrv , samples
 - Unidrv WDK print
-ms.author: windowsdriverdev
 ms.date: 01/30/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,7 +21,7 @@ The Windows driver print samples on GitHub include several examples of GPD files
 -   [XPSDrv driver and filter sample](http://go.microsoft.com/fwlink/p/?LinkId=617950)
 
 
- 
+ 
 
 
 

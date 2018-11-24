@@ -8,11 +8,7 @@ keywords:
 - drawing WDK GDI , paths
 - filling paths WDK GDI
 - paths WDK GDI
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +26,9 @@ A driver can also support the optional [**DrvStrokeAndFillPath**](https://msdn.m
 
 When the driver returns **FALSE** from either the [**DrvFillPath**](https://msdn.microsoft.com/library/windows/hardware/ff556220) or [**DrvStrokeAndFillPath**](https://msdn.microsoft.com/library/windows/hardware/ff556311) functions, GDI converts the fill-path request to a set of simpler operations and calls the driver function again. If the device returns **FALSE** again on the second call to **DrvFillPath**, GDI converts the path to a clip object and then calls [**EngFillPath**](https://msdn.microsoft.com/library/windows/hardware/ff564860). For a **FALSE** return when **DrvStrokeAndFillPath** is recalled, GDI can convert the call into separate calls to [**DrvStrokePath**](https://msdn.microsoft.com/library/windows/hardware/ff556316) and **DrvFillPath**.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -8,11 +8,7 @@ keywords:
 - COPP WDK DirectX VA , graphics adapter output requirements
 - protected video WDK COPP , graphics adapter output requirements
 - graphics adapter output requirements WDK COPP
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,9 +31,9 @@ A certified output must prevent unauthorized software or hardware components fro
 <span id="Switch_to_a_failure_mode_if_the_output_fails"></span><span id="switch_to_a_failure_mode_if_the_output_fails"></span><span id="SWITCH_TO_A_FAILURE_MODE_IF_THE_OUTPUT_FAILS"></span>Switch to a failure mode if the output fails  
 If the certified output can no longer enforce the configuration profile specified at configuration time, then the output should cease decrypting incoming content and should send a status message to the application. The status message should indicate that the output can no longer perform as configured.
 
- 
+ 
 
- 
+ 
 
 
 

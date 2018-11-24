@@ -3,11 +3,7 @@ title: usbkd.usbtt
 description: The usbkd.usbtt command displays information from a USBPORT _TRANSACTION_TRANSLATOR structure.
 ms.assetid: 4D599BCE-C6C3-42B3-BDCE-EE9E47FA6AB7
 keywords: ["usbkd.usbtt Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!usbkd.usbtt** command displays information from a **USBPORT!\_TRANSACTION\_TRANSLATOR** structure.
 
-```
+```dbgcmd
 !usbkd.usbtt StructAddr
 ```
 
@@ -42,7 +38,7 @@ Examples
 
 Here is one way to find the address of a **usbport!\_TRANSACTION\_TRANSLATOR** structure. First enter [**!usbkd.usb2tree**](-usbkd-usb2tree.md).
 
-```
+```dbgcmd
 0: kd> !usbkd.usb2tree
 ...
 2)!ehci_info ffffe00001ca11a0 !devobj ffffe00001ca1050 PCI: VendorId 8086 DeviceId 293c RevisionId 0002 
@@ -58,11 +54,11 @@ Either click the DML command or pass the address of the device extension to [**!
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](http://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
- 
+ 
 
- 
+ 
 
 
 

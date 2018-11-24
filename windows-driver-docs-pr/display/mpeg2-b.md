@@ -4,11 +4,7 @@ description: MPEG2_B
 ms.assetid: 7d67f0ef-a5eb-40db-9f00-6f652d28e530
 keywords:
 - MPEG2_B restricted profile WDK DirectX VA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -47,7 +43,7 @@ These values of the *bDXVA\_Func* variable must be supported: 1 (picture decodin
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Restrictions_on_DXVA_ConfigAlphaLoad_and_DXVA_ConfigAlphaCombine"></span><span id="restrictions_on_dxva_configalphaload_and_dxva_configalphacombine"></span><span id="RESTRICTIONS_ON_DXVA_CONFIGALPHALOAD_AND_DXVA_CONFIGALPHACOMBINE"></span>Restrictions on DXVA\_ConfigAlphaLoad and DXVA\_ConfigAlphaCombine
 
@@ -69,16 +65,16 @@ These values of the *bDXVA\_Func* variable must be supported: 1 (picture decodin
 </tr>
 <tr class="even">
 <td align="left"><p><strong>bConfigDataType</strong> (DXVA_ConfigAlphaLoad)</p></td>
-<td align="left"><p>Zero, 1, or 3 (at the accelerator's discretion)</p></td>
+<td align="left"><p>Zero, 1, or 3 (at the accelerator&#39;s discretion)</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

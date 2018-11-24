@@ -2,11 +2,7 @@
 title: SRB\_UNKNOWN\_DEVICE\_COMMAND
 description: SRB\_UNKNOWN\_DEVICE\_COMMAND
 ms.assetid: 89bc2176-e384-48bf-82d8-4a8ab2bd5159
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,9 +18,9 @@ This request can be used as an IRP pass-through mechanism for IRPs that the stre
 
 If the minidriver does not support SRB\_UNKNOWN\_DEVICE\_COMMAND or does not handle the IRP, it should set pSRB-&gt;Status to STATUS\_NOT\_IMPLEMENTED.
 
- 
+ 
 
- 
+ 
 
 
 

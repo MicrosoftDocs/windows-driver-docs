@@ -1,6 +1,5 @@
 ---
 title: Introduction to Printer Graphics DLLs
-author: windows-driver-content
 description: Introduction to Printer Graphics DLLs
 ms.assetid: 3f7ce476-6bef-4a80-ae2a-2a63e891dda1
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - graphics DLL WDK printer , about printer graphics DLL
 - graphics DLL WDK printer
 - printer graphics DLL WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -47,7 +42,7 @@ The first diagram depicts a user-mode printer graphics DLL.
 
 **Note**   In Windows Vista printer graphics DLLs can only execute in user mode. For more information, see [Choosing User Mode or Kernel Mode](choosing-user-mode-or-kernel-mode.md).
 
- 
+ 
 
 ![diagram illustrating a user-mode printer graphics dll](images/usrmdprt.png)
 
@@ -59,9 +54,9 @@ Note in these diagrams that if the output format from GDI is [*enhanced metafile
 
 The diagrams illustrate an entirely local environment. If the printer is connected to a server, EMF records are typically produced by the client's copy of the GDI rendering engine (GRE) and then spooled to a local file that is sent to the server. The server's copy of the spooler reads the file and sends the records to the server's EMF print processor, and the server's copy of the GRE calls the server's printer graphics DLL.
 
- 
+ 
 
- 
+ 
 
 
 

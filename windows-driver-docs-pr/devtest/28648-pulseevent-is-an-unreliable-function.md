@@ -2,11 +2,7 @@
 title: C28648
 description: Warning C28648 PulseEvent is an unreliable function.
 ms.assetid: 6132e35c-f1ae-44cc-9a6c-b61d6e7f8c57
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ Some of the ways to fix the use of **PulseEvent**:
 
 -   If all threads waiting on the event need to be released AND the event is an auto-reset event, call **SetEvent** instead of **PulseEvent** (your original call to **PulseEvent** was releasing only one thread anyway).
 
- 
+ 
 
- 
+ 
 
 
 

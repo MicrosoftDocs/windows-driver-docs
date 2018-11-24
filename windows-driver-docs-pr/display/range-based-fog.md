@@ -7,11 +7,7 @@ keywords:
 - fogging WDK Direct3D
 - D3DPRASTERCAPS_FOGRANGE
 - D3DRENDERSTATE_RANGEFOGENABLE
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +27,9 @@ Objects that are visible remain visible, regardless of the rotation. This is com
 
 To set up fog to be range-based, D3DPRASTERCAPS\_FOGRANGE and the D3DRENDERSTATE\_RANGEFOGENABLE render state should be set. This render state works only with D3DVERTEX vertices. When the application specifies D3DLVERTEX or D3DTLVERTEX vertices, the F (fog) component of the RGBF fog value should already be corrected for range. The D3DVERTEX, D3DLVERTEX, and D3DTLVERTEX structures are defined in the Direct3D SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

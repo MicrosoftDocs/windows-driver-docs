@@ -2,11 +2,7 @@
 title: Optional Commands
 description: Optional Commands
 ms.assetid: b9c411b1-0061-468a-b900-47c6062aa3b0
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -55,9 +51,9 @@ Called by the WIA Flatbed Driver to allow the microdriver to read registry entri
 
 Note: This key is opened and closed *only* by the WIA Flatbed Driver. It is also valid only during this command and CMD\_INITIALIZE (see [Required Commands](required-commands.md)). After those commands return, the key is no longer valid. The HKEY value *must not* be cached.
 
- 
+ 
 
- 
+ 
 
 
 

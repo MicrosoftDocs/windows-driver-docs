@@ -8,11 +8,7 @@ keywords:
 - hardware-first installations WDK device installations
 - distribution medium WDK device installations , hardware-first installations
 - device installations WDK , types
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,9 +21,9 @@ If the user plugs in new hardware before inserting your distribution medium into
 
 -   [Installing an In-box Driver or a Preinstalled Driver](installing-an-in-box-driver-or-a-preinstalled-driver.md)
 
- 
+ 
 
- 
+ 
 
 
 

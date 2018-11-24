@@ -3,11 +3,7 @@ title: B (Windows Debugger Glossary)
 description: Glossary page - B
 Robots: noindex, nofollow
 ms.assetid: 5ba110fc-1a12-4cbd-adc9-ef9441e257cb
-ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -49,9 +45,9 @@ For more information, see [Bug Checks (Blue Screens)](bug-checks--blue-screens-.
 <span id="bug_check_code"></span><span id="BUG_CHECK_CODE"></span>**bug check code**  
 The hexadecimal code indicating a specific type of bug check .
 
- 
+ 
 
- 
+ 
 
 
 

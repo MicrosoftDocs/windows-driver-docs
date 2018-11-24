@@ -3,11 +3,7 @@ title: Bug Check 0x139 KERNEL_SECURITY_CHECK_FAILURE
 description: The KERNEL_SECURITY_CHECK_FAILURE bug check has a value of 0x00000139. This bug check indicates that the kernel has detected the corruption of a critical data structure.
 ms.assetid: C0E5C625-13DB-4B3A-8080-69CEB963A299
 keywords: ["Bug Check 0x139 KERNEL_SECURITY_CHECK_FAILURE", "Bug Check 0x139 KERNEL_SECURITY_CHECK_FAILURE"]
-ms.author: domars
 ms.date: 06/27/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The KERNEL\_SECURITY\_CHECK\_FAILURE bug check has a value of 0x00000139. This bug check indicates that the kernel has detected the corruption of a critical data structure.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## Bug Check 0x139 KERNEL\_SECURITY\_CHECK\_FAILURE Parameters
 
@@ -34,7 +30,7 @@ The KERNEL\_SECURITY\_CHECK\_FAILURE bug check has a value of 0x00000139. This b
 | 3         | Address of the exception record for the exception that caused the bug check |
 | 4         | Reserved                                                                    |
 
- 
+ 
 
 The following table describes possible values for Parameter 1.
 
@@ -70,7 +66,7 @@ The following table describes possible values for Parameter 1.
 |   37 | An out of range switch jumptable entry was invoked. |
 |   38 | A longjmp was attempted to an invalid target. |
 |   39 | An export suppressed call target couldn't be made a valid call target. |
- 
+ 
 
 Cause
 -----
@@ -106,7 +102,7 @@ These general troubleshooting tips may be helpful.
 
 -   If new device drivers or system services have been added recently, try removing or updating them. Try to determine what changed in the system that caused the new bug check code to appear.
 
--   Check the System Log in Event Viewer for additional error messages that might help pinpoint the device or driver that is causing the error. For more information, see [Open Event Viewer](http://windows.microsoft.com/windows/what-information-event-logs-event-viewer#1TC=windows-7). Look for critical errors in the system log that occurred in the same time window as the blue screen.
+-   Check the System Log in Event Viewer for additional error messages that might help pinpoint the device or driver that is causing the error. For more information, see [Open Event Viewer](https://windows.microsoft.com/windows/what-information-event-logs-event-viewer#1TC=windows-7). Look for critical errors in the system log that occurred in the same time window as the blue screen.
 
 -   Look in **Device Manager** to see if any devices are marked with the exclamation point (!). Review the events log displayed in driver properties for any faulting driver. Try updating the related driver.
 
@@ -121,9 +117,9 @@ These general troubleshooting tips may be helpful.
 
 [Analyzing a Kernel-Mode Dump File with WinDbg](analyzing-a-kernel-mode-dump-file-with-windbg.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: How to Perform Fuzz Tests with IoSpy and IoAttack
 description: This topic describes how to perform fuzz tests by using the IoSpy and IoAttack tools
 ms.assetid: f800e962-2a0f-4039-a479-395a62428b06
-ms.author: windowsdriverdev
 ms.date: 07/10/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -50,7 +46,7 @@ To perform fuzz tests by using [IoSpy](iospy.md) and [IoAttack](ioattack.md), do
 
     **Note**  When you uninstall IoSpy, it will not delete the IoSpy data file. The location of this file is set by the *DFD* parameter to the **Enable I/O Spy** test. The default location is %SystemDrive%\\DriverTest\\IoSpy. For more information, see [IoSpy Data File](iospy.md).
 
-     
+     
 
 4.  Run [IoAttack](ioattack.md):
 
@@ -58,11 +54,11 @@ To perform fuzz tests by using [IoSpy](iospy.md) and [IoAttack](ioattack.md), do
 
     **Note**   In order to verify the access privileges of your driver's IOCTL and WMI interfaces, you should run [IoAttack](ioattack.md) accounts with different privileges, such as a guest account and an administrator account.
 
-     
+     
 
- 
+ 
 
- 
+ 
 
 
 

@@ -12,6 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # RemoveTarget function
@@ -24,10 +25,10 @@ Syntax
 
 ```ManagedCPlusPlus
 void RemoveTarget(
-   [in, HBAType("HBA_WWN")] uint8          HbaPortWWN[8],
-   [in, HBAType("HBA_WWN")] uint8          DiscoveredPortWWN[8],
-   [in] uint32                             AllTargets,
-   [out, HBA_STATUS_QUALIFIERS] HBA_STATUS HBAStatus
+   [in, HBAType("HBA_WWN")] uint8          HbaPortWWN[8],
+   [in, HBAType("HBA_WWN")] uint8          DiscoveredPortWWN[8],
+   [in] uint32                             AllTargets,
+   [out, HBA_STATUS_QUALIFIERS] HBA_STATUS HBAStatus
 );
 ```
 
@@ -83,9 +84,9 @@ Requirements
 
 [**RemoveTarget\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff564039)
 
- 
+ 
 
- 
+ 
 
 
 

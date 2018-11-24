@@ -2,11 +2,7 @@
 title: Managing Hyper-V Extensible Switch Feature Status Information
 description: Managing Hyper-V Extensible Switch Feature Status Information
 ms.assetid: 228A7F58-8F22-415C-AA22-4CE4B98185E8
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,9 +19,9 @@ This section includes the following topics:
 
 For more information on feature status information, see [Hyper-V Extensible Switch Feature Status Information](hyper-v-extensible-switch-feature-status-information.md).
 
- 
+ 
 
- 
+ 
 
 
 

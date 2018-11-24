@@ -6,11 +6,7 @@ keywords:
 - Static Driver Verifier Report WDK , Trace Tree pane
 - Trace Tree pane WDK Static Driver Verifier
 - color coding WDK Static Driver Verifier
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ SDV uses colors to help you quickly interpret what you see.
 
 -   **Blue highlight** indicates the **Trace Tree** pane element that is associated with a line of code that is selected in the **Source Code** pane. The blue highlight appears only when a line of code is selected in the **Source Code** pane.
 
- 
+ 
 
- 
+ 
 
 
 

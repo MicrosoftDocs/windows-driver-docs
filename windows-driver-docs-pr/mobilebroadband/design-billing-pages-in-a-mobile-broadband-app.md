@@ -2,11 +2,7 @@
 title: Design billing pages in a mobile broadband app
 description: Design billing pages in a mobile broadband app
 ms.assetid: 44c5a273-1dd4-4ff5-90aa-9d1f4f855439
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -64,9 +60,9 @@ Inappropriate design for the billing page:
 
 [Designing the user experience of a mobile broadband app](designing-the-user-experience-of-a-mobile-broadband-app.md)
 
- 
+ 
 
- 
+ 
 
 
 

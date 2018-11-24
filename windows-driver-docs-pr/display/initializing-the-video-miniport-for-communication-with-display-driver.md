@@ -7,11 +7,7 @@ keywords:
 - initializing video miniport drivers
 - HwVidInitialize
 - one-time initialization WDK video miniport
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +27,9 @@ Usually, a display driver controls the display the end user sees, except occasio
 
 The [*HwVidInitialize*](https://msdn.microsoft.com/library/windows/hardware/ff567345) function can call [**VideoPortGetRegistryParameters**](https://msdn.microsoft.com/library/windows/hardware/ff570316) or [**VideoPortSetRegistryParameters**](https://msdn.microsoft.com/library/windows/hardware/ff570365) to get and set configuration information in the registry. For example, *HwVidInitialize* might call **VideoPortSetRegistryParameters** to set up nonvolatile configuration information in the registry for the next boot. It might call **VideoPortGetRegistryParameters** to get adapter-specific, bus-relative configuration parameters written into the registry by an installation program.
 
- 
+ 
 
- 
+ 
 
 
 

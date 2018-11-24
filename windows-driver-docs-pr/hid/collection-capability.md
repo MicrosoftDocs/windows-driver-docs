@@ -1,16 +1,11 @@
 ---
 title: Collection Capability
-author: windows-driver-content
 description: Collection Capability
 ms.assetid: 228fab4f-ff90-43c5-bc68-26b29e8a7dd6
 keywords:
 - capabilities WDK HID collections
 - summary capabilities WDK HID
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +29,9 @@ The capability of a collection is defined by its usage, reports, link collection
 
 -   For each report type, the number of buttons and values supported by the collection, as specified by the **Number***Xxx***DataIndices** member.
 
- 
+ 
 
- 
+ 
 
 
 

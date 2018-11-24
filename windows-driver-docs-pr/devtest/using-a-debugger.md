@@ -4,11 +4,7 @@ description: Using a Debugger
 ms.assetid: e2490442-9d90-454b-95e0-db8c5d7fa19a
 keywords:
 - debugging drivers WDK , debuggers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,9 +19,9 @@ Debugging Tools for Windows provides debuggers and other tools that you can use 
 -   [Windows Debugging](https://msdn.microsoft.com/library/windows/hardware/ff551063)
 -   [Setting Up Debugging (Kernel-Mode and User-Mode)](https://msdn.microsoft.com/library/windows/hardware/hh450944)
 
- 
+ 
 
- 
+ 
 
 
 

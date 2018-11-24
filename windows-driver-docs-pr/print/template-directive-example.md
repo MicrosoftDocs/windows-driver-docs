@@ -1,16 +1,11 @@
 ---
 title: Template Directive Example
-author: windows-driver-content
 description: Template Directive Example
 ms.assetid: ae8fe5e6-ee79-424d-80b3-fd6300257977
 keywords:
 - Production directive WDK GDL
 - templates WDK GDL , examples
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,7 +14,7 @@ ms.localizationpriority: medium
 
 The following example shows a simple production.
 
-```
+```cpp
   *Production: EXACTLY_ONE
   {
         *Production: SATISFY_ALL
@@ -47,9 +42,9 @@ The construct instances that are bound to the host template by this production c
 
 If the host template inherits from other templates, the productions that are defined in the inherited templates are also evaluated and must also be **TRUE** for the production in the host template to evaluate to **TRUE**.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -6,11 +6,7 @@ keywords:
 - registering intermediate drivers
 - intermediate drivers WDK networking , registering
 - NDIS intermediate drivers WDK , registering
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -83,11 +79,11 @@ Certain miniport driver handler functions are never supplied by an intermediate 
 
 **Note**  Intermediate drivers must include pause and restart functionality. Include support for pause and restart of virtual miniports, if needed, when NDIS pauses an underlying driver stack. For more information about pause and restart, see [Driver Stack Management](driver-stack-management.md).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

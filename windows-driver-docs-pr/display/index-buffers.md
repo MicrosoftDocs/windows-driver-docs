@@ -5,11 +5,7 @@ ms.assetid: 5bf7dc12-d988-4194-a81f-52c9c5356610
 keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , index buffers
 - index buffers WDK Directx 8.0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,9 +21,9 @@ Index buffers are created, locked, unlocked and destroyed with the same driver e
 
 Unlike many other surface types, a driver does not need to set the capability DDSCAPS2\_INDEXBUFFER when reporting its capabilities to the runtime to receive driver calls for index buffer creation, destruction, and locking. A DirectX 8.0 driver that supports vertex buffers is assumed to support index buffers also. If the underlying hardware has no direct support for index buffers, then the driver should handle index buffer creation by allocating system memory for the surface.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -17,11 +17,7 @@ keywords:
 - compute shader WDK Windows Server 2008 R2 display
 - unordered access resource views WDK Windows 7 display
 - unordered access resource views WDK Windows Server 2008 R2 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -142,9 +138,9 @@ The Direct3D runtime calls the following driver functions to create, set up, and
 
 [**SetRenderTargets(D3D11)**](https://msdn.microsoft.com/library/windows/hardware/ff569554)
 
- 
+ 
 
- 
+ 
 
 
 

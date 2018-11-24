@@ -9,11 +9,7 @@ api_name:
 - wscn ColorProcessing wscn MustHonor "" wscn Override "" wscn UsedDefault ""
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The optional **ColorProcessing** element specifies the color-processing mode of 
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ColorProcessing wscn:MustHonor=""                      wscn:Override=""                      wscn:UsedDefault=""
   MustHonor = "xs:string"
   Override = "xs:string"
@@ -101,7 +97,7 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>MediaFront</strong>](mediafront.md)</p></td>
+<td><p><a href="mediafront.md" data-raw-source="[&lt;strong&gt;MediaFront&lt;/strong&gt;](mediafront.md)"><strong>MediaFront</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -113,7 +109,7 @@ The client can specify the optional **MustHonor** attribute only when the **Colo
 
 The WSD Scan Service can specify the optional **Override** and **UsedDefault** attributes only when the **ColorProcessing** element is contained within a [**DocumentFinalParameters**](documentfinalparameters.md) hierarchy. For more information about **Override** and **UsedDefault** and their usage, see **DocumentFinalParameters**.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ColorEntry**](colorentry.md)
@@ -124,9 +120,9 @@ The WSD Scan Service can specify the optional **Override** and **UsedDefault** a
 
 [**MediaFront**](mediafront.md)
 
- 
+ 
 
- 
+ 
 
 
 

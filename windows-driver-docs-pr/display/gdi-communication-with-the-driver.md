@@ -6,11 +6,7 @@ keywords:
 - GDI WDK Windows 2000 display , driver communication
 - graphics drivers WDK Windows 2000 display , driver communication
 - drawing WDK GDI , driver communication
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,9 +20,9 @@ The driver exports only one function to GDI: [**DrvEnableDriver**](https://msdn.
 
 GDI makes a large number of objects and services available to the driver. These fall into two categories: user objects and service routines.
 
- 
+ 
 
- 
+ 
 
 
 

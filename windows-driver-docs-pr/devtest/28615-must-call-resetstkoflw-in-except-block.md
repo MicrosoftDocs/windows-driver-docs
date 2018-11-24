@@ -2,11 +2,7 @@
 title: C28615
 description: Warning C28615 Must call _resetstkoflw in the __except() block when calling _alloca in the __try block. Don't call _resetstkoflw from inside a catch() block.
 ms.assetid: bccfc846-58b9-4c20-bbe7-383ecf836165
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -43,7 +39,7 @@ __except ((GetExceptionCode () == EXCEPTION_STACK_OVERFLOW)
 The following example also fails for similar reasons.
 
 ```
- 
+
 __try 
 {
  char *x = _alloca (i);
@@ -64,8 +60,6 @@ int SEHFilter (DWORD dwExceptionCode)
  return EXCEPTION_CONTINUE_SEARCH;
  }
 }
- 
- 
 ```
 
 The following example successfully avoids the error.
@@ -83,9 +77,9 @@ _resetstkoflw ();
 }
 ```
 
- 
 
- 
+
+
 
 
 

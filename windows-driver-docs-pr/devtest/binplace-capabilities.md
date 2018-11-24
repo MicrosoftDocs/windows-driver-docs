@@ -7,11 +7,7 @@ keywords:
 - stripping files
 - splitting files
 - moving files WDK BinPlace
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -49,9 +45,9 @@ For a large project, BinPlace can be used to organize a great number of files in
 
 For more information, see [BinPlace Destination Directories](binplace-destination-directories.md).
 
- 
+ 
 
- 
+ 
 
 
 

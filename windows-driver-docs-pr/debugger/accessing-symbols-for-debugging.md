@@ -2,11 +2,7 @@
 title: Accessing Symbols for Debugging
 description: Accessing Symbols for Debugging
 ms.assetid: a0f52dc3-6903-4d63-b74c-5c16960a7cb6
-ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,9 +34,9 @@ This section includes:
 
 [Deferred Symbol Loading](deferred-symbol-loading.md)
 
- 
+ 
 
- 
+ 
 
 
 

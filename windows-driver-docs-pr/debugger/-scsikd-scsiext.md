@@ -3,11 +3,7 @@ title: scsikd.scsiext
 description: The scsikd.scsiext extension displays detailed information about the specified SCSI port extension.
 ms.assetid: 0fcb0545-eb5a-4500-8e14-a5296624c80b
 keywords: ["scsikd.scsiext Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!scsikd.scsiext** extension displays detailed information about the specified SCSI port extension.
 
-```
+```dbgcmd
 !scsikd.scsiext Device 
 ```
 
@@ -51,7 +47,7 @@ Specifies the device object or device extension of a SCSI port extension.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -62,7 +58,7 @@ Remarks
 
 Here is an example of the **!scsikd.scsiext** display, where the SCSI port extension has been specified by a functional device object (FDO); this can be obtained from the **DO** field or **DevExt** field in the [**!minipkd.adapters**](-minipkd-adapters.md) display:
 
-```
+```dbgcmd
 kd> !scsikd.scsiext 816f9a40 
 Scsiport functional device extension at address 816f9af8
 Common Extension:
@@ -100,7 +96,7 @@ Adapter Extension:
 
 Here is an example of the **!scsikd.scsiext** display, where the SCSI port extension has been specified by a physical device object (PDO); this can be obtained from the **DevObj** field or **LUN** field in the [**!minipkd.adapters**](-minipkd-adapters.md) display:
 
-```
+```dbgcmd
 kd> !scsikd.scsiext 816ea030
 Scsiport physical device extension at address 816ea0e8
 Common Extension:
@@ -124,9 +120,9 @@ Logical Unit Extension:
   Request List @0x816ea1f0 is empty
 ```
 
- 
+ 
 
- 
+ 
 
 
 

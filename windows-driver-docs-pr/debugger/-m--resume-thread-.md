@@ -3,11 +3,7 @@ title: ~m (Resume Thread)
 description: The ~m command resumes execution of the specified thread.Do not confuse this command with the m (Move Memory) command.
 ms.assetid: fc4eec45-2a28-4571-abf5-3896b77a52c9
 keywords: ["~m (Resume Thread) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,7 +20,7 @@ The **~m** command resumes execution of the specified thread.
 
 Do not confuse this command with the [**m (Move Memory)**](m--move-memory-.md) command.
 
-```
+```dbgcmd
 ~Thread m 
 ```
 
@@ -57,7 +53,7 @@ Specifies the thread or threads to resume. For more information about the syntax
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -70,9 +66,9 @@ You can specify threads only in user mode. In kernel mode, the tilde (~) refers 
 
 Every time that you use the **~m** command, the thread's suspend count is decreased by one.
 
- 
+ 
 
- 
+ 
 
 
 

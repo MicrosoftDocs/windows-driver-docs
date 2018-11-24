@@ -9,11 +9,7 @@ api_name:
 - KSEVENT_CONNECTION_PRIORITY
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,9 +18,9 @@ ms.localizationpriority: medium
 
 The **KSEVENT\_CONNECTION\_PRIORITY** event allows a client to receive notification of priority failures. This event occurs when resources are lost due to priority levels. There are no parameters to this event.
 
- 
+ 
 
- 
+ 
 
 
 

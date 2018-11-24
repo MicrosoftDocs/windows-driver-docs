@@ -1,14 +1,9 @@
 ---
 title: Handling an IRP_MN_REMOVE_DEVICE Request
-author: windows-driver-content
 description: Handling an IRP_MN_REMOVE_DEVICE Request
 ms.assetid: 1e0c8b41-5375-41dd-80eb-e48c0f513e01
 keywords: ["IRP_MN_REMOVE_DEVICE"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -44,9 +39,9 @@ This section describes:
 
 [Removing a Device in a Bus Driver](removing-a-device-in-a-bus-driver.md)
 
- 
+ 
 
- 
+ 
 
 
 

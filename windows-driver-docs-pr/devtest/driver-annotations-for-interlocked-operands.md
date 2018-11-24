@@ -2,11 +2,7 @@
 title: Driver annotations for interlocked operands
 description: Driver annotations for interlocked operands
 ms.assetid: 33C85016-765B-42BF-9F38-BB682951B20C
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,13 +26,13 @@ Use the following annotation for function parameters to identify it as an interl
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><span id="_Interlocked_operand_"></span><span id="_interlocked_operand_"></span><span id="_INTERLOCKED_OPERAND_"></span>_Interlocked_operand_</p></td>
+<td align="left"><p><span id="_Interlocked_operand_"></span><span id="_interlocked_operand_"></span><span id="_INTERLOCKED_OPERAND_"></span><em>Interlocked_operand</em></p></td>
 <td align="left"><p>The annotated function parameter is the target operand of one of the interlocked functions. Those operands must have specific additional properties.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 Function parameters annotated with the \_Interlocked\_operand\_ are expected to be shared between processes. Variables used with this annotation must:
 
@@ -56,7 +52,6 @@ InterlockedExchange (
     _Inout_ _Interlocked_operand_ LONG volatile *Target,  
     _In_ LONG Value  
     );  
-
 ```
 
 ## <span id="related_topics"></span>Related topics
@@ -64,9 +59,9 @@ InterlockedExchange (
 
 [SAL 2.0 Annotations for Drivers](sal-2-annotations-for-windows-drivers.md)
 
- 
 
- 
+
+
 
 
 

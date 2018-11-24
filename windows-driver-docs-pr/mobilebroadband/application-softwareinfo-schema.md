@@ -2,11 +2,7 @@
 title: Application (SoftwareInfo)
 description: Application (SoftwareInfo)
 ms.assetid: 1f16a690-4453-4563-a4b1-44bbd5d02f47
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -53,7 +49,7 @@ The Application element specifies the associated device notification handler.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Child_elements"></span><span id="child_elements"></span><span id="CHILD_ELEMENTS"></span>Child elements
 
@@ -71,13 +67,13 @@ The Application element specifies the associated device notification handler.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[DeviceNotificationHandlers](devicenotificationhandlers.md)</p></td>
+<td><p><a href="devicenotificationhandlers.md" data-raw-source="[DeviceNotificationHandlers](devicenotificationhandlers.md)">DeviceNotificationHandlers</a></p></td>
 <td><p>Specifies a list of device notification handlers.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Parent_elements"></span><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Parent elements
 
@@ -95,13 +91,13 @@ The Application element specifies the associated device notification handler.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Applications](applications.md)</p></td>
+<td><p><a href="applications.md" data-raw-source="[Applications](applications.md)">Applications</a></p></td>
 <td><p>Specifies the app that will be downloaded when the operator’s Mobile Broadband hardware is detected on the PC.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="XSD"></span><span id="xsd"></span>XSD
 
@@ -123,9 +119,9 @@ The Application element specifies the associated device notification handler.
 
 The Application element is optional.
 
- 
+ 
 
- 
+ 
 
 
 

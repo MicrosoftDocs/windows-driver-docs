@@ -2,11 +2,7 @@
 title: Ksmedia.h
 description: This section contains reference topics for the Ksmedia.h header.
 ms.assetid: D5654BC1-45F5-4EC9-9E93-60318EF4C159
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -220,7 +216,7 @@ This section contains reference topics for the Ksmedia.h header.
 </tr>
 <tr class="odd">
 <td align="left"><p>[<strong>KSPROPERTY_AUDIO_FILTER_STATE</strong>](ksproperty-audio-filter-state.md)</p></td>
-<td align="left"><p>The KSPROPERTY_AUDIO_FILTER_STATE property is used to query a [GFX filter](https://msdn.microsoft.com/library/windows/hardware/ff536403) for a list of the property sets that it supports. The list is retrieved in the form of an array of property-set GUIDs.</p></td>
+<td align="left"><p>The KSPROPERTY_AUDIO_FILTER_STATE property is used to query a GFX filter for a list of the property sets that it supports. The list is retrieved in the form of an array of property-set GUIDs.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>[<strong>KSPROPERTY_AUDIO_LATENCY</strong>](ksproperty-audio-latency.md)</p></td>
@@ -248,7 +244,7 @@ This section contains reference topics for the Ksmedia.h header.
 </tr>
 <tr class="even">
 <td align="left"><p>[<strong>KSPROPERTY_AUDIO_MIC_SNR</strong>](ksproperty-audio-mic-snr.md)</p></td>
-<td align="left"><p>The KSPROPERTY_AUDIO_MIC_SNR property specifies the microphone signal to noise ratio (SNR) measured in in dB units.</p></td>
+<td align="left"><p>The KSPROPERTY_AUDIO_MIC_SNR property specifies the microphone signal to noise ratio (SNR) measure in dB units.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>[<strong>KSPROPERTY_AUDIO_MID</strong>](ksproperty-audio-mid.md)</p></td>

@@ -5,11 +5,7 @@ ms.assetid: 13b0ce22-f833-482c-815b-a596098ee6bc
 keywords:
 - display drivers WDK Windows 2000 , mirror drivers
 - mirror drivers WDK Windows 2000 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -45,11 +41,11 @@ See the Microsoft Windows SDK documentation for more information about the **Cha
 
 **Note**  Starting with Windows 8, mirror drivers will not install on the system. For more information, see [Mirror Drivers](mirror-drivers.md).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

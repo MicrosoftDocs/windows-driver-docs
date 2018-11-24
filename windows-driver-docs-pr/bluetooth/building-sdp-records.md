@@ -12,11 +12,7 @@ keywords:
 - advertising services WDK Bluetooth
 - services advertising WDK Bluetooth
 - SdpCreateNodeTree
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -75,9 +71,9 @@ Additionally, when a profile driver no longer requires the tree-based version of
 
 Profile drivers can obtain a pointer to all of the functions discussed in this topic by querying for the [**BTHDDI\_SDP\_PARSE\_INTERFACE**](https://msdn.microsoft.com/library/windows/hardware/ff536636) and [**BTHDDI\_SDP\_NODE\_INTERFACE**](https://msdn.microsoft.com/library/windows/hardware/ff536635) interfaces. For more information about how to query for these interfaces, see [Querying for Bluetooth Interfaces](querying-for-bluetooth-interfaces.md).
 
- 
+ 
 
- 
+ 
 
 
 

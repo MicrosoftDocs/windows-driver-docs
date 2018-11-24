@@ -5,11 +5,7 @@ ms.assetid: 2dd5f1b4-5c78-459c-8b73-c8d511f8a22b
 keywords:
 - Driver Verifier WDK , viewing settings
 - viewing Driver Verifier setting
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -43,9 +39,9 @@ Press **Finish** to stop viewing these settings.
 
 If you wish to view the Driver Verifier features that are currently active, rather than the settings that will take effect after the next boot, see [Using Volatile Settings](using-volatile-settings.md).
 
- 
+ 
 
- 
+ 
 
 
 

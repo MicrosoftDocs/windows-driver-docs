@@ -2,11 +2,7 @@
 title: KSPROPSETID\_VramCapture
 description: KSPROPSETID\_VramCapture
 ms.assetid: 369bb258-5335-42f7-bd2f-7bfc9848e7f0
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +25,9 @@ The **KSPROPSETID\_VramCapture** property set includes the following properties:
 
 [**KSPROPERTY\_MAP\_CAPTURE\_HANDLE\_TO\_VRAM\_ADDRESS**](ksproperty-map-capture-handle-to-vram-address.md)
 
- 
+ 
 
- 
+ 
 
 
 

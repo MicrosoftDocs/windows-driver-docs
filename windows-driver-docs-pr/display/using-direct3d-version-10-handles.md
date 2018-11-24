@@ -2,11 +2,7 @@
 title: Using Direct3D Version 10 Handles
 description: Using Direct3D Version 10 Handles
 ms.assetid: 98cde374-0267-44bc-b285-acf4a6d17ff4
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,9 +15,9 @@ Direct3D version 10 handles are strongly typed to prevent misusage and to enable
 
 [Direct3D Version 10 Kernel Handles](direct3d-version-10-kernel-handles.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -12,6 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # DIF_ALLOW_INSTALL
@@ -46,7 +47,7 @@ After selecting a driver for the device but before installing the device.
 </tbody>
 </table>
 
- 
+ 
 
 ### Installer Input
 
@@ -76,7 +77,7 @@ Typical Win32 error codes for this DIF request include ERROR_DI_DONT_INSTALL and
 
 **Note**  Class installers and co-installers should not freturn ERROR_REQUIRES_INTERACTIVE_WINDOWSTATION since that causes the device installation to fail. If the device installation requires user interaction, class installers and co-installers should support a [finish-install action](https://msdn.microsoft.com/library/windows/hardware/ff544940).
 
- 
+ 
 
 ### Default DIF Code Handler
 
@@ -123,9 +124,9 @@ Requirements
 
 [**SP_DEVINSTALL_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346)
 
- 
+ 
 
- 
+ 
 
 
 

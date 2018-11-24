@@ -2,11 +2,7 @@
 title: Using ACPI for Device Container Grouping
 description: Using ACPI for Device Container Grouping
 ms.assetid: c49949cd-59e0-4ad2-a067-bc4e048f26c5
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ The use of ACPI to indicate the computer configuration has several advantages:
 
 For more information about how to use ACPI object settings for device container grouping, see the [Container Groupings in Windows 7](http://go.microsoft.com/fwlink/p/?linkid=158386) white paper
 
- 
+ 
 
- 
+ 
 
 
 

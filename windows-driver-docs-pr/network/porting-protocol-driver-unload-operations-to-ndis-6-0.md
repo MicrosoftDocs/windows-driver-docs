@@ -7,11 +7,7 @@ keywords:
 - NDIS protocol drivers WDK , unloading
 - porting protocol drivers WDK networking , unload operations
 - unloading protocol drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +25,9 @@ For NDIS 6.0, the [**ProtocolUnload**](https://msdn.microsoft.com/library/window
 
 For more information about unloading an NDIS 6.0 protocol driver, see [Initializing a Protocol Driver](initializing-a-protocol-driver.md).
 
- 
+ 
 
- 
+ 
 
 
 

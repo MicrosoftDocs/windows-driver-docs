@@ -2,11 +2,7 @@
 ms.assetid: ACD6E5C3-5CE5-4C3F-BA44-1C87C39EF3C4
 title: Driver convergence model for Windows 10
 description: To make your device work on Windows and Windows Phone releases before Windows 10, you probably needed to write two separate drivers, for example one for Windows 8.1 and one for Windows Phone 8.1.
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,7 +30,7 @@ To make your device work on Windows and Windows Phone releases before Windows 1
 <tr class="odd">
 <td align="left">Audio</td>
 <td align="left">Yes</td>
-<td align="left"><p>Starting in Windows 10, you can write a Kernel-Mode Driver Framework (KMDF) audio driver that calls KMDF interfaces for PnP, power management, and idle management. For I/O handling, a KMDF audio driver should not use the I/O queue functionality in WDF, but should instead use the existing COM interfaces provided by PortClass. However, your driver can use the framework's support for timers, interrupts, DMA, and remote I/O targets. KMDF audio drivers work on both Windows 10 for desktop editions and Windows 10 Mobile.</p>
+<td align="left"><p>Starting in Windows 10, you can write a Kernel-Mode Driver Framework (KMDF) audio driver that calls KMDF interfaces for PnP, power management, and idle management. For I/O handling, a KMDF audio driver should not use the I/O queue functionality in WDF, but should instead use the existing COM interfaces provided by PortClass. However, your driver can use the framework&#39;s support for timers, interrupts, DMA, and remote I/O targets. KMDF audio drivers work on both Windows 10 for desktop editions and Windows 10 Mobile.</p>
 <p>Existing Windows 8.1 drivers that link to PortClass continue to work on Windows 10 for desktop editions and Windows 10 Mobile.</p></td>
 </tr>
 <tr class="even">
@@ -101,7 +97,7 @@ To make your device work on Windows and Windows Phone releases before Windows 1
 <tr class="even">
 <td align="left">Windows Driver Frameworks (WDF)</td>
 <td align="left">Yes</td>
-<td align="left"><p>Windows 10 ships with KMDF 1.15, UMDF 2.15, UMDF 1.11, and earlier framework versions. Windows 10 Mobile also ships with KMDF 1.15, UMDF 2.15, and earlier framework versions. Note that UMDF version 1 is not available in Windows 10 Mobile. Only KMDF and UMDF version 2 can be used to write [Universal Windows drivers](getting-started-with-universal-drivers.md).</p></td>
+<td align="left"><p>Windows 10 ships with KMDF 1.15, UMDF 2.15, UMDF 1.11, and earlier framework versions. Windows 10 Mobile also ships with KMDF 1.15, UMDF 2.15, and earlier framework versions. Note that UMDF version 1 is not available in Windows 10 Mobile. Only KMDF and UMDF version 2 can be used to write <a href="getting-started-with-universal-drivers.md" data-raw-source="[Universal Windows drivers](getting-started-with-universal-drivers.md)">Universal Windows drivers</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left">WLAN</td>
@@ -112,11 +108,11 @@ To make your device work on Windows and Windows Phone releases before Windows 1
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

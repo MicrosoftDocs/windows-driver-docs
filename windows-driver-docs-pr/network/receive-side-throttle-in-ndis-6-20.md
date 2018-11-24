@@ -6,11 +6,7 @@ keywords:
 - NDIS 6.20 WDK , receive-side throttle
 - receive-side throttle (RST) WDK NDIS 6.20
 - RST WDK NDIS 6.20
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -39,9 +35,9 @@ If an NDIS driver spends too much time at dispatch IRQ level in a deferred proce
 
 [**NdisMQueueDpcEx**](https://msdn.microsoft.com/library/windows/hardware/ff563640)
 
- 
+ 
 
- 
+ 
 
 
 

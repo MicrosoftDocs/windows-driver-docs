@@ -1,6 +1,5 @@
 ---
 title: Sensor driver development basics
-author: windows-driver-content
 description: Sensor driver development basics
 ms.assetid: 8360f4f5-1e47-4fae-8827-e471eb997d79
 keywords:
@@ -10,11 +9,7 @@ keywords:
 - filtering data
 - location privacy
 - location security
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +20,7 @@ This section describes basic concepts you should understand before you start wri
 
 -   [Writing a Sensor Device Driver](writing-a-sensor-device-driver.md)
 
--   [Writing a Location Sensor Driver](https://docs.microsoft.com/en-us/windows-hardware/drivers/gnss/writing-a-location-sensor-driver)
+-   [Writing a Location Sensor Driver](https://docs.microsoft.com/windows-hardware/drivers/gnss/writing-a-location-sensor-driver)
 
 -   [Supporting Ambient Light Sensors](supporting-ambient-light-sensors.md)
 
@@ -33,8 +28,8 @@ This section describes basic concepts you should understand before you start wri
 
 ## Related topics
 [The Sensor Diagnostic Tool](the-sensor-diagnostic-tool.md)
-[The Sensors Geolocation Driver Sample](https://docs.microsoft.com/en-us/windows-hardware/drivers/gnss/sensors-geolocation-driver-sample)
-[Writing a Location Sensor Driver](https://docs.microsoft.com/en-us/windows-hardware/drivers/gnss/writing-a-location-sensor-driver)
+[The Sensors Geolocation Driver Sample](https://docs.microsoft.com/windows-hardware/drivers/gnss/sensors-geolocation-driver-sample)
+[Writing a Location Sensor Driver](https://docs.microsoft.com/windows-hardware/drivers/gnss/writing-a-location-sensor-driver)
 [Writing a Sensor Device Driver](writing-a-sensor-device-driver.md)
 
 

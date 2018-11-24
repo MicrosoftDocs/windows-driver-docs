@@ -2,17 +2,13 @@
 title: Setting Symbol and Executable Image Paths in Visual Studio
 description: The procedure covers Setting Symbol and Executable Image Paths in Visual Studio
 ms.assetid: BFFF9BBC-C926-4974-A43E-C3A2DDA74AA4
-ms.author: domars
 ms.date: 05/11/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # Setting Symbol and Executable Image Paths in Visual Studio
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > This feature is not available in Windows 10, version 1507 and later versions of the WDK.
 >
 
@@ -37,9 +33,9 @@ In Visual Studio, in the Debugger Immediate Window, enter the [**.sympath (Set S
 
 In Visual Studio, in the Debugger Immediate Window, enter the [**.exepath (Set Executable Path)**](-exepath--set-executable-path-.md) command.
 
- 
+ 
 
- 
+ 
 
 
 

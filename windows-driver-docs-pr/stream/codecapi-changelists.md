@@ -2,11 +2,7 @@
 title: CODECAPI\_CHANGELISTS
 description: CODECAPI\_CHANGELISTS
 ms.assetid: c1b65350-32b9-4c94-a6d4-74cb9959d737
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -40,25 +36,25 @@ The CODECAPI\_CHANGELISTS event is used to return a list of GUIDs that have chan
 <td><p>Yes (query supported)</p></td>
 <td><p>Yes</p></td>
 <td><p>Filter</p></td>
-<td><p>[<strong>KSE_NODE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff561937)</p></td>
-<td><p>[<strong>KSEVENTDATA</strong>](https://msdn.microsoft.com/library/windows/hardware/ff561750)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff561937" data-raw-source="[&lt;strong&gt;KSE_NODE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff561937)"><strong>KSE_NODE</strong></a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff561750" data-raw-source="[&lt;strong&gt;KSEVENTDATA&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff561750)"><strong>KSEVENTDATA</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 For more information about DirectShow filters and KsProxy see [Kernel Streaming Proxy](https://msdn.microsoft.com/library/windows/hardware/ff560877).
 
 The driver uses the AVStream [**KsGenerateEvents**](https://msdn.microsoft.com/library/windows/hardware/ff562597) to post a list of GUIDs that changed.
 
-### <span id="see_also"></span><span id="SEE_ALSO"></span>See Also
+### See Also
 
 [**KsGenerateEvents**](https://msdn.microsoft.com/library/windows/hardware/ff562597), [CODECAPI\_ALLSETTINGS](codecapi-allsettings.md), [CODECAPI\_SETALLDEFAULTS](codecapi-setalldefaults.md)
 
- 
+ 
 
- 
+ 
 
 
 

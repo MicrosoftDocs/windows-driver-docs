@@ -6,11 +6,7 @@ keywords:
 - provider modules WDK Network Module Registrar , multiple attached
 - client modules WDK Network Module Registrar , multiple attached
 - multiple attached network modules WDK Network Module Registrar
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,9 +17,9 @@ A single client module can attach to more than one provider module. In order to 
 
 A [Network Programming Interface (NPI)](network-programming-interface.md) typically defines the client module callback functions such that they include either a pointer to the client module's binding context or some other NPI-specific identifier as one of the function parameters. As a result, a client module can determine which provider module is the caller when one of it's NPI callback functions is called.
 
- 
+ 
 
- 
+ 
 
 
 

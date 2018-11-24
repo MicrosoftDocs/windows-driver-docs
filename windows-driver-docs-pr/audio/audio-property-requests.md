@@ -13,11 +13,7 @@ keywords:
 - underspecified requests WDK audio
 - filters WDK audio , descriptors
 - property requests WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -55,9 +51,9 @@ With these conventions, a particular node on a particular data path can be ident
 
 For information about using the mixer API to traverse the nodes in a data path, see [Kernel Streaming Topology to Audio Mixer API Translation](kernel-streaming-topology-to-audio-mixer-api-translation.md).
 
- 
+ 
 
- 
+ 
 
 
 

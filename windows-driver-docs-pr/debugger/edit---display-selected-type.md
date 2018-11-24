@@ -3,11 +3,7 @@ title: Edit Display Selected Type
 description: Edit Display Selected Type
 ms.assetid: 45073276-df6c-47d4-b614-acd4437f5b73
 keywords: ["Edit Display Selected Type", "data types, Edit Display Selected Type"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ If the selected text includes more than a single object, a syntax error or other
 
 For more information about other features of Source windows, see [Source Window](source-window.md).
 
- 
+ 
 
- 
+ 
 
 
 

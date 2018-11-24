@@ -3,11 +3,7 @@ title: chksym
 description: The chksym extension tests the validity of a module against a symbol file.
 ms.assetid: 52ea75cb-44a2-4c84-a3af-b3fc027348f4
 keywords: ["chksym Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!chksym** extension tests the validity of a module against a symbol file.
 
-```
+```dbgsyntax
     !chksym Module [Symbol] 
 ```
 
@@ -58,16 +54,16 @@ Specifies the name of a symbol file.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
 
 If you do not specify a symbol filed, the loaded symbol is tested. Otherwise, if you specify a .pdb or .dbg symbol file path, the loaded symbol is tested against the loaded module.
 
- 
+ 
 
- 
+ 
 
 
 

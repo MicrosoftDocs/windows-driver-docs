@@ -1,15 +1,10 @@
 ---
 title: GUID_NDIS_STATUS_OFFLOAD_HW_CAPABILITIES
-author: windows-driver-content
 description: This topic describes the GUID_NDIS_STATUS_OFFLOAD_HW_CAPABILITIES GUID for the NDIS WMI interface.
 ms.assetid: 6f5e11c1-4fa0-4a9b-90f3-85a3cb8b8878
 keywords:
 - GUID_NDIS_STATUS_OFFLOAD_HW_CAPABILITIES, WDK GUID_NDIS_STATUS_OFFLOAD_HW_CAPABILITIES network drivers
-ms.author: windowsdriverdev
 ms.date: 11/22/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

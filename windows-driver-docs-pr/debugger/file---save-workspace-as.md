@@ -3,11 +3,7 @@ title: File Save Workspace As
 description: File Save Workspace As
 ms.assetid: 5b1da6f0-8a72-4aa9-a03b-542e14523fa4
 keywords: ["File Save Workspace As", "workspaces, File Save Workspace As"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +27,9 @@ Click **OK** to save the workspace, or click **Cancel** to not save the workspac
 
 For more information about the different levels of workspaces and how to use them, see [Using Workspaces](using-workspaces.md).
 
- 
+ 
 
- 
+ 
 
 
 

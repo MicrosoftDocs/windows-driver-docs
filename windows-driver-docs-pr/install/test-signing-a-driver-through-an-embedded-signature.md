@@ -2,11 +2,7 @@
 title: Test-Signing a Driver through an Embedded Signature
 description: Test-Signing a Driver through an Embedded Signature
 ms.assetid: 862e89e0-f84a-4058-a32f-09ae3043b884
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,7 +27,7 @@ As with [catalog files](catalog-files.md), [**SignTool**](https://msdn.microsoft
 
 To test-sign the *toaster.sys* file, run the following command line:
 
-```
+```cpp
 Signtool sign /v /s PrivateCertStore /n Contoso.com(Test) /t http://timestamp.verisign.com/scripts/timestamp.dll amd64\toaster.sys
 ```
 
@@ -48,7 +44,7 @@ Where:
 -   The **/t** option specifies URL of the TSA (*http://timestamp.verisign.com/scripts/timestamp.dll*) which will time stamp the digital signature.
     **Important**   Including a time stamp provides the necessary information for key revocation in case the signer's code signing private key is compromised.
 
-     
+     
 
 -   *amd64\\toaster.sys* specifies the name of the kernel-mode binary file which will be embedded-signed.
 
@@ -56,9 +52,9 @@ For more information about SignTool and its command-line arguments, see [**SignT
 
 For more information about how to test-sign a driver by using an embedded signature, see [Test-Signing a Driver File](test-signing-a-driver-file.md).
 
- 
+ 
 
- 
+ 
 
 
 

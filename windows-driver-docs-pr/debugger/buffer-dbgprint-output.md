@@ -3,11 +3,7 @@ title: Buffer DbgPrint Output
 description: Buffer DbgPrint Output
 ms.assetid: af97c484-3a37-4c86-8828-12a0ea1c8c0e
 keywords: ["Buffer DbgPrint Output (global flag)"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -44,7 +40,7 @@ The **Buffer DbgPrint Output** flag suppresses debugger output from **DbgPrint**
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
@@ -52,9 +48,9 @@ When debugger output is suppressed, it does not automatically appear in the kern
 
 For information about the functions that communicate with the debugger, see [Sending Output to the Debugger](sending-output-to-the-debugger.md).
 
- 
+ 
 
- 
+ 
 
 
 

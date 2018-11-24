@@ -6,11 +6,7 @@ keywords:
 - SetupAPI functions WDK , guidelines
 - device installation functions WDK SetupAPI
 - general Setup functions WDK SetupAPI
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,9 +32,9 @@ The following are guidelines for using the [general Setup functions](https://msd
 
     -   If the caller of a **Setup***Xxx* function makes such a query, [GetLastError](http://go.microsoft.com/fwlink/p/?linkid=169416) returns NO_ERROR if no buffer length was specified or ERROR_INSUFFICIENT_BUFFER if a buffer was specified that was too small.
 
- 
+ 
 
- 
+ 
 
 
 

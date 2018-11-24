@@ -1,17 +1,12 @@
 ---
 title: Symbolic Names
-author: windows-driver-content
 description: Symbolic Names
 ms.assetid: 4bd07f73-9fe1-4a81-adab-0e382f808a88
 keywords:
 - GPD file entries WDK Unidrv , symbolic names
 - symbolic names WDK GPD files
 - identifiers WDK GPD files
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,9 +30,9 @@ The GPD language predefines a large number of symbolic names. Predefined names e
 
 You can define symbolic names for [customized features](customized-features.md), [customized options](customized-options.md), and [macros](macros.md).
 
- 
+ 
 
- 
+ 
 
 
 

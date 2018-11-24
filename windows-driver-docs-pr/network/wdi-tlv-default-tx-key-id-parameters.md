@@ -1,13 +1,8 @@
 ---
 title: WDI_TLV_DEFAULT_TX_KEY_ID_PARAMETERS
-author: windows-driver-content
 description: WDI_TLV_DEFAULT_TX_KEY_ID_PARAMETERS is a TLV that contains the default key ID for packet transmission on a port for OID_WDI_SET_DEFAULT_KEY_ID.
 ms.assetid: 24E7E758-FEED-4D2A-BAA8-6DBC08726FBA
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_DEFAULT_TX_KEY_ID_PARAMETERS Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -35,7 +30,7 @@ The size (in bytes) of a UINT32.
 |--------|-----------------------------------------------------------------|
 | UINT32 | Specifies the default key ID for packet transmission on a port. |
 
- 
+ 
 
 Requirements
 ------------
@@ -61,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

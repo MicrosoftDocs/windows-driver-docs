@@ -3,11 +3,7 @@ title: asd
 description: The asd extension displays a specified number of failure analysis entries from the data cache, starting at the specified address.
 ms.assetid: fb0eeedd-d50b-4385-b35f-4ac46fb97ce0
 keywords: ["failure analysis entries, display from data cache", "asd Windows Debugging"]
-ms.author: domars
-ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 09/17/2018
 topic_type:
 - apiref
 api_name:
@@ -22,8 +18,8 @@ ms.localizationpriority: medium
 
 The **!asd** extension displays a specified number of failure analysis entries from the data cache, starting at the specified address.
 
-```
-!asd Address DataUsed
+```dbgcmd
+    !asd Address DataUsed
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
@@ -54,7 +50,7 @@ Determines the number of tokens to display.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -65,9 +61,9 @@ Remarks
 
 The **!asd** extension is useful only when you are debugging the [**!analyze**](-analyze.md) extension.
 
- 
+ 
 
- 
+ 
 
 
 

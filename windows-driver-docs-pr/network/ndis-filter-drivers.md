@@ -6,11 +6,7 @@ keywords:
 - filter drivers WDK networking , architecture
 - NDIS filter drivers WDK , architecture
 - filter modules WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,9 +31,9 @@ A filter driver communicates with NDIS and other NDIS drivers through the NDIS l
 
 [NDIS Filter Driver Reference](https://msdn.microsoft.com/library/windows/hardware/ff565527)
 
- 
+ 
 
- 
+ 
 
 
 

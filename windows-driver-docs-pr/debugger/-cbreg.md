@@ -3,11 +3,7 @@ title: cbreg
 description: The cbreg extension displays CardBus Socket registers and CardBus Exchangable Card Architecture (ExCA) registers.
 ms.assetid: 7943e152-b1c9-464c-a0ad-3beac48884d2
 keywords: ["CardBus", "ExCA registers", "cbreg Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!cbreg** extension displays CardBus Socket registers and CardBus Exchangable Card Architecture (ExCA) registers.
 
-```
+```dbgsyntax
     !cbreg [%%]Address 
 ```
 
@@ -56,7 +52,7 @@ Kdextx86.dll</td>
 </tbody>
 </table>
 
- 
+ 
 
 The **!cbreg** extension is only available for an x86-based target computer.
 
@@ -64,9 +60,9 @@ The **!cbreg** extension is only available for an x86-based target computer.
 
 The [**!exca**](-exca.md) extension can be used to display PCIC ExCA registers by socket number.
 
- 
+ 
 
- 
+ 
 
 
 

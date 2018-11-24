@@ -2,11 +2,7 @@
 title: Active Memory Dump
 description: Active Memory Dump
 ms.assetid: b40979b6-cd9a-4655-8030-8bde25d75113
-ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,16 +24,16 @@ The Active Memory Dump is available in Windows 10 and later.
 
 **Note**  To suppress missing page error messages when debugging an Active Memory Dump, use the [**.ignore\_missing\_pages**](-ignore-missing-pages--suppress-missing-page-errors-.md) command.
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
 
 [Varieties of Kernel-Mode Dump Files](varieties-of-kernel-mode-dump-files.md)
 
- 
+ 
 
- 
+ 
 
 
 

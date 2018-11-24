@@ -3,11 +3,7 @@ title: View Font
 description: View Font
 ms.assetid: 808cd0e5-5433-4705-830e-acf1087a6df5
 keywords: ["View Font"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +27,9 @@ Click **Cancel** to cancel changes to the font.
 
 For more information about how to change the character display of the debugging information windows, see [Changing Text Properties](changing-text-properties.md).
 
- 
+ 
 
- 
+ 
 
 
 

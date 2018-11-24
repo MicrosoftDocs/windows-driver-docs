@@ -3,11 +3,7 @@ title: Bug Check 0x26 CDFS_FILE_SYSTEM
 description: The CDFS_FILE_SYSTEM bug check has a value of 0x00000026. This indicates that a problem occurred in the CD file system.
 ms.assetid: f427c262-f750-4719-a52b-2f00094d2a4e
 keywords: ["Bug Check 0x26 CDFS_FILE_SYSTEM", "CDFS_FILE_SYSTEM"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The CDFS\_FILE\_SYSTEM bug check has a value of 0x00000026. This indicates that a problem occurred in the CD file system.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## CDFS\_FILE\_SYSTEM Parameters
 
@@ -58,7 +54,7 @@ The CDFS\_FILE\_SYSTEM bug check has a value of 0x00000026. This indicates that 
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -76,9 +72,9 @@ Resolution
 
 **To resolve a nonpaged pool memory depletion problem:** Add new physical memory to the computer. This will increase the quantity of nonpaged pool memory available to the kernel.
 
- 
+ 
 
- 
+ 
 
 
 

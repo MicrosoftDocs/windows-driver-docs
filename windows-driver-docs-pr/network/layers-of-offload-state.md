@@ -8,11 +8,7 @@ keywords:
 - path state WDK TCP chimney offload
 - TCP connection state WDK TCP chimney offload
 - layers of offload state WDK TCP chimney offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,9 +33,9 @@ The path state is supplied by the network layer (OSI layer 3) of the host stack.
 <a href="" id="tcp-connection-state"></a>TCP connection state  
 The TCP state is supplied by the transport layer (OSI layer 4) of the host stack. This state contains all of the necessary TCP parameters for a specific TCP connection.
 
- 
+ 
 
- 
+ 
 
 
 

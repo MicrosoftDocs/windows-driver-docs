@@ -12,6 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # KSCATEGORY_AUDIO_DEVICE
@@ -42,7 +43,7 @@ The KSCATEGORY_AUDIO_DEVICE [device interface class](https://msdn.microsoft.com/
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -64,9 +65,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

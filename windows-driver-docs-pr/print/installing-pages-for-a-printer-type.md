@@ -1,17 +1,12 @@
 ---
 title: Installing Pages for a Printer Type
-author: windows-driver-content
 description: Installing Pages for a Printer Type
 ms.assetid: 6c878612-d490-4791-a284-c48f1db0cde8
 keywords:
 - installing customized print Web pages WDK
 - customized print Web pages WDK , installing
 - printer-specific installations WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,7 +18,7 @@ ms.localizationpriority: medium
 
 If the standard TCP/IP port monitor is used with your printer, you can install a printer details page that is specific to the printer type. To do so, include the page's ASP file, along with all subordinate files (such as .gif files or ASP files for linked pages), in the [printer INF file](printer-inf-files.md) for the printer type. Following is a sample section of a printer INF file:
 
-```
+```cpp
 [Manufacturer]
 "ACME"
  
@@ -60,9 +55,9 @@ All ASP file names with a format of Page*N*.asp, where *N* is 1, 2, 3, and so on
 
 A sample INF file is provided with the [sample ASP files](sample-asp-files.md) in the Windows Driver Kit.
 
- 
+ 
 
- 
+ 
 
 
 

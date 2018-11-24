@@ -5,11 +5,7 @@ ms.assetid: dbbb2416-8928-41ee-90d5-b3b77d23c251
 keywords:
 - hardware acceleration WDK DirectSound , 2D mixing
 - 2D mixing WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +25,9 @@ DirectSound exposes hardware-accelerated 2D mixing for WDM audio miniport driver
 
 -   The pin should meet the [DirectSound node-ordering requirements](directsound-node-ordering-requirements.md).
 
- 
+ 
 
- 
+ 
 
 
 

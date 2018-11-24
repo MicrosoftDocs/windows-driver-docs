@@ -2,11 +2,7 @@
 title: Threading Models
 description: Threading Models
 ms.assetid: 3BB0C01B-D82B-45dd-8AC8-EA2E2811CD24
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,14 +19,14 @@ The "ThreadingModel" metadata property is used to request a threading model. The
 | MTA            | Multithreaded Apartment (CoInitializeEx is called with COINIT\_MULTITHREADED flag).       |
 | None           | Threading model is not specified.                                                         |
 
- 
+ 
 
 ## <span id="Configuring_a_threading_model"></span><span id="configuring_a_threading_model"></span><span id="CONFIGURING_A_THREADING_MODEL"></span>Configuring a threading model
 
 
 Example: To request MTA threading model from C++ mark-up:
 
-```
+```cpp
 class ThreadModelTests
 {
 
@@ -44,7 +40,7 @@ class ThreadModelTests
 
 You can also request threading model property for a class or a module. For example,
 
-```
+```cpp
 class ThreadModelTestsWithMTADefault
 {
 
@@ -58,7 +54,7 @@ class ThreadModelTestsWithMTADefault
 
 Similarly, you can also request threading model for managed tests:
 
-```
+```cpp
 [TestClass]
 
 public class SimpleTests
@@ -89,9 +85,9 @@ public class SimpleTests
 
 Notice in the last test above: SetsOfMetadataTest, it is also possible to make use of metadata sets and run the same test: first with STA threading model and then with MTA.
 
- 
+ 
 
- 
+ 
 
 
 

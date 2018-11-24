@@ -1,6 +1,5 @@
 ---
 title: Error Injection
-author: windows-driver-content
 description: Error Injection
 ms.assetid: d97d49bc-b216-40d6-afd1-aecff624624d
 keywords:
@@ -11,11 +10,7 @@ keywords:
 - platform-specific hardware error driver plug-ins WDK WHEA , error injection
 - PSHED plug-ins WDK WHEA , error injection
 - error injection WDK WHEA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +23,9 @@ For more information about how to implement a PSHED plug-in that participates in
 
 User-mode management applications can inject errors into the hardware platform by calling the [WHEA Management API](https://msdn.microsoft.com/library/windows/hardware/ff560556). For more information about how to implement WHEA management applications, see [WHEA Management Applications](whea-management-applications.md).
 
- 
+ 
 
- 
+ 
 
 
 

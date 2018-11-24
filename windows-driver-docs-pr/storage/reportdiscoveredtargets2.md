@@ -3,6 +3,7 @@ title: ReportDiscoveredTargets2
 description: ReportDiscoveredTargets2
 ms.assetid: 2845cfa9-a85c-45d4-a962-8f409e96ccec
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # ReportDiscoveredTargets2
@@ -16,9 +17,9 @@ This WMI method belongs to the unpublished [MSiSCSI\_DiscoveryOperations WMI cla
 
 Miniport drivers that implement the MSiSCSI\_DiscoveryOperations WMI class must support **ReportDiscoveredTargets2**.
 
- 
+ 
 
- 
+ 
 
 
 

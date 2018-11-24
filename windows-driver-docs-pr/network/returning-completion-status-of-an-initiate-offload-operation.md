@@ -6,11 +6,7 @@ keywords:
 - state offloading process WDK TCP chimney offload , completion status
 - offloading state process WDK TCP chimney offload , completion status
 - completion status of initiate operation WDK TCP chimney offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -76,9 +72,9 @@ The path maximum transmission unit (MTU) for the TCP connection is larger than w
 <a href="" id="ndis-status-offload-connection-rejected"></a>NDIS\_STATUS\_OFFLOAD\_CONNECTION\_REJECTED  
 The offload target failed to offload the connection because the offload target determined this connection is not a good candidate for offload.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,12 +1,7 @@
 ---
 Description: Describes a typical hardware design of a USB Type-C system and the Microsoft-provided drivers that support the hardware components.
 title: Architecture of USB Type-C design for a Windows system
-author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -49,7 +44,7 @@ In the preceding image,
 
     **Note**  Not [all USB devices classes](supported-usb-classes.md) are supported on Windows 10 Mobile.
 
-     
+     
 
 -   **USB role-switch drivers (URS)**
 
@@ -63,9 +58,11 @@ In the preceding image,
 
 -   **USB connector manager (UCM)**
 
-    This set of drivers manage all aspects of the USB Type-C connector. If your system implements an embedded controller, use the Microsoft-provided [UCSI driver](ucsi.md). Otherwise you are expected to write a client driver.
+    This set of drivers manage all aspects of the USB Type-C connector. If your system implements a UCSI-compliant embedded controller over ACPI, use the Microsoft-provided [UCSI driver](ucsi.md). Otherwise [write a UCSI client driver](write-a-ucsi-driver.md) for non-ACPI transports.
 
-    If you are writing a driver, the USB connector manager class extension follows the WDF class extension-client driver model. Your client driver communicates with the hardware and the class extension to handle tasks such as CC detection, PD messaging, Muxing, and VBus/VConn control, and select policy for power delivery and alternate mode. The class extension communicates the information reported by the client driver to the operating system. For example, the CC detection result is used to configure the role-switch drivers; USB Type-C/PD power information is used to determine the level at which the system should charge. The client driver manages USB Type-C and PD state machines. The client driver can delegate some tasks to other drivers, for example, Mux may be controlled by another driver. To write the client driver, use the [USB Type-C connector driver programming interfaces.](https://msdn.microsoft.com/library/windows/hardware/mt188011).
+    If your hardware is not UCSI-compliant, then you are expected to [write a USB Type-C connector driver](bring-up-a-usb-type-c-connector-on-a-windows-system.md) that is a client to the UCM class extension. Together they manage a USB Type-C connector and the expected behavior of a connector driver.
+
+    If you are writing a driver, the USB connector manager class extension follows the WDF class extension-client driver model. Your client driver communicates with the hardware and the class extension to handle tasks such as CC detection, PD messaging, Muxing, and VBus/VConn control, and select policy for power delivery and alternate mode. The class extension communicates the information reported by the client driver to the operating system. For example, the CC detection result is used to configure the role-switch drivers; USB Type-C/PD power information is used to determine the level at which the system should charge. The client driver manages USB Type-C and PD state machines. The client driver can delegate some tasks to other drivers, for example, Mux may be controlled by another driver. To write the client driver, use the [USB Type-C connector driver programming interfaces](https://msdn.microsoft.com/library/windows/hardware/mt188011).
 
     **USB Type-C port controller**
 
@@ -81,9 +78,9 @@ In the preceding image,
 
     The class driver defines the overall functionality of the batteries in the system and interacts with the power manager. The miniclass driver handles device-specific functions such as adding and removing a battery, and keeping track of its capacity and charge. The miniclass driver exports routines that the class driver calls to get information about the devices it controls.
 
- 
+ 
 
- 
+ 
 
 
 

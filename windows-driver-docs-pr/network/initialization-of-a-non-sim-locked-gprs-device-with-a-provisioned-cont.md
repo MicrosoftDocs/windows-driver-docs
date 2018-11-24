@@ -2,11 +2,7 @@
 title: Initializing a non-SIM-locked GPRS device (provisioned context)
 description: Initialization of a Non-SIM-Locked GPRS Device with a Provisioned Context
 ms.assetid: 0bbd4842-72ad-445b-9f28-b28e8740f263
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -44,9 +40,9 @@ To initialize a non-SIM-locked GSM-based device, implement the following steps:
 
 13. The miniport driver sends an [**NDIS\_STATUS\_LINK\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff567391) notification to indicate that the media connect state is **MediaConnectStateConnected**.
 
- 
+ 
 
- 
+ 
 
 
 

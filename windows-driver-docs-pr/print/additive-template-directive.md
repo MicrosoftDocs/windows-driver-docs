@@ -1,16 +1,11 @@
 ---
 title: Additive Template Directive
-author: windows-driver-content
 description: Additive Template Directive
 ms.assetid: 94883a51-a3a6-492e-9597-6a2f913d40bc
 keywords:
 - Additive directive WDK GDL
 - templates WDK GDL , order of definitions
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +28,9 @@ If this directive is absent, a default value of MOST\_RECENT will be assumed.
 
 If this directive is itself multiply defined within a template or appears in several templates that are related by inheritance, only the most recently defined directive in the most derived template will be honored.
 
- 
+ 
 
- 
+ 
 
 
 

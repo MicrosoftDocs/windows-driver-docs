@@ -1,6 +1,5 @@
 ---
 title: NABTS Categories
-author: windows-driver-content
 description: NABTS Categories
 ms.assetid: 7d064ed4-1bd9-4457-83c8-8b1fee10251c
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - PINNAME_VIDEO_NABTS
 - North American Broadcast Teletext Standard WDK video capture
 - NABTS WDK video capture
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -85,11 +80,11 @@ When specifying **PINNAME\_VIDEO\_NABTS** pins, use the information listed in th
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

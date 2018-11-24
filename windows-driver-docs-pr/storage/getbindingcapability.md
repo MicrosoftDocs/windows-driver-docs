@@ -13,6 +13,7 @@ api_location:
 api_type:
 - LibDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # GetBindingCapability function
@@ -25,9 +26,9 @@ Syntax
 
 ```ManagedCPlusPlus
 void GetBindingCapability(
-   [in, HBAType("HBA_WWN")] uint8                PortWWN[8],
-   [out, HBA_STATUS_QUALIFIERS] HBA_STATUS       HBAStatus,
-   [out, HBA_BIND_TYPE_QUALIFIERS] HBA_BIND_TYPE BindType
+   [in, HBAType("HBA_WWN")] uint8                PortWWN[8],
+   [out, HBA_STATUS_QUALIFIERS] HBA_STATUS       HBAStatus,
+   [out, HBA_BIND_TYPE_QUALIFIERS] HBA_BIND_TYPE BindType
 );
 ```
 
@@ -84,9 +85,9 @@ Requirements
 
 [**GetBindingCapability\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff553907)
 
- 
+ 
 
- 
+ 
 
 
 

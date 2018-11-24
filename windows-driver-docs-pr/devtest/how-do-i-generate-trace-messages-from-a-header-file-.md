@@ -2,11 +2,7 @@
 title: How do I generate trace messages from a header file
 description: How do I generate trace messages from a header file
 ms.assetid: 00b97f26-90e2-4efe-8bba-e3ffe7ba90ea
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -46,9 +42,9 @@ The **-preserveext** parameter preserves the specified file name extensions when
 
 For a complete list of the optional parameters for RUN\_WPP, see [WPP Preprocessor](wpp-preprocessor.md).
 
- 
+ 
 
- 
+ 
 
 
 

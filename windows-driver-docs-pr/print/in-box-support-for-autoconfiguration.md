@@ -1,6 +1,5 @@
 ---
 title: In-Box Support for Autoconfiguration
-author: windows-driver-content
 description: In-Box Support for Autoconfiguration
 ms.assetid: cd2faef4-96ba-4d11-99f6-90e41ae2e283
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - printer autoconfiguration WDK printer , in-box support
 - in-box autoconfiguration support WDK printer
 - in-box autoconfiguration support WDK printer , about in-box autoconfiguration support
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +24,9 @@ The following topics describe how to take advantage of the in-box support for au
 
 [Customizing the Printer Port Monitors](customizing-the-printer-port-monitors.md)
 
- 
+ 
 
- 
+ 
 
 
 

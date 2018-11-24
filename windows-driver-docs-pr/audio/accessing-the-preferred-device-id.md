@@ -7,11 +7,7 @@ keywords:
 - WDM audio extensions WDK , preferred device IDs
 - device IDs WDK audio
 - identifying audio devices
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +27,9 @@ When calling the **waveInMessage**, **waveOutMessage**, or **midiOutMessage** fu
 
 The DRVM\_MAPPER\_PREFERRED\_GET message is intercepted by the mapper for the target device (waveIn, waveOut, or midiOut). For information about mappers for wave and MIDI devices, see the Microsoft Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

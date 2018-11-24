@@ -8,11 +8,7 @@ keywords:
 - ports WDK NDIS , OID requests
 - NDIS ports WDK , OID requests
 - OID requests WDK NDIS ports
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +26,9 @@ Overlying drivers should avoid using OID\_GEN\_PORT\_STATE when possible and sho
 
 If the OID\_GEN\_PORT\_STATE query succeeds, NDIS returns the port state information in an [**NDIS\_PORT\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff566800) structure.
 
- 
+ 
 
- 
+ 
 
 
 

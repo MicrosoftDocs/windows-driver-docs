@@ -7,11 +7,7 @@ keywords:
 - wrapping Windows Vista sAPOs WDK
 - replacing Windows Vista sAPOs WDK
 - INF files WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -50,9 +46,9 @@ After you develop your audio driver, you must perform the following steps to imp
 
 3.  [Create an INF file](https://msdn.microsoft.com/library/windows/hardware/ff549520) to install and register the sAPOs and the custom user interface.
 
- 
+ 
 
- 
+ 
 
 
 

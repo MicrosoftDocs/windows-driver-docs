@@ -2,11 +2,7 @@
 title: KSPROPSETID\_Wave
 description: KSPROPSETID\_Wave
 ms.assetid: 33aa1ab6-bc17-4611-8df8-d785edcb4ddf
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,9 +32,9 @@ The following properties are defined:
 
 [**KSPROPERTY\_WAVE\_PAN**](ksproperty-wave-pan.md)
 
- 
+ 
 
- 
+ 
 
 
 

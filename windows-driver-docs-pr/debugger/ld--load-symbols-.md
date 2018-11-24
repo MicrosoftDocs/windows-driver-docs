@@ -3,11 +3,7 @@ title: ld (Load Symbols)
 description: The ld command loads symbols for the specified module and updates all module information.
 ms.assetid: 1dae519f-8dd1-4f30-98f4-fe904454c84c
 keywords: ["ld (Load Symbols) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **ld** command loads symbols for the specified module and updates all module information.
 
-```
+```dbgcmd
 ld ModuleName [/f FileName]
 ```
 
@@ -58,7 +54,7 @@ Changes the name selected for the match. By default the module name is matched, 
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -71,9 +67,9 @@ The **ld** command, on the other hand, forces all symbols for the specified modu
 
 For more information about deferred (lazy) symbol loading, see [Deferred Symbol Loading](deferred-symbol-loading.md). For more information about other symbol options, see [Setting Symbol Options](symbol-options.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -6,11 +6,7 @@ keywords:
 - offload state WDK TCP chimney offload , trees
 - trees WDK TCP chimney offload
 - internal state tree WDK TCP chimney offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -62,9 +58,9 @@ All of the information that an offload target requires to process a received TCP
 
 Note that the preceding description of an offload target's internal state trees is just an example and is not meant to be prescriptive. The implementation determines how an offload target actually represents offloaded state internally.
 
- 
+ 
 
- 
+ 
 
 
 

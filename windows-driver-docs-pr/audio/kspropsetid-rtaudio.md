@@ -2,11 +2,7 @@
 title: KSPROPSETID\_RTAudio
 description: KSPROPSETID\_RTAudio
 ms.assetid: a243637a-7b6b-4675-99ef-a365f5fb7d00
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -47,9 +43,9 @@ The `KSPROPSETID_RTAudio` property set contains the following properties:
 
 [**KSPROPERTY\_RTAUDIO\_UNREGISTER\_NOTIFICATION\_EVENT**](ksproperty-rtaudio-unregister-notification-event.md)
 
- 
+ 
 
- 
+ 
 
 
 

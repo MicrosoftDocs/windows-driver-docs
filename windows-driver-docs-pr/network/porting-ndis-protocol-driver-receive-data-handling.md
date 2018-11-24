@@ -4,11 +4,7 @@ description: Porting NDIS Protocol Driver Receive Data Handling
 ms.assetid: e9b7e8ca-db64-4bce-ab34-5ba658111121
 keywords:
 - receive operation porting WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +22,9 @@ NDIS 6.0 does not necessarily call the protocol driver's receive entry point at 
 
 For an overview of receive operations, see [Receiving Network Data](receiving-network-data.md). For more information about protocol driver receive handling, see [Receiving Data in Protocol Drivers](receiving-data-in-protocol-drivers.md).
 
- 
+ 
 
- 
+ 
 
 
 

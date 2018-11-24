@@ -2,11 +2,7 @@
 title: PROPSETID\_VIDCAP\_SELECTOR
 description: PROPSETID\_VIDCAP\_SELECTOR
 ms.assetid: a7328f22-be49-48ac-b923-15f66dc38ccb
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,9 +28,9 @@ Clients of the USB video class driver can make the following requests of filters
 
 Properties in the PROPSETID\_VIDCAP\_SELECTOR property set are accessed through the DirectShow **ISelector** interface (see the DirectShow documentation in the Microsoft Windows SDK).
 
- 
+ 
 
- 
+ 
 
 
 

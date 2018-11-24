@@ -1,11 +1,7 @@
 ---
 Description: Supporting Client Contexts
 title: Supporting Client Contexts
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -49,7 +45,7 @@ Refer to the code from WpdWudfSampleDriver for examples of how to retrieve conte
 | Retrieving the context map from the file object for the WDF request.                                                     | **CQueue::OnDeviceIoControl**       |
 | Adding client information to the context map when processing the WPD\_COMMAND\_COMMON\_SAVE\_CLIENT\_INFORMATION command | **WpdBaseDriver::OnSaveClientInfo** |
 
- 
+ 
 
 ## <span id="Releasing_the_Context"></span><span id="releasing_the_context"></span><span id="RELEASING_THE_CONTEXT"></span>Releasing the Context
 
@@ -64,9 +60,9 @@ An example implementation of the **IQueueCleanup** callback is the WpdWudfSample
 ****
 [The WPD Driver Samples](the-wpd-driver-samples.md)
 
- 
+ 
 
- 
+ 
 
 
 

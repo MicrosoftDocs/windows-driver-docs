@@ -3,11 +3,7 @@ title: wmitrace.start
 description: The wmitrace.start extension starts the Event Tracing for Windows (ETW) logger on the target computer.
 ms.assetid: 52ed0c5a-6ca9-4890-bae5-54394bc43d51
 keywords: ["wmitrace.start Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!wmitrace.start** extension starts the Event Tracing for Windows (ETW) logger on the target computer.
 
-```
+```dbgcmd
 !wmitrace.start LoggerName [-cir Size | -seq Size] [-f File] [-b Size] [-max Num] [-min Num] [-kd] [-ft Time] 
 ```
 
@@ -58,7 +54,7 @@ Specifies the duration of the flush timer, in seconds. Starting in Windows 8, y
 
 **Note**  If you start a tracing session in KD filter mode (**-kd**), trace buffers on the target computer are sent to the debugger on the host computer for display. This parameter specifies how often the buffers on the target computer are flushed and sent to the host computer.
 
- 
+ 
 
 ### <span id="DLL"></span><span id="dll"></span>DLL
 
@@ -68,7 +64,7 @@ This extension is available in Windows 7 and later versions of Windows.
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
-For more details on the parameters of this extension, see [StartTrace Function](http://go.microsoft.com/fwlink/p/?linkid=139652) and [EVENT\_TRACE\_PROPERTIES](http://go.microsoft.com/fwlink/p/?linkid=139653). For a conceptual overview of event tracing, see the Microsoft Windows SDK. For information about tracing tools, see the Windows Driver Kit (WDK).
+For more details on the parameters of this extension, see [StartTrace Function](https://go.microsoft.com/fwlink/p/?linkid=139652) and [EVENT\_TRACE\_PROPERTIES](https://go.microsoft.com/fwlink/p/?linkid=139653). For a conceptual overview of event tracing, see the Microsoft Windows SDK. For information about tracing tools, see the Windows Driver Kit (WDK).
 
 Remarks
 -------
@@ -79,9 +75,9 @@ When the trace session is started, the system assigns it an ordinal number (the 
 
 To stop the ETW logger, use [**!wmitrace.stop**](-wmitrace-stop.md).
 
- 
+ 
 
- 
+ 
 
 
 

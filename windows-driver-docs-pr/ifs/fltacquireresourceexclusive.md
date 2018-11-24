@@ -12,11 +12,7 @@ api_location:
 - fltMgr.dll
 api_type:
 - LibDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -65,7 +61,7 @@ The following circumstances determine whether or when the caller is given exclus
 &gt; \[!Note\]
 &gt;   If two threads each hold a shared lock on the same resource and both attempt to acquire the lock exclusively without releasing their shared lock, they will deadlock. This means that each thread will wait for the other to release its shared hold on the lock, and neither will release its shared hold until the other does.
 
- 
+ 
 
 **FltAcquireResourceExclusive** is a wrapper for [**ExAcquireResourceExclusiveLite**](https://msdn.microsoft.com/library/windows/hardware/ff544351) that disables normal kernel APC delivery.
 
@@ -92,7 +88,7 @@ Requirements
 <tbody>
 <tr class="odd">
 <td align="left"><p>Target platform</p></td>
-<td align="left">[Universal](http://go.microsoft.com/fwlink/p/?linkid=531356)</td>
+<td align="left"><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" data-raw-source="[Universal](http://go.microsoft.com/fwlink/p/?linkid=531356)">Universal</a></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Version</p></td>
@@ -132,9 +128,9 @@ Requirements
 
 [**KeEnterCriticalRegion**](https://msdn.microsoft.com/library/windows/hardware/ff552021)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Language and Port Monitor Interaction
-author: windows-driver-content
 description: Language and Port Monitor Interaction
 ms.assetid: 6c3c55fc-40f3-43d7-b8a2-20fed8d28813
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - print monitors WDK , port monitors
 - language monitors WDK print , port monitor interaction
 - port monitors WDK print , language monitor interaction
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,9 +31,9 @@ Because language monitors and port monitors are discrete components of the print
 
 You can also provide a single print monitor consisting of a [combined language and port monitor](combined-language-and-port-monitor.md).
 
- 
+ 
 
- 
+ 
 
 
 

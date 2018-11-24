@@ -8,11 +8,7 @@ keywords:
 - installing devices WDK , null drivers
 - null drivers WDK device installations
 - nonexistent drivers WDK device installations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,7 +22,7 @@ You might install a "null driver" (that is, nonexistent driver) for a device if 
 
 To specify a null driver in an INF file, use entries like the following:
 
-```
+```cpp
 :
 [MyModels]
 %MyDeviceDescription% = MyNullInstallSection, &BadDeviceHardwareID%
@@ -45,9 +41,9 @@ The hardware ID for the device in the *Models* section should identify the devic
 
 The operating system will create a device node ([*devnode*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode)) for the device, but if the device is not capable of executing in raw mode, the operating system will not start the device because a function driver has not been assigned to it. Note, however, that if the device has a [boot configuration](https://msdn.microsoft.com/library/windows/hardware/ff547012#logical-configuration-types-for-resource-lists), those resources will be reserved.
 
- 
+ 
 
- 
+ 
 
 
 

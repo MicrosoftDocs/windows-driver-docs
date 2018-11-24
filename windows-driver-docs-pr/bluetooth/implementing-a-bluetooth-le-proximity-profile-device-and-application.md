@@ -2,11 +2,7 @@
 title: Bluetooth LE Proximity Profile Devices and Apps
 description: Proximity detection is a common use of Bluetooth Low Energy (LE).
 ms.assetid: 4BF27CBE-C89A-48DC-8536-1A5111CDB0C4
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +26,9 @@ This diagram shows how *characteristics* are structured inside a typical GATT se
 
 An example proximity profile is described further in [Bluetooth Proximity Profile](bluetooth-proximity-profile.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 ms.assetid: 3D0CB4E7-D1BC-44AA-93D9-5CCDE98C9691
 title: Driver Model Settings Properties for Driver Projects
 description: Sets the basic properties for a kernel-mode or user-mode driver, including the WDF library version and preprocessor definitions.
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -84,9 +80,9 @@ Overrides the default values for preprocessing symbols: \_WIN32\_WINNT, WINVER, 
 * [UMDF Version History](https://msdn.microsoft.com/Library/Windows/Hardware/Ff561356)
 * [Building UMDF Drivers](https://msdn.microsoft.com/Library/Windows/Hardware/Ff540730)
 * [Creating Export Drivers](https://msdn.microsoft.com/Library/Windows/Hardware/Ff542891)
- 
+ 
 
- 
+ 
 
 
 

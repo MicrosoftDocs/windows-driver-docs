@@ -2,11 +2,7 @@
 title: Debugging the Service Application Automatically
 description: Debugging the Service Application Automatically
 ms.assetid: 3168b5c1-30fa-4ff5-b871-736dcdeb8f31
-ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,7 +19,8 @@ Then use the following procedure:
     -   If the service is combined with other services in a single SvcHost process, perform the procedure described in Isolating the Service.
 
 2.  If the service is already running, you must restart it for these changes to take effect. We recommend that you restart Windows itself, in order to remove any effects of the running service. If you do not want to restart Windows, use the following commands, where *ServiceName* is the name of the service:
-    ```
+
+    ```console
     net stop ServiceName 
     net start ServiceName 
     ```
@@ -45,11 +42,11 @@ Then use the following procedure:
 ## <span id="related_topics"></span>Related topics
 
 
-[DebugBreak function](http://go.microsoft.com/fwlink/p/?linkid=124229)
+[DebugBreak function](https://go.microsoft.com/fwlink/p/?linkid=124229)
 
- 
+ 
 
- 
+ 
 
 
 

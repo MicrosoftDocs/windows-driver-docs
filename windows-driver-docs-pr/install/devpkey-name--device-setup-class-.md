@@ -12,6 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # DEVPKEY_NAME (Device Setup Class)
@@ -31,7 +32,7 @@ The DEVPKEY_NAME device property represents the name of a [device setup class](h
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Property-data-type identifier</strong></p></td>
-<td align="left"><p>[<strong>DEVPROP_TYPE_STRING</strong>](devprop-type-string.md)</p></td>
+<td align="left"><p><a href="devprop-type-string.md" data-raw-source="[&lt;strong&gt;DEVPROP_TYPE_STRING&lt;/strong&gt;](devprop-type-string.md)"><strong>DEVPROP_TYPE_STRING</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Property access</strong></p></td>
@@ -44,7 +45,7 @@ The DEVPKEY_NAME device property represents the name of a [device setup class](h
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -92,9 +93,9 @@ Requirements
 
 [**SetupDiClassNameFromGuid**](https://msdn.microsoft.com/library/windows/hardware/ff550947)
 
- 
+ 
 
- 
+ 
 
 
 

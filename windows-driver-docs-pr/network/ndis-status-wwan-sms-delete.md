@@ -1,13 +1,8 @@
 ---
 title: NDIS_STATUS_WWAN_SMS_DELETE
-author: windows-driver-content
 description: Miniport drivers use the NDIS_STATUS_WWAN_SMS_DELETE notification to inform the MB Service about the completion of a previous delete request through OID_WWAN_SMS_DELETE.
 ms.assetid: 0083dcd9-4e18-4582-993a-c4402cb552de
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -NDIS_STATUS_WWAN_SMS_DELETE Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -52,9 +47,9 @@ Requirements
 
 [**NDIS\_WWAN\_SMS\_DELETE\_STATUS**](https://msdn.microsoft.com/library/windows/hardware/ff567940)
 
- 
+ 
 
- 
+ 
 
 
 

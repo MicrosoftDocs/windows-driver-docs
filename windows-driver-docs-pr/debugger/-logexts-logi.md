@@ -3,11 +3,7 @@ title: logexts.logi
 description: The logexts.logi extension initializes logging by injecting Logger into the target application.
 ms.assetid: c02d2799-c83a-455d-90c0-401244062365
 keywords: ["logexts.logi Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!logexts.logi** extension initializes logging by injecting Logger into the target application.
 
-```
+```dbgcmd
     !logexts.logi [OutputDirectory] 
 ```
 
@@ -51,7 +47,7 @@ Specifies the directory to use for output. If *OutputDirectory* is specified, it
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -62,9 +58,9 @@ Remarks
 
 This command initializes logging, but does not actually enable it. Logging can be enabled with the [**!logexts.loge**](-logexts-loge.md) command.
 
- 
+ 
 
- 
+ 
 
 
 

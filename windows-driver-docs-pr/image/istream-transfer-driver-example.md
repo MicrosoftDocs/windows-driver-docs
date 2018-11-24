@@ -1,13 +1,8 @@
 ---
 title: IStream Transfer Driver Example
-author: windows-driver-content
 description: IStream Transfer Driver Example
 ms.assetid: fb830522-f95e-4dd7-8c1b-de092a6c5a51
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -16,7 +11,7 @@ ms.localizationpriority: medium
 
 The following code example shows an implementation of the IStream-based transfer model.
 
-```
+```cpp
 MyWiaDriver::drvAcquireItemData(
 BYTE                      *pWiasContext,
 LONG                      lFlags,

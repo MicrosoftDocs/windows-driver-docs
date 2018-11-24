@@ -3,11 +3,7 @@ title: Source Path
 description: This topic covers how to set the source path or load the individual source files.
 ms.assetid: b5dcb557-b413-401a-be4b-2d45b2597e6c
 keywords: source files and paths, source path
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,9 +31,9 @@ The debugger's source path is a string that consists of multiple directory paths
 
 Relative paths are supported. However, unless you always start the debugger from the same directory, you should add a drive letter or a network share before each path. Network shares are also supported.
 
-**Note**   If you are connected to a corporate network, the most efficient way to access source files is to use a source server. You can use a source server by using the **srv\*** string within your source path. For more information about source servers, see [Using a Source Server](using-a-source-server.md).
+**Note**   If you are connected to a corporate network, the most efficient way to access source files is to use a source server. You can use a source server by using the **srv\\*** string within your source path. For more information about source servers, see [Using a Source Server](using-a-source-server.md).
 
- 
+ 
 
 ### <span id="controlling_the_source_path"></span><span id="CONTROLLING_THE_SOURCE_PATH"></span>Controlling the Source Path
 
@@ -63,7 +59,7 @@ You can also directly open or close a source file by doing one of the following:
 
     **Note**   When you use **File | Open Source File** (or its shortcut menu or button equivalents) to open a source file, the path of that file is automatically appended to the source path.
 
-     
+     
 
 -   (WinDbg only) Use the [File | Recent Files](file---recent-files.md) command to open one of the four source files that you most recently opened in WinDbg.
 
@@ -71,9 +67,9 @@ You can also directly open or close a source file by doing one of the following:
 
 For more information about how to use source files, see [Debugging in Source Mode](debugging-in-source-mode.md).
 
- 
+ 
 
- 
+ 
 
 
 

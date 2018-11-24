@@ -1,17 +1,12 @@
 ---
 title: Adding Constructs to Your GDL File for PPD
-author: windows-driver-content
 description: Adding Constructs to Your GDL File for PPD
 ms.assetid: 981952b2-cc13-4c62-935b-74e749278c0f
 keywords:
 - constructs WDK printer autoconfig
 - PPD files WDK autoconfiguration , constructs
 - in-box autoconfiguration support WDK printer , constructs
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +29,9 @@ The following examples show how to add the appropriate constructs to your GDL fi
 
 [Autodetect the Printer's Hard Drive for PPD](autodetect-the-printer-s-hard-drive-for-ppd.md)
 
- 
+ 
 
- 
+ 
 
 
 

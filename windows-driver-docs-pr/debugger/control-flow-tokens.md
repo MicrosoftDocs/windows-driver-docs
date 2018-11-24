@@ -3,11 +3,7 @@ title: Control Flow Tokens
 description: Control Flow Tokens
 ms.assetid: c38852aa-3dfe-4f70-9ef4-8c86e4a8334d
 keywords: ["script file, control flow tokens", "control flow tokens", "debugger command program, control flow tokens"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,12 +18,14 @@ You can use *control flow tokens* to create conditional execution and execution 
 Control flow tokens behave like their counterparts in C and C++, with the following general exceptions:
 
 -   You must enclose each block of commands that is executed conditionally or repeatedly in braces, even if there is only one such command. For example, you cannot omit the braces in the following command.
-    ```
+
+    ```dbgcmd
     0:000> .if (ebx>0) { r ebx }
     ```
 
 -   Each condition must be a expression. Commands are not permitted. For example, the following example produces a syntax error.
-    ```
+
+    ```dbgcmd
     0:000> .while (r ebx) { .... }
     ```
 
@@ -63,9 +61,9 @@ The following control flow tokens are supported within a debugger command progra
 
 The [**!for\_each\_module**](-for-each-module.md), [**!for\_each\_frame**](-for-each-frame.md), and [**!for\_each\_local**](-for-each-local.md) extensions are also useful with a debugger command program.
 
- 
+ 
 
- 
+ 
 
 
 

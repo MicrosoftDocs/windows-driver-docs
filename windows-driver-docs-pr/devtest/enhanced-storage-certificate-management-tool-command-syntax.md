@@ -10,11 +10,7 @@ api_name:
 - Enhanced
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -60,7 +56,6 @@ The Enhanced Storage Certificate Management tool is run from the command line.
     /Replace 
     ReplaceParameters
     ]
-   
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
@@ -105,9 +100,9 @@ All the switches of the Enhanced Storage Certificate Management tool must start 
 
 .
 
- 
 
- 
+
+
 
 
 

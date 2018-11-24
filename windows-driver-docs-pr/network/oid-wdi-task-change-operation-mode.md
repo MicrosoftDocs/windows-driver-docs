@@ -1,13 +1,8 @@
 ---
 title: OID_WDI_TASK_CHANGE_OPERATION_MODE
-author: windows-driver-content
 description: OID_WDI_TASK_CHANGE_OPERATION_MODE configures the operation mode for the port.
 ms.assetid: 84be0658-104d-4336-bc2f-6f2624f33857
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - OID_WDI_TASK_CHANGE_OPERATION_MODE Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -22,7 +17,7 @@ OID\_WDI\_TASK\_CHANGE\_OPERATION\_MODE configures the operation mode for the po
 |--------|---------------|---------------------------------------|---------------------------------|
 | Port   | No            | 4                                     | 1                               |
 
- 
+ 
 
 ## Task parameters
 
@@ -31,7 +26,7 @@ OID\_WDI\_TASK\_CHANGE\_OPERATION\_MODE configures the operation mode for the po
 |------------------------------------------------------------------|--------------------------------|----------|-----------------------------|
 | [**WDI\_TLV\_OPERATION\_MODE**](https://msdn.microsoft.com/library/windows/hardware/dn897856) |                                |          | The desired operation mode. |
 
- 
+ 
 
 ## Task completion indication
 
@@ -61,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

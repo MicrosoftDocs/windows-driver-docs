@@ -1,6 +1,5 @@
 ---
 title: TVOT\_2STATES
-author: windows-driver-content
 description: TVOT\_2STATES
 ms.assetid: e8d89cf6-275d-4a2a-8a8e-8799988c31e2
 keywords: ["TVOT_2STATES Print Devices"]
@@ -12,11 +11,7 @@ api_location:
 - compstui.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -113,7 +108,7 @@ Otherwise, **BegCtrlID** must contain the first control identifier of a sequenti
 </tbody>
 </table>
 
- 
+ 
 
 For additional information, see [Customizing CPSUI-Supported Window Controls](https://msdn.microsoft.com/library/windows/hardware/ff547296).
 
@@ -133,9 +128,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

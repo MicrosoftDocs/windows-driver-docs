@@ -1,17 +1,12 @@
 ---
 title: Separating Nodes in Individual Filters
-author: windows-driver-content
 description: Separating Nodes in Individual Filters
 ms.assetid: 9ae5c72a-a97b-48aa-80c1-bb8767701497
 keywords:
 - control nodes WDK BDA
 - nodes WDK BDA
 - separating nodes in filters
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,9 +20,9 @@ The following figure of a sample DirectShow filter graph shows another way in wh
 
 ![diagram illustrating a directshow filter graph with separate tuner and demodulator filters](images/smpdshw2.png)
 
- 
+ 
 
- 
+ 
 
 
 

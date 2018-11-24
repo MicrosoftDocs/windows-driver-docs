@@ -7,11 +7,7 @@ keywords:
 - CoNDIS WDK networking , address families
 - address families WDK networking
 - AFs WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +29,9 @@ A call manager or MCM driver advertises its call manager services for a specific
 
 For more information about operations on address families, see [Registering and Opening an Address Family](registering-and-opening-an-address-family.md) and [Closing an Address Family](closing-an-address-family.md).
 
- 
+ 
 
- 
+ 
 
 
 

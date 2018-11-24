@@ -1,17 +1,12 @@
 ---
 title: PPD Features
-author: windows-driver-content
 description: PPD Features
 ms.assetid: ee78031a-2138-4d0c-ac8a-5328aa54d904
 keywords:
 - PPD files WDK Pscript
 - non-PPD features WDK Pscript
 - driver features WDK Pscript
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +28,9 @@ PPD features are defined in the PPD file within **\*OpenUI**/**\*CloseUI** struc
 
 -   If **Duplex** is set to simplex (this can be set either directly in the public portion of the DEVMODE structure or by calling **SetOptions** on the PPD's **\*Duplex** feature keyword), but **%PagePerSheet** is set to "Booklet", then **%PagePerSheet** will be changed to "2". This is done when all requested settings in the **SetOptions** call are applied.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,17 +1,12 @@
 ---
 title: KS Properties
-author: windows-driver-content
 description: KS Properties
 ms.assetid: a385929e-1934-4d88-aaf9-ff1ddbfd30f7
 keywords:
 - kernel streaming WDK , properties
 - KS properties WDK kernel streaming
 - properties WDK kernel streaming
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +20,7 @@ A *Property* represents a capability or control-state setting that belongs to a 
 
 To get or set individual properties, user-mode clients call the Win32 function **DeviceIoControl** with the *dwIoControlCode* parameter set to IOCTL\_KS\_PROPERTY. **DeviceIoControl** is described in the Microsoft Windows SDK documentation. Kernel-mode clients should call [**KsSynchronousDeviceControl**](https://msdn.microsoft.com/library/windows/hardware/ff567142).
 
-The input buffer is either a [**KSPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff564262) structure or a wrapper containing a KSPROPERTY structure and other information relevant to the request. In response to this call, the operating system dispatches an IRP to the class driver.
+The input buffer is either a [**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier) structure or a wrapper containing a KSPROPERTY structure and other information relevant to the request. In response to this call, the operating system dispatches an IRP to the class driver.
 
 When the class driver receives the resulting IRP, it calls [**KsPropertyHandler**](https://msdn.microsoft.com/library/windows/hardware/ff564263). The class driver includes as a call parameter the address of the KSPROPERTY structure that identifies the specifics of the property request. The property request is either handled automatically at the class driver level or by a minidriver-provided handler. See [Kernel Streaming Property Sets](https://msdn.microsoft.com/library/windows/hardware/ff554246) for reference information including which property sets are handled by the class driver and which require minidriver-provided handlers. A minidriver can override or augment the class driver handler by providing callbacks for a property that is by default handled by the class driver.
 
@@ -39,9 +34,9 @@ To report the size and type of acceptable values for a property, the class drive
 
 The class driver may append a list of KSPROPERTY\_MEMBERSHEADER structures to the KSPROPERTY\_DESCRIPTION structure.
 
- 
+ 
 
- 
+ 
 
 
 

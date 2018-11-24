@@ -3,11 +3,7 @@ title: ndiskd.netpacketfragment
 description: The ndiskd.netpacketfragment extension displays information about a NET_PACKET_FRAGMENT structure.
 ms.assetid: 2075D682-45F5-414D-A8ED-0494B3550C77
 keywords: ["ndiskd.netpacketfragment Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,7 +20,7 @@ The **!ndiskd.netpacketfragment** extension displays information about a [NET\_P
 
 For more information about the Network Adapter WDF Class Extension (NetAdapterCx), see [Network Adapter WDF Class Extension (Cx)](https://docs.microsoft.com/windows-hardware/drivers/netcx).
 
-```
+```console
 !ndiskd.netpacketfragment [-handle <x>] 
 ```
 
@@ -43,7 +39,7 @@ Examples
 
 **Note**  See [Summary of Objects](https://docs.microsoft.com/windows-hardware/drivers/netcx/summary-of-objects) to see a diagram explaining the relationship of the NET\_PACKET object with other objects in the NetAdapterCx.
 
- 
+ 
 
 To obtain a handle for a NET\_PACKET, follow these steps:
 
@@ -59,7 +55,7 @@ To obtain a handle for a NET\_PACKET, follow these steps:
 For details on Steps 1-4 of this procedure, see the examples on the **!ndiskd.cxadapter** topic. For details on Step 5 of this procedure, see the examples on the [**!ndiskd.netqueue**](-ndiskd-netqueue.md) topic. For details on Steps 6-7 of this procedure, see the examples on the [**!ndiskd.netrb**](-ndiskd-netrb.md) topic. For details on Step 8 of this procedure, see the examples on the [**!ndiskd.netpacket**](-ndiskd-netpacket.md) topic.
 In the following example, look for the handle for the first fragment of this NET\_PACKET, ffffd1022d000040.
 
-```
+```console
 0: kd> !ndiskd.netpacket ffffd1022d000040
 
 
@@ -75,7 +71,7 @@ In the following example, look for the handle for the first fragment of this NET
 
 By clicking on the handle for the first fragment or by entering the **!ndiskd.netpacketfragment -handle** command on the command line, you can see details for this NET\_PACKET\_FRAGMENT, including its Virtual Address, capacity, and whether or not it is the last packet in the NET\_PACKET chain of fragments.
 
-```
+```console
 0: kd> !ndiskd.netpacketfragment ffffd1022d000040
 
     NET_PACKET_FRAGMENT ffffd1022d000040
@@ -119,9 +115,9 @@ By clicking on the handle for the first fragment or by entering the **!ndiskd.ne
 
 [**!ndiskd.netpacket**](-ndiskd-netpacket.md)
 
- 
+ 
 
- 
+ 
 
 
 

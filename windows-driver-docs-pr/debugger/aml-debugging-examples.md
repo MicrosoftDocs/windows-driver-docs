@@ -3,11 +3,7 @@ title: AML Debugging Examples
 description: AML Debugging Examples
 ms.assetid: 3a9f760f-f511-412f-aca0-3c415b3e5dc2
 keywords: ["AMLI Debugger, debugging examples"]
-ms.author: domars
-ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 11/07/2018
 ms.localizationpriority: medium
 ---
 
@@ -23,7 +19,7 @@ Here are examples that illustrate how to get started with AML debugging.
 
 If the target computer has frozen and you suspect it may be an ACPI problem, begin by using the [**!amli lc**](-amli-lc.md) extension to display all the active contexts:
 
-```
+```dbgcmd
 kd> !amli lc
 *Ctxt=ffffffff8128d000, ThID=ffffffff81277880, Flgs=----R----, pbOp=ffffffff8124206c, Obj=\_SB.PCI0.ISA0.FDC0._CRS
 ```
@@ -32,11 +28,11 @@ If no contexts are displayed, the error is probably not ACPI-related.
 
 If there are contexts shown, look for the one marked with an asterisk. This is the *current context* (the one that is being executed by the interpreter at the present moment).
 
-In this example, the target computer is running Windows XP or Windows Server 2003 on a 32-bit processor. Therefore all addresses are cast to 64 bits, producing a gratuitous FFFFFFFF in the high 32 bits. The abbreviation **pbOp** indicates the instruction pointer ("pointer to binary op codes"). The **Obj** field gives the full path and name of the method as it appears in the ACPI tables. For a description of the flags, see [**!amli lc**](-amli-lc.md).
+In this example, the target computer is running Windows on a 32-bit processor. Therefore all addresses are cast to 64 bits, producing a gratuitous FFFFFFFF in the high 32 bits. The abbreviation **pbOp** indicates the instruction pointer ("pointer to binary op codes"). The **Obj** field gives the full path and name of the method as it appears in the ACPI tables. For a description of the flags, see [**!amli lc**](-amli-lc.md).
 
 You can use the [**!amli u**](-amli-u.md) command to disassemble the \_CRS method as follows:
 
-```
+```dbgcmd
 kd> !amli u \_SB.PCI0.ISA0.FDC0._CRS
 
 ffffffff80e4a535 : CreateDWordFieldCRES, 0x76, RAMT)
@@ -52,7 +48,7 @@ The [**!amli debugger**](-amli-debugger.md) command causes the AML interpreter t
 
 After the AMLI Debugger prompt appears, you can use any of the AMLI Debugger commands. You can also use **!amli** extension commands without prefixing them with "!amli":
 
-```
+```dbgcmd
 kd> !amli debugger
 kd> g
 
@@ -88,7 +84,7 @@ In the following example, you will break into the AMLI Debugger before the metho
 
 Even if you have located a \_BST object, you should verify that it is indeed a method. You can use the [**!amli dns**](-amli-dns.md) extension to do this.
 
-```
+```dbgcmd
 kd> !amli dns /s \_sb.pci0.isa.bat1._bst
 
 ACPI Name Space: \_SB.PCI0.ISA.BAT1._BST (c29c2044)
@@ -97,13 +93,13 @@ Method(_BST:Flags=0x0,CodeBuff=c29c20a5,Len=103)
 
 Now you can use the [**!amli bp**](-amli-bp.md) command to place the breakpoint:
 
-```
+```dbgcmd
 kd> !amli bp \_sb.pci0.isa.bat1._bst
 ```
 
 You may also want to place breakpoints within the method. You could use the [**!amli u**](-amli-u.md) command to disassemble \_BST and then place a breakpoint on one of its steps:
 
-```
+```dbgcmd
 kd> !amli u _sb.pci0.isa.bat1._bst
 
 ffffffffc29c20a5: Acquire(\_SB_.PCI0.ISA_.EC0_.MUT1, 0xffff)
@@ -119,21 +115,21 @@ kd> !amli bp c29c20ee
 
 In the following example, the method \_WAK is running and then encounters a breakpoint:
 
-```
+```dbgcmd
 Running \_WAK method
 Hit Breakpoint 0.
 ```
 
-Use the [**!amli ln**](-amli-ln.md) extension to see the nearest method to the current program counter. The following example is taken from a Windows 2000 system, so the addresses are shown in 32-bit form:
+Use the [**!amli ln**](-amli-ln.md) extension to see the nearest method to the current program counter. The following example is showing addresses in 32-bit form:
 
-```
+```dbgcmd
 kd> !amli ln
 c29accf5: \_WAK
 ```
 
 The [**!amli lc**](-amli-lc.md) extension displays all the active contexts:
 
-```
+```dbgcmd
 kd> !amli lc
  Ctxt=c18b6000, ThID=00000000, Flgs=A-QC-W----, pbOp=c29bf8fe, Obj=\_SB.PCI0.ISA.EC0._Q09
 *Ctxt=c18b4000, ThID=c15a6618, Flgs=----R-----, pbOp=c29accf5, Obj=\_WAK
@@ -143,7 +139,7 @@ This shows that the active contexts are associated with the methods \_Q09 and \_
 
 Now you can use the [**!amli r**](-amli-r.md) command to display more details about the current context. From this you can see useful thread and stack information, as well as arguments passed to \_WAK and the local data objects.
 
-```
+```dbgcmd
 kd> !amli r
 Context=c18b4000*, Queue=00000000, ResList=00000000
 ThreadID=c15a6618, Flags=00000010
@@ -169,13 +165,13 @@ c18b4040: RetObj=Unknown()
 
 If you want to trace through the code, you can turn on full tracing information by using the [**!amli set**](-amli-set.md) extension as follows:
 
-```
+```dbgcmd
 kd> !amli set spewon verboseon traceon
 ```
 
 Now you can step through the AML code, watching the code execute line by line. The **p** command steps over any function calls. The **t** command will step into function calls.
 
-```
+```dbgcmd
 AMLI(? for help)-> p
 
 c29bfcb7: Store(\_SB_.PCI0.ISA_.ACAD.CHAC(SEL0=0x10e1)
@@ -199,7 +195,7 @@ c29c293d: | Store("CMBatt - CHBP.BAT1",Debug)String(:Str="CMBatt - CHBP.BAT1")="
 
 You may also run methods from within the AMLI Debugger if you choose. For example, you might evaluate the status of the LNKA device by running its control method \_STA:
 
-```
+```dbgcmd
 AMLI(? for help)-> run \_sb.lnka._sta
 PCI OpRegion Access on region c29b2268 device c29b2120
 
@@ -207,9 +203,11 @@ PCI OpRegion Access on region c29b2268 device c29b2120
 Integer(:Value=0x0000000b[11])
 ```
 
- 
+## See Also
 
- 
+ [The AMLI Debugger](the-amli-debugger.md)
+
+ 
 
 
 

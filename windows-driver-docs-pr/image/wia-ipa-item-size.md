@@ -11,11 +11,7 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -44,7 +40,7 @@ If WIA\_IPA\_ITEM\_SIZE is set to zero and TYMED is configured for a file transf
 
 **Note**   In Windows Vista and later versions of the operating system only set the WIA\_IPA\_ITEM\_SIZE property to 0 for the ADF item when automatic document size detection is enabled.
 
- 
+ 
 
 Requirements
 ------------
@@ -62,9 +58,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

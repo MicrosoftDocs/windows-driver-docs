@@ -6,11 +6,7 @@ keywords:
 - intermediate drivers WDK TCP chimney offload , propagating indication
 - indication propagation WDK TCP chimney offload
 - propagating offloaded TCP connection indication
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -51,9 +47,9 @@ For example, to propagate a call to the **NdisTcpOffloadReceiveHandler** functio
 
 -   The *EventType* and *EventSpecificInformation* parameters that NDIS passed to the intermediate driver's *ProtocolTcpOffloadReceiveIndicate* function.
 
- 
+ 
 
- 
+ 
 
 
 

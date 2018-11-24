@@ -3,11 +3,7 @@ title: Building EngExtCpp Extensions
 description: Building EngExtCpp Extensions
 ms.assetid: 63d73c4e-03b8-4bbe-9c2e-96cda3ad544c
 keywords: ["EngExtCpp extensions, building"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -41,9 +37,9 @@ These functions can be exported even if the functionality they provide is not ne
 
 **DebugExtensionInitialize** must be exported in order for the debugger engine to recognize the DLL as a valid DbgEng extension DLL.
 
- 
+ 
 
- 
+ 
 
 
 

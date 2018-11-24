@@ -2,11 +2,7 @@
 title: DRM Functions
 description: DRM Functions
 ms.assetid: 7be96ab4-3c27-4e63-b0dd-71d814d804d7
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,9 +34,9 @@ In addition, this section describes the following macro:
 
 [**DEFINE\_DRMRIGHTS\_DEFAULT**](https://msdn.microsoft.com/library/windows/hardware/ff536254)
 
- 
+ 
 
- 
+ 
 
 
 

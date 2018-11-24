@@ -9,11 +9,7 @@ keywords:
 - NDIS miniport drivers WDK , receiving data
 - sending data WDK networking
 - receiving data WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,9 +33,9 @@ The following topics provide more information about miniport driver buffer manag
 
 [Indicating Received Data from a Miniport Driver](indicating-received-data-from-a-miniport-driver.md)
 
- 
+ 
 
- 
+ 
 
 
 

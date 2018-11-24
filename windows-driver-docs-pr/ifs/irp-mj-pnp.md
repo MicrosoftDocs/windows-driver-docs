@@ -1,5 +1,5 @@
 ---
-title: IRP\_MJ\_PNP
+title: IRP_MJ_PNP
 description: IRP\_MJ\_PNP
 ms.assetid: aec2f309-02a1-460a-b674-33ad18286347
 keywords: ["IRP_MJ_PNP Installable File System Drivers"]
@@ -9,11 +9,7 @@ api_name:
 - IRP_MJ_PNP
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -69,7 +65,7 @@ The file system should check the minor function code to determine which operatio
 </tbody>
 </table>
 
- 
+ 
 
 ## Operation: File System Filter Drivers
 
@@ -81,7 +77,7 @@ File system filter drivers should handle PnP IRPs according to the following gui
     &gt; \[!Note\]
     &gt;  On receiving an IRP\_MN\_QUERY\_REMOVE\_DEVICE request, the FAT file system immediately dismounts all volumes that it can safely remove. Thus any filter attached to a FAT volume should expect that its filter device object will be freed before the filter's completion routine is called. The NTFS file system does not do this. Thus a filter attached to an NTFS volume can expect that its device object will still be attached to the volume when the filter's completion routine is called.
 
-     
+     
 
 -   IRPs that are received after an IRP\_MN\_QUERY\_REMOVE\_DEVICE request, but before an IRP\_MN\_CANCEL\_REMOVE\_DEVICE or IRP\_MN\_REMOVE\_DEVICE request is received, can safely be passed down the stack (to be failed by the storage device stack) or held in a queue until the cancel-remove or remove-device request is received.
 
@@ -144,9 +140,9 @@ One of the following:
 
 [**IRP\_MN\_SURPRISE\_REMOVAL**](https://msdn.microsoft.com/library/windows/hardware/ff551760)
 
- 
+ 
 
- 
+ 
 
 
 

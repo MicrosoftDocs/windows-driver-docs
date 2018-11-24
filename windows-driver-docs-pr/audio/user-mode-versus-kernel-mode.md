@@ -12,11 +12,7 @@ keywords:
 - hardware synthesizers WDK audio
 - time stamps WDK audio
 - DirectMusic kernel-mode WDK audio , vs. user mode
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -46,9 +42,9 @@ To summarize the recommendations above:
 
 -   For hardware components, first implement a software version in user mode (in order to work out the design issues with easy interfaces, debugging, installation, and removal), then convert it to a kernel-mode software version. Finally, connect the kernel-mode component to hardware, one feature at a time, until everything works as desired.
 
- 
+ 
 
- 
+ 
 
 
 

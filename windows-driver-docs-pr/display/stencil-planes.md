@@ -11,11 +11,7 @@ keywords:
 - outlining WDK Direct3D
 - shadowing WDK Direct3D
 - decals WDK Direct3D
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -66,7 +62,7 @@ New render states associated with stencil planes are shown in the following tabl
 <td align="left"><p>D3DRENDERSTATE_STENCILFUNC</p></td>
 <td align="left"><p>D3DCMPFUNC</p></td>
 <td align="left"><p>Comparison function. The test passes if the following expression is true:</p>
-<p>(ref & mask) OPERATION (stencil & mask) where <em>ref</em> is the reference value, <em>stencil</em> is the value in the stencil buffer, and <em>mask</em> is the value of D3DRENDERSTATE_STENCILMASK.</p></td>
+<p>(ref &amp; mask) OPERATION (stencil &amp; mask) where <em>ref</em> is the reference value, <em>stencil</em> is the value in the stencil buffer, and <em>mask</em> is the value of D3DRENDERSTATE_STENCILMASK.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>D3DRENDERSTATE_STENCILREF</p></td>
@@ -93,11 +89,11 @@ New render states associated with stencil planes are shown in the following tabl
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

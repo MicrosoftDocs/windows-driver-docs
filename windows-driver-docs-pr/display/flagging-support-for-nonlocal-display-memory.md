@@ -10,11 +10,7 @@ keywords:
 - DirectDraw AGP support WDK Windows 2000 display , compatibility
 - memory WDK DirectDraw AGP , compatibility
 - compatibility WDK DirectDraw
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +24,9 @@ A driver must inform DirectDraw (and DirectDraw applications) that it is AGP-com
 
 If running on an operating system that does not support AGP services, DirectDraw turns off the DDCAPS2\_NONLOCALVIDMEM capability bit and all associated nonlocal heaps.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -5,11 +5,7 @@ ms.assetid: 4f3d48ff-e01d-4c80-b493-253afdba6fd7
 keywords:
 - PCM high-bitdepth stream data ranges WDK
 - high-bitdepth stream data ranges WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,7 +17,7 @@ ms.localizationpriority: medium
 
 This example uses a [**KSDATARANGE\_AUDIO**](https://msdn.microsoft.com/library/windows/hardware/ff537096) structure to describe the data range for a PCM high-bitdepth stream.
 
-```
+```cpp
   DataRange.FormatSize  = sizeof(KSDATARANGE_AUDIO);
   DataRange.Flags       = 0;
   DataRange.SampleSize  = 0;
@@ -38,9 +34,9 @@ This example uses a [**KSDATARANGE\_AUDIO**](https://msdn.microsoft.com/library/
 
 The member values in this example are similar to those in the [PCM Multichannel Stream Data Range](pcm-multichannel-stream-data-range.md) example, with the exception of the `MaximumBitsPerSample` value, which is greater than 16. This value is set to the maximum number of valid bits supported. For example, if the device supports 20 bits of valid audio data in 24-bit containers, the value for `MaximumBitsPerSample` should be set to 20.
 
- 
+ 
 
- 
+ 
 
 
 

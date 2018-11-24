@@ -1,6 +1,5 @@
 ---
 title: GDL Preprocessor Syntax
-author: windows-driver-content
 description: GDL Preprocessor Syntax
 ms.assetid: 14e9a595-3b6f-43b9-b670-7c9324619974
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - source files WDK GDL , preprocessor directives
 - preprocessor directives WDK GDL , syntax
 - syntax WDK GDL
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,11 +26,11 @@ GDL preprocessor directives must adhere to the following rules:
 
 **Note**   GDL syntax is more relaxed than GPD syntax. If you are writing for both parsers, you should follow the stricter syntax that is required for GPD.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

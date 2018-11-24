@@ -2,11 +2,7 @@
 title: Using SDV and the Sample Drivers
 description: Using SDV and the Sample Drivers
 ms.assetid: 4f673cd3-e23e-4267-920f-37618192a906
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,9 +16,9 @@ To help you get started using Static Driver Verifier (SDV) you can run the tool 
 -   [SDV-FailDriver-NDIS](http://go.microsoft.com/fwlink/p/?LinkId=617995)
 -   [SDV-FailDriver-STORPORT](http://go.microsoft.com/fwlink/p/?LinkId=617997)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: DEBUG\_FILTER\_XXX
 description: DEBUG\_FILTER\_XXX
 ms.assetid: 1f8f738b-7b2b-419a-949e-b71f937de02d
-ms.author: domars
 ms.date: 12/07/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: ["DEBUG_FILTER_XXX Windows Debugging"]
 topic_type:
 - apiref
@@ -83,7 +79,7 @@ The following constants are used to specify specific event filters.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="break_status"></span><span id="BREAK_STATUS"></span>Break Status
 
@@ -120,7 +116,7 @@ The following constants are used to specify the break status of an event filter.
 </tbody>
 </table>
 
- 
+ 
 
 Additionally, for an arbitrary exception filter, setting the break status to DEBUG\_FILTER\_REMOVE, removes the event filter.
 
@@ -142,7 +138,7 @@ The following constants are used to specify the handling status of an exception 
 <tbody>
 <tr class="odd">
 <td align="left"><p>DEBUG_FILTER_GO_HANDLED</p></td>
-<td align="left"><p>The [<em>exception</em>](https://msdn.microsoft.com/library/windows/hardware/ff556279#wdkgloss-exception) has been handled.</p></td>
+<td align="left"><p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff556279#wdkgloss-exception" data-raw-source="[&lt;em&gt;exception&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556279#wdkgloss-exception)"><em>exception</em></a> has been handled.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>DEBUG_FILTER_GO_NOT_HANDLED</p></td>
@@ -151,7 +147,7 @@ The following constants are used to specify the handling status of an exception 
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -169,9 +165,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

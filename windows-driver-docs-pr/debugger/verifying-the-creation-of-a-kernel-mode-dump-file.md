@@ -3,11 +3,7 @@ title: Verifying the Creation of a Kernel-Mode Dump File
 description: Verifying the Creation of a Kernel-Mode Dump File
 ms.assetid: ea1dc18d-8974-4de8-accd-1cbc515d71d0
 keywords: ["dump file, verifying kernel-mode dump creation"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,7 +15,7 @@ ms.localizationpriority: medium
 
 If you have a machine that has broken into the debugger, but you are unsure whether the crash dump file was successfully written, execute the following command:
 
-```
+```dbgcmd
 dd nt!IopFinalCrashDumpStatus L1
 ```
 
@@ -29,9 +25,9 @@ If this value equals zero, the process was successful. If it equals -1 (0xFFFFFF
 
 Any other value is a status code indicating an error during the dump process.
 
- 
+ 
 
- 
+ 
 
 
 

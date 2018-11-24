@@ -1,13 +1,8 @@
 ---
 title: SIO_WSK_QUERY_INSPECT_ID
-author: windows-driver-content
 description: SIO_WSK_QUERY_INSPECT_ID
 ms.assetid: 6fc3e5ea-61df-47fc-8f79-f9ae272b3544
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - SIO_WSK_QUERY_INSPECT_ID Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -71,12 +66,6 @@ To query the inspection identification data for a connection-oriented socket, a 
 </tbody>
 </table>
 
- 
-
-```
-
-```
-
 If a WSK application calls the **WskControlSocket** function to query the inspection identification data for any socket other than a connection-oriented socket that was accepted on a listening socket that has conditional accept mode enabled, the **WskControlSocket** function returns STATUS\_INVALID\_DEVICE\_REQUEST.
 
 For more information about conditionally accepting connections, see [Listening for and Accepting Incoming Connections](https://msdn.microsoft.com/library/windows/hardware/ff557059).
@@ -101,9 +90,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

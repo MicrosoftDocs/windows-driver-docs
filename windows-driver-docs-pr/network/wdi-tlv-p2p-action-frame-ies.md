@@ -1,13 +1,8 @@
 ---
 title: WDI_TLV_P2P_ACTION_FRAME_IES
-author: windows-driver-content
 description: WDI_TLV_P2P_ACTION_FRAME_IES is a TLV that contains action frame IEs.
 ms.assetid: 7F5DD866-AD7D-4E3E-B352-78FAE4AFD995
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_ACTION_FRAME_IES Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -35,7 +30,7 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 |-----------|----------------------------------------------------------------------------------------------|
 | UINT8\[\] | An array of UINT8 elements that specifies the set of IEs that are sent to the remote device. |
 
- 
+ 
 
 Requirements
 ------------
@@ -61,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

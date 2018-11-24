@@ -1,9 +1,9 @@
 ---
 title: Obsolete and Reserved Kernel Programming Interfaces
-author: windows-driver-content
 description: This section includes various obsolete and reserved programming interfaces.
 ms.assetid: B7805233-C1EB-4764-889E-2A6775389ADF
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Obsolete and Reserved Kernel Programming Interfaces
@@ -19,9 +19,9 @@ This section includes various obsolete and reserved programming interfaces. It i
 
 [Windows kernel run-time library obsolete routines](rtlenlargedintegermultiply.md)
 
- 
+ 
 
- 
+ 
 
 
 

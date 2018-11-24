@@ -5,11 +5,7 @@ ms.assetid: 2c588276-88c3-42e4-9f73-50a05e31c451
 keywords:
 - input buffers WDK DirectX VA
 - deinterlacing WDK DirectX VA , input buffer order
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +27,9 @@ The order of the surfaces within the **lpBufferInfo** array conforms to the foll
 
 -   The next sequence of surfaces in the array is the collection of video substream surfaces, which are in Z order.
 
- 
+ 
 
- 
+ 
 
 
 

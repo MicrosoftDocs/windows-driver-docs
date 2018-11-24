@@ -7,11 +7,7 @@ keywords:
 - states WDK Direct3D
 - internal states WDK Direct3D
 - public states WDK Direct3D
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,9 +19,9 @@ ms.localizationpriority: medium
 
 A driver updates its internal state associated with a context when its [**D3dDrawPrimitives2**](https://msdn.microsoft.com/library/windows/hardware/ff544704) callback is called. This callback must also return the updated context's public state to Direct3D.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,17 +1,12 @@
 ---
 title: Handling SRB_FUNCTION_ABORT_COMMAND
-author: windows-driver-content
 description: Handling SRB_FUNCTION_ABORT_COMMAND
 ms.assetid: 74d46df6-2e3e-45d8-bedb-a81a80a0aec1
 keywords:
 - SCSI miniport drivers WDK storage , HwScsiStartIo
 - HwScsiStartIo
 - SRB_FUNCTION_ABORT_COMMAND
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,9 +32,9 @@ Otherwise, the *HwScsiStartIo* routine does the following:
 
 2.  Programs the HBA to abort the given **NextSrb** request.
 
- 
+ 
 
- 
+ 
 
 
 

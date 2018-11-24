@@ -1,15 +1,10 @@
 ---
 title: OID_GEN_CO_LINK_SPEED
-author: windows-driver-content
 description: This topic describes the OID_GEN_CO_LINK_SPEED object identifier (OID).
 ms.assetid: a88ef1b9-b3f0-403e-8188-85aead46663f
 keywords:
 - OID_GEN_CO_LINK_SPEED
-ms.author: windowsdriverdev
 ms.date: 11/02/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

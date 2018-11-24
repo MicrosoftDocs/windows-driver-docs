@@ -2,11 +2,7 @@
 title: RunAs LowIL
 description: TAEF runs the test within a Low Integrity Level process.
 ms.assetid: 8FF26AB3-F473-4352-8951-D3F7DF366B5F
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -17,11 +13,11 @@ TAEF runs the test within a Low Integrity Level process.
 
 **Note**  
 
- 
+ 
 
 **Note**  On computers running versions of Windows older than Windows Vista, this option is not supported.
 
- 
+ 
 
 ## <span id="Specifying_RunAs_on_the_Command_Line_"></span><span id="specifying_runas_on_the_command_line_"></span><span id="SPECIFYING_RUNAS_ON_THE_COMMAND_LINE_"></span>Specifying RunAs on the Command Line
 
@@ -37,7 +33,7 @@ Test metadata can be used to specify the runas type of an assembly, class or tes
 
 **Note**  RunAs values specified in metadata override RunAs values specified on the command line. For example, a test marked with **runas:system** test metadata will still be run as Local System even if **/runas:elevated** is specified on the command line.
 
- 
+ 
 
 Example (native code)
 
@@ -57,9 +53,9 @@ class MyTests
 
 [RunAs](runas.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,13 +1,8 @@
 ---
 title: Overview of the universal sensor driver model
-author: windows-driver-content
 description: In Windows 10, the sensor driver stacks for Desktop and Mobile devices have been merged to create a universal sensor driver model.
 ms.assetid: 3591F4DD-2404-4893-88F3-1DC6A0CC3F0D
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 07/20/2018
 ms.localizationpriority: medium
 ---
 
@@ -21,7 +16,7 @@ Hardware partners can now build a single driver, along with its associated App, 
 >[!NOTE]
 > V1.0 UMDF sensor drivers are supported in Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), and KMDF sensor drivers are supported in Windows 10 Mobile.
 
- 
+ 
 
 Sensor device drivers that are developed based on the Universal Windows driver model, and they're implemented by using the latest version of the User Mode Driver Framework - UMDF 2.0.
 
@@ -50,9 +45,9 @@ The following diagram shows the components that make up the universal sensor dri
 
 Note that the Microsoft Store Apps component can consist of apps developed by Microsoft, or by the 3rd party developer to accompany the sensor.
 
- 
+ 
 
- 
+ 
 
 
 

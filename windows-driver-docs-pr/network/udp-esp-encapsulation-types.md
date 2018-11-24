@@ -5,11 +5,7 @@ ms.assetid: 126d2fd5-778e-43ff-87f6-5b0b54a83bac
 keywords:
 - UDP-encapsulated ESP packets WDK IPsec offload , encapsulation types and subtypes
 - encapsulation WDK UDP-ESP
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -52,9 +48,9 @@ The following figure shows the UDP-ESP encapsulation subtypes for port 4500.
 
 ![diagram illustrating the udp-esp encapsulation subtypes for port 4500](images/4500-encap-subtypes.png)
 
- 
+ 
 
- 
+ 
 
 
 

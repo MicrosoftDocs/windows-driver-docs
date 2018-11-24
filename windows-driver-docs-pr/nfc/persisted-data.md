@@ -1,6 +1,5 @@
 ---
 title: Persisted data
-author: windows-driver-content
 description: Data persistence is.
 ms.assetid: 61C3C55C-00DC-4A8C-B235-7C0391FB5119
 keywords:
@@ -9,11 +8,7 @@ keywords:
 - proximity
 - near field proximity
 - NFP
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -52,11 +47,11 @@ Data persistence for the registry location is described as follows.
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 ## Related topics
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [NFC class extension (CX) reference](https://msdn.microsoft.com/library/windows/hardware/dn905536)  

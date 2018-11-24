@@ -5,11 +5,7 @@ ms.assetid: 463a2434-7f3e-4960-a595-8ca2ccc21504
 keywords:
 - macroblocks WDK DirectX VA , motion vectors
 - motion vectors WDK DirectX VA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +25,9 @@ The space reserved for motion vectors in each macroblock control command structu
 
 -   If OBMC is not in use (the **bPicOBMC** member of the DXVA\_PictureParameters structure is zero), the picture is the B part of a PB picture (the **bPicBinPB** member of this structure is 1), and four motion vectors per macroblock are allowed (the **bPic4Mvallowed** member of this structure is 1), the space for five motion vectors, plus any additional space needed to align to a 16-byte boundary, is included.
 
- 
+ 
 
- 
+ 
 
 
 

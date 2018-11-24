@@ -6,11 +6,7 @@ keywords:
 - multiple textures WDK Direct3D , texture stages
 - texture stages WDK Direct3D
 - texture management WDK Direct3D , stages
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,9 +34,9 @@ The following operations, which are enumerated in D3DTEXTUREOP, are required for
 
 The default values are D3DTOP\_MODULATE for stage one, and D3DTOP\_DISABLE for all other stages. D3DTOP\_MODULATE is used for stage one for backward compatibility, but, by default, all texturing should be disabled.
 
- 
+ 
 
- 
+ 
 
 
 

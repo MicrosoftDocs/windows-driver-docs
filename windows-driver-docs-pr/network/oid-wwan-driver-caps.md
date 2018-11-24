@@ -1,13 +1,8 @@
 ---
 title: OID_WWAN_DRIVER_CAPS
-author: windows-driver-content
 description: OID_WWAN_DRIVER_CAPS returns the version of the MB driver model supported by the miniport driver.
 ms.assetid: 2310a341-6899-44ad-8dfb-a13fd0c42dcb
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_WWAN_DRIVER_CAPS Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -62,9 +57,9 @@ Requirements
 
 [**NDIS\_WWAN\_DRIVER\_CAPS**](https://msdn.microsoft.com/library/windows/hardware/ff567908)
 
- 
+ 
 
- 
+ 
 
 
 

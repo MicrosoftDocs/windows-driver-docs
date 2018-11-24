@@ -3,11 +3,7 @@ title: Loading Debugger Extension DLLs
 description: Loading Debugger Extension DLLs
 ms.assetid: 6ca70732-cbf6-44fd-a020-c297b40d41f6
 keywords: ["extension commands ( commands), loading", "loading extension commands", "nt4fre directory", "nt4chk directory", "w2kfre directory", "w2kchk directory", "winxp directory", "winext directory"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,7 +33,7 @@ There are several methods of loading debugger extension DLLs, as well as control
 
 -   Use the [**.chain (List Debugger Extensions)**](-chain--list-debugger-extensions-.md) command to display all loaded debugger extension modules, in their default search order.
 
-You can also load an extension DLL simply by using the full **!***module***.***extension* syntax the first time you issue a command from that module. See [Using Debugger Extension Commands](using-debugger-extension-commands.md) for details.
+You can also load an extension DLL simply by using the full **!**<em>module</em>**.**<em>extension</em> syntax the first time you issue a command from that module. See [Using Debugger Extension Commands](using-debugger-extension-commands.md) for details.
 
 The extension DLLs that you are using must match the operating system of the target computer. The extension DLLs that ship with the Debugging Tools for Windows package are each placed in a different subdirectory of the installation directory:
 
@@ -49,9 +45,9 @@ If you write your own debugger extensions, you can place them in any directory. 
 
 There can be as many as 32 extension DLLs loaded.
 
- 
+ 
 
- 
+ 
 
 
 

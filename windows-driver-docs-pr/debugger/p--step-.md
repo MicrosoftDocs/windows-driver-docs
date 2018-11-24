@@ -3,11 +3,7 @@ title: p (Step)
 description: The p command executes a single instruction or source line and optionally displays the resulting values of all registers and flags. 
 ms.assetid: 4ee24e76-b751-4346-80af-d481d9513ce0
 keywords: ["p (Step) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,13 +20,13 @@ The **p** command executes a single instruction or source line and optionally di
 
 User-Mode
 
-```
+```dbgcmd
 [~Thread] p[r] [= StartAddress] [Count] ["Command"] 
 ```
 
 Kernel-Mode
 
-```
+```dbgcmd
 p[r] [= StartAddress] [Count] ["Command"] 
 ```
 
@@ -77,7 +73,7 @@ Specifies a debugger command to execute after the step is performed. This comman
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -94,9 +90,9 @@ Each step executes a single assembly instruction or a single source line, depend
 
 When you are quickly stepping many times in WinDbg, the debugging information windows are updated after each step. If this update causes slower response time, use [**.suspend\_ui (Suspend WinDbg Interface)**](-suspend-ui--suspend-windbg-interface-.md) to temporarily suspend the refreshing of these windows.
 
- 
+ 
 
- 
+ 
 
 
 

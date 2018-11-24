@@ -3,11 +3,7 @@ title: Using UMDH to Find a User-Mode Memory Leak
 description: Using UMDH to Find a User-Mode Memory Leak
 ms.assetid: b15ed695-3f35-4a72-93ab-3cbfd2e33980
 keywords: ["memory leak, user-mode, UMDH", "UMDH, memory leak detection"]
-ms.author: domars
-ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 08/16/2018
 ms.localizationpriority: medium
 ---
 
@@ -32,9 +28,15 @@ The following GFlags settings enable UMDH stack traces:
 
     Or, equivalently, use the following GFlags command line, where *ImageName* is the process name (including the file name extension):
 
-    ```
+    ```dbgcmd
     gflags /i ImageName +ust 
     ```
+    Use this command to clear the GFlag settings once you are done. For more information, see [GFlags Commands](gflags-commands.md).
+
+    ```dbgcmd
+    gflags /i ImageName -ust 
+    ```
+    
 
 -   By default, the amount of stack trace data that Windows gathers is limited to 32 MB on an x86 processor, and 64 MB on an x64 processor. If you must increase the size of this database, choose the **Image File** tab in the GFlags graphical interface, type the process name, press the TAB key, check the **Stack Backtrace (Megs)** check box, type a value (in MB) in the associated text box, and then click **Apply**. Increase this database only when necessary, because it may deplete limited Windows resources. When you no longer need the larger size, return this setting to its original value.
 
@@ -44,7 +46,7 @@ Before using UMDH, you must have access to the proper symbols for your applicati
 
 For example, if the symbols for your application are located at C:\\MySymbols, and you want to use the public Microsoft symbol store for your Windows symbols, using C:\\MyCache as your downstream store, you would use the following command to set your symbol path:
 
-```
+```console
 set _NT_SYMBOL_PATH=c:\mysymbols;srv*c:\mycache*https://msdl.microsoft.com/download/symbols 
 ```
 
@@ -52,7 +54,7 @@ In addition, to assure accurate results, you must disable BSTR caching. To do th
 
 If you need to trace the allocations made by a service, you must set OANOCACHE as a system environment variable and then restart Windows for this setting to take effect.
 
-On Windows 2000, in addition to setting OANOCACHE equal to 1, you must also install the hotfix available with [Microsoft Support Article 139071](http://go.microsoft.com/fwlink/p/?LinkId=241583). This hotfix is not needed on Windows XP and later versions of Windows.
+On Windows 2000, in addition to setting OANOCACHE equal to 1, you must also install the hotfix available with [Microsoft Support Article 139071](https://go.microsoft.com/fwlink/p/?LinkId=241583). This hotfix is not needed on Windows XP and later versions of Windows.
 
 ### <span id="detecting_increases_in_heap_allocations_with_umdh"></span><span id="DETECTING_INCREASES_IN_HEAP_ALLOCATIONS_WITH_UMDH"></span>Detecting Increases in Heap Allocations with UMDH
 
@@ -62,9 +64,9 @@ After making these preparations, you can use UMDH to capture information about t
 
 2.  Use UMDH to analyze the heap memory allocations for this process, and save it to a log file. Use the -p switch with the PID, and the -f switch with the name of the log file. For example, if the PID is 124, and you want to name the log file Log1.txt, use the following command:
 
-    ```
+    ```console
     umdh -p:124 -f:log1.txt 
-    ```
+    ```dbgcmd
 
 3.  Use Notepad or another program to open the log file. This file contains the call stack for each heap allocation, the number of allocations made through that call stack, and the number of bytes consumed through that call stack.
 
@@ -72,13 +74,13 @@ After making these preparations, you can use UMDH to capture information about t
 
     UMDH can compare two different log files and display the change in their respective allocation sizes. You can use the greater-than symbol (**&gt;**) to redirect the results into a third text file. You may also want to include the -d option, which converts the byte and allocation counts from hexadecimal to decimal. For example, to compare Log1.txt and Log2.txt, saving the results of the comparison to the file LogCompare.txt, use the following command:
 
-    ```
+    ```console
     umdh log1.txt log2.txt > logcompare.txt 
     ```
 
 5.  Open the LogCompare.txt file. Its contents resemble the following:
 
-    ```
+    ```text
     + 5320 ( f110 - 9df0) 3a allocs BackTrace00B53 
     Total increase == 5320 
     ```
@@ -87,7 +89,7 @@ After making these preparations, you can use UMDH to capture information about t
 
 6.  To determine what is in that backtrace, open one of the original log files (for example, Log2.txt) and search for "BackTrace00B53." The results are similar to this data:
 
-    ```
+    ```text
     00005320 bytes in 0x14 allocations (@ 0x00000428) by: BackTrace00B53
     ntdll!RtlDebugAllocateHeap+0x000000FD
     ntdll!RtlAllocateHeapSlowly+0x0000005A
@@ -109,9 +111,9 @@ After making these preparations, you can use UMDH to capture information about t
 
     Determine which of these calls is the last one to explicitly appear in your source code. In this case, it is probably the **new** operator because the call to *malloc* occurred as part of the implementation of **new** rather than as a separate allocation. So this instance of the **new** operator in the **DisplayMyGraphics** routine is repeatedly allocating memory that is not being freed.
 
- 
+ 
 
- 
+ 
 
 
 

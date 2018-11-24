@@ -4,11 +4,7 @@ description: DirectSound Stream Data Format
 ms.assetid: 41d3d5ad-7336-4ecf-b6e2-a24ee4ec731f
 keywords:
 - DirectSound WDK audio , stream data formats
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,7 +16,7 @@ ms.localizationpriority: medium
 
 This example uses a [**KSDATAFORMAT\_DSOUND**](https://msdn.microsoft.com/library/windows/hardware/ff537094) structure to describe the data format of a DirectSound stream.
 
-```
+```cpp
   DataFormat.FormatSize  = sizeof(KSDATAFORMAT_DSOUND);
  DataFormat.Flags       = 0;
   DataFormat.SampleSize  = 0;
@@ -39,9 +35,9 @@ This example uses a [**KSDATAFORMAT\_DSOUND**](https://msdn.microsoft.com/librar
   BufferDesc.WaveFormatEx.cbSize          = 0;
 ```
 
- 
+ 
 
- 
+ 
 
 
 

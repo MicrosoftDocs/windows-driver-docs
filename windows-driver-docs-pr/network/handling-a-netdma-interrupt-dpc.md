@@ -5,11 +5,7 @@ ms.assetid: 92da9324-5bc2-4a19-9c27-811cd7ad4572
 keywords:
 - interrupts WDK NetDMA , DPC
 - DPCs WDK NetDMA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -18,7 +14,7 @@ ms.localizationpriority: medium
 
 **Note**  The NetDMA interface is not supported in Windows 8 and later.
 
- 
+ 
 
 
 
@@ -27,9 +23,9 @@ Dynamic memory access (DMA) providers call the [**NetDmaInterruptDpc**](https://
 
 The NetDMA provider driver passes the physical address of the last completed DMA descriptor at the *DmaDescriptor* parameter of **NetDmaInterruptDpc**. If the NetDMA provider calls **NetDmaInterruptDpc** when there is an error, the NetDMA provider sets*DmaDescriptor* to **NULL**.
 
- 
+ 
 
- 
+ 
 
 
 

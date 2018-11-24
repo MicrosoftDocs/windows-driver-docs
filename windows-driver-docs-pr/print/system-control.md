@@ -1,16 +1,11 @@
 ---
 title: System Control
-author: windows-driver-content
 description: System Control
 ms.assetid: 3ac58d53-daa7-4f50-a512-05325b95a17d
 keywords:
 - system-controlled color management WDK print
 - default print color management
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,9 +19,9 @@ System-controlled color management is the default color management type. It is a
 
 No ICM-specific code needs to be added to a printer driver to support system-control color management, other than indicating support for CYMK color space (if appropriate), as described in [Supporting CMYK Color Space](supporting-cmyk-color-space.md).
 
- 
+ 
 
- 
+ 
 
 
 

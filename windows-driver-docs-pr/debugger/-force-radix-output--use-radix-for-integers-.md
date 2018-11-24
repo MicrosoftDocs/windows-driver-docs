@@ -3,11 +3,7 @@ title: .force_radix_output (Use Radix for Integers)
 description: The .force_radix_output command specifies whether integers are displayed in decimal format or in the default radix.
 ms.assetid: 9ce79919-69fd-426f-8de1-34d0721c35a5
 keywords: ["Use Radix for Integers (.force_radix_output) command", ".force_radix_output (Use Radix for Integers) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **.force\_radix\_output** command specifies whether integers are displayed in decimal format or in the default radix.
 
-```
+```dbgcmd
 .force_radix_output 0 
 .force_radix_output 1 
 ```
@@ -59,7 +55,7 @@ Displays all integers (except for long integers) in the default radix.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -72,9 +68,9 @@ The **.force\_radix\_output** command affects only the display of standard integ
 
 To change the default radix, use the [**n (Set Number Base)**](n--set-number-base-.md) command.
 
- 
+ 
 
- 
+ 
 
 
 

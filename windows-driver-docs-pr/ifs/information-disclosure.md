@@ -1,6 +1,5 @@
 ---
 title: Information Disclosure
-author: windows-driver-content
 description: Information Disclosure
 ms.assetid: e5794acb-44f7-4775-854b-69884f60658a
 keywords:
@@ -10,11 +9,7 @@ keywords:
 - I/O WDK file systems
 - buffers WDK file systems
 - disclosure WDK file systems
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,9 +37,9 @@ For a file system or file system filter driver, there is the added risk of discl
 
 Because of their unique role in managing and protecting information, file systems and file system filter drivers must be particularly vigilant in ensuring their protection of information.
 
- 
+ 
 
- 
+ 
 
 
 

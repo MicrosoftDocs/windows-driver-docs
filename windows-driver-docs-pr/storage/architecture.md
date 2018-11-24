@@ -1,20 +1,15 @@
 ---
 title: Architecture
-author: windows-driver-content
 description: Architecture
 ms.assetid: 6a50cba8-f989-4662-8e1d-2df462cb48d9
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # Architecture
 
 
-Before ldiscussing the enumeration and discovery process for 1667-compatible mass storage devices, it is helpful to understand the process as it existed previously for legacy USB Mass Storage devices.
+Before discussing the enumeration and discovery process for 1667-compatible mass storage devices, it is helpful to understand the process as it existed previously for legacy USB Mass Storage devices.
 
 When a USB mass storage device is connected to a Windows XP or Vista host system, the kernel-mode driver USBStor is installed and loaded. This driver creates a number of disk Physical Device Objects (PDOs) equal to the number of logical units (LUNs) present on the device. Figure 1 illustrates the driver stack for a single LUN USB flash device (UFD).
 
@@ -38,13 +33,13 @@ One major difference between a legacy and 1667 mass storage device is that prior
 
 Therefore, in order to avoid confusing error dialogs and cryptic application errors, presentation of the volume to the system is completely suspended until authorized access to the corresponding ACT has been granted via 1667 authentication.
 
-In Figure 1, USBStor creates a new PDO for each type of silo present on a given ACT. In the figure, both password and a certificate authentication silos appear. Each silo receives a unique PDO upon which the corresponding silo driver is loaded. The user mode authorization process creates a handle to the silo PDO to communicate with the device for the purpose of authentication. At this point the device does not yet enumerate a volume to the system;therefore, there is no confusion regarding an inaccessible storage target. Only the 1667 silos are accessible, and these function to bring the device into a state in which the underlying user data for the ACT user may be accessed. For simplicity and clarity a device with a single ACT is shown, but the same principle applies when there are multiple ACTs on a device.
+In Figure 1, USBStor creates a new PDO for each type of silo present on a given ACT. In the figure, both password and a certificate authentication silos appear. Each silo receives a unique PDO upon which the corresponding silo driver is loaded. The user mode authorization process creates a handle to the silo PDO to communicate with the device for the purpose of authentication. At this point the device does not yet enumerate a volume to the system; therefore, there is no confusion regarding an inaccessible storage target. Only the 1667 silos are accessible, and these function to bring the device into a state in which the underlying user data for the ACT user may be accessed. For simplicity and clarity, a device with a single ACT is shown, but the same principle applies when there are multiple ACTs on a device.
 
 Figures 2 and 3 show the two steps that occur from the time that a 1667 UFD is first connected to the point where the ACT is authenticated and a corresponding volume is presented to the system.
 
 ![figure 2: (step 1) volume does not appear yet. only authentication silos are visible.](images/enhancedstorage-2.png)
 
-The creation of the disk PDO has been delayed until the ACT has entered the access authorized state. After authentication completes successfully and access has been granted, a follow-up IOCTL to USBStor signals this authorization state change. USBStor in turn creates the disk PDO, and on top of this disk PDO the volume and file system driver stack is instantiated. It is through this volume that the ACT data is made accessible to the system.
+The creation of the disk PDO has been delayed until the ACT has entered the access authorized state. After authentication completes successfully and access has been granted, a follow-up IOCTL to USBStor signals this authorization state change. USBStor, in turn, creates the disk PDO, and on top of this disk PDO, the volume and file system driver stack is instantiated. It is through this volume that the ACT data is made accessible to the system.
 
 ![figure 3: (step 2) access is granted. disk pdo and volume appear.](images/enhancedstorage-3.png)
 
@@ -103,16 +98,8 @@ The advantages and disadvantages of using a silo driver versus leaving the silo 
 </tbody>
 </table>
 
- 
+ 
 
-These considerations may inform the vendor's decision about whether to deploy a silo driver for their particular silo. In some cases, remaining with driverless, raw silo access is sufficient for a single client application that has detailedknowledge of the operation of that silo. To make this approach suitable, vendors must also ensure that simultaneous access from multiple applications does not pose a problem for their devices.
+These considerations may inform the vendor's decision about whether to deploy a silo driver for their particular silo. In some cases, remaining with driverless, raw silo access is sufficient for a single client application that has detailed knowledge of the operation of that silo. To make this approach suitable, vendors must also ensure that simultaneous access from multiple applications does not pose a problem for their devices.
 
 In other cases, vendors may want to provide more restricted access to the silo. If so, a more extensive translation and verification layer is required. Another vendor requirement is to provide custom actions on the context menu for the shell drive folder icon corresponding to the drive volume. For these reasons, vendors may choose to deploy a silo driver to provide access to the proprietary silo on their device.
-
- 
-
- 
-
-
-
-

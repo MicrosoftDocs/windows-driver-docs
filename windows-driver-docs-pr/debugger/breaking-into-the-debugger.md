@@ -3,11 +3,7 @@ title: Breaking Into the Debugger
 description: Breaking Into the Debugger
 ms.assetid: 4fec7170-7480-4a8a-b060-1c8a8c3fb9dc
 keywords: ["breaking into the debugger", "DebugBreak function", "DbgBreakPoint function", "KdBreakPoint function", "DbgBreakPointWithStatus function", "KdBreakPointWithStatus function", "ASSERT macro", "ASSERTMSG macro"]
-ms.author: domars
-ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 08/16/2017
 ms.localizationpriority: medium
 ---
 
@@ -16,14 +12,13 @@ ms.localizationpriority: medium
 
 ## <span id="ddk_breaking_into_the_debugger_dbg"></span><span id="DDK_BREAKING_INTO_THE_DEBUGGER_DBG"></span>
 
-
 User-mode and kernel-mode code use different routines to break into the debugger.
 
 ### <span id="user_mode_break_routines"></span><span id="USER_MODE_BREAK_ROUTINES"></span>User-Mode Break Routines
 
 A break routine causes an exception to occur in the current process, so that the calling thread can signal the debugger associated with the calling process.
 
-To break into a debugger from a user-mode program, use the **DebugBreak** routine. For complete documentation of this routine, see the Microsoft Windows SDK.
+To break into a debugger from a user-mode program, use the [DebugBreak function](https://msdn.microsoft.com/library/windows/desktop/ms679297(v=vs.85).aspx). 
 
 When a user-mode program calls **DebugBreak**, the following possible actions will occur:
 
@@ -55,9 +50,9 @@ The **ASSERT** macro causes the debugger to display the failed expression and it
 
 For complete documentation of these routines, as well as the build environment, see the Windows Driver Kit.
 
- 
+ 
 
- 
+ 
 
 
 

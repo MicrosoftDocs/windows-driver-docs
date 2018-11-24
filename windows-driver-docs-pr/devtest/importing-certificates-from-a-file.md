@@ -2,11 +2,7 @@
 title: Importing Certificates from a File
 description: Importing Certificates from a File
 ms.assetid: 17596119-6b31-4a69-b83c-cec1dfd55572
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ You can create this file by using one of the following methods:
 
 For more information about how to import a certificate from a file to an IEEE 1667-compliant USB storage device, see the **-File** parameter of the [**/Add**](enhstor-add-switch.md) and [**/Replace**](-replace-switch.md) switches of the Enhanced Storage Certificate Management tool.
 
- 
+ 
 
- 
+ 
 
 
 

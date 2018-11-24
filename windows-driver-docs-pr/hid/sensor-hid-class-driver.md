@@ -1,6 +1,5 @@
 ---
 title: Sensor HID class driver
-author: windows-driver-content
 description: Windows operating system includes an in-box sensor HID Class driver (SensorsHIDClassDriver.dll).
 ms.assetid: F43958F0-5AFD-40E9-A583-FAA25F8C1B7D
 keywords:
@@ -12,11 +11,7 @@ keywords:
 - sensors driver, sample
 - Windows 8 sensors driver
 - sensors driver, Windows 8
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -161,9 +156,9 @@ The following code example shows the HID input report for the same device. Again
     HID_INPUT(Data_Var_Abs),
 ```
 
- 
+ 
 
- 
+ 
 
 
 

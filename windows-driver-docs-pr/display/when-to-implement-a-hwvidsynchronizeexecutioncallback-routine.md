@@ -6,11 +6,7 @@ keywords:
 - video miniport drivers WDK Windows 2000 , interrupts
 - interrupts WDK video miniport
 - HwVidSynchronizeExecutionCallback
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,9 +38,9 @@ In general, a miniport driver should *not* call **VideoPortSynchronizeExecution*
 
 A *HwVidSynchronizeExecutionCallback* function, like a *HwVidInterrupt* function, cannot be pageable and cannot call certain **VideoPort***Xxx* functions without bringing down the system. For a summary of **VideoPort***Xxx* functions that the *HwVidSynchronizeExecutionCallback* function can call safely, see [*HwVidInterrupt*](https://msdn.microsoft.com/library/windows/hardware/ff567349).
 
- 
+ 
 
- 
+ 
 
 
 

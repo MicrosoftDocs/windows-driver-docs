@@ -1,13 +1,8 @@
 ---
 title: Porting I/O Dispatch Routines to I/O Event Callback Functions
-author: windows-driver-content
 description: Porting I/O Dispatch Routines to I/O Event Callback Functions
 ms.assetid: 0BD65185-C358-4E28-8E31-255AF8D77F93
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -90,9 +85,9 @@ To get the buffers themselves, the driver calls one of the following methods:
 -   [**WdfRequestRetrieveInputBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff550014), which returns the **Parameters.DeviceIoControl.Type3InputBuffer** field of the IRP.
 -   [**WdfRequestRetrieveOutputBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff550018), which returns the **UserBuffer** field of the IRP.
 
- 
+ 
 
- 
+ 
 
 
 

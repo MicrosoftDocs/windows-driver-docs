@@ -1,6 +1,5 @@
 ---
 title: Writing a PCL XL GPD File
-author: windows-driver-content
 description: Writing a PCL XL GPD File
 ms.assetid: 35abc33a-a046-452b-b650-5c4f626bf6cb
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - GPD files WDK Unidrv , PCL XL
 - command ordering WDK PCL XL
 - writing PCL XL GPD files
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,7 +37,7 @@ In addition to the preceding files, include the standard GPD files, stdnames.gpd
 
 The following example shows how these files would be included in a GPD file.
 
-```
+```cpp
 *Include: stdnames.gpd
 *Include: ttfsub.gpd
 *Include: pclxl.gpd
@@ -55,7 +50,7 @@ The following example shows how these files would be included in a GPD file.
 
 To enable PCL XL vector support, you only need to set the \*Personality attribute. This is done in the following way:
 
-```
+```cpp
 *Personality: = PERSONALITY_PCLXL
 ```
 
@@ -69,7 +64,7 @@ The order of the commands is more critical in PCL XL than in PCL-5. A small erro
 
 A PCL XL stream has a form similar to the following. (The indentation shown is used only to emphasize the point that these operators come in pairs.)
 
-```
+```cpp
 PJL commands
 BeginSession
   OpenDataSource
@@ -93,9 +88,9 @@ An IHV can lessen printer memory usage by limiting the number of fonts to be dow
 
 Unidrv operates under the assumption that each GPD file contains its own dither matrix. It is also recommended that each device have its own dither matrix. The dither matrix is specified in a \*Feature: Dither [customized feature](customized-features.md).
 
- 
+ 
 
- 
+ 
 
 
 

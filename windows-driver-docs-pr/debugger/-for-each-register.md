@@ -3,11 +3,7 @@ title: for_each_register
 description: The for_each_register extension executes a specified command for each register.
 ms.assetid: 496DC161-D082-4C83-A6B6-6BBCE932BE76
 keywords: ["for_each_register Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!for\_each\_register** extension executes a specified command for each register.
 
-```
+```dbgcmd
 !for_each_register -c:CommandString
 !for_each_register -?
 ```
@@ -30,7 +26,7 @@ The **!for\_each\_register** extension executes a specified command for each reg
 ## <span id="ddk__for_each_module_dbg"></span><span id="DDK__FOR_EACH_MODULE_DBG"></span>Parameters
 
 
-<span id="_______-c_CommandString______"></span><span id="_______-c_commandstring______"></span><span id="_______-C_COMMANDSTRING______"></span> **-c:***CommandString*   
+<span id="_______-c_CommandString______"></span><span id="_______-c_commandstring______"></span><span id="_______-C_COMMANDSTRING______"></span> **-c:**<em>CommandString</em>   
 Specifies the command to be executed for each register. The aliases @\#RegisterName and @\#RegisterValue are valid during the execution of the command.
 
 <span id="_______-_______"></span> **-?**   
@@ -46,7 +42,7 @@ Ext.dll
 
 This example lists the name of each register.
 
-```
+```dbgcmd
 0:000> !for_each_register -c:.echo @#RegisterName
 rax
 rcx
@@ -57,7 +53,7 @@ rbx
 
 This example executes [**!address**](-address.md) for each register value.
 
-```
+```dbgcmd
 0:000> !for_each_register -c:!address ${@#RegisterValue}
 ...
 Usage:                  Stack
@@ -80,9 +76,9 @@ When an alias is an argument to a debugger extension (for example, [**!address**
 
 For more information about how to define and use aliases as shortcuts for entering character strings (including use of the [**${}**](-------alias-interpreter-.md) token), see [Using Aliases](using-aliases.md).
 
- 
+ 
 
- 
+ 
 
 
 

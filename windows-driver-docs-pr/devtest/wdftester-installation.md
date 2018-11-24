@@ -2,11 +2,7 @@
 title: WdfTester Installation
 description: WdfTester Installation
 ms.assetid: 39645ca4-3f4e-4a1f-bf62-7b44856ce58e
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +25,9 @@ Before you can run the WdfTester tool on your driver, you must first copy the Wd
 
 3.  Press Enter.
 
- 
+ 
 
- 
+ 
 
 
 

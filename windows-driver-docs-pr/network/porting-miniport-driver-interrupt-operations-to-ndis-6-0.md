@@ -9,11 +9,7 @@ keywords:
 - message-signaled interrupts WDK networking , porting
 - MSIs WDK networking , porting operations
 - porting miniport driv
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,9 +33,9 @@ Additional information about porting interrupt operations is included in the fol
 
 [Supporting Message Signaled Interrupts in NDIS 6.0](supporting-message-signaled-interrupts-in-ndis-6-0.md)
 
- 
+ 
 
- 
+ 
 
 
 

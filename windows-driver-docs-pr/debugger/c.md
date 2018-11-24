@@ -3,11 +3,7 @@ title: C (Windows Debugger Glossary)
 description: Glossary page - C
 Robots: noindex, nofollow
 ms.assetid: 295b05a3-e27f-4761-a562-7e87e25bfd3b
-ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -67,9 +63,9 @@ The target that the debugger engine is currently controlling. When an event occu
 <span id="current_thread"></span><span id="CURRENT_THREAD"></span>**current thread**  
 The thread that the debugger engine is currently controlling. When an event occurs, the current thread is set to the event thread.
 
- 
+ 
 
- 
+ 
 
 
 

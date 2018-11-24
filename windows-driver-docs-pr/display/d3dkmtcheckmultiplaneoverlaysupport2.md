@@ -13,11 +13,7 @@ api_location:
 - API-MS-Win-DX-D3DKMT-L1-1-2.dll
 api_type:
 - DllExport
-ms.author: windowsdriverdev
 ms.date: 01/05/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -51,7 +47,7 @@ Requirements
 <tbody>
 <tr class="odd">
 <td align="left"><p>Target platform</p></td>
-<td align="left">[Universal](http://go.microsoft.com/fwlink/p/?linkid=531356)</td>
+<td align="left">Universal</td>
 </tr>
 <tr class="even">
 <td align="left"><p>Header</p></td>
@@ -68,9 +64,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,11 +3,7 @@ title: ecb, ecd, ecw
 description: The ecb, ecd, and ecw extensions write to the PCI configuration space.
 ms.assetid: ab5f5164-7666-48ac-aeba-5f238c2625f6
 keywords: ["ecb, ecd, ecw Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!ecb**, **!ecd**, and **!ecw** extensions write to the PCI configuration space.
 
-```
+```dbgcmd
 !ec Bus.Device.Function Offset Data 
 ```
 
@@ -63,7 +59,7 @@ Specifies the value to be written. For the **!ecb** extension, *Data* must be 1 
 </tbody>
 </table>
 
- 
+ 
 
 These extension commands can only be used with an x86-based target computer.
 
@@ -78,9 +74,9 @@ You cannot use these extension commands to write a sequence of *Data* values. Th
 
 To display the PCI configuration space, use [**!pci 100**](-pci.md)*Bus Device Function*.
 
- 
+ 
 
- 
+ 
 
 
 

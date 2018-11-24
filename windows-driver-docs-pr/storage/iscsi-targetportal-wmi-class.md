@@ -3,6 +3,7 @@ title: ISCSI\_TargetPortal WMI Class
 description: ISCSI\_TargetPortal WMI Class
 ms.assetid: b163b2e7-8f12-4cd2-a682-7b755f28792e
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # ISCSI\_TargetPortal WMI Class
@@ -15,7 +16,7 @@ The ISCSI\_TargetPortal class defines a target portal. This definition includes 
 
 This class is defined as follows in *Common.mof*.
 
-```
+```cpp
 class ISCSI_TargetPortal {
   [WmiDataId(1), Description("Network Address") : amended]
     ISCSI_IP_Address  Address;
@@ -26,9 +27,9 @@ class ISCSI_TargetPortal {
 
 When the WMI tool suite compiles the preceding class definition, it produces the [**ISCSI\_TargetPortal**](https://msdn.microsoft.com/library/windows/hardware/ff561574) data structure.
 
- 
+ 
 
- 
+ 
 
 
 

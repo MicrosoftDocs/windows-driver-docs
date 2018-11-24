@@ -2,11 +2,7 @@
 title: Film Configuration Elements
 description: Film Configuration Elements
 ms.assetid: bb7329c6-a987-4cf8-a5cd-c1da9cd5095b
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +29,9 @@ The schema contains the following film configuration elements:
 
 [**FilmScanModeValue**](filmscanmodevalue.md)
 
- 
+ 
 
- 
+ 
 
 
 

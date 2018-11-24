@@ -3,11 +3,7 @@ title: rpcexts.rpctime
 description: The rpcexts.rpctime extension displays the current system time.
 ms.assetid: 72d54357-6b16-4d53-9909-ba201bb33519
 keywords: ["rpcexts.rpctime Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!rpcexts.rpctime** extension displays the current system time.
 
-```
+```dbgcmd
 !rpcexts.rpctime 
 ```
 
@@ -48,7 +44,7 @@ The **!rpcexts.rpctime** extension displays the current system time.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -57,14 +53,14 @@ This extension can only be used with CDB or with user-mode WinDbg.
 
 Here is an example:
 
-```
+```dbgcmd
 0:001> !rpcexts.rpctime
 Current time is: 059931.126  (0x00ea1b.07e)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

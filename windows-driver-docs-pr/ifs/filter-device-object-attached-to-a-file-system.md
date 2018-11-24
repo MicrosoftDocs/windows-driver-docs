@@ -1,6 +1,5 @@
 ---
 title: Filter Device Object Attached to a File System
-author: windows-driver-content
 description: Filter Device Object Attached to a File System
 ms.assetid: 5fb0ec43-a639-4b2a-8057-3313e9dee457
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - device object I/O requests WDK file system
 - filter drivers WDK file system , device object I/O requests
 - file system filter drivers WDK , device object I/O requests
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -44,9 +39,9 @@ If the file system supports opening handles to its control device object, filter
 
 File system filter device objects attached to file systems are required to pass all unrecognized or unwanted IRPs to the next-lower driver on the driver stack by default.
 
- 
+ 
 
- 
+ 
 
 
 

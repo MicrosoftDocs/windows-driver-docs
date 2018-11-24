@@ -1,14 +1,9 @@
 ---
 title: Failure to Validate Variable-Length Buffers
-author: windows-driver-content
 description: Failure to Validate Variable-Length Buffers
 ms.assetid: 0cc4be22-8197-421a-a5a6-2e7b89a79a38
 keywords: ["input buffers WDK kernel", "variable-length input buffers WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,7 +15,7 @@ ms.localizationpriority: medium
 
 Drivers often accept input buffers with fixed headers and trailing variable length data, as in the following example:
 
-```
+```cpp
    typedef struct _WAIT_FOR_BUFFER {
       LARGE_INTEGER Timeout;
       ULONG NameLength;
@@ -44,7 +39,7 @@ Drivers often accept input buffers with fixed headers and trailing variable leng
 
 If **WaitBuffer-&gt;NameLength** is a very large ULONG value, adding it to the offset could cause an integer overflow. Instead, a driver should subtract the offset from the **InputBufferLength**, and compare the result with **WaitBuffer-&gt;NameLength**, as in the following example:
 
-```
+```cpp
    if (InputBufferLength < sizeof(WAIT_FOR_BUFFER)) {
       IoCompleteRequest( Irp, STATUS_INVALID_PARAMETER );
       Return( STATUS_INVALID_PARAMETER );
@@ -64,7 +59,7 @@ The subtraction above cannot underflow because the first **if** statement ensure
 
 The following shows a more complicated overflow problem:
 
-```
+```cpp
    case IOCTL_SET_VALUE:
       dwSize = sizeof(SET_VALUE);
 
@@ -84,9 +79,9 @@ The following shows a more complicated overflow problem:
 
 In this example, an integer overflow can occur during multiplication. If the size of the **SET\_VALUE\_INFO** structure is a multiple of 2, a **NumEntries** value such as 0x80000000 results in an overflow, when the bits are shifted left during multiplication. However, the buffer size will nevertheless pass the validation test, because the overflow causes **dwSize** to appear quite small. To avoid this problem, subtract the lengths as in the previous example, divide by **sizeof**(**SET\_VALUE\_INFO**), and compare the result with **NumEntries**.
 
- 
+ 
 
- 
+ 
 
 
 

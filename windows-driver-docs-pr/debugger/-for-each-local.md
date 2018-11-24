@@ -3,11 +3,7 @@ title: for_each_local
 description: The for_each_local extension executes a debugger command one time for each local variable in the current frame.
 ms.assetid: 2b1d65e6-6322-404e-a94b-90a46035fe9e
 keywords: ["for_each_local Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!for\_each\_local** extension executes a debugger command one time for each local variable in the current frame.
 
-```
+```dbgcmd
 !for_each_local ["CommandString"] 
 !for_each_local -? 
 ```
@@ -59,7 +55,7 @@ Displays some Help text for this extension in the [Debugger Command window](debu
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -72,9 +68,9 @@ If you do not specify any arguments, the **!for\_each\_local** extension lists l
 
 If you enable verbose debugger output, the display includes the total number of local variables when the extension is called, and every time that *CommandString* is executed for a local variable, that variable and the text of *CommandString* are echoed.
 
- 
+ 
 
- 
+ 
 
 
 

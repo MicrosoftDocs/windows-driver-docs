@@ -2,11 +2,7 @@
 title: Ending a Debugging Session in KD
 description: Ending a Debugging Session in KD
 ms.assetid: 6CD39971-424D-4F29-9A36-CCD14187DEB0
-ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,7 +15,7 @@ There are two different ways to exit KD.
 
 -   Press [**CTRL+B**](ctrl-b--quit-local-debugger-.md) and then press ENTER to end the debugger abruptly. If you want the target computer to continue to run after the debugger is ended, you must use this method. Because CTRL+B does not remove breakpoints, you should use the following commands first.
 
-    ```
+    ```dbgcmd
     kd>  bc *
     kd>  g
     ```
@@ -30,9 +26,9 @@ When you are performing remote debugging, [**q**](q--qq--quit-.md) ends the debu
 
 If the [**q (Quit)**](q--qq--quit-.md) command does not work, press [**CTRL+R**](ctrl-r--re-synchronize-.md) and then press ENTER on the host computer's keyboard, and then retry the **q** command. If this procedure does not work, you must use CTRL+B to exit the debugger.
 
- 
+ 
 
- 
+ 
 
 
 

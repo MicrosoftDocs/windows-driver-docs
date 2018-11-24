@@ -11,11 +11,7 @@ keywords:
 - CCD concepts WDK Windows Server 2008 R2 display , SetDisplayConfig
 - SetDisplayConfig WDK Windows 7 display
 - SetDisplayConfig WDK Windows Server 2008 R2 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -60,9 +56,9 @@ The caller can use [**SetDisplayConfig**](https://msdn.microsoft.com/library/win
 
 -   The display control panel applet calls [**SetDisplayConfig**](https://msdn.microsoft.com/library/windows/hardware/ff569533) to start or stop forced projection on a particular target.
 
- 
+ 
 
- 
+ 
 
 
 

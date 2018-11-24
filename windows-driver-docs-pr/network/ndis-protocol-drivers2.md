@@ -6,11 +6,7 @@ keywords:
 - protocol drivers WDK networking , architecture
 - NDIS protocol drivers WDK , architecture
 - transport protocol drivers WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +29,9 @@ At its upper edge, a transport protocol driver has a private interface to a high
 
 [NDIS Protocol Driver Reference](https://msdn.microsoft.com/library/windows/hardware/ff566829)
 
- 
+ 
 
- 
+ 
 
 
 

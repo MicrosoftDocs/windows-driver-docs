@@ -3,11 +3,7 @@ title: CTRL+B (Quit Local Debugger)
 description: The CTRL+B key causes the debugger to terminate abruptly. This does not end a remote debugging session.
 ms.assetid: f70f4c40-244f-4abf-982f-d738800ac621
 keywords: ["CTRL+B (Quit Local Debugger) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The CTRL+B key causes the debugger to terminate abruptly. This does not end a remote debugging session.
 
-```
+```dbgcmd
 CTRL+B  ENTER 
 ```
 
@@ -56,7 +52,7 @@ CTRL+B  ENTER
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -67,9 +63,9 @@ In KD, the **q** command will end the debugging session and leave the target com
 
 In WinDbg, the equivalent command is [File | Exit](file---exit.md) or ALT+F4.
 
- 
+ 
 
- 
+ 
 
 
 

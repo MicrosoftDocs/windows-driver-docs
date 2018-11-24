@@ -7,11 +7,7 @@ keywords:
 - high order surfaces WDK DirectX 8.0 , DP2 stream drawing tokens
 - DP2 stream drawing tokens WDK DirectX 8.0
 - DP2 stream drawing tokens WDK DirectX 8.0 , high order surfaces
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,9 +19,9 @@ ms.localizationpriority: medium
 
 The D3DDP2OP\_DRAWRECTPATCH token is sent to the driver to draw a rectangular patch. The D3DDP2OP\_DRAWTRIPATCH token is sent to the driver to draw a triangular patch.
 
- 
+ 
 
- 
+ 
 
 
 

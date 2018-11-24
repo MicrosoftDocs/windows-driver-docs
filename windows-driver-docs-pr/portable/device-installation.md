@@ -1,11 +1,7 @@
 ---
 Description: Device Installation
 title: Device Installation
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,9 +19,9 @@ Once the driver for the device is installed on the system, clients will use WPD 
 
 [**WPD Drivers Overview**](wpd-drivers-overview.md)
 
- 
+ 
 
- 
+ 
 
 
 

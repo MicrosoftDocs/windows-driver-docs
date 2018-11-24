@@ -3,11 +3,7 @@ title: wt (Trace and Watch Data)
 description: The wt command runs through the whole function and then displays statistics, when you execute this command at the beginning of a function call.
 ms.assetid: 2dd62a7f-67d9-4b13-b04e-5cd02e6ef9f0
 keywords: ["wt (Trace and Watch Data) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **wt** command runs through the whole function and then displays statistics, when you execute this command at the beginning of a function call.
 
-```
+```dbgcmd
 wt [WatchOptions] [= StartAddress] [EndAddress] 
 ```
 
@@ -87,7 +83,7 @@ Specifies how to modify the display. You can use any of the following options.
 </tbody>
 </table>
 
- 
+ 
 
 <span id="_______StartAddress______"></span><span id="_______startaddress______"></span><span id="_______STARTADDRESS______"></span> *StartAddress*   
 Specifies the address where the debugger begins execution. If you do not use *StartAddress*, execution begins at the instruction that the instruction pointer points to. For more information about the syntax, see [Address and Address Range Syntax](address-and-address-range-syntax.md).
@@ -120,7 +116,7 @@ Specifies the address where tracing ends. If you do not use *EndAddress*, a sing
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -141,7 +137,7 @@ Because the output from **wt** can be long, you might want to use a log file to 
 
 The following example shows a typical log file.
 
-```
+```dbgcmd
 0:000> l+                  Source options set to show source lines
 Source options are f:
      1/t - Step/trace by source line
@@ -211,9 +207,9 @@ In the preceding example, note also that **ILT+1440 (\_\_isatty)** is called 21 
 
 If any system calls are made, they appear in the counter and are listed again at the end of the command output.
 
- 
+ 
 
- 
+ 
 
 
 

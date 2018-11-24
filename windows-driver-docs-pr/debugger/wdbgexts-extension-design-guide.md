@@ -3,11 +3,7 @@ title: WdbgExts Extension Design Guide
 description: WdbgExts Extension Design Guide
 ms.assetid: 8e4a9d26-5b25-4858-b0c0-a63e854e6773
 keywords: ["WdbgExts extensions, design guide"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +27,9 @@ This section includes:
 
 [Building WdbgExts Extensions](building-wdbgexts-extensions.md)
 
- 
+ 
 
- 
+ 
 
 
 

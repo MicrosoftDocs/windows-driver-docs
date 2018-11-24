@@ -1,6 +1,5 @@
 ---
 title: Peer Subunit Driver Stack
-author: windows-driver-content
 description: Peer Subunit Driver Stack
 ms.assetid: 6ef4b6ae-3802-4ba9-acfa-4b3edba11ba3
 keywords:
@@ -14,11 +13,7 @@ keywords:
 - command extension mechanism WDK AV/C
 - command targets WDK AV/C
 - Avc.sys function driver WDK , driver stacks
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -49,9 +44,9 @@ In the context of the peer subunit driver stack, target functionality is limited
 
 To use the built-in extension mechanism, specify the unit address as 0xff in the **SubunitAddress** member of the AVC\_COMMAND\_IRB structure. The **SubunitAddress** member is left alone in for unit commands (the unit address provided by the subunit driver still exists). The virtual subunit driver is always able to key off of the **SubunitAddress** member.
 
- 
+ 
 
- 
+ 
 
 
 

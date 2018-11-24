@@ -1,13 +1,8 @@
 ---
 title: File System Access for WIA Drivers
-author: windows-driver-content
 description: File System Access for WIA Drivers
 ms.assetid: 7bdd116e-d58f-4c2e-a5ec-c9a8196cfd62
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,14 +16,14 @@ If a driver needs to use files other than the ones provided by the WIA service d
 
 For example, the %*windir*%\\*System32* directory is read-only to a **LocalService** account, so WIA drivers typically cannot open files for read or write access there. Most directories are read-only to **LocalService** accounts, so there are seldom problems if a driver needs only to read from a file. However, file problems do occur when drivers attempt to create or write files in restricted directories.
 
-A safe place to write files that only the driver uses is in the user profile directory. Note that the user in this case refers to the account under which the process hosting the driver is running. In Windows XP, this is the **LocalSystem** account, and in Microsoft Windows Server 2003 and later, it is the **LocalService** account. In order for a driver to work well in all versions of Windows supporting WIA, drivers should create their private files in the **%***userprofile***%** directory.
+A safe place to write files that only the driver uses is in the user profile directory. Note that the user in this case refers to the account under which the process hosting the driver is running. In Windows XP, this is the **LocalSystem** account, and in Microsoft Windows Server 2003 and later, it is the **LocalService** account. In order for a driver to work well in all versions of Windows supporting WIA, drivers should create their private files in the **%**<em>userprofile</em>**%** directory.
 
 The following code example shows how a WIA driver can use the %*userprofile*% directory.
 
-```
+```cpp
 #define MY_DRIVER_FILE_NAME_W L"%userprofile%\\MyDriverFile.ext";
 HANDLE hMyDriverFile         = INVALID_HANDLE_VALUE;
-WCHAR  wszFileName[MAX_PATH] = {L&#39;\0&#39;};
+WCHAR  wszFileName[MAX_PATH] = {L'\0'};
 DWORD  dwMaxChars            = sizeof(wszExpandedName) /                     
                                sizeof(wszExpandedName[0]);
 if (ExpandEnvironmentStringsW(MY_DRIVER_FILE_NAME_W, 
@@ -49,7 +44,7 @@ if (ExpandEnvironmentStringsW(MY_DRIVER_FILE_NAME_W,
             wszFileName,           // Contains file name and path
             dwDesiredAccess,       // E.g. GENERIC_WRITE
             dwShareMode,           // E.g. FILE_SHARE_WRITE
-            lpSecurityAttributes,  // Don&#39;t forget to ACL your file            
+            lpSecurityAttributes,  // Don't forget to ACL your file            
                                    //   appropriately!
             dwCreationDisposition, // E.g. CREATE_ALWAYS
             dwFlagsAndAttributes,  // E.g. FILE_ATTRIBUTE_NORMAL
@@ -68,15 +63,15 @@ if (ExpandEnvironmentStringsW(MY_DRIVER_FILE_NAME_W,
 }
 ```
 
-If a driver needs to write to a file that is contained in a directory other than **%***userprofile*%, it should ensure that the correct permissions have been set for the file/directory. Usually this means ensuring that the appropriate permissions have been granted to the **LocalService** account. On Windows XP, the WIA service runs under the **LocalSystem** account, which belongs to the Local Admins group and has considerably higher access levels.
+If a driver needs to write to a file that is contained in a directory other than **%**<em>userprofile</em>%, it should ensure that the correct permissions have been set for the file/directory. Usually this means ensuring that the appropriate permissions have been granted to the **LocalService** account. On Windows XP, the WIA service runs under the **LocalSystem** account, which belongs to the Local Admins group and has considerably higher access levels.
 
 ### WIA Application and WIA Driver Common Files
 
 If both the driver and a bundled application need read/write access to a common file, it is recommended that the file be put in the All Users profile, in a subdirectory of the Application Data directory (CSIDL\_COMMON\_APPDATA). Be sure to set the appropriate ACLs on the new subdirectory.
 
- 
+ 
 
- 
+ 
 
 
 

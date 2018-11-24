@@ -1,6 +1,5 @@
 ---
 title: USB I/O Targets in UMDF
-author: windows-driver-content
 description: USB I/O Targets in UMDF
 ms.assetid: e08ca910-1b28-4809-9a5b-db3730cda31a
 keywords:
@@ -10,11 +9,7 @@ keywords:
 - framework-based drivers WDK UMDF , USB I/O targets
 - USB I/O targets WDK UMDF
 - I/O targets WDK UMDF , USB
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,9 +30,9 @@ Each universal serial bus (USB) device, and each pipe that a USB device interfac
 -   [File Creation by a USB I/O Target](file-creation-by-a-usb-i-o-target.md)
 -   [Calling WinUSB from UMDF](escaping-to-winusb.md)
 
- 
+ 
 
- 
+ 
 
 
 

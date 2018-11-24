@@ -3,11 +3,7 @@ title: qlocks
 description: The qlocks extension displays the state of all queued spin locks.
 ms.assetid: fdeefedb-c840-410a-94e4-ae42923e82e7
 keywords: ["qlocks Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!qlocks** extension displays the state of all queued spin locks.
 
-```
+```dbgcmd
 !qlocks 
 ```
 
@@ -48,7 +44,7 @@ The **!qlocks** extension displays the state of all queued spin locks.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -61,7 +57,7 @@ This command is useful only on a multiprocessor system.
 
 Here is an example:
 
-```
+```dbgcmd
 0: kd> !qlocks
 Key: O = Owner, 1-n = Wait order, blank = not owned/waiting, C = Corrupt
 
@@ -86,9 +82,9 @@ CC   - Bcb
 MM   - MM NonPagedPool             
 ```
 
- 
+ 
 
- 
+ 
 
 
 

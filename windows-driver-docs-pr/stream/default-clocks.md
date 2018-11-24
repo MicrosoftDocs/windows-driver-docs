@@ -1,15 +1,10 @@
 ---
 title: Default Clocks
-author: windows-driver-content
 description: Default Clocks
 ms.assetid: 8c1a51e5-238b-446a-8f20-3fe1b82020b5
 keywords:
 - default clocks WDK kernel streaming
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +28,9 @@ Applications that use the kernel streaming proxy interface call methods in the [
 
 See [Quality Management](quality-management.md) for related information.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,16 +1,11 @@
 ---
 title: SCSI Miniport Driver's HwScsiAdapterState Routine
-author: windows-driver-content
 description: SCSI Miniport Driver's HwScsiAdapterState Routine
 ms.assetid: 359c41ba-b8d9-4e2d-87d7-025db377606b
 keywords:
 - SCSI miniport drivers WDK storage , HwScsiAdapterState
 - HwScsiAdapterState
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,9 +27,9 @@ A [**HwScsiAdapterState**](https://msdn.microsoft.com/library/windows/hardware/f
 
 See [**HwScsiAdapterState**](https://msdn.microsoft.com/library/windows/hardware/ff557278) for more information.
 
- 
+ 
 
- 
+ 
 
 
 

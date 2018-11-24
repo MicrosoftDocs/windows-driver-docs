@@ -2,11 +2,7 @@
 title: MB Signal Strength Operations
 description: MB Signal Strength Operations
 ms.assetid: 489299d0-29c5-4885-ae68-f3d0f42bd201
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,9 +17,9 @@ Be aware that in case of GSM-based devices, miniport drivers should send signal 
 
 For more information about signal strength operations, see [OID\_WWAN\_SIGNAL\_STATE](https://msdn.microsoft.com/library/windows/hardware/ff569836).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -9,11 +9,7 @@ keywords:
 - user-mode output routines WDK
 - kernel-mode output routines WDK
 - routines WDK debugging , output
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -47,13 +43,13 @@ The [**DbgPrintEx**](https://msdn.microsoft.com/library/windows/hardware/ff54363
 
 **Note**   In Windows Vista and later versions of Windows, **DbgPrint** produces tagged messages as well. In previous versions of Windows, **DbgPrint** produced untagged messages.
 
- 
+ 
 
 The [**KdPrint**](https://msdn.microsoft.com/library/windows/hardware/ff548092) and [**KdPrintEx**](https://msdn.microsoft.com/library/windows/hardware/ff548100) macros are identical to **DbgPrint** and **DbgPrintEx**, respectively, when compiled in the checked build environment. When compiled in the free build environment, they have no effect.
 
- 
+ 
 
- 
+ 
 
 
 

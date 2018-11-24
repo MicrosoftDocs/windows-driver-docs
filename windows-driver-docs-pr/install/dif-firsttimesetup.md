@@ -12,6 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # DIF_FIRSTTIMESETUP
@@ -48,7 +49,7 @@ During GUI-mode setup.
 </tbody>
 </table>
 
- 
+ 
 
 ### Installer Input
 
@@ -139,9 +140,9 @@ Requirements
 
 [**SP_DEVINSTALL_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346)
 
- 
+ 
 
- 
+ 
 
 
 

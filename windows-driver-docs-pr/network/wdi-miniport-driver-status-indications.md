@@ -1,13 +1,8 @@
 ---
 title: WDI Miniport Driver Status Indications
-author: windows-driver-content
 description: This section contains WDI status notifications.
 ms.assetid: CD873C33-72ED-4F99-A584-5C307F4FB65E
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 ms.localizationpriority: medium
 ---
 
@@ -31,6 +26,7 @@ This section contains WDI status notifications.
 -   [NDIS\_STATUS\_WDI\_INDICATION\_CONNECT\_COMPLETE](ndis-status-wdi-indication-connect-complete.md)
 -   [NDIS\_STATUS\_WDI\_INDICATION\_CREATE\_PORT\_COMPLETE](ndis-status-wdi-indication-create-port-complete.md)
 -   [NDIS\_STATUS\_WDI\_INDICATION\_DELETE\_PORT\_COMPLETE](ndis-status-wdi-indication-delete-port-complete.md)
+-   [NDIS_STATUS_WDI_INDICATION_DEVICE_SERVICE_EVENT](ndis-status-wdi-indication-device-service-event.md)
 -   [NDIS\_STATUS\_WDI\_INDICATION\_DISASSOCIATION](ndis-status-wdi-indication-disassociation.md)
 -   [NDIS\_STATUS\_WDI\_INDICATION\_DISCONNECT\_COMPLETE](ndis-status-wdi-indication-disconnect-complete.md)
 -   [NDIS\_STATUS\_WDI\_INDICATION\_DOT11\_RESET\_COMPLETE](ndis-status-wdi-indication-dot11-reset-complete.md)
@@ -63,9 +59,9 @@ This section contains WDI status notifications.
 -   [NDIS\_STATUS\_WDI\_INDICATION\_TKIP\_MIC\_FAILURE](ndis-status-wdi-indication-tkip-mic-failure.md)
 -   [NDIS\_STATUS\_WDI\_INDICATION\_WAKE\_REASON](ndis-status-wdi-indication-wake-reason.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -15,11 +15,7 @@ keywords:
 - portable computer video output WDK video present networks
 - mobile computer video output WDK video present networks
 - monitor hot plug detection WDK video present networks
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -86,9 +82,9 @@ The following list describes the steps followed when the lid is closed on a lapt
 
 2.  *DxgkDdiNotifyAcpiEvent* passes a DXGK\_CHILD\_STATUS structure to the display port driver's **DxgkCbIndicateChildStatus** function to report the status of the child device associated with the built-in display panel. Specifically, *DxgkDdiNotifyAcpiEvent* sets the **HotPlug.Connected** member of the DXGK\_CHILD\_STATUS structure to **FALSE**.
 
- 
+ 
 
- 
+ 
 
 
 

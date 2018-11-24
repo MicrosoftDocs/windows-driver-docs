@@ -1,11 +1,7 @@
 ---
 Description: Device Representation
 title: Device Representation
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,9 +38,9 @@ This hierarchy illustrates the following functionality and contents.
 
 [**WPD Drivers Overview**](wpd-drivers-overview.md)
 
- 
+ 
 
- 
+ 
 
 
 

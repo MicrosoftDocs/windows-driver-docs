@@ -2,11 +2,7 @@
 title: Wrapping System-supplied sAPOs
 description: Wrapping System-supplied sAPOs
 ms.assetid: fcde6de0-921c-4c73-8e4d-941a447d35af
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,7 +22,7 @@ To develop your sAPOs based on the **CBaseAudioProcessingObject** class, perform
 
     The following C++ code example shows the creation of a class that inherits from **CBaseAudioProcessingObject**. For an actual implementation of this concept, follow instructions in the **Audio Processing Objects Driver Sample** section to go to the Swap sample, and then refer to the *Swapapo.h* file.
 
-    ```
+    ```cpp
     // Custom APO class - LFX
     Class MyCustomSAPOLFX: public CBaseAudioProcessingObject
     {
@@ -38,7 +34,7 @@ To develop your sAPOs based on the **CBaseAudioProcessingObject** class, perform
 
     **Note**   Because the signal processing that is performed by an LFX sAPO is different from the signal processing that is performed by a GFX sAPO, you must create separate classes for your LFX and GFX sAPOs.
 
-     
+     
 
 2.  Implement the following three methods:
 
@@ -50,7 +46,7 @@ To develop your sAPOs based on the **CBaseAudioProcessingObject** class, perform
 
 The following C++ code example shows an implementation of the [**APOProcess**](https://msdn.microsoft.com/library/windows/hardware/ff536506) method for the sample class that you created in step 1. For an actual implementation of this concept, follow instructions in the **Audio Processing Objects Driver Sample** section to go to the Swap sample, and then refer to the *Swapapolfx.cpp* file.
 
-```
+```cpp
 // Custom implementation of APOProcess method
 STDMETHODIMP_ (Void) MyCustomSAPOLFX::APOProcess (...)
 {
@@ -62,7 +58,7 @@ STDMETHODIMP_ (Void) MyCustomSAPOLFX::APOProcess (...)
 
 The following code example shows an implementation of the **ValidateAndCacheConnectionInfo** method. For an actual implementation of this method, follow instructions in the **Audio Processing Objects Driver Sample** section to go to the Swap sample, and then refer to the *Swapapogfx.cpp* file.
 
-```
+```cpp
 // Custom implementation of the ValidateAndCacheConnectionInfo method.
 HRESULT CSwapAPOGFX::ValidateAndCacheConnectionInfo( ... )
 {
@@ -74,7 +70,7 @@ HRESULT CSwapAPOGFX::ValidateAndCacheConnectionInfo( ... )
 
 **Note**  The remaining interfaces and methods that your class inherits from **CBaseAudioProcessingObject** are described in detail in the Audioenginebaseapo.idl file.
 
- 
+ 
 
 You must provide a user interface to configure the features that you added to the custom sAPO. For more information about this, see the [Implementing a UI for Configuring sAPOs](implementing-a-ui-for-configuring-sapos.md) topic.
 
@@ -83,15 +79,15 @@ You must provide a user interface to configure the features that you added to th
 
 The Swap sample is the sample that was developed to illustrate some features of audio processing objects. To access this sample and browse the code files, perform the following steps:
 
-1. Follow this link: [Windows Driver Kit (WDK) 8.1 Samples](http://go.microsoft.com/fwlink/p/?LinkId=618052)
+1. Follow this link: [Windows Driver Kit (WDK) 8.1 Samples](https://go.microsoft.com/fwlink/p/?LinkId=618052)
 2. Download the samples and unzip them to a hard drive.
 3. Locate this directory: *..\\Windows Driver Kit (WDK) 8.1 Samples\\Microsoft slate system virtual audio device driver sample\\C++\\SwapAPO*
 4. Open the SwapAPO project in Visual Studio.
 5. In the left navigation pane, expand the APO item.
 6. Click the file that you would like to browse, to see its contents.
- 
+ 
 
- 
+ 
 
 
 

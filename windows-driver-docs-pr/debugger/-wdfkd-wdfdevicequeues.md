@@ -3,11 +3,7 @@ title: wdfkd.wdfdevicequeues
 description: The wdfkd.wdfdevicequeues extension displays information about all of the framework queue objects that belong to a specified device.
 ms.assetid: bd0e7fcc-b561-48fb-901a-605e9d647b61
 keywords: ["wdfkd.wdfdevicequeues Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!wdfkd.wdfdevicequeues** extension displays information about all of the framework queue objects that belong to a specified device.
 
-```
+```dbgcmd
 !wdfkd.wdfdevicequeues Handle
 ```
 
@@ -49,7 +45,7 @@ Remarks
 
 The following example shows the display from the **!wdfkd.wdfdevicequeues** extension.
 
-```
+```dbgcmd
 kd> !wdfdevicequeues 0x7cad31c8 
 
 # Dumping queues of WDFDEVICE 0x7cad31c8
@@ -81,9 +77,9 @@ Queue: 3 (!wdfqueue 0x7cd671e8)
     EvtIoDeviceControl: (0xf2226ac0) wdfrawbusenumtest!RawBus_RawPdo_EvtDeviceControl
 ```
 
- 
+ 
 
- 
+ 
 
 
 

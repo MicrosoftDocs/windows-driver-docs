@@ -2,11 +2,7 @@
 title: Specifying the Source and Target Locations for Device Files
 description: Specifying the Source and Target Locations for Device Files
 ms.assetid: e44961e2-e9fb-43d3-aeb9-a625021e56e6
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +22,9 @@ This section describes how Windows determines source and target locations, and p
 
 [Copying INF Files](copying-inf-files.md)
 
- 
+ 
 
- 
+ 
 
 
 

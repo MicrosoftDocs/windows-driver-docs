@@ -5,11 +5,7 @@ ms.assetid: e31cdc1f-21eb-4121-9618-2d8e3d6775dc
 keywords:
 - WSDBIT tool WDK , sample
 - WSDAPI Basic Interoperability Tool WDK , sample
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,7 +16,7 @@ If wsdbit\_client was used with wsdbit\_server, the following code example shows
 
 **Note**   The host address endpoints will be different every time that the server is run.
 
- 
+ 
 
 ```
 -Dialect:       http://schemas.xmlsoap.org/ws/2006/02/devprof/ThisDevice
@@ -69,9 +65,9 @@ Relationship Metadata
 End Relationship Metadata
 ```
 
- 
+ 
 
- 
+ 
 
 
 

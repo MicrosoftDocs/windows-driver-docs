@@ -11,11 +11,7 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +23,7 @@ The KSPROPERTY\_VIDEOCONTROL\_FRAME\_RATES property enumerates the available fra
 ## <span id="ddk_ksproperty_videocontrol_frame_rates_ks"></span><span id="DDK_KSPROPERTY_VIDEOCONTROL_FRAME_RATES_KS"></span>
 
 
-### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
+### Usage Summary Table
 
 <table>
 <colgroup>
@@ -51,13 +47,13 @@ The KSPROPERTY\_VIDEOCONTROL\_FRAME\_RATES property enumerates the available fra
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Filter</p></td>
-<td><p>[<strong>KSPROPERTY_VIDEOCONTROL_FRAME_RATES_S</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566041)</p></td>
-<td><p>[<strong>KSMULTIPLE_ITEM</strong>](https://msdn.microsoft.com/library/windows/hardware/ff563441) array</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566041" data-raw-source="[&lt;strong&gt;KSPROPERTY_VIDEOCONTROL_FRAME_RATES_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566041)"><strong>KSPROPERTY_VIDEOCONTROL_FRAME_RATES_S</strong></a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff563441" data-raw-source="[&lt;strong&gt;KSMULTIPLE_ITEM&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff563441)"><strong>KSMULTIPLE_ITEM</strong></a> array</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a KSMULTIPLE\_ITEM array that describes available frame rates in 100-nanosecond units.
 
@@ -86,16 +82,16 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
-[**KSPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff564262)
+[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)
 
 [**KSPROPERTY\_VIDEOCONTROL\_FRAME\_RATES\_S**](https://msdn.microsoft.com/library/windows/hardware/ff566041)
 
- 
+ 
 
- 
+ 
 
 
 

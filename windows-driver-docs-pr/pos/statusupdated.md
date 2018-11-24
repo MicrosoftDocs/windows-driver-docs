@@ -1,21 +1,20 @@
 ---
 title: StatusUpdated
-description: StatusUpdated
+description: The device-specific StatusUpdated event represents events such as a power change notification.
 ms.assetid: 'e5d04e61-859a-49ee-bc54-58be4133b38a'
+ms.date: 09/07/2018
 ms.localizationpriority: medium
 ---
 
 # StatusUpdated
 
-
 This device-specific event represents events such as a power change notification.
 
 The data buffer for this event is as follows.
 
-Syntax
-------
+## Syntax
 
-``` syntax
+```cpp
 typedef struct _PosStatusUpdatedEventData
 {
     PosEventDataHeader Header;
@@ -33,19 +32,6 @@ The following table shows the memory layout of the data buffer for this event.
 | UINT32     | **Status**. See [BarcodeStatus](https://msdn.microsoft.com/library/windows/hardware/dn757472).   |
 | UINT32     | **ExtendedStatus** |
 
-
-
-Requirements
-------------
+## Requirements
 
 **Header:** pointofservicedriverinterface.h
-
-
-
-
-
-
-
-
-
-

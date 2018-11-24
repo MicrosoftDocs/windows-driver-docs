@@ -2,11 +2,7 @@
 title: Access Co-installers Registry Entry Value of Device Setup Class
 description: Accessing the Co-installers Registry Entry Value of a Device Setup Class
 ms.assetid: 731d29df-6fdd-4f25-9758-d7306fef7ec0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,13 +17,13 @@ For information about how to use property keys to access device setup class prop
 
 On Windows Server 2003, Windows XP, and Windows 2000, you can set or retrieve this property by using the Windows registry functions to access the following registry entry value for a device setup class:
 
-**HLM\\System\\CurrentControlSet\\Control\\CoDeviceInstallers\\{***device-setup-class-guid***}**.
+**HLM\\System\\CurrentControlSet\\Control\\CoDeviceInstallers\\{**<em>device-setup-class-guid</em>**}**.
 
 For information about registering a class co-installer, see [Registering a Class Co-installer](registering-a-class-co-installer.md).
 
- 
+ 
 
- 
+ 
 
 
 

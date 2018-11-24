@@ -1,6 +1,5 @@
 ---
 title: Writing Preoperation and Postoperation Callback Routines
-author: windows-driver-content
 description: Writing Preoperation and Postoperation Callback Routines
 ms.assetid: ad706d01-7a14-4730-8189-c465637987dc
 keywords:
@@ -15,11 +14,7 @@ keywords:
 - I/O WDK file systems
 - callback routines WDK file system
 - filtering I/O operations WDK file system minifilter
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -53,9 +48,9 @@ This section includes:
 
 [Accessing the User Buffers for an I/O Operation](accessing-the-user-buffers-for-an-i-o-operation.md)
 
- 
+ 
 
- 
+ 
 
 
 

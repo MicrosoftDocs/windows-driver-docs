@@ -4,11 +4,7 @@ description: Device Property Representations (Windows Server 2003, Windows XP, a
 ms.assetid: 124172d7-52a4-423c-a1fd-eec554f328d6
 keywords:
 - device properties WDK device installations , representations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,11 +29,11 @@ The following topics provide information about how to access device properties o
 
 **Note**   To maintain compatibility with these earlier versions of Windows, Windows Vista and later versions also support these mechanisms. However, you should use the unified device property model to access device properties on Windows Vista and later versions.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

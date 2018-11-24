@@ -1,13 +1,8 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_IHV_EVENT
-author: windows-driver-content
 description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_IHV_EVENT to pass IHV specific information to the IHV extensibility module.
 ms.assetid: 767f15cd-456f-4d91-9b78-58f8f8b7a465
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WDI_INDICATION_IHV_EVENT Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -22,7 +17,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_IHV\_EVENT to pass IHV speci
 |--------|
 | Port   |
 
- 
+ 
 
 ## Payload data
 
@@ -31,7 +26,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_IHV\_EVENT to pass IHV speci
 |------------------------------------------------------|--------------------------------|----------|-------------------------------------------------------|
 | [**WDI\_TLV\_IHV\_DATA**](https://msdn.microsoft.com/library/windows/hardware/dn926312) |                                | X        | The event to be sent to the IHV extensibility module. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +52,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

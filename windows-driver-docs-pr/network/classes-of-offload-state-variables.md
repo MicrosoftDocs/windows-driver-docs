@@ -8,11 +8,7 @@ keywords:
 - cached variables WDK TCP chimney offload
 - delegated variables WDK TCP chimney offload
 - variables WDK TCP chimney offload state
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,9 +33,9 @@ The host stack provides initial values for delegated variables when it offloads 
 
 For a complete listing of the offload variables for each layer of offload state, see [Offload State Objects](offload-state-objects.md).
 
- 
+ 
 
- 
+ 
 
 
 

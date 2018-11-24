@@ -1,16 +1,11 @@
 ---
 title: HS_PLUGIN_SUPPORTED_SIMS structure
-author: windows-driver-content
 description: The HS_PLUGIN_SUPPORTED_SIMS structure contains the list of supported SIM configurations. This list must be supplied if the hotspot plugin requires HTTP or EAP authentication for any of its networks.
 ms.assetid: 7ec8fb95-b227-4feb-882e-457a9ad6ec3e
 keywords: 
 - HS_PLUGIN_SUPPORTED_SIMS structure Network Drivers Starting with Windows Vista
 - PHS_PLUGIN_SUPPORTED_SIMS structure pointer Network Drivers Starting with Windows Vista
-ms.author: windowsdriverdev
-ms.date: 07/31/2017 
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 07/31/2017
 ms.localizationpriority: medium
 ---
 
@@ -76,9 +71,9 @@ Requirements
 
 [Microsoft Interface Definition Language](https://msdn.microsoft.com//library/windows/desktop/aa367091)
 
- 
+ 
 
- 
+ 
 
 
 

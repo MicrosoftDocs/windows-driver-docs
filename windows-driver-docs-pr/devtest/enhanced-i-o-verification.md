@@ -5,11 +5,7 @@ ms.assetid: ce8a0b22-fa27-45e5-b013-b3accf604ed4
 keywords:
 - Enhanced I/O Verification feature WDK Driver Verifier
 - I/O Verification feature WDK Driver Verifier
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -64,7 +60,7 @@ You can activate the Enhanced I/O Verification feature for one or more drivers b
 
 **Note**  In Windows 7 and later versions of the Windows operating system, Enhanced I/O Verification is automatically activated when you select [I/O Verification](i-o-verification.md). It is not available or necessary to select it as a separate option.
 
- 
+ 
 
 -   **At the command line**
 
@@ -93,9 +89,9 @@ You can activate the Enhanced I/O Verification feature for one or more drivers b
 
     The DMA Verification feature is also included in the standard settings. To use this feature, in Driver Verifier Manager, click **Create Standard Settings**.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,11 +3,7 @@ title: .servers (List Debugging Servers)
 description: The .servers command lists all debugging servers that have been established by this debugger.
 ms.assetid: bf65c6f7-9c59-4756-a667-8b896bd7ea2a
 keywords: ["List Debugging Servers (.servers) command", "remote debugging through the debugger, List Debugging Servers (.servers) command", ".servers (List Debugging Servers) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **.servers** command lists all debugging servers that have been established by this debugger.
 
-```
+```dbgcmd
 .servers 
 ```
 
@@ -52,7 +48,7 @@ The **.servers** command lists all debugging servers that have been established 
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -67,9 +63,9 @@ Each debugging server is identified by a unique ID. This ID can be used as the a
 
 The **.servers** command does not list debugging servers started on this computer by different instances of the debugger, nor does it list process servers or KD connection servers.
 
- 
+ 
 
- 
+ 
 
 
 

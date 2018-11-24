@@ -8,11 +8,7 @@ keywords:
 - OID_GEN_INTERRUPT_MODERATION
 - NDIS_INTERRUPT_MODERATION_PARAMETERS
 - interrupts WDK networking , moderation
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,9 +28,9 @@ NDIS 6.0 and later miniport drivers must support both the [OID\_GEN\_INTERRUPT\_
 
 A miniport driver that supports interrupt moderation should turn this capability on by default unless the **InterruptModeration** standard keyword in the registry disables it. For more information about the standard keywords, see [Standardized INF Keywords for Network Devices](standardized-inf-keywords-for-network-devices.md).
 
- 
+ 
 
- 
+ 
 
 
 

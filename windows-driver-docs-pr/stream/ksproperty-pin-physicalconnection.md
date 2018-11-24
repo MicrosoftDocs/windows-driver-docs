@@ -11,11 +11,7 @@ api_location:
 - ks.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +23,7 @@ Audio adapter drivers use the KSPROPERTY\_PIN\_PHYSICALCONNECTION property to de
 ## <span id="ddk_ksproperty_pin_physicalconnection_ks"></span><span id="DDK_KSPROPERTY_PIN_PHYSICALCONNECTION_KS"></span>
 
 
-### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
+### Usage Summary Table
 
 <table>
 <colgroup>
@@ -51,13 +47,13 @@ Audio adapter drivers use the KSPROPERTY\_PIN\_PHYSICALCONNECTION property to de
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p>[<strong>KSP_PIN</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566722)</p></td>
-<td><p>[<strong>KSPIN_PHYSICALCONNECTION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff563539)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566722" data-raw-source="[&lt;strong&gt;KSP_PIN&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566722)"><strong>KSP_PIN</strong></a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff563539" data-raw-source="[&lt;strong&gt;KSPIN_PHYSICALCONNECTION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff563539)"><strong>KSPIN_PHYSICALCONNECTION</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -88,7 +84,7 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**KSP\_PIN**](https://msdn.microsoft.com/library/windows/hardware/ff566722)
@@ -97,9 +93,9 @@ Requirements
 
 [**PcRegisterPhysicalConnection**](https://msdn.microsoft.com/library/windows/hardware/ff537726)
 
- 
+ 
 
- 
+ 
 
 
 

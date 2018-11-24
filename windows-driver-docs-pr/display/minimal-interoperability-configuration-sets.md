@@ -11,11 +11,7 @@ keywords:
 - interoperability configuration sets WDK DirectX VA
 - configuration sets WDK DirectX VA
 - DXVA_ConfigPictureDecode
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,9 +31,9 @@ All DirectX VA decoders must operate with all DirectX VA accelerators to use a [
 
 For each set the decoder and accelerator must support the same DirectX VA restricted-mode GUID.
 
- 
+ 
 
- 
+ 
 
 
 

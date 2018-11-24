@@ -9,11 +9,7 @@ api_name:
 - wscn ADFResolutions
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **ADFResolutions** element contains a list of resolutions at which 
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ADFResolutions>
   child elements
 </wscn:ADFResolutions>
@@ -50,10 +46,10 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>Heights</strong>](heights.md)</p></td>
+<td><p><a href="heights.md" data-raw-source="[&lt;strong&gt;Heights&lt;/strong&gt;](heights.md)"><strong>Heights</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>Widths</strong>](widths.md)</p></td>
+<td><p><a href="widths.md" data-raw-source="[&lt;strong&gt;Widths&lt;/strong&gt;](widths.md)"><strong>Widths</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -72,10 +68,10 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ADFBack</strong>](adfback.md)</p></td>
+<td><p><a href="adfback.md" data-raw-source="[&lt;strong&gt;ADFBack&lt;/strong&gt;](adfback.md)"><strong>ADFBack</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>ADFFront</strong>](adffront.md)</p></td>
+<td><p><a href="adffront.md" data-raw-source="[&lt;strong&gt;ADFFront&lt;/strong&gt;](adffront.md)"><strong>ADFFront</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -89,7 +85,7 @@ If the parent element of the **ADFResolutions** element is [**ADFFront**](adffro
 
 The WSD Scan Service should list all possible widths that the scan device supports within the **Widths** child element and all possible heights that the scan device supports within the **Heights** child element. All **Width** and **Height** values are independent of each other, and most devices will support them being paired in any combination within a [**ScanTicket**](scanticket.md) element.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ADFBack**](adfback.md)
@@ -106,9 +102,9 @@ The WSD Scan Service should list all possible widths that the scan device suppor
 
 [**Widths**](widths.md)
 
- 
+ 
 
- 
+ 
 
 
 

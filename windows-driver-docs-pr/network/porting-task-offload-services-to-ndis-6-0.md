@@ -9,11 +9,7 @@ keywords:
 - task offload porting WDK networking
 - TCP/IP offload service porting WDK networking
 - offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,9 +33,9 @@ This section includes:
 
 [Offloading TCP/IP Connections in NDIS 6.0](offloading-tcp-ip-connections-in-ndis-6-0.md)
 
- 
+ 
 
- 
+ 
 
 
 

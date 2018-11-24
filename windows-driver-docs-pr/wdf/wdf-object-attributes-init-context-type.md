@@ -1,15 +1,10 @@
 ---
 title: WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE macro
-author: windows-driver-content
 description: The WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE macro initializes a driver's WDF_OBJECT_ATTRIBUTES structure and inserts an object's driver-defined context information into the structure.
 ms.assetid: 83e397b1-e37d-451d-9007-3b34993187c3
 keywords:
  - WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE macro
-ms.author: windowsdriverdev
 ms.date: 08/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,8 +20,8 @@ Syntax
 
 ```ManagedCPlusPlus
 void WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE(
-    _attributes,
-    _contexttype
+    _attributes,
+    _contexttype
 );
 ```
 
@@ -56,7 +51,7 @@ Examples
 
 The following code example defines a WDM_NDIS_REQUEST context structure. Then, the example invokes the [**WDF_DECLARE_CONTEXT_TYPE_WITH_NAME**](wdf-declare-context-type-with-name.md) macro to register the structure and specify that the context accessor method will be named **RequestGetMyContext**. Then, in a function, the example allocates a [**WDF_OBJECT_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff552400) structure, and then initializes the **WDF_OBJECT_ATTRIBUTES** structure.
 
-```
+```cpp
 typedef struct _WDM_NDIS_REQUEST
 {
    PMP_ADAPTER  Adapter;
@@ -90,7 +85,7 @@ Requirements
 <tbody>
 <tr class="odd">
 <td><p>Target platform</p></td>
-<td>[Universal](http://go.microsoft.com/fwlink/p/?linkid=531356)</td>
+<td><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" data-raw-source="[Universal](http://go.microsoft.com/fwlink/p/?linkid=531356)">Universal</a></td>
 </tr>
 <tr class="even">
 <td><p>Minimum KMDF version</p></td>
@@ -116,9 +111,9 @@ Requirements
 
 [**WDF_OBJECT_ATTRIBUTES_SET_CONTEXT_TYPE**](wdf-object-attributes-set-context-type.md)
 
- 
+ 
 
- 
+ 
 
 
 

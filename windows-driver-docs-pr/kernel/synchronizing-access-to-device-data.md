@@ -1,14 +1,9 @@
 ---
 title: Synchronizing Access to Device Data
-author: windows-driver-content
 description: Synchronizing Access to Device Data
 ms.assetid: aaed8006-6773-4d20-b3a0-b48131f728c6
 keywords: ["interrupt service routines WDK kernel , synchronization", "ISRs WDK kernel , synchronization", "interrupt objects WDK kernel , synchronization", "synchronization WDK kernel , interrupts", "single interrupt vectors WDK kernel", "critical section routines WDK kernel", "interrupt spin locks WDK kernel", "spin locks WDK kernel", "synchronization WDK kernel , device data access", "SynchCritSection", "SynchronizeIrql", "SpinLock parameter"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,9 +31,9 @@ A driver must allocate its own spin lock only when using the CONNECT\_FULLY\_SPE
 
 For information about writing and entering critical sections, see [Using Critical Sections](using-critical-sections.md).
 
- 
+ 
 
- 
+ 
 
 
 

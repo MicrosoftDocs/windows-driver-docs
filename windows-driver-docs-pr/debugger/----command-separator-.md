@@ -3,11 +3,7 @@ title: ; (Command Separator)
 description: The semicolon ( ; ) character is used to separate multiple commands on a single line.
 ms.assetid: efa59a34-1d1d-4df4-bbb9-b8066c6f3b3c
 keywords: ["; (Command Separator) Windows Debugging"]
-ms.author: domars
-ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 09/17/2018
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The semicolon ( **;** ) character is used to separate multiple commands on a single line.
 
-```
+```dbgcmd
     Command1 ; Command2 [; Command3 ...] 
 ```
 
@@ -41,13 +37,13 @@ A small number of commands cannot be followed by a semicolon, because they autom
 
 Here is an example. This executes the current program to source line 123, prints the value of **counter**, then resumes execution:
 
-```
+```console
 0:000> g `:123`; ? poi(counter); g 
 ```
 
- 
+ 
 
- 
+ 
 
 
 

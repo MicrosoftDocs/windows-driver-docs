@@ -1,13 +1,8 @@
 ---
 title: Performing Any Other Needed Initialization
-author: windows-driver-content
 description: Performing Any Other Needed Initialization
 ms.assetid: 781f241f-fb12-460e-b093-ffa916aae495
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,9 +14,9 @@ ms.localizationpriority: medium
 
 After registering IRP and fast I/O dispatch routines, your file system filter driver's **DriverEntry** routine can initialize additional global driver variables and data structures as needed.
 
- 
+ 
 
- 
+ 
 
 
 

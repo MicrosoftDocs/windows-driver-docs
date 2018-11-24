@@ -6,11 +6,7 @@ keywords:
 - miniport call managers WDK networking , OID requests
 - MCMs WDK networking , OID requests
 - porting OID requests WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +26,9 @@ To send an OID request for call manager parameters to an MCM, a CoNDIS 6.0 clien
 
 For more information about MCM OID requests, see [CoNDIS MCM OID Requests](condis-mcm-oid-requests.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,15 +1,10 @@
 ---
 title: Control Method Macros
-author: windows-driver-content
 description: Control Method Macros
 ms.assetid: cffcfb7a-c949-4bc9-a92f-349f5637ab84
 keywords:
 - ACPI control methods WDK , macros
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,9 +33,9 @@ An [**IOCTL\_ACPI\_ENUM\_CHILDREN**](https://msdn.microsoft.com/library/windows/
 
 [**ACPI\_ENUM\_CHILD\_LENGTH\_FROM\_CHILD**](acpi-enum-child-length-from-child.md)
 
- 
+ 
 
- 
+ 
 
 
 

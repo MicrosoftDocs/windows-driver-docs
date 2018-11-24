@@ -6,11 +6,7 @@ keywords:
 - user-mode display drivers WDK Windows Vista , initializing
 - Direct3D WDK display
 - user-mode display drivers WDK Windows Vista , Direct3D
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,11 +38,11 @@ The user-mode display driver's *CreateDevice* function is called with a [**D3DDD
 
 **Note**   The number of display devices (graphics contexts) that can simultaneously exist is limited only by available system memory.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

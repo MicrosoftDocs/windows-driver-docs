@@ -11,11 +11,7 @@ keywords:
 - task offload WDK TCP/IP transport
 - connection offload WDK TCP/IP transport
 - packets WDK networking , TCP/IP offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -54,9 +50,9 @@ This section includes:
 -   [TCP/IP Task Offload](task-offload.md)
 -   [Connection Offload](connection-offload.md)
 
- 
+ 
 
- 
+ 
 
 
 

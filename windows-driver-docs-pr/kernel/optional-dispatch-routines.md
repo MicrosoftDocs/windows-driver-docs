@@ -1,14 +1,9 @@
 ---
 title: Optional Dispatch Routines
-author: windows-driver-content
 description: Optional Dispatch Routines
 ms.assetid: 38a3fcc9-237d-432d-85db-1594697c96a5
 keywords: ["dispatch routines WDK kernel , optional", "optional dispatch routines WDK kernel", "mass storage devices WDK dispatch routines"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -46,9 +41,9 @@ The driver of a mass-storage device that caches data internally must provide *Di
 
 Any intermediate driver layered above a driver that handles [**IRP\_MJ\_FLUSH\_BUFFERS**](https://msdn.microsoft.com/library/windows/hardware/ff550760) and [**IRP\_MJ\_SHUTDOWN**](https://msdn.microsoft.com/library/windows/hardware/ff550807) requests also provide *DispatchShutdown* and *DispatchFlushBuffers* routines.
 
- 
+ 
 
- 
+ 
 
 
 

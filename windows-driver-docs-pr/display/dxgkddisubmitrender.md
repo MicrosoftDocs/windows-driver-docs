@@ -11,11 +11,7 @@ api_location:
 - Dispmprt.h
 api_type:
 - UserDefined
-ms.author: windowsdriverdev
 ms.date: 01/05/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,8 +29,8 @@ Syntax
 DXGKDDI_SUBMITRENDER DxgkDdiSubmitRender;
 
 NTSTATUS DxgkDdiSubmitRender(
-   IN_CONST_HANDLE             hContext,
-   INOUT_PDXGKARG_SUBMITRENDER pSubmitRender
+   IN_CONST_HANDLE             hContext,
+   INOUT_PDXGKARG_SUBMITRENDER pSubmitRender
 )
 { ... }
 ```
@@ -76,9 +72,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

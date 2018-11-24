@@ -2,11 +2,7 @@
 title: Mobile operator scenarios
 description: Mobile operator scenarios
 ms.assetid: 68ebee74-9c34-489d-9a88-02493ac3b5fe
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -14,6 +10,11 @@ ms.localizationpriority: medium
 
 
 Use the docs in this section to help you learn about the different mobile operator scenarios.
+
+-   Mobile Plans
+
+    - [Promotional content](mobile-plans-promotional-content.md)
+    - [Asynchronous fulfillment](mobile-plans-asynchronous-fulfillment.md)
 
 -   [Creating and configuring Internet Sharing experiences](creating-and-configuring-internet-sharing-experiences.md)
 
@@ -32,12 +33,3 @@ Use the docs in this section to help you learn about the different mobile operat
 -   [Understanding and configuring Windows Connection Manager](understanding-and-configuring-windows-connection-manager.md)
 
 -   [UWP mobile broadband apps](uwp-mobile-broadband-apps.md)
-
- 
-
- 
-
-
-
-
-

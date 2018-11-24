@@ -1,5 +1,5 @@
 ---
-title: IRP\_MJ\_CLOSE
+title: IRP_MJ_CLOSE
 description: IRP\_MJ\_CLOSE
 ms.assetid: 62bb28de-7f89-4009-9ea9-0aa3d6bca0ed
 keywords: ["IRP_MJ_CLOSE Installable File System Drivers"]
@@ -9,11 +9,7 @@ api_name:
 - IRP_MJ_CLOSE
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -92,9 +88,9 @@ Specifies IRP\_MJ\_CLOSE.
 
 [**ObDereferenceObject**](https://msdn.microsoft.com/library/windows/hardware/ff557724)
 
- 
+ 
 
- 
+ 
 
 
 

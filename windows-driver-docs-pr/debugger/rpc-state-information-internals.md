@@ -3,11 +3,7 @@ title: RPC State Information Internals
 description: RPC State Information Internals
 ms.assetid: fac4a1e4-e1ec-41f2-8de9-073a04a979be
 keywords: ["RPC debugging, RPC state information internals"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -135,9 +131,9 @@ The time (in milliseconds after boot) when the information about the client call
 <span id="TargetServer"></span><span id="targetserver"></span><span id="TARGETSERVER"></span>**TargetServer**  
 The first 24 characters of the name of the server to which the call is made.
 
- 
+ 
 
- 
+ 
 
 
 

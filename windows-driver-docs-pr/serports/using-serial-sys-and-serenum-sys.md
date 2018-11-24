@@ -1,6 +1,5 @@
 ---
 title: Using Serial.sys and Serenum.sys
-author: windows-driver-content
 description: Using Serial.sys and Serenum.sys
 ms.assetid: 2dcf22c8-0666-4b58-8fd3-97a4d17eaa2a
 keywords:
@@ -15,11 +14,7 @@ keywords:
 - lower-level device filter drivers WDK serial devices
 - higher-level device filter drivers WDK serial devices
 - filter drivers WDK serial devices
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -78,9 +73,9 @@ These samples demonstrates serial drivers.
     -   [The Virtual serial driver sample (UMDF 1.0)](http://go.microsoft.com/fwlink/p/?LinkId=617963)
     -   [The Virtual serial2 driver sample (KMDF)](http://go.microsoft.com/fwlink/p/?LinkId=722209)
 
- 
+ 
 
- 
+ 
 
 
 

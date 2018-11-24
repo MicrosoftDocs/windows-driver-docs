@@ -1,13 +1,8 @@
 ---
 title: Getting started guide - Microsoft Standard Driver for 3D Printers
-author: windows-driver-content
 description: The Microsoft Standard Driver for 3D Printers allows developers to easily make their printer compatible with Windows 10.
 ms.assetid: DAFC5B26-09BA-483C-B964-1DA96E77765F
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -65,11 +60,11 @@ The compatible ID for a 3D printer is shown in the following table:
 </tbody>
 </table>
 
- 
+ 
 
 In the header file that is included in the 3D printer firmware, the IHV must specify the Compatible ID as shown here:
 
-```
+```cpp
 #define MS3DPRINT_CONFIG_SIZE 232
 
 #define MS3DPRINT_OSP_SIZE (4+4+2+0x20+4+MS3DPRINT_CONFIG_SIZE)
@@ -91,7 +86,7 @@ static const uint8_t PROGMEM ms3dprint_descriptor[40] = {
     0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,        // RESERVED
     0x00,                                            // bFirstInterfaceNumber
     0x01,                                            // RESERVED
-    &#39;3&#39;, &#39;D&#39;, &#39;P&#39;, &#39;R&#39;, &#39;I&#39;, &#39;N&#39;, &#39;T&#39;, 0x00,         // compatibleID ("3DPRINT")
+    '3', 'D', 'P', 'R', 'I', 'N', 'T', 0x00,         // compatibleID ("3DPRINT")
                                                  // subCompatibleID
     0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00   /*        */  
 ,
@@ -101,9 +96,7 @@ static const uint8_t PROGMEM ms3dprint_descriptor[40] = {
 
 This line in the code above is the compatible ID of a 3D Printer:
 
-```
-&#39;3&#39;, &#39;D&#39;, &#39;P&#39;, &#39;R&#39;, &#39;I&#39;, &#39;N&#39;, &#39;T&#39;, 0x00,         // compatibleID ("3DPRINT")
-```
+`'3', 'D', 'P', 'R', 'I', 'N', 'T', 0x00,         // compatibleID ("3DPRINT")`
 
 With this specific configuration, IHVs can compile their firmware and flash the device. Then when the device is plugged in, the 3D Print Standard Driver will automatically get downloaded from Windows Update.
 
@@ -121,13 +114,13 @@ As stated in the above section, IHVs have access to several base configurations.
 | Job3DOutputAreaHeight | 270000 |
 | Filamentdiameter      | 2850   |
 
- 
+ 
 
 For more information about these parameters, please refer to the *MS3DPrint Standard G-Code Driver.docx* document in the [3D Printing SDK](http://go.microsoft.com/fwlink/p/?LinkId=394375) documentation.
 
 To specify which base configuration to use and which parameters to override, the developer has to specify it through the Extended Properties OS Feature Descriptor as shown here:
 
-```
+```cpp
 // Modifiers to the base configuration
 static const uint8_t PROGMEM ms3dprint_properties_descriptor[] = {
     SIZE_TO_DW(MS3DPRINT_XPROP_SIZE),                   // dwLength
@@ -139,10 +132,10 @@ static const uint8_t PROGMEM ms3dprint_properties_descriptor[] = {
     0x07, 0x00, 0x00, 0x00,                             // dwPropertyDataType  (1=REG_SZ, 4=REG_DWORD, 7=REG_MULTI_SZ)
 
     0x20, 0x00,                                         // wPropertyNameLength
-    &#39;M&#39;, 0x0, &#39;S&#39;, 0x0, &#39;3&#39;, 0x0, &#39;D&#39;, 0x0,             // bPropertyName
-    &#39;P&#39;, 0x0, &#39;r&#39;, 0x0, &#39;i&#39;, 0x0, &#39;n&#39;, 0x0,
-    &#39;t&#39;, 0x0, &#39;C&#39;, 0x0, &#39;o&#39;, 0x0, &#39;n&#39;, 0x0,
-    &#39;f&#39;, 0x0, &#39;i&#39;, 0x0, &#39;g&#39;, 0x0, 0x0, 0x0,
+    'M', 0x0, 'S', 0x0, '3', 0x0, 'D', 0x0,             // bPropertyName
+    'P', 0x0, 'r', 0x0, 'i', 0x0, 'n', 0x0,
+    't', 0x0, 'C', 0x0, 'o', 0x0, 'n', 0x0,
+    'f', 0x0, 'i', 0x0, 'g', 0x0, 0x0, 0x0,
 
     SIZE_TO_DW(MS3DPRINT_CONFIG_SIZE),                  // dwPropertyDataLength
 
@@ -211,9 +204,9 @@ For more information, see the following documents and resources:
 
 You can also contact the Microsoft 3D Printing team at [Ask 3D Printing Questions](http://go.microsoft.com/fwlink/p/?LinkId=534751) (ask3dprint@microsoft.com).
 
- 
+ 
 
- 
+ 
 
 
 

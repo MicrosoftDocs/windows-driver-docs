@@ -8,11 +8,7 @@ keywords:
 - video decoding WDK DirectX VA , compressed pictures
 - decoding video WDK DirectX VA , compressed pictures
 - compressed picture decoding WDK DirectX VA , about compressed picture decoding
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +24,9 @@ When the [bDXVA\_Func variable](bdxva-func-variable.md) equals 1, the operation 
 
 The parameters that must be sent once for each picture to be decoded are specified in the [**DXVA\_PictureParameters**](https://msdn.microsoft.com/library/windows/hardware/ff564012) structure.
 
- 
+ 
 
- 
+ 
 
 
 

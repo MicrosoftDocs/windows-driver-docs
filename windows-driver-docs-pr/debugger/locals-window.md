@@ -3,11 +3,7 @@ title: Viewing and Editing Local Variables in WinDbg
 description: In WinDbg, you can view local variables by entering commands, by using the Locals window, or by using the Watch window.
 ms.assetid: 9d816df7-2b20-4be3-90d7-7a11b0f30238
 keywords: ["debugging information windows, Locals window", "Locals window", "memory, Locals window"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -74,7 +70,7 @@ The Locals window has a toolbar that contains two buttons (**Typecast** and **Lo
 
     **Note**   The **Always display numbers in default radix** command does not affect long integers. Long integers are displayed in decimal format unless the [**.enable\_long\_status (Enable Long Integer Display)**](-enable-long-status--enable-long-integer-display-.md) command is set. The **.enable\_long\_status** command affects the display in the Locals window, the Watch window, and in debugger command output; there is no equivalent for this command in the menu in the Locals window.
 
-     
+     
 
 -   (Menu only) **Open memory window for selected value** opens a new docked Memory window that displays memory starting at the address of the selected expression.
 
@@ -116,9 +112,9 @@ The Watch window can contain four columns. The **Name** and **Value** columns ar
 
 For more information about controlling local variables, an overview of using variables and changing the scope, and a description of other memory-related commands, see [Reading and Writing Memory](reading-and-writing-memory.md).
 
- 
+ 
 
- 
+ 
 
 
 

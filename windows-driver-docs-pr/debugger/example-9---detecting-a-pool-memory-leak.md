@@ -3,11 +3,7 @@ title: Example 9 Detecting a Pool Memory Leak
 description: Example 9 Detecting a Pool Memory Leak
 ms.assetid: 3f634593-a024-46d1-9f3d-9d39b28bab03
 keywords: ["PoolMon, PoolMon and GFlags"]
-ms.author: domars
-ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 10/12/2018
 ms.localizationpriority: medium
 ---
 
@@ -24,12 +20,12 @@ PoolMon monitors the bytes in the paged and nonpaged memory pools and sorts them
 **Note**   Pool tagging is permanently enabled in Windows Server 2003 and later versions of Windows. On these systems, the **Enable pool tagging** check box on the **Global Flags** dialog box is dimmed, and commands to enable or disable pool tagging fail.
 If pool tagging is not enabled, PoolMon fails and displays the following message: "Query pooltags Failed c0000002."
 
- 
+ 
 
 **To detect a pool memory leak**
 
 1.  To enable pool tagging for all processes in versions of Windows earlier than Windows Server 2003, set the system-wide [Enable pool tagging](enable-pool-tagging.md) flag in the registry. The following command line uses the flag abbreviation method, but you can identify the flag by its hexadecimal value or use the **Global Flags** dialog box:
-    ```
+    ```console
     gflags /r +ptg 
     ```
 
@@ -37,13 +33,13 @@ If pool tagging is not enabled, PoolMon fails and displays the following message
 
 3.  Run PoolMon periodically by using the following command. In this command, the **/b** parameter sorts the pools in descending size order.
 
-    ```
+    ```console
     poolmon /b 
     ```
 
     In response, PoolMon displays allocations from the memory pools in descending size order , including the number of allocate operations and free operations, and the amount of memory remaining in the pool (in the Bytes column).
 
-    ```
+    ```console
     Memory: 16224K Avail: 4564K PageFlts: 31 InRam Krnl: 684K P: 680K
      Commit: 24140K Limit: 24952K Peak: 24932K  Pool N: 744K P: 2180K
 
@@ -62,7 +58,7 @@ If pool tagging is not enabled, PoolMon fails and displays the following message
 
     The following command line uses the flag abbreviation method, but you can identify the flag by its hexadecimal value or use the **Global Flags** dialog box:
 
-    ```
+    ```console
     gflags /r -ptg 
     ```
 
@@ -70,15 +66,15 @@ If pool tagging is not enabled, PoolMon fails and displays the following message
 
 **Note**   Use the append symbol (**&gt;&gt;**) to redirect the PoolMon output to a log file. Later, you can examine the log file for pool size trends. For example:
 
- 
+ 
 
-```
+```console
 poolmon.exe /b >> poolmon.log 
 ```
 
- 
+ 
 
- 
+ 
 
 
 

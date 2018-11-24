@@ -4,11 +4,7 @@ description: Linear Memory Allocation
 ms.assetid: f39c6752-c771-43d4-b89e-77f3d542d1fd
 keywords:
 - linear memory allocation WDK DirectDraw
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,7 +28,7 @@ The [**VIDEOMEMORY**](https://msdn.microsoft.com/library/windows/hardware/ff5701
 
 The following pseudocode shows how a [**VIDEOMEMORY**](https://msdn.microsoft.com/library/windows/hardware/ff570171) structure is set up for linear memory:
 
-```
+```cpp
 /*
  * video memory pool usage
  */
@@ -44,7 +40,7 @@ static VIDEOMEMORY vidMem [] = {
 
 The following pseudocode shows how linear memory heaps are set up:
 
-```
+```cpp
 /*
  * video memory pool information
  */
@@ -70,9 +66,9 @@ The beginning of the first available scratch area is calculated by adding the be
 
 The end of the scratch area is found by adding the beginning of the scratch area to the size of the scratch area and subtracting one to make it inclusive. The result is used to set the end point of the first (and, in this case, only) element of the [**VIDEOMEMORY**](https://msdn.microsoft.com/library/windows/hardware/ff570171) structure to the end of the scratch area. If there is more than one heap, the end point is set to the end of this heap and the next heap starts where this one leaves off.
 
- 
+ 
 
- 
+ 
 
 
 

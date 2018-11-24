@@ -7,11 +7,7 @@ keywords:
 - display driver model WDK Windows 2000 , architecture
 - Windows 2000 display driver model WDK , architecture
 - architecture WDK Windows 2000 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,9 +31,9 @@ The following sections describe the key responsibilities of display and video mi
 
 [Windows 2000 Video Miniport Driver Responsibilities](windows-2000-video-miniport-driver-responsibilities.md)
 
- 
+ 
 
- 
+ 
 
 
 

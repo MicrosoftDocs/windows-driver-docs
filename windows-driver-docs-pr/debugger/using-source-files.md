@@ -3,11 +3,7 @@ title: Using Source Files
 description: Using Source Files
 ms.assetid: c6dfcb37-140f-43d8-aa15-14f0317b5e19
 keywords: ["Debugger Engine API, source"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,11 +28,11 @@ To perform the opposite operation and find the line of a source file that matche
 
 **Note**  The relationship between memory locations and lines in a source file is not necessarily one-to-one. It is possible for a single line of source code to correspond to multiple memory locations and for a single memory location to correspond to multiple lines of source code.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

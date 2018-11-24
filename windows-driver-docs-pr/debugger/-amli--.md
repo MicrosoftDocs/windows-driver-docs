@@ -3,11 +3,7 @@ title: amli
 description: The amli extension displays some Help text in the Debugger Command window for the amli extension commands.
 ms.assetid: bb632778-5266-4d71-bef5-943aaa682db4
 keywords: ["amli Windows Debugging"]
-ms.author: domars
-ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 09/17/2018
 topic_type:
 - apiref
 api_name:
@@ -24,8 +20,8 @@ The **!amli ?** extension displays some Help text in the Debugger Command window
 
 Syntax
 
-```
-!amli ? [Command] 
+```dbgcmd
+    !amli ? [Command] 
 ```
 
 ## <span id="ddk__amli__dbg"></span><span id="DDK__AMLI__DBG"></span>Parameters
@@ -42,9 +38,9 @@ Kdexts.dll
 
 For information about related commands and their uses, see [The AMLI Debugger](the-amli-debugger.md).
 
- 
+ 
 
- 
+ 
 
 
 

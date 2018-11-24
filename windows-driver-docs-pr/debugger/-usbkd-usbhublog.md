@@ -3,11 +3,7 @@ title: usbkd.usbhublog
 description: The usbkd.usbhublog command displays the debug log for a USB hub.
 ms.assetid: DFDF595E-3452-40C2-A6C7-94FB8954002C
 keywords: ["usbkd.usbhublog Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!usbkd.usbhublog** command displays the debug log for a USB hub.
 
-```
+```dbgcmd
 !usbkd.usbhublog DeviceExtension[, NumberOfEntries]
 ```
 
@@ -45,7 +41,7 @@ Examples
 
 Here is one way to find the address of the device extension for the FDO of a USB hub. First enter [**!usbkd.usb2tree**](-usbkd-usb2tree.md).
 
-```
+```dbgcmd
 0: kd> !usbkd.usb2tree
 ...
 2)!ehci_info ffffe00001ca11a0 !devobj ffffe00001ca1050 PCI: VendorId 8086 DeviceId 293c RevisionId 0002 
@@ -55,7 +51,7 @@ Here is one way to find the address of the device extension for the FDO of a USB
 
 In the preceding output, you can see the suggested command **!devstack ffffe00002320050**. Enter this command.
 
-```
+```dbgcmd
 0: kd> !kdexts.devstack ffffe00002320050
 
   !DevObj           !DrvObj            !DevExt           ObjectName
@@ -68,7 +64,7 @@ In the preceding output, `ffffe000023201a0` is the address of the device extensi
 
 Now pass the address of the device extension to **!usbhublog**. In this example, the second argument limits the display to 10 log entries.
 
-```
+```dbgcmd
 0: kd> !usbkd.usbhublog ffffe000023201a0, 10
 
 LOG@: ffffe000023201a0 (usbhub!_DEVICE_EXTENSION_HUB)
@@ -91,11 +87,11 @@ LOG@: ffffe000023201a0 (usbhub!_DEVICE_EXTENSION_HUB)
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](http://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
- 
+ 
 
- 
+ 
 
 
 

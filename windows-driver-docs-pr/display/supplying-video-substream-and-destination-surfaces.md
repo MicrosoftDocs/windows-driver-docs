@@ -7,11 +7,7 @@ keywords:
 - DeinterlaceBltEx, substream surfaces
 - destination surfaces WDK DirectX VA
 - substream surfaces WDK DirectX VA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ The VMR on Windows Server 2003 SP1 and later and Windows XP SP2 and later only s
 
 The VMR also only supplies destination surfaces whose formats are specified by the driver in the **d3dOutputFormat** member of the [**DXVA\_DeinterlaceCaps**](https://msdn.microsoft.com/library/windows/hardware/ff563939) structure. The driver returns a pointer to DXVA\_DeinterlaceCaps when its [**DeinterlaceQueryModeCaps**](https://msdn.microsoft.com/library/windows/hardware/ff563946) function is called.
 
- 
+ 
 
- 
+ 
 
 
 

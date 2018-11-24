@@ -3,11 +3,7 @@ title: (Block Delimiter)
 description: A pair of braces ( ) is used to surround a block of statements within a debugger command program.
 ms.assetid: 1391fa51-61ce-40e5-8bf5-b5a2215c2bd9
 keywords: ["(Block Delimiter) Windows Debugging"]
-ms.author: domars
-ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 09/17/2018
 topic_type:
 - apiref
 api_name:
@@ -22,8 +18,8 @@ ms.localizationpriority: medium
 
 A pair of braces ( **{ }** ) is used to surround a block of statements within a debugger command program.
 
-```
-Statements { Statements } Statements 
+```dbgcmd
+    Statements { Statements } Statements 
 ```
 
 ## <span id="ddk_token_block_delimiter_dbg"></span><span id="DDK_TOKEN_BLOCK_DELIMITER_DBG"></span>
@@ -40,9 +36,9 @@ When each block is entered, all aliases within the block are evaluated. If you a
 
 Each block must begin with a control flow token. If you wish to create a block for the sole purpose of evaluating aliases, you should prefix it with the [**.block**](-block.md) token.
 
- 
+ 
 
- 
+ 
 
 
 

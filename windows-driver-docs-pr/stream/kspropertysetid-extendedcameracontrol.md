@@ -2,20 +2,15 @@
 title: KSPROPERTYSETID\_ExtendedCameraControl
 description: The KSPROPERTYSETID\_ExtendedCameraControl property set controls the extended camera device settings. The additional controls it provides allow for camera photo sequencing.
 ms.assetid: 37475847-D678-4977-8524-82FA80D6A7EF
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # KSPROPERTYSETID\_ExtendedCameraControl
 
-
 The KSPROPERTYSETID\_ExtendedCameraControl property set controls the extended camera device settings. The additional controls it provides allow for camera photo sequencing.
 
-For more info on how to implement these controls, see the topics under [Camera Control Properties](https://msdn.microsoft.com/library/windows/hardware/ff557607#win8-1-extended-props).
+For more info on how to implement these controls, see the topics under [Camera Control Properties](https://docs.microsoft.com/windows-hardware/drivers/stream/camera-control-properties#win8-1-extended-props).
 
 The following properties are included in the KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PROPERTY enumeration. These properties are supported in beginning with Windows 8.1.
 
@@ -63,8 +58,6 @@ The following camera driver controls are new for Windows 10.
 
 [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FLASHMODE**](ksproperty-cameracontrol-extended-flashmode2.md)
 
-[**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FOCUSMODE**](ksproperty-cameracontrol-extended-focusmode2.md)
-
 [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FOCUSPRIORITY**](ksproperty-cameracontrol-extended-focuspriority.md)
 
 [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FOCUSSTATE**](ksproperty-cameracontrol-extended-focusstate.md)
@@ -108,12 +101,3 @@ The following camera driver controls are new for Windows 10.
 The following camera driver controls are new for Windows 10, version 1607.
 
 [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FACEAUTH\_MODE**](ksproperty-cameracontrol-extended-faceauth-mode.md)
-
- 
-
- 
-
-
-
-
-

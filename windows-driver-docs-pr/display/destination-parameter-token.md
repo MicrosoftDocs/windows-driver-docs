@@ -2,11 +2,7 @@
 title: Destination Parameter Token
 description: Destination Parameter Token
 ms.assetid: 1a9842c5-0ea9-47ee-a341-77e705ab5e25
-ms.author: windowsdriverdev
 ms.date: 01/05/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -68,7 +64,7 @@ Write mask. The bits of this mask have the following components:
 </tbody>
 </table>
 
- 
+ 
 
 <span id="_23_20_"></span>**\[23:20\]**
 Bits 20 through 23 indicate the result modifier. Multiple result modifiers can be used. The following result modifier types can be ORed together in this 4-bit value:
@@ -100,7 +96,7 @@ Bits 20 through 23 indicate the result modifier. Multiple result modifiers can b
 </tbody>
 </table>
 
- 
+ 
 
 <span id="_27_24_"></span>**\[27:24\]**
 For PS versions earlier than 2\_0, bits 24 through 27 specify the result shift scale (signed shift).
@@ -120,9 +116,9 @@ Bits 28, 29, 30, 11, and 12 form a 5-bit value that indicates the register type.
 
 Available in Windows Vista and later versions of the Windows operating systems.
 
- 
+ 
 
- 
+ 
 
 
 

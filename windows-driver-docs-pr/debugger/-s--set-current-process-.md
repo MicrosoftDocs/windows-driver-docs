@@ -3,11 +3,7 @@ title: s (Set Current Process)
 description: The s command sets or displays the current process number.
 ms.assetid: 6b4d8e00-426c-496b-9c52-c60faeb0c975
 keywords: ["s (Set Current Process) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,7 +20,7 @@ The **|s** command sets or displays the current process number.
 
 Do not confuse this command with the [**s (Search Memory)**](s--search-memory-.md), [**~s (Change Current Processor)**](-s--change-current-processor-.md), [**~s (Set Current Thread)**](-s--set-current-thread-.md), or [**||s (Set Current System)**](--s--set-current-system-.md) command.
 
-```
+```dbgcmd
 |Process s 
 | s 
 ```
@@ -58,7 +54,7 @@ Specifies the process to set or display. For more information about the syntax, 
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -73,9 +69,9 @@ If you use the **|s** syntax, the debugger displays information about the curren
 
 This command also disassembles the current instruction for the current system, process, and thread.
 
- 
+ 
 
- 
+ 
 
 
 

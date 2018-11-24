@@ -6,11 +6,7 @@ keywords:
 - INF files WDK display , interoperability
 - interoperability WDK display
 - OpenGL WDK display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,15 +15,15 @@ ms.localizationpriority: medium
 
 To ensure that no Microsoft Direct3D display drivers are exposed to possible interoperability issues with OpenGL installable client drivers (ICDs), you must set the following entry in an add-registry section of the INF:
 
-```
+```inf
 [Xxx_SoftwareDeviceSettings]
 ...
 HKR,, CapabilityOverride,    %REG_DWORD%, 0x8
 ```
 
- 
+ 
 
- 
+ 
 
 
 

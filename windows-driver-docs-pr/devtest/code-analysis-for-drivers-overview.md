@@ -2,11 +2,7 @@
 title: Code Analysis for drivers overview
 description: The Windows Driver Kit provides a driver-specific extension to the Code Analysis tool in Microsoft Visual Studio Ultimate 2012.
 ms.assetid: 2A780608-F386-4838-A4EB-022C2F0EED3B
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -75,9 +71,9 @@ If the **Code Analysis Results** shows errors that you determine, after careful 
 
 [SAL 2.0 Annotations for Windows Drivers](sal-2-annotations-for-windows-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

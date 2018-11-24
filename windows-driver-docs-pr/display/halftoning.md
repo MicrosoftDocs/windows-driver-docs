@@ -9,11 +9,7 @@ keywords:
 - halftoning WDK GDI
 - fixed-cell spacing WDK GDI
 - size WDK GDI halftoning
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -43,11 +39,11 @@ The [**DrvDitherColor**](https://msdn.microsoft.com/library/windows/hardware/ff5
 
 **Note**   Windows 2000 and later do not support halftoning on 24-bit (or higher) devices.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

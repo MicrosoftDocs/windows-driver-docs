@@ -2,11 +2,7 @@
 title: MB DNS Updates
 description: MB DNS Updates
 ms.assetid: be93f0b4-a075-455e-b03c-6d23a2be7b1d
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -50,15 +46,15 @@ Miniport drivers should set the **NameServer** registry key to update Windows ab
 </tbody>
 </table>
 
- 
+ 
 
 These operations should be used only when the miniport driver specifies **EnableDhcp** to equal zero in its INF file. That is, the miniport driver does not implement DHCP.
 
 For more information about processing IP address notifications, see [Guidelines for MB Miniport driver IP Address Notifications](guidelines-for-mb-miniport-driver-ip-address-notifications.md).
 
- 
+ 
 
- 
+ 
 
 
 

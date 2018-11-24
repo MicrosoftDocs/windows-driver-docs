@@ -1,13 +1,8 @@
 ---
 title: HID client drivers
-author: windows-driver-content
 description: If a system-supplied HID minidriver does not support a device's port or bus, a vendor supplied minidriver is required.
 ms.assetid: E7C57273-B661-4B82-816E-E1466DAF67EA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -47,9 +42,9 @@ Important note:
 -   If a vendor-supplied function driver creates an FDO or filter DO for a HID collection, it should not use the FsContext field of FILE\_OBJECT to store file object-specific data. The FsContext field is reserved for the HID class driver. If another driver in the stack needs to store file object-specific context data, it should use the FsContext2 field instead.
 -   If there are multiple devices attached to the PDO, there is no built-in mechanism to determine which device can use the FsContext2 field.
 
- 
+ 
 
- 
+ 
 
 
 

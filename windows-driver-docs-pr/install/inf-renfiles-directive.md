@@ -10,11 +10,7 @@ api_name:
 - INF RenFiles Directive
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,11 +19,11 @@ ms.localizationpriority: medium
 
 **Note**  If you are building a universal or mobile driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
- 
+ 
 
 A **RenFiles** directive references an INF-writer-defined section elsewhere in the INF file, which causes that list of files to be renamed in the context of operations on the section in which the referring **RenFiles** directive is specified.
 
-```
+```cpp
 [DDInstall] | 
 [DDInstall.CoInstallers] | 
 [ClassInstall32] | 
@@ -45,7 +41,7 @@ A **RenFiles** directive can be specified within any of the sections shown in th
 
 Each named section referenced by a **RenFiles** directive has one or more entries of the following form:
 
-```
+```cpp
 [file-list-section]
  
 new-dest-file-name,old-source-file-name 
@@ -68,7 +64,7 @@ Remarks
 
 **Important**  This directive must be used carefully. We highly recommend that you do not use the **RenFiles** directive in the INF file for a Plug and Play (PnP) function driver.
 
- 
+ 
 
 Any *file-list-section* name must be unique to the INF file, but it can be referenced by [**CopyFiles**](inf-copyfiles-directive.md), **DelFiles**, or **RenFiles** directives elsewhere in the same INF. Such an INF-writer-defined section name must follow the general rules for defining section names. For more information about these rules, see [General Syntax Rules for INF Files](general-syntax-rules-for-inf-files.md).
 
@@ -81,14 +77,14 @@ The [**DestinationDirs**](inf-destinationdirs-section.md) section of the INF fil
 
 **Note**  You cannot use a %*strkey*% token to specify the new or old file names. For more information about %*strkey*% tokens, see [**INF Strings Section**](inf-strings-section.md).
 
- 
+ 
 
 Examples
 --------
 
 This example shows a section referenced by a **RenFiles** directive.
 
-```
+```cpp
 [RenameOldFilesSec]
 devfile41.sav, devfile41.sys
 ```
@@ -119,9 +115,9 @@ devfile41.sav, devfile41.sys
 
 [**Version**](inf-version-section.md)
 
- 
+ 
 
- 
+ 
 
 
 

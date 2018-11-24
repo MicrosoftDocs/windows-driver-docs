@@ -2,11 +2,7 @@
 title: Introduction to NDIS 6.30
 description: Introduction to NDIS 6.30
 ms.assetid: D225780E-731D-4280-8D0B-B0380B117890
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +30,9 @@ This section includes the following topics:
 -   [Using NDIS 6.30 Data Structures](using-ndis-6-30-data-structures.md)
 -   [Compiling an NDIS 6.30 Driver](compiling-an-ndis-6-30-driver.md)
 
- 
+ 
 
- 
+ 
 
 
 

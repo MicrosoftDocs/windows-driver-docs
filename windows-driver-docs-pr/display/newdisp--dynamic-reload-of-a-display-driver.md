@@ -7,11 +7,7 @@ keywords:
 - dyanmic driver reloads WDK Windows 2000 display
 - reload driver dynamically WDK Windows 2000 display
 - reboot prevention with dynamic reload WDK Windows 2000 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The Driver Development Kit (DDK) provides a tool that allows a display driver to
 
 **Note**  This tool is not available in the Windows Vista and later releases of the Windows Driver Kit (WDK).
 
- 
+ 
 
 **To run *newdisp.exe***
 
@@ -47,9 +43,9 @@ A reference to the driver instance exists if the driver has active Direct3D, [**
 
 Note that *newdisp* does not currently cause the video miniport driver to be reloaded. If the miniport driver is changed, the system must be rebooted to install and test it.
 
- 
+ 
 
- 
+ 
 
 
 

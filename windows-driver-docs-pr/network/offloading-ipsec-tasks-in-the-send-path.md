@@ -6,11 +6,7 @@ keywords:
 - ESP-protected packets WDK IPsec offload , send path offload
 - AH-protected packets WDK IPsec offload , send path offload
 - send path offload WDK IPsec offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +25,9 @@ After a miniport driver receives the [**NET\_BUFFER\_LIST**](https://msdn.micros
 
 When the NIC performs IPsec processing on a send packet, it calculates the AH or ESP encryption checksums (or both) for the packet and, if the packet contains an ESP payload, encrypts the packet. The TCP/IP transport has already framed the packet, padded it (if necessary), and assigned it a sequence number and SPI.
 
- 
+ 
 
- 
+ 
 
 
 

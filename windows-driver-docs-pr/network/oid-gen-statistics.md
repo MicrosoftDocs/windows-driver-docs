@@ -1,13 +1,8 @@
 ---
 title: OID_GEN_STATISTICS
-author: windows-driver-content
 description: As a query, NDIS and overlying drivers use the OID_GEN_STATISTICS OID to obtain statistics of an adapter or a miniport driver.
 ms.assetid: ff81d6b0-806d-4ddf-9da1-a169221be61f
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_GEN_STATISTICS Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -51,7 +46,6 @@ The NDIS\_STATISTICS\_INFO structure is defined as follows:
          ULONG64 ifHCOutMulticastOctets;
          ULONG64 ifHCOutBroadcastOctets;
     } NDIS_STATISTICS_INFO, *PNDIS_STATISTICS_INFO;
-  
 ```
 
 
@@ -65,9 +59,9 @@ The [**NDIS\_OBJECT\_HEADER**](https://msdn.microsoft.com/library/windows/hardwa
 <a href="" id="supportedstatistics"></a>**SupportedStatistics**  
 The set of statistics that the miniport driver supports.
 
-**Note**  NDIS 6.0 and later drivers must support all statistics and must report them when queried for OID\_GEN\_STATISTICS.
+**Note**  NDIS 6.0 and later drivers must support all statistics and must report them when queried for OID\_GEN\_STATISTICS.
 
- 
+
 
 The value is the bitwise OR of the following flags:
 
@@ -241,9 +235,9 @@ Requirements
 
 [OID\_GEN\_XMIT\_ERROR](oid-gen-xmit-error.md)
 
- 
 
- 
+
+
 
 
 

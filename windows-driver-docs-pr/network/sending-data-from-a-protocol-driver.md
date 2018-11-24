@@ -4,11 +4,7 @@ description: Sending Data from a Protocol Driver
 ms.assetid: f4fa1814-1d8f-49d3-90fb-766b5b17ef28
 keywords:
 - sending data WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,9 +34,9 @@ When NDIS calls *ProtocolSendNetBufferListsComplete*, the protocol driver regain
 
 Although NDIS always submits protocol-supplied network data to the underlying miniport driver in the protocol-determined order as passed to **NdisSendNetBufferLists**, the underlying driver can complete the send requests in random order. That is, every bound protocol driver can rely on NDIS to submit the network data that the protocol driver passes to **NdisSendNetBufferLists** in FIFO order to the underlying driver. However, no protocol driver can rely on the underlying driver to call **NdisMSendNetBufferListsComplete** in the same order.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,16 +1,11 @@
 ---
 title: A Device Enters a Low-Power State
-author: windows-driver-content
 description: A Device Enters a Low-Power State
 ms.assetid: c3697272-75ec-4de5-b123-3d1c68d2044e
 keywords:
 - power management scenarios WDK UMDF, entering a low-power state
 - low-power state scenario WDK UMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,9 +32,9 @@ For each UMDF-based function and filter driver that supports the device, the fra
 
 To see a diagram that shows these steps, see the orderly removal figure in [A User Unplugs a Device](a-user-unplugs-a-device.md).
 
- 
+ 
 
- 
+ 
 
 
 

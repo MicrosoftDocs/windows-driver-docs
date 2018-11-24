@@ -1,17 +1,12 @@
 ---
 title: Printer Installation and the Plug and Play Manager
-author: windows-driver-content
 description: Printer Installation and the Plug and Play Manager
 ms.assetid: 1edc92f1-fcd9-4af0-957d-cd7ff2e40125
 keywords:
 - Plug and Play manager WDK print
 - duplicate installation detection WDK print
 - detecting duplicate printer installations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -51,9 +46,9 @@ A number of popular printer models share the same hardware ID (the HP DeskJet se
 
 Windows 2000 and later avoids this behavior by listing all printers with both a [*hardware ID*](https://msdn.microsoft.com/library/windows/hardware/ff556288#wdkgloss-hardware-id) and [*compatible ID*](https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-compatible-id) match. When multiple matches are found, the class installer checks to see whether there is already a print queue with the same hardware ID match. If there is, the Plug and Play manager does not install a second queue. If not, the hardware ID match is downgraded to a compatible ID match. If these hardware IDs are also listed in the InteractiveInstall entry (see [**INF ControlFlags Section**](https://msdn.microsoft.com/library/windows/hardware/ff546342)) of the INF file, the user is prompted to select a driver.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: Using LINQ With the debugger objects
 description: Using LINQ With the debugger objects. LINQ syntax can be used with the debugger objects to search and manipulate data.
 keywords: ["Using LINQ With the debugger objects"]
-ms.author: domars
 ms.date: 08/10/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -47,19 +43,19 @@ Many of the methods that are used to query data are based on the concept of repe
 
 To see how LINQ is used with dx, try this simple example to add together 5 and 7.
 
-```
+```dbgcmd
 kd> dx ((x, y) => (x + y))(5, 7) 
 ```
 
 The dx command echos back the lambda expression and displays the result of 12.
 
-```
+```dbgcmd
 ((x, y) => (x + y))(5, 7)  : 12
 ```
 
 This example lambda expression combines the strings "Hello" and "World".
 
-```
+```dbgcmd
 kd> dx ((x, y) => (x + y))("Hello", "World")
 ((x, y) => (x + y))("Hello", "World") : HelloWorld
 ```
@@ -72,7 +68,7 @@ LINQ commands such as the following can be used .All, .Any, .Count, .First, .Fla
 
 This example shows the top 5 processes running the most threads:
 
-```
+```dbgcmd
 0: kd> dx -r2 Debugger.Sessions.First().Processes.Select(p => new { Name = p.Name, ThreadCount = p.Threads.Count() }).OrderByDescending(p => p.ThreadCount),5
 Debugger.Sessions.First().Processes.Select(p => new { Name = p.Name, ThreadCount = p.Threads.Count() }).OrderByDescending(p => p.ThreadCount),5 
 
@@ -97,7 +93,7 @@ Debugger.Sessions.First().Processes.Select(p => new { Name = p.Name, ThreadCount
 
 This example shows the devices in the plug and play device tree grouped by the name of the physical device object's driver. Not all of the output is shown.
 
-```
+```dbgcmd
 kd> dx -r2 Debugger.Sessions.First().Devices.DeviceTree.Flatten(n => n.Children).GroupBy(n => n.PhysicalDeviceObject->Driver->DriverName.ToDisplayString())
 Debugger.Sessions.First().Devices.DeviceTree.Flatten(n => n.Children).GroupBy(n => n.PhysicalDeviceObject->Driver->DriverName.ToDisplayString()) 
 
@@ -117,13 +113,13 @@ Contextual TAB key auto completion is aware of the LINQ query methods and will w
 
 As an example, type (or copy and paste) the following text into the debugger. Then hit the TAB key several times to cycle through potential completions.
 
-```
+```dbgcmd
 dx -r2 Debugger.Sessions.First().Processes.Select(p => new {Name = p.Name, ThreadCount = p.Threads.Count() }).OrderByDescending(p => p.
 ```
 
 Press the TAB key until ".Name" appears. Add a closing parenthesis ")" and press enter to execute the command.
 
-```
+```dbgcmd
 kd> dx -r2 Debugger.Sessions.First().Processes.Select(p => new {Name = p.Name, ThreadCount = p.Threads.Count() }).OrderByDescending(p => p.Name)
 Debugger.Sessions.First().Processes.Select(p => new {Name = p.Name, ThreadCount = p.Threads.Count() }).OrderByDescending(p => p.Name) : 
     [0x274]          : 
@@ -140,13 +136,13 @@ Debugger.Sessions.First().Processes.Select(p => new {Name = p.Name, ThreadCount 
 
 This example shows completion with a key comparator method. The substitution will show string methods, since the key is a string.
 
-```
+```dbgcmd
 dx -r2 Debugger.Sessions.First().Processes.Select(p => new {Name = p.Name, ThreadCount = p.Threads.Count() }).OrderByDescending(p => p.Name, (a, b) => a.
 ```
 
 Press the TAB key until ".Length" appears. Add a closing parenthesis ")" and press enter to execute the command.
 
-```
+```dbgcmd
 kd> dx -r2 Debugger.Sessions.First().Processes.Select(p => new {Name = p.Name, ThreadCount = p.Threads.Count() }).OrderByDescending(p => p.Name, (a, b) => a.Length)
 Debugger.Sessions.First().Processes.Select(p => new {Name = p.Name, ThreadCount = p.Threads.Count() }).OrderByDescending(p => p.Name, (a, b) => a.Length) : 
     [0x544]          : 
@@ -165,13 +161,13 @@ A user defined variable can be defined by prefixing the variable name with @$. A
 
 You can create and set the value of a user variable like this.
 
-```
+```dbgcmd
 kd> dx @$String1="Test String"
 ```
 
 You can display the defined user variables using *Debugger.State.UserVariables* or *@$vars*.
 
-```
+```dbgcmd
 kd> dx Debugger.State.UserVariables
 Debugger.State.UserVariables : 
     mySessionVar     : 
@@ -180,19 +176,19 @@ Debugger.State.UserVariables :
 
 You can remove a variable using .Remove.
 
-```
+```dbgcmd
 kd> dx @$vars.Remove("String1")
 ```
 
 This example shows how to define a user variable to reference Debugger.Sesssions.
 
-```
+```dbgcmd
 kd> dx @$mySessionVar = Debugger.Sessions
 ```
 
 The user defined variable can then be used as shown below.
 
-```
+```dbgcmd
 kd> dx -r2 @$mySessionVar 
 @$mySessionVar   : 
     [0x0]            : Remote KD: KdSrv:Server=@{<Local>},Trans=@{COM:Port=\\.\com3,Baud=115200,Timeout=4000}
@@ -204,7 +200,7 @@ kd> dx -r2 @$mySessionVar
 
 This creation of dynamic objects is done using the C# anonymous type syntax (new { ... }). For more information see about anonymous types, see [Anonymous Types (C# Programming Guide)](https://msdn.microsoft.com/library/bb397696.aspx). This example create an anonymous type with an integer and string value.
 
-```
+```dbgcmd
 kd> dx -r1 new { MyInt = 42, MyString = "Hello World" }
 new { MyInt = 42, MyString = "Hello World" } : 
     MyInt            : 42
@@ -223,12 +219,12 @@ The following system defined variables can be used in any LINQ dx query.
 
 This example show the use of the system defined variables.
 
-```
+```dbgcmd
 kd> dx @$curprocess.Threads.Count()
 @$curprocess.Threads.Count() : 0x4
 ```
 
-```
+```dbgcmd
 kd> dx -r1 @$curprocess.Threads
 @$curprocess.Threads : 
     [0x4adc]         : 
@@ -248,7 +244,7 @@ Filtering Methods
 |----------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
 | .Where ( PredicateMethod ) | Returns a new collection of objects containing every object in the input collection for which the predicate method returned true. |
 
- 
+
 
 Projection Methods
 
@@ -257,7 +253,7 @@ Projection Methods
 | .Flatten ( \[KeyProjectorMethod\] ) | Takes an input container of containers (a tree) and flattens it into a single container which has every element in the tree. If the optional key projector method is supplied, the tree is considered a container of keys which are themselves containers and those keys are determined by a call to the projection method. |
 | .Select ( KeyProjectorMethod )      | Returns a new collection of objects containing the result of calling the projector method on every object in the input collection.                                                                                                                                                                                          |
 
- 
+
 
 Grouping Methods
 
@@ -268,7 +264,7 @@ Grouping Methods
 | Intersect (InnerCollection, \[ComparatorMethod\])                                                                          | Returns the set intersection, which means elements that appear in each of two collections. An optional comparator method can also be specified.                                                               |
 | Union (InnerCollection, \[ComparatorMethod\])                                                                              | Returns the set union, which means unique elements that appear in either of two collections. An optional comparator method can also be specified.                                                             |
 
- 
+
 
 Data Set Methods
 
@@ -279,7 +275,7 @@ Data Set Methods
 | Except (InnerCollection, \[ComparatorMethod\]) | Returns the set difference, which means the elements of one collection that do not appear in a second collection. An optional comparator method can be specified.                                 |
 | Concat (InnerCollection)                       | Concatenates two sequences to form one sequence.                                                                                                                                                  |
 
- 
+
 
 Ordering Methods
 
@@ -288,7 +284,7 @@ Ordering Methods
 | .OrderBy ( KeyProjectorMethod, \[KeyComparatorMethod\] )           | Sorts the collection in ascending order according to a key as provided by calling the key projection method on every object in the input collection. An optional comparator method can be provided.  |
 | .OrderByDescending ( KeyProjectorMethod, \[KeyComparatorMethod\] ) | Sorts the collection in descending order according to a key as provided by calling the key projection method on every object in the input collection. An optional comparator method can be provided. |
 
- 
+
 
 Aggregating Methods
 
@@ -297,7 +293,7 @@ Aggregating Methods
 | Count ()                   | A method that returns the number of elements in the collection.                                                                                |
 | Sum (\[ProjectionMethod\]) | Calculates the sum of the values in a collection. Can optionally specify a projector method to transform the elements before summation occurs. |
 
- 
+
 
 Skip Methods
 
@@ -306,7 +302,7 @@ Skip Methods
 | Skip (Count)                | Skips elements up to a specified position in a sequence.                                      |
 | SkipWhile (PredicateMethod) | Skips elements based on a predicate function until an element does not satisfy the condition. |
 
- 
+
 
 Take Methods
 
@@ -315,7 +311,7 @@ Take Methods
 | Take (Count)                | Takes elements up to a specified position in a sequence.                                      |
 | TakeWhile (PredicateMethod) | Takes elements based on a predicate function until an element does not satisfy the condition. |
 
- 
+
 
 Comparison Methods
 
@@ -323,7 +319,7 @@ Comparison Methods
 |-------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
 | SequenceEqual (InnerCollection, \[ComparatorMethod\]) | Determines whether two sequences are equal by comparing elements in a pair-wise manner. An optional comparator can be specified. |
 
- 
+
 
 Error Handling Methods
 
@@ -333,7 +329,7 @@ Error Handling Methods
 | FirstNonError (\[PredicateMethod\]) | Returns the first element of a collection that isn’t an error.                    |
 | LastNonError (\[PredicateMethod\])  | Returns the last element of a collection that isn’t an error.                     |
 
- 
+
 
 Other Methods
 
@@ -347,7 +343,7 @@ Other Methods
 | Max(\[KeyProjectorMethod\])    | Returns the maximum element of the collection. An optional projector method can be specified to project each method before it is compared to others.                                                                                                                         |
 | Single(\[PredicateMethod\])    | Returns the only element from the list (or an error if the collection contains more than one element). If a predicate is specified, returns the single element that satisfies that predicate (if more than one element satisfies it, the function returns an error instead). |
 
- 
+
 
 **Signatures of the Arguments**
 
@@ -375,7 +371,7 @@ Other Methods
 </tbody>
 </table>
 
- 
+
 
 ## Supported LINQ Syntax - String Manipulation
 
@@ -391,7 +387,7 @@ Query Relevant Methods & Properties
 | .StartsWith ( OtherString )         | Returns a boolean value indicating whether the input string starts with OtherString.                                                                                                                                              |
 | .Substring ( StartPos, \[Length\] ) | Returns a substring within the input string starting at the given starting position. If the optional length is supplied, the returned substring will be of the specified length; otherwise – it will go to the end of the string. |
 
- 
+
 
 Miscellaneous Methods
 
@@ -400,7 +396,7 @@ Miscellaneous Methods
 | .IndexOf ( OtherString )     | Returns the index of the first occurrence of OtherString within the input string. |
 | .LastIndexOf ( OtherString ) | Returns the index of the last occurrence of OtherString within the input string.  |
 
- 
+
 
 Formatting Methods
 
@@ -411,7 +407,7 @@ Formatting Methods
 | .Remove ( StartPos, \[Length\] )         | Removes characters from the input string starting as the specified starting position. If the optional length parameter is supplied, that number of characters will be removed; otherwise – all characters to the end of the string will be removed. |
 | .Replace ( SearchString, ReplaceString ) | Replaces every occurrence of SearchString within the input string with the specified ReplaceString.                                                                                                                                                 |
 
- 
+
 
 String Object Projections
 
@@ -421,11 +417,11 @@ In addition to the methods which are projected directly onto string objects, any
 |----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | .ToDisplayString ( ) | Returns a string conversion of the object. This is the string conversion which would be shown in a dx invocation for the object. You can provide a formatting specifier to format the output of ToDisplayString. |
 
- 
+
 
 The following examples illustrate the use of format specifiers.
 
-```
+```dbgcmd
 kd> dx (10).ToDisplayString("d")
 (10).ToDisplayString("d") : 10
 
@@ -448,7 +444,7 @@ This section illustrates how the built in debugger objects used with LINQ querie
 
 Use *Flatten* on the device tree to view all devices. 
 
-```
+```dbgcmd
  1: kd> dx @$cursession.Devices.DeviceTree.Flatten(n => n.Children)
 @$cursession.Devices.DeviceTree.Flatten(n => n.Children)                
     [0x0]            : HTREE\ROOT\0
@@ -467,7 +463,7 @@ Use *Flatten* on the device tree to view all devices.
 
 As with other dx commands, you can right click on a command after it was executed and click "Display as grid" or add "-g" to the command to get a grid view of the results.
 
-```
+```dbgcmd
 # 0: kd> dx -g @$cursession.Devices.DeviceTree.Flatten(n => n.Children)
 =====================================================================================================================================================================================================================================================================================================================
 # =                                                              = (+) DeviceNodeObject = InstancePath                                                 = ServiceName               = (+) PhysicalDeviceObject                                    = State                          = (+) Resoures = (+) Children       =
@@ -483,13 +479,13 @@ As with other dx commands, you can right click on a command after it was execute
 
 Use *Where* to specify a specific device state.
 
-```
+```dbgcmd
 dx @$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => n.State <operator> <state number>)
 ```
 
 For example to view devices in state DeviceNodeStarted use this command.
 
-```
+```dbgcmd
 1: kd>  dx @$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => n.State == 776)
 @$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => n.State == 776)                
     [0x0]            : HTREE\ROOT\0
@@ -504,7 +500,7 @@ For example to view devices in state DeviceNodeStarted use this command.
 
 Use this command to view devices not in state DeviceNodeStarted.
 
-```
+```dbgcmd
 1: kd>  dx @$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => n.State != 776)
 @$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => n.State != 776)                
     [0x0]            : ACPI\PNP0C01\1
@@ -522,13 +518,13 @@ Use this command to view devices not in state DeviceNodeStarted.
 
 Use the *DeviceNodeObject.Problem* object to view devices that have specific problem codes.
 
-```
+```dbgcmd
 dx @$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => n.DeviceNodeObject.Problem <operator> <problemCode>)
 ```
 
 For example, to view devices that have a non zero problem code use this command. This provides similar information to "[**!devnode**](-devnode.md) 0 21".
 
-```
+```dbgcmd
 1: kd> dx @$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => n.DeviceNodeObject.Problem != 0)
 @$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => n.DeviceNodeObject.Problem != 0)                
     [0x0]            : HTREE\ROOT\0
@@ -539,7 +535,7 @@ For example, to view devices that have a non zero problem code use this command.
 
 Use this command to view all devices without a problem
 
-```
+```dbgcmd
 1: kd> dx @$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => n.DeviceNodeObject.Problem == 0)
 @$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => n.DeviceNodeObject.Problem == 0)                
     [0x0]            : ROOT\volmgr\0000 (volmgr)
@@ -553,7 +549,7 @@ Use this command to view all devices without a problem
 
 Use this command to view devices with a problem state of 0x16.
 
-```
+```dbgcmd
 1: kd> dx @$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => n.DeviceNodeObject.Problem == 0x16)
 @$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => n.DeviceNodeObject.Problem == 0x16)                
     [0x0]            : HTREE\ROOT\0
@@ -564,13 +560,13 @@ Use this command to view devices with a problem state of 0x16.
 
 Use this command to view devices by function driver.
 
-```
+```dbgcmd
 dx @$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => n.ServiceName <operator> <service name>)
 ```
 
 To view devices using a certain function driver, such as atapi, use this command.
 
-```
+```dbgcmd
 1: kd> dx @$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => n.ServiceName == "atapi")
 @$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => n.ServiceName == "atapi")                
     [0x0]            : PCIIDE\IDEChannel\4&10bf2f88&0&0 (atapi)
@@ -581,7 +577,7 @@ To view devices using a certain function driver, such as atapi, use this command
 
 To view the list of what winload loaded as boot start drivers, you need to be in a context where you have access to the LoaderBlock and early enough the LoaderBlock is still around. For example, during nt!IopInitializeBootDrivers. A breakpoint can be set to stop in this context.
 
-```
+```dbgcmd
 1: kd> g
 Breakpoint 0 hit
 nt!IopInitializeBootDrivers:
@@ -590,7 +586,7 @@ nt!IopInitializeBootDrivers:
 
 Use the ?? command to display the boot driver structure.
 
-```
+```dbgcmd
 1: kd> ?? LoaderBlock->BootDriverListHead
 struct _LIST_ENTRY
  [ 0x808c9960 - 0x808c8728 ]
@@ -600,7 +596,7 @@ struct _LIST_ENTRY
 
 Use the Debugger.Utility.Collections.FromListEntry debugger object to view of the data, using the starting address of the nt!\_LIST\_ENTRY structure.
 
-```
+```dbgcmd
 1: kd> dx Debugger.Utility.Collections.FromListEntry(*(nt!_LIST_ENTRY *)0x808c9960, "nt!_BOOT_DRIVER_LIST_ENTRY", "Link")
 Debugger.Utility.Collections.FromListEntry(*(nt!_LIST_ENTRY *)0x808c9960, "nt!_BOOT_DRIVER_LIST_ENTRY", "Link")                
     [0x0]            [Type: _BOOT_DRIVER_LIST_ENTRY]
@@ -614,7 +610,7 @@ Debugger.Utility.Collections.FromListEntry(*(nt!_LIST_ENTRY *)0x808c9960, "nt!_B
 
 Use the -g option to create a grid view of the data.
 
-```
+```dbgcmd
 dx -r1 -g Debugger.Utility.Collections.FromListEntry(*(nt!_LIST_ENTRY *)0x808c9960, "nt!_BOOT_DRIVER_LIST_ENTRY", "Link")
 ```
 
@@ -622,7 +618,7 @@ dx -r1 -g Debugger.Utility.Collections.FromListEntry(*(nt!_LIST_ENTRY *)0x808c99
 
 View devices by capability using the DeviceNodeObject.CapabilityFlags object.
 
-```
+```dbgcmd
 dx -r1 @$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => (n.DeviceNodeObject.CapabilityFlags & <flag>) != 0)
 ```
 
@@ -637,72 +633,77 @@ This table summarizes the use of the dx command with common device capability fl
 <tr class="odd">
 <td align="left">Removable</td>
 <td align="left"><div class="code">
-```
-0: kd> dx -r1 @$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => (n.DeviceNodeObject.CapabilityFlags & 0x10) != 0)
-@$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => (n.DeviceNodeObject.CapabilityFlags & 0x10) != 0)                
+
+<code>dbgcmd
+0: kd&gt; dx -r1 @$cursession.Devices.DeviceTree.Flatten(n =&gt; n.Children).Where(n =&gt; (n.DeviceNodeObject.CapabilityFlags &amp; 0x10) != 0)
+@$cursession.Devices.DeviceTree.Flatten(n =&gt; n.Children).Where(n =&gt; (n.DeviceNodeObject.CapabilityFlags &amp; 0x10) != 0)                
     [0x0]            : SWD\PRINTENUM\{2F8DBBB6-F246-4D84-BB1D-AA8761353885}
     [0x1]            : SWD\PRINTENUM\{F210BC77-55A1-4FCA-AA80-013E2B408378}
     [0x2]            : SWD\PRINTENUM\{07940A8E-11F4-46C3-B714-7FF9B87738F8}
-    [0x3]            : DISPLAY\Default_Monitor\6&1a097cd8&0&UID5527112 (monitor)
-```
+    [0x3]            : DISPLAY\Default_Monitor\6&amp;1a097cd8&amp;0&amp;UID5527112 (monitor)</code>
+
 </div></td>
 </tr>
 <tr class="even">
 <td align="left">UniqueID</td>
 <td align="left"><div class="code">
-```
-0: kd> dx -r1 @$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => (n.DeviceNodeObject.CapabilityFlags & 0x40) != 0)
-@$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => (n.DeviceNodeObject.CapabilityFlags & 0x40) != 0)                
+
+<code>dbgcmd
+0: kd&gt; dx -r1 @$cursession.Devices.DeviceTree.Flatten(n =&gt; n.Children).Where(n =&gt; (n.DeviceNodeObject.CapabilityFlags &amp; 0x40) != 0)
+@$cursession.Devices.DeviceTree.Flatten(n =&gt; n.Children).Where(n =&gt; (n.DeviceNodeObject.CapabilityFlags &amp; 0x40) != 0)                
     [0x0]            : HTREE\ROOT\0
     [0x1]            : ROOT\volmgr\0000 (volmgr)
     [0x2]            : ROOT\spaceport\0000 (spaceport)
-...
-```
+...</code>
+
 </div></td>
 </tr>
 <tr class="odd">
 <td align="left">SilentInstall</td>
 <td align="left"><div class="code">
-```
-0: kd> dx -r1 @$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => (n.DeviceNodeObject.CapabilityFlags & 0x80) != 0)
-@$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => (n.DeviceNodeObject.CapabilityFlags & 0x80) != 0)                
+
+<code>dbgcmd
+0: kd&gt; dx -r1 @$cursession.Devices.DeviceTree.Flatten(n =&gt; n.Children).Where(n =&gt; (n.DeviceNodeObject.CapabilityFlags &amp; 0x80) != 0)
+@$cursession.Devices.DeviceTree.Flatten(n =&gt; n.Children).Where(n =&gt; (n.DeviceNodeObject.CapabilityFlags &amp; 0x80) != 0)                
     [0x0]            : HTREE\ROOT\0
     [0x1]            : ROOT\volmgr\0000 (volmgr)
     [0x2]            : ROOT\spaceport\0000 (spaceport)
-...
-```
+...</code>
+
 </div></td>
 </tr>
 <tr class="even">
 <td align="left">RawDeviceOk</td>
 <td align="left"><div class="code">
-```
-0: kd> dx -r1 @$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => (n.DeviceNodeObject.CapabilityFlags & 0x100) != 0)
-@$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => (n.DeviceNodeObject.CapabilityFlags & 0x100) != 0)                
+
+<code>dbgcmd
+0: kd&gt; dx -r1 @$cursession.Devices.DeviceTree.Flatten(n =&gt; n.Children).Where(n =&gt; (n.DeviceNodeObject.CapabilityFlags &amp; 0x100) != 0)
+@$cursession.Devices.DeviceTree.Flatten(n =&gt; n.Children).Where(n =&gt; (n.DeviceNodeObject.CapabilityFlags &amp; 0x100) != 0)                
     [0x0]            : HTREE\ROOT\0
     [0x1]            : SWD\MMDEVAPI\MicrosoftGSWavetableSynth
     [0x2]            : SWD\IP_TUNNEL_VBUS\IP_TUNNEL_DEVICE_ROOT
-...
-```
+...</code>
+
 </div></td>
 </tr>
 <tr class="odd">
 <td align="left">SurpriseRemovalOK</td>
 <td align="left"><div class="code">
-```
-0: kd> dx -r1 @$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => (n.DeviceNodeObject.CapabilityFlags & 0x200) != 0)
-@$cursession.Devices.DeviceTree.Flatten(n => n.Children).Where(n => (n.DeviceNodeObject.CapabilityFlags & 0x200) != 0)                
+
+<code>dbgcmd
+0: kd&gt; dx -r1 @$cursession.Devices.DeviceTree.Flatten(n =&gt; n.Children).Where(n =&gt; (n.DeviceNodeObject.CapabilityFlags &amp; 0x200) != 0)
+@$cursession.Devices.DeviceTree.Flatten(n =&gt; n.Children).Where(n =&gt; (n.DeviceNodeObject.CapabilityFlags &amp; 0x200) != 0)                
     [0x0]            : SWD\MMDEVAPI\MicrosoftGSWavetableSynth
     [0x1]            : SWD\IP_TUNNEL_VBUS\IP_TUNNEL_DEVICE_ROOT
     [0x2]            : SWD\PRINTENUM\PrintQueues
-...
-```
+...</code>
+
 </div></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 For more information about the CapabilityFlags, see [**DEVICE\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff543095).
 
 
@@ -712,7 +713,7 @@ For more information about the CapabilityFlags, see [**DEVICE\_CAPABILITIES**](h
 
 [Native Debugger Objects in NatVis](native-debugger-objects-in-natvis.md)
 
-[Native Debugger Objects in JavaScript Extensions](native-objects-in-javascript-extensions.md) 
+[Native Debugger Objects in JavaScript Extensions](native-objects-in-javascript-extensions.md) 
 
 ---
 

@@ -3,11 +3,7 @@ title: Command-Line Options
 description: Command-Line Options
 ms.assetid: 080060a1-b1dd-4096-bb9c-8825f4f71b86
 keywords: ["command-line options", "starting the debugger, command-line options"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +26,9 @@ ms.localizationpriority: medium
 -   [**DbgRpc Command-Line Options**](dbgrpc-command-line-options.md)
 -   [**SymStore Command-Line Options**](symstore-command-line-options.md)
 
- 
+ 
 
- 
+ 
 
 
 

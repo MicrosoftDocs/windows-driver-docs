@@ -6,11 +6,7 @@ keywords:
 - status indications WDK networking , WMI
 - WMI WDK networking , status indications
 - Windows Management Instrumentation WDK networking , status indications
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +22,9 @@ If a WMI client registers with WMI to receive an NDIS WMI event, NDIS translates
 
 NDIS drivers can also generate custom status indications. For more information about custom status indications and WMI, see [Customized OIDs and Status Indications](customized-oids-and-status-indications.md).
 
- 
+ 
 
- 
+ 
 
 
 

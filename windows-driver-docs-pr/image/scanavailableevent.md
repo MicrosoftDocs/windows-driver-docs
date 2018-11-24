@@ -9,11 +9,7 @@ api_name:
 - wscn ScanAvailableEvent
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **ScanAvailableEvent** element informs a client that a scan device 
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ScanAvailableEvent>
   child elements
 </wscn:ScanAvailableEvent>
@@ -50,10 +46,10 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ClientContext</strong>](clientcontext.md)</p></td>
+<td><p><a href="clientcontext.md" data-raw-source="[&lt;strong&gt;ClientContext&lt;/strong&gt;](clientcontext.md)"><strong>ClientContext</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>ScanIdentifier</strong>](scanidentifier.md)</p></td>
+<td><p><a href="scanidentifier.md" data-raw-source="[&lt;strong&gt;ScanIdentifier&lt;/strong&gt;](scanidentifier.md)"><strong>ScanIdentifier</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -81,13 +77,13 @@ Examples
 
 The following code example shows how a client subscribes to receive ScanAvailableEvent events from the WSD Scan Service.
 
-```
+```xml
 <soap:Envelope
     xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
     xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing"
     xmlns:wse="http://schemas.xmlsoap.org/ws/2004/08/eventing"
     xmlns:wscn="http://schemas.microsoft.com/windows/2006/01/wdp/scan>
-    soap:encodingStyle=&#39;http://www.w3.org/2002/12/soap-encoding&#39; >
+    soap:encodingStyle='http://www.w3.org/2002/12/soap-encoding' >
   <soap:Header>
     <wsa:To>AddressofScannerService</wsa:To>
       <wsa:Action>
@@ -124,13 +120,13 @@ The following code example shows how a client subscribes to receive ScanAvailabl
 
 The following code example shows the WSD Scan Service's response to a client's subscription request.
 
-```
+```xml
 <soap:Envelope
     xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
     xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing"
     xmlns:wse="http://schemas.xmlsoap.org/ws/2004/08/eventing"
     xmlns:wscn="http://schemas.microsoft.com/windows/2006/01/wdp/scan">
-    soap:encodingStyle=&#39;http://www.w3.org/2002/12/soap-encoding&#39; >
+    soap:encodingStyle='http://www.w3.org/2002/12/soap-encoding' >
   <soap:Header>
     <wsa:To>http://schemas.xmlsoap.org/ws/2003/03/addressing/role/anonymous</wsa:To>
     <wsa:Action>
@@ -158,13 +154,13 @@ The following code example shows the WSD Scan Service's response to a client's s
 
 The following code example shows how the WSD Scan Service sends a ScanAvailableEvent to a client.
 
-```
+```xml
 <soap:Envelope
   xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
   xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing"
   xmlns:wse="http://schemas.xmlsoap.org/ws/2004/08/eventing"
   xmlns:wscn="http://schemas.microsoft.com/windows/2006/01/wdp/scan"
-  soap:encodingStyle=&#39;http://www.w3.org/2002/12/soap-encoding&#39;>
+  soap:encodingStyle='http://www.w3.org/2002/12/soap-encoding'>
 
   <soap:Header>
     <wsa:To>AddressofEventSink</wsa:To>
@@ -183,7 +179,7 @@ The following code example shows how the WSD Scan Service sends a ScanAvailableE
 </soap:Envelope>
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ClientContext**](clientcontext.md)
@@ -194,9 +190,9 @@ The following code example shows how the WSD Scan Service sends a ScanAvailableE
 
 [**ScanIdentifier**](scanidentifier.md)
 
- 
+ 
 
- 
+ 
 
 
 

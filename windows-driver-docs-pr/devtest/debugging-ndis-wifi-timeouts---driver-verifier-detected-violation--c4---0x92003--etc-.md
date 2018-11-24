@@ -2,11 +2,7 @@
 title: Debugging DRIVER_VERIFIER_DETECTED_VIOLATION (C4)
 description: Driver Verifier detects that the driver violates one of the NDIS/WiFi time-out rule.
 ms.assetid: 73D4B6DF-E667-4C71-B985-FCDC05837908
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -64,7 +60,6 @@ DEBUG_FLR_IMAGE_TIMESTAMP:  5229c857
 MODULE_NAME: NdisTimedOidComplete
 
 FAULTING_MODULE: 9fee1000 NdisTimedOidComplete
-
 ```
 
 Further down this analysis output, you can click on the link under the DV\_RULE\_INFO section for additional rule descriptions. For time-out type of rules, the current stack might not contain relevant information.
@@ -159,9 +154,9 @@ When the crash dump has been generated for a timed rule, there is a possibility 
 
 [Debugging with NDISKD (part 3)](http://go.microsoft.com/fwlink/p/?linkid=327571)
 
- 
 
- 
+
+
 
 
 

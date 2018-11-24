@@ -1,11 +1,7 @@
 ---
 Description: Using the WpdDeviceInspector Tool
 title: Using the WpdDeviceInspector Tool
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,7 +16,7 @@ The WpdDeviceInspector tool is a console application that generates a comprehens
 | Device Capabilities      | Identifies commands, objects, content types, formats, and events that are supported by the device.       |
 | Device Content           | Lists object identifier strings and the corresponding Persistent Unique Object Identifier (PUID) values. |
 
- 
+ 
 
 ## <span id="Viewing_the_Command-Line_Options_for_WpdDeviceInspector"></span><span id="viewing_the_command-line_options_for_wpddeviceinspector"></span><span id="VIEWING_THE_COMMAND-LINE_OPTIONS_FOR_WPDDEVICEINSPECTOR"></span>Viewing the Command-Line Options for WpdDeviceInspector
 
@@ -36,7 +32,7 @@ WpdDeviceInspector.exe /?
 
 You can generate a report for a particular device by running *WpdDeviceInspector.exe* without any parameters, and entering the index for the selected device.
 
-```
+```cpp
 > WpdDeviceInspector.exe
 
 
@@ -79,13 +75,13 @@ You can operate *WpdDeviceInspector.exe* to dump the JScript properties and meth
 
 To operate in WPD Automation mode, use the /Automation switch at the command prompt:
 
-```
+```cpp
 WpdDeviceInspector.exe /Automation
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,15 +1,10 @@
 ---
 title: General operational OIDs for connection-oriented miniport drivers
-author: windows-driver-content
 description: This topic describes general operational OIDs for connection-oriented objects.
 ms.assetid: 38a8a256-b70e-4ba9-bc95-f1a2965493b2
 keywords:
 - General operational OIDs connection-oriented miniport drivers
-ms.author: windowsdriverdev
 ms.date: 11/02/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

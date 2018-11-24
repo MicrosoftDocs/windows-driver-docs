@@ -16,11 +16,7 @@ keywords:
 - VPEs WDK DirectDraw , proscan monitors
 - proscan monitors WDK video port extensions
 - progressive scan monitors WDK video port extensions
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,9 +28,9 @@ ms.localizationpriority: medium
 
 On a proscan monitor, the lines are displayed as a frame -- that is, line 1 is displayed, then line 2, then line 3, and so on. The typical television set displays a *2:1 raster* -- that is, it displays the first field of a frame on the odd lines, and then it displays the second field of the frame on the even lines. Any material meant to be played on a television must be processed before being displayed on a proscan monitor.
 
- 
+ 
 
- 
+ 
 
 
 

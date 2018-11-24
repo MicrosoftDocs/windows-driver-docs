@@ -1,9 +1,9 @@
 ---
 title: Design Guidelines for Starting Devices
-author: windows-driver-content
 description: Design Guidelines for Starting Devices
 ms.assetid: fbdde107-f3a5-4713-a4ac-1c9bafa3c634
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Design Guidelines for Starting Devices
@@ -18,9 +18,9 @@ ms.localizationpriority: medium
 
 -   A WDM device driver's ISR should be capable of determining whether it has been called with a spurious interrupt even during device startup. On return from the call to [**IoConnectInterrupt**](https://msdn.microsoft.com/library/windows/hardware/ff548371) in the code path that handles **IRP\_MN\_START\_DEVICE**, the ISR can be called immediately if interrupts are enabled on the device.
 
- 
+ 
 
- 
+ 
 
 
 

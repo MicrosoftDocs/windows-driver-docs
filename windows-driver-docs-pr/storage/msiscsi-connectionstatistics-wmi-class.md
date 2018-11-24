@@ -3,6 +3,7 @@ title: MSiSCSI\_ConnectionStatistics WMI Class
 description: MSiSCSI\_ConnectionStatistics WMI Class
 ms.assetid: f12dfa6a-0999-40a3-9e15-bb65dc086911
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MSiSCSI\_ConnectionStatistics WMI Class
@@ -13,7 +14,7 @@ ms.localizationpriority: medium
 
 The MSiSCSI\_ConnectionStatistics WMI class expose connection statistics. This class is defined as follows in Iscsiprf.mof.
 
-```
+```cpp
 class MSiSCSI_ConnectionStatistics : Win32_PerfRawData {
   [read,key] String  InstanceName;
   [read] boolean  Active;
@@ -76,15 +77,15 @@ When the WMI tool suite compiles the preceding class definition, it produces the
 
 Initiators must register the MSiSCSI\_ConnectionStatistics WMI class with the following target instance name:
 
-```
+```cpp
 targetname_#:#
 ```
 
 The first number sign (\#) is the value in the **USID** member of the [**MSiSCSI\_ConnectionStatistics**](https://msdn.microsoft.com/library/windows/hardware/ff562986) structure, and the second number sign (\#) is the value in the **CID** member of this class.
 
- 
+ 
 
- 
+ 
 
 
 

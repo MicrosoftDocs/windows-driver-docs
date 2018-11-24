@@ -1,17 +1,12 @@
 ---
 title: Managing a Port
-author: windows-driver-content
 description: Managing a Port
 ms.assetid: 204d57bb-eb4a-4417-952a-349e27633560
 keywords:
 - print monitors WDK , port management
 - port management WDK print
 - port management WDK print , about port management
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,9 +20,9 @@ Port management activities consist of [adding a port](adding-a-port.md), [config
 
 One additional, optional management activity involves [setting port time-out values](setting-port-time-out-values.md).
 
- 
+ 
 
- 
+ 
 
 
 

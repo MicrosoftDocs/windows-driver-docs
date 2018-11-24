@@ -3,11 +3,7 @@ title: Object Reference Tracing
 description: Object Reference Tracing
 ms.assetid: b5af0ab0-954b-4da1-a074-df88d2d039f8
 keywords: ["Object Reference Tracing", "Object Reference Tracing, overview", "GFlags, Object Reference Tracing"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,9 +34,9 @@ The following rules apply to Object Reference Tracing:
 
 -   You can store the Object Reference Tracing configuration as a registry setting or a kernel flag (run-time) setting. If you have both registry and kernel flag settings, the run-time settings take precedence, but are lost when you shut down or restart the computer.
 
- 
+ 
 
- 
+ 
 
 
 

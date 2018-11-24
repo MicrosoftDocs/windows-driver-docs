@@ -2,11 +2,7 @@
 title: Application (WindowsInfo)
 description: Application (WindowsInfo)
 ms.assetid: e76ede51-e494-47b4-b30a-e354799f66e7
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -51,7 +47,7 @@ The Application element specifies the application ID for the app.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Child_elements"></span><span id="child_elements"></span><span id="CHILD_ELEMENTS"></span>Child elements
 
@@ -74,13 +70,13 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[AutoplayHandler](autoplayhandler.md)</p></td>
+<td><p><a href="autoplayhandler.md" data-raw-source="[AutoplayHandler](autoplayhandler.md)">AutoplayHandler</a></p></td>
 <td><p>Specifies a UWP device app that should appear as the recommended AutoPlay action when a user plugs in a device.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="XSD"></span><span id="xsd"></span>XSD
 
@@ -115,9 +111,9 @@ Here is an example of how the &lt;Applications&gt; element may be structured ins
 
 The Application element is optional.
 
- 
+ 
 
- 
+ 
 
 
 

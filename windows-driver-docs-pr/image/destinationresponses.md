@@ -9,11 +9,7 @@ api_name:
 - wscn DestinationResponses
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **DestinationResponses** element is a collection of all of the resp
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:DestinationResponses>
   child elements
 </wscn:DestinationResponses>
@@ -50,7 +46,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>DestinationResponse</strong>](destinationresponse.md)</p></td>
+<td><p><a href="destinationresponse.md" data-raw-source="[&lt;strong&gt;DestinationResponse&lt;/strong&gt;](destinationresponse.md)"><strong>DestinationResponse</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -79,16 +75,16 @@ Remarks
 
 A WSD Scan Service must specify one [**DestinationResponse**](destinationresponse.md) child element in a **DestinationResponses** element for each [**ScanDestination**](scandestination.md) element that a client specifies in a **&lt;wse:Subscribe&gt;** request. The **&lt;wse:Subscribe&gt;** element is described in the specification.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**DestinationResponse**](destinationresponse.md)
 
 [**ScanDestination**](scandestination.md)
 
- 
+ 
 
- 
+ 
 
 
 

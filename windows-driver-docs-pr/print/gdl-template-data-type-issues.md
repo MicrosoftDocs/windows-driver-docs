@@ -1,16 +1,11 @@
 ---
 title: GDL Template Data Type Issues
-author: windows-driver-content
 description: GDL Template Data Type Issues
 ms.assetid: 119466d2-bd4a-40b7-9660-cbb649bb1ddd
 keywords:
 - templates WDK GDL , data types
 - data types WDK GDL , problems with template data types
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +22,9 @@ The following specific issues relate to template data types.
 
 [CodePage Template Entry Issues](codepage-template-entry-issues.md)
 
- 
+ 
 
- 
+ 
 
 
 

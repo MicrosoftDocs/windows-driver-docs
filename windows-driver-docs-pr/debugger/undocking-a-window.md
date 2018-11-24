@@ -3,11 +3,7 @@ title: Undocking a Window
 description: Undocking a Window
 ms.assetid: e035b511-949f-4ce1-a948-a8b35fd6562f
 keywords: ["debugging information windows, undocking windows", "undocked windows", "undocking windows"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +27,9 @@ You can also drag a docked window by clicking its title bar. This action enables
 
 When you try to undock or drag a tabbed window by any of these methods, only the active window in the tabbed collection is moved.
 
- 
+ 
 
- 
+ 
 
 
 

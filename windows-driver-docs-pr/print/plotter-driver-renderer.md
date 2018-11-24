@@ -1,6 +1,5 @@
 ---
 title: Plotter Driver Renderer
-author: windows-driver-content
 description: Plotter Driver Renderer
 ms.assetid: 54aac978-6344-41b3-97ea-e78816fb94dc
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - MSPlot WDK print , renderer
 - renderer WDK MSPlot
 - graphics DDI functions WDK print
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +21,9 @@ The plotter driver renderer is implemented as a [printer graphics DLL](printer-g
 
 The renderer is also responsible for sending rendered image data, along with plotter command sequences, to the print spooler, which then directs the images and commands to plotter hardware.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: FSCTL\_QUERY\_PERSISTENT\_VOLUME\_STATE control code
+title: FSCTL_QUERY_PERSISTENT_VOLUME_STATE control code
 description: The FSCTL\_QUERY\_PERSISTENT\_VOLUME\_STATE control code retrieves persistent settings for a file system volume.
 ms.assetid: e54a03bb-9329-4095-bb81-857b46fee31c
 keywords: ["FSCTL_QUERY_PERSISTENT_VOLUME_STATE control code Installable File System Drivers"]
@@ -11,11 +11,7 @@ api_location:
 - Ntifs.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -68,11 +64,11 @@ Status block
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>STATUS_NOT_SUPPORTED</strong></p></td>
-<td align="left"><p>The caller specified an incorrect version number in the <strong>Version</strong> member of [<strong>FILE_FS_PERSISTENT_VOLUME_INFORMATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540280).</p></td>
+<td align="left"><p>The caller specified an incorrect version number in the <strong>Version</strong> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff540280" data-raw-source="[&lt;strong&gt;FILE_FS_PERSISTENT_VOLUME_INFORMATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540280)"><strong>FILE_FS_PERSISTENT_VOLUME_INFORMATION</strong></a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>STATUS_INVALID_PARAMETER</strong></p></td>
-<td align="left"><p>The file system volume is not an open user volume, or the caller specified an invalid flag in the <strong>FlagMask</strong> member of [<strong>FILE_FS_PERSISTENT_VOLUME_INFORMATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540280).</p></td>
+<td align="left"><p>The file system volume is not an open user volume, or the caller specified an invalid flag in the <strong>FlagMask</strong> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff540280" data-raw-source="[&lt;strong&gt;FILE_FS_PERSISTENT_VOLUME_INFORMATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540280)"><strong>FILE_FS_PERSISTENT_VOLUME_INFORMATION</strong></a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>STATUS_BUFFER_TOO_SMALL</strong></p></td>
@@ -97,7 +93,7 @@ Status block
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -128,9 +124,9 @@ Requirements
 
 [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462)
 
- 
+ 
 
- 
+ 
 
 
 

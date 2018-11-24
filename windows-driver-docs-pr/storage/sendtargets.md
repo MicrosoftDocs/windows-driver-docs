@@ -3,6 +3,7 @@ title: SendTargets
 description: SendTargets
 ms.assetid: 9f14dac5-3a85-4897-9145-923c17b92eb6
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # SendTargets
@@ -14,9 +15,9 @@ This WMI method belongs to the unpublished [MSiSCSI\_Operations WMI Class](msisc
 
 Miniport drivers that implement the MSiSCSI\_Operations WMI class are not required to support **SendTargets**.
 
- 
+ 
 
- 
+ 
 
 
 

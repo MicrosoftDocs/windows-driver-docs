@@ -10,11 +10,7 @@ keywords:
 - L2CAP profile drivers WDK Bluetooth
 - Logical Link Controller and Adaptation Protocol WDK Bluetooth
 - connections WDK Bluetooth
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -37,9 +33,9 @@ The **IncomingQueueDepth** member of the \_BRB\_L2CA\_OPEN\_CHANNEL structure sp
 
 When the profile driver no longer requires the L2CAP connection to the remote device, it should [build and send](building-and-sending-a-brb.md) a [**BRB\_L2CA\_CLOSE\_CHANNEL**](https://msdn.microsoft.com/library/windows/hardware/ff536614) request.
 
- 
+ 
 
- 
+ 
 
 
 

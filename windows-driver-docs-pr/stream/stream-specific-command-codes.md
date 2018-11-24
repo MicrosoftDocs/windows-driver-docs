@@ -2,11 +2,7 @@
 title: Stream-Specific Command Codes
 description: Stream-Specific Command Codes
 ms.assetid: b57a1449-6e7a-404a-a513-29a02363c268
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -48,9 +44,9 @@ The stream-specific SRB command codes, with underlying structures shown in the t
 
 [**SRB\_UNKNOWN\_STREAM\_COMMAND**](srb-unknown-stream-command.md)
 
- 
+ 
 
- 
+ 
 
 
 

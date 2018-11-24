@@ -2,11 +2,7 @@
 title: Fast Roaming with 802.11k, 802.11v, and 802.11r
 description: This section describes improved WLAN roaming experiences with 802.11k, 801.11v, and 802.11r
 ms.assetid: EAD532E7-7C43-45BF-8C1A-5645A15F2607
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -41,9 +37,9 @@ Windows 10 continues to support Opportunistic Key Caching (OKC) when 802.11r is
 
 All three features require AP-side support and will not work without those features enabled on the APs.
 
- 
+ 
 
- 
+ 
 
 
 

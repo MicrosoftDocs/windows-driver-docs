@@ -7,11 +7,7 @@ keywords:
 - logging WDK SetupAPI
 - SetupAPI logging WDK Windows Vista
 - SetupAPI logging WDK Windows Vista , about SetupAPI logging
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,9 +20,9 @@ In Windows Vista and later versions of Windows, [SetupAPI](setupapi.md) include
 
 -   The [SetupAPI logging functions](https://msdn.microsoft.com/library/windows/hardware/ff550878), which PnP device installation applications, class installers, and co-installers can use to write log entries to the SetupAPI text logs. For information about how to use these functions, see [Using the SetupAPI Logging Functions](using-the-setupapi-logging-functions.md).
 
- 
+ 
 
- 
+ 
 
 
 

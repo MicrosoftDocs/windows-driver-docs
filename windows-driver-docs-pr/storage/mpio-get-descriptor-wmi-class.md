@@ -3,6 +3,7 @@ title: MPIO\_GET\_DESCRIPTOR WMI Class
 description: MPIO\_GET\_DESCRIPTOR WMI Class
 ms.assetid: 6d48c0b5-c20f-4017-aae5-0b00fa5de18d
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MPIO\_GET\_DESCRIPTOR WMI Class
@@ -10,7 +11,7 @@ ms.localizationpriority: medium
 
 A WMI client uses the MPIO\_GET\_DESCRIPTOR WMI class to query MPIO for the device-path pairing of an MPIO disk.
 
-```
+```cpp
 class MPIO_GET_DESCRIPTOR
 {
     [key, read]
@@ -47,9 +48,9 @@ class MPIO_GET_DESCRIPTOR
 
 When this class definition is compiled by the WMI tool suite, it produces the [**MPIO\_GET\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff562398) data structure. There are no methods associated with this WMI class.
 
- 
+ 
 
- 
+ 
 
 
 

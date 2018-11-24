@@ -1,17 +1,12 @@
 ---
 title: Debugging Spooler Components
-author: windows-driver-content
 description: Debugging Spooler Components
 ms.assetid: ed4dcd29-105c-4562-9741-858cb9542449
 keywords:
 - debugging spooler components WDK printer
 - spooler component debugging WDK print
 - trace messages WDK printer
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +22,7 @@ The second part of this section details the steps need to display trace messages
 
 **Note**   There are special considerations for [debugging XPSDrv printer drivers](debugging-xpsdrv-printer-drivers.md).
 
- 
+ 
 
 ### Displaying Trace Messages in a Spooler Component
 
@@ -45,9 +40,9 @@ To display trace messages in a spooler component:
 
 5.  Click Go.
 
- 
+ 
 
- 
+ 
 
 
 

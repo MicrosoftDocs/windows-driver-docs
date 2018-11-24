@@ -1,13 +1,8 @@
 ---
 title: WDI_TLV_P2P_DISCOVER_MODE
-author: windows-driver-content
 description: WDI_TLV_P2P_DISCOVER_MODE is a TLV that contains Wi-Fi Direct discovery mode information for OID_WDI_TASK_P2P_DISCOVER.
 ms.assetid: 430DDDBE-C861-4E85-BFAB-31670F77696D
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_DISCOVER_MODE Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -40,7 +35,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | UINT8                                                                                      | The scan repeat count. Specifies if the full scan procedure should be repeated. If set to 0, the scan should be repeated until the task is aborted by the host.                                                                 |
 | UINT32                                                                                     | The time between scans. If the scan repeat count is not set to 1, this time specifies how long (in milliseconds) device should wait before repeating the scan procedure after completing a full scan of the requested channels. |
 
- 
+ 
 
 Requirements
 ------------
@@ -66,9 +61,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

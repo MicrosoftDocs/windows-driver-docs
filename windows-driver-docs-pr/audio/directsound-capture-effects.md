@@ -9,11 +9,7 @@ keywords:
 - AEC WDK audio
 - capture effects WDK audio
 - full-duplex applications WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -47,16 +43,16 @@ A full-duplex DirectSound application can use the **IDirectSoundCaptureFXAec** a
 <tbody>
 <tr class="odd">
 <td align="left"><p>GUID_DSCFX_CLASS_AEC</p></td>
-<td align="left"><p>[<strong>KSNODETYPE_ACOUSTIC_ECHO_CANCEL</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537150)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537150" data-raw-source="[&lt;strong&gt;KSNODETYPE_ACOUSTIC_ECHO_CANCEL&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537150)"><strong>KSNODETYPE_ACOUSTIC_ECHO_CANCEL</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>GUID_DSCFX_CLASS_NS</p></td>
-<td align="left"><p>[<strong>KSNODETYPE_NOISE_SUPPRESS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537182)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537182" data-raw-source="[&lt;strong&gt;KSNODETYPE_NOISE_SUPPRESS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537182)"><strong>KSNODETYPE_NOISE_SUPPRESS</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 In Microsoft Windows XP and later, you can expose your audio device's hardware-accelerated capture effects to DirectSound applications. In addition, the AEC system filter (Aec.sys) provides software emulation of AEC and NS effects.
 
@@ -66,9 +62,9 @@ These topics are discussed in the remainder of this section:
 
 [AEC System Filter](aec-system-filter.md)
 
- 
+ 
 
- 
+ 
 
 
 

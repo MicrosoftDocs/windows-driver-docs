@@ -1,6 +1,5 @@
 ---
 title: Iasphelp get\_PendingJobCount method
-author: windows-driver-content
 description: The PendingJobCount property enables an ASP Web page to determine the number of pending print jobs.
 MS-HAID:
 - 'webfnc\_fd1cbaac-f195-4a38-8788-990eb9b3fd6c.xml'
@@ -16,18 +15,18 @@ api_name:
 - Iasphelp.get_PendingJobCount
 api_type:
 - COM
+ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # Iasphelp::get\_PendingJobCount method
-
 
 The **PendingJobCount** property enables an ASP Web page to determine the number of pending print jobs.
 
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT get_PendingJobCount(
   [out] long *pVal
 );
@@ -62,7 +61,7 @@ This property returns one of the values in the following table.
 </tr>
 <tr class="even">
 <td><strong>E_HANDLE</strong></td>
-<td><p>The [<strong>Iasphelp::Open</strong>](iasphelp-open.md) method has not been called.</p></td>
+<td><p>The <a href="iasphelp-open.md" data-raw-source="[&lt;strong&gt;Iasphelp::Open&lt;/strong&gt;](iasphelp-open.md)"><strong>Iasphelp::Open</strong></a> method has not been called.</p></td>
 </tr>
 <tr class="odd">
 <td><strong>E_OUTOFMEMORY</strong></td>
@@ -71,22 +70,17 @@ This property returns one of the values in the following table.
 </tbody>
 </table>
 
- 
-
-### <span id="vbscript_example"></span><span id="VBSCRIPT_EXAMPLE"></span>VBScript Example
-
-Remarks
--------
+## VBScript Example
 
 Before you query this property, call the [**Iasphelp::CalcJobETA**](iasphelp-calcjobeta.md) method to initialize the property value.
 
-```
-    Dim objPrinter
-    strPrinter = Session("MS_printer")
-    Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
-    objPrinter.Open strPrinter
-    objPrinter.CalcJobETA
-    PendingJobs = objPrinter.PendingJobCount
+```vb
+Dim objPrinter
+strPrinter = Session("MS_printer")
+Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
+objPrinter.Open strPrinter
+objPrinter.CalcJobETA
+PendingJobs = objPrinter.PendingJobCount
 ```
 
 Requirements
@@ -102,24 +96,11 @@ Requirements
 <td><p>Target platform</p></td>
 <td>Desktop</td>
 </tr>
-<tr class="even">
-<td><p>Version</p></td>
-<td><p>Available in Windows 2000 and later versions of the Windows operating systems.</p></td>
-</tr>
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**Iasphelp::Open**](iasphelp-open.md)
 
 [**Iasphelp::CalcJobETA**](iasphelp-calcjobeta.md)
-
- 
-
- 
-
-
-
-

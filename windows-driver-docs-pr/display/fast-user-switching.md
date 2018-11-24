@@ -10,11 +10,7 @@ keywords:
 - multiple virtual display drivers WDK Windows 2000 display
 - virtual display drivers WDK Windows 2000 display
 - display drivers WDK Windows 2000 , Fast User Switching
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +24,9 @@ Fast User Switching, a feature of Windows XP and later, enables multiple users t
 
 Fast User Switching works by allowing multiple virtual display drivers to run at the same time. (Each virtual display driver is associated with a particular PDEV.) The video miniport driver, however, exists as a single instance. When one of the virtual display drivers calls a video miniport driver callback, serious problems ensue if the miniport driver attempts to access a passed-in memory address in the context of the display driver when that display driver instance is no longer the active kernel thread. A tenet of the display driver/video miniport driver architecture is that information should flow in one direction only: from the display driver to the video miniport driver.
 
- 
+ 
 
- 
+ 
 
 
 

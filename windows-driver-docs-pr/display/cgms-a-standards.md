@@ -2,11 +2,7 @@
 title: CGMS-A Standards
 description: CGMS-A Standards
 ms.assetid: e41de08f-4dfa-42fc-8ddb-f27385c5780a
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -62,9 +58,9 @@ This standard applies only to Japan.
 
 This standard is published by ARIB. For more information about ARIB, see the [ARIB English](http://go.microsoft.com/fwlink/p/?linkid=71283) website.
 
- 
+ 
 
- 
+ 
 
 
 

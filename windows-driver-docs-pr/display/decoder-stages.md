@@ -13,11 +13,7 @@ keywords:
 - IDCT WDK DirectX VA
 - MCP WDK DirectX VA
 - motion compensation WDK DirectX VA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +27,9 @@ The decoder stages that are depicted in the following figure show the operation 
 
 ![diagram illustrating decoder stages](images/decstages.png)
 
- 
+ 
 
- 
+ 
 
 
 

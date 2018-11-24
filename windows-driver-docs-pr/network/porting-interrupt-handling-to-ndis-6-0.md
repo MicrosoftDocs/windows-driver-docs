@@ -9,11 +9,7 @@ keywords:
 - RSS WDK networking , porting interrupt handling
 - interrupts WDK networking , receive-side scaling
 - message-signaled inter
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +25,9 @@ Unlike an NDIS 5.*x* miniport driver, an NDIS 6.0 miniport driver can request de
 
 For more information about handling interrupts, see [Handling Interrupts](handling-interrupts.md).
 
- 
+ 
 
- 
+ 
 
 
 

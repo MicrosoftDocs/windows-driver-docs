@@ -3,11 +3,7 @@ title: ioreslist
 description: The ioreslist extension displays an IO_RESOURCE_REQUIREMENTS_LIST structure.
 ms.assetid: cb599656-2e0a-41ec-8358-a42047974dea
 keywords: ["ioreslist Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!ioreslist** extension displays an IO\_RESOURCE\_REQUIREMENTS\_LIST structure.
 
-```
+```dbgcmd
 !ioreslist Address 
 ```
 
@@ -51,7 +47,7 @@ Specifies the hexadecimal address of the IO\_RESOURCE\_REQUIREMENTS\_LIST struct
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -62,7 +58,7 @@ Remarks
 
 Here is an example of the output from this extension:
 
-```
+```dbgcmd
 kd> !ioreslist 0xe122b768
 
 IoResList at 0xe122b768 : Interface 0x5  Bus 0  Slot 0xe
@@ -120,9 +116,9 @@ This resource list contains the following requests:
 
 Interrupts and DMA channels are represented as ranges with the same beginning and end.
 
- 
+ 
 
- 
+ 
 
 
 

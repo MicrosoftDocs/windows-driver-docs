@@ -18,11 +18,7 @@ keywords:
 - rendering engine WDK audio
 - DirectMusic WDK audio , synthesizers
 - DMus port drivers WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -56,9 +52,9 @@ When these steps are completed, the user-mode DirectMusic port should be open an
 
 A user-mode software synthesizer can be implemented as an object with an [IDirectMusicSynth](https://msdn.microsoft.com/library/windows/hardware/ff536519) interface. A user-mode wave sink can be implemented as an object with an [IDirectMusicSynthSink](https://msdn.microsoft.com/library/windows/hardware/ff536520) interface. For more information, see [IDirectMusicSynth and IDirectMusicSynthSink](idirectmusicsynth-and-idirectmusicsynthsink.md).
 
- 
+ 
 
- 
+ 
 
 
 

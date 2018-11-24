@@ -6,11 +6,7 @@ keywords:
 - shaders WDK DirectX 9.0
 - vertex shaders WDK DirectX 9.0
 - pixel shaders WDK DirectX 9.0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +22,9 @@ The DirectX 9.0 version driver for a display device that supports pixel or verte
 
 [Reporting Capabilities for Shader 3 Support](reporting-capabilities-for-shader-3-support.md)
 
- 
+ 
 
- 
+ 
 
 
 

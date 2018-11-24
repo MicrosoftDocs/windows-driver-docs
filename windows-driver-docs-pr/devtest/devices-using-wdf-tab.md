@@ -5,11 +5,7 @@ ms.assetid: 06144cf4-bb6f-4b5b-ac0d-f4fae89a04a9
 keywords:
 - WDF Verifier WDK , managing KMDF settings
 - KMDF verifier settings WDK WDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +30,9 @@ Similarly, you can click the + in the driver stack to open the node, and then ri
 
 If you make changes on the **Devices using WDF** page, you'll see those changes reflected on the **WDF Drivers** page.
 
- 
+ 
 
- 
+ 
 
 
 

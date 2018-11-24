@@ -2,11 +2,7 @@
 title: Virtual Machine Queue (VMQ)
 description: Virtual Machine Queue (VMQ)
 ms.assetid: c502c7d6-bdf1-4656-b5a5-339250910f08
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,7 +18,7 @@ The [Virtual Machine Queue Architecture](virtual-machine-queue-architecture.md) 
 
 **Note**  Be sure to study the [NDIS Virtual Miniport Driver sample](http://go.microsoft.com/fwlink/p/?LinkId=617918), especially the vmq.c and vmq.h source files.
 
- 
+ 
 
 The VMQ interface supports:
 
@@ -37,9 +33,9 @@ This section includes the following topics:
 -   [Virtual Machine Queue Architecture](virtual-machine-queue-architecture.md)
 -   [Writing VMQ Drivers](writing-vmq-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

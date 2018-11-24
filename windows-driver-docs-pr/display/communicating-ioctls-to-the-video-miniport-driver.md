@@ -5,11 +5,7 @@ ms.assetid: 9f9ad20e-d8cf-485d-adad-c04eeb40b705
 keywords:
 - video miniport drivers WDK Windows 2000 , IOCTLs
 - IOCTLs WDK Windows 2000 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +27,9 @@ In general, and unless modularity dictates otherwise, the display driver handles
 
 See [Video Miniport Driver I/O Control Codes](https://msdn.microsoft.com/library/windows/hardware/ff570515) for descriptions of system-defined video IOCTLs. You can extend the interface between the display driver and the video miniport driver by adding a *private IOCTL*, which must be formatted as described in [Defining I/O Control Codes](https://msdn.microsoft.com/library/windows/hardware/ff543023). If you need to write a new IOCTL, you should first contact Microsoft Technical Support.
 
- 
+ 
 
- 
+ 
 
 
 

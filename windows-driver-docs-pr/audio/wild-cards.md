@@ -6,11 +6,7 @@ keywords:
 - data-intersection handlers WDK audio , wild cards
 - wild cards WDK audio
 - data ranges WDK audio , wild cards
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +26,9 @@ The header file Ks.h defines the following wild-card parameters for [**KS data r
 
 The **MajorFormat**, **Subformat**, and **Specifier** members of the **DataRange** member of the [**KSDATARANGE\_AUDIO**](https://msdn.microsoft.com/library/windows/hardware/ff537096) structure can be set to these values. A wild card matches any corresponding value to which it is being compared, including any data formats that might be defined in the future. System filters that can move data without understanding the data format are the primary users of wild cards. Adapter drivers should avoid specifying wild cards in the data ranges for their filter pins, but they should be prepared to accept wild cards in the data ranges for the client filter's pins.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Participating in Error Information Retrieval
-author: windows-driver-content
 description: Participating in Error Information Retrieval
 ms.assetid: ed0ad20b-d978-4650-b3a0-6b0795323c77
 keywords:
@@ -11,11 +10,7 @@ keywords:
 - platform-specific hardware error driver plug-ins WDK WHEA , error information retrieval
 - PSHED plug-ins WDK WHEA , error information retrieval
 - error information retrieval WDK WHEA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,7 +27,7 @@ To participate in error information retrieval, a PSHED plug-in must implement th
 
 The following code example shows how to implement these callback functions.
 
-```
+```cpp
 //
 // The PSHED plug-in&#39;s RetrieveErrorInfo callback function
 //
@@ -176,9 +171,9 @@ NTSTATUS
 
 A PSHED plug-in that participates in error information retrieval must specify the **PshedFAErrorInfoRetrieval** flag when it [registers](registering-a-pshed-plug-in.md) itself with the operating system.
 
- 
+ 
 
- 
+ 
 
 
 

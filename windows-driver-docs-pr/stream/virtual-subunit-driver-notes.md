@@ -1,6 +1,5 @@
 ---
 title: Virtual Subunit Driver Notes
-author: windows-driver-content
 description: Virtual Subunit Driver Notes
 ms.assetid: e484f815-73a8-46f1-956e-ee16b1856bd0
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - virtual subunit drivers WDK AV/C
 - external devices WDK AV/C
 - IOCTL_AVC_CLASS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -41,7 +36,7 @@ Each value under the Virtual Device List key is a packed subunit address (subuni
 
 For example, to create a single virtual tuner subunit through an INF file, use the following **AddReg** directive:
 
-```
+```INF
 [Subunit_Device.NT.HW.AddReg]
 HKR,%VirtualAvc.DeviceList%,Tuner,0x00000001,0x28 ;0x00000001 = Binary value, 0x28 = Registry key value
 ```
@@ -49,13 +44,3 @@ HKR,%VirtualAvc.DeviceList%,Tuner,0x00000001,0x28 ;0x00000001 = Binary value, 0x
 This directive adds a REG\_BINARY value of 0x28 (subunit type 0x5 packed into the most significant five bits and maximum identifier of 0x0 packed into the least significant three bits). A maximum identifier of 0x0 here means that there will be a single subunit of that type.
 
 **Note**  : It is also necessary to define the `%VirtualAvc.DeviceList%` token in the `[Strings]` section of the subunit's INF file.
-
- 
-
- 
-
- 
-
-
-
-

@@ -11,11 +11,7 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -41,7 +37,7 @@ The following table describes the constants that are valid with the WIA\_IPS\_FI
 | WIA\_FILM\_COLOR\_NEGATIVE | The scan will be a color scan of a negative.       |
 | WIA\_FILM\_BW\_NEGATIVE    | The scan will be black and white (grayscale) scan. |
 
- 
+ 
 
 This property is required for the root item in the WIA item tree of film scanners and transparency adapters.
 
@@ -65,9 +61,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

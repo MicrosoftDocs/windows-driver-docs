@@ -7,11 +7,7 @@ keywords:
 - send operation porting WDK networking
 - receive operation porting WDK networking
 - data send/receive operation porting WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -47,9 +43,9 @@ For more information about send and receive operations in the miniport upper edg
 
 For more information about send and receive operations in the protocol lower edge of an intermediate driver, see [Porting Protocol Driver Send and Receive Operations to NDIS 6.0](porting-protocol-driver-send-and-receive-operations-to-ndis-6-0.md).
 
- 
+ 
 
- 
+ 
 
 
 

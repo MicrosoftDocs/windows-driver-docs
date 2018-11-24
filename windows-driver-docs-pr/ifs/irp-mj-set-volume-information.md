@@ -1,5 +1,5 @@
 ---
-title: IRP\_MJ\_SET\_VOLUME\_INFORMATION
+title: IRP_MJ_SET_VOLUME_INFORMATION
 description: IRP\_MJ\_SET\_VOLUME\_INFORMATION
 ms.assetid: 7c317e8b-ffa9-47f7-ac53-23b09873fab9
 keywords: ["IRP_MJ_SET_VOLUME_INFORMATION Installable File System Drivers"]
@@ -9,11 +9,7 @@ api_name:
 - IRP_MJ_SET_VOLUME_INFORMATION
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -90,20 +86,20 @@ Specifies the type of information to be set for the volume. This value can be on
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>FileFsControlInformation</strong></p></td>
-<td align="left"><p>Set [<strong>FILE_FS_CONTROL_INFORMATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540258) for the volume.</p></td>
+<td align="left"><p>Set <a href="https://msdn.microsoft.com/library/windows/hardware/ff540258" data-raw-source="[&lt;strong&gt;FILE_FS_CONTROL_INFORMATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540258)"><strong>FILE_FS_CONTROL_INFORMATION</strong></a> for the volume.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>FileFsLabelInformation</strong></p></td>
-<td align="left"><p>Set [<strong>FILE_FS_LABEL_INFORMATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540271) for the volume.</p></td>
+<td align="left"><p>Set <a href="https://msdn.microsoft.com/library/windows/hardware/ff540271" data-raw-source="[&lt;strong&gt;FILE_FS_LABEL_INFORMATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540271)"><strong>FILE_FS_LABEL_INFORMATION</strong></a> for the volume.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>FileFsObjectIdInformation</strong></p></td>
-<td align="left"><p>Set [<strong>FILE_FS_OBJECTID_INFORMATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540274) for the volume.</p></td>
+<td align="left"><p>Set <a href="https://msdn.microsoft.com/library/windows/hardware/ff540274" data-raw-source="[&lt;strong&gt;FILE_FS_OBJECTID_INFORMATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540274)"><strong>FILE_FS_OBJECTID_INFORMATION</strong></a> for the volume.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 <a href="" id="irpsp--parameters-setvolume-length"></a>*IrpSp-&gt;Parameters.SetVolume.Length*
 Length, in bytes, of the buffer pointed to by *Irp-&gt;AssociatedIrp.SystemBuffer*.
@@ -131,9 +127,9 @@ Length, in bytes, of the buffer pointed to by *Irp-&gt;AssociatedIrp.SystemBuffe
 
 [**ZwSetVolumeInformationFile**](https://msdn.microsoft.com/library/windows/hardware/ff567112)
 
- 
+ 
 
- 
+ 
 
 
 

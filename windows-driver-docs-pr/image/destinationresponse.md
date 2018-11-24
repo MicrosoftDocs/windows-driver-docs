@@ -9,11 +9,7 @@ api_name:
 - wscn DestinationResponse
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **DestinationResponse** element contains the response information f
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:DestinationResponse>
   child elements
 </wscn:DestinationResponse>
@@ -53,10 +49,10 @@ There are no attributes.
 <td><p>&lt;Any vendor-defined elements&gt;</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>ClientContext</strong>](clientcontext.md)</p></td>
+<td><p><a href="clientcontext.md" data-raw-source="[&lt;strong&gt;ClientContext&lt;/strong&gt;](clientcontext.md)"><strong>ClientContext</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>DestinationToken</strong>](destinationtoken.md)</p></td>
+<td><p><a href="destinationtoken.md" data-raw-source="[&lt;strong&gt;DestinationToken&lt;/strong&gt;](destinationtoken.md)"><strong>DestinationToken</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -75,7 +71,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>DestinationResponses</strong>](destinationresponses.md)</p></td>
+<td><p><a href="destinationresponses.md" data-raw-source="[&lt;strong&gt;DestinationResponses&lt;/strong&gt;](destinationresponses.md)"><strong>DestinationResponses</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -85,7 +81,7 @@ Remarks
 
 The **DestinationResponse** element contains the [**ClientContext**](clientcontext.md) element from its matching [**ScanDestination**](scandestination.md) element so that the client can identify the response. **DestinationResponse** also contains a [**DestinationToken**](destinationtoken.md) element for use in all [**CreateScanJobRequest**](createscanjobrequest.md) operation elements from this destination.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ClientContext**](clientcontext.md)
@@ -98,9 +94,9 @@ The **DestinationResponse** element contains the [**ClientContext**](clientconte
 
 [**ScanDestination**](scandestination.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,13 +1,8 @@
 ---
 title: WDI_TLV_BEACON_IES
-author: windows-driver-content
 description: WDI_TLV_BEACON_IES is a TLV that contains beacon IEs from an association.
 ms.assetid: A3E70310-2130-4248-B730-2DEF41C25993
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_BEACON_IES Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -35,7 +30,7 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 |-----------|-------------------------------------|
 | UINT8\[\] | The beacon IEs from an association. |
 
- 
+ 
 
 Requirements
 ------------
@@ -61,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

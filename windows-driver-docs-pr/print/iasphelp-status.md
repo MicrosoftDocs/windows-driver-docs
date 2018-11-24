@@ -1,6 +1,5 @@
 ---
 title: Iasphelp get\_Status method
-author: windows-driver-content
 description: The Status property enables an ASP Web page to determine the printer status.
 MS-HAID:
 - 'webfnc\_30feffa7-1aa0-4b66-9d0a-1f66025272c3.xml'
@@ -16,18 +15,18 @@ api_name:
 - Iasphelp.get_Status
 api_type:
 - COM
+ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # Iasphelp::get\_Status method
-
 
 The **Status** property enables an ASP Web page to determine the printer status.
 
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT get_Status(
   [out] long *pVal
 );
@@ -62,7 +61,7 @@ Win32 error codes can also be returned.
 </tr>
 <tr class="even">
 <td><strong>E_HANDLE</strong></td>
-<td><p>The [<strong>Iasphelp::Open</strong>](iasphelp-open.md) method has not been called.</p></td>
+<td><p>The <a href="iasphelp-open.md" data-raw-source="[&lt;strong&gt;Iasphelp::Open&lt;/strong&gt;](iasphelp-open.md)"><strong>Iasphelp::Open</strong></a> method has not been called.</p></td>
 </tr>
 <tr class="odd">
 <td><strong>E_OUTOFMEMORY</strong></td>
@@ -71,23 +70,18 @@ Win32 error codes can also be returned.
 </tbody>
 </table>
 
- 
-
-### <span id="vbscript_example"></span><span id="VBSCRIPT_EXAMPLE"></span>VBScript Example
-
-Remarks
--------
+## VBScript Example
 
 The property value is a printer status code that is either 0 or the bitwise OR of one or more of the PRINTER\_STATUS\_*XXX* flags that are defined in header file Winspool.h for the **Status** member of the PRINTER\_INFO\_2 structure. For more information about this structure, see the Windows SDK documentation.
 
 The [**Iasphelp::Open**](iasphelp-open.md) method must be called before the **Iasphelp::Status** property can be queried.
 
-```
-    Dim objPrinter, PtrStatus
-    strPrinter = Session("MS_printer")
-    Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
-    objPrinter.Open strPrinter
-    PtrStatus = objPrinter.Status
+```vb
+Dim objPrinter, PtrStatus
+strPrinter = Session("MS_printer")
+Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
+objPrinter.Open strPrinter
+PtrStatus = objPrinter.Status
 ```
 
 Requirements
@@ -103,22 +97,9 @@ Requirements
 <td><p>Target platform</p></td>
 <td>Desktop</td>
 </tr>
-<tr class="even">
-<td><p>Version</p></td>
-<td><p>Available in Windows 2000 and later versions of the Windows operating systems.</p></td>
-</tr>
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [**Iasphelp::Open**](iasphelp-open.md)
-
- 
-
- 
-
-
-
-

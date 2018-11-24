@@ -7,11 +7,7 @@ keywords:
 - virtual miniports WDK networking
 - NDIS intermediate drivers WDK , virtual miniports
 - intermediate drivers WDK networking , virtual miniports
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +25,9 @@ NDIS passes initialization parameters to *MiniportInitializeEx* in an [**NDIS\_M
 
 In *MiniportInitializeEx*, the intermediate driver performs the operations required to initialize a virtual miniport. This initialization is similar to the initialization of any other miniport adapter.
 
- 
+ 
 
- 
+ 
 
 
 

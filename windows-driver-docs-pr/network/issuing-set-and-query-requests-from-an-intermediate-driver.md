@@ -5,11 +5,7 @@ ms.assetid: bd049639-970c-43c8-8ef9-c5e75cc2d75f
 keywords:
 - query operations WDK NDIS intermediate
 - set operations WDK NDIS intermediate
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,9 +21,9 @@ To cancel an OID request, call the [**NdisCancelOidRequest**](https://msdn.micro
 
 For more information about responding to set and query requests, see [Responding to Sets and Queries in an Intermediate Driver](responding-to-sets-and-queries-in-an-intermediate-driver.md). For more information about issuing OID requests, see [OID Request Operations in a Protocol Driver](oid-request-operations-in-a-protocol-driver.md).
 
- 
+ 
 
- 
+ 
 
 
 

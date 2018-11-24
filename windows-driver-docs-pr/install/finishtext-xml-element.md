@@ -10,6 +10,7 @@ api_name:
 api_type:
 - NA
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # finishText XML Element
@@ -21,7 +22,7 @@ The **finishText** XML element customizes the main text that DPInst displays on 
 
 ### Element Tag
 
-```
+```cpp
 <finishText>
 ```
 
@@ -39,7 +40,7 @@ None
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Parent elements</strong></p></td>
-<td align="left"><p>[<strong>language</strong>](language-xml-element.md)</p></td>
+<td align="left"><p><a href="language-xml-element.md" data-raw-source="[&lt;strong&gt;language&lt;/strong&gt;](language-xml-element.md)"><strong>language</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Child elements</strong></p></td>
@@ -56,13 +57,13 @@ None
 </tbody>
 </table>
 
- 
+ 
 
 ### <a href="" id="comments"></a>Remarks
 
 The following code example demonstrates a **finishText** element that customizes the main text on a finish page that DPInst displays for a successful installation. The text that specifies the custom finish text is shown in bold font style.
 
-```
+```cpp
 dpinst>
   ...
   <language code="0x0409">
@@ -83,9 +84,9 @@ If a **finishText** element is not specified, DPInst displays default finish tex
 
 [**language**](language-xml-element.md)
 
- 
+ 
 
- 
+ 
 
 
 

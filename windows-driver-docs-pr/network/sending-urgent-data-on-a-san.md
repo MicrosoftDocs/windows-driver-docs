@@ -4,11 +4,7 @@ description: Sending Urgent Data on a SAN
 ms.assetid: 9ff9719a-dd42-4ce7-8c07-370afa17fd7b
 keywords:
 - urgent data WDK SANs
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +30,9 @@ If an application sends urgent data on a SAN, the Windows Sockets switch transfe
 
 7.  The switch at the remote peer delivers the data to an application in accordance with standard Windows Sockets procedures.
 
- 
+ 
 
- 
+ 
 
 
 

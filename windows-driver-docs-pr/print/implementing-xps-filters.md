@@ -1,6 +1,5 @@
 ---
 title: Implementing XPS Filters
-author: windows-driver-content
 description: Implementing XPS Filters
 ms.assetid: 681f533f-d6f6-43a3-be0b-10d8c1a6f12e
 keywords:
@@ -9,11 +8,7 @@ keywords:
 - XPS filters WDK XPSDrv
 - filters WDK XPS
 - IPrintPipelineFilter
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -58,9 +53,9 @@ The following recommendations apply to filters:
 
 For more information about adding asynchronous notification to your filter, see [Asynchronous Notifications in Print Filters](asynchronous-notifications-in-print-filters.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -9,11 +9,7 @@ api_name:
 - wscn JobCompletedState
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **JobCompletedState** element specifies a job's final job state.
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:JobCompletedState>
   text
 </wscn:JobCompletedState>
@@ -65,7 +61,7 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>JobEndState</strong>](jobendstate.md)</p></td>
+<td><p><a href="jobendstate.md" data-raw-source="[&lt;strong&gt;JobEndState&lt;/strong&gt;](jobendstate.md)"><strong>JobEndState</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -75,7 +71,7 @@ Remarks
 
 The WSD Scan Service sends a **JobCompletedState** element to the client within the [**JobEndStateEvent**](jobendstateevent.md) event element.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**JobEndState**](jobendstate.md)
@@ -84,9 +80,9 @@ The WSD Scan Service sends a **JobCompletedState** element to the client within 
 
 [**JobState**](jobstate.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Customizing CPSUI-Supported Window Controls
-author: windows-driver-content
 description: Customizing CPSUI-Supported Window Controls
 ms.assetid: b9ced902-6368-4b3b-a974-81e7d38c0ced
 keywords:
@@ -9,11 +8,7 @@ keywords:
 - property sheet pages WDK print , window controls
 - window controls WDK CPSUI
 - customizing CPSUI-supported window controls WDK print
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -39,9 +34,9 @@ If you are customizing CPSUI-supported window controls, remember that CPSUI does
 
 Also, note that if radio buttons and icons are arranged top to bottom and some of these controls are hidden, CPSUI does not remove resulting white space in the y direction.
 
- 
+ 
 
- 
+ 
 
 
 

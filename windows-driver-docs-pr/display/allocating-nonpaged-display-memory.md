@@ -4,11 +4,7 @@ description: Allocating Nonpaged Display Memory
 ms.assetid: 6a8523e7-3955-4289-b131-52556ba3e631
 keywords:
 - nonpaged display memory WDK DirectX 9.0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +22,9 @@ Windows 2000 and earlier only permitted allocations from the system's paged pool
 
 Although this feature of allocating from nonpaged pool was available in WindowsXP and later, it was not documented in the Windows XP and Windows XP with Service Pack 1 (SP1) DDKs.
 
- 
+ 
 
- 
+ 
 
 
 

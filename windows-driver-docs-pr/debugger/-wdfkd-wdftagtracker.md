@@ -3,11 +3,7 @@ title: wdfkd.wdftagtracker
 description: The wdfkd.wdftagtracker extension displays all available tag information (including tag value, line, file, and time) for a specified tag tracker.
 ms.assetid: d8720446-58c1-4792-9e16-0facfe8fa39f
 keywords: ["wdfkd.wdftagtracker Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!wdfkd.wdftagtracker** extension displays all available tag information (including tag value, line, file, and time) for a specified tag tracker.
 
-```
+```dbgcmd
 !wdfkd.wdftagtracker TagObjectPointer [Flags]
 ```
 
@@ -64,15 +60,15 @@ To enable the KMDF verifier, set a nonzero value for **VerifierOn**.
 
 To enable handle tracking, set the value of **TrackHandles** to the name of one or more object types, or specify an asterisk (\*) to track all object types. For example, the following example specifies the tracking of references to all WDFDEVICE and WDFQUEUE objects.
 
-```
+```text
 TrackHandles: MULTI_SZ: WDFDEVICE WDFQUEUE
 ```
 
 When you enable handle tracking for an object type, the framework tracks the references that are taken on any object of that type. This setting is useful in finding driver memory leaks that unreleased references cause. **TrackHandles** works only if the KMDF verifier is enabled.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -10,11 +10,7 @@ keywords:
 - debugger messages WDK
 - messages WDK checked builds
 - errors WDK checked builds
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -138,9 +134,9 @@ Some of the most common messages that the checked build can display during drive
 
 Enabling additional trace or informational messages in various system components can also cause debugger messages without subsequent breakpoints or ASSERT failures.
 
- 
+ 
 
- 
+ 
 
 
 

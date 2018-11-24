@@ -4,11 +4,7 @@ description: Determining Whether a Platform is Mobile or Desktop
 ms.assetid: f0a553a4-a23b-45c8-abc5-b5014ba328ae
 keywords:
 - TMM WDK display , determining mobile or desktop
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,7 +15,7 @@ TMM runs only on mobile computers and is automatically disabled on desktop compu
 
 Hardware vendors can use the following code to determine if a platform is mobile or desktop. The platform can then use the appropriate mechanism to enter clone view.
 
-```
+```cpp
 #include <Powrprof.h>   // For GetPwrCapabilities
 
     BOOL IsMobilePlatform()
@@ -59,9 +55,9 @@ Hardware vendors can use the following code to determine if a platform is mobile
 
 For information about the functions that are called in the preceding code, see the Microsoft Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

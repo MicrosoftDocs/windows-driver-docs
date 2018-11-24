@@ -6,11 +6,7 @@ keywords:
 - asynchronous query operations WDK DirectX 9.0 , D3dDrawPrimitives2
 - query operations WDK DirectX 9.0 , D3dDrawPrimitives2
 - D3dDrawPrimitives2
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +22,9 @@ The ability of a DirectX 9.0 version driver to handle asynchronous queries impos
 
 -   On success of *D3dDrawPrimitives2* (**ddrval** of the [**D3DHAL\_DRAWPRIMITIVES2DATA**](https://msdn.microsoft.com/library/windows/hardware/ff545957) structure set to D3D\_OK), the driver must ensure that it only sets the **dwErrorOffset** member of D3DHAL\_DRAWPRIMITIVES2DATA to nonzero when responses are available. If the driver does not respond to any queries and **ddrval** is D3D\_OK, **dwErrorOffset** must be set to zero.
 
- 
+ 
 
- 
+ 
 
 
 

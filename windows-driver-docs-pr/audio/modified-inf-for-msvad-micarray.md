@@ -2,11 +2,7 @@
 title: Modified INF for MSVAD Micarray
 description: Modified INF for MSVAD Micarray
 ms.assetid: 0bb57f16-3b32-45c8-aca1-4dc96cb7a744
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -17,7 +13,7 @@ This topic shows how to modify the Micarray.inf sample file to provide setup inf
 
 Navigate to Src\\Audio\\Msvad to locate Micarray.inf. Make a copy of the original file under a new name, and then edit Micarray.inf as follows:
 
-```
+```inf
 // Modified micarray.inf file tailored for a microphone array
 [Version]
 Signature="$CHICAGO$"
@@ -158,9 +154,9 @@ Simple.Name="MSVAD (Simple)"
 
 After you modify the file as shown in the preceding example, save it in its original location. For more information about how to build the microphone array sample driver, see [Microphone Array Geometry Property](microphone-array-geometry-property.md).
 
- 
+ 
 
- 
+ 
 
 
 

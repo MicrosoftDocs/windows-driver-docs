@@ -9,11 +9,7 @@ keywords:
 - buffers WDK DirectX VA
 - buffer description list WDK DirectX VA
 - DXVA_BufferDescription
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ DirectX VA operates primarily by passing buffers of data from the host decoder t
 
 The value of the **dwTypeIndex** member of the [**DXVA\_BufferDescription**](https://msdn.microsoft.com/library/windows/hardware/ff563122) structure specifies what type of buffer is passed from the host to the accelerator.
 
- 
+ 
 
- 
+ 
 
 
 

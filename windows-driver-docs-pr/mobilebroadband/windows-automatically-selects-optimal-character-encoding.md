@@ -2,11 +2,7 @@
 title: Windows automatically selects optimal character encoding
 description: Windows automatically selects optimal character encoding
 ms.assetid: 3fde6e89-c9ea-43d2-a999-506686b223f4
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -85,7 +81,7 @@ The following table lists the character encodings supported by the text-mode API
 </tbody>
 </table>
 
- 
+ 
 
 GSM character sets are defined [3GPP TS 23.038: "Alphabets and language-specific information"](http://www.3gpp.org/ftp/Specs/html-info/23038.md). CDMA character sets are defined in [3GPP2 C.R1001-D](http://www.3gpp2.org/Public_html/specs/C.R1001-D_v1.0_110403.pdf).
 
@@ -94,9 +90,9 @@ GSM character sets are defined [3GPP TS 23.038: "Alphabets and language-specific
 
 [Send SMS by using the text-mode interface](send-sms-by-using-the-text-mode-interface.md)
 
- 
+ 
 
- 
+ 
 
 
 

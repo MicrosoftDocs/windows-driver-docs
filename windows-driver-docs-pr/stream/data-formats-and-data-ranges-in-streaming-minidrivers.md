@@ -1,6 +1,5 @@
 ---
 title: Data Formats and Data Ranges in Streaming Minidrivers
-author: windows-driver-content
 description: Data Formats and Data Ranges in Streaming Minidrivers
 ms.assetid: ea3aa4af-0c8c-429e-b399-0a196eadc5ef
 keywords:
@@ -11,11 +10,7 @@ keywords:
 - data ranges WDK streaming minidriver
 - ranges WDK streaming minidriver
 - formats WDK streaming minidriver
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +24,9 @@ Each stream details the data ranges it supports in the **StreamFormatsArray** me
 
 For more information about formats and range intersection, see [Data Range Intersections in AVStream](data-range-intersections-in-avstream.md).
 
- 
+ 
 
- 
+ 
 
 
 

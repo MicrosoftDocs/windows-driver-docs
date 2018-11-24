@@ -7,11 +7,7 @@ keywords:
 - installing test certificates WDK
 - test signing driver packages WDK , installing test certificates
 - certificate stores WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,9 +18,9 @@ The [test certificates](test-certificates.md) that are used to embed signatures 
 
 You can also configure the default domain policy to automatically deploy a test certificate on computers in a domain, as described in [Deploying a Test Certificate by Using the Default Domain Policy](deploying-a-test-certificate-by-using-the-default-domain-policy.md).
 
- 
+ 
 
- 
+ 
 
 
 

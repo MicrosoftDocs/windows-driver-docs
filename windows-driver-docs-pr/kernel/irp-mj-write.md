@@ -1,12 +1,7 @@
 ---
 title: IRP_MJ_WRITE
-author: windows-driver-content
 description: Every device driver that transfers data from the system to its device must handle write requests in a DispatchWrite or DispatchReadWrite routine, as must any higher-level driver layered over such a device driver.
-ms.author: windowsdriverdev
 ms.date: 08/12/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.assetid: d0db505e-2b3c-4b69-83ef-1a52e37e5d1a
 keywords:
  - IRP_MJ_WRITE Kernel-Mode Driver Architecture
@@ -16,7 +11,7 @@ ms.localizationpriority: medium
 # IRP\_MJ\_WRITE
 
 
-Every device driver that transfers data from the system to its device must handle write requests in a [*DispatchWrite*](https://msdn.microsoft.com/library/windows/hardware/ff544034) or [*DispatchReadWrite*](https://msdn.microsoft.com/library/windows/hardware/ff543381) routine, as must any higher-level driver layered over such a device driver.
+Every device driver that transfers data from the system to its device must handle write requests in a [*DispatchWrite*](https://docs.microsoft.com/windows-hardware/drivers/kernel/dispatchread--dispatchwrite--and-dispatchreadwrite-routines) or [*DispatchReadWrite*](https://docs.microsoft.com/windows-hardware/drivers/kernel/dispatchread--dispatchwrite--and-dispatchreadwrite-routines) routine, as must any higher-level driver layered over such a device driver.
 
 When Sent
 ---------
@@ -81,9 +76,9 @@ Requirements
 
 [**IoSetCompletionRoutine**](https://msdn.microsoft.com/library/windows/hardware/ff549679)
 
- 
+ 
 
- 
+ 
 
 
 

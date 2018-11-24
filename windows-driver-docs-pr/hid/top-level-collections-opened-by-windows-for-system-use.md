@@ -1,15 +1,10 @@
 ---
 title: Top-Level Collections Opened by Windows for System Use
-author: windows-driver-content
 description: Top-Level Collections Opened by Windows for System Use
 ms.assetid: e489ce46-379e-4ba9-a0e3-5848b1f4a17b
 keywords:
 - top-level collections WDK HID
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -98,11 +93,11 @@ Windows opens the following [top-level collections](top-level-collections.md) fo
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

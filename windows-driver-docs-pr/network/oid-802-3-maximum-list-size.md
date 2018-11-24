@@ -1,13 +1,8 @@
 ---
 title: OID_802_3_MAXIMUM_LIST_SIZE
-author: windows-driver-content
 description: OID_802_3_MAXIMUM_LIST_SIZE
 ms.assetid: e4288fb3-6bb3-415c-b150-1f258a2fa1a0
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_802_3_MAXIMUM_LIST_SIZE Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -48,9 +43,9 @@ Requirements
 
 [OID\_802\_3\_MULTICAST\_LIST](oid-802-3-multicast-list.md)
 
- 
+ 
 
- 
+ 
 
 
 

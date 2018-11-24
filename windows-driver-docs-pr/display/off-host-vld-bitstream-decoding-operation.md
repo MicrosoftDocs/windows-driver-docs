@@ -14,11 +14,7 @@ keywords:
 - decoding video WDK DirectX VA , compressed pictures
 - video decoding WDK DirectX VA , off-host VLD bitstream processing
 - decoding video WDK DirectX VA , off-host VLD bitstream processing
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -57,7 +53,7 @@ When variable-length decoding of raw bitstream data is performed on the accelera
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Inverse-Quantization_Matrix_Buffers"></span><span id="inverse-quantization_matrix_buffers"></span><span id="INVERSE-QUANTIZATION_MATRIX_BUFFERS"></span>Inverse-Quantization Matrix Buffers
 
@@ -81,9 +77,9 @@ Certain restrictions are imposed on the contents of bitstream buffers, in order 
 
 The decoder should manage the filling of the bitstream buffers to avoid placing the data for one slice into more than one buffer.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: FSCTL\_QUERY\_VOLUME\_NUMA\_INFO control code
+title: FSCTL_QUERY_VOLUME_NUMA_INFO control code
 description: The FSCTL\_QUERY\_VOLUME\_NUMA\_INFO control code finds the current Non-Uniform Memory Architecture (NUMA) node index for a volume.
 ms.assetid: ADDA4A8C-0BF3-45F1-AFE5-956CE5D1FC01
 keywords: ["FSCTL_QUERY_VOLUME_NUMA_INFO control code Installable File System Drivers"]
@@ -12,11 +12,7 @@ api_location:
 - Ntifs.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -112,9 +108,9 @@ Ntifs.h</td>
 
 [**FSCTL\_QUERY\_VOLUME\_NUMA\_INFO\_OUTPUT**](https://msdn.microsoft.com/library/windows/hardware/mt827087)
 
- 
+ 
 
- 
+ 
 
 
 

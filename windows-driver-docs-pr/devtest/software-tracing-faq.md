@@ -9,11 +9,7 @@ keywords:
 - languages WDK software tracing
 - sessions WDK software tracing
 - tracing WDK , FAQs
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,9 +34,9 @@ This section includes the following topics:
 
 [Advanced Software Tracing](advanced-software-tracing.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -8,11 +8,7 @@ keywords:
 - MSIs WDK networking , registration
 - registering interrupts
 - unregistering interrupts
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,7 +34,7 @@ An NDIS 6.0 miniport driver supplies the following interrupt-related functions.
 
 The following code example shows how a miniport driver can initialize this structure.
 
-```
+```C++
         NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS Interrupt;
         RtlZeroMemory(&Interrupt, sizeof(Interrupt));
 
@@ -63,9 +59,9 @@ To deregister an interrupt, a miniport driver calls the [**NdisMDeregisterInterr
 
 For more information about registering interrupts, see [Registering and Deregistering Interrupts](registering-and-deregistering-interrupts.md).
 
- 
+ 
 
- 
+ 
 
 
 

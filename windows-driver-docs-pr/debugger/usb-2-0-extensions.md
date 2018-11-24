@@ -2,18 +2,14 @@
 title: USB 2.0 Extensions
 description: This section describes the USB 2.0 debugger extension commands. These commands display information from data structures maintained by drivers in the USB 2.0 driver stack.
 ms.assetid: 42A78738-CE0D-42EA-9E3D-04CDC2060266
-ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # USB 2.0 Extensions
 
 
-This section describes the USB 2.0 debugger extension commands. These commands display information from data structures maintained by drivers in the USB 2.0 driver stack. For more information about these three drivers, see [USB Driver Stack Architecture](http://go.microsoft.com/fwlink/p?LinkId=251983).
+This section describes the USB 2.0 debugger extension commands. These commands display information from data structures maintained by drivers in the USB 2.0 driver stack. For more information about these three drivers, see [USB Driver Stack Architecture](https://go.microsoft.com/fwlink/p?LinkId=251983).
 
 The USB 2.0 debugger extension commands are implemented in Usbkd.dll. To load the Usbkd commands, enter **.load usbkd.dll** in the debugger.
 
@@ -100,9 +96,9 @@ To start debugging a USB 2.0 issue, enter the [**!usb2tree**](-usbkd-usb2tree.md
 
 [RCDRKD Extensions](rcdrkd-extensions.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -13,6 +13,7 @@ api_location:
 api_type:
 - LibDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # GetDiscoveredPortAttributes function
@@ -25,10 +26,10 @@ Syntax
 
 ```ManagedCPlusPlus
 void GetDiscoveredPortAttributes(
-   [in] uint32                                                        PortIndex,
-   [in] uint32                                                        DiscoveredPortIndex,
-   [out, HBA_STATUS_QUALIFIERS] HBA_STATUS                            HBAStatus,
-   [out, HBAType("HBA_PORTATTRIBUTES")] MSFC_HBAPortAttributesResults PortAttributes
+   [in] uint32                                                        PortIndex,
+   [in] uint32                                                        DiscoveredPortIndex,
+   [out, HBA_STATUS_QUALIFIERS] HBA_STATUS                            HBAStatus,
+   [out, HBAType("HBA_PORTATTRIBUTES")] MSFC_HBAPortAttributesResults PortAttributes
 );
 ```
 
@@ -90,9 +91,9 @@ Requirements
 
 [**MSFC\_HBAPortAttributesResults**](https://msdn.microsoft.com/library/windows/hardware/ff562510)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,11 +3,7 @@ title: Other ACPI Debugging Extensions
 description: Other ACPI Debugging Extensions
 ms.assetid: ea5c9ca6-f872-40ff-8e0d-5d6d096ccc34
 keywords: ["ACPI debugging, useful extensions"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -41,9 +37,9 @@ For a complete list of ACPI-related extensions, see [**!acpikd.help**](-acpikd-h
 
 For details on the **!amli***xxx* extensions, see [The AMLI Debugger](the-amli-debugger.md).
 
- 
+ 
 
- 
+ 
 
 
 

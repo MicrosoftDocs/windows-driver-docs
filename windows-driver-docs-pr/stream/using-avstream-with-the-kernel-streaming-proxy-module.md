@@ -1,6 +1,5 @@
 ---
 title: Using AVStream with the Kernel Streaming Proxy Module
-author: windows-driver-content
 description: Using AVStream with the Kernel Streaming Proxy Module
 ms.assetid: c8ae1385-337e-46ad-841e-fbdf5d685210
 keywords:
@@ -10,11 +9,7 @@ keywords:
 - media types WDK AVStream
 - DirectShow filters WDK AVStream
 - AVStream Kernel Streaming Proxy WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -34,9 +29,9 @@ As in kernel mode, the proxy either asks a data handler to determine whether the
 
 Before the connection is complete, AVStream calls the minidriver's [*AVStrMiniPinSetDataFormat*](https://msdn.microsoft.com/library/windows/hardware/ff556355) dispatch to inform the minidriver of the data format being set. This format corresponds to the user-mode media type that was suggested to the proxied pin. AVStream also provides the data range that was determined to be a partial match for the format.
 
- 
+ 
 
- 
+ 
 
 
 

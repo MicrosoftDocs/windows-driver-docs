@@ -1,5 +1,5 @@
 ---
-title: FLT\_PARAMETERS for IRP\_MJ\_DIRECTORY\_CONTROL union
+title: FLT_PARAMETERS for IRP_MJ_DIRECTORY_CONTROL union
 description: Union component used when the MajorFunction field of the FLT\_IO\_PARAMETER\_BLOCK structure for the operation is IRP\_MJ\_DIRECTORY\_CONTROL.
 ms.assetid: 3dadd64b-7e93-4c75-808d-2f26edb3ebd7
 keywords: ["FLT_PARAMETERS for IRP_MJ_DIRECTORY_CONTROL union Installable File System Drivers", "FLT_PARAMETERS union Installable File System Drivers", "PFLT_PARAMETERS union pointer Installable File System Drivers"]
@@ -11,11 +11,7 @@ api_location:
 - fltkernel.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -81,7 +77,7 @@ Specifies one of the values described below.
 | FileObjectIdInformation        | Return a [**FILE\_OBJECTID\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff540335) structure for each file.                       |
 | FileReparsePointInformation    | Return a single [**FILE\_REPARSE\_POINT\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff540354) structure for the directory. |
 
- 
+ 
 
 **FileIndex**  
 Index of the file where the directory scan begins. Ignored if the SL\_INDEX\_SPECIFIED flag is not set. This parameter cannot be specified in any Win32 function or kernel-mode support routine. Currently it is used only by the NT virtual DOS machine (NTVDM), which exists only on 32-bit NT-based operating systems. Note that the file index is undefined for file systems, such as NTFS, in which the position of a file within the parent directory is not fixed and can be changed at any time to maintain sort order.
@@ -117,7 +113,7 @@ Bitmask of flags that specify the types of changes to files or directories that 
 | FILE\_NOTIFY\_CHANGE\_STREAM\_SIZE  | This file stream's size has changed.                                           |
 | FILE\_NOTIFY\_CHANGE\_STREAM\_WRITE | This file stream's data has changed.                                           |
 
- 
+ 
 
 **Spare1**  
 Not currently used.
@@ -199,9 +195,9 @@ Requirements
 
 [**ZwQueryDirectoryFile**](https://msdn.microsoft.com/library/windows/hardware/ff567047)
 
- 
+ 
 
- 
+ 
 
 
 

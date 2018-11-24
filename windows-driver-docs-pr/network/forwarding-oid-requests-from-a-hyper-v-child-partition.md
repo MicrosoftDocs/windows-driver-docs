@@ -2,11 +2,7 @@
 title: Forwarding OID Requests from a Hyper-V Child Partition
 description: Forwarding OID Requests from a Hyper-V Child Partition
 ms.assetid: 35EA9964-4CD0-4636-9573-65F37393B7E2
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,7 +25,7 @@ When these multicast OID requests arrive at the extensible switch interface, the
 
     **Note**  If the multicast OID request was originated from the management operating system, the protocol edge sets these members to the values for the extensible switch internal network adapter.
 
-     
+     
 
 -   The **DestinationPortId** and **DestinationNicIndex** members are set to zero. This specifies that the encapsulated OID request is to be delivered to extensions in the control path.
 
@@ -39,9 +35,9 @@ The protocol edge then issues the [OID\_SWITCH\_NIC\_REQUEST](https://msdn.micro
 
 For more information about the extensible switch control path, see [Hyper-V Extensible Switch Control Path](hyper-v-extensible-switch-control-path.md).
 
- 
+ 
 
- 
+ 
 
 
 

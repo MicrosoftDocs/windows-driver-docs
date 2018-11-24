@@ -1,15 +1,10 @@
 ---
 title: OID_GEN_CO_VENDOR_ID
-author: windows-driver-content
 description: This topic describes the OID_GEN_CO_VENDOR_ID object identifier (OID).
 ms.assetid: ec8d47e4-0b2f-4ca8-9227-330030a2ede5
 keywords:
 - OID_GEN_CO_VENDOR_ID
-ms.author: windowsdriverdev
 ms.date: 11/02/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

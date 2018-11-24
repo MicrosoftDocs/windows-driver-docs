@@ -8,11 +8,7 @@ keywords:
 - block list types WDK TCP chimney offload
 - NDIS_MINIPORT_OFFLOAD_BLOCK_LIST
 - NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,9 +31,9 @@ When propagating a state-manipulation operation, an intermediate driver must con
 
 When propagating the completion of a state-manipulation operation, an intermediate driver must convert an incoming NDIS\_PROTOCOL\_OFFLOAD\_BLOCK\_LIST structure to an NDIS\_MINIPORT\_OFFLOAD\_BLOCK\_LIST. For more information about this conversion, see [Reusing an NDIS\_PROTOCOL\_OFFLOAD\_BLOCK\_LIST Structure](reusing-an-ndis-protocol-offload-block-list-structure.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: PROPSETID\_VIDCAP\_EXTENSION\_UNIT
 description: PROPSETID\_VIDCAP\_EXTENSION\_UNIT
 ms.assetid: 7aa4742f-e64f-4798-a9e0-8c1f02aa15b3
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,9 +28,9 @@ Clients of the USB video class driver can make the following requests of filters
 
 Use the following user-mode interfaces to access the properties of this set: **IKsTopologyInfo**, **ISelector**, and **IKsNodeControl**. See the DirectShow documentation in the Microsoft Windows SDK for information about these interfaces.
 
- 
+ 
 
- 
+ 
 
 
 

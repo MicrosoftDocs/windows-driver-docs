@@ -6,11 +6,7 @@ keywords:
 - video miniport drivers WDK Windows 2000 , VGA, SvgaHwIoPortXxx functions
 - VGA WDK video miniport , SvgaHwIoPortXxx functions
 - SvgaHwIoPortXxx functions
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +26,9 @@ The miniport driver-supplied *SvgaHwIoPortXxx* functions should buffer subsequen
 
 Then, the miniport driver is responsible for checking that the buffered instructions cannot hang the machine. If not, the miniport driver should process the buffered instructions, usually by calling [**VideoPortSynchronizeExecution**](https://msdn.microsoft.com/library/windows/hardware/ff570372) with a driver-supplied [*HwVidSynchronizeExecutionCallback*](https://msdn.microsoft.com/library/windows/hardware/ff567369) function. Otherwise, the miniport driver should discard the buffered instructions.
 
- 
+ 
 
- 
+ 
 
 
 

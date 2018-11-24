@@ -1,11 +1,7 @@
 ---
 Description: Support for capability commands (WpdServiceSampleDriver sample)
 title: Support for capability commands (WpdServiceSampleDriver sample)
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,7 +28,7 @@ The device-capability commands are issued when an application calls one of sever
 | WPD\_COMMAND\_CAPABILITIES\_GET\_EVENT\_OPTIONS                    | OnGetEventOptions              | Issued when an application tries to retrieve the options that are associated with a given event.                                             |
 | WPD\_COMMAND\_CAPABILITIES\_GET\_SUPPORTED\_EVENTS                 | OnGetSupportedEvents           | Issued when an application tries to retrieve the set of events that are supported by a device.                                               |
 
- 
+ 
 
 ## <span id="The_Service-Capability_Commands"></span><span id="the_service-capability_commands"></span><span id="THE_SERVICE-CAPABILITY_COMMANDS"></span>The Service-Capability Commands
 
@@ -57,7 +53,7 @@ The service-capability commands are issued when an application calls one of seve
 | WPD\_COMMAND\_SERVICE\_CAPABILITIES\_GET\_EVENT\_PARAMETER\_ATTRIBUTES      | OnGetEventParameterAttributes  | Issued when an application tries to retrieve the parameter attributes for a given event on the service.                |
 | WPD\_COMMAND\_SERVICE\_CAPABILITIES\_GET\_INHERITED\_SERVICES               | OnGetInheritedServices         | Issued when an application tries to retrieve the services that are inherited by the given service.                     |
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -67,9 +63,9 @@ The service-capability commands are issued when an application calls one of seve
 
 [The WPD Driver Samples](the-wpd-driver-samples.md)
 
- 
+ 
 
- 
+ 
 
 
 

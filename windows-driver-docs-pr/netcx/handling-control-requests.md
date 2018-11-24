@@ -4,11 +4,7 @@ description: Handling control requests
 ms.assetid: D2096548-E3E2-4EB6-B3F2-C5AF45E8F4D5
 keywords:
 - NetAdapterCx handling control requests, NetCx handling control requests
-ms.author: windowsdriverdev
 ms.date: 06/05/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,7 +16,7 @@ In the NetAdapterCx model, the client driver receives most control requests as N
 
 The NETREQUESTQUEUE object is the parent of each NETREQUEST that it manages. Because the queue is a child of the NETADAPTER object, WDF automatically deletes each queue and any associated requests when the adapter is deleted.
 
-To see all the default parent child relationships for NetAdapterCx, see [Summary of objects](summary-of-objects.md).
+To see all the default parent child relationships for NetAdapterCx, see [Summary of NetAdapterCx objects](summary-of-netadaptercx-objects.md).
 
 ## Creating queue objects
 

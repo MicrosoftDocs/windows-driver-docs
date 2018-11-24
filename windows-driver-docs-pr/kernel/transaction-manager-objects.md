@@ -1,14 +1,9 @@
 ---
 title: Transaction Manager Objects
-author: windows-driver-content
 description: Transaction Manager Objects
 ms.assetid: af53cda4-e2ab-47df-9311-a4da2a2ee08d
 keywords: ["log streams WDK KTM , creating", "virtual clock values WDK KTM , in transaction manager objects", "Kernel Transaction Manager WDK , transaction managers", "transaction manager objects WDK KTM"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +24,9 @@ Resource managers close their handles to transaction manager objects by calling 
 
 The operating system deletes the object after the last handle is closed and KTM has released all its references to the object.
 
- 
+ 
 
- 
+ 
 
 
 

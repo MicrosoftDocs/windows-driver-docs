@@ -9,11 +9,7 @@ api_name:
 - wscn DeviceConditionCleared
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **DeviceConditionCleared** element contains information about a pre
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:DeviceConditionCleared>
   child elements
 </wscn:DeviceConditionCleared>
@@ -50,10 +46,10 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ConditionClearTime</strong>](conditioncleartime.md)</p></td>
+<td><p><a href="conditioncleartime.md" data-raw-source="[&lt;strong&gt;ConditionClearTime&lt;/strong&gt;](conditioncleartime.md)"><strong>ConditionClearTime</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>ConditionId</strong>](conditionid.md)</p></td>
+<td><p><a href="conditionid.md" data-raw-source="[&lt;strong&gt;ConditionId&lt;/strong&gt;](conditionid.md)"><strong>ConditionId</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -72,7 +68,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ScannerStatusConditionEvent</strong>](scannerstatusconditionevent.md)</p></td>
+<td><p><a href="scannerstatusconditionevent.md" data-raw-source="[&lt;strong&gt;ScannerStatusConditionEvent&lt;/strong&gt;](scannerstatusconditionevent.md)"><strong>ScannerStatusConditionEvent</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -82,7 +78,7 @@ Remarks
 
 The **DeviceConditionCleared** element contains the [**ConditionId**](conditionid.md) and [**ConditionClearTime**](conditioncleartime.md) elements, which specify the condition identifier and time at which the condition was cleared, respectively. The WSD Scan Service sends the **DeviceConditionCleared** element to a client in a [**ScannerStatusConditionClearedEvent**](scannerstatusconditionclearedevent.md) event element.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ConditionClearTime**](conditioncleartime.md)
@@ -97,9 +93,9 @@ The **DeviceConditionCleared** element contains the [**ConditionId**](conditioni
 
 [**ScannerStatusConditionEvent**](scannerstatusconditionevent.md)
 
- 
+ 
 
- 
+ 
 
 
 

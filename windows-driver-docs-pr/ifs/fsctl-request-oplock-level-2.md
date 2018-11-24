@@ -1,5 +1,5 @@
 ---
-title: FSCTL\_REQUEST\_OPLOCK\_LEVEL\_2 control code
+title: FSCTL_REQUEST_OPLOCK_LEVEL_2 control code
 description: The FSCTL\_REQUEST\_OPLOCK\_LEVEL\_2 control code requests a level 2 opportunistic lock (oplock) on a file.
 ms.assetid: 418fbbc7-5dca-4c73-8ea0-d4b4e0a2efff
 keywords: ["FSCTL_REQUEST_OPLOCK_LEVEL_2 control code Installable File System Drivers"]
@@ -11,11 +11,7 @@ api_location:
 - ntifs.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -76,7 +72,7 @@ Status block
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -123,9 +119,9 @@ Requirements
 
 [**IRP\_MJ\_FILE\_SYSTEM\_CONTROL**](irp-mj-file-system-control.md)
 
- 
+ 
 
- 
+ 
 
 
 

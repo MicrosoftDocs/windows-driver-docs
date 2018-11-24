@@ -1,13 +1,8 @@
 ---
 title: WDI_TLV_SET_ENCAPSULATION_OFFLOAD_V4_PARAMETERS
-author: windows-driver-content
 description: WDI_TLV_SET_ENCAPSULATION_OFFLOAD_V4_PARAMETERS is a TLV that is used by OID_WDI_SET_ENCAPSULATION_OFFLOAD to indicate if IPv4 offloading should be started.
 ms.assetid: DC474D05-BF41-48F4-90CC-96C3B7F41ED0
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_SET_ENCAPSULATION_OFFLOAD_V4_PARAMETERS Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -35,7 +30,7 @@ The size (in bytes) of a UINT8.
 |-------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | UINT8 | Specifies if IPv4 offloading should be started. This value is set to NDIS\_OFFLOAD\_SET\_ON if enabled, and set to NDIS\_OFFLOAD\_SET\_OFF if disabled. |
 
- 
+ 
 
 Requirements
 ------------
@@ -66,9 +61,9 @@ Requirements
 
 [**NDIS\_OFFLOAD\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff566706)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -17,11 +17,7 @@ keywords:
 - locking configurations WDK DirectX VA
 - probing configurations WDK DirectX VA
 - configuration probing and locking WDK DirectX VA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -84,7 +80,7 @@ The most significant 20 bits of the *DXVA\_ConfigQueryOrReplyFlag* variable spec
 </tbody>
 </table>
 
- 
+ 
 
 The least significant 4 bits of the *DXVA\_ConfigQueryOrReplyFlag* variable specify the following status indicators for queries and responses.
 
@@ -119,7 +115,7 @@ The least significant 4 bits of the *DXVA\_ConfigQueryOrReplyFlag* variable spec
 </tbody>
 </table>
 
- 
+ 
 
 The least significant 8 bits of the **dwFunction** member is the is the *bDXVA\_Func* variable. The *bDXVA\_Func* variable, when used with *DXVA\_ConfigQueryorReplyFunc*, indicates probing and locking operations and specifies an associated configuration function.
 
@@ -151,9 +147,9 @@ The least significant 8 bits of the *DXVA\_EncryptProtocolFunc* DWORD variable c
 
 When *bDXVA\_Func* is used to signal an actual operation to be performed (compressed picture decoding, alpha-blend data loading, alpha-blend combination, or picture resampling), *bDXVA\_Func* is conveyed to the accelerator by inclusion in a series of *bDXVA\_Func* byte values in the **dwFunction** member of a [**DD\_RENDERMOCOMPDATA**](https://msdn.microsoft.com/library/windows/hardware/ff551693) structure in a call to [*DdMoCompRender*](https://msdn.microsoft.com/library/windows/hardware/ff550248). The first *bDXVA\_Func* operation is specified in the most significant byte, the next operation is specified in the next most significant byte, and so on. Any remaining bytes of **dwFunction** are set to zero.
 
- 
+ 
 
- 
+ 
 
 
 

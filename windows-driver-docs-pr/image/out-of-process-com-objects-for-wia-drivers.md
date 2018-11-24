@@ -1,13 +1,8 @@
 ---
 title: Out-of-Process COM Objects for WIA Drivers
-author: windows-driver-content
 description: Out-of-Process COM Objects for WIA Drivers
 ms.assetid: 0b08652e-36ae-46f8-8915-7f2bb45df05c
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,9 +30,9 @@ There are two kinds of permissions associated with out-of-process COM components
 
 A good practice is to store the launch and access permissions for your COM servers in the appropriate place under the component's **AppId** registry subkey. This allows Administrators to change those permissions if needed, using the Component Services management tool. To make your COM server use those access permissions at run time, be sure to call **CoInitializeSecurity** (described in the Windows SDK documentation) with the EOAC\_APPID flag, passing in the component's **AppId**. This causes COM to go to the component's **AppId** subkey in the registry and to use the permissions set in the **AccessPermission** and **LaunchPermission** entries.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -5,11 +5,7 @@ ms.assetid: 1d592ed3-44d2-4d12-9d31-19b07e6962ea
 keywords:
 - trace message format files WDK
 - TMF files WDK , displaying trace logs
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -41,9 +37,9 @@ If you do not have the [PDB symbol file](pdb-symbol-files.md) for the trace prov
 
 For more information about specifying TMF files, see Select TMF Files and Set TMF Search Path.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: Service identifier ownership updates
 description: Service identifier ownership updates
 ms.assetid: 6cb03631-def6-44d4-a73a-0e6124e3b1f2
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -41,9 +37,9 @@ If the ownership of an IMSI changes, the new operator must send an email to sysd
 
 You should receive an acknowledgement emails with 24 hours that your request was received. However, it could take up to 5 business days to process the request. If we have conflicts, we’ll send you an email asking for additional information.
 
- 
+ 
 
- 
+ 
 
 
 

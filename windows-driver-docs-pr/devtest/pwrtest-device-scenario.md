@@ -2,11 +2,7 @@
 title: PwrTest Device Scenario
 description: The PwrTest Device Scenario monitors device idle statistics.
 ms.assetid: 75C53B6E-3D1F-4E9D-A99E-3060A9CC37BC
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,7 +20,7 @@ This scenario is primarily used for Windows 7 device power activity, subsequent 
 pwrtest /device  [/t:n] [/?] 
 ```
 
-<span id="_t_n"></span><span id="_T_N"></span>**/t:***n*  
+<span id="_t_n"></span><span id="_T_N"></span>**/t:**<em>n</em>  
 Specifies the total time (in minutes) for the scenario to run (the default value for *n* is 30 minutes).
 
 **Examples**
@@ -65,7 +61,6 @@ pwrtest /device
     </DeviceIdleEvent>
   </DeviceIdleEvents>
 </PwrTestLog> 
-
 ```
 
 The following table describes the XML elements that appear in the log file.
@@ -128,11 +123,11 @@ The following table describes the XML elements that appear in the log file.
 </tr>
 <tr class="even">
 <td align="left"><strong>&lt;BusyCount&gt;</strong></td>
-<td align="left"><p>The number of times the device driver called [<strong>PoSetDeviceBusy</strong>](https://msdn.microsoft.com/library/windows/hardware/ff559755) during the period.</p></td>
+<td align="left"><p>The number of times the device driver called <a href="https://msdn.microsoft.com/library/windows/hardware/ff559755" data-raw-source="[&lt;strong&gt;PoSetDeviceBusy&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff559755)"><strong>PoSetDeviceBusy</strong></a> during the period.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><strong>&lt;AccruedBusyCount&gt;</strong></td>
-<td align="left"><p>The total number of times the device driver called [<strong>PoSetDeviceBusy</strong>](https://msdn.microsoft.com/library/windows/hardware/ff559755).</p></td>
+<td align="left"><p>The total number of times the device driver called <a href="https://msdn.microsoft.com/library/windows/hardware/ff559755" data-raw-source="[&lt;strong&gt;PoSetDeviceBusy&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff559755)"><strong>PoSetDeviceBusy</strong></a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><strong>&lt;IdlePowerState&gt;</strong></td>
@@ -149,16 +144,16 @@ The following table describes the XML elements that appear in the log file.
 </tbody>
 </table>
 
- 
+
 
 ## <span id="related_topics"></span>Related topics
 
 
 [PwrTest Syntax](pwrtest-syntax.md)
 
- 
 
- 
+
+
 
 
 

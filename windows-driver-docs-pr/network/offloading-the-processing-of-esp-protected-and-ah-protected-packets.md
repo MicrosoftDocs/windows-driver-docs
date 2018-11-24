@@ -7,11 +7,7 @@ keywords:
 - IPsecOV1 WDK TCP/IP transport , AH-protected packets
 - ESP-protected packets WDK IPsec offload
 - AH-protected packets WDK IPsec offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -39,9 +35,9 @@ This section includes the following topics:
 
 [Impact of Network Interface Changes on IPsec Offloads](impact-of-network-interface-changes-on-ipsec-offloads.md)
 
- 
+ 
 
- 
+ 
 
 
 

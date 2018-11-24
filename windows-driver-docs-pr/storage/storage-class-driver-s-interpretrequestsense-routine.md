@@ -1,6 +1,5 @@
 ---
 title: Storage Class Driver's InterpretRequestSense Routine
-author: windows-driver-content
 description: Storage Class Driver's InterpretRequestSense Routine
 ms.assetid: abfb529d-7fab-40f7-b4cd-e6adb4cf643e
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - request sense WDK storage
 - errors WDK storage
 - retrying requests WDK storage
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,9 +27,9 @@ The *InterpretRequestSense* routine might call a driver-supplied error-logging r
 
 For more information about logging I/O errors, see [Logging Errors](https://msdn.microsoft.com/library/windows/hardware/ff554312).
 
- 
+ 
 
- 
+ 
 
 
 

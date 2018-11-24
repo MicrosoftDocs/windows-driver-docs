@@ -11,11 +11,7 @@ keywords:
 - Sony/Philips digital interface
 - data ranges WDK audio , WMA Pro
 - non-PCM audio formats WDK , WMA Pro
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,22 +21,22 @@ ms.localizationpriority: medium
 ## <span id="specifying_wma_pro_data_ranges"></span><span id="SPECIFYING_WMA_PRO_DATA_RANGES"></span>
 
 
-In the Microsoft Windows SDK for Windows XP SP2 and later, the header file Mmreg.h defines the value 0x0164 to be the wave-format tag for WMA Pro-over-S/PDIF:
+The header file Mmreg.h defines the value 0x0164 to be the wave-format tag for WMA Pro-over-S/PDIF:
 
-```
+```cpp
   #define WAVE_FORMAT_WMASPDIF  0x0164
 ```
 
 The corresponding format-subtype GUID can be specified in terms of the wave-format tag by using the DEFINE\_WAVEFORMATEX\_GUID macro from the header file Ksmedia.h as follows:
 
-```
+```cpp
   #define KSDATAFORMAT_SUBTYPE_WMA_SPDIF    \
                       DEFINE_WAVEFORMATEX_GUID(WAVE_FORMAT_WMASPDIF)
 ```
 
 The following code example shows how a WaveCyclic or WavePci miniport driver can specify the [**KSDATARANGE\_AUDIO**](https://msdn.microsoft.com/library/windows/hardware/ff537096) table entries for a pin that supports the WMA Pro-over-S/PDIF and AC-3-over-S/PDIF formats:
 
-```
+```cpp
 static KSDATARANGE_AUDIO PinDataRangesSpdifOut[] =
 {
   // 48-kHz WMA Pro over S/PDIF
@@ -107,9 +103,9 @@ The third data range specifies an AC-3-over-S/PDIF data format. For more informa
 
 The preceding example does not enable DirectSound to handle the non-PCM WMA Pro-over-S/PDIF and AC-3-over-S/PDIF formats on Microsoft Windows 2000 SP2 and Windows 98 SE + hotfix. To enable this capability, the sample code would need to be modified so that for each of the three data ranges that uses the specifier KSDATAFORMAT\_SPECIFIER\_WAVEFORMATEX, a second data range must be included that is identical except that it uses the specifier KSDATAFORMAT\_SPECIFIER\_DSOUND instead. For an example, see [Specifying AC-3 Data Ranges](specifying-ac-3-data-ranges.md).
 
- 
+ 
 
- 
+ 
 
 
 

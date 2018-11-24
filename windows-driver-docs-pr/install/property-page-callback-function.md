@@ -9,11 +9,7 @@ keywords:
 - callback functions WDK property page
 - PSPCB_CREATE
 - PSPCB_RELEASE
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +29,9 @@ Property pages for a device are destroyed when the user clicks **OK** or **Cance
 
 When a property page is destroyed, the callback is called with a PSPCB_RELEASE message. The function should free any data that was allocated when the property page was created. Typically, this involves freeing the data referenced by the **lParam** member of the PROPSHEETPAGE structure. The return value is ignored when the page is being destroyed.
 
- 
+ 
 
- 
+ 
 
 
 

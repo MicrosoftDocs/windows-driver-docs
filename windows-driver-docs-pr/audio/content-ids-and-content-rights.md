@@ -13,11 +13,7 @@ keywords:
 - mixed streams WDK audio
 - DigitalOutputDisable flag
 - CopyProtect flag
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -41,9 +37,9 @@ Some audio drivers support hardware mixing and can handle several input data str
 
 Each time an input stream is added to or removed from a mixer, the driver must delete the content ID for the old mix and create a new content ID for the new mix. Before deleting an old content ID, the driver must first successfully forward a new content ID to all the streams to which it previously forwarded the old content ID. For more information, see [Forwarding DRM Content IDs](forwarding-drm-content-ids.md).
 
- 
+ 
 
- 
+ 
 
 
 

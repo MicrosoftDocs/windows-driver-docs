@@ -5,11 +5,7 @@ ms.assetid: eb52cdb4-4009-4860-80ac-5c2172f8a9b3
 keywords:
 - compressed picture decoding set WDK DirectX VA
 - picture decoding set WDK DirectX VA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -50,11 +46,11 @@ This configuration (which is not a preferred configuration) is defined the same 
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

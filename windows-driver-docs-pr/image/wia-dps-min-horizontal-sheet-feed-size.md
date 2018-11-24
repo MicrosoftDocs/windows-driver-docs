@@ -11,11 +11,7 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -53,16 +49,16 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**WIA\_DPS\_MIN\_VERTICAL\_SHEET\_FEED\_SIZE**](wia-dps-min-vertical-sheet-feed-size.md)
 
 [**WIA\_IPS\_MIN\_HORIZONTAL\_SIZE**](wia-ips-min-horizontal-size.md)
 
- 
+ 
 
- 
+ 
 
 
 

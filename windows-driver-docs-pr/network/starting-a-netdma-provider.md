@@ -5,11 +5,7 @@ ms.assetid: c6f91535-25d6-4e3c-9daf-53f07d4c7c67
 keywords:
 - starting NetDMA provider drivers
 - NetDMA provider drivers WDK networking , starting
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -18,7 +14,7 @@ ms.localizationpriority: medium
 
 **Note**  The NetDMA interface is not supported in Windows 8 and later.
 
- 
+ 
 
 
 
@@ -41,9 +37,9 @@ Before a NetDMA provider driver calls [**NetDmaProviderStart**](https://msdn.mic
 
 DMA provider drivers call the [**NetDmaProviderStop**](https://msdn.microsoft.com/library/windows/hardware/ff568335) function to notify the NetDMA interface that a previously started NetDMA provider is no longer available. For more information about stopping a NetDMA provider, see [Stopping a NetDMA Provider](stopping-a-netdma-provider.md).
 
- 
+ 
 
- 
+ 
 
 
 

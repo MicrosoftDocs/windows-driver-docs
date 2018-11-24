@@ -1,15 +1,10 @@
 ---
 title: OID_GEN_CO_SUPPORTED_LIST
-author: windows-driver-content
 description: This topic describes the OID_GEN_CO_SUPPORTED_LIST object identifier (OID).
 ms.assetid: 51c2b7f5-8429-4609-b048-542a3509f645
 keywords:
 - OID_GEN_CO_SUPPORTED_LIST
-ms.author: windowsdriverdev
 ms.date: 11/02/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

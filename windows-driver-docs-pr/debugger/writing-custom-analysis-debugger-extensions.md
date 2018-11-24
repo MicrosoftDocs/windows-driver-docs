@@ -2,11 +2,7 @@
 title: Writing Custom Analysis Debugger Extensions
 description: Writing Custom Analysis Debugger Extensions
 ms.assetid: 45D4E287-ACDB-4479-892F-FCE2287758BA
-ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,9 +16,9 @@ ms.localizationpriority: medium
 -   [Metadata Files for Analysis Extension Plug-ins](metadata-files-for-analysis-extensions.md)
 -   [Failure Analysis Entries](failure-analysis-entries.md)
 
- 
+ 
 
- 
+ 
 
 
 

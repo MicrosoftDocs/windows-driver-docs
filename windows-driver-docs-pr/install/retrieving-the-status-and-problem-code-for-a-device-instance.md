@@ -2,11 +2,7 @@
 title: Retrieving the Status and Problem Code for a Device Instance
 description: Retrieving the Status and Problem Code for a Device Instance
 ms.assetid: 22ca9ac2-fe67-427d-a6e4-f1d9cbbede52
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +29,9 @@ To access the status and problem code for a device instance on Windows Server 20
 
 If the call to **CM_Get_DevNode_Status** succeeds, **CM_Get_DevNode_Status** retrieves the requested status and problem code for the device instance and returns CR_SUCCESS. If the function call fails, **CM_Get_DevNode_Status** returns one of the error codes with prefix "CR_" that are defined in *Cfgmgr32.h*.
 
- 
+ 
 
- 
+ 
 
 
 

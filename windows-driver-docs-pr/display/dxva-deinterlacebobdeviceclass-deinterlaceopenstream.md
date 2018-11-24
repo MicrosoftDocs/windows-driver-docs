@@ -9,11 +9,7 @@ api_name:
 - DXVA_DeinterlaceBobDeviceClass.DeinterlaceOpenStream
 api_type:
 - COM
-ms.author: windowsdriverdev
 ms.date: 01/05/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -62,9 +58,9 @@ The sample *DeinterlaceOpenStream* function maps directly to the **CreateMoComp*
 
 [**DXVA\_VideoDesc**](https://msdn.microsoft.com/library/windows/hardware/ff564070)
 
- 
+ 
 
- 
+ 
 
 
 

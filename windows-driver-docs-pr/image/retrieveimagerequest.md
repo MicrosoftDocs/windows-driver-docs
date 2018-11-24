@@ -9,11 +9,7 @@ api_name:
 - wscn RetrieveImageRequest
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **RetrieveImageRequest** operation element contains the client's re
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:RetrieveImageRequest>
   child elements
 </wscn:RetrieveImageRequest>
@@ -50,13 +46,13 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>DocumentDescription</strong>](documentdescription.md)</p></td>
+<td><p><a href="documentdescription.md" data-raw-source="[&lt;strong&gt;DocumentDescription&lt;/strong&gt;](documentdescription.md)"><strong>DocumentDescription</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>JobId</strong>](jobid.md)</p></td>
+<td><p><a href="jobid.md" data-raw-source="[&lt;strong&gt;JobId&lt;/strong&gt;](jobid.md)"><strong>JobId</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>JobToken</strong>](jobtoken.md)</p></td>
+<td><p><a href="jobtoken.md" data-raw-source="[&lt;strong&gt;JobToken&lt;/strong&gt;](jobtoken.md)"><strong>JobToken</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -86,7 +82,7 @@ This operation might also return the following errors:
     | \[Reason\]     | The specified JobId was not found. |
     | \[Detail\]     | JobId: Incorrect JobId             |
 
-     
+     
 
 -   **ClientErrorNoImagesAvailable**The scanner does not have any more images available for the client to retrieve.
 
@@ -97,7 +93,7 @@ This operation might also return the following errors:
     | \[Reason\]     | The server has no images available to acquire. |
     | \[Detail\]     | None                                           |
 
-     
+     
 
 -   **ClientErrorInvalidJobToken**The supplied JobToken value is not valid for the specified scan JobId.
 
@@ -108,7 +104,7 @@ This operation might also return the following errors:
     | \[Reason\]     | The JobToken parameter value is not valid with the JobId parameter. |
     | \[Detail\]     | None                                                                |
 
-     
+     
 
 -   **ClientErrorJobCancelled**
 
@@ -119,20 +115,20 @@ This operation might also return the following errors:
     | \[Reason\]     | The current scan job has been canceled. |
     | \[Detail\]     | None                                    |
 
-     
+     
 
 Examples
 --------
 
 The following code example shows a client request to retrieve image data for the job identified by JobId 1.
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope
   xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
   xmlns:wsa="http://schemas.xmlsoap.org/ws/2003/03/addressing"
   xmlns:wscn="http://schemas.microsoft.com/windows/2006/01/wdp/scan"
-  soap:encodingStyle=&#39;http://www.w3.org/2002/12/soap-encoding&#39; >
+  soap:encodingStyle='http://www.w3.org/2002/12/soap-encoding' >
 
   <soap:Header>
     <wsa:To>AddressofScannerService</wsa:To>
@@ -154,7 +150,7 @@ The following code example shows a client request to retrieve image data for the
 </soap:Envelope>
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**DocumentDescription**](documentdescription.md)
@@ -165,9 +161,9 @@ The following code example shows a client request to retrieve image data for the
 
 [**RetrieveImageResponse**](retrieveimageresponse.md)
 
- 
+ 
 
- 
+ 
 
 
 

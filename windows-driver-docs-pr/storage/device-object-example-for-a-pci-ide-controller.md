@@ -1,6 +1,5 @@
 ---
 title: Device Object Example for a PCI IDE Controller
-author: windows-driver-content
 description: Device Object Example for a PCI IDE Controller
 ms.assetid: 7cb97da7-1d94-42a1-af3a-9085e68c8f28
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - device objects WDK storage
 - PCI IDE controller example WDK storage
 - IDE controllers WDK storage
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -44,9 +39,9 @@ Starting from the bottom of the figure, the following describes each device obje
 
 7.  The disk class driver creates an FDO and attaches it to the associated disk PDO, exactly as in the case of the SCSI, and the CD-ROM driver creates an FDO and attaches it to the associated CD-ROM PDO. As in the case of the SCSI, a filter driver DO can be inserted between the device PDO and the device FDO. The figure showing a device object tree for a CD-ROM device on an IEEE 1394 controller illustrates this using a CD Audio Filter DO that can be optionally placed just above the CD-ROM PDO.
 
- 
+ 
 
- 
+ 
 
 
 

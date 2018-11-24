@@ -1,14 +1,9 @@
 ---
 title: Using Common Log File System
-author: windows-driver-content
 description: Using Common Log File System
 ms.assetid: a9685648-b08c-48ca-b020-e683068f2ea2
 keywords: ["Common Log File System WDK kernel", "CLFS WDK kernel", "logging service WDK CLFS", "transactional logs WDK CLFS"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -41,9 +36,9 @@ This section describes the Common Log File System (CLFS). It contains the follow
 
 [CLFS Support for Archiving](clfs-support-for-archiving.md)
 
- 
+ 
 
- 
+ 
 
 
 

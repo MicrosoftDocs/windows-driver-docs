@@ -11,11 +11,7 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -51,13 +47,13 @@ The KSPROPERTY\_AUDIO\_CHANNEL\_CONFIG property specifies the actual spatial pla
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Filter/Pin</p></td>
-<td align="left">[<strong>KSNODEPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537143)</td>
-<td align="left"><p>[<strong>KSAUDIO_CHANNEL_CONFIG</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537083)</p></td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/ff537143" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537143)"><strong>KSNODEPROPERTY</strong></a></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537083" data-raw-source="[&lt;strong&gt;KSAUDIO_CHANNEL_CONFIG&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537083)"><strong>KSAUDIO_CHANNEL_CONFIG</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a structure of type KSAUDIO\_CHANNEL\_CONFIG. This structure specifies the channels that are contained in the output stream and the assignment of those channels to speakers.
 
@@ -111,9 +107,9 @@ Requirements
 
 [**KSPROPERTY\_AUDIO\_VOLUMELEVEL**](ksproperty-audio-volumelevel.md)
 
- 
+ 
 
- 
+ 
 
 
 

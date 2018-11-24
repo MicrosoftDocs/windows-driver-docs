@@ -1,5 +1,5 @@
 ---
-title: FSCTL\_DISMOUNT\_VOLUME control code
+title: FSCTL_DISMOUNT_VOLUME control code
 description: The FSCTL\_DISMOUNT\_VOLUME control code attempts to dismount a volume regardless of whether the volume is in use.
 ms.assetid: edfff768-3bb3-4b8a-b982-80797ac116fd
 keywords: ["FSCTL_DISMOUNT_VOLUME control code Installable File System Drivers"]
@@ -11,11 +11,7 @@ api_location:
 - ntifs.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -97,9 +93,9 @@ Requirements
 
 [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462)
 
- 
+ 
 
- 
+ 
 
 
 

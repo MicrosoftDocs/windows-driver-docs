@@ -1,17 +1,12 @@
 ---
 title: Creating Resource Maps for a Multifunction Device
-author: windows-driver-content
 description: Creating Resource Maps for a Multifunction Device
 ms.assetid: 332eef11-4056-4fe0-87ed-4305c091bab1
 keywords:
 - multifunction devices WDK , resource maps
 - resource maps WDK multifunction devices
 - child function resource maps WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +26,9 @@ There are two types of resource maps − *standard* resource maps and *varying* 
 
 Some multifunction devices can be described using only standard resource maps. Others require varying resource maps, or a combination of standard and varying maps. Still others require no resource maps at all. See [Supporting Multifunction PC Card Devices](supporting-multifunction-pc-card-devices.md) to determine which multifunction devices require resource maps.
 
- 
+ 
 
- 
+ 
 
 
 

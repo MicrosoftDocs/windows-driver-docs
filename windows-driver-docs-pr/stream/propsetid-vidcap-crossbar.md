@@ -2,11 +2,7 @@
 title: PROPSETID\_VIDCAP\_CROSSBAR
 description: PROPSETID\_VIDCAP\_CROSSBAR
 ms.assetid: a2ed126c-75ee-4346-845e-9f675ca34416
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,9 +32,9 @@ Crossbar capture minidrivers are required to implement the following properties:
 
 The DirectShow **IAMCrossbar** interface (see the DirectShow documentation in the Microsoft Windows SDK) provides access to the properties of this set.
 
- 
+ 
 
- 
+ 
 
 
 

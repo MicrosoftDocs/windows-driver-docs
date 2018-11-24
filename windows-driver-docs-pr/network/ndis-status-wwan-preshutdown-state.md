@@ -1,13 +1,8 @@
 ---
 title: NDIS_STATUS_WWAN_PRESHUTDOWN_STATE
-author: windows-driver-content
 description: The NDIS_STATUS_WWAN_PRESHUTDOWN_STATE notification is a one-way notification from the MBB driver to the host.
 ms.assetid: 191629A1-2BBF-42D8-A053-827222CE35B0
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WWAN_PRESHUTDOWN_STATE Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -40,9 +35,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

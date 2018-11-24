@@ -6,11 +6,7 @@ keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , reporting capabilities
 - D3DCAPS8
 - presentation swap intervals WDK DirectX 8.0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +22,9 @@ A driver should always set the **PresentationIntervals** member of the D3DCAPS8 
 
 -   If the driver specifies the DDCAPS2\_FLIPINTERVAL bit, the runtime also sets **PresentationIntervals** to D3DPRESENT\_INTERVAL\_TWO, D3DPRESENT\_INTERVAL\_THREE, and D3DPRESENT\_INTERVAL\_FOUR.
 
- 
+ 
 
- 
+ 
 
 
 

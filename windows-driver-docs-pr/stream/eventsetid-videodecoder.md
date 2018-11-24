@@ -2,11 +2,7 @@
 title: EVENTSETID\_VIDEODECODER
 description: EVENTSETID\_VIDEODECODER
 ms.assetid: fb2dbd7b-9626-4114-bbfe-f710ba27103e
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -22,9 +18,9 @@ The event item in this set is specified in the KSEVENT\_VIDEODECODER enumeration
 
 The only event in this set is [**KSEVENT\_VIDEODECODER\_CHANGED**](ksevent-videodecoder-changed.md).
 
- 
+ 
 
- 
+ 
 
 
 

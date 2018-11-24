@@ -4,11 +4,7 @@ description: Sending 802.1Q-Marked and 802.1p-Marked Packets on an Offloaded TCP
 ms.assetid: 4c16d5af-33e2-4cce-b9e8-d2b60afa0986
 keywords:
 - 802.1Q and 802.1p information WDK TCP chimney offload , sending marked packets
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,9 +28,9 @@ An offload target uses the following algorithm to determine whether to insert an
 
 -   If the neighbor **VlanId** is nonzero, the offload target inserts a tag header into the packet. In this tag header, the offload target specifies a VLAN identifier that is equal to the neighbor **VlanId** and a priority value that is equal to the value of **UserPriority** for the TCP connection.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: Multiplane overlay resource creation
 description: When multiplane overlays are used, these requirements apply to allocations that are created within Microsoft DirectX apps.
 ms.assetid: B3E9BEF8-5CB8-45A3-9491-19AB1EA3D74F
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -48,9 +44,9 @@ When the [*CreateResource2*](https://msdn.microsoft.com/library/windows/hardware
 -   The **VidPnSourceId** member of the [**D3DDDIARG\_CREATERESOURCE2**](https://msdn.microsoft.com/library/windows/hardware/hh451074) structure is properly initialized.
 -   The **RefreshRate** member of the [**D3DDDIARG\_CREATERESOURCE2**](https://msdn.microsoft.com/library/windows/hardware/hh451074) structure contains zero.
 
- 
+ 
 
- 
+ 
 
 
 

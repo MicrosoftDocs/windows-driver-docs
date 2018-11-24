@@ -5,11 +5,7 @@ ms.assetid: 11574df3-817e-4bf3-a849-dd5ac723fb1d
 keywords:
 - trace sessions WDK , Global Logger
 - Global Logger trace session WDK , examples
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -51,9 +47,9 @@ This command deletes any registry entries for optional parameters (none, in this
 
 The **tracelog -remove** command is not required. You can leave the entries in the registry and use them the next time you run a Global Logger trace session. If you start the session with different parameters, Tracelog replaces the values of the registry entries with the values specified in the **tracelog -start** command.
 
- 
+ 
 
- 
+ 
 
 
 

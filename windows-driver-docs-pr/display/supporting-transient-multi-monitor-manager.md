@@ -8,11 +8,7 @@ keywords:
 - clone view WDK display
 - mobile devices WDK , TMM support
 - monitor configurations WDK display , TMM support
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +29,9 @@ This section includes:
 
 [Determining Whether a Platform is Mobile or Desktop](determining-whether-a-platform-is-mobile-or-desktop.md)
 
- 
+ 
 
- 
+ 
 
 
 

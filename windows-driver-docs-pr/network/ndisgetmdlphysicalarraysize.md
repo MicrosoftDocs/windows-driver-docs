@@ -1,13 +1,8 @@
 ---
 title: NdisGetMdlPhysicalArraySize macro
-author: windows-driver-content
 description: The NdisGetMdlPhysicalArraySize macro retrieves the number of disconnected physical memory blocks that are associated with an MDL.
 ms.assetid: 25e3f9a3-3057-4081-af74-427102197906
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - NdisGetMdlPhysicalArraySize macro Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -23,8 +18,8 @@ Syntax
 
 ```ManagedCPlusPlus
 VOID NdisGetMdlPhysicalArraySize(
-    _Mdl,
-    _ArraySize
+    _Mdl,
+    _ArraySize
 );
 ```
 
@@ -74,7 +69,7 @@ Requirements
 </tr>
 <tr class="odd">
 <td><p>DDI compliance rules</p></td>
-<td>[<strong>Irql_NetBuffer_Function</strong>](https://msdn.microsoft.com/library/windows/hardware/ff547985)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/ff547985" data-raw-source="[&lt;strong&gt;Irql_NetBuffer_Function&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff547985)"><strong>Irql_NetBuffer_Function</strong></a></td>
 </tr>
 </tbody>
 </table>
@@ -84,9 +79,9 @@ Requirements
 
 [**NdisGetBufferPhysicalArraySize**](https://msdn.microsoft.com/library/windows/hardware/ff552033)
 
- 
+ 
 
- 
+ 
 
 
 

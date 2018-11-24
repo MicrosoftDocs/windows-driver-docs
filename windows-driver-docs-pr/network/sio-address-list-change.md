@@ -1,13 +1,8 @@
 ---
 title: SIO_ADDRESS_LIST_CHANGE
-author: windows-driver-content
 description: SIO_ADDRESS_LIST_CHANGE
 ms.assetid: d451208d-c850-4f2f-9ee0-d34139454ed4
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -SIO_ADDRESS_LIST_CHANGE Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -67,12 +62,6 @@ To be notified when there has been a change to the list of local transport addre
 </tbody>
 </table>
 
- 
-
-```
-
-```
-
 A WSK application must specify a pointer to an IRP when calling the **WskControlSocket** function to be notified of a change to the list of local transport addresses for a socket's address family. The WSK subsystem queues the IRP and returns STATUS\_PENDING. If a change is made to the list of local transport addresses for the socket's address family, the WSK subsystem completes the IRP. When the IRP's completion routine is called, the WSK application can use the [**SIO\_ADDRESS\_LIST\_QUERY**](sio-address-list-query.md) socket I/O control operation to query the new list of local transport addresses for the socket's address family.
 
 Requirements
@@ -95,9 +84,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,17 +1,12 @@
 ---
 title: Which Printer Details Page is Displayed
-author: windows-driver-content
 description: Which Printer Details Page is Displayed
 ms.assetid: f7824350-a6de-45ca-8d72-859edf77e86d
 keywords:
 - customized print Web pages WDK , viewing specific pages
 - viewing printer details page
 - displaying printer details page
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,9 +27,9 @@ When a user attempts to view a printer's details page, the server uses the follo
 
 For more information, see [Installing Customized Print Web Pages](installing-customized-print-web-pages.md).
 
- 
+ 
 
- 
+ 
 
 
 

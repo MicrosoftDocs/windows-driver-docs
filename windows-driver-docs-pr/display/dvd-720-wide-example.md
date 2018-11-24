@@ -7,11 +7,7 @@ keywords:
 - blended pictures WDK DirectX VA , DVD 720-wide example
 - DVD 720-wide example WDK DirectX VA
 - 720-wide example WDK DirectX VA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +29,9 @@ Generally, the following destination rectangle values are used:
 
 -   **right** = **left** + *horizontal\_size* = 720
 
- 
+ 
 
- 
+ 
 
 
 

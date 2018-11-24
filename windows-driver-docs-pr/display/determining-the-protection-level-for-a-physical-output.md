@@ -4,11 +4,7 @@ description: Determining the Protection Level for a Physical Output
 ms.assetid: ea06903a-0ad5-43fd-b2d3-013584ae6f69
 keywords:
 - protection levels WDK display , determining for physical output
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -49,9 +45,9 @@ You should use the following algorithm to determine if a physical output connect
 
 2.  **End for**
 
- 
+ 
 
- 
+ 
 
 
 

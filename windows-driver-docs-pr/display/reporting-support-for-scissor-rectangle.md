@@ -5,11 +5,7 @@ ms.assetid: fd44bdf4-b7ca-43da-92ea-7ca18185b5d4
 keywords:
 - scissor rectangle WDK DirectX 9.0 , reporting support
 - rectangular clipping region WDK DirectX 9.0 , reporting support
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,9 +17,9 @@ ms.localizationpriority: medium
 
 A DirectX 9.0 version driver indicates that its device supports a scissor test by setting the D3DPRASTERCAPS\_SCISSORTEST capability bit in the **RasterCaps** member of the D3DCAPS9 structure.
 
- 
+ 
 
- 
+ 
 
 
 

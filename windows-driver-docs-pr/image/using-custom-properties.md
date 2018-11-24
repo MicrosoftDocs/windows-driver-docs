@@ -1,13 +1,8 @@
 ---
 title: Using Custom Properties
-author: windows-driver-content
 description: Using Custom Properties
 ms.assetid: cf4e728f-7900-4849-ab1c-135f9fec9713
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +28,9 @@ The following two sample code snippets show how to use custom properties to pass
 
 [Sample Code to Set Custom Properties](sample-code-to-set-custom-properties.md)
 
- 
+ 
 
- 
+ 
 
 
 

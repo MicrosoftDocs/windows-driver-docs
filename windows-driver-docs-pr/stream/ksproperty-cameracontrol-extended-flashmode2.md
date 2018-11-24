@@ -11,20 +11,15 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
-ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 09/10/2018
 ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FLASHMODE
 
-
 The **KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FLASHMODE** property is extended to support assistant flash.
 
-## <span id="Usage_summary_table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage summary table
+## Usage summary table
 
 
 <table>
@@ -49,11 +44,9 @@ The **KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FLASHMODE** property is extended to s
 </tbody>
 </table>
 
- 
+The capability flags are defined as follows.
 
-The following capability flags are defined as follows.
-
-``` syntax
+```cpp
 #define KSCAMERA_EXTENDEDPROP_FLASH_ASSISTANT_ON               0x0000000000000080
 #define KSCAMERA_EXTENDEDPROP_FLASH_ASSISTANT_AUTO             0x0000000000000100
 #define KSCAMERA_EXTENDEDPROP_FLASH_ASSISTANT_OFF              0x0000000000000000
@@ -71,10 +64,9 @@ This flag is similar to the **ASSISTANT\_ON** flag. Instead of always turning on
 
 This flag indicates that AF assistant light is off.
 
-The descriptions for the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/dn925136) structure fields when using the **KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FLASHMODE** property are the same as the Windows 8.1 DDI.
+The descriptions for the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure fields when using the **KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FLASHMODE** property are the same as the Windows 8.1 DDI.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -88,12 +80,3 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
-
-

@@ -8,11 +8,7 @@ keywords:
 - SDV WDK , verification engine
 - verification engine WDK Static Driver Verifier
 - proof engine WDK Static Driver Verifier
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +25,9 @@ The verification engine takes the following input:
 
 -   Static Driver Verifier [operating system model](operating-system-model.md)
 
- 
+ 
 
- 
+ 
 
 
 

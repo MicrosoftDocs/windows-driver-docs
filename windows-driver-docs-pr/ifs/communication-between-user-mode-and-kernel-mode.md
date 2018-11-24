@@ -1,6 +1,5 @@
 ---
 title: Communication Between User Mode and Kernel Mode
-author: windows-driver-content
 description: Communication Between User Mode and Kernel Mode
 ms.assetid: ddfec0d0-ec7d-4f76-91b8-2cc34cfacf4e
 keywords:
@@ -10,11 +9,7 @@ keywords:
 - kernel-mode communication WDK file system minifilter
 - user-mode communication WDK file system minifilter
 - ports WDK , file system minifilter
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -84,11 +79,11 @@ The following minifilter driver callback routines are passed as parameters to [*
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

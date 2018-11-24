@@ -8,11 +8,7 @@ keywords:
 - DEVMODEW structure WDK Windows 2000 display
 - Unicode WDK graphics
 - drawing WDK GDI , DEVMODEW structure
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -56,7 +52,7 @@ Applications and drivers are free to ask for a DEVMODEW structure and modify its
 
 In order to modify private DEVMODEW structure members, a driver must first determine the offset of the beginning of the private data. Given a pointer to the beginning of this structure, and the **dmSize** member, which holds the size of the public portion of the structure, the beginning of the private portion can be found. The following example shows how to initialize a pointer to the beginning of the private section. In this example, *pdm* points to the beginning of the DEVMODEW structure.
 
-```
+```cpp
 PVOID pvDriverData = (PVOID)  (((BYTE *) pdm) + (pdm -> dmSize));
 ```
 
@@ -103,7 +99,7 @@ The following table lists several public DEVMODEW members that are used *only* b
 </tbody>
 </table>
 
- 
+ 
 
 The next table lists several public DEVMODEW members that are used *only* by display drivers:
 
@@ -137,12 +133,12 @@ The next table lists several public DEVMODEW members that are used *only* by dis
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>dmDisplayFrequency</strong></p></td>
-<td align="left"><p>Specifies, in hertz, the display's refresh rate.</p></td>
+<td align="left"><p>Specifies, in hertz, the display&#39;s refresh rate.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The third table lists several public DEVMODEW members that are used by both printer and display drivers:
 
@@ -160,9 +156,9 @@ The third table lists several public DEVMODEW members that are used by both prin
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>dmDeviceName</strong></p></td>
-<td align="left"><p>For displays, specifies the display driver's DLL.</p>
+<td align="left"><p>For displays, specifies the display driver&#39;s DLL.</p>
 <div>
- 
+ 
 </div>
 For printers, specifies the &quot;friendly name&quot; of the printer.</td>
 </tr>
@@ -181,11 +177,11 @@ For printers, specifies the &quot;friendly name&quot; of the printer.</td>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

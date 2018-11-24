@@ -1,13 +1,8 @@
 ---
 title: IStiDeviceControl COM Interface
-author: windows-driver-content
 description: IStiDeviceControl COM Interface
 ms.assetid: 6d98f5d7-c471-4abb-8e69-dbac3d336c2f
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,9 +31,9 @@ Closes an instance COM object that defines the **IStiDeviceControl** interface, 
 <a href="" id="istidevicecontrol--writetoerrorlog"></a>[**IStiDeviceControl::WriteToErrorLog**](https://msdn.microsoft.com/library/windows/hardware/ff543727)  
 Allows a still image minidriver to write a message into the still image error log.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -10,11 +10,7 @@ keywords:
 - NDIS miniport drivers WDK , system shutdown
 - shutdown WDK networking
 - system shutdown WDK network
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -47,9 +43,9 @@ Unlike [*MiniportHaltEx*](https://msdn.microsoft.com/library/windows/hardware/ff
 
 [Writing NDIS Miniport Drivers](writing-ndis-miniport-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

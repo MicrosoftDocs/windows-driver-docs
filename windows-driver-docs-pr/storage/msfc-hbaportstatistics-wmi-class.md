@@ -3,6 +3,7 @@ title: MSFC\_HBAPortStatistics WMI Class
 description: MSFC\_HBAPortStatistics WMI Class
 ms.assetid: 275e4a50-6500-4a23-a0ae-ddd232da42f0
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MSFC\_HBAPortStatistics WMI Class
@@ -15,7 +16,7 @@ A WMI client uses the MSFC\_HBAPortStatistics class to query an HBA miniport dri
 
 The MSFC\_HBAPPortStatistics class is defined as follows in *Hbaapi.mof*:
 
-```
+```cpp
 class MSFC_HBAPortStatistics
 {
   [ WmiDataId(1) ]
@@ -57,9 +58,9 @@ When compiled by the WMI tool suite this class definition produces the following
 
 There are no methods associated with this WMI class.
 
- 
+ 
 
- 
+ 
 
 
 

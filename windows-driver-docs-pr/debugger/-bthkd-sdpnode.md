@@ -3,11 +3,7 @@ title: bthkd.sdpnode
 description: The bthkd.sdpnode command displays information about a node in an sdp tree.
 ms.assetid: 3B5D1903-53C0-4FF5-8542-E419E555AFC1
 keywords: ["bthkd.sdpnode Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!bthkd.sdpnode** command displays information about a node in an sdp tree.
 
-```
+```dbgsyntax
 !bthkd.sdpnode addr [flags]
 ```
 
@@ -49,9 +45,9 @@ Bthkd.dll
 
 [Bluetooth Extensions (Bthkd.dll)](bluetooh-extensions--bthkd-dll-.md)
 
- 
+ 
 
- 
+ 
 
 
 

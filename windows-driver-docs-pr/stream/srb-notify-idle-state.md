@@ -9,18 +9,14 @@ api_name:
 - SRB_NOTIFY_IDLE_STATE
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # SRB\_NOTIFY\_IDLE\_STATE
 
 
-The class driver sends this request to the minidriver immediately before sending the first open request or last close request. The minidriver can use SRB\_NOTIFY\_IDLE\_STATE as a notification to wake from [USB Selective Suspend](https://msdn.microsoft.com/library/windows/hardware/ff540144).
+The class driver sends this request to the minidriver immediately before sending the first open request or last close request. The minidriver can use SRB\_NOTIFY\_IDLE\_STATE as a notification to wake from [USB selective suspend](../usbcon/usb-selective-suspend.md).
 
 ### <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -43,7 +39,7 @@ When closing the last instance of the device, the class driver sends SRB\_NOTIFY
 
 When the stream class driver sends an SRB\_NOTIFY\_IDLE\_STATE request, the minidriver receives a call to [*StrMiniReceiveDevicePacket*](https://msdn.microsoft.com/library/windows/hardware/ff568463).
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**SRB\_GET\_DEVICE\_PROPERTY**](srb-get-device-property.md)
@@ -52,9 +48,9 @@ When the stream class driver sends an SRB\_NOTIFY\_IDLE\_STATE request, the mini
 
 [*StrMiniReceiveDevicePacket*](https://msdn.microsoft.com/library/windows/hardware/ff568463)
 
- 
+ 
 
- 
+ 
 
 
 

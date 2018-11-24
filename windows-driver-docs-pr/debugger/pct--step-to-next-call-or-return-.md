@@ -3,11 +3,7 @@ title: pct (Step to Next Call or Return)
 description: The pct command executes the program until it reaches a call instruction or a return instruction.
 ms.assetid: ff4b5708-b9d0-4809-9fe4-9a22d4cacbc0
 keywords: ["pct (Step to Next Call or Return) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -24,13 +20,13 @@ The **pct** command executes the program until it reaches a call instruction or 
 
 User-Mode
 
-```
+```dbgcmd
 [~Thread] pct [r] [= StartAddress] [Count] 
 ```
 
 Kernel-Mode
 
-```
+```dbgcmd
 pct [r] [= StartAddress] [Count] 
 ```
 
@@ -74,7 +70,7 @@ Specifies the number of **call** or **return** instructions that must be encount
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -89,9 +85,9 @@ If the program counter is already on a **call** or **return** instruction, the e
 
 In source mode, you can associate one source line with multiple assembly instructions. The **pct** command does not stop at a **call** or **return** instruction that is associated with the current source line.
 
- 
+ 
 
- 
+ 
 
 
 

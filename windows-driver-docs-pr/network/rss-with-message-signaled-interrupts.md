@@ -8,11 +8,7 @@ keywords:
 - message-signaled interrupts WDK networking , RSS
 - MSIs WDK networking , RSS
 - MSI-X WDK networking , RSS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -53,9 +49,9 @@ The following process repeats for each interrupt:
     1.  Builds receive descriptors for all of the received buffers in its queue and indicates the data up the driver stack. For more information, see [Indicating RSS Receive Data](indicating-rss-receive-data.md).
     2.  Enables interrupts for the current CPU. This interrupt is complete and the process starts again. Note that no atomic operation is required to track the progress of other DPCs.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -6,11 +6,7 @@ keywords:
 - threading WDK display , TDR
 - synchronization WDK display , TDR
 - TDR (timeout detection and recovery) WDK display , and thread synchronization
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -41,11 +37,11 @@ After the cleanup period is over, the operating system calls the driver's [*Dxgk
 
 **Note**  TDR functionality has been updated for Windows 8. See [TDR changes in Windows 8](tdr-changes-in-windows-8.md).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

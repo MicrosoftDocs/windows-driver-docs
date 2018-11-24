@@ -1,13 +1,8 @@
 ---
 title: Using Inflight Trace Recorder (IFR) in KMDF and UMDF 2 Drivers
-author: windows-driver-content
 description: Starting in Windows 10, you can build your WDF driver so that it gets additional driver debugging information through the Windows software trace preprocessing.
 ms.assetid: CA2A7ED3-4372-4EE9-8B04-042A8C864BD5
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -46,7 +41,7 @@ The logs are stored in non-pageable memory, so they are recoverable after a syst
 
     The Osrusbfx2 driver sample defines a single control GUID and seven trace flags in the Trace.h header file, as shown in the following example:
 
-    ```
+    ```cpp
     #define WPP_CONTROL_GUIDS \
     WPP_DEFINE_CONTROL_GUID(OsrUsbFxTraceGuid, \
       (d23a0c5a,d307,4f0e,ae8e,E2A355AD5DAB), \
@@ -68,13 +63,13 @@ The logs are stored in non-pageable memory, so they are recoverable after a syst
 
 4.  Your driver (both KMDF and UMDF 2) must call [**WPP\_INIT\_TRACING for Kernel-Mode Drivers**](https://msdn.microsoft.com/library/windows/hardware/ff556193) with the driver object and a registry path, typically from [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff540807):
 
-    ```
+    ```cpp
     WPP_INIT_TRACING( DriverObject, RegistryPath );
     ```
 
     To deactivate tracing, both KMDF and UMDF 2 drivers call [**WPP\_CLEANUP for Kernel-Mode Drivers**](https://msdn.microsoft.com/library/windows/hardware/ff556183) from [*EvtCleanupCallback*](https://msdn.microsoft.com/library/windows/hardware/ff540840) or [*EvtDriverUnload*](https://msdn.microsoft.com/library/windows/hardware/ff541694):
 
-    ```
+    ```cpp
     WPP_CLEANUP( WdfDriverWdmGetDriverObject( Driver ));
     ```
 
@@ -86,7 +81,7 @@ The logs are stored in non-pageable memory, so they are recoverable after a syst
 
     The following example shows how the Osrusbfx2 driver uses its **TraceEvents** function in a portion of the code devoted to handling read requests:
 
-    ```
+    ```cpp
     if (Length > TEST_BOARD_TRANSFER_BUFFER_SIZE) {
         TraceEvents(TRACE_LEVEL_ERROR,
                     DBG_READ,
@@ -131,16 +126,16 @@ The logs are stored in non-pageable memory, so they are recoverable after a syst
 
 **Viewing Inflight Trace Recorder logs after a UMDF driver crash**
 
-1.  From WinDbg, select **File-&gt;Open Crash Dump**, and specify the minidump file you would like to debug.
-2.  Type [**!wdfkd.wdfcrashdump *&lt;YourDriverName.dll&gt; &lt;process ID of driver host&gt; &lt;Option&gt;***](https://msdn.microsoft.com/library/windows/hardware/ff565682), where *&lt;Option&gt;* is:
+1. From WinDbg, select **File-&gt;Open Crash Dump**, and specify the minidump file you would like to debug.
+2. Type [**!wdfkd.wdfcrashdump *&lt;YourDriverName.dll&gt; &lt;process ID of driver host&gt; &lt;Option&gt;***](https://msdn.microsoft.com/library/windows/hardware/ff565682), where *&lt;Option&gt;* is:
 
-    -   0x1 – Merged framework and driver logs
-    -   0x2 – Driver logs
-    -   0x3 – Framework logs
+   -   0x1 – Merged framework and driver logs
+   -   0x2 – Driver logs
+   -   0x3 – Framework logs
 
-    If you don't specify a driver, [**!wdfcrashdump**](https://msdn.microsoft.com/library/windows/hardware/ff565682) displays information for all drivers. If you don't specify a host process, and there is only one, the extension uses the single host process. If you don't specify a host process and there is more than one, the extension lists the active host processes.
+   If you don't specify a driver, [**!wdfcrashdump**](https://msdn.microsoft.com/library/windows/hardware/ff565682) displays information for all drivers. If you don't specify a host process, and there is only one, the extension uses the single host process. If you don't specify a host process and there is more than one, the extension lists the active host processes.
 
-    If the log information stored in the minidump does not match the entered name, the minidump does not contain the driver's logs.
+   If the log information stored in the minidump does not match the entered name, the minidump does not contain the driver's logs.
 
 For more information about adding tracing messages to your driver, see [Adding WPP Macros to a Driver](https://msdn.microsoft.com/library/windows/hardware/ff541243).
 
@@ -155,9 +150,9 @@ For more information about adding tracing messages to your driver, see [Adding W
 
 [Using WPP Software Tracing in UMDF Drivers](using-wpp-software-tracing-in-umdf-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

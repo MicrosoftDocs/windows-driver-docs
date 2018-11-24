@@ -1,6 +1,5 @@
 ---
 title: Driver Control and Device Control
-author: windows-driver-content
 description: Driver Control and Device Control
 ms.assetid: ff515e88-9a94-420f-a6c8-fba3483c00e5
 keywords:
@@ -10,11 +9,7 @@ keywords:
 - device-controlled color management WDK print
 - driver color management WDK See color management WDK
 - device color management WDK See color management WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -50,9 +45,9 @@ For some devices, proprietary color management is performed (either by the drive
 
 For either of these scenarios, both the BR\_HOST\_ICM flag in the **flColorType** member of [**BRUSHOBJ**](https://msdn.microsoft.com/library/windows/hardware/ff538261) and the XO\_HOST\_ICM flag in the **flXlate** member of [**XLATEOBJ**](https://msdn.microsoft.com/library/windows/hardware/ff570634) will be set. These flags can be set even if the **dmICMMethod** member of [**DEVMODEW**](https://msdn.microsoft.com/library/windows/hardware/ff552837) is DMICMMETHOD\_NONE.
 
- 
+ 
 
- 
+ 
 
 
 

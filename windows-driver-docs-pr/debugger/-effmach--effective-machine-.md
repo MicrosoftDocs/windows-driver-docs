@@ -3,11 +3,7 @@ title: .effmach (Effective Machine)
 description: The .effmach command displays or changes the processor mode that the debugger uses.
 ms.assetid: bf4dfdc0-2f0b-416a-8bf2-0e7d81339905
 keywords: ["Effective Machine (.effmach) command", ".effmach (Effective Machine) Windows Debugging"]
-ms.author: domars
 ms.date: 01/24/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **.effmach** command displays or changes the processor mode that the debugger uses.
 
-```
+```dbgcmd
 .effmach [MachineType]
 ```
 
@@ -46,7 +42,7 @@ You can enter one of the following machine types.
 </tr>
 <tr class="even">
 <td align="left"><p><strong>.</strong></p></td>
-<td align="left"><p>Use the processor mode of the target computer's native processor mode.</p></td>
+<td align="left"><p>Use the processor mode of the target computer&#39;s native processor mode.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>#</strong></p></td>
@@ -77,7 +73,7 @@ You can enter one of the following machine types.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
 
@@ -102,7 +98,7 @@ You can enter one of the following machine types.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -115,9 +111,9 @@ The processor mode influences many debugger features:
 
 -   Which processor's register set is active.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -8,11 +8,7 @@ keywords:
 - scenarios WDK WSDBIT
 - test scenarios WDK WSDBIT
 - Device and Service inspection scenario WDK WSDBIT
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -281,11 +277,11 @@ Nothing
 
 Corresponds to what was sent. For an example of the client output, see [Sample Metadata Response Output](sample-metadata-response-output.md).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

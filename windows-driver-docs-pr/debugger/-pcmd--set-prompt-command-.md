@@ -3,11 +3,7 @@ title: .pcmd (Set Prompt Command)
 description: The .pcmd command causes the debugger to issue a command whenever the target stops executing and to display a prompt in the Debugger Command window with register or target state information.
 ms.assetid: 8cda10c3-860c-453d-9fdd-0dfc74d71c53
 keywords: [".pcmd (Set Prompt Command) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **.pcmd** command causes the debugger to issue a command whenever the target stops executing and to display a prompt in the [Debugger Command window](debugger-command-window.md) with register or target state information.
 
-```
+```dbgcmd
 .pcmd -s CommandString 
 .pcmd -c 
 .pcmd 
@@ -60,7 +56,7 @@ Deletes any existing prompt command string.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -75,7 +71,7 @@ When you set a prompt command by using **.pcmd -s**, the specified *CommandStrin
 
 In the following example, the first use of **.pcmd** sets a fixed string that appears with the prompt. The second use of **.pcmd** causes the debugger to display the target's current process ID and thread ID every time that the prompt appears. The special prompt does not appear after the [**.ttime**](-ttime--display-thread-times-.md) command is used, because that command does not involve execution.
 
-```
+```dbgcmd
 0:000> .pcmd
 No per-prompt command
 
@@ -112,9 +108,9 @@ Prymes!isPrime+0x9f:
 $tpid=0000080c $tid=00000514
 ```
 
- 
+ 
 
- 
+ 
 
 
 

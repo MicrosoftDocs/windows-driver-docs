@@ -3,6 +3,7 @@ title: MSiSCSI\_NICConfig WMI Class
 description: MSiSCSI\_NICConfig WMI Class
 ms.assetid: 9b7a466d-a9bb-41c5-8f38-e5baf21e863a
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MSiSCSI\_NICConfig WMI Class
@@ -17,7 +18,7 @@ The miniport driver for the HBA initiator must create one instance of the MSiSCS
 
 The MSiSCSI\_NICConfig class is defined in *Config.mof*.
 
-```
+```cpp
 class MSiSCSI_NICConfig {
   [key] string  InstanceName;
   boolean  Active;
@@ -46,9 +47,9 @@ class MSiSCSI_NICConfig {
 
 When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_NICConfig**](https://msdn.microsoft.com/library/windows/hardware/ff563079) data structure.
 
- 
+ 
 
- 
+ 
 
 
 

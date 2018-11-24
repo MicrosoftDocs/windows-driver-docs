@@ -1,6 +1,5 @@
 ---
 title: Participating in Error Source Control
-author: windows-driver-content
 description: Participating in Error Source Control
 ms.assetid: 4b2e3431-348f-48b1-924e-14b9fb5a48f0
 keywords:
@@ -11,11 +10,7 @@ keywords:
 - platform-specific hardware error driver plug-ins WDK WHEA , error source control
 - PSHED plug-ins WDK WHEA , error source control
 - error source control WDK WHEA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,7 +27,7 @@ To participate in error source control, a PSHED plug-in must implement the follo
 
 The following code example shows how to implement these callback functions.
 
-```
+```cpp
 //
 // The PSHED plug-in&#39;s SetErrorSourceInfo callback function
 //
@@ -150,9 +145,9 @@ NTSTATUS
 
 A PSHED plug-in that participates in error source control must specify the **PshedFAErrorSourceControl** flag when it [registers](registering-a-pshed-plug-in.md) itself with the operating system.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -7,11 +7,7 @@ keywords:
 - INF files WDK device installations , closing
 - opening INF files
 - closing INF files
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +27,9 @@ If no INF file is specified when calling [**SetupOpenAppendInfFile**](https://ms
 
 When the information in the INF file is no longer needed, the application should call [**SetupCloseInfFile**](https://msdn.microsoft.com/library/windows/desktop/aa376985) to release resources allocated during the call to [**SetupOpenInfFile**](https://msdn.microsoft.com/library/windows/desktop/aa377409).
 
- 
+ 
 
- 
+ 
 
 
 

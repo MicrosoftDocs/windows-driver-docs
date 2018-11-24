@@ -1,17 +1,12 @@
 ---
 title: Returning Printer-Specific Information
-author: windows-driver-content
 description: Returning Printer-Specific Information
 ms.assetid: 7a47b395-4b01-437f-bed7-967b31b5841e
 keywords:
 - printer graphics DLL WDK , return printer-specific information
 - graphics DLL WDK printer , return printer-specific information
 - returning printer-specific information WDK printer graphics
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,9 +20,9 @@ GDI sometimes requests a printer graphics DLL to return printer-specific informa
 
 An example of when this might occur is the case of a word processing application that is maintaining a WYSIWYG screen display of a printable page. To correctly display the line breaks in text, the word processor must base line-fitting calculations on character widths and other font metrics from the selected printer's implementation of a font.
 
- 
+ 
 
- 
+ 
 
 
 

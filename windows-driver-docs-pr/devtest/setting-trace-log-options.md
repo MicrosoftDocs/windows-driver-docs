@@ -7,11 +7,7 @@ keywords:
 - listing message files WDK
 - trace logs WDK TraceView , setting options
 - log files WDK TraceView , setting options
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,9 +38,9 @@ If you specify an existing listing or summary file, TraceView overwrites the fil
 
 TraceView creates the summary file when you stop the trace session. If you close the TraceView window before stopping the trace session, TraceView does not create a summary file for the session.
 
- 
+ 
 
- 
+ 
 
 
 

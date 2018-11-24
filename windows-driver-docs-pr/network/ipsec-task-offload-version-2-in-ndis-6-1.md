@@ -5,11 +5,7 @@ ms.assetid: ecd7b1ab-b2e6-4b56-8610-17b5ff5e77cd
 keywords:
 - IPsec offload WDK TCP/IP transport , version 2
 - IPsecOV2 WDK TCP/IP transport , about IPsecOV2
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -26,9 +22,9 @@ IPsecOV2 uses the NDIS 6.1 direct OID request interface. For more information ab
 
 For more information about IPsecOV2, see [IPsec Offload Version 2](ipsec-offload-version-2.md).
 
- 
+ 
 
- 
+ 
 
 
 

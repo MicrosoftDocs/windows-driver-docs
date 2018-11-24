@@ -1,16 +1,11 @@
 ---
 Description: Describes the various tasks that a function controller client driver performs while interacting with USB function controller extension (UFX).
-title: Writing a function controller client driver
-author: windows-driver-content
-ms.author: windowsdriverdev
+title: Write a function controller client driver
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
-# Writing a function controller client driver
+# Write a function controller client driver
 
 
 **Summary**
@@ -22,9 +17,10 @@ ms.localizationpriority: medium
 -   Windows 10
 -   A driver developer writing a controller driver for a USB device
 
-**Last updated**
+**Important APIs**
 
--   July 2015
+-   [USB function controller client driver reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_usbref/#usb-function-controller-client-driver-reference)
+
 
 Describes the various tasks that a function controller client driver performs while interacting with USB function controller extension (UFX). UFX and the client driver communicate with each other by using export methods and event callback functions. Export methods (named **UfxDeviceXxx** or **UfxEndpointXxx**) are exported by UFX and invoked by the client driver. Callback functions (named *EVT\_UFX\_Xxx*)are implemented in the client driver and invoked by UFX.
 

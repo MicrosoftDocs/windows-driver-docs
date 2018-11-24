@@ -2,11 +2,7 @@
 title: Programming Considerations for RSC Drivers
 description: The following sections describe issues to consider when implementing a receive-segment coalescing (RSC)-capable miniport driver.
 ms.assetid: 03FDD557-3918-408A-BD79-64CD52BDD43A
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -56,9 +52,9 @@ Whenever a callout driver that has not opted in to handle large packets is regis
 
 If there is active TCP traffic during callout registration, TCP/IP will notify WFP. WFP will delay calling the registered filters until RSC is disabled. This will protect callout drivers from large packets.
 
- 
+ 
 
- 
+ 
 
 
 

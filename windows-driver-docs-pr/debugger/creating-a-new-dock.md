@@ -3,11 +3,7 @@ title: Creating a New Dock
 description: Creating a New Dock
 ms.assetid: 99cba4f9-4025-4684-920b-43c7147b5385
 keywords: ["docking windows, creating a new dock", "window docking, creating a new dock"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,9 +23,9 @@ You can create as many docks as you want.
 
 To close a dock and any debugging information windows that are currently docked there, click the **Close** button in the upper-right corner of the dock.
 
- 
+ 
 
- 
+ 
 
 
 

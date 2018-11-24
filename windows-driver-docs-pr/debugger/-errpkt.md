@@ -3,11 +3,7 @@ title: errpkt
 description: The errpkt extension displays the contents of a Windows Hardware Error Architecture (WHEA) hardware error packet.
 ms.assetid: cf4b1dfa-3b15-45d4-b5e2-1da7cdbca350
 keywords: ["errpkt Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!errpkt** extension displays the contents of a Windows Hardware Error Architecture (WHEA) hardware error packet.
 
-```
+```dbgcmd
 !errpkt Address 
 ```
 
@@ -59,20 +55,20 @@ Specifies the address of the hardware error packet.
 </tbody>
 </table>
 
- 
+ 
 
 This extension can be used only in Windows Vista and later versions of Windows.
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
-The [**!whea**](-whea.md) and [**!errrec**](-errrec.md) extensions can be used to display additional WHEA information. For general information about WHEA, see [Windows Hardware Error Architecture (WHEA)](http://go.microsoft.com/fwlink/p/?linkid=153571) in the Windows Driver Kit (WDK) documentation.
+The [**!whea**](-whea.md) and [**!errrec**](-errrec.md) extensions can be used to display additional WHEA information. For general information about WHEA, see [Windows Hardware Error Architecture (WHEA)](https://go.microsoft.com/fwlink/p/?linkid=153571) in the Windows Driver Kit (WDK) documentation.
 
 Remarks
 -------
 
 The following example shows the output of the **!errpkt** extension:
 
-```
+```dbgcmd
 3: kd> !errpkt fffffa8007cf44da 
    WHEA Error Packet Info Section (@ fffffa8007cf44da)
    Flags            : 0x00000000
@@ -100,9 +96,9 @@ Bank Number      : 0
    Misc    : 0000000000000000 (I)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

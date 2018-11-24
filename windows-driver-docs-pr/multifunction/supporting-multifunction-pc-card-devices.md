@@ -1,6 +1,5 @@
 ---
 title: Supporting Multifunction PC Card Devices
-author: windows-driver-content
 description: Supporting Multifunction PC Card Devices
 ms.assetid: 4da3b99c-0731-41b5-9f67-29c7e181342f
 keywords:
@@ -10,11 +9,7 @@ keywords:
 - 16-bit PC Card multifunction devices WDK
 - configuration registers WDK multifunction devices
 - registers WDK multifunction devices
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,9 +37,9 @@ If a device has the limitations listed above, the PCMCIA bus driver can program 
 
 Cardbus devices essentially follow the PCI multifunction rules. See [Supporting Multifunction PCI Devices](supporting-multifunction-pci-devices.md).
 
- 
+ 
 
- 
+ 
 
 
 

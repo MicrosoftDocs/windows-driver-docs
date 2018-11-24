@@ -9,11 +9,7 @@ api_name:
 - SRB_CLOSE_MASTER_CLOCK
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -38,9 +34,9 @@ Indicates that the function is not supported by the minidriver.
 <span id="STATUS_IO_DEVICE_ERROR"></span><span id="status_io_device_error"></span>STATUS\_IO\_DEVICE\_ERROR  
 Indicates that a hardware failure occurred.
 
- 
+ 
 
- 
+ 
 
 
 

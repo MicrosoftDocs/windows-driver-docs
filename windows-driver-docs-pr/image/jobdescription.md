@@ -9,11 +9,7 @@ api_name:
 - wscn JobDescription
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **JobDescription** element contains basic creation information for 
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:JobDescription>
   child elements
 </wscn:JobDescription>
@@ -50,13 +46,13 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>JobInformation</strong>](jobinformation.md)</p></td>
+<td><p><a href="jobinformation.md" data-raw-source="[&lt;strong&gt;JobInformation&lt;/strong&gt;](jobinformation.md)"><strong>JobInformation</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>JobName</strong>](jobname.md)</p></td>
+<td><p><a href="jobname.md" data-raw-source="[&lt;strong&gt;JobName&lt;/strong&gt;](jobname.md)"><strong>JobName</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>JobOriginatingUserName</strong>](joboriginatingusername.md)</p></td>
+<td><p><a href="joboriginatingusername.md" data-raw-source="[&lt;strong&gt;JobOriginatingUserName&lt;/strong&gt;](joboriginatingusername.md)"><strong>JobOriginatingUserName</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -75,10 +71,10 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>DefaultScanTicket</strong>](defaultscanticket.md)</p></td>
+<td><p><a href="defaultscanticket.md" data-raw-source="[&lt;strong&gt;DefaultScanTicket&lt;/strong&gt;](defaultscanticket.md)"><strong>DefaultScanTicket</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>ScanTicket</strong>](scanticket.md)</p></td>
+<td><p><a href="scanticket.md" data-raw-source="[&lt;strong&gt;ScanTicket&lt;/strong&gt;](scanticket.md)"><strong>ScanTicket</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -88,7 +84,7 @@ Remarks
 
 A client sets the values for all **JobDescription** child elements and submits them in a [**CreateScanJobRequest**](createscanjobrequest.md) operation.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**CreateScanJobRequest**](createscanjobrequest.md)
@@ -103,9 +99,9 @@ A client sets the values for all **JobDescription** child elements and submits t
 
 [**ScanTicket**](scanticket.md)
 
- 
+ 
 
- 
+ 
 
 
 

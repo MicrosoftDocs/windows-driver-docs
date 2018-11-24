@@ -1,13 +1,8 @@
 ---
 title: Status Section
-author: windows-driver-content
 description: Status Section
 ms.assetid: 3cb36ca5-37dc-4f2b-947f-acc6f2da1103
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -16,7 +11,7 @@ ms.localizationpriority: medium
 
 The Status section consists of the [Status](status.md) property and several child properties and values that provide information about the status of the print device.
 
-```
+```cpp
 Printer
  Status
     Summary
@@ -31,9 +26,9 @@ Printer
  Name
 ```
 
- 
+ 
 
- 
+ 
 
 
 

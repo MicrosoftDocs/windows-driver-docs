@@ -2,11 +2,7 @@
 title: Nondefault Virtual Ports and VMQ
 description: Nondefault Virtual Ports and VMQ
 ms.assetid: 5F6F5378-2CA7-491D-953C-6F98B855B51A
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -41,29 +37,19 @@ If SR-IOV is enabled on a network adapter, full VMQ functionality must be disabl
 
 The PF miniport driver advertises its SR-IOV capabilities within the context of the call to [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389). The driver initializes an [**NDIS\_SRIOV\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/hh451677) structure with its capabilities and calls [**NdisMSetMiniportAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff563672) to register its capabilities. For more information, see [Determining SR-IOV Capabilities](determining-sr-iov-capabilities.md).
 
-The following members of this structure affect the way that VPorts are allocated:
+The following members of the [**NDIS_NIC_SWITCH_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_nic_switch_capabilities) structure affect the way that VPorts are allocated:
 
 -   **MaxNumVPorts**, which specifies the maximum number of VPorts that can be created on the network adapter.
 
 -   **MaxNumVFs**, which specifies the maximum number of VFs that can be allocated on the network adapter.
 
-Starting with NDIS 6.30, when the miniport driver initializes the [**NDIS\_SRIOV\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/hh451677) structure, it can set the NDIS\_NIC\_SWITCH\_CAPS\_SINGLE\_VPORT\_POOL flag in the **NicSwitchCapabilities** member. This flag specifies that the nondefault VPorts can be created in a nonreserved manner from the VPort pool on the network adapter. This allows available nondefault VPorts to be created and assigned on an as-needed basis to the PF and allocated VFs. If the network adapter supports the VMQ interface, nondefault VPorts that are assigned to the PF can also be used for VM receive queues.
+Starting with NDIS 6.30, when the miniport driver initializes the [**NDIS_NIC_SWITCH_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_nic_switch_capabilities) structure, it can set the NDIS\_NIC\_SWITCH\_CAPS\_SINGLE\_VPORT\_POOL flag in the **NicSwitchCapabilities** member. This flag specifies that the nondefault VPorts can be created in a nonreserved manner from the VPort pool on the network adapter. This allows available nondefault VPorts to be created and assigned on an as-needed basis to the PF and allocated VFs. If the network adapter supports the VMQ interface, nondefault VPorts that are assigned to the PF can also be used for VM receive queues.
 
 If the NDIS\_NIC\_SWITCH\_CAPS\_SINGLE\_VPORT\_POOL flag is set, available nondefault VPorts are created and assigned to the PF and allocated VFs. The maximum number of VPorts that can be created and assigned to the PF is the same value that the driver reports in the **MaxNumVPorts** member. The miniport driver must reserve one VPort to be used as the default VPort that is assigned to the PF. As a result, the maximum number of nondefault VPorts that can be assigned to the PF and used for VM receive queues is (**MaxNumVPorts**– 1).
 
-**Note**  If this flag is set, the creation and assignment of nondefault VPorts are not reserved for VF allocation. As a result, situations may occur where a VF may not be assigned a VPort if the pool has been exhausted of available VPorts.
-
- 
+> [!NOTE]
+> If this flag is set, the creation and assignment of nondefault VPorts are not reserved for VF allocation. As a result, situations may occur where a VF may not be assigned a VPort if the pool has been exhausted of available VPorts. 
 
 If the NDIS\_NIC\_SWITCH\_CAPS\_SINGLE\_VPORT\_POOL flag is not set, the creation and assignment of nondefault VPorts is reserved for VF assignment. The maximum number of additional nondefault VPorts that can be created and assigned to the PF and used for VM receive queues is (**MaxNumVPorts**–**MaxNumVFs**).
 
 For more information about VMQ, see [Virtual Machine Queue (VMQ)](virtual-machine-queue--vmq-.md).
-
- 
-
- 
-
-
-
-
-

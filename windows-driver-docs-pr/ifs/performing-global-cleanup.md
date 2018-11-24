@@ -1,16 +1,11 @@
 ---
 title: Performing Global Cleanup
-author: windows-driver-content
 description: Performing Global Cleanup
 ms.assetid: 18e0fca0-16ec-4ca9-8b71-47f58f41c46d
 keywords:
 - global cleanup WDK file system minifilter
 - cleanup globally WDK file system minifilter
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +25,9 @@ A minifilter driver's [**FilterUnloadCallback**](https://msdn.microsoft.com/libr
 
 -   Call [**PsRemoveCreateThreadNotifyRoutine**](https://msdn.microsoft.com/library/windows/hardware/ff559947) or [**PsRemoveLoadImageNotifyRoutine**](https://msdn.microsoft.com/library/windows/hardware/ff559949) to unregister a global callback routine that was registered by a previous call to [**PsSetCreateThreadNotifyRoutine**](https://msdn.microsoft.com/library/windows/hardware/ff559954) or [**PsSetLoadImageNotifyRoutine**](https://msdn.microsoft.com/library/windows/hardware/ff559957), respectively.
 
- 
+ 
 
- 
+ 
 
 
 

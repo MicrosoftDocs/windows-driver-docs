@@ -10,11 +10,7 @@ keywords:
 - transferring data WDK NetDMA
 - DMA transfers WDK NetDMA
 - NetDMA WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,7 +19,7 @@ ms.localizationpriority: medium
 
 **Note**  The NetDMA interface is not supported in Windows 8 and later.
 
- 
+ 
 
 
 
@@ -32,7 +28,7 @@ The NetDMA interface provides a generic interface for memory-to-memory direct me
 
 **Note**  The Itanium-based versions of the Windows operating systems do not support NetDMA.
 
- 
+ 
 
 The Windows Vista operating system was originally released with NetDMA version 1.0 support. Windows Server 2008 includes NetDMA version 2.0.
 
@@ -46,9 +42,9 @@ This section includes:
 
 [NetDMA 2.0 Extensions](netdma-2-0-extensions.md)
 
- 
+ 
 
- 
+ 
 
 
 

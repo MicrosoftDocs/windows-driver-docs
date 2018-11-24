@@ -2,11 +2,7 @@
 title: General Requirements for Device Property Page Providers
 description: General Requirements for Device Property Page Providers
 ms.assetid: 91e93679-8c0c-43e7-a7d9-72bd0a464406
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,9 +32,9 @@ This section includes the following topics that provide more guidance about cust
 
 [Sample Custom Property Page](sample-custom-property-page.md)
 
- 
+ 
 
- 
+ 
 
 
 

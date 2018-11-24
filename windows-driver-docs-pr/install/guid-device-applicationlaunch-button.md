@@ -12,6 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # GUID_DEVICE_APPLICATIONLAUNCH_BUTTON
@@ -42,7 +43,7 @@ The GUID_DEVICE_APPLICATIONLAUNCH_BUTTON [device interface class](https://msdn.m
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -67,9 +68,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

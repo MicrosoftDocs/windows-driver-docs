@@ -1,17 +1,12 @@
 ---
 title: GDL Programming Guide
-author: windows-driver-content
 description: GDL Programming Guide
 ms.assetid: ca524040-453f-4ea2-991c-5d031b3725e7
 keywords:
 - GDL WDK , programming with GDL
 - programming with GDL WDK
 - printer drivers WDK , programming with GDL
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +23,9 @@ This section includes:
 
 [Using GDL](using-gdl.md)
 
- 
+ 
 
- 
+ 
 
 
 

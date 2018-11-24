@@ -9,11 +9,7 @@ keywords:
 - upgrading network components WDK , notify objects
 - notifications WDK networking , upgrading network components
 - upgrading network components WDK , steps
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -33,9 +29,9 @@ Network components are upgraded by the network configuration subsystem.
 
 3.  The subsystem calls the notify object's [**INetCfgComponentControl::ApplyRegistryChanges**](https://msdn.microsoft.com/library/windows/hardware/ff547727) method to modify information about the network component in the registry and then calls the notify object's [**INetCfgComponentControl::ApplyPnpChanges**](https://msdn.microsoft.com/library/windows/hardware/ff547726) method and passes the [**INetCfgPnpReconfigCallback**](https://msdn.microsoft.com/library/windows/hardware/ff547935) interface to configure the component's driver with the upgraded information.
 
- 
+ 
 
- 
+ 
 
 
 

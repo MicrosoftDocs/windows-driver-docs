@@ -4,11 +4,7 @@ description: Delivery Algorithm
 ms.assetid: 13e80cec-03f5-4498-94ab-ce974a8b9697
 keywords:
 - delivering received data WDK TCP chimney offload , algorithm
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,9 +32,9 @@ To increase performance, the offload target can complete all filled receive requ
 
 After starting the delivery algorithm, the offload target must complete the algorithm.
 
- 
+ 
 
- 
+ 
 
 
 

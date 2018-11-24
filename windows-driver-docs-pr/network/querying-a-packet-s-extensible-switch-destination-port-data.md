@@ -2,11 +2,7 @@
 title: Querying a Packet's Extensible Switch Destination Port Data
 description: Querying a Packet's Extensible Switch Destination Port Data
 ms.assetid: 57D82C5E-3758-492C-A1DA-B7BC3DBE2E7A
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,11 +17,11 @@ To improve performance, a forwarding extension can call the [*GrowNetBufferListD
 
 **Note**  Only packets obtained from the extensible switch egress data path will contain destination port information. For more information, see [Hyper-V Extensible Switch Data Path](hyper-v-extensible-switch-data-path.md).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

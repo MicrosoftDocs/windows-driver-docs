@@ -3,11 +3,7 @@ title: ks.findlive
 description: The ks.findlive extension searches the internal Ks.sys debug log to attempt to find live objects of a specified type.
 ms.assetid: 71372144-3f39-460b-859c-ac4cba0c766d
 keywords: ["ks.findlive Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!ks.findlive** extension searches the internal Ks.sys debug log to attempt to find live objects of a specified type.
 
-```
+```dbgcmd
 !ks.findlive Type [Entries] [Level] 
 ```
 
@@ -57,7 +53,7 @@ Optional. Specifies the level of detail to display on a 0-7 scale with progressi
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -70,9 +66,9 @@ The **!ks.findlive** command may not find all possible specified live objects.
 
 This extension requires that the target computer be running a checked (debug) version of Ks.sys.
 
- 
+ 
 
- 
+ 
 
 
 

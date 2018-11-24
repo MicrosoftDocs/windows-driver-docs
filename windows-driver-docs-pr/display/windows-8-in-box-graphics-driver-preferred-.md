@@ -2,11 +2,7 @@
 title: Windows 8 in-box graphics driver preferred
 description: In this scenario, Windows 8 in-box graphics driver are preferred over Windows 7 or older graphics drivers.
 ms.assetid: 77B6F0A3-F8CE-473F-AF17-4C08237DC33C
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -20,11 +16,11 @@ In a Windows 8 upgrade installation, if the graphics hardware is covered by a Wi
 **Note**  
 A Windows 7 in-box graphics driver will never migrate to Windows 8, even if there is no Windows 8 in-box coverage for the graphics hardware. In this case, Windows 8 uses the Microsoft Basic Display Driver (MSBDD).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,12 +1,7 @@
 ---
 Description: Microsoft-provided in-box driver (Usbser.sys) for your Communications and CDC Control device.
 title: USB serial driver (Usbser.sys)
-author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -42,7 +37,7 @@ Load the Microsoft-provided in-box driver (Usbser.sys) for your Communications a
 
 **Note**  If you trying to install a USB device class driver included in Windows, you do not need to download the driver. They are installed automatically. If they are not installed automatically, contact the device manufacturer. For the list of USB device class driver included in Windows, see [USB device class drivers included in Windows](supported-usb-classes.md).
 
- 
+ 
 
 **Windows 10**
 
@@ -58,7 +53,7 @@ In Windows 10, a new INF, Usbser.inf, has been added to %Systemroot%\\Inf that 
 
 **Note**  Microsoft encourages you to use in-box drivers whenever possible. On mobile editions of Windows, such as Windows 10 Mobile, only drivers that are part of the operating system are loaded. Unlike desktop editions, it is not possible to load a driver through an external driver package. With the new in-box INF, Usbser.sys is automatically loaded if a USB-to-serial device is detected on the mobile device.
 
- 
+ 
 
 **Windows 8.1 and earlier versions**
 
@@ -111,7 +106,7 @@ That entry can be added in one of two ways:
 
 If you install Usbser.sys for the USB CDC device, here are the application programming model options:
 
--   Starting in Windows 10, a Windows store app can send requests to Usbser.sys by using the [**Windows.Devices.SerialCommunication**](https://msdn.microsoft.com/library/windows/apps/dn921817) namespace. It defines Windows Runtime classes that can use to communicate with a USB CDC device through a serial port or some abstraction of a serial port. The classes provide functionality to discover such serial device, read and write data, and control serial-specific properties for flow control, such as setting baud rate, signal states.
+-   Starting in Windows 10, a Windows app can send requests to Usbser.sys by using the [**Windows.Devices.SerialCommunication**](https://msdn.microsoft.com/library/windows/apps/dn921817) namespace. It defines Windows Runtime classes that can use to communicate with a USB CDC device through a serial port or some abstraction of a serial port. The classes provide functionality to discover such serial device, read and write data, and control serial-specific properties for flow control, such as setting baud rate, signal states.
 
 -   In Windows 8.1 and earlier versions, you can write a Windows desktop application that opens a virtual COM port and communicates with the device. For more information, see:
 
@@ -126,7 +121,7 @@ If you install Usbser.sys for the USB CDC device, here are the application progr
 
 ## Related topics
 [USB device class drivers included in Windows](supported-usb-classes.md)  
-<!-- [How to use or to reference the Usbser.sys driver from universal serial bus (USB) modem .inf files](https://support.microsoft.com/en-us/help/837637/how-to-use-or-to-reference-the-usbser.sys-driver-from-universal-serial-bus-usb-modem-.inf-files) -->
+<!-- [How to use or to reference the Usbser.sys driver from universal serial bus (USB) modem .inf files](https://support.microsoft.com/help/837637/how-to-use-or-to-reference-the-usbser.sys-driver-from-universal-serial-bus-usb-modem-.inf-files) -->
 
 
 

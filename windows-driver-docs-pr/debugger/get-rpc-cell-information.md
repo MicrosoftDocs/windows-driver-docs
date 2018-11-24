@@ -3,11 +3,7 @@ title: Get RPC Cell Information
 description: Get RPC Cell Information
 ms.assetid: 7dd5e77e-914d-4b00-90c5-92705eebf436
 keywords: ["RPC cell information"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,7 +19,7 @@ The process ID of the process that contains the preferred cell must be specified
 
 In the following example, the process ID is 0x278, and the cell number is 0000.0002:
 
-```
+```console
 D:\wmsg>dbgrpc -l -P 278 -L 0.2
 Getting cell info ...
 Thread
@@ -36,9 +32,9 @@ For details on the optional parameters, see [**DbgRpc Command-Line Options**](db
 
 For a similar example using the RPC debugger extensions, see [**!rpcexts.getdbgcell**](-rpcexts-getdbgcell.md).
 
- 
+ 
 
- 
+ 
 
 
 

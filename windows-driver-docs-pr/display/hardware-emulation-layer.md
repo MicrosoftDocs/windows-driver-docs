@@ -12,11 +12,7 @@ keywords:
 - capability bits WDK DirectDraw
 - caps bits WDK DirectDraw
 - surfaces WDK DirectDraw , capability bits
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -32,9 +28,9 @@ For example, if the DirectDraw driver has capability (*caps*) bits set for blts 
 
 DirectDraw does not pass failed DirectDraw driver operations to the HEL. If either the HEL or the DirectDraw driver fails a particular operation, an error code is returned to the application.
 
- 
+ 
 
- 
+ 
 
 
 

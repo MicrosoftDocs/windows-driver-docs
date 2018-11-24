@@ -2,11 +2,7 @@
 title: METransformFlushInputStream event
 description: The METransformFlushInputStream event informs the Device Transform Manager to flush the output stream of devproxy that is connected to the input of Device MFT.
 ms.assetid: 400FB4BE-90F2-4FF2-A709-7E213D99DCC8
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,18 +25,18 @@ When Device MFT’s output is changed or flushed, the related input streams may 
 |------------------------|---------------------------------------------------------------------------------|
 | **Input stream index** | The input stream index must be set on the attribute store of the IMFMediaEvent. |
 
- 
+ 
 
-## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
+## Remarks
 
 
 When Device MFT’s input stream’s connected stream needs to be flushed, it generates this event. In response to this event, DTM would call [**FlushOutputStream**](https://msdn.microsoft.com/library/windows/hardware/mt797665) on the connected stream of the Devproxy and it will call [**FlushInputStream**](https://msdn.microsoft.com/library/windows/hardware/mt797664) on the Device MFT. Device MFT would flush its input stream and the flush operation is considered complete.
 
 In general, this event would be called when the stream itself is in running state or about to be stopped.
 
- 
+ 
 
- 
+ 
 
 
 

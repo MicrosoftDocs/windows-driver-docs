@@ -1,11 +1,7 @@
 ---
 Description: Verifying Structure and Syntax for Setup Information Files
 title: Verifying Structure and Syntax for Setup Information Files
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -16,9 +12,9 @@ The Windows Driver Kit (WDK) supplies a set of Perl scripts that are referred to
 
 All WPD .inf files must invoke the UMDF co-installer. This means that whenever a CoInstallers section is declared, a \[CopyFiles\] directive must exist. If your driver does not require any additional co-installer binaries (and therefore does not need a CopyFiles directive), you can satisfy the requirement by declaring an empty CopyFiles section and referencing it from within the CoInstallers section.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,11 +1,7 @@
 ---
 Description: Defining the Service Objects
 title: Defining the Service Objects
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,7 +19,7 @@ The WpdHelloWorldDriver supports the objects that are shown in the following tab
 | Folder  | An object that exposes properties like a folder name.                                                             |
 | File    | An object that exposes properties like a file name and actual file contents.                                      |
 
- 
+ 
 
 Similar to the WpdHelloWorldDriver, the WpdServiceSampleDriver continues to support a Storage object. However, because the sample does not support a folder or file (for simplicity), we removed these objects and replaced them with a single object that corresponds to a Contact. The following table lists the objects that the new driver supports.
 
@@ -33,17 +29,17 @@ Similar to the WpdHelloWorldDriver, the WpdServiceSampleDriver continues to supp
 | Storage  | An object that exposes properties like a storage capacity, a file-system type, and a count of free bytes.              |
 | Contacts | A service object that contains properties like an object identifier, a persistent unique ID (PUID), a name, and so on. |
 
- 
+ 
 
 In WPD, objects are identified by strings. The string identifier for the Device Object is defined in the *Portabledevice.h* header file:
 
-```
+```cpp
 #define WPD_DEVICE_OBJECT_ID  L"DEVICE"
 ```
 
 The string identifiers for the Storage object are defined in the *FakeStorage.h* header file:
 
-```
+```cpp
 #define STORAGE_OBJECT_ID                                 L"123ABC"
 #define STORAGE_CAPACITY_VALUE                            1024 * 1024
 #define STORAGE_FREE_SPACE_IN_BYTES_VALUE                 STORAGE_CAPACITY_VALUE
@@ -57,7 +53,7 @@ The string identifiers for the Storage object are defined in the *FakeStorage.h*
 
 The string identifiers for the Contacts object are defined in the *FakeContactsServiceContent.h* header file:
 
-```
+```cpp
 #define CONTACTS_SERVICE_OBJECT_ID                        L"789DEF"
 #define CONTACTS_SERVICE_PERSISTENT_UNIQUE_ID             L"{95A95EA9-9904-430E-8FF6-70851F208478}"
 #define CONTACTS_SERVICE_OBJECT_NAME_VALUE                L"Contacts"
@@ -70,7 +66,7 @@ The string identifiers for the Contacts object are defined in the *FakeContactsS
 
 These object identifier constants are passed to a method in a source module that handles functional-object retrieval (*FakeDevice.cpp*) . The following excerpt from the **FakeDevice::GetFunctionalObjects** method shows how to use the CONTACTS\_SERVICE\_OBJECT\_ID to build a collection of supported functional objects (SERVICE\_Contacts is defined in the *ContactsDeviceService.h* header file and represents the functional category of the service object):
 
-```
+```cpp
     // Add CONTACTS_SERVICE_OBJECT_ID to the functional object identifiers collection
     if (hr == S_OK)
     {
@@ -93,9 +89,9 @@ These object identifier constants are passed to a method in a source module that
 
 [The WPD Driver Samples](the-wpd-driver-samples.md)
 
- 
+ 
 
- 
+ 
 
 
 

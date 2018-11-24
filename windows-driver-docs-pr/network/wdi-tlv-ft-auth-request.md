@@ -1,13 +1,8 @@
 ---
 title: WDI_TLV_FT_AUTH_REQUEST
-author: windows-driver-content
 description: WDI_TLV_FT_AUTH_REQUEST is a TLV that contains the Fast Transition authentication request byte blob.
 ms.assetid: 4107314E-3C0A-4610-A4FB-BCBDBD1A8E65
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_FT_AUTH_REQUEST Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -35,7 +30,7 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 |-----------|------------------------------------------------------------------------------------------------|
 | UINT8\[\] | An array of UINT8 elements that contains the Fast Transition authentication request byte blob. |
 
- 
+ 
 
 Requirements
 ------------
@@ -61,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

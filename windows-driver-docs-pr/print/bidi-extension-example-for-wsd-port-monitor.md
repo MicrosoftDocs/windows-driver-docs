@@ -1,6 +1,5 @@
 ---
 title: Bidi Extension Example for WSD Port Monitor
-author: windows-driver-content
 description: Bidi Extension Example for WSD Port Monitor
 ms.assetid: a04f16d5-ae99-4df5-bb55-aef95bd03588
 keywords:
@@ -8,126 +7,121 @@ keywords:
 - in-box autoconfiguration support WDK printer , bidi extension files
 - WSD schema extensions WDK printer
 - schema extensions WDK WSD
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # Bidi Extension Example for WSD Port Monitor
 
-
 The following code example is a sample XML file that extends the bidi communications schema for the Web Services for Devices (WSD) port monitor:
 
-```
-<?xml version=&#39;1.0&#39;?>
-<bidi:Definition xmlns:bidi=&#39;http://schemas.microsoft.com/windows/2005/03/printing/bidi&#39;>
+```xml
+<?xml version='1.0'?>
+<bidi:Definition xmlns:bidi='http://schemas.microsoft.com/windows/2005/03/printing/bidi'>
 
-  <Schema xmlns:nprt=&#39;http://schemas.microsoft.com/windows/2006/08/wdp/print&#39;>
-    <Property name=&#39;Printer&#39;>
-      <Property name=&#39;DeviceInfo&#39;>
-        <Value name=&#39;FriendlyName&#39; query=&#39;nprt:PrinterDescription&#39; filter=&#39;nprt:PrinterDescription/nprt:PrinterName&#39; type=&#39;BIDI_STRING&#39; xmllang=&#39;true&#39;/>
-        <Value name=&#39;Location&#39; query=&#39;nprt:PrinterDescription&#39; filter=&#39;nprt:PrinterDescription/nprt:PrinterLocation&#39; type=&#39;BIDI_STRING&#39; xmllang=&#39;true&#39;/>
-        <Value name=&#39;Comment&#39; query=&#39;nprt:PrinterDescription&#39; filter=&#39;nprt:PrinterDescription/nprt:PrinterInfo&#39; type=&#39;BIDI_STRING&#39; xmllang=&#39;true&#39;/>
-        <Value name=&#39;IEEE1284DeviceId&#39; query=&#39;nprt:PrinterDescription&#39; filter=&#39;nprt:PrinterDescription/nprt:DeviceId&#39; type=&#39;BIDI_STRING&#39;/>
+  <Schema xmlns:nprt='http://schemas.microsoft.com/windows/2006/08/wdp/print'>
+    <Property name='Printer'>
+      <Property name='DeviceInfo'>
+        <Value name='FriendlyName' query='nprt:PrinterDescription' filter='nprt:PrinterDescription/nprt:PrinterName' type='BIDI_STRING' xmllang='true'/>
+        <Value name='Location' query='nprt:PrinterDescription' filter='nprt:PrinterDescription/nprt:PrinterLocation' type='BIDI_STRING' xmllang='true'/>
+        <Value name='Comment' query='nprt:PrinterDescription' filter='nprt:PrinterDescription/nprt:PrinterInfo' type='BIDI_STRING' xmllang='true'/>
+        <Value name='IEEE1284DeviceId' query='nprt:PrinterDescription' filter='nprt:PrinterDescription/nprt:DeviceId' type='BIDI_STRING'/>
       </Property>
-      <Property name=&#39;Configuration&#39;>
-        <Property name=&#39;Memory&#39;>
-          <Value name=&#39;Size&#39; query=&#39;nprt:PrinterConfiguration&#39; filter=&#39;nprt:PrinterConfiguration/nprt:Storage/nprt:StorageEntry[nprt:Type="RAM"]/nprt:Size&#39; type=&#39;BIDI_INT&#39; drvPrinterEvent=&#39;true&#39;/>
-          <Value name=&#39;PS&#39; query=&#39;nprt:PrinterConfiguration&#39; filter=&#39;nprt:PrinterConfiguration/nprt:Storage/nprt:StorageEntry[nprt:Type="PSMemory"]/nprt:Size&#39; type=&#39;BIDI_INT&#39; drvPrinterEvent=&#39;true&#39;/>
+      <Property name='Configuration'>
+        <Property name='Memory'>
+          <Value name='Size' query='nprt:PrinterConfiguration' filter='nprt:PrinterConfiguration/nprt:Storage/nprt:StorageEntry[nprt:Type="RAM"]/nprt:Size' type='BIDI_INT' drvPrinterEvent='true'/>
+          <Value name='PS' query='nprt:PrinterConfiguration' filter='nprt:PrinterConfiguration/nprt:Storage/nprt:StorageEntry[nprt:Type="PSMemory"]/nprt:Size' type='BIDI_INT' drvPrinterEvent='true'/>
         </Property>
-        <Property name=&#39;HardDisk&#39;>
-          <Installed name=&#39;Installed&#39; query=&#39;nprt:PrinterConfiguration&#39; filter=&#39;nprt:PrinterConfiguration/nprt:Storage/nprt:StorageEntry[nprt:Type="HardDisk"]&#39; drvPrinterEvent=&#39;true&#39;/>
-          <Value name=&#39;Capacity&#39; query=&#39;nprt:PrinterConfiguration&#39; filter=&#39;nprt:PrinterConfiguration/nprt:Storage/nprt:StorageEntry[nprt:Type="HardDisk"]/nprt:Size&#39; type=&#39;BIDI_INT&#39; drvPrinterEvent=&#39;true&#39;/>
-          <Value name=&#39;FreeSpace&#39; query=&#39;nprt:PrinterConfiguration&#39; filter=&#39;nprt:PrinterConfiguration/nprt:Storage/nprt:StorageEntry[nprt:Type="HardDisk"]/nprt:Free&#39; type=&#39;BIDI_INT&#39; drvPrinterEvent=&#39;true&#39;/>
+        <Property name='HardDisk'>
+          <Installed name='Installed' query='nprt:PrinterConfiguration' filter='nprt:PrinterConfiguration/nprt:Storage/nprt:StorageEntry[nprt:Type="HardDisk"]' drvPrinterEvent='true'/>
+          <Value name='Capacity' query='nprt:PrinterConfiguration' filter='nprt:PrinterConfiguration/nprt:Storage/nprt:StorageEntry[nprt:Type="HardDisk"]/nprt:Size' type='BIDI_INT' drvPrinterEvent='true'/>
+          <Value name='FreeSpace' query='nprt:PrinterConfiguration' filter='nprt:PrinterConfiguration/nprt:Storage/nprt:StorageEntry[nprt:Type="HardDisk"]/nprt:Free' type='BIDI_INT' drvPrinterEvent='true'/>
         </Property>
-        <Property name=&#39;DuplexUnit&#39;>
-          <Value name=&#39;Installed&#39; query=&#39;nprt:PrinterConfiguration&#39; filter=&#39;nprt:PrinterConfiguration/nprt:Finishings/nprt:DuplexerInstalled&#39; type=&#39;BIDI_BOOL&#39; optional=&#39;true&#39; drvPrinterEvent=&#39;true&#39;>false</Value>
+        <Property name='DuplexUnit'>
+          <Value name='Installed' query='nprt:PrinterConfiguration' filter='nprt:PrinterConfiguration/nprt:Finishings/nprt:DuplexerInstalled' type='BIDI_BOOL' optional='true' drvPrinterEvent='true'>false</Value>
         </Property>
       </Property>
-      <Property name=&#39;Consumables&#39;>
-        <Parameter name=&#39;$Name$&#39; parameter=&#39;Name&#39; query=&#39;nprt:PrinterConfiguration&#39; filter=&#39;nprt:PrinterConfiguration/nprt:Consumables/nprt:ConsumableEntry/@nprt:Name&#39;>
-          <Installed name=&#39;Installed&#39; query=&#39;nprt:PrinterConfiguration&#39; filter=&#39;nprt:PrinterConfiguration/nprt:Consumables/nprt:ConsumableEntry[@nprt:Name="$Name$"]&#39; drvPrinterEvent=&#39;true&#39;/>
-          <Value name=&#39;Type&#39; query=&#39;nprt:PrinterConfiguration&#39; filter=&#39;nprt:PrinterConfiguration/nprt:Consumables/nprt:ConsumableEntry[@nprt:Name="$Name$"]/nprt:Type&#39; type=&#39;BIDI_STRING&#39; drvPrinterEvent=&#39;true&#39;/>
-          <Value name=&#39;Color&#39; query=&#39;nprt:PrinterConfiguration&#39; filter=&#39;nprt:PrinterConfiguration/nprt:Consumables/nprt:ConsumableEntry[@nprt:Name="$Name$"]/nprt:Color&#39; type=&#39;BIDI_STRING&#39; drvPrinterEvent=&#39;true&#39;/>
-          <Value name=&#39;Level&#39; query=&#39;nprt:PrinterConfiguration&#39; filter=&#39;nprt:PrinterConfiguration/nprt:Consumables/nprt:ConsumableEntry[@nprt:Name="$Name$"]/nprt:Level&#39; type=&#39;BIDI_INT&#39; drvPrinterEvent=&#39;true&#39;/>
-          <Value name=&#39;Model&#39; query=&#39;nprt:PrinterConfiguration&#39; filter=&#39;nprt:PrinterConfiguration/nprt:Consumables/nprt:ConsumableEntry[@nprt:Name="$Name$"]/nprt:Model&#39; type=&#39;BIDI_STRING&#39; drvPrinterEvent=&#39;true&#39;/>
+      <Property name='Consumables'>
+        <Parameter name='$Name$' parameter='Name' query='nprt:PrinterConfiguration' filter='nprt:PrinterConfiguration/nprt:Consumables/nprt:ConsumableEntry/@nprt:Name'>
+          <Installed name='Installed' query='nprt:PrinterConfiguration' filter='nprt:PrinterConfiguration/nprt:Consumables/nprt:ConsumableEntry[@nprt:Name="$Name$"]' drvPrinterEvent='true'/>
+          <Value name='Type' query='nprt:PrinterConfiguration' filter='nprt:PrinterConfiguration/nprt:Consumables/nprt:ConsumableEntry[@nprt:Name="$Name$"]/nprt:Type' type='BIDI_STRING' drvPrinterEvent='true'/>
+          <Value name='Color' query='nprt:PrinterConfiguration' filter='nprt:PrinterConfiguration/nprt:Consumables/nprt:ConsumableEntry[@nprt:Name="$Name$"]/nprt:Color' type='BIDI_STRING' drvPrinterEvent='true'/>
+          <Value name='Level' query='nprt:PrinterConfiguration' filter='nprt:PrinterConfiguration/nprt:Consumables/nprt:ConsumableEntry[@nprt:Name="$Name$"]/nprt:Level' type='BIDI_INT' drvPrinterEvent='true'/>
+          <Value name='Model' query='nprt:PrinterConfiguration' filter='nprt:PrinterConfiguration/nprt:Consumables/nprt:ConsumableEntry[@nprt:Name="$Name$"]/nprt:Model' type='BIDI_STRING' drvPrinterEvent='true'/>
         </Parameter>
       </Property>
-      <Property name=&#39;Layout&#39;>
-        <Property name=&#39;NumberUp&#39;>
-          <Property name=&#39;PagesPerSheet&#39;>
-            <Value name=&#39;CurrentValue&#39; query=&#39;nprt:DefaultPrintTicket&#39; filter=&#39;nprt:DefaultPrintTicket/nprt:DocumentProcessing/nprt:NumberUp/nprt:PagesPerSheet&#39; type=&#39;BIDI_INT&#39; drvPrinterEvent=&#39;true&#39;/>
-            <List name=&#39;Supported&#39; query=&#39;nprt:PrinterCapabilities&#39; filter=&#39;nprt:PrinterCapabilities/nprt:JobValues/nprt:DocumentProcessing/nprt:NumberUp/nprt:PagesPerSheet/nprt:AllowedValue&#39; drvPrinterEvent=&#39;true&#39;/>
+      <Property name='Layout'>
+        <Property name='NumberUp'>
+          <Property name='PagesPerSheet'>
+            <Value name='CurrentValue' query='nprt:DefaultPrintTicket' filter='nprt:DefaultPrintTicket/nprt:DocumentProcessing/nprt:NumberUp/nprt:PagesPerSheet' type='BIDI_INT' drvPrinterEvent='true'/>
+            <List name='Supported' query='nprt:PrinterCapabilities' filter='nprt:PrinterCapabilities/nprt:JobValues/nprt:DocumentProcessing/nprt:NumberUp/nprt:PagesPerSheet/nprt:AllowedValue' drvPrinterEvent='true'/>
           </Property>
-          <Property name=&#39;Direction&#39;>
-            <Value name=&#39;CurrentValue&#39; query=&#39;nprt:DefaultPrintTicket&#39; filter=&#39;nprt:DefaultPrintTicket/nprt:DocumentProcessing/nprt:NumberUp/nprt:Direction&#39; type=&#39;BIDI_STRING&#39; drvPrinterEvent=&#39;true&#39;/>
-            <List name=&#39;Supported&#39; query=&#39;nprt:PrinterCapabilities&#39; filter=&#39;nprt:PrinterCapabilities/nprt:JobValues/nprt:DocumentProcessing/nprt:NumberUp/nprt:Direction/nprt:AllowedValue&#39; drvPrinterEvent=&#39;true&#39;/>
+          <Property name='Direction'>
+            <Value name='CurrentValue' query='nprt:DefaultPrintTicket' filter='nprt:DefaultPrintTicket/nprt:DocumentProcessing/nprt:NumberUp/nprt:Direction' type='BIDI_STRING' drvPrinterEvent='true'/>
+            <List name='Supported' query='nprt:PrinterCapabilities' filter='nprt:PrinterCapabilities/nprt:JobValues/nprt:DocumentProcessing/nprt:NumberUp/nprt:Direction/nprt:AllowedValue' drvPrinterEvent='true'/>
           </Property>
         </Property>
-        <Property name=&#39;Orientation&#39;>
-          <Value name=&#39;CurrentValue&#39; query=&#39;nprt:DefaultPrintTicket&#39; filter=&#39;nprt:DefaultPrintTicket/nprt:DocumentProcessing/nprt:Orientation&#39; type=&#39;BIDI_STRING&#39; drvPrinterEvent=&#39;true&#39;/>
-          <List name=&#39;Supported&#39; query=&#39;nprt:PrinterCapabilities&#39; filter=&#39;nprt:PrinterCapabilities/nprt:JobValues/nprt:DocumentProcessing/nprt:Orientation/nprt:AllowedValue&#39; drvPrinterEvent=&#39;true&#39;/>
+        <Property name='Orientation'>
+          <Value name='CurrentValue' query='nprt:DefaultPrintTicket' filter='nprt:DefaultPrintTicket/nprt:DocumentProcessing/nprt:Orientation' type='BIDI_STRING' drvPrinterEvent='true'/>
+          <List name='Supported' query='nprt:PrinterCapabilities' filter='nprt:PrinterCapabilities/nprt:JobValues/nprt:DocumentProcessing/nprt:Orientation/nprt:AllowedValue' drvPrinterEvent='true'/>
         </Property>
-        <Property name=&#39;InputBins&#39;>
-          <Parameter name=&#39;$TrayName$&#39; parameter=&#39;TrayName&#39; query=&#39;nprt:PrinterConfiguration&#39; filter=&#39;nprt:PrinterConfiguration/nprt:InputBins/nprt:InputBinEntry/@nprt:Name&#39;>
-            <Installed name=&#39;Installed&#39; query=&#39;nprt:PrinterConfiguration&#39; filter=&#39;nprt:PrinterConfiguration/nprt:InputBins/nprt:InputBinEntry[@nprt:Name="$TrayName$"]&#39; drvPrinterEvent=&#39;true&#39;/>
-            <Value name=&#39;MediaSize&#39; query=&#39;nprt:PrinterConfiguration&#39; filter=&#39;nprt:PrinterConfiguration/nprt:InputBins/nprt:InputBinEntry[@nprt:Name="$TrayName$"]/nprt:MediaSize&#39; type=&#39;BIDI_STRING&#39; drvPrinterEvent=&#39;true&#39;/>
-            <Value name=&#39;MediaType&#39; query=&#39;nprt:PrinterConfiguration&#39; filter=&#39;nprt:PrinterConfiguration/nprt:InputBins/nprt:InputBinEntry[@nprt:Name="$TrayName$"]/nprt:MediaType&#39; type=&#39;BIDI_STRING&#39; drvPrinterEvent=&#39;true&#39;/>
-            <Value name=&#39;MediaColor&#39; query=&#39;nprt:PrinterConfiguration&#39; filter=&#39;nprt:PrinterConfiguration/nprt:InputBins/nprt:InputBinEntry[@nprt:Name="$TrayName$"]/nprt:MediaColor&#39; type=&#39;BIDI_STRING&#39; drvPrinterEvent=&#39;true&#39;/>
-            <Value name=&#39;FeedDirection&#39; query=&#39;nprt:PrinterConfiguration&#39; filter=&#39;nprt:PrinterConfiguration/nprt:InputBins/nprt:InputBinEntry[@nprt:Name="$TrayName$"]/nprt:FeedDirection&#39; type=&#39;BIDI_STRING&#39; drvPrinterEvent=&#39;true&#39;/>
-            <Value name=&#39;Capacity&#39; query=&#39;nprt:PrinterConfiguration&#39; filter=&#39;nprt:PrinterConfiguration/nprt:InputBins/nprt:InputBinEntry[@nprt:Name="$TrayName$"]/nprt:Capacity&#39; type=&#39;BIDI_INT&#39; drvPrinterEvent=&#39;true&#39;/>
-            <Value name=&#39;Level&#39; query=&#39;nprt:PrinterConfiguration&#39; filter=&#39;nprt:PrinterConfiguration/nprt:InputBins/nprt:InputBinEntry[@nprt:Name="$TrayName$"]/nprt:Level&#39; type=&#39;BIDI_INT&#39; drvPrinterEvent=&#39;true&#39;/>
+        <Property name='InputBins'>
+          <Parameter name='$TrayName$' parameter='TrayName' query='nprt:PrinterConfiguration' filter='nprt:PrinterConfiguration/nprt:InputBins/nprt:InputBinEntry/@nprt:Name'>
+            <Installed name='Installed' query='nprt:PrinterConfiguration' filter='nprt:PrinterConfiguration/nprt:InputBins/nprt:InputBinEntry[@nprt:Name="$TrayName$"]' drvPrinterEvent='true'/>
+            <Value name='MediaSize' query='nprt:PrinterConfiguration' filter='nprt:PrinterConfiguration/nprt:InputBins/nprt:InputBinEntry[@nprt:Name="$TrayName$"]/nprt:MediaSize' type='BIDI_STRING' drvPrinterEvent='true'/>
+            <Value name='MediaType' query='nprt:PrinterConfiguration' filter='nprt:PrinterConfiguration/nprt:InputBins/nprt:InputBinEntry[@nprt:Name="$TrayName$"]/nprt:MediaType' type='BIDI_STRING' drvPrinterEvent='true'/>
+            <Value name='MediaColor' query='nprt:PrinterConfiguration' filter='nprt:PrinterConfiguration/nprt:InputBins/nprt:InputBinEntry[@nprt:Name="$TrayName$"]/nprt:MediaColor' type='BIDI_STRING' drvPrinterEvent='true'/>
+            <Value name='FeedDirection' query='nprt:PrinterConfiguration' filter='nprt:PrinterConfiguration/nprt:InputBins/nprt:InputBinEntry[@nprt:Name="$TrayName$"]/nprt:FeedDirection' type='BIDI_STRING' drvPrinterEvent='true'/>
+            <Value name='Capacity' query='nprt:PrinterConfiguration' filter='nprt:PrinterConfiguration/nprt:InputBins/nprt:InputBinEntry[@nprt:Name="$TrayName$"]/nprt:Capacity' type='BIDI_INT' drvPrinterEvent='true'/>
+            <Value name='Level' query='nprt:PrinterConfiguration' filter='nprt:PrinterConfiguration/nprt:InputBins/nprt:InputBinEntry[@nprt:Name="$TrayName$"]/nprt:Level' type='BIDI_INT' drvPrinterEvent='true'/>
           </Parameter>
         </Property>
       </Property>
-      <Property name=&#39;Finishing&#39;>
-        <Value name=&#39;CollationSupported&#39; query=&#39;nprt:PrinterConfiguration&#39; filter=&#39;nprt:PrinterConfiguration/nprt:Finishings/nprt:CollationSupported&#39; type=&#39;BIDI_BOOL&#39; optional=&#39;true&#39; drvPrinterEvent=&#39;true&#39;>false</Value>
-        <Value name=&#39;JogOffsetSupported&#39; query=&#39;nprt:PrinterConfiguration&#39; filter=&#39;nprt:PrinterConfiguration/nprt:Finishings/nprt:JogOffsetSupported&#39; type=&#39;BIDI_BOOL&#39; optional=&#39;true&#39; drvPrinterEvent=&#39;true&#39;>false</Value>
-        <Property name=&#39;Staple&#39;>
-          <Value name=&#39;Installed&#39; query=&#39;nprt:PrinterConfiguration&#39; filter=&#39;nprt:PrinterConfiguration/nprt:Finishings/nprt:StaplerInstalled&#39; type=&#39;BIDI_BOOL&#39; optional=&#39;true&#39; drvPrinterEvent=&#39;true&#39;>false</Value>
-          <Property name=&#39;Location&#39;>
-            <Value name=&#39;CurrentValue&#39; query=&#39;nprt:DefaultPrintTicket&#39; filter=&#39;nprt:DefaultPrintTicket/nprt:JobProcessing/nprt:JobFinishings/nprt:Staple/nprt:Location&#39; type=&#39;BIDI_STRING&#39; drvPrinterEvent=&#39;true&#39;/>
-            <List name=&#39;Supported&#39; query=&#39;nprt:PrinterCapabilities&#39; filter=&#39;nprt:PrinterCapabilities/nprt:JobValues/nprt:JobProcessing/nprt:JobFinishings/nprt:Staple/nprt:Location/nprt:AllowedValue&#39; drvPrinterEvent=&#39;true&#39;/>
+      <Property name='Finishing'>
+        <Value name='CollationSupported' query='nprt:PrinterConfiguration' filter='nprt:PrinterConfiguration/nprt:Finishings/nprt:CollationSupported' type='BIDI_BOOL' optional='true' drvPrinterEvent='true'>false</Value>
+        <Value name='JogOffsetSupported' query='nprt:PrinterConfiguration' filter='nprt:PrinterConfiguration/nprt:Finishings/nprt:JogOffsetSupported' type='BIDI_BOOL' optional='true' drvPrinterEvent='true'>false</Value>
+        <Property name='Staple'>
+          <Value name='Installed' query='nprt:PrinterConfiguration' filter='nprt:PrinterConfiguration/nprt:Finishings/nprt:StaplerInstalled' type='BIDI_BOOL' optional='true' drvPrinterEvent='true'>false</Value>
+          <Property name='Location'>
+            <Value name='CurrentValue' query='nprt:DefaultPrintTicket' filter='nprt:DefaultPrintTicket/nprt:JobProcessing/nprt:JobFinishings/nprt:Staple/nprt:Location' type='BIDI_STRING' drvPrinterEvent='true'/>
+            <List name='Supported' query='nprt:PrinterCapabilities' filter='nprt:PrinterCapabilities/nprt:JobValues/nprt:JobProcessing/nprt:JobFinishings/nprt:Staple/nprt:Location/nprt:AllowedValue' drvPrinterEvent='true'/>
           </Property>
-          <Property name=&#39;Angle&#39;>
-            <Value name=&#39;CurrentValue&#39; query=&#39;nprt:DefaultPrintTicket&#39; filter=&#39;nprt:DefaultPrintTicket/nprt:JobProcessing/nprt:JobFinishings/nprt:Staple/nprt:Angle&#39; type=&#39;BIDI_STRING&#39; drvPrinterEvent=&#39;true&#39;/>
-            <List name=&#39;Supported&#39; query=&#39;nprt:PrinterCapabilities&#39; filter=&#39;nprt:PrinterCapabilities/nprt:JobValues/nprt:JobProcessing/nprt:JobFinishings/nprt:Staple/nprt:Angle/nprt:AllowedValue&#39; drvPrinterEvent=&#39;true&#39;/>
-          </Property>
-        </Property>
-        <Property name=&#39;HolePunch&#39;>
-          <Value name=&#39;Installed&#39; query=&#39;nprt:PrinterConfiguration&#39; filter=&#39;nprt:PrinterConfiguration/nprt:Finishings/nprt:HolePunch/nprt:HolePunchInstalled&#39; type=&#39;BIDI_BOOL&#39; optional=&#39;true&#39; drvPrinterEvent=&#39;true&#39;>false</Value>
-          <Property name=&#39;Pattern&#39;>
-            <Value name=&#39;CurrentValue&#39; query=&#39;nprt:DefaultPrintTicket&#39; filter=&#39;nprt:DefaultPrintTicket/nprt:JobProcessing/nprt:JobFinishings/nprt:HolePunch/nprt:Pattern&#39; type=&#39;BIDI_STRING&#39; drvPrinterEvent=&#39;true&#39;/>
-            <List name=&#39;Supported&#39; query=&#39;nprt:PrinterCapabilities&#39; filter=&#39;nprt:PrinterCapabilities/nprt:JobValues/nprt:JobProcessing/nprt:JobFinishings/nprt:HolePunch/nprt:Pattern/nprt:AllowedValue&#39; drvPrinterEvent=&#39;true&#39;/>
-          </Property>
-          <Property name=&#39;Location&#39;>
-            <Value name=&#39;CurrentValue&#39; query=&#39;nprt:DefaultPrintTicket&#39; filter=&#39;nprt:DefaultPrintTicket/nprt:JobProcessing/nprt:JobFinishings/nprt:HolePunch/nprt:Edge&#39; type=&#39;BIDI_STRING&#39; drvPrinterEvent=&#39;true&#39;/>
-            <List name=&#39;Supported&#39; query=&#39;nprt:PrinterCapabilities&#39; filter=&#39;nprt:PrinterCapabilities/nprt:JobValues/nprt:JobProcessing/nprt:JobFinishings/nprt:HolePunch/nprt:Edge/nprt:AllowedValue&#39; drvPrinterEvent=&#39;true&#39;/>
+          <Property name='Angle'>
+            <Value name='CurrentValue' query='nprt:DefaultPrintTicket' filter='nprt:DefaultPrintTicket/nprt:JobProcessing/nprt:JobFinishings/nprt:Staple/nprt:Angle' type='BIDI_STRING' drvPrinterEvent='true'/>
+            <List name='Supported' query='nprt:PrinterCapabilities' filter='nprt:PrinterCapabilities/nprt:JobValues/nprt:JobProcessing/nprt:JobFinishings/nprt:Staple/nprt:Angle/nprt:AllowedValue' drvPrinterEvent='true'/>
           </Property>
         </Property>
-        <Property name=&#39;OutputBins&#39;>
-          <Parameter name=&#39;$TrayName$&#39; parameter=&#39;TrayName&#39; query=&#39;nprt:PrinterConfiguration&#39; filter=&#39;nprt:PrinterConfiguration/nprt:OutputBins/nprt:OutputBinEntry/@nprt:Name&#39;>
-            <Installed name=&#39;Installed&#39; query=&#39;nprt:PrinterConfiguration&#39; filter=&#39;nprt:PrinterConfiguration/nprt:OutputBins/nprt:OutputBinEntry[@nprt:Name="$TrayName$"]&#39; drvPrinterEvent=&#39;true&#39;/>
-            <Value name=&#39;Capacity&#39; query=&#39;nprt:PrinterConfiguration&#39; filter=&#39;nprt:PrinterConfiguration/nprt:OutputBins/nprt:OutputBinEntry[@nprt:Name="$TrayName$"]/nprt:Capacity&#39; type=&#39;BIDI_INT&#39; drvPrinterEvent=&#39;true&#39;/>
-            <Value name=&#39;Level&#39; query=&#39;nprt:PrinterConfiguration&#39; filter=&#39;nprt:PrinterConfiguration/nprt:OutputBins/nprt:OutputBinEntry[@nprt:Name="$TrayName$"]/nprt:Level&#39; type=&#39;BIDI_INT&#39; drvPrinterEvent=&#39;true&#39;/>
+        <Property name='HolePunch'>
+          <Value name='Installed' query='nprt:PrinterConfiguration' filter='nprt:PrinterConfiguration/nprt:Finishings/nprt:HolePunch/nprt:HolePunchInstalled' type='BIDI_BOOL' optional='true' drvPrinterEvent='true'>false</Value>
+          <Property name='Pattern'>
+            <Value name='CurrentValue' query='nprt:DefaultPrintTicket' filter='nprt:DefaultPrintTicket/nprt:JobProcessing/nprt:JobFinishings/nprt:HolePunch/nprt:Pattern' type='BIDI_STRING' drvPrinterEvent='true'/>
+            <List name='Supported' query='nprt:PrinterCapabilities' filter='nprt:PrinterCapabilities/nprt:JobValues/nprt:JobProcessing/nprt:JobFinishings/nprt:HolePunch/nprt:Pattern/nprt:AllowedValue' drvPrinterEvent='true'/>
+          </Property>
+          <Property name='Location'>
+            <Value name='CurrentValue' query='nprt:DefaultPrintTicket' filter='nprt:DefaultPrintTicket/nprt:JobProcessing/nprt:JobFinishings/nprt:HolePunch/nprt:Edge' type='BIDI_STRING' drvPrinterEvent='true'/>
+            <List name='Supported' query='nprt:PrinterCapabilities' filter='nprt:PrinterCapabilities/nprt:JobValues/nprt:JobProcessing/nprt:JobFinishings/nprt:HolePunch/nprt:Edge/nprt:AllowedValue' drvPrinterEvent='true'/>
+          </Property>
+        </Property>
+        <Property name='OutputBins'>
+          <Parameter name='$TrayName$' parameter='TrayName' query='nprt:PrinterConfiguration' filter='nprt:PrinterConfiguration/nprt:OutputBins/nprt:OutputBinEntry/@nprt:Name'>
+            <Installed name='Installed' query='nprt:PrinterConfiguration' filter='nprt:PrinterConfiguration/nprt:OutputBins/nprt:OutputBinEntry[@nprt:Name="$TrayName$"]' drvPrinterEvent='true'/>
+            <Value name='Capacity' query='nprt:PrinterConfiguration' filter='nprt:PrinterConfiguration/nprt:OutputBins/nprt:OutputBinEntry[@nprt:Name="$TrayName$"]/nprt:Capacity' type='BIDI_INT' drvPrinterEvent='true'/>
+            <Value name='Level' query='nprt:PrinterConfiguration' filter='nprt:PrinterConfiguration/nprt:OutputBins/nprt:OutputBinEntry[@nprt:Name="$TrayName$"]/nprt:Level' type='BIDI_INT' drvPrinterEvent='true'/>
           </Parameter>
         </Property>
       </Property>
-      <Property name=&#39;Status&#39;>
-        <Property name=&#39;Summary&#39;>
-          <Value name=&#39;State&#39; query=&#39;nprt:PrinterStatus&#39; filter=&#39;nprt:PrinterStatus/nprt:PrinterState&#39; type=&#39;BIDI_STRING&#39;/>
-          <Value name=&#39;StateReason&#39; query=&#39;nprt:PrinterStatus&#39; filter=&#39;nprt:PrinterStatus/nprt:PrinterPrimaryStateReason&#39; type=&#39;BIDI_STRING&#39;/>
+      <Property name='Status'>
+        <Property name='Summary'>
+          <Value name='State' query='nprt:PrinterStatus' filter='nprt:PrinterStatus/nprt:PrinterState' type='BIDI_STRING'/>
+          <Value name='StateReason' query='nprt:PrinterStatus' filter='nprt:PrinterStatus/nprt:PrinterPrimaryStateReason' type='BIDI_STRING'/>
         </Property>
-        <Property name=&#39;Detailed&#39;>
-          <Parameter name=&#39;Event$EventIndex$&#39; parameter=&#39;EventIndex&#39; query=&#39;nprt:PrinterStatus&#39; filter=&#39;nprt:PrinterStatus/nprt:ActiveCondition/nprt:DeviceCondition/@nprt:Id&#39;>
-            <Value name=&#39;Name&#39; query=&#39;nprt:PrinterStatus&#39; filter=&#39;nprt:PrinterStatus/nprt:ActiveCondition/nprt:DeviceCondition[@nprt:Id="$EventIndex$"]/nprt:Name&#39; type=&#39;BIDI_STRING&#39;/>
-            <Value name=&#39;Severity&#39; query=&#39;nprt:PrinterStatus&#39; filter=&#39;nprt:PrinterStatus/nprt:ActiveCondition/nprt:DeviceCondition[@nprt:Id="$EventIndex$"]/nprt:Severity&#39; type=&#39;BIDI_STRING&#39;/>
-            <Property name=&#39;Component&#39;>
-              <Value name=&#39;Group&#39; query=&#39;nprt:PrinterStatus&#39; filter=&#39;nprt:PrinterStatus/nprt:ActiveCondition/nprt:DeviceCondition[@nprt:Id="$EventIndex$"]/nprt:Component/nprt:Group&#39; type=&#39;BIDI_STRING&#39;/>
-              <Value name=&#39;Name&#39; query=&#39;nprt:PrinterStatus&#39; filter=&#39;nprt:PrinterStatus/nprt:ActiveCondition/nprt:DeviceCondition[@nprt:Id="$EventIndex$"]/nprt:Component/nprt:Name&#39; type=&#39;BIDI_STRING&#39;/>
+        <Property name='Detailed'>
+          <Parameter name='Event$EventIndex$' parameter='EventIndex' query='nprt:PrinterStatus' filter='nprt:PrinterStatus/nprt:ActiveCondition/nprt:DeviceCondition/@nprt:Id'>
+            <Value name='Name' query='nprt:PrinterStatus' filter='nprt:PrinterStatus/nprt:ActiveCondition/nprt:DeviceCondition[@nprt:Id="$EventIndex$"]/nprt:Name' type='BIDI_STRING'/>
+            <Value name='Severity' query='nprt:PrinterStatus' filter='nprt:PrinterStatus/nprt:ActiveCondition/nprt:DeviceCondition[@nprt:Id="$EventIndex$"]/nprt:Severity' type='BIDI_STRING'/>
+            <Property name='Component'>
+              <Value name='Group' query='nprt:PrinterStatus' filter='nprt:PrinterStatus/nprt:ActiveCondition/nprt:DeviceCondition[@nprt:Id="$EventIndex$"]/nprt:Component/nprt:Group' type='BIDI_STRING'/>
+              <Value name='Name' query='nprt:PrinterStatus' filter='nprt:PrinterStatus/nprt:ActiveCondition/nprt:DeviceCondition[@nprt:Id="$EventIndex$"]/nprt:Component/nprt:Name' type='BIDI_STRING'/>
             </Property>
           </Parameter>
         </Property>
@@ -210,7 +204,7 @@ The preceding example bidi extension file contains the root element &lt;Definiti
 
 Any namespaces that are used in schema extensions must be defined in the Schema element. The extension processing will not recognize a namespace that is defined in a lower-level element. Defining a namespace in a lower-level element will cause the extension file to fail validation.
 
-```
+```xml
 <Definition>
   <Schema>...</Schema>
   <PortStatus>...</PortStatus>
@@ -225,48 +219,28 @@ Each bidi query from this extension file includes:
 
 -   The XPath filter that filters the specific XML elements from the WSD schema that will be used to compose the bidi result.
 
-### <a href="" id="parameter-construct"></a> Parameter Construct
+### Parameter Construct
 
 The &lt;Parameter&gt; element used in the preceding example bidi extension file defines a variable property that can take different values (for example, TopBin or BottomBin), such that queries of the following form are possible:
 
--   <span codelanguage=""></span>
-    <table>
-    <colgroup>
-    <col width="100%" />
-    </colgroup>
-    <tbody>
-    <tr class="odd">
-    <td><pre><code>\Printer.Layout.InputBins.TopBin:Installed</code></pre></td>
-    </tr>
-    </tbody>
-    </table>
+-   `\Printer.Layout.InputBins.TopBin:Installed`
 
--   <span codelanguage=""></span>
-    <table>
-    <colgroup>
-    <col width="100%" />
-    </colgroup>
-    <tbody>
-    <tr class="odd">
-    <td><pre><code>\Printer.Layout.InputBins.BottomBin:Installed</code></pre></td>
-    </tr>
-    </tbody>
-    </table>
+-   `\Printer.Layout.InputBins.BottomBin:Installed`
 
 The following example query illustrates the use of custom attributes defined in the preceding bidi extension:
 
-```
-<Property name=&#39;Printer&#39;>
-  <Property name=&#39;Layout&#39;>
-    <Property name=&#39;InputBins&#39;>
-      <Parameter name=&#39;$TrayName$&#39;
-        parameter=&#39;TrayName&#39;
-        query=&#39;wprt:PrinterConfiguration&#39;
-        filter=&#39;wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry/wprt:Name&#39;>
+```xml
+<Property name='Printer'>
+  <Property name='Layout'>
+    <Property name='InputBins'>
+      <Parameter name='$TrayName$'
+        parameter='TrayName'
+        query='wprt:PrinterConfiguration'
+        filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry/wprt:Name'>
         <Installed
-          name=&#39;Installed&#39;
-          query=&#39;wprt:PrinterConfiguration&#39;
-          filter=&#39;wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[wprt:Name="$TrayName$"]&#39;/>
+          name='Installed'
+          query='wprt:PrinterConfiguration'
+          filter='wprt:PrinterConfiguration/wprt:InputBins/wprt:InputBinEntry[wprt:Name="$TrayName$"]'/>
       </Parameter>
     </Property>
   </Property>
@@ -275,14 +249,4 @@ The following example query illustrates the use of custom attributes defined in 
 
 The preceding example results in the following query:
 
-```
-\Printer.Layout.InputBins.[TrayName]:Installed
-```
-
- 
-
- 
-
-
-
-
+`\Printer.Layout.InputBins.[TrayName]:Installed`

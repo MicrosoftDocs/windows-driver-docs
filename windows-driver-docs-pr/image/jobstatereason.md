@@ -9,11 +9,7 @@ api_name:
 - wscn JobStateReason
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The optional **JobStateReason** element specifies one reason why a job is in its
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:JobStateReason>
   text
 </wscn:JobStateReason>
@@ -67,7 +63,7 @@ Required. One of the following values:
 </tr>
 <tr class="even">
 <td><p><span id="JobCanceledAtDevice"></span><span id="jobcanceledatdevice"></span><span id="JOBCANCELEDATDEVICE"></span>JobCanceledAtDevice</p></td>
-<td><p>The current scan job was canceled at the scan device's front panel.</p></td>
+<td><p>The current scan job was canceled at the scan device&#39;s front panel.</p></td>
 </tr>
 <tr class="odd">
 <td><p><span id="JobCompletedWithErrors"></span><span id="jobcompletedwitherrors"></span><span id="JOBCOMPLETEDWITHERRORS"></span>JobCompletedWithErrors</p></td>
@@ -104,7 +100,7 @@ Required. One of the following values:
 </tbody>
 </table>
 
- 
+ 
 
 ## Child elements
 
@@ -125,10 +121,10 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>JobCompletedStateReasons</strong>](jobcompletedstatereasons.md)</p></td>
+<td><p><a href="jobcompletedstatereasons.md" data-raw-source="[&lt;strong&gt;JobCompletedStateReasons&lt;/strong&gt;](jobcompletedstatereasons.md)"><strong>JobCompletedStateReasons</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>JobStateReasons</strong>](jobstatereasons.md)</p></td>
+<td><p><a href="jobstatereasons.md" data-raw-source="[&lt;strong&gt;JobStateReasons&lt;/strong&gt;](jobstatereasons.md)"><strong>JobStateReasons</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -140,7 +136,7 @@ You must support the values that represent conditions that WSD Scan Service impl
 
 You can extend the allowed values, but extending this list has implications on the client. The client typically localizes the **JobStateReason** value (as with other string variable values) to the language of the user. However, the client will not recognize a vendor-extended value. The client can display the value that is received "as is", but this value will appear in English, so some users might not understand the value.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**CreateScanJobRequest**](createscanjobrequest.md)
@@ -151,9 +147,9 @@ You can extend the allowed values, but extending this list has implications on t
 
 [**RetrieveImageRequest**](retrieveimagerequest.md)
 
- 
+ 
 
- 
+ 
 
 
 

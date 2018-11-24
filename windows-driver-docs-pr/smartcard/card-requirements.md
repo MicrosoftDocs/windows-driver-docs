@@ -2,11 +2,7 @@
 title: Card Requirements
 description: Card Requirements
 ms.assetid: 3BE887F9-4B35-4A83-9E98-DD7555DF2953
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -40,9 +36,9 @@ For a card to be useful for cryptographic operations, it must have an identity t
 
 Technically, a card is “created” after step 2, but we define that all cards shall reserve the Microsoft “mscp” application, whether it is actually used. This explains the unusual facts that the “mscp” application is always created and that a file is created within the “mscp” application. As card creation is expected to be implemented by functions within the card management DLL that Microsoft supplies, this information is provided as reference information for card minidriver authors to be able to properly support these operations in that context.
 
- 
+ 
 
- 
+ 
 
 
 

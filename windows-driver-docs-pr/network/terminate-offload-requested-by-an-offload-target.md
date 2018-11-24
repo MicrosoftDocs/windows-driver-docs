@@ -4,11 +4,7 @@ description: Terminate Offload Requested by an Offload Target
 ms.assetid: 2e0254c9-9dc4-4a85-b014-806974dbaabe
 keywords:
 - terminating offload state WDK TCP chimney offload , requested by offload target
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,9 +32,9 @@ An offload target can request the termination of all TCP connections that have b
 
 This functionality might be used by an 802.3ad-capable intermediate driver when failing over from one network interface card (NIC) to another NIC.
 
- 
+ 
 
- 
+ 
 
 
 

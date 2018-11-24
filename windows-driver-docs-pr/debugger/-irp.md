@@ -3,11 +3,7 @@ title: irp extension command
 description: The irp extension displays information about an I/O request packet (IRP).
 ms.assetid: 2260255d-813b-4b89-8dbe-6ce7e5596ccf
 keywords: ["IRP", "IRP", "IO Request Packet", "irp Windows Debugging"]
-ms.author: domars
-ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 08/23/2018
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!irp** extension displays information about an I/O request packet (IRP).
 
-```
+```dbgcmd
 !irp Address [Detail] 
 ```
 
@@ -50,13 +46,19 @@ If this parameter is included with any value, such as 1, the output includes the
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
 See [Plug and Play Debugging](plug-and-play-debugging.md) and [Debugging Interrupt Storms](debugging-an-interrupt-storm.md) for applications of this extension command. For information about IRPs, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon. For further information on the major and minor function codes, see the Windows Driver Kit (WDK) documentation. (These resources may not be available in some languages and countries.)
 
 This topic describes the IRP structure, [**IRP**](https://msdn.microsoft.com/library/windows/hardware/ff550694).
+
+For detailed information on decoding the IRP structure including the returned Args, see the following resources.
+
+- Windows Internals by Mark E. Russinovich, David A. Solomon and Alex Ionescu
+- Developing Drivers with the Windows Driver Foundation Guy Smith and Penny Orwick
+
 
 Remarks
 -------
@@ -76,7 +78,7 @@ Any combination of these three may appear, and if any of the conditions shown ar
 
 Here is an example of the output from this extension for Windows 10:
 
-```
+```dbgcmd
 0: kd> !irp ac598dc8
 Irp is active with 2 stacks 1 is current (= 0xac598e38)
  No Mdl: No System Buffer: Thread 8d1c7bc0:  Irp stack trace.  
@@ -97,7 +99,7 @@ The third argument displayed in the output, is the IOCTL code. Use the [**!ioctl
 
 Here is an example of the output from this extension from Windows Vista.
 
-```
+```dbgcmd
 0: kd> !irp 0x831f4a00
 Irp is active with 8 stacks 5 is current (= 0x831f4b00)
  Mdl = 82b020d8 Thread 8c622118:  Irp stack trace.
@@ -267,7 +269,7 @@ IRP_MJ_MAXIMUM_FUNCTION</td>
 </tbody>
 </table>
 
- 
+ 
 
 The Plug and Play minor function codes are as follows:
 
@@ -382,7 +384,7 @@ The Plug and Play minor function codes are as follows:
 </tbody>
 </table>
 
- 
+ 
 
 The WMI minor function codes are as follows:
 
@@ -441,7 +443,7 @@ The WMI minor function codes are as follows:
 </tbody>
 </table>
 
- 
+ 
 
 The power management minor function codes are as follows:
 
@@ -476,7 +478,7 @@ The power management minor function codes are as follows:
 </tbody>
 </table>
 
- 
+ 
 
 The SCSI minor function codes are as follows:
 
@@ -499,7 +501,7 @@ The SCSI minor function codes are as follows:
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="see_also"></span>See also
 
@@ -510,9 +512,9 @@ The SCSI minor function codes are as follows:
 
 [**!ioctldecode**](-ioctldecode.md)
 
- 
+ 
 
- 
+ 
 
 
 

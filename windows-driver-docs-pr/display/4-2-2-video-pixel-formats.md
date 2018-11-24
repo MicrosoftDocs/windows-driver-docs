@@ -8,11 +8,7 @@ keywords:
 - compressed picture decoding WDK DirectX VA , pixel formats for uncompressed video
 - picture decoding WDK DirectX VA , compressed
 - 4 2 2 video WDK DirectX VA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -47,11 +43,11 @@ To decode compressed 4:2:2 video, use one of the following uncompressed pixel fo
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

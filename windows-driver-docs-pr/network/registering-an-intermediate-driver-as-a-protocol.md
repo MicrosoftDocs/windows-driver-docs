@@ -6,11 +6,7 @@ keywords:
 - registering intermediate drivers
 - intermediate drivers WDK networking , registering
 - NDIS intermediate drivers WDK , registering
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +24,9 @@ An intermediate driver with a connection-oriented lower edge must register as a 
 
 An intermediate driver might require other *ProtocolXxx* functions that are implementation specific. For information about registering optional *ProtocolXxx* functions, see [Configuring Optional Protocol Driver Services](configuring-optional-protocol-driver-services.md).
 
- 
+ 
 
- 
+ 
 
 
 

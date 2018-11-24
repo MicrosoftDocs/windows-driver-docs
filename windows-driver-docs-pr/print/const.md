@@ -1,15 +1,10 @@
 ---
 title: Const (TCP/IP)
-author: windows-driver-content
 description: The TCP/IP Const construct defines the data type and value that must be returned.
 ms.assetid: a0ede11d-ada4-4dc4-87a4-68c96635c0fd
 keywords:
 - Const construct
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,7 +31,7 @@ The TCP/IP Const construct defines the data type and value that must be returned
 </tr>
 <tr class="even">
 <td><p><strong>type</strong></p></td>
-<td><p>The type of data in the <strong>value</strong> attribute, a value in the [<strong>BIDI_TYPE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff545211) enumeration.</p></td>
+<td><p>The type of data in the <strong>value</strong> attribute, a value in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545211" data-raw-source="[&lt;strong&gt;BIDI_TYPE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff545211)"><strong>BIDI_TYPE</strong></a> enumeration.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>value</strong></p></td>
@@ -45,13 +40,13 @@ The TCP/IP Const construct defines the data type and value that must be returned
 </tbody>
 </table>
 
- 
+ 
 
 ### Code Example
 
 The following code example extends the bidi communications schema by adding an `Extension` property to the `Printer` property, and a `Version` property to the `Extension` property. In the example, `Extension` contains a constant **value** entry, `Category`. Also, `Version` has two constant **value** entries, `Major` and `Minor`.
 
-```
+```cpp
 <Property name="Printer">
   <Property name="Extension">
     <Const name="Category" type="BIDI_STRING" value="Extension"/>
@@ -65,15 +60,15 @@ The following code example extends the bidi communications schema by adding an `
 
 The preceding example results in the following queries:
 
-```
+```cpp
 \Printer.Extension:Category
 \Printer.Extension.Version:Major
 \Printer.Extension.Version:Minor
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -11,11 +11,7 @@ api_location:
 - Bdamedia.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +23,7 @@ Clients use KSPROPERTY\_BDA\_CA\_REMOVE\_PROGRAM to prevent access to a specific
 ## <span id="ddk_ksproperty_bda_ca_remove_program_ks"></span><span id="DDK_KSPROPERTY_BDA_CA_REMOVE_PROGRAM_KS"></span>
 
 
-### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
+### Usage Summary Table
 
 <table>
 <colgroup>
@@ -57,7 +53,7 @@ Clients use KSPROPERTY\_BDA\_CA\_REMOVE\_PROGRAM to prevent access to a specific
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -80,16 +76,16 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**KSEVENT\_BDA\_PROGRAM\_FLOW\_STATUS\_CHANGED**](ksevent-bda-program-flow-status-changed.md)
 
 [**KSP\_NODE**](https://msdn.microsoft.com/library/windows/hardware/ff566720)
 
- 
+ 
 
- 
+ 
 
 
 

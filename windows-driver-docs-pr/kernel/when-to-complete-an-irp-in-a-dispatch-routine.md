@@ -1,14 +1,9 @@
 ---
 title: When to Complete an IRP in a Dispatch Routine
-author: windows-driver-content
 description: When to Complete an IRP in a Dispatch Routine
 ms.assetid: 24159535-927f-490c-9472-05ea565b7ae5
 keywords: ["completing IRPs WDK kernel , dispatch routines", "dispatch routines WDK kernel , completing IRPs"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -48,9 +43,9 @@ A dispatch routine in a lowest-level driver should complete an IRP according to 
 
 Otherwise, the dispatch routine must call [**IoMarkIrpPending**](https://msdn.microsoft.com/library/windows/hardware/ff549422), queue the IRP to other driver routines for further processing, and return STATUS\_PENDING.
 
- 
+ 
 
- 
+ 
 
 
 

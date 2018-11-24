@@ -1,13 +1,8 @@
 ---
 title: WSK_TRANSPORT_LIST_CHANGE
-author: windows-driver-content
 description: WSK_TRANSPORT_LIST_CHANGE
 ms.assetid: 3b12d692-467c-4d31-bd2a-bb6e34d87fde
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WSK_TRANSPORT_LIST_CHANGE Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -63,12 +58,6 @@ To receive notification of when the list of available network transports changes
 </tbody>
 </table>
 
- 
-
-```
-
-```
-
 An IRP is required for this client control operation.
 
 The WSK subsystem will cancel any pending IRPs if the WSK application calls [**WskDeregister**](https://msdn.microsoft.com/library/windows/hardware/ff571128) to detach itself from the WSK subsystem.
@@ -93,9 +82,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

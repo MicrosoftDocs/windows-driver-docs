@@ -1,20 +1,15 @@
 ---
 title: PWM driver for an on-SoC PWM module 
-author: windows-driver-content
 description: PWM controller is part of the SoC and memory-mapped to the SoC address space. Write a kernel-mode driver that manipulates the PWM registers and provides access to applications. 
 ms.assetid: 911375A9-6761-45C1-BB5E-79BC0E4409AC
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
 # PWM driver for an on-SoC PWM module
 To provide access to a Pulse width modulation (PWM) controller that is part of the SoC and memory-mapped to the SoC address space, you need to writer a kernel-mode driver. The driver must register the device class interface of the PWM controller so that UWP apps can access the system exposed PWM devices through the PWM WinRT APIs defined in Windows.Devices.Pwm namespace. 
 
-**Note**    If you have an add-on PWM module over I<sup>2</sup>C, SPI, or a UART controller, you can access the module from a UWP app by using the APIs defined in the [**Windows.Devices.Pwm**](https://docs.microsoft.com/en-us/uwp/api/windows.devices.pwm) and [**Windows.Devices.Pwm.Provider**](https://docs.microsoft.com/en-us/uwp/api/windows.devices.pwm.provider) namespace. 
+**Note**    If you have an add-on PWM module over I<sup>2</sup>C, SPI, or a UART controller, you can access the module from a UWP app by using the APIs defined in the [**Windows.Devices.Pwm**](https://docs.microsoft.com/uwp/api/windows.devices.pwm) and [**Windows.Devices.Pwm.Provider**](https://docs.microsoft.com/uwp/api/windows.devices.pwm.provider) namespace. 
 
 A PWM device is abstracted into a single controller and one or more pins. Controlling either the controller or the pins is done through the PWM-defined IOCTLs. For example, an LCD display driver sends such requests to  the PWM driver to control the LCD backlight level. 
 
@@ -41,11 +36,11 @@ This topic describes,
 
 **Windows version**
 
--   Windows 10 version
+-   Windows 10 version
 
 **Important APIs**
 
--   [PWM IOCTLs](https://msdn.microsoft.com/en-us/library/windows/desktop/mt826481)
+-   [PWM IOCTLs](https://msdn.microsoft.com/library/windows/desktop/mt826481)
 
 ## About PWM
 PWM describes the basic technique for generating a rectangular pulse wave with modulated pulse width resulting in the variation of the average value of the waveform.  
@@ -60,13 +55,12 @@ A PWM waveform can be categorized by 2 parameters: waveform period (T) and duty 
 The PWM driver must register  
 GUID_DEVINTERFACE_PWM_CONTROLLER as the device interface GUID for exposing and accessing PWM devices. 
 
-```
+```cpp
 // {60824B4C-EED1-4C9C-B49C-1B961461A819} 
 
 DEFINE_GUID(GUID_DEVINTERFACE_PWM_CONTROLLER, 0x60824b4c, 0xeed1, 0x4c9c, 0xb4, 0x9c, 0x1b, 0x96, 0x14, 0x61, 0xa8, 0x19); 
 
 #define GUID_DEVINTERFACE_PWM_CONTROLLER_WSZ L"{60824B4C-EED1-4C9C-B49C-1B961461A819}" 
-
 ```
 
 To register the device inteface GUID, the driver must call WdfDeviceCreateDeviceInterface in the driver's implementation of the EVT_WDF_DRIVER_DEVICE_ADD callback function. 
@@ -76,19 +70,19 @@ An application or another driver can control either the controller or the pins t
 
 
 Here is an example of the symbolic path for the controller:
-```
+```cpp
 \??\ACPI#FSCL000E#1#{60824b4c-eed1-4c9c-b49c-1b961461a819}  
 ```
 Similarly, the format of the pins is as follows:
 The format of the path is as follows:
 
-```
+```cpp
 <DeviceInterfaceSymbolicLinkName>\<PinNumber>
 ```
 where <PinNumber> is the 0-based index of the pin to open. 
 
 Here is an example of the symbolic path for pins:
-```
+```cpp
 \??\ACPI#FSCL000E#1#{60824b4c-eed1-4c9c-b49c-1b961461a819}\0 ; Opens pin 0 
 
 \??\ACPI#FSCL000E#1#{60824b4c-eed1-4c9c-b49c-1b961461a819}\0001 ; Opens pin 1 with the leading 0s have no effect.
@@ -104,22 +98,22 @@ The driver should use the provided PWM support routine PwmParsePinPath to parse 
 
 ## Setting device interface properties
 
-To use PWM WinRT APIs from UWP apps, these [device interface properties](https://msdn.microsoft.com/en-us/library/windows/hardware/ff541409(v=vs.85).aspx) must be set.
+To use PWM WinRT APIs from UWP apps, these [device interface properties](https://msdn.microsoft.com/library/windows/hardware/ff541409(v=vs.85).aspx) must be set.
 
--   [DEVPKEY_DeviceInterface_Restricted](https://msdn.microsoft.com/en-us/library/windows/hardware/hh406291(v=vs.85).aspx) 
+-   [DEVPKEY_DeviceInterface_Restricted](https://msdn.microsoft.com/library/windows/hardware/hh406291(v=vs.85).aspx) 
 
     As per the current UWP device access model, setting Restricted device interface property to FALSE is required to give UWP apps access to the PWM device interface.   
 
 -   DEVPKEY_DeviceInterface_SchematicName (link???)
-    
+
     Assigning a schematic name to the PWM device interface of statically connected PWM devices is required for using the PwmController.GetDeviceSelector(FriendlyName) factory method. The schematic name is the name given to the PWM device in the system design schematics e.g (PWM0, PWM_1, et..). Schematic names are assumed to be unique across the system, but that is not enforced. At least, there shouldn’t be 2 PWM devices having the same schematic name, otherwise the WinRT PWM PwmController.GetDeviceSelector(FriendlyName) behavior will be non-deterministic. 
 
 The properties can be set in one of two ways:
 
 1. Using the INF file for the PWM driver
-   
+
    Use the **AddProperty** directive to set device properties. The INF file should be allow setting different values for the same property on one or subset of the PWM device instances. Here is an example of setting DEVPKEY_DeviceInterface_Restricted.
-    ```
+    ```cpp
     ;***************************************** 
     ; Device interface installation 
     ;***************************************** 
@@ -147,8 +141,8 @@ The properties can be set in one of two ways:
 
 2.  Programmatically in the PWM driver 
 
-    A PWM driver can call IoSetDeviceInterfacePropertyData to set device interface properties in their EVT_WDF_DRIVER_DEVICE_ADD implementation after it creates and publishes the PWM device interface. The driver is responsible for deciding the value to assign and the device property. That information is usually stored in the system ACPI for for SoC-based designs. The value of each device interface property can be specified in each ACPI device node _DSD method as Device Properties. The driver must query the _DSD from ACPI, parse the Device Properties data, extract the value of each property, and assign it device interface. 
-    
+    A PWM driver can call IoSetDeviceInterfacePropertyData to set device interface properties in their EVT_WDF_DRIVER_DEVICE_ADD implementation after it creates and publishes the PWM device interface. The driver is responsible for deciding the value to assign and the device property. That information is usually stored in the system ACPI for SoC-based designs. The value of each device interface property can be specified in each ACPI device node _DSD method as Device Properties. The driver must query the _DSD from ACPI, parse the Device Properties data, extract the value of each property, and assign it device interface. 
+
     Programmatically setting the properties makes the driver and its INF file portable across designs and hence BSPs where the only change would be in the ACPI DSDT defining each PWM device node. However, reading and parsing ACPI binary blocks is a tedious and requires a lot of code which can be prone to errors and vulnerabilities resulting in a bigger error surface. 
 
 ## Handling file open/close events
@@ -178,7 +172,7 @@ In the preceding set of tasks, the second task of validation can be performed in
 
 Here is a sample code the implements the previously mentioned validation steps for an EVT_WDF_DEVICE_FILE_CREATE handler: 
 
-```
+```cpp
 EVT_WDF_DEVICE_FILE_CREATE PwmEvtDeviceFileCreate;
 
 VOID 
@@ -248,7 +242,6 @@ PwmEvtDeviceFileCreate (
     // Continue request processing here 
     // 
 } 
-
 ```
 ### Controller and pin Sharing 
 
@@ -268,7 +261,7 @@ If the controller/pin is already opened for write, then deny access, and complet
 
 Here is an example shows how to extract Desired Access and Share Access from a create request: 
 
-```
+```cpp
 void 
 PwmCreateRequestGetAccess( 
     _In_ WDFREQUEST WdfRequest, 
@@ -331,19 +324,20 @@ Note that there are some important implications to opening and closing a control
 |Is-Opened-For-Write|False| False indicates that the controller is either closed or is opened for read; True indicates that it is opened for write.|
 |Desired-Period| MinimumPeriod| |
 
-![Controller state machine](images\controller-state-machine.png)
+![Controller state machine](images/controller-state-machine.png)
 
 The controller state machine below is centered around the Is-Opened-For-Write state only. The desired period value is also left out because it does not affect the kind of operation that can be done on the controller. Note that whenever a controller that is opened for write gets closed by the caller that opened it for write, the controller get reset to its defaults (default desired period).
 
 **Pin state defintion**
 
-|State feature|Default value|Description|
-|---|---|--|
-|Is-Opened-For-Write|False|False indicates that the pin is either closed or is opened for read; True indicates that it is opened for write.||Polarity| Active High| If the controller supports Active Low only, then the driver can get around that by use the duty cycle complement which will have the overall end-result. i.e. a 15% Active Low signal can be represented as a 85% Active High signal.|
-|Active-Duty-Cycle| 0 | |
-|Is-Started|False| False indicates stopped; True indicates started.|
 
-![Pins state machine](images\pins-state-machine.png)
+|    State feature    | Default value |                                                   Description                                                    |
+|---------------------|---------------|------------------------------------------------------------------------------------------------------------------|
+| Is-Opened-For-Write |     False     | False indicates that the pin is either closed or is opened for read; True indicates that it is opened for write. |
+|  Active-Duty-Cycle  |       0       |                                                                                                                  |
+|     Is-Started      |     False     |                                 False indicates stopped; True indicates started.                                 |
+
+![Pins state machine](images/pins-state-machine.png)
 
 The pin state machine is centered around the combination of the 2 states Is-Opened-For-Write and Is-Started. Other pin states like polarity and active duty cycles are left out because their values don’t affect the kind of operations that can be performed on the pin. Note that whenever a pin that is opened for write get closed by the caller that opened it for write, the pin get rest to its defaults (stopped, default polarity, and active duty cycle). Also note that Set-Polarity transition on a state with Is-Started = true is left out because it is invalid in that state.
 
@@ -356,7 +350,7 @@ Any transition that is not mentioned for a given state implies that such transit
     If the request has write desired access and the controller/pin is already opened for write, then complete the request with STATUS_SHARING_VIOLATION, else mark the controller/pin as opened for write (Is-Opened-For-Write = true), grant access and continue processing.
 
     This example implements the previously mentioned access validation steps for an EVT_WDF_DEVICE_FILE_CREATE handler where the necessary locking logic to handle concurrent file create requests is omitted: 
-    ```
+    ```cpp
     //
     // Verify request desired access
     //
@@ -425,86 +419,85 @@ Any transition that is not mentioned for a given state implies that such transit
     }
     ```
 
--   In EVT_WDF_FILE_CLOSE/ EVT_WDF_FILE_CLEANUP, the driver should maintain the controller/pin state integrity. 
+- In EVT_WDF_FILE_CLOSE/ EVT_WDF_FILE_CLEANUP, the driver should maintain the controller/pin state integrity. 
 
-    If the file object belongs to a controller/pin which opened that controller/pin for write, then reset the controller/pin to the default state and unmark that controller/pin from being opened for write (Is-Opened-For-Write = false).
+  If the file object belongs to a controller/pin which opened that controller/pin for write, then reset the controller/pin to the default state and unmark that controller/pin from being opened for write (Is-Opened-For-Write = false).
 
-    This example implements the previously mentioned access validation steps for an EVT_WDF_DEVICE_FILE_CLOSE handler where the necessary locking logic to handle concurrent file close requests is omitted.
-    ```
-    EVT_WDF_DEVICE_FILE_CLOSE PwmEvtFileClose;
+  This example implements the previously mentioned access validation steps for an EVT_WDF_DEVICE_FILE_CLOSE handler where the necessary locking logic to handle concurrent file close requests is omitted.
+  ```cpp
+  EVT_WDF_DEVICE_FILE_CLOSE PwmEvtFileClose;
 
-    VOID
-    PwmEvtFileClose (
-        WDFFILEOBJECT WdfFileObject
-        )
-    {
-        WDFDEVICE wdfDevice = WdfFileObjectGetDevice(WdfFileObject);
-        PWM_DEVICE_CONTEXT* deviceContextPtr = PwmGetDeviceContext(wdfDevice);
-        PWM_FILE_OBJECT_CONTEXT* fileObjectContextPtr = PwmGetFileObjectContext(WdfFileObject);
+  VOID
+  PwmEvtFileClose (
+      WDFFILEOBJECT WdfFileObject
+      )
+  {
+      WDFDEVICE wdfDevice = WdfFileObjectGetDevice(WdfFileObject);
+      PWM_DEVICE_CONTEXT* deviceContextPtr = PwmGetDeviceContext(wdfDevice);
+      PWM_FILE_OBJECT_CONTEXT* fileObjectContextPtr = PwmGetFileObjectContext(WdfFileObject);
 
-        if (fileObjectContextPtr->IsPinInterface) {
-            if (fileObjectContextPtr->IsOpenForReadWrite) {
-                const ULONG pinNumber = fileObjectContextPtr->PinNumber;
+      if (fileObjectContextPtr->IsPinInterface) {
+          if (fileObjectContextPtr->IsOpenForReadWrite) {
+              const ULONG pinNumber = fileObjectContextPtr->PinNumber;
 
-                NTSTATUS status = PwmResetPinDefaults(deviceContextPtr, pinNumber);
-                if (!NT_SUCCESS(status)) {
-                    PWM_LOG_ERROR(
-                        "PwmResetPinDefaults(...) failed. "
-                        "(pinNumber = %lu, status = %!STATUS!)",
-                        pinNumber,
-                        status);
-                    //
-                    // HW Error Recovery
-                    //
-                }
+              NTSTATUS status = PwmResetPinDefaults(deviceContextPtr, pinNumber);
+              if (!NT_SUCCESS(status)) {
+                  PWM_LOG_ERROR(
+                      "PwmResetPinDefaults(...) failed. "
+                      "(pinNumber = %lu, status = %!STATUS!)",
+                      pinNumber,
+                      status);
+                  //
+                  // HW Error Recovery
+                  //
+              }
 
-                NT_ASSERT(deviceContextPtr->Pins[pinNumber].IsOpenForReadWrite);
-                deviceContextPtr->Pins[pinNumber].IsOpenForReadWrite = false;
-            }
+              NT_ASSERT(deviceContextPtr->Pins[pinNumber].IsOpenForReadWrite);
+              deviceContextPtr->Pins[pinNumber].IsOpenForReadWrite = false;
+          }
 
-            PWM_LOG_TRACE("Pin%lu Closed.", fileObjectContextPtr->PinNumber);
+          PWM_LOG_TRACE("Pin%lu Closed.", fileObjectContextPtr->PinNumber);
 
-        } else {
-            if (fileObjectContextPtr->IsOpenForReadWrite) {
-                NTSTATUS status = PwmResetControllerDefaults(deviceContextPtr);
-                if (!NT_SUCCESS(status)) {
-                    IMXPWM_LOG_ERROR(
-                        "PwmResetControllerDefaults(...) failed. (status = %!STATUS!)",
-                        status);
-                    //
-                    // HW Error Recovery
-                    //	
-                }
+      } else {
+          if (fileObjectContextPtr->IsOpenForReadWrite) {
+              NTSTATUS status = PwmResetControllerDefaults(deviceContextPtr);
+              if (!NT_SUCCESS(status)) {
+                  IMXPWM_LOG_ERROR(
+                      "PwmResetControllerDefaults(...) failed. (status = %!STATUS!)",
+                      status);
+                  //
+                  // HW Error Recovery
+                  //  
+              }
 
-                NT_ASSERT(deviceContextPtr->IsControllerOpenForReadWrite);
-                deviceContextPtr->IsControllerOpenForReadWrite = false;
-            }
+              NT_ASSERT(deviceContextPtr->IsControllerOpenForReadWrite);
+              deviceContextPtr->IsControllerOpenForReadWrite = false;
+          }
 
-            PWM_LOG_TRACE("Controller Closed.");
-        }
-    }
-    
-    ```
-## PWM IOCTL requests
+          PWM_LOG_TRACE("Controller Closed.");
+      }
+  }
+  ```
+  ## PWM IOCTL requests
 
 PWM IOCTL requests are sent by an application or another driver and are targeted for a controller or a specific pin.
 
 **Controller IOCTLs**
 
--    [**IOCTL_PWM_CONTROLLER_GET_ACTUAL_PERIOD**](https://msdn.microsoft.com/en-us/library/windows/desktop/mt826475) 
--    [**IOCTL_PWM_CONTROLLER_GET_INFO**](https://msdn.microsoft.com/en-us/library/windows/desktop/mt826476) 
--    [**IOCTL_PWM_CONTROLLER_SET_DESIRED_PERIOD**](https://msdn.microsoft.com/en-us/library/windows/desktop/mt826478)
+-    [**IOCTL_PWM_CONTROLLER_GET_ACTUAL_PERIOD**](https://msdn.microsoft.com/library/windows/desktop/mt826475) 
+-    [**IOCTL_PWM_CONTROLLER_GET_INFO**](https://msdn.microsoft.com/library/windows/desktop/mt826476) 
+-    [**IOCTL_PWM_CONTROLLER_SET_DESIRED_PERIOD**](https://msdn.microsoft.com/library/windows/desktop/mt826478)
 
 
 **Pin IOCTLs**
 
--    [**IOCTL_PWM_PIN_GET_ACTIVE_DUTY_CYCLE_PERCENTAGE**](https://msdn.microsoft.com/en-us/library/windows/desktop/mt843915)
--    [**IOCTL_PWM_PIN_SET_ACTIVE_DUTY_CYCLE_PERCENTAGE**](https://msdn.microsoft.com/en-us/library/windows/desktop/mt843918)
--    [**IOCTL_PWM_PIN_GET_POLARITY**](https://msdn.microsoft.com/en-us/library/windows/desktop/mt843916)
--    [**IOCTL_PWM_PIN_SET_POLARITY**](https://msdn.microsoft.com/en-us/library/windows/desktop/mt843919)
--    [**IOCTL_PWM_PIN_START**](https://msdn.microsoft.com/en-us/library/windows/desktop/mt843920)
--    [**IOCTL_PWM_PIN_STOP**](https://msdn.microsoft.com/en-us/library/windows/desktop/mt843921)
--    [**IOCTL_PWM_PIN_IS_STARTED**](https://msdn.microsoft.com/en-us/library/windows/desktop/mt843917)    
+-    [**IOCTL_PWM_PIN_GET_ACTIVE_DUTY_CYCLE_PERCENTAGE**](https://msdn.microsoft.com/library/windows/desktop/mt843915)
+-    [**IOCTL_PWM_PIN_SET_ACTIVE_DUTY_CYCLE_PERCENTAGE**](https://msdn.microsoft.com/library/windows/desktop/mt843918)
+-    [**IOCTL_PWM_PIN_GET_POLARITY**](https://msdn.microsoft.com/library/windows/desktop/mt843916)
+-    [**IOCTL_PWM_PIN_SET_POLARITY**](https://msdn.microsoft.com/library/windows/desktop/mt843919)
+-    [**IOCTL_PWM_PIN_START**](https://msdn.microsoft.com/library/windows/desktop/mt843920)
+-    [**IOCTL_PWM_PIN_STOP**](https://msdn.microsoft.com/library/windows/desktop/mt843921)
+-    [**IOCTL_PWM_PIN_IS_STARTED**](https://msdn.microsoft.com/library/windows/desktop/mt843917)    
 
 For each IOCTL request, the PWM drivr must verify the following: 
 
@@ -530,7 +523,7 @@ The IOCTL request was sent to the wrong target. For example, a controller IOCTL 
 
 **STATUS_BUFFER_TOO_SMALL** 
 
-The input or output buffer size is less than the minimum required buffer size for processing the request. A WDF driver that uses WdfRequestRetrieveInputBuffer or WdfRequestRetrieveOutputBuffer to retrieve and validate the input and output buffers can return their corresponding error status as is. All IOCTLs with input and/or output buffers defined for them have a corresponding struct that describes that buffer, where the input and output struct names have _INPUT and _OUTPUT postfix respectively. The input buffer minimum size is sizeof(PWM_*_INPUT) while the output buffer minimum size is sizeof(PWM_*_OUTPUT). 
+The input or output buffer size is less than the minimum required buffer size for processing the request. A WDF driver that uses WdfRequestRetrieveInputBuffer or WdfRequestRetrieveOutputBuffer to retrieve and validate the input and output buffers can return their corresponding error status as is. All IOCTLs with input and/or output buffers defined for them have a corresponding struct that describes that buffer, where the input and output struct names have *INPUT and _OUTPUT postfix respectively. The input buffer minimum size is sizeof(PWM*<em>*INPUT) while the output buffer minimum size is sizeof(PWM*</em>_OUTPUT). 
 
 IOCTL code | Description|
 ---|---|

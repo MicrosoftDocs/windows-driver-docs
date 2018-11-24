@@ -1,13 +1,8 @@
 ---
 title: SerCx2 PIO-Transmit Transactions
-author: windows-driver-content
 description: SerCx2 requires all serial controller drivers to implement support for transmit transactions that use programmed I/O (PIO).
 ms.assetid: 3BEF9A3D-1FEF-4626-B07F-1670359062AF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -79,9 +74,9 @@ When a *EvtSerCx2PioTransmitWriteBuffer* call ends because the transmit FIFO can
 
 If the ready notification is enabled when the write request times out or is canceled, SerCx2 calls the [*EvtSerCx2PioTransmitCancelReadyNotification*](https://msdn.microsoft.com/library/windows/hardware/dn265216) event callback function to cancel the pending notification. If this function successfully cancels the pending notification, it returns **TRUE**. A return value of **TRUE** guarantees that the serial controller driver will not call **SerCx2PioTransmitReady**. A return value of **FALSE** indicates that the *EvtSerCx2PioTransmitDrainFifo* function has called or will call **SerCx2PioTransmitReady**.
 
- 
+ 
 
- 
+ 
 
 
 

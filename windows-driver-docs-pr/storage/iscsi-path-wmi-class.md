@@ -3,6 +3,7 @@ title: ISCSI\_Path WMI Class
 description: ISCSI\_Path WMI Class
 ms.assetid: d4067869-2c67-42d3-988e-af825549853d
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # ISCSI\_Path WMI Class
@@ -10,7 +11,7 @@ ms.localizationpriority: medium
 
 The ISCSI\_Path WMI class contains information about the connections of an iSCSI portal. This class is defined as follows in *Mgmt.mof.*
 
-```
+```cpp
 class ISCSI_Path
 {
     [WmiDataId(1),
@@ -55,9 +56,9 @@ class ISCSI_Path
 
 When the WMI tool suite compiles the preceding class definition, it produces the [**ISCSI\_Path**](https://msdn.microsoft.com/library/windows/hardware/ff561550) data structure.
 
- 
+ 
 
- 
+ 
 
 
 

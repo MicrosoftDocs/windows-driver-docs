@@ -3,6 +3,7 @@ title: MSFC\_NPIVLUNMappingInformation WMI Class
 description: MSFC\_NPIVLUNMappingInformation WMI Class
 ms.assetid: F8BCDEDE-5EF3-464D-8592-5DF1878D3694
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # MSFC\_NPIVLUNMappingInformation WMI Class
@@ -41,9 +42,9 @@ When compiled by the WMI tool suite, this class definition produces the followin
 
 There are no methods associated with this WMI class.
 
- 
+ 
 
- 
+ 
 
 
 

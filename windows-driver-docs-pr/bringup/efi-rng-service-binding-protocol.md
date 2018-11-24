@@ -1,13 +1,8 @@
 ---
 title: EFI_RNG_SERVICE_BINDING_PROTOCOL
-author: windows-driver-content
 description: Used to locate RNG services provided by a driver, and to create and destroy instances so that multiple drivers can use the underlying RNG services.
 ms.assetid: 3CAD0FD8-DD26-4D26-A9E9-4B2750985E00
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -21,7 +16,7 @@ The generic EFI\_SERVICE\_BINDING\_PROTOCOL is described in sections 2.5.8 and 1
 ## GUID
 
 
-``` syntax
+```cpp
 // {E417A4A2-0843-4619-BF11-5CE82AFCFC59}
 #define EFI_RNG_SERVICE_BINDING_PROTOCOL_GUID \
   {0xe417a4a2, 0x0843, 0x4619, 0xbf, 0x11, 0x5c, 0xe8, 0x2a, 0xfc, 0xfc, 0x59};
@@ -41,9 +36,9 @@ Before an application terminates execution, every successful call to the EFI\_RN
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
 

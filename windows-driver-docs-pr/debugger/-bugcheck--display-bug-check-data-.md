@@ -3,11 +3,7 @@ title: .bugcheck (Display Bug Check Data)
 description: The .bugcheck command displays the data from a bug check on the target computer.
 ms.assetid: 4b453b5a-4a3c-4056-92e7-b6a17f987fa4
 keywords: [".bugcheck (Display Bug Check Data) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **.bugcheck** command displays the data from a bug check on the target computer.
 
-```
+```dbgsyntax
     .bugcheck 
 ```
 
@@ -52,7 +48,7 @@ The **.bugcheck** command displays the data from a bug check on the target compu
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -67,9 +63,9 @@ You can also display bug check data on 32-bit systems by using **dd NT!KiBugChec
 
 The [**!analyze**](-analyze.md) extension command is also useful after a bug check occurs.
 
- 
+ 
 
- 
+ 
 
 
 

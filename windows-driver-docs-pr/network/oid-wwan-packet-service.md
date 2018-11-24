@@ -1,13 +1,8 @@
 ---
 title: OID_WWAN_PACKET_SERVICE
-author: windows-driver-content
 description: OID_WWAN_PACKET_SERVICE is used to instruct miniport drivers to perform packet service attach/detach actions on the current registered provider’s network for both GSM-based and CDMA-based MB devices.
 ms.assetid: 97bb9324-8052-437c-baa5-fb9a8176c779
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_WWAN_PACKET_SERVICE Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -66,9 +61,9 @@ Requirements
 
 [WWAN Packet Service Attach Operations](https://msdn.microsoft.com/library/windows/hardware/ff559092)
 
- 
+ 
 
- 
+ 
 
 
 

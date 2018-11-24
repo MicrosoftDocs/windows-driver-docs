@@ -1,15 +1,10 @@
 ---
 title: WDF_PTR_GET_OFFSET macro
-author: windows-driver-content
 description: The WDF_PTR_GET_OFFSET macro subtracts an address from another address and returns the resulting offset value.
 ms.assetid: b5159207-ba5c-4924-a06e-725ccd3c8a12
 keywords:
  - WDF_PTR_GET_OFFSET macro
-ms.author: windowsdriverdev
 ms.date: 08/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,8 +18,8 @@ Syntax
 
 ```ManagedCPlusPlus
 size_t WDF_PTR_GET_OFFSET(
-    _base,
-    _addr
+    _base,
+    _addr
 );
 ```
 
@@ -63,7 +58,7 @@ Requirements
 <tbody>
 <tr class="odd">
 <td><p>Target platform</p></td>
-<td>[Universal](http://go.microsoft.com/fwlink/p/?linkid=531356)</td>
+<td><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" data-raw-source="[Universal](http://go.microsoft.com/fwlink/p/?linkid=531356)">Universal</a></td>
 </tr>
 <tr class="even">
 <td><p>Minimum KMDF version</p></td>
@@ -80,9 +75,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

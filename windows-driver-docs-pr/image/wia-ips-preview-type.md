@@ -11,11 +11,7 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -58,11 +54,11 @@ The following table describes the constants that are valid with the WIA\_IPS\_PR
 </tbody>
 </table>
 
- 
+ 
 
 **Note**   WIA\_IPS\_PREVIEW\_TYPE should describe only the [**WIA\_IPA\_DATATYPE**](wia-ipa-datatype.md) and [**WIA\_IPA\_DEPTH**](wia-ipa-depth.md) properties.
 
- 
+ 
 
 Requirements
 ------------
@@ -80,16 +76,16 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**WIA\_IPA\_DATATYPE**](wia-ipa-datatype.md)
 
 [**WIA\_IPA\_DEPTH**](wia-ipa-depth.md)
 
- 
+ 
 
- 
+ 
 
 
 

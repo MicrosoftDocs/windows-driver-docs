@@ -1,14 +1,9 @@
 ---
 title: Configurable
-author: windows-driver-content
 description: Configurable
 ms.assetid: 0dcdc2eb-0a27-4739-be9d-48a0382347cf
 keywords: ["hardware-configurable devices WDK kernel", "software-configurable drivers WDK kernel", "configurable devices and drivers WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -44,9 +39,9 @@ Device drivers assist the PnP manager in creating these lists, which are maintai
 
 The system's hardware abstraction layer (HAL) component, which is implemented as a dynamic-link library, is responsible for some of the hardware-level, platform-specific support that is needed by other system components, including kernel-mode drivers.
 
- 
+ 
 
- 
+ 
 
 
 

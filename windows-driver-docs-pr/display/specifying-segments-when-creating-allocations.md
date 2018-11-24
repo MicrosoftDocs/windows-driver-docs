@@ -5,11 +5,7 @@ ms.assetid: 31bfbfd9-89e5-42fe-90bc-8ff54bac4f8b
 keywords:
 - memory segments WDK display , allocation creation
 - allocations WDK display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -23,9 +19,9 @@ The display miniport driver specifies and returns information about its memory s
 
 From the returned segment information, the video memory manager determines the appropriate memory segment to page-in for the given operation.
 
- 
+ 
 
- 
+ 
 
 
 

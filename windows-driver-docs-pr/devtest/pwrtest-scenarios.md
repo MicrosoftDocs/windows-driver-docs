@@ -2,11 +2,7 @@
 title: PwrTest Scenarios
 description: PwrTest Scenarios
 ms.assetid: 4d21e08b-d687-47dc-995e-9d2128cf6853
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +27,9 @@ PwrTest functionality is separated into scenarios. Currently, PwrTest supports t
 -   [PwrTest Thermal Scenario](pwrtest-thermal-scenario.md)
 -   [PwrTest Timer Scenario](pwrtest-timer-scenario.md)
 
- 
+ 
 
- 
+ 
 
 
 

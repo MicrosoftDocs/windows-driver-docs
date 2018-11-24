@@ -1,6 +1,5 @@
 ---
 title: AV/C Streaming Driver Stack
-author: windows-driver-content
 description: AV/C Streaming Driver Stack
 ms.assetid: 2584c74c-ddd6-43cc-9a8c-cd7f43802c4c
 keywords:
@@ -10,11 +9,7 @@ keywords:
 - driver stacks WDK AV/C streaming
 - stacks WDK AV/C streaming
 - peer driver stacks WDK AV/C streaming
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -44,9 +39,9 @@ Currently, each subunit driver must implement the preceding operations.
 
 The AV/C Streaming filter driver does not timestamp data at this time. A clock provider needs to timestamp the data as well as provide the current stream time. The subunit driver must timestamp the data if it is a clock provider.
 
- 
+ 
 
- 
+ 
 
 
 

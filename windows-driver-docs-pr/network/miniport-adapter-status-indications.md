@@ -8,11 +8,7 @@ keywords:
 - adapters WDK networking , status indications
 - NdisMIndicateStatusEx
 - NDIS_STATUS_INDICATION
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -28,9 +24,9 @@ The status indication includes information to identify the type of status and a 
 
 The miniport driver should set the **SourceHandle** member to the handle that NDIS passed to the *MiniportAdapterHandle* parameter of the [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) function. If the status indication is associated with an OID request, the miniport driver can set the **DestinationHandle** and **RequestId** members so that NDIS can provide the status indication to a specific protocol binding.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,13 +1,8 @@
 ---
 title: OID_WDI_GET_STATISTICS
-author: windows-driver-content
 description: OID_WDI_GET_STATISTICS requests that the IHV component returns MAC and PHY layer statistics.
 ms.assetid: 55c36869-ce85-42fe-877b-07aefb669b56
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - OID_WDI_GET_STATISTICS Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -22,9 +17,9 @@ OID\_WDI\_GET\_STATISTICS requests that the IHV component returns MAC and PHY la
 |-------|--------------------------|---------------------------------|
 | Port  | Set not supported        | 1                               |
 
- 
+ 
 
-The MAC statistics must all be maintained per port. PHY statistics must also be maintained per port unless exempted. If PHY statistics cannot be maintained per port (as allowed by exemption), the statistics can be maintained per "channel" (PHY statistics for two ports operating on the same port can be combined).
+The MAC statistics must all be maintained per port. PHY statistics must also be maintained per port unless exempted. If PHY statistics cannot be maintained per port (as allowed by exemption), the statistics can be maintained per "channel" (PHY statistics for two ports operating on the same channel can be combined).
 
 ## Get property parameters
 
@@ -38,7 +33,7 @@ No additional parameters. The data in the header is sufficient.
 | [**WDI\_TLV\_MAC\_STATISTICS**](https://msdn.microsoft.com/library/windows/hardware/dn897846) | X                              |          | Per-peer MAC statistics. |
 | [**WDI\_TLV\_PHY\_STATISTICS**](https://msdn.microsoft.com/library/windows/hardware/dn898025) | X                              |          | Per-port PHY statistics. |
 
- 
+ 
 
 Requirements
 ------------
@@ -64,9 +59,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

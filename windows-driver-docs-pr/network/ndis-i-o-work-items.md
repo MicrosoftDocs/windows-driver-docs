@@ -5,11 +5,7 @@ ms.assetid: 4f966ff3-2092-495f-863f-50f079085fa6
 keywords:
 - I/O work items WDK NDIS
 - I/O WDK kernel , NDIS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +23,7 @@ NDIS 6.0 drivers call the [**NdisAllocateIoWorkItem**](https://msdn.microsoft.co
 
 **Note**  Protocol drivers cannot use [**NdisAllocateIoWorkItem**](https://msdn.microsoft.com/library/windows/hardware/ff561604) because NDIS does not associate protocol drivers with device objects.
 
- 
+ 
 
 NDIS drivers call the [**NdisQueueIoWorkItem**](https://msdn.microsoft.com/library/windows/hardware/ff563775) function to queue work items. NDIS work items use the **CriticalWorkQueue** queue type.
 
@@ -38,9 +34,9 @@ NDIS drivers must call the [**NdisFreeIoWorkItem**](https://msdn.microsoft.com/l
 
 [System Worker Threads](https://msdn.microsoft.com/library/windows/hardware/ff564587)
 
- 
+ 
 
- 
+ 
 
 
 

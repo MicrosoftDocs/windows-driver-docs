@@ -9,11 +9,7 @@ api_name:
 - wscn NumberOfLines
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +21,7 @@ The required **NumberOfLines** element describes the exact height, in pixels, of
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:NumberOfLines>
   text
 </wscn:NumberOfLines>
@@ -60,10 +56,10 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>MediaBackImageInfo</strong>](mediabackimageinfo.md)</p></td>
+<td><p><a href="mediabackimageinfo.md" data-raw-source="[&lt;strong&gt;MediaBackImageInfo&lt;/strong&gt;](mediabackimageinfo.md)"><strong>MediaBackImageInfo</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>MediaFrontImageInfo</strong>](mediafrontimageinfo.md)</p></td>
+<td><p><a href="mediafrontimageinfo.md" data-raw-source="[&lt;strong&gt;MediaFrontImageInfo&lt;/strong&gt;](mediafrontimageinfo.md)"><strong>MediaFrontImageInfo</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -73,7 +69,7 @@ Remarks
 
 The specified value describes the exact height, in pixels, or the number of lines, of the final output image that would be generated for the current [**ScanTicket**](scanticket.md) settings that are being validated. This height includes rotation and any adjustment that the scanner might perform on the scanned image before transferring it to the client.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**MediaBackImageInfo**](mediabackimageinfo.md)
@@ -82,9 +78,9 @@ The specified value describes the exact height, in pixels, or the number of line
 
 [**ScanTicket**](scanticket.md)
 
- 
+ 
 
- 
+ 
 
 
 

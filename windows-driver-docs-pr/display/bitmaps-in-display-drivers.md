@@ -7,11 +7,7 @@ keywords:
 - bitmaps WDK Windows 2000 display
 - bit-block transfers WDK Windows 2000 display
 - off-screen memory WDK Windows 2000 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -27,7 +23,7 @@ The [**DrvSaveScreenBits**](https://msdn.microsoft.com/library/windows/hardware/
 
 **Note**   For bit-block transfer calls, GDI (not the driver) handles [*pointer exclusion*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-pointer-exclusion) and [*clip region locking*](https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-clip-region-locking).
 
- 
+ 
 
 Drivers that implement device bitmaps in [*off-screen memory*](https://msdn.microsoft.com/library/windows/hardware/ff556318#wdkgloss-off-screen-memory) can significantly improve system performance. Off-screen device bitmaps improve system performance by:
 
@@ -41,9 +37,9 @@ Drivers that implement device bitmaps in [*off-screen memory*](https://msdn.micr
 
 Drivers should implement device bitmaps in off-screen memory through [**DrvCreateDeviceBitmap**](https://msdn.microsoft.com/library/windows/hardware/ff556185).
 
- 
+ 
 
- 
+ 
 
 
 

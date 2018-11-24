@@ -3,11 +3,7 @@ title: .create (Create Process)
 description: The .create command creates a new target application.
 ms.assetid: 9e34eadf-1f68-4eec-ad6b-d70163d5d876
 keywords: [".create (Create Process) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **.create** command creates a new target application.
 
-```
+```dbgsyntax
 .create [-premote RemoteOptions] [-f] CommandLine 
 ```
 
@@ -61,7 +57,7 @@ Specifies the complete command line for the new process. *CommandLine* may conta
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -76,9 +72,9 @@ If you wish to create a new process and freeze all your existing targets, use th
 
 If the **-premote** option is used, the new process will be part of a new system. For details, see [Debugging Multiple Targets](debugging-multiple-targets.md).
 
- 
+ 
 
- 
+ 
 
 
 

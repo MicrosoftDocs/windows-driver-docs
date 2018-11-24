@@ -1,6 +1,5 @@
 ---
 title: Introduction to Print Processors
-author: windows-driver-content
 description: Introduction to Print Processors
 ms.assetid: a34d8daa-b000-4501-8799-5f38cdf38ba4
 keywords:
@@ -8,11 +7,7 @@ keywords:
 - customized print processors WDK
 - print processors WDK , data types
 - data types WDK print processor
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -57,7 +52,7 @@ Microsoft Windows 2000 and later includes the print processors listed in the fol
 </tbody>
 </table>
 
- 
+ 
 
 \* Beginning with Windows 2000, Localmon.dll and Winprint.dll are included in Localspl.dll.
 
@@ -77,11 +72,11 @@ Print processors are associated with printer drivers during driver installation,
 
 **Note**   When you compile a print processor, set the Unicode flag with \#define UNICODE. Print processor code should use only wide strings, of type LPWSTR, for example.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -8,11 +8,7 @@ keywords:
 - WDM audio drivers WDK , about WDM audio drivers
 - vendor-supplied drivers WDK audio
 - custom audio drivers WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -45,9 +41,9 @@ This section includes the following topics:
 
 [Specifying Pin Data Ranges](specifying-pin-data-ranges.md)
 
- 
+ 
 
- 
+ 
 
 
 

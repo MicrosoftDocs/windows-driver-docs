@@ -3,11 +3,7 @@ title: Bug Check 0xA IRQL_NOT_LESS_OR_EQUAL
 description: The IRQL_NOT_LESS_OR_EQUAL bug check has a value of 0x0000000A.
 ms.assetid: a32b80f5-9822-41af-8668-836a70b05c0f
 keywords: ["Bug Check 0xA IRQL_NOT_LESS_OR_EQUAL", "IRQL_NOT_LESS_OR_EQUAL"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The IRQL\_NOT\_LESS\_OR\_EQUAL bug check has a value of 0x0000000A. This indicates that Microsoft Windows or a kernel-mode driver accessed paged memory at an invalid address while at a raised interrupt request level (IRQL). This is typically either a bad pointer or a pageability problem.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## IRQL\_NOT\_LESS\_OR\_EQUAL Parameters
 
@@ -42,7 +38,7 @@ The IRQL\_NOT\_LESS\_OR\_EQUAL bug check has a value of 0x0000000A. This indicat
 <tr class="odd">
 <td align="left"><p>1</p></td>
 <td align="left"><p>The virtual memory address that could not be accessed.</p>
-<p>Use <strong>[!pool](-pool.md)</strong> on this address to see whether it's Paged pool. These commands, may also be useful in gathering information about the failure: <strong>[!pte](-pte.md)</strong>, <strong>[!address](-address.md)</strong>, and <strong>[ln (List Nearest Symbols)](ln--list-nearest-symbols-.md)</strong>.</p></td>
+<p>Use <strong><a href="-pool.md" data-raw-source="[!pool](-pool.md)">!pool</a></strong> on this address to see whether it&#39;s Paged pool. These commands, may also be useful in gathering information about the failure: <strong><a href="-pte.md" data-raw-source="[!pte](-pte.md)">!pte</a></strong>, <strong><a href="-address.md" data-raw-source="[!address](-address.md)">!address</a></strong>, and <strong><a href="ln--list-nearest-symbols-.md" data-raw-source="[ln (List Nearest Symbols)](ln--list-nearest-symbols-.md)">ln (List Nearest Symbols)</a></strong>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>2</p></td>
@@ -75,12 +71,12 @@ The IRQL\_NOT\_LESS\_OR\_EQUAL bug check has a value of 0x0000000A. This indicat
 <tr class="even">
 <td align="left"><p>4</p></td>
 <td align="left"><p>The instruction pointer at the time of the fault.</p>
-<p>Use the <strong>[ln (List Nearest Symbols)](ln--list-nearest-symbols-.md)</strong> command on this address to see the name of the function.</p></td>
+<p>Use the <strong><a href="ln--list-nearest-symbols-.md" data-raw-source="[ln (List Nearest Symbols)](ln--list-nearest-symbols-.md)">ln (List Nearest Symbols)</a></strong> command on this address to see the name of the function.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -97,13 +93,13 @@ This bug check indicates that an attempt was made to access an invalid address w
 Resolution
 ----------
 
-If a kernel debugger is available, obtain a stack trace.
+If a kernel debugger is available, obtain a stack trace: the [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) debug extension displays information about the bug check and can be very helpful in determining the root cause, then enter one of the [**k (Display Stack Backtrace)**](https://docs.microsoft.com/windows-hardware/drivers/debugger/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-) commands to view the call stack.
 
 **Gather Information**
 
 Examine the name of the driver if that was listed on the blue screen.
 
-Check the System Log in Event Viewer for additional error messages that might help pinpoint the device or driver that is causing the error. For more information, see [Open Event Viewer](http://windows.microsoft.com/windows/what-information-event-logs-event-viewer#1TC=windows-7). Look for critical errors in the system log that occurred in the same time window as the blue screen.
+Check the System Log in Event Viewer for additional error messages that might help pinpoint the device or driver that is causing the error. For more information, see [Open Event Viewer](https://windows.microsoft.com/windows/what-information-event-logs-event-viewer#1TC=windows-7). Look for critical errors in the system log that occurred in the same time window as the blue screen.
 
 **Driver Verifier**
 
@@ -111,7 +107,7 @@ Driver Verifier is a tool that runs in real time to examine the behavior of driv
 
 Here is a debugging example:
 
-```
+```dbgcmd
 kd> .bugcheck       [Lists bug check data.]
 Bugcheck code 0000000a
 Arguments 00000000 0000001c 00000000 00000000
@@ -156,15 +152,15 @@ If you encounter bug check 0xA while upgrading to a later version of Windows, th
 
 **Resolving a faulty hardware problem:** If hardware has been added to the system recently, remove it to see if the error recurs. If existing hardware has failed, remove or replace the faulty component. You should run hardware diagnostics supplied by the system manufacturer. For details on these procedures, see the owner's manual for your computer.
 
-**Resolving a faulty system service problem:** Disable the service and confirm that this resolves the error. If so, contact the manufacturer of the system service about a possible update. If the error occurs during system startup, investigate the Windows repair options. For more information, see [Recovery options in Windows 10](http://windows.microsoft.com/windows-10/windows-10-recovery-options).
+**Resolving a faulty system service problem:** Disable the service and confirm that this resolves the error. If so, contact the manufacturer of the system service about a possible update. If the error occurs during system startup, investigate the Windows repair options. For more information, see [Recovery options in Windows 10](https://windows.microsoft.com/windows-10/windows-10-recovery-options).
 
 **Resolving an antivirus software problem:** Disable the program and confirm that this resolves the error. If it does, contact the manufacturer of the program about a possible update.
 
 For general blue screen troubleshooting information, see [**Blue Screen Data**](blue-screen-data.md).
 
- 
+ 
 
- 
+ 
 
 
 

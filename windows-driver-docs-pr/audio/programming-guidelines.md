@@ -2,11 +2,7 @@
 title: Programming Guidelines
 description: Programming Guidelines
 ms.assetid: 289bdf85-9138-4920-a61f-050c51077d3e
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -35,9 +31,9 @@ This section includes:
 
 [Querying for an HD Audio DDI](querying-for-an-hd-audio-ddi.md)
 
- 
+ 
 
- 
+ 
 
 
 

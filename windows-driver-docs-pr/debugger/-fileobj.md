@@ -3,11 +3,7 @@ title: fileobj
 description: The fileobj extension displays detailed information about a FILE_OBJECT structure.
 ms.assetid: ee9237e7-8a1f-473c-9e30-f2b0731a7519
 keywords: ["FILE_OBJECT", "fileobj Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!fileobj** extension displays detailed information about a FILE\_OBJECT structure.
 
-```
+```dbgcmd
 !fileobj FileObject
 ```
 
@@ -51,7 +47,7 @@ Specifies the address of a [FILE_OBJECT](https://msdn.microsoft.com/library/wind
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -62,9 +58,9 @@ Remarks
 
 If the FILE\_OBJECT structure has an associated cache, **!fileobj** tries to parse and display cache information..
 
- 
+ 
 
- 
+ 
 
 
 

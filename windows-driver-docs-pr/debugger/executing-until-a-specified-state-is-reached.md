@@ -3,11 +3,7 @@ title: Executing Until a Specified State is Reached
 description: Executing Until a Specified State is Reached
 ms.assetid: 0657a7bf-4d72-4248-9e45-d79d51b91139
 keywords: ["executing until a specified state is reached", "breakpoints, used to control execution", "breakpoints, and pseudo-registers", "script file, used to control execution"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -41,7 +37,7 @@ In specifying the desired state, it is often helpful to use *automatic pseudo-re
 
 For example, the following breakpoint uses the **$thread** pseudo-register, which is always equal to the value of the current thread. It resolves to the value of the current thread when it is used in a command. By using **$thread** as the argument of the **/t** parameter of the [**bp (Set Breakpoint)**](bp--bu--bm--set-breakpoint-.md) command, you can create a breakpoint that will be triggered every time that **NtOpenFile** is called by the thread which was active at the time you issued the **bp** command:
 
-```
+```dbgcmd
 kd> bp /t @$thread nt!ntopenfile
 ```
 
@@ -57,13 +53,13 @@ Typically, this script file will contain the [**.if**](-if.md) and [**.else**](-
 
 For example, if you wish to execute until the **eax** register contains the value 0x1234, you can create a script file called *eaxstep* that contains the following line:
 
-```
+```dbgcmd
 .if (@eax == 1234) { .echo 1234 } .else { t "$<eaxstep" }
 ```
 
 Then issue the following command from the Debugger Command window:
 
-```
+```dbgcmd
 t "$<eaxstep"
 ```
 
@@ -71,9 +67,9 @@ This **t** command will execute a single step, and then execute the quoted comma
 
 For details on script files, see [Using Script Files](using-script-files.md) and [Using Debugger Command Programs](using-debugger-command-programs.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Features of Serial and Serenum
-author: windows-driver-content
 description: Features of Serial and Serenum
 ms.assetid: 47202203-935a-4e1a-9b05-5555f7cbcfa8
 keywords:
@@ -10,11 +9,7 @@ keywords:
 - Serenum driver WDK , about Serenum driver
 - Serial service WDK
 - serial drivers WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -64,9 +59,9 @@ Serenum does not support the Windows Driver Model, and should only be used with 
 
 Starting with Windows 2000, Serenum supports Serial and other serial port function drivers that need to enumerate a serial port. Hardware vendors do not have to create their own enumerator for serial ports. For example, a device driver can use Serenum to enumerate the devices that are attached to the individual serial ports on a multiport device.
 
- 
+ 
 
- 
+ 
 
 
 

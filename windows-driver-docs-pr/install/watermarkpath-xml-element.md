@@ -10,6 +10,7 @@ api_name:
 api_type:
 - NA
 ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # watermarkPath XML Element
@@ -21,7 +22,7 @@ The **watermarkPath** element specifies the source file for a custom watermark b
 
 ### Element Tag
 
-```
+```cpp
 <watermarkPath>
 ```
 
@@ -39,7 +40,7 @@ None
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Parent elements</strong></p></td>
-<td align="left"><p>[<strong>dpinst</strong>](dpinst-xml-element.md) or [<strong>language</strong>](language-xml-element.md)</p></td>
+<td align="left"><p><a href="dpinst-xml-element.md" data-raw-source="[&lt;strong&gt;dpinst&lt;/strong&gt;](dpinst-xml-element.md)"><strong>dpinst</strong></a> or <a href="language-xml-element.md" data-raw-source="[&lt;strong&gt;language&lt;/strong&gt;](language-xml-element.md)"><strong>language</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Child elements</strong></p></td>
@@ -56,7 +57,7 @@ None
 </tbody>
 </table>
 
- 
+ 
 
 ### <a href="" id="comments"></a>Remarks
 
@@ -64,7 +65,7 @@ A **watermarkPath** element is customized, but not localized, if it is a child e
 
 The following code example demonstrates a **watermarkPath** element that specifies *Data\\Watermark.bmp* as the source of the watermark bitmap that DPInst displays on the left side of the welcome and finish pages. The text that specifies the custom watermark bitmap file is shown in bold font style.
 
-```
+```cpp
 <dpinst>
   ...
   <watermarkPath>Data\Watermark.bmp</watermarkPath>
@@ -81,9 +82,9 @@ If a **watermarkPath** element is not specified, DPInst uses a default watermark
 
 [**language**](language-xml-element.md)
 
- 
+ 
 
- 
+ 
 
 
 

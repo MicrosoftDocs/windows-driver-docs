@@ -3,11 +3,7 @@ title: devobj
 description: The devobj extension displays detailed information about a DEVICE_OBJECT structure.
 ms.assetid: cf722d95-fbd3-4d80-8679-f8fb348ab4b0
 keywords: ["devobj Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!devobj** extension displays detailed information about a DEVICE\_OBJECT structure.
 
-```
+```dbgcmd
 !devobj DeviceObject 
 ```
 
@@ -51,7 +47,7 @@ Specifies the device object. This can be the hexadecimal address of this structu
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -68,7 +64,7 @@ The address of a device object can be obtained using the [**!drvobj**](-drvobj.m
 
 Here is one example:
 
-```
+```dbgcmd
 kd> !devnode
 Dumping IopRootDeviceNode (= 0x80e203b8)
 DevNode 0x80e203b8 for PDO 0x80e204f8
@@ -97,9 +93,9 @@ ExtensionFlags (0000000000)
 Device queue is not busy.
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,15 +1,10 @@
 ---
 title: Introduction to AVStream
-author: windows-driver-content
 description: Introduction to AVStream
 ms.assetid: 626556b5-cdfe-4d02-a5a9-881062d4e5b2
 keywords:
 - AVStream WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -47,9 +42,9 @@ This section includes the following topics:
 
 [AVStream Testing and Debugging](avstream-testing-and-debugging.md)
 
- 
+ 
 
- 
+ 
 
 
 

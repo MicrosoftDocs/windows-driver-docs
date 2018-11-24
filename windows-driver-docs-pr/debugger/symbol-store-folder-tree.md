@@ -2,11 +2,7 @@
 title: Symbol Store Folder Tree
 description: The symbol store backing SMB and HTTP requests is a folder tree residing on a local disk.
 ms.assetid: AB23A180-71C3-4EBE-A3DE-765D264EF130
-ms.author: domars
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -24,7 +20,7 @@ The folder tree’s location should be chosen carefully as well as the disk’s 
 
 Normally files are placed in a single tier directory structure in which a single subdirectory exists for each filename cached. Under each filename folder, additional folders are made to store each version of the file. The tree will have this structure:
 
-```
+```console
 D:\SymStore\Symbols\ntdll.dll\...\
 D:\SymStore\Symbols\ntdll.pdb\...\
 D:\SymStore\Symbols\kernel32.dll\...\
@@ -35,7 +31,7 @@ If a large number of files are to be stored, a two-tier structure can be used at
 
 To use a two-tier structure, place a file called index2.txt in the root of D:\\SymStore\\Symbols. The content of the file is of no importance. When this file exists, symsrv.dll will create and consume files from the two-tier tree using this structure:
 
-```
+```console
 D:\SymStore\Symbols\nt\ntdll.dll\...\
 D:\SymStore\Symbols\nt\ntdll.pdb\...\
 D:\SymStore\Symbols\ke\kernel32.dll\...\
@@ -51,9 +47,9 @@ If you want to convert the structure after the symbol store is populated, use th
 
 [File Share (SMB) Symbol Server](file-share--smb--symbol-server.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,11 +3,7 @@ title: Activating Secure Mode
 description: Activating Secure Mode
 ms.assetid: bb7cd081-f032-4af4-bb4d-efa96917088b
 keywords: ["Secure Mode, how to activate"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -31,9 +27,9 @@ If you have an existing kernel debugging session and need to discover whether yo
 
 After Secure Mode has been activated, it cannot be turned off. Even ending the debugging session will not turn it off. Secure Mode persists as long as the debugger itself is running.
 
- 
+ 
 
- 
+ 
 
 
 

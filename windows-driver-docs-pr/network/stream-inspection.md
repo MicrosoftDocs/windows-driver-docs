@@ -4,11 +4,7 @@ description: Stream Inspection
 ms.assetid: 77e152bf-cb6b-4845-9a5e-9c37281f23f1
 keywords:
 - stream inspection WDK Windows Filtering Platform
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -62,7 +58,7 @@ The [Windows Filtering Platform Stream Edit Sample](http://go.microsoft.com/fwli
 
 -   The callout is deferring a stream by setting the **streamAction** member of the [**FWPS\_STREAM\_CALLOUT\_IO\_PACKET0**](https://msdn.microsoft.com/library/windows/hardware/ff552417) structure to **FWPS\_STREAM\_ACTION\_DEFER**.
 
- 
+ 
 
 ## Dynamic Stream Inspection
 
@@ -83,9 +79,9 @@ Moreover:
 1. Every non-inspect callout at the stream layer must explicitly assign a value to the **actionType** member of the *classifyOut* parameter regardless of what value may have been previously set in that parameter.
 2. The **FWPS\_RIGHT\_ACTION\_WRITE** flag in the **rights** member of the *classifyOut* parameter has no significance in the WFP stream layer. Callouts at this layer should not check for the presence of this flag. Callouts may process the indicated *layerData* parameter regardless of the value of *classifyOut*->**rights**.
 
- 
+ 
 
- 
+ 
 
 
 

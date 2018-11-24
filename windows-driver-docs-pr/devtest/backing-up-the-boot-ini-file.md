@@ -9,11 +9,7 @@ keywords:
 - copying boot options
 - saving boot options
 - boot options WDK , backing up
-ms.author: windowsdriverdev
 ms.date: 07/03/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

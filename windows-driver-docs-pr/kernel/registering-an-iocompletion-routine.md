@@ -1,14 +1,9 @@
 ---
 title: Registering an IoCompletion Routine
-author: windows-driver-content
 description: Registering an IoCompletion Routine
 ms.assetid: 413d8463-b2ce-44b6-846c-f853b5cd580e
 keywords: ["IoCompletion routines", "registering IoCompletion routines"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -64,9 +59,9 @@ A dispatch routine that reuses IRPs for a sequence of operations, or that retrie
 
 -   For an asynchronous request, the dispatch routine of any intermediate driver must call [**IoMarkIrpPending**](https://msdn.microsoft.com/library/windows/hardware/ff549422) for the original IRP. It must then return STATUS\_PENDING after it has sent the IRP on to lower drivers.
 
- 
+ 
 
- 
+ 
 
 
 

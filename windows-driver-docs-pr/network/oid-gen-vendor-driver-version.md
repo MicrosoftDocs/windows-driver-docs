@@ -1,15 +1,10 @@
 ---
 title: OID_GEN_VENDOR_DRIVER_VERSION
-author: windows-driver-content
 description: As a query, the OID_GEN_VENDOR_DRIVER_VERSION OID specifies the vendor-assigned version number of the miniport driver.
 ms.assetid: 37CB6A21-9AF2-49BF-AFBA-868C0C6C5383
 keywords:
 - OID_GEN_VENDOR_DRIVER_VERSION
-ms.author: windowsdriverdev
 ms.date: 11/01/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

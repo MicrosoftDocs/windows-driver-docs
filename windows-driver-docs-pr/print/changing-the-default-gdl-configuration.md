@@ -1,6 +1,5 @@
 ---
 title: Changing the Default GDL Configuration
-author: windows-driver-content
 description: Changing the Default GDL Configuration
 ms.assetid: ecc4a6ab-869a-402e-b90e-5ad94e0347c3
 keywords:
@@ -9,11 +8,7 @@ keywords:
 - configurations WDK GDL , changing the default configuration
 - default GDL configurations WDK
 - DefaultOption directive WDK GDL
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -30,9 +25,9 @@ First, the client should verify, by looking at the default snapshot, that the To
 
 In other cases, the configuration is obtained from user input or it is retrieved from persistent storage. The client could also use these configurations to obtain a snapshot.
 
- 
+ 
 
- 
+ 
 
 
 

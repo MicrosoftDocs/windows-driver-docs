@@ -8,11 +8,7 @@ keywords:
 - substream and video stream combined WDK DirectX VA
 - aspect ratios WDK DirectX VA
 - streams combined WDK DirectX VA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -40,9 +36,9 @@ In the preceding example, the rectangles are as follows:
 
 As shown in the preceding example, the left and right edges of the destination surface contain no pixels from the video stream. The driver's **DeinterlaceBltEx** function should interpret pixels that fall outside the video stream's destination rectangle as backgound color because they are combined with the pixels from the subpicture stream.
 
- 
+ 
 
- 
+ 
 
 
 

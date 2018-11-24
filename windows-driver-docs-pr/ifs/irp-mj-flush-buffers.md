@@ -1,5 +1,5 @@
 ---
-title: IRP\_MJ\_FLUSH\_BUFFERS
+title: IRP_MJ_FLUSH_BUFFERS
 description: IRP\_MJ\_FLUSH\_BUFFERS
 ms.assetid: 13df0d84-0320-4d7e-9acc-8f913ba6afaa
 keywords: ["IRP_MJ_FLUSH_BUFFERS Installable File System Drivers"]
@@ -9,11 +9,7 @@ api_name:
 - IRP_MJ_FLUSH_BUFFERS
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -71,9 +67,9 @@ Specifies IRP\_MJ\_FLUSH\_BUFFERS.
 
 [**IRP\_MJ\_FLUSH\_BUFFERS (WDK Kernel Reference)**](https://msdn.microsoft.com/library/windows/hardware/ff550760)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -4,11 +4,7 @@ description: Example 6 Tracing Special Sessions
 ms.assetid: 5e528086-812c-478b-a2d1-69d54781cbb2
 keywords:
 - Tracefmt WDK , special sessions
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -29,9 +25,9 @@ However, the **-tmf** parameter is required in order to direct Tracefmt to the s
 
 This command also uses the **-display** parameter, which displays the trace messages in the Command Prompt window in addition to writing them to a log file. In this case, because the **-o** parameter is omitted, the messages are written to the default log file, FmtFile.txt, in the local directory.
 
- 
+ 
 
- 
+ 
 
 
 

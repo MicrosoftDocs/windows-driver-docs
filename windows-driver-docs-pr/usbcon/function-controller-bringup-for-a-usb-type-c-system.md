@@ -1,12 +1,7 @@
 ---
 Description: The driver for the function controller informs the operating system about the charging levels that its USB Type-C connector supports and notifies the battery subsystem when it can begin charging and the maximum amount of current the device can draw.
 title: Bring up the function controller on a USB Type-C Windows system
-author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -59,7 +54,7 @@ This is done through an ACPI method defined in the ACPI 6.0 specification
 
 Use the new values defined in ACPI 6.0 to indicate the correct type of USB Type-C connector, such as "Type-C USB2" and "Type-C USB2 and SS with switch". The function driver communicates this information to CAD.sys, so that it uses USB Type-C-specific arbitration logic to determine an appropriate charging source.
 
-```
+```cpp
 Device (UFN0)
 {
     ...

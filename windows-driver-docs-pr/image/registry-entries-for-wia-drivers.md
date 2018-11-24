@@ -1,13 +1,8 @@
 ---
 title: Registry Entries for WIA Drivers
-author: windows-driver-content
 description: Registry Entries for WIA Drivers
 ms.assetid: 5546eeca-f251-4b2f-8539-591b95c093f8
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -19,9 +14,9 @@ ms.localizationpriority: medium
 
 For registry entries used by WIA and Still Image drivers see [Registry Entries for Still Image Devices](registry-entries-for-still-image-devices.md).
 
- 
+ 
 
- 
+ 
 
 
 

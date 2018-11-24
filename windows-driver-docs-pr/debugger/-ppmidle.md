@@ -3,11 +3,7 @@ title: ppmidle
 description: The ppmidle command
 ms.assetid: 40037C2E-DE68-42BB-AFEB-C012F042082D
 keywords: ["ppmidle Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
@@ -22,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!ppmidle** command displays processor idle states.
 
-```
+```dbgcmd
 !ppmidle
 ```
 
@@ -43,7 +39,7 @@ This command is supported on the following versions of Windows:
 
 Kdexts.dll 
 
- 
+ 
 
 
 

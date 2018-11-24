@@ -8,11 +8,7 @@ keywords:
 - DirectDraw VPEs WDK Windows 2000 display , about video port extensions
 - video port extensions WDK DirectDraw , about video port extensions
 - VPEs WDK DirectDraw , about video port extensions
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
@@ -36,9 +32,9 @@ VPE is not a WDM technology. Under Windows 2000 and later, WDM is used for other
 
 Because VPE support is part of the latest version of DirectX, an application can take advantage of these capabilities with the assurance that the solution works on any graphics card that supports VPE under Windows 2000 and later.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,13 +1,8 @@
 ---
 title: WDI_TLV_ALLOWED_BSSIDS_LIST
-author: windows-driver-content
 description: WDI_TLV_ALLOWED_BSSIDS_LIST is a TLV that contains a list of BSSIDs that are allowed to be used for association.
 ms.assetid: A53C5EB2-1D77-4380-86C7-291D2BF4FCFC
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - WDI_TLV_ALLOWED_BSSIDS_LIST Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -35,7 +30,7 @@ The size (in bytes) of the array of [**WDI\_MAC\_ADDRESS**](https://msdn.microso
 |-------------------------------------------------------|---------------------------------------------------------------|
 | [**WDI\_MAC\_ADDRESS**](https://msdn.microsoft.com/library/windows/hardware/dn926071)\[\] | A list of BSSIDs that are allowed to be used for association. |
 
- 
+ 
 
 Requirements
 ------------
@@ -61,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 
