@@ -1,6 +1,5 @@
 ---
 title: Default Allocators
-author: windows-driver-content
 description: Default Allocators
 ms.assetid: ef61a33d-eabf-4449-8d11-cfd97aa2e403
 keywords:

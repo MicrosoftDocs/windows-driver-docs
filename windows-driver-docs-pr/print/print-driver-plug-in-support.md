@@ -1,6 +1,5 @@
 ---
 title: Print Driver Plug-in Support
-author: windows-driver-content
 description: Print Driver Plug-in Support
 ms.assetid: fa072fc9-66da-46c2-a270-6f604860aaff
 keywords:

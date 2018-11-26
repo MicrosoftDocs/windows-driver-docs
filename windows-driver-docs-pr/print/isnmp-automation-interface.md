@@ -1,6 +1,5 @@
 ---
 title: ISNMP Automation Interface
-author: windows-driver-content
 description: ISNMP Automation Interface
 MS-HAID:
 - 'webfnc\_4ff82461-8ece-4336-8f86-9461ad4ec8d7.xml'

@@ -1,6 +1,5 @@
 ---
 title: OID_SRIOV_CURRENT_CAPABILITIES
-author: windows-driver-content
 description: An overlying driver issues an object identifier (OID) query request of OID_SRIOV_CURRENT_CAPABILITIES to obtain the current single root I/O virtualization (SR-IOV) capabilities of a network adapter.
 ms.assetid: EE76B3F8-2883-484A-B2EE-6F7D4738934E
 ms.date: 08/08/2017

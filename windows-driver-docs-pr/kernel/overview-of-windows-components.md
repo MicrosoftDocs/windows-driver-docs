@@ -1,6 +1,5 @@
 ---
 title: Overview of Windows Components
-author: windows-driver-content
 description: Overview of Windows Components
 ms.assetid: b941197d-732c-4b9a-8367-46beb14c33cf
 keywords: ["Windows components WDK", "Windows NT components WDK kernel"]

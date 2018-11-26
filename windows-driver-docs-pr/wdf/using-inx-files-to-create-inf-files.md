@@ -1,6 +1,5 @@
 ---
 title: Using INX Files to Create INF Files
-author: windows-driver-content
 description: Using INX Files to Create INF Files
 ms.assetid: b49f8fed-c2b5-46e2-aeaf-e09231fa1578
 keywords:

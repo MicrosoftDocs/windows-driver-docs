@@ -3,7 +3,6 @@ title: evlog
 description: The evlog extension displays, changes, or backs up the event log.
 ms.assetid: 72038e3e-ff12-4df1-8f55-c02258d764aa
 keywords: ["event log", "evlog Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref

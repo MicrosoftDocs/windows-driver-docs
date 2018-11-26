@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 [Driver Verifier](https://msdn.microsoft.com/Library/Windows/Hardware/Ff545448) is a run-time verification tool that increases the effectiveness of your driver testing. You can enable and configure Driver Verifier to run on all test computers when you deploy your driver for testing.
 
-You should always set up a kernel mode debugging connection with the test computer when you enable Driver Verifier on the remote test computer. For information about configuring a target computer and setting up a debug cable, see [Setting Up Kernel-Mode Debugging in Visual Studio](https://msdn.microsoft.com/windows/hardware/hh439376.
+You should always set up a kernel mode debugging connection with the test computer when you enable Driver Verifier on the remote test computer. For information about configuring a target computer and setting up a debug cable, see [Setting Up Kernel-Mode Debugging in Visual Studio](https://msdn.microsoft.com/windows/hardware/hh439376).
 
 ## <span id="Setting_Driver_Verifier_properties_for_driver_package_projects"></span><span id="setting_driver_verifier_properties_for_driver_package_projects"></span><span id="SETTING_DRIVER_VERIFIER_PROPERTIES_FOR_DRIVER_PACKAGE_PROJECTS"></span>Setting Driver Verifier properties for driver package projects
 

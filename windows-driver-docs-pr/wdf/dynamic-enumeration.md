@@ -1,6 +1,5 @@
 ---
 title: Dynamic Enumeration
-author: windows-driver-content
 description: Dynamic Enumeration
 ms.assetid: 6e46b456-7d2d-4c6e-8692-7f310366387d
 keywords:

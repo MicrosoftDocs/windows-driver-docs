@@ -1,6 +1,5 @@
 ---
 title: Customized Printer Setup Operations
-author: windows-driver-content
 description: Customized Printer Setup Operations
 ms.assetid: 888125e9-a057-4e86-9df8-0086cedb368d
 keywords:

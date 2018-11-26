@@ -1,6 +1,5 @@
 ---
 title: Diagnostics and Debugging
-author: windows-driver-content
 description: Diagnostics and Debugging
 ms.assetid: 6c5c1b4a-338d-4550-903d-c6905ce743f9
 keywords:

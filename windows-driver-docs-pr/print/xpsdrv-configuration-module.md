@@ -1,6 +1,5 @@
 ---
 title: XPSDrv Configuration Module
-author: windows-driver-content
 description: XPSDrv Configuration Module
 ms.assetid: 439d7769-57d1-41f9-a3db-da254b4b7cae
 keywords:

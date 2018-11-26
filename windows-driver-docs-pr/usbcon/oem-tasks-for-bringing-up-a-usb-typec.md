@@ -1,7 +1,6 @@
 ---
 Description: Windows support for USB Type-C connector and tasks for OEMs who are building USB Type-C systems.
 title: Windows support for USB Type-C connectors
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

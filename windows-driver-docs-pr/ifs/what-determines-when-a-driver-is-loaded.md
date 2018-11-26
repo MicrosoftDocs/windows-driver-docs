@@ -1,6 +1,5 @@
 ---
 title: What Determines When a Driver Is Loaded
-author: windows-driver-content
 description: What Determines When a Driver Is Loaded
 ms.assetid: fe0f27e4-84d4-483e-8b4e-69c39ae332de
 keywords:

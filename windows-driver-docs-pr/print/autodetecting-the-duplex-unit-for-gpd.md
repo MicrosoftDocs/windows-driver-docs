@@ -1,6 +1,5 @@
 ---
 title: Autodetecting the Duplex Unit for GPD
-author: windows-driver-content
 description: Autodetecting the Duplex Unit for GPD
 ms.assetid: a5c91b00-ca7c-4c22-a16c-a976011d8b89
 keywords:

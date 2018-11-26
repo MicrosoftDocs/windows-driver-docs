@@ -1,6 +1,5 @@
 ---
 title: Pending an I/O Operation in a Preoperation Callback Routine
-author: windows-driver-content
 description: Pending an I/O Operation in a Preoperation Callback Routine
 ms.assetid: 39b04911-c0d9-42ec-b93e-b440b12f9e41
 keywords:

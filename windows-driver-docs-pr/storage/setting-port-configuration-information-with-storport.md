@@ -1,6 +1,5 @@
 ---
 title: Setting Port Configuration Information with Storport
-author: windows-driver-content
 description: Setting Port Configuration Information with Storport
 ms.assetid: dcc2cb3c-2fe6-4f70-814b-66b59a237dd9
 ms.date: 04/20/2017

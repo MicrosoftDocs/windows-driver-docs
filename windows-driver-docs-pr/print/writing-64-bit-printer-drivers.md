@@ -1,6 +1,5 @@
 ---
 title: Writing 64-Bit Printer Drivers
-author: windows-driver-content
 description: Writing 64-Bit Printer Drivers
 ms.assetid: 41f1a521-980e-4ccd-a395-e1d1bf0114d1
 keywords:

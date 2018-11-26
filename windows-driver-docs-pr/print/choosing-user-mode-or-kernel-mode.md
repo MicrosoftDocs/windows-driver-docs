@@ -1,6 +1,5 @@
 ---
 title: Choosing User Mode or Kernel Mode
-author: windows-driver-content
 description: Choosing User Mode or Kernel Mode
 ms.assetid: 1e63d01e-8cf2-488a-89e8-d4a3ff5cfe19
 keywords:

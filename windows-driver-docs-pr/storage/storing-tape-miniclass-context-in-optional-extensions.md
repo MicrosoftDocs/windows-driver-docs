@@ -1,6 +1,5 @@
 ---
 title: Storing Tape Miniclass Context in Optional Extensions
-author: windows-driver-content
 description: Storing Tape Miniclass Context in Optional Extensions
 ms.assetid: 9b259403-2fae-4708-8765-2d998a535620
 keywords:

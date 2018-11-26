@@ -1,6 +1,5 @@
 ---
 title: Writing an ISR
-author: windows-driver-content
 description: Writing an ISR
 ms.assetid: d696d683-e010-4a5c-ba2d-f536ab5f38b2
 keywords: ["interrupt service routines WDK kernel , writing", "ISRs WDK kernel , writing", "writing ISRs", "interrupt objects WDK kernel , writing ISRs", "I/O WDK kernel , interrupts"]

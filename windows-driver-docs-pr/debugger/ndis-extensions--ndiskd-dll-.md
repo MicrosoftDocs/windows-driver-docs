@@ -3,7 +3,6 @@ title: NDIS Extensions (Ndiskd.dll)
 description: NDIS Extensions (Ndiskd.dll)
 ms.assetid: bf4a7cc2-0116-4d6d-8a6f-2e9dc77d3631
 keywords: ["NDIS extensions (ndiskd.dll)", "ndiskd.dll (NDIS extensions)", "extensions, NDIS"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---

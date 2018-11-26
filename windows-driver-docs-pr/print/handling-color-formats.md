@@ -1,6 +1,5 @@
 ---
 title: Handling Color Formats
-author: windows-driver-content
 description: Handling Color Formats
 ms.assetid: 4d0faba6-1994-474f-a5d3-e25cd2800cf7
 keywords:

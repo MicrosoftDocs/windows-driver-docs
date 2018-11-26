@@ -1,6 +1,5 @@
 ---
 title: Printer Connected to a USB Port
-author: windows-driver-content
 description: Printer Connected to a USB Port
 ms.assetid: 85e238e1-4dc1-4720-b383-d6aaed72e560
 keywords:

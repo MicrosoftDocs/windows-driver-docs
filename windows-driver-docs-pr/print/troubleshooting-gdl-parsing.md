@@ -1,6 +1,5 @@
 ---
 title: Troubleshooting GDL Parsing
-author: windows-driver-content
 description: Troubleshooting GDL Parsing
 ms.assetid: 8c678a2f-b15b-4693-9bed-0edec06b3485
 keywords:

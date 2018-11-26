@@ -271,7 +271,7 @@ This section lists steps for installing the driver MFT:
     "CameraPostProcessingPluginCLSID"="{3456A71B-ECD7-11D0-B908-00A0C9223196}" 
 
 
-~~~
+
 KSCATEGORY_CAPTURE:
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceClasses\{ 65E8773D-8F56-11D0-A3B9-00A0C9223196}\##?#USB#VID_045E&PID_075D&MI_00#8&23C3DB65&0&0000#{65E8773D-8F56-11D0-A3B9-00A0C9223196}\#GLOBAL\Device Parameters]
@@ -282,7 +282,7 @@ KSCATEGORY_CAPTURE:
 ```
 
 **Note**  `KSCATEGORY_VIDEO_CAMERA` is recommended for cameras. You will normally only need one of the registry keys, depending on how the device is registered.
-~~~
+
 
 ## Associate your app with the camera
 

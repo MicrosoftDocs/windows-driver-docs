@@ -1,6 +1,5 @@
 ---
 title: IPrinterBidiSchemaResponses AddBlob method
-author: windows-driver-content
 description: The AddBlob method adds a new response of type BIDI\_BLOB to the collection.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

@@ -1,6 +1,5 @@
 ---
 title: Accessing Shared State Information
-author: windows-driver-content
 description: Accessing Shared State Information
 ms.assetid: f3e5ac07-cab1-4f66-90e4-88b2e28079a5
 keywords: ["critical section routines WDK kernel", "timer counters WDK kernel", "shared state information WDK kernel"]

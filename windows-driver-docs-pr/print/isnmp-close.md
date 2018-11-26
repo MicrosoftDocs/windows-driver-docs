@@ -1,6 +1,5 @@
 ---
 title: ISNMP Close method
-author: windows-driver-content
 description: The Close method enables an ASP Web page to close a communication path to an SNMP agent.
 MS-HAID:
 - 'webfnc\_e925ae51-c717-4b4f-8ab2-b18e9d770c63.xml'

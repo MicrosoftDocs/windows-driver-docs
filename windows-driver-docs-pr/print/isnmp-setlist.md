@@ -1,6 +1,5 @@
 ---
 title: ISNMP SetList method
-author: windows-driver-content
 description: The SetList method enables an ASP Web page to associate values with an array of SNMP OIDs.
 MS-HAID:
 - 'webfnc\_56e01eeb-9b33-4f32-b209-cde82d78e2d5.xml'

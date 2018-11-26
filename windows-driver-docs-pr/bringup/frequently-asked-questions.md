@@ -1,7 +1,6 @@
 ---
 title: Firmware WEG FAQ
 description:  Firmware WEG - Frequently asked questions (FAQ)
-author: windows-driver-content
 ms.date: 05/07/2018
 ms.localizationpriority: medium
 ---

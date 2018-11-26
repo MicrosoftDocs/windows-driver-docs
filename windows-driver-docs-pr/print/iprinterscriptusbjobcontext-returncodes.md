@@ -1,6 +1,5 @@
 ---
 title: IPrinterScriptUsbJobContext ReturnCodes method
-author: windows-driver-content
 description: Returns an object that can supply return code values that an IHV has defined for their JavaScript functions.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

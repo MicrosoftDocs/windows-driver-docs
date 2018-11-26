@@ -1,6 +1,5 @@
 ---
 title: 1394 Samples and Diagnostic Tools
-author: windows-driver-content
 description: 1394 Samples and Diagnostic Tools
 ms.assetid: e3ce71da-8c24-405b-b734-98a8c4f45e6b
 keywords:

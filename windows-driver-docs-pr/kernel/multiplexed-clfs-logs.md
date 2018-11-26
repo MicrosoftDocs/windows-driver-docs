@@ -1,6 +1,5 @@
 ---
 title: Multiplexed CLFS Logs
-author: windows-driver-content
 description: Multiplexed CLFS Logs
 ms.assetid: bbea9bdc-8bb8-4455-89c4-4735bad85ba0
 keywords: ["Common Log File System WDK kernel , multiplexed logs", "CLFS WDK kernel , multiplexed logs", "multiplexed logs WDK CLFS", "stable storage WDK CLFS", "storage WDK CLFS"]
@@ -42,9 +41,9 @@ Consider the case of a multiplexed log that has two streams, each of which has o
 
 
 
-~~~
+
 If client 2 needs additional marshalling areas, pass the same **LOG\_FILE\_OBJECT** pointer to **ClfsCreateMarshallingArea** again, once for each additional marshalling area that client 2 needs.
-~~~
+
 
 Now that clients 1 and 2 each have a **LOG\_FILE\_OBJECT** and one or more marshalling areas, they can each write records to their own streams (by way of the marshalling areas associated with those streams) by calling the following functions.
 

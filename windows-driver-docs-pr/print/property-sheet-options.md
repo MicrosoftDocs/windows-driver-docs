@@ -1,6 +1,5 @@
 ---
 title: Property Sheet Options
-author: windows-driver-content
 description: Property Sheet Options
 ms.assetid: 572330d6-1a1b-46fd-bfb4-be2b0990bca4
 keywords:

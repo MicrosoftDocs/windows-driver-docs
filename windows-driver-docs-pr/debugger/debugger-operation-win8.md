@@ -2,7 +2,6 @@
 title: Debugger Operation
 description: This section covers debugger operation
 ms.assetid: 110551C5-DB1D-420E-BC26-F4CA7555C9CF
-ms.author: domars
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

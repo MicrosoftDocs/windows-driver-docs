@@ -1,6 +1,5 @@
 ---
 title: Using the IStiUSD Escape Method
-author: windows-driver-content
 description: Using the IStiUSD Escape Method
 ms.assetid: f9b1ede6-8311-4cc9-8bf7-20018cb35a3d
 ms.date: 04/20/2017

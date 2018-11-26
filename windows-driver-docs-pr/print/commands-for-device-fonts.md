@@ -1,6 +1,5 @@
 ---
 title: Commands for Device Fonts
-author: windows-driver-content
 description: Commands for Device Fonts
 ms.assetid: c74ed63c-819a-4451-bc18-816713689d3e
 keywords:

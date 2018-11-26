@@ -1,6 +1,5 @@
 ---
 title: New Root-Level-Only PPD Attributes for Windows Vista
-author: windows-driver-content
 description: New Root-Level-Only PPD Attributes for Windows Vista
 ms.assetid: 49cdfb2f-e119-4960-9e79-67e1025b753f
 keywords:

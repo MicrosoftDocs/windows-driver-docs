@@ -1,6 +1,5 @@
 ---
 title: '#EnablePPDirective Preprocessor Directive'
-author: windows-driver-content
 description: '#EnablePPDirective Preprocessor Directive'
 ms.assetid: aebb11ec-b281-461e-b3fd-65e9b2773049
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: IPrintCorePS2 COM Interface
-author: windows-driver-content
 description: IPrintCorePS2 COM Interface
 ms.assetid: d5eb6962-2201-405f-9a22-2b11fb6d0360
 keywords:

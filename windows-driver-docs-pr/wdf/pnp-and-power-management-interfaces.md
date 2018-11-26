@@ -1,6 +1,5 @@
 ---
 title: PnP and Power Management Interfaces
-author: windows-driver-content
 description: PnP and Power Management Interfaces
 ms.assetid: b80228f7-50be-4551-870b-2d7e2b5db239
 keywords:

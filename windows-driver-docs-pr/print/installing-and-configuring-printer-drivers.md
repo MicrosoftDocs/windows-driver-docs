@@ -1,6 +1,5 @@
 ---
 title: Installing and Configuring Printer Drivers
-author: windows-driver-content
 description: Installing and Configuring Printer Drivers
 ms.assetid: 77534f45-daa5-460c-97d4-0f0c3c54f4b4
 keywords:

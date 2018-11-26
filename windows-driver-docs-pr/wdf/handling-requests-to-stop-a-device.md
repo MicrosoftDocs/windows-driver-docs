@@ -1,6 +1,5 @@
 ---
 title: Handling Requests to Stop a Device
-author: windows-driver-content
 description: Handling Requests to Stop a Device
 ms.assetid: 4c8f37b3-7961-4c78-a88b-3eec58155e66
 keywords:

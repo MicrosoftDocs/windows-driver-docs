@@ -1,6 +1,5 @@
 ---
 title: SCSI Miniport Driver's HwScsiInterrupt Routine
-author: windows-driver-content
 description: SCSI Miniport Driver's HwScsiInterrupt Routine
 ms.assetid: 8760e7e4-1721-4e55-99e6-c9e234368fa1
 keywords:

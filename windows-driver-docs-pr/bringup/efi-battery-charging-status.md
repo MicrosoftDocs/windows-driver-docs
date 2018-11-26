@@ -1,6 +1,5 @@
 ---
 title: EFI_BATTERY_CHARGING_STATUS
-author: windows-driver-content
 description: EFI_BATTERY_CHARGING_STATUS
 ms.assetid: dc267920-2c2f-447b-8772-35160886a24c
 ms.date: 04/20/2017

@@ -1,6 +1,5 @@
 ---
 title: Sample WIA Drivers
-author: windows-driver-content
 description: Sample WIA Drivers
 ms.assetid: 1d69602f-67d7-4000-b499-aa448fd50fef
 ms.date: 04/20/2017

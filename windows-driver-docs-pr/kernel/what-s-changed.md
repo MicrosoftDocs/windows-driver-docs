@@ -1,6 +1,5 @@
 ---
 title: What's Changed
-author: windows-driver-content
 description: What's Changed
 ms.assetid: c7799406-d046-4261-8af7-7abbac18fa70
 keywords: ["64-bit WDK kernel , porting drivers to", "porting drivers to 64-bit Windows", "64-bit pointers WDK kernel", "integer size WDK 64-bit", "data types WDK 64-bit", "64-bit WDK kernel , what's changed"]

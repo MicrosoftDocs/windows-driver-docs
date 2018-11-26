@@ -1,6 +1,5 @@
 ---
 title: Reusing Framework Request Objects
-author: windows-driver-content
 description: Reusing Framework Request Objects
 ms.assetid: 9e3090a9-62d0-48b3-9f3b-7171dc6d2766
 keywords:

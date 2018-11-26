@@ -1,6 +1,5 @@
 ---
 title: Attaching a User-Mode Debugger
-author: windows-driver-content
 description: Attaching a User-Mode Debugger
 ms.assetid: ba8eeabd-946d-46fa-b9ed-b9a674315bd4
 keywords:

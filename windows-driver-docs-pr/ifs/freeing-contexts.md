@@ -1,6 +1,5 @@
 ---
 title: Freeing Contexts
-author: windows-driver-content
 description: Freeing Contexts
 ms.assetid: e2b87662-c1bd-45a7-82a3-29817f7692fc
 keywords:

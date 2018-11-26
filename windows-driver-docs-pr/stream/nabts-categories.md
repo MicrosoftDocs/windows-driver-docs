@@ -1,6 +1,5 @@
 ---
 title: NABTS Categories
-author: windows-driver-content
 description: NABTS Categories
 ms.assetid: 7d064ed4-1bd9-4457-83c8-8b1fee10251c
 keywords:

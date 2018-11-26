@@ -3,7 +3,6 @@ title: Debugging with Visual SourceSafe
 description: Debugging with Visual SourceSafe
 ms.assetid: 65cc4eda-7aed-489f-a622-27a42afc0e4a
 keywords: ["Visual SourceSafe, debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---

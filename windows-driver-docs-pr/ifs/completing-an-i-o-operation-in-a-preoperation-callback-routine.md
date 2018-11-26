@@ -1,6 +1,5 @@
 ---
 title: Completing an I/O Operation in a Preoperation Callback Routine
-author: windows-driver-content
 description: Completing an I/O Operation in a Preoperation Callback Routine
 ms.assetid: 1f339779-dc88-4673-87d5-36cee0b27fc2
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Pscript Capabilities
-author: windows-driver-content
 description: Pscript Capabilities
 ms.assetid: 1530cb64-a1b1-4ff5-a6bf-b3634e83a225
 keywords:

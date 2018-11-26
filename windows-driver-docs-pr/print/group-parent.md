@@ -1,6 +1,5 @@
 ---
 title: Group Parent
-author: windows-driver-content
 description: Group Parent
 ms.assetid: b4c40c15-df16-4af0-81c8-9e70d26ba598
 keywords:

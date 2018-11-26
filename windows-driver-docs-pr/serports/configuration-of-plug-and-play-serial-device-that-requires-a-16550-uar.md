@@ -1,6 +1,5 @@
 ---
 title: Configure PnP Serial Devices for 16550 UART Interface
-author: windows-driver-content
 description: Configuration of Plug and Play Serial Device that Requires a 16550 UART-Compatible Interface
 ms.assetid: b99259bd-7573-4f71-9ab5-b263eed41288
 keywords:

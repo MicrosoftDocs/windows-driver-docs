@@ -1,7 +1,6 @@
 ---
 Description: This topic presents frequently asked questions for driver developers who are new to developing and integrating USB devices and drivers with Windows operating systems.
 title: USB in Windows - FAQ
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

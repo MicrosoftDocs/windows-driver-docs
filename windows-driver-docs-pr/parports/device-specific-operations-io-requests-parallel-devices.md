@@ -1,6 +1,5 @@
 ---
 title: Device-specific operations for I/O requests for parallel devices
-author: windows-driver-content
 description: Documents device-specific operations for I/O requests for parallel devices
 keywords: ["Parallel devices WDK", "Parallel drivers WDK", "Parallel IRP codes"]
 ms.localizationpriority: medium

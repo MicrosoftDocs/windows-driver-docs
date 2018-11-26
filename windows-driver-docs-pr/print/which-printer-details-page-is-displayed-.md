@@ -1,6 +1,5 @@
 ---
 title: Which Printer Details Page is Displayed
-author: windows-driver-content
 description: Which Printer Details Page is Displayed
 ms.assetid: f7824350-a6de-45ca-8d72-859edf77e86d
 keywords:

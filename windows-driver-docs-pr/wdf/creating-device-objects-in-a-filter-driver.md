@@ -1,6 +1,5 @@
 ---
 title: Creating Device Objects in a Filter Driver
-author: windows-driver-content
 description: Creating Device Objects in a Filter Driver
 ms.assetid: f5a4851d-7caf-467d-9500-11f341fdf680
 keywords:

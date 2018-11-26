@@ -1,6 +1,5 @@
 ---
 title: Volume Mount Example
-author: windows-driver-content
 description: Volume Mount Example
 ms.assetid: d6645d05-a945-4454-ac7c-122219bbdc50
 keywords:

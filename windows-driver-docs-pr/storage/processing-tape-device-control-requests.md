@@ -1,6 +1,5 @@
 ---
 title: Processing Tape Device Control Requests
-author: windows-driver-content
 description: Processing Tape Device Control Requests
 ms.assetid: de6edfc6-9b4b-4866-8fdb-1047b43163de
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: SCSI Miniport Driver's DriverEntry Routine
-author: windows-driver-content
 description: SCSI Miniport Driver's DriverEntry Routine
 ms.assetid: b143bb19-2c9e-4e43-841f-a3c47c7f1a1b
 keywords:

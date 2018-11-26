@@ -1,6 +1,5 @@
 ---
 title: 1394 Bridges
-author: windows-driver-content
 description: 1394 Bridges
 ms.assetid: 208cceaa-dd26-46f9-b015-723c5940b02b
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Completing I/O Requests
-author: windows-driver-content
 description: Completing I/O Requests
 ms.assetid: ec5aef7a-110e-430c-902d-669ccc7095ac
 keywords:

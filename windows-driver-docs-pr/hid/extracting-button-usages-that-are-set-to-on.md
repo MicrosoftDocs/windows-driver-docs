@@ -1,6 +1,5 @@
 ---
 title: Extracting Button Usages That Are Set to ON
-author: windows-driver-content
 description: Extracting Button Usages That Are Set to ON
 ms.assetid: 700cdb18-f570-4189-a33c-f57af56a52fd
 keywords: ["HID reports WDK , extracting control data", "reports WDK HID , extracting control data", "extracting HID control data", "button usages WDK HID"]

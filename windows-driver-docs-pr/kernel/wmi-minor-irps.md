@@ -1,6 +1,5 @@
 ---
 title: WMI Minor IRPs
-author: windows-driver-content
 description: WMI Minor IRPs
 ms.date: 08/12/2017
 ms.assetid: 5788294f-2145-4381-9b06-3b138b2d26df

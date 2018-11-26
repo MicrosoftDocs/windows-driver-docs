@@ -1,6 +1,5 @@
 ---
 title: Get Request and Response Schemas
-author: windows-driver-content
 description: The Get request schema and corresponding response schema definition, and an example of each, are below.
 ms.assetid: 48980220-4DD6-4785-AAC1-850F8FBE49EC
 ms.date: 04/20/2017

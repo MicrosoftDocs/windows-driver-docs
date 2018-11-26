@@ -25,9 +25,9 @@ To install device metadata packages through a [driver package](driver-packages.m
 
 
 
-~~~
+
 For more information, see [Combining Platform Extensions with Operating System Versions](combining-platform-extensions-with-operating-system-versions.md).
-~~~
+
 
 -   All metadata packages in the driver package must be copied to the correct locale-specific folder in the [device metadata store](device-metadata-store.md). This is needed in order to support dynamic changes to locale.
 

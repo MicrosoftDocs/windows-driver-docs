@@ -1,6 +1,5 @@
 ---
 title: Obtaining Information About a General I/O Target
-author: windows-driver-content
 description: Obtaining Information About a General I/O Target
 ms.assetid: 70ae920e-de2d-4014-bae4-74058b26e7c0
 keywords:

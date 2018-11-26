@@ -1,6 +1,5 @@
 ---
 title: GDL Source File Preprocessor Directives
-author: windows-driver-content
 description: GDL Source File Preprocessor Directives
 ms.assetid: cc0f807f-5c06-4add-bed1-c15c8251dc98
 keywords:

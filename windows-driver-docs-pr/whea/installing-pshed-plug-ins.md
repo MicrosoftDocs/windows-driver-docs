@@ -1,6 +1,5 @@
 ---
 title: Installing PSHED Plug-Ins
-author: windows-driver-content
 description: Installing PSHED Plug-Ins
 ms.assetid: a7f75bc0-b87a-42fa-bc46-f68b3dc31d2d
 keywords:

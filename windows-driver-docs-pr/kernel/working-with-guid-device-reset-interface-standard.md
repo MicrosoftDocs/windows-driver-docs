@@ -1,6 +1,5 @@
 ---
 title: Working with the GUID_DEVICE_RESET_INTERFACE_STANDARD
-author: windows-driver-content
 description: Working with the GUID_DEVICE_RESET_INTERFACE_STANDARD
 keywords: ["GUID_DEVICE_RESET_INTERFACE_STANDARD"]
 ms.date: 11/14/2017

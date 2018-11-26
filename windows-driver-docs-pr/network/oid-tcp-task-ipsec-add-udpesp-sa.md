@@ -1,6 +1,5 @@
 ---
 title: OID_TCP_TASK_IPSEC_ADD_UDPESP_SA
-author: windows-driver-content
 description: This topic describes the OID_TCP_TASK_IPSEC_ADD_UDPESP_SA object identifier (OID).
 ms.assetid: 022db6dd-1099-4069-81af-7f919d91464e
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Master Clocks
-author: windows-driver-content
 description: Master Clocks
 ms.assetid: bdd228c1-a15f-4c08-8991-299a3f2e1ee8
 keywords:

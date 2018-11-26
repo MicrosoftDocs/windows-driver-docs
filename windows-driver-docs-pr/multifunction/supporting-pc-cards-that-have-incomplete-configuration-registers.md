@@ -1,6 +1,5 @@
 ---
 title: Supporting PC Cards That Have Incomplete Configuration Registers
-author: windows-driver-content
 description: Supporting PC Cards That Have Incomplete Configuration Registers
 ms.assetid: 62bdb1e7-ca45-42e6-bdf5-c48fb3ddb3fc
 keywords:

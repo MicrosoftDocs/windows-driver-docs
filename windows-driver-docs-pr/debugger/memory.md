@@ -3,7 +3,6 @@ title: Memory
 description: Memory
 ms.assetid: 4aa5cf2b-e5f8-4358-b2cc-c677cd012f46
 keywords: ["Debugger Engine, memory", "data spaces"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---

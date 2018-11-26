@@ -1,6 +1,5 @@
 ---
 title: Using Device Interfaces
-author: windows-driver-content
 description: Using Device Interfaces
 ms.assetid: 98199220-947e-462e-a50c-85d81ca50108
 keywords:
@@ -136,9 +135,9 @@ The following code example shows how a local UMDF 2 driver registers for notific
     }
 
 
-~~~
+
 ```
-~~~
+
 
 4.  From the work item callback function, the local driver calls [**WdfIoTargetCreate**](https://msdn.microsoft.com/library/windows/hardware/ff548591) to create the remote target, and [**WdfIoTargetOpen**](https://msdn.microsoft.com/library/windows/hardware/ff548634) to open a remote I/O target.
 
@@ -161,9 +160,9 @@ The following code example shows how a local UMDF 2 driver registers for notific
 
 
 
-~~~
+
 ```
-~~~
+
 
 ## Related topics
 

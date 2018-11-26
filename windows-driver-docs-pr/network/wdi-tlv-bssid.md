@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_BSSID
-author: windows-driver-content
 description: WDI_TLV_BSSID is a TLV that contains the BSSID of a BSS.
 ms.assetid: 0B3AB317-D1E7-4E61-9F6E-C3134B5A3984
 ms.date: 07/18/2017

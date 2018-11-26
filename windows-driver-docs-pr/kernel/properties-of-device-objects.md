@@ -1,6 +1,5 @@
 ---
 title: Properties of Device Objects
-author: windows-driver-content
 description: Properties of Device Objects
 ms.assetid: 6cd31263-e725-4a62-bec9-f40feb0b66cc
 keywords: ["device objects WDK kernel , properties", "properties WDK device objects"]

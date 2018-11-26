@@ -1,6 +1,5 @@
 ---
 title: Timecode Category
-author: windows-driver-content
 description: Timecode Category
 ms.assetid: 273e0233-357e-4e13-bf8e-77ca36834ee7
 keywords:

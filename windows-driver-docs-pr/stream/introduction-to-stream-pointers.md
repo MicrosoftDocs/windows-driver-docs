@@ -1,6 +1,5 @@
 ---
 title: Introduction to Stream Pointers
-author: windows-driver-content
 description: Introduction to Stream Pointers
 ms.assetid: 2682b145-5148-4301-b382-9811bb5e8fa6
 keywords:

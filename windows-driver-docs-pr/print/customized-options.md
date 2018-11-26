@@ -1,6 +1,5 @@
 ---
 title: Customized Options
-author: windows-driver-content
 description: Customized Options
 ms.assetid: 8b54c59e-b469-488a-ae31-52045c00c971
 keywords:

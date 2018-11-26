@@ -1,6 +1,5 @@
 ---
 title: Supporting Power Management for DMA Devices
-author: windows-driver-content
 description: Supporting Power Management for DMA Devices
 ms.assetid: abbb8f60-560f-41c9-85c5-1ec82078b99e
 keywords:

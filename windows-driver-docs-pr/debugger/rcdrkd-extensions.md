@@ -2,7 +2,6 @@
 title: RCDRKD Extensions
 description: This section describes the RCDRKD debugger extension commands. These commands display WPP trace messages created by drivers.
 ms.assetid: 11CEBCED-2C11-4450-A5FB-BC5B48B1E1A3
-ms.author: domars
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

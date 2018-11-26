@@ -1,6 +1,5 @@
 ---
 title: Printer Font Descriptions
-author: windows-driver-content
 description: Printer Font Descriptions
 ms.assetid: 1165d880-a729-4225-bd8f-2a0a74fff328
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Capturing Still Frames from a USB Camera
-author: windows-driver-content
 description: Capturing Still Frames from a USB Camera
 ms.assetid: 762021ea-753c-4cd2-9eec-1403ee918d4e
 keywords:

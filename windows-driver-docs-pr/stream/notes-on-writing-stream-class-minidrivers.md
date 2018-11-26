@@ -1,6 +1,5 @@
 ---
 title: Notes on Writing Stream Class Minidrivers
-author: windows-driver-content
 description: Notes on Writing Stream Class Minidrivers
 ms.assetid: dc966b47-4ffe-4122-847d-118a465bf5f5
 keywords:

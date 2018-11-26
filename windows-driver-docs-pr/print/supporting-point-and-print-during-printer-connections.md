@@ -1,6 +1,5 @@
 ---
 title: Supporting Point and Print During Printer Connections
-author: windows-driver-content
 description: Supporting Point and Print During Printer Connections
 ms.assetid: 941c815f-03c7-4ede-b45f-70d6aeb06442
 keywords:

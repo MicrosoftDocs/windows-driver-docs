@@ -1,6 +1,5 @@
 ---
 title: AV/C Streaming Overview
-author: windows-driver-content
 description: AV/C Streaming Overview
 ms.assetid: c500fad7-26b7-4507-953e-258dd9c91253
 keywords:

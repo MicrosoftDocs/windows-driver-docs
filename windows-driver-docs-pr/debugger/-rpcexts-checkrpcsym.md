@@ -2,7 +2,6 @@
 title: rpcexts.checkrpcsym
 description: rpcexts.checkrpcsym
 ms.assetid: db757ff3-c108-4811-9bdd-fb95a769ae75
-ms.author: domars
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

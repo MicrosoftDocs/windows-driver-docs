@@ -3,7 +3,6 @@ title: fwver
 description: The fwver extension displays the Itanium firmware version.
 ms.assetid: 0b1a2fb2-9df6-45b4-bd5b-cbcdde38ddad
 keywords: ["fwver Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref

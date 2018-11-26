@@ -1,6 +1,5 @@
 ---
 title: Macrovision
-author: windows-driver-content
 description: Macrovision
 ms.assetid: 62bd8d8a-3e58-4bca-a32d-ff792180afbe
 keywords:

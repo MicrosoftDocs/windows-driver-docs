@@ -1,6 +1,5 @@
 ---
 title: Building BDA Drivers
-author: windows-driver-content
 description: Building BDA Drivers
 ms.assetid: 2272fa18-5102-443e-8728-f256444ab044
 keywords:

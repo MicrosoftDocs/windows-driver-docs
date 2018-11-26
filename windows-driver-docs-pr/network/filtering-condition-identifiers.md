@@ -1,6 +1,5 @@
 ---
 title: Filtering condition identifiers
-author: windows-driver-content
 description: This section describes filtering condition identifiers.
 ms.assetid: 53321aea-6406-426a-a541-2626faad2232
 keywords:

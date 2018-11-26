@@ -1,6 +1,5 @@
 ---
 title: USBCAMD2 Features
-author: windows-driver-content
 description: USBCAMD2 Features
 ms.assetid: e800948a-6903-496e-9561-697ff5ccd1d7
 keywords:

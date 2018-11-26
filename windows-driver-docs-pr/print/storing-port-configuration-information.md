@@ -1,6 +1,5 @@
 ---
 title: Storing Port Configuration Information
-author: windows-driver-content
 description: Storing Port Configuration Information
 ms.assetid: b1c83729-d7d2-4920-9402-4e00baa12633
 keywords:

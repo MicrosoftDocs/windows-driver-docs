@@ -1,6 +1,5 @@
 ---
 title: GDL Preprocessor Guidelines
-author: windows-driver-content
 description: GDL Preprocessor Guidelines
 ms.assetid: dc8450ca-cacc-458c-a05b-8566d04d8bae
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Creating Device Objects in a Function Driver
-author: windows-driver-content
 description: Creating Device Objects in a Function Driver
 ms.assetid: 3b988f6d-c50e-412d-85cb-031746535ff4
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Miscellaneous Network Mini-Redirector Routines
-author: windows-driver-content
 description: Miscellaneous Network Mini-Redirector Routines
 ms.assetid: bad5847c-8ac5-4e63-a0a5-3bbf13424928
 keywords:

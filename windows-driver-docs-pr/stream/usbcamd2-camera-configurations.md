@@ -1,6 +1,5 @@
 ---
 title: USBCAMD2 Camera Configurations
-author: windows-driver-content
 description: USBCAMD2 Camera Configurations
 ms.assetid: 9a0dd6f9-aefb-4134-8bd5-31420a16db4a
 keywords:

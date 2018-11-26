@@ -1,6 +1,5 @@
 ---
 title: General Printing Attributes
-author: windows-driver-content
 description: General Printing Attributes
 ms.assetid: 3238c000-05fc-4f6a-a67a-083371007171
 ms.date: 04/20/2017

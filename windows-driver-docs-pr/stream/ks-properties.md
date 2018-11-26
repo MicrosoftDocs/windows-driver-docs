@@ -1,6 +1,5 @@
 ---
 title: KS Properties
-author: windows-driver-content
 description: KS Properties
 ms.assetid: a385929e-1934-4d88-aaf9-ff1ddbfd30f7
 keywords:

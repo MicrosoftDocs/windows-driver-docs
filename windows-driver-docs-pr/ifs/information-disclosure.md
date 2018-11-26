@@ -1,6 +1,5 @@
 ---
 title: Information Disclosure
-author: windows-driver-content
 description: Information Disclosure
 ms.assetid: e5794acb-44f7-4775-854b-69884f60658a
 keywords:

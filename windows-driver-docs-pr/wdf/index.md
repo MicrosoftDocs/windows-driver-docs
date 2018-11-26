@@ -1,6 +1,5 @@
 ---
 title: What's New for WDF Drivers in Windows 10
-author: windows-driver-content
 description: Summarizes new features and improvements for WDF drivers in Windows 10.
 ms.assetid: 61fd9916-38e7-47d0-aec7-d5a489eb21eb
 keywords:
@@ -11,7 +10,6 @@ keywords:
 - framework-based drivers WDK KMDF , about framework-based drivers
 - objects WDK KMDF
 - framework objects WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 10/02/2018
 ms.topic: article
 ms.prod: windows-hardware

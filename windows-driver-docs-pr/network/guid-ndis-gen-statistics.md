@@ -1,6 +1,5 @@
 ---
 title: GUID_NDIS_GEN_STATISTICS
-author: windows-driver-content
 description: This topic describes the GUID_NDIS_GEN_STATISTICS GUID for the NDIS WMI interface.
 ms.assetid: 3751d4e7-7991-4329-9eb2-6a44ca1190d4
 keywords:

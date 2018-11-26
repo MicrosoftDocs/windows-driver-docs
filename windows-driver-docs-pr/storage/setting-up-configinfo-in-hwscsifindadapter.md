@@ -1,6 +1,5 @@
 ---
 title: Setting up ConfigInfo in HwScsiFindAdapter
-author: windows-driver-content
 description: Setting up ConfigInfo in HwScsiFindAdapter
 ms.assetid: f9c5d23d-feab-4cc4-9cd9-29c21d4fdf0b
 keywords:

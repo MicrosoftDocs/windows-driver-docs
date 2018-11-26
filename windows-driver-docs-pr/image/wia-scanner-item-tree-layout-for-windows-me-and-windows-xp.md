@@ -1,6 +1,5 @@
 ---
 title: WIA Scanner Item Tree Layout for Windows Me and Windows XP
-author: windows-driver-content
 description: WIA Scanner Item Tree Layout for Windows Me and Windows XP
 ms.assetid: e4824d3a-6439-4ebb-903e-2b592108ddbe
 ms.date: 04/20/2017

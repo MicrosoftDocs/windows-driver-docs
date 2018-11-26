@@ -1,6 +1,5 @@
 ---
 title: External Naming of COM Ports
-author: windows-driver-content
 description: External Naming of COM Ports
 ms.assetid: d517bc73-9687-45f8-a5f8-837ffe868fae
 keywords:

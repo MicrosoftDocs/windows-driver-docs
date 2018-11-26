@@ -1,6 +1,5 @@
 ---
 title: Error Information Retrieval
-author: windows-driver-content
 description: Error Information Retrieval
 ms.assetid: 4af06727-9660-4bbc-8c9e-a50c8f2d566d
 keywords:

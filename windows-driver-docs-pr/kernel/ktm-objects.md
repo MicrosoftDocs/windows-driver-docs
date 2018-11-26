@@ -1,6 +1,5 @@
 ---
 title: KTM Objects
-author: windows-driver-content
 description: KTM Objects
 ms.assetid: 927a417b-35f5-49b8-85f3-7e6b1f5c0225
 keywords: ["Kernel Transaction Manager WDK , objects", "KTM WDK , objects", "objects WDK KTM"]

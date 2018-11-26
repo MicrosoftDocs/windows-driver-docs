@@ -1,6 +1,5 @@
 ---
 title: Accessing Data Buffers in UMDF 1.x Drivers
-author: windows-driver-content
 description: Accessing Data Buffers in UMDF 1.x Drivers
 ms.assetid: cbd67ada-696e-403e-9b35-d8ed06a844d5
 keywords:

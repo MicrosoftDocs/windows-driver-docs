@@ -1,6 +1,5 @@
 ---
 title: Minidriver-Supplied Halftoning
-author: windows-driver-content
 description: Minidriver-Supplied Halftoning
 ms.assetid: 15af499a-c541-4d61-ace3-5a211574674c
 keywords:

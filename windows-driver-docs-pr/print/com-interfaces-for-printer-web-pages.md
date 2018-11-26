@@ -1,6 +1,5 @@
 ---
 title: COM Interfaces for Printer Web Pages
-author: windows-driver-content
 description: COM Interfaces for Printer Web Pages
 MS-HAID:
 - 'webfnc\_a60cbcd0-5184-44f2-81fd-08257601b084.xml'

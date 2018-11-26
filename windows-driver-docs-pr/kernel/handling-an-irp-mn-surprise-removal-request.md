@@ -1,6 +1,5 @@
 ---
 title: Handling an IRP_MN_SURPRISE_REMOVAL Request
-author: windows-driver-content
 description: Handling an IRP_MN_SURPRISE_REMOVAL Request
 ms.assetid: 39a90617-40ad-4c10-95d3-2b618d66d70e
 keywords: ["surprise removals WDK PnP", "IRP_MN_SURPRISE_REMOVAL"]

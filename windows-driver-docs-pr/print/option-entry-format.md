@@ -1,6 +1,5 @@
 ---
 title: Option Entry Format
-author: windows-driver-content
 description: Option Entry Format
 ms.assetid: defc035a-d571-4bf1-abeb-c7528ba23b81
 keywords:

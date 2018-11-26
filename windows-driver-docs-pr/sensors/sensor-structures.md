@@ -1,6 +1,5 @@
 ---
 title: Sensor Structures
-author: windows-driver-content
 description: Sensor Structures
 ms.assetid: 94194998-8A56-48D3-9053-007526BF0ED2
 ms.date: 07/20/2018

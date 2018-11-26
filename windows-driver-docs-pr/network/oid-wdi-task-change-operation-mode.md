@@ -1,6 +1,5 @@
 ---
 title: OID_WDI_TASK_CHANGE_OPERATION_MODE
-author: windows-driver-content
 description: OID_WDI_TASK_CHANGE_OPERATION_MODE configures the operation mode for the port.
 ms.assetid: 84be0658-104d-4336-bc2f-6f2624f33857
 ms.date: 07/18/2017

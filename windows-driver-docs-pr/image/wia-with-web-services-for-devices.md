@@ -1,6 +1,5 @@
 ---
 title: WIA with Web Services for Devices
-author: windows-driver-content
 description: WIA with Web Services for Devices
 ms.assetid: e1f91963-503b-4766-a6f1-c334465f0e73
 ms.date: 04/20/2017

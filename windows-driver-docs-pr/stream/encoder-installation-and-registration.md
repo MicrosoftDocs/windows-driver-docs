@@ -1,6 +1,5 @@
 ---
 title: Encoder Installation and Registration
-author: windows-driver-content
 description: Encoder Installation and Registration
 ms.assetid: 6ce0c504-977a-4db5-b5ee-128b69ce8eba
 keywords:

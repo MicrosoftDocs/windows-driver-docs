@@ -1,6 +1,5 @@
 ---
 title: Streaming Minidrivers
-author: windows-driver-content
 description: Streaming Minidrivers
 ms.assetid: 9f669a1a-50fd-482f-a5af-28e5685dc68c
 keywords:

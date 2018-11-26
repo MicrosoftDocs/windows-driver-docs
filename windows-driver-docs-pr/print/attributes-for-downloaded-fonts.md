@@ -1,6 +1,5 @@
 ---
 title: Attributes for Downloaded Fonts
-author: windows-driver-content
 description: Attributes for Downloaded Fonts
 ms.assetid: 335413d0-cf0a-4dd9-b1a4-345945c63395
 keywords:

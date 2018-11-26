@@ -1,6 +1,5 @@
 ---
 title: Specifying the KMDF Co-installer in an INF File
-author: windows-driver-content
 description: If you include a co-installer in your driver package, read this topic for information about sections you must provide in your driver's INF file.
 ms.assetid: e4f476ad-1ab5-44e3-9368-7467479bda85
 keywords:

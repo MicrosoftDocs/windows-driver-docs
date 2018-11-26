@@ -1,6 +1,5 @@
 ---
 title: Driver Access to Hardware
-author: windows-driver-content
 description: Driver Access to Hardware
 ms.assetid: 66743284-6cdd-467e-b3b4-3d588cd296a5
 keywords:

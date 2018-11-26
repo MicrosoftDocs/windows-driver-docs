@@ -3,7 +3,6 @@ title: dbgerr003 Mismatched Symbols
 description: dbgerr003 Mismatched Symbols
 ms.assetid: 95251f5a-5479-4dc8-b3bb-4eb6096bdb6e
 keywords: ["dbgerr003", "Mismatched symbols (dbgerr003)"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---

@@ -1,6 +1,5 @@
 ---
 title: Connecting to a Parallel Device
-author: windows-driver-content
 description: Connecting to a Parallel Device
 ms.assetid: c05a1a1e-308a-4b9f-af43-761c4c14d6af
 keywords:

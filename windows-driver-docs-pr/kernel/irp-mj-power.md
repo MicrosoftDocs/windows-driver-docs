@@ -1,6 +1,5 @@
 ---
 title: IRP_MJ_POWER
-author: windows-driver-content
 description: All drivers must be prepared to service IRP_MJ_POWER requests in a DispatchPower routine.
 ms.date: 08/12/2017
 ms.assetid: ca53ceef-2755-49d3-aab9-0d12a0e51e75

@@ -1,6 +1,5 @@
 ---
 title: Storage Class Driver's Standard Driver Routines
-author: windows-driver-content
 description: Storage Class Driver's Standard Driver Routines
 ms.assetid: b149338b-6737-4493-b8e9-0597656ce0d7
 keywords:

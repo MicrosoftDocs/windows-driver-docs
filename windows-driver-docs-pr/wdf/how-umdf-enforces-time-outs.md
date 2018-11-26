@@ -1,6 +1,5 @@
 ---
 title: Host Process Timeouts in UMDF
-author: windows-driver-content
 description: Host Process Timeouts in UMDF
 ms.assetid: b8a0a4cc-9c6d-40e2-a3f1-9807dbcf15d9
 keywords:

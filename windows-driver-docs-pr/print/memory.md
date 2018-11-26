@@ -1,6 +1,5 @@
 ---
 title: Memory
-author: windows-driver-content
 description: Memory
 ms.assetid: 9e1ad59f-9a97-49d7-b749-14380067cf64
 ms.date: 11/28/2017

@@ -3,7 +3,6 @@ title: Enable close exception
 description: Enable close exception
 ms.assetid: 4089df14-3204-4a48-b67f-cf6bd53100a5
 keywords: ["Enable close exception (global flag)"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---

@@ -1,6 +1,5 @@
 ---
 title: Using Common-Buffer Bus-Master DMA
-author: windows-driver-content
 description: Using Common-Buffer Bus-Master DMA
 ms.assetid: 55b5d819-e257-4863-b02a-5eeb83f72c65
 keywords: ["continuous DMA WDK kernel", "common buffer DMA WDK kernel", "DMA transfers WDK kernel , common buffer", "bus-master DMA WDK kernel", "DMA transfers WDK kernel , bus-master DMA", "adapter objects WDK kernel , bus-master DMA"]

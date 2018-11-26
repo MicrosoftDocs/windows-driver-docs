@@ -3,7 +3,6 @@ title: WdbgExts Symbols
 description: WdbgExts Symbols
 ms.assetid: 7e1a1799-b87c-42cb-94ce-fbdc9a5ec973
 keywords: ["WdbgExts extensions, symbols"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---

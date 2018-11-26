@@ -1,6 +1,5 @@
 ---
 title: Determining the State of a UMDF Device
-author: windows-driver-content
 description: This topic describes how you can use debugger extensions in conjunction with a User-Mode Driver Framework (UMDF) version 1 or 2 driver to determine what state your UMDF device is in.
 ms.assetid: ed1a4429-4f36-44b9-9564-587aa381342f
 keywords:

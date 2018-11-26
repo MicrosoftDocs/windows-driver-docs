@@ -1,6 +1,5 @@
 ---
 title: Unidrv-based or PScript5-based XPSDrv Driver Changes
-author: windows-driver-content
 description: Unidrv-based or PScript5-based XPSDrv Driver Changes
 ms.assetid: 47398d3a-5e50-40ee-b3d7-7fc559368981
 keywords:

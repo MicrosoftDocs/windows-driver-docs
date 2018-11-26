@@ -1,7 +1,6 @@
 ---
 Description: Support for the Wireless Mobile Communication Device Class
 title: Support for the Wireless Mobile Communication Device Class
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

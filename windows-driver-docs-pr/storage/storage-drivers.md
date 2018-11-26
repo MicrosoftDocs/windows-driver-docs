@@ -1,6 +1,5 @@
 ---
 title: Storage Drivers
-author: windows-driver-content
 description: Storage Drivers
 ms.assetid: 5512a8f1-20ad-4b78-a60e-7418ac7f2117
 keywords:

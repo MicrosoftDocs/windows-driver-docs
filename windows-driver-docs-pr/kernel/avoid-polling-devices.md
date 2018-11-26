@@ -1,6 +1,5 @@
 ---
 title: Avoid Polling Devices
-author: windows-driver-content
 description: Avoid Polling Devices
 ms.assetid: c50c9c6f-c8eb-4e52-854a-3ebc4fdc874c
 keywords: ["I/O WDK kernel , device polling", "device polling WDK I/O", "polling devices WDK I/O", "loop counters WDK I/O", "counters WDK I/O"]

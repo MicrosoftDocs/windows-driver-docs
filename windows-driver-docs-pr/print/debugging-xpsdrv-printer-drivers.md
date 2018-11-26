@@ -1,6 +1,5 @@
 ---
 title: Debugging XPSDrv Printer Drivers
-author: windows-driver-content
 description: Debugging XPSDrv Printer Drivers
 ms.assetid: 7193f007-de25-4b77-9133-9937b3d37db0
 keywords:

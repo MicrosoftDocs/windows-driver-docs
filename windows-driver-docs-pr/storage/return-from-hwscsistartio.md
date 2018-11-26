@@ -1,6 +1,5 @@
 ---
 title: Return from HwScsiStartIo
-author: windows-driver-content
 description: Return from HwScsiStartIo
 ms.assetid: e3d5e21a-4dc2-41bf-97a2-9ac2aa5a1af2
 keywords:

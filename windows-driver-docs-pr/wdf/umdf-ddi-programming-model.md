@@ -1,6 +1,5 @@
 ---
 title: UMDF DDI Programming Model
-author: windows-driver-content
 description: UMDF DDI Programming Model
 ms.assetid: d4bf0791-d2c4-4504-84ad-020880124363
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Handling HID Reports
-author: windows-driver-content
 description: This section describes the mechanisms that user-mode applications and kernel-mode drivers use for handling HID reports.
 ms.assetid: 5bd43bd3-3c7a-40a3-97cd-2c43c168e721
 keywords:

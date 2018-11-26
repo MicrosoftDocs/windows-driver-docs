@@ -1,6 +1,5 @@
 ---
 title: Installing Customized Driver Components
-author: windows-driver-content
 description: Installing Customized Driver Components
 ms.assetid: 88f189bd-97f5-4bc6-ba3e-3d9da18e2102
 keywords:

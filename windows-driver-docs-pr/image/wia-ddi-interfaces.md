@@ -1,6 +1,5 @@
 ---
 title: WIA DDI Interfaces
-author: windows-driver-content
 description: WIA DDI Interfaces
 ms.assetid: 738a87e2-9c74-4215-85dc-ec793f10ce05
 ms.date: 04/20/2017

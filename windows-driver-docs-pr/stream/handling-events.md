@@ -1,6 +1,5 @@
 ---
 title: Handling Events
-author: windows-driver-content
 description: Handling Events
 ms.assetid: 2cd7ccf3-12f5-4ad0-a7c9-a0f437b72445
 keywords:

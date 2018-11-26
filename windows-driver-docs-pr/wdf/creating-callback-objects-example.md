@@ -1,6 +1,5 @@
 ---
 title: Creating Callback Objects Example
-author: windows-driver-content
 description: Creating Callback Objects Example
 ms.assetid: 4476c2f0-12ba-4678-b20e-bde7e81df01d
 keywords:

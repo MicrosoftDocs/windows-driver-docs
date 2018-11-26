@@ -1,6 +1,5 @@
 ---
 title: PCL Separator Page Escape Codes
-author: windows-driver-content
 description: PCL Separator Page Escape Codes
 ms.assetid: 8e571fcd-f6ee-4a56-8d8a-20bf3a5c333c
 keywords:

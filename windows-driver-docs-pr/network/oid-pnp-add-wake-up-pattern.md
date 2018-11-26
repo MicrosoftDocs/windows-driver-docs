@@ -1,6 +1,5 @@
 ---
 title: OID_PNP_ADD_WAKE_UP_PATTERN
-author: windows-driver-content
 description: OID_PNP_ADD_WAKE_UP_PATTERN
 ms.assetid: 96b95d1d-d557-4012-b95f-b1c43e2c590f
 ms.date: 08/08/2017

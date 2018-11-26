@@ -1,6 +1,5 @@
 ---
 title: Storing Device-Specific Information in the Changer's Device Extension
-author: windows-driver-content
 description: Storing Device-Specific Information in the Changer's Device Extension
 ms.assetid: 72048d84-1c2d-4f3c-b5e8-f55a812ad567
 keywords:

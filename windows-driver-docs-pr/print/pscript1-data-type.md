@@ -1,6 +1,5 @@
 ---
 title: PSCRIPT1 Data Type
-author: windows-driver-content
 description: PSCRIPT1 Data Type
 ms.assetid: 0f39419e-fbb5-423f-8bcb-79a5207a29fd
 keywords:

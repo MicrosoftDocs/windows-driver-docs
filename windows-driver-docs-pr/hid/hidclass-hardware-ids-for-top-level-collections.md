@@ -1,6 +1,5 @@
 ---
 title: HIDClass Hardware IDs for Top-Level Collections
-author: windows-driver-content
 description: This section specifies the hardware IDs that the HID class driver generates for top-level collections.
 ms.assetid: a90eea17-0a63-4786-a31f-740bcc670c2a
 keywords:

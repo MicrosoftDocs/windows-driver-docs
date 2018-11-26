@@ -1,6 +1,5 @@
 ---
 title: Using GetGlobalAttribute
-author: windows-driver-content
 description: Using GetGlobalAttribute
 ms.assetid: 0e23ecba-7d89-44f5-b6a7-7d6be9a56765
 keywords:

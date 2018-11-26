@@ -1,6 +1,5 @@
 ---
 title: TVOT\_SCROLLBAR
-author: windows-driver-content
 description: TVOT\_SCROLLBAR
 ms.assetid: 8d905933-9629-48eb-9130-afa3dfa15099
 keywords: ["TVOT_SCROLLBAR Print Devices"]

@@ -1,6 +1,5 @@
 ---
 title: File System Filter Driver Classes and Class GUIDs
-author: windows-driver-content
 description: File System Filter Driver Classes and Class GUIDs
 ms.assetid: dd247b06-4529-4818-9239-b89c25f5c1df
 keywords:

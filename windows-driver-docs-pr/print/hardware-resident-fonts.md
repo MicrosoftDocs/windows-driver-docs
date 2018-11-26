@@ -1,6 +1,5 @@
 ---
 title: Hardware-Resident Fonts
-author: windows-driver-content
 description: Hardware-Resident Fonts
 ms.assetid: 359735c2-bfa3-4c32-82a5-1d455c4eacb1
 keywords:

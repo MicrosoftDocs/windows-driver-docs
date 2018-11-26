@@ -1,6 +1,5 @@
 ---
 title: IPrintOemPS2 COM Interface
-author: windows-driver-content
 description: IPrintOemPS2 COM Interface
 ms.assetid: 6743d73e-243b-4a05-8e88-576c65b37a19
 keywords:

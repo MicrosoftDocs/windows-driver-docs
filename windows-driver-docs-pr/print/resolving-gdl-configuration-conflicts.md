@@ -1,6 +1,5 @@
 ---
 title: Resolving GDL Configuration Conflicts
-author: windows-driver-content
 description: Resolving GDL Configuration Conflicts
 ms.assetid: 02a2da63-0b7f-4aa9-b3c3-72784f409d94
 keywords:

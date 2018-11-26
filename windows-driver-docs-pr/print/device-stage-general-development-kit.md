@@ -1,6 +1,5 @@
 ---
 title: Device Stage General Development Kit
-author: windows-driver-content
 description: Device Stage General Development Kit
 ms.assetid: 259b3ac8-b9d3-4cbd-a003-e2d59e76bc1f
 ms.date: 04/20/2017

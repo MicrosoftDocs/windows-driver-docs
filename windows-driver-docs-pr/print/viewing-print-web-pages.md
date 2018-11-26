@@ -1,6 +1,5 @@
 ---
 title: Viewing Print Web Pages
-author: windows-driver-content
 description: Viewing Print Web Pages
 ms.assetid: c2cf782c-0f53-47e1-8c5e-1e2aa87613c4
 keywords:

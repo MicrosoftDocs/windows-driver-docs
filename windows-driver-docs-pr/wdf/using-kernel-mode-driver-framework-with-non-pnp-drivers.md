@@ -1,6 +1,5 @@
 ---
 title: Using Kernel-Mode Driver Framework with Non-PnP Drivers
-author: windows-driver-content
 description: Using Kernel-Mode Driver Framework with Non-PnP Drivers
 ms.assetid: b4b6add2-0e27-4af7-b6bf-5e47db7db560
 keywords:

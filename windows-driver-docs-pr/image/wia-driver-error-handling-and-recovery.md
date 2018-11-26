@@ -1,6 +1,5 @@
 ---
 title: WIA Driver Error Handling and Recovery
-author: windows-driver-content
 description: WIA Driver Error Handling and Recovery
 ms.assetid: 6b7772d9-cc54-492a-b849-27cfe8f043f5
 ms.date: 04/20/2017

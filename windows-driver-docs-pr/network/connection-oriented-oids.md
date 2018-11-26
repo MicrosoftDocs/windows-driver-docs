@@ -1,6 +1,5 @@
 ---
 title: Connection-oriented OIDs
-author: windows-driver-content
 description: This topic describes OIDs for connection-oriented objects.
 ms.assetid: 404383e0-0a89-4968-990e-d95e72e8ba00
 keywords:

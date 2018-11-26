@@ -1,6 +1,5 @@
 ---
 title: A Device Returns to Its Working State
-author: windows-driver-content
 description: A Device Returns to Its Working State
 ms.assetid: 2b192eea-f731-4d61-be19-95724bf7b04a
 keywords:

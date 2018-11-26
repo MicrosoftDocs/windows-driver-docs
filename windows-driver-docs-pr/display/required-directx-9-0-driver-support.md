@@ -41,9 +41,9 @@ A DirectX 9.0 version driver must support:
 
 
 
-~~~
+
 The driver must continue to report only DirectX 8.0 related capabilities in D3DCAPS8 when queried by the DirectX 8.0 runtime.
-~~~
+
 
 -   Setting the D3DFORMAT\_OP\_BUMPMAP flag in the **dwOperations** member of the [**DDPIXELFORMAT**](https://msdn.microsoft.com/library/windows/hardware/ff550274) structure for all surface formats that can support bump mapping in either fixed-function or programmable-pixel pipes.
 
@@ -51,9 +51,9 @@ The driver must continue to report only DirectX 8.0 related capabilities in D3DC
 
 
 
-~~~
+
 Querying asynchronously imposes two new requirements on the [**D3dDrawPrimitives2**](https://msdn.microsoft.com/library/windows/hardware/ff544704) DDI. For more information, see [Imposing Requirements on the D3dDrawPrimitives2 DDI](imposing-requirements-on-the-d3ddrawprimitives2-ddi.md).
-~~~
+
 
 -   Letting applications perform other [processing with busy present queues](processing-with-busy-present-queues.md).
 

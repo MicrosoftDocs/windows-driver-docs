@@ -1,6 +1,5 @@
 ---
 title: WDI Property OIDs
-author: windows-driver-content
 description: This section contains WDI property OIDs.
 ms.assetid: 1B1B54B8-6CE4-4C17-AAF8-7394210B09E8
 ms.date: 07/18/2017

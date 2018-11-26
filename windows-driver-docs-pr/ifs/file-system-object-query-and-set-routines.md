@@ -1,6 +1,5 @@
 ---
 title: File System Object Query and Set Routines
-author: windows-driver-content
 description: File System Object Query and Set Routines
 ms.assetid: 34b97a6e-a155-443c-94dd-4d8f1fc4b430
 keywords:

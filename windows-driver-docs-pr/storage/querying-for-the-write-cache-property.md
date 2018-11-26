@@ -1,6 +1,5 @@
 ---
 title: Querying for the Write Cache Property
-author: windows-driver-content
 description: Querying for the Write Cache Property
 ms.assetid: 80b7c366-3b54-4dae-8ac7-63caaa1767f9
 keywords:

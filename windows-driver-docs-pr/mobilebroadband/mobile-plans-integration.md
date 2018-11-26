@@ -4,7 +4,6 @@ description: This topic describes the integration step for the Mobile Plans prog
 ms.assetid: 6857A67A-D33E-479C-B61D-332FDFE8A776
 keywords:
 - Windows Mobile Plans integration, Mobile Plans integration mobile operators
-ms.author: windowsdriverdev
 ms.date: 09/17/2018
 ms.topic: article
 ms.prod: windows-hardware

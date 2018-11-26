@@ -1,6 +1,5 @@
 ---
 title: Minidriver-Supplied Halftone Patterns
-author: windows-driver-content
 description: Minidriver-Supplied Halftone Patterns
 ms.assetid: db2e1c5c-f337-4875-980d-a75a54a4cece
 keywords:

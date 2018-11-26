@@ -3,7 +3,6 @@ title: KD Connection Server Examples
 description: KD Connection Server Examples
 ms.assetid: 5e54dda7-4f79-40e3-bcc5-248a3a047e31
 keywords: ["KD connection server, examples"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---

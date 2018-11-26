@@ -1,6 +1,5 @@
 ---
 title: Driver Control and Device Control
-author: windows-driver-content
 description: Driver Control and Device Control
 ms.assetid: ff515e88-9a94-420f-a6c8-fba3483c00e5
 keywords:

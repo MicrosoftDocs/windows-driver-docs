@@ -1,6 +1,5 @@
 ---
 title: GDL Miscellaneous Macros
-author: windows-driver-content
 description: GDL Miscellaneous Macros
 ms.assetid: d3c66bc1-815d-484b-b69b-6616d2b43069
 keywords:

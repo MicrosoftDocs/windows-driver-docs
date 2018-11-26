@@ -1,6 +1,5 @@
 ---
 title: Required and Optional SCSI Miniport Driver Routines
-author: windows-driver-content
 description: Required and Optional SCSI Miniport Driver Routines
 ms.assetid: 6fd1f7af-e8ba-4679-bd8c-f757b57821b0
 keywords:

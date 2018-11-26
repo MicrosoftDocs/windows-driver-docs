@@ -4,7 +4,6 @@ description: This section describes how to get the WDK and samples and start bui
 services: wdk
 layout: LandingPage
 ms.assetid: 5502AAF9-2400-4338-A646-C746B29F9A44
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: landing-page
 ms.prod: windows-hardware

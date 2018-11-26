@@ -1,6 +1,5 @@
 ---
 title: XPSRas GPU Usage Decision Tree
-author: windows-driver-content
 description: The following diagram shows the decision tree that Windows uses to determine whether or not to engage GPU hardware acceleration.
 ms.assetid: 7FB296BF-0474-4026-89A9-FBB40C1E859B
 ms.date: 04/20/2017

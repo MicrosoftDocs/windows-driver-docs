@@ -1,6 +1,5 @@
 ---
 title: Sample Plotter Driver Files
-author: windows-driver-content
 description: Sample Plotter Driver Files
 ms.assetid: d72bcb9a-62d7-4deb-9d6c-7431e67be77c
 keywords:

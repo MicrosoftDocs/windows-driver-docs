@@ -1,6 +1,5 @@
 ---
 title: Using Framework Locks
-author: windows-driver-content
 description: Using Framework Locks
 ms.assetid: d036a2d5-a9e9-4375-84b0-fbd797ee6f13
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Enabling an Error Source
-author: windows-driver-content
 description: Enabling an Error Source
 ms.assetid: a65357fa-e600-47fe-8719-b67c36542711
 keywords:

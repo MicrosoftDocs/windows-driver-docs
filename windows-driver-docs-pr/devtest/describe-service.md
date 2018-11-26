@@ -25,12 +25,12 @@ You can provide descriptive information about your service in Windows, such as m
 
 
 
-~~~
+
 -   **Description 1**. This optional field isn't used in Windows 8.
 -   **Description 2**. This optional field isn't used in Windows 8.
 
 For detailed information about metadata properties, see [Service Metadata Package Schema Reference for Windows 8](http://go.microsoft.com/fwlink/p/?LinkId=226755).
-~~~
+
 
 
 

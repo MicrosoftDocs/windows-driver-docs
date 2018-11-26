@@ -1,6 +1,5 @@
 ---
 title: Autoconfiguration During Device Installation
-author: windows-driver-content
 description: Autoconfiguration During Device Installation
 ms.assetid: 04b53767-4b5e-450d-96ab-b029cdf62b36
 keywords:

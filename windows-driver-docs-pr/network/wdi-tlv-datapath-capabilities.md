@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_DATAPATH_CAPABILITIES
-author: windows-driver-content
 description: WDI_TLV_DATAPATH_CAPABILITIES is a TLV that contains datapath capabilities.
 ms.assetid: 7B545858-56A2-4655-91D5-37CA4EB61E1E
 ms.date: 07/18/2017

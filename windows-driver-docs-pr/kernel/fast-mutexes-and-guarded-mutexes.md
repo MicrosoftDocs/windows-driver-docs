@@ -1,6 +1,5 @@
 ---
 title: Fast Mutexes and Guarded Mutexes
-author: windows-driver-content
 description: Fast Mutexes and Guarded Mutexes
 ms.assetid: 8c8014bf-6b81-4039-ae93-d4cedd6d6fed
 keywords: ["synchronization WDK kernel , fast mutexes", "synchronization WDK kernel , guarded mutexes", "guarded mutexes WDK kernel", "fast mutexes WDK kernel", "mutexes WDK kernel"]

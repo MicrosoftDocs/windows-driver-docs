@@ -40,9 +40,9 @@ Icons must have a transparent backgrounds and smooth edges. They must also meet 
 
 
 
-~~~
+
 -   If you don't have an icon of your own, click **Next**. Windows assigns a generic icon based on the primary category that you specify in the **Categories** tab.
-~~~
+
 
 
 

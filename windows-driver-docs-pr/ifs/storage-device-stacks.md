@@ -1,6 +1,5 @@
 ---
 title: Storage Device Stacks
-author: windows-driver-content
 description: Storage Device Stacks
 ms.assetid: dc2c532d-4ec6-4c97-bb94-429dd06f7b7c
 keywords:

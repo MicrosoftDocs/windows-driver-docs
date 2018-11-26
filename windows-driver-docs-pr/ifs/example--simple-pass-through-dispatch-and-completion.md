@@ -1,6 +1,5 @@
 ---
 title: Example Simple Pass-Through Dispatch and Completion
-author: windows-driver-content
 description: Example Simple Pass-Through Dispatch and Completion
 ms.assetid: dae3a450-37b1-470b-a0f3-4108075e06ac
 keywords:

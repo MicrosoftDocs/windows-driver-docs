@@ -1,6 +1,5 @@
 ---
 title: Introduction to the Sensor and Location Platform in Windows
-author: windows-driver-content
 description: Introduction to the Sensor and Location Platform in Windows
 ms.assetid: 62e945e5-78a1-4eb6-ad59-b30cf5e3d5ad
 ms.date: 04/20/2017

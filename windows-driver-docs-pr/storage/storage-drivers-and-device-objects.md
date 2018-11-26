@@ -1,6 +1,5 @@
 ---
 title: Storage Drivers and Device Objects
-author: windows-driver-content
 description: Storage Drivers and Device Objects
 ms.assetid: dbadebe6-b2ae-4dc2-837b-5ca9634d45d0
 keywords:

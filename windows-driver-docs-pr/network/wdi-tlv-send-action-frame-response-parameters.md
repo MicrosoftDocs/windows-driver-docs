@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_SEND_ACTION_FRAME_RESPONSE_PARAMETERS
-author: windows-driver-content
 description: WDI_TLV_SEND_ACTION_FRAME_RESPONSE_PARAMETERS is a TLV that contains parameters for OID_WDI_TASK_SEND_RESPONSE_ACTION_FRAME.
 ms.assetid: F062F8A2-EEEF-4EFC-AEC8-F1D7AB13C899
 ms.date: 07/18/2017

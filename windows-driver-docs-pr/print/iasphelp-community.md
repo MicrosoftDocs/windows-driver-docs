@@ -1,6 +1,5 @@
 ---
 title: Iasphelp get\_Community method
-author: windows-driver-content
 description: The Community property enables an ASP Web page to obtain a print server's Simple Network Management Protocol (SNMP) community name.
 MS-HAID:
 - 'webfnc\_1d85e932-6de7-468a-b1dd-8a5678c65615.xml'

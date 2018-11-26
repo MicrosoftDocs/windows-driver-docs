@@ -1,6 +1,5 @@
 ---
 title: How Completion Processing Is Performed
-author: windows-driver-content
 description: How Completion Processing Is Performed
 ms.assetid: 5741c226-9781-4d9a-b6dd-d8ecc17c4c6f
 keywords:

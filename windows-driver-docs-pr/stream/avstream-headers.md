@@ -1,6 +1,5 @@
 ---
 title: AVStream Headers
-author: windows-driver-content
 description: AVStream Headers
 ms.assetid: 2afd5a1f-385a-4370-b751-e6f5d28d1d4e
 keywords:

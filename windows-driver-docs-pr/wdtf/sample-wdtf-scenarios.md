@@ -1,6 +1,5 @@
 ---
 title: Sample WDTF Scenarios
-author: windows-driver-content
 description: Sample WDTF Scenarios
 ms.assetid: 6b894dc8-417b-4d2f-ad3b-c75a844953b2
 keywords:

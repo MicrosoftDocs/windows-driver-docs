@@ -1,7 +1,6 @@
 ---
 title: Target a system using CHID targeting
 description: Target a system using CHID targeting
-author: windows-driver-content
 ms.date: 05/15/2018
 ms.localizationpriority: medium
 ---

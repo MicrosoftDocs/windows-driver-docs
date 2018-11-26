@@ -2,7 +2,6 @@
 title: Switching Modes
 description: Switching Modes
 ms.assetid: 167e5352-4ebc-423d-bf4f-ba1d459b394f
-ms.author: domars
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

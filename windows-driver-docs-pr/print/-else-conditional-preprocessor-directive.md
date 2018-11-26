@@ -1,6 +1,5 @@
 ---
 title: '#Else Conditional Preprocessor Directive'
-author: windows-driver-content
 description: '#Else Conditional Preprocessor Directive'
 ms.assetid: 3a8ddc60-1db9-4db0-9e55-405c88b84849
 keywords:

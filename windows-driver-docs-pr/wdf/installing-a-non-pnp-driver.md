@@ -1,6 +1,5 @@
 ---
 title: Installing a Non-PnP Driver
-author: windows-driver-content
 description: Installing a Non-PnP Driver
 ms.assetid: 99676d85-feb2-482c-a91b-cfc48be5904c
 keywords:

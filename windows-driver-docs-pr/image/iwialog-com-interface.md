@@ -1,6 +1,5 @@
 ---
 title: IWiaLog COM Interface
-author: windows-driver-content
 description: IWiaLog COM Interface
 ms.assetid: e5d42b5d-796f-42f3-9c01-4234b8765ca6
 ms.date: 04/20/2017

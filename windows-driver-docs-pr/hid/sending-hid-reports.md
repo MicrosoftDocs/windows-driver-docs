@@ -1,6 +1,5 @@
 ---
 title: Sending HID Reports
-author: windows-driver-content
 description: Sending HID Reports
 ms.assetid: a4571b79-847b-4db0-be02-ac2f922162bb
 keywords:

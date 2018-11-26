@@ -1,6 +1,5 @@
 ---
 title: '[Optional] Registering Callback Routines'
-author: windows-driver-content
 description: '[Optional] Registering Callback Routines'
 ms.assetid: 59d15b37-e31e-45fc-bdb0-fed6f791839c
 keywords:

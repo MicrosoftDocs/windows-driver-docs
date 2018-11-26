@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_VIRTUALIZATION_ATTRIBUTES
-author: windows-driver-content
 description: WDI_TLV_VIRTUALIZATION_ATTRIBUTES is a TLV that contains virtualization attributes.
 ms.assetid: BFB21903-2532-46FB-97E3-6AF254B6BB1E
 ms.date: 07/18/2017

@@ -1,6 +1,5 @@
 ---
 title: ACPI notifications
-author: windows-driver-content
 description: Each ACPI notification that the PEP's AcceptAcpiNotification callback routine receives is accompanied by a Notification parameter that indicates the type of notification, and a Data parameter.
 ms.assetid: E4DD4386-8008-463B-B048-DE8E559A7456
 keywords: [AcceptAcpiNotification]

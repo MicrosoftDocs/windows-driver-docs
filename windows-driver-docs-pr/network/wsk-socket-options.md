@@ -1,6 +1,5 @@
 ---
 title: WSK Socket Options
-author: windows-driver-content
 description: WSK Socket Options
 ms.assetid: 640681a3-ea68-44c5-be2b-a3bc21bfdb7c
 ms.date: 07/18/2017

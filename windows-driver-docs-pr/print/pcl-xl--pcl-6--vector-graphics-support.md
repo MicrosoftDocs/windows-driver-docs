@@ -1,6 +1,5 @@
 ---
 title: PCL XL (PCL-6) Vector Graphics Support
-author: windows-driver-content
 description: PCL XL (PCL-6) Vector Graphics Support
 ms.assetid: c8a96506-ed95-44f2-863e-24cbfc919d65
 keywords:

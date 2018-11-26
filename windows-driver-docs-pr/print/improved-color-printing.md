@@ -1,6 +1,5 @@
 ---
 title: Improved Color Printing
-author: windows-driver-content
 description: Improved Color Printing
 ms.assetid: b0487ee0-9b4a-4083-9416-ad22b97ed94b
 keywords:

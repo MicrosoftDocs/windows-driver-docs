@@ -1,6 +1,5 @@
 ---
 title: Introduction to GPD Files
-author: windows-driver-content
 description: Introduction to GPD Files
 ms.assetid: f29415cf-d8ca-42a2-bbae-2be53e3621a6
 keywords:

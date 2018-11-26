@@ -1,6 +1,5 @@
 ---
 title: XPSDrv Driver Requirements
-author: windows-driver-content
 description: XPSDrv Driver Requirements
 ms.assetid: 382b53eb-a69a-452a-8403-876640a9129e
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: DirectInput
-author: windows-driver-content
 description: DirectInput
 ms.assetid: 4a69905b-017b-46d7-8b15-c9089a77e795
 keywords:

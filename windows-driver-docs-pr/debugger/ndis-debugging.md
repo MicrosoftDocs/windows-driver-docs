@@ -3,7 +3,6 @@ title: NDIS Debugging
 description: NDIS Debugging
 ms.assetid: 80c72934-bb0d-4299-8ed1-5eeeea668bd4
 keywords: ["NDIS debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---

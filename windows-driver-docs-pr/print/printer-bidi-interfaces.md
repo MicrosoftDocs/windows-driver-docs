@@ -1,6 +1,5 @@
 ---
 title: Printer Bidi Interfaces
-author: windows-driver-content
 description: Describes printer bidirectional (Bidi) communication interfaces for the V4 print driver.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

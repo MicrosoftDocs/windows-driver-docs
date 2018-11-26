@@ -1,6 +1,5 @@
 ---
 title: Print Schema
-author: windows-driver-content
 description: Print Schema
 ms.assetid: 6e2d69b7-1c06-4f26-8a4b-944b452d8017
 keywords:

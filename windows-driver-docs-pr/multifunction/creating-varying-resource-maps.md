@@ -1,6 +1,5 @@
 ---
 title: Creating Varying Resource Maps
-author: windows-driver-content
 description: Creating Varying Resource Maps
 ms.assetid: bfe3a760-d8fe-4213-9bbe-2bad6927d8e2
 keywords:

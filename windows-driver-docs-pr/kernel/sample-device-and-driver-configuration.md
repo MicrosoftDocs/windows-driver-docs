@@ -1,6 +1,5 @@
 ---
 title: Sample Device and Driver Configuration
-author: windows-driver-content
 description: Sample Device and Driver Configuration
 ms.assetid: 803262b2-0882-46d0-9c4f-63e59eb4beaa
 keywords: ["WDM drivers WDK kernel , configurations", "WDM drivers WDK kernel , layered drivers", "layered drivers WDK kernel", "driver layers WDK WDM", "keyboards WDK kernel", "mouse WDK kernel", "hardware configurations WDK kernel", "intermediate drivers WDK kernel"]

@@ -1,6 +1,5 @@
 ---
 title: Storing and Transferring Audio Data
-author: windows-driver-content
 description: Storing and Transferring Audio Data
 ms.assetid: c8d0af2f-1c3d-49d5-96ca-de1703f85448
 ms.date: 04/20/2017

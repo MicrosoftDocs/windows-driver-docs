@@ -1,6 +1,5 @@
 ---
 title: Porting PnP and Power Management
-author: windows-driver-content
 description: Porting PnP and Power Management
 ms.assetid: 29ADD3CF-7CDE-4D97-8082-76B4F94DB6A2
 ms.date: 04/20/2017

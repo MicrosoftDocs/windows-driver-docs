@@ -1,6 +1,5 @@
 ---
 title: Registry Settings
-author: windows-driver-content
 description: Registry Settings
 ms.assetid: a2536911-0467-4bd0-a63b-55341f0d7567
 keywords:

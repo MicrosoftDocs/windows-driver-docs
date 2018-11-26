@@ -1,6 +1,5 @@
 ---
 title: GDL Schema Attribute Element
-author: windows-driver-content
 description: GDL Schema Attribute Element
 ms.assetid: b46c0c6c-28af-4121-9182-65dc23b0ce7d
 keywords:

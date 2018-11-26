@@ -1,6 +1,5 @@
 ---
 title: AVStream Minidrivers Design Guide
-author: windows-driver-content
 description: AVStream Minidrivers Design Guide
 ms.assetid: ad717dca-55fe-428a-8d5c-239324251eda
 keywords:

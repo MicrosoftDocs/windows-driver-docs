@@ -3,7 +3,6 @@ title: Finding the Process ID
 description: Finding the Process ID
 ms.assetid: 963e9b5b-2b88-41b5-a103-dc4611ff41ea
 keywords: ["process, process ID (PID)", "PID (process ID)", "TList, related techniques", "Task Manager"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---

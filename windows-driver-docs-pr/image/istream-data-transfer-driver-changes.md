@@ -1,6 +1,5 @@
 ---
 title: IStream Data Transfer Driver Changes
-author: windows-driver-content
 description: IStream Data Transfer Driver Changes
 ms.assetid: 1c837e4f-8d53-40ed-8f5b-0d525c7dd758
 ms.date: 04/20/2017

@@ -1,6 +1,5 @@
 ---
 title: WDF General Object Macros
-author: windows-driver-content
 description: This section documents macros that support WDF general objects.
 ms.assetid: 76639254-8912-40DA-9141-304EAA196CA5
 ms.date: 08/23/2017

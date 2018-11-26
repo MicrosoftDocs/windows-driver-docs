@@ -1,6 +1,5 @@
 ---
 title: Iasphelp Open method
-author: windows-driver-content
 description: The Open method enables an ASP Web page to open access to a printer.
 MS-HAID:
 - 'webfnc\_7fa3a36d-4bf6-46d2-9336-e024d3aa1eec.xml'

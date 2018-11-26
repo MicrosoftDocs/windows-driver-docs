@@ -1,6 +1,5 @@
 ---
 title: Spoofing Identity
-author: windows-driver-content
 description: Spoofing Identity
 ms.assetid: adc0b986-a8c2-45ce-a4d5-9d4d867603b5
 keywords:

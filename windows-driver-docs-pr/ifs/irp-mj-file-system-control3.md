@@ -1,6 +1,5 @@
 ---
 title: IRP_MJ_FILE_SYSTEM_CONTROL
-author: windows-driver-content
 description: IRP_MJ_FILE_SYSTEM_CONTROL
 ms.assetid: 38b88379-c007-4e88-a6d9-5aacd6bdefd3
 keywords:

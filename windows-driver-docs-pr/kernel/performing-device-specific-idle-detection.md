@@ -1,6 +1,5 @@
 ---
 title: Performing Device-Specific Idle Detection
-author: windows-driver-content
 description: Performing Device-Specific Idle Detection
 ms.assetid: 1a4e3b66-f1dc-4dc8-af8b-ed8138270c3c
 keywords: ["idle detection WDK power management", "device-specific idle detection WDK power management"]

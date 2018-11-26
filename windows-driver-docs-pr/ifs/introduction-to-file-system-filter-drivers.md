@@ -1,6 +1,5 @@
 ---
 title: Introduction to File System Filter Drivers
-author: windows-driver-content
 description: Introduction to File System Filter Drivers
 ms.assetid: 7947aaa9-57d4-4adf-8214-151a4755939b
 ms.date: 04/20/2017

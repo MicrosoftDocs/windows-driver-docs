@@ -286,7 +286,7 @@ This will not work on a Windows RT device. Use the steps in the procedure named 
 
 
 
-~~~
+
 ```PowerShell
 # DEVICE SHOULD BE CONNECTED TO MACHINE
 
@@ -460,7 +460,7 @@ if(Test-Path $MBAERegKeyPath)
 
 Write-Host "END"
 ```
-~~~
+
 
 After the environment is set up, run the following steps each time that you want to clear any existing service metadata:
 

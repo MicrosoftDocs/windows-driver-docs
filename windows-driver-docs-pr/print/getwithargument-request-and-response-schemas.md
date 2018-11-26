@@ -1,6 +1,5 @@
 ---
 title: GetWithArgument Request and Response Schemas
-author: windows-driver-content
 description: The GetWithArgument request schema and corresponding response schema definition, and an example of each, are below.
 ms.assetid: F68731BC-2907-4FA2-B5A4-0FAC0A9F663A
 ms.date: 04/20/2017

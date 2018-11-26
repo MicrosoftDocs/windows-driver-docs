@@ -1,6 +1,5 @@
 ---
 title: GUID_NDIS_ENUMERATE_ADAPTERS_EX
-author: windows-driver-content
 description: This topic describes the GUID_NDIS_ENUMERATE_ADAPTERS_EX GUID for the NDIS WMI interface.
 ms.assetid: 46c4c127-a9f6-4555-82d1-3c537fbb7914
 keywords:

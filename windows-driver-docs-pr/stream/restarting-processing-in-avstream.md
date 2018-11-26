@@ -1,6 +1,5 @@
 ---
 title: Restarting Processing in AVStream
-author: windows-driver-content
 description: Restarting Processing in AVStream
 ms.assetid: f60d4dbd-61e6-4ae2-aa43-9edc8f36c3ff
 keywords:

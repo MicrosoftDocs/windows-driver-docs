@@ -1,6 +1,5 @@
 ---
 title: Storage Volumes
-author: windows-driver-content
 description: Storage Volumes
 ms.assetid: 37b65bb6-7c62-47be-a16d-3813dc4c1259
 keywords:

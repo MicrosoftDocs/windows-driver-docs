@@ -1,6 +1,5 @@
 ---
 title: Management filtering layer identifiers
-author: windows-driver-content
 description: This section describes management filtering layer identifiers.
 ms.assetid: 3287d763-9d73-4bf3-8a32-81acb27f0d36
 keywords:

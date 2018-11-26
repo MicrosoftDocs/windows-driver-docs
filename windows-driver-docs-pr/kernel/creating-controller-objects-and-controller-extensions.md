@@ -1,6 +1,5 @@
 ---
 title: Creating Controller Objects and Controller Extensions
-author: windows-driver-content
 description: Creating Controller Objects and Controller Extensions
 ms.assetid: 1f5bfcbc-1d8e-4ace-9539-a25e226444a6
 keywords: ["controller objects WDK kernel , creating", "IoCreateController", "controller extensions WDK I/O", "extensions WDK controller objects", "controller objects WDK kernel , extensions"]

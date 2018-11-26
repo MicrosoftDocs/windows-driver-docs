@@ -1,7 +1,6 @@
 ---
 title: time travel navigation commands
 description: This section describes the time travel navigation commands.
-ms.author: domars
 ms.date: 09/23/2017
 ms.localizationpriority: medium
 ---

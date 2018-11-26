@@ -1,6 +1,5 @@
 ---
 title: WdfObjectAddCustomTypeWithData macro
-author: windows-driver-content
 description: The WdfObjectAddCustomTypeWithData macro associates a framework object with a custom type, and optionally associates this pair with a data buffer and event callback functions.
 ms.assetid: 237F9BAA-A2E2-4F20-B52E-8F093B326E45
 keywords:

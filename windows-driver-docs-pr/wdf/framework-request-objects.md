@@ -1,6 +1,5 @@
 ---
 title: Framework Request Objects
-author: windows-driver-content
 description: Framework Request Objects
 ms.assetid: 564f3600-4784-4a37-ac13-38338c38a9d2
 keywords:

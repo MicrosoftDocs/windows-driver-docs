@@ -1,6 +1,5 @@
 ---
 title: Defining custom values for sensor universal driver constants
-author: windows-driver-content
 description: Defining custom values for sensor universal driver constants
 ms.assetid: 53534391-4251-4AB6-9D3C-AE0BC624465A
 ms.date: 07/20/2018

@@ -1,6 +1,5 @@
 ---
 title: GDL Value Macros
-author: windows-driver-content
 description: GDL Value Macros
 ms.assetid: 171245ef-d9ab-4c1d-86b9-f53ae10033b3
 keywords:

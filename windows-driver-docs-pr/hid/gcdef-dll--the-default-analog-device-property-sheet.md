@@ -1,6 +1,5 @@
 ---
 title: Gcdef.dll, the Default Analog Device Property Sheet
-author: windows-driver-content
 description: Gcdef.dll, the Default Analog Device Property Sheet
 ms.assetid: a8226abb-11c1-4425-93d8-b74e1960ba10
 keywords: ["Gcdef.dll", "default analog device property sheet", "property sheets WDK DirectInput , Gcdef.dll", "game controllers WDK DirectInput , Gcdef.dll", "control panels WDK DirectInput , Gcdef.dll"]

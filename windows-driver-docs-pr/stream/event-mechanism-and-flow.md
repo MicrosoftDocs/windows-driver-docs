@@ -1,6 +1,5 @@
 ---
 title: Event Mechanism and Flow
-author: windows-driver-content
 description: Event Mechanism and Flow
 ms.assetid: 13a6c6fb-3615-44ef-bf01-5003520b3e26
 keywords:

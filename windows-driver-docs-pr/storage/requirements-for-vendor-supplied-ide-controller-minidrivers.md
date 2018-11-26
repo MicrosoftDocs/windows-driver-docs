@@ -1,6 +1,5 @@
 ---
 title: Requirements for Vendor-Supplied IDE Controller Minidrivers
-author: windows-driver-content
 description: Requirements for Vendor-Supplied IDE Controller Minidrivers
 ms.assetid: a1584665-8788-49a4-b86f-50c265e7ce7a
 keywords:

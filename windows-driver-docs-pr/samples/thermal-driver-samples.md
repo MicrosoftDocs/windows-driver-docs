@@ -1,6 +1,5 @@
 ---
 title: Thermal driver samples
-author: windows-driver-content
 description: The thermal driver samples in this directory provide a starting point for writing a custom driver for your device.
 ms.assetid: FACF0FB6-8D43-4CFA-A255-EA302957A329
 ms.date: 04/20/2017

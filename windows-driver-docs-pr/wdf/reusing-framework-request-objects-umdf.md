@@ -1,6 +1,5 @@
 ---
 title: Reusing Framework Request Objects in UMDF
-author: windows-driver-content
 description: Reusing Framework Request Objects in UMDF
 ms.assetid: 804efc94-a7df-4ebd-a42e-82d1c5376e19
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: PnP and Power Management in UMDF Drivers
-author: windows-driver-content
 description: PnP and Power Management in UMDF Drivers
 ms.assetid: 1860ee80-0ad8-4f65-80b0-fb628a84a852
 keywords:

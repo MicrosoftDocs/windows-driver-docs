@@ -1,6 +1,5 @@
 ---
 title: GDL Source Files
-author: windows-driver-content
 description: GDL Source Files
 ms.assetid: 42ba6286-96e2-4ef3-8e24-2053368a1930
 keywords:

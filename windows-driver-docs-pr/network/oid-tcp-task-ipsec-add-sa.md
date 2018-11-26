@@ -1,6 +1,5 @@
 ---
 title: OID_TCP_TASK_IPSEC_ADD_SA
-author: windows-driver-content
 description: This topic describes the OID_TCP_TASK_IPSEC_ADD_SA object identifier (OID).
 ms.assetid: 7062c0df-627c-4110-a69f-ebad60f4e3b8
 keywords:

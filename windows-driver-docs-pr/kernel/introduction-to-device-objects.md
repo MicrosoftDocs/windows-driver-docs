@@ -1,6 +1,5 @@
 ---
 title: Introduction to Device Objects
-author: windows-driver-content
 description: Introduction to Device Objects
 ms.assetid: 310a2344-f3bc-4a7a-8e1e-63232ecd4cbe
 keywords: ["device objects WDK kernel , about device objects", "multiple device objects WDK kernel", "device stacks WDK kernel , about device stacks", "device extensions WDK kernel"]

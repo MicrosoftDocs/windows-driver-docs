@@ -1,6 +1,5 @@
 ---
 title: Joystick Driver Model
-author: windows-driver-content
 description: Joystick Driver Model
 ms.assetid: 5bd41377-37ae-4ca7-8a6d-93311511ef4e
 keywords:

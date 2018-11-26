@@ -1,6 +1,5 @@
 ---
 title: WDM Concepts for WDF Drivers
-author: windows-driver-content
 description: WDM Concepts for WDF Drivers
 ms.assetid: 164b4882-a5a3-45d3-a2f5-53367b396439
 keywords:

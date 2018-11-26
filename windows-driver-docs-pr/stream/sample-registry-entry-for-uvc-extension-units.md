@@ -1,6 +1,5 @@
 ---
 title: Sample Registry Entry for UVC Extension Units
-author: windows-driver-content
 description: Sample Registry Entry for UVC Extension Units
 ms.assetid: a34e00e2-90f0-4073-8740-7f3e04d68639
 keywords:

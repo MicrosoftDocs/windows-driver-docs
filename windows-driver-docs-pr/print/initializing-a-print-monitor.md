@@ -1,6 +1,5 @@
 ---
 title: Initializing a Print Monitor
-author: windows-driver-content
 description: Initializing a Print Monitor
 ms.assetid: 006727dd-aa0f-451c-b1c9-983d0c6401df
 keywords:

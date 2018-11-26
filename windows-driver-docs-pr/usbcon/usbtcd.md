@@ -1,7 +1,6 @@
 ---
 Description: USBTCD is the combination of a user-mode application and kernel-mode driver.
 title: USBTCD
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
