@@ -37,11 +37,12 @@ A value of 2 for **SensorCameraMode**, will register the device under KSCATEGORY
 
 We recommend you specify the above-mentioned registry value using the BOS descriptor. Refer to the [Example composite device](#example-composite-device) section below for a sample BOS descriptor with a platform specific MS OS 2.0 descriptor.
 
-If you cannot update the device firmware as mentioned above, you could use a custom INF and specify that your camera need to be registered as a sensor camera by specifying a value for **SensorCameraMode** and **SkipCameraEnumeration** as follows:
+If you cannot update the device firmware as described above, you can use a custom INF and specify that your camera need to be registered as a sensor camera by specifying a value for **SensorCameraMode** and **SkipCameraEnumeration** as follows:
 
-A custom INF file (based on the inbox UVC driver)  must include the following AddReg entry:
+A custom INF file (based on the inbox UVC driver)  must include the following AddReg entries:
 
 **SensorCameraMode**: REG\_DWORD: 1    (to register as a sensor camera)
+
 **SkipCameraEnumeration**: REG\_DWORD: 1   (make it available only for IR applications)
 
 An example of the custom INF section is as follows:
@@ -75,8 +76,7 @@ The following format type GUIDs should be specified in the stream video format d
 
 When these format type GUIDs are specified in the guidFormat field of the frame descriptor, the Media Foundation capture pipeline marks the stream as IR stream. Applications written with Media Foundation FrameReader API will be able to consume the IR stream. No scaling or conversions of the IR frames are supported by the pipeline for IR streams.
 
-> [!NOTE]
-> A stream exposing IR format types shall not expose RGB or Depth format types.
+A stream exposing IR format types must not expose RGB or Depth format types.
 
 ```cpp
 // Example Format Descriptor for UVC 1.1 frame based format
@@ -112,8 +112,7 @@ Windows inbox USB Video Class driver supports cameras that produce Depth streams
 
 When the format type GUID is specified in the guidFormat member of the frame descriptor, the Media Foundation capture pipeline marks the stream as depth stream. Applications written with FrameReader API will be able to consume the depth stream. No scaling or conversions of the depth frames are supported by the pipeline for depth streams.
 
-> [!NOTE]
-> A stream exposing Depth format types shall not expose RGB or IR format types.
+A stream exposing Depth format types must not expose RGB or IR format types.
 
 ```cpp
 // Example Format Descriptor for UVC 1.1 frame based format
@@ -144,15 +143,16 @@ Windows supports grouping of cameras based on their container ID to aid applicat
 
 The relation between the camera functions could be specified in the camera's BOS descriptor in firmware. The UVC driver will make use of this information and expose these camera functions as related. This will make the OS camera stack expose them as a related group of cameras to the applications.
 
-The camera firmware shall specify a *UVC-FSSensorGroupID*, which is a GUID in string form with the curly parenthesis. The cameras that have the same *UVC-FSSensorGroupID* will be grouped together.
+The camera firmware must specify a *UVC-FSSensorGroupID*, which is a GUID in string form with the curly parenthesis. The cameras that have the same *UVC-FSSensorGroupID* will be grouped together.
 
 The sensor group can be given a name by specifying *UVC-FSSensorGroupName*, a Unicode string, in the firmware.
 
 Refer to the Example composite device section below for an illustrative example BOS that specifies *UVC-FSSensorGroupID* and *UVC-FSSensorGroupName*.
 
-If you cannot update the device firmware like mentioned above, you could use a custom INF and specify that your camera is part of a sensor group by specifying a sensor group ID and name as follows. The custom INF file (based on the inbox UVC driver) shall include the following AddReg entry:
+If you cannot update the device firmware as described above, you can use a custom INF and specify that your camera is part of a sensor group by specifying a sensor group ID and name as follows. The custom INF file (based on the inbox UVC driver) must include the following AddReg entries:
 
 **FSSensorGroupID**: REG_SZ: "{your sensor group ID GUID}"
+
 **FSSensorGroupName**: REG_SZ: "your sensor group friendly name"
 
 An example for the custom INF section would be as follows:
@@ -185,8 +185,7 @@ UVC specification does provide a mechanism to specify if the video streaming int
 
 The value to specify to enable Method 2/3 still image capture is a DWORD named *UVC-EnableDependentStillImageCapture*. Specify its value using the BOS descriptor. The [Example composite device](#example-composite-device) below illustrates enabling still image capture with an example BOS descriptor.
 
-> [!NOTE]
-> If you cannot update the device firmware like mentioned above, you could use a custom INF to specify that your camera supports Method 2 or Method 3 still capture method.
+If you cannot update the device firmware as described above, you can use a custom INF to specify that your camera supports Method 2 or Method 3 still capture method.
 
 The custom INF file (based on either custom UVC driver or inbox UVC driver) must include the following AddReg entry:
 
@@ -232,7 +231,7 @@ Requirements on DMFTs:
 
 - DMFT needs to support interfaces - IMFDeviceTransform, IMFShutdown, IMFRealTimeClientEx, IKsControl and IMFMediaEventGenerator; IMFTransform may need to be supported if there is MFT0 configured or the next DMFT in the chain requires IMFTransform support.
 
-- On 64-bit systems that do not make use of Frame Server, both 32-bit and 64-bit DMFTs shall be registered. Given that a USB camera might get plugged into an arbitrary system, for "external" (or non-inbox) USB cameras, the USB camera vendor should supply both 32-bit and 64-bit DMFTs.
+- On 64-bit systems that do not make use of Frame Server, both 32-bit and 64-bit DMFTs must be registered. Given that a USB camera might get plugged into an arbitrary system, for "external" (or non-inbox) USB cameras, the USB camera vendor should supply both 32-bit and 64-bit DMFTs.
 
 ## Configuring the DMFT chain
 
@@ -296,14 +295,13 @@ Starting in Windows 10, version 1703, Windows provides an inbox Device MFT for U
 | Enables face-based Region of Interest (ROI) for 3A adjustments in ROI-capable USB cameras. | Windows 10, version 1703 |
 
 > [!NOTE]
-> If the camera does not support UVC 1.5 based ROI, then the PDMFT would not load even if the device opted in to use PDMFT.
+> If the camera does not support UVC 1.5 based ROI, then the PDMFT will not load even if the device opted in to use PDMFT.
 
 A UVC camera could opt-in to use platform DMFT by specifying the EnablePlatformDmft through BOS descriptor.
 
 The value to specify to enable Platform DMFT is a DWORD by name *UVC-EnablePlatformDmft* and specify its value using the BOS descriptor. The [Example composite device](#example-composite-device) section below illustrates enabling Platform DMFT with an example BOS descriptor.
 
-> [!NOTE]
-> If you cannot update the device firmware like mentioned above, you could use a custom INF file to enable Platform DMFT for the device.
+If you cannot update the device firmware as described above, you can use a custom INF file to enable Platform DMFT for the device.
 
 The custom INF file (based on either custom UVC driver or inbox UVC driver) must include the following AddReg entry:
 
@@ -354,16 +352,13 @@ Configuring UVC devices through custom INF is still supported and that takes pre
 | UVC-EnableDependentStillImageCapture          | REG\_DWORD | To enable still capture Method 2/3              |
 | UVC-EnablePlatformDmft                        | REG\_DWORD | To enable Platform DMFT                         |
 
-Detailed explanation about the supported configuration values are given in the following sections.
-
-> [!NOTE]
-> When UVC driver sees the registry values with prefix "UVC-", it populates the device's category interface instance registry key, with the same values without the prefix. The driver will do this for any variable specified by the firmware, not just the ones listed above.
+When UVC driver sees the registry values with prefix "UVC-", it populates the device's category interface instance registry key, with the same values without the prefix. The driver will do this for any variable specified by the firmware, not just the ones listed above.
 
 ```Registry
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceClasses\{e5323777-f976-4f5b-9b55-b94699c46e44}\<Device Symbolic Link>\Device Parameters
 ```
 
-For the OS to make use of the BOS Platform Device Capability and MS OS 2.0 descriptors, the device descriptor shall specify the bcdUSB version to be 0x0210 or greater.
+For the OS to make use of the BOS Platform Device Capability and MS OS 2.0 descriptors, the device descriptor must specify the bcdUSB version to be 0x0210 or greater.
 
 ## Example composite device
 
@@ -475,8 +470,7 @@ The USBVideoMSOS20DescriptorSet describes the color and IR functions. It specifi
 
 1. Registry Value Feature Descriptor for registering the camera as a sensor camera
 
-> [!NOTE]
-> The firmware will have a handler for the vendor request that will return the following MS OS 2.0 descriptor for the imaginary device described at the beginning of this section.
+The firmware will have a handler for the vendor request that will return the following MS OS 2.0 descriptor for the imaginary device described at the beginning of this section.
 
 ```cpp
 UCHAR USBVideoMSOS20DescriptorSet[0x2C8] =
