@@ -1,7 +1,6 @@
 ---
 Description: Describes the USB connector manager (UCM) that manages a USB Type-C connector and the expected behavior of a connector driver.
 title: Write a USB Type-C connector driver
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -329,12 +328,12 @@ The client driver performs role swap operations by using hardware interfaces.
         connCtx = GetConnectorContext(Connector);
 
 
-~~~
+
     TRACE_FUNC_EXIT();  
     return STATUS_SUCCESS;  
 }  
 ```
-~~~
+
 
 -   [*EVT\_UCM\_CONNECTOR\_SET\_POWER\_ROLE*](https://msdn.microsoft.com/library/windows/hardware/mt187819)
 
@@ -361,12 +360,12 @@ The client driver performs role swap operations by using hardware interfaces.
         //PR_Swap operation.  
 
 
-~~~
+
     TRACE_FUNC_EXIT();  
     return STATUS_SUCCESS;  
 }  
 ```
-~~~
+
 
 **Note**  
 The client driver can call [**UcmConnectorDataDirectionChanged**](https://msdn.microsoft.com/library/windows/hardware/mt187910) and [**UcmConnectorPowerDirectionChanged**](https://msdn.microsoft.com/library/windows/hardware/mt187914) asynchronously, that is not from the callback thread. In a typical implementation, the class extension invokes the callback functions causing the client driver to initiate a hardware transaction to send the message. When the transaction completes, the hardware notifies the driver. The driver calls those methods to notify the class extension.

@@ -1,6 +1,5 @@
 ---
 title: Defining the Configuration-Dependent Data Parameters
-author: windows-driver-content
 description: Defining the Configuration-Dependent Data Parameters
 ms.assetid: a5bb2e3a-22e0-41d7-8035-5437ac473b21
 keywords:

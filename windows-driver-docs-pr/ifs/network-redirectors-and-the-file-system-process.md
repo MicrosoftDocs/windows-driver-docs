@@ -1,6 +1,5 @@
 ---
 title: Network Redirectors and the File System Process
-author: windows-driver-content
 description: Network Redirectors and the File System Process
 ms.assetid: 01bdd0d4-d03e-4b3c-ab34-1d5909cde284
 keywords:

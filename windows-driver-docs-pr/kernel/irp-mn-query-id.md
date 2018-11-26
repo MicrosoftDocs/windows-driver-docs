@@ -1,6 +1,5 @@
 ---
 title: IRP_MN_QUERY_ID
-author: windows-driver-content
 description: Bus drivers must handle requests for BusQueryDeviceID for their child devices (child PDOs). Bus drivers can handle requests for BusQueryHardwareIDs, BusQueryCompatibleIDs, and BusQueryInstanceID for their child devices.
 ms.date: 08/12/2017
 ms.assetid: 3135cb30-a696-4201-8dfc-cdc1a29fe52b

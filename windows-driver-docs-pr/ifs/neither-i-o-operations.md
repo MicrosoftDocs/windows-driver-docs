@@ -1,6 +1,5 @@
 ---
 title: Neither I/O Operations
-author: windows-driver-content
 description: Neither I/O Operations
 ms.assetid: c8fc4742-e220-45c4-9113-ec5658bc09cc
 keywords:

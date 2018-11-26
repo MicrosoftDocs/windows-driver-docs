@@ -1,6 +1,5 @@
 ---
 title: Multipage Scanning and TWAIN
-author: windows-driver-content
 description: Multipage Scanning and TWAIN
 ms.assetid: 02b5ef48-413d-403b-8c42-caecd9521067
 ms.date: 04/20/2017

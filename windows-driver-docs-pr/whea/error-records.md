@@ -1,6 +1,5 @@
 ---
 title: Error Records
-author: windows-driver-content
 description: Error Records
 ms.assetid: 080da29a-b5cb-45a5-848d-048d9612ee2a
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Using a Driver-Defined Callback Object
-author: windows-driver-content
 description: Using a Driver-Defined Callback Object
 ms.assetid: b3b32534-0641-4818-9384-65fd45f689e8
 keywords: ["callback objects WDK kernel", "driver-defined callback objects WDK kernel"]

@@ -1,6 +1,5 @@
 ---
 title: Routines Implemented by the Kernel Network Mini-Redirector
-author: windows-driver-content
 description: Routines Implemented by the Kernel Network Mini-Redirector
 ms.assetid: bd1a8989-100d-4b7b-9a61-521af6433b00
 keywords:

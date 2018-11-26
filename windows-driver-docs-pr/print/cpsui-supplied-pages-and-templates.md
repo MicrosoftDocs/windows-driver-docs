@@ -1,6 +1,5 @@
 ---
 title: CPSUI-Supplied Pages and Templates
-author: windows-driver-content
 description: CPSUI-Supplied Pages and Templates
 ms.assetid: de33cb29-3941-4232-bd61-d36fb04d69d3
 keywords:

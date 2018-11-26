@@ -1,6 +1,5 @@
 ---
 title: GDL Namespaces
-author: windows-driver-content
 description: GDL Namespaces
 ms.assetid: 111bc393-a44a-4c42-98ef-36f6f225b8a0
 keywords:

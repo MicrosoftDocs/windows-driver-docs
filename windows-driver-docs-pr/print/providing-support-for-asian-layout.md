@@ -1,6 +1,5 @@
 ---
 title: Providing Support for Asian Layout
-author: windows-driver-content
 description: Providing Support for Asian Layout
 ms.assetid: 38c7dfca-ce30-4967-84a4-e2f40bba8c57
 keywords:

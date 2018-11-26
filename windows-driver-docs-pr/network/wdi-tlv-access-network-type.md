@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_ACCESS_NETWORK_TYPE
-author: windows-driver-content
 description: WDI_TLV_ACCESS_NETWORK_TYPE is a TLV that contains an Access Network Type.
 ms.assetid: AE344FDB-3B87-4F4E-BFF5-4569918E8465
 ms.date: 07/18/2017

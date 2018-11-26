@@ -1,6 +1,5 @@
 ---
 title: Using IRP Priority Hints
-author: windows-driver-content
 description: Using IRP Priority Hints
 ms.assetid: c34afff2-32f2-451b-ab16-ff048d5c3204
 ms.localizationpriority: medium

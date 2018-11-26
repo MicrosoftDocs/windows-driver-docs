@@ -1,6 +1,5 @@
 ---
 title: WIA Property Mapping
-author: windows-driver-content
 description: WIA Property Mapping
 ms.assetid: decd46b1-6a03-4c48-8b61-12d506cd419e
 ms.date: 04/20/2017

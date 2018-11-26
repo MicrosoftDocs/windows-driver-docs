@@ -1,6 +1,5 @@
 ---
 title: State Transitions
-author: windows-driver-content
 description: State Transitions
 ms.assetid: c71fd395-28aa-4421-9443-b5b0a1f3ac7e
 keywords:

@@ -3,7 +3,6 @@ title: wsle
 description: The wsle extension displays all working set list entries (WSLEs).
 ms.assetid: 9540ac44-a44b-4af6-acdd-baa275e8d004
 keywords: ["wsle Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref

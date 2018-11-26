@@ -1,6 +1,5 @@
 ---
 title: AV/C Streaming Driver Stack
-author: windows-driver-content
 description: AV/C Streaming Driver Stack
 ms.assetid: 2584c74c-ddd6-43cc-9a8c-cd7f43802c4c
 keywords:

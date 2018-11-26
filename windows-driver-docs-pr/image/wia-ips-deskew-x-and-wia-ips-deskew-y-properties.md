@@ -1,6 +1,5 @@
 ---
 title: WIA_IPS_DESKEW_X and WIA_IPS_DESKEW_Y Properties
-author: windows-driver-content
 description: WIA_IPS_DESKEW_X and WIA_IPS_DESKEW_Y Properties
 ms.assetid: 748b08f7-e838-4df8-abcb-4ff1cdd20f7e
 ms.date: 04/20/2017

@@ -1,6 +1,5 @@
 ---
 title: FORM_INFO_2 Data Structure
-author: windows-driver-content
 description: FORM_INFO_2 Data Structure
 ms.assetid: df953fe9-00a2-468a-a2ae-ba8f3fce9982
 keywords:

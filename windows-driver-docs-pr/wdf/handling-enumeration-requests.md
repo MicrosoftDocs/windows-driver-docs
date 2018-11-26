@@ -1,6 +1,5 @@
 ---
 title: Handling Enumeration Requests
-author: windows-driver-content
 description: Handling Enumeration Requests
 ms.assetid: 3719ffa7-2daf-4716-a183-531837be99aa
 keywords:

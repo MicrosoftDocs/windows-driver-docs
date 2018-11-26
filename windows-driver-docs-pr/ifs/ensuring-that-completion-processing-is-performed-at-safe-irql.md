@@ -1,6 +1,5 @@
 ---
 title: Ensuring that Completion Processing is Performed at Safe IRQL
-author: windows-driver-content
 description: Ensuring that Completion Processing is Performed at Safe IRQL
 ms.assetid: 54487fba-2ced-4bcd-afa6-d56b351aa7d6
 keywords:

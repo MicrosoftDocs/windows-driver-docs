@@ -1,6 +1,5 @@
 ---
 title: OID_SWITCH_NIC_ARRAY
-author: windows-driver-content
 description: A Hyper-V extensible switch extension issues an object identifier (OID) query request of OID_SWITCH_NIC_ARRAY to obtain an array.
 ms.assetid: CA9958DF-4389-4B4F-B110-03F500E27A1B
 ms.date: 08/08/2017

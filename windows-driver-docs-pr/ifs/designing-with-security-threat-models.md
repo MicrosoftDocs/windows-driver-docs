@@ -1,6 +1,5 @@
 ---
 title: Designing with Security Threat Models
-author: windows-driver-content
 description: Designing with Security Threat Models
 ms.assetid: a505df1a-82c0-4e0b-88bb-d96654a098fb
 keywords:

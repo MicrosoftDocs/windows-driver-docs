@@ -1,6 +1,5 @@
 ---
 title: Passthrough Template Data Types
-author: windows-driver-content
 description: Passthrough Template Data Types
 ms.assetid: 9e5e6a12-5847-45fe-bee5-68944cd546d7
 keywords:

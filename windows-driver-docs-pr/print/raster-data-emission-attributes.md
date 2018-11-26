@@ -1,6 +1,5 @@
 ---
 title: Raster Data Emission Attributes
-author: windows-driver-content
 description: Raster Data Emission Attributes
 ms.assetid: 98366b64-f96b-4275-ba25-8483abf705aa
 keywords:

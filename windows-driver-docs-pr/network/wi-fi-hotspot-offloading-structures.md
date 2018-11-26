@@ -1,6 +1,5 @@
 ---
 title: Wi-Fi Hotspot Offloading Structures
-author: windows-driver-content
 description: Wi-Fi Hotspot Offloading Structures
 ms.assetid: 7ec80296-1ac9-48df-a250-6fd856c57901
 ms.date: 07/31/2017

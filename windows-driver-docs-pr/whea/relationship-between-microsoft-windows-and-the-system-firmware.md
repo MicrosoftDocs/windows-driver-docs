@@ -1,6 +1,5 @@
 ---
 title: Relationship between Microsoft Windows and the System Firmware
-author: windows-driver-content
 description: Relationship between Microsoft Windows and the System Firmware
 ms.assetid: 83a43e49-cb06-4007-88d0-88f024c22825
 keywords:

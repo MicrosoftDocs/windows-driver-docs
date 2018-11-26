@@ -1,6 +1,5 @@
 ---
 title: Registering a Cancel Routine
-author: windows-driver-content
 description: Registering a Cancel Routine
 ms.assetid: ebc63fb6-bf4d-4de3-9232-08d810c2f730
 keywords: ["canceling IRPs, registering Cancel routines", "Cancel routines, registering", "registering Cancel routines"]

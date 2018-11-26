@@ -1,6 +1,5 @@
 ---
 title: Multiple Personality Template Data Types
-author: windows-driver-content
 description: Multiple Personality Template Data Types
 ms.assetid: ee550416-9185-41fa-b113-6a1d22c3aa96
 keywords:

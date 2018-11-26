@@ -1,7 +1,6 @@
 ---
 title: TTD Event Objects
 description: This section describes the event model objects associated with time travel debugging.
-ms.author: domars
 ms.date: 09/22/2017
 ms.localizationpriority: medium
 ---

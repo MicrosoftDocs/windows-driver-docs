@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_ADDITIONAL_BEACON_IES
-author: windows-driver-content
 description: WDI_TLV_ADDITIONAL_BEACON_IES is a TLV that contains additional beacon IEs.
 ms.assetid: 7B4D863A-1480-4283-A5E9-5F4F043B0CDE
 ms.date: 07/18/2017

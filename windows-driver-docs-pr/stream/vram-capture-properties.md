@@ -1,6 +1,5 @@
 ---
 title: VRAM Capture Properties
-author: windows-driver-content
 description: VRAM Capture Properties
 ms.assetid: e3ab3a10-42af-488f-9b13-d2c6d5aac615
 keywords:

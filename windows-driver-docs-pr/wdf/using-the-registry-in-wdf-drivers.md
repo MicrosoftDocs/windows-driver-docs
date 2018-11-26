@@ -1,6 +1,5 @@
 ---
 title: Using the Registry in WDF Drivers
-author: windows-driver-content
 description: Using the Registry in WDF Drivers
 ms.assetid: 278a5ccb-dd43-4b26-999f-9207a4ede9dc
 keywords:

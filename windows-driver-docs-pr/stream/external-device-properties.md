@@ -1,6 +1,5 @@
 ---
 title: External Device Properties
-author: windows-driver-content
 description: External Device Properties
 ms.assetid: 633b24c7-a1da-4748-aaa2-864a01a3fd98
 keywords:

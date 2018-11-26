@@ -1,7 +1,6 @@
 ---
 Description: The topics in this section provides an USB pipes, URBs for I/O requests, and describes how a client driver can use the device driver interfaces (DDIs) to transfer data to and from a USB device.
 title: Sending USB data transfers in USB client drivers
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

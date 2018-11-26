@@ -1,6 +1,5 @@
 ---
 title: Connecting an Interrupt Service Routine to a Parallel Port
-author: windows-driver-content
 description: Connecting an Interrupt Service Routine to a Parallel Port
 ms.assetid: 62d3a388-6de6-4019-ab95-56b5e96d0891
 keywords:

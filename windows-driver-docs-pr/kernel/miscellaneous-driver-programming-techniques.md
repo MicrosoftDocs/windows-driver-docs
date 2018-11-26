@@ -1,6 +1,5 @@
 ---
 title: Miscellaneous Driver Programming Techniques
-author: windows-driver-content
 description: Miscellaneous Driver Programming Techniques
 ms.assetid: 6afdaecb-62f8-4909-8117-6242cd5b3765
 keywords: ["driver programming techniques WDK kernel", "kernel-mode drivers WDK , driver programming techniques"]

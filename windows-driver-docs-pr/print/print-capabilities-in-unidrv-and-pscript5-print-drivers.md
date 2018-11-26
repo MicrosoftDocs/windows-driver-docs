@@ -1,6 +1,5 @@
 ---
 title: Print Capabilities in Unidrv and PScript5 Print Drivers
-author: windows-driver-content
 description: Print Capabilities in Unidrv and PScript5 Print Drivers
 ms.assetid: 70f8b846-3e05-4345-baad-a3db6b8df620
 keywords:

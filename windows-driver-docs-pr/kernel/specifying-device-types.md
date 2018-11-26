@@ -1,6 +1,5 @@
 ---
 title: Specifying Device Types
-author: windows-driver-content
 description: Specifying Device Types
 ms.assetid: 32e179f9-ab11-4360-b2fd-4276c6b6b3a0
 keywords: ["device objects WDK kernel , device types", "device types WDK device objects"]

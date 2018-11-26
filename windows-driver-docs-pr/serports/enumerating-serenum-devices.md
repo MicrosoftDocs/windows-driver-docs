@@ -1,6 +1,5 @@
 ---
 title: Enumerating Serenum Devices
-author: windows-driver-content
 description: Enumerating Serenum Devices
 ms.assetid: c850c52b-82d7-48c2-a6c4-bfd071756632
 keywords:

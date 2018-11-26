@@ -1,6 +1,5 @@
 ---
 title: USBCAMD2 Minidriver Operation
-author: windows-driver-content
 description: USBCAMD2 Minidriver Operation
 ms.assetid: 395612cd-3407-4b42-b3a5-0afa838e73d9
 keywords:

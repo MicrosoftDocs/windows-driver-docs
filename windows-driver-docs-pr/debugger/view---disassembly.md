@@ -3,7 +3,6 @@ title: View Disassembly
 description: View Disassembly
 ms.assetid: b48bb067-aa7b-458e-a6da-35fba3dc7c21
 keywords: ["View Disassembly"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---

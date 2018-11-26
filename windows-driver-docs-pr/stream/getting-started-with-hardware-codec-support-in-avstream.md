@@ -1,6 +1,5 @@
 ---
 title: Getting Started with Hardware Codec Support in AVStream
-author: windows-driver-content
 description: Getting Started with Hardware Codec Support in AVStream
 ms.assetid: f8335285-e74f-4600-aee9-7e2881cb0764
 keywords:

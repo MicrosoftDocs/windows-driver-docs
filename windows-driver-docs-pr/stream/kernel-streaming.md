@@ -1,6 +1,5 @@
 ---
 title: Kernel Streaming
-author: windows-driver-content
 description: Kernel Streaming
 ms.assetid: dcd28218-b3bf-4e5d-b1a7-6910103afb96
 keywords:

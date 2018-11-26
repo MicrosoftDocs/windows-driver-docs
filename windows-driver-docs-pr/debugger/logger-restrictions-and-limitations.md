@@ -3,7 +3,6 @@ title: Logger Restrictions and Limitations
 description: Logger Restrictions and Limitations
 ms.assetid: cb16c193-5420-4900-bf07-44b49859e296
 keywords: ["Logger, restrictions", "Logger, limitations"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---

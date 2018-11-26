@@ -1,6 +1,5 @@
 ---
 title: Sample Printer INF Files
-author: windows-driver-content
 description: Sample Printer INF Files
 ms.assetid: e57f11fe-b114-46e4-a4ae-b48f04613da7
 keywords:

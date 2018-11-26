@@ -1,6 +1,5 @@
 ---
 title: Applying Security Descriptors on the Device Object
-author: windows-driver-content
 description: Applying Security Descriptors on the Device Object
 ms.assetid: c0697021-cf78-4b85-b959-342179da5621
 keywords:

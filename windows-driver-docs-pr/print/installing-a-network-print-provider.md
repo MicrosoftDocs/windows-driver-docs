@@ -1,6 +1,5 @@
 ---
 title: Installing a Network Print Provider
-author: windows-driver-content
 description: Installing a Network Print Provider
 ms.assetid: 448101f8-cb26-4a6f-807d-f110978321da
 keywords:

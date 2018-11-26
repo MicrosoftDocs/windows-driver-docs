@@ -1,6 +1,5 @@
 ---
 title: Introduction to Controller Objects
-author: windows-driver-content
 description: Introduction to Controller Objects
 ms.assetid: a46732a7-1e60-41d5-96e9-d5284c000af1
 keywords: ["controller objects WDK kernel , about controller objects", "ControllerControl routines, about ControllerControl routines", "overlapped I/O WDK kernel", "I/O WDK kernel , overlaps"]

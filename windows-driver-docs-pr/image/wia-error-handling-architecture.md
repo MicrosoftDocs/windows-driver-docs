@@ -1,6 +1,5 @@
 ---
 title: WIA Error Handling Architecture
-author: windows-driver-content
 description: WIA Error Handling Architecture
 ms.assetid: 2672a5ee-d860-44de-9e68-bd70377d58a8
 ms.date: 04/20/2017

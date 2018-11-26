@@ -1,6 +1,5 @@
 ---
 title: AVStream Descriptors
-author: windows-driver-content
 description: AVStream Descriptors
 ms.assetid: fd436406-311b-4537-994d-fbd8d92d4673
 keywords:

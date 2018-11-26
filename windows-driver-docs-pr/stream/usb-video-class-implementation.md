@@ -1,6 +1,5 @@
 ---
 title: USB Video Class Implementation
-author: windows-driver-content
 description: USB Video Class Implementation
 ms.assetid: b390d741-9ddc-4bac-bca2-73e32461c5ed
 keywords:

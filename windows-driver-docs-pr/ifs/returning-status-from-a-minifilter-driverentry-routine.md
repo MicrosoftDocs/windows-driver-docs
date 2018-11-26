@@ -1,6 +1,5 @@
 ---
 title: Returning Status from a Minifilter DriverEntry Routine
-author: windows-driver-content
 description: Returning Status from a Minifilter DriverEntry Routine
 ms.assetid: a9448908-f712-43f7-99c0-e02abc1678ed
 keywords:

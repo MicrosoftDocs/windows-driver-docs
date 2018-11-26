@@ -1,6 +1,5 @@
 ---
 title: Non-PnP Driver's Unload Routine
-author: windows-driver-content
 description: Non-PnP Driver's Unload Routine
 ms.assetid: 5917648f-1e7e-4b39-9aa6-d6cdaac7a2cd
 keywords: ["Unload routines WDK kernel , non-PnP drivers", "non-PnP Unload routine WDK kernel"]

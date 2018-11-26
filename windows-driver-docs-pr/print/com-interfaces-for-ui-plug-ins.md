@@ -1,6 +1,5 @@
 ---
 title: COM Interfaces for UI Plug-Ins
-author: windows-driver-content
 description: COM Interfaces for UI Plug-Ins
 ms.assetid: 9cc6502b-a003-4d0b-857e-4653cf6fa0ea
 keywords:

@@ -43,9 +43,9 @@ Nondefault VPorts are created and configured through OID method requests of [OID
 
 
 
-~~~
+
 Starting with NDIS 6.30 in Windows Server 2012, only one nondefault VPort can be attached to a VF. However, multiple nondefault VPorts along with the default VPort can be attached to the PF.
-~~~
+
 
 -   The number of hardware queue pairs that are assigned to a VPort.
 
@@ -59,11 +59,11 @@ Starting with NDIS 6.30 in Windows Server 2012, only one nondefault VPort can be
 
 
 
-~~~
+
 The number of queue pairs assigned to each VPort is not changed dynamically. The number of queue pairs assigned to a VPort cannot be changed after the VPort has been created.
 
 **Note**  One or more queue pairs assigned to the nondefault VPorts can be used for receive side scaling (RSS) by the VF miniport driver that runs in the guest operating system.
-~~~
+
 
 
 

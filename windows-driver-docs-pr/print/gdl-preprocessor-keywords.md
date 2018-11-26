@@ -1,6 +1,5 @@
 ---
 title: GDL Preprocessor Keywords
-author: windows-driver-content
 description: GDL Preprocessor Keywords
 ms.assetid: 95ad9645-7c16-421a-937e-d4ada587d1e1
 keywords:

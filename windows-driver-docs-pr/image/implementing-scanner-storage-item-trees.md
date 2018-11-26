@@ -1,6 +1,5 @@
 ---
 title: Implementing Scanner-Storage Item Trees
-author: windows-driver-content
 description: Implementing Scanner-Storage Item Trees
 ms.assetid: e65a2a61-4d31-4336-9712-444943f4f4d3
 ms.date: 04/20/2017

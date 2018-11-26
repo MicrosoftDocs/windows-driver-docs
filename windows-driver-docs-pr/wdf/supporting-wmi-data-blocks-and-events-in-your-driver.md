@@ -1,6 +1,5 @@
 ---
 title: Supporting WMI Data Blocks and Events in Your Driver
-author: windows-driver-content
 description: Supporting WMI Data Blocks and Events in Your Driver
 ms.assetid: a5138413-3ec4-4c61-9f00-6604759532e9
 keywords:

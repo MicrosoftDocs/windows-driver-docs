@@ -1,6 +1,5 @@
 ---
 title: User Interface Plug-Ins
-author: windows-driver-content
 description: User Interface Plug-Ins
 ms.assetid: 22ac2af6-37d8-4913-95af-9c3dc8576d40
 keywords:

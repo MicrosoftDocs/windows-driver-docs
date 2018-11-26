@@ -74,9 +74,9 @@ To use the TraceLogging API, include the TraceLogging header file TraceLoggingPr
 
 
 
-~~~
+
 The [**TRACELOGGING\_DEFINE\_PROVIDER**](https://msdn.microsoft.com/library/windows/desktop/dn904624) macro expects the variables passed to it to be in the nonpaged pool. If this is not the case already, the caller must set the data segment via \#pragma data\_seg (for uniqueVarName) or the const segment via \#pragma const\_seg (for g\_hMyProvider) before calling the **TRACELOGGING\_DEFINE\_PROVIDER** macro.
-~~~
+
 
 ## <span id="Register_the_driver_with_TraceLogging"></span><span id="register_the_driver_with_tracelogging"></span><span id="REGISTER_THE_DRIVER_WITH_TRACELOGGING"></span>Register the driver with TraceLogging
 

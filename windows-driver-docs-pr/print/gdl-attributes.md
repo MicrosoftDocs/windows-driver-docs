@@ -1,6 +1,5 @@
 ---
 title: GDL Attributes
-author: windows-driver-content
 description: GDL Attributes
 ms.assetid: 3dd314c7-33d6-47e0-90b2-512cbaf79a2b
 keywords:

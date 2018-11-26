@@ -1,6 +1,5 @@
 ---
 title: Iasphelp get\_PageRateUnit method
-author: windows-driver-content
 description: The PageRateUnit enables an ASP Web page to determine the units in which the page rate is expressed.
 MS-HAID:
 - 'webfnc\_c3c557fb-2ce9-4260-838a-4bd0e56fb63d.xml'

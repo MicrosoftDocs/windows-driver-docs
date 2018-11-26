@@ -1,6 +1,5 @@
 ---
 title: Opening and Initializing a Serial Device
-author: windows-driver-content
 description: Opening and Initializing a Serial Device
 ms.assetid: 08266561-4738-4313-b53b-d60081e875c7
 keywords:

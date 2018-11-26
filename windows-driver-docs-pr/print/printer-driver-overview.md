@@ -1,6 +1,5 @@
 ---
 title: Printer Driver Overview
-author: windows-driver-content
 description: Printer Driver Overview
 ms.assetid: d6bfa85a-2094-4ff8-b32b-e8d7204bb452
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: CodePage Template Entry Issues
-author: windows-driver-content
 description: CodePage Template Entry Issues
 ms.assetid: e11c1857-f12f-44c0-be35-eba93b4b87eb
 keywords:

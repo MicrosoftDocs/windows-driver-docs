@@ -1,6 +1,5 @@
 ---
 title: Using Common Log File System
-author: windows-driver-content
 description: Using Common Log File System
 ms.assetid: a9685648-b08c-48ca-b020-e683068f2ea2
 keywords: ["Common Log File System WDK kernel", "CLFS WDK kernel", "logging service WDK CLFS", "transactional logs WDK CLFS"]

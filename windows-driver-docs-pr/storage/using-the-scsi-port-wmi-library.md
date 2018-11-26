@@ -1,6 +1,5 @@
 ---
 title: Using the SCSI Port WMI Library
-author: windows-driver-content
 description: Using the SCSI Port WMI Library
 ms.assetid: cb55bbb3-39bb-491f-a6d2-50dceace4a86
 keywords:

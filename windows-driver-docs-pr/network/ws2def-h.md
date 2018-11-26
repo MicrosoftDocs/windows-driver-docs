@@ -1,6 +1,5 @@
 ---
 title: Ws2def.h
-author: windows-driver-content
 description: This section contains kernel mode network driver topics for the Ws2def.h header.
 ms.assetid: D84A448E-5810-485F-9CAC-4366E4223DBE
 keywords:

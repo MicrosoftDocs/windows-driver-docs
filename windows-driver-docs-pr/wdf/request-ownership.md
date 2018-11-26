@@ -1,6 +1,5 @@
 ---
 title: Request Ownership
-author: windows-driver-content
 description: Request Ownership
 ms.assetid: 60494e97-0483-454f-aafc-7a69019c95f2
 keywords:

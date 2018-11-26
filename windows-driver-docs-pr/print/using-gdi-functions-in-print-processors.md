@@ -1,6 +1,5 @@
 ---
 title: Using GDI Functions in Print Processors
-author: windows-driver-content
 description: Using GDI Functions in Print Processors
 ms.assetid: 2ad62308-ab42-4475-ac42-f753d5091251
 keywords:

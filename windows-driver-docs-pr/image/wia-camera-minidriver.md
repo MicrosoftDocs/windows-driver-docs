@@ -1,6 +1,5 @@
 ---
 title: WIA Camera Minidriver
-author: windows-driver-content
 description: WIA Camera Minidriver
 ms.assetid: c6289dcf-9ab2-45c3-b7f6-fb48161c726c
 ms.date: 04/20/2017

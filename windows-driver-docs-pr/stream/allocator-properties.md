@@ -1,6 +1,5 @@
 ---
 title: Allocator Properties
-author: windows-driver-content
 description: Allocator Properties
 ms.assetid: 851bc3d8-46f6-46d0-87a8-81de2536492a
 keywords:

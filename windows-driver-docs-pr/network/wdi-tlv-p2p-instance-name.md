@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_P2P_INSTANCE_NAME
-author: windows-driver-content
 description: WDI_TLV_P2P_INSTANCE_NAME is a TLV that contains the Instance Name of the service.
 ms.assetid: 36CB51E2-D8CB-4C71-B2DB-77F4FDBB8B90
 ms.date: 07/18/2017

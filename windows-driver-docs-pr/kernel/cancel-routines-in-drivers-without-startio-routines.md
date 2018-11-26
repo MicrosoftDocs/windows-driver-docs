@@ -1,6 +1,5 @@
 ---
 title: Cancel Routines in Drivers without StartIo Routines
-author: windows-driver-content
 description: Cancel Routines in Drivers without StartIo Routines
 ms.assetid: c6e1a05e-28ed-4f42-8678-55f01303b312
 keywords: ["canceling IRPs, StartIo routines", "Cancel routines, StartIo routines", "StartIo routines, Cancel routines"]

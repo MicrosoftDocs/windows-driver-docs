@@ -1,7 +1,6 @@
 ---
 Description: The USB role-switch driver and its client driver that handle the role-switching capability of a dual-role controller.
 title: Bring up the dual-role controller for a USB Type-C Windows system
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

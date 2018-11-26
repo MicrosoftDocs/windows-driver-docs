@@ -1,6 +1,5 @@
 ---
 title: Creating a File Object to Handle I/O
-author: windows-driver-content
 description: Creating a File Object to Handle I/O
 ms.assetid: 3cd826fc-5c67-4ab4-800a-b5aa4bd5244f
 keywords:

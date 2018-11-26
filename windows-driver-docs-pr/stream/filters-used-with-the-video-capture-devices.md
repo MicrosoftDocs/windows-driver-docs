@@ -1,6 +1,5 @@
 ---
 title: Filters Used with the Video Capture Devices
-author: windows-driver-content
 description: Filters Used with the Video Capture Devices
 ms.assetid: 797f855d-5c6f-45bc-8b4a-f03543fa196d
 keywords:

@@ -2,7 +2,6 @@
 title: Bug Check 0x1C8 MANUALLY_INITIATED_POWER_BUTTON_HOLD
 description: The MANUALLY_INITIATED_POWER_BUTTON_HOLD bug check has a value of 0x000001CE. The system was configured to initiate a bugcheck when the user holds the power button.  
 keywords: ["Bug Check 0x1C8 MANUALLY_INITIATED_POWER_BUTTON_HOLD", "MANUALLY_INITIATED_POWER_BUTTON_HOLD"]
-ms.author: domars
 ms.date: 09/24/2018
 topic_type:
 - apiref

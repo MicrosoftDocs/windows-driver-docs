@@ -1,6 +1,5 @@
 ---
 title: Using GetOptionAttribute
-author: windows-driver-content
 description: Using GetOptionAttribute
 ms.assetid: d35f0811-d572-422c-8672-ffd29bf69efa
 keywords:

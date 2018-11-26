@@ -73,9 +73,9 @@ Use the following procedure to configure a driver to log to the Global Logger tr
 
 
 
-~~~
+
 Note that the name of the **Flags** entry is plural and the name of the **Level** entry is singular.
-~~~
+
 
 5.  Restart the system. This starts the Global Logger trace session.
 

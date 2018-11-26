@@ -1,6 +1,5 @@
 ---
 title: Using IRP Completion Routines
-author: windows-driver-content
 description: Using IRP Completion Routines
 ms.assetid: 82b9ba2b-17db-40e5-be3f-fd77cd986781
 keywords:

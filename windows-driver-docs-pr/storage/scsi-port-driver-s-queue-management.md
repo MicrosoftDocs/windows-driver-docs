@@ -1,6 +1,5 @@
 ---
 title: SCSI Port Driver's Queue Management
-author: windows-driver-content
 description: SCSI Port Driver's Queue Management
 ms.assetid: ddcbd016-8d8b-4bbc-9c71-b7a5eaa61205
 ms.date: 04/20/2017

@@ -1,6 +1,5 @@
 ---
 title: Device Stacks for an ACPI Device
-author: windows-driver-content
 description: Device Stacks for an ACPI Device
 ms.assetid: f177d29f-eaf9-4126-8cb3-9355d977bfb0
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: AV/C Client Drivers
-author: windows-driver-content
 description: AV/C Client Drivers
 ms.assetid: 70d98c31-2da6-455b-91d8-59bed306b574
 keywords:

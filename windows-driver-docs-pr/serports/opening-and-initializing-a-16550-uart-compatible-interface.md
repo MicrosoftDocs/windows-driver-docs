@@ -1,6 +1,5 @@
 ---
 title: Opening and Initializing a 16550 UART-Compatible Interface
-author: windows-driver-content
 description: Opening and Initializing a 16550 UART-Compatible Interface
 ms.assetid: 341cc1cb-bbcf-4514-8f5d-8970e49923c2
 keywords:

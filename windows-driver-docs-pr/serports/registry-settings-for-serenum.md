@@ -1,6 +1,5 @@
 ---
 title: Registry Settings for Serenum
-author: windows-driver-content
 description: Registry Settings for Serenum
 ms.assetid: c8a8f1b7-ea58-49ed-98e0-40297ec9a769
 keywords:

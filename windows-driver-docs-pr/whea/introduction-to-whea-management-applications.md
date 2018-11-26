@@ -1,6 +1,5 @@
 ---
 title: Introduction to WHEA Management Applications
-author: windows-driver-content
 description: Introduction to WHEA Management Applications
 ms.assetid: d0c487bd-dfa8-43f2-a494-0ed95d767bfb
 keywords:

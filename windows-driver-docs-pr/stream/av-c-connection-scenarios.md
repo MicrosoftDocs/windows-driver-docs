@@ -1,6 +1,5 @@
 ---
 title: AV/C Connection Scenarios
-author: windows-driver-content
 description: AV/C Connection Scenarios
 ms.assetid: 392f996c-47aa-4ceb-adf9-0c8fd114a511
 keywords:

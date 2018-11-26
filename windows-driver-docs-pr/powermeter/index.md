@@ -4,7 +4,6 @@ description: Power Metering and Budgeting Design Guide
 ms.assetid: 93ec51ac-5180-4495-98b4-a48342957ec1
 keywords:
 - Power Metering and Budgeting WDK , design guide
-ms.author: windowsdriverdev
 ms.date: 10/09/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -1,6 +1,5 @@
 ---
 title: Handling Notifications
-author: windows-driver-content
 description: Handling Notifications
 ms.assetid: ace7f59d-fe9f-4810-91db-2cf20c9591cf
 keywords: ["filtering registry calls WDK kernel , notification options", "registry filtering drivers WDK kernel , notification options", "notifications WDK filter registry call", "filtering registry calls WDK kernel , monitoring calls", "registry filtering drivers WDK kernel , monitoring calls", "filtering registry calls WDK kernel , blocking calls", "registry filtering drivers WDK kernel , blocking calls", "filtering registry calls WDK kernel , modifying calls", "registry filtering drivers WDK kernel , modifying calls", "blocking calls WDK filter registry call", "monitoring registry calls"]
@@ -45,9 +44,9 @@ When a registry filtering driver's *RegistryCallback* routine receives a post-no
 
 
 
-~~~
+
 Modifying return values is supported in Windows Vista and later.
-~~~
+
 
 When a registry filtering driver's *RegistryCallback* routine receives a pre-notification, the routine can handle the registry operation itself and then return STATUS\_CALLBACK\_BYPASS. When the registry receives STATUS\_CALLBACK\_BYPASS from the driver, it just returns STATUS\_SUCCESS to the calling thread and does not process the operation. The driver preempts the registry operation and must completely handle it, and the driver must be careful to return valid output values in the **REG\_*XXX*\_KEY\_INFORMATION** structure.
 

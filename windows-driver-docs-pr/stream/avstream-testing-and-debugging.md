@@ -1,6 +1,5 @@
 ---
 title: AVStream Testing and Debugging
-author: windows-driver-content
 description: AVStream Testing and Debugging
 ms.assetid: 7a3eeeb5-1ff4-4110-9168-c716cd7776b8
 keywords:

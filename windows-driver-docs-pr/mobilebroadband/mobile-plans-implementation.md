@@ -4,7 +4,6 @@ description: This topic describes the implementation step for the Mobile Plans p
 ms.assetid: 283E45EF-D421-429B-A9AF-BED64BB670B0
 keywords:
 - Windows Mobile Plans implementation, Mobile Plans implementation mobile operators
-ms.author: windowsdriverdev
 ms.date: 09/17/2018
 ms.topic: article
 ms.prod: windows-hardware

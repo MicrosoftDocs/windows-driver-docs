@@ -1,6 +1,5 @@
 ---
 title: Deferring Interrupt-Driven I/O from HwScsiInterrupt
-author: windows-driver-content
 description: Deferring Interrupt-Driven I/O from HwScsiInterrupt
 ms.assetid: 6bedad0c-8995-4c7b-8ee2-415ec63e0eb3
 keywords:

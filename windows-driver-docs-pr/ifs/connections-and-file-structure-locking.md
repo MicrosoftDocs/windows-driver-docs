@@ -1,6 +1,5 @@
 ---
 title: Connections and File Structure Locking
-author: windows-driver-content
 description: Connections and File Structure Locking
 ms.assetid: 7286a34f-db8f-4b0a-ab7f-674b9dc641a8
 keywords:

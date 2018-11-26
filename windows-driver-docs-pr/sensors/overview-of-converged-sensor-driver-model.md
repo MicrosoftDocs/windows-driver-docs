@@ -1,6 +1,5 @@
 ---
 title: Overview of the universal sensor driver model
-author: windows-driver-content
 description: In Windows 10, the sensor driver stacks for Desktop and Mobile devices have been merged to create a universal sensor driver model.
 ms.assetid: 3591F4DD-2404-4893-88F3-1DC6A0CC3F0D
 ms.date: 07/20/2018

@@ -1,6 +1,5 @@
 ---
 title: Broadcast Receiver Topology
-author: windows-driver-content
 description: Broadcast Receiver Topology
 ms.assetid: d6f7614b-b7ff-4d42-8e04-fbf1b4f0445a
 keywords:

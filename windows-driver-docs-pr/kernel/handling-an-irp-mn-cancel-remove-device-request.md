@@ -1,6 +1,5 @@
 ---
 title: Handling an IRP_MN_CANCEL_REMOVE_DEVICE Request
-author: windows-driver-content
 description: Handling an IRP_MN_CANCEL_REMOVE_DEVICE Request
 ms.assetid: 3382c47d-6ac8-409e-b558-ad2f2ae83715
 keywords: ["IRP_MN_CANCEL_REMOVE_DEVICE", "spurious cancel-remove requests WDK PnP"]

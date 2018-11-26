@@ -1,6 +1,5 @@
 ---
 title: OID_GEN_CO_RCV_PDUS_NO_BUFFER
-author: windows-driver-content
 description: This topic describes the OID_GEN_CO_RCV_PDUS_NO_BUFFER object identifier (OID).
 ms.assetid: b20bd89a-d5a7-4fc3-a492-27dc61ee6f44
 keywords:

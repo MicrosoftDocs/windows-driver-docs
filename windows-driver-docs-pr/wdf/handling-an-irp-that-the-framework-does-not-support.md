@@ -1,6 +1,5 @@
 ---
 title: Handling an IRP that the Framework Does Not Support
-author: windows-driver-content
 description: Handling an IRP that the Framework Does Not Support
 ms.assetid: 0481f335-f63b-4f93-8eb4-523a70082302
 keywords:

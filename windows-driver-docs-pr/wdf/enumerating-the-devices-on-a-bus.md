@@ -1,6 +1,5 @@
 ---
 title: Enumerating the Devices on a Bus
-author: windows-driver-content
 description: Enumerating the Devices on a Bus
 ms.assetid: 5731db82-2bc8-4a8d-98f1-3977845f572c
 keywords:

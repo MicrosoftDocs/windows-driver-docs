@@ -1,6 +1,5 @@
 ---
 title: Accessing User Buffers in a Postoperation Callback Routine
-author: windows-driver-content
 description: Accessing User Buffers in a Postoperation Callback Routine
 ms.assetid: a980f302-6fde-461e-8b11-313530aff350
 keywords:

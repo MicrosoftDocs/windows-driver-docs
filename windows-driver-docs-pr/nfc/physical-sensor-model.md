@@ -1,6 +1,5 @@
 ---
 title: Physical sensor model
-author: windows-driver-content
 description: Physical sensor model
 ms.assetid: D3887E09-E0A4-4FBC-9D26-344016047235
 keywords:

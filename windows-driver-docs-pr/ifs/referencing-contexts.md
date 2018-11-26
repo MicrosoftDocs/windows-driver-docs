@@ -1,6 +1,5 @@
 ---
 title: Referencing Contexts
-author: windows-driver-content
 description: Referencing Contexts
 ms.assetid: 9ac3aedb-e057-4e19-9de5-709311072b09
 keywords:

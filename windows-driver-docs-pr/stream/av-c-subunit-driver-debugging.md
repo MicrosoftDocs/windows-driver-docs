@@ -1,6 +1,5 @@
 ---
 title: AV/C Subunit Driver Debugging
-author: windows-driver-content
 description: AV/C Subunit Driver Debugging
 ms.assetid: d669157c-60fa-4b7a-8f33-58923a3f2230
 keywords:

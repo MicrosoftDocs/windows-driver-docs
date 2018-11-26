@@ -1,6 +1,5 @@
 ---
 title: Macros Defined by RDBSS
-author: windows-driver-content
 description: Macros Defined by RDBSS
 ms.assetid: 11add885-ecd9-4b43-be42-ef060e847183
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Accessing User-Space Memory
-author: windows-driver-content
 description: Accessing User-Space Memory
 ms.assetid: db0b6ba2-4cec-46c1-b13f-aba4c10a2d8c
 keywords: ["memory management WDK kernel , user-space memory", "user-space memory WDK kernel", "virtual user-space memory WDK kernel"]

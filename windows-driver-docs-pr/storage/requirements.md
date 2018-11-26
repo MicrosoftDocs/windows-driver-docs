@@ -1,6 +1,5 @@
 ---
 title: Requirements
-author: windows-driver-content
 description: Requirements
 ms.assetid: d939a319-f321-455e-a34d-220a3faf6092
 ms.date: 04/20/2017

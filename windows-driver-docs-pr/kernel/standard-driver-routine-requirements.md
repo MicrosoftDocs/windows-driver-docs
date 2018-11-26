@@ -1,6 +1,5 @@
 ---
 title: Standard Driver Routine Requirements
-author: windows-driver-content
 description: Standard Driver Routine Requirements
 ms.assetid: 49b382ad-c282-41d2-b8b3-68eca4e12b9c
 keywords: ["standard driver routines WDK kernel , requirements", "driver routines WDK kernel , requirements", "routines WDK kernel , requirements"]

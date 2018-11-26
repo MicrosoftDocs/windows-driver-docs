@@ -1,6 +1,5 @@
 ---
 title: GetPrintCapabilities
-author: windows-driver-content
 description: The IPrintTicketProvider GetPrintCapabilities routine must return a valid PrintCapabilities document.
 ms.assetid: 9c9bd387-5ea2-4758-a967-190a711cd8c3
 keywords:

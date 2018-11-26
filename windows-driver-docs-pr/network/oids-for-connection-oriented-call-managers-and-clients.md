@@ -1,6 +1,5 @@
 ---
 title: OIDs for connection-oriented call managers and clients
-author: windows-driver-content
 description: This topic describes OIDs for connection-oriented call managers and clients.
 ms.assetid: a2ffbfd4-a63e-41d1-ab57-0c23661148ca
 keywords:

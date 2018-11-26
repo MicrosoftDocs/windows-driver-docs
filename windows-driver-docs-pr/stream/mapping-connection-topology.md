@@ -1,6 +1,5 @@
 ---
 title: Mapping Connection Topology
-author: windows-driver-content
 description: Mapping Connection Topology
 ms.assetid: f11ffc48-a117-4b75-bc19-7a3762e6ba19
 keywords:

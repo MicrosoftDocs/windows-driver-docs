@@ -1,6 +1,5 @@
 ---
 title: Changing the Default GDL Configuration
-author: windows-driver-content
 description: Changing the Default GDL Configuration
 ms.assetid: ecc4a6ab-869a-402e-b90e-5ad94e0347c3
 keywords:

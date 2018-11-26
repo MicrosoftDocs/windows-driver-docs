@@ -1,6 +1,5 @@
 ---
 title: Opening a Handle to a File
-author: windows-driver-content
 description: Opening a Handle to a File
 ms.assetid: 9378282a-ee29-44b6-b206-602eee94ec3b
 keywords: ["files WDK kernel", "file objects WDK kernel", "objects WDK file objects", "file handles WDK kernel", "handle to file WDK kernel", "opening handle to file"]

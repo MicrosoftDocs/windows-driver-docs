@@ -1,7 +1,6 @@
 ---
 title: Old method - Windows 10, version 1607 and earlier
 description: Old method - Windows 10, version 1607 and earlier
-author: windows-driver-content
 ms.date: 05/07/2018
 ms.localizationpriority: medium
 ---

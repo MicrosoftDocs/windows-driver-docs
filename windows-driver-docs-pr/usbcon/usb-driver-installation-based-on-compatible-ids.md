@@ -1,7 +1,6 @@
 ---
 Description: Microsoft-provided in-box driver (Usbser.sys) for your Communications and CDC Control device.
 title: USB serial driver (Usbser.sys)
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

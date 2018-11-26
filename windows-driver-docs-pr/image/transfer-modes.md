@@ -1,6 +1,5 @@
 ---
 title: Transfer Modes
-author: windows-driver-content
 description: Transfer Modes
 ms.assetid: 79af0d8f-dd04-4ff4-a047-f415562a16a5
 ms.date: 04/20/2017

@@ -1,6 +1,5 @@
 ---
 title: Predictive Failure Analysis (PFA)
-author: windows-driver-content
 description: Predictive Failure Analysis (PFA)
 ms.assetid: d2ded330-edcc-4bdd-9b52-73c1961d8ef2
 keywords:

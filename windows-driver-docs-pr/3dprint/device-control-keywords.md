@@ -1,6 +1,5 @@
 ---
 title: Device control keywords
-author: windows-driver-content
 description: These keywords are used to provide control over the 3D manufacturing device.
 ms.assetid: 1F0CBFC4-F641-4D82-9173-C89218E822B5
 ms.date: 04/20/2017

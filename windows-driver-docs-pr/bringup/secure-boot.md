@@ -1,7 +1,6 @@
 ---
 title: Secure Boot
 description: Secure Boot
-author: windows-driver-content
 ms.date: 08/06/2018
 ms.localizationpriority: medium
 ---

@@ -46,7 +46,7 @@ In the case where this registry value is set for external connectors, the OS wil
 ### SAMPLE MONITOR.INF FILE FRAGMENT
 The following is an incomplete sample INF that outlines the above:
 
-~~~
+
 [Manufacturer]
 %MONOEM%=MONOEM,NTx86,NTAMD64 
  
@@ -103,6 +103,6 @@ AIOHDMI_1  = “AIO monitor name one”
 AIOHDMI_2  = “AIO monitor name two”
 Laptop  = “Laptop monitor name”
 
-~~~
+
 
 **NOTE** OEMs need to provide a monitor.inf that has the proper hardware ID in order to ensure that the generic Microsoft monitor.inf is not used. 

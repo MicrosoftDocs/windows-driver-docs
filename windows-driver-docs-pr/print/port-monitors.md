@@ -1,6 +1,5 @@
 ---
 title: Port Monitors
-author: windows-driver-content
 description: Port Monitors
 ms.assetid: 4758ebda-f93e-49fb-8605-17cf43194afc
 keywords:

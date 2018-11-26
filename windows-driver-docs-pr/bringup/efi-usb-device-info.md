@@ -1,6 +1,5 @@
 ---
 title: EFI_USB_DEVICE_INFO
-author: windows-driver-content
 description: EFI_USB_DEVICE_INFO
 ms.assetid: b44f77fc-f496-488f-b53a-b54420da9360
 ms.date: 04/20/2017

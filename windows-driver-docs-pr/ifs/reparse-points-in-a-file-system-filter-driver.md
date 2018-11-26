@@ -1,6 +1,5 @@
 ---
 title: Reparse Points in a File System Filter Driver
-author: windows-driver-content
 description: Reparse Points in a File System Filter Driver
 ms.assetid: 6aae70d9-c934-4759-bb26-728b0ac025d1
 keywords:

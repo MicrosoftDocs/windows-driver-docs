@@ -4,7 +4,6 @@ description: This topic describes the optional prepaid experience for the Mobile
 ms.assetid: 908AB4DE-A4C8-4758-9632-F7F7381FF737
 keywords:
 - Windows Mobile Plans prepaid experience, Mobile Plans prepaid experience mobile operators
-ms.author: windowsdriverdev
 ms.date: 09/17/2018
 ms.topic: article
 ms.prod: windows-hardware

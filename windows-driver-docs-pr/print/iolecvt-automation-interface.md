@@ -1,6 +1,5 @@
 ---
 title: IOleCvt Automation Interface
-author: windows-driver-content
 description: IOleCvt Automation Interface
 MS-HAID:
 - 'webfnc\_0ca4054a-768a-44b9-bb7e-84a5cb81349b.xml'

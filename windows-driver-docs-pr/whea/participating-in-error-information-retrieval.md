@@ -1,6 +1,5 @@
 ---
 title: Participating in Error Information Retrieval
-author: windows-driver-content
 description: Participating in Error Information Retrieval
 ms.assetid: ed0ad20b-d978-4650-b3a0-6b0795323c77
 keywords:

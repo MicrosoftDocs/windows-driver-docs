@@ -1,13 +1,11 @@
 ---
 title: Streaming media device driver design guide
-author: windows-driver-content
 description: Streaming media device driver design guide
 ms.assetid: 321edd72-4f6a-4eaf-85bf-3b36680a522c
 keywords:
 - streaming media WDK
 - media streaming WDK
 - data streaming WDK
-ms.author: windowsdriverdev
 ms.date: 10/2/2018
 ms.topic: article
 ms.prod: windows-hardware

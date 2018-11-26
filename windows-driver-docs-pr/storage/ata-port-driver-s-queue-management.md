@@ -1,6 +1,5 @@
 ---
 title: ATA Port Driver's Queue Management
-author: windows-driver-content
 description: ATA Port Driver's Queue Management
 ms.assetid: feba86a6-2b89-41c9-9b14-b76c2522a332
 keywords:

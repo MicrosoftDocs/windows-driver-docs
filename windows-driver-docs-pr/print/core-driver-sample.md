@@ -1,6 +1,5 @@
 ---
 title: Core Driver Sample
-author: windows-driver-content
 description: Core Driver Sample
 ms.assetid: cd46ea6a-7d21-4a4c-b21a-f9db3b47e3b4
 ms.date: 04/20/2017

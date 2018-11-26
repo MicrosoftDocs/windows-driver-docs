@@ -1,6 +1,5 @@
 ---
 title: Printer Capability Attributes
-author: windows-driver-content
 description: Printer Capability Attributes
 ms.assetid: 3ee98eee-8f46-4bf0-ac2c-f47f8402fa86
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: WDI Task OIDs
-author: windows-driver-content
 description: This section contains WDI task OIDs.
 ms.assetid: CAA92CA5-5CD6-4705-AA4C-54C1AA83ACA3
 ms.date: 07/18/2017

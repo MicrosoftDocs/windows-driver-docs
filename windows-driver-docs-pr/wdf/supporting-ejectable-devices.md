@@ -1,6 +1,5 @@
 ---
 title: Supporting Ejectable Devices
-author: windows-driver-content
 description: Supporting Ejectable Devices
 ms.assetid: 7820bb71-7218-4c5f-af2b-f41e1b5f696d
 keywords:

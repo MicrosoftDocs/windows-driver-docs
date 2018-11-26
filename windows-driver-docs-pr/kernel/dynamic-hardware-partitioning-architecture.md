@@ -1,6 +1,5 @@
 ---
 title: Dynamic Hardware Partitioning Architecture
-author: windows-driver-content
 description: Dynamic Hardware Partitioning Architecture
 ms.assetid: 1b6a1dc5-ec32-4bb9-acaf-14db284b4a0e
 keywords: ["dynamic hardware partitioning WDK , architecture", "hardware partitioning WDK dynamic , architecture", "partitions WDK dynamic hardware , architecture", "architecture WDK dynamic hardware partitioning", "dynamically partitionable servers WDK", "servers WDK dynamic hardware partitioning"]

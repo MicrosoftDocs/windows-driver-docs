@@ -1,6 +1,5 @@
 ---
 title: Kernel Network Redirector Driver Components
-author: windows-driver-content
 description: Kernel Network Redirector Driver Components
 ms.assetid: 0d699794-86a0-40bd-beff-b040a8d51b42
 keywords:

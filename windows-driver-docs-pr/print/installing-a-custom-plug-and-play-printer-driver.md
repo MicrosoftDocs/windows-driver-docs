@@ -1,6 +1,5 @@
 ---
 title: Installing a Custom Plug and Play Printer Driver
-author: windows-driver-content
 description: Installing a Custom Plug and Play Printer Driver
 ms.assetid: 0269afbe-c7d1-4227-ad77-b921852d6a0c
 keywords:

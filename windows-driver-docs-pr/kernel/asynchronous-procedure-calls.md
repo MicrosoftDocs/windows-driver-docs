@@ -1,6 +1,5 @@
 ---
 title: Asynchronous Procedure Calls
-author: windows-driver-content
 description: Asynchronous Procedure Calls
 ms.assetid: c2d45c84-9b61-41e1-9a8e-eabbc0609a0b
 keywords: ["synchronization WDK kernel , asynchronous procedure calls", "kernel APCs WDK", "thread APCs WDK"]

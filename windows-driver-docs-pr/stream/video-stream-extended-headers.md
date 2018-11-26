@@ -1,6 +1,5 @@
 ---
 title: Video Stream Extended Headers
-author: windows-driver-content
 description: Video Stream Extended Headers
 ms.assetid: 6540026c-a41a-49e2-a41f-fe64106408f5
 keywords:

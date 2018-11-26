@@ -1,6 +1,5 @@
 ---
 title: DispatchQueryInformation Routines
-author: windows-driver-content
 description: DispatchQueryInformation Routines
 ms.assetid: dfcb8ad0-ae95-4dd7-b4c8-a2f3ad4b12ef
 keywords: ["dispatch routines WDK kernel , DispatchQueryInformation routine", "DispatchQueryInformation routine", "IRP_MJ_QUERY_INFORMATION I/O function code", "query information dispatch routines WDK kernel"]

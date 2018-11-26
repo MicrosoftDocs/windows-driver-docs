@@ -1,6 +1,5 @@
 ---
 title: Writing AVStream Minidrivers for Hardware
-author: windows-driver-content
 description: Writing AVStream Minidrivers for Hardware
 ms.assetid: d7dc42d7-efd0-41ff-abab-d97c508a41e6
 keywords:

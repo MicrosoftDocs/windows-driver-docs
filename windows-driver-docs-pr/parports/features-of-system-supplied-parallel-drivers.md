@@ -1,6 +1,5 @@
 ---
 title: Features of System-Supplied Parallel Drivers
-author: windows-driver-content
 description: Features of System-Supplied Parallel Drivers
 ms.assetid: 6d579a88-4608-4333-9789-e10c562fc644
 keywords:

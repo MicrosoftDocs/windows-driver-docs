@@ -1,6 +1,5 @@
 ---
 title: DVD Decoder Related KS Properties
-author: windows-driver-content
 description: DVD Decoder Related KS Properties
 ms.assetid: 97ce831e-429b-4097-a9f4-625315fe1247
 keywords:

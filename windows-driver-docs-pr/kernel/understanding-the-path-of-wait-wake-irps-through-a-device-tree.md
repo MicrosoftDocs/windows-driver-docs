@@ -1,6 +1,5 @@
 ---
 title: Understanding the Path of Wait/Wake IRPs through a Device Tree
-author: windows-driver-content
 description: Understanding the Path of Wait/Wake IRPs through a Device Tree
 ms.assetid: 35118367-d20b-45c9-a296-656028339c59
 keywords: ["wait/wake IRPs WDK power management , device tree path", "bus drivers WDK power management", "USB WDK power management", "function drivers WDK power management", "FDOs WDK power management", "filter DOs WDK power management", "physical device objects WDK power management", "PDOs WDK power management"]

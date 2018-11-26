@@ -1,7 +1,6 @@
 ---
 title: Debugger Data Model C++ Additional Interfaces
 description: This topic describes  addtional interfaces associated with the Debugger C++ Data Model, such as metadata, concepts and object enumeration.
-ms.author: domars
 ms.date: 10/05/2018
 ---
 

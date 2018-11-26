@@ -1,6 +1,5 @@
 ---
 title: Determining Whether a Device Can Wake the System
-author: windows-driver-content
 description: Determining Whether a Device Can Wake the System
 ms.assetid: 59f23035-4169-4dd4-ac60-882c32efda2c
 keywords: ["wait/wake IRPs WDK power management , devices with wake capability", "power management WDK kernel , wake-up capabilities", "external wake signals WDK", "awakening devices", "wake-up capabilities WDK power management", "device wake ups WDK power management"]

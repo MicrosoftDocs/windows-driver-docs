@@ -1,6 +1,5 @@
 ---
 title: Command Names
-author: windows-driver-content
 description: Command Names
 ms.assetid: eb659fb2-e74c-42c1-bb80-6d2f03e32e6c
 keywords:

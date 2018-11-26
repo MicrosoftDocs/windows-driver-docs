@@ -1,6 +1,5 @@
 ---
 title: Guidelines for Porting Legacy Filter Drivers
-author: windows-driver-content
 description: Guidelines for Porting Legacy Filter Drivers
 ms.assetid: 6dd9637e-e9b3-4434-996c-c3f8ce6584c4
 keywords:

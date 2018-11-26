@@ -1,6 +1,5 @@
 ---
 title: Operation Flow with Single Device Stack
-author: windows-driver-content
 description: Operation Flow with Single Device Stack
 ms.assetid: b7e38844-2e00-48b8-9741-3bfc38869a6d
 keywords:

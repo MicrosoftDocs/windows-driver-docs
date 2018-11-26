@@ -1,6 +1,5 @@
 ---
 title: GDL Values
-author: windows-driver-content
 description: GDL Values
 ms.assetid: 0e634646-d334-4b9c-b9d2-36026f617575
 keywords:

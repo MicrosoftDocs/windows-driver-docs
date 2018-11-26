@@ -1,6 +1,5 @@
 ---
 title: Filter Graph Examples
-author: windows-driver-content
 description: Filter Graph Examples
 ms.assetid: 7888da79-b21d-4935-ac6c-25ef2f947931
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Communication Between User Mode and Kernel Mode
-author: windows-driver-content
 description: Communication Between User Mode and Kernel Mode
 ms.assetid: ddfec0d0-ec7d-4f76-91b8-2cc34cfacf4e
 keywords:

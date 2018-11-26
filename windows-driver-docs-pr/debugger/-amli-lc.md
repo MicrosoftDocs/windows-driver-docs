@@ -3,7 +3,6 @@ title: amli lc
 description: The amli lc extension lists all active ACPI contexts.
 ms.assetid: 070db570-ab8c-47ce-88fa-dc5f16c1c2ee
 keywords: ["amli lc Windows Debugging"]
-ms.author: domars
 ms.date: 09/17/2018
 topic_type:
 - apiref

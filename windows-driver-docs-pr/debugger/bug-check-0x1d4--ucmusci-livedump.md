@@ -2,7 +2,6 @@
 title: Bug Check 0x1D4 UCMUCSI_LIVEDUMP 
 description: The UCMUCSI_LIVEDUMP live dump has a value of 0x000001D4.
 keywords: ["Bug Check 0x1D4 UCMUCSI_LIVEDUMP",  "UCMUCSI_LIVEDUMP"]
-ms.author: domars
 ms.date: 05/23/2018
 topic_type:
 - apiref

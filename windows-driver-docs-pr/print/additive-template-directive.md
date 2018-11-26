@@ -1,6 +1,5 @@
 ---
 title: Additive Template Directive
-author: windows-driver-content
 description: Additive Template Directive
 ms.assetid: 94883a51-a3a6-492e-9597-6a2f913d40bc
 keywords:

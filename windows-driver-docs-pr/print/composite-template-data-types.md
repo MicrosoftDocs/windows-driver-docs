@@ -1,6 +1,5 @@
 ---
 title: Composite Template Data Types
-author: windows-driver-content
 description: Composite Template Data Types
 ms.assetid: 5fd9218a-2827-4cca-b913-eeb6484653d9
 keywords:

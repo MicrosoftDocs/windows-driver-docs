@@ -1,6 +1,5 @@
 ---
 title: Using I/O Targets in UMDF
-author: windows-driver-content
 description: Using I/O Targets in UMDF
 ms.assetid: 5633242c-ffab-4af5-9650-7449395deb6b
 keywords:

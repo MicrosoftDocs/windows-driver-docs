@@ -1,6 +1,5 @@
 ---
 title: Default GDL Configurations
-author: windows-driver-content
 description: Default GDL Configurations
 ms.assetid: 9963513b-52dc-4fb7-8f85-abca2975c36d
 keywords:

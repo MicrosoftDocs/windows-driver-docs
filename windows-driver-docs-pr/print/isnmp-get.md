@@ -1,6 +1,5 @@
 ---
 title: ISNMP Get method
-author: windows-driver-content
 description: The Get method enables an ASP Web page to obtain the value identified by an SNMP OID.
 MS-HAID:
 - 'webfnc\_e3167766-cd60-4ae7-9c06-9a1ccb5ac3b9.xml'

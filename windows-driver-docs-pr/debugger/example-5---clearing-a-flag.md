@@ -2,7 +2,6 @@
 title: Example 5 Clearing a Flag
 description: Example 5 Clearing a Flag
 ms.assetid: 63c8bae9-ae6e-4d82-9389-ec36554635ab
-ms.author: domars
 ms.date: 10/12/2018
 ms.localizationpriority: medium
 ---

@@ -1,6 +1,5 @@
 ---
 title: Specifying New Device Fonts in PCL XL Minidrivers
-author: windows-driver-content
 description: Specifying New Device Fonts in PCL XL Minidrivers
 ms.assetid: 395b9200-4514-4b05-b417-15d4896914f4
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Automatically Generated Object Names
-author: windows-driver-content
 description: Automatically Generated Object Names
 ms.assetid: bbedfb17-9e71-4253-9e37-0a81d4c91b6b
 ms.date: 04/20/2017

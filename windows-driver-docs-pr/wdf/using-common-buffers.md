@@ -1,6 +1,5 @@
 ---
 title: Using Common Buffers
-author: windows-driver-content
 description: Using Common Buffers
 ms.assetid: 81a56f62-917e-4798-b2cc-6469c802fab8
 keywords:

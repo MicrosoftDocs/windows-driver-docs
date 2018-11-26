@@ -31,9 +31,9 @@ When your application copies the device metadata package to the [device metadata
 
 
 
-~~~
+
 After the device metadata package is installed in the [device metadata store](device-metadata-store.md), the [Device Metadata Retrieval Client](device-metadata-retrieval-client.md) (DMRC) accesses the device metadata package and presents the device information to the Devices and Printers user interface.
-~~~
+
 
 
 

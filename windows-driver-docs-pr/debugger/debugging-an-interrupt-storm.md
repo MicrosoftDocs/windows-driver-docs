@@ -3,7 +3,6 @@ title: Debugging an Interrupt Storm
 description: Debugging an Interrupt Storm
 ms.assetid: b863cb9c-dce0-4572-b0ed-6f7d3a6ba472
 keywords: ["pending IRPs", "I/O Request Packet (IRP), pending"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---

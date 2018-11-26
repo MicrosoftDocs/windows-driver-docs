@@ -1,6 +1,5 @@
 ---
 title: CPSUI-Supported Window Controls
-author: windows-driver-content
 description: CPSUI-Supported Window Controls
 ms.assetid: 557aa4e6-e48e-44fe-b833-93728426b056
 keywords:

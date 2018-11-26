@@ -1,6 +1,5 @@
 ---
 title: Synchronizing Cancellation of Sent Requests
-author: windows-driver-content
 description: Synchronizing Cancellation of Sent Requests
 ms.assetid: e7ec65c9-bc7b-46ea-853d-3e23b1763666
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Accelerometer data fields
-author: windows-driver-content
 description: This topic provides information about the data fields that are specific to the accelerometer.
 ms.assetid: 88333B6A-E262-4937-9349-156B00BA8CC4
 ms.date: 07/20/2018

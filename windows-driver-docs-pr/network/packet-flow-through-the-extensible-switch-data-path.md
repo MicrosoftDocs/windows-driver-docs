@@ -74,11 +74,11 @@ The extensible switch data path has the following parts, listed in the order tha
 
 
 
-~~~
+
 -   Clone or modify packets obtained from the ingress data path.
 
 -   Inject new packets into the ingress data path.
-~~~
+
 
 4.  In NDIS 6.40 and later, after the capturing and filtering extensions but before the forwarding extension on the ingress data path, the extensible switch does the following:
     -   If the packet is an NVGRE packet from an external network adapter, the address in the packet header is a provider address (PA) space address. The extensible switch indicates this by setting the **NativeForwardingRequired** flag in the packet's out-of-band (OOB) information. For more information, see [Hybrid Forwarding](hybrid-forwarding.md).
@@ -99,13 +99,13 @@ The extensible switch data path has the following parts, listed in the order tha
 
 
 
-~~~
+
 In addition, the forwarding extension can do the following:
 
 -   Clone or modify packets obtained from the ingress data path.
 
 -   Inject new packets into the ingress data path.
-~~~
+
 
 ### Underlying miniport edge
 
@@ -141,9 +141,9 @@ In addition, the forwarding extension can do the following:
 
 
 
-~~~
+
 Based on standard or custom switch or port policies, the extension can exclude the delivery of the packet to one or more destination ports that are contained within the OOB data.
-~~~
+
 
 3.  In NDIS 6.40 (Windows Server 2012 R2) and later, after the forwarding extension but before the filtering and capturing extensions on the egress data path, the extensible switch applies the built-in egress policies to the packet. These policies may include trunk mode, monitoring mode, egress ACLs, and quality of service (QoS) properties.
 

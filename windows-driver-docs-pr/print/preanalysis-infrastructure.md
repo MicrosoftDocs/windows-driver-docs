@@ -1,6 +1,5 @@
 ---
 title: Preanalysis Infrastructure
-author: windows-driver-content
 description: Preanalysis Infrastructure
 ms.assetid: 4c07145a-9a08-4507-8bab-769617e73d77
 keywords:

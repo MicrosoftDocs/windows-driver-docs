@@ -1,6 +1,5 @@
 ---
 title: PnP Driver Design Guidelines
-author: windows-driver-content
 description: PnP Driver Design Guidelines
 ms.assetid: 4e4a6a8e-3c7f-4561-bbe1-a8c06fe22d0a
 keywords: ["PnP WDK kernel , design guidelines", "Plug and Play WDK kernel , design guidelines"]

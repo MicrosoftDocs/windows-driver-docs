@@ -1,7 +1,6 @@
 ---
 Description: Developing Windows drivers for USB host controllers
 title: Developing Windows drivers for USB host controllers
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

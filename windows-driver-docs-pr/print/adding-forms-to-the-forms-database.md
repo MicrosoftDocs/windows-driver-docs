@@ -1,6 +1,5 @@
 ---
 title: Adding Forms to the Forms Database
-author: windows-driver-content
 description: Adding Forms to the Forms Database
 ms.assetid: ac306f05-6150-4e47-9272-e81e658a1ea6
 keywords:

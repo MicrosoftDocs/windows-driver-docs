@@ -1,6 +1,5 @@
 ---
 title: GDL Macro Arguments
-author: windows-driver-content
 description: GDL Macro Arguments
 ms.assetid: 2aeaf2fd-39e3-4661-85d1-ccb855a73044
 keywords:

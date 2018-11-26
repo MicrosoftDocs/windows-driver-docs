@@ -1,6 +1,5 @@
 ---
 title: Command Attributes
-author: windows-driver-content
 description: Command Attributes
 ms.assetid: 8ce2c668-a130-428e-bf5f-0eab2dcd3fdb
 keywords:

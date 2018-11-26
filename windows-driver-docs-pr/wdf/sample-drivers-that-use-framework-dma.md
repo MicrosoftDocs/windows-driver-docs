@@ -1,6 +1,5 @@
 ---
 title: Sample Drivers That Use Framework DMA
-author: windows-driver-content
 description: Sample Drivers That Use Framework DMA
 ms.assetid: 4d04a517-97b5-441e-b5f5-ca839c3acf1a
 keywords:

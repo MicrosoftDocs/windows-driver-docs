@@ -1,6 +1,5 @@
 ---
 title: Hello World' Definition File
-author: windows-driver-content
 description: Hello World' Definition File
 ms.assetid: 50c38eea-7826-44bb-9048-ce8e07ce3478
 ms.date: 04/20/2017

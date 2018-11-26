@@ -1,6 +1,5 @@
 ---
 title: IEC-61883 Protocol Driver in a Client Driver Stack
-author: windows-driver-content
 description: IEC-61883 Protocol Driver in a Client Driver Stack
 ms.assetid: cee0c0ee-7326-421c-af5a-b483c878b289
 keywords:

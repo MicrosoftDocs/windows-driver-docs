@@ -3,7 +3,6 @@ title: Debug Break
 description: Debug Break
 ms.assetid: fc17d0b2-3ef5-4e10-a6a3-51f7011fddcf
 keywords: ["Debug Break", "controlling the target, Debug Break"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---

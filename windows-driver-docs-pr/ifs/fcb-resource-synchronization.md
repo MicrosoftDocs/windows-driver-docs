@@ -1,6 +1,5 @@
 ---
 title: FCB Resource Synchronization
-author: windows-driver-content
 description: FCB Resource Synchronization
 ms.assetid: 8355907e-e313-4e54-a63f-a82d9ce0d31b
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Registering and Queuing a CustomDpc Routine
-author: windows-driver-content
 description: Registering and Queuing a CustomDpc Routine
 ms.assetid: 7c35f8f8-a6dc-43b1-9120-701227d7b4c5
 keywords: ["CustomDpc", "registering CustomDpc routine", "queuing CustomDpc routine"]

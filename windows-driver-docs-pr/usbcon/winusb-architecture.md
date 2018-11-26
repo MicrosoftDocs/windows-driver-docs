@@ -1,7 +1,6 @@
 ---
 Description: WinUSB consists of two primary components - Winusb.sys, a kernel-mode driver and Winusb.dll - user-mode DLL.
 title: WinUSB Architecture and Modules
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

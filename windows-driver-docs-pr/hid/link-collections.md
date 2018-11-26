@@ -1,6 +1,5 @@
 ---
 title: Link Collections
-author: windows-driver-content
 description: Link Collections
 ms.assetid: 3f934661-c33c-4c08-82ac-ee2e0f519c8e
 keywords:

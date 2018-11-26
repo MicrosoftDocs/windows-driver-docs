@@ -1,6 +1,5 @@
 ---
 title: Supporting PnP and Power Management in Your Driver
-author: windows-driver-content
 description: Supporting PnP and Power Management in Your Driver
 ms.assetid: d9cf987f-d994-4ea9-a467-4b1b8bcdc456
 keywords:

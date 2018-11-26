@@ -1,6 +1,5 @@
 ---
 title: AVStream Allocators
-author: windows-driver-content
 description: AVStream Allocators
 ms.assetid: cda90faa-d4e3-4f17-aa5a-87dcde314bfd
 keywords:

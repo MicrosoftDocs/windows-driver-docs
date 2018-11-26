@@ -1,6 +1,5 @@
 ---
 title: Multipage IStream Transfers
-author: windows-driver-content
 description: Multipage IStream Transfers
 ms.assetid: 0d17cfa8-f200-4d87-a2cb-cfd8dbc24e1e
 ms.date: 04/20/2017

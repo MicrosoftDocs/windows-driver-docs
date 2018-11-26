@@ -1,6 +1,5 @@
 ---
 title: USB-Specific UMDF 1.x Interfaces
-author: windows-driver-content
 description: USB-Specific UMDF 1.x Interfaces
 ms.assetid: b458d96d-e15e-4a9b-a26e-490620cec38e
 keywords:

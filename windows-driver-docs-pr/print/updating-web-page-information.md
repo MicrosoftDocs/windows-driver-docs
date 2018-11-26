@@ -1,6 +1,5 @@
 ---
 title: Updating Web Page Information
-author: windows-driver-content
 description: Updating Web Page Information
 ms.assetid: 3ea2c8c0-7e46-47ff-8c32-82760eafd893
 keywords:

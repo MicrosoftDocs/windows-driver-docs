@@ -1,6 +1,5 @@
 ---
 title: Example I/O Request - The Details
-author: windows-driver-content
 description: Example I/O Request - The Details
 ms.assetid: 480db6a1-2a13-4f1a-87ff-c3bd37aa79be
 keywords: ["I/O stack locations WDK kernel", "layered driver IRP processing WDK kernel", "stack locations WDK kernel"]

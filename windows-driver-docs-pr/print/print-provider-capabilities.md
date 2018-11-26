@@ -1,6 +1,5 @@
 ---
 title: Print Provider Capabilities
-author: windows-driver-content
 description: Print Provider Capabilities
 ms.assetid: 1b01aac5-673a-4593-a52e-6017d9683c42
 keywords:

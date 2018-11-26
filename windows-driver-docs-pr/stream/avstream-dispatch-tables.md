@@ -1,6 +1,5 @@
 ---
 title: AVStream Dispatch Tables
-author: windows-driver-content
 description: AVStream Dispatch Tables
 ms.assetid: 974ea9ee-bb59-4973-83ef-c61f0240a555
 keywords:

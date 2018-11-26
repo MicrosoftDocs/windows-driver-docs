@@ -1,6 +1,5 @@
 ---
 title: Preprocessing and Postprocessing IRPs
-author: windows-driver-content
 description: Preprocessing and Postprocessing IRPs
 ms.assetid: a0e14ae6-a06e-4c24-8b64-b56f485cf9ff
 keywords:

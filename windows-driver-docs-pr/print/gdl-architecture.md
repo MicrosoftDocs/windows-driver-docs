@@ -1,6 +1,5 @@
 ---
 title: GDL Architecture
-author: windows-driver-content
 description: GDL Architecture
 ms.assetid: 3e796218-ab2a-40a7-a0e3-caeec5c6656e
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Sample UI Plug-In
-author: windows-driver-content
 description: Sample UI Plug-In
 ms.assetid: a97b7769-c820-413e-96de-a1a2358c6979
 keywords:

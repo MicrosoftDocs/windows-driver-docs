@@ -1,6 +1,5 @@
 ---
 title: Handling Commit Operations
-author: windows-driver-content
 description: Handling Commit Operations
 ms.assetid: 4885476e-ce68-4674-b8a5-8a317f33cd5b
 keywords: ["transactions WDK KTM , committing transactions", "committing transactions WDK KTM", "resource managers WDK KTM , committing transactions", "single-phase commit WDK KTM , multi-phase commit WDK KTM", "pre-prepare phase WDK KTM", "prepare phase WDK KTM", "commit phase WDK KTM"]

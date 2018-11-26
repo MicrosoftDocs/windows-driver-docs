@@ -1,7 +1,6 @@
 ---
 title: HTTPS
 description: HTTPS
-author: windows-driver-content
 ms.date: 05/07/2018
 ms.localizationpriority: medium
 ---

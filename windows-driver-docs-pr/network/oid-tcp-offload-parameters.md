@@ -1,6 +1,5 @@
 ---
 title: OID_TCP_OFFLOAD_PARAMETERS
-author: windows-driver-content
 description: This topic describes the OID_TCP_OFFLOAD_PARAMETERS object identifier (OID). 
 ms.assetid: 5D9B5F62-E506-4983-B247-A93B81E70A43
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: GDL Examples
-author: windows-driver-content
 description: GDL Examples
 ms.assetid: c0279584-64b4-47f2-b607-f7e0988250cc
 keywords:

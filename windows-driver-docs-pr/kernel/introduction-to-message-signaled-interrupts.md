@@ -1,6 +1,5 @@
 ---
 title: Introduction to Message-Signaled Interrupts
-author: windows-driver-content
 description: Introduction to Message-Signaled Interrupts
 ms.assetid: 035207a1-762d-463e-822e-64ac4833afa4
 keywords: ["message-signaled interrupts WDK kernel", "MSIs WDK kernel"]

@@ -1,6 +1,5 @@
 ---
 title: Video Decoder Change Event
-author: windows-driver-content
 description: Video Decoder Change Event
 ms.assetid: 94269541-49e5-4273-874a-c6c2643ec2ae
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Initializing a File System Filter Driver
-author: windows-driver-content
 description: Initializing a File System Filter Driver
 ms.assetid: 8a487665-0210-49f5-af91-de78de982506
 keywords:

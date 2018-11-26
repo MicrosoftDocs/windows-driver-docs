@@ -1,6 +1,5 @@
 ---
 title: Access Control List
-author: windows-driver-content
 description: Access Control List
 ms.assetid: e682c2cc-ddd7-482b-b4f2-3e163d914752
 keywords:

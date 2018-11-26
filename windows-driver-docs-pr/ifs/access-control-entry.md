@@ -1,6 +1,5 @@
 ---
 title: Access Control Entry
-author: windows-driver-content
 description: Access Control Entry
 ms.assetid: 4dc72f43-e5a7-441d-8586-f8893b9c1084
 keywords:

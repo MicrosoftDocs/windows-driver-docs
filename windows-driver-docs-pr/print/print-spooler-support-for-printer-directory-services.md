@@ -1,6 +1,5 @@
 ---
 title: Print Spooler Support for Printer Directory Services
-author: windows-driver-content
 description: Print Spooler Support for Printer Directory Services
 ms.assetid: 23cd73a5-8628-4471-a6c6-e056536fcc75
 keywords:

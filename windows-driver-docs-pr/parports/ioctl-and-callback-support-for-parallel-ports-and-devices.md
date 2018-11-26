@@ -1,6 +1,5 @@
 ---
 title: IOCTL and Callback Support for Parallel Ports and Devices
-author: windows-driver-content
 description: IOCTL and Callback Support for Parallel Ports and Devices
 ms.assetid: 72a31f50-2f59-4a4d-aac7-571f83a94259
 keywords:

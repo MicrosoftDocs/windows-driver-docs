@@ -1,6 +1,5 @@
 ---
 title: Root-Level-Only Attributes
-author: windows-driver-content
 description: Root-Level-Only Attributes
 ms.assetid: 1b3d74b9-4cf4-4303-92ae-b93b3f9b7f7c
 keywords:

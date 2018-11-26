@@ -30,9 +30,9 @@ To begin, select the appropriate locale or locales of your metadata package, as 
 
 
 
-~~~
+
 -   If you don't want the package to appear in a specific language when a locale-specific package isn't available, select **No default**.
-~~~
+
 
 4.  At the bottom of the screen, select one or both of the following options:
     -   Select **Windows 8 Package (multiple locales per package)** if the following criteria apply to you:

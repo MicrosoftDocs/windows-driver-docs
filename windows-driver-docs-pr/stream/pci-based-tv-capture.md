@@ -1,6 +1,5 @@
 ---
 title: PCI-Based TV Capture
-author: windows-driver-content
 description: PCI-Based TV Capture
 ms.assetid: ae97d5f7-82de-4d6e-9835-ff4c7427f333
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Timer and Worker Thread Management
-author: windows-driver-content
 description: Timer and Worker Thread Management
 ms.assetid: b1feeb4a-0555-4ed6-a26c-ef2a5fc58280
 keywords:

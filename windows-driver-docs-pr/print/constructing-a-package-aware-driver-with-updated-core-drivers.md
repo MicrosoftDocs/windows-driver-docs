@@ -1,6 +1,5 @@
 ---
 title: Constructing a Package-Aware Driver with Updated Core Drivers
-author: windows-driver-content
 description: Constructing a Package-Aware Driver with Updated Core Drivers
 ms.assetid: 801ac83c-a04a-4a3f-81a9-24010a390ee5
 ms.date: 04/20/2017

@@ -1,6 +1,5 @@
 ---
 title: Storage Class Driver's InterpretRequestSense Routine
-author: windows-driver-content
 description: Storage Class Driver's InterpretRequestSense Routine
 ms.assetid: abfb529d-7fab-40f7-b4cd-e6adb4cf643e
 keywords:

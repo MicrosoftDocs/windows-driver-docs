@@ -1,6 +1,5 @@
 ---
 title: Supporting CMYK Color Space
-author: windows-driver-content
 description: Supporting CMYK Color Space
 ms.assetid: b8ac5f1a-c903-4313-b7de-0335f4c44367
 keywords:

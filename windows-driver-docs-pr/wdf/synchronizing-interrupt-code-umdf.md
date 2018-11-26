@@ -1,6 +1,5 @@
 ---
 title: Synchronizing Interrupt Code
-author: windows-driver-content
 description: Synchronizing Interrupt Code
 ms.assetid: 5E2D0063-2251-40B3-8982-46001E67EB55
 ms.date: 04/20/2017

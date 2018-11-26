@@ -1,6 +1,5 @@
 ---
 title: Interfaces for Segmentation Filters
-author: windows-driver-content
 description: Interfaces for Segmentation Filters
 ms.assetid: 428f6fce-d76c-4485-aa92-39f2b608160d
 ms.date: 04/20/2017

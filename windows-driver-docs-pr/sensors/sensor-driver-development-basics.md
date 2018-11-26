@@ -1,6 +1,5 @@
 ---
 title: Sensor driver development basics
-author: windows-driver-content
 description: Sensor driver development basics
 ms.assetid: 8360f4f5-1e47-4fae-8827-e471eb997d79
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Registry Settings for the Serial Service
-author: windows-driver-content
 description: Registry Settings for the Serial Service
 ms.assetid: 5c4a28ab-e2e5-45b4-8179-6f5d40e9c98c
 keywords:

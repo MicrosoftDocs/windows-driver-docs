@@ -1,6 +1,5 @@
 ---
 title: Plug and play support
-author: windows-driver-content
 description: This section describes the enumeration process on the Universal Serial Bus.
 ms.assetid: CB3D76DB-4A96-4A19-BC1C-C9181A12B04E
 ms.date: 04/20/2017

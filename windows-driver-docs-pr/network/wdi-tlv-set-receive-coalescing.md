@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_SET_RECEIVE_COALESCING
-author: windows-driver-content
 description: WDI_TLV_SET_RECEIVE_COALESCING is a TLV that contains received packet coalescing parameters for OID_WDI_SET_RECEIVE_COALESCING.
 ms.assetid: 7937517E-79E5-4BF6-9C22-79E1D73CA97C
 ms.date: 07/18/2017

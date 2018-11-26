@@ -1,6 +1,5 @@
 ---
 title: Introduction to Print Processors
-author: windows-driver-content
 description: Introduction to Print Processors
 ms.assetid: a34d8daa-b000-4501-8799-5f38cdf38ba4
 keywords:

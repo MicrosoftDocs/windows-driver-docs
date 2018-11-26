@@ -1,6 +1,5 @@
 ---
 title: Accessing Printer Driver Interfaces from Plug-Ins
-author: windows-driver-content
 description: Accessing Printer Driver Interfaces from Plug-Ins
 ms.assetid: 021ba789-99bd-4ab5-98fb-0d24ffd0ce25
 keywords:

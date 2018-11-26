@@ -1,6 +1,5 @@
 ---
 title: SCSI Driver
-author: windows-driver-content
 description: SCSI Driver
 ms.assetid: e69e3ac6-6726-4f63-afdb-2da1255dde19
 ms.date: 04/20/2017

@@ -1,6 +1,5 @@
 ---
 title: Programming a Device for an I/O Operation
-author: windows-driver-content
 description: Programming a Device for an I/O Operation
 ms.assetid: 952b07d8-81e3-40ec-8acd-be1143a7d2a2
 keywords: ["critical section routines WDK kernel", "I/O WDK kernel , device programming"]

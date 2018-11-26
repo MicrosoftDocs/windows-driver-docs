@@ -1,6 +1,5 @@
 ---
 title: GDL Templates
-author: windows-driver-content
 description: GDL Templates
 ms.assetid: 9cce885d-395e-4f8d-8076-951d75d82410
 keywords:

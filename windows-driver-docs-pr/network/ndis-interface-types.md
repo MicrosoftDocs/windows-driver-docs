@@ -1,6 +1,5 @@
 ---
 title: NDIS Interface Types
-author: windows-driver-content
 description: This topic describes types for NDIS Interfaces.
 ms.assetid: 80320da2-d35f-41de-b001-2cb71d202ccc
 keywords:

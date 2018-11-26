@@ -1,6 +1,5 @@
 ---
 title: Printer Minidriver Changes
-author: windows-driver-content
 description: Printer Minidriver Changes
 ms.assetid: 8f427642-a758-48bf-96e1-95a27adbaf23
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Framework I/O Request Object
-author: windows-driver-content
 description: Framework I/O Request Object
 ms.assetid: e48437ee-597d-45b1-9093-8d5921356af5
 keywords:

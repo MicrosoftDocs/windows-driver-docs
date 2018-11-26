@@ -1,6 +1,5 @@
 ---
 title: AddDevice Routines in Bus Drivers
-author: windows-driver-content
 description: AddDevice Routines in Bus Drivers
 ms.assetid: 70af7116-2f29-4d77-a6d5-c1e0417e6f81
 keywords: ["bus drivers WDK kernel", "AddDevice routines WDK kernel , bus drivers"]

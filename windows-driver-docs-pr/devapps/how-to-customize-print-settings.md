@@ -296,7 +296,7 @@ private void DisplaySettings(bool constraints=false)
         PopulateBox(featureBoxes[i], index, displayName, selectedOption, constrainedList);
         selections[i] = selectedOption;
 
-        // Everytime the selection for a feature changes, we update our local cached set of selections.
+        // Every time the selection for a feature changes, we update our local cached set of selections.
         featureBoxes[i].SelectionChanged += OnFeatureOptionsChanged;
 
         // Show existing features

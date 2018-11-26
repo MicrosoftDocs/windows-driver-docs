@@ -1,6 +1,5 @@
 ---
 title: Using a Handle to a Registry-Key Object
-author: windows-driver-content
 description: Using a Handle to a Registry-Key Object
 ms.assetid: 25982249-31dc-4542-9ebb-139991619b40
 keywords: ["handle to registry-key object WDK kernel", "registry WDK kernel , object routines", "driver registry information WDK kernel , object routines", "object routines WDK kernel", "registry-key objects WDK kernel"]

@@ -1,6 +1,5 @@
 ---
 title: Returning FLT_PREOP_SUCCESS_NO_CALLBACK
-author: windows-driver-content
 description: Returning FLT_PREOP_SUCCESS_NO_CALLBACK
 ms.assetid: cde708b0-b572-4444-ba4b-158b6906884e
 keywords:

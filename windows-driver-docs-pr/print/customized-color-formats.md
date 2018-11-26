@@ -1,6 +1,5 @@
 ---
 title: Customized Color Formats
-author: windows-driver-content
 description: Customized Color Formats
 ms.assetid: 309d33e8-6338-4c32-8e03-d6cbf3371e16
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Supporting Multifunction Devices On Other Buses
-author: windows-driver-content
 description: Supporting Multifunction Devices On Other Buses
 ms.assetid: 5fc78dc5-0553-4557-b188-a34810305061
 keywords:

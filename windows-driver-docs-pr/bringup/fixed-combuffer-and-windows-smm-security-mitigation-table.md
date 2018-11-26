@@ -1,7 +1,6 @@
 ---
 title: Fixed ComBuffer and Windows SMM Security Mitigation Table (WSMT)
 description: Fixed ComBuffer and Windows SMM Security Mitigation Table (WSMT)
-author: windows-driver-content
 ms.date: 05/07/2018
 ms.localizationpriority: medium
 ---

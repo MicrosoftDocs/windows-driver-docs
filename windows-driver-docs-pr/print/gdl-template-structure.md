@@ -1,6 +1,5 @@
 ---
 title: GDL Template Structure
-author: windows-driver-content
 description: GDL Template Structure
 ms.assetid: 68c03c8a-f0d5-43db-a44a-5b0c344fa934
 keywords:

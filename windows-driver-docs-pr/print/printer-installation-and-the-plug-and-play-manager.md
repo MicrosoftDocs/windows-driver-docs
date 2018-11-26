@@ -1,6 +1,5 @@
 ---
 title: Printer Installation and the Plug and Play Manager
-author: windows-driver-content
 description: Printer Installation and the Plug and Play Manager
 ms.assetid: 1edc92f1-fcd9-4af0-957d-cd7ff2e40125
 keywords:

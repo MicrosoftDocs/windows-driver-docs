@@ -1,6 +1,5 @@
 ---
 title: Introduction to Parallel Ports and Devices
-author: windows-driver-content
 description: Introduction to Parallel Ports and Devices
 ms.assetid: b0aaf63d-cc2d-4273-9760-6446cbb28938
 keywords:

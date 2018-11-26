@@ -1,6 +1,5 @@
 ---
 title: Mapping PTP Associations to WIA Folders
-author: windows-driver-content
 description: Mapping PTP Associations to WIA Folders
 ms.assetid: 81de26fd-1f93-4018-a628-ad0b0d7468ba
 ms.date: 04/20/2017

@@ -1,6 +1,5 @@
 ---
 title: Sample INF File for a Web Services Scanner
-author: windows-driver-content
 description: Sample INF File for a Web Services Scanner
 ms.assetid: 1e65739f-9216-4962-9108-60ba291ff052
 ms.date: 04/20/2017

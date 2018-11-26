@@ -1,6 +1,5 @@
 ---
 title: GDL Schema Construct Element
-author: windows-driver-content
 description: GDL Schema Construct Element
 ms.assetid: 46653504-4ce7-455c-a22a-a6032cbd6a3e
 keywords:

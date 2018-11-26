@@ -1,6 +1,5 @@
 ---
 title: Converter
-author: windows-driver-content
 description: Converter
 ms.assetid: eadbbaf5-3fe3-484f-b3f1-3d543ddc817f
 ms.date: 04/20/2017

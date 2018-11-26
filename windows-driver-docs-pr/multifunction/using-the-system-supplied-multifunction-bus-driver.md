@@ -1,6 +1,5 @@
 ---
 title: Using the System-Supplied Multifunction Bus Driver
-author: windows-driver-content
 description: Using the System-Supplied Multifunction Bus Driver
 ms.assetid: 75fe659d-5311-4bc6-adfb-fd608e10c718
 keywords:

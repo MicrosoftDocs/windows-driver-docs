@@ -1,6 +1,5 @@
 ---
 title: Iasphelp Methods
-author: windows-driver-content
 description: Iasphelp Methods
 MS-HAID:
 - 'webfnc\_698567a4-801e-4b0a-8e4f-fdd9951c8d72.xml'

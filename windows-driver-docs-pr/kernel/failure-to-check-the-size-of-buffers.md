@@ -1,6 +1,5 @@
 ---
 title: Failure to Check the Size of Buffers
-author: windows-driver-content
 description: Failure to Check the Size of Buffers
 ms.assetid: e9d9a5d9-19a5-4a1d-95f9-df2021c51c41
 keywords: ["buffer size WDK kernel", "input buffers WDK kernel", "output buffers WDK kernel"]

@@ -1,6 +1,5 @@
 ---
 title: Disabling an Error Source
-author: windows-driver-content
 description: Disabling an Error Source
 ms.assetid: a481ac98-0ff1-4583-a81a-1d2e4f968111
 keywords:

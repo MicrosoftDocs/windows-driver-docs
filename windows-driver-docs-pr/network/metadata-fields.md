@@ -1,6 +1,5 @@
 ---
 title: Metadata fields
-author: windows-driver-content
 description: This section describes metadata fields for Windows Filtering Platform callout drivers.
 ms.assetid: 6a40cfd3-8820-4247-b3ad-558899c91aa6
 keywords:

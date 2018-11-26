@@ -1,6 +1,5 @@
 ---
 title: Using an IoTimer Routine
-author: windows-driver-content
 description: Using an IoTimer Routine
 ms.assetid: 9de2d2ec-31c5-4a60-96bf-5da067d2d9db
 keywords: ["IoTimer"]

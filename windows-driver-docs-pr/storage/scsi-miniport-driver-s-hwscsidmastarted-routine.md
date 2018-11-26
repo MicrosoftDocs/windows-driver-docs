@@ -1,6 +1,5 @@
 ---
 title: SCSI Miniport Driver's HwScsiDmaStarted Routine
-author: windows-driver-content
 description: SCSI Miniport Driver's HwScsiDmaStarted Routine
 ms.assetid: 697839f0-e912-42a5-abe0-f6bb946c86d8
 keywords:

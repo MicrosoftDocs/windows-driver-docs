@@ -1,6 +1,5 @@
 ---
 title: Optional Dispatch Routines
-author: windows-driver-content
 description: Optional Dispatch Routines
 ms.assetid: 38a3fcc9-237d-432d-85db-1594697c96a5
 keywords: ["dispatch routines WDK kernel , optional", "optional dispatch routines WDK kernel", "mass storage devices WDK dispatch routines"]

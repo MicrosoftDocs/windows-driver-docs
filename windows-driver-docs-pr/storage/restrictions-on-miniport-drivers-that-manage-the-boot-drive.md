@@ -1,6 +1,5 @@
 ---
 title: Restrictions on Miniport Drivers that Manage the Boot Drive
-author: windows-driver-content
 description: Restrictions on Miniport Drivers that Manage the Boot Drive
 ms.assetid: 78375e9b-8be9-4e64-b90e-cc8c4ab1751b
 keywords:
