@@ -27,7 +27,7 @@ Plug and Play provides:
 
 To support PnP, a driver must follow these guidelines:
 
--   It must contain a [*DispatchPnP*](https://msdn.microsoft.com/library/windows/hardware/ff543341) routine.
+-   It must contain a [*DispatchPnP*](https://docs.microsoft.com/windows-hardware/drivers/kernel/dispatchpnp-routines#feedback) routine.
 
     This dispatch routine must handle [**IRP\_MJ\_PNP**](https://msdn.microsoft.com/library/windows/hardware/ff550772) requests and associated minor function codes. For more information, see [DispatchPnP Routines](dispatchpnp-routines.md).
 
