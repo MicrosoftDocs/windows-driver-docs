@@ -1,6 +1,5 @@
 ---
 title: Calling PoStartNextPowerIrp from a Filter Driver
-author: windows-driver-content
 description: Calling PoStartNextPowerIrp from a Filter Driver
 ms.assetid: 6005f107-8f90-4530-91c2-9f0947cacb0a
 keywords: ["power IRPs WDK kernel , PoStartNextPowerIrp", "PoStartNextPowerIrp", "filter drivers WDK power management"]

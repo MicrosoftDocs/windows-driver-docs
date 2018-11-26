@@ -1,6 +1,5 @@
 ---
 title: Routines Provided by RDBSS
-author: windows-driver-content
 description: Routines Provided by RDBSS
 ms.assetid: 37631760-ac89-4ef0-ad7c-ed3e68aa1ceb
 keywords:

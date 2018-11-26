@@ -1,9 +1,7 @@
 ---
-author: EliotSeattle
 ms.assetid: AE3E003F-BDEC-438B-A80A-3CE1675B369C
 description: Use this method in the Microsoft Store analytics API to get aggregate hardware error reporting data for a given date range and other optional filters. This method is intended only for OEMs.
 title: Get OEM hardware error reporting data
-ms.author: eliotgra
 ms.date: 06/04/2018
 ms.topic: article
 keywords: windows 10, uwp, Store services, Microsoft Store analytics API, errors

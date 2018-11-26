@@ -1,6 +1,5 @@
 ---
 title: Iasphelp get\_IsCluster method
-author: windows-driver-content
 description: The IsCluster property enables an ASP Web page to determine whether the Cluster service is running on a cluster node.
 MS-HAID:
 - 'webfnc\_96d39d88-6d6f-49af-93d7-0f6668af9564.xml'

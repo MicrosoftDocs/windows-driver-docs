@@ -1,6 +1,5 @@
 ---
 title: Unload Routine Functionality
-author: windows-driver-content
 description: Unload Routine Functionality
 ms.assetid: a36b4687-df1d-498f-b9f3-d13ae2a9a3cd
 keywords: ["Unload routines WDK kernel , functionality"]

@@ -1,6 +1,5 @@
 ---
 title: Processing IRPs in a Lowest-Level Driver
-author: windows-driver-content
 description: Processing IRPs in a Lowest-Level Driver
 ms.assetid: 9b8c2586-d47b-49ab-bf65-a298af36304c
 keywords: ["IRPs WDK kernel , processing examples", "IRPs WDK kernel , I/O status blocks", "I/O status blocks WDK kernel", "status blocks WDK kernel", "IoStartNextPacket", "IoCompleteRequest", "IoRequestDpc", "AllocateAdapterChannel", "MapTransfer", "IoStartPacket", "IoMarkIrpPending", "IoGetCurrentIrpStackLocation"]

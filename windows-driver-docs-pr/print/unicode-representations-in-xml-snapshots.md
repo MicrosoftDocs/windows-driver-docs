@@ -1,6 +1,5 @@
 ---
 title: Unicode Representations in XML Snapshots
-author: windows-driver-content
 description: Unicode Representations in XML Snapshots
 ms.assetid: 6efb7b2d-ab4d-4caf-a7e1-ed3bfab14453
 keywords:

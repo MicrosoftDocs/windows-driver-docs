@@ -1,6 +1,5 @@
 ---
 title: Reparse Point Tag Request
-author: windows-driver-content
 description: This is the mechanism to obtain a Reparse Point tag, for those file system filter drivers that need one.
 ms.assetid: B4E4382B-4FB8-4E21-8FC4-EDDE8DD4AC77
 ms.date: 04/20/2017

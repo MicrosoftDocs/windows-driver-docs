@@ -1,6 +1,5 @@
 ---
 title: WDF_PTR_ADD_OFFSET macro
-author: windows-driver-content
 description: The WDF_PTR_ADD_OFFSET macro adds an offset value to an address and returns the resulting address.
 ms.assetid: 21402be4-ef71-4828-b588-d178d66472e5
 keywords:

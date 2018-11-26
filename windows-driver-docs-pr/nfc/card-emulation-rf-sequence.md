@@ -1,6 +1,5 @@
 ---
 title: Card emulation RF sequence
-author: windows-driver-content
 description: A state diagram for StateRfDiscovered and StateRfDataXchg during NFCEE card emulation mode.
 ms.assetid: 553A5002-3FE3-4178-B671-9F23560F939C
 keywords:

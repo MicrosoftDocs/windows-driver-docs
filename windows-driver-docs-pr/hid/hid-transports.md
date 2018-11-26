@@ -1,6 +1,5 @@
 ---
 title: HID Transports
-author: windows-driver-content
 description: HID Transports
 ms.assetid: E442CB87-992B-475A-A97F-9C22468BA877
 keywords:

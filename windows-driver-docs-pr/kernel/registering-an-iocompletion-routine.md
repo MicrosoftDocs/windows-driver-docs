@@ -1,6 +1,5 @@
 ---
 title: Registering an IoCompletion Routine
-author: windows-driver-content
 description: Registering an IoCompletion Routine
 ms.assetid: 413d8463-b2ce-44b6-846c-f853b5cd580e
 keywords: ["IoCompletion routines", "registering IoCompletion routines"]

@@ -1,6 +1,5 @@
 ---
 title: Installing an Advanced Properties Page for a COM Port
-author: windows-driver-content
 description: Installing an Advanced Properties Page for a COM Port
 ms.assetid: 056fd245-a9d2-4a10-9e92-fe75e51f6770
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Hardware Initialization with Storport
-author: windows-driver-content
 description: Hardware Initialization with Storport
 ms.assetid: 98930338-d192-4b25-a558-01614ef9662b
 ms.date: 04/20/2017

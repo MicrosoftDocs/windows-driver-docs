@@ -1,7 +1,6 @@
 ---
 Description: Describes the behavior of USB Device Emulation(UDE) class extension and tasks that a client driver must perform for an emulated host controller and devices attached to it.
 title: Write a UDE client driver
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -116,7 +115,7 @@ Here is the summary of the sequence in which the client driver retrieves a WDFDE
         WdfDeviceInitSetRequestAttributes(WdfDeviceInit, &wdfRequestAttributes);
 
 
-~~~
+
     // To distinguish I/O sent to GUID_DEVINTERFACE_USB_HOST_CONTROLLER, we will enable
     // enable interface reference strings by calling WdfDeviceInitSetFileObjectConfig
     // with FileObjectClass WdfFileObjectWdfXxx.
@@ -246,7 +245,7 @@ exit:
     return status;
 }
 ```
-~~~
+
 
 ## Handle user-mode IOCTL requests sent to the host controller
 

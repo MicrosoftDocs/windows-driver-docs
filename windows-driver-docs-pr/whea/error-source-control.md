@@ -1,6 +1,5 @@
 ---
 title: Error Source Control
-author: windows-driver-content
 description: Error Source Control
 ms.assetid: f73d9006-a7e7-4a0d-9654-004f53286743
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Supporting Mount Manager Requests in a Storage Class Driver
-author: windows-driver-content
 description: Supporting Mount Manager Requests in a Storage Class Driver
 ms.assetid: fb37f862-70d6-4514-b481-16f664346422
 keywords:

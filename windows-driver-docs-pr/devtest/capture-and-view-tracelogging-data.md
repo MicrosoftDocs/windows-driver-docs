@@ -34,7 +34,7 @@ The WPR and WPA tools must be compatible with the version of the TraceLogging th
 
 
 
-~~~
+
 Sample WPRP file:
 
 ```
@@ -112,7 +112,7 @@ Sample WPRP file:
   </Profiles>
 </WindowsPerformanceRecorder>
 ```
-~~~
+
 
 2.  For kernel mode providers, you need to add the NonPagedMemory="true" attribute to the EventProvider Id element.
 

@@ -1,6 +1,5 @@
 ---
 title: '#PreCompiled Preprocessor Directive'
-author: windows-driver-content
 description: '#PreCompiled Preprocessor Directive'
 ms.assetid: 639db56d-7677-4d21-8329-a0f35d68151e
 keywords:

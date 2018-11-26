@@ -1,6 +1,5 @@
 ---
 title: FAQ on Custom Capabilities
-author: windows-driver-content
 description: Describes Custom Capabilities for Hardware Support Apps (HSA) and how they differ from other capabilities.
 ms.date: 04/20/2017
 ms.localizationpriority: medium

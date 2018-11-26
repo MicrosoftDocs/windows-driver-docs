@@ -1,6 +1,5 @@
 ---
 title: Public Interfaces
-author: windows-driver-content
 description: Public Interfaces
 ms.assetid: 3913c921-dda2-404c-b608-add9d74df21d
 keywords:

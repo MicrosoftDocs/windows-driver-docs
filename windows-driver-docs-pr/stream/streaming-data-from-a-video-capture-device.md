@@ -1,6 +1,5 @@
 ---
 title: Streaming Data from a Video Capture Device
-author: windows-driver-content
 description: Streaming Data from a Video Capture Device
 ms.assetid: c83aae8e-70a7-4d65-a888-00a7c21eebdd
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Removing a Device in a Function Driver
-author: windows-driver-content
 description: Removing a Device in a Function Driver
 ms.assetid: 46a75647-e72a-4194-be9d-070e3ac95650
 keywords: ["function drivers WDK PnP", "DispatchPnP routine"]

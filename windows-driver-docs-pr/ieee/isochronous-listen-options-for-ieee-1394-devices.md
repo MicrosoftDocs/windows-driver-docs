@@ -1,6 +1,5 @@
 ---
 title: Isochronous Listen Options for IEEE 1394 Devices
-author: windows-driver-content
 description: Isochronous Listen Options for IEEE 1394 Devices
 ms.assetid: a369b7f0-be85-49f0-bb09-d07cbd3d3558
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Bidirectional Communication Schema Reference
-author: windows-driver-content
 description: Bidirectional Communication Schema Reference
 ms.assetid: 23432e94-e932-43a4-917b-a5a393cbbb60
 keywords: ["bidirectional communication schema WDK print", "bidi communication schema WDK print"]

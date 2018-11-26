@@ -1,6 +1,5 @@
 ---
 title: Specifying Allocator Framing in AVStream Codecs
-author: windows-driver-content
 description: Specifying Allocator Framing in AVStream Codecs
 ms.assetid: e5b042ae-9b9c-48e9-9f0c-449e205316a9
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Scanning to Tunable Signals
-author: windows-driver-content
 description: Scanning to Tunable Signals
 ms.assetid: cc934079-5d00-42e0-a024-1b7548bb88e4
 keywords:

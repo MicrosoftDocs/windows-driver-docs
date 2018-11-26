@@ -1,6 +1,5 @@
 ---
 title: NDIS_STATUS_RECEIVE_FILTER_QUEUE_PARAMETERS
-author: windows-driver-content
 description: The NDIS_STATUS_RECEIVE_FILTER_QUEUE_PARAMETERS status indicates to NDIS and overlying drivers that the current virtual machine (VM) queue parameters have changed on the network adapter.
 ms.assetid: 30782C77-578F-4533-8B6B-9D2F64EE6189
 ms.date: 08/08/2017
@@ -31,9 +30,9 @@ When the miniport driver issues the **NDIS\_STATUS\_RECEIVE\_FILTER\_QUEUE\_PARA
 
 
 
-~~~
+
 When the miniport driver initializes the **Header** member of this structure, it sets the **Type** member of **Header** to NDIS\_OBJECT\_TYPE\_DEFAULT. The miniport driver sets the **Revision** member of **Header** to NDIS\_RECEIVE\_QUEUE\_PARAMETERS\_REVISION\_2 and the **Size** member to NDIS\_SIZEOF\_RECEIVE\_QUEUE\_PARAMETERS\_REVISION\_2.
-~~~
+
 
 2.  The miniport driver initializes an [**NDIS\_STATUS\_INDICATION**](https://msdn.microsoft.com/library/windows/hardware/ff567373) structure in the following way:
 

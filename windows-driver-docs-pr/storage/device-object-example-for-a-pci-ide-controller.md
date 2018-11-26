@@ -1,6 +1,5 @@
 ---
 title: Device Object Example for a PCI IDE Controller
-author: windows-driver-content
 description: Device Object Example for a PCI IDE Controller
 ms.assetid: 7cb97da7-1d94-42a1-af3a-9085e68c8f28
 keywords:

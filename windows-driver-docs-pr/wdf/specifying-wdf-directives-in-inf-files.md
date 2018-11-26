@@ -1,6 +1,5 @@
 ---
 title: Specifying WDF Directives in INF Files
-author: windows-driver-content
 description: Specifying WDF Directives in INF Files
 ms.assetid: aefc678e-dc81-47dc-a84b-f1a79c16cad9
 keywords:

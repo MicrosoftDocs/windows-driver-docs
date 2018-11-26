@@ -1,6 +1,5 @@
 ---
 title: Sample configuration XML
-author: windows-driver-content
 description: Use the sample configuration XML in this topic to develop configuration files for your device.
 ms.date: 04/20/2017
 ms.localizationpriority: medium

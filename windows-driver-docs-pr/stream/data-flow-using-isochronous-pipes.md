@@ -1,6 +1,5 @@
 ---
 title: Data Flow Using Isochronous Pipes
-author: windows-driver-content
 description: Data Flow Using Isochronous Pipes
 ms.assetid: a66f4191-53ce-4ca2-aae7-8fb24a1a9a16
 keywords:

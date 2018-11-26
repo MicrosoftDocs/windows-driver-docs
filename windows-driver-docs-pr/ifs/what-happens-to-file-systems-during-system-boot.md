@@ -1,6 +1,5 @@
 ---
 title: What Happens to File Systems During System Boot
-author: windows-driver-content
 description: What Happens to File Systems During System Boot
 ms.assetid: f6ed556a-2353-4a0d-8db1-1fb5eac3c1ef
 keywords:

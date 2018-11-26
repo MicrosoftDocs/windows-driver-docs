@@ -3,7 +3,6 @@ title: Other Data Spaces
 description: Other Data Spaces
 ms.assetid: f676a478-c02a-4400-8173-a1b3103c6c1b
 keywords: ["Debugger Engine API, memory, data spaces"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---

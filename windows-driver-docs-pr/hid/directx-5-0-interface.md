@@ -1,6 +1,5 @@
 ---
 title: DirectX 5.0 Interface
-author: windows-driver-content
 description: DirectX 5.0 Interface
 ms.assetid: 416a9187-d64f-48a4-8868-fd5158d58a25
 keywords:

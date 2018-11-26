@@ -1,6 +1,5 @@
 ---
 title: IEC-61883 Protocol Driver
-author: windows-driver-content
 description: IEC-61883 Protocol Driver
 ms.assetid: d1e639f0-a22f-4005-86a7-fdbfe509265b
 keywords:

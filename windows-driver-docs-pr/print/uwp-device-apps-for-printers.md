@@ -1,6 +1,5 @@
 ---
 title: UWP device apps for printers
-author: windows-driver-content
 description: UWP device apps for printers allow IHVs to highlight special features of their devices through customized printer preferences and notification support.
 ms.assetid: 687ECBA2-2DEF-4C62-A587-17A281490B59
 ms.date: 04/20/2017

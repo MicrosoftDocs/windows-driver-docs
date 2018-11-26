@@ -1,6 +1,5 @@
 ---
 title: Feature Attributes
-author: windows-driver-content
 description: Feature Attributes
 ms.assetid: ae1a489e-2554-46fc-8f2e-45128b073f91
 keywords:

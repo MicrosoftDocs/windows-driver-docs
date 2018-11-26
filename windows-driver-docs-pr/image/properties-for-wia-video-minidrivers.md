@@ -1,6 +1,5 @@
 ---
 title: Properties for WIA Video Minidrivers
-author: windows-driver-content
 description: Properties for WIA Video Minidrivers
 ms.assetid: 1d02baba-c9af-4596-9d7a-2b6c6675c87c
 ms.date: 04/20/2017

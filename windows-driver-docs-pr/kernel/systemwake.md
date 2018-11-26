@@ -1,6 +1,5 @@
 ---
 title: SystemWake
-author: windows-driver-content
 description: SystemWake
 ms.assetid: 77390637-bb92-4634-a407-9a409a8a8acd
 keywords: ["SystemWake"]

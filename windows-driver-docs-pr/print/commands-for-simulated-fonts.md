@@ -1,6 +1,5 @@
 ---
 title: Commands for Simulated Fonts
-author: windows-driver-content
 description: Commands for Simulated Fonts
 ms.assetid: 3bfdcf86-35ac-4b95-9efd-31f79a8b9871
 keywords:

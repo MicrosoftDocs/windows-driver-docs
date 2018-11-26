@@ -1,6 +1,5 @@
 ---
 title: Using Remove Locks
-author: windows-driver-content
 description: Using Remove Locks
 ms.assetid: 78ca7fe5-ceed-4752-bf1b-d13309097cd8
 keywords: ["remove locks WDK PnP", "lock routines WDK PnP"]

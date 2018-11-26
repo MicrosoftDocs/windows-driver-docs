@@ -1,6 +1,5 @@
 ---
 title: Functional flow
-author: windows-driver-content
 description: A flowchart and short description of the hierarchical reading and writing of NDEF messages upon smart card discovery.
 ms.assetid: 7B4B4902-FD16-4C9B-BB54-A1D6EFCAE9DB
 keywords:

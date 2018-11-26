@@ -1,6 +1,5 @@
 ---
 title: Registering for Asynchronous Driver Notification
-author: windows-driver-content
 description: Registering for Asynchronous Driver Notification
 ms.assetid: e1f97a65-7c82-4d7b-97ec-0293fc69fd8c
 keywords: ["driver notification WDK dynamic hardware partitioning , registering", "asynchronous notification WDK dynamic hardware partitioning", "notification WDK dynamic hardware partitioning , registering", "asynchronous driver notification WDK dynamic hardware partitioning , registering", "registering for driver notifications WDK dynamic hardware partitioning"]

@@ -1,6 +1,5 @@
 ---
 title: Enumerator Template Data Type
-author: windows-driver-content
 description: Enumerator Template Data Type
 ms.assetid: deb95ca1-05a5-47f4-8e2a-1d1aa1ae2261
 keywords:

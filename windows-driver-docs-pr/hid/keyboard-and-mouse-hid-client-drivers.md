@@ -1,6 +1,5 @@
 ---
 title: Keyboard and mouse HID client drivers
-author: windows-driver-content
 description: Keyboard and mouse HID client drivers. 
 ms.assetid: DAD50261-7619-4554-B864-9158A0FA1ACE
 keywords:
@@ -16,6 +15,10 @@ ms.localizationpriority: medium
 
 # Keyboard and mouse HID client drivers
 
+> [!NOTE]
+> This topic is for developers who are creating drivers for keyboard and mouse HID clients. If you are looking to fix a mouse or keyboard, see:
+> - [Mouse, touchpad, and keyboard problems in Windows](https://support.microsoft.com/help/17417/windows-mouse-touchpad-keyboard-problems)
+> - [Troubleshoot a wireless mouse that does not function correctly](https://support.microsoft.com/help/321122/troubleshoot-a-wireless-mouse-that-does-not-function-correctly)
 
 This topic discusses keyboard and mouse HID client drivers. Keyboards and mice represent the first set of HID clients that were standardized in the HID Usage tables and implemented in Windows operating systems.
 

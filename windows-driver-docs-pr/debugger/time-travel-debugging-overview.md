@@ -1,7 +1,6 @@
 ---
 title: Time Travel Debugging - Overview
 description: This section describes time travel debugging.
-ms.author: domars
 ms.date: 09/18/2017
 ms.localizationpriority: medium
 ---

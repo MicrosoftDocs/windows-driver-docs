@@ -1,7 +1,6 @@
 ---
 title: WinDbg Preview - View Menu 
 description: This section describes how work with the view menu.
-ms.author: domars
 ms.date: 08/09/2017
 ms.localizationpriority: medium
 ---

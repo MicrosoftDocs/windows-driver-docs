@@ -1,6 +1,5 @@
 ---
 title: Language Monitors
-author: windows-driver-content
 description: Language Monitors
 ms.assetid: 26ba1c22-390a-4187-b67a-3f3497964f8e
 keywords:

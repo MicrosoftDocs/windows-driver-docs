@@ -1,6 +1,5 @@
 ---
 title: Disabling APCs
-author: windows-driver-content
 description: Disabling APCs
 ms.assetid: 0578df31-1467-4bad-ba62-081d61278deb
 keywords: ["asynchronous procedure calls WDK kernel", "APCs WDK kernel", "disabling APCs", "critical regions WDK kernel", "guarded regions WDK kernel", "raising current IRQLs"]

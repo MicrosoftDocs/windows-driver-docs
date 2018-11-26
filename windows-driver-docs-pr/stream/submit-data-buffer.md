@@ -1,6 +1,5 @@
 ---
 title: Submit Data Buffer
-author: windows-driver-content
 description: Submit Data Buffer
 ms.assetid: 151f5139-3706-4255-9d71-d8e6e3416b7c
 keywords:

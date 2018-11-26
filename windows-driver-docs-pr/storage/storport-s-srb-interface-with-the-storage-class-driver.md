@@ -1,6 +1,5 @@
 ---
 title: Storport's SRB Interface with the Storage Class Driver
-author: windows-driver-content
 description: Storport's SRB Interface with the Storage Class Driver
 ms.assetid: c7e55516-0ba9-48bc-9b68-e6344552f070
 ms.date: 04/20/2017

@@ -1,6 +1,5 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_FIRMWARE_STALLED
-author: windows-driver-content
 description: NDIS_STATUS_WDI_INDICATION_FIRMWARE_STALLED is used to indicate that the firmware stalled.
 ms.assetid: 0A0E1446-4FDD-4FB2-8CA7-04FBF5D6DDD1
 ms.date: 07/18/2017

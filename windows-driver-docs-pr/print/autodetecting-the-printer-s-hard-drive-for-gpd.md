@@ -1,6 +1,5 @@
 ---
 title: Autodetecting the Printer's Hard Drive for GPD
-author: windows-driver-content
 description: Autodetecting the Printer's Hard Drive for GPD
 ms.assetid: c3bc415e-fa4d-42d0-9686-3105a588a7ea
 keywords:

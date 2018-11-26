@@ -1,6 +1,5 @@
 ---
 title: Top-Level Collections
-author: windows-driver-content
 description: Top-Level Collections
 ms.assetid: dcbee8e3-d03a-45c8-92e4-0897b9f55177
 keywords:

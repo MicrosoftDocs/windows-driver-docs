@@ -1,6 +1,5 @@
 ---
 title: KS Methods
-author: windows-driver-content
 description: KS Methods
 ms.assetid: 1d7bd6f4-0aaf-4d77-8132-f551fd2ecbd2
 keywords:

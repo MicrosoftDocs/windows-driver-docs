@@ -1,6 +1,5 @@
 ---
 title: \ Name\
-author: windows-driver-content
 description: \ Name\
 ms.assetid: 5259ea1a-a251-479b-88f1-711d5933868a
 ms.date: 11/28/2017

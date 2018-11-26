@@ -1,7 +1,6 @@
 ---
 Description: The easiest way to write a Windows desktop app that communicates with a USB device, is by using the C/C++ WinUSB template.
 title: Write a Windows desktop app based on the WinUSB template
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

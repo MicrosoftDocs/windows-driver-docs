@@ -1,6 +1,5 @@
 ---
 title: Introduction to Threaded DPCs
-author: windows-driver-content
 description: Introduction to Threaded DPCs
 ms.assetid: 891a8a52-83ff-400a-9477-8edca1b9a83c
 keywords: ["threaded DPCs WDK kernel", "real-time threads WDK kernel", "preempted DPCs WDK kernel"]

@@ -1,6 +1,5 @@
 ---
 title: TCP chimney offload status indications
-author: windows-driver-content
 description: This topic describes TCP chimney offload status indications 
 ms.assetid: 607c9319-82d5-4060-9401-510b7e6e2191
 keywords:

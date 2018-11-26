@@ -1,6 +1,5 @@
 ---
 title: WDFVERIFY macro
-author: windows-driver-content
 description: The WDFVERIFY macro tests a logical expression and, if the expression evaluates to FALSE, breaks into the kernel debugger.
 ms.assetid: 9dc19299-7eda-42fb-811e-ba8dc5c1cdb5
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_P2P_CHANNEL_INDICATE_REASON
-author: windows-driver-content
 description: WDI_TLV_P2P_CHANNEL_INDICATE_REASON is a TLV that contains a reason for sending an indication.
 ms.assetid: DD746492-82C5-4458-94A2-778F7F0F30B4
 ms.date: 07/18/2017

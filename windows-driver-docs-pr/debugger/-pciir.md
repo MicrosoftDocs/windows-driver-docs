@@ -3,7 +3,6 @@ title: pciir
 description: The pciir extension displays the contents of the hardware routing of peripheral component interconnect (PCI) devices to interrupt controller inputs.
 ms.assetid: 83d1b716-adfe-4712-bdbb-25960c38fff0
 keywords: ["PCI IRQ routing table", "peripheral component interconnect (PCI)", "pciir Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref

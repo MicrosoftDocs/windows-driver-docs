@@ -1,6 +1,5 @@
 ---
 title: Supporting PnP and Power Management in Software-only Drivers
-author: windows-driver-content
 description: Supporting PnP and Power Management in Software-only Drivers
 ms.assetid: bcfca8b2-68d6-4875-8687-27351becd6f4
 keywords:

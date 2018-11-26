@@ -1,6 +1,5 @@
 ---
 title: Common Buffer DMA in AVStream
-author: windows-driver-content
 description: Common Buffer DMA in AVStream
 ms.assetid: 8cbadb5a-f879-4fe0-a698-cde3b9f6df83
 keywords:

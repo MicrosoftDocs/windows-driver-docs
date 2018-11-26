@@ -1,6 +1,5 @@
 ---
 title: Pending an I/O Operation in a Postoperation Callback Routine
-author: windows-driver-content
 description: Pending an I/O Operation in a Postoperation Callback Routine
 ms.assetid: 126e13fb-51f6-4dcc-aa13-850921b3c752
 keywords:

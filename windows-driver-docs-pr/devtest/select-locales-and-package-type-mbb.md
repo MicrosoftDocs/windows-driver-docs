@@ -27,9 +27,9 @@ To do this, follow these steps:
 
 
 
-~~~
+
 -   If you don't want the package to appear in a specific language when a locale-specific package isn't available, select **No default**.
-~~~
+
 
 
 

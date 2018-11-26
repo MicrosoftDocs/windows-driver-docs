@@ -3,7 +3,6 @@ title: Reading Symbols from Paged-Out Headers
 description: Reading Symbols from Paged-Out Headers
 ms.assetid: 74ec20d8-e2b5-449d-8b93-7553c57fac07
 keywords: ["symbols, paged-out header problems"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---

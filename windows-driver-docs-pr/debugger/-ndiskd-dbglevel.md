@@ -3,7 +3,6 @@ title: ndiskd.dbglevel
 description: The ndiskd.dbglevel extension displays and optionally changes the current NDIS debug level. Warning ndiskd.dbglevel has been superceded by WPP and Driver Verifier.
 ms.assetid: D134FD03-DABA-4558-A5C3-C365F77BD69A
 keywords: ["ndiskd.dbglevel Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref

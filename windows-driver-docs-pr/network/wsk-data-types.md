@@ -1,6 +1,5 @@
 ---
 title: WSK data types
-author: windows-driver-content
 description: This topic describes data types for WSK applications.
 ms.assetid: EDD82708-D235-4F8A-9AB7-55AF463CE703
 keywords:

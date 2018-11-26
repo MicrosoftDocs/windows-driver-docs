@@ -1,6 +1,5 @@
 ---
 title: Revise Canceled Request Logic
-author: windows-driver-content
 description: Revise Canceled Request Logic
 ms.assetid: 8246826A-BDBD-4A9B-9FFC-B813033E0FDC
 ms.date: 04/20/2017

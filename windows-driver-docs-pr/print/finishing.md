@@ -1,6 +1,5 @@
 ---
 title: Finishing
-author: windows-driver-content
 description: Finishing
 ms.assetid: 5c8e556b-102a-4caf-92d3-8b61bec1a29f
 ms.date: 11/28/2017

@@ -1,6 +1,5 @@
 ---
 title: Allocating Memory for Data
-author: windows-driver-content
 description: Allocating Memory for Data
 ms.assetid: 15df5616-ddce-44ec-bd10-65cae0d95cf4
 ms.date: 04/20/2017

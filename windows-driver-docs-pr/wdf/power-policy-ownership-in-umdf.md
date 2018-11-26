@@ -1,6 +1,5 @@
 ---
 title: Power Policy Ownership in UMDF
-author: windows-driver-content
 description: Power Policy Ownership in UMDF
 ms.assetid: cf543259-3401-4f3b-a492-53940cea07f3
 keywords:

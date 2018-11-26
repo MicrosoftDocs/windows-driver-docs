@@ -1,6 +1,5 @@
 ---
 title: CD-ROM Real-Time Streaming
-author: windows-driver-content
 description: Streaming (or real-time streaming) is a feature provided by optical drives to allow faster read and write requests.
 ms.assetid: A4093485-076A-4414-A3D2-9285B2AC097B
 ms.date: 04/20/2017

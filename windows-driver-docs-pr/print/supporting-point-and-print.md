@@ -1,6 +1,5 @@
 ---
 title: Supporting Point and Print
-author: windows-driver-content
 description: Supporting Point and Print
 ms.assetid: a41bed5e-a006-4b9e-aa71-d2bcd154fae2
 keywords:

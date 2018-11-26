@@ -1,6 +1,5 @@
 ---
 title: Modifying a Driver-Supplied Property Sheet Page
-author: windows-driver-content
 description: Modifying a Driver-Supplied Property Sheet Page
 ms.assetid: 98338017-96a0-414c-9b80-bcb98eff61e5
 keywords:

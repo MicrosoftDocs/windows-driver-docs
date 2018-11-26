@@ -1,6 +1,5 @@
 ---
 title: Error Source Discovery
-author: windows-driver-content
 description: Error Source Discovery
 ms.assetid: 58b7501d-b51a-436f-ac29-8d03161d0956
 keywords:

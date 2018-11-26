@@ -1,6 +1,5 @@
 ---
 title: GUID_NDIS_STATUS_OFFLOAD_CAPABILITIES_CHANGE
-author: windows-driver-content
 description: This topic describes the GUID_NDIS_STATUS_OFFLOAD_CAPABILITIES_CHANGE GUID for the NDIS WMI interface.
 ms.assetid: f1daadff-a564-4308-82cd-525a1dae866a
 keywords:

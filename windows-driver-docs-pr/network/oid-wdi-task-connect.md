@@ -1,6 +1,5 @@
 ---
 title: OID_WDI_TASK_CONNECT
-author: windows-driver-content
 description: OID_WDI_TASK_CONNECT requests that the IHV component connects to an Access Point or to a Wi-Fi Direct GO.
 ms.assetid: 63ba3979-6b30-49bf-91a9-fa01f0ef4922
 ms.date: 07/18/2017

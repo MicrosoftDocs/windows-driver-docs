@@ -1,7 +1,6 @@
 ---
 Description: This topic describes how to view a USB event trace in Xperf.
 title: Viewing a USB Event Trace in Xperf
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

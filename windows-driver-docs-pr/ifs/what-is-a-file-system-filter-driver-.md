@@ -1,6 +1,5 @@
 ---
 title: What Is a File System Filter Driver
-author: windows-driver-content
 description: What Is a File System Filter Driver
 ms.assetid: 4bff8ad6-624a-429d-b9ec-3f96c3c7c99d
 keywords:

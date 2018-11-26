@@ -1,6 +1,5 @@
 ---
 title: GDL Configurations
-author: windows-driver-content
 description: GDL Configurations
 ms.assetid: ce698737-c9d8-4502-8823-e249820a06fa
 keywords:

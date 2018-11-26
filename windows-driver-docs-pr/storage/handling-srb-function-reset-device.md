@@ -1,6 +1,5 @@
 ---
 title: Handling SRB_FUNCTION_RESET_DEVICE
-author: windows-driver-content
 description: Handling SRB_FUNCTION_RESET_DEVICE
 ms.assetid: d95bca21-306e-4598-a8c6-04990885e23d
 keywords:

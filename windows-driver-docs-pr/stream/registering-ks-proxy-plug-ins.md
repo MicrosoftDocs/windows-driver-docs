@@ -1,6 +1,5 @@
 ---
 title: Registering KS Proxy Plug-ins
-author: windows-driver-content
 description: Registering KS Proxy Plug-ins
 ms.assetid: 1f8691cb-5371-4039-a081-7c422dcac5a8
 keywords:

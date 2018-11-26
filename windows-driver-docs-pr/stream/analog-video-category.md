@@ -1,6 +1,5 @@
 ---
 title: Analog Video Category
-author: windows-driver-content
 description: Analog Video Category
 ms.assetid: 64564c81-b1e1-482b-ae70-59b229a5e86f
 keywords:

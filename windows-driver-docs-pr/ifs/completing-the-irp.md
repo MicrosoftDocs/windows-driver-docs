@@ -1,6 +1,5 @@
 ---
 title: Completing the IRP
-author: windows-driver-content
 description: Completing the IRP
 ms.assetid: 3174b36c-feb5-497c-a6e4-0d070c658899
 keywords:

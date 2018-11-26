@@ -2,7 +2,6 @@
 title: Debugger Programming Reference
 description: This topic describes the programming reference topics.
 ms.assetid: 3CBD0E5F-AACA-49B5-B324-5E76BDC71283
-ms.author: domars
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

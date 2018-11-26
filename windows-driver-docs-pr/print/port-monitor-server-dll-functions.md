@@ -1,6 +1,5 @@
 ---
 title: Port Monitor Server DLL Functions
-author: windows-driver-content
 description: Port Monitor Server DLL Functions
 ms.assetid: ffbcaaaa-7f9d-4b29-b939-189e10174074
 keywords:

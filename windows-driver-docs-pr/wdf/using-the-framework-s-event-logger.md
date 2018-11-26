@@ -1,6 +1,5 @@
 ---
 title: Using the Framework's Event Logger
-author: windows-driver-content
 description: Using the Framework's Event Logger
 ms.assetid: aa0a83c8-cd13-41d0-a619-d8793b2e2e80
 keywords:

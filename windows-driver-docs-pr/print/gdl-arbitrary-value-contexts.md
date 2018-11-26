@@ -1,6 +1,5 @@
 ---
 title: GDL Arbitrary Value Contexts
-author: windows-driver-content
 description: GDL Arbitrary Value Contexts
 ms.assetid: 6de79b2b-5f0f-4d6c-8a95-d9ef2266c2ef
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Creating Callback Objects
-author: windows-driver-content
 description: Creating Callback Objects
 ms.assetid: bbae1458-911f-4a48-8bf2-0997e8f98826
 keywords:

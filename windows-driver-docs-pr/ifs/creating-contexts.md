@@ -1,6 +1,5 @@
 ---
 title: Creating Contexts
-author: windows-driver-content
 description: Creating Contexts
 ms.assetid: da62d79d-064b-4ea4-abed-ffb13a9cc13d
 keywords:

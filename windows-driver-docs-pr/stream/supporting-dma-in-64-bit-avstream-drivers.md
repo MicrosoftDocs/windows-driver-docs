@@ -1,6 +1,5 @@
 ---
 title: Supporting DMA in 64-Bit AVStream Drivers
-author: windows-driver-content
 description: Supporting DMA in 64-Bit AVStream Drivers
 ms.assetid: 1173a83f-8d9e-4678-bfb5-f2fb91e827be
 keywords:

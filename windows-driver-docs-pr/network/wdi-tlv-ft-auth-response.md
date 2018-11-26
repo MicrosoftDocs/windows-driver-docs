@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_FT_AUTH_RESPONSE
-author: windows-driver-content
 description: WDI_TLV_FT_AUTH_RESPONSE is a TLV that contains the Fast Transition authentication response byte blob.
 ms.assetid: BF9B37B4-EC5D-46AA-B334-C1214310964B
 ms.date: 07/18/2017

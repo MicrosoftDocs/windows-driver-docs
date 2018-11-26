@@ -1,6 +1,5 @@
 ---
 title: I/O Resource Usage Reduction
-author: windows-driver-content
 description: I/O Resource Usage Reduction
 ms.assetid: ad83856c-ad1a-42fc-97f0-7881f745174d
 keywords:

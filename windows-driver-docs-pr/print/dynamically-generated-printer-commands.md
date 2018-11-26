@@ -1,6 +1,5 @@
 ---
 title: Dynamically Generated Printer Commands
-author: windows-driver-content
 description: Dynamically Generated Printer Commands
 ms.assetid: ba395716-6906-4f23-a050-79d808ccd44b
 keywords:

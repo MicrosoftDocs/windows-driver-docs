@@ -1,6 +1,5 @@
 ---
 title: OID_RECEIVE_FILTER_QUEUE_PARAMETERS
-author: windows-driver-content
 description: Overlying drivers issue object identifier (OID) method requests of OID_RECEIVE_FILTER_QUEUE_PARAMETERS to obtain the current configuration parameters of a receive queue.
 ms.assetid: f6cd7896-0811-4029-b1d8-8cf800d7813e
 ms.date: 08/08/2017

@@ -29,11 +29,11 @@ The extensible switch interface notifies extensions of each physical network ada
 
 
 
-~~~
+
 -   If an extensible switch team of network adapters is bound to the external network adapter, each physical network adapter in the team is assigned a unique NDIS\_SWITCH\_NIC\_INDEX value that is greater than or equal to one.
 
     **Note**  In the extensible switch team configuration, every physical network adapter in the team is considered to be bound to the external network adapter.
-~~~
+
 
 
 

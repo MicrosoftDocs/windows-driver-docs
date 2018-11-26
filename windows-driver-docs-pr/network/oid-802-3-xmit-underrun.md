@@ -1,6 +1,5 @@
 ---
 title: OID_802_3_XMIT_UNDERRUN
-author: windows-driver-content
 description: This topic describes the OID_802_3_XMIT_UNDERRUN object identifier (OID).
 ms.assetid: 4AADEFDF-7594-482F-A680-260EECB33A47
 keywords:

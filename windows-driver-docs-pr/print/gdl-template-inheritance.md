@@ -1,6 +1,5 @@
 ---
 title: GDL Template Inheritance
-author: windows-driver-content
 description: GDL Template Inheritance
 ms.assetid: 0e3271ee-6b58-4f57-a0be-18715705604f
 keywords:

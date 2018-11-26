@@ -1,6 +1,5 @@
 ---
 title: AV/C Subunit Plug Connection and Format Management
-author: windows-driver-content
 description: AV/C Subunit Plug Connection and Format Management
 ms.assetid: c80641d5-3108-4dbc-91b9-7ed295434b97
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: IPrinterBidiSchemaResponses AddFloat method
-author: windows-driver-content
 description: The AddFloat method adds a new response of type BIDI\_FLOAT to the collection.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

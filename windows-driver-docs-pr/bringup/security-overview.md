@@ -1,6 +1,5 @@
 ---
 title: Security
-author: windows-driver-content
 description: Use the topics in this section to learn more about security in Windows 10 Mobile.
 ms.assetid: 15783e59-f37b-4373-8604-d35c57eedfcc
 ms.date: 08/31/2018

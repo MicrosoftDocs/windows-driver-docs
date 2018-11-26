@@ -1,6 +1,5 @@
 ---
 title: Registry Settings for a Legacy COM Port
-author: windows-driver-content
 description: Registry Settings for a Legacy COM Port
 ms.assetid: 043ac1f5-eeb1-4828-8417-b3c6d76b4322
 keywords:

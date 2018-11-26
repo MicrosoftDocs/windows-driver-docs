@@ -1,6 +1,5 @@
 ---
 title: Specifying Stream Formats
-author: windows-driver-content
 description: Specifying Stream Formats
 ms.assetid: 60ef129c-f4a1-4eb5-97d9-6be6c7803258
 keywords:

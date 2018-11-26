@@ -1,6 +1,5 @@
 ---
 title: Enabling DMA Transactions
-author: windows-driver-content
 description: Enabling DMA Transactions
 ms.assetid: 87735776-c371-425b-bc53-0c68375c9562
 keywords:

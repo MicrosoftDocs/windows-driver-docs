@@ -87,7 +87,7 @@ The Code Analysis tool issues warning [C6262](http://go.microsoft.com/fwlink/p/?
        <ClCompile>
 
 
-~~~
+
       <!-- Change stack depth for C6262 from 1024 to 400 -->
       <PREfastAdditionalOptions>stacksize400</PREfastAdditionalOptions>
 
@@ -96,7 +96,7 @@ The Code Analysis tool issues warning [C6262](http://go.microsoft.com/fwlink/p/?
 
 
 ```
-~~~
+
 
 4.  Save the project file. Start Visual Studio, load the updated driver project, and run code analysis.
 

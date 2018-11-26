@@ -1,6 +1,5 @@
 ---
 title: Determine Why UMDF Driver Fails to Load or Device Fails to Start
-author: windows-driver-content
 description: This topic describes troubleshooting steps you can use when a UMDF driver fails to load or an associated device fails to start.
 ms.assetid: 366c0ab4-8d06-4dac-a301-f433cf7978bd
 keywords:

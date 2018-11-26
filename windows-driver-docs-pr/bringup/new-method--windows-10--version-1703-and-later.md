@@ -1,7 +1,6 @@
 ---
 title: New method - Windows 10, version 1703 and later
 description: New method - Windows 10, version 1703 and later
-author: windows-driver-content
 ms.date: 05/07/2018
 ms.localizationpriority: medium
 ---

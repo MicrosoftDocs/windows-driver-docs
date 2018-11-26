@@ -12,7 +12,6 @@ api_location:
 - dbgeng.h
 api_type:
 - COM
-ms.author: domars
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

@@ -1,6 +1,5 @@
 ---
 title: OID_CO_AF_CLOSE
-author: windows-driver-content
 description: This topic describes the OID_CO_AF_CLOSE object identifier (OID).
 ms.assetid: 451ab9d5-e118-41c9-8d16-02d75a25a1d4
 keywords:

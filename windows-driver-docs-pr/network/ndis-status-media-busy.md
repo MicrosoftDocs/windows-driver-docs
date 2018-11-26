@@ -1,6 +1,5 @@
 ---
 title: NDIS_STATUS_MEDIA_BUSY
-author: windows-driver-content
 description: The NDIS_STATUS_MEDIA_BUSY status indicates that the IRDA media is busy.
 ms.assetid: 3b38987a-78f1-4036-8d48-c8792d273fdf
 ms.date: 07/18/2017

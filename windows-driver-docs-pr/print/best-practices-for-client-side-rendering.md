@@ -1,6 +1,5 @@
 ---
 title: Best Practices for Client-Side Rendering
-author: windows-driver-content
 description: Best Practices for Client-Side Rendering
 ms.assetid: d05086c1-4e0b-4767-bb1d-7b6d73b1b210
 keywords:

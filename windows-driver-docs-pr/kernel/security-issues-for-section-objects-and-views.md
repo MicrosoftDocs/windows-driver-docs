@@ -1,6 +1,5 @@
 ---
 title: Security Issues for Section Objects and Views
-author: windows-driver-content
 description: Security Issues for Section Objects and Views
 ms.assetid: a2044ea1-c90c-4487-850b-d07ac55aea6d
 keywords: ["memory sections WDK kernel", "section objects WDK kernel", "views WDK memory section", "security WDK memory section", "protocols WDK memory section"]

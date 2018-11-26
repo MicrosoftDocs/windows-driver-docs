@@ -1,6 +1,5 @@
 ---
 title: USB-Based Camera with a Capture Button
-author: windows-driver-content
 description: USB-Based Camera with a Capture Button
 ms.assetid: abbd824c-1ade-4dbc-8807-e558c444a3ea
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Example Uses of I/O Queues
-author: windows-driver-content
 description: Example Uses of I/O Queues
 ms.assetid: 13b09254-ce0a-4c7d-bdb1-d28ec094a266
 keywords:

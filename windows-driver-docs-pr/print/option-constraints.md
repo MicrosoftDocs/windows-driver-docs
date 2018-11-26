@@ -1,6 +1,5 @@
 ---
 title: Option Constraints
-author: windows-driver-content
 description: Option Constraints
 ms.assetid: dc399715-c238-4a6e-8ce0-3204aa0cca68
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Broadcast Driver Architecture Minidrivers
-author: windows-driver-content
 description: Broadcast Driver Architecture Minidrivers
 ms.assetid: 0ad56dbd-6f79-439f-8dfc-8d118d114ddd
 keywords:

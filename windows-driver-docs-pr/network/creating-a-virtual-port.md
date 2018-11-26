@@ -77,9 +77,9 @@ The overlying driver calls [**NdisOidRequest**](https://msdn.microsoft.com/libra
 
 
 
-~~~
+
 The assigned VPort identifier uniquely identifies the nondefault VPort on the NIC switch of the network adapter.
-~~~
+
 
 3.  NDIS sets the **VPortId** member of the NDIS\_NIC\_SWITCH\_VPORT\_PARAMETERS structure with the assigned VPort identifier.
 

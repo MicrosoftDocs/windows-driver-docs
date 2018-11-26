@@ -1,6 +1,5 @@
 ---
 title: PPD Features
-author: windows-driver-content
 description: PPD Features
 ms.assetid: ee78031a-2138-4d0c-ac8a-5328aa54d904
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: WSK_CLIENT
-author: windows-driver-content
 description: This topic describes the WSK_CLIENT data type for WSK applications.
 ms.assetid: 7958dbd6-eaa6-4be8-a3a0-b3433ced924b
 keywords:

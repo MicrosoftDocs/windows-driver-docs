@@ -1,6 +1,5 @@
 ---
 title: Dispatch Routines and IRQLs
-author: windows-driver-content
 description: Dispatch Routines and IRQLs
 ms.assetid: fe64e0f7-3906-470a-86c5-03460e652eed
 keywords: ["dispatch routines WDK kernel , IRQLs", "IRQLs WDK dispatch routines"]

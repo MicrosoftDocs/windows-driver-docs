@@ -1,7 +1,6 @@
 ---
 title: Configure system firmware for Windows 7 and enable for Windows 10
 description: Configure system firmware for Windows 7 and enable for Windows 10
-author: windows-driver-content
 ms.date: 05/07/2018
 ms.localizationpriority: medium
 ---

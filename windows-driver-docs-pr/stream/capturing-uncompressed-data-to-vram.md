@@ -1,6 +1,5 @@
 ---
 title: Capturing Uncompressed Data to VRAM
-author: windows-driver-content
 description: Capturing Uncompressed Data to VRAM
 ms.assetid: efec607d-3337-40a5-812c-57292f201d54
 keywords:

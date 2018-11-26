@@ -1,6 +1,5 @@
 ---
 title: Filter Manager Concepts
-author: windows-driver-content
 description: Filter Manager Concepts
 ms.assetid: 5b11671f-02fd-4d0e-8199-c345bbf2591c
 keywords:

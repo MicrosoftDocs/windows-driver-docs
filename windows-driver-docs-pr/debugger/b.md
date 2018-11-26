@@ -3,7 +3,6 @@ title: B (Windows Debugger Glossary)
 description: Glossary page - B
 Robots: noindex, nofollow
 ms.assetid: 5ba110fc-1a12-4cbd-adc9-ef9441e257cb
-ms.author: domars
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

@@ -1,6 +1,5 @@
 ---
 title: Using Avcstrm.sys
-author: windows-driver-content
 description: Using Avcstrm.sys
 ms.assetid: 53430526-ee24-4081-b220-4089d60aec94
 keywords:

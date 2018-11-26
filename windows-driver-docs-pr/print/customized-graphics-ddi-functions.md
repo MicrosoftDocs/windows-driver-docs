@@ -1,6 +1,5 @@
 ---
 title: Customized Graphics DDI Functions
-author: windows-driver-content
 description: Customized Graphics DDI Functions
 ms.assetid: 33d7d567-5371-4873-a4ef-cd2b06f65d73
 keywords:

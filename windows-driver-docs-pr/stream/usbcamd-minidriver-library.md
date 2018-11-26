@@ -1,6 +1,5 @@
 ---
 title: USBCAMD Minidriver Library
-author: windows-driver-content
 description: USBCAMD Minidriver Library
 ms.assetid: 4447bf3d-5eaa-4de7-96bb-22dae68b44eb
 keywords:

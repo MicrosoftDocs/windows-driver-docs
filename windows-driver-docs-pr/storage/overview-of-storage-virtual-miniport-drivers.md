@@ -1,6 +1,5 @@
 ---
 title: Overview of Storage Virtual Miniport Drivers
-author: windows-driver-content
 description: Overview of Storage Virtual Miniport Drivers
 ms.assetid: 5aee56e6-610c-4718-8566-9285682049cb
 keywords:

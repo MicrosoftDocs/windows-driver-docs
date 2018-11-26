@@ -1,6 +1,5 @@
 ---
 title: WIA Feeder Scanner Compatibility for Windows XP and Windows Me
-author: windows-driver-content
 description: WIA Feeder Scanner Compatibility for Windows XP and Windows Me
 ms.assetid: 7877943e-ee61-455d-b489-db223e1ddbe1
 ms.date: 04/20/2017

@@ -123,9 +123,9 @@ The second string (“Please enter your authentication PIN”) is driven by **SE
 
 
 
-~~~
+
 **Note**  Including two different custom strings for the same locale results in the first custom string being picked up.
-~~~
+
 
 
 

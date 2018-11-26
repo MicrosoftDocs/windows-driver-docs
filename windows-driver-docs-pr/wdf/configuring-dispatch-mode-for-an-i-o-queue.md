@@ -1,6 +1,5 @@
 ---
 title: Configuring Dispatch Mode for an I/O Queue
-author: windows-driver-content
 description: Configuring Dispatch Mode for an I/O Queue
 ms.assetid: 7603c3fd-a4cb-4174-ad14-f57efedfe9de
 keywords:

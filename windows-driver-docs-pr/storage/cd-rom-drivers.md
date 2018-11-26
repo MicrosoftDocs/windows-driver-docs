@@ -1,6 +1,5 @@
 ---
 title: CD-ROM Drivers
-author: windows-driver-content
 description: CD-ROM Drivers
 ms.assetid: 04b0a605-7816-4804-bfa8-39122a03ce16
 keywords:

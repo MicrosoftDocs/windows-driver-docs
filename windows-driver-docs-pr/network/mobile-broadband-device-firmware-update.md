@@ -170,7 +170,7 @@ As indicated earlier, the UMDF driver should indicate to the Windows when it sta
 ```cpp
 /**
  * This is the IPnpCallbackHardware*:OnPrepareHardware handler 
- * in the UMDF driver. This is called everytime the firmware 
+ * in the UMDF driver. This is called every time the firmware 
  * update is device is started. Since this handler should be 
  * blocked from returning actual the firmware update process 
  * should be done in a workitem 
@@ -188,7 +188,7 @@ CMyDevice::OnPrepareHardware(IWDFDevice* pDevice)
     // update against a MB device that loads the updated firmware 
     // on device boot. So the firmware update driver needs to
     // send the new firmware down to the device and then tell 
-    // the device to initate a stop/start. Once the device has
+    // the device to initiate a stop/start. Once the device has
     // reappeared, it would have automatically loaded the 
     // new firmware
     // 

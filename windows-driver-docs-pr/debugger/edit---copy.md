@@ -3,7 +3,6 @@ title: Edit Copy
 description: Edit Copy
 ms.assetid: 62e4ea69-8d8b-4a99-b0c9-314cda7e20bc
 keywords: ["Edit Copy", "text, Edit Copy"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---

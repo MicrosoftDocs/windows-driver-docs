@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_P2P_GROUP_OWNER_CAPABILITY
-author: windows-driver-content
 description: WDI_TLV_P2P_GROUP_OWNER_CAPABILITY is a TLV that contains Wi-Fi Direct Group Owner capability information.
 ms.assetid: 3F07665C-0212-465C-9118-CC213198EFB7
 ms.date: 07/18/2017

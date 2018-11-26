@@ -1,6 +1,5 @@
 ---
 title: Preprocessor Directives
-author: windows-driver-content
 description: Preprocessor Directives
 ms.assetid: 5731b159-c6f9-47a8-8eaa-a1b0b6c12132
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Introduction to Standard Driver Routines
-author: windows-driver-content
 description: Introduction to Standard Driver Routines
 ms.assetid: 91aaca02-a571-4058-b5af-98277fcbcf9d
 keywords: ["standard driver routines WDK kernel , about standard driver routines", "driver routines WDK kernel , about standard driver routines", "routines WDK kernel , about standard driver routines", "IRPs WDK kernel , standard driver routines", "required standard routines WDK kernel", "optional standard routines WDK kernel"]

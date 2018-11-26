@@ -1,6 +1,5 @@
 ---
 title: Calling ScsiPortXxx from HwScsiFindAdapter
-author: windows-driver-content
 description: Calling ScsiPortXxx from HwScsiFindAdapter
 ms.assetid: 17cfca31-ff93-4882-872c-ab8af6cdc3cf
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Functions Defined by Print Processors
-author: windows-driver-content
 description: Functions Defined by Print Processors
 ms.assetid: ada376f0-515e-4995-b612-4da9523b6fcf
 keywords:

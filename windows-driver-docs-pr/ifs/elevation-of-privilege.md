@@ -1,6 +1,5 @@
 ---
 title: Elevation of Privilege
-author: windows-driver-content
 description: Elevation of Privilege
 ms.assetid: 08e20c51-fbc1-4e38-b12d-f123e4a2ba10
 keywords:

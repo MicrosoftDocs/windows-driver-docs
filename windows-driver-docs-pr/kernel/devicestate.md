@@ -1,6 +1,5 @@
 ---
 title: DeviceState
-author: windows-driver-content
 description: DeviceState
 ms.assetid: 4cf650ea-cccf-411c-809f-0a01e2ceb067
 keywords: ["DeviceState"]

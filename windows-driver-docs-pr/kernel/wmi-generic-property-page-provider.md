@@ -1,6 +1,5 @@
 ---
 title: WMI Generic Property Page Provider
-author: windows-driver-content
 description: WMI Generic Property Page Provider
 ms.assetid: 44cfafdf-c8e2-4175-95e5-3c5d03dc206d
 keywords: ["WMI WDK kernel , property sheets", "property sheets WDK WMI", "generic property page providers WDK WMI", "property pages WDK WMI", "property qualifiers WDK WMI", "device property sheets WDK WMI"]

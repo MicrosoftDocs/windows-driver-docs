@@ -1,6 +1,5 @@
 ---
 title: Parallel Device Interfaces, Internal Names, and Symbolic Links
-author: windows-driver-content
 description: Parallel Device Interfaces, Internal Names, and Symbolic Links
 ms.assetid: 859e20bb-e411-4572-a393-a6faf534cf15
 keywords:

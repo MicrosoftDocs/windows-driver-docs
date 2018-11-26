@@ -1,6 +1,5 @@
 ---
 title: Interpreting HID Reports
-author: windows-driver-content
 description: Interpreting HID Reports
 ms.assetid: 10f8c3a1-ad60-4c99-a425-fa8c9a3be0e1
 keywords:

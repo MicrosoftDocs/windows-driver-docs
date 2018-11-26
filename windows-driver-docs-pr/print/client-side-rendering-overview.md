@@ -1,6 +1,5 @@
 ---
 title: Client-Side Rendering Overview
-author: windows-driver-content
 description: Client-Side Rendering Overview
 ms.assetid: 0c73ca03-0fde-423d-80c9-6800468176b5
 keywords:

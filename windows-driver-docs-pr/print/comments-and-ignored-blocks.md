@@ -1,6 +1,5 @@
 ---
 title: Comments and Ignored Blocks
-author: windows-driver-content
 description: Comments and Ignored Blocks
 ms.assetid: 8b3a0195-b2c8-491d-abcd-bfaebefbc77d
 keywords:

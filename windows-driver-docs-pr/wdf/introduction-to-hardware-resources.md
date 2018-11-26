@@ -1,6 +1,5 @@
 ---
 title: Introduction to Hardware Resources
-author: windows-driver-content
 description: Introduction to Hardware Resources
 ms.assetid: 34350031-daae-4213-b157-086a7a55e05b
 keywords:

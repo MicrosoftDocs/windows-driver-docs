@@ -1,6 +1,5 @@
 ---
 title: How WHEA Performs PFA on ECC Memory
-author: windows-driver-content
 description: How WHEA Performs PFA on ECC Memory
 ms.assetid: def94688-9ca6-4146-8d5b-4c3550d3d272
 keywords:
@@ -41,11 +40,11 @@ When an ECC memory error occurs on a memory page, WHEA performs PFA on the ECC m
 
 
 
-~~~
+
 WHEA then adds the memory page into the Boot Configuration Data (BCD) in the system store. This prevents the memory page from being used after the next system restart.
 
 **Note**  WHEA will not take a hardware component, such as an ECC memory page, offline if the registry value **DisableOffline** is set to a nonzero value. Also, WHEA will not add the ECC memory page to the BCD store if the registry value **MemPersistOffline** is set to 0.
-~~~
+
 
 
 

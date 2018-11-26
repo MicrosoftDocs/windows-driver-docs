@@ -1,6 +1,5 @@
 ---
 title: Writing Preoperation Callback Routines
-author: windows-driver-content
 description: Writing Preoperation Callback Routines
 ms.assetid: 3f863c44-152e-43c9-8ef5-ec426986a3fe
 keywords:

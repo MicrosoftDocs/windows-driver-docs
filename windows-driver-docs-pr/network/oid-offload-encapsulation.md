@@ -1,6 +1,5 @@
 ---
 title: OID_OFFLOAD_ENCAPSULATION
-author: windows-driver-content
 description: This topic describes the OID_OFFLOAD_ENCAPSULATION object identifier (OID). 
 ms.assetid: 8B5BE43C-1004-427A-B16D-5A2AA34C96CD
 keywords:

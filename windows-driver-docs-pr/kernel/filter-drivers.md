@@ -1,6 +1,5 @@
 ---
 title: Filter Drivers
-author: windows-driver-content
 description: Filter Drivers
 ms.assetid: 4def5503-bb0e-4bae-b048-4c8d25d62020
 keywords: ["filter drivers WDK WDM", "bus filter drivers WDK WDM", "lower-level filter drivers WDK WDM", "upper-level filter drivers WDK WDM", "WDM filter drivers WDK"]

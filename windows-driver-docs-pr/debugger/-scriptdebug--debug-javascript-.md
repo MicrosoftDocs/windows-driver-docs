@@ -2,7 +2,6 @@
 title: .scriptdebug (Debug JavaScript)
 description: Use the .scriptdebug command to debug JavaScript scripts.
 keywords: [".scriptdebug Debug JavaScript Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 12/28/2017
 ms.topic: article
 ms.prod: windows-hardware

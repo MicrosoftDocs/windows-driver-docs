@@ -1,6 +1,5 @@
 ---
 title: Using Nt and Zw Versions of the Native System Services Routines
-author: windows-driver-content
 description: Using Nt and Zw Versions of the Native System Services Routines
 ms.assetid: 89627ddb-621d-4d27-acd6-16308689165d
 keywords: ["Native System Services API WDK"]

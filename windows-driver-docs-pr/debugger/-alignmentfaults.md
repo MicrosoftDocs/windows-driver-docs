@@ -3,7 +3,6 @@ title: alignmentfaults
 description: The alignmentfaults extension displays all current type alignment faults by location and image, sorted by frequencies.
 ms.assetid: 6720a4de-ba75-4449-ab47-559bc7323002
 keywords: ["alignmentfaults Windows Debugging"]
-ms.author: domars
 ms.date: 09/17/2018
 topic_type:
 - apiref

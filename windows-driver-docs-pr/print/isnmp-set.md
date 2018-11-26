@@ -1,6 +1,5 @@
 ---
 title: ISNMP Set method
-author: windows-driver-content
 description: The Set method enables an ASP Web page to associate a value with an SNMP OID.
 MS-HAID:
 - 'webfnc\_b0392f7d-7d17-41ce-97fe-8f8baa691c78.xml'

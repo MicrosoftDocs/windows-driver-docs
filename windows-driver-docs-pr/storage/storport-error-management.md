@@ -1,6 +1,5 @@
 ---
 title: Storport Error Management
-author: windows-driver-content
 description: Storport Error Management
 ms.assetid: f482b362-789a-4cc0-92c9-9d0db5d8561a
 ms.date: 04/20/2017

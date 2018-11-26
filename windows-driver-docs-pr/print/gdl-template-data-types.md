@@ -1,6 +1,5 @@
 ---
 title: GDL Template Data Types
-author: windows-driver-content
 description: GDL Template Data Types
 ms.assetid: 9dd7ff66-9e50-490d-b7a4-76d645e2b9a5
 keywords:

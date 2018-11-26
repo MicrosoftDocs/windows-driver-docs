@@ -1,6 +1,5 @@
 ---
 title: Sample User-Mode Code for Methods and Events
-author: windows-driver-content
 description: Sample User-Mode Code for Methods and Events
 ms.assetid: 0d564eb7-8e81-43bd-b539-f1240b3a21de
 keywords:

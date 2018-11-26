@@ -1,6 +1,5 @@
 ---
 title: TCP/IP Indexed Properties and Device Indexes
-author: windows-driver-content
 description: TCP/IP Indexed Properties and Device Indexes
 ms.assetid: b26b0c18-1787-43e0-8461-acfbd9fb38f9
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Peer Subunit Device Identifiers
-author: windows-driver-content
 description: Peer Subunit Device Identifiers
 ms.assetid: f33c554b-77a7-4879-875e-12210b8a553f
 keywords:

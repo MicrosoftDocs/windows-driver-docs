@@ -1,6 +1,5 @@
 ---
 title: Time Stamps
-author: windows-driver-content
 description: Time Stamps
 ms.assetid: a97a57df-294a-4cbb-85d3-56d33ece65c9
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: IPrinterScriptUsbJobContext interface
-author: windows-driver-content
 description: The IPrinterScriptUsbJobContext interface is passed as a parameter to the startPrintJob JavaScript function.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

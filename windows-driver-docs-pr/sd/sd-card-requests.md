@@ -1,6 +1,5 @@
 ---
 title: SD Card Requests
-author: windows-driver-content
 description: SD Card Requests
 ms.assetid: 3c04573a-5fe7-4332-b899-5aff3234f1ad
 keywords:

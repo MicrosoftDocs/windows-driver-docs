@@ -1,7 +1,6 @@
 ---
 Description: Describes various tools you can use to test USB devices and drivers.
 title: USB test tools
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

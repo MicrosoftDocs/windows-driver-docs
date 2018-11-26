@@ -1,6 +1,5 @@
 ---
 title: Authentication and Identification
-author: windows-driver-content
 description: Authentication and Identification
 ms.assetid: fe118cf3-05ce-43b1-b878-4bb99b97dc2e
 keywords:

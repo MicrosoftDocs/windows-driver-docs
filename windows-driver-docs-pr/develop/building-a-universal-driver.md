@@ -1,6 +1,5 @@
 ---
 title: Building a Universal Windows driver
-author: windows-driver-content
 description: Guide to building a universal driver
 ms.date: 10/03/2017
 ms.localizationpriority: medium

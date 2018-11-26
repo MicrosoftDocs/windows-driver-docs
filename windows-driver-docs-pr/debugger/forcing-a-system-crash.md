@@ -3,7 +3,6 @@ title: Forcing a System Crash
 description: Forcing a System Crash
 ms.assetid: db93b032-2ca7-4197-87dd-4ae77c328f60
 keywords: ["system crash, overview"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---

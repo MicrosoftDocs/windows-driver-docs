@@ -1,6 +1,5 @@
 ---
 title: User-Defined ECPs
-author: windows-driver-content
 description: User-Defined ECPs
 ms.assetid: 8589259b-2b21-44f1-bf69-c6792ee5541f
 ms.date: 04/20/2017

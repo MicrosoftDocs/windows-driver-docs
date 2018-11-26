@@ -1,6 +1,5 @@
 ---
 title: AVStream Object Hierarchy
-author: windows-driver-content
 description: AVStream Object Hierarchy
 ms.assetid: b7d6f06d-6c97-414e-a453-d375e2d7ccf5
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Bidi Extension Sample for TCP/IP Port Monitor
-author: windows-driver-content
 description: Bidi Extension Sample for TCP/IP Port Monitor
 ms.assetid: 76454b0c-0e02-4372-97ed-2401a785cef8
 keywords:

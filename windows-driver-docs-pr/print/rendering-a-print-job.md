@@ -1,6 +1,5 @@
 ---
 title: Rendering a Print Job
-author: windows-driver-content
 description: Rendering a Print Job
 ms.assetid: 78967839-b518-41c0-8825-b00f8b8560e6
 keywords:

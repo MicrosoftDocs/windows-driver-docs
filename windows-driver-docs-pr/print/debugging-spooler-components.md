@@ -1,6 +1,5 @@
 ---
 title: Debugging Spooler Components
-author: windows-driver-content
 description: Debugging Spooler Components
 ms.assetid: ed4dcd29-105c-4562-9741-858cb9542449
 keywords:

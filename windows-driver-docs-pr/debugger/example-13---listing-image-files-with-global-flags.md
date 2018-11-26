@@ -2,7 +2,6 @@
 title: Example 13 Listing Image Files with Global Flags
 description: Example 13 Listing Image Files with Global Flags
 ms.assetid: 1b1285d5-ed73-49c4-a123-de9cbdb3090c
-ms.author: domars
 ms.date: 10/12/2018
 ms.localizationpriority: medium
 ---

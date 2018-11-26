@@ -1,6 +1,5 @@
 ---
 title: Packet-based DMA in AVStream
-author: windows-driver-content
 description: Packet-based DMA in AVStream
 ms.assetid: 4246819e-d8d6-4302-9477-675ca181b1e3
 keywords:

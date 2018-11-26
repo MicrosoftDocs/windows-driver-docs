@@ -1,6 +1,5 @@
 ---
 title: PSHED Plug-In Operations
-author: windows-driver-content
 description: PSHED Plug-In Operations
 ms.assetid: 05862cc4-0257-46d1-88c1-faa4230e3b89
 keywords:

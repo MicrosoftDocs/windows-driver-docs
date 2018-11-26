@@ -1,6 +1,5 @@
 ---
 title: Processing a Print Job
-author: windows-driver-content
 description: Processing a Print Job
 ms.assetid: c5e291d9-069c-4877-a167-862ba5794368
 keywords:

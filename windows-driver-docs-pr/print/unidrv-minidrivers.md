@@ -1,6 +1,5 @@
 ---
 title: Unidrv Minidrivers
-author: windows-driver-content
 description: Unidrv Minidrivers
 ms.assetid: ebf12f61-6194-4033-92a2-2bbccc40a6fd
 keywords:

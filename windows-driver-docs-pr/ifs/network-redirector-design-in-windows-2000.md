@@ -1,6 +1,5 @@
 ---
 title: Network Redirector Design in Windows 2000
-author: windows-driver-content
 description: Network Redirector Design in Windows 2000
 ms.assetid: d5a78712-02ee-48f4-86b9-c294b41245a6
 keywords:

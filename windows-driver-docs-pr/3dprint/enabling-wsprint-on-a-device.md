@@ -1,6 +1,5 @@
 ---
 title: Enable WSPrint 2.0 on a device
-author: windows-driver-content
 description: Use these settings to enable WSPrint 2.0 on a device
 ms.date: 01/30/2018
 ms.localizationpriority: medium

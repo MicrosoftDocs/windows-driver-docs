@@ -1,6 +1,5 @@
 ---
 title: IPrinterBidiSchemaElement Interface
-author: windows-driver-content
 description: The IPrinterBidiSchemaElement interface is passed as a parameter to the USB Extension JavaScript method setSchema. This interface represents a single Bidi schema element.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

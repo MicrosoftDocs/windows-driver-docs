@@ -1,6 +1,5 @@
 ---
 title: bitmap element
-author: windows-driver-content
 description: The optional bitmap element is used to display a bitmap image to the left of the body text in a message box.
 ms.assetid: 6dd1a82f-7a9e-4ed6-9d0d-76e025331d2c
 keywords: ["bitmap element Print Devices"]

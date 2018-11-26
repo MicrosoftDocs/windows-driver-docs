@@ -1,6 +1,5 @@
 ---
 title: Returning Status from Completion Routines
-author: windows-driver-content
 description: Returning Status from Completion Routines
 ms.assetid: fb12720b-10fe-43ab-ade7-c1b09d00d922
 keywords:

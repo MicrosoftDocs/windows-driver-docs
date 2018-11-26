@@ -1,6 +1,5 @@
 ---
 title: IOleCvt ToUnicode method
-author: windows-driver-content
 description: The ToUnicode property enables an ASP Web page to convert one Unicode string to another using a specified code page.
 MS-HAID:
 - 'webfnc\_37f4684f-4af9-4e25-8c5e-6ad63748cf5d.xml'

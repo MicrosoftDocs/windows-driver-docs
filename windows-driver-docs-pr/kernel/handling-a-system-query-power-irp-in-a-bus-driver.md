@@ -1,6 +1,5 @@
 ---
 title: Handling a System Query-Power IRP in a Bus Driver
-author: windows-driver-content
 description: Handling a System Query-Power IRP in a Bus Driver
 ms.assetid: d42c268e-d57d-41a6-8e61-67c651082106
 keywords: ["query-power IRPs WDK power management", "bus drivers WDK power management"]

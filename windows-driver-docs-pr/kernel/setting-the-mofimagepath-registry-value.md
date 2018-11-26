@@ -1,6 +1,5 @@
 ---
 title: Setting the MofImagePath Registry Value
-author: windows-driver-content
 description: Setting the MofImagePath Registry Value
 ms.assetid: b8c43cd3-d4f4-4f1e-b692-8005d845d64a
 keywords: ["WMI WDK kernel , publishing schema", "publishing WMI schema WDK", "schema publishing WDK WMI", "MOF files WDK WMI", "MofImagePath"]

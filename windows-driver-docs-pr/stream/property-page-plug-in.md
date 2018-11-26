@@ -1,6 +1,5 @@
 ---
 title: Property Page Plug-in
-author: windows-driver-content
 description: Property Page Plug-in
 ms.assetid: cf5f5861-1670-413c-9c42-c1b6eb6d719a
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Checking Flags in the Device Object
-author: windows-driver-content
 description: Checking Flags in the Device Object
 ms.assetid: f7bff7b8-bd30-4489-ab3f-ca5ad4d5c1ba
 keywords: ["removable media WDK kernel , flag checking", "flags WDK removable media", "checking device object flags", "verifying device object flags"]

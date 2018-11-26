@@ -1,6 +1,5 @@
 ---
 title: Halftone Algorithms
-author: windows-driver-content
 description: Halftone Algorithms
 ms.assetid: 1831f952-4c83-4dfa-87e7-1c755f143227
 keywords:

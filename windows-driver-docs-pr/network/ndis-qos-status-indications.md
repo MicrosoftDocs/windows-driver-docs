@@ -1,6 +1,5 @@
 ---
 title: NDIS QoS Status Indications
-author: windows-driver-content
 description: NDIS QoS Status Indications
 ms.assetid: 5D1B6264-35C9-4887-A2D1-C8AED017CAFC
 ms.date: 07/18/2017

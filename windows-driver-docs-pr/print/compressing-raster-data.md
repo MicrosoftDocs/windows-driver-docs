@@ -1,6 +1,5 @@
 ---
 title: Compressing Raster Data
-author: windows-driver-content
 description: Compressing Raster Data
 ms.assetid: 8c74e7f3-5601-4510-9fcd-261f5cd48e9c
 keywords:

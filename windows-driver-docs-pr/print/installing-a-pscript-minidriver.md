@@ -1,6 +1,5 @@
 ---
 title: Installing a Pscript Minidriver
-author: windows-driver-content
 description: Installing a Pscript Minidriver
 ms.assetid: 9c48b2b0-c293-4606-bbaa-3fcaca01c300
 keywords:

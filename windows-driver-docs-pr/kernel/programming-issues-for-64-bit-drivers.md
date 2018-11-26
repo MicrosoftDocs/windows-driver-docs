@@ -1,6 +1,5 @@
 ---
 title: Programming Issues for 64-Bit Drivers
-author: windows-driver-content
 description: Programming Issues for 64-Bit Drivers
 ms.assetid: 36794bd3-1d44-4edf-b789-a4da4165ea60
 keywords: ["64-bit WDK kernel", "kernel-mode drivers WDK , 64-bit issues", "Win32 applications WDK 64-bit", "user-mode applications WDK 64-bit"]

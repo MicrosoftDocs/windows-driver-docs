@@ -1,6 +1,5 @@
 ---
 title: Bundling the Core Driver with Your Package-Aware Driver
-author: windows-driver-content
 description: Bundling the Core Driver with Your Package-Aware Driver
 ms.assetid: 72e29f79-4e71-4aa8-929f-eefdebfe4835
 ms.date: 04/20/2017

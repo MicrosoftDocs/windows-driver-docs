@@ -1,6 +1,5 @@
 ---
 title: Describing Printer Memory Configurations
-author: windows-driver-content
 description: Describing Printer Memory Configurations
 ms.assetid: 4a85788a-9713-42fb-a788-4d45f9aaabac
 keywords:

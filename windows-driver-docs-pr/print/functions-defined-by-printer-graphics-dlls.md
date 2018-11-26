@@ -1,6 +1,5 @@
 ---
 title: Functions Defined by Printer Graphics DLLs
-author: windows-driver-content
 description: Functions Defined by Printer Graphics DLLs
 ms.assetid: b0c9ce45-76c4-4058-af3f-7b9d230bcf94
 keywords:

@@ -3,7 +3,6 @@ title: Specialized Extensions
 description: Specialized Extensions
 ms.assetid: 4329fade-2458-4a60-a06c-4069fc339f3e
 keywords: ["extension commands ( commands), specialized extensions", "extension commands ( commands), specialized extensions, Also see individual extension types"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---

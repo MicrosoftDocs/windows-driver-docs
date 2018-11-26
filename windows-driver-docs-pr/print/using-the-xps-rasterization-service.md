@@ -1,6 +1,5 @@
 ---
 title: Using the XPS Rasterization Service
-author: windows-driver-content
 description: Using the XPS Rasterization Service
 ms.assetid: a6a3746a-3638-464b-bca0-60003f37af76
 ms.date: 04/20/2017

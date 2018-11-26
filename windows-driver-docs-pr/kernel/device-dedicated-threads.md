@@ -1,6 +1,5 @@
 ---
 title: Device-Dedicated Threads
-author: windows-driver-content
 description: Device-Dedicated Threads
 ms.assetid: 2e11e2c9-aefd-4b7b-8d80-7eb1da9f7cce
 keywords: ["thread objects WDK kernel", "device-dedicated threads WDK kernel", "run-time priority inversions WDK kernel", "PsCreateSystemThread", "KeSetBasePriorityThread"]

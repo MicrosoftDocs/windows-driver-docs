@@ -1,6 +1,5 @@
 ---
 title: Tape Drivers
-author: windows-driver-content
 description: Tape Drivers
 ms.assetid: d6d8ac92-0713-401c-9551-fc8e08e903f4
 keywords:

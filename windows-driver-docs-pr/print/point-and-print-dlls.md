@@ -1,6 +1,5 @@
 ---
 title: Point and Print DLLs
-author: windows-driver-content
 description: Point and Print DLLs
 ms.assetid: 7ead940e-8426-4756-890f-f3607dc1f9ca
 keywords:

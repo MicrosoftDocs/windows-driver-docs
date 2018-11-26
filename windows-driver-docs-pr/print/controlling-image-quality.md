@@ -1,6 +1,5 @@
 ---
 title: Controlling Image Quality
-author: windows-driver-content
 description: Controlling Image Quality
 ms.assetid: b6d25178-6726-4ce0-ab34-efeedc618044
 keywords:

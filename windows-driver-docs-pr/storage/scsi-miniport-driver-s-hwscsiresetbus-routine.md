@@ -1,6 +1,5 @@
 ---
 title: SCSI Miniport Driver's HwScsiResetBus Routine
-author: windows-driver-content
 description: SCSI Miniport Driver's HwScsiResetBus Routine
 ms.assetid: ca4ab3e6-e23c-443a-bcf6-6fd516569999
 keywords:

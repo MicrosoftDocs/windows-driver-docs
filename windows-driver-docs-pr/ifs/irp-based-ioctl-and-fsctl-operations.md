@@ -1,6 +1,5 @@
 ---
 title: IRP-Based IOCTL and FSCTL Operations
-author: windows-driver-content
 description: IRP-Based IOCTL and FSCTL Operations
 ms.assetid: 08d6cf89-aaba-4aa1-baff-eb6aece2875f
 keywords:

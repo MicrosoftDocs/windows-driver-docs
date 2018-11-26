@@ -1,6 +1,5 @@
 ---
 title: Extracting and Setting Control Data by Data Indices
-author: windows-driver-content
 description: Extracting and Setting Control Data by Data Indices
 ms.assetid: d26d169f-4116-4d81-94c7-63c92d22877d
 keywords: ["HID reports WDK , setting control data", "reports WDK HID , setting control data", "HID reports WDK , extracting control data", "reports WDK HID , extracting control data", "extracting HID control data", "data index WDK HID", "index WDK HID data"]

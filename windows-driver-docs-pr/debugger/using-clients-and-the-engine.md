@@ -3,7 +3,6 @@ title: Using Clients and the Engine
 description: Using Clients and the Engine
 ms.assetid: 899184f5-334b-4fd1-98ce-64475650ace5
 keywords: ["DbgEng Extensions, engine client objects"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---

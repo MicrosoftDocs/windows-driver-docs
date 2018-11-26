@@ -1,6 +1,5 @@
 ---
 title: File System Minifilter Drivers
-author: windows-driver-content
 description: File System Minifilter Drivers
 ms.assetid: ef330fa1-2be5-472a-8868-56589d8befbc
 keywords:

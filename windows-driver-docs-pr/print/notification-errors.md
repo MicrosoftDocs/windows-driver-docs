@@ -1,6 +1,5 @@
 ---
 title: Notification Errors
-author: windows-driver-content
 description: Notification Errors
 ms.assetid: ffead40c-5c1c-45f6-83d2-48e4af357255
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Example WDM Device Objects
-author: windows-driver-content
 description: Example WDM Device Objects
 ms.assetid: 8da56415-5018-468c-99c7-3969e5c00285
 keywords: ["device objects WDK kernel , examples", "mouse WDK kernel", "keyboards WDK kernel", "functional device objects WDK kernel", "FDO WDK kernel", "physical device objects WDK kernel", "PDOs WDK kernel", "filter DOs WDK kernel"]

@@ -1,6 +1,5 @@
 ---
 title: Guaranteeing Forward Progress of I/O Operations
-author: windows-driver-content
 description: Guaranteeing Forward Progress of I/O Operations
 ms.assetid: e230eb3b-54ac-43b1-ac2b-8fa137cee43e
 keywords:

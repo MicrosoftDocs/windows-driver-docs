@@ -1,6 +1,5 @@
 ---
 title: SetIdlePollingState
-author: windows-driver-content
 description: SetIdlePollingState
 ms.assetid: 55eb8c74-d759-4837-8ee8-b6e1819c1366
 keywords:

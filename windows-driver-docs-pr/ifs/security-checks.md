@@ -1,6 +1,5 @@
 ---
 title: Security Checks
-author: windows-driver-content
 description: Security Checks
 ms.assetid: 2883910a-72f3-4be9-b1dd-6fb02abffe73
 keywords:

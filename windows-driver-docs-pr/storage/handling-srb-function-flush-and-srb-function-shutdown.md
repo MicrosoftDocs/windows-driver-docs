@@ -1,6 +1,5 @@
 ---
 title: Handling SRB_FUNCTION_FLUSH and SRB_FUNCTION_SHUTDOWN
-author: windows-driver-content
 description: Handling SRB_FUNCTION_FLUSH and SRB_FUNCTION_SHUTDOWN
 ms.assetid: d4b8b3e5-d895-42ca-bd28-9d3cef805654
 keywords:

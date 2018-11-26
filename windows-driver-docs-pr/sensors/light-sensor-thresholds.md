@@ -1,6 +1,5 @@
 ---
 title: Light sensor thresholds
-author: windows-driver-content
 description: This topic provides information about the light sensor thresholds.
 ms.assetid: A120601A-A5CE-4778-94A9-97E71B721E9B
 ms.date: 07/20/2018

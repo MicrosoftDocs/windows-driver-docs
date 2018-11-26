@@ -1,6 +1,5 @@
 ---
 title: SCSI Miniport Initialization Under Plug and Play
-author: windows-driver-content
 description: SCSI Miniport Initialization Under Plug and Play
 ms.assetid: bf2f9809-8271-4f0f-a2c4-25127fe9c4aa
 keywords:

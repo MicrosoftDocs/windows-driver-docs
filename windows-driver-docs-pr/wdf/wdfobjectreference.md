@@ -1,6 +1,5 @@
 ---
 title: WdfObjectReference macro
-author: windows-driver-content
 description: The WdfObjectReference macro increments the reference count for a specified framework object.
 ms.assetid: 8e024197-d366-4665-994b-4e03f559e017
 keywords:

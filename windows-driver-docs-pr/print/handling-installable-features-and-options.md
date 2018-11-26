@@ -1,6 +1,5 @@
 ---
 title: Handling Installable Features and Options
-author: windows-driver-content
 description: Handling Installable Features and Options
 ms.assetid: b970808f-55bd-4a3a-9464-c9cd3567fa6f
 keywords:

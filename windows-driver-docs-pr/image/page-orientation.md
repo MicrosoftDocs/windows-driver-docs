@@ -1,6 +1,5 @@
 ---
 title: Page Orientation
-author: windows-driver-content
 description: Page Orientation
 ms.assetid: fb28863a-920a-4b26-a652-fb255622824f
 ms.date: 04/20/2017

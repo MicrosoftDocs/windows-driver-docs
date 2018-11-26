@@ -1,6 +1,5 @@
 ---
 title: IPrinterScriptUsbJobContext TemporaryStreams method
-author: windows-driver-content
 description: Returns an array of IPrinterScriptableSequentialStream interfaces for the persistent data streams that can be used by the IHV JavaScript functions for the current job.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

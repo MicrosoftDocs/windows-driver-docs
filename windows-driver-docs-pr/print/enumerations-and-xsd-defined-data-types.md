@@ -1,6 +1,5 @@
 ---
 title: Enumerations and XSD-Defined Data Types
-author: windows-driver-content
 description: Enumerations and XSD-Defined Data Types
 ms.assetid: 1e5f41b2-4e47-4c9f-a702-9455e69dca75
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Reporting Device Failures
-author: windows-driver-content
 description: Reporting Device Failures
 ms.assetid: ca536547-d51a-4450-8a83-19aac67aab92
 keywords:

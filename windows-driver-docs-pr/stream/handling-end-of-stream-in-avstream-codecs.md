@@ -1,6 +1,5 @@
 ---
 title: Handling End of Stream in AVStream Codecs
-author: windows-driver-content
 description: Handling End of Stream in AVStream Codecs
 ms.assetid: ee57137b-999a-449f-9f9d-50bc19e07ba8
 keywords:

@@ -8,7 +8,6 @@ keywords:
 - WsdCodeGen tool WDK
 - tools WDK , developing drivers
 - Web Services for Devices WDK WIA , tools
-ms.author: windowsdriverdev
 ms.date: 06/28/2018
 ms.topic: article
 ms.prod: windows-hardware

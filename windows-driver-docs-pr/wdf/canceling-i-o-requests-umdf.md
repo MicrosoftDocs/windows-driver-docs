@@ -1,6 +1,5 @@
 ---
 title: Canceling I/O Requests in UMDF
-author: windows-driver-content
 description: Canceling I/O Requests in UMDF
 ms.assetid: 4f69903b-00ef-4b47-a564-aaa7d076481b
 keywords:

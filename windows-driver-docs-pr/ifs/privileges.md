@@ -1,6 +1,5 @@
 ---
 title: Privileges
-author: windows-driver-content
 description: Privileges
 ms.assetid: a8df1a44-6fb7-4c16-a29d-785d06dd50e4
 keywords:

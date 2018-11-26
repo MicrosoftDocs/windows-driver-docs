@@ -1,6 +1,5 @@
 ---
 title: Quality Management
-author: windows-driver-content
 description: Quality Management
 ms.assetid: 359e6e12-903f-4037-8f35-b090ce41f770
 keywords:

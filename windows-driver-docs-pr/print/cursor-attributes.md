@@ -1,6 +1,5 @@
 ---
 title: Cursor Attributes
-author: windows-driver-content
 description: Cursor Attributes
 ms.assetid: 43646e2a-bc40-430e-ac7e-6fe4cb353309
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Miscellaneous Information
-author: windows-driver-content
 description: Miscellaneous Information
 ms.assetid: 190db186-3624-4ee3-a656-927dfb575584
 ms.date: 04/20/2017

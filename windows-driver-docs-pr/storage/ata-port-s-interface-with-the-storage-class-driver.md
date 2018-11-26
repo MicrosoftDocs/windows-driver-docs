@@ -1,6 +1,5 @@
 ---
 title: ATA Port's Interface with the Storage Class Driver
-author: windows-driver-content
 description: ATA Port's Interface with the Storage Class Driver
 ms.assetid: 6b22bbb1-f14e-48d9-a00c-c7eae79a078f
 keywords:

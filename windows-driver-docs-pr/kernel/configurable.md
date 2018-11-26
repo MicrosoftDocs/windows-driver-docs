@@ -1,6 +1,5 @@
 ---
 title: Configurable
-author: windows-driver-content
 description: Configurable
 ms.assetid: 0dcdc2eb-0a27-4739-be9d-48a0382347cf
 keywords: ["hardware-configurable devices WDK kernel", "software-configurable drivers WDK kernel", "configurable devices and drivers WDK kernel"]

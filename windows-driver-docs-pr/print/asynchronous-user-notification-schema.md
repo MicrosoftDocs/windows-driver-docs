@@ -1,6 +1,5 @@
 ---
 title: Asynchronous User Notification Schema
-author: windows-driver-content
 description: Asynchronous User Notification Schema
 ms.assetid: a9a11663-d5e5-4337-8be3-bdb6d3b0e436
 ms.date: 11/28/2017

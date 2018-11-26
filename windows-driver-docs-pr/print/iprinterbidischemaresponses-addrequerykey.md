@@ -1,6 +1,5 @@
 ---
 title: IPrinterBidiSchemaResponses AddRequeryKey method
-author: windows-driver-content
 description: The AddRequeryKey method adds a new QueryKey to re-query upon return from the getSchemas call.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

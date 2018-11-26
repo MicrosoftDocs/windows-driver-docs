@@ -1,6 +1,5 @@
 ---
 title: Returning Status from a FilterUnloadCallback Routine
-author: windows-driver-content
 description: Returning Status from a FilterUnloadCallback Routine
 ms.assetid: 6fdaadc7-860d-49d6-833c-64624f435fd3
 keywords:

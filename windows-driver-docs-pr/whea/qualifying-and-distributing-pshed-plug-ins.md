@@ -1,6 +1,5 @@
 ---
 title: Qualifying and Distributing PSHED Plug-Ins
-author: windows-driver-content
 description: Qualifying and Distributing PSHED Plug-Ins
 ms.assetid: fe6cbb01-552f-4b24-b300-168d6311a596
 keywords:

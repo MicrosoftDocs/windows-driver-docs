@@ -1,6 +1,5 @@
 ---
 title: Sharing a Serial Device Interrupt
-author: windows-driver-content
 description: Sharing a Serial Device Interrupt
 ms.assetid: 1d35fbc0-7031-42f3-bb22-52d2bcdcfa92
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Font Cartridge Attributes
-author: windows-driver-content
 description: Font Cartridge Attributes
 ms.assetid: d1f99322-9c77-428a-beb5-6d0ff166c3e5
 keywords:
