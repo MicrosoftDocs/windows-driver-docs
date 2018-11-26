@@ -298,7 +298,7 @@ function RunCommands()
 {
 var ctl = host.namespace.Debugger.Utility.Control;   
 var output = ctl.ExecuteCommand("u");
-host.diagnostics.debugLog("***> Displaying command ouput \n");
+host.diagnostics.debugLog("***> Displaying command output \n");
 
 for (var line of output)
    {
@@ -344,7 +344,7 @@ Use the dx command to call the RunCommands function in the RunCommands script.
 
 ```dbgcmd
 0:000> dx Debugger.State.Scripts.RunCommands.Contents.RunCommands()
-  ***> Displaying command ouput
+  ***> Displaying command output
   ntdll!ExpInterlockedPopEntrySListEnd+0x17 [d:\rs1\minkernel\ntos\rtl\amd64\slist.asm @ 196]:
   00007ffd`87f06e67 cc              int     3
   00007ffd`87f06e68 cc              int     3
