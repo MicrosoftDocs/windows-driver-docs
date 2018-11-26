@@ -30,7 +30,7 @@ Basic syntactical validation of JavaScript files is supported by opening the Jav
 
 ![javascript syntax error dialog](images/script-host-err.png)
 
-Publically available JavaScript validation tools may also be valuable as an aide in evaluating the style of JavaScript files.
+Publicly available JavaScript validation tools may also be valuable as an aide in evaluating the style of JavaScript files.
 
 Interactive debugging can be enabled by creating the following registry key:
 
