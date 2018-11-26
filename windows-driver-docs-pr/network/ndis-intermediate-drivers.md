@@ -5,19 +5,18 @@ ms.assetid: 0c0516b0-1fc4-43b5-8c7c-58255c72a4e7
 keywords:
 - intermediate drivers WDK networking , architecture
 - NDIS intermediate drivers WDK , architecture
-ms.date: 04/20/2017
+ms.date: 11/26/2018
 ms.localizationpriority: medium
 ---
 
 # Intermediate drivers
 
-
-
-
-
 As the following figure illustrates, intermediate drivers are typically layered between miniport drivers and transport protocol drivers.
 
 ![diagram illustrating an intermediate driver layered between a miniport driver and a transport driver](images/id-1.png)
+
+> [!NOTE]
+> For more information about the NDIS driver stack and a diagram showing the relationship between all four NDIS driver types, see [NDIS Driver Stack](ndis-driver-stack.md).
 
 Because of its intermediate position in the driver hierarchy, an intermediate driver must communicate with both overlying protocol drivers and underlying miniport drivers in order to expose:
 
@@ -39,17 +38,6 @@ You can use intermediate drivers to:
 
 ## Related topics
 
-
 [NDIS Intermediate Drivers](ndis-intermediate-drivers2.md)
 
 [NDIS Intermediate Driver Reference](https://msdn.microsoft.com/library/windows/hardware/ff565782)
-
- 
-
- 
-
-
-
-
-
-
