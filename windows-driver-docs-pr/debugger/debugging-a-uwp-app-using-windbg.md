@@ -76,9 +76,9 @@ Package Full Name: e24caf14-8483-4743-b80c-ca46c28c75df_1.0.0.0_x86__97ghe447vaa
 Package Display Name: HelloWorld
 Version: 1.0.0.0
 Processor Architecture: x86
-Publisher: CN=domars
-Publisher Display Name: domars
-Install Folder: c:\users\domars\documents\visual studio 2015\Projects\HelloWorld\HelloWorld\bin\x86\Release\AppX
+Publisher: CN=user1
+Publisher Display Name: user1
+Install Folder: c:\users\user1\documents\visual studio 2015\Projects\HelloWorld\HelloWorld\bin\x86\Release\AppX
 Package State: Unknown
 AppId: App
 ...
@@ -171,7 +171,7 @@ Version: 1.0.0.0
 Processor Architecture: x86
 Publisher: CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US
 Publisher Display Name: Microsoft Corporation
-Install Folder: C:\Users\DOMARS\Documents\Visual Studio 2015\Projects\Background_task_sample\C++\Debug\BackgroundTask.Windows\AppX
+Install Folder: C:\Users\user1\Documents\Visual Studio 2015\Projects\Background_task_sample\C++\Debug\BackgroundTask.Windows\AppX
 Package State: Running
 AppId: BackgroundTask.App
 Background Task Name: SampleBackgroundTask
@@ -226,9 +226,9 @@ Package Full Name: e24caf14-8483-4743-b80c-ca46c28c75df_1.0.0.0_x86__97ghe447vaa
 Package Display Name: HelloWorld
 Version: 1.0.0.0
 Processor Architecture: x86
-Publisher: CN=domars
-Publisher Display Name: domars
-Install Folder: c:\users\domars\documents\visual studio 2015\Projects\HelloWorld\HelloWorld\bin\x86\Release\AppX
+Publisher: CN=user1
+Publisher Display Name: user1
+Install Folder: c:\users\user1\documents\visual studio 2015\Projects\HelloWorld\HelloWorld\bin\x86\Release\AppX
 Package State: Running
 AppId: App
 Executable: HelloWorld.exe
@@ -261,9 +261,9 @@ Package Full Name: e24caf14-8483-4743-b80c-ca46c28c75df_1.0.0.0_x86__97ghe447vaa
 Package Display Name: HelloWorld
 Version: 1.0.0.0
 Processor Architecture: x86
-Publisher: CN=domars
-Publisher Display Name: domars
-Install Folder: c:\users\domars\documents\visual studio 2015\Projects\HelloWorld\HelloWorld\bin\x86\Release\AppX
+Publisher: CN=user1
+Publisher Display Name: user1
+Install Folder: c:\users\user1\documents\visual studio 2015\Projects\HelloWorld\HelloWorld\bin\x86\Release\AppX
 Package State: Running
 AppId: App
 Executable: HelloWorld.exe
@@ -274,7 +274,7 @@ Version: 1.0.0.0
 Processor Architecture: x86
 Publisher: CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US
 Publisher Display Name: Microsoft Corporation
-Install Folder: C:\Users\DOMARS\Documents\Visual Studio 2015\Projects\Background_task_sample\C++\Debug\BackgroundTask.Windows\AppX
+Install Folder: C:\Users\user1\Documents\Visual Studio 2015\Projects\Background_task_sample\C++\Debug\BackgroundTask.Windows\AppX
 Package State: Unknown
 AppId: BackgroundTask.App
 
@@ -436,7 +436,7 @@ Package Full Name: e24caf14-8483-4743-b80c-ca46c28c75df_1.0.0.0_x86__97ghe447vaa
 Package Display Name: HelloWorld
 Version: 1.0.0.0
 Processor Architecture: x86
-Publisher: CN=domars
+Publisher: CN=user1
 Publisher Display Name: user1
 Install Folder: c:\users\user1\documents\visual studio 2015\Projects\HelloWorld\HelloWorld\bin\x86\Release\AppX
 Package State: Unknown
