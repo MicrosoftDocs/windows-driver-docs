@@ -1,6 +1,5 @@
 ---
 title: Data Range Intersections in AVStream
-author: windows-driver-content
 description: Data Range Intersections in AVStream
 ms.assetid: 44281574-8258-47a3-857d-fd44bb949f17
 keywords:

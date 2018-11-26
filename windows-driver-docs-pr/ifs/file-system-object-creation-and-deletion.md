@@ -1,6 +1,5 @@
 ---
 title: File System Object Creation and Deletion
-author: windows-driver-content
 description: File System Object Creation and Deletion
 ms.assetid: 71e342cf-455f-4b01-af55-12568bf06728
 keywords:

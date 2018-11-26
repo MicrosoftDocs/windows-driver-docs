@@ -1,6 +1,5 @@
 ---
 title: GDL Directives for Templates
-author: windows-driver-content
 description: GDL Directives for Templates
 ms.assetid: c68650ae-d6ee-4ae3-afa2-655f2bcad916
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Handling WDM IRPs Outside of the Framework
-author: windows-driver-content
 description: Handling WDM IRPs Outside of the Framework
 ms.assetid: 43e1df0c-c0d1-4d41-87de-9f8f5831fb19
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Supporting Standard Paper Sizes
-author: windows-driver-content
 description: Supporting Standard Paper Sizes
 ms.assetid: 04f8fbdb-88f8-4595-b5d2-74315c02bb41
 keywords:

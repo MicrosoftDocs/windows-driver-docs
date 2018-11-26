@@ -1,6 +1,5 @@
 ---
 title: Modifying a Resource Requirements List
-author: windows-driver-content
 description: Modifying a Resource Requirements List
 ms.assetid: 75391dd2-5ae1-4562-97a0-4de21a08b61c
 keywords:

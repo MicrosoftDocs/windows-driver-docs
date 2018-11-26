@@ -1,6 +1,5 @@
 ---
 title: Creating a Per-Stream Context
-author: windows-driver-content
 description: Creating a Per-Stream Context
 ms.assetid: e33dba3b-50f7-43d8-b7e8-b7c2c9034d51
 keywords:

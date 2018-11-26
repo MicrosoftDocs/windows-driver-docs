@@ -1,6 +1,5 @@
 ---
 title: Location
-author: windows-driver-content
 description: Location
 ms.assetid: f04ce4de-233d-4763-be4d-e913623f4f1a
 ms.date: 11/28/2017

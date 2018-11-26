@@ -1,6 +1,5 @@
 ---
 title: OID_CO_TAPI_ADDRESS_CAPS
-author: windows-driver-content
 description: This topic describes the OID_CO_TAPI_ADDRESS_CAPS object identifier (OID).
 ms.assetid: c0e44c1b-89d1-4c50-a1fc-8322bb1d00c2
 keywords:

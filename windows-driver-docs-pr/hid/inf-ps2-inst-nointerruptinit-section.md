@@ -1,6 +1,5 @@
 ---
 title: INF PS2_Inst.NoInterruptInit Section
-author: windows-driver-content
 description: INF PS2_Inst.NoInterruptInit Section
 ms.assetid: e84cc7fc-8b17-4119-84f9-12ac888c68aa
 keywords:

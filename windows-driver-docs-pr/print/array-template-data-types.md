@@ -1,6 +1,5 @@
 ---
 title: Array Template Data Types
-author: windows-driver-content
 description: Array Template Data Types
 ms.assetid: d6be4ec3-1980-4e55-bd52-5249cd93deb8
 keywords:

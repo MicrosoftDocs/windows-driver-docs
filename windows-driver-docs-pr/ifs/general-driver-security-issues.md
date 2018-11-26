@@ -1,6 +1,5 @@
 ---
 title: General Driver Security Issues
-author: windows-driver-content
 description: General Driver Security Issues
 ms.assetid: 6788dc1e-585b-4a64-b65c-b8857a716cae
 ms.date: 04/20/2017

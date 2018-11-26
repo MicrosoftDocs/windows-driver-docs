@@ -1,6 +1,5 @@
 ---
 title: Filter Control Mutex in AVStream
-author: windows-driver-content
 description: Filter Control Mutex in AVStream
 ms.assetid: 402795a0-e567-4e7e-a7d8-b2ce29ffb8fd
 keywords:

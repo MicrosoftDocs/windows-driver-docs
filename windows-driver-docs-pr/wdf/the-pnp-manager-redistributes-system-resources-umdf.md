@@ -1,6 +1,5 @@
 ---
 title: The PnP Manager Redistributes System Resources
-author: windows-driver-content
 description: The PnP Manager Redistributes System Resources
 ms.assetid: c8e6277b-b1e5-449f-b5a0-f5a46b46e56e
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: V4 Driver UI Architecture
-author: windows-driver-content
 description: A high level design goal for the v4 driver architecture was to provide built-in support for the Microsoft Store app user interface.
 ms.assetid: 6318E480-C567-4866-8E88-B19904408C59
 ms.date: 09/28/2018

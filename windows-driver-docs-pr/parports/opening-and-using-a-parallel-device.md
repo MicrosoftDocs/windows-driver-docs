@@ -1,6 +1,5 @@
 ---
 title: Opening and Using a Parallel Device
-author: windows-driver-content
 description: Opening and Using a Parallel Device
 ms.assetid: ca58b1c3-9ecf-4ebe-8f08-a2f78ae17921
 keywords:

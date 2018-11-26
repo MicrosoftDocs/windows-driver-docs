@@ -1,6 +1,5 @@
 ---
 title: Using Automatic Synchronization
-author: windows-driver-content
 description: Using Automatic Synchronization
 ms.assetid: be7d3c0e-c3cf-4104-ab81-5ecdcb9163c8
 keywords:

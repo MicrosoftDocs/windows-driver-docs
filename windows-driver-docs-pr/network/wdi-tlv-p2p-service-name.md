@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_P2P_SERVICE_NAME
-author: windows-driver-content
 description: WDI_TLV_P2P_SERVICE_NAME is a TLV that contains the name of a service.
 ms.assetid: 6394F781-BFE7-4009-8F5E-72D7C8CCF036
 ms.date: 07/18/2017

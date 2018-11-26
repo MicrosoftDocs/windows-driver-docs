@@ -1,6 +1,5 @@
 ---
 title: AV/C Device Identifiers
-author: windows-driver-content
 description: AV/C Device Identifiers
 ms.assetid: c2d108c7-5ea9-42c1-92d7-5ba90f2f4232
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Sending I/O Requests to a General I/O Target in UMDF
-author: windows-driver-content
 description: Sending I/O Requests to a General I/O Target in UMDF
 ms.assetid: f373afa8-292a-47bb-af6f-5035287d1e8c
 keywords:

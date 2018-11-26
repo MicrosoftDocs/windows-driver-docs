@@ -1,6 +1,5 @@
 ---
 title: Pedometer data fields
-author: windows-driver-content
 description: This topic provides information about the data fields that are specific to the pedometer.
 ms.assetid: 35E52085-9727-465D-B6EF-D95974423CD5
 ms.date: 07/20/2018

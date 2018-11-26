@@ -1,6 +1,5 @@
 ---
 title: WIA-TWAIN Risks
-author: windows-driver-content
 description: WIA-TWAIN Risks
 ms.assetid: f202a0f6-ceec-4658-a499-b3024f6ebb71
 ms.date: 04/20/2017

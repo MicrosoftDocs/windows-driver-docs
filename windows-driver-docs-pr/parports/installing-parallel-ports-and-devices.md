@@ -1,6 +1,5 @@
 ---
 title: Installing Parallel Ports and Devices
-author: windows-driver-content
 description: Installing Parallel Ports and Devices
 ms.assetid: 24bf2718-d369-48f1-9013-c8ca89269ca7
 keywords:

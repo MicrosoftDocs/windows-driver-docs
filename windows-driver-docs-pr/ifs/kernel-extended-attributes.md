@@ -1,6 +1,5 @@
 ---
 title: Kernel Extended Attributes
-author: windows-driver-content
 description: Filter Manager and Minifilter Driver Architecture
 keywords:
 - Extended , File Attributes

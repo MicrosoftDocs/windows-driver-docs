@@ -1,6 +1,5 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_LINK_STATE_CHANGE
-author: windows-driver-content
 description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_LINK_STATE_CHANGE to indicate any of the following situations
 ms.assetid: 5a8fbe41-d063-4d34-beb8-92ceeb1d97a2
 ms.date: 07/18/2017

@@ -1,6 +1,5 @@
 ---
 title: The Changer Driver Model
-author: windows-driver-content
 description: The Changer Driver Model
 ms.assetid: 87a70ecf-e518-4c22-945b-9056b59fed5a
 keywords:

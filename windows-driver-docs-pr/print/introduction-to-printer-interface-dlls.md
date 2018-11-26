@@ -1,6 +1,5 @@
 ---
 title: Introduction to Printer Interface DLLs
-author: windows-driver-content
 description: Introduction to Printer Interface DLLs
 ms.assetid: 1993d818-9761-418e-96c3-e3c46965bef1
 keywords:

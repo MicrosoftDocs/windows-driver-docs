@@ -1,6 +1,5 @@
 ---
 title: IRP_MJ_DIRECTORY_CONTROL
-author: windows-driver-content
 description: IRP_MJ_DIRECTORY_CONTROL
 ms.assetid: 27c2de1c-5550-4211-97cc-4c66f18d3b99
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Storage Class Drivers
-author: windows-driver-content
 description: Storage Class Drivers
 ms.assetid: 567c561a-3b0d-49cf-8b59-6abe94dbd206
 keywords:

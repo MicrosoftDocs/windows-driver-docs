@@ -1,6 +1,5 @@
 ---
 title: Run-time filtering layer identifiers
-author: windows-driver-content
 description: This section describes run-time filtering layer identifiers.
 ms.assetid: 21c466a3-cdfc-4e94-83d3-1c2c7a58a2ca
 keywords:

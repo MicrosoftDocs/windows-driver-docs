@@ -31,7 +31,7 @@ When you create a device metadata package, XML documents and icon files are stor
 
 -   The WindowsInformation subdirectory contains the [WindowsInfo XML document](windowsinfo-xml-document.md). The name of the XML document must be WindowsInfo.xml.
 
--   The DeviceStage subdirectory contains the specific files that are used by Windows Device Stage™ to present the Device Stage experience. Device Stage is a rich platform for developing and distributing device-specific experiences. With Device Stage, a device maker can create experiences that match the branding, functionality, and services of its device by defining only a few XML files and graphics.
+-   The DeviceStage subdirectory contains the specific files that are used by Windows Device Stage to present the Device Stage experience. Device Stage is a rich platform for developing and distributing device-specific experiences. With Device Stage, a device maker can create experiences that match the branding, functionality, and services of its device by defining only a few XML files and graphics.
 
     If the device maker uses the Device Stage experience for the device, Windows requires the DeviceStage directory to be in the device metadata package. Otherwise, Windows ignores the directory if it is in the package.
 
@@ -39,9 +39,9 @@ When you create a device metadata package, XML documents and icon files are stor
 
 
 
-~~~
+
 More information about Windows Device Experience, Device Stage, and the Device Stage XML schema can be found in the [Microsoft Device Experience Development Kit](http://go.microsoft.com/fwlink/p/?linkid=192621).
-~~~
+
 
 When you create a device metadata package, you should follow these guidelines:
 

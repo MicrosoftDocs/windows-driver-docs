@@ -1,6 +1,5 @@
 ---
 title: Storport Driver
-author: windows-driver-content
 description: Storport Driver
 ms.assetid: d5bda2f6-c4bb-4b90-a149-131785295687
 keywords:

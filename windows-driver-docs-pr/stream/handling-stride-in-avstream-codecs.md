@@ -1,6 +1,5 @@
 ---
 title: Handling Stride in AVStream Codecs
-author: windows-driver-content
 description: Handling Stride in AVStream Codecs
 ms.assetid: 816a0ddc-8ab8-4259-9842-76f5e4dadee0
 keywords:

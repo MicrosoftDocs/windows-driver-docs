@@ -1,6 +1,5 @@
 ---
 title: A Device Enters a Low-Power State
-author: windows-driver-content
 description: A Device Enters a Low-Power State
 ms.assetid: c3697272-75ec-4de5-b123-3d1c68d2044e
 keywords:

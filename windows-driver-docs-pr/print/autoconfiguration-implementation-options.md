@@ -1,6 +1,5 @@
 ---
 title: Autoconfiguration Implementation Options
-author: windows-driver-content
 description: Autoconfiguration Implementation Options
 ms.assetid: 78a4e11c-ee6e-4306-b787-2ff7889ff877
 keywords:

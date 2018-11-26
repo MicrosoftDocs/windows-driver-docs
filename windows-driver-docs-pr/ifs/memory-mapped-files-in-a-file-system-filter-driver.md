@@ -1,6 +1,5 @@
 ---
 title: Memory Mapped Files in a File System Filter Driver
-author: windows-driver-content
 description: Memory Mapped Files in a File System Filter Driver
 ms.assetid: 0915167a-f8ac-4222-bece-76d7fc8a3823
 keywords:

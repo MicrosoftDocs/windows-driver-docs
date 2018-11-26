@@ -3,7 +3,6 @@ title: Edit Clear Command Output
 description: Edit Clear Command Output
 ms.assetid: ded3de6c-4974-48d4-af65-9c4d09ba10cf
 keywords: ["Edit Clear Command Output", "Debugger Command window, Edit Clear Command Output"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---

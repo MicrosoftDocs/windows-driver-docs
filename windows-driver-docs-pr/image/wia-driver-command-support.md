@@ -1,6 +1,5 @@
 ---
 title: WIA Driver Command Support
-author: windows-driver-content
 description: WIA Driver Command Support
 ms.assetid: 9c552316-7dd6-4102-88d3-fab9732d1e5d
 ms.date: 04/20/2017

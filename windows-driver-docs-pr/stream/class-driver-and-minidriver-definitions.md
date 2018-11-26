@@ -1,6 +1,5 @@
 ---
 title: Class Driver and Minidriver Definitions
-author: windows-driver-content
 description: Class Driver and Minidriver Definitions
 ms.assetid: eb428e8b-0c47-4843-8770-c22088ba5c6c
 keywords:

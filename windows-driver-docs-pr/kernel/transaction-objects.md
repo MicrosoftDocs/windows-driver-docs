@@ -1,6 +1,5 @@
 ---
 title: Transaction Objects
-author: windows-driver-content
 description: Transaction Objects
 ms.assetid: 124105bd-70be-49b1-8ea4-af6ba1f3cf16
 keywords: ["transactions WDK KTM , objects", "transactions WDK KTM", "transactional clients WDK KTM , creating transactions", "Kernel Transaction Manager WDK , transactions", "KTM WDK , transactions", "transaction objects WDK KTM"]

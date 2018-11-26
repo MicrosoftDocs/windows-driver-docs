@@ -1,6 +1,5 @@
 ---
 title: Introduction to HID Concepts
-author: windows-driver-content
 description: This section introduces Human Interface Devices (or HID). Typically, these are devices that humans use to directly control the operation of computer systems.
 ms.assetid: 477FF911-5A17-4EA5-9403-1D7B4E8B3BA5
 keywords:

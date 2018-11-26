@@ -1,6 +1,5 @@
 ---
 title: AV/C kernel interface and streaming proxy plug-ins
-author: windows-driver-content
 description: Provides information about AV/C kernel-streaming interface and kernel-streaming proxy plug-ins
 ms.assetid: 0831d917-5afc-4c0c-832a-c2b2669b8c22
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Associating a Per-Stream Context With a File Stream
-author: windows-driver-content
 description: Associating a Per-Stream Context With a File Stream
 ms.assetid: 99c93574-2ba6-417a-89a4-a5b9a350a8da
 keywords:

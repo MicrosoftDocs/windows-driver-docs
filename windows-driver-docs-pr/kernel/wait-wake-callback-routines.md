@@ -1,6 +1,5 @@
 ---
 title: Wait/Wake Callback Routines
-author: windows-driver-content
 description: Wait/Wake Callback Routines
 ms.assetid: 55749f14-37eb-45d9-8a2c-9ebf7fb3bc75
 keywords: ["sending wait/wake IRPs", "wait/wake IRPs WDK power management , sending", "callback routines WDK power management"]

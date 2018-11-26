@@ -1,6 +1,5 @@
 ---
 title: Writing a Network Print Provider
-author: windows-driver-content
 description: Writing a Network Print Provider
 ms.assetid: 9dbe8a00-6b5f-41ae-8ab5-218dcbe37833
 keywords:

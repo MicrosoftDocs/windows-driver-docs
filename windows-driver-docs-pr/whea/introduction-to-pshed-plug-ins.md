@@ -1,6 +1,5 @@
 ---
 title: Introduction to PSHED Plug-Ins
-author: windows-driver-content
 description: Introduction to PSHED Plug-Ins
 ms.assetid: 31c540ec-c1d0-48e3-9eab-b458a5213f7e
 keywords:

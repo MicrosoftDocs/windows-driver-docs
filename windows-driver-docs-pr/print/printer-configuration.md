@@ -1,6 +1,5 @@
 ---
 title: Printer Configuration
-author: windows-driver-content
 description: Printer Configuration
 ms.assetid: bbde600b-3ac1-4d37-bcc6-037a9527fb27
 keywords:

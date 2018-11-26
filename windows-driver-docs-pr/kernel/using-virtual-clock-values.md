@@ -1,6 +1,5 @@
 ---
 title: Using Virtual Clock Values
-author: windows-driver-content
 description: Using Virtual Clock Values
 ms.assetid: de01b0f1-86b1-4e7d-af22-84dbbe3a3f83
 keywords: ["virtual clock values WDK KTM", "Kernel Transaction Manager WDK , virtual clock values", "KTM WDK , virtual clock values", "transactions WDK KTM , virtual clock values"]

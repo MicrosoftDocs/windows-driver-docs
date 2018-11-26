@@ -1,6 +1,5 @@
 ---
 title: Video Decoder Properties
-author: windows-driver-content
 description: Video Decoder Properties
 ms.assetid: 671a310b-52a6-49f0-8848-e586a37c25ff
 keywords:

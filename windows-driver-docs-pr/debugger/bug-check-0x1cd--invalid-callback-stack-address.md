@@ -2,7 +2,6 @@
 title: Bug Check 0x1CD INVALID_CALLBACK_STACK_ADDRESS 
 description: The INVALID_CALLBACK_STACK_ADDRESS bug check has a value of 0x000001CD.
 keywords: ["Bug Check 0x1CD INVALID_CALLBACK_STACK_ADDRESS",  "INVALID_CALLBACK_STACK_ADDRESS"]
-ms.author: domars
 ms.date: 05/23/2018
 topic_type:
 - apiref

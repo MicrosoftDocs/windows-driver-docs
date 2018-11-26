@@ -1,6 +1,5 @@
 ---
 title: Security Considerations for File Systems
-author: windows-driver-content
 description: Security Considerations for File Systems
 ms.assetid: 0765adec-c788-49ed-92bd-abec0e3b2ef6
 keywords:

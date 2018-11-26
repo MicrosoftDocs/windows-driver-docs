@@ -1,6 +1,5 @@
 ---
 title: Porting Interrupts
-author: windows-driver-content
 description: Porting Interrupts
 ms.assetid: E91B971D-044C-45A4-AD76-44AFB1213F8E
 ms.date: 04/20/2017

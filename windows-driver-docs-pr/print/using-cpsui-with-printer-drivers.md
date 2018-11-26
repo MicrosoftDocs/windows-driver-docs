@@ -1,6 +1,5 @@
 ---
 title: Using CPSUI with Printer Drivers
-author: windows-driver-content
 description: Using CPSUI with Printer Drivers
 ms.assetid: 898a855d-6a9a-4f98-9ee4-bad439427326
 keywords:

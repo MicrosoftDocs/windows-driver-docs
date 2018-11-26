@@ -1,7 +1,6 @@
 ---
 title: Firmware update
 description: Describes supports for delivering system and device firmware updates using Microsoft Windows Update( WU) and the UEFI UpdateCapsule function.
-author: windows-driver-content
 ms.date: 05/15/2018
 ms.localizationpriority: medium
 ---

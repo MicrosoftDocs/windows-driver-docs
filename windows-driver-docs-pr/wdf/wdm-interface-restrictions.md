@@ -1,6 +1,5 @@
 ---
 title: WDM Interface Restrictions
-author: windows-driver-content
 description: WDM Interface Restrictions
 ms.assetid: 89f3793e-8561-4d8a-a01a-1ff7aecca64a
 keywords:

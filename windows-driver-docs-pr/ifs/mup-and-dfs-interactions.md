@@ -1,6 +1,5 @@
 ---
 title: MUP and DFS Interactions
-author: windows-driver-content
 description: MUP and DFS Interactions
 ms.assetid: 39c1f1e3-fb2d-46e7-b3dc-3d4bfab9608c
 keywords:

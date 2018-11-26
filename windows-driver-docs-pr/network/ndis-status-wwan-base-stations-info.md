@@ -1,6 +1,5 @@
 ---
 title: NDIS_STATUS_WWAN_BASE_STATIONS_INFO
-author: windows-driver-content
 description: NDIS_STATUS_WWAN_BASE_STATIONS_INFO
 ms.assetid: 57E22B53-5ECC-4B4C-8A98-C1125314868B
 keywords:

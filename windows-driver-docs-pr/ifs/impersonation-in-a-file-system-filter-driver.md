@@ -1,6 +1,5 @@
 ---
 title: Impersonation in a File System Filter Driver
-author: windows-driver-content
 description: Impersonation in a File System Filter Driver
 ms.assetid: ee56cd54-01ac-46ad-8ee4-e76131b058f3
 keywords:

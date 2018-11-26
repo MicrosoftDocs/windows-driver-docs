@@ -3,7 +3,6 @@ title: s (Set Current System)
 description: The s command sets or displays the current system number.
 ms.assetid: 33ad3a63-166f-4669-868c-49100c9b4d8c
 keywords: ["s (Set Current System) Windows Debugging"]
-ms.author: domars
 ms.date: 09/17/2018
 topic_type:
 - apiref

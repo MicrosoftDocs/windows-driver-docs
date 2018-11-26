@@ -1,6 +1,5 @@
 ---
 title: Writing AdapterControl Routines
-author: windows-driver-content
 description: Writing AdapterControl Routines
 ms.assetid: a5a7501f-ba4f-441e-be07-6a1b7fac9938
 keywords: ["AdapterControl routines, writing", "adapter objects WDK kernel , writing AdapterControl routines", "DMA transfers WDK kernel , writing AdapterControl routines"]

@@ -1,6 +1,5 @@
 ---
 title: NdisQueryMdl macro
-author: windows-driver-content
 description: The NdisQueryMdl macro retrieves the buffer length, and optionally the base virtual address, from an MDL.
 ms.assetid: 0eccd784-c815-4094-87e5-a3e283abed73
 ms.date: 07/18/2017

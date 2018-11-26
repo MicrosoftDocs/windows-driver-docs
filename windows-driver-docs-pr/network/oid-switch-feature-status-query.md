@@ -1,6 +1,5 @@
 ---
 title: OID_SWITCH_FEATURE_STATUS_QUERY
-author: windows-driver-content
 description: The protocol edge of the Hyper-V extensible switch issues an object identifier (OID) method request of OID_SWITCH_FEATURE_STATUS_QUERY to obtain custom status information from an extension about the extensible switch.
 ms.assetid: 580EFBD0-7798-4C56-99C5-84EADB8F8E82
 ms.date: 08/08/2017

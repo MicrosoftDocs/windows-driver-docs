@@ -1,6 +1,5 @@
 ---
 title: WDF_PTR_GET_OFFSET macro
-author: windows-driver-content
 description: The WDF_PTR_GET_OFFSET macro subtracts an address from another address and returns the resulting offset value.
 ms.assetid: b5159207-ba5c-4924-a06e-725ccd3c8a12
 keywords:

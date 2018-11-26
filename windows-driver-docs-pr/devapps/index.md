@@ -2,7 +2,6 @@
 title: UWP device apps
 description: UWP device apps are device companions, have capabilities beyond regular UWP apps, and perform privileged operations, such as firmware updates
 ms.assetid: fb64bad6-aa3d-4718-b62e-68da59a07ced
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -1,6 +1,5 @@
 ---
 title: Orientation sensor property
-author: windows-driver-content
 description: The property key for the orientation sensor.
 ms.assetid: E13DB3F1-B99F-4F86-8309-186E63D96D2B
 ms.date: 07/20/2018

@@ -2,7 +2,6 @@
 title: Debugging Tools for Windows New for Windows 10
 description: For Windows 10, Debugging Tools for Windows includes these new features.
 ms.assetid: DCF1222F-6A67-463E-8C31-B7753CAFFC20
-ms.author: domars
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

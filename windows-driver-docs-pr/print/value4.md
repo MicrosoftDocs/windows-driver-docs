@@ -1,6 +1,5 @@
 ---
 title: Value (TCP/IP)
-author: windows-driver-content
 description: The TCP/IP Value construct allows you to extend the bidi communications schema with queries that retrieve data from a particular MIB object.
 ms.assetid: 46b24830-10a1-405b-9c12-b5804f76d668
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: WDM Device Objects and Device Stacks
-author: windows-driver-content
 description: WDM Device Objects and Device Stacks
 ms.assetid: 1ca151b4-40f8-43e4-a9f7-e754234609ce
 keywords: ["stacks WDK , kernel-mode"]

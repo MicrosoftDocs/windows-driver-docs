@@ -1,6 +1,5 @@
 ---
 title: Mutexes in AVStream
-author: windows-driver-content
 description: Mutexes in AVStream
 ms.assetid: 011edaaa-7449-41c3-8cfb-0d319901af8b
 keywords:

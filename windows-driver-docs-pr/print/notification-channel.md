@@ -1,6 +1,5 @@
 ---
 title: Notification Channel
-author: windows-driver-content
 description: Notification Channel
 ms.assetid: 3161342a-0737-4f3b-bb16-32d6949bceea
 keywords:

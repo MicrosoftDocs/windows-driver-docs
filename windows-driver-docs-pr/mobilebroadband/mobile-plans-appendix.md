@@ -4,7 +4,6 @@ description: This topic describes appendix information for the Mobile Plans prog
 ms.assetid: B3B478DB-78F4-4031-B041-DCBAACC15D6F
 keywords:
 - Windows Mobile Plans appendix, Mobile Plans appendix mobile operators
-ms.author: windowsdriverdev
 ms.date: 09/17/2018
 ms.topic: article
 ms.prod: windows-hardware

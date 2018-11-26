@@ -1,6 +1,5 @@
 ---
 title: Adding Constructs to Your GDL File for PPD
-author: windows-driver-content
 description: Adding Constructs to Your GDL File for PPD
 ms.assetid: 981952b2-cc13-4c62-935b-74e749278c0f
 keywords:

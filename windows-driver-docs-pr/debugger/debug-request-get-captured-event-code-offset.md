@@ -9,7 +9,6 @@ api_name:
 - DEBUG_REQUEST_GET_CAPTURED_EVENT_CODE_OFFSET
 api_type:
 - NA
-ms.author: domars
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

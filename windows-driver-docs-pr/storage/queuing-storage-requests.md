@@ -1,6 +1,5 @@
 ---
 title: Queuing Storage Requests
-author: windows-driver-content
 description: Queuing Storage Requests
 ms.assetid: 077f7e4f-feb5-4a2e-b22b-b1d8d6871987
 keywords:

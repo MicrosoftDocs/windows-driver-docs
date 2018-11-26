@@ -1,6 +1,5 @@
 ---
 title: Color Commands
-author: windows-driver-content
 description: Color Commands
 ms.assetid: 752a3c1d-05f1-4f5e-9ef2-e51721ef7cc4
 keywords:

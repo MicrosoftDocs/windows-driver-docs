@@ -1,6 +1,5 @@
 ---
 title: Print Driver Versioning
-author: windows-driver-content
 description: Print Driver Versioning
 ms.assetid: 8ce844a5-44f6-4967-8586-b302823fc862
 keywords:

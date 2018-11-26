@@ -1,6 +1,5 @@
 ---
 title: Plotter Driver Minidrivers
-author: windows-driver-content
 description: Plotter Driver Minidrivers
 ms.assetid: f7223a0a-df02-4a4f-a3d6-7910aed926eb
 keywords:

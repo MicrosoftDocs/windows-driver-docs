@@ -1,6 +1,5 @@
 ---
 title: Registry Settings for a Plug and Play Serial Device
-author: windows-driver-content
 description: Registry Settings for a Plug and Play Serial Device
 ms.assetid: 57bd090a-20fe-41c6-b730-0479f6ae0982
 keywords:

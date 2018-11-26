@@ -1,6 +1,5 @@
 ---
 title: Printer Data Files
-author: windows-driver-content
 description: Printer Data Files
 ms.assetid: 971d3c6d-ecbe-42e8-8d13-b44543738bad
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Writing IRP Dispatch Routines
-author: windows-driver-content
 description: Writing IRP Dispatch Routines
 ms.assetid: 8ce88932-cba6-4261-a938-d38133c20355
 keywords:

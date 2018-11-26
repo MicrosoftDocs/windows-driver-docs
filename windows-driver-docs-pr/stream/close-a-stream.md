@@ -1,6 +1,5 @@
 ---
 title: Close a Stream
-author: windows-driver-content
 description: Close a Stream
 ms.assetid: 1ed9b07c-8d22-485f-a7e8-3a27ca3768b0
 keywords:

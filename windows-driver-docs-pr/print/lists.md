@@ -1,6 +1,5 @@
 ---
 title: Lists
-author: windows-driver-content
 description: Lists
 ms.assetid: 69b928fa-8348-437a-ac4d-677f272615dd
 keywords:

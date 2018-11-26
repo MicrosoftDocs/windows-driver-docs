@@ -1,6 +1,5 @@
 ---
 title: Unidrv Renderer
-author: windows-driver-content
 description: Unidrv Renderer
 ms.assetid: 5c19eb9c-149b-4587-a12d-f01164231b51
 keywords:

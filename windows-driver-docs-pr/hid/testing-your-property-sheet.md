@@ -1,6 +1,5 @@
 ---
 title: Testing Your Property Sheet
-author: windows-driver-content
 description: Testing Your Property Sheet
 ms.assetid: 9886a758-392b-451d-874d-5ffcc5f9f5cd
 keywords: ["property sheets WDK DirectInput , testing", "game controllers WDK DirectInput , property sheet testing", "control panels WDK DirectInput , property sheet testing", "testing property sheets WDK DirectInput", "debugging control panel applications WDK DirectInput"]

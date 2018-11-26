@@ -1,6 +1,5 @@
 ---
 title: Returning FLT_PREOP_SYNCHRONIZE
-author: windows-driver-content
 description: Returning FLT_PREOP_SYNCHRONIZE
 ms.assetid: b1331f8d-e230-45b2-be1b-f85d85557350
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: OID_CO_ADD_ADDRESS
-author: windows-driver-content
 description: This topic describes the OID_CO_ADD_ADDRESS object identifier (OID).
 ms.assetid: ca6bb3eb-87db-4e71-9585-34cd1e978b6a
 keywords:

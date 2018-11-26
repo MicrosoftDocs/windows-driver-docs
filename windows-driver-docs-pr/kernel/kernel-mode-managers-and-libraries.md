@@ -1,6 +1,5 @@
 ---
 title: Kernel-Mode Managers and Libraries
-author: windows-driver-content
 description: Kernel-Mode Managers and Libraries
 ms.assetid: 6361224b-ab7c-411f-91b5-48bf51ee634d
 ms.localizationpriority: medium

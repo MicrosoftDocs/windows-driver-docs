@@ -1,6 +1,5 @@
 ---
 title: USB I/O Targets
-author: windows-driver-content
 description: This section describes how KMDF and UMDF 2 drivers interact with universal serial bus (USB) devices.
 ms.assetid: 195c0f4b-7f33-428a-8de7-32643ad854c6
 keywords:

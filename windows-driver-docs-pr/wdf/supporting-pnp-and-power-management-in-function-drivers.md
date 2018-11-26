@@ -1,6 +1,5 @@
 ---
 title: Supporting PnP and Power Management in Function Drivers
-author: windows-driver-content
 description: Supporting PnP and Power Management in Function Drivers
 ms.assetid: 487d4a69-a8a8-406c-8572-688388deabe3
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Storage Filter Driver's AddDevice Routine
-author: windows-driver-content
 description: Storage Filter Driver's AddDevice Routine
 ms.assetid: 7970fb3e-4e4c-4ff7-9738-e09454a864c4
 keywords:

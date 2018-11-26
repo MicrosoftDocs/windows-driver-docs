@@ -1,6 +1,5 @@
 ---
 title: SENSOR\_CATEGORY\_ENVIRONMENTAL
-author: windows-driver-content
 description: The SENSOR\_CATEGORY\_ENVIRONMENTAL category contains sensors that provide information about the surrounding environment or weather.
 ms.assetid: 49839092-0792-4e89-bc3a-7defc4730937
 keywords: ["SENSOR_CATEGORY_ENVIRONMENTAL Sensor Devices"]

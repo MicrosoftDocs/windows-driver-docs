@@ -143,7 +143,7 @@ The following NDIS filter driver installation issues are associated with modifyi
 
 
 
-~~~
+
 **Note**  More than one filter driver of a specific class can exist in a layered stack of modifying filter drivers. For example, two modifying filter drivers of **FilterClass** "scheduler" can exist in a stack simultaneously. The filter driver that has an earlier installation time stamp is installed below (that is, closer to the miniport adapter) the filter driver with the later time stamp. However, the order of multiple filter drivers with the same class is exactly the same over different miniport adapters on the same computer.
 
 
@@ -153,7 +153,7 @@ The following example shows a sample **FilterClass** .
 ```INF
 HKR, Ndi,FilterClass,, compression
 ```
-~~~
+
 
 - Only Hyper-V switch extension filter drivers are valid in the Hyper-V Extensible Switch. Hyper-V extensible switch filter drivers must define the FilterClass key with one of the values in the following table.
 

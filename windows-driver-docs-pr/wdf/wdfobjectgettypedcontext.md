@@ -1,6 +1,5 @@
 ---
 title: WdfObjectGetTypedContext macro
-author: windows-driver-content
 description: The WdfObjectGetTypedContext macro returns a pointer to an object's context space.
 ms.assetid: de0edae4-7c05-4419-972e-c106875dfff1
 keywords:

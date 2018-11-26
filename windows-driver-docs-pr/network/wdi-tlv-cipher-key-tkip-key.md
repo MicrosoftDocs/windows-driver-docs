@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_CIPHER_KEY_TKIP_KEY
-author: windows-driver-content
 description: WDI_TLV_CIPHER_KEY_TKIP_KEY is a TLV that contains TKIP key material.
 ms.assetid: 73E4F051-5CC3-4F9E-9AFD-F33FAAC5A39D
 ms.date: 07/18/2017

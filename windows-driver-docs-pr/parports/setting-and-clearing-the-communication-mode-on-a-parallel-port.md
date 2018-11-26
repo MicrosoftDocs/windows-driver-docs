@@ -1,6 +1,5 @@
 ---
 title: Setting and Clearing the Communication Mode on a Parallel Port
-author: windows-driver-content
 description: Setting and Clearing the Communication Mode on a Parallel Port
 ms.assetid: a22cdeef-4ae7-49f8-b0b5-a4d68feb4235
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Install the sample device and driver on your Sharks Cove board
-author: windows-driver-content
 description: Follow these steps to install the sample driver and attach an ADXL345 accelerometer to the J1C1 header on your Sharks Cove board.
 ms.assetid: A67EBD9C-9C5A-49D3-9205-37FC4396DF56
 ms.date: 04/20/2017
@@ -140,7 +139,7 @@ The package contains these files:
             Name(_UID, 1)
 
 
-~~~
+
         Method(_CRS, 0x0, NotSerialized)
         {
             Name(RBUF, ResourceTemplate()
@@ -191,7 +190,7 @@ The package contains these files:
 ```
 
 In this example, the entries under `ResourceTemplate()` specify that the accelerometer needs two hardware resources: a connection ID to a particular I2C bus controller (I2C3) and a GPIO interrupt. The interrupt uses pin 0x17 on the GPIO controller named GPO2.
-~~~
+
 
 5.  After you have added your own Device entry to Ssdt.asl, compile Ssdt.asl by entering this command:
 
@@ -205,7 +204,7 @@ In this example, the entries under `ResourceTemplate()` specify that the acceler
 
 
 
-~~~
+
 On the Sharks Cove board, open a Command Prompt window as Administrator. Enter this command.
 
 **bcdedit /enum {current}**
@@ -229,7 +228,7 @@ If you need to turn on test signing manually, here are the steps:
 
 2.  Restart the Sharks Cove board. As the board restarts, hold the Volume-up button. Go to **Device Manager &gt; System Setup &gt; Boot**. Set **UEFI Security Boot** to **Disabled**.
 3.  Save your changes and continue booting to Windows.
-~~~
+
 
 7.  To load your updated SSDT, open a Command Prompt window as Administrator, and enter this command:
 

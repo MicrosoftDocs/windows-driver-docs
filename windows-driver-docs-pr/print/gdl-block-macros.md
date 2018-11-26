@@ -1,6 +1,5 @@
 ---
 title: GDL Block Macros
-author: windows-driver-content
 description: GDL Block Macros
 ms.assetid: c8b8e38d-237f-4c54-a394-148d211237ce
 keywords:

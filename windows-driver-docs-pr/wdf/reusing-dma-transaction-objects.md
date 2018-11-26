@@ -1,6 +1,5 @@
 ---
 title: Reusing DMA Transaction Objects
-author: windows-driver-content
 description: Reusing DMA Transaction Objects
 ms.assetid: 4adb8653-48b6-4e22-aba3-b909c95b8d15
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Filtering conditions available at each filtering layer
-author: windows-driver-content
 description: This section describes filtering conditions available at each filtering layer.
 ms.assetid: 470f809c-7bf7-4d8b-acd6-898cc68ea7ac
 keywords:

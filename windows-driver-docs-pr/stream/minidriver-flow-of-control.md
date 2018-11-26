@@ -1,6 +1,5 @@
 ---
 title: Minidriver Flow of Control
-author: windows-driver-content
 description: Minidriver Flow of Control
 ms.assetid: c3c23d32-4023-445b-bd89-e0b454bec1ed
 keywords:

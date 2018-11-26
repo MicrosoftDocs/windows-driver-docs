@@ -1,6 +1,5 @@
 ---
 title: Autodetect the Printer's Hard Drive for PPD
-author: windows-driver-content
 description: Autodetect the Printer's Hard Drive for PPD
 ms.assetid: 0f2eba5c-1a05-4aaf-8780-266d2339570e
 keywords:

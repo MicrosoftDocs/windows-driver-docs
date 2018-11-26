@@ -1,6 +1,5 @@
 ---
 title: OID_GEN_CO_TRANSMIT_QUEUE_LENGTH
-author: windows-driver-content
 description: This topic describes the OID_GEN_CO_TRANSMIT_QUEUE_LENGTH object identifier (OID).
 ms.assetid: bd99e26d-abd4-4b71-8106-e474f61630ff
 keywords:

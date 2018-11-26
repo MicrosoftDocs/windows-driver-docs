@@ -1,6 +1,5 @@
 ---
 title: Installing Pages for a Printer Type
-author: windows-driver-content
 description: Installing Pages for a Printer Type
 ms.assetid: 6c878612-d490-4791-a284-c48f1db0cde8
 keywords:

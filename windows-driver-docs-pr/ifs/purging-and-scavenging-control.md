@@ -1,6 +1,5 @@
 ---
 title: Purging and Scavenging Control
-author: windows-driver-content
 description: Purging and Scavenging Control
 ms.assetid: 103b05e6-333a-441a-a4f8-784ae43df59e
 keywords:

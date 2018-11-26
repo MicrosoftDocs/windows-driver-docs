@@ -1,6 +1,5 @@
 ---
 title: VERIFY_IS_IRQL_PASSIVE_LEVEL macro
-author: windows-driver-content
 description: The VERIFY_IS_IRQL_PASSIVE_LEVEL macro breaks into the kernel debugger if the driver is not executing at IRQL PASSIVE_LEVEL.
 ms.assetid: 7f1e25af-df66-46a2-8d27-7924677e4d5d
 keywords:

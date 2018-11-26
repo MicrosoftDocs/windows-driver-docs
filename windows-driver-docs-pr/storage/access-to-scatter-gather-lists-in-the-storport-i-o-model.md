@@ -1,6 +1,5 @@
 ---
 title: Access to Scatter/Gather Lists in the Storport I/O Model
-author: windows-driver-content
 description: Access to Scatter/Gather Lists in the Storport I/O Model
 ms.assetid: db05ac58-3317-44b2-9550-e4520537955f
 ms.date: 04/20/2017

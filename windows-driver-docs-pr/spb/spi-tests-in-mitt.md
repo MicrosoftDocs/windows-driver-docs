@@ -1,6 +1,5 @@
 ---
 title: SPI tests in MITT
-author: windows-driver-content
 description: SPI test modules that are included in the MITT software package.
 ms.assetid: 8240841C-FFA0-48EC-AB7E-4E15E262C23D
 ms.date: 04/20/2017
@@ -69,7 +68,7 @@ Perform these steps on the system under test that has the I²C controller:
 
 
 
-~~~
+
 ``` syntax
 Device(TP1) {
     Name (_HID, "SPT0001") 
@@ -109,7 +108,7 @@ Device(TP3) {
 }
 
 ```
-~~~
+
 
 ## SPI automation tests
 

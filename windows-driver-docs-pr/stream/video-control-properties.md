@@ -1,6 +1,5 @@
 ---
 title: Video Control Properties
-author: windows-driver-content
 description: Video Control Properties
 ms.assetid: 3b39295f-b4fa-4d6a-bad8-f759bda284b1
 keywords:

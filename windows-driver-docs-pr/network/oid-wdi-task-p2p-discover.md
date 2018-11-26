@@ -1,6 +1,5 @@
 ---
 title: OID_WDI_TASK_P2P_DISCOVER
-author: windows-driver-content
 description: OID_WDI_TASK_P2P_DISCOVER is issued to the device to perform Wi-Fi Direct discovery.
 ms.assetid: 9425a8d1-af68-488c-8a1e-a9b759f102cc
 ms.date: 07/18/2017

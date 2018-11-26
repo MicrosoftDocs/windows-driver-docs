@@ -1,7 +1,6 @@
 ---
 Description: This section introduces you to USB driver development.
 title: Getting started with USB client driver development
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

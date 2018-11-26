@@ -1,6 +1,5 @@
 ---
 title: Customizing Other Printer Interface Operations
-author: windows-driver-content
 description: Customizing Other Printer Interface Operations
 ms.assetid: ae59d2e7-9049-432d-b519-9e7c88af8d48
 keywords:

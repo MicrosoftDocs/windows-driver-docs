@@ -1,6 +1,5 @@
 ---
 title: Installing Legacy COM Ports
-author: windows-driver-content
 description: Installing Legacy COM Ports
 ms.assetid: 9cf2a22c-fb4e-4f15-8410-021d2b4f2ce1
 keywords:

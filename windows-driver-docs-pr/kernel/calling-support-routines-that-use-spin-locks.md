@@ -1,6 +1,5 @@
 ---
 title: Calling Support Routines That Use Spin Locks
-author: windows-driver-content
 description: Calling Support Routines That Use Spin Locks
 ms.assetid: 89cf1fd4-4f4b-4b82-9e50-e5766918c421
 keywords: ["KeAcquireSpinLock", "KeAcquireInStackQueuedSpinLock", "spin locks WDK kernel", "calling spin lock support routines WDK kernel", "executive spin locks WDK kernel", "interrupt spin locks WDK kernel", "queued spin locks WDK kernel"]

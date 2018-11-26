@@ -1,6 +1,5 @@
 ---
 title: Separate DispatchCreate and DispatchClose Routines
-author: windows-driver-content
 description: Separate DispatchCreate and DispatchClose Routines
 ms.assetid: b2e05555-c70d-4293-8622-51eea92091b1
 keywords: ["dispatch routines WDK kernel , DispatchCreate routine", "dispatch routines WDK kernel , DispatchClose routine", "DispatchClose routine", "DispatchCreate routine", "IRP_MJ_CREATE I/O function code", "IRP_MJ_CLOSE I/O function code", "create dispatch routines WDK kernel", "close dispatch routines WDK kernel"]

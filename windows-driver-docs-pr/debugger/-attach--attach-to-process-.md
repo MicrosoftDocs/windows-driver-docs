@@ -3,7 +3,6 @@ title: .attach (Attach to Process)
 description: The .attach command attaches to a new target application.
 ms.assetid: e637c7eb-9c3c-4501-b972-a9293a6da52a
 keywords: ["Attach to Process (.attach) command", "process, Attach to Process (.attach) command", ".attach (Attach to Process) Windows Debugging"]
-ms.author: domars
 ms.date: 09/17/2018
 topic_type:
 - apiref

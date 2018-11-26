@@ -1,7 +1,6 @@
 ---
 title: TTD Position Objects
 description: This section describes the position model objects associated with time travel debugging.
-ms.author: domars
 ms.date: 12/19/2017
 ms.localizationpriority: medium
 ---

@@ -1,6 +1,5 @@
 ---
 title: I2C controller tests in MITT
-author: windows-driver-content
 description: I²C test modules that are included in the MITT software package can be used to test data transfers for an I²C controller and its driver. The MITT board acts as a client device connected to the I²C bus.
 ms.assetid: E40B9ABB-B119-4EC1-A383-EB96CC350A25
 ms.date: 04/20/2017
@@ -75,7 +74,7 @@ Perform these steps on the system under test that has the I²C controller:
 
 
 
-~~~
+
 ``` syntax
 //TP1 100Khz Standard Target Device(TP1) 
 Device(TP1) {
@@ -150,7 +149,7 @@ Device(TP5) {
 ```
 
 **Note**  Only TP1-3 are required to run MITT I²C tests. TP4 and TP5 are optional targets.
-~~~
+
 
 
 

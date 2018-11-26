@@ -1,7 +1,6 @@
 ---
 title: Hardware Security Test Interface (HSTI) 1.1a
 description: Hardware Security Test Interface (HSTI) 1.1a
-author: windows-driver-content
 ms.date: 05/07/2018
 ms.localizationpriority: medium
 ---

@@ -2,7 +2,6 @@
 title: Viewing and Editing Memory in KD
 description: Viewing and Editing Memory in KD
 ms.assetid: 7E40F32F-C7B4-44A2-B3F9-84D673013EB2
-ms.author: domars
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

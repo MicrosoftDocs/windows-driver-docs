@@ -3,7 +3,6 @@ title: errlog
 description: The errlog extension displays the contents of any pending entries in the I/O system's error log.
 ms.assetid: 2ef6331e-fa83-4515-8d70-5094e40b8497
 keywords: ["errlog Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref

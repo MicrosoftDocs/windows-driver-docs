@@ -1,6 +1,5 @@
 ---
 title: TVOT\_TRACKBAR
-author: windows-driver-content
 description: TVOT\_TRACKBAR
 ms.assetid: 00140dca-c192-42dc-853d-ae84c602b206
 keywords: ["TVOT_TRACKBAR Print Devices"]

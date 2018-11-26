@@ -1,6 +1,5 @@
 ---
 title: DVD Decoder Related KS Events
-author: windows-driver-content
 description: DVD Decoder Related KS Events
 ms.assetid: 19fd2c88-72f4-4742-8c96-74be250dd59d
 keywords:

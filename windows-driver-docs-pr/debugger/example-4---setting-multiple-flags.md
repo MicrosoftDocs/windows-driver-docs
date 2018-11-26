@@ -2,7 +2,6 @@
 title: Example 4 Setting Multiple Flags
 description: Example 4 Setting Multiple Flags
 ms.assetid: b8c7301b-4a34-4f03-8c5e-ba43a1fb3681
-ms.author: domars
 ms.date: 10/12/2018
 ms.localizationpriority: medium
 ---

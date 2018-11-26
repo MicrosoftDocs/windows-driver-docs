@@ -3,7 +3,6 @@ title: Bug Check 0x116 VIDEO_TDR_ERROR
 description: The VIDEO_TDR_ ERROR bug check has a value of 0x00000116. This indicates that an attempt to reset the display driver and recover from a timeout failed.
 ms.assetid: 06fe312a-e2d3-479f-b0fb-06c0ac79be32
 keywords: ["Bug Check 0x116 VIDEO_TDR_ERROR", "VIDEO_TDR_ERROR"]
-ms.author: domars
 ms.date: 08/16/2018
 topic_type:
 - apiref

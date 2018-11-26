@@ -1,6 +1,5 @@
 ---
 title: Isochronous Synchronization Options for IEEE 1394 Devices
-author: windows-driver-content
 description: Isochronous Synchronization Options for IEEE 1394 Devices
 ms.assetid: 27137890-09e7-45d5-b268-7e93c943b489
 keywords:

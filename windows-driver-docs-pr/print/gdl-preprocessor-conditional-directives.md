@@ -1,6 +1,5 @@
 ---
 title: GDL Preprocessor Conditional Directives
-author: windows-driver-content
 description: GDL Preprocessor Conditional Directives
 ms.assetid: 5eb4bcbf-3f5e-44cc-b4e5-716a15e43b15
 keywords:

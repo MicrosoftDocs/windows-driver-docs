@@ -1,6 +1,5 @@
 ---
 title: Minidriver Synchronization
-author: windows-driver-content
 description: Minidriver Synchronization
 ms.assetid: 2f560e7a-4717-4b3f-9513-e34fcb2b5e6c
 keywords:

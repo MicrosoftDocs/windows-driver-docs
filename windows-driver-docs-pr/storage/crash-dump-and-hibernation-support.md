@@ -1,6 +1,5 @@
 ---
 title: Crash Dump and Hibernation Support
-author: windows-driver-content
 description: Crash Dump and Hibernation Support
 ms.assetid: 6f5e6f4e-b734-45fe-80d5-fd7b81c9b329
 keywords:

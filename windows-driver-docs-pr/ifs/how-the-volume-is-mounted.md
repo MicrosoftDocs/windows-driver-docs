@@ -1,6 +1,5 @@
 ---
 title: How the Volume Is Mounted
-author: windows-driver-content
 description: How the Volume Is Mounted
 ms.assetid: e8f39b06-9904-40e8-af52-eae310d11fa7
 keywords:

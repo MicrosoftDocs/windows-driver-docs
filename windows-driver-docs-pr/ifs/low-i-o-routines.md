@@ -1,6 +1,5 @@
 ---
 title: Low I/O Routines
-author: windows-driver-content
 description: Low I/O Routines
 ms.assetid: 5317917d-9abc-43f9-ab4a-f070e491c816
 keywords:

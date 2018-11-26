@@ -1,6 +1,5 @@
 ---
 title: Creating Device Objects in a Bus Driver
-author: windows-driver-content
 description: Creating Device Objects in a Bus Driver
 ms.assetid: 36b4d24c-9f5e-4853-bf70-c94613e01f2b
 keywords:

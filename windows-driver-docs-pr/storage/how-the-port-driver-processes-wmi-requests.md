@@ -1,6 +1,5 @@
 ---
 title: How the Port Driver Processes WMI Requests
-author: windows-driver-content
 description: How the Port Driver Processes WMI Requests
 ms.assetid: 0b56d382-3c4b-4192-be49-3bad50b0a0ed
 keywords:

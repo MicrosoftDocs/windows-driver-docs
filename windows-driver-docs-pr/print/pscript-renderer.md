@@ -1,6 +1,5 @@
 ---
 title: Pscript Renderer
-author: windows-driver-content
 description: Pscript Renderer
 ms.assetid: b1707a83-c5c9-4578-8603-7c19de4960ed
 keywords:

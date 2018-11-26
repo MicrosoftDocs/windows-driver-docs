@@ -1,6 +1,5 @@
 ---
 title: Powering Up a Serial Device
-author: windows-driver-content
 description: Powering Up a Serial Device
 ms.assetid: 83f86da6-0acb-4cad-8856-e826c98c2182
 keywords:

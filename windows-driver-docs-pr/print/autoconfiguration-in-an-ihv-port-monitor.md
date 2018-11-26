@@ -1,6 +1,5 @@
 ---
 title: Autoconfiguration in an IHV Port Monitor
-author: windows-driver-content
 description: Autoconfiguration in an IHV Port Monitor
 ms.assetid: c41c8502-902a-448c-8f96-fb196e68ee6e
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Device Object Example for a SCSI HBA
-author: windows-driver-content
 description: Device Object Example for a SCSI HBA
 ms.assetid: 695ccf9a-a18f-4f1f-bfdc-24fefc2846b4
 keywords:

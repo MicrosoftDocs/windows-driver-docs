@@ -1,6 +1,5 @@
 ---
 title: Disallow a Fast I/O Operation in a Preoperation Callback Routine
-author: windows-driver-content
 description: Disallow a Fast I/O Operation in a Preoperation Callback Routine
 ms.assetid: 20797d8c-ffcf-46df-b870-839d5c02d2d4
 keywords:

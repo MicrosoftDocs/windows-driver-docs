@@ -1,6 +1,5 @@
 ---
 title: The Redirected Drive Buffering SubSystem
-author: windows-driver-content
 description: The Redirected Drive Buffering SubSystem
 ms.assetid: 901a8b3e-222a-44be-8279-765d8ec4ffe1
 keywords:

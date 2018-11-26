@@ -1,6 +1,5 @@
 ---
 title: Sample Language Monitor
-author: windows-driver-content
 description: Sample Language Monitor
 ms.assetid: fd1ef790-c17b-4735-87fc-6b7b8597ac4d
 keywords:

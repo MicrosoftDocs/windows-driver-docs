@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_MULTICAST_LIST
-author: windows-driver-content
 description: WDI_TLV_MULTICAST_LIST is a TLV that contains an array of multicast MAC addresses.
 ms.assetid: 5023557A-1BC5-4A4E-A77C-20353C0CA3FD
 ms.date: 07/18/2017

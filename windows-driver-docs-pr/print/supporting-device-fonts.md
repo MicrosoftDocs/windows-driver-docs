@@ -1,6 +1,5 @@
 ---
 title: Supporting Device Fonts
-author: windows-driver-content
 description: Supporting Device Fonts
 ms.assetid: 9ca3269d-3f87-4d8a-a897-7305ac172227
 keywords:

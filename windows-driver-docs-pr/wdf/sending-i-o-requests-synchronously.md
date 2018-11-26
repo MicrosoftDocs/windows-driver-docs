@@ -1,6 +1,5 @@
 ---
 title: Sending I/O Requests Synchronously
-author: windows-driver-content
 description: Sending I/O Requests Synchronously
 ms.assetid: e7e9f2d2-afc5-439b-8a04-72d117114fae
 keywords:

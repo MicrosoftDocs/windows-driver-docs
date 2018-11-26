@@ -1,6 +1,5 @@
 ---
 title: The Kernel Network Mini-Redirector Driver
-author: windows-driver-content
 description: The Kernel Network Mini-Redirector Driver
 ms.assetid: 13236e5f-1261-4cf1-9c3d-3f1a5ccb3323
 keywords:

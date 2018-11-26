@@ -3,7 +3,6 @@ title: mca
 description: On an x86 target computer, the mca extension displays the machine check architecture (MCA) registers. On an Itanium target computer, the mca extension displays the MCA error record.
 ms.assetid: 452bfbf2-fcab-4a71-bfd0-b02afe30df74
 keywords: ["machine check architecture (MCA)", "MCA (machine check architecture)", "mca Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref

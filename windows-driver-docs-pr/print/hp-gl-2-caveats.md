@@ -1,6 +1,5 @@
 ---
 title: HP-GL/2 Caveats
-author: windows-driver-content
 description: HP-GL/2 Caveats
 ms.assetid: 201a894e-5d22-46f8-965d-0e5b88dc54d7
 keywords:

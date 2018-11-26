@@ -1,6 +1,5 @@
 ---
 title: XPSDrv Driver Options
-author: windows-driver-content
 description: XPSDrv Driver Options
 ms.assetid: 51db3cce-a95a-4084-9927-542c2d06312a
 keywords:

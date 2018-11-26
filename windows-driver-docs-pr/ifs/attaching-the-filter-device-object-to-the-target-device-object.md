@@ -1,6 +1,5 @@
 ---
 title: Attaching the Filter Device Object to the Target Device Object
-author: windows-driver-content
 description: Attaching the Filter Device Object to the Target Device Object
 ms.assetid: 1df293db-417a-4fee-afb8-06ab527331fb
 keywords:

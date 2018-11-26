@@ -1,6 +1,5 @@
 ---
 title: ATA Port Driver's Reset Mechanism
-author: windows-driver-content
 description: ATA Port Driver's Reset Mechanism
 ms.assetid: adc27819-d1ae-4b97-8109-5d742c0595d3
 keywords:

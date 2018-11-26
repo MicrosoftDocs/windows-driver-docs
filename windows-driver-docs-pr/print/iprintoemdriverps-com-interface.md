@@ -1,6 +1,5 @@
 ---
 title: IPrintOemDriverPS COM Interface
-author: windows-driver-content
 description: IPrintOemDriverPS COM Interface
 ms.assetid: 32975728-501f-45ac-a53d-34cf286bc433
 keywords:

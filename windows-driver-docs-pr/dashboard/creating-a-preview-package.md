@@ -2,7 +2,6 @@
 title: Creating a Preview Package
 description: Creating a Preview Package
 ms.assetid: 49880681-480d-4f2d-bf8f-d621ac275244
-author: EliotSeattle
 ms.topic: article
 ms.date: 04/20/2017
 ms.localizationpriority: medium

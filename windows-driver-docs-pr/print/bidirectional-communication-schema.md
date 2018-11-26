@@ -1,6 +1,5 @@
 ---
 title: Bidirectional Communication Schema
-author: windows-driver-content
 description: Bidirectional Communication Schema
 ms.assetid: b15b1aff-623e-4159-ab0f-ce386a1377eb
 keywords:

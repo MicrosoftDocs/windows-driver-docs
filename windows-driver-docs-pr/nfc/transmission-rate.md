@@ -1,6 +1,5 @@
 ---
 title: NFP transmission rate
-author: windows-driver-content
 description: Each provider implementation can specify an approximate transmission rate.
 ms.assetid: 85E85DBA-8A88-4738-8B4E-A04F4A82808F
 keywords:

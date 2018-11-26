@@ -3,7 +3,6 @@ title: Global Flags Dialog Box
 description: Global Flags Dialog Box
 ms.assetid: c6987d72-4141-45f2-af06-f4c7040a7e6b
 keywords: ["GFlags, dialog box"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---

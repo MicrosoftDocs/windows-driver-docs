@@ -1,7 +1,6 @@
 ---
 title: Debugger Data Model C++ Scripting
 description: This topic describes how to use Debugger Data Model C++ scripting to support automation with the debugger engine.
-ms.author: domars
 ms.date: 10/08/2018
 ---
 

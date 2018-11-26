@@ -1,6 +1,5 @@
 ---
 title: File Creation by a USB I/O Target
-author: windows-driver-content
 description: File Creation by a USB I/O Target
 ms.assetid: 44bbc4c7-632d-4d75-94b9-f65e4d480e90
 keywords:

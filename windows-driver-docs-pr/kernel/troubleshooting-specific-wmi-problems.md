@@ -1,6 +1,5 @@
 ---
 title: Troubleshooting Specific WMI Problems
-author: windows-driver-content
 description: Troubleshooting Specific WMI Problems
 ms.assetid: 966191e7-aec4-4eff-b975-99a6d3eb8d02
 keywords: ["WMI WDK kernel , troubleshooting", "troubleshooting WMI problems WDK"]

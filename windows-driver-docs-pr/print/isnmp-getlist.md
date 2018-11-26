@@ -1,6 +1,5 @@
 ---
 title: ISNMP GetList method
-author: windows-driver-content
 description: The GetList method enables an ASP Web page to obtain the values associated with an array of SNMP OIDs.
 MS-HAID:
 - 'webfnc\_44ada708-01e2-42c3-8080-bd7cf0e46b0e.xml'

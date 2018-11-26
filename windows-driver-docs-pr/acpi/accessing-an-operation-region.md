@@ -1,6 +1,5 @@
 ---
 title: Accessing an Operation Region
-author: windows-driver-content
 description: Accessing an Operation Region
 ms.assetid: 9a1aa29e-679c-4f7f-a16c-3e1c94be66a7
 keywords:

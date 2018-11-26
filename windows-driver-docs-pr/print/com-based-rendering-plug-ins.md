@@ -1,6 +1,5 @@
 ---
 title: COM-Based Rendering Plug-Ins
-author: windows-driver-content
 description: COM-Based Rendering Plug-Ins
 ms.assetid: c80d6c2b-ba4d-4bd1-bd3a-8c1b0bf29884
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Registering and Queuing a CustomTimerDpc Routine
-author: windows-driver-content
 description: Registering and Queuing a CustomTimerDpc Routine
 ms.assetid: 884bff8e-8437-44fb-acc0-f535d64ce900
 keywords: ["timer objects WDK kernel , CustomTimerDpc routines", "CustomTimerDpc", "queuing timer objects", "registering timer objects", "KeSetTimer", "KeSetTimerEx", "KeInitializeTimer", "KeInitializeTimerEx", "invoking CustomTimerDpc routine repeatedly", "repeatedly invoke CustomTimerDpc routine", "DueTime values", "timer expirations WDK kernel", "expired timers WDK kernel", "timer objects WDK kernel , queuing", "timer objects WDK kernel , registering", "timer objects WDK kernel , expirations"]

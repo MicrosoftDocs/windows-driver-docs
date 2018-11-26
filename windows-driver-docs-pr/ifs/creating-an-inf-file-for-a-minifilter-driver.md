@@ -1,6 +1,5 @@
 ---
 title: Creating an INF File for a Minifilter Driver
-author: windows-driver-content
 description: Creating an INF File for a Minifilter Driver
 ms.assetid: 2ae41287-e3c5-4df5-8dec-8575343d5319
 keywords:

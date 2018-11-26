@@ -1,6 +1,5 @@
 ---
 title: Cancellation of Data Transfers in Windows Vista
-author: windows-driver-content
 description: Cancellation of Data Transfers in Windows Vista
 ms.assetid: 0cdc02bf-23fe-4122-8d5f-f42c3c07da8b
 ms.date: 04/20/2017

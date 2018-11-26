@@ -1,6 +1,5 @@
 ---
 title: Using GUIDs in Drivers
-author: windows-driver-content
 description: Using GUIDs in Drivers
 ms.assetid: b70a2f64-dd7b-4d76-a4cf-dcb60ce0585c
 keywords: ["globally unique identifiers WDK kernel", "GUIDs WDK kernel", "identifiers WDK GUIDs", "header files WDK GUIDs", "kernel-mode drivers WDK , GUIDs"]

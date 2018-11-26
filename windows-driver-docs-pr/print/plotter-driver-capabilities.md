@@ -1,6 +1,5 @@
 ---
 title: Plotter Driver Capabilities
-author: windows-driver-content
 description: Plotter Driver Capabilities
 ms.assetid: 9fc32297-504c-453d-967b-ca4a4e56eaa2
 keywords:

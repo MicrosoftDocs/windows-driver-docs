@@ -1,6 +1,5 @@
 ---
 title: Device Communication through the Bus Driver
-author: windows-driver-content
 description: Device Communication through the Bus Driver
 ms.assetid: 093e95db-dc3e-467b-9163-e61d793c042e
 ms.date: 04/20/2017

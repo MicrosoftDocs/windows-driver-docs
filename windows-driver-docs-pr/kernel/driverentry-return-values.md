@@ -1,6 +1,5 @@
 ---
 title: DriverEntry Return Values
-author: windows-driver-content
 description: DriverEntry Return Values
 ms.assetid: 052be2ea-375a-4495-931e-8b66972125a5
 keywords: ["DriverEntry WDK kernel , return values", "return values WDK DriverEntry routine"]

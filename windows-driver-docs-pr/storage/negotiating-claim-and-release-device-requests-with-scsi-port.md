@@ -1,6 +1,5 @@
 ---
 title: Negotiating Claim and Release Device Requests with SCSI Port
-author: windows-driver-content
 description: Negotiating Claim and Release Device Requests with SCSI Port
 ms.assetid: 0eb00955-127c-4ef7-a18f-69448b5fd105
 ms.date: 04/20/2017

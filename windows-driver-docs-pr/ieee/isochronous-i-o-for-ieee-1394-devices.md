@@ -1,6 +1,5 @@
 ---
 title: Isochronous I/O for IEEE 1394 Devices
-author: windows-driver-content
 description: Isochronous I/O for IEEE 1394 Devices
 ms.assetid: fc544776-af45-40e2-9699-7dcc50275d1e
 keywords:

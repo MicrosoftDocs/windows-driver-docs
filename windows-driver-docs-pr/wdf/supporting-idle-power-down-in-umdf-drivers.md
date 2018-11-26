@@ -1,6 +1,5 @@
 ---
 title: Supporting Idle Power-Down in UMDF Drivers
-author: windows-driver-content
 description: Supporting Idle Power-Down in UMDF Drivers
 ms.assetid: 128f009e-1847-493e-90e3-2fe8c141b158
 keywords:

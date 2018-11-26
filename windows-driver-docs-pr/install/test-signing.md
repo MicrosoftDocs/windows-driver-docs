@@ -66,13 +66,13 @@ The following procedure describes the steps to test sign a driver package:
 
 
 
-~~~
+
 Any of the five shortcuts for command prompt will have, makecert.exe, inf2cat.exe, signtool.exe, certmgr.exe, etc., commands.
 
 You may choose the most general, “Developer Command Prompt for VS2013”. The shortcuts can be pinned down to the Task Bar for easy access.
 
 **Note**  Please note that with Visual Studio, instead of the command tool approach of driver signing, you can also use the Visual Studio 2013 development environment (also known as the IDE) to sign a driver package. Please refer to [Appendix 2: Signing Drivers with Visual Studio](appendix-2--signing-drivers-with-visual-studio.md) for more information.
-~~~
+
 
 
 
@@ -219,11 +219,11 @@ You may choose the most general, “Developer Command Prompt for VS2013”. The 
 
 
 
-~~~
+
 -   *tstamd64.cat* specifies the name of the catalog file, which will be digitally-signed.
 
 tstamd64.cat specifies the name of the catalog file, which will be digitally-signed. You can open the cat file as described before
-~~~
+
 
 7.  *Modified excerpt from* [Test-Signing a Driver through an Embedded Signature](test-signing-a-driver-through-an-embedded-signature.md):
 

@@ -4,7 +4,6 @@ description: TraceView Limitations
 ms.assetid: 946d7c69-7c6a-4bab-8fa5-fc21dcf85ddb
 keywords:
 - TraceView WDK , limitations
-ms.author: eliotgra
 ms.date: 09/12/2018
 ms.localizationpriority: medium
 ---

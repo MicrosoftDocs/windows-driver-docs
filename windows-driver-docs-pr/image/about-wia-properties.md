@@ -1,6 +1,5 @@
 ---
 title: WIA Properties
-author: windows-driver-content
 description: WIA Properties
 ms.assetid: 3f8cc03d-9bc2-4f2b-bccb-f055049a3d4c
 ms.date: 07/09/2018

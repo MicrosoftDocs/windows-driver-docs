@@ -3,7 +3,6 @@ title: Unresolved Breakpoints (bu Breakpoints)
 description: Unresolved Breakpoints (bu Breakpoints)
 ms.assetid: 2c97314b-3098-47a0-8f15-3b7d61c95529
 keywords: ["breakpoints, deferred", "deferred breakpoints", "breakpoints, BP versus BU", "breakpoints, unresolved"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---

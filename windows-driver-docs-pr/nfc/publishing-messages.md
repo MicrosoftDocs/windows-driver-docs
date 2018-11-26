@@ -1,6 +1,5 @@
 ---
 title: Publishing messages
-author: windows-driver-content
 description: Publishing messages
 ms.assetid: 44F8FB0B-6709-4A1C-886D-3788CA39A4D2
 keywords:

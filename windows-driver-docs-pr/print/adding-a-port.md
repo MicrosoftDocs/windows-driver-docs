@@ -1,6 +1,5 @@
 ---
 title: Adding a Port
-author: windows-driver-content
 description: Adding a Port
 ms.assetid: ec908ddd-761b-4a82-8fc3-ac45c39a0571
 keywords:

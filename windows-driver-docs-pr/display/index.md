@@ -5,7 +5,6 @@ ms.assetid: 0cbd75a3-49c3-4805-8f97-ab3551d0c6ee
 keywords:
 - display drivers WDK
 - miniport drivers WDK display
-ms.author: windowsdriverdev
 ms.date: 10/20/2018
 ms.topic: article
 ms.prod: windows-hardware

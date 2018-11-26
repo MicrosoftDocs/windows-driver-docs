@@ -114,11 +114,11 @@ In addition to a **WanEndpoints** value, an INF file for an ISDN adapter must ad
 
 
 
-~~~
+
 To specify multiple switch types, simply add the individual switch type values together.
 
 The ISDN Wizard, which runs automatically during the installation of an ISDN component, allows the user to select one of the switch types specified by **IsdnSwitchTypes**. The selected switch type determines which other ISDN parameters the ISDN Wizard subsequently displays for configuration. These ISDN parameters include the phone number, the SPID (service profile identifier), the subaddress, and the multisubscriber number.
-~~~
+
 
 -   An **IsdnNumBChannels** value and a *D-channel* key for each D-channel
 

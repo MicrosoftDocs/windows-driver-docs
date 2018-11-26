@@ -9,7 +9,6 @@ api_name:
 - EXT_TDOP_SET_FROM_TYPE_ID_AND_U64
 api_type:
 - NA
-ms.author: domars
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

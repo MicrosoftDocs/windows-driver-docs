@@ -9,7 +9,6 @@ api_name:
 - EXT_TDOP_GET_DEREFERENCE
 api_type:
 - NA
-ms.author: domars
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

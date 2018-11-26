@@ -1,6 +1,5 @@
 ---
 title: Pin-Centric Processing
-author: windows-driver-content
 description: Pin-Centric Processing
 ms.assetid: 0b6a02c2-e672-4568-a890-491c721ec3a7
 keywords:

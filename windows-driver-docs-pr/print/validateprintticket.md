@@ -1,6 +1,5 @@
 ---
 title: ValidatePrintTicket overview
-author: windows-driver-content
 description: Each plug-in calls the IPrintOemPrintTicketProvider::ValidatePrintTicket method to validate the PrintTicket.
 ms.assetid: 3a4cf946-c931-4f71-9f1a-4efec4dfe866
 keywords:

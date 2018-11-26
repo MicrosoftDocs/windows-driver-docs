@@ -1,6 +1,5 @@
 ---
 title: DirectInput Control Panel Essentials
-author: windows-driver-content
 description: DirectInput Control Panel Essentials
 ms.assetid: 37d904e7-57a7-4033-9fef-4d47d6b14772
 ms.localizationpriority: medium

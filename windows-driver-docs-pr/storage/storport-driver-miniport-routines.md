@@ -1,6 +1,5 @@
 ---
 title: Storport driver miniport routines
-author: windows-driver-content
 description: Describes the Storport miniport driver routines and differences between the design of the SCSI port driver and that of the Storport driver.
 ms.assetid: 
 keywords:

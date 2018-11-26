@@ -1,6 +1,5 @@
 ---
 title: Printer Connected to an LPT Port
-author: windows-driver-content
 description: Printer Connected to an LPT Port
 ms.assetid: fbc71ae8-9b63-4667-b9d6-fdff9100d70b
 keywords:

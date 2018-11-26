@@ -1,6 +1,5 @@
 ---
 title: ASP Variables for Print Web Pages
-author: windows-driver-content
 description: ASP Variables for Print Web Pages
 ms.assetid: eab0d5e0-0e20-443c-b714-a2b2327894e4
 keywords:

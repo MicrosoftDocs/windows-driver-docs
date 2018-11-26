@@ -1,6 +1,5 @@
 ---
 title: Device Stage Custom Experience
-author: windows-driver-content
 description: Device Stage Custom Experience
 ms.assetid: fb6c8022-83cd-47c2-8605-84ec8647efa8
 ms.date: 04/20/2017

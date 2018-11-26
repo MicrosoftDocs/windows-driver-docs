@@ -1,6 +1,5 @@
 ---
 title: Error Handling in SCSI Miniport Drivers
-author: windows-driver-content
 description: Error Handling in SCSI Miniport Drivers
 ms.assetid: 0d9a2d60-c8e5-48f6-9c1f-d593e59095c8
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Writing a DriverEntry Routine for a Minifilter Driver
-author: windows-driver-content
 description: Writing a DriverEntry Routine for a Minifilter Driver
 ms.assetid: 949b4087-47de-4145-87dd-d618db44a15b
 keywords:

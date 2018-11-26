@@ -1,6 +1,5 @@
 ---
 title: WdfObjectIsCustomType macro
-author: windows-driver-content
 description: The WdfObjectIsCustomType macro determines whether a framework object is of a specified custom type.
 ms.assetid: EE3CC41D-6FBA-49A2-A2A0-C7E818F6FAAA
 keywords:

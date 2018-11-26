@@ -1,6 +1,5 @@
 ---
 title: IPrinterBidiSchemaResponses AddInt32 method
-author: windows-driver-content
 description: The AddInt32 method adds a new response of type BIDI\_INT to the collection.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

@@ -1,7 +1,6 @@
 ---
 title: Debugger Data Model C++ Objects
 description: This topic describes how to use Debugger Data Model C++ Objects and how they can extend the capabilities of the debugger.
-ms.author: domars
 ms.date: 10/08/2018
 ---
 

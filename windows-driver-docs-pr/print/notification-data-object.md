@@ -1,6 +1,5 @@
 ---
 title: Notification Data Object
-author: windows-driver-content
 description: Notification Data Object
 ms.assetid: 6ba8840d-a693-485c-81da-81205e511120
 keywords:

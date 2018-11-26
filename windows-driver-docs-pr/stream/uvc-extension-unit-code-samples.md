@@ -1,6 +1,5 @@
 ---
 title: UVC Extension Unit Code Samples
-author: windows-driver-content
 description: UVC Extension Unit Code Samples
 ms.assetid: c4f24646-57ea-4467-ad48-a3e6044658e3
 keywords:

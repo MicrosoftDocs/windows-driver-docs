@@ -1,6 +1,5 @@
 ---
 title: Sending Asynchronous I/O Request Packets on the IEEE 1394 Bus
-author: windows-driver-content
 description: Sending Asynchronous I/O Request Packets on the IEEE 1394 Bus
 ms.assetid: 93ad0cdf-5ac2-4916-b90e-1e64ca4494b6
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Sample Port Monitor
-author: windows-driver-content
 description: Sample Port Monitor
 ms.assetid: dac754bf-f39d-439c-974b-889436211ef3
 keywords:

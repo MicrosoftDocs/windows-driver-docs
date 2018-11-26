@@ -1,6 +1,5 @@
 ---
 title: ATA Port Driver
-author: windows-driver-content
 description: ATA Port Driver
 ms.assetid: c7b9d794-a8cb-4bdd-bb93-bff473ea26a7
 keywords:

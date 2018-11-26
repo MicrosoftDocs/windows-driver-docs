@@ -1,6 +1,5 @@
 ---
 title: WIA Item Flags for Flatbed Scanners
-author: windows-driver-content
 description: WIA Item Flags for Flatbed Scanners
 ms.assetid: bd070e41-47e9-4165-a250-e759b8a214aa
 ms.date: 04/20/2017

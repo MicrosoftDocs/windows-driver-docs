@@ -1,6 +1,5 @@
 ---
 title: XML Schema Linebreak Translations
-author: windows-driver-content
 description: XML Schema Linebreak Translations
 ms.assetid: c277984f-8e7a-4d17-98ab-66c3f6f80473
 keywords:

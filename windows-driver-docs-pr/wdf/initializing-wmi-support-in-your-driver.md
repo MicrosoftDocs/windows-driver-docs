@@ -1,6 +1,5 @@
 ---
 title: Initializing WMI Support in Your Driver
-author: windows-driver-content
 description: Initializing WMI Support in Your Driver
 ms.assetid: cf79176c-8e08-45f9-b2fb-a82707d8667b
 keywords:

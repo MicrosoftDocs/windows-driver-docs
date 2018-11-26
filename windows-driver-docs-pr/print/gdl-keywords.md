@@ -1,6 +1,5 @@
 ---
 title: GDL Keywords
-author: windows-driver-content
 description: GDL Keywords
 ms.assetid: 3baf187b-b108-49f7-8f8a-bce93eba15c7
 keywords:

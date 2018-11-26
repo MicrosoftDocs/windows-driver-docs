@@ -1,6 +1,5 @@
 ---
 title: AVStream Splitters
-author: windows-driver-content
 description: AVStream Splitters
 ms.assetid: c2cfc183-0f4c-4104-a580-234e0483eee4
 keywords:

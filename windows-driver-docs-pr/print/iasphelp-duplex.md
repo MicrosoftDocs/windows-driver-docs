@@ -1,6 +1,5 @@
 ---
 title: Iasphelp get\_Duplex method
-author: windows-driver-content
 description: The Duplex property enables an ASP Web page to determine if a printer supports duplex printing.
 MS-HAID:
 - 'webfnc\_346f6357-9ca9-4b97-93a3-50ec9f28c118.xml'

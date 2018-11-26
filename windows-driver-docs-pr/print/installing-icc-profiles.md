@@ -1,6 +1,5 @@
 ---
 title: Installing ICC Profiles
-author: windows-driver-content
 description: Installing ICC Profiles
 ms.assetid: d9253ee8-c414-46a9-899f-46ae32cee41a
 keywords:

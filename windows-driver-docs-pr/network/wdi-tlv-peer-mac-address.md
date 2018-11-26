@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_PEER_MAC_ADDRESS
-author: windows-driver-content
 description: WDI_TLV_PEER_MAC_ADDRESS is a TLV that contains the MAC address of the peer.
 ms.assetid: A936BAA6-96AD-4187-9933-FA02CCFED2AE
 ms.date: 07/18/2017

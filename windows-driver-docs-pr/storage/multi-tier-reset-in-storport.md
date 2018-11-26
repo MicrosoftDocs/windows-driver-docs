@@ -1,6 +1,5 @@
 ---
 title: Multi-Tier Reset in Storport
-author: windows-driver-content
 description: Multi-Tier Reset in Storport
 ms.assetid: 11c717b9-5154-43dd-b357-ff093cabec4b
 keywords:

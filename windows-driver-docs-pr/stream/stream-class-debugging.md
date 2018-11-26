@@ -1,6 +1,5 @@
 ---
 title: Stream Class Debugging
-author: windows-driver-content
 description: Stream Class Debugging
 ms.assetid: 544b922b-58e4-4cbb-a76c-d8e13ae17e55
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: IPrinterScriptUsbWritePrintDataProgress ProcessedByteCount method
-author: windows-driver-content
 description: Returns the number of bytes that the IHV JavaScript function has processed by the time this method was called.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

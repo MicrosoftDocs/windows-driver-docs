@@ -1,6 +1,5 @@
 ---
 title: Troubleshooting KMDF and UMDF Driver Installation
-author: windows-driver-content
 description: Troubleshooting KMDF and UMDF Driver Installation
 ms.assetid: b0b71adc-cb6e-4b84-a5bf-bd1269bcf315
 keywords:

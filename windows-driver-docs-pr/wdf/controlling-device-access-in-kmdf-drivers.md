@@ -1,6 +1,5 @@
 ---
 title: Controlling Device Access in KMDF Drivers
-author: windows-driver-content
 description: Controlling Device Access in KMDF Drivers
 ms.assetid: 62bbc69f-0754-4d37-a476-dd2ac3d70de6
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Completing a DMA Transfer
-author: windows-driver-content
 description: Completing a DMA Transfer
 ms.assetid: 86383b9f-9b82-4afa-81ac-2ab09bd8778b
 keywords:

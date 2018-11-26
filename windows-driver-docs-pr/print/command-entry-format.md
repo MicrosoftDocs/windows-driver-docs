@@ -1,6 +1,5 @@
 ---
 title: Command Entry Format
-author: windows-driver-content
 description: Command Entry Format
 ms.assetid: f2b14c12-3c34-45b2-9ead-8cd57d657e9e
 keywords:

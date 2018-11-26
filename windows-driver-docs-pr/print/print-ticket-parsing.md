@@ -1,6 +1,5 @@
 ---
 title: Print Ticket Parsing
-author: windows-driver-content
 description: Print Ticket Parsing
 ms.assetid: 8328110a-abb4-47aa-ab1d-730e4a2ce7bd
 keywords:

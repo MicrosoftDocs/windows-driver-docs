@@ -1,9 +1,7 @@
 ---
 title: Imaging device driver design guide
-author: windows-driver-content
 description: Imaging device driver design guide
 ms.assetid: dfdeeec8-bd06-452a-9189-87b20ce27699
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

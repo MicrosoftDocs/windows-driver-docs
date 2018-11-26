@@ -1,6 +1,5 @@
 ---
 title: User Control of Device Idle and Wake Behavior in UMDF
-author: windows-driver-content
 description: User Control of Device Idle and Wake Behavior in UMDF
 ms.assetid: 9341c412-dd0a-4e80-a164-250e24004082
 keywords:

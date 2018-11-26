@@ -1,6 +1,5 @@
 ---
 title: Transaction Processing Terms
-author: windows-driver-content
 description: Before you begin to use KTM, you should know the definitions of the following terms transaction, resource manager, transactional client, transaction manager, log stream, enlistment, and transaction processing system.
 Robots: noindex, nofollow
 ms.assetid: c8a8806f-a228-4d02-9995-c8cf45e57935

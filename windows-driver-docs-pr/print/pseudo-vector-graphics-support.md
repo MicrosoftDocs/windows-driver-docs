@@ -1,6 +1,5 @@
 ---
 title: Pseudo-Vector Graphics Support
-author: windows-driver-content
 description: Pseudo-Vector Graphics Support
 ms.assetid: 8eeba51b-00fa-4bf3-a78c-ac1d1adc9696
 keywords:

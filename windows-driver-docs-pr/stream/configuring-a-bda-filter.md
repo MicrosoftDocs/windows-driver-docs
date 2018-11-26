@@ -1,6 +1,5 @@
 ---
 title: Configuring a BDA Filter
-author: windows-driver-content
 description: Configuring a BDA Filter
 ms.assetid: 4af9efc3-8073-4111-9ad0-8b2fba4d1545
 keywords:

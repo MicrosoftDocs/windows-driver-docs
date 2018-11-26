@@ -1,7 +1,6 @@
 ---
 title: Unified extensible firmware interface (UEFI) 
 description: Unified extensible firmware interface (UEFI) 
-author: windows-driver-content
 ms.date: 05/07/2018
 ms.localizationpriority: medium
 ---

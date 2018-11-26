@@ -1,6 +1,5 @@
 ---
 title: Framework Objects for Hardware Resources
-author: windows-driver-content
 description: Framework Objects for Hardware Resources
 ms.assetid: 64eb628f-ce3d-494b-9fc1-7179a722c5f2
 keywords:

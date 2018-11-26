@@ -1,6 +1,5 @@
 ---
 title: Introduction to SynchCritSection Routines
-author: windows-driver-content
 description: Introduction to SynchCritSection Routines
 ms.assetid: 747f314a-9c7c-427f-bc23-4c6869853852
 keywords: ["SynchCritSection", "critical section routines WDK kernel"]

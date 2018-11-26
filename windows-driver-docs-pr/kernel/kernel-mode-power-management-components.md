@@ -1,6 +1,5 @@
 ---
 title: Kernel-Mode Power Management Components
-author: windows-driver-content
 description: Kernel-Mode Power Management Components
 ms.assetid: 50587345-9a02-4b27-99af-a40cd73154f1
 keywords: ["power management WDK kernel , components"]

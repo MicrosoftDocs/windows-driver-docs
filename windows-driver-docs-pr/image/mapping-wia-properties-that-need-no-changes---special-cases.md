@@ -1,6 +1,5 @@
 ---
 title: Mapping WIA Properties That Need No Changes - Special Cases
-author: windows-driver-content
 description: Mapping WIA Properties That Need No Changes - Special Cases
 ms.assetid: 4ed02c01-efe8-4728-a54a-26fe27aa403c
 ms.date: 04/20/2017

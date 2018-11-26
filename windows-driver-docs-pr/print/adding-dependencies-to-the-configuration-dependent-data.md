@@ -1,6 +1,5 @@
 ---
 title: Adding Dependencies to the Configuration-Dependent Data
-author: windows-driver-content
 description: Adding Dependencies to the Configuration-Dependent Data
 ms.assetid: 16e15147-6e83-4675-b050-cf13dcd6b397
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Using Control Device Objects
-author: windows-driver-content
 description: Using Control Device Objects
 ms.assetid: 6367954f-6916-46df-a5a0-e80f045b69e5
 keywords:

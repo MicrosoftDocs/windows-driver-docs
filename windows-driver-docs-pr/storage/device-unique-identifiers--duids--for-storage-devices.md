@@ -1,6 +1,5 @@
 ---
 title: Device Unique Identifiers (DUIDs) for Storage Devices
-author: windows-driver-content
 description: Device Unique Identifiers (DUIDs) for Storage Devices
 ms.assetid: 3846961c-5b75-4a1b-bced-601fc25bf071
 keywords:

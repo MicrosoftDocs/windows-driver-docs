@@ -1,6 +1,5 @@
 ---
 title: Selecting and Deselecting an IEEE 1284 Device Attached to a Parallel Port
-author: windows-driver-content
 description: Selecting and Deselecting an IEEE 1284 Device Attached to a Parallel Port
 ms.assetid: 1a3ac1b1-9180-4b71-8740-70c6fbe9a885
 keywords:

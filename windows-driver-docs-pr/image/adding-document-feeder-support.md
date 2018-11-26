@@ -1,6 +1,5 @@
 ---
 title: Adding Document Feeder Support
-author: windows-driver-content
 description: Adding Document Feeder Support
 ms.assetid: f3fa6a2e-3714-4620-9acc-f9d177045ee0
 ms.date: 04/20/2017

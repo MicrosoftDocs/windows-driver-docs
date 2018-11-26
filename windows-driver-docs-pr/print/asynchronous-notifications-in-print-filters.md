@@ -1,6 +1,5 @@
 ---
 title: Asynchronous Notifications in Print Filters
-author: windows-driver-content
 description: Asynchronous Notifications in Print Filters
 ms.assetid: 52b0790b-4927-4e1b-8ae5-6e2afc7c9df6
 keywords:

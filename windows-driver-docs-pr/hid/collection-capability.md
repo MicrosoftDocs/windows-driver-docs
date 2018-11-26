@@ -1,6 +1,5 @@
 ---
 title: Collection Capability
-author: windows-driver-content
 description: Collection Capability
 ms.assetid: 228fab4f-ff90-43c5-bc68-26b29e8a7dd6
 keywords:

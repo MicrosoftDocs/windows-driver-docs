@@ -1,6 +1,5 @@
 ---
 title: Enumerating Child Devices and Control Methods
-author: windows-driver-content
 description: Enumerating Child Devices and Control Methods
 ms.assetid: fe0553df-a5b9-46c4-8e1d-8b89a7d4ad67
 keywords:

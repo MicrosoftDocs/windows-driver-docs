@@ -1,6 +1,5 @@
 ---
 title: DeviceD1 and DeviceD2
-author: windows-driver-content
 description: DeviceD1 and DeviceD2
 ms.assetid: 88e9e1bf-c797-4e00-b540-1b2f8d48300a
 keywords: ["DeviceD1", "DeviceD2"]

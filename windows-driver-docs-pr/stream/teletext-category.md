@@ -1,6 +1,5 @@
 ---
 title: Teletext Category
-author: windows-driver-content
 description: Teletext Category
 ms.assetid: f8eb289f-0b01-43cc-8160-f16dc6de12d9
 keywords:

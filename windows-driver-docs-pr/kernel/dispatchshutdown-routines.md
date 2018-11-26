@@ -1,6 +1,5 @@
 ---
 title: DispatchShutdown Routines
-author: windows-driver-content
 description: DispatchShutdown Routines
 ms.assetid: e0d4ed56-a614-4dc8-9bb2-abfe38f05946
 keywords: ["IRP_MJ_SHUTDOWN I/O function code", "dispatch routines WDK kernel , DispatchShutdown routine", "DispatchShutdown routine", "shutdown dispatch routines WDK kernel"]

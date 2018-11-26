@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_LSO_V2_CAPABILITIES
-author: windows-driver-content
 description: WDI_TLV_LSO_V2_CAPABILITIES is a TLV that contains Large Send Offload V2 capabilities.
 ms.assetid: 6F7C83BA-B004-431F-90AF-AD7DE1B13546
 ms.date: 07/18/2017

@@ -1,6 +1,5 @@
 ---
 title: COM Port Database
-author: windows-driver-content
 description: COM Port Database
 ms.assetid: c9baf147-6e33-4ed2-b682-c141938eb0da
 keywords:

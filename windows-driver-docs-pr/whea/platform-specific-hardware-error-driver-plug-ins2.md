@@ -1,6 +1,5 @@
 ---
 title: Platform-Specific Hardware Error Driver Plug-Ins
-author: windows-driver-content
 description: Platform-Specific Hardware Error Driver Plug-Ins
 ms.assetid: 473d9206-9db2-4bc7-bc76-6be2fb77b20b
 keywords:

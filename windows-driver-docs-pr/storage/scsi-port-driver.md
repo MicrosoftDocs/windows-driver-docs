@@ -1,6 +1,5 @@
 ---
 title: SCSI Port Driver
-author: windows-driver-content
 description: SCSI Port Driver
 ms.assetid: e97ea5f2-7f20-4d3d-82a2-7d83e1eba30e
 keywords:

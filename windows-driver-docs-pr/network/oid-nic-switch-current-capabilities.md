@@ -1,6 +1,5 @@
 ---
 title: OID_NIC_SWITCH_CURRENT_CAPABILITIES
-author: windows-driver-content
 description: An overlying driver issues an object identifier (OID) query request of OID_NIC_SWITCH_CURRENT_CAPABILITIES to obtain the currently enabled hardware capabilities of the NIC switch in a network adapter.
 ms.assetid: 529dc5d5-9b84-4891-9e7a-1f9f7850c6d7
 ms.date: 08/08/2017

@@ -1,6 +1,5 @@
 ---
 title: Crossbar Change Event
-author: windows-driver-content
 description: Crossbar Change Event
 ms.assetid: 67202a53-d981-47db-9bc1-7de18f9192aa
 keywords:

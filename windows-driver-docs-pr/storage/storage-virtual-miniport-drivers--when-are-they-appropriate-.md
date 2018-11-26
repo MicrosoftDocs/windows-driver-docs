@@ -1,6 +1,5 @@
 ---
 title: Storage Virtual Miniport Drivers When Are They Appropriate
-author: windows-driver-content
 description: Storage Virtual Miniport Drivers When Are They Appropriate
 ms.assetid: 45b9eab9-15b8-4244-bd16-e8850211b8bf
 ms.date: 04/20/2017

@@ -1,6 +1,5 @@
 ---
 title: Managing Hardware Priorities
-author: windows-driver-content
 description: Managing Hardware Priorities
 ms.assetid: c27eb357-49d7-4f50-9554-643b70ca33dc
 keywords: ["prioritizing criteria WDK kernel", "hardware priorities WDK kernel", "IRQL levels WDK kernel", "PASSIVE_LEVEL WDK", "APC_LEVEL WDK", "DISPATCH_LEVEL WDK", "DIRQL WDK", "interrupt service routines WDK kernel , hardware priorities", "ISRs WDK kernel , hardware priorities"]

@@ -1,7 +1,6 @@
 ---
 Description: What's new for USB in different versions of Windows.
 title: New for USB in different versions of Windows
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

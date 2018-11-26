@@ -1,6 +1,5 @@
 ---
 title: File system driver samples
-author: windows-driver-content
 description: The driver samples in this directory provide a starting point for writing a custom file system driver for your device.
 ms.assetid: 9F2F995E-EA20-4877-B96C-5FF082CE886D
 ms.date: 04/20/2017

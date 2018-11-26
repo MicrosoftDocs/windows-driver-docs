@@ -3,7 +3,6 @@ title: wdfkd.wdfdeviceinterrupts
 description: The wdfkd.wdfdeviceinterrupts extension displays all the interrupt objects for a specified device handle.
 ms.assetid: 4B545593-B34F-4139-819B-2BA609C1824E
 keywords: ["wdfkd.wdfdeviceinterrupts Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref

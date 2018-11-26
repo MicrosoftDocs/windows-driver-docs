@@ -1,6 +1,5 @@
 ---
 title: Commands for Downloaded Fonts
-author: windows-driver-content
 description: Commands for Downloaded Fonts
 ms.assetid: 5cf6b2bd-5378-4e90-8959-ced978dee02f
 keywords:

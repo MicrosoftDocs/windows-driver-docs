@@ -1,6 +1,5 @@
 ---
 title: Points to Consider About Device Objects
-author: windows-driver-content
 description: Points to Consider About Device Objects
 ms.assetid: 4c54340b-3b4c-4c67-b28d-fac769e4feb7
 keywords: ["device objects WDK kernel , design considerations"]

@@ -1,6 +1,5 @@
 ---
 title: OID_TCP_CONNECTION_OFFLOAD_HARDWARE_CAPABILITIES
-author: windows-driver-content
 description: This topic describes the OID_TCP_CONNECTION_OFFLOAD_HARDWARE_CAPABILITIES object identifier (OID). 
 ms.assetid: E90EC9E5-4667-4CBF-8812-06FB45331368
 keywords:

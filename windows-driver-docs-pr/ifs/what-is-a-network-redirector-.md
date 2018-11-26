@@ -1,6 +1,5 @@
 ---
 title: What is a Network Redirector
-author: windows-driver-content
 description: What is a Network Redirector
 ms.assetid: 5c966d92-7796-4cba-a90e-8c83240655ce
 keywords:

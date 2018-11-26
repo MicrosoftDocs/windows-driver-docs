@@ -1,6 +1,5 @@
 ---
 title: Components of the Windows Hardware Error Architecture
-author: windows-driver-content
 description: Components of the Windows Hardware Error Architecture
 ms.assetid: d038f2ce-7012-4b8d-bf2b-a722548a32ca
 keywords:

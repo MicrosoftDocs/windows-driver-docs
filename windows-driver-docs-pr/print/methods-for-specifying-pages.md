@@ -1,6 +1,5 @@
 ---
 title: Methods for Specifying Pages
-author: windows-driver-content
 description: Methods for Specifying Pages
 ms.assetid: 76006a2b-37b9-4490-913e-dcfc01812d43
 keywords:
