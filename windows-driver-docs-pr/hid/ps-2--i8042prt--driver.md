@@ -67,12 +67,7 @@ The following is a list of registry keys associated with the PS/2 port driver.
 -   OverrideKeyboardType \[REG\_DWORD\] – Specifies the keyboard type. You can add this entry to the registry to correct an error in the keyboard type detected at startup.
 -   OverrideKeyboardSubtype \[REG\_DWORD\] – Specifies the OEM-dependent keyboard subtype. You can add this entry to the registry to correct an error in the keyboard subtype detected at startup.
 
-Additional details on each specific registry key are available on http://technet.microsoft.com.
+For additional information, please see:
 
- 
-
- 
-
-
-
-
+* https://docs.microsoft.com/windows/desktop/sysinfo/about-the-registry
+* https://docs.microsoft.com/windows/desktop/sysinfo/registry-reference 

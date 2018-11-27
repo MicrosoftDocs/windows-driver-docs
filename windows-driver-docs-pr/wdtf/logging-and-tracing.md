@@ -29,7 +29,7 @@ The log messages that the WDTF writes to the log file have common patterns.
 The following example shows the logging output for a call to **DeviceDepot.Query("Volume::")** when logging is enabled for an example system.
 
 ```cpp
-[ Ouput ]
+[ Output ]
 
 WDTF_TARGETS    : INFO  :  - Query("Volume::")
 WDTF_TARGETS    : INFO  :          Target: Generic volume
