@@ -108,7 +108,7 @@ Function       : 0x33
 
 Although the IOCTL is not identified, information about the IOCTL fields are displayed.
 
-Note that only a subset of publically defined IOCTLs are able to be identified by the **!ioctldecode** command.
+Note that only a subset of publicly defined IOCTLs are able to be identified by the **!ioctldecode** command.
 
 For more information about IOCTLs see [Introduction to I/O Control Codes](https://msdn.microsoft.com/library/windows/hardware/ff548059).
 
