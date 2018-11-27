@@ -298,7 +298,7 @@ function RunCommands()
 {
 var ctl = host.namespace.Debugger.Utility.Control;   
 var output = ctl.ExecuteCommand("u");
-host.diagnostics.debugLog("***> Displaying command ouput \n");
+host.diagnostics.debugLog("***> Displaying command output \n");
 
 for (var line of output)
    {
@@ -344,7 +344,7 @@ Use the dx command to call the RunCommands function in the RunCommands script.
 
 ```dbgcmd
 0:000> dx Debugger.State.Scripts.RunCommands.Contents.RunCommands()
-  ***> Displaying command ouput
+  ***> Displaying command output
   ntdll!ExpInterlockedPopEntrySListEnd+0x17 [d:\rs1\minkernel\ntos\rtl\amd64\slist.asm @ 196]:
   00007ffd`87f06e67 cc              int     3
   00007ffd`87f06e68 cc              int     3
@@ -1024,9 +1024,9 @@ Script Debugger Commands (*NOTE* IDs are **PER SCRIPT**):
     ?? <expr>  ......................... Evaluate expression <expr> and display result
     |  ................................. List available scripts
     |<scriptid>s  ...................... Switch context to the given script
-    bc <bpid>  ......................... Clear breakpoint by specifed <bpid>
-    bd <bpid>  ......................... Disable breakpoint by specifed <bpid>
-    be <bpid>  ......................... Enable breakpoint by specifed <bpid>
+    bc <bpid>  ......................... Clear breakpoint by specified <bpid>
+    bd <bpid>  ......................... Disable breakpoint by specified <bpid>
+    be <bpid>  ......................... Enable breakpoint by specified <bpid>
     bl  ................................ List breakpoints
     bp <line>:<column>  ................ Set breakpoint at the specified line and column
     bp <function-name>  ................ Set breakpoint at the (global) function specified by the given name
