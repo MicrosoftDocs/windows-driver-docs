@@ -2,7 +2,7 @@
 title: JavaScript Debugger Scripting
 description: This topic describes how to use JavaScript to create scripts that understand debugger objects and extend and customize the capabilities of the debugger.
 ms.assetid: 3442E2C4-4054-4698-B7FB-8FE19D26C171
-ms.date: 10/26/2018
+ms.date: 11/27/2018
 ms.localizationpriority: medium
 ---
 
@@ -417,47 +417,12 @@ function uninitializeScript()
 
 This table summarizes which functions are called by the script commands
 
-<table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"></td>
-<td align="left">.<strong><a href="-scriptload--load-script-.md" data-raw-source="[.scriptload](-scriptload--load-script-.md)">.scriptload</a></strong></td>
-<td align="left"><strong><a href="-scriptrun--run-script-.md" data-raw-source="[.scriptrun (Run Script)](-scriptrun--run-script-.md)">.scriptrun (Run Script)</a></strong></td>
-<td align="left"><strong><a href="-scriptunload--unload-script-.md" data-raw-source="[.scriptunload (Unload Script)](-scriptunload--unload-script-.md)">.scriptunload (Unload Script)</a></strong></td>
-</tr>
-<tr class="even">
-<td align="left">root</td>
-<td align="left">yes</td>
-<td align="left">yes</td>
-<td align="left"></td>
-</tr>
-<tr class="odd">
-<td align="left">initializeScript</td>
-<td align="left">yes</td>
-<td align="left">yes</td>
-<td align="left"></td>
-</tr>
-<tr class="even">
-<td align="left">invokeScript</td>
-<td align="left"></td>
-<td align="left">yes</td>
-<td align="left"></td>
-</tr>
-<tr class="odd">
-<td align="left">uninitializeScript</td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left">yes</td>
-</tr>
-</tbody>
-</table>
-
+||[.scriptload](-scriptload--load-script-.md)|[.scriptrun (Run Script)](-scriptrun--run-script-.md)|[.scriptunload (Unload Script)](-scriptunload--unload-script-.md)|
+|--- |--- |--- |--- |
+|root|yes|yes| | |
+|initializeScript|yes|yes| | |
+|invokeScript		| |yes| |
+|uninitializeScript | ||yes|
 
 
 Use this sample code to see when each function is called as the script is loaded, executed and unloaded.
