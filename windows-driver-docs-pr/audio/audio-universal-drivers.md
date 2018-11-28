@@ -200,6 +200,7 @@ Complete the following steps to build the sysvad sample for Windows 10 desktop.
 4. Locate the output directory for the build from the build. For example it could be located in a directory like this:
 
 ` C:\Program Files (x86)\Windows Kits\10\src\audio\sysvad\x64\Debug\package`
+
 5. Navigate to the Tools folder in your WDK installation and locate the PnpUtil tool. For example, look in the following folder: C:\\Program Files (x86)\\Windows Kits\\10\\Tools\\x64\\PnpUtil.exe .
 
 6. Copy the following files to the system that you want to install the sysvad driver:
