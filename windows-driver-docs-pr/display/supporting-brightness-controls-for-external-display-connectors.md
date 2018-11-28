@@ -9,7 +9,7 @@ ms.date: 10/17/2018
 # Supporting Brightness Controls For External Display Connectors
 
 Some OEM systems have internal displays that are connected using external connectors such as HDMI. For those configurations, Windows has the ability to designate exactly one display panel to support the system software brightness control.
-This feature does not support the ability to control the individual panel brightness on multiple display panels.
+This feature only allows OEMs to indicate to Windows that an external connector display supports brightness control; OEMs must still implement brightness control as they would for an [integrated connector display](https://docs.microsoft.com/windows-hardware/drivers/display/supporting-brightness-controls-on-integrated-display-panels). This feature also does not support the ability to control the individual panel brightness on multiple display panels.
 
 
 ### General Requirements
@@ -46,7 +46,7 @@ In the case where this registry value is set for external connectors, the OS wil
 ### SAMPLE MONITOR.INF FILE FRAGMENT
 The following is an incomplete sample INF that outlines the above:
 
-
+```
 [Manufacturer]
 %MONOEM%=MONOEM,NTx86,NTAMD64 
  
@@ -102,7 +102,7 @@ MONOEM = “Manufacturer name”
 AIOHDMI_1  = “AIO monitor name one”
 AIOHDMI_2  = “AIO monitor name two”
 Laptop  = “Laptop monitor name”
-
+```
 
 
 **NOTE** OEMs need to provide a monitor.inf that has the proper hardware ID in order to ensure that the generic Microsoft monitor.inf is not used. 
