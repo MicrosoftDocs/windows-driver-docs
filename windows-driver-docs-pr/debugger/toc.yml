@@ -684,7 +684,7 @@
       - name: "DEBUG_OUTPUT_XXX"
         href: debug-output-xxx.md
       - name: "DEBUG_OUTPUTCB_XXX"
-        href: debug-outputcb-xxx.md
+        href: debug-outcb-xxx.md
       - name: "DEBUG_PROCESS_XXX"
         href: debug-process-xxx.md
       - name: "DEBUG_STATUS_XXX"

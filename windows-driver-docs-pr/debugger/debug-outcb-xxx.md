@@ -1,5 +1,5 @@
 ---
-title: DEBUG\_OUTPUTCB\_XXX
+title: DEBUG\_OUTCB\_XXX
 description: The DEBUG\_OUTPUTCB\_XXX constants are output flags. The output flags form a bit field that indicates the type of the output that accompanies them.
 ms.date: 11/28/2018
 topic_type:
@@ -15,12 +15,12 @@ api_type:
 ms.localizationpriority: medium
 ---
 
-# DEBUG\_OUTPUTCB\_XXX
+# DEBUG\_OUTCB\_XXX
 
 
-The DEBUG\_OUTPUTCB\_XXX constants are output flags. The output flags form a bit field that indicates the type of the output that accompanies them.
+The DEBUG\_OUTCB\_XXX constants are output flags. The output flags form a bit field that indicates the type of the output that accompanies them.
 
-DEBUG\_OUTPUTCB\_XXX defines different kinds of output callback notifications that can be sent to Output2.
+DEBUG\_OUTCB\_XXX defines different kinds of output callback notifications that can be sent to Output2.
 
 The possible values include the following.
 
