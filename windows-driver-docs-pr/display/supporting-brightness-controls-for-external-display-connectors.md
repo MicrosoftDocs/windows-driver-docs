@@ -9,7 +9,7 @@ ms.date: 11/28/2018
 # Supporting Brightness Controls For External Display Connectors
 
 Some OEM systems have internal displays that are connected using external connectors such as HDMI. For those configurations, Windows has the ability to designate exactly one display panel to support the system software brightness control.
-This feature only allows OEMs to indicate to Windows that an external connector display supports brightness control; OEMs must still implement brightness control as they would for an [integrated connector display](https://docs.microsoft.com/windows-hardware/drivers/display/supporting-brightness-controls-on-integrated-display-panels). This feature also does not support the ability to control the individual panel brightness on multiple display panels.
+This feature only allows OEMs to indicate to Windows that an external connector display supports brightness control; OEMs must still implement the hardware brightness control and integrate that with the graphics driver as they would for an [integrated connector display](https://docs.microsoft.com/windows-hardware/drivers/display/supporting-brightness-controls-on-integrated-display-panels). This feature also does not support the ability to control the individual panel brightness on multiple display panels.
 
 
 ### General Requirements
