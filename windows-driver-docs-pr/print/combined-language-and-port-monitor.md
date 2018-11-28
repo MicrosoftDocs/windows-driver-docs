@@ -1,6 +1,5 @@
 ---
 title: Combined Language and Port Monitor
-author: windows-driver-content
 description: Combined Language and Port Monitor
 ms.assetid: 5da362cf-92b8-4c78-80b2-57106b978600
 keywords:

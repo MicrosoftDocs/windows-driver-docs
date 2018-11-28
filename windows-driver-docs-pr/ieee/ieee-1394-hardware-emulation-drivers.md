@@ -1,6 +1,5 @@
 ---
 title: IEEE 1394 Hardware Emulation Drivers
-author: windows-driver-content
 description: IEEE 1394 Hardware Emulation Drivers
 ms.assetid: 44141072-e425-4983-9234-3ad79daa2017
 keywords:

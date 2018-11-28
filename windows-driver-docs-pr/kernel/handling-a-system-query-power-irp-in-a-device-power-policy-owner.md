@@ -1,6 +1,5 @@
 ---
 title: Handling a System Query-Power IRP in a Device Power Policy Owner
-author: windows-driver-content
 description: Handling a System Query-Power IRP in a Device Power Policy Owner
 ms.assetid: 680e3be2-63d9-4d79-a7c0-422e852e9347
 keywords: ["query-power IRPs WDK power management", "device power policy owners WDK kernel"]

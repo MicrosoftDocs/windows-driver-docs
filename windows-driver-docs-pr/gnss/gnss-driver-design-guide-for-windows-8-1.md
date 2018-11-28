@@ -1,6 +1,5 @@
 ---
 title: GNSS driver design guide for Windows 8.1
-author: windows-driver-content
 description: This guide describes the design requirements and architecture of the GNSS device driver for Windows 8.1.
 ms.assetid: E43BE011-45AB-4AC5-8F6C-C1B29A60DB11
 ms.date: 04/20/2017

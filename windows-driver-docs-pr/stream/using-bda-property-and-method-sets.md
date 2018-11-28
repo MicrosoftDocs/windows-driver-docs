@@ -1,6 +1,5 @@
 ---
 title: Using BDA Property and Method Sets
-author: windows-driver-content
 description: Using BDA Property and Method Sets
 ms.assetid: d4e55f32-620b-4978-9935-ebd4c2c3ed39
 keywords:

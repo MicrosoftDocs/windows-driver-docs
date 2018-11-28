@@ -1,6 +1,5 @@
 ---
 title: Setting Up a Storage Class Driver's Device Extension
-author: windows-driver-content
 description: Setting Up a Storage Class Driver's Device Extension
 ms.assetid: 9d050d23-39c0-406e-9f4b-2e95d388f5cf
 keywords:

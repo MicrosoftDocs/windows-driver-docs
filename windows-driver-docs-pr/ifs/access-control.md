@@ -1,6 +1,5 @@
 ---
 title: Access Control
-author: windows-driver-content
 description: Access Control
 ms.assetid: 7f87276f-4014-4b37-b051-4bf02acbf575
 keywords:

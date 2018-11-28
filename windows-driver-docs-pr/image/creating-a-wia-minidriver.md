@@ -1,6 +1,5 @@
 ---
 title: Creating a WIA Minidriver
-author: windows-driver-content
 description: Creating a WIA Minidriver
 ms.assetid: 7ed02bcd-cacf-4a29-9f3f-1972c39ff0ae
 ms.date: 04/20/2017

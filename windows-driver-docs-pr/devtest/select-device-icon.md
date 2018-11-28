@@ -37,9 +37,9 @@ You can specify the icon that appears for a device in Windows. Icons must have a
 
 
 
-~~~
+
 -   If you don't have an icon of your own, click **Next**. Windows assigns a generic icon based on the primary category that you specify in the **Categories** tab.
-~~~
+
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Indicator testing
-author: windows-driver-content
 description: This topic describes common indicator step procedures and examples.
 ms.assetid: 8FD5728C-30E3-4998-A01D-80894BDB379A
 ms.localizationpriority: medium

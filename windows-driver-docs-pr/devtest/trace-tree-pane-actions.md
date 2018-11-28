@@ -51,9 +51,9 @@ You can perform the following actions in the **Trace Tree** pane:
 
 
 
-~~~
+
 As you step through the source code elements in the **Trace Tree** pane, SDV automatically moves the cursor in the [Source Code pane](source-code-pane.md) to the line of source code that contains the element in the **Trace Tree** pane and displays the associated Boolean expressions in the [State pane](state-pane.md).
-~~~
+
 
 -   **Expand and collapse nodes**
 

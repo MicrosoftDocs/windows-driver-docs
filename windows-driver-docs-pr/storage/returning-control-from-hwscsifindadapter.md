@@ -1,6 +1,5 @@
 ---
 title: Returning Control from HwScsiFindAdapter
-author: windows-driver-content
 description: Returning Control from HwScsiFindAdapter
 ms.assetid: 689eae76-9b5b-438f-bbdc-5ee11c6fe737
 keywords:

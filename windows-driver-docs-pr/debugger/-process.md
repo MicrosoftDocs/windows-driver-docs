@@ -3,7 +3,6 @@ title: process
 description: The process extension displays information about the specified process, or about all processes, including the EPROCESS block.
 ms.assetid: 57f55632-8320-47cc-8a20-5a2cf3b42b3a
 keywords: ["process Windows Debugging"]
-ms.author: domars
 ms.date: 08/02/2018
 topic_type:
 - apiref
@@ -40,7 +39,7 @@ Specifies the module that owns the desired process.
 <span id="_Process"></span><span id="_process"></span><span id="_PROCESS"></span> *Process*  
 Specifies the hexadecimal address or the process ID of the process on the target computer.
 
-The value of *Process* determines whether the !process extension displays a process address or a process ID . If *Process* is omitted in any version of Windows, the debugger displays data only about the current system process. If *Process* is 0 and *ImageName* is omitted, the debugger displays information about all active processes. If -1 is specifed for *Process* information about the current process is displayed.
+The value of *Process* determines whether the !process extension displays a process address or a process ID . If *Process* is omitted in any version of Windows, the debugger displays data only about the current system process. If *Process* is 0 and *ImageName* is omitted, the debugger displays information about all active processes. If -1 is specified for *Process* information about the current process is displayed.
 
 <span id="Flags"></span><span id="flags"></span><span id="FLAGS"></span>*Flags*  
 Specifies the level of detail to display. *Flags* can be any combination of the following bits. If *Flags* is 0, only a minimal amount of information is displayed. The default varies according to the version of Windows and the value of *Process*. The default is 0x3 if *Process* is omitted or if *Process* is either 0 or -1; otherwise, the default is 0xF.

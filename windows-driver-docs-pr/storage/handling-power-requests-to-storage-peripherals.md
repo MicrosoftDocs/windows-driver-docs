@@ -1,6 +1,5 @@
 ---
 title: Handling Power Requests to Storage Peripherals
-author: windows-driver-content
 description: Handling Power Requests to Storage Peripherals
 ms.assetid: 3cc7b885-27ad-4384-aeec-4d76f9ad4f1c
 keywords:

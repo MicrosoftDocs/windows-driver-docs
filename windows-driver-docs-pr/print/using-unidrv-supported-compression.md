@@ -1,6 +1,5 @@
 ---
 title: Using Unidrv-Supported Compression
-author: windows-driver-content
 description: Using Unidrv-Supported Compression
 ms.assetid: feda6898-da2c-403f-a159-1423891f3dd5
 keywords:

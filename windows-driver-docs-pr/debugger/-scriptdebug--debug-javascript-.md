@@ -2,7 +2,6 @@
 title: .scriptdebug (Debug JavaScript)
 description: Use the .scriptdebug command to debug JavaScript scripts.
 keywords: [".scriptdebug Debug JavaScript Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 12/28/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -103,9 +102,9 @@ Script Debugger Commands (*NOTE* IDs are **PER SCRIPT**):
     ?? <expr>  ......................... Evaluate expression <expr> and display result
     |  ................................. List available scripts
     |<scriptid>s  ...................... Switch context to the given script
-    bc <bpid>  ......................... Clear breakpoint by specifed <bpid>
-    bd <bpid>  ......................... Disable breakpoint by specifed <bpid>
-    be <bpid>  ......................... Enable breakpoint by specifed <bpid>
+    bc <bpid>  ......................... Clear breakpoint by specified <bpid>
+    bd <bpid>  ......................... Disable breakpoint by specified <bpid>
+    be <bpid>  ......................... Enable breakpoint by specified <bpid>
     bl  ................................ List breakpoints
     bp <line>:<column>  ................ Set breakpoint at the specified line and column
     bp <function-name>  ................ Set breakpoint at the (global) function specified by the given name
@@ -142,7 +141,7 @@ sx
     uh  [     active] .... Break on unhandled exception     
 ```
 
-Use the **sxe** script debugger command to enable any of the break beahaviors. For example to turn on break on entry so that the script will trap into the script debugger as soon as any code within it executes, use this command.
+Use the **sxe** script debugger command to enable any of the break behaviors. For example to turn on break on entry so that the script will trap into the script debugger as soon as any code within it executes, use this command.
 
 ```
 >>> Debug [DebuggableSample <No Position>] >sxe en          

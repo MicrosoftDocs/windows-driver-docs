@@ -1,6 +1,5 @@
 ---
 title: New Keyword for GPD Schema
-author: windows-driver-content
 description: New Keyword for GPD Schema
 ms.assetid: 4814d019-0556-4e5a-8c55-c05454bafbd3
 keywords:

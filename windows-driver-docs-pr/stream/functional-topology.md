@@ -1,6 +1,5 @@
 ---
 title: Functional Topology
-author: windows-driver-content
 description: Functional Topology
 ms.assetid: f25b3581-5561-4668-8549-65506b03815d
 keywords:

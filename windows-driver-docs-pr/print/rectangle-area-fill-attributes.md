@@ -1,6 +1,5 @@
 ---
 title: Rectangle Area Fill Attributes
-author: windows-driver-content
 description: Rectangle Area Fill Attributes
 ms.assetid: 287e8805-4aec-490b-88da-00576a2f4fbf
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: OID_GEN_CO_PROTOCOL_OPTIONS
-author: windows-driver-content
 description: This topic describes the OID_GEN_CO_PROTOCOL_OPTIONS object identifier (OID).
 ms.assetid: 5c1212e4-1fd2-435a-ae8c-9f75522cbca6
 keywords:

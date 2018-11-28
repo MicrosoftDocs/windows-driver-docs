@@ -29,9 +29,9 @@ To handle Plug and Play (PnP) and power management events, NDIS intermediate dri
 
 
 
-~~~
+
 **Note**  If the underlying miniport adapter does not support power management events, the **PowerManagementCapabilities** and **PowerManagementCapabilitiesEx** members are set to **NULL**.
-~~~
+
 
 
 

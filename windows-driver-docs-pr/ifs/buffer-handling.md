@@ -1,6 +1,5 @@
 ---
 title: Buffer Handling
-author: windows-driver-content
 description: Buffer Handling
 ms.assetid: 0739ff35-2915-4237-9fe0-11559eccb0bb
 keywords:

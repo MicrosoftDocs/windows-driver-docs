@@ -1,7 +1,6 @@
 ---
 title: Sample PowerShell script to query SMBIOS locally
 description: Sample PowerShell script to query SMBIOS locally
-author: windows-driver-content
 ms.date: 05/07/2018
 ms.localizationpriority: medium
 ---

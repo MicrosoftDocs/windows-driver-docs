@@ -1,6 +1,5 @@
 ---
 title: Value Capability Arrays
-author: windows-driver-content
 description: Value Capability Arrays
 ms.assetid: d447dda6-a1e5-4e57-b06f-f79f8662c236
 keywords:

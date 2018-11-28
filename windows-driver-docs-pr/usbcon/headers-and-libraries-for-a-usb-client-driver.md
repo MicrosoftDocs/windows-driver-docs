@@ -1,7 +1,6 @@
 ---
 Description: This topic lists the headers and libraries required for writing a Windows Driver Model (WDM) USB client driver.
 title: Headers and libraries required by a USB client driver
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

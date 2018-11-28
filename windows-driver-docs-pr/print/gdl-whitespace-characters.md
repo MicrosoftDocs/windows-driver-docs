@@ -1,6 +1,5 @@
 ---
 title: GDL Whitespace Characters
-author: windows-driver-content
 description: GDL Whitespace Characters
 ms.assetid: 703c41c0-3e12-465a-823f-c32990a52382
 keywords:

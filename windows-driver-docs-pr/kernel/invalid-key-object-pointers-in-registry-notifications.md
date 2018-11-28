@@ -1,6 +1,5 @@
 ---
 title: Invalid Key Object Pointers in Registry Notifications
-author: windows-driver-content
 description: Invalid Key Object Pointers in Registry Notifications
 ms.assetid: 96709c34-63a7-4b4e-8588-c7e8b41b5dea
 ms.localizationpriority: medium

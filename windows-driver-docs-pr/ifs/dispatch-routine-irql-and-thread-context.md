@@ -1,6 +1,5 @@
 ---
 title: Dispatch Routine IRQL and Thread Context
-author: windows-driver-content
 description: Dispatch Routine IRQL and Thread Context
 ms.assetid: 95f3a976-c97a-4c8a-979b-14a0ddd823a2
 keywords:

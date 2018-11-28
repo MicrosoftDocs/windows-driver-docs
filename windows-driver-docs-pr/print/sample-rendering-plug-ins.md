@@ -1,6 +1,5 @@
 ---
 title: Sample Rendering Plug-Ins
-author: windows-driver-content
 description: Sample Rendering Plug-Ins
 ms.assetid: 347c5105-345d-4129-8bb2-7ce1770f83a4
 keywords:

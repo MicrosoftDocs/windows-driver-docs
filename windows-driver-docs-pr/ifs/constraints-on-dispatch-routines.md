@@ -1,6 +1,5 @@
 ---
 title: Constraints on Dispatch Routines
-author: windows-driver-content
 description: Constraints on Dispatch Routines
 ms.assetid: 5b2acaea-1f66-4285-9a36-5ab0f440f6b4
 keywords:

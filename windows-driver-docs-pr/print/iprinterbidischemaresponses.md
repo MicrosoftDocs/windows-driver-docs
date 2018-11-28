@@ -1,6 +1,5 @@
 ---
 title: IPrinterBidiSchemaResponses interface
-author: windows-driver-content
 description: The IPrinterBidiSchemaResponses interface represents a set of bidi responses populated by USB Bidi Extension JavaScript methods getSchemas and getStatus.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

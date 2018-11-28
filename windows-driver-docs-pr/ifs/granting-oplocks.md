@@ -1,6 +1,5 @@
 ---
 title: Granting Oplocks
-author: windows-driver-content
 description: Granting Oplocks
 ms.assetid: 7faf17ef-1596-4952-9575-616f66b37ed6
 ms.date: 04/20/2017

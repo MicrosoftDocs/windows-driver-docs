@@ -3,7 +3,6 @@ title: dda, ddp, ddu, dpa, dpp, dpu, dqa, dqp, dqu (Display Referenced Memory)
 description: The dda, ddp, ddu, dpa, dpp, dpu, dqa, dqp, and dqu commands display the pointer at the specified location, dereference that pointer, and display the associated memory.
 ms.assetid: af3db4e2-e3fc-4c4d-9432-13b87e699716
 keywords: ["dda, ddp, ddu, dpa, dpp, dpu, dqa, dqp, dqu (Display Referenced Memory) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -57,27 +56,11 @@ Specifies the memory area to display. For more syntax details, see [Address and 
 
 ### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Modes</strong></p></td>
-<td align="left"><p>user mode, kernel mode</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Targets</strong></p></td>
-<td align="left"><p>live, crash dump</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Platforms</strong></p></td>
-<td align="left"><p>all</p></td>
-</tr>
-</tbody>
-</table>
-
+|||
+|--- |--- |
+|Modes|user mode, kernel mode|
+|Targets|live, crash dump|
+|Platforms|all|
  
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
@@ -91,63 +74,21 @@ The second and third characters of this command are case-sensitive.
 
 The second character of this command determines the pointer size used:
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Command</th>
-<th align="left">Display</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>dd<em></strong></p></td>
-<td align="left"><p>32-bit pointers used</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>dq</em></strong></p></td>
-<td align="left"><p>64-bit pointers used</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>dp*</strong></p></td>
-<td align="left"><p>Standard pointer sizes used: 32-bit or 64-bit, depending on the target&#39;s processor architecture</p></td>
-</tr>
-</tbody>
-</table>
+|Command|Display|
+|--- |--- |
+|dd|32-bit pointers used|
+|dq|64-bit pointers used|
+|dp*|Standard pointer sizes used: 32-bit or 64-bit, depending on the target's processor architecture|
 
  
 
 The third character of this command determines how the dereferenced memory is displayed:
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Command</th>
-<th align="left">Display</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>d<em>p</strong></p></td>
-<td align="left"><p>Displays the contents of the memory referenced by the pointer in DWORD or QWORD format, depending on the pointer size of the target&#39;s processor architecture. If this value matches any known symbol, this symbol is displayed as well.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>d</em>a</strong></p></td>
-<td align="left"><p>Displays the contents of the memory referenced by the pointer in ASCII character format.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>d*u</strong></p></td>
-<td align="left"><p>Displays the contents of the memory referenced by the pointer in Unicode character format.</p></td>
-</tr>
-</tbody>
-</table>
+|Command|Display|
+|--- |--- |
+|dp|Displays the contents of the memory referenced by the pointer in DWORD or QWORD format, depending on the pointer size of the target's processor architecture. If this value matches any known symbol, this symbol is displayed as well.|
+|da|Displays the contents of the memory referenced by the pointer in ASCII character format.|
+|d*u|Displays the contents of the memory referenced by the pointer in Unicode character format.|
 
  
 

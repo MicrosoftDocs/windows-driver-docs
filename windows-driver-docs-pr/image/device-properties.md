@@ -1,6 +1,5 @@
 ---
 title: Device Properties
-author: windows-driver-content
 description: Device Properties
 ms.assetid: f41040c5-0eac-450d-b532-9165c543cc1a
 ms.date: 04/20/2017

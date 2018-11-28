@@ -1,6 +1,5 @@
 ---
 title: Camera Control Properties
-author: windows-driver-content
 description: Camera Control Properties
 ms.assetid: 36a57245-e89e-4418-b0c4-a4c1479413b2
 keywords:

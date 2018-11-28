@@ -1,6 +1,5 @@
 ---
 title: Obtaining Information About an I/O Request
-author: windows-driver-content
 description: Obtaining Information About an I/O Request
 ms.assetid: a686ea00-6987-480a-a4ce-892e1efbed87
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Storage Filter Driver's Device-Type-Specific Functionality
-author: windows-driver-content
 description: Storage Filter Driver's Device-Type-Specific Functionality
 ms.assetid: ecc0d938-e931-46bd-a1e1-0e6da8e149a4
 keywords:

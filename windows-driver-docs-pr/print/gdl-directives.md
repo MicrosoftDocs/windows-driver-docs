@@ -1,6 +1,5 @@
 ---
 title: GDL Directives
-author: windows-driver-content
 description: GDL Directives
 ms.assetid: 7b7ba94f-9494-4477-b4f0-dd9fcfd1fccf
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: USB Video Class Driver Overview
-author: windows-driver-content
 description: USB Video Class Driver Overview
 ms.assetid: 890d448e-bfee-462d-8cce-a2cca42f2f6d
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Creating the Plug-In
-author: windows-driver-content
 description: Creating the Plug-In
 ms.assetid: 4e52c855-f2c6-49b5-ac79-96dcac785579
 keywords:

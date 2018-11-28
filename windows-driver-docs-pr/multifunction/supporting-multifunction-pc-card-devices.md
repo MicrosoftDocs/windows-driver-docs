@@ -1,6 +1,5 @@
 ---
 title: Supporting Multifunction PC Card Devices
-author: windows-driver-content
 description: Supporting Multifunction PC Card Devices
 ms.assetid: 4da3b99c-0731-41b5-9f67-29c7e181342f
 keywords:

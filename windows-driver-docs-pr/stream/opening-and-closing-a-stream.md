@@ -1,6 +1,5 @@
 ---
 title: Opening and Closing a Stream
-author: windows-driver-content
 description: Opening and Closing a Stream
 ms.assetid: a4895e99-ab2e-482e-b89f-04b01177ec03
 keywords:

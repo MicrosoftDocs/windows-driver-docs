@@ -1,6 +1,5 @@
 ---
 title: OID_802_3_XMIT_MAX_COLLISIONS
-author: windows-driver-content
 description: This topic describes the OID_802_3_XMIT_MAX_COLLISIONS object identifier (OID).
 ms.assetid: 5C1349FC-073D-4DDB-9829-CCBF75E92A6A
 keywords:

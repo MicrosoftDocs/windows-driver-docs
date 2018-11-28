@@ -1,6 +1,5 @@
 ---
 title: OID_GEN_CO_NETCARD_LOAD
-author: windows-driver-content
 description: This topic describes the OID_GEN_CO_NETCARD_LOAD object identifier (OID).
 ms.assetid: 0fdf9948-6b1a-48c9-87a4-7ecdfd1a8e47
 keywords:

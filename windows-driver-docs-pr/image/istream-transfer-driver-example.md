@@ -1,6 +1,5 @@
 ---
 title: IStream Transfer Driver Example
-author: windows-driver-content
 description: IStream Transfer Driver Example
 ms.assetid: fb830522-f95e-4dd7-8c1b-de092a6c5a51
 ms.date: 04/20/2017

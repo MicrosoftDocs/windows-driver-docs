@@ -27,12 +27,12 @@ Some TAEF features, such as [Cross Machine Test Execution](cross-machine-executi
 
 
 
-~~~
+
 ``` syntax
 cd [your Wex.Services.exe directory]
 Wex.Services.exe /run:Te.Service
 ```
-~~~
+
 
 ## <span id="stopping_and_removing_te.service"></span><span id="STOPPING_AND_REMOVING_TE.SERVICE"></span>Stopping and Removing Te.Service
 

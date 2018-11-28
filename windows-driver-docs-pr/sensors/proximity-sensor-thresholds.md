@@ -1,6 +1,5 @@
 ---
 title: Proximity sensor thresholds
-author: windows-driver-content
 description: This topic provides information about the proximity sensor thresholds.
 ms.assetid: AD93421B-4787-4E56-B01D-58027EFEAC2D
 ms.date: 07/20/2018

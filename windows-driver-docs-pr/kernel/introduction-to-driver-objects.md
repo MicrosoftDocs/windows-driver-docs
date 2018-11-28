@@ -1,6 +1,5 @@
 ---
 title: Introduction to Driver Objects
-author: windows-driver-content
 description: Introduction to Driver Objects
 ms.assetid: 497ee2dc-671d-408e-b228-16dc24532375
 keywords: ["driver objects WDK kernel", "standard driver routines WDK kernel , driver objects", "driver routines WDK kernel , driver objects", "routines WDK kernel , driver objects", "objects WDK driver objects"]

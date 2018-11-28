@@ -1,6 +1,5 @@
 ---
 title: A User Unplugs a Device
-author: windows-driver-content
 description: A User Unplugs a Device
 ms.assetid: 85e69401-0128-4641-aa0f-fd7c4f22f395
 keywords:

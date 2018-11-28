@@ -1,6 +1,5 @@
 ---
 title: Create Processing
-author: windows-driver-content
 description: Create Processing
 ms.assetid: c15a56d2-47db-4124-8250-f25f69d2d4e3
 keywords:

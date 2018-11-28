@@ -1,6 +1,5 @@
 ---
 title: Bidi Extension Example for WSD Port Monitor
-author: windows-driver-content
 description: Bidi Extension Example for WSD Port Monitor
 ms.assetid: a04f16d5-ae99-4df5-bb55-aef95bd03588
 keywords:

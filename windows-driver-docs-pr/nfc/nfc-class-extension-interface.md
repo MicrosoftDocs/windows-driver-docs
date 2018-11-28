@@ -1,6 +1,5 @@
 ---
 title: NFC class extension interface
-author: windows-driver-content
 description: The NFC CX interface is based on the UMDF class extension model.
 ms.assetid: 400043BE-4C16-40C7-B0EB-BA223F882F21
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Filter Pipeline Configuration File
-author: windows-driver-content
 description: Filter Pipeline Configuration File
 ms.assetid: 586247bd-6d06-4728-a5f0-ee3fe1d09321
 keywords:

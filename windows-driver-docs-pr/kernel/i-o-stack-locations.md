@@ -1,6 +1,5 @@
 ---
 title: I/O Stack Locations
-author: windows-driver-content
 description: I/O Stack Locations
 ms.assetid: 62c8ee00-c7cb-4aa1-90ab-b8bedbd818ee
 keywords: ["IRPs WDK kernel , I/O stack locations", "I/O stack locations WDK kernel", "stack locations WDK kernel", "layered driver I/O stack locations WDK kernel", "IRPs WDK kernel , contents", "IO_STACK_LOCATION structure"]

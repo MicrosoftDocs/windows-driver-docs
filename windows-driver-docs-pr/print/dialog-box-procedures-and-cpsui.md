@@ -1,6 +1,5 @@
 ---
 title: Dialog Box Procedures and CPSUI
-author: windows-driver-content
 description: Dialog Box Procedures and CPSUI
 ms.assetid: fad65a34-9580-41a5-ad58-91ea7ffcd3d5
 keywords:

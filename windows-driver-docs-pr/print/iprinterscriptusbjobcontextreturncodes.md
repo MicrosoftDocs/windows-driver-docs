@@ -1,6 +1,5 @@
 ---
 title: IPrinterScriptUsbJobContextReturnCodes interface
-author: windows-driver-content
 description: The IPrinterScriptUsbJobContextReturnCodes interface represents an array of return codes that an IHV has defined for their JavaScript functions.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

@@ -1,6 +1,5 @@
 ---
 title: Accessing Driver Settings from Rendering Plug-Ins
-author: windows-driver-content
 description: Accessing Driver Settings from Rendering Plug-Ins
 ms.assetid: d13526f5-85e1-4036-98fb-aea2c6d5a1e3
 keywords:

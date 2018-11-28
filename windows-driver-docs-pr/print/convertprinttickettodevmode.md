@@ -1,6 +1,5 @@
 ---
 title: ConvertPrintTicketToDevMode overview
-author: windows-driver-content
 description: Describes IPrintOemPrintTicketProvider::ConvertPrintTicketToDevMode method usage from an application's passed print ticket.
 ms.assetid: dd77d79e-e274-47c3-9bfd-95054bc9f23d
 keywords:

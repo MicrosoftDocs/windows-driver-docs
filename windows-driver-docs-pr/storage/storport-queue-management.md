@@ -1,6 +1,5 @@
 ---
 title: Storport Queue Management
-author: windows-driver-content
 description: Storport Queue Management
 ms.assetid: 29fddcac-abc9-4aa4-8485-56120805ae34
 keywords:

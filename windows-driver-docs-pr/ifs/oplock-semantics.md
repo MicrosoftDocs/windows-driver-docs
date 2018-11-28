@@ -1,6 +1,5 @@
 ---
 title: Oplock Semantics
-author: windows-driver-content
 description: Oplock Semantics
 ms.assetid: 5cbbfecc-2182-40f6-9f54-a8146c1f663f
 ms.date: 04/20/2017

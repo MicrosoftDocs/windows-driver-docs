@@ -1,6 +1,5 @@
 ---
 title: GDL Exercise 5 Defining Name Limits for Different Features
-author: windows-driver-content
 description: GDL Exercise 5 Defining Name Limits for Different Features
 ms.assetid: 8e6c59d7-c748-4133-ba70-e5be413bae54
 keywords:

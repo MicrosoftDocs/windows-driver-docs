@@ -1,6 +1,5 @@
 ---
 title: Standard Features
-author: windows-driver-content
 description: Standard Features
 ms.assetid: 5cd90992-5ab8-4cb3-89b0-19e58e55b652
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Determining BDA Device Topology
-author: windows-driver-content
 description: Determining BDA Device Topology
 ms.assetid: fdac317e-d4fc-47c9-87d3-bec597f758f5
 keywords:

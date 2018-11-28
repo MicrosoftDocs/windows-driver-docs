@@ -1,7 +1,6 @@
 ---
 title: Debugging Using WinDbg Preview
 description: This section describes how to perform basic debugging tasks using the WinDbg preview debugger.
-ms.author: domars
 ms.date: 10/18/2018
 ms.localizationpriority: medium
 ---

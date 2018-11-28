@@ -3,7 +3,6 @@ title: devext
 description: The devext extension displays bus-specific device extension information for devices on a variety of buses.
 ms.assetid: b4d4f595-9b0b-40e2-8790-2c913a50c8fe
 keywords: ["usbhub extension (obsolete)", "hidfdo extension (obsolete)", "hidpdo extension (obsolete)", "device extension", "bus", "devext Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -21,89 +20,26 @@ The **!devext** extension displays bus-specific device extension information for
 
 ```dbgcmd
 !devext Address TypeCode
-```dbgcmd
+```
 
 ## <span id="ddk__devext_dbg"></span><span id="DDK__DEVEXT_DBG"></span>Parameters
 
-
-<span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
+###  *Address*   
 Specifies the hexadecimal address of the device extension to be displayed.
 
-<span id="_______TypeCode______"></span><span id="_______typecode______"></span><span id="_______TYPECODE______"></span> *TypeCode*   
+#### *TypeCode*   
 Specifies the type of object that owns the device extension to be displayed. Type codes are not case-sensitive. Valid type codes are:
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">TypeCode</th>
-<th align="left">Object</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>PCI</p></td>
-<td align="left"><p>(Windows 2000 only) PCI device extension</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>ISAPNP</p></td>
-<td align="left"><p>ISA PnP device extension</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>PCMCIA</p></td>
-<td align="left"><p>PCMCIA device extension</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>HID</p></td>
-<td align="left"><p>HID device extension</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>USBD</p></td>
-<td align="left"><p>(Windows 2000 only) USB bus driver extension</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>UHCD</p></td>
-<td align="left"><p>(Windows 2000 only) UHCD host controller extension</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>OpenHCI</p></td>
-<td align="left"><p>(Windows 2000 only) Open HCI host controller extension</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>USBHUB</p></td>
-<td align="left"><p>(Windows 2000 only) USB hub extension</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>MF</p></td>
-<td align="left"><p>(Windows 2000 only) MF device extension</p></td>
-</tr>
-</tbody>
-</table>
-
+|TypeCode|Object|
+|--- |--- |
+|ISAPNP|ISA PnP device extension|
+|PCMCIA|PCMCIA device extension|
+|HID|HID device extension|
  
 
 ### <span id="DLL"></span><span id="dll"></span>DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Kdextx86.dll</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Kdexts.dll</p></td>
-</tr>
-</tbody>
-</table>
-
+Kdexts.dll
  
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information

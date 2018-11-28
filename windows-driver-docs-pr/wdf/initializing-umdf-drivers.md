@@ -1,6 +1,5 @@
 ---
 title: Initializing UMDF Drivers
-author: windows-driver-content
 description: Initializing UMDF Drivers
 ms.assetid: b21ec019-1a80-4219-8aa8-3545ec3383b9
 keywords:

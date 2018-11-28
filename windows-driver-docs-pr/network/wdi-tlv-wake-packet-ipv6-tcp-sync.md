@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_WAKE_PACKET_IPv6_TCP_SYNC
-author: windows-driver-content
 description: WDI_TLV_WAKE_PACKET_IPv6_TCP_SYNC is a TLV that contains wake-on-LAN IPv6 TCP sync packet information.
 ms.assetid: CBC0EA08-FDB4-415B-948C-E906F0471AD2
 ms.date: 07/18/2017

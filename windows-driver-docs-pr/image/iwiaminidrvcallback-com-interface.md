@@ -1,6 +1,5 @@
 ---
 title: IWiaMiniDrvCallBack COM Interface
-author: windows-driver-content
 description: IWiaMiniDrvCallBack COM Interface
 ms.assetid: a535d718-e34f-4cd0-9137-83d28d0b8e9c
 ms.date: 04/20/2017

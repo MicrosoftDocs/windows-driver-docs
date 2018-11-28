@@ -1,6 +1,5 @@
 ---
 title: Device Extensions
-author: windows-driver-content
 description: Device Extensions
 ms.assetid: 9ea59994-1112-4ae5-96a8-fa0670694b53
 keywords: ["device objects WDK kernel , device extensions", "device extensions WDK kernel", "extensions WDK device objects", "higher-level driver extensions WDK kernel", "lower-level driver extensions WDK kernel", "intermediate driver extensions WDK kernel"]

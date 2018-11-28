@@ -1,6 +1,5 @@
 ---
 title: Print Ticket and Print Capabilities Technologies
-author: windows-driver-content
 description: Print Ticket and Print Capabilities Technologies
 ms.assetid: 12b1881f-1a45-4e7e-a876-b2ca4c9458f9
 keywords:

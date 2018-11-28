@@ -1,6 +1,5 @@
 ---
 title: Native XML Template Data Types
-author: windows-driver-content
 description: Native XML Template Data Types
 ms.assetid: a34dec46-de5d-4f12-8863-2fe6b6e5eed4
 keywords:

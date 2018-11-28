@@ -1,6 +1,5 @@
 ---
 title: Unidrv Capabilities
-author: windows-driver-content
 description: Unidrv Capabilities
 ms.assetid: e715e6c7-32cf-4db1-a6d2-3577824249c1
 keywords:

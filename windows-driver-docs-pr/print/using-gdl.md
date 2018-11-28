@@ -1,6 +1,5 @@
 ---
 title: Using GDL
-author: windows-driver-content
 description: Using GDL
 ms.assetid: 25bbe17d-f9a5-4e29-98e8-c91d71b897b6
 keywords:

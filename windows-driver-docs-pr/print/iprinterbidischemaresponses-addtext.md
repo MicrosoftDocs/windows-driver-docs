@@ -1,6 +1,5 @@
 ---
 title: IPrinterBidiSchemaResponses AddText method
-author: windows-driver-content
 description: The AddText method adds a new response of type BIDI\_TEXT to the collection.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

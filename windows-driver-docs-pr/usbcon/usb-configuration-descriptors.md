@@ -1,7 +1,6 @@
 ---
 Description: A USB device exposes its capabilities in the form of a series of interfaces called a USB configuration.
 title: USB configuration descriptors
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

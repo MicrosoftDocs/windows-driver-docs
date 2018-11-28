@@ -1,6 +1,5 @@
 ---
 title: Registering and Queuing a DpcForIsr Routine
-author: windows-driver-content
 description: Registering and Queuing a DpcForIsr Routine
 ms.assetid: 32253573-842e-40bc-9616-8d1ccd7afa29
 keywords: ["DpcForIsr", "registering DpcForIsr routine", "queuing DpcForIsr routine"]

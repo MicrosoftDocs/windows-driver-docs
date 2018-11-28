@@ -1,6 +1,5 @@
 ---
 title: MUP Changes in Microsoft Windows Vista
-author: windows-driver-content
 description: MUP Changes in Microsoft Windows Vista
 ms.assetid: 8ca2f9bc-14f1-45d3-a397-f3e5459cf8ec
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Wi-Fi Hotspot Offloading Functions
-author: windows-driver-content
 description: Wi-Fi Hotspot Offloading Functions
 ms.assetid: 114e1604-0d9a-418c-aee1-a9b615d13d21
 ms.date: 07/31/2017

@@ -1,6 +1,5 @@
 ---
 title: TCP/IP Schema Extensions
-author: windows-driver-content
 description: TCP/IP Schema Extensions
 ms.assetid: fe0f12ee-3e91-40a2-b4fa-f0d4a62460a3
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: IPrinterScriptUsbJobContext JobPropertyBag method
-author: windows-driver-content
 description: Returns the property bag associated with the current print job.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

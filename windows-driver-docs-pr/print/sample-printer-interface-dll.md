@@ -1,6 +1,5 @@
 ---
 title: Sample Printer Interface DLL
-author: windows-driver-content
 description: Sample Printer Interface DLL
 ms.assetid: bf33c353-a565-436a-9bd6-c92f5df85d65
 keywords:

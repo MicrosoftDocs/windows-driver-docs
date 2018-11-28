@@ -3,7 +3,6 @@ title: Checking and Updating Status
 description: Checking and Updating Status
 ms.assetid: 60b81369-e81b-4795-a729-a535c38a0999
 keywords: ["SymProxy, status", "SymProxy, checking status", "SymProxy, updating status"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---

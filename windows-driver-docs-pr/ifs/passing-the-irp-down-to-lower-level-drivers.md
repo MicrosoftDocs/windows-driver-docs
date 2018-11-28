@@ -1,6 +1,5 @@
 ---
 title: Passing the IRP Down to Lower-Level Drivers
-author: windows-driver-content
 description: Passing the IRP Down to Lower-Level Drivers
 ms.assetid: 9a8e72fb-b0a8-4026-8606-57fa03344146
 keywords:

@@ -3,7 +3,6 @@ title: ubc
 description: The ubc extension clears a user-space breakpoint.
 ms.assetid: 4BF2C589-A1C4-4714-B712-DD52D04704D1
 keywords: ["ubc Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref

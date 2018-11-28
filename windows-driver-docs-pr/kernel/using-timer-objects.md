@@ -1,6 +1,5 @@
 ---
 title: Using Timer Objects
-author: windows-driver-content
 description: Using Timer Objects
 ms.assetid: b3ee9d92-87b9-47b7-ab13-11e42bec7997
 keywords: ["timer objects WDK kernel , waiting on", "waiting on timer objects", "notification timers WDK kernel", "KeDelayExecutionThread", "KeWaitForSingleObject", "KeInitializeTimer", "KeSetTimer", "DueTime values"]

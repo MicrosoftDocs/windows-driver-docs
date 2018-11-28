@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_INDICATION_CAN_SUSTAIN_AP
-author: windows-driver-content
 description: WDI_TLV_INDICATION_CAN_SUSTAIN_AP is a TLV that contains the reason for a Can Sustain AP indication.
 ms.assetid: 9C7B8E8D-BAF4-4DC7-A020-5B0DEC7CC2FB
 ms.date: 07/18/2017

@@ -1,6 +1,5 @@
 ---
 title: Performing Global Cleanup
-author: windows-driver-content
 description: Performing Global Cleanup
 ms.assetid: 18e0fca0-16ec-4ca9-8b71-47f58f41c46d
 keywords:

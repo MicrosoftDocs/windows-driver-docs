@@ -1,7 +1,6 @@
 ---
 title: Manage report templates and scheduled reports
 description: Use these APIs to view and modify existing Windows driver submission reporting templates and manage your scheduled reports 
-author: EliotSeattle
 ms.topic: article
 ms.author: shganesh
 ms.date: 09/01/2018

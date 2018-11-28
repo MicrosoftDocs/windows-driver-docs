@@ -1,6 +1,5 @@
 ---
 title: Compound Template Data Type Issues
-author: windows-driver-content
 description: Compound Template Data Type Issues
 ms.assetid: 61f26465-c79d-42e3-94c8-26c2c61ecb98
 keywords:

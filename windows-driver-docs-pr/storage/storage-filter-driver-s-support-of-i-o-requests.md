@@ -1,6 +1,5 @@
 ---
 title: Storage Filter Driver's Support of I/O Requests
-author: windows-driver-content
 description: Storage Filter Driver's Support of I/O Requests
 ms.assetid: 2899bf91-584f-47fe-9d5c-3feb07b8707e
 keywords:

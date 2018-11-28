@@ -1,6 +1,5 @@
 ---
 title: Unidrv/PScript5 driver PT/PC provider implementation behavior
-author: windows-driver-content
 description: Unidrv and PScript5 driver PrintTicket or print provider (PT/PC) implementation behavior changes
 ms.assetid: ff401ae8-b0c5-4f20-88dd-055a14e1d065
 ms.date: 04/20/2017

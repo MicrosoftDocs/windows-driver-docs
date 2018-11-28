@@ -1,6 +1,5 @@
 ---
 title: GDL Parser
-author: windows-driver-content
 description: GDL Parser
 ms.assetid: abb0e9b7-db98-4f8c-af15-83cd1841e5c2
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Adding VRAM Capture Support to Existing AVStream Drivers
-author: windows-driver-content
 description: Adding VRAM Capture Support to Existing AVStream Drivers
 ms.assetid: 10736533-3873-4f1d-91c5-d2e55163daaa
 keywords:

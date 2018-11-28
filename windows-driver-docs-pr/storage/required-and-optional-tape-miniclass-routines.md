@@ -1,6 +1,5 @@
 ---
 title: Required and Optional Tape Miniclass Routines
-author: windows-driver-content
 description: Required and Optional Tape Miniclass Routines
 ms.assetid: 7a641199-2607-4980-bd8b-ec3856b311ef
 keywords:

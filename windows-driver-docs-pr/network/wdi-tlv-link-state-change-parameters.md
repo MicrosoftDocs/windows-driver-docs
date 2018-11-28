@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_LINK_STATE_CHANGE_PARAMETERS
-author: windows-driver-content
 description: WDI_TLV_LINK_STATE_CHANGE_PARAMETERS is a TLV that contains link state change parameters for NDIS_STATUS_WDI_INDICATION_LINK_STATE_CHANGE.
 ms.assetid: 808C2E69-B713-41A3-AFB9-7441D2A96867
 ms.date: 07/18/2017

@@ -1,6 +1,5 @@
 ---
 title: Autoconfiguration Details
-author: windows-driver-content
 description: Autoconfiguration Details
 ms.assetid: ba596ce3-724d-45c4-85ee-2486a31a0c01
 keywords:

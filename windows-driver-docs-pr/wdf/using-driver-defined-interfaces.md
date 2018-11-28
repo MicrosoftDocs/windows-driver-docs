@@ -1,6 +1,5 @@
 ---
 title: Using Driver-Defined Interfaces
-author: windows-driver-content
 description: Using Driver-Defined Interfaces
 ms.assetid: ad96add6-c982-429b-b815-d7adf6fed8cc
 keywords:

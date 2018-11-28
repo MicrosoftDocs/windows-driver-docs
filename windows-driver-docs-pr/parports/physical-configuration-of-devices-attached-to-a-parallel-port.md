@@ -1,6 +1,5 @@
 ---
 title: Physical Configuration of Devices Attached to a Parallel Port
-author: windows-driver-content
 description: Physical Configuration of Devices Attached to a Parallel Port
 ms.assetid: ae90fcc6-7ea8-4cb1-89a1-1fbf1ad5c05e
 keywords:

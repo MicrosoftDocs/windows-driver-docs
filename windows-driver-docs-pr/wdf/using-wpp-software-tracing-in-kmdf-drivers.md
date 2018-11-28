@@ -1,6 +1,5 @@
 ---
 title: Using WPP Software Tracing in KMDF Drivers
-author: windows-driver-content
 description: Using WPP Software Tracing in KMDF Drivers
 ms.assetid: dad7aa8d-4ced-47b3-80d2-ec9cfb355783
 keywords:

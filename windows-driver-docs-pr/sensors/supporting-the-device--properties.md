@@ -1,6 +1,5 @@
 ---
 title: Support for device properties
-author: windows-driver-content
 description: Support for device properties
 ms.assetid: ED9A67C4-DFD6-4CF1-B911-29570B3409A5
 ms.date: 04/20/2017

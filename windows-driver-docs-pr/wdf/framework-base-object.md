@@ -1,6 +1,5 @@
 ---
 title: Framework Base Object
-author: windows-driver-content
 description: Framework Base Object
 ms.assetid: 9d400192-faf0-4d8f-849b-6b955105e21a
 keywords:

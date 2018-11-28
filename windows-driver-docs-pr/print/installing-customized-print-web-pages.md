@@ -1,6 +1,5 @@
 ---
 title: Installing Customized Print Web Pages
-author: windows-driver-content
 description: Installing Customized Print Web Pages
 ms.assetid: 8a50e7ea-0e91-476f-86cb-935329b76f91
 keywords:

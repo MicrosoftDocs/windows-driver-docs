@@ -1,6 +1,5 @@
 ---
 title: CD-ROM Set Speed
-author: windows-driver-content
 description: CD-ROM Set Speed
 ms.assetid: 25a46b23-f823-4fc7-a370-cab1c9418a94
 keywords:

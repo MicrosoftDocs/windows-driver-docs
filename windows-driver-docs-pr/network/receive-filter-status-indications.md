@@ -1,6 +1,5 @@
 ---
 title: Receive Filter Status Indications
-author: windows-driver-content
 description: Receive Filter Status Indications
 ms.assetid: 7AB6FC3B-DBBF-4561-B975-455E78AB8285
 ms.date: 07/18/2017

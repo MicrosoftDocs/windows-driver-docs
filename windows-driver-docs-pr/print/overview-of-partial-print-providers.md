@@ -1,6 +1,5 @@
 ---
 title: Overview of Partial Print Providers
-author: windows-driver-content
 description: Overview of Partial Print Providers
 ms.assetid: 622f99e3-d4a5-42f0-ab71-4d256e0ea02c
 keywords:

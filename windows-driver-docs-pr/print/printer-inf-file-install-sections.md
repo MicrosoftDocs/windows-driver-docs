@@ -1,6 +1,5 @@
 ---
 title: Printer INF File Install Sections
-author: windows-driver-content
 description: Printer INF File Install Sections
 ms.assetid: fb544271-1f0f-4bbd-b0a7-88dc89cc8186
 keywords:

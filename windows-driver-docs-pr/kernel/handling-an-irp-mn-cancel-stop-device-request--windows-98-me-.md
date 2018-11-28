@@ -1,6 +1,5 @@
 ---
 title: Handling an IRP_MN_CANCEL_STOP_DEVICE Request (Windows 98/Me)
-author: windows-driver-content
 description: Handling an IRP_MN_CANCEL_STOP_DEVICE Request (Windows 98/Me)
 ms.assetid: 04365c65-a68a-48fc-9f7a-bb005518be5b
 keywords: ["IRP_MN_CANCEL_STOP_DEVICE"]

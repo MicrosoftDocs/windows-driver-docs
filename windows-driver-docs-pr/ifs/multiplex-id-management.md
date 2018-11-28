@@ -1,6 +1,5 @@
 ---
 title: Multiplex ID Management
-author: windows-driver-content
 description: Multiplex ID Management
 ms.assetid: feffc421-bd51-4174-80a4-1f9a36355667
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Message type
-author: windows-driver-content
 description: Message type
 ms.assetid: 3C64F85F-D8AE-4448-A75C-965DCCD85216
 keywords:

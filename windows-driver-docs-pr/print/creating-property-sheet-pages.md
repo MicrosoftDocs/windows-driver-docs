@@ -1,6 +1,5 @@
 ---
 title: Creating Property Sheet Pages
-author: windows-driver-content
 description: Creating Property Sheet Pages
 ms.assetid: 90b1743c-b530-408a-aa30-9ab774166306
 keywords:

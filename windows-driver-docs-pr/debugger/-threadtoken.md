@@ -3,7 +3,6 @@ title: threadtoken
 description: The threadtoken extension displays the impersonation state of the current thread.
 ms.assetid: df16bdb5-0834-4e07-ad5f-a712f9282bb0
 keywords: ["threadtoken Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref

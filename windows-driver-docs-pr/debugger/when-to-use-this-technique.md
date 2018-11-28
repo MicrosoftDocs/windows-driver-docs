@@ -2,7 +2,6 @@
 title: When to Use This Technique
 description: When to Use This Technique
 ms.assetid: 40c9e2aa-35a3-4169-8305-bddc199a5c98
-ms.author: domars
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

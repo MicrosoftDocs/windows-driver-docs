@@ -1,6 +1,5 @@
 ---
 title: Locking Pageable Code or Data
-author: windows-driver-content
 description: Locking Pageable Code or Data
 ms.assetid: b99b6af3-b4b1-4fd6-ac73-27c1068183a4
 keywords: ["pageable drivers WDK kernel , locking code or data", "locking WDK pageable drivers", "restoring pageable status", "resident code WDK pageable drivers", "isolating pageable code", "PAGE keyword WDK"]

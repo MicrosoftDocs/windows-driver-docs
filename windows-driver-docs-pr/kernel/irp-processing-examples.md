@@ -1,6 +1,5 @@
 ---
 title: IRP Processing Examples
-author: windows-driver-content
 description: IRP Processing Examples
 ms.assetid: 1bf555c7-87fd-43c2-ab74-aa6f9133f808
 keywords: ["IRPs WDK kernel , processing examples"]

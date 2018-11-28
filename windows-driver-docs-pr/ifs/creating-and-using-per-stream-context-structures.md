@@ -1,6 +1,5 @@
 ---
 title: Creating and Using Per-Stream Context Structures
-author: windows-driver-content
 description: Creating and Using Per-Stream Context Structures
 ms.assetid: f34898e2-f82e-4962-89d2-e9fb077c04f9
 keywords:

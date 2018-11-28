@@ -1,6 +1,5 @@
 ---
 title: Sensor DDSI Functions
-author: windows-driver-content
 description: The sensor device driver software interface (DDSI) functions represent the interface a sensor driver uses to interact with the class extension.
 ms.assetid: 3DB30155-8DBE-4AE9-A0CC-8089DC255E32
 ms.date: 07/20/2018

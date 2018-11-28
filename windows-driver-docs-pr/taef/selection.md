@@ -19,7 +19,7 @@ TE <test_binaries> [/select:<selection criteria>]
 
 This section describes the TE.exe **/select:**<em>selection criteria</em> option. For more information about TE.exe, see [TE.exe Command Options](te-exe-command-line-parameters.md).
 
-The selection criteria gets applied globally to all the test binaries that have been mentioned at the command prompt. Let's consider two test\_binaries: **Examples\\CPP.SelectionCriteria1.Example.dll** and **Examples\\CPP.SelectionCriteria2.Example.dll** . The following example shows the properties, or metadata, specifed at the various levels in these test\_binaries. You can also obtain this by specifying the **/listproperties** option in the Command Prompt window.
+The selection criteria gets applied globally to all the test binaries that have been mentioned at the command prompt. Let's consider two test\_binaries: **Examples\\CPP.SelectionCriteria1.Example.dll** and **Examples\\CPP.SelectionCriteria2.Example.dll** . The following example shows the properties, or metadata, specified at the various levels in these test\_binaries. You can also obtain this by specifying the **/listproperties** option in the Command Prompt window.
 
 ```cpp
 CPP.SelectionCriteria1.Example.dll (Owner="C1", Priority=3)

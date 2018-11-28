@@ -3,7 +3,6 @@ title: Small Memory Dump
 description: Small Memory Dump
 ms.assetid: bc502411-5366-49d3-b650-9dddda286934
 keywords: ["dump file, Small Memory Dump", "Small Memory Dump"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---

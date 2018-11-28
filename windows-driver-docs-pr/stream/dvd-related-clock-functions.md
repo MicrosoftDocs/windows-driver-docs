@@ -1,6 +1,5 @@
 ---
 title: DVD Related Clock Functions
-author: windows-driver-content
 description: DVD Related Clock Functions
 ms.assetid: 495f25dc-cd79-4f7f-acbc-b8b271269fb3
 keywords:

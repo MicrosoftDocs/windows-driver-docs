@@ -1,6 +1,5 @@
 ---
 title: Creating a persistent unique identifier for a sensor
-author: windows-driver-content
 description: Creating a persistent unique identifier for a sensor
 ms.assetid: 09ff583e-6bb5-4812-ae3b-970dac671e39
 ms.date: 07/20/2018

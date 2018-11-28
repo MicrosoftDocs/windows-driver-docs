@@ -1,6 +1,5 @@
 ---
 title: Status
-author: windows-driver-content
 description: Status
 ms.assetid: a4c39069-4324-4af3-a331-31b684275a57
 ms.date: 11/28/2017

@@ -1,6 +1,5 @@
 ---
 title: Registering an ISR
-author: windows-driver-content
 description: Registering an ISR
 ms.assetid: 903e5664-2193-4456-b133-bb979d700bdf
 keywords: ["interrupt service routines WDK kernel , registering ISRs", "interrupt objects WDK kernel , registering ISRs", "ISRs WDK kernel , registering ISRs", "registering ISRs WDK kernel"]

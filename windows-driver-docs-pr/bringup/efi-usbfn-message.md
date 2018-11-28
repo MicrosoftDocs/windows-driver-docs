@@ -1,6 +1,5 @@
 ---
 title: EFI_USBFN_MESSAGE
-author: windows-driver-content
 description: EFI_USBFN_MESSAGE
 ms.assetid: 411890e1-8913-4e47-acd5-1b36b1b05f34
 ms.date: 04/20/2017

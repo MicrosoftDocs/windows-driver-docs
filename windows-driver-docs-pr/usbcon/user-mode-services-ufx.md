@@ -1,7 +1,6 @@
 ---
 Description: Create a user-mode service that communicates with GenericUSBFn.sys by sending I/O control code (IOCTL) requests.
 title: Communicating with GenericUSBFn.sys from a user-mode service
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

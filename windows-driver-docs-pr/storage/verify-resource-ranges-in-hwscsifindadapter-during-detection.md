@@ -1,6 +1,5 @@
 ---
 title: Verify Resource Ranges in HwScsiFindAdapter During Detection
-author: windows-driver-content
 description: Verify Resource Ranges in HwScsiFindAdapter During Detection
 ms.assetid: 2909aac2-714e-4353-8006-06cf68e4dfc8
 keywords:

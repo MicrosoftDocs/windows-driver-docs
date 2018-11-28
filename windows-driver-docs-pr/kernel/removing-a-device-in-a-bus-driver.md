@@ -1,6 +1,5 @@
 ---
 title: Removing a Device in a Bus Driver
-author: windows-driver-content
 description: Removing a Device in a Bus Driver
 ms.assetid: f3961c29-02e1-41f0-bb7f-784bcdb57eb0
 keywords: ["bus drivers WDK PnP", "DispatchPnP routine"]

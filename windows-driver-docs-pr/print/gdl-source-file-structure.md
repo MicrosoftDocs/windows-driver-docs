@@ -1,6 +1,5 @@
 ---
 title: GDL Source File Structure
-author: windows-driver-content
 description: GDL Source File Structure
 ms.assetid: e6f7bc9a-08ee-44e9-ae46-2a0097e017ff
 keywords:

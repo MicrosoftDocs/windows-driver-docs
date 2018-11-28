@@ -1,6 +1,5 @@
 ---
 title: ERESOURCE Structures
-author: windows-driver-content
 description: ERESOURCE Structures
 ms.assetid: 202b2ef1-bbe4-4ffd-a82b-21f19c145e8d
 keywords: ["synchronization WDK kernel , ERESOURCE structures", "locking WDK kernel", "read/write locking WDK kernel"]

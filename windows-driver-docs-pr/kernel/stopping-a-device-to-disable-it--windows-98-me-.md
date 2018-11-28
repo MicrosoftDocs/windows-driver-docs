@@ -1,6 +1,5 @@
 ---
 title: Stopping a Device to Disable It (Windows 98/Me)
-author: windows-driver-content
 description: Stopping a Device to Disable It (Windows 98/Me)
 ms.assetid: 2fc42fe4-ad29-4a51-9560-74b568bcd129
 keywords: ["disabling PnP devices"]

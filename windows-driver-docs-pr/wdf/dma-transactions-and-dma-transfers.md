@@ -1,6 +1,5 @@
 ---
 title: DMA Transactions and DMA Transfers
-author: windows-driver-content
 description: DMA Transactions and DMA Transfers
 ms.assetid: afcbe756-1a45-410b-8260-2c2c611e6a70
 keywords:

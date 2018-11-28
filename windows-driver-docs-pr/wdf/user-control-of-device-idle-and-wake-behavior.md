@@ -1,6 +1,5 @@
 ---
 title: User Control of Device Idle and Wake Behavior
-author: windows-driver-content
 description: User Control of Device Idle and Wake Behavior
 ms.assetid: 776fcf82-2235-489a-8d46-3ad230da3402
 keywords:

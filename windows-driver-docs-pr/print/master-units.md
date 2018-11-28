@@ -1,6 +1,5 @@
 ---
 title: Master Units
-author: windows-driver-content
 description: Master Units
 ms.assetid: 6c3abf16-1206-4b90-a7e9-c8a581191502
 keywords:

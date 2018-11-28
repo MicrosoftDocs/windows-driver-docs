@@ -1,6 +1,5 @@
 ---
 title: Managing the Lifetime of Objects
-author: windows-driver-content
 description: Managing the Lifetime of Objects
 ms.assetid: 55ad8133-a70a-462f-87cd-6aeaffb0aec8
 keywords:

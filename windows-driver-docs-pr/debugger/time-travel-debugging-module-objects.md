@@ -1,7 +1,6 @@
 ---
 title: TTD Module Objects
 description: This section describes the module model objects associated with time travel debugging.
-ms.author: domars
 ms.date: 09/20/2017
 ms.localizationpriority: medium
 ---

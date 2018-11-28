@@ -1,6 +1,5 @@
 ---
 title: Using AVStream with the Kernel Streaming Proxy Module
-author: windows-driver-content
 description: Using AVStream with the Kernel Streaming Proxy Module
 ms.assetid: c8ae1385-337e-46ad-841e-fbdf5d685210
 keywords:

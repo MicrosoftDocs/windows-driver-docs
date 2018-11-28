@@ -3,7 +3,6 @@ title: Client and Server Examples
 description: Client and Server Examples
 ms.assetid: 78dea1c0-6e94-4980-8042-375f11386d53
 keywords: ["remote debugging through the debugger, examples"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---

@@ -1,6 +1,5 @@
 ---
 title: Resolutions
-author: windows-driver-content
 description: Resolutions
 ms.assetid: 1106cd77-1085-4487-a81a-268f619824e5
 ms.date: 11/28/2017

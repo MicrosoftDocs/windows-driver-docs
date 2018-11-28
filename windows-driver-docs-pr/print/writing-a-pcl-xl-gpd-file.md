@@ -1,6 +1,5 @@
 ---
 title: Writing a PCL XL GPD File
-author: windows-driver-content
 description: Writing a PCL XL GPD File
 ms.assetid: 35abc33a-a046-452b-b650-5c4f626bf6cb
 keywords:

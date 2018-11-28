@@ -1,6 +1,5 @@
 ---
 title: Miscellaneous GDL Directives
-author: windows-driver-content
 description: Miscellaneous GDL Directives
 ms.assetid: 8a1c4bdf-7a84-44b5-8dad-4518edc2b560
 keywords:

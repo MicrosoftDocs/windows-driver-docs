@@ -1,6 +1,5 @@
 ---
 title: Functional Areas
-author: windows-driver-content
 description: Functional Areas
 ms.assetid: 0631c59e-ad30-4684-b254-c1254914fc94
 keywords:

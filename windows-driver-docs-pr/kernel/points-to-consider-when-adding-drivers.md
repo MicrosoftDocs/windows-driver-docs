@@ -1,6 +1,5 @@
 ---
 title: Points to Consider When Adding Drivers
-author: windows-driver-content
 description: Points to Consider When Adding Drivers
 ms.assetid: bcbaa842-03b6-4311-9b93-1a4af165020b
 keywords: ["WDM drivers WDK kernel , configurations", "WDM drivers WDK kernel , layered drivers", "layered drivers WDK kernel", "driver layers WDK WDM", "replacing drivers", "adding kernel-mode drivers"]

@@ -1,6 +1,5 @@
 ---
 title: Minidriver-Supplied Callbacks
-author: windows-driver-content
 description: Minidriver-Supplied Callbacks
 ms.assetid: df5bbc1c-988f-4e07-9783-4f380f85c2b6
 keywords:

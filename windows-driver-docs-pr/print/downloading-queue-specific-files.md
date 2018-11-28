@@ -1,6 +1,5 @@
 ---
 title: Downloading Queue-Specific Files
-author: windows-driver-content
 description: Downloading Queue-Specific Files
 ms.assetid: b6aad46a-2934-461a-ad11-6ad699687fc1
 keywords:

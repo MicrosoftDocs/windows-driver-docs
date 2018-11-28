@@ -2,7 +2,6 @@
 title: Ending a Debugging Session in KD
 description: Ending a Debugging Session in KD
 ms.assetid: 6CD39971-424D-4F29-9A36-CCD14187DEB0
-ms.author: domars
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

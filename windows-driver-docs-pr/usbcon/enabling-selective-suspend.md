@@ -1,7 +1,6 @@
 ---
 Description: Selective suspend is disabled for upgrade versions of Microsoft Windows XP. It is enabled for clean installations of Windows XP, Windows Vista, and later versions of Windows.
 title: Enabling Selective Suspend
-author: windows-driver-content
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

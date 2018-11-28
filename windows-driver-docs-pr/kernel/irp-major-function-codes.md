@@ -1,6 +1,5 @@
 ---
 title: IRP Major Function Codes
-author: windows-driver-content
 description: IRP Major Function Codes
 ms.date: 08/12/2017
 ms.assetid: 11c5b1a9-74c0-47fb-8cce-a008ece9efae

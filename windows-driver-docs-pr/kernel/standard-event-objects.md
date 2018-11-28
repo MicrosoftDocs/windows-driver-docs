@@ -1,6 +1,5 @@
 ---
 title: Standard Event Objects
-author: windows-driver-content
 description: Standard Event Objects
 ms.assetid: 3c34c485-28b1-45d5-9e79-05dd2b26015e
 keywords: ["event objects WDK kernel"]

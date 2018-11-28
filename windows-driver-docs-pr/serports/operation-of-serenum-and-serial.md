@@ -1,6 +1,5 @@
 ---
 title: Operation of Serenum and Serial
-author: windows-driver-content
 description: Operation of Serenum and Serial
 ms.assetid: d14b6655-c031-42dd-921e-b6a09afde86d
 keywords:

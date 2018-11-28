@@ -2,7 +2,6 @@
 title: Bug Check 0x1CF HARDWARE_WATCHDOG_TIMEOUT  
 description: The HARDWARE_WATCHDOG_TIMEOUT bug check has a value of 0x000001CF.
 keywords: ["Bug Check 0x1CF HARDWARE_WATCHDOG_TIMEOUT",  "HARDWARE_WATCHDOG_TIMEOUT"]
-ms.author: domars
 ms.date: 05/23/2018
 topic_type:
 - apiref

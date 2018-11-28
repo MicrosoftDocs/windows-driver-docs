@@ -3,7 +3,6 @@ title: WdbgExts Threads and Processes
 description: WdbgExts Threads and Processes
 ms.assetid: fa513435-ea91-4dc5-9488-85087d585f96
 keywords: ["WdbgExts extensions, threads", "WdbgExts extensions, processes"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---

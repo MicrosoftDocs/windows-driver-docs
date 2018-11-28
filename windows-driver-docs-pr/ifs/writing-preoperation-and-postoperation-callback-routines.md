@@ -1,6 +1,5 @@
 ---
 title: Writing Preoperation and Postoperation Callback Routines
-author: windows-driver-content
 description: Writing Preoperation and Postoperation Callback Routines
 ms.assetid: ad706d01-7a14-4730-8189-c465637987dc
 keywords:

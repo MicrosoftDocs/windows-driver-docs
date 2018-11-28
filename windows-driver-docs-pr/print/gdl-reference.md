@@ -1,6 +1,5 @@
 ---
 title: GDL Reference
-author: windows-driver-content
 description: GDL Reference
 ms.assetid: e8605f5d-c2e4-49d8-915e-80504160fb49
 keywords:

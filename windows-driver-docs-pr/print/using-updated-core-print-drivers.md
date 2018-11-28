@@ -1,6 +1,5 @@
 ---
 title: Using Updated Core Print Drivers
-author: windows-driver-content
 description: Using Updated Core Print Drivers
 ms.assetid: a2a31627-a453-4776-b4f2-13660e4ad7a3
 ms.date: 04/20/2017

@@ -1,6 +1,5 @@
 ---
 title: Range Template Data Type Issues
-author: windows-driver-content
 description: Range Template Data Type Issues
 ms.assetid: 36cc91dc-5edc-4786-b3c9-f60bff06997d
 keywords:

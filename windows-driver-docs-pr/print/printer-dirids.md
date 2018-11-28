@@ -1,6 +1,5 @@
 ---
 title: Printer Dirids
-author: windows-driver-content
 description: Printer Dirids
 ms.assetid: 104af180-c739-4733-b21b-448cfe15ab71
 keywords:

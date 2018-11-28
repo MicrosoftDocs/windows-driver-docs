@@ -117,7 +117,7 @@ The following requirements and recommendations apply to platform-specific and cr
 
 
 
-~~~
+
 On a cross-platform distribution disk, Windows uses the platform-specific *TxtSetup.oem* file that is located in the platform directory that corresponds to the platform on which Windows is running. If a corresponding platform directory that contains a platform-specific *TxtSetup.oem* file does not exist, Windows uses the *TxtSetup.oem* file in the default directory, if one is present.
 
 Windows also supports platform-specific distribution disks. A platform-specific distribution disk contains one platform-specific *TxtSetup.oem* file and the related driver files. The *TxtSetup.oem* file must be located either in its corresponding platform directory, as is done for cross-platform distribution disks, or in the default directory of the distribution disk.
@@ -125,7 +125,7 @@ Windows also supports platform-specific distribution disks. A platform-specific 
 The driver files for a given platform on a cross-platform distribution disk or on a platform-specific distribution disk must be located relative to the directory that contains the platform-specific *TxtSetup.oem* file.
 
 **Tip**  Although not required, we recommend that a *TxtSetup.oem* file always be placed in a corresponding platform directory. Using platform directories eliminates the possibility that Windows might attempt to use a *TxtSetup.oem* file that is incompatible with the platform on which Windows is running. For example, if a user attempts an unattended installation on a platform with a distribution disk that does not contain a corresponding platform directory, Windows cannot determine whether the *TxtSetup.oem* file in the default directory is compatible with the platform. If a driver fails to load because the driver is incompatible with the platform, Windows displays an error message and terminates the unattended installation.
-~~~
+
 
 
 

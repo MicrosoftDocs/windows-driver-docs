@@ -1,6 +1,5 @@
 ---
 title: Introduction to Dynamic Hardware Partitioning
-author: windows-driver-content
 description: Introduction to Dynamic Hardware Partitioning
 ms.assetid: 0d909c64-17c4-4f0e-85b7-4e0a6a92eeee
 keywords: ["dynamic hardware partitioning WDK , about dynamic hardware partitioning", "hardware partitioning WDK dynamic , about dynamic hardware partitioning", "partitions WDK dynamic hardware , about dynamic hardware partitioning", "hardware partitionable servers WDK", "partition units WDK dynamic hardware partitions", "statically partitionable servers WDK dynamic hardware partitioning", "dynamically partitionable servers WDK dynamic hardware partitioning", "hot add WDK dynamic hardware partitioning", "hot remove WDK dynamic hardware partitioning", "hot replace WDK dynamic hardware partitioning", "servers WDK dynamic hardware partitioning", "hardware partitions WDK"]

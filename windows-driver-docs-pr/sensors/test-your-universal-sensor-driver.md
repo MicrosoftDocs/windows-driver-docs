@@ -1,6 +1,5 @@
 ---
 title: Test your universal sensor driver
-author: windows-driver-content
 description: This topic provides suggestions for how to test your universal sensor driver.
 ms.assetid: 46F50544-B130-4690-8047-6FBB6DD4749F
 ms.date: 04/20/2017
@@ -27,13 +26,13 @@ After you successfully [connect your sensor to the Sharks Cove board](connect-yo
 
 
 
-~~~
+
 If you simply want to monitor data retrieval, event handling, report intervals etc., then install this tool on Sharks Cove to monitor these sensor values. The sensor diagnostic tool ships with the Windows driver kit (WDK) and can be found in the following folder: *&lt;Kit root&gt;\\Tools\\&lt;architecture&gt;\\sensordiagnostictool.exe*.
 
 For example, if your driver development computer is an x64-based machine, and you installed the WDK to the default location, then you will find the sensor diagnostic tool in the following folder:
 
 *C:\\Program Files (x86)\\Windows Kits\\10\\Tools\\x64\\sensordiagnostictool.exe*
-~~~
+
 
 ## General driver testing
 

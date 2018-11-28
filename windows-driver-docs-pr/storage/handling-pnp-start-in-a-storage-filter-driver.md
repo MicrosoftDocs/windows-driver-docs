@@ -1,6 +1,5 @@
 ---
 title: Handling PnP Start in a Storage Filter Driver
-author: windows-driver-content
 description: Handling PnP Start in a Storage Filter Driver
 ms.assetid: 02a87fec-772d-4416-bd3a-5c7f98e8d55e
 keywords:

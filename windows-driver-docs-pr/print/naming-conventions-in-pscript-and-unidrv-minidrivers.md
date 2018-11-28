@@ -1,6 +1,5 @@
 ---
 title: Naming Conventions in Pscript and Unidrv Minidrivers
-author: windows-driver-content
 description: Naming Conventions in Pscript and Unidrv Minidrivers
 ms.assetid: d15c72e9-781d-4c71-bcf5-b3d08ec603ca
 keywords:

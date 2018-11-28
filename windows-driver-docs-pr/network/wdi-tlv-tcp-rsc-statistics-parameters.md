@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_TCP_RSC_STATISTICS_PARAMETERS
-author: windows-driver-content
 description: WDI_TLV_TCP_RSC_STATISTICS_PARAMETERS is a TLV that contains TCP RSC statistics for OID_WDI_TCP_RSC_STATISTICS.
 ms.assetid: C1459DF6-6492-4C1F-A22D-2BDC6492B29C
 ms.date: 07/18/2017

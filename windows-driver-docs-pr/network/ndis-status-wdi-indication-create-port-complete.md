@@ -1,6 +1,5 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_CREATE_PORT_COMPLETE
-author: windows-driver-content
 description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_CREATE_PORT_COMPLETE to indicate the completion of OID_WDI_TASK_CREATE_PORT.
 ms.assetid: 8d3cdac1-06d3-4a21-ac13-e6d789c6922e
 ms.date: 07/18/2017

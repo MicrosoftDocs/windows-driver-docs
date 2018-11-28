@@ -1,6 +1,5 @@
 ---
 title: Evaluating ACPI Control Methods Synchronously
-author: windows-driver-content
 description: Evaluating ACPI Control Methods Synchronously
 ms.assetid: 3fd8f7bd-bfae-4846-8051-3a0023d565e4
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Error Handling in Storport Miniport Drivers
-author: windows-driver-content
 description: Error Handling in Storport Miniport Drivers
 ms.assetid: 23ea8c36-56cf-45ae-a066-765d3a91b542
 ms.date: 04/20/2017

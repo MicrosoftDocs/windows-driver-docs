@@ -1,6 +1,5 @@
 ---
 title: Customized Font Management
-author: windows-driver-content
 description: Customized Font Management
 ms.assetid: 6e643703-ace1-4660-990c-3a9ca735829d
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Error Record Persistence
-author: windows-driver-content
 description: Error Record Persistence
 ms.assetid: fe43f93a-59bd-4158-ad00-8fef595528cb
 keywords:

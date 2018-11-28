@@ -1,6 +1,5 @@
 ---
 title: Creating and Initializing a DMA Transaction
-author: windows-driver-content
 description: Creating and Initializing a DMA Transaction
 ms.assetid: 1982c3fa-9e4a-4b26-8902-321223d9159f
 keywords:

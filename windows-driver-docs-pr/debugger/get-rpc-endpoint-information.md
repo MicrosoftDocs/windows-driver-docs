@@ -3,7 +3,6 @@ title: Get RPC Endpoint Information
 description: Get RPC Endpoint Information
 ms.assetid: 8e852855-896c-4553-8a58-8ca49c7b2e0a
 keywords: ["RPC endpoint Information"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---

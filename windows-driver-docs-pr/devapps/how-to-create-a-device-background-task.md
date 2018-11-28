@@ -75,7 +75,7 @@ The foreground app in the [Custom USB device sample](http://go.microsoft.com/fwl
 
 
 
-~~~
+
     Next, the `StartSyncBackgroundTaskAsync` method calls the `DeviceUseTrigger` object’s `RequestAsync` method which starts triggers the background task and returns the `DeviceTriggerResults` object from `RequestAsync` used to determine if the background task started successfully.
 
     **Important**  Windows checks to ensure that all necessary task initiation policy checks have been completed. If all policy checks are completed the update operation is now running as a background task outside of the foreground app, allowing the app to be safely suspended while the operation is in progress. Windows will also enforce any runtime requirements and cancel the background task if those requirements are no longer met.
@@ -83,7 +83,7 @@ The foreground app in the [Custom USB device sample](http://go.microsoft.com/fwl
 
 
 3.  Finally, the `SyncWithDeviceAsync` method uses the `DeviceTriggerResults` object returned from `StartSyncBackgroundTaskAsync` to determine if the background task started successfully. A switch statement is used to inspect the result from `DeviceTriggerResults`
-~~~
+
 
 5.  The foreground app implements a private `OnSyncWithDeviceProgress` event handler that will update the app UI with progress from the device background task.
 

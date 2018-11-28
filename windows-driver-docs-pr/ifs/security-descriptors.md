@@ -1,6 +1,5 @@
 ---
 title: Security Descriptors
-author: windows-driver-content
 description: Security Descriptors
 ms.assetid: 4c3200a8-63f4-4398-aed1-b90150027829
 keywords:

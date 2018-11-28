@@ -3,7 +3,6 @@ title: dds, dps, dqs (Display Words and Symbols)
 description: The dds, dps, and dqs commands display the contents of memory in the given range. This memory is assumed to be a series of addresses in the symbol table. 
 ms.assetid: 5a3ed1c4-723a-4902-bfbf-d4a44d2cd0b5
 keywords: ["dds, dps, dqs (Display Words and Symbols) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -51,26 +50,12 @@ Specifies the memory area to display. For more syntax details, see [Address and 
 
 ### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Modes</strong></p></td>
-<td align="left"><p>user mode, kernel mode</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Targets</strong></p></td>
-<td align="left"><p>live, crash dump</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Platforms</strong></p></td>
-<td align="left"><p>all</p></td>
-</tr>
-</tbody>
-</table>
+|||
+|--- |--- |
+|Modes|user mode, kernel mode|
+|Targets|live, crash dump|
+|Platforms|all|
+ 
 
  
 

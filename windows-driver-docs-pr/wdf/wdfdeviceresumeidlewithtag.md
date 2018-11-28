@@ -1,6 +1,5 @@
 ---
 title: WdfDeviceResumeIdleWithTag macro
-author: windows-driver-content
 description: The WdfDeviceResumeIdleWithTag macro decrements the power reference count for a specified framework device object and assigns the driver's current file name and line number to the reference. The macro also assigns a tag value to the reference.
 ms.assetid: 065393BE-CEDF-4B82-AE43-844DDB932DF0
 keywords:

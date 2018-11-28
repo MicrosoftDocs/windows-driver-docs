@@ -1,6 +1,5 @@
 ---
 title: Sample CPSUI Application
-author: windows-driver-content
 description: Sample CPSUI Application
 ms.assetid: 895afbfe-c18a-4bcc-b815-8cb323bbac80
 keywords:

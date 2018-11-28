@@ -1,7 +1,6 @@
 ---
 title: WinDbg Preview - Scripting 
 description: This section describes how to use the home menu in the WinDbg preview debugger.
-ms.author: domars
 ms.date: 08/04/2017
 ms.localizationpriority: medium
 ---

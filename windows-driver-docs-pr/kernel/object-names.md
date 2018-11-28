@@ -1,6 +1,5 @@
 ---
 title: Object Names
-author: windows-driver-content
 description: Object Names
 ms.assetid: b30e7475-7f94-4993-b373-8e4a8b1bcb4c
 keywords: ["object names WDK kernel", "named objects WDK kernel", "unnamed objects WDK kernel", "object names WDK user-mode", "object handles WDK user-mode", "object handles WDK kernel", "handles WDK user-mode", "handles WDK kernel"]

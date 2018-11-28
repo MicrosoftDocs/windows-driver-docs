@@ -1,6 +1,5 @@
 ---
 title: Writing a Reinitialize Routine
-author: windows-driver-content
 description: Writing a Reinitialize Routine
 ms.assetid: 47a7dd3f-e474-49c7-adf2-11f6e788c261
 keywords: ["standard driver routines WDK kernel , Reinitialize routine", "driver routines WDK kernel , Reinitialize routine", "routines WDK kernel , Reinitialize routine", "Reinitialize", "reinitializing drivers WDK", "driver reinitialization WDK kernel", "driver initialization WDK kernel", "initializing drivers WDK kernel"]

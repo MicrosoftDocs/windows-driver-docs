@@ -1,6 +1,5 @@
 ---
 title: Access Rights
-author: windows-driver-content
 description: Access Rights
 ms.assetid: 518e60db-7058-4ebe-8640-eb8f6b9e7645
 keywords: ["access rights WDK objects", "generic access rights WDK objects", "standard access rights WDK objects", "specific access rights WDK objects", "object access rights WDK kernel"]

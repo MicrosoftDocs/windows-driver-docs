@@ -1,6 +1,5 @@
 ---
 title: Constraints on Completion Routines
-author: windows-driver-content
 description: Constraints on Completion Routines
 ms.assetid: 3873fd27-cfa8-414d-9437-c0789b20ff27
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: XSD Template Data Types
-author: windows-driver-content
 description: XSD Template Data Types
 ms.assetid: 96d3a75a-fa15-47bb-8331-e3994d25c42d
 keywords:

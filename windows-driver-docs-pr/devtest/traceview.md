@@ -12,7 +12,6 @@ keywords:
 - trace sessions WDK , controlling
 - trace consumers WDK
 - trace controllers WDK
-ms.author: eliotgra
 ms.date: 09/12/2018
 ms.localizationpriority: medium
 ---

@@ -1,6 +1,5 @@
 ---
 title: Installing Printers Over a Network
-author: windows-driver-content
 description: Installing Printers Over a Network
 ms.assetid: 217fcc1f-0193-4b7f-882c-23b39d676670
 keywords:

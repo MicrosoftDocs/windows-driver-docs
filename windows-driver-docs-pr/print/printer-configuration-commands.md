@@ -1,6 +1,5 @@
 ---
 title: Printer Configuration Commands
-author: windows-driver-content
 description: Printer Configuration Commands
 ms.assetid: ed5102e7-1651-4188-8042-f0d544a54a1d
 keywords:

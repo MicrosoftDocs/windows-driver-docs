@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_COMMUNICATION_CAPABILITIES
-author: windows-driver-content
 description: WDI_TLV_COMMUNICATION_CAPABILITIES is a TLV that specifies the communication capabilities.
 ms.assetid: 0A603358-05EA-4796-8D7F-E8F86F1C30F1
 ms.date: 07/18/2017

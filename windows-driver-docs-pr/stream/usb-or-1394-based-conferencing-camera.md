@@ -1,6 +1,5 @@
 ---
 title: USB or 1394-Based Conferencing Camera
-author: windows-driver-content
 description: USB or 1394-Based Conferencing Camera
 ms.assetid: 06097803-a124-4c9b-bdb4-cfd8648bc81d
 keywords:

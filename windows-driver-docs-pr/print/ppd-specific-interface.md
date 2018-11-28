@@ -1,6 +1,5 @@
 ---
 title: PPD-Specific Interface
-author: windows-driver-content
 description: PPD-Specific Interface
 ms.assetid: 12d5baa2-4fd4-4eca-84c7-1ee168ee8259
 keywords:

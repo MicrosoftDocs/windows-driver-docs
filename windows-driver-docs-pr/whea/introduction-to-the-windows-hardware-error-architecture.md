@@ -1,6 +1,5 @@
 ---
 title: Introduction to the Windows Hardware Error Architecture
-author: windows-driver-content
 description: Introduction to the Windows Hardware Error Architecture
 ms.assetid: 5a0bbf8c-d644-4a64-9a7e-400d5de2c8fa
 keywords:

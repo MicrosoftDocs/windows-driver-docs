@@ -1,7 +1,6 @@
 ---
 title: Time Travel Debugging - Working with Trace Files 
 description: This section describes how to work with time travel trace files 
-ms.author: domars
 ms.date: 09/21/2017
 ms.localizationpriority: medium
 ---

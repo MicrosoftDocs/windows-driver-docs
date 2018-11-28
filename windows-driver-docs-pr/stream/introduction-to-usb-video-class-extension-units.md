@@ -1,6 +1,5 @@
 ---
 title: Introduction to USB Video Class Extension Units
-author: windows-driver-content
 description: Introduction to USB Video Class Extension Units
 ms.assetid: a46feb97-771e-4efd-872e-4a4b0fb3b705
 keywords:

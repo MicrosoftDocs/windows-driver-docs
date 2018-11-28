@@ -8,7 +8,6 @@ keywords:
 - buses WDK , PCMCIA
 - memory windows WDK PCMCIA bus
 - memory WDK PCMCIA bus
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

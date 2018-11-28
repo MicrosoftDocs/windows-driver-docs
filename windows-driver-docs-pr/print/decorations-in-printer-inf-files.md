@@ -1,6 +1,5 @@
 ---
 title: Decorations in Printer INF Files
-author: windows-driver-content
 description: Decorations in Printer INF Files
 ms.assetid: 86ddca11-e2a9-44b8-8c42-313116fc580e
 keywords:

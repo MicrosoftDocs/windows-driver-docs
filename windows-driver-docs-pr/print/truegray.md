@@ -1,6 +1,5 @@
 ---
 title: TrueGray
-author: windows-driver-content
 description: TrueGray
 ms.assetid: d6fef790-79d9-4ea7-8e1d-bca8837108de
 keywords:

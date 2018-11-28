@@ -1,6 +1,5 @@
 ---
 title: Valid GDL Configurations
-author: windows-driver-content
 description: Valid GDL Configurations
 ms.assetid: 68dbe7f7-4f6d-46e5-b2f1-27b123c4bedb
 keywords:

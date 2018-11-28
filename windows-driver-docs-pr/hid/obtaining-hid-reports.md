@@ -1,6 +1,5 @@
 ---
 title: Obtaining HID Reports
-author: windows-driver-content
 description: Obtaining HID Reports
 ms.assetid: b6312dce-39af-4fff-b17d-4a50b9ab823b
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Symbolic Names
-author: windows-driver-content
 description: Symbolic Names
 ms.assetid: 4bd07f73-9fe1-4a81-adab-0e382f808a88
 keywords:

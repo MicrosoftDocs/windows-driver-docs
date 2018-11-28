@@ -1,6 +1,5 @@
 ---
 title: Setting Again and Returning from HwScsiFindAdapter
-author: windows-driver-content
 description: Setting Again and Returning from HwScsiFindAdapter
 ms.assetid: 8a9cde40-06fa-4b56-818d-63a9c71da208
 keywords:

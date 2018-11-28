@@ -1,6 +1,5 @@
 ---
 title: Physical Configuration of Parallel Ports
-author: windows-driver-content
 description: Physical Configuration of Parallel Ports
 ms.assetid: 4009a03b-35c3-41d7-892b-3abda8791d73
 keywords:

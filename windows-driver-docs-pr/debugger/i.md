@@ -3,7 +3,6 @@ title: I (Windows Debugger Glossary)
 description: Glossary page - H
 Robots: noindex, nofollow
 ms.assetid: 4415522d-6ea3-42f6-9acc-0e3ceaa36dc7
-ms.author: domars
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

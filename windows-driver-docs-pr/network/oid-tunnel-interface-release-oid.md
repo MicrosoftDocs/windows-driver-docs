@@ -1,6 +1,5 @@
 ---
 title: OID_TUNNEL_INTERFACE_RELEASE_OID
-author: windows-driver-content
 description: The OID_TUNNEL_INTERFACE_RELEASE_OID object identifier (OID) is reserved for system use. Do not use it in your driver.
 ms.assetid: 331754B3-19EA-4313-956E-5E373601CCBE
 keywords:

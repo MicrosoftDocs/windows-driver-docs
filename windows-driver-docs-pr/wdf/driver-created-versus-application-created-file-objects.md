@@ -1,6 +1,5 @@
 ---
 title: Driver-Created Versus Application-Created File Objects
-author: windows-driver-content
 description: Driver-Created Versus Application-Created File Objects
 ms.assetid: f81ae0ed-a29c-476e-9b16-ff554eef1de9
 keywords:

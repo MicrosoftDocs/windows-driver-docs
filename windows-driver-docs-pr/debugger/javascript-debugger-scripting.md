@@ -2,8 +2,7 @@
 title: JavaScript Debugger Scripting
 description: This topic describes how to use JavaScript to create scripts that understand debugger objects and extend and customize the capabilities of the debugger.
 ms.assetid: 3442E2C4-4054-4698-B7FB-8FE19D26C171
-ms.author: domars
-ms.date: 10/26/2018
+ms.date: 11/27/2018
 ms.localizationpriority: medium
 ---
 
@@ -299,7 +298,7 @@ function RunCommands()
 {
 var ctl = host.namespace.Debugger.Utility.Control;   
 var output = ctl.ExecuteCommand("u");
-host.diagnostics.debugLog("***> Displaying command ouput \n");
+host.diagnostics.debugLog("***> Displaying command output \n");
 
 for (var line of output)
    {
@@ -345,7 +344,7 @@ Use the dx command to call the RunCommands function in the RunCommands script.
 
 ```dbgcmd
 0:000> dx Debugger.State.Scripts.RunCommands.Contents.RunCommands()
-  ***> Displaying command ouput
+  ***> Displaying command output
   ntdll!ExpInterlockedPopEntrySListEnd+0x17 [d:\rs1\minkernel\ntos\rtl\amd64\slist.asm @ 196]:
   00007ffd`87f06e67 cc              int     3
   00007ffd`87f06e68 cc              int     3
@@ -379,7 +378,7 @@ As mentioned, initializeScript will be called immediately after the root code of
 ```javascript
 function initializeScript()
 {
-    // Add code here that you want to run everytime the script is loaded. 
+    // Add code here that you want to run every time the script is loaded. 
     // We will just send a message to indicate that function was called.
     host.diagnostics.debugLog("***> initializeScript was called\n");
 }
@@ -392,7 +391,7 @@ The invokeScript method is the primary script method and is called when .scriptl
 ```javascript
 function invokeScript()
 {
-    // Add code here that you want to run everytime the script is executed. 
+    // Add code here that you want to run every time the script is executed. 
     // We will just send a message to indicate that function was called.
     host.diagnostics.debugLog("***> invokeScript was called\n");
 }
@@ -407,7 +406,7 @@ If a script neither makes imperative manipulations to the object model nor cache
 ```javascript
 function uninitializeScript()
 {
-    // Add code here that you want to run everytime the script is unloaded. 
+    // Add code here that you want to run every time the script is unloaded. 
     // We will just send a message to indicate that function was called.
     host.diagnostics.debugLog("***> uninitialize was called\n");
 }
@@ -418,47 +417,12 @@ function uninitializeScript()
 
 This table summarizes which functions are called by the script commands
 
-<table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"></td>
-<td align="left">.<strong><a href="-scriptload--load-script-.md" data-raw-source="[.scriptload](-scriptload--load-script-.md)">.scriptload</a></strong></td>
-<td align="left"><strong><a href="-scriptrun--run-script-.md" data-raw-source="[.scriptrun (Run Script)](-scriptrun--run-script-.md)">.scriptrun (Run Script)</a></strong></td>
-<td align="left"><strong><a href="-scriptunload--unload-script-.md" data-raw-source="[.scriptunload (Unload Script)](-scriptunload--unload-script-.md)">.scriptunload (Unload Script)</a></strong></td>
-</tr>
-<tr class="even">
-<td align="left">root</td>
-<td align="left">yes</td>
-<td align="left">yes</td>
-<td align="left"></td>
-</tr>
-<tr class="odd">
-<td align="left">initializeScript</td>
-<td align="left">yes</td>
-<td align="left">yes</td>
-<td align="left"></td>
-</tr>
-<tr class="even">
-<td align="left">invokeScript</td>
-<td align="left"></td>
-<td align="left">yes</td>
-<td align="left"></td>
-</tr>
-<tr class="odd">
-<td align="left">uninitializeScript</td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left">yes</td>
-</tr>
-</tbody>
-</table>
-
+||[.scriptload](-scriptload--load-script-.md)|[.scriptrun (Run Script)](-scriptrun--run-script-.md)|[.scriptunload (Unload Script)](-scriptunload--unload-script-.md)|
+|--- |--- |--- |--- |
+|root|yes|yes| | |
+|initializeScript|yes|yes| | |
+|invokeScript		| |yes| |
+|uninitializeScript | ||yes|
 
 
 Use this sample code to see when each function is called as the script is loaded, executed and unloaded.
@@ -470,14 +434,14 @@ host.diagnostics.debugLog("***>; Code at the very top (root) of the script is al
 
 function initializeScript()
 {
-    // Add code here that you want to run everytime the script is loaded. 
+    // Add code here that you want to run every time the script is loaded. 
     // We will just send a message to indicate that function was called.
     host.diagnostics.debugLog("***>; initializeScript was called \n");
 }
 
 function invokeScript()
 {
-    // Add code here that you want to run everytime the script is executed. 
+    // Add code here that you want to run every time the script is executed. 
     // We will just send a message to indicate that function was called.
     host.diagnostics.debugLog("***>; invokeScript was called \n");
 }
@@ -485,7 +449,7 @@ function invokeScript()
 
 function uninitializeScript()
 {
-    // Add code here that you want to run everytime the script is unloaded. 
+    // Add code here that you want to run every time the script is unloaded. 
     // We will just send a message to indicate that function was called.
     host.diagnostics.debugLog("***>; uninitialize was called\n");
 }
@@ -1025,9 +989,9 @@ Script Debugger Commands (*NOTE* IDs are **PER SCRIPT**):
     ?? <expr>  ......................... Evaluate expression <expr> and display result
     |  ................................. List available scripts
     |<scriptid>s  ...................... Switch context to the given script
-    bc <bpid>  ......................... Clear breakpoint by specifed <bpid>
-    bd <bpid>  ......................... Disable breakpoint by specifed <bpid>
-    be <bpid>  ......................... Enable breakpoint by specifed <bpid>
+    bc <bpid>  ......................... Clear breakpoint by specified <bpid>
+    bd <bpid>  ......................... Disable breakpoint by specified <bpid>
+    be <bpid>  ......................... Enable breakpoint by specified <bpid>
     bl  ................................ List breakpoints
     bp <line>:<column>  ................ Set breakpoint at the specified line and column
     bp <function-name>  ................ Set breakpoint at the (global) function specified by the given name

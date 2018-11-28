@@ -1,6 +1,5 @@
 ---
 title: Cancel-Safe IRP Queues
-author: windows-driver-content
 description: Cancel-Safe IRP Queues
 ms.assetid: a759d1e0-120f-4db9-9b84-ff921f2f5ba4
 keywords: ["cancel-safe IRP queues WDK kernel", "callback routines WDK IRPs", "synchronization WDK IRPs"]

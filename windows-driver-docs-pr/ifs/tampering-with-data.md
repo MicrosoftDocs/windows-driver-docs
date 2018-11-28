@@ -1,6 +1,5 @@
 ---
 title: Tampering with Data
-author: windows-driver-content
 description: Tampering with Data
 ms.assetid: 277395b9-b770-45b4-8f4c-cad8b684ca44
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Windows kernel run-time library obsolete routines
-author: windows-driver-content
 description: Windows kernel run-time library obsolete routines
 ms.assetid: cd9aa441-a7f2-42b1-8319-611bf53c995d
 ms.localizationpriority: medium

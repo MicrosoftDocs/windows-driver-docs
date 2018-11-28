@@ -1,6 +1,5 @@
 ---
 title: Creating and Using Driver-Created File Objects
-author: windows-driver-content
 description: Creating and Using Driver-Created File Objects
 ms.assetid: 84b677b4-fddf-4f06-9ea6-e4642c3f1b2d
 keywords:

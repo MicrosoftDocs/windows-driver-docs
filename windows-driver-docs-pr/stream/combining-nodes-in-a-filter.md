@@ -1,6 +1,5 @@
 ---
 title: Combining Nodes in a Filter
-author: windows-driver-content
 description: Combining Nodes in a Filter
 ms.assetid: ebceb42a-966d-4c03-b4f5-8666284fc871
 keywords:

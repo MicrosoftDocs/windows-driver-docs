@@ -1,6 +1,5 @@
 ---
 title: XPSDrv Driver Recommendations
-author: windows-driver-content
 description: XPSDrv Driver Recommendations
 ms.assetid: 6700afd2-8526-4464-92b8-a9c1a37f8402
 keywords:

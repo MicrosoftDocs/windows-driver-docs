@@ -1,6 +1,5 @@
 ---
 title: Request Handlers
-author: windows-driver-content
 description: Request Handlers
 ms.assetid: bfc543bf-18a8-4e2c-ba7a-d0a21cefb038
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: NDIS_STATUS_WWAN_DEVICE_RESET_STATUS
-author: windows-driver-content
 description: NDIS_STATUS_WWAN_DEVICE_RESET_STATUS
 ms.assetid: 3745E3A8-6807-4BAF-8074-90C661EAD15E
 keywords:

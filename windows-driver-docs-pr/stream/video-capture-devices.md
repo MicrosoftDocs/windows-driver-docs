@@ -1,6 +1,5 @@
 ---
 title: Video Capture Devices
-author: windows-driver-content
 description: Video Capture Devices
 ms.assetid: ed02e6c8-fd82-488b-a0dc-8e83a842bcc4
 keywords:

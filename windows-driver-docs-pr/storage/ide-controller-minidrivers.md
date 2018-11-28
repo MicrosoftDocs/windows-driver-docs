@@ -1,6 +1,5 @@
 ---
 title: IDE Controller Minidrivers
-author: windows-driver-content
 description: IDE Controller Minidrivers
 ms.assetid: 280c4add-70c3-4c2a-b90b-a20111a2e407
 keywords:

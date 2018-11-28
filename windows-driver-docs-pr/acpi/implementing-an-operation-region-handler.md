@@ -1,6 +1,5 @@
 ---
 title: Implementing an Operation Region Handler
-author: windows-driver-content
 description: Implementing an Operation Region Handler
 ms.assetid: e435393c-d637-45c1-ab65-0b23f796ec02
 keywords:

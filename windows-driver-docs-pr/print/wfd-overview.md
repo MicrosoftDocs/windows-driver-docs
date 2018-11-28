@@ -1,6 +1,5 @@
 ---
 title: Wi-Fi Direct Printing overview
-author: windows-driver-content
 description: Provides information on supported user experiences and use cases for a Wi-Fi Direct Printing.
 ms.assetid: 40ED3410-EC46-42C8-B09B-8010639F2268
 ms.date: 04/20/2017

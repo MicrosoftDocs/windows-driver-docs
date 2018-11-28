@@ -1,6 +1,5 @@
 ---
 title: Sensor data fields
-author: windows-driver-content
 description: The sensor driver sets data fields that can be read by applications, using the ReadFile function to get information about the sensor driver.
 ms.assetid: E430AC59-34AC-4F8E-9A42-350C7A42BBA8
 ms.date: 07/20/2018

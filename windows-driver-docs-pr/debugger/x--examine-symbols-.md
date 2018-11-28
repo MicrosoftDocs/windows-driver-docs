@@ -3,7 +3,6 @@ title: x (Examine Symbols)
 description: The x command displays the symbols in all contexts that match the specified pattern.
 ms.assetid: 8c71c2ca-4a9d-43e4-91b3-f05b5475316d
 keywords: ["x (Examine Symbols) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref

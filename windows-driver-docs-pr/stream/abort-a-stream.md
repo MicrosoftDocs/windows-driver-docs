@@ -1,6 +1,5 @@
 ---
 title: Abort a Stream
-author: windows-driver-content
 description: Abort a Stream
 ms.assetid: 46c726b6-8553-4588-9be1-2cf7779efec5
 keywords:

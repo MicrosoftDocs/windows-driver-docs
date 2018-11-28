@@ -1,6 +1,5 @@
 ---
 title: Common Property Sheet User Interface
-author: windows-driver-content
 description: Common Property Sheet User Interface
 ms.assetid: 7af3435a-19e0-40a1-9f94-319d9d323856
 keywords:

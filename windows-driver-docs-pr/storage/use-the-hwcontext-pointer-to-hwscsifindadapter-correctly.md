@@ -1,6 +1,5 @@
 ---
 title: Use the HwContext Pointer to HwScsiFindAdapter Correctly
-author: windows-driver-content
 description: Use the HwContext Pointer to HwScsiFindAdapter Correctly
 ms.assetid: 9f287989-423b-4084-bf18-8df8676f7123
 keywords:

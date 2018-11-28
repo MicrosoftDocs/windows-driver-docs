@@ -1,6 +1,5 @@
 ---
 title: Firmware update status
-author: windows-driver-content
 description: At this point it is expected that all firmware updates will be applied, and the results of all updates reflected in the ESRT on the subsequent invocation of the Windows OS loader.
 ms.assetid: 988B1E95-2268-4B4F-B0C6-3C965FCD1B1C
 ms.date: 04/20/2017

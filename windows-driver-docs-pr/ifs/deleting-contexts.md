@@ -1,6 +1,5 @@
 ---
 title: Deleting Contexts
-author: windows-driver-content
 description: Deleting Contexts
 ms.assetid: 43a30a75-4344-4fc5-ad57-28b48c2e54a8
 keywords:

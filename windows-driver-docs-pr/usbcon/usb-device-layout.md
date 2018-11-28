@@ -1,7 +1,6 @@
 ---
 Description: A USB device defines its capabilities and features through configurations, interfaces, alternate settings, and endpoints. 
 title: USB device layout
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

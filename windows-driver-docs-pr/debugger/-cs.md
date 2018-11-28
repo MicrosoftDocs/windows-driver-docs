@@ -3,8 +3,7 @@ title: cs
 description: The cs extension displays one or more critical sections or the whole critical section tree.
 ms.assetid: 767ad508-013b-4cf7-808d-38ff64418879
 keywords: ["cs Windows Debugging"]
-ms.author: domars
-ms.date: 05/23/2017
+ms.date: 11/15/2018
 topic_type:
 - apiref
 api_name:
@@ -26,71 +25,34 @@ The **!cs** extension displays one or more critical sections or the whole critic
 !cs [-s] [-o] -d InfoAddress 
 !cs [-s] -t [TreeAddress] 
 !cs -? 
-```dbgsyntax
+```
 
-## <span id="ddk__cs_dbg"></span><span id="DDK__CS_DBG"></span>Parameters
+## Parameters
 
+Parameter | Description
+|---------|-------------|
+**-s**  | Displays each critical section's initialization stack trace, if this information is available.
+**-l**  |Display only the locked critical sections.
+**-o**   |Displays the owner's stack for any locked critical section that is being displayed.
+*Address* |Specifies the address of the critical section to display. If you omit this parameter, the debugger displays all critical sections in the current process.
+*StartAddress*   | Specifies the beginning of the address range to search for critical sections.
+*EndAddress*   | Specifies the end of the address range to search for critical sections.
+**-d**    | Displays critical sections that are associated with DebugInfo.
+*InfoAddress*   | Specifies the address of the DebugInfo.
+**-t**    | Displays a critical section tree. Before you can use the **-t** option, you must activate [Application Verifier](application-verifier.md) for the target process and select the **Check lock usage** option.
+*TreeAddress*    | Specifies the address of the root of the critical section tree. If you omit this parameter or specify zero, the debugger displays the critical section tree for the current process.
+**-?**    | Displays some Help text for this extension in the [Debugger Command window](debugger-command-window.md).
 
-<span id="_______-s______"></span><span id="_______-S______"></span> **-s**   
-Displays each critical section's initialization stack trace, if this information is available.
+### DLL
 
-<span id="_______-l______"></span><span id="_______-L______"></span> **-l**   
-Display only the locked critical sections.
-
-<span id="_______-o______"></span><span id="_______-O______"></span> **-o**   
-Displays the owner's stack for any locked critical section that is being displayed.
-
-<span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
-Specifies the address of the critical section to display. If you omit this parameter, the debugger displays all critical sections in the current process.
-
-<span id="_______StartAddress______"></span><span id="_______startaddress______"></span><span id="_______STARTADDRESS______"></span> *StartAddress*   
-Specifies the beginning of the address range to search for critical sections.
-
-<span id="_______EndAddress______"></span><span id="_______endaddress______"></span><span id="_______ENDADDRESS______"></span> *EndAddress*   
-Specifies the end of the address range to search for critical sections.
-
-<span id="_______-d______"></span><span id="_______-D______"></span> **-d**   
-Displays critical sections that are associated with DebugInfo.
-
-<span id="_______InfoAddress______"></span><span id="_______infoaddress______"></span><span id="_______INFOADDRESS______"></span> *InfoAddress*   
-Specifies the address of the DebugInfo.
-
-<span id="_______-t______"></span><span id="_______-T______"></span> **-t**   
-Displays a critical section tree. Before you can use the **-t** option, you must activate [Application Verifier](application-verifier.md) for the target process and select the **Check lock usage** option.
-
-<span id="_______TreeAddress______"></span><span id="_______treeaddress______"></span><span id="_______TREEADDRESS______"></span> *TreeAddress*   
-Specifies the address of the root of the critical section tree. If you omit this parameter or specify zero, the debugger displays the critical section tree for the current process.
-
-<span id="_______-_______"></span> **-?**   
-Displays some Help text for this extension in the [Debugger Command window](debugger-command-window.md).
-
-### <span id="DLL"></span><span id="dll"></span>DLL
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Unavailable</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Exts.dll</p></td>
-</tr>
-</tbody>
-</table>
-
+Exts.dll
  
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+### Additional Information
 
-For other commands and extensions that can display critical section information, see [Displaying a Critical Section](displaying-a-critical-section.md). For more information about critical sections, see the Microsoft Windows SDK documentation, the Windows Driver Kit (WDK) documentation, and *Microsoft Windows Internals* by Mark Russinovich and David Solomon. (These resources may not be available in some languages and countries.)
+For other commands and extensions that can display critical section information, see [Displaying a Critical Section](displaying-a-critical-section.md). For more information about critical sections, see the Microsoft Windows SDK documentation, the Windows Driver Kit (WDK) documentation, and *Microsoft Windows Internals* by Mark Russinovich and David Solomon. 
 
-Remarks
--------
+#### Remarks
 
 The **!cs** extension requires full symbols (including type information) for the process that is being debugged and for Ntdll.dll. If you do not have symbols for Ntdll.dll, see [Installing Windows Symbol Files](installing-windows-symbol-files.md).
 
@@ -203,7 +165,7 @@ The following items appear in this **!cs -t** display:
 
 -   **WaitCnt** is the contention count.
 
- 
+
 
  
 

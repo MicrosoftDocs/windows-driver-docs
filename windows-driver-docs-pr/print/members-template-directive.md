@@ -1,6 +1,5 @@
 ---
 title: Members Template Directive
-author: windows-driver-content
 description: Members Template Directive
 ms.assetid: 75e85746-71b2-494e-9b46-3b85f68ae436
 keywords:

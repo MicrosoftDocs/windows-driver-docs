@@ -1,6 +1,5 @@
 ---
 title: Determining Why an Application Request Does Not Complete
-author: windows-driver-content
 description: This topic describes how you can use the Wudfext.dll debugger extensions in conjunction with a User-Mode Driver Framework (UMDF) version 1 or 2 driver to determine why an application request does not complete.
 ms.assetid: 33a09277-1e00-4f91-b2ab-b2541091628f
 keywords:

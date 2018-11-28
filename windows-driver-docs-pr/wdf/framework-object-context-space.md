@@ -1,6 +1,5 @@
 ---
 title: Framework Object Context Space
-author: windows-driver-content
 description: Framework Object Context Space
 ms.assetid: 21a46e04-2330-4a3d-ba72-c04295bfbb3c
 keywords:

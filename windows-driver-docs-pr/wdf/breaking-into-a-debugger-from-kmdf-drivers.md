@@ -1,6 +1,5 @@
 ---
 title: Breaking into a Debugger from KMDF Drivers
-author: windows-driver-content
 description: Breaking into a Debugger from KMDF Drivers
 ms.assetid: b18e210c-cc9b-436c-b762-6346b946357c
 keywords:

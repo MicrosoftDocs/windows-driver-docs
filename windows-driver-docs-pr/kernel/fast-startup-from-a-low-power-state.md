@@ -1,6 +1,5 @@
 ---
 title: Fast Startup from a Low-Power State
-author: windows-driver-content
 description: Fast Startup from a Low-Power State
 ms.assetid: 1091571c-2e30-4ad5-b4b9-0f8633e68288
 ms.localizationpriority: medium

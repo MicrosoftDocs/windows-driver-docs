@@ -1,6 +1,5 @@
 ---
 title: Iasphelp Automation Interface
-author: windows-driver-content
 description: Iasphelp Automation Interface
 MS-HAID:
 - 'webfnc\_de36c486-679b-44f0-8322-5a421054d328.xml'

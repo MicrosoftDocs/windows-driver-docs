@@ -1,6 +1,5 @@
 ---
 title: Device Installation
-author: windows-driver-content
 description: Device Installation
 ms.assetid: 47bbe4cd-bcbc-42d5-9513-9ea659c123dc
 keywords:

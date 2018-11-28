@@ -1,6 +1,5 @@
 ---
 title: AdapterControl Routine Requirements
-author: windows-driver-content
 description: AdapterControl Routine Requirements
 ms.assetid: 09ce4ad8-eb1b-4fd0-9a22-4249d09584b3
 keywords: ["AdapterControl routines, requirements", "AdapterControl routines, writing", "adapter objects WDK kernel , writing AdapterControl routines", "DMA transfers WDK kernel , writing AdapterControl routines"]

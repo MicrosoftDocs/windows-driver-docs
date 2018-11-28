@@ -1,6 +1,5 @@
 ---
 title: Access to Scatter/Gather Lists in the ATA Port I/O Model
-author: windows-driver-content
 description: Access to Scatter/Gather Lists in the ATA Port I/O Model
 ms.assetid: 56221602-9588-47f2-acd9-a11bd5ce02d9
 keywords:

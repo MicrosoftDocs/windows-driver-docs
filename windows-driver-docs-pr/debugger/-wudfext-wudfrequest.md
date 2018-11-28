@@ -3,7 +3,6 @@ title: wudfext.wudfrequest
 description: The wudfext.wudfrequest extension displays information about an I/O request.
 ms.assetid: 4812c7bb-0fce-43e1-8f07-e4da9dd0c3bb
 keywords: ["wudfext.wudfrequest Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -16,38 +15,20 @@ ms.localizationpriority: medium
 
 # !wudfext.wudfrequest
 
-
 The **!wudfext.wudfrequest** extension displays information about an I/O request.
 
 ```dbgcmd
 !wudfext.wudfrequest pWDFRequest
-```dbgcmd
+```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
-
 
 <span id="_______pWDFRequest______"></span><span id="_______pwdfrequest______"></span><span id="_______PWDFREQUEST______"></span> *pWDFRequest*   
 Specifies the address of the **WDFIoRequest** interface to display information about. The [**!wudfext.wudfqueue**](-wudfext-wudfqueue.md) extension command determines the address of **WDFIoRequest**.
 
 ### <span id="DLL"></span><span id="dll"></span>DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Unavailable</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Wudfext.dll</p></td>
-</tr>
-</tbody>
-</table>
-
+Wudfext.dll
  
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information

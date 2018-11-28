@@ -1,6 +1,5 @@
 ---
 title: Command String Format
-author: windows-driver-content
 description: Command String Format
 ms.assetid: 3b33b261-08c7-4441-94f5-6c9de53ae349
 keywords:

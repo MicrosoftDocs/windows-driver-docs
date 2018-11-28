@@ -35,9 +35,9 @@ The miniport driver reports the packet coalescing and filtering capabilities of 
 
 
 
-~~~
+
 **Note**  The adapter is required to reject any incoming multicast packet whose destination media access control (MAC) address does not match any of the multicast addresses specified by these OID set requests.
-~~~
+
 
 
 
@@ -123,9 +123,9 @@ The miniport driver reports the packet coalescing and filtering capabilities of 
 
 
 
-~~~
+
 **Note**  If the miniport driver does not set the NDIS\_RECEIVE\_FILTER\_PACKET\_COALESCING\_FILTERS\_ENABLED flag, the driver must set the **SupportedIUdpHeaderFields** member to zero.
-~~~
+
 
 
 

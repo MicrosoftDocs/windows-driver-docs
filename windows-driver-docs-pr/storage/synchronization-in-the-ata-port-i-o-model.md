@@ -1,6 +1,5 @@
 ---
 title: Synchronization in the ATA Port I/O Model
-author: windows-driver-content
 description: Synchronization in the ATA Port I/O Model
 ms.assetid: 91b95588-8cf7-4833-84c2-a991fd066fb2
 keywords:

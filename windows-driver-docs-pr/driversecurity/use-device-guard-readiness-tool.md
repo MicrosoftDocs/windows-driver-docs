@@ -211,9 +211,9 @@ To use Device Guard Readiness Tool, complete the following steps:
     ```
 
 
-~~~
+
 Use the following table to interpret the output and determine what driver code changes are needed to fix the different types of HVCI incompatibilities.
-~~~
+
 
 
 <table>

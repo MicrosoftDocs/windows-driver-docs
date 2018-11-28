@@ -1,6 +1,5 @@
 ---
 title: Driver Registration and Start/Stop Control
-author: windows-driver-content
 description: Driver Registration and Start/Stop Control
 ms.assetid: 66f44703-1277-49fe-a481-c8712172db0f
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Angle
-author: windows-driver-content
 description: Angle
 ms.assetid: a5bc6a00-ca65-4c4b-9372-1d0db8dd7e41
 ms.date: 11/28/2017

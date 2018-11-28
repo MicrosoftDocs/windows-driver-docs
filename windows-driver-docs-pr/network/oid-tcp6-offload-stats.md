@@ -1,6 +1,5 @@
 ---
 title: OID_TCP6_OFFLOAD_STATS
-author: windows-driver-content
 description: This topic describes the OID_TCP6_OFFLOAD_STATS object identifier (OID).
 ms.assetid: d7da8dd0-8de0-4283-9ecf-94e3d1503abe
 keywords:
