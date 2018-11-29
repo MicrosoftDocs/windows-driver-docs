@@ -25,58 +25,18 @@ In the kernel-streaming architecture, topology categories (see [**KSPROPERTY\_TO
 
 The following table lists the topology categories that audio adapters are most likely to use to describe the capabilities of their subdevices.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Category</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>KSCATEGORY_ACOUSTIC_ECHO_CANCEL</p></td>
-<td align="left"><p>An audio device that can perform acoustic echo cancellation (see [DirectSound Capture Effects](directsound-capture-effects.md)) registers itself under this category.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>KSCATEGORY_AUDIO</p></td>
-<td align="left"><p>All audio devices register themselves under this category.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>KSCATEGORY_CAPTURE</p></td>
-<td align="left"><p>An audio device that can capture a data stream registers itself under this category.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>KSCATEGORY_DATATRANSFORM</p></td>
-<td align="left"><p>An audio device that performs a data transformation on a stream registers itself under this category.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>KSCATEGORY_MIXER</p></td>
-<td align="left"><p>An audio device that can mix data streams registers itself under this category.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>KSCATEGORY_RENDER</p></td>
-<td align="left"><p>An audio device that can render a data stream registers itself under this category.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>KSCATEGORY_SYNTHESIZER</p></td>
-<td align="left"><p>An audio device that can convert MIDI messages to either wave audio samples or an analog output signal registers itself under this category (see [Synthesizers and Wave Sinks](synthesizers-and-wave-sinks.md)).</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>KSCATEGORY_TOPOLOGY</p></td>
-<td align="left"><p>A device's [Topology miniport driver](topology-miniport-driver.md) registers itself under this category.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>KSCATEGORY_DRM_DESCRAMBLE</p></td>
-<td align="left"><p>An audio device that can unscramble a DRM-protected wave stream registers itself under this category (see [Digital Rights Management](digital-rights-management.md)).</p></td>
-</tr>
-</tbody>
-</table>
+|Category|Description|
+|--- |--- |
+|KSCATEGORY_ACOUSTIC_ECHO_CANCEL|An audio device that can perform acoustic echo cancellation (see [DirectSound Capture Effects](directsound-capture-effects.md)) registers itself under this category.|
+|KSCATEGORY_AUDIO|All audio devices register themselves under this category.|
+|KSCATEGORY_CAPTURE|An audio device that can capture a data stream registers itself under this category.|
+|KSCATEGORY_DATATRANSFORM|An audio device that performs a data transformation on a stream registers itself under this category.|
+|KSCATEGORY_MIXER|An audio device that can mix data streams registers itself under this category.|
+|KSCATEGORY_RENDER|An audio device that can render a data stream registers itself under this category.|
+|KSCATEGORY_SYNTHESIZER|An audio device that can convert MIDI messages to either wave audio samples or an analog output signal registers itself under this category (see [Synthesizers and Wave Sinks](synthesizers-and-wave-sinks.md)).|
+|KSCATEGORY_TOPOLOGY|A device's [Topology miniport driver](topology-miniport-driver.md) registers itself under this category.|
+|KSCATEGORY_DRM_DESCRAMBLE|An audio device that can unscramble a DRM-protected wave stream registers itself under this category (see [Digital Rights Management](digital-rights-management.md)).|
 
- 
 
 For a complete list of topology categories, see the KSCATEGORY\_*XXX* GUIDs that are defined in the header files Ks.h and Ksmedia.h.
 
@@ -155,11 +115,4 @@ The string name that an **AddInterface** directive specifies for a KSCATEGORY\_*
 ```
 
 For the sake of uniformity, your proprietary driver should assign these same names to its corresponding device interfaces. If your driver supports additional device interfaces that are proprietary, you can invent your own proprietary names for these interfaces. Make sure that the names that the driver uses match those in your INF file. If the strings do not match, system setup will not load the driver.
-
- 
-
- 
-
-
-
 

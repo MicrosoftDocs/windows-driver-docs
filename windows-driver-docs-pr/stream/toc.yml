@@ -1,5 +1,9 @@
 - name: "Streaming media devices design guide"
   href: index.md
+- name: "Device firmware update for USB devices without using a co-installer"
+  href: device-firmware-update-for-usb-devices-without-using-a-co-installer.md
+- name: "USB Video Class (UVC) camera implementation guide"
+  href: uvc-camera-implementation-guide.md
 - name: "Frame Server Custom Media Source"
   href: frame-server-custom-media-source.md
 - name: "360 camera video capture"

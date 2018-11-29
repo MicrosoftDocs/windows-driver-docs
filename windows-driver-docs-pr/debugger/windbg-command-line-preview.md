@@ -31,9 +31,9 @@ This following tables summarizes the available command line options.
 | -c  *"command"* | Executes a command line after the debugger is attached. This command must be enclosed in quotation marks. Multiple commands can be separated with semicolons. |
 |       -v        |                                                            Enables verbose output in the debugger.                                                            |
 |   -T *Title*    |                                                                    Sets the window title.                                                                     |
-| logo *LogFile*  |                                Log Open. Begins logging information to a log file. If the file exists, it will be overwritten.                                |
-| loga *LogFile*  |                               Log Append. Begins logging information to a log file. If the file exists, it will be appended to.                               |
-| e *EventHandle* |                                         Signals the event with the given handle after the next exception in a target.                                         |
+| -logo *LogFile*  |                               Log Open. Begins logging information to a log file. If the file exists, it will be overwritten.                                |
+| -loga *LogFile*  |                              Log Append. Begins logging information to a log file. If the file exists, it will be appended to.                               |
+| -e *EventHandle* |                                         Signals the event with the given handle after the next exception in a target.                                         |
 |       -?        |                                                           Displays a summary of commands available.                                                           |
 
 **Kernel Options**
@@ -72,7 +72,7 @@ Option | Description
 |        -psn *ServiceName*        |                                                                      Specifies the name of the service contained in the process to be debugged. This is used to debug a process that is already running.                                                                      |
 |        -pn *ProcessName*         |                                                                                                               Specifies the name of the process to be debugged.                                                                                                               |
 |          -z *DumpFile*           |                                                                    Specifies the name of a crash dump file to debug. If the path and file name contain spaces, this must be surrounded by quotation marks.                                                                    |
-| openPrivateDumpByHandle *Handle* |                                                                                              *Microsoft internal use only*. Specifies the handle of a crash dump file to debug.                                                                                               |
+| -openPrivateDumpByHandle *Handle* |                                                                                             *Microsoft internal use only*. Specifies the handle of a crash dump file to debug.                                                                                               |
 |    -debugArch x86 -or- amd64     |                                                                                                 Override the autodetect behavior and set the target bitness for the debugger.                                                                                                 |
 
 **Symbol Options**
