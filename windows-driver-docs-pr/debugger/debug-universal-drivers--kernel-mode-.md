@@ -160,6 +160,7 @@ Key=2steg4fzbj2sz.23418vzkd4ko3.1g34ou07z4pev.1sp3yo9yz874p
 > [!IMPORTANT]
 > Before using BCDEdit to change boot information you may need to temporarily suspend Windows security features such as BitLocker and Secure Boot on the test PC.
 > Re-enable these security features when testing is complete and appropriately manage the test PC, when the security features are disabled.
+>
 
 5. Type this command to confirm that the dbgsettings are set properly.
 
@@ -422,15 +423,17 @@ To install the driver on the target system, perform the following steps.
 
     ![windows security warning - windows can't verify the publisher](images/debuglab-image-install-security-warning.png)
 
-    [!TIP] If you have any issues with the installation, check the following file for more information.
-    `%windir%\\inf\\setupapi.dev.log`
- 
+    >[!TIP]
+    > If you have any issues with the installation, check the following file for more information.
+    `%windir%\inf\setupapi.dev.log`
+    >
+     
     For more detailed instructions, see [Configuring a Computer for Driver Deployment, Testing, and Debugging](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/provision-a-target-computer-wdk-8-1).
 
     The INF file contains the hardware ID for installing the *tabletaudiosample.sys*. For the Syvad sample, the hardware ID is:
-    `root\\sysvad\_TabletAudioSample`
+    `root\sysvad_TabletAudioSample`
 
-    On the target computer, open a Command Prompt window as Administrator. Navigate to your driver package folder, and enter the following command: `devcon status root\\sysvad\_TabletAudioSample`
+    On the target computer, open a Command Prompt window as Administrator. Navigate to your driver package folder, and enter the following command: `devcon status root\sysvad_TabletAudioSample`
        
     Status information is displayed durring the devcon install.
 
@@ -633,7 +636,7 @@ For more information about the device node debug extension, see [**!devnode**](-
 
    ![find dialog box showing the term sysvad being searched for](images/sysvad-lab-audio-find-dialog.png)
 
-   A device node entry with a name of sysvad\_TabletAudioSample will be present in the !devnode output for Syvad.
+   A device node entry with a name of `sysvad_TabletAudioSample` will be present in the !devnode output for Syvad.
 
    ```dbgcmd
      DevNode 0xffffe00086e68190 for PDO 0xffffe00089c575a0
@@ -645,7 +648,7 @@ For more information about the device node debug extension, see [**!devnode**](-
 
    Note that the PDO address and the DevNode address are displayed.
 
-3. Use the **!devnode 0 1 sysvad\_TabletAudioSample** command to display Plug and Play information associated with our Sysvad device driver.
+3. Use the `!devnode 0 1 sysvad_TabletAudioSample` command to display Plug and Play information associated with our Sysvad device driver.
 
    ```dbgcmd 
    0: kd> !devnode 0 1 sysvad_TabletAudioSample
@@ -703,7 +706,7 @@ For more information about the device node debug extension, see [**!devnode**](-
    Device queue is not busy.
    ```
 
-5. The output displayed in the **!devobj** command includes the name of the attached device: *\\Driver\\sysvad\_tabletaudiosample*. Use the **!drvobj** command with a bit mask of 2, to display information associated with the attached device.
+5. The output displayed in the **!devobj** command includes the name of the attached device: \\Driver\\sysvad\_tabletaudiosample. Use the **!drvobj** command with a bit mask of 2, to display information associated with the attached device.
 
    ```dbgcmd 
    0: kd> !drvobj \Driver\sysvad_tabletaudiosample 2

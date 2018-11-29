@@ -66,8 +66,6 @@ After you review the sample adapter driver and start to design your WaveRT minip
     -   Global effects (GFX) APOs
 
         GFX APOs perform hardware-specific processing of an audio stream. A GFX APO is tied to a particular audio device by the INF file that installs the device. The effect of a GFX APO is global because it affects the global mix that plays through the audio device.
-
-        **Note**   Windows Vista and later operating systems provide a set of APOs as part of the operating system. You can, however develop your own APOs to replace the system-supplied ones. For more information, see [System Effects Audio Processing Objects](system-effects-audio-processing-objects.md).
     
     Global mixing is performed by the audio engine, which is the user-mode system component that is responsible for mixing the audio streams from all audio applications. Typically, the audio engine is the client that directly exchanges data with the WaveRT audio device through the cyclic buffer.
 

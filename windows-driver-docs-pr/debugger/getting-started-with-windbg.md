@@ -29,7 +29,7 @@ After you have installed the debugging tools, locate the installation directorie
 
 4.  Near the bottom of the WinDbg window, in the command line, enter this command:
 
-    [.sympath srv\*](https://go.microsoft.com/fwlink/p?linkid=399238).
+    [.sympath srv\*](https://go.microsoft.com/fwlink/p?linkid=399238)
 
     The output is similar to this:
 
