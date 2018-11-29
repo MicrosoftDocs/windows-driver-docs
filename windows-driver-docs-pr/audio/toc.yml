@@ -944,6 +944,22 @@
       href: pkey-audioengine-oemformat.md
     - name: "PKEY_AudioEngine_OEMPeriod"
       href: pkey-audioengine-oemperiod.md
+    - name: "PKEY_CompositeFX_EndpointEffectClsid"
+      href: pkey-compositefx-endpointeffectclsid.md
+    - name: "PKEY_CompositeFX_KeywordDetector_EndpointEffectClsid"
+      href: pkey-compositefx-keyworddetector-endpointeffectclsid.md
+    - name: "PKEY_CompositeFX_KeywordDetector_ModeEffectClsid"
+      href: pkey-compositefx-keyworddetector-modeeffectclsid.md
+    - name: "PKEY_CompositeFX_KeywordDetector_StreamEffectClsid"
+      href: pkey-compositefx-keyworddetector-streameffectclsid.md
+    - name: "PKEY_CompositeFX_ModeEffectClsid"
+      href: pkey-compositefx-modeeffectclsid.md
+    - name: "PKEY_CompositeFX_Offload_ModeEffectClsid"
+      href: pkey-compositefx-offload-modeeffectclsid.md
+    - name: "PKEY_CompositeFX_Offload_StreamEffectClsid"
+      href: pkey-compositefx-offload-streameffectclsid.md
+    - name: "PKEY_CompositeFX_StreamEffectClsid"
+      href: pkey-compositefx-streameffectclsid.md
     - name: "PKEY_FX_KeywordDetector_StreamEffectClsid"
       href: pkey-fx-keyworddetector-streameffectclsid.md
     - name: "PKEY_FX_KeywordDetector_ModeEffectClsid"
