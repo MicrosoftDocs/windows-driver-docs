@@ -101,7 +101,7 @@ For details about the fields in the request, see [ShippingLabel resource](get-sh
 #### Points to remember when creating shipping labels
 
 - When publishing to Windows Update (*destination* is **windowsUpdate**), you must include a [publishingSpecifications](get-shipping-labels.md#publishing-specifications-object) object. For automatic installs (*isAutoInstallDuringOSUpgrade* or *isAutoInstallOnApplicableSystems* is true), you must set  *additionalInfoForMsApproval*.
-
+- if in the shipping label *isAutoInstallDuringOSUpgrade* or *isAutoInstallOnApplicableSystems* is true, then the driver will be published with "May request user input" set to false
 - When sharing with other partners  (*destination* is **anotherPartner**), you must include the [recipientSpecifications](get-shipping-labels.md#recipient-specifications-object) object.
 
 #### Populating targeting information
