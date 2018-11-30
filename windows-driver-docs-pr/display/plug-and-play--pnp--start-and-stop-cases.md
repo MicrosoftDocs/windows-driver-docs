@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # Plug and Play (PnP) in WDDM 1.2 and later
 
 
-All Windows Display Driver Model (WDDM) 1.2 and later display miniport drivers must support the following behavior in response to start and stop requests by the Plug and Play (PnP) infrastructure. Behavior can differ depending on whether the driver returns a success or failure code, or whether the system hardware is based on the basic input/output system (BIOS) or Unified Extensible Firmware Interface (UEFI).
+All Windows Display Driver Model (WDDM) 1.2 and later display miniport drivers must support the following behavior in response to start and stop requests by the Plug and Play (PnP) infrastructure. Behavior can differ depending on whether the driver returns a success or failure code, or whether the system hardware is based on the basic input/output system (BIOS) or Unified Extensible Firmware Interface (UEFI). 
 
 <table>
 <colgroup>
