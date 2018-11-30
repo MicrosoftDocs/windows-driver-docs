@@ -18,7 +18,7 @@ In Windows 7 and Windows Server 2008 R2 and later, NDIS may participate in th
 -   The operating system is Windows 7, and the hotfix for KB2471472 has been installed.
 -   The operating system is Windows 7, and the network adapter is a mobile broadband (MBB) device.
 
-If none of these conditions is met, NDIS participates in the surprise removal process as it did in previous versions of Windows. For more information about this procedure, see [Processing the Surprise Removal of a NIC (Windows Vista)](processing-the-surprise-removal-of-a-nic--windows-vista-.md).
+If none of these conditions are met, NDIS participates in the surprise removal process as it did in previous versions of Windows. For more information about this procedure, see [Processing the Surprise Removal of a NIC (Windows Vista)](processing-the-surprise-removal-of-a-nic--windows-vista-.md).
 
 The following steps describe the revised way in which NDIS participates in the surprise removal of a NIC:
 
