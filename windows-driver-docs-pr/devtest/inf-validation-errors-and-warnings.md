@@ -8,46 +8,51 @@ ms.localizationpriority: medium
 
 # INF Validation Errors and Warnings
 
-
 This topic describes driver installation errors and warnings that can appear as a result of the automatic INF verification that Microsoft Visual Studio performs, or when you run the [InfVerif](infverif.md) tool.
 
 Starting in Visual Studio 2015 with WDK 10, when you build your driver, the following INF file errors can appear in the Error List pane. If you are running InfVerif.exe from the command line, the tool displays these errors at the command prompt, or in the HTML version of the results.
 
 ## Error Guidance
+
 InfVerif follows a general rule that the lower the error number, the more severe the issue.
 Most error codes can be either a warning or an error depending on the arguments supplied to InfVerif.
 
 ### Handling Errors
+
 You must fix all errors in order to pass driver tests on the Hardware Dev Center dashboard. Errors are related to the following conditions:
--   The INF parser is unable to successfully interpret your INF
--   The INF parser is able to interpret the INF only by making a default value assumption (ambiguous syntax)
--   The arguments to InfVerif indicate that a rule set should be applied to the INF (such as Universal)
+
+- The INF parser is unable to successfully interpret your INF
+- The INF parser is able to interpret the INF only by making a default value assumption (ambiguous syntax)
+- The arguments to InfVerif indicate that a rule set should be applied to the INF (such as Universal)
 
 While you don't need to fix warnings before submitting your driver on the Dev Center, we recommend taking the time to understand the issue being reported. If you don't understand a given warning, your INF might not always behave as you expect.
 
 Warnings are typically related to:
--   Syntax that may be incorrect, but has valid scenarios where it is appropriate
--   Syntax that is valid for the given InfVerif parameters but is an error in other modes, such as Universal
+
+- Syntax that may be incorrect, but has valid scenarios where it is appropriate
+- Syntax that is valid for the given InfVerif parameters but is an error in other modes, such as Universal
 
 Issues related to the Universal setting appear as errors if:
-    -   In Visual Studio, you build your driver with target platform set to **Universal** or **Mobile**.
-    -   You run InfVerif.exe from the command line and specify the /u flag.
+
+- In Visual Studio, you build your driver with target platform set to **Universal** or **Mobile**.
+- You run InfVerif.exe from the command line and specify the /u flag.
 
 Issues related to the Universal setting appear as warnings if:
-    -   In Visual Studio, you build your driver with target platform set to **Desktop**.
-    -   You run InfVerif.exe from the command line and do not specify the /u flag.
+
+- In Visual Studio, you build your driver with target platform set to **Desktop**.
+- You run InfVerif.exe from the command line and do not specify the /u flag.
 
 ## Error Codes
 
 Error codes come in the following classifications:
 
--   [Syntax in the INF file (1100-1299)](#err-11xx)
--   [Universal INF (1300-1319)](#err-130x)
--   [Installation (2000-2999)](#warning-2xxx)
+- [Syntax in the INF file (1100-1299)](#syntax-in-the-inf-file-(1100-1299))
+- [Universal INF (1300-1319)](#universal-inf-(1300-1319))
+- [Installation (2000-2999)](#installation-(2000-2999))
 
 Not all error codes are listed below, as many have self-evident meanings. Errors in the 1000-1099 range are considered self-evident, as they are basic syntax errors.
 
-## Syntax in the INF file (1100-1299)<a name="err-11xx"></a>
+## Syntax in the INF file (1100-1299)
 
 While InfVerif failure means driver submission failure, driver installation may still succeed.
 This is because when you install a driver, if errors are present in the INF file, Windows also tries the default value for the setting.
@@ -55,22 +60,16 @@ Windows does not fail driver installation due to errors in this range, but error
 In cases where the driver installs successfully, these errors indicate that there *are* circumstances where the driver may not install properly.
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
-<tr class="header">
-<th align="left">Error Code</th>
-<th align="left">Description</th>
+<tr>
+<th>Error Code</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
-<tr class="even">
-<td align="left"><p><span id="_1100__DrvStore_CopyFile"></span><span id="_1100__drvstore_copyfile"></span><span id="_1100__DRVSTORE_COPYFILE"></span> <strong>1100: DriverStore Copyfile name mismatch</strong></p></td>
-<td align="left">
-<p>This error occurs when a file is copied or renamed from its original driver store name and location to a different name and location in the driver store.  For example:</p>
-<div class="code">
+<tr>
+<td><strong>1100: DriverStore Copyfile name mismatch</strong></td>
+<td>This error occurs when a file is copied or renamed from its original driver store name and location to a different name and location in the driver store.  For example:
 <pre>
 [SourceDisksFiles]
 DriverFile.sys=1,x64  
@@ -81,32 +80,29 @@ CopyFileSection=13,SubDirectory
 [CopyFileSection]
 DriverFile.sys
 </pre>
-</div>
-<p>The driver store maintains the original driver package directory structure.  In the code above, the original location of DriverFile.sys is <i>INF location</i>\x64, but the CopyFiles directive places it in <i>INF location</i>\SubDirectory.  The same error would be shown if the file was renamed as part of the copy.</p>
-</td>
+The driver store maintains the original driver package directory structure.  In the code above, the original location of DriverFile.sys is <i>INF location</i>\x64, but the CopyFiles directive places it in <i>INF location</i>\SubDirectory.  The same error would be shown if the file was renamed as part of the copy.</td>
 </tr>
-    
-<tr class="odd">
-<td align="left"><p><span id="_1203__Section_not_found"></span><span id="_1203__section_not_found"></span><span id="_1203__SECTION_NOT_FOUND"></span> <strong>1203: Section not found</strong></p></td>
-<td align="left"><p>For example, the following INF syntax causes error 1203:</p>
-<div class="code">
+<tr>
+<td><strong>1203: Section not found</strong></td>
+<td>For example, the following INF syntax causes error 1203:
 <pre>
 [MyInstallSection]
 CopyFiles=driverFile.sys
 </pre>
-</div>
-<p>This error is reported because the <strong>CopyFiles</strong> directive expects a section name (that specifies the list of files to copy). However, the <strong>CopyFiles</strong> directive can specify a file name. To differentiate between a section name and a file name, preface a file name with the @ token as shown here:</p>
-<div class="code">
+This error is reported because the <strong>CopyFiles</strong> directive expects a section name (that specifies the list of files to copy). However, the <strong>CopyFiles</strong> directive can specify a file name. To differentiate between a section name and a file name, preface a file name with the @ token as shown here:
 <pre>
 [MyInstallSection]
 CopyFiles=@driverFile.sys
 </pre>
-</div></td>
+</td>
 </tr>
-<tr class="even">
-<td align="left"><p><span id="1204__Provider_cannot_be_Microsoft"></span><span id="1204__provider_cannot_be_microsoft"></span><span id="1204__PROVIDER_CANNOT_BE_MICROSOFT"></span><strong>1204: Provider cannot be Microsoft</strong></p></td>
-<td align="left"><p>The Provider field in the [Version] section cannot specify Microsoft.</p>
-<div class="code">
+<tr>
+<td><strong>1205: Section [Driver_files] referenced from [Directive1] and [Directive2] directive</td>
+<td>This warning is generated whenever two different directives point to the same section.</td>
+</tr>
+<tr>
+<td><strong>1204: Provider cannot be Microsoft</strong></td>
+<td>The Provider field in the [Version] section cannot specify Microsoft.
 <pre>
 [Version]
 Signature="$Windows NT$"
@@ -114,18 +110,16 @@ Class=Sample
 ClassGuid={78A1C341-4539-11d3-B88D-00C04FAD5171}
 Provider="Microsoft"
 </pre>
-</div></td>
-</tr>
-
-<tr class="odd">
-<td align="left"><p><span id="1212__invalid_section"></span><span id="1212_INVALID_SECTION"></span><strong>1212: Cannot have both [DefaultInstall] and [Manufacturer]</strong></p></td>
-<td align="left"><p>A single INF cannot contain both [DefaultInstall] and [Manufacturer].  INFs authored with both should remove one of the two sections.</p>
 </td>
 </tr>
-
-<tr class="even">
-<td align="left"><p><span id="1220__Cannot_directly_reference_a_section_defined_in_an_included_INF"></span><span id="1220__cannot_directly_reference_a_section_defined_in_an_included_inf"></span><span id="1220__CANNOT_DIRECTLY_REFERENCE_A_SECTION_DEFINED_IN_AN_INCLUDED_INF"></span><strong>1220: Cannot directly reference a section defined in an included INF</strong></p></td>
-<td align="left"><p>If your INF file references a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547344" data-raw-source="[DDInstall](https://msdn.microsoft.com/library/windows/hardware/ff547344)">DDInstall</a> section in an included INF, you must use the <strong>Needs</strong> directive. Any other directive that references a section from an included INF causes error 1220.</p>
+<tr>
+<td><strong>1212: Cannot have both [DefaultInstall] and [Manufacturer]</strong></td>
+<td>A single INF cannot contain both [DefaultInstall] and [Manufacturer].  INFs authored with both should remove one of the two sections.
+</td>
+</tr>
+<tr>
+<td><strong>1220: Cannot directly reference a section defined in an included INF</strong></td>
+<td>If your INF file references a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547344">DDInstall</a> section in an included INF, you must use the <strong>Needs</strong> directive. Any other directive that references a section from an included INF causes error 1220.
 <p>In this example, the install section of A.INF references an equivalent install section in B.INF.</p>
 <p>A.INF contains:</p>
 <div class="code">
@@ -140,9 +134,7 @@ AddReg = AddRegB ; WARNING 1220
 Include = B.INF
 Needs = InstallSectionB.Services
 </pre>
-</div>
 <p>B.INF contains:</p>
-<div class="code">
 <pre>
 B.INF
 [InstallSectionB]
@@ -218,7 +210,7 @@ HKR,,DllPath,%%SystemRoot%%\System32\myDll.sys
 </tbody>
 </table>
 
-## Universal INF (1300-1319) <a name="err-130x"></a>
+## Universal INF (1300-1319)
 
 >[!IMPORTANT]
 >Your driver INF file is universal if you do not get any errors or warnings with error number in the range 13*xx*.
@@ -287,8 +279,7 @@ AddReg = HKR,,CoInstallers32,0x00010000,"MyCoinstaller.dll"
 </tbody>
 </table>
 
-
-## Installation (2000-2999) <a name="warning-2xxx"></a>
+## Installation (2000-2999)
 
 
 Issues in the 2000-2999 range appear as warnings. Possible values include the following.
