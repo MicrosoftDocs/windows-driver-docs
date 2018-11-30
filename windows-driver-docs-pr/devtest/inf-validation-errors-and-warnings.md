@@ -97,10 +97,6 @@ CopyFiles=@driverFile.sys
 </td>
 </tr>
 <tr>
-<td><strong>1205: Section [Driver_files] referenced from [Directive1] and [Directive2] directive</td>
-<td>This warning is generated whenever two different directives point to the same section.</td>
-</tr>
-<tr>
 <td><strong>1204: Provider cannot be Microsoft</strong></td>
 <td>The Provider field in the [Version] section cannot specify Microsoft.
 <pre>
@@ -111,6 +107,10 @@ ClassGuid={78A1C341-4539-11d3-B88D-00C04FAD5171}
 Provider="Microsoft"
 </pre>
 </td>
+</tr>
+<tr>
+<td><strong>1205: Section [Driver_files] referenced from [Directive1] and [Directive2] directive</td>
+<td>This warning is generated whenever two different directives point to the same section.</td>
 </tr>
 <tr>
 <td><strong>1212: Cannot have both [DefaultInstall] and [Manufacturer]</strong></td>
@@ -148,65 +148,53 @@ AddReg = AddRegB
 </div>
 <p>The <strong>Needs</strong> directive must reference an equivalent install section to process in the current install section. For example, a Needs directive in [InstallSectionA.Services] should point to the .Services of another install section. The <strong>Needs</strong> directive may also be used to include the behavior of another DDInstall section of the same INF. Using the <strong>Needs</strong> directive on other types of sections may result in undesired behavior.</p></td>
 </tr>
-
-<tr class="odd">
-<td align="left"><p><span id="1221__Cannot_modify_services_regkey__must_use_HKR"></span><span id="1221__cannot_modify_services_regkey__must_use_hkr"></span><span id="1221__CANNOT_MODIFY_SERVICES_REGKEY__MUST_USE_HKR"></span><strong>1221: Cannot modify services regkey, must use HKR</strong></p></td>
-<td align="left"><p>This error indicates that the INF file references a location in the services registry key, for example <strong>HKLM\SYSTEM\CurrentControlSet\Services&lt;em&gt;Service Name</em></strong>. When accessing the services key, you should instead use the relative root (<strong>HKR</strong>) to associate the registry value with the device or driver instance.</p>
+<tr>
+<td><strong>1221: Cannot modify services regkey, must use HKR</strong></td>
+<td>This error indicates that the INF file references a location in the services registry key, for example <strong>HKLM\SYSTEM\CurrentControlSet\Services&lt;em&gt;Service Name</em></strong>. When accessing the services key, you should instead use the relative root (<strong>HKR</strong>) to associate the registry value with the device or driver instance.
 <p>When you use <strong>HKR</strong>, the registry value will not be present until the device is installed.</p></td>
 </tr>
-<tr class="even">
-<td align="left"><p><span id="1230__missing_file_under_sourcedisksfiles_section_"></span><span id="1230__missing_file_under_sourcedisksfiles_section_"></span><span id="1230__MISSING_FILE_UNDER_SOURCEDISKSFILES_SECTION_"></span><strong>1230: Missing file &#39;xxxx&#39; under [SourceDisksFiles] section.</strong></p></td>
-<td align="left"><p>This indicates that a file was specified as part of the driver package, but the source location of the file relative to the INF was not specified in a [SourceDisksFiles] section.</p>
-<div class="code">
+<tr>
+<td><strong>1230: Missing file &#39;xxxx&#39; under [SourceDisksFiles] section.</strong></td>
+<td>This indicates that a file was specified as part of the driver package, but the source location of the file relative to the INF was not specified in a [SourceDisksFiles] section.
 <pre>
 [SourceDisksFiles]
 filename=disk id
 </pre>
-</div>
-<p>Note that this error frequently occurs if architecture-decorated versions of [SourceDisksFiles] are specified (such as [SourceDisksFiles.amd64], but not all architectures supported by the INF have a [SourceDisksFiles] section.</p></td>
+Note that this error frequently occurs if architecture-decorated versions of [SourceDisksFiles] are specified (such as [SourceDisksFiles.amd64], but not all architectures supported by the INF have a [SourceDisksFiles] section.</td>
 </tr>
-
-<tr class="odd">
-<td align="left"><p><span id="1233__Missing_directive_required_for_signature"></span><span id="1233__missing_directive_required_for_signature"></span><span id="1233__MISSING_DIRECTIVE_REQUIRED_FOR_SIGNATURE"></span><strong>1233: Missing directive required for signature</strong></p></td>
-<td align="left"><p>In the [Version] section, you must specify a CatalogFile directive (and associated catalog file) to receive a signature on a driver package.</p>
-<div class="code">
+<tr>
+<td><strong>1233: Missing directive required for signature</strong></td>
+<td>In the [Version] section, you must specify a CatalogFile directive (and associated catalog file) to receive a signature on a driver package.
 <pre>
 CatalogFile=wudf.cat
 </pre>
-</div></td>
+</td>
 </tr>
-
-<tr class="even">
-<td align="left"><p><span id="1235__String_token_not_defined_in__Strings_"></span><span id="1235__string_token_not_defined_in__strings_"></span><span id="1235__STRING_TOKEN_NOT_DEFINED_IN__STRINGS_"></span><strong>1235: String token not defined in [Strings]</strong></p></td>
-<td align="left"><p>A specified string token has no definition in the [Strings] section. For example, the INF file specifies <em>%REG_DWORD%</em> in an <em>add-registry section</em> specified by an <a href="https://msdn.microsoft.com/library/windows/hardware/ff546320" data-raw-source="[&lt;strong&gt;AddReg&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff546320)"><strong>AddReg</strong></a> directive, but there is no corresponding REG_DWORD = 0x00010001 in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547485" data-raw-source="[[Strings]](https://msdn.microsoft.com/library/windows/hardware/ff547485)">[Strings]</a> section.</p>
+<tr>
+<td><strong>1235: String token not defined in [Strings]</strong></td>
+<td>A specified string token has no definition in the [Strings] section. For example, the INF file specifies <em>%REG_DWORD%</em> in an <em>add-registry section</em> specified by an <a href="https://msdn.microsoft.com/library/windows/hardware/ff546320"><strong>AddReg</strong></a> directive, but there is no corresponding REG_DWORD = 0x00010001 in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547485">[Strings]</a> section.
 <p>This error frequently occurs if your INF file specifies a registry value that contains an environment variable. For example:</p>
-<div class="code">
 <pre>
 [MyAddReg]
 HKR,,DllPath,%SystemRoot%\System32\myDll.sys
 </pre>
-</div>
-<p>This line causes the INF parser to attempt to locate the token &quot;SystemRoot&quot; from the [Strings] section, rather than the intended behavior of storing the literal &quot;%SystemRoot%&quot; in the registry.  To use the literal value %SystemRoot% rather than perform a string replacement, use the escape sequence %%.</p>
-<div class="code">
+This line causes the INF parser to attempt to locate the token &quot;SystemRoot&quot; from the [Strings] section, rather than the intended behavior of storing the literal &quot;%SystemRoot%&quot; in the registry.  To use the literal value %SystemRoot% rather than perform a string replacement, use the escape sequence %%.
 <pre>
 [MyAddReg]
 HKR,,DllPath,%%SystemRoot%%\System32\myDll.sys
 </pre>
-</div></td>
-</tr>
-
-<tr class="odd">
-<td align="left"><p><span id="1285__invalid_classinstall32_"></span><span id="1285__INVALID_CLASSINSTALL32_"></span><strong>1285: Cannot specify [ClassInstall32] section for Microsoft-defined class.</strong></p></td>
-<td align="left"><p>As of Windows 10, IHV-supplied INFs are not allowed to use a [ClassInstall32] in an INF of any Microsoft-defined class.</p>
 </td>
 </tr>
-
-<tr class="even">
-<td align="left"><p><strong>1296: Specified service not associated with hardware</strong></p></td>
-<td align="left"><p>This warning appears starting in Windows 10, version 1809, and indicates that the hardware does not have an associated service using the specified install section.</p>
+<tr>
+<td><strong>1285: Cannot specify [ClassInstall32] section for Microsoft-defined class.</strong></td>
+<td>As of Windows 10, IHV-supplied INFs are not allowed to use a [ClassInstall32] in an INF of any Microsoft-defined class.
 </td>
 </tr>
-
+<tr>
+<td><strong>1296: Specified service not associated with hardware</strong></td>
+<td>This warning appears starting in Windows 10, version 1809, and indicates that the hardware does not have an associated service using the specified install section.
+</td>
+</tr>
 </tbody>
 </table>
 
@@ -218,104 +206,89 @@ HKR,,DllPath,%%SystemRoot%%\System32\myDll.sys
 The following errors and warnings are related to INF configurability:
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
-<tr class="header">
-<th align="left">Error/Warning Code</th>
-<th align="left">Description</th>
+<tr>
+<th>Error/Warning Code</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td align="left"><p><span id="1300__Found_legacyXxx"></span><span id="1300__found_legacyxxx"></span><span id="1300__FOUND_LEGACYXXX"></span><strong>1300: Found legacy</strong><em>Xxx</em></p></td>
-<td align="left"><p>You&#39;ll see this error if you use deprecated sections or directives such as <a href="https://msdn.microsoft.com/library/windows/hardware/ff547448" data-raw-source="[&lt;strong&gt;LogConfig&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff547448)"><strong>LogConfig</strong></a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff547321" data-raw-source="[&lt;strong&gt;DDInstall.CoInstallers&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff547321)"><strong>DDInstall.CoInstallers</strong></a>.</p></td>
+<tr>
+<td><strong>1300: Found legacy</strong><em>Xxx</em></td>
+<td>You will see this error if you use deprecated sections or directives such as <a href="https://msdn.microsoft.com/library/windows/hardware/ff547448"><strong>LogConfig</strong></a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff547321"><strong>DDInstall.CoInstallers</strong></a>.</td>
 </tr>
-<tr class="even">
-<td align="left"><p><span id="1301__Found_legacyXxxoperationXxx"></span><span id="1301__found_legacyxxxoperationxxx"></span><span id="1301__FOUND_LEGACYXXXOPERATIONXXX"></span><strong>1301: Found legacy</strong><em>Xxx</em><strong>operation</strong><em>Xxx</em></p></td>
-<td align="left"><p>You&#39;ll see this error if you use deprecated sections or directives such as <a href="https://msdn.microsoft.com/library/windows/hardware/ff547448" data-raw-source="[&lt;strong&gt;LogConfig&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff547448)"><strong>LogConfig</strong></a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff547321" data-raw-source="[&lt;strong&gt;DDInstall.CoInstallers&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff547321)"><strong>DDInstall.CoInstallers</strong></a>.</p></td>
+<tr>
+<td><strong>1301: Found legacy</strong><em>Xxx</em><strong>operation</strong><em>Xxx</em></td>
+<td>You will see this error if you use deprecated sections or directives such as <a href="https://msdn.microsoft.com/library/windows/hardware/ff547448"><strong>LogConfig</strong></a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff547321"><strong>DDInstall.CoInstallers</strong></a>.</td>
 </tr>
-<tr class="odd">
-<td align="left"><p><span id="1302__Found_legacyXxxoperation_forXxx"></span><span id="1302__found_legacyxxxoperation_forxxx"></span><span id="1302__FOUND_LEGACYXXXOPERATION_FORXXX"></span><strong>1302: Found legacy</strong><em>Xxx</em><strong>operation for</strong><em>Xxx</em></p></td>
-<td align="left"><p>This error occurs when the operation affects something external to the driver package, like deleting a service or deleting a file.</p></td>
+<tr>
+<td><strong>1302: Found legacy</strong><em>Xxx</em><strong>operation for</strong><em>Xxx</em></td>
+<td>This error occurs when the operation affects something external to the driver package, like deleting a service or deleting a file.</td>
 </tr>
-<tr class="even">
-<td align="left"><p><span id="1303__Found_legacy_operation_defining_co-installers"></span><span id="1303__found_legacy_operation_defining_co-installers"></span><span id="1303__FOUND_LEGACY_OPERATION_DEFINING_CO-INSTALLERS"></span><strong>1303: Found legacy operation defining co-installers</strong></p></td>
-<td align="left"><p>Error 1303 indicates that an AddReg operation is specifying a coinstaller. For example:</p>
-<div class="code">
+<tr>
+<td><strong>1303: Found legacy operation defining co-installers</strong></td>
+<td>Error 1303 indicates that an AddReg operation is specifying a coinstaller. For example:
 <pre>
 AddReg = HKR,,CoInstallers32,0x00010000,"MyCoinstaller.dll"
 </pre>
-</div></td>
+</td>
 </tr>
-<tr class="odd">
-<td align="left"><p><span id="1304__Found_legacy_operation_using_non-relative_key"></span><span id="1304__found_legacy_operation_using_non-relative_key"></span><span id="1304__FOUND_LEGACY_OPERATION_USING_NON-RELATIVE_KEY"></span><strong>1304: Found legacy operation using non-relative key</strong></p></td>
-<td align="left"><p>Error 1304 indicates that a registry operation uses a registry root other than HKR.</p></td>
+<tr>
+<td><strong>1304: Found legacy operation using non-relative key</strong></td>
+<td>Error 1304 indicates that a registry operation uses a registry root other than HKR.</td>
 </tr>
-<tr class="even">
-<td align="left"><p><span id="1305__Found_legacy_operation_using_appendable_multi-sz_value"></span><span id="1305__found_legacy_operation_using_appendable_multi-sz_value"></span><span id="1305__FOUND_LEGACY_OPERATION_USING_APPENDABLE_MULTI-SZ_VALUE"></span><strong>1305: Found legacy operation using appendable multi-sz value</strong></p></td>
-<td align="left"><p>Error 1305 indicates that the INF deletes a value from a <strong>REG_MULTI_SZ</strong> or appends a value to an existing <strong>REG_MULTI_SZ</strong>.</p></td>
+<tr>
+<td><strong>1305: Found legacy operation using appendable multi-sz value</strong></td>
+<td>Error 1305 indicates that the INF deletes a value from a <strong>REG_MULTI_SZ</strong> or appends a value to an existing <strong>REG_MULTI_SZ</strong>.</td>
 </tr>
-<tr class="odd">
-<td align="left"><p><span id="1306__Found_legacy_operation_with_non-system_target_path_"></span><span id="1306__found_legacy_operation_with_non-system_target_path_"></span><span id="1306__FOUND_LEGACY_OPERATION_WITH_NON-SYSTEM_TARGET_PATH_"></span><strong>1306: Found legacy operation with non-system target path</strong></p></td>
-<td align="left"><p>Error 1306 indicates that a file copy specifies a target that is not under %SystemRoot%.</p></td>
+<tr>
+<td><strong>1306: Found legacy operation with non-system target path</strong></td>
+<td>Error 1306 indicates that a file copy specifies a target that is not under %SystemRoot%.</td>
 </tr>
-    
-<tr class="even">
-<td align="left"><p><span id="1310_needs_extension_"></span><span id="1310_NEEDS_EXTENSION_"></span><strong>1310-1312: Incorrect section extension for a Needs directive</strong></p></td>
-<td align="left"><p>Needs directives effectively do a copy/paste of the needed section into the referencing section.  As a baseline validation, InfVerif compares the extension of the section.  This means that a [DDInstall.Services] can only use the Needs directive on other [DDInstall.Services] sections.</p></td>
+<tr>
+<td><strong>1310-1312: Incorrect section extension for a Needs directive</strong></td>
+<td>Needs directives effectively do a copy/paste of the needed section into the referencing section.  As a baseline validation, InfVerif compares the extension of the section.  This means that a [DDInstall.Services] can only use the Needs directive on other [DDInstall.Services] sections.</td>
 </tr>
-
-<tr class="odd">
-<td align="left"><p><span id="1313_missing_includes_"></span><span id="1313_MISSING_INCLUDES_"></span><strong>1313-1314: Missing includes directive</strong></p></td>
-<td align="left"><p>In each section that uses a Needs directive, there must be a corresponding Includes directive to reference the INF that contains the target section.  Previously the Needs directive would be valid if the Include directive was in another INF section.</p></td>
+<tr>
+<td><strong>1313-1314: Missing includes directive</strong></td>
+<td>In each section that uses a Needs directive, there must be a corresponding Includes directive to reference the INF that contains the target section.  Previously the Needs directive would be valid if the Include directive was in another INF section.</td>
 </tr>
-<tr class="even">
-<td align="left"><p><span id="133x_functional_errors_"></span><span id="133x_FUNCTIONAL_ERRORS_"></span><strong>133x: Functional errors</strong></p></td>
-<td align="left"><p>Multiple registry sections write to a single global key. For example, different sections could have a service set to different service configuations, a global registry key set to different data values, or a destination file pointing to different source files.</p></td>
+<tr>
+<td><strong>133x: Functional errors</strong></td>
+<td>Multiple registry sections write to a single global key. For example, different sections could have a service set to different service configurations, a global registry key set to different data values, or a destination file pointing to different source files.</td>
 </tr>
 </tbody>
 </table>
 
 ## Installation (2000-2999)
 
-
 Issues in the 2000-2999 range appear as warnings. Possible values include the following.
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
-<tr class="header">
-<th align="left">Error Code</th>
-<th align="left">Description</th>
+<tr>
+<th>Error Code</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td align="left"><p><span id="2083__Section_not_referenced_or_used_"></span><span id="2083__section_not_referenced_or_used_"></span><span id="2083__SECTION_NOT_REFERENCED_OR_USED_"></span><strong>2083: Section not referenced or used</strong></p></td>
-<td align="left"><p>This warning indicates that the INF file provides a section that is not referenced. When the driver is installed, the contents of the section referenced in the warning are not evaluated.</p></td>
+<tr>
+<td><strong>2083: Section not referenced or used</strong></td>
+<td>This warning indicates that the INF file provides a section that is not referenced. When the driver is installed, the contents of the section referenced in the warning are not evaluated.</td>
 </tr>
-<tr class="even">
-<td align="left"><p><span id="2222__Legacy_directive_will_be_ignored."></span><span id="2222__legacy_directive_will_be_ignored."></span><span id="2222__LEGACY_DIRECTIVE_WILL_BE_IGNORED."></span><strong>2222: Legacy directive will be ignored.</strong></p></td>
-<td align="left"><p>This warning indicates that the INF specifies a deprecated directive. When the driver is installed, the directive referencing the section is not evaluated. For example, the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547448" data-raw-source="[&lt;strong&gt;INF LogConfig Directive&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff547448)"><strong>INF LogConfig Directive</strong></a> directive is no longer supported, so the following section results in this warning.</p>
-<div class="code">
+<tr>
+<td><strong>2222: Legacy directive will be ignored.</strong></td>
+<td>This warning indicates that the INF specifies a deprecated directive. When the driver is installed, the directive referencing the section is not evaluated. For example, the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547448"><strong>INF LogConfig Directive</strong></a> directive is no longer supported, so the following section results in this warning.
 <pre>
 [InstallSection.LogConfigOverride]
 LogConfig=LogConfigSection
 ...
 </pre>
-</div>
-<p>For information about which INF directives are deprecated, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff547388" data-raw-source="[INF Directives](https://msdn.microsoft.com/library/windows/hardware/ff547388)">INF Directives</a>.</p></td>
+For information about which INF directives are deprecated, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff547388">INF Directives</a>.</td>
 </tr>
-<tr class="odd">
-<td align="left"><p><span id="2223__Section_should_have_an_architecture_decoration"></span><span id="2223__section_should_have_an_architecture_decoration"></span><span id="2223__SECTION_SHOULD_HAVE_AN_ARCHITECTURE_DECORATION"></span><strong>2223: Section should have an architecture decoration</strong></p></td>
-<td align="left"><p>This warning indicates that the INF file contains an <a href="https://msdn.microsoft.com/library/windows/hardware/ff547454" data-raw-source="[&lt;strong&gt;INF Manufacturer Section&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff547454)"><strong>INF Manufacturer Section</strong></a> that specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547456" data-raw-source="[&lt;strong&gt;model section&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff547456)"><strong>model section</strong></a> with no architecture decoration. For example, the following INF syntax would result in warning 2223:</p>
-<div class="code">
+<tr>
+<td><strong>2223: Section should have an architecture decoration</strong></td>
+<td>This warning indicates that the INF file contains an <a href="https://msdn.microsoft.com/library/windows/hardware/ff547454"><strong>INF Manufacturer Section</strong></a> that specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547456"><strong>model section</strong></a> with no architecture decoration. For example, the following INF syntax would result in warning 2223:
 <pre>
 [Manufacturer]
 %MfgName% = InstallSection
@@ -323,10 +296,8 @@ LogConfig=LogConfigSection
 [InstallSection]
 ...
 </pre>
-</div>
-<p>When you install the driver, the preceding INF syntax defaults to x86.</p>
+When you install the driver, the preceding INF syntax defaults to x86.
 <p>Instead, declare all supported architectures and provide a corresponding install section for each:</p>
-<div class="code">
 <pre>
 [Manufacturer]
 %MfgName% = InstallSection, NTX86, NTAMD64
@@ -337,14 +308,7 @@ LogConfig=LogConfigSection
 [InstallSection.NTX86]
 ...
 </pre>
-</div>
-<p>If the INF file specifies a decorated section for x86 and an undecorated section, the undecorated section is ignored when you install your driver.</p></td>
+If the INF file specifies a decorated section for x86 and an undecorated section, the undecorated section is ignored when you install your driver.</td>
 </tr>
 </tbody>
 </table>
-
-
-
-
-
-
