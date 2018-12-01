@@ -4,11 +4,7 @@ description: Receive Operations
 ms.assetid: 9ec2ba38-36dd-42d2-b0a8-0abe4d1bb847
 keywords:
 - receive operations WDK Native 802.11 IHV Extensions DLL
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

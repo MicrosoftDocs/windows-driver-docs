@@ -9,11 +9,7 @@ keywords:
 - EtherType handling WDK Native 802.11 IHV Extensions DLL
 - privacy exceptions WDK Native 802.11 IHV Extensions DLL
 - decryption WDK Native 802.11 IHV Extensions DLL
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 

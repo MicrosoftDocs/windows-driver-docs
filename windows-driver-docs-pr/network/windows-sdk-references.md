@@ -4,11 +4,7 @@ description: Windows SDK References
 ms.assetid: 4ada216c-c51e-4357-9a16-f5932c39b31e
 keywords:
 - IHV UI Extensions DLL WDK Native 802.11 , Windows SDK references
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
