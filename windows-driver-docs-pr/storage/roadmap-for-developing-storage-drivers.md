@@ -23,7 +23,7 @@ ms.localizationpriority: medium
 
     For information about how to make design decisions, see [Capabilities Provided by Storport](capabilities-provided-by-storport.md), [Storage Virtual Miniport Drivers: When Are They Appropriate?](storage-virtual-miniport-drivers--when-are-they-appropriate-.md), and [Making SCSI Port Miniport Drivers Work with Storport](making-scsi-port-miniport-drivers-work-with-storport.md).
 
-4.  **Learn about storage in Windows Vista and later operating systems.**
+4.  **Learn about storage in the Windows operating system.**
 
     See [History of Storport](history-of-storport.md) in the Windows Driver Kit (WDK).
 
