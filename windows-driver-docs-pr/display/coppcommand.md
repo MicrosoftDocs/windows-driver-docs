@@ -12,11 +12,11 @@ ms.date: 02/16/2018
 ms.localizationpriority: medium
 ---
 
-## COPPCommand function
+# COPPCommand function
 
 The sample COPPCommand function performs an operation on a COPP DirectX VA device.
 
-### Syntax
+## Syntax
 
 ```cpp
 HRESULT COPPCommand(

@@ -44,7 +44,7 @@ For example, the following code sets the feature score of a driver to 0x20:
 FeatureScore=x20
 ```
 
-For more information about how to set the feature score on drivers, see [Feature Score (Windows Vista)](http://go.microsoft.com/fwlink/p/?linkid=132806).
+For more information about how to set the feature score on drivers, see [Feature Score (Windows Vista)](https://go.microsoft.com/fwlink/p/?linkid=132806).
 
  
 
