@@ -34,7 +34,7 @@ If your software component INF specifies the [**AddSoftware** directive](inf-add
 You can specify the [**AddSoftware** directive](inf-addsoftware-directive.md) one or more times.
 
 >[!NOTE]
->When using a value of 2, you do not need a Component INF or Extension INF. The directive can be called from any INF successfully.  For an AddSoftware directive of Type 1, a Component INF that is called from an Extension INF is needed.
+>When using Type 2 of the AddSoftware directive, it is not required to utilize a Component INF or an Extension INF. The directive can be called from any INF successfully.  For an AddSoftware directive of Type 1, a Component INF that is called from an Extension INF is needed.
 
 Additionally, any INF (component or not) matching on a software component device:
 
