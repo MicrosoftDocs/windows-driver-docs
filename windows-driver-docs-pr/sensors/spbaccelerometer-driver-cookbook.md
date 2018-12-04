@@ -21,14 +21,14 @@ This guide shows you how to get started using a sample diver that was developed 
 
 You’ll start by installing Windows on your Sharks Cove board. They you'll configure the accelerometer and attach it to the Sharks Cove board. Next, you'll install Microsoft Visual Studio Express and the Windows Driver Kit (WDK). Then, you’ll install the sample driver. Once you’ve completed these tasks, you can start exploring the sample driver.
 
-For information about the Sharks Cove board, see [SharksCove.org](http://go.microsoft.com/fwlink/p/?linkid=403167).
+For information about the Sharks Cove board, see [SharksCove.org](https://go.microsoft.com/fwlink/p/?linkid=403167).
 
 ### Required hardware
 
 Before you get started, make sure you have the following hardware:
 
 -   Sharks Cove board with included power cord and adapter.
--   [ADXL345](http://go.microsoft.com/fwlink/p/?linkid=401463) accelerometer/breakout board
+-   [ADXL345](https://go.microsoft.com/fwlink/p/?linkid=401463) accelerometer/breakout board
 -   USB hub
 -   USB keyboard
 -   USB mouse

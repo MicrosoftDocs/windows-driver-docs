@@ -17,7 +17,7 @@ The property keys for the activity sensor.
 |   PKEY_SensorData_SupportedActivityStates    |  VT_UI4   |        R/O        |  Required   |
 | PKEY_SensorData_MinimumDetectionIntervals_Ms | VT_VECTOR |      VT_UI4       |     R/O     |
 
-For more information about the data types shown in the **Type** column, see [PROPVARIANT structure](http://go.microsoft.com/fwlink/p/?linkid=313395).
+For more information about the data types shown in the **Type** column, see [PROPVARIANT structure](https://go.microsoft.com/fwlink/p/?linkid=313395).
 
 ## Requirements
 

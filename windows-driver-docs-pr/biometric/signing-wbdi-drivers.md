@@ -26,7 +26,7 @@ Boot-start drivers have the following characteristics:
 -   A kernel service is configured with a **ServiceType** of kernel driver or file system driver and has **StartMode** set to "boot".
 
 
-This topic does not cover the details of driver-signing requirements or procedures. For general information about signature requirements for drivers, see [Driver Signing](http://go.microsoft.com/fwlink/p/?linkid=201836).
+This topic does not cover the details of driver-signing requirements or procedures. For general information about signature requirements for drivers, see [Driver Signing](https://go.microsoft.com/fwlink/p/?linkid=201836).
 
  
 

@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 # Supporting Display Output and ACPI Events
 
 
-A comprehensive approach to system configuration and device power control is built into Windows, based on the Advanced Configuration and Power Interface (ACPI) specification. Windows supports capabilities that can be used by drivers to manage the configuration and power of display output devices. For more information, see the ACPI specification on the [ACPI website](http://go.microsoft.com/fwlink/p/?linkid=57185).
+A comprehensive approach to system configuration and device power control is built into Windows, based on the Advanced Configuration and Power Interface (ACPI) specification. Windows supports capabilities that can be used by drivers to manage the configuration and power of display output devices. For more information, see the ACPI specification on the [ACPI website](https://go.microsoft.com/fwlink/p/?linkid=57185).
 
 ## <span id="BIOS_Requirements_to_Support_Display_Output_Devices"></span><span id="bios_requirements_to_support_display_output_devices"></span><span id="BIOS_REQUIREMENTS_TO_SUPPORT_DISPLAY_OUTPUT_DEVICES"></span>BIOS Requirements to Support Display Output Devices
 

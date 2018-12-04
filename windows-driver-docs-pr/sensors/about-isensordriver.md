@@ -13,7 +13,7 @@ The sensor driver must implement the [ISensorDriver](https://docs.microsoft.com/
 
 ## Method to Enumerate Sensors
 
-The class extension will always first enumerate the available sensors for the device by calling [**ISensorDriver::OnGetSupportedSensorObjects**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsclassextension/nf-sensorsclassextension-isensordriver-ongetsupportedsensorobjects). For each sensor, your driver must return an [IPortableDeviceValues](http://go.microsoft.com/fwlink/p/?linkid=131486) object that contains a string ID (unique for the device) and other required property values.
+The class extension will always first enumerate the available sensors for the device by calling [**ISensorDriver::OnGetSupportedSensorObjects**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsclassextension/nf-sensorsclassextension-isensordriver-ongetsupportedsensorobjects). For each sensor, your driver must return an [IPortableDeviceValues](https://go.microsoft.com/fwlink/p/?linkid=131486) object that contains a string ID (unique for the device) and other required property values.
 
 ## Methods to Manage Client Connections
 

@@ -559,6 +559,11 @@
       href: monitor-class-function-driver.md
     - name: "Monitor Filter Drivers"
       href: monitor-filter-drivers.md
+  - name: "HMDs and Specialized Monitors"
+    href: specialized-monitors.md
+    items:
+    - name: "EDID Extension for HMDs and Specialized Monitors"
+      href: "specialized-monitors-edid-extension.md"
   - name: "Multiple Monitors and Video Present Networks"
     href: multiple-monitors-and-video-present-networks.md
     items: 
@@ -970,28 +975,6 @@
         href: d3dkmt-tdrdbgctrl-escape.md
       - name: "D3DKMT_UNPINDIRECTFLIPRESOURCES"
         href: d3dkmt-unpindirectflipresources.md
-      - name: "PFND3DKMT_CHECKMULTIPLANEOVERLAYSUPPORT"
-        href: d3dkmtcheckmultiplaneoverlaysupport.md
-      - name: "D3DKMTCheckMultiPlaneOverlaySupport2"
-        href: d3dkmtcheckmultiplaneoverlaysupport2.md
-      - name: "D3DKMTCreateOutputDupl"
-        href: d3dkmtcreateoutputdupl.md
-      - name: "D3DKMTDestroyOutputDupl"
-        href: d3dkmtdestroyoutputdupl.md
-      - name: "D3DKMTOutputDuplGetFrameInfo"
-        href: d3dkmtoutputduplgetframeinfo.md
-      - name: "D3DKMTOutputDuplGetMetaData"
-        href: d3dkmtoutputduplgetmetadata.md
-      - name: "D3DKMTOutputDuplGetPointerShapeData"
-        href: d3dkmtoutputduplgetpointershapedata.md
-      - name: "PFND3DKMT_PINDIRECTFLIPRESOURCES"
-        href: d3dkmtpindirectflipresources.md
-      - name: "D3DKMTPresentMultiPlaneOverlay"
-        href: d3dkmtpresentmultiplaneoverlay.md
-      - name: "D3DKMTSetStereoEnabled"
-        href: d3dkmtsetstereoenabled.md
-      - name: "PFND3DKMT_UNPINDIRECTFLIPRESOURCES"
-        href: d3dkmtunpindirectflipresources.md
       - name: "DXGKMT_MULTIPLANE_OVERLAY_STEREO_FLIP_MODE"
         href: dxgkmt-multiplane-overlay-stereo-flip-mode.md
       - name: "OUTPUTDUPL_CONTEXT_DEBUG_INFO"
