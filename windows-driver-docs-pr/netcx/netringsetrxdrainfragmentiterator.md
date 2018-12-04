@@ -38,7 +38,7 @@ Client drivers call **NetRingSetRxDrainFragmentIterator** to complete the proces
 
 After calling this method, the fragment ring's **BeginIndex** advances to the [**NET_RING_FRAGMENT_ITERATOR**](net-ring-fragment-iterator.md)'s current position in the ring. Therefore, the fragments between the old value of **BeginIndex** and the iterator's **Index - 1** inclusive are drained from the ring and ownership of them is transferred to the OS. This is how client drivers indicate receives to the system.
 
-For an animation and code example of draining fragments back to the OS, see [Using net rings and net ring iterators](using-net-rings-and-net-ring-iterators.md).
+For an animation and code example of draining fragments back to the OS, see [Net rings and net ring iterators](net-rings-and-net-ring-iterators.md).
 
 ## Requirements
 
@@ -50,7 +50,7 @@ For an animation and code example of draining fragments back to the OS, see [Usi
 
 ## See Also
 
-[Using net rings and net ring iterators](using-net-rings-and-net-ring-iterators.md)
+[Net rings and net ring iterators](net-rings-and-net-ring-iterators.md)
 
 [**NET_RING_FRAGMENT_ITERATOR**](net-ring-fragment-iterator.md)
 

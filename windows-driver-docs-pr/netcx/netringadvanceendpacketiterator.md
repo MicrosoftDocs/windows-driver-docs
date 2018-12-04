@@ -38,7 +38,7 @@ After calling **NetRingAdvanceEndPacketIterator**, the packet iterator's current
 
 Client drivers typically call **NetRingAdvanceEndPacketIterator** to cancel all packets in the ring.
 
-For a code example of using this method, see [Using net rings and net ring iterators](using-net-rings-and-net-ring-iterators.md).
+For a code example of using this method, see [Net rings and net ring iterators](net-rings-and-net-ring-iterators.md).
 
 ## Requirements
 
@@ -50,6 +50,6 @@ For a code example of using this method, see [Using net rings and net ring itera
 
 ## See Also
 
-[Using net rings and net ring iterators](using-net-rings-and-net-ring-iterators.md)
+[Net rings and net ring iterators](net-rings-and-net-ring-iterators.md)
 
 [**NET_RING_PACKET_ITERATOR**](net-ring-packet-iterator.md)

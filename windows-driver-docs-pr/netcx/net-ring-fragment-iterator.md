@@ -40,7 +40,7 @@ For fragment rings, client drivers must use a **NET_RING_FRAGMENT_ITERATOR** ins
 
 ## See Also
 
-[Using net rings and net ring iterators](using-net-rings-and-net-ring-iterators.md)
+[Net rings and net ring iterators](net-rings-and-net-ring-iterators.md)
 
 [**NET_RING_ITERATOR**](net-ring-iterator.md)
 

@@ -1,0 +1,158 @@
+---
+title: Net rings and net ring iterators
+description: This topic describes net rings and net ring iterators.
+ms.assetid: 8A56AA21-264C-4C1A-887E-92C9071E8AB8
+keywords:
+- NetAdapterCx Net rings and net ring iterators, NetCx Net rings and net ring iterators, NetAdapterCx PCI devices net ring, NetAdapterCx asynchronous I/O
+ms.date: 12/04/2018
+ms.localizationpriority: medium
+---
+
+# Net rings and net ring iterators
+
+[!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
+
+## NET_RING overview
+
+A **NET_RING** is a circular buffer of network data that is shared between NetAdapterCx and a client driver. Every packet queue in a client driver has two rings: a *packet ring* for core packet descriptors, and a *fragment ring* for each packet's fragment descriptors.
+
+For more information about packet descriptors, see [Packet descriptors and extensions](packet-descriptors-and-extensions.md).
+
+Every core descriptor in the packet ring has indices into the fragment ring for locating that packet's fragment descriptors. Another data structure, the **NET_RING_COLLECTION**, groups the packet ring and fragment ring together for a given packet queue as shown in the following diagram.
+
+![multi-ring layout](images/multi-ring.png) 
+
+Every packet queue has its own **NET_RING_COLLECTION** structure, and, consequently, its own packet ring, fragment ring, and descriptors in those rings. Therefore, the network data transfer operation of each packet queue is completely independent. To learn more about packet queues, see [Transmit and receive queues](transmit-and-receive-queues.md).
+
+## NET_RING element ownership
+
+Each element in a **NET_RING** is owned by either the client driver or NetAdapterCx. Ownership of elements is determined in two layers:
+
+1. Ownership of **NET_RING** *indices*. 
+
+    Each **NET_RING** contains three indices that control ownership and mark sections of the **NET_RING**, as described in the following table. The act of moving these indices, which client drivers do by calling into the Net Ring Iterator Interface, is described by *post* and *drain* semantics. The following table defines these indices
+
+    | **NET_RING** index name | Description | Modified by |
+    | --- | --- | --- |
+    | BeginIndex | The beginning of the range of elements in the **NET_RING** that the NIC client driver owns. **BeginIndex** is also the beginning of the *drain* section of the **NET_RING**. When **BeginIndex** is incremented, the driver *drains* the elements from the ring and transfers ownership of them to the OS. | NIC client driver, through Net Ring Iterator Interface API calls |
+    | NextIndex | The beginning of the *post* section of the **NET_RING**. **NextIndex** divides the section of the ring that the client driver owns into the post and drain subsections. When **NextIndex** is incremented, the driver *posts* the buffers to hardware and transfers the buffers to the drain section of the ring. | NIC client driver, through Net Ring Iterator Interface API calls |
+    | EndIndex | The end of the range of elements in the **NET_RING** that the NIC client driver owns. Client drivers own elements up to **EndIndex - 1** inclusive. | NetAdapterCx |
+
+Manipulating these indices with net ring iterators during a packet queue's [*EvtPacketQueueAdvance*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacketqueue/nc-netpacketqueue-evt_packet_queue_advance) callback is how client drivers transfer network data between the system and the network interface card (NIC) hardware.
+
+Client drivers own every element from **BeginIndex** to **EndIndex - 1** inclusive. For example, if **BeginIndex** is 2 and **EndIndex** is 5, the client driver owns three elements: the elements with index values 2, 3, and 4.
+
+If **BeginIndex** is equal to **EndIndex**, the client driver does not own any elements.
+
+NetAdapterCx posts elements to the ring buffer by incrementing **EndIndex**. A client driver drains the buffers and returns ownership of the elements by advancing the ring's drain iterator, which increments **BeginIndex**.
+
+Elements with index values between **NextIndex** and **EndIndex - 1** inclusive are owned by the client but have not yet been posted to hardware. If **NextIndex** is equal to **BeginIndex**, the client driver does not have any completed buffers to transfer to the OS. If **NextIndex** is equal to **EndIndex**, the client driver does not have any buffers to post to hardware.
+
+Because the net ring is circular, eventually the index values wrap around the end of the buffer and come back to the beginning. NetAdapterCx automatically handles wrapping the index values around the ring when the client driver calls the appropriate method, as described in the following section.
+
+## Net Ring Iterator Interface overview
+
+NIC client drivers perform post and drain operations on net rings by calling into the *Net Ring Iterator Interface*. A [**NET_RING_ITERATOR**](net-ring-iterator.md) is a small structure that contains references to the post and drain indices of a **NET_RING** to which it belongs. 
+
+Each **NET_RING** can have multiple iterators. For example, the packet ring might have an iterator that covers the drain section of the ring (a *drain iterator*), an iterator that covers the post section of the ring (a *post iterator*), and an iterator that covers both the post and drain sections. Likewise, the fragment ring can have the same iterators.
+
+To make it easy for client drivers to control each iterator for each ring, the Net Ring Iterator Interface separates iterators into two categories: [**NET_RING_PACKET_ITERATOR**](net-ring-packet-iterator.md) and [**NET_RING_FRAGMENT_ITERATOR**](net-ring-fragment-iterator.md). These are wrapper structures around the **NET_RING_ITERATOR** and are used in all Net Ring Iterator Interface API calls. Client drivers should not use a **NET_RING_ITERATOR** directly. Instead, they should use the appropriate type of iterator for a given net ring (either packet or fragment).
+
+By getting, advancing, and setting packet and fragment post and drain iterators, client drivers send and receive network data in their packet queues. Client drivers also call methods on net ring iterators to access the ring's elements.
+
+For a complete list of net ring iterator data structures and methods, see [Netringiterator.h](netringiterator-h.md).
+
+## Sending and receiving network data with net rings and net ring iterators
+
+See the following topics for more information and code samples about sending and receving network data in net rings.
+
+[Sending network data with net rings](sending-network-data-with-net-rings.md)
+
+[Receiving network data with net rings](receiving-network-data-with-net-rings.md)
+
+
+### Receiving data in order
+
+Here is a typical sequence for a driver that receives data in order, with one fragment per packet.
+
+1. Call **NetRxQueueGetRingCollection** to retrieve the receive queue's ring collection structure. You can store this in the queue's context space to reduce calls out of the driver. 
+2. Indicate received data to the OS by draining the net rings:
+    1. Use the ring collection to retrieve the drain iterator for the receive queue's net rings: call [**NetRingGetRxDrainPacketIterator**](netringgetrxdrainpacketiterator.md) for the packet ring and call [**NetRingGetRxDrainFragmentIterator**](netringgetrxdrainfragmentiterator.md) for the fragment ring.
+    2. Do the following in a loop:
+        1. Check if the fragment has been received by the hardware. If not, break out of the loop.
+        2. Get the fragment iterator's current fragment by calling [**NetRingIteratorGetFragment**](netringiteratorgetfragment.md).
+        3. Fill in the fragment's information, such as its **ValidLength**, based on its matching hardware descriptor.
+        4. Get a packet for this fragment by calling [**NetRingIteratorGetPacket**](netringiteratorgetpacket.md).
+        5. Bind the fragment to the packet by setting the packet's **FragmentIndex** to the fragment's current index in the fragment ring and setting the number of fragments appropriately (in this example, it is set to **1**). 
+        6. Optionally, fill in any other packet information such as checksum info.
+        7. Call [**NetRingAdvanceFragmentIterator**](netringadvancefragmentiterator.md) to move to the next fragment.
+        7. Call [**NetRingAdvancePacketIterator**](netringadvancepacketiterator.md) to move to the next packet.
+    3. Call [**NetRingSetRxDrainFragmentIterator**](netringsetrxdrainpacketiterator.md) and [**NetRingSetRxDrainPacketIterator**](netringsetrxdrainpacketiterator.md) to finalize indicating received packets and their fragments to the OS.
+3. Post fragment buffers to hardware for the next receives:    
+    1. Use the ring collection to retrieve the post iterator for the receive queue's fragment ring by calling [**NetRingGetRxPostFragmentIterator**](netringgetrxpostfragmentiterator.md).
+    2. Do the following in a loop:
+        1. Get the fragment iterator's current index by calling [**NetRingIteratorGetIndex**](netringiteratorgetindex.md).
+        2. Post the fragment's information to the matching hardware descriptor.
+        3. Call [**NetRingAdvanceFragmentIterator**](netringadvancefragmentiterator.md) to move to the next fragment.
+    3. Call [**NetRingSetRxPostFragmentIterator**](netringsetrxpostfragmentiterator.md) to finalize posting fragments to hardware.
+
+These steps might look like this in code:
+
+```cpp
+void
+MyEvtRxQueueAdvance(
+    NETPACKETQUEUE RxQueue
+)
+{
+    // Get the receive queue's context to retrieve the net ring collection
+    PMY_RX_QUEUE_CONTEXT rxQueueContext = MyGetRxQueueContext(RxQueue);
+    NET_RING_COLLECTION const * Rings = rxQueueContext->Rings;
+    UINT32 currentFragmentIndex = 0;
+
+    //
+    // Indicate receives by draining the rings
+    //
+    NET_RING_FRAGMENT_ITERATOR fragmentIterator = NetRingGetRxDrainFragmentIterator(Rings);
+    NET_RING_PACKET_ITERATOR packetIterator = NetRingGetRxDrainPacketIterator(Rings);
+    while(NetRingIteratorAny(fragmentIterator))
+    {
+        currentFragmentIndex = NetRingIteratorGetIndex(fragmentIterator);
+
+        // Test for fragment reception
+        ...
+        //
+
+        NET_FRAGMENT* fragment = NetRingIteratorGetFragment(&fragmentIterator);
+        fragment->ValidLength = ... ;
+        NET_PACKET* packet = NetRingIteratorGetPacket(&packetIterator);
+        packet->FragmentIndex = currentFragmentIndex;
+        packet->FragmentCount = 1;
+
+        // Fill in checksum info
+        ...
+        //
+
+        NetRingAdvanceFragmentIterator(&fragmentIterator);
+        NetRingAdvancePacketIterator(&packetIterator);
+    }
+    NetRingSetRxDrainFragmentIterator(&fragmentIterator);
+    NetRingSetRxDrainPacketIterator(&packetIterator);
+
+    //
+    // Post fragment buffers to hardware
+    //
+    fragmentIterator = NetRingGetRxPostFragmentIterator(Rings);
+    while(NetRingIteratorAny(fragmentIterator))
+    {
+        currentFragmentIndex = NetRingIteratorGetIndex(fragmentIterator);
+
+        // Post fragment information to hardware descriptor
+        ...
+        //
+
+        NetRingAdvanceFragmentIterator(&fragmentIterator);
+    }
+    NetRingSetRxPostFragmentIterator(&fragmentIterator);
+}
+```
+

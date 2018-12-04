@@ -36,7 +36,7 @@ Returns a [**NET_RING_FRAGMENT_ITERATOR**](net-ring-fragment-iterator.md) that b
 
 Client drivers typically call **NetRingGetRxPostFragmentIterator** to begin the process of posting fragments to hardware for Rx. Drivers later complete this process by calling [**NetRingSetRxPostFragmentIterator**](netringsetrxpostfragmentiterator.md).
 
-For an animation and code example of posting fragments to hardware for Rx, see [Using net rings and net ring iterators](using-net-rings-and-net-ring-iterators.md).
+For an animation and code example of posting fragments to hardware for Rx, see [Net rings and net ring iterators](net-rings-and-net-ring-iterators.md).
 
 ## Requirements
 
@@ -48,7 +48,7 @@ For an animation and code example of posting fragments to hardware for Rx, see [
 
 ## See Also
 
-[Using net rings and net ring iterators](using-net-rings-and-net-ring-iterators.md)
+[Net rings and net ring iterators](net-rings-and-net-ring-iterators.md)
 
 [**NET_RING_FRAGMENT_ITERATOR**](net-ring-fragment-iterator.md)
 

@@ -42,7 +42,7 @@ Returns the iterator's current **Index** in the **NET_RING** over which it is it
 
 ## See Also
 
-[Using net rings and net ring iterators](using-net-rings-and-net-ring-iterators.md)
+[Net rings and net ring iterators](net-rings-and-net-ring-iterators.md)
 
 [**NET_RING_PACKET_ITERATOR**](net-ring-packet-iterator.md)
 

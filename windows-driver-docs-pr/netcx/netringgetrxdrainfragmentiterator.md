@@ -36,7 +36,7 @@ Returns a [**NET_RING_FRAGMENT_ITERATOR**](net-ring-fragment-iterator.md) that b
 
 Client drivers call **NetRingGetRxDrainFragmentIterator** to begin the process of draining receive fragments from the ring to the OS. 
 
-For an animation and code example of draining fragments from the ring back to the OS, see [Using net rings and net ring iterators](using-net-rings-and-net-ring-iterators.md).
+For an animation and code example of draining fragments from the ring back to the OS, see [Net rings and net ring iterators](net-rings-and-net-ring-iterators.md).
 
 ## Requirements
 
@@ -48,7 +48,7 @@ For an animation and code example of draining fragments from the ring back to th
 
 ## See Also
 
-[Using net rings and net ring iterators](using-net-rings-and-net-ring-iterators.md)
+[Net rings and net ring iterators](net-rings-and-net-ring-iterators.md)
 
 [**NET_RING_FRAGMENT_ITERATOR**](net-ring-fragment-iterator.md)
 

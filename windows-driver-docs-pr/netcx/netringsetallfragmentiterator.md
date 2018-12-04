@@ -40,7 +40,7 @@ After calling **NetRingSetAllFragmentIterator**, the fragment ring's **BeginInde
 
 Client drivers typically call **NetRingSetAllFragmentIterator** to finish performing operations on all fragments that they own in a fragment ring. This might include processing a batch of receives that span all available fragments in the ring, or draining the ring during data path cancelation.
 
-For a code example of using this method, see [Using net rings and net ring iterators](using-net-rings-and-net-ring-iterators.md).
+For a code example of using this method, see [Net rings and net ring iterators](net-rings-and-net-ring-iterators.md).
 
 ## Requirements
 
@@ -52,7 +52,7 @@ For a code example of using this method, see [Using net rings and net ring itera
 
 ## See Also
 
-[Using net rings and net ring iterators](using-net-rings-and-net-ring-iterators.md)
+[Net rings and net ring iterators](net-rings-and-net-ring-iterators.md)
 
 [**NetRingGetAllFragmentIterator**](netringgetallfragmentiterator.md)
 

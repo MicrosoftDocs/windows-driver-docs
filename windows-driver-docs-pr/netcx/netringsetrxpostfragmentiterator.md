@@ -38,7 +38,7 @@ Client drivers call **NetRingSetRxPostFragmentIterator** to complete the process
 
 After calling **NetRingSetRxPostFragmentIterator**, the fragment ring's **NextIndex** advances to the [**NET_RING_FRAGMENT_ITERATOR**](net-ring-fragment-iterator.md)'s current position in the ring. Therefore, the fragments between the old value of **NextIndex** and the iterator's **Index - 1** inclusive are posted to hardware and are transferred to the drain section of the ring.
 
-For an animation and code example of posting fragments to hardware, see [Using net rings and net ring iterators](using-net-rings-and-net-ring-iterators.md).
+For an animation and code example of posting fragments to hardware, see [Net rings and net ring iterators](net-rings-and-net-ring-iterators.md).
 
 ## Requirements
 
@@ -50,7 +50,7 @@ For an animation and code example of posting fragments to hardware, see [Using n
 
 ## See Also
 
-[Using net rings and net ring iterators](using-net-rings-and-net-ring-iterators.md)
+[Net rings and net ring iterators](net-rings-and-net-ring-iterators.md)
 
 [**NET_RING_FRAGMENT_ITERATOR**](net-ring-fragment-iterator.md)
 

@@ -35,8 +35,13 @@
       href: transmit-and-receive-queues.md
     - name: "Network data buffer management"
       href: network-data-buffer-management.md
-    - name: "Using net rings and net ring iterators"
-      href: using-net-rings-and-net-ring-iterators.md    
+    - name: "Net rings and net ring iterators"
+      href: net-rings-and-net-ring-iterators.md
+      items:
+      - name: "Sending network data with net rings"
+        href: sending-network-data-with-net-rings.md
+      - name: "Receiving network data with net rings"
+        href: receiving-network-data-with-net-rings.md
   - name: "NetAdapterCx receive side scaling (RSS)"
     href: netadaptercx-receive-side-scaling-rss-.md
   - name: "Configuring power management"

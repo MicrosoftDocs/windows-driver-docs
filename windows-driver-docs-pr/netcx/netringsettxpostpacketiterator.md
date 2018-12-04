@@ -38,7 +38,7 @@ Client drivers call **NetRingSetTxPostPacketIterator** to complete the process o
 
 After calling **NetRingSetTxPostPacketIterator**, the packet ring's **NextIndex** advances to the [**NET_RING_PACKET_ITERATOR**](net-ring-packet-iterator.md)'s current position in the ring. Therefore, the packets between the old value of **NextIndex** and the iterator's **Index - 1** inclusive have had their fragments posted to hardware and are transferred to the drain section of the ring.
 
-For an animation and code example of posting hardware, see [Using net rings and net ring iterators](using-net-rings-and-net-ring-iterators.md).
+For an animation and code example of posting hardware, see [Net rings and net ring iterators](net-rings-and-net-ring-iterators.md).
 
 ## Requirements
 
@@ -50,7 +50,7 @@ For an animation and code example of posting hardware, see [Using net rings and 
 
 ## See Also
 
-[Using net rings and net ring iterators](using-net-rings-and-net-ring-iterators.md)
+[Net rings and net ring iterators](net-rings-and-net-ring-iterators.md)
 
 [**NET_RING_PACKET_ITERATOR**](net-ring-packet-iterator.md)
 

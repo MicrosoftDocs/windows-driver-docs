@@ -42,6 +42,6 @@ None.
 
 ## See Also
 
-[Using net rings and net ring iterators](using-net-rings-and-net-ring-iterators.md)
+[Net rings and net ring iterators](net-rings-and-net-ring-iterators.md)
 
 [**NET_RING_FRAGMENT_ITERATOR**](net-ring-fragment-iterator.md)

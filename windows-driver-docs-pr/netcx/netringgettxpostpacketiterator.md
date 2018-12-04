@@ -36,7 +36,7 @@ Returns a [**NET_RING_PACKET_ITERATOR**](net-ring-packet-iterator.md) that begin
 
 Client drivers typically call this method to begin the process of posting packets for Tx. Drivers later complete this process by calling [**NetRingSetTxPostPacketIterator**](netringsettxpostpacketiterator.md).
 
-For an animation and code example of posting packets, see [Using net rings and net ring iterators](using-net-rings-and-net-ring-iterators.md).
+For an animation and code example of posting packets, see [Net rings and net ring iterators](net-rings-and-net-ring-iterators.md).
 
 ## Requirements
 
@@ -48,7 +48,7 @@ For an animation and code example of posting packets, see [Using net rings and n
 
 ## See Also
 
-[Using net rings and net ring iterators](using-net-rings-and-net-ring-iterators.md)
+[Net rings and net ring iterators](net-rings-and-net-ring-iterators.md)
 
 [**NET_RING_PACKET_ITERATOR**](net-ring-packet-iterator.md)
 

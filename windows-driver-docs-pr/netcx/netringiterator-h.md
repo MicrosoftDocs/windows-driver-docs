@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 This header is used by NetAdapterCx. For more information, see:
 
-- [Using net rings and net ring iterators](using-net-rings-and-net-ring-iterators.md)
+- [Net rings and net ring iterators](net-rings-and-net-ring-iterators.md)
 
 Netringiterator.h contains the following programming interfaces:
 
