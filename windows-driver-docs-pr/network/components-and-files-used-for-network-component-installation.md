@@ -31,25 +31,19 @@ The following components and files are used to install network drivers:
 
 -   An optional notify object
 
-In addition to one or more of the above components, a vendor also supplies the following files:
+In addition to one or more of the above components, a vendor also optionally supplies the following files:
 
 -   One or more device driver image (.sys) files and driver library (.dll) files
 
--   An optional driver catalog file
+-   A driver catalog file
 
--   An optional text-mode setup information file (txtsetup.oem)
+-   A text-mode setup information file (txtsetup.oem)
 
 ## INF files
 
 Each network component must have an information (INF) file that the network class installer uses to install the component. Network INF files are based on the common INF file format. For more information about the INF file format, see [INF File Sections and Directives](https://msdn.microsoft.com/library/windows/hardware/ff547433).
 
 For detailed information about creating INF files for network components, see [Creating Network INF Files](creating-network-inf-files.md).
-
-## Class installer and co-installer
-
-NDIS miniport drivers are installed by the network class installer or by a custom class installer created by the vendor. A *class installer* is a dynamic-link library (DLL) that installs, configures, or removes devices of a particular class in the system. For more information about class installers, see [Writing Class Installers and Co-Installers](https://msdn.microsoft.com/library/windows/hardware/ff819060).
-
-If the network class installer does not provide all the features that a vendor requires, a vendor can customize the installation process by writing a device *co-installer*. A *co-installer* is a Win32 DLL that assists in device installation. Co-installers are called by the system Device Installer as "helpers" or filters for Class Installers. For more information about co-installers, see [Writing a Co-installer](https://msdn.microsoft.com/library/windows/hardware/ff554011).
 
 ## INetCfg
 

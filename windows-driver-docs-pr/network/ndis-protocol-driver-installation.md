@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # NDIS protocol driver installation
 
-NDIS protocol drivers are installed by the configuration manager as autostart services. To install a protocol driver, you must first provide a single INF file. The configuration manager reads configuration information about the protocol driver from the INF file and copies it to the registry. 
+To install a protocol driver, you must first provide a single INF file. The configuration manager reads configuration information about the protocol driver from the INF file and copies it to the registry. 
 
 For more information about protocol driver INF files, see [Installation Requirements for Network Protocols](installation-requirements-for-network-protocols.md). For an example protocol driver INF file, see the [ndisprot 630](https://github.com/Microsoft/Windows-driver-samples/tree/master/network/ndis/ndisprot/6x/sys/630) sample driver.
 
