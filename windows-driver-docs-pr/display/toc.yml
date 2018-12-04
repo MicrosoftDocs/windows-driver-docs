@@ -559,6 +559,11 @@
       href: monitor-class-function-driver.md
     - name: "Monitor Filter Drivers"
       href: monitor-filter-drivers.md
+  - name: "HMDs and Specialized Monitors"
+    href: specialized-monitors.md
+    items:
+    - name: "EDID Extension for HMDs and Specialized Monitors"
+      href: "specialized-monitors-edid-extension.md"
   - name: "Multiple Monitors and Video Present Networks"
     href: multiple-monitors-and-video-present-networks.md
     items: 
