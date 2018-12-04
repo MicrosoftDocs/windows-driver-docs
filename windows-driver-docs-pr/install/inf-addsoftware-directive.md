@@ -75,7 +75,7 @@ Specifies the type of software installation.
 A value of 1 indicates that the associated software is an MSI or EXE binary.  When this value is set, the **SoftwareBinary** entry is also required.  A value of 1 is not supported on Windows 10 S.  Starting in Windows 10 version 1709, a value of 2 indicates that the associated software is a Microsoft Store link.  Use a value of 1 only for device-specific software that has no graphical user interface.  If you have a device-specific app with graphical elements, it should come from the Microsoft Store, and the driver should reference it using **SoftwareType** 2.
 
 >[!NOTE]
->When using Type 2 of the AddSoftware directive, it is not required to utilize a Component INF or an Extension INF. The directive can be called from any INF successfully.  For an AddSoftware directive of Type 1, a Component INF that is called from an Extension INF is needed.
+>When using Type 2 of the AddSoftware directive, it is not required to utilize a Component INF to use this directive.  The directive can be used in any INF successfully.  For an AddSoftware directive of Type 1, it must be used from a Component INF.
 
 Do not use AddSoftware to distribute software that is unrelated to a device. For example, an OEM-specific PC utility program should not be installed with AddSoftware.
 Instead, use one of the following options to preinstall an app in an OEM image of Windows 10:
