@@ -20,7 +20,7 @@ The list of supported adapters is for the following versions of Windows
 -   Windows Server 2019
 
 
-**Adapter Support for Other Versions of the WDK**  
+**Adapter Support for Previous Releases of Windows**  
 
 To determine which set of NICs is supported for any particular release of Windows, examine the `VerifiedNicList.xml` file that is in the debuggers directory installed by the WDK that shipped with that particular release of Windows. For 64 bit Windows, by default, it will be installed in this directory:
 
