@@ -19,4 +19,4 @@ If you choose to use DIFx anyway, you must use an older WDK which contains the t
 
 Although it's no longer being updated, you can find API reference documentation for DIFx at [Difxapi.h](https://docs.microsoft.com/previous-versions/windows/hardware/difxapi/).
 
-If providing the driver as a standalone package that does not require an installer is not an option, then the command line tool [PnPUtil](https://docs.microsoft.com/en-us/windows-hardware/drivers/devtest/pnputil) or a custom installer that uses [driver installation functions](setupapi-functions-that-simplify-driver-installation.md) can be used as part of an installation story.
+If providing the driver as a standalone package that does not require an installer is not an option, then the command line tool [PnPUtil](https://docs.microsoft.com/windows-hardware/drivers/devtest/pnputil) or a custom installer that uses [driver installation functions](setupapi-functions-that-simplify-driver-installation.md) can be used as part of an installation story.
