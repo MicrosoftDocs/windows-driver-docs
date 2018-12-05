@@ -46,7 +46,10 @@ Move the named service's tag to the front of its group order list, thereby ensur
 <a href="" id="0x00000002--spsvcinst-assocservice-"></a>**0x00000002** (SPSVCINST_ASSOCSERVICE)  
 Assign the named service as the PnP function driver (or legacy driver) for the device being installed by this INF file.
 
-Do not specify this flag when installing filter drivers or other driver components not directly associated with a device. Set this flag for only one driver for each [**INF *DDInstall*.Services section**](inf-ddinstall-services-section.md).
+To indicate a service is the function driver for a device, the service should specify the SPSVCINST_ASSOCSERVICE flag in the AddService directive to indicate that it is the associated service.  For a service such as a filter driver or other driver component, the flag should not be used.
+
+Every device driver INF should have exactly one associated service.  The INF does not require an associated service if it is an Extension or uses the Include/Needs directives to inherit the associated service from another INF.  For devices that do not require a function driver, the NULL driver can be specified as follows:
+AddService = ,2.
 
 <a href="" id="0x00000008--spsvcinst-noclobber-displayname-"></a>**0x00000008** (SPSVCINST_NOCLOBBER_DISPLAYNAME)  
 Do not overwrite the given service's (optional) friendly name if this service already exists in the system.
