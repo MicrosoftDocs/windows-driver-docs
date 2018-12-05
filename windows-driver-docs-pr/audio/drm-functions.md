@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_drm_functions_ks"></span><span id="DDK_DRM_FUNCTIONS_KS"></span>
 
 
-This section describes the DRM functions, which drivers use to manage the digital rights of kernel-streaming audio content in Windows Me, and Microsoft Windows XP and later. System driver component Drmk.sys contains the entry points for these functions. The definitions for these functions appear in header file drmk.h. For more information, see [Digital Rights Management](https://msdn.microsoft.com/library/windows/hardware/ff536260).
+This section describes the DRM functions, which drivers use to manage the digital rights of kernel-streaming audio content in Windows. System driver component Drmk.sys contains the entry points for these functions. The definitions for these functions appear in header file drmk.h. For more information, see [Digital Rights Management](https://msdn.microsoft.com/library/windows/hardware/ff536260).
 
 This section describes the following DRM functions:
 
