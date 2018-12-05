@@ -24,8 +24,7 @@ However, in Windows Vista and later versions of Windows, you can add the followi
 
  
 
-**Note**  The preceding registry settings are not present, by default. They must be added under this node:
-HKLM\\SYSTEM\\CurrentControlSet\\Enum\\USB\\*&lt;device\_identifier&gt;*\\*&lt;instance\_identifier&gt;*\\DeviceParameters
+**Note**  The preceding registry settings are not present, by default. They must be added under the [hardware (aka "device") key](https://docs.microsoft.com/windows-hardware/drivers/install/opening-a-device-s-hardware-key) of the USB device.
 
  
 

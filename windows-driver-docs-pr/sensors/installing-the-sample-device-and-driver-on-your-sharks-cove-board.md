@@ -14,7 +14,7 @@ Follow these steps to install the sample driver and attach an ADXL345 accelerome
 ## Install Windows on the Sharks Cove board
 
 
-For information about how to get a Sharks Cove board and how to install Windows on the board, see [Sharks Cove hardware development board](https://msdn.microsoft.com/library/windows/hardware/dn745910) and [SharksCove.org](http://go.microsoft.com/fwlink/p/?linkid=403167).
+For information about how to get a Sharks Cove board and how to install Windows on the board, see [Sharks Cove hardware development board](https://msdn.microsoft.com/library/windows/hardware/dn745910) and [SharksCove.org](https://go.microsoft.com/fwlink/p/?linkid=403167).
 
 ## Modify the ADXL345 to work with the Sharks Cove
 
@@ -44,7 +44,7 @@ On your host computer, install kits and tools as described in [Sharks Cove hardw
 ## Download and extract the SpbAccelerometer sample
 
 
-On the host computer go to [this page](http://go.microsoft.com/fwlink/p?linkid=506965) and click the download button. Click **Save**, and then click **Open Folder**. Right click SpbAccelerometer Sample Driver (UMDF Version 1).zip, and choose **Extract All**. Specify or browse to a folder for the extracted files. For example, you could extract to c:\\SpbAccelerometer.
+On the host computer go to [this page](https://go.microsoft.com/fwlink/p?linkid=506965) and click the download button. Click **Save**, and then click **Open Folder**. Right click SpbAccelerometer Sample Driver (UMDF Version 1).zip, and choose **Extract All**. Specify or browse to a folder for the extracted files. For example, you could extract to c:\\SpbAccelerometer.
 
 ## Open the driver solution in Visual Studio
 

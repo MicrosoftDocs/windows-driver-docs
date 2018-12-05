@@ -1,15 +1,24 @@
 ---
-title: What's new for Windows 10 display drivers (WDDM 2.0)
+title: What's new for Windows 10 display drivers (WDDM 2.0 and later)
 description: Describes new features in Windows 10 for display drivers
 ms.assetid: 619175D4-98DA-4B17-8F6F-71B13A31374D
-ms.date: 04/20/2017
+ms.date: 12/03/2018
 ms.localizationpriority: medium
 ---
 
-# What's new for Windows 10 display drivers (WDDM 2.0)
+# What's new for Windows 10 display drivers (WDDM 2.0 and later)
 
+## WDDM 2.5
 
-### <span id="Memory_Management"></span><span id="memory_management"></span><span id="MEMORY_MANAGEMENT"></span>Memory Management
+### Content changes
+
+| Topic | Date | Description |
+| --- | --- | --- |
+| [EDID Extension (VSDB) for HMDs and Specialized Displays](specialized-monitors-edid-extension.md) | 12/03/2018 | Specification for Display Manufacturers |
+
+## WDDM 2.0
+
+### Memory Management
 
 GPU virtual memory
 

@@ -13,7 +13,7 @@ This topic describes the static sensor properties that are available from the Pn
 
 The following table shows static sensor properties. The Class Extension (CX) writes these properties for each sensor when [SensorsCxSensorCreate](https://msdn.microsoft.com/library/windows/hardware/dn957087) is called. Client applications can use these properties to search for sensors on the Windows device.
 
-For more information about the data types shown in the **Type** column, see [PROPVARIANT structure](http://go.microsoft.com/fwlink/p/?linkid=313395).
+For more information about the data types shown in the **Type** column, see [PROPVARIANT structure](https://go.microsoft.com/fwlink/p/?linkid=313395).
 
 <table>
 <colgroup>
@@ -108,7 +108,7 @@ For more information about the data types shown in the **Type** column, see [PRO
 ## <span id="related_topics"></span>Related topics
 
 
-[PROPVARIANT structure](http://go.microsoft.com/fwlink/p/?linkid=313395)
+[PROPVARIANT structure](https://go.microsoft.com/fwlink/p/?linkid=313395)
 
 [**SensorConnectionType**](https://msdn.microsoft.com/library/windows/hardware/ff545701)
 
