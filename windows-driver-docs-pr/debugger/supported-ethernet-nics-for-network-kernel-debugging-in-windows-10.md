@@ -22,7 +22,7 @@ The list of supported adapters is for the following versions of Windows
 
 **Adapter Support for Other Versions of the WDK**  
 
-To determine which set of NICs is supported for any particular release of Windows, examine the `VerifiedNicList.xml` file that is in the debuggers directory installed by that WDK shipped with that particular release of Windows. For 64 bit Windows, by default, it will be installed in this directory:
+To determine which set of NICs is supported for any particular release of Windows, examine the `VerifiedNicList.xml` file that is in the debuggers directory installed by the WDK that shipped with that particular release of Windows. For 64 bit Windows, by default, it will be installed in this directory:
 
 `C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\VerifiedNicList.xml`
 
