@@ -26,18 +26,19 @@ Use this method in the Microsoft Store analytics API to download the CAB file th
 You can get other info about OEM hardware errors by using the [get OEM hardware error reporting data](get-oem-hardware-error-reporting-data.md) and [get details for an OEM hardware error](get-details-for-an-oem-hardware-error.md) methods in the Microsoft Store analytics API.
 
 > [!NOTE]
-> This method can only be used by developer accounts that belong to the [Windows Hardware Dev Center program](https://msdn.microsoft.com/windows/hardware/drivers/dashboard/get-started-with-the-hardware-dashboard).
+> This method can only be used by developer accounts that belong to the [Partner Center program](https://msdn.microsoft.com/windows/hardware/drivers/dashboard/get-started-with-the-hardware-dashboard).
 
 ## Prerequisites
 
 To use this method, you need to first do the following:
 
-* If you have not done so already, complete all the [prerequisites](https://docs.microsoft.com/windows/uwp/monetize/access-analytics-data-using-windows-store-services#prerequisites) for the Microsoft Store analytics API.
-* [Obtain an Azure AD access token](https://docs.microsoft.com/windows/uwp/monetize/access-analytics-data-using-windows-store-services#obtain-an-azure-ad-access-token) to use in the request header for this method. After you obtain an access token, you have 60 minutes to use it before it expires. After the token expires, you can obtain a new one.
-* Get the ID of the CAB file you want to download. To get this ID, use the [get details for an OEM hardware error](get-details-for-an-oem-hardware-error.md) method to retrieve details for a specific hardware error, and use the **cabIdHash** value in the response body of that method.
+- If you have not done so already, complete all the [prerequisites](https://docs.microsoft.com/windows/uwp/monetize/access-analytics-data-using-windows-store-services#prerequisites) for the Microsoft Store analytics API.
+
+- [Obtain an Azure AD access token](https://docs.microsoft.com/windows/uwp/monetize/access-analytics-data-using-windows-store-services#obtain-an-azure-ad-access-token) to use in the request header for this method. After you obtain an access token, you have 60 minutes to use it before it expires. After the token expires, you can obtain a new one.
+
+- Get the ID of the CAB file you want to download. To get this ID, use the [get details for an OEM hardware error](get-details-for-an-oem-hardware-error.md) method to retrieve details for a specific hardware error, and use the **cabIdHash** value in the response body of that method.
 
 ## Request
-
 
 ### Request syntax
 
@@ -45,13 +46,11 @@ To use this method, you need to first do the following:
 |--------|----------------------------------------------------------------------|
 | GET    | `https://manage.devcenter.microsoft.com/v1.0/my/analytics/hardware/cabdownload` |
 
-
 ### Request header
 
 | Header        | Type   | Description                                                                 |
 |---------------|--------|-----------------------------------------------------------------------------|
 | Authorization | string | Required. The Azure AD access token in the form **Bearer** &lt;*token*&gt;. |
-
 
 ### Request parameters
 
@@ -59,7 +58,6 @@ To use this method, you need to first do the following:
 |---------------|--------|---------------|------|
 | cabIdHash | string | The unique ID of the CAB file you want to download. To get this ID, use the [get details for an OEM hardware error](get-details-for-an-oem-hardware-error.md) method to retrieve details for a specific error in your app, and use the **cabIdHash** value in the response body of that method. |  Yes  |
 
- 
 ### Request example
 
 The following example demonstrates how to download a CAB file using this method.
