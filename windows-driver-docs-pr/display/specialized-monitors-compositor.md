@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 # Building a Custom Compositor App for HMDs and Specialized Monitors
 
-The [Windows.Devices.Display.Core API]() is a low-level WinRT API for third-party compositors and internal OS components that sits below all other public APIs for enumerating, configuring and driving display adapters and display targets in Windows. The idea is to treat the display controller as a separate “engine”, analogous to the 3D engine and the media engine on the GPU. This API is responsible for:
+The [Windows.Devices.Display.Core API](https://docs.microsoft.com/en-us/uwp/api/windows.devices.display.core) is a low-level WinRT API for third-party compositors and internal OS components that sits below all other public APIs for enumerating, configuring and driving display adapters and display targets in Windows. The idea is to treat the display controller as a separate “engine”, analogous to the 3D engine and the media engine on the GPU. This API is responsible for:
 
 * Answering queries about the display hardware (such as capabilities and possible display modes)
 * Answering queries about the current configuration
@@ -51,6 +51,7 @@ This API is for compositor apps driving specialized hardware only.
 | `Windows.Devices.Display.Core` **(this document)** | Used for enumerating targets, enumerating modes, configuring modes, allocating GPU surfaces for presentation, and presenting content to displays. |
 
 ## Scenarios
+
 Through each Windows 10 release there is a goal to improve scenarios around display and presentation, both in terms of stability and in terms of capability. The delta that is required is large enough of a change that instead of incrementally modifying the fullscreen presentation features in DXGI and in APIs like `SetDisplayConfig` / `QueryDisplayConfig` / `ChangeDisplaySettings`, a new API was needed to encompass the full range of display functionality.
 
 The Windows.Devices.Display.Core APIs are appropriate to use in the following two scenarios:
@@ -82,19 +83,19 @@ For enumerating DisplayTargets, setting and querying modes, etc. connections to 
 
 The Windows.Devices.Display.Core API is designed to ensure that compositors can acquire access to various system display state atomically, and with well-defined “staleness” behaviors. A major problem with past APIs has been that there is very little insight into system events and how state can change between API calls. For example, past APIs like `EnumDisplayDevices` and `EnumDisplaySettings` work by the caller passing in an index and making multiple calls. This is fundamentally flawed on the modern OS/hardware stacks because devices can arrive/depart at any time and other things can impact the list of available display modes (e.g. another component changing modes on another path). Likewise, DXGI provides [`IDXGIFactory1.IsCurrent`](https://docs.microsoft.com/en-us/windows/desktop/api/dxgi/nf-dxgi-idxgifactory1-iscurrent) to determine when system display state has changed (requiring a new `IDXGIFactory` to be created), but some updated values can be read from a live factory in some circumstances, which results in inconsistent behavior depending on what has changed.
 
-Windows.Devices.Display.Core therefore provides only a handful of APIs that directly read state from kernel. All objects are either immutable or else provide well-defined APIs to update/commit state back to kernel.
+Windows.Devices.Display.Core therefore provides only a handful of APIs that directly read state from the system. All objects are either immutable or else provide well-defined APIs to update/commit state back to the system.
 
-To read state from kernel, only these APIs are used:
+To read state from the system, only these APIs are used:
 
-* [`DisplayManager.GetCurrentTargets`](https://docs.microsoft.com/en-us/uwp/api/windows.devices.display.core.displaymanager.getcurrenttargets)
-* [`DisplayTarget.IsStale`](https://docs.microsoft.com/en-us/uwp/api/windows.devices.display.core.displaytarget.isstale)
-* [`DisplayManager.GetCurrentAdapters`](https://docs.microsoft.com/en-us/uwp/api/windows.devices.display.core.displaymanager.getcurrentadapters)
-* [`DisplayManager.TryReadCurrentStateForAllTargets`](https://docs.microsoft.com/en-us/uwp/api/windows.devices.display.core.displaymanager.tryreadcurrentstateforalltargets)/[`DisplayManager.TryAcquireTargetsAndReadCurrentState`](https://docs.microsoft.com/en-us/uwp/api/windows.devices.display.core.displaymanager.tryacquiretargetsandreadcurrentstate)
-* [`DisplayState.IsStale`](https://docs.microsoft.com/en-us/uwp/api/windows.devices.display.core.displaystate.isstale)
-* [`DisplayState.TryFunctionalize`](https://docs.microsoft.com/en-us/uwp/api/windows.devices.display.core.displaystate.tryfunctionalize)
-* [`DisplayPath.FindAllModes`](https://docs.microsoft.com/en-us/uwp/api/windows.devices.display.core.displaypath.findmodes)
+* [DisplayManager.GetCurrentTargets](https://docs.microsoft.com/en-us/uwp/api/windows.devices.display.core.displaymanager.getcurrenttargets)
+* [DisplayTarget.IsStale](https://docs.microsoft.com/en-us/uwp/api/windows.devices.display.core.displaytarget.isstale)
+* [DisplayManager.GetCurrentAdapters](https://docs.microsoft.com/en-us/uwp/api/windows.devices.display.core.displaymanager.getcurrentadapters)
+* [DisplayManager.TryReadCurrentStateForAllTargets](https://docs.microsoft.com/en-us/uwp/api/windows.devices.display.core.displaymanager.tryreadcurrentstateforalltargets)/[DisplayManager.TryAcquireTargetsAndReadCurrentState](https://docs.microsoft.com/en-us/uwp/api/windows.devices.display.core.displaymanager.tryacquiretargetsandreadcurrentstate)
+* [DisplayState.IsStale](https://docs.microsoft.com/en-us/uwp/api/windows.devices.display.core.displaystate.isstale)
+* [DisplayState.TryFunctionalize](https://docs.microsoft.com/en-us/uwp/api/windows.devices.display.core.displaystate.tryfunctionalize)
+* [DisplayPath.FindAllModes](https://docs.microsoft.com/en-us/uwp/api/windows.devices.display.core.displaypath.findmodes)
 
-To commit state back to kernel, only these APIs are used:
+To commit state back to the system, only these APIs are used:
 
-* [`DisplayManager.TryAcquireTarget`](https://docs.microsoft.com/en-us/uwp/api/windows.devices.display.core.displaymanager.tryacquiretarget)/[`ReleaseTarget`](https://docs.microsoft.com/en-us/uwp/api/windows.devices.display.core.displaymanager.releasetarget) (and acquiring targets with `DisplayManager.TryAcquireTargetsAnd*` methods) – Acquires ownership of DisplayTargets from kernel.
-* [`DisplayState.TryApply`](https://docs.microsoft.com/en-us/uwp/api/windows.devices.display.core.displaystate.tryapply) – Updates the current system display state by setting or clearing modes on all owned targets in the kernel, through the display drivers.
+* [DisplayManager.TryAcquireTarget](https://docs.microsoft.com/en-us/uwp/api/windows.devices.display.core.displaymanager.tryacquiretarget)/[ReleaseTarget](https://docs.microsoft.com/en-us/uwp/api/windows.devices.display.core.displaymanager.releasetarget) (and acquiring targets with DisplayManager.TryAcquireTargetsAnd* methods) – Acquires ownership of DisplayTargets from the system.
+* [DisplayState.TryApply](https://docs.microsoft.com/en-us/uwp/api/windows.devices.display.core.displaystate.tryapply) – Updates the current system display state by setting or clearing modes on all owned targets in the system, through the display drivers.
