@@ -2,11 +2,8 @@
 title: Driver Packages
 description: Driver Packages
 ms.assetid: e602c0c9-28eb-48bc-8a62-02f33b0c393a
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Driver Packages
@@ -25,9 +22,9 @@ This section provides information to help you determine which components to supp
 -   [Installation Component Overview](installation-component-overview.md)
 -   [Supplying an INF File](supplying-an-inf-file.md)
 
- 
+ 
 
- 
+ 
 
 
 

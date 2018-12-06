@@ -1,6 +1,5 @@
 ---
 title: Creating I/O Queues
-author: windows-driver-content
 description: Creating I/O Queues
 ms.assetid: 03b09c94-6b72-4234-b21f-203f93b7a2e8
 keywords:
@@ -8,17 +7,14 @@ keywords:
 - I/O queues WDK KMDF , default
 - default I/O queues WDK KMDF
 - creating I/O queues WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Creating I/O Queues
 
 
-## <a href="" id="ddk-creating-an-i-o-queue-df"></a>
+
 
 
 Most drivers create I/O queues in their [*EvtDriverDeviceAdd*](https://msdn.microsoft.com/library/windows/hardware/ff541693) callback function. To create an I/O queue for a device, the driver calls the framework queue object's [**WdfIoQueueCreate**](https://msdn.microsoft.com/library/windows/hardware/ff547401) method (which creates a framework queue object). The driver supplies a [**WDF\_IO\_QUEUE\_CONFIG**](https://msdn.microsoft.com/library/windows/hardware/ff552359) structure to the method. This structure contains configuration information about the queue, such as the queue's [dispatching method](dispatching-methods-for-i-o-requests.md) and pointers to [request handlers](request-handlers.md) that the framework calls when requests are available in the queue. The structure also indicates whether the queue will be [power-managed](using-power-managed-i-o-queues.md) and whether the driver supports zero-length buffers for the queue's I/O requests.
@@ -33,9 +29,9 @@ If a driver does not provide an I/O queue for requests of a particular type, and
 
 For examples of how drivers can use I/O queues, see [Example Uses of I/O Queues](example-uses-of-i-o-queues.md).
 
- 
+ 
 
- 
+ 
 
 
 

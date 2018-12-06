@@ -12,11 +12,8 @@ keywords:
 - mapping video memory to banked frame buffer
 - spanning multiple banks
 - multiple banks in frame buffer WDK Windows 2000 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Supporting Banked Frame Buffers
@@ -31,9 +28,9 @@ GDI cannot directly access [*banked memory*](https://msdn.microsoft.com/library/
 
 The *Permedia* sample display drivers that shipped with the Driver Development Kit (DDK) provide sample code for implementing banked frame buffer support.
 
-**Note**   The Microsoft Windows Driver Kit (WDK) does not contain the 3Dlabs Permedia2 (*3dlabs.htm*) and 3Dlabs Permedia3 (*Perm3.htm*) sample display drivers. You can get these sample drivers from the Windows Server 2003 SP1 DDK, which you can download from the [DDK - Windows Driver Development Kit](http://go.microsoft.com/fwlink/p/?linkid=21859) page of the WDHC website.
+**Note**   The Microsoft Windows Driver Kit (WDK) does not contain the 3Dlabs Permedia2 (*3dlabs.htm*) and 3Dlabs Permedia3 (*Perm3.htm*) sample display drivers. You can get these sample drivers from the Windows Server 2003 SP1 DDK, which you can download from the DDK - Windows Driver Development Kit page of the WDHC website.
 
- 
+ 
 
 The following figure shows a sample accelerator's frame buffer, a 1024-by-768 VGA display buffer, divided into several banks. This figure is provided for the purpose of illustration only. The display driver does not specifically use the physical address A000 but uses a logical address passed to it by the miniport driver.
 
@@ -61,7 +58,7 @@ In addition to altering the bounds values, the display driver sets the OC\_BANK\
 
 GDI must also be made to draw with reference to the beginning of the standard frame buffer. When called to draw, GDI simply gets a pointer to a SURFOBJ, which includes the **pvScan0**, **lDelta**, and **iBitmapFormat** members. GDI calculates where to draw on the surface by using these values as follows:
 
-```
+```cpp
 start_draw_point = pvScan0 + (y*lDelta) + (x*PixelSize(iBitmapFormat))
 ```
 
@@ -73,11 +70,10 @@ The next time the display driver calls GDI to draw that part of the object that 
 
 Consequently, when the display driver requests GDI to write the data that is to appear in the second and subsequent banks of the frame buffer, the driver must decrement the value of **pvScan0** so that GDI calculates a starting point that is still referenced to the example address of 0x100000. Continuing in the example, this means decrementing the value of **pvScan0** to a value of 0x090000 when drawing to the second bank of the frame buffer. As a result of this change to **pvScan0**, GDI still draws with a reference to address 0x100000. That is, 0x090000 + (64\*1024) + 0 is equal to 0x100000, where GDI must begin to draw in order for the data to be mapped into the second bank of the frame buffer.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Supporting%20Banked%20Frame%20Buffers%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

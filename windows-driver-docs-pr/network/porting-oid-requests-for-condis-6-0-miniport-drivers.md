@@ -4,17 +4,14 @@ description: Porting OID Requests for CoNDIS 6.0 Miniport Drivers
 ms.assetid: f432f149-f066-41ac-b9f9-2dd849da6395
 keywords:
 - porting OID requests WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Porting OID Requests for CoNDIS 6.0 Miniport Drivers
 
 
-## <a href="" id="ddk-porting-oid-requests-for-condis-6-0-miniport-drivers-ng"></a>
+
 
 
 In CoNDIS 6.0, the [**MiniportCoOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff559362) function replaces the NDIS 5.x [**MiniportCoRequest**](https://msdn.microsoft.com/library/windows/hardware/ff549413) function, and the [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure replaces the [**NDIS\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff557179) structure.
@@ -29,9 +26,9 @@ The [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware
 
 For more information about handling OID requests in a CoNDIS miniport driver, see [CoNDIS Miniport Driver OID Requests](condis-miniport-driver-oid-requests.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -4,11 +4,8 @@ description: UPS Minidriver Functionality
 ms.assetid: a93dbada-bcf7-4963-ba57-c6db5922c66b
 keywords:
 - UPS minidrivers WDK , functionality
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # UPS Minidriver Functionality
@@ -37,11 +34,10 @@ Besides exporting these functions, the minidriver must provide initial values fo
 
 Typically, a UPS minidriver communicates with a UPS unit through a COM port by calling the [**CreateFile**](https://msdn.microsoft.com/library/windows/desktop/aa363858), [**ReadFile**](https://msdn.microsoft.com/library/windows/desktop/aa365467), and [**WriteFile**](https://msdn.microsoft.com/library/windows/desktop/aa365747) functions (described in Windows SDK documentation). The minidriver is responsible for implementing whatever communication protocol the UPS unit supports.
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

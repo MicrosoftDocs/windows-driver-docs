@@ -2,11 +2,8 @@
 title: Authoring Tests in C++
 description: Authoring Tests in C++
 ms.assetid: ECADDDD6-5BD4-4c43-803F-47AE44467342
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Authoring Tests in C++
@@ -14,7 +11,7 @@ ms.technology: windows-devices
 
 The following code example shows a native C++ file that contains a single test class with two test methods on it.
 
-```
+```cpp
 1   #include "WexTestClass.h"
 2
 3   class SimpleTests   {
@@ -47,7 +44,7 @@ The following code example shows a native C++ file that contains a single test c
 
 If you wish to define the tests inline within the class declaration, you can do that as long as you include "WexTestClass.h" while **INLINE\_TEST\_METHOD\_MARKUP** is defined in the preprocessor.
 
-```
+```cpp
 1   #define INLINE_TEST_METHOD_MARKUP
 2   #include "WexTestClass.h"
 3
@@ -71,14 +68,14 @@ If you wish to define the tests inline within the class declaration, you can do 
 
 **Note**  If you put your test class declaration in a header file, it is best to only include that header file into one cpp file. Including a test class declaration into multiple CPP files results in extratraneous data being compiled into the test DLL.
 
- 
+ 
 
 ## <span id="Advanced_Authoring_Tests_in_C__"></span><span id="advanced_authoring_tests_in_c__"></span><span id="ADVANCED_AUTHORING_TESTS_IN_C__"></span>Advanced Authoring Tests in C++
 
 
 The following example uses setup and cleanup methods and declares metadata along with the test class and test method declarations. This example also contains a single class (**MetadataAndFixturesTests**) with two test methods.
 
-```
+```cpp
  1  #define INLINE_TEST_METHOD_MARKUP
  2  #include "WexTestClass.h"
  3
@@ -158,11 +155,10 @@ The following example uses setup and cleanup methods and declares metadata along
 
 TAEF setup and cleanup methods return bool and accept no parameters. The return value signals to the framework whether it can continue to run tests for a certain test unit. For example, if a class setup method fails and returns false, the framework will not run the class test methods.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[taef\taef]:%20Authoring%20Tests%20in%20C++%20%20RELEASE:%20%289/12/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

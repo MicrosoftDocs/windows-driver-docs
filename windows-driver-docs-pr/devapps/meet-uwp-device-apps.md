@@ -2,11 +2,8 @@
 title: Meet UWP device apps
 description: This topic provides an overview of the features and capabilities that make a UWP device app uniquely different from a regular UWP app.
 ms.assetid: 395745E6-7A97-4B26-A82C-0729E7B999C6
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Meet UWP device apps
@@ -16,7 +13,7 @@ Device manufacturers can create a UWP device app that serves as a companion to t
 
 **Note**  Each of these features is optional. A single device app doesn't need to use all of them. All of these features require device metadata.
 
- 
+ 
 
 For more info about what a UWP device app is and how to create one, see [Building UWP device apps](the-workflow.md).
 
@@ -31,7 +28,7 @@ To create a background task for device servicing (device updates), use the [Devi
 
 **Note**  Device background tasks constrain the amount of time the app can run in the background and are not intended to allow indefinite operation or infinite synchronization.
 
- 
+ 
 
 ## <span id="AutoPlay"></span><span id="autoplay"></span><span id="AUTOPLAY"></span>AutoPlay
 
@@ -82,7 +79,7 @@ UWP device apps can automatically install when a user connects the device to the
 
 **Warning**  It's important to consider that the automatic installation feature does not provide a notification to the user when the app is installed. Some users may find this experience confusing and frustrating, and give your app a bad rating.
 
- 
+ 
 
 For more info about automatic installation, see [Automatic installation for printers and cameras](auto-install-for-uwp-device-apps.md).
 
@@ -97,11 +94,10 @@ For more info about automatic installation, see [Automatic installation for prin
 
 [Device sync and update for UWP device apps](device-sync-and-update-for-uwp-device-apps.md)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devapps\devapps]:%20Meet%20Windows%20Store%20device%20apps%20%20RELEASE:%20%281/20/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

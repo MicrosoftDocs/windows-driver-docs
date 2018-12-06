@@ -1,20 +1,16 @@
 ---
 title: WMI Generic Property Page Provider
-author: windows-driver-content
 description: WMI Generic Property Page Provider
 ms.assetid: 44cfafdf-c8e2-4175-95e5-3c5d03dc206d
 keywords: ["WMI WDK kernel , property sheets", "property sheets WDK WMI", "generic property page providers WDK WMI", "property pages WDK WMI", "property qualifiers WDK WMI", "device property sheets WDK WMI"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WMI Generic Property Page Provider
 
 
-## <a href="" id="ddk-wmi-generic-property-page-provider-kg"></a>
+
 
 
 On Windows XP and later operating systems, drivers can expose their WMI classes through the WMI generic property page provider. The provider uses each class declaration to create a simple property page for the class properties.
@@ -51,7 +47,7 @@ Each device that exposes classes to be used by Wmiprop.dll must enable Wmiprop.d
 
 For example:
 
-```
+```cpp
 ; This section is defined in the Co-installer section, as follows.
 ; [Co-installer]
 ; AddReg = CoInstaller_AddReg
@@ -65,7 +61,7 @@ HKLM, System\CurrentControlSet\Control\CoDeviceInstallers, ClassGUID,
 
 You must also specify the particular WMI classes to be exposed through the generic property provider. To do this, set the **WmiConfigClasses** value-entry to be a comma-separated list of the WMI classes in the *add-registry-section* of the device class or device hardware instance.
 
-```
+```cpp
 ; the device class AddReg section.
 [device_class_AddReg]
 HKR,,"WmiConfigClasses",0x00000000,"class1,class2"
@@ -79,12 +75,10 @@ See [**INF AddReg Directive**](https://msdn.microsoft.com/library/windows/hardwa
 
 Wmiprop.dll assumes only one instance of each class. Each class is represented by a tab on the property sheet. Use the **DisplayName** property qualifier to set the title text of the tab. A property page for a class only appears if there is currently an instance of the class. Therefore, if the device is removed or not started, the pages do not appear.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20WMI%20Generic%20Property%20Page%20Provider%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

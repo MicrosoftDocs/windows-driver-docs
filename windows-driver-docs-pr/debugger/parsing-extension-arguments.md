@@ -3,11 +3,8 @@ title: Parsing Extension Arguments
 description: Parsing Extension Arguments
 ms.assetid: 3c75fb75-50d0-48e4-abf4-e4dba9a080f9
 keywords: ["EngExtCpp extensions, parsing arguments"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Parsing Extension Arguments
@@ -45,13 +42,13 @@ Overrides the default short description of the command-line arguments. The exten
 
 Here are some examples of directives. The following string is used by an extension command that parses its own arguments. It also provides short and long descriptions for use with the automatic **!help** extension command:
 
-```
+```dbgcmd
 {{custom}}{{s:<arg1> <arg2>}}{{l:arg1 - Argument 1\narg2 - Argument 2}}
 ```
 
 The following string changes the argument option prefix characters to '`/`' or '`-`'. With this directive, the arguments will be specified using '`+arg`' and '`:arg`' instead of '`/arg`' and '`-arg`':
 
-```
+```dbgcmd
 {{opt:+:}}
 ```
 
@@ -63,7 +60,7 @@ Argument descriptions are enclosed by single braces (`'{'` and `'}'`).
 
 Each argument description has the following syntax:
 
-```
+```dbgcmd
 {[optname];[type[,flags]];[argname];[argdesc]}
 ```
 
@@ -119,19 +116,19 @@ A description of the argument. This is the description printed by the automatic 
 
 Here are some examples of argument descriptions. The following expression defines a command which takes a single optional expression argument. The argument must fit in 32 bits. If the argument isn't present on the command line, the default value of 0x100 will be used.
 
-```
+```dbgcmd
 {;e32,o,d=0x100;flags;Flags to control command}
 ```
 
 The following expression defines a command with an optional Boolean "**/v**" argument and a required unnamed string argument.
 
-```
+```dbgcmd
 {v;b;;Verbose mode}{;s;name;Name of object}
 ```
 
 The following expression defines a command that has an optional named expression argument **/oname** *expr* and an optional named string argument **/eol** *str*. If **/eol** is present, its value will be set to the remainder of the command line and no further arguments will be parsed.
 
-```
+```dbgcmd
 {oname;e;expr;Address of object}{eol;x;str;Commands to use}
 ```
 
@@ -155,11 +152,10 @@ The method [**SetUnnamedArg**](https://msdn.microsoft.com/library/windows/hardwa
 
 Similar methods exist for named arguments. [**SetArg**](https://msdn.microsoft.com/library/windows/hardware/ff556614) is used to change the value of any named argument and [**SetArgStr**](https://msdn.microsoft.com/library/windows/hardware/ff556618) and [**SetArgU64**](https://msdn.microsoft.com/library/windows/hardware/ff556622) are used for named string and expression arguments respectively.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Parsing%20Extension%20Arguments%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

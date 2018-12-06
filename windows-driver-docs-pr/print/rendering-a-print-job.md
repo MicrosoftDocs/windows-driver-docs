@@ -1,6 +1,5 @@
 ---
 title: Rendering a Print Job
-author: windows-driver-content
 description: Rendering a Print Job
 ms.assetid: 78967839-b518-41c0-8825-b00f8b8560e6
 keywords:
@@ -10,17 +9,14 @@ keywords:
 - jobs WDK print , rendering
 - print jobs WDK , rendering
 - banding WDK print
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Rendering a Print Job
 
 
-## <a href="" id="ddk-rendering-a-print-job-gg"></a>
+
 
 
 Print jobs are either rendered as they are created, or they are written to a spool file as EMF records. In the case of EMF records, rendering takes place when the EMF [*print processor*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-print-processor) (localspl.dll) plays back the records. Rendering consists of a series of calls to the user-mode GDI drawing functions, beginning with **CreateDC** (described in the Microsoft Windows SDK documentation). The call to **CreateDC** is the first in a series of application calls that lead to a chain of actions involving the graphics rendering engine (GRE, also known as kernel-mode GDI), and the printer graphics DLL.
@@ -57,7 +53,7 @@ For each banding pass on a physical page{
 [*DrvQueryPerBandInfo*](https://msdn.microsoft.com/library/windows/hardware/ff556268)
 Rendering operations
 [**DrvNextBand**](https://msdn.microsoft.com/library/windows/hardware/ff556250) // Send raster data for this band, then clear surface to reuse with next band
-    }
+    }
 }
 [**DrvEndDoc**](https://msdn.microsoft.com/library/windows/hardware/ff556215)
 ### <a href="" id="banding-not-in-use"></a> Banding not in use
@@ -99,12 +95,10 @@ A printer graphics DLL can provide a [**DrvEscape**](https://msdn.microsoft.com/
 
 **CreateDC**, **ResetDC**, and **DeleteDC** are described in the Microsoft Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Rendering%20a%20Print%20Job%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

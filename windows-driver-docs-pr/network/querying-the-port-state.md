@@ -8,17 +8,14 @@ keywords:
 - ports WDK NDIS , OID requests
 - NDIS ports WDK , OID requests
 - OID requests WDK NDIS ports
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Querying the Port State
 
 
-## <a href="" id="ddk-querying-port-states-ng"></a>
+
 
 
 Overlying drivers can issue an [OID\_GEN\_PORT\_STATE](https://msdn.microsoft.com/library/windows/hardware/ff569624) OID query request to get the current state of the port that is specified in the **PortNumber** member of an [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure. NDIS handles this OID, and miniport drivers do not receive this OID query. NDIS receives port state information in the [**NDIS\_PORT\_CHARACTERISTICS**](https://msdn.microsoft.com/library/windows/hardware/ff566791) structure.
@@ -29,9 +26,9 @@ Overlying drivers should avoid using OID\_GEN\_PORT\_STATE when possible and sho
 
 If the OID\_GEN\_PORT\_STATE query succeeds, NDIS returns the port state information in an [**NDIS\_PORT\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff566800) structure.
 
- 
+ 
 
- 
+ 
 
 
 

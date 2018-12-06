@@ -7,18 +7,15 @@ keywords:
 - AH-protected packets WDK IPsec offload , routing interface changed
 - ESP-protected packets WDK IPsec offload , NIC removed and
 - AH-protected packets WDK IPsec offload , NIC removed and
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Impact of Network Interface Changes on IPsec Offloads
 
 \[The IPsec Task Offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-impact-of-network-interface-changes-on-ipsec-offloads-ng"></a>
+
 
 
 The following events in the network interface affect the offloading of Internet protocol security (IPsec) tasks:
@@ -31,9 +28,9 @@ The following events in the network interface affect the offloading of Internet 
 
     When network traffic is routed through a new interface, the TCP/IP stack temporarily performs IPsec tasks until it has added the appropriate SAs to the NIC that is used in the new interface. The TCP/IP stack adds an SA to a NIC by issuing [OID\_TCP\_TASK\_IPSEC\_ADD\_SA](https://msdn.microsoft.com/library/windows/hardware/ff569808). After the SAs on the NIC that is used for the old interface expire, the TCP/IP transport issues [OID\_TCP\_TASK\_IPSEC\_DELETE\_SA](https://msdn.microsoft.com/library/windows/hardware/ff569810) as many times as necessary to request that the NIC's miniport driver delete the SAs from the NIC.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,8 @@
 title: Hyper-V Extensible Switch Control Path
 description: Hyper-V Extensible Switch Control Path
 ms.assetid: 15F651F2-4C46-44CE-89CE-3B86AE48A851
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Hyper-V Extensible Switch Control Path
@@ -22,11 +19,11 @@ This section includes the following topics:
 
 **Note**  In the extensible switch interface, NDIS filter drivers are known as *extensible switch extensions* and the driver stack is known as the *extensible switch driver stack*.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

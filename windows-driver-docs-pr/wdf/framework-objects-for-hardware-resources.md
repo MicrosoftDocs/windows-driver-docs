@@ -1,6 +1,5 @@
 ---
 title: Framework Objects for Hardware Resources
-author: windows-driver-content
 description: Framework Objects for Hardware Resources
 ms.assetid: 64eb628f-ce3d-494b-9fc1-7179a722c5f2
 keywords:
@@ -13,11 +12,8 @@ keywords:
 - resource-range-list objects WDK KMDF
 - resource-requirements-list objects WDK KMDF
 - hardware resources WDK KMDF , specifying
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Framework Objects for Hardware Resources
@@ -34,9 +30,9 @@ Each framework resource-range-list object represents a [logical configuration](h
 <a href="" id="framework-resource-list-objects"></a>*Framework resource-list objects*  
 Each framework resource-list object represents a logical configuration (that is, a set of specific resources) in a [resource list](https://msdn.microsoft.com/library/windows/hardware/ff547012). Handles to these objects have a type of WDFCMRESLIST. The object defines [framework resource-list object methods](https://msdn.microsoft.com/library/windows/hardware/dn265665).
 
- 
+ 
 
- 
+ 
 
 
 

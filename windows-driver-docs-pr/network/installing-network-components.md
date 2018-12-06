@@ -8,17 +8,14 @@ keywords:
 - installing network components WDK , steps
 - network component installations WDK , steps
 - notifications WDK networking , installing network components
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installing Network Components
 
 
-## <a href="" id="ddk-installing-network-componentsn-ng"></a>
+
 
 
 Network components are installed by the network configuration subsystem.
@@ -29,7 +26,7 @@ Network components are installed by the network configuration subsystem.
 
     If the component owns a notify object, the class installer retrieves the name of the DLL that houses the notify object. This DLL appears in the component's INF file as follows:
 
-    ```
+    ```cpp
     HKR, Ndi, ComponentDll,     0,     "notifyobject.dll"
     ```
 
@@ -59,15 +56,15 @@ Network components are installed by the network configuration subsystem.
 
 6.  To configure the component's driver, the network configuration subsystem calls the notify object's [**INetCfgComponentControl::ApplyPnpChanges**](https://msdn.microsoft.com/library/windows/hardware/ff547726) method and passes the [**INetCfgPnpReconfigCallback**](https://msdn.microsoft.com/library/windows/hardware/ff547935) interface. The notify object calls the [**INetCfgPnpReconfigCallback::SendPnpReconfig**](https://msdn.microsoft.com/library/windows/hardware/ff547943) method to send configuration information to its component's driver.
 
-```
+```cpp
 
 ```
 
 For more information about the Setup API and on files for unattended setup, see the Microsoft Windows SDK.
 
- 
+ 
 
- 
+ 
 
 
 

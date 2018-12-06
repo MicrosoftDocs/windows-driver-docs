@@ -3,17 +3,14 @@ title: drvobj
 description: The drvobj extension displays detailed information about a DRIVER_OBJECT.
 ms.assetid: 98f3cacf-311c-4000-8336-4964cc2cb9b0
 keywords: ["drvobj Windows Debugging"]
-ms.author: windowsdriverdev
-ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 11/16/2018
 topic_type:
 - apiref
 api_name:
 - drvobj
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !drvobj
@@ -21,7 +18,7 @@ api_type:
 
 The **!drvobj** extension displays detailed information about a DRIVER\_OBJECT.
 
-```
+```dbgcmd
 !drvobj DriverObject [Flags] 
 ```
 
@@ -45,30 +42,14 @@ Lists with detailed information the device objects owned by the driver (requires
 
 ### <span id="DLL"></span><span id="dll"></span>DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Kdextx86.dll</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Kdexts.dll</p></td>
-</tr>
-</tbody>
-</table>
+Kdexts.dll
 
- 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
 See [Plug and Play Debugging](plug-and-play-debugging.md) for examples and applications of this extension command. For information about driver objects, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
-Remarks
+## Remarks
 -------
 
 If *DriverObject* specifies the name of the device but supplies no prefix, the prefix "\\Driver\\" is assumed. Note that this command will check to see if *DriverObject* is a valid address or device name before using the expression evaluator.
@@ -79,7 +60,7 @@ This extension command will display a list of all device objects created by a sp
 
 The following is an example for the Symbios Logic 810 SCSI miniport driver:
 
-```
+```dbgcmd
 kd> bp DriverEntry          //  breakpoint at DriverEntry
 
 kd> g
@@ -98,11 +79,10 @@ Device Object list:
 
 You can also use [**!devobj 809d50d0**](-devobj.md) to get information about the device object.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!drvobj%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

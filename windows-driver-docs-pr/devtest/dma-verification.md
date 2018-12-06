@@ -11,11 +11,8 @@ keywords:
 - system DMA WDK Driver Verifier
 - Direct Memory Access WDK Driver Verifier
 - DMA errors WDK Driver Verifier
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # DMA Verification
@@ -49,7 +46,7 @@ Scatter/gather DMA is a shortcut method that sets up several packet DMA transfer
 
 **Note**  *Scatter/gather capability* does not mean that the device can use the scatter/gather routines. Scatter/gather capability refers to a flag in the device description that indicates that the device is able to read or write from any area in memory, instead of just a certain range.
 
- 
+ 
 
 <span id="System_DMA"></span><span id="system_dma"></span><span id="SYSTEM_DMA"></span>*System DMA*  
 System DMA is performed by programming the system DMA controller on the motherboard to do the transfer directly. Only ISA cards can use system DMA.
@@ -153,11 +150,10 @@ You can activate the DMA Verification feature for one or more drivers by using D
 
     The DMA Verification feature is also included in the standard settings. To use this feature, in Driver Verifier Manager, click **Create Standard Settings**.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20DMA%20Verification%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

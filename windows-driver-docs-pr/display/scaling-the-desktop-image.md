@@ -11,11 +11,8 @@ keywords:
 - CCD concepts WDK Windows Server 2008 R2 display , scaling the desktop image
 - scaling the desktop image WDK Windows 7 display
 - scaling the desktop image WDK Windows Server 2008 R2 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Scaling the Desktop Image
@@ -85,7 +82,7 @@ The following table shows the different [**SetDisplayConfig**](https://msdn.micr
 <tr class="odd">
 <td align="left"><p>AdapterDefault</p></td>
 <td align="left"><p>The adapter default scaling value</p>
-<p>Currently, on tablet systems, the default is stretched. On non-tablet systems with graphics adapters that support the [Windows Display Driver Model (WDDM)](windows-vista-display-driver-model-design-guide.md), the default is defined by the driver. On non-tablet systems with graphics adapters that support the Windows Display Driver Model (WDDM) with [features new for Windows 7](https://msdn.microsoft.com/library/windows/hardware/ff557343), the default is DC_ASPECTRATIOCENTEREDMAX.</p></td>
+<p>Currently, on tablet systems, the default is stretched. On non-tablet systems with graphics adapters that support the <a href="windows-vista-display-driver-model-design-guide.md" data-raw-source="[Windows Display Driver Model (WDDM)](windows-vista-display-driver-model-design-guide.md)">Windows Display Driver Model (WDDM)</a>, the default is defined by the driver. On non-tablet systems with graphics adapters that support the Windows Display Driver Model (WDDM) with <a href="https://msdn.microsoft.com/library/windows/hardware/ff557343" data-raw-source="[features new for Windows 7](https://msdn.microsoft.com/library/windows/hardware/ff557343)">features new for Windows 7</a>, the default is DC_ASPECTRATIOCENTEREDMAX.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>DatabaseValue</p></td>
@@ -94,7 +91,7 @@ The following table shows the different [**SetDisplayConfig**](https://msdn.micr
 </tbody>
 </table>
 
- 
+ 
 
 The following table shows the values that are saved in the database and the values that are actually set.
 
@@ -219,7 +216,7 @@ DatabaseValue
 
 DatabaseValue
 
- 
+ 
 
 The following table shows how the scaling that a caller can pass to the legacy [**ChangeDisplaySettingsEx**](https://msdn.microsoft.com/library/windows/desktop/dd183413)API (described in the Windows SDK documentation) maps to the scaling set.
 
@@ -294,7 +291,7 @@ DatabaseValue
 
 DatabaseValue
 
- 
+ 
 
 The following table shows how display configuration scaling is translated and returned from [**EnumDisplaySettings**](https://msdn.microsoft.com/library/windows/desktop/dd162611).
 
@@ -337,7 +334,7 @@ The following table shows how display configuration scaling is translated and re
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="directx_games_and_scaling"></span><span id="DIRECTX_GAMES_AND_SCALING"></span>DirectX Games and Scaling
 
@@ -370,15 +367,14 @@ Microsoft DirectX 9L and earlier runtimes require that applications always call 
 </tbody>
 </table>
 
- 
+ 
 
 By using this information in combination with the preceding scaling tables, you can determine the expected scaling from a DirectX application.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Scaling%20the%20Desktop%20Image%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

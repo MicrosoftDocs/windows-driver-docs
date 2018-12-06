@@ -8,17 +8,14 @@ keywords:
 - property pages WDK networking
 - properties WDK networking
 - displaying network configuration properties
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Displaying and Changing Properties
 
 
-## <a href="" id="ddk-displaying-and-changing-properties-ng"></a>
+
 
 
 The network configuration subsystem displays Property pages for a network component and changes the component's parameters.
@@ -37,9 +34,9 @@ If the user changes one of the component's parameters on one of the custom pages
 
 To apply the change, the network configuration subsystem calls the notify object's [**INetCfgComponentControl::ApplyRegistryChanges**](https://msdn.microsoft.com/library/windows/hardware/ff547727) method to modify information about the network component in the registry. To configure the component's driver with the modified information, the network configuration subsystem calls the notify object's [**INetCfgComponentControl::ApplyPnpChanges**](https://msdn.microsoft.com/library/windows/hardware/ff547726) method and passes the [**INetCfgPnpReconfigCallback**](https://msdn.microsoft.com/library/windows/hardware/ff547935) interface.
 
- 
+ 
 
- 
+ 
 
 
 

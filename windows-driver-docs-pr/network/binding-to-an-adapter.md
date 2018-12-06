@@ -6,17 +6,14 @@ keywords:
 - protocol drivers WDK networking , binding to adapter
 - NDIS protocol drivers WDK , binding to adapter
 - binding operation WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Binding to an Adapter
 
 
-## <a href="" id="ddk-binding-to-an-adapter-ng"></a>
+
 
 
 NDIS calls a protocol driver's [*ProtocolBindAdapterEx*](https://msdn.microsoft.com/library/windows/hardware/ff570220) function to open a binding whenever an underlying adapter to which the driver can bind becomes available. After NDIS calls *ProtocolBindAdapterEx*, the binding enters the Opening state. In the *Opening* state, the protocol driver allocates resources for the binding and opens the adapter.
@@ -49,9 +46,9 @@ A protocol driver calls the [**NdisCloseAdapterEx**](https://msdn.microsoft.com/
 
 If after opening the adapter and before completing the bind request, *ProtocolBindAdapterEx* encounters a failure and must close the binding to the adapter, it can call **NdisCloseAdapterEx**. For more information about closing an adapter, see [Unbinding from an Adapter](unbinding-from-an-adapter.md).
 
- 
+ 
 
- 
+ 
 
 
 

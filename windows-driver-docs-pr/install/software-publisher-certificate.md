@@ -9,11 +9,8 @@ keywords:
 - public release driver signing WDK , SPC
 - release signing WDK , SPC
 - cross-certificate WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Software Publisher Certificate
@@ -23,7 +20,7 @@ To comply with the [kernel-mode code signing policy](kernel-mode-code-signing-po
 
 **Note**  Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) and Windows Server 2016 kernel-mode drivers must be signed by the Windows Hardware Dev Center Dashboard and the Windows Hardware Dev Center Dashboard requires an EV certificate. For more info about these changes, see [Driver Signing Changes in Windows 10](http://blogs.msdn.com/b/windows_hardware_certification/archive/2015/04/01/driver-signing-changes-in-windows-10.aspx).
 
- 
+ 
 
 ### Cross-Certificates
 
@@ -51,13 +48,13 @@ To create a .*pfx* file from the pair of files issued by the CA, follow these in
 
 -   To convert a *.pvk* file and an *.spc* file to a *.pfx* file, use the following [**Pvk2Pfx**](https://msdn.microsoft.com/library/windows/hardware/ff550672) command at a command prompt:
 
-    ```
+    ```cpp
     Pvk2Pfx -pvk mypvkfile.pvk -pi mypvkpassword -spc myspcfile.spc -pfx mypfxfile.pfx -po pfxpassword -f
     ```
 
 -   To convert a *.pvk* file and a *.cer* file, to a *.pfx* file, use the following Pvk2Pfx command at a command prompt:
 
-    ```
+    ```cpp
     Pvk2Pfx -pvk mypvkfile.pvk -pi mypvkpassword -spc mycerfile.cer -pfx mypfxfile.pfx -po pfxpassword -f
     ```
 
@@ -83,9 +80,9 @@ After obtaining a *.pfx* file from a CA, or creating a *.pfx* file from a *.pvk*
 
 2.  Follow the procedure in the Certificate Import Wizard to import the code-signing certificate into the Personal certificate store.
 
- 
+ 
 
- 
+ 
 
 
 

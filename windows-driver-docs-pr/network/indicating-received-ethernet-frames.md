@@ -6,24 +6,21 @@ keywords:
 - Ethernet WDK networking
 - frames WDK networking
 - TCP/IP transport of Ethernet frames WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Indicating Received Ethernet Frames
 
 
-## <a href="" id="ddk-indicating-received-ethernet-frames-ng"></a>
+
 
 
 The Windows TCP/IP protocol driver imposes a set of requirements for receiving Ethernet frames. Any driver that originates receive indications of Ethernet frames or modifies receive indications of underlying drivers must support the general requirements that TCP/IP imposes. These drivers include Ethernet miniport drivers, MUX intermediate drivers, and filter drivers.
 
 **Note**  If a driver does not follow these requirements, overlying drivers (such as the TCP/IP transport, MUX intermediate drivers, and filter drivers) might behave unpredictably.
 
- 
+ 
 
 Drivers that originate Ethernet receive indications must support the following requirements:
 
@@ -39,15 +36,15 @@ Drivers that originate Ethernet receive indications must support the following r
 
     **Note**  In NDIS 6.0 for Windows Vista, each [**NET\_BUFFER**](https://msdn.microsoft.com/library/windows/hardware/ff568376) structure must contain only one MDL.
 
-     
+     
 
 -   Drivers must not split received Ethernet frames in the middle of the IP header, IPv4 options, IPsec headers, IPv6 extension headers, or upper-layer protocol headers, unless the first MDL contains at least as many bytes as NDIS specified for the lookahead size.
 
 NDIS protocol and filter drivers must support split Ethernet frames in receive indications if such split frames comply with the restrictions that are defined in the preceding list item. The restrictions ensure that the protocol and filter drivers are compatible with future Windows versions.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -7,11 +7,8 @@ keywords:
 - graphics drivers WDK Windows 2000 display , data types
 - drawing WDK GDI , data types
 - data types WDK GDI
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # GDI Data Types
@@ -47,7 +44,7 @@ The data types defined in the following table appear in the device driver interf
 <td align="left"><p>An 8-bit unsigned integer.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>BRUSHOBJ*</p></td>
+<td align="left"><p>BRUSHOBJ<em></p></td>
 <td align="left"><p>pbo</p></td>
 <td align="left"><p>A pointer to a brush object.</p></td>
 </tr>
@@ -57,7 +54,7 @@ The data types defined in the following table appear in the device driver interf
 <td align="left"><p>A clipline object.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>CLIPOBJ*</p></td>
+<td align="left"><p>CLIPOBJ</em></p></td>
 <td align="left"><p>pco</p></td>
 <td align="left"><p>A pointer to a clipping object.</p></td>
 </tr>
@@ -92,7 +89,7 @@ The data types defined in the following table appear in the device driver interf
 <td align="left"><p>A set of 32-bit flags.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>FONTOBJ*</p></td>
+<td align="left"><p>FONTOBJ<em></p></td>
 <td align="left"><p>pfo</p></td>
 <td align="left"><p>A pointer to a font object.</p></td>
 </tr>
@@ -132,12 +129,12 @@ The data types defined in the following table appear in the device driver interf
 <td align="left"><p>A 32-bit quantity, whose lower 16 bits define foreground and background mix modes.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>PALOBJ*</p></td>
+<td align="left"><p>PALOBJ</em></p></td>
 <td align="left"><p>ppalo</p></td>
 <td align="left"><p>A pointer to a palette object.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>PATHOBJ*</p></td>
+<td align="left"><p>PATHOBJ<em></p></td>
 <td align="left"><p>ppo</p></td>
 <td align="left"><p>A pointer to a path object.</p></td>
 </tr>
@@ -187,12 +184,12 @@ The data types defined in the following table appear in the device driver interf
 <td align="left"><p>A structure that consists of {LONG <strong>cx</strong>, <strong>cy</strong>;}.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>STROBJ*</p></td>
+<td align="left"><p>STROBJ</em></p></td>
 <td align="left"><p>pstro</p></td>
 <td align="left"><p>A pointer to a text string object.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>SURFOBJ*</p></td>
+<td align="left"><p>SURFOBJ<em></p></td>
 <td align="left"><p>pso</p></td>
 <td align="left"><p>A pointer to a surface object.</p></td>
 </tr>
@@ -207,7 +204,7 @@ The data types defined in the following table appear in the device driver interf
 <td align="left"><p>A 16-bit unsigned integer.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>XFORMOBJ*</p></td>
+<td align="left"><p>XFORMOBJ</em></p></td>
 <td align="left"><p>pxo</p></td>
 <td align="left"><p>A pointer to a coordinate transform object.</p></td>
 </tr>
@@ -219,7 +216,7 @@ The data types defined in the following table appear in the device driver interf
 </tbody>
 </table>
 
- 
+ 
 
 The parameter prefixes listed in the next table are used to modify variable name prefixes in accordance with their usage.
 
@@ -250,13 +247,12 @@ The parameter prefixes listed in the next table are used to modify variable name
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20GDI%20Data%20Types%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

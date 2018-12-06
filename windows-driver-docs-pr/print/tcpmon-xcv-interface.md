@@ -1,6 +1,5 @@
 ---
 title: TCPMON Xcv Interface
-author: windows-driver-content
 description: TCPMON Xcv Interface
 ms.assetid: 7b2b1cff-ab8f-44e0-9327-dc60a0072bf5
 keywords:
@@ -8,24 +7,21 @@ keywords:
 - transceive (Xcv) interface WDK print
 - Xcv interface WDK print
 - TCPMON Xcv interface WDK print
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # TCPMON Xcv Interface
 
 
-## <a href="" id="ddk-tcpmon-xcv-interface-gg"></a>
+
 
 
 This section describes the transceive (Xcv) interface for the standard TCP/IP port monitor (TCPMON). This interface, which is implemented using [**XcvData**](https://msdn.microsoft.com/library/windows/hardware/ff564255) and [**XcvDataPort**](https://msdn.microsoft.com/library/windows/hardware/ff564258) function calls, enables those using it to configure a TCP/IP printer port or to obtain information about a TCP/IP printer port configuration. The Xcv interface described in this section is specific to TCP/IP ports. Other Xcv interfaces might be available for other port types.
 
 To obtain a handle to an Xcv interface for either a local machine or a remote machine, call the **OpenPrinter** function (described in the Microsoft Windows SDK documentation). The following code example illustrates how to obtain an Xcv handle to a port:
 
-```
+```cpp
 HANDLE hXcv = INVALID_HANDLE_VALUE;
 PRINTER_DEFAULTS Defaults = { NULL, NULL, <Required Access> };
 
@@ -46,7 +42,7 @@ In the code example, *ServerName* and *PortName* represent server and port name 
 
 If the port does not yet exist, the Xcv handle can be obtained from the server by specifying the monitor name. (In the case of the standard TCP/IP port monitor port, this is "Standard TCP/IP Port".) The following code example illustrates how to obtain an Xcv data handle to a port monitor:
 
-```
+```cpp
 HANDLE hXcv = INVALID_HANDLE_VALUE;
 PRINTER_DEFAULTS Defaults = { NULL, NULL, <Required Access> };
 
@@ -114,14 +110,12 @@ Note that the return value from the **XcvData** function indicates only whether 
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20TCPMON%20Xcv%20Interface%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

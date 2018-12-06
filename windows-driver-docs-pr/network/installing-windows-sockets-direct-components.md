@@ -2,17 +2,14 @@
 title: Installing Windows Sockets Direct Components
 description: Installing Windows Sockets Direct Components
 ms.assetid: d9f428a7-0335-4df1-81f8-977189b0b9a4
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installing Windows Sockets Direct Components
 
 
-## <a href="" id="ddk-installing-windows-sockets-direct-components-ng"></a>
+
 
 
 The following topics describe how Windows Sockets Direct components (that is, the Windows Sockets switch and individual SAN service providers) are installed:
@@ -21,9 +18,9 @@ The following topics describe how Windows Sockets Direct components (that is, th
 
 [Installing a SAN Service Provider](installing-a-san-service-provider.md)
 
- 
+ 
 
- 
+ 
 
 
 

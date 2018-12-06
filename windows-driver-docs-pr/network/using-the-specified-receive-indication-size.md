@@ -5,11 +5,8 @@ ms.assetid: b6a53683-36da-4184-8154-c3d77b6daf8e
 keywords:
 - delivering received data WDK TCP chimney offload , indication size
 - indication size WDK TCP chimney offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using the Specified Receive Indication Size
@@ -17,7 +14,7 @@ ms.technology: windows-devices
 
 \[The TCP chimney offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-using-the-specified-receive-indication-size-ng"></a>
+
 
 
 In the **RcvIndicationSize** member of the [**TCP\_OFFLOAD\_STATE\_CACHED**](https://msdn.microsoft.com/library/windows/hardware/ff570937) structure, the host stack can specify the optimum number of data bytes that the offload target should supply in a single call to the [**NdisTcpOffloadReceiveHandler**](https://msdn.microsoft.com/library/windows/hardware/ff564606) function. Typically, an application that uses the indicate-and-post model for receiving data (which is described in the following paragraphs) specifies a receive indication size to the host stack.
@@ -32,9 +29,9 @@ The following scenarios illustrate optional optimizations--not required implemen
 
 -   If an application always preposts receive requests, it typically does not specify a receive indication size. If the application runs out of receive requests, the offload target might have to make a receive indication. If the value of **RcvIndicationSize** is unspecified (set to zero), the offload target should indicate as much data as possible when calling the *NdisTcpOffloadReceiveHandler* function.
 
- 
+ 
 
- 
+ 
 
 
 

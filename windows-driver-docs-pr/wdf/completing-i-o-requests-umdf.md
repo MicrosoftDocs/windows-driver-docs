@@ -1,17 +1,13 @@
 ---
 title: Completing I/O Requests in UMDF
-author: windows-driver-content
 description: Completing I/O Requests in UMDF
 ms.assetid: 3f8c7030-7c5d-4f65-8001-592af0b1d2de
 keywords:
 - I/O requests WDK UMDF , completing
 - request processing WDK UMDF , completing requests
 - completing I/O requests WDK UMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Completing I/O Requests in UMDF
@@ -45,7 +41,7 @@ For more information about these macros, see the Microsoft Windows SDK documenta
 
 The following example code shows how to complete a request with a suitable error code:
 
-```
+```cpp
 VOID
 STDMETHODCALLTYPE
 CMyQueue::OnWrite(
@@ -69,7 +65,7 @@ If [Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff54544
 
 **Note**   Driver Verifier for Windows XP incorrectly causes a system bugcheck for Win32 error codes whose values exceed decimal 1024 (1024L). If your driver runs on Windows XP, please be aware of this issue if you enable Driver Verifier for the reflector.
 
- 
+ 
 
 If the driver previously sent a request to a lower-level driver, the driver requires notification when the lower-level driver completes the request. To register for notification, the driver calls the [**IWDFIoRequest::SetCompletionCallback**](https://msdn.microsoft.com/library/windows/hardware/ff559153) method to register the interface for the method that the framework calls when the lower-level driver completes the request. The driver implements the [**IRequestCallbackRequestCompletion::OnCompletion**](https://msdn.microsoft.com/library/windows/hardware/ff556905) callback function to perform the operations required to complete the request.
 
@@ -97,9 +93,9 @@ To obtain information about an I/O request that another driver has completed, a 
 
 In addition, a UMDF-based driver can use the [**IWDFIoRequest2::GetStatus**](https://msdn.microsoft.com/library/windows/hardware/ff559013) method to obtain an I/O request's current status, either before or after the request has been completed.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,14 +1,10 @@
 ---
 title: Determining Whether the Operating System Is Running in Safe Mode
-author: windows-driver-content
 description: Determining Whether the Operating System Is Running in Safe Mode
 ms.assetid: 5724a731-81a2-4c4e-a9e2-146859977e44
 keywords: ["Safe Mode WDK kernel", "operating system Safe Mode WDK kernel", "InitSafeBootMode", "preventing Safe Mode WDK kernel", "checking Safe Mode", "verifying Safe Mode", "startup Safe Mode WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Determining Whether the Operating System Is Running in Safe Mode
@@ -51,21 +47,21 @@ The following table lists the modes for values of the **InitSafeBootMode** varia
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  \* The value 3 applies to Windows domain controllers only.
 
- 
+ 
 
 To use the **InitSafeBootMode** variable, you must declare it in your driver, as the following code example shows.
 
-```
+```cpp
 extern PULONG InitSafeBootMode;
 ```
 
 After you declare **InitSafeBootMode**, you can use the following code example to determine whether the operating system is running in Safe Mode.
 
-```
+```cpp
 if (*InitSafeBootMode > 0) {
     // The operating system is in Safe Mode.
     // Take appropriate action.
@@ -81,7 +77,7 @@ To prevent a driver from operating in Safe Mode, use the technique in the follow
 
     **Note**   You must never return failure from the **DriverEntry** routine.
 
-     
+     
 
 -   **Filter drivers**
 
@@ -93,12 +89,10 @@ To prevent a driver from operating in Safe Mode, use the technique in the follow
 
     For drivers other than function or filter drivers, check the value of **InitSafeBootMode** in the driver's **DriverEntry** routine. If the operating system is in Safe Mode, return a failure status.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20Determining%20Whether%20the%20Operating%20System%20Is%20Running%20in%20Safe%20Mode%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

@@ -1,13 +1,9 @@
 ---
 title: Installation Procedure
-author: windows-driver-content
 description: Installation Procedure
 ms.assetid: CE837ECE-F117-450D-ACCC-0427EAB3107E
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installation Procedure
@@ -17,9 +13,9 @@ Kernel-Mode Driver Framework (KMDF) and User-Mode Driver Framework (UMDF) driver
 
 For implementation details, see [Building, Installing, and Testing](building--installing--and-testing-a-wdf-driver.md).
 
- 
+ 
 
- 
+ 
 
 
 

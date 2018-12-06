@@ -1,20 +1,16 @@
 ---
 title: Using a Driver-Supplied Spin Lock
-author: windows-driver-content
 description: Using a Driver-Supplied Spin Lock
 ms.assetid: e81d5c93-47d6-407c-80a2-b2d55f9eb717
 keywords: ["spin locks WDK kernel", "driver-supplied spin locks WDK kernel", "global cancel spin locks WDK kernel"]
-ms.author: windowsdriverdev
-ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 05/09/2018
+ms.localizationpriority: medium
 ---
 
 # Using a Driver-Supplied Spin Lock
 
 
-## <a href="" id="ddk-using-a-driver-supplied-spin-lock-kg"></a>
+
 
 
 Drivers that manage their own queues of IRPs can use a driver-supplied spin lock, instead of the system cancel spin lock, to synchronize access to the queues. You can improve performance by avoiding use of the cancel spin lock except when absolutely necessary. Because the system has only one cancel spin lock, a driver might sometimes have to wait for that spin lock to become available. Using a driver-supplied spin lock eliminates this potential delay and makes the cancel spin lock available for the I/O manager and other drivers. Although the system still acquires the cancel spin lock when it calls the driver's [*Cancel*](https://msdn.microsoft.com/library/windows/hardware/ff540742) routine, a driver can use its own spin lock to protect its queue of IRPs.
@@ -33,7 +29,7 @@ Any driver that queues its own IRPs and uses its own spin lock must do the follo
 
 To create the spin lock, the driver calls [**KeInitializeSpinLock**](https://msdn.microsoft.com/library/windows/hardware/ff552160). In the following example, the driver saves the spin lock in a **DEVICE\_CONTEXT** structure along with the queue it has created:
 
-```
+```cpp
 typedef struct {
     LIST_ENTRYirpQueue;
     KSPIN_LOCK irpQueueSpinLock;
@@ -49,7 +45,7 @@ VOID InitDeviceContext(DEVICE_CONTEXT *deviceContext)
 
 To queue an IRP, the driver acquires the spin lock, calls [**InsertTailList**](https://msdn.microsoft.com/library/windows/hardware/ff547823), and then marks the IRP pending, as in the following example:
 
-```
+```cpp
 NTSTATUS QueueIrp(DEVICE_CONTEXT *deviceContext, PIRP Irp)
 {
    PDRIVER_CANCEL  oldCancelRoutine;
@@ -112,7 +108,7 @@ The first call sets the *Cancel* routine for the IRP. However, because the IRP m
 
 The following example shows how to remove an IRP from the previously created queue:
 
-```
+```cpp
 PIRP DequeueIrp(DEVICE_CONTEXT *deviceContext)
 {
    KIRQL oldIrql;
@@ -161,7 +157,7 @@ Note the use of [**InitializeListHead**](https://msdn.microsoft.com/library/wind
 
 The *Cancel* routine, in turn, simply does the following:
 
-```
+```cpp
 VOID IrpCancelRoutine(IN PDEVICE_OBJECT DeviceObject, IN PIRP Irp)
 {
    DEVICE_CONTEXT  *deviceContext = DeviceObject->DeviceExtension;
@@ -191,14 +187,12 @@ VOID IrpCancelRoutine(IN PDEVICE_OBJECT DeviceObject, IN PIRP Irp)
 
 The I/O manager always acquires the global cancel spin lock before it calls a *Cancel* routine, so the first task of the *Cancel* routine is to release this spin lock. It then acquires the spin lock that protects the driver's queue of IRPs, removes the current IRP from the queue, releases its spin lock, completes the IRP with STATUS\_CANCELLED and no priority boost, and returns.
 
-For more information about canceling spin locks, see the [Cancel Logic in Windows Drivers](http://go.microsoft.com/fwlink/p/?linkid=59531) white paper on the Microsoft Windows Hardware Developer Central (WHDC) website.
+For more information about canceling spin locks, see the [Cancel Logic in Windows Drivers](http://go.microsoft.com/fwlink/p/?linkid=59531) white paper.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20Using%20a%20Driver-Supplied%20Spin%20Lock%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

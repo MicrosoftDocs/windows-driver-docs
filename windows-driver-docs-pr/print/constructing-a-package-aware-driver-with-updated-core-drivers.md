@@ -1,13 +1,9 @@
 ---
 title: Constructing a Package-Aware Driver with Updated Core Drivers
-author: windows-driver-content
 description: Constructing a Package-Aware Driver with Updated Core Drivers
 ms.assetid: 801ac83c-a04a-4a3f-81a9-24010a390ee5
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Constructing a Package-Aware Driver with Updated Core Drivers
@@ -25,7 +21,7 @@ If your package-aware driver package must use a version of the core driver packa
 
 **Note**   If possible, avoid making your package-aware driver package dependent on a system-supplied core driver package that is newer than the initial Windows Vista release. Otherwise, you must take additional steps to ensure that your driver package installs properly on Windows Vista releases with older versions of the core driver package.
 
- 
+ 
 
 Localized help content is included in the core driver package, but this content will not be updated after the initial Windows Vista release. When selecting a language for a driver package, use the language that is the most likely to be understood by those installing the package. Typically, a manufacturer who wants to ship a single package to cover multiple languages should use English. The choice of a language for the driver package will not impact the localized help content already available on client machines.
 
@@ -39,12 +35,10 @@ This section discusses the following topics:
 
 [Updating Your Package-Aware Driver's INF](updating-your-package-aware-driver-s-inf.md)
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Constructing%20a%20Package-Aware%20Driver%20with%20Updated%20Core%20Drivers%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

@@ -9,11 +9,8 @@ keywords:
 - device interfaces WDK audio
 - subdevices WDK audio
 - audio device interfaces WDK
-ms.author: windowsdriverdev
 ms.date: 10/27/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installing Device Interfaces for an Audio Adapter
@@ -28,58 +25,18 @@ In the kernel-streaming architecture, topology categories (see [**KSPROPERTY\_TO
 
 The following table lists the topology categories that audio adapters are most likely to use to describe the capabilities of their subdevices.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Category</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>KSCATEGORY_ACOUSTIC_ECHO_CANCEL</p></td>
-<td align="left"><p>An audio device that can perform acoustic echo cancellation (see [DirectSound Capture Effects](directsound-capture-effects.md)) registers itself under this category.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>KSCATEGORY_AUDIO</p></td>
-<td align="left"><p>All audio devices register themselves under this category.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>KSCATEGORY_CAPTURE</p></td>
-<td align="left"><p>An audio device that can capture a data stream registers itself under this category.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>KSCATEGORY_DATATRANSFORM</p></td>
-<td align="left"><p>An audio device that performs a data transformation on a stream registers itself under this category (for example, see [Requirements for a GFX Filter Factory](requirements-for-a-gfx-filter-factory.md)).</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>KSCATEGORY_MIXER</p></td>
-<td align="left"><p>An audio device that can mix data streams registers itself under this category.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>KSCATEGORY_RENDER</p></td>
-<td align="left"><p>An audio device that can render a data stream registers itself under this category.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>KSCATEGORY_SYNTHESIZER</p></td>
-<td align="left"><p>An audio device that can convert MIDI messages to either wave audio samples or an analog output signal registers itself under this category (see [Synthesizers and Wave Sinks](synthesizers-and-wave-sinks.md)).</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>KSCATEGORY_TOPOLOGY</p></td>
-<td align="left"><p>A device's [Topology miniport driver](topology-miniport-driver.md) registers itself under this category.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>KSCATEGORY_DRM_DESCRAMBLE</p></td>
-<td align="left"><p>An audio device that can unscramble a DRM-protected wave stream registers itself under this category (see [Digital Rights Management](digital-rights-management.md)).</p></td>
-</tr>
-</tbody>
-</table>
+|Category|Description|
+|--- |--- |
+|KSCATEGORY_ACOUSTIC_ECHO_CANCEL|An audio device that can perform acoustic echo cancellation (see [DirectSound Capture Effects](directsound-capture-effects.md)) registers itself under this category.|
+|KSCATEGORY_AUDIO|All audio devices register themselves under this category.|
+|KSCATEGORY_CAPTURE|An audio device that can capture a data stream registers itself under this category.|
+|KSCATEGORY_DATATRANSFORM|An audio device that performs a data transformation on a stream registers itself under this category.|
+|KSCATEGORY_MIXER|An audio device that can mix data streams registers itself under this category.|
+|KSCATEGORY_RENDER|An audio device that can render a data stream registers itself under this category.|
+|KSCATEGORY_SYNTHESIZER|An audio device that can convert MIDI messages to either wave audio samples or an analog output signal registers itself under this category (see [Synthesizers and Wave Sinks](synthesizers-and-wave-sinks.md)).|
+|KSCATEGORY_TOPOLOGY|A device's [Topology miniport driver](topology-miniport-driver.md) registers itself under this category.|
+|KSCATEGORY_DRM_DESCRAMBLE|An audio device that can unscramble a DRM-protected wave stream registers itself under this category (see [Digital Rights Management](digital-rights-management.md)).|
 
- 
 
 For a complete list of topology categories, see the KSCATEGORY\_*XXX* GUIDs that are defined in the header files Ks.h and Ksmedia.h.
 
@@ -101,7 +58,7 @@ The following example installs four common system-defined device interfaces that
 
 In this example, the device-install section for the XYZ Audio Device uses the [**INF AddInterface directive**](https://msdn.microsoft.com/library/windows/hardware/ff546310) to install four audio adapter interfaces. In the following, each of the four directives assigns a unique reference string to an interface, which the adapter driver can use to distinguish between instances of each interface class.
 
-```
+```inf
   [XYZ-Audio-Device.Interfaces]
   AddInterface=%KSCATEGORY_AUDIO%,%KSName_Wave%,XYZ-Audio-Device.Wave
   AddInterface=%KSCATEGORY_RENDER%,%KSName_Wave%,XYZ-Audio-Device.Wave
@@ -117,7 +74,7 @@ The first three **AddInterface** directives specify an add-interface section nam
 
 The two add-interface sections appear in the following example, which contains INF file entries that add each interface's FriendlyName and CLSID to the registry:
 
-```
+```inf
   [XYZ-Audio-Device.Wave]
   AddReg=XYZ-Audio-Device.Wave.AddReg
   [XYZ-Audio-Device.Wave.AddReg]
@@ -135,7 +92,7 @@ The keyword HKR in this example denotes the system-supplied registry path for th
 
 The following is the Strings section for this example.
 
-```
+```inf
   [Strings]
   KSCATEGORY_AUDIO="{6994AD04-93EF-11D0-A3CC-00A0C9223196}"
   KSCATEGORY_RENDER="{65E8773E-8F56-11D0-A3B9-00A0C9223196}"
@@ -148,7 +105,7 @@ The following is the Strings section for this example.
 
 The string name that an **AddInterface** directive specifies for a KSCATEGORY\_*XXX* device interface cannot be localized because the adapter driver uses the same name internally as a string constant. The sample adapter drivers in the Windows Driver Kit (WDK) use the following string names for their audio device interfaces:
 
-```
+```inf
   KSNAME_Wave="Wave"
   KSNAME_UART="UART"
   KSNAME_FMSynth="FMSynth"
@@ -158,13 +115,4 @@ The string name that an **AddInterface** directive specifies for a KSCATEGORY\_*
 ```
 
 For the sake of uniformity, your proprietary driver should assign these same names to its corresponding device interfaces. If your driver supports additional device interfaces that are proprietary, you can invent your own proprietary names for these interfaces. Make sure that the names that the driver uses match those in your INF file. If the strings do not match, system setup will not load the driver.
-
- 
-
- 
-
-
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Installing%20Device%20Interfaces%20for%20an%20Audio%20Adapter%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
 

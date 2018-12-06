@@ -1,14 +1,10 @@
 ---
 title: Interrupt Affinity
-author: windows-driver-content
 description: Interrupt Affinity
 ms.assetid: e36a52d0-3a94-4017-b4a1-0b41f737523c
 keywords: ["interrupt service routines WDK kernel , affinity", "ISRs WDK kernel , affinity", "affinity policy WDK interrupts", "IRQ_DEVICE_POLICY", "processor affinity WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Interrupt Affinity
@@ -22,7 +18,8 @@ Administrators can set the following entries under the **\\Interrupt Management\
 
 -   **DevicePolicy** is a REG\_DWORD value that specifies an affinity policy. Each possible setting corresponds to a [**IRQ\_DEVICE\_POLICY**](https://msdn.microsoft.com/library/windows/hardware/ff551783) value.
 
--   **AssignmentSetOverride** is a REG\_BINARY value that specifies a [**KAFFINITY**](https://msdn.microsoft.com/library/windows/hardware/ff551830) mask. If **DevicePolicy** is 0x04 (**IrqPolicySpecifiedProcessors**), then this mask specifies a set of processors to assign the device's interrupts to.
+
+-   **AssignmentSetOverride** is a REG\_BINARY value that specifies a [**KAFFINITY**](#about-kaffinity) mask. If **DevicePolicy** is 0x04 (**IrqPolicySpecifiedProcessors**), then this mask specifies a set of processors to assign the device's interrupts to.
 
 The following table lists the [**IRQ\_DEVICE\_POLICY**](https://msdn.microsoft.com/library/windows/hardware/ff551783) values, and the corresponding registry setting for **DevicePolicy**. For more information about the meaning of each value, see [**IRQ\_DEVICE\_POLICY**](https://msdn.microsoft.com/library/windows/hardware/ff551783).
 
@@ -65,11 +62,11 @@ The following table lists the [**IRQ\_DEVICE\_POLICY**](https://msdn.microsoft.c
 </tbody>
 </table>
 
- 
+ 
 
 A driver's INF file can provide default settings for the registry values. Here is an example of how to set the **DevicePolicy** value to **IrqPolicyOneCloseProcessor** in the INF file. For more information, see [**INF AddReg Directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320).
 
-```
+```cpp
 [install-section-name.HW]
 AddReg=add-registry-section 
 
@@ -104,14 +101,32 @@ The following table gives the correspondence between registry settings and membe
 </tbody>
 </table>
 
- 
+## About KAFFINITY
 
- 
+The KAFFINITY type is an affinity mask that represents a set of logical processors in a group.
 
- 
+```cpp
+typedef ULONG_PTR  KAFFINITY;
+```
+
+The KAFFINITY type is 32 bits on a 32-bit version of Windows and is 64 bits on a 64-bit version of Windows.
+
+If a group contains n logical processors, the processors are numbered from 0 to n-1. Processor number i in the group is represented by bit i in the affinity mask, where i is in the range 0 to n-1. Affinity mask bits that do not correspond to logical processors are always zero.
+
+For example, if a KAFFINITY value identifies the active processors in a group, the mask bit for a processor is one if the processor is active, and is zero if the processor is not active.
+
+The number of bits in the affinity mask determines the maximum number of logical processors in a group. For a 64-bit version of Windows, the maximum number of processors per group is 64. For a 32-bit version of Windows, the maximum number of processors per group is 32. Call the [**KeQueryMaximumProcessorCountEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-kequerymaximumprocessorcountex) routine to obtain the maximum number of processors per group. This number depends on the hardware configuration of the multiprocessor system, but can never exceed the fixed 64-processor and 32-processor limits that are set by the 64-bit and 32-bit versions of Windows, respectively.
+
+The [**GROUP_AFFINITY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/miniport/ns-miniport-_group_affinity) structure contains an affinity mask and a group number. The group number identifies the group to which the affinity mask applies.
+
+Kernel routines that use the KAFFINITY type include [**IoConnectInterrupt**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioconnectinterrupt), [**KeQueryActiveProcessorCount**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-kequeryactiveprocessorcount), and [**KeQueryActiveProcessors**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-kequeryactiveprocessors). 
+
+ 
+
+ 
+
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20Interrupt%20Affinity%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

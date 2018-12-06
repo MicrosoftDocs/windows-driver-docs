@@ -1,20 +1,16 @@
 ---
 title: Handling a System Query-Power IRP in a Device Power Policy Owner
-author: windows-driver-content
 description: Handling a System Query-Power IRP in a Device Power Policy Owner
 ms.assetid: 680e3be2-63d9-4d79-a7c0-422e852e9347
 keywords: ["query-power IRPs WDK power management", "device power policy owners WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling a System Query-Power IRP in a Device Power Policy Owner
 
 
-## <a href="" id="ddk-handling-a-system-query-power-irp-in-a-device-power-policy-owner-k"></a>
+
 
 
 When a device power policy owner receives an [**IRP\_MN\_QUERY\_POWER**](https://msdn.microsoft.com/library/windows/hardware/ff551699) for a system power state, it responds by passing down the query and, in an [*IoCompletion*](https://msdn.microsoft.com/library/windows/hardware/ff548354) routine, sending an **IRP\_MN\_QUERY\_POWER** for a device power state. When all drivers in the stack have completed the device query, the device power policy owner completes the system query.
@@ -59,12 +55,10 @@ After the IRP has been completed and all *IoCompletion* routines set during IRP 
 
 Remember that the device power policy owner not only sends the device query but also must handle it on its way down the device stack. For more information, see [Handling IRP\_MN\_QUERY\_POWER for Device Power States](handling-irp-mn-query-power-for-device-power-states.md).
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20Handling%20a%20System%20Query-Power%20IRP%20in%20a%20Device%20Power%20Policy%20Owner%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

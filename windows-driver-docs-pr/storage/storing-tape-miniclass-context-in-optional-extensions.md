@@ -1,6 +1,5 @@
 ---
 title: Storing Tape Miniclass Context in Optional Extensions
-author: windows-driver-content
 description: Storing Tape Miniclass Context in Optional Extensions
 ms.assetid: 9b259403-2fae-4708-8765-2d998a535620
 keywords:
@@ -10,11 +9,8 @@ keywords:
 - context storage WDK tape
 - driver-specific minitape extensions WDK tape
 - command-specific command extensions WDK tape
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Storing Tape Miniclass Context in Optional Extensions
@@ -39,11 +35,10 @@ A tape miniclass driver can store context in two optional extensions:
 
     All tape miniclass routines that handle device-specific aspects of device-control requests are given a pointer to the command extension when they are called. The tape class driver allocates storage for the command extension before calling such a miniclass routine. The miniclass routine initializes the command extension on the first call to process a given request; that is, when the *CallNumber* parameter to the routine equals zero. The command extension remains valid until the tape miniclass routine returns either TAPE\_STATUS\_SUCCESS or an error status.
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

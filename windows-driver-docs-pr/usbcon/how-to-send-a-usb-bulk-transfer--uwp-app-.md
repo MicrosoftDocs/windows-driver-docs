@@ -1,12 +1,8 @@
 ---
 Description: Learn about a USB bulk transfer and how to initiate a transfer request from your UWP app that communicates with a USB device.
 title: How to send a USB bulk transfer request (UWP app)
-author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # How to send a USB bulk transfer request (UWP app)
@@ -57,7 +53,7 @@ Receive data from a bulk pipe, you can obtain the [**UsbBulkInPipe**](https://ms
 [**UsbDevice.Configuration.UsbInterfaces\[m\].BulkInPipes\[n\]**](https://msdn.microsoft.com/library/windows/apps/dn264287) for enumerating bulk IN pipes in multiple interfaces supported by the device.
 [**UsbInterface.InterfaceSettings\[m\].BulkInEndpoints \[n\].Pipe**](https://msdn.microsoft.com/library/windows/apps/dn297567) for enumerating bulk IN pipes defined by settings in an interface.
 [**UsbEndpointDescriptor.AsBulkInEndpointDescriptor.Pipe**](https://msdn.microsoft.com/library/windows/apps/dn297567) for getting the pipe object from the endpoint descriptor for the bulk IN endpoint.
- 
+
 
 Note: should be in the active setting or requires a null check.
 
@@ -83,19 +79,18 @@ For reading from the device, set the [**UsbBulkInPipe.ReadOptions**](https://msd
 <tr class="odd">
 <td><p>Automatically clear any error condition on the endpoint without stopping data flow</p></td>
 <td><strong>AutoClearStall</strong>
-<p>For more information, see [Clearing stall conditions](#stall). This flag applies to both read and write transfers.</p></td>
+<p>For more information, see <a href="#stall" data-raw-source="[Clearing stall conditions](#stall)">Clearing stall conditions</a>. This flag applies to both read and write transfers.</p></td>
 </tr>
 <tr class="even">
 <td><p>Send multiple read requests with maximum efficiency. Boost performance by bypassing error checking.</p></td>
 <td><strong>OverrideAutomaticBufferManagement</strong>
-<p>A data request can be divided into one or more transfers, where each transfer contains a certain number of bytes called the <em>maximum transfer size</em>. For multiple transfers, there might be delay in queuing two transfers due to error checking performed by the driver. This flag bypasses that error checking. To get the maximum transfer size, use the [<strong>UsbBulkInPipe.MaxTransferSizeBytes</strong>](https://msdn.microsoft.com/library/windows/apps/dn297606) property. If your request size is <strong>UsbBulkInPipe.MaxTransferSizeBytes</strong>, you must set this flag. Note:</p>
+<p>A data request can be divided into one or more transfers, where each transfer contains a certain number of bytes called the <em>maximum transfer size</em>. For multiple transfers, there might be delay in queuing two transfers due to error checking performed by the driver. This flag bypasses that error checking. To get the maximum transfer size, use the <a href="https://msdn.microsoft.com/library/windows/apps/dn297606" data-raw-source="[&lt;strong&gt;UsbBulkInPipe.MaxTransferSizeBytes&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/apps/dn297606)"><strong>UsbBulkInPipe.MaxTransferSizeBytes</strong></a> property. If your request size is <strong>UsbBulkInPipe.MaxTransferSizeBytes</strong>, you must set this flag. Note:</p>
 <p></p>
 <div class="alert">
-<strong>Important</strong>  
-<p>If you set this flag, then you must request data in multiples of the pipe's maximum packet size. That information is stored in the endpoint descriptor. The size depends on the bus speed of the device. For full speed, high speed, and SuperSpeed; the maximum packet sizes are 64, 512, and 1024 bytes respectively. To obtain that value, use the [<strong>UsbBulkInPipe.EndpointDescriptor.MaxPacketSize</strong>](https://msdn.microsoft.com/library/windows/apps/dn297563) property.</p>
+<strong>Important</strong><br/><p>If you set this flag, then you must request data in multiples of the pipe&#39;s maximum packet size. That information is stored in the endpoint descriptor. The size depends on the bus speed of the device. For full speed, high speed, and SuperSpeed; the maximum packet sizes are 64, 512, and 1024 bytes respectively. To obtain that value, use the <a href="https://msdn.microsoft.com/library/windows/apps/dn297563" data-raw-source="[&lt;strong&gt;UsbBulkInPipe.EndpointDescriptor.MaxPacketSize&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/apps/dn297563)"><strong>UsbBulkInPipe.EndpointDescriptor.MaxPacketSize</strong></a> property.</p>
 </div>
 <div>
- 
+
 </div>
 This flag only applies to read transfers.</td>
 </tr>
@@ -113,7 +108,7 @@ This flag only applies to read transfers.</td>
 </tbody>
 </table>
 
- 
+
 
 ## Step 3: Set up the data stream
 
@@ -144,7 +139,7 @@ To write bulk data, start an asynchronous write operation by calling [**DataWrit
 
 After the asynchronous data operation is complete, you can get the number of bytes read or written from the task object. For a read operation, call [**DataReader methods**](https://msdn.microsoft.com/library/windows/apps/br208119), such as [**ReadBytes**](https://msdn.microsoft.com/library/windows/apps/br208139), to read data from the input stream.
 
-## <a href="" id="stall"></a>Clearing stall conditions
+## Clearing stall conditions
 
 
 At times, the app might experience failed data transfers. A failed transfer can be due to a stall condition on the endpoint. As long as the endpoint is stalled, data cannot be written to or read from it. In order to proceed with data transfers, the app must clear the stall condition on the associated pipe.
@@ -153,9 +148,9 @@ Your app can configure the pipe to automatically clear stall conditions, when th
 
 To clear a stall condition manually, call [**UsbBulkInPipe.ClearStallAsync**](https://msdn.microsoft.com/library/windows/apps/dn278417) for a bulk IN pipe; call [**UsbBulkOutPipe.ClearStallAsync**](https://msdn.microsoft.com/library/windows/apps/dn297654) for a bulk OUT pipe.
 
-**Note**  A stall condition does not indicate an empty endpoint. If there is no data in the endpoint, the transfer completes but length is zero bytes.
+**Note**  A stall condition does not indicate an empty endpoint. If there is no data in the endpoint, the transfer completes but length is zero bytes.
 
- 
+
 
 For read operations, you might need to clear pending data in the pipe before starting a new transfer request. To do so, call [**UsbBulkInPipe.FlushBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff551975) method.
 
@@ -176,7 +171,7 @@ This code example shows how to write to a bulk pipe. The example sends data to t
         var stream = writePipe.OutputStream;
 
         DataWriter writer = new DataWriter(stream);
-       
+
         writer.WriteString(dataBuffer);
 
         try
@@ -192,7 +187,6 @@ This code example shows how to write to a bulk pipe. The example sends data to t
             ShowStatus("Data written: " + bytesWritten + " bytes.");
         }
     }
-
 ```
 
 This code example shows how to read from a bulk pipe. The example retrieves data from the first bulk IN pipe on the default interface. It configures the pipe to for maximum efficiency and receives data in chunks of maximum packet size. When the transfer is complete, number of bytes are shown.
@@ -201,10 +195,10 @@ This code example shows how to read from a bulk pipe. The example retrieves data
     private async void BulkRead()
     {
         UInt32 bytesRead = 0;
-        
+
         UsbBulkInPipe readPipe = usbDevice.DefaultInterface.BulkInPipes[0];
         readPipe.ReadOptions |= UsbReadOptions.IgnoreShortPacket;
-        
+
         var stream = readPipe.InputStream;
         DataReader reader = new DataReader(stream);
 
@@ -228,12 +222,10 @@ This code example shows how to read from a bulk pipe. The example retrieves data
     }
 ```
 
- 
-
- 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20How%20to%20send%20a%20USB%20bulk%20transfer%20request%20%28Windows%20Store%20app%29%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
+
 
 

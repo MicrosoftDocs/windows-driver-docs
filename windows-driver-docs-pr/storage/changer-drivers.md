@@ -1,6 +1,5 @@
 ---
 title: Changer Drivers
-author: windows-driver-content
 description: Changer Drivers
 ms.assetid: 47310de7-e69d-4f06-9995-3d95783d607a
 keywords:
@@ -12,11 +11,8 @@ keywords:
 - autoloaders WDK storage
 - autochangers WDK storage
 - jukebox WDK storage
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Changer Drivers
@@ -43,11 +39,10 @@ A changer driver controls the elements of a media library, or *changer* (sometim
 
 This section contains guidelines for writing a new changer miniclass driver.
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

@@ -1,6 +1,5 @@
 ---
 title: Media Validation
-author: windows-driver-content
 description: Media Validation
 ms.assetid: 609ac09b-88be-49a6-8b87-9fd453c21446
 keywords:
@@ -10,11 +9,8 @@ keywords:
 - disk of death attacks WDK file systems
 - validating media WDK file systems
 - removable media validation WDK file systems
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Media Validation
@@ -25,11 +21,10 @@ ms.technology: windows-devices
 
 A major concern when developing a file system that supports removable media (FASTFAT, for example) is guarding against the "disk of death" attack. When implementing a file system, the driver must guard against maliciously malformed structures since anyone can insert a removable disk (CD-ROM, DVD-ROM, or USB flash memory disk, for example) into the system.
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

@@ -3,17 +3,14 @@ title: cs
 description: The cs extension displays one or more critical sections or the whole critical section tree.
 ms.assetid: 767ad508-013b-4cf7-808d-38ff64418879
 keywords: ["cs Windows Debugging"]
-ms.author: windowsdriverdev
-ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 11/15/2018
 topic_type:
 - apiref
 api_name:
 - cs
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !cs
@@ -21,7 +18,7 @@ api_type:
 
 The **!cs** extension displays one or more critical sections or the whole critical section tree.
 
-```
+```dbgsyntax
 !cs [-s] [-l] [-o] 
 !cs [-s] [-o] Address 
 !cs [-s] [-l] [-o] StartAddress EndAddress 
@@ -30,75 +27,38 @@ The **!cs** extension displays one or more critical sections or the whole critic
 !cs -? 
 ```
 
-## <span id="ddk__cs_dbg"></span><span id="DDK__CS_DBG"></span>Parameters
+## Parameters
 
+Parameter | Description
+|---------|-------------|
+**-s**  | Displays each critical section's initialization stack trace, if this information is available.
+**-l**  |Display only the locked critical sections.
+**-o**   |Displays the owner's stack for any locked critical section that is being displayed.
+*Address* |Specifies the address of the critical section to display. If you omit this parameter, the debugger displays all critical sections in the current process.
+*StartAddress*   | Specifies the beginning of the address range to search for critical sections.
+*EndAddress*   | Specifies the end of the address range to search for critical sections.
+**-d**    | Displays critical sections that are associated with DebugInfo.
+*InfoAddress*   | Specifies the address of the DebugInfo.
+**-t**    | Displays a critical section tree. Before you can use the **-t** option, you must activate [Application Verifier](application-verifier.md) for the target process and select the **Check lock usage** option.
+*TreeAddress*    | Specifies the address of the root of the critical section tree. If you omit this parameter or specify zero, the debugger displays the critical section tree for the current process.
+**-?**    | Displays some Help text for this extension in the [Debugger Command window](debugger-command-window.md).
 
-<span id="_______-s______"></span><span id="_______-S______"></span> **-s**   
-Displays each critical section's initialization stack trace, if this information is available.
+### DLL
 
-<span id="_______-l______"></span><span id="_______-L______"></span> **-l**   
-Display only the locked critical sections.
+Exts.dll
+ 
 
-<span id="_______-o______"></span><span id="_______-O______"></span> **-o**   
-Displays the owner's stack for any locked critical section that is being displayed.
+### Additional Information
 
-<span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
-Specifies the address of the critical section to display. If you omit this parameter, the debugger displays all critical sections in the current process.
+For other commands and extensions that can display critical section information, see [Displaying a Critical Section](displaying-a-critical-section.md). For more information about critical sections, see the Microsoft Windows SDK documentation, the Windows Driver Kit (WDK) documentation, and *Microsoft Windows Internals* by Mark Russinovich and David Solomon. 
 
-<span id="_______StartAddress______"></span><span id="_______startaddress______"></span><span id="_______STARTADDRESS______"></span> *StartAddress*   
-Specifies the beginning of the address range to search for critical sections.
-
-<span id="_______EndAddress______"></span><span id="_______endaddress______"></span><span id="_______ENDADDRESS______"></span> *EndAddress*   
-Specifies the end of the address range to search for critical sections.
-
-<span id="_______-d______"></span><span id="_______-D______"></span> **-d**   
-Displays critical sections that are associated with DebugInfo.
-
-<span id="_______InfoAddress______"></span><span id="_______infoaddress______"></span><span id="_______INFOADDRESS______"></span> *InfoAddress*   
-Specifies the address of the DebugInfo.
-
-<span id="_______-t______"></span><span id="_______-T______"></span> **-t**   
-Displays a critical section tree. Before you can use the **-t** option, you must activate [Application Verifier](application-verifier.md) for the target process and select the **Check lock usage** option.
-
-<span id="_______TreeAddress______"></span><span id="_______treeaddress______"></span><span id="_______TREEADDRESS______"></span> *TreeAddress*   
-Specifies the address of the root of the critical section tree. If you omit this parameter or specify zero, the debugger displays the critical section tree for the current process.
-
-<span id="_______-_______"></span> **-?**   
-Displays some Help text for this extension in the [Debugger Command window](debugger-command-window.md).
-
-### <span id="DLL"></span><span id="dll"></span>DLL
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Unavailable</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Exts.dll</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
-
-For other commands and extensions that can display critical section information, see [Displaying a Critical Section](displaying-a-critical-section.md). For more information about critical sections, see the Microsoft Windows SDK documentation, the Windows Driver Kit (WDK) documentation, and *Microsoft Windows Internals* by Mark Russinovich and David Solomon. (These resources may not be available in some languages and countries.)
-
-Remarks
--------
+#### Remarks
 
 The **!cs** extension requires full symbols (including type information) for the process that is being debugged and for Ntdll.dll. If you do not have symbols for Ntdll.dll, see [Installing Windows Symbol Files](installing-windows-symbol-files.md).
 
 The following examples shows you how to use **!cs**. The following command displays information about the critical section at address 0x7803B0F8 and shows its initialization stack trace.
 
-```
+```dbgcmd
 0:001> !cs -s 0x7803B0F8
 Critical section   = 0x7803B0F8 (MSVCRT!__app_type+0x4)
 DebugInfo          = 0x6A262080
@@ -116,7 +76,7 @@ Stack trace for DebugInfo = 0x6A262080:
 
 The following command displays information about the critical section whose DebugInfo is at address 0x6A262080.
 
-```
+```dbgcmd
 0:001> !cs -d 0x6A262080
 DebugInfo          = 0x6A262080
 Critical section   = 0x7803B0F8 (MSVCRT!__app_type+0x4)
@@ -127,7 +87,7 @@ SpinCount          = 0x0
 
 The following command displays information about all of the active critical sections in the current process.
 
-```
+```dbgcmd
 ## 0:001> !cs
 
 DebugInfo          = 0x6A261D60
@@ -165,7 +125,7 @@ LockSemaphore      = 0x0
 
 The following command displays the critical section tree.
 
-```
+```dbgcmd
 0:001> !cs -t
 
 Tree root 00bb08c0
@@ -205,11 +165,10 @@ The following items appear in this **!cs -t** display:
 
 -   **WaitCnt** is the contention count.
 
- 
 
- 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!cs%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+ 
+
 
 
 

@@ -2,11 +2,8 @@
 title: Communicating Verbs with the HD Audio Codec
 description: Communicating Verbs with the HD Audio Codec
 ms.assetid: d93013fa-5b09-4616-bc71-5d3838337717
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Communicating Verbs with the HD Audio Codec
@@ -14,19 +11,19 @@ ms.technology: windows-devices
 
 The IOCTL\_AZALIABUS\_SENDVERBS IOCTL is used by the Hdau.exe pin configuration tool when you define sound topologies for your audio adapters. Do not use this IOCTL for other purposes. This information about IOCTL\_AZALIABUS\_SENDVERBS is provided to document its design and implementation only. This IOCTL is supported in the Windows 7 Hdaudio.sys audio class driver.
 
-High definition (HD) audio codecs are able to receive and respond to verbs. These verbs and the responses of the codecs to these verbs are documented as part of [The HD Audio Specification](http://go.microsoft.com/fwlink/p/?linkid=169394).
+High definition (HD) audio codecs are able to receive and respond to verbs. These verbs and the responses of the codecs to these verbs are documented as part of [The HD Audio Specification](https://go.microsoft.com/fwlink/p/?linkid=169394).
 
 In Windows 7 and later versions of the Windows operating systems, the HD audio class driver uses the IOCTL\_AZALIABUS\_SENDVERBS IOCTL to communicate verbs with the audio codec. IOCTL\_AZALIABUS\_SENDVERBS is defined as shown in the following example:
 
-```
+```cpp
 #define IOCTL_AZALIABUS_SENDVERBS CTL_CODE(FILE_DEVICE_UNKNOWN, 1, METHOD_BUFFERED, FILE_ANY_ACCESS)
 ```
 
 For more information about FILE\_DEVICE\_UNKNOWN, METHOD\_BUFFERED, and FILE\_ANY\_ACCESS, see the Devioctl.h header file in the Windows SDK.
 
-To initiate communication with the audio codec, the class driver calls the [DeviceIoControl](http://go.microsoft.com/fwlink/p/?linkid=124239) function with the following parameters.
+To initiate communication with the audio codec, the class driver calls the [DeviceIoControl](https://go.microsoft.com/fwlink/p/?linkid=124239) function with the following parameters.
 
-```
+```cpp
 BOOL DeviceIoControl(
   (HANDLE) hDevice,                      // handle to device
   IOCTL_AZALIABUS_SENDVERBS,             // dwIoControlCode
@@ -39,13 +36,13 @@ BOOL DeviceIoControl(
 );
 ```
 
-If the call to [**DeviceIoControl**](https://msdn.microsoft.com/library/windows/desktop/aa363216) is successful, it returns a nonzero value. If the call fails or is pending (not processed immediately), **DeviceIoControl** returns a zero value. The class driver can call [GetLastError](http://go.microsoft.com/fwlink/p/?linkid=169416) for a more detailed error message.
+If the call to [**DeviceIoControl**](https://msdn.microsoft.com/library/windows/desktop/aa363216) is successful, it returns a nonzero value. If the call fails or is pending (not processed immediately), **DeviceIoControl** returns a zero value. The class driver can call [GetLastError](https://go.microsoft.com/fwlink/p/?linkid=169416) for a more detailed error message.
 
 When the audio driver must change pin configuration defaults, it can use IOCTL\_AZALIABUS\_SENDVERBS to send and receive Set and Get verbs from the audio codec. If communication with the audio codec is not about pin configuration, the audio codec only responds to the Get verb.
 
 The following example shows a function that takes an AzCorbeEntry structure and a HANDLE as parameters and returns the AzRirbResponse from the codec.
 
-```
+```cpp
 AzRirbEntry SendVerb(HANDLE handle, AzCorbEntry verb)
 {
   UserModeCodecCommandPacket c;
@@ -77,7 +74,7 @@ The data types and structures that are used in the previous code example are def
 
 ### <span id="azcorbentry"></span><span id="AZCORBENTRY"></span> AzCorbEntry
 
-```
+```cpp
 struct AzCorbEntry
 {
   ULONG Verb        : 20; // 0:19
@@ -100,7 +97,7 @@ struct AzCorbEntry
 
 ### <span id="azrirbentry"></span><span id="AZRIRBENTRY"></span> AzRirbEntry
 
-```
+```cpp
 struct AzRirbEntry
 {
   union
@@ -139,7 +136,7 @@ The following two structures are used together with the verb transfer IOCTL to e
 
 ### <span id="usermodecodeccommandpacket"></span><span id="USERMODECODECCOMMANDPACKET"></span> UserModeCodecCommandPacket
 
-```
+```cpp
 typedef struct _UserModeCodecCommandPacket
 {
   ULONG NumCommands;      // number of commands in this packet
@@ -149,7 +146,7 @@ typedef struct _UserModeCodecCommandPacket
 
 ### <span id="usermodecodecresponsepacket"></span><span id="USERMODECODECRESPONSEPACKET"></span> UserModeCodecResponsePacket
 
-```
+```cpp
 typedef struct _UserModeCodecResponsePacket
 {
   ULONG NumResponses;       // on successful IOCTL, this will be updated with the number of responses.
@@ -158,12 +155,10 @@ typedef struct _UserModeCodecResponsePacket
 } UserModeCodecResponsePacket;
 ```
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Communicating%20Verbs%20with%20the%20HD%20Audio%20Codec%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

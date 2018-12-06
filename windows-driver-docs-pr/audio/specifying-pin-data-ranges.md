@@ -10,11 +10,8 @@ keywords:
 - configurable pins WDK audio drivers
 - formats WDK audio , pin data ranges
 - intersections WDK audio drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Specifying Pin Data Ranges
@@ -32,7 +29,7 @@ Before connecting a configurable pin to serve as a sink or source for a wave or 
 
 For each type of configurable pin, a miniport driver describes the various stream data formats that the pin can handle. These parameter ranges can be specified as an array of data-range descriptors, as shown in the following code example.
 
-```
+```cpp
 static KSDATARANGE_AUDIO PinDataRangesPcm[] =
 {
     {
@@ -58,14 +55,12 @@ Note that the `PinDataRangesPcm` array in the preceding example contains a singl
 
 A configurable pin that supports the music stream format from an application that uses DirectMusic or the Windows multimedia midiIn*Xxx* and midiOut*Xxx* functions uses a data-range descriptor of type [**KSDATARANGE\_MUSIC**](https://msdn.microsoft.com/library/windows/hardware/ff537097).
 
-The port driver obtains the data-range information from the miniport driver and uses this information, wherever possible, to handle requests for information about the data formats that each pin can support. In the case of a pin with a simple PCM data range, the port driver is able to handle the intersection requests for that pin. In an intersection request, a client supplies a set of data ranges that represent possible data formats for a stream. If possible, the port driver's intersection handler picks a particular data format from the data ranges in the request that also falls within its pin's data ranges. This format represents an intersection of the two sets of data ranges. Hence, both the client and the pin can process a stream with this format. For more complex data ranges, the miniport driver can provide its own intersection handler, which the port driver then uses instead of its own, default handler. The intersection handler of the miniport driver can allow for any format requirements that might be difficult to express to the port driver as an array of data ranges. For more information, see [Data-Intersection Handlers](data-intersection-handlers.md). Additional information is available in the white paper titled *Multiple Channel Audio Data and WAVE Files* at the [audio technology](http://go.microsoft.com/fwlink/p/?linkid=8751) website.
+The port driver obtains the data-range information from the miniport driver and uses this information, wherever possible, to handle requests for information about the data formats that each pin can support. In the case of a pin with a simple PCM data range, the port driver is able to handle the intersection requests for that pin. In an intersection request, a client supplies a set of data ranges that represent possible data formats for a stream. If possible, the port driver's intersection handler picks a particular data format from the data ranges in the request that also falls within its pin's data ranges. This format represents an intersection of the two sets of data ranges. Hence, both the client and the pin can process a stream with this format. For more complex data ranges, the miniport driver can provide its own intersection handler, which the port driver then uses instead of its own, default handler. The intersection handler of the miniport driver can allow for any format requirements that might be difficult to express to the port driver as an array of data ranges. For more information, see [Data-Intersection Handlers](data-intersection-handlers.md). Additional information is available in the white paper titled *Multiple Channel Audio Data and WAVE Files* at the [audio technology](https://go.microsoft.com/fwlink/p/?linkid=8751) website.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Specifying%20Pin%20Data%20Ranges%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

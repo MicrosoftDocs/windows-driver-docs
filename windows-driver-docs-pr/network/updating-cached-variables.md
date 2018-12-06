@@ -5,11 +5,8 @@ ms.assetid: 1263c6de-8c96-4c87-a5cc-dd874de3dd8f
 keywords:
 - updating offloaded TCP chimney state, cached variables
 - cached variables WDK TCP chimney offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Updating Cached Variables
@@ -17,7 +14,7 @@ ms.technology: windows-devices
 
 \[The TCP chimney offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-updating-cached-variables-ng"></a>
+
 
 
 Because the host stack owns and maintains cached variables, it must alert the offload target to any changes in the values of such variables. The host stack changes the values of cached variables with one or more update operations. The host stack can update cached variables in offloaded neighbor, path, and TCP connection state objects.
@@ -66,7 +63,7 @@ The following table lists some of the events that require updates to cached vari
 </tbody>
 </table>
 
- 
+ 
 
 Note that, if an offloaded TCP connection's TCP\_FLAG\_MAX\_RT\_RESTART flag is set (in the **Flags** member of [**TCP\_OFFLOAD\_STATE\_CACHED**](https://msdn.microsoft.com/library/windows/hardware/ff570937)), the offload target must:
 
@@ -74,9 +71,9 @@ Note that, if an offloaded TCP connection's TCP\_FLAG\_MAX\_RT\_RESTART flag is 
 
 -   Reset that connection's delegated *KeepaliveTimeoutDelta* variable when the host stack updates that connection's cached *KaTimeout* variable or *KaInterval* variable or both.
 
- 
+ 
 
- 
+ 
 
 
 

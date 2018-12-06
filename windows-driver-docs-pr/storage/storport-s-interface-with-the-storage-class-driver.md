@@ -1,13 +1,9 @@
 ---
 title: Storport's Interface with the Storage Class Driver
-author: windows-driver-content
 description: Storport's Interface with the Storage Class Driver
 ms.assetid: d0a98abe-14ba-416e-b507-77f77730f1c5
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Storport's Interface with the Storage Class Driver
@@ -25,11 +21,10 @@ This section contains information about the interface between the storage class 
 
 5.  [Bypassing the Class Driver with SCSI Pass-Through Requests to Storport](bypassing-the-class-driver-with-scsi-pass-through-requests-to-storport.md)
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

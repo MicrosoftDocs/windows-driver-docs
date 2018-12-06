@@ -1,6 +1,5 @@
 ---
 title: Supporting DMA in 64-Bit AVStream Drivers
-author: windows-driver-content
 description: Supporting DMA in 64-Bit AVStream Drivers
 ms.assetid: 1173a83f-8d9e-4678-bfb5-f2fb91e827be
 keywords:
@@ -10,17 +9,14 @@ keywords:
 - Direct Memory Access WDK AVStream
 - 64-bit WDK AVStream
 - 32-bit addressable devices WDK AVStream
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Supporting DMA in 64-Bit AVStream Drivers
 
 
-## <a href="" id="ddk-supporting-dma-in-64-bit-avstream-drivers-ksg"></a>
+
 
 
 AVStream supports DMA on 32-bit and 64-bit addressable devices.
@@ -31,7 +27,7 @@ All drivers compiled for Win64 platforms should use [**IKsDeviceFunctions::Regis
 
 The following code example illustrates how to support DMA on both the x64-based client release and 32-bit platforms:
 
-```
+```cpp
 NTSTATUS MyDeviceStart (...) {
 // Get the DMA adapter object and store it in the Context member of the I/O stack location.
 Context -> AdapterObject = IoGetDmaAdapter (
@@ -83,12 +79,10 @@ This code example works on 64-bit as well as 32-bit platforms. If the driver doe
 
 In addition, when authoring a 64-bit AVStream driver, minimize the number of concurrent frame locks held. Since AVStream generates scatter/gather mappings when the minidriver first locks frames, your driver might run out of resources if it does not follow this guideline. In particular, if you are writing a driver to run on a Win64 platform with a 32-bit card, increasing the number of simultaneous locks increases the chance that a lock will fail because low memory buffers are a limited resource.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bstream\stream%5D:%20Supporting%20DMA%20in%2064-Bit%20AVStream%20Drivers%20%20RELEASE:%20%288/23/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

@@ -3,11 +3,8 @@ title: Choosing Network Security Credentials
 description: Choosing Network Security Credentials
 ms.assetid: f53bda2b-a5e7-4a8e-ac31-44c92f306b7a
 keywords: ["SymProxy, network security"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Choosing Network Security Credentials
@@ -17,11 +14,11 @@ The symbol proxy server must run from a security context with the appropriate pr
 
 **Note**   It is a good practice to limit privileges of this account to only those necessary to read files and copy them to c:\\symstore. This restriction prevents clients that access your HTTP store from corrupting the system.
 
- 
+ 
 
 **Note**  Make sure the options presented here make sense in your environment. Different organizations have different security needs and requirements. Modify the process outlined here to support the security requirements of your organization.
 
- 
+ 
 
 ### <span id="authenticate_as_a_network_service"></span><span id="AUTHENTICATE_AS_A_NETWORK_SERVICE"></span>Authenticate as a Network Service
 
@@ -103,11 +100,10 @@ For this example, the user account is named *SymProxyUser* on a domain named *co
 
 9.  Close the **Computer Management** console.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Choosing%20Network%20Security%20Credentials%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

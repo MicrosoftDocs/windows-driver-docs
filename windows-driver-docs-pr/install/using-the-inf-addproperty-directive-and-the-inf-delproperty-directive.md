@@ -2,11 +2,8 @@
 title: Using the INF AddProperty Directive and INF DelProperty Directive
 description: Using the INF AddProperty Directive and the INF DelProperty Directive
 ms.assetid: e5ae8d66-b2dc-409e-bdac-9034a9e24672
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using the INF AddProperty Directive and the INF DelProperty Directive
@@ -32,13 +29,13 @@ You can include the INF **AddProperty** directive and the INF **DelProperty** di
 
 To modify a property value, include an INF **AddProperty** directive in the section that installs a device instance, a device setup class, a device interface class, or a device interface. An **AddProperty** directive references one or more *add-property-sections* that include entries that specify the property, how to modify the property, and the value that is used to modify the property. The format of an **AddProperty** directive is as follows:
 
-**AddProperty=***add-property-section*\[**,***add-property-section*\] ...
+**AddProperty=**<em>add-property-section</em>\[**,**<em>add-property-section</em>\] ...
 
 Each line in an add-property-section specifies one property. The following shows the two possible line formats that specify property information. The first line format shown specifies a property by its name. This format can be used only with the DEVPKEY_DrvPkg_*Xxx* properties. The second line format specifies a property by the property category and property identifier of the corresponding [property key](property-keys.md). This second format can be used to specify a system-defined property or a [custom device property](creating-custom-device-properties.md).
 
-**\[***add-property-section***\]**
-*property-name***,,,\[***flags***\],***value*
-**{***property-category-guid***},***property-pid***,***type***,\[***flags***\],***value*
+**\[**<em>add-property-section</em>**\]**
+<em>property-name</em>**,,,\[**<em>flags</em>**\],**<em>value</em>
+**{**<em>property-category-guid</em>**},**<em>property-pid</em>**,**<em>type</em>**,\[**<em>flags</em>**\],**<em>value</em>
 The entry values supply the following:
 
 <a href="" id="property-name"></a>*property-name*  
@@ -61,7 +58,7 @@ The value that is used to modify the property value.
 
 The following example of an **AddProperty** directive includes two line entries. The first line includes the *property-name* entry value "DeviceModel" and the *value* entry value "Sample Device Model Name." This entry sets the DEVPKEY_DrvPkg_Model property. The second line entry sets a custom property in a custom property category. The *property-category-guid* entry value is "c22189e4-8bf3-4e6d-8467-8dc6d95e2a7e" and the *property-identifier* entry value is "2." The optional *Flags* entry value is not present and the *type* entry value is "18" (DEVPROP_TYPE_STRING). The *value* entry value is "String value for property 1."
 
-```
+```cpp
 [Root_Install.NT]
 AddProperty=Root_AddProperty
 
@@ -78,13 +75,13 @@ The main purpose of the [**INF DelProperty directive**](inf-delproperty-directiv
 
 The **DelProperty** directive has the following format:
 
-**DelProperty=***del-property-section*\[**,***del-property-section*\] ...
+**DelProperty=**<em>del-property-section</em>\[**,**<em>del-property-section</em>\] ...
 
 Each line in a *del-property-section* specifies one property. The following shows the two possible line formats that specify property information. The first line format shown specifies a property by its name. This format can be used only with the DEVPKEY_DrvPkg_*Xxx* properties. The second line format specifies a property by the property category and property identifier of the corresponding [property key](property-keys.md). The second format can be used to specify a system-defined property or a [custom device property](creating-custom-device-properties.md).
 
-**\[***del-property-section***\]**
-*property-name* \[**,,** *Flags* \[**,***value*\]\]
-**{***property-category-guid***},** *property-pid* \[**,** *Flags* \[**,***value*\]\]
+**\[**<em>del-property-section</em>**\]**
+*property-name* \[**,,** *Flags* \[**,**<em>value</em>\]\]
+**{**<em>property-category-guid</em>**},** *property-pid* \[**,** *Flags* \[**,**<em>value</em>\]\]
 The entry values supply the following:
 
 <a href="" id="property-name"></a>*property-name*  
@@ -106,15 +103,15 @@ The following example of a *del-property-section* includes two line entries.
 
 The first line includes the *property-name* entry value "DeviceModel", which deletes the DEVPKEY_DrvPkg_Model property. The second line entry deletes the string "DeleteThisString" from a custom device property value whose data type is DEVPROP_TYPE_STRING_LIST. In the second line, the *property-category-guid* entry value is "c22189e4-8bf3-4e6d-8467-8dc6d95e2a7e", the *property-identifier* entry value is "2", and the *Flags* entry value is "0x00000001."
 
-```
+```cpp
 [SampleDelPropertySection]
 DeviceModel
 {c22189e4-8bf3-4e6d-8467-8dc6d95e2a7e}, 2, 0x00000001, "DeleteThisString"
 ```
 
- 
+ 
 
- 
+ 
 
 
 

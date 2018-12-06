@@ -3,17 +3,14 @@ title: .effmach (Effective Machine)
 description: The .effmach command displays or changes the processor mode that the debugger uses.
 ms.assetid: bf4dfdc0-2f0b-416a-8bf2-0e7d81339905
 keywords: ["Effective Machine (.effmach) command", ".effmach (Effective Machine) Windows Debugging"]
-ms.author: windowsdriverdev
-ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 01/24/2018
 topic_type:
 - apiref
 api_name:
 - .effmach (Effective Machine)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .effmach (Effective Machine)
@@ -21,7 +18,7 @@ api_type:
 
 The **.effmach** command displays or changes the processor mode that the debugger uses.
 
-```
+```dbgcmd
 .effmach [MachineType]
 ```
 
@@ -45,7 +42,7 @@ You can enter one of the following machine types.
 </tr>
 <tr class="even">
 <td align="left"><p><strong>.</strong></p></td>
-<td align="left"><p>Use the processor mode of the target computer's native processor mode.</p></td>
+<td align="left"><p>Use the processor mode of the target computer&#39;s native processor mode.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>#</strong></p></td>
@@ -63,10 +60,20 @@ You can enter one of the following machine types.
 <td align="left"><p><strong>ebc</strong></p></td>
 <td align="left"><p>Use an EFI byte code processor mode.</p></td>
 </tr>
+</tr>
+<tr class="odd">
+<td align="left"><p><strong>arm</strong></p></td>
+<td align="left"><p>Use an ARM64 processor mode.</p></td>
+</tr>
+</tr>
+<tr class="evenodd">
+<td align="left"><p><strong>chpe</strong></p></td>
+<td align="left"><p>Use a CHPE processor mode.</p></td>
+</tr>
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
 
@@ -91,7 +98,7 @@ You can enter one of the following machine types.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -104,11 +111,10 @@ The processor mode influences many debugger features:
 
 -   Which processor's register set is active.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20.effmach%20%28Effective%20Machine%29%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

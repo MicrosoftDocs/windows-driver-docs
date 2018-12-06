@@ -5,11 +5,8 @@ ms.assetid: 63f60ed9-4a35-4c70-89f5-9bdfb7b9e732
 keywords:
 - NetDMA provider drivers WDK networking , registering
 - registering NetDMA provider drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Registering a NetDMA Provider
@@ -17,9 +14,9 @@ ms.technology: windows-devices
 
 **Note**  The NetDMA interface is not supported in Windows 8 and later.
 
- 
+ 
 
-## <a href="" id="ddk-registering-a-netdma-provider-ng"></a>
+
 
 
 After a NetDMA provider driver successfully completes driver initialization and returns from its [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff544113) routine, the Plug and Play (PnP) manager calls the NetDMA provider driver's [**AddDevice**](https://msdn.microsoft.com/library/windows/hardware/ff540521) routine to add dynamic memory access (DMA) engines. The PnP manager calls **AddDevice** once for each DMA engine that it detected. For more information about the NetDMA provider driver's **DriverEntry** routine, see [Initializing a NetDMA Provider Driver](initializing-a-netdma-provider-driver.md).
@@ -46,9 +43,9 @@ If a computer supports MSI-X, the NetDMA interface, while in the context of the 
 
 To deregister a NetDMA provider, a NetDMA provider driver calls the [**NetDmaDeregisterProvider**](https://msdn.microsoft.com/library/windows/hardware/ff568328) function. For more information about deregistering a NetDMA provider, see [Deregistering a NetDMA Provider](deregistering-a-netdma-provider.md).
 
- 
+ 
 
- 
+ 
 
 
 

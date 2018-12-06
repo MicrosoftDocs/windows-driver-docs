@@ -13,11 +13,8 @@ keywords:
 - 1394 connection WDK boot parameters
 - USB 2.0 debugging connection WDK boot parameters
 - null-modem cable WDK boot parameters
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Boot Parameters to Enable Debugging
@@ -50,7 +47,7 @@ The **/debug** option has the following syntax:
 bcdedit /debug [{ID}] { on | off }
 ```
 
-The **{***ID***}** is the GUID associated with a boot entry. If an **{***ID***}** is not specified, the settings apply to the current boot entry. The following command enables kernel debugging for the current Windows operating system boot entry:
+The **{**<em>ID</em>**}** is the GUID associated with a boot entry. If an **{**<em>ID</em>**}** is not specified, the settings apply to the current boot entry. The following command enables kernel debugging for the current Windows operating system boot entry:
 
 ```
 bcdedit /debug on
@@ -86,7 +83,7 @@ To use BCDEdit, open a Command Prompt window with elevated privileges (right-cli
 
 To set the global debug settings to serial communications, use the following syntax:
 
-**bcdedit /dbgsettings serial** \[ **debugport:***port*\] \[ **baudrate:** *baud*\]
+**bcdedit /dbgsettings serial** \[ **debugport:**<em>port</em>\] \[ **baudrate:** *baud*\]
 
 The following example shows how to specify serial communications as the global debug setting.
 
@@ -96,13 +93,13 @@ bcdedit /dbgsettings serial debugport:1 baudrate:115200
 
 To set the debug settings to serial for a specific boot entry, or for the current entry, use the following syntax:
 
-**bcdedit /set** \[**{***ID***}**\] **debugtype serial**
+**bcdedit /set** \[**{**<em>ID</em>**}**\] **debugtype serial**
 
-**bcdedit /set** \[**{***ID***}**\] **debugport** *port*
+**bcdedit /set** \[**{**<em>ID</em>**}**\] **debugport** *port*
 
-**bcdedit /set** \[**{***ID***}**\] **baudrate** *baud*
+**bcdedit /set** \[**{**<em>ID</em>**}**\] **baudrate** *baud*
 
-If no **{***ID***}** is specified, the settings apply to the currently active boot entry.
+If no **{**<em>ID</em>**}** is specified, the settings apply to the currently active boot entry.
 
 The following example shows how to specify the serial debug settings for a specific boot entry. To enable the debug settings, you must reboot your computer and select that boot entry you have configured for debugging.
 
@@ -134,7 +131,7 @@ To use BCDEdit, open a Command Prompt window with elevated privileges (right-cli
 
 To set the debug settings for 1394 globally, use the following syntax:
 
-**bcdedit /dbgsettings 1394** \[ **channel:***channel* \]
+**bcdedit /dbgsettings 1394** \[ **channel:**<em>channel</em> \]
 
 The following example shows how to specify 1394 as the global debug setting.
 
@@ -144,11 +141,11 @@ bcdedit /dbgsettings 1394 channel:32
 
 To set the debug settings to 1394 for a specific boot entry, or for the current entry, use the following syntax:
 
-**bcdedit /set** \[**{***ID***}**\] **debugtype 1394**
+**bcdedit /set** \[**{**<em>ID</em>**}**\] **debugtype 1394**
 
-**bcdedit /set** \[**{***ID***}**\] **channel** *channel*
+**bcdedit /set** \[**{**<em>ID</em>**}**\] **channel** *channel*
 
-If an **{***ID***}** is not specified, the settings apply to the current boot entry.
+If an **{**<em>ID</em>**}** is not specified, the settings apply to the current boot entry.
 
 The following example shows how to specify the 1394 debug settings for a specific boot entry, and how to use the **/debug** option to enable kernel debugging for that boot entry. Note that to enable the debug settings, you must reboot your computer and select the boot entry you have configured for debugging.
 
@@ -176,7 +173,7 @@ To use BCDEdit, open a Command Prompt window with elevated privileges (right-cli
 
 To set the debug settings for USB globally, use the following syntax:
 
-**bcdedit /dbgsettings usb** \[**targetname:***name*\]
+**bcdedit /dbgsettings usb** \[**targetname:**<em>name</em>\]
 
 The following example shows how to specify USB as the global debug setting.
 
@@ -186,11 +183,11 @@ bcdedit /dbgsettings usb targetname:U1
 
 To set the debug settings to USB for a specific boot entry, or for the current entry, use the following syntax:
 
-**bcdedit /set** \[**{***ID***}**\] **debugtype usb**
+**bcdedit /set** \[**{**<em>ID</em>**}**\] **debugtype usb**
 
-**bcdedit /set** \[**{***ID***}**\] **targetname** *name*\]
+**bcdedit /set** \[**{**<em>ID</em>**}**\] **targetname** *name*\]
 
-If no **{***ID***}** is specified, the settings apply to the current boot entry.
+If no **{**<em>ID</em>**}** is specified, the settings apply to the current boot entry.
 
 The following example shows how to specify the USB debug settings for a specific boot entry, and how to use the **/debug** command to enable kernel debugging for that boot entry. Note that to enable the debug settings, you must reboot your computer and select the boot entry you have configured for debugging.
 
@@ -218,11 +215,10 @@ You must also select a debugging connection (serial, 1394, or USB 2.0). This can
 
 For more details, see [**BCDEdit /bootdebug**](https://msdn.microsoft.com/library/windows/hardware/ff542183).
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20Boot%20Parameters%20to%20Enable%20Debugging%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

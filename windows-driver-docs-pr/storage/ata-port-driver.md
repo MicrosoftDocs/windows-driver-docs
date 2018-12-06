@@ -1,6 +1,5 @@
 ---
 title: ATA Port Driver
-author: windows-driver-content
 description: ATA Port Driver
 ms.assetid: c7b9d794-a8cb-4bdd-bb93-bff473ea26a7
 keywords:
@@ -8,11 +7,8 @@ keywords:
 - ATA Port drivers WDK
 - ATA Port drivers WDK , about ATA Port drivers
 - IDE controllers WDK ATA Port driver
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # ATA Port Driver
@@ -21,7 +17,7 @@ ms.technology: windows-devices
 ## <span id="ddk_ata_port_driver_kg"></span><span id="DDK_ATA_PORT_DRIVER_KG"></span>
 
 
-**NOTE** The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the [Storport driver](https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver) and [Storport miniport](https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers) driver models.
+**NOTE** The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the [Storport driver](https://msdn.microsoft.com/windows/hardware/drivers/storage/storport-driver) and [Storport miniport](https://msdn.microsoft.com/windows/hardware/drivers/storage/storport-miniport-drivers) driver models.
 
 
 In addition to the [SCSI Port Driver](scsi-port-driver.md) and the [Storport Driver](storport-driver.md), Windows Vista and later versions of the Windows operating system provide the ATA port driver (*Ataport.sys*), a storage port driver that is especially suitable for use with IDE controllers.
@@ -34,9 +30,8 @@ The ATA miniport driver interface closely resembles the SCSI port driver interfa
 
 Together with the ATA port driver, the operating system provides a default ATA miniport driver and a default controller minidriver. The system-supplied default drivers work for most controller hardware, and we strongly recommend that the default minidrivers be used wherever possible.
 
- 
+ 
 
- 
+ 
 
 
---------------------

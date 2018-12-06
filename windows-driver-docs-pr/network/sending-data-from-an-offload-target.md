@@ -8,11 +8,8 @@ keywords:
 - send operations from target WDK TCP chimney offload
 - fragment ID space WDK TCP chimney offload
 - IP IDs WDK TCP chimney offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Sending Data from an Offload Target
@@ -38,11 +35,11 @@ The lower half of the IPv4 IP ID space and the lower half of the IPv6 fragment I
 
 **Note**  An offload target should always set the Don't Fragment (DF) flag in the IP header of an IPv4 datagram that is to be sent.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,8 @@
 title: Audio Processing Object Architecture
 description: Audio processing objects (APOs), provide customizable software based digital signal processing for Windows audio streams.
 ms.assetid: 2F57B4C7-8C83-4DDF-BFAF-B9308752E91D
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Audio Processing Object Architecture
@@ -23,13 +20,13 @@ Audio processing objects (APOs), provide software based digital signal processin
 
 **Note**   The descriptions and terminology in this documentation refers mostly to output devices. However, the technology is symmetric and works essentially in reverse for input devices.
 
- 
+ 
 
 **Software APOs vs. Hardware DSP**
 
 A hardware digital signal processor (DSP) is a specialized microprocessor (or a SIP block), with its architecture optimized for the operational needs of digital signal processing. There can be significant advantages to implement audio processing in purpose built hardware vs. using a software APO. One advantage is that the CPU use and associated power consumption may be lower with a hardware implemented DSP.
 
-There are other advantages and disadvantages to consider, specific your projects goals and constraints that you will want to consider before implementing a software based APO.
+There are other advantages and disadvantages to consider, specific to your projects goals and constraints that you will want to consider before implementing a software based APO.
 
 Software based effects are inserted in the software device pipe on stream initialization. These solutions do all their effects processing on the main CPU and do not rely on external hardware. This type of solution is best for traditional Windows audio solutions such as HDAudio, USB and Bluetooth devices when the driver and hardware only support RAW processing. For more information about RAW processing, see [Audio Signal Processing Modes](audio-signal-processing-modes.md).
 
@@ -128,7 +125,7 @@ This diagram illustrates how multiple applications can access multiple combinati
 
 **Note**  You can use the scroll bar at the very bottom of this page to view all of this diagram.
 
- 
+ 
 
 **Software Mode Effects and Hardware Endpoint Effects for Render and Capture**
 
@@ -146,7 +143,5 @@ This diagram illustrates a DSP equipped system that implements effects in hardwa
 [Windows Audio Processing Objects](windows-audio-processing-objects.md)  
 [Implementing a UI for Configuring APO Effects](implementing-a-ui-for-configuring-apo-effects.md)  
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Audio%20Processing%20Object%20Architecture%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

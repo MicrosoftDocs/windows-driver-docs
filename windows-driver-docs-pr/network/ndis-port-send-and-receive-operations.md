@@ -9,17 +9,14 @@ keywords:
 - receive operations WDK NDIS ports
 - target ports WDK NDIS
 - source ports WDK NDIS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # NDIS Port Send and Receive Operations
 
 
-## <a href="" id="ddk-ndis-ports-send-and-receive-operations-ng"></a>
+
 
 
 NDIS drivers can associate send and receive operations with NDIS ports.The port number in the *PortNumber* parameter of the NDIS send and receive functions identifies the target port of a send operation or the source port of a receive indication. If *PortNumber* is zero, the default port is used. When NDIS handles the default port and the miniport driver does not allocate any other ports, no NDIS drivers in the driver stack are required to do anything beyond always setting the *PortNumber* parameter to zero. For more information about allocating ports in a miniport driver, see [Allocating NDIS Ports](allocating-an-ndis-port.md).
@@ -28,9 +25,9 @@ If the miniport driver allocates ports, overlying drivers can use the ports to s
 
 When NDIS calls the [*ProtocolBindAdapterEx*](https://msdn.microsoft.com/library/windows/hardware/ff570220) function of a protocol driver, NDIS provides a list of all currently active ports in the **ActivePorts** member of the [**NDIS\_BIND\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff564832) structure that the *BindParameters* parameter points to. NDIS also informs protocol drivers with a PnP event when ports are activated and deactivated. For more information about PnP port activation and deactivation notifications, see [Handling NDIS Ports PnP Notifications](handling-ndis-ports-pnp-event-notifications.md). For more general information about send and receive operations, see [Send and Receive Operations](send-and-receive-operations.md).
 
- 
+ 
 
- 
+ 
 
 
 

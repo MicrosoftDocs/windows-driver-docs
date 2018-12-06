@@ -1,17 +1,13 @@
 ---
 title: Managing File Names
-author: windows-driver-content
 description: Managing File Names
 ms.assetid: 390c3817-e306-4d20-9ec0-9d68ccc8ff1b
 keywords:
 - filter manager WDK file system minifilter , file names
 - file names WDK file system minifilter
 - names WDK file systems
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Managing File Names
@@ -61,26 +57,25 @@ The following callback routines are stored in the [**FLT\_REGISTRATION**](https:
 <tbody>
 <tr class="odd">
 <td align="left"><p><em>GenerateFileNameCallback</em></p></td>
-<td align="left"><p>[<strong>PFLT_GENERATE_FILE_NAME</strong>](https://msdn.microsoft.com/library/windows/hardware/ff551087)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff551087" data-raw-source="[&lt;strong&gt;PFLT_GENERATE_FILE_NAME&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff551087)"><strong>PFLT_GENERATE_FILE_NAME</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><em>NormalizeContextCleanupCallback</em></p></td>
-<td align="left"><p>[<strong>PFLT_NORMALIZE_CONTEXT_CLEANUP</strong>](https://msdn.microsoft.com/library/windows/hardware/ff551100)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff551100" data-raw-source="[&lt;strong&gt;PFLT_NORMALIZE_CONTEXT_CLEANUP&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff551100)"><strong>PFLT_NORMALIZE_CONTEXT_CLEANUP</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><em>NormalizeNameComponentCallback</em></p></td>
-<td align="left"><p>[<strong>PFLT_NORMALIZE_NAME_COMPONENT</strong>](https://msdn.microsoft.com/library/windows/hardware/ff551102)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff551102" data-raw-source="[&lt;strong&gt;PFLT_NORMALIZE_NAME_COMPONENT&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff551102)"><strong>PFLT_NORMALIZE_NAME_COMPONENT</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

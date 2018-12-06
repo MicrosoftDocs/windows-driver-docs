@@ -1,13 +1,9 @@
 ---
 title: Summary of ACPI support in Windows
-author: windows-driver-content
 description: This topic summarizes the subset of ACPI 5.0 features that are required to support Windows on SoC-based platforms.
 ms.assetid: BECFB30B-541B-420E-85F3-773292066A90
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Summary of ACPI support in Windows
@@ -52,13 +48,12 @@ This topic summarizes the subset of Advanced Configuration and Power Interface (
 |                             | 3.2.1, 4.8.2.2.1.2, 4.8.2.2.1.3                                                      | Buttons                                                            |
 |                             |                                                                                      | Dock and convertible PC sensors                                    |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

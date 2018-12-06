@@ -1,6 +1,5 @@
 ---
 title: Extension Unit Plug-In Architecture
-author: windows-driver-content
 description: Extension Unit Plug-In Architecture
 ms.assetid: cf2b32dd-0b65-41ce-b6e8-a9068e232600
 keywords:
@@ -11,11 +10,8 @@ keywords:
 - COM API WDK USB Video Class
 - plug-in DLL WDK USB Video Class
 - extension unit
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Extension Unit Plug-In Architecture
@@ -31,11 +27,11 @@ To expose Extension Unit properties to an application, you can write a user-mode
 
 The following elements are required to write and use an Extension Unit plug-in:
 
--   A header and cpp file implementing the Extension Unit API and an interface named IKsNodeControl. Vidcap.ax uses the IKsNodeControl interface to inform the plug-in of the extension node identifier and provide it with an instance of IKsControl. Sample code for these files can be found in [Sample Extension Unit Plug-in DLL](sample-extension-unit-plug-in-dll.md).
+- A header and cpp file implementing the Extension Unit API and an interface named IKsNodeControl. Vidcap.ax uses the IKsNodeControl interface to inform the plug-in of the extension node identifier and provide it with an instance of IKsControl. Sample code for these files can be found in [Sample Extension Unit Plug-in DLL](sample-extension-unit-plug-in-dll.md).
 
--   An *.rgs* file that registers the node interfaces and Class IDs (CLSIDs) under the **HKLM\\System\\CCS\\Control\\NodeInterfaces\\***Property\_Set\_GUID* registry subkey. The entries in this registry subkey contain the binary values for the Interface ID (IID) and CLSID. For more information, see [Sample Registry Entry for UVC Extension Units](sample-registry-entry-for-uvc-extension-units.md).
+- An *.rgs* file that registers the node interfaces and Class IDs (CLSIDs) under the **HKLM\\System\\CCS\\Control\\NodeInterfaces\\**<em>Property\_Set\_GUID</em> registry subkey. The entries in this registry subkey contain the binary values for the Interface ID (IID) and CLSID. For more information, see [Sample Registry Entry for UVC Extension Units](sample-registry-entry-for-uvc-extension-units.md).
 
--   An application that invokes this interface. The application first creates a node instance with the correct node ID by using IKsTopologyInfo::CreateNodeInstance. The application then calls **QueryInterface** on the node instance to obtain the required Extension Unit interface. For more information, see [Sample Application for UVC Extension Units](sample-application-for-uvc-extension-units.md) and [Supporting Autoupdate Events with Extension Units](supporting-autoupdate-events-with-extension-units.md)
+- An application that invokes this interface. The application first creates a node instance with the correct node ID by using IKsTopologyInfo::CreateNodeInstance. The application then calls **QueryInterface** on the node instance to obtain the required Extension Unit interface. For more information, see [Sample Application for UVC Extension Units](sample-application-for-uvc-extension-units.md) and [Supporting Autoupdate Events with Extension Units](supporting-autoupdate-events-with-extension-units.md)
 
 The code examples in this section illustrate all of these elements. See [Building the Extension Unit Sample Control](building-the-extension-unit-sample-control.md) to learn how to build the sample plug-in and associated sample application code.
 
@@ -43,7 +39,7 @@ After the plug-in DLL is registered and the registry entries described above are
 
 **Note**   As of Windows XP SP2, the Extension Unit property set is supported only on the node, and not on the filter.
 
- 
+ 
 
 ### Registry Considerations
 
@@ -67,12 +63,10 @@ The USB Video Class supports auto-update events, where the device notifies the h
 
 3.  Canceling the notification when done
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bstream\stream%5D:%20Extension%20Unit%20Plug-In%20Architecture%20%20RELEASE:%20%288/23/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

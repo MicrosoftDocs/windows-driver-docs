@@ -10,11 +10,8 @@ keywords:
 - video present networks WDK display , interfaces
 - VidPN WDK display , interfaces
 - sub-objects WDK video present network
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # VidPN Objects and Interfaces
@@ -68,66 +65,66 @@ The blue objects in the diagram are accessed through handles and interfaces, and
 <td align="left"><p>VidPN</p></td>
 <td align="left"><p>Accessed through handle and interface.</p>
 <p>D3DKMDT_HVIDPN</p>
-<p>[<strong>DXGK_VIDPN_INTERFACE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff562108)</p></td>
+<p><a href="https://msdn.microsoft.com/library/windows/hardware/ff562108" data-raw-source="[&lt;strong&gt;DXGK_VIDPN_INTERFACE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff562108)"><strong>DXGK_VIDPN_INTERFACE</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Topology</p></td>
 <td align="left"><p>Accessed through handle and interface.</p>
 <p>D3DKMDT_HVIDPNTOPOLOGY</p>
-<p>[<strong>DXGK_VIDPNTOPOLOGY_INTERFACE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff562091)</p></td>
+<p><a href="https://msdn.microsoft.com/library/windows/hardware/ff562091" data-raw-source="[&lt;strong&gt;DXGK_VIDPNTOPOLOGY_INTERFACE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff562091)"><strong>DXGK_VIDPNTOPOLOGY_INTERFACE</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Source mode set</p></td>
 <td align="left"><p>Accessed through handle and interface.</p>
 <p>D3DKMDT_HVIDPNSOURCEMODESET</p>
-<p>[<strong>DXGK_VIDPNSOURCEMODESET_INTERFACE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff562073)</p></td>
+<p><a href="https://msdn.microsoft.com/library/windows/hardware/ff562073" data-raw-source="[&lt;strong&gt;DXGK_VIDPNSOURCEMODESET_INTERFACE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff562073)"><strong>DXGK_VIDPNSOURCEMODESET_INTERFACE</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Target mode set</p></td>
 <td align="left"><p>Accessed through handle and interface.</p>
 <p>D3DKMDT_HVIDPNTARGETMODESET</p>
-<p>[<strong>DXGK_VIDPNTARGETMODESET_INTERFACE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff562082)</p></td>
+<p><a href="https://msdn.microsoft.com/library/windows/hardware/ff562082" data-raw-source="[&lt;strong&gt;DXGK_VIDPNTARGETMODESET_INTERFACE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff562082)"><strong>DXGK_VIDPNTARGETMODESET_INTERFACE</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Monitor source mode set</p></td>
 <td align="left"><p>Accessed through handle and interface.</p>
 <p>D3DKMDT_HMONITORSOURCEMODESET</p>
-<p>[<strong>DXGK_MONITORSOURCEMODESET_INTERFACE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff561921)</p></td>
+<p><a href="https://msdn.microsoft.com/library/windows/hardware/ff561921" data-raw-source="[&lt;strong&gt;DXGK_MONITORSOURCEMODESET_INTERFACE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff561921)"><strong>DXGK_MONITORSOURCEMODESET_INTERFACE</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Path</p></td>
 <td align="left"><p>Accessed through structure pointer.</p>
-<p>[<strong>D3DKMDT_VIDPN_PRESENT_PATH</strong>](https://msdn.microsoft.com/library/windows/hardware/ff546647)</p></td>
+<p><a href="https://msdn.microsoft.com/library/windows/hardware/ff546647" data-raw-source="[&lt;strong&gt;D3DKMDT_VIDPN_PRESENT_PATH&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff546647)"><strong>D3DKMDT_VIDPN_PRESENT_PATH</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Source</p></td>
 <td align="left"><p>Accessed through structure pointer.</p>
-<p>[<strong>D3DKMDT_VIDEO_PRESENT_SOURCE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff546614)</p></td>
+<p><a href="https://msdn.microsoft.com/library/windows/hardware/ff546614" data-raw-source="[&lt;strong&gt;D3DKMDT_VIDEO_PRESENT_SOURCE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff546614)"><strong>D3DKMDT_VIDEO_PRESENT_SOURCE</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Target</p></td>
 <td align="left"><p>Accessed through structure pointer.</p>
-<p>[<strong>D3DKMDT_VIDEO_PRESENT_TARGET</strong>](https://msdn.microsoft.com/library/windows/hardware/ff546617)</p></td>
+<p><a href="https://msdn.microsoft.com/library/windows/hardware/ff546617" data-raw-source="[&lt;strong&gt;D3DKMDT_VIDEO_PRESENT_TARGET&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff546617)"><strong>D3DKMDT_VIDEO_PRESENT_TARGET</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Source mode</p></td>
 <td align="left"><p>Accessed through structure pointer.</p>
-<p>[<strong>D3DKMDT_VIDPN_SOURCE_MODE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff546724)</p></td>
+<p><a href="https://msdn.microsoft.com/library/windows/hardware/ff546724" data-raw-source="[&lt;strong&gt;D3DKMDT_VIDPN_SOURCE_MODE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff546724)"><strong>D3DKMDT_VIDPN_SOURCE_MODE</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Target mode</p></td>
 <td align="left"><p>Accessed through structure pointer.</p>
-<p>[<strong>D3DKMDT_VIDPN_TARGET_MODE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff546729)</p></td>
+<p><a href="https://msdn.microsoft.com/library/windows/hardware/ff546729" data-raw-source="[&lt;strong&gt;D3DKMDT_VIDPN_TARGET_MODE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff546729)"><strong>D3DKMDT_VIDPN_TARGET_MODE</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Monitor source mode</p></td>
 <td align="left"><p>Accessed through structure pointer.</p>
-<p>[<strong>D3DKMDT_MONITOR_SOURCE_MODE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff546133)</p></td>
+<p><a href="https://msdn.microsoft.com/library/windows/hardware/ff546133" data-raw-source="[&lt;strong&gt;D3DKMDT_MONITOR_SOURCE_MODE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff546133)"><strong>D3DKMDT_MONITOR_SOURCE_MODE</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The VidPN manager, which is one of the components of the DirectX graphics kernel subsystem, cooperates with the display miniport driver to build and maintain VidPNs. The following steps describe how the display miniport driver obtains a handle and an interface to a VidPN object.
 
@@ -192,11 +189,10 @@ Updating a target mode set is similar to updating a source mode set. The [**DXGK
 
 There is no interface (set of functions) for obtaining the source and target that belong to a particular path. The display miniport driver can determine which source and target belong to a particular path by inspecting the **VidPnSourceId** and **VidPnTargetId** members of the [**D3DKMDT\_VIDPN\_PRESENT\_PATH**](https://msdn.microsoft.com/library/windows/hardware/ff546647) structure that represents the path.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20VidPN%20Objects%20and%20Interfaces%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

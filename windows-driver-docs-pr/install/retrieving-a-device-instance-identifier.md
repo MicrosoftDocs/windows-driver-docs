@@ -2,11 +2,8 @@
 title: Retrieving a Device Instance Identifier
 description: Retrieving a Device Instance Identifier
 ms.assetid: 6382fdf6-109a-430a-b6b5-322d3eebc4a1
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Retrieving a Device Instance Identifier
@@ -36,9 +33,9 @@ To retrieve a device instance identifier on Windows Server 2003, Windows XP, and
 
 If the second call to **SetupDiGetDeviceInstanceId** succeeds, **SetupDiGetDeviceInstanceId** sets the *DeviceInstanceId* buffer to the device instance identifier, sets \**RequiredSize* to the size, in characters, of the device instance identifier that was retrieved, and returns **TRUE**. If the function call fails, **SetupDiGetDeviceInstanceId** returns **FALSE** and a call to [GetLastError](http://go.microsoft.com/fwlink/p/?linkid=169416) returns the logged error code.
 
- 
+ 
 
- 
+ 
 
 
 

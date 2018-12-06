@@ -1,13 +1,9 @@
 ---
 title: Security Group Commands
-author: windows-driver-content
 description: The following sections describe special requirements for sending certain security commands.
 ms.assetid: 956C26D7-A434-4055-892B-E6E2D5B70CFA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Security Group Commands
@@ -24,7 +20,7 @@ Since some applications still need to issue these commands, the following proces
 
 **Note**  In Windows Vista and Windows 7 no ATA Security Group commands are permitted in the Microsoft provided ATA storage driver stack. A SECURITY FREEZE LOCK is sent at driver initialization time preventing an erase.
 
- 
+ 
 
 The SECURE ERASE feature is performed using this sequence of the following ATA Security Group commands:
 
@@ -41,17 +37,16 @@ The requirements to perform a SECURE ERASE are:
 
     **Note**  This command allows setting only the user password.
 
-     
+     
 
 -   Perform security command processing as necessary, including sending SECURITY ERASE PREPARE and SECURITY ERASE UNIT.
 
 For new applications, it is recommended to use the CRYPTO SCRAMBLE EXT command from the SANITIZE feature set. This is preferred over the SECURITY ERASE UNIT command since SANITIZE is supported in both the T10 standard (SCSI) and the T13 standard (ATA), and for all derived busses.
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

@@ -2,30 +2,23 @@
 title: Processing the surprise removal of a NIC (Windows 7 and later)
 description: Processing the Surprise Removal of a NIC (Windows 7 and Later Versions)
 ms.assetid: D1C1C862-8AFF-490F-8A1D-362280196548
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Processing the Surprise Removal of a NIC (Windows 7 and Later Versions)
 
 
-## <a href="" id="ddk-processing-the-surprise-removal-of-a-nic-ng"></a>
 
 
-In Windows 7 and Windows Server 2008 R2 and later, NDIS may participate in the surprise removal of a network interface card (NIC) differently than it had in previous versions of Windows. NDIS performs a revised surprise removal procedure if any of the following conditions are true:
 
--   The hotfix for KB2471472 has been installed.
+In Windows 7 and Windows Server 2008 R2 and later, NDIS may participate in the surprise removal of a network interface card (NIC) differently than it had in previous versions of Windows. NDIS performs a revised surprise removal procedure if *any* of the following conditions are true:
 
--   A mobile broadband (MB) device has been installed.
+-   The operating system is Windows 8 / Windows Server 2012 or later.
+-   The operating system is Windows 7, and the hotfix for KB2471472 has been installed.
+-   The operating system is Windows 7, and the network adapter is a mobile broadband (MBB) device.
 
 If none of these conditions are met, NDIS participates in the surprise removal process as it did in previous versions of Windows. For more information about this procedure, see [Processing the Surprise Removal of a NIC (Windows Vista)](processing-the-surprise-removal-of-a-nic--windows-vista-.md).
-
-**Note**  Starting with Windows 8 and Windows Server 2012, NDIS participates in the surprise removal process as described in this topic.
-
- 
 
 The following steps describe the revised way in which NDIS participates in the surprise removal of a NIC:
 
@@ -35,19 +28,19 @@ The following steps describe the revised way in which NDIS participates in the s
 
     **Note**  NDIS performs this step only for filter drivers that advertise an entry point for the [*FilterNetPnPEvent*](https://msdn.microsoft.com/library/windows/hardware/ff549952) function. A filter driver advertise this entry point when it calls the [**NdisFRegisterFilterDriver**](https://msdn.microsoft.com/library/windows/hardware/ff562608) function.
 
-     
+     
 
 3.  Within the context of the call to its [*FilterNetPnPEvent*](https://msdn.microsoft.com/library/windows/hardware/ff549952) function, the filter driver must call [**NdisFNetPnPEvent**](https://msdn.microsoft.com/library/windows/hardware/ff561828) to forward the **NetEventQueryRemoveDevice** event up to the next filter driver in the driver stack. This causes NDIS to call that filter driver's *FilterNetPnPEvent* function with an event code of **NetEventQueryRemoveDevice**.
 
     **Note**  NDIS performs this step only for the next filter driver in the driver stack that advertises an entry point for the [*FilterNetPnPEvent*](https://msdn.microsoft.com/library/windows/hardware/ff549952) function.
 
-     
+     
 
 4.  Each filter driver in the driver stack repeats the previous step until the highest filter driver in the stack has forwarded the **NetEventQueryRemoveDevice** event.
 
-    When this happens, NDIS calls the [*ProtocolNetPnPEvent*](https://msdn.microsoft.com/library/windows/hardware/ff570263) function of all protocol drivers that are bound to the NIC. In this call, NDIS specifies an event code of **NetEventQueryRemoveDevice.**.
+    When this happens, NDIS calls the [*ProtocolNetPnPEvent*](https://msdn.microsoft.com/library/windows/hardware/ff570263) function of all protocol drivers that are bound to the NIC. In this call, NDIS specifies an event code of **NetEventQueryRemoveDevice**.
 
-5.  If the miniport driver was successfully initialized, NDIS calls the [*MiniportDevicePnPEventNotify*](https://msdn.microsoft.com/library/windows/hardware/ff559369) function with an event code of **NdisDevicePnPEventSurpriseRemoved**. The miniport driver should note that the device has been physically removed. If the miniport driver is an NDIS-WDM driver, it should cancel any pending IRPs that it sent down to the underlying bus driver. If the miniport driver was not successfully initialized, processing continues.
+5.  NDIS calls the [*MiniportDevicePnPEventNotify*](https://msdn.microsoft.com/library/windows/hardware/ff559369) function with an event code of **NdisDevicePnPEventSurpriseRemoved**. The miniport driver should note that the device has been physically removed. If the miniport driver is an NDIS-WDM driver, it should cancel any pending IRPs that it sent down to the underlying bus driver.
 
 6.  NDIS performs the following steps:
 
@@ -71,9 +64,9 @@ The following steps describe the revised way in which NDIS participates in the s
 
 11. When NDIS receives the completed IRP\_MN\_REMOVE\_DEVICE request from the next lower device object in the stack, NDIS destroys the functional device object (FDO) that it created for the NIC.
 
- 
+ 
 
- 
+ 
 
 
 

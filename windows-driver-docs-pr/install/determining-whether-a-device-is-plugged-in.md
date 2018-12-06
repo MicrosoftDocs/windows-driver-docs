@@ -9,11 +9,8 @@ keywords:
 - verifying plugged in devices
 - plugged in device checks WDK
 - determining plugged in devices WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Determining Whether a Device Is Plugged In
@@ -61,9 +58,9 @@ When a device that formerly was attached is now unplugged, the device's [*devnod
 
     Plug and Play will reenumerate the device, find the new driver for it, and install that driver.
 
- 
+ 
 
- 
+ 
 
 
 

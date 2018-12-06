@@ -1,13 +1,9 @@
 ---
 title: I2C controller tests in MITT
-author: windows-driver-content
 description: I²C test modules that are included in the MITT software package can be used to test data transfers for an I²C controller and its driver. The MITT board acts as a client device connected to the I²C bus.
 ms.assetid: E40B9ABB-B119-4EC1-A383-EB96CC350A25
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # I2C controller tests in MITT
@@ -19,7 +15,7 @@ ms.technology: windows-devices
 
 **Applies to:**
 
--   Windows 8.1
+-   Windows 8.1
 
 I²C test modules that are included in the MITT software package can be used to test data transfers for an I²C controller and its driver. The MITT board acts as a client device connected to the I²C bus.
 
@@ -39,7 +35,7 @@ I²C test modules that are included in the MITT software package can be used to 
 |---------------|-------------------------------------|---------------------|------------------------------------|
 | I²C           | All lines needed (SCL, SDA and GND) | ACPI table          | Simple male block (on debug board) |
 
- 
+
 
 1.  Connect the I²C adapter to **JB1** on the MITT board.
 
@@ -57,7 +53,7 @@ I²C test modules that are included in the MITT software package can be used to 
 
 6.  Use the **RESET** button to power cycle the MITT board. If the wire connections to the I²C controller are correct, **LD7** (SDA indicator) and **LD6** (SCL indicator) turn on. If either LED does not turn on, there is a wiring issue because either SDA or, SCL, or both are pulled low.
 
-## <a href="" id="test-driver-and-acpi-configuration--"></a>Test driver and ACPI configuration
+## Test driver and ACPI configuration
 
 
 Perform these steps on the system under test that has the I²C controller:
@@ -68,94 +64,96 @@ Perform these steps on the system under test that has the I²C controller:
 
     ![intall witt driver for the mitt board](images/mitt-install-witt.png)
 
-    **Note**  PnpUtil.exe is included in %SystemRoot%\\System32.
+    **Note**  PnpUtil.exe is included in %SystemRoot%\\System32.
 
-     
+
 
 2.  Modify the system ACPI and include this ASL table. You can use the [Microsoft ASL compiler](https://msdn.microsoft.com/library/windows/hardware/dn551195).
 
-    **Note**  Change "\\\\\_SB\_.I2C2" to ACPI entry name for the I²C controller to test.
+    **Note**  Change "\\\\\_SB\_.I2C2" to ACPI entry name for the I²C controller to test.
 
-     
 
-    ``` syntax
-    //TP1 100Khz Standard Target Device(TP1) 
-    Device(TP1) {
-        Name (_HID, "STK0001") 
-        Name (_CID, "WITTTest") 
-        Method(_CRS, 0x0, NotSerialized)
-        {
-          Name (RBUF, ResourceTemplate ()
-          {
-            I2CSerialBus ( 0x11, ControllerInitiated, 100000,AddressingMode7Bit, "\\_SB_.I2C2",,, , )
-          })
-          Return(RBUF)
-        }
+
+
+``` syntax
+//TP1 100Khz Standard Target Device(TP1) 
+Device(TP1) {
+    Name (_HID, "STK0001") 
+    Name (_CID, "WITTTest") 
+    Method(_CRS, 0x0, NotSerialized)
+    {
+      Name (RBUF, ResourceTemplate ()
+      {
+        I2CSerialBus ( 0x11, ControllerInitiated, 100000,AddressingMode7Bit, "\\_SB_.I2C2",,, , )
+      })
+      Return(RBUF)
     }
+}
 
-    //TP2 400Khz  Fast Target
-    Device(TP2) {
-        Name (_HID, "STK0002") 
-        Name (_CID, "WITTTest") 
-        Method(_CRS, 0x0, NotSerialized)
-        {
-          Name (RBUF, ResourceTemplate ()
-          {
-            I2CSerialBus ( 0x12, ControllerInitiated, 400000,AddressingMode7Bit, "\\_SB_.I2C2",,, , )
-          })
-          Return(RBUF)
-        }
+//TP2 400Khz  Fast Target
+Device(TP2) {
+    Name (_HID, "STK0002") 
+    Name (_CID, "WITTTest") 
+    Method(_CRS, 0x0, NotSerialized)
+    {
+      Name (RBUF, ResourceTemplate ()
+      {
+        I2CSerialBus ( 0x12, ControllerInitiated, 400000,AddressingMode7Bit, "\\_SB_.I2C2",,, , )
+      })
+      Return(RBUF)
     }
+}
 
-    //TP3 1 Mhz  FastPlus Target
-    Device(TP3) {
-        Name (_HID, "STK0003") 
-        Name (_CID, "WITTTest") 
-        Method(_CRS, 0x0, NotSerialized)
-        {
-          Name (RBUF, ResourceTemplate ()
-          {
-            I2CSerialBus ( 0x13, ControllerInitiated, 1000000,AddressingMode7Bit, "\\_SB_.I2C2",,, , )
-          })
-          Return(RBUF)
-        }
-      }
+//TP3 1 Mhz  FastPlus Target
+Device(TP3) {
+    Name (_HID, "STK0003") 
+    Name (_CID, "WITTTest") 
+    Method(_CRS, 0x0, NotSerialized)
+    {
+      Name (RBUF, ResourceTemplate ()
+      {
+        I2CSerialBus ( 0x13, ControllerInitiated, 1000000,AddressingMode7Bit, "\\_SB_.I2C2",,, , )
+      })
+      Return(RBUF)
     }
+  }
+}
 
-    //TP4 1.4 Mhz High Speed, optional target
-    Device(TP4) {
-        Name (_HID, "STK0004") 
-        Name (_CID, "WITTTest") 
-        Method(_CRS, 0x0, NotSerialized)
-        {
-          Name (RBUF, ResourceTemplate ()
-          {
-            I2CSerialBus ( 0x14, ControllerInitiated, 1400000,AddressingMode7Bit, "\\_SB_.I2C2",,, , )
-          })
-          Return(RBUF)
-        }
+//TP4 1.4 Mhz High Speed, optional target
+Device(TP4) {
+    Name (_HID, "STK0004") 
+    Name (_CID, "WITTTest") 
+    Method(_CRS, 0x0, NotSerialized)
+    {
+      Name (RBUF, ResourceTemplate ()
+      {
+        I2CSerialBus ( 0x14, ControllerInitiated, 1400000,AddressingMode7Bit, "\\_SB_.I2C2",,, , )
+      })
+      Return(RBUF)
     }
+}
 
-    //TP5 3.4 Mhz High Speed, optional target
-    Device(TP5) {
-        Name (_HID, "STK0005") 
-        Name (_CID, "WITTTest") 
-        Method(_CRS, 0x0, NotSerialized)
-        {
-          Name (RBUF, ResourceTemplate ()
-          {
-            I2CSerialBus ( 0x15, ControllerInitiated, 3400000,AddressingMode7Bit, "\\_SB_.I2C2",,, , )
-          })
-          Return(RBUF)
-        }
+//TP5 3.4 Mhz High Speed, optional target
+Device(TP5) {
+    Name (_HID, "STK0005") 
+    Name (_CID, "WITTTest") 
+    Method(_CRS, 0x0, NotSerialized)
+    {
+      Name (RBUF, ResourceTemplate ()
+      {
+        I2CSerialBus ( 0x15, ControllerInitiated, 3400000,AddressingMode7Bit, "\\_SB_.I2C2",,, , )
+      })
+      Return(RBUF)
     }
-    ```
+}
+```
 
-    **Note**  Only TP1-3 are required to run MITT I²C tests. TP4 and TP5 are optional targets.
+**Note**  Only TP1-3 are required to run MITT I²C tests. TP4 and TP5 are optional targets.
 
-     
 
-## <a href="" id="i2c-automation-tests--"></a>I²C automation tests
+
+
+## I²C automation tests
 
 
 1.  Create a folder on the system under test.
@@ -167,17 +165,17 @@ Perform these steps on the system under test that has the I²C controller:
 
 You are now ready to run I²C tests. You can run a single test, all tests at once, or run tests manually.
 
--   Run a single test by using the **/name:*&lt;test name&gt;*** option. This command runs the BasicIORead test:
+- Run a single test by using the **/name:*&lt;test name&gt;*** option. This command runs the BasicIORead test:
 
-    ![mitt i2c commands](images/mitt-i2c-cmds1.png)
+  ![mitt i2c commands](images/mitt-i2c-cmds1.png)
 
--   Run all tests by using this command:
+- Run all tests by using this command:
 
-    ![mitt i2c commands](images/mitt-i2c-cmds2.png)
+  ![mitt i2c commands](images/mitt-i2c-cmds2.png)
 
--   Run tests manually by using SPBCmd.exe tool included in the MITT software package.
+- Run tests manually by using SPBCmd.exe tool included in the MITT software package.
 
-## <a href="" id="i2c-adapter-schematic"></a>I²C adapter schematic
+## I²C adapter schematic
 
 
 ![i2c schematic](images/i2c-schematic.png)
@@ -185,6 +183,5 @@ You are now ready to run I²C tests. You can run a single test, all tests at onc
 ## Related topics
 [Testing with Multi Interface Test Tool (MITT)](https://msdn.microsoft.com/library/windows/hardware/dn919874)  
 
---------------------
 
 

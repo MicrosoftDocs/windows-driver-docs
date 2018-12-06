@@ -1,13 +1,9 @@
 ---
 title: Unidrv/PScript5 XPSDrv UI Behavior Changes
-author: windows-driver-content
 description: Unidrv/PScript5 XPSDrv UI Behavior Changes
 ms.assetid: 7c594f40-8e75-4c8b-a60e-42f74116c75f
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Unidrv/PScript5 XPSDrv UI Behavior Changes
@@ -38,12 +34,12 @@ A Unidrv/PScript5 driver that is running in XPSDrv mode will create the followin
 <tr class="even">
 <td><p>Copy Count</p>
 <p>(<strong>Advanced</strong> tab)</p></td>
-<td><p>(Unidrv only) The Copy Count UI is always displayed unless the GPD file has a &quot;Collate&quot; feature with &quot;*ConcealFromUI?: TRUE&quot;:</p>
-<p>(Unidrv only) When EMF is enabled, the Copy Count UI is hard-coded to have an upper limit that is the maximum value of 9999 or the GPD file's specified *MaxCopies value.</p>
+<td><p>(Unidrv only) The Copy Count UI is always displayed unless the GPD file has a &quot;Collate&quot; feature with &quot;<em>ConcealFromUI?: TRUE&quot;:</p>
+<p>(Unidrv only) When EMF is enabled, the Copy Count UI is hard-coded to have an upper limit that is the maximum value of 9999 or the GPD file&#39;s specified *MaxCopies value.</p>
 <p>(Unidrv only) When EMF is disabled, Copy Count has an upper limit of the GPD file *MaxCopies value.</p>
 <p>(PS only) The Copy Count UI is always displayed, with an upper limit that is hard-coded to be 9999.</p></td>
 <td><p>(Unidrv only) The Copy Count UI behaves the same as the non-XPSDrv behavior with EMF disabled.</p>
-<p>(PS only) Copy Count is always displayed, with an upper limit that is specified in the PPD file's *MSXPSMaxCopies value. The upper limit is set to 1 if the PPD file does not specify *MSXPSMaxCopies.</p></td>
+<p>(PS only) Copy Count is always displayed, with an upper limit that is specified in the PPD file&#39;s *MSXPSMaxCopies value. The upper limit is set to 1 if the PPD file does not specify *MSXPSMaxCopies.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Collated</p>
@@ -56,7 +52,7 @@ A Unidrv/PScript5 driver that is running in XPSDrv mode will create the followin
 <td><p>Color</p>
 <p>(<strong>Paper/Quality</strong> tab)</p></td>
 <td><p>(Unidrv only) The color versus black and white UI selection is shown if the GPD ColorMode feature has one color option.</p></td>
-<td><p>(Unidrv only) The color versus black and white UI selection is shown if the GPD ColorMode feature has one color option and if the ColorMode feature does not specify &quot;*ConcealFromUI?: TRUE&quot;.</p></td>
+<td><p>(Unidrv only) The color versus black and white UI selection is shown if the GPD ColorMode feature has one color option and if the ColorMode feature does not specify &quot;</em>ConcealFromUI?: TRUE&quot;.</p></td>
 </tr>
 <tr class="odd">
 <td><p>ICM Method, ICM Intent</p>
@@ -144,14 +140,12 @@ A Unidrv/PScript5 driver that is running in XPSDrv mode will create the followin
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Unidrv/PScript5%20XPSDrv%20UI%20Behavior%20Changes%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

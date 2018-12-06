@@ -7,17 +7,14 @@ keywords:
 - DIF codes WDK device installations
 - device installation function codes WDK
 - function codes WDK device installations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling DIF Codes
 
 
-## <a href="" id="ddk-handling-dif-codes-dg"></a>
+
 
 
 [*Device installation applications*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-installation-application) send [device installation function codes](https://msdn.microsoft.com/library/windows/hardware/ff541307) (DIF codes) to installers by calling [**SetupDiCallClassInstaller**](https://msdn.microsoft.com/library/windows/hardware/ff550922). This function, in turn, calls the installer's entry point function. For a description of installer entry points, see:
@@ -93,9 +90,9 @@ The following figure shows the sequence of events in **SetupDiCallClassInstaller
 
 The operating system performs some operations for each DIF code. Vendor-supplied co-installers and class installers can participate in the installation activities. Note that **SetupDiCallClassInstaller** calls co-installers that registered for postprocessing even if the DIF code fails.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,8 @@
 title: Debugging Device Installations with a User-mode Debugger
 description: Debugging Device Installations with a User-mode Debugger
 ms.assetid: 34427afb-3303-44ec-a3a7-72f247c5506d
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Debugging Device Installations with a User-mode Debugger
@@ -24,25 +21,25 @@ When the **DebugInstall** registry value is set to 2, *DrvInst.exe* will wait fo
 
 For example, a debugger can be attached to *DrvInst.exe* by name:
 
-```
+```cpp
 C:\>C:\Debuggers\WinDbg.exe -g -pn DrvInst.exe
 ```
 
 Or, if a debugger is attached to the target system, the following debug information will be displayed:
 
-```
+```cpp
 DRVINST.EXE: Waiting for debugger on Process ID = 3556 ......
 ```
 
 This allows the debugger to be attached to the *DrvInst.exe* process by using its unique process ID:
 
-```
+```cpp
 C:\>C:\Debuggers\WinDbg.exe -g -p 3556
 ```
 
 After a user-mode debugger is attached to the *DrvInst.exe* process, the process will break into the debugger:
 
-```
+```cpp
 Debugger detected!
 DRVINST.EXE: Entering debugger during PnP device installation.
 Device instance = "X\Y\Z" ...
@@ -62,7 +59,7 @@ Because the core stages of device installation have not been processed, any clas
 
 If the module and function name for a breakpoint are known in advance, that name can be set as an unresolved breakpoint by using the "bu" debugger command. The following code example shows how to set an unresolved breakpoint for the main entry point (CoInstallerProc) of the *MyCoinst.dll* co-installer:
 
-```
+```cpp
 0:000> bu mycoinst!CoInstallerProc
 0:000> bl
  0 eu             0001 (0001) (mycoinst!CoInstallerProc)
@@ -70,7 +67,7 @@ If the module and function name for a breakpoint are known in advance, that name
 
 When *MyCoinst.dll* co-installer is loaded and the breakpoint is reached:
 
-```
+```cpp
 Breakpoint 0 hit
 eax=00000001 ebx=00000000 ecx=00000152 edx=00000151 esi=01a57298 edi=00000002
 eip=5bcf54f1 esp=0007e204 ebp=0007e580 iopl=0         nv up ei pl nz na pe nc
@@ -85,7 +82,7 @@ A class installer or co-installer DLL should not predict when either, respective
 
 Alternatively, the *DrvInst.exe* process might be allowed to execute up to the point where a specific class installer or co-installer DLL is loaded into the process by setting a debugger exception for the load event of that DLL:
 
-```
+```cpp
 0:000> sxe ld mycoinst.dll
 ```
 
@@ -93,7 +90,7 @@ Alternatively, the *DrvInst.exe* process might be allowed to execute up to the p
 
 After the module is loaded, breakpoints can be set within the DLL. For example:
 
-```
+```cpp
 ModLoad: 5bcf0000 5bd05000   C:\WINDOWS\system32\mycoinst.dll
 eax=00000000 ebx=00000000 ecx=011b0000 edx=7c90eb94 esi=00000000 edi=00000000
 eip=7c90eb94 esp=0007da54 ebp=0007db48 iopl=0         nv up ei ng nz ac po nc
@@ -124,9 +121,9 @@ The default time period for an installation process to complete is 5 minutes. If
 
 If a user-mode debugger is attached to the target system during the device installation process, the system will not enforce this timeout period. This allows a [driver package](driver-packages.md) developer to spend the time needed to debug the installation process.
 
- 
+ 
 
- 
+ 
 
 
 

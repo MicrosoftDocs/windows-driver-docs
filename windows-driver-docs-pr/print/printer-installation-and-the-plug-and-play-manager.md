@@ -1,23 +1,19 @@
 ---
 title: Printer Installation and the Plug and Play Manager
-author: windows-driver-content
 description: Printer Installation and the Plug and Play Manager
 ms.assetid: 1edc92f1-fcd9-4af0-957d-cd7ff2e40125
 keywords:
 - Plug and Play manager WDK print
 - duplicate installation detection WDK print
 - detecting duplicate printer installations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Printer Installation and the Plug and Play Manager
 
 
-## <a href="" id="ddk-printer-installation-and-the-plug-and-play-manager-gg"></a>
+
 
 
 The Plug and Play manager handles all Plug and Play events for the machine, and is generic to all devices. The Plug and Play manager is documented in [Plug and Play](https://msdn.microsoft.com/library/windows/hardware/ff547125). [Introduction to Plug and Play](https://msdn.microsoft.com/library/windows/hardware/ff548102) gives an overview of Plug and Play installation, and of how the various kernel-mode and user-mode components interact.
@@ -50,12 +46,10 @@ A number of popular printer models share the same hardware ID (the HP DeskJet se
 
 Windows 2000 and later avoids this behavior by listing all printers with both a [*hardware ID*](https://msdn.microsoft.com/library/windows/hardware/ff556288#wdkgloss-hardware-id) and [*compatible ID*](https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-compatible-id) match. When multiple matches are found, the class installer checks to see whether there is already a print queue with the same hardware ID match. If there is, the Plug and Play manager does not install a second queue. If not, the hardware ID match is downgraded to a compatible ID match. If these hardware IDs are also listed in the InteractiveInstall entry (see [**INF ControlFlags Section**](https://msdn.microsoft.com/library/windows/hardware/ff546342)) of the INF file, the user is prompted to select a driver.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Printer%20Installation%20and%20the%20Plug%20and%20Play%20Manager%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

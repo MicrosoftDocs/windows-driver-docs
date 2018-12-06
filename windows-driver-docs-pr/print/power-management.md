@@ -1,6 +1,5 @@
 ---
 title: Power Management
-author: windows-driver-content
 description: Power Management
 ms.assetid: b47ed463-2292-419a-af16-196382dbd3f1
 keywords:
@@ -9,11 +8,8 @@ keywords:
 - shutdown power management WDK printer
 - standby tests WDK printer
 - hibernate tests WDK printer
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Power Management
@@ -66,12 +62,10 @@ With one device connected and installed correctly, test its behavior before and 
     5.  Put the device into each of the error states described in [Device Error States](device-error-states.md). Verify that the job can be canceled, recovered from, and restarted after returning from a critical shutdown event. Print jobs in an error state should remain in the queue through shutdown or restart, and the print job should resume after the error state is cleared after shutdown or restart.
     6.  With the device installed and idle, use the **Power Options** application, obtained from Control Panel, to start a system sleep state. Verify that the system enters the appropriate Sleep state at the given time. Repeat this test without the device installed, and verify that the device can be installed after the system wakes.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Power%20Management%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

@@ -7,17 +7,14 @@ keywords:
 - filter drivers WDK networking , status indications
 - NDIS filter drivers WDK , status indications
 - status indications WDK networking , filter drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Filter Module Status Indications
 
 
-## <a href="" id="ddk-filter-module-status-indications-ng"></a>
+
 
 
 Filter drivers can supply a [*FilterStatus*](https://msdn.microsoft.com/library/windows/hardware/ff549973) function that NDIS calls when an underlying driver reports status. Filter drivers can also initiate status indications.
@@ -36,9 +33,9 @@ In this case, the filter driver should set the **SourceHandle** member to the ha
 
 After a filter driver calls [**NdisFIndicateStatus**](https://msdn.microsoft.com/library/windows/hardware/ff561824), NDIS calls the status function ([**ProtocolStatusEx**](https://msdn.microsoft.com/library/windows/hardware/ff570270) or *FilterStatus*) of the next overlying driver.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,8 @@
 title: PackageInfo XML Document
 description: PackageInfo XML Document
 ms.assetid: 1fa9b8a5-d6ab-4952-8e2d-7cb7ccc88804
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # PackageInfo XML Document
@@ -26,9 +23,9 @@ Each device metadata package must contain only one PackageInfo XML document. The
 
 The data in the PackageInfo XML document is formatted based on the [PackageInfo XML schema](https://msdn.microsoft.com/library/windows/hardware/ff549614).
 
- 
+ 
 
- 
+ 
 
 
 

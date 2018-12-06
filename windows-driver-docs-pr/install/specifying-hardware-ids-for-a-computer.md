@@ -2,11 +2,8 @@
 title: Specifying Hardware IDs for a Computer
 description: Specifying Hardware IDs for a Computer
 ms.assetid: af0dbfc4-747c-4e16-a3ed-678df0e07757
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 #  Specifying Hardware IDs for a Computer
@@ -39,7 +36,7 @@ The following tables show the SMBIOS fields used to form each hardware ID in Win
 
 **Important**   Each Computer HardwareID is only generated if each individual SMBIOS field used to generate the HardwareID is populated in the SMBIOS data for the system.
 
- 
+ 
 
 | HWID         | Windows 7                                                                                                            |
 |--------------|----------------------------------------------------------------------------------------------------------------------|
@@ -51,7 +48,7 @@ The following tables show the SMBIOS fields used to form each hardware ID in Win
 | HardwareID-5 | Manufacturer + Enclosure Type                                                                                        |
 | HardwareID-6 | Manufacturer                                                                                                         |
 
- 
+ 
 
 | HWID         | Windows 8, Windows 8.1                                                                                                   |
 |--------------|--------------------------------------------------------------------------------------------------------------------------|
@@ -66,7 +63,7 @@ The following tables show the SMBIOS fields used to form each hardware ID in Win
 | HardwareID-8 | Manufacturer + Enclosure Type                                                                                            |
 | HardwareID-9 | Manufacturer                                                                                                             |
 
- 
+ 
 
 | HWID          | Windows 10                                                                                                               |
 |---------------|--------------------------------------------------------------------------------------------------------------------------|
@@ -86,7 +83,7 @@ The following tables show the SMBIOS fields used to form each hardware ID in Win
 | HardwareID-13 | Manufacturer + Baseboard Manufacturer + Baseboard Product                                                                |
 | HardwareID-14 | Manufacturer                                                                                                             |
 
- 
+ 
 
 Each hardware ID string is converted into a GUID by using the SHA-1 hashing algorithm.
 
@@ -102,11 +99,11 @@ For Windows 7 systems, we highly recommend that vendors do the following when s
 
 **Note**  For Windows 7 PC Device Metadata, do not use **HardwareID-1** or **HardwareID-2** for the computer's hardware ID. **Hardware ID-1** or **HardwareID-2** is reserved for future use.
 
- 
+ 
 
 **Note**  For Windows 8 PC Device Metadata, we strongly recommend that vendors not use **HardwareID-1**, **HardwareID-2**, **HardwareID-3** for the computer’s hardware ID. **HardwareID-1**, **HardwareID-2**, **HardwareID-3** are reserved for future use. Instead, vendors can use **HardwareID-4**, **HardwareID-5**, **HardwareID-6**, **HardwareID-7**, **HardwareID-8**, **HardwareID-9**, and **HardwareID-10**.
 
- 
+ 
 
 To specify that the hardware ID is for a computer device container, use the following rules:
 
@@ -116,7 +113,7 @@ To specify that the hardware ID is for a computer device container, use the foll
 
 The following is an example of a [**HardwareID**](https://msdn.microsoft.com/library/windows/hardware/ff546114) XML element for the computer:
 
-```
+```cpp
 DOID:ComputerMetadata\{c20d5449-511e-4cb5-902a-a541239322aa}
 ```
 
@@ -127,9 +124,9 @@ For more information about the format requirements of the **HardwareID** XML ele
 
 [Windows 10 Driver Publishing Workflow](http://go.microsoft.com/fwlink/p/?LinkId=617374 )
 
- 
+ 
 
- 
+ 
 
 
 

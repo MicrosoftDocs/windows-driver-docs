@@ -2,11 +2,8 @@
 title: Accessing Custom Device Properties
 description: Accessing Custom Device Properties
 ms.assetid: 81170fd5-f1fb-4a06-a651-4651fc894070
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Accessing Custom Device Properties
@@ -30,9 +27,9 @@ After you retrieve a handle to a registry key, supply the handle in a call to [R
 
 Call the [RegCloseKey](http://go.microsoft.com/fwlink/p/?linkid=194543) function to close the registry key after access to the registry key is no longer required.
 
- 
+ 
 
- 
+ 
 
 
 

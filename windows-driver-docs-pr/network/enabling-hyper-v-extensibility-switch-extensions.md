@@ -2,11 +2,8 @@
 title: Enabling Hyper-V Extensible Switch Extensions
 description: Enabling Hyper-V Extensible Switch Extensions
 ms.assetid: 13FD68CB-8F50-4BE3-8822-03464D8C118C
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Enabling Hyper-V Extensible Switch Extensions
@@ -43,7 +40,7 @@ Enabled       : True
 
 **Note**  The Windows Filtering Platform (WFP) in-box filtering extension (Wfplwfs.sys ) is enabled by default on each extensible switch instance.
 
- 
+ 
 
 ## Related topics
 
@@ -54,9 +51,9 @@ Enabled       : True
 
 [**Msvm\_EthernetSwitchExtension**](https://msdn.microsoft.com/library/hh850139)
 
- 
+ 
 
- 
+ 
 
 
 

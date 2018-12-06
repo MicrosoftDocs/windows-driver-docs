@@ -1,16 +1,12 @@
 ---
 title: Obtaining Information About a General I/O Target in UMDF
-author: windows-driver-content
 description: Obtaining Information About a General I/O Target in UMDF
 ms.assetid: 306a7f46-423a-4647-846d-76f917ca0f7c
 keywords:
 - general I/O targets WDK UMDF , information about
 - status information WDK I/O targets
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Obtaining Information About a General I/O Target in UMDF
@@ -29,9 +25,9 @@ Returns state information for a local I/O target.
 <a href="" id="iwdfremotetarget--getstate"></a>[**IWDFRemoteTarget::GetState**](https://msdn.microsoft.com/library/windows/hardware/ff560265)  
 Returns state information for a remote I/O target.
 
- 
+ 
 
- 
+ 
 
 
 

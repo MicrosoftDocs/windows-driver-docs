@@ -1,17 +1,13 @@
 ---
 title: Deleting I/O Queues
-author: windows-driver-content
 description: Deleting I/O Queues
 ms.assetid: 7eb7a24d-de39-4e3d-865c-ebfb49d43519
 keywords:
 - I/O queues WDK KMDF , deleting
 - temporary I/O queues WDK KMDF
 - deleting I/O queues WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Deleting I/O Queues
@@ -27,11 +23,11 @@ If, however, your driver creates temporary I/O queues outside of its [*EvtDriver
 
 **Note**   The framework does not permit a driver to delete its default I/O queue, or any I/O queue that the driver configures to receive all I/O requests of a particular type (by calling [**WdfDeviceConfigureRequestDispatching**](https://msdn.microsoft.com/library/windows/hardware/ff545920)). If your driver calls [**WdfObjectDelete**](https://msdn.microsoft.com/library/windows/hardware/ff548734) to delete the queue object that represents one of these queues, **WdfObjectDelete** returns without deleting the object. **WdfObjectDelete** does not provide a return status, so the framework reports an error only if you are [using the framework's verifier](using-kmdf-verifier.md).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

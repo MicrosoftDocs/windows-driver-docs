@@ -7,17 +7,14 @@ keywords:
 - wake-up capabilities WDK networking , OIDs
 - power management WDK NDIS miniport , OIDs
 - object identifiers WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Required and Optional OIDs for Power Management
 
 
-## <a href="" id="ddk-required-and-optional-oids-for-power-management-ng"></a>
+
 
 
 For a miniport driver, supporting power management involves supporting power management object identifiers (OIDs). For a detailed description of how miniport drivers process queries and sets to OIDs, see [Obtaining and SettingMiniport Driver Information and NDIS Support for WMI](obtaining-and-setting-miniport-driver-information-and-ndis-support-for.md).
@@ -66,9 +63,9 @@ NDIS miniport drivers that support network wake-up events can optionally support
 
     Protocol drivers query this OID to determine the number of valid wake-ups that are signaled by the miniport driver's network adapter.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,13 +1,9 @@
 ---
 title: Storage Silo Drivers
-author: windows-driver-content
 description: Storage Silo Drivers
 ms.assetid: fffeb73b-c01f-433f-b413-f5ff843298c5
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Storage Silo Drivers
@@ -26,11 +22,10 @@ This section contains the following information:
 
 [Architecture](architecture.md)
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

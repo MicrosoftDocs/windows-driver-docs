@@ -6,17 +6,14 @@ keywords:
 - installation applications WDK , device-specific applications
 - device installation applications WDK , device-specific applications
 - device-specific applications WDK device installations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installing Device-Specific Applications
 
 
-## <a href="" id="ddk-installing-device-specific-applications-dg"></a>
+
 
 
 If your distribution medium includes device-specific applications, you can use the following methods to install those applications:
@@ -38,9 +35,9 @@ If your distribution medium includes device-specific applications, you can use t
 
     If the user inserts the distribution medium before plugging in the device, this is referred to as a [software-first installation](software-first-installation.md). The medium's AutoRun-invoked device installation application should determine whether the device-specific applications have already been installed and if they have not, it should install them by using Windows Installer. For more information, see the Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

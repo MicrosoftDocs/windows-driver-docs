@@ -3,11 +3,8 @@ title: Identifying the Caller From the Server Thread
 description: Identifying the Caller From the Server Thread
 ms.assetid: d19dc242-1043-4e61-9fcb-eadac0ab63c8
 keywords: ["RPC debugging, identifying the caller"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Identifying the Caller From the Server Thread
@@ -27,14 +24,14 @@ Depending on which protocol sequence is used by this particular call, you can ge
 1.  Start a user-mode debugger with the server thread as the target.
 
 2.  Get the process ID by using the [**| (Process Status)**](---process-status-.md) command:
-    ```
+    ```dbgcmd
     0:001> |
       0     id: 3d4 name: rtsvr.exe
     ```
 
 3.  Get the active calls in this process by using the [**!rpcexts.getcallinfo**](-rpcexts-getcallinfo.md) extension. (See the reference page for an explanation of the syntax.) You need to supply the process ID of 0x3D4:
 
-    ```
+    ```dbgcmd
     0:001> !rpcexts.getcallinfo 0 0 FFFF 3d4
     Searching for call info ...
     PID  CELL ID   ST PNO IFSTART  THRDCELL  CALLFLAG CALLID   LASTTIME CONN/CLN
@@ -45,7 +42,7 @@ Depending on which protocol sequence is used by this particular call, you can ge
     Look for calls with status 02 or 01 (dispatched or active). In this example, the process only has one call. If there were more, you would have to use the [**!rpcexts.getdbgcell**](-rpcexts-getdbgcell.md) extension with the cell number in the THRDCELL column. This would allow you to examine the thread IDs so you could determine which call you were interested in.
 
 4.  After you know which call you are interested in, look at the cell number in the CONN/CLN column. This is the cell ID of the connection object. In this case, the cell number is 0000.0003. Pass this cell number and the process ID to **!rpcexts.getdbgcell**:
-    ```
+    ```dbgcmd
     0:001> !rpcexts.getdbgcell 3d4 0.3
     Getting cell info ...
     Connection
@@ -72,13 +69,12 @@ If remote named pipes are used as the transport, no information will be availabl
 
 **Note**   The previous example shows how to find the client thread if you know the server thread. For an example of the reverse technique, see [Analyzing a Stuck Call Problem](analyzing-a-stuck-call-problem.md).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Identifying%20the%20Caller%20From%20the%20Server%20Thread%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

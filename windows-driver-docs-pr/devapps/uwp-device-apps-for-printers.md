@@ -2,11 +2,8 @@
 title: UWP device apps for printers
 description: This section introduces UWP device apps for printers.
 ms.assetid: 3325B492-2A70-4EB7-99B0-3FE3E24CE398
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # UWP device apps for printers
@@ -16,7 +13,7 @@ This section introduces UWP device apps for printers. UWP device apps can highli
 
 **Important**  To use UWP device app features, your printer must support the v4 print driver model. For more info, see [Developing v4 print drivers](http://go.microsoft.com/fwlink/p/?LinkId=314231).
 
- 
+ 
 
 ## <span id="in_this_section"></span>In this section
 
@@ -34,33 +31,33 @@ This section introduces UWP device apps for printers. UWP device apps can highli
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[How to display printer status](how-to-display-printer-status.md)</p></td>
-<td align="left"><p>This topic uses the C# version of the [Print settings and print notifications](http://go.microsoft.com/fwlink/p/?LinkID=242862) sample to demonstrate how to query the printer status and display it.</p></td>
+<td align="left"><p><a href="how-to-display-printer-status.md" data-raw-source="[How to display printer status](how-to-display-printer-status.md)">How to display printer status</a></p></td>
+<td align="left"><p>This topic uses the C# version of the <a href="http://go.microsoft.com/fwlink/p/?LinkID=242862" data-raw-source="[Print settings and print notifications](http://go.microsoft.com/fwlink/p/?LinkID=242862)">Print settings and print notifications</a> sample to demonstrate how to query the printer status and display it.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[How to customize print settings](how-to-customize-print-settings.md)</p></td>
-<td align="left"><p>This topic introduces the advanced print settings flyout, and shows how the C# version of the [Print settings and print notifications](http://go.microsoft.com/fwlink/p/?LinkID=242862) sample replaces the default flyout with a custom flyout.</p></td>
+<td align="left"><p><a href="how-to-customize-print-settings.md" data-raw-source="[How to customize print settings](how-to-customize-print-settings.md)">How to customize print settings</a></p></td>
+<td align="left"><p>This topic introduces the advanced print settings flyout, and shows how the C# version of the <a href="http://go.microsoft.com/fwlink/p/?LinkID=242862" data-raw-source="[Print settings and print notifications](http://go.microsoft.com/fwlink/p/?LinkID=242862)">Print settings and print notifications</a> sample replaces the default flyout with a custom flyout.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Working with print notifications](working-with-print-notifications.md)</p></td>
-<td align="left"><p>This topic introduces print notifications, and shows how the C# version of the [Print settings and print notifications](http://go.microsoft.com/fwlink/p/?LinkID=242862) sample uses a background task to respond to print notification. The background task demonstrates how to save notification details in the local app data store, send toasts, and update a tile and badge.</p></td>
+<td align="left"><p><a href="working-with-print-notifications.md" data-raw-source="[Working with print notifications](working-with-print-notifications.md)">Working with print notifications</a></p></td>
+<td align="left"><p>This topic introduces print notifications, and shows how the C# version of the <a href="http://go.microsoft.com/fwlink/p/?LinkID=242862" data-raw-source="[Print settings and print notifications](http://go.microsoft.com/fwlink/p/?LinkID=242862)">Print settings and print notifications</a> sample uses a background task to respond to print notification. The background task demonstrates how to save notification details in the local app data store, send toasts, and update a tile and badge.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[How to manage print jobs](how-to-manage-print-jobs.md)</p></td>
-<td align="left"><p>In Windows 8.1, UWP device apps for printers can manage print jobs. This topic uses the C# version of the [Print job management and printer maintenance](http://go.microsoft.com/fwlink/p/?LinkID=299829) sample to demonstrate how to create a view of print jobs, monitor those jobs, and if necessary, cancel a job.</p></td>
+<td align="left"><p><a href="how-to-manage-print-jobs.md" data-raw-source="[How to manage print jobs](how-to-manage-print-jobs.md)">How to manage print jobs</a></p></td>
+<td align="left"><p>In Windows 8.1, UWP device apps for printers can manage print jobs. This topic uses the C# version of the <a href="http://go.microsoft.com/fwlink/p/?LinkID=299829" data-raw-source="[Print job management and printer maintenance](http://go.microsoft.com/fwlink/p/?LinkID=299829)">Print job management and printer maintenance</a> sample to demonstrate how to create a view of print jobs, monitor those jobs, and if necessary, cancel a job.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[How to do printer maintenance](how-to-do-printer-maintenance.md)</p></td>
-<td align="left"><p>In Windows 8.1, UWP device apps can perform printer maintenance, such as aligning print heads and cleaning nozzles. This topic uses the C# version of the [Print job management and printer maintenance](http://go.microsoft.com/fwlink/p/?LinkID=299829) sample to demonstrate how bidirectional communication (Bidi) can be used to perform such device maintenance.</p></td>
+<td align="left"><p><a href="how-to-do-printer-maintenance.md" data-raw-source="[How to do printer maintenance](how-to-do-printer-maintenance.md)">How to do printer maintenance</a></p></td>
+<td align="left"><p>In Windows 8.1, UWP device apps can perform printer maintenance, such as aligning print heads and cleaning nozzles. This topic uses the C# version of the <a href="http://go.microsoft.com/fwlink/p/?LinkID=299829" data-raw-source="[Print job management and printer maintenance](http://go.microsoft.com/fwlink/p/?LinkID=299829)">Print job management and printer maintenance</a> sample to demonstrate how bidirectional communication (Bidi) can be used to perform such device maintenance.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Printer extension library overview](printer-extension-library-overview.md)</p></td>
+<td align="left"><p><a href="printer-extension-library-overview.md" data-raw-source="[Printer extension library overview](printer-extension-library-overview.md)">Printer extension library overview</a></p></td>
 <td align="left"><p>This topic introduces the printer extension library, a library that helps device manufacturers write UWP device apps for their printer.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Should_I_create_a_Windows_Store_device_app_for_my_printer_"></span><span id="should_i_create_a_windows_store_device_app_for_my_printer_"></span><span id="SHOULD_I_CREATE_A_WINDOWS_STORE_DEVICE_APP_FOR_MY_PRINTER_"></span>Should I create a UWP device app for my printer?
 
@@ -106,11 +103,10 @@ The UWP device app samples for printers demonstrate the printer-related features
 
 [Create device metadata for a UWP device app (step-by-step guide)](step-2--create-device-metadata.md)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devapps\devapps]:%20Windows%20Store%20device%20apps%20for%20printers%20%20RELEASE:%20%281/20/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

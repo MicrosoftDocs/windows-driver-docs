@@ -1,6 +1,5 @@
 ---
 title: Initialization sequence
-author: windows-driver-content
 description: The figure below illustrates a high-level set of NCI packets that are exchanged by the NFC CX and the NFCC during initialization.
 ms.assetid: 4977E1D4-2546-4573-B555-FA87DB8A2168
 keywords:
@@ -9,11 +8,8 @@ keywords:
 - proximity
 - near field proximity
 - NFP
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Initialization sequence
@@ -33,9 +29,9 @@ Some NFCC firmware implementations have an out of band mechanism, i.e. outside t
 
 ![firmware download pre-initialization](images/firmwaredownloadpreinitialization.png)
 
- 
+ 
 
- 
+ 
 ## Related topics
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [NFC class extension (CX) reference](https://msdn.microsoft.com/library/windows/hardware/dn905536)  

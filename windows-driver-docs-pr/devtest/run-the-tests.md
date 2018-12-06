@@ -5,34 +5,46 @@ keywords:
 - Sysfund tests
 - data-driven tests
 - SDEL query
-ms.author: windowsdriverdev
 ms.date: 11/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Run the tests
 ## Description of the tests and configuration file
 You can find the data-driven SysFund tests at \<unzipped EWDK root>\Program Files\Windows Kits\10\Testing\Tests\Additional Tests\x64\DevFund\DataDriven.  The data-driven test suite consists of the following files:
 
--	Two test DLL’s which use the XML configuration file WDTFTest.xml:
+- Five test DLL’s which use the XML configuration file WDTFTest.xml:
 
-    *	Sysfund_PNP_DisableEnable_With_IO_BeforeAndAfter_DataDriven.dll
-    *	Sysfund_Sleep_With_IO_BeforeAndAfter_DataDriven.dll
--	Two utility DLL’s which use the XML configuration file WDTFTest.xml:
-    *	Utility_DeviceStatusCheck_DataDriven.dll
-    *	Utility_EnableDisableDriverVerifier_DataDriven.dll
--	The XML configuration file:
-        *	WDTFTest.xml
+  *   Sysfund_Device_IO_DataDriven.dll
+  *   Sysfund_PNP_DisableEnable_With_IO_BeforeAndAfter_DataDriven.dll
+  *   Sysfund_PNP_RemoveAndRestartDevice_DataDriven.dll
+  *   Sysfund_RebootRestart_With_IO_During_DataDriven.dll
+  *   Sysfund_Sleep_With_IO_BeforeAndAfter_DataDriven.dll
+- Two utility DLL’s which use the XML configuration file WDTFTest.xml:
+  *   Utility_DeviceStatusCheck_DataDriven.dll
+  *   Utility_EnableDisableDriverVerifier_DataDriven.dll
+- The XML configuration file:
+      *   WDTFTest.xml
 
-**System - PNP (disable and enable) with IO before and after (reliability)**
+**System - Device I/O Test**
+-	Binary: Sysfund_Device_IO_DataDriven.dll
+-	This test sends I/O to all devices on the system
+
+**System - PNP (disable and enable) with IO before and after (Reliability)**
 -	Binary: Sysfund_PNP_DisableEnable_With_IO_BeforeAndAfter_DataDriven.dll
 -	[Documentation](https://msdn.microsoft.com/de-de/library/windows/hardware/dn941373(v=vs.85).aspx)
 
-**System - Sleep with IO before and after (reliability SysFund)** 
+**System - PNP Remove Device Test (Reliability)**
+-	Binary: Sysfund_PNP_RemoveAndRestartDevice_DataDriven.dll
+-	[Documentation](https://docs.microsoft.com/windows-hardware/test/hlk/testref/ead2222e-4485-4bfc-84cd-43ac0d2e8181)
+
+**System - Reboot Restart with IO During (Reliability)**
+-	Binary: Sysfund_RebootRestart_With_IO_During_DataDriven.dll
+-	[Documentation](https://docs.microsoft.com/windows-hardware/test/hlk/testref/6d6ed5ec-1765-4569-a7ac-20ed7869d89a)
+
+**System - Sleep with IO before and after (Reliability SysFund)** 
 -	Binary: Sysfund_Sleep_With_IO_BeforeAndAfter_DataDriven.dll
--	[Documentation](https://msdn.microsoft.com/en-us/library/windows/hardware/dn940448(v=vs.85).aspx)
+-	[Documentation](https://msdn.microsoft.com/library/windows/hardware/dn940448(v=vs.85).aspx)
 
 **Device status check**
 -	Binary: Utility_DeviceStatusCheck_DataDriven.dll
@@ -55,7 +67,7 @@ As shown below, the configuration file can be customized so the tests and utilit
 The tests and utilities will use only the elements required and will ignore all other elements.
 ### WDTFTest.xml parameter descriptions and use
 #### Configuring the SDEL query
-The [SDEL language](https://msdn.microsoft.com/en-us/library/windows/hardware/ff538361%28v=vs.85%29.aspx) is used to create the query that returns the devices targeted by the tests and utilities. Bring the following SDEL-related parameters together using AND statements to create the complete query:
+The [SDEL language](https://msdn.microsoft.com/library/windows/hardware/ff538361%28v=vs.85%29.aspx) is used to create the query that returns the devices targeted by the tests and utilities. Bring the following SDEL-related parameters together using AND statements to create the complete query:
 
 **SDEL**: The value *IsDevice* specifies the complete set of devices on the system.  Typically, this parameter is not edited unless you only want to test a specific driver or device.  The next SDEL-related parameters will create a subset of devices from this superset by specifying drivers or devices which should be excluded from testing, so this parameter can be left unchanged.
 ```
@@ -100,7 +112,7 @@ The [SDEL language](https://msdn.microsoft.com/en-us/library/windows/hardware/ff
 
 #### Parameters that apply to ```utility_enabledisabledriververifier_datadriven.dll``` only:
 
-**DriverVerifierLevel**: The default value of 0x209BB is equal to "standard flags" for [Driver Verifier](https://msdn.microsoft.com/en-us/windows/hardware/drivers/devtest/driver-verifier).
+**DriverVerifierLevel**: The default value of 0x209BB is equal to "standard flags" for [Driver Verifier](https://msdn.microsoft.com/windows/hardware/drivers/devtest/driver-verifier).
 ```
     <Parameter Name="DriverVerifierLevel">0x209BB</Parameter>
 ```
@@ -129,7 +141,7 @@ The data-driven SysFund tests expect any devices targeted by the tests to have a
 ```
     te.exe Utility_DeviceStatusCheck_DataDriven.dll
 ```
-This utility uses the SDEL queries defined in WDTFTest.xml to find the set of devices under test and verify they all have **Problem Code 0**.  A “Passed” result means that the set of devices queried are all working properly. Review **TestTextLog.log** to investigate failures.  For an explanation of Device Manager problem codes, see [Device Manager Error Messages](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/device-manager-error-messages).
+This utility uses the SDEL queries defined in WDTFTest.xml to find the set of devices under test and verify they all have **Problem Code 0**.  A “Passed” result means that the set of devices queried are all working properly. Review **TestTextLog.log** to investigate failures.  For an explanation of Device Manager problem codes, see [Device Manager Error Messages](https://docs.microsoft.com/windows-hardware/drivers/install/device-manager-error-messages).
 
 ### Launch a test
 To launch either of the data-driven SysFund tests, use the following commands:
@@ -163,16 +175,16 @@ After you fix the bugs in mydriver1.sys and mydriver2.sys, you can reset the **S
     <Parameter Name="SdelExcludeDrivers">(DriverBinaryNames!='')</Parameter>
 ```
 
-##Troubleshooting Problems
-###Malformed SDEL Query in the Configuration File
+## Troubleshooting Problems
+### Malformed SDEL Query in the Configuration File
 The following error message is indicative of a poorly formed SDEL query contained in the WDTFTest.xml configuration file:
 ```
     Error: Verify: SUCCEEDED(m_pDeviceDepot->Query(CComBSTR(DQ), &m_pTestTargets)) - Value (0x80070057) [File: onecore\base\tools\wdtf\tests\devfund\datadriven\sysfund_pnp_disableenable_with_io_beforeandafter_datadriven\test.cpp, Function: PNP_DisableEnable_With_IO_BeforeAndAfter::PNP_DisableEnable_With_IO_BeforeAndAfter_DataDriven_Test, Line: 231]
     EndGroup: PNP_DisableEnable_With_IO_BeforeAndAfter::PNP_DisableEnable_With_IO_BeforeAndAfter_DataDriven_Test#0 [Failed]
 ```
-The HRESULT '0x80070057' means "E_INVALIDARG: One or more arguments are not valid". Carefully check the WDTFTest.xml configuration file against the [SDEL documentation](https://msdn.microsoft.com/en-us/library/windows/hardware/ff538361%28v=vs.85%29.aspx) and look for a malformed query that could be causing this error.
+The HRESULT '0x80070057' means "E_INVALIDARG: One or more arguments are not valid". Carefully check the WDTFTest.xml configuration file against the [SDEL documentation](https://msdn.microsoft.com/library/windows/hardware/ff538361%28v=vs.85%29.aspx) and look for a malformed query that could be causing this error.
 
-###Test is Blocked Because it Might Reboot the Machine
+### Test is Blocked Because it Might Reboot the Machine
 Certain SysFund tests can reboot the machine during testing. In order to run a test which can reboot the machine, the "/rebootstatefile" parameter must be used:
 ```
     te.exe <testname> /rebootstatefile=state.xml
@@ -183,7 +195,7 @@ If the /rebootstatefile parameter is not passed to the test, the following messa
     EndGroup: Sysfund_RebootRestart_With_IO_During::Sysfund_RebootRestart_With_IO_During_DataDriven_Test#0 [Blocked]
 ```
 
-###Test is Blocked Because the SDEL Query Contains '&' Characters
+### Test is Blocked Because the SDEL Query Contains '&' Characters
 When specifing an SDEL query which targets a device based on its Device Instance Path value, '&' characters in the path must be replace with "&amp\;". The following message is indicative of a WDTFTest.xml configuration file which contains '&' characters in the device instance path:
 ```
     TestBlocked: TAEF: [HRESULT: 0xC00CEE22] Error while getting value for 'SDEL' in table 'DataDrivenSysfundTable' in DataSource 'WDTFTest.xml' on line 24.
@@ -198,5 +210,5 @@ This is the well-formed value for deviceid which fixes the error:
     <Parameter Name="SDEL">IsDevice AND deviceid='PCI\VEN_11AB&amp;DEV_2B38&amp;SUBSYS_045E0003&amp;REV_00\4&amp;91A2562&amp;0&amp;00E8'</Parameter>
 ```
 
-###Other Issues
-For help with troubleshooting other issues not listed here, see [Device.DevFund Additional Documentation](https://docs.microsoft.com/en-us/windows-hardware/test/hlk/testref/device-devfund-additional-documentation).
+### Other Issues
+For help with troubleshooting other issues not listed here, see [Device.DevFund Additional Documentation](https://docs.microsoft.com/windows-hardware/test/hlk/testref/device-devfund-additional-documentation).

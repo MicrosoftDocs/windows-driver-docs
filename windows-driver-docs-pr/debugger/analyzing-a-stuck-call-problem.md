@@ -3,11 +3,8 @@ title: Analyzing a Stuck Call Problem
 description: Analyzing a Stuck Call Problem
 ms.assetid: e1a80cde-cf83-4a16-ae4b-5ddd5eb77b6d
 keywords: ["RPC debugging, stuck call"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Analyzing a Stuck Call Problem
@@ -22,7 +19,7 @@ When examined through the debugger, RPC is on top of the stack of the thread own
 
 Here is one example of such a stack. Many variations are possible.
 
-```
+```dbgcmd
 0:002> ~1k
 ChildEBP RetAddr
 0068fba0 77e9e8eb ntdll!ZwWaitForSingleObject+0xb
@@ -53,7 +50,7 @@ Here's how to troubleshoot this problem.
 
 3.  Get the call information for this thread. In order to do that, use the [**!rpcexts.rpcreadstack**](-rpcexts-rpcreadstack.md) extension with the thread stack pointer as its parameter, as follows:
 
-    ```
+    ```dbgcmd
     0:001> !rpcexts.rpcreadstack 68fba0
     CallID: 1
     IfStart: 19bb5061
@@ -66,7 +63,8 @@ Here's how to troubleshoot this problem.
     The information displayed here will allow you to trace the call.
 
 4.  The network address is empty, which indicates the local machine. The endpoint is 1120. You need to determine which process hosts this endpoint. This can be done by passing this endpoint number to the [**!rpcexts.getendpointinfo**](-rpcexts-getendpointinfo.md) extension, as follows:
-    ```
+
+    ```dbgcmd
     0:001> !rpcexts.getendpointinfo 1120
     Searching for endpoint info ...
     PID  CELL ID   ST PROTSEQ        ENDPOINT
@@ -75,7 +73,8 @@ Here's how to troubleshoot this problem.
     ```
 
 5.  From the preceding information, you can see that process 0x278 contains this endpoint. You can determine if this process knows anything about this call by using the [**!rpcexts.getcallinfo**](-rpcexts-getcallinfo.md) extension. This extension needs four parameters: *CallID*, *IfStart*, and *ProcNum* (which were found in step 3), and the *ProcessID* of 0x278:
-    ```
+
+    ```dbgcmd
     0:001> !rpcexts.getcallinfo 1 19bb5061 0 278
     Searching for call info ...
     PID  CELL ID   ST PNO IFSTART  TIDNUMBER CALLFLAG CALLID   LASTTIME CONN/CLN
@@ -85,7 +84,7 @@ Here's how to troubleshoot this problem.
 
 6.  The information in step 5 is useful, but somewhat abbreviated. The cell ID is given in the second column as 0000.0004. If you pass the process ID and this cell number to the [**!rpcexts.getdbgcell**](-rpcexts-getdbgcell.md) extension, you will see a more readable display of this cell:
 
-    ```
+    ```dbgcmd
     0:001> !rpcexts.getdbgcell 278 0.4
     Getting cell info ...
     Call
@@ -101,7 +100,7 @@ Here's how to troubleshoot this problem.
 
     This shows that the call is in state "dispatched", which means is has left the RPC Run-Time. The last update time is 470.25. You can learn the current time by using the [**!rpcexts.rpctime**](-rpcexts-rpctime.md) extension:
 
-    ```
+    ```dbgcmd
     0:001> !rpcexts.rpctime
     Current time is: 6003, 422
     ```
@@ -110,7 +109,7 @@ Here's how to troubleshoot this problem.
 
 7.  As a last step before you attach a debugger to the server process, you can isolate the thread that should currently service the call by using the Servicing thread identifier. This is another cell number; it appeared in step 6 as "0x0.2". You can use it as follows:
 
-    ```
+    ```dbgcmd
     0:001> !rpcexts.getdbgcell 278 0.2
     Getting cell info ...
     Thread
@@ -125,13 +124,12 @@ It is possible that the thread was making another RPC call. If necessary, you ca
 
 **Note**   This procedure shows how to find the server thread if you know the client thread. For an example of the reverse technique, see [Identifying the Caller From the Server Thread](identifying-the-caller-from-the-server-thread.md).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Analyzing%20a%20Stuck%20Call%20Problem%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

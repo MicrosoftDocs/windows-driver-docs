@@ -8,11 +8,8 @@ keywords:
 - battery miniclass drivers WDK , status reporting
 - status information WDK battery
 - queries WDK battery
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Responding to Battery Class Driver Queries
@@ -31,11 +28,10 @@ The miniclass driver must provide the following three [BatteryMini*Xxx*](https:/
 
 The [**BatteryClassIoctl**](https://msdn.microsoft.com/library/windows/hardware/ff536267) routine in the class driver calls these miniclass driver routines when it receives IOCTLs requesting information about the batteries.
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

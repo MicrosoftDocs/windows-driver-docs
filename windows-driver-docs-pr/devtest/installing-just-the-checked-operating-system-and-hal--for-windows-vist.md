@@ -2,11 +2,8 @@
 title: Installing Just the Checked Operating System and HAL
 description: Installing Just the Checked Operating System and HAL (For Windows Vista and Later)
 ms.assetid: 1203b7cd-50b9-4174-8bec-112019444fac
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installing Just the Checked Operating System and HAL (For Windows Vista and Later)
@@ -20,7 +17,7 @@ Before you install a partial checked build, you must determine the version of th
 
 **Tip**   For 64-bit versions of Windows Vista and later, this process is easy. If you have the [Windows Driver Kit (WDK)](https://msdn.microsoft.com/library/windows/hardware/ff557573), you can use the operating system image and HAL files from the Debug\\ directory of the WDK. See [Installing the Checked Build](installing-the-checked-build.md). There is only one version of each for amd64 or ia64. The names of the files are ntkrnlmp.exe and Hal.dll. If you have the WDK for the version of Windows you are using, you can skip ahead to [Step 2: Copying the Checked Files](#step-2---copying-the-checked-files).
 
- 
+ 
 
 On computers running the 32-bit version of Windows, use the following procedures to identify the names of the files to copy:
 
@@ -112,7 +109,7 @@ Now that you know the names of the files that were used during your system insta
 </tbody>
 </table>
 
- 
+ 
 
 ## Step 3 - Changing the boot parameters using BCDEdit
 
@@ -123,7 +120,7 @@ For general instructions on using BCDEdit, see [Tools for Changing Boot Options 
 
 **Note**  Before setting BCDEdit options you might need to disable or suspend BitLocker and Secure Boot on the computer.
 
- 
+ 
 To configure a partial checked build on Windows Vista and later, use the [**BCDEdit /set**](https://msdn.microsoft.com/library/windows/hardware/ff542202) command and the **kernel** and **hal** options.
 
 For example, the following commands configure a boot entry to use the checked versions of the kernel and HAL.
@@ -194,11 +191,10 @@ Microsoft (R) Windows (R) 6.00. 6001 Service Pack 1 Multiprocessor Checked.
 
 [Debugging Tools for Windows](https://msdn.microsoft.com/library/windows/hardware/ff551063)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20Installing%20Just%20the%20Checked%20Operating%20System%20and%20HAL%20%28For%20Windows%20Vista%20and%20Later%29%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

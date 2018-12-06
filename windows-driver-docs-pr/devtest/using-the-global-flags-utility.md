@@ -5,11 +5,8 @@ ms.assetid: 934272e9-867c-4eb4-8bc1-e65e5b3f2aeb
 keywords:
 - Global Flags utility
 - Driver Verifier WDK , Global Flags utility
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using the Global Flags Utility
@@ -73,7 +70,7 @@ For an x86 processor, PAGE\_SIZE is 0x1000 and the allocation size ranges are 8 
 </tbody>
 </table>
 
- 
+ 
 
 For an x64 processor, PAGE\_SIZE is 0x1000 and the allocation size ranges are 16 bytes in length. To activate special pool for all allocations with sizes in this range, enter a number equal to the maximum of this range plus 16. (This number is always a multiple of 16.) The following table illustrates these values:
 
@@ -112,7 +109,7 @@ For an x64 processor, PAGE\_SIZE is 0x1000 and the allocation size ranges are 16
 </tbody>
 </table>
 
- 
+ 
 
 For an Itanium-based processor, PAGE\_SIZE is 0x2000 and the allocation size ranges are 16 bytes in length. To activate special pool for all allocations with sizes in this range, enter a number equal to the maximum of this range plus 16. (This number is always a multiple of 16.) The following table illustrates these values:
 
@@ -151,21 +148,20 @@ For an Itanium-based processor, PAGE\_SIZE is 0x2000 and the allocation size ran
 </tbody>
 </table>
 
- 
+ 
 
 It is best to avoid using pool tags lower than PAGE\_SIZE. For example, if you put 0x30 into this text box on an Itanium-based processor, special pool will be used for all allocations between 17 and 32 bytes in size, and for allocations with the pool tag 0x0030.
 
 **Note**   If Driver Verifier has enabled the special pool for a driver and the Global Flags utility has enabled the special pool for a pool tag or allocation size, the special pool will be used for all allocations meeting any of these criteria (subject to pool availability).
 
- 
+ 
 
 See [Special Pool](special-pool.md) for full details on the use of the special pool.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20Using%20the%20Global%20Flags%20Utility%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

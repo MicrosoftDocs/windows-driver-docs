@@ -10,11 +10,8 @@ api_name:
 - INF FeatureScore Directive
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # INF FeatureScore Directive
@@ -22,7 +19,7 @@ ms.technology: windows-devices
 
 The **FeatureScore** directive provides an additional ranking criterion for drivers based on the features that a driver supports. For example, feature scores might be defined for a [device setup class](device-setup-classes.md) that distinguishes between drivers that are based on class-specific criteria.
 
-```
+```cpp
 [DDInstall]
   
 FeatureScore=featurescore
@@ -32,7 +29,7 @@ The **FeatureScore** directive is supported in Windows Vista and later versions 
 
 **Warning**  The **FeatureScore** directive is only processed when specified directly in the **\[DDInstall\]** section.
 
- 
+ 
 
 ## Entries
 
@@ -68,9 +65,9 @@ For more information about how drivers are ranked, see [How Windows Ranks Driver
 
 [signature score](signature-score--windows-vista-and-later-.md)
 
- 
+ 
 
- 
+ 
 
 
 

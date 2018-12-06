@@ -3,17 +3,14 @@ title: process
 description: The process extension displays information about the specified process, or about all processes, including the EPROCESS block.
 ms.assetid: 57f55632-8320-47cc-8a20-5a2cf3b42b3a
 keywords: ["process Windows Debugging"]
-ms.author: windowsdriverdev
-ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 08/02/2018
 topic_type:
 - apiref
 api_name:
 - process
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !process
@@ -25,7 +22,7 @@ This extension can be used only during kernel-mode debugging.
 
 Syntax
 
-```
+```dbgcmd
 !process [/s Session] [/m Module] [Process [Flags]]
 !process [/s Session] [/m Module] 0 Flags ImageName
 ```
@@ -42,7 +39,7 @@ Specifies the module that owns the desired process.
 <span id="_Process"></span><span id="_process"></span><span id="_PROCESS"></span> *Process*  
 Specifies the hexadecimal address or the process ID of the process on the target computer.
 
-The value of *Process* determines whether the !process extension displays a process address or a process ID . If *Process* is omitted in any version of Windows, the debugger displays data only about the current system process. If *Process* is 0 and *ImageName* is omitted, the debugger displays information about all active processes.
+The value of *Process* determines whether the !process extension displays a process address or a process ID . If *Process* is omitted in any version of Windows, the debugger displays data only about the current system process. If *Process* is 0 and *ImageName* is omitted, the debugger displays information about all active processes. If -1 is specified for *Process* information about the current process is displayed.
 
 <span id="Flags"></span><span id="flags"></span><span id="FLAGS"></span>*Flags*  
 Specifies the level of detail to display. *Flags* can be any combination of the following bits. If *Flags* is 0, only a minimal amount of information is displayed. The default varies according to the version of Windows and the value of *Process*. The default is 0x3 if *Process* is omitted or if *Process* is either 0 or -1; otherwise, the default is 0xF.
@@ -57,10 +54,10 @@ Displays a list of threads and events associated with the process, and their wai
 Displays a list of threads associated with the process. If this is included without Bit 1 (0x2), each thread is displayed on a single line. If this is included along with Bit 1, each thread is displayed with a stack trace.
 
 <span id="Bit_3__0x8_"></span><span id="bit_3__0x8_"></span><span id="BIT_3__0X8_"></span>Bit 3 (0x8)  
-(Windows XP and later) Displays the return address, the stack pointer, and (on Itanium-based systems) the **bsp** register value for each function. The display of function arguments is suppressed.
+ Displays the return address and the stack pointer for each function The display of function arguments is suppressed.
 
 <span id="Bit_4__0x10_"></span><span id="bit_4__0x10_"></span><span id="BIT_4__0X10_"></span>Bit 4 (0x10)  
-(Windows XP and later) Sets the process context equal to the specified process for the duration of this command. This results in a more accurate display of thread stacks. Because this flag is equivalent to using [**.process /p /r**](-process--set-process-context-.md) for the specified process, any existing user-mode module list will be discarded. If *Process* is zero, the debugger displays all processes, and the process context is changed for each one. If you are only displaying a single process and its user-mode state has already been refreshed (for example, with **.process /p /r**), it is not necessary to use this flag. This flag is only effective when used with Bit 0 (0x1).
+ Sets the process context equal to the specified process for the duration of this command. This results in a more accurate display of thread stacks. Because this flag is equivalent to using [**.process /p /r**](-process--set-process-context-.md) for the specified process, any existing user-mode module list will be discarded. If *Process* is zero, the debugger displays all processes, and the process context is changed for each one. If you are only displaying a single process and its user-mode state has already been refreshed (for example, with **.process /p /r**), it is not necessary to use this flag. This flag is only effective when used with Bit 0 (0x1).
 
 <span id="ImageName"></span><span id="imagename"></span><span id="IMAGENAME"></span>*ImageName*  
 Specifies the name of the process to be displayed. The debugger displays all processes whose executable image names match *ImageName*. The image name must match that in the EPROCESS block. In general, this is the executable name that was invoked to start the process, including the file extension (usually .exe), and truncated after the fifteenth character. There is no way to specify an image name that contains a space. When *ImageName* is specified, *Process* must be zero.
@@ -80,7 +77,7 @@ Remarks
 
 The following is an example of a **!process 0 0** display:
 
-```
+```dbgcmd
 kd> !process 0 0
 **** NT ACTIVE PROCESS DUMP ****
 PROCESS 80a02a60  Cid: 0002    Peb: 00000000  ParentCid: 0000
@@ -147,11 +144,11 @@ The following table describes some of the elements of the **!process 0 0** outpu
 </tbody>
 </table>
 
- 
+ 
 
 To display full details on one process, set *Flags* to 7. The process itself can be specified by setting *Process* equal to the process address, setting *Process* equal to the process ID, or setting *ImageName* equal to the executable image name. Here is an example:
 
-```
+```dbgcmd
 kd> !process fb667a00 7
 PROCESS fb667a00 Cid: 0002  Peb: 00000000 ParentCid: 0000
   DirBase: 00030000 ObjectTable: e1000f88 TableSize: 112.
@@ -207,7 +204,7 @@ The following table describes some of the elements in the previous example.
 <tbody>
 <tr class="odd">
 <td align="left">WAIT</td>
-<td align="left">The parenthetical comment after this heading gives the reason for the wait. The command <strong>[dt nt!_KWAIT_REASON](dt--display-type-.md)</strong> will display a list of all wait reasons.</td>
+<td align="left">The parenthetical comment after this heading gives the reason for the wait. The command <strong><a href="dt--display-type-.md" data-raw-source="[dt nt!_KWAIT_REASON](dt--display-type-.md)">dt nt!_KWAIT_REASON</a></strong> will display a list of all wait reasons.</td>
 </tr>
 <tr class="even">
 <td align="left"><p>ElapsedTime</p></td>
@@ -240,17 +237,16 @@ The following table describes some of the elements in the previous example.
 </tbody>
 </table>
 
- 
+ 
 
 In addition to the process list information, the thread information contains a list of the resources on which the thread has locks. This information is listed in the third line of output after the thread header. In this example, the thread has a lock on one resource, a SynchronizationEvent with an address of 80144fc0. By comparing this address to the list of locks shown by the [**!kdext\*.locks**](-locks---kdext--locks-.md) extension, you can determine which threads have exclusive locks on resources.
 
 The [**!stacks**](-stacks.md) extension gives a brief summary of the state of every thread. This can be used instead of the !process extension to get a quick overview of the system, especially when debugging multithread issues, such as resource conflicts or deadlocks.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!process%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

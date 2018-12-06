@@ -1,14 +1,10 @@
 ---
 title: Global thermal management 
-author: windows-driver-content
 description: Handling an IRP_MN_SURPRISE_REMOVAL Request
 ms.assetid: 3CBF44B2-891A-4B68-97F6-3563EC0D5122
 keywords: ["global thermal managment", "thermal"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Global thermal management 

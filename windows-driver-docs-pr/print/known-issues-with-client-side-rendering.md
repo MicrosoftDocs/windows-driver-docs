@@ -1,15 +1,11 @@
 ---
 title: Known Issues with Client-Side Rendering
-author: windows-driver-content
 description: Known Issues with Client-Side Rendering
 ms.assetid: ad17639d-6671-466b-8f72-e635e79fd1cc
 keywords:
 - client-side rendering WDK print , known issues
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Known Issues with Client-Side Rendering
@@ -21,7 +17,7 @@ If the printer driver encounters a problem, however, you can disable the client-
 
 **Note**  If you disable the client-side rendering feature, the print-job rendering will move to the print server, which can adversely affect print server performance.
 
- 
+ 
 
 Printer drivers that are installed in a driver package will not have a problem with client-side rendering.
 
@@ -53,12 +49,10 @@ The following list describes some of the known issues with client-side rendering
 
 If, during testing, you detect a problem with your printer driver that the client-side rendering feature might have caused, you can disable client-side rendering for your driver. You can disable client-side rendering in the driver by calling **SetPrinterData** to set the EMFDespoolingSetting value of the print queue to 1. This value will cause any clients that connect to the print queue to render the print jobs on the server.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Known%20Issues%20with%20Client-Side%20Rendering%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

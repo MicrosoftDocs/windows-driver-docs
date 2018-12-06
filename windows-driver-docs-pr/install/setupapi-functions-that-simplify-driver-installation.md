@@ -7,22 +7,17 @@ keywords:
 - DiInstallDevice
 - DiInstallDriver
 - DiRollbackDriver
-- DiShowUpdateDevice
-- InstallSelectedDriver
 - UpdateDriverForPlugAndPlayDevices
 - PnP WDK device installations , SetupAPI
 - Plug and Play WDK device installations , SetupAPI
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # SetupAPI Functions that Simplify Driver Installation
 
 
-Driver Install Frameworks (DIFx) includes tools that greatly simplify the installation of Plug and Play (PnP) function drivers and class filter drivers. An installation application should use the DIFx tools if they provide the functionality that the installation application requires. Otherwise, an installation application can use the following SetupAPI functions to simplify the installation of a PnP function driver.
+An installation application can use the following SetupAPI functions to simplify the installation of a PnP function driver.
 
 ### <a href="" id="diinstalldevice--windows-vista-and-later-versions-of-windows-"></a> DiInstallDevice (Windows Vista and later versions of Windows)
 
@@ -60,7 +55,7 @@ A caller can also call **DiInstallDriver** to do the following:
 
     **Caution**   Forcing the installation of the driver can result in replacing a more compatible or newer driver with a less compatible or older driver.
 
-     
+     
 
 -   Indicate to the caller whether a system restart is required to complete the installation.
 
@@ -78,22 +73,6 @@ A caller can also call **DiRollbackDriver** to do the following:
 
 For more information about driver rollback, see information about Device Manager in Help and Support Center.
 
-### <a href="" id="dishowupdatedevice--windows-vista-and-later-versions-of-windows-"></a> DiShowUpdateDevice (Windows Vista and later versions of Windows)
-
-The [**DiShowUpdateDevice**](https://msdn.microsoft.com/library/windows/hardware/ff544727) function displays the Hardware Update wizard for a specified device present in the system. The Hardware Update wizard will search, as directed by the user, for an updated driver on the user's computer, installation medium, or Windows Update.
-
-A caller can also direct **DiShowUpdateDevice** to indicate to the caller whether a system restart is required to complete the installation.
-
-For more information about how to update device drivers by using Hardware Update wizard, see information about Device Manager in Help and Support Center.
-
-### <a href="" id="installselecteddriver"></a> InstallSelectedDriver
-
-The [**InstallSelectedDriver**](https://msdn.microsoft.com/library/windows/hardware/ff547654) function installs a specific driver that is preinstalled in the [driver store](driver-store.md) on a specific device present in the system. **InstallSelectedDriver** is provided to support the same basic operation that is performed by [**DiInstallDevice**](https://msdn.microsoft.com/library/windows/hardware/ff544710)**.**
-
-To maintain compatibility with earlier versions of Windows, Windows Vista and later versions of Windows support **InstallSelectedDriver**. However, starting with Windows Vista, installation applications should call **DiInstallDevice** instead.
-
-**InstallSelectedDriver** does not support all the options that **DiInstallDevice** supports.
-
 ### <a href="" id="updatedriverforplugandplaydevices"></a> UpdateDriverForPlugAndPlayDevices
 
 The [**UpdateDriverForPlugAndPlayDevices**](https://msdn.microsoft.com/library/windows/hardware/ff553534) function installs the driver on all devices present in the system that have a hardware ID or compatible ID that matches the driver package.
@@ -108,7 +87,7 @@ A caller can also optionally call **UpdateDriverForPlugAndPlayDevices** to do th
 
     **Caution**   Forcing the installation of the driver can result in replacing a more compatible or newer driver with a less compatible or older driver.
 
-     
+     
 
 -   Suppress copying, renaming, or deleting installation files.
 
@@ -116,9 +95,9 @@ A caller can also optionally call **UpdateDriverForPlugAndPlayDevices** to do th
 
 -   Indicate to the caller whether a system restart is required to complete the installation.
 
- 
+ 
 
- 
+ 
 
 
 

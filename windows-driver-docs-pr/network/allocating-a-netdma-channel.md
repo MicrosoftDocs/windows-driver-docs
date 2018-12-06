@@ -8,11 +8,8 @@ keywords:
 - transferring data WDK NetDMA , allocating channels
 - DMA transfers WDK NetDMA , allocating channels
 - NetDMA WDK networking , allocating c
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Allocating a NetDMA Channel
@@ -20,9 +17,9 @@ ms.technology: windows-devices
 
 **Note**  The NetDMA interface is not supported in Windows 8 and later.
 
- 
+ 
 
-## <a href="" id="ddk-allocating-a-netdma-channel-ng"></a>
+
 
 
 Before using a dynamic memory access (DMA) channel, the NetDMA interface calls the [**ProviderAllocateDmaChannel**](https://msdn.microsoft.com/library/windows/hardware/ff570393) function of the NetDMA provider driver to allocate and initialize the DMA channel.
@@ -51,9 +48,9 @@ If the allocation fails for any reason, the driver should release any resources 
 
 The NetDMA interface calls the [**ProviderFreeDmaChannel**](https://msdn.microsoft.com/library/windows/hardware/ff570398) function to free a previously allocated DMA channel. For more information about freeing DMA channels, see [Freeing a NetDMA Channel](freeing-a-netdma-channel.md).
 
- 
+ 
 
- 
+ 
 
 
 

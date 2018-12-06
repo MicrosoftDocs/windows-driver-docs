@@ -2,11 +2,8 @@
 title: Systematic low resources simulation
 description: The Systematic low resources simulation option injects resource failures in kernel mode drivers.
 ms.assetid: A8351715-8407-4FEF-9050-2F1F2E7FC2FD
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Systematic low resources simulation
@@ -18,11 +15,11 @@ To help you determine the root cause of the error, a debugger extension is provi
 
 **Caution**  This option is not intended for use when you are verifying all (or a large collection of) drivers on a computer. This option should be used only when you are doing targeted testing of individual drivers or their attached filter drivers. Using this option on a large number of drivers at the same time could cause unpredictable results, and could force crashes in components unrelated to the driver(s) you are testing.
 
- 
+ 
 
 **Note**  For Windows 8.1, the [Stack Based Failure Injection](stack-based-failure-injection.md) feature, which was available in the WDK 8, has been integrated into Driver Verifier. On computers running Windows 8.1, use the Systematic low resources simulation option.
 
- 
+ 
 
 When the Systematic low resources simulation option is enabled on a specific driver, it intercepts some calls from that driver to the kernel and Ndis.sys. Systematic low resources simulation looks at the call stack—specifically, at the portion of the call stack that comes from the driver it is enabled on. If this is the first time it has ever seen that stack, it will fail the call according to the semantics of that call. Otherwise, if it has seen that call before, it will pass it through untouched. Systematic low resources simulation contains logic to deal with the fact that a driver can be loaded and unloaded multiple times. It will recognize that a call stack is the same even if the driver is reloaded into a different memory location.
 
@@ -106,7 +103,7 @@ You can activate the Systematic low resources simulation feature for one or more
     </tbody>
     </table>
 
-     
+     
 
 -   **Using Driver Verifier Manager**
 
@@ -131,11 +128,10 @@ Most of the issues found with Systematic low resources simulation result in bug 
 
 This will dump information to your debugger showing the call stacks from the most recent failures injected.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20Systematic%20low%20resources%20simulation%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -12,17 +12,14 @@ keywords:
 - installing devices WDK , INF files
 - device installations WDK , INF files
 - INF files
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Supplying an INF File
 
 
-## <a href="" id="ddk-supplying-an-inf-file-pg"></a>
+
 
 
 Every driver package must include an INF file, which the [device installation components](https://msdn.microsoft.com/library/windows/hardware/ff541277) read when installing the device. An INF file is not an installation script. It is an ASCII or Unicode text file that provides device and driver information, including the driver files, registry entries, device IDs, [catalog files](catalog-files.md), and version information that is required to install the device or driver. The INF is used not only when the device or driver is first installed, but also when the user requests a driver update through Device Manager.
@@ -37,9 +34,9 @@ A good way to create an INF file for your driver is to modify one of the samples
 
 For more information about INF files, see [Creating an INF File](overview-of-inf-files.md), the documentation for [ChkINF](https://msdn.microsoft.com/library/windows/hardware/ff543461), the device-specific documentation in the WDK, and the INF files that are supplied with sample drivers for devices similar to yours.
 
- 
+ 
 
- 
+ 
 
 
 

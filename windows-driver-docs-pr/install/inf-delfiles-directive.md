@@ -10,11 +10,8 @@ api_name:
 - INF DelFiles Directive
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # INF DelFiles Directive
@@ -22,11 +19,11 @@ ms.technology: windows-devices
 
 **Note**  If you are building a universal or mobile driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
- 
+ 
 
 A **DelFiles** directive references an INF-writer-defined section elsewhere in the INF file, and causes that list of files to be deleted in the context of operations on the section in which the referring **DelFiles** directive is specified.
 
-```
+```cpp
 [DDInstall] | 
 [DDInstall.CoInstallers] | 
 [ClassInstall32] | 
@@ -44,7 +41,7 @@ A **DelFiles** directive can be specified within any of the sections shown in th
 
 Each named section referenced by a **DelFiles** directive has one or more entries of the following form:
 
-```
+```cpp
 [file-list-section]
  
 destination-file-name[,,,flag]
@@ -63,7 +60,7 @@ Do not specify a file that is listed in a [**CopyFiles**](inf-copyfiles-directiv
 
 **Note**  You cannot use a %*strkey*% token to specify the destination-file-name entry. For more information about %*strkey*% tokens, see [**INF Strings Section**](inf-strings-section.md).
 
- 
+ 
 
 <a href="" id="flag"></a>*flag*  
 This optional value can be one of the following, expressed in hexadecimal notation as shown here or as a decimal value:
@@ -83,7 +80,7 @@ Remarks
 
 **Important**  This directive must be used carefully. We highly recommend that you do not use the **DelFiles** directive in the INF file for a Plug and Play (PnP) function driver.
 
- 
+ 
 
 Any *file-list-section* name must be unique to the INF file, but it can be referenced by [**CopyFiles**](inf-copyfiles-directive.md), **DelFiles**, or [**RenFiles**](inf-renfiles-directive.md) directives elsewhere in the same INF. Such an INF-writer-defined section name must follow the general rules for defining section names. For more information about these rules, see [General Syntax Rules for INF Files](general-syntax-rules-for-inf-files.md).
 
@@ -96,7 +93,7 @@ Examples
 
 This example shows how the [**DestinationDirs**](inf-destinationdirs-section.md) section specifies the path for a delete-file operation that occurs in processing a simple device-driver INF.
 
-```
+```cpp
 [DestinationDirs]
 DefaultDestDir = 12  ; DIRID_DRIVERS 
 
@@ -132,9 +129,9 @@ VASPID.SYS ; name of file to be deleted, if it exists on target
 **RenFiles**
 [**Strings**](inf-strings-section.md)
 
- 
+ 
 
- 
+ 
 
 
 

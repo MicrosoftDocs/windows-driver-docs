@@ -3,17 +3,14 @@ title: for_each_module
 description: The for_each_module extension executes a debugger command one time for each loaded module.
 ms.assetid: 607947d8-be06-4012-8901-13bf27e382b1
 keywords: ["for_each_module Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - for_each_module
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !for\_each\_module
@@ -21,7 +18,7 @@ api_type:
 
 The **!for\_each\_module** extension executes a debugger command one time for each loaded module.
 
-```
+```dbgcmd
 !for_each_module ["CommandString"]
 !for_each_module -?
 ```
@@ -131,7 +128,7 @@ You can use the following aliases in *CommandString* or in any script that the c
 <tr class="odd">
 <td align="left"><p>@#TimeDateStamp</p></td>
 <td align="left"><p>ULONG</p></td>
-<td align="left"><p>The time and date stamp of the image. If you want to expand this time and date stamp into a readable date, use the <strong>[.formats (Show Number Formats)](-formats--show-number-formats-.md)</strong> command.</p></td>
+<td align="left"><p>The time and date stamp of the image. If you want to expand this time and date stamp into a readable date, use the <strong><a href="-formats--show-number-formats-.md" data-raw-source="[.formats (Show Number Formats)](-formats--show-number-formats-.md)">.formats (Show Number Formats)</a></strong> command.</p></td>
 </tr>
 <tr class="even">
 <td align="left"></td>
@@ -156,7 +153,7 @@ You can use the following aliases in *CommandString* or in any script that the c
 </tbody>
 </table>
 
- 
+ 
 
 These aliases are all replaced before *CommandString* is executed for each module and before any other parsing occurs. These aliases are case sensitive. You must add a space before the alias and a space after it, even if the alias is enclosed in parentheses. If you use C++ expression syntax, you must reference these aliases as @@( @\#*alias*).
 
@@ -184,7 +181,7 @@ Displays some Help text for this extension in the [Debugger Command window](debu
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -195,7 +192,7 @@ Remarks
 
 If you do not specify any arguments, the **!for\_each\_module** extension displays general information about the loaded modules. This information is similar to the information that the following command shows.
 
-```
+```dbgcmd
 !for_each_module .echo @#ModuleIndex : @#Base @#End @#ModuleName @#ImageName  @#LoadedImageName
 ```
 
@@ -205,26 +202,26 @@ If you enable verbose debugger output, the debugger displays the total number of
 
 The following examples show how to use the **!for\_each\_module** extension. The following commands display the global debug flags.
 
-```
+```dbgcmd
 !for_each_module x ${@#ModuleName}!*Debug*Flag*
 !for_each_module x ${@#ModuleName}!g*Debug*
 ```
 
 The following command checks for binary corruption in every loaded module, by using the [**!chkimg**](-chkimg.md) extension:
 
-```
+```dbgcmd
 !for_each_module !chkimg @#ModuleName
 ```
 
 The following command searches for the pattern "MZ" in every loaded image.
 
-```
+```dbgcmd
 !for_each_module s-a @#Base @#End "MZ"
 ```
 
 The following example demonstrates the use of @\#FileVersion and @\#ProductVersion for each module name:
 
-```
+```dbgcmd
 0:000> !for_each_module .echo @#ModuleName fver = @#FileVersion pver = @#ProductVersion 
 USER32 fver = 6.0.6000.16438 (vista_gdr.070214-1610) pver = 6.0.6000.16438
 kernel32 fver = 6.0.6000.16386 (vista_rtm.061101-2205) pver = 6.0.6000.16386
@@ -242,11 +239,10 @@ ADVAPI32 fver = 6.0.6000.16386 (vista_rtm.061101-2205) pver = 6.0.6000.16386
 COMDLG32 fver = 6.0.6000.16386 (vista_rtm.061101-2205) pver = 6.0.6000.16386
 ```
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!for_each_module%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

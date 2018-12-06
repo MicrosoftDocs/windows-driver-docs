@@ -2,11 +2,8 @@
 title: ELAM Prerequisites
 description: Early Launch Antimalware drivers must adhere to the following program requirements to be signed by WHQL and loaded by Windows.
 ms.assetid: 48759EB3-F8F9-4881-BD30-6D1252F08DFE
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # ELAM Prerequisites
@@ -17,7 +14,7 @@ Early Launch Antimalware drivers must adhere to the following program requiremen
 ## Antimalware Vendor Participation Requirements
 
 
-Microsoft requires that Early Launch Antimalware vendors either be members of the [**Microsoft Virus Initiative (MVI)**](https://www.microsoft.com/en-us/wdsi/alliances/virus-initiative) or pre-approved members of the [**Virus Information Alliance (VIA)**](https://www.microsoft.com/en-us/wdsi/alliances/virus-information-alliance). This membership ensures that the vendors are active antimalware community participants with a positive industry reputation. Please reach out to [**mvi@microsoft.com**](mailto:mvi@microsoft.com) if you have questions about ELAM driver signing or becoming a pre-approved VIA member.
+Microsoft requires that Early Launch Antimalware vendors either be members of the [**Microsoft Virus Initiative (MVI)**](https://www.microsoft.com/wdsi/alliances/virus-initiative). This membership ensures that the vendors are active antimalware community participants with a positive industry reputation. If you are not a member of the MVI program and believe you need use of ELAM, please reach out to [**mvi@microsoft.com**](mailto:mvi@microsoft.com) for additional information.
 
 ## Hardware Certification Kit Tests
 
@@ -46,9 +43,9 @@ The AM driver must be a single binary (not import any other DLLs).
 -   Submit your driver for verification as documented at [ELAM Driver Submission](elam-driver-submission.md)
 -   The **WHQL** process will verify that the vendor is permitted to submit early launch drivers.  Your submission will fail if you are not an MVI member, or a pre-approved VIA member.
 
- 
+ 
 
- 
+ 
 
 
 

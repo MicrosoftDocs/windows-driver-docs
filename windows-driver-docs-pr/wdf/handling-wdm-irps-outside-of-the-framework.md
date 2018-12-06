@@ -1,6 +1,5 @@
 ---
 title: Handling WDM IRPs Outside of the Framework
-author: windows-driver-content
 description: Handling WDM IRPs Outside of the Framework
 ms.assetid: 43e1df0c-c0d1-4d41-87de-9f8f5831fb19
 keywords:
@@ -9,11 +8,8 @@ keywords:
 - IRPs WDK KMDF
 - IRPs WDK KMDF , outside framework
 - I/O request packets WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling WDM IRPs Outside of the Framework
@@ -41,9 +37,9 @@ The following topics describe these situations:
 -   [Preprocessing and Postprocessing IRPs](preprocessing-and-postprocessing-irps.md)
 -   [Dispatching IRPs to I/O Queues](dispatching-irps-to-i-o-queues.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,8 @@
 title: Signature Categories and Driver Installation
 description: Signature Categories and Driver Installation
 ms.assetid: d5b0e3a3-51c3-40d8-a2dc-c9392feff2cb
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Signature Categories and Driver Installation
@@ -52,11 +49,11 @@ Administrative users have more flexibility:
 
 **Note**  On Windows Vista and later versions of Windows, in order for users to play next-generation premium content, such as HD DVD and other formats that are licensed under the *Advanced Access Content System (AACS) Specification*, all kernel-mode components on their system must be signed. That means that, if an administrative user selects to install an unsigned or altered driver, the system is not allowed to play premium content. For more information about how to protect media components in Windows Vista, see [Code Signing for Protected Media Components in Windows Vista](http://go.microsoft.com/fwlink/p/?linkid=74262).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

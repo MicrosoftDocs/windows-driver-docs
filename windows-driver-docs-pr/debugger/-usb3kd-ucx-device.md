@@ -3,17 +3,14 @@ title: usb3kd.ucx_device
 description: The usb3kd.ucx_device extension displays information about a USB device in the USB 3.0 tree. The display is based on data structures maintained by UcxVersion.sys.
 ms.assetid: 7AC3DBBF-1D62-492E-B46E-C193579DE1E3
 keywords: ["usb3kd.ucx_device Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - usb3kd.ucx_device
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !usb3kd.ucx\_device
@@ -21,7 +18,7 @@ api_type:
 
 The [**!usb3kd.ucx\_device**](-usb3kd-device-info.md) extension displays information about a USB device in the [USB 3.0 tree](usb-3-extensions.md#usb-3-tree). The display is based on data structures maintained by the USB host controller extension driver (Ucx*Version*.sys).
 
-```
+```dbgcmd
 !usb3kd.ucx_device UcxUsbDevicePrivContext
 ```
 
@@ -48,7 +45,7 @@ Examples
 
 To obtain the address of the UCX USB device private context, look at the output of the [**!ucx\_controller\_list**](-usb3kd-ucx-controller-list.md) command. In the following example, the address of the private context for the second device is 0xfffffa8005bd9680.
 
-```
+```dbgcmd
 3: 3: kd> !ucx_controller_list
 
 ## Dumping List of UCX controller objects
@@ -64,7 +61,7 @@ To obtain the address of the UCX USB device private context, look at the output 
 
 Now you can pass the address of the UCX USB private context to the **!ucx\_device** command.
 
-```
+```dbgcmd
 3: kd> !ucx_device 0xfffffa8005bd9680
 
 ## Dumping Ucx USB Device Information fffffa8005bd9680
@@ -98,13 +95,12 @@ EventCallbacks:
 
 [**!usb3kd.ucx\_controller\_list**](-usb3kd-ucx-controller-list.md)
 
-[Universal Serial Bus (USB) Drivers](http://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!usb3kd.ucx_device%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

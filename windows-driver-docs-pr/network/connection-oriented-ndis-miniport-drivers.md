@@ -6,17 +6,14 @@ keywords:
 - miniport drivers WDK networking , types
 - NDIS miniport drivers WDK , types
 - connection-oriented drivers WDK networking , miniport drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Connection-Oriented NDIS Miniport Drivers
 
 
-## <a href="" id="ddk-connection-oriented-ndis-miniport-drivers-ng"></a>
+
 
 
 A *connection-oriented miniport driver* controls one or more miniport adapters for connection-oriented media. Connection-oriented miniport drivers must be deserialized. For more information about deserialized drivers, see [Deserialized NDIS Miniport Drivers](deserialized-ndis-miniport-drivers.md).
@@ -39,9 +36,9 @@ A connection-oriented miniport driver must register the following *MiniportXxx* 
 
 For more information about registering these functions, see [**NdisMRegisterMiniportDriver**](https://msdn.microsoft.com/library/windows/hardware/ff563654).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,17 +2,14 @@
 title: USB Device Descriptor
 description: USB Device Descriptor
 ms.assetid: ef2a3e43-0e55-4e8e-ad86-efcbe153c847
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # USB Device Descriptor
 
 
-## <a href="" id="ddk-usb-device-descriptor-ng"></a>
+
 
 
 The device returns a USB Device Descriptor as defined in the USB Specification. The following table defines the prominent fields of the USB Device Descriptor.
@@ -59,11 +56,11 @@ The device returns a USB Device Descriptor as defined in the USB Specification. 
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

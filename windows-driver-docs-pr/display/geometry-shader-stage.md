@@ -2,11 +2,8 @@
 title: Geometry Shader Stage
 description: Geometry Shader Stage
 ms.assetid: 390eb917-3289-4b6e-be23-8db24cdd2bd7
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Geometry Shader Stage
@@ -40,7 +37,7 @@ The geometry shader stage can implement the following algorithms:
 
 **Note**   Because each call to the geometry shader can produce a varying number of outputs, parallel calls to hardware are more difficult at this stage than when running other pipeline stages (such as vertex or pixel shader stages) in parallel. While hardware implementations will run geometry shader calls in parallel, the complex buffering that is required to accomplish parallel geometry shader calls means that applications should not require the level of parallelism achievable at the geometry shader stage to be as much as other pipeline stages. In other words, the geometry shader could become a bottleneck in the pipeline depending on the program load that the geometry shader has. However, the goal is that algorithms that use the geometry shader's capability will still run more efficiently than the application that has to emulate the behavior on hardware that is not able to generate geometry programmatically.
 
- 
+ 
 
 The Direct3D runtime calls the following driver functions to create, set up, and destroy the geometry shader:
 
@@ -62,11 +59,10 @@ The Direct3D runtime calls the following driver functions to create, set up, and
 
 [**GsSetShaderResources**](https://msdn.microsoft.com/library/windows/hardware/ff566860)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Geometry%20Shader%20Stage%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -8,17 +8,14 @@ keywords:
 - driver models WDK WAN
 - CoNDIS drivers WDK networking , WAN drivers
 - CoNDIS WAN drivers WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Choosing a WAN Driver Model
 
 
-## <a href="" id="ddk-choosing-a-wan-driver-model-ng"></a>
+
 
 
 Microsoft Windows 2000 and later operating systems support two WAN driver models: NDIS WAN and CoNDIS WAN.
@@ -51,9 +48,9 @@ The following topics describe the primary advantages of using the CoNDIS WAN mod
 
 [Other NDIS Features Available to CoNDIS WAN Drivers](other-ndis-features-available-to-condis-wan-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

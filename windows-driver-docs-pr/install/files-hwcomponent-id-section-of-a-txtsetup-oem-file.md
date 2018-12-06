@@ -9,12 +9,14 @@ api_name:
 - Files.HwComponent.ID Section of a TxtSetup.oem File
 api_type:
 - NA
+ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Files.HwComponent.ID Section of a TxtSetup.oem File
 
 
-A **Files.***HwComponent***.***ID* section lists the files to be copied if the user selects a particular component option. One of these sections must be present for each option listed in each *HwComponent* section.
+A **Files.**<em>HwComponent</em>**.**<em>ID</em> section lists the files to be copied if the user selects a particular component option. One of these sections must be present for each option listed in each *HwComponent* section.
 
 ``` syntax
 [Files.HwComponent.ID]
@@ -22,7 +24,7 @@ filetype = diskN,filename[,DriverKey]
 ...
 ```
 
-<a href="" id="files-hwcomponent-id"></a>**Files.***HwComponent***.***ID*  
+<a href="" id="files-hwcomponent-id"></a>**Files.**<em>HwComponent</em>**.**<em>ID</em>  
 *HwComponent* corresponds to the name of a *HwComponent* section in the file. *ID* corresponds to an *ID* entry in that *HwComponent* section.
 
 <a href="" id="filetype"></a>*filetype*  
@@ -55,9 +57,9 @@ Identifies the disk from which to copy the file. This value must match an entry 
 Specifies the name of the file, not including the directory path or drive. To form the full file name, Windows appends the *filename* to the directory specified for the disk in the **Disks** section. File names must not exceed eight characters, and extensions must not exceed three characters.
 
 <a href="" id="driverkey"></a>*DriverKey*  
-Specifies the name of the key to be created in the registry services tree for this file, if the file is of type **driver**. This value is used to form **Config.***DriverKey* section names. This value is required for components of type **scsi**.
+Specifies the name of the key to be created in the registry services tree for this file, if the file is of type **driver**. This value is used to form **Config.**<em>DriverKey</em> section names. This value is required for components of type **scsi**.
 
-The following example shows a **Files.***HwComponent***.***ID* section in a *TxtSetup.oem* file:
+The following example shows a **Files.**<em>HwComponent</em>**.**<em>ID</em> section in a *TxtSetup.oem* file:
 
 ``` syntax
 ; ...
@@ -69,11 +71,10 @@ catalog = d1, oemdrv.cat
 ; ...
 ```
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bdevinst\devinst%5D:%20Files.HwComponent.ID%20Section%20of%20a%20TxtSetup.oem%20File%20%20RELEASE:%20%2810/9/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -1,23 +1,19 @@
 ---
 title: Overview of Partial Print Providers
-author: windows-driver-content
 description: Overview of Partial Print Providers
 ms.assetid: 622f99e3-d4a5-42f0-ab71-4d256e0ea02c
 keywords:
 - print providers WDK , partial print providers
 - network print providers WDK , partial print providers
 - partial print providers WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Overview of Partial Print Providers
 
 
-## <a href="" id="ddk-overview-of-partial-print-providers-gg"></a>
+
 
 
 A partial provider DLL typically implements customized versions of only the provider functions that manage print queues and print jobs. The partial provider executes only on the print client system and depends on the local print provider for driver management operations and for generating printer data. Multiple partial providers can exist on a client system.
@@ -42,12 +38,10 @@ It is important to remember that a partial print provider does not replace the l
 
 Partial providers do not generate print jobs; they depend on the local provider and its [*print processors*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-print-processor) to create [RAW data](raw-data-type.md) that can be sent to a printer. When a print processor calls the local provider's **StartDocPrinter** function (see [Printing a Print Job](printing-a-print-job.md)), and the print queue is supported by a partial provider, the local provider calls the partial provider's **StartDocPrinter** function, supplying the RAW data (as a file). The partial provider's **StartDocPrinter**, **WritePrinter**, and **EndDocPrinter** functions should send the RAW data over the network to the remote print queue.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Overview%20of%20Partial%20Print%20Providers%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

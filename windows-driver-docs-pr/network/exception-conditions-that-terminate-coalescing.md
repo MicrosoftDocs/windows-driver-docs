@@ -2,11 +2,8 @@
 title: Exception Conditions that Terminate Coalescing
 description: This section defines the checks that a receive segment coalescing (RSC)-capable miniport driver must perform on a segment before it can be coalesced.
 ms.assetid: 6294541A-AF32-46CF-81AB-5855EA440053
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Exception Conditions that Terminate Coalescing
@@ -28,7 +25,7 @@ If a check fails, an exception is triggered, and the miniport driver must termin
 
 **Note**  For exceptions 7 and 8 below, the miniport driver should resume coalescing starting with the segment that triggered the exception.
 
- 
+ 
 
 Receiving a segment that meets any of the following criteria must trigger an exception:
 
@@ -56,9 +53,9 @@ Receiving a segment that meets any of the following criteria must trigger an exc
 
     2.  The segment has a different value for the ECN flags (ECE and CWR) in the TCP header than the previous segment.
 
- 
+ 
 
- 
+ 
 
 
 

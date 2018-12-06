@@ -7,11 +7,8 @@ keywords:
 - chimney offload WDK networking , offload state
 - offload state WDK TCP chimney offload
 - states WDK TCP chimney offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # TCP Chimney Offload State
@@ -19,7 +16,7 @@ ms.technology: windows-devices
 
 \[The TCP chimney offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-tcp-chimney-offload-state-ng"></a>
+
 
 
 The TCP Chimney Offload State section describes the TCP chimney protocol state that the host stack offloads to an offload target. The offload target uses the offloaded state to process offloaded TCP connections.
@@ -44,9 +41,9 @@ This section includes:
 
 [Placeholders, Linkers, and New Offloads](placeholders--linkers--and-new-offloads.md)
 
- 
+ 
 
- 
+ 
 
 
 

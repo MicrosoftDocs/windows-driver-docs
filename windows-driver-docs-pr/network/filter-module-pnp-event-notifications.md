@@ -8,17 +8,14 @@ keywords:
 - NDIS filter drivers WDK , event notifications
 - event notifications WDK networking , filter drivers
 - Plug and Play WDK networking , filter
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Filter Module PnP Event Notifications
 
 
-## <a href="" id="ddk-filter-module-pnp-event-notifications-ng"></a>
+
 
 
 Filter drivers can receive all the device Plug and Play (PnP) notifications that underlying miniport drivers receive. Also, filter drivers can receive all the network PnP notifications that overlying protocol drivers receive.The handling of PnP notifications is driver specific.
@@ -43,9 +40,9 @@ Filter drivers should handle driver stack changes. For more information about dr
 
 If necessary to allow handling of these events, NDIS can initiate a pause operation after the PnP or Power Management notification. For more information, see [Pausing a Driver Stack](pausing-a-driver-stack.md).
 
- 
+ 
 
- 
+ 
 
 
 

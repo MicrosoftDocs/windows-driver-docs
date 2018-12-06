@@ -11,11 +11,8 @@ keywords:
 - GenerateInkLevels
 - INKLEVELS
 - translating 8-bit-per-pixel halftone indexes WDK GDI
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Translating 8-Bit-Per-Pixel Halftone Indexes to Ink Levels
@@ -30,7 +27,7 @@ This function can be used to generate either a Windows 2000 CMY mode or a post-W
 
 ### <span id="inklevels_structure"></span><span id="INKLEVELS_STRUCTURE"></span>INKLEVELS Structure
 
-```
+```cpp
 typedef struct _INKLEVELS {
    BYTE  Cyan;          // Cyan level from 0 to max
    BYTE  Magenta;       // Magenta level from 0 to max
@@ -45,7 +42,7 @@ The **GenerateInkLevels** function computes an 8-bit-per-pixel translation table
 
 When this function is called, the *pInkLevels* parameter must point to a valid memory location of 256 INKLEVELS entries. If the function returns **TRUE**, then *pInkLevels* can be used to translate 8-bit-per-pixel indexes to ink levels, or to map to the older CMY332 indexes. If the function is called with *CMYMask* set to an invalid value (a value from 3 to 255 in which any of the cyan, magenta, or yellow levels is zero), the function returns **FALSE**.
 
-```
+```cpp
 BOOL
 GenerateInkLevels(
     PINKLEVELS  pInkLevels,  // Pointer to 256 INKLEVELS table
@@ -250,11 +247,10 @@ GenerateInkLevels(
 }
 ```
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Translating%208-Bit-Per-Pixel%20Halftone%20Indexes%20to%20Ink%20Levels%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

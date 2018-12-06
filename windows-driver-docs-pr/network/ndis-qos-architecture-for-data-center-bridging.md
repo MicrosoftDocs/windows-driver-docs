@@ -2,11 +2,8 @@
 title: NDIS QoS Architecture for Data Center Bridging
 description: NDIS QoS Architecture for Data Center Bridging
 ms.assetid: ECB156D8-ECD5-49DE-BC75-6562B90F6056
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # NDIS QoS Architecture for Data Center Bridging
@@ -20,9 +17,9 @@ The unshaded boxes in the diagram represent components that the Windows operatin
 
 The shaded boxes in the diagram represent DCB components that independent hardware vendors (IHVs) and original equipment manufacturers (OEMs) provide. For more information about these components, see [Vendor-Provided DCB Components](vendor-provided-dcb-components.md).
 
- 
+ 
 
- 
+ 
 
 
 

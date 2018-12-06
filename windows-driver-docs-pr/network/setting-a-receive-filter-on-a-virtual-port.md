@@ -2,11 +2,8 @@
 title: Setting a Receive Filter on a Virtual Port
 description: Setting a Receive Filter on a Virtual Port
 ms.assetid: F0137D59-1701-4DFC-BB30-27E477FC0706
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Setting a Receive Filter on a Virtual Port
@@ -28,9 +25,9 @@ For more information on how to create a VPort, see [Creating a Virtual Port](cre
 
 **Note**  Because the default VPort always exists and is never explicitly created, any overlying driver can set a receive filter on the default VPort. Overlying drivers do not own the default VPort. Therefore, all protocol drivers that are bound to a network adapter can use the default VPort. The default VPort has an identifier value of NDIS\_DEFAULT\_VPORT\_ID.
 
- 
+ 
 
-## <a href="" id="set"></a>Setting a Receive Filter on a VPort
+## Setting a Receive Filter on a VPort
 
 
 To set and configure a filter on a VPort, an overlying driver issues an object identifier (OID) method request of [OID\_RECEIVE\_FILTER\_SET\_FILTER](https://msdn.microsoft.com/library/windows/hardware/ff569795). The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure initially contains a pointer to an [**NDIS\_RECEIVE\_FILTER\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff567181) structure.
@@ -41,7 +38,7 @@ Before the overlying driver issues this OID method request, it must initialize a
 
     **Note**  Starting with NDIS 6.30, only **NdisReceiveFilterTypeVMQueue** filter types are supported for the single root I/O virtualization (SR-IOV) interface.
 
-     
+     
 
 -   The **QueueId** member must be set to NDIS\_DEFAULT\_RECEIVE\_QUEUE\_ID.
 
@@ -55,7 +52,7 @@ Before the overlying driver issues this OID method request, it must initialize a
 
     **Note**  NDIS assigns a unique filter identifier in this member before it forwards the OID request to the miniport driver for processing.
 
-     
+     
 
 -   The **FieldParametersArrayOffset**, **FieldParametersArrayNumElements**, and **FieldParametersArrayElementSize** members of the [**NDIS\_RECEIVE\_FILTER\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff567181) structure must be set appropriately to define an array of [**NDIS\_RECEIVE\_FILTER\_FIELD\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff567169) structures. Each **NDIS\_RECEIVE\_FILTER\_FIELD\_PARAMETERS** structure in the array sets the filter test criterion for one field in a network header.
 
@@ -67,7 +64,7 @@ Before the overlying driver issues this OID method request, it must initialize a
 
 After a successful return from the OID method request, the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure contains a pointer to an [**NDIS\_RECEIVE\_FILTER\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff567181) structure with a new filter identifier.
 
-## <a href="" id="flag"></a>Using the NDIS\_RECEIVE\_FILTER\_FIELD\_MAC\_HEADER\_VLAN\_UNTAGGED\_OR\_ZERO Flag
+## Using the NDIS\_RECEIVE\_FILTER\_FIELD\_MAC\_HEADER\_VLAN\_UNTAGGED\_OR\_ZERO Flag
 
 
 The **Flags** member of the [**NDIS\_RECEIVE\_FILTER\_FIELD\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff567169) structure specify actions to be performed for the receive filter. The following points apply to the **NDIS\_RECEIVE\_FILTER\_FIELD\_MAC\_HEADER\_VLAN\_UNTAGGED\_OR\_ZERO** flag:
@@ -82,7 +79,7 @@ The **Flags** member of the [**NDIS\_RECEIVE\_FILTER\_FIELD\_PARAMETERS**](https
 
     **Note**  If the virtualization stack sets the MAC address filter and no VLAN identifier filter is configured by the [OID\_RECEIVE\_FILTER\_SET\_FILTER](https://msdn.microsoft.com/library/windows/hardware/ff569795) set request, the switch also sets the **NDIS\_RECEIVE\_FILTER\_FIELD\_MAC\_HEADER\_VLAN\_UNTAGGED\_OR\_ZERO** flag.
 
-     
+     
 
 -   Starting with NDIS 6.30, if the **NDIS\_RECEIVE\_FILTER\_FIELD\_MAC\_HEADER\_VLAN\_UNTAGGED\_OR\_ZERO** flag is not set and there is no VLAN identifier filter configured by the [OID\_RECEIVE\_FILTER\_SET\_FILTER](https://msdn.microsoft.com/library/windows/hardware/ff569795) method request, the miniport driver must do either one of the following:
 
@@ -92,7 +89,7 @@ The **Flags** member of the [**NDIS\_RECEIVE\_FILTER\_FIELD\_PARAMETERS**](https
 
 -   If a protocol driver sets a MAC address filter and a VLAN identifier filter with the [OID\_RECEIVE\_FILTER\_SET\_FILTER](https://msdn.microsoft.com/library/windows/hardware/ff569795) method request, it does not set the **NDIS\_RECEIVE\_FILTER\_FIELD\_MAC\_HEADER\_VLAN\_UNTAGGED\_OR\_ZERO** flag in either of the filter fields. In this case, the miniport driver should indicate packets that match both the specified MAC address and the VLAN identifier. That is, the miniport driver should not indicate packets with a matching MAC address that have a zero VLAN identifier or are untagged packets.
 
-## <a href="" id="filter-id"></a>Using the Filter Identifier
+## Using the Filter Identifier
 
 
 NDIS assigns a filter identifier in the **FilterId** member of the [**NDIS\_RECEIVE\_FILTER\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff567181) structure and passes the OID method request of [OID\_RECEIVE\_FILTER\_SET\_FILTER](https://msdn.microsoft.com/library/windows/hardware/ff569795) to the underlying miniport driver. Each filter that is set on a VPort has a unique filter identifier for a network adapter. That is, the filter identifiers are not duplicated on different queues that the network adapter manages.
@@ -103,7 +100,7 @@ When NDIS receives an OID request to set a filter on a VPort, it verifies the fi
 
 The miniport driver must retain the filter identifiers for the allocated receive filters. NDIS uses the filter identifier of a filter with later OID requests to change the receive filter parameters or clear the receive filter. For more information about how to change parameters and clear filters, see [Obtaining and Updating VM Queue Parameters](obtaining-and-updating-vm-queue-parameters.md) and [Clearing a VMQ Filter](clearing-a-vmq-filter.md).
 
-## <a href="" id="handle"></a>Handling Receive Filters on a VPort
+## Handling Receive Filters on a VPort
 
 
 The miniport driver programs the network adapter based on the filters in the following way:
@@ -118,9 +115,9 @@ The network adapter combines the results from all the field tests with a logical
 
 When a network adapter tests a received packet against these filter criteria, it must ignore all fields in the packet that have no test criteria that were specified.
 
- 
+ 
 
- 
+ 
 
 
 

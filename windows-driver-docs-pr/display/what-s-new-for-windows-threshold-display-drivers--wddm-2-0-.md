@@ -1,18 +1,24 @@
 ---
-title: What's new for Windows 10 display drivers (WDDM 2.0)
+title: What's new for Windows 10 display drivers (WDDM 2.0 and later)
 description: Describes new features in Windows 10 for display drivers
 ms.assetid: 619175D4-98DA-4B17-8F6F-71B13A31374D
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 12/03/2018
+ms.localizationpriority: medium
 ---
 
-# What's new for Windows 10 display drivers (WDDM 2.0)
+# What's new for Windows 10 display drivers (WDDM 2.0 and later)
 
+## WDDM 2.5
 
-### <span id="Memory_Management"></span><span id="memory_management"></span><span id="MEMORY_MANAGEMENT"></span>Memory Management
+### Content changes
+
+| Topic | Date | Description |
+| --- | --- | --- |
+| [EDID Extension (VSDB) for HMDs and Specialized Displays](specialized-monitors-edid-extension.md) | 12/03/2018 | Specification for Display Manufacturers |
+
+## WDDM 2.0
+
+### Memory Management
 
 GPU virtual memory
 
@@ -35,7 +41,6 @@ For more details, see [Driver residency in WDDM 2.0](driver-residency-in-wddm-2-
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20What's%20new%20for%20Windows%C2%A010%20display%20drivers%20%28WDDM%202.0%29%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

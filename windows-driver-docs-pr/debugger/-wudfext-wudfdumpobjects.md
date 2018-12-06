@@ -3,17 +3,14 @@ title: wudfext.wudfdumpobjects
 description: The wudfext.wudfdumpobjects extension displays outstanding UMDF objects.
 ms.assetid: 2ede7f2e-124c-494d-9188-5a28617a0bdb
 keywords: ["wudfext.wudfdumpobjects Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - wudfext.wudfdumpobjects
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !wudfext.wudfdumpobjects
@@ -21,7 +18,7 @@ api_type:
 
 The **!wudfext.wudfdumpobjects** extension displays outstanding UMDF objects.
 
-```
+```dbgcmd
 !wudfext.wudfdumpobjects ObjTrackerAddress
 ```
 
@@ -50,7 +47,7 @@ Specifies the address to track leaked objects. This address is displayed in the 
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -67,7 +64,7 @@ This extension can be used at any time, even if UMDF has not broken in to the de
 
 If UMDF is version 1.9 or above, you can use either [**!wudfext.umdevstack**](-wudfext-umdevstack.md) or [**!wudfext.umdevstacks**](-wudfext-umdevstacks.md) to determine the address of the object tracker. This address can then be passed to **!wudfext.wudfdumpobjects**. Here is an example:
 
-```
+```dbgcmd
 0: kd> !umdevstacks 
 Number of device stacks: 1
   Device Stack: 0x038c6f08    Pdo Name: \Device\USBPDO-11
@@ -112,11 +109,10 @@ WdfTypeMemoryObject    Object: 0x030ecfb0, Interface: 0x030ecff0
 WdfTypeMemoryObject    Object: 0x030eefb0, Interface: 0x030eeff0
 ```
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!wudfext.wudfdumpobjects%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

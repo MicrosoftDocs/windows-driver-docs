@@ -1,15 +1,11 @@
 ---
 title: WDF_PTR_ADD_OFFSET macro
-author: windows-driver-content
 description: The WDF_PTR_ADD_OFFSET macro adds an offset value to an address and returns the resulting address.
 ms.assetid: 21402be4-ef71-4828-b588-d178d66472e5
 keywords:
  - WDF_PTR_ADD_OFFSET macro
-ms.author: windowsdriverdev
 ms.date: 08/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WDF_PTR_ADD_OFFSET macro
@@ -22,8 +18,8 @@ Syntax
 
 ```ManagedCPlusPlus
 PVOID WDF_PTR_ADD_OFFSET(
-    _ptr,
-    _offset
+    _ptr,
+    _offset
 );
 ```
 
@@ -55,7 +51,7 @@ The macro is defined as follows:
 
 Here is an example from the Toaster sample (toaster\\func\\featured\\wmi.c). In the example, the driver calls **WDF_PTR_ADD_OFFSET** to add an offset to an address to determine a destination buffer address to pass to the [**WDF_WMI_BUFFER_APPEND_STRING**](https://msdn.microsoft.com/library/windows/hardware/ff553057) function.
 
-```
+```cpp
         //
         // Write the instance name
         //
@@ -83,7 +79,6 @@ Here is an example from the Toaster sample (toaster\\func\\featured\\wmi.c). In 
             &amp;modelName,
             &amp;length
             );
-
 ```
 
 Requirements
@@ -97,7 +92,7 @@ Requirements
 <tbody>
 <tr class="odd">
 <td><p>Target platform</p></td>
-<td>[Universal](http://go.microsoft.com/fwlink/p/?linkid=531356)</td>
+<td><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" data-raw-source="[Universal](http://go.microsoft.com/fwlink/p/?linkid=531356)">Universal</a></td>
 </tr>
 <tr class="even">
 <td><p>Minimum KMDF version</p></td>
@@ -114,9 +109,9 @@ Requirements
 </tbody>
 </table>
 
- 
 
- 
+
+
 
 
 

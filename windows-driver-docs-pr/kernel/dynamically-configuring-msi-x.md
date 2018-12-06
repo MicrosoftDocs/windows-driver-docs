@@ -1,8 +1,9 @@
 ---
 title: Dynamically Configuring MSI-X
-author: windows-driver-content
 description: Dynamically Configuring MSI-X
 ms.assetid: 53051239-e00f-41e8-b95d-9618693e696d
+ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Dynamically Configuring MSI-X
@@ -20,12 +21,10 @@ Drivers use the interface by sending an [**IRP\_MN\_QUERY\_INTERFACE**](https://
 
 By default, the interrupt table is configured so that the first entry has message ID zero, the second entry has message ID one, and so on. If the number of table entries exceeds the number of messages, each additional table entry is assigned message ID zero. (The message ID is the index for the interrupt's entry in the **MessageInfo** member of the [**IO\_INTERRUPT\_MESSAGE\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff550576) structure that describes the driver's message-signaled interrupts. The [**IoConnectInterruptEx**](https://msdn.microsoft.com/library/windows/hardware/ff548378) routine supplies a pointer to this structure.)
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20Dynamically%20Configuring%20MSI-X%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

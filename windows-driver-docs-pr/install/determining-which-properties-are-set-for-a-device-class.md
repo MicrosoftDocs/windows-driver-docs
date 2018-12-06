@@ -2,11 +2,8 @@
 title: Determining Which Properties Are Set for a Device Class
 description: Determining Which Properties Are Set for a Device Class
 ms.assetid: a8016b04-ae52-47d9-b3ef-74e0896aa825
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Determining Which Properties Are Set for a Device Class
@@ -46,9 +43,9 @@ To determine the class properties that are set for a device class on a remote co
 
 -   In addition to supplying the parameter values that are required for both [**SetupDiGetClassPropertyKeysEx**](https://msdn.microsoft.com/library/windows/hardware/ff551093) and [**SetupDiGetClassPropertyKeys**](https://msdn.microsoft.com/library/windows/hardware/ff551091), supply the *MachineName* parameter, which must be set to a pointer to a NULL-terminated string that contains the UNC name, including the \\\\ prefix, of a computer.
 
- 
+ 
 
- 
+ 
 
 
 

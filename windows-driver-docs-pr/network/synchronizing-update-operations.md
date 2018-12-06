@@ -5,11 +5,8 @@ ms.assetid: 175ca97a-99b9-46ff-aa6a-51eb531310cd
 keywords:
 - updating offloaded TCP chimney state, synchronizing operations
 - synchronization WDK TCP chimney offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Synchronizing Update Operations
@@ -17,7 +14,7 @@ ms.technology: windows-devices
 
 \[The TCP chimney offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-synchronizing-update-operations-ng"></a>
+
 
 
 The host stack synchronizes update operations as follows:
@@ -28,9 +25,9 @@ The host stack synchronizes update operations as follows:
 
 -   The host stack never attempts to update an invalidated state object.
 
- 
+ 
 
- 
+ 
 
 
 

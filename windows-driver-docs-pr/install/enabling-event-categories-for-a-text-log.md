@@ -6,11 +6,8 @@ keywords:
 - event categories WDK SetupAPI logging
 - text logs WDK SetupAPI , event categories
 - LogMask
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Enabling Event Categories for a Text Log
@@ -107,9 +104,9 @@ The following table lists the event categories that SetupAPI supports, the manif
 </tbody>
 </table>
 
- 
+ 
 
-<a href="" id="to-enable-event-categories-for-the-setupapi-logs--create--or-modify--the-following-reg-dword-registry-value-"></a>To enable event categories for the SetupAPI logs, create (or modify) the following REG_DWORD registry value:  
+<a href="" id="to-enable-event-categories-for-the-setupapi-logs--create--or-modify--the-following-reg-dword-registry-value-"></a>To enable event categories for the SetupAPI logs, create (or modify) the following [REG_DWORD](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types) registry value:  
 **HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\Setup\\LogMask**
 
 The **LogMask** registry value applies to the device installation text log and the application installation text log.
@@ -124,9 +121,9 @@ The **LogMask** registry value is formatted as 0X*VVVVVVVV, where VVVVVVVV* is a
 
 -   To enable only log entries that are written by custom installation operations, set **LogMask** to TXTLOG_VENDOR (0x80000000).
 
- 
+ 
 
- 
+ 
 
 
 

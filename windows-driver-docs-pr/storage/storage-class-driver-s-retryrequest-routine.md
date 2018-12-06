@@ -1,17 +1,13 @@
 ---
 title: Storage Class Driver's RetryRequest Routine
-author: windows-driver-content
 description: Storage Class Driver's RetryRequest Routine
 ms.assetid: de1eea7d-88db-444c-a9f7-462ad4a5df27
 keywords:
 - RetryRequest
 - retrying requests WDK storage
 - errors WDK storage
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Storage Class Driver's RetryRequest Routine
@@ -40,11 +36,10 @@ In particular, a *RetryRequest* routine should do the following:
 
 6.  Pass the request on to the next-lower driver with [**IoCallDriver**](https://msdn.microsoft.com/library/windows/hardware/ff548336).
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

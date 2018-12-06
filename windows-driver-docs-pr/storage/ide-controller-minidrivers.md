@@ -1,6 +1,5 @@
 ---
 title: IDE Controller Minidrivers
-author: windows-driver-content
 description: IDE Controller Minidrivers
 ms.assetid: 280c4add-70c3-4c2a-b90b-a20111a2e407
 keywords:
@@ -8,11 +7,8 @@ keywords:
 - storage IDE controller minidrivers WDK
 - storage miniport drivers WDK , IDE controller minidrivers
 - miniport drivers WDK storage , IDE controller minidrivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # IDE Controller Minidrivers
@@ -31,11 +27,10 @@ The following sections discuss the guidelines for the development and installati
 
 [Sample IDE Controller Minidrivers](sample-ide-controller-minidrivers.md)
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

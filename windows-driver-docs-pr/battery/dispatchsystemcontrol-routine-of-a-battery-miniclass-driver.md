@@ -6,11 +6,8 @@ keywords:
 - battery miniclass drivers WDK , routines
 - DispatchSystemControl routine
 - WMI WDK battery
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # DispatchSystemControl Routine of a Battery Miniclass Driver
@@ -29,11 +26,10 @@ Inside its [**DpWmiQueryDataBlock**](https://msdn.microsoft.com/library/windows/
 
 Battery miniclass drivers are not required to do any WMI IRP processing beyond calling **BatteryClassQueryWmiDataBlock**. In a minimal implementation of WMI handling for a battery miniclass driver, if **BatteryClassQueryWmiDataBlock** returns STATUS\_WMI\_GUID\_NOT\_FOUND, the miniclass driver simply calls [**WmiCompleteRequest**](https://msdn.microsoft.com/library/windows/hardware/ff565798) with a status value of STATUS\_WMI\_GUID\_NOT\_FOUND.
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

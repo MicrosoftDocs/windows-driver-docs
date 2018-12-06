@@ -1,13 +1,9 @@
 ---
 title: Full-Duplex I/O Requests
-author: windows-driver-content
 description: Some buses, such as SPI, support full-duplex bus transfers.
 ms.assetid: C80FE3F2-6659-4DE8-8F77-F77EDA60400F
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Full-Duplex I/O Requests
@@ -26,7 +22,7 @@ An additional requirement for an **IOCTL\_SPB\_FULL\_DUPLEX** request is that th
 
 The following code example shows how the driver for an SPB peripheral device builds a transfer list for an **IOCTL\_SPB\_FULL\_DUPLEX** request.
 
-```
+```cpp
 const ULONG transfers = 2;
 
 SPB_TRANSFER_LIST_AND_ENTRIES(transfers) seq;
@@ -64,7 +60,7 @@ The Kernel-Mode Driver Foundation (KMDF) driver for an SPB peripheral device cal
 
 The following code example shows a **WdfIoTargetSendIoctlSynchronously** call that sends an **IOCTL\_SPB\_FULL\_DUPLEX** request to an SPB peripheral device. The `seq` variable in this example is a transfer list that was defined in the code example in [Transfer List](#transfer-list).
 
-```
+```cpp
 ULONG_PTR BytesTransferred = 0;
 NTSTATUS Status;
   
@@ -95,7 +91,7 @@ The User-Mode Driver Foundation (UMDF) driver for an SPB peripheral device calls
 
 The following code example shows an **IWDFIoTarget::FormatRequestForIoctl** call that formats an **IOCTL\_SPB\_FULL\_DUPLEX** request to an SPB peripheral device. The `seq` variable in this example is a transfer list that was defined in the code example in [Transfer List](#transfer-list).
 
-```
+```cpp
 ULONG_PTR BytesTransferred = 0;
 HRESULT hr;
 
@@ -151,11 +147,10 @@ The preceding code example does the following:
 4.  The call to the [**IWDFIoRequest::GetCompletionParams**](https://msdn.microsoft.com/library/windows/hardware/ff559084) method gets the completion parameters from the request.
 5.  The call to the [**IWDFRequestCompletionParams::GetInformation**](https://msdn.microsoft.com/library/windows/hardware/ff560305) method gets the *information* value from the completion parameters (the **Information** field in the I/O status block). This value is the total number of bytes transferred (bytes written plus bytes read) by the **IOCTL\_SPB\_FULL\_DUPLEX** request.
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

@@ -3,25 +3,22 @@ title: l+, l- (Set Source Options)
 description: The l+and l- commands set the source line options that control source display and program stepping options.
 ms.assetid: 7b169af0-e799-47eb-b197-c4408a755702
 keywords: ["l+, l- (Set Source Options) Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - l+, l- (Set Source Options)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # l+, l- (Set Source Options)
 
 
-The **l+**and **l-** commands set the source line options that control source display and program stepping options.
+The <strong>l+</strong>and **l-** commands set the source line options that control source display and program stepping options.
 
-```
+```dbgcmd
 l+Option 
 l-Option 
 l{+|-} 
@@ -48,7 +45,7 @@ Displays source lines and source line numbers at the command prompt.
 <span id="t"></span><span id="T"></span>**t**  
 Starts [source mode](debugging-in-source-mode.md). If this mode is not set, the debugger is in [assembly mode](debugging-in-assembly-mode.md).
 
-<span id="_"></span>**\***  
+<span id="_"></span>**\\***  
 Turns on or turns off all options.
 
 ### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
@@ -74,7 +71,7 @@ Turns on or turns off all options.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -91,11 +88,10 @@ When you specify the **s** option, source lines and line numbers are displayed w
 
 Source line options do not take effect unless you enable line number loading by using the [**.lines (Toggle Source Line Support)**](-lines--toggle-source-line-support-.md) command or the [-lines command-line option](command-line-options.md). By default, if you have not used these commands, WinDbg turns on source line support and CDB turns it off.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20l+,%20l-%20%28Set%20Source%20Options%29%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -2,11 +2,8 @@
 title: Creating and configuring Internet Sharing experiences
 description: Creating and configuring Internet Sharing experiences
 ms.assetid: 11906ee4-68f5-4be6-a3ab-6af3253c8a11
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Creating and configuring Internet Sharing experiences
@@ -36,7 +33,7 @@ Internet Sharing can be turned on by using the Settings charm on the mobile broa
     **Note**  
     The icon for the mobile broadband network is automatically updated throughout Windows to help customers remember that the network is being shared by other people.
 
-     
+     
 
 6.  After Internet Sharing is turned on, from the **Mobile Broadband** page, click **Edit** to change the network name and password.
 
@@ -74,12 +71,14 @@ You can connect to a tethered network using a Wi-Fi device in the same way you c
 **Note**  
 Users can also connect to a tethering access point if they have paired their devices by using Bluetooth.
 
- 
+ 
 
 ## <span id="Configure_Internet_Sharing"></span><span id="configure_internet_sharing"></span><span id="CONFIGURE_INTERNET_SHARING"></span>Configure Internet Sharing
 
 
-Some mobile network operators (MNOs) or mobile virtual network operators (MVNOs) do not support Internet Sharing on their network, or they require an entitlement check prior to setting up Internet Sharing. Windows provides the necessary controls to ensure that Windows devices comply with network policies. To do this, you must author a service metadata package and configure the [AllowTethering](allowtethering.md) element in the schema ([Service metadata package schema reference](service-metadata-package-schema-reference.md)). For more info about creating a service metadata package, see [Developer guide for creating service metadata](developer-guide-for-creating-service-metadata.md). There are three options:
+Some mobile network operators (MNOs) or mobile virtual network operators (MVNOs) do not support Internet Sharing on their network, or they require an entitlement check prior to setting up Internet Sharing. Windows provides the necessary controls to ensure that Windows devices comply with network policies. 
+
+To do this in Windows 8, Windows 8.1, or Windows 10 prior to version 1803, you must author a service metadata package and configure the [AllowTethering](allowtethering.md) element in the schema ([Service metadata package schema reference](service-metadata-package-schema-reference.md)). For more info about creating a service metadata package, see [Developer guide for creating service metadata](developer-guide-for-creating-service-metadata.md). There are three options:
 
 -   Allow Internet Sharing for all customers. (default value if not specified in the service metadata package)
 
@@ -87,9 +86,11 @@ Some mobile network operators (MNOs) or mobile virtual network operators (MVNOs)
 
 -   Allow Internet Sharing for customers after an entitlement check
 
-If you decide that an entitlement check is not required, no additional information or capabilities are needed. If an entitlement check is required, you must also provide a background notification event handler that is part of your mobile broadband app. For more info on creating the background notification event handler, see [Enabling mobile operator notifications and system events](enabling-mobile-operator-notifications-and-system-events.md). The event handler must be able to trigger the proper entitlement check for the network as a background task in response to the [**NetworkOperatorNotificationEventDetails**](https://msdn.microsoft.com/library/windows/apps/br207377) object. The background task must return the proper entitlement check response by using the [**AuthorizeTethering**](https://msdn.microsoft.com/library/windows/apps/dn266090) method.
+To do this in Windows 10, version 1803 and later, you must set the [**Hotspot** setting in the COSA database](desktop-cosa-apn-database-settings.md#desktop-cosa-only-settings) to the appropriate value.
 
-MNOs and MVNOs have different requirements on what PDP context should be used for Internet Sharing. Windows has updated the existing [provisioning XML schema](https://msdn.microsoft.com/library/windows/apps/hh868398) to enable you to provision the system with the correct Internet Sharing PDP context information. For more information about multiple PDP contexts, see [Developing apps using multiple PDP contexts](developing-apps-using-multiple-pdp-contexts.md).
+If you decide that an entitlement check is not required, no additional information or capabilities are needed. If an entitlement check is required, you must also provide a background notification event handler that is part of your UWP mobile broadband app. In Windows 10, version 1803 and later, use the methods in the [TetheringEntitlementCheckTriggerDetails](https://docs.microsoft.com/uwp/api/windows.networking.networkoperators.tetheringentitlementchecktriggerdetails) class to handle Windows notification events for checking tethering entitlement. For earlier versions of Windows, use the [**NetworkOperatorNotificationEventDetails**](https://msdn.microsoft.com/library/windows/apps/br207377) class. For more info on creating the background notification event handler, see [Enabling mobile operator notifications and system events](enabling-mobile-operator-notifications-and-system-events.md).
+
+MOs and MVNOs have different requirements on what PDP context should be used for Internet Sharing. Windows has updated the existing [provisioning XML schema](https://msdn.microsoft.com/library/windows/apps/hh868398) to enable you to provision the system with the correct Internet Sharing PDP context information. For more information about multiple PDP contexts, see [Developing apps using multiple PDP contexts](developing-apps-using-multiple-pdp-contexts.md).
 
 You can also configure the maximum number of concurrent connected client devices is 10. You can change this number to anything between 3 and 10 by using [Account provisioning](account-provisioning.md).
 
@@ -112,11 +113,10 @@ For most operators, the Windows user interface will provide the best experience 
 
 -   Receive and react to notifications about a change in the Internet Sharing status or number of connected devices
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_mb\p_mb%5D:%20Creating%20and%20configuring%20Internet%20Sharing%20experiences%20%20RELEASE:%20%281/18/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

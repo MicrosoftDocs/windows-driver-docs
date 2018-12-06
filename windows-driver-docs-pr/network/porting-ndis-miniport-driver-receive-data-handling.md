@@ -4,17 +4,14 @@ description: Porting NDIS Miniport Driver Receive Data Handling
 ms.assetid: d4c5ab42-049d-45ad-96d0-4563234410b5
 keywords:
 - receive operation porting WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Porting NDIS Miniport Driver Receive Data Handling
 
 
-## <a href="" id="ddk-porting-ndis-miniport-driver-receive-data-handling-ng"></a>
+
 
 
 NDIS 6.0 miniport drivers indicate to NDIS a linked list of [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structures instead of [**NDIS\_PACKET**](https://msdn.microsoft.com/library/windows/hardware/ff557086) structures. NDIS forwards the NET\_BUFFER\_LIST structures to the appropriate overlying drivers.
@@ -25,9 +22,9 @@ If the miniport driver sets the **Status** member of the NET\_BUFFER\_LIST struc
 
 For more information about miniport driver receive handling, see [Indicating Received Data from a Miniport Driver](indicating-received-data-from-a-miniport-driver.md).
 
- 
+ 
 
- 
+ 
 
 
 

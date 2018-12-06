@@ -2,11 +2,8 @@
 title: Required DXGI formats
 description: This topic presents the requirements that Microsoft Direct3D feature levels place on the user-mode display driver.
 ms.assetid: 1CB419B9-DD5E-492F-AAAC-CFFFDE247F7F
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Required DXGI formats
@@ -27,8 +24,8 @@ The second table shows the Direct3D 10Level 9 support algorithm for each enumera
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left">D3D9 format (D3DDDIFMT_* and/or D3DDECLTYPE*</th>
-<th align="left">D3D10+ API equivalent (DXGI_FORMAT_*)</th>
+<th align="left">D3D9 format (D3DDDIFMT_* and/or D3DDECLTYPE<em></th>
+<th align="left">D3D10+ API equivalent (DXGI_FORMAT_</em>)</th>
 <th align="left">Required D3D10_ or D3D11_ FORMAT_SUPPORT_* enumeration values</th>
 <th align="left">Minimum required Direct3D level</th>
 </tr>
@@ -543,7 +540,7 @@ The second table shows the Direct3D 10Level 9 support algorithm for each enumera
 </tbody>
 </table>
 
- 
+ 
 
 <table>
 <colgroup>
@@ -612,7 +609,7 @@ The second table shows the Direct3D 10Level 9 support algorithm for each enumera
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  These are further details on the support algorithm's requirements in Direct3D 10Level 9:
 -   The IA\_VERTEX\_BUFFER and/or IA\_INDEX\_BUFFER formats are supported by software vertex processing if there is no D3DDEVCAPS\_HWTRANSFORMANDLIGHT capability.
@@ -620,13 +617,12 @@ The second table shows the Direct3D 10Level 9 support algorithm for each enumera
 -   For the SHADER\_SAMPLE format, the driver must support FORMATOP\_TEXTURE, FORMATOP\_VOLUMETEXTURE, or FORMATOP\_CUBETEXTURE, and it must not report FORMATOP\_NOFILTER.
 -   For the MIP\_AUTOGEN format, Direct3D 10Level 9 generates its own mip-maps, so it requires MIP, RENDER\_TARGET, and TEXTURE2D bits.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Required%20DXGI%20formats%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

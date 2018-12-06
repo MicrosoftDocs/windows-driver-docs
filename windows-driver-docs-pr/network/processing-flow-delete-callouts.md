@@ -7,11 +7,8 @@ keywords:
 - callout drivers WDK Windows Filtering Platform , flow delete callouts
 - flow delete callouts WDK Windows Filtering Platform
 - flowDeleteFn
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Processing Flow Delete Callouts
@@ -21,7 +18,7 @@ When a data flow that is being processed by a callout is stopped, the filter eng
 
 For example:
 
-```
+```C++
 // Context structure to be associated with data flows
 typedef struct FLOW_CONTEXT_ {
   ...
@@ -55,9 +52,9 @@ VOID NTAPI
 
 The filter engine automatically removes the context that a callout associated with a data flow when the data flow is stopped. Therefore, a callout is not required to call the [**FwpsFlowRemoveContext0**](https://msdn.microsoft.com/library/windows/hardware/ff551169) function from its [*flowDeleteFn*](https://msdn.microsoft.com/library/windows/hardware/ff550025) callout function to remove the context from the data flow.
 
- 
+ 
 
- 
+ 
 
 
 

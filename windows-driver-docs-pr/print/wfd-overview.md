@@ -1,13 +1,9 @@
 ---
 title: Wi-Fi Direct Printing overview
-author: windows-driver-content
 description: Provides information on supported user experiences and use cases for a Wi-Fi Direct Printing.
 ms.assetid: 40ED3410-EC46-42C8-B09B-8010639F2268
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Wi-Fi Direct Printing overview
@@ -78,7 +74,7 @@ Considerations
 
 N/A
 
- 
+ 
 
 MANUAL CONNECTION TO WI-FI DIRECT PRINT DEVICE THROUGH ADD PRINTER WIZARD
 Preconditions
@@ -114,7 +110,7 @@ Considerations
 
 N/A
 
- 
+ 
 
 ERROR CONNECTING TO PRINT DEVICE
 Preconditions
@@ -145,7 +141,7 @@ Considerations
 
 N/A
 
- 
+ 
 
 CONNECTING TO WI-FI DIRECT PRINT DEVICE WITH A REQUIRED PIN
 Preconditions
@@ -191,7 +187,7 @@ Considerations
 
 **Postcondition**: No print queue is set-up.
 
- 
+ 
 
 **Printing**
 
@@ -226,7 +222,7 @@ Considerations
 
 -   The queue is persisted on the Windows PC in the same way as all other print queues. The user is expected to be able to reconnect and print to the device regardless of how much time has lapsed between pairing and subsequent use. The only time the user should have to re-pair to print is if the printer has pruned the connection information and the user’s pairing information has been removed. Re-pairings should be minimized to provide a better user experience. This implies that the device must maintain in memory a number of pairings that is reasonable to maintain for the intended use. For example, a printer for home use may maintain 10-25 pairings. A printer for office use may maintain considerably more.
 
- 
+ 
 
 ## Considerations for Pairing
 
@@ -344,12 +340,10 @@ When Windows as the Group Owner negotiates the connection with the Wi-Fi Direct 
 
 To prevent a user from encountering this scenario, Windows Printing requires the Print device to be the group owner. Windows as the client on a P2P network is able to manage a dual-band scenario. Thus there is never a situation where the user can discover the printer but will be unable to pair due to their existing AP connection.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Wi-Fi%20Direct%20Printing%20Overview%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

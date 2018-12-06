@@ -2,14 +2,13 @@
 title: Storage card requirements
 description: This topic describes the APDU requirements for storage cards
 ms.assetid:
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Storage card requirements
 
-This section describes the general APDU command set requirements for For non-ISO14443-4 compliant cards (known as storage cards).
+This section describes the general APDU command set requirements for non-ISO14443-4 compliant cards (known as storage cards).
 
 ## General-Authenticate command
 
@@ -104,6 +103,7 @@ The following are required TLV data objects to be supported by the driver:
 The Read-Binary command is used to read data from the contactless NFC tag/card. The command is applicable only for storage cards (MIFARE Classic/UL, Felica, ISO15693 and Jewel/Topaz cards).
 
 ### Command format
+
 | Command     | Class | INS  | P1          | P2          | Lc                | Data In | Li              |
 |-------------|-------|------|-------------|-------------|-------------------|---------|-----------------|
 | Read-Binary | 0xFF  | 0xB0 | Address MSB | Address LSB | Length of Data In | Data    | Length expected |
@@ -147,6 +147,7 @@ The Read-Binary command is used to read data from the contactless NFC tag/card. 
 ## Transparent exchange command
 
 ### Command format
+
 | Command              | Class | INS  | P1   | P2   | Lc       | Data In         |
 |----------------------|-------|------|------|------|----------|-----------------|
 | General Authenticate | 0xFF  | 0xC2 | 0x00 | 0x01 | Variable | TLV Data Object | 
@@ -163,11 +164,13 @@ The following are the required TLV data objects for Transparent Exchange Command
 The Update-Binary command is used to write data to the contactless NFC tag/card. The command is applicable only for storage cards (MIFARE Classic/UL, Felica, ISO15693 and Jewel/Topaz cards). The format of the request and response for the command is as described below.
 
 ### Command format
+
 | Command       | Class | INS  | P1          | P2          | Lc                | Data In |
 |---------------|-------|------|-------------|-------------|-------------------|---------|
 | Update-Binary | 0xFF  | 0xD6 | Address MSB | Address LSB | Length of Data In | Data    |
 
 ### MIFARE family
+
 | Command        | CLA  | INS  | P1   | P2           | Le   |
 |----------------|------|------|------|--------------|------|
 | UL WRITE 4     | 0xFF | 0xD6 | 0x00 | 0x00 to 0x15 | 0x04 |
@@ -175,17 +178,20 @@ The Update-Binary command is used to write data to the contactless NFC tag/card.
 | CL 4k WRITE 16 | 0xFF | 0xB0 | 0x00 | 0x00 to 0xFF | 0x10 |
 
 ### Jewel family
+
 | Command  | CLA  | INS  | P1           | P2           | Le   |
 |----------|------|------|--------------|--------------|------|
 | WRITE1-E | 0xFF | 0xD6 | Block Number | Block Offset | 0x01 |
 | WRITE8-E | 0xFF | 0xD6 | Block Number | 0x00         | 0x08 |
 
 ### Felica family
+
 | Command | CLA  | INS  | P1   | P2   | Le                | Data In                                         |
 |---------|------|------|------|------|-------------------|-------------------------------------------------|
 | UPDATE  | 0xFF | 0xD6 | 0x00 | 0x00 | Length of Data In | Number of Service, Number of blocks, Block list |
 
 ### Response Format
+
 | Command | CLA  | INS  | P1           | P2   | Le  |
 |---------|------|------|--------------|------|-----|
 | WRITE   | 0xFF | 0xD6 | Block Number | 0x00 | 0x4 |

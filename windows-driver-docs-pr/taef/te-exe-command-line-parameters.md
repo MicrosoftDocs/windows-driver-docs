@@ -2,11 +2,8 @@
 title: Te.exe Command Options
 description: Te.exe Command Options
 ms.assetid: E9A9292D-FA30-410d-9322-BD0F321314F9
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Te.exe Command Options
@@ -86,7 +83,7 @@ Executes tests and removes potential blocking UI (for example, Windows Error Rep
 
 Lists the names of all the [test\_binaries](#testbinaries) and the classes and methods within them. If selection criteria is specified, lists only the names of those which meet the criteria.
 
-```
+```cpp
  te.exe test1.dll test2.dll /list
 
  WEX::UnitTests::Test1
@@ -100,7 +97,7 @@ Lists the names of all the [test\_binaries](#testbinaries) and the classes and m
   WEX::UnitTests::Test2::Example3
 ```
 
-```
+```cpp
  te.exe test1.dll test2.dll /select:@name=&#39;*Example2*&#39; /list
 
  WEX::UnitTests::Test1
@@ -114,7 +111,7 @@ Lists the names of all the [test\_binaries](#testbinaries) and the classes and m
 
 Lists the names and properties of all the test\_binaries and the classes and methods in them along with Setup and Teardown function names, if available. If selection criteria is specified, lists only the names of those which meet the criteria.
 
-```
+```cpp
  te.exe test1.dll test2.dll /listProperties
 
  WEX::UnitTests::Test1
@@ -130,7 +127,7 @@ Lists the names and properties of all the test\_binaries and the classes and met
    Setup: Test1Setup
    Teardown: Test1Teardown
    Property[ThreadingModel] = STA
-            
+
  WEX::UnitTests::Test2
   WEX::UnitTests::Test2::Example1
    Property[ThreadingModel] = MTA
@@ -140,7 +137,7 @@ Lists the names and properties of all the test\_binaries and the classes and met
    Property[ThreadingModel] = MTA
 ```
 
-```
+```cpp
  te.exe test1.dll test2.dll /select:@name=&#39;*Example2*&#39; /listProperties
 
  WEX::UnitTests::Test1
@@ -178,12 +175,11 @@ Defines a runtime parameter with parameter name=ParamName and parameter value=Pa
 
 You can grab x as one of several supported types in your test code. For example, here you can see us retrieving it as both an int and a WEX::Common::String:
 
-```
+```cpp
                 int x = 0;
                 String xString;
                 RuntimeParameters::TryGetValue(L"x", x);
                 RuntimeParameters::TryGetValue(L"x", xString);
-            
 ```
 
 For more information, please visit the [TAEF.Runtime Parameters](runtime-parameters.md) help page.
@@ -287,7 +283,7 @@ Sets a session time-out for the entire execution of Te.exe. If the time-out expi
 
 **Note:** The time-out value must be specified in the following format:
 
-```
+```cpp
 [Day.]Hour[:Minute[:Second[.FractionalSeconds]]] 
 ```
 
@@ -327,7 +323,7 @@ Sets a global test time-out for the entire execution of Te.exe. This value overr
 
 **Note:** The time-out value must be specified in the following format:
 
-```
+```cpp
 [Day.]Hour[:Minute[:Second[.FractionalSeconds]]] 
 ```
 
@@ -510,11 +506,10 @@ In 'stress' test mode, TAEF will run tests indefinitely, until Ctrl+C is entered
 
 For detailed information and other parameters supported in this mode, see the documentation [here](test-modes.md).
 
- 
 
- 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[taef\taef]:%20Te.exe%20Command%20Options%20%20RELEASE:%20%289/12/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
 
 
 

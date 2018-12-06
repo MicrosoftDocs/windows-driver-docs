@@ -5,17 +5,14 @@ ms.assetid: 6fa4a89c-f147-48bd-8fdc-562743f81bcd
 keywords:
 - Windows Sockets Direct WDK , operations
 - SAN service providers WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Windows Sockets Direct Component Operation
 
 
-## <a href="" id="ddk-windows-sockets-direct-component-operation-ng"></a>
+
 
 
 This sections describes Windows Sockets Direct operations, including the operation of the Windows Sockets switch, a SAN service provider, and the SAN service provider's associated proxy driver.
@@ -42,9 +39,9 @@ This section includes the following topics:
 
 [Handling Microsoft Extensions to Windows Sockets](handling-microsoft-extensions-to-windows-sockets.md)
 
- 
+ 
 
- 
+ 
 
 
 

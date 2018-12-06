@@ -1,13 +1,9 @@
 ---
 title: ESRT table definition
-author: windows-driver-content
 description: The pointer to the ESRT table is identified via its corresponding GUID in the EFI_CONFIGURATION_TABLE.
 ms.assetid: F332CCF3-AE6D-4B02-A63E-DB05910C8E6E
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # ESRT table definition
@@ -15,7 +11,7 @@ ms.technology: windows-devices
 
 The pointer to the ESRT table is identified via its corresponding GUID in the EFI\_CONFIGURATION\_TABLE.
 
-``` syntax
+```cpp
 #define EFI_SYSTEM_RESOURCE_TABLE_GUID   \
 { 0xb122a263, 0x3661, 0x4f68,  0x99, 0x29, 0x78, 0xf8, 0xb0, 0xd6, 0x21, 0x80  }
 ```
@@ -143,7 +139,7 @@ The following table describes the format of the ESRT table and the firmware reso
 </tbody>
 </table>
 
- 
+ 
 
 Core UEFI firmware should allocate and populate an ESRT configuration table containing one system resource entry for itself (system firmware). For illustrative purposes, in this guide core firmware will also create one additional entry representing a device that supports device firmware update using the firmware update package mechanism.
 
@@ -173,7 +169,7 @@ The first step then is to generate GUIDs to represent these two firmware resourc
 |                               | Last Attempt Version              | 1                         | The last device firmware version for which an update was attempted is version 1                                    |
 |                               | Last Attempt Status               | 0                         | The last device firmware update attempt was successful.                                                            |
 
- 
+ 
 
 The above ESRT example is used elsewhere in this documentation to walk through the firmware update process and describe Windows support for the update process as well as a supporting firmware implementation.
 
@@ -185,6 +181,5 @@ The above ESRT example is used elsewhere in this documentation to walk through t
 [Seamless crisis prevention and recovery](seamless-crisis-prevention-and-recovery.md)  
 [Firmware update status](firmware-update-status.md)  
 
---------------------
 
 

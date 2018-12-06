@@ -9,23 +9,36 @@ keywords:
 - copy protection WDK display
 - video copy protection WDK display
 - protected video WDK display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Supporting Output Protection Manager
 
 
-The [Output Protection Manager (OPM) device driver interface (DDI)](https://msdn.microsoft.com/library/windows/hardware/ff568627) enables the copy protection of video signals that are output by various connectors of the graphics adapter. To learn more about how Windows Vista protects the content that graphics adapters output, download the Output Content Protection document at the [Output Content Protection and Windows Vista](http://go.microsoft.com/fwlink/p/?linkid=204788) website.
+The Output Protection Manager (OPM) device driver interface (DDI) enables the copy protection of video signals that are output by various connectors of the graphics adapter. To learn more about how Windows Vista protects the content that graphics adapters output, download the Output Content Protection document at the [Output Content Protection and Windows Vista](https://download.microsoft.com/download/5/D/6/5D6EAF2B-7DDF-476B-93DC-7CF0072878E6/output_protect.doc) website.
 
 OPM is the successor to the [Certified Output Protection Protocol (COPP)](copp-processing.md) that the [Windows 2000 display driver model](windows-2000-display-driver-model-design-guide.md) provides. OPM supports all of COPP's features. For information about COPP's features, see [Introduction to COPP](introduction-to-copp.md). OPM also supports new features.
 
-The [OPM DDI](https://msdn.microsoft.com/library/windows/hardware/ff568627) is semantically similar to the [COPP DDI](https://msdn.microsoft.com/library/windows/hardware/ff540449) because OPM is essentially COPP 1.1 for the Windows Vista display driver model. However, the OPM DDI is much simpler than the COPP DDI because the OPM DDI consists of a set of functions while the COPP DDI is mapped through the DirectDraw and DirectX Video Acceleration (VA) DDI.
+## OPM Interface
+
+The **OPM DDI** is semantically similar to the [COPP DDI](sample-functions-for-copp.md) because OPM is essentially COPP 1.1 for the Windows Vista display driver model. However, the OPM DDI is much simpler than the COPP DDI because the OPM DDI consists of a set of functions while the COPP DDI is mapped through the DirectDraw and DirectX Video Acceleration (VA) DDI.
 
 If a display miniport driver supports the passing of protected commands, information, and status between applications and the driver, the Microsoft DirectX graphics kernel subsystem (*Dxgkrnl.sys*) can successfully open the driver's OPM DDI.
+
+A kernel-mode component that must use the OPM interface initiates a call to the display miniport driver's [DxgkDdiQueryInterface](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dispmprt/nc-dispmprt-dxgkddi_query_interface) function to retrieve the interface. Pointers to the OPM interface functions are returned in a [DXGK_OPM_INTERFACE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dispmprt/ns-dispmprt-_dxgk_opm_interface) structure that the Interface member of the [QUERY_INTERFACE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/video/ns-video-_query_interface) structure points to. This QUERY_INTERFACE is pointed to by the *QueryInterface* parameter in the DxgkDdiQueryInterface call.
+
+The following Output Protection Manager (OPM) interface functions are implemented by some display miniport drivers:
+
+* [DXGKDDI_OPM_GET_CERTIFICATE_SIZE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dispmprt/nc-dispmprt-dxgkddi_opm_get_certificate_size)
+* [DXGKDDI_OPM_GET_CERTIFICATE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dispmprt/nc-dispmprt-dxgkddi_opm_get_certificate)
+* [DXGKDDI_OPM_CREATE_PROTECTED_OUTPUT](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dispmprt/nc-dispmprt-dxgkddi_opm_create_protected_output)
+* [DXGKDDI_OPM_GET_RANDOM_NUMBER](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dispmprt/nc-dispmprt-dxgkddi_opm_get_random_number)
+* [DXGKDDI_OPM_SET_SIGNING_KEY_AND_SEQUENCE_NUMBERS](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dispmprt/nc-dispmprt-dxgkddi_opm_set_signing_key_and_sequence_numbers)
+* [DXGKDDI_OPM_GET_INFORMATION](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dispmprt/nc-dispmprt-dxgkddi_opm_get_information)
+* [DXGKDDI_OPM_GET_COPP_COMPATIBLE_INFORMATION](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dispmprt/nc-dispmprt-dxgkddi_opm_get_copp_compatible_information)
+* [DXGKDDI_OPM_CONFIGURE_PROTECTED_OUTPUT](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dispmprt/nc-dispmprt-dxgkddi_opm_configure_protected_output)
+* [DXGKDDI_OPM_DESTROY_PROTECTED_OUTPUT](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dispmprt/nc-dispmprt-dxgkddi_opm_destroy_protected_output)
 
 The following topics describe the new features of OPM and how to support and use the OPM DDI:
 
@@ -53,11 +66,10 @@ The following topics describe the new features of OPM and how to support and use
 
 [Implementation Tips and Requirements for OPM](implementation-tips-and-requirements-for-opm.md)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Supporting%20Output%20Protection%20Manager%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

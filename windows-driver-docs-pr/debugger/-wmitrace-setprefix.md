@@ -3,17 +3,14 @@ title: wmitrace.setprefix
 description: The wmitrace.setprefix extension specifies the trace message prefix that is prepended to the trace messages from this session. 
 ms.assetid: 8712af44-f231-48f6-97ac-56a1d737cd6b
 keywords: ["wmitrace.setprefix Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - wmitrace.setprefix
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !wmitrace.setprefix
@@ -21,7 +18,7 @@ api_type:
 
 The **!wmitrace.setprefix** extension specifies the trace message prefix that is prepended to the trace messages from this session. This extension allows you to change the prefix during the debugging session.
 
-```
+```dbgcmd
 !wmitrace.setprefix [+] PrefixVariables 
 !wmitrace.setprefix 
 ```
@@ -136,7 +133,7 @@ Each %n variable represents a parameter that is described in the following table
 </tbody>
 </table>
 
- 
+ 
 
 The symbol within exclamation marks is a conversion character that specifies the format and precision of the variable. For example, %8!04X! specifies the process ID formatted as a four-digit, unsigned, hexadecimal number.
 
@@ -158,7 +155,7 @@ This extension command sets the trace message prefix to the following format:
 
 As a result, the trace messages are prepended with the specified information in the specified format. The following code example is taken from a trace of the Tracedrv sample driver in the WDK.
 
-```
+```dbgcmd
 tracedrv_c258: TracedrvDispatchDeviceControl: 0af4.0c64: 07/25/2003-13:55:39.998:  IOCTL = 1
 ```
 
@@ -175,13 +172,13 @@ The *trace message prefix* consists of data about the trace message that is prep
 
 The default trace message prefix is as follows:
 
-```
+```dbgcmd
 [%9!d!]%8!04X!.%3!04X!::%4!s! [%1!s!]
 ```
 
 and produces the following prefix:
 
-```
+```dbgcmd
 [CPUNumber]ProcessID.ThreadID::SystemTime [ProviderDirectory] 
 ```
 
@@ -191,11 +188,10 @@ The prefix that you set by using this extension command affects only the debugge
 
 This extension is only useful during WPP software tracing, and earlier (legacy) methods of Event Tracing for Windows. Trace events that are produced by other manifested providers do not use trace message format (TMF) files, and therefore this extension does not affect them.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!wmitrace.setprefix%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

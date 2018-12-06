@@ -6,11 +6,8 @@ keywords:
 - mic array WDK audio
 - geometry descriptor WDK audio
 - microphone array WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Microphone Array Geometry Property
@@ -18,17 +15,17 @@ ms.technology: windows-devices
 
 In Windows Vista and later, support is provided for microphone arrays. In most situations, a single microphone embedded in a laptop or monitor does not capture sound very well. An array of microphones performs better to isolate a sound source and reject ambient noise and reverberation. The [**KSPROPERTY\_AUDIO\_MIC\_ARRAY\_GEOMETRY**](https://msdn.microsoft.com/library/windows/hardware/ff537289) property specifies the geometry of a microphone array. The property value, [**KSAUDIO\_MIC\_ARRAY\_GEOMETRY**](https://msdn.microsoft.com/library/windows/hardware/ff537087), describes the array type (linear, planar, and so on), the number of microphones in the array and other features.
 
-This topic describes how external USB microphone arrays can use the microphone array support provided with Windows Vista. An external USB microphone array must provide the parameters required to describe the geometry and other features of its array in response to a [GET\_MEM](http://go.microsoft.com/fwlink/p/?linkid=143724) request.
+This topic describes how external USB microphone arrays can use the microphone array support provided with Windows Vista. An external USB microphone array must provide the parameters required to describe the geometry and other features of its array in response to a [GET\_MEM](https://go.microsoft.com/fwlink/p/?linkid=143724) request.
 
 The USB microphone array uses a standard format to provide the geometry information. The Windows Vista USB audio class driver must use the same format when it reads the geometry information. For more information about the standard format, see [Microphone Array Geometry Descriptor Format](microphone-array-geometry-descriptor-format.md).
 
-An application can call [IPart::GetSubType](http://go.microsoft.com/fwlink/p/?linkid=143726) to retrieve information about a jack to determine if the device plugged into the jack is a microphone array. **IPart::GetSubType** returns a pin-category GUID that represents the input jack type. If the device that is plugged in is a microphone array, the returned GUID is equal to KSNODETYPE\_MICROPHONE\_ARRAY. The application can also help you determine whether you plugged your microphone array into the wrong jack. In the latter scenario, the returned pin-category GUID is either for a different device or it indicates that there is no device plugged into the microphone jack. For more information about the pin category GUIDs, see [Pin Category Property](pin-category-property.md).
+An application can call [IPart::GetSubType](https://go.microsoft.com/fwlink/p/?linkid=143726) to retrieve information about a jack to determine if the device plugged into the jack is a microphone array. **IPart::GetSubType** returns a pin-category GUID that represents the input jack type. If the device that is plugged in is a microphone array, the returned GUID is equal to KSNODETYPE\_MICROPHONE\_ARRAY. The application can also help you determine whether you plugged your microphone array into the wrong jack. In the latter scenario, the returned pin-category GUID is either for a different device or it indicates that there is no device plugged into the microphone jack. For more information about the pin category GUIDs, see [Pin Category Property](pin-category-property.md).
 
 After an application discovers a microphone array that is plugged into the correct input jack, the next step is to determine the geometry of the array. There are three basic geometries: *linear*, *planar*, and *three dimensional (3-D)*. The geometry information also provides details such as the frequency range and x-y-z coordinates of each microphone.
 
 The following code example shows a KSAUDIO\_MIC\_ARRAY\_GEOMETRY structure that an audio driver uses to describe an external USB microphone array:
 
-```
+```cpp
 KSAUDIO_MIC_ARRAY_GEOMETRY mic_Array =
 {
  0x100,// usVersion (1.0)
@@ -48,7 +45,7 @@ In the preceding code example, the ar\_mic\_Coordinates variable is an array of 
 
 The following code example shows how the ar\_mic\_Coordinates array is used to describe the geometric locations of the microphones in the microphone array as described in the preceding code example:
 
-```
+```cpp
 KsMicCoord ar_mic_Coordinates[] =
 {
  // Array microphone 1
@@ -78,7 +75,7 @@ To modify the Micarray MSVAD sample driver to provide array geometry information
 
 First, navigate to Src\\Audio\\Msvad\\Micarray and locate the Mintopo.cpp file. Edit the property handler section in Mintopo.cpp so that the KSAUDIO\_MIC\_ARRAY\_GEOMETRY structure contains information about the microphone array. The specific section of code that you must modify is shown in the following code example:
 
-```
+```cpp
 // Modify this portion of PropertyHandlerMicArrayGeometry
 PKSAUDIO_MIC_ARRAY_GEOMETRY pMAG = (PKSAUDIO_MIC_ARRAY_GEOMETRY)PropertyRequest->Value;
 
@@ -131,14 +128,12 @@ After you complete the file modifications, complete the following procedure to b
 
 7.  Open the **Sound** applet in Control Panel and click the **Recording** tab to verify that you can see the virtual microphone array you just installed.
 
-For information about how to develop an application to discover microphone arrays, see Appendix C of [How to Build and Use Microphone Arrays for Windows Vista](http://go.microsoft.com/fwlink/p/?linkid=306613).
+For information about how to develop an application to discover microphone arrays, see Appendix C of [How to Build and Use Microphone Arrays for Windows Vista](https://go.microsoft.com/fwlink/p/?linkid=306613).
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Microphone%20Array%20Geometry%20Property%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

@@ -6,17 +6,14 @@ keywords:
 - task offload WDK TCP/IP transport , large packet segmentation
 - large TCP packet segmentation WDK networking
 - segmentation of large TCP packets WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Offloading the Segmentation of Large TCP Packets
 
 
-## <a href="" id="ddk-offloading-the-segmentation-of-large-tcp-packets-ng"></a>
+
 
 
 NDIS miniport drivers can offload the segmentation of large TCP packets that are larger than the maximum transmission unit (MTU) of the network medium. A NIC that supports the segmentation of large TCP packets must also be able to:
@@ -119,9 +116,9 @@ In addition to the previous LSO requirements, LSOV2-capable miniport drivers mus
 -   Support TCP options, IP options, and IP extension headers.
 
 -   When a send operation is complete, the miniport driver must set the **LsoV2TransmitComplete.Reserved** member of the  [**NDIS_TCP_LARGE_SEND_OFFLOAD_NET_BUFFER_LIST_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff567882) structure to zero and the **LsoV2TransmitComplete.Type** member to NDIS_TCP_LARGE_SEND_OFFLOAD_V2_TYPE. 
- 
+ 
 
- 
+ 
 
 
 

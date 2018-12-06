@@ -1,12 +1,8 @@
 ---
 Description: This topic explains how to test the interoperability of USB Type-C enabled systems and Windows.
 title: USB Type-C manual interoperability test procedures
-author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # USB Type-C manual interoperability test procedures
@@ -156,7 +152,7 @@ Repeat this test for other available system power states: Sleep (S3), Hibernate 
 
 **Note**  Use pwrtest.exe, included in the Windows Driver Kit (WDK), to simplify the transition to power states. For more information, see [PwrTest](https://msdn.microsoft.com/library/windows/hardware/ff550682).
 
- 
+ 
 
 ## <a href="" id="ft4"></a>FT Case 4: Selective Suspend
 
@@ -188,7 +184,7 @@ Applies to: Dock
 
 **Note**  Additional information on dock identification can be found in the [2015 WinHEC slide presentation](http://go.microsoft.com/fwlink/p/?LinkId=623309) (approximately slide 26 in section entitled: Identifying device as a dock).
 
- 
+ 
 
 ## <a href="" id="ft6"></a>FT Case 6: Alternate Mode Negotiation
 
@@ -202,7 +198,7 @@ Applies to: System, dock, device
 3.  Connect an alternate mode-enabled USB Type-C device to an alternate mode-enabled USB Type-C port on the system; make sure both the device and the system share at least one alternate mode in common and that the device is powered or connected to an external power source, if necessary.
     **Note**  For Type-C dongles/adapters, ensure that an appropriate peripheral is powered on and connected to the non-Type-C end of the dongle/adapter.
 
-     
+     
 
 4.  Confirm that the alternate mode device is added in **Device Manager**. In some cases, the alternate mode device may show up as a Monitor device or another bus device. For more information, see [How to confirm device addition](#add).
 5.  Disconnect the device and observe changes in **Device Manager**. The hub and device should no longer appear in **Device Manager**. For more information, see [How to confirm device removal](#remove).
@@ -290,7 +286,7 @@ Applies to: System, dock, device
 
 **Note**  During the test, validate there is no glitching from devices connected via the USB Type-C A/V dongle such as video distortion or audio drop off.
 
- 
+ 
 
 ## <a href="" id="ft-plan"></a>Functional system interoperability test plan
 
@@ -487,12 +483,10 @@ Provide these details:
 -   The list must specify the tests that have failed or passed.
 -   Systems, devices, docks, or hubs that were used for the tests. Include make, model, and Web site so that we can get additional information, if needed.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20USB%20Type-C%20manual%20interoperability%20test%20procedures%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

@@ -2,11 +2,8 @@
 title: Setting a Device Interface Property Value
 description: Setting a Device Interface Property Value
 ms.assetid: 44cef4e1-9fda-44fb-b37f-342099b5f7a0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Setting a Device Interface Property Value
@@ -32,9 +29,9 @@ To set the value of a [device interface property](https://msdn.microsoft.com/lib
 
 If the call to [**SetupDiSetDeviceInterfaceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff552158) succeeds, **SetupDiSetDeviceInterfaceProperty** sets the device class property and returns **TRUE**. If the function call fails, **SetupDiSetDeviceInterfaceProperty** returns **FALSE** and a call to [GetLastError](http://go.microsoft.com/fwlink/p/?linkid=169416) will return the logged error code.
 
- 
+ 
 
- 
+ 
 
 
 

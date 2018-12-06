@@ -3,17 +3,14 @@ title: ndiskd.ndisref
 description: The ndiskd.ndisref extension displays a debug log of a tracked reference count.
 ms.assetid: 6860A567-1017-4184-B8DF-157467360FB9
 keywords: ["ndiskd.ndisref Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - ndiskd.ndisref
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !ndiskd.ndisref
@@ -21,7 +18,7 @@ api_type:
 
 The **!ndiskd.ndisref** extension displays a debug log of a tracked reference count.
 
-```
+```console
 !ndiskd.ndisref [-handle <x>] [-tagtype <str>] [-stacks] [-tag <str>] [-refdebug] 
 ```
 
@@ -52,7 +49,7 @@ Examples
 
 The following example passes the handle of an NDIS miniport driver to the **!ndiskd.ndisref** extension to display the refcount block for that driver. First, run [**!ndiskd.minidriver**](-ndiskd-minidriver.md) with no parameters to see a list of all miniport drivers on the system. In the example output below, look for the handle for the kdnic driver, ffffdf801418d650.
 
-```
+```console
 3: kd> !ndiskd.minidriver
     ffffdf8015a98380 - tunnel
     ffffdf801418d650 - kdnic
@@ -60,7 +57,7 @@ The following example passes the handle of an NDIS miniport driver to the **!ndi
 
 Using the miniport driver's handle, enter the **!ndiskd.ndisref -handle** command to see the refcount block for this miniport driver. The following example has the middle of the refcount block excised for brevity.
 
-```
+```console
 3: kd> !ndiskd.ndisref ffffdf801418d650
 
 
@@ -109,11 +106,10 @@ REFCOUNT BLOCK
 
 [**!ndiskd.minidriver**](-ndiskd-minidriver.md)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!ndiskd.ndisref%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

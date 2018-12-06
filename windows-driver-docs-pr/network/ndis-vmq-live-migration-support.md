@@ -2,30 +2,27 @@
 title: NDIS VMQ Live Migration Support
 description: NDIS VMQ Live Migration Support
 ms.assetid: 6872594a-35f8-4fbf-b764-22b286fb940c
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # NDIS VMQ Live Migration Support
 
 
-## <a href="" id="ddk-virtual-machine-queue-overview-nr"></a>
+
 
 
 To support live migration, a virtual machine (VM) can be paused at any instruction or pending I/O boundary. That is, the VM might not finish pending receive requests. So, the network virtual service provider (VSP) returns all of the received packets to the underlying network adapter that the VM did not return.
 
 **Note**  In Hyper-V, a child partition is also known as a VM.
 
- 
+ 
 
 When the VM is restarted on another host, the network VSP on the new host handles the receive packets that the resumed VM returns and does not pass them down to the new underlying in miniport driver. After the migration is complete, the receive queue that was associated with the VM is freed and it can be reused for another VM.
 
 **Note**  The new network adapter might not support VMQ.
 
- 
+ 
 
 When NDIS requests a miniport driver to free a VMQ receive queue, it follows these steps:
 
@@ -41,9 +38,9 @@ When NDIS requests a miniport driver to free a VMQ receive queue, it follows the
 
 For more information about queue states, see [NDIS VM Queue States](ndis-virtual-machine-queue-states.md).
 
- 
+ 
 
- 
+ 
 
 
 

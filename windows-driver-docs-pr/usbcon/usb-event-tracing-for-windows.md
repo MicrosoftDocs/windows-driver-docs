@@ -1,12 +1,8 @@
 ---
 Description: This topic provides information for client driver developers about the tracing and logging features for Universal Serial Bus (USB).
 title: USB Event Tracing for Windows
-author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # USB Event Tracing for Windows
@@ -89,39 +85,37 @@ Windows 8 provides a USB driver stack to support USB 3.0 devices. The Microsoft
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Capture and view USB traces with Microsoft Message Analyzer](capture-and-view-ing-usb-traces-with-microsoft-message-analyzer-.md)</p></td>
+<td><p><a href="capture-and-view-ing-usb-traces-with-microsoft-message-analyzer-.md" data-raw-source="[Capture and view USB traces with Microsoft Message Analyzer](capture-and-view-ing-usb-traces-with-microsoft-message-analyzer-.md)">Capture and view USB traces with Microsoft Message Analyzer</a></p></td>
 <td><p>You can use Microsoft Message Analyzer (MMA) to capture and view live USB traces, or view an existing trace.</p></td>
 </tr>
 <tr class="even">
-<td><p>[How to capture a USB event trace with Logman](how-to-capture-a-usb-event-trace.md)</p></td>
-<td><p>This topic provides information about using the [Logman](http://go.microsoft.com/fwlink/p/?linkid=617153) tool to capture a USB ETW event trace. Logman is a tracing tool that is built into Windows. You can use Logman to capture events into an event trace log file.</p></td>
+<td><p><a href="how-to-capture-a-usb-event-trace.md" data-raw-source="[How to capture a USB event trace with Logman](how-to-capture-a-usb-event-trace.md)">How to capture a USB event trace with Logman</a></p></td>
+<td><p>This topic provides information about using the <a href="http://go.microsoft.com/fwlink/p/?linkid=617153" data-raw-source="[Logman](http://go.microsoft.com/fwlink/p/?linkid=617153)">Logman</a> tool to capture a USB ETW event trace. Logman is a tracing tool that is built into Windows. You can use Logman to capture events into an event trace log file.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Using activity ID GUIDs in USB ETW traces](using-usb-etw.md)</p></td>
+<td><p><a href="using-usb-etw.md" data-raw-source="[Using activity ID GUIDs in USB ETW traces](using-usb-etw.md)">Using activity ID GUIDs in USB ETW traces</a></p></td>
 <td><p>This topic provides information about Activity ID GUIDs, how to add those GUIDs in the event trace providers, and view them in Netmon.</p></td>
 </tr>
 <tr class="even">
-<td><p>[USB ETW traces in Netmon](viewing-etw-traces-in-netmon.md)</p></td>
+<td><p><a href="viewing-etw-traces-in-netmon.md" data-raw-source="[USB ETW traces in Netmon](viewing-etw-traces-in-netmon.md)">USB ETW traces in Netmon</a></p></td>
 <td><p>You can view USB ETW event traces using Microsoft Network Monitor, also referred to as Netmon. Netmon does not parse the trace automatically. It requires USB ETW parsers. USB ETW parsers are text files, written in Network Monitor Parser Language (NPL), that describe the structure of USB ETW event traces. The parsers also define USB-specific columns and filters. These parsers make Netmon the best tool for analyzing USB ETW traces.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Using Xperf with USB ETW](using-xperf-with-usb-etw.md)</p></td>
+<td><p><a href="using-xperf-with-usb-etw.md" data-raw-source="[Using Xperf with USB ETW](using-xperf-with-usb-etw.md)">Using Xperf with USB ETW</a></p></td>
 <td><p>This topic describes how to use Xperf with Netmon to analyze USB trace data.</p></td>
 </tr>
 <tr class="even">
-<td><p>[USB ETW and Power Management](usb-etw-and-power-management.md)</p></td>
+<td><p><a href="usb-etw-and-power-management.md" data-raw-source="[USB ETW and Power Management](usb-etw-and-power-management.md)">USB ETW and Power Management</a></p></td>
 <td><p>This topic provides a brief overview about using ETW to examine USB selective suspend state and identifying system energy efficiency problems by using the Windows PowerCfg utility.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 [Using USB ETW](using-usb-etw.md)  
 [USB Event Tracing for Windows](usb-event-tracing-for-windows.md)  
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20USB%20Event%20Tracing%20for%20Windows%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

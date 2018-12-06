@@ -3,17 +3,14 @@ title: .thread (Set Register Context)
 description: The .thread command specifies which thread will be used for the register context.
 ms.assetid: 577276b7-a6c4-427e-ada1-10dbb62ebd5c
 keywords: ["Set Register Context (.thread) command", "context, Set Register Context (.thread) command", "registers, Set Register Context (.thread) command", "call stack, Set Register Context (.thread) command", ".thread (Set Register Context) Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - .thread (Set Register Context)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .thread (Set Register Context)
@@ -21,7 +18,7 @@ api_type:
 
 The **.thread** command specifies which thread will be used for the register context.
 
-```
+```dbgcmd
 .thread [/p [/r] ] [/P] [/w] [Thread]
 ```
 
@@ -68,7 +65,7 @@ The address of the thread. If this is omitted or zero, the thread context is res
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -87,7 +84,7 @@ This command does not actually change the current thread. In other words, extens
 
 Here is an example. Use the [**!process**](-process.md) extension to find the address of the desired thread. (In this case, **!process 0 0** is used to list all processes, then **!process** is used a second time to list all the threads for the desired process.)
 
-```
+```dbgcmd
 kd> !process 0 0
 **** NT ACTIVE PROCESS DUMP ****
 PROCESS fe5039e0  SessionId: 0  Cid: 0008    Peb: 00000000  ParentCid: 0000
@@ -122,7 +119,7 @@ PROCESS ffaa5280  SessionId: 0  Cid: 0120    Peb: 7ffdf000  ParentCid: 01e0
 
 Now use the **.thread** command with the address of the desired thread. This sets the register context and enables you to examine the important registers and the call stack for this thread.
 
-```
+```dbgcmd
 kd> .thread ffaa43a0
 Using context of thread ffaa43a0
 
@@ -140,11 +137,10 @@ fd581c38 8042d61c ntoskrnl!KiSwapThread+0xc5
 00001c60 00000000 ntoskrnl!KeWaitForSingleObject+0x1a1
 ```
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20.thread%20%28Set%20Register%20Context%29%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

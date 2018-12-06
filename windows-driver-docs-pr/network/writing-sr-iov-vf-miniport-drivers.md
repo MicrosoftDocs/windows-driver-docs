@@ -2,11 +2,8 @@
 title: Writing SR-IOV VF Miniport Drivers
 description: Writing SR-IOV VF Miniport Drivers
 ms.assetid: 15CA65DD-AAAB-4EDA-8743-8A3E63E50190
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Writing SR-IOV VF Miniport Drivers
@@ -24,11 +21,11 @@ This section includes the following topics:
 
 **Note**  For information on how to write a miniport driver for a PCIe Physical Function (PF) of the SR-IOV network adapter, see [Writing SR-IOV PF Miniport Drivers](writing-sr-iov-pf-miniport-drivers.md).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

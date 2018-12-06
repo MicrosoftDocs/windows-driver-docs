@@ -2,18 +2,15 @@
 title: IRQL annotations for drivers
 description: When the driver code has IRQL annotations, the code analysis tools can make a better inference about the range of levels at which a function should run and can more accurately find errors.
 ms.assetid: E4C1D490-BE06-483A-90E4-6F3223E269A3
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # IRQL annotations for drivers
 
 When the driver code has IRQL annotations, the code analysis tools can make a better inference about the range of levels at which a function should run and can more accurately find errors. For example, you can add annotations that specify the maximum IRQL at which a function can be called; if a function is called at a higher IRQL, the code analysis tools can identify the inconsistencies.
 
-All driver developers must consider interrupt request levels (IRQLs). An IRQL is an integer between 0 and 31; PASSIVE\_LEVEL, DISPATCH\_LEVEL, and APC\_LEVEL are normally referred to symbolically, and the others by their numeric values. Raising and lowering the IRQL should follow strict stack discipline. A function must always return at the same IRQL at which it was called. The IRQL values must be non-decreasing in the stack. And a function cannot lower the IRQL without first raising it. IRQL annotations are intended to help enforce those rules.
+All driver developers must consider interrupt request levels (IRQLs). An IRQL is an integer between 0 and 31; PASSIVE\_LEVEL, DISPATCH\_LEVEL, and APC\_LEVEL are normally referred to symbolically, and the others by their numeric values. Raising and lowering the IRQL should follow strict stack discipline. A function should aim to return at the same IRQL at which it was called. The IRQL values must be non-decreasing in the stack. And a function cannot lower the IRQL without first raising it. IRQL annotations are intended to help enforce those rules.
 
 When the driver code has IRQL annotations, the code analysis tools can make a better inference about the range of levels at which a function should run and can more accurately find errors. For example, you can add annotations that specify the maximum IRQL at which a function can be called; if a function is called at a higher IRQL, the code analysis tools can identify the inconsistencies.
 
@@ -37,7 +34,7 @@ You can use the annotations in the following table to indicate the correct IRQL 
 |\_IRQL_always_function_max_(_value_)|The IRQL value is the maximum value to which the function can raise the IRQL.|
 |\_IRQL_requires_same_|The annotated function must enter and exit at the same IRQL. The function can change the IRQL, but it must restore the IRQL to its original value before exiting.|
 |\_IRQL_uses_cancel_|The annotated parameter is the IRQL value that should be restored by a DRIVER_CANCEL callback function. In most cases, use the IRQL_is_cancel annotation instead.|
- 
+ 
 
 ## <span id="Annotations_for_DRIVER_CANCEL"></span><span id="annotations_for_driver_cancel"></span><span id="ANNOTATIONS_FOR_DRIVER_CANCEL"></span>Annotations for DRIVER\_CANCEL
 
@@ -114,11 +111,10 @@ typedef DRIVER_CANCEL *PDRIVER_CANCEL;
 
 [SAL 2.0 Annotations for Drivers](sal-2-annotations-for-windows-drivers.md)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20IRQL%20annotations%20for%20drivers%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

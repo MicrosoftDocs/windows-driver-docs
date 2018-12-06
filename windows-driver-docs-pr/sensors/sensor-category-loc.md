@@ -53,11 +53,8 @@ api_name:
 - SENSOR_DATA_TYPE_VERTICAL_DILUTION_OF_PRECISION
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 01/04/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # SENSOR\_CATEGORY\_LOCATION
@@ -103,7 +100,7 @@ This category includes the following platform-defined sensor types.
 <td><span id="SENSOR_TYPE_LOCATION_LOOKUP"></span><span id="sensor_type_location_lookup"></span>
 <strong>SENSOR_TYPE_LOCATION_LOOKUP</strong>
 {3B2EAE4A-72CE-436D-96D2-3C5B8570E987}</td>
-<td><p>Lookup sensors, such as those that provide information based on the user's IP address.</p></td>
+<td><p>Lookup sensors, such as those that provide information based on the user&#39;s IP address.</p></td>
 </tr>
 <tr class="odd">
 <td><span id="SENSOR_TYPE_LOCATION_OTHER"></span><span id="sensor_type_location_other"></span>
@@ -364,7 +361,7 @@ This category includes the following platform-defined data fields.
 <td><p><strong>VT_VECTOR|VT_UI1</strong></p>
 <p>Counted array that contains the azimuth of each satellite in view.</p>
 <p>Data for vector types is always serialized as <strong>VT_UI1</strong> (an array of unsigned, 1-byte characters). This data field actually contains each value as an IEEE 8-byte real value (<strong>VT_ R8</strong>). Use -1 as a placeholder for empty values.</p>
-<p>For information about working with arrays, see [Retrieving Vector Types](https://msdn.microsoft.com/library/windows/desktop/ee264327).</p></td>
+<p>For information about working with arrays, see <a href="https://msdn.microsoft.com/library/windows/desktop/ee264327" data-raw-source="[Retrieving Vector Types](https://msdn.microsoft.com/library/windows/desktop/ee264327)">Retrieving Vector Types</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><span id="SENSOR_DATA_TYPE_SATELLITES_IN_VIEW_ELEVATION"></span><span id="sensor_data_type_satellites_in_view_elevation"></span>
@@ -373,7 +370,7 @@ This category includes the following platform-defined data fields.
 <td><p><strong>VT_VECTOR|VT_UI1</strong></p>
 <p>Counted array that contains the elevation of each satellite in view.</p>
 <p>Data for vector types is always serialized as <strong>VT_UI1</strong> (an array of unsigned, 1-byte characters). This data field actually contains each value as an IEEE 8-byte real value (<strong>VT_R8</strong>). Use -91 as a placeholder for empty values.</p>
-<p>For information about working with arrays, see [Retrieving Vector Types](https://msdn.microsoft.com/library/windows/desktop/ee264327).</p></td>
+<p>For information about working with arrays, see <a href="https://msdn.microsoft.com/library/windows/desktop/ee264327" data-raw-source="[Retrieving Vector Types](https://msdn.microsoft.com/library/windows/desktop/ee264327)">Retrieving Vector Types</a>.</p></td>
 </tr>
 <tr class="even">
 <td><span id="SENSOR_DATA_TYPE_SATELLITES_IN_VIEW_ID"></span><span id="sensor_data_type_satellites_in_view_id"></span>
@@ -382,7 +379,7 @@ This category includes the following platform-defined data fields.
 <td><p><strong>VT_VECTOR|VT_UI1</strong></p>
 <p>Counted array that contains the ID of each satellite in view.</p>
 <p>Data for vector types is always serialized as <strong>VT_UI1</strong> (an array of unsigned, 1-byte characters). This data field actually contains each value as a 4-byte unsigned integer (<strong>VT_UI4</strong>).</p>
-<p>For information about working with arrays, see [Retrieving Vector Types](https://msdn.microsoft.com/library/windows/desktop/ee264327).</p></td>
+<p>For information about working with arrays, see <a href="https://msdn.microsoft.com/library/windows/desktop/ee264327" data-raw-source="[Retrieving Vector Types](https://msdn.microsoft.com/library/windows/desktop/ee264327)">Retrieving Vector Types</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><span id="SENSOR_DATA_TYPE_SATELLITES_IN_VIEW_PRNS"></span><span id="sensor_data_type_satellites_in_view_prns"></span>
@@ -391,7 +388,7 @@ This category includes the following platform-defined data fields.
 <td><p><strong>VT_VECTOR|VT_UI1</strong></p>
 <p>Counted array that contains pseudorandom noise codes for satellites in view.</p>
 <p>Data for vector types is always serialized as <strong>VT_UI1</strong> (an array of unsigned, 1-byte characters). This data field actually contains each value as a 4-byte unsigned integer (<strong>VT_UI4</strong>). Use zero (0) as a placeholder for empty values.</p>
-<p>For information about working with arrays, see [Retrieving Vector Types](https://msdn.microsoft.com/library/windows/desktop/ee264327).</p></td>
+<p>For information about working with arrays, see <a href="https://msdn.microsoft.com/library/windows/desktop/ee264327" data-raw-source="[Retrieving Vector Types](https://msdn.microsoft.com/library/windows/desktop/ee264327)">Retrieving Vector Types</a>.</p></td>
 </tr>
 <tr class="even">
 <td><span id="SENSOR_DATA_TYPE_SATELLITES_USED_PRNS_AND_CONSTELLATIONS"></span><span id="sensor_data_type_satellites_used_prns_and_constellations"></span>
@@ -400,7 +397,7 @@ This category includes the following platform-defined data fields.
 <td><p><strong>VT_VECTOR|VT_UI2</strong></p>
 <p>Counted array that contains pseudorandom noise codes for satellites that are used in a solution.</p>
 <p>Data for vector types is always serialized as <strong>VT_UI2</strong> (an array of unsigned, 2-byte characters). This data field must contain each value as a 4-byte unsigned integer (<strong>VT_UI4</strong>). Use zero (0) as a placeholder for empty values.</p>
-<p>For information about working with arrays, see [Retrieving Vector Types](https://msdn.microsoft.com/library/windows/desktop/ee264327).</p></td>
+<p>For information about working with arrays, see <a href="https://msdn.microsoft.com/library/windows/desktop/ee264327" data-raw-source="[Retrieving Vector Types](https://msdn.microsoft.com/library/windows/desktop/ee264327)">Retrieving Vector Types</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><span id="SENSOR_DATA_TYPE_SATELLITES_IN_VIEW_STN_RATIO"></span><span id="sensor_data_type_satellites_in_view_stn_ratio"></span>
@@ -410,7 +407,7 @@ This category includes the following platform-defined data fields.
 <p>Counted array that contains the signal-to-noise ratio for satellites in view.</p>
 <p>Data for vector types is always serialized as <strong>VT_UI1</strong> (an array of unsigned, 1-byte characters). This data field actually contains each value as an IEEE 8-byte real value (<strong>VT_R8</strong>). Use zero (0) as a placeholder for empty values.</p>
 <p>This property is required and must be supported by all GPS devices.</p>
-<p>For information about working with arrays, see [Retrieving Vector Types](https://msdn.microsoft.com/library/windows/desktop/ee264327).</p></td>
+<p>For information about working with arrays, see <a href="https://msdn.microsoft.com/library/windows/desktop/ee264327" data-raw-source="[Retrieving Vector Types](https://msdn.microsoft.com/library/windows/desktop/ee264327)">Retrieving Vector Types</a>.</p></td>
 </tr>
 <tr class="even">
 <td><span id="SENSOR_DATA_TYPE_SATELLITES_USED_COUNT"></span><span id="sensor_data_type_satellites_used_count"></span>
@@ -426,7 +423,7 @@ This category includes the following platform-defined data fields.
 <td><p><strong>VT_VECTOR|VT_UI1</strong></p>
 <p>Counted array that contains pseudorandom noise codes for satellites that are used in a solution.</p>
 <p>Data for vector types is always serialized as <strong>VT_UI1</strong> (an array of unsigned, 1-byte characters). This data field must contain each value as a 4-byte unsigned integer (<strong>VT_UI4</strong>). Use zero (0) as a placeholder for empty values.</p>
-<p>For information about working with arrays, see [Retrieving Vector Types](https://msdn.microsoft.com/library/windows/desktop/ee264327).</p></td>
+<p>For information about working with arrays, see <a href="https://msdn.microsoft.com/library/windows/desktop/ee264327" data-raw-source="[Retrieving Vector Types](https://msdn.microsoft.com/library/windows/desktop/ee264327)">Retrieving Vector Types</a>.</p></td>
 </tr>
 <tr class="even">
 <td><span id="SENSOR_DATA_TYPE_SPEED_KNOTS"></span><span id="sensor_data_type_speed_knots"></span>
@@ -459,11 +456,10 @@ This category includes the following platform-defined data fields.
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bsensors\sensors%5D:%20SENSOR_CATEGORY_LOCATION%20%20RELEASE:%20%2811/18/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

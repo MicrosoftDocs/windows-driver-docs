@@ -2,11 +2,8 @@
 title: Container IDs for PnP-X Devices
 description: Container IDs for PnP-X Devices
 ms.assetid: 6a1ea4e9-e672-4f37-ab26-932591fe4da4
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Container IDs for PnP-X Devices
@@ -36,15 +33,15 @@ If a PnP-X device does not specify a container ID in the DPWS device metadata or
 
     **Note**  In Windows 10, the PnP manager will always generate a container ID for DPWS devices by using the above algorithms, even if a container ID has been specified in the device metadata.
 
-     
+     
 
 For devices which operate on a single bus or PnP-X protocol, the PnP-X generated container ID is sufficient.
 
 Multiprotocol devices may want to specify a container ID. In a multiprotocol device, the same container ID would be shared on each protocol to allow Windows to group all instances of the device into one device container. In this manner, a container ID for the device can be specified through both DPWS and UPnP.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -14,11 +14,8 @@ keywords:
 - calibrating timestamps WDK TCP chimney offload
 - clocks WDK TCP chimney offload
 - connection timestamps WDK TCP chimney offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Generating and Using Timestamps
@@ -40,9 +37,9 @@ This section includes:
 
 [Examples of Timestamp Processing](examples-of-timestamp-processing.md)
 
- 
+ 
 
- 
+ 
 
 
 

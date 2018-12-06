@@ -7,11 +7,8 @@ keywords:
 - chimney offload WDK networking , buffer pools
 - buffer pools WDK TCP chimney offload
 - allocating buffer pools
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Allocating Buffer Pools
@@ -25,9 +22,9 @@ Note that each allocated NET\_BUFFER\_LIST structure must have only one NET\_BUF
 
 For more information about creating buffer pools, see [Miniport Driver Buffer Management](miniport-driver-buffer-management.md).
 
- 
+ 
 
- 
+ 
 
 
 

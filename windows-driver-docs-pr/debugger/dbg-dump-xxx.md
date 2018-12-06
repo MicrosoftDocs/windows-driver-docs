@@ -2,11 +2,7 @@
 title: DBG\_DUMP\_XXX
 description: DBG\_DUMP\_XXX
 ms.assetid: d34ecf95-3aea-4850-a2de-76f239e8b8a0
-ms.author: windowsdriverdev
 ms.date: 12/07/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: ["DBG_DUMP_XXX Windows Debugging"]
 topic_type:
 - apiref
@@ -16,6 +12,7 @@ api_location:
 - wdbgexts.h
 api_type:
 - HeaderDef
+ms.localizationpriority: medium
 ---
 
 # DBG\_DUMP\_XXX
@@ -90,7 +87,7 @@ The following flags can be present.
 </tr>
 <tr class="odd">
 <td align="left"><p>DBG_DUMP_READ_PHYSICAL</p></td>
-<td align="left"><p>The symbol's value will be read directly from the target's physical memory.</p></td>
+<td align="left"><p>The symbol&#39;s value will be read directly from the target&#39;s physical memory.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>DBG_DUMP_FUNCTION_FORMAT</p></td>
@@ -103,7 +100,7 @@ The following flags can be present.
 </tbody>
 </table>
 
- 
+ 
 
 In addition, the result of the macro DBG\_DUMP\_RECUR\_LEVEL(*Level*) can be added to the bit-set to specify how deep into structures to recurse. *Level* can be a number between 0 and 15.
 
@@ -130,11 +127,10 @@ Requirements
 
 [**Ioctl**](https://msdn.microsoft.com/library/windows/hardware/ff551084)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20DBG_DUMP_XXX%20%20RELEASE:%20%2811/30/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

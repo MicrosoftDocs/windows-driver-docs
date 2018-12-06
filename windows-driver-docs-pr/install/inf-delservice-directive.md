@@ -10,11 +10,8 @@ api_name:
 - INF DelService Directive
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # INF DelService Directive
@@ -22,11 +19,11 @@ ms.technology: windows-devices
 
 **Note**  If you are building a universal or mobile driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
- 
+ 
 
 A **DelService** directive is used in a [***DDInstall*.Services**](inf-ddinstall-services-section.md) section to remove one or more previously installed device/driver services from the target computer.
 
-```
+```cpp
 [DDInstall.Services] 
  
 DelService=ServiceName[,[flags][,[EventLogType][,EventName]]
@@ -74,9 +71,9 @@ However, by default, event-log information supplied by a particular device drive
 
 [**DelReg**](inf-delreg-directive.md)
 
- 
+ 
 
- 
+ 
 
 
 

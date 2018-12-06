@@ -2,11 +2,8 @@
 title: Device Installation Application Started through AutoRun
 description: Device Installation Application Started through AutoRun
 ms.assetid: 9b520d82-2293-4936-99fe-30bf6753ba9f
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Device Installation Application Started through AutoRun
@@ -32,9 +29,9 @@ However, this method also has the following disadvantages:
 
 -   The distribution media must be AutoRun-compatible, such as a CD or DVD. The [**INF HardwareId directive**](inf-hardwareid-directive.md) does not provide any capability for downloading an application installer from the Internet.
 
- 
+ 
 
- 
+ 
 
 
 

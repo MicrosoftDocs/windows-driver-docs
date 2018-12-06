@@ -2,11 +2,8 @@
 title: Introduction to the NDIS PacketDirect Provider Interface
 description: This section provides an introduction to the NDIS PacketDirect Provider Interface (PDPI)
 ms.assetid: E85ED51E-BDE5-43BE-93BA-19F214670B8F
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Introduction to the NDIS PacketDirect Provider Interface
@@ -36,7 +33,7 @@ If a PD client does not understand how to process a packet or receives a control
 
 **Important**  There can be one PD provider and one PD client per net adapter. Therefore, there can be multiple PD clients and PD providers on a single system.
 
- 
+ 
 
 The PD client has control over the resources that are allocated to PD in the system. In cases of high network traffic, the PD client is responsible for minimizing its workload so that the OS can be responsive to other workloads.
 
@@ -55,9 +52,9 @@ The PDCI allows first-party Windows services/applications (e.g., Load-balancer, 
 
 [PacketDirect Provider Interface (PDPI) Reference](https://msdn.microsoft.com/library/windows/hardware/dn931858)
 
- 
+ 
 
- 
+ 
 
 
 

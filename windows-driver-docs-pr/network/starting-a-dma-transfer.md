@@ -9,11 +9,8 @@ keywords:
 - DMA transfers WDK NetDMA , starting
 - NetDMA WDK networking , starting transfers
 - starting DMA transfers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Starting a DMA Transfer
@@ -21,9 +18,9 @@ ms.technology: windows-devices
 
 **Note**  The NetDMA interface is not supported in Windows 8 and later.
 
- 
+ 
 
-## <a href="" id="ddk-starting-a-dma-transfer-ng"></a>
+
 
 
 The NetDMA interface calls a NetDMA provider driver's [**ProviderStartDma**](https://msdn.microsoft.com/library/windows/hardware/ff570404) function to start a dynamic memory access (DMA) transfer. The NetDMA interface can call *ProviderStartDma* at any time after a DMA channel is allocated. The NetDMA interface must call *ProviderStartDma* for the first DMA transfer after a channel reset or stop, or after the DMA channel is first allocated.
@@ -46,9 +43,9 @@ The source of the DMA transfer is a linked list of DMA descriptors. The **NextDe
 
 After the initial DMA transfer is started, the NetDMA interface can call the [**ProviderAppendDma**](https://msdn.microsoft.com/library/windows/hardware/ff570394) function to append additional descriptors to the transfer. For more information about appending descriptors to a DMA transfer, see [Appending DMA Descriptors to a DMA Channel](appending-dma-descriptors-to-a-dma-channel.md).
 
- 
+ 
 
- 
+ 
 
 
 

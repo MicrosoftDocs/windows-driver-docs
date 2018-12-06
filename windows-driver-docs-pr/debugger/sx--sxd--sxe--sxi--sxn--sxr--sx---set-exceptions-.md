@@ -3,17 +3,14 @@ title: sx, sxd, sxe, sxi, sxn, sxr, sx- (Set Exceptions)
 description: The sx* commands control the action that the debugger takes when an exception occurs in the application that is being debugged, or when certain events occur.
 ms.assetid: fdb5059f-e7d9-4e14-aa3d-030e72c30732
 keywords: ["sx, sxd, sxe, sxi, sxn, sxr, sx- (Set Exceptions) Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - sx, sxd, sxe, sxi, sxn, sxr, sx- (Set Exceptions)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # sx, sxd, sxe, sxi, sxn, sxr, sx- (Set Exceptions)
@@ -21,7 +18,7 @@ api_type:
 
 The **sx***\** commands control the action that the debugger takes when an exception occurs in the application that is being debugged, or when certain events occur.
 
-```
+```dbgcmd
 sx 
 
 sx{e|d|i|n} [-c "Cmd1"] [-c2 "Cmd2"] [-h] {Exception|Event|*} 
@@ -34,10 +31,10 @@ sxr
 ## <span id="ddk_cmd_set_exceptions_dbg"></span><span id="DDK_CMD_SET_EXCEPTIONS_DBG"></span>Parameters
 
 
-<span id="-c__Cmd1_"></span><span id="-c__cmd1_"></span><span id="-C__CMD1_"></span>**-c "***Cmd1***"**  
+<span id="-c__Cmd1_"></span><span id="-c__cmd1_"></span><span id="-C__CMD1_"></span>**-c "**<em>Cmd1</em>**"**  
 Specifies a command that is executed if the exception or event occurs. This command is executed when the first chance to handle this exception occurs, regardless of whether this exception breaks into the debugger. You must enclose the *Cmd1* string in quotation marks. This string can include multiple commands, separated by semicolons. The space between the -c and the quoted command string is optional.
 
-<span id="-c2_Cmd2_"></span><span id="-c2_cmd2_"></span><span id="-C2_CMD2_"></span>**-c2"***Cmd2***"**  
+<span id="-c2_Cmd2_"></span><span id="-c2_cmd2_"></span><span id="-C2_CMD2_"></span>**-c2"**<em>Cmd2</em>**"**  
 Specifies a command that is executed if the exception or event occurs and is not handled on the first chance. This command is executed when the second chance to handle this exception occurs, regardless of whether this exception breaks into the debugger. You must enclose the *Cmd2* string in quotation marks. This string can include multiple commands, separated by semicolons. The space between the -c2 and the quoted command string is optional.
 
 <span id="_______-h______"></span><span id="_______-H______"></span> **-h**   
@@ -49,7 +46,7 @@ Specifies the exception number that the command acts on, in the current radix.
 <span id="_______Event______"></span><span id="_______event______"></span><span id="_______EVENT______"></span> *Event*   
 Specifies the event that the command acts on. These events are identified by short abbreviations. For a list of the events, see [Controlling Exceptions and Events](controlling-exceptions-and-events.md).
 
-<span id="______________"></span> **\***   
+<span id="______________"></span> **\\***   
 Affects all exceptions that are not otherwise explicitly named for **sx**. For a list of explicitly named exceptions, see [Controlling Exceptions and Events](controlling-exceptions-and-events.md).
 
 ### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
@@ -75,7 +72,7 @@ Affects all exceptions that are not otherwise explicitly named for **sx**. For a
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -136,7 +133,7 @@ When you are setting the break status, these commands have the following effects
 </tbody>
 </table>
 
- 
+ 
 
 When you are setting the handling status, these commands have the following effects:
 
@@ -167,7 +164,7 @@ When you are setting the handling status, these commands have the following effe
 </tbody>
 </table>
 
- 
+ 
 
 You can use the **-h** option together with exceptions, not events. Using this option with **ch**, **bpe**, or **sse** sets the handling status for **hc**, **bpec**, or **ssec**, respectively. If you use the -h option with any other event, it has no effect.
 
@@ -175,7 +172,7 @@ Using the **-c** or **-c2** options with **hc**, **bpec**, or **ssec** associate
 
 In the following example, the **sxe** command is used to set the break status of access violation events to break on the first chance, and to set the first-chance command that will be executed at that point to **r eax**. Then the **sx-** command is used to alter the first-chance command to **r ebx**, without changing the handling status. Finally, a portion of the **sx** output is shown, indicating the current settings for access violation events:
 
-```
+```dbgcmd
 0:000> sxe -c "r eax" av 
 
 0:000> sx- -c "r ebx" av 
@@ -186,11 +183,10 @@ In the following example, the **sxe** command is used to set the break status of
   . . .  
 ```
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20sx,%20sxd,%20sxe,%20sxi,%20sxn,%20sxr,%20sx-%20%28Set%20Exceptions%29%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

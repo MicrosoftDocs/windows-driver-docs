@@ -1,16 +1,12 @@
 ---
 title: Storage Class Driver's Internal Routines
-author: windows-driver-content
 description: Storage Class Driver's Internal Routines
 ms.assetid: 44017d1d-2866-4b5e-87ea-69cbc6611c25
 keywords:
 - storage class drivers WDK , internal routines
 - class drivers WDK storage , internal routines
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Storage Class Driver's Internal Routines
@@ -35,11 +31,10 @@ This section describes internal routines that a writer of a storage class driver
 
 [Storage Class Driver's RemoveDevice Routine](storage-class-driver-s-removedevice-routine.md)
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

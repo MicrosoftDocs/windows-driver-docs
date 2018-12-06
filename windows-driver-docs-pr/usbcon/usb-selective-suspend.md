@@ -1,12 +1,8 @@
 ---
 Description: This section provides information about choosing the correct mechanism for the selective suspend feature.
 title: USB Selective Suspend
-author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # USB Selective Suspend
@@ -20,10 +16,16 @@ The USB selective suspend feature allows the hub driver to suspend an individual
 
 There are two different mechanisms for selectively suspending a USB device: idle request IRPs ([**IOCTL\_INTERNAL\_USB\_SUBMIT\_IDLE\_NOTIFICATION**](https://msdn.microsoft.com/library/windows/hardware/ff537270)) and set power IRPs ([**IRP\_MN\_SET\_POWER**](https://msdn.microsoft.com/library/windows/hardware/ff551744)). The mechanism to use depends on the operating system and the type of device: composite or non-composite.
 
-## <a href="" id="------selecting-a-selective-suspend-mechanism"></a> Selecting a Selective Suspend Mechanism
+##  Selecting a Selective Suspend Mechanism
 
 
 Client drivers, for an interface on a composite device, that enable the interface for remote wakeup with a wait wake IRP (IRP\_MN\_WAIT\_WAKE), must use the idle request IRP ([**IOCTL\_INTERNAL\_USB\_SUBMIT\_IDLE\_NOTIFICATION**](https://msdn.microsoft.com/library/windows/hardware/ff537270)) mechanism to selectively suspend a device.
+
+For information about remote wakeup, see:
+
+[Remote Wakeup of USB Devices](https://docs.microsoft.com/windows-hardware/drivers/usbcon/remote-wakeup-of-usb-devices)
+
+[Overview of Wait/Wake Operation](https://docs.microsoft.com/windows-hardware/drivers/kernel/overview-of-wait-wake-operation)
 
 The version of the Windows operating system determines the way drivers for non-composite devices enable selective suspend.
 
@@ -40,7 +42,7 @@ The following table shows the scenarios that require the use of the idle request
 | Windows Server 2003 | Must use idle request IRP                    | Must use idle request IRP                        | Must use idle request IRP   |
 | Windows XP          | Must use idle request IRP                    | Must use idle request IRP                        | Must use idle request IRP   |
 
- 
+
 
 This section explains the Windows selective suspend mechanism and includes the following topics:
 
@@ -64,7 +66,7 @@ The following restrictions apply to the use of idle request IRPs:
 The following WDM example code illustrates the steps that a device driver takes to send a USB idle request IRP. Error checking has been omitted in the following code example.
 
 1.  Allocate and initialize the [**IOCTL\_INTERNAL\_USB\_SUBMIT\_IDLE\_NOTIFICATION**](https://msdn.microsoft.com/library/windows/hardware/ff537270) IRP
-    ```
+    ```cpp
     irp = IoAllocateIrp (DeviceContext->TopOfStackDeviceObject->StackSize, FALSE);
     nextStack = IoGetNextIrpStackLocation (irp);
     nextStack->MajorFunction = IRP_MJ_INTERNAL_DEVICE_CONTROL;
@@ -74,7 +76,7 @@ The following WDM example code illustrates the steps that a device driver takes 
     ```
 
 2.  Allocate and initialize the idle request information structure (USB\_IDLE\_CALLBACK\_INFO).
-    ```
+    ```cpp
     idleCallbackInfo = ExAllocatePool (NonPagedPool,
     sizeof(struct _USB_IDLE_CALLBACK_INFO));
     idleCallbackInfo->IdleCallback = IdleNotificationCallback;
@@ -88,24 +90,24 @@ The following WDM example code illustrates the steps that a device driver takes 
 
     The client driver must associate a completion routine with the idle request IRP. For more information about the idle notification completion routine and example code, see "USB Idle Request IRP Completion Routine".
 
-    ```
+    ```cpp
     IoSetCompletionRoutine (irp,
      IdleNotificationRequestComplete,
        DeviceContext,
        TRUE,
        TRUE,
        TRUE);
-     
+
     ```
 
 4.  Store the idle request in the device extension.
-    ```
+    ```cpp
     deviceExtension->PendingIdleIrp = irp;
-     
+
     ```
 
 5.  Send the Idle request to the parent driver.
-    ```
+    ```cpp
     ntStatus = IoCallDriver (DeviceContext->TopOfStackDeviceObject, irp);
     ```
 
@@ -129,12 +131,12 @@ The client driver cancels the idle IRP by calling [**IoCancelIrp**](https://msdn
 </thead>
 <tbody>
 <tr class="odd">
-<td>The client driver has canceled the idle IRP and the USB driver stack has not called the "USB Idle Notification Callback Routine".</td>
+<td>The client driver has canceled the idle IRP and the USB driver stack has not called the &quot;USB Idle Notification Callback Routine&quot;.</td>
 <td><p>The USB driver stack completes the idle IRP. Because the device never left the <strong>D0</strong>, the driver does not change the device state.</p></td>
 </tr>
 <tr class="even">
 <td>The client driver has canceled the idle IRP, the USB driver stack has called the USB idle notification callback routine, and it has not yet returned.</td>
-<td><p>It is possible that the USB idle notification callback routine is invoked even though the client driver has invoked cancellation on the IRP. In this case, the client driver's callback routine must still power down the device by sending the device to a lower power state synchronously.</p>
+<td><p>It is possible that the USB idle notification callback routine is invoked even though the client driver has invoked cancellation on the IRP. In this case, the client driver&#39;s callback routine must still power down the device by sending the device to a lower power state synchronously.</p>
 <p>When the device is in the lower power state, the client driver can then send a <strong>D0</strong> request.</p>
 <p>Alternatively, the driver can wait for the USB driver stack to complete the idle IRP and then send the <strong>D0</strong> IRP.</p>
 <p>If the callback routine is unable to put the device into a low power state due to insufficient memory to allocate a power IRP, it should cancel the idle IRP and exit immediately. The idle IRP will not be completed until the callback routine has returned; therefore, the callback routine should not block waiting for the canceled idle IRP to complete.</p></td>
@@ -152,7 +154,7 @@ The client driver cancels the idle IRP by calling [**IoCancelIrp**](https://msdn
 
 In many cases, a bus driver might call a driver's idle request IRP completion routine. If this occurs, a client driver must detect why the bus driver completed the IRP. The returned status code can provide this information. If the status code is not STATUS\_POWER\_STATE\_INVALID, the driver should put its device in **D0** if the device is not already in **D0**. If the device is still idle, the driver can submit another idle request IRP.
 
-**Note**  The idle request IRP completion routine should not block waiting for a **D0** power request to complete. The completion routine can be called in the context of a power IRP by the hub driver, and blocking on another power IRP in the completion routine can lead to a deadlock.
+**Note**  The idle request IRP completion routine should not block waiting for a **D0** power request to complete. The completion routine can be called in the context of a power IRP by the hub driver, and blocking on another power IRP in the completion routine can lead to a deadlock.
 
 The following list indicates how a completion routine for an idle request should interpret some common status codes:
 
@@ -192,7 +194,7 @@ The following list indicates how a completion routine for an idle request should
 </tbody>
 </table>
 
- 
+
 
 The following code example shows a sample implementation for the idle request completion routine.
 
@@ -225,7 +227,7 @@ IdleNotificationRequestComplete(
     PUSB_IDLE_CALLBACK_INFO idleCallbackInfo;
 
     ntStatus = Irp->IoStatus.Status;
-    
+
     if(!NT_SUCCESS(ntStatus) && ntStatus != STATUS_NOT_SUPPORTED) 
     {
 
@@ -233,7 +235,7 @@ IdleNotificationRequestComplete(
 
         switch(ntStatus) 
         {
-            
+
         case STATUS_INVALID_DEVICE_REQUEST:
 
             //Invalid request.
@@ -265,7 +267,7 @@ IdleNotificationRequestComplete(
 
         }
 
- 
+
         // If IRP completes with error, issue a SetD0
 
         //Increment the I/O count because
@@ -312,7 +314,6 @@ IdleNotificationRequestComplete_Exit:
 
     return STATUS_MORE_PROCESSING_REQUIRED;
 }
-
 ```
 
 ## USB Idle Notification Callback Routine
@@ -401,7 +402,7 @@ Alternatively, you can enable or disable selective suspend by setting the value 
 
 For instance, the following lines in Usbport.inf disable selective suspend for a Hydra OHCI controller:
 
-```
+```cpp
 [OHCI_NOSS.AddReg.NT]
 HKR,,"HcDisableSelectiveSuspend",0x00010001,1
 ```
@@ -411,7 +412,5 @@ Client drivers should not try to determine whether selective suspend is enabled 
 ## Related topics
 [USB Power Management](usb-power-management.md)  
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20USB%20Selective%20Suspend%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

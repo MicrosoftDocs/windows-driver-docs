@@ -2,17 +2,14 @@
 title: Shared Memory in Receive Buffers
 description: Shared Memory in Receive Buffers
 ms.assetid: 3e4d0534-3cbd-40df-b7c1-4f2c15bcd757
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Shared Memory in Receive Buffers
 
 
-## <a href="" id="ddk-virtual-machine-queue-overview-nr"></a>
+
 
 
 This section describes the layout of the shared memory in VMQ receive buffers.For more information about using the buffers in receive indications, see [VMQ Receive Path](vmq-receive-path.md).
@@ -31,11 +28,11 @@ Use the [**NET\_BUFFER\_SHARED\_MEM\_NEXT\_SEGMENT**](https://msdn.microsoft.com
 
 **Note**  Starting with NDIS 6.30, splitting packet data into separate lookahead buffers is no longer supported. Starting with Windows Server 2012, the overlying protocol driver will not set the **NDIS\_RECEIVE\_QUEUE\_PARAMETERS\_LOOKAHEAD\_SPLIT\_REQUIRED** flag in the **Flags** member of the [**NDIS\_RECEIVE\_QUEUE\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff567211) structure.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

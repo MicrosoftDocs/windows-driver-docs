@@ -4,17 +4,14 @@ description: Querying a Connection-Oriented Miniport Driver
 ms.assetid: 9e9926f6-cf90-48af-885f-59725721948d
 keywords:
 - connection-oriented drivers WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Querying a Connection-Oriented Miniport Driver
 
 
-## <a href="" id="ddk-querying-a-connection-oriented-miniport-driver-ng"></a>
+
 
 
 To query information objects that a connection-oriented miniport driver maintains, a bound protocol calls [**NdisCoOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff561711) and passes an [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure that specifies the object (OID) that is being queried and that provides a buffer into which NDIS eventually writes the requested information. The call to **NdisCoOidRequest** causes NDIS to call the miniport driver's [*MiniportCoOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff559362) function, which returns the requested information to NDIS. *MiniportCoOidRequest* can complete synchronously or asynchronously with a call to [**NdisCoOidRequestComplete**](https://msdn.microsoft.com/library/windows/hardware/ff561716).
@@ -65,9 +62,9 @@ A miniport driver must never use the NDIS\_MAC\_OPTION\_RESERVED flag, which is 
 
 For more information, see [OIDs for Connection-Oriented Call Managers and Clients](https://msdn.microsoft.com/library/windows/hardware/ff569067) and [General Objects](https://msdn.microsoft.com/library/windows/hardware/ff546510).
 
- 
+ 
 
- 
+ 
 
 
 

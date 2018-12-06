@@ -9,11 +9,8 @@ api_name:
 - wscn ScannerStateReason
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # ScannerStateReason element
@@ -24,7 +21,7 @@ The optional **ScannerStateReason** element specifies one piece of information a
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ScannerStateReason>
   text
 </wscn:ScannerStateReason>
@@ -99,7 +96,7 @@ Required. One of the following values:
 </tbody>
 </table>
 
- 
+ 
 
 ## Child elements
 
@@ -120,7 +117,7 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ScannerStateReasons</strong>](scannerstatereasons.md)</p></td>
+<td><p><a href="scannerstatereasons.md" data-raw-source="[&lt;strong&gt;ScannerStateReasons&lt;/strong&gt;](scannerstatereasons.md)"><strong>ScannerStateReasons</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -134,16 +131,15 @@ The WSD Scan Service must support the values that represent conditions that are 
 
 You can extend the allowed values, but there are implications when you extend this list on a client. The client typically localizes the [**ScannerStateReasons**](scannerstatereasons.md) value (as with other string variable values) to the language of the end user, so the client will not recognize a vendor extension value. However, the client can display the value that is received directly. This value should be in English, so some end users might not understand the value. Alternatively, the Scan Service can use the general **AttentionRequired** value and then explain the problem on the scanner console, which the user will see when they are at the scanner.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ScannerStateReasons**](scannerstatereasons.md)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bimage\image%5D:%20ScannerStateReason%20element%20%20RELEASE:%20%2811/8/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

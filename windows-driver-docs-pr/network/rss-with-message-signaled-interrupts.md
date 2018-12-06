@@ -8,17 +8,14 @@ keywords:
 - message-signaled interrupts WDK networking , RSS
 - MSIs WDK networking , RSS
 - MSI-X WDK networking , RSS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # RSS with Message Signaled Interrupts
 
 
-## <a href="" id="ddk-rss-with-message-signaled-interrupts-ng"></a>
+
 
 
 Miniport drivers can support message signaled interrupts (MSIs) to improve RSS performance. MSIs enable the NIC to request an interrupt on the CPU that will process the received data. For more information about NDIS support for MSI, see [NDIS MSI-X](ndis-msi-x.md).
@@ -52,9 +49,9 @@ The following process repeats for each interrupt:
     1.  Builds receive descriptors for all of the received buffers in its queue and indicates the data up the driver stack. For more information, see [Indicating RSS Receive Data](indicating-rss-receive-data.md).
     2.  Enables interrupts for the current CPU. This interrupt is complete and the process starts again. Note that no atomic operation is required to track the progress of other DPCs.
 
- 
+ 
 
- 
+ 
 
 
 

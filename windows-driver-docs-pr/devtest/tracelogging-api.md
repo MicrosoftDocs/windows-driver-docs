@@ -2,11 +2,8 @@
 title: TraceLogging API
 description: TraceLogging API
 ms.assetid: AE93DD45-05D7-4E7A-B086-B40A6FA0904B
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # TraceLogging API
@@ -36,27 +33,26 @@ TraceLogging is built on ETW and is compatible with existing tools. Providers th
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[TraceLogging for kernel-mode drivers and components](tracelogging-for-kernel-mode-drivers-and-components.md)</p></td>
-<td align="left"><p>This topic describes how to use the [TraceLogging](https://msdn.microsoft.com/library/windows/desktop/dn904636) API from within kernel-mode drivers and components.</p></td>
+<td align="left"><p><a href="tracelogging-for-kernel-mode-drivers-and-components.md" data-raw-source="[TraceLogging for kernel-mode drivers and components](tracelogging-for-kernel-mode-drivers-and-components.md)">TraceLogging for kernel-mode drivers and components</a></p></td>
+<td align="left"><p>This topic describes how to use the <a href="https://msdn.microsoft.com/library/windows/desktop/dn904636" data-raw-source="[TraceLogging](https://msdn.microsoft.com/library/windows/desktop/dn904636)">TraceLogging</a> API from within kernel-mode drivers and components.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[TraceLogging Examples](tracelogging-examples.md)</p></td>
+<td align="left"><p><a href="tracelogging-examples.md" data-raw-source="[TraceLogging Examples](tracelogging-examples.md)">TraceLogging Examples</a></p></td>
 <td align="left"><p>The source code in this topic demonstrates how to use TraceLogging.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[How to fix TraceLogging build errors](how-to-fix-tracelogging-build-errors.md)</p></td>
+<td align="left"><p><a href="how-to-fix-tracelogging-build-errors.md" data-raw-source="[How to fix TraceLogging build errors](how-to-fix-tracelogging-build-errors.md)">How to fix TraceLogging build errors</a></p></td>
 <td align="left"><p>This topic describes some common build errors and how to resolve them.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20TraceLogging%20API%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

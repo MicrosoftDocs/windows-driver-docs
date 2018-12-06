@@ -3,17 +3,14 @@ title: dl (Display Linked List)
 description: The dl command displays a LIST_ENTRY or SINGLE_LIST_ENTRY linked list.
 ms.assetid: fbf03e78-d4b3-4dd9-904b-3f44a1a86cff
 keywords: ["dl (Display Linked List) Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - dl (Display Linked List)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # dl (Display Linked List)
@@ -21,7 +18,7 @@ api_type:
 
 The **dl** command displays a LIST\_ENTRY or SINGLE\_LIST\_ENTRY linked list.
 
-```
+```dbgcmd
 dl[b] Address MaxCount Size
 ```
 
@@ -63,7 +60,7 @@ Size of each element. This is the number of consecutive ULONG\_PTRs that will be
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -82,11 +79,10 @@ If the list loops back on itself, the dump will stop. If a null pointer is encou
 
 If you want to execute some command for each element of the list, use the [**!list**](-list.md) extension.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20dl%20%28Display%20Linked%20List%29%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

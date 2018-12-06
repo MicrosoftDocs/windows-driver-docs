@@ -2,11 +2,9 @@
 title: Get drivers signed by Microsoft for multiple Windows versions
 description: How to get a driver signed by Microsoft for multiple versions of Windows
 ms.assetid: 519384F5-986C-4109-8C91-4352DEFF46F9
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 04/20/2017
+ms.localizationpriority: medium
 ---
 
 # Get drivers signed by Microsoft for multiple Windows versions
@@ -23,7 +21,7 @@ There are two ways to make a dashboard submission apply to Windows 10 and earli
 2.  As an alternative to HLK and HCK testing, you can [cross-sign](https://msdn.microsoft.com/library/windows/hardware/dn170454.aspx) your driver yourself and submit it to the dashboard for [attestation signing](attestation-signing-a-kernel-driver-for-public-release.md) so that it also works on Windows 10. This is more complicated, but still a valid option. But it’s important to note that a submission signed this way will not work on Windows Server 2016. For more information about how to attestation sign a driver, see [Attestation signing a kernel driver for public release](attestation-signing-a-kernel-driver-for-public-release.md).
     **Important**  You must still use [Hardware Dev Center (Sysdev)](dashboard-services.md) to attestation sign a driver until driver signing is available through the new Windows Hardware Dev Center dashboard.
 
-     
+     
 
 This topic will provide some background info about the dashboard for context, then walk through the process for using the HLK/HCK.
 
@@ -130,10 +128,11 @@ If the driver had been signed by attestation, then the OID would end with a 1:
 
 ## Related topics
 
-   *  [Create a new hardware submission](create-a-new-hardware-submission.md)
-   *  [Managing hardware submissions in the Windows Hardware Dev Center dashboard](manage-your-hardware-submissions.md)
-   *  [Driver flighting](driver-flighting.md)
+- [Create a new hardware submission](create-a-new-hardware-submission.md)
 
- 
+- [Managing hardware submissions in the Windows Hardware Dev Center dashboard](manage-your-hardware-submissions.md)
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bhw_dashboard\hw_dashboard%5D:%20How%20to%20get%20a%20driver%20signed%20by%20Microsoft%20for%20multiple%20versions%20of%20Windows%20%20RELEASE:%20%281/3/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+- [Driver flighting](driver-flighting.md)
+
+ 
+

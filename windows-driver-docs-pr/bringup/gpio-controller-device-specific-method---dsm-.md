@@ -1,13 +1,9 @@
 ---
 title: GPIO controller Device-Specific Method (_DSM)
-author: windows-driver-content
 description: To support a variety of device-class-specific communications between the general-purpose I/O (GPIO) driver stack in Windows and the platform firmware, Microsoft defines a Device-Specific Method (_DSM) that can be included under a GPIO controller in the ACPI namespace.
 ms.assetid: 2891A78C-8C4F-4FE4-AB69-402F04DFA885
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # GPIO controller Device-Specific Method (\_DSM)
@@ -30,7 +26,7 @@ The GUID for the GPIO controller \_DSM method is defined to be:
 ## Function 0
 
 
-Function 0 of every \_DSM is a query function that returns the set of supported function indexes, and is always required. For the definition of Function 0, see section 9.14.1, "\_DSM (Device Specific Method)", in the [ACPI 5.0 specification](http://www.acpi.info).
+Function 0 of every \_DSM is a query function that returns the set of supported function indexes, and is always required. For the definition of Function 0, see section 9.14.1, "\_DSM (Device Specific Method)", in the [ACPI 5.0 specification](https://www.uefi.org/specifications).
 
 ## Function 1
 
@@ -71,7 +67,7 @@ For example, if an emulated ActiveBoth pin is connected to a pushbutton device, 
 
 The following ASL code example identifies a set of GPIO pins that have initial polarity of ActiveHigh.
 
-```
+```asl
 //
 // _DSM - Device-Specific Method
 //
@@ -146,11 +142,10 @@ Function(_DSM,{BuffObj, PkgObj, IntObj},{BuffObj, IntObj, IntObj, PkgObj})
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

@@ -4,17 +4,14 @@ description: Porting Protocol Driver OID Request Handling to CoNDIS 6.0
 ms.assetid: d5f0b700-775d-4eb5-ac7a-01385be71a0d
 keywords:
 - porting OID requests WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Porting Protocol Driver OID Request Handling to CoNDIS 6.0
 
 
-## <a href="" id="ddk-porting-protocol-driver-oid-request-handling-to-condis-6-0-nd"></a>
+
 
 
 In NDIS 6.0, the [**NdisCoOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff561711) function replaces the NDIS 5.x [**NdisCoRequest**](https://msdn.microsoft.com/library/windows/hardware/ff551877) function, and the [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure replaces the [**NDIS\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff557179) structure.
@@ -31,9 +28,9 @@ The [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware
 
 For more information about OID requests in a protocol driver, see [CoNDIS Protocol Driver OID Requests](condis-protocol-driver-oid-requests.md).
 
- 
+ 
 
- 
+ 
 
 
 

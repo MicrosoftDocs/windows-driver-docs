@@ -2,11 +2,8 @@
 title: Roadmap to Develop MB Miniport Drivers
 description: Roadmap to Develop MB Miniport Drivers
 ms.assetid: 3ef6e899-22dc-4293-80cc-d786b03c6b29
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Roadmap to Develop MB Miniport Drivers
@@ -48,9 +45,9 @@ To create an MB miniport driver, follow these steps:
 
 These are the basic steps. Additional steps might be necessary based on the needs of your individual miniport driver.
 
- 
+ 
 
- 
+ 
 
 
 

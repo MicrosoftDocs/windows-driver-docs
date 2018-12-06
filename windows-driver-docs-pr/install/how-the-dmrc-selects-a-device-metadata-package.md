@@ -2,11 +2,8 @@
 title: How the DMRC Selects a Device Metadata Package
 description: How the DMRC Selects a Device Metadata Package
 ms.assetid: dbedc995-520a-4b54-8613-d5a7810ab99c
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # How the DMRC Selects a Device Metadata Package
@@ -16,7 +13,7 @@ When the Devices and Printers or Device Stage user interfaces are opened, the op
 
 **Note**  If the DMRC recently downloaded a metadata package for a device, it uses the cached metadata package for the device instead of searching the WMIS server for a newer package. For more information, see [How the DMRC Determines When to Search the WMIS Server](how-the-dmrc-determines-when-to-search-the-wmis-server.md).
 
- 
+ 
 
 The DMRC uses the following metadata XML elements, which are specified in the package, to select the appropriate package for a device. The order of these XML elements reflects the priority that the DMRC uses to select a metadata package:
 
@@ -44,7 +41,7 @@ The following points are relevant to the selection algorithm that is used by the
 
 -   If the DMRC selects a metadata package that is based on hardware IDs, it uses the same ranking of hardware IDs that the operating system uses during driver installation. The DMRC ranks more-specific hardware IDs larger than less-specific hardware IDs. For example, the following hardware IDs are listed in ranking order:
 
-    ```
+    ```cpp
     <HardwareID>DOID:USB\VID_XXXX&PID_YYYY&REV_0000</HardwareID>
     <HardwareID>DOID:USB\VID_XXXX&PID_YYYY</HardwareID>
     ```
@@ -59,9 +56,9 @@ The following points are relevant to the selection algorithm that is used by the
 
 For more information about the device metadata XML schema and elements, see [Device Metadata Schema Reference](https://msdn.microsoft.com/library/windows/hardware/ff541452).
 
- 
+ 
 
- 
+ 
 
 
 

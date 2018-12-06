@@ -1,13 +1,9 @@
 ---
 title: EFI_USB_BUS_SPEED
-author: windows-driver-content
 description: EFI_USB_BUS_SPEED
 ms.assetid: 2888cff6-db12-47ea-866f-de218e2b08e5
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # EFI\_USB\_BUS\_SPEED
@@ -18,7 +14,7 @@ Is enumeration contains values used to indicate the bus speed.
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef enum _EFI_USB_BUS_SPEED 
 {
     UsbBusSpeedUnknown = 0,
@@ -53,11 +49,10 @@ Super speed.
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

@@ -1,19 +1,15 @@
 ---
 title: Basic Scanning for Film Scanners
-author: windows-driver-content
 description: Basic Scanning for Film Scanners
 ms.assetid: ca25c14d-120e-4e53-9d57-ba5663536bae
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Basic Scanning for Film Scanners
 
 
-## <a href="" id="ddk-basic-scanning-for-film-scanners-si"></a>
+
 
 
 A WIA application enumerates the top-level items in the scanner item tree to determine the supported features of the scanner. The application then uses the top level item as the scanning source. For example, flatbed scanner items are used for scanning from the flatbed, and feeder Items are used for scanning from the document feeder.
@@ -63,12 +59,10 @@ The driver normally performs the following operations when it uses the scanner's
 
 The WIA properties that are located on the film scanner item should be used by the driver as settings to be applied to the film scanning part of the scanner before the scan. The WIA application is required to always trust the headers of the data that is returned by the WIA driver. For example, the scanner has determined that it cannot scan the specified image width and needs to round up the value. The driver should update the image headers with the updated width information so that the application has the proper data. The WIA driver should always update the WIA property set with the actual data information that is returned from the device.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bimage\image%5D:%20Basic%20Scanning%20for%20Film%20Scanners%20%20RELEASE:%20%288/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

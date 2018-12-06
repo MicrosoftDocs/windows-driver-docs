@@ -2,11 +2,8 @@
 title: Miniport Driver Types by Operating System
 description: Miniport Driver Types by Operating System
 ms.assetid: 6ab0e4e4-5118-4df5-ba4e-7da66ce5880d
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Miniport Driver Types by Operating System
@@ -37,37 +34,37 @@ The type of miniport driver that you develop is determined by your target Window
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[WaveCyclic](wavecyclic-miniport-driver.md)</p></td>
+<td align="left"><p><a href="wavecyclic-miniport-driver.md" data-raw-source="[WaveCyclic](wavecyclic-miniport-driver.md)">WaveCyclic</a></p></td>
 <td align="left"><p>x</p></td>
 <td align="left"><p>x</p></td>
 <td align="left"><p>x</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[WavePci](wavepci-miniport-driver.md)</p></td>
+<td align="left"><p><a href="wavepci-miniport-driver.md" data-raw-source="[WavePci](wavepci-miniport-driver.md)">WavePci</a></p></td>
 <td align="left"><p>x</p></td>
 <td align="left"><p>x</p></td>
 <td align="left"><p>x</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[WaveRT](wavert-miniport-driver.md)</p></td>
+<td align="left"><p><a href="wavert-miniport-driver.md" data-raw-source="[WaveRT](wavert-miniport-driver.md)">WaveRT</a></p></td>
 <td align="left"></td>
 <td align="left"><p>x</p></td>
 <td align="left"><p>x</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Topology](topology-miniport-driver.md)</p></td>
+<td align="left"><p><a href="topology-miniport-driver.md" data-raw-source="[Topology](topology-miniport-driver.md)">Topology</a></p></td>
 <td align="left"><p>x</p></td>
 <td align="left"><p>x</p></td>
 <td align="left"><p>x</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[MIDI](midi-miniport-driver.md)</p></td>
+<td align="left"><p><a href="midi-miniport-driver.md" data-raw-source="[MIDI](midi-miniport-driver.md)">MIDI</a></p></td>
 <td align="left"><p>x</p></td>
 <td align="left"><p>x</p></td>
 <td align="left"><p>x</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[DMus](dmus-miniport-driver.md)</p></td>
+<td align="left"><p><a href="dmus-miniport-driver.md" data-raw-source="[DMus](dmus-miniport-driver.md)">DMus</a></p></td>
 <td align="left"><p>x</p></td>
 <td align="left"><p>x</p></td>
 <td align="left"><p>x</p></td>
@@ -75,27 +72,21 @@ The type of miniport driver that you develop is determined by your target Window
 </tbody>
 </table>
 
- 
+ 
 
 Each port driver implements an interface, which it presents to the miniport driver. To communicate with the port driver, the miniport driver must also implement an interface. For more information about the interfaces that are implemented by the miniport drivers, see [Miniport Interfaces](miniport-interfaces.md).
-
-**Note**   In Windows Vista, audio stream processing for system effects is not provided by the audio driver. Audio stream processing is provided by user mode components called [system effects audio processing objects](system-effects-audio-processing-objects.md) (sAPOS).
-
- 
 
 **Note**   When you develop audio drivers for Windows Vista and later operating systems, be aware of the following:
 -   You cannot obtain a logo qualification for a WaveCyclic- or a WavePci -based audio driver.
 
 -   There is no support for kernel-mode software synthesizers for DMus. However, support is provided for hardware MIDI I/O.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Miniport%20Driver%20Types%20by%20Operating%20System%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

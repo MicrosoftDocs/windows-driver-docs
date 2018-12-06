@@ -6,17 +6,14 @@ keywords:
 - system area networks WDK , Windows Sockets applications
 - SAN WDK , Windows Sockets applications
 - Windows Sockets applications WDK SANs
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using a SAN with Windows Sockets Applications
 
 
-## <a href="" id="ddk-using-a-san-with-windows-sockets-applications-ng"></a>
+
 
 
 Windows Sockets applications can benefit from using a system area network (SAN). These applications can use a SAN to transfer data in bulk form and to drop data directly onto the SAN network, without copying across the user-kernel boundary, using a technology called [Windows Sockets Direct](windows-sockets-direct.md). Windows Sockets Direct lets these applications use a SAN transparently.
@@ -31,9 +28,9 @@ For each Windows Sockets application, Windows Sockets Direct can either:
 
     To route data traffic that is not for a specific SAN from a Windows Sockets application, the switch must use the TCP/IP service provider. Non-SAN-specific data traffic includes, for example, datagrams, multicast, and connections that must be routed. Non-SAN-specific data traffic is then routed through TCP/IP and the NDIS miniport driver to the SAN NIC.
 
- 
+ 
 
- 
+ 
 
 
 

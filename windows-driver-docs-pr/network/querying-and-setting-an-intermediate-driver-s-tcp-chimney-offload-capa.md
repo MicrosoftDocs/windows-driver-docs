@@ -6,11 +6,8 @@ keywords:
 - intermediate drivers WDK TCP chimney offload , capabilities
 - capabilities WDK TCP chimney offload
 - querying TCP chimney offload capabilities
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Querying and Setting an Intermediate Driver's TCP Chimney Offload Capabilities
@@ -25,9 +22,9 @@ If the intermediate driver allows neither task offload nor TCP chimney offload, 
 
 OID\_TCP\_TASK\_OFFLOAD to enable the offload target's task offload and TCP chimney offload capabilities. An intermediate driver should always pass such a set request to the underlying driver.
 
- 
+ 
 
- 
+ 
 
 
 

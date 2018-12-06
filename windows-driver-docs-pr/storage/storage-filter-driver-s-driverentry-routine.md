@@ -1,6 +1,5 @@
 ---
 title: Storage Filter Driver's DriverEntry Routine
-author: windows-driver-content
 description: Storage Filter Driver's DriverEntry Routine
 ms.assetid: 801daf42-259d-45ab-a5c5-88acb2d35bef
 keywords:
@@ -8,11 +7,8 @@ keywords:
 - filter drivers WDK storage , DriverEntry
 - SFD WDK storage , DriverEntry
 - DriverEntry WDK storage
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Storage Filter Driver's DriverEntry Routine
@@ -25,11 +21,10 @@ Like any other kernel-mode driver, the [*DriverEntry*](https://msdn.microsoft.co
 
 For more information about a PnP driver's [*DriverEntry*](https://msdn.microsoft.com/library/windows/hardware/ff544113) routine, see [Plug and Play](https://msdn.microsoft.com/library/windows/hardware/ff547125).
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

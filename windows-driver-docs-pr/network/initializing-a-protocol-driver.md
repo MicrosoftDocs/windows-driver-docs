@@ -6,17 +6,14 @@ keywords:
 - protocol drivers WDK networking , initializing
 - NDIS protocol drivers WDK , initializing
 - initializing protocol drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Initializing a Protocol Driver
 
 
-## <a href="" id="ddk-initializing-a-protocol-driver-ng"></a>
+
 
 The system calls a protocol driver's [DriverEntry](https://msdn.microsoft.com/library/windows/hardware/ff544113) routine after it loads the driver. Protocol drivers load as system services. They can load at any time before, during, or after the miniport drivers load.
 
@@ -70,9 +67,9 @@ To unregister with NDIS, a protocol driver calls [NdisDeregisterProtocolDriver](
 
 To perform cleanup operations before a protocol driver is uninstalled, a protocol driver can register a [*ProtocolUninstall*](https://msdn.microsoft.com/library/windows/hardware/ff570279) function. The *ProtocolUninstall* function is optional. For example, the protocol lower edge of an intermediate driver might require a *ProtocolUninstall* function. The intermediate driver can release its protocol edge resources in *ProtocolUninstall* before NDIS calls its [*MiniportDriverUnload*](https://msdn.microsoft.com/library/windows/hardware/ff559378) function.
 
- 
+ 
 
- 
+ 
 
 
 

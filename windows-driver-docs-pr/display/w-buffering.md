@@ -5,11 +5,8 @@ ms.assetid: 0f06a709-11dc-4407-a230-85a689fb46a2
 keywords:
 - Direct3D WDK Windows 2000 display , w-buffering
 - w-buffering WDK Direct3D
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # W-Buffering
@@ -49,7 +46,7 @@ Typically, the hardware stores a floating-point value in the buffer. The followi
 </tbody>
 </table>
 
- 
+ 
 
 Conventional z-buffering was developed for the technical markets that use CAD or authoring tools, in which the viewing volume/workspace is of known and limited extent. The range of depth values stored can therefore be of limited extent, allowing the ratio of far/near (the distances to the far and near clip planes) to be on the order of two to ten.
 
@@ -57,11 +54,10 @@ Typical hardware designed for such applications iterates perspective-correct z a
 
 By contrast, when *w* (or eye-relative *z*) is used, the buffer bits can be more evenly allocated between the near and far clip planes in world space. The key benefit is that the ratio of far to near is no longer an issue, allowing applications to support a maximum range of miles, yet still get reasonably accurate depth buffering within inches of the eye point.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20W-Buffering%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -7,17 +7,14 @@ keywords:
 - large TCP packet segmentation WDK networking
 - segmentation of large TCP packets WDK networking
 - task offload WDK TCP/IP transport , LSOV1 and LSOV2
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Reporting a NIC's LSOV1 TCP-Packet-Segmentation Capabilities
 
 
-## <a href="" id="ddk-reporting-a-nic-s-lsov1-tcp-packet-segmentation-capabilities-ng"></a>
+
 
 
 An NDIS miniport driver specifies the current large send offload version 1 (LSOV1)-TCP-packet-segmentation configuration of a NIC in an [**NDIS\_TCP\_LARGE\_SEND\_OFFLOAD\_V1**](https://msdn.microsoft.com/library/windows/hardware/ff567883) structure.Miniport drivers must include the current LSOV1 offload configuration in the [**NDIS\_MINIPORT\_ADAPTER\_OFFLOAD\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565930) structure. Miniport drivers call the [**NdisMSetMiniportAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff563672) function from the [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) function and pass in the information in NDIS\_MINIPORT\_ADAPTER\_OFFLOAD\_ATTRIBUTES.
@@ -45,9 +42,9 @@ The miniport driver must specify the following information in the NDIS\_TCP\_LAR
 
 [Determining Task Offload Capabilities](determining-task-offload-capabilities.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -8,11 +8,8 @@ keywords:
 - offload state WDK TCP chimney offload , terminating offload state
 - terminating offload state WDK TCP chimney offload
 - terminating offload state WDK TCP chimney offload , about terminating offload state
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Terminating Offload State
@@ -20,7 +17,7 @@ ms.technology: windows-devices
 
 \[The TCP chimney offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-terminating-offload-state-ng"></a>
+
 
 
 The Terminating Offload State section describes the process of terminating the offload of one or more state objects. Terminating the offload of a state object uploads that state object to the host stack, and terminating the offload of a TCP connection uploads that connection.
@@ -47,9 +44,9 @@ This section includes:
 
 [Returning the Completion Status of a Terminate Offload Operation](returning-the-completion-status-of-a-terminate-offload-operation.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,8 @@
 title: Identifying the location of internal cameras
 description: This topic provides info about supporting internal cameras on systems in Windows 8.1.
 ms.assetid: 7664F0F6-BD95-4919-82E4-F6F8080C2B5B
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Identifying the location of internal cameras (UWP device apps)
@@ -54,7 +51,7 @@ In accordance with certification requirement **System.Client.Webcam.PhysicalLoca
 | 5                       | Back    |
 | 6                       | Unknown |
 
- 
+ 
 
 In addition, bit 143:128 (Vertical Offset), and bits 159:144 (Horizontal Offset) must provide the relative location of the camera with respect to the display. This origin is relative to the native pixel addressing in the display component and should match the present display orientation of landscape or portrait. The origin is the lower left hand corner of the display, where positive Horizontal and Vertical Offset values are to the right and up, respectively.
 
@@ -127,7 +124,7 @@ The InternalDeviceModification registry key indicates that at least one camera u
 | Format requirements | None                                                                             |
 | Valid subkeys       | Model ID registry key (see the following subkey format requirements and examles) |
 
- 
+ 
 
 ### <span id="Model_ID_registry_key"></span><span id="model_id_registry_key"></span><span id="MODEL_ID_REGISTRY_KEY"></span>Model ID registry key
 
@@ -139,7 +136,7 @@ The InternalDeviceModification registry key indicates that at least one camera u
 | Valid values        | Hardware ID registry values or `PLD_Panel`                                                 |
 | Examples            | `{43922620-DAD9-4C05-BE3F-F65B089D84D8}`                                                   |
 
- 
+ 
 
 ### <span id="Hardware_ID_registry_value"></span><span id="hardware_id_registry_value"></span><span id="HARDWARE_ID_REGISTRY_VALUE"></span>Hardware ID registry value
 
@@ -163,12 +160,12 @@ The InternalDeviceModification registry key indicates that at least one camera u
 </tr>
 <tr class="even">
 <td align="left">Format requirements</td>
-<td align="left">Must include the bus prefix of the Hardware ID. All &quot;\&quot; characters must be replaced with a &quot;#&quot;.</td>
+<td align="left">Must include the bus prefix of the Hardware ID. All &quot;&amp;quot; characters must be replaced with a &quot;#&quot;.</td>
 </tr>
 <tr class="odd">
 <td align="left">Examples</td>
-<td align="left"><p><code>USB#VID_1234&PID_ABCD&REV_0001</code></p>
-<p><code>PCI#VEN_ABCD&DEV_1234&SUBSYS_000</code></p></td>
+<td align="left"><p><code>USB#VID_1234&amp;PID_ABCD&amp;REV_0001</code></p>
+<p><code>PCI#VEN_ABCD&amp;DEV_1234&amp;SUBSYS_000</code></p></td>
 </tr>
 <tr class="even">
 <td align="left">Comment</td>
@@ -177,7 +174,7 @@ The InternalDeviceModification registry key indicates that at least one camera u
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="PLD_Panel_registry_value"></span><span id="pld_panel_registry_value"></span><span id="PLD_PANEL_REGISTRY_VALUE"></span>PLD\_Panel registry value
 
@@ -189,7 +186,7 @@ The InternalDeviceModification registry key indicates that at least one camera u
 | Format requirements | Must include the bus prefix of the HardwareID. All "\\" characters must be replaced with a "\#". |
 | Examples            | 4,5                                                                                              |
 
- 
+ 
 
 ### <span id="PLD_Panel_Details"></span><span id="pld_panel_details"></span><span id="PLD_PANEL_DETAILS"></span>PLD\_Panel Details
 
@@ -197,7 +194,7 @@ The PLD\_Panel value provided in ACPI tables enables cameras to be distinguished
 
 **Note**  The PLD\_Panel setting in the registry key is optional. Windows determines the camera’s physical location by the settings in the ACPI table.
 
- 
+ 
 
 The PLD\_Panel registry value is defined as \_PLD (Physical Device Location) in the ACPI specification. This value, which indicates the camera’s physical location in its enclosure, must be one of the following.
 
@@ -211,7 +208,7 @@ The PLD\_Panel registry value is defined as \_PLD (Physical Device Location) in 
 | 5     | Back                                                                |
 | 6     | Unknown (Vertical position and Horizontal position will be ignored) |
 
- 
+ 
 
 ### <span id="InternalDeviceModification_registry_key_examples"></span><span id="internaldevicemodification_registry_key_examples"></span><span id="INTERNALDEVICEMODIFICATION_REGISTRY_KEY_EXAMPLES"></span>InternalDeviceModification registry key examples
 
@@ -253,11 +250,10 @@ Both the Microsoft Store device app and the device metadata package can be prein
 
 [UWP device apps for internal devices](uwp-device-apps-for-specialized-devices.md)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devapps\devapps]:%20Identifying%20the%20location%20of%20internal%20cameras%20%28Windows%20Store%20device%20apps%29%20%20RELEASE:%20%281/20/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

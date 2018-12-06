@@ -5,11 +5,8 @@ ms.assetid: B747EB2B-892C-4465-98E0-245FF7BC1E70
 keywords:
 - registry WDK device installations , opening registry keys for a device setup class
 - device setup classes WDK device installations , opening registry keys
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Opening Registry Keys for a Device Setup Class
@@ -22,9 +19,9 @@ To safely open the registry keys of a [device setup class](device-setup-classes.
 -   [**SetupDiOpenClassRegKey**](https://msdn.microsoft.com/library/windows/hardware/ff552065)
 -   [**SetupDiOpenClassRegKeyEx**](https://msdn.microsoft.com/library/windows/hardware/ff552067) with the *Flags* parameter set to DIOCR_INSTALLER
 
- 
+ 
 
- 
+ 
 
 
 

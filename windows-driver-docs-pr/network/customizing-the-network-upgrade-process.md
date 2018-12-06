@@ -6,22 +6,19 @@ keywords:
 - network component upgrades WDK , customizing
 - upgrading network components WDK , customizing
 - customizing network upgrade process WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Customizing the Network Upgrade Process
 
 
-## <a href="" id="ddk-customizing-the-network-upgrade-process-ng"></a>
+
 
 
 **Note**  Vendor-supplied network upgrades are not supported in Microsoft Windows XP (SP1 and later), Microsoft Windows Server 2003, and later operating systems.
 
- 
+ 
 
 System administrators can customize the network upgrade process.
 
@@ -37,9 +34,9 @@ System administrators can customize the network upgrade process.
 
 During the Winnt32 phase of the network upgrade, NetSetup locates the netupg.inf file in the directory specified by the NETUPGRD\_INIT\_FILE\_DIR environment variable. In each directory specified in the netupg.inf file, NetSetup then locates the netmap.inf file and other vendor files for the network component to be upgraded. NetSetup processes these files to upgrade the component. For more information, see [The Network Upgrade Process](the-network-upgrade-process.md).
 
- 
+ 
 
- 
+ 
 
 
 

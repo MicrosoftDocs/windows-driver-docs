@@ -9,11 +9,8 @@ api_name:
 - wscn ExposureSettings
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # ExposureSettings element
@@ -24,7 +21,7 @@ The required **ExposureSettings** element contains individual adjustment values 
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:ExposureSettings>
   child elements
 </wscn:ExposureSettings>
@@ -49,13 +46,13 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>Brightness</strong>](brightness.md)</p></td>
+<td><p><a href="brightness.md" data-raw-source="[&lt;strong&gt;Brightness&lt;/strong&gt;](brightness.md)"><strong>Brightness</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>Contrast</strong>](contrast.md)</p></td>
+<td><p><a href="contrast.md" data-raw-source="[&lt;strong&gt;Contrast&lt;/strong&gt;](contrast.md)"><strong>Contrast</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>Sharpness</strong>](sharpness.md)</p></td>
+<td><p><a href="sharpness.md" data-raw-source="[&lt;strong&gt;Sharpness&lt;/strong&gt;](sharpness.md)"><strong>Sharpness</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -74,12 +71,12 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>Exposure</strong>](exposure.md)</p></td>
+<td><p><a href="exposure.md" data-raw-source="[&lt;strong&gt;Exposure&lt;/strong&gt;](exposure.md)"><strong>Exposure</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**Brightness**](brightness.md)
@@ -90,11 +87,10 @@ There are no attributes.
 
 [**Sharpness**](sharpness.md)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bimage\image%5D:%20ExposureSettings%20element%20%20RELEASE:%20%2811/8/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

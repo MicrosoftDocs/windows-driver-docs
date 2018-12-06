@@ -3,11 +3,8 @@ title: Setting Up Kernel-Mode Debugging over a Serial Cable Manually
 description: Debugging Tools for Windows supports kernel debugging over a null-modem cable.
 ms.assetid: f7311928-bab1-4692-8dd6-5e464dd7127a
 keywords: ["setup, making a debug cable connection", "null-modem cable", "debug cable", "cable connection", "cable connection, debug (null-modem) cable)"]
-ms.author: windowsdriverdev
-ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 07/11/2018
+ms.localizationpriority: medium
 ---
 
 # Setting Up Kernel-Mode Debugging over a Serial Cable Manually
@@ -15,24 +12,27 @@ ms.technology: windows-devices
 
 Debugging Tools for Windows supports kernel debugging over a null-modem cable. Null-modem cables are serial cables that have been configured to send data between two serial ports. They are available at most computer stores. Do not confuse null-modem cables with standard serial cables. Standard serial cables do not connect serial ports to each other. For information about how null-modem cables are wired, see [Null-Modem Cable Wiring](#null-modem-cable-wiring).
 
-This topic describes how to set up serial debugging manually. As an alternative to setting up serial debugging manually, you can do the setup using Microsoft Visual Studio. For more information, see [Setting Up Kernel-Mode Debugging over a Serial Cable in Visual Studio](setting-up-a-null-modem-cable-connection-in-visual-studio.md).
-
 The computer that runs the debugger is called the *host computer*, and the computer being debugged is called the *target computer*.
 
 ## <span id="Setting_Up_the_Target_Computer"></span><span id="setting_up_the_target_computer"></span><span id="SETTING_UP_THE_TARGET_COMPUTER"></span>Setting Up the Target Computer
 
 
-1.  On the target computer, open a Command Prompt window as Administrator, and enter the following commands, where *n* is the number of the COM port used for debugging on the target computer, and *rate* is the baud rate used for debugging:
+> [!IMPORTANT]
+> Before using bcdedit to change boot information you may need to temporarily suspend Windows security features such as BitLocker and Secure Boot on the test PC. 
+> You can re-enable Secure Boot once you’re done debugging and you’ve disabled kernel debugging.  
 
-    **bcdedit /debug on**
 
-    **bcdedit /dbgsettings serial debugport:***n* **baudrate:***rate*
+1. On the target computer, open a Command Prompt window as Administrator, and enter the following commands, where *n* is the number of the COM port used for debugging on the target computer, and *rate* is the baud rate used for debugging:
 
-    **Note**  The baud rate must be the same on the host computer and target computer. The recommended rate is 115200.
+   **bcdedit /debug on**
 
-     
+   **bcdedit /dbgsettings serial debugport:**<em>n</em> **baudrate:**<em>rate</em>
 
-2.  Reboot the target computer.
+   **Note**  The baud rate must be the same on the host computer and target computer. The recommended rate is 115200.
+
+     
+
+2. Reboot the target computer.
 
 ## <span id="Starting_the_Debugging_Session"></span><span id="starting_the_debugging_session"></span><span id="STARTING_THE_DEBUGGING_SESSION"></span>Starting the Debugging Session
 
@@ -45,21 +45,21 @@ On the host computer, open WinDbg. On the **File** menu, choose **Kernel Debug**
 
 You can also start a session with WinDbg by entering the following command in a Command Prompt window; *n* is the number of the COM port used for debugging on the host computer, and *rate* is the baud rate used for debugging:
 
-**windbg -k com:port=COM***n***,baud=***rate*
+**windbg -k com:port=COM**<em>n</em>**,baud=**<em>rate</em>
 
 ### <span id="Using_KD"></span><span id="using_kd"></span><span id="USING_KD"></span>Using KD
 
 On the host computer, open a Command Prompt window, and enter the following command, where *n* is the number of the COM port used for debugging on the host computer, and *rate* is the baud rate used for debugging:
 
-**kd -k com:port=COM***n***,baud=***rate*
+**kd -k com:port=COM**<em>n</em>**,baud=**<em>rate</em>
 
 ## <span id="Using_Environment_Variables"></span><span id="using_environment_variables"></span><span id="USING_ENVIRONMENT_VARIABLES"></span>Using Environment Variables
 
 
 On the host computer, you can use environment variables to specify the COM port and the baud rate. Then you do not have to specify the port and baud rate each time you start a debugging session. To use environment variables to specify the COM port and baud rate, open a Command Prompt window and enter the following commands, where *n* is the number of the COM port used for debugging on the host computer, and *rate* is the baud rate used for debugging:
 
--   **set \_NT\_DEBUG\_PORT=COM***n*
--   **set \_NT\_DEBUG\_BAUD\_RATE=***rate*
+- **set \_NT\_DEBUG\_PORT=COM***n*
+- **set \_NT\_DEBUG\_BAUD\_RATE=**<em>rate</em>
 
 To start a debugging session, open a Command Prompt window, and enter one of the following commands:
 
@@ -112,7 +112,7 @@ The following tables show how null-modem cables are wired.
 | 1+6         | 4           | (CD+DSR) - DTR |
 | 5           | 5           | Signal ground  |
 
- 
+ 
 
 ### <span id="25-pin_connector"></span><span id="25-PIN_CONNECTOR"></span>25-pin connector
 
@@ -126,7 +126,7 @@ The following tables show how null-modem cables are wired.
 | 20          | 6           | DTR - DSR     |
 | 7           | 7           | Signal ground |
 
- 
+ 
 
 ### <span id="Signal_Abbreviations"></span><span id="signal_abbreviations"></span><span id="SIGNAL_ABBREVIATIONS"></span>Signal Abbreviations
 
@@ -140,7 +140,7 @@ The following tables show how null-modem cables are wired.
 | DSR          | Data set ready      |
 | CD           | Carrier detect      |
 
- 
+ 
 
 ## <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -152,11 +152,10 @@ For complete documentation of the **bcdedit** command, see Boot Options for Driv
 
 [Setting Up Kernel-Mode Debugging Manually](setting-up-kernel-mode-debugging-in-windbg--cdb--or-ntsd.md)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Setting%20Up%20Kernel-Mode%20Debugging%20over%20a%20Serial%20Cable%20Manually%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

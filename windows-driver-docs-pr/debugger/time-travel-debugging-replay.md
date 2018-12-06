@@ -1,18 +1,13 @@
 ---
 title: Time Travel Debugging - Replay a trace
 description: This section describes how to replay time travel traces.
-ms.author: windowsdriverdev
-ms.date: 09/22/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 10/12/2018
+ms.localizationpriority: medium
 ---
 
-> [!NOTE]
-> The information in this topic is preliminary. Updated information will be provided in a later release of the documentation. 
->
+![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png) 
 
-# ![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png) Time Travel Debugging - Replay a trace 
+# Time Travel Debugging - Replay a trace 
 
 This section describes how to replay time travel traces, navigating forwards and backwards in time.
 
@@ -40,7 +35,7 @@ Alternatively, use the ribbon buttons to navigate in the trace.
 Use the g- command to execute backwards until either an event or the beginning of the TTD trace is reached. The events that can stop backward execution are the same that would stop forward execution. In this example, the start of the trace is reached.
 
 
-```
+```dbgcmd
 0:000> g-
 TTD: Start of trace reached.
 (3f78.4274): Break instruction exception - code 80000003 (first/second chance not available)
@@ -49,9 +44,9 @@ ntdll!ZwTestAlert+0x14:
 00007ffc`61f789d4 c3              ret
 ```
 
-Use the [p (Step)](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/p--step-) command to step forward in a TTD trace. 
+Use the [p (Step)](https://docs.microsoft.com/windows-hardware/drivers/debugger/p--step-) command to step forward in a TTD trace. 
 
-```
+```dbgcmd
 0:000> p
 Time Travel Position: F:1
 eax=0173a5b0 ebx=00fd8000 ecx=7774f821 edx=0f994afc esi=0f99137c edi=00de0000
@@ -75,9 +70,9 @@ ntdll!LdrpInitializeProcess+0x1bd9:
 7774f83c 0f8450e8ffff    je      ntdll!LdrpInitializeProcess+0x42f (7774e092) [br=1]
 ```
 
-You an also use the [t (Trace)](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/t--trace-) command to navigate in the trace.
+You an also use the [t (Trace)](https://docs.microsoft.com/windows-hardware/drivers/debugger/t--trace-) command to navigate in the trace.
 
-```
+```dbgcmd
 0:000> t
 Time Travel Position: F:4
 eax=0173a5b0 ebx=00fd8000 ecx=7774f821 edx=0f994afc esi=0f99137c edi=00de0000
@@ -95,9 +90,9 @@ ntdll!LdrpInitializeProcess+0x431:
 ```
 
 
-Use the the p- command to step backwards in a TTD trace. 
+Use the p- command to step backwards in a TTD trace. 
 
-```
+```dbgcmd
 0:000> p-
 Time Travel Position: F:4
 eax=0173a5b0 ebx=00fd8000 ecx=7774f821 edx=0f994afc esi=0f99137c edi=00de0000
@@ -125,18 +120,18 @@ Use the !tt command to navigate forward or backwards in time, by skipping to a g
 
 Provide a time position in any of the following formats to travel to that point in time.
            
-- If [position] is a decimal number between 0 and 100, it travels to approximately that percent into the trace. For example ```!tt 50``` travels to halfway through the trace.
+- If [position] is a decimal number between 0 and 100, it travels to approximately that percent into the trace. For example `!tt 50` travels to halfway through the trace.
 
-- If {position} is #:#, where # are a hexadecimal numbers, it travels to that position. For example, ```!tt 1A0:12F``` travels to position 1A0:12F in the trace.
+- If {position} is #:#, where # are a hexadecimal numbers, it travels to that position. For example, `!tt 1A0:12F` travels to position 1A0:12F in the trace.
 
 For more information, see [Time Travel Debugging - !tt (time travel)](time-travel-debugging-extension-tt.md).
 
 
 ## !positions
 
-Use ```!positions``` to display all the active threads, including their position in the trace. For more information, see [Time Travel Debugging - !positions (time travel)](time-travel-debugging-extension-positions.md).
+Use `!positions` to display all the active threads, including their position in the trace. For more information, see [Time Travel Debugging - !positions (time travel)](time-travel-debugging-extension-positions.md).
 
-```
+```dbgcmd
 0:000> !positions
 >Thread ID=0x1C74 - Position: F:2
  Thread ID=0x1750 - Position: A5:0
@@ -152,12 +147,12 @@ This example shows that there are eight threads at the current position. The cur
 > [!TIP] 
 > Another way to display the current list of threads and their positions, is to use the data model dx command:
 >
-> ```dx -g @$curprocess.Threads.Select(t => new { IsCurrent = t.Id == @$curthread.Id, ThreadId = t.Id, Position = t.TTD.Position })```
+> `dx -g @$curprocess.Threads.Select(t => new { IsCurrent = t.Id == @$curthread.Id, ThreadId = t.Id, Position = t.TTD.Position })`
 >
 
 Use the user mode [~ (Thread Status)](---thread-status-.md) command shows the same eight threads, and marks the current thread with '.':
 
-```
+```dbgcmd
 0:000> ~
 .  0  Id: 954.1c74 Suspend: 4096 Teb: 00fdb000 Unfrozen
    1  Id: 954.1750 Suspend: 4096 Teb: 00fea000 Unfrozen
@@ -171,7 +166,7 @@ Use the user mode [~ (Thread Status)](---thread-status-.md) command shows the sa
 
 Click on the link next to the third thread (3FFC) in the !positions output, to time travel to that position in the trace, 200:0.
 
-```
+```dbgcmd
 0:002> !ttdext.tt 200:0
 Setting position: 200:0
 (954.3ffc): Break instruction exception - code 80000003 (first/second chance not available)
@@ -185,7 +180,7 @@ ntdll!NtWaitForWorkViaWorkerFactory+0xc:
 
 Use the [~ (Thread Status)](---thread-status-.md) command to confirm that we are now positioned at the third thread, 3ffc.
 
-```
+```dbgcmd
 0:002> ~
    0  Id: 954.1c74 Suspend: 4096 Teb: 00fdb000 Unfrozen
    1  Id: 954.1750 Suspend: 4096 Teb: 00fea000 Unfrozen
@@ -206,7 +201,7 @@ which is used for all memory queries. This works this way primarily so that *~s#
 
 ## Time travel debugging extension commands
 
-For information on the ```!tt```, ```!positions``` and the ```!index``` commands see [Time Travel Debugging - Extension Commands](time-travel-debugging-extension-commands.md).
+For information on the `!tt`, `!positions` and the `!index` commands see [Time Travel Debugging - Extension Commands](time-travel-debugging-extension-commands.md).
 
  
 ## See Also
@@ -222,7 +217,6 @@ For information on the ```!tt```, ```!positions``` and the ```!index``` commands
 ---
 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Debugging%20Using%20WinDbg%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

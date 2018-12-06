@@ -1,15 +1,11 @@
 ---
 title: OID_RECEIVE_FILTER_ALLOCATE_QUEUE
-author: windows-driver-content
 description: Overlying drivers issue object identifier (OID) method requests of OID_RECEIVE_FILTER_ALLOCATE_QUEUE to allocate a queue that has an initial set of configuration parameters.
 ms.assetid: 8dd7ab91-b752-46fd-ae1b-014dc0fb0157
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_RECEIVE_FILTER_ALLOCATE_QUEUE Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # OID\_RECEIVE\_FILTER\_ALLOCATE\_QUEUE
@@ -28,7 +24,7 @@ The overlying driver initializes the [**NDIS\_RECEIVE\_QUEUE\_PARAMETERS**](http
 
 **Note**  The overlying driver can set the **NDIS\_RECEIVE\_QUEUE\_PARAMETERS\_PER\_QUEUE\_RECEIVE\_INDICATION** and **NDIS\_RECEIVE\_QUEUE\_PARAMETERS\_LOOKAHEAD\_SPLIT\_REQUIRED** flags in the **Flags** member of the [**NDIS\_RECEIVE\_QUEUE\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff567211) structure. The other flags are not used for queue allocation.
 
- 
+ 
 
 After a miniport driver is issued an OID request of OID\_RECEIVE\_FILTER\_ALLOCATE\_QUEUE and handles it successfully, the queue is in the Paused state.
 
@@ -64,7 +60,7 @@ Either NDIS or the miniport driver returns one of the following status codes for
 <tbody>
 <tr class="odd">
 <td><p><strong>NDIS_STATUS_SUCCESS</strong></p></td>
-<td><p>The queue was allocated successfully. The information buffer contains the updated [<strong>NDIS_RECEIVE_QUEUE_PARAMETERS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567211) structure.</p></td>
+<td><p>The queue was allocated successfully. The information buffer contains the updated <a href="https://msdn.microsoft.com/library/windows/hardware/ff567211" data-raw-source="[&lt;strong&gt;NDIS_RECEIVE_QUEUE_PARAMETERS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567211)"><strong>NDIS_RECEIVE_QUEUE_PARAMETERS</strong></a> structure.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>NDIS_STATUS_PENDING</strong></p></td>
@@ -76,7 +72,7 @@ Either NDIS or the miniport driver returns one of the following status codes for
 </tr>
 <tr class="even">
 <td><p><strong>NDIS_STATUS_INVALID_LENGTH</strong></p></td>
-<td><p>The information buffer was too short. NDIS set the <strong>DATA</strong>.<strong>METHOD_INFORMATION</strong>.<strong>BytesNeeded</strong> member in the [<strong>NDIS_OID_REQUEST</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure to the minimum buffer size that is required.</p></td>
+<td><p>The information buffer was too short. NDIS set the <strong>DATA</strong>.<strong>METHOD_INFORMATION</strong>.<strong>BytesNeeded</strong> member in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710" data-raw-source="[&lt;strong&gt;NDIS_OID_REQUEST&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566710)"><strong>NDIS_OID_REQUEST</strong></a> structure to the minimum buffer size that is required.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>NDIS_STATUS_NOT_SUPPORTED</strong></p></td>
@@ -89,7 +85,7 @@ Either NDIS or the miniport driver returns one of the following status codes for
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -126,12 +122,10 @@ Requirements
 
 [**NDIS\_RECEIVE\_QUEUE\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff567211)
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_RECEIVE_FILTER_ALLOCATE_QUEUE%20%20RELEASE:%20%288/8/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

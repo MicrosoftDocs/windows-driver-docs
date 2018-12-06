@@ -2,17 +2,14 @@
 title: Device Interface Classes
 description: Device Interface Classes
 ms.assetid: 9d72f653-01b9-4f17-a008-1267d1589eb3
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Device Interface Classes
 
 
-## <a href="" id="ddk-device-interface-classes-dg"></a>
+
 
 
 Device interface classes are the means by which drivers make devices available to applications and other drivers.
@@ -29,9 +26,9 @@ This section contains the following topics:
 
 For information about the system-defined device interface classes, see [System-Defined Device Interface Classes](https://msdn.microsoft.com/library/windows/hardware/ff553412).
 
- 
+ 
 
- 
+ 
 
 
 

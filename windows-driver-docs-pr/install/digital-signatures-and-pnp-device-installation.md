@@ -2,11 +2,8 @@
 title: Digital Signatures and PnP Device Installation
 description: Digital Signatures and PnP Device Installation
 ms.assetid: 0fb2f48c-f133-4034-b596-7d5f932b251f
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Digital Signatures and PnP Device Installation
@@ -19,9 +16,9 @@ This section describes how Plug and Play (PnP) device installation uses the [dig
 
 -   [Digital Signatures and PnP Device Installation](digital-signatures-and-pnp-device-installation--windows-vista-and-late.md)
 
- 
+ 
 
- 
+ 
 
 
 

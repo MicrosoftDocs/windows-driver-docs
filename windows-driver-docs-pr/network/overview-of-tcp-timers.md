@@ -7,11 +7,8 @@ keywords:
 - TCP timers WDK TCP chimney offload , about TCP timers
 - timers WDK TCP chimney offload , types
 - TCP timers WDK TCP chimney offload , types
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Overview of TCP Timers
@@ -41,9 +38,9 @@ Each TCP timer must be large enough so that it takes at least several weeks of r
 
 If an offloaded connection enters the TIME\_WAIT state, the offload target should initiate termination of the offload of that connection (upload).
 
- 
+ 
 
- 
+ 
 
 
 

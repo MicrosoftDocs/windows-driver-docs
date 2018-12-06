@@ -2,11 +2,8 @@
 title: Overview of Virtual Function Initialization and Teardown
 description: Overview of Virtual Function Initialization and Teardown
 ms.assetid: 2684A93A-40C2-49DA-925D-2BAACA9F8CD9
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Overview of Virtual Function Initialization and Teardown
@@ -24,11 +21,11 @@ For more information on VFs for SR-IOV network adapters, see [SR-IOV Virtual Fun
 
 **Note**  Only the PF miniport driver can configure the network adapter's hardware resources, such as the VFs. The VF miniport driver cannot directly access most of the SR-IOV adapter's hardware resources. For more information, see [Writing SR-IOV VF Miniport Drivers](writing-sr-iov-vf-miniport-drivers.md).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

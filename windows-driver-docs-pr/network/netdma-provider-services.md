@@ -8,11 +8,8 @@ keywords:
 - memory-to-memory data transfers WDK NetDMA , provider services
 - data transfers WDK NetDMA , provider services
 - transferring data WDK NetDMA , provider service
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # NetDMA Provider Services
@@ -20,9 +17,9 @@ ms.technology: windows-devices
 
 **Note**  The NetDMA interface is not supported in Windows 8 and later.
 
- 
+ 
 
-## <a href="" id="ddk-netdma-provider-services-ng"></a>
+
 
 
 The NetDMA interface requires *ProviderXxx* functions that the NetDMA provider driver supplies to service NetDMA requests. The *ProviderXxx* function entry points are defined in the [**NET\_DMA\_PROVIDER\_CHARACTERISTICS**](https://msdn.microsoft.com/library/windows/hardware/ff568738) structure that the NetDMA provider driver passes to the [**NetDmaRegisterProvider**](https://msdn.microsoft.com/library/windows/hardware/ff568336) function.
@@ -71,9 +68,9 @@ The following topics describe the NetDMA provider services and the preceding *Pr
 
 [Resetting a DMA Channel](resetting-a-dma-channel.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -5,17 +5,14 @@ ms.assetid: 094e339c-b5a7-4894-9a3d-145231311647
 keywords:
 - virtual connections WDK CoNDIS , deactivating
 - deactivating virtual connections
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Deactivating a VC
 
 
-## <a href="" id="ddk-deactivating-a-vc-ng"></a>
+
 
 
 A call manager calls [**NdisCmDeactivateVc**](https://msdn.microsoft.com/library/windows/hardware/ff561657) as an essential step in closing either an outgoing or incoming call, typically after the packet exchange with network components that tears down the call (see [Client-Initiated Request to Close a Call](client-initiated-request-to-close-a-call.md) and [Incoming Request to Close a Call](incoming-request-to-close-a-call.md)). An MCM driver does the same thing by calling [**NdisMCmDeactivateVc**](https://msdn.microsoft.com/library/windows/hardware/ff562818).
@@ -36,9 +33,9 @@ An MCM driver's call to **NdisMCmDeactivateVc** informs NDIS that it has deactiv
 
 An MCM driver does not call **NdisMCmDeactivateVc** to deactivate VCs used for exchanging signaling messages between the MCM driver and network components such as a switch. An MCM driver deactivates a signaling VC internally without calling any **Ndis*Xxx*** function.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -23,11 +23,8 @@ keywords:
 - PCM wave output WDK audio
 - S/PDIF pass-through WDK audio
 - mixing audio WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Specifying the Topology
@@ -61,12 +58,12 @@ Each port driver is paired with a corresponding miniport driver to form a [KS fi
 </tr>
 <tr class="odd">
 <td align="left"><p>Topology filter</p></td>
-<td align="left"><p>Represents the adapter's mixer circuitry.</p></td>
+<td align="left"><p>Represents the adapter&#39;s mixer circuitry.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The miniport driver implements the filter's device-specific functions, including the definition of the portion of the adapter topology that the device encompasses. The port driver takes care of the generic filter operations, including communication with the operating system, for each type of filter.
 
@@ -95,42 +92,42 @@ In the preceding figure, the topology at the top level consists of the connectio
 <tr class="odd">
 <td align="left"><p>Synth</p></td>
 <td align="left"><p>Synthesizer node</p></td>
-<td align="left">[<strong>KSNODETYPE_SYNTHESIZER</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537203)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/ff537203" data-raw-source="[&lt;strong&gt;KSNODETYPE_SYNTHESIZER&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537203)"><strong>KSNODETYPE_SYNTHESIZER</strong></a></td>
 </tr>
 <tr class="even">
 <td align="left"><p>DAC</p></td>
 <td align="left"><p>Digital-to-audio converter node</p></td>
-<td align="left">[<strong>KSNODETYPE_DAC</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537158)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/ff537158" data-raw-source="[&lt;strong&gt;KSNODETYPE_DAC&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537158)"><strong>KSNODETYPE_DAC</strong></a></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>ADC</p></td>
 <td align="left"><p>Analog-to-digital converter node</p></td>
-<td align="left">[<strong>KSNODETYPE_ADC</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537153)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/ff537153" data-raw-source="[&lt;strong&gt;KSNODETYPE_ADC&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537153)"><strong>KSNODETYPE_ADC</strong></a></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Volume</p></td>
 <td align="left"><p>Volume-level control node</p></td>
-<td align="left">[<strong>KSNODETYPE_VOLUME</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537208)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/ff537208" data-raw-source="[&lt;strong&gt;KSNODETYPE_VOLUME&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537208)"><strong>KSNODETYPE_VOLUME</strong></a></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Mute</p></td>
 <td align="left"><p>Mute control node</p></td>
-<td align="left">[<strong>KSNODETYPE_MUTE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537178)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/ff537178" data-raw-source="[&lt;strong&gt;KSNODETYPE_MUTE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537178)"><strong>KSNODETYPE_MUTE</strong></a></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Sum</p></td>
 <td align="left"><p>Summation node</p></td>
-<td align="left">[<strong>KSNODETYPE_SUM</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537196)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/ff537196" data-raw-source="[&lt;strong&gt;KSNODETYPE_SUM&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537196)"><strong>KSNODETYPE_SUM</strong></a></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>MUX</p></td>
 <td align="left"><p>Multiplexer node</p></td>
-<td align="left">[<strong>KSNODETYPE_MUX</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537180)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/ff537180" data-raw-source="[&lt;strong&gt;KSNODETYPE_MUX&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537180)"><strong>KSNODETYPE_MUX</strong></a></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 In the preceding figure, the pins on the left side of the audio adapter represent the logical connections (not physical connections) through which data streams enter the adapter from the system bus or enter the system bus from the adapter. These pins are logically connected to source and sink pins on other filters (not shown) that are external to the adapter. Typically, these filters are software modules that, together with the adapter topology, form a larger filter graph whose topology can be explored by applications using the mixer*Xxx* functions. For example, the pin labeled "PCM Wave Out" in the preceding figure is logically connected to the user-mode audio engine in Windows. These logical connections are maintained by DMA transfers over the system bus.
 
@@ -146,18 +143,16 @@ This type of hardware acceleration is supported in Windows Server 2003, Windows 
 
 In the preceding figure, the physical connections between the MIDI, Wave*Xxx*, and topology filters all transport analog audio signals. However, a different topology device might achieve a similar effect by accepting digital output streams from the MIDI and wave devices, digitally mixing them, and converting the digital mix to an analog output signal.
 
-The "Non-PCM Wave Out" pin at the lower-left corner of the preceding figure accepts a non-PCM output stream in an S/PDIF pass-through format, such as AC-3-over-S/PDIF or WMA Pro-over-S/PDIF. Using one of these formats, the device simply transmits the compressed data over the S/PDIF link without decoding the data. For this reason, the data path to the "S/PDIF Out" pin on the lower-right corner of the preceding figure contains no volume or mute nodes. For more information about non-PCM audio formats and S/PDIF pass-through transmission, see [Supporting Non-PCM Wave Formats](supporting-non-pcm-wave-formats.md). Additional information is available in the white paper titled *Audio Driver Support for the WMA Pro-over-S/PDIF Format* at the [audio technology](http://go.microsoft.com/fwlink/p/?linkid=8751) website.
+The "Non-PCM Wave Out" pin at the lower-left corner of the preceding figure accepts a non-PCM output stream in an S/PDIF pass-through format, such as AC-3-over-S/PDIF or WMA Pro-over-S/PDIF. Using one of these formats, the device simply transmits the compressed data over the S/PDIF link without decoding the data. For this reason, the data path to the "S/PDIF Out" pin on the lower-right corner of the preceding figure contains no volume or mute nodes. For more information about non-PCM audio formats and S/PDIF pass-through transmission, see [Supporting Non-PCM Wave Formats](supporting-non-pcm-wave-formats.md). Additional information is available in the white paper titled *Audio Driver Support for the WMA Pro-over-S/PDIF Format* at the [audio technology](https://go.microsoft.com/fwlink/p/?linkid=8751) website.
 
 The miniport driver presents its topology to the port driver in the form of a [**PCFILTER\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff537694) structure. This structure describes all of the filter's pins and nodes, and it specifies how the pins and nodes connect to each other.
 
 Instead of designing a monolithic topology filter, as shown in the preceding figure, the mixer circuitry in the audio adapter can be partitioned into several topology filters. For example, in the preceding figure, the data paths that drive the speakers might be implemented as one topology filter, and the data paths that capture audio data from input devices can be implemented as a separate topology filter. When the data paths in a particular topology filter are not in use, that portion of the adapter can be powered down without disabling the entire adapter. For more information, see [Dynamic Audio Subdevices](dynamic-audio-subdevices.md).
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Specifying%20the%20Topology%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

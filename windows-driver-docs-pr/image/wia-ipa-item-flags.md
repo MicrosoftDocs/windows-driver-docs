@@ -11,11 +11,8 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WIA\_IPA\_ITEM\_FLAGS
@@ -84,7 +81,7 @@ The following table describes the flags that are obsolete in Windows Vista and l
 </tbody>
 </table>
 
- 
+ 
 
 The following table describes the flags that are valid in Windows Vista, Windows XP, and later operating systems.
 
@@ -155,7 +152,7 @@ The following table describes the flags that are valid in Windows Vista, Windows
 </tbody>
 </table>
 
- 
+ 
 
 The following table describes the flags that are valid in Windows Vista and later versions of the operating system only.
 
@@ -174,11 +171,11 @@ The following table describes the flags that are valid in Windows Vista and late
 <tr class="odd">
 <td><p><strong>WiaItemTypeDocument</strong></p></td>
 <td><p><strong><em>WiaItemTypeDocument</em></strong> <em>is obsolete and should not be used.</em></p>
-<p>The WIA item is a document file in one of the document formats that the [<strong>WIA_IPA_FORMAT</strong>](wia-ipa-format.md) property contains.</p></td>
+<p>The WIA item is a document file in one of the document formats that the <a href="wia-ipa-format.md" data-raw-source="[&lt;strong&gt;WIA_IPA_FORMAT&lt;/strong&gt;](wia-ipa-format.md)"><strong>WIA_IPA_FORMAT</strong></a> property contains.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>WiaItemTypeProgrammableDataSource</strong></p></td>
-<td><p>The WIA item is a programmable data source and follows a set of predefined configuration rules, which are based on the [<strong>WIA_IPA_ITEM_CATEGORY</strong>](wia-ipa-item-category.md) property.</p></td>
+<td><p>The WIA item is a programmable data source and follows a set of predefined configuration rules, which are based on the <a href="wia-ipa-item-category.md" data-raw-source="[&lt;strong&gt;WIA_IPA_ITEM_CATEGORY&lt;/strong&gt;](wia-ipa-item-category.md)"><strong>WIA_IPA_ITEM_CATEGORY</strong></a> property.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>WiaItemTypeMask</strong></p></td>
@@ -195,7 +192,7 @@ The following table describes the flags that are valid in Windows Vista and late
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -213,7 +210,7 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**WIA\_IPA\_FORMAT**](wia-ipa-format.md)
@@ -222,11 +219,10 @@ Requirements
 
 [**wiasCreateDrvItem**](https://msdn.microsoft.com/library/windows/hardware/ff549160)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bimage\image%5D:%20WIA_IPA_ITEM_FLAGS%20%20RELEASE:%20%2811/13/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -1,13 +1,9 @@
 ---
 title: Unidrv/PScript5 Driver Default DEVMODE Setup Behavior Changes
-author: windows-driver-content
 description: Unidrv/PScript5 Driver Default DEVMODE Setup Behavior Changes
 ms.assetid: 9760d527-0205-477b-bc16-d6aa65b1eaf7
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Unidrv/PScript5 Driver Default DEVMODE Setup Behavior Changes
@@ -36,7 +32,7 @@ A Unidrv/PScript5 driver that is running in XPSDrv mode creates the following dr
 <p>DM_ORIENTATION</p>
 <p><strong>dmOrientation</strong></p></td>
 <td><p>Hard-coded to always set the DM_ORIENTATION flag in <strong>dmFields</strong>, and set <strong>dmOrientation</strong> = DMORIENT_PORTRAIT.</p></td>
-<td><p>(Unidrv only) Only set the DM_ORIENTATION flag in <strong>dmFields</strong> if the GPD file supports the &quot;Orientation&quot; GPD feature. <strong>dmOrientation</strong> is set based on the &quot;Orientation&quot; GPD feature's default option that is specified in the GPD file.</p>
+<td><p>(Unidrv only) Only set the DM_ORIENTATION flag in <strong>dmFields</strong> if the GPD file supports the &quot;Orientation&quot; GPD feature. <strong>dmOrientation</strong> is set based on the &quot;Orientation&quot; GPD feature&#39;s default option that is specified in the GPD file.</p>
 <p>(PS only) Only set the DM_ORIENTATION flag in <strong>dmFields</strong> if the PPD file supports a feature with the &quot;PageOrientation&quot; Print Schema keyword.</p>
 <p><strong>dmOrientation</strong> is set to <strong>DMORIENT_LANDSCAPE</strong> if that feature has the default option with the &quot;Landscape&quot; or &quot;ReverseLandscape&quot; Print Schema keyword. Otherwise, <strong>dmOrientation</strong> is set to <strong>DMORIENT_PORTRAIT</strong>.</p></td>
 </tr>
@@ -85,7 +81,7 @@ A Unidrv/PScript5 driver that is running in XPSDrv mode creates the following dr
 <p>DM_COLLATE</p>
 <p><strong>dmCollate</strong></p></td>
 <td><p>Hard-coded to always set the DM_COLLATE flag in <strong>dmFields</strong>, and set <strong>dmCollate</strong> = DMCOLLATE_TRUE.</p></td>
-<td><p>Only set the DM_COLLATE flag in <strong>dmFields</strong> if GPD or PPD supports the &quot;Collate&quot; GPD or PPD feature. <strong>dmCollate</strong> is set based on the &quot;Collate&quot; GPD or PPD feature's default option that is specified in GPD or PPD.</p></td>
+<td><p>Only set the DM_COLLATE flag in <strong>dmFields</strong> if GPD or PPD supports the &quot;Collate&quot; GPD or PPD feature. <strong>dmCollate</strong> is set based on the &quot;Collate&quot; GPD or PPD feature&#39;s default option that is specified in GPD or PPD.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>dmFields</strong>:</p>
@@ -103,14 +99,12 @@ A Unidrv/PScript5 driver that is running in XPSDrv mode creates the following dr
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Unidrv/PScript5%20Driver%20Default%20DEVMODE%20Setup%20Behavior%20Changes%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

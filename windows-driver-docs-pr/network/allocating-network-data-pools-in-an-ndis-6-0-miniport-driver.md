@@ -7,17 +7,14 @@ keywords:
 - data pools WDK networking
 - network data pools WDK networking
 - allocating data pools
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Allocating Network Data Pools in an NDIS 6.0 Miniport Driver
 
 
-## <a href="" id="ddk-allocating-network-data-pools-in-ndis-6-0-ng"></a>
+
 
 
 Before sending and receiving [**NET\_BUFFER**](https://msdn.microsoft.com/library/windows/hardware/ff568376) and [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structures, the miniport driver must allocate a NET\_BUFFER pool and a NET\_BUFFER\_LIST pool. NDIS 6.0 drivers do not allocate packet pools with the [**NdisAllocatePacketPool**](https://msdn.microsoft.com/library/windows/hardware/ff550780) function. To allocate a pool, NDIS 6.0 miniport drivers call the [**NdisAllocateNetBufferListPool**](https://msdn.microsoft.com/library/windows/hardware/ff561611) and [**NdisAllocateNetBufferPool**](https://msdn.microsoft.com/library/windows/hardware/ff561613) functions.
@@ -28,9 +25,9 @@ The miniport driver's [*MiniportHaltEx*](https://msdn.microsoft.com/library/wind
 
 For more information about NDIS 6.0 data buffer management, see [Miniport Driver Buffer Management](miniport-driver-buffer-management.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -6,11 +6,8 @@ keywords:
 - SetupAPI logging WDK Windows Vista , functions
 - functions WDK SetupAPI
 - text logs WDK SetupAPI , functions
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using the SetupAPI Logging Functions
@@ -26,9 +23,9 @@ SetupAPI supports functions that installation applications, class installers, an
 
     For more information about how to use log tokens, see [Setting and Getting a Log Token for a Thread](setting-and-getting-a-log-token-for-a-thread.md).
 
- 
+ 
 
- 
+ 
 
 
 

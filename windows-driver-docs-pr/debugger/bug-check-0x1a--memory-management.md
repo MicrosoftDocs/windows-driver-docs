@@ -3,17 +3,14 @@ title: Bug Check 0x1A MEMORY_MANAGEMENT
 description: The MEMORY_MANAGEMENT bug check has a value of 0x0000001A. This indicates that a severe memory management error occurred.
 ms.assetid: 7d3ff54e-e61a-43fa-a378-fb8d32565586
 keywords: ["Bug Check 0x1A MEMORY_MANAGEMENT", "MEMORY_MANAGEMENT"]
-ms.author: windowsdriverdev
-ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 09/12/2018
 topic_type:
 - apiref
 api_name:
 - MEMORY_MANAGEMENT
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x1A: MEMORY\_MANAGEMENT
@@ -21,7 +18,7 @@ api_type:
 
 The MEMORY\_MANAGEMENT bug check has a value of 0x0000001A. This indicates that a severe memory management error occurred.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## MEMORY\_MANAGEMENT Parameters
 
@@ -48,9 +45,13 @@ Parameter 1 is the only parameter of interest; this identifies the exact violati
 <td align="left"><p>0x31</p></td>
 <td align="left"><p>The image relocation fix-up table or code stream has been corrupted. This is probably a hardware error.</p></td>
 </tr>
+<tr class="even">
+<td align="left"><p>0x3f</p></td>
+<td align="left"><p>An inpage operation failed with a CRC error. Parameter 2 contains the pagefile offset. Parameter 3 contains the page CRC value. Parameter 4 contains the expected CRC value.</p></td>
+</tr>
 <tr class="odd">
 <td align="left"><p>0x403</p></td>
-<td align="left"><p>The page table and PFNs are out of sync . This is probably a hardware error, especially if parameters 3 & 4 differ by only a single bit.</p></td>
+<td align="left"><p>The page table and PFNs are out of sync . This is probably a hardware error, especially if parameters 3 &amp; 4 differ by only a single bit.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x411</p></td>
@@ -89,9 +90,17 @@ Parameter 1 is the only parameter of interest; this identifies the exact violati
 <td align="left"><p>0x1235</p></td>
 <td align="left"><p>The caller is trying to protect an MDL with an invalid mapping.</p></td>
 </tr>
+<tr class="even">
+<td align="left"><p>0x1236</p></td>
+<td align="left"><p>The caller specified an MDL that contains an unlocked (or invalid) physical page. Parameter 2 contains a pointer to the MDL. Parameter 3 contains a pointer to the invalid PFN. Parameter 4 contains the invalid PFN value.</p></td>
+</tr>
 <tr class="odd">
 <td align="left"><p>0x3451</p></td>
 <td align="left"><p>The PTEs of a kernel thread stack that has been swapped out are corrupted.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>0x4477</p></td>
+<td align="left"><p>A driver tried to write to an unallocated address in the user space of the system process. Parameter 2 contains the address of the attempted write.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x5003</p></td>
@@ -101,9 +110,13 @@ Parameter 1 is the only parameter of interest; this identifies the exact violati
 <td align="left"><p>0x5100</p></td>
 <td align="left"><p>The allocation bitmap is corrupt. The memory manager is about to overwrite a virtual address that was already in use.</p></td>
 </tr>
+<tr class="odd">
+<td align="left"><p>0x5200</p></td>
+<td align="left"><p>A page on a free pool SLIST has been corrupted. This can be the result of a write-after-free bug in a driver, or an overrun from a previous page. Parameter 2 contains the address of a free pool block. Parameter 4 contains the value that was expected to be at that address. Parameter 3 contains the actual value that was found.</p></td>
+</tr>
 <tr class="even">
 <td align="left"><p>0x8884</p></td>
-<td align="left"><p>(Windows 7only). Two pages on the standby list that were supposed to have identical page priority values do not, in fact, have identical page priority values. The differing values are captured in parameter 4.</p></td>
+<td align="left"><p>(Windows 7 only). Two pages on the standby list that were supposed to have identical page priority values do not, in fact, have identical page priority values. The differing values are captured in parameter 4.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x8888</p>
@@ -142,30 +155,42 @@ Parameter 1 is the only parameter of interest; this identifies the exact violati
 <td align="left"><p>0x41792</p></td>
 <td align="left"><p>A corrupted PTE has been detected. Parameter 2 contains the address of the PTE. Parameters 3/4 contain the low/high parts of the PTE.</p></td>
 </tr>
+<tr class="odd">
+<td align="left"><p>0x41793</p></td>
+<td align="left"><p> A page table page has been corrupted. Parameter 2 contains a pointer to the last processed PTE. Parameter 3 contains the number of non-zero PTEs found. Parameter 4 contains the expected number of non-zero PTEs in the page table.</p><p>This memory parameter has been deprecated and is no longer available after Windows 10 version 1803.</p></td>
+</tr>
 <tr class="even">
 <td align="left"><p>0x61940</p></td>
 <td align="left"><p>A PDE has been unexpectedly invalidated.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>0x61941</p></td>
+<td align="left"><p>The paging hierarchy is corrupt. Parameter 2 is a pointer to the virtual address which caused the fault.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x61946</p></td>
 <td align="left"><p>The MDL being created is flawed. This almost always means the driver calling <strong>MmProbeAndLockPages</strong> is at fault. Typically the driver is attempting to create a Write MDL when it is being asked to process a paging Read.</p></td>
 </tr>
 <tr class="even">
+<td align="left"><p>0x61949</p></td>
+<td align="left"><p>The IoPageFrameNode is null. Parameter 2 is PageFrameIndex.</p></td>
+</tr>
+<tr class="odd">
 <td align="left"><p>0x03030303</p></td>
 <td align="left"><p>The boot loader is broken. (This value applies only to Intel Itanium machines.)</p></td>
 </tr>
-<tr class="odd">
-<td align="left"><p>Other</p></td>
-<td align="left"><p>An unknown memory management error occurred.</p></td>
+<tr class="even">
+<td align="left"><p>0x03030308</p></td>
+<td align="left"><p>The range to remove (or truncate) is in use by the loader so it cannot be safely removed, so the system must issue a stop code.  Parameter 2 is HighestPhysicalPage.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

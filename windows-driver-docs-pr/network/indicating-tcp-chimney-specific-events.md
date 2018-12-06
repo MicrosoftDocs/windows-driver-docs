@@ -4,11 +4,8 @@ description: Indicating TCP Chimney-Specific Events
 ms.assetid: 98b22b7f-8881-4029-9558-d5d94bb7878e
 keywords:
 - events WDK TCP chimney offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Indicating TCP Chimney-Specific Events
@@ -39,9 +36,9 @@ To indicate a change in the preferred send backlog size, an offload target calls
 
 [Responding to the Reception of a FIN or RST Segment](responding-to-the-reception-of-a-fin-or-rst-segment.md)
 
- 
+ 
 
- 
+ 
 
 
 

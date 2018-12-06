@@ -4,11 +4,8 @@ description: Invalidate Offload Sequence
 ms.assetid: 691bd23c-f006-4f86-9a44-e4a906820c91
 keywords:
 - invalidating offloaded state WDK TCP chimney offload , sequence
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Invalidate Offload Sequence
@@ -16,7 +13,7 @@ ms.technology: windows-devices
 
 \[The TCP chimney offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-invalidate-offload-sequence-ng"></a>
+
 
 
 When the host stack sends an invalidate offload request to NDIS, NDIS calls the offload target's [**MiniportInvalidateOffload**](https://msdn.microsoft.com/library/windows/hardware/ff559406) function. The *MiniportInvalidateOffload* function inputs the following parameters:
@@ -35,9 +32,9 @@ Note that the tree that is passed to the *MiniportInvalidateOffload* function co
 
 The NDIS\_MINIPORT\_OFFLOAD\_BLOCK\_LIST structures in the tree indicate the state to be invalidated. A non-NULL value in the **MiniportOffloadContext** member points to a memory location that contains a PVOID value that was supplied by the offload target when the state was offloaded. (For more information about the **MiniportOffloadContext** member, see [Storing and Referencing Offloaded State](storing-and-referencing-offloaded-state.md).) This PVOID value references the miniport offload context in which the offload target stores the state to be invalidated.
 
- 
+ 
 
- 
+ 
 
 
 

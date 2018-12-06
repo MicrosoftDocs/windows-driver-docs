@@ -5,18 +5,15 @@ ms.assetid: c016d6dd-f760-4340-8d56-9bd69e4fe84e
 keywords:
 - ESP-protected packets WDK IPsec offload , requirements
 - AH-protected packets WDK IPsec offload , requirements
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Requirements and Restrictions That Apply to IPsec Offloads
 
 \[The IPsec Task Offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-requirements-and-restrictions-that-apply-to-ipsec-offloads-ng"></a>
+
 
 
 The following requirements and restrictions apply to Internet protocol security (IPsec) offloads:
@@ -64,7 +61,7 @@ The following requirements and restrictions apply to Internet protocol security 
     </tbody>
     </table>
 
-     
+     
 
 <!-- -->
 
@@ -80,9 +77,9 @@ The following requirements and restrictions apply to Internet protocol security 
 
 -   IPsec tasks are not offloaded for send and receive packets that pass through a load-balancing miniport driver. For more information about load balancing, see [Load Balancing and Failover](https://msdn.microsoft.com/library/windows/hardware/ff549197).
 
- 
+ 
 
- 
+ 
 
 
 

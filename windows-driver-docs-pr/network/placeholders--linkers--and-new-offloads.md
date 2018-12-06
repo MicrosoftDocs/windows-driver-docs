@@ -9,11 +9,8 @@ keywords:
 - offload node WDK TCP chimney offload
 - placehoolders WDK TCP chimney offload
 - linkers WDK TCP chimney offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Placeholders, Linkers, and New Offloads
@@ -21,7 +18,7 @@ ms.technology: windows-devices
 
 \[The TCP chimney offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-placeholders-linkers-and-new-offloads-ng"></a>
+
 
 
 An [**NDIS\_MINIPORT\_OFFLOAD\_BLOCK\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff566469) structure in a state tree can perform one of several functions.
@@ -96,11 +93,11 @@ The following table summarizes the differences between placeholders, linkers, an
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

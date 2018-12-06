@@ -9,17 +9,14 @@ keywords:
 - receiving data WDK networking
 - NDIS_PACKET
 - NET_BUFFER data packaging WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # NET\_BUFFER Data Packaging
 
 
-## <a href="" id="ddk-net-buffer-data-packaging-ng"></a>
+
 
 
 Data packaging was redesigned in NDIS 6.0. The send and receive architecture that is based on the [**NDIS\_PACKET**](https://msdn.microsoft.com/library/windows/hardware/ff557086) structure has been replaced with an architecture that is based on [**NET\_BUFFER**](https://msdn.microsoft.com/library/windows/hardware/ff568376) and [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structures. A NET\_BUFFER structure is the functional equivalent of an NDIS\_PACKET structure. A NET\_BUFFER structure specifies a buffer (MDL chain) for network data, as well as reserved space for NDIS, protocol drivers, and miniport drivers. NET\_BUFFER structures can be linked together in a list that is described by a NET\_BUFFER\_LIST structure. A NET\_BUFFER\_LIST structure also provides storage for out-of-band (OOB) data that applies to all the NET\_BUFFER structures in the list.
@@ -32,9 +29,9 @@ NDIS propagates a driver's data backfill requirements to higher-level drivers. W
 
 For more information about the NET\_BUFFER architecture, see [NET\_BUFFER Architecture](net-buffer-architecture.md).
 
- 
+ 
 
- 
+ 
 
 
 

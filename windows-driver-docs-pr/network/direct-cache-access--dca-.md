@@ -12,11 +12,8 @@ keywords:
 - NetDMA WDK networking , direct cache access
 - CPU affinities WDK NetDMA
 - NetDMA 2.0 WDK networking , direct cache access
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Direct Cache Access (DCA)
@@ -24,9 +21,9 @@ ms.technology: windows-devices
 
 **Note**  The NetDMA interface is not supported in Windows 8 and later.
 
- 
+ 
 
-## <a href="" id="ddk-direct-cache-access--dca--ng"></a>
+
 
 
 *Direct cache access (DCA)* provides a mechanism for NetDMA clients to indicate that destination data is targeted for a CPU cache. DCA support is not present for NetDMA providers before version 2.0 and it is optional for NetDMA 2.0 and later providers. A NetDMA provider that supports DCA sets the NET\_DMA\_PROVIDER\_CHARACTERISTICS\_DCA\_SUPPORTED bit in the **Flags** member of the [**NET\_DMA\_PROVIDER\_CHARACTERISTICS**](https://msdn.microsoft.com/library/windows/hardware/ff568738) structure at the *ProviderCharacteristics* parameter of the [**NetDmaRegisterProvider**](https://msdn.microsoft.com/library/windows/hardware/ff568336) function.
@@ -39,9 +36,9 @@ A DCA-capable NetDMA engine provides an interface to control sending the DCA hin
 
 When the NET\_DMA\_OP\_TYPE\_CONTEXT\_CHANGE bit in the **ControlFlags** member is set, the DMA engine should identify the descriptor as a "Context Change" descriptor. The NetDMA interface submits a "Context Change" descriptor to a DCA-capable NetDMA provider to set the DCA target processor of the destination data for all the DMA transfers on a NetDMA channel. The NetDMA interface uses the **DCAContext8** member in a "Context Change" descriptor to specify the 8-bit advanced programmable interrupt controller (APIC) identifier of the target processor for the channel. A DCA-capable NetDMA provider must keep the DCA affinity of a DMA channel with a processor as long as it has not received a new "Context Change" descriptor. The NetDMA interface submits a "Context Change" descriptor one time after the channel is allocated and again when it detects that the DMA provider might have lost the hardware context (for example, after a suspend and resume operation).
 
- 
+ 
 
- 
+ 
 
 
 

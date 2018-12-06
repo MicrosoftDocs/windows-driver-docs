@@ -3,17 +3,14 @@ title: cpuid
 description: The cpuid extension displays information about the processors on the system.
 ms.assetid: 3dbd1079-d129-4e17-8d06-18b25fdd17c9
 keywords: ["cpuid Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - cpuid
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !cpuid
@@ -21,7 +18,7 @@ api_type:
 
 The **!cpuid** extension displays information about the processors on the system.
 
-```
+```dbgsyntax
 !cpuid [Processor]
 ```
 
@@ -50,7 +47,7 @@ Specifies the processor whose information will be displayed. If you omit this pa
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -65,7 +62,7 @@ If you are debugging in user mode, the **!cpuid** extension describes the comput
 
 The following example shows this extension.
 
-```
+```dbgcmd
 kd> !cpuid 
 CP  F/M/S  Manufacturer        MHz 
  0  6,5,1  GenuineIntel        700 
@@ -78,11 +75,10 @@ For an x86-based processor or an x64-based processor, the **F** column displays 
 
 For an Itanium-based processor, the **M** column displays the processor model number, the R column displays the processor revision number, the **F** column displays the processor family number, and the **A** column displays the architecture revision number.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!cpuid%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -2,11 +2,8 @@
 title: Container IDs for Bluetooth Devices
 description: Container IDs for Bluetooth Devices
 ms.assetid: 7e9c40d9-ed19-4ad2-a749-6e3f4aaca2de
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Container IDs for Bluetooth Devices
@@ -24,9 +21,9 @@ All Bluetooth devices must include a MAC address. Therefore, a container ID for 
 
 To ensure that a unique container ID is generated for every device, developers of Bluetooth devices must configure each device with a unique MAC address.
 
- 
+ 
 
- 
+ 
 
 
 

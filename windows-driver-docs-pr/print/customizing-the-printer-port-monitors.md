@@ -1,6 +1,5 @@
 ---
 title: Customizing the Printer Port Monitors
-author: windows-driver-content
 description: Customizing the Printer Port Monitors
 ms.assetid: e5d4166a-2593-43fd-b476-c54642e2d099
 keywords:
@@ -12,11 +11,8 @@ keywords:
 - WinSNMP conversion to Bidi data type WDK printer
 - bidirectional communication WDK print
 - bidi communication WDK print
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Customizing the Printer Port Monitors
@@ -28,7 +24,7 @@ The schemas in a bidi extension file are a subset of the standard print schema. 
 
 **Note**  If the [bidi communications schema](bidirectional-communication-schema.md) meets your requirements, you do not need to create a bidi extension file and therefore have no need to customize the print port monitors.
 
- 
+ 
 
 You should create a bidi extension file and associate it with a printer driver if any of the following conditions apply:
 
@@ -42,7 +38,7 @@ If the driver has no associated bidi extension file, the bidi communication supp
 
 **Note**   Network routing compartments in Windows Vista allow well-trusted processes connect to different network interfaces (whether virtual or physical), while keeping the various interfaces isolated from one another. For example, Windows Vista uses these compartments to enforce VPN policies that do not allow simultaneous access to both the VPN and a user's local network and Internet. During printing, the spooler impersonates the user when opening a TCP printer port. Consequently, the spooler cannot print to a local network printer while a user is connected to a VPN.
 
- 
+ 
 
 ### Structure of a Bidi Extension File
 
@@ -50,7 +46,7 @@ A bidi extension file is well-formed XML that must be valid according to the Tcp
 
 The following is an incomplete example of a TCP/IP bidi extension file that shows its basic structure. The structure of a WSD bidi extension file is similar.
 
-```
+```cpp
 <?xml version="1.0" encoding="US-ASCII"?>
 <bidi:Schema xmlns:bidi="http://schemas.microsoft.com/windows/2005/03/printing/bidi">
   <Schema>
@@ -86,12 +82,10 @@ The remainder of this section contains the following topics to help you create y
 
 [WSD Schema Extensions](wsd-schema-extensions-for-driver-specific-queries.md)
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Customizing%20the%20Printer%20Port%20Monitors%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

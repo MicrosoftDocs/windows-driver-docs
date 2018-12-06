@@ -2,17 +2,16 @@
 title: Porting code from SetupApi to CfgMgr32
 description: This topic provides code examples that show how to port code that uses Setupapi.dll functionality to use Cfgmgr32.dll instead.
 ms.assetid: 36668A17-EA56-464C-A38B-C75BE2359412
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Porting code from SetupApi to CfgMgr32
 
 
-This topic provides code examples that show how to port code that uses Setupapi.dll functionality to use Cfgmgr32.dll instead. Porting your code allows you to run your code on the Universal Windows Platform (UWP), which does not support SetupApi. A subset of CfgMgr32 is supported on UWP, specifically functionality exposed through the api-ms-win-devices-config-l1-1-0.dll API set. To see a list of functions in this API set, please refer to [Windows API Sets](https://msdn.microsoft.com/library/windows/desktop/hh802935).
+This topic provides code examples that show how to port code that uses Setupapi.dll functionality to use Cfgmgr32.dll instead. Porting your code allows you to run your code on the Universal Windows Platform (UWP), which does not support SetupApi. A subset of CfgMgr32 is supported on UWP, specifically functionality exposed through the `api-ms-win-devices-config-l1-1-0.dll` API set (Windows 8 and later) or the `api-ms-win-devices-config-l1-1-1.dll` API set (Windows 8.1 and later). In Windows 10 and later, simply link to `onecore.lib`.
+
+To see a list of functions in the above API sets, please refer to [Windows API Sets](https://msdn.microsoft.com/library/windows/desktop/hh802935) or [Onecore.lib: APIs from api-ms-win-devices-config-l1-1-1.dll](https://msdn.microsoft.com/library/windows/desktop/mt654039#_api-ms-win-devices-config-l1-1-1.dll).
 
 The following sections include code examples that applications would typically use.
 
@@ -194,7 +193,7 @@ GetDevicePropertiesCfgmgr32(
 }
 ```
 
-## <a href="" id="get-a-list-of-interfaces--get-the-device-exposing-each-interface---and-get-a-property-from-the-device"></a>Get a list of interfaces, get the device exposing each interface, and get a property from the device
+## Get a list of interfaces, get the device exposing each interface, and get a property from the device
 
 
 This example gets a list of all interfaces in class GUID_DEVINTERFACE_VOLUME using [**SetupDiGetClassDevs**](https://msdn.microsoft.com/library/windows/hardware/ff551069). For each interface, it gets the device exposing the interface and gets a property of that device.
@@ -533,21 +532,21 @@ GetDevicePropertySpecificDeviceCfgmgr32(
 
 This example shows how to disable a device using CfgMgr32. To do this with SetupApi, you would use [**SetupDiCallClassInstaller**](https://msdn.microsoft.com/library/windows/hardware/ff550922) with *InstallFunction* of **DIF_PROPERTYCHANGE**, specifying **DICS_DISABLE**.
 
-**Note**   By default, calling [**SetupDiCallClassInstaller**](https://msdn.microsoft.com/library/windows/hardware/ff550922) results in the device staying disabled across reboots. To disable the device across reboots when calling [**CM_Disable_DevNode**](https://msdn.microsoft.com/library/windows/hardware/ff537996), you must specify the **CM_DISABLE_PERSIST** flag.
+**Note**   By default, calling [**SetupDiCallClassInstaller**](https://msdn.microsoft.com/library/windows/hardware/ff550922) results in the device staying disabled across reboots. To disable the device across reboots when calling [**CM_Disable_DevNode**](https://msdn.microsoft.com/library/windows/hardware/ff537996), you must specify the **CM_DISABLE_PERSIST** flag.
 
- 
+
 
 ```ManagedCPlusPlus
     cr = CM_Locate_DevNode(&devinst,
                            (DEVINSTID_W)DeviceInstanceId,
                            CM_LOCATE_DEVNODE_NORMAL);
- 
+
     if (cr != CR_SUCCESS) {
         goto Exit;
     }
- 
+
     cr = CM_Disable_DevNode(devinst, 0);
- 
+
     if (cr != CR_SUCCESS) {
         goto Exit;
     }
@@ -562,13 +561,13 @@ This example shows how to enable a device using CfgMgr32. To do this with SetupA
     cr = CM_Locate_DevNode(&devinst,
                            (DEVINSTID_W)DeviceInstanceId,
                            CM_LOCATE_DEVNODE_NORMAL);
- 
+
     if (cr != CR_SUCCESS) {
         goto Exit;
     }
- 
+
     cr = CM_Enable_DevNode(devinst, 0);
- 
+
     if (cr != CR_SUCCESS) {
         goto Exit;
     }
@@ -583,33 +582,32 @@ This example shows how to restart a device using CfgMgr32. To do this with Setup
     cr = CM_Locate_DevNode(&devinst,
                            (DEVINSTID_W)DeviceInstanceId,
                            CM_LOCATE_DEVNODE_NORMAL);
- 
+
     if (cr != CR_SUCCESS) {
         goto Exit;
     }
- 
+
     cr = CM_Query_And_Remove_SubTree(devinst,
                                      NULL,
                                      NULL,
                                      0,
                                      CM_REMOVE_NO_RESTART);
- 
+
     if (cr != CR_SUCCESS) {
         goto Exit;
     }
- 
+
     cr = CM_Setup_DevNode(devinst,
                           CM_SETUP_DEVNODE_READY);
- 
+
     if (cr != CR_SUCCESS) {
         goto Exit;
     }
- 
 ```
 
- 
 
- 
+
+
 
 
 

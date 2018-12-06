@@ -2,11 +2,8 @@
 title: WDI TLV versioning
 description: To maintain backwards compatibility, both WDI and the miniport use the TLV stream as a versioning boundary.
 ms.assetid: 308B4C7A-4AC1-4FEB-9775-65ED088F7C48
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WDI TLV versioning
@@ -16,7 +13,7 @@ To maintain backwards compatibility, both WDI and the miniport use the TLV strea
 
 Here is the type definition of the *Context* parameter, which is passed into every Parse and Generate API.
 
-```
+```C++
 typedef struct _TLV_CONTEXT
 {
     ULONG_PTR   AllocationContext;
@@ -35,11 +32,11 @@ The XML has been augmented to support this versioning with two attributes allowe
 
 **Note**  The parser and generator assume that they are always linked with WDI\_VERSION\_LATEST. The miniport should always pass WDI\_VERSION\_LATEST for [**NDIS\_MINIPORT\_DRIVER\_WDI\_CHARACTERISTICS**](https://msdn.microsoft.com/library/windows/hardware/mt297617)::**WdiVersion** when calling [**NdisMRegisterWdiMiniportDriver**](https://msdn.microsoft.com/library/windows/hardware/mt297596) rather than using a specific version, like WDI\_VERSION\_1\_0, as they will become out of date and cause problems with the TLV parser generator because the other end might send a byte stream that is unexpected.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

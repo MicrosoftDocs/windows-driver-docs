@@ -2,11 +2,8 @@
 title: VMQ Interrupt Requirements
 description: VMQ Interrupt Requirements
 ms.assetid: 7ECC9031-D41B-4664-963D-F1C20B297B7C
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # VMQ Interrupt Requirements
@@ -55,11 +52,11 @@ A miniport driver that supports the virtual machine queue (VMQ) functionality mu
     </tbody>
     </table>
 
-     
+     
 
- 
+ 
 
- 
+ 
 
 
 

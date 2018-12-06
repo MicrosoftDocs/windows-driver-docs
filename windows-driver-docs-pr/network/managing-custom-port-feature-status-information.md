@@ -2,11 +2,8 @@
 title: Managing Custom Port Feature Status Information
 description: Managing Custom Port Feature Status Information
 ms.assetid: C989888B-1636-488A-80BF-13D136312417
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Managing Custom Port Feature Status Information
@@ -23,7 +20,7 @@ After a successful return from this OID method request, the **InformationBuffer*
 
     **Note**  For a custom feature status, the **FeatureStatusType** member is set to **NdisSwitchPortPropertyTypeCustom**.
 
-     
+     
 
 -   An [**NDIS\_SWITCH\_PORT\_FEATURE\_STATUS\_CUSTOM**](https://msdn.microsoft.com/library/windows/hardware/hh598226) structure that contains the status information about a custom property assigned to an extensible switch port.
 
@@ -45,9 +42,9 @@ The extensible switch extension must follow these guidelines when it receives an
 
 For more information about how to define and register port feature status information, see [Custom Port Feature Status](custom-port-feature-status.md).
 
- 
+ 
 
- 
+ 
 
 
 

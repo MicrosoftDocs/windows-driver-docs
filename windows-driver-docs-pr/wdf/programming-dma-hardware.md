@@ -1,6 +1,5 @@
 ---
 title: Programming DMA Hardware
-author: windows-driver-content
 description: This topic describes the functionality that a KMDF driver for a bus-master DMA device typically provides in its EvtProgramDma event callback function.
 ms.assetid: 5e74fe74-d38f-4cca-b0cf-8a6f170c4dc5
 keywords:
@@ -9,11 +8,8 @@ keywords:
 - DMA transfers WDK KMDF , hardware
 - DMA transfers WDK KMDF , starting
 - starting DMA transfers WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Programming DMA Hardware
@@ -23,7 +19,7 @@ ms.technology: windows-devices
 
 This topic describes the functionality that a KMDF driver for a bus-master DMA device typically provides in its [*EvtProgramDma*](https://msdn.microsoft.com/library/windows/hardware/ff541816) event callback function. If your driver uses the framework's DMA support, the driver must provide this callback. This information also applies to a KMDF driver for a [system-mode DMA device](supporting-system-mode-dma.md) that has a hardware interrupt.
 
-## <a href="" id="ddk-programming-dma-hardware-df"></a>
+
 
 
 The [*EvtProgramDma*](https://msdn.microsoft.com/library/windows/hardware/ff541816) callback function, which is called at IRQL = DISPATCH\_LEVEL, programs the device to start a [DMA transfer](dma-transactions-and-dma-transfers.md). The input parameters for this callback function supply the transfer's direction (input or output) and a scatter/gather list. If the transfer consists of a single packet, the scatter/gather list contains a single element.
@@ -54,7 +50,7 @@ To stop a transaction when the driver detects an error, the [*EvtProgramDma*](ht
 
 Steps 1 and 4 are illustrated in the following code example, taken from the [PLX9x5x](http://go.microsoft.com/fwlink/p/?linkid=256157) sample’s [*EvtProgramDma*](https://msdn.microsoft.com/library/windows/hardware/ff541816) callback function for read requests in the *Read.c* file.
 
-```
+```cpp
     // If errors occur in the EvtProgramDma callback,
     // release the DMA transaction object and complete the request.
 
@@ -72,12 +68,11 @@ Steps 1 and 4 are illustrated in the following code example, taken from the [PLX
                     "<-- PLxEvtProgramReadDma: errors ****");
         return FALSE;
     }
-
 ```
 
 The example calls the **PLxReadRequestComplete** function to perform steps 2 and 3:
 
-```
+```cpp
 VOID
 PLxReadRequestComplete(
     IN WDFDMATRANSACTION  DmaTransaction,
@@ -123,9 +118,9 @@ Return Value:
 }
 ```
 
- 
 
- 
+
+
 
 
 

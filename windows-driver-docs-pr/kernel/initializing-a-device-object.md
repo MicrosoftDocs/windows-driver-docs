@@ -1,20 +1,16 @@
 ---
 title: Initializing a Device Object
-author: windows-driver-content
 description: Initializing a Device Object
 ms.assetid: 97820c62-aade-4ae7-92a6-7490d0ad5697
 keywords: ["device objects WDK kernel , initializing", "initializing device objects"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Initializing a Device Object
 
 
-## <a href="" id="ddk-initializing-a-device-object-kg"></a>
+
 
 
 After [**IoCreateDevice**](https://msdn.microsoft.com/library/windows/hardware/ff548397) returns, giving the caller a pointer to a *DeviceObject* that contains a pointer to the [*device extension*](device-extensions.md), drivers must set up certain fields in the device objects for their respective physical, logical, and/or virtual devices.
@@ -43,12 +39,10 @@ The driver can then set any other device-dependent values in the device object. 
 
 After initializing the device object, a driver can also initialize any Kernel-defined objects and other system-defined data structures for which it has provided storage in the device extension. Precisely when a driver performs these tasks depends on its device, the type of the object, and/or the nature of the data. In general, any objects or data structures that can persist through PnP start and stop requests can be initialized in the [*AddDevice*](https://msdn.microsoft.com/library/windows/hardware/ff540521) routine. Those that require resource information provided with a PnP [**IRP\_MN\_START\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551749) request, or that might require changes when the device is stopped and/or restarted, should be initialized when the driver handles the **IRP\_MN\_START\_DEVICE** request. For more information about *AddDevice* routines, see [Writing an AddDevice Routine](writing-an-adddevice-routine.md).
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20Initializing%20a%20Device%20Object%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

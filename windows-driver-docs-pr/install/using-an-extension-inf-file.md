@@ -2,11 +2,8 @@
 title: Using an Extension INF File
 description: Starting in Windows 10, you can extend a driver package INF file's functionality by providing an additional INF file called an extension INF.
 ms.assetid: 124C4E58-7F06-46F5-B530-29A03FA75C0A
-ms.author: windowsdriverdev
-ms.date: 06/5/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 06/05/2017
+ms.localizationpriority: medium
 ---
 
 # Using an Extension INF File
@@ -63,7 +60,7 @@ Here are the entries you need to define an INF as an extension INF.
 
 1.  Specify these values for **Class** and **ClassGuid** in the [**Version**](inf-version-section.md) section. For more info on setup classes, see [System-Defined Device Setup Classes Available to Vendors](https://msdn.microsoft.com/library/windows/hardware/ff553426).
 
-    ```
+    ```cpp
     [Version]
     ...
     Class       = Extension
@@ -72,7 +69,7 @@ Here are the entries you need to define an INF as an extension INF.
 
 2.  Provide an **ExtensionId** entry in the [**\[Version\]**](inf-version-section.md) section. Generate a new GUID for the initial version of an extension INF, or reuse the last GUID for subsequent updates of the initial extension INF.
 
-    ```
+    ```cpp
     ExtensionId = {zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz} ; replace with your own GUID
     ```
 
@@ -82,7 +79,7 @@ Note that an organization may only use an **ExtensionID** that it owns.  For inf
 
 4.  In the [**INF Models section**](inf-models-section.md), specify one or more hardware and compatible IDs that match those of the target device.  Note that these hardware and compatible IDs do not need to match those of the base INF.  Typically, an extension INF lists a more specific hardware ID than the base INF, with the goal of further specializing a specific driver configuration.  For example, the base INF might use a two-part PCI hardware ID, while the extension INF specifies a four-part PCI hardware ID, like the following:
     
-    ```
+    ```cpp
     [DeviceExtensions.NTamd64]
     %Device.ExtensionDesc% = DeviceExtension_Install, PCI\VEN_XXXX&DEV_XXXX&SUBSYS_XXXXXXXX&REV_XXXX
     ```
@@ -97,11 +94,18 @@ In most cases, you'll submit an extension INF package to the Hardware Dev Center
 
 The driver validation and submission process is the same for extension INFs as for regular INFs. For more info, see [Windows HLK Getting Started](https://msdn.microsoft.com/library/windows/hardware/dn915002).
 
+## Uninstalling an extension driver
+
+Before uninstalling an extension driver, you must first uninstall the base device.  Next, run PnPUtil on the extension INF.
+
+To delete the driver package, use `pnputil /delete-driver oem0.inf`.
+To force delete the driver package, use `pnputil /delete-driver oem1.inf /force`.
+
 ## Example 1: Using an extension INF to set the device friendly name
 
 In one common scenario, a device manufacturer (IHV) provides a base driver and a base INF, and then a system builder (OEM) provides an extension INF that supplements and in some cases overrides the configuration and settings of the base INF.  The following snippet is a complete extension INF that shows how to set the device friendly name.
 
-```
+```cpp
 [Version]
 Signature   = "$WINDOWS NT$"
 Class       = Extension
@@ -137,7 +141,7 @@ The following snippet is a complete extension INF that is included in the [Drive
 
 To access this file online, see [`osrfx2_DCHU_extension.inx`](https://github.com/Microsoft/Windows-driver-samples/blob/master/general/DCHU/osrfx2_DCHU_extension_loose/osrfx2_DCHU_extension/osrfx2_DCHU_extension.inx).
 
-```
+```cpp
 ;/*++
 ;
 ;Copyright (c) Microsoft Corporation.  All rights reserved.
@@ -225,7 +229,7 @@ You can also use an extension INF to install a filter driver for a device that u
 
 The following code snippet shows how to use an extension INF to install a filter driver.
 
-```
+```cpp
 [Version]
 Signature   = "$WINDOWS NT$"
 Class       = Extension
@@ -280,13 +284,7 @@ FilterSample.ServiceDesc = "Sample Upper Filter"
 
 ##  Submitting an extension INF for certification
 
-This section describes how to certify a base driver and related extension INF file.
-There are two options:
-
-1.	Test the base driver and generate a digitally signed .hlkx file (submission package).  Submit it twice:
-    *  First, submit the .hlkx package with the base drivers in the drivers folder. Do not include your extension INF file in this submission.
-    *  Next, remove the base drivers from the drivers folder and add the extension INF template instead.  If additional binaries are required for the extension INF, add these as well.  Resubmit the .hlkx package. If extension INF changes are required later, open a Driver Update Acceptable (DUA) request on this submission. 
-2.	Alternatively, create a custom extension INF without a template. In this case, the extension INF is treated like a completely new driver. Run a full HLK test pass against the device and submit the resulting logs along with the extension INF.
+For detailed information on how to work with Extension INFs on the Hardware Dev Center, please see [Working with Extension INFs in the Windows Hardware Dev Center Dashboard](../dashboard/submit-dashboard-extension-inf-files.md).
 
 ## Related topics
 

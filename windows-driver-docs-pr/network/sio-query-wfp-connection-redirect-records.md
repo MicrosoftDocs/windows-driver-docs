@@ -1,15 +1,11 @@
 ---
 title: SIO_QUERY_WFP_CONNECTION_REDIRECT_RECORDS control code
-author: windows-driver-content
 description: The SIO_QUERY_WFP_CONNECTION_REDIRECT_RECORDS socket I/O control operation allows a Winsock client to retrieve the redirect record for a redirected connection.
 ms.assetid: D04C63B8-DD08-4943-9F83-B5D05F4F2CCF
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -SIO_QUERY_WFP_CONNECTION_REDIRECT_RECORDS control code Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # SIO\_QUERY\_WFP\_CONNECTION\_REDIRECT\_RECORDS control code
@@ -21,7 +17,7 @@ A WFP redirect record is a buffer of opaque data that WFP must set on an outboun
 
 **Note**  The **SIO\_QUERY\_WFP\_CONNECTION\_REDIRECT\_RECORDS** query can only be used if the connection was redirected at the **FWPS\_LAYER\_ALE\_CONNECT\_REDIRECT\_V4** or **FWPS\_LAYER\_ALE\_CONNECT\_REDIRECT\_V6** layer by a WFP client.
 
- 
+ 
 
 For more information about redirection, see [Using Bind or Connect Redirection](https://msdn.microsoft.com/library/windows/hardware/ff571005).
 
@@ -78,7 +74,7 @@ To query the redirect record for the redirected connection, a Winsock client cal
 </tbody>
 </table>
 
- 
+ 
 
 The caller can perform this query in either of the following ways:
 
@@ -87,7 +83,7 @@ The caller can perform this query in either of the following ways:
 
 **Note**  It is also possible to perform this query in a user-mode application by using [**SIO\_QUERY\_WFP\_CONNECTION\_REDIRECT\_RECORDS (SDK)**](https://msdn.microsoft.com/library/windows/desktop/hh859713).
 
- 
+ 
 
 For this type of request, the Winsock client must specify a pointer to an IRP and a pointer to its completion routine. The IRP can be passed to the client by a higher driver or the client can choose to allocate the IRP. To specify the completion routine, the client must call [**IoSetCompletionRoutine**](https://msdn.microsoft.com/library/windows/hardware/ff549679). For more details, see [Using IRPs with Winsock Kernel Functions](https://msdn.microsoft.com/library/windows/hardware/ff571006).
 
@@ -136,12 +132,10 @@ Requirements
 
 [**SIO\_SET\_WFP\_CONNECTION\_REDIRECT\_RECORDS**](sio-set-wfp-connection-redirect-records.md)
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20SIO_QUERY_WFP_CONNECTION_REDIRECT_RECORDS%20control%20code%20%20RELEASE:%20%288/8/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

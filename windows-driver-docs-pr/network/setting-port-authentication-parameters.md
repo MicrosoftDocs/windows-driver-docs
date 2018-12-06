@@ -7,17 +7,14 @@ keywords:
 - NDIS ports WDK , OID requests
 - OID requests WDK NDIS ports
 - authentication parameters WDK NDIS ports
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Setting Port Authentication Parameters
 
 
-## <a href="" id="ddk-setting-port-authentication-parameters-ng"></a>
+
 
 
 NDIS and overlying drivers use an [OID\_GEN\_PORT\_AUTHENTICATION\_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/ff569623) OID set request to set the current state of an NDIS port. Miniport drivers that support NDIS ports must support this OID.
@@ -26,9 +23,9 @@ If the set request is successful, the miniport driver uses the receive port dire
 
 The miniport should generate an [**NDIS\_STATUS\_PORT\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff567415) status indication to notify overlying drivers of any state changes.
 
- 
+ 
 
- 
+ 
 
 
 

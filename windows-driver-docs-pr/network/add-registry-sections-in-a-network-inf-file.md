@@ -10,17 +10,14 @@ keywords:
 - keys WDK network INF files
 - Ndi key WDK networking
 - values WDK network INF files
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Add-registry-sections in a Network INF File
 
 
-## <a href="" id="ddk-add-registry-sections-ng"></a>
+
 
 
 An INF file contains one or more *add-registry-sections* for each component that it installs. An *add-registry-section* adds keys and values to the registry. The **DDInstall** section of an INF file contains an **AddReg** directive that references one or more *add-registry-sections*. For more information about the *add-registry-section* and the **AddReg** directive, see [**INF AddReg Directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320).
@@ -45,7 +42,7 @@ An *add-registry-section* in an INF file for a **NetClient** component must add 
 
 **Note**  **NetClient** components are deprecated in Windows 8.1, Windows Server 2012 R2, and later.
 
- 
+ 
 
 ### <a href="" id="ddk-creating-the-ndi-key-ng"></a>Creating the Ndi Key
 
@@ -65,9 +62,9 @@ Each network INF file must contain at least one *add-registry-section* that adds
 
 For a list of **Ndi** registry keys and values that are available in Windows 95/98/Me but not used in Windows 2000 and later versions, see [Ndi Values and Keys Not Used in Windows 2000 and Later Versions](ndi-values-and-keys-not-used-in-windows-2000-and-later-versions.md).
 
- 
+ 
 
- 
+ 
 
 
 

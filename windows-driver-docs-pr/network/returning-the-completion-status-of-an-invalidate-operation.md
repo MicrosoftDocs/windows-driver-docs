@@ -5,11 +5,8 @@ ms.assetid: f205ccd4-7b00-467e-950e-2601820d5275
 keywords:
 - invalidating offloaded state WDK TCP chimney offload , completion status
 - completion status of invalidation WDK TCP chimney offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Returning the Completion Status of an Invalidate Operation
@@ -17,7 +14,7 @@ ms.technology: windows-devices
 
 \[The TCP chimney offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-returning-the-completion-status-of-an-invalidate-operation-ng"></a>
+
 
 
 Before calling the [**NdisMInvalidateOffloadComplete**](https://msdn.microsoft.com/library/windows/hardware/ff563609) function, the offload target must write either of the following NDIS\_STATUS values to the **Status** member of each [**NDIS\_MINIPORT\_OFFLOAD\_BLOCK\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff566469) structure in the state tree:
@@ -40,9 +37,9 @@ If the hardware state is corrupt, the offload target must do the following:
 
 5.  Call the [**NdisMTerminateOffloadComplete**](https://msdn.microsoft.com/library/windows/hardware/ff563685) function.
 
- 
+ 
 
- 
+ 
 
 
 

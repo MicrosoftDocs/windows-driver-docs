@@ -3,24 +3,21 @@ title: drivers
 description: In Windows XP and later versions of Windows, the drivers extension is obsolete. Instead use the lm command.
 ms.assetid: 48b69af3-bf00-43d3-ac1a-e9513ead8647
 keywords: ["drivers Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - drivers
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !drivers
 
 In Windows XP and later versions of Windows, the **!drivers** extension is obsolete. To display information about loaded drivers and other modules, use the [**lm**](lm--list-loaded-modules-.md) command. The command lm t n displays information in a format very similar to the old **!drivers** extension. However, this command will not display the memory usage of the drivers as the **!drivers** extension did. It will only display the drivers' start and end addresses, image names, and timestamps. The [**!vm**](-vm.md) and [**!memusage**](-memusage.md) extensions can be used to display memory usage statistics.
 
-```
+```dbgcmd
 !drivers [Flags]
 ```
 
@@ -58,7 +55,7 @@ Causes the display to be a much longer and more detailed list of the driver imag
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -99,11 +96,11 @@ An explanation of this command's display is given in the following table:
 </tr>
 <tr class="odd">
 <td align="left"><p>Resident</p></td>
-<td align="left"><p>(Only when Flag 0x1 or 0x2 is used) The amount of the driver's memory that actually resides in physical memory.</p></td>
+<td align="left"><p>(Only when Flag 0x1 or 0x2 is used) The amount of the driver&#39;s memory that actually resides in physical memory.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Standby</p></td>
-<td align="left"><p>(Only when Flag 0x1 or 0x2 is used) The amount of the driver's memory that is on standby.</p></td>
+<td align="left"><p>(Only when Flag 0x1 or 0x2 is used) The amount of the driver&#39;s memory that is on standby.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Loader Entry</p></td>
@@ -120,11 +117,11 @@ An explanation of this command's display is given in the following table:
 </tbody>
 </table>
 
- 
+ 
 
 The following is a truncated example of this command:
 
-```
+```dbgcmd
 kd> !drivers
 Loaded System Driver Summary
 Base     Code Size      Data Size      Driver Name  Creation Time
@@ -134,11 +131,10 @@ Base     Code Size      Data Size      Driver Name  Creation Time
 8065a000 a460  ( 41 kb) 1e80   ( 7 kb) SCSIPORT.SYS Fri May 05 20:08:05
 ```
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!drivers%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

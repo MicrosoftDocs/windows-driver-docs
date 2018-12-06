@@ -7,17 +7,14 @@ keywords:
 - NDIS ports WDK , managing
 - port states WDK NDIS
 - port numbers WDK NDIS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Managing an NDIS Port
 
 
-## <a href="" id="ddk-managing-ndis-ports-ng"></a>
+
 
 
 Interested NDIS drivers and user-mode applications can manage NDIS ports. NDIS provides services to help manage ports.
@@ -47,9 +44,9 @@ This section includes:
 
 [Handling NDIS Ports PnP Event Notifications](handling-ndis-ports-pnp-event-notifications.md)
 
- 
+ 
 
- 
+ 
 
 
 

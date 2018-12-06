@@ -2,11 +2,8 @@
 title: Supported Ethernet NICs for Network Kernel Debugging in Windows 8.1
 description: You can do kernel debugging over an Ethernet network cable when the target computer is running Windows 8.1. The target computer must have a supported network interface card (NIC) or network adapter.
 ms.assetid: C608A406-C008-4075-B6BE-C14CFFC3A820
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Supported Ethernet NICs for Network Kernel Debugging in Windows 8.1
@@ -18,7 +15,7 @@ During kernel debugging, the computer that runs the debugger is called the *host
 
 **Note**  Support for kernel debugging over selected 10 gigabit network adapters is a new feature in Windows 8.1. Debugging over 10 gigabit network adapters is not supported in Windows 8. For a list of network adapters supported by Windows 8 for kernel debugging, see [Supported Ethernet NICs for Network Kernel Debugging in Windows 8](supported-ethernet-nics-for-network-kernel-debugging-in-windows-8.md).
 
- 
+ 
 
 ## <span id="System_Requirements"></span><span id="system_requirements"></span><span id="SYSTEM_REQUIREMENTS"></span>System Requirements
 
@@ -394,17 +391,15 @@ For vendor ID 15B3, these device IDs are supported:
 ## <span id="related_topics"></span>Related topics
 
 
-[Setting Up Kernel-Mode Debugging over a Network Cable in Visual Studio](setting-up-a-network-debugging-connection-in-visual-studio.md)
 
-[Setting Up Kernel-Mode Debugging over a Network Cable Manually](setting-up-a-network-debugging-connection.md)
+[Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md)
 
 [Supported Ethernet NICs for Network Kernel Debugging in Windows 8](supported-ethernet-nics-for-network-kernel-debugging-in-windows-8.md)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Supported%20Ethernet%20NICs%20for%20Network%20Kernel%20Debugging%20in%20Windows%208.1%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

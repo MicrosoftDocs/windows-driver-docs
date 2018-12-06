@@ -2,11 +2,8 @@
 title: Universal Windows Drivers for Audio
 description: In Windows 10 you can write a universal audio driver that will work across many types of hardware.
 ms.assetid: F4B56B3F-792F-4887-AF0F-FFC1F000CB8F
-ms.author: windowsdriverdev
 ms.date: 10/27/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Universal Windows Drivers for Audio
@@ -98,7 +95,7 @@ This diagram summarizes a componentized audio installation.
 
 ![The componentized audio stack showing DSP driver codec and APOs](images/audio-componentized-stack-diagram.png)
 
-A separate extension INF file is used for each software component. For more information, see 
+A separate extension INF file is used to customize each base driver component for a particular system. Customizations include tuning parameters and other system-specific settings. For more information, see 
 [Using an Extension INF File](https://docs.microsoft.com/windows-hardware/drivers/install/using-an-extension-inf-file).
 
 An extension INF file must be a universal INF file. For more information, see [Using a Universal INF File](https://docs.microsoft.com/windows-hardware/drivers/install/using-a-universal-inf-file).
@@ -133,8 +130,8 @@ The traditional INF files continue to be available in the SYSVAD sample.
 
 ### APO vendor specific tuning parameters and feature configuration
 
-All APO vendor system specific settings, parameters, and tuning values must be installed via the audio OEM extension INF package. In many cases, this can be performed in a simple manner with the AddReg directive. In more complex cases, a tuning file can be used.  
- 
+All APO vendor system specific settings, parameters, and tuning values must be installed via an extension INF package. In many cases, this can be performed in a simple manner with the [INF AddReg directive](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive). In more complex cases, a tuning file can be used.  
+ 
 Base driver packages must not depend on these customizations in order to function (although of course functionality may be reduced).  
 
 
@@ -145,19 +142,19 @@ To programmatically launch a UWP Hardware Support App, based on a driver event (
 ### APO and device driver vendor use of the AudioModules API
 
 The Audio Modules API/DDI is designed to standardize the communication transport (but not the protocol) for commands passed between a UWP application or user-mode service to a kernel driver module or DSP processing block. Audio Modules requires a driver implementing the correct DDI to support module enumeration and communication. The commands are passed as binary and interpretation/definition is left up to the creator.  
- 
+ 
 Audio Modules is not currently designed to facilitate direct communication between a UWP app and a SW APO running in the audio engine. 
 
 For more information about audio modules, see [Implementing Audio Module Communication](https://docs.microsoft.com/windows-hardware/drivers/audio/implementing-audio-module-communication) and [Configure and query audio device modules](https://docs.microsoft.com/windows-hardware/drivers/audio/configure-and-query-audiodevicemodules).
 
 
 ### APO HWID strings construction  
- 
+ 
 APO Hardware IDs incorporate both standard information and vendor-defined strings. 
 
 They are constructed as follows: 
 
-```
+```syntax
 APO\VEN_v(4)&AID_a(4)&SUBSYS_ n(4)s(4) &REV_r(4) 
 APO\VEN_v(4)&AID_a(4)&SUBSYS_ n(4)s(4) 
 APO\VEN_v(4)&AID_a(4) 
@@ -181,10 +178,10 @@ To allow the latest driver to be used, be sure and update the date and version, 
 ### APO driver registry key
 
 For third party-defined audio driver/APO registry keys, use the HKR with the exception of HKLM\System\CurrentControlSet. 
- 
+ 
 
 ### Use a Windows Service to facilitate UWP <-> APO communication
- 
+ 
 A Windows Service is not strictly required for management of user-mode components like APOs, however, if your design includes an RPC server to facilitate UWP <-> APO communication, we recommend implementing that functionality in a Windows Service that then controls the APO running in the audio engine.  
 
 
@@ -203,6 +200,7 @@ Complete the following steps to build the sysvad sample for Windows 10 desktop.
 4. Locate the output directory for the build from the build. For example it could be located in a directory like this:
 
 ` C:\Program Files (x86)\Windows Kits\10\src\audio\sysvad\x64\Debug\package`
+
 5. Navigate to the Tools folder in your WDK installation and locate the PnpUtil tool. For example, look in the following folder: C:\\Program Files (x86)\\Windows Kits\\10\\Tools\\x64\\PnpUtil.exe .
 
 6. Copy the following files to the system that you want to install the sysvad driver:
@@ -216,7 +214,7 @@ Complete the following steps to build the sysvad sample for Windows 10 desktop.
 | PropPageExt.dll            | A sample driver extension for a property page.                                    |
 | KeywordDetectorAdapter.dll | A sample keyword detector.                                                        |
 
- 
+ 
 
 ## <span id="Install_and_test_the_driver"></span><span id="install_and_test_the_driver"></span><span id="INSTALL_AND_TEST_THE_DRIVER"></span>Install and test the driver
 
@@ -257,12 +255,10 @@ Complete the following steps to build the sysvad sample for Windows 10 Mobile.
 
 6. After the OS image contains the driver package is running, play a sound clip and validate that the sysvad phone audio sample is functional. You can establish a kernel debugger connection to monitor the sysvad virtual driver on a mobile device.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Universal%20Windows%20Drivers%20for%20Audio%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

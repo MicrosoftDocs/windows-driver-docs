@@ -6,17 +6,14 @@ keywords:
 - parties WDK CoNDIS
 - multipoint calls WDK CoNDIS
 - adding parties to multipoint calls
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Adding a Party to a Multipoint Call
 
 
-## <a href="" id="ddk-adding-a-party-to-a-multipoint-call-ng"></a>
+
 
 
 A client requests to add a party to a multipoint call with [**NdisClAddParty**](https://msdn.microsoft.com/library/windows/hardware/ff561625). A client can add a party only to an existing multipoint call--that is, a call for which the client supplied a *ProtocolPartyContext* to [**NdisClMakeCall**](https://msdn.microsoft.com/library/windows/hardware/ff561635)(see [Making a Call](making-a-call.md)).
@@ -57,9 +54,9 @@ If the client passed in call parameters that did not match those already establi
 
 The call to **Ndis(M)CmAddPartyComplete** causes NDIS to call the client's [**ProtocolClAddPartyComplete**](https://msdn.microsoft.com/library/windows/hardware/ff570221) function. If the client's request to add the party succeeded and if the signaling protocol allows the call manager or MCM driver to modify the call parameters, *ProtocolClAddPartyComplete* should test the CALL\_PARAMETERS\_CHANGED flag in the buffered CO\_CALL\_PARAMETERS structure to determine whether the call parameters were modified. The signaling protocol determines what the client can do if it finds the modifications to CO\_CALL\_PARAMETERS unacceptable. Usually, a client calls [**NdisClDropParty**](https://msdn.microsoft.com/library/windows/hardware/ff561629) in this case (see [Dropping a Party from a Multipoint Call](dropping-a-party-from-a-multipoint-call.md)).
 
- 
+ 
 
- 
+ 
 
 
 

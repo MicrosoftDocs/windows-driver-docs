@@ -7,9 +7,7 @@ keywords:
 - signing biometric drivers
 ms.author: dawnwood
 ms.date: 07/19/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 
@@ -17,14 +15,15 @@ ms.technology: windows-devices
 
 
 ## Submitting a fingerprint driver for Windows Hello compatibility 
-Microsoft has introduced new requirements on biometric sensors to comply with Windows Hello quality guidelines. A new manual review process will be necessary to gain approval to interoperate with Windows Hello. The process will be enforced with an OS check for a specific signature obtained through the Windows DevCenter (here: https://developer.microsoft.com/en-us/) that can only be obtained by undergoing the process in this document. Drivers that have been created and signed by WHQL before 6/1/17 are grandfathered. New and updated drivers that do not obtain this signature after this date will not work with Windows Hello in Window 10, version 1703 or later after the enforcement date.
+Microsoft has introduced new requirements on biometric sensors to comply with Windows Hello quality guidelines. A new manual review process will be necessary to gain approval to interoperate with Windows Hello. The process will be enforced with an OS check for a specific signature obtained through the Windows DevCenter (here: https://developer.microsoft.com/) that can only be obtained by undergoing the process in this document. Drivers that have been created and signed by WHQL before 6/1/17 are grandfathered. New and updated drivers that do not obtain this signature after this date will not work with Windows Hello in Window 10, version 1703 or later after the enforcement date.
 
 A driver will always undergo manual approval to obtain the Windows Hello signature. Updates to approved drivers can refer to previous submissions for faster approval. Drivers must undergo a new review if it applies to a new sensor, or if changes to the matching engine have occurred that impact FAR, FRR, or presentation attack detection. 
 
 The biometric signature enforcement date is 6/1/2017, after which drivers that do not contain the bio signature will not be loaded and will no longer work with Windows Hello.
 
 ### Step One: Create a biometric driver
-Follow the instructions here to create a biometric driver: https://msdn.microsoft.com/en-us/library/windows/desktop/dd401509(v=vs.85).aspx
+Follow the instructions here to create a biometric driver: 
+https://docs.microsoft.com/windows/desktop/SecBioMet/biometric-service-api-portal
 
 ### Step Two: Test your sensor and self-validate
 Self validate the sensor and driver to ensure they meet Microsoft’s biometric requirements and report findings in the Fingerprint Security Review Template. Documents for the requirements and template can be found within the Fingerprint partner package on Connect. If you do not have access to Connect, contact your Microsoft representative.
@@ -37,7 +36,7 @@ When you submit your driver, the Windows 10, version 1703 Fingerprint HLK test w
 **updateExistingSubmission**: true if the submission serves as an update to a previous submission that has undergone the security review and false if otherwise.
 
 #### Example
- ```
+ ```cpp
 <?xml version="1.0" encoding="utf-8"?>
 <bioTestConfiguration version="0" runOptional="false" runInteractive="true" abortOnFailure="false" manualStep="false" priority="3" logType="WTT">
   <vendorCompliance>
@@ -70,7 +69,7 @@ Biometric driver packages will need to be submitted to the new DevCenter portal 
 
 For example, if the driver package contained a sensor, engine, and storage adaptor named sensor.dll, engine.dll, and storage.dll respectively, and one loaded stringparser.dll, then to obtain the bio signature on each one, the INF file would have to include the following components:
 
-```
+```cpp
 [SignatureAttributes]
 sensor.dll = SignatureAttributes.WindowsHello
 engine.dll = SignatureAttributes.WindowsHello
@@ -102,11 +101,10 @@ The driver configuration xml should be included in the driver package that is su
 ## Related topics
 
 
-[Windows Hello face authentication](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/windows-hello-face-authentication)
+[Windows Hello face authentication](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello-face-authentication)
 
-[Windows Hello](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/windows-hello)
+[Windows Hello](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello)
 
-[Biometric Devices Design Guide](https://docs.microsoft.com/en-us/windows-hardware/drivers/biometric/)
+[Biometric Devices Design Guide](https://docs.microsoft.com/windows-hardware/drivers/biometric/)
 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[biometric\biometric]:%20windows%20hello%20driver%20signing%20RELEASE:%20%287/19/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")

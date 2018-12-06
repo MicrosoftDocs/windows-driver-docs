@@ -1,12 +1,8 @@
 ---
 Description: Use the USB User-Mode Driver template provided with Microsoft Visual Studio to write a UMDF client driver.
 title: How to write your first USB client driver (UMDF)
-author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # How to write your first USB client driver (UMDF)
@@ -84,7 +80,7 @@ This topic assumes that the name of the project is "MyUSBDriver\_UMDF\_". It con
 | *&lt;Project name&gt;*.inf | INF file that is required to install the client driver on the target computer.                                                                                                                                                                                                                                                                                                                                                               |
 | Exports.def                | DEF file that exports the entry point function name of the driver module.                                                                                                                                                                                                                                                                                                                                                                    |
 
- 
+ 
 
 ### <a href="" id="modify-the-inf-file-to-add-information-about-your-device"></a>Step 2: Modify the INF file to add information about your device
 
@@ -118,11 +114,11 @@ Notice the **AddReg** entries in the driver's information (INF) file.
 
 `HKR,,CoInstallers32,0x00010008,"WinUsbCoinstaller2.dll"`
 
--   WudfCoinstaller.dll (configuration co-installer)
--   WUDFUpdate\_*&lt;version&gt;*.dll (redistributable co-installer)
--   Wdfcoinstaller*&lt;version&gt;*.dll (co-installers for KMDF)
--   Winusbcoinstaller2.dll ((co-installers for Winusb.sys)
--   MyUSBDriver\_UMDF\_.dll (client driver module)
+- WudfCoinstaller.dll (configuration co-installer)
+- WUDFUpdate\_*&lt;version&gt;*.dll (redistributable co-installer)
+- Wdfcoinstaller<em>&lt;version&gt;</em>.dll (co-installers for KMDF)
+- Winusbcoinstaller2.dll ((co-installers for Winusb.sys)
+- MyUSBDriver\_UMDF\_.dll (client driver module)
 
 If your INF AddReg directive references the UMDF redistributable co-installer (WUDFUpdate\_*&lt;version&gt;*.dll ), you must not make a reference to the configuration co-installer (WUDFCoInstaller.dll). Referencing both co-installers in the INF will lead to installation errors.
 
@@ -160,64 +156,64 @@ The template code contains several trace messages (TraceEvents) that can help yo
 
 **To configure your host computer for WPP tracing**
 
-1.  Create trace message format (TMF) files by extracting trace message formatting instructions from the PDB symbol file.
+1. Create trace message format (TMF) files by extracting trace message formatting instructions from the PDB symbol file.
 
-    You can use Tracepdb.exe to create TMF files. The tool is located in the *&lt;install folder&gt;*Windows Kits\\8.0\\bin\\*&lt;architecture&gt;* folder of the WDK. The following command creates TMF files for the driver project.
+   You can use Tracepdb.exe to create TMF files. The tool is located in the <em>&lt;install folder&gt;</em>Windows Kits\\8.0\\bin\\*&lt;architecture&gt;* folder of the WDK. The following command creates TMF files for the driver project.
 
-    **tracepdb -f \[PDBFiles\] -p \[TMFDirectory\]**
+   **tracepdb -f \[PDBFiles\] -p \[TMFDirectory\]**
 
-    The **-f** option specifies the location and the name of the PDB symbol file. The **-p** option specifies the location for the TMF files that are created by Tracepdb. For more information, see [**Tracepdb Commands**](https://msdn.microsoft.com/library/windows/hardware/ff553043).
+   The **-f** option specifies the location and the name of the PDB symbol file. The **-p** option specifies the location for the TMF files that are created by Tracepdb. For more information, see [**Tracepdb Commands**](https://msdn.microsoft.com/library/windows/hardware/ff553043).
 
-    At the specified location you'll see three files (one per .c file in the project). They are given GUID file names.
+   At the specified location you'll see three files (one per .c file in the project). They are given GUID file names.
 
-2.  In the debugger, type the following commands:
-    1.  **.load Wmitrace**
+2. In the debugger, type the following commands:
+   1.  **.load Wmitrace**
 
-        Loads the Wmitrace.dll extension.
+       Loads the Wmitrace.dll extension.
 
-    2.  **.chain**
+   2.  **.chain**
 
-        Verify that the debugger extension is loaded.
+       Verify that the debugger extension is loaded.
 
-    3.  **!wmitrace.searchpath +***&lt;TMF file location&gt;*
+   3.  **!wmitrace.searchpath +***&lt;TMF file location&gt;*
 
-        Add the location of the TMF files to the debugger extension's search path.
+       Add the location of the TMF files to the debugger extension's search path.
 
-        The output resembles this:
+       The output resembles this:
 
-        `Trace Format search path is: 'C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE;c:\drivers\tmf'`
+       `Trace Format search path is: 'C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE;c:\drivers\tmf'`
 
 **To configure your target computer for WPP tracing**
 
-1.  Make sure you have the Tracelog tool on your target computer. The tool is located in the *&lt;install\_folder&gt;*Windows Kits\\8.0\\Tools\\*&lt;arch&gt;* folder of the WDK. For more information, see [**Tracelog Command Syntax**](https://msdn.microsoft.com/library/windows/hardware/ff553012).
-2.  Open a **Command Window** and run as administrator.
-3.  Type the following command:
+1. Make sure you have the Tracelog tool on your target computer. The tool is located in the <em>&lt;install\_folder&gt;</em>Windows Kits\\8.0\\Tools\\*&lt;arch&gt;* folder of the WDK. For more information, see [**Tracelog Command Syntax**](https://msdn.microsoft.com/library/windows/hardware/ff553012).
+2. Open a **Command Window** and run as administrator.
+3. Type the following command:
 
-    **tracelog -start MyTrace -guid \#c918ee71-68c7-4140-8f7d-c907abbcb05d -flag 0xFFFF -level 7-rt -kd**
+   **tracelog -start MyTrace -guid \#c918ee71-68c7-4140-8f7d-c907abbcb05d -flag 0xFFFF -level 7-rt -kd**
 
-    The command starts a trace session named MyTrace.
+   The command starts a trace session named MyTrace.
 
-    The **guid** argument specifies the GUID of the trace provider, which is the client driver. You can get the GUID from Trace.h in the Microsoft Visual Studio Professional 2012 project. As another option, you can type the following command and specify the GUID in a .guid file. The file contains the GUID in hyphen format:
+   The **guid** argument specifies the GUID of the trace provider, which is the client driver. You can get the GUID from Trace.h in the Microsoft Visual Studio Professional 2012 project. As another option, you can type the following command and specify the GUID in a .guid file. The file contains the GUID in hyphen format:
 
-    **tracelog -start MyTrace -guid c:\\drivers\\Provider.guid -flag 0xFFFF -level 7-rt -kd**
+   **tracelog -start MyTrace -guid c:\\drivers\\Provider.guid -flag 0xFFFF -level 7-rt -kd**
 
-    You can stop the trace session by typing the following command:
+   You can stop the trace session by typing the following command:
 
-    **tracelog -stop MyTrace**
+   **tracelog -stop MyTrace**
 
 ### <a href="" id="deploy-the-driver-on-the-target-computer"></a>Step 6: Deploy the driver on the target computer
 
-1.  In the **Solution Explorer** window, right click the *&lt;project name&gt;***Package** , and choose **Properties**.
-2.  In the left pane, navigate to **Configuration Properties &gt; Driver Install &gt; Deployment**.
-3.  Check Enable deployment, and check Import into driver store.
-4.  For **Remote Computer Name**, specify the name of the target computer.
-5.  Select **Install and Verify**.
-6.  Click **Ok**.
-7.  On the **Debug** menu, choose **Start Debugging**, or press **F5** on the keyboard.
+1. In the **Solution Explorer** window, right click the <em>&lt;project name&gt;</em>**Package** , and choose **Properties**.
+2. In the left pane, navigate to **Configuration Properties &gt; Driver Install &gt; Deployment**.
+3. Check Enable deployment, and check Import into driver store.
+4. For **Remote Computer Name**, specify the name of the target computer.
+5. Select **Install and Verify**.
+6. Click **Ok**.
+7. On the **Debug** menu, choose **Start Debugging**, or press **F5** on the keyboard.
 
 **Note**  Do *not* specify the hardware ID of your device under **Hardware ID Driver Update**. The hardware ID must be specified only in your driver's information (INF) file.
 
- 
+ 
 
 ### <a href="" id="view-the-driver-in-device-manager"></a>Step 7: View the driver in Device Manager
 
@@ -280,7 +276,5 @@ Whenever an application makes a request for the USB driver stack, the Windows I/
 [How to enable USB selective suspend and system wake in the UMDF driver for a USB device](http://go.microsoft.com/fwlink/p/?linkid=617587)  
 [Getting started with USB client driver development](getting-started-with-usb-client-driver-development.md)  
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20How%20to%20write%20your%20first%20USB%20client%20driver%20%28UMDF%29%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

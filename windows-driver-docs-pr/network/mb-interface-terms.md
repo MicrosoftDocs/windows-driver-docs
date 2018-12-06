@@ -2,11 +2,8 @@
 title: MB interface terms
 ms.assetid: 627F7C95-96E5-43C4-B8AB-DDA5A4392B38
 description: Provides a list of mobile broadband terminology used in the MB interface
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # MB Interface Terms
@@ -47,7 +44,7 @@ The following terminology is used throughout the Mobile Broadband (MB)documentat
 <td align="left"><p>A CD-ROM function that does not have a physical CD-ROM drive.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[IAD](http://go.microsoft.com/fwlink/p/?linkid=308934)</p></td>
+<td align="left"><p><a href="http://go.microsoft.com/fwlink/p/?linkid=308934" data-raw-source="[IAD](http://go.microsoft.com/fwlink/p/?linkid=308934)">IAD</a></p></td>
 <td align="left"><p>Interface association descriptors (IADs) used to group interfaces into functions.</p></td>
 </tr>
 <tr class="odd">
@@ -89,11 +86,11 @@ The following terminology is used throughout the Mobile Broadband (MB)documentat
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

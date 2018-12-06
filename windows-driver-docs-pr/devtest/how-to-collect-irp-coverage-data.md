@@ -4,11 +4,8 @@ description: How to Collect IRP Coverage Data
 ms.assetid: f65422fe-f524-41c1-a532-a2c615d65f72
 keywords:
 - Driver Coverage Toolkit WDK , collecting data
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # How to Collect IRP Coverage Data
@@ -16,7 +13,7 @@ ms.technology: windows-devices
 
 **Note**  The Driver Coverage Toolkit is no longer needed in Windows 10 and the installer is no longer included in the WDK. To perform tasks described here in Windows 10, instead use [Driver Verifier](driver-verifier.md) and [IRP Logging](irp-logging.md).
 
- 
+ 
 
 The following steps describe how to collect coverage data of I/O request packets (IRPs) by using the Driver Coverage tools and [Driver Coverage filter driver](driver-coverage-filter-driver.md). The tools are available as part of the [Device Fundamentals Tests](device-fundamentals-tests.md), under the Coverage category.
 
@@ -74,11 +71,10 @@ For information about setting up the WDK and the Visual Studio test environment,
 
     When the last device has been disabled for IRP coverage, the filter driver will no longer load whenever you restart the test computer. However, to unload the filter driver from memory, you must restart the test computer.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20How%20to%20Collect%20IRP%20Coverage%20Data%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

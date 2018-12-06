@@ -9,11 +9,8 @@ keywords:
 - DMA transfers WDK NetDMA , suspending DMA transfers
 - NetDMA WDK networking , suspending DMA transfers
 - suspendi
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Suspending and Resuming a DMA Transfer
@@ -21,9 +18,9 @@ ms.technology: windows-devices
 
 **Note**  The NetDMA interface is not supported in Windows 8 and later.
 
- 
+ 
 
-## <a href="" id="ddk-suspending-and-resuming-a-dma-transfer-ng"></a>
+
 
 
 The NetDMA interface can call a NetDMA provider driver's [**ProviderSuspendDma**](https://msdn.microsoft.com/library/windows/hardware/ff570405) function, if any, to temporarily suspend any dynamic memory access (DMA) transfers that are in progress on a DMA channel. The NetDMA provider returns the physical address of the last DMA descriptor that it processed at the address that the *pLastDescriptor* parameter specifies in **ProviderSuspendDma**.
@@ -36,9 +33,9 @@ The NetDMA interface calls the [**ProviderResumeDma**](https://msdn.microsoft.co
 
 When the DMA engine resumes transfers, the hardware reloads the DMA descriptor that it processed last to get the new next descriptor.
 
- 
+ 
 
- 
+ 
 
 
 

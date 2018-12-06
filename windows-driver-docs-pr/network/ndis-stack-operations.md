@@ -7,11 +7,8 @@ keywords:
 - NDIS WDK , driver stack
 - driver stacks WDK networking , operations
 - stacks WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # NDIS Stack Operations
@@ -29,9 +26,9 @@ This section includes:
 
 [Modifying a Running Driver Stack](modifying-a-running-driver-stack.md)
 
- 
+ 
 
- 
+ 
 
 
 

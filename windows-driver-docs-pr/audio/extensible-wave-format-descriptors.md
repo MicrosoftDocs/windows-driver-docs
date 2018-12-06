@@ -15,11 +15,8 @@ keywords:
 - WAVEFORMATEXTENSIBLE
 - WAVEFORMATEX structure
 - WDM audio data formats WDK
-ms.author: windowsdriverdev
 ms.date: 10/27/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Extensible Wave-Format Descriptors
@@ -81,7 +78,7 @@ The four wave-format structures--WAVEFORMAT, PCMWAVEFORMAT, WAVEFORMATEX, and WA
 </tbody>
 </table>
 
- 
+ 
 
 In fact, KMixer supports only a subset of the PCM formats that can be described by these tag values (and it supports no non-PCM formats). USB audio devices (see [USBAudio Class System Driver](kernel-mode-wdm-audio-components.md#usbaudio_class_system_driver)) are restricted to this subset because all PCM-formatted USB audio streams pass through KMixer. (Some non-PCM USB audio streams can bypass KMixer; for more information, see [USB Audio Support for Non-PCM Formats](usb-audio-support-for-non-pcm-formats.md).) However, in Windows XP and earlier, DirectSound applications can overcome KMixer's restrictions by connecting directly to hardware pins on WaveCyclic and WavePci devices that support formats not supported by KMixer. For more information, see [DirectSound Hardware Acceleration in WDM Audio](directsound-hardware-acceleration-in-wdm-audio.md).
 
@@ -162,7 +159,7 @@ The subset of WAVEFORMATEX PCM formats that KMixer supports differs between Wind
 </tbody>
 </table>
 
- 
+ 
 In WAVEFORMATEXTENSIBLE, **dwBitsPerSample** is the container size, and **wValidBitsPerSample** is the number of valid data bits per sample. Containers are always byte-aligned in memory, and the container size must be specified as a multiple of eight bits.
 
 Before the WAVEFORMATEXTENSIBLE structure was defined, vendors had to register each new wave format with Microsoft so that an official, 16-bit format tag could be assigned to the format. (The format tag is contained in the **wFormatTag** member of the WAVEFORMATEX structure.) A list of registered format tags appears in public header file Mmreg.h (for example, WAVE\_FORMAT\_MPEG).
@@ -171,12 +168,10 @@ With WAVEFORMATEXTENSIBLE, registering formats is no longer necessary. Vendors c
 
 When using WAVEFORMATEXTENSIBLE, set **wFormatTag** to WAVE\_FORMAT\_EXTENSIBLE and **SubFormat** to the appropriate format GUID. For integer PCM formats, set **SubFormat** to KSDATAFORMAT\_SUBTYPE\_PCM. For PCM formats that encode sample values as floating-point numbers, set **SubFormat** to KSDATAFORMAT\_SUBTYPE\_IEEE\_FLOAT. For either of these formats, set **cbSize** to **sizeof**(WAVEFORMATEXTENSIBLE)**-sizeof**(WAVEFORMATEX). For information about using WAVEFORMATEXTENSIBLE to describe non-PCM data formats, see [Supporting Non-PCM Wave Formats](supporting-non-pcm-wave-formats.md).
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Extensible%20Wave-Format%20Descriptors%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

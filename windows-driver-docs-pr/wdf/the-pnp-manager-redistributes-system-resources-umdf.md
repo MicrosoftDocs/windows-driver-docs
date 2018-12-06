@@ -1,16 +1,12 @@
 ---
 title: The PnP Manager Redistributes System Resources
-author: windows-driver-content
 description: The PnP Manager Redistributes System Resources
 ms.assetid: c8e6277b-b1e5-449f-b5a0-f5a46b46e56e
 keywords:
 - power management scenarios WDK UMDF , PnP manager redistributes system resources
 - redistribution of system resources scenario WDK UMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # The PnP Manager Redistributes System Resources
@@ -50,9 +46,9 @@ For each UMDF-based function and filter driver that supports the device, the fra
 
 To see a diagram that shows these steps, see [A User Plugs in a Device](a-user-plugs-in-a-device.md).
 
- 
+ 
 
- 
+ 
 
 
 

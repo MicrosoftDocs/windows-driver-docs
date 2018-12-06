@@ -9,11 +9,8 @@ keywords:
 - memory segments WDK display , locking swizzled allocations
 - allocation swizzle locks WDK display
 - evicted allocations WDK display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Locking Swizzled Allocations
@@ -52,13 +49,12 @@ After the user-mode display driver calls the Microsoft Direct3D runtime's [**pfn
 **Note**   After a swizzled allocation is under CPU access through a CPU aperture, it can still be evicted before the user-mode display driver terminates the CPU access. This case is handled as in number 2. The eviction is performed in such a way as to be invisible to the application and user-mode display driver.
 Also, a no-overwrite lock (that is, a lock obtained by setting the **IgnoreSync** member of [**D3DDDICB\_LOCKFLAGS**](https://msdn.microsoft.com/library/windows/hardware/ff544214)) is not allowed on a swizzled allocation. Only the CPU or the GPU can access such an allocation at any given time.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Locking%20Swizzled%20Allocations%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

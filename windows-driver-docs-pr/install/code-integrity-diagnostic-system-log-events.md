@@ -10,11 +10,8 @@ keywords:
 - audit events WDK driver signing
 - logs WDK driver signing
 - diagnostic log events WDK Code Integrity
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Code Integrity Diagnostic System Log Events
@@ -34,9 +31,9 @@ You can use Event Viewer to view Code Integrity events, as described in [Viewing
 
 For more information about how to enable the system audit log and verbose logging, see [Enabling the System Event Audit Log](enabling-the-system-event-audit-log.md).
 
- 
+ 
 
- 
+ 
 
 
 

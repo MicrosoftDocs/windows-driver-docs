@@ -8,11 +8,8 @@ keywords:
 - transferring data WDK NetDMA , writing provider drivers
 - NetDMA WDK networking , writing provider drivers
 - DMA transfers WDK N
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Writing a NetDMA Provider Driver
@@ -20,9 +17,9 @@ ms.technology: windows-devices
 
 **Note**  The NetDMA interface is not supported in Windows 8 and later.
 
- 
+ 
 
-## <a href="" id="ddk-writing-a-netdma-provider-driver-ng"></a>
+
 
 
 The NetDMA interface provides a standard interface for NetDMA provider drivers. NetDMA provider drivers enable higher-level applications to use direct memory access (DMA) to move blocks of memory. By using a DMA engine to move memory, you free the CPU to perform other tasks.
@@ -47,9 +44,9 @@ This section includes:
 
 [Managing NetDMA Interrupts](managing-netdma-interrupts.md)
 
- 
+ 
 
- 
+ 
 
 
 

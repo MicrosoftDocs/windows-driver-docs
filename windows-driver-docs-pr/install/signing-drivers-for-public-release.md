@@ -2,11 +2,8 @@
 title: Signing Drivers for Public Release
 description: Signing Drivers for Public Release
 ms.assetid: e5fa85ef-0b93-4c4d-919c-1c732b438e7e
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Signing Drivers for Public Release
@@ -16,9 +13,9 @@ This section describes the steps that you must follow to digitally-sign a driver
 
 -   [Signing Drivers for Public Release](signing-drivers-for-public-release--windows-vista-and-later-.md)
 
- 
+ 
 
- 
+ 
 
 
 

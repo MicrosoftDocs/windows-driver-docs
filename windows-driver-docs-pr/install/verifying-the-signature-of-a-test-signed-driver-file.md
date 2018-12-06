@@ -10,11 +10,8 @@ keywords:
 - validating test certificates WDK
 - driver file test signing WDK
 - test signing driver packages WDK , driver files
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Verifying the Signature of a Test-Signed Driver File
@@ -22,7 +19,7 @@ ms.technology: windows-devices
 
 To verify a test signature that is embedded in a driver file, use the following [**SignTool**](https://msdn.microsoft.com/library/windows/hardware/ff551778) command:
 
-```
+```cpp
 SignTool verify /v /pa DriverFileName.sys
 ```
 
@@ -40,13 +37,13 @@ Be aware that the SignTool **verify** command does not explicitly specify the te
 
 For example, the following command verifies the embedded signature in *Toaster.sys*, which is in the *amd64* subdirectory under the directory in which the command is run.
 
-```
+```cpp
 SignTool verify /v /pa amd64\toaster.sys
 ```
 
- 
+ 
 
- 
+ 
 
 
 

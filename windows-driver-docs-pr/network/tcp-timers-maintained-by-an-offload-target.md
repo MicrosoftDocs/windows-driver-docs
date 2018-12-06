@@ -10,11 +10,8 @@ keywords:
 - TCP timers WDK TCP chimney offload
 - clocks WDK TCP chimney offload
 - connection timers WDK TCP chimney offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # TCP Timers Maintained by an Offload Target
@@ -40,9 +37,9 @@ The TCP Timers Maintained by an Offload Target section describes the requirement
 
 [Silly Window Syndrome Prevention Timer](silly-window-syndrome-prevention-timer.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -8,11 +8,8 @@ keywords:
 - graphics drivers WDK Windows 2000 display , lines, cosmetic
 - drawing WDK GDI , lines, cosmetic
 - cosmetic lines WDK GDI
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Cosmetic Lines
@@ -44,43 +41,43 @@ The following table summarizes these cases.
 <tr class="odd">
 <td align="left"><p>Slope &lt; 1</p>
 <div>
- 
+ 
 </div>
 or
 <div>
- 
+ 
 </div>
 Slope &gt; 1</td>
 <td align="left"><p>Horizontally</p></td>
-<td align="left"><p>Light the pixel at diamond's left vertex.</p></td>
+<td align="left"><p>Light the pixel at diamond&#39;s left vertex.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Slope &lt; 1</p>
 <div>
- 
+ 
 </div>
 or
 <div>
- 
+ 
 </div>
 Slope &gt; 1</td>
 <td align="left"><p>Vertically</p></td>
-<td align="left"><p>Light the pixel at diamond's top vertex.</p></td>
+<td align="left"><p>Light the pixel at diamond&#39;s top vertex.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Slope = 1</p></td>
 <td align="left"><p>Horizontally</p></td>
-<td align="left"><p>Light the pixel at diamond's top vertex.</p></td>
+<td align="left"><p>Light the pixel at diamond&#39;s top vertex.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Slope = 1</p></td>
 <td align="left"><p>Vertically</p></td>
-<td align="left"><p>Light the pixel at diamond's right vertex.</p></td>
+<td align="left"><p>Light the pixel at diamond&#39;s right vertex.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The diamond convention lights one pixel in each column for lines with slopes between -1 and 1, and one pixel in each row for lines with slope greater than 1 in absolute value. This way, a cosmetic line is rendered with no gaps.
 
@@ -94,11 +91,10 @@ For rendering cosmetic lines, the [**DrvStrokePath**](https://msdn.microsoft.com
 
 For raster devices that support the R2\_NOT mix mode, a binary raster operation that changes the destination color to its inverse, the driver must use exact rendering. Rendering should also be exact for devices that require rendering by both GDI and the driver. This includes devices for which GDI draws on some bitmaps and the driver draws on other surfaces (unless the pixels are too small to make any visible difference). This also includes devices that request GDI to handle complex clipping.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Cosmetic%20Lines%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

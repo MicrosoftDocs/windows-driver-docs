@@ -3,17 +3,14 @@ title: Bug Check 0xE9 ACTIVE_EX_WORKER_THREAD_TERMINATION
 description: The ACTIVE_EX_WORKER_THREAD_TERMINATION bug check has a value of 0x000000E9. This indicates that an active executive worker thread is being terminated.
 ms.assetid: dd68f07f-fab1-402c-9a81-f43722f91b69
 keywords: ["Bug Check 0xE9 ACTIVE_EX_WORKER_THREAD_TERMINATION", "ACTIVE_EX_WORKER_THREAD_TERMINATION"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - ACTIVE_EX_WORKER_THREAD_TERMINATION
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0xE9: ACTIVE\_EX\_WORKER\_THREAD\_TERMINATION
@@ -21,7 +18,7 @@ api_type:
 
 The ACTIVE\_EX\_WORKER\_THREAD\_TERMINATION bug check has a value of 0x000000E9. This indicates that an active executive worker thread is being terminated.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## ACTIVE\_EX\_WORKER\_THREAD\_TERMINATION Parameters
 
@@ -57,7 +54,7 @@ The ACTIVE\_EX\_WORKER\_THREAD\_TERMINATION bug check has a value of 0x000000E9.
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -66,9 +63,9 @@ An executive worker thread is being terminated without having gone through the w
 
 A stack trace should indicate the cause.
 
- 
+ 
 
- 
+ 
 
 
 

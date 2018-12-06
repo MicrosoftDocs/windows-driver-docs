@@ -4,11 +4,8 @@ description: Overview of the Power Metering and Budgeting Infrastructure
 ms.assetid: eda1c829-eb5e-404b-bf6b-1b0807ee02c7
 keywords:
 - Power Metering and Budgeting WDK , overview
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Overview of the Power Metering and Budgeting Infrastructure
@@ -61,11 +58,10 @@ The ACPI 4.0 Power Metering objects are modeled after the ACPI Control Method ba
 
 For more information, see [ACPI Power Meter Interface](acpi-power-meter-interface.md).
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

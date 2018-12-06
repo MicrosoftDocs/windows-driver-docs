@@ -5,11 +5,8 @@ ms.assetid: 249dc6d0-c187-48ab-9525-e80093c8f01d
 keywords:
 - propagating TCP chimney state-manipulation operations, completion of operation
 - state-manipulation operations WDK TCP chimney offload , completion of operation
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Propagating the Completion of a State-Manipulation Operation
@@ -59,9 +56,9 @@ In response to an intermediate driver's call to the **NdisM*Xxx*OffloadComplete*
 
 NDIS converts the NDIS\_MINIPORT\_OFFLOAD\_BLOCK\_LIST structure that was supplied by the intermediate driver to an NDIS\_PROTOCOL\_OFFLOAD\_BLOCK\_LIST structure. NDIS passes a pointer to the NDIS\_PROTOCOL\_OFFLOAD\_BLOCK\_LIST structure to the host stack's *ProtocolXxxOffloadComplete* function.
 
- 
+ 
 
- 
+ 
 
 
 

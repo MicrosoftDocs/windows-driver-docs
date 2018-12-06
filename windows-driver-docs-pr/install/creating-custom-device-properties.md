@@ -4,11 +4,8 @@ description: Creating Custom Device Properties
 ms.assetid: e18fcbe8-6083-451e-b1be-5a543b61c627
 keywords:
 - device properties WDK device installations , creating custom
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Creating Custom Device Properties
@@ -32,7 +29,7 @@ A custom device property category is a logically-related collection of custom de
 
     **Note**  The system-defined property categories are reserved for operating system use only.
 
-     
+     
 
 -   Set the property identifier of each property key to an integer value that is unique within the property category and that is greater than or equal to two.
 
@@ -62,9 +59,9 @@ Use the [**INF DelProperty directive**](inf-delproperty-directive.md) to delete 
 
 For more information about how to use these directives, see the [Using the INF AddProperty Directive and the INF DelProperty Directive](using-the-inf-addproperty-directive-and-the-inf-delproperty-directive.md).
 
- 
+ 
 
- 
+ 
 
 
 

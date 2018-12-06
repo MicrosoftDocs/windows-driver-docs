@@ -1,13 +1,9 @@
 ---
 title: Driver initialization
-author: windows-driver-content
 description: Driver initialization
 ms.assetid: 9886BBBC-7EE5-45AF-AEDD-75C0885C622B
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Driver initialization
@@ -21,11 +17,11 @@ Driver initialization is one of the more complex phases of a user-mode driver’
 |----------------------|-----------------|
 | SpbAccelerometer.asl | N/A             |
 
- 
+ 
 
 The sample driver is designed so that the sensor is permanently connected to an I2C bus. Instead of supporting Plug and Play, it supports the Advanced Configuration and Power Interface (ACPI).
 
-ACPI allows Windows to control a device’s configuration and power management. The ACPI spec has definitions for tables that link your Windows device and peripheral devices connected to the system board. The Differentiated System Description Table (DSDT) describes peripheral devices connected to the system—including sensors. It’s stored in a binary format known as the ACPI Machine Language (AML). For more information about the DSDT table, see to the ACPI system description tables topic on MSDN. (Note that some systems also use the Secondary System Description Table (SSDT) to describe peripheral devices.)
+ACPI allows Windows to control a device’s configuration and power management. The ACPI spec has definitions for tables that link your Windows device and peripheral devices connected to the system board. The Differentiated System Description Table (DSDT) describes peripheral devices connected to the system—including sensors. It’s stored in a binary format known as the ACPI Machine Language (AML). For more information about the DSDT table, see to the ACPI system description tables topic. (Note that some systems also use the Secondary System Description Table (SSDT) to describe peripheral devices.)
 
 To install a sensor device and driver on your Windows SoC device, you’ll need to update the DSDT table with a corresponding node. This node has information about the sample device’s controllers and connectors. Here’s how Windows and your driver use the data in the node:
 
@@ -53,11 +49,11 @@ If you do not specify the /resdecode option, the \_CRS section will contain a bi
 |----------------------|-----------------|
 | SpbAccelerometer.inf | N/A             |
 
- 
+ 
 
 In addition to updating the DSDT table, you’ll need to update the Windows setup information file (INF) to specify that your device supports ACPI. Because the sensor is always enumerated by ACPI, the hardware identifier in the INF file must contain the “ACPI” string.
 
-```ManagedCPlusPlus
+```cpp
 ; =================== Manufacturer/Models sections =======================
 
 [Manufacturer]
@@ -76,7 +72,7 @@ In addition to updating the DSDT table, you’ll need to update the Windows setu
 | Driver.cpp  | CMyDriver       |
 | Queue.cpp   | CMyQueue        |
 
- 
+ 
 
 The methods below are invoked by Windows or by the driver during the early initialization phase. The preliminary device-initialization methods apply to any device supported by your driver. They appear in the module Device.cpp.
 
@@ -90,7 +86,7 @@ The methods below are invoked by Windows or by the driver during the early initi
 | 6   | **CMyDevice::CreateInstance** | **CMyDevice::OnDeviceAdd**                                         | Creates an instance of the device object that corresponds to a given device (in this case the accelerometer). |
 | 7   | **CMyDevice::Initialize**     | **CMyDevice::CreateInstance**                                      | Initializes the device callback object.                                                                       |
 
- 
+ 
 
 ### Establishing a data connection
 
@@ -100,7 +96,7 @@ The methods below are invoked by Windows or by the driver during the early initi
 | SensorDdi.cpp           | CSensorDdi           |
 | AccelerometerDevice.cpp | CAccelerometerDevice |
 
- 
+ 
 
 The methods below are invoked by the driver during initialization to prepare the device objects, get the ACPI configuration data, and create the data-connection interrupt. For the sample driver, these methods are found in the file AccelerometerDevice.cpp.
 
@@ -118,7 +114,7 @@ If you’re porting the sample driver to support another device, such as a compa
 | 8   | **CAccelerometerDevice::ParseResources**               | **CAccelerometerDevice::InitializeDevice**                         | Parses the device resources to ensure that they support serial I2C connections.                                        |
 | 9   | **CAccelerometerDevice::ConnectInterrupt**             | **CAccelerometerDevice::ParseResources**                           | Creates the data-connection interrupt.                                                                                 |
 
- 
+ 
 
 ### Initializing the SPB request object
 
@@ -129,7 +125,7 @@ If you’re porting the sample driver to support another device, such as a compa
 | AccelerometerDevice.cpp | CAccelerometerDevice |
 | SpbRequest.cpp          | CSpbRequest          |
 
- 
+ 
 
 The methods below are invoked by the driver during initialization to open a file handle to the underlying SPB controller. (Note that the first four methods of this sequence are the same as the first four methods in the data-connection sequence.)
 
@@ -142,7 +138,7 @@ The methods below are invoked by the driver during initialization to open a file
 | 5   | **CAccelerometerDevice::InitializeRequest** | **CAccelerometerDevice::InitializeDevice**                         | Starts the initialization process for the SPB request object (using the resource hub path and connection ID which the driver retrieved earlier). |
 | 6   | **CSpbRequest::Initialize**                 | **CAccelerometerDevice::InitializeRequest**                        | Opens a file handle to the underlying SPB                                                                                                        |
 
- 
+ 
 
 ### Initializing the supported sensor properties and data fields
 
@@ -153,7 +149,7 @@ The methods below are invoked by the driver during initialization to open a file
 | AccelerometerDevice.cpp | CAccelerometerDevice |
 | SpbRequest.cpp          | CSpbRequest          |
 
- 
+ 
 
 The methods below are invoked by the driver during initialization to get the properties and data fields supported by the sensor. For the Windows sensor platform, the accelerometer properties correspond to read or read-write data, such as the sensor’s report interval or its minimum supported report interval. The data fields correspond to the actual accelerometer readings along its X-, Y-, and Z-axis. (Note that the first three methods of this sequence are the same as the first three methods in the previous data-connection, and SPB request-object, sequences.)
 
@@ -168,7 +164,7 @@ The methods below are invoked by the driver during initialization to get the pro
 | 7   | **CSensorDevice::AddDataFieldKeys**                | **CSensorDevice::InitializeSensorDriverInterface**                 | Iterates through the supported data fields and adds a **PROPERTYKEY** for each.                                       |
 | 8   | **CSensorDevice::GetSupportedDataFields**          | **CSensorDevice::AddDataFieldKeys**                                | Gets the **PROPERTYKEY**s for the given device’s data fields.                                                         |
 
- 
+ 
 
 ### Initializing the persistent unique ID property
 
@@ -179,7 +175,7 @@ The methods below are invoked by the driver during initialization to get the pro
 | AccelerometerDevice.cpp | CAccelerometerDevice |
 | SensorDevice.cpp        | CSensorDevice        |
 
- 
+ 
 
 The methods below are invoked by the driver during initialization to initialize the persistent unique identifier (PUID) for the sensor. Windows uses the **PUID** to persist data across device sessions. (Note that the first four methods of this sequence are the same as the first four methods in the previous property and data-field sequence.)
 
@@ -192,7 +188,7 @@ The methods below are invoked by the driver during initialization to initialize 
 | 5   | **CSensorDevice::SetUniqueID**                     | **CSensorDevice::InitializeSensorDriverInterface**                 | Invokes a method that gets a persistent unique identifier (PUID) that the driver can use across sessions. |
 | 6   | **CAcclerometerDevice::GetSensorObjectID**         | **CSensorDevice::SetUniqueID**                                     | Gets the accelerometer’s persistent identifier (“ADXL345”).                                               |
 
- 
+ 
 
 ### Setting the default property values
 
@@ -203,7 +199,7 @@ The methods below are invoked by the driver during initialization to initialize 
 | AccelerometerDevice.cpp | CAccelerometerDevice |
 | SensorDevice.cpp        | CSensorDevice        |
 
- 
+ 
 
 The Windows sensor platform supports default property values for sensor type, manufacturer’s name, sensor model, and serial number. The code in the SpbAccelerometer sample sets these properties as part of the driver and device initialization phase. The methods below are invoked by the driver, during initialization, to set the default values for the accelerometer. (Note that the first four methods of this sequence are the same as the first four methods in the previous property-setting sequences.)
 
@@ -215,7 +211,7 @@ The Windows sensor platform supports default property values for sensor type, ma
 | 4   | **CSensorDevice::InitializeSensorDriverInterface** | **CSensorDevice::Initialize**                                      | Starts the initialization of the objects that store the property keys and datafield values.       |
 | 5   | **CAccelerometerDevice::SetDefaultPropertyValues** | **CSensorDevice::InitializeSensorDriverInterface**                 | Sets the default property values for the accelerometer (manufacturer, model, serial number, etc.) |
 
- 
+ 
 
 ### Retrieving the default writeable properties
 
@@ -226,7 +222,7 @@ The Windows sensor platform supports default property values for sensor type, ma
 | AccelerometerDevice.cpp | CAccelerometerDevice |
 | SensorDevice.cpp        | CSensorDevice        |
 
- 
+ 
 
 The Windows sensor platform supports read-only and read-write properties for sensors and this is true of the default properties as well. The code in the SpbAccelerometer sample gets the list of writeable (or settable) default properties as part of the driver and device initialization phase. The methods below are invoked by the driver, during initialization, to get these properties for the accelerometer. (Note that the first four methods of this sequence are the same as the first four methods in the previous property-setting sequences.)
 
@@ -238,7 +234,7 @@ The Windows sensor platform supports read-only and read-write properties for sen
 | 4   | **CSensorDevice::InitializeSensorDriverInterface** | **CSensorDevice::Initialize**                                      | Starts the initialization of the objects that store the property keys and datafield values.       |
 | 5   | **CAccelerometerDevice::SetDefaultPropertyValues** | **CSensorDevice::InitializeSensorDriverInterface**                 | Sets the default property values for the accelerometer (manufacturer, model, serial number, etc.) |
 
- 
+ 
 
 ### Activating support for events
 
@@ -249,7 +245,7 @@ The Windows sensor platform supports read-only and read-write properties for sen
 | AccelerometerDevice.cpp | CAccelerometerDevice |
 | SensorDevice.cpp        | CSensorDevice        |
 
- 
+ 
 
 The Windows sensor platform supports events. An application registers an event handler to get notifications from the driver. For an accelerometer, these notifications are triggered when a certain change sensitivity (measured in G force) is exceeded or the current report interval expires.
 
@@ -263,7 +259,7 @@ To support the event model in the sensor platform, the driver must activate a th
 | 4   | **CReportManager::Initialize**                 | **CSensorDevice::Initialize**                                      | Creates the thread used to handle events.                                            |
 | 5   | **CReportManager::ActivateDataEventingThread** | **CReportManager::Initialize**                                     | Activates the thread created by the previous method.                                 |
 
- 
+ 
 
 ### Initializing the class extension
 
@@ -271,7 +267,7 @@ To support the event model in the sensor platform, the driver must activate a th
 |------------|-----------------|
 | Device.cpp | CMyDevice       |
 
- 
+ 
 
 The Windows sensor platform has a class extension of the Sensor API that provides a standard mechanism for getting sensor data and raising event notifications. The sample driver invokes the **ISensorClassExtension::Initialize** method to initialize the class extension after it receives the call to **CMyDevice::OnPrepareHardware**.
 
@@ -284,7 +280,7 @@ The Windows sensor platform has a class extension of the Sensor API that provide
 | AccelerometerDevice.cpp | CAccelerometerDevice |
 | SensorDevice.cpp        | CSensorDevice        |
 
- 
+ 
 
 The final sequence of methods in the device and driver initialization configures the ADXL345 and places it in standby mode. (This sequence of write and read operations is repeated multiple times until the device is configured.)
 
@@ -300,7 +296,7 @@ The final sequence of methods in the device and driver initialization configures
 | 8   | **CSpbRequest::CreateAndSendWriteReadSequence** | **CAcclerometerDevice::ReadRegister**                              | Receives the read results over the I2C bus.                                           |
 | 9   | **CSpbRequest::CreateAndSendIoctl**             | **CSpbRequest::CreateAndSendWriteReadSequence**                    | Helper method that creates and sends an IOCTL request.                                |
 
- 
+ 
 
 Most of the device-configuration work takes place through a series of **CAccelerometerDevice::WriteRegister** and **CAccelerometerDevice::ReadRegister** method calls. The driver uses the ::**WriteRegister** method to write a value to one of the ADXL345 registers; it then examines the value returned in the corresponding ::**ReadRegister** method to verify that the write operation succeeded. Here's a complete sequence of write and read operations.
 
@@ -321,16 +317,14 @@ Most of the device-configuration work takes place through a series of **CAcceler
 | 13  | **CAccelerometerDevice::WriteRegister** | **0x2f** | **'\\0x10' (0x10)** | Sets the INT\_MAP (interrupt mapping) register. A value of 0x10 requests that the Watermark is mapped to INT2 pin. |
 | 14  | **CAccelerometerDevice::ReadRegister**  | **0x2f** | **'\\0x10' (0x10)** | The returned register value indicates that the write operation succeeded.                                          |
 
- 
+ 
 
 After the driver and device have been configured, the initialization sequence is complete and apps can start receiving sensor data.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bsensors\sensors%5D:%20Driver%20initialization%20%20RELEASE:%20%281/12/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

@@ -2,11 +2,8 @@
 title: Example code for displaying an app on a portrait device
 description: Here is code that you can use to make your app display correctly on a portrait device.
 ms.assetid: 5653E920-A068-4EBA-869E-0E2D65118B33
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Example code for displaying an app on a portrait device
@@ -14,7 +11,7 @@ ms.technology: windows-devices
 
 Here is code that you can use to make your app display correctly on a portrait device.
 
-```ManagedCPlusPlus
+```cpp
 //
 // This file contains utility functions for use in desktop applications for getting the current
 // orientation as Landscape/Portrait/LandscapeFlipped/PortraitFlipped (abbr: L/P/LF/PF). These
@@ -446,11 +443,10 @@ int __cdecl main(int argc, const char* argv[])
 }
 ```
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Example%20code%20for%20displaying%20an%20app%20on%20a%20portrait%20device%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Clearing the DO_DEVICE_INITIALIZING Flag
-author: windows-driver-content
 description: Clearing the DO_DEVICE_INITIALIZING Flag
 ms.assetid: 1c1cca60-bb95-4a8d-9e17-4db54983bbb0
 keywords:
@@ -9,11 +8,8 @@ keywords:
 - attaching filters to file system or volume
 - volumes WDK file system , attaching filters
 - DO_DEVICE_INITIALIZING
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Clearing the DO\_DEVICE\_INITIALIZING Flag
@@ -24,7 +20,7 @@ ms.technology: windows-devices
 
 After attaching a filter device object to a file system or volume, always be sure to clear the DO\_DEVICE\_INITIALIZING flag on the filter device object. (For more information about this flag, see [**DEVICE\_OBJECT**](https://msdn.microsoft.com/library/windows/hardware/ff543147) in the Kernel Reference.) This can be done as follows using the **ClearFlag** macro defined in *ntifs.h*:
 
-```
+```cpp
 ClearFlag(NewDeviceObject->Flags, DO_DEVICE_INITIALIZING);
 ```
 
@@ -32,13 +28,12 @@ When the filter device object is created, [**IoCreateDevice**](https://msdn.micr
 
 **Note**   It is not necessary to clear the DO\_DEVICE\_INITIALIZING flag on device objects that are created in DriverEntry, because this is done automatically by the I/O Manager. However, your driver should clear this flag on all other device objects that it creates.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

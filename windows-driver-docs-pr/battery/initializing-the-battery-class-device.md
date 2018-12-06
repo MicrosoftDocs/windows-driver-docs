@@ -7,11 +7,8 @@ keywords:
 - battery miniclass drivers WDK , registering
 - registering battery devices
 - initializing battery devices
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Initializing the Battery Class Device
@@ -50,11 +47,10 @@ After setting up this structure, the miniclass driver attaches itself to the bat
 
 After calling **BatteryClassInitializeDevice**, the [*AddDevice*](https://msdn.microsoft.com/library/windows/hardware/ff540521) routine might also need to initialize other device-specific data.
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

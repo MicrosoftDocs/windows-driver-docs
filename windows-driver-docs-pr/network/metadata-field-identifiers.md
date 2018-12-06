@@ -1,15 +1,11 @@
 ---
 title: Metadata field identifiers
-author: windows-driver-content
 description: This section describes metadata field identifiers for Windows Filtering Platform callout drivers.
 ms.assetid: 2157bace-9fae-41e8-a435-c4a412873ee1
 keywords:
 - Metadata field identifiers network drivers
-ms.author: windowsdriverdev
 ms.date: 11/09/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Metadata field identifiers
@@ -172,7 +168,7 @@ The metadata field identifiers are each represented by a bit-field. These identi
 <td>
 <p>A 
        <a href="https://msdn.microsoft.com/library/windows/hardware/ff570825"><b>SOCKADDR_STORAGE</b></a> structure that indicate
-       the packet's original destination.</p>
+       the packet&#39;s original destination.</p>
 <p>
 <div class="alert"><b>Note</b>  Supported starting with Windows 7.</div>
 <div> </div>
@@ -204,7 +200,7 @@ The metadata field identifiers are each represented by a bit-field. These identi
 <p>FWPS_METADATA_FIELD_PARENT_ENDPOINT_HANDLE</p>
 </td>
 <td>
-<p>The handle of the endpoint's parent socket.</p>
+<p>The handle of the endpoint&#39;s parent socket.</p>
 <p>
 <div class="alert"><b>Note</b>  Supported starting with Windows 7.</div>
 <div> </div>
@@ -333,4 +329,3 @@ The metadata field identifiers are each represented by a bit-field. These identi
 </tr>
 </table>
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_mb\p_mb%5D:%20Planning%20your%20APN%20database%20submission%20%20RELEASE:%20%281/18/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")

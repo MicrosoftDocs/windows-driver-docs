@@ -1,12 +1,8 @@
 ---
 Description: This topic lists the Microsoft-provided drivers for the supported USB device classes.
 title: USB device class drivers included in Windows
-author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # USB device class drivers included in Windows
@@ -104,7 +100,7 @@ For more information, see [USB serial driver (Usbser.sys)](usb-driver-installati
 
 **Note**  Supports Subclass 02h (ACM)
 
- 
+ 
 
 Usbser.sys
 
@@ -134,7 +130,7 @@ When CDC support is enabled, the [USB Common Class Generic Parent Driver](usb-co
 
 **Note**  Supports Subclass 0Eh (MBIM)
 
- 
+ 
 
 wmbclass.sys
 
@@ -204,7 +200,7 @@ Printer (07h)
 
 **Note**  Usbprint.sys enumerates printer devices under the device set up class: **Printer** {4d36e979-e325-11ce-bfc1-08002be10318}.
 
- 
+ 
 
 Usbprint.sys
 
@@ -260,8 +256,8 @@ Windows 8.1
 Windows 8
 
 Uaspstor.sys is the class driver for SuperSpeed USB devices that support bulk stream endpoints. For more information see:
--   [Loading a UASP Storage Driver as a Class Driver on xHCI](http://msdn.microsoft.com/library/windows/hardware/gg585600.aspx)
--   [USB Attached SCSI (UAS) Best Practices for Windows 8](http://msdn.microsoft.com/library/windows/hardware/jj248714.aspx)
+-   [Loading a UASP Storage Driver as a Class Driver on xHCI](https://msdn.microsoft.com/library/windows/hardware/gg585600.aspx)
+-   [USB Attached SCSI (UAS) Best Practices for Windows 8](https://msdn.microsoft.com/library/windows/hardware/jj248714.aspx)
 
 Hub (09h)
 **USB**
@@ -326,7 +322,7 @@ Note that for Windows Server 2003, Windows XP, and Windows 2000, special instruc
 **Note**  
 Usbccid.sys driver has been replaced by UMDF driver, WUDFUsbccidDriver.dll.
 
- 
+ 
 
 WUDFUsbccidDriver.dll
 
@@ -375,7 +371,7 @@ Recommended driver: [WinUSB (Winusb.sys)](winusb.md)
 Wireless Controller (E0h)
 **Note**  Supports Subclass 01h and Protocol 01h
 
- 
+ 
 
 **Bluetooth**
 
@@ -404,7 +400,7 @@ Miscellaneous (EFh)
 
 **Note**  Supports SubClass 04h and Protocol 01h
 
- 
+ 
 
 Rndismp.sys
 
@@ -433,12 +429,10 @@ Windows 10 for desktop editions
 
 Windows 10 Mobile
 Recommended driver: [WinUSB (Winusb.sys)](winusb.md)
- 
+ 
 
 ## Related topics
 [Microsoft-provided USB drivers](system-supplied-usb-drivers.md)  
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20USB%20device%20class%20drivers%20included%20in%20Windows%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

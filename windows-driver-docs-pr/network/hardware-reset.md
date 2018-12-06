@@ -8,17 +8,14 @@ keywords:
 - resetting NIC
 - MiniportResetEx
 - hardware resets WDK NDIS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Miniport Driver Hardware Reset
 
 
-## <a href="" id="ddk-hardware-reset-ng"></a>
+
 
 
 A miniport driver must register a [*MiniportResetEx*](https://msdn.microsoft.com/library/windows/hardware/ff559432) function with [**NdisMRegisterMiniportDriver**](https://msdn.microsoft.com/library/windows/hardware/ff563654).
@@ -32,8 +29,6 @@ A miniport driver must register a [*MiniportResetEx*](https://msdn.microsoft.com
 -   Disable further interrupts.
 
 -   Clear out the data that is associated with any sends in progress. For example, on a ring buffer for a bus-master direct memory access (DMA) device, the pointers to send buffers should be cleared. Deserialized and connection-oriented miniport drivers must return NDIS\_STATUS\_REQUEST\_ABORTED for any queued send requests.
-
--   For 802.11 devices, perform the additional [hardware reset](driver-reset.md) procedures for the management of network connections and encryption keys.
 
 -   Restore the hardware state and the miniport driver's internal state to the state that existed before the reset operation.
 
@@ -50,7 +45,7 @@ If the miniport driver returns **FALSE** in the *AddressingReset* parameter, the
 -   Power management wake-up patterns through a set request of [OID\_PNP\_ADD\_WAKE\_UP\_PATTERN](https://msdn.microsoft.com/library/windows/hardware/ff569773).
     **Note**  Starting with NDIS 6.20, wake-up patterns set through [OID\_PM\_ADD\_WOL\_PATTERN](https://msdn.microsoft.com/library/windows/hardware/ff569764) must be restored by the miniport driver.
 
-     
+     
 
 ## Related topics
 
@@ -61,9 +56,9 @@ If the miniport driver returns **FALSE** in the *AddressingReset* parameter, the
 
 [Miniport Driver Reset and Halt Functions](https://msdn.microsoft.com/library/windows/hardware/ff564064)
 
- 
+ 
 
- 
+ 
 
 
 

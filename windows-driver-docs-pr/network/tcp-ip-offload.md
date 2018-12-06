@@ -11,17 +11,14 @@ keywords:
 - task offload WDK TCP/IP transport
 - connection offload WDK TCP/IP transport
 - packets WDK networking , TCP/IP offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # TCP/IP Offload
 
 
-## <a href="" id="ddk-tcp-ip-offload-ng"></a>
+
 
 
 To increase its performance, the Microsoft TCP/IP transport can offload tasks or connections to a NIC that has the appropriate TCP/IP-offload capabilities.
@@ -53,9 +50,9 @@ This section includes:
 -   [TCP/IP Task Offload](task-offload.md)
 -   [Connection Offload](connection-offload.md)
 
- 
+ 
 
- 
+ 
 
 
 

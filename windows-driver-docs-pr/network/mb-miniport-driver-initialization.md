@@ -2,11 +2,8 @@
 title: MB Miniport Driver Initialization
 description: MB Miniport Driver Initialization
 ms.assetid: cf332eb4-faea-40e3-b313-512f81718267
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # MB Miniport Driver Initialization
@@ -28,9 +25,9 @@ To initialize an MB miniport driver, use the following procedure:
 
 5.  The miniport driver sends an [**NDIS\_STATUS\_WWAN\_DEVICE\_CAPS**](https://msdn.microsoft.com/library/windows/hardware/ff567845) notification to the MB Service that indicates the capabilities of the MB device the miniport driver supports. For example, if the miniport driver supports a GSM-based device, it should specify the **WwanCellularClassGsm** value in the **DeviceCaps.WwanCellularClass** member of the [**NDIS\_WWAN\_DEVICE\_CAPS**](https://msdn.microsoft.com/library/windows/hardware/ff567907) structure. If the miniport driver supports a CDMA-based device, it should specify **WwanCellularClassCdma**.
 
- 
+ 
 
- 
+ 
 
 
 

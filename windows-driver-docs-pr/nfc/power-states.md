@@ -1,6 +1,5 @@
 ---
 title: Power states
-author: windows-driver-content
 description: The NFC class extension driver serves as the power policy owner for the device, so it calls WdfDeviceInitSetPowerPolicyOwnership(TRUE) during its device initialization routine.
 ms.assetid: 12433344-9C33-415B-BA14-4BD4C7E838CC
 keywords:
@@ -9,11 +8,8 @@ keywords:
 - proximity
 - near field proximity
 - NFP
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Power states
@@ -27,7 +23,7 @@ The NFC CX driver supports device power states D0 and D3. The state diagram belo
 
 Furthermore, the built-in idle detection logic of UMDF is used to power manager the device. During initialization, the WdfDevice is assigned its S0 Idle settings as follows:
 
-```
+```cpp
 WdfDeviceAssignS0IdleSettings(
     IdleCannotWakeFromS0,
     PowerDeviceD3,
@@ -43,9 +39,9 @@ The client driver can choose to be the power policy owner of the stack through t
 
 ![power management operations](images/powermanagementoperations.png)
 
- 
+ 
 
- 
+ 
 ## Related topics
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [NFC class extension (CX) reference](https://msdn.microsoft.com/library/windows/hardware/dn905536)  

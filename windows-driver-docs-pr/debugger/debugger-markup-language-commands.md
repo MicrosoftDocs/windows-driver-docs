@@ -3,11 +3,8 @@ title: Using Debugger Markup Language
 description: Debugger commands can provide output in plain text or in an enhanced format that uses Debugger Markup Language (DML). Output that is enhanced with DML includes links.
 ms.assetid: 70DDC56F-614F-43B7-B325-91984B74AECF
 keywords: ["Debugger Markup Language", "DML", "Enhanced debugger commands"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using Debugger Markup Language
@@ -83,14 +80,14 @@ DML defines a small set of tags that can be included in command output. One exam
 
 Suppose the file c:\\DmlExperiment.txt contains the following lines.
 
-```
+```text
 My DML Experiment
 <link cmd="lmD musb*">List modules that begin with usb.</link>
 ```
 
 The following command displays the text and link in the Command Browser window.
 
-```
+```dbgcmd
 .browse .dml_start c:\Dml_Experiment.txt
 ```
 
@@ -102,11 +99,10 @@ If you click the **List modules that begin with usb** link, you see output simil
 
 For a thorough discussion of DML customization and a complete list of DML tags, see [Customizing Debugger Output Using DML](customizing-debugger-output-using-dml.md).
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Using%20Debugger%20Markup%20Language%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

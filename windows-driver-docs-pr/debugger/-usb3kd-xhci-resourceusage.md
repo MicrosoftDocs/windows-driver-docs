@@ -3,17 +3,14 @@ title: usb3kd.xhci_resourceusage
 description: The usb3kd.xhci_resourceusage extension displays the resources used by a USB 3.0 host controller.
 ms.assetid: 6AAB64D6-3CDA-4BA2-BBA8-F2F5AD1DBB6F
 keywords: ["usb3kd.xhci_resourceusage Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - usb3kd.xhci_resourceusage
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !usb3kd.xhci\_resourceusage
@@ -21,7 +18,7 @@ api_type:
 
 The [**!usb3kd.xhci\_resourceusage**](-usb3kd-device-info.md) extension displays the resources used by a USB 3.0 host controller.
 
-```
+```dbgcmd
 !usb3kd.xhci_resourceusage DeviceExtension
 ```
 
@@ -39,14 +36,14 @@ Usb3kd.dll
 Remarks
 -------
 
-The output the **!xhci\_resourceusage** command is based on the data structures maintained by the USB 3.0 host controller driver (UsbXhci.sys). For more information about the USB 3.0 host controller driver and other drivers in the USB stack, see [USB Driver Stack Architecture](http://go.microsoft.com/fwlink/p?LinkID=251983).
+The output the **!xhci\_resourceusage** command is based on the data structures maintained by the USB 3.0 host controller driver (UsbXhci.sys). For more information about the USB 3.0 host controller driver and other drivers in the USB stack, see [USB Driver Stack Architecture](https://go.microsoft.com/fwlink/p?LinkID=251983).
 
 Examples
 --------
 
 To obtain the address of the device extension, look at the output of the [**!xhci\_dumpall**](-usb3kd-xhci-dumpall.md) command. In the following example, the address of the device extension is 0xfffffa800536e2d0.
 
-```
+```dbgcmd
 3: kd> !xhci_dumpall
 
 ## Dumping all the XHCI controllers - DrvObj 0xfffffa80053072f0
@@ -68,7 +65,7 @@ To obtain the address of the device extension, look at the output of the [**!xhc
 
 Now you can pass the address of the device extension to the **!xhci\_resourceusage** command.
 
-```
+```dbgcmd
  3: kd> !xhci_resourceusage 0xfffffa800536e2d0
 
 ## Dumping CommonBuffer Resources
@@ -93,13 +90,12 @@ Now you can pass the address of the device extension to the **!xhci\_resourceusa
 
 [**!xhci\_dumpall**](-usb3kd-xhci-dumpall.md)
 
-[Universal Serial Bus (USB) Drivers](http://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!usb3kd.xhci_resourceusage%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

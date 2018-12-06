@@ -7,17 +7,14 @@ keywords:
 - driver load order WDK INF files
 - load order WDK INF files
 - service-install-sections WDK INF files
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Specifying Driver Load Order
 
 
-## <a href="" id="ddk-specifying-driver-load-order-dg"></a>
+
 
 
 For most devices, the physical hierarchy of the devices on a computer determines the order in which Windows and the PnP manager load drivers. Windows and the PnP manager configure devices starting with the system root device, and then they configure the child devices of the root device (for example, a PCI adapter), the children of those devices, and so on. The PnP manager loads the drivers for each device as the device is configured, if the drivers were not previously loaded for another device.
@@ -103,9 +100,9 @@ The operating system can promote a driver's **StartType** to be a boot start dri
 
 For more information about promoting a driver's **StartType** at boot, depending on the boot scenario, see [**INF AddService directive**](inf-addservice-directive.md).
 
- 
+ 
 
- 
+ 
 
 
 

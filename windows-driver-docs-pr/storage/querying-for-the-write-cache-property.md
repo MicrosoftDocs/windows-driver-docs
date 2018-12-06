@@ -1,6 +1,5 @@
 ---
 title: Querying for the Write Cache Property
-author: windows-driver-content
 description: Querying for the Write Cache Property
 ms.assetid: 80b7c366-3b54-4dae-8ac7-63caaa1767f9
 keywords:
@@ -13,17 +12,14 @@ keywords:
 - cache WDK storage
 - querying write cache
 - write-through requests WDK storage
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Querying for the Write Cache Property
 
 
-Storage devices often buffer data in a write cache before writing the data to nonvolatile media, such as a disk platter. This type of buffer improves device performance but it also also decreases data integrity. If the write cache does not have a battery backup, a power failure can cause the loss of cached data.
+Storage devices often buffer data in a write cache before writing the data to nonvolatile media, such as a disk platter. This type of buffer improves device performance but it also decreases data integrity. If the write cache does not have a battery backup, a power failure can cause the loss of cached data.
 
 One remedy for the problem of data loss is to flush the write cache (with a SCSI SYNCHRONIZE CACHE command on SCSI devices). However, flushing the write cache is an expensive operation, and, if done frequently, it can significantly degrade performance. Instead of flushing the write cache, many storage devices allow *write-through* requests. A write-through request bypasses the write cache and sends data directly to the media.
 
@@ -51,11 +47,10 @@ The write cache property mechanism is not supported for RAID devices (because th
 
 The write cache property is supported on the 64-bit versions of Windows.
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

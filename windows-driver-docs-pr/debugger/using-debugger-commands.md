@@ -3,11 +3,8 @@ title: Using Debugger Commands
 description: This section describes using Debugger Commands. You enter commands at the prompt at the bottom of the window.
 ms.assetid: 64dcc364-53b5-41d3-9266-abcfe4b328f4
 keywords: commands, debugger commands, meta-commands
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using Debugger Commands
@@ -38,37 +35,27 @@ You can use the UP ARROW and DOWN ARROW keys to scroll through the command histo
 
 When you are performing user-mode debugging, the prompt in the Debugger Command window looks like the following example.
 
-```
-2:005>
-```
+`2:005>`
 
 In the preceding example, 2 is the current process number, and 005 is the current thread number.
 
 If you attach the debugger to more than one computer, the system number is included before the process and thread number, as in the following example.
 
-```
-3:2:005>
-```
+`3:2:005>`
 
 In this example, 3 is the current system number, 2 is the current process number, and 005 is the current thread number.
 
 When you are performing kernel-mode debugging on a target computer that has only one processor, the prompt looks like the following example.
 
-```
-kd>
-```
+`kd>`
 
 However, if the target computer has multiple processors, the number of the current processor appears before the prompt, as in the following example.
 
-```
-0: kd> 
-```
+`0: kd> `
 
 If the debugger is busy processing a previously issued command, new commands will temporarily not be processed, although they can be added to the command buffer. In addition, you can still use [control keys](control-keys.md) in KD and CDB, and you can still use menu commands and [shortcut keys](keyboard-shortcuts.md) in WinDbg. When KD or CDB is in this busy state, no prompt is displayed. When WinDbg is in this busy state, the following indicator will appear in place of the prompt:
 
-```
-*BUSY* 
-```
+`*BUSY* `
 
 You can use the [**.pcmd (Set Prompt Command)**](-pcmd--set-prompt-command-.md) command to add text to this prompt.
 
@@ -126,7 +113,7 @@ You can use the following commands to repeat an action or conditionally execute 
 
 -   The [**~e (Thread-Specific Command)**](-e--thread-specific-command-.md) command qualifier
 
--   (Windows XP and later versions of Windows) The [**!list**](-list.md) extension command
+-   The [**!list**](-list.md) extension command
 
 For more information about each command, see the individual command topics.
 
@@ -154,11 +141,10 @@ In WinDbg, you can use several additional features to change how text is display
 
 When you are performing remote debugging through the debugger, the debugging client can access a limited number of commands. To change the number of commands that the client can access, use the **-clines** [command-line option](command-line-options.md) or the \_NT\_DEBUG\_HISTORY\_SIZE [environment variable](environment-variables.md).
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Using%20Debugger%20Commands%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

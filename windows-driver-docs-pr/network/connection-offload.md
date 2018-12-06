@@ -8,17 +8,14 @@ keywords:
 - offload WDK TCP/IP transport , connection offload
 - connection offload WDK TCP/IP transport , about connection offload
 - capabilities WDK TCP/IP offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Connection Offload
 
 
-## <a href="" id="ddk-connection-offload-ng"></a>
+
 
 
 To increase its performance, the Microsoft TCP/IP transport can offload connections to a NIC that has the appropriate TCP/IP-connection offload capabilities.
@@ -36,9 +33,9 @@ This section includes:
 -   [Using Registry Values to Enable and Disable Connection Offloading](using-registry-values-to-enable-and-disable-connection-offloading.md)
 -   [Offloading TCP/IP Connections](offloading-tcp-ip-connections.md)
 
- 
+ 
 
- 
+ 
 
 
 

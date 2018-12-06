@@ -8,11 +8,8 @@ keywords:
 - callback functions WDK Direct3D
 - LPD3DHAL_MYFUNCTIONDATA
 - D3DHAL_MYFUNCTIONDATA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Driver Functions to Support Direct3D
@@ -23,7 +20,7 @@ ms.technology: windows-devices
 
 A driver that supports Direct3D provides both Direct3D callback functions and DirectDraw DDI functions. The Direct3D DDI callbacks are prototyped as follows:
 
-```
+```cpp
 typedef DWORD (APIENTRY *LPD3DHAL_MYFUNCTIONCB) (LPD3DHAL_MYFUNCTIONDATA);
 ```
 
@@ -52,37 +49,37 @@ The following table lists the Direct3D callback functions that are implemented i
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<strong>D3dContextCreate</strong>](https://msdn.microsoft.com/library/windows/hardware/ff542178)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff542178" data-raw-source="[&lt;strong&gt;D3dContextCreate&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff542178)"><strong>D3dContextCreate</strong></a></p></td>
 <td align="left"><p>Creates a context.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>D3dContextDestroy</strong>](https://msdn.microsoft.com/library/windows/hardware/ff542180)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff542180" data-raw-source="[&lt;strong&gt;D3dContextDestroy&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff542180)"><strong>D3dContextDestroy</strong></a></p></td>
 <td align="left"><p>Destroys a context.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>D3dCreateSurfaceEx</strong>](https://msdn.microsoft.com/library/windows/hardware/ff542840)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff542840" data-raw-source="[&lt;strong&gt;D3dCreateSurfaceEx&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff542840)"><strong>D3dCreateSurfaceEx</strong></a></p></td>
 <td align="left"><p>Creates an association between a texture handle and a surface.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>D3dDestroyDDLocal</strong>](https://msdn.microsoft.com/library/windows/hardware/ff544685)</p></td>
-<td align="left"><p>Destroys all the Direct3D surfaces previously created by [<strong>D3dCreateSurfaceEx</strong>](https://msdn.microsoft.com/library/windows/hardware/ff542840) that belong to the same given local DirectDraw object.</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff544685" data-raw-source="[&lt;strong&gt;D3dDestroyDDLocal&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff544685)"><strong>D3dDestroyDDLocal</strong></a></p></td>
+<td align="left"><p>Destroys all the Direct3D surfaces previously created by <a href="https://msdn.microsoft.com/library/windows/hardware/ff542840" data-raw-source="[&lt;strong&gt;D3dCreateSurfaceEx&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff542840)"><strong>D3dCreateSurfaceEx</strong></a> that belong to the same given local DirectDraw object.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>D3dDrawPrimitives2</strong>](https://msdn.microsoft.com/library/windows/hardware/ff544704)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff544704" data-raw-source="[&lt;strong&gt;D3dDrawPrimitives2&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff544704)"><strong>D3dDrawPrimitives2</strong></a></p></td>
 <td align="left"><p>Renders primitives and returns updated state to Direct3D.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>D3dGetDriverState</strong>](https://msdn.microsoft.com/library/windows/hardware/ff544708)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff544708" data-raw-source="[&lt;strong&gt;D3dGetDriverState&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff544708)"><strong>D3dGetDriverState</strong></a></p></td>
 <td align="left"><p>Returns state information about the driver to DirectDraw and Direct3D runtimes.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>D3dValidateTextureStageState</strong>](https://msdn.microsoft.com/library/windows/hardware/ff549064)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff549064" data-raw-source="[&lt;strong&gt;D3dValidateTextureStageState&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549064)"><strong>D3dValidateTextureStageState</strong></a></p></td>
 <td align="left"><p>Performs texture stage state validation, which is required for all drivers that support texturing.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 In order to support Direct3D, a driver must minimally support Microsoft DirectDraw and must also implement certain DirectDraw DDI functions. The functions pertinent to Direct3D support are listed in the following table.
 
@@ -99,25 +96,24 @@ In order to support Direct3D, a driver must minimally support Microsoft DirectDr
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<strong>DrvGetDirectDrawInfo</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556229)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff556229" data-raw-source="[&lt;strong&gt;DrvGetDirectDrawInfo&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556229)"><strong>DrvGetDirectDrawInfo</strong></a></p></td>
 <td align="left"><p>This function retrieves the capabilities of the graphics hardware. In this initialization function the driver indicates that it supports Direct3D.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>DdGetDriverInfo</strong>](https://msdn.microsoft.com/library/windows/hardware/ff549404)</p></td>
-<td align="left"><p>The runtime queries this callback function with GUIDs for additional information about the driver. Several GUIDs pertain specifically to the driver's Direct3D support.</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff549404" data-raw-source="[&lt;strong&gt;DdGetDriverInfo&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549404)"><strong>DdGetDriverInfo</strong></a></p></td>
+<td align="left"><p>The runtime queries this callback function with GUIDs for additional information about the driver. Several GUIDs pertain specifically to the driver&#39;s Direct3D support.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 DirectDraw function and callback implementation details are discussed in [DirectDraw](directdraw.md).
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Driver%20Functions%20to%20Support%20Direct3D%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

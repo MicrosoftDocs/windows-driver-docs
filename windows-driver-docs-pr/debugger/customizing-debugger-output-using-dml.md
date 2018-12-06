@@ -2,11 +2,8 @@
 title: Customizing Debugger Output Using DML
 description: The debugger markup language (DML) provides a mechanism for enhancing output from the debugger and extensions.
 ms.assetid: 04984510-B95F-405F-81DF-E9D0673210B4
-ms.author: windowsdriverdev
-ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 11/13/2018
+ms.localizationpriority: medium
 ---
 
 # Customizing Debugger Output Using DML
@@ -14,7 +11,7 @@ ms.technology: windows-devices
 
 The debugger markup language (DML) provides a mechanism for enhancing output from the debugger and extensions. Similar to HTML, the debugger’s markup support allows output to include display directives and extra non-display information in the form of tags. The debugger user interfaces, such as WinDbg parse out the extra information provided in DML to enhance the display of information and provide new behaviors, such as grid displays and sorting. This topic describes how you can customize your debug output using DML. For general information on enabling and using DML in the debuggers, see [Using Debugger Markup Language](debugger-markup-language-commands.md).
 
-DML is available in Windows 10 and later.
+DML is available in Windows 10 and later.
 
 ## <span id="DML_Overview"></span><span id="dml_overview"></span><span id="DML_OVERVIEW"></span>DML Overview
 
@@ -52,7 +49,7 @@ DML content roughly follows the XML/HTML rules for special characters. The chara
 
 would be converted to the following DML.
 
-```
+```text
 &quot;Alice & Bob think 3 &lt 4&quot;
 ```
 
@@ -65,14 +62,14 @@ A significant departure from XML/HTML rules is that DML text can include C progr
 
 Suppose the file C:\\Dml\_Experiment.txt contains the following lines.
 
-```
+```text
 My DML Experiment
 <link cmd="lmD musb*">List modules that begin with usb.</link>
 ```
 
 The following command displays the text and link in the Command Browser window.
 
-```
+```dbgcmd
 .browse .dml_start c:\Dml_Experiment.txt
 ```
 
@@ -87,7 +84,7 @@ If you click the **List modules that begin with usb** link, you see output simil
 
 Right-click behavior is available in DML. This sample shows how to define right click behavior using &lt;altlink&gt; to send a breakpoint [**bp (Set Breakpoint)**](bp--bu--bm--set-breakpoint-.md) command and send the [**u (Unassemble)**](u--unassemble-.md) with a regular click.
 
-```
+```text
 <link cmd="u MyProgram!memcpy">
 <altlink name="Set Breakpoint (bp)" cmd="bp MyProgram!memcpy" />
 u MyProgram!memcpy
@@ -109,7 +106,7 @@ Conversion to plain text drops the tags.
 
 **Example**
 
-```
+```text
 <b> Handy Links </b>
 <link cmd="!dml_proc">Display process information with DML rendering.</link>
 <link cmd="kM">Display stack information with DML rendering.</link>
@@ -119,7 +116,7 @@ Conversion to plain text drops the tags.
 
 This example shows the use of the alt attribute to create text that will appear when you hover over the DML link.
 
-```
+```text
 <b>Hover Example</b>
 <link cmd="lmD" alt="This link will run the list modules command and display the output in DML format">LmD</link>
 ```
@@ -136,7 +133,7 @@ Conversion to plain text drops the tags.
 
 This example shows how to define right click behavior using &lt;altlink&gt; to send a breakpoint [**bp (Set Breakpoint)**](bp--bu--bm--set-breakpoint-.md) command and send the [**u (Unassemble)**](u--unassemble-.md) with a regular click.
 
-```
+```text
 <link cmd="u MyProgram!memcpy">
 <altlink name="Set Breakpoint (bp)" cmd="bp MyProgram!memcpy" />
 u MyProgram!memcpy
@@ -155,7 +152,7 @@ Conversion to plain text drops the tags.
 
 This example shows how to define two commands with a regular click.
 
-```
+```text
 <b>Exec Sample</b>
 <exec cmd="!dml_proc">Display process information with DML rendering.</exec>
 <exec cmd="kM">Display stack information with DML rendering.</exec>
@@ -173,7 +170,7 @@ Conversion to plain text drops the tags.
 
 This example shows how to bold text.
 
-```
+```text
 <b>This is bold Text</b>
 ```
 
@@ -189,13 +186,13 @@ Conversion to plain text drops the tags.
 
 This example shows how to italicize text.
 
-```
+```text
 <i>This is italicized Text</i>
 ```
 
 ### <span id="_u_"></span><span id="_U_"></span>&lt;u&gt;
 
-*&lt;i&gt;underlined text&lt;/i&gt;*
+*&lt;u&gt;underlined text&lt;/u&gt;*
 
 This tag requests underlined text. The &lt;b&gt;, &lt;i&gt; and &lt;u&gt; can be nested to have a mix of the properties.
 
@@ -205,7 +202,7 @@ Conversion to plain text drops the tags.
 
 This example shows how to underlined text.
 
-```
+```text
 <u>This is underlined Text</u>
 ```
 
@@ -213,7 +210,7 @@ This example shows how to underlined text.
 
 This example shows how to combine tags to bold, underline and italicize text.
 
-```
+```text
 <b><u><i>This is bold, underlined and italizized text. </i></u></b> 
 ```
 
@@ -286,7 +283,7 @@ Request foreground and background colors for the text. The colors are given as n
 </tbody>
 </table>
 
- 
+
 
 **Source Code Single Element Tags**
 
@@ -345,7 +342,7 @@ Request foreground and background colors for the text. The colors are given as n
 </tbody>
 </table>
 
- 
+
 
 ## <span id="DML_Example_Code"></span><span id="dml_example_code"></span><span id="DML_EXAMPLE_CODE"></span>DML Example Code
 
@@ -386,7 +383,7 @@ This example code illustrates the following.
 <link cmd="dt nt!_CONTEXT" alt="This link displays information about nt_CONTEXT">dt nt!_CONTEXT<altlink name="Help about the dt command" cmd=".hh dt" /></link> - Display information about nt_CONTEXT
 <link cmd="dt nt!_PEB" alt="This link calls the dt command to display nt!_PEB">dt nt!_PEB<altlink name="Help about dt command" cmd=".hh dt" /></link> - Display information about the nt!_PEB
 <link cmd="ub" alt="This link unassembles backwards">ub<altlink name="Help about ub command" cmd=".hh u, ub, uu (Unassemble)" /></link> - Unassemble Backwards
- 
+
 <col fg="srcchar" bg="wbg"><i>
 **** Note: Not all of the following commands will work with all crash dump data ****
 </i></col>
@@ -411,7 +408,6 @@ This example code illustrates the following.
 <link cmd=".tlist" alt="This link displays a process list using TList ">tlist<altlink name="Help about the TList command" cmd=".hh .tlist" /></link> - Display a process list using tlist
 <link cmd="!process" alt="This link displays process ">!process<altlink name="Help about the !process command" cmd=".hh !process" /></link> - Display process information
 <link cmd="!dml_proc" alt="This link displays process information with DML rendering.">!dml_proc<altlink name="Help about the !dml_proc command" cmd=".hh !dml_proc" /></link> - Display process information with DML rendering
-
 ```
 
 This example code illustrates the use of color and formatting tags.
@@ -508,11 +504,11 @@ The following table summarizes the use of the %Y format specifier.
 | %Y{ps} | ULONG64. Extra space for padding debugger formatted pointer fields (includes the upper 8 zeros plus the \` character).                                                                                                             |
 | %Y{l}  | ULONG64. Address as source line information.                                                                                                                                                                                       |
 
- 
+
 
 This code snippet illustrates the use of the %Y format specifier.
 
-```
+```cpp
 HRESULT CALLBACK testout(_In_ PDEBUG_CLIENT pClient, _In_ PCWSTR /*pwszArgs*/)
 {
     HRESULT hr = S_OK;
@@ -546,7 +542,7 @@ HRESULT CALLBACK testout(_In_ PDEBUG_CLIENT pClient, _In_ PCWSTR /*pwszArgs*/)
 
 This sample code would generate the following output.
 
-```
+```dbgcmd
 0:004> !testout
 DML/NORMAL Y{t}: "Hello <World>"
 DML/NORMAL Y{T}: "Hello <World>"
@@ -566,7 +562,7 @@ DML/NORMAL Y{l}: [d:\th\minkernel\kernelbase\debug.c @ 443]
 
 An additional control flag, DEBUG\_OUTCTL\_AMBIENT\_DML, allows specification of DML context text without modifying any out output control attributes. DEBUG\_OUTCTL\_AMBIENT\_TEXT has been added also as a more-descriptive alias for the previously-existing DEBUG\_OUTCTL\_AMBIENT. The output control flags are defined in dbgeng.h.
 
-```
+```cpp
 #define DEBUG_OUTCTL_DML               0x00000020
 
 // Special values which mean leave the output settings
@@ -584,7 +580,7 @@ The dbgeng has been enhanced to scan debuggee output for a special marker – �
 
 This example shows a mix of plain and DML output.
 
-```
+```text
 OutputDebugString(“This is plain text\n<?dml?>This is <col fg=\”emphfg\”>DML</col> text\n”);
 ```
 
@@ -600,27 +596,28 @@ The new methods are:
 -   IDebugOutputCallbacks2::Output2 – All IDebugOutputCallbacks2 notifications come through Output2. The Which parameter indicates what kind of notification is coming in while the Flags, Arg and Text parameters carry the notification payload. Notifications include:
 
     -   DEBUG\_OUTCB\_TEXT – Plain text output. Flags are from DEBUG\_OUTCBF\_\*, Arg is the output mask and Text is the plain text. This will only be received if DEBUG\_OUTCBI\_TEXT was given in the interest mask.
+
     -   DEBUG\_OUTCB\_DML – DML content output. Flags are from DEBUG\_OUTCBF\_\*, Arg is the output mask and Text is the DML content. This will only be received if DEBUG\_OUTCBI\_DML was given in the interest mask.
+    
     -   DEBUG\_OUTCB\_EXPLICIT\_FLUSH – A caller has called FlushCallbacks with no buffered text. Normally when buffered text is flushed the DEBUG\_OUTCBF\_COMBINED\_EXPLICIT\_FLUSH flag will be set, folding the two notifications into one. If no text is buffered a flush-only notification is sent.
 
-    The flags are defined in dbgeng.h as shown here.
+ The interest mask flags are defined in dbgeng.h as shown here.
 
-    ```
-    // IDebugOutputCallbacks2 interest mask flags.
-    //
+ ```cpp
+ // IDebugOutputCallbacks2 interest mask flags.
+ //
+ // Indicates that the callback wants notifications
+// of all explicit flushes.
+#define DEBUG_OUTCBI_EXPLICIT_FLUSH 0x00000001
+// Indicates that the callback wants
+// content in text form.
+#define DEBUG_OUTCBI_TEXT           0x00000002
+// Indicates that the callback wants
+// content in markup form.
+#define DEBUG_OUTCBI_DML            0x00000004
 
-    // Indicates that the callback wants notifications
-    // of all explicit flushes.
-    #define DEBUG_OUTCBI_EXPLICIT_FLUSH 0x00000001
-    // Indicates that the callback wants
-    // content in text form.
-    #define DEBUG_OUTCBI_TEXT           0x00000002
-    // Indicates that the callback wants
-    // content in markup form.
-    #define DEBUG_OUTCBI_DML            0x00000004
-
-    #define DEBUG_OUTCBI_ANY_FORMAT     0x00000006
-    ```
+#define DEBUG_OUTCBI_ANY_FORMAT     0x00000006
+ ```
 
 Note that an output object can register for both text and DML content if it can handle them both. During output processing of the callback the engine will pick the format that reduces conversions, thus supporting both may reduce conversions in the engine. It is not necessary, though, and supporting only one format is the expected mode of operation.
 
@@ -633,11 +630,10 @@ The dbgeng will automatically convert between plain text and DML as necessary. F
 
 [Using Debugger Markup Language](debugger-markup-language-commands.md)
 
- 
 
- 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Customizing%20Debugger%20Output%20Using%20DML%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
 
 
 

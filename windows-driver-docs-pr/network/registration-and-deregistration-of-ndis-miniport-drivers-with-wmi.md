@@ -10,17 +10,14 @@ keywords:
 - registering miniport adapters
 - miniport adapters WDK networking , WMI
 - adapters WD
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Registration and Deregistration of NDIS Miniport Drivers with WMI
 
 
-## <a href="" id="ddk-registration-and-deregistration-of-ndis-miniport-drivers-with-wmi-"></a>
+
 
 
 NDIS automatically registers each miniport adapter with WMI. A miniport driver does not have to explicitly register with WMI, because NDIS automatically registers for the associated miniport adapter after the miniport driver returns from the [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) function.
@@ -35,9 +32,9 @@ NDIS can also register custom GUIDs for custom OIDs and status indications. If t
 
 For connection-oriented miniport drivers, NDIS also registers any named virtual connections (VCs). WMI clients can work only with VCs that a stand-alone call manager, or connection-oriented client, has named with the [**NdisCoAssignInstanceName**](https://msdn.microsoft.com/library/windows/hardware/ff561692) function. For more information about NDIS WMI support for named VCs, see [Support for Named VCs](support-for-named-vcs.md).
 
- 
+ 
 
- 
+ 
 
 
 

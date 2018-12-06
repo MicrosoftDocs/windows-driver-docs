@@ -1,22 +1,18 @@
 ---
 title: Minidriver-Supplied Halftoning
-author: windows-driver-content
 description: Minidriver-Supplied Halftoning
 ms.assetid: 15af499a-c541-4d61-ace3-5a211574674c
 keywords:
 - minidriver-supplied halftoning WDK Unidrv
 - customized halftoning WDK Unidrv
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Minidriver-Supplied Halftoning
 
 
-## <a href="" id="ddk-minidriver-supplied-halftoning-gg"></a>
+
 
 
 If a specified color format is one for which the number of bits per pixel used for rendering the image (\*DrvBPP) is greater than the bits per pixel supported by the printer (\*DevBPP multiplied by \*DevNumOfPlanes), then you must provide customized halftoning capabilities.
@@ -31,7 +27,7 @@ To provide customized halftoning capabilities, you must do the following:
 
 The following example defines two color formats and four halftoning methods. The example uses [option constraints](option-constraints.md) to specify which halftoning methods Unidrv should allow a user to select for each color format.
 
-```
+```cpp
 *Feature: ColorMode
 {
     *Option: ColorFormat1
@@ -80,12 +76,10 @@ In the example, both the ColorFormat1 and ColorFormat2 ColorMode options represe
 
 For more information about halftoning, see [Customized Halftoning](customized-halftoning.md).
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Minidriver-Supplied%20Halftoning%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

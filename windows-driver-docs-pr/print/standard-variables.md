@@ -1,23 +1,19 @@
 ---
 title: Standard Variables
-author: windows-driver-content
 description: Standard Variables
 ms.assetid: d3f85c0f-7387-4301-8b1e-904471aed4b0
 keywords:
 - GPD file entries WDK Unidrv , standard variables
 - variables WDK GPD files
 - standard variables WDK GPD files
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Standard Variables
 
 
-## <a href="" id="ddk-standard-variables-gg"></a>
+
 
 
 The GPD language defines a set of standard variables that can be referenced within command strings, using the [command string format](command-string-format.md). The Unidrv driver assigns values to these variables. From the point of view of a GPD file, the variables are read-only.
@@ -26,7 +22,7 @@ All standard variables are stored as DWORD integers.
 
 The following [printer command](printer-commands.md) entry specifies the command string that is sent to an HP LaserJet 4P when a block of raster data is ready:
 
-```
+```cpp
 *Command: CmdSendBlockData: "<1B>*b" %d{NumOfDataBytes} "W"
 ```
 
@@ -174,8 +170,8 @@ The following table contains all of the standard variables, in alphabetic order.
 </tr>
 <tr class="even">
 <td><p><strong>PageNumber</strong></p></td>
-<td><p>The number of the page currently being printed. Note that this does not necessarily correspond to the application's page number, but rather the number of times [<em>DrvSendPage</em>](https://msdn.microsoft.com/library/windows/hardware/ff556281) has been called.</p>
-<p>This value is initialized by [<strong>DrvStartDoc</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556296) and is incremented by <strong>DrvSendPage</strong>.</p>
+<td><p>The number of the page currently being printed. Note that this does not necessarily correspond to the application&#39;s page number, but rather the number of times <a href="https://msdn.microsoft.com/library/windows/hardware/ff556281" data-raw-source="[&lt;em&gt;DrvSendPage&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556281)"><em>DrvSendPage</em></a> has been called.</p>
+<p>This value is initialized by <a href="https://msdn.microsoft.com/library/windows/hardware/ff556296" data-raw-source="[&lt;strong&gt;DrvStartDoc&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556296)"><strong>DrvStartDoc</strong></a> and is incremented by <strong>DrvSendPage</strong>.</p>
 <p>For example, if N-up = 4 is selected, <strong>PageNumber</strong> is incremented to 2 only when the fifth page of the document is being printed.</p>
 <p>As another example, if a document is printed in reverse order (back to front) the <strong>PageNumber</strong> standard variable still reports the first page to be printed as page 1, even though this is the last page of the document.</p>
 <p>This behavior is needed to properly support the auto-duplexing feature.</p>
@@ -259,14 +255,12 @@ Type of the current pattern brush. Value can be:
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Standard%20Variables%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

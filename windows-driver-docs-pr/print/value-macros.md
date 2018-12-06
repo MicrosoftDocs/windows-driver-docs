@@ -1,22 +1,18 @@
 ---
 title: Value Macros
-author: windows-driver-content
 description: Value Macros
 ms.assetid: 265b2d35-5e91-4c47-a145-1e9f8c497c2c
 keywords:
 - value macros WDK GPD files
 - referencing macros
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Value Macros
 
 
-## <a href="" id="ddk-value-macros-gg"></a>
+
 
 
 A value macro is used to specify a set of one or more values that you want to insert individually and repeatedly into a GPD file. Values can be any of the [GPD value types](gpd-value-types.md).
@@ -50,7 +46,7 @@ To define one or more value macros in a GPD file, use the following format:
 </tbody>
 </table>
 
- 
+ 
 
 where *ValueMacroGroupName* is a unique name, and *ValueMacroBody* is a set of unique value names and associated values, as follows:
 
@@ -60,7 +56,7 @@ where *ValueMacroName* is a unique macro name, and *MacroValue* represents a [GP
 
 As an example, you might define value macros for a set of frequently used command prefixes as follows:
 
-```
+```cpp
 *Macros: HP4L
 {
     LetterCmdPrefix: "<1B>&l2a8c1E<1B>*p0x0Y"
@@ -81,7 +77,7 @@ where *ValueMacroName* is a unique name, previously specified in the \*Macros en
 
 For example, to reference one of the HP4L macros within a command specification, you could use the following entries:
 
-```
+```cpp
 *Command: CmdSelect
 {
     *Cmd: =LetterCmdPrefix "<1B>*c0t5760x7680Y"
@@ -90,12 +86,10 @@ For example, to reference one of the HP4L macros within a command specification,
 
 The only time you can assign a value by combining macro references with nonmacro values is when all macro definitions and other values represent text or command substrings, as illustrated in the example. In all other cases, the macro reference must represent the entire value to be assigned.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Value%20Macros%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

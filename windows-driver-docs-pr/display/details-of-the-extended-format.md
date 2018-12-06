@@ -5,11 +5,8 @@ ms.assetid: e9cd2bc7-99c1-4aca-91b0-9faefa4a856d
 keywords:
 - Direct3D version 10.1 WDK Windows 7 display , extended format
 - extended format WDK Windows 7 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Details of the Extended Format
@@ -453,7 +450,7 @@ R
 
 R
 
- 
+ 
 
 **Note**   In the preceding table, cell entries have the following meaning:
 -   "R" indicates that hardware support is required
@@ -462,15 +459,15 @@ R
 
 -   N/A indicates that the resource attribute either is not applicable to the extended format or does not allow the extended format
 
- 
+ 
 
 **Note**   The DXGI\_FORMAT\_B8G8R8A8\_UNORM and DXGI\_FORMAT\_B8G8R8X8\_UNORM formats already existed in the DXGI\_FORMAT enumeration. However, they are now considered members of the appropriate new family. Their requirements have changed compared to their original definitions.
 
- 
+ 
 
 **Note**   Rows for the "Input Assembler Index Buffer", "Shader sample\_c (comparison filter)", "Shader sample (mono 1-bit filter)", "Shader gather4", and "Depth-Stencil Target" resource attributes are not included in the preceding table for readability. All meaning for these resource attributes is N/A.
 
- 
+ 
 
 The following sections describe the details of the new extended formats:
 
@@ -486,11 +483,10 @@ The following sections describe the details of the new extended formats:
 
 [Interpretation of X Channel](interpretation-of-x-channel.md)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Details%20of%20the%20Extended%20Format%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

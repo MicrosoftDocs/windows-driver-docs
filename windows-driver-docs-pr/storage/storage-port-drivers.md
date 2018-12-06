@@ -1,17 +1,13 @@
 ---
 title: Storage Port Drivers
-author: windows-driver-content
 description: Storage Port Drivers
 ms.assetid: 5ff4916c-7d1f-4b61-a332-6ed89df9db56
 keywords:
 - storage port drivers WDK
 - storage port drivers WDK , about storage port drivers
 - port drivers WDK storage
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Storage Port Drivers
@@ -42,11 +38,10 @@ If you want your storage device to be supported on Windows Server 2003 and later
 
 The sections that follow describe the SCSI Port, Storport, and ATA port drivers and how they differ.
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

@@ -2,11 +2,8 @@
 title: Requirements for TCP Chimney NICs for Blind-Reset Attacks
 description: TCP Chimney NICs must follow the security guidelines outlined in the IETF memo of Improving TCP's Robustness to Blind In-Window Attacks, sections 3, 4, and 5. This section describes those guidelines.
 ms.assetid: e9cf6a7f-2c97-495c-a082-268b933daf60
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Requirements for TCP Chimney NICs for Blind-Reset Attacks
@@ -18,7 +15,7 @@ TCP Chimney NICs must follow the security guidelines outlined in the IETF memo o
 
 **Note**  This Internet-Draft is cited as a work in progress.
 
- 
+ 
 
 ## Implementing Blind-Reset Attack Mitigation
 
@@ -44,9 +41,9 @@ Below is a summary of the algorithm for mitigating blind-reset attacks, to be im
 -   If the connection is uploaded during blind-reset attack mitigation, then set KeepAlive.ProbeCount and KeepAlive.TimeoutDelta to reflect the number of probes sent and time remaining until the next probe.
 -   If an acceptable segment has been received, then stop the Keepalive timer if and only if the timer was started because of in-window but out-of-order SYN or RST, as described above. Otherwise, if the keep-alive option is enabled on the connection, then restart the timer to resume a normal keep-alive operation.
 
- 
+ 
 
- 
+ 
 
 
 

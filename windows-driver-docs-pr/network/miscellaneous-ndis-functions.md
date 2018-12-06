@@ -4,17 +4,14 @@ description: Miscellaneous NDIS Functions
 ms.assetid: c0c1f292-2425-4d09-8143-498c756b3943
 keywords:
 - functions WDK NDIS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Miscellaneous NDIS Functions
 
 
-## <a href="" id="ddk-miscellaneous-ndis-6-0-functions-ng"></a>
+
 
 
 NDIS includes the following miscellaneous features and functions:
@@ -23,9 +20,9 @@ NDIS includes the following miscellaneous features and functions:
 -   [NDIS Objects](ndis-objects.md)
 -   [NDIS I/O Work Items](ndis-i-o-work-items.md)
 
- 
+ 
 
- 
+ 
 
 
 

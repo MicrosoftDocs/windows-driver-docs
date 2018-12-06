@@ -6,11 +6,8 @@ keywords:
 - Bluetooth WDK , driver stack
 - driver stacks WDK Bluetooth
 - stacks WDK Bluetooth
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Bluetooth Driver Stack
@@ -27,14 +24,14 @@ The following image shows the modules within the Bluetooth driver stack, along w
 
         **Note**  User-mode applications should link against *BthProps.lib*, instead of *IrProps.lib*, in order to use APIs, such as [**BluetoothSetLocalServiceInfo**](https://msdn.microsoft.com/library/windows/hardware/ff536580).
 
-         
+         
 
 -   **Examples of profile drivers**
     -   **WAP Kernel Mode Driver**- The Wireless Application Protocol (WAP) component is an example of a profile driver that communicates between the Windows networking stack and BthPort, accessing the L2CAP interface and, optionally, the SDP interface contained in L2CAP. Other possible profiles include the Advanced Audio Distribution profile (A2DP), A/V Remote Control profile (AVRCP), Generic A/V Distribution profile (GAVDP), and Common ISDN Access (CIP) profile.
     -   **Audio Kernel Mode Driver**- An example of a profile driver that communicates between the Windows audio stack and BthPort, accessing the SCO interfaces contained in the latter. Possible profiles include the Hands Free profile (HFP), Headset profile (HSP), Cordless Telephony profile (CTP), and Intercom profile (ICP).
         **Note**  This profile driver is included with Windows beginning with Windows 8.
 
-         
+         
 
     -   **Bluetooth LE Heart Rate Monitor Profile**- An example of a Bluetooth LE profile driver that communicates with the Bluetooth Low Energy (LE) API.
 -   **Bluetooth driver stack components**
@@ -42,7 +39,7 @@ The following image shows the modules within the Bluetooth driver stack, along w
 
         **Note**  **IrProps** is provided only for backward compatibility. Use the **BthProps** component for new development.
 
-         
+         
 
     -   **BthProps**- A component that contains the implementation of the Bluetooth user interface along with implementation of the Bluetooth APIs that user-mode applications access. This component sends inquiries to BthServ through remote procedure calls (RPC). Additionally, BthProps performs pin exchanges with BthPort through private IOCTLs. Note that BthProps runs on any system with a Bluetooth-enabled radio.
     -   **BthServ**- A service that is responsible for caching and forwarding inquiry data to Bthport.
@@ -59,13 +56,13 @@ The following image shows the modules within the Bluetooth driver stack, along w
     -   **BthModem**- The component that implements virtual COM ports and dial-up networking (DUN). BthModem directs all I/O and control operations to RfComm through a TDI interface. The upper edge of BthModem communicates with *Serial.sys* to give the appearance of being a wireless COM port.
         **Note**  This component is not available in Windows RT.
 
-         
+         
 
     -   **BthEnum**- The Bluetooth bus driver. BthEnum communicates with the Plug and Play (PnP) manager to create and destroy device objects used to enable Bluetooth services. BthEnum creates a PDO for every service that a connected remote device supports. For example, when a user connects a Bluetooth-enabled mouse, Windows will discover that the mouse supports the Bluetooth HID service and creates a PDO for the HID service that causes the PnP manager to load HidBth.
 
         **Note**  BthEnum will not create PDOs for services that appear in the **UnsupportedServices** registry key as specified in *Bth.inf*.
 
-         
+         
 
     -   **BthLEEnum**- The Bluetooth Low Energy (LE) bus driver. BthLEEnum implements the ATT protocol and the GATT profile. It is also responsible for creating PDOs to represent the remote devices and their primary services.
 
@@ -76,11 +73,10 @@ The following image shows the modules within the Bluetooth driver stack, along w
         -   SDP implements the Bluetooth Service Discovery Protocol.
     -   **BthUsb.sys**- The miniport that abstracts the bus interface from **BthPort**.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[bltooth\bltooth]:%20Bluetooth%20Driver%20Stack%20%20RELEASE:%20%283/20/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

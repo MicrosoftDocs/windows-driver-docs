@@ -2,11 +2,8 @@
 title: SKU differentiation directive
 description: With Windows Server 2008 and Windows Vista SP1, the in-box display driver INFs were modified to include a new value that represented the drivers as Client Only, meaning that the drivers would not install on server SKUs of Windows.
 ms.assetid: 9E31BD57-41B6-40DF-AF27-8EAC66BDFE09
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # SKU differentiation directive
@@ -62,39 +59,42 @@ For any given architecture, a typical INF is decorated to install on any SKU in 
 
 [Models.NTamd64]
 <models entries>
+```
 
-In order to restrict this INF to install on client only, you need to add a ProductType of â€œ1â€ to the decoration. The number may be expressed as decimal or hexadecimalâ€¦ the documentation shows hexadecimal, but I will use decimal in the example for simplicity.
+In order to restrict this INF to install on client only, you need to add a ProductType of "1" to the decoration. The number may be expressed as decimal or hexadecimal. The documentation shows hexadecimal, but I will use decimal in the example for simplicity.
 
+``` syntax
 [Manufacturer]
 %MSFT%=Models,amd64...1
 
 ; models section for workstation
 [Models.NTamd64...1]
 <models entries>
+```
 
-For server, the syntax breaks it down to install on a client and a plain server. Each of these has its own product typeâ€¦ unfortunately the INF syntax needs you to specify both to cover both cases. Thus you need to duplicate the entire models section to really cover the server SKU:
+For server, the syntax breaks it down to install on a client and a plain server. Each of these has its own product type. Unfortunately the INF syntax needs you to specify both to cover both cases. Thus you need to duplicate the entire models section to really cover the server SKU:
 
+``` syntax
 [Manufacturer]
 %MSFT%=Models,amd64...1amd64...3
 
 ; models section for client
 [Models.NTamd64...1]
-IHV_DeviceName.XXX = â€œFoo Generic Device Name (Microsoft Corporation â€“ WDDM v1.2)â€
-IHV_DeviceName.YYY = â€œFoo Enthusiast Device Name (Microsoft Corporation â€“ WDDM v1.2)â€
+IHV_DeviceName.XXX = "Foo Generic Device Name (Microsoft Corporation - WDDM v1.2)"
+IHV_DeviceName.YYY = "Foo Enthusiast Device Name (Microsoft Corporation - WDDM v1.2)"
 <models entries>
 
 ; models section for Server
 [Models.NTamd64...3]
-IHV_DeviceName.XXX = â€œFoo Generic Name (Microsoft Corporation â€“ WDDM v1.2)â€
-IHV_DeviceName.ZZZ = â€œFoo Datacenter Name (Microsoft Corporation â€“ WDDM v1.2)â€
+IHV_DeviceName.XXX = "Foo Generic Name (Microsoft Corporation - WDDM v1.2)"
+IHV_DeviceName.ZZZ = "Foo Datacenter Name (Microsoft Corporation - WDDM v1.2)"
 <models entries>
 ```
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20SKU%20differentiation%20directive%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

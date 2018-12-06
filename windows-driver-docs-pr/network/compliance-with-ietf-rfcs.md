@@ -9,11 +9,8 @@ keywords:
 - IETF RFC compliance WDK TCP chimney offload
 - task-offload engine NIC WDK TCP chimney offload
 - TOE NIC WDK TCP chimney offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Compliance with IETF RFCs
@@ -37,9 +34,9 @@ This section includes the following topics:
 
 [Requirements for TCP Chimney NICs for Blind-Reset Attacks](requirements-for-tcp-chimney-nics-for-blind-reset-attacks.md)
 
- 
+ 
 
- 
+ 
 
 
 

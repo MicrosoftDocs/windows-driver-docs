@@ -2,11 +2,8 @@
 title: Accessing Device Interface Class Properties
 description: Accessing Device Interface Class Properties
 ms.assetid: c9efe273-dc66-4585-8ab5-3842df1c95df
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Accessing Device Interface Class Properties
@@ -66,9 +63,9 @@ To access properties of a device interface class that have corresponding registr
 
 For information about how to install and use device interfaces, see [Device Interface Classes](device-interface-classes.md) and [**INF AddInterface Directive**](inf-addinterface-directive.md).
 
- 
+ 
 
- 
+ 
 
 
 

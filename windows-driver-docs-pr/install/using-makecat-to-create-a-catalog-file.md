@@ -2,11 +2,8 @@
 title: Using MakeCat to Create a Catalog File
 description: Using MakeCat to Create a Catalog File
 ms.assetid: c9f9360b-2b1d-4060-af4d-8d281319e181
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using MakeCat to Create a Catalog File
@@ -18,7 +15,7 @@ You must use the MakeCat tool only to create catalog files for driver packages t
 
 **Note**  Instead of creating and signing a catalog file, you can also embed a signature in the kernel-mode binaries of your [driver package](driver-packages.md), such as the driver and any .dll files your package may provide. For more information about this procedure, see [Test-Signing a Driver through an Embedded Signature](test-signing-a-driver-through-an-embedded-signature.md).
 
- 
+ 
 
 To create a catalog file, you must first manually create a Catalog Definition File (*.cdf*) that describes the catalog header attributes and file entries. Once this file is created, you can then run the [MakeCat](http://go.microsoft.com/fwlink/p/?linkid=104922) tool to create a catalog file. The MakeCat tool does the following when it processes the *.cdf* file:
 
@@ -36,7 +33,7 @@ To create a *.cdf* file for the *ToastPkg* sample [driver package](driver-packag
 
 1.  Start Notepad and copy the text from the following sample. It contains the list of files to be cataloged, along with their attributes.
 
-    ```
+    ```cpp
     [CatalogHeader]
     Name=tstamd64.cat
     PublicVersion=0x0000001
@@ -56,11 +53,11 @@ To create a *.cdf* file for the *ToastPkg* sample [driver package](driver-packag
 2.  Save the file as *tstamd64.cdf* in the same folder as the driver package.
     **Note**  When building a driver for multiple platforms, create a separate catalog file for each platform.
 
-     
+     
 
 The following command line shows how to create a catalog file through the [MakeCat](http://go.microsoft.com/fwlink/p/?linkid=104922) tool by using the *tstamd64.cdf* file:
 
-```
+```cpp
 makecat -v tstamd64.cdf
 ```
 
@@ -70,9 +67,9 @@ For more information about the MakeCat tool and its command-line arguments, see 
 
 For more information about how to use the MakeCat tool, see [Creating a Catalog File for a Non-PnP Driver Package](creating-a-catalog-file-for-a-non-pnp-driver-package.md).
 
- 
+ 
 
- 
+ 
 
 
 

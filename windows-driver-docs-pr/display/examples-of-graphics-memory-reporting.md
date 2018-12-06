@@ -2,11 +2,8 @@
 title: Examples of Graphics Memory Reporting
 description: Examples of Graphics Memory Reporting
 ms.assetid: 3dc0e7ae-db6f-4440-8c9c-7227f409f81f
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Examples of Graphics Memory Reporting
@@ -32,7 +29,7 @@ The following screen shot shows a report of available memory through the **Displ
 
 **Note**   The single "Memory Size" number that the preceding screen shot shows is just the dedicated on-board graphics memory, which is not an accurate representation of the total amount of available graphics memory.
 
- 
+ 
 
 ### <span id="example_2__32_mb_dedicated_on_board_graphics_memory_on_a_mobile_comput"></span><span id="EXAMPLE_2__32_MB_DEDICATED_ON_BOARD_GRAPHICS_MEMORY_ON_A_MOBILE_COMPUT"></span>Example 2: 32-MB Dedicated On-Board Graphics Memory on a Mobile Computer
 
@@ -52,7 +49,7 @@ The following screen shot shows a report of available memory through the **Displ
 
 **Note**   For TurboCache computers like the one shown in the preceding screen shot, the single "Memory Size" number is a combination, but not a total, of dedicated graphics memory and shared system memory. Again, this is not an accurate representation of the total amount of available graphics memory.
 
- 
+ 
 
 ### <span id="example_3__256_mb_shared_graphics_memory_on_a_mobile_computer"></span><span id="EXAMPLE_3__256_MB_SHARED_GRAPHICS_MEMORY_ON_A_MOBILE_COMPUTER"></span>Example 3: 256-MB Shared Graphics Memory on a Mobile Computer
 
@@ -70,11 +67,10 @@ The following screen shot shows a report of available memory through the **Displ
 
 ![screen shot of the windows xp display application](images/reportmemmobxp2.png)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Examples%20of%20Graphics%20Memory%20Reporting%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -2,11 +2,8 @@
 title: Device Metadata Error Codes
 description: Device Metadata Error Codes
 ms.assetid: 7ca3b9d3-8e7d-4421-affa-bddea2d4c262
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Device Metadata Error Codes
@@ -54,7 +51,7 @@ Starting with Windows 7, the operating system logs the following error codes wit
 </tbody>
 </table>
 
- 
+ 
 
 <a href="" id="device-metadata-retrieval-client--dmrc--errors--0x400000xx-"></a>Device Metadata Retrieval Client (DMRC) Errors (0x400000xx)  
 <table>
@@ -96,7 +93,7 @@ Starting with Windows 7, the operating system logs the following error codes wit
 </tbody>
 </table>
 
- 
+ 
 
 <a href="" id="device-metadata-package-errors--0x500000xx-"></a>Device Metadata Package Errors (0x500000xx)  
 <table>
@@ -127,10 +124,10 @@ Starting with Windows 7, the operating system logs the following error codes wit
 <td align="left"><p>50000022</p></td>
 <td align="left"><p><em>PackageInfo.xml</em> is not well-formed and cannot be parsed.</p>
 <div class="alert">
-<strong>Note</strong>   This error code includes the cases where either the <em>PackageInfo.xml</em> document is missing required elements, or one or more of its elements are not valid based on the syntax of the [PackageInfo XML Schema](https://msdn.microsoft.com/library/windows/hardware/ff549614).
+<strong>Note</strong>   This error code includes the cases where either the <em>PackageInfo.xml</em> document is missing required elements, or one or more of its elements are not valid based on the syntax of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff549614" data-raw-source="[PackageInfo XML Schema](https://msdn.microsoft.com/library/windows/hardware/ff549614)">PackageInfo XML Schema</a>.
 </div>
 <div>
- 
+ 
 </div></td>
 </tr>
 <tr class="odd">
@@ -168,7 +165,7 @@ Starting with Windows 7, the operating system logs the following error codes wit
 </tbody>
 </table>
 
- 
+ 
 
 <a href="" id="wmis-query--0x7000xxxx-"></a>WMIS Query (0x7000xxxx)  
 <table>
@@ -198,11 +195,11 @@ Starting with Windows 7, the operating system logs the following error codes wit
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

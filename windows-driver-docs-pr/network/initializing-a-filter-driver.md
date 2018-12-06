@@ -6,16 +6,13 @@ keywords:
 - filter drivers WDK networking , initializing
 - NDIS filter drivers WDK , initializing
 - initializing filter drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Initializing a Filter Driver
 
-## <a href="" id="ddk-initializing-a-filter-driver-ng"></a>
+
 
 Filter driver initialization occurs immediately after the system loads the driver. Filter drivers load as system services. The system can load the filter drivers at any time before, during, or after the miniport drivers load. NDIS can attach a filter module to a miniport adapter after a miniport adapter of the type supported by the filter driver becomes available and the filter driver initialization is complete.
 
@@ -87,9 +84,9 @@ After *FilterSetOptions* returns, the filter modules are in the *Detached* state
 
 A filter driver also performs any other driver-specific initialization that it requires in **DriverEntry**. The filter driver must release the driver-specific resources that it allocates in its [*FilterDriverUnload*](https://msdn.microsoft.com/library/windows/hardware/ff549936) routine. For more information, see [Unloading a Filter Driver](unloading-a-filter-driver.md).
 
- 
+ 
 
- 
+ 
 
 
 

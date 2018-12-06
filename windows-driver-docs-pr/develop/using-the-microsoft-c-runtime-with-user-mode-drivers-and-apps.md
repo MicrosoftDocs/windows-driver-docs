@@ -2,11 +2,8 @@
 ms.assetid: DAD531B1-2308-481F-841B-450EEEDA1BB1
 title: Using Microsoft C Runtime with User-Mode Drivers and Desktop Apps
 description: This topic provides information about distributing the C Runtime Libraries with applications and drivers for Windows 8 and Windows 8.1.
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using the Microsoft C Runtime with User-Mode Drivers and Desktop Apps
@@ -120,7 +117,7 @@ The following libraries contain the C run-time library functions.
 </tbody>
 </table>
 
- 
+ 
 
 To determine which DLLs you must redistribute with your application, you should collect a list of the DLLs that your application depends on. One way to collect the list is to run Dependency Walker (depends.exe).
 
@@ -143,9 +140,9 @@ For UMDF drivers, use static linking of the CRT with your driver code.
 * [Determining Which DLLs to Redistribute](http://go.microsoft.com/fwlink/p/?linkid=321001)
 * [Redistributable Code for Visual Studio 2013 Preview and Visual Studio 2013 SDK Preview](http://go.microsoft.com/fwlink/p/?linkid=320999)
 * [Choosing a Deployment Method](http://go.microsoft.com/fwlink/p/?linkid=321651)
- 
+ 
 
- 
+ 
 
 
 

@@ -8,24 +8,21 @@ keywords:
 - porting miniport drivers WDK networking , status indications
 - status indications WDK networking , porting
 - porting status indications WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Porting Miniport Driver Status Indications to NDIS 6.0
 
 
-## <a href="" id="ddk-porting-miniport-driver-status-indications-to-ndis-6-0-ng"></a>
+
 
 
 The [**NdisMIndicateStatusEx**](https://msdn.microsoft.com/library/windows/hardware/ff563600) function replaces the [**NdisMIndicateStatus**](https://msdn.microsoft.com/library/windows/hardware/ff553538) and [**NdisMIndicateStatusComplete**](https://msdn.microsoft.com/library/windows/hardware/ff553540) functions. Status indication parameters are packaged within an [**NDIS\_STATUS\_INDICATION**](https://msdn.microsoft.com/library/windows/hardware/ff567373) structure that contains the source handle, status code, buffer, and size.
 
 The initialization of status indication structure is shown in the following example.
 
-```
+```cpp
 StatusIndication.Header.Type = NDIS_OBJECT_TYPE_STATUS_INDICATION;
 StatusIndication.Header.Revision = NDIS_STATUS_INDICATION_REVISION_1;
 StatusIndication.Header.Size = sizeof(NDIS_STATUS_INDICATION);
@@ -35,9 +32,9 @@ StatusIndication.StatusBuffer = (PVOID)&LinkState;
 StatusIndication.StatusBufferSize = sizeof(LinkState);
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -4,11 +4,8 @@ description: Propagating I/O Operations
 ms.assetid: 009159ad-81c0-4555-8e6b-a4fec2c7f1d5
 keywords:
 - intermediate drivers WDK TCP chimney offload , propagating I/O operations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Propagating I/O Operations
@@ -24,9 +21,9 @@ This section includes:
 
 -   [Propagating the Completion of an I/O Operation](propagating-the-completion-of-an-i-o-operation.md)
 
- 
+ 
 
- 
+ 
 
 
 

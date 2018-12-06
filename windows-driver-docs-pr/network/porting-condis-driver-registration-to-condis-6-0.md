@@ -9,17 +9,14 @@ keywords:
 - entry points WDK networking
 - registration porting WDK CoNDIS
 - porting CoNDIS drivers WDK networking , r
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Porting CoNDIS Driver Registration to CoNDIS 6.0
 
 
-## <a href="" id="ddk-porting-condis-driver-registration-to-condis-6-0-ng"></a>
+
 
 
 In NDIS 5.*x*, CoNDIS drivers register the primary *ProtocolXxx* and *MiniportXxx* functions during normal driver registration. To support CoNDIS, NDIS 6.0 drivers must register the CoNDIS function entry points by calling the [**NdisSetOptionalHandlers**](https://msdn.microsoft.com/library/windows/hardware/ff564550) function. NDIS 6.0 protocol drivers must provide an [**NDIS\_PROTOCOL\_CO\_CHARACTERISTICS**](https://msdn.microsoft.com/library/windows/hardware/ff566817) structure, And NDIS 6.0 miniport drivers must provide an [**NDIS\_MINIPORT\_CO\_CHARACTERISTICS**](https://msdn.microsoft.com/library/windows/hardware/ff565948) structure.
@@ -36,9 +33,9 @@ This section includes the following topics:
 
 [Porting CoNDIS MCM Registration](porting-condis-mcm-registration.md)
 
- 
+ 
 
- 
+ 
 
 
 

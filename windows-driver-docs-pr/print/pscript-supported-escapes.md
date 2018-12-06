@@ -1,23 +1,19 @@
 ---
 title: Pscript-Supported Escapes
-author: windows-driver-content
 description: Pscript-Supported Escapes
 ms.assetid: c0133355-fa3b-4117-bd38-b6a8b3898f94
 keywords:
 - PostScript Printer Driver WDK print , escapes
 - Pscript WDK print , escapes
 - escapes WDK Pscript
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Pscript-Supported Escapes
 
 
-## <a href="" id="ddk-pscript-supported-escapes-gg"></a>
+
 
 
 The Pscript5 printer driver supports the following escapes.
@@ -41,12 +37,12 @@ The Pscript5 printer driver supports the following escapes.
 <tr class="even">
 <td><p>CHECKJPEGFORMAT</p></td>
 <td><p>Determine whether a printer can handle a JPEG image. For more information about this escape, see CHECKJPEGFORMAT in the Microsoft Windows SDK documentation.</p>
-<p>This escape produces a call to the [<strong>DrvQueryDeviceSupport</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556260) function.</p></td>
+<p>This escape produces a call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556260" data-raw-source="[&lt;strong&gt;DrvQueryDeviceSupport&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556260)"><strong>DrvQueryDeviceSupport</strong></a> function.</p></td>
 </tr>
 <tr class="odd">
 <td><p>CHECKPNGFORMAT</p></td>
 <td><p>Determine whether a printer can handle a PNG image. For more information about this escape, see CHECKPNGFORMAT in the Windows SDK documentation.</p>
-<p>This escape produces a call to the [<strong>DrvQueryDeviceSupport</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556260) function.</p></td>
+<p>This escape produces a call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556260" data-raw-source="[&lt;strong&gt;DrvQueryDeviceSupport&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556260)"><strong>DrvQueryDeviceSupport</strong></a> function.</p></td>
 </tr>
 <tr class="even">
 <td><p>CLIP_TO_PATH</p></td>
@@ -59,13 +55,13 @@ The Pscript5 printer driver supports the following escapes.
 <tr class="even">
 <td><p>DRAWPATTERNRECT</p></td>
 <td><p>Create a white, grayscale, or solid black rectangle by using the pattern and rule capabilities of Page Control Language (PCL) on Hewlett Packard LaserJet or LaserJet-compatible printers. A grayscale is a gray pattern that contains a specific mixture of black and white pixels. For more information about this escape, see DRAWPATTERNRECT in the Windows SDK documentation.</p>
-<p>This escape is associated with the driver's [<strong>DrvEscape</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556217) function.</p></td>
+<p>This escape is associated with the driver&#39;s <a href="https://msdn.microsoft.com/library/windows/hardware/ff556217" data-raw-source="[&lt;strong&gt;DrvEscape&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556217)"><strong>DrvEscape</strong></a> function.</p></td>
 </tr>
 <tr class="odd">
 <td><p>ENCAPSULATED_POSTSCRIPT</p></td>
 <td><p>Send Encapsulated PostScript (EPS) data to the printer.</p>
 <p>This escape is not supported in Microsoft Windows NT 4.0 printer drivers.</p>
-<p>This escape is associated with the driver's [<strong>DrvDrawEscape</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556203) function.</p></td>
+<p>This escape is associated with the driver&#39;s <a href="https://msdn.microsoft.com/library/windows/hardware/ff556203" data-raw-source="[&lt;strong&gt;DrvDrawEscape&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556203)"><strong>DrvDrawEscape</strong></a> function.</p></td>
 </tr>
 <tr class="even">
 <td><p>END_PATH</p></td>
@@ -134,7 +130,7 @@ The Pscript5 printer driver supports the following escapes.
 </tbody>
 </table>
 
- 
+ 
 
 The following escapes were added in Windows NT 4.0 but are no longer supported:
 
@@ -201,14 +197,12 @@ The following escapes are obsolete and provided only for compatibility with 16-b
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Pscript-Supported%20Escapes%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

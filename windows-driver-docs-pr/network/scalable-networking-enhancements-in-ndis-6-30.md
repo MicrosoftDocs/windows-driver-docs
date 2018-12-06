@@ -2,11 +2,8 @@
 title: Scalable Networking Enhancements in NDIS 6.30
 description: Scalable networking includes the following enhancements for NDIS 6.30 and later drivers
 ms.assetid: 558DBDD7-8724-42E7-919A-ADAF01721F8F
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Scalable Networking Enhancements in NDIS 6.30
@@ -22,11 +19,11 @@ Scalable networking includes the following enhancements for NDIS 6.30 and later 
 
 **Note**  NetDMA is not supported in Windows 8 and later versions of the Windows operating system.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

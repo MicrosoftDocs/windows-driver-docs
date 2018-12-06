@@ -1,6 +1,5 @@
 ---
 title: Writing a PCL XL GPD File
-author: windows-driver-content
 description: Writing a PCL XL GPD File
 ms.assetid: 35abc33a-a046-452b-b650-5c4f626bf6cb
 keywords:
@@ -8,17 +7,14 @@ keywords:
 - GPD files WDK Unidrv , PCL XL
 - command ordering WDK PCL XL
 - writing PCL XL GPD files
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Writing a PCL XL GPD File
 
 
-## <a href="" id="ddk-writing-a-pcl-xl-gpd-file-gg"></a>
+
 
 
 This section provides general information about writing a PCL XL GPD file, such as which files your GPD file should include, how to enable PCL XL in your GPD file, and how to order PCL XL commands in a PCL XL stream.
@@ -41,7 +37,7 @@ In addition to the preceding files, include the standard GPD files, stdnames.gpd
 
 The following example shows how these files would be included in a GPD file.
 
-```
+```cpp
 *Include: stdnames.gpd
 *Include: ttfsub.gpd
 *Include: pclxl.gpd
@@ -54,7 +50,7 @@ The following example shows how these files would be included in a GPD file.
 
 To enable PCL XL vector support, you only need to set the \*Personality attribute. This is done in the following way:
 
-```
+```cpp
 *Personality: = PERSONALITY_PCLXL
 ```
 
@@ -68,7 +64,7 @@ The order of the commands is more critical in PCL XL than in PCL-5. A small erro
 
 A PCL XL stream has a form similar to the following. (The indentation shown is used only to emphasize the point that these operators come in pairs.)
 
-```
+```cpp
 PJL commands
 BeginSession
   OpenDataSource
@@ -92,12 +88,10 @@ An IHV can lessen printer memory usage by limiting the number of fonts to be dow
 
 Unidrv operates under the assumption that each GPD file contains its own dither matrix. It is also recommended that each device have its own dither matrix. The dither matrix is specified in a \*Feature: Dither [customized feature](customized-features.md).
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Writing%20a%20PCL%20XL%20GPD%20File%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

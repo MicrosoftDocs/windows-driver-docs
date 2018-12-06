@@ -6,17 +6,14 @@ keywords:
 - logical adapters WDK networking
 - context WDK miniport adapter
 - miniport adapters WDK networking , context
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Miniport Adapter Context
 
 
-## <a href="" id="ddk-miniport-driver-adapter-context-ng"></a>
+
 
 
 NDIS uses a software object called a *miniport adapter* to represent each virtual or physical network device in the system. This object is maintained by NDIS and is opaque to the miniport driver and to protocol drivers. NDIS passes a handle to this structure to the miniport driver's [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) function. The miniport driver subsequently supplies this handle in all calls to **Ndis*Xxx*** functions that pertain to the miniport adapter that the handle specifies.
@@ -25,9 +22,9 @@ When a miniport driver is called to initialize a miniport adapter that it manage
 
 When NDIS calls one of the miniport driver's *MiniportXxx* functions that pertains to a miniport adapter, NDIS passes the miniport adapter context to identify the correct miniport adapter to the driver. The miniport adapter context is owned and maintained by the miniport driver and is opaque to NDIS and to protocol drivers.
 
- 
+ 
 
- 
+ 
 
 
 

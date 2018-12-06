@@ -5,11 +5,8 @@ ms.assetid: BA7AB3B4-9751-4e53-98AD-2B920F7223A1
 keywords:
 - registry WDK device installations , deleting a device's registry keys
 - deleting registry keys WDK device installations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Deleting the Registry Keys of a Device
@@ -37,9 +34,9 @@ You can safely create and delete registry subkeys under the hardware or software
 
 For more information about the standard registry functions, see [Registry Functions](http://go.microsoft.com/fwlink/p/?linkid=194529).
 
- 
+ 
 
- 
+ 
 
 
 

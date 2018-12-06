@@ -1,6 +1,5 @@
 ---
 title: Color Commands
-author: windows-driver-content
 description: Color Commands
 ms.assetid: 752a3c1d-05f1-4f5e-9ef2-e51721ef7cc4
 keywords:
@@ -10,17 +9,14 @@ keywords:
 - palettes WDK Unidrv
 - patterns WDK Unidrv
 - brushes WDK Unidrv
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Color Commands
 
 
-## <a href="" id="ddk-color-commands-gg"></a>
+
 
 
 This topic describes the color commands for printing, and it contains the following sections:
@@ -94,7 +90,7 @@ The [printer commands](printer-commands.md) in the following table are used by p
 </tbody>
 </table>
 
- 
+ 
 
 For examples, see the [sample GPD files](sample-gpd-files.md).
 
@@ -125,7 +121,7 @@ The [printer commands](printer-commands.md) in the following table are used by p
 <td><p><strong>CmdEndPaletteDef</strong></p></td>
 <td><p>Command to end a palette definition.</p></td>
 <td><p>Optional. If not specified, no command is required to end a palette definition.</p>
-<p>The *Order attribute can be specified. If it is not, the <strong>*Order</strong> attribute associated with the most recently executed [option selection command](option-selection-command.md) for the ColorMode feature is used.</p></td>
+<p>The <em>Order attribute can be specified. If it is not, the <strong></em>Order</strong> attribute associated with the most recently executed <a href="option-selection-command.md" data-raw-source="[option selection command](option-selection-command.md)">option selection command</a> for the ColorMode feature is used.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>CmdBeginPaletteReDef</strong></p></td>
@@ -141,7 +137,7 @@ The [printer commands](printer-commands.md) in the following table are used by p
 <td><p><strong>CmdDefinePaletteEntry</strong></p></td>
 <td><p>Command to define a palette entry.</p></td>
 <td><p>Required if the printer supports palettes.</p>
-<p>In 24 BPP mode, Unidrv allows palettes for which *PaletteSize is 1. This allows GPD developers to implement a direct RGB color selection command for their devices. To do so, set <strong>*PaletteSize</strong> to 1, and specify the selection color command in the <strong>CmdDefinePaletteEntry</strong> command. The CmdSelectPaletteEntry command must also be specified but can be defined as a <strong>NULL</strong> command.</p></td>
+<p>In 24 BPP mode, Unidrv allows palettes for which <em>PaletteSize is 1. This allows GPD developers to implement a direct RGB color selection command for their devices. To do so, set <strong></em>PaletteSize</strong> to 1, and specify the selection color command in the <strong>CmdDefinePaletteEntry</strong> command. The CmdSelectPaletteEntry command must also be specified but can be defined as a <strong>NULL</strong> command.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>CmdRedefinePaletteEntry</strong></p></td>
@@ -156,7 +152,7 @@ The [printer commands](printer-commands.md) in the following table are used by p
 </tbody>
 </table>
 
- 
+ 
 
 For examples, see the [sample GPD files](sample-gpd-files.md).
 
@@ -201,14 +197,12 @@ The [printer commands](printer-commands.md) in the following table are used by p
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Color%20Commands%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

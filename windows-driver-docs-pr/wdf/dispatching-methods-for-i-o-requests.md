@@ -1,6 +1,5 @@
 ---
 title: Dispatching Methods for I/O Requests
-author: windows-driver-content
 description: Dispatching Methods for I/O Requests
 ms.assetid: 3e91aa7c-bccf-4eeb-8b68-b1277a690f8c
 keywords:
@@ -12,17 +11,14 @@ keywords:
 - parallel dispatching WDK KMDF
 - asynchronous dispatching WDK KMDF
 - manual dispatching WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Dispatching Methods for I/O Requests
 
 
-## <a href="" id="ddk-dispatching-methods-for-i-o-requests-df"></a>
+
 
 
 When a driver calls [**WdfIoQueueCreate**](https://msdn.microsoft.com/library/windows/hardware/ff547401) to create an I/O queue, it specifies a dispatching method for the queue. The framework provides three dispatching methods: [sequential](#sequential-dispatching), [parallel](#parallel-dispatching), and [manual](#manual-dispatching). The driver can specify any of these dispatching methods for any I/O queue, including a device's [default I/O queue](creating-i-o-queues.md).
@@ -59,9 +55,9 @@ To obtain a request from a manual queue, the driver can call [**WdfIoQueueRetrie
 
 After the driver obtains a request from the queue, it must [process the request](processing-i-o-requests.md). The driver must eventually [complete](completing-i-o-requests.md) or [cancel](canceling-i-o-requests.md) each request.
 
- 
+ 
 
- 
+ 
 
 
 

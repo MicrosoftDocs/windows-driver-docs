@@ -1,16 +1,12 @@
 ---
 title: Designing WMI Miniport Driver Callback Routines
-author: windows-driver-content
 description: Designing WMI Miniport Driver Callback Routines
 ms.assetid: 3bf5b214-e09c-48bc-832b-d0efd3bc8875
 keywords:
 - WMI SRBs WDK storage , designing callback routines
 - callback routines WDK WMI SRBs
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Designing WMI Miniport Driver Callback Routines
@@ -39,11 +35,10 @@ The following sections will help you design the *HwScsiWmiExecuteMethod* callbac
 
 [Designing a Miniport Driver Callback Routine that Handles WMI Classes with Data Fields](designing-a-miniport-driver-callback-routine-that-handles-wmi-classes-.md)
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

@@ -3,17 +3,14 @@ title: Bug Check 0x4D NO_PAGES_AVAILABLE
 description: The NO_PAGES_AVAILABLE bug check has a value of 0x0000004D. This indicates that no free pages are available to continue operations.
 ms.assetid: c1f8fb33-a01c-4455-87a7-59aa6ba7cb37
 keywords: ["Bug Check 0x4D NO_PAGES_AVAILABLE", "NO_PAGES_AVAILABLE"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - NO_PAGES_AVAILABLE
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x4D: NO\_PAGES\_AVAILABLE
@@ -21,7 +18,7 @@ api_type:
 
 The NO\_PAGES\_AVAILABLE bug check has a value of 0x0000004D. This indicates that no free pages are available to continue operations.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## NO\_PAGES\_AVAILABLE Parameters
 
@@ -59,7 +56,7 @@ The NO\_PAGES\_AVAILABLE bug check has a value of 0x0000004D. This indicates tha
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -92,9 +89,9 @@ This bug check can occur for any of the following reasons:
 
 If the problem cannot be found, then try booting with a kernel debugger attached from the beginning, and monitor the situation.
 
- 
+ 
 
- 
+ 
 
 
 

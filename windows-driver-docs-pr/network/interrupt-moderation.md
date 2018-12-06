@@ -8,17 +8,14 @@ keywords:
 - OID_GEN_INTERRUPT_MODERATION
 - NDIS_INTERRUPT_MODERATION_PARAMETERS
 - interrupts WDK networking , moderation
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Interrupt Moderation
 
 
-## <a href="" id="ddk-interrupt-moderation-ng"></a>
+
 
 
 To reduce the number of interrupts, many NICs use *interrupt moderation*. With interrupt moderation, the NIC hardware will not generate an interrupt immediately after it receives a packet. Instead, the hardware waits for more packets to arrive, or for a time-out to expire, before generating an interrupt. The hardware vendor specifies the maximum number of packets, time-out interval, or other interrupt moderation algorithm.
@@ -31,9 +28,9 @@ NDIS 6.0 and later miniport drivers must support both the [OID\_GEN\_INTERRUPT\_
 
 A miniport driver that supports interrupt moderation should turn this capability on by default unless the **InterruptModeration** standard keyword in the registry disables it. For more information about the standard keywords, see [Standardized INF Keywords for Network Devices](standardized-inf-keywords-for-network-devices.md).
 
- 
+ 
 
- 
+ 
 
 
 

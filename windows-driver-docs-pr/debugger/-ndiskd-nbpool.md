@@ -3,17 +3,14 @@ title: ndiskd.nbpool
 description: The ndiskd.nbpool extension displays information about a NET_BUFFER (NB) pool. 
 ms.assetid: 4FCD48B7-C469-4057-A279-20522B00E80B
 keywords: ["ndiskd.nbpool Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - ndiskd.nbpool
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !ndiskd.nbpool
@@ -21,7 +18,7 @@ api_type:
 
 The **!ndiskd.nbpool** extension displays information about a [**NET\_BUFFER**](https://msdn.microsoft.com/windows/hardware/drivers/network/net-buffer-structure) (NB) pool. If you run this extension with no parameters, !ndiskd will display a list of all allocated NB pools in the system.
 
-```
+```console
 !ndiskd.nbpool [-handle <x>] [-allocations] [-find <str>] [-findva <x>] [-findpa <x>] 
 ```
 
@@ -52,7 +49,7 @@ Examples
 
 Enter the **!ndiskd.nbpool** command with no parameters to see a list of all allocated NB pools. In this example, look for the NB pool allocated by the Netio service with the Nnbf Tag. Its handle is ffffdf801308ca40.
 
-```
+```console
 2: kd> !ndiskd.nbpool
     NB Pool            Tag                 Allocated by                         
     ffffdf8013963a40   UDNb                NETIO!NetioAllocateNetBufferMdlAndDataPool+3c
@@ -64,7 +61,7 @@ Enter the **!ndiskd.nbpool** command with no parameters to see a list of all all
 
 Click on the NB pool's handle or enter the **!ndiskd.nbpool -handle** command to examine its details.
 
-```
+```console
 2: kd> !ndiskd.nbpool ffffdf801308ca40
 
 
@@ -84,7 +81,7 @@ NB POOL
 
 To explore the NBs contained in this NB pool, click on the "All allocated NBs" link at the bottom. Alternatively, you can also enter the **!ndiskd.nbpool -handle -allocations** command. As shown in the following example, this NB pool contains more than 1024 NBs so !ndiskd quit early. You can use the -force option to work around this limit and see all of the NBs in this NB pool.
 
-```
+```console
 2: kd> !ndiskd.nbpool ffffdf801308ca40 -allocations
 
 
@@ -147,11 +144,10 @@ ALL ALLOCATED NBs
 
 [**NET\_BUFFER**](https://msdn.microsoft.com/windows/hardware/drivers/network/net-buffer-structure)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!ndiskd.nbpool%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

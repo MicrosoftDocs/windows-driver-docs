@@ -2,11 +2,8 @@
 title: Using SetupAPI to Uninstall Devices and Driver Packages
 description: Using SetupAPI to Uninstall Devices and Driver Packages
 ms.assetid: e170961b-5d12-43d5-b502-3b37e6421f6e
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using SetupAPI to Uninstall Devices and Driver Packages
@@ -48,9 +45,9 @@ Starting with Windows Vista, this function also removes the [driver package](dri
 
 SetupAPI cannot be used to perform this action.
 
- 
+ 
 
- 
+ 
 
 
 

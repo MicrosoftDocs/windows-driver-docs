@@ -3,11 +3,8 @@ title: Using DBH
 description: Using DBH
 ms.assetid: c544013d-e925-40bf-b76d-bf9cefb9fd6d
 keywords: ["DBH, using"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using DBH
@@ -25,7 +22,7 @@ When DBH starts, it loads the symbols for the specified module, and then present
 
 For example, the following sequence starts DBH by specifying the target process with process ID 4672, then executes the **enum** command at the DBH prompt to display symbols matching a specific pattern, and then executes the **q** command to quit DBH:
 
-```
+```console
 C:\> dbh -p:4672 
             400000 : TimeTest
           77820000 : ntdll
@@ -49,7 +46,7 @@ If you wish to run only a single DBH command, you can specify it at the end of t
 
 For example, the previous example could be replaced with a single command line:
 
-```
+```console
 C:\> dbh -p:4672 enum TimeTest!ma* 
            400000 : TimeTest
          77820000 : ntdll
@@ -67,7 +64,7 @@ This method of running DBH is called *batch mode*, because it can be easily used
 
 DBH can select a target in three ways: by the process ID of a running process, by the name of the executable, or by the name of the symbol file. For example, if there is exactly one instance of MyProg.exe currently running, with process ID 1234, then the following commands are almost equivalent:
 
-```
+```console
 C:\> dbh -v -p:1234 
 C:\> dbh -v c:\mydir\myprog.exe 
 C:\> dbh -v c:\mydir\myprog.pdb 
@@ -87,11 +84,10 @@ For information on symbol decorations, see [Public and Private Symbols](public-a
 
 To exit DBH, use the **q** command at the DBH prompt.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Using%20DBH%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

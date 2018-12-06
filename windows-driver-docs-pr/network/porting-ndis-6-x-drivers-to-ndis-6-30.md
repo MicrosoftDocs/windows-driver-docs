@@ -2,11 +2,8 @@
 title: Porting NDIS 6.x Drivers to NDIS 6.30
 description: This section describes the requirements to port NDIS 6.x drivers to NDIS 6.30.
 ms.assetid: 3120C82A-94FF-48F0-8191-CF0C63535113
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Porting NDIS 6.x Drivers to NDIS 6.30
@@ -26,9 +23,9 @@ The following topics discuss how to port miniport, protocol, and intermediate dr
 -   [Summary of Changes Required to Port a Protocol or Filter Driver to NDIS 6.30](summary-of-changes-required-to-port-a-protocol-or-filter-driver-to-ndis-6-30.md)
 -   [Summary of Changes Required to Port an Intermediate Driver to NDIS 6.30](summary-of-changes-required-to-port-an-intermediate-driver-to-ndis-6-30.md)
 
- 
+ 
 
- 
+ 
 
 
 

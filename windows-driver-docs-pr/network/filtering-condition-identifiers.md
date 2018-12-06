@@ -1,15 +1,11 @@
 ---
 title: Filtering condition identifiers
-author: windows-driver-content
 description: This section describes filtering condition identifiers.
 ms.assetid: 53321aea-6406-426a-a541-2626faad2232
 keywords:
 - Filtering condition identifiers network drivers
-ms.author: windowsdriverdev
 ms.date: 11/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Filtering condition identifiers
@@ -37,11 +33,10 @@ The filtering condition identifiers are each represented by a GUID. These identi
        empty values, or use a different condition that will have a valid value for such circumstance. In the case of
        arrival interface conditions, the next hop class of interface conditions will have a valid interface on outbound
        packets.</p>
-<div class="alert"><b>Note</b>  
-Available only in Windows Server 2008 R2, Windows 7, and later versions of
+<div class="alert"><b>Note</b><br/>Available only in Windows Server 2008 R2, Windows 7, and later versions of
        Windows.
 </div>
-<div> </div>
+<div> </div>
 </td>
 </tr>
 <tr>
@@ -62,11 +57,10 @@ Available only in Windows Server 2008 R2, Windows 7, and later versions of
        empty values, or use a different condition that will have a valid value for such circumstance. In the case of
        arrival interface conditions, the next hop class of interface conditions will have a valid interface on outbound
        packets.</p>
-<div class="alert"><b>Note</b>  
-Available only in Windows Server 2008 R2, Windows 7, and later versions of
+<div class="alert"><b>Note</b><br/>Available only in Windows Server 2008 R2, Windows 7, and later versions of
        Windows.
 </div>
-<div> </div>
+<div> </div>
 </td>
 </tr>
 <tr>
@@ -88,11 +82,10 @@ Available only in Windows Server 2008 R2, Windows 7, and later versions of
        empty values, or use a different condition that will have a valid value for such circumstance. In the case of
        arrival interface conditions, the next hop class of interface conditions will have a valid interface on outbound
        packets.</p>
-<div class="alert"><b>Note</b>  
-Available only in Windows Server 2008 R2, Windows 7, and later versions of
+<div class="alert"><b>Note</b><br/>Available only in Windows Server 2008 R2, Windows 7, and later versions of
        Windows.
 </div>
-<div> </div>
+<div> </div>
 </td>
 </tr>
 <tr>
@@ -113,11 +106,10 @@ Available only in Windows Server 2008 R2, Windows 7, and later versions of
        empty values, or use a different condition that will have a valid value for such circumstance. In the case of
        arrival interface conditions, the next hop class of interface conditions will have a valid interface on outbound
        packets.</p>
-<div class="alert"><b>Note</b>  
-Available only in Windows Server 2008 R2, Windows 7, and later versions of
+<div class="alert"><b>Note</b><br/>Available only in Windows Server 2008 R2, Windows 7, and later versions of
        Windows.
 </div>
-<div> </div>
+<div> </div>
 </td>
 </tr>
 <tr>
@@ -136,11 +128,10 @@ Available only in Windows Server 2008 R2, Windows 7, and later versions of
        empty values, or use a different condition that will have a valid value for such circumstance. In the case of
        next hop interface conditions, the arrival class of interface conditions will have a valid interface on inbound
        packets.</p>
-<div class="alert"><b>Note</b>  
-Available only in Windows Server 2008 R2, Windows 7, and later versions of
+<div class="alert"><b>Note</b><br/>Available only in Windows Server 2008 R2, Windows 7, and later versions of
        Windows.
 </div>
-<div> </div>
+<div> </div>
 </td>
 </tr>
 <tr>
@@ -161,11 +152,10 @@ Available only in Windows Server 2008 R2, Windows 7, and later versions of
        empty values, or use a different condition that will have a valid value for such circumstance. In the case of
        next hop interface conditions, the arrival class of interface conditions will have a valid interface on inbound
        packets.</p>
-<div class="alert"><b>Note</b>  
-Available only in Windows Server 2008 R2, Windows 7, and later versions of
+<div class="alert"><b>Note</b><br/>Available only in Windows Server 2008 R2, Windows 7, and later versions of
        Windows.
 </div>
-<div> </div>
+<div> </div>
 </td>
 </tr>
 <tr>
@@ -187,11 +177,10 @@ Available only in Windows Server 2008 R2, Windows 7, and later versions of
        empty values, or use a different condition that will have a valid value for such circumstance. In the case of
        next hop interface conditions, the arrival class of interface conditions will have a valid interface on inbound
        packets.</p>
-<div class="alert"><b>Note</b>  
-Available only in Windows Server 2008 R2, Windows 7, and later versions of
+<div class="alert"><b>Note</b><br/>Available only in Windows Server 2008 R2, Windows 7, and later versions of
        Windows.
 </div>
-<div> </div>
+<div> </div>
 </td>
 </tr>
 <tr>
@@ -212,11 +201,10 @@ Available only in Windows Server 2008 R2, Windows 7, and later versions of
        empty values, or use a different condition that will have a valid value for such circumstance. In the case of
        next hop interface conditions, the arrival class of interface conditions will have a valid interface on inbound
        packets.</p>
-<div class="alert"><b>Note</b>  
-Available only in Windows Server 2008 R2, Windows 7, and later versions of
+<div class="alert"><b>Note</b><br/>Available only in Windows Server 2008 R2, Windows 7, and later versions of
        Windows.
 </div>
-<div> </div>
+<div> </div>
 </td>
 </tr>
 <tr>
@@ -261,19 +249,19 @@ Available only in Windows Server 2008 R2, Windows 7, and later versions of
 <dl>
 <dd>
 NlatUnspecified
-       
+
 </dd>
 <dd>
 NlatUnicast
-       
+
 </dd>
 <dd>
 NlatAnycast
-       
+
 </dd>
 <dd>
 NlatMulticast
-       
+
 </dd>
 <dd>
 NlatBroadcast
@@ -292,19 +280,19 @@ NlatBroadcast
 <dl>
 <dd>
 NlatUnspecified
-       
+
 </dd>
 <dd>
 NlatUnicast
-       
+
 </dd>
 <dd>
 NlatAnycast
-       
+
 </dd>
 <dd>
 NlatMulticast
-       
+
 </dd>
 <dd>
 NlatBroadcast
@@ -379,19 +367,19 @@ NlatBroadcast
 <dl>
 <dd>
 NlatUnspecified
-       
+
 </dd>
 <dd>
 NlatUnicast
-       
+
 </dd>
 <dd>
 NlatAnycast
-       
+
 </dd>
 <dd>
 NlatMulticast
-       
+
 </dd>
 <dd>
 NlatBroadcast
@@ -452,7 +440,7 @@ NlatBroadcast
 <dl>
 <dd>
 FWP_DIRECTION_INBOUND
-       
+
 </dd>
 <dd>
 FWP_DIRECTION_OUTBOUND
@@ -565,15 +553,15 @@ FWP_DIRECTION_OUTBOUND
 <dl>
 <dd>
 SIO_RCVALL
-       
+
 </dd>
 <dd>
 SIO_RCVALL_IGMPMCAST
-       
+
 </dd>
 <dd>
 SIO_RCVALL_MCAST
-       
+
 </dd>
 </dl>
 </p>
@@ -654,11 +642,11 @@ SIO_RCVALL_MCAST
 <dl>
 <dd>
 RPC_PROTSEQ_TCP
-       
+
 </dd>
 <dd>
 RPC_PROTSEQ_HTTP
-       
+
 </dd>
 <dd>
 RPC_PROTSEQ_NMP
@@ -829,8 +817,8 @@ RPC_PROTSEQ_NMP
 </td>
 <td>
 <p>The physical address of the sending or receiving network interface.</p>
-<div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
-<div> </div>
+<div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
+<div> </div>
 </td>
 </tr>
 <tr>
@@ -842,8 +830,8 @@ RPC_PROTSEQ_NMP
 <p>The physical address of the local network interface.
 For inbound traffic this is the destination MAC address in the frame.
 For outbound traffic this is the source MAC address of the frame.</p>
-<div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
-<div> </div>
+<div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
+<div> </div>
 </td>
 </tr>
 <tr>
@@ -854,8 +842,8 @@ For outbound traffic this is the source MAC address of the frame.</p>
 <p>The physical address of the remote network interface.
 For inbound traffic this is the source MAC address in the frame.
 For outbound traffic this is the destination MAC address of the frame.</p>
-<div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
-<div> </div>
+<div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
+<div> </div>
 </td>
 </tr>
 <tr>
@@ -876,8 +864,8 @@ This value is 0x800 for   IPv4 traffic,  0x86DD for  IPv6 traffic or, 0x806 for 
 <p>The identifier of the VLAN in the ETHERNET SNAP header.
 If the frame is ETHERNET II, this value is 0.
 </p>
-<div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
-<div> </div>
+<div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
+<div> </div>
 </td>
 </tr>
 <tr>
@@ -886,8 +874,8 @@ If the frame is ETHERNET II, this value is 0.
 </td>
 <td>
 <p>The port number identifying a miniport adapter port. </p>
-<div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
-<div> </div>
+<div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
+<div> </div>
 </td>
 </tr>
 <tr>
@@ -896,8 +884,8 @@ If the frame is ETHERNET II, this value is 0.
 </td>
 <td>
 <p>The type of the NDIS medium specified as one of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565910"><b>NDIS_MEDIUM</b></a> enumeration values.</p>
-<div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
-<div> </div>
+<div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
+<div> </div>
 </td>
 </tr>
 <tr>
@@ -907,8 +895,8 @@ If the frame is ETHERNET II, this value is 0.
 <td>
 <p>The type of the physical medium for the communicating interface specified as one of the
 NDIS_PHYSICAL_MEDIUM enumeration values.</p>
-<div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
-<div> </div>
+<div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
+<div> </div>
 </td>
 </tr>
 <tr>
@@ -918,8 +906,8 @@ NDIS_PHYSICAL_MEDIUM enumeration values.</p>
 <td>
 <p>A bitwise OR of a combination of filtering condition flags for the MAC layers. For information about the possible flags, see 
        <a href="filtering-condition-l2-flags.md">Filtering Condition L2 Flags</a>.</p>
-<div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
-<div> </div>
+<div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
+<div> </div>
 </td>
 </tr>
 <tr>
@@ -928,8 +916,8 @@ NDIS_PHYSICAL_MEDIUM enumeration values.</p>
 </td>
 <td>
 <p>The Datalink type of the local MAC address. This is one of the values that are defined in the <a href="https://msdn.microsoft.com/library/windows/hardware/dd744934"><b>DL_ADDRESS_TYPE</b></a> enumeration in FwpmTypes.h.</p>
-<div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
-<div> </div>
+<div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
+<div> </div>
 </td>
 </tr>
 <tr>
@@ -938,8 +926,8 @@ NDIS_PHYSICAL_MEDIUM enumeration values.</p>
 </td>
 <td>
 <p>The Datalink type of the remote MAC address. This is one of the values that are defined in the <a href="https://msdn.microsoft.com/library/windows/hardware/dd744934"><b>DL_ADDRESS_TYPE</b></a> enumeration in FwpmTypes.h.</p>
-<div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
-<div> </div>
+<div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
+<div> </div>
 </td>
 </tr>
 <tr>
@@ -948,8 +936,8 @@ NDIS_PHYSICAL_MEDIUM enumeration values.</p>
 </td>
 <td>
 <p>The LUID for the network interface that is associated with the local MAC address.</p>
-<div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
-<div> </div>
+<div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
+<div> </div>
 </td>
 </tr>
 <tr>
@@ -958,8 +946,8 @@ NDIS_PHYSICAL_MEDIUM enumeration values.</p>
 </td>
 <td>
 <p>The security identifier (SID) of the AppContainer restricted package.</p>
-<div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
-<div> </div>
+<div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
+<div> </div>
 </td>
 </tr>
 <tr>
@@ -968,8 +956,8 @@ NDIS_PHYSICAL_MEDIUM enumeration values.</p>
 </td>
 <td>
 <p>The physical address of the network interface that created the MAC frame.</p>
-<div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
-<div> </div>
+<div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
+<div> </div>
 </td>
 </tr>
 <tr>
@@ -978,8 +966,8 @@ NDIS_PHYSICAL_MEDIUM enumeration values.</p>
 </td>
 <td>
 <p>The physical address of the network interface to which the frame is destined.</p>
-<div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
-<div> </div>
+<div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
+<div> </div>
 </td>
 </tr>
 <tr>
@@ -988,8 +976,8 @@ NDIS_PHYSICAL_MEDIUM enumeration values.</p>
 </td>
 <td>
 <p>The Datalink type of the MAC Address for the interface that created the frame. This is one of the values that are defined in the <a href="https://msdn.microsoft.com/library/windows/hardware/dd744934"><b>DL_ADDRESS_TYPE</b></a> enumeration in FwpmTypes.h.</p>
-<div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
-<div> </div>
+<div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
+<div> </div>
 </td>
 </tr>
 <tr>
@@ -998,8 +986,8 @@ NDIS_PHYSICAL_MEDIUM enumeration values.</p>
 </td>
 <td>
 <p>The Datalink type of the MAC Address for the interface to which the frame is destined. This is one of the values that are defined in the <a href="https://msdn.microsoft.com/library/windows/hardware/dd744934"><b>DL_ADDRESS_TYPE</b></a> enumeration in FwpmTypes.h.</p>
-<div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
-<div> </div>
+<div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
+<div> </div>
 </td>
 </tr>
 <tr>
@@ -1008,8 +996,8 @@ NDIS_PHYSICAL_MEDIUM enumeration values.</p>
 </td>
 <td>
 <p>The transport protocol source port number.</p>
-<div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
-<div> </div>
+<div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
+<div> </div>
 </td>
 </tr>
 <tr>
@@ -1018,8 +1006,8 @@ NDIS_PHYSICAL_MEDIUM enumeration values.</p>
 </td>
 <td>
 <p>The transport protocol destination port number.</p>
-<div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
-<div> </div>
+<div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
+<div> </div>
 </td>
 </tr>
 <tr>
@@ -1028,8 +1016,8 @@ NDIS_PHYSICAL_MEDIUM enumeration values.</p>
 </td>
 <td>
 <p>The GUID of the virtual switch.</p>
-<div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
-<div> </div>
+<div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
+<div> </div>
 </td>
 </tr>
 <tr>
@@ -1038,8 +1026,8 @@ NDIS_PHYSICAL_MEDIUM enumeration values.</p>
 </td>
 <td>
 <p>The type of network that is associated with the virtual switch. This is one of the values that are defined in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh447394"><b>FWP_VSWITCH_NETWORK_TYPE</b></a> enumeration in FwpTypes.h.</p>
-<div class="alert"><b>Note</b>  Supported in <i>Windows 8</i> and later versions of Windows.</div>
-<div> </div>
+<div class="alert"><b>Note</b>  Supported in <i>Windows 8</i> and later versions of Windows.</div>
+<div> </div>
 </td>
 </tr>
 <tr>
@@ -1048,8 +1036,8 @@ NDIS_PHYSICAL_MEDIUM enumeration values.</p>
 </td>
 <td>
 <p>The GUID of the interface of the virtual switch that created the frame.</p>
-<div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
-<div> </div>
+<div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
+<div> </div>
 </td>
 </tr>
 <tr>
@@ -1058,8 +1046,8 @@ NDIS_PHYSICAL_MEDIUM enumeration values.</p>
 </td>
 <td>
 <p>The GUID of the interface of the virtual switch to which the frame is destined.</p>
-<div class="alert"><b>Note</b>  Supported in <i>Windows 8</i> and later versions of Windows.</div>
-<div> </div>
+<div class="alert"><b>Note</b>  Supported in <i>Windows 8</i> and later versions of Windows.</div>
+<div> </div>
 </td>
 </tr>
 <tr>
@@ -1068,8 +1056,8 @@ NDIS_PHYSICAL_MEDIUM enumeration values.</p>
 </td>
 <td>
 <p>The type of the virtual switch interface that created the frame. This is one of the values that are defined in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451589"><b>NDIS_NIC_SWITCH_TYPE</b></a> enumeration in Ntddndis.h.</p>
-<div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
-<div> </div>
+<div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
+<div> </div>
 </td>
 </tr>
 <tr>
@@ -1078,8 +1066,8 @@ NDIS_PHYSICAL_MEDIUM enumeration values.</p>
 </td>
 <td>
 <p>The type of the virtual switch interface to which the frame is destined. This is one of the values that are defined in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451589"><b>NDIS_NIC_SWITCH_TYPE</b></a> enumeration in Ntddndis.h.</p>
-<div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
-<div> </div>
+<div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
+<div> </div>
 </td>
 </tr>
 <tr>
@@ -1088,8 +1076,8 @@ NDIS_PHYSICAL_MEDIUM enumeration values.</p>
 </td>
 <td>
 <p>Unique identifier of the vSwitch source virtual machine.</p>
-<div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
-<div> </div>
+<div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
+<div> </div>
 </td>
 </tr>
 <tr>
@@ -1098,8 +1086,8 @@ NDIS_PHYSICAL_MEDIUM enumeration values.</p>
 </td>
 <td>
 <p>Unique identifier of the vSwitch destination virtual machine.</p>
-<div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
-<div> </div>
+<div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
+<div> </div>
 </td>
 </tr>
 <tr>
@@ -1108,8 +1096,8 @@ NDIS_PHYSICAL_MEDIUM enumeration values.</p>
 </td>
 <td>
 <p>Unique identifier for the vSwitch network. Cannot be used in conjunction with VLAN_IDs.</p>
-<div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
-<div> </div>
+<div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
+<div> </div>
 </td>
 </tr>
 <tr>
@@ -1118,8 +1106,8 @@ NDIS_PHYSICAL_MEDIUM enumeration values.</p>
 </td>
 <td>
 <p>The security identifier (SID) of an app container.</p>
-<div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
-<div> </div>
+<div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
+<div> </div>
 </td>
 </tr>
 <tr>
@@ -1128,8 +1116,8 @@ NDIS_PHYSICAL_MEDIUM enumeration values.</p>
 </td>
 <td>
 <p>The original full path of the application before alteration from proxying.  Note that if proxying is not involved, then this will be the same as the FWPM_CONDITION_ALE_APP_ID.</p>
-<div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
-<div> </div>
+<div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
+<div> </div>
 </td>
 </tr>
 <tr>
@@ -1138,10 +1126,9 @@ NDIS_PHYSICAL_MEDIUM enumeration values.</p>
 </td>
 <td>
 <p>The quick mode (QM) mode.</p>
-<div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
-<div> </div>
+<div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
+<div> </div>
 </td>
 </tr>
 </table>
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_mb\p_mb%5D:%20Planning%20your%20APN%20database%20submission%20%20RELEASE:%20%281/18/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")

@@ -9,17 +9,14 @@ keywords:
 - porting drivers WDK networking , miniport drivers
 - network driver porting WDK , miniport drivers
 - porting miniport drivers WD
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Porting a Miniport Driver to NDIS 6.0
 
 
-## <a href="" id="ddk-porting-miniport-drivers-to-ndis-6-0-ng"></a>
+
 
 
 This section describes what is required to port an NDIS 5.*x* miniport driver to NDIS 6.0. The most significant changes to the miniport driver are illustrated with code samples.
@@ -56,9 +53,9 @@ This section also includes the following topics that describe porting a miniport
 
 [Porting Miniport Adapter Shutdown Operations to NDIS 6.0](porting-miniport-adapter-shutdown-operations-to-ndis-6-0.md)
 
- 
+ 
 
- 
+ 
 
 
 

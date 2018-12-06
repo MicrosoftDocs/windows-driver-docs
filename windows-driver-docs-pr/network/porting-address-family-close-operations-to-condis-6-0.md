@@ -8,17 +8,14 @@ keywords:
 - CoNDIS call managers WDK networking
 - porting CoNDIS drivers WDK networking , address families
 - closing address families
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Porting Address Family Close Operations to CoNDIS 6.0
 
 
-## <a href="" id="ddk-condis-status-indication-operations-to-condis-6-0-ng"></a>
+
 
 
 In CoNDIS 5.*x*, before a call manager closes a binding to an underlying miniport adapter, it issues an [OID\_CO\_AF\_CLOSE](https://msdn.microsoft.com/library/windows/hardware/ff569088) request to each CoNDIS client that has the associated address family (AF). When the clients receive the OID request, the clients close the address family.
@@ -29,9 +26,9 @@ CoNDIS 6.0 clients must register a [**ProtocolClNotifyCloseAf**](https://msdn.mi
 
 For more information about closing an address family in a call manager or MCM, see [Closing a CoNDIS 6.0 Call Manager or MCM](closing-a-condis-call-manager-or-mcm.md). For more information about closing an address family in a client, see [Closing an Address Family in a CoNDIS 6.0 Client](closing-an-address-family-in-a-condis-client.md).
 
- 
+ 
 
- 
+ 
 
 
 

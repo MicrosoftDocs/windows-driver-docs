@@ -2,11 +2,8 @@
 title: Example 14 Configuring Special Pool
 description: Example 14 Configuring Special Pool
 ms.assetid: a89f8a08-30e4-4d04-9689-c665b2175780
-ms.author: windowsdriverdev
-ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 10/12/2018
+ms.localizationpriority: medium
 ---
 
 # Example 14: Configuring Special Pool
@@ -22,13 +19,13 @@ The following command requests special pool for all allocations with the **Tag1*
 
 This command uses the **/k** parameter to specify a kernel flag (run time) setting and the +spp abbreviation to set a special pool request.
 
-```
+```console
 gflags /k +spp Tag1
 ```
 
 Gflags responds by printing:
 
-```
+```console
 Special Pool set to 0x31676154
 PoolTagOverruns set to 0x1
 Current Running Kernel Settings are: 00000000
@@ -46,13 +43,13 @@ The following command requests special pool for all allocations with the **Tag1*
 
 This command uses the **/r** parameter to specify a registry setting and the +spp abbreviation to set a special pool request.
 
-```
+```console
 gflags /r +spp Tag1
 ```
 
 Gflags responds by printing:
 
-```
+```console
 Special Pool set to 0x31676154
 PoolTagOverruns set to 0x1
 Current Boot Registry Settings are: 00000000
@@ -66,7 +63,7 @@ To verify that the value has been added to the registry, use Reg or Regedit to d
 
 For example:
 
-```
+```console
 c:>reg query "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" -v PoolTag
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management
     PoolTag    REG_DWORD    0x31676154
@@ -80,13 +77,13 @@ This command uses the **/k** parameter to specify a kernel flag (run time) setti
 
 The value, 0x10, is calculated by adding the allocation granularity (8 bytes) to the largest size in the range (8 bytes) for a total of 16 bytes (0x10). For help in determining the correct value to enter, see "Selecting an Allocation Size" in [Special Pool](special-pool.md).
 
-```
+```console
 gflags /k +spp 0x10
 ```
 
 Gflags responds by printing:
 
-```
+```console
 Special Pool set to 0x10
 PoolTagOverruns set to 0x1
 Current Running Kernel Settings are: 00000000
@@ -104,13 +101,13 @@ This command uses the **/r** parameter to specify a system-wide registry setting
 
 The value, 0x420, is calculated by adding the allocation granularity (16 bytes) to the largest size in the range (1040 bytes) for a total of 1056 bytes (0x420). For help in determining the correct value to enter, see "Selecting an Allocation Size" in [Special Pool](special-pool.md).
 
-```
+```console
 gflags /r +spp 0x420
 ```
 
 Gflags responds by printing:
 
-```
+```console
 Special Pool set to 0x420
 PoolTagOverruns set to 0x1
 Current Boot Registry Settings are: 00000000
@@ -124,7 +121,7 @@ To verify that the value has been added to the registry, use Reg or Regedit to d
 
 For example:
 
-```
+```console
 c:>reg query "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" -v PoolTag
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management
     PoolTag    REG_DWORD    0x420
@@ -134,27 +131,26 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Manag
 
 The following command cancels a request for Special Pool as a kernel flag (run time) setting. The command is the same for a request by pool tag or by size.
 
-```
+```console
 gflags /k -spp
 ```
 
 The following command cancels a request for Special Pool as a registry setting. The command is the same for a request by pool tag or by size.
 
-```
+```console
 gflags /r -spp
 ```
 
 When the command is successful, Gflags responds by printing:
 
-```
+```console
 Special Pool value has been deleted.
 ```
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Example%2014:%20%20Configuring%20Special%20Pool%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

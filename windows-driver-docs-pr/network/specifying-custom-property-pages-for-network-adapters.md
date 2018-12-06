@@ -6,17 +6,14 @@ keywords:
 - add-registry-sections WDK networking , custom property pages
 - custom property pages WDK networking
 - property pages WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Specifying Custom Property Pages for Network Adapters
 
 
-## <a href="" id="ddk-specifying-custom-property-pages-for-network-adapters-ng"></a>
+
 
 
 If the **Advanced** property page is not suitable for displaying the configuration choices for a Net component (adapter), you can create one or more custom property pages.
@@ -26,7 +23,8 @@ If the **Advanced** property page is not suitable for displaying the configurati
 1.  Create a Microsoft Win32 property page. Then create a property sheet extension DLL that provides *AddPropSheetPageProc* and *ExtensionPropSheetPageProc* callback functions. For more information, see the Windows 2000 Platform SDK.
 
 2.  Use the *add-registry-section* that is referenced by the **DDInstall** section for the adapter to add the **EnumPropPages32** key to the instance key for the adapter. The **EnumPropPages32** key has two REG\_SZ values: the name of the DLL that exports the *ExtensionPropSheetPageProc* function and the name of the *ExtensionPropSheetPageProc* function. The following is an example of an *add-registry-section* that adds the **EnumPropPages32** key:
-    ```
+
+    ```INF
     HKR, EnumPropPages32, 0, "DLL name, ExtensionPropSheetPageProc function name"
     ```
 
@@ -41,9 +39,9 @@ If the **Advanced** property page is not suitable for displaying the configurati
 
         This reloads the driver so that it can read the changed parameter values.
 
- 
+ 
 
- 
+ 
 
 
 

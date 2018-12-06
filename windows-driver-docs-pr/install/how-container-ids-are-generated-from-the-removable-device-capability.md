@@ -2,11 +2,8 @@
 title: How Container IDs are Generated from Removable Device Capability
 description: How Container IDs are Generated from the Removable Device Capability
 ms.assetid: 493a9473-4989-4557-b2b2-efa0e2a8b24e
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # How Container IDs are Generated from the Removable Device Capability
@@ -40,11 +37,11 @@ Through this heuristic, the same container ID is assigned to each devnode that b
 
 **Note**  The success of this heuristic relies on a specific bus driver that correctly reports the removable device capability for each devnode that it enumerates. The bus driver must ensure that the parent devnode of the device should be set as removable, and its child devnodes should not be set as removable.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

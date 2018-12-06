@@ -2,11 +2,8 @@
 title: Test Isolation
 description: Test Isolation
 ms.assetid: AC2A0060-45B9-45ff-87ED-69842F9A567D
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Test Isolation
@@ -39,7 +36,7 @@ Same as Method
 
 The IsolationLevel metadata value that is used is the metadata specified closest to the test level. If the command line IsolationLevel option is also set, the value that is used is the one that provides the most isolation.
 
-```
+```cpp
 BEGIN_MODULE()
     MODULE_PROPERTY(L"IsolationLevel", L"Class")
 END_MODULE()
@@ -69,7 +66,7 @@ In the above example, three different process hosts are used: one for MyTestClas
 
 Note that if a module, class, or test is [metadata-expanded](light-weight-data-driven-testing.md) or [data-driven](data-driven-testing.md) and it is to be isolated, each metadata and/or data expansion is isolated. This can be prevented on the test level by making the test a member of an [execution group](execution-groups.md).
 
-```
+```cpp
 class MyTestClass3 :
 {
     BEGIN_TEST_CLASS(MyTestClass3)
@@ -90,11 +87,10 @@ class MyTestClass3 :
 
 In this example, six different process hosts are used. Each of the three values of MyParameter1 is isolated and MyTest1 is isolated from MyTest2 and MyTest3. The three values of MyParameter2 are not isolated since they are in the same execution group.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[taef\taef]:%20Test%20Isolation%20%20RELEASE:%20%289/12/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

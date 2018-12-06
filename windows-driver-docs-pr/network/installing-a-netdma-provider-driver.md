@@ -8,11 +8,8 @@ keywords:
 - transferring data WDK NetDMA , installing provider drivers
 - NetDMA WDK networking , installing provider drivers
 - NetDMA p
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installing a NetDMA Provider Driver
@@ -20,9 +17,9 @@ ms.technology: windows-devices
 
 **Note**  The NetDMA interface is not supported in Windows 8 and later.
 
- 
+ 
 
-## <a href="" id="ddk-installing-a-netdma-provider-driver-ng"></a>
+
 
 
 A NetDMA provider driver is implemented as a kernel-mode Microsoft Windows Driver Model (WDM) device driver.
@@ -31,15 +28,15 @@ During the boot process, the Plug and Play (PnP) manager detects a dynamic memor
 
 Set the **Class** INF file entry to **System** in the DMA engine INF file. The following example shows a sample **Class** entry for the INF file.
 
-```
+```cpp
 Class = System
 ```
 
 For general information about installing drivers, see [Device Installation Overview](https://msdn.microsoft.com/library/windows/hardware/ff549455).
 
- 
+ 
 
- 
+ 
 
 
 

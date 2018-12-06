@@ -2,11 +2,8 @@
 title: WDDM display miniport driver tasks to support Miracast wireless displays
 description: To support Miracast wireless displays, Windows Display Driver Model (WDDM) display miniport drivers that run in kernel mode need to do the following tasks.
 ms.assetid: D67CAC4F-0409-4E8D-A31A-78C3EB473556
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WDDM display miniport driver tasks to support Miracast wireless displays
@@ -19,7 +16,7 @@ To support Miracast wireless displays, Windows Display Driver Model (WDDM) displ
 
 If the display miniport driver supports Miracast displays, it must report the [**DXGK\_MIRACAST\_DISPLAY\_INTERFACE**](https://msdn.microsoft.com/library/windows/hardware/dn448486) structure, which has pointers to driver-implemented Miracast functions, when the Microsoft DirectX graphics kernel subsystem calls the [*DxgkDdiQueryInterface*](https://msdn.microsoft.com/library/windows/hardware/ff559764) function.
 
-If the operating systemâ€™s DirectX graphics kernel subsystem (Dxgkrnl.sys) does not call the [*DxgkDdiQueryInterface*](https://msdn.microsoft.com/library/windows/hardware/ff559764) function to query the Miracast display interface, then it does not support Miracast wireless displays, and the display miniport driver should not report any Miracast target.
+If the operating system's DirectX graphics kernel subsystem (Dxgkrnl.sys) does not call the [*DxgkDdiQueryInterface*](https://msdn.microsoft.com/library/windows/hardware/ff559764) function to query the Miracast display interface, then it does not support Miracast wireless displays, and the display miniport driver should not report any Miracast target.
 
 The driver should not report more than one Miracast target on any full WDDM graphics device, otherwise the operating system fails to start the adapter.
 
@@ -33,7 +30,7 @@ The Miracast target should remain in a disconnected state until Dxgkrnl starts a
 | **Miracast**.**Connected**                                  | **TRUE**                                                                                                                                                                                                                                                                   |
 | **Miracast**.**MiracastMonitorType**                        | Value that indicates the connection type. If the Miracast sink is embedded in the monitor or TV, this should be set to the **D3DKMDT\_VOT\_MIRACAST** constant value of the [**D3DKMDT\_VIDEO\_OUTPUT\_TECHNOLOGY**](https://msdn.microsoft.com/library/windows/hardware/ff546605) enumeration. |
 
- 
+ 
 
 These are the Miracast functions that the display miniport driver implements:
 
@@ -63,16 +60,16 @@ The data for a single frame transmitted across the wireless Miracast connection 
 
 As part of the interrupt handling, the driver can optionally specify the **MiracastEncodeChunkCompleted**.**pPrivateDriverData** and **PrivateDataDriverSize** members in the [**DXGKARGCB\_NOTIFY\_INTERRUPT\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff557538) structure. The user-mode driver can access this private driver data in the [**MIRACAST\_CHUNK\_DATA**](https://msdn.microsoft.com/library/windows/hardware/dn265471).**PrivateDriverData** member.
 
-If, over a period of time, the display miniport driver generates more packets with chunk data than the user-mode display driver consumes, then the available free memory space for new chunks can run out. In this case the display miniport driver returns **STATUS\_NO\_MEMORY** in **MiracastEncodeChunkCompleted**.**Status**, and it must call the [*DxgkCbNotifyDpc*](https://msdn.microsoft.com/library/windows/hardware/ff559540) function to notify the operating systemâ€™s GPU scheduler about the error condition. A call to the [**GetNextChunkData**](https://msdn.microsoft.com/library/windows/hardware/dn265462) function will return the **STATUS\_CONNECTION\_RESET** status code, and subsequent calls will start receiving chunks that were submitted after the reset operation. Because some chunks will have been lost, we recommend that the driver generate and transmit a new I-frame.
+If, over a period of time, the display miniport driver generates more packets with chunk data than the user-mode display driver consumes, then the available free memory space for new chunks can run out. In this case the display miniport driver returns **STATUS\_NO\_MEMORY** in **MiracastEncodeChunkCompleted**.**Status**, and it must call the [*DxgkCbNotifyDpc*](https://msdn.microsoft.com/library/windows/hardware/ff559540) function to notify the operating system's GPU scheduler about the error condition. A call to the [**GetNextChunkData**](https://msdn.microsoft.com/library/windows/hardware/dn265462) function will return the **STATUS\_CONNECTION\_RESET** status code, and subsequent calls will start receiving chunks that were submitted after the reset operation. Because some chunks will have been lost, we recommend that the driver generate and transmit a new I-frame.
 
 ## <span id="Restrictions_on_source_modes"></span><span id="restrictions_on_source_modes"></span><span id="RESTRICTIONS_ON_SOURCE_MODES"></span>Restrictions on source modes
 
 
-A WDDM display miniport driver, to handle constraints of the pixel pipeline, typically restricts source modes that are exposed to the operating system. The driver does this by only populating the list of source modes with modes that are exposed by the monitor that the pixel pipeline also supports. For example, the driver doesnâ€™t modify the EDID based on pixel pipeline constraints.
+A WDDM display miniport driver, to handle constraints of the pixel pipeline, typically restricts source modes that are exposed to the operating system. The driver does this by only populating the list of source modes with modes that are exposed by the monitor that the pixel pipeline also supports. For example, the driver doesn't modify the EDID based on pixel pipeline constraints.
 
 Similarly, for Miracast displays the display miniport driver restricts the set of source modes that are exposed to the operating system when it enumerates the set of source and target modes. For Miracast displays the GPU encode capabilities, network properties, and sink decode capabilities can reduce the number of source modes that the Miracast pixel pipeline can support.
 
-If a display miniport driver calls the [*DXGK\_VIDPNSOURCEMODESET\_INTERFACE::pfnAddMode*](https://msdn.microsoft.com/library/windows/hardware/ff562077) function to attempt to add a 3-D stereo mode to a source thatâ€™s connected to a Miracast target, the function call will fail.
+If a display miniport driver calls the [*DXGK\_VIDPNSOURCEMODESET\_INTERFACE::pfnAddMode*](https://msdn.microsoft.com/library/windows/hardware/ff562077) function to attempt to add a 3-D stereo mode to a source that's connected to a Miracast target, the function call will fail.
 
 ## <span id="Calling_operating_system-provided_callback_functions"></span><span id="calling_operating_system-provided_callback_functions"></span><span id="CALLING_OPERATING_SYSTEM-PROVIDED_CALLBACK_FUNCTIONS"></span>Calling operating system-provided callback functions
 
@@ -91,28 +88,27 @@ Reports info about an encode chunk.
 ## <span id="Sending_messages_asynchronously_from_kernel-mode_to_user-mode"></span><span id="sending_messages_asynchronously_from_kernel-mode_to_user-mode"></span><span id="SENDING_MESSAGES_ASYNCHRONOUSLY_FROM_KERNEL-MODE_TO_USER-MODE"></span>Sending messages asynchronously from kernel-mode to user-mode
 
 
-Any message that the display miniport driver sends to its associated user-mode driver when it calls the [*DxgkCbMiracastSendMessage*](https://msdn.microsoft.com/library/windows/hardware/dn344646) function wonâ€™t be delivered until the Miracast connected session has started. Therefore, if the user-mode driver's [*StartMiracastSession*](https://msdn.microsoft.com/library/windows/hardware/dn265504) function has not yet been called, the sent message is deferred until *StartMiracastSession* returns. If a message is sent after the [*StopMiracastSession*](https://msdn.microsoft.com/library/windows/hardware/dn265505) function is called, then the message is dropped by the operating system, and the [*DxgkCbMiracastSendMessageCallback*](https://msdn.microsoft.com/library/windows/hardware/dn358351) function is called with the error status set in *pIoStatusBlock*-&gt;**Status**.
+Any message that the display miniport driver sends to its associated user-mode driver when it calls the [*DxgkCbMiracastSendMessage*](https://msdn.microsoft.com/library/windows/hardware/dn344646) function won't be delivered until the Miracast connected session has started. Therefore, if the user-mode driver's [*StartMiracastSession*](https://msdn.microsoft.com/library/windows/hardware/dn265504) function has not yet been called, the sent message is deferred until *StartMiracastSession* returns. If a message is sent after the [*StopMiracastSession*](https://msdn.microsoft.com/library/windows/hardware/dn265505) function is called, then the message is dropped by the operating system, and the [*DxgkCbMiracastSendMessageCallback*](https://msdn.microsoft.com/library/windows/hardware/dn358351) function is called with the error status set in *pIoStatusBlock*-&gt;**Status**.
 
 ## <span id="Modifying_an_existing_display_miniport_driver_to_support_Miracast_displays"></span><span id="modifying_an_existing_display_miniport_driver_to_support_miracast_displays"></span><span id="MODIFYING_AN_EXISTING_DISPLAY_MINIPORT_DRIVER_TO_SUPPORT_MIRACAST_DISPLAYS"></span>Modifying an existing display miniport driver to support Miracast displays
 
 
-When the [*DxgkDdiStartDevice*](https://msdn.microsoft.com/library/windows/hardware/ff560775) function is called, the display miniport driver needs to add a new Miracast target and should mark the targetâ€™s hot-plug detection (HPD) awareness value as **HpdAwarenessInterruptible** so that the operating system wonâ€™t poll this target. Also, when the [*DxgkDdiQueryChildRelations*](https://msdn.microsoft.com/library/windows/hardware/ff559750) function is called, the driver should report **D3DKMDT\_VOT\_MIRACAST** as its connection type.
+When the [*DxgkDdiStartDevice*](https://msdn.microsoft.com/library/windows/hardware/ff560775) function is called, the display miniport driver needs to add a new Miracast target and should mark the target's hot-plug detection (HPD) awareness value as **HpdAwarenessInterruptible** so that the operating system won't poll this target. Also, when the [*DxgkDdiQueryChildRelations*](https://msdn.microsoft.com/library/windows/hardware/ff559750) function is called, the driver should report **D3DKMDT\_VOT\_MIRACAST** as its connection type.
 
 The driver should not report more than one Miracast target on any full WDDM graphics device. If a driver reports more than one Miracast target, the operating system fails the starting of the adapter. The driver should also not report any monitor on this target if the Miracast connected session is not started.
 
 The driver also needs to report a correct [**DXGK\_MIRACAST\_DISPLAY\_INTERFACE**](https://msdn.microsoft.com/library/windows/hardware/dn448486) structure, with pointers to functions that are in kernel-mode address space, when the DirectX graphics kernel subsystem calls the [*DxgkDdiQueryInterface*](https://msdn.microsoft.com/library/windows/hardware/ff559764) function.
 
-When a Miracast session is starting, and a monitor is connected the the Miracast sink, the display miniport driver should set the [**DXGK\_CHILD\_STATUS**](https://msdn.microsoft.com/library/windows/hardware/ff561010).**Type** member to the **StatusMiracast** constant value, and should also set **DXGK\_CHILD\_STATUS**.**Miracast**.**Connected** to **TRUE**, to report a monitor arrival HPD to the operating system. The driver should set the **DXGK\_CHILD\_STATUS**.**Miracast**.**MiracastMonitorType** member to the correct monitor type thatâ€™s connected to the sink. If the sink is part of the monitor, this member should be set to **D3DKMDT\_VOT\_MIRACAST**.
+When a Miracast session is starting, and a monitor is connected the Miracast sink, the display miniport driver should set the [**DXGK\_CHILD\_STATUS**](https://msdn.microsoft.com/library/windows/hardware/ff561010).**Type** member to the **StatusMiracast** constant value, and should also set **DXGK\_CHILD\_STATUS**.**Miracast**.**Connected** to **TRUE**, to report a monitor arrival HPD to the operating system. The driver should set the **DXGK\_CHILD\_STATUS**.**Miracast**.**MiracastMonitorType** member to the correct monitor type that's connected to the sink. If the sink is part of the monitor, this member should be set to **D3DKMDT\_VOT\_MIRACAST**.
 
 If the driver knows the EDID of the monitor, it should report this EDID when the operating system calls the [*DxgkDdiQueryDeviceDescriptor*](https://msdn.microsoft.com/library/windows/hardware/ff559761) function.
 
-Depending on hardware capabilities, the Miracast sink mode list, and network bandwidth, the driver should reports the correct source mode, target mode, rotation mode, and scaling mode. For the target mode, driver should report the correct **VSyncFreqDivider** member value in [**D3DKMDT\_VIDEO\_SIGNAL\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff546625). The operating system matches the target mode against the monitor mode and prunes any mode that isnâ€™t supported by the monitor.
+Depending on hardware capabilities, the Miracast sink mode list, and network bandwidth, the driver should reports the correct source mode, target mode, rotation mode, and scaling mode. For the target mode, driver should report the correct **VSyncFreqDivider** member value in [**D3DKMDT\_VIDEO\_SIGNAL\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff546625). The operating system matches the target mode against the monitor mode and prunes any mode that isn't supported by the monitor.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20WDDM%20display%20miniport%20driver%20tasks%20to%20support%20Miracast%20wireless%20displays%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -7,17 +7,14 @@ keywords:
 - porting protocol drivers to NDIS 6.20 WDK
 - protocol drivers WDK
 - protocol drivers WDK , porting to NDIS 6.20
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Summary of Changes Required to Port a Protocol Driver to NDIS 6.20
 
 
-## <a href="" id="ddk-summary-of-changes-required-to-port-a-protocol-driver-to-ndis-6-20"></a>
+
 
 
 This topic summarizes the changes that are required to port an NDIS 6.*x* protocol driver to NDIS 6.20.
@@ -64,9 +61,9 @@ Replace the preprocessor definition NDIS61 or NDIS60 with NDIS620.
 
 -   Optionally support the virtual machine queue (VMQ) interface. For more information about VMQ, see [Virtual Machine Queue (VMQ) in NDIS 6.20](virtual-machine-queue--vmq--in-ndis-6-20.md).
 
- 
+ 
 
- 
+ 
 
 
 

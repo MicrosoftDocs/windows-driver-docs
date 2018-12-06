@@ -2,11 +2,8 @@
 title: Container IDs for PCI Express Devices
 description: Container IDs for PCI Express Devices
 ms.assetid: ff86def3-a278-4f7b-a394-42f608f8993d
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Container IDs for PCI Express Devices
@@ -47,7 +44,7 @@ The PCI bus driver determines that a PCIe device is removable by reading the fol
 </tbody>
 </table>
 
- 
+ 
 
 The PCI bus driver marks a PCIe device as removable if both of the following conditions are satisfied:
 
@@ -61,9 +58,9 @@ Be aware that if the device implements an _EJ0 method in the ACPI namespace, the
 
 For more information about the PCIe interface, see the [PCIe Base](http://go.microsoft.com/fwlink/p/?linkid=69486) specification.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -12,11 +12,8 @@ keywords:
 - capture buffers WDK display
 - display driver model WDK Windows Vista , child video capture drivers
 - Windows Vista display driver model WDK , child video capture drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Supporting Video Capture and Other Child Devices
@@ -28,7 +25,7 @@ To initialize the private interface, the video capture driver sends a [**IRP\_MN
 
 **Note**   If video capture is implemented as part of the display miniport driver, the video capture might call *DxgkDdiQueryInterface* directly.
 
- 
+ 
 
 Each driver of a child device (including video capture devices) must return the adapter GUID that indicates the hardware that the device is associated with. The adapter GUID is supplied to the display miniport driver in the **AdapterGuid** member of the [**DXGK\_START\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff562055) structure that is pointed to by the *DxgkStartInfo* parameter of the [**DxgkDdiStartDevice**](https://msdn.microsoft.com/library/windows/hardware/ff560775) function that is sent when the adapter is initialized. User-mode capture components can subsequently map this adapter GUID to a display adapter.
 
@@ -40,11 +37,10 @@ The capture driver can report whether it supports capturing to system memory dir
 
 Because AVStream controls video capture, the DirectX graphics kernel subsystem is not aware of when video capture occurs. However, the graphics kernel subsystem is aware of the allocations that are used as capture buffers. When a capture buffer is about to be destroyed, the graphics kernel subsystem calls the display miniport driver's [**DxgkDdiStopCapture**](https://msdn.microsoft.com/library/windows/hardware/ff560776) function to indicate that the capture operation must immediately stop using an allocation as the capture buffer. If the capture operation has already been stopped through the capture stack, the driver can safely ignore the call.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Supporting%20Video%20Capture%20and%20Other%20Child%20Devices%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

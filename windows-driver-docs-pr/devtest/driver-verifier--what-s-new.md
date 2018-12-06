@@ -2,11 +2,8 @@
 title: Driver Verifier What's New
 description: Driver Verifier is available in all versions of Windows starting with Windows 2000. Each version introduces new features and checks for finding bugs in Windows drivers. This section summarizes the changes and provides links to related documentation.
 ms.assetid: EAC30108-F8A2-4914-9218-2E0672982B7E
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Driver Verifier: What's New
@@ -24,7 +21,12 @@ ms.technology: windows-devices
 ## Driver Verifier in Windows 10
 
 
-*Updated: July 29, 2015*
+*Updated: May 8, 2018*
+
+> [!IMPORTANT]
+> Starting in versions after Windows 10 1803, running Driver Verifier will no longer automatically enable Windows Driver Framework (WDF) verification. Please note the following:  
+> * You can still enable WDF verification as part of Driver Verifier's `/standard` flags. See [Driver Verifier Command Syntax](https://docs.microsoft.com/windows-hardware/drivers/devtest/verifier-command-line) for more information.
+> * This change will impact you if you are enabling DV with syntax `/flags 0x209BB` as WDF verification will no longer be automatically enabled.
 
 Starting with Windows 10, driver verifier includes new driver validation rules for the following technologies:
 
@@ -170,11 +172,10 @@ Driver Verifier features also include:
     -   Right-click an item in the Driver Verifier Manager window and choose **What's This?** from the pop-up menu.
     -   Click the question mark (**?**) in the upper-right corner of the window and then click an item in the Driver Verifier Manager window.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20Driver%20Verifier:%20What's%20New%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -2,11 +2,9 @@
 title: Hardware submissions
 description: Hardware submissions
 ms.assetid: 7EFA9617-CF1D-4259-B0C4-A9DDCF5C3A1F
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 04/20/2017
+ms.localizationpriority: medium
 ---
 
 # Hardware submissions
@@ -14,15 +12,16 @@ ms.technology: windows-devices
 
 The Windows Hardware Compatibility Program (for Windows 10) and the Windows Hardware Certification Program (for Windows 8/8.1 and older operating systems) enable you to design, create, and test your hardware and drivers before you submit the final version through the Windows Hardware Dev Center dashboard. For more information, see the [Windows hardware certification](http://go.microsoft.com/fwlink/p/?LinkId=224782) page. By certifying your hardware device, system, and drivers for Windows, you gain the support of Microsoft marketing resources in the form of compatibility and reliability listings, logo artwork, and promotional partnerships.
 
-To develop your device, download the [Windows Driver Kit (WDK)](http://go.microsoft.com/fwlink/p/?LinkId=226411).
+To develop your device, download the [Windows Driver Kit (WDK)](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk).
 
-To test your device, download the [Windows Hardware Lab Kit (Windows HLK)](http://go.microsoft.com/fwlink/p/?LinkId=526775) for Windows 10. For previous operating systems, download the [Windows Hardware Certification Kit (Windows HCK)](http://go.microsoft.com/fwlink/p/?LinkId=248434) or [Windows Logo Kit (WLK)](http://go.microsoft.com/fwlink/p/?LinkId=219237).
+To test your device, download the [Windows Hardware Lab Kit (Windows HLK)](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) for Windows 10. For previous operating systems, download the [Windows Hardware Certification Kit (Windows HCK)](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) or [Windows Logo Kit (WLK)](http://go.microsoft.com/fwlink/p/?LinkId=219237).
 
 After you develop and test your product, you can submit the results with a hardware submission.
 
-**Note**  We strongly encourage you to include driver symbols as part your HLK package. Including symbols will improve the data returned in your [driver reliability report](driver-failure-reporting.md). See [Step 8 of the HLK Getting Started Guide](https://msdn.microsoft.com/library/windows/hardware/dn914998) to learn how to include symbols with your package.
+> [!NOTE]
+> We strongly encourage you to include public driver symbols as part your HLK package. Including symbols will improve the data returned in your [driver reliability report](driver-failure-reporting.md) and are never shared externally.  See [Public Symbols and Private Symbols](../devtest/public-symbols-and-private-symbols.md) to learn how to create public symbols.  See [Step 8: Create a submission package](https://docs.microsoft.com/windows-hardware/test/hlk/getstarted/step-8-create-a-submission-package) to learn how to include symbols with your package. Note that any .pdb files in your submission will be removed before being published. 
 
- 
+ 
 
 -   To submit an HLK or HCK package, see [Create a new hardware submission](create-a-new-hardware-submission.md).
 
@@ -86,8 +85,8 @@ The hardware certification submission list displays the following information ab
 <td><p>Your permission for the submission. Possible values are:</p>
 <ul>
 <li>Author: Author of the driver. You can complete all tasks and share the driver with partners.</li>
-<li>Publisher: The driver is shared with you. You can download the driver, create Windows Update shipping labels, and create DUA packages. You can't share the driver with additional companies.</li>
-<li>Read-only: The driver was submitted to Windows Update on your behalf. You can see the driver details, download the driver, and view the shipping label that was submitted on your behalf. You can't create shipping labels or create DUA packages.</li>
+<li>Publisher: The driver is shared with you. You can download the driver, create Windows Update shipping labels, and create DUA packages. You can&#39;t share the driver with additional companies.</li>
+<li>Read-only: The driver was submitted to Windows Update on your behalf. You can see the driver details, download the driver, and view the shipping label that was submitted on your behalf. You can&#39;t create shipping labels or create DUA packages.</li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -97,7 +96,7 @@ The hardware certification submission list displays the following information ab
 </tbody>
 </table>
 
- 
+ 
 
 The search box allows you to search for a specific submission or set of submissions. You can search for exact or partial matches for the values in the **ID**, **Name**, **State**, and **Certification type** columns.
 
@@ -142,7 +141,7 @@ This section displays certification information. Select **See more info** to exp
 <tbody>
 <tr class="odd">
 <td><p>Is this a Universal Windows driver?</p></td>
-<td><p>Indicates whether or not your driver meets the Universal Windows Platform requirements. For more information, see [Getting Started with Universal Windows drivers](https://msdn.microsoft.com/windows/hardware/drivers/develop/getting-started-with-universal-drivers).</p></td>
+<td><p>Indicates whether or not your driver meets the Universal Windows Platform requirements. For more information, see <a href="https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers" data-raw-source="[Getting Started with Universal Windows drivers](https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers)">Getting Started with Universal Windows drivers</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p>What type of device?</p></td>
@@ -169,7 +168,7 @@ This section displays certification information. Select **See more info** to exp
 </tbody>
 </table>
 
- 
+Submissions are automatically assigned Declaritive and Universal attributes based off the entire submission contents.  If you want a submission to be marked as `Declaritive=True` and/or `Universal=True`, all files and INFs within the submission must be compliant with the appropriate attribute(s).  For example, a merged HLK package can contain two driver sets for different OS certifiations. If one set is Declaritive and another set is not, the entire submission would be marked as `Declarative=False`. Each set should be seperated into two submissions to ensure they are marked appropriately. 
 
 If you want to add or update your announcement date, use the **Announcement date (UTC)** field and select **Submit**.
 
@@ -229,22 +228,20 @@ The shipping label list displays the shipping labels for this submission. This l
 </tbody>
 </table>
 
- 
+ 
 
 The status graphic displays the publish status for each shipping label. A green check means the label has been published. A yellow circle means the label is not published yet.
 
 ## <span id="In_this_section"></span><span id="in_this_section"></span><span id="IN_THIS_SECTION"></span>In this section
 
+- [Create a new hardware submission](create-a-new-hardware-submission.md)
 
--   [Create a new hardware submission](create-a-new-hardware-submission.md)
+- [Manage hardware submissions](manage-your-hardware-submissions.md)
 
--   [Manage hardware submissions](manage-your-hardware-submissions.md)
+ 
 
- 
+ 
 
- 
-
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bhw_dashboard\hw_dashboard%5D:%20Hardware%20submissions%20%20RELEASE:%20%281/3/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

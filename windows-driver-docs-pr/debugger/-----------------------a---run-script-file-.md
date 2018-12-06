@@ -3,17 +3,14 @@ title: $ , $ , $$ , $$ , $$ a (Run Script File)
 description: The $ , $ , $$ , $$ , and $$ a commands read the contents of the specified script file and use its contents as debugger command input.
 ms.assetid: b3584680-765d-4aaf-ad43-c7d73552e5fb
 keywords: ["$ (Run Script File) command", "$$ (Run Script File) command", "$$ (Run Script File) command", "Run Script File ($ ) command", "Run Script File ($ ) command", "Run Script File ($$ ) command", "Run Script File ($$ ) comm", "$ , $ , $$ , $$ , $$ a (Run Script File) Windows Debugging"]
-ms.author: windowsdriverdev
-ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 09/17/2018
 topic_type:
 - apiref
 api_name:
 - $ , $ , $$ , $$ , $$ a (Run Script File)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # $<, $><, $$<, $$><, $$ >a< (Run Script File)
@@ -21,12 +18,12 @@ api_type:
 
 The **$&lt;**, **$&gt;&lt;**, **$$&lt;**, **$$&gt;&lt;**, and **$$&gt;a&lt;** commands read the contents of the specified script file and use its contents as debugger command input.
 
-```
-$<Filename 
-$><Filename 
-$$<Filename 
-$$><Filename 
-$$>a<Filename [arg1 arg2 arg3 ...] 
+```dbgcmd
+    $<Filename 
+    $><Filename 
+    $$<Filename 
+    $$><Filename 
+    $$>a<Filename [arg1 arg2 arg3 ...] 
 ```
 
 ## <span id="ddk_cmd_run_script_file_dbg"></span><span id="DDK_CMD_RUN_SCRIPT_FILE_DBG"></span>Parameters
@@ -61,7 +58,7 @@ Specifies any number of string arguments for the debugger to pass to the script.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -136,7 +133,7 @@ The following table summarizes how you can use these tokens.
 </tbody>
 </table>
 
- 
+ 
 
 The **$&lt;**, **$&gt;&lt;**, **$$&lt;**, and **$$&gt;&lt;** commands echo the commands contained in the script file and display the output of these commands. The **$$&gt;a&lt;** command does not echo the commands found in the script file, but merely displays their output.
 
@@ -149,27 +146,27 @@ Examples
 
 The following example demonstrates how to pass arguments to a script file, Myfile.txt. Assume that the file contains the following text:
 
-```
+```console
 .echo The first argument is ${$arg1}.
 .echo The second argument is ${$arg2}.
 ```
 
 Then you can pass arguments to this file by using a command like this:
 
-```
+```console
 0:000> $$>a<myfile.txt myFirstArg mySecondArg 
 ```
 
 The result of this command would be:
 
-```
+```console
 The first argument is myFirstArg.
 The second argument is mySecondArg.
 ```
 
 Here is an example of what happens when the wrong number of argument is supplied. Assume that the file My Script.txt contains the following text:
 
-```
+```console
 .echo The first argument is ${$arg1}.
 .echo The fifth argument is ${$arg5}.
 .echo The fourth argument is ${$arg4}.
@@ -177,7 +174,7 @@ Here is an example of what happens when the wrong number of argument is supplied
 
 Then the following semicolon-delimited command line produces output thus:
 
-```
+```console
 0:000> $$>a< "c:\binl\my script.txt" "First one" Two "Three More" Four; recx 
 The first argument is First one.
 The fifth argument is ${$arg5}.
@@ -187,12 +184,6 @@ ecx=0021f4ac
 
 In the preceding example, the file name is enclosed in quotation marks because it contains a space, and arguments that contain spaces are enclosed in quotation marks as well. Although a fifth argument seems to be expected by the script, the semicolon terminates the **$$&gt;a&lt;** command after the fourth argument.
 
- 
-
- 
-
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20$<,%20$><,%20$$<,%20$$><,%20$$>a<%20%28Run%20Script%20File%29%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
+ 
 
 

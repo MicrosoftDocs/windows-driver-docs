@@ -1,6 +1,5 @@
 ---
 title: Using Framework Registry-Key Objects
-author: windows-driver-content
 description: Using Framework Registry-Key Objects
 ms.assetid: 2236b4e1-2e17-4e59-b12e-70fff5fd7513
 keywords:
@@ -13,11 +12,8 @@ keywords:
 - keys WDK KMDF
 - opening registry keys WDK KMDF
 - removing registry keys WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using Framework Registry-Key Objects
@@ -75,9 +71,9 @@ To obtain WDM information about the registry, a driver can call [**WdfRegistryWd
 
 After your driver has finished accessing a registry key, it must call [**WdfRegistryClose**](https://msdn.microsoft.com/library/windows/hardware/ff549914) or [**WdfObjectDelete**](https://msdn.microsoft.com/library/windows/hardware/ff548734) to close the key and delete the registry-key object.
 
- 
+ 
 
- 
+ 
 
 
 

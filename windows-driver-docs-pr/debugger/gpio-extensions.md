@@ -2,17 +2,14 @@
 title: GPIO Extensions
 description: The General Purpose Input/Output (GPIO) extension commands display the software state of GPIO controllers.
 ms.assetid: 1703C402-D770-4D3F-AB70-F2D30712A5D9
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # GPIO Extensions
 
 
-The General Purpose Input/Output (GPIO) extension commands display the software state of GPIO controllers. These commands display information from data structures maintained by the GPIO framework extension driver (Msgpioclx.sys). For information about the GPIO framework extension, see [General-Purpose I/O (GPIO) Drivers](http://go.microsoft.com/fwlink/p?LinkID=299823).
+The General Purpose Input/Output (GPIO) extension commands display the software state of GPIO controllers. These commands display information from data structures maintained by the GPIO framework extension driver (Msgpioclx.sys). For information about the GPIO framework extension, see [General-Purpose I/O (GPIO) Drivers](https://go.microsoft.com/fwlink/p?LinkID=299823).
 
 The GPIO debugger extension commands are implemented in gpiokd.dll. To load the GPIO commands, enter **.load gpiokd.dll** in the debugger.
 
@@ -53,48 +50,47 @@ To start debugging a GPIO issue, enter the [**!gpiokd.clientlist**](-gpiokd-clie
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><strong>[!gpiokd.help](-gpiokd-help.md)</strong></p></td>
-<td align="left"><p>The <strong>[!gpiokd.help](-gpiokd-help.md)</strong> command displays help for the GPIO debugger extension commands.</p></td>
+<td align="left"><p><strong><a href="-gpiokd-help.md" data-raw-source="[!gpiokd.help](-gpiokd-help.md)">!gpiokd.help</a></strong></p></td>
+<td align="left"><p>The <strong><a href="-gpiokd-help.md" data-raw-source="[!gpiokd.help](-gpiokd-help.md)">!gpiokd.help</a></strong> command displays help for the GPIO debugger extension commands.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>[!gpiokd.bankinfo](-gpiokd-bankinfo.md)</strong></p></td>
-<td align="left"><p>The <strong>[!gpiokd.bankinfo](-gpiokd-bankinfo.md)</strong> command displays information about a GPIO bank.</p></td>
+<td align="left"><p><strong><a href="-gpiokd-bankinfo.md" data-raw-source="[!gpiokd.bankinfo](-gpiokd-bankinfo.md)">!gpiokd.bankinfo</a></strong></p></td>
+<td align="left"><p>The <strong><a href="-gpiokd-bankinfo.md" data-raw-source="[!gpiokd.bankinfo](-gpiokd-bankinfo.md)">!gpiokd.bankinfo</a></strong> command displays information about a GPIO bank.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>[!gpiokd.clientlist](-gpiokd-clientlist.md)</strong></p></td>
-<td align="left"><p>The <strong>[!gpiokd.clientlist](-gpiokd-clientlist.md)</strong> command displays all registered GPIO controllers.</p></td>
+<td align="left"><p><strong><a href="-gpiokd-clientlist.md" data-raw-source="[!gpiokd.clientlist](-gpiokd-clientlist.md)">!gpiokd.clientlist</a></strong></p></td>
+<td align="left"><p>The <strong><a href="-gpiokd-clientlist.md" data-raw-source="[!gpiokd.clientlist](-gpiokd-clientlist.md)">!gpiokd.clientlist</a></strong> command displays all registered GPIO controllers.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>[!gpiokd.gpioext](-gpiokd-gpioext.md)</strong></p></td>
-<td align="left"><p>The <strong>[!gpiokd.gpioext](-gpiokd-gpioext.md)</strong> command displays information about a GPIO controller.</p></td>
+<td align="left"><p><strong><a href="-gpiokd-gpioext.md" data-raw-source="[!gpiokd.gpioext](-gpiokd-gpioext.md)">!gpiokd.gpioext</a></strong></p></td>
+<td align="left"><p>The <strong><a href="-gpiokd-gpioext.md" data-raw-source="[!gpiokd.gpioext](-gpiokd-gpioext.md)">!gpiokd.gpioext</a></strong> command displays information about a GPIO controller.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>[!gpiokd.pininfo](-gpiokd-pininfo.md)</strong></p></td>
-<td align="left"><p>The <strong>[!gpiokd.pininfo](-gpiokd-pininfo.md)</strong> command displays information about a specified GPIO pin.</p></td>
+<td align="left"><p><strong><a href="-gpiokd-pininfo.md" data-raw-source="[!gpiokd.pininfo](-gpiokd-pininfo.md)">!gpiokd.pininfo</a></strong></p></td>
+<td align="left"><p>The <strong><a href="-gpiokd-pininfo.md" data-raw-source="[!gpiokd.pininfo](-gpiokd-pininfo.md)">!gpiokd.pininfo</a></strong> command displays information about a specified GPIO pin.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>[!gpiokd.pinisrvec](-gpiokd-pinisrvec.md)</strong></p></td>
-<td align="left"><p>The <strong>[!gpiokd.pinisrvec](-gpiokd-pinisrvec.md)</strong> command displays Interrupt Service Routine (ISR) vector information for a specified pin.</p></td>
+<td align="left"><p><strong><a href="-gpiokd-pinisrvec.md" data-raw-source="[!gpiokd.pinisrvec](-gpiokd-pinisrvec.md)">!gpiokd.pinisrvec</a></strong></p></td>
+<td align="left"><p>The <strong><a href="-gpiokd-pinisrvec.md" data-raw-source="[!gpiokd.pinisrvec](-gpiokd-pinisrvec.md)">!gpiokd.pinisrvec</a></strong> command displays Interrupt Service Routine (ISR) vector information for a specified pin.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>[!gpiokd.pintable](-gpiokd-pintable.md)</strong></p></td>
-<td align="left"><p>The <strong>[!gpiokd.pintable](-gpiokd-pintable.md)</strong> command displays information about an array of GPIO pins.</p></td>
+<td align="left"><p><strong><a href="-gpiokd-pintable.md" data-raw-source="[!gpiokd.pintable](-gpiokd-pintable.md)">!gpiokd.pintable</a></strong></p></td>
+<td align="left"><p>The <strong><a href="-gpiokd-pintable.md" data-raw-source="[!gpiokd.pintable](-gpiokd-pintable.md)">!gpiokd.pintable</a></strong> command displays information about an array of GPIO pins.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
 
 [Specialized Extension Commands](specialized-extensions.md)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20GPIO%20Extensions%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

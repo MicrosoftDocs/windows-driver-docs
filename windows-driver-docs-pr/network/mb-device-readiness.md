@@ -2,11 +2,8 @@
 title: MB Device Readiness
 description: MB Device Readiness
 ms.assetid: 67a67ff7-dcff-4aec-bea9-7b1be9593649
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # MB Device Readiness
@@ -46,9 +43,9 @@ Miniport drivers can specify that they support emergency call services even in s
 
 For more information about device readiness, see [OID\_WWAN\_READY\_INFO](https://msdn.microsoft.com/library/windows/hardware/ff569833).
 
- 
+ 
 
- 
+ 
 
 
 

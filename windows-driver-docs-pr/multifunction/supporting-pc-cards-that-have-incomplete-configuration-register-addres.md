@@ -1,17 +1,13 @@
 ---
 title: PC cards with incomplete configuration register addresses
-author: windows-driver-content
 description: Information on supporting PC cards with incomplete configuration register addresses
 ms.assetid: 2a708ca5-a119-4ef5-81ee-d9e40e7a5255
 keywords:
 - incomplete configuration registers WDK multifunction devices
 - system-supplied multifunction bus drivers WDK
 - mf.sys
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # PC cards with incomplete configuration register addresses
@@ -47,7 +43,7 @@ Specify the **MfCardConfig** entries using the syntax described in [**INF LogCon
 
 For example, consider the following excerpt from a custom INF for a multifunction PC Card device that contains a modem and a network adapter:
 
-```
+```cpp
 ;...
  
 [DDInstall.LogConfigOverride]
@@ -84,12 +80,10 @@ Include more than one *DDInstall*.**Override***N* section in the INF to specify 
 
 If the device uses a memory window that is not based at zero, the *DDInstall*.**Override***N* section(s) must also include a **PcCardConfig** entry. If an override section has both an **MfCardConfig** entry and a **PcCardConfig** entry, the PCMCIA bus driver ignores the *ConfigIndex* value in the **PcCardConfig** entry and just uses the *MemoryCardBaseN* information. See [Supporting PC Cards That Have Incomplete Configuration Registers](supporting-pc-cards-that-have-incomplete-configuration-registers.md) for more information about the **PcCardConfig** entry.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bmultifunc\multifunc%5D:%20Supporting%20PC%20Cards%20That%20Have%20Incomplete%20Configuration%20Register%20Addresses%20%20RELEASE:%20%288/29/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

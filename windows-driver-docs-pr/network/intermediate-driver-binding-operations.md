@@ -2,17 +2,14 @@
 title: Intermediate Driver Binding Operations
 description: Intermediate Driver Binding Operations
 ms.assetid: 129a744c-d4d4-4741-9812-e76087c585fc
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Intermediate Driver Binding Operations
 
 
-## <a href="" id="ddk-intermediate-driver-binding-operations-ng"></a>
+
 
 
 When a miniport adapter becomes available, NDIS calls the [*ProtocolBindAdapterEx*](https://msdn.microsoft.com/library/windows/hardware/ff570220) function of any intermediate driver that can bind to that miniport adapter.
@@ -25,9 +22,9 @@ Intermediate drivers are not required to allocate separate [**NET\_BUFFER\_LIST*
 
 For information about the requirements to allocate and manage network data, see [Intermediate Driver Network Data Management](intermediate-driver-network-data-management.md).
 
- 
+ 
 
- 
+ 
 
 
 

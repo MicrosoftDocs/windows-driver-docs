@@ -1,17 +1,13 @@
 ---
 title: Vendor-Supplied Changer Drivers
-author: windows-driver-content
 description: Vendor-Supplied Changer Drivers
 ms.assetid: 6bbd4fef-4b9c-45cc-bab8-1cfad95038db
 keywords:
 - changer drivers WDK storage , vendor-supplied
 - storage changer drivers WDK , vendor-supplied
 - vendor-supplied changer drivers WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Vendor-Supplied Changer Drivers
@@ -28,11 +24,10 @@ This section contains the following information:
 
 [Installing Changer Miniclass Drivers](installing-changer-miniclass-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

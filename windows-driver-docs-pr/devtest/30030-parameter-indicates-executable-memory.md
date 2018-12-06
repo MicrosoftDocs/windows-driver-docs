@@ -2,11 +2,8 @@
 title: C30030
 description: Warning C30030 Calling a memory allocating function and passing a parameter that indicates executable memory.
 ms.assetid: D1C8B316-DC04-4B18-A0EB-40833D50B843
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # C30030
@@ -26,15 +23,15 @@ Use one of the following options:
 -   Specify the preprocessor definition [POOL\_NX\_OPTIN\_AUTO](https://msdn.microsoft.com/library/windows/hardware/hh920390) in the sources/project settings.
 -   Specify the pre-processor definition [POOL\_NX\_OPTIN](https://msdn.microsoft.com/library/windows/hardware/hh920402) in the sources/project settings and call **ExInitializeDriverRuntime(*DrvRtPoolNxOptIn*)** from the driver initialization function (**DriverEntry** or **DllInitialize**).
 
-**Note**  The choice of whether to use [POOL\_NX\_OPTIN\_AUTO](https://msdn.microsoft.com/library/windows/hardware/hh920390) or [POOL\_NX\_OPTIN](https://msdn.microsoft.com/library/windows/hardware/hh920402) largely depends on which platform you are targeting and how many binaries you are making. Both of these options result in these two types being changed for you (either by the compiler or at run time) to their NX equivalents. See the topic links for more information.
+**Note**  The choice of whether to use [POOL\_NX\_OPTIN\_AUTO](https://msdn.microsoft.com/library/windows/hardware/hh920390) or [POOL\_NX\_OPTIN](https://msdn.microsoft.com/library/windows/hardware/hh920402) largely depends on which platform you are targeting and how many binaries you are making. Both of these options result in these two types being changed for you (either by the compiler or at run time) to their NX equivalents. See the topic links for more information.
 
- 
 
-**Note**  You may see a false positive warning if one of the following conditions is true:
+
+**Note**  You may see a false positive warning if one of the following conditions is true:
 -   The driver initialization function calls another function that calls **ExInitializeDriverRuntime(*DrvRtPoolNxOptIn*)**
 -   You are creating a **DRIVER\_LIBRARY** and have specified [POOL\_NX\_OPTIN](https://msdn.microsoft.com/library/windows/hardware/hh920402) but have no initialization function.
 
- 
+
 
 -   Change the allocation type to a non-executable type.
 
@@ -83,7 +80,7 @@ DriverEntry (
 
 **Example (Change the allocation type):**
 
-For the **MM\_PAGE\_PRIORITY** type you can fix this by adding the **MdlMappingNoExecute** flag to the priority type. This is only supported on Windows 8 and later.
+For the **MM\_PAGE\_PRIORITY** type you can fix this by adding the **MdlMappingNoExecute** flag to the priority type. This is only supported on Windows 8 and later.
 
 The following code generates a warning:
 
@@ -99,7 +96,7 @@ pPtr = MmGetSystemAddressForMdlSafe( pMdl, NormalPagePriority | MdlMappingNoExec
 
 **Example (POOL\_TYPE)**
 
-For the **POOL\_TYPE** type you can fix this by changing the request type to the non-executable version of the type. This is only supported on Windows 8 and later.
+For the **POOL\_TYPE** type you can fix this by changing the request type to the non-executable version of the type. This is only supported on Windows 8 and later.
 
 The following code generates a warning:
 
@@ -165,7 +162,6 @@ Status = ZwMapViewOfSection(   handle,
                 MEM_LARGE_PAGES,
                 PAGE_EXECUTE_READWRITE
                 ); 
-
 ```
 
 The following code avoids this warning:
@@ -182,7 +178,6 @@ Status = ZwMapViewOfSection(   handle,
                 MEM_LARGE_PAGES,
                 PAGE_READWRITE
                 ); 
-
 ```
 
 ## <span id="For_defects_involving_cache_types_"></span><span id="for_defects_involving_cache_types_"></span><span id="FOR_DEFECTS_INVOLVING_CACHE_TYPES_"></span>For defects involving cache types:
@@ -258,11 +253,10 @@ MmAllocateContiguousNodeMemory(       numberOfBytes,
 
 [**POOL\_TYPE**](https://msdn.microsoft.com/library/windows/hardware/ff559707)
 
- 
 
- 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20C30030%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
 
 
 

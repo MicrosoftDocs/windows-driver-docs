@@ -11,22 +11,19 @@ keywords:
 - network-migration-DLL WDK netmap.inf
 - DLLs WDK network upgrades
 - vendor-supplied files WDK netmap.inf file
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Specifying the Upgrade DLL in a Netmap.inf File
 
 
-## <a href="" id="ddk-specifying-the-upgrade-dll-in-a-netmap-inf-file-ng"></a>
+
 
 
 **Note**  Vendor-supplied network upgrades are not supported in Microsoft Windows XP (SP1 and later), Microsoft Windows Server 2003, and later operating systems.
 
- 
+ 
 
 A netmap.inf file must have an **OemUpgradeSupport** section. For each network component to be upgraded, the **OemUpgradeSupport** section must contain an entry that has the following format:
 
@@ -40,9 +37,9 @@ where:
 
 *Inf-file-name* is the name of the INF file that installs the network component.
 
- 
+ 
 
- 
+ 
 
 
 

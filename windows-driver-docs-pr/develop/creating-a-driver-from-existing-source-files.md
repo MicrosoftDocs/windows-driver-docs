@@ -2,11 +2,8 @@
 ms.assetid: C5CD87E3-26C0-48AA-B75E-1EFFB0B5519D
 title: Creating a Driver From Existing Source Files
 description: The WDK is integrated with Microsoft Visual Studio, and uses the same compiler and build tools that you use to build Visual Studio solutions and projects.
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Creating a Driver From Existing Source Files
@@ -18,16 +15,16 @@ To convert a driver that was created with a previous version of the WDK, create 
 ## <span id="related_topics"></span>Related topics
 
 
-* [WDK and the Visual Studio build environment](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh454286)
-* [ProjectUpgradeTool](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn265174)
+* [WDK and the Visual Studio build environment](https://msdn.microsoft.com/Library/Windows/Hardware/Hh454286)
+* [ProjectUpgradeTool](https://msdn.microsoft.com/Library/Windows/Hardware/Dn265174)
 * [MSBuild](http://go.microsoft.com/fwlink/p/?linkid=262804)
 * [Walkthrough: Using MSBuild](http://go.microsoft.com/fwlink/p/?linkid=262807)
 * [Creating a New Device Function Driver](creating-a-new-driver.md)
 * [Creating a New Filter Driver](creating-a-new-filter-driver.md)
 * [Creating a New Software Driver](creating-a-new-software-driver.md)
- 
+ 
 
- 
+ 
 
 
 

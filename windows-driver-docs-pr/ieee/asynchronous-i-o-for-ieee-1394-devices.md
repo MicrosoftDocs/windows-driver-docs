@@ -1,6 +1,5 @@
 ---
 title: Asynchronous I/O for IEEE 1394 Devices
-author: windows-driver-content
 description: Asynchronous I/O for IEEE 1394 Devices
 ms.assetid: 36ca83d9-83ed-4366-81e7-63c5337f8643
 keywords:
@@ -12,17 +11,14 @@ keywords:
 - IRPs WDK IEEE 1394 bus
 - transferring data WDK IEEE 1394 bus
 - PDOs WDK IEEE 1394 bus
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Asynchronous I/O for IEEE 1394 Devices
 
 
-## <a href="" id="ddk-asynchronous-i-o-for-ieee-1394-devices-kg"></a>
+
 
 
 Devices on the IEEE 1394 bus communicate, in asynchronous mode, by sending and receiving packets. Devices send read, write, and lock requests to specific addresses in another device's address space. To provide quality of service, when the receiving device completes the request, it sends a response packet back to the sending device, which then sends a response acknowledgment.
@@ -33,11 +29,10 @@ A driver can communicate to its device by sending asynchronous I/O requests to t
 
 [Receiving Asynchronous I/O Request Packets on the IEEE 1394 Bus](https://msdn.microsoft.com/library/windows/hardware/ff537626)
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

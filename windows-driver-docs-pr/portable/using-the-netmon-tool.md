@@ -1,11 +1,8 @@
 ---
 Description: The Network Monitor tool (NetMon.exe) is a Windows-based application that you can use to view traces from WPD components.
 title: Using the Network Monitor Tool
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using the Network Monitor Tool
@@ -28,7 +25,7 @@ To install and configure the Network Monitor tool, complete the following steps.
     5.  ..\\NplAutoProfile.ps1
         **Note**  The WPD parsers are included in the Windows Driver Kit.
 
-         
+         
 
 4.  Configure the *NetMon.exe* options by using the Tools/Options dialog:
     1.  In the **General** tab, check the **Use fixed width font in Frame Summary** box.
@@ -95,7 +92,7 @@ The following image shows a WPDAPI request at API level. The request travels thr
 
 ![viewing traces](images/framedetails1.png)
 
--   You can click to expand the items and see that the **Frame Details** window displays WPD/MTP friendly messages. The convention followed when writing the WPD parsers is that you will be able to see summary of the details at the header level. For example, in a GetServiceCapabilities call, the **DataSetOfDataPhase** field shows next it it, the number of formats in that dataset.
+-   You can click to expand the items and see that the **Frame Details** window displays WPD/MTP friendly messages. The convention followed when writing the WPD parsers is that you will be able to see summary of the details at the header level. For example, in a GetServiceCapabilities call, the **DataSetOfDataPhase** field shows next to it, the number of formats in that dataset.
 -   You can remove the **Source** and **Destination** columns in the **Frame Summary** window to improve clarity
 -   When you click on a field in **Frame Details** window, the corresponding value is highlighted in the **Hex Details** window.
 
@@ -115,11 +112,10 @@ The Network Monitor tool provides several filtering capabilities.
 
     WPDMTP.CorrespondingCommand.MTPOpcode == MTP\_OPCODE\_GETSERVICEPROPERTIES
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[wpd_dk\wpddk]:%20Using%20the%20Network%20Monitor%20Tool%20%20RELEASE:%20%281/5/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

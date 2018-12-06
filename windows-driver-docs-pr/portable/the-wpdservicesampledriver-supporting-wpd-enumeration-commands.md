@@ -1,11 +1,8 @@
 ---
 Description: Support for enumeration commands (WpdServiceSampleDriver)
 title: Support for enumeration commands (WpdServiceSampleDriver)
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Support for enumeration commands (WpdServiceSampleDriver)
@@ -23,7 +20,7 @@ The following table shows each of the supported enumeration commands, together w
 | WPD\_COMMAND\_OBJECT\_ENUMERATION\_FIND\_NEXT  | OnFindNext  | Returns an object identifier for the requested object.                     |
 | WPD\_COMMAND\_OBJECT\_ENUMERATION\_END\_FIND   | OnEndFind   | Performs necessary cleanup when the enumeration is complete.               |
 
- 
+ 
 
 For the sample driver, the code intact for the WPD\_COMMAND\_OBJECT\_ENUMERATION\_END\_FIND handler is almost identical to the code that is found in the WpdHellowWorldDriver sample. However, we modified a portion of the code for the WPD\_COMMAND\_OBJECT\_ ENUMERATION\_START\_FIND and the WPD\_OBJECT\_ENUMERATION\_FIND\_NEXT handlers to support service-level access.
 
@@ -89,11 +86,10 @@ The following code example shows the **FakeDevice::FindNext** method calling the
 
 [The WPD Driver Samples](the-wpd-driver-samples.md)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[wpd_dk\wpddk]:%20Supporting%20the%20Enumeration%20Commands%20%20RELEASE:%20%281/5/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

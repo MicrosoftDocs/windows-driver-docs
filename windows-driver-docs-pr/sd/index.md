@@ -1,6 +1,5 @@
 ---
 title: SD Bus Driver Design Guide
-author: windows-driver-content
 description: SD Bus Driver Design Guide
 ms.assetid: c082d86c-8f81-41ef-afac-bd9fd76696fd
 keywords:
@@ -8,7 +7,6 @@ keywords:
 - buses WDK , SD
 - Secure Digital WDK buses
 - memory cards WDK SD bus
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -26,7 +24,7 @@ ms.technology: windows-devices
 [Handling SD Card Interrupts](https://msdn.microsoft.com/library/windows/hardware/ff537177)
 
 [SD Card Requests](https://msdn.microsoft.com/library/windows/hardware/ff537983)
- 
+ 
 
 ## SD Card Hardware Identifiers
 
@@ -53,11 +51,10 @@ This is a sample for a functional Secure Digital (SD) IO driver. The driver is w
 
 Download the [Storage SDIO driver sample](http://go.microsoft.com/fwlink/p/?LinkId=617953) from GitHub.
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

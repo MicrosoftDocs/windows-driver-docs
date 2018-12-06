@@ -6,17 +6,14 @@ keywords:
 - query operations WDK NDIS intermediate
 - set operations WDK NDIS intermediate
 - canceling OID requests
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Responding to Sets and Queries in an Intermediate Driver
 
 
-## <a href="" id="ddk-responding-to-sets-and-queries-in-an-intermediate-driver-ng"></a>
+
 
 
 Because an NDIS intermediate driver is bound to an overlying NDIS driver, it can also receive queries and sets from its [*MiniportOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff559416) function. In some cases, the intermediate driver just passes such requests through to the underlying miniport driver. Otherwise, it can respond to these queries and sets as appropriate to the medium that it exports at its upper edge. Note that an intermediate driver must always pass through any OID\_PNP\_*Xxx* requests that it receives from an overlying NDIS driver to the underlying miniport driver. NDIS 6.0 intermediate drivers can also cancel OID requests.
@@ -31,13 +28,13 @@ If an intermediate driver itself processes the setting of an OID rather than pas
 
 **Note**  If an intermediate driver modifies the contents of TCP network data that it forwards down to an underlying miniport driver such that TCP offload functions cannot be performed on the network data, the intermediate driver should respond to [OID\_TCP\_OFFLOAD\_CURRENT\_CONFIG](https://msdn.microsoft.com/library/windows/hardware/ff569805) queries with a status of NDIS\_STATUS\_NOT\_SUPPORTED instead of passing the request down to the underlying miniport.
 
- 
+ 
 
 For additional information about responding to sets and queries in an intermediate driver, see [Obtaining and Setting Miniport Driver Information and NDIS Support for WMI](obtaining-and-setting-miniport-driver-information-and-ndis-support-for.md).
 
- 
+ 
 
- 
+ 
 
 
 

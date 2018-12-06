@@ -3,11 +3,8 @@ title: Viewing and Editing Local Variables in WinDbg
 description: In WinDbg, you can view local variables by entering commands, by using the Locals window, or by using the Watch window.
 ms.assetid: 9d816df7-2b20-4be3-90d7-7a11b0f30238
 keywords: ["debugging information windows, Locals window", "Locals window", "memory, Locals window"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Viewing and Editing Local Variables in WinDbg
@@ -73,7 +70,7 @@ The Locals window has a toolbar that contains two buttons (**Typecast** and **Lo
 
     **Note**   The **Always display numbers in default radix** command does not affect long integers. Long integers are displayed in decimal format unless the [**.enable\_long\_status (Enable Long Integer Display)**](-enable-long-status--enable-long-integer-display-.md) command is set. The **.enable\_long\_status** command affects the display in the Locals window, the Watch window, and in debugger command output; there is no equivalent for this command in the menu in the Locals window.
 
-     
+     
 
 -   (Menu only) **Open memory window for selected value** opens a new docked Memory window that displays memory starting at the address of the selected expression.
 
@@ -115,11 +112,10 @@ The Watch window can contain four columns. The **Name** and **Value** columns ar
 
 For more information about controlling local variables, an overview of using variables and changing the scope, and a description of other memory-related commands, see [Reading and Writing Memory](reading-and-writing-memory.md).
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Viewing%20and%20Editing%20Local%20Variables%20in%20WinDbg%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

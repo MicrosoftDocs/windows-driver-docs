@@ -1,6 +1,5 @@
 ---
 title: Filter Template Data Type
-author: windows-driver-content
 description: Filter Template Data Type
 ms.assetid: cfbe8f39-9a8d-4e6b-91d8-f25926057e7b
 keywords:
@@ -11,11 +10,8 @@ keywords:
 - ElementType directive WDK GDL
 - FilterTypeName directive WDK GDL
 - ElementTags directive WDK GDL
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Filter Template Data Type
@@ -32,7 +28,7 @@ The following directives are used to completely define the FILTER\_TYPE data typ
 -   **\*ElementTags** (Optional). If filter type is converted into more than one XML element, this directive specifies the name of each XML element. If this directive is used, the number of tags that are specified must equal the number of XML elements that each conversion produces. Tags are not used if only one XML element is produced.
     **Note**   The **\*ElementTags** directive might be required for some future filter types.
 
-     
+     
 
 -   **\*FilterTypeName** (Required) The particular filter-implemented data type. The default parser filter currently supports the following types:
     -   "HEX\_OR\_INT": GPD 4-byte integer that accepts hex format and wildcard (\*). The result is converted into a decimal number and output as XSD **int** data type. The optional **\*MinValue** and **\*MaxValue** template directives are recognized for this data type. If this type is present, the parser will verify that the supplied value falls within the defined range. One limit can be defined without the other.
@@ -55,7 +51,7 @@ When emitting the XML snapshot, the parser will automatically represent special 
 
 Consider the following template.
 
-```
+```cpp
 *Template:  INTEGER
 {
     *Type:  DATATYPE
@@ -69,7 +65,7 @@ This template specifies a filter type of "HEX\_OR\_INT". According to the inform
 
 In the following example, the XSD\_INT template is named. This template is defined as follows.
 
-```
+```cpp
 *Template:  XSD_INT
 {
     *Type:  DATATYPE
@@ -84,13 +80,13 @@ The XSD\_INT template defines a native XSD type int, which ensures that the inte
 
 Consider the following GDL entry.
 
-```
+```cpp
 *MaxCopies:   0x1ff
 ```
 
 And consider the following template, MAXCOPIES.
 
-```
+```cpp
 *Template:  MAXCOPIES
 {
     *Name:  "*MaxCopies"
@@ -101,18 +97,16 @@ And consider the following template, MAXCOPIES.
 
 If the earlier GDL entry is interpreted by the preceding template, the resulting XML output will be.
 
-```
+```cpp
     <GDL_ATTRIBUTE Name="*MaxCopies"  xsi:type="GDLW_int" >511</GDL_ATTRIBUTE> 
 ```
 
 Note that the parser filter has converted the GPD-defined hex format into the decimal format that is appropriate for the XSD data type **xsd:int**. Note also that the type that is actually referenced is the wrapped type GDLW\_int.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Filter%20Template%20Data%20Type%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

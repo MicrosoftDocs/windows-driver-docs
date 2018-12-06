@@ -6,17 +6,14 @@ keywords:
 - interface classes WDK device installations
 - registering device interface classes
 - device interface classes WDK device installations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Registering a Device Interface Class
 
 
-## <a href="" id="ddk-registering-a-device-interface-class-dg"></a>
+
 
 
 There are three ways to register a device interface class:
@@ -37,9 +34,9 @@ The driver also uses the symbolic link name to access the registry key, in which
 
 A driver can call [**IoRegisterDeviceInterface**](https://msdn.microsoft.com/library/windows/hardware/ff549506) as many times as necessary to register instances of additional device interface classes.
 
- 
+ 
 
- 
+ 
 
 
 

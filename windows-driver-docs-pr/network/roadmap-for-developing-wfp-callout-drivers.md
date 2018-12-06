@@ -2,11 +2,8 @@
 title: Roadmap for Developing WFP Callout Drivers
 description: Roadmap for Developing WFP Callout Drivers
 ms.assetid: 98c857d9-e4a6-4a7f-8427-642763864f3e
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Roadmap for Developing WFP Callout Drivers
@@ -54,9 +51,9 @@ To create a Windows Filtering Platform (WFP) callout driver, follow these steps:
 
 These are the basic steps. Additional steps might be necessary based on the needs of your individual driver.
 
- 
+ 
 
- 
+ 
 
 
 

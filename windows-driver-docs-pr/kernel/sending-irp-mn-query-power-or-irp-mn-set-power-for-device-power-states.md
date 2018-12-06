@@ -1,20 +1,16 @@
 ---
 title: Sending IRP_MN_QUERY_POWER or IRP_MN_SET_POWER for Device Power States
-author: windows-driver-content
 description: Sending IRP_MN_QUERY_POWER or IRP_MN_SET_POWER for Device Power States
 ms.assetid: 58f65138-abb9-4bb8-bf9b-14f17347e309
 keywords: ["IRP_MN_SET_POWER", "IRP_MN_QUERY_POWER", "device power states WDK kernel", "query-power IRPs WDK power management", "power IRPs WDK kernel , device queries", "querying power state", "queuing IRPs", "device query power IRPs WDK kernel", "sending power state IRPs", "set-power IRPs WDK kernel", "device set power IRPs WDK kernel"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Sending IRP\_MN\_QUERY\_POWER or IRP\_MN\_SET\_POWER for Device Power States
 
 
-## <a href="" id="ddk-sending-irp-mn-query-power-or-irp-mn-set-power-for-device-power-st"></a>
+
 
 
 A device power policy owner sends a device query-power IRP ([**IRP\_MN\_QUERY\_POWER**](https://msdn.microsoft.com/library/windows/hardware/ff551699)) to determine whether lower drivers can accommodate a change in device power state, and a device set-power IRP ([**IRP\_MN\_SET\_POWER**](https://msdn.microsoft.com/library/windows/hardware/ff551744)) to change the device power state. (This driver can also send a wait/wake IRP to enable its device to awaken in response to an external signal; see [Supporting Devices that Have Wake-Up Capabilities](supporting-devices-that-have-wake-up-capabilities.md) for details.)
@@ -37,7 +33,7 @@ A driver must not allocate its own power IRP; the power manager provides the [**
 
 The following is the prototype for this routine:
 
-```
+```cpp
 NTSTATUS
 PoRequestPowerIrp (
     IN PDEVICE_OBJECT DeviceObject,
@@ -49,7 +45,7 @@ PoRequestPowerIrp (
     );
 ```
 
-To send the IRP, the driver calls **PoRequestPowerIrp**, specifying a pointer to the target device object in *DeviceObject*, the minor IRP code IRP\_MN\_SET\_POWER or IRP\_MN\_QUERY\_POWER in *MinorFunction*, the value **DevicePowerState** in the *PowerState***.Type**, and a device power state in *PowerState***.State**. In Windows 98/Me, *DeviceObject* must specify the PDO of the underlying device; in Windows 2000 and later versions of Windows, this value can point to either the PDO or an FDO of a driver in the same device stack.
+To send the IRP, the driver calls **PoRequestPowerIrp**, specifying a pointer to the target device object in *DeviceObject*, the minor IRP code IRP\_MN\_SET\_POWER or IRP\_MN\_QUERY\_POWER in *MinorFunction*, the value **DevicePowerState** in the <em>PowerState</em>**.Type**, and a device power state in <em>PowerState</em>**.State**. In Windows 98/Me, *DeviceObject* must specify the PDO of the underlying device; in Windows 2000 and later versions of Windows, this value can point to either the PDO or an FDO of a driver in the same device stack.
 
 If the driver must perform additional tasks after all other drivers have completed the IRP, it should pass a pointer to a power completion function in *CompletionFunction*. The I/O manager calls the *CompletionFunction* after calling all the *IoCompletion* routines set by drivers as they passed the IRP down the stack.
 
@@ -67,12 +63,10 @@ Requests to power up a device must be handled first by the underlying bus driver
 
 When powering off a device (**PowerDeviceD3**), each driver in the device stack must save all of its necessary context and do any necessary clean-up before sending the IRP to the next-lower driver. The extent of the context information and clean-up depends on the type of driver. A function driver must save hardware context; a filter driver might need to save its own software context. A *CompletionFunction* set in this situation can take actions associated with a completed power IRP, but the driver cannot access the device.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20Sending%20IRP_MN_QUERY_POWER%20or%20IRP_MN_SET_POWER%20for%20Device%20Power%20States%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

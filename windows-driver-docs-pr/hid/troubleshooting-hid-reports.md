@@ -1,6 +1,5 @@
 ---
 title: Troubleshooting HID Reports
-author: windows-driver-content
 description: Troubleshooting HID Reports
 ms.assetid: 8fbf641b-461b-44c2-9cc5-c1547abc75d6
 keywords:
@@ -9,17 +8,14 @@ keywords:
 - troubleshooting reports WDK HID
 - dropped HID reports WDK
 - errors WDK HID reports
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Troubleshooting HID Reports
 
 
-## <a href="" id="ddk-troubleshooting-hid-reports-kg"></a>
+
 
 
 This section describes the following most common problems that user-mode applications and kernel-mode drivers might encounter when attempting to extract or set [HID usages](hid-usages.md):
@@ -46,7 +42,7 @@ Based on this example, assume an application or driver received a report from a 
 
 When an application or driver uses **HidP\_Set***Xxx* routines to set usages in a report, the routines can also return the same two status values. The meaning of HIDP\_STATUS\_USAGE\_NOT\_FOUND is the same as with the **HidP\_Get***Xxx* routines. However, the meaning of HIDP\_STATUS\_INCOMPATIBLE\_REPORT\_ID is different. This status value indicates that the report was previously configured with a report ID, and the usage specified by the caller does not belong to that report ID. Using the previous figure as an example, after an application or driver uses [**HidP\_SetUsages**](https://msdn.microsoft.com/library/windows/hardware/ff539792) to set "Button 2" in a zero-initialized report, the report is configured with a report ID of seven. If the application or driver subsequently attempts to use [**HidP\_SetUsageValue**](https://msdn.microsoft.com/library/windows/hardware/ff539797) to set "Value X" in the same report, the routine will return HIDP\_STATUS\_INCOMPATIBLE\_REPORT\_ID.
 
-If a **HidP\_***Xxx* routine returns HIDP\_STATUS\_INCOMPATIBLE\_REPORT\_ID, the caller should take one of the following actions:
+If a **HidP\_**<em>Xxx</em> routine returns HIDP\_STATUS\_INCOMPATIBLE\_REPORT\_ID, the caller should take one of the following actions:
 
 -   If the caller is setting usages, it should allocate a new report of the correct length, zero-initialize it, and then call the routine again. The caller can send the report to the collection after successfully setting all usages in the report.
 
@@ -58,12 +54,10 @@ When the [HID Client Drivers](hid-client-drivers.md) obtains input reports from 
 
 By default, the HID class driver maintains an input report ring buffer that holds 32 reports. If a collection transmits data to the HID class driver faster than a user-mode application or kernel-mode driver retrieves it from the buffer, input reports are lost because of buffer overflow. To reduce the possibility of buffer overflow, an application or driver can reconfigure the size, in number of reports, of the buffer. Drivers retrieve and change the size of the buffer by using an [**IOCTL\_GET\_NUM\_DEVICE\_INPUT\_BUFFERS**](https://msdn.microsoft.com/library/windows/hardware/ff541058) request and an [**IOCTL\_SET\_NUM\_DEVICE\_INPUT\_BUFFERS**](https://msdn.microsoft.com/library/windows/hardware/ff542087) request. Applications do the same operation by calling [**HidD\_GetNumInputBuffers**](https://msdn.microsoft.com/library/windows/hardware/ff539675) and [**HidD\_SetNumInputBuffers**](https://msdn.microsoft.com/library/windows/hardware/ff539686).
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bhid\hid%5D:%20Troubleshooting%20HID%20Reports%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

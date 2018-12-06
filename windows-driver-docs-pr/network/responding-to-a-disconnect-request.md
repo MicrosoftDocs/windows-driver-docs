@@ -9,11 +9,8 @@ keywords:
 - FIN segment WDK TCP chimney offload
 - abortive disconnects WDK TCP chimney offload
 - graceful disconnects WDK TCP chimney offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Responding to a Disconnect Request
@@ -33,9 +30,9 @@ The offload target must not free resources for the connection on which it has se
 
 For more information about responding to an abortive or graceful disconnect request, see [**MiniportTcpOffloadDisconnect**](https://msdn.microsoft.com/library/windows/hardware/ff559457) and [**NdisTcpOffloadDisconnectComplete**](https://msdn.microsoft.com/library/windows/hardware/ff564590).
 
- 
+ 
 
- 
+ 
 
 
 

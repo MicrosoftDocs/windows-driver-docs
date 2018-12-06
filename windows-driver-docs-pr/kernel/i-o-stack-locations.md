@@ -1,20 +1,16 @@
 ---
 title: I/O Stack Locations
-author: windows-driver-content
 description: I/O Stack Locations
 ms.assetid: 62c8ee00-c7cb-4aa1-90ab-b8bedbd818ee
 keywords: ["IRPs WDK kernel , I/O stack locations", "I/O stack locations WDK kernel", "stack locations WDK kernel", "layered driver I/O stack locations WDK kernel", "IRPs WDK kernel , contents", "IO_STACK_LOCATION structure"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # I/O Stack Locations
 
 
-## <a href="" id="ddk-i-o-stack-locations-kg"></a>
+
 
 
 The I/O manager gives each driver in a chain of layered drivers an I/O stack location for every IRP that it sets up. Each I/O stack location consists of an [**IO\_STACK\_LOCATION**](https://msdn.microsoft.com/library/windows/hardware/ff550659) structure.
@@ -31,17 +27,17 @@ The following figure shows the contents of the IRP in more detail.
 
 As shown in the figure, each driver-specific I/O stack location in an IRP contains the following general information:
 
--   The major function code (**IRP\_MJ\_*XXX***), indicating the basic operation the driver should carry out
+- The major function code (**IRP\_MJ\_*XXX***), indicating the basic operation the driver should carry out
 
--   For some major function codes handled by FSDs, higher-level SCSI drivers, and all PnP drivers, a minor function code (**IRP\_MN\_*XXX***), indicating which subcase of the basic operation the driver should carry out
+- For some major function codes handled by FSDs, higher-level SCSI drivers, and all PnP drivers, a minor function code (**IRP\_MN\_*XXX***), indicating which subcase of the basic operation the driver should carry out
 
--   A set of operation-specific arguments, such as the length and starting location of a buffer into which or from which the driver transfers data
+- A set of operation-specific arguments, such as the length and starting location of a buffer into which or from which the driver transfers data
 
--   A pointer to the driver-created device object, representing the target (physical, logical, or virtual) device for the requested operation
+- A pointer to the driver-created device object, representing the target (physical, logical, or virtual) device for the requested operation
 
--   A pointer to the file object, representing an open file, device, directory, or volume
+- A pointer to the file object, representing an open file, device, directory, or volume
 
-    A file system driver accesses the file object through its I/O stack location in IRPs. Other drivers usually ignore the file object.
+  A file system driver accesses the file object through its I/O stack location in IRPs. Other drivers usually ignore the file object.
 
 The set of IRP major and minor function codes that a particular driver handles can be device-type-specific. However, lowest-level drivers and intermediate drivers (including PnP function and filter drivers) usually handle the following set of basic requests:
 
@@ -67,20 +63,18 @@ However, the I/O manager provides support for adding a new driver to any chain o
 
 Note that this support for adding new drivers to an existing chain implies certain restrictions on any particular driver's access to the I/O stack locations in IRPs:
 
--   A higher-level driver in a chain of layered drivers can safely access only its own and the next-lower-level driver's I/O stack locations in any IRP. Such a driver must set up the I/O stack location for the next-lower-level driver in IRPs. However, when designing such a higher-level driver, you cannot predict when (or whether) a new driver will be added to the existing chain just below your driver.
+- A higher-level driver in a chain of layered drivers can safely access only its own and the next-lower-level driver's I/O stack locations in any IRP. Such a driver must set up the I/O stack location for the next-lower-level driver in IRPs. However, when designing such a higher-level driver, you cannot predict when (or whether) a new driver will be added to the existing chain just below your driver.
 
-    Therefore, you should assume that any subsequently added driver will handle the same IRP major function codes (**IRP\_MJ\_*XXX***) as the displaced next-lower-level driver did.
+  Therefore, you should assume that any subsequently added driver will handle the same IRP major function codes (**IRP\_MJ\_*XXX***) as the displaced next-lower-level driver did.
 
--   The lowest-level driver in a chain of layered drivers can safely access only its own I/O stack location in any IRP. When designing such a driver, you cannot predict when (or whether) a new driver will be added to the existing chain above your device driver.
+- The lowest-level driver in a chain of layered drivers can safely access only its own I/O stack location in any IRP. When designing such a driver, you cannot predict when (or whether) a new driver will be added to the existing chain above your device driver.
 
-    In designing a lowest-level driver, assume that the driver can continue to process IRPs using the information passed in its own I/O stack location, whatever the originating source of a given IRP and however many drivers are layered above it.
+  In designing a lowest-level driver, assume that the driver can continue to process IRPs using the information passed in its own I/O stack location, whatever the originating source of a given IRP and however many drivers are layered above it.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20I/O%20Stack%20Locations%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

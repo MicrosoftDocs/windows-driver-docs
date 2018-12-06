@@ -7,11 +7,8 @@ keywords:
 - TCP timestamps WDK TCP chimney offload , calculating delta
 - calculating timestamp delta WDK TCP chimney offload
 - delta calculation WDK TCP timestamps
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Calculating the Timestamp Delta
@@ -46,9 +43,9 @@ For example, if the host stack supplies 100 in the *TsTime* variable and if the 
 
 Similarly, when the offload target terminates of the offload of a connection, it supplies a value in *TsTime* in the TCP delegated state for the connection. In this situation, the value of *TsTime* is the offload target's current time plus the offload target's timestamp delta. The host stack subtracts its current time from the value *TsTime* to arrive at the host stack timestamp delta.
 
- 
+ 
 
- 
+ 
 
 
 

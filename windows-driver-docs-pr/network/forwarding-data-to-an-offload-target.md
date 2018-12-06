@@ -6,11 +6,8 @@ keywords:
 - data I/O WDK TCP chimney offload , forwarding data to target
 - I/O WDK TCP chimney offload , forwarding data to target
 - forward operations to target WDK TCP chimney offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Forwarding Data to an Offload Target
@@ -34,9 +31,9 @@ From the perspective of an offload target, a forward operation is initiated when
 
 For more information about forwarding data from an offload target, see [*MiniportTcpOffloadForward*](https://msdn.microsoft.com/library/windows/hardware/ff559458). For more information about completing a forward operation, see [**NdisTcpOffloadForwardComplete**](https://msdn.microsoft.com/library/windows/hardware/ff564597).
 
- 
+ 
 
- 
+ 
 
 
 

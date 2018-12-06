@@ -3,11 +3,8 @@ title: Source Path
 description: This topic covers how to set the source path or load the individual source files.
 ms.assetid: b5dcb557-b413-401a-be4b-2d45b2597e6c
 keywords: source files and paths, source path
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Source Path
@@ -34,9 +31,9 @@ The debugger's source path is a string that consists of multiple directory paths
 
 Relative paths are supported. However, unless you always start the debugger from the same directory, you should add a drive letter or a network share before each path. Network shares are also supported.
 
-**Note**   If you are connected to a corporate network, the most efficient way to access source files is to use a source server. You can use a source server by using the **srv\*** string within your source path. For more information about source servers, see [Using a Source Server](using-a-source-server.md).
+**Note**   If you are connected to a corporate network, the most efficient way to access source files is to use a source server. You can use a source server by using the **srv\\*** string within your source path. For more information about source servers, see [Using a Source Server](using-a-source-server.md).
 
- 
+ 
 
 ### <span id="controlling_the_source_path"></span><span id="CONTROLLING_THE_SOURCE_PATH"></span>Controlling the Source Path
 
@@ -62,7 +59,7 @@ You can also directly open or close a source file by doing one of the following:
 
     **Note**   When you use **File | Open Source File** (or its shortcut menu or button equivalents) to open a source file, the path of that file is automatically appended to the source path.
 
-     
+     
 
 -   (WinDbg only) Use the [File | Recent Files](file---recent-files.md) command to open one of the four source files that you most recently opened in WinDbg.
 
@@ -70,11 +67,10 @@ You can also directly open or close a source file by doing one of the following:
 
 For more information about how to use source files, see [Debugging in Source Mode](debugging-in-source-mode.md).
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Source%20Path%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

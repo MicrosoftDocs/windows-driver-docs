@@ -2,11 +2,8 @@
 title: Enumerating Hyper-V Extensible Switch Instances
 description: Enumerating Hyper-V Extensible Switch Instances
 ms.assetid: 1C4FE71E-689C-4BE8-BDA8-FFC318E37A26
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Enumerating Hyper-V Extensible Switch Instances
@@ -43,9 +40,9 @@ Virtual Network - 2            2048      {OK}
 
 [**Msvm\_VirtualEthernetSwitch**](https://msdn.microsoft.com/library/hh850242)
 
- 
+ 
 
- 
+ 
 
 
 

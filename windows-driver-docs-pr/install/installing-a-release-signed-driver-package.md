@@ -2,11 +2,8 @@
 title: Installing a Release-Signed Driver Package
 description: Installing a Release-Signed Driver Package
 ms.assetid: cf25858b-7e04-4093-8c81-19d5c0673bcc
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installing a Release-Signed Driver Package
@@ -18,9 +15,9 @@ The release-signed [driver package](driver-packages.md) can be installed on the 
 
 You can troubleshoot problems with released-signed driver installation and loading through the methods described in [Troubleshooting Install and Load Problems with Signed Driver Packages](troubleshooting-install-and-load-problems-with-signed-driver-packages.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,20 +1,16 @@
 ---
 title: Sending a Device Set-Power IRP in Response to a System Set-Power IRP
-author: windows-driver-content
 description: Sending a Device Set-Power IRP in Response to a System Set-Power IRP
 ms.assetid: b2029292-d770-4095-8bd7-9358b282216c
 keywords: ["sending set-power IRPs", "set-power IRPs WDK power management"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Sending a Device Set-Power IRP in Response to a System Set-Power IRP
 
 
-## <a href="" id="ddk-sending-a-device-set-power-irp-in-response-to-a-system-set-power-i"></a>
+
 
 
 The device power policy owner should take the following steps to respond to a system set-power IRP:
@@ -57,12 +53,10 @@ The power-completion callback routine must do the following:
 
 4.  Return the status with which the set-power IRPs completed.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20Sending%20a%20Device%20Set-Power%20IRP%20in%20Response%20to%20a%20System%20Set-Power%20IRP%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

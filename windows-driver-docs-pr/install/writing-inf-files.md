@@ -5,11 +5,8 @@ ms.assetid: 0A31484C-3A61-4a6d-B500-E5C69E2130F9
 keywords:
 - INF files WDK device installations , writing
 - writing INF files WDK device installations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Writing INF Files
@@ -29,13 +26,13 @@ When you write an [INF file](inf-files.md) for your [driver package](driver-pack
 
     **Note**  Do not use the [**INF CopyFiles directive**](inf-copyfiles-directive.md) to copy INF files.
 
-     
+     
 
 -   The components of a driver package must never directly copy or delete INF files directly into a system's *%SystemRoot%/Inf* directory. This results in the driver's digital signature to be invalidated, and this causes the driver not to load successfully.
 
- 
+ 
 
- 
+ 
 
 
 

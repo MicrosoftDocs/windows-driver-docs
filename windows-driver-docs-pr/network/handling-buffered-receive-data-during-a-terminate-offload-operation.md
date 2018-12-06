@@ -5,11 +5,8 @@ ms.assetid: 14746a36-0126-4924-85ad-ecca01779937
 keywords:
 - terminating offload state WDK TCP chimney offload , buffered receive data
 - buffered receive data WDK TCP chimney offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling Buffered Receive Data During a Terminate Offload Operation
@@ -17,7 +14,7 @@ ms.technology: windows-devices
 
 \[The TCP chimney offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-handling-buffered-receive-data-during-a-terminate-offload-operatio"></a>
+
 
 
 Outstanding receive data might exist on a TCP connection that is being uploaded. This data is data that the offload target has received off the wire, processed, and acknowledged. The offload target should use the [delivery algorithm](delivery-algorithm.md) to indicate this data to the host stack.
@@ -28,9 +25,9 @@ The host stack copies the buffered data into its own buffer and indicates the re
 
 Note that the offload target releases ownership of the NET\_BUFFER\_LIST structures that it passes up as buffered data. The offload target does not regain ownership of these NET\_BUFFER\_LIST structures until they are returned to its *MiniportTcpOffloadReceiveReturn* function.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,8 @@
 title: Managing Packet Coalescing Receive Filters
 description: Managing Packet Coalescing Receive Filters
 ms.assetid: 20EA71E0-B880-4891-A12E-76F4C9AB16E6
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Managing Packet Coalescing Receive Filters
@@ -26,9 +23,9 @@ This section describes how the miniport driver and adapter manage packet coalesc
 
 [Handling Packet Coalescing Receive Filters](handling-packet-coalescing-receive-filters.md)
 
- 
+ 
 
- 
+ 
 
 
 

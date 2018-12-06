@@ -6,11 +6,8 @@ keywords:
 - TCP chimney offload WDK networking , statistics
 - chimney offload WDK networking , statistics
 - statistics WDK TCP chimney offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Maintaining and Reporting Chimney-Specific Statistics
@@ -32,9 +29,9 @@ In response to a query of [OID\_IP4\_OFFLOAD\_STATS](https://msdn.microsoft.com/
 
 In response to a query of [OID\_TCP4\_OFFLOAD\_STATS](https://msdn.microsoft.com/library/windows/hardware/ff569800) or [OID\_TCP6\_OFFLOAD\_STATS](https://msdn.microsoft.com/library/windows/hardware/ff569801), an offload target returns TCP statistics in a [**TCP\_OFFLOAD\_STATS**](https://msdn.microsoft.com/library/windows/hardware/ff570940) structure.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -7,17 +7,14 @@ keywords:
 - NDIS ports WDK , OID requests
 - OID requests WDK NDIS ports
 - associating OID requests WDK NDIS ports
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # NDIS Port OID Requests
 
 
-## <a href="" id="ddk-ndis-ports-oid-requests-ng"></a>
+
 
 
 NDIS drivers can associate OID requests with NDIS ports. In such an OID request, the **PortNumber** member of the [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure is set to the target port number. The port number is zero if the OID request is for the default port. The overlying driver must ensure that a port is active before making any OID requests that specify a specific port number.
@@ -41,9 +38,9 @@ This section includes:
 -   [Querying the Port State](querying-the-port-state.md)
 -   [Setting Port Authentication Parameters](setting-port-authentication-parameters.md)
 
- 
+ 
 
- 
+ 
 
 
 

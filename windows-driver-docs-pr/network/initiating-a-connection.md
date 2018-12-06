@@ -9,11 +9,8 @@ keywords:
 - session negotiations WDK SANs
 - SAN connection setup WDK , flow diagram
 - SAN sockets WDK , initiating connections
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Initiating a Connection
@@ -42,7 +39,7 @@ After creating and binding the SAN socket, the switch executes a connect request
 **Note**  
 After the switch establishes a connection through a SAN service provider, the switch can no longer use the TCP/IP provider for that connection. SAN service providers must fully implement all functionality required to service an established connection.
 
- 
+ 
 
 ### Destroying the SAN Socket
 
@@ -65,9 +62,9 @@ After the switch establishes a connection through a SAN service provider, the sw
 
 After a connection is established over a SAN socket, the switch does not call the SAN service provider's **WSPConnect** function. The switch internally handles applications that initiate a call to the switch's **WSPConnect** function to poll for connection requests.
 
- 
+ 
 
- 
+ 
 
 
 

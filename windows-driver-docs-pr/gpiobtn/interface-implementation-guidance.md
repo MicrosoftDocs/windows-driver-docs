@@ -1,8 +1,9 @@
 ---
 title: Interface implementation guidance
-author: windows-driver-content
 description: This section provides guidance for interface implementation.
 ms.assetid: E97A880F-0422-432C-8567-444CA6FD2980
+ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Interface implementation guidance
@@ -26,21 +27,21 @@ This section provides guidance for interface implementation.
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[Available interfaces and related APIs](available-interfaces-and-related-apis.md)</p></td>
+<td align="left"><p><a href="available-interfaces-and-related-apis.md" data-raw-source="[Available interfaces and related APIs](available-interfaces-and-related-apis.md)">Available interfaces and related APIs</a></p></td>
 <td align="left"><p>There are three GPIO interfaces: one for each device. Each interface is referenced by a GUID.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Indicator implementation](indicator-implementation.md)</p></td>
+<td align="left"><p><a href="indicator-implementation.md" data-raw-source="[Indicator implementation](indicator-implementation.md)">Indicator implementation</a></p></td>
 <td align="left"><p>This topic describes indicator implementation.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Button implementation](button-implementation.md)</p></td>
+<td align="left"><p><a href="button-implementation.md" data-raw-source="[Button implementation](button-implementation.md)">Button implementation</a></p></td>
 <td align="left"><p>We recommend that you use a physical GPIO resource for both the buttons and state indicators.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="System_state"></span><span id="system_state"></span><span id="SYSTEM_STATE"></span>System state
 
@@ -75,12 +76,10 @@ When either system metric SM\_CONVERTIBLESLATEMODE or SM\_SYSTEMDOCKED changes, 
 
 The LPARAM of the WM\_SETTINGCHANGE message indicates which system metric has changed by using a string of either “ConvertibleSlateMode” or “SystemDockMode”.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[gpiobtn\gpiobtn]:%20Interface%20implementation%20guidance%20%20RELEASE:%20%289/25/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

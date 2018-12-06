@@ -6,11 +6,8 @@ keywords:
 - network drivers WDK , wireless networking
 - NDIS WDK , wireless networking
 - wireless networking WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Wireless Networking
@@ -26,17 +23,6 @@ This section includes the following topics:
 
 [WLAN feature information](wlan-feature-information.md)
 
-[Native 802.11 Wireless LAN](native-802-11-wireless-lan4.md)
-
 [WDI Miniport Driver Design Guide](wdi-miniport-driver-design-guide.md)
 
 [Wi-Fi Hotspot Offloading Guide](wi-fi-hotspot-offloading-guide.md)
-
- 
-
- 
-
-
-
-
-

@@ -2,11 +2,8 @@
 title: AV/C Streaming Format GUIDs
 description: AV/C Streaming Format GUIDs
 ms.assetid: 60f1fd59-e760-4be4-8990-e49628b76d15
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # AV/C Streaming Format GUIDs
@@ -57,7 +54,7 @@ Designates the AVCCONNECTINFO structure as the extended-data structure following
 <span id="KSDATAFORMAT_SPECIFIER_61883_4"></span><span id="ksdataformat_specifier_61883_4"></span>KSDATAFORMAT\_SPECIFIER\_61883\_4  
 Designates an MPEG2-TS format that follows the IEC 61883-4 protocol. This specifier does not use any extended data structure to follow the KSDATAFORMAT in memory.
 
-### <span id="comments"></span><span id="COMMENTS"></span>Comments
+### Comments
 
 *Avcstrm.sys* and *Msdv.sys* support the KSDATAFORMAT\_SUBTYPE\_DV25, KSDATAFORMAT\_SUBTYPE\_DV50 and KSDATAFORMAT\_SUBTYPE\_DVH1 format subtypes in Windows Vista, Windows Server 2003 with Service Pack 1 (SP1), and Windows XP with Service Pack 2 (SP2) operating systems.
 
@@ -83,11 +80,11 @@ The following table describes the KS data format specifier GUIDs and their corre
 <tbody>
 <tr class="odd">
 <td><p>KSDATAFORMAT_SPECIFIER_DVINFO</p></td>
-<td><p>[<strong>DVINFO</strong>](https://msdn.microsoft.com/library/windows/hardware/ff559517)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff559517" data-raw-source="[&lt;strong&gt;DVINFO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff559517)"><strong>DVINFO</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p>KSDATAFORMAT_SPECIFIER_DV_AVC</p></td>
-<td><p>DVINFO and [<strong>AVCCONNECTINFO</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554101)</p></td>
+<td><p>DVINFO and <a href="https://msdn.microsoft.com/library/windows/hardware/ff554101" data-raw-source="[&lt;strong&gt;AVCCONNECTINFO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554101)"><strong>AVCCONNECTINFO</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td><p>KSDATAFORMAT_SPECIFIER_AVC</p></td>
@@ -100,7 +97,7 @@ The following table describes the KS data format specifier GUIDs and their corre
 </tbody>
 </table>
 
- 
+ 
 
 Microsoft Corporation introduced the *msdv.sys* subunit driver with Windows 98 SE. This driver supports most MiniDV camcorders in both camera mode and VTR (Video Tape Recorder) mode.
 
@@ -108,11 +105,10 @@ Microsoft Corporation introduced the *mstape.sys* tape subunit driver with Windo
 
 **Note** Microsoft does not supply a codec to support DVCPro format decoding.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bstream\stream%5D:%20AV/C%20Streaming%20Format%20GUIDs%20%20RELEASE:%20%2811/22/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

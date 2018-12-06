@@ -5,11 +5,8 @@ ms.assetid: ca305816-8723-4643-9f23-0b2e939e4b78
 keywords:
 - updating offloaded TCP chimney state, completion status
 - completion status of updates WDK TCP chimney offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Returning the Completion Status of an Update Offload Operation
@@ -17,7 +14,7 @@ ms.technology: windows-devices
 
 \[The TCP chimney offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-returning-the-completion-status-of-an-update-offload-operation-ng"></a>
+
 
 
 Before calling the [**NdisMUpdateOffloadComplete**](https://msdn.microsoft.com/library/windows/hardware/ff563694) function, the offload target must write either of the following NDIS\_STATUS values to the **Status** member of each [**NDIS\_MINIPORT\_OFFLOAD\_BLOCK\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff566469) structure in the state tree:
@@ -28,9 +25,9 @@ The offload target successfully updated the state object variables, successfully
 <a href="" id="ndis-status-failure"></a>NDIS\_STATUS\_FAILURE  
 The update operation did not succeed. The host stack will terminate the offload of the state objects that could not be updated.
 
- 
+ 
 
- 
+ 
 
 
 

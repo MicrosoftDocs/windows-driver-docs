@@ -5,17 +5,14 @@ ms.assetid: 1a24dec6-f16a-45f5-857b-c6e0df4ce261
 keywords:
 - direct OID request interface WDK networking
 - direct OID request path WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Direct OID Request Interface in NDIS 6.1
 
 
-## <a href="" id="ddk-direct-oid-request-interfacedirect-oid-request-interface-in-ndis-6"></a>
+
 
 
 NDIS provides a direct OID request interface for NDIS 6.1 and later drivers. The *direct OID request path* supports OID requests that are queried or set frequently. For example, the IPsec offload version 2 (IPsecOV2) interface provides the [OID\_TCP\_TASK\_IPSEC\_OFFLOAD\_V2\_ADD\_SA](https://msdn.microsoft.com/library/windows/hardware/ff569812) OID for direct OID requests.
@@ -24,7 +21,7 @@ The direct OID request interface is optional for NDIS drivers. To support the di
 
 **Note**  NDIS supports specific OIDs for use with the direct OID request interface. To determine whether your driver can use an OID in the direct OIDs interface, see the notes in the OID reference page.
 
- 
+ 
 
 For NDIS 6.1, the only interface that uses the direct OID request interface is IPsecOV2. For more information about IPsecOV2, see [IPsec Task Offload Version 2 in NDIS 6.1](ipsec-task-offload-version-2-in-ndis-6-1.md).
 
@@ -46,9 +43,9 @@ For more information about how to implement the direct OID interface in drivers,
 
 -   [Filter Module OID Requests](filter-module-oid-requests.md)
 
- 
+ 
 
- 
+ 
 
 
 

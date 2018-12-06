@@ -5,11 +5,8 @@ ms.assetid: 7926bb89-bed8-412e-885a-f5a58fc27ab8
 keywords:
 - propagating TCP chimney state-manipulation operations, about propagation process
 - state-manipulation operations WDK TCP chimney offload , about propagation process
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Propagating a State-Manipulation Operation
@@ -55,9 +52,9 @@ Before calling the corresponding NDIS state-manipulation function, the intermedi
 
 In response to an intermediate driver's call to the **Ndis*Xxx*Offload** function, NDIS calls the underlying driver's or offload target's corresponding *MiniportXxxOffload* function. NDIS converts the NDIS\_PROTOCOL\_OFFLOAD\_BLOCK\_LIST structure that was supplied by the intermediate driver to an NDIS\_MINIPORT\_OFFLOAD\_BLOCK\_LIST structure. NDIS passes a pointer to the NDIS\_MINIPORT\_OFFLOAD\_BLOCK\_LIST structure to the underlying driver's or offload target's *MiniportXxxOffload* function.
 
- 
+ 
 
- 
+ 
 
 
 

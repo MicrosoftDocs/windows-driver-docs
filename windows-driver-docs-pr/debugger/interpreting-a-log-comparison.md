@@ -3,11 +3,8 @@ title: Interpreting a Log Comparison
 description: Interpreting a Log Comparison
 ms.assetid: fe2acdd5-00aa-4414-a59e-e6203ad48363
 keywords: ["UMDH, interpreting a log comparison"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Interpreting a Log Comparison
@@ -20,7 +17,7 @@ You can generate multiple User-Mode Dump Heap (UMDH) logs of the same process ov
 
 For example, the following command directs UMDH to compare two UMDH logs, Log1.txt and Log2.txt, and redirects the output to a third file, Compare.txt.
 
-```
+```console
 umdh -v Log1.txt Log2.txt > Compare.txt
 ```
 
@@ -30,14 +27,14 @@ For example, the following line from the file shows the change in allocation siz
 
 In Log1.txt, the calls in the stack accounts for 40,432 (0x9DF0) bytes, but in Log2.txt, the same call stack accounts for 61,712 (0xF110) bytes, a difference of 21,280 (0x5320) bytes.
 
-```
+```console
 + 5320 (f110 - 9df0) 3a allocs BackTrace00053 
 Total increase == 5320
 ```
 
 Following is the stack for the allocation:
 
-```
+```console
 ntdll!RtlDebugAllocateHeap+0x000000FD
 ntdll!RtlAllocateHeapSlowly+0x0000005A
 ntdll!RtlAllocateHeap+0x00000808
@@ -62,11 +59,10 @@ Suppose you have two computers: a *logging computer* where you create a UMDH log
 
 [Using UMDH to Find a User-Mode Memory Leak](using-umdh-to-find-a-user-mode-memory-leak.md)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Interpreting%20a%20Log%20Comparison%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

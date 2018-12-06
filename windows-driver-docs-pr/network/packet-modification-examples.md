@@ -4,11 +4,8 @@ description: Packet Modification Examples
 ms.assetid: dec76575-041b-4cbd-8042-184b15354f61
 keywords:
 - packet modification WDK Windows Filtering Platform
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Packet Modification Examples
@@ -18,7 +15,7 @@ The following example code shows how to modify and inspect packets with WFP.
 
 ### Inline packet Modification from Outgoing Transport Layers
 
-```
+```C++
 HANDLE gInjectionHandle;
 
 void 
@@ -170,7 +167,7 @@ Exit:
 
 ### Out-of-band Packet Modification from Incoming Datagram Data Layers
 
-```
+```C++
 typedef struct DD_RECV_CLASSIFY_INFO_ {
    NET_BUFFER_LIST* netBufferList;
    UINT32 nblOffset;
@@ -405,7 +402,7 @@ Exit:
 
 The following is example code for an inspection procedure that views packet data without changing it.
 
-```
+```C++
 typedef struct TL_ALE_RECV_CLASSIFY_INFO_ {
    BOOLEAN aleInfo;  // TRUE if information is gathered from Ale receive/accept layer
                      // FALSE if information is gathered from incoming transport layer
@@ -777,9 +774,9 @@ Exit:
 
 [Types of Callouts](types-of-callouts.md)
 
- 
+ 
 
- 
+ 
 
 
 

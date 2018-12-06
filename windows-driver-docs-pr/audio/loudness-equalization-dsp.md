@@ -2,11 +2,8 @@
 title: Loudness Equalization DSP
 description: Loudness Equalization DSP
 ms.assetid: 14b3d8c9-1bfc-4c44-8eba-0bad9e485a19
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 11/07/2018
+ms.localizationpriority: medium
 ---
 
 # Loudness Equalization DSP
@@ -16,12 +13,10 @@ The loudness equalization DSP ensures that the volume level across different sou
 
 Versions of Windows with this audio effect can maintain a more uniform perceived loudness across different digital audio files or sources than earlier Windows technologies. This means that loudness always stays within a specified range, even for different digital signals.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Loudness%20Equalization%20DSP%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

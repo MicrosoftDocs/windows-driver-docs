@@ -2,11 +2,8 @@
 title: Accessing Device Setup Class Properties
 description: Accessing Device Setup Class Properties
 ms.assetid: cea33f31-1aaf-445e-9175-def58ea26588
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Accessing Device Setup Class Properties
@@ -34,9 +31,9 @@ For information about how to access the corresponding device setup class propert
 
 [Accessing the Co-installers Registry Entry Value of a Device Setup Class](accessing-the-co-installers-registry-entry-value-of-a-device-setup-cla.md)
 
- 
+ 
 
- 
+ 
 
 
 

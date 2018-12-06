@@ -1,6 +1,5 @@
 ---
 title: Processing I/O Operations
-author: windows-driver-content
 description: Processing I/O Operations
 ms.assetid: 750fa89b-dbdf-45ff-bfa5-83c717d2d7bb
 keywords:
@@ -9,11 +8,8 @@ keywords:
 - postoperation callback routines WDK file system minifilter , filter manager
 - opportunistic lock WDK file system minifilter
 - locking WDK file system minifilter
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Processing I/O Operations
@@ -107,22 +103,21 @@ The following callback routines are stored in the [**FLT\_OPERATION\_REGISTRATIO
 <tbody>
 <tr class="odd">
 <td align="left"><p><em>PostOperation</em></p></td>
-<td align="left"><p>[<strong>PFLT_POST_OPERATION_CALLBACK</strong>](https://msdn.microsoft.com/library/windows/hardware/ff551107)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff551107" data-raw-source="[&lt;strong&gt;PFLT_POST_OPERATION_CALLBACK&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff551107)"><strong>PFLT_POST_OPERATION_CALLBACK</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><em>PreOperation</em></p></td>
-<td align="left"><p>[<strong>PFLT_PRE_OPERATION_CALLBACK</strong>](https://msdn.microsoft.com/library/windows/hardware/ff551109)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff551109" data-raw-source="[&lt;strong&gt;PFLT_PRE_OPERATION_CALLBACK&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff551109)"><strong>PFLT_PRE_OPERATION_CALLBACK</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

@@ -2,11 +2,8 @@
 title: Developing apps using multiple PDP contexts
 description: Developing apps using multiple PDP contexts
 ms.assetid: 6a977a69-397d-4922-890d-1810dd54dff4
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Developing apps using multiple PDP contexts
@@ -57,9 +54,9 @@ For sending data by using a special PDP context, the Microsoft Store app must us
 HTTP-based APIs, such as [**XMLHTTPRequest**](https://msdn.microsoft.com/library/windows/apps/br229787), [IXHR2](https://msdn.microsoft.com/library/windows/desktop/hh831163), [**Windows.Web.Syndication**](https://msdn.microsoft.com/library/windows/apps/br243632), and [**Windows.Web.AtomPub**](https://msdn.microsoft.com/library/windows/apps/br210609), and APIs based on the Windows HTTP protocol, such as JQuery and [**Windows.Web.Http**](https://msdn.microsoft.com/library/windows/apps/dn279692), do not have the ability to bind to a specific interface. For these APIs, Windows handles the routing of data to a special PDP context by using policies. Once the special PDP context is activated, the app can specify routing rules based on destination and special PDP context. The destination can be domain name or IP address, such as video.fabrikam.com, .contoso.com, or 123.23.34.333. After specifying the routing rules, if the app uses any of the above HTTP APIs to transfer the data, Windows will send the data to the special PDP context based on routing rules. Once the app has finished transferring data, it should disconnect the special PDP context and remove the route policy.
 
 **Note**  
-[**Background Transfer APIs**](https://msdn.microsoft.com/library/windows/apps/br207242) and [HTTP Client(C#) APIs](http://msdn.microsoft.com/library/windows/apps/system.net.http.httpclient.aspx) cannot use a route policy.
+[**Background Transfer APIs**](https://msdn.microsoft.com/library/windows/apps/br207242) and [HTTP Client(C#) APIs](https://msdn.microsoft.com/library/windows/apps/system.net.http.httpclient.aspx) cannot use a route policy.
 
- 
+ 
 
 ![figure 3](images/mb-pdp-fig4.jpg)
 
@@ -461,7 +458,7 @@ Some operators have indicated that special PDP contexts have limited bandwidth. 
 **Note**  
 This is just to avoid extra traffic on special PDP contexts. You cannot rely on this as a security mechanism for restricting apps to special PDP contexts. If you would like to restrict access to special PDP contexts, you must implement some authentication or security mechanism on your network. For example, you could use a filter that allows only certain IP addresses for a specific PDP context.
 
- 
+ 
 
 Some mobile networks do not support multiple PDP contexts. You can provision whether your network supports multiple PDP context or not. If your network doesn’t support multiple PDP contexts, Windows should not allow apps to create on-demand connections on special APNs. By default, Windows assumes you support multiple PDP contexts.
 
@@ -471,9 +468,9 @@ The following sample XML file demonstrates how to use Windows provisioning metad
 <?xml version="1.0" encoding="utf-8"?>
 <CarrierProvisioning xmlns="http://www.microsoft.com/networking/CarrierControl/v1">
   <Global>
-    <!-- Adjust the Carrier ID to fit your own ID. Refer to the MSDN documentation about Carrier ID's. -->
+    <!-- Adjust the Carrier ID to fit your own ID. Refer to the documentation about Carrier ID's. -->
     <CarrierId>{11111111-1111-1111-1111-111111111111}</CarrierId>
-    <!-- Adjust the Susbscriber ID. Refer to the MSDN documentation about Subscriber ID's. -->
+    <!-- Adjust the Susbscriber ID. Refer to the documentation about Subscriber ID's. -->
     <SubscriberId>1234567890</SubscriberId>
   </Global>
   <Extensions>
@@ -486,7 +483,7 @@ The following sample XML file demonstrates how to use Windows provisioning metad
             <Context>
               <!-- Adjust the access string to your APN. -->
               <AccessString>Contoso.Contoso1</AccessString>
-              <!-- Adjust the UserLogonCred to fit your UserLogonCred. Refer to the MSDN documentation about UserLogonCred's. -->
+              <!-- Adjust the UserLogonCred to fit your UserLogonCred. Refer to the documentation about UserLogonCred's. -->
               <UserLogonCred>
                 <UserName>user1</UserName>
                 <Password>password1</Password>
@@ -504,7 +501,7 @@ The following sample XML file demonstrates how to use Windows provisioning metad
             <Context>
               <!-- Adjust the access string to your APN. -->
               <AccessString>Contoso.Contoso2</AccessString>
-              <!-- Adjust the UserLogonCred to fit your UserLogonCred. Refer to the MSDN documentation about UserLogonCred. -->
+              <!-- Adjust the UserLogonCred to fit your UserLogonCred. Refer to the documentation about UserLogonCred. -->
               <UserLogonCred>
                 <UserName>user2</UserName>
                 <Password>password2</Password>
@@ -592,11 +589,10 @@ Since this feature is operator specific, it is optional for mobile broadband dev
 
 -   The device firmware should continue to abstract SMS PDP contexts and route them through the SMS CIDs regardless of the bearer used underneath.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_mb\p_mb%5D:%20Developing%20apps%20using%20multiple%20PDP%20contexts%20%20RELEASE:%20%281/18/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

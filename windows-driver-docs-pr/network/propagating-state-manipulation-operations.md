@@ -6,11 +6,8 @@ keywords:
 - intermediate drivers WDK TCP chimney offload , propagating state-manipulation operations
 - propagating TCP chimney state-manipulation operations
 - state-manipulation operations WDK TCP chimney offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Propagating State-Manipulation Operations
@@ -44,9 +41,9 @@ This section includes:
 
 -   [Reusing an NDIS\_PROTOCOL\_OFFLOAD\_BLOCK\_LIST Structure](reusing-an-ndis-miniport-offload-block-list-structure.md)
 
- 
+ 
 
- 
+ 
 
 
 

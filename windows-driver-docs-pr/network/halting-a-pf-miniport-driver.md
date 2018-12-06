@@ -2,11 +2,8 @@
 title: Halting a PF Miniport Driver
 description: Halting a PF Miniport Driver
 ms.assetid: E3F6B78E-6938-459B-883E-5DA0BB1D73C7
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Halting a PF Miniport Driver
@@ -22,7 +19,7 @@ This topic contains the following information:
 
 -   [Actions Performed by the PF Miniport Driver When *MiniportHaltEx* is Called](#miniport-driver)
 
-## <a href="" id="overlying-drivers"></a>Actions Performed by NDIS and Overlying Drivers Before *MiniportHaltEx* is Called
+## Actions Performed by NDIS and Overlying Drivers Before *MiniportHaltEx* is Called
 
 
 Before NDIS calls the PF miniport driver's [*MiniportHaltEx*](https://msdn.microsoft.com/library/windows/hardware/ff559388) function, it first does the following:
@@ -43,7 +40,7 @@ When an overlying protocol or filter driver is being unbound or detached from th
 
     **Note**  When resources for the VF are freed, NDIS calls the [*MiniportHaltEx*](https://msdn.microsoft.com/library/windows/hardware/ff559388) function of the VF miniport driver. For more information, see [Halting a VF Miniport Driver](halting-a-vf-miniport-driver.md).
 
-     
+     
 
 After all receive filters, nondefault VPorts, and VFs have been deleted from the NIC switch, NDIS follows these steps:
 
@@ -51,11 +48,11 @@ After all receive filters, nondefault VPorts, and VFs have been deleted from the
 
     **Note**  Starting with Windows Server 2012, the SR-IOV interface only supports the default NIC switch on the network adapter.
 
-     
+     
 
 -   After all NIC switches have been successfully deleted, NDIS calls the [*MiniportHaltEx*](https://msdn.microsoft.com/library/windows/hardware/ff559388) function of the PF miniport driver.
 
-## <a href="" id="miniport-driver"></a>Actions Performed by the PF Miniport Driver When *MiniportHaltEx* is Called
+## Actions Performed by the PF Miniport Driver When *MiniportHaltEx* is Called
 
 
 When NDIS calls *MiniportHaltEx*, the PF miniport driver must follow these steps:
@@ -66,13 +63,13 @@ When NDIS calls *MiniportHaltEx*, the PF miniport driver must follow these steps
 
     **Note**  If the PF miniport driver supports dynamic creation and configuration of NIC switches, it must call [**NdisMEnableVirtualization**](https://msdn.microsoft.com/library/windows/hardware/hh451481) when the driver handles the OID set request of [OID\_NIC\_SWITCH\_DELETE\_SWITCH](https://msdn.microsoft.com/library/windows/hardware/hh451817). This OID request is issued before *MiniportHaltEx* is called.
 
-     
+     
 
 2.  The PF miniport driver performs the other tasks associated with a miniport halt operation. For more information, see [Halting a Miniport Adapter](halting-a-miniport-adapter.md).
 
- 
+ 
 
- 
+ 
 
 
 

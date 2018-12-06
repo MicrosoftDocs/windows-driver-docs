@@ -1,12 +1,8 @@
 ---
-Description: USB Dual Role controllers are now supported in Windows, starting with Windows 10.
+Description: USB Dual Role controllers are now supported in Windows, starting with Windows 10.
 title: USB Dual Role Driver Stack Architecture
-author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # USB Dual Role Driver Stack Architecture
@@ -18,10 +14,10 @@ ms.technology: windows-devices
 
 **Windows version**
 
--   Windows 10 for desktop editions (Home, Pro, Enterprise, and Education)
--   Windows 10 Mobile
+-   Windows 10 for desktop editions (Home, Pro, Enterprise, and Education)
+-   Windows 10 Mobile
 
-USB Dual Role controllers are now supported in Windows, starting with Windows 10.
+USB Dual Role controllers are now supported in Windows, starting with Windows 10.
 
 ## Introduction
 
@@ -34,7 +30,7 @@ When a mobile device is in *function* mode, it is attached to a PC or some other
 
 When a mobile device is in *host* mode, users can attach their devices, such as a mouse or a keyboard, to it. In this case the mobile device hosts the attached devices.
 
-By providing support for USB dual role in Windows 10, we provide the following benefits:
+By providing support for USB dual role in Windows 10, we provide the following benefits:
 
 -   Connectivity to mobile peripheral devices via USB, which offers a larger data bandwidth compared to wireless protocols like Bluetooth.
 -   The option of battery charging over USB while connected to and communicating with other USB devices (as long as the required hardware support is present).
@@ -42,41 +38,41 @@ By providing support for USB dual role in Windows 10, we provide the following 
 
 The following table shows the list of *host* class drivers that are available on desktop and mobile SKUs of Windows.
 
-| USB Host class drivers                                             | Windows 10 Mobile | Windows 10 for desktop editions |
+| USB Host class drivers                                             | Windows 10 Mobile | Windows 10 for desktop editions |
 |--------------------------------------------------------------------|-------------------|---------------------------------|
 | USB Hubs (USBHUB)                                                  | Yes               | Yes (Since Windows 2000)        |
 | HID - Keyboard/Mice (HidClass, KBDCLass, MouClass, KBDHid, MouHid) | Yes               | Yes (Since Windows 2000)        |
 | USB Mass Storage (Bulk & UASP)                                     | Yes               | Yes (Since Windows 2000)        |
 | Generic USB Host Driver (WinUSB)                                   | Yes               | Yes (Since Windows Vista)       |
 | USB Audio in / out (USBAUDIO)                                      | Yes               | Yes (Since Windows XP)          |
-| Serial Devices (USBSER)                                            | Yes               | Yes (Since Windows 10)          |
+| Serial Devices (USBSER)                                            | Yes               | Yes (Since Windows 10)          |
 | Bluetooth (BTHUSB)                                                 | Yes               | Yes (Since Windows XP)          |
 | Print (usbprint)                                                   | No                | Yes (Since Windows XP)          |
 | Scanning (USBSCAN)                                                 | No                | Yes (Since Windows 2000)        |
 | WebCam (USBVIDEO)                                                  | No                | Yes (Since Windows Vista)       |
 | Media Transfer Protocol (MTP Initiator)                            | No                | Yes (Since Windows Vista)       |
 | Remote NDIS (RNDIS)                                                | No                | Yes (Since Windows XP)          |
-| IP over USB (IPoverUSB)                                            | No                | Yes (New for Windows 10)        |
+| IP over USB (IPoverUSB)                                            | No                | Yes (New for Windows 10)        |
 
- 
 
-The Class drivers in the table were selected based on device class telemetry, and based on key scenarios that were selected for Windows 10. We plan on including a limited number of inbox, 3rd party Host drivers, to support key devices on Windows 10 Mobile. And for Windows 10 for desktop editions, these drivers will be available either on the OEM’s website or via Windows Update (WU).
 
-For Windows 10 Mobile, the 3rd party drivers that are not included inbox will not be available on WU. The disk footprint of the USB Host stack + HID has been kept small. Which is why not all class drivers, and very few 3rd party drivers are included inbox for Windows 10 Mobile. An OEM who wishes to make 3rd party drivers available can use a Board Support Package (BSP) to add them to OS images for their mobile devices. For more information about this policy, see [Driver development for Windows Phone](http://go.microsoft.com/fwlink/p/?LinkId=761246), and scroll down to the section titled *Differences between driver development for Windows Phone and Windows*.
+The Class drivers in the table were selected based on device class telemetry, and based on key scenarios that were selected for Windows 10. We plan on including a limited number of inbox, 3rd party Host drivers, to support key devices on Windows 10 Mobile. And for Windows 10 for desktop editions, these drivers will be available either on the OEM’s website or via Windows Update (WU).
+
+For Windows 10 Mobile, the 3rd party drivers that are not included inbox will not be available on WU. The disk footprint of the USB Host stack + HID has been kept small. Which is why not all class drivers, and very few 3rd party drivers are included inbox for Windows 10 Mobile. An OEM who wishes to make 3rd party drivers available can use a Board Support Package (BSP) to add them to OS images for their mobile devices. For more information about this policy, see [Driver development for Windows Phone](http://go.microsoft.com/fwlink/p/?LinkId=761246), and scroll down to the section titled *Differences between driver development for Windows Phone and Windows*.
 
 The following table shows the *function* class drivers that are available on mobile SKUs of Windows.
 
-**Note**  Function drivers are *not* available on Windows 10 for desktop editions.
+**Note**  Function drivers are *not* available on Windows 10 for desktop editions.
 
- 
 
-| USB Function class drivers                 | Windows 10 Mobile | Windows 10 for desktop editions | Notes                                                                                                                                  |
+
+| USB Function class drivers                 | Windows 10 Mobile | Windows 10 for desktop editions | Notes                                                                                                                                  |
 |--------------------------------------------|-------------------|---------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
 | Media Transfer Protocol (MTP Responder)    | Yes               | No                              | There are no scenarios for MTP responder on Desktop. P2P scenarios between Desktop systems were enabled via Easy-MigCable over WinUSB. |
 | Video Display out (vidstream)              | Yes               | No                              |                                                                                                                                        |
 | Generic USB Function Driver (GenericUSBFn) | Yes               | No                              | This will be needed by IPoverUSB and other desktop flashing scenarios.                                                                 |
 
- 
+
 
 We will monitor device attachment data, to let us know if we need to provide additional class driver support, as the device class popularity list changes over time.
 
@@ -87,7 +83,7 @@ The Microsoft USB Role Switch (URS) driver allows a system implementer to take a
 
 The URS driver is intended to provide dual-role functionality for platforms that use a single USB controller that can operate in both host and peripheral roles over a single port. The *peripheral role* is also known as a *function role*. The URS driver manages the current role of the port, and the loading and unloading of the appropriate software stacks, based on hardware events from the platform.
 
-On a system that has a USB micro-AB connector, the driver makes use of hardware interrupts that indicates the state of the ID pin on the connector. This pin is used to detect whether the controller needs to assume the host role or the function role in a connection. For more information, see the [USB On-The-Go specification](http://go.microsoft.com/fwlink/p/?LinkId=698414). On systems with a USB Type-C connector, the OEM implementer is expected to provide a connector client driver by using the [USB Type-C connector driver programming interfaces](https://msdn.microsoft.com/library/windows/hardware/mt188011). The client driver communicates with the Microsoft-provided USB connector Manager class extension (UcmCx) to manage all aspects of the USB Type-C connector, such as CC detection, PD messaging, and others. For role switching, the client driver communicates the state of the USB Type-C connector to the URS driver.
+On a system that has a USB micro-AB connector, the driver makes use of hardware interrupts that indicates the state of the ID pin on the connector. This pin is used to detect whether the controller needs to assume the host role or the function role in a connection. For more information, see the [USB On-The-Go specification](http://go.microsoft.com/fwlink/p/?LinkId=698414). On systems with a USB Type-C connector, the OEM implementer is expected to provide a connector client driver by using the [USB Type-C connector driver programming interfaces](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_usbref/#type-c-driver-reference). The client driver communicates with the Microsoft-provided USB connector Manager class extension (UcmCx) to manage all aspects of the USB Type-C connector, such as CC detection, PD messaging, and others. For role switching, the client driver communicates the state of the USB Type-C connector to the URS driver.
 
 The following diagram shows the USB software driver stack for a dual-role controller that uses the URS driver.
 
@@ -216,7 +212,6 @@ Device(URS0)
         })
     }
 }
-
 ```
 
 Here are some explanations for the main sections of the ACPI file:
@@ -242,32 +237,31 @@ The URS driver assigns Hardware IDs to the host and function stacks. These Hardw
 
 If you're an IHV or an OEM and you're thinking of providing your own driver package, here are some things to consider:
 
--   URS driver package
+- URS driver package
 
-    It is expected that the Hardware ID for the dual-role controller on each platform will be added to the inbox INF for URS. However, if for some reason the ID cannot be added, the IHV/OEM may provide a driver package with an INF that Needs/Includes the inbox INF and matches their Hardware ID.
+  It is expected that the Hardware ID for the dual-role controller on each platform will be added to the inbox INF for URS. However, if for some reason the ID cannot be added, the IHV/OEM may provide a driver package with an INF that Needs/Includes the inbox INF and matches their Hardware ID.
 
-    This is necessary in the case where the IHV/OEM requires a filter driver to be present in the driver stack.
+  This is necessary in the case where the IHV/OEM requires a filter driver to be present in the driver stack.
 
--   Host driver package.
+- Host driver package.
 
-    An IHV/OEM-provided driver package that Needs/Includes the inbox *usbxhci.inf* and matches the host device Hardware ID is required. The Hardware ID match would be based on the scheme described in the preceding section.
+  An IHV/OEM-provided driver package that Needs/Includes the inbox *usbxhci.inf* and matches the host device Hardware ID is required. The Hardware ID match would be based on the scheme described in the preceding section.
 
-    This is necessary in the case where the IHV/OEM requires a filter driver to be present in the driver stack.
+  This is necessary in the case where the IHV/OEM requires a filter driver to be present in the driver stack.
 
-    There is work in progress to make URS driver assign the XHCI Compatible ID for the host device.
+  There is work in progress to make URS driver assign the XHCI Compatible ID for the host device.
 
--   Function driver package
+- Function driver package
 
-    An IHV/OEM-provided driver package that Needs/Includes the inbox *Ufxsynopsys.inf* and matches the peripheral device Hardware ID is required. The Hardware ID match would be based on the scheme described in the preceding section.
+  An IHV/OEM-provided driver package that Needs/Includes the inbox *Ufxsynopsys.inf* and matches the peripheral device Hardware ID is required. The Hardware ID match would be based on the scheme described in the preceding section.
 
-    The IHV/OEM can also include a filter driver in the driver package.
+  The IHV/OEM can also include a filter driver in the driver package.
+  ## See Also
 
- 
-
- 
+[Dual-role controller driver reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_usbref/#dual-role-controller-driver-reference)
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20USB%20Dual%20Role%20Driver%20Stack%20Architecture%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
 
 

@@ -12,17 +12,14 @@ keywords:
 - driver selections WDK device installations
 - locating drivers for device installation WDK device installations
 - searching for drivers during device installation WDK device installations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # How Windows Selects Drivers
 
 
-## <a href="" id="ddk-how-setup-selects-drivers-dg"></a>
+
 
 
 This section describes how Windows locates and selects a function driver for a Plug and Play (PnP) device.
@@ -37,9 +34,9 @@ This section contains the following topics:
 
 [AllSignersEqual Group Policy (Windows Vista and Later)](allsignersequal-group-policy--windows-vista-and-later-.md)
 
- 
+ 
 
- 
+ 
 
 
 

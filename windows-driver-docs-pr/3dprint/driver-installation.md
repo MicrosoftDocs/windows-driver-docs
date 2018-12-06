@@ -1,19 +1,16 @@
 ---
 title: Driver installation
-author: windows-driver-content
 description: The print driver provided in this SDK is an experimental 3D printer device driver still under development.
 ms.assetid: 8A13CD6F-DF82-4353-ADE9-06989F83BC87
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 05/15/2018
+ms.localizationpriority: medium
 ---
 
 # Driver installation
 
 
-The print driver provided in this SDK is an experimental 3D printer device driver still under development.
+> [!NOTE]
+> The print driver provided in the 3D printing SDK is an experimental 3D printer device driver still under development.
 
 ## Driver installation
 
@@ -24,9 +21,9 @@ To install the printer, use the following installation instructions:
 
 - If the 3D printer is experimental or in development, follow the steps in *Install the driver manually* section below to print to an existing COM port or print G-Code to file.
 
-For information on MS_COMP_3DPRINT, see [Getting started guide - Microsoft Standard Driver for 3D Printers](https://msdn.microsoft.com/windows/hardware/drivers/3dprint/microsoft-standard-driver-for-3d-printers-).
+For information on MS_COMP_3DPRINT, see [Getting started guide - Microsoft Standard Driver for 3D Printers](https://docs.microsoft.com/windows-hardware/drivers/3dprint/microsoft-standard-driver-for-3d-printers-).
 
-For more information on OS descriptors, see [Microsoft OS Descriptors for USB Devices](http://msdn.microsoft.com/library/windows/hardware/ff537430.aspx).
+For more information on OS descriptors, see [Microsoft OS Descriptors for USB Devices](https://docs.microsoft.com/windows-hardware/drivers/usbcon/microsoft-defined-usb-descriptors).
 
 ### Automatic installation of the driver via PnP
 
@@ -34,7 +31,7 @@ For more information on OS descriptors, see [Microsoft OS Descriptors for USB De
 
 2.  Execute these two commands from an elevated command prompt:
 
-    ``` syntax
+    ```console
     pnputil -a {PathToSDK}\Bin\MS3DPrintUSB_{architecture}\MS3DPrintUSB.inf
     pnputil -a {PathToSDK}\Bin\RenderFilters_{architecture}\MS3DPrinter.inf
     ```
@@ -95,12 +92,10 @@ For more information on OS descriptors, see [Microsoft OS Descriptors for USB De
 
 16. After the installation completes, click **Finish**.
 
- 
-
- 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Driver%20installation%20%20RELEASE:%20%289/2/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
+
 
 

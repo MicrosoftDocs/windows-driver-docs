@@ -1,6 +1,5 @@
 ---
 title: Valid GDL Configurations
-author: windows-driver-content
 description: Valid GDL Configurations
 ms.assetid: 68dbe7f7-4f6d-46e5-b2f1-27b123c4bedb
 keywords:
@@ -8,11 +7,8 @@ keywords:
 - parser WDK GDL , validating configurations
 - configurations WDK GDL , valid configurations
 - validating GDL configurations WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Valid GDL Configurations
@@ -34,12 +30,10 @@ A valid configuration satisfies the following conditions:
 
 To prevent loss of the intent of your configuration because of the parser's validation process, you should pass a valid configuration to the parser functions.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Valid%20GDL%20Configurations%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

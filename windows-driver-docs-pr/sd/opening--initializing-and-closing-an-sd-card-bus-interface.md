@@ -1,6 +1,5 @@
 ---
 title: Opening, Initializing and Closing an SD Card Bus Interface
-author: windows-driver-content
 description: Opening, Initializing and Closing an SD Card Bus Interface
 ms.assetid: 986a352e-c479-444d-9c65-7958dd638bbb
 keywords:
@@ -11,11 +10,8 @@ keywords:
 - SdBusOpenInterface
 - SDBUS_INTERFACE_STANDARD
 - interfaces WDK SD bus
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Opening, Initializing and Closing an SD Card Bus Interface
@@ -25,7 +21,7 @@ Secure Digital (SD) device drivers must open and initialize an SD bus interface 
 
 The following code example illustrates the sequence of calls that open and initialize an SD bus interface:
 
-```
+```cpp
   status = SdBusOpenInterface (pDevExt->UnderlyingPDO,
     &pDevExt->BusInterface,
     sizeof(SDBUS_INTERFACE_STANDARD),
@@ -63,7 +59,7 @@ To close an SD interface, drivers must dereference the interface by calling the 
 
 The following code example illustrates how a driver can dereference an SD card bus interface:
 
-```
+```cpp
 if (pDevExt->BusInterface.InterfaceDereference) {
     (pDevExt->BusInterface.InterfaceDereference) (pDevExt->BusInterface.Context);
     RtlZeroMemory(&pDevExt->BusInterface, sizeof(SDBUS_INTERFACE_STANDARD));
@@ -72,11 +68,10 @@ if (pDevExt->BusInterface.InterfaceDereference) {
 
 The **SdBusOpenInterface** call stores a pointer to the interface dereference routine in the SDBUS\_INTERFACE\_STANDARD structure. However, drivers should verify that the pointer is not **NULL** before attempting to call the routine.
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

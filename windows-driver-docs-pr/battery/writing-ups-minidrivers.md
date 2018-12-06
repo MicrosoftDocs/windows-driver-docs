@@ -10,11 +10,8 @@ keywords:
 - system-supplied UPS service WDK
 - UPS minidrivers WDK , about writing UPS minidrivers
 - uninterruptible power supply WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Writing UPS Minidrivers
@@ -47,13 +44,12 @@ For more information about UPS minidrivers, see the following topics:
 
 **Note**   Windows Vista and later versions of Windows do not support UPS units that are connected to COM ports. These Windows versions continue to support UPS units connected over [USB](https://msdn.microsoft.com/library/windows/hardware/ff538930).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

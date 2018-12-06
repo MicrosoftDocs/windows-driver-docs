@@ -6,11 +6,8 @@ keywords:
 - battery miniclass drivers WDK , routines
 - DispatchDeviceControl routine
 - IOCTLs WDK battery
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # DispatchDeviceControl Routine of a Battery Miniclass Driver
@@ -29,7 +26,7 @@ The [*DispatchDeviceControl*](https://msdn.microsoft.com/library/windows/hardwar
 
 2.  If the IOCTL is not a private IOCTL defined by the miniclass driver, call **BatteryClassIoctl**, passing the IRP and the class handle returned by [**BatteryClassInitializeDevice**](https://msdn.microsoft.com/library/windows/hardware/ff536266). For example:
 
-    ```
+    ```cpp
     Status = BatteryClassIoctl (NewBattNP->ClassHandle, Irp);
     ```
 
@@ -39,11 +36,10 @@ The [*DispatchDeviceControl*](https://msdn.microsoft.com/library/windows/hardwar
 
 4.  Pass the returned status as its own function return value.
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

@@ -11,17 +11,14 @@ keywords:
 - NDIS protocol drivers WDK , subinterface access
 - protocol drivers WDK networking , subinterface access
 - min
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # NDIS Ports
 
 
-## <a href="" id="ddk-ndis-6-0-ports-ng"></a>
+
 
 
 This section describes the NDIS 6.0 ports interface for miniport drivers and protocol drivers. NDIS ports enable miniport drivers to expose subinterfaces to overlying networking layers.
@@ -44,9 +41,9 @@ This section includes:
 
 [Creating an NDIS Interface for an NDIS Port](creating-ndis-interfaces-for-ndis-ports.md)
 
- 
+ 
 
- 
+ 
 
 
 

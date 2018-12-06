@@ -11,11 +11,8 @@ api_location:
 - compstui.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # TVOT\_PUSHBUTTON
@@ -62,7 +59,7 @@ Depends on the **Style** member of the OPTPARAM structure, as follows.
 </tbody>
 </table>
 
- 
+ 
 
 <span id="OPTPARAM_Structure_Array__pOptParam_member_of_OPTTYPE_"></span><span id="optparam_structure_array__poptparam_member_of_opttype_"></span><span id="OPTPARAM_STRUCTURE_ARRAY__POPTPARAM_MEMBER_OF_OPTTYPE_"></span>[**OPTPARAM**](https://msdn.microsoft.com/library/windows/hardware/ff559660) Structure Array (**pOptParam** member of [**OPTTYPE**](https://msdn.microsoft.com/library/windows/hardware/ff559670))  
 
@@ -83,7 +80,7 @@ Depends on the **Style** member, as follows.
 <tbody>
 <tr class="odd">
 <td><p>PUSHBUTTON_TYPE_CALLBACK</p></td>
-<td><p>Pointer to a [<strong>_CPSUICALLBACK</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564313)-typed function.</p></td>
+<td><p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564313" data-raw-source="[&lt;strong&gt;_CPSUICALLBACK&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564313)"><strong>_CPSUICALLBACK</strong></a>-typed function.</p></td>
 </tr>
 <tr class="even">
 <td><p>PUSHBUTTON_TYPE_DLGPROC</p></td>
@@ -95,12 +92,12 @@ Depends on the **Style** member, as follows.
 </tr>
 <tr class="even">
 <td><p>PUSHBUTTON_TYPE_HTSETUP</p></td>
-<td><p>Pointer to a [<strong>DEVHTADJDATA</strong>](https://msdn.microsoft.com/library/windows/hardware/ff552832) structure.</p></td>
+<td><p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552832" data-raw-source="[&lt;strong&gt;DEVHTADJDATA&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff552832)"><strong>DEVHTADJDATA</strong></a> structure.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 <span id="IconID"></span><span id="iconid"></span><span id="ICONID"></span>**IconID**  
 Identifies an icon to be associated with the push button.
@@ -126,7 +123,7 @@ Depends on the Style member, as follows.
 </tr>
 <tr class="even">
 <td><p>PUSHBUTTON_TYPE_DLGPROC</p></td>
-<td><p>Resource identifier for a DIALOG resource, or handle to a DLGTEMPLATE structure (see the Windows SDK documentation). Depends on the DPF_USE_HDLGTEMPLATE flag in the OPTPARAM structure's <strong>Flags</strong> member.</p></td>
+<td><p>Resource identifier for a DIALOG resource, or handle to a DLGTEMPLATE structure (see the Windows SDK documentation). Depends on the DPF_USE_HDLGTEMPLATE flag in the OPTPARAM structure&#39;s <strong>Flags</strong> member.</p></td>
 </tr>
 <tr class="odd">
 <td><p>PUSHBUTTON_TYPE_HTCLRADJ</p></td>
@@ -139,7 +136,7 @@ Depends on the Style member, as follows.
 </tbody>
 </table>
 
- 
+ 
 
 <table>
 <colgroup>
@@ -159,12 +156,12 @@ Depends on the Style member, as follows.
 </tr>
 <tr class="even">
 <td><p><span id="PUSHBUTTON_TYPE_CALLBACK"></span><span id="pushbutton_type_callback"></span>PUSHBUTTON_TYPE_CALLBACK</p></td>
-<td><p>CPSUI calls the application's [<strong>_CPSUICALLBACK</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564313)-typed callback function to handle button events, with the [<strong>CPSUICBPARAM</strong>](https://msdn.microsoft.com/library/windows/hardware/ff547088) structure's <strong>Reason</strong> member set to CPSUICB_REASON_PUSHBUTTON. (CPSUI ignores the callback function's return value.)</p></td>
+<td><p>CPSUI calls the application&#39;s <a href="https://msdn.microsoft.com/library/windows/hardware/ff564313" data-raw-source="[&lt;strong&gt;_CPSUICALLBACK&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564313)"><strong>_CPSUICALLBACK</strong></a>-typed callback function to handle button events, with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547088" data-raw-source="[&lt;strong&gt;CPSUICBPARAM&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff547088)"><strong>CPSUICBPARAM</strong></a> structure&#39;s <strong>Reason</strong> member set to CPSUICB_REASON_PUSHBUTTON. (CPSUI ignores the callback function&#39;s return value.)</p></td>
 </tr>
 <tr class="odd">
 <td><p><span id="PUSHBUTTON_TYPE_DLGPROC"></span><span id="pushbutton_type_dlgproc"></span>PUSHBUTTON_TYPE_DLGPROC</p></td>
-<td><p>The application's dialog box procedure handles button events. (For more information, see the <strong>Remarks</strong> section for [<strong>DLGPAGE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff547607).)</p>
-<p>When the function receives a WM_INITDIALOG message, its <em>lParam</em> argument points to a [<strong>CPSUICBPARAM</strong>](https://msdn.microsoft.com/library/windows/hardware/ff547088) structure with the <strong>Reason</strong> member set to CPSUICB_REASON_DLGPROC.</p></td>
+<td><p>The application&#39;s dialog box procedure handles button events. (For more information, see the <strong>Remarks</strong> section for <a href="https://msdn.microsoft.com/library/windows/hardware/ff547607" data-raw-source="[&lt;strong&gt;DLGPAGE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff547607)"><strong>DLGPAGE</strong></a>.)</p>
+<p>When the function receives a WM_INITDIALOG message, its <em>lParam</em> argument points to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547088" data-raw-source="[&lt;strong&gt;CPSUICBPARAM&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff547088)"><strong>CPSUICBPARAM</strong></a> structure with the <strong>Reason</strong> member set to CPSUICB_REASON_DLGPROC.</p></td>
 </tr>
 <tr class="even">
 <td><p><span id="PUSHBUTTON_TYPE_HTCLRADJ"></span><span id="pushbutton_type_htclradj"></span>PUSHBUTTON_TYPE_HTCLRADJ</p></td>
@@ -177,7 +174,7 @@ Depends on the Style member, as follows.
 </tbody>
 </table>
 
- 
+ 
 
 <span id="OPTTYPE_Structure"></span><span id="opttype_structure"></span><span id="OPTTYPE_STRUCTURE"></span>[**OPTTYPE**](https://msdn.microsoft.com/library/windows/hardware/ff559670) Structure  
 
@@ -247,7 +244,7 @@ Otherwise, **BegCtrlID** must contain the first control identifier of a sequenti
 </tbody>
 </table>
 
- 
+ 
 
 For additional information, see [Customizing CPSUI-Supported Window Controls](https://msdn.microsoft.com/library/windows/hardware/ff547296).
 
@@ -267,11 +264,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
-
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20TVOT_PUSHBUTTON%20%20RELEASE:%20%2811/20/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+ 
 
 
 

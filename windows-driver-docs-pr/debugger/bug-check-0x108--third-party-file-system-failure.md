@@ -3,17 +3,14 @@ title: Bug Check 0x108 THIRD_PARTY_FILE_SYSTEM_FAILURE
 description: The THIRD_PARTY_FILE_SYSTEM_FAILURE bug check has a value of 0x00000108. This indicates that an unrecoverable problem has occurred in a third-party file system or file system filter.
 ms.assetid: 1ed82617-b0f0-4b41-9af9-b309b6b75dfd
 keywords: ["Bug Check 0x108 THIRD_PARTY_FILE_SYSTEM_FAILURE", "THIRD_PARTY_FILE_SYSTEM_FAILURE"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - THIRD_PARTY_FILE_SYSTEM_FAILURE
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x108: THIRD\_PARTY\_FILE\_SYSTEM\_FAILURE
@@ -21,7 +18,7 @@ api_type:
 
 The THIRD\_PARTY\_FILE\_SYSTEM\_FAILURE bug check has a value of 0x00000108. This indicates that an unrecoverable problem has occurred in a third-party file system or file system filter.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## THIRD\_PARTY\_FILE\_SYSTEM\_FAILURE Parameters
 
@@ -58,7 +55,7 @@ The THIRD\_PARTY\_FILE\_SYSTEM\_FAILURE bug check has a value of 0x00000108. Thi
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -76,9 +73,9 @@ Resolution
 
 **To resolve a nonpaged pool memory depletion problem:** Add new physical memory to the computer. This will increase the quantity of nonpaged pool memory available to the kernel.
 
- 
+ 
 
- 
+ 
 
 
 

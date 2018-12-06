@@ -2,11 +2,8 @@
 title: Smart Card Plug and Play
 description: Smart Card Plug and Play
 ms.assetid: AE65A450-62A4-4774-A935-B7CB4301CCF4
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Smart Card Plug and Play
@@ -37,7 +34,7 @@ For more detailed information on the smart card discovery process for Plug and P
 
 **Note**  To determine the device ID that Windows generates for a smart card, the recommended approach is to insert the smart card in a smart card reader that is attached to a computer that is running Windows 7 or later versions of Windows. The device ID can then be found by looking at the “Hardware Ids” property of the smart card device in Device Manager.
 
- 
+ 
 
 ## <span id="Sample_INF_for_x86_and_amd64"></span><span id="sample_inf_for_x86_and_amd64"></span><span id="SAMPLE_INF_FOR_X86_AND_AMD64"></span>Sample INF for x86 and amd64
 
@@ -46,7 +43,7 @@ The following is a sample INF file for smart card installation in Windows 8 and 
 
 **Note**  To avoid problems with deployments, it is strongly advised to test your driver package on clean installations of all targeted operating systems prior to submitting the driver package to Winqual.
 
- 
+ 
 
 ``` syntax
 ;
@@ -203,11 +200,10 @@ The following are required for this type of INF file:
 -   The hardware ID that is specified by the %FabrikamCardDeviceName% string must either be the ATR historical bytes of the device or the decoded value of the device’s smart card framework identifier. For more information about this identifier, see the “Windows Smart Card Framework Card Identifier” section in Smart Card Discovery Process.
 -   The DefaultInstall section is mandatory in INF files for smart card minidriver packages.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[smartcrd\smartcrd]:%20Smart%20Card%20Plug%20and%20Play%20%20RELEASE:%20%287/20/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -1,15 +1,11 @@
 ---
 title: WdfDeviceStopIdleWithTag macro
-author: windows-driver-content
 description: The WdfDeviceStopIdleWithTag macro increments the power reference count for a specified framework device object and assigns the driver's current file name and line number to the reference. The macro also assigns a tag value to the reference.
 ms.assetid: 792A5EA8-5273-4284-B0EE-01BE1DCB9863
 keywords:
  - WdfDeviceStopIdleWithTag macro
-ms.author: windowsdriverdev
 ms.date: 08/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WdfDeviceStopIdleWithTag macro
@@ -76,7 +72,7 @@ Additional return values include:
 </tbody>
 </table>
 
- 
+ 
 
 The method might return other [NTSTATUS values](https://msdn.microsoft.com/library/windows/hardware/ff557697).
 
@@ -93,7 +89,7 @@ You can view the tag, line number, and file name values by using the [**!wdftagt
 
 Use [**!wdfkd.wdfdevice**](https://msdn.microsoft.com/library/windows/hardware/ff565703) with verbose flags on and locate the link to [**!wdftagtracker**](https://msdn.microsoft.com/library/windows/hardware/ff566126) in the output:
 
-```
+```cpp
 kd> !wdfdevice <handle> f 
 ```
 
@@ -108,7 +104,7 @@ Requirements
 <tbody>
 <tr class="odd">
 <td><p>Target platform</p></td>
-<td>[Universal](http://go.microsoft.com/fwlink/p/?linkid=531356)</td>
+<td><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" data-raw-source="[Universal](http://go.microsoft.com/fwlink/p/?linkid=531356)">Universal</a></td>
 </tr>
 <tr class="even">
 <td><p>Minimum KMDF version</p></td>
@@ -145,9 +141,9 @@ WUDFx02000.dll (UMDF)</td>
 
 [**WdfDeviceStopIdle**](https://msdn.microsoft.com/library/windows/hardware/ff546921)
 
- 
+ 
 
- 
+ 
 
 
 

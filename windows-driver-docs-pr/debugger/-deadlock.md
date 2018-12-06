@@ -3,17 +3,14 @@ title: deadlock
 description: The deadlock extension displays information about deadlocks collected by the Deadlock Detection option of Driver Verifier.
 ms.assetid: c0e6074f-8afe-4526-a30f-427aac67ab99
 keywords: ["Deadlock Detection (Driver Verifier)", "deadlock Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - deadlock
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !deadlock
@@ -21,7 +18,7 @@ api_type:
 
 The **!deadlock** extension displays information about deadlocks collected by the **Deadlock Detection** option of Driver Verifier.
 
-```
+```dbgcmd
 !deadlock 
 !deadlock 1
 ```
@@ -48,7 +45,7 @@ The **!deadlock** extension displays information about deadlocks collected by th
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -65,7 +62,7 @@ The **!deadlock 1** extension causes stack traces to be displayed. The stacks di
 
 Here is an example:
 
-```
+```dbgcmd
 0:kd> !deadlock
 
 Deadlock detected (2 resources in 2 threads):
@@ -84,7 +81,7 @@ This tells you which threads and which locks are involved. However, it is intend
 
 Use **!deadlock 1** to print out the contents of the call stacks at the time that each lock participating in the deadlock was acquired. Because these are run-time stack traces, they will be more complete if a checked build is being used. On a free build, they may be truncated after as little as one line.
 
-```
+```dbgcmd
 0:kd> !deadlock 1
 
 Deadlock detected (2 resources in 2 threads):
@@ -120,7 +117,7 @@ Thread 1 (8D903030) took locks in the following order:
 
 With this information, you have almost everything you need, except the current stack:
 
-```
+```dbgcmd
 0: kd> k
 ChildEBP RetAddr
 f78aae6c 80664c58 ntkrnlpa!DbgBreakPoint
@@ -136,7 +133,7 @@ f78aaff4 804b922b ntkrnlpa!KiRetireDpcList+0x5d
 
 From this you can see which locks were involved and where they were acquired. This should be enough information for you to debug the deadlock. If the source code is available, you can use the debugger to see exactly where the problem occurred:
 
-```
+```dbgcmd
 0: kd> .lines
 Line number information will be loaded
 
@@ -165,11 +162,10 @@ Now you know the name of the source file and the line number where the acquisiti
 
 At this point, the deadlock becomes entirely clear.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!deadlock%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

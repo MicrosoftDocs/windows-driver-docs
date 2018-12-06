@@ -11,6 +11,8 @@ api_location:
 - Devpropdef.h
 api_type:
 - HeaderDef
+ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # DEVPROP_TYPE_STRING_INDIRECT
@@ -23,10 +25,10 @@ Remarks
 
 An indirect string reference describes a string resource that contains the actual string. The indirect string reference can appear in one of the following formats:
 
-<a href="" id="--path--filename--resourceid"></a>**@**\[*path***\\**\]*FileName***,-***ResourceID*  
+<a href="" id="--path--filename--resourceid"></a>**@**\[<em>path</em>**\\**\]<em>FileName</em>**,-***ResourceID*  
 Windows extracts the string from the module that is specified by the *path* and *FileName* entries, and the resource identifier of the string is supplied by the *ResourceID* entry (excluding the required minus sign). The string resource is loaded from the module resource section that best matches one of the caller's preferred UI languages. The *path* entry is optional. If you specify the *path* entry, the module must be located in a directory that is in the system-defined search path.
 
-<a href="" id="-infname--strkey-"></a>**@***InfName***,%***strkey***%**  
+<a href="" id="-infname--strkey-"></a>**@**<em>InfName</em>**,%**<em>strkey</em>**%**  
 Windows extracts the string from the INF **Strings** section of the INF file in the %SystemRoot%\\*inf* directory whose name is supplied by the *InfName* entry. The *strkey* token identifier should match the key of a line in the **Strings** section that best matches one of the caller's preferred UI languages. If no language-specific **Strings** sections exist, Windows uses the default **Strings** section.
 
 You cannot combine DEVPROP_TYPE_STRING_INDIRECT with any of the property-data-type modifiers.
@@ -53,7 +55,7 @@ Starting with Windows Vista you can localize custom and standard string-type PnP
 
 Strings located in a PE image's STRINGTABLE resource (as typically performed by LoadString) should use the following format:
 
-"@System32\\mydll.dll,-21\[;Fallback String\]"
+"@"System32\\mydll.dll,-21\[;Fallback" String\]"
 
 "@System32\\mydll.dll,-21\[;Fallback String with %1, %2, … to %n\[;(Arg1,Arg2,…,ArgN)\]\]"
 
@@ -98,11 +100,10 @@ Requirements
 
 [**DEVPROP_TYPE_STRING**](devprop-type-string.md)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bdevinst\devinst%5D:%20DEVPROP_TYPE_STRING_INDIRECT%20%20RELEASE:%20%2810/9/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

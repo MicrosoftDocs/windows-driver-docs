@@ -2,11 +2,8 @@
 title: Hang detection and recovery
 description: After a command is issued to the IHV component, the host starts a timer.
 ms.assetid: 89133252-C08C-4ADC-A5EE-E46A91909337
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Hang detection and recovery
@@ -33,9 +30,9 @@ These are maximum upper bounds for the commands and processing that takes longer
 [Timings for diagnose call](wdi-timings-for-diagnose-call.md)
 [LE hang detection](wdi-le-hang-detection.md)
 [PLDR](wdi-pldr-and-fldr.md)
- 
+ 
 
- 
+ 
 
 
 

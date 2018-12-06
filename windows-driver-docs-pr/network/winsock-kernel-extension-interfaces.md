@@ -6,11 +6,8 @@ keywords:
 - Winsock Kernel WDK networking , extension interfaces
 - WSK WDK networking , extension interfaces
 - extension interfaces WDK Winsock Kernel
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Winsock Kernel Extension Interfaces
@@ -22,9 +19,9 @@ A WSK application can register for an extension interface that is supported by t
 
 For more information about registering an extension interface, see [Registering an Extension Interface](registering-an-extension-interface.md).
 
- 
+ 
 
- 
+ 
 
 
 

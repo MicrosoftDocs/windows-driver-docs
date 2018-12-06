@@ -9,11 +9,8 @@ api_name:
 - wscn DeviceCondition wscn Id "..."
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # DeviceCondition element
@@ -24,7 +21,7 @@ The optional **DeviceCondition** element provides details about one of the scann
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:DeviceCondition wscn:Id="..."
   Id = "xs:string">
   child elements
@@ -74,16 +71,16 @@ Attributes
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>Component</strong>](component.md)</p></td>
+<td><p><a href="component.md" data-raw-source="[&lt;strong&gt;Component&lt;/strong&gt;](component.md)"><strong>Component</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>Name Elementfor DeviceCondition and ConditionHistoryEntry</strong>](name-element-for-devicecondition-and-conditionhistoryentry.md)</p></td>
+<td><p><a href="name-element-for-devicecondition-and-conditionhistoryentry.md" data-raw-source="[&lt;strong&gt;Name Elementfor DeviceCondition and ConditionHistoryEntry&lt;/strong&gt;](name-element-for-devicecondition-and-conditionhistoryentry.md)"><strong>Name Elementfor DeviceCondition and ConditionHistoryEntry</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>Severity</strong>](severity.md)</p></td>
+<td><p><a href="severity.md" data-raw-source="[&lt;strong&gt;Severity&lt;/strong&gt;](severity.md)"><strong>Severity</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>Time</strong>](time.md)</p></td>
+<td><p><a href="time.md" data-raw-source="[&lt;strong&gt;Time&lt;/strong&gt;](time.md)"><strong>Time</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -102,7 +99,7 @@ Attributes
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ActiveConditions</strong>](activeconditions.md)</p></td>
+<td><p><a href="activeconditions.md" data-raw-source="[&lt;strong&gt;ActiveConditions&lt;/strong&gt;](activeconditions.md)"><strong>ActiveConditions</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -114,7 +111,7 @@ The WSD Scan Service specifies a unique identifier in the **Id** attribute for t
 
 The WSD Scan Service informs a client about changes to the scanner's status by sending a [**ScannerStatusConditionEvent**](scannerstatusconditionevent.md) event. A client can directly query the scanner's state by calling the [**GetScannerElementsRequest**](getscannerelementsrequest.md) operation.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ActiveConditions**](activeconditions.md)
@@ -131,11 +128,10 @@ The WSD Scan Service informs a client about changes to the scanner's status by s
 
 [**Time**](time.md)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bimage\image%5D:%20DeviceCondition%20element%20%20RELEASE:%20%2811/8/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

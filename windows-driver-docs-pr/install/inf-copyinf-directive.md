@@ -10,11 +10,8 @@ api_name:
 - INF CopyINF Directive
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # INF CopyINF Directive
@@ -22,7 +19,7 @@ ms.technology: windows-devices
 
 A **CopyINF** directive causes specified INF files to be copied to the target system. The **CopyINF** directive is supported in Windows XP and later versions of Windows.
 
-```
+```cpp
 [DDInstall]
   
 CopyINF=filename1.inf[,filename2.inf]...
@@ -63,14 +60,14 @@ For more information about how to copy INF files, see [Copying INFs](copying-inf
 Examples
 --------
 
-```
+```cpp
 [MyMfDevice.NTx86]
 CopyINF = Sound.INF
 ```
 
- 
+ 
 
- 
+ 
 
 
 

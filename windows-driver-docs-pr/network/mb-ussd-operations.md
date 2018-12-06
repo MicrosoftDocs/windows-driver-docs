@@ -2,11 +2,8 @@
 title: MB USSD Operations
 ms.assetid: 49D106BD-F938-4BF8-88EE-A4D0F0E2722A
 description: Describes the operations to send and receive messages using the Unstructured Supplementary Service Data (USSD) capabilities of an MB device
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # MB USSD Operations
@@ -62,9 +59,9 @@ For network initiated operations, the **EventType** member of the [**WWAN\_USSD\
 
 -   The event **WwanUssdEventNetworkTimeOut** is used to indicate that the session was closed due to a session timeout either by the network or locally. The driver or device is responsible for timing out an inactive USSD session after an implementation specific timeout.
 
- 
+ 
 
- 
+ 
 
 
 

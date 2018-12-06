@@ -1,23 +1,19 @@
 ---
 title: Request Handlers
-author: windows-driver-content
 description: Request Handlers
 ms.assetid: bfc543bf-18a8-4e2c-ba7a-d0a21cefb038
 keywords:
 - I/O queues WDK KMDF , creating
 - I/O queues WDK KMDF , request handlers
 - request handlers WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Request Handlers
 
 
-## <a href="" id="ddk-i-o-queue-event-callbacks-df"></a>
+
 
 
 If your driver has specified either the sequential or the parallel [dispatching method](dispatching-methods-for-i-o-requests.md) for an I/O queue, the framework calls a driver-supplied callback function each time it is ready to deliver one of the queue's requests to the driver.
@@ -45,9 +41,9 @@ Each of these callback functions receives two input arguments: a handle to the I
 
 The framework calls your driver's request handlers in an arbitrary thread context. A driver should not wait for an extended period of time while executing in an arbitrary thread context. In some cases, your driver might use kernel dispatcher objects as synchronization mechanisms. For information about when your driver can wait for dispatcher objects, and what to do when it can't, see [Introduction to Kernel Dispatcher Objects](https://msdn.microsoft.com/library/windows/hardware/ff548068).
 
- 
+ 
 
- 
+ 
 
 
 

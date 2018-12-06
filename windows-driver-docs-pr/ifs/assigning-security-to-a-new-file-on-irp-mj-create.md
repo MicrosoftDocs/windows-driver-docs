@@ -1,6 +1,5 @@
 ---
 title: Assigning Security to a New File on IRP_MJ_CREATE
-author: windows-driver-content
 description: Assigning Security to a New File on IRP_MJ_CREATE
 ms.assetid: f01a09c4-f71f-4b9e-99c8-9bc7ca5ca316
 keywords:
@@ -8,11 +7,8 @@ keywords:
 - new file security WDK file systems
 - security checks WDK file systems , IRP_MJ_CREATE
 - security descriptors WDK file systems , new files
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Assigning Security to a New File on IRP\_MJ\_CREATE
@@ -23,7 +19,7 @@ ms.technology: windows-devices
 
 The final task in create handling is assigning security to the new file. While the Windows security model supports inheritance (individual ACE entries are marked in such a way that they are inherited when new files or directories are created) this is implemented outside the file system. Thus, the bulk of the logic within the file system is dedicated to storing the new security descriptor. Here is a sample routine:
 
-```
+```cpp
 NTSTATUS FsdAssignInitialSecurity( PIRP_CONTEXT IrpContext, 
         PFCB Fcb, PFCB Directory)
 {
@@ -110,11 +106,10 @@ NTSTATUS FsdAssignInitialSecurity( PIRP_CONTEXT IrpContext,
 
 Note that the logic of constructing the initial security descriptor (understanding inheritance, for example) is not handled within the file system. This is in keeping with the simple model for handling security descriptors within the file systems layer.
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

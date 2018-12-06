@@ -2,11 +2,8 @@
 title: Container IDs for USB Devices
 description: Container IDs for USB Devices
 ms.assetid: 9e04c85d-db59-4e5d-911e-7249e14c968e
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Container IDs for USB Devices
@@ -20,9 +17,9 @@ This section discusses how Container IDs for Universal Serial Bus (USB) devices 
 
 [Best Practices for Supporting Container IDs on USB Devices](best-practices-for-supporting-container-ids-on-usb-devices.md)
 
- 
+ 
 
- 
+ 
 
 
 

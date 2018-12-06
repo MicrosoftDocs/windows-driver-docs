@@ -1,13 +1,9 @@
 ---
 title: Display brightness control
-author: windows-driver-content
 description: Allows keyboards (external or embedded on laptops), to control a laptop’s or tablet’s screen brightness through HID.
 ms.assetid: B22BA244-C5C6-4A50-AFE6-4E773194F18C
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Display brightness control
@@ -27,11 +23,11 @@ Windows 8 provides support for screen brightness increase/decrease as part of th
 | 0x006F   | Brightness Increment | Re-trigger Control (RTC) |
 | 0x0070   | Brightness Decrement | Re-trigger Control (RTC) |
 
- 
+ 
 
 **Note**  These HID usages operate only on mobile systems (battery powered) and require Windows 8.
 
- 
+ 
 
 ## Sample report descriptor
 
@@ -65,12 +61,10 @@ Tip \#1: Brightness increment/decrement HID usages only operate only on Mobile s
 
 Tip \#2: If the system is attached to an external monitor, the brightness increment/decrement will not function as legacy monitor transports do not support the ability to channel HID messages to them / from them.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bhid\hid%5D:%20Display%20brightness%20control%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

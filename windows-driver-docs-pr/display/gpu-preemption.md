@@ -2,11 +2,8 @@
 title: GPU preemption
 description: A new GPU preemption model is available starting with Windows 8.
 ms.assetid: 9382786E-2E1E-408F-A9E9-04EEEA1CC34A
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # GPU preemption
@@ -33,21 +30,21 @@ A new GPU preemption model is available starting with Windows 8. In this model 
 <td align="left">Mandatory</td>
 </tr>
 <tr class="even">
-<td align="left">[WHCK]( http://go.microsoft.com/fwlink/p/?linkid=258342) requirements and tests</td>
+<td align="left"><a href="https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit" data-raw-source="[WHCK](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit)">WHCK</a> requirements and tests</td>
 <td align="left"><p><strong>Device.Graphics…Preemption Test</strong></p>
 <p><strong>Device.Graphics…FlipOnVSyncMmIo</strong></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 If long-running packets cannot be successfully preempted, high-priority GPU work, such as work required by the Desktop Window Manager (DWM), can be delayed, resulting in glitches during window transitions and animations. Also, long-running GPU packets that cannot be preempted can cause a TDR process to repeatedly reset the GPU, and eventually a system bugcheck can occur.
 
 **Note**  
 All WDDM 1.2 display miniport drivers must support the Windows 8 preemption model. However, when in operation, WDDM 1.2 drivers can also reject the Windows 8 preemption model and retain Windows 7 behavior by the Microsoft DirectX graphics kernel subsystem scheduler.
 
- 
+ 
 
 ## <span id="GPU_preemption_device_driver_interfaces__DDIs_"></span><span id="gpu_preemption_device_driver_interfaces__ddis_"></span><span id="GPU_PREEMPTION_DEVICE_DRIVER_INTERFACES__DDIS_"></span>GPU preemption device driver interfaces (DDIs)
 
@@ -97,15 +94,14 @@ Create a robust driver that supports the Windows 8 GPU preemption model and pro
 ## <span id="Hardware_certification_requirements"></span><span id="hardware_certification_requirements"></span><span id="HARDWARE_CERTIFICATION_REQUIREMENTS"></span>Hardware certification requirements
 
 
-For info on requirements that hardware devices must meet when they implement this feature, refer to the relevant [WHCK documentation]( http://go.microsoft.com/fwlink/p/?linkid=258342) on **Device.Graphics…Preemption Test** and **Device.Graphics…FlipOnVSyncMmIo**.
+For info on requirements that hardware devices must meet when they implement this feature, refer to the relevant [WHCK documentation](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) on **Device.Graphics…Preemption Test** and **Device.Graphics…FlipOnVSyncMmIo**.
 
 See [WDDM 1.2 features](wddm-v1-2-features.md) for a review of features added with Windows 8.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20GPU%20preemption%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

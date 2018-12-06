@@ -2,11 +2,8 @@
 title: Capture and view TraceLogging data
 description: Capture and view TraceLogging data
 ms.assetid: E5C18352-B05B-42BF-B5B8-12ABA0E6131C
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Capture and view TraceLogging data
@@ -19,9 +16,9 @@ The process of verifying that the instrumentation is correct, involves these two
 -   Capture trace with Windows Performance Recorder (wpr.exe or wprui.exe).
 -   View trace with the Windows Performance Analyzer (wpa.exe).
 
-**Note**  For Windows Phone, you can also use Tracelog.exe and Xperf.exe to capture trace. See "To capture trace on Phone (using Tracelog and XPerf)" below.
+**Note**  For Windows Phone, you can also use Tracelog.exe and Xperf.exe to capture trace. See "To capture trace on Phone (using Tracelog and XPerf)" below.
 
- 
+
 
 ### <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
 
@@ -33,87 +30,89 @@ The WPR and WPA tools must be compatible with the version of the TraceLogging th
 
     You can use the following example. Save the contents to a file with the .wprp file name extension. Replace the TODO sections with the appropriate values for your provider. For example, if you registered your provider by GUID, specify the GUID in this file.
 
-    **Note**  For kernel mode providers, add NonPagedMemory="true" to the EventProvider Id element, see the comment in the following XML example.
+    **Note**  For kernel mode providers, add NonPagedMemory="true" to the EventProvider Id element, see the comment in the following XML example.
 
-     
 
-    Sample WPRP file:
 
-    ```
-    <?xml version="1.0" encoding="utf-8"?>
-    <!-- TODO: 
-    1. Find and replace "WorkshopTraceLoggingProvider" with your component name.
-    2. See TODO below to update GUID for your event provider
-    -->
-    <WindowsPerformanceRecorder Version="1.0" Author="Microsoft Corporation" 
-        Copyright="Microsoft Corporation" Company="Microsoft Corporation">
-      <Profiles>
-        <EventCollector Id="EventCollector_WorkshopTraceLoggingProvider" 
-          Name="WorkshopTraceLoggingProviderCollector">
-          <BufferSize Value="64" />
-          <Buffers Value="4" />
-        </EventCollector>
-       
-    <!-- TODO: 
-     1. Update Name attribute in EventProvider xml element with your provider GUID, 
-        or if you specify an EventSource C# provider or call TraceLoggingRegister(...) 
-        without a GUID, use star(*) before your provider name, 
-        eg: Name="*MyEventSourceProvider" which will enable your provider appropriately.
-     2. This sample lists more than 1 EventProvider xml element and references them again 
-        in a Profile with EventProviderId xml element. For your component wprp, enable 
-        the required number of providers and fix the Profile xml element appropriately
-    --> 
-        <EventProvider Id="EventProvider_WorkshopTraceLoggingProvider" 
-          Name="f9bc6c5d-4b98-43b5-90a1-1d0c8f45bf5a" />
-    <!-- For Kernel Mode providers, add NonPagedMemory="true" attribute to the 
-      EventProvider Id element:
-      
-      Example:
-      <EventProvider Id="EventProvider_UMDFReflector" 
-        Name="263dd596-513b-4fd9-969c-022b691bb130" NonPagedMemory="true"/> 
 
-    -->
+Sample WPRP file:
 
-        <Profile Id="WorkshopTraceLoggingProvider.Verbose.File" 
-          Name="WorkshopTraceLoggingProvider" Description="WorkshopTraceLoggingProvider" 
-          LoggingMode="File" DetailLevel="Verbose">
-          <Collectors>
-            <EventCollectorId Value="EventCollector_WorkshopTraceLoggingProvider">
-              <EventProviders>
-    <!-- TODO:
-     1. Fix your EventProviderId with Value same as the Id attribute on EventProvider 
-        xml element above
-    -->
-                <EventProviderId Value="EventProvider_WorkshopTraceLoggingProvider" />
-              </EventProviders>
-            </EventCollectorId>
-          </Collectors>
-        </Profile>
-        
-        <Profile Id="WorkshopTraceLoggingProvider.Light.File" 
-          Name="WorkshopTraceLoggingProvider" 
-          Description="WorkshopTraceLoggingProvider" 
-          Base="WorkshopTraceLoggingProvider.Verbose.File" 
-          LoggingMode="File" 
-          DetailLevel="Light" />
-        
-        <Profile Id="WorkshopTraceLoggingProvider.Verbose.Memory" 
-          Name="WorkshopTraceLoggingProvider" 
-          Description="WorkshopTraceLoggingProvider" 
-          Base="WorkshopTraceLoggingProvider.Verbose.File" 
-          LoggingMode="Memory" 
-          DetailLevel="Verbose" />
-        
-        <Profile Id="WorkshopTraceLoggingProvider.Light.Memory" 
-          Name="WorkshopTraceLoggingProvider" 
-          Description="WorkshopTraceLoggingProvider" 
-          Base="WorkshopTraceLoggingProvider.Verbose.File" 
-          LoggingMode="Memory" 
-          DetailLevel="Light" />
-        
-      </Profiles>
-    </WindowsPerformanceRecorder>
-    ```
+```
+<?xml version="1.0" encoding="utf-8"?>
+<!-- TODO: 
+1. Find and replace "WorkshopTraceLoggingProvider" with your component name.
+2. See TODO below to update GUID for your event provider
+-->
+<WindowsPerformanceRecorder Version="1.0" Author="Microsoft Corporation" 
+    Copyright="Microsoft Corporation" Company="Microsoft Corporation">
+  <Profiles>
+    <EventCollector Id="EventCollector_WorkshopTraceLoggingProvider" 
+      Name="WorkshopTraceLoggingProviderCollector">
+      <BufferSize Value="64" />
+      <Buffers Value="4" />
+    </EventCollector>
+
+<!-- TODO: 
+ 1. Update Name attribute in EventProvider xml element with your provider GUID, 
+    or if you specify an EventSource C# provider or call TraceLoggingRegister(...) 
+    without a GUID, use star(*) before your provider name, 
+    eg: Name="*MyEventSourceProvider" which will enable your provider appropriately.
+ 2. This sample lists more than 1 EventProvider xml element and references them again 
+    in a Profile with EventProviderId xml element. For your component wprp, enable 
+    the required number of providers and fix the Profile xml element appropriately
+--> 
+    <EventProvider Id="EventProvider_WorkshopTraceLoggingProvider" 
+      Name="f9bc6c5d-4b98-43b5-90a1-1d0c8f45bf5a" />
+<!-- For Kernel Mode providers, add NonPagedMemory="true" attribute to the 
+  EventProvider Id element:
+
+  Example:
+  <EventProvider Id="EventProvider_UMDFReflector" 
+    Name="263dd596-513b-4fd9-969c-022b691bb130" NonPagedMemory="true"/> 
+
+-->
+
+    <Profile Id="WorkshopTraceLoggingProvider.Verbose.File" 
+      Name="WorkshopTraceLoggingProvider" Description="WorkshopTraceLoggingProvider" 
+      LoggingMode="File" DetailLevel="Verbose">
+      <Collectors>
+        <EventCollectorId Value="EventCollector_WorkshopTraceLoggingProvider">
+          <EventProviders>
+<!-- TODO:
+ 1. Fix your EventProviderId with Value same as the Id attribute on EventProvider 
+    xml element above
+-->
+            <EventProviderId Value="EventProvider_WorkshopTraceLoggingProvider" />
+          </EventProviders>
+        </EventCollectorId>
+      </Collectors>
+    </Profile>
+
+    <Profile Id="WorkshopTraceLoggingProvider.Light.File" 
+      Name="WorkshopTraceLoggingProvider" 
+      Description="WorkshopTraceLoggingProvider" 
+      Base="WorkshopTraceLoggingProvider.Verbose.File" 
+      LoggingMode="File" 
+      DetailLevel="Light" />
+
+    <Profile Id="WorkshopTraceLoggingProvider.Verbose.Memory" 
+      Name="WorkshopTraceLoggingProvider" 
+      Description="WorkshopTraceLoggingProvider" 
+      Base="WorkshopTraceLoggingProvider.Verbose.File" 
+      LoggingMode="Memory" 
+      DetailLevel="Verbose" />
+
+    <Profile Id="WorkshopTraceLoggingProvider.Light.Memory" 
+      Name="WorkshopTraceLoggingProvider" 
+      Description="WorkshopTraceLoggingProvider" 
+      Base="WorkshopTraceLoggingProvider.Verbose.File" 
+      LoggingMode="Memory" 
+      DetailLevel="Light" />
+
+  </Profiles>
+</WindowsPerformanceRecorder>
+```
+
 
 2.  For kernel mode providers, you need to add the NonPagedMemory="true" attribute to the EventProvider Id element.
 
@@ -196,11 +195,10 @@ Currently, WPA is the only viewer you can use to view the etl files that TraceLo
 
     You can click the column header to sort by column name, which might make it easier to find your provider. When find your provider, right click on the name and select **Filter to Selection**.
 
- 
 
- 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20Capture%20and%20view%20TraceLogging%20data%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
 
 
 

@@ -4,11 +4,8 @@ description: All Windows Display Driver Model (WDDM) 1.2 and later display minip
 ms.assetid: A95DCFEA-BC1B-4A13-9850-13814725D53E
 keywords:
 - Plug and Play in display drivers WDK display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Plug and Play (PnP) in WDDM 1.2 and later
@@ -35,7 +32,7 @@ All Windows Display Driver Model (WDDM) 1.2 and later display miniport drivers m
 <td align="left">Mandatory</td>
 </tr>
 <tr class="even">
-<td align="left">[WHCK]( http://go.microsoft.com/fwlink/p/?linkid=258342) requirements and tests</td>
+<td align="left"><a href="https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit" data-raw-source="[WHCK](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit)">WHCK</a> requirements and tests</td>
 <td align="left"><p><strong>Device.Graphics.WDDM12.Display.PnpStopStartSupport</strong></p></td>
 </tr>
 </tbody>
@@ -100,7 +97,7 @@ These are the return codes that the driver should return after a PnP start proce
 
 A Plug and Play (PnP) stop process on the display device typically occurs when a driver is being upgraded to a new version. In this case the operating system calls the driver's [*DxgkDdiStopDeviceAndReleasePostDisplayOwnership*](https://msdn.microsoft.com/library/windows/hardware/hh451415) function, which requires the driver to provide accurate frame buffer information.
 
-In the [*DxgkDdiStopDeviceAndReleasePostDisplayOwnership*](https://msdn.microsoft.com/library/windows/hardware/hh451415) call the driver must ensure that the source visibility for the active VidPn targets is true ([**DXGKARG\_SETVIDPNSOURCEVISIBILITY**](https://msdn.microsoft.com/library/windows/hardware/ff559486).**Visible** = **TRUE**). In addition, starting in WDDM 1.2 the driver needs to ensure that the surface that the pixel pipeline is programmed to scan out from is filled with black pixels. The driver should complete filling the surface with black pixels before before source visibility is set to true.
+In the [*DxgkDdiStopDeviceAndReleasePostDisplayOwnership*](https://msdn.microsoft.com/library/windows/hardware/hh451415) call the driver must ensure that the source visibility for the active VidPn targets is true ([**DXGKARG\_SETVIDPNSOURCEVISIBILITY**](https://msdn.microsoft.com/library/windows/hardware/ff559486).**Visible** = **TRUE**). In addition, starting in WDDM 1.2 the driver needs to ensure that the surface that the pixel pipeline is programmed to scan out from is filled with black pixels. The driver should complete filling the surface with black pixels before source visibility is set to true.
 
 Be sure to also implement [*DxgkDdiStopDevice*](https://msdn.microsoft.com/library/windows/hardware/ff560781) in your driver. In some cases the operating system might call *DxgkDdiStopDevice* instead of [*DxgkDdiStopDeviceAndReleasePostDisplayOwnership*](https://msdn.microsoft.com/library/windows/hardware/hh451415), or after a call to *DxgkDdiStopDeviceAndReleasePostDisplayOwnership* fails.
 
@@ -120,17 +117,17 @@ These are the return codes that the driver should return after a PnP stop proces
 <tbody>
 <tr class="odd">
 <td align="left"><p><span id="Success__and_driver_returns_mode_information"></span><span id="success__and_driver_returns_mode_information"></span><span id="SUCCESS__AND_DRIVER_RETURNS_MODE_INFORMATION"></span>Success, and driver returns mode information</p></td>
-<td align="left"><p>Before the driver is stopped it must set up a frame buffer, using the current resolution, that the basic display driver can use, and the driver must return this information when the operating system calls the [<em>DxgkDdiStopDeviceAndReleasePostDisplayOwnership</em>](https://msdn.microsoft.com/library/windows/hardware/hh451415) function. The saved mode information doesn't have to be compatible with BIOS, and the basic display driver won't offer a BIOS mode until the system is rebooted.</p>
-<p>The operating system guarantees that it won't call [<em>DxgkDdiStopDevice</em>](https://msdn.microsoft.com/library/windows/hardware/ff560781) if [<em>DxgkDdiStopDeviceAndReleasePostDisplayOwnership</em>](https://msdn.microsoft.com/library/windows/hardware/hh451415) returns <strong>STATUS_SUCCESS</strong>.</p></td>
+<td align="left"><p>Before the driver is stopped it must set up a frame buffer, using the current resolution, that the basic display driver can use, and the driver must return this information when the operating system calls the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451415" data-raw-source="[&lt;em&gt;DxgkDdiStopDeviceAndReleasePostDisplayOwnership&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/hh451415)"><em>DxgkDdiStopDeviceAndReleasePostDisplayOwnership</em></a> function. The saved mode information doesn&#39;t have to be compatible with BIOS, and the basic display driver won&#39;t offer a BIOS mode until the system is rebooted.</p>
+<p>The operating system guarantees that it won&#39;t call <a href="https://msdn.microsoft.com/library/windows/hardware/ff560781" data-raw-source="[&lt;em&gt;DxgkDdiStopDevice&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff560781)"><em>DxgkDdiStopDevice</em></a> if <a href="https://msdn.microsoft.com/library/windows/hardware/hh451415" data-raw-source="[&lt;em&gt;DxgkDdiStopDeviceAndReleasePostDisplayOwnership&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/hh451415)"><em>DxgkDdiStopDeviceAndReleasePostDisplayOwnership</em></a> returns <strong>STATUS_SUCCESS</strong>.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><span id="Success__and_driver_sets_the_Width_and_Height_members_of_the_DXGK_DISPLAY_INFORMATION_structure_to_zero"></span><span id="success__and_driver_sets_the_width_and_height_members_of_the_dxgk_display_information_structure_to_zero"></span><span id="SUCCESS__AND_DRIVER_SETS_THE_WIDTH_AND_HEIGHT_MEMBERS_OF_THE_DXGK_DISPLAY_INFORMATION_STRUCTURE_TO_ZERO"></span>Success, and driver sets the <strong>Width</strong> and <strong>Height</strong> members of the [<strong>DXGK_DISPLAY_INFORMATION</strong>](https://msdn.microsoft.com/library/windows/hardware/hh464017) structure to zero</p></td>
-<td align="left"><p>This scenario is possible only if the system has two graphics cards, no monitors are connected to the current power-on self-test (POST) device, and the operating system calls the [<em>DxgkDdiStopDeviceAndReleasePostDisplayOwnership</em>](https://msdn.microsoft.com/library/windows/hardware/hh451415) function to stop the POST device.</p>
+<td align="left"><p><span id="Success__and_driver_sets_the_Width_and_Height_members_of_the_DXGK_DISPLAY_INFORMATION_structure_to_zero"></span><span id="success__and_driver_sets_the_width_and_height_members_of_the_dxgk_display_information_structure_to_zero"></span><span id="SUCCESS__AND_DRIVER_SETS_THE_WIDTH_AND_HEIGHT_MEMBERS_OF_THE_DXGK_DISPLAY_INFORMATION_STRUCTURE_TO_ZERO"></span>Success, and driver sets the <strong>Width</strong> and <strong>Height</strong> members of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh464017" data-raw-source="[&lt;strong&gt;DXGK_DISPLAY_INFORMATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh464017)"><strong>DXGK_DISPLAY_INFORMATION</strong></a> structure to zero</p></td>
+<td align="left"><p>This scenario is possible only if the system has two graphics cards, no monitors are connected to the current power-on self-test (POST) device, and the operating system calls the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451415" data-raw-source="[&lt;em&gt;DxgkDdiStopDeviceAndReleasePostDisplayOwnership&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/hh451415)"><em>DxgkDdiStopDeviceAndReleasePostDisplayOwnership</em></a> function to stop the POST device.</p>
 <p>In this case the current display continues to run on the second graphics adapter, and the basic display driver runs in headless mode on the adapter that supports the POST device.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><span id="Failure"></span><span id="failure"></span><span id="FAILURE"></span>Failure</p></td>
-<td align="left"><p>The operating system calls the Windows 7-style PnP stop driver interface through the [<em>DxgkDdiStopDevice</em>](https://msdn.microsoft.com/library/windows/hardware/ff560781) function.</p>
+<td align="left"><p>The operating system calls the Windows 7-style PnP stop driver interface through the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560781" data-raw-source="[&lt;em&gt;DxgkDdiStopDevice&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff560781)"><em>DxgkDdiStopDevice</em></a> function.</p>
 <p>For a BIOS-based system, the driver must set the display into a BIOS-compatible mode.</p>
 <p>For a UEFI-based system, the basic display driver runs in headless mode on the graphics adapter.</p></td>
 </tr>
@@ -144,7 +141,7 @@ For further requirements on PnP and other state transitions, see [Providing seam
 ## <span id="Hardware_certification_requirements"></span><span id="hardware_certification_requirements"></span><span id="HARDWARE_CERTIFICATION_REQUIREMENTS"></span>Hardware certification requirements
 
 
-For info on requirements that hardware devices must meet when they implement this feature, refer to the relevant [WHCK documentation]( http://go.microsoft.com/fwlink/p/?linkid=258342) on **Device.Graphics.WDDM12.Display.PnpStopStartSupport**.
+For info on requirements that hardware devices must meet when they implement this feature, refer to the relevant [WHCK documentation](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) on **Device.Graphics.WDDM12.Display.PnpStopStartSupport**.
 
 See [WDDM 1.2 features](wddm-v1-2-features.md) for a review of features added with Windows 8.
 
@@ -152,7 +149,6 @@ See [WDDM 1.2 features](wddm-v1-2-features.md) for a review of features added wi
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Plug%20and%20Play%20%28PnP%29%20in%20WDDM%201.2%20and%20later%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

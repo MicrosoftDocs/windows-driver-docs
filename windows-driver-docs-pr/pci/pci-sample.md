@@ -1,13 +1,9 @@
 ---
 title: PCI Sample
-author: windows-driver-content
 description: PCI Sample
 ms.assetid: E8C4C98C-502F-4CE6-8443-DDFEA1CD1743
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # PCI Sample
@@ -32,11 +28,10 @@ Windows XP
 
 Windows 2000
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

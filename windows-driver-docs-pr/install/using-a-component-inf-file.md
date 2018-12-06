@@ -1,10 +1,8 @@
 ---
 title: Using a Component INF File
 description: Describes how to use software components to include user-mode software that is specific to a device.
-ms.author: windowsdriverdev
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Using a Component INF File
@@ -13,7 +11,7 @@ If you want to include user-mode software for use with a device on Windows 10, y
     
 |Method|Scenario|
 |---|---|
-|[Hardware support apps (HSA)](../devapps/creating-a-custom-capability-to-pair-driver-with-hsa.md) | Device add-on software packaged as a UWP app that is delivered and serviced from the Microsoft Store.  Recommended approach. |
+|[Hardware support apps (HSA)](../devapps/hardware-support-app--hsa--steps-for-driver-developers.md) | Device add-on software packaged as a UWP app that is delivered and serviced from the Microsoft Store.  Recommended approach. |
 |Software components|Device add-on software is an MSI or EXE binary, a Win32 service, or software installed using AddReg and CopyFiles.  Referenced binary only runs on desktop editions (Home, Pro, and Enterprise).  The referenced binary will not run on Windows 10S.|
 
 A software component is a separate, standalone driver package that can install one or more software modules.  The installed software enhances the value of the device, but is not necessary for basic device functionality and does not require an associated function driver service.  
@@ -35,6 +33,9 @@ If your software component INF specifies the [**AddSoftware** directive](inf-add
 
 You can specify the [**AddSoftware** directive](inf-addsoftware-directive.md) one or more times.
 
+>[!NOTE]
+>When using Type 2 of the AddSoftware directive, it is not required to utilize a Component INF or an Extension INF. The directive can be called from any INF successfully.  For an AddSoftware directive of Type 1, a Component INF that is called from an Extension INF is needed.
+
 Additionally, any INF (component or not) matching on a software component device:
 
 * Can specify Win32 user services using the [AddService directive](inf-addservice-directive.md).
@@ -43,6 +44,30 @@ Additionally, any INF (component or not) matching on a software component device
 * Can be uninstalled by the user independently from the parent device.
 
 You can find an example of a component INF in the [Driver package installation toolkit for universal drivers](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU).
+
+**Note**: In order for a software-enumerated component device to function, its parent must be started. If there is no driver available for the parent device, driver developers can create their own and optionally leverage the pass-through driver "umpass.sys". This driver is included in Windows and, effectively, does nothing other than start the device. In order to use umpass.sys, developers should use the Include/Needs INF directives in the [DDInstall section](inf-ddinstall-section.md) for each possible [DDInstall.\*] section to the corresponding [UmPass.\*] sections as shown below, regardless of whether the INF specifies any directives for that section or not:
+
+```cpp
+[DDInstall]
+Include=umpass.inf
+Needs=UmPass
+; also include any existing DDInstall directives
+
+[DDInstall.HW]
+Include=umpass.inf
+Needs=UmPass.HW
+; also include any existing DDInstall.HW directives
+
+[DDInstall.Interfaces]
+Include=umpass.inf
+Needs=UmPass.Interfaces
+; also include any existing DDInstall.Interfaces directives
+
+[DDInstall.Services]
+Include=umpass.inf
+Needs=UmPass.Services
+; also include any existing any DDInstall.Services directives
+```
 
 ## Accessing a device from a software component
 
@@ -68,7 +93,7 @@ The following example shows how you might use a software component to install a 
 
 ### Driver package INF file
 
-```
+```cpp
 [Version]
 Signature   = "$WINDOWS NT$"
 Class       = Extension
@@ -100,7 +125,7 @@ ContosoGrfx.DeviceDesc = "Contoso Graphics Card Extension"
 
 ### Software component INF file
 
-```
+```cpp
 [Version]
 Signature   = "$WINDOWS NT$"
 Class       = SoftwareComponent

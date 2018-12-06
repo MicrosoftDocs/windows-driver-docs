@@ -3,17 +3,14 @@ title: Remote Server Syntax
 description: To start the server side of the Remote tool, use the following syntax at the command line.
 ms.assetid: fecc9f43-6946-4d99-840b-a85c75ac397c
 keywords: ["Remote Server Syntax Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - Remote Server Syntax
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Remote Server Syntax
@@ -21,7 +18,7 @@ api_type:
 
 To start the server side of the Remote tool, use the following syntax at the command line.
 
-```
+```console
 remote /s Command SessionName [/f Color] [/b] [/u User [/u User...]] [/ud User [/ud User...]] [/v | /-v]
 ```
 
@@ -67,7 +64,7 @@ Makes a remote debugger session invisible. For more information, see [Visible Se
 
 The *Command* and *SessionName* parameters must appear in the order shown on the syntax line.
 
-To end a remote session, type **@k**. For more information, see [Remote Session Commands](remote-session-commands.md).
+To end a remote session, type <strong>@k</strong>. For more information, see [Remote Session Commands](remote-session-commands.md).
 
 The Remote tool will not create a session that the current user does not have permission to join.
 
@@ -75,18 +72,17 @@ When starting more than one remote session on a single computer, open a new comm
 
 ### <span id="sample_usage"></span><span id="SAMPLE_USAGE"></span>Sample Usage
 
-```
+```console
 remote /s "i386kd -v" TestSession
 remote /s "cmd" "My Remote Session" /f white /b black /u Server01\Administrators
 remote /s "ntsd -d -g -x" DebugIt /-v
 remote /q Server01
 ```
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Remote%20Server%20Syntax%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

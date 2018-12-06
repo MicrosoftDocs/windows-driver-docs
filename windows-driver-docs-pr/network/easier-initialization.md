@@ -5,17 +5,14 @@ ms.assetid: 34f939fd-2bcc-482b-b877-42cc57bdf59b
 keywords:
 - NDIS WDK , initializing drivers
 - initializing drivers WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Easier Initialization
 
 
-## <a href="" id="ddk-easier-initialization-ng"></a>
+
 
 
 All NDIS 6.0 and later drivers have updated driver registration interfaces. These NDIS interfaces provide simplified driver registration and the ability to register optional services separately from required services.
@@ -44,9 +41,9 @@ For more information about driver initialization, see the initialization topics 
 
 [Writing NDIS Intermediate Drivers](writing-ndis-intermediate-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

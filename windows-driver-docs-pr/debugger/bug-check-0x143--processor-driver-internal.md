@@ -3,17 +3,14 @@ title: Bug Check 0x143 PROCESSOR_DRIVER_INTERNAL
 description: The PROCESSOR_DRIVER_INTERNAL bug check has a value of 0x00000143. This indicates that the Processor Power Management (PPM) driver encountered a fatal error.
 ms.assetid: B61A1DF1-4454-4418-866F-FD9EC96F6906
 keywords: ["Bug Check 0x143 PROCESSOR_DRIVER_INTERNAL", "PROCESSOR_DRIVER_INTERNAL"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - PROCESSOR_DRIVER_INTERNAL
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x143: PROCESSOR\_DRIVER\_INTERNAL
@@ -21,7 +18,7 @@ api_type:
 
 The PROCESSOR\_DRIVER\_INTERNAL bug check has a value of 0x00000143. This indicates that the Processor Power Management (PPM) driver encountered a fatal error.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## PROCESSOR\_DRIVER\_INTERNAL Parameters
 
@@ -33,7 +30,7 @@ The PROCESSOR\_DRIVER\_INTERNAL bug check has a value of 0x00000143. This indica
 | 3         | Pointer to notification message                                          |
 | 4         | Pointer to processor device context (FDO\_DATA) issuing the notification |
 
- 
+ 
 
 <table>
 <colgroup>
@@ -75,16 +72,16 @@ Parameter 4 - Pointer to processor device context (FDO_DATA) corresponding to th
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
 
 The processor driver detected an irreconcilable condition which prompted it to bugcheck. This likely happens during the processor idle and perf-state change execution, which may involve other entities such has kernel, HAL and the Power Engine Plugin (PEP). Information from bugcheck will help identify which of the assumptions made by the processor driver in dealing with other entities was violated. The root cause may lie in other entities and a dump file may reveal more information to ascertain the reason for the bugcheck.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,7 @@
 title: DEBUG\_FILTER\_XXX
 description: DEBUG\_FILTER\_XXX
 ms.assetid: 1f8f738b-7b2b-419a-949e-b71f937de02d
-ms.author: windowsdriverdev
 ms.date: 12/07/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: ["DEBUG_FILTER_XXX Windows Debugging"]
 topic_type:
 - apiref
@@ -16,6 +12,7 @@ api_location:
 - DbgEng.h
 api_type:
 - HeaderDef
+ms.localizationpriority: medium
 ---
 
 # DEBUG\_FILTER\_XXX
@@ -82,7 +79,7 @@ The following constants are used to specify specific event filters.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="break_status"></span><span id="BREAK_STATUS"></span>Break Status
 
@@ -119,7 +116,7 @@ The following constants are used to specify the break status of an event filter.
 </tbody>
 </table>
 
- 
+ 
 
 Additionally, for an arbitrary exception filter, setting the break status to DEBUG\_FILTER\_REMOVE, removes the event filter.
 
@@ -141,7 +138,7 @@ The following constants are used to specify the handling status of an exception 
 <tbody>
 <tr class="odd">
 <td align="left"><p>DEBUG_FILTER_GO_HANDLED</p></td>
-<td align="left"><p>The [<em>exception</em>](https://msdn.microsoft.com/library/windows/hardware/ff556279#wdkgloss-exception) has been handled.</p></td>
+<td align="left"><p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff556279#wdkgloss-exception" data-raw-source="[&lt;em&gt;exception&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556279#wdkgloss-exception)"><em>exception</em></a> has been handled.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>DEBUG_FILTER_GO_NOT_HANDLED</p></td>
@@ -150,7 +147,7 @@ The following constants are used to specify the handling status of an exception 
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -168,11 +165,10 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20DEBUG_FILTER_XXX%20%20RELEASE:%20%2811/30/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -1,13 +1,9 @@
 ---
 title: EFI_USBFN_IO_PROTOCOL.StartController
-author: windows-driver-content
 description: EFI_USBFN_IO_PROTOCOL.StartController
 ms.assetid: 431406c3-6b96-4815-a8a0-01100e8a5a5f
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # EFI\_USBFN\_IO\_PROTOCOL.StartController
@@ -18,7 +14,7 @@ The **StartController** function supplies power to the USB controller if needed 
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef
 EFI_STATUS
 (EFIAPI * EFI_USBFN_IO_START_CONTROLLER) (
@@ -62,7 +58,7 @@ A pointer to the EFI\_USBFN\_IO\_PROTOCOL instance.
 </tbody>
 </table>
 
- 
+ 
 
 ## Remarks
 
@@ -74,11 +70,10 @@ This function is available starting in revision 0x00010001 of the **EFI\_USBFN\_
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

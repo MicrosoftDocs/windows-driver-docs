@@ -2,11 +2,8 @@
 title: Packet Data Service Handoffs
 description: Packet Data Service Handoffs
 ms.assetid: 33cb68ac-42db-4bb0-8855-a8575e6e6331
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Packet Data Service Handoffs
@@ -38,9 +35,9 @@ To hand off packet data service, use the following procedure:
 
 8.  The miniport driver sends [**NDIS\_STATUS\_WWAN\_PACKET\_SERVICE**](https://msdn.microsoft.com/library/windows/hardware/ff567850) to the MB Service.
 
- 
+ 
 
- 
+ 
 
 
 

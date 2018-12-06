@@ -1,12 +1,8 @@
 ---
 title: Microsoft extensions to USB Video Class 1.5 specification
-author: windows-driver-content
 description: Describes Microsoft extensions to the USB Video Class 1.5 Specification that enables new controls as well as the capability to carry well-defined frame-metadata in a standard format.
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 01/30/2018
+ms.localizationpriority: medium
 ---
 
 # Microsoft extensions to USB Video Class 1.5 specification
@@ -53,7 +49,7 @@ When this entry is set to Enabled (0x1), the capture pipeline will leverage Meth
 
 An example for the custom INF section would be as follows:
 
-```
+```INF
 [USBVideo.NT.Interfaces]
 AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,USBVideo.Interface
 AddInterface=%KSCATEGORY_RENDER%,GLOBAL,USBVideo.Interface
@@ -75,7 +71,7 @@ HKR,,EnableDependentStillPinCapture,0x00010001,0x00000001
 
 Microsoft’s extension to the **USB Video Class specification** for enabling new controls is done through an extension unit identified by GUID MS_CAMERA_CONTROL_XU (referred to as Microsoft-XU).
 
-```
+```cpp
 // {0F3F95DC-2632-4C4E-92C9-A04782F43BC8}
 DEFINE_GUID(MS_CAMERA_CONTROL_XU,
     0xf3f95dc, 0x2632, 0x4c4e, 0x92, 0xc9, 0xa0, 0x47, 0x82, 0xf4, 0x3b, 0xc8);
@@ -247,7 +243,7 @@ The Microsoft standard-format metadata is one or more instances of the following
 
 ![Standard format metadata](images/extension-standard-format-metadata.png)
 
-```
+```cpp
 typedef struct tagKSCAMERA_METADATA_ITEMHEADER {
     ULONG MetadataId;
     ULONG Size; // Size of this header + metadata payload following
@@ -256,7 +252,7 @@ typedef struct tagKSCAMERA_METADATA_ITEMHEADER {
 
 The MetadataId field is filled by an identifier from the following enum definition which contains well-defined identifiers as well as custom identifiers (identifiers >= MetadataId_Custom_Start).
 
-```
+```cpp
 typedef enum {
     MetadataId_Standard_Start = 1,
     MetadataId_PhotoConfirmation = MetadataId_Standard_Start,
@@ -348,7 +344,7 @@ The firmware can choose whether or not to produce metadata corresponding to an i
 
 The metadata format for this identifier is defined by the following structure:
 
-```
+```cpp
 typedef struct tagKSCAMERA_METADATA_CAPTURESTATS {
     KSCAMERA_METADATA_ITEMHEADER Header;
     ULONG Flags;
@@ -370,7 +366,7 @@ typedef struct tagKSCAMERA_METADATA_CAPTURESTATS {
 
 The **Flags** field indicates which of the later fields in the structure are filled and have valid data. The Flags field shall not vary from frame to frame. Currently, the following flags are defined:
 
-```
+```cpp
 #define KSCAMERA_METADATA_CAPTURESTATS_FLAG_EXPOSURETIME            0x00000001
 #define KSCAMERA_METADATA_CAPTURESTATS_FLAG_EXPOSURECOMPENSATION    0x00000002
 #define KSCAMERA_METADATA_CAPTURESTATS_FLAG_ISOSPEED                0x00000004
@@ -410,17 +406,17 @@ The **SensorFramerate** field contains the measured sensor readout rate in hertz
 
 ###### 2.2.3.4.2 MetadataId_CameraExtrinsics
 
-The metadata format for this identifier involves the standard KSCAMERA_METADATA_ITEMHEADER followed by a byte-array payload. The payload should align to a [MFCameraExtrinsics](https://msdn.microsoft.com/en-us/library/windows/desktop/mt740392) structure followed by zero or more [MFCameraExtrinsic_CalibratedTransform](https://msdn.microsoft.com/en-us/library/windows/desktop/mt740393) structures. The payload must be 8-byte aligned and all unused bytes shall occur at the end of the payload and be set to 0.
+The metadata format for this identifier involves the standard KSCAMERA_METADATA_ITEMHEADER followed by a byte-array payload. The payload should align to a [MFCameraExtrinsics](https://msdn.microsoft.com/library/windows/desktop/mt740392) structure followed by zero or more [MFCameraExtrinsic_CalibratedTransform](https://msdn.microsoft.com/library/windows/desktop/mt740393) structures. The payload must be 8-byte aligned and all unused bytes shall occur at the end of the payload and be set to 0.
 
 ###### 2.2.3.4.3 MetadataId_CameraIntrinsics
 
-The metadata format for this identifier involves the standard KSCAMERA_METADATA_ITEMHEADER followed by a byte-array payload. The payload should align to a [MFPinholeCameraIntrinsics](https://msdn.microsoft.com/en-us/library/windows/desktop/mt740396) structure. The payload must be 8-byte aligned and all unused bytes shall occur at the end of the payload and be set to 0.
+The metadata format for this identifier involves the standard KSCAMERA_METADATA_ITEMHEADER followed by a byte-array payload. The payload should align to a [MFPinholeCameraIntrinsics](https://msdn.microsoft.com/library/windows/desktop/mt740396) structure. The payload must be 8-byte aligned and all unused bytes shall occur at the end of the payload and be set to 0.
 
 ###### 2.2.3.4.4 MetadataId_FrameIllumination
 
 The metadata format for this identifier is defined by the following structure:
 
-```
+```cpp
 typedef struct tagKSCAMERA_METADATA_FRAMEILLUMINATION {
     KSCAMERA_METADATA_ITEMHEADER Header;
     ULONG Flags;
@@ -429,15 +425,13 @@ typedef struct tagKSCAMERA_METADATA_FRAMEILLUMINATION {
 ```
 The **Flags** field indicates information about the captured frame. Currently, the following flags are defined:
 
-```
+```cpp
 #define KSCAMERA_METADATA_FRAMEILLUMINATION_FLAG_ON 0x00000001
 ```
 
 If a frame was captured when illumination was on, the flag KSCAMERA_METADATA_FRAMEILLUMINATION_FLAG_ON shall be set. Otherwise, this flag shall not be set.
 
-The **Reserved** field is reserved for future and shall be set to 0.
+The **Reserved** field is reserved for future use and shall be set to 0.
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Slicer%20settings%20%20RELEASE:%20%289/2/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 

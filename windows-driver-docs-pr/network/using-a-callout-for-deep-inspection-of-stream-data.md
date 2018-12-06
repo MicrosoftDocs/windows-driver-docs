@@ -6,11 +6,8 @@ keywords:
 - classify callouts WDK Windows Filtering Platform , deep inspection
 - deep inspection WDK Windows Filtering Platform
 - stream data deep inspection WDK Windows Filtering Platform
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using a Callout for Deep Inspection of Stream Data
@@ -20,7 +17,7 @@ When a callout inspects stream data, its [classifyFn](https://msdn.microsoft.com
 
 For example:
 
-```
+```C++
 // classifyFn callout function
 VOID NTAPI
  ClassifyFn(
@@ -136,9 +133,9 @@ The value in *filter-&gt;action.type* determines which actions the callout's [cl
 
 For more information about packet and stream data inspection, see [Inspecting Packet and Stream Data](inspecting-packet-and-stream-data.md).
 
- 
+ 
 
- 
+ 
 
 
 

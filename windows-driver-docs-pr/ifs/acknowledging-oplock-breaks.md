@@ -1,13 +1,9 @@
 ---
 title: Acknowledging Oplock Breaks
-author: windows-driver-content
 description: Acknowledging Oplock Breaks
 ms.assetid: ea5bcd1e-d22c-4f80-89e4-1a61e43959dd
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Acknowledging Oplock Breaks
@@ -43,11 +39,10 @@ To send an acknowledgment when no acknowledgment is expected is an error and the
 
 Closing the handle of the file for which the oplock break is requested will implicitly acknowledge the break. In the case of an oplock break for a sharing violation, the oplock holder can close the file handle, which acknowledges the oplock break, and prevent a sharing violation for the other user of the file.
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

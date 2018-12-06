@@ -1,12 +1,8 @@
 ---
 title: Building a Universal Windows driver
-author: windows-driver-content
 description: Guide to building a universal driver
-ms.author: windowsdriverdev
 ms.date: 10/03/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Building a Universal Windows driver
@@ -35,9 +31,9 @@ In contrast, existing user-mode drivers may require modification to compile as U
     To change driver model manually, right-click the driver project and choose Properties. Under **Configuration Properties-&gt;Driver Settings-&gt;General**, find the **Target Platform** entry. Choose **Universal**, **Desktop**, or **Mobile**. Microsoft Visual Studio uses this setting to determine what libraries to link against.
 
     **Note**  You cannot build a Universal Windows driver for Windows versions earlier than Windows 10.
-3.  You might need to modify the .inf file to specify the provider, specified as an %*ManufacturerName*% token that is expanded later in the INF file's [**Strings**](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff547485) section. For example:
+3.  You might need to modify the .inf file to specify the provider, specified as an %*ManufacturerName*% token that is expanded later in the INF file's [**Strings**](https://msdn.microsoft.com/Library/Windows/Hardware/Ff547485) section. For example:
 
-    ```
+    ```cpp
     Provider="Contoso"
     ```
 

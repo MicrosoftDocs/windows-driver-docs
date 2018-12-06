@@ -2,11 +2,8 @@
 title: Automatic installation for UWP device apps
 description: This topic describes how automatic installation works and how the app, metadata, and drivers can be updated and uninstalled.
 ms.assetid: ED9C7A63-5D2A-45D3-AD62-32C6876142FC
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Automatic installation for UWP device apps
@@ -16,7 +13,7 @@ In Windows 8.1, device manufacturers can configure their UWP device apps to aut
 
 **Note**  It's important to consider that the automatic installation feature does not provide a notification to the user when the app is installed. Some users may find this experience confusing and frustrating, and give your app a bad rating.
 
- 
+ 
 
 Automatic installation is enabled when you specify your device app's package details in the **UWP device app** portion of the **App Info** page of the **Device Metadata Authoring Wizard**. For more info, see [Step 2: Create device metadata](step-2--create-device-metadata.md).
 
@@ -31,7 +28,7 @@ A UWP device app can be acquired by the user in one of three ways:
 
 **Note**  UWP device apps for PC internal devices are not eligible for automatic installation. They can only be acquired through manual install and OEM preinstall.
 
- 
+ 
 
 ## <span id="Requirements"></span><span id="requirements"></span><span id="REQUIREMENTS"></span>Requirements
 
@@ -99,11 +96,10 @@ The device driver and device metadata are uninstalled independently of the Micro
 
 The UWP device app must be manually uninstalled by the user. When that's done, the device driver and device metadata are not automatically uninstalled.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devapps\devapps]:%20Automatic%20installation%20for%20Windows%20Store%20device%20apps%20%20RELEASE:%20%281/20/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

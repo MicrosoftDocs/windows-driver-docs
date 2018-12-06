@@ -23,11 +23,8 @@ keywords:
 - positions WDK audio
 - WDM audio data formats WDK
 - data formats WDK audio , mapping formats
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Mapping Stream Formats to Speaker Configurations
@@ -41,7 +38,7 @@ When asked to play a stream format that does not match the audio device's speake
 
 -   Play the stream by mixing the channels in the original stream to generate precisely the number of channels required for the speaker configuration. If there are more channels in the original stream than there are speakers, this approach avoids loss of the content that would result from simply discarding the excess channels. The mixing and format conversion can be performed in software or hardware.
 
-Regarding the third option, the driver should avoid directly performing software mixing. Instead, the hardware vendor should install a global-effects (GFX) software module to process the stream before it reaches the audio device. In Windows Vista, global effects are implemented as GFX audio processing objects (APOs). In Windows Server 2003 and Windows XP, global effects are implemented as [GFX filters](gfx-filters.md). Windows 2000 and Windows Me/98 do not support global effects.
+Regarding the third option, the driver should avoid directly performing software mixing. Instead, the hardware vendor should install a global-effects (GFX) software module to process the stream before it reaches the audio device. In Windows Vista, global effects are implemented as GFX audio processing objects (APOs). In Windows Server 2003 and Windows XP, global effects were implemented as GFX filters. 
 
 ### <span id="playing_a_5_1_channel_stream_on_a_7_1_speaker_configuration"></span><span id="PLAYING_A_5_1_CHANNEL_STREAM_ON_A_7_1_SPEAKER_CONFIGURATION"></span>Playing a 5.1-Channel Stream on a 7.1 Speaker Configuration
 
@@ -89,12 +86,10 @@ In Windows Server 2003 with SP1 and Windows XP with SP2, if the system mixer pro
 
 If the system mixer receives a 7.1-channel input stream with a channel mask of 0x63F and produces a 5.1-channel output stream (with a channel mask of 0x3F), the mixer copies channels 6 and 7 in the input stream to channels 4 and 5 in the output stream. The mixer discards channels 4 and 5 (for the two back speakers) from the 7.1-channel input stream. This behavior ensures that the channels containing the content for the two side speakers in the 7.1-channel stream play through the side speakers in the 5.1 speaker configuration.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Mapping%20Stream%20Formats%20to%20Speaker%20Configurations%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

@@ -2,11 +2,8 @@
 title: JSConstraintsDebug
 description: JSConstraintsDebug (JSConstraintsDebug.exe) is a command-line tool that provides debugging support for JavaScript Constraints while developing a V4 printer driver.
 ms.assetid: 48C39A2C-7EA6-4BAA-B5E8-3B426C9697B3
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # JSConstraintsDebug
@@ -25,12 +22,12 @@ JSConstraintsDebug (JSConstraintsDebug.exe) is a command-line tool that provides
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>JSConstraintsDebug.exe is included in the Microsoft Windows Driver Kit (WDK). For information about getting the WDK, see [Windows Driver Kit downloads](http://go.microsoft.com/fwlink/p/?LinkId=808351).</p></td>
+<td align="left"><p>JSConstraintsDebug.exe is included in the Microsoft Windows Driver Kit (WDK). For information about getting the WDK, see <a href="http://go.microsoft.com/fwlink/p/?LinkId=808351" data-raw-source="[Windows Driver Kit downloads](http://go.microsoft.com/fwlink/p/?LinkId=808351)">Windows Driver Kit downloads</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The tool executes each of the following relevant entry point APIs on the JavaScript constraints of the targeted driver against the user provided print ticket:
 
@@ -82,7 +79,7 @@ Elevated privileges are required to enable debugging of JS functions. To run in 
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="JavaScript_debugger_statements"></span><span id="javascript_debugger_statements"></span><span id="JAVASCRIPT_DEBUGGER_STATEMENTS"></span>JavaScript debugger statements
 
@@ -141,11 +138,11 @@ JSConstraintsDebug <PrinterName> <PrintTicket> [MergePrintTicket] [Constraints]
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  Specifying a constraints file with the Constraints parameter will overwrite existing source code in the targeted driver.
 
- 
+ 
 
 ## <span id="Examples"></span><span id="examples"></span><span id="EXAMPLES"></span>Examples
 
@@ -168,11 +165,10 @@ Test merge and validate operations between two custom print tickets.
 JSConstraintsDebug “Contoso Printer” PrintTicket.xml PrintTicket2.xml
 ```
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20JSConstraintsDebug%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -7,11 +7,8 @@ keywords:
 - binding sockets WDK Winsock Kernel
 - local transport address bindings WDK Winsock Kernel
 - transport addresses WDK Winsock Kernel
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Sharing Transport Addresses
@@ -263,9 +260,9 @@ In the cases defined in the previous table where an access check is performed, t
 
 If the two sockets are bound to two different specific local transport addresses, there is no sharing of either transport address. In this situation the second bind operation will always complete successfully.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -7,17 +7,14 @@ keywords:
 - send operation porting WDK networking
 - receive operation porting WDK networking
 - data send/receive operation porting WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Porting Miniport Driver Send and Receive Operations to NDIS 6.0
 
 
-## <a href="" id="ddk-porting-miniport-driver-send-and-receive-operations-to-ndis-6-0-ng"></a>
+
 
 
 Data transfer code paths in NDIS 6.0 have changed as follows:
@@ -40,9 +37,9 @@ Additional information about porting send and receive operations is included in 
 
 [Porting NDIS Miniport Driver Receive Data Handling](porting-ndis-miniport-driver-receive-data-handling.md)
 
- 
+ 
 
- 
+ 
 
 
 

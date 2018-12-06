@@ -2,11 +2,8 @@
 title: Network Direct Kernel Provider Interface (NDKPI)
 description: This section provides a list of topics about Network Direct Kernel Provider Interface (NDKPI) in NDIS 6.30 and later
 ms.assetid: B7E52112-E049-42E2-9BB3-311EB0D1C577
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Network Direct Kernel Provider Interface (NDKPI)
@@ -29,9 +26,9 @@ In NDIS 6.30 and later (Windows Server 2012 and later), the Network Direct Kern
 -   [NetworkDirect Disconnect Scheme](networkdirect-disconnect-scheme.md)
 -   [NDKPI Deferred Processing Scheme](ndkpi-deferred-processing-scheme.md)
 
- 
+ 
 
- 
+ 
 
 
 

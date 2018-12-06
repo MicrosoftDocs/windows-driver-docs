@@ -5,11 +5,8 @@ ms.assetid: 40329177-b8d5-49a2-a1d3-6730a26b6e78
 keywords:
 - hardware acceleration WDK DirectSound , SRC sliders
 - sliders WDK audio
-ms.author: windowsdriverdev
 ms.date: 10/27/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # DirectSound Hardware-Acceleration and SRC Sliders
@@ -75,7 +72,7 @@ The hardware-acceleration slider has four settings that range from **None** (lev
 </tbody>
 </table>
 
- 
+ 
 
 <span id="Emulation_Setting"></span><span id="emulation_setting"></span><span id="EMULATION_SETTING"></span>**Emulation Setting**  
 The **Emulation** setting above forces DirectSound into emulation mode. In this mode, DirectSound applications run as though no DirectSound driver is present. All mixing is done by DirectSound in user mode, and the resulting audio data is played back through the waveOut API. The result is typically a large increase in latency. 
@@ -92,14 +89,12 @@ The **Full** setting enables full acceleration of DirectSound secondary buffers.
 
 If the user adjusts either the hardware-acceleration or SRC setting to a value other than the default, DirectSound uses the new setting instead of the default.
 
-For more information about KMixer's SRC algorithms, see [KMixer Driver Sample Rate Conversion and Mixing Policy](kmixer-driver-sample-rate-conversion-and-mixing-policy.md).
-
- 
-
- 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20DirectSound%20Hardware-Acceleration%20and%20SRC%20Sliders%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+ 
+
+ 
+
+
 
 

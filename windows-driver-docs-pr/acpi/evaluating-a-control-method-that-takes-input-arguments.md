@@ -1,13 +1,9 @@
 ---
 title: Evaluating a Control Method That Takes Input Arguments
-author: windows-driver-content
 description: Evaluating a Control Method That Takes Input Arguments
 ms.assetid: 3a4be8a8-0906-4d38-bf6d-f245e6ae236a
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Evaluating a Control Method That Takes Input Arguments
@@ -31,9 +27,9 @@ In addition, if the 'ABCD' control method was not an immediate child object, the
 
 *EvaluateABCDWithInputArgument* first allocates an ACPI\_EVAL\_INPUT\_BUFFER\_SIMPLE\_INTEGER structure *inputBuffer* and then sets the **MethodNameAsUlong** member to the name of the control method, sets the **IntegerArgument** member to the input integer value, and sets the **Signature** member to ACPI\_EVAL\_INPUT\_BUFFER\_SIMPLE\_INTEGER\_SIGNATURE.
 
-```
+```cpp
     // Fill in the input data
-    inputBuffer.MethodNameAsUlong = (ULONG) (&#39;DCBA&#39;);
+    inputBuffer.MethodNameAsUlong = (ULONG) ('DCBA');
     inputBuffer.IntegerArgument  =  Argument1;
     inputBuffer.Signature = ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_SIGNATURE;
 ```
@@ -62,7 +58,7 @@ Although not included in *EvaluateABCDWithInputArgument*, the driver should also
 
 The ACPI data structures and constants used in the following example are defined in *Acpiioct.h*.
 
-```
+```cpp
 NTSTATUS
 EvaluateABCDWithInputArgument(
     IN PDEVICE_OBJECT   Pdo,
@@ -71,7 +67,7 @@ EvaluateABCDWithInputArgument(
     )
 /*
 Routine Description:
-    Called to evaluate the example &#39;ABCD&#39; method with a single integer input argument
+    Called to evaluate the example 'ABCD' method with a single integer input argument
 
 Parameters:
     Pdo             - For the device.
@@ -96,7 +92,7 @@ Return Value:
     *ReturnStatus = 0x0;
 
     // Fill in the input data
-    inputBuffer.MethodNameAsUlong = (ULONG) (&#39;DCBA&#39;);
+    inputBuffer.MethodNameAsUlong = (ULONG) ('DCBA');
     inputBuffer.IntegerArgument  =  Argument1;
     inputBuffer.Signature = ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_SIGNATURE;
 
@@ -114,11 +110,10 @@ Return Value:
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

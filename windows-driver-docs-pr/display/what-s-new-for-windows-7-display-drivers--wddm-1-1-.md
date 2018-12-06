@@ -2,11 +2,8 @@
 title: What's new for Windows 7 display drivers (WDDM 1.1)
 description: What's new for Windows 7 display drivers (WDDM 1.1)
 ms.assetid: 516A9C56-7ABC-49F4-8E92-3B6C3DB78CF6
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # What's new for Windows 7 display drivers (WDDM 1.1)
@@ -52,11 +49,10 @@ The INF files for display drivers that are written to the Windows Vista display
 
 The release of the Windows 7 operating system also introduces GPUView (GPUView.exe), which is a new development tool that monitors the performance of the graphics processing unit (GPU). For more information about GPUView, see [Using GPUView](using-gpuview.md).
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20What's%20new%20for%20Windows%207%20display%20drivers%20%28WDDM%201.1%29%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

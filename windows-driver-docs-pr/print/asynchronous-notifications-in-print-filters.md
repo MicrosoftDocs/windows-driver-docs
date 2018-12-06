@@ -1,6 +1,5 @@
 ---
 title: Asynchronous Notifications in Print Filters
-author: windows-driver-content
 description: Asynchronous Notifications in Print Filters
 ms.assetid: 52b0790b-4927-4e1b-8ae5-6e2afc7c9df6
 keywords:
@@ -8,11 +7,8 @@ keywords:
 - XPS filters WDK XPSDrv
 - filters WDK XPS
 - asynchronous notifications WDK XPS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Asynchronous Notifications in Print Filters
@@ -24,13 +20,13 @@ This topic describes how to use the asynchronous notification feature in a print
 
 **Note**  Throwing asynchronous notifications from a print filter is not supported in the v4 print driver model.
 
- 
+ 
 
 ### IPrintClassObjectFactory
 
 The [IPrintClassObjectFactory](https://msdn.microsoft.com/library/windows/hardware/ff551955) interface provides access to the notification interfaces. The following code example illustrates how a filter can obtain this interface from the property bag.
 
-```
+```cpp
 // This interface is defined as a private member variable in the filter class
 IPrintClassObjectFactory  *m_pPrintClassFactory;
 
@@ -54,7 +50,7 @@ if (SUCCEEDED(hr))
 
 With the IPrintClassObjectFactory interface, the filter can create a unidirectional or a bidirectional notification channel, depending on the needs of the filter. The following code example continues from the preceding example and shows how a filter establishes a unidirectional notification channel.
 
-```
+```cpp
 // Create a unidirectional notification channel
 IPrintAsyncNotifyChannel  *pIAsyncNotifyChannel;
 IPrintAsyncNotify  *pIAsyncNotify;
@@ -80,7 +76,7 @@ if (SUCCEEDED(hr))
 
 To create a bidirectional notification channel, you would use the following code example in place of the preceding example.
 
-```
+```cpp
 // Create a bidirectional notification channel
 IPrintAsyncNotifyChannel *pIAsyncNotifyChannel;
 IPrintAsyncNotify *pIAsyncNotify;
@@ -114,13 +110,13 @@ The filter must not impersonate the user account when it calls the IPrintAsyncNo
 
 **Note**  Even though the notification call is made while in the Local Service context, kPerUser notifications are still sent to the user who submitted the job based on the user association of the job ID.
 
- 
+ 
 
 ### Adapting the WDK Sample Code
 
 You can adapt the notification sample from the WDK sample code to work in a print filter by replacing the RouterCreatePrintAsyncNotificationChannel call with the following code example.
 
-```
+```cpp
 IPrintAsyncNotify  *pIAsyncNotify;
 
 HRESULT hr = m_pPrintClassFactory->GetPrintClassObject(
@@ -139,12 +135,10 @@ if (SUCCEEDED(hr))
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Asynchronous%20Notifications%20in%20Print%20Filters%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

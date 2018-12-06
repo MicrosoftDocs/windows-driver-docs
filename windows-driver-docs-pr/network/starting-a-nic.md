@@ -7,17 +7,14 @@ keywords:
 - network interface cards WDK networking , starting
 - Plug and Play WDK NDIS miniport , starting NIC
 - starting NICs WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Starting a NIC
 
 
-## <a href="" id="ddk-starting-a-nic-ng"></a>
+
 
 
 The following steps describe how NDIS participates in the starting of a NIC:
@@ -32,9 +29,9 @@ The following steps describe how NDIS participates in the starting of a NIC:
 
 5.  NDIS completes the IRP\_MN\_START\_DEVICE request.
 
- 
+ 
 
- 
+ 
 
 
 

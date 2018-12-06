@@ -4,11 +4,8 @@ description: How to Analyze IRP Coverage Data
 ms.assetid: 71b87948-8e69-4b4a-9546-ea27e96a4bf8
 keywords:
 - Driver Coverage Toolkit WDK , analyzing data
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # How to Analyze IRP Coverage Data
@@ -16,7 +13,7 @@ ms.technology: windows-devices
 
 **Note**  The Driver Coverage Toolkit is no longer needed in Windows 10 and the installer is no longer included in the WDK. To perform tasks described here in Windows 10, instead use [Driver Verifier](driver-verifier.md) and [IRP Logging](irp-logging.md).
 
- 
+ 
 
 This topic provides guidelines to help you analyze IRP coverage data. For guidelines to help you collect IRP coverage data, see [How to Collect IRP Coverage Data](how-to-collect-irp-coverage-data.md).
 
@@ -63,7 +60,7 @@ This section provides information about the following:
 
 **Note**  Decisions about which IRPs to test is dependent on your driver and the IRPs the driver supports. The IRP MJ and MN coverage data can help you evaluate the efficiency of your code coverage tests for your driver.
 
- 
+ 
 
 The IRP MJ and MN coverage data for devnode 9740 is shown in the following example:
 
@@ -286,11 +283,10 @@ The IRP pair coverage data for devnode 9740 is shown in the following example:
 |--------------------------------------------------------|
 ```
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20How%20to%20Analyze%20IRP%20Coverage%20Data%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

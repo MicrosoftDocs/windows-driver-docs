@@ -2,11 +2,8 @@
 title: Retrieving SPCRP_Xxx Properties
 description: Retrieving SPCRP_Xxx Properties
 ms.assetid: a5d52da9-a593-42bd-aeaf-8ab203bc3d21
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Retrieving SPCRP_Xxx Properties
@@ -43,9 +40,9 @@ To use SetupDiGetClassRegistryProperty to retrieve a property that corresponds t
 
 If the second call to **SetupDiGetClassRegistryProperty** succeeds, **SetupDiGetClassRegistryProperty** sets \**PropertyRegDataType* to the registry data type, sets the *PropertyBuffer* buffer to the property value, sets \**PropertyBufferSize* to the size, in bytes, of the property value, and returns **TRUE**. If the function call fails, **SetupDiGetClassRegistryProperty** returns **FALSE** and a call to [GetLastError](http://go.microsoft.com/fwlink/p/?linkid=169416) will return the logged error code.
 
- 
+ 
 
- 
+ 
 
 
 

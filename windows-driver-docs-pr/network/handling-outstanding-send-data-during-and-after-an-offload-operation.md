@@ -7,11 +7,8 @@ keywords:
 - offloading state process WDK TCP chimney offload , outstanding send data
 - outstanding send data WDK TCP chimney offload
 - send data outstanding WDK TCP chimney offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling Outstanding Send Data During and After an Offload Operation
@@ -19,7 +16,7 @@ ms.technology: windows-devices
 
 \[The TCP chimney offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-handling-outstanding-send-data-during-and-after-an-offload-operati"></a>
+
 
 
 When the host stack initiates the offload of a TCP connection, there might be outstanding send data on the connection. This data can include:
@@ -49,9 +46,9 @@ The sequence number for the next byte to send on the connection (see SND.NEXT in
 <a href="" id="sndmax"></a>**SndMax**  
 The maximum sequence number that has been sent on the connection.
 
- 
+ 
 
- 
+ 
 
 
 

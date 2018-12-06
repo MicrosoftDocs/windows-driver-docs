@@ -7,11 +7,8 @@ keywords:
 - driver accelerations WDK Windows 2000 display
 - Control Panel slider control WDK Windows 2000 display
 - GDI acceleration changes WDK Windows 2000 display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Dynamic Change of Permitted Driver Accelerations
@@ -40,11 +37,11 @@ The driver's acceleration level can be changed through the user interface by usi
 </tr>
 <tr class="even">
 <td align="left"><p>1</p></td>
-<td align="left"><p>[<strong>DrvSetPointerShape</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556289) and [<strong>DrvCreateDeviceBitmap</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556185) are disabled.</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff556289" data-raw-source="[&lt;strong&gt;DrvSetPointerShape&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556289)"><strong>DrvSetPointerShape</strong></a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff556185" data-raw-source="[&lt;strong&gt;DrvCreateDeviceBitmap&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556185)"><strong>DrvCreateDeviceBitmap</strong></a> are disabled.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>2</p></td>
-<td align="left"><p>In addition to 1, more sophisticated display driver accelerations are disallowed, including [<strong>DrvStretchBlt</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556302), [<strong>DrvFillPath</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556220), [<strong>DrvGradientFill</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556236), [<strong>DrvLineTo</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556245), [<strong>DrvAlphaBlend</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556176), and [<strong>DrvTransparentBlt</strong>](https://msdn.microsoft.com/library/windows/hardware/ff557283).</p></td>
+<td align="left"><p>In addition to 1, more sophisticated display driver accelerations are disallowed, including <a href="https://msdn.microsoft.com/library/windows/hardware/ff556302" data-raw-source="[&lt;strong&gt;DrvStretchBlt&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556302)"><strong>DrvStretchBlt</strong></a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff556220" data-raw-source="[&lt;strong&gt;DrvFillPath&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556220)"><strong>DrvFillPath</strong></a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff556236" data-raw-source="[&lt;strong&gt;DrvGradientFill&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556236)"><strong>DrvGradientFill</strong></a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff556245" data-raw-source="[&lt;strong&gt;DrvLineTo&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556245)"><strong>DrvLineTo</strong></a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff556176" data-raw-source="[&lt;strong&gt;DrvAlphaBlend&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556176)"><strong>DrvAlphaBlend</strong></a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff557283" data-raw-source="[&lt;strong&gt;DrvTransparentBlt&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff557283)"><strong>DrvTransparentBlt</strong></a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>3</p></td>
@@ -52,7 +49,7 @@ The driver's acceleration level can be changed through the user interface by usi
 </tr>
 <tr class="odd">
 <td align="left"><p>4</p></td>
-<td align="left"><p>In addition to 3, almost all display driver accelerations are disallowed, except for solid color fills, [<strong>DrvCopyBits</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556182), [<strong>DrvTextOut</strong>](https://msdn.microsoft.com/library/windows/hardware/ff557277), and [<strong>DrvStrokePath</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556316). [<strong>DrvEscape</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556217) is disabled.</p></td>
+<td align="left"><p>In addition to 3, almost all display driver accelerations are disallowed, except for solid color fills, <a href="https://msdn.microsoft.com/library/windows/hardware/ff556182" data-raw-source="[&lt;strong&gt;DrvCopyBits&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556182)"><strong>DrvCopyBits</strong></a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff557277" data-raw-source="[&lt;strong&gt;DrvTextOut&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff557277)"><strong>DrvTextOut</strong></a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff556316" data-raw-source="[&lt;strong&gt;DrvStrokePath&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556316)"><strong>DrvStrokePath</strong></a>. <a href="https://msdn.microsoft.com/library/windows/hardware/ff556217" data-raw-source="[&lt;strong&gt;DrvEscape&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556217)"><strong>DrvEscape</strong></a> is disabled.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>5</p></td>
@@ -61,7 +58,7 @@ The driver's acceleration level can be changed through the user interface by usi
 </tbody>
 </table>
 
- 
+ 
 
 A display driver can determine the current acceleration level by:
 
@@ -69,11 +66,10 @@ A display driver can determine the current acceleration level by:
 
 -   Calling [**EngQueryDeviceAttribute**](https://msdn.microsoft.com/library/windows/hardware/ff564986) to query the current acceleration level.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Dynamic%20Change%20of%20Permitted%20Driver%20Accelerations%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

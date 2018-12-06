@@ -3,11 +3,8 @@ title: Elements of a Debugger Command Program
 description: Elements of a Debugger Command Program
 ms.assetid: f964e358-2f3f-4780-87ea-e1374ae861e6
 keywords: ["debugger command program, elements"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Elements of a Debugger Command Program
@@ -30,17 +27,16 @@ You can add comments to a debugger command program by using two dollar signs ([*
 
 **Note**   You should not use an asterisk ([**\* (Comment Line Specifier)**](----comment-line-specifier-.md)). Because comments that are specified with an asterisk do not end with a semicolon, the rest of the program is disregarded.
 
- 
+ 
 
 Typically, you should use MASM syntax within a debugger command program. When you have to use C++ elements (such as specifying a member of a structure or class), you can use the **@@c++( )** token to switch to C++ syntax for that clause.
 
 The **$scmp**, **$sicmp**, and **$spat** string operators in MASM syntax are particularly useful. For more information about these operators, see [MASM Numbers and Operators](masm-numbers-and-operators.md).
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Elements%20of%20a%20Debugger%20Command%20Program%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

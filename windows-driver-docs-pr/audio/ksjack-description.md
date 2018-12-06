@@ -11,11 +11,8 @@ api_location:
 - ksmedia.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # KSJACK\_DESCRIPTION structure
@@ -47,7 +44,7 @@ Specifies the mapping of the audio channels to the corresponding speaker positio
 &gt; \[!Note\]
 &gt;  Devicetopology.h originally defined **ChannelMapping** as an enumeration of type **EChannelMapping**. The **EChannelMapping** enumeration has since been deprecated and is no longer used in Windows Vista and later versions of the Windows operating systems.
 
- 
+ 
 
 **Color**  
 Specifies the jack color. The color is expressed as a 32-bit RGB value that is formed by concatenating the 8-bit blue, green, and red color components. The blue component occupies the 8 least-significant bits (bits 0-7), the green component occupies bits 8-15, and the red component occupies bits 16-23. The 8 most-significant bits are zeros. If the jack color is unknown or the physical connector has no identifiable color, the value of this member is 0x00000000, which represents black.
@@ -118,7 +115,7 @@ Specifies the physical connection type for this jack. The value of this member i
 </tbody>
 </table>
 
- 
+ 
 
 **GeoLocation**  
 The geometric location of the jack. The value of this member is one of the **EPcxGeoLocation** enumeration values shown in the following table.
@@ -194,7 +191,7 @@ The geometric location of the jack. The value of this member is one of the **EPc
 </tbody>
 </table>
 
- 
+ 
 
 **GenLocation**  
 Specifies the general location of the jack. The value of this member is one of the **EPcxGenLocation** enumeration values shown in the following table.
@@ -230,7 +227,7 @@ Specifies the general location of the jack. The value of this member is one of t
 </tbody>
 </table>
 
- 
+ 
 
 **PortConnection**  
 Specifies the type of port represented by the jack. The value of this member is one of the **EPxcPortConnection** enumeration values shown in the following table.
@@ -266,7 +263,7 @@ Specifies the type of port represented by the jack. The value of this member is 
 </tbody>
 </table>
 
- 
+ 
 
 **IsConnected**  
 Indicates whether there is an external device connected to the jack. If the audio controller supports jack detection on this pin, the value of **IsConnected** should accurately indicate whether the jack is occupied by a plug at any given time. This value should always be set to **TRUE** for devices that do not support jack detection.
@@ -299,11 +296,10 @@ Requirements
 
 [**KSPROPERTY\_JACK\_DESCRIPTION**](ksproperty-jack-description.md)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20KSJACK_DESCRIPTION%20structure%20%20RELEASE:%20%2811/22/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

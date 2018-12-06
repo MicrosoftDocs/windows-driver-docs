@@ -6,17 +6,14 @@ keywords:
 - header-data split WDK , configuration
 - current header-data split configuration WDK networking
 - status information WDK header-data split
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Setting the Current Header-Data Split Configuration
 
 
-## <a href="" id="ddk-setting-the-current-header-data-split-configuration-ng"></a>
+
 
 
 NDIS and overlying drivers or user-mode applications use the [OID\_GEN\_HD\_SPLIT\_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/ff569587) OID to set the current header-data split settings of a miniport adapter. NDIS 6.1 and later miniport drivers that provide header-data split services must support this OID. Otherwise, this OID is optional.
@@ -29,9 +26,9 @@ If the NDIS\_HD\_SPLIT\_COMBINE\_ALL\_HEADERS flag in the **HDSplitCombineFlags*
 
 For example, NDIS might use the OID\_GEN\_HD\_SPLIT\_PARAMETERS OID to set the NDIS\_HD\_SPLIT\_COMBINE\_ALL\_HEADERS flag when an NDIS 5.*x* protocol driver binds to an NDIS 6.1 miniport adapter. NDIS processes this OID before it passes the OID to the miniport driver and updates the miniport adapter's **\*HeaderDataSplit** standardized keyword, if required. If header-data split is disabled, NDIS does not send this OID to the miniport adapter.
 
- 
+ 
 
- 
+ 
 
 
 

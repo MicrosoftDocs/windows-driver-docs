@@ -2,17 +2,14 @@
 title: USB 802.3 Device Sample
 description: USB 802.3 Device Sample
 ms.assetid: 647dd493-a7f4-469a-ab2f-f58f9916333d
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # USB 802.3 Device Sample
 
 
-## <a href="" id="ddk-usb-802-3-device-sample-ng"></a>
+
 
 
 The following is a sample set of descriptors for a USB Remote NDIS Ethernet Device. It includes a CDC Communication Class interface and a CDC Data Class interface. The Device Descriptor is returned independently. The Configuration descriptor and all following descriptors are returned as a single block in the order shown.
@@ -23,9 +20,9 @@ The Remote NDIS implementation in Windows Millennium Edition assumes that the Co
 
 If any portion of this sample contradicts a controlling specification, follow the specification.
 
- 
+ 
 
- 
+ 
 
 
 

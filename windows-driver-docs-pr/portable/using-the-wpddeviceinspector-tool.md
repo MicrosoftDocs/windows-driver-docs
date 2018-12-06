@@ -1,11 +1,8 @@
 ---
 Description: Using the WpdDeviceInspector Tool
 title: Using the WpdDeviceInspector Tool
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using the WpdDeviceInspector Tool
@@ -19,7 +16,7 @@ The WpdDeviceInspector tool is a console application that generates a comprehens
 | Device Capabilities      | Identifies commands, objects, content types, formats, and events that are supported by the device.       |
 | Device Content           | Lists object identifier strings and the corresponding Persistent Unique Object Identifier (PUID) values. |
 
- 
+ 
 
 ## <span id="Viewing_the_Command-Line_Options_for_WpdDeviceInspector"></span><span id="viewing_the_command-line_options_for_wpddeviceinspector"></span><span id="VIEWING_THE_COMMAND-LINE_OPTIONS_FOR_WPDDEVICEINSPECTOR"></span>Viewing the Command-Line Options for WpdDeviceInspector
 
@@ -35,7 +32,7 @@ WpdDeviceInspector.exe /?
 
 You can generate a report for a particular device by running *WpdDeviceInspector.exe* without any parameters, and entering the index for the selected device.
 
-```
+```cpp
 > WpdDeviceInspector.exe
 
 
@@ -78,15 +75,14 @@ You can operate *WpdDeviceInspector.exe* to dump the JScript properties and meth
 
 To operate in WPD Automation mode, use the /Automation switch at the command prompt:
 
-```
+```cpp
 WpdDeviceInspector.exe /Automation
 ```
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[wpd_dk\wpddk]:%20Using%20the%20WpdDeviceInspector%20Tool%20%20RELEASE:%20%281/5/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

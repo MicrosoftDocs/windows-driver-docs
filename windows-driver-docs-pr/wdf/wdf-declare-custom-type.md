@@ -1,15 +1,11 @@
 ---
 title: WDF_DECLARE_CUSTOM_TYPE macro
-author: windows-driver-content
 description: The WDF_DECLARE_CUSTOM_TYPE macro creates a name and an accessor method for a driver's custom type.
 ms.assetid: DF496E17-B3D4-4983-8506-40810ECAEA3E
 keywords:
  - WDF_DECLARE_CUSTOM_TYPE macro
-ms.author: windowsdriverdev
 ms.date: 08/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WDF_DECLARE_CUSTOM_TYPE macro
@@ -24,7 +20,7 @@ Syntax
 
 ```ManagedCPlusPlus
 void WDF_DECLARE_CUSTOM_TYPE(
-    _customtype
+    _customtype
 );
 ```
 
@@ -51,13 +47,13 @@ Examples
 
 The following code example calls the **WDF_DECLARE_CUSTOM_TYPE** macro to declare the MY_CUSTOM_TYPE custom type name. The driver must put this line in an area of the driver that declares global data, typically a header file.
 
-```
+```cpp
 WDF_DECLARE_CUSTOM_TYPE(MY_CUSTOM_TYPE)
 ```
 
 The following code example creates a request object, and then it uses the [**WdfObjectAddCustomType**](wdfobjectaddcustomtype.md) method to associate the **MY_CUSTOM_TYPE** custom type with the request object.
 
-```
+```cpp
 WDFREQUEST Request;
 WDF_OBJECT_ATTRIBUTES MyRequestObjectAttributes;
 
@@ -94,7 +90,7 @@ Requirements
 <tbody>
 <tr class="odd">
 <td><p>Target platform</p></td>
-<td>[Universal](http://go.microsoft.com/fwlink/p/?linkid=531356)</td>
+<td><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" data-raw-source="[Universal](http://go.microsoft.com/fwlink/p/?linkid=531356)">Universal</a></td>
 </tr>
 <tr class="even">
 <td><p>Minimum KMDF version</p></td>
@@ -122,9 +118,9 @@ Requirements
 
 [**WdfObjectIsCustomType**](wdfobjectiscustomtype.md)
 
- 
+ 
 
- 
+ 
 
 
 

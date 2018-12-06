@@ -2,17 +2,14 @@
 title: Configuration Descriptor
 description: Configuration Descriptor
 ms.assetid: 256edfa8-de02-438d-b4ce-0a2df0d0f46e
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Configuration Descriptor
 
 
-## <a href="" id="ddk-configuration-descriptor-ng"></a>
+
 
 
 <table>
@@ -92,11 +89,11 @@ ms.technology: windows-devices
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Obtaining Information About an I/O Request
-author: windows-driver-content
 description: Obtaining Information About an I/O Request
 ms.assetid: a686ea00-6987-480a-a4ce-892e1efbed87
 keywords:
@@ -8,11 +7,8 @@ keywords:
 - I/O requests WDK KMDF , obtaining information about
 - status information WDK KMDF
 - status information WDK KMDF , I/O requests
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Obtaining Information About an I/O Request
@@ -36,9 +32,9 @@ To provide additional information about an I/O request that a driver has receive
 
 After a driver completes an I/O request, other drivers in the driver stack can call additional request object methods to obtain request completion information. For more information about these additional methods, see [Completing I/O Requests](completing-i-o-requests.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,13 +1,9 @@
 ---
 title: Unsynchronized HwStorBuildIo Routine
-author: windows-driver-content
 description: Unsynchronized HwStorBuildIo Routine
 ms.assetid: 6b18e3ff-30dd-414b-99b5-4bb914660a67
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Unsynchronized HwStorBuildIo Routine
@@ -24,11 +20,10 @@ The *HwStorBuildIo* routine should translate the SRB to a more convenient data s
 
 To achieve maximum performance, the *HwStorBuildIo* routine should be used in conjunction with the full-duplex mode.
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

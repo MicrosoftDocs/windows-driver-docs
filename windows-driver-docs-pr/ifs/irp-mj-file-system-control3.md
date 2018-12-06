@@ -1,6 +1,5 @@
 ---
 title: IRP_MJ_FILE_SYSTEM_CONTROL
-author: windows-driver-content
 description: IRP_MJ_FILE_SYSTEM_CONTROL
 ms.assetid: 38b88379-c007-4e88-a6d9-5aacd6bdefd3
 keywords:
@@ -9,11 +8,8 @@ keywords:
 - security checks WDK file systems , IRP_MJ_FILE_SYSTEM_CONTROL
 - file system controls WDK security
 - set file information processing WDK file systems
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # IRP_MJ_FILE_SYSTEM_CONTROL
@@ -23,11 +19,10 @@ A file system control allows the file system to perform essentially any speciali
 
 The I/O manager will enforce FILE_READ_DATA and FILE_WRITE_DATA permissions on specific FSCTL operations, if the file system has set these bits in the file system operation definition using the CTL_CODE macro. All other permissions required must be checked by the file system (FILE_READ_ATTRIBUTES permissions, for example) if this is the policy of the file system.
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

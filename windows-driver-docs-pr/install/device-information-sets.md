@@ -8,17 +8,14 @@ keywords:
 - information sets WDK device
 - enumerating device information WDK
 - SetupDiEnumDeviceInfo
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Device Information Sets
 
 
-## <a href="" id="ddk-device-information-sets-dg"></a>
+
 
 
 In user mode, devices that belong to either [device setup classes](device-setup-classes.md) or [device interface classes](device-interface-classes.md) are managed by using *device information elements* and *device information sets.* A device information set consists of device information elements for all the devices that belong to some device setup class or device interface class.
@@ -41,9 +38,9 @@ To enumerate the device interfaces in a device information set, call [**SetupDiE
 
 **SetupDiEnumDeviceInterfaces** returns an [**SP_DEVICE_INTERFACE_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552342) structure. SP_DEVICE_INTERFACE_DATA contains the interface class GUID and other information about the interface, including a reserved field that has encoded information that can be used to obtain the name of the interface. To get the interface name, one further step is required: [**SetupDiGetDeviceInterfaceDetail**](https://msdn.microsoft.com/library/windows/hardware/ff551120) must be called. **SetupDiGetDeviceInterfaceDetail** returns a structure of type [**SP_DEVICE_INTERFACE_DETAIL_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552343) that contains the path in the system object tree that defines the interface.
 
- 
+ 
 
- 
+ 
 
 
 

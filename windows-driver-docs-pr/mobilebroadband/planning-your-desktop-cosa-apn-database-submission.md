@@ -2,16 +2,13 @@
 title: Planning your desktop COSA/APN database submission
 description: Planning your desktop COSA/APN database submission
 ms.assetid: 7e974914-c3e5-409e-b0bf-28d6885585b3
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Planning your desktop COSA/APN database submission
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > Starting in Windows 10, version 1703, the APN database is replaced by a new format called COSA. Windows 8, Windows 8.1, and versions of Windows 10 before version 1703 will continue to use the APN database while Windows 10, version 1703 and later use COSA. For more information about COSA, see [COSA overview](cosa-overview.md).
 
 Use the sections in this topic when you are planning to add a new APN to the baseline COSA/APN database that ships with Windows desktop devices, or update an existing one.
@@ -20,11 +17,11 @@ Use the sections in this topic when you are planning to add a new APN to the bas
 
 To connect to a mobile broadband network, the user is typically required to provide the following information:
 
--   On GSM networks, an Access Point Name (APN) such as "data.contoso.com" is required.
+- On GSM networks, an Access Point Name (APN) such as "data.contoso.com" is required.
 
--   On CDMA networks, an access string that includes a special dial code such as "\#777" or a Network Access Identifier such as somebody@contoso.com is required.
+- On CDMA networks, an access string that includes a special dial code such as "\#777" or a Network Access Identifier such as somebody@contoso.com is required.
 
--   A username and password for the network connection.
+- A username and password for the network connection.
 
 COSA and the APN connectivity database are updated by using Windows Update. The figure below shows the overall submission process.
 
@@ -49,7 +46,7 @@ Note the following only when submitting an APN update using apndatabase.xml, for
   -   For CDMA networks, you can have a new database entry for each Provider ID (also called a SID) or Provider Name.
   -   Certificate information for account provisioning metadata includes **Cert Issuer Name** and **Cert Subject Name** and is used to verify that account provisioning provided by a purchase website comes from the an authorized web service. If the certificate information stored here matches what the purchase website presents, Windows will allow that website to push network-specific configuration information to the PC.
 
-- When submitting an APN database update using apndatabase.xml, the following following values must be included:       
+- When submitting an APN database update using apndatabase.xml, the following values must be included:       
     - A CDMA Provider name
     - A CDMA Provider ID (SID)
 
@@ -69,7 +66,7 @@ Note the following for both COSA and APN database.
 
 - The **Country/Region** and the **Operator** entries in the spreadsheet are used to determine whether this is an update to an existing APN or a request for a new APN. If the **Country/Region** and the **Operator** fields match content that already exists in the APN database, the entries will be deleted and replaced with the entries that you list in your spreadsheet.
 
-    >[!NOTE]  
+    >[!NOTE]
     >Because the previous entries will be deleted, it is important to list all APNs for the **Operator** and **Country/Region** combination, including the ones that are not changing.
 
     For example, when the following values are entered in a row in the spreadsheet:
@@ -126,4 +123,3 @@ Note the following for both COSA and APN database.
 
 Once your spreadsheet is complete, you can test the APNs you’ve entered. For the next steps in testing your APN update, see [Testing your desktop COSA/APN database submission](testing-your-desktop-cosa-apn-database-submission.md).
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_mb\p_mb%5D:%20Planning%20your%20APN%20database%20submission%20%20RELEASE:%20%281/18/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")

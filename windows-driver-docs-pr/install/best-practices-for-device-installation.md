@@ -5,11 +5,8 @@ ms.assetid: fca32a7f-5af1-42cf-880c-0312022a3266
 keywords:
 - device installations WDK , best practices
 - driver installations WDK , best practices
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Best Practices for Device and Driver Installation
@@ -31,9 +28,9 @@ The guidelines are discussed in the following topics:
 -   [Writing Class Installers and Co-Installers](writing-class-installers-and-co-installers.md)
 -   [Writing INF Files](writing-inf-files.md)
 
- 
+ 
 
- 
+ 
 
 
 

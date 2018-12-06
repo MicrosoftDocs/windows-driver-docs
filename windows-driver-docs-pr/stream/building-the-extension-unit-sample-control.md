@@ -1,16 +1,12 @@
 ---
 title: Building the Extension Unit Sample Control
-author: windows-driver-content
 description: Building the Extension Unit Sample Control
 ms.assetid: 57dd0bc3-2aab-42a2-b0c5-7f6ecaefd300
 keywords:
 - Extension Unit controls WDK USB Video Class
 - controls WDK USB Video Class
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Building the Extension Unit Sample Control
@@ -42,7 +38,8 @@ Use these steps to build the control:
     [Providing a UVC INF File](providing-a-uvc-inf-file.md)
 
 3.  Create a *sources* file as follows:
-    ```
+
+    ```make
     TARGETNAME= uvcxuplgn
     TARGETTYPE= DYNLINK
     TARGETPATH= obj
@@ -55,31 +52,34 @@ Use these steps to build the control:
     USE_STATIC_ATL=1
 
 
-    USER_INCLUDES= $(O)
 
-    INCLUDES=
+USER_INCLUDES= $(O)
 
-    SOURCES= interface.idl \
-     uvcxuplgn.cpp \
-             stdafx.cpp    \
-             interface_i.c \
-             vidcap_i.c    \
-             xuproxy.cpp
+INCLUDES=
 
-    TARGETLIBS= \
-            $(SDK_LIB_PATH)\kernel32.lib          \
-            $(SDK_LIB_PATH)\user32.lib            \
-            $(SDK_LIB_PATH)\gdi32.lib             \
-            $(SDK_LIB_PATH)\advapi32.lib          \
-            $(SDK_LIB_PATH)\comdlg32.lib          \
-            $(SDK_LIB_PATH)\ole32.lib             \
-            $(SDK_LIB_PATH)\oleaut32.lib          \
-            $(SDK_LIB_PATH)\uuid.lib              \
-            $(SDK_LIB_PATH)\comctl32.lib
-    ```
+SOURCES= interface.idl \
+ uvcxuplgn.cpp \
+         stdafx.cpp    \
+         interface_i.c \
+         vidcap_i.c    \
+         xuproxy.cpp
+
+TARGETLIBS= \
+        $(SDK_LIB_PATH)\kernel32.lib          \
+        $(SDK_LIB_PATH)\user32.lib            \
+        $(SDK_LIB_PATH)\gdi32.lib             \
+        $(SDK_LIB_PATH)\advapi32.lib          \
+        $(SDK_LIB_PATH)\comdlg32.lib          \
+        $(SDK_LIB_PATH)\ole32.lib             \
+        $(SDK_LIB_PATH)\oleaut32.lib          \
+        $(SDK_LIB_PATH)\uuid.lib              \
+        $(SDK_LIB_PATH)\comctl32.lib
+```
+
 
 4.  Create a *makefile* file as follows:
-    ```
+
+    ```make
     #############################################################################
     #
     #       Copyright (C) Microsoft Corporation 1995
@@ -106,7 +106,8 @@ Use these steps to build the control:
     -   Use the third GUID as the class GUID (clsid) for your extension unit. Replace the z-based GUID placeholder with the new GUID in *Xuplgin.inf, Xuproxy.h*, and *Xusample.rgs.*
 
 6.  Copy *Extend.def* from the WIA extend sample and edit it. *Uvcxuplugn.def* should contain:
-    ```
+
+    ```make
     LIBRARY uvcxuplgn
 
     EXPORTS
@@ -117,7 +118,8 @@ Use these steps to build the control:
     ```
 
 7.  Create *Uvcxuplgn.cpp* as follows:
-    ```
+
+    ```cpp
     #include "stdafx.h"
     CComModule _Module;
     #include <initguid.h>
@@ -172,7 +174,8 @@ Use these steps to build the control:
     ```
 
 8.  Create *Stdafx.h* as follows:
-    ```
+
+    ```cpp
     // stdafx.h : include file for standard system include files,
     //      or project specific include files that are used frequently,
     //      but are changed infrequently
@@ -204,7 +207,8 @@ Use these steps to build the control:
     ```
 
 9.  Create *Stdafx.cpp* as follows:
-    ```
+
+    ```cpp
     // stdafx.cpp : source file that includes just the standard includes
     //  stdafx.pch will be the pre-compiled header
     //  stdafx.obj will contain the pre-compiled type information
@@ -220,13 +224,3 @@ Use these steps to build the control:
     ```
 
 10. Build the sample by invoking Build -cZg in the WDK build environment.
-
- 
-
- 
-
-
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bstream\stream%5D:%20Building%20the%20Extension%20Unit%20Sample%20Control%20%20RELEASE:%20%288/23/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-

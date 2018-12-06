@@ -11,11 +11,8 @@ api_location:
 - NtosKrnl.exe
 api_type:
 - DllExport
-ms.author: windowsdriverdev
 ms.date: 01/05/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # DriverEntry of Video Miniport Driver function
@@ -26,7 +23,7 @@ ms.technology: windows-devices
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 ULONG DriverEntry(
   _In_ PVOID Context1,
   _In_ PVOID Context2
@@ -103,28 +100,28 @@ For Microsoft Windows 2000 and later drivers that also support computers running
 <tbody>
 <tr class="odd">
 <td align="left"><p>SIZE_OF_NT4_VIDEO_PORT_CONFIG_INFO</p></td>
-<td align="left"><p>The size, in bytes, of the Windows NT 4.0 [<strong>VIDEO_PORT_CONFIG_INFO</strong>](https://msdn.microsoft.com/library/windows/hardware/ff570531) structure.</p></td>
+<td align="left"><p>The size, in bytes, of the Windows NT 4.0 <a href="https://msdn.microsoft.com/library/windows/hardware/ff570531" data-raw-source="[&lt;strong&gt;VIDEO_PORT_CONFIG_INFO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff570531)"><strong>VIDEO_PORT_CONFIG_INFO</strong></a> structure.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>SIZE_OF_NT4_VIDEO_HW_INITIALIZATION_DATA</p></td>
-<td align="left"><p>The size, in bytes, of the Windows NT 4.0 [<strong>VIDEO_HW_INITIALIZATION_DATA</strong>](https://msdn.microsoft.com/library/windows/hardware/ff570505) structure. If [<strong>VideoPortInitialize</strong>](https://msdn.microsoft.com/library/windows/hardware/ff570320) fails, the video miniport driver should set the <strong>HwInitDataSize</strong> member of the VIDEO_HW_INITIALIZATION_DATA structure to the size of either the Windows 2000 (and later) version of this structure or the Windows NT 4.0 version. Choose the appropriate structure size to match the operating system version on which the miniport driver will run. The video miniport driver should then call <strong>VideoPortInitialize</strong> again. For an example of use, please see the video miniport driver samples that were included in the Windows Driver Development Kit (DDK).</p></td>
+<td align="left"><p>The size, in bytes, of the Windows NT 4.0 <a href="https://msdn.microsoft.com/library/windows/hardware/ff570505" data-raw-source="[&lt;strong&gt;VIDEO_HW_INITIALIZATION_DATA&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff570505)"><strong>VIDEO_HW_INITIALIZATION_DATA</strong></a> structure. If <a href="https://msdn.microsoft.com/library/windows/hardware/ff570320" data-raw-source="[&lt;strong&gt;VideoPortInitialize&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff570320)"><strong>VideoPortInitialize</strong></a> fails, the video miniport driver should set the <strong>HwInitDataSize</strong> member of the VIDEO_HW_INITIALIZATION_DATA structure to the size of either the Windows 2000 (and later) version of this structure or the Windows NT 4.0 version. Choose the appropriate structure size to match the operating system version on which the miniport driver will run. The video miniport driver should then call <strong>VideoPortInitialize</strong> again. For an example of use, please see the video miniport driver samples that were included in the Windows Driver Development Kit (DDK).</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>SIZE_OF_W2K_VIDEO_HW_INITIALIZATION_DATA</p></td>
-<td align="left"><p>The size, in bytes, of the Windows 2000 and later [<strong>VIDEO_HW_INITIALIZATION_DATA</strong>](https://msdn.microsoft.com/library/windows/hardware/ff570505) structure.</p></td>
+<td align="left"><p>The size, in bytes, of the Windows 2000 and later <a href="https://msdn.microsoft.com/library/windows/hardware/ff570505" data-raw-source="[&lt;strong&gt;VIDEO_HW_INITIALIZATION_DATA&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff570505)"><strong>VIDEO_HW_INITIALIZATION_DATA</strong></a> structure.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>SIZE_OF_WXP_VIDEO_HW_INITIALIZATION_DATA</p></td>
-<td align="left"><p>The size, in bytes, of the Windows Vista and later [<strong>VIDEO_HW_INITIALIZATION_DATA</strong>](https://msdn.microsoft.com/library/windows/hardware/ff570505) structure.</p></td>
+<td align="left"><p>The size, in bytes, of the Windows Vista and later <a href="https://msdn.microsoft.com/library/windows/hardware/ff570505" data-raw-source="[&lt;strong&gt;VIDEO_HW_INITIALIZATION_DATA&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff570505)"><strong>VIDEO_HW_INITIALIZATION_DATA</strong></a> structure.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>SIZE_OF_WXP_VIDEO_PORT_CONFIG_INFO</p></td>
-<td align="left"><p>The size, in bytes, of the Windows Vista [<strong>VIDEO_PORT_CONFIG_INFO</strong>](https://msdn.microsoft.com/library/windows/hardware/ff570531) structure.</p></td>
+<td align="left"><p>The size, in bytes, of the Windows Vista <a href="https://msdn.microsoft.com/library/windows/hardware/ff570531" data-raw-source="[&lt;strong&gt;VIDEO_PORT_CONFIG_INFO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff570531)"><strong>VIDEO_PORT_CONFIG_INFO</strong></a> structure.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 **DriverEntry** should be made pageable.
 
@@ -171,11 +168,10 @@ Requirements
 
 [**VideoPortZeroMemory**](https://msdn.microsoft.com/library/windows/hardware/ff570493)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20DriverEntry%20of%20Video%20Miniport%20Driver%20function%20%20RELEASE:%20%281/4/2018%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

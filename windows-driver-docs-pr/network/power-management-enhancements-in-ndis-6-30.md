@@ -2,11 +2,8 @@
 title: Power management enhancements in NDIS 6.30
 ms.assetid: A3B64252-DD6C-4715-8D4B-8D8176BC585B
 description: Introduces NDIS 6.30 power management enhancements to reduce computer power consumption
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Power Management Enhancements in NDIS 6.30
@@ -32,7 +29,7 @@ Starting with NDIS 6.30, miniport drivers issue an NDIS wake reason status indic
 
 **Note**  Support for NDIS wake reason status indications is optional for Mobile Broadband (MB) miniport drivers.
 
- 
+ 
 
 For more information, see [NDIS Wake Reason Status Indications](ndis-wake-reason-status-indications.md).
 
@@ -44,9 +41,9 @@ If the miniport sets the **NDIS\_MINIPORT\_ATTRIBUTES\_NO\_PAUSE\_ON\_SUSPEND** 
 
 For more information, see [**NDIS\_MINIPORT\_ADAPTER\_REGISTRATION\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565934).
 
- 
+ 
 
- 
+ 
 
 
 

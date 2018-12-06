@@ -10,17 +10,14 @@ keywords:
 - CoNDIS WDK networking , call closing
 - outgoing calls WDK CoNDIS
 - call managers WDK networking , call closing
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Tearing Down a Call
 
 
-## <a href="" id="ddk-tearing-down-a-call-ng"></a>
+
 
 
 A connection-oriented client can initiate the teardown of an outgoing call that it has made or an incoming call that it has accepted. Similarly, a remote party can initiate the teardown of an outgoing call that it has made or an incoming call that it has accepted.
@@ -31,9 +28,9 @@ This section includes:
 
 [Incoming Request to Close a Call](incoming-request-to-close-a-call.md)
 
- 
+ 
 
- 
+ 
 
 
 

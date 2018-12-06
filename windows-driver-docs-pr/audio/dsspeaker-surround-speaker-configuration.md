@@ -4,11 +4,8 @@ description: DSSPEAKER_SURROUND Speaker Configuration
 ms.assetid: de8f861b-f190-4915-b3f0-95d39965b612
 keywords:
 - DSSPEAKER_SURROUND speaker configuration WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # DSSPEAKER\_SURROUND Speaker Configuration
@@ -19,7 +16,7 @@ ms.technology: windows-devices
 
 **Note**  This information applies to Windows XP and earlier operating systems. Starting with Windows Vista, **IDirectSound::GetSpeakerConfig** and **IDirectSound::SetSpeakerConfig** have been deprecated.
 
- 
+ 
 
 An application program can change the DirectSound speaker configuration to surround mode by calling the **IDirectSound::SetSpeakerConfig** method with the speaker-configuration parameter set to DSSPEAKER\_SURROUND. This specifies a four-channel PCM format in which the channels are mapped to left, right, center, and back speakers.
 
@@ -39,12 +36,10 @@ In case (3) above, the application should avoid using hardware buffers for any o
 
 A stereo stream that has been surround-encoded by a KSNODETYPE\_PROLOGIC\_ENCODER node can be decoded into four channels (left, right, center, and back) by a [**KSNODETYPE\_PROLOGIC\_DECODER**](https://msdn.microsoft.com/library/windows/hardware/ff537185) node.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20DSSPEAKER_SURROUND%20Speaker%20Configuration%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

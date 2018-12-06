@@ -4,17 +4,14 @@ description: Determining Task Offload Capabilities
 ms.assetid: 9348a595-7bc0-467e-aeaf-e23100c99524
 keywords:
 - task offload WDK TCP/IP transport , capabilities
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Determining Task Offload Capabilities
 
 
-## <a href="" id="ddk-determining-task-offload-capabilities-ng"></a>
+
 
 
 NDIS supports task offload services that are enhanced forms of the NDIS 5.1 and earlier task offload services. For more information about how to determine connection offload capabilities, see [Determining Connection Offload Capabilities](determining-connection-offload-capabilities.md).
@@ -47,9 +44,9 @@ The following topics contain specific information for each type of offload servi
 -   [Reporting a NIC's IPsec Capabilities](reporting-a-nic-s-ipsec-capabilities.md)
     - \[The IPsec Task Offload feature is deprecated and should not be used.\]
 
- 
+ 
 
- 
+ 
 
 
 

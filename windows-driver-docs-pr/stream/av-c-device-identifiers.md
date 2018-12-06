@@ -1,6 +1,5 @@
 ---
 title: AV/C Device Identifiers
-author: windows-driver-content
 description: AV/C Device Identifiers
 ms.assetid: c2d108c7-5ea9-42c1-92d7-5ba90f2f4232
 keywords:
@@ -8,17 +7,14 @@ keywords:
 - identifiers WDK AV/C
 - device IDs WDK AV/C
 - Avc.sys function driver WDK , identifiers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # AV/C Device Identifiers
 
 
-## <a href="" id="ddk-avc-sys-device-ids-ksg"></a>
+
 
 
 When a user connects an AV/C device to the computer, *Avc.sys* enumerates the active subunits on the device and generates the device identifier (ID) strings for them. There is a device identifier for each active subunit in an AV/C device. If there are no active subunits in an AV/C device, then *Avc.sys* generates a device identifier for the AV/C device itself.
@@ -91,12 +87,10 @@ If the ***SubunitType*** field is available, the ***SubunitID*** field also is a
 
 For AV/C units that do not provide a ***SubunitType*** or ***SubunitID***, the device identifier string then consists of only the ***Vendor*** and ***Model*** fields, with no trailing ampersand (&).
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bstream\stream%5D:%20AV/C%20Device%20Identifiers%20%20RELEASE:%20%288/23/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

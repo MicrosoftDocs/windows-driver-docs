@@ -1,13 +1,9 @@
 ---
 title: Connection IDs for Serially Connected Peripheral Devices
-author: windows-driver-content
 description: If you write a driver for a peripheral device that is connected to a serial port managed by SerCx2, the list of hardware resources that the driver receives includes a connection ID that encapsulates the device connection information from the platform firmware.
 ms.assetid: 9A688552-DFAF-48A1-935D-70C3B13F30EC
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Connection IDs for Serially Connected Peripheral Devices
@@ -31,12 +27,10 @@ Immediately after opening a serial port, a client should assume that the port is
 
 To configure a serial port for operation, the client sends I/O control (IOCTL) requests to the serial controller. Typically, the client sends an [**IOCTL\_SERIAL\_APPLY\_DEFAULT\_CONFIGURATION**](https://msdn.microsoft.com/library/windows/hardware/hh406621) request to the controller to set the port to its default configuration. If necessary, the client can send additional serial IOCTLs to override one or more default configuration settings. For example, Windows defines serial IOCTLs to change the baud rate, the flow-control parameters, the line-control settings, and the time-out values for read and write requests. For a list of serial IOCTLs that are supported by SerCx2, see [Serial I/O Request Interface](serial-i-o-request-interface.md).
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bserports\serports%5D:%20Connection%20IDs%20for%20Serially%20Connected%20Peripheral%20Devices%20%20RELEASE:%20%288/4/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

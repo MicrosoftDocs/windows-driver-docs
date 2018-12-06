@@ -2,11 +2,8 @@
 title: Overview of the Enhanced Storage Certificate Management Tool
 description: Overview of the Enhanced Storage Certificate Management Tool
 ms.assetid: 963e6510-d62f-421f-9c3d-781092f98969
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Overview of the Enhanced Storage Certificate Management Tool
@@ -40,7 +37,7 @@ The Enhanced Storage Certificate Management tool manages certificates within the
 
 **Note**  You cannot add, delete, or remove the ASCm certificate by using this tool.
 
- 
+ 
 
 The Enhanced Storage Certificate Management tool performs these functions by issuing IEEE 1667 commands to an ACT on a USB storage device. Each USB storage device is specified through a unique volume name in the following format:
 
@@ -62,15 +59,14 @@ For example, the following is an example of the volume name for a USB storage de
 
 **Note**  To produce a list of the volume names of the IEEE 1667-compliant USB storage devices that are currently connected to a computer, type **EhStorCertMgrCmd /List** at the command-line.
 
- 
+ 
 
 In order to issue IEEE 1667 commands to an ACT on a USB storage device, the user might need to be authenticated to use the device. Authentication is based on the PCp certificate and private key that is available to the user. If the user does not have the correct PCp certificate and private key, the user will not have access to the device for provisioning through the Enhanced Storage Certificate Management tool.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20Overview%20of%20the%20Enhanced%20Storage%20Certificate%20Management%20Tool%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

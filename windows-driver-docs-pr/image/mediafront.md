@@ -9,11 +9,8 @@ api_name:
 - wscn MediaFront
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # MediaFront element
@@ -24,7 +21,7 @@ The required **MediaFront** element contains all parameters that are specific to
 Usage
 -----
 
-``` syntax
+```xml
 <wscn:MediaFront>
   child elements
 </wscn:MediaFront>
@@ -49,13 +46,13 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ColorProcessing</strong>](colorprocessing.md)</p></td>
+<td><p><a href="colorprocessing.md" data-raw-source="[&lt;strong&gt;ColorProcessing&lt;/strong&gt;](colorprocessing.md)"><strong>ColorProcessing</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>Resolution</strong>](resolution.md)</p></td>
+<td><p><a href="resolution.md" data-raw-source="[&lt;strong&gt;Resolution&lt;/strong&gt;](resolution.md)"><strong>Resolution</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>ScanRegion</strong>](scanregion.md)</p></td>
+<td><p><a href="scanregion.md" data-raw-source="[&lt;strong&gt;ScanRegion&lt;/strong&gt;](scanregion.md)"><strong>ScanRegion</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -74,7 +71,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>MediaSides</strong>](mediasides.md)</p></td>
+<td><p><a href="mediasides.md" data-raw-source="[&lt;strong&gt;MediaSides&lt;/strong&gt;](mediasides.md)"><strong>MediaSides</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -84,7 +81,7 @@ Remarks
 
 If the **MediaFront** element does not contain a [**ScanRegion**](scanregion.md) element, the WSD Scan Service should use 0 as the offsets and the width and height of the [**InputMediaSize**](inputmediasize.md), if given. If **ScanRegion** is missing and **InputMediaSize** is not specified or cannot be determined by the scan device, you can determine the implementation.
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**ColorProcessing**](colorprocessing.md)
@@ -99,11 +96,10 @@ If the **MediaFront** element does not contain a [**ScanRegion**](scanregion.md)
 
 [**ScanRegion**](scanregion.md)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bimage\image%5D:%20MediaFront%20element%20%20RELEASE:%20%2811/8/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

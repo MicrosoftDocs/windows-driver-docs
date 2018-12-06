@@ -2,11 +2,8 @@
 title: Debugging memory leaks - DRIVER_VERIFIER_DETECTED_VIOLATION (C4) 0x62
 description: Driver Verifier generates Bug Check 0xC4 DRIVER_VERIFIER_DETECTED_VIOLATION with a parameter 1 value of 0x62 when a driver unloads without first freeing all of its pool allocations.
 ms.assetid: CDBE9A18-4126-4AD7-8E53-6D75DCA8B022
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Debugging memory leaks - DRIVER\_VERIFIER\_DETECTED\_VIOLATION (C4): 0x62
@@ -74,7 +71,7 @@ Reserved
 Total number of allocations that were not freed, including both paged and non-paged pool.
 The driver is unloading without first freeing its pool allocations. In Windows 8.1, this bug check will also occur if the driver unloaded without first freeing any work items ([**IO\_WORKITEM**](https://msdn.microsoft.com/library/windows/hardware/ff550679)) it had allocated with [**IoAllocateWorkItem**](https://msdn.microsoft.com/library/windows/hardware/ff548276). A bug check with this parameter occurs only when the [Pool Tracking](pool-tracking.md) option is active.
 Specify [Pool Tracking](pool-tracking.md) (**verifier /flags 0x8**). The Pool Tracking option is enabled with Standard Flags (**verifier /standard** ).
- 
+ 
 
 ### Use the !verifier 3 extension command to find out about the pool allocations
 
@@ -278,11 +275,10 @@ For other techniques you can use, including scenarios where Driver Verifier is n
 
 [Handling a Bug Check When Driver Verifier is Enabled](https://msdn.microsoft.com/library/windows/hardware/hh450984)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20Debugging%20memory%20leaks%20-%20DRIVER_VERIFIER_DETECTED_VIOLATION%20%28C4%29:%200x62%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

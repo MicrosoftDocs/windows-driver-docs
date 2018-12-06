@@ -9,17 +9,14 @@ keywords:
 - digital signatures WDK , Authenticode
 - verifying Authenticode signatures
 - checking Authenticode signatures
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using SetupAPI To Verify Driver Authenticode Signatures
 
 
-## <a href="" id="ddk-using-setupapi-to-verify-driver-authenticode-signatures-dg"></a>
+
 
 
 You can use the following procedures to verify that a driver has a valid Authenticode [digital signature](digital-signatures.md). These procedures are supported starting with Microsoft Windows Server 2003.
@@ -66,9 +63,9 @@ However, be aware that the version is not set in the **Version** member.
 
 **SetupScanFileQueue** sets the ERROR_AUTHENTICODE_Xxx error code in the same way as described earlier in this topic for **SetupVerifyInfFile**.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -5,11 +5,8 @@ ms.assetid: 4DBDB53D-CA64-4c19-84A5-FBE1529FD0C5
 keywords:
 - registry WDK device installations , modifying registry values in a device's software key
 - modifying registry values WDK device installations , device software key
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Modifying Registry Values in a Device's Software Key
@@ -41,7 +38,7 @@ These device properties represent a device's installation state. Direct modifica
 
 **Note**  Starting with Windows Vista, the operating system imposes "installation-time only" access restrictions for these properties. Values can be replicated for compatibility, and direct modification of values during device installation does not affect internal state.
 
- 
+ 
 
 To safely modify the values of other registry entries in a device's software key, follow these guidelines:
 
@@ -53,9 +50,9 @@ To safely modify the values of other registry entries in a device's software key
 
     For example, to change the name of the device as displayed to the user, change its [**DEVPKEY_Device_FriendlyName**](https://msdn.microsoft.com/library/windows/hardware/ff542502) device property.
 
- 
+ 
 
- 
+ 
 
 
 

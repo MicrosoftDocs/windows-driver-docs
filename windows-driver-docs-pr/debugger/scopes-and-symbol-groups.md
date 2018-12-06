@@ -3,11 +3,8 @@ title: Scopes and Symbol Groups
 description: Scopes and Symbol Groups
 ms.assetid: f14b6361-9962-4fa3-bb1a-dfde066754b9
 keywords: ["Debugger Engine API, symbols, symbol groups", "symbol group, scopes", "Debugger Engine API, symbols, scopes", "scopes"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Scopes and Symbol Groups
@@ -22,13 +19,13 @@ There are two ways to create a symbol group. An empty symbol group is returned b
 
 **Note**   The symbol group generated from the current scope is a snapshot of the local variables. If any execution occurs in the target, the symbols may no longer be accurate. Also, if the current scope changes, the symbol group will no longer represent the *current* scope (because it will continue to represent the scope for which it was created).
 
- 
+ 
 
 Symbols can be added to a symbol group using [**AddSymbol**](https://msdn.microsoft.com/library/windows/hardware/ff537925), and removed using [**RemoveSymbolByIndex**](https://msdn.microsoft.com/library/windows/hardware/ff554510) or [**RemoveSymbolByName**](https://msdn.microsoft.com/library/windows/hardware/ff554518). The method [**OutputAsType**](https://msdn.microsoft.com/library/windows/hardware/ff553191) tells the debugger to use a different symbol type when handling a symbol's data.
 
 **Note**   The values for scoped symbols may not be accurate. In particular, the machine architecture and compiler optimizations may prevent the debugger from accurately determining a symbol's value.
 
- 
+ 
 
 The *symbol entry information* is a description of a symbol, including its location and its type. To find this information for a symbol in a module, use the [**IDebugSymbols3::GetSymbolEntryInformation**](https://msdn.microsoft.com/library/windows/hardware/ff548484). To find this information for a symbol in a symbol group, use [**IDebugSymbolGroup2::GetSymbolEntryInformation**](https://msdn.microsoft.com/library/windows/hardware/ff548487). See [**DEBUG\_SYMBOL\_ENTRY**](https://msdn.microsoft.com/library/windows/hardware/ff541662) for details of the symbol entry information.
 
@@ -76,11 +73,10 @@ The *thread context* is the state preserved by Windows when switching threads. T
 
 The thread context is represented by the CONTEXT structure defined in ntddk.h. This structure is platform-dependent and its interpretation depends on the effective processor type. The methods [**GetThreadContext**](https://msdn.microsoft.com/library/windows/hardware/ff549291) and [**SetThreadContext**](https://msdn.microsoft.com/library/windows/hardware/ff556829) can be used to get and set the thread context.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Scopes%20and%20Symbol%20Groups%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

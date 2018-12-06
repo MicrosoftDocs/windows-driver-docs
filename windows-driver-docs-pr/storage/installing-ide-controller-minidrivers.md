@@ -1,16 +1,12 @@
 ---
 title: Installing IDE Controller Minidrivers
-author: windows-driver-content
 description: Installing IDE Controller Minidrivers
 ms.assetid: c1b41f89-150d-47e9-9bed-04f5796f69bd
 keywords:
 - IDE controller minidrivers WDK storage , installing
 - storage IDE controller minidrivers WDK , installing
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installing IDE Controller Minidrivers
@@ -23,7 +19,7 @@ This section provides installation information that is specific to IDE controlle
 
 Vendors supplying their own controller minidriver should make that driver a member of the Hard Disk Controllers (HDC) setup class in the [**INF Version Section**](https://msdn.microsoft.com/library/windows/hardware/ff547502) of the driver's INF file. For example:
 
-```
+```cpp
 [version]
 Signature="$WINDOWS NT$"
 Class=hdc
@@ -36,11 +32,10 @@ For more installation information, including a list of controller hardware suppo
 
 For general information about device installation in Windows 2000 and later operating systems, see [Requirements for Vendor-Supplied IDE Controller Minidrivers](requirements-for-vendor-supplied-ide-controller-minidrivers.md) and [Device Installation Overview](https://msdn.microsoft.com/library/windows/hardware/ff549455).
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

@@ -10,11 +10,8 @@ keywords:
 - texture management WDK Direct3D , addressing
 - texture management WDK Direct3D , filtering
 - texture management WDK Direct3D , blending
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Texture Addressing and Filtering Operations
@@ -70,22 +67,21 @@ Although addressing and sampling operations are defined in conjunction with blen
 </tr>
 <tr class="even">
 <td align="left"><p>D3DTSS_TEXCOORDINDEX</p></td>
-<td align="left"><p>Specifies the index of a texture coordinate set. This integer indicates the index of the set of texture coordinates from which the addressing unit should sample. These coordinates are listed in the incoming flexible vertex format ([FVF](fvf--flexible-vertex-format-.md)) vertex data in numerical order, with zero being the standard DirectX set of texture coordinates, one being a second texture coordinate set, and so on. This allows textures to share sets of texture coordinates as desired.</p></td>
+<td align="left"><p>Specifies the index of a texture coordinate set. This integer indicates the index of the set of texture coordinates from which the addressing unit should sample. These coordinates are listed in the incoming flexible vertex format (<a href="fvf--flexible-vertex-format-.md" data-raw-source="[FVF](fvf--flexible-vertex-format-.md)">FVF</a>) vertex data in numerical order, with zero being the standard DirectX set of texture coordinates, one being a second texture coordinate set, and so on. This allows textures to share sets of texture coordinates as desired.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 **Note**   To be Direct3D-compliant, drivers are required to properly parse up to eight texture coordinate sets, even if the device can only iterate and use the number of coordinates defined in **dwFVFCaps**. The driver must use D3DTSS\_TEXCOORDINDEX to grab the right coordinates to use for texturing.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Texture%20Addressing%20and%20Filtering%20Operations%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

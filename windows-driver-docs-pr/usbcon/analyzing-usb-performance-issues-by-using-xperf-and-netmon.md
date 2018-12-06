@@ -1,12 +1,8 @@
 ---
 Description: This topic provides information about how to view the timeline of events captured in a USB ETW log.
 title: Analyzing USB Performance Issues by Using Xperf and Netmon
-author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Analyzing USB Performance Issues by Using Xperf and Netmon
@@ -20,39 +16,35 @@ If you are familiar with both Xperf and the USB ETW events, you can create a USB
 
 Start the two traces in parallel by issuing the following commands from an elevated command prompt:
 
-```
+```cpp
 Xperf –on Diag
 
 Logman start Usbtrace -p Microsoft-Windows-USB-USBPORT -o usbtrace.etl -ets -nb 128 640 -bs 128
 
 Logman update Usbtrace -p Microsoft-Windows-USB-USBHUB –ets
-
 ```
 
 Perform the actions for the problem scenario, and then stop the traces by issuing the following commands from an elevated command prompt:
 
-```
+```cpp
 Logman stop Usbtrace -ets
 
 Xperf –stop
-
 ```
 
 Merge the two trace log file into a single file by using the following command (privileges are not required):
 
-```
+```cpp
 Xperf –merge usbtrace.etl C:\kernel.etl merged.etl
-
 ```
 
 This example creates a merged file that is named merged.etl. You can open this file with either the Xperf Performance Analyzer or with Netmon. To open the file in Xperf, run the following command:
 
-```
+```cpp
 Xperf merged.etl
-
 ```
 
-Xperf shows specialized graphs for a wide range of kernel events as shown in this image. For more information on Xperf recording options and the Xperf GUI, [The Xperf Command Line Tool in Detail](http://msdn.microsoft.com/library/cc305221.aspx) and [Windows Performance Analyzer (WPA)](http://msdn.microsoft.com/library/cc305187.aspx).
+Xperf shows specialized graphs for a wide range of kernel events as shown in this image. For more information on Xperf recording options and the Xperf GUI, [The Xperf Command Line Tool in Detail](https://msdn.microsoft.com/library/cc305221.aspx) and [Windows Performance Analyzer (WPA)](https://msdn.microsoft.com/library/cc305187.aspx).
 
 ![windows performance analyzer](images/xperf3.png)
 
@@ -60,9 +52,8 @@ To open the merged trace log in Netmon, run Netmon, click **File -&gt; Open -&gt
 
 By default, Netmon displays all events in the merged trace file. To show only the USB events, apply a filter such as the following:
 
-```
+```cpp
 ProtocolName == "USBHub_MicrosoftWindowsUSBUSBHUB" OR ProtocolName == "USBPort_MicrosoftWindowsUSBUSBPORT"
-
 ```
 
 You can enter this filter text in the Netmon Filter Display pane. For more information on using filters in Netmon, see "USB Netmon Filters" in this [Case Study: Troubleshooting an Unknown USB Device by Using ETW and Netmon](case-study--troubleshooting-an-unknown-usb-device-by-using-etw-and-netmon.md).
@@ -74,11 +65,11 @@ To analyze the timing of USB events, you can look at the time difference between
 1.  In the **Frame Summary** pane, right-click a column title, and select **Choose Columns**.
 2.  In the **Disabled Columns** list, select **Time Delta**, click **Add**, and then click **OK**.
 3.  Write a filter that displays only the events whose timing you would like to see. For example, to view the delays between non-overlapping bulk-transfer dispatch and complete events, add the following filter:
-    ```
+    ```cpp
     Description == "USBPort_MicrosoftWindowsUSBUSBPORT:Dispatch URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER" 
     OR Description == "USBPort_MicrosoftWindowsUSBUSBPORT:Complete URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER" 
     OR Description == "USBPort_MicrosoftWindowsUSBUSBPORT:Complete URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER with Data"
-    
+
     ```
 
     1.  You can choose the event IDs (descriptions) from the events that appear in the trace.
@@ -88,7 +79,5 @@ To analyze the timing of USB events, you can look at the time difference between
 [USB Event Tracing for Windows](usb-event-tracing-for-windows.md)  
 [Using Xperf with USB ETW](using-xperf-with-usb-etw.md)  
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20Analyzing%20USB%20Performance%20Issues%20by%20Using%20Xperf%20and%20Netmon%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

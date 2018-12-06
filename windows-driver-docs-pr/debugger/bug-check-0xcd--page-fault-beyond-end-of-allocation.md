@@ -3,17 +3,14 @@ title: Bug Check 0xCD PAGE_FAULT_BEYOND_END_OF_ALLOCATION
 description: The PAGE_FAULT_BEYOND_END_OF_ALLOCATION bug check has a value of 0x000000CD. This indicates that the system accessed memory beyond the end of some driver's pool allocation.
 ms.assetid: ce506f92-94a9-4ef5-974b-32013410468a
 keywords: ["Bug Check 0xCD PAGE_FAULT_BEYOND_END_OF_ALLOCATION", "PAGE_FAULT_BEYOND_END_OF_ALLOCATION"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - PAGE_FAULT_BEYOND_END_OF_ALLOCATION
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0xCD: PAGE\_FAULT\_BEYOND\_END\_OF\_ALLOCATION
@@ -21,7 +18,7 @@ api_type:
 
 The PAGE\_FAULT\_BEYOND\_END\_OF\_ALLOCATION bug check has a value of 0x000000CD. This indicates that the system accessed memory beyond the end of some driver's pool allocation.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## PAGE\_FAULT\_BEYOND\_END\_OF\_ALLOCATION Parameters
 
@@ -58,7 +55,7 @@ The PAGE\_FAULT\_BEYOND\_END\_OF\_ALLOCATION bug check has a value of 0x000000CD
 </tbody>
 </table>
 
- 
+ 
 
 If the driver responsible for the error can be identified, its name is printed on the blue screen and stored in memory at the location (PUNICODE\_STRING) **KiBugCheckDriver**.
 
@@ -74,9 +71,9 @@ Remarks
 
 This cannot be protected by a **try - except** handler -- it can only be protected by a probe.
 
- 
+ 
 
- 
+ 
 
 
 

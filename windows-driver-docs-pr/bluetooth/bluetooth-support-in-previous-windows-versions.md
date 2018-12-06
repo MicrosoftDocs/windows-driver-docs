@@ -2,11 +2,8 @@
 title: Bluetooth Version and Profile Support in Previous Windows Versions
 description: Bluetooth Version and Profile Support in Previous Windows Versions
 ms.assetid: 5209DE94-241D-4EFA-BA00-884EC74C8C1B
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Bluetooth Version and Profile Support in Previous Windows Versions
@@ -15,12 +12,12 @@ ms.technology: windows-devices
 **Note**  
 Looking for drivers for your Bluetooth audio device? See [Fix connections to Bluetooth audio devices and wireless displays](http://go.microsoft.com/fwlink/p/?LinkID=623629).
 
- 
+ 
 
 **Note**  
 For information about Bluetooth support in Windows 10, see [Bluetooth Support in Windows 10](general-bluetooth-support-in-windows.md).
 
- 
+ 
 
 ## <span id="Which_previous_versions_of_Windows_support_Bluetooth_wireless_technology_"></span><span id="which_previous_versions_of_windows_support_bluetooth_wireless_technology_"></span><span id="WHICH_PREVIOUS_VERSIONS_OF_WINDOWS_SUPPORT_BLUETOOTH_WIRELESS_TECHNOLOGY_"></span>Which previous versions of Windows support Bluetooth wireless technology?
 
@@ -68,7 +65,7 @@ Windows support for different versions of the Bluetooth specification depends on
 <th align="left">Windows version</th>
 <th align="left">Version 1.1</th>
 <th align="left">Version 2.0</th>
-<th align="left">Version 2.0 with EDR*</th>
+<th align="left">Version 2.0 with EDR<em></th>
 <th align="left">Version 2.1</th>
 <th align="left">Version 2.1 with EDR</th>
 <th align="left">Version 4.0</th>
@@ -121,7 +118,7 @@ Windows support for different versions of the Bluetooth specification depends on
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
-<td align="left"><p>**</p></td>
+<td align="left"><p></em>*</p></td>
 <td align="left"><p></p></td>
 <td align="left"><p></p></td>
 <td align="left"><p></p></td>
@@ -149,7 +146,7 @@ Windows support for different versions of the Bluetooth specification depends on
 </tbody>
 </table>
 
- 
+ 
 
 \* EDR support starting in Windows Vista and later is enhanced relative to the Bluetooth stack for Windows XP.
 
@@ -217,7 +214,7 @@ Windows Vista includes the following enhancements to the Bluetooth stack and re
 </tr>
 <tr class="odd">
 <td align="left"><p>03F0</p></td>
-<td align="left"><p>011D&Rev_0017</p></td>
+<td align="left"><p>011D&amp;Rev_0017</p></td>
 <td align="left"><p>Hewlett Packard nc4200</p></td>
 </tr>
 <tr class="even">
@@ -247,7 +244,7 @@ Windows Vista includes the following enhancements to the Bluetooth stack and re
 </tr>
 <tr class="odd">
 <td align="left"><p>049F</p></td>
-<td align="left"><p>0086&Rev_1393</p></td>
+<td align="left"><p>0086&amp;Rev_1393</p></td>
 <td align="left"><p>Hewlett Packard nx7000</p></td>
 </tr>
 <tr class="even">
@@ -277,7 +274,7 @@ Windows Vista includes the following enhancements to the Bluetooth stack and re
 </tr>
 <tr class="odd">
 <td align="left"><p>0DB0</p></td>
-<td align="left"><p>6855&Rev_2000</p></td>
+<td align="left"><p>6855&amp;Rev_2000</p></td>
 <td align="left"><p>Message signaled interrupt (MSI) Bluetooth device</p></td>
 </tr>
 <tr class="even">
@@ -293,7 +290,7 @@ Windows Vista includes the following enhancements to the Bluetooth stack and re
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Which_Bluetooth_profiles_have_in-box_support_in_previous_versions_of_Windows_"></span><span id="which_bluetooth_profiles_have_in-box_support_in_previous_versions_of_windows_"></span><span id="WHICH_BLUETOOTH_PROFILES_HAVE_IN-BOX_SUPPORT_IN_PREVIOUS_VERSIONS_OF_WINDOWS_"></span>Which Bluetooth profiles have in-box support in previous versions of Windows?
 
@@ -361,7 +358,7 @@ Windows 7 and Windows Vista include additional and updated Bluetooth profiles 
 </tbody>
 </table>
 
- 
+ 
 
 Windows included in-box support for the following Bluetooth profiles:
 
@@ -404,7 +401,7 @@ Windows included in-box support for the following Bluetooth profiles:
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Windows_Phone_8_PICS_report"></span><span id="windows_phone_8_pics_report"></span><span id="WINDOWS_PHONE_8_PICS_REPORT"></span>Windows Phone 8 PICS report
 
@@ -438,18 +435,17 @@ Windows 7 introduced new Ex versions of previous APIs to provide enhanced funct
 
 Windows Vista introduced a kernel-mode DDI for Bluetooth wireless technology, which provides access to SCO, SDP, and L2CAP. The DDI is included with Windows Driver Kit (WDK) build 6000, which was released with Windows Vista, and all later builds of the WDK. We do not intend to make the kernel-mode DDI available on earlier versions of Windows. The [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?LinkId=733613) can be used to verify that kernel-mode Bluetooth drivers comply with standard driver development practices and use the DDI correctly.
 
-Windows Vista with SP2 and Windows 7 also support the user-mode RFComm and Bluetooth APIs. For more information, see ”Bluetooth” on the MSDN Web site. The WDK includes documentation for the new kernel-mode DDI. For more information about how to download the WDK, see ”How to Get the WDK” on the WHDC Web site. The HCK includes documentation for Driver Test Manager (DTM). For more information about how to download the HCK, see the [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?LinkId=733613) documentation.
+Windows Vista with SP2 and Windows 7 also support the user-mode RFComm and Bluetooth APIs. For more information, see the [Bluetooth design guide](https://docs.microsoft.com/windows-hardware/drivers/bluetooth/). The WDK includes documentation for the new kernel-mode DDI. For more information about how to download the WDK, see [Other WDK downloads](https://docs.microsoft.com/windows-hardware/drivers/other-wdk-downloads) The HCK includes documentation for Driver Test Manager (DTM). For more information about how to download the HCK, see the [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?LinkId=733613) documentation.
 
 ## <span id="related_topics"></span>Related topics
 
 
 [Bluetooth Support in Windows 10](general-bluetooth-support-in-windows.md)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[bltooth\bltooth]:%20Bluetooth%20Version%20and%20Profile%20Support%20in%20Previous%20Windows%20Versions%20%20RELEASE:%20%283/20/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

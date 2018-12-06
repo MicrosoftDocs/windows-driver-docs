@@ -2,11 +2,8 @@
 title: RunFixtureAs
 description: TAEF provides a mechanism to execute test fixtures within a different context than their corresponding tests.
 ms.assetid: FAFF5265-5268-412E-86A5-149B187B1376
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # RunFixtureAs
@@ -45,14 +42,14 @@ TAEF runs the fixture as Local System.
 
 **Note**  The test fixtures that you run as Local System should not create any UI. If your fixtures need to create or interact with UI, you need to move your UI-related code into separate executables that are launched on a desktop from your tests using CreateProcessAsUser.
 
- 
+ 
 
 <span id="Elevated"></span><span id="elevated"></span><span id="ELEVATED"></span>**Elevated**  
 TAEF ensures that the fixture is run in an elevated process by spawning an elevated process in which to run the fixture if necessary.
 
 **Note**  The user executing TAEF must be a member of the administrators group in order to execute fixtures marked with RunFixtureAs=Elevated. This is due to the fact that non-administrators do not have a split token to elevate.
 
- 
+ 
 
 <span id="Default"></span><span id="default"></span><span id="DEFAULT"></span>**Default**  
 TAEF runs the fixture in the same context as Te.exe (but still within a different process than the test).
@@ -66,10 +63,10 @@ TAEF runs the fixture in an 'Immersive Broker' process.
 -   Running tests remotely with 'RunFixtureAs=Broker' is not currently supported.
 -   When executing with 'RunFixtureAs=Broker' TAEF will use the "TE.ProcessHost.Broker.exe" process for fixture execution, not "TE.ProcessHost.exe".
 
- 
+ 
 
 <span id="UIAccess"></span><span id="uiaccess"></span><span id="UIACCESS"></span>**UIAccess**  
-TAEF runs the fixture in a process marked-up with the UIAccess execution level. For information on UIAccess for UI automation applications, see the [Windows Integrity Mechanism Design](https://msdn.microsoft.com/en-us/library/bb625963).
+TAEF runs the fixture in a process marked-up with the UIAccess execution level. For information on UIAccess for UI automation applications, see the [Windows Integrity Mechanism Design](https://msdn.microsoft.com/library/bb625963).
 
 **Note**  
 -   UIAccess is only supported on Vista and higher operating systems.
@@ -77,14 +74,14 @@ TAEF runs the fixture in a process marked-up with the UIAccess execution level. 
 -   Running tests remotely with 'RunFixtureAs=UIAccess' is not currently supported.
 -   When executing with 'RunFixtureAs=UIAccess' TAEF will use the "TE.ProcessHost.UIAccess.exe" process for fixture execution, not "TE.ProcessHost.exe".
 
- 
+ 
 
 <span id="Test"></span><span id="test"></span><span id="TEST"></span>**Test**  
 TAEF runs the fixture in the same process or context as the test.
 
 **Note**  This is the default TAEF behavior when no RunFixtureAs settings are specified.
 
- 
+ 
 
 ## <span id="RunFixtureAs__scope_"></span><span id="runfixtureas__scope_"></span><span id="RUNFIXTUREAS__SCOPE_"></span>RunFixtureAs:\[scope\]
 
@@ -416,11 +413,10 @@ The above example will run tests and fixtures as follows:
 -   MyClassSetup and MyClassCleanup run as Elevated
 -   MyModuleSetup and MyModuleCleanup run as System (within a different process than MyTestMethod)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[taef\taef]:%20RunFixtureAs%20%20RELEASE:%20%289/12/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

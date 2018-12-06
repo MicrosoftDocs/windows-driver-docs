@@ -7,11 +7,8 @@ keywords:
 - drawing WDK DirectDraw , return values
 - DirectDraw WDK Windows 2000 display , return values
 - errors WDK DirectDraw
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Return Values for DirectDraw
@@ -44,15 +41,15 @@ A function in a DirectDraw driver must return one of the two return codes: DDHAL
 </tr>
 <tr class="even">
 <td align="left"><p>DDHAL_DRIVER_HANDLED</p></td>
-<td align="left"><p>The driver has performed the operation and returned a valid return code for that operation in the <strong>ddrval</strong> member of the structure passed to the driver's callback. If this code is DD_OK, DirectDraw or Direct3D proceeds with the function. Otherwise, DirectDraw or Direct3D returns the error code provided by the driver and aborts the function.</p></td>
+<td align="left"><p>The driver has performed the operation and returned a valid return code for that operation in the <strong>ddrval</strong> member of the structure passed to the driver&#39;s callback. If this code is DD_OK, DirectDraw or Direct3D proceeds with the function. Otherwise, DirectDraw or Direct3D returns the error code provided by the driver and aborts the function.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>DDHAL_DRIVER_NOCKEYHW</p></td>
-<td align="left"><p>The display driver couldn't handle the call because it ran out of color key hardware resources.</p></td>
+<td align="left"><p>The display driver couldn&#39;t handle the call because it ran out of color key hardware resources.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>DDHAL_DRIVER_NOTHANDLED</p></td>
-<td align="left"><p>The driver has no comment on the requested operation. If the driver is required to have implemented a particular callback, DirectDraw or Direct3D reports an error condition. Otherwise, DirectDraw or Direct3D handles the operation as if the driver callback had not been defined by executing the DirectDraw or Direct3D device-independent implementation. DirectDraw and Direct3D typically ignore any value returned in the <strong>ddrval</strong> member of that callback's parameter structure.</p></td>
+<td align="left"><p>The driver has no comment on the requested operation. If the driver is required to have implemented a particular callback, DirectDraw or Direct3D reports an error condition. Otherwise, DirectDraw or Direct3D handles the operation as if the driver callback had not been defined by executing the DirectDraw or Direct3D device-independent implementation. DirectDraw and Direct3D typically ignore any value returned in the <strong>ddrval</strong> member of that callback&#39;s parameter structure.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>DDERR_GENERIC</p></td>
@@ -69,7 +66,7 @@ A function in a DirectDraw driver must return one of the two return codes: DDHAL
 </tbody>
 </table>
 
- 
+ 
 
 A [DxApi function](https://msdn.microsoft.com/library/windows/hardware/ff557387) that is implemented in a [video miniport driver](video-miniport-drivers-in-the-windows-2000-display-driver-model.md) returns one of the codes in the following table. These codes are defined in *dxmini.h*.
 
@@ -104,13 +101,12 @@ A [DxApi function](https://msdn.microsoft.com/library/windows/hardware/ff557387)
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Return%20Values%20for%20DirectDraw%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

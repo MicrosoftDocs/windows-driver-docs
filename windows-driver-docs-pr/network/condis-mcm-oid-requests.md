@@ -5,17 +5,14 @@ ms.assetid: efddbcb0-98f1-4cd3-9707-f3ed17c20181
 keywords:
 - miniport call managers WDK networking , OID requests
 - MCMs WDK networking , OID requests
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # CoNDIS MCM OID Requests
 
 
-## <a href="" id="ddk-condis-mcm-driver-oid-requests-ng"></a>
+
 
 
 Like other CoNDIS call managers, miniport call managers (MCMs) can query or set the operating parameters of CoNDIS client drivers. CoNDIS client drivers can query or set the call manager parameters or the miniport driver parameters of an MCM.
@@ -52,9 +49,9 @@ If *ProtocolCoOidRequest* or **MininportCoOidRequest** returns NDIS\_STATUS\_PEN
 
 If [**NdisCoOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff561711) returns NDIS\_STATUS\_SUCCESS, it returns the results of a query request in the [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure at the *OidRequest* parameter. In this case, NDIS does not call the client's *ProtocolCoOidRequestComplete* function.
 
- 
+ 
 
- 
+ 
 
 
 

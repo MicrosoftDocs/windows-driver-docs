@@ -11,11 +11,8 @@ keywords:
 - verifying drivers WDK WDF
 - verifier WDK KMDF
 - verifier WDK UMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WDF Verifier Control Application
@@ -53,24 +50,24 @@ This documentation describes options found in the version of the application tha
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[WDF Drivers Tab](wdf-drivers-tab.md)</p></td>
-<td align="left"><p>This topic provides detailed information about WDF Verifier's <strong>WDF Drivers</strong> page. This page lists all WDF drivers on the computer, and you can change their verification settings and the settings of devices that use them. Start here if you're interested in a specific driver.</p></td>
+<td align="left"><p><a href="wdf-drivers-tab.md" data-raw-source="[WDF Drivers Tab](wdf-drivers-tab.md)">WDF Drivers Tab</a></p></td>
+<td align="left"><p>This topic provides detailed information about WDF Verifier&#39;s <strong>WDF Drivers</strong> page. This page lists all WDF drivers on the computer, and you can change their verification settings and the settings of devices that use them. Start here if you&#39;re interested in a specific driver.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Devices Using WDF Tab](devices-using-wdf-tab.md)</p></td>
-<td align="left"><p>This topic discusses WDF Verifier's <strong>Devices using WDF</strong> page. This page lists all devices that are using WDF drivers. When you highlight a device, you see the WDF driver stack for the highlighted device. You can also change verification settings from this screen.</p></td>
+<td align="left"><p><a href="devices-using-wdf-tab.md" data-raw-source="[Devices Using WDF Tab](devices-using-wdf-tab.md)">Devices Using WDF Tab</a></p></td>
+<td align="left"><p>This topic discusses WDF Verifier&#39;s <strong>Devices using WDF</strong> page. This page lists all devices that are using WDF drivers. When you highlight a device, you see the WDF driver stack for the highlighted device. You can also change verification settings from this screen.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Global WDF Settings Tab](global-wdf-settings-tab.md)</p></td>
-<td align="left"><p>This topic provides detailed information about WDF Verifier's <strong>Global WDF Settings</strong> page. This page presents global (system-wide) WDF verification options, and shows UMDF host processes with hosted drivers.</p></td>
+<td align="left"><p><a href="global-wdf-settings-tab.md" data-raw-source="[Global WDF Settings Tab](global-wdf-settings-tab.md)">Global WDF Settings Tab</a></p></td>
+<td align="left"><p>This topic provides detailed information about WDF Verifier&#39;s <strong>Global WDF Settings</strong> page. This page presents global (system-wide) WDF verification options, and shows UMDF host processes with hosted drivers.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[UMDF Settings (Test Use Only) Tab](umdf-settings-test-use-only-tab.md)</p></td>
-<td align="left"><p>This topic details WDF Verifier's <strong>UMDF Settings (Test Use Only)</strong> page. On this page, you can change settings that can help test an overall system with one or more UMDF drivers.</p></td>
+<td align="left"><p><a href="umdf-settings-test-use-only-tab.md" data-raw-source="[UMDF Settings (Test Use Only) Tab](umdf-settings-test-use-only-tab.md)">UMDF Settings (Test Use Only) Tab</a></p></td>
+<td align="left"><p>This topic details WDF Verifier&#39;s <strong>UMDF Settings (Test Use Only)</strong> page. On this page, you can change settings that can help test an overall system with one or more UMDF drivers.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[My Preferences Tab](my-preferences-tab.md)</p></td>
-<td align="left"><p>This topic describes WDF Verifier's <strong>My Preferences</strong> page. On this page, you can set preferences for some of the control panel's features.</p></td>
+<td align="left"><p><a href="my-preferences-tab.md" data-raw-source="[My Preferences Tab](my-preferences-tab.md)">My Preferences Tab</a></p></td>
+<td align="left"><p>This topic describes WDF Verifier&#39;s <strong>My Preferences</strong> page. On this page, you can set preferences for some of the control panel&#39;s features.</p></td>
 </tr>
 </tbody>
 </table>
@@ -81,7 +78,6 @@ This documentation describes options found in the version of the application tha
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20WDF%20Verifier%20Control%20Application%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

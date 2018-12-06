@@ -3,17 +3,14 @@ title: pcitree
 description: The pcitree extension displays information about PCI device objects, including child PCI buses and CardBus buses, and the devices attached to them.
 ms.assetid: cd1b2f85-b8de-4396-8b37-79bb3d62092c
 keywords: ["PCI bus", "PCI device", "pcitree Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - pcitree
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !pcitree
@@ -21,7 +18,7 @@ api_type:
 
 The **!pcitree** extension displays information about PCI device objects, including child PCI buses and CardBus buses, and the devices attached to them.
 
-```
+```dbgcmd
 !pcitree
 ```
 
@@ -47,7 +44,7 @@ The **!pcitree** extension displays information about PCI device objects, includ
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -58,7 +55,7 @@ Remarks
 
 Here is an example:
 
-```
+```dbgcmd
 kd> !pcitree
 
 Bus 0x0 (FDO Ext fe517338)
@@ -81,17 +78,16 @@ The number after "d=" is the device number; the number after "f=" is the functio
 
 To obtain more information about a device, use the [**!devext**](-devext.md) extension command with the device extension address as the argument. For this particular device, the command to use would be:
 
-```
+```dbgcmd
 kd> !devext fe4f4428 pci 
 ```
 
 If the **!pcitree** extension generates an error, this often means that your PCI symbols were not loaded properly. Use [**.reload pci.sys**](-reload--reload-module-.md) to fix this problem.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!pcitree%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -3,17 +3,14 @@ title: ba (Break on Access)
 description: The ba command sets a processor breakpoint (often called, less accurately, a data breakpoint). This breakpoint is triggered when the specified memory is accessed.
 ms.assetid: 0d39d883-363e-421b-a1b8-08bf2d216724
 keywords: ["ba (Break on Access) Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - ba (Break on Access)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # ba (Break on Access)
@@ -23,13 +20,13 @@ The **ba** command sets a processor breakpoint (often called, less accurately, a
 
 User-Mode
 
-```
+```dbgcmd
 [~Thread] ba[ID] Access Size [Options] [Address [Passes]] ["CommandString"]
 ```
 
 Kernel-Mode
 
-```
+```dbgcmd
 ba[ID] Access Size [Options] [Address [Passes]] ["CommandString"]
 ```
 
@@ -76,7 +73,7 @@ Specifies the type of access that satisfies the breakpoint. This parameter can b
 </tbody>
 </table>
 
- 
+ 
 
 <span id="_______Size______"></span><span id="_______size______"></span><span id="_______SIZE______"></span> *Size*   
 Specifies the size of the location, in bytes, to monitor for access. On an x86-based processor, this parameter can be 1, 2, or 4. However, if *Access* equals **e**, *Size* must be 1.
@@ -137,7 +134,7 @@ This parameter is optional.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -170,21 +167,20 @@ For more details on processor breakpoints, and additional restrictions that appl
 
 The following examples show the **ba** command. The following command sets a breakpoint for read access on 4 bytes of the variable myVar.
 
-```
+```dbgcmd
 0:000> ba r4 myVar
 ```
 
 The following command adds a breakpoint on all serial ports with addresses from 0x3F8 through 0x3FB. This breakpoint is triggered if anything is read or written to these ports.
 
-```
+```dbgcmd
 kd> ba i4 3f8
 ```
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20ba%20%28Break%20on%20Access%29%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -2,11 +2,8 @@
 title: Low Latency Audio
 description: This topic discusses audio latency changes in Windows 10. It covers API options for application developers as well as changes in drivers that can be made to support low latency audio.
 ms.assetid: 888AEF01-271D-41CD-8372-A47551348959
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Low Latency Audio
@@ -44,9 +41,9 @@ Windows 10 includes changes to reduce the audio latency. The goals of this docu
 1. Describe the sources of audio latency in Windows.
 2. Explain the changes that reduce audio latency in the Windows 10 audio stack.
 3. Provide a reference on how application developers and hardware manufacturers can take advantage of the new infrastructure, in order to develop applications and drivers with low audio latency. This topic covers these items:
--   The new [**AudioGraph**](https://msdn.microsoft.com/library/windows/apps/dn914176) API for interactive and media creation scenarios.
--   Changes in WASAPI to support low latency.
--   Enhancements in the driver DDIs.
+4. The new [**AudioGraph**](https://msdn.microsoft.com/library/windows/apps/dn914176) API for interactive and media creation scenarios.
+5. Changes in WASAPI to support low latency.
+6. Enhancements in the driver DDIs.
 
 ## <span id="Definitions"></span><span id="definitions"></span><span id="DEFINITIONS"></span>Definitions
 
@@ -84,7 +81,7 @@ Windows 10 includes changes to reduce the audio latency. The goals of this docu
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Windows_Audio_Stack"></span><span id="windows_audio_stack"></span><span id="WINDOWS_AUDIO_STACK"></span>Windows Audio Stack
 
@@ -97,33 +94,33 @@ Here is a summary of the latencies in the render path:
 
 1. The application writes the data into a buffer
 2. The Audio Engine reads the data from the buffer and processes it. It also loads audio effects in the form of Audio Processing Objects (APOs). For more information about APOs, see [Windows Audio Processing Objects](windows-audio-processing-objects.md).
--   The latency of the APOs varies based on the signal processing within the APOs.
--   Before Windows 10, the latency of the Audio Engine was equal to ~12ms for applications that use floating point data and ~6ms for applications that use integer data
--   In Windows 10, the latency has been reduced to 1.3ms for all applications
+3. The latency of the APOs varies based on the signal processing within the APOs.
+4. Before Windows 10, the latency of the Audio Engine was equal to ~12ms for applications that use floating point data and ~6ms for applications that use integer data
+5. In Windows 10, the latency has been reduced to 1.3ms for all applications
 
-3. The Audio Engine writes the processed data to a buffer.
--   Before Windows 10, this buffer was always set to ~10ms.
--   Starting with Windows 10, the buffer size is defined by the audio driver (more details on this are described later in this topic).
+6. The Audio Engine writes the processed data to a buffer.
+7. Before Windows 10, this buffer was always set to ~10ms.
+8. Starting with Windows 10, the buffer size is defined by the audio driver (more details on this are described later in this topic).
 
-4. The Audio driver reads the data from the buffer and writes them to the H/W.
-5. The H/W also has the option to process the data again (in the form of additional audio effects).
-6. The user hears audio from the speaker.
+9. The Audio driver reads the data from the buffer and writes them to the H/W.
+10. The H/W also has the option to process the data again (in the form of additional audio effects).
+11. The user hears audio from the speaker.
 
 Here is a summary of latency in the capture path:
 
 1. Audio is captured from the microphone.
 2. The H/W has the option to process the data (i.e. to add audio effects).
 3. The driver reads the data from the H/W and writes the data into a buffer.
--   Before Windows 10, this buffer was always set to 10ms.
--   Starting with Windows 10, the buffer size is defined by the audio driver (more details on this below).
+4. Before Windows 10, this buffer was always set to 10ms.
+5. Starting with Windows 10, the buffer size is defined by the audio driver (more details on this below).
 
-4. The Audio Engine reads the data from the buffer and processes them. It also loads audio effects in the form of Audio Processing Objects (APOs).
--   The latency of the APOs varies based on the signal processing within the APOs.
--   Before Windows 10, the latency of the Audio Engine was equal to ~6ms for applications that use floating point data and ~0ms for applications that use integer data.
--   In Windows 10, the latency has been reduced to ~0ms for all applications.
+6. The Audio Engine reads the data from the buffer and processes them. It also loads audio effects in the form of Audio Processing Objects (APOs).
+7. The latency of the APOs varies based on the signal processing within the APOs.
+8. Before Windows 10, the latency of the Audio Engine was equal to ~6ms for applications that use floating point data and ~0ms for applications that use integer data.
+9. In Windows 10, the latency has been reduced to ~0ms for all applications.
 
-5. The application is signaled that data is available to be read, as soon as the audio engine finishes with its processing.
-The audio stack also provides the option of Exclusive Mode. In that case, the data bypasses the Audio Engine and goes directly from the application to the buffer where the driver reads it from. However, if an application opens an endpoint in Exclusive Mode, then there is no other application that can use that endpoint to render or capture audio.
+10. The application is signaled that data is available to be read, as soon as the audio engine finishes with its processing.
+    The audio stack also provides the option of Exclusive Mode. In that case, the data bypasses the Audio Engine and goes directly from the application to the buffer where the driver reads it from. However, if an application opens an endpoint in Exclusive Mode, then there is no other application that can use that endpoint to render or capture audio.
 
 Another popular alternative for applications that need low latency is to use the ASIO (Audio Stream Input/Output) model, which utilizes exclusive mode. After a user installs a 3rd party ASIO driver, applications can send data directly from the application to the ASIO driver. However, the application has to be written in such a way that it talks directly to the ASIO driver.
 
@@ -135,17 +132,17 @@ Both alternatives (exclusive mode and ASIO) have their own limitations. They pro
 Windows 10 has been enhanced in three areas to reduce latency:
 
 1. All applications that use audio will see a 4.5-16ms reduction in round-trip latency (as was explained in the section above) without any code changes or driver updates, compared to Windows 8.1.
-a. Applications that use floating point data will have 16ms lower latency.
-b. Applications that use integer data will have 4.5ms lower latency.
+   a. Applications that use floating point data will have 16ms lower latency.
+   b. Applications that use integer data will have 4.5ms lower latency.
 2. Systems with updated drivers will provide even lower round-trip latency:
-a. Drivers can use new DDIs to report the supported sizes of the buffer that is used to transfer data between the OS and the H/W. This means that data transfers do not have to always use 10ms buffers (as they did in previous OS versions). Instead, the driver can specify if it can use small buffers, e.g. 5ms, 3ms, 1ms, etc.
-b. Applications that require low latency can use new audio APIs (AudioGraph or WASAPI), in order to query the buffer sizes that are supported by the driver and select the one that will be used for the data transfer to/from the H/W.
+   a. Drivers can use new DDIs to report the supported sizes of the buffer that is used to transfer data between the OS and the H/W. This means that data transfers do not have to always use 10ms buffers (as they did in previous OS versions). Instead, the driver can specify if it can use small buffers, e.g. 5ms, 3ms, 1ms, etc.
+   b. Applications that require low latency can use new audio APIs (AudioGraph or WASAPI), in order to query the buffer sizes that are supported by the driver and select the one that will be used for the data transfer to/from the H/W.
 3. When an application uses buffer sizes below a certain threshold to render and capture audio, the OS enters a special mode, where it manages its resources in a way that avoids interference between the audio streaming and other subsystems. This will reduce the interruptions in the execution of the audio subsystem and minimize the probability of audio glitches. When the application stops streaming, the OS returns to its normal execution mode. The audio subsystem consists of the following resources:
-a. The audio engine thread that is processing low latency audio.
-b. All the threads and interrupts that have been registered by the driver (using the new DDIs that are described in the section about driver resource registration).
-c. Some or all of the audio threads from the applications that request small buffers, as well as from all applications that share the same audio device graph (e.g. same signal processing mode) with any application that requested small buffers:
--   AudioGraph callbacks on the streaming path.
--   If the application uses WASAPI, then only the work items that were submitted to the [Real-Time Work Queue API](https://msdn.microsoft.com/library/windows/desktop/dn271897) or [**MFCreateMFByteStreamOnStreamEx**](https://msdn.microsoft.com/library/windows/desktop/hh162754) and were tagged as "Audio" or "ProAudio".
+   a. The audio engine thread that is processing low latency audio.
+   b. All the threads and interrupts that have been registered by the driver (using the new DDIs that are described in the section about driver resource registration).
+   c. Some or all of the audio threads from the applications that request small buffers, as well as from all applications that share the same audio device graph (e.g. same signal processing mode) with any application that requested small buffers:
+4. AudioGraph callbacks on the streaming path.
+5. If the application uses WASAPI, then only the work items that were submitted to the [Real-Time Work Queue API](https://msdn.microsoft.com/library/windows/desktop/dn271897) or [**MFCreateMFByteStreamOnStreamEx**](https://msdn.microsoft.com/library/windows/desktop/hh162754) and were tagged as "Audio" or "ProAudio".
 
 ## <span id="API_Improvements"></span><span id="api_improvements"></span><span id="API_IMPROVEMENTS"></span>API Improvements
 
@@ -197,11 +194,11 @@ In order to target low latency scenarios, AudioGraph provides the [AudioGraphSet
 </tbody>
 </table>
 
- 
+ 
 
 The AudioCreation sample (available for download on GitHub: <https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/AudioCreation>) shows how to use AudioGraph for low latency. The following code snippet shows how to set the minimum buffer size:
 
-```
+```cpp
 AudioGraphSettings settings = new AudioGraphSettings(AudioRenderCategory.Media);
 settings.QuantumSizeSelectionMode = QuantumSizeSelectionMode.LowestLatency;
 CreateAudioGraphResult result = await AudioGraph.CreateAsync(settings);
@@ -246,13 +243,13 @@ The above functionality is provided by a new interface, called [**IAudioClient3*
 </tbody>
 </table>
 
- 
+ 
 
 The WASAPIAudio sample (available on GitHub: <https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/WindowsAudioSession>) shows how to use IAudioClient3 for low latency.
 
 The following code snippet shows how a music creation app can operate in the lowest latency setting that is supported by the system.
 
-```
+```cpp
 // 1. Activation
 
 // Get a string representing the Default Audio (Render|Capture) Device
@@ -335,7 +332,7 @@ if (AUDCLNT_E_ENGINE_FORMAT_LOCKED == hr) {
 
 Also, it is recommended for applications that use WASAPI to also use the [Real-Time Work Queue API](https://msdn.microsoft.com/library/windows/desktop/dn271897) or the [**MFCreateMFByteStreamOnStreamEx**](https://msdn.microsoft.com/library/windows/desktop/hh162754) to create work items and tag them as Audio or Pro Audio, instead of their own threads. This will allow the OS to manage them in a way that will avoid interference non-audio subsystems. In contrast, all AudioGraph threads are automatically managed correctly by the OS. The following code snippet from the WASAPIAudio sample shows how to use the MF Work Queue APIs.
 
-```
+```cpp
 // Specify Source Reader Attributes 
 Attributes->SetUnknown( MF_SOURCE_READER_ASYNC_CALLBACK, static_cast<IMFSourceReaderCallback *>(this) ); 
     if (FAILED( hr )) 
@@ -364,7 +361,7 @@ Attributes->SetUnknown( MF_SOURCE_READER_ASYNC_CALLBACK, static_cast<IMFSourceRe
 
 Alternatively, the following code snippet shows how to use the RT Work Queue APIs.
 
-```
+```cpp
 #define INVALID_WORK_QUEUE_ID 0xffffffff
 DWORD g_WorkQueueId = INVALID_WORK_QUEUE_ID;
 //#define MMCSS_AUDIO_CLASS    L"Audio"
@@ -506,7 +503,7 @@ A driver operates under various constraints when moving audio data between the O
 
 In Windows 10 the driver can express its buffer size capabilities using the DEVPKEY\_KsAudio\_PacketSize\_Constraints device property. This property allows the user to define the absolute minimum buffer size that is supported by the driver, as well as specific buffer size constraints for each signal processing mode (the mode-specific constraints need to be higher than the drivers minimum buffer size, otherwise they are ignored by the audio stack). For example, the following code snippet shows how a driver can declare that the absolute minimum supported buffer size is 1ms, but default mode supports 128 frames (which corresponds to 3 ms, if we assume 48 kHz sample rate).
 
-```
+```cpp
 // Describe constraints for small buffers
 static struct
 {
@@ -528,7 +525,7 @@ static struct
 };
 ```
 
-MSDN provides more in-depth information regarding these structures:
+See the following topics for more in-depth information regarding these structures:
 
 -   [**KSAUDIO\_PACKETSIZE\_CONSTRAINTS structure**](https://msdn.microsoft.com/library/windows/hardware/dn965561)
 -   [**KSAUDIO\_PACKETSIZE\_PROCESSINGMODE\_CONSTRAINT structure**](https://msdn.microsoft.com/library/windows/hardware/dn965562)
@@ -596,7 +593,7 @@ Notes:
 
 Finally, drivers that link-in PortCls for the sole purpose of registering resources must add the following two lines in their inf's DDInstall section. Audio miniport drivers do not need this because they already have include/needs in wdmaudio.inf.
 
-```
+```inf
 [<install-section-name>]
 Include=wdmaudio.inf
 Needs=WDMPORTCLS.CopyFilesOnly
@@ -659,12 +656,10 @@ No. In order for a system to support small buffers, it needs to have updated dri
 
 No. By default, all applications in Windows 10 will use 10ms buffers to render and capture audio. If an application needs to use small buffers, then it needs to use the new AudioGraph settings or the WASAPI IAudioClient3 interface, in order to do so. However, if one application in Windows 10 requests the usage of small buffers, then the Audio Engine will start transferring audio using that particular buffer size. In that case, all applications that use the same endpoint and mode will automatically switch to that small buffer size. When the low latency application exits, the Audio Engine will switch to 10ms buffers again.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Low%20Latency%20Audio%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

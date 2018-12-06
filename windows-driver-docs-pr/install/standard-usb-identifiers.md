@@ -6,17 +6,14 @@ keywords:
 - USB identifiers WDK device installations
 - single-interface devices WDK USB
 - multiple-interface devices WDK USB
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Standard USB Identifiers
 
 
-## <a href="" id="ddk-standard-usb-identifiers-dg"></a>
+
 
 
 <a href="" id="the-set-of-identifiers-generated-for-usb-devices-depends-on-whether-the-device-is-a-single-interface-device-or-a-multiple-interface-device-"></a>The set of identifiers generated for USB devices depends on whether the device is a single-interface device or a multiple-interface device.  
@@ -95,9 +92,9 @@ Where:
 
 The device class code, subclass code, and protocol code are determined by the *bInterfaceClass, bInterfaceSubClass, and bInterfaceProtocol* fields of the interface descriptor, respectively. These are 2-digit numbers.
 
- 
+ 
 
- 
+ 
 
 
 

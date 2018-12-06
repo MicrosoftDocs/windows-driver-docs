@@ -1,12 +1,8 @@
 ---
 Description: The MUTT Connection Exerciser Type-C (USB Type-C ConnEx) hardware board is a custom shield for the Arduino board. 
 title: Test USB Type-C systems with USB Type-C ConnEx
-author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Test USB Type-C systems with USB Type-C ConnEx
@@ -15,12 +11,12 @@ ms.technology: windows-devices
 **Summary**
 
 -   Automated testing by using USB Type-C ConnEx
--   USB Type-C interoperability test procedures in Windows 10: functional testing (FT) and stress testing (ST).
+-   USB Type-C interoperability test procedures in Windows 10: functional testing (FT) and stress testing (ST).
 -   Diagnostic procedures and tips to confirm scenarios, such as device addition and removal.
 
-**Applies to **
+**Applies to**
 
--   Windows 10
+-   Windows 10
 
 **Official specifications and procedures**
 
@@ -105,7 +101,7 @@ To perform the USB Type-C interoperability test procedures by using USB Type-C C
 Make sure you meet these requirements:
 
 -   Your SUT must have the version of the Windows operating system with which you want to test interoperability.
--   The proxy controller must be running Windows 10.
+-   The proxy controller must be running Windows 10.
 -   [![download the mutt software package](images/download.png)](http://go.microsoft.com/fwlink/p/?LinkId=786621) and install the latest MUTT software package on the proxy controller.
 -   The package is a suite of tools used to run tests with USB Type-C ConnEx .
 
@@ -126,11 +122,11 @@ Here are the tools in MUTT software package that are specific to USB Type-C Conn
 | [CxStress.cmd](#cxstress)     | Randomized stress script.                                                                            |
 | [CxPower.cmd](#cxpower)       | Captures power data (voltage and amperage) over a period of time and sends the output to a CSV file. |
 
- 
+
 
 For information about all other tools, see [Tools in the MUTT software package](mutt-software-package.md).
 
-## <a href="" id="config"></a>Get started...
+## Get started...
 
 
 Follow this procedure to set up your test environment.
@@ -145,9 +141,9 @@ In these steps, you will connect the hardware pieces, update the firmware on the
 
     If the USB Type-C ConnEx did not come assembled, then continue with step 1. If your USB Type-C ConnEx has been assembled, then proceed to step 2.
 
-    **Caution**  ![caution](images/caution.png) This step must be performed carefully because the pins bend easily.
+    **Caution**  ![caution](images/caution.png) This step must be performed carefully because the pins bend easily.
 
-     
+
 
     1.  Align the pins of the USB Type-C shield with the receptors on the microcontroller by making sure that the boards are level to each other.
 
@@ -178,9 +174,7 @@ In these steps, you will connect the hardware pieces, update the firmware on the
 
 4.  Plug in the SUT to the male USB Type-C port (labeled **J1**) on the shield.
 
-    **Caution**  The **J1** connector requires additional support when connecting the SUT. The connector is not sturdy enough to sustain the weight of a device or by itself.
-
-     
+    **Caution**  The **J1** connector requires additional support when connecting the SUT. The connector is not sturdy enough to sustain the weight of a device or by itself.
 
     ![attaching system under test (sut)](images/connexc-connect4.png)
 
@@ -207,7 +201,7 @@ In these steps, you will connect the hardware pieces, update the firmware on the
 
         ![USB Type-C ConnEx in device manager](images/connexc-connect8.png)
 
-## <a href="" id="connexutil"></a>ConnExUtil.exe
+## ConnExUtil.exe
 
 
 Here are the command line options that ConnExUtil.exe supports for controlling the USB Type-C ConnEx board.
@@ -257,13 +251,11 @@ Here are the command line options that ConnExUtil.exe supports for controlling t
 <tr class="odd">
 <td>Device Command</td>
 <td><strong>/getPort</strong></td>
-<td>Read the currently connected port.
-<p>Read a port either by specifying number (1 – 4) or by name (<strong>J2</strong>, <strong>J3</strong>, <strong>J4</strong>, <strong>J6</strong>).</p>
-<p>0 disconnects all ports.</p></td>
+<td>Read the currently connected port.</td>
 </tr>
 <tr class="even">
 <td>Device Command
-<p>Read amperage/volt information</p></td>
+<p>Read amperage/voltage information</p></td>
 <td><p><strong>/volts</strong></p>
 <p><strong>/amps</strong></p>
 <p><strong>/version</strong></p></td>
@@ -324,7 +316,7 @@ Basic demo of the port switching sequence.</td>
 </tbody>
 </table>
 
- 
+
 
 ### Sample Commands
 
@@ -357,7 +349,7 @@ do (
 )
 ```
 
-## <a href="" id="scripts"></a>Scripts for controlling the USB Type-C ConnEx board
+## Scripts for controlling the USB Type-C ConnEx board
 
 
 These scripts exercise the control interface supported by ConnExUtil.exe to run sequential and stress type tests with the USB Type-C ConnEx through the command line. All of these scripts support the optional command line parameter **audio** to indicate that the USB Type-C ConnEx board is connected over the 3.5 mm audio interface. By default they will only attempt to use USB connected boards.
@@ -376,7 +368,7 @@ The command line parameter **C** causes the script to only switch between the US
 
 Saves the amperage and voltage reported by the USB Type-C ConnEx to output file power.csv at 2 second intervals. The data is formatted as comma-separated variables as follows:
 
-*index***,***time***,***volts***,***amps*
+<em>index</em>**,**<em>time</em>**,**<em>volts</em>**,**<em>amps</em>
 
 *index* is the device index given by the **ConnExUtil.exe /list** command so multiple devices may be monitored simultaneously.
 
@@ -413,7 +405,7 @@ Confirms that core aspects of device enumeration are functional.
 <a href="" id="charging-and-power-delivery--pd-"></a>[Charging and power delivery (PD)](#st2)  
 Confirms charging with USB Type-C.
 
-## <a href="" id="ft1"></a>FT Case 1: Device Enumeration
+## FT Case 1: Device Enumeration
 
 
 ![ft case 1: device enumeration](images/ft1.png)
@@ -426,7 +418,7 @@ Confirms charging with USB Type-C.
 | **J4** | USB Hub (SuperSpeed or high speed) with a mouse connected downstream.               |
 | **J6** | PC with USB Type-A port cable connected by using a USB Type-A to USB Micro-B cable. |
 
- 
+
 
 1.  Power off the SUT.
 2.  Connect the SUT to the port labeled as **J1** on USB Type-C ConnEx.
@@ -438,7 +430,7 @@ Confirms charging with USB Type-C.
 
 For configuration images related to step 2 -4, see [Get started...](#config).
 
-## <a href="" id="ft2"></a>FT Case 2: Alternate Mode Negotiation
+## FT Case 2: Alternate Mode Negotiation
 
 
 ![ft case 2: alternate mode negotiation](images/ft2.png)
@@ -451,7 +443,7 @@ For configuration images related to step 2 -4, see [Get started...](#config).
 | **J4** | USB Hub (SuperSpeed or high speed) with a flash drive connected downstream.         |
 | **J6** | PC with USB Type-A port cable connected by using a USB Type-A to USB Micro-B cable. |
 
- 
+
 
 1.  Power off the SUT.
 2.  Connect the SUT to the port labeled as **J1** on USB Type-C ConnEx.
@@ -463,7 +455,7 @@ For configuration images related to step 2 -4, see [Get started...](#config).
 
 For configuration images related to step 2 -4, see [Get started...](#config).
 
-## <a href="" id="ft3"></a>FT Case 3: Charging and power delivery (PD)
+## FT Case 3: Charging and power delivery (PD)
 
 
 ![ft case 3: charging and power delivery (pd)](images/ft3.png)
@@ -476,7 +468,7 @@ For configuration images related to step 2 -4, see [Get started...](#config).
 | **J4** | USB mouse.           |
 | **J6** | USB Micro-B charger. |
 
- 
+
 
 1.  Power off the SUT.
 2.  Connect the SUT to the port labeled as **J1** on USB Type-C ConnEx.
@@ -501,7 +493,7 @@ For configuration images related to step 2 -4, see [Get started...](#config).
 
 For configuration images related to step 2 -4, see [Get started...](#config).
 
-## <a href="" id="ft4"></a>FT Case 4: Role Swap
+## FT Case 4: Role Swap
 
 
 ![ft case 4: role swap](images/ft4.png)
@@ -514,7 +506,7 @@ For configuration images related to step 2 -4, see [Get started...](#config).
 | **J4** | USB flash drive.                                                                    |
 | **J6** | PC with USB Type-A port cable connected by using a USB Type-A to USB Micro-B cable. |
 
- 
+
 
 1.  Power off the SUT.
 2.  Connect the SUT to the port labeled as **J1** on USB Type-C ConnEx.
@@ -531,7 +523,7 @@ For configuration images related to step 2 -4, see [Get started...](#config).
 
 For configuration images related to step 2 -4, see [Get started...](#config).
 
-## <a href="" id="st1"></a>ST Case 1: Device Enumeration
+## ST Case 1: Device Enumeration
 
 
 ![st case 1: device enumeration](images/ft1.png)
@@ -544,7 +536,7 @@ For configuration images related to step 2 -4, see [Get started...](#config).
 | **J4** | USB Hub (SuperSpeed or high speed) with a mouse connected downstream.               |
 | **J6** | PC with USB Type-A port cable connected by using a USB Type-A to USB Micro-B cable. |
 
- 
+
 
 1.  Power off the SUT.
 2.  Connect the SUT to the port labeled as **J1** on USB Type-C ConnEx.
@@ -559,7 +551,7 @@ For configuration images related to step 2 -4, see [Get started...](#config).
 
 For configuration images related to step 2 -4, see [Get started...](#config).
 
-## <a href="" id="st2"></a>ST Case 2: Charging and power delivery (PD)
+## ST Case 2: Charging and power delivery (PD)
 
 
 ![st case 2: charging and power delivery (pd)](images/ft3.png)
@@ -572,7 +564,7 @@ For configuration images related to step 2 -4, see [Get started...](#config).
 | **J4** | USB mouse.           |
 | **J6** | USB Micro-B charger. |
 
- 
+
 
 1.  Power off the SUT.
 2.  Connect the SUT to the port labeled as **J1** on USB Type-C ConnEx.
@@ -598,7 +590,7 @@ The following functional tests can be adapted for USB Type-C to improve traditio
 | [System Power Transitions](type.md#ft3) | Tests whether the system's power transitions and wake-up capability from lower power states are not affected by the product. | System, Dock, Device |
 | [Selective Suspend](type.md#ft4)        | Confirms the selective suspend transitions.                                                                                  | Dock, Device         |
 
- 
+
 
 The following stress tests can be adapted from the SuperMUTT test documentation to expand USB scenarios.
 
@@ -609,7 +601,7 @@ The following stress tests can be adapted from the SuperMUTT test documentation 
 | [Plug and Play (PnP)](type.md#st3)      | Generates various PnP sequences.                                | System, Dock, Device |
 | [Device Topology](type.md#st4)          | Tests a range of devices and topologies with the product.       | System, Dock, Device |
 
- 
+
 
 ## Validating success or failure of the tests
 
@@ -645,23 +637,7 @@ The onboard LCD on the USB Type-C ConnEx displays power (volts, amps, and direct
 ## Using ETW to log issues
 
 
-To enable ETW for USB 2.0 ports, see [ETW in the Windows 7 USB core stack](http://go.microsoft.com/fwlink/p/?LinkId=623316).
-
-To enable USB 3.0 logging, perform the following commands instead (or see [How to capture a USB event trace with Logman](how-to-capture-a-usb-event-trace.md)):
-
-``` syntax
-logman start usbtrace -ets -o usbtrace.etl -nb 128 640 -bs 128
-logman update usbtrace -ets -p Microsoft-Windows-USB-UCX Default
-logman update usbtrace -ets -p Microsoft-Windows-USB-USBHUB3 Default
-```
-
-After these are logs are captured, perform the test scenario.
-
-Stop the trace by using this command:
-
-``` syntax
-logman stop usbtrace -ets
-```
+Go to https://aka.ms/usbtrace for instructions and to download a script for capturing ETW traces from the USB drivers.
 
 ## Reporting test results
 
@@ -672,13 +648,11 @@ Provide these details:
 -   The list must specify the tests that have failed or passed.
 -   Systems, devices, docks, or hubs that were used for the tests. Include make, model, and Web site so that we can get additional information, if needed.
 
- 
-
- 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20Test%20USB%20Type-C%20systems%20with%20MUTT%20ConnEx-C%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
+
 
 
 

@@ -2,11 +2,8 @@
 title: Retrieving A Device Instance Property Value
 description: Retrieving A Device Instance Property Value
 ms.assetid: 4cec9132-5a28-492d-bbb1-39e388413ad0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Retrieving A Device Instance Property Value
@@ -33,9 +30,9 @@ To retrieve the value of a device instance property on Windows Vista and later v
 
 If the second call to **SetupDiGetDeviceProperty** succeeds, **SetupDiGetDeviceProperty** sets \**PropertyType* to the property-data-type identifier for the property, returns the property value in the *PropertyBuffer* buffer, sets \**RequiredSize* to the size, in bytes, of the property value that was retrieved, and returns **TRUE**. If the function call fails, **SetupDiGetDeviceProperty** returns **FALSE** and a call to [GetLastError](http://go.microsoft.com/fwlink/p/?linkid=169416) will return the logged error code.
 
- 
+ 
 
- 
+ 
 
 
 

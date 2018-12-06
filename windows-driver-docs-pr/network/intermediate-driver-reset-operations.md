@@ -6,17 +6,14 @@ keywords:
 - intermediate drivers WDK networking , reset operations
 - NDIS intermediate drivers WDK , reset operations
 - resetting intermediate drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Intermediate Driver Reset Operations
 
 
-## <a href="" id="ddk-intermediate-driver-reset-operations-ng"></a>
+
 
 
 An intermediate driver must be prepared to handle the situation where its outstanding sends on a binding to an underlying driver can be dropped because the underlying NIC is reset.
@@ -37,9 +34,9 @@ After *ProtocolStatusEx*(or *ProtocolCoStatusEx*) receives NDIS\_STATUS\_RESET\_
 
 An intermediate driver does not provide a [*MiniportResetEx*](https://msdn.microsoft.com/library/windows/hardware/ff559432) function.
 
- 
+ 
 
- 
+ 
 
 
 

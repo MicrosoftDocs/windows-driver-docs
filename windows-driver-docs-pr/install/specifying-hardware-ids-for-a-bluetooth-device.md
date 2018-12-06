@@ -2,11 +2,8 @@
 title: Specifying Hardware IDs for a Bluetooth Device
 description: Specifying Hardware IDs for a Bluetooth Device
 ms.assetid: 7fc8e53a-3fa9-4dad-a507-310329ca88c0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Specifying Hardware IDs for a Bluetooth Device
@@ -18,9 +15,9 @@ For more information about the DID Profile, refer to the [Bluetooth Device Ident
 
 For information about supporting Bluetooth Low Energy (LE) Device IDs, refer to the [Device Information Service version 1.1](http://go.microsoft.com/fwlink/p/?linkid=242771).
 
- 
+ 
 
- 
+ 
 
 
 

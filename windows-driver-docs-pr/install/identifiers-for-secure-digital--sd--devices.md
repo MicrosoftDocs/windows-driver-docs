@@ -11,11 +11,8 @@ keywords:
 - device IDs WDK device installations
 - hardware IDs WDK device installations
 - compatible IDs WDK device installations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Identifiers for Secure Digital (SD) Devices
@@ -81,9 +78,9 @@ SD\\CLASS_c(2)
 
 where *c(2)* is the two-digit hexadecimal device interface code.
 
- 
+ 
 
- 
+ 
 
 
 

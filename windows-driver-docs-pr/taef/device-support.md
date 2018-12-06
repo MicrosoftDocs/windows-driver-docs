@@ -2,11 +2,8 @@
 title: Device Support
 description: Device Support
 ms.assetid: 41316BB1-0AE0-4100-AE7B-0014FE9FD0E7
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Device Support
@@ -24,7 +21,7 @@ Te.Common.lib is required in addition to other libraries needed author a test in
 
 Users are responsible for creating their own Test Resource (device) definition. To do this, you need to implement ITestResource. ITestResource is defined in the published header file ITestResource.h and looks as follows:
 
-```
+```cpp
 namespace WEX { namespace TestExecution
 {
     namespace TestResourceProperty
@@ -63,7 +60,7 @@ Here are some quick sample "ResourceSelection" for our example resource list and
 
 In our example code, this looks as follows:
 
-```
+```cpp
 BEGIN_MODULE()
     MODULE_PROPERTY(L"TestResourceDependent", L"true")
 END_MODULE()
@@ -100,7 +97,7 @@ Based on the resource selection, TAEF will re-invoke the test method along with 
 
 As soon as TAEF encounters a TestResourceDependent test module, it will look for and invoke the dll-exported method BuildResourceList. It is in the implementation of BuildResourceList where users can create new test resources and add them to the interface that gets passed in as a parameter to BuildResourceList. Let's take a look at the implementation of this method in our example:
 
-```
+```cpp
 using namespace WEX::TestExecution;
 HRESULT __cdecl BuildResourceList(ResourceList& resourceList)
 {
@@ -144,7 +141,7 @@ Behind the scenes, TAEF retains the ResourceList on which the resource selection
 
 Previous sections looked at how to add the necessary metadata at module, class and test method level. They also looked at how to define custom test resources and how to add them to the ResourceList in the implementation of BuildResourceList. The next part that follows is retrieving the resources in the test method. Let's take a look at one of the simple test methods in our example:
 
-```
+```cpp
 1   void TestResourceExample::OneHDAudioTest()
 2   {
 3       Log::Comment(L"In HD audio test");
@@ -328,11 +325,10 @@ Note the implicit inproc added warning in the third line of the example above. T
 
 Trying out these and other selection queries at the command prompt is left as an exercise for the reader.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[taef\taef]:%20Device%20Support%20%20RELEASE:%20%289/12/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

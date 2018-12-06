@@ -3,17 +3,14 @@ title: driveinfo
 description: The driveinfo extension displays volume information for the specified drive.
 ms.assetid: cc63c07a-4556-4b79-9dff-c0ac09371651
 keywords: ["driveinfo Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - driveinfo
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !driveinfo
@@ -21,10 +18,10 @@ api_type:
 
 The **!driveinfo** extension displays volume information for the specified drive.
 
-```
+```dbgcmd
 !driveinfo Drive[:] 
 !driveinfo 
-```
+```dbgcmd
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 
@@ -54,14 +51,14 @@ Displays some brief Help text for this extension in the Debugger Command window.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
 
 The drive information displayed by this extension is obtained by querying the underlying file system; for example:
 
-```
+```dbgcmd
 kd> !driveinfo c:
 Drive c:, DriveObject e136cd88
     Directory Object: e1001408  Name: C:
@@ -74,11 +71,10 @@ Drive c:, DriveObject e136cd88
     8850.21 of 12001.7 MB free
 ```
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!driveinfo%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

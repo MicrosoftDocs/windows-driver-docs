@@ -3,11 +3,8 @@ title: Symbol Options
 description: Symbol Options
 ms.assetid: 4a501ea3-431c-4c11-8826-154eb8799a64
 keywords: ["symbols, setting symbol options", "symbols, SYMOPT_XXXX", "noisy symbol loading", "CV record"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Symbol Options
@@ -38,80 +35,80 @@ The following table lists these symbol options:
 <tbody>
 <tr class="odd">
 <td align="left"><p>0x1</p></td>
-<td align="left"><p>[SYMOPT_CASE_INSENSITIVE](#symopt-case-insensitive)</p></td>
+<td align="left"><p><a href="#symopt-case-insensitive" data-raw-source="[SYMOPT_CASE_INSENSITIVE](#symopt-case-insensitive)">SYMOPT_CASE_INSENSITIVE</a></p></td>
 <td align="left"><p>On</p></td>
 <td align="left"><p>On</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x2</p></td>
-<td align="left"><p>[SYMOPT_UNDNAME](#symopt-undname)</p></td>
+<td align="left"><p><a href="#symopt-undname" data-raw-source="[SYMOPT_UNDNAME](#symopt-undname)">SYMOPT_UNDNAME</a></p></td>
 <td align="left"><p>On</p></td>
 <td align="left"><p>On</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x4</p></td>
-<td align="left"><p>[SYMOPT_DEFERRED_LOADS](#symopt-deferred-loads)</p></td>
+<td align="left"><p><a href="#symopt-deferred-loads" data-raw-source="[SYMOPT_DEFERRED_LOADS](#symopt-deferred-loads)">SYMOPT_DEFERRED_LOADS</a></p></td>
 <td align="left"><p>On</p></td>
 <td align="left"><p>Off</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x8</p></td>
-<td align="left"><p>[SYMOPT_NO_CPP](#symopt-no-cpp)</p></td>
+<td align="left"><p><a href="#symopt-no-cpp" data-raw-source="[SYMOPT_NO_CPP](#symopt-no-cpp)">SYMOPT_NO_CPP</a></p></td>
 <td align="left"><p>Off</p></td>
 <td align="left"><p>Off</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x10</p></td>
-<td align="left"><p>[SYMOPT_LOAD_LINES](#symopt-load-lines)</p></td>
+<td align="left"><p><a href="#symopt-load-lines" data-raw-source="[SYMOPT_LOAD_LINES](#symopt-load-lines)">SYMOPT_LOAD_LINES</a></p></td>
 <td align="left"><p>Off in KD and CDB</p>
 <p>On in WinDbg</p></td>
 <td align="left"><p>On</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x20</p></td>
-<td align="left"><p>[SYMOPT_OMAP_FIND_NEAREST](#symopt-omap-find-nearest)</p></td>
+<td align="left"><p><a href="#symopt-omap-find-nearest" data-raw-source="[SYMOPT_OMAP_FIND_NEAREST](#symopt-omap-find-nearest)">SYMOPT_OMAP_FIND_NEAREST</a></p></td>
 <td align="left"><p>On</p></td>
 <td align="left"><p>Off</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x40</p></td>
-<td align="left"><p>[SYMOPT_LOAD_ANYTHING](#symopt-load-anything)</p></td>
+<td align="left"><p><a href="#symopt-load-anything" data-raw-source="[SYMOPT_LOAD_ANYTHING](#symopt-load-anything)">SYMOPT_LOAD_ANYTHING</a></p></td>
 <td align="left"><p>Off</p></td>
 <td align="left"><p>Off</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x80</p></td>
-<td align="left"><p>[SYMOPT_IGNORE_CVREC](#symopt-ignore-cvrec)</p></td>
+<td align="left"><p><a href="#symopt-ignore-cvrec" data-raw-source="[SYMOPT_IGNORE_CVREC](#symopt-ignore-cvrec)">SYMOPT_IGNORE_CVREC</a></p></td>
 <td align="left"><p>Off</p></td>
 <td align="left"><p>Off</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x100</p></td>
-<td align="left"><p>[SYMOPT_NO_UNQUALIFIED_LOADS](#symopt-no-unqualified-loads)</p></td>
+<td align="left"><p><a href="#symopt-no-unqualified-loads" data-raw-source="[SYMOPT_NO_UNQUALIFIED_LOADS](#symopt-no-unqualified-loads)">SYMOPT_NO_UNQUALIFIED_LOADS</a></p></td>
 <td align="left"><p>Off</p></td>
 <td align="left"><p>Off</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x200</p></td>
-<td align="left"><p>[SYMOPT_FAIL_CRITICAL_ERRORS](#symopt-fail-critical-errors)</p></td>
+<td align="left"><p><a href="#symopt-fail-critical-errors" data-raw-source="[SYMOPT_FAIL_CRITICAL_ERRORS](#symopt-fail-critical-errors)">SYMOPT_FAIL_CRITICAL_ERRORS</a></p></td>
 <td align="left"><p>On</p></td>
 <td align="left"><p>Off</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x400</p></td>
-<td align="left"><p>[SYMOPT_EXACT_SYMBOLS](#symopt-exact-symbols)</p></td>
+<td align="left"><p><a href="#symopt-exact-symbols" data-raw-source="[SYMOPT_EXACT_SYMBOLS](#symopt-exact-symbols)">SYMOPT_EXACT_SYMBOLS</a></p></td>
 <td align="left"><p>Off</p></td>
 <td align="left"><p>On</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x800</p></td>
-<td align="left"><p>[SYMOPT_ALLOW_ABSOLUTE_SYMBOLS](#symopt-allow-absolute-symbols)</p></td>
+<td align="left"><p><a href="#symopt-allow-absolute-symbols" data-raw-source="[SYMOPT_ALLOW_ABSOLUTE_SYMBOLS](#symopt-allow-absolute-symbols)">SYMOPT_ALLOW_ABSOLUTE_SYMBOLS</a></p></td>
 <td align="left"><p>Off</p></td>
 <td align="left"><p>On</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x1000</p></td>
-<td align="left"><p>[SYMOPT_IGNORE_NT_SYMPATH](#symopt-ignore-nt-sympath)</p></td>
+<td align="left"><p><a href="#symopt-ignore-nt-sympath" data-raw-source="[SYMOPT_IGNORE_NT_SYMPATH](#symopt-ignore-nt-sympath)">SYMOPT_IGNORE_NT_SYMPATH</a></p></td>
 <td align="left"><p>Off</p></td>
 <td align="left"><p>Off</p></td>
 </tr>
@@ -123,51 +120,51 @@ The following table lists these symbol options:
 </tr>
 <tr class="odd">
 <td align="left"><p>0x4000</p></td>
-<td align="left"><p>[SYMOPT_PUBLICS_ONLY](#symopt-publics-only)</p></td>
+<td align="left"><p><a href="#symopt-publics-only" data-raw-source="[SYMOPT_PUBLICS_ONLY](#symopt-publics-only)">SYMOPT_PUBLICS_ONLY</a></p></td>
 <td align="left"><p>Off</p></td>
 <td align="left"><p>Off</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x8000</p></td>
-<td align="left"><p>[SYMOPT_NO_PUBLICS](#symopt-no-publics)</p></td>
+<td align="left"><p><a href="#symopt-no-publics" data-raw-source="[SYMOPT_NO_PUBLICS](#symopt-no-publics)">SYMOPT_NO_PUBLICS</a></p></td>
 <td align="left"><p>Off</p></td>
 <td align="left"><p>Off</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x10000</p></td>
-<td align="left"><p>[SYMOPT_AUTO_PUBLICS](#symopt-auto-publics)</p></td>
+<td align="left"><p><a href="#symopt-auto-publics" data-raw-source="[SYMOPT_AUTO_PUBLICS](#symopt-auto-publics)">SYMOPT_AUTO_PUBLICS</a></p></td>
 <td align="left"><p>On</p></td>
 <td align="left"><p>On</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x20000</p></td>
-<td align="left"><p>[SYMOPT_NO_IMAGE_SEARCH](#symopt-no-image-search)</p></td>
+<td align="left"><p><a href="#symopt-no-image-search" data-raw-source="[SYMOPT_NO_IMAGE_SEARCH](#symopt-no-image-search)">SYMOPT_NO_IMAGE_SEARCH</a></p></td>
 <td align="left"><p>On</p></td>
 <td align="left"><p>Off</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x40000</p></td>
-<td align="left"><p>[SYMOPT_SECURE](#symopt-secure)</p></td>
+<td align="left"><p><a href="#symopt-secure" data-raw-source="[SYMOPT_SECURE](#symopt-secure)">SYMOPT_SECURE</a></p></td>
 <td align="left"><p>Off</p></td>
 <td align="left"><p>Off</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x80000</p></td>
-<td align="left"><p>[SYMOPT_NO_PROMPTS](#symopt-no-prompts)</p></td>
+<td align="left"><p><a href="#symopt-no-prompts" data-raw-source="[SYMOPT_NO_PROMPTS](#symopt-no-prompts)">SYMOPT_NO_PROMPTS</a></p></td>
 <td align="left"><p>On in KD and CDB</p>
 <p>Off in WinDbg</p></td>
 <td align="left"><p>Off</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x80000000</p></td>
-<td align="left"><p>[SYMOPT_DEBUG](#symopt-debug)</p></td>
+<td align="left"><p><a href="#symopt-debug" data-raw-source="[SYMOPT_DEBUG](#symopt-debug)">SYMOPT_DEBUG</a></p></td>
 <td align="left"><p>Off</p></td>
 <td align="left"><p>Off</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="changing-the-symbol-option-settings"></span><span id="CHANGING_THE_SYMBOL_OPTION_SETTINGS"></span>Changing the Symbol Option Settings
 
@@ -357,15 +354,14 @@ This option is off by default in all debuggers. It can be activated by using the
 
 **Note**   This option should not be confused with noisy *source* loading -- that is controlled by the [**.srcnoisy (Noisy Source Loading)**](-srcnoisy--noisy-source-loading-.md) command.
 
- 
+ 
 
 This option is off by default in DBH. It can be activated by using the -n command-line option. Once DBH is running, it can be turned on or off by using symopt +80000000 or symopt -80000000, respectively. It can also be turned on and off by using the verbose on and verbose off commands.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Symbol%20Options%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

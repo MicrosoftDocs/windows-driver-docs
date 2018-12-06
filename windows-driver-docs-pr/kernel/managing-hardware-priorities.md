@@ -1,20 +1,16 @@
 ---
 title: Managing Hardware Priorities
-author: windows-driver-content
 description: Managing Hardware Priorities
 ms.assetid: c27eb357-49d7-4f50-9554-643b70ca33dc
 keywords: ["prioritizing criteria WDK kernel", "hardware priorities WDK kernel", "IRQL levels WDK kernel", "PASSIVE_LEVEL WDK", "APC_LEVEL WDK", "DISPATCH_LEVEL WDK", "DIRQL WDK", "interrupt service routines WDK kernel , hardware priorities", "ISRs WDK kernel , hardware priorities"]
-ms.author: windowsdriverdev
-ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 05/08/2018
+ms.localizationpriority: medium
 ---
 
 # Managing Hardware Priorities
 
 
-## <a href="" id="ddk-managing-hardware-priorities-kg"></a>
+
 
 
 The IRQL at which a driver routine executes determines which kernel-mode driver support routines it can call. For example, some driver support routines require that the caller be running at IRQL = DISPATCH\_LEVEL. Others cannot be called safely if the caller is running at any IRQL higher than PASSIVE\_LEVEL.
@@ -73,34 +69,32 @@ Note that a device driver that has no *StartIo* routine because it sets up and m
 
 When calling driver support routines, be aware of the following.
 
--   Calling [**KeRaiseIrql**](https://msdn.microsoft.com/library/windows/hardware/ff553079) with an input *NewIrql* value that is less than the current IRQL causes a fatal error. Calling [**KeLowerIrql**](https://msdn.microsoft.com/library/windows/hardware/ff552968) except to restore the original IRQL (that is, after a call to **KeRaiseIrql**) also causes a fatal error.
+- Calling [**KeRaiseIrql**](https://msdn.microsoft.com/library/windows/hardware/ff553079) with an input *NewIrql* value that is less than the current IRQL causes a fatal error. Calling [**KeLowerIrql**](https://msdn.microsoft.com/library/windows/hardware/ff552968) except to restore the original IRQL (that is, after a call to **KeRaiseIrql**) also causes a fatal error.
 
--   While running at IRQL &gt;= DISPATCH\_LEVEL, calling [**KeWaitForSingleObject**](https://msdn.microsoft.com/library/windows/hardware/ff553350) or [**KeWaitForMultipleObjects**](https://msdn.microsoft.com/library/windows/hardware/ff553324) for kernel-defined dispatcher objects to wait for a nonzero interval causes a fatal error.
+- While running at IRQL &gt;= DISPATCH\_LEVEL, calling [**KeWaitForSingleObject**](https://msdn.microsoft.com/library/windows/hardware/ff553350) or [**KeWaitForMultipleObjects**](https://msdn.microsoft.com/library/windows/hardware/ff553324) for kernel-defined dispatcher objects to wait for a nonzero interval causes a fatal error.
 
--   The only driver routines that can safely wait for events, semaphores, mutexes, or timers to be set to the signaled state are those that run in a nonarbitrary thread context at IRQL PASSIVE\_LEVEL, such as driver-created threads, the **DriverEntry** and *Reinitialize* routines, or dispatch routines for inherently synchronous I/O operations (such as most device I/O control requests).
+- The only driver routines that can safely wait for events, semaphores, mutexes, or timers to be set to the signaled state are those that run in a nonarbitrary thread context at IRQL PASSIVE\_LEVEL, such as driver-created threads, the **DriverEntry** and *Reinitialize* routines, or dispatch routines for inherently synchronous I/O operations (such as most device I/O control requests).
 
--   Even while running at IRQL PASSIVE\_LEVEL, pageable driver code must not call [**KeSetEvent**](https://msdn.microsoft.com/library/windows/hardware/ff553253), [**KeReleaseSemaphore**](https://msdn.microsoft.com/library/windows/hardware/ff553143), or [**KeReleaseMutex**](https://msdn.microsoft.com/library/windows/hardware/ff553140) with the input *Wait* parameter set to **TRUE**. Such a call can cause a fatal page fault.
+- Even while running at IRQL PASSIVE\_LEVEL, pageable driver code must not call [**KeSetEvent**](https://msdn.microsoft.com/library/windows/hardware/ff553253), [**KeReleaseSemaphore**](https://msdn.microsoft.com/library/windows/hardware/ff553143), or [**KeReleaseMutex**](https://msdn.microsoft.com/library/windows/hardware/ff553140) with the input *Wait* parameter set to **TRUE**. Such a call can cause a fatal page fault.
 
--   Any routine that is running at greater than IRQL APC\_LEVEL can neither allocate memory from paged pool nor access memory in paged pool safely. If a routine running at IRQL greater than APC\_LEVEL causes a page fault, it is a fatal error.
+- Any routine that is running at greater than IRQL APC\_LEVEL can neither allocate memory from paged pool nor access memory in paged pool safely. If a routine running at IRQL greater than APC\_LEVEL causes a page fault, it is a fatal error.
 
--   A driver must be running at IRQL DISPATCH\_LEVEL when it calls [**KeAcquireSpinLockAtDpcLevel**](https://msdn.microsoft.com/library/windows/hardware/ff551921) and [**KeReleaseSpinLockFromDpcLevel**](https://msdn.microsoft.com/library/windows/hardware/ff553150).
+- A driver must be running at IRQL DISPATCH\_LEVEL when it calls [**KeAcquireSpinLockAtDpcLevel**](https://msdn.microsoft.com/library/windows/hardware/ff551921) and [**KeReleaseSpinLockFromDpcLevel**](https://msdn.microsoft.com/library/windows/hardware/ff553150).
 
-    A driver can be running at IRQL &lt;= DISPATCH\_LEVEL when it calls **KeAcquireSpinLock** but it must release that spin lock by calling **KeReleaseSpinLock**. In other words, it is a programming error to release a spin lock acquired with **KeAcquireSpinLock** by calling **KeReleaseSpinLockFromDpcLevel**.
+  A driver can be running at IRQL &lt;= DISPATCH\_LEVEL when it calls **KeAcquireSpinLock** but it must release that spin lock by calling **KeReleaseSpinLock**. In other words, it is a programming error to release a spin lock acquired with **KeAcquireSpinLock** by calling **KeReleaseSpinLockFromDpcLevel**.
 
-    A driver must not call **KeAcquireSpinLockAtDpcLevel**, **KeReleaseSpinLockFromDpcLevel**, **KeAcquireSpinLock**, or **KeReleaseSpinLock** while running at IRQL &gt; DISPATCH\_LEVEL.
+  A driver must not call **KeAcquireSpinLockAtDpcLevel**, **KeReleaseSpinLockFromDpcLevel**, **KeAcquireSpinLock**, or **KeReleaseSpinLock** while running at IRQL &gt; DISPATCH\_LEVEL.
 
--   Calling a support routine that uses a spin lock, such as an **ExInterlocked*Xxx*** routine, raises IRQL on the current processor either to DISPATCH\_LEVEL or to DIRQL if the caller is not already running at a raised IRQL.
+- Calling a support routine that uses a spin lock, such as an **ExInterlocked*Xxx*** routine, raises IRQL on the current processor either to DISPATCH\_LEVEL or to DIRQL if the caller is not already running at a raised IRQL.
 
--   Driver code that runs at IRQL &gt; PASSIVE\_LEVEL should execute as quickly as possible. The higher the IRQL at which a routine runs, the more important it is for good overall performance to tune that routine to execute as quickly as possible. For example, any driver that calls **KeRaiseIrql** should make the reciprocal call to **KeLowerIrql** as soon as it can.
+- Driver code that runs at IRQL &gt; PASSIVE\_LEVEL should execute as quickly as possible. The higher the IRQL at which a routine runs, the more important it is for good overall performance to tune that routine to execute as quickly as possible. For example, any driver that calls **KeRaiseIrql** should make the reciprocal call to **KeLowerIrql** as soon as it can.
 
-For more information about determining priorities, see the [Scheduling, Thread Context, and IRQL](http://go.microsoft.com/fwlink/p/?linkid=59757) white paper that is available on the Microsoft Windows Hardware Developer Central (WHDC) website.
+For more information about determining priorities, see the [Scheduling, Thread Context, and IRQL](http://go.microsoft.com/fwlink/p/?linkid=59757) white paper.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20Managing%20Hardware%20Priorities%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

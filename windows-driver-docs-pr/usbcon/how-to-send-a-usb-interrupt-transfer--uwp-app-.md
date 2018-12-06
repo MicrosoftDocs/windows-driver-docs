@@ -1,12 +1,8 @@
 ---
 Description: A USB device can support interrupt endpoints so that it can send or receive data at regular intervals.
 title: How to send a USB interrupt transfer request (UWP app)
-author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # How to send a USB interrupt transfer request (UWP app)
@@ -34,9 +30,7 @@ For interrupt endpoints, the descriptor exposes these properties. Those values a
 
     Get that information by getting the **Interval** value of the endpoint descriptor (see [**UsbInterruptOutEndpointDescriptor.Interval**](https://msdn.microsoft.com/library/windows/apps/dn278422) or [**UsbInterruptInEndpointDescriptor.Interval**](https://msdn.microsoft.com/library/windows/apps/dn278411)). That value indicates how often data is sent to or received from the device in each frame on the bus.
 
-    **Note**  The **Interval** property is not the **bInterval** value (defined in the USB specification).
-
-     
+    **Note**  The **Interval** property is not the **bInterval** value (defined in the USB specification).
 
     That value indicates how often data is transmitted to or from the device. For example, for a high speed device, if **Interval** is 125 microseconds, data is transmitted every 125 microseconds. If **Interval** is 1000 microseconds, then data is transmitted every millisecond.
 
@@ -44,9 +38,9 @@ For interrupt endpoints, the descriptor exposes these properties. Those values a
 
     Get the number of bytes that can transmitted by getting the maximum packet size supported by the endpoint descriptor (see UsbInterruptOutEndpointDescriptor.MaxPacketSize or UsbInterruptInEndpointDescriptor.MaxPacketSize. The maximum packet size constrained on the speed of the device. For low-speed devices up to 8 bytes. For full-speed devices, up to 64 bytes. For high-speed, high-bandwidth devices, the app can send or receive more than maximum packet size up to 3072 bytes per microframe.
 
-    **Note**  Interrupt endpoints on SuperSpeed devices are capable of transmitting even more number of bytes. That value is indicated by the **wBytesPerInterval** of the USB\_SUPERSPEED\_ENDPOINT\_COMPANION\_DESCRIPTOR. To retrieve the descriptor, get the descriptor buffer by using the [**UsbEndpointDescriptor.AsByte**](https://msdn.microsoft.com/library/windows/apps/dn263827) property and then parse that buffer by using [**DataReader**](https://msdn.microsoft.com/library/windows/apps/br208119) methods.
+    **Note**  Interrupt endpoints on SuperSpeed devices are capable of transmitting even more number of bytes. That value is indicated by the **wBytesPerInterval** of the USB\_SUPERSPEED\_ENDPOINT\_COMPANION\_DESCRIPTOR. To retrieve the descriptor, get the descriptor buffer by using the [**UsbEndpointDescriptor.AsByte**](https://msdn.microsoft.com/library/windows/apps/dn263827) property and then parse that buffer by using [**DataReader**](https://msdn.microsoft.com/library/windows/apps/br208119) methods.
 
-     
+
 
 **Interrupt OUT transfers**
 
@@ -131,9 +125,9 @@ To register the event handler for the [**DataReceived**](https://msdn.microsoft.
 -   [**UsbInterface.InterfaceSettings\[m\].InterruptInEndpoints \[n\].Pipe**](https://msdn.microsoft.com/library/windows/apps/dn264292) for enumerating interrupt IN pipes defined by settings of an interface.
 -   [**UsbEndpointDescriptor.AsInterruptInEndpointDescriptor.Pipe**](https://msdn.microsoft.com/library/windows/apps/dn278413) for getting the pipe object from the endpoint descriptor for the interrupt IN endpoint.
 
-**Note**  Avoid getting the pipe object by enumerating interrupt endpoints of an interface setting that is not currently selected. To transfer data, pipes must be associated with endpoints in the active setting.
+**Note**  Avoid getting the pipe object by enumerating interrupt endpoints of an interface setting that is not currently selected. To transfer data, pipes must be associated with endpoints in the active setting.
 
- 
+
 
 ## Step 3: Register the event handler to start receiving data (Interrupt IN)
 
@@ -161,7 +155,7 @@ private void RegisterForInterruptEvent(TypedEventHandler<UsbInterruptInPipe, Usb
 void RegisterForInterruptEvent(TypedEventHandler<UsbInterruptInPipe, UsbInterruptInEventArgs> eventHandler)
     // Search for the correct pipe that has the specified endpoint number
     interruptInPipe = usbDevice.DefaultInterface.InterruptInPipes.GetAt(pipeIndex);
-        
+
     // Save the token so we can unregister from the event later
     interruptEventHandler = interruptInPipe.DataReceived += eventHandler;
 
@@ -172,7 +166,7 @@ void RegisterForInterruptEvent(TypedEventHandler<UsbInterruptInPipe, UsbInterrup
 
 After the event handler is registered, it is invoked each time data is received in the associated interrupt pipe.
 
-## <a href="" id="step-4--unregister-the--event-handler-to-stop-receiving-data--interrupt-in-"></a>Step 4: Unregister the event handler to stop receiving data (Interrupt IN)
+## Step 4: Unregister the event handler to stop receiving data (Interrupt IN)
 
 
 After you are finished receiving data, unregister the event handler.
@@ -204,13 +198,3 @@ void UnregisterFromInterruptEvent(void)
 ```
 
 After the event handler is unregistered, the app stops receiving data from the interrupt pipe because the event handler is not invoked on interrupt events. This does not mean that the interrupt pipe stops getting data.
-
- 
-
- 
-
-
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20How%20to%20send%20a%20USB%20interrupt%20transfer%20request%20%28Windows%20Store%20app%29%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-

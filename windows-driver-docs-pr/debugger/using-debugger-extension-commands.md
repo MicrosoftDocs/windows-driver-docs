@@ -3,11 +3,8 @@ title: Using Debugger Extension Commands
 description: Using Debugger Extension Commands
 ms.assetid: 1db9a835-accb-41b9-9ab1-c4c9f0596aa5
 keywords: ["extension commands ( commands), using", "extension commands ( commands), default search order"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using Debugger Extension Commands
@@ -22,7 +19,7 @@ An actual debugger extension command is an entry point in a DLL called by the de
 
 Debugger extensions are invoked by the following syntax:
 
-**!\[***module***.\]***extension* **\[***arguments***\]**
+**!\[**<em>module</em>**.\]**<em>extension</em> **\[**<em>arguments</em>**\]**
 
 The module name should not be followed with the .dll file name extension. If *module* includes a full path, the default string size limit is 255 characters.
 
@@ -74,7 +71,7 @@ The default search order is as follows:
     </tbody>
     </table>
 
-     
+     
 
 When an extension module is unloaded, it is removed from the search chain. When an extension module is loaded, it is added to the beginning of the search order. The [**.setdll (Set Default Extension DLL)**](-setdll--set-default-extension-dll-.md) command can be used to promote any module to the top of the search chain. By using this command repeatedly, you can completely control the search chain.
 
@@ -82,11 +79,10 @@ Use the [**.chain (List Debugger Extensions)**](-chain--list-debugger-extensions
 
 If you attempt to execute an extension command that is not in any of the loaded extension modules, you will get an Export Not Found error message.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Using%20Debugger%20Extension%20Commands%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

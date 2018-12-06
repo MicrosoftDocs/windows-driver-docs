@@ -2,11 +2,8 @@
 title: Accessing Registry Entry Values Under the Class Registry Key
 description: Accessing Registry Entry Values Under the Class Registry Key
 ms.assetid: 771b5751-db9f-43fa-90d1-1c43918a3a80
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Accessing Registry Entry Values Under the Class Registry Key
@@ -40,9 +37,9 @@ After you retrieve a handle to the class registry key, supply the handle in a ca
 
 Call the [RegCloseKey](http://go.microsoft.com/fwlink/p/?linkid=194543) function to close the class registry key after access to the key is no longer required.
 
- 
+ 
 
- 
+ 
 
 
 

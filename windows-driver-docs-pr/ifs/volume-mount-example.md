@@ -1,6 +1,5 @@
 ---
 title: Volume Mount Example
-author: windows-driver-content
 description: Volume Mount Example
 ms.assetid: d6645d05-a945-4454-ac7c-122219bbdc50
 keywords:
@@ -8,11 +7,8 @@ keywords:
 - file system filter drivers WDK , volume mount process
 - mounting volumes WDK file systems
 - volumes WDK file system , mounting
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Volume Mount Example
@@ -43,11 +39,10 @@ Some notes about the preceding figure:
 
     However, PnP IRPs ([**IRP\_MJ\_PNP**](https://msdn.microsoft.com/library/windows/hardware/ff549268)) can be sent to either stack. Filter drivers chained above a file system volume should always pass these IRPs down to the next lower driver by default so that the file system's volume device can pass the IRPs down to the storage device stack.
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

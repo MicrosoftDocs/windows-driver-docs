@@ -2,11 +2,8 @@
 title: Overview of Finish-Install Actions
 description: Overview of Finish-Install Actions
 ms.assetid: 986ac884-2970-4eda-a800-88fd30b95562
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Overview of Finish-Install Actions
@@ -26,11 +23,11 @@ Starting with Windows Vista, User Account Control (UAC) enables users to run at
 
 **Note**   Starting with Windows 7, if UAC is set to the default setting (Notify me only when programs try to make changes to my computer) or a lower setting, the operating system does not display the prompt for users with administrative privileges when it processes finish-install actions.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

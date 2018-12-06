@@ -3,27 +3,24 @@ title: u, ub, uu (Unassemble)
 description: The u* commands display an assembly translation of the specified program code in memory. This command should not be confused with the ~u (Unfreeze Thread) command.
 ms.assetid: 933a308c-61d1-4ca4-89c1-5749ba1b41c1
 keywords: ["u, ub, uu (Unassemble) Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - u, ub, uu (Unassemble)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # u, ub, uu (Unassemble)
 
 
-The **u\*** commands display an assembly translation of the specified program code in memory.
+The **u\\*** commands display an assembly translation of the specified program code in memory.
 
 This command should not be confused with the [**~u (Unfreeze Thread)**](-u--unfreeze-thread-.md) command.
 
-```
+```dbgcmd
 u[u|b] Range 
 u[u|b] Address
 u[u|b] 
@@ -67,7 +64,7 @@ Specifies that the disassembly will continue even if there is a memory read erro
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -80,11 +77,10 @@ If you do not specify a parameter for the **u** command, the disassembly begins 
 
 Do not confuse this command with the [**up (Unassemble from Physical Memory)**](up--unassemble-from-physical-memory-.md). The **u** command disassembles only virtual memory, while the **up** command disassembles only physical memory.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20u,%20ub,%20uu%20%28Unassemble%29%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

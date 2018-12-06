@@ -1,6 +1,5 @@
 ---
 title: Using Driver-Defined Interfaces
-author: windows-driver-content
 description: Using Driver-Defined Interfaces
 ms.assetid: ad96add6-c982-429b-b815-d7adf6fed8cc
 keywords:
@@ -12,11 +11,8 @@ keywords:
 - reference functions WDK KMDF
 - dereference functions WDK KMDF
 - no-op functions WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using Driver-Defined Interfaces
@@ -91,9 +87,9 @@ If you are designing driver B, which defines an interface, you must decide wheth
 
 If you are designing driver A, which accesses the interface on the remote I/O target, the driver must provide an [*EvtIoTargetQueryRemove*](https://msdn.microsoft.com/library/windows/hardware/ff541793) callback function that releases the interface when driver B's device is about to be removed, an [*EvtIoTargetRemoveComplete*](https://msdn.microsoft.com/library/windows/hardware/ff541806) callback function that releases the interface when driver B's device is surprise-removed, and an [*EvtIoTargetRemoveCanceled*](https://msdn.microsoft.com/library/windows/hardware/ff541800) callback function that reacquires the interface if an attempt to remove the device was canceled.
 
- 
+ 
 
- 
+ 
 
 
 

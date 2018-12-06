@@ -4,17 +4,14 @@ description: Receiving Data in an Intermediate Driver
 ms.assetid: 0fe3d8d0-565d-453d-b51e-9383a1dfcf1d
 keywords:
 - receive operations WDK NDIS intermediate
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Receiving Data in an Intermediate Driver
 
 
-## <a href="" id="ddk-receiving-data-in-an-intermediate-driver-ng"></a>
+
 
 
 Intermediate drivers receive data at their protocol lower edge in much the same way as protocol drivers.
@@ -29,9 +26,9 @@ Additional information about receiving data in intermediate drivers is also prov
 
 [Indicating Receive Network Data to Higher Level Drivers](indicating-receive-network-data-to-higher-level-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

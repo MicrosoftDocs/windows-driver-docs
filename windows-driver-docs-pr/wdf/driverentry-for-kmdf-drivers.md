@@ -7,6 +7,8 @@ topic_type:
 - apiref
 api_type:
 - NA
+ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # DriverEntry for WDF Drivers routine
@@ -67,7 +69,7 @@ Like all WDM drivers, framework-based drivers must have a **DriverEntry** routin
 
 **Note**  A UMDF driver runs in a user-mode host process, while a KMDF driver runs in kernel mode in a system process. The framework might load multiple instances of a UMDF driver into separate instances of the host process. As a result:
 
- 
+ 
 
 -   The framework might call a UMDF driver’s DriverEntry routine multiple times if it loads instances of the driver in different host processes. In contrast, the framework calls a KMDF driver's DriverEntry routine only once.
 -   If a UMDF driver creates a global variable in its DriverEntry routine, the variable might may not be available to all instances of the driver. However, a global variable that a KMDF driver creates in its DriverEntry routine is available to all instances of the driver.
@@ -94,7 +96,7 @@ Examples
 
 The following code example shows the Serial (KMDF) sample driver's **DriverEntry** routine.
 
-```
+```cpp
 NTSTATUS
 DriverEntry(
     IN PDRIVER_OBJECT  DriverObject,
@@ -183,11 +185,10 @@ DriverEntry(
 
 [*EvtDriverDeviceAdd*](https://msdn.microsoft.com/library/windows/hardware/ff541693)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bwdf\wdf%5D:%20DriverEntry%20for%20WDF%20Drivers%20routine%20%20RELEASE:%20%2811/20/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

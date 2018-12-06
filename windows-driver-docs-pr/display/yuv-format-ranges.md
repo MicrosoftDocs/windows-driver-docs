@@ -7,12 +7,9 @@ keywords:
 - extended-range YUV WDK display
 - studio luminance range YUV WDK display
 - YUV formats and WMF support WDK display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: ["full-range YUV WDK display", "extended-range YUV WDK display", "studio luminance range YUV WDK display", "YUV formats and WMF support WDK display"]
+ms.localizationpriority: medium
 ---
 
 # YUV format ranges in Windows 8.1
@@ -25,7 +22,7 @@ Apps can signal user-mode display drivers to take advantage of extended-range \[
 | *extended range*         | \[0, 255\]       | consumer equipment: webcams and point-and-shoot cameras | JFIF standard, and MJPEG video format uses as the default |
 | *studio luminance range* | \[16, 235\]      | professional cameras and video equipment                | ITU BT.601 and BT.709                                     |
 
- 
+ 
 
 Most video produced by the content and broadcast industry is in studio range, while video produced by individual consumers is in extended range. Extended range is also called *full luminance range*.
 
@@ -65,15 +62,14 @@ Before Windows 8.1, Media Foundation only supported studio luminance range, so 
 
 **Note**  WDDM 1.3 and greater user-mode display drivers must support all of these new and changed structures and enumerations.
 
- 
+ 
 
 See [YUV-RGB data range conversions](yuv-rgb-data-range-conversions.md) for details on how to convert between different input RGB and YUV formats.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20YUV%20format%20ranges%20in%20Windows%C2%A08.1%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -10,11 +10,8 @@ api_name:
 - SignTool
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # SignTool
@@ -35,7 +32,7 @@ Configures SignTool to update a catalog database. SignTool either adds catalog f
 
 **Note**  Catalog databases are used for automatic lookup of catalog files.
 
- 
+ 
 
 <span id="sign"></span><span id="SIGN"></span>**sign**  
 Configures SignTool to digitally-sign the files whose names are specified by the *FileName* argument.
@@ -201,7 +198,7 @@ Configures SignTool to verify that the digital signature of each of the files sp
 Uses multiple verification semantics. This is the default behavior of a [**WinVerifyTrust function**](https://msdn.microsoft.com/library/windows/desktop/aa388208) call on Windows 8 and above.
 
 <span id="_o_Version"></span><span id="_o_version"></span><span id="_O_VERSION"></span>**/o** *Version*  
-Verifies the file as per the operating system version. The format for the *Version* argument is *PlatformID***:***VerMajor***.***VerMinor***.***BuildNumber*
+Verifies the file as per the operating system version. The format for the *Version* argument is <em>PlatformID</em>**:**<em>VerMajor</em>**.**<em>VerMinor</em>**.**<em>BuildNumber</em>
 
 The use of the **/o** option is recommended. If **/o** is not specified, SignTool might return unexpected results. For example, if you do not include the **/o** option, system catalogs that validate correctly on an older operating systems might not validate correctly on a newer operating system.
 
@@ -213,14 +210,14 @@ Configures SignTool to verify that the digital signature of each of the files sp
 
 **Note**  This option cannot be used with the **catdb** options.
 
- 
+ 
 
 <span id="_pg__PolicyGUID"></span><span id="_pg__policyguid"></span><span id="_PG__POLICYGUID"></span>**/pg** *PolicyGUID*  
 Specifies a verification policy by GUID. The PolicyGUID corresponds to the ActionID of the verification policy.
 
 **Note**  This option cannot be used with the **catdb** options.
 
- 
+ 
 
 <span id="_ph__"></span><span id="_PH__"></span>**/ph**   
 Specifies that Sign Tool should print and verify page hash values.
@@ -317,11 +314,10 @@ The following is an example of how to use SignTool to add the catalog file Catal
 SignTool catdb /v /u CatalogFileName.cat
 ```
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20SignTool%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

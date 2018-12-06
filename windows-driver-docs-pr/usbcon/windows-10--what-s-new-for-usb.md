@@ -1,18 +1,17 @@
 ---
 Description: Highlights the new features and improvements for Universal Serial Bus (USB) in Windows 10.
 title: Windows 10 - What's new for USB
-author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Windows 10: What's new for USB
 
 
 This topic highlights the new features and improvements for Universal Serial Bus (USB) in Windows 10.
+
+-  **UCSI driver extension** 
+    Starting in Windows 10, version 1809, a new class extension for UCSI (UcmUcsiCx.sys) has been added,which implements the UCSI specification in a transport agnostic way. With minimal amount of code, your driver, which is a client to UcmUcsiCx, can communicate with the USB Type-C hardware over non-ACPI transport. This topic describes the services provided by the UCSI class extension and the expected behavior of the client driver.
 
 -   **USB Type-C Port Controller Interface** 
 
@@ -49,7 +48,7 @@ This topic highlights the new features and improvements for Universal Serial Bus
 
 -   **New set of programming interfaces for developing a USB host controller driver.**
 
-    You can develop a host controller if your hardware is not xHCI specification-compliant or your are writing a virtual host controller, such as a controller that routes USB traffic over a TCP connection to the peripherals attached to a device. Your host controller driver is a client to the USB host controller extension, which is a system-supplied driver that follows the framework class extension model. Within the [Microsoft USB 3.0 Driver Stack](http://msdn.microsoft.com/library/windows/hardware/hh406256.aspx#usb-3-0-driver-stack), UCX provides functionality to assist the host controller driver in managing a USB host controller device.
+    You can develop a host controller if your hardware is not xHCI specification-compliant or your are writing a virtual host controller, such as a controller that routes USB traffic over a TCP connection to the peripherals attached to a device. Your host controller driver is a client to the USB host controller extension, which is a system-supplied driver that follows the framework class extension model. Within the [Microsoft USB 3.0 Driver Stack](https://msdn.microsoft.com/library/windows/hardware/hh406256.aspx#usb-3-0-driver-stack), UCX provides functionality to assist the host controller driver in managing a USB host controller device.
 
     [Developing Windows drivers for USB host controllers](developing-windows-drivers-for-usb-host-controllers.md)
 
@@ -79,12 +78,10 @@ This topic highlights the new features and improvements for Universal Serial Bus
 
     [USB serial driver (Usbser.sys)](usb-driver-installation-based-on-compatible-ids.md)
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20Windows%2010:%20What's%20new%20for%20USB%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

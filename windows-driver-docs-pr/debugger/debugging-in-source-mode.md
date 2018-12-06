@@ -3,11 +3,8 @@ title: Debugging in Source Mode
 description: Debugging in Source Mode
 ms.assetid: b236f53b-2429-4085-b008-6648d1474ec2
 keywords: ["source debugging", "source mode", "source debugging, overview", "Build utility (build.exe), avoiding optimization"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Debugging in Source Mode
@@ -40,7 +37,7 @@ If you start a new user-mode application by using the debugger, the initial brea
 
 To move the program counter to the beginning of the application, add a breakpoint at the entry point to your binary. In the [Debugger Command window](debugger-command-window.md), type the following command.
 
-```
+```dbgcmd
 bp main
 g
 ```
@@ -85,7 +82,7 @@ You can use the [**lsp (Set Number of Source Lines)**](lsp--set-number-of-source
 
 The following sequence of commands is an effective way to step through a source file.
 
-```
+```text
 .lines        enable source line information
 bp main       set initial breakpoint
 l+t           stepping will be done by source line
@@ -111,7 +108,7 @@ You can also perform source debugging by using the expression evaluator to deter
 
 The following command displays a memory offset.
 
-```
+```dbgcmd
 ? `[[module!]filename][:linenumber]` 
 ```
 
@@ -123,7 +120,7 @@ This syntax is understood in CDB only if the **.lines** command or the **-lines*
 
 This technique is very versatile, because you can use it regardless of where the program counter is pointing. For example, this technique enables you to set breakpoints in advance, by using commands such as the following.
 
-```
+```dbgcmd
 bp `source.c:31` 
 ```
 
@@ -135,7 +132,7 @@ When you are debugging in source mode, there can be multiple function calls on a
 
 For example, in the following command, the **t** command steps into both **GetTickCount** and **printf**, while the **p** command steps over both function calls.
 
-```
+```cpp
 printf( "%x\n", GetTickCount() );
 ```
 
@@ -143,11 +140,10 @@ If you want to step over certain calls while tracing into other calls, use [**.s
 
 You can use **\_step\_filter** to filter out framework functions (for example, Microsoft Foundation Classes (MFC) or Active Template Library (ATL) calls).
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Debugging%20in%20Source%20Mode%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

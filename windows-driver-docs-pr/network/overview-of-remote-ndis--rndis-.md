@@ -5,17 +5,14 @@ ms.assetid: 03da539d-9613-4454-8f79-514e76767af6
 keywords:
 - Remote NDIS WDK networking , architecture
 - Remote NDIS WDK networking , USB transport
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Overview of Remote NDIS (RNDIS)
 
 
-## <a href="" id="ddk-overview-of-remote-ndis-ng"></a>
+
 
 
 Remote NDIS (RNDIS) eliminates the need for hardware vendors to write an NDIS miniport device driver for a network device attached to the USB bus. Remote NDIS accomplishes this by defining a bus-independent message set and a description of how this message set operates over the USB bus. Because this Remote NDIS interface is standardized, one set of host drivers can support any number of networking devices attached to the USB bus. This significantly reduces the development burden on device manufacturers, improves the overall stability of the system because no new drivers are required, and improves the end-user experience because there are no drivers to install to support a new USB bus-connected network device. Currently Microsoft Windows provides support for Remote NDIS over USB.
@@ -61,9 +58,9 @@ This section includes the following additional topics:
 
 [USB class drivers included in Windows](https://msdn.microsoft.com/library/windows/hardware/ff538820)
 
- 
+ 
 
- 
+ 
 
 
 

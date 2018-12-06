@@ -3,11 +3,8 @@ title: Synchronous OID request interface in NDIS 6.80
 description: This topic describes the new Synchronous OID request interface in NDIS 6.80
 ms.assetid: 6BF2E800-90A0-48FC-B702-5AD4EC318A35
 keywords: Synchronous OID Requests Interface, Synchronous OID call, WDK Synchronous OIDs, Synchronous OID request
-ms.author: windowsdriverdev
 ms.date: 09/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Synchronous OID request interface in NDIS 6.80
@@ -38,9 +35,6 @@ The following table describes the differences between Regular OIDs, Direct OIDs,
 | Filters clone the OID | Yes | Yes | No |
 
 ## Filtering
-
-> [!WARNING]
-> In Windows 10, version 1709, Synchronous OID requests are supported only for miniport and protocol drivers. The information in this section is for informational purposes only to explain how Synchronous OID calls work. Filter drivers cannot make Synchronous OID request calls in Windows 10, version 1709.
 
 Like the other two types of OID calls, filter drivers have full control over the OID request in a Synchronous call. Filter drivers can observe, intercept, modify, and issue Synchronous OIDs. However, for efficiency, the mechanics of a Synchronous OID are somewhat different.
 
@@ -163,17 +157,17 @@ MyFilterSynchronousOidRequest(
 }
 ```
 
-If you want to intercept or modify a particular OID, you can do it by adding just a couple lines of code:
+If you want to intercept or modify a particular OID, you can do it by adding just a couple lines of code. The minimal Complete handler is even simpler:
 
 ```cpp
 VOID
 MyFilterSynchronousOidRequestComplete(
   NDIS_HANDLE FilterModuleContext,
-   NDIS_OID_REQUEST *OidRequest,
+  NDIS_OID_REQUEST *OidRequest,
   NDIS_STATUS *Status,
   PVOID CallContext)
 {
-
+  return;
 }
 ```
 
@@ -196,8 +190,6 @@ Therefore, just as with Direct OID requests, Synchronous OID calls can only be u
 For more info about implementing the Synchronous OID request interface in drivers, see the following topics:
 
 - [Miniport Adapter OID Requests](miniport-adapter-oid-requests.md)
+- [Filter Module OID Requests](filter-module-oid-requests.md)
 - [Protocol Driver OID Requests](protocol-driver-oid-requests.md)
 
-For Synchronous OID request interface API reference, see [NDIS 6.80 Synchronous OID request interface](https://msdn.microsoft.com/library/windows/hardware/0D10CFB5-01A4-4997-92AA-8D72A68CBCD2).
-
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_mb\p_mb%5D:%20Planning%20your%20APN%20database%20submission%20%20RELEASE:%20%281/18/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")

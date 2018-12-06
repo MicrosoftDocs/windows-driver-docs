@@ -1,15 +1,11 @@
 ---
 title: OID_SRIOV_BAR_RESOURCES
-author: windows-driver-content
 description: NDIS issues an object identifier (OID) method request of OID_SRIOV_BAR_RESOURCES to determine the memory resources that were allocated to a PCI Express (PCIe) Base Address Register (BAR) of a PCIe Virtual Function (VF).
 ms.assetid: CA29591B-EBFB-4B12-A980-F3FAD65207E2
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_SRIOV_BAR_RESOURCES Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # OID\_SRIOV\_BAR\_RESOURCES
@@ -38,13 +34,13 @@ NDIS issues an OID method request of OID\_SRIOV\_BAR\_RESOURCES to obtain the sy
 
 **Note**  Overlying drivers, such as protocol or filter drivers, cannot issue OID method requests of OID\_SRIOV\_BAR\_RESOURCES to the PF miniport driver.
 
- 
+ 
 
 When the PF miniport driver receives the OID method request, the driver returns the resources for the specified BAR by formatting the [**CM\_PARTIAL\_RESOURCE\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff541977) structure within the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure. The driver formats the **CM\_PARTIAL\_RESOURCE\_DESCRIPTOR** structure with the system hardware resources associated with the BAR for the specified VF.
 
 **Note**  The driver must format the structure for a resource type of **CmResourceTypeMemory**.
 
- 
+ 
 
 ### Return Status Codes
 
@@ -72,11 +68,11 @@ The PF miniport driver returns one of the following status codes for the method 
 </tr>
 <tr class="odd">
 <td><p>NDIS_STATUS_INVALID_PARAMETER</p></td>
-<td><p>One or more of the members of the [<strong>NDIS_SRIOV_BAR_RESOURCES_INFO</strong>](https://msdn.microsoft.com/library/windows/hardware/hh451675) structure have invalid values.</p></td>
+<td><p>One or more of the members of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451675" data-raw-source="[&lt;strong&gt;NDIS_SRIOV_BAR_RESOURCES_INFO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh451675)"><strong>NDIS_SRIOV_BAR_RESOURCES_INFO</strong></a> structure have invalid values.</p></td>
 </tr>
 <tr class="even">
 <td><p>NDIS_STATUS_INVALID_LENGTH</p></td>
-<td><p>The information buffer is less than (sizeof([<strong>NDIS_SRIOV_BAR_RESOURCES_INFO</strong>](https://msdn.microsoft.com/library/windows/hardware/hh451675)) + sizeof([<strong>CM_PARTIAL_RESOURCE_DESCRIPTOR</strong>](https://msdn.microsoft.com/library/windows/hardware/ff541977)). The PF miniport driver must set the <strong>DATA.METHOD_INFORMATION.BytesNeeded</strong> member in the [<strong>NDIS_OID_REQUEST</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure to the minimum buffer size that is required.</p></td>
+<td><p>The information buffer is less than (sizeof(<a href="https://msdn.microsoft.com/library/windows/hardware/hh451675" data-raw-source="[&lt;strong&gt;NDIS_SRIOV_BAR_RESOURCES_INFO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh451675)"><strong>NDIS_SRIOV_BAR_RESOURCES_INFO</strong></a>) + sizeof(<a href="https://msdn.microsoft.com/library/windows/hardware/ff541977" data-raw-source="[&lt;strong&gt;CM_PARTIAL_RESOURCE_DESCRIPTOR&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff541977)"><strong>CM_PARTIAL_RESOURCE_DESCRIPTOR</strong></a>). The PF miniport driver must set the <strong>DATA.METHOD_INFORMATION.BytesNeeded</strong> member in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710" data-raw-source="[&lt;strong&gt;NDIS_OID_REQUEST&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566710)"><strong>NDIS_OID_REQUEST</strong></a> structure to the minimum buffer size that is required.</p></td>
 </tr>
 <tr class="odd">
 <td><p>NDIS_STATUS_FAILURE</p></td>
@@ -85,7 +81,7 @@ The PF miniport driver returns one of the following status codes for the method 
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -117,12 +113,10 @@ Requirements
 
 [**NDIS\_SRIOV\_BAR\_RESOURCES\_INFO**](https://msdn.microsoft.com/library/windows/hardware/hh451675)
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_SRIOV_BAR_RESOURCES%20%20RELEASE:%20%288/8/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

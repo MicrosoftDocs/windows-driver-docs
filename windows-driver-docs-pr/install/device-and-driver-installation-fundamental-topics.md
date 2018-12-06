@@ -2,11 +2,8 @@
 title: Device and Driver Installation Fundamental Topics
 description: Device and Driver Installation Fundamental Topics
 ms.assetid: 0215f185-6d30-4ce5-b30f-3132f75afba3
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Device and Driver Installation Fundamental Topics
@@ -16,7 +13,7 @@ This section introduces the concepts and practices that you need to understand t
 
 **Note**   Before you review the topics in the [Device and Driver Installation Advanced Topics](device-and-driver-installation-advanced-topics.md) section, we recommend that you study and understand the information in this section first.
 
- 
+ 
 
 This section includes the following topics:
 
@@ -34,9 +31,9 @@ This section includes the following topics:
 
 [Updating Driver Files](updating-driver-files.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,8 @@
 title: Overview of NDIS QoS Parameters
 description: Overview of NDIS QoS Parameters
 ms.assetid: E9321805-2930-410A-81BC-F7978517E89E
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Overview of NDIS QoS Parameters
@@ -26,7 +23,7 @@ NDIS Quality of Service (QoS) parameters specify the policies and settings of tr
 
     **Note**  Traffic classifications are also known as "application priorities" in the IEEE 802.1 specifications.
 
-     
+     
 
 NDIS QoS defines the following types of parameters:
 
@@ -57,9 +54,9 @@ The miniport driver must issue an NDIS status indication when its operational Qo
 
 For more information about how the miniport driver resolves its operational NDIS QoS parameters, see [Resolving Operational NDIS QoS Parameters](resolving-operational-ndis-qos-parameters.md).
 
- 
+ 
 
- 
+ 
 
 
 

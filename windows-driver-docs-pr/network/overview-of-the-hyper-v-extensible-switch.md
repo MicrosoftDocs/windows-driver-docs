@@ -2,11 +2,8 @@
 title: Overview of the Hyper-V Extensible Switch
 description: This section provides an overview of the Hyper-V Extensible Switch
 ms.assetid: 78181C72-FBFD-4860-A664-C297997D780F
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Overview of the Hyper-V Extensible Switch
@@ -28,7 +25,7 @@ For high-level technical overviews of this technology and its underpinnings, see
 -   [Hyper-V Network Virtualization Overview](http://technet.microsoft.com/library/jj134230.aspx)
 -   [Hyper-V Overview](http://technet.microsoft.com/library/hh831531.aspx)
 
-## <a href="" id="types-of-hyper-v--extensible-switches-and-network-adapters"></a>Types of Hyper-V extensible switches and network adapters
+## Types of Hyper-V extensible switches and network adapters
 
 
 The Hyper-V Virtual Network Manager can be used to create, configure, or delete one or more extensible switches of the following types:
@@ -45,7 +42,7 @@ The Hyper-V Virtual Network Manager can be used to create, configure, or delete 
 
     **Note**  Applications and drivers that run in the management operating system cannot send or receive packets through this type of switch.
 
-     
+     
 
 Each extensible switch module routes incoming and outgoing packets over the network adapters that are used by the Hyper-V child and parent partitions. These network adapters include the following:
 
@@ -55,7 +52,7 @@ Each extensible switch module routes incoming and outgoing packets over the netw
 
     **Note**  Only external extensible switches provide access to an external network adapter.
 
-     
+     
 
 -   Internal network adapters that provide access to an extensible switch for processes that run in the management operating system of the Hyper-V parent partition. This allows these processes to send or receive packets over the extensible switch.
 
@@ -63,7 +60,7 @@ Each extensible switch module routes incoming and outgoing packets over the netw
 
     **Note**  Only external and internal extensible switches provide access to an internal network adapter.
 
-     
+     
 
 -   VM network adapters that are exposed within the guest operating system that runs in a Hyper-V child partition. VM network adapters provide a connection to the extensible switch for packets to be sent or received by processes that run in the guest operating system of the child partition.
 
@@ -94,7 +91,7 @@ The Hyper-V extensible switch supports an interface in which independent softwar
 
     **Note**  To perform WFP-based filtering of extensible switch packet traffic, ISVs only need to extend their WFP filters and callout drivers to use extended WFP calls and data types. ISVs do not need to develop their own extensions.
 
-     
+     
 
 The extensible switch interface supports the following types of extensions:
 
@@ -121,7 +118,7 @@ These extensions have the same capabilities as filtering extensions, but are res
 
 **Note**  If a forwarding extension is not installed and enabled in the extensible switch, the switch determines a packet's destination ports as well as filters packets based on standard port settings.
 
- 
+ 
 
 Only one forwarding extension can be bound and enabled in each instance of an extensible switch.
 
@@ -140,9 +137,9 @@ The following figure shows the components of the extensible switch interface for
 
 For more information about the components for the extensible switch interface, see [Hyper-V Extensible Switch Architecture](hyper-v-extensible-switch-architecture.md).
 
- 
+ 
 
- 
+ 
 
 
 

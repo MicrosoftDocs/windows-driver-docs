@@ -11,17 +11,14 @@ keywords:
 - network wake-up events WDK networking
 - power management WDK NDIS miniport , wake-up capabilities
 - wake-up frames WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Network Wake-Up Events
 
 
-## <a href="" id="ddk-network-wake-up-events-ng"></a>
+
 
 
 A *network wake-up event* is an external event that causes a network adapter to wake the system. A network adapter wakes the system by asserting a bus-specific wake-up signal that eventually results in the system making a transition from a sleeping state to the working state.
@@ -54,9 +51,9 @@ This section includes:
 
 [Handling Wake-Up Events](handling-wake-up-events.md)
 
- 
+ 
 
- 
+ 
 
 
 

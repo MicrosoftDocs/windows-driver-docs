@@ -1,16 +1,12 @@
 ---
 title: Error Handling in SCSI Miniport Drivers
-author: windows-driver-content
 description: Error Handling in SCSI Miniport Drivers
 ms.assetid: 0d9a2d60-c8e5-48f6-9c1f-d593e59095c8
 keywords:
 - SCSI miniport drivers WDK storage , errors
 - errors WDK SCSI
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Error Handling in SCSI Miniport Drivers
@@ -87,11 +83,10 @@ SP\_BAD\_FW\_WARNING
 
 [**ScsiPortLogError**](https://msdn.microsoft.com/library/windows/hardware/ff564652) allocates an error-log packet, sets it up, and logs the I/O error in the event log on behalf of the miniport driver. System administrators or users can monitor the condition of an HBA by examining the system event log and, if necessary, reconfiguring, repairing, or replacing the HBA before it fails.
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

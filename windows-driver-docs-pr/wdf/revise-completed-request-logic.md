@@ -1,13 +1,9 @@
 ---
 title: Revise Code That Handles Completed Requests
-author: windows-driver-content
 description: Revise Code That Handles Completed Requests
 ms.assetid: 0DD48424-A728-4887-9F26-46B7004CB12C
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Revise Code That Handles Completed Requests
@@ -21,9 +17,9 @@ Windows Driver Frameworks (WDF) provides three methods that complete I/O request
 
 For information about using these methods, see [Completing I/O Requests](completing-i-o-requests.md).
 
- 
+ 
 
- 
+ 
 
 
 

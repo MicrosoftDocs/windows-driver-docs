@@ -1,15 +1,11 @@
 ---
 title: NDIS_STATUS_WWAN_PIN_INFO
-author: windows-driver-content
 description: Miniport drivers use the NDIS_STATUS_WWAN_PIN_INFO notification to respond to OID query and set requests of OID_WWAN_PIN. Miniport drivers cannot use this notification to send unsolicited events.This notification uses the NDIS_WWAN_PIN_INFO structure.
 ms.assetid: fa3c2467-2240-423b-b91b-f7e19d5be353
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -NDIS_STATUS_WWAN_PIN_INFO Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_WWAN\_PIN\_INFO
@@ -44,7 +40,7 @@ When miniport drivers use the NDIS\_STATUS\_WWAN\_PIN\_INFO notification to resp
 
         **Note**  If the MB device supports PIN unblock operations, miniport drivers should follow the PIN Unblocking step to respond to the request.
 
-         
+         
 
     -   PIN Unblocking: The PIN is blocked when **AttemptsRemaining** is zero. To unblock the PIN, the MB device may request a corresponding PIN Unlock Key (PUK), if applicable. In this case, miniport drivers must set **PinType** to the corresponding WwanPinType*Xxx*PUK with the relevant details.
 
@@ -54,11 +50,11 @@ When miniport drivers use the NDIS\_STATUS\_WWAN\_PIN\_INFO notification to resp
 
 When miniport drivers use the NDIS\_STATUS\_WWAN\_PIN\_INFO notification to respond to **WwanPinOperationEnable**, **WwanPinOperationDisable**, and **WwanPinOperationChange**, they should implement the following operations:
 
--   For successful requests, miniport drivers must set **uStatus** to WWAN\_STATUS\_SUCCESS. Other members are ignored.
+-   For successful requests, miniport drivers must set **uStatus** to WWAN\_STATUS\_SUCCESS. For other members in WWAN_PIN_INFO, see the following circumstances.
 
 -   Miniport drivers must set **uStatus** to WWAN\_STATUS\_SUCCESS for PIN-enable and PIN-disable operations when the PIN is already in the requested state. Miniport drivers must set **PinType** to **WwanPinTypeNone**. Other members are ignored.
 
--   When a PIN mode is changed from disabled to enabled the PIN state should be WwanPinStateNone.
+-   When a PIN mode is changed from disabled to enabled, the PIN state should be WwanPinStateNone.
 
 -   If PIN1 is enabled, the PIN state shall become WwanPinStateEnter when power is cycled to the MB device.
 
@@ -76,7 +72,7 @@ When miniport drivers use the NDIS\_STATUS\_WWAN\_PIN\_INFO notification to resp
 
     **Note**  If the MB device supports PIN unblock operations, miniport drivers should follow the PIN Unblocking step to respond to the request.
 
-     
+     
 
 -   Unblocking PIN: The PIN is blocked when **AttemptsRemaining** is zero. To unblock the PIN, the MB device may request a corresponding PUK, if applicable. In this case, miniport drivers must set **uStatus** to WWAN\_STATUS\_FAILURE, **PinType** to the corresponding WwanPinType*Xxx*PUK, **PinState** to **WwanPinStateEnter**, and **AttemptsRemaining** should have the number of attempts allowed to enter a valid PUK.
 
@@ -111,12 +107,10 @@ Requirements
 
 [**NDIS\_STATUS\_WWAN\_PIN\_INFO**](ndis-status-wwan-pin-info.md)
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20NDIS_STATUS_WWAN_PIN_INFO%20%20RELEASE:%20%288/8/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

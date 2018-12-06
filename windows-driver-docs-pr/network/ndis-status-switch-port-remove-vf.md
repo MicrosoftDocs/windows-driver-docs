@@ -1,15 +1,11 @@
 ---
 title: NDIS_STATUS_SWITCH_PORT_REMOVE_VF
-author: windows-driver-content
 description: The NDIS_STATUS_SWITCH_PORT_REMOVE_VF status indication is issued by a Hyper-V extensible switch forwarding extension to remove the binding between a virtual machine (VM) network adapter and a PCI Express (PCIe) virtual function (VF).
 ms.assetid: D6A52183-C9C6-4F0B-9E25-6C5C16CBEFFE
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_SWITCH_PORT_REMOVE_VF Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_SWITCH\_PORT\_REMOVE\_VF
@@ -70,7 +66,7 @@ In order to issue the **NDIS\_STATUS\_SWITCH\_PORT\_REMOVE\_VF** status indicati
 
     **Note**  If the forwarding extension has received an [OID\_SWITCH\_NIC\_DISCONNECT](https://msdn.microsoft.com/library/windows/hardware/hh598265) set request for the VM adapter, it must not call [*ReferenceSwitchNic*](https://msdn.microsoft.com/library/windows/hardware/hh598294) nor forward the status indication.
 
-     
+     
 
 5.  The forwarding extension calls [**NdisFIndicateStatus**](https://msdn.microsoft.com/library/windows/hardware/ff561824) to forward the [**NDIS\_STATUS\_INDICATION**](https://msdn.microsoft.com/library/windows/hardware/ff567373) to overlying extensions in the extensible switch driver stack. When the forwarding extension calls this function, it sets the *StatusIndication* parameter to a pointer to the **NDIS\_STATUS\_INDICATION** structure for the [**NDIS\_STATUS\_SWITCH\_NIC\_STATUS**](ndis-status-switch-nic-status.md) indication.
 
@@ -78,7 +74,7 @@ In order to issue the **NDIS\_STATUS\_SWITCH\_PORT\_REMOVE\_VF** status indicati
 
 **Note**  The forwarding extension must follow the previous steps for each VF assignment that the forwarding extension is removing.
 
- 
+ 
 
 For more information on how a forwarding extension forwards status indications, see [Filter Module Status Indications](https://msdn.microsoft.com/library/windows/hardware/ff550020).
 
@@ -138,12 +134,10 @@ Requirements
 
 [OID\_SWITCH\_NIC\_ARRAY](https://msdn.microsoft.com/library/windows/hardware/hh598261)
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20NDIS_STATUS_SWITCH_PORT_REMOVE_VF%20%20RELEASE:%20%287/5/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

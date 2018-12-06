@@ -3,17 +3,14 @@ title: .jdinfo (Use JIT_DEBUG_INFO)
 description: The .jdinfo command uses a JIT_DEBUG_INFO structure as the source of the exception and context for just in time (JIT) debugging.
 ms.assetid: C35A2A04-CF0E-475e-8471-2A8562BB3650
 keywords: ["Use JIT_DEBUG_INFO (.jdinfo) command ----- Appendix", "JIT_DEBUG_INFO ----- Appendix", ".jdinfo (Use JIT_DEBUG_INFO) Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - .jdinfo (Use JIT_DEBUG_INFO)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .jdinfo (Use JIT\_DEBUG\_INFO)
@@ -23,7 +20,7 @@ The **.jdinfo** command uses a JIT\_DEBUG\_INFO structure as the source of the e
 
 For more information about the registry keys used, see [Enabling Postmortem Debugging](enabling-postmortem-debugging.md). For more information about register contexts, see [Changing Contexts](changing-contexts.md).
 
-```
+```dbgcmd
 .jdinfo Address 
 ```
 
@@ -56,19 +53,19 @@ Specifies the address of the JIT\_DEBUG\_INFO structure. The address to the stru
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Example"></span><span id="example"></span><span id="EXAMPLE"></span>Example
 
 This example show how the AeDebug registry entry can be configured to use the WinDbg can be used as the JIT debugger.
 
-```
+```dbgcmd
 Debugger = "Path\WinDbg.EXE -p %ld -e %ld -c ".jdinfo 0x%p"
 ```
 
 Then, when a crash occurs, the configured JIT debugger is invoked and the %p parameter is used to pass the address of the JIT\_DEBUG\_INFO structure to the **.jdinfo** command that is executed after the debugger is started.
 
-```
+```dbgcmd
 nMicrosoft (R) Windows Debugger Version 10.0.10240.9 AMD64
 Copyright (c) Microsoft Corporation. All rights reserved.
 
@@ -140,13 +137,13 @@ If you use **-c .jdinfo** instead of **-g** in your **AeDebug** key, no executio
 
 For example, consider the following **AeDebug** key.
 
-```
+```dbgcmd
 ntsd -p %ld -e %ld -c ".jdinfo 0x%p"
 ```
 
 The following example is even less invasive. The **-pv** switch causes the debugger to attach noninvasively, which does not inject any new threads into the target.
 
-```
+```dbgcmd
 ntsd -pv -p %ld -e %ld -c ".jdinfo 0x%p"
 ```
 
@@ -156,7 +153,7 @@ If you want to use this for dump file debugging, you should use [**.dump /j**](-
 
 The JIT\_DEBUG\_INFO structure is defined as follows.
 
-```
+```dbgcmd
 typedef struct _JIT_DEBUG_INFO {
     DWORD dwSize;
     DWORD dwProcessorArchitecture;
@@ -170,7 +167,7 @@ typedef struct _JIT_DEBUG_INFO {
 
 You can use the dt command to display the JIT\_DEBUG\_INFO structure.
 
-```
+```dbgcmd
 0: kd> dt JIT_DEBUG_INFO
 nt!JIT_DEBUG_INFO
    +0x000 dwSize           : Uint4B
@@ -186,7 +183,7 @@ nt!JIT_DEBUG_INFO
 
 After the .jdinfo command has been used to set the context to the moment of failure, you can view the exception record returned by .jdinfo, the call stack and the lastevent, as shown below, to investigate cause.
 
-```
+```dbgcmd
 0:000> .jdinfo  0x00000000003E0000
 ----- Exception occurred on thread 0:15c8
 ntdll!NtWaitForMultipleObjects+0x14:
@@ -215,11 +212,10 @@ Last event: 153c.5d0: Break instruction exception - code 80000003 (first chance)
   debugger time: Thu Sep  8 12:55:08.968 2016 (UTC - 7:00)
 ```
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20.jdinfo%20%28Use%20JIT_DEBUG_INFO%29%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

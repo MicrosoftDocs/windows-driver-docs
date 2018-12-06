@@ -2,11 +2,8 @@
 title: Registering NDIS Selective Suspend Handler Functions
 description: Registering NDIS Selective Suspend Handler Functions
 ms.assetid: D4125F14-8356-4D9E-A287-D35D3BF69182
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Registering NDIS Selective Suspend Handler Functions
@@ -34,9 +31,9 @@ When the miniport driver's [**DriverEntry**](https://msdn.microsoft.com/library/
 
 For more information on how to handle idle notifications for NDIS selective suspend, see [NDIS Selective Suspend Idle Notifications](ndis-selective-suspend-idle-notifications.md).
 
- 
+ 
 
- 
+ 
 
 
 

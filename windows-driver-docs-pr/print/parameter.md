@@ -9,11 +9,8 @@ api_name:
 - parameter
 api_type:
 - Schema
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # parameter element
@@ -26,7 +23,7 @@ The **parameter** element is defined in the *asyncui* namespace at this URI: htt
 Usage
 -----
 
-``` syntax
+```xml
 <parameter
   stringID = "xs:string"
   resourceDll = "xs:string"
@@ -71,7 +68,7 @@ Attributes
 <td><p>xs:string</p></td>
 <td><p>No</p></td>
 <td><p></p>
-<p>An optional attribute that specifies the name of the printer or document. This attribute can take one of the following values:DocumentThe name of the document being printed.PrinterNameThe name of the printer, as listed in the Printers and Faxes folder in Control Panel, for example, &quot;Fabrikam 5000 on \\printserver&quot; or &quot;Printer in upstairs bedroom.&quot;</p></td>
+<p>An optional attribute that specifies the name of the printer or document. This attribute can take one of the following values:DocumentThe name of the document being printed.PrinterNameThe name of the printer, as listed in the Printers and Faxes folder in Control Panel, for example, &quot;Fabrikam 5000 on \printserver&quot; or &quot;Printer in upstairs bedroom.&quot;</p></td>
 </tr>
 </tbody>
 </table>
@@ -97,12 +94,12 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>body</strong>](body.md)</p></td>
+<td><p><a href="body.md" data-raw-source="[&lt;strong&gt;body&lt;/strong&gt;](body.md)"><strong>body</strong></a></p></td>
 <td><p></p>
 <p>A required element that provides text that is displayed in the event notification message. This text should provide the user specific details about the printer event.</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>title</strong>](title.md)</p></td>
+<td><p><a href="title.md" data-raw-source="[&lt;strong&gt;title&lt;/strong&gt;](title.md)"><strong>title</strong></a></p></td>
 <td><p></p>
 <p>The required title element provides text that is displayed in the title of the event notification message.</p></td>
 </tr>
@@ -125,7 +122,7 @@ In this example, the **stringID** values specify the following:
 -   User interface string 5 in the Microsoft-supplied user interface DLL is "yellow".
 -   User interface string 1002 in the driver resource DLL is "Side Access Door B".
 
-```
+```xml
 <?xml version="1.0" ?>
    <asyncPrintUIRequest
     xmlns="http://schemas.microsoft.com/2003/print/asyncui/v1/request">
@@ -145,20 +142,8 @@ In this example, the **stringID** values specify the following:
 
 With the preceding XML code, the following body text (stringID="100") is displayed in the event notification message: "Printer is out of yellow ink; please open Side Access Door B and replace the ink cartridge."
 
-## <span id="see_also"></span>See also
+## See also
 
+[body](body.md)
 
-[**body**](body.md)
-
-[**title**](title.md)
-
- 
-
- 
-
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20parameter%20element%20%20RELEASE:%20%2811/8/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
-
-
-
+[title](title.md)

@@ -2,11 +2,8 @@
 title: Accessing and Modifying Registry Values
 description: Accessing and Modifying Registry Values
 ms.assetid: BA7F5C17-1385-4308-9943-9485F7CA3C50
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Accessing and Modifying Registry Values
@@ -26,9 +23,9 @@ This section provides guidelines that components of a [driver package](driver-pa
 
 [Deleting the Registry Keys of a Device](deleting-the-registry-keys-of-a-device.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -6,11 +6,8 @@ keywords:
 - state transitions WDK display
 - resume from hibernation WDK display
 - firmware modes in display drivers WDK display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Providing seamless state transitions in WDDM 1.2 and later
@@ -37,7 +34,7 @@ Starting in Windows 8, several features help to minimize or eliminate screen fl
 <td align="left">Mandatory</td>
 </tr>
 <tr class="even">
-<td align="left">[WHCK]( http://go.microsoft.com/fwlink/p/?linkid=258342) requirements and tests</td>
+<td align="left"><a href="https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit" data-raw-source="[WHCK](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit)">WHCK</a> requirements and tests</td>
 <td align="left"><p><strong>System.Client.Firmware.UEFI.GOP.Display</strong></p>
 <p><strong>Device.Graphics…PnpStopStartSupport</strong></p>
 <p><strong>Device.Graphics…DisplayOutputControl</strong></p></td>
@@ -45,7 +42,7 @@ Starting in Windows 8, several features help to minimize or eliminate screen fl
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Transition_from_firmware_to_operating_system"></span><span id="transition_from_firmware_to_operating_system"></span><span id="TRANSITION_FROM_FIRMWARE_TO_OPERATING_SYSTEM"></span>Transition from firmware to operating system
 
@@ -54,7 +51,7 @@ All Windows 8 systems targeted for client SKUs must support the Unified Extensi
 
 **Hardware certification requirements**
 
-For info on requirements that hardware devices must meet when they implement this feature, refer to the relevant [WHCK documentation]( http://go.microsoft.com/fwlink/p/?linkid=258342) on **System.Client.Firmware.UEFI.GOP.Display**.
+For info on requirements that hardware devices must meet when they implement this feature, refer to the relevant [WHCK documentation](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) on **System.Client.Firmware.UEFI.GOP.Display**.
 
 ## <span id="Transition_from_operating_system_to_driver"></span><span id="transition_from_operating_system_to_driver"></span><span id="TRANSITION_FROM_OPERATING_SYSTEM_TO_DRIVER"></span>Transition from operating system to driver
 
@@ -74,7 +71,7 @@ More details on PnP stop, including additional scenarios, are given in [Plug and
 
 **Hardware certification requirements**
 
-For more info about this handoff, refer to the relevant [WHCK documentation]( http://go.microsoft.com/fwlink/p/?linkid=258342) on **Device.Graphics…PnpStopStartSupport**.
+For more info about this handoff, refer to the relevant [WHCK documentation](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) on **Device.Graphics…PnpStopStartSupport**.
 
 ## <span id="Transition_to_operating_system_without_disabling_driver"></span><span id="transition_to_operating_system_without_disabling_driver"></span><span id="TRANSITION_TO_OPERATING_SYSTEM_WITHOUT_DISABLING_DRIVER"></span>Transition to operating system without disabling driver
 
@@ -83,7 +80,7 @@ Sometimes the operating system experiences an unrecoverable error and has to iss
 
 **Hardware certification requirements**
 
-For info on requirements that hardware devices must meet when they implement this feature, refer to the relevant [WHCK documentation]( http://go.microsoft.com/fwlink/p/?linkid=258342) on **Device.Graphics…DisplayOutputControl**.
+For info on requirements that hardware devices must meet when they implement this feature, refer to the relevant [WHCK documentation](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) on **Device.Graphics…DisplayOutputControl**.
 
 ## <span id="Windows_8_firmware_mode_changes"></span><span id="windows_8_firmware_mode_changes"></span><span id="WINDOWS_8_FIRMWARE_MODE_CHANGES"></span>Windows 8 firmware mode changes
 
@@ -104,11 +101,10 @@ In addition, if a mode change occurs while the monitor is turned off, the operat
 
 This two-part calling sequence also occurs when the system resumes after hibernation and monitor sync generation is to remain enabled. In this case the driver should take no action when it receives the second call to [*DxgkDdiCommitVidPn*](https://msdn.microsoft.com/library/windows/hardware/ff559597).
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Providing%20seamless%20state%20transitions%20in%20WDDM%201.2%20and%20later%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

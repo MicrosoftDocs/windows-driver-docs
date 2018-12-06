@@ -11,30 +11,25 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
-ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 09/11/2018
+ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_CAMERACONTROL\_PERFRAMESETTING\_SET
 
+The **KSPROPERTY\_CAMERACONTROL\_PERFRAMESETTING\_SET** property ID that is defined in [**KSPROPERTY\_CAMERACONTROL\_PERFRAMESETTING\_PROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ne-ksmedia-ksproperty_cameracontrol_perframesetting_property) is used to set per-frame settings in the driver.
 
-The **KSPROPERTY\_CAMERACONTROL\_PERFRAMESETTING\_SET** property ID that is defined in [**KSPROPERTY\_CAMERACONTROL\_PERFRAMESETTING\_PROPERTY**](https://msdn.microsoft.com/library/windows/hardware/dn936802) is used to set per-frame settings in the driver.
-
-## <span id="Usage_summary"></span><span id="usage_summary"></span><span id="USAGE_SUMMARY"></span>Usage summary
-
+## Usage summary
 
 To set per frame settings, the **KSPROPERTY\_CAMERACONTROL\_PERFRAMESETTING\_SET** property control is sent to the driver along with a per frame settings payload.
 
 This property can be read or written. While a **GET** call can be used to return the last per frame settings that was set on the driver, the **GET** call is not exposed to the app client and is only issued at the initialization time when the per-frame setting control is constructed by the MF pipeline, where the driver must return **STATUS\_BUFFER\_OVERFLOW** with buffer size of 0.
 
-In a GET call, a zero length buffer is sent to the driver first to find out the required data buffer size to hold the entire per-frame settings the driver has. In response to this call, the driver must return **STATUS\_BUFFER\_OVERFLOW** with the required per-frame settings buffer size that must be 0 if no per-frame settings has ever been set or at least the size of [**KSCAMERA\_PERFRAMESETTING\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/dn925204) otherwise.
+In a GET call, a zero length buffer is sent to the driver first to find out the required data buffer size to hold the entire per-frame settings the driver has. In response to this call, the driver must return **STATUS\_BUFFER\_OVERFLOW** with the required per-frame settings buffer size that must be 0 if no per-frame settings has ever been set or at least the size of [**KSCAMERA\_PERFRAMESETTING\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-kscamera_perframesetting_header) otherwise.
 
-The per-frame setting payload must start with a **KSCAMERA\_PERFRAMESETTING\_HEADER**, followed by one or more frame settings. The number of frame settings is specified in FrameCount. The settings for each frame must start with a [**KSCAMERA\_PERFRAMESETTING\_FRAME\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/dn925200), followed by zero or more item settings. The number of item settings is specified in ItemCount. The settings for each item, if any must start with a [**KSCAMERA\_PERFRAMESETTING\_ITEM\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/dn925209).
+The per-frame setting payload must start with a **KSCAMERA\_PERFRAMESETTING\_HEADER**, followed by one or more frame settings. The number of frame settings is specified in FrameCount. The settings for each frame must start with a [**KSCAMERA\_PERFRAMESETTING\_FRAME\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-kscamera_perframesetting_frame_header), followed by zero or more item settings. The number of item settings is specified in ItemCount. The settings for each item, if any must start with a [**KSCAMERA\_PERFRAMESETTING\_ITEM\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-kscamera_perframesetting_item_header).
 
-For the settings for each item, if a Value payload is present, the **KSCAMERA\_PERFRAMESETTING\_ITEM\_HEADER** must be followed by a [**KSCAMERA\_EXTENDEDPROP\_VALUE**](https://msdn.microsoft.com/library/windows/hardware/dn567565). If a custom item is present, **KSCAMERA\_PERFRAMESETTING\_ITEM\_HEADER** must be followed by a [**KSCAMERA\_PERFRAMESETTING\_CUSTOM\_ITEM**](https://msdn.microsoft.com/library/windows/hardware/dn925198), followed by the custom data associated with the GUID Id specified in **KSCAMERA\_PERFRAMESETTING\_CUSTOM\_ITEM**.
+For the settings for each item, if a Value payload is present, the **KSCAMERA\_PERFRAMESETTING\_ITEM\_HEADER** must be followed by a [**KSCAMERA\_EXTENDEDPROP\_VALUE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_value). If a custom item is present, **KSCAMERA\_PERFRAMESETTING\_ITEM\_HEADER** must be followed by a [**KSCAMERA\_PERFRAMESETTING\_CUSTOM\_ITEM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-kscamera_perframesetting_custom_item), followed by the custom data associated with the GUID Id specified in **KSCAMERA\_PERFRAMESETTING\_CUSTOM\_ITEM**.
 
 If FrameCount is 0, the driver must reject the per-frame settings payload. If ItemCount is 0, no frame settings are specified. The driver must apply global settings to the frame associated. For example, FrameCount = 1 and ItemCount = 0 implies a single frame variable photo sequence with global settings.
 
@@ -68,26 +63,26 @@ If the driver does not support **KSCAMERA\_EXTENDEDPROP\_ISO\_MANUAL**, the Valu
 
 The following shows how the item header and Value payload should look like when the per-frame settings ISO capability is **KSCAMERA\_EXTNDEDPROP\_ISO\_AUTO**, **KSCAMERA\_EXTENDEDPROP\_ISO\_MANUAL** (min = 30, max = 210, step =20)as follows:
 
-``` syntax
+```cpp
 KSCAMERA_EXTNDEDPROP_ISO_AUTO, 
 KSCAMERA_EXTENDEDPROP_ISO_MANUAL (min = 30, max = 210, step =20)
 ```
 
 1.  If the ISO speed is 70
 
-    ``` syntax
+    ```cpp
     KSCAMERA_PERFRAMESETTING_ITEM_HEADER.Flags = KSCAMERA_EXTENDEDPROP_ISO_MANUAL
     KSCAMERA_EXTENDEDPROP_VALUE.Value.ul = 70
     ```
 
 2.  If the ISO speed is 50
 
-    ``` syntax
+    ```cpp
     KSCAMERA_PERFRAMESETTING_ITEM_HEADER.Flags = KSCAMERA_EXTENDEDPROP_ISO_MANUAL
     KSCAMERA_EXTENDEDPROP_VALUE.Value.ul = 50
     ```
 
-The following table summarizes the available controls and values for per-frame settings. The actual availability is determined by the driverâ€™s actual capability, which can be obtained using [**KSPROPERTY\_CAMERACONTROL\_PERFRAMESETTING\_CAPABILITY**](ksproperty-cameracontrol-perframesetting-capability.md).
+The following table summarizes the available controls and values for per-frame settings. The actual availability is determined by the driver's actual capability, which can be obtained using [**KSPROPERTY\_CAMERACONTROL\_PERFRAMESETTING\_CAPABILITY**](ksproperty-cameracontrol-perframesetting-capability.md).
 
 <table>
 <colgroup>
@@ -131,8 +126,6 @@ The following table summarizes the available controls and values for per-frame s
 </tr>
 </tbody>
 </table>
-
- 
 
 To pass in the custom property data to the per-frame settings, the app does the following:
 
@@ -187,8 +180,6 @@ The table below lists the possible configurations and the corresponding photo se
 </tbody>
 </table>
 
- 
-
 The variable photo sequence has been simplified to perform finite captures with only one repeat. The photo sequence with per frame settings will be always flagged as a variable photo sequence and the per-frame settings payload is always required.
 
 If the loop count is L (L = 1) and the frame count is N (N &gt; 0), it is a finite variable photo sequence. The per-frame settings will be repeated L = 1 times with the N frame settings applied to the next N future frames in each repeat.
@@ -197,7 +188,7 @@ If the loop count is L (L = 1), the frame count is 1, and the item count is 0, i
 
 The variable photo sequence is further simplified to not request any past frames. The pipeline will hardcode the requested past photo count, (for example, RequestedHistoryFrames) to 0. The driver delivers only future frames in a variable photo sequence. The following figure illustrates the expected number of frames to be delivered by the driver in a variable photo sequence. The past photo count is specified in **KSCAMERA\_EXTENDEDPROP\_PHOTOMODE.RequestedHistoryFrames** by the [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PHOTOMODE**](ksproperty-cameracontrol-extended-photomode2.md) extended property control that is hardcoded to 0 by the pipeline.
 
-``` syntax
+```cpp
 N : Frame Count
 L : Loop Count
 P : Past Photos Requested
@@ -209,8 +200,7 @@ T = (N * L) + P
 
 For the finite variable photo sequence, the driver must mark the **KSSTREAM\_HEADER.OptionsFlags** for the last frame with the **KSSTREAM\_HEADER\_OPTIONSF\_ENDOFPHOTOSEQUENCE** flag. Doing so will ensure that the driver automatically stops delivering frames back to the MF pipeline after the amount of future frames expected have been delivered. This effectively stops the photo sequence and notifies the app client of the completion of the photo sequence. This happens when driver finishes capturing the last frame in the finite variable photo sequence.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -224,13 +214,3 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bstream\stream%5D:%20KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_SET%20%20RELEASE:%20%2811/22/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
-
-

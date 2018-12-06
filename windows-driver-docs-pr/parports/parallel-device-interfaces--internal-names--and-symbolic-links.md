@@ -1,6 +1,5 @@
 ---
 title: Parallel Device Interfaces, Internal Names, and Symbolic Links
-author: windows-driver-content
 description: Parallel Device Interfaces, Internal Names, and Symbolic Links
 ms.assetid: 859e20bb-e411-4572-a393-a6faf534cf15
 keywords:
@@ -16,17 +15,14 @@ keywords:
 - device objects WDK parallel drivers
 - parallel devices WDK , internal names
 - parallel devices WDK , symbolic links
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Parallel Device Interfaces, Internal Names, and Symbolic Links
 
 
-## <a href="" id="ddk-parallel-device-interfaces-internal-names-and-symbolic-links-kg"></a>
+
 
 
 This section describes the device interfaces, internal names, and symbolic links that are created by the system-supplied parallel drivers for parallel ports and devices attached to parallel ports.
@@ -91,7 +87,7 @@ For each parallel port enumerated in the system and for each parallel device enu
 </tbody>
 </table>
 
- 
+ 
 
 For example, the following device names and symbolic links are assigned to "\\Device\\ParallelPort0", which has two IEEE 1284.3 daisy chain devices and an IEEE 1284 end-of-chain device attached to it.
 
@@ -138,13 +134,12 @@ For example, the following device names and symbolic links are assigned to "\\De
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

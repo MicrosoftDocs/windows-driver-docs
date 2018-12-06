@@ -1,13 +1,9 @@
 ---
 title: Device control keywords
-author: windows-driver-content
 description: These keywords are used to provide control over the 3D manufacturing device.
 ms.assetid: 1F0CBFC4-F641-4D82-9173-C89218E822B5
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Device control keywords
@@ -55,11 +51,11 @@ The psk3d:Job3DOutputArea Property SHOULD be used to define the size of the area
 </tbody>
 </table>
 
- 
+ 
 
 Job3DOutputArea keyword usage
 
-```
+```xml
 <psf:Property name="psk3d:Job3DOutputArea">
     <psf:Property name="psk3d:Job3DOutputAreaWidth">
         <psf:Value xsi:type="xsd:integer">285000</psf:Value>
@@ -131,7 +127,7 @@ Describes the width of the output area along the X axis, in microns.
 </tbody>
 </table>
 
- 
+ 
 
 ### 2.1.2. Job3DOutputAreaDepth
 
@@ -172,7 +168,7 @@ Describes the depth of the output area along the Y axis, in microns.
 </tbody>
 </table>
 
- 
+ 
 
 ### 2.1.3. Job3DOutputAreaHeight
 
@@ -213,7 +209,7 @@ Describes the height of the output area along the Z axis, in microns.
 </tbody>
 </table>
 
- 
+ 
 
 ### 2.1.4. Job3DOutputAreaMesh
 
@@ -254,7 +250,7 @@ Describes the shape of the output volume if not a rectangular prism. The string 
 </tbody>
 </table>
 
- 
+ 
 
 ## 2.2. Job3DAppName
 
@@ -296,11 +292,11 @@ The device MAY identify a workflow app other than the default (the example conta
 </tbody>
 </table>
 
- 
+ 
 
 Job3DAppName keyword usage
 
-```
+```xml
 <psf:Property name="psk3d:Job3DAppName">
     <psf:Value xsi:type="xsd:string">Microsoft.3DBuilder_8wekyb3d8bbwe</psf:Value>
 </psf:Property>
@@ -346,11 +342,11 @@ The device MAY identify a UWP device app, which the print dialog will launch whe
 </tbody>
 </table>
 
- 
+ 
 
 Job3DWSDAPackageFamilyName keyword usage
 
-```
+```xml
 <psf:Property name="psk3d:Job3DWSDAPackageFamilyName">
     <psf:Value xsi:type="xsd:string"> </psf:Value>
 </psf:Property>
@@ -359,7 +355,7 @@ Job3DWSDAPackageFamilyName keyword usage
 ## 2.4. Job3D3MFVersion
 
 
-The device MUST identify the version of 3MF file that it expects to receive from the Windows print system. The version is specified by the URI namespace from the appropriate version of the core specification. For backwards compatibility, if this keyword is omitted, it will be assumed to take a default value of “http://schemas.microsoft.com/3dmanufacturing/2013/01”, indicating the legacy 0.93 version of 3MF, which is NOT RECOMMENDED.
+The device MUST identify the version of 3MF file that it expects to receive from the Windows print system. The version is specified by the URI namespace from the appropriate version of the core specification. For backwards compatibility, if this keyword is omitted, it will be assumed to take a default value of “<http://schemas.microsoft.com/3dmanufacturing/2013/01”>, indicating the legacy 0.93 version of 3MF, which is NOT RECOMMENDED.
 
 <table>
 <colgroup>
@@ -396,11 +392,11 @@ The device MUST identify the version of 3MF file that it expects to receive from
 </tbody>
 </table>
 
- 
+ 
 
 Job3D3MFVersion keyword usage
 
-```
+```xml
 <psf:Property name="psk3d:Job3D3MFVersion">
     <psf:Value xsi:type="xsd:string"> http://schemas.microsoft.com/3dmanufacturing/core/2015/02</psf:Value>
 </psf:Property>
@@ -446,22 +442,20 @@ The device MAY specify 3MF extensions (by namespace, forming a space-delimited l
 </tbody>
 </table>
 
- 
+ 
 
 Job3D3MFExtensions keyword usage
 
-```
+```xml
 <psf:Property name="psk3d:Job3D3MFExtensions">
     <psf:Value xsi:type="xsd:string"> http://schemas.microsoft.com/3dmanufacturing/material/2015/02</psf:Value>
 </psf:Property>
 ```
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Device%20control%20keywords%20%20RELEASE:%20%289/2/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

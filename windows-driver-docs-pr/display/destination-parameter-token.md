@@ -2,11 +2,8 @@
 title: Destination Parameter Token
 description: Destination Parameter Token
 ms.assetid: 1a9842c5-0ea9-47ee-a341-77e705ab5e25
-ms.author: windowsdriverdev
 ms.date: 01/05/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Destination Parameter Token
@@ -67,7 +64,7 @@ Write mask. The bits of this mask have the following components:
 </tbody>
 </table>
 
- 
+ 
 
 <span id="_23_20_"></span>**\[23:20\]**
 Bits 20 through 23 indicate the result modifier. Multiple result modifiers can be used. The following result modifier types can be ORed together in this 4-bit value:
@@ -99,7 +96,7 @@ Bits 20 through 23 indicate the result modifier. Multiple result modifiers can b
 </tbody>
 </table>
 
- 
+ 
 
 <span id="_27_24_"></span>**\[27:24\]**
 For PS versions earlier than 2\_0, bits 24 through 27 specify the result shift scale (signed shift).
@@ -119,11 +116,10 @@ Bits 28, 29, 30, 11, and 12 form a 5-bit value that indicates the register type.
 
 Available in Windows Vista and later versions of the Windows operating systems.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Destination%20Parameter%20Token%20%20RELEASE:%20%281/4/2018%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

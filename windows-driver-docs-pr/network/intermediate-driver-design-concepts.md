@@ -6,17 +6,14 @@ keywords:
 - intermediate drivers WDK networking , writing
 - NDIS intermediate drivers WDK , writing
 - writing NDIS intermediate drivers WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Intermediate Driver Design Concepts
 
 
-## <a href="" id="ddk-intermediate-driver-design-concepts-ng"></a>
+
 
 
 This section provides some basic information to help you start writing an NDIS intermediate driver. To write an NDIS intermediate driver, you must understand the NDIS miniport driver and protocol driver operations and functions.
@@ -49,9 +46,9 @@ The following topics provide additional information about writing NDIS intermedi
 
 [Status Indications in an Intermediate Driver](status-indications-in-an-intermediate-driver.md)
 
- 
+ 
 
- 
+ 
 
 
 

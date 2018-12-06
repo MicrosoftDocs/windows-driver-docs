@@ -1,6 +1,5 @@
 ---
 title: Load Order Groups for File System Filter Drivers
-author: windows-driver-content
 description: Load Order Groups for File System Filter Drivers
 ms.assetid: 57c9e4c6-186c-464f-ac83-c0669d46b189
 keywords:
@@ -9,11 +8,8 @@ keywords:
 - driver loading WDK file system
 - loading drivers WDK file system
 - load order groups WDK file system
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Load Order Groups for File System Filter Drivers
@@ -147,13 +143,12 @@ Note that the load order groups are listed as they appear on the stack, which is
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

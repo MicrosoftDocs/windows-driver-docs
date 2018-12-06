@@ -1,13 +1,9 @@
 ---
 title: EFI_USB_ENDPOINT_TYPE
-author: windows-driver-content
 description: EFI_USB_ENDPOINT_TYPE
 ms.assetid: 5cdb0efc-2355-42e2-929b-df19257e35c1
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # EFI\_USB\_ENDPOINT\_TYPE
@@ -18,7 +14,7 @@ The **EFI\_USB\_ENDPOINT\_TYPE** enumeration contains values used to indicate th
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef enum _EFI_USB_ENDPOINT_TYPE{
   UsbEndpointControl = 0x00,
   UsbEndpointIsochronous = 0x01,
@@ -47,11 +43,10 @@ Interrupt transfer - non-periodic communication with guarantee of maximum latenc
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

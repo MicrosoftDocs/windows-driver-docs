@@ -6,11 +6,8 @@ keywords:
 - processing packets WDK Windows Filtering Platform
 - packet processing WDK Windows Filtering Platform
 - layers for packet processing WDK Windows Filtering Platform
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WFP Layer Requirements and Restrictions
@@ -74,17 +71,17 @@ The following table shows packet types that can be indicated at ALE layers. Be a
 </tr>
 <tr class="even">
 <td align="left"><p>Flow Established</p></td>
-<td align="left"><p>final ACK (incoming & outgoing)</p></td>
-<td align="left"><p>first UDP packet (incoming & outgoing)</p></td>
+<td align="left"><p>final ACK (incoming &amp; outgoing)</p></td>
+<td align="left"><p>first UDP packet (incoming &amp; outgoing)</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

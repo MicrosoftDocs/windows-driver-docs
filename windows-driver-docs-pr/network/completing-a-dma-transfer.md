@@ -9,11 +9,8 @@ keywords:
 - DMA transfers WDK NetDMA , completing
 - NetDMA WDK networking , completing transfers
 - completing DMA transfers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Completing a DMA Transfer
@@ -21,9 +18,9 @@ ms.technology: windows-devices
 
 **Note**  The NetDMA interface is not supported in Windows 8 and later.
 
- 
+ 
 
-## <a href="" id="ddk-completing-a-dma-transfer-ng"></a>
+
 
 
 The NetDMA interface provides two methods for a NetDMA provider to complete a dynamic memory access (DMA) transfer:
@@ -44,9 +41,9 @@ If the NET\_DMA\_INTERRUPT\_ON\_COMPLETION flag is set, the DMA engine generates
 
 If an interrupt is requested, the NetDMA provider driver calls the [**NetDmaIsr**](https://msdn.microsoft.com/library/windows/hardware/ff568331) function in its interrupt service routing (ISR) and provides the physical address of the last completed DMA descriptor. For more information about using interrupts, see [Managing NetDMA Interrupts](managing-netdma-interrupts.md).
 
- 
+ 
 
- 
+ 
 
 
 

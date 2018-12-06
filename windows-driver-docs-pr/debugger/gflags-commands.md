@@ -3,83 +3,84 @@ title: GFlags Commands
 description: To use GFlags, type the following commands at the command line. You can use the GFlags commands and the Global Flags Dialog Box interchangeably.
 ms.assetid: 832b7269-623a-4f32-8bda-1059087bab09
 keywords: ["GFlags Commands Windows Debugging"]
-ms.author: windowsdriverdev
-ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 06/12/2018
 topic_type:
 - apiref
 api_name:
 - GFlags Commands
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
-# GFlags Commands
+# GFlags Command Overview
 
-
-To use GFlags, type the following commands at the command line.
+For general information on how to install and locate gflags.exe, see [GFlags](gflags.md).
 
 You can use the GFlags commands and the [Global Flags Dialog Box](global-flags-dialog-box.md) interchangeably.
 
+## GFlags Command Usage 
+
+To use GFlags, type the following commands at the command line.
+
+
 To open the GFlags dialog box:
 
-```
+```console
 gflags
 ```
 
 To set or clear global flags in the registry:
 
-```
+```console
 gflags /r [{+ | -}Flag [{+ | -}Flag...]]
 ```
 
 To set or clear global flags for the current session:
 
-```
+```console
 gflags /k [{+ | -}Flag [{+ | -}Flag...]]
 ```
 
 To set or clear global flags for an image file:
 
-```
+```console
 gflags /i ImageFile [{+ | -}Flag [{+ | -}Flag...]]
 gflags /i ImageFile /tracedb SizeInMB
 ```
 
 To set or clear the Special Pool feature (Windows Vista and later)
 
-```
+```console
 gflags {/r | /k} {+ | -}spp {PoolTag | 0xSize}
 ```
 
 To enable or disable the Object Reference Tracing feature (Windows Vista and later)
 
-```
+```console
 gflags {/ro | /ko} [/p] [/i ImageFile | /t PoolTag;[PoolTag...]]
 ```
 
-```
+```console
 gflags {/ro | /ko} /d
 ```
 
 To enable and configure page heap verification:
 
-```
+```console
 gflags /p /enable ImageFile  [ /full [/backwards] | /random Probability | /size SizeStart SizeEnd | /address AddressStart AddressEnd | /dlls DLL [DLL...] ] 
 [/debug ["DebuggerCommand"] | /kdebug] [/unaligned] [/notraces] [/fault Rate [TimeOut]] [/leaks] [/protect] [/no_sync] [/no_lock_checks] 
 ```
 
 To disable page heap verification:
 
-```
+```console
 gflags /p [/disable ImageFile] [/?]
 ```
 
 To display help:
 
-```
+```console
 glags /?
 ```
 
@@ -114,7 +115,7 @@ Use one of the following flag formats:
 </tbody>
 </table>
 
- 
+ 
 
 <span id="_______ImageFile______"></span><span id="_______imagefile______"></span><span id="_______IMAGEFILE______"></span> *ImageFile*   
 Specifies the name of an executable file, including the file name extension (for example, notepad.exe or mydll.dll).
@@ -145,7 +146,7 @@ Sets the maximum size of the user-mode stack trace database for the process. To 
 <span id="_______PoolTag______"></span><span id="_______pooltag______"></span><span id="_______POOLTAG______"></span> *PoolTag*   
 (Windows Vista and later.) Specifies a pool tag for the [Special Pool](special-pool.md) feature. Use only with the **spp** flag.
 
-Enter a four-character pattern for *PoolTag*, such as Tag1. It can include the **?** (substitute for any single character) and **\*** (substitute for multiple characters) wildcard characters. For example, Fat\* or Av?4. Pool tags are always case-sensitive.
+Enter a four-character pattern for *PoolTag*, such as Tag1. It can include the **?** (substitute for any single character) and **\\*** (substitute for multiple characters) wildcard characters. For example, Fat\* or Av?4. Pool tags are always case-sensitive.
 
 <span id="0xSize______"></span><span id="0xsize______"></span><span id="0XSIZE______"></span>**0x***Size*   
 (Windows Vista and later.) Specifies a size range for the Special Pool feature. Use only with the **spp** flag. For guidance on selecting a size value, see "Selecting an Allocation Size" in [Special Pool](special-pool.md).
@@ -189,7 +190,7 @@ The following table lists the subparameters that are valid with **/ro**.
 </tbody>
 </table>
 
- 
+ 
 
 <span id="________ko______"></span><span id="________KO______"></span> **/ko**   
 Enables, disables, and displays kernel flag (run time) [Object Reference Tracing](object-reference-tracing.md) settings. Changes to this setting are effective immediately, but are lost when the system is shut down or restarted. For details, see [Example 15: Using Object Reference Tracing](example-15--using-object-reference-tracing.md).
@@ -230,7 +231,7 @@ The following table lists the subparameters that are valid with **/ko**.
 </tbody>
 </table>
 
- 
+ 
 
 <span id="________p______"></span><span id="________P______"></span> **/p**   
 Sets page heap verification options for a process.
@@ -290,7 +291,7 @@ For information about NTSD, see [Debugging Using CDB and NTSD](debugging-using-c
 
 This option is useful for programs that are difficult to start from a command prompt and those that are started by other processes.
 
-<span id="_DebuggerCommand_______"></span><span id="_debuggercommand_______"></span><span id="_DEBUGGERCOMMAND_______"></span>**"***DebuggerCommand***"**   
+<span id="_DebuggerCommand_______"></span><span id="_debuggercommand_______"></span><span id="_DEBUGGERCOMMAND_______"></span>**"**<em>DebuggerCommand</em>**"**   
 Specifies a debugger and the command sent to the debugger. This quoted string can include a fully qualified path to the debugger, the debugger name, and command parameters that the debugger interprets. The quotation marks are required.
 
 If the command includes a path to the debugger, the path cannot contain any other quotation marks. If other quotation marks appear, the command shell (*cmd.exe*) will misinterpret the command.
@@ -338,7 +339,7 @@ This parameter inserts heap allocation errors into the image file being tested (
 </tbody>
 </table>
 
- 
+ 
 
 <span id="________leaks______"></span><span id="________LEAKS______"></span> **/leaks**   
 Checks for heap leaks when a process ends.
@@ -387,11 +388,10 @@ By default, on Windows Vista and later versions of Windows, program-specific set
 
 This version of GFlags includes the **-v** options, which enable features being developed for GFlags. However, these features are not yet complete and, therefore, are not documented.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20GFlags%20Commands%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

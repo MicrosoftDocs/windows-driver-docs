@@ -1,22 +1,18 @@
 ---
 title: Installing Parallel Ports and Devices
-author: windows-driver-content
 description: Installing Parallel Ports and Devices
 ms.assetid: 24bf2718-d369-48f1-9013-c8ca89269ca7
 keywords:
 - parallel devices WDK , installing
 - parallel ports WDK , installing
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installing Parallel Ports and Devices
 
 
-## <a href="" id="ddk-installing-parallel-ports-and-devices-kg"></a>
+
 
 
 This section describes device-specific information about installing parallel ports and devices in Microsoft Windows.
@@ -37,11 +33,10 @@ For more information about system support for parallel ports and devices attache
 
 [Client Interfaces to System-Supplied Parallel Drivers](https://msdn.microsoft.com/library/windows/hardware/ff543926)
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

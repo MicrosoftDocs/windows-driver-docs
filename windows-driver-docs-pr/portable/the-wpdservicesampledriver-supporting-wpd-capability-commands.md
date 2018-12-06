@@ -1,11 +1,8 @@
 ---
 Description: Support for capability commands (WpdServiceSampleDriver sample)
 title: Support for capability commands (WpdServiceSampleDriver sample)
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Support for capability commands (WpdServiceSampleDriver sample)
@@ -31,7 +28,7 @@ The device-capability commands are issued when an application calls one of sever
 | WPD\_COMMAND\_CAPABILITIES\_GET\_EVENT\_OPTIONS                    | OnGetEventOptions              | Issued when an application tries to retrieve the options that are associated with a given event.                                             |
 | WPD\_COMMAND\_CAPABILITIES\_GET\_SUPPORTED\_EVENTS                 | OnGetSupportedEvents           | Issued when an application tries to retrieve the set of events that are supported by a device.                                               |
 
- 
+ 
 
 ## <span id="The_Service-Capability_Commands"></span><span id="the_service-capability_commands"></span><span id="THE_SERVICE-CAPABILITY_COMMANDS"></span>The Service-Capability Commands
 
@@ -56,7 +53,7 @@ The service-capability commands are issued when an application calls one of seve
 | WPD\_COMMAND\_SERVICE\_CAPABILITIES\_GET\_EVENT\_PARAMETER\_ATTRIBUTES      | OnGetEventParameterAttributes  | Issued when an application tries to retrieve the parameter attributes for a given event on the service.                |
 | WPD\_COMMAND\_SERVICE\_CAPABILITIES\_GET\_INHERITED\_SERVICES               | OnGetInheritedServices         | Issued when an application tries to retrieve the services that are inherited by the given service.                     |
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -66,11 +63,10 @@ The service-capability commands are issued when an application calls one of seve
 
 [The WPD Driver Samples](the-wpd-driver-samples.md)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[wpd_dk\wpddk]:%20Supporting%20the%20Capability%20Commands%20%20RELEASE:%20%281/5/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

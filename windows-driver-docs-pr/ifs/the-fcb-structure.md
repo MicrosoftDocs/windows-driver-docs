@@ -1,6 +1,5 @@
 ---
 title: The FCB Structure
-author: windows-driver-content
 description: The FCB Structure
 ms.assetid: feb38b24-c028-4c8d-be45-11d9a4659f8d
 keywords:
@@ -13,11 +12,8 @@ keywords:
 - file structures WDK RDBSS
 - structures WDK RDBSS
 - connection information WDK RDBSS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # The FCB Structure
@@ -60,11 +56,10 @@ An FCB structure contains the following:
 
 -   Any additional storage requested by the network mini-redirector or the creator of the FCB structure
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

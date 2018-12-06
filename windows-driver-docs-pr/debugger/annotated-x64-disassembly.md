@@ -3,11 +3,8 @@ title: Annotated x64 Disassembly
 description: Annotated x64 Disassembly
 ms.assetid: 67930062-8a3a-460f-ae56-248d2a8e131e
 keywords: ["x64 processor, annotated disassembly"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Annotated x64 Disassembly
@@ -18,7 +15,7 @@ ms.technology: windows-devices
 
 The following very simple function illustrates the x64 calling convention.
 
-```
+```cpp
 int Simple(int i, int j)
 {
     return i*5 + j + 3;
@@ -27,7 +24,7 @@ int Simple(int i, int j)
 
 This compiles to code like this:
 
-```
+```dbgcmd
 01001080 lea     eax,[rdx+rcx*4]        ; eax = rdx+rcx*4
 01001083 lea     eax,[rcx+rax+0x3]      ; eax = rcx+rax+3
 01001087 ret
@@ -47,7 +44,7 @@ Return values are passed in the **rax** register. In this case, the result is al
 
 Next we consider a more complicated function to demonstrate typical x64 disassembly:
 
-```
+```cpp
 HRESULT Meaningless(IDispatch *pdisp, DISPID dispid, BOOL fUnique, LPCWSTR pszExe)
 {
     IQueryAssociations *pqa;
@@ -101,7 +98,7 @@ Recall that the first four parameters are passed in registers. Since this functi
 
 The assembly begins as follows:
 
-```
+```dbgcmd
 Meaningless:
 010010e0 push    rbx                    ; save
 010010e1 push    rsi                    ; save
@@ -119,14 +116,14 @@ Meaningless:
 
 The function begins by saving nonvolatile registers, and then reserving stack space for local variables. It then saves parameters in nonvolatile registers. Note that the destination of the middle two **mov** instructions is a 32-bit register, so they are implicitly zero-extended to 64 bits.
 
-```
+```dbgcmd
     IQueryAssociations *pqa;
     HRESULT hr = AssocCreate(CLSID_QueryAssociations, IID_IQueryAssociations, (void**)&pqa);
 ```
 
 The first parameter to **AssocCreate** is a 128-bit CLSID passed by value. Since this doesn't fit in a 64-bit register, the CLSID is copied to the stack, and a pointer to the stack location is passed instead.
 
-```
+```dbgcmd
 010010fe movdqu  xmm0,oword ptr [CLSID_QueryAssociations (01001060)]
 01001106 movdqu  oword ptr [rsp+0x60],xmm0  ; temp buffer for first parameter
 0100110c lea     r8,[rsp+0x58]          ; arg3 = &pqa
@@ -137,7 +134,7 @@ The first parameter to **AssocCreate** is a 128-bit CLSID passed by value. Since
 
 The **movdqu** instruction transfers 128-bits values to and from **xmm***n* registers. In this instance, the assembly code uses it to copy the CLSID to the stack. The pointer to the CLSID is passed in **r8**. The other two arguments are passed in **rcx** and **rdx**.
 
-```
+```dbgcmd
     if (SUCCEEDED(hr)) {
 
 01001123 test    eax,eax
@@ -146,7 +143,7 @@ The **movdqu** instruction transfers 128-bits values to and from **xmm***n* regi
 
 The code checks to see if the return value is a success.
 
-```
+```dbgcmd
         hr = pqa->Init(ASSOCF_INIT_BYEXENAME, pszExe, NULL, NULL);
 
 0100112b mov     rcx,[rsp+0x58]         ; arg1 = pqa
@@ -162,7 +159,7 @@ The code checks to see if the return value is a success.
 
 This is an indirect function call using a C++ vtable. The **this** pointer is passed in **rcx** as the first parameter. The first three parameters are passed in registers, while the final parameter is passed on the stack. The function reserves 16 bytes for the parameters passed in registers, so the fifth parameter begins at **rsp**+0x20.
 
-```
+```dbgcmd
         if (SUCCEEDED(hr)) {
 
 0100114d mov     ebx,eax                ; ebx = hr
@@ -172,7 +169,7 @@ This is an indirect function call using a C++ vtable. The **this** pointer is pa
 
 The assembly-language code saves the result in **ebx**, and checks to see if it's a success code.
 
-```
+```dbgcmd
             WCHAR wszName[MAX_PATH];
             DWORD cchName = MAX_PATH;
             hr = pqa->GetString(0, ASSOCSTR_FRIENDLYAPPNAME, NULL, wszName, &cchName);
@@ -196,7 +193,7 @@ The assembly-language code saves the result in **ebx**, and checks to see if it'
 
 Once again, we set up the parameters and call a function, then test the return value for success.
 
-```
+```dbgcmd
                 VARIANTARG rgvarg[2] = { 0 };
 
 01001196 lea     rdi,[rsp+0x82]         ; rdi = &rgvarg
@@ -207,7 +204,7 @@ Once again, we set up the parameters and call a function, then test the return v
 
 The idiomatic method for zeroing out a buffer on x64 is the same as x86.
 
-```
+```dbgcmd
                 V_VT(&rgvarg[0]) = VT_BSTR;
                 V_BSTR(&rgvarg[0]) = SysAllocString(wszName);
                 if (V_BSTR(&rgvarg[0])) {
@@ -230,7 +227,7 @@ The idiomatic method for zeroing out a buffer on x64 is the same as x86.
 
 **InterlockedIncrement** compiles directly to machine code. The **lock xadd** instruction performs an atomic exchange and add. The final result is stored in **ecx**.
 
-```
+```dbgcmd
                     V_VT(&rgvarg[1]) = VT_I4;
                     V_I4(&rgvarg[1]) = fUnique ? lUnique : 0;
 
@@ -243,7 +240,7 @@ The idiomatic method for zeroing out a buffer on x64 is the same as x86.
 
 Since x64 supports the **cmov** instruction, the **?:** construct can be compiled without using a jump.
 
-```
+```dbgcmd
                     dp.rgvarg = rgvarg;
                     dp.cArgs = 2;
                     dp.rgdispidNamedArgs = NULL;
@@ -258,7 +255,7 @@ Since x64 supports the **cmov** instruction, the **?:** construct can be compile
 
 This code initializes the rest of the members of DISPPARAMS. Note that the compiler reuses the space on the stack previously used by the CLSID.
 
-```
+```dbgcmd
                     hr = pdisp->Invoke(dispid, IID_NULL, 0, DISPATCH_METHOD, &dp, NULL, NULL, NULL);
 
 01001219 mov     rax,[rsi]                  ; rax = pdisp.vtbl
@@ -278,7 +275,7 @@ This code initializes the rest of the members of DISPPARAMS. Note that the compi
 
 The code then sets up the parameters and calls the **Invoke** method.
 
-```
+```dbgcmd
                     VariantClear(&rgvarg[0]);
                     VariantClear(&rgvarg[1]);
 
@@ -291,7 +288,7 @@ The code then sets up the parameters and calls the **Invoke** method.
 
 The code finishes up the current branch of the conditional, and skips over the **else** branch.
 
-```
+```dbgcmd
                 } else {
                     hr = E_OUTOFMEMORY;
                 }
@@ -308,7 +305,7 @@ ReleasePQA:
 
 The **else** branch.
 
-```
+```dbgcmd
     return hr;
 }
 
@@ -327,11 +324,10 @@ ReturnEAX:
 
 The return value is stored in **rax**, and then the non-volatile registers are restored before returning.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Annotated%20x64%20Disassembly%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

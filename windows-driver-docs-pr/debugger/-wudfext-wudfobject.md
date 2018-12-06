@@ -3,17 +3,14 @@ title: wudfext.wudfobject
 description: The wudfext.wudfobject extension displays information about a WDF object, as well as its parent and child relationships.
 ms.assetid: cb9398fb-24f5-4692-9a08-543bf1317b19
 keywords: ["wudfext.wudfobject Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - wudfext.wudfobject
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !wudfext.wudfobject
@@ -21,7 +18,7 @@ api_type:
 
 The **!wudfext.wudfobject** extension displays information about a WDF object, as well as its parent and child relationships.
 
-```
+```dbgcmd
 !wudfext.wudfobject pWDFObject Flags TypeName
 ```
 
@@ -65,7 +62,7 @@ Optional. Specifies the type of the interface (for example, **IWDFDevice**). If 
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -82,7 +79,7 @@ The **!wudfext.wudfobject** extension also displays the callback functions and c
 
 The following are some examples. In the first example, [**!wudfext.umdevstacks**](-wudfext-umdevstack.md) gives 0x03050E70 as the address of a device object, and this address is then passed to **!wudfext.wudfobject**. The 0x1 flag is included to display all the children of this object.
 
-```
+```dbgcmd
 0: kd> !umdevstacks 
 Number of device stacks: 1
   Device Stack: 0x038f6f08    Pdo Name: \Device\USBPDO-11
@@ -131,7 +128,7 @@ IWDFDevice 0x3050e70 Fx: 0x3050e30 [Ref 2]
 
 Here is an example of **!wudfext.wudfobject** displaying a file object:
 
-```
+```dbgcmd
 kd> !wudfobject 0xf5060 
 IWDFFile 0xf5060 Fx: 0xf4fe8 [Ref 1]
   State: Created   Parent: 0xf2f80
@@ -140,7 +137,7 @@ IWDFFile 0xf5060 Fx: 0xf4fe8 [Ref 1]
 
 Here is an example of **!wudfext.wudfobject** displaying a driver object:
 
-```
+```dbgcmd
 kd> !wudfobject 0xf2db8 0x01 
 IWDFDriver 0xf2db8 Fx: 0xf2d40 [Ref 2]
   Callback: (WUDFEchoDriver!CMyDriver, 0xf2c68)
@@ -166,11 +163,10 @@ IWDFDriver 0xf2db8 Fx: 0xf2d40 [Ref 2]
               No Children
 ```
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!wudfext.wudfobject%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -6,11 +6,8 @@ keywords:
 - timers WDK TCP chimney offload , persist timers
 - TCP timers WDK TCP chimney offload , persist timers
 - persist timers WDK TCP chimney offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Persist Timer
@@ -70,9 +67,9 @@ When offloading a TCP connection for which it was running a persist timer, the h
 
 If the offload of the TCP connection is terminated before persist timer processing has finished, the offload target must return the current values of **SndWndProbeCount**, the retransmit **Count**, and the retransmit **TimeoutDelta** to the host stack during the terminate operation. The host stack uses these values to resume persist timer processing. If the offload target was not running the persist timer, it should supply a value of -1 in the **TimeoutDelta** member. If the offload target supplies a value of 0 in the **TimeoutDelta** member, the host stack assumes that the persist timer was running, and the host stack's retransmit timer expires immediately.
 
- 
+ 
 
- 
+ 
 
 
 

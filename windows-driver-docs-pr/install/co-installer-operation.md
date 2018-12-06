@@ -9,17 +9,14 @@ keywords:
 - class co-installers WDK
 - DIF request co-installer example WDK
 - device-specific co-installers WDK device installations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Co-installer Operation
 
 
-## <a href="" id="ddk-co-installer-operation-dg"></a>
+
 
 
 Co-installers are called by SetupAPI, as shown in the following figure.
@@ -88,9 +85,9 @@ For postprocessing, **SetupDiCallClassInstaller** calls co-installers in reverse
 
 A co-installer that requests postprocessing is called even if a previous co-installer failed the install request.
 
- 
+ 
 
- 
+ 
 
 
 

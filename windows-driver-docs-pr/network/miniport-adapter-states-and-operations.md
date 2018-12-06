@@ -10,17 +10,14 @@ keywords:
 - Halted state WDK networking
 - Shutdown state WDK networking
 - Initializing state WDK ne
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Miniport Adapter States and Operations
 
 
-## <a href="" id="ddk-miniport-adapter-states-and-operations-ng"></a>
+
 
 
 For each adapter that it manages, an NDIS 6.0 or later miniport driver must support the following set of operational states:
@@ -73,7 +70,7 @@ In the following table, the headings are the adapter states. Major events are li
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<em>MiniportInitializeEx</em>](https://msdn.microsoft.com/library/windows/hardware/ff559389)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff559389" data-raw-source="[&lt;em&gt;MiniportInitializeEx&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff559389)"><em>MiniportInitializeEx</em></a></p></td>
 <td align="left"><p>Initializing</p></td>
 <td align="left"></td>
 <td align="left"></td>
@@ -93,7 +90,7 @@ In the following table, the headings are the adapter states. Major events are li
 <td align="left"></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<em>MiniportShutdownEx</em>](https://msdn.microsoft.com/library/windows/hardware/ff559449)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff559449" data-raw-source="[&lt;em&gt;MiniportShutdownEx&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff559449)"><em>MiniportShutdownEx</em></a></p></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"></td>
@@ -103,7 +100,7 @@ In the following table, the headings are the adapter states. Major events are li
 <td align="left"><p>Shutdown</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<em>MiniportHaltEx</em>](https://msdn.microsoft.com/library/windows/hardware/ff559388)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff559388" data-raw-source="[&lt;em&gt;MiniportHaltEx&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff559388)"><em>MiniportHaltEx</em></a></p></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"></td>
@@ -113,7 +110,7 @@ In the following table, the headings are the adapter states. Major events are li
 <td align="left"></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<em>MiniportRestart</em>](https://msdn.microsoft.com/library/windows/hardware/ff559435)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff559435" data-raw-source="[&lt;em&gt;MiniportRestart&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff559435)"><em>MiniportRestart</em></a></p></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"></td>
@@ -133,7 +130,7 @@ In the following table, the headings are the adapter states. Major events are li
 <td align="left"></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<em>MiniportPause</em>](https://msdn.microsoft.com/library/windows/hardware/ff559418)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff559418" data-raw-source="[&lt;em&gt;MiniportPause&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff559418)"><em>MiniportPause</em></a></p></td>
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"></td>
@@ -195,15 +192,15 @@ In the following table, the headings are the adapter states. Major events are li
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  The events listed in the preceding table are the primary events for an NDIS 6.0 or later adapter.
 
- 
+ 
 
 **Note**  The reset operation does not affect miniport adapter operational states. The state of the adapter might change while a reset operation is in progress. For example, NDIS might call a driver's pause handler when there is a reset operation in progress. In this case, the driver can complete either the reset or the pause operation in any order while following the normal requirements for each operation. For a reset operation, the driver can fail transmit request packets or it can keep them queued and complete them later. However, you should note that an overlying driver cannot complete a pause operation while its transmit packets are pending.
 
- 
+ 
 
 The primary miniport driver events are defined as follows:
 
@@ -233,7 +230,7 @@ After the driver has completed all operations that are necessary to stop send an
 
 **Note**  The driver must wait for NDIS to return all its outstanding receive indications before the pause operation is complete.
 
- 
+ 
 
 <a href="" id="initialize-failed"></a>Initialize failed  
 If NDIS calls a driver's [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) function and the initialization attempt fails, the adapter returns to the Halted state.
@@ -262,9 +259,9 @@ A driver must handle OID Requests in the Running, Restarting, Paused, and Pausin
 
 [Starting an Adapter](starting-an-adapter.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,8 @@
 title: Audio Endpoint Builder Algorithm
 description: Audio Endpoint Builder Algorithm
 ms.assetid: 2338bca7-5743-42c3-9baf-ac4a54cf0393
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Audio Endpoint Builder Algorithm
@@ -18,7 +15,7 @@ The AudioEndpointBuilder service uses an algorithm to discover and enumerate end
 
 In Windows XP, the audio model used the term audio device to refer to a conceptual device in the Plug and Play (PnP) tree. In Windows Vista and later versions of Windows, the concept of an audio device has been redesigned to better represent the device that the user physically interacts with.
 
-With two new APIs in Windows Vista, [MMDevice API](http://go.microsoft.com/fwlink/p/?linkid=130863) and [WASAPI](http://go.microsoft.com/fwlink/p/?linkid=130864), you can access and manipulate these new audio devices. The MMDevice API refers to the new audio devices as endpoints.
+With two new APIs in Windows Vista, [MMDevice API](https://go.microsoft.com/fwlink/p/?linkid=130863) and [WASAPI](https://go.microsoft.com/fwlink/p/?linkid=130864), you can access and manipulate these new audio devices. The MMDevice API refers to the new audio devices as endpoints.
 
 The AudioEndpointBuilder service monitors the [**KSCATEGORY\_AUDIO**](https://msdn.microsoft.com/library/windows/hardware/ff548261) class for device interface arrivals and removals. When an audio device driver registers a new instance of the KSCATEGORY\_AUDIO device interface class, the AudioEndpointBuilder service detects the device interface notification and uses an algorithm to examine the topology of the audio devices in the system and take appropriate action.
 
@@ -44,7 +41,7 @@ The following list summarizes how the algorithm that is used by AudioEndpointBui
 
 7.  Sets this endpoint as the default endpoint, if that is what is specified in the associated INF file.
 
-After the endpoints have been enumerated, clients of the audio system can manipulate them directly by using the new Windows Vista APIs (as indicated previously) or indirectly by using the more familiar APIs such as Wave, [DShow](http://go.microsoft.com/fwlink/p/?linkid=130871) or [DirectSound.](http://go.microsoft.com/fwlink/p/?linkid=130872) New API methods have been provided so that audio clients can start with the MMDevice ID of an endpoint and access the Wave or DirectSound ID for the same endpoint.
+After the endpoints have been enumerated, clients of the audio system can manipulate them directly by using the new Windows Vista APIs (as indicated previously) or indirectly by using the more familiar APIs such as Wave, [DShow](https://go.microsoft.com/fwlink/p/?linkid=130871) or [DirectSound.](https://go.microsoft.com/fwlink/p/?linkid=130872) New API methods have been provided so that audio clients can start with the MMDevice ID of an endpoint and access the Wave or DirectSound ID for the same endpoint.
 
 When you use endpoints, you can take advantage of the following:
 
@@ -116,18 +113,16 @@ If you develop your own audio device driver and INF file to work with your audio
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 If you use the MMDevice API to select a default endpoint and the available endpoints are ranked the same, the MMDevice API will alphabetize the Endpoint IDs to determine which endpoint to select as default. For example, if an audio adapter has both line-out and line-in connectors, and the associated INF file does not select either one to be the default at the time of installation, the MMDevice API identifies which Endpoint IDs is first alphabetically and sets that connector as the default. This selection persists after you restart the system because the Endpoint IDs are persistent. However, the selection does not persist if a higher-ranking endpoint (for example, a second adapter with a microphone connector) appears in the system.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Audio%20Endpoint%20Builder%20Algorithm%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

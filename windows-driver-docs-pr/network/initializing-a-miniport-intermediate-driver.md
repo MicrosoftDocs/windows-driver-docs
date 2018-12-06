@@ -7,17 +7,14 @@ keywords:
 - intermediate drivers WDK networking , initializing
 - initializing miniport-intermediate drivers
 - miniport-intermediate drivers WDK NDIS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Initializing a Miniport-Intermediate Driver
 
 
-## <a href="" id="ddk-initializing-a-miniport-intermediate-driver-ng"></a>
+
 
 
 A miniport-intermediate driver combines a miniport driver for a virtual device, a protocol driver, and a miniport driver for a physical device. A miniport-intermediate driver functions similarly to an intermediate driver layered over a miniport driver. Such a driver allows an intermediate driver to communicate directly with an underlying miniport driver without incurring the performance penalties that might result with two separate drivers.
@@ -26,9 +23,9 @@ To register its physical miniport driver, a miniport-intermediate driver calls t
 
 For each virtual or physical device instance of a miniport-intermediate driver, if the **IMMiniport** registry key is set to **DWORD:0x0000001**, NDIS calls the [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) function that the driver registered for the virtual device. Otherwise, NDIS calls the driver's *MiniportInitializeEx* function that the driver registered for the physical device.
 
- 
+ 
 
- 
+ 
 
 
 

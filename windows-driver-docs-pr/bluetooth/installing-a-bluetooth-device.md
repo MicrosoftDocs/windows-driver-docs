@@ -7,11 +7,8 @@ keywords:
 - client-side profile drivers WDK Bluetooth
 - server-side profile drivers WDK Bluetooth
 - INF files WDK Bluetooth
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installing a Bluetooth Device
@@ -53,7 +50,7 @@ The Bluetooth driver stack supports service GUIDs as defined by the Bluetooth SI
 
 **Note**  You can use the *Guidgen.exe* tool that is provided with the Microsoft Windows SDK to create custom GUIDs.
 
- 
+ 
 
 To expose computer functionality that remote Bluetooth devices can use, you must write a user-mode installation application.
 
@@ -61,7 +58,7 @@ The installation application must communicate with the Bluetooth driver stack to
 
 The installation application must call the user-mode API **BluetoothSetLocalServiceInfo**. However, before the application can call this API, the application must have the SE\_LOAD\_DRIVER\_NAME security privilege. The following code example demonstrates how to obtain this privilege. Note, the example does not demonstrate error handling.
 
-```
+```cpp
 HANDLE procToken;
 LUID luid;
 TOKEN_PRIVILEGES tp;
@@ -119,11 +116,10 @@ You can restrict the Bluetooth driver stack to load profile driver and software 
 
 BTHENUM\\{00001124-0000-1000-8000-00805F9B34FB}\_LOCALMFG& *nnnn*
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[bltooth\bltooth]:%20Installing%20a%20Bluetooth%20Device%20%20RELEASE:%20%283/20/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

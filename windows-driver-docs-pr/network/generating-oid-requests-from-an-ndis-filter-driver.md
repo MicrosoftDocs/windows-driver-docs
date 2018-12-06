@@ -4,17 +4,14 @@ description: Generating OID Requests from an NDIS Filter Driver
 ms.assetid: 6567bf98-bf56-4337-8670-af4c78d2c947
 keywords:
 - OIDs WDK networking , filter drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Generating OID Requests from an NDIS Filter Driver
 
 
-## <a href="" id="ddk-generating-oid-requests-from-an-ndis-filter-driver-ng"></a>
+
 
 
 A filter driver can originate OID query or set requests to underlying drivers by calling the [**NdisFOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff561830) function.
@@ -37,11 +34,11 @@ A driver can call [**NdisFOidRequest**](https://msdn.microsoft.com/library/windo
 
 **Note**  A filter driver should keep track of OID requests that it originates and make sure that it does not call the [**NdisFOidRequestComplete**](https://msdn.microsoft.com/library/windows/hardware/ff561833) function when such requests are complete.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

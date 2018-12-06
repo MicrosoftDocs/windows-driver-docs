@@ -10,11 +10,8 @@ keywords:
 - MIDI stream data formats WDK audio
 - DirectMusic WDK audio , stream data formats
 - DMus stream data formats WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Music Technology GUIDs
@@ -77,7 +74,7 @@ A MIDI or DMus miniport driver must specify the range of stream formats that eac
 </tbody>
 </table>
 
- 
+ 
 
 The **midiOutGetDevCaps** function translates the technology GUID that it receives from the driver to an index that it writes to the **wTechnology** member of the MIDIOUTCAPS structure that it outputs to the caller. The preceding table shows the **wTechnology** value (center column) corresponding to each technology GUID. For more information about **midiOutGetDevCaps** and MIDIOUTCAPS, see the Microsoft Windows SDK documentation.
 
@@ -120,7 +117,7 @@ As explained in [MIDI and DirectMusic Filters](midi-and-directmusic-filters.md),
 </tbody>
 </table>
 
- 
+ 
 
 The right column of the preceding table indicates the technology GUID that the corresponding miniport driver specifies in its pins' data ranges. For example, the FmSynth miniport driver assigns the technology GUID KSMUSIC\_TECHNOLOGY\_FMSYNTH to its pins.
 
@@ -132,7 +129,7 @@ To make itself eligible to be the default device, a wavetable device that can pl
 
 By calling the [**IMusicTechnology::SetTechnology**](https://msdn.microsoft.com/library/windows/hardware/ff536780) method, an adapter driver can overwrite the technology GUIDs in a miniport driver's data ranges. In the following code example, an adapter driver changes the technology GUID in the DMusUART miniport driver's data ranges from its default value, KSMUSIC\_TECHNOLOGY\_PORT, to the value KSMUSIC\_TECHNOLOGY\_WAVETABLE. With this new setting, the MPU-like wavetable device is eligible to be selected by the midiOut API as the default MIDI device.
 
-```
+```cpp
   // Create the miniport object.
   PUNKNOWN miniport;
 
@@ -157,12 +154,10 @@ By calling the [**IMusicTechnology::SetTechnology**](https://msdn.microsoft.com/
 
 As indicated in the comment in the preceding code example, the adapter driver should call [**SetTechnology**](https://msdn.microsoft.com/library/windows/hardware/ff536780) before calling the port driver's `Init` method (which, in turn, calls the miniport driver's `Init` method). The system-supplied DMusUART and UART miniport drivers both support the [IMusicTechnology](https://msdn.microsoft.com/library/windows/hardware/ff536778) interface. For other miniport drivers, support for IMusicTechnology is optional. For more information, see the implementation of the **SetTechnology** method in the DMusUART sample audio driver in the Microsoft Windows Driver Kit (WDK).
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Music%20Technology%20GUIDs%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

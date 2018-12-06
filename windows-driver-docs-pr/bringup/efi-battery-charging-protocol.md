@@ -1,13 +1,9 @@
 ---
 title: EFI_BATTERY_CHARGING_PROTOCOL
-author: windows-driver-content
 description: EFI_BATTERY_CHARGING_PROTOCOL
 ms.assetid: 978d063e-f864-44be-9f58-4e4c6b2193b8
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # EFI\_BATTERY\_CHARGING\_PROTOCOL
@@ -18,7 +14,7 @@ This protocol allows a UEFI driver to support charging of the main battery.
 ## Syntax
 
 
-``` syntax
+```cpp
 // {840CB643-8198-428a-A8B3-A072CE57CDB9}
 #define EFI_BATTERY_CHARGING_PROTOCOL_GUID \
   {0x840cb643, 0x8198, 0x428a, 0xa8, 0xb3, 0xa0, 0x72, 0xce, 0x57, 0xcd, 0xb9};
@@ -75,7 +71,7 @@ The following table lists the functions that are supported in each version of th
 </tbody>
 </table>
 
- 
+ 
 
 ## Requirements
 
@@ -83,11 +79,11 @@ The following table lists the functions that are supported in each version of th
 **Header:** User generated
 
 ## Related topics
+
 [UEFI battery charging protocol](uefi-battery-charging-protocol.md)  
+
 [EFI\_BATTERY\_CHARGING\_PROTOCOL.GetBatteryInformation](efi-battery-charging-protocolgetbatteryinformation.md)  
+
 [EFI\_BATTERY\_CHARGING\_PROTOCOL.GetBatteryStatus](efi-battery-charging-protocolgetbatterystatus.md)  
+
 [EFI\_BATTERY\_CHARGING\_PROTOCOL.ChargeBattery](efi-battery-charging-protocolchargebattery.md)  
-
---------------------
-
-

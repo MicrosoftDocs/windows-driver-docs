@@ -1,20 +1,16 @@
 ---
 title: Object Handles
-author: windows-driver-content
 description: Object Handles
 ms.assetid: deeeb3c0-54e4-4727-ac43-6da79be515d7
 keywords: ["object handles WDK user-mode", "object handles WDK kernel", "handles WDK user-mode", "handles WDK kernel", "private object handles WDK", "shared object handles WDK"]
-ms.author: windowsdriverdev
 ms.date: 06/16/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Object Handles
 
 
-## <a href="" id="ddk-object-handles-kg"></a>
+
 
 
 Drivers and user-mode components access most system-defined objects through *handles*. Handles are represented by the HANDLE opaque data type. (Note that handles are not used to access [device objects](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-object) or [driver objects](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-driver-object).)
@@ -37,36 +33,36 @@ Here is a list of object types that drivers typically use, and the routines that
 <tbody>
 <tr class="odd">
 <td><p>File</p></td>
-<td><p>[<strong>IoCreateFile</strong>](https://msdn.microsoft.com/library/windows/hardware/ff548418), [<strong>ZwCreateFile</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566424), [<strong>ZwOpenFile</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567011)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff548418" data-raw-source="[&lt;strong&gt;IoCreateFile&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff548418)"><strong>IoCreateFile</strong></a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff566424" data-raw-source="[&lt;strong&gt;ZwCreateFile&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566424)"><strong>ZwCreateFile</strong></a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff567011" data-raw-source="[&lt;strong&gt;ZwOpenFile&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567011)"><strong>ZwOpenFile</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p>Registry keys</p></td>
-<td><p>[<strong>IoOpenDeviceInterfaceRegistryKey</strong>](https://msdn.microsoft.com/library/windows/hardware/ff549433), [<strong>IoOpenDeviceRegistryKey</strong>](https://msdn.microsoft.com/library/windows/hardware/ff549443), [<strong>ZwCreateKey</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566425), [<strong>ZwOpenKey</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567014)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff549433" data-raw-source="[&lt;strong&gt;IoOpenDeviceInterfaceRegistryKey&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549433)"><strong>IoOpenDeviceInterfaceRegistryKey</strong></a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff549443" data-raw-source="[&lt;strong&gt;IoOpenDeviceRegistryKey&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549443)"><strong>IoOpenDeviceRegistryKey</strong></a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff566425" data-raw-source="[&lt;strong&gt;ZwCreateKey&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566425)"><strong>ZwCreateKey</strong></a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff567014" data-raw-source="[&lt;strong&gt;ZwOpenKey&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567014)"><strong>ZwOpenKey</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Threads</p></td>
-<td><p>[<strong>PsCreateSystemThread</strong>](https://msdn.microsoft.com/library/windows/hardware/ff559932)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff559932" data-raw-source="[&lt;strong&gt;PsCreateSystemThread&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff559932)"><strong>PsCreateSystemThread</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p>Events</p></td>
-<td><p>[<strong>IoCreateSynchronizationEvent</strong>](https://msdn.microsoft.com/library/windows/hardware/ff549045), [<strong>IoCreateNotificationEvent</strong>](https://msdn.microsoft.com/library/windows/hardware/ff549039)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff549045" data-raw-source="[&lt;strong&gt;IoCreateSynchronizationEvent&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549045)"><strong>IoCreateSynchronizationEvent</strong></a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff549039" data-raw-source="[&lt;strong&gt;IoCreateNotificationEvent&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549039)"><strong>IoCreateNotificationEvent</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Symbolic links</p></td>
-<td><p>[<strong>ZwOpenSymbolicLinkObject</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567030)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567030" data-raw-source="[&lt;strong&gt;ZwOpenSymbolicLinkObject&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567030)"><strong>ZwOpenSymbolicLinkObject</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p>Directory objects</p></td>
-<td><p>[<strong>ZwCreateDirectoryObject</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566421)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566421" data-raw-source="[&lt;strong&gt;ZwCreateDirectoryObject&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566421)"><strong>ZwCreateDirectoryObject</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Section objects</p></td>
-<td><p>[<strong>ZwOpenSection</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567029)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567029" data-raw-source="[&lt;strong&gt;ZwOpenSection&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567029)"><strong>ZwOpenSection</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 When the driver no longer requires access to the object, it calls the [**ZwClose**](https://msdn.microsoft.com/library/windows/hardware/ff566417) routine to close the handle. This works for all of the object types listed in the table above.
 
@@ -106,12 +102,10 @@ A driver that shares object handles between kernel mode and user mode must be ca
 
 If a user-mode application creates an event object, a driver can safely wait for that event to be signaled, but only if the application passes a handle to the event object to the driver through an IOCTL. The driver must handle the IOCTL in the context of the process that created the event and must validate that the handle is an event handle by calling [**ObReferenceObjectByHandle**](https://msdn.microsoft.com/library/windows/hardware/ff558679).
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bkernel\kernel%5D:%20Object%20Handles%20%20RELEASE:%20%286/14/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

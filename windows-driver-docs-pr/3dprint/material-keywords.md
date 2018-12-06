@@ -1,13 +1,9 @@
 ---
 title: Material keywords
-author: windows-driver-content
 description: These keywords describe the raw material in the device used to create 3D objects.
 ms.assetid: B2264CA8-64F9-4A20-AC55-46A0C48EDF3C
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Material keywords
@@ -55,11 +51,11 @@ This parameter MUST define the number of materials currently loaded in the devic
 </tbody>
 </table>
 
- 
+
 
 Job3DMaterialCount keyword usage
 
-```
+```cpp
 <psf:Property name="psk3d:Job3DMaterialCount">
     <psf:Value xsi:type="xsd:integer">2</psf:Value>
 </psf:Property>
@@ -105,7 +101,7 @@ This property MUST contain descriptions of the Materials loaded in the device, o
 </tbody>
 </table>
 
- 
+
 
 ### 3.2.1. MaterialsList Properties
 
@@ -137,28 +133,27 @@ Each Material SHOULD specify the following child Properties.
 <td>xsd:string</td>
 <td><p>Devices MAY define this Property to specify the color of the material. If specified, the Value MUST be an sRGB color conforming to the description below:</p>
 <div class="code">
-```
-sRGBColorText = "#" hR hG hB hA
+<code>cpp
+sRGBColorText = &quot;#&quot; hR hG hB hA
 hR = hG = hB = hA = hexpair
 hexpair = hexdigit hexdigit
-hexdigit = "0" / "1" / "2" / "3" /
-           "4" / "5" / "6" / "7" /
-           "8" / "9" / "A" / "B" /
-           "C" / "D" / "E" / "F" /
-           "a" / "b" / "c" / "d" /
-           "e" / "f"
-```
+hexdigit = &quot;0&quot; / &quot;1&quot; / &quot;2&quot; / &quot;3&quot; /
+           &quot;4&quot; / &quot;5&quot; / &quot;6&quot; / &quot;7&quot; /
+           &quot;8&quot; / &quot;9&quot; / &quot;A&quot; / &quot;B&quot; /
+           &quot;C&quot; / &quot;D&quot; / &quot;E&quot; / &quot;F&quot; /
+           &quot;a&quot; / &quot;b&quot; / &quot;c&quot; / &quot;d&quot; /
+           &quot;e&quot; / &quot;f&quot;</code>
 </div>
 <p>hR, hG, hB, and hA specify the hexadecimal single-byte values of the red, green, blue, and alpha components respectively, ranging from 00 to FF. Devices MAY omit alpha (i.e. #hRhGhB), in which case alpha takes on the default value of FF (completely opaque).</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 Job3DMaterials keyword usage
 
-```
+```cpp
 <psf:Property name="psk3d:Job3DMaterials">
     <psf:Property name="vnd:ABS_RED">
         <psf:Property name="psk:DisplayName">
@@ -224,11 +219,11 @@ The psk3d:Job3DSupports keyword specifies whether this job should include *suppo
 </tbody>
 </table>
 
- 
+
 
 Job3DSupports keyword usage
 
-```
+```cpp
 <psf:Feature name="psk3d:Job3DSupports">
     <psf:Property name="SelectionType">
         <psf:Value xsi:type="xsd:QName">psk:PickOne</psf:Value>
@@ -281,7 +276,7 @@ Job3DSupportsMaterial keyword profile
 </tbody>
 </table>
 
- 
+
 
 Job3DSupportsMaterial initialization profile
 
@@ -320,13 +315,13 @@ Job3DSupportsMaterial initialization profile
 </tbody>
 </table>
 
- 
+
 
 Job3DSupportsMaterial keyword usage
 
 The Parameter definition is as follows:
 
-```
+```cpp
 <psf:ParameterDef name="psk3d:Job3DSupportsMaterial">
     <psf:Property name="psf:DataType">
         <psf:Value xsi:type="xsd:QName">xsd:QName</psf:Value>
@@ -351,7 +346,7 @@ The Parameter definition is as follows:
 
 This Parameter is initialized as follows:
 
-```
+```cpp
 <psf:ParameterInit name="psk3d:Job3DSupportsMaterial">
     <psf:Value xsi:type="xsd:QName">vnd:PLA_TEAL</psf:Value>
 </psf:ParameterInit>
@@ -402,11 +397,11 @@ The psk3d:Job3DRaft keyword specifies whether this job should include a *raft* g
 </tbody>
 </table>
 
- 
+
 
 Job3DRaft keyword usage
 
-```
+```cpp
 <psf:Feature name="psk3d:Job3DRaft">
     <psf:Property name="SelectionType">
         <psf:Value xsi:type="xsd:QName">psk:PickOne</psf:Value>
@@ -459,7 +454,7 @@ Job3DRaftMaterial keyword profile
 </tbody>
 </table>
 
- 
+
 
 Job3DRaftMaterial initialization profile
 
@@ -498,13 +493,13 @@ Job3DRaftMaterial initialization profile
 </tbody>
 </table>
 
- 
+
 
 Job3DRaftMaterial keyword usage
 
 The Parameter definition is as follows:
 
-```
+```cpp
 <psf:ParameterDef name="psk3d:Job3DRaftMaterial">
     <psf:Property name="psf:DataType">
         <psf:Value xsi:type="xsd:QName">xsd:QName</psf:Value>
@@ -529,7 +524,7 @@ The Parameter definition is as follows:
 
 This Parameter is initialized as follows:
 
-```
+```cpp
 <psf:ParameterInit name="psk3d:Job3DRaftMaterial">
     <psf:Value xsi:type="xsd:QName">vnd:PLA_TEAL</psf:Value>
 </psf:ParameterInit>
@@ -580,7 +575,7 @@ Material Mapping Parameter keyword profile
 </tbody>
 </table>
 
- 
+
 
 Job3DRaftMaterial initialization profile
 
@@ -619,13 +614,13 @@ Job3DRaftMaterial initialization profile
 </tbody>
 </table>
 
- 
+
 
 Material Mapping Parameter keyword usage
 
 The Parameter definition is as follows:
 
-```
+```cpp
    <psf:ParameterDef name="vnd:Job3DABS_REDMap">
        <psf:Property name="psf:DataType">
           <psf:Value xsi:type="xsd:QName">xsd:string</psf:Value>
@@ -670,7 +665,7 @@ The Parameter definition is as follows:
 
 This Parameter is initialized as follows:
 
-```
+```cpp
    psf:ParameterInit name="vnd:Job3DABS_REDMap">
       <psf:Value xsi:type="xsd:string">1:0;1:2</psf:Value>
    </psf:ParameterInit>
@@ -679,12 +674,10 @@ This Parameter is initialized as follows:
    </psf:ParameterInit>
 ```
 
- 
-
- 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Material%20keywords%20%20RELEASE:%20%289/2/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
+
 
 

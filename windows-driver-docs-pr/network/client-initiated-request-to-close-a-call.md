@@ -4,17 +4,14 @@ description: Client-Initiated Request to Close a Call
 ms.assetid: 1eb9c898-086a-463f-a4ae-d5a8727f7d73
 keywords:
 - client-initiated close call requests WDK CoNDIS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Client-Initiated Request to Close a Call
 
 
-## <a href="" id="ddk-client-initiated-request-to-close-a-call-ng"></a>
+
 
 
 If a client is closing a multipoint call to which more than one party is still connected, it must first call [**NdisClDropParty**](https://msdn.microsoft.com/library/windows/hardware/ff561629) as many times as necessary to drop all but the last party from the call (see [Dropping a Party from a Multipoint Call](dropping-a-party-from-a-multipoint-call.md)).
@@ -47,9 +44,9 @@ NDIS can pass *ProtocolCmCloseCall* a pointer to a buffer containing data suppli
 
 The call manager or MCM driver must then initiate deactivation of the VC used for the call by respectively calling [**NdisCmDeactivateVc**](https://msdn.microsoft.com/library/windows/hardware/ff561657) or [**NdisMCmDeactivateVc**](https://msdn.microsoft.com/library/windows/hardware/ff562818)(see [Deactivating a VC](deactivating-a-vc.md)). The creator of the VC (client, call manager, or MCM driver) can then optionally initiate deletion of the VC (see [Deleting a VC](deleting-a-vc.md)).
 
- 
+ 
 
- 
+ 
 
 
 

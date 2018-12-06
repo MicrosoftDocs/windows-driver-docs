@@ -1,6 +1,5 @@
 ---
 title: Supporting an Operation Region
-author: windows-driver-content
 description: Supporting an Operation Region
 ms.assetid: 262a7201-d89e-4639-9630-a51aaa28db34
 keywords:
@@ -8,17 +7,14 @@ keywords:
 - operation regions WDK ACPI
 - function drivers WDK ACPI , operation regions
 - WDM function drivers WDK ACPI , operation regions
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Supporting an Operation Region
 
 
-## <a href="" id="ddk-supporting-an-operation-region-kg"></a>
+
 
 
 An operation region is the communication interface between an ACPI device and the device's function driver. The following topics describe how a function driver supports an operating region:
@@ -31,11 +27,10 @@ An operation region is the communication interface between an ACPI device and th
 
 [Accessing an Operation Region](accessing-an-operation-region.md)
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

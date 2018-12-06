@@ -1,17 +1,13 @@
 ---
 title: Power Policy Ownership in UMDF
-author: windows-driver-content
 description: Power Policy Ownership in UMDF
 ms.assetid: cf543259-3401-4f3b-a492-53940cea07f3
 keywords:
 - power policy ownership WDK UMDF
 - power policy ownership WDK UMDF , overview
 - power management WDK UMDF , power policy ownership
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Power Policy Ownership in UMDF
@@ -37,7 +33,7 @@ By default, UMDF-based drivers are not power policy owners. The device's kernel-
 
 In addition, if you are providing a UMDF-based driver for a USB device, and if you want your driver to be the power policy owner, the driver's INF file must contain an [**INF AddReg directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320) that sets the WinUsbPowerPolicyOwnershipDisabled value in the registry. If this REG\_DWORD-sized value is set to any nonzero number, it disables the [WinUSB](https://msdn.microsoft.com/library/windows/hardware/ff540196) driver's ability to be the device's power policy owner. The AddReg directive must be in an [**INF DDInstall.HW section**](https://msdn.microsoft.com/library/windows/hardware/ff547330), as the following example shows.
 
-```
+```cpp
 [MyDriver_Install.NT.hw]
 AddReg=MyDriver_AddReg
 
@@ -61,9 +57,9 @@ For more information about the power policy owner's responsibilities, see the fo
 
 -   [User Control of Device Idle and Wake Behavior in UMDF](user-control-of-device-idle-and-wake-behavior-in-umdf.md)
 
- 
+ 
 
- 
+ 
 
 
 

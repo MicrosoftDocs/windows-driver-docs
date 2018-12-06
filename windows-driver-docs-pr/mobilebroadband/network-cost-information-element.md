@@ -2,11 +2,8 @@
 title: Network cost information element
 description: Network cost information element
 ms.assetid: 973294b5-0c4f-4056-ad28-62c58f10c232
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Network cost information element
@@ -17,7 +14,7 @@ To communicate the cost of the Wi-Fi network to clients, Microsoft has defined a
 **Note**  
 The 802.11 protocol allows vendor-defined information elements (IEs), and requires clients that do not understand a particular IE to ignore it and continue processing the remaining IEs. This minimizes the compatibility risk of adding a new IE to products that interact with existing clients of other operating system types.
 
- 
+ 
 
 The following table shows the Network Cost IE format:
 
@@ -70,7 +67,7 @@ The following table shows the Network Cost IE format:
 </tbody>
 </table>
 
- 
+ 
 
 The following figure shows the format of the cost attribute field:
 
@@ -110,7 +107,7 @@ The following table shows the possible cost level bits (exactly one is required)
 </tbody>
 </table>
 
- 
+ 
 
 The following tables shows the possible cost flag bits:
 
@@ -151,7 +148,7 @@ The following tables shows the possible cost flag bits:
 </tbody>
 </table>
 
- 
+ 
 
 The following table shows some sample cost attribute values:
 
@@ -197,7 +194,7 @@ The following table shows some sample cost attribute values:
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Add_network_cost_support_to_your_device"></span><span id="add_network_cost_support_to_your_device"></span><span id="ADD_NETWORK_COST_SUPPORT_TO_YOUR_DEVICE"></span>Add network cost support to your device
 
@@ -221,11 +218,10 @@ The following table shows some sample cost attribute values:
 
 [Communication channels](communication-channels.md)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_mb\p_mb%5D:%20Network%20cost%20information%20element%20%20RELEASE:%20%281/18/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

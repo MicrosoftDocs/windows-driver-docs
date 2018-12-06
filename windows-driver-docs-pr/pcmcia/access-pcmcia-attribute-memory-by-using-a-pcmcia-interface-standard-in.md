@@ -5,17 +5,14 @@ ms.assetid: cd73a8da-1441-4e95-a955-97235ad091ce
 keywords:
 - PCMCIA_INTERFACE_STANDARD
 - attribute memory WDK PCMCIA bus , PCMCIA_INTERFACE_STANDARD interface
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Access PCMCIA Attribute Memory by Using a PCMCIA\_INTERFACE\_STANDARD Interface
 
 
-## <a href="" id="ddk-access-pcmcia-attribute-memory-by-using-a-pcmcia-interface-standar"></a>
+
 
 
 This section describes how a driver can use a PCMCIA\_INTERFACE\_STANDARD interface to access attribute memory.
@@ -26,9 +23,9 @@ A driver can use the [**PCMCIA\_MODIFY\_MEMORY\_WINDOW**](https://msdn.microsoft
 
 For more information, see [PCMCIA\_INTERFACE\_STANDARD Interface for Memory Cards](https://msdn.microsoft.com/library/windows/hardware/ff537606).
 
- 
+ 
 
- 
+ 
 
 
 

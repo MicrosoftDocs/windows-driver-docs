@@ -2,17 +2,14 @@
 title: Data Class Interface
 description: Data Class Interface
 ms.assetid: d7bf9ec3-8bf3-45a9-84a2-c507953d1ad4
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Data Class Interface
 
 
-## <a href="" id="ddk-data-class-interface-ng"></a>
+
 
 
 The Data Class interface is described by a standard USB Interface Descriptor followed by two endpoint descriptors. The two endpoint descriptors in the Data Class interface define standard USB Bulk-type endpoints: one Bulk-IN and one Bulk-OUT. The following table defines the prominent fields of the Data Class Interface Descriptor.
@@ -59,11 +56,11 @@ The Data Class interface is described by a standard USB Interface Descriptor fol
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

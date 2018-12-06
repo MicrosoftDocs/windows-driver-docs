@@ -3,17 +3,14 @@ title: lsp (Set Number of Source Lines)
 description: The lsp command controls how many source lines are displayed while you step through or execute code or use the ls and lsa commands.
 ms.assetid: 350933f1-5459-4ba2-9ca7-a42341cf95de
 keywords: ["lsp (Set Number of Source Lines) Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - lsp (Set Number of Source Lines)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # lsp (Set Number of Source Lines)
@@ -21,7 +18,7 @@ api_type:
 
 The **lsp** command controls how many source lines are displayed while you step through or execute code or use the [**ls and lsa commands**](ls--lsa--list-source-lines-.md).
 
-```
+```dbgcmd
 lsp [-a] LeadingLines TrailingLines 
 lsp [-a] TotalLines 
 lsp [-a] 
@@ -65,7 +62,7 @@ Specifies the total number of lines to show. This number is divided evenly betwe
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -78,11 +75,10 @@ When you step through a program or break in after program execution, the previou
 
 For more information about source debugging and related commands, see [Debugging in Source Mode](debugging-in-source-mode.md).
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20lsp%20%28Set%20Number%20of%20Source%20Lines%29%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

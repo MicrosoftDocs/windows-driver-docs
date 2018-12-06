@@ -6,17 +6,14 @@ keywords:
 - NDIS miniport drivers WDK , resetting miniport adapters
 - resetting miniport adapters
 - adapters WDK networking , reset operations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Simplified Reset Handling
 
 
-## <a href="" id="ddk-simplified-reset-handling-ng"></a>
+
 
 
 NDIS 6.0 and later drivers do not reset miniport adapters to cancel send or OID requests. Instead, NDIS provides send cancellation and OID request cancellation functions.
@@ -25,9 +22,9 @@ An NDIS miniport driver can complete or cancel a pending send operation or pendi
 
 For more information, see [Canceling a Send Operation](canceling-a-send-operation.md), [OID Requests for an Adapter](miniport-adapter-oid-requests.md), [Protocol Driver OID Requests](protocol-driver-oid-requests.md), and [Filter Module OID Requests](filter-module-oid-requests.md).
 
- 
+ 
 
- 
+ 
 
 
 

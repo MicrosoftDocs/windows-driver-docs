@@ -2,11 +2,8 @@
 title: NDIS Selective Suspend
 description: NDIS Selective Suspend
 ms.assetid: B0D44AE3-5197-4264-9838-83FB5EFEB0B0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # NDIS Selective Suspend
@@ -30,11 +27,11 @@ This section includes the following topics:
 
 **Note**  Although the NDIS selective suspend interface is especially useful for USB network adapters, the interface is bus-independent. As a result, miniport drivers can use the interface for network adapters on other bus types in order to reduce CPU and power overhead.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

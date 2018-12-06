@@ -7,11 +7,8 @@ keywords:
 - I/O WDK TCP chimney offload , delivering data
 - delivering received data WDK TCP chimney offload
 - received data processing WDK TCP chimney offload , delivering data
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Delivering Received Data From an Offload Target
@@ -27,9 +24,9 @@ An offload target can deliver received data through the TCP chimney in either of
 
 The [delivery algorithm](delivery-algorithm.md) specifies the conditions under which an offload target must use a preposted receive request or make an receive indication.
 
- 
+ 
 
- 
+ 
 
 
 

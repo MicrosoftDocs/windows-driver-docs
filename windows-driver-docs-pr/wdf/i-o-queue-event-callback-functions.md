@@ -1,6 +1,5 @@
 ---
 title: I/O Queue Event Callback Functions
-author: windows-driver-content
 description: I/O Queue Event Callback Functions
 ms.assetid: 5aa63c47-493d-4583-9eaa-1e50fdc089dd
 keywords:
@@ -8,11 +7,8 @@ keywords:
 - queues WDK UMDF
 - callback functions WDK UMDF
 - event callback functions WDK UMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # I/O Queue Event Callback Functions
@@ -32,9 +28,9 @@ When drivers create I/O queues, or configure default I/O queues, they can regist
 
 [IQueueCallbackDefaultIoHandler](https://msdn.microsoft.com/library/windows/hardware/ff556843)
 
- 
+ 
 
- 
+ 
 
 
 

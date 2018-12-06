@@ -8,11 +8,8 @@ keywords:
 - notifying brightness hot keys WDK display
 - BIOS brightness control WDK display
 - automatic brightness WDK display
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Supporting Brightness Controls on Integrated Display Panels
@@ -20,11 +17,11 @@ ms.technology: windows-devices
 
 Brightness controls are implemented in the monitor driver, Monitor.sys, supplied by the operating system. The monitor driver implements a Windows Management Instrumentation (WMI) interface to allow applications (such as the operating system's brightness slider) to interact with the brightness level. The monitor driver registers with the Device Power Policy Engine (DPPE) so that brightness levels respond to changes in power policy. The monitor driver registers with the Advanced Configuration and Power Interface (ACPI) to process ACPI-based brightness shortcut keys. For compatibility with the [Windows 2000 Display Driver Model](windows-2000-display-driver-model-design-guide.md), the monitor driver implements the IOCTL-based brightness controls.
 
-Either the display miniport driver or ACPI methods that are exposed by the system basic input/output system (BIOS) can support changing the brightness of an integrated display panel. For the first video target that is marked as having output technology that connects internally in a computer ([**D3DKMDT\_VOT\_INTERNAL**](https://msdn.microsoft.com/library/windows/hardware/ff546605)), the monitor driver calls the display miniport driver's [**DxgkDdiQueryInterface**](https://msdn.microsoft.com/library/windows/hardware/ff559764) function to query for the [Brightness Control Interface](https://msdn.microsoft.com/library/windows/hardware/ff538260) that is identified by GUID\_DEVINTERFACE\_BRIGHTNESS\_2 and DXGK\_BRIGHTNESS\_INTERFACE\_VERSION\_1, and the [Brightness Control Interface V. 2 (Adaptive and Smooth Brightness Control)](https://msdn.microsoft.com/library/windows/hardware/jj647485) that is identified by GUID\_DEVINTERFACE\_BRIGHTNESS and DXGK\_BRIGHTNESS\_INTERFACE\_VERSION\_2. If the display miniport driver does not support at least the Brightness Control Interface, the monitor driver uses ACPI to query for the \_BCL, \_BCM, and \_BQC methods on the child device. For more information about these methods, see the ACPI specification on the [ACPI website](http://go.microsoft.com/fwlink/p/?linkid=57185).
+Either the display miniport driver or ACPI methods that are exposed by the system basic input/output system (BIOS) can support changing the brightness of an integrated display panel. For the first video target that is marked as having output technology that connects internally in a computer ([**D3DKMDT\_VOT\_INTERNAL**](https://msdn.microsoft.com/library/windows/hardware/ff546605)), the monitor driver calls the display miniport driver's [**DxgkDdiQueryInterface**](https://msdn.microsoft.com/library/windows/hardware/ff559764) function to query for the [Brightness Control Interface](https://msdn.microsoft.com/library/windows/hardware/ff538260) that is identified by GUID\_DEVINTERFACE\_BRIGHTNESS\_2 and DXGK\_BRIGHTNESS\_INTERFACE\_VERSION\_1, and the [Brightness Control Interface V. 2 (Adaptive and Smooth Brightness Control)](https://msdn.microsoft.com/library/windows/hardware/jj647485) that is identified by GUID\_DEVINTERFACE\_BRIGHTNESS and DXGK\_BRIGHTNESS\_INTERFACE\_VERSION\_2. If the display miniport driver does not support at least the Brightness Control Interface, the monitor driver uses ACPI to query for the \_BCL, \_BCM, and \_BQC methods on the child device. For more information about these methods, see the ACPI specification on the [ACPI website](https://go.microsoft.com/fwlink/p/?linkid=57185).
 
 **Note**   In the Windows Display Driver Model (WDDM), an ACPI identifier is not used to identify an integrated display panel. This is different from the [Windows 2000 Display Driver Model](windows-2000-display-driver-model-design-guide.md), which supports only display panels with an identifier of 0x0110.
 
- 
+ 
 
 If either the display miniport driver or BIOS-exposed ACPI methods support brightness controls, the monitor driver registers for ACPI notifications of brightness shortcut keys. No alternative mechanism exists to signal the monitor driver about shortcut key notifications. If the monitor driver cannot use either brightness-control mechanism or if the display miniport driver supplies the [brightness control interface](https://msdn.microsoft.com/library/windows/hardware/ff538260) but fails a call to the [**DxgkDdiGetPossibleBrightness**](https://msdn.microsoft.com/library/windows/hardware/ff559661) function, the monitor driver does not support brightness controls.
 
@@ -99,11 +96,10 @@ For the display miniport driver to support controlling integrated panel brightne
 
 [Supporting Display Output and ACPI Events](supporting-display-output.md)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Supporting%20Brightness%20Controls%20on%20Integrated%20Display%20Panels%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

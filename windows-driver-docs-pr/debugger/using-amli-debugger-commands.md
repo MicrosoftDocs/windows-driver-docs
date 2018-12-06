@@ -3,11 +3,8 @@ title: Using AMLI Debugger Commands
 description: Using AMLI Debugger Commands
 ms.assetid: 8efa6f13-67db-417a-83ec-8219afc9874c
 keywords: ["AMLI Debugger, AMLI Debugger commands"]
-ms.author: windowsdriverdev
-ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 11/07/2018
+ms.localizationpriority: medium
 ---
 
 # Using AMLI Debugger Commands
@@ -109,21 +106,27 @@ Write DWORD to Port</td>
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="controlling_the_debugger"></span><span id="CONTROLLING_THE_DEBUGGER"></span>Controlling the Debugger
 
 These commands exit the AMLI Debugger. The **g** command will resume normal execution of the target computer, and the **q** command will freeze the target computer and break into the kernel debugger.
 
 **g**
+
 **q**
+
 ### <span id="controlling_aml_execution"></span><span id="CONTROLLING_AML_EXECUTION"></span>Controlling AML Execution
 
 These commands allow you to run or step through AML methods. The **run** command begins execution at a specified point. The **p** and **t** commands allow you to step through one instruction at a time. If a function call is encountered, the **p** command treats the function as a single step, while the **t** command traces into the new function one instruction at a time.
 
+
 **run** *MethodName* **\[***ArgumentList***\]**
+
 **run** *CodeAddress* **\[***ArgumentList***\]**
+
 **p**
+
 **t**
 
 <span id="MethodName"></span><span id="methodname"></span><span id="METHODNAME"></span>*MethodName*  
@@ -139,7 +142,7 @@ Specifies a list of arguments to be passed to the method. Each argument must be 
 
 The **trace** command controls the AML interpreter's trace mode settings. If this command is used with no parameters, the current trace mode settings are displayed.
 
-**trace \[trigon|trigoff\] \[level=***Level***\] \[add=***TPStrings***\] \[zap=***TPNumbers***\]**
+**trace \[trigon|trigoff\] \[level=**<em>Level</em>**\] \[add=**<em>TPStrings</em>**\] \[zap=**<em>TPNumbers</em>**\]**
 
 <span id="trigon"></span><span id="TRIGON"></span>**trigon**  
 Activates trace trigger mode.
@@ -187,9 +190,9 @@ If no address or method is specified, display will begin where the previous disp
 
 These commands have the same effect as the standard kernel debugger memory commands; they are duplicated within the AMLI Debugger for easy access.
 
-**d\[b|w|d|a\] \[ \[l=***Length***\] \[** *Method* **| \[%%\]***Address* **\] \]**
+**d\[b|w|d|a\] \[ \[l=**<em>Length</em>**\] \[** *Method* **| \[%%\]**<em>Address</em> **\] \]**
 
-**e \[%%\]***Address Datalist*
+**e \[%%\]**<em>Address Datalist</em>
 
 <span id="b"></span><span id="B"></span>**b**  
 Specifies that the data should be displayed in byte units.
@@ -222,10 +225,15 @@ The port commands allow you to send output or receive input from a data port. Th
 These commands have the same effect as the standard kernel debugger port commands; they are duplicated within the AMLI Debugger for easy access.
 
 **i** *Port*
+
 **iw** *Port*
+
 **id** *Port*
+
 **o** *Port* *DataForPort*
+
 **ow** *Port* *DataForPort*
+
 **od** *Port* *DataForPort*
 
 <span id="Port"></span><span id="port"></span><span id="PORT"></span>*Port*  
@@ -238,17 +246,11 @@ Specifies the data to be written to the port. The size of this data must match t
 
 This command displays help text for the AMLI Debugger commands.
 
-**? \[***Command***\]**
+**? \[**<em>Command</em>**\]**
 
 <span id="Command"></span><span id="command"></span><span id="COMMAND"></span>*Command*  
 Specifies the command for which to display help. If this is omitted, a list of all AMLI Debugger commands and AMLI Debugger extensions is displayed.
 
- 
+## See Also
 
- 
-
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Using%20AMLI%20Debugger%20Commands%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
-
-
+[The AMLI Debugger](the-amli-debugger.md) 

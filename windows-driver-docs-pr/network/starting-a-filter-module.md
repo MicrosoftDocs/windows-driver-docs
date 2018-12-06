@@ -7,17 +7,14 @@ keywords:
 - starting filter modules
 - filter drivers WDK networking , starting filter modules
 - NDIS filter drivers WDK , starting filter modules
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Starting a Filter Module
 
 
-## <a href="" id="ddk-starting-a-filter-module-ng"></a>
+
 
 
 To start a paused filter module, NDIS calls the filter driver's [*FilterSetModuleOptions*](https://msdn.microsoft.com/library/windows/hardware/ff549970) function, if any, followed by a call to the [*FilterRestart*](https://msdn.microsoft.com/library/windows/hardware/ff549962) function. The filter module enters the *Restarting* state at the start of execution in the *FilterRestart* function.
@@ -28,7 +25,7 @@ When it calls a filter driver's [*FilterRestart*](https://msdn.microsoft.com/lib
 
 **Note**  NDIS calls [*FilterSetModuleOptions*](https://msdn.microsoft.com/library/windows/hardware/ff549970) for all filter modules in a stack before NDIS calls the [*FilterRestart*](https://msdn.microsoft.com/library/windows/hardware/ff549962) function for any filter module in the stack.
 
- 
+ 
 
 NDIS starts a filter module as part of a Plug and Play operation to restart a driver stack. For an overview of restarting the driver stack, see [Restarting a Driver Stack](restarting-a-driver-stack.md).
 
@@ -72,9 +69,9 @@ After the restart operation is complete, the filter module is in the *Running* s
 
 NDIS does not initiate other Plug and Play operations, such as, attach, detach, or pause requests, while the filter driver is in the *Restarting* state. NDIS can initiate pause requests after a filter driver is in the *Running* state. For more information about pausing a filter module, see [Pausing a Filter Module](pausing-a-filter-module.md).
 
- 
+ 
 
- 
+ 
 
 
 

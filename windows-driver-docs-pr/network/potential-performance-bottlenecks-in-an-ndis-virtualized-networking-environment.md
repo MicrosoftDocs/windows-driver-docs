@@ -2,17 +2,14 @@
 title: Performance bottlenecks in a virtualized networking environment
 description: Potential Performance Bottlenecks in an NDIS Virtualized Networking Environment
 ms.assetid: D295E450-C8AF-43A9-B169-5387EB2A2CF0
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Potential Performance Bottlenecks in an NDIS Virtualized Networking Environment
 
 
-## <a href="" id="ddk-overview-of-virtual-machine-queue-nr"></a>
+
 
 
 In a networking environment that supports device sharing, a virtual interface with its own media access control (MAC) address is exposed in each Hyper-V child partition. These virtual interfaces use the underlying virtual machine bus (VMBus) to connect to a port on the Hyper-V extensible switch module that runs in the management operating system of the Hyper-V parent partition. The extensible switch transmits all the outgoing frames from the different partitions by issuing send requests to the underlying shared network adapter.
@@ -45,7 +42,7 @@ To address performance issues, the virtual machine queue (VMQ) interface allows:
 
 **Note**  Packets that are received from the external network still have to be forwarded by the management operating system to the guest operating system over the VMBus.
 
- 
+ 
 
 For more information about the VMQ interface, see [Virtual Machine Queue (VMQ)](virtual-machine-queue--vmq-.md).
 
@@ -65,9 +62,9 @@ In all cases, the SR-IOV interface eliminates the need for any involvement of th
 
 For more information about the SR-IOV interface, see [Single Root I/O Virtualization (SR-IOV)](single-root-i-o-virtualization--sr-iov-.md).
 
- 
+ 
 
- 
+ 
 
 
 

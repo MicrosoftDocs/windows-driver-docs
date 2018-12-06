@@ -2,11 +2,8 @@
 title: Stack Based Failure Injection
 description: The Stack Based Failure Injection option injects resource failures in kernel mode drivers.
 ms.assetid: B5C06413-81FB-46DA-B053-80ED347DA3EB
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Stack Based Failure Injection
@@ -14,7 +11,7 @@ ms.technology: windows-devices
 
 **Note**  The instructions to enable this feature only apply to the WDK for Windows 8. For Windows 8.1, this feature has been integrated into Driver Verifier. On computers running Windows 8.1, use the [Systematic low resources simulation](systematic-low-resource-simulation.md) option.
 
- 
+ 
 
 The Stack Based Failure Injection option injects resource failures in kernel mode drivers. This option uses a special driver, KmAutoFail.sys, in conjunction with [Driver Verifier](driver-verifier.md) to penetrate driver error handling paths. Testing these paths has historically been very difficult. The Stack Based Failure Injection option injects resource failures in a predictable manner, which makes the issues it finds reproducible. Because the error paths are easy to reproduce, it also makes it easy to verify fixes to these issues.
 
@@ -29,7 +26,7 @@ You can activate the Stack Based Failure Injection feature for one or more drive
 
 **Important**  When you activate Stack Based Failure Injection on the test computer, make sure do not also select [Low Resources Simulation](low-resources-simulation.md).
 
- 
+ 
 
 -   **Using Driver Verifier Property page**
 
@@ -64,11 +61,11 @@ Most of the issues found with Stack Based Failure Injection result in bug checks
 
 **To run the debugger extension**
 
--   From the debugger command prompt, type the following command: **!***&lt;path&gt;\\***kmautofaildbg.dll.autofail**. For example, assuming debugger extensions are installed at c:\\dbgext and that kmautofail.pdb is in the symbol path, you would enter the following command:
+- From the debugger command prompt, type the following command: **!**<em>&lt;path&gt;\\</em>**kmautofaildbg.dll.autofail**. For example, assuming debugger extensions are installed at c:\\dbgext and that kmautofail.pdb is in the symbol path, you would enter the following command:
 
-    ```
-    !c:\dbgext\kmautofaildbg.dll.autofail
-    ```
+  ```
+  !c:\dbgext\kmautofaildbg.dll.autofail
+  ```
 
 This will dump information to your debugger showing the call stacks from the most recent failures injected. Each entry looks something like the following, taken from a real test run. In the following example, Stack Based Failure Injection is enabled on Mydriver.sys
 
@@ -127,11 +124,10 @@ The second most common bug check occurs during cleanup. In this case, the driver
 
 Errors that cause the computer to become unresponsive are more difficult to diagnose, but the procedure to debug them is similar. These errors are often caused by reference count or spin lock issues. Fortunately, [Driver Verifier](driver-verifier.md) will catch many spin lock issues before they would lead to problems. In these cases, break into the debugger and use the debugger extension to dump the list of faults that have been injected by Stack Based Failure Injection. A quick look at the code around the latest failures might show a reference count that is taken before the failure but not released after. If not, look for a thread in your driver that is waiting on a spin lock, or for any reference count that is obviously wrong.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20Stack%20Based%20Failure%20Injection%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

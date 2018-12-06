@@ -5,11 +5,8 @@ ms.assetid: 39e4aa45-4764-49ff-a0a7-24385adc341a
 keywords:
 - propagating TCP chimney I/O operation
 - I/O WDK TCP chimney offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Propagating the Completion of an I/O Operation
@@ -65,9 +62,9 @@ In response, NDIS calls the host stack's *ProtocolTcpOffloadXxxComplete* functio
 
 The intermediate driver then frees the memory for the IM call entry that it used to keep track of resources for the call. For more information about the IM Call Entry, see [Reusing an NDIS\_MINIPORT\_OFFLOAD\_BLOCK\_LIST Structure](reusing-an-ndis-miniport-offload-block-list-structure.md).
 
- 
+ 
 
- 
+ 
 
 
 

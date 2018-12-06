@@ -1,8 +1,9 @@
 ---
 title: Button behavior
-author: windows-driver-content
 description: This topic describes the expected behavior of hardware buttons.
 ms.assetid: 057A4F21-3514-4CCA-BCE2-279E8228B5A9
+ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Button behavior
@@ -65,7 +66,7 @@ This topic describes the expected behavior of hardware buttons.
 </tbody>
 </table>
 
- 
+ 
 
 For more information about button requirements:
 
@@ -130,7 +131,7 @@ Handled by Camera app (focus)
 Camera shutter
 Handled by Camera application
 Launch Camera app / take picture
- 
+ 
 
 ### <span id="Button_combination_behavior_in_Windows_10"></span><span id="button_combination_behavior_in_windows_10"></span><span id="BUTTON_COMBINATION_BEHAVIOR_IN_WINDOWS_10"></span>Button combination behavior in Windows 10
 
@@ -177,7 +178,7 @@ As noted, some button combinations in Windows 10 apply to the [Windows 10 butto
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="button_behavior_in_windows_8.1"></span><span id="BUTTON_BEHAVIOR_IN_WINDOWS_8.1"></span>Button behavior in Windows 8.1
 
@@ -233,7 +234,7 @@ Not applicable
 Camera shutter
 Not supported
 Not applicable
- 
+ 
 
 ### <span id="Button_combination_behavior_in_Windows_8.1"></span><span id="button_combination_behavior_in_windows_8.1"></span><span id="BUTTON_COMBINATION_BEHAVIOR_IN_WINDOWS_8.1"></span>Button combination behavior in Windows 8.1
 
@@ -246,13 +247,11 @@ Not applicable
 | Power + Volume Up   | Not supported             | Take screenshot               |
 | Power + Volume Down | Not supported             | Hardware reset (after 10 sec) |
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 [Windows 10 button architecture](https://msdn.microsoft.com/library/windows/hardware/dn957423%28v=vs.85%29.aspx)  
 [Minimum Hardware Requirements](https://msdn.microsoft.com/library/windows/hardware/dn915086.aspx)  
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[gpiobtn\gpiobtn]:%20Button%20behavior%20%20RELEASE:%20%289/25/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

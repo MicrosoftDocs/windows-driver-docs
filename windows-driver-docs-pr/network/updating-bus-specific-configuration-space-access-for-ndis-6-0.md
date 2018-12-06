@@ -7,17 +7,14 @@ keywords:
 - miniport adapters WDK networking , bus configuration space
 - adapters WDK networking , bus configuration space
 - porting miniport drivers WDK networking , adapters
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Updating Bus-Specific Configuration Space Access for NDIS 6.0
 
 
-## <a href="" id="ddk-updating-bus-specific-configuration-space-access-for-ndis-6-0-ng"></a>
+
 
 
 To read or write to the bus configuration space, a miniport driver calls the [**NdisMGetBusData**](https://msdn.microsoft.com/library/windows/hardware/ff563591) or [**NdisMSetBusData**](https://msdn.microsoft.com/library/windows/hardware/ff563670) function, respectively. These functions replace the [**NdisReadPciSlotInformation**](https://msdn.microsoft.com/library/windows/hardware/ff554554) and [**NdisWritePciSlotInformation**](https://msdn.microsoft.com/library/windows/hardware/ff554871) functions.
@@ -28,7 +25,7 @@ The following code samples show how both NDIS 5.*x* miniport drivers and NDIS 6.
 
 Reading
 
-```
+```C++
             ulResult = NdisReadPciSlotInformation(
                            Adapter->AdapterHandle,
                            0,
@@ -39,7 +36,7 @@ Reading
 
 Writing
 
-```
+```C++
             ulResult = NdisWritePciSlotInformation(
                            Adapter->AdapterHandle,
                            0,
@@ -52,7 +49,7 @@ Writing
 
 Reading
 
-```
+```C++
             ulResult = NdisMGetBusData(
                            Adapter->AdapterHandle,
                            PCI_WHICHSPACE_CONFIG,
@@ -63,7 +60,7 @@ Reading
 
 Writing
 
-```
+```C++
             ulResult = NdisMSetBusData(
                            Adapter->AdapterHandle,
                            PCI_WHICHSPACE_CONFIG,
@@ -72,9 +69,9 @@ Writing
                            sizeof(USHORT) );
 ```
 
- 
+ 
 
- 
+ 
 
 
 

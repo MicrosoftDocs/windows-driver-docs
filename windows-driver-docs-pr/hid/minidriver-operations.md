@@ -1,13 +1,9 @@
 ---
 title: Minidrivers and the HID class driver
-author: windows-driver-content
 description: Operation of the HID class driver
 ms.assetid: 3A8F5545-F8EB-47E2-989D-7DE83E32110E
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Minidrivers and the HID class driver
@@ -18,6 +14,8 @@ The section includes the following topics about the operation of the HID class d
 -   Operational features of the HID class driver
 -   Binding the operation of the HID class driver to a HID minidriver
 -   Communicating with a HID minidriver
+
+See [Creating WDF HID minidrivers](https://docs.microsoft.com/windows-hardware/drivers/wdf/creating-umdf-hid-minidrivers) for more information.
 
 ### Operational features of the HID class driver
 
@@ -139,7 +137,7 @@ A HID\_DEVICE\_EXTENSION structure contains the following members:
 
 Given a pointer to the FDO of an input device, the following GET\_MINIDRIVER\_DEVICE\_EXTENSION macro returns a pointer to a HID minidriver extension:
 
-```
+```cpp
 #define GET_MINIDRIVER_DEVICE_EXTENSION(DO) ((PDEVICE_EXTENSION) (((PHID_DEVICE_EXTENSION)(DO)->DeviceExtension)->MiniDeviceExtension))
 ```
 
@@ -255,12 +253,10 @@ In compliance with WDM requirements, a HID minidriver sends power requests down 
 
 Typically, the HID minidriver passes power requests down the device stack without additional processing.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bhid\hid%5D:%20Minidrivers%20and%20the%20HID%20class%20driver%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

@@ -8,17 +8,14 @@ keywords:
 - NDIS protocol drivers WDK , writing
 - protocol drivers WDK networking , writing
 - writing NDIS protocol drivers WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Writing NDIS Protocol Drivers
 
 
-## <a href="" id="ddk-writing-ndis-protocol-drivers-ng"></a>
+
 
 
 This documentation provides an overview of protocol driver operations for NDIS 6.0 and later. NDIS protocol drivers provide *ProtocolXxx* functions that NDIS calls to initiate operations. NDIS provides **Ndis*Xxx*** functions that protocol drivers call to perform operations.
@@ -36,9 +33,9 @@ The following topics describe the relationship between binding states and operat
 -   [Handling Status Indications in a Protocol Driver](handling-status-indications-in-a-protocol-driver.md)
 -   [Handling PnP Event Notifications in a Protocol Driver](handling-pnp-event-notifications-in-a-protocol-driver.md)
 
- 
+ 
 
- 
+ 
 
 
 

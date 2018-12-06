@@ -5,11 +5,8 @@ ms.assetid: 37a7d348-8b55-44f7-86d6-6b195704b9fd
 keywords:
 - Driver Verifier Manager
 - Verifier utility
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Driver Verifier Manager (Windows XP and later)
@@ -39,11 +36,10 @@ Display the options that will be activated and the drivers that will be verified
 <span id="Display_information_about_the_currently-verified_drivers_______"></span><span id="display_information_about_the_currently-verified_drivers_______"></span><span id="DISPLAY_INFORMATION_ABOUT_THE_CURRENTLY-VERIFIED_DRIVERS_______"></span>**Display information about the currently-verified drivers**   
 This will display statistics related to Driver Verifier's actions. See [Monitoring Global Counters](monitoring-global-counters.md) and [Monitoring Individual Counters](monitoring-individual-counters.md) for details. It will also allow you to view and alter Driver Verifier's volatile actions. See [Using Volatile Settings](using-volatile-settings.md).
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20Driver%20Verifier%20Manager%20%28Windows%20XP%20and%20later%29%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

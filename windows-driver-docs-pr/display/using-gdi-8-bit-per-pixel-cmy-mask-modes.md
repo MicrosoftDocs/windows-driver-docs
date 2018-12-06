@@ -8,11 +8,8 @@ keywords:
 - drawing WDK GDI , halftoning
 - halftoning WDK GDI
 - 8-bit-per-pixel CMY mask modes WDK GDI
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using GDI 8-Bit-Per-Pixel CMY Mask Modes
@@ -29,7 +26,7 @@ To correct the GDI ROP behavior, GDI in Windows XP and later supports a special 
 
 **Note**   In the discussion that follows, the term *CMY mode* refers to a mode supported in the previous implementation of [**HT\_Get8BPPMaskPalette**](https://msdn.microsoft.com/library/windows/hardware/ff567320). The term *CMY\_INVERTED mode* refers to modes supported only on Windows XP and later GDI, in which this function inverts bitmask indexes when *pPaletteEntry*\[0\] is set to 'RGB0'.
 
- 
+ 
 
 The following steps are required for all Windows XP and later drivers that use Windows GDI halftone 8-bit-per-pixel CMY mask modes. If you are developing a driver for Windows 2000, you should limit the driver's use to 8-bit-per-pixel monochrome palettes.
 
@@ -37,7 +34,7 @@ The following steps are required for all Windows XP and later drivers that use W
 
 2.  Set *pPaletteEntry*\[0\] as follows prior to a call to **HT\_Get8BPPMaskPalette**:
 
-    ```
+    ```cpp
     pPaletteEntry[0].peRed   = &#39;R&#39;;
     pPaletteEntry[0].peGreen = &#39;G&#39;;
     pPaletteEntry[0].peBlue  = &#39;B&#39;;
@@ -46,7 +43,7 @@ The following steps are required for all Windows XP and later drivers that use W
 
     To do this, a caller should use the **HT\_SET\_BITMASKPAL2RGB** macro (defined in *winddi.h*). Here is an example showing the use of this macro:
 
-    ```
+    ```cpp
     HT_SET_BITMASKPAL2RGB(pPaletteEntry)
     ```
 
@@ -54,7 +51,7 @@ The following steps are required for all Windows XP and later drivers that use W
 
 3.  Check the *pPaletteEntry* parameter returned from the call to [**HT\_Get8BPPMaskPalette**](https://msdn.microsoft.com/library/windows/hardware/ff567320) using the **HT\_IS\_BITMASKPALRGB** macro, which is defined in *winddi.h*. Here is an example showing the use of this macro.
 
-    ```
+    ```cpp
     InvCMYSupported = HT_IS_BITMASKPALRGB(pPaletteEntry)
     ```
 
@@ -74,19 +71,19 @@ For GDI versions that support the 8-bit-per-pixel CMY\_INVERTED modes, the meani
 <tr class="header">
 <th align="left">CMYMask
 <div>
- 
+ 
 </div>
 Value</th>
 <th align="left">CMY Mode Indexes
 <div>
- 
+ 
 </div>
-(pPaletteEntry[0] != 'RGB0')</th>
+(pPaletteEntry[0] != &#39;RGB0&#39;)</th>
 <th align="left">CMY_INVERTED Mode Indexes
 <div>
- 
+ 
 </div>
-(pPaletteEntry[0] == 'RGB0')</th>
+(pPaletteEntry[0] == &#39;RGB0&#39;)</th>
 </tr>
 </thead>
 <tbody>
@@ -94,20 +91,20 @@ Value</th>
 <td align="left"><p>0</p></td>
 <td align="left"><p>0: White</p>
 <div>
- 
+ 
 </div>
 1 to 254: Light Gray --&gt; Dark Gray
 <div>
- 
+ 
 </div>
 255: Black</td>
 <td align="left"><p>0 - Black</p>
 <div>
- 
+ 
 </div>
 1 to 254: Dark Gray --&gt; Light Gray
 <div>
- 
+ 
 </div>
 255: White</td>
 </tr>
@@ -115,27 +112,27 @@ Value</th>
 <td align="left"><p>1</p></td>
 <td align="left"><p>0: White</p>
 <div>
- 
+ 
 </div>
 1 to 123: 123 5x5x5 colors
 <div>
- 
+ 
 </div>
 124 to 255: Black</td>
 <td align="left"><p>0 to 65: Black</p>
 <div>
- 
+ 
 </div>
 66 to 189: 123 5x5x5 colors plus one duplicate. The entry at index 127 is copied to index 128.
 <div>
- 
+ 
 </div>
 190 to 255: White
 <div>
- 
+ 
 </div>
 <div>
- 
+ 
 </div>
 The values at indexes 127 and 128 are duplicated to ensure that the XOR ROP works correctly.</td>
 </tr>
@@ -143,20 +140,20 @@ The values at indexes 127 and 128 are duplicated to ensure that the XOR ROP work
 <td align="left"><p>2</p></td>
 <td align="left"><p>0: White</p>
 <div>
- 
+ 
 </div>
 1 to 214: 214 6x6x6 colors
 <div>
- 
+ 
 </div>
 215 to 255: Black</td>
 <td align="left"><p>0 to 20: Black</p>
 <div>
- 
+ 
 </div>
 21 to 234: 214 6x6x6 colors
 <div>
- 
+ 
 </div>
 235 to 255: White</td>
 </tr>
@@ -164,66 +161,66 @@ The values at indexes 127 and 128 are duplicated to ensure that the XOR ROP work
 <td align="left"><p>3 to 255</p></td>
 <td align="left"><p>0: White</p>
 <div>
- 
+ 
 </div>
 1 to 254: CxMxY color bitmask
 <div>
- 
+ 
 </div>
 255: Black
 <div>
- 
+ 
 </div>
 <div>
- 
+ 
 </div>
 In the product above, C, M, and Y represent the number of levels of cyan, magenta, and yellow, respectively.
 <div>
- 
+ 
 </div>
 <div>
- 
+ 
 </div>
-<strong>Note</strong>: For these modes, a valid combination must not have any of the cyan, magenta, or yellow ink levels equal to zero. For such a combination, [<strong>HT_Get8BPPMaskPalette</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567320) indicates an error condition by returning a zero-count palette in its <em>pPaletteEntry</em> parameter.</td>
+<strong>Note</strong>: For these modes, a valid combination must not have any of the cyan, magenta, or yellow ink levels equal to zero. For such a combination, <a href="https://msdn.microsoft.com/library/windows/hardware/ff567320" data-raw-source="[&lt;strong&gt;HT_Get8BPPMaskPalette&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567320)"><strong>HT_Get8BPPMaskPalette</strong></a> indicates an error condition by returning a zero-count palette in its <em>pPaletteEntry</em> parameter.</td>
 <td align="left"><p>0: Black</p>
 <div>
- 
+ 
 </div>
 1 to 254: Centered CxMxY colors padded with black at the beginning and white at the end
 <div>
- 
+ 
 </div>
 If CxMxY is an odd number, then the entry at index 128 is a duplicate of the one at index 127.
 <div>
- 
+ 
 </div>
 255: White
 <div>
- 
+ 
 </div>
 <div>
- 
+ 
 </div>
 In the product above, C, M, and Y represent the number of levels of cyan, magenta, and yellow, respectively.
 <div>
- 
+ 
 </div>
 <div>
- 
+ 
 </div>
 <strong>Note:</strong> The (C x M x Y) indexes are centered in the 256-entry palette. That is, there are equal numbers of black entries padding the low end of the palette and white entries padding the high end.
 <div>
- 
+ 
 </div>
 <div>
- 
+ 
 </div>
-<strong>Note</strong>: For these modes, a valid combination must not have any of the cyan, magenta, or yellow ink levels equal to zero. For such a combination, [<strong>HT_Get8BPPMaskPalette</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567320) indicates an error condition by returning a zero-count palette in its <em>pPaletteEntry</em> parameter.</td>
+<strong>Note</strong>: For these modes, a valid combination must not have any of the cyan, magenta, or yellow ink levels equal to zero. For such a combination, <a href="https://msdn.microsoft.com/library/windows/hardware/ff567320" data-raw-source="[&lt;strong&gt;HT_Get8BPPMaskPalette&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567320)"><strong>HT_Get8BPPMaskPalette</strong></a> indicates an error condition by returning a zero-count palette in its <em>pPaletteEntry</em> parameter.</td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 -   For a value of *CMYMask* of 0 (Gray scale), the caller can process either the CMY mode or the CMY\_INVERTED mode. Note, however, that GDI ROPs are correctly processed only in the CMY\_INVERTED mode.
 
@@ -258,7 +255,7 @@ In the product above, C, M, and Y represent the number of levels of cyan, magent
     <tr class="odd">
     <td align="left"><p>0 to 113</p>
     <div>
-     
+     
     </div>
     Black</td>
     <td align="left"><p>2</p></td>
@@ -447,13 +444,13 @@ In the product above, C, M, and Y represent the number of levels of cyan, magent
     </tbody>
     </table>
 
-     
+     
 
 <!-- -->
 
 -   If the requested palette is a CMY mode palette (not a CMY\_INVERTED mode palette), then for values of *CMYMask* from 3 to 255, the rendered 8-bit-per-pixel byte index bits have the following meaning. In this case, the bit patterns represent ink levels that can be used directly without translation. This also applies when a CMY\_INVERTED mode byte index is mapped to CMY mode using a translation table's **CMY332Idx** member. See [Translating 8-Bit-Per-Pixel Halftone Indexes to Ink Levels](translating-8-bit-per-pixel-halftone-indexes-to-ink-levels.md) for more information.
 
-```
+```cpp
   Bit     7 6 5 4 3 2 1 0
           |   | |   | | |
           +---+ +---+ +-+
@@ -465,11 +462,10 @@ In the product above, C, M, and Y represent the number of levels of cyan, magent
             +-- Cyan 0-7 (Max. 8 levels)
 ```
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Using%20GDI%208-Bit-Per-Pixel%20CMY%20Mask%20Modes%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

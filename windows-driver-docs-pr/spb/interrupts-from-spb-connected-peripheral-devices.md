@@ -1,13 +1,9 @@
 ---
 title: Interrupts from SPB-Connected Peripheral Devices
-author: windows-driver-content
 description: Unlike a bus such as PCI, a simple peripheral bus (SPB), such as I²C or SPI, provides no standardized, bus-specific means to convey interrupt requests from peripheral devices to the processor.
 ms.assetid: E302BB21-582E-494E-9ADD-72703EF32446
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Interrupts from SPB-Connected Peripheral Devices
@@ -15,7 +11,7 @@ ms.technology: windows-devices
 
 Unlike a bus such as PCI, a [simple peripheral bus](https://msdn.microsoft.com/library/windows/hardware/hh450903) (SPB), such as I²C or SPI, provides no standardized, bus-specific means to convey interrupt requests from peripheral devices to the processor. Instead, an SPB-connected peripheral device signals an interrupt through a separate hardware path that lies outside of both the SPB and the SPB controller. The details of this interrupt path tend to vary from one hardware platform to the next, but Windows hides these details from the driver for an SPB-connected peripheral device to enable the driver to work across a variety of hardware platforms.
 
-## <a href="" id="interrupts-spb-peripheral-devices"></a>
+
 
 
 Typically, the interrupt request line from an SPB-connected peripheral device is connected to a pin on a general-purpose I/O (GPIO) controller, and the GPIO controller relays interrupts from the device to the processor. For more information, see [GPIO Interrupts](https://msdn.microsoft.com/library/windows/hardware/hh406467).
@@ -34,11 +30,10 @@ Starting with Windows 8, the [User-Mode Driver Framework](https://msdn.microsof
 
 Starting with Windows 8, the [Kernel-Mode Driver Framework](https://msdn.microsoft.com/library/windows/hardware/ff544296) (KMDF) supports passive-level ISRs. The KMDF driver for an SPB peripheral device calls the [**WdfInterruptCreate**](https://msdn.microsoft.com/library/windows/hardware/ff547345) method to connect a passive-level ISR to the interrupt from the device. One of the input parameters to this method is a pointer to a [**WDF\_INTERRUPT\_CONFIG**](https://msdn.microsoft.com/library/windows/hardware/ff552347) structure that contains configuration information for the interrupt. To configure the ISR to run at passive level, set the **PassiveHandling** member of this structure to **TRUE**. For more information, see [Supporting Passive-Level Interrupts](https://msdn.microsoft.com/library/windows/hardware/hh451035).
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

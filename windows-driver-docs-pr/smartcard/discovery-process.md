@@ -2,11 +2,8 @@
 title: Discovery Process
 description: Discovery Process
 ms.assetid: 6B94CAF1-D998-4EAF-8ABB-80A21193B50F
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Discovery Process
@@ -67,7 +64,7 @@ The following table lists the AID values that the different discovery processes 
 </tbody>
 </table>
 
- 
+ 
 
 The following table lists the files used by the discovery process.
 
@@ -76,7 +73,7 @@ The following table lists the files used by the discovery process.
 | MF      | 0x3F00                  |
 | EF.ATR  | 0x2F01                  |
 
- 
+ 
 
 The following table lists the commands that the different discovery processes use.
 
@@ -86,7 +83,7 @@ The following table lists the commands that the different discovery processes us
 | GET DATA     | 0xCA                    |
 | GET RESPONSE | 0xC0                    |
 
- 
+ 
 
 ## <span id="Smart_Card_Plug_and_Play_Process"></span><span id="smart_card_plug_and_play_process"></span><span id="SMART_CARD_PLUG_AND_PLAY_PROCESS"></span>Smart Card Plug and Play Process
 
@@ -137,7 +134,7 @@ Beginning with Windows 7, the following describes the Winscard discovery proces
 
 **Note**  The following table describes the various registry keys that the Winscard discovery process uses.
 
- 
+ 
 
 <table>
 <colgroup>
@@ -168,7 +165,7 @@ Beginning with Windows 7, the following describes the Winscard discovery proces
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="_Windows_Smart_Card_Class_Minidriver_Discovery_Process"></span><span id="_windows_smart_card_class_minidriver_discovery_process"></span><span id="_WINDOWS_SMART_CARD_CLASS_MINIDRIVER_DISCOVERY_PROCESS"></span> Windows Smart Card Class Minidriver Discovery Process
 
@@ -192,9 +189,9 @@ The Windows smart card class minidriver performs the following discovery process
     | Crypto Provider                 | String | Microsoft Base Smart Card Crypto Provider |
     | Smart Card Key Storage Provider | String | Microsoft Smart Card Key Storage Provider |
 
-     
+     
 
- 
+ 
 
 ## <span id="Selection_Mechanisms"></span><span id="selection_mechanisms"></span><span id="SELECTION_MECHANISMS"></span>Selection Mechanisms
 
@@ -252,13 +249,12 @@ The GUID member is a 16-byte GUID that uniquely identifies the card/application 
 
 **Note**  The IHV or ISV that issues the application must create a unique GUID for its card/application combination.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[smartcrd\smartcrd]:%20Discovery%20Process%20%20RELEASE:%20%287/20/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

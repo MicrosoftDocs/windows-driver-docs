@@ -1,12 +1,8 @@
 ---
 Description: Describes the USB connector manager (UCM) that manages a USB Type-C connector and the expected behavior of a connector driver.
 title: Write a USB Type-C connector driver
-author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Write a USB Type-C connector driver
@@ -15,7 +11,7 @@ You need to write a USB Type-C connector driver in these scenarios:
 
 -   If your USB Type-C hardware has the capability of handling the power delivery (PD) state machine. Otherwise, consider writing a USB Type-C port controller driver. For more information, see [Write a USB Type-C port controller driver](write-a-usb-type-c-port-controller-driver.md).
 
--   If your hardware is UCSI-compliant over a transport other than ACPI. Otherwise, load the load the Microsoft provided in-box driver, UcmUcsi.sys. (See [UCSI driver](ucsi.md)). 
+-   If your hardware does not have an embedded controller. Otherwise load the Microsoft provided in-box driver, UcmUcsi.sys. (See [UCSI driver](ucsi.md)) for ACPI transports or [write a UCSI client driver](write-a-ucsi-driver.md) for non-ACPI transports. 
 
 **Summary**
 
@@ -30,7 +26,7 @@ You need to write a USB Type-C connector driver in these scenarios:
 
 **Applies to:**
 
--   Windows 10
+-   Windows 10
 
 **WDF version**
 
@@ -43,7 +39,7 @@ You need to write a USB Type-C connector driver in these scenarios:
 
 **Important APIs**
 
--   [USB Type-C connector driver programming reference](https://msdn.microsoft.com/library/windows/hardware/mt188011)
+-  [USB Type-C connector driver programming reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_usbref/#type-c-driver-reference)
 
 Describes the USB connector manager (UCM) that manages a USB Type-C connector and the expected behavior of a connector driver.
 
@@ -69,11 +65,11 @@ To enable a USB Type-C connector on a system, you must write the client driver.
 
     This support enables you to build Windows devices with USB Type-C connectors, USB Type-C docks and accessories, and USB Type-C chargers. The client driver reports connector events that allow the operating system to implement policies around USB and power consumption in the system.
 
--   Install Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) on your target computer or Windows 10 Mobile with a USB Type-C connector.
+-   Install Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) on your target computer or Windows 10 Mobile with a USB Type-C connector.
 -   Familiarize yourself with UCM and how it interacts with other Windows drivers. See [Architecture: USB Type-C design for a Windows system](architecture--usb-type-c-in-a-windows-system.md).
 -   Familiarize yourself with Windows Driver Foundation (WDF). Recommended reading: [Developing Drivers with Windows Driver Foundation]( http://go.microsoft.com/fwlink/p/?LinkId=691676), written by Penny Orwick and Guy Smith.
 
-## <a href="" id="summary-of-the-services-provided-by-the-ucm-class-extension-"></a>Summary of the services provided by the UCM class extension
+## Summary of the services provided by the UCM class extension
 
 
 The UCM class extension keeps the operating system informed about the changes in data and power role, charging levels, and the negotiated PD contract. While the client driver interacts with the hardware, it must notify the class extension when those changes occur. The class extension provides a set of methods that the client driver can use to send the notifications (discussed in this topic). Here are the services provided:
@@ -82,16 +78,16 @@ The UCM class extension keeps the operating system informed about the changes in
 
     On USB Type-C systems, the data role (host or function) depends on the status of the CC pins of the connector. Your client driver reads the CC line (see [Architecture: USB Type-C design for a Windows system](architecture--usb-type-c-in-a-windows-system.md)) status from your port controller to determine whether the port has resolved to an Upstream Facing Port (UFP) or Downstream Facing Port (UFP). It reports that information to the class extension so that it can report the current role to USB role-switch drivers.
 
-    **Note**  USB role-switch drivers are used on Windows 10 Mobile systems. On Windows 10 for desktop editions systems, communication between the class extension and the role-switch drivers is optional. Such systems might not use a dual-role controller, in which case, the role-switch drivers are not used.
+    **Note**  USB role-switch drivers are used on Windows 10 Mobile systems. On Windows 10 for desktop editions systems, communication between the class extension and the role-switch drivers is optional. Such systems might not use a dual-role controller, in which case, the role-switch drivers are not used.
 
-     
+
 
 -   **Power role and charging**
 
     Your client driver reads the USB Type-C current advertisement, or negotiates a PD power contract with the partner connector.
 
-    -   On a Windows 10 Mobile system, the decision to choose the appropriate charger is software-assisted. The client driver reports the contract information to the class extension so that it can send the charging levels to the charging arbitration driver (CAD.sys). CAD selects the current level to use and forwards the charging level information to the battery subsystem.
-    -   On a Windows 10 for desktop editions system, the appropriate charger is selected by the hardware. The client driver may choose to get that information and forward it to the class extension. Alternately, that logic may be implemented by a different driver.
+    -   On a Windows 10 Mobile system, the decision to choose the appropriate charger is software-assisted. The client driver reports the contract information to the class extension so that it can send the charging levels to the charging arbitration driver (CAD.sys). CAD selects the current level to use and forwards the charging level information to the battery subsystem.
+    -   On a Windows 10 for desktop editions system, the appropriate charger is selected by the hardware. The client driver may choose to get that information and forward it to the class extension. Alternately, that logic may be implemented by a different driver.
 -   **Data and power role changes**
 
     After a PD contract has been negotiated, data roles and power roles might change. That change might be initiated by your client driver or the partner connector. The client driver reports that information to the class extension, so that it may re-configure things accordingly.
@@ -99,6 +95,8 @@ The UCM class extension keeps the operating system informed about the changes in
 -   **Data and/or power role update**
 
     The operating system might decide that the current data role is not correct. In that case the class extension calls your driver's callback function to perform necessary role swap operations.
+
+> The Microsoft-provided USB Type-C Policy Manager monitors the activities of USB Type-C connectors. Windows, version 1809, introduces a set of programming interfaces that you can use to write a client driver to Policy Manager. The client driver can participate in the policy decisions for USB Type-C connectors. With this set, you can choose to write a kernel-mode export driver or a user-mode driver. For more information, see [Write a USB Type-C Policy Manager client driver](policy-manager-client.md).
 
 ## Expected behavior of the client driver
 
@@ -140,9 +138,9 @@ Here is the summary of the sequence in which the client driver retrieves a UCMCO
 
 4.  Call [**UcmConnectorCreate**](https://msdn.microsoft.com/library/windows/hardware/mt187909) and retrieve a UCMCONNECTOR handle for the connector. Make sure you call this method after the client driver has created the framework device object by calling [**WdfDeviceCreate**](https://msdn.microsoft.com/library/windows/hardware/ff545926). An appropriate place for this call can be in driver's [**EVT_WDF_DEVICE_PREPARE_HARDWARE**](https://msdn.microsoft.com/library/windows/hardware/ff540880) or [**EVT_WDF_DEVICE_D0_ENTRY**](https://msdn.microsoft.com/library/windows/hardware/ff540848).
 
-```
+```cpp
 EVT_UCM_CONNECTOR_SET_DATA_ROLE     EvtSetDataRole;
-    
+
 NTSTATUS
 EvtDevicePrepareHardware(
     WDFDEVICE Device,
@@ -228,14 +226,14 @@ Exit:
 }
 ```
 
-## <a href="" id="2--report-the-partner-connector-attach-event-"></a>2. Report the partner connector attach event
+## 2. Report the partner connector attach event
 
 
 The client driver must call [**UcmConnectorTypeCAttach**](https://msdn.microsoft.com/library/windows/hardware/mt187915) when a connection to a partner connector is detected. This call notifies the UCM class extension, which further notifies the operating system. At this point the system may start charging at USB Type-C levels.
 
 The UCM class extension also notifies the USB role-switch drivers (URS). Based on the type of partner, URS configures the controller in host role or function role. Before calling this method, make sure the Mux on your system is configured correctly. Otherwise, if the system is in function role, it will connect at an incorrect speed (high-speed instead of SuperSpeed).
 
-```
+```cpp
         UCM_CONNECTOR_TYPEC_ATTACH_PARAMS attachParams;
 
         UCM_CONNECTOR_TYPEC_ATTACH_PARAMS_INIT(
@@ -262,9 +260,9 @@ The UCM class extension also notifies the USB role-switch drivers (URS). Based o
 
 In the initial attach event, the partner connector sends a current advertisement. If the advertisement specifies the current level of the partner connector when partner is a USB Type-C downstream-facing port. Otherwise, the advertisement specifies the current level of the local connector, represented by the UCMCONNECTOR handle (local connector). This initial advertisement might change during the lifetime of the connection. Those changes must be monitored by the client driver.
 
-If the local connector is the power sink and the current advertisement changes, the client driver must detect changes in the current advertisement and report them to the class extension. On Windows 10 Mobile systems, that information is used by CAD.sys and the battery subsystem to adjust the amount of current it is drawing from the source. To report the change in current level to the class extension, the client driver must call [**UcmConnectorTypeCCurrentAdChanged**](https://msdn.microsoft.com/library/windows/hardware/mt187916).
+If the local connector is the power sink and the current advertisement changes, the client driver must detect changes in the current advertisement and report them to the class extension. On Windows 10 Mobile systems, that information is used by CAD.sys and the battery subsystem to adjust the amount of current it is drawing from the source. To report the change in current level to the class extension, the client driver must call [**UcmConnectorTypeCCurrentAdChanged**](https://msdn.microsoft.com/library/windows/hardware/mt187916).
 
-## <a href="" id="pd-contract"></a>4. Report the new negotiated PD contract
+## 4. Report the new negotiated PD contract
 
 
 If your connector supports PD, after the initial attach event, there are PD messages transferred between the connector and its partner connector. Between both partners, a PD contract is negotiated that determines the current levels that the connector can draw or allow the partner to draw. Each time the PD contract changes, the client driver must call these methods to report the change to the class extension.
@@ -273,10 +271,10 @@ If your connector supports PD, after the initial attach event, there are PD mess
     -   [**UcmConnectorPdPartnerSourceCaps**](https://msdn.microsoft.com/library/windows/hardware/mt187912) to report the source capabilities advertised by the partner connector.
     -   [**UcmConnectorPdConnectionStateChanged**](https://msdn.microsoft.com/library/windows/hardware/mt187911) to report the details of the contract. The contract is described in a Request Data Object, defined in the Power Delivery 2.0 specification.
 -   Conversely, the client driver must call these methods each time the local connector (source) advertises source capabilities to the partner. Also, when the local connector receives a **Get\_Source\_Caps** message from the partner, it must respond with the local connector's source capabilities.
-    -   [**UcmConnectorPdSourceCaps**](https://msdn.microsoft.com/library/windows/hardware/mt187913) to report the source capabilities that was advertised by the system to the partner connector.
+    -   [**UcmConnectorPdSourceCaps**](https://msdn.microsoft.com/library/windows/hardware/mt187913) to report the source capabilities that was advertised by the system to the partner connector.
     -   [**UcmConnectorPdConnectionStateChanged**](https://msdn.microsoft.com/library/windows/hardware/mt187911) to report connection capabilities of the currently negotiated PD contract .
 
-## <a href="" id="5--report-battery-charging-status-"></a>5. Report battery charging status
+## 5. Report battery charging status
 
 
 The client driver can notify the UCM class extension if the charging level is not adequate. The class extension reports this information to the operating system. The system uses that information to show a user notification that the charger is not optimally charging the system. The charging status can be reported by these methods:
@@ -287,7 +285,7 @@ The client driver can notify the UCM class extension if the charging level is no
 
 Those methods specify charging state. If the reported levels are **UcmChargingStateSlowCharging** or **UcmChargingStateTrickleCharging** (see [**UCM\_CHARGING\_STATE**](https://msdn.microsoft.com/library/windows/hardware/mt187921)), the operating system shows the user notification.
 
-## <a href="" id="6--report-pr-swap-dr-swap-events"></a>6. Report PR\_Swap/DR\_Swap events
+## 6. Report PR\_Swap/DR\_Swap events
 
 
 If the connector receives a power role (PR\_Swap) or data role (DR\_Swap) swap message from partner, the client driver must notify the UCM class extension.
@@ -314,7 +312,7 @@ The client driver performs role swap operations by using hardware interfaces.
     1.  Send a PD DR\_Swap message to the port-partner.
     2.  Call [**UcmConnectorDataDirectionChanged**](https://msdn.microsoft.com/library/windows/hardware/mt187910) to notify the class extension that the message sequence has completed successfully or unsuccessfully.
 
-    ```
+    ```cpp
     EVT_UCM_CONNECTOR_SET_DATA_ROLE     EvtSetDataRole;  
 
     NTSTATUS  
@@ -324,16 +322,18 @@ The client driver performs role swap operations by using hardware interfaces.
         )  
     {  
         PCONNECTOR_CONTEXT connCtx;  
-      
+
         TRACE_INFO("EvtSetDataRole(%!UCM_TYPE_C_PORT_STATE!) Entry", DataRole);  
-      
+
         connCtx = GetConnectorContext(Connector);
 
-      
-        TRACE_FUNC_EXIT();  
-        return STATUS_SUCCESS;  
-    }  
-    ```
+
+
+    TRACE_FUNC_EXIT();  
+    return STATUS_SUCCESS;  
+}  
+```
+
 
 -   [*EVT\_UCM\_CONNECTOR\_SET\_POWER\_ROLE*](https://msdn.microsoft.com/library/windows/hardware/mt187819)
 
@@ -342,7 +342,7 @@ The client driver performs role swap operations by using hardware interfaces.
     1.  Send a PD PR\_Swap message to the port-partner.
     2.  Call [**UcmConnectorPowerDirectionChanged**](https://msdn.microsoft.com/library/windows/hardware/mt187914) to notify the class extension that the message sequence has completed successfully or unsuccessfully.
 
-    ```
+    ```cpp
     EVT_UCM_CONNECTOR_SET_POWER_ROLE     EvtSetPowerRole;  
 
     NTSTATUS  
@@ -352,25 +352,27 @@ The client driver performs role swap operations by using hardware interfaces.
         )  
     {  
         PCONNECTOR_CONTEXT connCtx;  
-      
+
         TRACE_INFO("EvtSetPowerRole(%!UCM_POWER_ROLE!) Entry", PowerRole);  
-      
+
         connCtx = GetConnectorContext(Connector);  
 
         //PR_Swap operation.  
-      
-      
-        TRACE_FUNC_EXIT();  
-        return STATUS_SUCCESS;  
-    }  
-    ```
 
-**Note**  
+
+
+    TRACE_FUNC_EXIT();  
+    return STATUS_SUCCESS;  
+}  
+```
+
+
+**Note**  
 The client driver can call [**UcmConnectorDataDirectionChanged**](https://msdn.microsoft.com/library/windows/hardware/mt187910) and [**UcmConnectorPowerDirectionChanged**](https://msdn.microsoft.com/library/windows/hardware/mt187914) asynchronously, that is not from the callback thread. In a typical implementation, the class extension invokes the callback functions causing the client driver to initiate a hardware transaction to send the message. When the transaction completes, the hardware notifies the driver. The driver calls those methods to notify the class extension.
 
- 
 
-## <a href="" id="8--report-the-partner-connector-detach-event-"></a>8. Report the partner connector detach event
+
+## 8. Report the partner connector detach event
 
 
 The client driver must call [**UcmConnectorTypeCDetach**](https://msdn.microsoft.com/library/windows/hardware/mt187918) when the connection to a partner connector ends. This call notifies the UCM class extension, which further notifies the operating system.
@@ -378,21 +380,19 @@ The client driver must call [**UcmConnectorTypeCDetach**](https://msdn.microsoft
 ## Use case example: Mobile device connected to a PC
 
 
-When a device running Windows 10 Mobile is connected to a PC running Windows 10 for desktop editions over a USB Type-C connection, the operating system makes sure that mobile device is the Upstream Facing Port (UFP) because MTP is functional only in that direction. In this scenario, here is the sequence for data role correction:
+When a device running Windows 10 Mobile is connected to a PC running Windows 10 for desktop editions over a USB Type-C connection, the operating system makes sure that mobile device is the Upstream Facing Port (UFP) because MTP is functional only in that direction. In this scenario, here is the sequence for data role correction:
 
 1.  The client driver, running on the mobile device, reports an attach event by calling [**UcmConnectorTypeCAttach**](https://msdn.microsoft.com/library/windows/hardware/mt187915) and reports the partner connector as the Downstream Facing Port (UFP).
 2.  The client driver reports the PD contract by calling [**UcmConnectorPdPartnerSourceCaps**](https://msdn.microsoft.com/library/windows/hardware/mt187912) and [**UcmConnectorPdConnectionStateChanged**](https://msdn.microsoft.com/library/windows/hardware/mt187911).
 3.  The UCM class extension notifies the USB device-side drivers causing those drivers to respond to enumeration from the host. The operating system information is exchanged over USB.
 4.  The UCM class extension UcmCx invokes the client driver's callback functions to change roles: [*EVT\_UCM\_CONNECTOR\_SET\_DATA\_ROLE*](https://msdn.microsoft.com/library/windows/hardware/mt187818) and [*EVT\_UCM\_CONNECTOR\_SET\_POWER\_ROLE*](https://msdn.microsoft.com/library/windows/hardware/mt187819).
 
-**Note**  If two Windows 10 Mobile devices are connected to each other, a role swap is not performed, and the user is notified that the connection is not a valid connection.
+**Note**  If two Windows 10 Mobile devices are connected to each other, a role swap is not performed, and the user is notified that the connection is not a valid connection.
 
- 
+
 
 ## Related topics
 [Developing Windows drivers for USB Type-C connectors](developing-windows-drivers-for-usb-type-c-connectors.md)  
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20Write%20a%20USB%20Type-C%20connector%20driver%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

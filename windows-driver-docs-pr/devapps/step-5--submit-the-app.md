@@ -2,11 +2,8 @@
 title: Step 5 Submit the Microsoft Store device app
 description: This topic describes how to submit your UWP device app to the Microsoft Store dashboard.
 ms.assetid: B25F9953-6EFD-4A08-AFD6-B334C46E910F
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Step 5: Submit the Microsoft Store device app
@@ -18,7 +15,7 @@ This topic describes how to submit your UWP device app to the Microsoft Store da
 
 **Note**  If your app is specified as a privileged app and it is not configured for automatic installation, you can submit your device metdata to the Windows Dev Center hardware dashboard before you submit your privileged app to the Microsoft Store. In this case, this step 5 can take place after [step 6](step-6--submit-device-metadata.md).
 
- 
+ 
 
 A UWP device app is a special kind of UWP app that device manufacturers create to serve as a companion to their internal or peripheral device. By using device metadata, device apps can run privileged operations, such as device update. For more info about UWP device apps, see [Meet UWP device apps](meet-uwp-device-apps.md).
 
@@ -86,11 +83,10 @@ The Microsoft Store dashboard validates the Microsoft Store device app package a
 
 [Step 6: Submit device metadata](step-6--submit-device-metadata.md)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devapps\devapps]:%20Step%205:%20Submit%20the%20Windows%20Store%20device%20app%20%20%20RELEASE:%20%281/20/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

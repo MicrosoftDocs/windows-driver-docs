@@ -1,13 +1,9 @@
 ---
 title: Architecture and overview for HID over the I²C transport
-author: windows-driver-content
 description: This section describes the driver stack for devices that support HID over the I²C transport.
 ms.assetid: 99384729-552C-4847-AA35-E0D413018104
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Architecture and overview for HID over the I²C transport
@@ -28,16 +24,16 @@ Windows 8 provides a KMDF-based HID miniport driver that implements version 1.0
 
 **Note**  The HIDI2C.sys device driver supports only the I²C bus. It does not support SPI, SMBUS, or other low-power buses in Windows 8.
 
- 
+ 
 
-## <a href="" id="the-i2c-controller-driver"></a>The I²C Controller Driver
+## The I²C Controller Driver
 
 
 The I²C controller driver exposes a Serial Peripheral Bus (SPB) IOCTL interface to perform read and write operations. This driver provides the actual controller intrinsics (for example, I²C). The SPB Class Extension, on behalf of the controller driver, handles all interaction with the resource hub and implements necessary queues to manage simultaneous targets.
 
 **Note**  The HID I²C driver will not function on systems that do not have an I²C bus that is compatible with the SPB platform. Contact your system manufacturer to determine whether the I²C bus on your device system is compatible with the SPB platform.
 
- 
+ 
 
 ## The GPIO Controller Driver
 
@@ -51,12 +47,10 @@ Connections on a SoC platform are typically non-discoverable, because there are 
 
 The resource hub is a proxy that manages the connections among all devices and bus controllers. The HIDI²C driver uses the resource hub to reroute device-open requests to the appropriate controller driver. For more information about the resource hub, refer to the [Connection IDs for SPB Connected Devices](https://msdn.microsoft.com/library/windows/hardware/hh698216) topic.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bhid\hid%5D:%20Architecture%20and%20overview%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

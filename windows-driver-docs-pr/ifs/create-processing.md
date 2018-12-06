@@ -1,6 +1,5 @@
 ---
 title: Create Processing
-author: windows-driver-content
 description: Create Processing
 ms.assetid: c15a56d2-47db-4124-8250-f25f69d2d4e3
 keywords:
@@ -9,11 +8,8 @@ keywords:
 - create processing WDK file systems
 - Security Reference Monitor WDK
 - IRP_MJ_CREATE
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Create Processing
@@ -36,7 +32,7 @@ In addition, file attributes must be compatible. A file with the read-only attri
 
 The following code example is specific to the FAT semantics. A file system that implements DACLs as well, would do an additional security check using the Security Reference Monitor routines ([**SeAccessCheck**](https://msdn.microsoft.com/library/windows/hardware/ff563674), for example.)
 
-```
+```cpp
     //
     //  check for a read-only Dirent
     //
@@ -75,7 +71,7 @@ A more subtle check implemented by FASTFAT is to ensure that the access requeste
 
 The following code example demonstrates an important concept for file system security. Check to ensure that what is passed to your file system does not fall outside the bounds of what you expect. The conservative and proper approach from the perspective of security is that if you do not understand an access request, you should reject that request.
 
-```
+```cpp
     //
     // Check the desired access for the object. 
     // Reject what we do not understand.
@@ -120,11 +116,10 @@ Rename processing and file system control processing is discussed in subsequent 
 
 Note that this is not an exhaustive list of semantic issues related to "create" processing. The intent of this section is to draw attention to these issues for file system developers. All semantic issues must be identified for a specific file system, implemented to meet the specific semantics, and tested to ensure that the implementation handles the various cases.
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

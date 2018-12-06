@@ -1,6 +1,5 @@
 ---
 title: Using the Registry in WDF Drivers
-author: windows-driver-content
 description: Using the Registry in WDF Drivers
 ms.assetid: 278a5ccb-dd43-4b26-999f-9207a4ede9dc
 keywords:
@@ -11,11 +10,8 @@ keywords:
 - KMDF WDK , registry
 - Kernel-Mode Driver Framework WDK , registry
 - keys WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using the Registry in WDF Drivers
@@ -30,9 +26,9 @@ Driver writers typically use the Microsoft Windows registry to store and retriev
 -   [Using Framework Registry-Key Objects](using-framework-registry-key-objects.md)
 -   [Accessing the Unified Device Property Model](accessing-the-unified-device-property-model.md)
 
- 
+ 
 
- 
+ 
 
 
 

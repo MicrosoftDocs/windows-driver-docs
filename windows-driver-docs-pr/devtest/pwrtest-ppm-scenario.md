@@ -2,11 +2,8 @@
 title: PwrTest PPM Scenario
 description: The PwrTest PPM Scenario logs processor power management (PPM) information and periodic statistics totals.
 ms.assetid: 735834dc-7351-44d1-a63f-9cb541184fde
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # PwrTest PPM Scenario
@@ -21,10 +18,10 @@ The PwrTest PPM Scenario logs processor power management (PPM) information and p
 pwrtest /ppm [/n:n] [/i:n] [/c:[y|n]] [/p:{y|n}] [/u:{y|n}] [/live] [/t:n] [/?] 
 ```
 
-<span id="_n_n"></span><span id="_N_N"></span>**/n:***n*  
+<span id="_n_n"></span><span id="_N_N"></span>**/n:**<em>n</em>  
 Specifies the number of cycles (100 is the default). Press **q** to quit).
 
-<span id="_i_n"></span><span id="_I_N"></span>**/i:***n*  
+<span id="_i_n"></span><span id="_I_N"></span>**/i:**<em>n</em>  
 Specifies the polling interval in milliseconds (ms) for C-state and processor utilization (5000 ms is default).
 
 <span id="_c_yn"></span><span id="_C_YN"></span>**/c:**{**y**|**n**}  
@@ -39,7 +36,7 @@ Specifies whether CPU utilization information should be captured. The options ar
 <span id="_live"></span><span id="_LIVE"></span>**/live**  
 Displays processor power management events in real-time (other options are not available).
 
-<span id="_t_n"></span><span id="_T_N"></span>**/t:***n*  
+<span id="_t_n"></span><span id="_T_N"></span>**/t:**<em>n</em>  
 Specifies the indicates the total runtime, in minutes, for the **/live** option (default is 30).
 
 **Examples**
@@ -186,18 +183,17 @@ The following table describes the XML elements that appear in the log file.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
 
 [PwrTest Syntax](pwrtest-syntax.md)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20PwrTest%20PPM%20Scenario%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -6,11 +6,8 @@ keywords:
 - offload state WDK TCP chimney offload , block lists
 - block lists WDK TCP chimney offload
 - NDIS_MINIPORT_OFFLOAD_BLOCK_LIST
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Offload Block Lists
@@ -18,7 +15,7 @@ ms.technology: windows-devices
 
 \[The TCP chimney offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-offload-block-lists-ng"></a>
+
 
 
 The basic building block of an [offload state tree](offload-state-tree.md) is the [**NDIS\_MINIPORT\_OFFLOAD\_BLOCK\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff566469) structure, which is also called an *offload block list*. The following figure shows the members of an NDIS\_MINIPORT\_OFFLOAD\_BLOCK\_LIST structure.
@@ -35,9 +32,9 @@ Before completing an offload, query, invalidate, update, or terminate operation 
 
 The host stack and offload target also use the **MiniportOffloadContext** and **NdisOffloadHandle** members to reference an offloaded state object. For more information about an offload target uses the **MiniportOffloadContext** and **NdisOffloadHandle** members, see [Storing and Referencing Offloaded State](storing-and-referencing-offloaded-state.md).
 
- 
+ 
 
- 
+ 
 
 
 

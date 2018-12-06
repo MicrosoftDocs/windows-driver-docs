@@ -1,6 +1,5 @@
 ---
 title: Peer Subunit Driver Stack
-author: windows-driver-content
 description: Peer Subunit Driver Stack
 ms.assetid: 6ef4b6ae-3802-4ba9-acfa-4b3edba11ba3
 keywords:
@@ -14,11 +13,8 @@ keywords:
 - command extension mechanism WDK AV/C
 - command targets WDK AV/C
 - Avc.sys function driver WDK , driver stacks
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Peer Subunit Driver Stack
@@ -48,12 +44,10 @@ In the context of the peer subunit driver stack, target functionality is limited
 
 To use the built-in extension mechanism, specify the unit address as 0xff in the **SubunitAddress** member of the AVC\_COMMAND\_IRB structure. The **SubunitAddress** member is left alone in for unit commands (the unit address provided by the subunit driver still exists). The virtual subunit driver is always able to key off of the **SubunitAddress** member.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bstream\stream%5D:%20Peer%20Subunit%20Driver%20Stack%20%20RELEASE:%20%288/23/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

@@ -6,17 +6,14 @@ keywords:
 - add-registry-sections WDK networking , Ndi values and keys
 - Nido keys and values WDK networking
 - service-related values to Ndi key WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Adding Service-Related Values to the Ndi Key
 
 
-## <a href="" id="ddk-adding-service-related-values-to-the-ndi-key-ng"></a>
+
 
 
 If a component has an associated service (device driver), the *add-registry-section* referenced by the *DDInstall* section for that component must add a **Service** value to the Ndi key. The **Service** value is a REG\_SZ value that specifies the primary service associated with the component. The **Service** value must match the *ServiceName* parameter of the **AddService** directive that references the *service-install-section* for the primary service. For more information, see [INF DDInstall.Services Section](ddinstall-services-section-in-a-network-inf-file.md).
@@ -25,17 +22,17 @@ If a component has one or more associated services, the *add-registry-section* r
 
 **Note**  **NetClient** components are deprecated in Windows 8.1, Windows Server 2012 R2, and later.
 
- 
+ 
 
 **Note**  **Net** components (adapters) should not have a **CoServices** value, because only one service can be associated with an adapter.
 
- 
+ 
 
 Except for shutting down services, all service-related actions are performed on the **CoServices** in the order that they are listed. For example, services are started in the order that they are listed. Services are stopped, however, in reverse order. Service-related actions for a component are performed on a service only if that service is listed in **CoServices**.
 
- 
+ 
 
- 
+ 
 
 
 

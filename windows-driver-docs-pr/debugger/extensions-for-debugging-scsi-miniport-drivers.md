@@ -3,11 +3,8 @@ title: Extensions for Debugging SCSI Miniport Drivers
 description: Extensions for Debugging SCSI Miniport Drivers
 ms.assetid: 6e6c35e5-d9dd-430a-8fc4-86f24344c24d
 keywords: ["SCSI Miniport Debugging, useful extensions"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Extensions for Debugging SCSI Miniport Drivers
@@ -20,7 +17,7 @@ The **!devobj** extension displays detailed information about a DEVICE\_OBJECT. 
 
 Here is an example:
 
-```
+```dbgcmd
 0: kd> !devobj 8633da70
 Device object (8633da70) is for:
  adpu160m1 \Driver\adpu160m DriverObject 8633eeb8
@@ -39,7 +36,7 @@ The **!object** extension displays information about a system object. This exten
 
 For example:
 
-```
+```dbgcmd
 0: kd> !object \device\scsi
 Object: e12a2520  Type: (863d12c8) Directory
     ObjectHeader: e12a2508
@@ -65,7 +62,7 @@ The **!minipkd.help** extension displays a list of all of the Minipkd.dll extens
 
 If an error message similar to the following appears, it indicates that the symbol path is incorrect and does not point to the correct version of the Scsiport.sys symbols.
 
-```
+```dbgcmd
 minipkd error (0) <path> ... \minipkd\minipkd.c @ line 435
 ```
 
@@ -79,7 +76,7 @@ The **!minipkd.adapters** extension displays all the adapters that work with the
 
 Here is an example:
 
-```
+```dbgcmd
 0: kd> !minipkd.adapters
 Adapter \Driver\lp6nds35     DO 86334a70         DevExt 86334b28
 Adapter \Driver\adpu160m     DO 8633da70         DevExt 8633db28
@@ -92,7 +89,7 @@ Adapter \Driver\adpu160m     DO 86376040         DevExt 863760f8
 
 An error message similar to the following indicates that either the symbol path is incorrect and does not point to the correct version of the Scsiport.sys symbols, or that Windows has not identified any adapters that work with the SCSI Port driver:
 
-```
+```dbgcmd
 minipkd error (0) <path> ... \minipkd\minipkd.c @ line 435
 ```
 
@@ -118,7 +115,7 @@ The **!scsikd.classext** extension displays detailed information about a specifi
 
 Here is an example:
 
-```
+```dbgcmd
 0: kd> !scsikd.classext 
 
  ' !scsikd.classext 8633e3f0 '   (             ) "IBM     " / "DDYS-T09170M    " / "S93E" / "        XBY45906"
@@ -134,7 +131,7 @@ The **!scsikd.scsiext** extension displays detailed information about a specifie
 
 Here are some examples:
 
-```
+```dbgcmd
 0: kd> !scsikd.scsiext 86353040
 Common Extension:
    < ..omitted.. >
@@ -166,11 +163,10 @@ Adapter Extension:
 [**!scsikd.srbdata Address**](-scsikd-srbdata.md)  
 The **!scsikd.srbdata** extension displays detailed information about a specified SRB\_DATA tracking block.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Extensions%20for%20Debugging%20SCSI%20Miniport%20Drivers%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Combining Dispatch and Synchronization Modes
-author: windows-driver-content
 description: Combining Dispatch and Synchronization Modes
 ms.assetid: 39414acb-1397-42d6-8c75-3448d61775c5
 keywords:
@@ -12,11 +11,8 @@ keywords:
 - sequential dispatch mode WDK UMDF
 - parallel dispatch mode WDK UMDF
 - manual dispatch mode WDK UMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Combining Dispatch and Synchronization Modes
@@ -27,9 +23,9 @@ Combining a particular [queue dispatch mode](configuring-dispatch-mode-for-an-i-
 
 ![combining dispatch and synchronization modes](images/combine.gif)
 
- 
+ 
 
- 
+ 
 
 
 

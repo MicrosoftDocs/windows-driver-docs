@@ -2,11 +2,8 @@
 title: Cross Machine Execution
 description: Cross Machine Execution
 ms.assetid: FDDD2320-E853-45a8-9820-12FB16365B9C
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Cross Machine Execution
@@ -62,31 +59,31 @@ Te.exe automatically determines all of your test's native and managed module dep
 
 You can manually specify additional test dependencies via the **/TestDependencies** command line parameter in the form of a semicolon-delimited list of files or directories to copy.
 
--   **Files**
+- **Files**
 
-    Each file specification can contain wildcard characters (test.txt; test\*.dll; etc.). For example:
+  Each file specification can contain wildcard characters (test.txt; test\*.dll; etc.). For example:
 
-    ``` syntax
-    te unittests\wex.common.tests.dll /runon:TAEFTest1 /TestDependencies:*verification*.jpg;mysample.txt
-    ```
-    -   Sends all necessary binaries for your test to TAEFTest1 as well as any files found that match the files specified in the **/TestDependencies** parameter.
--   **Directories**
+  ``` syntax
+  te unittests\wex.common.tests.dll /runon:TAEFTest1 /TestDependencies:*verification*.jpg;mysample.txt
+  ```
+  -   Sends all necessary binaries for your test to TAEFTest1 as well as any files found that match the files specified in the **/TestDependencies** parameter.
+- **Directories**
 
-    TAEF supports recursive directory searches for directories that exist *at or below* the directory that contains the test binary. For example:
+  TAEF supports recursive directory searches for directories that exist *at or below* the directory that contains the test binary. For example:
 
-    ``` syntax
-    te unittests\wex.common.tests.dll /runon:TAEFTest1 /TestDependencies:unittests\...
-    ```
+  ``` syntax
+  te unittests\wex.common.tests.dll /runon:TAEFTest1 /TestDependencies:unittests\...
+  ```
 
-    -   Sends all necessary binaries for your test to TAEFTest1 as well as all files/directories within or below the *unittests* directory. TAEF retains the directory hierarchy.
+  -   Sends all necessary binaries for your test to TAEFTest1 as well as all files/directories within or below the *unittests* directory. TAEF retains the directory hierarchy.
 
-    ``` syntax
-_    te unittests\wex.common.tests.dll /runon:TAEFTest1 /TestDependencies:unittests\*.jpg...
-    ```
+  ``` syntax
+  _    te unittests\wex.common.tests.dll /runon:TAEFTest1 /TestDependencies:unittests\*.jpg...
+  ```
 
-    -   Sends all necessary binaries for your test to TAEFTest1 as well as all jpg files within or below the *unittests* directory. TAEF retains the directory hierarchy.
+  -   Sends all necessary binaries for your test to TAEFTest1 as well as all jpg files within or below the *unittests* directory. TAEF retains the directory hierarchy.
 
-    **Note:**If you specify a recursive or non-recursive directory search for a directory that does not exist *at or below* the test directory, all files will be copied to the remote machine but the directory hierarchy will be flattened.
+  <strong>Note:</strong>If you specify a recursive or non-recursive directory search for a directory that does not exist *at or below* the test directory, all files will be copied to the remote machine but the directory hierarchy will be flattened.
 
 You can aso specify test dependencies via [DeploymentItem metadata](deploymentitem-metadata.md)
 
@@ -131,11 +128,10 @@ te unittests\wex.common.tests.dll /runon:TAEFTest1 /runas:system
 -   Te.exe asks Te.Service to launch a new Te.ProcessHost.exe instance on the remote machine using the correct [user context](#user-context).
 -   Te.exe connects to the remote Te.ProcessHost.exe instance and begins executing the tests.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[taef\taef]:%20Cross%20Machine%20Execution%20%20RELEASE:%20%289/12/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

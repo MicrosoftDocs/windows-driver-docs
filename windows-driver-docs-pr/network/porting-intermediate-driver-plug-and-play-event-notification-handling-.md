@@ -8,17 +8,14 @@ keywords:
 - Plug and Play WDK networking , porting event notifications
 - event notifications WDK networking
 - porting intermediate drivers WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Porting Intermediate Driver Plug and Play Event Notification Handling to NDIS 6.0
 
 
-## <a href="" id="ddk-porting-intermediate-driver-plug-and-play-event-notification-handl"></a>
+
 
 
 Like NDIS 5.*x* intermediate drivers, NDIS 6.0 intermediate drivers receive network Plug and Play events and device Plug and Play events.
@@ -29,9 +26,9 @@ For more information about Plug and Play events in the miniport upper edge of an
 
 For more information about status indications in the protocol lower edge of an intermediate driver, see [Porting Protocol Driver Plug and Play Event Notification Handling to NDIS 6.0](porting-protocol-driver-plug-and-play-event-notification-handling-to-n.md).
 
- 
+ 
 
- 
+ 
 
 
 

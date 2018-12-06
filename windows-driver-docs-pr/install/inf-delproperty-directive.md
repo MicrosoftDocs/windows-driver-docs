@@ -10,11 +10,8 @@ api_name:
 - INF DelProperty Directive
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # INF DelProperty Directive
@@ -22,11 +19,11 @@ ms.technology: windows-devices
 
 **Note**  If you are building a universal or mobile driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
- 
+ 
 
 A **DelProperty** directive references one or more INF file sections that delete [device properties](device-properties.md) for a device instance, a [device setup class](device-setup-classes.md), a [device interface class](device-interface-classes.md), or a device interface.
 
-```
+```cpp
 [DDInstall] | 
 [DDInstall.CoInstallers] | 
 [ClassInstall32] | 
@@ -47,7 +44,7 @@ A **DelProperty** directive can be specified under any of the sections shown in 
 
 A *del-property-section* that is referenced by a **DelProperty** directive has the following format:
 
-```
+```cpp
 [del-property-section]
 (property-name [ ,, flags [, value]]) | ({property-category-guid}, property-pid [ , flags [, value]])
 (property-name [ ,, flags [, value]]) | ({property-category-guid}, property-pid [ , flags [, value]])
@@ -91,7 +88,7 @@ Examples
 
 The following example of a delete property section includes two line entries: the first line entry includes a *property-name* entry value that deletes the **DeviceModel** property, and the second line entry deletes the string "DeleteThisString" from a custom device property value whose data type is DEVPROP_TYPE_STRING_LIST. In the second line, the *property-category-guid* entry value is "c22189e4-8bf3-4e6d-8467-8dc6d95e2a7e," the *property-identifier* entry value is "2," and the *flags* entry value is "0x00000001,"
 
-```
+```cpp
 [SampleDelPropertySection]
 DeviceModel
 {c22189e4-8bf3-4e6d-8467-8dc6d95e2a7e}, 2, 0x00000001, "DeleteThisString"
@@ -102,9 +99,9 @@ DeviceModel
 
 [**AddProperty**](inf-addproperty-directive.md)
 
- 
+ 
 
- 
+ 
 
 
 

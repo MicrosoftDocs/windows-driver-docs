@@ -1,6 +1,5 @@
 ---
 title: Caching Pin Information for DirectShow
-author: windows-driver-content
 description: Caching Pin Information for DirectShow
 ms.assetid: 1e6a973b-32d2-4ac2-9cd6-f4d3c329cecf
 keywords:
@@ -10,17 +9,14 @@ keywords:
 - updating pin data cache WDK AVStream
 - Broadcast Driver Architecture WDK AVStream , pin data cache
 - BDA WDK AVStream , pin data cache
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Caching Pin Information for DirectShow
 
 
-## <a href="" id="ddk-caching-pin-information-for-directshow-ksg"></a>
+
 
 
 An application can use the DirectShow **IFilterMapper2** interface to automatically search for filters that meet certain criteria. This application can use the list of proposed filters that **IFilterMapper2** returns to automatically build filter graphs with filters that receive and render television signals. To quickly find filters that meet the criteria specified, **IFilterMapper2** uses information about a filter and its pins that was previously entered into a cache. The discussion in the following paragraphs refers to this cache as the *pin data cache*.
@@ -39,16 +35,14 @@ Whenever a BDA minidriver determines that its pin data cache that DirectShow use
 
 **Note**   Updating DirectShow's pin data cache has significant overhead because it touches and modifies the registry. In addition, updating DirectShow's pin data cache impacts the amount of time required for DirectShow to automatically build filter graphs. Therefore, a BDA minidriver should call **BdaFilterFactoryUpdateCacheData** for all possible pins only when it determines that its pin data cache that DirectShow uses is not up-to-date.
 
- 
+ 
 
 If possible, a BDA minidriver should call **BdaFilterFactoryUpdateCacheData** whenever a driver, firmware, or hardware update has occurred.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bstream\stream%5D:%20Caching%20Pin%20Information%20for%20DirectShow%20%20RELEASE:%20%288/23/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

@@ -5,17 +5,14 @@ ms.assetid: e302fcc1-5088-4f64-b454-5f20c69c0626
 keywords:
 - header-data split WDK , where to split
 - Ethernet frame splitting WDK networking , where to split
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Where to Split Header and Data
 
 
-## <a href="" id="ddk-where-to-split-header-and-data-ng"></a>
+
 
 
 The following are the only valid places where a header-data split provider can split an Ethernet frame:
@@ -28,15 +25,15 @@ The following are the only valid places where a header-data split provider can s
 
 **Note**  These requirements apply only to header-data split providers. For more information about splitting frames in cases where header-data split is not used, see [Cases Where Header-Data Split Is Not Used](cases-where-header-data-split-is-not-used.md).
 
- 
+ 
 
 The following figure shows the major parts of the Ethernet frame and the valid split locations.
 
 ![diagram illustrating the format of the 802.11 mpdu frame encrypted through the wep algorithm](images/hdsplitframe.png)
 
- 
+ 
 
- 
+ 
 
 
 

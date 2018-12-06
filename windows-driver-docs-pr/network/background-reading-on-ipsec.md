@@ -5,18 +5,15 @@ ms.assetid: b7316027-a66c-4630-88d4-fa3c66f735f8
 keywords:
 - ESP-protected packets WDK IPsec offload , background reading
 - AH-protected packets WDK IPsec offload , background reading
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Background Reading on IPsec
 
 \[The IPsec Task Offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-background-reading-on-ipsec-ng"></a>
+
 
 
 To comprehend this section, you must understand Internet protocol security (IPsec) as specified in the following RFCs and drafts published by the IP Security Working Group of the Internet Engineering Task Force (IETF):
@@ -43,9 +40,9 @@ Encapsulating security payload (ESP):
 
 -   [The NULL Encryption Algorithm and Its Use with IPsec (RFC 2410)](http://go.microsoft.com/fwlink/p/?linkid=9855)
 
- 
+ 
 
- 
+ 
 
 
 

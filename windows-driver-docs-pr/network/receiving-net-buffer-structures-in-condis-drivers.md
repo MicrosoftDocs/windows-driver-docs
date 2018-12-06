@@ -2,17 +2,14 @@
 title: Receiving NET_BUFFER Structures in CoNDIS Drivers
 description: Receiving NET_BUFFER Structures in CoNDIS Drivers
 ms.assetid: b3bbd3ef-9206-4edc-8f7a-4ce896d77150
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Receiving NET\_BUFFER Structures in CoNDIS Drivers
 
 
-## <a href="" id="ddk-receiving-net-buffer-structures-in-condis-drivers-ng"></a>
+
 
 
 The following figure illustrates a basic CoNDIS receive operation, which involves a protocol driver, NDIS, and a miniport driver.
@@ -33,7 +30,7 @@ NDIS calls a miniport driver's [*MiniportReturnNetBufferLists*](https://msdn.mic
 
 **Note**  If a miniport driver indicates a [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structure with a given status, NDIS is not required to indicate the NET\_BUFFER\_LIST structure to the overlying drivers with the same status. For example, NDIS could copy a NET\_BUFFER\_LIST structure with the NDIS\_RECEIVE\_FLAGS\_RESOURCES flag set and indicate the copy to the overlying drivers with this flag cleared.
 
- 
+ 
 
 NDIS can return NET\_BUFFER\_LIST structures to the miniport driver in any arbitrary order and in any combination. That is, the linked list of NET\_BUFFER\_LIST structures that NDIS returns to a miniport driver by calling [*MiniportReturnNetBufferLists*](https://msdn.microsoft.com/library/windows/hardware/ff559437) can have NET\_BUFFER\_LIST structures from different previous calls to [**NdisMCoIndicateReceiveNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff563561).
 
@@ -41,9 +38,9 @@ Miniport drivers must set the **SourceHandle** member in the [**NET\_BUFFER\_LIS
 
 Intermediate drivers also set the **SourceHandle** member in the NET\_BUFFER\_LIST structure to the *NdisVcHandle* value. If an intermediate driver forwards a receive indication, the driver must save the **SourceHandle** value that the underlying driver provided before it writes to the **SourceHandle** member. When NDIS returns a forwarded NET\_BUFFER\_LIST structure to the intermediate driver, the intermediate driver must restore the **SourceHandle** that it saved.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -4,11 +4,8 @@ description: Battery Miniclass Driver Functionality
 ms.assetid: f8da63fd-0bf9-4085-88c2-022c4ddc7caa
 keywords:
 - battery miniclass drivers WDK , functionality
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Battery Miniclass Driver Functionality
@@ -35,11 +32,10 @@ A battery miniclass driver calls the battery class driver's support routines for
 
 Every battery miniclass driver provides a set of [BatteryMini*Xxx*](https://msdn.microsoft.com/library/windows/hardware/ff536286) routines. The battery class driver calls these routines to request that the miniclass driver perform device-specific tasks. In addition, the miniclass driver must have other routines, as described in [Supplying Required Battery Miniclass Driver Functionality](supplying-required-battery-miniclass-driver-functionality.md).
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

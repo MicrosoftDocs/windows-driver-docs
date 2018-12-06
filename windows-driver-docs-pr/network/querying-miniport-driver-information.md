@@ -7,17 +7,14 @@ keywords:
 - querying miniport drivers
 - miniport drivers WDK networking , querying information
 - NDIS miniport drivers WDK , querying information
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Querying Miniport Driver Information
 
 
-## <a href="" id="ddk-querying-miniport-driver-information-ng"></a>
+
 
 
 The **Ndis*Xxx*** function that a protocol driver calls to query miniport driver information and the *MiniportXxx* function that is used to satisfy such a query depend on whether the miniport driver is connectionless or connection-oriented.
@@ -34,9 +31,9 @@ This section includes:
 
 [Querying 64-Bit Statistics OIDs](querying-64-bit-statistics-oids.md)
 
- 
+ 
 
- 
+ 
 
 
 

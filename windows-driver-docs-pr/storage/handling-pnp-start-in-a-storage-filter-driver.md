@@ -1,6 +1,5 @@
 ---
 title: Handling PnP Start in a Storage Filter Driver
-author: windows-driver-content
 description: Handling PnP Start in a Storage Filter Driver
 ms.assetid: 02a87fec-772d-4416-bd3a-5c7f98e8d55e
 keywords:
@@ -8,11 +7,8 @@ keywords:
 - filter drivers WDK storage , PnP
 - SFD WDK storage , PnP
 - PnP WDK storage
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling PnP Start in a Storage Filter Driver
@@ -25,11 +21,10 @@ A storage filter driver (SFD) performs device-specific initialization and sets u
 
 For information about how a storage class driver handles a start request and sets up its device extension, see [Storage Class Drivers](storage-class-drivers.md). For general information about handling a PnP start request, see [Plug and Play](https://msdn.microsoft.com/library/windows/hardware/ff547125).
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

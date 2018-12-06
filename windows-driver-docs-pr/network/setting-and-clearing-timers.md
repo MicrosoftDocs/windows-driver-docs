@@ -7,17 +7,14 @@ keywords:
 - NDIS timer services WDK
 - clearing NDIS timers
 - allocating NDIS timers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Setting and Clearing Timers
 
 
-## <a href="" id="ddk-setting-and-clearing-timers-ng"></a>
+
 
 
 After allocating and initializing a timer with the [**NdisAllocateTimerObject**](https://msdn.microsoft.com/library/windows/hardware/ff561618) function, an NDIS 6.0 driver calls the [**NdisSetTimerObject**](https://msdn.microsoft.com/library/windows/hardware/ff564563) function to set a timer object to fire after a specified interval or periodically.
@@ -28,9 +25,9 @@ If the *MillisecondsPeriod* parameter of **NdisSetTimerObject** is not zero, the
 
 Your driver can call the [**NdisCancelTimerObject**](https://msdn.microsoft.com/library/windows/hardware/ff561624) function to cancel a timer that is associated with a previous call to the **NdisSetTimerObject** function. NDIS might still call *NetTimerCallback* if the timeout has already expired before the call to **NdisCancelTimerObject**.
 
- 
+ 
 
- 
+ 
 
 
 

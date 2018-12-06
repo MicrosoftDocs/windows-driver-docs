@@ -3,11 +3,8 @@ title: KSPROPSETID\_Synth\_Dls
 description: KSPROPSETID\_Synth\_Dls
 ms.assetid: 8d6038bf-1ec4-4120-9815-d1e6b7994f33
 keywords: ["KSPROPSETID_Synth_Dls"]
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # KSPROPSETID\_Synth\_Dls
@@ -59,13 +56,13 @@ The KSPROPERTY\_SYNTH\_DLS\_APPEND property specifies the amount of reserved sto
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p>[<strong>KSNODEPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537143)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537143" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537143)"><strong>KSNODEPROPERTY</strong></a></p></td>
 <td align="left"><p>ULONG</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is of type ULONG and specifies the number of bytes that the miniport driver needs to reserve for its own use at the end of each downloaded DLS data buffer. The client then allocates each download buffer to be large enough to contain the requested number of bytes after the end of the downloaded data.
 
@@ -92,7 +89,7 @@ A KSPROPERTY\_SYNTH\_DLS\_APPEND property request returns STATUS\_SUCCESS to ind
 </tbody>
 </table>
 
- 
+ 
 
 These additional bytes are intended for drivers that need extra padding for alignment requirements or to replicate the start of a sample in order to simplify sample interpolation.
 
@@ -125,13 +122,13 @@ The KSPROPERTY\_SYNTH\_DLS\_COMPACT property is a request for the synthesizer to
 <td align="left"><p>No</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p>[<strong>KSNODEPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537143)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537143" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537143)"><strong>KSNODEPROPERTY</strong></a></p></td>
 <td align="left"><p>None</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 No property value (operation data) is associated with this property.
 
@@ -158,7 +155,7 @@ A KSPROPERTY\_SYNTH\_DLS\_COMPACT property request returns STATUS\_SUCCESS to in
 </tbody>
 </table>
 
- 
+ 
 
 The implementation of the handler for this property should not interrupt playback.
 
@@ -193,13 +190,13 @@ The KSPROPERTY\_SYNTH\_DLS\_DOWNLOAD property is used to download DLS data to th
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p>[<strong>KSNODEPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537143) + [<strong>SYNTH_BUFFER</strong>](https://msdn.microsoft.com/library/windows/hardware/ff538460)</p></td>
-<td align="left"><p>[<strong>SYNTHDOWNLOAD</strong>](https://msdn.microsoft.com/library/windows/hardware/ff538429)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537143" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537143)"><strong>KSNODEPROPERTY</strong></a> + <a href="https://msdn.microsoft.com/library/windows/hardware/ff538460" data-raw-source="[&lt;strong&gt;SYNTH_BUFFER&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff538460)"><strong>SYNTH_BUFFER</strong></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff538429" data-raw-source="[&lt;strong&gt;SYNTHDOWNLOAD&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff538429)"><strong>SYNTHDOWNLOAD</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property descriptor (instance data) consists of a KSNODEPROPERTY structure that is immediately followed by a SYNTH\_BUFFER structure, which specifies the location and size of the DLS data buffer that is being downloaded.
 
@@ -240,7 +237,7 @@ A KSPROPERTY\_SYNTH\_DLS\_DOWNLOAD property request returns STATUS\_SUCCESS to i
 </tbody>
 </table>
 
- 
+ 
 
 For more information, see the discussion of the **IDirectMusicPort::DownloadInstrument** method in the Microsoft Windows SDK documentation.
 
@@ -248,7 +245,7 @@ For more information, see the discussion of the **IDirectMusicPort::DownloadInst
 
 The KSPROPERTY\_SYNTH\_DLS\_DOWNLOAD property request specifies the location of the DLS download data with a user memory address. The miniport driver should probe and lock the user memory containing the DLS data before attempting to access it. The following example code shows how to do this:
 
-```
+```cpp
   NTSTATUS Status = STATUS_UNSUCCESSFUL;
   PSYNTH_BUFFER pDlsBuffer = (PSYNTH_BUFFER)pRequest->Instance;
   PMDL pMdl = IoAllocateMdl(pDlsBuffer->BufferAddress, pDlsBuffer->BufferSize,
@@ -305,13 +302,13 @@ The KSPROPERTY\_SYNTH\_DLS\_UNLOAD property unloads a DLS data resource that was
 <td align="left"><p>No</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p>[<strong>KSNODEPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537143)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537143" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537143)"><strong>KSNODEPROPERTY</strong></a></p></td>
 <td align="left"><p>HANDLE</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is of type HANDLE and contains the handle of the downloaded DLS data resource that is to be freed. This is the handle that the miniport driver generated to identify the DLS data in a previous [**KSPROPERTY\_SYNTH\_DLS\_DOWNLOAD**](https://msdn.microsoft.com/library/windows/hardware/ff537396)get-property request.
 
@@ -346,7 +343,7 @@ A KSPROPERTY\_SYNTH\_DLS\_UNLOAD property request returns STATUS\_SUCCESS to ind
 </tbody>
 </table>
 
- 
+ 
 
 The miniport driver should unload the DLS data as soon as there are no notes playing that use the DLS data. If the synthesizer is not able to free the memory associated with the DLS data resource at the time of the KSPROPERTY\_SYNTH\_DLS\_UNLOAD set-property request, it can use asynchronous property completion to finish the request at a later time.
 
@@ -383,13 +380,13 @@ The KSPROPERTY\_SYNTH\_DLS\_WAVEFORMAT property is used to query the synthesizer
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p>[<strong>KSNODEPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537143)</p></td>
-<td align="left"><p>[<strong>WAVEFORMATEX</strong>](https://msdn.microsoft.com/library/windows/hardware/ff538799)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537143" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537143)"><strong>KSNODEPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff538799" data-raw-source="[&lt;strong&gt;WAVEFORMATEX&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff538799)"><strong>WAVEFORMATEX</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is of type WAVEFORMATEX and specifies the wave format of the synthesizer's output stream.
 
@@ -416,17 +413,16 @@ A KSPROPERTY\_SYNTH\_DLS\_WAVEFORMAT property request returns STATUS\_SUCCESS to
 </tbody>
 </table>
 
- 
+ 
 
 A property-value buffer of **sizeof**(WAVEFORMATEX) bytes might not be large enough for all wave formats. For example, a multichannel format requires a buffer of **sizeof**([**WAVEFORMATEXTENSIBLE**](https://msdn.microsoft.com/library/windows/hardware/ff538802)) bytes. If the property request returns a status code of STATUS\_BUFFER\_TOO\_SMALL, the client can check the property-value size that the miniport driver outputs, allocate a larger buffer, and then submit a second request.
 
 For more information, see the description of the **IDirectMusicPort::GetFormat** method in the Microsoft Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20KSPROPSETID_Synth_Dls%20%20RELEASE:%20%2811/22/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

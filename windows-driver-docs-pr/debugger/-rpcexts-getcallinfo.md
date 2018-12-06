@@ -3,17 +3,14 @@ title: rpcexts.getcallinfo
 description: The rpcexts.getcallinfo extension searches the system's RPC state information for server-side call (SCALL) information.
 ms.assetid: 85957afe-f73e-4533-af5c-5ee55b35ac84
 keywords: ["rpcexts.getcallinfo Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - rpcexts.getcallinfo
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !rpcexts.getcallinfo
@@ -21,7 +18,7 @@ api_type:
 
 The **!rpcexts.getcallinfo** extension searches the system's RPC state information for server-side call (SCALL) information.
 
-```
+```dbgcmd
 !rpcexts.getcallinfo [ CallID | 0 [ IfStart | 0 [ ProcNum | 0xFFFF [ProcessID|0] ] ] ] 
 !rpcexts.getcallinfo -? 
 ```
@@ -63,7 +60,7 @@ Displays some brief Help text for this extension in the Command Prompt window.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -78,7 +75,7 @@ The parameters are parsed from left to right. To skip a parameter, supply the va
 
 Here is an example:
 
-```
+```dbgcmd
 0:002> !rpcexts.getcallinfo
 Searching for call info ...
 ## PID  CELL ID   ST PNO IFSTART  TIDNUMBER CALLFLAG CALLID   LASTTIME CONN/CLN
@@ -133,11 +130,10 @@ Searching for call info ...
 
 For a similar example using the DbgRpc tool, see [Get RPC Call Information](get-rpc-call-information.md).
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!rpcexts.getcallinfo%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -1,24 +1,20 @@
 ---
 title: Example Application Using a Segmentation Filter
-author: windows-driver-content
 description: Example Application Using a Segmentation Filter
 ms.assetid: 3f7de6a2-5684-4c37-97bc-47f4727114ab
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Example: Application Using a Segmentation Filter
 
 
-## <a href="" id="ddk-example-application-using-a-segmentation-filter-si"></a>
+
 
 
 The following code example shows how a simple application could use the segmentation filter. For clarity, error-checking code has been omitted, as well as code to release and free interface pointers and memory.
 
-```
+```cpp
 IWiaSegmentationFilter *pWiaSegmentationFilter = NULL;
 IWiaTransferCallback *pMyWiaTransferCallback = NULL;
 IWiaTransfer  *pWiaTransfer = NULL;
@@ -52,7 +48,7 @@ if (ReadPropertyLong(WIA_IPS_SEGMENTATION_FILTER, &lUseSegFilter) &&
                            (void**)& pWiaSegmentationFilter);
 
 //
-// m_pInputStream is a pointer to the IStream that the application&#39;s
+// m_pInputStream is a pointer to the IStream that the application's
 // implementation of MyWiaTransferCallback::GetNextStream
 // returns.
 //
@@ -92,12 +88,10 @@ pChildItem->QueryInterface(IID_IWiaTransfer,
 pWiaTransferChild->Download(lFlags, pMyWiaTransferCallback); 
 ```
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bimage\image%5D:%20Example:%20Application%20Using%20a%20Segmentation%20Filter%20%20RELEASE:%20%288/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

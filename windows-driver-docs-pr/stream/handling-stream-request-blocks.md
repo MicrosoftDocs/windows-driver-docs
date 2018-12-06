@@ -1,6 +1,5 @@
 ---
 title: Handling Stream Request Blocks
-author: windows-driver-content
 description: Handling Stream Request Blocks
 ms.assetid: fb4fda0d-54e9-4f1b-a78c-276e770189d5
 keywords:
@@ -9,17 +8,14 @@ keywords:
 - minidrivers WDK Windows 2000 Kernel Streaming , SRBs
 - SRBs WDK streaming minidriver
 - stream request blocks See SRB or SRBs
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling Stream Request Blocks
 
 
-## <a href="" id="ddk-handling-stream-request-blocks-ksg"></a>
+
 
 
 The operating system dispatches all I/O requests on the device to the class driver. The class driver in turn requests hardware-specific information from the minidriver by passing SRBs to the minidriver. The class driver specifies the operation it requests in the **Command** member of the stream request block.
@@ -44,23 +40,23 @@ If the class driver is handling synchronization for the minidriver, it queues st
 <tbody>
 <tr class="odd">
 <td><p>device request</p></td>
-<td><p>[<strong>StreamClassDeviceNotification</strong>](https://msdn.microsoft.com/library/windows/hardware/ff568239)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff568239" data-raw-source="[&lt;strong&gt;StreamClassDeviceNotification&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff568239)"><strong>StreamClassDeviceNotification</strong></a></p></td>
 <td><p>ReadyForNextDeviceRequest</p></td>
 </tr>
 <tr class="even">
 <td><p>stream control request</p></td>
-<td><p>[<strong>StreamClassStreamNotification</strong>](https://msdn.microsoft.com/library/windows/hardware/ff568266)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff568266" data-raw-source="[&lt;strong&gt;StreamClassStreamNotification&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff568266)"><strong>StreamClassStreamNotification</strong></a></p></td>
 <td><p>ReadyForNextStreamControlRequest</p></td>
 </tr>
 <tr class="odd">
 <td><p>stream data request</p></td>
-<td><p>[<strong>StreamClassStreamNotification</strong>](https://msdn.microsoft.com/library/windows/hardware/ff568266)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff568266" data-raw-source="[&lt;strong&gt;StreamClassStreamNotification&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff568266)"><strong>StreamClassStreamNotification</strong></a></p></td>
 <td><p>ReadyForNextStreamDataRequest</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 When the class driver calls **StrMiniReceive*XXX*Packet**, it hands off the stream request block to the minidriver. The minidriver's routine has sole access to the stream request block until it signals to the class driver it has completed the request.
 
@@ -78,12 +74,10 @@ The minidriver processes requests asynchronously, so the class driver may need t
 
 The class driver cancels a request when the underlying I/O request is canceled by the operating system. The class driver times out requests that take too long to process -- it decrements a counter of how many seconds until it times out a request in the **TimeoutCounter** member of the stream request block. If the minidriver must defer processing on a request for a long period of time, it should set the **TimeoutCounter** member to zero -- the class driver then will not time out the request. Once the minidriver resumes processing of the request, it should reset **TimeoutCounter** to be equal to the **TimeoutOriginal** member of the stream request block. The minidriver can reset **TimeoutOriginal** to change the length of time before the request times out. See [**HW\_STREAM\_REQUEST\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff559702) for details.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bstream\stream%5D:%20Handling%20Stream%20Request%20Blocks%20%20RELEASE:%20%288/23/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

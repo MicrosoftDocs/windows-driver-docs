@@ -2,11 +2,8 @@
 title: MB Raw IP Packet Processing Support
 description: MB Raw IP Packet Processing Support
 ms.assetid: 1c3327fa-1858-4247-9a18-b49d26e9a095
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # MB Raw IP Packet Processing Support
@@ -30,17 +27,17 @@ MB miniport drivers that support Raw IP packet frames in their send/receive data
 
 Miniport drivers can use the [**NdisSetNblFlag**](https://msdn.microsoft.com/library/windows/hardware/ff564542) macro to set flags in the net buffer list. The following line demonstrates how to set IPv4 packet flag in the net buffer list:
 
-```
+```C++
 NdisSetNblFlag(pNbl, NDIS_NBL_FLAGS_IS_IPV4);
 ```
 
 Miniport drivers can use the [**NET\_BUFFER\_LIST\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff568401) to get and set information in a net buffer list. The following line demonstrates how to modify the **NetBufferListFrameType** OOB in the network buffer list for IPV4 packets:
 
-```
+```C++
 Value = ConvertToNetworkByteOrder(0x0800);
 ```
 
-```
+```C++
 NET_BUFFER_LIST_INFO(pNbl, NetBufferListFrameType) = Value;
 ```
 
@@ -58,9 +55,9 @@ If your miniport driver implements Raw IP Packet Processing during its driver de
 
 -   Transaction ID (the **xid** member) of the DHCP response from the miniport driver should match exactly the transaction ID set in the DHCP request message from the client.
 
- 
+ 
 
- 
+ 
 
 
 

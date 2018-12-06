@@ -1,13 +1,9 @@
 ---
 title: Driver Support for Protected Printing
-author: windows-driver-content
 description: Windows 8.1 includes support for protected printing, which allows users to specify a personal identification number (PIN) that is then used at the printer, prior to the job being printed out.
 ms.assetid: 43569030-224F-46C6-963F-FC3BE24A0FB3
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Driver Support for Protected Printing
@@ -19,14 +15,18 @@ Windows 8.1 also allows administrators to specify a default PIN in order to red
 
 ## Print Schema Changes
 
-
 Windows 8.1 has introduced new Print Schema keywords that you can use in PrintTicket and PrintCapabilities documents to specify protected printing. These keywords are defined in the new *printschemakeywordsv11* namespace. Here's the URI for this namespace:
 
 *http://schemas.microsoft.com/windows/2013/05/printing/printschemakeywordsv11*
 
 To see how to specify protected printing in a PrintTicket file, see [Sample PrintTicket File for PIN Printing](sample-printticket-file-for-pin-printing.md). And to see how to specify protected printing in a PrintCapabilities file, see [Sample PrintCapabilities File for PIN Printing](sample-printcapabilities-file-for-pin-printing.md).
 
-Print Schema Specification v1.1 will be available in the near future. There is no date yet for its release.
+The specifications can be downloaded here:
+
+[Print Schema Specification 1.1](http://download.microsoft.com/download/1/6/a/16acc601-1b7a-42ad-8d4e-4f0aa156ec3e/print-schema-spec-1-1.zip)
+
+[Print Schema Specification 2.0](http://download.microsoft.com/download/d/e/c/deca6e6b-3e81-48e7-b7ef-6d92a547d03c/print-schema-spec-2-0.zip)
+
 
 ## Driver Changes
 
@@ -40,7 +40,7 @@ If you're working with a v4 driver, you have to make changes to the generic prin
 
 **Note**  You can use a v3 driver with the Print Schema keywords for protected printing, as long as you make the required changes in your PTProvider code. But the steps for making those changes are outside the scope of this topic.
 
- 
+ 
 
 The following sections give you more information about how to implement changes that will allow your v4 driver to support protected printing.
 
@@ -69,25 +69,25 @@ You indicate support for protected printing in the DataFile for your v4 print dr
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>*JobPasscodeMinLength</strong></td>
+<td><strong><em>JobPasscodeMinLength</strong></td>
 <td><p>Minimum length of the supported PIN numeric string.</p>
 <p>This value must be at least 4 and no greater than 15.</p></td>
 <td>Root</td>
-<td>Any [GPD numeric value](numeric-values.md)</td>
-<td>*JobPasscodeMinLength: 4</td>
+<td>Any <a href="numeric-values.md" data-raw-source="[GPD numeric value](numeric-values.md)">GPD numeric value</a></td>
+<td></em>JobPasscodeMinLength: 4</td>
 </tr>
 <tr class="even">
-<td><strong>*JobPasscodeMaxLength</strong></td>
+<td><strong><em>JobPasscodeMaxLength</strong></td>
 <td><p>Maximum length of the supported PIN numeric string.</p>
-<p>This value must be at least 4 and no greater than 15. It must be greater than or equal to the <strong>*JobPasscodeMinLength</strong> value.</p></td>
+<p>This value must be at least 4 and no greater than 15. It must be greater than or equal to the <strong></em>JobPasscodeMinLength</strong> value.</p></td>
 <td>Root</td>
-<td>Any [GPD numeric value](numeric-values.md)</td>
+<td>Any <a href="numeric-values.md" data-raw-source="[GPD numeric value](numeric-values.md)">GPD numeric value</a></td>
 <td>*JobPasscodeMaxLength: 9</td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 **What to add to a PPD file**. If your driver uses a PPD file, add the following new keywords using this syntax:
 
@@ -110,18 +110,18 @@ You indicate support for protected printing in the DataFile for your v4 print dr
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>*MSJobPasscodeMinLength</strong></td>
+<td><strong><em>MSJobPasscodeMinLength</strong></td>
 <td><p>Minimum length of the supported PIN numeric string.</p>
 <p>This value must be at least 4 and no greater than 15.</p></td>
 <td>Root</td>
 <td><p>”int” (QuotedValue)</p>
 <p>In other words, the integer value must be expressed in quotation marks.</p></td>
-<td>*MSJobPasscodeMinLength: ”4”</td>
+<td></em>MSJobPasscodeMinLength: ”4”</td>
 </tr>
 <tr class="even">
-<td><strong>*MSJobPasscodeMaxLength</strong></td>
+<td><strong><em>MSJobPasscodeMaxLength</strong></td>
 <td><p>Maximum length of the supported PIN numeric string.</p>
-<p>This value must be at least 4 and no greater than 15. It must be greater than or equal to the <strong>*MSJobPasscodeMinLength</strong> value.</p></td>
+<p>This value must be at least 4 and no greater than 15. It must be greater than or equal to the <strong></em>MSJobPasscodeMinLength</strong> value.</p></td>
 <td>Root</td>
 <td><p>”int” (QuotedValue)</p>
 <p>In other words, the integer value must be expressed in quotation marks.</p></td>
@@ -130,7 +130,7 @@ You indicate support for protected printing in the DataFile for your v4 print dr
 </tbody>
 </table>
 
- 
+ 
 
 **Specifying hardware constraints**. If you have a device that doesn't support PIN printing without installable hardware such as a hard drive, specify these constraints using either the GPD or PPD file. To do this, you must edit your GPD or PPD file to show the JobPasscode feature and both JobPasscode options (On and Off). The ON/OFF options must set either PrintSchemaKeywordMap or MSPrintSchemaKeywordMap to the appropriate values.
 
@@ -165,13 +165,13 @@ JobPasscode
 -   "On"
 -   "JobPasscode"
 
- 
+ 
 
 **GPD and PPD file examples**
 
 Here's an example of a GPD file specifying JobPasscode with an Installable Hardware Constraint.
 
-```Text
+```GDP
 *%
 *GPDSpecVersion: "1.0"
 *GPDFileVersion: "1.0"
@@ -231,11 +231,11 @@ Here's an example of a GPD file specifying JobPasscode with an Installable Hardw
 
 **Note**  You must use the \*ConcealFromUI keyword and set it to TRUE to prevent the protected printing option from being shown unintentionally. See the preceding GPD file example.
 
- 
+ 
 
 Here's an example of a PPD file specifying JobPasscode with an Installable Hardware Constraint.
 
-```Text
+```PPD
 *MSJobPasscodeMinLength: "4"
 *MSJobPasscodeMaxLength: "15"
 
@@ -266,7 +266,7 @@ As you can see in the preceding PPD file example, the \*UIConstraints keyword in
 
 **Note**  The Windows operating system automatically displays locale-specific strings for the protected printing feature and its associated options. You can't specify a new localized name for this feature or its options.
 
- 
+ 
 
 **XPS rendering filters**
 
@@ -282,12 +282,10 @@ Printer extensions should be able to display a control for protected printing in
 
 Microsoft is also making changes to allow the [**IPrintSchemaTicket**](https://msdn.microsoft.com/library/windows/hardware/hh451398) family of APIs to work with UWP device apps to display a control for protected printing in their print preferences UI.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Driver%20Support%20for%20Protected%20Printing%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

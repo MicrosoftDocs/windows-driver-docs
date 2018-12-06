@@ -2,11 +2,8 @@
 title: Indicating NDIS QoS Parameter Status
 description: Indicating NDIS QoS Parameter Status
 ms.assetid: 7E896BC3-839F-4119-BF79-A7BB4CA61CDA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Indicating NDIS QoS Parameter Status
@@ -24,9 +21,9 @@ A miniport driver that supports NDIS Quality of Service (QoS) for the IEEE 802.1
 
 For more information about operational and remote NDIS QoS parameters, see [Overview of NDIS QoS Parameters](overview-of-ndis-qos-parameters.md).
 
- 
+ 
 
- 
+ 
 
 
 

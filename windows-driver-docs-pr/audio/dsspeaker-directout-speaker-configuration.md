@@ -4,11 +4,8 @@ description: DSSPEAKER_DIRECTOUT Speaker Configuration
 ms.assetid: a4198fb7-157f-40e3-8cca-5a9e392087d2
 keywords:
 - DSSPEAKER_DIRECTOUT speaker configuration WDK audio
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # DSSPEAKER\_DIRECTOUT Speaker Configuration
@@ -19,7 +16,7 @@ ms.technology: windows-devices
 
 **Note**  This information applies to Windows XP and earlier operating systems. Starting with Windows Vista, **IDirectSound::GetSpeakerConfig** and **IDirectSound::SetSpeakerConfig** have been deprecated.
 
- 
+ 
 
 An application program can change the DirectSound speaker configuration to direct-out mode by calling the **IDirectSound::SetSpeakerConfig** method with the speaker-configuration parameter set to DSSPEAKER\_DIRECTOUT (see Microsoft Windows SDK documentation). This specifies a speakerless configuration in which the channels in the playback stream from the application are output directly to the audio adapter without being interpreted as speaker positions. However, the input stream can still be modified by sample-rate conversion, attenuation, filtering, and other types of processing that require no assumptions about the assignment of speakers to channels.
 
@@ -51,7 +48,7 @@ Bass
 
 Piano
 
- 
+ 
 
 For this kind of raw audio data, speaker positions are meaningless, and assigning speaker positions to the input or output streams might cause unwanted side effects. For example, a component such as KMixer might intervene inappropriately by applying speaker-specific effects such as 3D virtualization or Dolby Surround Pro Logic encoding to the stream. Note that the number of raw-data channels is not limited by the number of bits in the channel mask.
 
@@ -83,12 +80,10 @@ An audio authoring application might need to let the user listen to the data tha
 
 KMixer mixes only the stereo channels of the playback stream, which are described in the channel mask, and discards the remaining 22 channels, which contain raw data. Remember that any change made to the DirectSound speaker-configuration setting is unlikely to take effect until the current DirectSound object is destroyed and another is created (see [Applying Speaker-Configuration Settings](applying-speaker-configuration-settings.md)).
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20DSSPEAKER_DIRECTOUT%20Speaker%20Configuration%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

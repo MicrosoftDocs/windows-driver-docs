@@ -8,11 +8,8 @@ keywords:
 - provider characteristics structure WDK Network Module Registrar
 - client dispatch tables WDK Network Module Registrar
 - dispatch tables WDK Network Module Registrar
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Network Programming Interface
@@ -40,9 +37,9 @@ A client module that supports a particular NPI uses the items defined by the NPI
 
 All of the items defined by an NPI are opaque to the NMR except for the NPI identifier. The NMR uses the NPI identifier to determine which client modules should be attached to which provider modules.
 
- 
+ 
 
- 
+ 
 
 
 

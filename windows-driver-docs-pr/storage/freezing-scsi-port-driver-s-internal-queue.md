@@ -1,13 +1,9 @@
 ---
 title: Freezing SCSI Port Driver's Internal Queue
-author: windows-driver-content
 description: Freezing SCSI Port Driver's Internal Queue
 ms.assetid: 8e93b7d4-8429-43ec-a439-75cfeaa95887
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Freezing SCSI Port Driver's Internal Queue
@@ -34,11 +30,10 @@ If the SRB\_FLAGS\_BYPASS\_FROZEN\_QUEUE flag is set in the **SrbFlags** member 
 
 Higher-level drivers can force SCSI Port to unfreeze its queue using a SRB\_FUNCTION\_RELEASE\_QUEUE release queue request. SRB\_FUNCTION\_FLUSH\_QUEUE also unfreezes the queue after canceling all of the queued requests.
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

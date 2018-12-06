@@ -1,6 +1,5 @@
 ---
 title: Accessing PCI Device Configuration Space
-author: windows-driver-content
 description: Accessing PCI Device Configuration Space
 ms.assetid: 05e0ada9-d465-4787-abc5-469a75352ee0
 keywords:
@@ -8,11 +7,8 @@ keywords:
 - configuration space WDK buses
 - IRP_MN_READ_CONFIG
 - IRP_MN_WRITE_CONFIG
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Accessing PCI Device Configuration Space
@@ -36,7 +32,7 @@ In addition, the system should support memory-mapped configuration space accesse
 
 The following code example shows how to query for the power management capability data of a device:
 
-```
+```cpp
 #define LSZ sizeof(ULONG)
 #define HEADERSIZE (FIELD_OFFSET (PCI_COMMON_CONFIG, DeviceSpecific)) / LSZ
 
@@ -153,11 +149,10 @@ BusInterface.GetBusData(Context,
 );
 ```
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

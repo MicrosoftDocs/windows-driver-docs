@@ -2,11 +2,8 @@
 title: Storport Verification
 description: Storport Verification
 ms.assetid: 3731C877-1A69-447C-A5DB-0BDD1B753D3D
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Storport Verification
@@ -19,7 +16,7 @@ The Storport Verification feature monitors the interaction between a Storport mi
 
 **Note**  The Storport Verification feature is only available in Windows Vista and later versions of Windows.
 
- 
+ 
 
 ### <span id="violations_detected_by_storport_verification"></span><span id="VIOLATIONS_DETECTED_BY_STORPORT_VERIFICATION"></span>Violations Detected by Storport Verification
 
@@ -43,7 +40,7 @@ For a list of the bug check parameters that Storport Verification uses, see [**B
 
 **Note**  [**Bug Check 0xF1**](https://msdn.microsoft.com/library/windows/hardware/ff560365) is used for both SCSI Verification and Storport Verification.
 
- 
+ 
 
 ### <span id="activating_this_option"></span><span id="ACTIVATING_THIS_OPTION"></span>Activating This Option
 
@@ -63,11 +60,10 @@ If the **VerifyLevel** value does not exist, or is equal to 0xFFFFFFFF, Storport
 
 In general, you cannot activate or deactivate Storport Verification without restarting (rebooting) the computer on any Windows operating system. The *StorPort.sys* driver reads the **VerifyLevel** registry entry only when it loads, which is typically at boot time. However, if the *StorPort.sys* driver is not loaded when you add the registry entry, or if it is unloaded and reloaded, you can enable Storport Verification on Windows Vista and later versions of Windows without restarting the computer.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20Storport%20Verification%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

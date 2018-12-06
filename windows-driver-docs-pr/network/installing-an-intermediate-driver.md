@@ -6,17 +6,14 @@ keywords:
 - intermediate drivers WDK networking , installation
 - NDIS intermediate drivers WDK , installation
 - installing NDIS intermediate drivers WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installing an Intermediate Driver
 
 
-## <a href="" id="ddk-installing-intermediate-drivers-ng"></a>
+
 
 
 Intermediate drivers require two INF files. One of the INF files defines the installation parameters for the protocol lower edge. The other INF file defines the installation parameters for the virtual miniport upper edge.
@@ -33,7 +30,7 @@ The virtual miniport device is always removed from the user interface by using t
 
 **Note**  The **ExcludeFromSelect** directive does not remove the virtual device from the **Connections** dialog box. However, the NCF\_HIDDEN flag in the miniport driver INF file *DDInstall* section's **Characteristics** entry prevents the virtual miniport from being displayed in any part of the user interface, including the **Connections** dialog box.
 
- 
+ 
 
 This section provides information about intermediate INF files and notify objects. This information is described in the following topics:
 
@@ -43,9 +40,9 @@ This section provides information about intermediate INF files and notify object
 
 [Intermediate Driver Notify Object](intermediate-driver-notify-object.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,15 +1,11 @@
 ---
 title: Constraints on Completion Routines
-author: windows-driver-content
 description: Constraints on Completion Routines
 ms.assetid: 3873fd27-cfa8-414d-9437-c0789b20ff27
 keywords:
 - IRP completion routines WDK file system , constraints
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Constraints on Completion Routines
@@ -58,11 +54,10 @@ A completion routine cannot return STATUS\_MORE\_PROCESSING\_REQUIRED for an opl
 
 -   If a completion routine posts IRPs to a work queue, it must call [**IoMarkIrpPending**](https://msdn.microsoft.com/library/windows/hardware/ff549422) before posting each IRP to the worker queue. Otherwise, the IRP could be dequeued, completed by another driver routine, and freed by the system before the call to **IoMarkIrpPending** occurs, thereby causing a crash.
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

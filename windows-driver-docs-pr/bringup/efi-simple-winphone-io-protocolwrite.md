@@ -1,13 +1,9 @@
 ---
 title: EFI_SIMPLE_WINPHONE_IO_PROTOCOL.Write
-author: windows-driver-content
 description: EFI_SIMPLE_WINPHONE_IO_PROTOCOL.Write
 ms.assetid: 55475573-e904-4adc-91cf-62afe9e67927
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # EFI\_SIMPLE\_WINPHONE\_IO\_PROTOCOL.Write
@@ -20,7 +16,7 @@ This function will block until the requested amount of data is written to the de
 ## Syntax
 
 
-``` syntax
+```cpp
 typedef
 EFI_STATUS
 (EFIAPI * EFI_SIMPLE_WINPHONE_IO_WRITE) (
@@ -88,7 +84,7 @@ The buffer of data to write.
 </tbody>
 </table>
 
- 
+ 
 
 ## Remarks
 
@@ -100,11 +96,10 @@ In case of errors, the transmission will be terminated with the appropriate stat
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

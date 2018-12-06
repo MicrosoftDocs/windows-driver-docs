@@ -5,11 +5,8 @@ ms.assetid: 394f321c-2ce4-4773-b5df-e30ce23b7207
 keywords:
 - finish-install actions WDK device installations
 - class installers WDK device installations , finish-install actions
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Code Example: Finish-Install Actions in a Class Installer
@@ -31,7 +28,7 @@ In this example, a class installer performs the following operations to support 
 
     **Note**  Starting in Windows 8 a finish-install action is only run once. Windows will not automatically run it again, especially not the next time the device is enumerated because that is not when finish-install actions are run.
 
-     
+     
 
 -   If the finish-install actions fail and the class installer determines that the finish-install actions cannot ever succeed, the class installer notifies the user of this situation.
 
@@ -39,11 +36,11 @@ In this example, a class installer performs the following operations to support 
 
     **Note**  Starting in Windows 8 a finish-install action is only run once. Windows will not automatically run it again, especially not the next time the device is enumerated because that is not when finish-install actions are run.
 
-     
+     
 
 The following class installer code example shows the basic structure of class installer code that implements finish-install actions:
 
-```
+```cpp
 DWORD CALLBACK
 SampleClassInstaller(
   IN DI_FUNCTION  InstallFunction,
@@ -117,9 +114,9 @@ SampleClassInstaller(
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

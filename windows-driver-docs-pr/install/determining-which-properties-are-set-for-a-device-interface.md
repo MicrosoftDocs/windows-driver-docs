@@ -2,11 +2,8 @@
 title: Determining Which Properties are Set for a Device Interface
 description: Determining Which Properties are Set for a Device Interface
 ms.assetid: ef261c1d-0715-4501-b2db-fab270cee010
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Determining Which Properties are Set for a Device Interface
@@ -31,9 +28,9 @@ To determine which properties are set for a device interface in Windows Vista an
 
 If the second call to **SetupDiGetDeviceInterfacePropertyKeys** succeeds, **SetupDiGetDeviceInterfacePropertyKeys** returns the requested property key array in the *PropertyKeyArray* buffer, sets \**RequiredPropertyKeyCount* to the number of property keys in the buffer, and returns **TRUE**. If the function call fails, **SetupDiGetDeviceInterfacePropertyKeys** returns **FALSE** and a call to [GetLastError](http://go.microsoft.com/fwlink/p/?linkid=169416) will return the logged error code.
 
- 
+ 
 
- 
+ 
 
 
 

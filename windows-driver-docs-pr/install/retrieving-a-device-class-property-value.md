@@ -2,11 +2,8 @@
 title: Retrieving a Device Class Property Value
 description: Retrieving a Device Class Property Value
 ms.assetid: 50b16bd9-7f38-4128-af8f-8b39b099931f
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Retrieving a Device Class Property Value
@@ -48,9 +45,9 @@ To retrieve a device class property value on a remote computer, follow the same 
 
 -   In addition to supplying the parameter values that **SetupDiGetDevicePropertyEx** and **SetupDiGetClassProperty** both require, supply the *MachineName* parameter, which must be set to a pointer to a NULL-terminated string that contains the UNC name, including the \\\\ prefix, of a computer.
 
- 
+ 
 
- 
+ 
 
 
 

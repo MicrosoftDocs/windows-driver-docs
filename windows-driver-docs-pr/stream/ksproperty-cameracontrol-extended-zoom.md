@@ -11,20 +11,15 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
-ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 09/11/2018
+ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ZOOM
 
+**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ZOOM** is used to control digital zoom. It is defined in the [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ne-ksmedia-ksproperty_cameracontrol_extended_property) enumeration and is used to get and set the zoom ratio and get zoom ranges from the driver. In Windows 10, this control is extended to also support smooth zoom.
 
-**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ZOOM** is used to control digital zoom. It is defined in the [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PROPERT**](https://msdn.microsoft.com/library/windows/hardware/dn917962)Y enumeration and is used to get and set the zoom ratio and get zoom ranges from the driver. In Windows 10, this control is extended to also support smooth zoom.
-
-## <span id="Usage_summary_table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage summary table
-
+## Usage summary table
 
 <table>
 <colgroup>
@@ -48,14 +43,12 @@ ms.technology: windows-devices
 </tbody>
 </table>
 
- 
-
 The following flags can be placed in the **KSCAMERA\_EXTENDEDPROP\_HEADER.Flags** field to control smooth zoom vs. direct zoom. The default is defined by the driver.
 
-``` syntax
-#define KSCAMERA_EXTENDEDPROP_ZOOM_DEFAULT               0x0000000000000000
-#define KSCAMERA_EXTENDEDPROP_ZOOM_DIRECT                0x0000000000000001
-#define KSCAMERA_EXTENDEDPROP_ZOOM_SMOOTH                0x0000000000000002
+```cpp
+#define KSCAMERA_EXTENDEDPROP_ZOOM_DEFAULT  0x0000000000000000
+#define KSCAMERA_EXTENDEDPROP_ZOOM_DIRECT   0x0000000000000001
+#define KSCAMERA_EXTENDEDPROP_ZOOM_SMOOTH   0x0000000000000002
 ```
 
 If the driver supports this control, it must support **KSCAMERA\_EXTENDEDPROP\_ZOOM\_DEFAULT**.
@@ -91,11 +84,9 @@ The following table describes the flag capabilities.
 </tbody>
 </table>
 
- 
-
 For each **GET** call, the driver must report the current zoom ranges allowed based on current configurations or setup.
 
-The following table contains the descriptions and requirements for the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/dn925136) structure fields when using the **KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ZOOM** property.
+The following table contains the descriptions and requirements for the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure fields when using the **KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ZOOM** property.
 
 <table>
 <colgroup>
@@ -119,7 +110,7 @@ The following table contains the descriptions and requirements for the [**KSCAME
 </tr>
 <tr class="odd">
 <td><p>Size</p></td>
-<td><p>This must be sizeof(<strong>KSCAMERA_EXTENDEDPROP_HEADER</strong>)+sizeof([<strong>KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING</strong>](https://msdn.microsoft.com/library/windows/hardware/dn567566)),</p></td>
+<td><p>This must be sizeof(<strong>KSCAMERA_EXTENDEDPROP_HEADER</strong>)+sizeof(<a href="https://msdn.microsoft.com/library/windows/hardware/dn567566" data-raw-source="[&lt;strong&gt;KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn567566)"><strong>KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING</strong></a>),</p></td>
 </tr>
 <tr class="even">
 <td><p>Result</p></td>
@@ -135,8 +126,6 @@ The following table contains the descriptions and requirements for the [**KSCAME
 </tr>
 </tbody>
 </table>
-
- 
 
 The table below contains the descriptions and requirements for the **KSCAMERA\_EXTENDEDPROP\_VIDEOPROCSETTING** structure fields for the **KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ZOOM** property.
 
@@ -171,10 +160,9 @@ The table below contains the descriptions and requirements for the **KSCAMERA\_E
 </tbody>
 </table>
 
- 
+This property control is synchronous and not cancelable.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -188,13 +176,3 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bstream\stream%5D:%20KSPROPERTY_CAMERACONTROL_EXTENDED_ZOOM%20%20RELEASE:%20%2811/22/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
-
-

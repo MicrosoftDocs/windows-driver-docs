@@ -2,11 +2,8 @@
 title: Canceling the NDIS Selective Suspend Idle Notification
 description: Canceling the NDIS Selective Suspend Idle Notification
 ms.assetid: 14C19F15-9D0E-4F37-942C-7F7AFE1EBA0B
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Canceling the NDIS Selective Suspend Idle Notification
@@ -18,17 +15,17 @@ NDIS calls the [*MiniportIdleNotification*](https://msdn.microsoft.com/library/w
 
 -   An overlying protocol or filter driver issues either a send packet request or an object identifier (OID) request to the miniport driver.
 
-    For more information about how NDIS cancels the idle notification for this scenario, see [Canceling the Idle Notification because of Overlying Driver Activity](#cancel-due-to-driver-activity).
+    For more information about how NDIS cancels the idle notification for this scenario, see [Canceling the Idle Notification because of Overlying Driver Activity](#canceling-the-idle-notification-because-of-overlying-driver-activity).
 
 -   The underlying adapter signals a wake-up event, such as receiving a packet or detecting a change in its media connection status.
 
-    For more information about how NDIS cancels the idle notification for this scenario, see [Canceling the Idle Notification because of Wake-up Events](#cancel-due-to-wake-up-events).
+    For more information about how NDIS cancels the idle notification for this scenario, see [Canceling the Idle Notification because of Wake-up Events](#canceling-the-idle-notification-because-of-wake-up-events).
 
 NDIS cancels the idle notification by calling the [*MiniportCancelIdleNotification*](https://msdn.microsoft.com/library/windows/hardware/hh464088) handler function of the underlying miniport driver. When this function is called, the miniport driver must complete the idle notification to resume the adapter to a full-power state. For guidelines on this process, see [Completing the NDIS Selective Suspend Idle Notification](completing-the-ndis-selective-suspend-idle-notification.md).
 
 For more information about how to implement the [*MiniportCancelIdleNotification*](https://msdn.microsoft.com/library/windows/hardware/hh464088) handler function, see [Implementing a *MiniportCancelIdleNotification* Handler Function](implementing-a-miniportcancelidlenotification-handler-function.md).
 
-## <a href="" id="cancel-due-to-driver-activity"></a>Canceling the Idle Notification Because of Overlying Driver Activity
+## Canceling the Idle Notification Because of Overlying Driver Activity
 
 
 NDIS monitors send requests and OID requests that are issued to a miniport driver whose network adapter has been suspended and is in a low-power state. When this happens, NDIS cancels the outstanding idle notification so that the network adapter can resume to a full-power state.
@@ -43,9 +40,7 @@ NDIS and the miniport driver follow these steps when an idle notification is can
 
     2.  When the bus driver cancels the USB idle request IRP, it calls the miniport driver's completion routine for the IRP. This call notifies the driver that the IRP is completed and the network adapter can transition to a full-power state. From the context of the completion routine, the driver calls [**NdisMIdleNotificationComplete**](https://msdn.microsoft.com/library/windows/hardware/hh451491) to notify NDIS that the network adapter can be transitioned to a full-power state.
 
-    **Note**  Depending on the dependencies for canceling bus-specific idle requests, the miniport driver calls [**NdisMIdleNotificationComplete**](https://msdn.microsoft.com/library/windows/hardware/hh451491) either synchronously in the context of the call to [*MiniportCancelIdleNotification*](https://msdn.microsoft.com/library/windows/hardware/hh464088) or asynchronously after *MiniportCancelIdleNotification* returns.
-
-     
+    **Note**  Depending on the dependencies for canceling bus-specific idle requests, the miniport driver calls [**NdisMIdleNotificationComplete**](https://msdn.microsoft.com/library/windows/hardware/hh451491) either synchronously in the context of the call to [*MiniportCancelIdleNotification*](https://msdn.microsoft.com/library/windows/hardware/hh464088) or asynchronously after *MiniportCancelIdleNotification* returns.
 
     For more information about how to implement a USB idle request IRP completion routine, see [Implementing a USB Idle Request IRP Completion Routine](implementing-a-usb-idle-request-irp-completion-routine.md).
 
@@ -63,7 +58,7 @@ The following figure shows the steps that are involved when NDIS cancels an idle
 
 ![diagram showing the idle notification resume process](images/ndis-ss-idle-notification-resume.png)
 
-## <a href="" id="cancel-due-to-wake-up-events"></a>Canceling the Idle Notification Because of Wake-up Events
+## Canceling the Idle Notification Because of Wake-up Events
 
 
 Before the network adapter is transitioned to a low-power state, NDIS issues an OID set request of [OID\_PM\_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/ff569768) to the network adapter. This OID request specifies the types of wake-up events that the adapter can signal to resume to a full-power state. For NDIS selective suspend, the adapter is configured to signal any of the following wake-up events:
@@ -82,9 +77,9 @@ For example, the following figure shows the steps that are involved when NDIS ca
 
 ![diagram showing the idle notification wake-up process](images/ndis-ss-idle-notification-resume-wake.png)
 
- 
 
- 
+
+
 
 
 

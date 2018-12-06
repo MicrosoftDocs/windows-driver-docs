@@ -11,17 +11,14 @@ keywords:
 - connection offload WDK networking
 - chimney offload WDK networking
 - task offload porting WDK networking , type
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # NDIS 6.0 Support for Task Offload
 
 
-## <a href="" id="ddk-ndis-6-0-support-for-task-offload-ng"></a>
+
 
 
 NDIS 6.0 and later support updated versions of the following task offload services, which are provided by NDIS 5.1 and earlier drivers:
@@ -47,9 +44,9 @@ The TCP/IP transport in NDIS 6.0 and later supports task offload for both IPv4 a
 
 Unlike NDIS 5.1 and earlier drivers, NDIS 6.0 and later miniport drivers support task offload in a multiple-protocol driver environment. Multiple NDIS 6.0 and later protocol drivers that are bound to a task offload-capable miniport adapter can configure task offload services.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -6,11 +6,8 @@ keywords:
 - Power Metering and Budgeting WDK , User-Mode Power Service
 - User-Mode Power Service WDK Power Meter
 - UMPS WDK Power Meter
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # User-Mode Power Service
@@ -30,11 +27,10 @@ When UPMS services PMB WMI requests, it calls into the Power Meter Interface (PM
 
 For more information about the PMB WMI classes, see the Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

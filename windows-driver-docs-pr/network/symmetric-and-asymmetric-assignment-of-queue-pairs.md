@@ -2,11 +2,8 @@
 title: Symmetric and Asymmetric Assignment of Queue Pairs
 description: Symmetric and Asymmetric Assignment of Queue Pairs
 ms.assetid: B4BA1567-D536-4E7D-924C-7476FB82DAEB
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Symmetric and Asymmetric Assignment of Queue Pairs
@@ -22,7 +19,7 @@ If the miniport driver supports asymmetric queue pair allocation, the virtualiza
 
 **Note**  A miniport driver that supports either symmetric or asymmetric queue pair allocation on nondefault VPorts must support a different number of queue pairs to be allocated on the default VPort. The default VPort is always attached to the network adapter's PF.
 
- 
+ 
 
 The queue pair configuration is specified when the nondefault VPort is created or updated through OID requests of [OID\_NIC\_SWITCH\_CREATE\_VPORT](https://msdn.microsoft.com/library/windows/hardware/hh451816) and [OID\_NIC\_SWITCH\_VPORT\_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/hh451825). The configuration parameters are specified in an [**NDIS\_NIC\_SWITCH\_VPORT\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/hh451597) structure that is associated with both OID requests.
 
@@ -41,11 +38,11 @@ If the miniport driver does not support asymmetric configuration of queue pairs 
 
 **Note**  Starting with Windows Server 2012, only one default VPort is supported and is always attached to the network adapter's PF.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

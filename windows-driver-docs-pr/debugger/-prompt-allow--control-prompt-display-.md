@@ -3,17 +3,14 @@ title: .prompt_allow (Control Prompt Display)
 description: The .prompt_allow command controls what information is displayed during stepping and tracing and whenever the target's execution stops.
 ms.assetid: 916114f9-0a68-4423-ba28-a5f0da8a1af9
 keywords: [".prompt_allow (Control Prompt Display) Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - .prompt_allow (Control Prompt Display)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .prompt\_allow (Control Prompt Display)
@@ -21,7 +18,7 @@ api_type:
 
 The **.prompt\_allow** command controls what information is displayed during stepping and tracing and whenever the target's execution stops.
 
-```
+```dbgcmd
 .prompt_allow {+|-}Item [...] 
 .prompt_allow 
 ```
@@ -78,7 +75,7 @@ The symbol for the current instruction. This symbol includes the current module,
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -95,7 +92,7 @@ If you have used the l+os option, this option overrides any of the **.prompt\_al
 
 You can also use a complex command such as the following example.
 
-```
+```dbgcmd
 0:000> .prompt_allow -reg -dis +ea 
 Allow the following information to be displayed at the prompt:
 (Other settings can affect whether the information is actually displayed)
@@ -107,11 +104,10 @@ Do not allow the following information to be displayed at the prompt:
    reg - Register state
 ```
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20.prompt_allow%20%28Control%20Prompt%20Display%29%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

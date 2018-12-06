@@ -4,11 +4,8 @@ description: Commercial Test Certificate
 ms.assetid: cedceb0c-d39e-45e2-aa42-62cd7b8bed1c
 keywords:
 - commercial test certificates WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Commercial Test Certificate
@@ -24,9 +21,9 @@ Follow the instructions that are provided by the CA on how to obtain and install
 
 For more information about how to obtain a digital certificate from a CA, see the [Microsoft Root Certificate Program Members](http://go.microsoft.com/fwlink/p/?linkid=16356) website.
 
- 
+ 
 
- 
+ 
 
 
 

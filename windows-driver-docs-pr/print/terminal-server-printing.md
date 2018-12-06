@@ -1,22 +1,18 @@
 ---
 title: Terminal Server Printing
-author: windows-driver-content
 description: Terminal Server Printing
 ms.assetid: 627d05f6-1499-4645-ad9a-b1a09f41b0c9
 keywords:
 - printer drivers WDK , terminal servers
 - terminal server printing WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Terminal Server Printing
 
 
-## <a href="" id="ddk-supporting-printers-on-terminal-servers-gg"></a>
+
 
 
 Microsoft Windows 2000 and later supports Terminal Services, a technology that allows multiple users to connect to a single server system. This server system is called a terminal server. For a detailed discussion of Terminal Services, see the Windows SDK documentation.
@@ -62,7 +58,7 @@ For more information about co-installers and class installers, see [Writing Clas
 
 **Note**   Before writing custom setup code, it is important to read the Terminal Services programming guidelines provided in the Windows SDK documentation.
 
- 
+ 
 
 ### User Interface Considerations
 
@@ -76,12 +72,10 @@ Almost all printer driver code runs in the spooler's execution context and there
 
 All other printer driver code executes in the spooler's context. From this context, calling **MessageBox** or **MessageBoxEx** is allowed, but you must set MB\_SERVICE\_NOTIFICATION. These functions are described in the Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Terminal%20Server%20Printing%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

@@ -1,6 +1,5 @@
 ---
 title: Deferring Interrupt-Driven I/O from HwScsiInterrupt
-author: windows-driver-content
 description: Deferring Interrupt-Driven I/O from HwScsiInterrupt
 ms.assetid: 6bedad0c-8995-4c7b-8ee2-415ec63e0eb3
 keywords:
@@ -8,11 +7,8 @@ keywords:
 - HwScsiInterrupt
 - interrupts WDK SCSI
 - deferred interrupt-driven I/O WDK SCSI
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Deferring Interrupt-Driven I/O from HwScsiInterrupt
@@ -41,11 +37,10 @@ Such a miniport driver's *HwScsiFindAdapter* routine should reset the **MaximumT
 
 Such a miniport driver also might call **ScsiPortNotification** with a miniport driver-supplied *HwScsiTimer* routine. For more information about *HwScsiTimer* routines, which are synchronized with *HwScsiInterrupt* routines, see [SCSI Miniport Driver's HwScsiTimer Routine](scsi-miniport-driver-s-hwscsitimer-routine.md).
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

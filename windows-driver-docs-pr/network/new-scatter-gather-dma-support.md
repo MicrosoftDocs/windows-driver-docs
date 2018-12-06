@@ -6,17 +6,14 @@ keywords:
 - scatter/gather DMA WDK networking
 - miniport drivers WDK networking , scatter/gather DMA
 - NDIS miniport drivers WDK , scatter/gather DMA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # New Scatter/Gather DMA Support
 
 
-## <a href="" id="ddk-new-scatter-gather-dma-support-ng"></a>
+
 
 
 Unlike previous versions of NDIS, NDIS 6.0 passes a send packet to a miniport driver before the packet is mapped for a DMA transfer. After it has obtained the packet, the miniport driver can request NDIS to supply a scatter/gather list for the packet.
@@ -33,9 +30,9 @@ This provides the following benefits:
 
 For more information about NDIS 6.0 scatter/gather DMA, see [NDIS 6.0 Scatter/Gather DMA](ndis-scatter-gather-dma.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Simple Data Evaluation Language Overview
-author: windows-driver-content
 description: WDTF includes a simple query language to simplify the task of collecting targets based on attributes or relationships.
 ms.assetid: 84c2a1d6-6bec-4aeb-b858-c29f50d74390
 keywords:
@@ -16,23 +15,20 @@ keywords:
 - named queries WDK WDTF
 - attributes WDK WDTF
 - Boolean logic WDK WDTF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Simple Data Evaluation Language Overview
 
 
-WDTF includes a simple query language to simplify the task of collecting targets based on attributes or relationships. The Simple Data Evaluation Language (SDEL) is similar to XPath. For more information about XPath, see [XPath Reference](http://go.microsoft.com/fwlink/p/?linkid=33165) in the MSDN Library.
+WDTF includes a simple query language to simplify the task of collecting targets based on attributes or relationships. The Simple Data Evaluation Language (SDEL) is similar to XPath. For more information about XPath, see [XPath Reference](http://go.microsoft.com/fwlink/p/?linkid=33165).
 
 The following sections within this topic describe how you can use SDEL.
 
 **Note**  For a complete list of all namespace tokens and the attribute tokens within them, see [SDEL Tokens](https://msdn.microsoft.com/library/windows/hardware/ff539571).
 
- 
+ 
 
 ### SDEL Syntax Basics
 
@@ -68,7 +64,7 @@ No comparison operation (and no value) specified
 
 If the actual value in the attribute is of type VT\_BOOL, the match is satisfied based on that value--that is, you do not need a comparison operator to do "IsDisableable=True". Otherwise, if there is any value at all (other than VT\_EMPTY), the match is satisfied.
 
- 
+ 
 
 When there is more than one actual value (or an array) in the attribute, all of the comparison operators should be interpreted to match at least one, except the inequality operator, which has the opposite behavior. If the types cannot be compared at all (that is, **VariantChangeType** fails), there is no match (except with the inequality operator, which has the opposite behavior).
 
@@ -78,7 +74,7 @@ SDEL uses namespace tokens to group attributes. For a complete list of all names
 
 To use any attribute that is outside the root namespace, you must prefix the attribute with the namespace name and then two colons (::). The following VBScript code example displays the value of the Disk::IsRemovable attribute.
 
-```
+```cpp
 WScript.Echo "Is Removable?: " & DeviceObj.GetValue("Disk::IsRemovable")
 ```
 
@@ -86,7 +82,7 @@ WScript.Echo "Is Removable?: " & DeviceObj.GetValue("Disk::IsRemovable")
 
 The [**IWDTFTarget2::GetValue**](https://msdn.microsoft.com/library/windows/hardware/hh439403) method lets you ask a target about its attributes. The following VBScript code example prints the value of the [FriendlyName](https://msdn.microsoft.com/library/windows/hardware/ff539571) attribute for a target.
 
-```
+```cpp
 WScript.Echo "FriendlyName: " & Device.GetValue("FriendlyName")
 ```
 
@@ -94,7 +90,7 @@ For a full list of attribute tokens, see [SDEL Tokens](https://msdn.microsoft.co
 
 You can also use the [**IWDTFTarget2::Eval**](https://msdn.microsoft.com/library/windows/hardware/hh439396) method to evaluate an SDEL statement against a target. **Eval** returns **VARIANT\_TRUE** or **VARIANT\_FALSE**. The following VBScript code example uses **Eval** to determine if a device can be disabled.
 
-```
+```cpp
 If Device.Eval("IsDisableable=true") Then 
     WScript.Echo "Target is disableable!"
 End If
@@ -102,7 +98,7 @@ End If
 
 You can also use [**Eval**](https://msdn.microsoft.com/library/windows/hardware/hh439396) to test for the presence of an attribute. When you pass **Eval** an attribute but no comparison operator or value, **Eval** will return **VARIANT\_TRUE** if the attribute or namespace holds any value (other than **VT\_EMPTY**). The following VBScript code example uses **Eval** to determine if the target has a SymbolicLink keyword.
 
-```
+```cpp
 If Device.Eval("SymbolicLink") Then 
     WScript.Echo "Target has a SymbolicLink!"
 End If
@@ -114,13 +110,13 @@ Additionally, attributes that are missing a comparison operator but contain a **
 
 Testing often involves examining what happens when related devices change state. For example, when a USB hub is disabled, do the devices that are attached to it handle the state change properly? Additionally, you might want to locate a device based on information in related devices. To support this functionality, SDEL includes a way to specify one or more logical relationships before any attribute or namespace (but not after either of them). Relation tokens are separated from the attribute or namespace by a forward-slash (/). The following VBScript code example prints the value of the [FriendlyName](https://msdn.microsoft.com/library/windows/hardware/ff539571) attribute for the parent device of a target.
 
-```
+```cpp
 WScript.Echo "FriendlyName: " & Device.GetValue("parent/FriendlyName")
 ```
 
 You can also combine relation modifiers. The following VBScript code example prints the value of the [FriendlyName](https://msdn.microsoft.com/library/windows/hardware/ff539571) attribute of the grandparent device of the target object.
 
-```
+```cpp
 WScript.Echo "FriendlyName: " & Device.GetValue("parent/parent/FriendlyName")
 ```
 
@@ -136,7 +132,7 @@ The following illustration shows the [**IWDTFTarget2::GetRelations**](https://ms
 
 The [**IWDTFTarget2::GetRelations**](https://msdn.microsoft.com/library/windows/hardware/hh439400) method accepts only the relation specifier portion of the SDEL statement syntax and returns an [**IWDTFTargets2**](https://msdn.microsoft.com/library/windows/hardware/hh439458) collection interface that contains all of the targets that meet the relationship criteria. The following VBScript code example returns a collection that contains the original target and all of its siblings.
 
-```
+```cpp
 Set TestDevices = Device.GetRelations("parent/child/", "")
 ```
 
@@ -148,7 +144,7 @@ If there are no matches, a collection with zero items is returned.
 
 The [**IWDTFDeviceDepot2**](https://msdn.microsoft.com/library/windows/hardware/hh406391) interface contains a **Query** method. This method takes an SDEL statement that is designed for the [**IWDTFTarget2::Eval**](https://msdn.microsoft.com/library/windows/hardware/hh439396) method and returns a new instance of the [**IWDTFTargets2**](https://msdn.microsoft.com/library/windows/hardware/hh439458) collection interface that contains a subset of the targets that meet the criteria of the query. The following VBScript code example enumerates all non-phantom devices and shows the friendly name for each device.
 
-```
+```cpp
 For Each Device In WDTF.DeviceDepot.Query("IsPhantom=false")
     WScript.Echo Device.GetValue("FriendlyName")
 Next
@@ -166,13 +162,13 @@ All SDEL statements can use parentheses to specify the evaluation sequence for B
 
 The following VBScript code example retrieves all volumes and children of a grandparent device.
 
-```
+```cpp
 Set Devices = Device.GetRelations("parent/parent/(child/ OR volume/)", "")
 ```
 
 The following VBScript code example retrieves all devices that have a child with removable media that is larger than 1,000,000 bytes.
 
-```
+```cpp
 Set Devices = WDTF.DeviceDepot.Query("child/disk::(IsRemovable=true AND Size>1000000)")
 ```
 
@@ -182,14 +178,12 @@ If you pass an SDEL statement with bad syntax to any of the methods in WDTF, the
 
 **Note**   A misspelled attribute, namespace, or relation token does not cause a syntax error, because SDEL is designed to be dynamic based on the target: SDEL statements must be able to query for the existence of an attribute in a dynamic field set.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bdtf\dtf%5D:%20Simple%20Data%20Evaluation%20Language%20Overview%20%20RELEASE:%20%289/13/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

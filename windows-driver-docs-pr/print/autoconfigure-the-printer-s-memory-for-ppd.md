@@ -1,6 +1,5 @@
 ---
 title: Autoconfigure the Printer's Memory for PPD
-author: windows-driver-content
 description: Autoconfigure the Printer's Memory for PPD
 ms.assetid: 75df1026-896f-4840-a69d-975f813ca636
 keywords:
@@ -9,11 +8,8 @@ keywords:
 - in-box autoconfiguration support WDK printer , memory
 - autoconfiguring printer memory WDK
 - printer memory configurations WDK autoconfiguration
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Autoconfigure the Printer's Memory for PPD
@@ -21,7 +17,7 @@ ms.technology: windows-devices
 
 Add entries to the GDL for memory options specified in the PPD. The first sample is an example excerpt from a PPD file that concerns installable memory options:
 
-```
+```PPD
 *% === Installable Options ===========
 *OpenGroup: InstallableOptions/Options Installed
  
@@ -37,7 +33,7 @@ Add entries to the GDL for memory options specified in the PPD. The first sample
 
 To enable autoconfiguration for the "InstalledMemory" PPD feature, add the following code example to the GDL file.
 
-```
+```GDL
 *% This feature definition merges with the definition in the PPD file
 *% because both have the same name
 *Feature: InstalledMemory
@@ -70,12 +66,10 @@ To enable autoconfiguration for the "InstalledMemory" PPD feature, add the follo
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Autoconfigure%20the%20Printer's%20Memory%20for%20PPD%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

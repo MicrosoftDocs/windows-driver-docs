@@ -1,15 +1,16 @@
 ---
 title: Special Case Mappings
-author: windows-driver-content
 description: Special Case Mappings
 ms.assetid: 1691e0e5-7b05-40e1-8747-40926f2eba9c
 keywords: ["joysticks WDK HID , axes", "virtual joystick drivers WDK HID , axes", "VJoyD WDK HID , axes", "axes WDK joysticks", "special case mappings WDK joysticks", "case mappings WDK joysticks", "Z-axis case mapping WDK joysticks", "car controller case mapping WDK joysticks", "mapping axes"]
+ms.localizationpriority: medium
+ms.date: 10/17/2018
 ---
 
 # Special Case Mappings
 
 
-## <a href="" id="ddk-special-case-mappings-di"></a>
+
 
 
 Because of the complexity and variety of input devices available today, no single set of mappings can be used for all types of devices. DirectInput supports two special cases that are described in this section.
@@ -57,7 +58,7 @@ In the rare cases where a Z-Axis described in HID is the desired WinMM mapping, 
 </tbody>
 </table>
 
- 
+
 
 If the device is not a six-degree-of-freedom device, but still requires a Z-axis to be portrayed through DirectInput, the type override should be set to include JOYTYPE\_INFOZISZ. This type override causes DirectInput to revert to the DirectX 7.0 mapping.
 
@@ -67,7 +68,7 @@ The default mapping for devices reporting through HID has not changed except tha
 
 Another set of special-case mappings are those needed for car controllers that declare more than two axes. Unfortunately, there is little consistency within the industry in this area. There presently exist three common ways to represent separate accelerator and brake pedals. DirectInput attempts to detect which method a car controller is using with logic similar to that shown in the following pseudocode:
 
-```
+```cpp
     if( has_r and has_Z )
         use mappings:
         X => GUID_XAxis
@@ -175,10 +176,12 @@ The following interfaces are affected by axis overrides:
         </tbody>
         </table>
 
-         
 
-    -   Under each Axis key specify the Axis that you want to override. Create a binary value named **Attributes** and set it to: 00 00 00 00 HUP 00 HU 00. HUP is a two-digit hexadecimal number specifying the HID usage page of the device object (axis) that you want to override. HU is a two-digit hexadecimal number specifying the HID usage of the device object. Use DIQuick to determine these values, or see the HID specification.
-    -   Plug the device back in and use any program to check whether the overrides work.
+
+
+-   Under each Axis key specify the Axis that you want to override. Create a binary value named **Attributes** and set it to: 00 00 00 00 HUP 00 HU 00. HUP is a two-digit hexadecimal number specifying the HID usage page of the device object (axis) that you want to override. HU is a two-digit hexadecimal number specifying the HID usage of the device object. Use DIQuick to determine these values, or see the HID specification.
+-   Plug the device back in and use any program to check whether the overrides work.
+
 
 ### Meaning of the registry keys
 
@@ -229,12 +232,10 @@ Any mapping that does not fall within the following rules is unsupported.
 
 If the device does not use joyhid.vxd as its driver, the wUsage and wUsagePage values are only used to describe what usage and usage page the object should be reported as, rather than being any form of override. The device uses joyhid.vxd only if the registry key HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\MediaProperties\\PrivateProperties\\Joystick\\OEM\\VID&PID\\OEMCallout equals joyhid.vxd.
 
- 
-
- 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bhid\hid%5D:%20Special%20Case%20Mappings%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
+
 
 

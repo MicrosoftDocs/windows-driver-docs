@@ -1,13 +1,9 @@
 ---
 title: SerCx2 System-DMA-Receive Transactions
-author: windows-driver-content
 description: Some serial controller drivers implement support for receive transactions that use the system DMA controller.
 ms.assetid: 0374D1BE-96ED-43D6-8661-5E9676B82C0D
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # SerCx2 System-DMA-Receive Transactions
@@ -68,16 +64,14 @@ To detect a possible interval time-out, SerCx2 periodically calls the [**ReadDma
 
 **Note**  SerCx2 relies on the **ReadDmaCounter** routine of the system DMA adapter to monitor time-outs during system-DMA-receive transactions and system-DMA-transmit transactions. The hardware abstraction layer (HAL) must implement a fully functional **ReadDmaCounter** routine for the system DMA controller used to transfer data to and from the serial controller.
 
- 
+ 
 
 A serial controller driver that supports new-data notifications for system-DMA-receive transactions must implement an [*EvtSerCx2SystemDmaReceiveCancelNewDataNotification*](https://msdn.microsoft.com/library/windows/hardware/dn265228) event callback function so that SerCx2 can cancel a enabled new-data notification before it occurs. If a new-data notification is enabled when the pending read request is canceled, or when a total time-out occurs, SerCx2 calls the *EvtSerCx2SystemDmaReceiveCancelNewDataNotification* function to cancel the notification. If this function successfully cancels the pending notification, it returns **TRUE**. A return value of **TRUE** guarantees that the serial controller driver will not call **SerCx2SystemDmaReceiveNewDataNotification**. A return value of **FALSE** indicates that the driver has called or will soon call **SerCx2SystemDmaReceiveNewDataNotification**. For more information about total time-outs, see [**SERIAL\_TIMEOUTS**](https://msdn.microsoft.com/library/windows/hardware/hh439614).
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bserports\serports%5D:%20SerCx2%20System-DMA-Receive%20Transactions%20%20RELEASE:%20%288/4/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

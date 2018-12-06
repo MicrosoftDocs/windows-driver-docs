@@ -3,17 +3,14 @@ title: Bug Check 0x9C MACHINE_CHECK_EXCEPTION
 description: The MACHINE_CHECK_EXCEPTION bug check has a value of 0x0000009C. This bug check indicates that a fatal machine check exception has occurred.
 ms.assetid: b8945dba-c515-4a30-a36c-ef4feaadabbe
 keywords: ["Bug Check 0x9C MACHINE_CHECK_EXCEPTION", "MACHINE_CHECK_EXCEPTION"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - MACHINE_CHECK_EXCEPTION
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x9C: MACHINE\_CHECK\_EXCEPTION
@@ -21,7 +18,7 @@ api_type:
 
 The MACHINE\_CHECK\_EXCEPTION bug check has a value of 0x0000009C. This bug check indicates that a fatal machine check exception has occurred.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## MACHINE\_CHECK\_EXCEPTION Parameters
 
@@ -61,7 +58,7 @@ If the processor is based on an older x86-based architecture and has the Machine
 </tbody>
 </table>
 
- 
+ 
 
 If the processor is based on a newer x86-based architecture and has the MCA feature and the MCE feature (for example, any Intel Processor of family 6 or higher, such as Pentium Pro, Pentium IV, or Xeon), or if the processor is an x64-based processor, the parameters have the following meaning.
 
@@ -96,13 +93,13 @@ If the processor is based on a newer x86-based architecture and has the MCA feat
 </tbody>
 </table>
 
- 
+ 
 
 On an Itanium-based processor, the parameters have the following meaning.
 
 **Note**  Parameter 1 indicates the type of violation.
 
- 
+ 
 
 <table>
 <colgroup>
@@ -192,7 +189,7 @@ On an Itanium-based processor, the parameters have the following meaning.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -206,9 +203,9 @@ For other circumstances, this bug check has been replaced with [**bug Check 0x12
 
 For more information about Machine Check Architecture (MCA), see the Intel or AMD Web sites.
 
- 
+ 
 
- 
+ 
 
 
 

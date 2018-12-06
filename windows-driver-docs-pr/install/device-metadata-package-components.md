@@ -2,11 +2,8 @@
 title: Device Metadata Package Structure
 description: Device Metadata Package Structure
 ms.assetid: 37614100-0a56-4a32-8e45-3161994e503a
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Device Metadata Package Structure
@@ -34,15 +31,17 @@ When you create a device metadata package, XML documents and icon files are stor
 
 -   The WindowsInformation subdirectory contains the [WindowsInfo XML document](windowsinfo-xml-document.md). The name of the XML document must be WindowsInfo.xml.
 
--   The DeviceStage subdirectory contains the specific files that are used by Windows Device Stage™ to present the Device Stage experience. Device Stage is a rich platform for developing and distributing device-specific experiences. With Device Stage, a device maker can create experiences that match the branding, functionality, and services of its device by defining only a few XML files and graphics.
+-   The DeviceStage subdirectory contains the specific files that are used by Windows Device Stage to present the Device Stage experience. Device Stage is a rich platform for developing and distributing device-specific experiences. With Device Stage, a device maker can create experiences that match the branding, functionality, and services of its device by defining only a few XML files and graphics.
 
     If the device maker uses the Device Stage experience for the device, Windows requires the DeviceStage directory to be in the device metadata package. Otherwise, Windows ignores the directory if it is in the package.
 
-    **Note**  Device Stage is supported for a limited number of device classes.
+    **Note**  Device Stage is supported for a limited number of device classes.
 
-     
 
-    More information about Windows Device Experience, Device Stage, and the Device Stage XML schema can be found in the [Microsoft Device Experience Development Kit](http://go.microsoft.com/fwlink/p/?linkid=192621).
+
+
+More information about Windows Device Experience, Device Stage, and the Device Stage XML schema can be found in the [Microsoft Device Experience Development Kit](http://go.microsoft.com/fwlink/p/?linkid=192621).
+
 
 When you create a device metadata package, you should follow these guidelines:
 
@@ -52,9 +51,9 @@ When you create a device metadata package, you should follow these guidelines:
 
 Starting with the Windows 7 version of the Windows Driver Kit (WDK), the [Toaster Sample](http://go.microsoft.com/fwlink/p/?linkid=256195) provides a sample device metadata package. The XML documents for this package are located in the *src\\general\\toaster\\devicemetadatapackage* subdirectory of the WDK.
 
- 
 
- 
+
+
 
 
 

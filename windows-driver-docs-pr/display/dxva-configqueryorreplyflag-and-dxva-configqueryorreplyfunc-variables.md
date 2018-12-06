@@ -17,11 +17,8 @@ keywords:
 - locking configurations WDK DirectX VA
 - probing configurations WDK DirectX VA
 - configuration probing and locking WDK DirectX VA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # DXVA\_ConfigQueryOrReplyFlag and DXVA\_ConfigQueryorReplyFunc Variables
@@ -83,7 +80,7 @@ The most significant 20 bits of the *DXVA\_ConfigQueryOrReplyFlag* variable spec
 </tbody>
 </table>
 
- 
+ 
 
 The least significant 4 bits of the *DXVA\_ConfigQueryOrReplyFlag* variable specify the following status indicators for queries and responses.
 
@@ -118,7 +115,7 @@ The least significant 4 bits of the *DXVA\_ConfigQueryOrReplyFlag* variable spec
 </tbody>
 </table>
 
- 
+ 
 
 The least significant 8 bits of the **dwFunction** member is the is the *bDXVA\_Func* variable. The *bDXVA\_Func* variable, when used with *DXVA\_ConfigQueryorReplyFunc*, indicates probing and locking operations and specifies an associated configuration function.
 
@@ -150,11 +147,10 @@ The least significant 8 bits of the *DXVA\_EncryptProtocolFunc* DWORD variable c
 
 When *bDXVA\_Func* is used to signal an actual operation to be performed (compressed picture decoding, alpha-blend data loading, alpha-blend combination, or picture resampling), *bDXVA\_Func* is conveyed to the accelerator by inclusion in a series of *bDXVA\_Func* byte values in the **dwFunction** member of a [**DD\_RENDERMOCOMPDATA**](https://msdn.microsoft.com/library/windows/hardware/ff551693) structure in a call to [*DdMoCompRender*](https://msdn.microsoft.com/library/windows/hardware/ff550248). The first *bDXVA\_Func* operation is specified in the most significant byte, the next operation is specified in the next most significant byte, and so on. Any remaining bytes of **dwFunction** are set to zero.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20DXVA_ConfigQueryOrReplyFlag%20and%20DXVA_ConfigQueryorReplyFunc%20Variables%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

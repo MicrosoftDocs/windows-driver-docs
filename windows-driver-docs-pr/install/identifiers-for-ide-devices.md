@@ -11,17 +11,14 @@ keywords:
 - hardware IDs WDK device installations
 - compatible IDs WDK device installations
 - integrated device electronics identifiers WDK device installations
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Identifiers for IDE Devices
 
 
-## <a href="" id="ddk-identifiers-for-ide-devices-dg"></a>
+
 
 
 Identifiers for integrated device electronics (IDE) devices resemble SCSI identifiers. The device ID format is as follows:
@@ -30,11 +27,11 @@ IDE\\t\*v(40)r(8)
 
 Where:
 
--   *t\** is a device-type code of variable length.
+- *t\** is a device-type code of variable length.
 
--   *v(40)* is a string that contains the vendor name, an underscore, vendor's product name, and enough underscores to bring the total to 40 characters.
+- *v(40)* is a string that contains the vendor name, an underscore, vendor's product name, and enough underscores to bring the total to 40 characters.
 
--   *r(8)* is an 8-character revision number.
+- *r(8)* is an 8-character revision number.
 
 There are three hardware IDs, in addition to the device ID:
 
@@ -131,7 +128,7 @@ As in the SCSI case, there is only one compatible ID, a generic type name simila
 </tbody>
 </table>
 
- 
+ 
 
 For IDE changer devices, the generic type name is **GenChanger** instead of **ScsiChanger** and for communication devices the generic type name is **GenNet** instead of **ScsiNet**. The SCSI Port driver returns no generic name at all for sequential access and "processor" devices, whereas the IDE bus driver returns **GenSequential** and **GenProcessor**. Also, the IDE bus driver returns only ten generic types, whereas the SCSI Port driver currently returns eighteen. In other respects, the generic names returned by the IDE bus driver are the same as those returned by the SCSI Port driver.
 
@@ -155,9 +152,9 @@ Maxtor_91000D8__________________________SASX1B18
 
 GenDisk
 
- 
+ 
 
- 
+ 
 
 
 

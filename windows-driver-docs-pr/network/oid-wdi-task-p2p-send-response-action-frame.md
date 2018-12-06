@@ -1,15 +1,11 @@
 ---
 title: OID_WDI_TASK_P2P_SEND_RESPONSE_ACTION_FRAME
-author: windows-driver-content
 description: OID_WDI_TASK_P2P_SEND_RESPONSE_ACTION_FRAME is issued to the IHV component to send a Wi-Fi Direct Public Action Frame Request to a peer.
 ms.assetid: 5cb57f20-ef9d-4e79-9b4b-8cf939221d47
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
 keywords:
  - OID_WDI_TASK_P2P_SEND_RESPONSE_ACTION_FRAME Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # OID\_WDI\_TASK\_P2P\_SEND\_RESPONSE\_ACTION\_FRAME
@@ -21,7 +17,7 @@ OID\_WDI\_TASK\_P2P\_SEND\_RESPONSE\_ACTION\_FRAME is issued to the IHV componen
 |--------|---------------------------------------------------------|---------------------------------------|---------------------------------|
 | Port   | Yes. The port must be in a clean state after the abort. | 3                                     | 5                               |
 
- 
+ 
 
 When port receives an acknowledgment for a request frame, it shall dwell on the same channel for 100ms and indicate any Wi-Fi Direct Public Action Frames it receives to the host.
 
@@ -36,7 +32,7 @@ While the maximum timeout has not expired, the port shall retry sending the Wi-F
 | Invitation Response          | Local Listen or Local GO Operational Channel          |
 | Provision Discovery Response | Local Listen Channel or Remote GO Operational Channel |
 
- 
+ 
 
 The task is complete either when local device receives an acknowledgment from the remote device for the action frame that was sent, the timeout expires, or the host aborts the operation. The device may indicate task completion after the same-channel dwell time has expired.
 
@@ -55,7 +51,7 @@ The host may decide to abort this operation and continue/retry the Wi-Fi Direct 
 | [**WDI\_TLV\_P2P\_INCOMING\_FRAME\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/dn897957)                |                                |          | Information that was indicated from the previously received P2P Action Frame. The received indication is provided back to the port.            |
 | [**WDI\_TLV\_VENDOR\_SPECIFIC\_IE**](https://msdn.microsoft.com/library/windows/hardware/dn898076)                                         |                                | X        | One or more IEs that must be included in the frame sent by the port.                                                                           |
 
- 
+ 
 
 ## Task completion indication
 
@@ -85,12 +81,10 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_WDI_TASK_P2P_SEND_RESPONSE_ACTION_FRAME%20%20RELEASE:%20%286/30/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

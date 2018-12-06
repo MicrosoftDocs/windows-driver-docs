@@ -1,13 +1,9 @@
 ---
 title: ACPI button device
-author: windows-driver-content
 description: The generic button device is a standard device for reporting button events through hardware interrupts.
 ms.assetid: 8FC78CE5-CBE6-479C-9373-1D8189E263B2
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # ACPI button device
@@ -29,11 +25,11 @@ For more information about the generic button device, visit the [Unified Extensi
 ## <a href="" id="acpi-button-phone"></a>Sample buttons ACPI for phone/tablet
 
 
-Example for describing buttons in ACPI for phone/tablet device running Windows 10 Mobile.
+Example for describing buttons in ACPI for phone/tablet device running Windows 10 Mobile.
 
-```
+```cpp
 // Sample Buttons ACPI for Phone/Tablet device running Windows 10 Mobile.
- 
+
 Device(BTNS)
 {
     Name(_HID, "ACPI0011")
@@ -118,7 +114,7 @@ Device(BTNS)
         }
     })
 }
- 
+
 //
 // This HID Report Descriptor describes a 1-byte input report for the 8
 // buttons supported on Windows 10 Mobile. Following are the buttons and
@@ -140,18 +136,18 @@ Device(BTNS)
 // whether the corresponding Control (i.e. button) should be Enabled (1)
 // or Disabled (0).
 //
- 
+
 UCHAR ReportDescriptor[] = {
- 
+
     15, 00,         // LOGICAL_MINIMUM (0)
     25, 01,         // LOGICAL_MAXIMUM (1)
     75, 01,         // REPORT_SIZE (1)
-    
+
     06, 01,         // USAGE_PAGE (Generic Desktop)
     0A, 0D,         // USAGE (Portable Device Control)
     A1, 01,         // COLLECTION (Application)
     85, 01,         //   REPORT_ID (1) (For Input Report & Feature Report)
-    
+
     06, 01,         //   USAGE_PAGE (Generic Desktop)
     0A, 0D,         //   USAGE (Portable Device Control)
     A1, 02,         //   COLLECTION (Logical)
@@ -164,7 +160,7 @@ UCHAR ReportDescriptor[] = {
     95, 01,         //     REPORT_COUNT (1)
     B1, 02,         //     FEATURE (Data,Var,Abs)
     C0,             //     END_COLLECTION
-    
+
     06, 01,         //   USAGE_PAGE (Generic Desktop)
     0A, 0D,         //   USAGE (Portable Device Control)
     A1, 02,         //   COLLECTION (Logical)
@@ -177,7 +173,7 @@ UCHAR ReportDescriptor[] = {
     95, 01,         //     REPORT_COUNT (1)
     B1, 02,         //     FEATURE (Data,Var,Abs)
     C0,             //     END_COLLECTION
-    
+
     06, 01,         //   USAGE_PAGE (Generic Desktop)
     0A, 0D,         //   USAGE (Portable Device Control)
     A1, 02,         //   COLLECTION (Logical)
@@ -190,7 +186,7 @@ UCHAR ReportDescriptor[] = {
     95, 01,         //     REPORT_COUNT (1)
     B1, 02,         //     FEATURE (Data,Var,Abs)
     C0,             //     END_COLLECTION
-    
+
     06, 01,         //   USAGE_PAGE (Generic Desktop)
     0A, 0D,         //   USAGE (Portable Device Control)
     A1, 02,         //   COLLECTION (Logical)
@@ -203,7 +199,7 @@ UCHAR ReportDescriptor[] = {
     95, 01,         //     REPORT_COUNT (1)
     B1, 02,         //     FEATURE (Data,Var,Abs)
     C0,             //     END_COLLECTION
-    
+
     06, 01,         //   USAGE_PAGE (Generic Desktop)
     0A, 0D,         //   USAGE (Portable Device Control)
     A1, 02,         //   COLLECTION (Logical)
@@ -216,7 +212,7 @@ UCHAR ReportDescriptor[] = {
     95, 01,         //     REPORT_COUNT (1)
     B1, 02,         //     FEATURE (Data,Var,Abs)
     C0,             //     END_COLLECTION
-    
+
     06, 01,         //   USAGE_PAGE (Generic Desktop)
     0A, 0D,         //   USAGE (Portable Device Control)
     A1, 02,         //   COLLECTION (Logical)
@@ -229,7 +225,7 @@ UCHAR ReportDescriptor[] = {
     95, 01,         //     REPORT_COUNT (1)
     B1, 02,         //     FEATURE (Data,Var,Abs)
     C0,             //     END_COLLECTION
-    
+
     06, 01,         //   USAGE_PAGE (Generic Desktop)
     0A, 0D,         //   USAGE (Portable Device Control)
     A1, 02,         //   COLLECTION (Logical)
@@ -242,7 +238,7 @@ UCHAR ReportDescriptor[] = {
     95, 01,         //     REPORT_COUNT (1)
     B1, 02,         //     FEATURE (Data,Var,Abs)
     C0,             //     END_COLLECTION
-    
+
     06, 01,         //   USAGE_PAGE (Generic Desktop)
     0A, 0D,         //   USAGE (Portable Device Control)
     A1, 02,         //   COLLECTION (Logical)
@@ -255,11 +251,11 @@ UCHAR ReportDescriptor[] = {
     95, 01,         //     REPORT_COUNT (1)
     B1, 02,         //     FEATURE (Data,Var,Abs)
     C0,             //     END_COLLECTION
-    
+
     C0              //  END_COLLECTION
 };
- 
- 
+
+
 //
 // This HID Report Descriptor describes a 1-byte Input Report for the 3
 // Headset buttons supported on Windows 10 Mobile. Following are the
@@ -273,7 +269,7 @@ UCHAR ReportDescriptor[] = {
 //     Bit 6: Unused
 //     Bit 7: Unused
 //
- 
+
 UCHAR ReportDescriptor[] = {
     0x05, 0x01,         // USAGE_PAGE (Generic Desktop Controls)
     0x09, 0x0D,         // USAGE (Portable Device Buttons)
@@ -297,9 +293,9 @@ UCHAR ReportDescriptor[] = {
 ## <a href="" id="acpi-button-desktop"></a>Sample buttons ACPI for desktop
 
 
-Example for describing buttons in ACPI for phone/tablet device running Windows 10 for desktop editions (Home, Pro, Enterprise, and Education).
+Example for describing buttons in ACPI for phone/tablet device running Windows 10 for desktop editions (Home, Pro, Enterprise, and Education).
 
-```
+```cpp
 Device(BTNS)
 {
     Name(_HID, "ACPI0011")
@@ -360,7 +356,7 @@ Device(BTNS)
         }
     })
 }
- 
+
 //
 // This HID Report Descriptor describes a 1-byte input report for the 5
 // buttons supported on Windows 10 for desktop editions (Home, Pro, and Enterprise). Following are the buttons and
@@ -382,18 +378,18 @@ Device(BTNS)
 // whether the corresponding Control (i.e. button) should be Enabled (1)
 // or Disabled (0).
 //
- 
+
 UCHAR ReportDescriptor[] = {
- 
+
     15, 00,         // LOGICAL_MINIMUM (0)
     25, 01,         // LOGICAL_MAXIMUM (1)
     75, 01,         // REPORT_SIZE (1)
-    
+
     06, 01,         // USAGE_PAGE (Generic Desktop)
     0A, 0D,         // USAGE (Portable Device Control)
     A1, 01,         // COLLECTION (Application)
     85, 01,         //   REPORT_ID (1) (For Input Report & Feature Report)
-    
+
     06, 01,         //   USAGE_PAGE (Generic Desktop)
     0A, 0D,         //   USAGE (Portable Device Control)
     A1, 02,         //   COLLECTION (Logical)
@@ -406,7 +402,7 @@ UCHAR ReportDescriptor[] = {
     95, 01,         //     REPORT_COUNT (1)
     B1, 02,         //     FEATURE (Data,Var,Abs)
     C0,             //     END_COLLECTION
-    
+
     06, 01,         //   USAGE_PAGE (Generic Desktop)
     0A, 0D,         //   USAGE (Portable Device Control)
     A1, 02,         //   COLLECTION (Logical)
@@ -419,7 +415,7 @@ UCHAR ReportDescriptor[] = {
     95, 01,         //     REPORT_COUNT (1)
     B1, 02,         //     FEATURE (Data,Var,Abs)
     C0,             //     END_COLLECTION
-    
+
     06, 01,         //   USAGE_PAGE (Generic Desktop)
     0A, 0D,         //   USAGE (Portable Device Control)
     A1, 02,         //   COLLECTION (Logical)
@@ -432,7 +428,7 @@ UCHAR ReportDescriptor[] = {
     95, 01,         //     REPORT_COUNT (1)
     B1, 02,         //     FEATURE (Data,Var,Abs)
     C0,             //     END_COLLECTION
-    
+
     06, 01,         //   USAGE_PAGE (Generic Desktop)
     0A, 0D,         //   USAGE (Portable Device Control)
     A1, 02,         //   COLLECTION (Logical)
@@ -445,7 +441,7 @@ UCHAR ReportDescriptor[] = {
     95, 01,         //     REPORT_COUNT (1)
     B1, 02,         //     FEATURE (Data,Var,Abs)
     C0,             //     END_COLLECTION
-    
+
     06, 01,         //   USAGE_PAGE (Generic Desktop)
     0A, 0D,         //   USAGE (Portable Device Control)
     A1, 02,         //   COLLECTION (Logical)
@@ -462,18 +458,15 @@ UCHAR ReportDescriptor[] = {
     95, 06,         //     REPORT_COUNT (3)                     // 3 unused bits in 8-bit Feature Report
     B1, 03,         //     FEATURE (Cnst,Var,Abs)
     C0,             //     END_COLLECTION
-    
+
     C0              //  END_COLLECTION
 };
- 
 ```
 
- 
-
- 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bhid\hid%5D:%20ACPI%20button%20device%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
+
 
 

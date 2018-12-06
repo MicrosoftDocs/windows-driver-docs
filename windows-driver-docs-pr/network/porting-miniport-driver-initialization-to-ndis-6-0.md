@@ -7,17 +7,14 @@ keywords:
 - miniport drivers WDK networking , initializing
 - NDIS miniport drivers WDK , initializing
 - initializing miniport drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Porting Miniport Driver Initialization to NDIS 6.0
 
 
-## <a href="" id="ddk-porting-miniport-driver-initialization-to-ndis-6-0-ng"></a>
+
 
 
 To support NDIS 6.0, update the miniport driver's [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff544113) routine and the driver entry points in the [**NDIS\_MINIPORT\_DRIVER\_CHARACTERISTICS**](https://msdn.microsoft.com/library/windows/hardware/ff565958) structure. There is also a mechanism specific to NDIS 6.0 for registering optional entry points. The following topics provide more information about porting miniport driver initialization:
@@ -28,9 +25,9 @@ To support NDIS 6.0, update the miniport driver's [**DriverEntry**](https://msdn
 
 [Registering Optional NDIS 6.0 Entry Points for Miniport Drivers](registering-optional-ndis-6-0-entry-points-for-miniport-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

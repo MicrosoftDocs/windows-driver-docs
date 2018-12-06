@@ -1,13 +1,9 @@
 ---
 title: Device update methods
-author: windows-driver-content
 ms.assetid: EB5158D7-6ACA-42BB-89E2-0937EAB94BA2
 description: Methods supported by the sensor driver to update the sensor device.
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Device update methods
@@ -26,7 +22,7 @@ A sensor driver supports methods that update the sensor device. The pseudocode d
 
 The **DriverUpdateDeviceCRI**, **DriverUpdateDeviceCS**, and **DriverUpdateDeviceLDA** methods demonstrate how a driver updates the current report interval, change sensitivity, and location data accuracy fields on the device.
 
-```ManagedCPlusPlus
+```cpp
 effectiveCRI DriverUpdateDeviceCRI(sensorID, requestedCRI)
 {
     if (sensor device is intelligent (ex. HID))
@@ -50,7 +46,7 @@ effectiveCRI DriverUpdateDeviceCRI(sensorID, requestedCRI)
 }
 ```
 
-```ManagedCPlusPlus
+```cpp
 effectiveCS[] DriverUpdateDeviceCS(sensorID, requestedCSs)
 {
     if (sensor device is intelligent (ex. HID))
@@ -74,7 +70,7 @@ effectiveCS[] DriverUpdateDeviceCS(sensorID, requestedCSs)
 }
 ```
 
-```ManagedCPlusPlus
+```cpp
 effectiveLDA DriverUpdateDeviceLDA(sensorID, requestedLDA)
 {
     if (sensor device is intelligent (ex. HID))
@@ -103,7 +99,7 @@ effectiveLDA DriverUpdateDeviceLDA(sensorID, requestedLDA)
 
 The **DriverUpdateDeviceRS** method demonstrates how a driver enables or disables interrupts on the device.
 
-```ManagedCPlusPlus
+```cpp
 effectiveRS DriverUpdateDeviceRS(sensorID, requestedRS)
 {
     if (sensor device is intelligent (ex. HID))
@@ -139,7 +135,7 @@ effectiveRS DriverUpdateDeviceRS(sensorID, requestedRS)
 
 The **DriverUpdateDevicePS** method demonstrates how a driver sets the power state on the device.
 
-```ManagedCPlusPlus
+```cpp
 effectivePS DriverUpdateDevicePS(sensorID, requestedPS)
 {
     if (sensor device is intelligent (ex. HID))
@@ -164,9 +160,7 @@ effectivePS DriverUpdateDevicePS(sensorID, requestedPS)
 ```
 
 ## Related topics
-[Sensor Driver Development Basics](sensor-driver-development-basics.md)  
+[Sensor Driver Development Basics](sensor-driver-development-basics.md)
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bsensors\sensors%5D:%20Device%20update%20methods%20%20RELEASE:%20%281/12/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

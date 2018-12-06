@@ -6,18 +6,15 @@ keywords:
 - UDP-encapsulated ESP packets WDK IPsec offload , transversing NATs and NAPTs
 - network address translators WDK IPsec offload
 - network address port translators WDK IPsec offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Traversing NATs and NAPTs with UDP-Encapsulated ESP Packets
 
 \[The IPsec Task Offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-traversing-nats-and-napts-with-udp-encapsulated-esp-packets-ng"></a>
+
 
 
 Network address translators (NATs) and network address port translators (NAPTs) convert multiple private network addresses into one routeable IP public address and vice versa, thereby allowing many systems to share a single IP address. In this way, NATs and NAPTs help to alleviate the shortage of routeable IPv4 addresses.
@@ -46,9 +43,9 @@ To support UDP-ESP encapsulation, a miniport driver or the NIC (or both) must:
     -   [OID\_TCP\_TASK\_IPSEC\_ADD\_UDPESP\_SA](https://msdn.microsoft.com/library/windows/hardware/ff569809)
     -   [OID\_TCP\_TASK\_IPSEC\_DELETE\_UDPESP\_SA](https://msdn.microsoft.com/library/windows/hardware/ff569811)
 
- 
+ 
 
- 
+ 
 
 
 

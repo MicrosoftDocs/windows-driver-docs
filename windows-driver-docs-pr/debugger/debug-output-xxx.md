@@ -2,11 +2,7 @@
 title: DEBUG\_OUTPUT\_XXX
 description: The DEBUG\_OUTPUT\_XXX constants are output flags. The output flags form a bit field that indicates the type of the output that accompanies them.
 ms.assetid: 0c500a2e-0817-45de-8607-4cd4a29d5813
-ms.author: windowsdriverdev
-ms.date: 12/07/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 11/13/2018
 topic_type:
 - apiref
 api_name:
@@ -20,10 +16,12 @@ api_name:
 - DEBUG_OUTPUT_DEBUGGEE
 - DEBUG_OUTPUT_DEBUGGEE_PROMPT
 - DEBUG_OUTPUT_SYMBOLS
+- DEBUG_OUTPUT_STATUS
 api_location:
 - DbgEng.h
 api_type:
 - HeaderDef
+ms.localizationpriority: medium
 ---
 
 # DEBUG\_OUTPUT\_XXX
@@ -95,6 +93,11 @@ The possible values include the following.
 <strong>DEBUG_OUTPUT_SYMBOLS</strong></td>
 <td align="left"><p>Symbol messages (for example, <strong>!sym noisy</strong>).</p></td>
 </tr>
+<tr class="odd">
+<td align="left"><span id="DEBUG_OUTPUT_STATUS "></span><span id="debug_output_status"></span>
+<strong>DEBUG_OUTPUT_STATUS </strong></td>
+<td align="left"><p>Output which modifies the status bar.</p></td>
+</tr>
 </tbody>
 </table>
 
@@ -114,11 +117,10 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20DEBUG_OUTPUT_XXX%20%20RELEASE:%20%2811/30/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

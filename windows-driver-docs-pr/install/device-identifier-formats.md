@@ -2,11 +2,8 @@
 title: Device Identifier Formats
 description: Device Identifier Formats
 ms.assetid: 66bb8c0d-114e-4eea-98f0-d606ba4e7148
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Device Identifier Formats
@@ -32,9 +29,9 @@ This section contains topics that describe the device identifier formats for mos
 
 [Identifiers for USB Devices](identifiers-for-usb-devices.md)
 
- 
+ 
 
- 
+ 
 
 
 

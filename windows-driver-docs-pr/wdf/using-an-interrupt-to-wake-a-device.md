@@ -1,13 +1,9 @@
 ---
 title: Using an Interrupt to Wake a Device
-author: windows-driver-content
 description: When a device transitions to a low-power state, the framework disconnects (or reports as inactive) interrupts that are used for I/O handling.
 ms.assetid: 6A4E62BD-B10F-4F01-B4B4-1FF5086710D4
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using an Interrupt to Wake a Device
@@ -29,7 +25,7 @@ Follow these steps to create a wake-capable interrupt object in your KMDF or UMD
 2.  Optionally, call [**WdfDeviceInitSetPowerPolicyEventCallbacks**](https://msdn.microsoft.com/library/windows/hardware/ff546774) to register event callback functions described in [Supporting System Wake-Up](supporting-system-wake-up.md).
 3.  Call [**WDF\_INTERRUPT\_CONFIG\_INIT**](https://msdn.microsoft.com/library/windows/hardware/ff552348) to initialize a [**WDF\_INTERRUPT\_CONFIG**](https://msdn.microsoft.com/library/windows/hardware/ff552347) structure. Provide an [*EvtInterruptIsr*](https://msdn.microsoft.com/library/windows/hardware/ff541735) callback function, to be called at passive level. In the configuration structure, set **PassiveHandling** and **CanWakeDevice** to **TRUE**. Then call [**WdfInterruptCreate**](https://msdn.microsoft.com/library/windows/hardware/ff547345) from your driver's [*EvtDevicePrepareHardware*](https://msdn.microsoft.com/library/windows/hardware/ff540880) callback function to create the framework interrupt object.
 4.  Call [**WdfDeviceAssignSxWakeSettings**](https://msdn.microsoft.com/library/windows/hardware/ff545909) to configure the device to wake the system from a low-power state.
-    ```
+    ```cpp
     WDF_DEVICE_POWER_POLICY_WAKE_SETTINGS_INIT(&wakeSettings);
     wakeSettings.DxState = PowerDeviceD3;
     wakeSettings.UserControlOfWakeSettings = WakeDoNotAllowUserControl;
@@ -57,9 +53,9 @@ You can use the [**!wdfkd.wdfinterrupt**](https://msdn.microsoft.com/library/win
 
 Wake interrupt functionality cannot be used in conjunction with USB selective suspend.
 
- 
+ 
 
- 
+ 
 
 
 

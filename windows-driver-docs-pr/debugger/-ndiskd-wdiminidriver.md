@@ -3,17 +3,14 @@ title: ndiskd.wdiminidriver
 description: The ndiskd.wdiminidriver extension displays information about one or more CMiniportDriver structures. 
 ms.assetid: C7022CD7-6F3A-485B-8686-A686A5305DA5
 keywords: ["ndiskd.wdiminidriver Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - ndiskd.wdiminidriver
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !ndiskd.wdiminidriver
@@ -25,7 +22,7 @@ For more information about WDI miniport drivers, see the [WDI Miniport Driver De
 
 For more information about WDI miniport driver reference, see [WDI Miniport Driver Reference](https://msdn.microsoft.com/library/windows/hardware/dn926075).
 
-```
+```console
 !ndiskd.wdiminidriver [-handle <x>] [-pm] [-rcvfilter] 
 ```
 
@@ -50,7 +47,7 @@ Examples
 
 Run the **!ndiskd.wdiminidriver** extension with no parameters to see a list of all CMiniportDriver objects. In the following example, there is only one CMiniportDriver object. The handle of its WdiMiniDriver is ffffc804b8ce7c40.
 
-```
+```console
 1: kd> !ndiskd.wdiminidriver
     WdiMiniDriver      Name                                                     
     ffffc804b8ce7c40 - WDI MiniDriver
@@ -58,7 +55,7 @@ Run the **!ndiskd.wdiminidriver** extension with no parameters to see a list of 
 
 Click on the WdiMiniDriver's handle or enter the **!ndiskd.wdiminidriver -handle** command to see details for this WDI miniport driver.
 
-```
+```console
 1: kd> !ndiskd.wdiminidriver ffffc804b8ce7c40
 
 
@@ -78,7 +75,7 @@ WDI MINIPORT DRIVER
 
 Now you can click the "Handlers" link at the bottom of the WDI Miniport Driver's details, or you can use the handle to enter the **!ndiskd.wdiminidriver -handle -handlers** command, to see a list of all this WDI Miniport Driver's handlers.
 
-```
+```console
 1: kd> !ndiskd.wdiminidriver ffffc804b8ce7c40 -handlers
 
 
@@ -139,11 +136,10 @@ HANDLERS
 
 [WDI Miniport Driver Reference](https://msdn.microsoft.com/library/windows/hardware/dn926075)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!ndiskd.wdiminidriver%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -3,11 +3,8 @@ title: KSPROPSETID\_Synth
 description: KSPROPSETID\_Synth
 ms.assetid: ff5efd85-0b4d-4625-b029-fecf325bcacb
 keywords: ["KSPROPSETID_Synth"]
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # KSPROPSETID\_Synth
@@ -49,13 +46,13 @@ The KSPROPERTY\_SYNTH\_CAPS property is used by the system to determine the capa
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p>[<strong>KSNODEPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537143)</p></td>
-<td align="left"><p>[<strong>SYNTHCAPS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff538424)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537143" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537143)"><strong>KSNODEPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff538424" data-raw-source="[&lt;strong&gt;SYNTHCAPS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff538424)"><strong>SYNTHCAPS</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a structure of type SYNTHCAPS and specifies the synthesizer's capabilities. These capabilities include:
 
@@ -106,13 +103,13 @@ The KSPROPERTY\_SYNTH\_CHANNELGROUPS property is used by the system to set or ge
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p>[<strong>KSNODEPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537143)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537143" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537143)"><strong>KSNODEPROPERTY</strong></a></p></td>
 <td align="left"><p>ULONG</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is of type ULONG and specifies how many channel groups the pin supports. If a pin supports *n* channel groups, the channel groups on the pin are numbered from 0 to *n*-1.
 
@@ -143,7 +140,7 @@ A KSPROPERTY\_SYNTH\_CAPS property request returns STATUS\_SUCCESS to indicate t
 </tbody>
 </table>
 
- 
+ 
 
 For more information about channel groups, see the descriptions of the **IDirectMusicPort::GetNumChannelGroups** and **IDirectMusicPort::SetNumChannelGroups** methods in the Microsoft Windows SDK documentation.
 
@@ -176,13 +173,13 @@ The KSPROPERTY\_SYNTH\_LATENCYCLOCK property is used to query the miniport drive
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p>[<strong>KSNODEPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537143)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537143" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537143)"><strong>KSNODEPROPERTY</strong></a></p></td>
 <td align="left"><p>ULONGLONG</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is of type ULONGLONG and represents the synthesizer's current latency time. This time is specified relative to the master clock and expressed in 100-nanosecond units.
 
@@ -217,7 +214,7 @@ A KSPROPERTY\_SYNTH\_LATENCYCLOCK property request returns STATUS\_SUCCESS to in
 </tbody>
 </table>
 
- 
+ 
 
 Latency clocks are typically used to synchronize audio output streams among multiple devices.
 
@@ -258,13 +255,13 @@ The KSPROPERTY\_SYNTH\_PORTPARAMETERS property is used to get the configuration 
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p>[<strong>KSNODEPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537143) + [<strong>SYNTH_PORTPARAMS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff538467)</p></td>
-<td align="left"><p>[<strong>SYNTH_PORTPARAMS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff538467)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537143" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537143)"><strong>KSNODEPROPERTY</strong></a> + <a href="https://msdn.microsoft.com/library/windows/hardware/ff538467" data-raw-source="[&lt;strong&gt;SYNTH_PORTPARAMS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff538467)"><strong>SYNTH_PORTPARAMS</strong></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff538467" data-raw-source="[&lt;strong&gt;SYNTH_PORTPARAMS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff538467)"><strong>SYNTH_PORTPARAMS</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property descriptor (instance data) consists of a KSNODEPROPERTY structure that is immediately followed by a SYNTH\_PORTPARAMS structure. Before sending the property request, the client specifies its requested parameter values by writing them into the SYNTH\_PORTPARAMS structure.
 
@@ -297,7 +294,7 @@ If the miniport driver succeeds in configuring the DirectMusic port exactly as s
 </tbody>
 </table>
 
- 
+ 
 
 This is the most complicated of the DirectMusic property items to handle. Although this property supports only the get request, the get request also sets the port parameters. The port passes a SYNTH\_PORTPARAMS structure as the property descriptor for the property request. A property-value buffer accompanies the property request, but because this is a get request, the buffer is only used to retrieve information from the miniport driver.
 
@@ -338,13 +335,13 @@ The KSPROPERTY\_SYNTH\_RUNNINGSTATS property is used to query the miniport drive
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p>[<strong>KSNODEPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537143)</p></td>
-<td align="left"><p>[<strong>SYNTH_STATS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff538473)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537143" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537143)"><strong>KSNODEPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff538473" data-raw-source="[&lt;strong&gt;SYNTH_STATS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff538473)"><strong>SYNTH_STATS</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a structure of type SYNTH\_STATS. The miniport driver's property handler writes the following statistics into this structure:
 
@@ -389,7 +386,7 @@ A KSPROPERTY\_SYNTH\_RUNNINGSTATS property request returns STATUS\_SUCCESS to in
 </tbody>
 </table>
 
- 
+ 
 
 The synthesizer's performance statistics are continuously updated while the device remains in the KSSTATE\_RUN state. Each time the device enters this state, it resets the statistics, which zeros cumulative values such as the peak volume and number of notes lost.
 
@@ -424,13 +421,13 @@ The KSPROPERTY\_SYNTH\_VOICEPRIORITY property specifies what priority a particul
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p>[<strong>KSNODEPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537143) + [<strong>SYNTHVOICEPRIORITY_INSTANCE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff538452)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537143" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537143)"><strong>KSNODEPROPERTY</strong></a> + <a href="https://msdn.microsoft.com/library/windows/hardware/ff538452" data-raw-source="[&lt;strong&gt;SYNTHVOICEPRIORITY_INSTANCE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff538452)"><strong>SYNTHVOICEPRIORITY_INSTANCE</strong></a></p></td>
 <td align="left"><p>DWORD</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property descriptor (instance data) consists of a KSNODEPROPERTY structure that is immediately followed by a SYNTHVOICEPRIORITY\_INSTANCE structure, which specifies the voice's channel group (set of 16 MIDI channels) and channel number (within the group).
 
@@ -440,7 +437,7 @@ The property value (operation data) is a DWORD that specifies the priority. The 
 
 The following channel-group priorities are defined in header file Dmusprop.h:
 
-```
+```cpp
   DAUD_CRITICAL_VOICE_PRIORITY
   DAUD_HIGH_VOICE_PRIORITY
   DAUD_STANDARD_VOICE_PRIORITY
@@ -462,7 +459,7 @@ When a synthesizer miniport driver is created, it assigns a default priority to 
 
 Header file Dmusprop.h defines the following priority offsets:
 
-```
+```cpp
   DAUD_CHAN10_VOICE_PRIORITY_OFFSET
   DAUD_CHAN1_VOICE_PRIORITY_OFFSET
   DAUD_CHAN2_VOICE_PRIORITY_OFFSET
@@ -483,7 +480,7 @@ Header file Dmusprop.h defines the following priority offsets:
 
 The preceding list of offsets is ordered with the highest priority at the top of the list. Header file Dmusprop.h also defines the default priorities of the channels in each channel group by bitwise ORing each of these offsets with DAUD\_STANDARD\_VOICE\_PRIORITY. For example, the following definition gives the default priority for channel 1 in each channel group:
 
-```
+```cpp
   #define DAUD_CHAN1_DEF_VOICE_PRIORITY \
     (DAUD_STANDARD_VOICE_PRIORITY | DAUD_CHAN1_VOICE_PRIORITY_OFFSET)
 ```
@@ -515,7 +512,7 @@ A KSPROPERTY\_SYNTH\_VOICEPRIORITY property request returns STATUS\_SUCCESS to i
 </tbody>
 </table>
 
- 
+ 
 
 For more information about voice priorities, see the descriptions of the **IDirectMusicPort::GetChannelPriority** and **IDirectMusicPort::SetChannelPriority** methods in the Microsoft Windows SDK documentation.
 
@@ -548,13 +545,13 @@ The KSPROPERTY\_SYNTH\_VOLUME property gets or sets the volume level of a synthe
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p>[<strong>KSPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564262)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564262" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564262)"><strong>KSPROPERTY</strong></a></p></td>
 <td align="left"><p>LONG</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is of type LONG and specifies the volume level of the synthesizer device. The volume setting is specified in units of 1/100ths of a decibel. The miniport driver should either change its volume or report its volume, depending on whether the request is to get or set the property.
 
@@ -585,7 +582,7 @@ A KSPROPERTY\_SYNTH\_VOLUME property request returns STATUS\_SUCCESS to indicate
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="ddk_ksproperty_synth_volumeboost_ks"></span><span id="DDK_KSPROPERTY_SYNTH_VOLUMEBOOST_KS"></span>
 
@@ -616,13 +613,13 @@ The KSPROPERTY\_SYNTH\_VOLUMEBOOST property specifies the amount by which a synt
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p>[<strong>KSNODEPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537143)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537143" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537143)"><strong>KSNODEPROPERTY</strong></a></p></td>
 <td align="left"><p>LONG</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is of type LONG and specifies by how much to boost the audio signal after the mix stage. This is the amount of volume to add to the final output of the synthesizer after all voice articulation and mixing have been completed. The volume boost amount is specified in 1/100ths of a decibel. This value can be positive or negative.
 
@@ -653,17 +650,16 @@ A KSPROPERTY\_SYNTH\_VOLUMEBOOST property request returns STATUS\_SUCCESS to ind
 </tbody>
 </table>
 
- 
+ 
 
 No other boost should be added to the output. The synthesizer should follow strict DLS Level-1 conventions for articulation.
 
 This property is used to equalize the volume of the synthesizer with other audio output in the system, and boost amounts should therefore be interpreted in a consistent manner across all devices.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20KSPROPSETID_Synth%20%20RELEASE:%20%2811/22/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

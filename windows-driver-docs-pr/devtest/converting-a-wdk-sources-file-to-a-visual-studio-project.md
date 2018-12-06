@@ -2,11 +2,8 @@
 title: Converting a WDK sources file to a Visual Studio project
 description: Using Nmake2msBuild to convert WDK source files to a Visual Studio project.
 ms.assetid: 6030317B-5068-40FD-8C9A-0B7A48C82B31
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Converting a WDK sources file to a Visual Studio project
@@ -23,7 +20,7 @@ For most Windows 7 WDK projects that were built using Build.exe, you can use the
 
 The [Nmake2MsBuild](nmake2msbuild.md) tool performs a rule-based mapping of the contents of a *sources* file to the contents of a Visual Studio C++ project file (.VcxProj). For each build macro that is to be converted, there is a corresponding conversion rule in a properties file (.props) that is consumed by MSBuild and instrumented during build. In the MSBuild environment, properties, items and metadata on those items are consumed by the build system. Each macro in the *sources* file is mapped to either an MSBuild property, item, or item metadata, as specified by the rule. By default, if no rule is present, a macro named A with the value B is converted to Property A with the value B. The initial conversion step involves a mapping of NMake syntax in a *makefile.inc* or *sources* file to MSBuild syntax in an associated property file (.props). Each macro in the NMake file is converted to a property in a properties file (.props). During build time, these properties are evaluated, and the evaluated values of certain properties are then mapped to various other properties, items or metadata, as specified by a conversion rule.
 
-For example, the USER\_C\_FLAGS macro in a*sources* file is used to specify command-line parameters to be passed to the compiler (cl.exe) during the build. In the MSBuild environment, the ClCompile item list contains the source code files that will be compiled. The ClCompile item list is consumed by the compiler in the [CL Task](http://msdn.microsoft.com/library/ee862477.aspx). The AdditionalOptions metadata on each item in the list determines the additional flags passed to the compiler (cl.exe). Therefore, the value of the USER\_C\_FLAGS macro should be mapped to the AdditionalOptions item metadata for items of type ClCompile. In the initial conversion step, the USER\_C\_FLAGS macro in a sources file is converted to an MSBuild property, also named USER\_C\_FLAGS in a generated file called *sources.props*. The mapping of the evaluated value of the USER\_C\_FLAGS property to the AdditionalOptions metadata occurs at build time, as shown in the following example:
+For example, the USER\_C\_FLAGS macro in a*sources* file is used to specify command-line parameters to be passed to the compiler (cl.exe) during the build. In the MSBuild environment, the ClCompile item list contains the source code files that will be compiled. The ClCompile item list is consumed by the compiler in the [CL Task](https://msdn.microsoft.com/library/ee862477.aspx). The AdditionalOptions metadata on each item in the list determines the additional flags passed to the compiler (cl.exe). Therefore, the value of the USER\_C\_FLAGS macro should be mapped to the AdditionalOptions item metadata for items of type ClCompile. In the initial conversion step, the USER\_C\_FLAGS macro in a sources file is converted to an MSBuild property, also named USER\_C\_FLAGS in a generated file called *sources.props*. The mapping of the evaluated value of the USER\_C\_FLAGS property to the AdditionalOptions metadata occurs at build time, as shown in the following example:
 
 ```
   <!-- Contains rules to map compiler and linker switches -->
@@ -140,7 +137,6 @@ Converted projects do not support VS .Filters files.
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20Converting%20a%20WDK%20sources%20file%20to%20a%20Visual%20Studio%20project%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

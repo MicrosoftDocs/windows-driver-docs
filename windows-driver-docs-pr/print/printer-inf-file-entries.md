@@ -1,22 +1,18 @@
 ---
 title: Printer INF File Entries
-author: windows-driver-content
 description: Printer INF File Entries
 ms.assetid: 897072bb-e481-4c8d-a2bf-57b19c69ac0e
 keywords:
 - INF files WDK print , entries
 - dependent files WDK printer
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Printer INF File Entries
 
 
-## <a href="" id="ddk-printer-inf-file-entries-gg"></a>
+
 
 
 For an installation application to install a printer on a print server, it must call the spooler's **AddPrinterDriverEx** function to load driver files and then call the spooler's **AddPrinter** function to make the printer available on the server.
@@ -56,7 +52,7 @@ The following table lists INF file entries that should be included in printer IN
 
  
 
- **Note**  **1 (DriverCategory)**: If the INF file specifies a category, these are the allowed values (0 to 5 respectively) for specifying categories:
+ **Note**  **1 (DriverCategory)**: If the INF file specifies a category, these are the allowed values (0 to 5 respectively) for specifying categories:
  
  
 | Driver Category          | Value | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
@@ -68,23 +64,23 @@ The following table lists INF file entries that should be included in printer IN
 | PrintFax.Printer.Service | 4     | A print queue that represents a printing service. When the user selects to print to a service, then the result (possibly after further user interaction) is that a third-party printing service receives the printed content. The user can then go to the physical business location to pick up the printed output.                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | PrintFax.Printer.3D      | 5     | A print queue that represents the data stream for a 3D printer. If this category is unintentionally specified for a 2D printer (a regular printer), the 2D printer will simply output the 2D content of the data stream. If this category is correctly specified for a 3D printer, but a 2D data stream is sent to the 3D printer, the 3D printer will not generate any output.                                                                                                                                                                                                                                                                                                                                                                |
 
- 
+ 
 
 Also note that v4 print drivers use a Manifest file. For more information, see [V4 Driver Manifest](v4-driver-manifest.md).
 
- 
+ 
 
 **Note**  **2 (ExcludeFromSelect)**: The [*device ID*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-id) of a device that should not be shown in the **Select Device** dialog or in the Add Printer Wizard. For printers, this includes all PnP entries of devices that have duplicate device descriptions in the INF file; for example, devices that have multiple entries for infrared and parallel enumeration or for another bus. The ExcludeFromSelect entry, unlike all others in this table, must appear in the Control Flags section of the INF file. See [**INF ControlFlags Section**](https://msdn.microsoft.com/library/windows/hardware/ff546342) for more information.
 
- 
+ 
 
 **Note**  **3 (VendorSetup)**: If no VendorSetup entry is specified, customized setup operations are not performed. In particular, no user interface is permitted during print processor, print monitor, or printer driver installation, except through the use of the VendorSetup INF entry. For more information about this entry, see [Customized Printer Setup Operations](customized-printer-setup-operations.md).
 
- 
+ 
 
 **Important**  : VendorSetup is now deprecated and should not be used by any *new* v3 or v4 drivers that you develop. This information about VendorSetup is provided for reference only, or for the maintenance of existing v3 drivers that already use this INF directive.
 
- 
+ 
 
 Printer INF file entries are typically specified within [printer INF file data sections](printer-inf-file-data-sections.md). For examples, see the [sample printer INF files](sample-printer-inf-files.md).
 
@@ -110,7 +106,7 @@ For Windows 2000 and later, a dependent file is a printer driver file that is in
 
 The following example shows excerpts from an INF file that installs three dependent files by copying them to the printer-driver directory (that is, to the directory specified by dirid 66000):
 
-```
+```cpp
 [Contoso]
 %PRINTER_MODEL_123%=Contoso_Install_Section,LPTENUM\Contoso_1284.4_P29C5
 ...
@@ -138,7 +134,5 @@ A maximum of 64 dependent files can be specified for each printer model.
 [Printer INF file Install section](printer-inf-file-install-sections.md)  
 [V4 Driver Manifest](v4-driver-manifest.md)  
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Printer%20INF%20File%20Entries%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

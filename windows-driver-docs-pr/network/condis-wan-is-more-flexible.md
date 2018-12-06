@@ -4,17 +4,14 @@ description: CoNDIS WAN Is More Flexible
 ms.assetid: 01f4d5cc-3ecc-4d2f-bc19-67b8d0fda52f
 keywords:
 - CoNDIS WAN drivers WDK networking , benefits
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # CoNDIS WAN Is More Flexible
 
 
-## <a href="" id="ddk-condis-wan-is-more-flexible-ng"></a>
+
 
 
 In the CoNDIS model, major functions (such as call management and data transfer) are compartmentalized into discrete components or subcomponents. This organization enables you to use system-supplied and third-party components and update functionality more easily.
@@ -41,9 +38,9 @@ The Microsoft Windows operating system includes a PPP CoNDIS client, and CoNDIS 
 
 The CoNDIS WAN model is not restricted to PPP data. You can implement a custom WAN client driver and miniport driver to handle, for example, raw data streaming or proprietary encryption.
 
- 
+ 
 
- 
+ 
 
 
 

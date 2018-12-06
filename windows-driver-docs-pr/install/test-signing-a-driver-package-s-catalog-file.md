@@ -2,11 +2,8 @@
 title: Test-Signing a Driver Package's Catalog File
 description: Test-Signing a Driver Package's Catalog File
 ms.assetid: 8cc54f57-bac3-45a1-b780-48626943b446
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Test-Signing a Driver Package's Catalog File
@@ -28,7 +25,7 @@ The following command line shows how to run SignTool to do the following:
 
 To test-sign the *tstamd64.cat* catalog file, run the following command line:
 
-```
+```cpp
 Signtool sign /v /s PrivateCertStore /n Contoso.com(Test) /t http://timestamp.verisign.com/scripts/timstamp.dll tstamd64.cat
 ```
 
@@ -45,7 +42,7 @@ Where:
 -   The **/t** option specifies URL of the TSA (*http://timestamp.verisign.com/scripts/timstamp.dll*) which will time stamp the digital signature.
     **Important**   Including a time stamp provides the necessary information for key revocation in case the signer's code signing private key is compromised.
 
-     
+     
 
 -   *tstamd64.cat* specifies the name of the catalog file, which will be digitally-signed.
 
@@ -53,9 +50,9 @@ For more information about SignTool and its command-line arguments, see [**SignT
 
 For more information about test-signing a driver package's catalog file, see [Test-Signing a Catalog File](test-signing-a-catalog-file.md).
 
- 
+ 
 
- 
+ 
 
 
 

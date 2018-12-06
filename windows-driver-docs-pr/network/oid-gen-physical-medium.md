@@ -1,15 +1,11 @@
 ---
 title: OID_GEN_PHYSICAL_MEDIUM
-author: windows-driver-content
 description: As a query, the OID_GEN_PHYSICAL_MEDIUM OID specifies the types of physical media that the NIC supports.
 ms.assetid: 84d7231b-8af2-4bdb-8df5-37088767f708
-ms.author: windowsdriverdev
 ms.date: 08/08/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 keywords: 
  -OID_GEN_PHYSICAL_MEDIUM Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # OID\_GEN\_PHYSICAL\_MEDIUM
@@ -21,7 +17,7 @@ As a query, the OID\_GEN\_PHYSICAL\_MEDIUM OID specifies the types of physical m
 
 **Note**  This OID is supported in NDIS 6.0 and 6.1. For NDIS 6.20 and later, use [OID\_GEN\_PHYSICAL\_MEDIUM\_EX](oid-gen-physical-medium-ex.md).
 
- 
+ 
 
 Remarks
 -------
@@ -62,7 +58,7 @@ Packets are transferred over a wireless LAN network through a miniport driver th
 
 **Note**  The Native 802.11 interface is supported in NDIS 6.0 and later and later and later versions.
 
- 
+ 
 
 **NdisPhysicalMediumBluetooth**
 Packets are transferred over a Bluetooth network. Bluetooth is a short-range wireless technology that uses the 2.4 GHz spectrum.
@@ -108,7 +104,7 @@ Requirements
 <tbody>
 <tr class="odd">
 <td><p>Version</p></td>
-<td><p>Supported in NDIS 6.0 and 6.1. For NDIS 6.20 and later, use [OID_GEN_PHYSICAL_MEDIUM_EX](oid-gen-physical-medium-ex.md) instead.</p></td>
+<td><p>Supported in NDIS 6.0 and 6.1. For NDIS 6.20 and later, use <a href="oid-gen-physical-medium-ex.md" data-raw-source="[OID_GEN_PHYSICAL_MEDIUM_EX](oid-gen-physical-medium-ex.md)">OID_GEN_PHYSICAL_MEDIUM_EX</a> instead.</p></td>
 </tr>
 <tr class="even">
 <td><p>Header</p></td>
@@ -124,12 +120,10 @@ Requirements
 
 [OID\_GEN\_PHYSICAL\_MEDIUM\_EX](oid-gen-physical-medium-ex.md)
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20OID_GEN_PHYSICAL_MEDIUM%20%20RELEASE:%20%288/8/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

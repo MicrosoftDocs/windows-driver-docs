@@ -7,11 +7,8 @@ keywords:
 - actions WDK finish-install
 - DI_FLAGSEX_FINISHINSTALL_ACTION
 - DIF_FINISHINSTALL_ACTION
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Implementing Finish-Install Actions
@@ -58,11 +55,13 @@ To implement finish-install actions, an installer:
     </tbody>
     </table>
 
-     
 
-    **Note**   If a finish-install action fails and should not be attempted again, a class installer returns ERROR_DI_DO_DEFAULT and a device or class co-installer returns NO_ERROR.
 
-     
+
+**Note**   If a finish-install action fails and should not be attempted again, a class installer returns ERROR_DI_DO_DEFAULT and a device or class co-installer returns NO_ERROR.
+
+
+
 
 For information about how to develop finish-install actions, see [Guidelines for Implementing Finish-Install Actions](guidelines-for-implementing-finish-install-actions.md) For sample code that shows how to implement finish-install actions, see the following topics:
 
@@ -70,9 +69,9 @@ For information about how to develop finish-install actions, see [Guidelines for
 
 [Code Example: Finish-Install Actions in a Co-installer](code-example--finish-install-actions-in-a-co-installer.md)
 
- 
 
- 
+
+
 
 
 

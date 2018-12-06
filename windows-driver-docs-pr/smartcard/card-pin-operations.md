@@ -2,11 +2,8 @@
 title: Card PIN Operations
 description: Card PIN Operations
 ms.assetid: 7993D284-8122-4831-9C00-E53DAEB7965F
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Card PIN Operations
@@ -64,9 +61,9 @@ typedef enum
 } SECRET_TYPE;
 ```
 
-**Note**  When encountering PIN **SECRET\_TYPEEmptyPinType**, Windows does not prompt for PIN nor does it call **CardAuthenticatePin** or **CardAuthenticatePinEx**. This setting is useful when an unconditional access to material on the card is desired.
+**Note**  When encountering PIN **SECRET\_TYPEEmptyPinType**, Windows does not prompt for PIN nor does it call **CardAuthenticatePin** or **CardAuthenticatePinEx**. This setting is useful when an unconditional access to material on the card is desired.
 
- 
+
 
 ## <span id="SECRET_PURPOSE"></span><span id="secret_purpose"></span>SECRET\_PURPOSE
 
@@ -108,7 +105,7 @@ The second string (“Please enter your authentication PIN”) is driven by **SE
     | PrimaryCardPin      | “Please enter your PIN.”                         |
     | UnblockOnlyPin      | “Please enter your PIN to unblock the user PIN.” |
 
-     
+
 
 -   Custom strings
 
@@ -122,13 +119,15 @@ The second string (“Please enter your authentication PIN”) is driven by **SE
     “LangID,xxxx;LangID,xxxxx”
     ```
 
-    **Note**  Quotation marks around the custom string are not handled properly and should not be relied on to prevent parsing special characters within the string.
+    **Note**  Quotation marks around the custom string are not handled properly and should not be relied on to prevent parsing special characters within the string.
 
-     
 
-    **Note**  Including two different custom strings for the same locale results in the first custom string being picked up.
 
-     
+
+**Note**  Including two different custom strings for the same locale results in the first custom string being picked up.
+
+
+
 
 The third string in the dialog box (“Digital Signature PIN”) is a predefined string that is determined by the **SECRET\_PURPOSE** value in the **PIN\_INFO** data structure.
 
@@ -158,11 +157,11 @@ The following table describes how the Base CSP acts upon the three different cac
 | **PinCacheNone**         | When the PIN cannot be cached, Base CSP never adds the PIN to the cache. When the Base CSP/KSP is called with [**CryptSetProvParam**](https://msdn.microsoft.com/library/windows/desktop/aa380276) to set a PIN, the PIN is submitted to the card for verification but not cached. This means that any subsequent operations must occur before the Base CSP transaction time-out expires.                                                                                                                                                                                                                  |
 | **PinCacheAlwaysPrompt** | Unlike **PinCacheNone**, when this cache mode is set, the Base CSP transaction time-out is not applicable. The PIN is collected from the user and then submitted to the card for verification before each call that requires authentication. Calls to [**CryptSetProvParam**](https://msdn.microsoft.com/library/windows/desktop/aa380276) and [**NcryptSetProperty**](https://msdn.microsoft.com/library/windows/desktop/aa376292) for setting the PIN return ERROR\_SUCCESS without verifying and caching the PIN. This implies that calls from applications that use silent contexts will fail if the call requires authentication. |
 
- 
 
-**Note**  Windows logon may not work properly if a PIN is not cached. This behavior is by design. Therefore, careful consideration should be given when setting a PIN cache mode to any value other than **PinCacheNormal**.
 
- 
+**Note**  Windows logon may not work properly if a PIN is not cached. This behavior is by design. Therefore, careful consideration should be given when setting a PIN cache mode to any value other than **PinCacheNormal**.
+
+
 
 ## <span id="_PIN_CACHE_POLICY"></span><span id="_pin_cache_policy"></span> PIN\_CACHE\_POLICY
 
@@ -204,15 +203,14 @@ The **dwUnblockPermission** member is a bit-mask that describes which PINs have 
 
 The **dwFlags** member contains PIN flags. Currently, only one flag is defined: PIN\_INFO\_REQUIRE\_SECURE\_ENTRY. This flag indicates to the Base CSP/KSP whether a secure desktop is required for PIN entry.
 
-**Note**  It is possible by using this structure to give ROLE\_EVERYONE permission to change or unblock a PIN. We do not recommend this, and no mechanism is provided in the minidriver API to allow ROLE\_EVERYONE to change or unblock a PIN.
+**Note**  It is possible by using this structure to give ROLE\_EVERYONE permission to change or unblock a PIN. We do not recommend this, and no mechanism is provided in the minidriver API to allow ROLE\_EVERYONE to change or unblock a PIN.
 
- 
 
- 
 
- 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[smartcrd\smartcrd]:%20Card%20PIN%20Operations%20%20RELEASE:%20%287/20/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
+
 
 
 

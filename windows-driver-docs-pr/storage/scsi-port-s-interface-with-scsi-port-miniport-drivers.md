@@ -1,13 +1,9 @@
 ---
 title: SCSI Port's Interface with SCSI Port Miniport Drivers
-author: windows-driver-content
 description: SCSI Port's Interface with SCSI Port Miniport Drivers
 ms.assetid: e6bd9861-5b89-40cc-92ab-0d23f18ba805
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # SCSI Port's Interface with SCSI Port Miniport Drivers
@@ -34,11 +30,10 @@ SRB\_ORDERED\_QUEUE\_TAG\_REQUEST
 
 For an explanation of these values, see the SCSI-2 specification.
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

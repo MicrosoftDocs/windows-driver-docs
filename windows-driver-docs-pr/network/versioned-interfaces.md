@@ -6,17 +6,14 @@ keywords:
 - NDIS WDK , versioning
 - versioning WDK networking
 - NDIS WDK , backward compatibility
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Versioned Interfaces
 
 
-## <a href="" id="ddk-versioned-interfaces-ng"></a>
+
 
 
 NDIS 6.0 supports versioning for key structures. Also, many former function parameters are moved to structures. Moving the function parameters to versioned structures allows the function parameters to be changed in later NDIS versions without changing the function interface.
@@ -27,9 +24,9 @@ This versioning simplifies backward compatibility and extends the life of NDIS 6
 
 For more information, see [**NDIS\_OBJECT\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/ff566588).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,11 +3,8 @@ title: Displaying a Critical Section
 description: Displaying a Critical Section
 ms.assetid: d55971f6-9112-417d-8fb6-e299c7fc90a7
 keywords: ["critical section", "critical section, overview"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Displaying a Critical Section
@@ -24,7 +21,7 @@ Critical sections can be displayed by the **!ntsdexts.locks** extension, the **!
 
 The [**!ntsdexts.locks**](-locks---ntsdexts-locks-.md) extension displays a list of critical sections associated with the current process. If the **-v** option is used, all critical sections are displayed. Here is an example:
 
-```
+```dbgcmd
 0:000> !locks
 
 CritSec ntdll!FastPebLock+0 at 77FC49E0
@@ -41,7 +38,7 @@ Scanned 37 critical sections
 
 If you know the address of the critical section you wish to display, you can use the [**!critsec**](-critsec.md) extension. This displays the same collection of information as **!ntsdexts.locks**. For example:
 
-```
+```dbgcmd
 0:000> !critsec 77fc49e0
 
 CritSec ntdll!FastPebLock+0 at 77FC49E0
@@ -53,11 +50,11 @@ ContentionCount    0
 *** Locked
 ```
 
-The [**!cs**](-cs.md) extension is only available in Microsoft Windows XP and later versions of Windows. It can display a critical section based on its address, search an address range for critical sections, and even display the stack trace associated with each critical section. Some of these features require full Windows symbols to work properly. If Application Verifier is active, **!cs -t** can be used to display the critical section tree. See the **!cs** reference page for details and examples.
+The [**!cs**](-cs.md) extension can display a critical section based on its address, search an address range for critical sections, and even display the stack trace associated with each critical section. Some of these features require full Windows symbols to work properly. If Application Verifier is active, **!cs -t** can be used to display the critical section tree. See the **!cs** reference page for details and examples.
 
 The information displayed by **!cs** is slightly different than that shown by **!ntsdexts.locks** and **!critsec**. For example:
 
-```
+```dbgcmd
 ## 0:000> !cs 77fc49e0
 
 Critical section   = 0x77fc49e0 (ntdll!FastPebLock+0x0)
@@ -72,7 +69,7 @@ SpinCount          = 0x00000000
 
 The [**dt (Display Type)**](dt--display-type-.md) command can be used to display the literal contents of the RTL\_CRITICAL\_SECTION structure. For example:
 
-```
+```dbgcmd
 0:000> dt RTL_CRITICAL_SECTION 77fc49e0
    +0x000 DebugInfo        : 0x77fc3e00 
    +0x004 LockCount        : 0
@@ -94,7 +91,7 @@ The most important fields of the critical section structure are as follows:
 
 A newly initialized critical section looks like this:
 
-```
+```dbgcmd
 0:000> !critsec 433e60
 CritSec mymodule!cs+0 at 00433E60
 LockCount          NOT LOCKED 
@@ -106,7 +103,7 @@ ContentionCount    0
 
 The debugger displays "NOT LOCKED" as the value for **LockCount**. The actual value of this field for an unlocked critical section is -1. You can verify this with the **dt (Display Type)** command:
 
-```
+```dbgcmd
 0:000> dt RTL_CRITICAL_SECTION 433e60
    +0x000 DebugInfo        : 0x77fcec80
    +0x004 LockCount        : -1
@@ -118,7 +115,7 @@ The debugger displays "NOT LOCKED" as the value for **LockCount**. The actual va
 
 When the first thread calls the **EnterCriticalSection** routine, the critical section's **LockCount**, **RecursionCount**, **EntryCount** and **ContentionCount** fields are all incremented by one, and **OwningThread** becomes the thread ID of the caller. **EntryCount** and **ContentionCount** are never decremented. For example:
 
-```
+```dbgcmd
 0:000> !critsec 433e60
 CritSec mymodule!cs+0 at 00433E60
 LockCount          0
@@ -132,7 +129,7 @@ At this point, four different things can happen.
 
 1.  The owning thread calls **EnterCriticalSection** again. This will increment **LockCount** and **RecursionCount**. **EntryCount** is not incremented.
 
-    ```
+    ```dbgcmd
     0:000> !critsec 433e60
     CritSec mymodule!cs+0 at 00433E60
     LockCount          1
@@ -144,7 +141,7 @@ At this point, four different things can happen.
 
 2.  A different thread calls **EnterCriticalSection**. This will increment **LockCount** and **EntryCount**. **RecursionCount** is not incremented.
 
-    ```
+    ```dbgcmd
     0:000> !critsec 433e60
     CritSec mymodule!cs+0 at 00433E60
     LockCount          1
@@ -156,7 +153,7 @@ At this point, four different things can happen.
 
 3.  The owning thread calls **LeaveCriticalSection**. This will decrement **LockCount** (to -1) and **RecursionCount** (to 0), and will reset **OwningThread** to 0.
 
-    ```
+    ```dbgcmd
     0:000> !critsec 433e60
     CritSec mymodule!cs+0 at 00433E60
     LockCount          NOT LOCKED 
@@ -182,21 +179,21 @@ In Microsoft Windows Server 2003 Service Pack 1 and later versions of Windows, t
 
 As an example, suppose the **LockCount** is -22. The lowest bit can be determined in this way:
 
-```
+```dbgcmd
 0:009> ? 0x1 & (-0n22)
 Evaluate expression: 0 = 00000000
 ```
 
 The next-lowest bit can be determined in this way:
 
-```
+```dbgcmd
 0:009> ? (0x2 & (-0n22)) >> 1
 Evaluate expression: 1 = 00000001
 ```
 
 The ones-complement of the remaining bits can be determined in this way:
 
-```
+```dbgcmd
 0:009> ? ((-1) - (-0n22)) >> 2
 Evaluate expression: 5 = 00000005
 ```
@@ -207,11 +204,10 @@ In this example, the first bit is 0 and therefore the critical section is locked
 
 For information about how to debug critical section time outs, see [Critical Section Time Outs](critical-section-time-outs.md). For general information about critical sections, see the Microsoft Windows SDK, the Windows Driver Kit (WDK), or *Microsoft Windows Internals* by Mark Russinovich and David Solomon. (These resources may not be available in some languages and countries.)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Displaying%20a%20Critical%20Section%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

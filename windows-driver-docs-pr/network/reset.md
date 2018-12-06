@@ -8,24 +8,21 @@ keywords:
 - resetting NIC WDK networking
 - NICs WDK networking , resetting
 - network interface cards WDK networking , resetting
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Reset
 
 
-## <a href="" id="ddk-reset-ng"></a>
+
 
 
 NDIS might call a miniport driver's or MCM driver's [*MiniportResetEx*](https://msdn.microsoft.com/library/windows/hardware/ff559432) function to reset a NIC.
 
 **Note**  AF, SAP, and VC handles that are active and valid before a reset are active and valid after the reset.
 
- 
+ 
 
 The following figure shows a client issuing a reset request to a miniport driver.
 
@@ -45,9 +42,9 @@ NDIS will not accept protocol-initiated sends and requests to a miniport driver 
 
 -   If the reset completes asynchronously, NDIS calls each bound protocol's *ProtocolCoStatusEx* function with NDIS\_STATUS\_RESET\_END.
 
- 
+ 
 
- 
+ 
 
 
 

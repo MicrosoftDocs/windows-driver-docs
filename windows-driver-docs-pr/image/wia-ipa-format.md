@@ -11,11 +11,8 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.author: windowsdriverdev
 ms.date: 11/28/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # WIA\_IPA\_FORMAT
@@ -112,7 +109,7 @@ The following table describes the constants that are valid with WIA\_IPA\_FORMAT
 <td><p>Camera Image File format</p></td>
 </tr>
 <tr class="odd">
-<td><p>WiaImgFmt_CSV**</p></td>
+<td><p>WiaImgFmt_CSV<strong></p></td>
 <td><p>Comma separated file</p></td>
 </tr>
 <tr class="even">
@@ -152,7 +149,7 @@ The following table describes the constants that are valid with WIA\_IPA\_FORMAT
 <td><p>Joint Bi-level Image experts Group format</p></td>
 </tr>
 <tr class="odd">
-<td><p>WiaImgFmt_JBIG2**</p></td>
+<td><p>WiaImgFmt_JBIG2</strong></p></td>
 <td><p>Joint Bi-level Image experts Group format (version 2)</p></td>
 </tr>
 <tr class="even">
@@ -180,7 +177,7 @@ The following table describes the constants that are valid with WIA\_IPA\_FORMAT
 <td><p>Eastman Kodak file format</p></td>
 </tr>
 <tr class="even">
-<td><p>WiaImgFmt_PDFA*</p></td>
+<td><p>WiaImgFmt_PDFA<em></p></td>
 <td><p>PDF/A (ISO/CD 19005-1) format</p></td>
 </tr>
 <tr class="odd">
@@ -196,15 +193,15 @@ The following table describes the constants that are valid with WIA\_IPA\_FORMAT
 <td><p>WIA Raw image file format for data transfers only</p></td>
 </tr>
 <tr class="even">
-<td><p>WiaImgFmt_RawBar**</p></td>
+<td><p>WiaImgFmt_RawBar</em><em></p></td>
 <td><p>WIA Barcode Metadata Raw Format</p></td>
 </tr>
 <tr class="odd">
-<td><p>WiaImgFmt_RawMic**</p></td>
+<td><p>WiaImgFmt_RawMic</em><em></p></td>
 <td><p>WIA MICR Metadata Raw Format</p></td>
 </tr>
 <tr class="even">
-<td><p>WiaImgFmt_RawPat**</p></td>
+<td><p>WiaImgFmt_RawPat</em><em></p></td>
 <td><p>WIA Patch Code Metadata Raw Format</p></td>
 </tr>
 <tr class="odd">
@@ -240,25 +237,25 @@ The following table describes the constants that are valid with WIA\_IPA\_FORMAT
 <td><p>XML file</p></td>
 </tr>
 <tr class="odd">
-<td><p>WiaImgFmt_XmlBar**</p></td>
+<td><p>WiaImgFmt_XmlBar</em><em></p></td>
 <td><p>XML file whose content is compliant with the WIA Barcode Metadata Schema</p></td>
 </tr>
 <tr class="even">
-<td><p>WiaImgFmt_XmlMic**</p></td>
+<td><p>WiaImgFmt_XmlMic</em><em></p></td>
 <td><p>XML file whose content is compliant with the WIA MICR Metadata Schema</p></td>
 </tr>
 <tr class="odd">
-<td><p>WiaImgFmt_XmlPat**</p></td>
+<td><p>WiaImgFmt_XmlPat</em><em></p></td>
 <td><p>XML file whose content is compliant with the WIA Patch Code Metadata Schema</p></td>
 </tr>
 <tr class="even">
-<td><p>WiaImgFmt_XPS*</p></td>
+<td><p>WiaImgFmt_XPS</em></p></td>
 <td><p>XPS document file</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Formats that are marked with an asterisk (\*) are for Windows Vista and later versions of Windows only.
 
@@ -282,18 +279,17 @@ Requirements
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
 
 [**WIA\_IPA\_COMPRESSION**](wia-ipa-compression.md)
 
 [**WIA\_IPA\_FULL\_ITEM\_NAME**](wia-ipa-full-item-name.md)
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bimage\image%5D:%20WIA_IPA_FORMAT%20%20RELEASE:%20%2811/13/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

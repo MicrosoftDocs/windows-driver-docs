@@ -9,11 +9,8 @@ keywords:
 - software-first installations WDK device installations
 - AutoRun-enabled installation applications WDK
 - device installations WDK , types
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Software-First Installation
@@ -37,9 +34,9 @@ If the user inserts your distribution medium before plugging in the device, an A
 
 -   If the device is not hot-pluggable, tell the user to turn the system off, plug in the device, and turn the system back on.
 
- 
+ 
 
- 
+ 
 
 
 

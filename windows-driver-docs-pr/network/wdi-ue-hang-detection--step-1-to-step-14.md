@@ -2,11 +2,8 @@
 title: UE hang detection Steps 1-14
 description: Steps 1 through 14 of UE hang detection are described below. The steps correspond to the diagram shown in UE hang detection and recovery flow.
 ms.assetid: 0F6F9B31-27FB-44B1-8C0E-A270E8BAF295
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # UE hang detection: Steps 1-14
@@ -51,9 +48,9 @@ The completion of NDIS OID\_SET\_POWER is necessary to avoid a deadlock of PnP o
 
 [UE hang detection and recovery flow](wdi-ue-hang-detection-and-recovery-flow.md)
 
- 
+ 
 
- 
+ 
 
 
 

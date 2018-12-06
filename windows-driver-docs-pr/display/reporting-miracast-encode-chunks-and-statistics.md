@@ -2,17 +2,14 @@
 title: Reporting Miracast encode chunks and statistics
 description: Display hardware can process each video frame sent over a Miracast wireless display link by splitting the frame into multiple parts, or encode chunks.
 ms.assetid: E1CE637F-42ED-4BEB-A2FF-04B4B88469DC
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Reporting Miracast encode chunks and statistics
 
 
-Display hardware can process each video frame sent over a Miracast wireless display link by splitting the frame into multiple parts, or *encode chunks*. Each chunk has a unique chunk ID thatâ€™s generated from the frame number and the frame part (or slice) number. Each chunk thatâ€™s related to the same desktop frame update must be assigned the same frame number.
+Display hardware can process each video frame sent over a Miracast wireless display link by splitting the frame into multiple parts, or *encode chunks*. Each chunk has a unique chunk ID that's generated from the frame number and the frame part (or slice) number. Each chunk that's related to the same desktop frame update must be assigned the same frame number.
 
 ## <span id="Reporting_chunk_processing"></span><span id="reporting_chunk_processing"></span><span id="REPORTING_CHUNK_PROCESSING"></span>Reporting chunk processing
 
@@ -33,7 +30,7 @@ If the desktop image is not updated but the driver needs to encode the desktop i
 
 **Note**  The last slice of each frame must have a frame part number of zero. Doing this indicates to performance tools that this is the last slice of the frame.
 
- 
+ 
 
 To ensure correct synchronization of the primary surface, if the encoding is performed by the pixel pipeline, any requested flip operation at a VSync interval should not be reported before the encoding has finished accessing the primary surface. This prevents the presenter from rendering to the primary surface while the encode engine is reading from it.
 
@@ -95,7 +92,7 @@ Just before call to send data to network
 0, value of **ChunkSent**. **ChunkId**. **PartNumber**
 N/A
 N/A
- 
+ 
 
 \*Called using **MIRACAST\_STATISTIC\_TYPE\_CHUNK\_SENT**.
 
@@ -147,7 +144,7 @@ Just before call to send slice 2 data to network
 0, value of **ChunkSent**. **ChunkId**. **PartNumber** (See Note above.)
 N/A
 N/A
- 
+ 
 
 \*Called using **MIRACAST\_STATISTIC\_TYPE\_CHUNK\_SENT**.
 
@@ -199,7 +196,7 @@ Just before call to send data for re-encoded frame to network
 0, value of **ChunkSent**. **ChunkId**. **PartNumber**
 N/A
 N/A
- 
+ 
 
 \*Called using **MIRACAST\_STATISTIC\_TYPE\_CHUNK\_SENT**.
 
@@ -217,11 +214,10 @@ While a Miracast connected session is in progress, if a Miracast user-mode drive
 
 Note that although the operating system merely logs the [**ReportSessionStatus**](https://msdn.microsoft.com/library/windows/hardware/dn265502)*Status* parameter for diagnostics and doesn't take any action based on its value. However, we recommend that the driver use this parameter to differentiate between different causes of the error.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Reporting%20Miracast%20encode%20chunks%20and%20statistics%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

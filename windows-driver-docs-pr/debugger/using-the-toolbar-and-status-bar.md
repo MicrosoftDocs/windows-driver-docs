@@ -3,11 +3,8 @@ title: Using the Toolbar and Status Bar
 description: Using the Toolbar and Status Bar
 ms.assetid: 96427166-b6df-4f6b-b550-69d0eb33042d
 keywords: ["toolbar (WinDbg)", "toolbar (WinDbg), overview", "buttons (WinDbg Toolbar)", "buttons (WinDbg Toolbar), overview", "status bar", "status bar, overview", "WinDbg, toolbar", "WinDbg, status bar", "WinDbg, buttons"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using the Toolbar and Status Bar
@@ -54,7 +51,7 @@ The following table describes the sections of the WinDbg status bar.
 </tr>
 <tr class="even">
 <td align="left"><p>Ln, Col</p></td>
-<td align="left"><p>Displays the line number and column number at the cursor in the active [Source window](source-window.md).</p></td>
+<td align="left"><p>Displays the line number and column number at the cursor in the active <a href="source-window.md" data-raw-source="[Source window](source-window.md)">Source window</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Sys</p></td>
@@ -87,7 +84,7 @@ The following table describes the sections of the WinDbg status bar.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="hiding_the_toolbar_or_status_bar"></span><span id="HIDING_THE_TOOLBAR_OR_STATUS_BAR"></span>Hiding the Toolbar or Status Bar
 
@@ -99,11 +96,10 @@ If you hide the toolbar or the status bar, you have more space for debugging inf
 
 You can change the title of the WinDbg window by using the [**.wtitle (Set Window Title)**](-wtitle--set-window-title-.md) command.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Using%20the%20Toolbar%20and%20Status%20Bar%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

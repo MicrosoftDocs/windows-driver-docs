@@ -3,17 +3,14 @@ title: Bug Check 0x27 RDR_FILE_SYSTEM
 description: The RDR_FILE_SYSTEM bug check has a value of 0x00000027. This indicates that a problem occurred in the SMB redirector file system.
 ms.assetid: 1294022d-7281-45d2-89c8-40d11ce202f0
 keywords: ["Bug Check 0x27 RDR_FILE_SYSTEM", "RDR_FILE_SYSTEM"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - RDR_FILE_SYSTEM
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x27: RDR\_FILE\_SYSTEM
@@ -21,7 +18,7 @@ api_type:
 
 The RDR\_FILE\_SYSTEM bug check has a value of 0x00000027. This indicates that a problem occurred in the SMB redirector file system.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## RDR\_FILE\_SYSTEM Parameters
 
@@ -62,7 +59,7 @@ The RDR\_FILE\_SYSTEM bug check has a value of 0x00000027. This indicates that a
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -76,9 +73,9 @@ Resolution
 
 **To resolve a nonpaged pool memory depletion problem:** Add new physical memory to the computer. This will increase the quantity of nonpaged pool memory available to the kernel.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,17 +3,14 @@ title: pool extension command
 description: The pool extension displays information about a specific pool allocation or about the entire system-wide pool.
 ms.assetid: 1c224e0c-d50c-487e-8238-9be054368ac2
 keywords: ["pool", "pooltag.txt file", "pool tag", "memory, pool tag", "pool Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - pool
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # !pool
@@ -21,7 +18,7 @@ api_type:
 
 The **!pool** extension displays information about a specific pool allocation or about the entire system-wide pool.
 
-```
+```dbgcmd
 !pool [Address [Flags]]
 ```
 
@@ -64,7 +61,7 @@ Causes the display to suppress pool header information for all pools, except the
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -77,13 +74,13 @@ In Windows XP and later versions of Windows, the **!pool** extension displays th
 
 **Warning**   If you install an updated version of Debugging Tools for Windows in the same directory as the current version, it overwrites all of the files in that directory, including pooltag.txt. If you modify or replace the sample pooltag.txt file, be sure to save a copy of it to a different directory. After reinstalling the debuggers, you can copy the saved pooltag.txt over the default version.
 
- 
+ 
 
 If the **!pool** extension reports pool corruption, you should use [**!poolval**](-poolval.md) to investigate.
 
 Here is an example. If *Address* specifies 0xE1001050, the headers of all pools in this block are displayed, and 0xE1001050 itself is marked with an asterisk (\*).
 
-```
+```dbgcmd
 kd> !pool e1001050 
  e1001000 size:   40 previous size:    0  (Allocated)  MmDT
  e1001040 size:   10 previous size:   40  (Free)       Mm  
@@ -99,7 +96,7 @@ In this example, the right-most column shows the pool tag. The column to the lef
 
 The following command shows the pool headers and pool contents:
 
-```
+```dbgcmd
 kd> !pool e1001050 1
  e1001000 size:   40 previous size:    0  (Allocated)  MmDT
  e1001008  ffffffff 0057005c 004e0049 004f0044
@@ -120,11 +117,10 @@ kd> !pool e1001050 1
 ......
 ```
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20!pool%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

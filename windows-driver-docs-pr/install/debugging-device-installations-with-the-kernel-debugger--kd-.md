@@ -2,11 +2,8 @@
 title: Debugging Device Installations with the Kernel Debugger (KD)
 description: Debugging Device Installations with the Kernel Debugger (KD)
 ms.assetid: 0967d375-2602-44d2-b4ac-8d1e112afc3f
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Debugging Device Installations with the Kernel Debugger (KD)
@@ -28,7 +25,7 @@ The **DebugInstall** registry value specifies the type of device installation de
 
 When the **DebugInstall** registry value is set to 1, *DrvInst.exe* will first check that the kernel debugger is both enabled and currently attached before it breaks into the debugger. After this break is made, breakpoints can be set in the user-mode modules of the current process. For example:
 
-```
+```cpp
 kd> .reload /user
 kd> bp /p @$proc setupapi!SetupDiCallClassInstaller
 ```
@@ -39,7 +36,7 @@ For the developer of a [driver package](driver-packages.md), it is usually most 
 
 The following code example shows how a "Debugger Command Program" monitors the loading of a specific class installer or co-installer into the current process. In this example, the debugger command program will set a breakpoint on the main entry point (CoInstallerProc) of the *Mycoinst.dll* co-installer:
 
-```
+```cpp
 file: Z:\bpcoinst.txt
 
 r $t1 = 0
@@ -53,7 +50,7 @@ When executed, the debugger command program will check the list of modules loade
 
 Starting from the debug break initiated by the *DrvInst.exe* host process, you should first set a breakpoint on the return address of the call where *DrvInst.exe* broke into the kernel debugger. This breakpoint will clear all breakpoints set during the device installation and continue execution:
 
-```
+```cpp
 DRVINST.EXE: Entering debugger during PnP device installation.
 Device instance = "X\Y\Z" ...
 
@@ -67,7 +64,7 @@ Next, you should set some breakpoints within the process to allow the commands i
 
 To make sure that the breakpoint for the class installer or co-installer DLL entry point is set before the function is invoked for device installation, the debugger command program should be executed anytime a new DLL is loaded into the current process, that is, after a call to LoadLibraryExW returns:
 
-```
+```cpp
 kd> .reload
 kd> bp[0x10] /p @$proc kernel32!LoadLibraryExW "gu;$$><Z:\\bpcoinst.txt;g"
 ```
@@ -76,7 +73,7 @@ Rather than executing the program on every LoadLibraryEx call within the process
 
 Because no assumptions should be made about when these DLLs will be unloaded from the *DrvInst.exe* host process, you must make sure the breakpoints can handle locating the DLL entry points during any calls that are made to **SetupDiCallClassInstaller** from the *DrvInst.exe* host process.
 
-```
+```cpp
 kd> bd[0x10]
 kd> bp[0x11] /p @$proc setupapi!SetupDiCallClassInstaller "be[0x10];bp[0x12] /p @$proc @$ra \"bd[0x10];bc[0x12];g\";g"
 kd> g
@@ -92,9 +89,9 @@ The default time period for an installation process to complete is 5 minutes. If
 
 The default timeout restriction placed on device installations is still in effect while the process is being debugged through the kernel debugger. Because execution of all programs on the system is stopped while broken into the debugger, the amount of time taken by the installation process is tracked the same as it would be on a system that is not being debugged.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -7,17 +7,14 @@ keywords:
 - NDIS ports WDK , deactivating
 - deactivating NDIS ports WDK NDIS
 - deactivation PnP events WDK NDIS ports
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Deactivating an NDIS Port
 
 
-## <a href="" id="ddk-deactivating-ndis-ports-ng"></a>
+
 
 
 To deactivate NDIS ports, a miniport driver sends a port deactivation Plug and Play (PnP) event to NDIS. After a miniport driver successfully activates a port, the driver must deactivate the port before it can free the port. Also, the driver might deactivate a port for application-specific reasons. A port can be reactivated after it is deactivated, but a port cannot be reactivated if it is freed.
@@ -62,9 +59,9 @@ When a miniport driver deactivates the default port, NDIS closes all of the bind
 
 After a port is successfully deactivated, the port is in the allocated state. Miniport drivers cannot indicate received data or status for the port in the allocated state.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,17 +1,13 @@
 ---
 title: The Changer Class Driver
-author: windows-driver-content
 description: The Changer Class Driver
 ms.assetid: c1c2330c-9cfc-432f-945c-630dc16aa54d
 keywords:
 - changer drivers WDK storage , class drivers
 - storage changer drivers WDK , class drivers
 - class drivers WDK storage , changer drivers
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # The Changer Class Driver
@@ -38,11 +34,10 @@ The changer class driver:
 
 -   Calls **Changer***Xxx* miniclass driver routines to get product data, change element status, or query inquiry or volume tags data.
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

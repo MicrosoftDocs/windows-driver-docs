@@ -3,11 +3,8 @@ title: Reading and Filtering Debugging Messages
 description: Reading and Filtering Debugging Messages
 ms.assetid: 785469d2-30b8-4f73-b397-80bf89ed20ea
 keywords: ["reading and filtering debugging messages", "debugging messages, reading and filtering"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Reading and Filtering Debugging Messages
@@ -20,7 +17,7 @@ Kernel-mode code can use the **DbgPrintEx** and **KdPrintEx** routines to send a
 
 **Note**   In Windows Server 2003 and earlier versions of Windows, **DbgPrint** and **KdPrint** send messages to the kernel debugger unconditionally. In Windows Vista and later versions of Windows, these routines send messages conditionally, like **DbgPrintEx** and **KdPrintEx**. Whichever version of Windows you are using, it is recommended that you use **DbgPrintEx** and **KdPrintEx**, since these allow you to control the conditions under which the message will be sent.
 
- 
+ 
 
 For complete documentation of these routines, see the Windows Driver Kit.
 
@@ -85,7 +82,7 @@ There are six component names reserved for independent hardware vendors. To avoi
 </tbody>
 </table>
 
- 
+ 
 
 For example, if you are writing a video driver, you would use DPFLTR\_IHVVIDEO\_ID as the *ComponentId* parameter of **DbgPrintEx**, use the value name **IHVVIDEO** in the registry, and refer to **Kd\_IHVVIDEO\_Mask** in the debugger.
 
@@ -103,7 +100,7 @@ Thus, if you wish to set the bit field to 0x00004000, you can specify *Level* as
 
 The following constants can be useful for setting the value of *Level*. They are defined in the Microsoft Windows Driver Kit (WDK) header ntddk.h and the Windows SDK header ntrtl.h:
 
-```
+```cpp
 #define   DPFLTR_ERROR_LEVEL     0
 #define   DPFLTR_WARNING_LEVEL   1
 #define   DPFLTR_TRACE_LEVEL     2
@@ -125,9 +122,9 @@ In Windows Vista and later versions of Windows, all messages sent by **DbgPrint*
 
 There are two ways to set a component filter mask:
 
--   The component filter mask can be accessed in the registry key **HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Session Manager\\Debug Print Filter**. Using a registry editor, create or open this key. Under this key, create a value with the name of the desired component, in uppercase. Set it equal to the DWORD value that you wish to use as the component filter mask.
+- The component filter mask can be accessed in the registry key **HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Session Manager\\Debug Print Filter**. Using a registry editor, create or open this key. Under this key, create a value with the name of the desired component, in uppercase. Set it equal to the DWORD value that you wish to use as the component filter mask.
 
--   If a kernel debugger is active, it can access the component filter mask value by dereferencing the address stored in the symbol **Kd\_***XXXX***\_Mask**, where *XXXX* is the desired component name. You can display the value of this mask in WinDbg or KD with the **dd (Display DWORD)** command, or enter a new component filter mask with the **ed (Enter DWORD)** command. If there is a danger of symbol ambiguity, you may wish to specify this symbol as **nt!Kd\_***XXXX***\_Mask**.
+- If a kernel debugger is active, it can access the component filter mask value by dereferencing the address stored in the symbol **Kd\_**<em>XXXX</em>**\_Mask**, where *XXXX* is the desired component name. You can display the value of this mask in WinDbg or KD with the **dd (Display DWORD)** command, or enter a new component filter mask with the **ed (Enter DWORD)** command. If there is a danger of symbol ambiguity, you may wish to specify this symbol as **nt!Kd\_**<em>XXXX</em>**\_Mask**.
 
 Filter masks stored in the registry take effect during boot. Filter masks created by the debugger take effect immediately, and persist until Windows is rebooted. A value set in the registry can be overridden by the debugger, but the component filter mask will return to the value specified in the registry if the system is rebooted.
 
@@ -139,7 +136,7 @@ When **DbgPrintEx** is called in kernel-mode code, Windows compares the message 
 
 **Note**   Recall that when the *Level* parameter is between 0 and 31, the importance bit field is equal to 1 &lt;&lt; *Level*, but when the *Level* parameter is 32 or higher, the importance bit field is simply equal to *Level*.
 
- 
+ 
 
 Windows performs an AND operation on the importance bit field and the component filter mask. If the result is nonzero, the message is sent to the debugger.
 
@@ -155,7 +152,7 @@ Suppose that before the last boot, you created the following values in the **Deb
 
 Now you issue the following commands in the kernel debugger:
 
-```
+```dbgcmd
 kd> ed Kd_IHVVIDEO_Mask 0x8 
 kd> ed Kd_IHVAUDIO_Mask 0x7 
 ```
@@ -166,7 +163,7 @@ However, because these masks are automatically ORed with the **WIN2000** system-
 
 Now suppose that the following function calls occur in various drivers:
 
-```
+```cpp
 DbgPrintEx( DPFLTR_IHVVIDEO_ID,  DPFLTR_INFO_LEVEL,   "First message.\n");
 DbgPrintEx( DPFLTR_IHVAUDIO_ID,  7,                   "Second message.\n");
 DbgPrintEx( DPFLTR_IHVBUS_ID,    DPFLTR_MASK | 0x10,  "Third message.\n");
@@ -191,11 +188,10 @@ Any single call to **DbgPrint**, **DbgPrintEx**, **KdPrint**, or **KdPrintEx** w
 
 If a message is filtered out because of its *ComponentId* and *Level* values, it is not transmitted across the debugging connection. Therefore there is no way to display this message in the debugger.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Reading%20and%20Filtering%20Debugging%20Messages%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

@@ -6,22 +6,19 @@ keywords:
 - network component upgrades WDK , phases
 - upgrading network components WDK , phases
 - GUI mode phase WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # GUI Mode Phase of the Network Upgrade Process
 
 
-## <a href="" id="ddk-gui-mode-phase-of-the-network-upgrade-process-ng"></a>
+
 
 
 **Note**  Vendor-supplied network upgrades are not supported in Microsoft Windows XP (SP1 and later), Microsoft Windows Server 2003, and later operating systems.
 
- 
+ 
 
 Before the Windows 2000 or later operating system is installed on the system, NetSetup reads the network-specific information that was written to the AnswerFile during the Winnt32 phase.
 
@@ -45,9 +42,9 @@ If the system being upgraded contains any Async adapters, Setup calls the Async 
 
 -   The Async class installer writes the adapter's preupgrade parameter values to the Windows 2000 or later registry.
 
- 
+ 
 
- 
+ 
 
 
 

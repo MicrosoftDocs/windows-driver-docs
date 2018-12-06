@@ -2,15 +2,13 @@
 title: MetadataBuilderInformation
 description: MetadataBuilderInformation
 ms.assetid: 94403994-2165-405e-bfa0-974af8e241fe
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # MetadataBuilderInformation
 
+[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 
 The MetadataBuilderInformation element specifies information about the application that created the device metadata package.
 
@@ -50,17 +48,17 @@ A string that contains between 1 and 256 printable characters inclusive.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Application](application-service-schema.md)</p></td>
-<td><p>The [Application](application-service-schema.md) element specifies the name of the application software that created the service metadata package.</p></td>
+<td><p><a href="application-service-schema.md" data-raw-source="[Application](application-service-schema.md)">Application</a></p></td>
+<td><p>The <a href="application-service-schema.md" data-raw-source="[Application](application-service-schema.md)">Application</a> element specifies the name of the application software that created the service metadata package.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Version](version.md)</p></td>
-<td><p>The [Version](version.md) element specifies the version of the application software that created the service metadata package.</p></td>
+<td><p><a href="version.md" data-raw-source="[Version](version.md)">Version</a></p></td>
+<td><p>The <a href="version.md" data-raw-source="[Version](version.md)">Version</a> element specifies the version of the application software that created the service metadata package.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Parent_elements"></span><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Parent elements
 
@@ -78,13 +76,13 @@ A string that contains between 1 and 256 printable characters inclusive.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[PackageInfo](packageinfo.md)</p></td>
-<td><p>The [PackageInfo](packageinfo.md) element is the parent element of the [PackageInfo XML schema](packageinfo-xml-schema.md). The child elements of the PackageInfo element specify the attributes of the device metadata package.</p></td>
+<td><p><a href="packageinfo.md" data-raw-source="[PackageInfo](packageinfo.md)">PackageInfo</a></p></td>
+<td><p>The <a href="packageinfo.md" data-raw-source="[PackageInfo](packageinfo.md)">PackageInfo</a> element is the parent element of the <a href="packageinfo-xml-schema.md" data-raw-source="[PackageInfo XML schema](packageinfo-xml-schema.md)">PackageInfo XML schema</a>. The child elements of the PackageInfo element specify the attributes of the device metadata package.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="XSD"></span><span id="xsd"></span>XSD
 
@@ -120,11 +118,10 @@ A string that contains between 1 and 256 printable characters inclusive.
 
 The MetadataBuilderInformation element is not used by any component of the operating system. It is reserved for use by the OEM, IHV, and ISV.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_mb\p_mb%5D:%20MetadataBuilderInformation%20%20RELEASE:%20%281/18/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

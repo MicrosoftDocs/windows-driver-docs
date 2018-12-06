@@ -9,11 +9,8 @@ keywords:
 - test signing catalog files WDK
 - validating test certificates WDK
 - test signing driver packages WDK , catalog files
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Verifying the Signature of a Test-Signed Catalog File
@@ -21,13 +18,13 @@ ms.technology: windows-devices
 
 To verify that a [driver package's](driver-packages.md) [catalog file](catalog-files.md) was signed by a valid [test certificate](test-certificates.md), use the following [**SignTool**](https://msdn.microsoft.com/library/windows/hardware/ff551778) command:
 
-```
+```cpp
 SignTool verify /v /pa CatalogFileName.cat
 ```
 
 To verify that a file, listed in a [driver package's](driver-packages.md) catalog file, is signed by a test certificate, use the following [**SignTool**](https://msdn.microsoft.com/library/windows/hardware/ff551778) command:
 
-```
+```cpp
 SignTool verify /v /pa /c CatalogFileName.cat DriverFileName
 ```
 
@@ -49,13 +46,13 @@ Be aware that the SignTool **verify** command does not explicitly specify the te
 
 For example, the following command verifies that *Tstamd64.cat* has a test signature that complies with the PnP device installation signing requirements of Windows Vista and later versions of Windows. In this example, *Tstam64.cat* is in the same directory in which the command is run.
 
-```
+```cpp
 SignTool verify /v /pa tstamd64.cat
 ```
 
- 
+ 
 
- 
+ 
 
 
 

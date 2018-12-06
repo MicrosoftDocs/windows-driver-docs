@@ -1,21 +1,17 @@
 ---
 title: Creating KMDF Miniport Drivers
-author: windows-driver-content
 description: Creating KMDF Miniport Drivers
 ms.assetid: 3e01827b-fe1e-49ce-8072-9fc6c751fc01
 keywords:
 - miniport drivers WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Creating KMDF Miniport Drivers
 
 
-## <a href="" id="ddk-using-windows-driver-framework-with-miniport-drivers-df"></a>
+
 
 
 Some miniport drivers can use Kernel-Mode Driver Framework, if the port/miniport architecture allows the miniport driver to communicate with other drivers by using WDM or framework interfaces. For example, [NDIS miniport drivers with a WDM lower edge](https://msdn.microsoft.com/library/windows/hardware/ff565954) can use the framework to implement the lower edge.
@@ -34,9 +30,9 @@ A miniport driver can use the framework only if the underlying device supports P
 
 Restrictions apply to the device objects that the [**WdfDeviceMiniportCreate**](https://msdn.microsoft.com/library/windows/hardware/ff546802) method creates. For a list of these restrictions, see [**WdfDeviceMiniportCreate**](https://msdn.microsoft.com/library/windows/hardware/ff546802).
 
- 
+ 
 
- 
+ 
 
 
 

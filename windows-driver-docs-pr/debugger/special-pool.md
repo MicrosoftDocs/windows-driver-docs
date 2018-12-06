@@ -3,11 +3,8 @@ title: Special Pool
 description: Special Pool
 ms.assetid: 8904913d-78ed-4e5f-acef-3c21eeb87b8d
 keywords: ["Special Pool", "Special Pool, overview", "GFlags, Special Pool"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Special Pool
@@ -41,7 +38,7 @@ The **Special Pool** feature configures Windows to request memory allocations fr
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="selecting_a_pool_tag"></span><span id="SELECTING_A_POOL_TAG"></span>Selecting a Pool Tag
 
@@ -94,7 +91,7 @@ On a computer with an x86 processor, PAGE\_SIZE is 0x1000 and the allocation siz
 </tbody>
 </table>
 
- 
+ 
 
 On a computer with an AMD x86-64 processor, PAGE\_SIZE is 0x1000 and the allocation size ranges are 16 bytes in length. To configure the Special Pool feature for all allocations with sizes in this range, enter a number equal to the maximum of this range plus 16. (This number is always a multiple of 16.) The following table illustrates these values:
 
@@ -133,9 +130,9 @@ On a computer with an AMD x86-64 processor, PAGE\_SIZE is 0x1000 and the allocat
 </tbody>
 </table>
 
- 
+ 
 
-On a computer with any processor, you can use an asterisk ( **\*** ) or 0x2A (decimal 42) to configure the Special Pool feature for all memory allocations on the system.
+On a computer with any processor, you can use an asterisk ( **\\*** ) or 0x2A (decimal 42) to configure the Special Pool feature for all memory allocations on the system.
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
@@ -155,11 +152,10 @@ On Windows Vista and later versions of Windows, you can configure the Special Po
 
 On Windows Vista and later versions of Windows, you can configure the Special Pool feature either by using the Global Flags dialog box or at the command line. In earlier version of Windows, this feature is available only in the Global Flags dialog box.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Special%20Pool%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

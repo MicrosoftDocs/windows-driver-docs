@@ -1,12 +1,8 @@
 ---
 Description: Microsoft-provided in-box driver (Usbser.sys) for your Communications and CDC Control device.
 title: USB serial driver (Usbser.sys)
-author: windows-driver-content
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # USB serial driver (Usbser.sys)
@@ -27,7 +23,7 @@ ms.technology: windows-devices
 
 Microsoft-provided in-box driver (Usbser.sys) for your Communications and CDC Control device.
 
-In Windows 10, the driver has been rewritten by using the [Kernel-Mode Driver Framework](https://msdn.microsoft.com/library/windows/hardware/ff557565) that improves the overall stability of the driver.
+In Windows 10, the driver has been rewritten by using the [Kernel-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/) that improves the overall stability of the driver.
 
 -   Improved PnP and power management by the driver (such as, handling surprise removal).
 -   Added power management features such as [USB Selective Suspend](usb-selective-suspend.md).
@@ -41,7 +37,7 @@ Load the Microsoft-provided in-box driver (Usbser.sys) for your Communications a
 
 **Note**  If you trying to install a USB device class driver included in Windows, you do not need to download the driver. They are installed automatically. If they are not installed automatically, contact the device manufacturer. For the list of USB device class driver included in Windows, see [USB device class drivers included in Windows](supported-usb-classes.md).
 
- 
+ 
 
 **Windows 10**
 
@@ -57,7 +53,7 @@ In Windows 10, a new INF, Usbser.inf, has been added to %Systemroot%\\Inf that 
 
 **Note**  Microsoft encourages you to use in-box drivers whenever possible. On mobile editions of Windows, such as Windows 10 Mobile, only drivers that are part of the operating system are loaded. Unlike desktop editions, it is not possible to load a driver through an external driver package. With the new in-box INF, Usbser.sys is automatically loaded if a USB-to-serial device is detected on the mobile device.
 
- 
+ 
 
 **Windows 8.1 and earlier versions**
 
@@ -110,7 +106,7 @@ That entry can be added in one of two ways:
 
 If you install Usbser.sys for the USB CDC device, here are the application programming model options:
 
--   Starting in Windows 10, a Windows store app can send requests to Usbser.sys by using the [**Windows.Devices.SerialCommunication**](https://msdn.microsoft.com/library/windows/apps/dn921817) namespace. It defines Windows Runtime classes that can use to communicate with a USB CDC device through a serial port or some abstraction of a serial port. The classes provide functionality to discover such serial device, read and write data, and control serial-specific properties for flow control, such as setting baud rate, signal states.
+-   Starting in Windows 10, a Windows app can send requests to Usbser.sys by using the [**Windows.Devices.SerialCommunication**](https://msdn.microsoft.com/library/windows/apps/dn921817) namespace. It defines Windows Runtime classes that can use to communicate with a USB CDC device through a serial port or some abstraction of a serial port. The classes provide functionality to discover such serial device, read and write data, and control serial-specific properties for flow control, such as setting baud rate, signal states.
 
 -   In Windows 8.1 and earlier versions, you can write a Windows desktop application that opens a virtual COM port and communicates with the device. For more information, see:
 
@@ -125,9 +121,7 @@ If you install Usbser.sys for the USB CDC device, here are the application progr
 
 ## Related topics
 [USB device class drivers included in Windows](supported-usb-classes.md)  
-[How to use or to reference the Usbser.sys driver from universal serial bus (USB) modem .inf files](https://support.microsoft.com/en-us/help/837637/how-to-use-or-to-reference-the-usbser.sys-driver-from-universal-serial-bus-usb-modem-.inf-files)
+<!-- [How to use or to reference the Usbser.sys driver from universal serial bus (USB) modem .inf files](https://support.microsoft.com/help/837637/how-to-use-or-to-reference-the-usbser.sys-driver-from-universal-serial-bus-usb-modem-.inf-files) -->
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20USB%20serial%20driver%20%28Usbser.sys%29%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

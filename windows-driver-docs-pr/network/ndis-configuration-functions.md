@@ -4,17 +4,14 @@ description: NDIS Configuration Functions
 ms.assetid: 248e08d0-6145-499a-b307-2a5ffbd3733f
 keywords:
 - configuration functions WDK NDIS
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # NDIS Configuration Functions
 
 
-## <a href="" id="ddk-ndis-6-0-configuration-functions-ng"></a>
+
 
 
 NDIS includes the following functions to simplify driver configuration:
@@ -29,9 +26,9 @@ To obtain configuration information for an adapter, an NDIS miniport driver call
 
 A protocol driver uses a registry path to an adapter name to read configuration parameters that are specific to the binding between the driver and the underlying adapter. NDIS provides the registry path in the call to the [*ProtocolBindAdapterEx*](https://msdn.microsoft.com/library/windows/hardware/ff570220) function. The driver can pass this registry path to the [**NdisOpenProtocolConfiguration**](https://msdn.microsoft.com/library/windows/hardware/ff553683) function or to direct registry calls. As an alternative, the driver can pass a *BindParameters* structure to the **NdisOpenConfigurationEx** function to read the same parameters.
 
- 
+ 
 
- 
+ 
 
 
 

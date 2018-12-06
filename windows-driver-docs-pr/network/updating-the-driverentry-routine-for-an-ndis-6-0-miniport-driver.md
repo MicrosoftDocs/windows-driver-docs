@@ -4,17 +4,14 @@ description: Updating the DriverEntry Routine for an NDIS 6.0 Miniport Driver
 ms.assetid: 72a0a702-06f1-499a-8fff-7dcfa04aab32
 keywords:
 - DriverEntry WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Updating the DriverEntry Routine for an NDIS 6.0 Miniport Driver
 
 
-## <a href="" id="ddk-updating-the-driverentry-routine-for-ndis-6-0-miniport-drivers-ng"></a>
+
 
 
 Like NDIS 5.*x*, NDIS 6.0 miniport drivers register with NDIS in the [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff544113) routine. In NDIS 6.0, the [**NdisMInitializeWrapper**](https://msdn.microsoft.com/library/windows/hardware/ff553547) and [**NdisMRegisterUnloadHandler**](https://msdn.microsoft.com/library/windows/hardware/ff553606) functions are eliminated, along with the [**NdisMRegisterMiniport**](https://msdn.microsoft.com/library/windows/hardware/ff553602) function. To register the miniport driver with NDIS 6.0, call the [**NdisMRegisterMiniportDriver**](https://msdn.microsoft.com/library/windows/hardware/ff563654) function.
@@ -29,9 +26,9 @@ If the call to **NdisMRegisterMiniportDriver** succeeds, the miniport driver mus
 
 For more information about NDIS 6.0 driver initialization, see [Initializing a Miniport Driver](initializing-a-miniport-driver.md).
 
- 
+ 
 
- 
+ 
 
 
 

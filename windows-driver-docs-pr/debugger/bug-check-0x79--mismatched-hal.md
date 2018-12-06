@@ -3,17 +3,14 @@ title: Bug Check 0x79 MISMATCHED_HAL
 description: The MISMATCHED_HAL bug check has a value of 0x00000079 that indicates that the HAL revision level or configuration does not match that of the kernel or the computer.
 ms.assetid: 2d063c2a-c647-4436-b005-04f71a4d2b66
 keywords: ["Bug Check 0x79 MISMATCHED_HAL", "MISMATCHED_HAL"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - MISMATCHED_HAL
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x79: MISMATCHED\_HAL
@@ -21,7 +18,7 @@ api_type:
 
 The MISMATCHED\_HAL bug check has a value of 0x00000079. This bug check indicates that the Hardware Abstraction Layer (HAL) revision level or configuration does not match that of the kernel or the computer.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## MISMATCHED\_HAL Parameters
 
@@ -70,7 +67,7 @@ Parameter 1 indicates the type of mismatch.
 </tbody>
 </table>
 
- 
+ 
 
 When Parameter 1 equals 0x2, the following build type codes are used:
 
@@ -96,9 +93,9 @@ Resolution
 
 Restart the computer by using the product CD or the Windows Setup disks. At the Welcome screen, press F10 to start the Recovery Console. Use the **Copy** command to copy the correct HAL or kernel file from the original CD into the appropriate folder on the hard disk. The **Copy** command detects whether the file that you are copying is in the Microsoft compressed file format. If so, it automatically expands the file that is copied on the target drive.
 
- 
+ 
 
- 
+ 
 
 
 

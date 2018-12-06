@@ -6,17 +6,14 @@ keywords:
 - NDIS network interfaces WDK , interface providers
 - network interfaces WDK , interface providers
 - interface providers WDk network interface
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # NDIS Interface Provider Operations
 
 
-## <a href="" id="ddk-ndis-interface-provider-operations-ng"></a>
+
 
 
 All NDIS drivers can register as interface providers. Whenever a driver (or the NDIS proxy interface provider) detects a new interface that is being introduced to the computer, it allocates a [**NET\_LUID**](https://msdn.microsoft.com/library/windows/hardware/ff568747) index, registers the interface, and retains the associated NET\_LUID value in persistent storage (such as the registry). The following list describes several examples of how a new interface can be introduced to a computer:
@@ -33,15 +30,15 @@ If an interface provider detects that an interface is being shut down, it should
 
 **Note**  The NDIS proxy provider deregisters interfaces for miniport adapters when they are uninstalled and filter modules when they are detached.
 
- 
+ 
 
 If an interface provider detects that an interface is being removed completely (for example, the NDIS proxy provider is notified that a miniport adapter is being uninstalled), the interface provider deregisters the interface and releases the NET\_LUID index. The NDIS proxy provider also releases the NET\_LUID index when a filter module is detached.
 
 During run time, interface providers handle OID requests for the interfaces that they registered. The NDIS proxy interface provider might issue OID requests to underlying drivers to obtain interface information.
 
- 
+ 
 
- 
+ 
 
 
 

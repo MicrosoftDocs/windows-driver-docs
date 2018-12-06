@@ -6,17 +6,14 @@ keywords:
 - receiving data WDK networking
 - NdisMIndicateReceiveNetBufferLists
 - indicatings WDK NDIS miniport
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Indicating Received Data from a Miniport Driver
 
 
-## <a href="" id="ddk-indicating-received-data-from-a-miniport-driver-ng"></a>
+
 
 
 The following figure illustrates a miniport driver receive indication.
@@ -29,9 +26,9 @@ If a miniport driver sets the **NDIS\_RECEIVE\_FLAGS\_RESOURCES** flag in the *R
 
 If a miniport driver does not set the **NDIS\_RECEIVE\_FLAGS\_RESOURCES** flag in the *ReceiveFlags* parameter of [**NdisMIndicateReceiveNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff563598), NDIS returns the indicated [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structures to the miniport driver's [*MiniportReturnNetBufferLists*](https://msdn.microsoft.com/library/windows/hardware/ff559437) function. In this case, the miniport driver relinquishes ownership of the indicated structures until NDIS returns them to *MiniportReturnNetBufferLists*.
 
- 
+ 
 
- 
+ 
 
 
 

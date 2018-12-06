@@ -2,11 +2,8 @@
 title: What are the WPP extended format specification strings
 description: What are the WPP extended format specification strings
 ms.assetid: f05117c0-cb4b-483a-a141-08423555170a
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # What are the WPP extended format specification strings?
@@ -36,23 +33,23 @@ You can use the other extended strings in any tracing function.
 </tr>
 <tr class="even">
 <td align="left"><p>%!FILE!</p></td>
-<td align="left"><p>Displays the name of the source file from which the trace message was generated. This variable can also be used in the [trace message prefix](trace-message-prefix.md).</p></td>
+<td align="left"><p>Displays the name of the source file from which the trace message was generated. This variable can also be used in the <a href="trace-message-prefix.md" data-raw-source="[trace message prefix](trace-message-prefix.md)">trace message prefix</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>%!FLAGS!</p></td>
-<td align="left"><p>Displays the value of the [trace flags](trace-flags.md) that enable the trace message. This variable can also be used in the [trace message prefix](trace-message-prefix.md).</p></td>
+<td align="left"><p>Displays the value of the <a href="trace-flags.md" data-raw-source="[trace flags](trace-flags.md)">trace flags</a> that enable the trace message. This variable can also be used in the <a href="trace-message-prefix.md" data-raw-source="[trace message prefix](trace-message-prefix.md)">trace message prefix</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>%!FUNC!</p></td>
-<td align="left"><p>Displays the function that generated the trace message. This variable can also be used in the [trace message prefix](trace-message-prefix.md).</p></td>
+<td align="left"><p>Displays the function that generated the trace message. This variable can also be used in the <a href="trace-message-prefix.md" data-raw-source="[trace message prefix](trace-message-prefix.md)">trace message prefix</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>%!LEVEL!</p></td>
-<td align="left"><p>Displays the name of the [trace level](trace-level.md) that enables the trace message. This variable can also be used in the [trace message prefix](trace-message-prefix.md).</p></td>
+<td align="left"><p>Displays the name of the <a href="trace-level.md" data-raw-source="[trace level](trace-level.md)">trace level</a> that enables the trace message. This variable can also be used in the <a href="trace-message-prefix.md" data-raw-source="[trace message prefix](trace-message-prefix.md)">trace message prefix</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>%!LINE!</p></td>
-<td align="left"><p>Displays the line number of the line in the code that generated the trace prefix. This variable can also be used in the [trace message prefix](trace-message-prefix.md).</p></td>
+<td align="left"><p>Displays the line number of the line in the code that generated the trace prefix. This variable can also be used in the <a href="trace-message-prefix.md" data-raw-source="[trace message prefix](trace-message-prefix.md)">trace message prefix</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left">General use</td>
@@ -104,16 +101,16 @@ You can use the other extended strings in any tracing function.
 </tr>
 <tr class="odd">
 <td align="left"><p>%!delta!</p></td>
-<td align="left"><p>Displays the difference between two time values, in milliseconds. It is a LONGLONG value that is displayed in <strong>day~h:m:s</strong> format.</p></td>
+<td align="left"><p>Displays the difference between two time values, in milliseconds. It is a LONGLONG value that is displayed in <strong>day~h<span class="emoji" shortCode="m">Ⓜ️</span>s</strong> format.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>%!WAITTIME!</p></td>
-<td align="left"><p>Displays the time that was spent waiting for something to be completed, in milliseconds. It is a LONGLONG value that is displayed in <strong>day~h:m:s</strong> format.</p>
+<td align="left"><p>Displays the time that was spent waiting for something to be completed, in milliseconds. It is a LONGLONG value that is displayed in <strong>day~h<span class="emoji" shortCode="m">Ⓜ️</span>s</strong> format.</p>
 <p>Designed to be used with <strong>%!due!</strong>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>%!due!</p></td>
-<td align="left"><p>Displays the time that something is expected to be completed, in milliseconds. It is a LONGLONG value that is displayed in <strong>day~h:m:s</strong> format.</p>
+<td align="left"><p>Displays the time that something is expected to be completed, in milliseconds. It is a LONGLONG value that is displayed in <strong>day~h<span class="emoji" shortCode="m">Ⓜ️</span>s</strong> format.</p>
 <p>Designed to be used with <strong>%!WAITTIME!</strong>.</p></td>
 </tr>
 <tr class="even">
@@ -162,13 +159,12 @@ You can use the other extended strings in any tracing function.
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20What%20are%20the%20WPP%20extended%20format%20specification%20strings?%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

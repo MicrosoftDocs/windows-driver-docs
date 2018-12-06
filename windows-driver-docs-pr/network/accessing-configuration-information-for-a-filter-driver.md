@@ -5,17 +5,14 @@ ms.assetid: 7d6bd7d4-3c06-4fc3-874b-fb8369ac227e
 keywords:
 - filter drivers WDK networking , configuration information
 - NDIS filter drivers WDK , configuration information
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Accessing Configuration Information for a Filter Driver
 
 
-## <a href="" id="ddk-accessing-configuration-information-for-a-filter-driver-ng"></a>
+
 
 
 NDIS supports a set of functions that provide access to filter driver registry parameters. Filter drivers can access these parameters during the attach or restart operations or when they are processing a Plug and Play (PnP) notification. For more information about PnP notifications, see [Filter Module PnP Event Notifications](filter-module-pnp-event-notifications.md). For more information about attaching a filter module, see [Attaching a Filter Module](attaching-a-filter-module.md). For more information about restart operations, see [Starting a Filter Module](starting-a-filter-module.md).
@@ -26,9 +23,9 @@ If a filter driver obtained the handle in **NdisHandle** from the *NdisFilterHan
 
 After a driver is done accessing the configuration information, the driver must call the [**NdisCloseConfiguration**](https://msdn.microsoft.com/library/windows/hardware/ff561642) function to release the configuration handle and related resources.
 
- 
+ 
 
- 
+ 
 
 
 

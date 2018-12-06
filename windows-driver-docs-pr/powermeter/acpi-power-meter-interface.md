@@ -5,11 +5,8 @@ ms.assetid: ed39b02d-eb21-47c4-9e6a-d98334232c7b
 keywords:
 - Power Metering and Budgeting WDK , ACPI Power Meter Interface (PMI)
 - ACPI Power Meter Interface WDK
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # ACPI Power Meter Interface
@@ -25,11 +22,10 @@ This section includes the following topics:
 
 [ACPI IPMI Operation Region](acpi-ipmi-operation-region.md)
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

@@ -2,17 +2,14 @@
 title: Obtaining VMQ Information
 description: Obtaining VMQ Information
 ms.assetid: e851b656-ef59-42e7-b734-17ce9830096a
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Obtaining VMQ Information
 
 
-## <a href="" id="ddk-virtual-machine-queue-overview-nr"></a>
+
 
 
 The VMQ interface includes OID requests and WMI GUIDs that allow overlying drivers and applications to obtain information about the underlying VMQ configuration.
@@ -35,9 +32,9 @@ Overlying drivers and applications can issue the following OID query requests to
 
 For more information about obtaining VMQ capabilities, see [Determining the VMQ Capabilities of a Network Adapter](determining-the-vmq-capabilities-of-a-network-adapter.md).
 
- 
+ 
 
- 
+ 
 
 
 

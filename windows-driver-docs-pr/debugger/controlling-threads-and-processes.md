@@ -3,11 +3,8 @@ title: Controlling Threads and Processes
 description: Controlling Threads and Processes
 ms.assetid: 6182ca34-ee5e-47e9-82fe-29266397e3a8
 keywords: ["Debugger Engine API, threads and processes"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Controlling Threads and Processes
@@ -28,7 +25,7 @@ The implicit process may be changed by using [**SetImplicitProcessDataOffset**](
 
 **Note**   When setting [breakpoints](multiprocessor-syntax.md#breakpoints) during a live kernel debugging session, the debugger engine will pass the virtual address of the breakpoint to the target, and the target will set the breakpoint. In this case, only the process context of the target is used when handling the breakpoint; the value of the implicit process is irrelevant.
 
- 
+ 
 
 In kernel-mode debugging, the debugger engine will use the *implicit thread* to determine some of the target's [registers](x86-architecture.md#registers). This includes the processor stack (see [**GetStackOffset**](https://msdn.microsoft.com/library/windows/hardware/ff548403)), the frame offset (see [**GetFrameOffset**](https://msdn.microsoft.com/library/windows/hardware/ff546806)), and the instruction offset (see [**GetInstructionOffset**](https://msdn.microsoft.com/library/windows/hardware/ff546916)). When an event occurs, the implicit thread is set to the current thread.
 
@@ -38,7 +35,7 @@ Not all registers are determined by the implicit thread. Some registers will rem
 
 **Warning**   The implicit process and implicit thread are independent. If the implicit thread does not belong to the implicit process, then user and session state for the implicit thread will be in the wrong virtual address space and attempts to access this information will cause errors or provide incorrect results. This problem does not occur when accessing kernel memory, since kernel memory addresses are constant across all virtual address spaces. Thus information for the implicit thread located in kernel memory may be accessed independent of the implicit process.
 
- 
+ 
 
 ### <span id="threads"></span><span id="THREADS"></span>Threads
 
@@ -96,11 +93,10 @@ For more information about events, see [Monitoring Events](monitoring-events.md)
 
 For more information about threads and processes, including the TEB, KTHREAD, PEB, and KPROCESS structures, see *Microsoft Windows Internals* by David Solomon and Mark Russinovich.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Controlling%20Threads%20and%20Processes%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

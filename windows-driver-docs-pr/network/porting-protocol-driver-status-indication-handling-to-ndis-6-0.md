@@ -8,17 +8,14 @@ keywords:
 - status indications WDK networking , porting
 - porting protocol drivers WDK networking , status indications
 - porting status indications WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Porting Protocol Driver Status Indication Handling to NDIS 6.0
 
 
-## <a href="" id="ddk-porting-protocol-driver-status-indication-handling-to-ndis-6-0-nd"></a>
+
 
 
 In NDIS 6.0, the [**ProtocolStatusEx**](https://msdn.microsoft.com/library/windows/hardware/ff570270) function replaces the [**ProtocolStatus**](https://msdn.microsoft.com/library/windows/hardware/ff563257) function. Status indication parameters are packaged within an [**NDIS\_STATUS\_INDICATION**](https://msdn.microsoft.com/library/windows/hardware/ff567373) structure that contains the source handle, status code, buffer, and size.
@@ -29,9 +26,9 @@ NDIS 6.0 serializes status indications for each protocol binding. To determine l
 
 For more information about status indications in a protocol driver, see [Handling Status Indications in a Protocol Driver](handling-status-indications-in-a-protocol-driver.md).
 
- 
+ 
 
- 
+ 
 
 
 

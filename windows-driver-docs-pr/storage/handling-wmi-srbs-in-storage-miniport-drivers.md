@@ -1,6 +1,5 @@
 ---
 title: Handling WMI SRBs in Storage Miniport Drivers
-author: windows-driver-content
 description: Handling WMI SRBs in Storage Miniport Drivers
 ms.assetid: 92b78611-7e6f-4d77-9133-635df96584f0
 keywords:
@@ -9,11 +8,8 @@ keywords:
 - WMI SRBs WDK storage , about WMI SRBs
 - WMI SRBs WDK storage
 - SRB WMI support WDK storage
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling WMI SRBs in Storage Miniport Drivers
@@ -50,11 +46,10 @@ For information about implementing the previous steps, see the following topics 
 
 [Modifying Storage Miniport Driver Routines to Support WMI SRBs](modifying-storage-miniport-driver-routines-to-support-wmi-srbs.md)
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

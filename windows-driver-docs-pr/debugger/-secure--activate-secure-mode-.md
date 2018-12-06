@@ -3,17 +3,14 @@ title: .secure (Activate Secure Mode)
 description: The .secure command activates or displays the status of Secure Mode.
 ms.assetid: 58a8936e-898f-4608-b1b0-399d5152f410
 keywords: [".secure (Activate Secure Mode) Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - .secure (Activate Secure Mode)
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # .secure (Activate Secure Mode)
@@ -21,7 +18,7 @@ api_type:
 
 The **.secure** command activates or displays the status of Secure Mode.
 
-```
+```dbgcmd
 .secure 1 
 .secure 
 ```
@@ -54,7 +51,7 @@ Secure Mode can only be enabled while the debugger is dormant. Secure Mode appli
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -67,11 +64,10 @@ To activate Secure Mode, use the command **.secure 1** (or **.secure** followed 
 
 The command **.secure** will show whether Secure Mode is currently active.
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20.secure%20%28Activate%20Secure%20Mode%29%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

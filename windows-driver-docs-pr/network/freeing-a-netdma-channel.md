@@ -9,11 +9,8 @@ keywords:
 - DMA transfers WDK NetDMA , freeing channels
 - NetDMA WDK networking , freeing channels
 - channe
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Freeing a NetDMA Channel
@@ -21,9 +18,9 @@ ms.technology: windows-devices
 
 **Note**  The NetDMA interface is not supported in Windows 8 and later.
 
- 
+ 
 
-## <a href="" id="ddk-freeing-a-netdma-channel-ng"></a>
+
 
 
 The NetDMA interface calls a NetDMA provider driver's [**ProviderFreeDmaChannel**](https://msdn.microsoft.com/library/windows/hardware/ff570398) function to free a dynamic memory access (DMA) channel that was previously allocated in the [**ProviderAllocateDmaChannel**](https://msdn.microsoft.com/library/windows/hardware/ff570393) function. For more information about allocating DMA channels, see [Allocating a NetDMA Channel](allocating-a-netdma-channel.md).
@@ -34,9 +31,9 @@ After the NetDMA interface calls *ProviderFreeDmaChannel*, it will not call any 
 
 The NetDMA interface frees all of the allocated DMA channels before it returns from the [**NetDmaProviderStop**](https://msdn.microsoft.com/library/windows/hardware/ff568335) function. For more information about stopping a NetDMA provider, see [Stopping a NetDMA Provider](stopping-a-netdma-provider.md).
 
- 
+ 
 
- 
+ 
 
 
 

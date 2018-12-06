@@ -3,17 +3,14 @@ title: Bug Check 0xCB DRIVER_LEFT_LOCKED_PAGES_IN_PROCESS
 description: The DRIVER_LEFT_LOCKED_PAGES_IN_PROCESS bug check has a value of 0x000000CB. This indicates that a driver or the I/O manager failed to release locked pages after an I/O operation.
 ms.assetid: e97d114e-c6f1-44f1-a2ad-bfa8d03dc3c7
 keywords: ["Bug Check 0xCB DRIVER_LEFT_LOCKED_PAGES_IN_PROCESS", "DRIVER_LEFT_LOCKED_PAGES_IN_PROCESS"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - DRIVER_LEFT_LOCKED_PAGES_IN_PROCESS
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0xCB: DRIVER\_LEFT\_LOCKED\_PAGES\_IN\_PROCESS
@@ -21,7 +18,7 @@ api_type:
 
 The DRIVER\_LEFT\_LOCKED\_PAGES\_IN\_PROCESS bug check has a value of 0x000000CB. This indicates that a driver or the I/O manager failed to release locked pages after an I/O operation.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## DRIVER\_LEFT\_LOCKED\_PAGES\_IN\_PROCESS Parameters
 
@@ -61,7 +58,7 @@ If a driver locked these pages, the parameters have the following meaning.
 </tbody>
 </table>
 
- 
+ 
 
 If the driver responsible for the error can be identified, its name is printed on the blue screen and stored in memory at the location (PUNICODE\_STRING) **KiBugCheckDriver**.
 
@@ -98,7 +95,7 @@ If the I/O manager locked these pages, the parameters have the following meaning
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -107,9 +104,9 @@ This bug check is issued only if the registry value **\\\\HKEY\_LOCAL\_MACHINE\\
 
 Starting with Windows Vista, this bug check can also be issued by Driver Verifier when the Pool Tracking option is enabled.
 
- 
+ 
 
- 
+ 
 
 
 

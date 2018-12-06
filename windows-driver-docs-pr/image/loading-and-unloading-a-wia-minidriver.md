@@ -1,19 +1,15 @@
 ---
 title: Loading and Unloading a WIA Minidriver
-author: windows-driver-content
 description: Loading and Unloading a WIA Minidriver
 ms.assetid: a5f930c3-f92c-498a-a334-b5eb60fbd61b
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Loading and Unloading a WIA Minidriver
 
 
-## <a href="" id="ddk-loading-and-unloading-a-wia-minidriver-si"></a>
+
 
 
 After the WIA device driver is installed, the WIA service attempts to load it for the first time. The WIA minidriver's [**IStiUSD::Initialize**](https://msdn.microsoft.com/library/windows/hardware/ff543824) method is called and should perform the following tasks:
@@ -36,7 +32,7 @@ If the device port must be opened, a call to [**CreateFile**](https://msdn.micro
 
 The following example shows an implementation of the **IStiUSD::Initialize** method.
 
-```
+```cpp
 STDMETHODIMP CWIADevice::Initialize(
   PSTIDEVICECONTROL   pIStiDeviceControl,
   DWORD               dwStiVersion,
@@ -134,7 +130,7 @@ STDMETHODIMP CWIADevice::Initialize(
       // This is where you read registry entries for your device.
       // The DeviceData section is the proper place to put this 
       // information. Information about your device should
-      // have been written using the WIA device&#39;s .INF installation
+      // have been written using the WIA device's .INF installation
       // file.
       // You can access this information from this location in the
       // Registry. The WIA service owns the hParameters HKEY. 
@@ -158,7 +154,7 @@ The WIA service calls [**IStiUSD::GetCapabilities**](https://msdn.microsoft.com/
 
 The following example shows an implementation of **IStiUSD::GetCapabilities**.
 
-```
+```cpp
 /********************************************************************\
 * CWIADevice::GetCapabilities
 * Remarks:
@@ -191,12 +187,10 @@ STDMETHODIMP CWIADevice::GetCapabilities(PSTI_USD_CAPS pUsdCaps)
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bimage\image%5D:%20Loading%20and%20Unloading%20a%20WIA%20Minidriver%20%20RELEASE:%20%288/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

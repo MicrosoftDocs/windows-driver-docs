@@ -1,17 +1,13 @@
 ---
 title: Receiving I/O Requests
-author: windows-driver-content
 description: Receiving I/O Requests
 ms.assetid: 0bd41b7b-d64e-4d02-ab5c-0188e926c8e1
 keywords:
 - I/O requests WDK KMDF , receiving
 - receiving I/O requests WDK KMDF
 - request processing WDK KMDF , receiving requests
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Receiving I/O Requests
@@ -23,9 +19,9 @@ If a framework-based driver is using the [manual](dispatching-methods-for-i-o-re
 
 After the driver receives a request, it [owns](request-ownership.md) the request until it [requeues](requeuing-i-o-requests.md), [completes](completing-i-o-requests.md), [cancels](canceling-i-o-requests.md), or [forwards](forwarding-i-o-requests.md) the request.
 
- 
+ 
 
- 
+ 
 
 
 

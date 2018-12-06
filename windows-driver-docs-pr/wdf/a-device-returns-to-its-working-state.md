@@ -1,6 +1,5 @@
 ---
 title: A Device Returns to Its Working State
-author: windows-driver-content
 description: A Device Returns to Its Working State
 ms.assetid: 0a5bdaf5-ed9e-44d0-bc8a-876ceb342520
 keywords:
@@ -11,11 +10,8 @@ keywords:
 - power management WDK KMDF , wake-up capabilities
 - wake-up capabilities WDK KMDF
 - sleep power management WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # A Device Returns to Its Working State
@@ -47,9 +43,9 @@ For each function and filter driver that supports the device, the framework does
 
 7.  If the driver is using self-managed I/O, the framework calls the driver's [*EvtDeviceSelfManagedIoRestart*](https://msdn.microsoft.com/library/windows/hardware/ff540905) callback function.
 
- 
+ 
 
- 
+ 
 
 
 

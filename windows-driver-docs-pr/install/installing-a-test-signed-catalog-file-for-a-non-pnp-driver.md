@@ -7,11 +7,8 @@ keywords:
 - CAT files
 - .cat files
 - non-PnP driver catalog files WDK driver signing
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Installing a Test-Signed Catalog File for a Non-PnP Driver
@@ -25,11 +22,11 @@ Alternatively, you can use the [**SignTool**](https://msdn.microsoft.com/library
 
 **Tip**   Using embedded signatures is generally easier and more efficient than by using a signed catalog file. For more information about the advantages and disadvantages of using embedded signatures versus signed catalog files, see [Test Signing a Driver](https://msdn.microsoft.com/windows-drivers/develop/signing_a_driver).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

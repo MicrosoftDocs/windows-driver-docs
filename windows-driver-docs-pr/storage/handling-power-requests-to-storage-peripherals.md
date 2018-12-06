@@ -1,17 +1,13 @@
 ---
 title: Handling Power Requests to Storage Peripherals
-author: windows-driver-content
 description: Handling Power Requests to Storage Peripherals
 ms.assetid: 3cc7b885-27ad-4384-aeec-4d76f9ad4f1c
 keywords:
 - peripherals WDK storage , power requests
 - storage peripherals WDK , power requests
 - power requests WDK storage
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Handling Power Requests to Storage Peripherals
@@ -38,11 +34,10 @@ If a storage class driver has a *StartIo* routine, that routine handles synchron
 
 A class driver should not attempt to bypass a queue locked by another driver.
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

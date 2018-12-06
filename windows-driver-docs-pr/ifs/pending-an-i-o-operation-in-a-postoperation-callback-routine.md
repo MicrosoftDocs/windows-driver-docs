@@ -1,16 +1,12 @@
 ---
 title: Pending an I/O Operation in a Postoperation Callback Routine
-author: windows-driver-content
 description: Pending an I/O Operation in a Postoperation Callback Routine
 ms.assetid: 126e13fb-51f6-4dcc-aa13-850921b3c752
 keywords:
 - postoperation callback routines WDK file system minifilter , pending operations
 - pending I/O operations in callback routines WDK file system
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Pending an I/O Operation in a Postoperation Callback Routine
@@ -43,11 +39,10 @@ After the minifilter driver's postoperation callback routine returns FLT\_POSTOP
 
 The work routine that dequeues and performs completion processing for the I/O operation must call **FltCompletePendedPostOperation** to return control of the operation to the filter manager.
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

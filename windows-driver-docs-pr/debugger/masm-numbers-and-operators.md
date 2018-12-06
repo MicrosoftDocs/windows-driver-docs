@@ -3,11 +3,8 @@ title: MASM Numbers and Operators
 description: MASM Numbers and Operators
 ms.assetid: 9aeb3ef2-d83a-4f99-9a55-4bbd8a7e11b5
 keywords: ["expressions, MASM expression syntax", "numerical expressions (MASM)", "MASM expressions, numbers", "MASM expressions, operators", "operators (MASM)", "(MASM prefix)", "binary operators", "shift operators", "unary operators"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # MASM Numbers and Operators
@@ -129,7 +126,7 @@ You can use the following unary operators.
 </tbody>
 </table>
 
- 
+ 
 
 You can use the following binary operators. The operators in each cell take precedence over those in lower cells. Operators in the same cell are of the same precedence and are parsed from left to right.
 
@@ -182,7 +179,7 @@ You can use the following binary operators. The operators in each cell take prec
 <p>Not equal to</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>and</strong> (or &)</p></td>
+<td align="left"><p><strong>and</strong> (or &amp;)</p></td>
 <td align="left"><p>Bitwise AND</p></td>
 </tr>
 <tr class="even">
@@ -196,7 +193,7 @@ You can use the following binary operators. The operators in each cell take prec
 </tbody>
 </table>
 
- 
+ 
 
 The &lt;, &gt;, =, ==, and != comparison operators evaluate to 1 if the expression is true or zero if the expression is false. A single equal sign (=) is the same as a double equal sign (==). You cannot use side effects or assignments within a MASM expression.
 
@@ -226,7 +223,7 @@ You can also use the following additional operators in MASM expressions.
 <tr class="even">
 <td align="left"><p><strong>$iment (</strong><em>Address</em><strong>)</strong></p></td>
 <td align="left"><p>Returns the address of the image entry point in the loaded module list. <em>Address</em> specifies the Portable Executable (PE) image base address. The entry is found by looking up the image entry point in the PE image header of the image that <em>Address</em> specifies.</p>
-<p>You can use this function for both modules that are already in the module list and to set [unresolved breakpoints](unresolved-breakpoints---bu-breakpoints-.md) by using the <strong>[bu](bp--bu--bm--set-breakpoint-.md)</strong> command.</p></td>
+<p>You can use this function for both modules that are already in the module list and to set <a href="unresolved-breakpoints---bu-breakpoints-.md" data-raw-source="[unresolved breakpoints](unresolved-breakpoints---bu-breakpoints-.md)">unresolved breakpoints</a> by using the <strong><a href="bp--bu--bm--set-breakpoint-.md" data-raw-source="[bu](bp--bu--bm--set-breakpoint-.md)">bu</a></strong> command.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>$scmp(&quot;</strong><em>String1</em><strong>&quot;, &quot;</strong><em>String2</em><strong>&quot;)</strong></p></td>
@@ -238,7 +235,7 @@ You can also use the following additional operators in MASM expressions.
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>$spat(&quot;</strong><em>String</em><strong>&quot;, &quot;</strong><em>Pattern</em><strong>&quot;)</strong></p></td>
-<td align="left"><p>Evaluates to <strong>TRUE</strong> or <strong>FALSE</strong> depending on whether <em>String</em> matches <em>Pattern</em>. The matching is case-insensitive. <em>Pattern</em> can contain a variety of wildcard characters and specifiers. For more information about the syntax, see [String Wildcard Syntax](string-wildcard-syntax.md).</p></td>
+<td align="left"><p>Evaluates to <strong>TRUE</strong> or <strong>FALSE</strong> depending on whether <em>String</em> matches <em>Pattern</em>. The matching is case-insensitive. <em>Pattern</em> can contain a variety of wildcard characters and specifiers. For more information about the syntax, see <a href="string-wildcard-syntax.md" data-raw-source="[String Wildcard Syntax](string-wildcard-syntax.md)">String Wildcard Syntax</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>$vvalid(</strong><em>Address</em><strong>,</strong> <em>Length</em><strong>)</strong></p></td>
@@ -247,7 +244,7 @@ You can also use the following additional operators in MASM expressions.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="registers_and_pseudo_registers_in_masm_expressions"></span><span id="REGISTERS_AND_PSEUDO_REGISTERS_IN_MASM_EXPRESSIONS"></span>Registers and Pseudo-Registers in MASM Expressions
 
@@ -261,11 +258,10 @@ For more information about registers and pseudo-registers, see [Register Syntax]
 
 You can use source file and line number expressions within MASM expressions. You must enclose these expressions by using grave accents (\`). For more information about the syntax, see [Source Line Syntax](source-line-syntax.md).
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20MASM%20Numbers%20and%20Operators%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

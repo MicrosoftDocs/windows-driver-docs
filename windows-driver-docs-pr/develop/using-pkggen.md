@@ -1,3 +1,10 @@
+---
+title: Installing a driver on Windows 10 Mobile
+description: Describes driver installation on Windows 10 Mobile.
+ms.date: 06/02/2017
+ms.localizationpriority: medium
+---
+
 # Installing a driver on Windows 10 Mobile
 
 To install a driver on Windows 10 Mobile, use an .spkg file. An .spkg ("*package file*") is a standalone module that contains your driver package.
@@ -14,7 +21,7 @@ WDK 10 includes PkgGen, a tool that generates package files. You run PkgGen in 
 
 To view the contents of the package file, append a .cab suffix to the file name and then open the cab file in Windows Explorer.
 
-To learn about running PkgGen outside of Visual Studio, see [Creating mobile packages](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn756642).
+To learn about running PkgGen outside of Visual Studio, see [Creating mobile packages](https://msdn.microsoft.com/Library/Windows/Hardware/Dn756642).
 
 To install a mobile driver package (.spkg file), you have two options.
 
@@ -27,11 +34,11 @@ To install a mobile driver package (.spkg file), you have two options.
 
     Attach your mobile device to the PC. Then, from an elevated command prompt, issue the following command:
 
-       ```
+       ```cpp
        IUTool -p MyKmdfDriver.spkg
        ```
 
-2.  For more information, see [Adding a driver to a test image](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Mt131832).
+2.  For more information, see [Adding a driver to a test image](https://msdn.microsoft.com/Library/Windows/Hardware/Mt131832).
 
 **Using ImgGen to add a driver package (.spkg) to a mobile OS image (.ffu)**
 

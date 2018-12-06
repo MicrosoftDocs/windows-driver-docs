@@ -7,11 +7,8 @@ keywords:
 - callout drivers WDK Windows Filtering Platform , closing sessions
 - filter engine WDK Windows Filtering Platform
 - closing filter engine sessions WDK Windows Filtering Platform
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Closing a Session to the Filter Engine
@@ -19,16 +16,16 @@ ms.technology: windows-devices
 
 After a callout driver has performed the desired management tasks, it should close the session to the filter engine. A callout driver does this by calling the [**FwpmEngineClose0**](https://msdn.microsoft.com/library/windows/hardware/ff550072) function. For example:
 
-```
+```C++
 status =
  FwpmEngineClose0(
  engineHandle  // An handle to the open session
     );
 ```
 
- 
+ 
 
- 
+ 
 
 
 

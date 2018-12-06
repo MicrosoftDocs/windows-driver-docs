@@ -1,6 +1,5 @@
 ---
 title: Security Considerations for File Systems
-author: windows-driver-content
 description: Security Considerations for File Systems
 ms.assetid: 0765adec-c788-49ed-92bd-abec0e3b2ef6
 keywords:
@@ -8,11 +7,8 @@ keywords:
 - security WDK file systems
 - credentials WDK file systems
 - file security WDK file systems
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Security Considerations for File Systems
@@ -33,11 +29,10 @@ This section provides security guidance for file system developers. Follow these
 
 [Security Considerations for File System Filter Drivers](security-considerations-for-file-system-filter-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

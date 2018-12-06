@@ -1,13 +1,9 @@
 ---
 title: Building a Basic v4 Printer Driver
-author: windows-driver-content
 description: Build a basic v4 printer driver by using the driver development wizard in Microsoft Visual Studio 2017 to select the minimum set of features to create a functional printer driver.
 ms.assetid: 6E50CD69-D385-4724-B6B1-85D42EFFC6F0
-ms.author: windowsdriverdev
-ms.date: 10/27/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 07/09/2018
+ms.localizationpriority: medium
 ---
 
 # Building a Basic v4 Printer Driver
@@ -80,7 +76,7 @@ Line 2 describes the contents of the driver INF including Manufacturer name and 
 
 For example, if the year is 2017 and your company’s name is Fabrikam, and the print device model is 1234 you would type the following:
 
-```
+```cpp
 ; Copyright (c) 2017 Fabrikam
 ; INF file for the Fabrikam 1234 print driver
 ```
@@ -91,12 +87,12 @@ Find the line containing **\[Version\]**.
 
 - Check and make sure that you see this line:
 
-    ```
+    ```cpp
     **ClassVer**=4.0
     ```
 - Check and make sure that you see this line:
 
-    ```
+    ```cpp
     **Signature**="$WINDOWS NT$"
     ```
 
@@ -106,7 +102,7 @@ Find the line containing **\[SourceDiskFiles\]**.
 
 Below this type the following lines:
 
-```
+```cpp
 MyV4PrintDriver.gpd=1
 MyV4PrintDriver-manifest.ini=1
 MyV4PrintDriverRenderFilter-PipelineConfig.xml=1
@@ -119,7 +115,7 @@ Find the line containing **\[DriverFiles\]**.
 
 Below this type the following lines:
 
-```
+```cpp
 MyV4PrintDriver.gpd
 MyV4PrintDriver-manifest.ini
 MyV4PrintDriverRenderFilter-PipelineConfig.xml
@@ -132,7 +128,7 @@ Find the line containing **\[Standard.NT$ARCH$\]**.
 
 This section references the Install section of the INF for each model. For example, if the model of your printer is Fabrikam 1234, then you would type the following:
 
-```
+```cpp
 "Fabrikam 1234"=DriverInstall, USBPRINT\\Fabrikam1234
 "Fabrikam 1234"=DriverInstall, WSDPRINT\\Fabrikam1234
 ```
@@ -145,13 +141,13 @@ Click **Driver Files**, then in the **Properties** window look at the value for 
 
 In the INF file, in the **\[Standard.NT$ARCH$\]** section, type the following line:
 
-```
+```cpp
 "Fabrikam 1234"=DriverInstall,
 ```
 
 And then after the comma, paste the GUID that you copied in the preceding step. The completed **\[Standard.NT$ARCH$\]** section should look like the following:
 
-```
+```cpp
 "Fabrikam 1234"=DriverInstall, {GUID}
 "Fabrikam 1234"=DriverInstall, USBPRINT\Fabrikam1234
 "Fabrikam 1234"=DriverInstall, WSDPRINT\Fabrikam1234
@@ -165,7 +161,7 @@ Below this you will find the definition of the *ManufacturerName* string. Replac
 
 For example, if your company’s name is Fabrikam, you would type the following:
 
-```
+```cpp
 ManufacturerName="Fabrikam"
 ```
 
@@ -173,7 +169,7 @@ ManufacturerName="Fabrikam"
 
 When you complete the INF file, it should look like the following:
 
-```
+```cpp
 ; Copyright (c) 2017 Fabrikam
 ; INF file for the Fabrikam 1234 print driver
 
@@ -289,11 +285,9 @@ Create a print queue using either plug-and-play or the Add Printer Wizard.
 
 For more information about INF files for the v4 printer driver, see [V4 Driver INF](v4-driver-inf.md).
 
-> [!Note]
+> [!NOTE]
 > In addition to the files in the preceding table, notice that a *MyV4PrintDriver Render Filter* folder was created. This is the render filter project template and it provides a good foundation for building an XPS rendering filter and an XPS filter pipeline configuration file. For more information about XPS rendering filters, see [XPSDrv Render Module](xpsdrv-render-module.md), and to see an example of an XPS rendering filter, see the [XPS Rasterization Filter Service](http://go.microsoft.com/fwlink/p/?LinkId=617951) sample.
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Building%20a%20Basic%20v4%20Printer%20Driver%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

@@ -1,13 +1,9 @@
 ---
 title: Serial Controller Drivers Overview
-author: windows-driver-content
 description: All versions of Windows provide driver support for serial controller devices.
 ms.assetid: 1EA0221E-0F68-429B-9DA5-4AE2D3394A09
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Serial Controller Drivers Overview
@@ -47,24 +43,22 @@ For more information about SerCx2, see [Using Version 2 of the Serial Framework 
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Serial I/O Request Interface](serial-i-o-request-interface.md)</p></td>
+<td><p><a href="serial-i-o-request-interface.md" data-raw-source="[Serial I/O Request Interface](serial-i-o-request-interface.md)">Serial I/O Request Interface</a></p></td>
 <td><p>To control a peripheral device that is connected to a port on a serial controller, a client application or peripheral device driver sends I/O requests to the port.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Differences Between SerCx2.sys and Serial.sys](differences-between-sercx2-and-serial-sys.md)</p></td>
-<td><p>Although the inbox Sercx2.sys and Serial.sys driver components both implement the [serial I/O request interface](serial-i-o-request-interface.md), these components are not interchangeable. They are designed to meet different sets of requirements.</p></td>
+<td><p><a href="differences-between-sercx2-and-serial-sys.md" data-raw-source="[Differences Between SerCx2.sys and Serial.sys](differences-between-sercx2-and-serial-sys.md)">Differences Between SerCx2.sys and Serial.sys</a></p></td>
+<td><p>Although the inbox Sercx2.sys and Serial.sys driver components both implement the <a href="serial-i-o-request-interface.md" data-raw-source="[serial I/O request interface](serial-i-o-request-interface.md)">serial I/O request interface</a>, these components are not interchangeable. They are designed to meet different sets of requirements.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bserports\serports%5D:%20Serial%20Controller%20Drivers%20Overview%20%20RELEASE:%20%288/4/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

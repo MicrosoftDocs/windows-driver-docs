@@ -1,6 +1,5 @@
 ---
 title: Controlling Device Access in KMDF Drivers
-author: windows-driver-content
 description: Controlling Device Access in KMDF Drivers
 ms.assetid: 62bbc69f-0754-4d37-a476-dd2ac3d70de6
 keywords:
@@ -9,11 +8,8 @@ keywords:
 - device objects WDK KMDF
 - framework objects WDK KMDF , device access controls
 - security descriptors WDK KMDF
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Controlling Device Access in KMDF Drivers
@@ -61,9 +57,9 @@ For information about how the operating system determines which security descrip
 
 When the framework creates a device object, it always sets the FILE\_DEVICE\_SECURE\_OPEN flag so that the operating system will check a device's security descriptor before allowing an application to access any names within the device's namespace. For more information about the FILE\_DEVICE\_SECURE\_OPEN flag and device namespace, see [Controlling Device Namespace Access](https://msdn.microsoft.com/library/windows/hardware/ff542068).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,11 +2,8 @@
 title: Using the USB Removable Capability for Device Container Grouping
 description: Using the USB Removable Capability for Device Container Grouping
 ms.assetid: ed78a544-1035-4b99-b27c-90ebef2ed710
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Using the USB Removable Capability for Device Container Grouping
@@ -16,9 +13,9 @@ The USB **Removable** capability allows the operating system to create a device 
 
 It is important to recognize that the USB hub driver uses available removability information from the physical USB hardware in order to report a more accurate **Removable** capability for devices connected to each of its internal or external-facing ports. For more information, see [Container IDs Generated from the Removable Device Capability](container-ids-generated-from-the-removable-device-capability.md).
 
- 
+ 
 
- 
+ 
 
 
 

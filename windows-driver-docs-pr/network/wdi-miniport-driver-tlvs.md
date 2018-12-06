@@ -1,13 +1,9 @@
 ---
 title: WDI Miniport Driver TLVs
-author: windows-driver-content
 description: This section contains WDI TLVs (Type-Length-Value).
 ms.assetid: BAE1E159-F0CB-4A74-9E35-4361C94518E6
-ms.author: windowsdriverdev 
-ms.date: 07/18/2017 
-ms.topic: article 
-ms.prod: windows-hardware 
-ms.technology: windows-devices 
+ms.date: 07/18/2017
+ms.localizationpriority: medium
 ---
 
 # WDI Miniport Driver TLVs
@@ -90,6 +86,7 @@ This section contains WDI TLVs (Type-Length-Value).
 -   [**WDI\_TLV\_COALESCING\_FILTER\_MATCH\_COUNT**](wdi-tlv-coalescing-filter-match-count.md)
 -   [**WDI\_TLV\_COMMUNICATION\_CAPABILITIES**](wdi-tlv-communication-capabilities.md)
 -   [**WDI\_TLV\_COMMUNICATION\_CONFIGURATION\_ATTRIBUTES**](wdi-tlv-communication-configuration-attributes.md)
+-   [**WDI_TLV_CONFIGURED_CIPHER_KEY**](wdi-tlv-configured-cipher-key.md)
 -   [**WDI\_TLV\_CONFIGURED\_MAC\_ADDRESS**](wdi-tlv-configured-mac-address.md)
 -   [**WDI\_TLV\_CONNECT\_BSS\_ENTRY**](wdi-tlv-connect-bss-entry.md)
 -   [**WDI\_TLV\_CONNECT\_PARAMETERS**](wdi-tlv-connect-parameters.md)
@@ -105,6 +102,9 @@ This section contains WDI TLVs (Type-Length-Value).
 -   [**WDI\_TLV\_DELETE\_CIPHER\_KEY\_INFO**](wdi-tlv-delete-cipher-key-info.md)
 -   [**WDI\_TLV\_DELETE\_PEER\_STATE\_PARAMETERS**](wdi-tlv-delete-peer-state-parameters.md)
 -   [**WDI\_TLV\_DELETE\_PORT\_PARAMETERS**](wdi-tlv-delete-port-parameters.md)
+-   [**WDI_TLV_DEVICE_SERVICE_PARAMS_DATA_BLOB**](wdi-tlv-device-service-params-data-blob.md)
+-   [**WDI_TLV_DEVICE_SERVICE_PARAMS_GUID**](wdi-tlv-device-service-params-guid.md)
+-   [**WDI_TLV_DEVICE_SERVICE_PARAMS_OPCODE**](wdi-tlv-device-service-params-opcode.md)
 -   [**WDI\_TLV\_DISALLOWED\_BSSIDS\_LIST**](wdi-tlv-disallowed-bssids-list.md)
 -   [**WDI\_TLV\_DISASSOCIATION\_INDICATION\_PARAMETERS**](wdi-tlv-disassociation-indication-parameters.md)
 -   [**WDI\_TLV\_DISASSOCIATION\_PARAMETERS**](wdi-tlv-disassociation-parameters.md)
@@ -167,6 +167,7 @@ This section contains WDI TLVs (Type-Length-Value).
 -   [**WDI_TLV_OFFLOAD_SCOPE**](wdi-tlv-offload-scope.md)
 -   [**WDI\_TLV\_OPERATING\_CLASS**](wdi-tlv-operating-class.md)
 -   [**WDI\_TLV\_OPERATION\_MODE**](wdi-tlv-operation-mode.md)
+-   [**WDI_TLV_OS_POWER_MANAGEMENT_FEATURES**](wdi-tlv-os-power-management-features.md)
 -   [**WDI\_TLV\_P2P\_ACTION\_FRAME\_DEVICE\_CONTEXT**](wdi-tlv-p2p-action-frame-device-context.md)
 -   [**WDI\_TLV\_P2P\_ACTION\_FRAME\_IES**](wdi-tlv-p2p-action-frame-ies.md)
 -   [**WDI\_TLV\_P2P\_ACTION\_FRAME\_RESPONSE\_PARAMETERS**](wdi-tlv-p2p-action-frame-response-parameters.md)
@@ -260,6 +261,7 @@ This section contains WDI TLVs (Type-Length-Value).
 -   [**WDI\_TLV\_PM\_PROTOCOL\_OFFLOAD\_GET**](wdi-tlv-pm-protocol-offload-get.md)
 -   [**WDI\_TLV\_PM\_PROTOCOL\_OFFLOAD\_IPv4ARP**](wdi-tlv-pm-protocol-offload-ipv4arp.md)
 -   [**WDI\_TLV\_PM\_PROTOCOL\_OFFLOAD\_IPv6NS**](wdi-tlv-pm-protocol-offload-ipv6ns.md)
+-   [**WDI_TLV_PM_PROTOCOL_RSN_OFFLOAD_KEYS**](wdi-tlv-pm-protocol-rsn-offload-keys.md)
 -   [**WDI\_TLV\_PM\_PROTOCOL\_OFFLOAD\_REMOVE**](wdi-tlv-pm-protocol-offload-remove.md)
 -   [**WDI\_TLV\_PMKID**](wdi-tlv-pmkid.md)
 -   [**WDI\_TLV\_PORT\_ATTRIBUTES**](wdi-tlv-port-attributes.md)
@@ -274,6 +276,7 @@ This section contains WDI TLVs (Type-Length-Value).
 -   [**WDI\_TLV\_RECEIVE\_COALESCING\_CONFIG**](wdi-tlv-receive-coalescing-config.md)
 -   [**WDI\_TLV\_RECEIVE\_FILTER\_FIELD**](wdi-tlv-receive-filter-field.md)
 -   [**WDI\_TLV\_ROAMING\_NEEDED\_PARAMETERS**](wdi-tlv-roaming-needed-parameters.md)
+-   [**WDI_TLV_RSN_KEY_INFO**](wdi-tlv-rsn-key-info.md)
 -   [**WDI\_TLV\_SAFE\_MODE\_PARAMETERS**](wdi-tlv-safe-mode-parameters.md)
 -   [**WDI\_TLV\_SCAN\_DWELL\_TIME**](wdi-tlv-scan-dwell-time.md)
 -   [**WDI\_TLV\_SCAN\_MODE**](wdi-tlv-scan-mode.md)
@@ -316,7 +319,5 @@ This section contains WDI TLVs (Type-Length-Value).
 ## Related topics
 [WDI message structure](https://msdn.microsoft.com/library/windows/hardware/mt269163)  
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20WDI%20Miniport%20Driver%20TLVs%20%20RELEASE:%20%287/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

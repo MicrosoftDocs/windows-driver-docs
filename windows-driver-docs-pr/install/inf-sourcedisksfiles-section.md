@@ -10,11 +10,8 @@ api_name:
 - INF SourceDisksFiles Section
 api_type:
 - NA
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # INF SourceDisksFiles Section
@@ -24,9 +21,11 @@ The **SourceDisksFiles** section names the source files that are used during ins
 
 In order for a driver file or an application file to be included as part of a signed [driver package](driver-packages.md), the file must have a corresponding INF **SourceDisksFiles** section entry and a corresponding [**INF CopyFiles directive**](inf-copyfiles-directive.md).
 
-```
+```cpp
 [SourceDisksFiles] | 
 [SourceDisksFiles.x86] | 
+[SourceDisksFiles.arm] | (Windows 8 and later versions of Windows)
+[SourceDisksFiles.arm64] | (Windows 10 version 1709 and later versions of Windows)
 [SourceDisksFiles.ia64] | (Windows XP and later versions of Windows)
 [SourceDisksFiles.amd64] (Windows XP and later versions of Windows)
 
@@ -66,14 +65,14 @@ During installation, SetupAPI functions look for architecture-specific **SourceD
 
 **Important**  Do not use a **SourceDisksFiles** section to copy INF files. For more information about how to copy INF files, see [Copying INFs](copying-inf-files.md).
 
- 
+ 
 
 Examples
 --------
 
 The following example shows a [**SourceDisksNames**](inf-sourcedisksnames-section.md) section and a corresponding SourceDisksFiles section.  Note that this example has only a **SourceDisksFiles.x86** section, specifying the files for the x86 architecture.  An INF that supports another architecture will need a corresponding **SourceDisksFiles** section for that architecture, or the use of an undecorated [**SourceDisksFiles**] section, which supports all architectures.
 
-```
+```cpp
 [SourceDisksNames]
 ;
 ; diskid = description[, [tagfile] [, <unused>, subdir]]
@@ -101,9 +100,9 @@ aha154x.sys = 1,\x86 ; on distribution disk 1, in subdir \WinNT\x86
 
 [**Version**](inf-version-section.md)
 
- 
+ 
 
- 
+ 
 
 
 

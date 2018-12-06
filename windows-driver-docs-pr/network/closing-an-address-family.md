@@ -6,17 +6,14 @@ keywords:
 - address families WDK networking
 - AFs WDK networking
 - closing address families
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Closing an Address Family
 
 
-## <a href="" id="ddk-closing-an-address-family-ng"></a>
+
 
 
 A connection-oriented client calls [**NdisClCloseAddressFamily**](https://msdn.microsoft.com/library/windows/hardware/ff561626) to delete the association between itself, a call manager, and a particular underlying NIC.
@@ -29,9 +26,9 @@ This section includes the following topics:
 
 [Closing an Address Family in a CoNDIS Client](closing-an-address-family-in-a-condis-client.md)
 
- 
+ 
 
- 
+ 
 
 
 

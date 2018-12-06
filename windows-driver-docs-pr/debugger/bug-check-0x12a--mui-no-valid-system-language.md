@@ -3,17 +3,14 @@ title: Bug Check 0x12A MUI_NO_VALID_SYSTEM_LANGUAGE
 description: The MUI_NO_VALID_SYSTEM_LANGUAGE bug check has a value of 0x0000012A. This indicates that Windows did not find any installed, licensed language packs for the system default UI language.
 ms.assetid: 6424FC7D-BD39-4F35-9E72-E9730D27CC24
 keywords: ["Bug Check 0x12A MUI_NO_VALID_SYSTEM_LANGUAGE", "MUI_NO_VALID_SYSTEM_LANGUAGE"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - MUI_NO_VALID_SYSTEM_LANGUAGE
 api_type:
 - NA
+ms.localizationpriority: medium
 ---
 
 # Bug Check 0x12A: MUI\_NO\_VALID\_SYSTEM\_LANGUAGE
@@ -21,7 +18,7 @@ api_type:
 
 The MUI\_NO\_VALID\_SYSTEM\_LANGUAGE bug check has a value of 0x0000012A. This indicates that Windows did not find any installed, licensed language packs for the system default UI language.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](http://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
 ## MUI\_NO\_VALID\_SYSTEM\_LANGUAGE Parameters
 
@@ -62,11 +59,11 @@ Parameter 2 - NT status code that describes the reason of failure.
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

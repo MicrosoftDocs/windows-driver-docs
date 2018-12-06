@@ -7,17 +7,14 @@ keywords:
 - data pools WDK networking
 - network data pools WDK networking
 - allocating data pools
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Allocating Network Data Pools in an NDIS 6.0 Protocol Driver
 
 
-## <a href="" id="ddk-allocating-network-data-pools-in-ndis-6-0-protocol-drivers-nd"></a>
+
 
 
 NDIS 6.0 drivers do not allocate packet pools by calling the [**NdisAllocatePacketPool**](https://msdn.microsoft.com/library/windows/hardware/ff550780) function, nor do they use [**NDIS\_PACKET**](https://msdn.microsoft.com/library/windows/hardware/ff557086) structures. Instead, before sending and receiving [**NET\_BUFFER**](https://msdn.microsoft.com/library/windows/hardware/ff568376) and [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structures, the protocol driver must allocate a NET\_BUFFER pool and a NET\_BUFFER\_LIST pool. To allocate pools, NDIS 6.0 protocol drivers call the [**NdisAllocateNetBufferListPool**](https://msdn.microsoft.com/library/windows/hardware/ff561611) and [**NdisAllocateNetBufferPool**](https://msdn.microsoft.com/library/windows/hardware/ff561613) functions.
@@ -30,9 +27,9 @@ Before freeing these pools, the driver should ensure that all outstanding send o
 
 For more information about NDIS 6.0 data buffer management, see [Protocol Driver Buffer Management](protocol-driver-buffer-management.md).
 
- 
+ 
 
- 
+ 
 
 
 

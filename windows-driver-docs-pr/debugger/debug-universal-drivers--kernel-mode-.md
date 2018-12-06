@@ -3,15 +3,11 @@ title: Debug Drivers - Step-by-Step Lab (Sysvad Kernel Mode)
 description: This lab provides hands-on exercises that demonstrate how to debug the Sysvad audio kernel-mode device driver.
 ms.assetid: 4A31451C-FC7E-4C5F-B4EB-FBBAC8DADF9E
 keywords: ["debug lab", "step-by-step", "SYSVAD"]
-ms.author: windowsdriverdev
-ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 10/12/2018
+ms.localizationpriority: medium
 ---
 
 # <span id="debugger.debug_universal_drivers__kernel-mode_"></span>Debug Drivers - Step by Step Lab (Sysvad Kernel Mode)
-
 
 This lab provides hands-on exercises that demonstrate how to debug the Sysvad audio kernel-mode device driver.
 
@@ -21,22 +17,21 @@ WinDbg can step through source code, set breakpoints, view variables (including 
 
 ## <span id="lab_setup"></span>Lab setup
 
-
 You will need the following hardware to be able to complete the lab:
 
 -   A laptop or desktop computer (host) running Windows 10
 -   A laptop or desktop computer (target) running Windows 10
--   A network cross-over cable, or a network hub and network cables to connect the two PCs
+-   A network hub/router and network cables to connect the two PCs
 -   Access to the internet to download symbol files
 
 You will need the following software to be able to complete the lab.
 
--   Microsoft Visual Studio 2015
+-   Microsoft Visual Studio 2017
 -   Windows Software Development Kit (SDK) for Windows 10
 -   Windows Driver Kit (WDK) for Windows 10
 -   The sample Sysvad audio driver for Windows 10
 
-For information on downloading and installing the WDK, see [Download the Windows Driver Kit (WDK)](https://developer.microsoft.com/windows/hardware/windows-driver-kit)
+For information on downloading and installing the WDK, see [Download the Windows Driver Kit (WDK)](https://developer.microsoft.com/windows/hardware/windows-driver-kit).
 
 ## <span id="sysvad_debugging_walkthrough_overview"></span>Sysvad debugging walkthrough
 
@@ -72,15 +67,13 @@ The PCs in this lab need to be configured to use an Ethernet network connection 
 
 This lab uses two computers. WinDbg runs on the *host* system and the Sysvad driver runs on the *target* system.
 
-The "&lt;-Host" on the left is connected using a cross over ethernet cable to the "-&gt;Target" on the right.
-
-The steps in the lab assume that you are using a cross over network cable, but the lab should also work if you can plug both the host and the target directly into a network hub.
+ Use a network hub/router and network cables to connect the two PCs.
 
 ![two pcs connected with a double arrow](images/debuglab-image-targethostdrawing1.png)
 
-To work with kernel-mode applications and use WinDbg, we recommend that you use the KDNET over Ethernet transport. For information about how to use the Ethernet transport protocol, see [Getting Started with WinDbg (Kernel-Mode)](getting-started-with-windbg--kernel-mode-.md). For more information about setting up the target computer, see [Preparing a Computer for Manual Driver Deployment](https://msdn.microsoft.com/windows-drivers/develop/preparing_a_computer_for_manual_driver_deployment) and [Setting Up Kernel-Mode Debugging over a Network Cable Manually](setting-up-a-network-debugging-connection.md).
+To work with kernel-mode applications and use WinDbg, we recommend that you use the KDNET over Ethernet transport. For information about how to use the Ethernet transport protocol, see [Getting Started with WinDbg (Kernel-Mode)](getting-started-with-windbg--kernel-mode-.md). For more information about setting up the target computer, see [Preparing a Computer for Manual Driver Deployment](https://msdn.microsoft.com/windows-drivers/develop/preparing_a_computer_for_manual_driver_deployment) and [Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md).
 
-### <span id="configure__kernel_mode_debugging_using_a_crossover_ethernet_cable"></span>Configure kernel–mode debugging using a crossover ethernet cable
+### <span id="configure__kernel_mode_debugging_using_ethernet"></span>Configure kernel–mode debugging using ethernet
 
 To enable kernel-mode debugging on the target system, perform the following steps.
 
@@ -88,7 +81,7 @@ To enable kernel-mode debugging on the target system, perform the following step
 
 1. Open a command prompt on the host system and type **ipconfig /all** to determine its IP address.
 
-```
+```console
 C:\>ipconfig /all
 Windows IP Configuration
 
@@ -109,9 +102,9 @@ Ethernet adapter Ethernet:
 
 **-&gt; On the target system**
 
-4. Open a command prompt on the target system and use the **ping** command to confirm network connectivity between the two systems. Use the IP address of the host system you recorded instead of the one shown in the sample output.
+4. Open a command prompt on the target system and use the **ping** command to confirm network connectivity between the two systems. Use the actual IP address of the host system you recorded instead of 169.182.1.1 that is shown in the sample output.
 
-```
+```console
 C:\> ping 169.182.1.1
 
 Pinging 169.182.1.1 with 32 bytes of data:
@@ -130,39 +123,48 @@ To use the KDNET utility to enable kernel-mode debugging on the target system, p
 
 1. On the host system, locate the WDK KDNET directory. By default it is located here.
 
-```
-C:\Program Files (x86)\Windows Kits\10\
-```
+   C:\Program Files (x86)\Windows Kits\10\Debuggers\x64
+
+> [!NOTE]
+> This labs assumes that both PCs are running a 64 bit version of Windowson both the target and host. 
+> If that is not the case, the best approach is to run the same "bitness" of tools on the host that the target is running. 
+For example if the target is running 32 bit Windows, run a 32 version of the debugger on the host. 
+> For more information, see [Choosing the 32-Bit or 64-Bit Debugging Tools](choosing-a-32-bit-or-64-bit-debugger-package.md).
+> 
 
 2. Locate these two files and copy them to a network share or thumb drive, so that they will be available on the target computer.
 
-```
-kdnet.exe
-VerifiedNICList.xml
-```
+    kdnet.exe
+
+    VerifiedNICList.xml
+
 
 3. On the target computer, open a Command Prompt window as Administrator. Enter this command to validate that the NIC on the target PC is suported.
 
-```
+```console
 C:\KDNET>kdnet
 
 Network debugging is supported on the following NICs:
 busparams=0.25.0, Intel(R) 82579LM Gigabit Network Connection, KDNET is running on this NIC.kdnet.exe
 ```
 
-4. Type this command to set the IP address of the host system. Use the IP address of the host system that you recorded earlier, not the one shown. Pick a unique port address for each target/host pair that you work with, such as 50010.
+4. Type this command to set the IP address of the host system. Use the actual IP address of the host system you recorded instead of 169.182.1.1 that is shown in the sample output. Pick a unique port address for each target/host pair that you work with, such as 50010.
 
-```
-C:\>kdnet TARGETPC 50010
+```console
+C:\>kdnet 169.182.1.1 50010
 
-NtQuerySystemInformation cannot query SystemKernelDebuggingAllowed on this OS.
 Enabling network debugging on Intel(R) 82577LM Gigabit Network Connection.
 Key=2steg4fzbj2sz.23418vzkd4ko3.1g34ou07z4pev.1sp3yo9yz874p
 ```
 
+> [!IMPORTANT]
+> Before using BCDEdit to change boot information you may need to temporarily suspend Windows security features such as BitLocker and Secure Boot on the test PC.
+> Re-enable these security features when testing is complete and appropriately manage the test PC, when the security features are disabled.
+>
+
 5. Type this command to confirm that the dbgsettings are set properly.
 
-```
+```console
 C:\> bcdedit /dbgsettings
 busparams               0.25.0
 key                     2steg4fzbj2sz.23418vzkd4ko3.1g34ou07z4pev.1sp3yo9yz874p
@@ -174,26 +176,26 @@ The operation completed successfully.
 ```
 
 Copy the auto generated unique key into a text file, to avoid having to type it in on the host PC. Copy the text file with the key over to the host system.
+
 **Note**  
 **Firewalls and debuggers**
 
-If you receive a pop-up message from the firewall, and you wish to use the debugger, unblock the types of networks that you desire.
+If you receive a pop-up message from the firewall, and you wish to use the debugger, check **all three** of the boxes.
 
 ![windows security alert - windows firewall has blocked some features of this app](images/debuglab-image-firewall-dialog-box.png)
-
- 
+ 
 
 **&lt;- On the host system**
 
 1. On the host computer, open a Command Prompt window as Administrator. Change to the WinDbg.exe directory. We will use the x64version of WinDbg.exe from the Windows Driver Kit (WDK) that was installed as part of the Windows kit installation.
 
-```
+```console
 C:\> Cd C:\Program Files (x86)\Windows Kits\10\Debuggers\x64 
 ```
 
 2. Launch WinDbg with remote user debug using the following command. The value for the key and port match what you set earlier using BCDEdit on the target.
 
-```
+```console
 C:\> WinDbg –k net:port=50010,key=2steg4fzbj2sz.23418vzkd4ko3.1g34ou07z4pev.1sp3yo9yz874p
 ```
 
@@ -227,7 +229,7 @@ Some debug commands display text using Debugger Markup Language that you can cli
 1. Use Ctrl+Break (Scroll Lock) in WinDBg to break into the code running on the target system. It may take a bit of time for the target system to respond.
 2. Type the following command to enable DML in the Debugger Command window.
 
-```
+```dbgcmd
 0: kd> .prefer_dml 1
 DML versions of commands on by default
 ```
@@ -237,9 +239,9 @@ DML versions of commands on by default
 You can access reference command help using the **.hh** command.
 
 3. Type the following command to view the command reference help for **.prefer\_dml**.
-```
-0: kd> .hh .prefer_dml
-```
+   ```dbgcmd
+   0: kd> .hh .prefer_dml
+   ```
 
 The Debugger help file will display help for the **.prefer\_dml** command.
 
@@ -249,7 +251,7 @@ The Debugger help file will display help for the **.prefer\_dml** command.
 
 5. Display detailed version information on the target system by typing the [**vertarget (Show Target Computer Version)**](vertarget--show-target-computer-version-.md) command in the WinDbg window.
 
-```
+```dbgcmd
 0: kd> vertarget
 Windows 10 Kernel Version 9926 MP (4 procs) Free x64
 Product: WinNt, suite: TerminalServer SingleUserTS
@@ -264,7 +266,7 @@ System Uptime: 0 days 01:31:58.931
 
 6. You can verify that you are working with the right kernel-mode process by displaying the loaded modules by typing the [**lm (List Loaded Modules)**](lm--list-loaded-modules-.md) command in the WinDbg window.
 
-```
+```dbgcmd
 0: Kd> lm
 start             end                 module name
 fffff801`09200000 fffff801`0925f000   volmgrx    (no symbols)           
@@ -282,7 +284,7 @@ fffff801`094d9000 fffff801`09561000   CI         (export symbols)       CI.dll
 
 **Note**  Output that has been omitted is indicated with "… " in this lab.
 
- 
+ 
 
 Because we have yet to set the symbol path and loaded symbols, limited information is available in the debugger.
 
@@ -329,7 +331,7 @@ To download and build the Sysvad sample audio driver, perform the following step
 
     **Note**  This lab assumes that 64 bit Windows is being used. If you are using 32 bit Windows, build the driver for 32 bit.
 
-     
+     
 
 4.  **Check driver signing**
 
@@ -364,7 +366,7 @@ To download and build the Sysvad sample audio driver, perform the following step
     | PropPageExt.pdb                   | The property page symbol file.                                                    |
     | TabletAudioSample.cer             | The TabletAudioSample certificate file.                                           |
 
-     
+     
 
 7.  Locate a USB thumb drive or set up a network share to copy the built driver files from the host to the target system.
 
@@ -421,17 +423,18 @@ To install the driver on the target system, perform the following steps.
 
     ![windows security warning - windows can't verify the publisher](images/debuglab-image-install-security-warning.png)
 
-    [!TIP] If you have any issues with the installation, check the following file for more information.
-    `%windir%\\inf\\setupapi.dev.log`
- 
-    For more detailed instructions, see [Configuring a Computer for Driver Deployment, Testing, and Debugging](http://msdn.microsoft.com/library/windows/hardware/hh698272.aspx).
+    >[!TIP]
+    > If you have any issues with the installation, check the following file for more information.
+    `%windir%\inf\setupapi.dev.log`
+    >
+     
+    For more detailed instructions, see [Configuring a Computer for Driver Deployment, Testing, and Debugging](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/provision-a-target-computer-wdk-8-1).
 
     The INF file contains the hardware ID for installing the *tabletaudiosample.sys*. For the Syvad sample, the hardware ID is:
-    `root\\sysvad\_TabletAudioSample`
+    `root\sysvad_TabletAudioSample`
 
-    On the target computer, open a Command Prompt window as Administrator. Navigate to your driver package folder, and enter the following command: `devcon status root\\sysvad\_TabletAudioSample`
-   
-    
+    On the target computer, open a Command Prompt window as Administrator. Navigate to your driver package folder, and enter the following command: `devcon status root\sysvad_TabletAudioSample`
+       
     Status information is displayed durring the devcon install.
 
 
@@ -469,7 +472,7 @@ To load the debugger, perform the following steps.
 
 1.  If you closed the debugger, open it again using the following command in the administrator command prompt window. Replace the key and port with what you previously configured.
 
-    ```
+    ```console
     C:\> WinDbg –k net:port=50010,key=2steg4fzbj2sz.23418vzkd4ko3.1g34ou07z4pev.1sp3yo9yz874p
     ```
 
@@ -479,37 +482,38 @@ To load the debugger, perform the following steps.
 
 1.  To set the symbols path to the Microsoft symbol server in the WinDbg environment, use the **.symfix** command.
 
-    ```
+    ```dbgcmd
     0: kd> .symfix
     ```
 
 2.  To add your local symbol location to use your local symbols, add the path using **.sympath+** and then **.reload /f**.
 
-    ```
+    ```dbgcmd
     0: kd> .sympath+ C:\WDK_Samples\Sysvad
     0: kd> .reload /f
     ```
 
     **Note**  The **.reload** command with the **/f** force option deletes all symbol information for the specified module and reloads the symbols. In some cases, this command also reloads or unloads the module itself.
 
-     
+     
 
 **Note**  You must load the proper symbols to use advanced functionality that WinDbg provides. If you do not have symbols properly configured, you will receive messages indicating that symbols are not available when you attempt to use functionality that is dependent on symbols.
-```
+
+```dbgcmd
 0:000> dv
 Unable to enumerate locals, HRESULT 0x80004005
 Private symbols (symbols.pri) are required for locals.
 Type “.hh dbgerr005” for details.
 ```
 
- 
+ 
 
 **Note**  
 **Symbol servers**
 
 There are a number of approaches that can be used to work with symbols. In many situations, you can configure the PC to access symbols from a symbol server that Microsoft provides when they are needed. This walkthrough assumes that this approach will be used. If the symbols in your environment are in a different location, modify the steps to use that location. For additional information, see [Symbol Stores and Symbol Servers](symbol-stores-and-symbol-servers.md).
 
- 
+ 
 
 **Note**  
 **Understand source code symbol requirements**
@@ -518,16 +522,15 @@ To perform source debugging, you must build a checked (debug) version of your bi
 
 The symbol files do not contain the text of the source code. For debugging, it is best if the linker does not optimize your code. Source debugging and access to local variables are more difficult, and sometimes nearly impossible, if the code has been optimized. If you are having problems viewing local variables or source lines, set the following build options.
 
-```
 set COMPILE_DEBUG=1
-set ENABLE_OPTIMIZER=0
-```
 
- 
+set ENABLE_OPTIMIZER=0
+
+ 
 
 1.  Type the following in the command area of the debugger to display information about the Sysvad driver.
 
-    ```
+    ```dbgcmd
     0: kd> lm m tabletaudiosample v
     Browse full module list
     start             end                 module name
@@ -546,7 +549,7 @@ set ENABLE_OPTIMIZER=0
 2.  Click the **Browse all global symbols** link in the debug output to display information about items symbols that start with the letter a.
 3.  Because DML is enabled, some elements of the output are hot links that you can click on. Click on the *data* link in the debug output to display information about items symbols that start with the letter a.
 
-    ```
+    ```dbgcmd
     0: kd> x /D /f tabletaudiosample!a*
      A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
 
@@ -557,7 +560,7 @@ set ENABLE_OPTIMIZER=0
 
 4.  The **!lmi** extension displays detailed information about a module. Type **!lmi tabletaudiosample**. Your output should be similar to the text shown below.
 
-    ```
+    ```dbgcmd
     0: kd> !lmi tabletaudiosample
     Loaded Module Info: [tabletaudiosample] 
              Module: tabletaudiosample
@@ -582,7 +585,7 @@ set ENABLE_OPTIMIZER=0
 
 5.  Use the **!dh** extension to display header information as shown below.
 
-    ```
+    ```dbgcmd
     0: kd> !dh tabletaudiosample 
 
     File Type: EXECUTABLE IMAGE
@@ -611,152 +614,152 @@ For more information about the device node debug extension, see [**!devnode**](-
 
 **&lt;-On the host system**
 
-1.  To see all the device nodes in the Plug and Play device tree, enter the **!devnode 0 1** command. This command can take a minute or two to run. During that time, "\*Busy" will be displayed in the status area of WinDbg.
+1. To see all the device nodes in the Plug and Play device tree, enter the **!devnode 0 1** command. This command can take a minute or two to run. During that time, "\*Busy" will be displayed in the status area of WinDbg.
 
-    ```
-    0: kd> !devnode 0 1
-    Dumping IopRootDeviceNode (= 0xffffe0005a3a8d30)
-    DevNode 0xffffe0005a3a8d30 for PDO 0xffffe0005a3a9e50
-      InstancePath is "HTREE\ROOT\0"
-      State = DeviceNodeStarted (0x308)
-      Previous State = DeviceNodeEnumerateCompletion (0x30d)
-      DevNode 0xffffe0005a3a3d30 for PDO 0xffffe0005a3a4e50
-        InstancePath is "ROOT\volmgr\0000"
-        ServiceName is "volmgr"
-        State = DeviceNodeStarted (0x308)
-        Previous State = DeviceNodeEnumerateCompletion (0x30d)
-        DevNode 0xffffe0005a324560 for PDO 0xffffe0005bd95ca0…
-    ...
-    ```
+   ```dbgcmd
+   0: kd> !devnode 0 1
+   Dumping IopRootDeviceNode (= 0xffffe0005a3a8d30)
+   DevNode 0xffffe0005a3a8d30 for PDO 0xffffe0005a3a9e50
+     InstancePath is "HTREE\ROOT\0"
+     State = DeviceNodeStarted (0x308)
+     Previous State = DeviceNodeEnumerateCompletion (0x30d)
+     DevNode 0xffffe0005a3a3d30 for PDO 0xffffe0005a3a4e50
+       InstancePath is "ROOT\volmgr\0000"
+       ServiceName is "volmgr"
+       State = DeviceNodeStarted (0x308)
+       Previous State = DeviceNodeEnumerateCompletion (0x30d)
+       DevNode 0xffffe0005a324560 for PDO 0xffffe0005bd95ca0…
+   ...
+   ```
 
-2.  Use Ctrl+F to search in the output that is generated to look for the name of the device driver, *sysvad*.
+2. Use Ctrl+F to search in the output that is generated to look for the name of the device driver, *sysvad*.
 
-    ![find dialog box showing the term sysvad being searched for](images/sysvad-lab-audio-find-dialog.png)
+   ![find dialog box showing the term sysvad being searched for](images/sysvad-lab-audio-find-dialog.png)
 
-    A device node entry with a name of sysvad\_TabletAudioSample will be present in the !devnode output for Syvad.
+   A device node entry with a name of `sysvad_TabletAudioSample` will be present in the !devnode output for Syvad.
 
-    ```
-      DevNode 0xffffe00086e68190 for PDO 0xffffe00089c575a0
-        InstancePath is "ROOT\sysvad_TabletAudioSample\0000"
-        ServiceName is "sysvad_tabletaudiosample"
-        State = DeviceNodeStarted (0x308)
-    ...
-    ```
+   ```dbgcmd
+     DevNode 0xffffe00086e68190 for PDO 0xffffe00089c575a0
+       InstancePath is "ROOT\sysvad_TabletAudioSample\0000"
+       ServiceName is "sysvad_tabletaudiosample"
+       State = DeviceNodeStarted (0x308)
+   ...
+   ```
 
-    Note that the PDO address and the DevNode address are displayed.
+   Note that the PDO address and the DevNode address are displayed.
 
-3.  Use the **!devnode 0 1 sysvad\_TabletAudioSample** command to display Plug and Play information associated with our Sysvad device driver.
+3. Use the `!devnode 0 1 sysvad_TabletAudioSample` command to display Plug and Play information associated with our Sysvad device driver.
 
-    ``` 
-    0: kd> !devnode 0 1 sysvad_TabletAudioSample
-    Dumping IopRootDeviceNode (= 0xffffe00082df8d30)
-    DevNode 0xffffe00086e68190 for PDO 0xffffe00089c575a0
-      InstancePath is "ROOT\sysvad_TabletAudioSample\0000"
-      ServiceName is "sysvad_tabletaudiosample"
-      State = DeviceNodeStarted (0x308)
-      Previous State = DeviceNodeEnumerateCompletion (0x30d)
-      DevNode 0xffffe000897fb650 for PDO 0xffffe00089927e30
-        InstancePath is "SWD\MMDEVAPI\{0.0.0.00000000}.{64097438-cdc0-4007-a19e-62e789062e20}"
-        State = DeviceNodeStarted (0x308)
-        Previous State = DeviceNodeStartPostWork (0x307)
-      DevNode 0xffffe00086d2f5f0 for PDO 0xffffe00089939ae0
-        InstancePath is "SWD\MMDEVAPI\{0.0.0.00000000}.{78880f4e-9571-44a4-a9df-960bde446487}"
-        State = DeviceNodeStarted (0x308)
-        Previous State = DeviceNodeStartPostWork (0x307)
-      DevNode 0xffffe00089759bb0 for PDO 0xffffe000875aa060
-        InstancePath is "SWD\MMDEVAPI\{0.0.0.00000000}.{7cad07f2-d0a0-4b9b-8100-8dc735e9c447}"
-        State = DeviceNodeStarted (0x308)
-        Previous State = DeviceNodeStartPostWork (0x307)
-      DevNode 0xffffe00087735010 for PDO 0xffffe000872068c0
-        InstancePath is "SWD\MMDEVAPI\{0.0.0.00000000}.{fc38551b-e69f-4b86-9661-ae6da78bc3c6}"
-        State = DeviceNodeStarted (0x308)
-        Previous State = DeviceNodeStartPostWork (0x307)
-      DevNode 0xffffe00088457670 for PDO 0xffffe0008562b830
-        InstancePath is "SWD\MMDEVAPI\{0.0.1.00000000}.{0894b831-c9fe-4c56-86a6-092380fc5628}"
-        State = DeviceNodeStarted (0x308)
-        Previous State = DeviceNodeStartPostWork (0x307)
-      DevNode 0xffffe000893dbb70 for PDO 0xffffe00089d68060
-        InstancePath is "SWD\MMDEVAPI\{0.0.1.00000000}.{15eb6b5c-aa54-47b8-959a-0cff2c1500db}"
-        State = DeviceNodeStarted (0x308)
-        Previous State = DeviceNodeStartPostWork (0x307)
-      DevNode 0xffffe00088e6f250 for PDO 0xffffe00089f6e990
-        InstancePath is "SWD\MMDEVAPI\{0.0.1.00000000}.{778c07f0-af9f-43f2-8b8d-490024f87239}"
-        State = DeviceNodeStarted (0x308)
-        Previous State = DeviceNodeStartPostWork (0x307)
-      DevNode 0xffffe000862eb4b0 for PDO 0xffffe000884443a0
-        InstancePath is "SWD\MMDEVAPI\{0.0.1.00000000}.{e4b72c7c-be50-45df-94f5-0f2922b85983}"
-        State = DeviceNodeStarted (0x308)
-        Previous State = DeviceNodeStartPostWork (0x307)
-    ```
+   ```dbgcmd 
+   0: kd> !devnode 0 1 sysvad_TabletAudioSample
+   Dumping IopRootDeviceNode (= 0xffffe00082df8d30)
+   DevNode 0xffffe00086e68190 for PDO 0xffffe00089c575a0
+     InstancePath is "ROOT\sysvad_TabletAudioSample\0000"
+     ServiceName is "sysvad_tabletaudiosample"
+     State = DeviceNodeStarted (0x308)
+     Previous State = DeviceNodeEnumerateCompletion (0x30d)
+     DevNode 0xffffe000897fb650 for PDO 0xffffe00089927e30
+       InstancePath is "SWD\MMDEVAPI\{0.0.0.00000000}.{64097438-cdc0-4007-a19e-62e789062e20}"
+       State = DeviceNodeStarted (0x308)
+       Previous State = DeviceNodeStartPostWork (0x307)
+     DevNode 0xffffe00086d2f5f0 for PDO 0xffffe00089939ae0
+       InstancePath is "SWD\MMDEVAPI\{0.0.0.00000000}.{78880f4e-9571-44a4-a9df-960bde446487}"
+       State = DeviceNodeStarted (0x308)
+       Previous State = DeviceNodeStartPostWork (0x307)
+     DevNode 0xffffe00089759bb0 for PDO 0xffffe000875aa060
+       InstancePath is "SWD\MMDEVAPI\{0.0.0.00000000}.{7cad07f2-d0a0-4b9b-8100-8dc735e9c447}"
+       State = DeviceNodeStarted (0x308)
+       Previous State = DeviceNodeStartPostWork (0x307)
+     DevNode 0xffffe00087735010 for PDO 0xffffe000872068c0
+       InstancePath is "SWD\MMDEVAPI\{0.0.0.00000000}.{fc38551b-e69f-4b86-9661-ae6da78bc3c6}"
+       State = DeviceNodeStarted (0x308)
+       Previous State = DeviceNodeStartPostWork (0x307)
+     DevNode 0xffffe00088457670 for PDO 0xffffe0008562b830
+       InstancePath is "SWD\MMDEVAPI\{0.0.1.00000000}.{0894b831-c9fe-4c56-86a6-092380fc5628}"
+       State = DeviceNodeStarted (0x308)
+       Previous State = DeviceNodeStartPostWork (0x307)
+     DevNode 0xffffe000893dbb70 for PDO 0xffffe00089d68060
+       InstancePath is "SWD\MMDEVAPI\{0.0.1.00000000}.{15eb6b5c-aa54-47b8-959a-0cff2c1500db}"
+       State = DeviceNodeStarted (0x308)
+       Previous State = DeviceNodeStartPostWork (0x307)
+     DevNode 0xffffe00088e6f250 for PDO 0xffffe00089f6e990
+       InstancePath is "SWD\MMDEVAPI\{0.0.1.00000000}.{778c07f0-af9f-43f2-8b8d-490024f87239}"
+       State = DeviceNodeStarted (0x308)
+       Previous State = DeviceNodeStartPostWork (0x307)
+     DevNode 0xffffe000862eb4b0 for PDO 0xffffe000884443a0
+       InstancePath is "SWD\MMDEVAPI\{0.0.1.00000000}.{e4b72c7c-be50-45df-94f5-0f2922b85983}"
+       State = DeviceNodeStarted (0x308)
+       Previous State = DeviceNodeStartPostWork (0x307)
+   ```
 
-4.  The output displayed in the previous command includes the PDO associated with the running instance of our driver, in this example it is *0xffffe00089c575a0*. Enter the **!devobj***&lt;PDO address&gt;* command to display Plug and Play information associated with the Sysvad device driver. Use the PDO address that **!devnode** displays on your PC, not the one shown here.
+4. The output displayed in the previous command includes the PDO associated with the running instance of our driver, in this example it is *0xffffe00089c575a0*. Enter the **!devobj**<em>&lt;PDO address&gt;</em> command to display Plug and Play information associated with the Sysvad device driver. Use the PDO address that **!devnode** displays on your PC, not the one shown here.
 
-    ``` 
-    0: kd> !devobj 0xffffe00089c575a0
-    Device object (ffffe00089c575a0) is for:
-    0000004e \Driver\PnpManager DriverObject ffffe00082d47e60
-    Current Irp 00000000 RefCount 65 Type 0000001d Flags 00001040
-    SecurityDescriptor ffffc102b0f6d171 DevExt 00000000 DevObjExt ffffe00089c576f0 DevNode ffffe00086e68190 
-    ExtensionFlags (0000000000)  
-    Characteristics (0x00000180)  FILE_AUTOGENERATED_DEVICE_NAME, FILE_DEVICE_SECURE_OPEN
-    AttachedDevice (Upper) ffffe00088386a50 \Driver\sysvad_tabletaudiosample
-    Device queue is not busy.
-    ```
+   ```dbgcmd 
+   0: kd> !devobj 0xffffe00089c575a0
+   Device object (ffffe00089c575a0) is for:
+   0000004e \Driver\PnpManager DriverObject ffffe00082d47e60
+   Current Irp 00000000 RefCount 65 Type 0000001d Flags 00001040
+   SecurityDescriptor ffffc102b0f6d171 DevExt 00000000 DevObjExt ffffe00089c576f0 DevNode ffffe00086e68190 
+   ExtensionFlags (0000000000)  
+   Characteristics (0x00000180)  FILE_AUTOGENERATED_DEVICE_NAME, FILE_DEVICE_SECURE_OPEN
+   AttachedDevice (Upper) ffffe00088386a50 \Driver\sysvad_tabletaudiosample
+   Device queue is not busy.
+   ```
 
-5.  The output displayed in the **!devobj** command includes the name of the attached device: *\\Driver\\sysvad\_tabletaudiosample*. Use the **!drvobj** command with a bit mask of 2, to display information associated with the attached device.
+5. The output displayed in the **!devobj** command includes the name of the attached device: \\Driver\\sysvad\_tabletaudiosample. Use the **!drvobj** command with a bit mask of 2, to display information associated with the attached device.
 
-    ``` 
-    0: kd> !drvobj \Driver\sysvad_tabletaudiosample 2
-    Driver object (ffffe0008834f670) is for:
-    \Driver\sysvad_tabletaudiosample
-    DriverEntry:   fffff80114b45310  tabletaudiosample!FxDriverEntry
-    DriverStartIo: 00000000 
-    DriverUnload:  fffff80114b5fea0                tabletaudiosample!DriverUnload
-    AddDevice:     fffff80114b5f000  tabletaudiosample!AddDevice
+   ```dbgcmd 
+   0: kd> !drvobj \Driver\sysvad_tabletaudiosample 2
+   Driver object (ffffe0008834f670) is for:
+   \Driver\sysvad_tabletaudiosample
+   DriverEntry:   fffff80114b45310  tabletaudiosample!FxDriverEntry
+   DriverStartIo: 00000000 
+   DriverUnload:  fffff80114b5fea0                tabletaudiosample!DriverUnload
+   AddDevice:     fffff80114b5f000  tabletaudiosample!AddDevice
 
-    Dispatch routines:
-    [00] IRP_MJ_CREATE                      fffff80117b49a20             portcls!DispatchCreate
-    [01] IRP_MJ_CREATE_NAMED_PIPE           fffff8015a949a00          nt!IopInvalidDeviceRequest
-    [02] IRP_MJ_CLOSE                       fffff80115e26f90                ks!DispatchCleanup
-    [03] IRP_MJ_READ                        fffff80115e32710                ks!DispatchRead
-    [04] IRP_MJ_WRITE                       fffff80115e327e0              ks!DispatchWrite
-    [05] IRP_MJ_QUERY_INFORMATION           fffff8015a949a00         nt!IopInvalidDeviceRequest
-    [06] IRP_MJ_SET_INFORMATION             fffff8015a949a00              nt!IopInvalidDeviceRequest
-    [07] IRP_MJ_QUERY_EA                    fffff8015a949a00         nt!IopInvalidDeviceRequest
-    [08] IRP_MJ_SET_EA                      fffff8015a949a00              nt!IopInvalidDeviceRequest
-    [09] IRP_MJ_FLUSH_BUFFERS               fffff80115e32640  ks!DispatchFlush
-    [0a] IRP_MJ_QUERY_VOLUME_INFORMATION    fffff8015a949a00           nt!IopInvalidDeviceRequest
-    [0b] IRP_MJ_SET_VOLUME_INFORMATION      fffff8015a949a00               nt!IopInvalidDeviceRequest
-    [0c] IRP_MJ_DIRECTORY_CONTROL           fffff8015a949a00           nt!IopInvalidDeviceRequest
-    [0d] IRP_MJ_FILE_SYSTEM_CONTROL         fffff8015a949a00         nt!IopInvalidDeviceRequest
-    [0e] IRP_MJ_DEVICE_CONTROL              fffff80115e27480               ks!DispatchDeviceIoControl
-    [0f] IRP_MJ_INTERNAL_DEVICE_CONTROL     fffff8015a949a00   nt!IopInvalidDeviceRequest
-    [10] IRP_MJ_SHUTDOWN                    fffff8015a949a00      nt!IopInvalidDeviceRequest
-    [11] IRP_MJ_LOCK_CONTROL                fffff8015a949a00  nt!IopInvalidDeviceRequest
-    [12] IRP_MJ_CLEANUP                     fffff8015a949a00           nt!IopInvalidDeviceRequest
-    [13] IRP_MJ_CREATE_MAILSLOT             fffff8015a949a00               nt!IopInvalidDeviceRequest
-    [14] IRP_MJ_QUERY_SECURITY              fffff80115e326a0 ks!DispatchQuerySecurity
-    [15] IRP_MJ_SET_SECURITY                fffff80115e32770      ks!DispatchSetSecurity
-    [16] IRP_MJ_POWER                       fffff80117b3dce0            portcls!DispatchPower
-    [17] IRP_MJ_SYSTEM_CONTROL              fffff80117b13d30              portcls!PcWmiSystemControl
-    [18] IRP_MJ_DEVICE_CHANGE               fffff8015a949a00 nt!IopInvalidDeviceRequest
-    [19] IRP_MJ_QUERY_QUOTA                 fffff8015a949a00  nt!IopInvalidDeviceRequest
-    [1a] IRP_MJ_SET_QUOTA                   fffff8015a949a00       nt!IopInvalidDeviceRequest
-    [1b] IRP_MJ_PNP                         fffff80114b5f7d0 tabletaudiosample!PnpHandler
-    ```
+   Dispatch routines:
+   [00] IRP_MJ_CREATE                      fffff80117b49a20             portcls!DispatchCreate
+   [01] IRP_MJ_CREATE_NAMED_PIPE           fffff8015a949a00          nt!IopInvalidDeviceRequest
+   [02] IRP_MJ_CLOSE                       fffff80115e26f90                ks!DispatchCleanup
+   [03] IRP_MJ_READ                        fffff80115e32710                ks!DispatchRead
+   [04] IRP_MJ_WRITE                       fffff80115e327e0              ks!DispatchWrite
+   [05] IRP_MJ_QUERY_INFORMATION           fffff8015a949a00         nt!IopInvalidDeviceRequest
+   [06] IRP_MJ_SET_INFORMATION             fffff8015a949a00              nt!IopInvalidDeviceRequest
+   [07] IRP_MJ_QUERY_EA                    fffff8015a949a00         nt!IopInvalidDeviceRequest
+   [08] IRP_MJ_SET_EA                      fffff8015a949a00              nt!IopInvalidDeviceRequest
+   [09] IRP_MJ_FLUSH_BUFFERS               fffff80115e32640  ks!DispatchFlush
+   [0a] IRP_MJ_QUERY_VOLUME_INFORMATION    fffff8015a949a00           nt!IopInvalidDeviceRequest
+   [0b] IRP_MJ_SET_VOLUME_INFORMATION      fffff8015a949a00               nt!IopInvalidDeviceRequest
+   [0c] IRP_MJ_DIRECTORY_CONTROL           fffff8015a949a00           nt!IopInvalidDeviceRequest
+   [0d] IRP_MJ_FILE_SYSTEM_CONTROL         fffff8015a949a00         nt!IopInvalidDeviceRequest
+   [0e] IRP_MJ_DEVICE_CONTROL              fffff80115e27480               ks!DispatchDeviceIoControl
+   [0f] IRP_MJ_INTERNAL_DEVICE_CONTROL     fffff8015a949a00   nt!IopInvalidDeviceRequest
+   [10] IRP_MJ_SHUTDOWN                    fffff8015a949a00      nt!IopInvalidDeviceRequest
+   [11] IRP_MJ_LOCK_CONTROL                fffff8015a949a00  nt!IopInvalidDeviceRequest
+   [12] IRP_MJ_CLEANUP                     fffff8015a949a00           nt!IopInvalidDeviceRequest
+   [13] IRP_MJ_CREATE_MAILSLOT             fffff8015a949a00               nt!IopInvalidDeviceRequest
+   [14] IRP_MJ_QUERY_SECURITY              fffff80115e326a0 ks!DispatchQuerySecurity
+   [15] IRP_MJ_SET_SECURITY                fffff80115e32770      ks!DispatchSetSecurity
+   [16] IRP_MJ_POWER                       fffff80117b3dce0            portcls!DispatchPower
+   [17] IRP_MJ_SYSTEM_CONTROL              fffff80117b13d30              portcls!PcWmiSystemControl
+   [18] IRP_MJ_DEVICE_CHANGE               fffff8015a949a00 nt!IopInvalidDeviceRequest
+   [19] IRP_MJ_QUERY_QUOTA                 fffff8015a949a00  nt!IopInvalidDeviceRequest
+   [1a] IRP_MJ_SET_QUOTA                   fffff8015a949a00       nt!IopInvalidDeviceRequest
+   [1b] IRP_MJ_PNP                         fffff80114b5f7d0 tabletaudiosample!PnpHandler
+   ```
 
-6.  Enter the **!devstack***&lt;PDO address&gt;* command to display Plug and Play information associated with the device driver. The output displayed in the **!devnode 0 1** command includes the PDO address associated with the running instance of our driver. In this example it is *0xffffe00089c575a0*. Use the PDO address that **!devnode** displays on your PC, not the one shown below.
+6. Enter the **!devstack**<em>&lt;PDO address&gt;</em> command to display Plug and Play information associated with the device driver. The output displayed in the **!devnode 0 1** command includes the PDO address associated with the running instance of our driver. In this example it is *0xffffe00089c575a0*. Use the PDO address that **!devnode** displays on your PC, not the one shown below.
 
-    ```
-    0: kd> !devstack 0xffffe00089c575a0
-      !DevObj           !DrvObj            !DevExt           ObjectName
-      ffffe00088d212e0  \Driver\ksthunk    ffffe00088d21430  0000007b
-      ffffe00088386a50  \Driver\sysvad_tabletaudiosampleffffe00088386ba0  0000007a
-    > ffffe00089c575a0  \Driver\PnpManager 00000000  0000004e
-    !DevNode ffffe00086e68190 :
-      DeviceInst is "ROOT\sysvad_TabletAudioSample\0000"
-      ServiceName is "sysvad_tabletaudiosample"
-    ```
+   ```dbgcmd
+   0: kd> !devstack 0xffffe00089c575a0
+     !DevObj           !DrvObj            !DevExt           ObjectName
+     ffffe00088d212e0  \Driver\ksthunk    ffffe00088d21430  0000007b
+     ffffe00088386a50  \Driver\sysvad_tabletaudiosampleffffe00088386ba0  0000007a
+   > ffffe00089c575a0  \Driver\PnpManager 00000000  0000004e
+   !DevNode ffffe00086e68190 :
+     DeviceInst is "ROOT\sysvad_TabletAudioSample\0000"
+     ServiceName is "sysvad_tabletaudiosample"
+   ```
 
 The output shows that we have a farily simple device driver stack. The sysvad\_TabletAudioSample driver is a child of the PnPManager node. The PnPManager is a root node.
 
@@ -766,7 +769,7 @@ This diagram shows a more complex device node tree.
 
 **Note**  For more information about more complex driver stacks, see [Driver stacks](https://msdn.microsoft.com/library/windows/hardware/hh439632) and [Device nodes and device stacks](https://msdn.microsoft.com/library/windows/hardware/ff554721).
 
- 
+ 
 
 ## <span id="workingwithbreakpoints"></span>Section 7: Working with breakpoints
 
@@ -800,19 +803,19 @@ To set a breakpoint using a debug command, use one of the following **b** comman
 </tbody>
 </table>
 
- 
+ 
 
 1.  Use the WinDbg UI to confirm that **Debug** &gt; **Source Mode** is enabled in the current WinDbg session.
 
 2.  Add your local code location to the source path by typing the following command.
 
-    ```
+    ```dbgcmd
     .sympath+ C:\WDK_Samples\Sysvad
     ```
 
 3.  Add your local symbol location to the symbol path by typing the following command.
 
-    ```
+    ```dbgcmd
     .sympath+ C:\WDK_Samples\Sysvad
     ```
 
@@ -820,13 +823,13 @@ To set a breakpoint using a debug command, use one of the following **b** comman
 
     As you are working with a driver it can be handy to see all of the messages that it may display. Type the following to change the default debug bit mask so that all debug messages from the target system will be displayed in the debugger.
 
-    ```
+    ```dbgcmd
     0: kd> ed nt!Kd_DEFAULT_MASK 0xFFFFFFFF
     ```
 
 5.  Set the breakpoint with the **bm** command using the name of the driver, followed by the function name (AddDevice) where you want to set the breakpoint, separated by an exclamation mark.
 
-    ```
+    ```dbgcmd
     0: kd> bm tabletaudiosample!AddDevice
     breakpoint 1 redefined
       1: fffff801`14b5f000 @!"tabletaudiosample!AddDevice"
@@ -836,7 +839,7 @@ To set a breakpoint using a debug command, use one of the following **b** comman
 
 6.  List the current breakpoints to confirm that the breakpoint was set by typing the **bl** command.
 
-    ```
+    ```dbgcmd
     0: kd> bl
     1 e fffff801`14b5f000     0001 (0001) tabletaudiosample!AddDevice
     ```
@@ -852,7 +855,7 @@ To set a breakpoint using a debug command, use one of the following **b** comman
 
     This should cause Windows to reload the driver, which calls AddDevice. This will cause the AddDevice debug breakpoint to fire and the execution of the driver code on the target system should halt.
 
-    ```
+    ```dbgcmd
     Breakpoint 1 hit
     tabletaudiosample!AddDevice:
     fffff801`14baf000 4889542410      mov     qword ptr [rsp+10h],rdx
@@ -860,7 +863,7 @@ To set a breakpoint using a debug command, use one of the following **b** comman
 
     If your source path is set properly, you should stop at the AddDevice routine in adapter.cpp
 
-    ```
+    ```dbgcmd
     {
         PAGED_CODE();
 
@@ -889,8 +892,6 @@ To set a breakpoint using a debug command, use one of the following **b** comman
                 maxObjects,
                 0
             );
-
-
         return ntStatus;
     } // AddDevice
     ```
@@ -903,7 +904,7 @@ To set a breakpoint using a debug command, use one of the following **b** comman
 
 You can also set breakpoints that fire when a memory location is accessed. Use the **ba** (break on access) command, with the following syntax.
 
-```
+```dbgcmd
 ba <access> <size> <address> {options}
 ```
 
@@ -934,13 +935,13 @@ ba <access> <size> <address> {options}
 </tbody>
 </table>
 
- 
+ 
 
 Note that you can only set four data breakpoints at any given time and it is up to you to make sure that you are aligning your data correctly or you won’t trigger the breakpoint (words must end in addresses divisible by 2, dwords must be divisible by 4, and quadwords by 0 or 8)
 
 For example, to set a read/write breakpoint on a specific memory address, use a command like this.
 
-```
+```dbgcmd
 ba r 4 fffff800`7bc9eff0
 ```
 
@@ -973,7 +974,7 @@ You can modify existing breakpoints by using the following commands.
 </tbody>
 </table>
 
- 
+ 
 
 Alternatively, you can also modify breakpoints by clicking **edit** &gt; **breakpoints**. Note that the breakpoint dialog box only works with existing breakpoints. New breakpoints must be set from the command line.
 
@@ -987,7 +988,7 @@ To set a breakpoint on MixerVolume, perform the following steps.
 
     To locate the method that changes the volume, use the x command to list the symbols in CAdapterCommon, that contain the string volume.
 
-    ```
+    ```dbgcmd
     kd> x tabletaudiosample!CAdapterCommon::*
     ...
     fffff800`7bce26a0 tabletaudiosample!CAdapterCommon::MixerVolumeWrite (unsigned long, unsigned long, long)
@@ -999,14 +1000,14 @@ To set a breakpoint on MixerVolume, perform the following steps.
 2.  Clear the previous breakpoints using bc \*.
 3.  Set a symbol breakpoint on the CAdapterCommon::MixerVolumeWrite routine using the following command.
 
-    ```
+    ```dbgcmd
     kd> bm tabletaudiosample!CAdapterCommon::MixerVolumeWrite
       1: fffff801`177b26a0 @!"tabletaudiosample!CAdapterCommon::MixerVolumeWrite"
     ```
 
 4.  List the breakpoints to confirm that the breakpoint is set properly.
 
-    ```
+    ```dbgcmd
     kd> bl
     1 e fffff801`177b26a0 [c:\WDK_Samples\audio\sysvad\common.cpp @ 1668]    0001 (0001) tabletaudiosample!CAdapterCommon::MixerVolumeWrite
     ```
@@ -1017,7 +1018,7 @@ To set a breakpoint on MixerVolume, perform the following steps.
 
 7.  This should cause the SetMixerVolume debug breakpoint to fire and execution of the driver code on the target system should halt.
 
-    ```
+    ```dbgcmd
     kd> g
     Breakpoint 1 hit
     tabletaudiosample!CAdapterCommon::MixerVolumeWrite:
@@ -1026,7 +1027,7 @@ To set a breakpoint on MixerVolume, perform the following steps.
 
     You should stop at this line in common.cpp
 
-    ```
+    ```dbgcmd
     {
         if (m_pHW)
         {
@@ -1037,7 +1038,7 @@ To set a breakpoint on MixerVolume, perform the following steps.
 
 8.  Use the dv command to display the current variables and their values. More information on variables is provided in the next section of this lab.
 
-    ```
+    ```dbgcmd
     2: kd> dv
                this = 0x00000000`00000010
              ulNode = 0x344
@@ -1097,7 +1098,7 @@ Tip: You may want to keep a copy of the Sysvad driver with out the breakpoint ad
 
 1.  Set a break to occur each time the AddDevice method is run by adding the `DebugBreak()` statement to the sample code.
 
-    ```
+    ```dbgcmd
     ...
         // Insert the DebugBreak() statment before the  PcAddAdapterDevice is called.
         //
@@ -1125,7 +1126,7 @@ Tip: You may want to keep a copy of the Sysvad driver with out the breakpoint ad
 
 4.  When the code runs and reaches the `DebugBreak` statement, execution will stop and a message will be displayed.
 
-    ```
+    ```dbgcmd
     KERNELBASE!DebugBreak:
     77b3b770 defe     __debugbreak
     ```
@@ -1139,19 +1140,19 @@ It can be useful to examine variables as the code executes to confirm that the c
 
 1.  Use the **dv** command to examine the locale variables associated with the tabletaudiosample!CMiniportWaveRT::New\*.
 
-    ```
+    ```dbgcmd
     kd> dv tabletaudiosample!CMiniportWaveRT::New*
     ```
 
 2.  Clear the previous breakpoints
 
-    ```
+    ```dbgcmd
     bc *
     ```
 
 3.  Set a symbol breakpoint on the CMiniportWaveCyclicStreamMSVAD routines using the following command.
 
-    ```
+    ```dbgcmd
     0: kd> bm tabletaudiosample!CMiniportWaveRT::NewStream
       1: fffff801`177dffc0 @!"tabletaudiosample!CMiniportWaveRT::NewStream"
     ```
@@ -1166,7 +1167,7 @@ It can be useful to examine variables as the code executes to confirm that the c
 
     When the media file is played, the breakpoint should fire, and execution of the driver code on the target system should halt.
 
-    ```
+    ```dbgcmd
     Breakpoint 1 hit
     tabletaudiosample!CMiniportWaveRT::NewStream:
     fffff801`177dffc0 44894c2420      mov     dword ptr [rsp+20h],r9d
@@ -1174,7 +1175,7 @@ It can be useful to examine variables as the code executes to confirm that the c
 
     The source code Window should be highlighting the brace on the entrance to the NewStream function.
 
-    ```
+    ```dbgcmd
     /*++
 
     Routine Description:
@@ -1209,7 +1210,7 @@ It can be useful to examine variables as the code executes to confirm that the c
 
     You can display the names and values of all local variables for a given frame by typing the **dv** command.
 
-    ```
+    ```dbgcmd
     0: kd> dv
                     this = 0xffffe000`4436f8e0
                OutStream = 0xffffe000`49d2f130
@@ -1226,7 +1227,7 @@ It can be useful to examine variables as the code executes to confirm that the c
 
     To use DML to explore variables, click the underlined elements. The click action builds a [**dx (Display NatVis Expression)**](dx--display-visualizer-variables-.md) command that allows you to drill down on nested data structures.
 
-    ```
+    ```dbgcmd
     0: kd> dx -r1 (*((tabletaudiosample!CMiniportWaveRT *)0xffffe001d10b8380))
     (*((tabletaudiosample!CMiniportWaveRT *)0xffffe001d10b8380)) :  [Type: CMiniportWaveRT]
         [+0x020] m_lRefCount      : 0
@@ -1247,7 +1248,6 @@ It can be useful to examine variables as the code executes to confirm that the c
         [+0x006] Data3            : 0xffff
         [+0x008] Data4            :  [Type: unsigned char [8]]
 
-
     0: kd> dx -r1 -n (*((tabletaudiosample!unsigned char (*)[8])0xffffd001c8acd350))
     (*((tabletaudiosample!unsigned char (*)[8])0xffffd001c8acd350)) :  [Type: unsigned char [8]]
         [0]              : 0x30
@@ -1264,14 +1264,14 @@ It can be useful to examine variables as the code executes to confirm that the c
 
     You can find the memory location of a global variable by typing **? &lt;variable name&gt;**.
 
-    ```
+    ```dbgcmd
     0: kd> ? signalProcessingMode
     Evaluate expression: -52768896396472 = ffffd001`c8acd348
     ```
 
 10. This returns the memory location of the variable, in this case *ffffd001\`c8acd348*. You can view the contents of the memory location by dumping the value of that location typing the **dd** command using the memory location returned by the previous command.
 
-    ```
+    ```dbgcmd
     0: kd> dd ffffd001`c8acd348
     ffffd001`c8acd348  487e9220 ffffe000 49d2f130 ffffe000
     ffffd001`c8acd358  4837c468 ffffe000 18221570 ffffc000
@@ -1285,7 +1285,7 @@ It can be useful to examine variables as the code executes to confirm that the c
 
 11. You can also use variable names with the **dd** command.
 
-    ```
+    ```dbgcmd
     0: kd> dd signalProcessingMode
     ffffd001`c8acd348  487e9220 ffffe000 49d2f130 ffffe000
     ffffd001`c8acd358  4837c468 ffffe000 18221570 ffffc000
@@ -1305,7 +1305,7 @@ It can be useful to examine variables as the code executes to confirm that the c
 
 13. Use p or F10 to step forward about 10 lines in the code until you are highlighting the ntStatus = IsFormatSupported(Pin, Capture, DataFormat); line of code.
 
-    ```
+    ```cpp
         PAGED_CODE();
 
         ASSERT(OutStream);
@@ -1348,7 +1348,7 @@ It can be useful to examine variables as the code executes to confirm that the c
 
 14. Use the **dv** command to display the names and values of all local variables for a given frame. Note that, as expected, the values are different from the last time we ran this command, as additional code has been run that changes the local variables and some variables are now not in the current frame or their values have changed.
 
-    ```
+    ```dbgcmd
     2: kd> dv
                     this = 0xffffe001`d1182000
                OutStream = 0xffffe001`d4776d20
@@ -1391,7 +1391,7 @@ To display the call stack, use the k\* commands:
 </tbody>
 </table>
 
- 
+ 
 
 If you want to keep the call stack available, you can click **View**&gt; **Call stack** to view it. Click the columns at the top of the window to toggle the display of additional information.
 
@@ -1399,7 +1399,7 @@ If you want to keep the call stack available, you can click **View**&gt; **Call 
 
 This output shows the call stack while debugging the sample adapter code in a break state.
 
-```
+```dbgcmd
 0: kd> kb
 # RetAddr           : Args to Child                                                           : Call Site
 00 fffff800`7a0fa607 : ffffe001`d1182000 ffffe001`d4776d20 ffffe001`d4776bc8 ffffe001`00000000 : tabletaudiosample!CMiniportWaveRT::NewStream+0x1dc [c:\data1\threshold\audio\endpointscommon\minwavert.cpp @ 597]
@@ -1424,7 +1424,7 @@ This output shows the call stack while debugging the sample adapter code in a br
 
 You can use DML to further explore the code. When you click on the first 00 entry, the [**.frame (Set Local Context)**](-frame--set-local-context-.md) command is used to set the context and then, the [**dv (Display Local Variables)**](dv--display-local-variables-.md) command displays the local variables.
 
-```
+```dbgcmd
 0: kd> .frame 0n0;dv /t /v
 00 ffffd001`c30981d0 fffff800`7a0fa607 tabletaudiosample!CMiniportWaveRT::NewStream+0x1dc [c:\data1\threshold\audio\endpointscommon\minwavert.cpp @ 597]
 ffffd001`c30982b0 class CMiniportWaveRT * this = 0xffffe001`d1182000
@@ -1455,7 +1455,7 @@ The output shows that the process is associated with audiodg.exe. If you are sti
 
 **&lt;- On the host system**
 
-```
+```dbgcmd
 0: kd> !process
 PROCESS ffffe001d147c840
     SessionId: 0  Cid: 10f0    Peb: ee6cf8a000  ParentCid: 0434
@@ -1506,7 +1506,7 @@ Use the **!process 0 0** command to display summary information for all processe
 
 Record the process ID associated with audiodg.exe on your PC to use later in this lab. \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
-```
+```dbgcmd
 ...
 
 PROCESS ffffe001d147c840
@@ -1518,7 +1518,7 @@ PROCESS ffffe001d147c840
 
 Enter g into the debugger to run the code forward until the media clip is done playing. Then break in to the debugger, by pressing Ctrl+ScrLk (Ctrl+Break) Use the !process command to confirm that you are now running a different process.
 
-```
+```dbgcmd
 !process
 PROCESS ffffe001cd0ad040
     SessionId: none  Cid: 0004    Peb: 00000000  ParentCid: 0000
@@ -1553,7 +1553,7 @@ The output above shows that a different system process of *ffffe001cd0ad040* is 
 
 Now use the !process command to switch to the process that was associated with audiodg.exe. In the example, the process ID is *ffffe001d147c840*. Substitute the process ID in the example with your process ID, that you recorded earlier.
 
-```
+```dbgcmd
 0: kd> !process  ffffe001d147c840
 PROCESS ffffe001d147c840
     SessionId: 0  Cid: 10f0    Peb: ee6cf8a000  ParentCid: 0434
@@ -1636,14 +1636,14 @@ To explore threads associated with the media player, play the media clip again. 
 
 Use the !thread -1 0 to display brief information for the current thread. This shows the thread address, the thread and process IDs, the thread environment block (TEB) address, the address of the Win32 function (if any) the thread was created to run, and the thread’s scheduling state.
 
-```
+```dbgcmd
 0: kd> !thread -1 0
 THREAD ffffe001d3a27040  Cid 10f0.17f4  Teb: 000000ee6cf9d000 Win32Thread: 0000000000000000 RUNNING on processor 0
 ```
 
 To view more information about the thread that is running, type [**!thread**](-thread.md). Information similar to the following should be displayed.
 
-```
+```dbgcmd
 0: kd> !thread
 THREAD ffffe001d3a27040  Cid 10f0.17f4  Teb: 000000ee6cf9d000 Win32Thread: 0000000000000000 RUNNING on processor 0
 IRP List:
@@ -1683,7 +1683,7 @@ ffffd001`c70c6bd0 00007fff`69805b74 : 00007fff`487484e6 0000029b`00000003 000000
 
 Use the k command to view the call stack associated with the thread.
 
-```
+```dbgcmd
 0: kd> k
 # Child-SP          RetAddr           Call Site
 00 ffffd001`c70c62a8 fffff800`7a0fa607 tabletaudiosample!CMiniportWaveRT::NewStream [c:\data1\threshold\audio\endpointscommon\minwavert.cpp @ 562]
@@ -1708,7 +1708,7 @@ Use the k command to view the call stack associated with the thread.
 
 Enter g into the debugger to run the code forward until the media clip is done playing. Then break in to the debugger, by pressing Ctrl - ScrLk (Ctrl-Break) Use the !thread command to confirm that you are now running a different thread.
 
-```
+```dbgcmd
 0: kd> !thread
 THREAD ffffe001ce80b840  Cid 17e4.01ec  Teb: 00000071fa9b9000 Win32Thread: ffffe001d41690d0 RUNNING on processor 0
 Not impersonating
@@ -1751,13 +1751,13 @@ The image name is rundll32.exe, which is indeed not the image name associated wi
 **Note**  
 To set the current thread, type .thread &lt;thread number&gt;.
 
-For more information about threads and processes, see the following references on MSDN:
+For more information about threads and processes, see the following references:
 
 [Threads and Processes](threads-and-processes.md)
 
 [Changing Contexts](changing-contexts.md)
 
- 
+ 
 
 ## <span id="irqlregistersmemory"></span>Section 11: IRQL, registers, and disassembly
 
@@ -1770,7 +1770,7 @@ For more information about threads and processes, see the following references o
 
 The interrupt request level (IRQL) is used to manage the priority of interrupt servicing. Each processor has an IRQL setting that threads can raise or lower. Interrupts that occur at or below the processor's IRQL setting are masked and will not interfere with the current operation. Interrupts that occur above the processor's IRQL setting take precedence over the current operation. The [**!irql**](-irql.md) extension displays the interrupt request level (IRQL) on the current processor of the target computer before the debugger break occurred. When the target computer breaks into the debugger, the IRQL changes, but the IRQL that was effective just before the debugger break is saved and is displayed by !irql.
 
-```
+```dbgcmd
 0: kd> !irql
 Debugger saved IRQL for processor 0x0 -- 2 (DISPATCH_LEVEL)
 ```
@@ -1781,7 +1781,7 @@ Debugger saved IRQL for processor 0x0 -- 2 (DISPATCH_LEVEL)
 
 Display the contents of the registers for the current thread on the current processor by using the [**r (Registers)**](r--registers-.md) command.
 
-```
+```dbgcmd
 0: kd> r
 rax=000000000000c301 rbx=ffffe00173eed880 rcx=0000000000000001
 rdx=000000d800000000 rsi=ffffe00173eed8e0 rdi=ffffe00173eed8f0
@@ -1845,12 +1845,12 @@ You may need to examine memory to identify an issue or to inspect variables, poi
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  
 If you attempt to display an invalid address, its contents are shown as question marks (?).
 
- 
+ 
 
 Alternatively, you can view the memory by clicking **View** &gt; **Memory**. Use the **Display format** pull down to change how the memory is displayed.
 
@@ -1858,20 +1858,20 @@ Alternatively, you can view the memory by clicking **View** &gt; **Memory**. Use
 
 1.  To view data associated with the volume control, set a breakpoint to fire on the PropertyHandlerAudioEngineVolumeLevel routine using the bm command. Before we set the new breakpoint, we will clear all of the previous breakpoints using bc \*.
 
-    ```
+    ```dbgcmd
     kd> bc *
     ```
 
 2.  Set a breakpoint to fire on the PropertyHandlerAudioEngineVolumeLevel routine using the bm command.
 
-    ```
+    ```dbgcmd
     kd> bm tabletaudiosample!CMiniportWaveRT::SetDeviceChannelVolume
       1: fffff80f`02c3a4b0 @!"tabletaudiosample!CMiniportWaveRT::SetDeviceChannelVolume"
     ```
 
 3.  List the breakpoints to confirm that the breakpoint is set properly.
 
-    ```
+    ```dbgcmd
     kd> bl
       1: fffff80f`02c3a4b0 @!"tabletaudiosample!CMiniportWaveRT::SetDeviceChannelVolume"
     ```
@@ -1880,7 +1880,7 @@ Alternatively, you can view the memory by clicking **View** &gt; **Memory**. Use
 
     On the target system adjust the volume in the system tray. This will cause the breakpoint to fire.
 
-    ```
+    ```dbgcmd
     Breakpoint 1 hit
     tabletaudiosample!CMiniportWaveRT::SetDeviceChannelVolume:
     fffff80f`02c3a4b0 44894c2420      mov     dword ptr [rsp+20h],r9d
@@ -1890,7 +1890,7 @@ Alternatively, you can view the memory by clicking **View** &gt; **Memory**. Use
 
 6.  You can display the data type and the current value for the IVolume variable in the sample code by typing the **dt** command and the name of the variable.
 
-    ```
+    ```dbgcmd
     kd> dt lVolume
     Local var @ 0xa011ea50 Type long
     0n-6291456
@@ -1898,7 +1898,7 @@ Alternatively, you can view the memory by clicking **View** &gt; **Memory**. Use
 
 7.  The breakpoint is hit on entering SetDeviceChannelVolume.
 
-    ```
+    ```dbgcmd
     STDMETHODIMP_(NTSTATUS) CMiniportWaveRT::SetDeviceChannelVolume(_In_  ULONG _ulNodeId, _In_ UINT32 _uiChannel, _In_  LONG  _Volume)
     {
         NTSTATUS ntStatus = STATUS_INVALID_DEVICE_REQUEST;
@@ -1912,7 +1912,6 @@ Alternatively, you can view the memory by clicking **View** &gt; **Memory**. Use
         LONG lVolume = VOLUME_NORMALIZE_IN_RANGE(_Volume); 
 
         ntStatus = SetChannelVolume(_uiChannel, lVolume);
-
     Exit:
         return ntStatus;
     }
@@ -1920,7 +1919,7 @@ Alternatively, you can view the memory by clicking **View** &gt; **Memory**. Use
 
 8.  Attempt to display the value at the memory location of IVolume by using the [**dt (Display Type)**](dt--display-type-.md) command.
 
-    ```
+    ```dbgcmd
     kd> dt dt lVolume
     Local var @ 0xffffb780b7eee664 Type long
     0n0
@@ -1930,13 +1929,13 @@ Alternatively, you can view the memory by clicking **View** &gt; **Memory**. Use
 
 9.  Press F10 to run forward to the last line of code in SetDeviceChannelVolume.
 
-    ```
+    ```dbgcmd
         return ntStatus;
     ```
 
 10. Display the value at the memory location of IVolume by using the [**dt (Display Type)**](dt--display-type-.md) command.
 
-    ```
+    ```dbgcmd
     kd> dt lVolume
     Local var @ 0xffffb780b7eee664 Type long
     0n-6291456
@@ -1946,14 +1945,14 @@ Alternatively, you can view the memory by clicking **View** &gt; **Memory**. Use
 
 11. You can also display the memory location of IVolume by using the [**? (Evaluate Expression)**](---evaluate-expression-.md) command.
 
-    ```
+    ```dbgcmd
     kd> ? lVolume
     Evaluate expression: -79711507126684 = ffffb780`b7eee664
     ```
 
 12. The address shown, *ffffb780\`b7eee664* is the address of the lVolume variable. Use the dd command to display the contents of memory at that location.
 
-    ```
+    ```dbgcmd
     kd>  dd ffffb780`b7eee664
     ffffb780`b7eee664  ffa00000 00000018 00000000 c52d7008
     ffffb780`b7eee674  ffffc98e e0495756 fffff80e c52d7008
@@ -1967,14 +1966,14 @@ Alternatively, you can view the memory by clicking **View** &gt; **Memory**. Use
 
 13. You can display the first four bytes of an address by specifying the range parameter L4.
 
-    ```
+    ```dbgcmd
     kd> dd ffffb780`b7eee664 l4
     ffffb780`b7eee664  ffa00000 00000018 00000000 c52d7008
     ```
 
 14. To see the different types of memory output displayed, type the **du**, **da** and **db** commands.
 
-    ```
+    ```dbgcmd
     kd> du ffffb780`b7eee664 
     ffffb780`b7eee664  ""
 
@@ -1994,7 +1993,7 @@ Alternatively, you can view the memory by clicking **View** &gt; **Memory**. Use
 
     Use the df float option to display data as single-precision floating-point numbers (4 bytes).
 
-    ```
+    ```dbgcmd
     df ffffb780`b7eee664 
     ffffb780`b7eee664          -1.#QNAN   3.3631163e-044                0        -2775.002
     ffffb780`b7eee674          -1.#QNAN  -5.8032637e+019         -1.#QNAN        -2775.002
@@ -2049,26 +2048,26 @@ Similar to the commands that are used for reading memory, you can use the e\* co
 </tbody>
 </table>
 
- 
+ 
 
 The following example shows how to overwrite memory.
 
 1.  First, locate the address of the lVolume that is used in the sample code.
 
-    ```
+    ```dbgcmd
     kd> ? lVolume
     Evaluate expression: -79711507126684 = ffffb780`b7eee664
     ```
 
 2.  Overwrite that memory address with new characters using the **eb** command.
 
-    ```
+    ```dbgcmd
     kd> eb 0xffffb780`b7eee664 11 11 11 11 11
     ```
 
 3.  Display the memory location to confirm that the characters have been overwritten by typing the **db** command.
 
-    ```
+    ```dbgcmd
     kd> db 0xffffb780`b7eee664
     ffffb780`b7eee664  11 11 11 11 11 00 00 00-00 00 00 00 08 70 2d c5  .............p-.
     ffffb780`b7eee674  8e c9 ff ff 56 57 49 e0-0e f8 ff ff 08 70 2d c5  ....VWI......p-.
@@ -2089,9 +2088,9 @@ Alternatively, you can modify the contents of the memory in a watch or locals wi
 
 To end a user-mode debugging session, return the debugger to dormant mode, and set the target application to run again, enter the **qd** (Quit and Detach) command.
 
-Be sure and use the **g** command to let the target computer run code, so that it can be used. It also a good idea to clear any break points using **bc \***, so that the target computer won't break and try to connect to the host computer debugger.
+Be sure and use the **g** command to let the target computer run code, so that it can be used. It also a good idea to clear any break points using **bc \\***, so that the target computer won't break and try to connect to the host computer debugger.
 
-```
+```dbgcmd
 0: kd> qd
 ```
 
@@ -2112,17 +2111,19 @@ Additional information is available on Windows debugging. Note that some of thes
 
 **Video**
 
-The Defrag Tools Show WinDbg Episodes 13-29 <http://channel9.msdn.com/Shows/Defrag-Tools>
+The Defrag Tools Show WinDbg Episodes 13-29 <https://channel9.msdn.com/Shows/Defrag-Tools>
 
 **Training Vendors:**
 
-OSR <https://www.osr.com/>
+OSR  - <https://www.osr.com/>
 
- 
 
- 
+## See Also
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Debug%20Drivers%20-%20Step%20by%20Step%20Lab%20%28Sysvad%20Kernel-Mode%29%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Getting Started with Windows Debugging](getting-started-with-windows-debugging.md) 
+
+ 
+
 
 
 

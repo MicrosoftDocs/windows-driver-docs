@@ -3,11 +3,8 @@ title: Event Filters
 description: Event Filters
 ms.assetid: 91f2a483-8971-42de-a6c5-cc25409279a5
 keywords: ["Debugger Engine API, event filters"]
-ms.author: windowsdriverdev
 ms.date: 05/23/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Event Filters
@@ -17,7 +14,7 @@ ms.technology: windows-devices
 
 **Note**   If more sophisticated event filtering is required, event callbacks can be used.
 
- 
+ 
 
 Event filters are divided into three categories.
 
@@ -80,7 +77,7 @@ Some specific filters take arguments that restrict which events the filter match
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  
 1.  The argument uses the [string wildcard syntax](string-wildcard-syntax.md) and is compared with the image name (ignoring path) when the event occurs. If the name of the module or process is not available, it is considered a match.
@@ -89,7 +86,7 @@ Some specific filters take arguments that restrict which events the filter match
 
 3.  The argument uses the string wildcard syntax and is compared with the debug output from the target. If the output is not known, it is considered a match.
 
- 
+ 
 
 ### <span id="index_and_exception_code"></span><span id="INDEX_AND_EXCEPTION_CODE"></span>Index and Exception Code
 
@@ -127,7 +124,7 @@ Each event filter has an index. The index is a number between zero and one less 
 </tbody>
 </table>
 
- 
+ 
 
 The indices for the specific event filters are found in the first table located in the topic [**DEBUG\_FILTER\_XXX**](https://msdn.microsoft.com/library/windows/hardware/ff541490). The index of the default exception filter (the first specific exception filter) is *SpecificEvents*. When an arbitrary exception filter is removed, the indices of the other arbitrary exception filters can change.
 
@@ -137,11 +134,10 @@ The exception filters are usually specified by exception code. However, some met
 
 When a system error occurs, the engine will break into the debugger or print the error to the output stream, if the error occurs at or below specified levels. These levels are returned by [**GetSystemErrorControl**](https://msdn.microsoft.com/library/windows/hardware/ff549215) and can be changed using [**SetSystemErrorControl**](https://msdn.microsoft.com/library/windows/hardware/ff556806).
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Event%20Filters%20%20RELEASE:%20%285/15/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

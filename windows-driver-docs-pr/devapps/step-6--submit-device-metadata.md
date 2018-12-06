@@ -2,11 +2,8 @@
 title: Step 6 Submit device metadata for your UWP device app
 description: This topic describes how to submit device metadata for your UWP device app to the Windows Dev Center hardware dashboard.
 ms.assetid: 5A4A371E-42A2-43C8-A496-CC3C38C17182
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Step 6: Submit device metadata for your UWP device app
@@ -20,7 +17,7 @@ A UWP device app is a special kind of UWP app that device manufacturers create t
 
 **Note**  This topic is part of a step-by-step series. See [Build a UWP device app step-by-step](build-a-uwp-device-app-step-by-step.md) for the introduction.
 
- 
+ 
 
 ## <span id="Before_you_begin"></span><span id="before_you_begin"></span><span id="BEFORE_YOU_BEGIN"></span>Before you begin
 
@@ -54,17 +51,16 @@ You can use the **Bulk Package Wizard** to create a bulk submission package that
 
     **Note**  The device must be certified before submitting device metadata for your UWP device app.
 
-     
+     
 
 6.  On the **Prepare bulk package for submission** page, click **Launch Signature Wizard** to start the **Digital Signature Wizard**, which is used to digitally sign your bulk submission package.
 
-For more info on submitting a device metadata package to the hardware dashboard, see [Device Metadata](http://msdn.microsoft.com/library/windows/hardware/br230800.aspx).
+For more info on submitting a device metadata package to the hardware dashboard, see [Device Metadata](https://msdn.microsoft.com/library/windows/hardware/br230800.aspx).
 
- 
+ 
 
- 
+ 
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devapps\devapps]:%20Step%206:%20Submit%20the%20device%20metadata%20for%20your%20Windows%20Store%20device%20app%20%20%20RELEASE:%20%281/20/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

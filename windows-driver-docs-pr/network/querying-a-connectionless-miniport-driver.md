@@ -4,17 +4,14 @@ description: Querying a Connectionless Miniport Driver
 ms.assetid: a556d7ba-52ea-443b-994b-4c517e80ac55
 keywords:
 - connectionless drivers WDK networking
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Querying a Connectionless Miniport Driver
 
 
-## <a href="" id="ddk-querying-a-connectionless-miniport-driver-ng"></a>
+
 
 
 To query OIDs that a connectionless miniport driver maintains, a bound protocol calls [**NdisOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff563710) and passes an [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure that specifies the object (OID) that is being queried and that points to a buffer into which NDIS eventually writes the requested information.
@@ -41,9 +38,9 @@ A miniport driver must never use the flag NDIS\_MAC\_OPTION\_RESERVED, which is 
 
 The miniport drivers for certain media types will receive additional OIDs that are media-specific. For example, a miniport driver whose NIC is of type 802.3 is queried with OID\_802.3\_MAXIMUM\_LIST\_SIZE. For more information, see [General Objects](https://msdn.microsoft.com/library/windows/hardware/ff546510).
 
- 
+ 
 
- 
+ 
 
 
 

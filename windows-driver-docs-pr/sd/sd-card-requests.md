@@ -1,6 +1,5 @@
 ---
 title: SD Card Requests
-author: windows-driver-content
 description: SD Card Requests
 ms.assetid: 3c04573a-5fe7-4332-b899-5aff3234f1ad
 keywords:
@@ -11,11 +10,8 @@ keywords:
 - asynchronous requests WDK SD bus
 - SdBusSubmitRequest
 - SdBusSubmitRequestAsync
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # SD Card Requests
@@ -61,7 +57,7 @@ Secure Digital (SD) card drivers use property requests to read or set card prope
 
 The following code example illustrates how a driver for a function on a multifunction card might request its function number from the bus driver:
 
-```
+```cpp
  sdrp = ExAllocatePool(NonPagedPool, 
  sizeof(SDBUS_REQUEST_PACKET));
  if (!sdrp) {
@@ -106,11 +102,10 @@ This section contains two code examples: a command request that reads a byte of 
 
 [Secure Digital Requests That Do Use Extended I/O](https://msdn.microsoft.com/library/windows/hardware/ff538055)
 
- 
+ 
 
- 
+ 
 
 
---------------------
 
 

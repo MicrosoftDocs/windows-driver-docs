@@ -6,11 +6,8 @@ keywords:
 - state offloading process WDK TCP chimney offload , events
 - offloading state process WDK TCP chimney offload , events
 - events WDK TCP chimney offload
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Processing Events That Occur During an Offload
@@ -18,7 +15,7 @@ ms.technology: windows-devices
 
 \[The TCP chimney offload feature is deprecated and should not be used.\]
 
-## <a href="" id="ddk-processing-events-that-occur-during-an-offload-ng"></a>
+
 
 
 An offload target must be able to process the following events while an offload operation is in progress (that is, before the offload target's call to [**NdisMInitiateOffloadComplete**](https://msdn.microsoft.com/library/windows/hardware/ff563604) has returned):
@@ -57,9 +54,9 @@ We recommend that an offload target not call the following indication functions 
 
 -   [**NdisTcpOffloadReceiveHandler**](https://msdn.microsoft.com/library/windows/hardware/ff564606)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -6,11 +6,8 @@ keywords:
 - Network Module Registrar WDK Winsock Kernel
 - NMR WDK Winsock Kernel
 - initializing NMR data structures
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Initializing NMR Data Structures
@@ -28,7 +25,7 @@ All of these data structures must remain valid and resident in memory as long as
 
 The following code example shows how a WSK application can initialize all of the data structures listed previously.
 
-```
+```C++
 // Include the WSK header file
 #include "wsk.h"
 
@@ -81,7 +78,7 @@ A WSK application calls the [**NmrRegisterClient**](https://msdn.microsoft.com/l
 
 For example:
 
-```
+```C++
 // Variable to contain the handle for the registration with the NMR
 HANDLE RegistrationHandle;
 
@@ -120,9 +117,9 @@ NTSTATUS
 
 A WSK application is not required to call **NmrRegisterClient** from within its **DriverEntry** function. For example, if a WSK application is a subcomponent of a complex driver, the registration of the application might occur only when the WSK application subcomponent is activated.
 
- 
+ 
 
- 
+ 
 
 
 

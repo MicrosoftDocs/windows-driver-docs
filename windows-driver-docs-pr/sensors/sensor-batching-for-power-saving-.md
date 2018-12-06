@@ -1,13 +1,9 @@
 ---
 title: Sensor data batching for power savings
-author: windows-driver-content
 description: This topic covers the interfaces that are required between the sensor class extension and the sensor driver, to implement sensor data batching in Windows 10.
 ms.assetid: E64B9CE0-2C76-430A-ABE0-717BD27BCA8A
-ms.author: windowsdriverdev
-ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 07/20/2018
+ms.localizationpriority: medium
 ---
 
 # Sensor data batching for power savings
@@ -43,25 +39,25 @@ In addition to the required common sensor properties and enumeration properties,
 
 -   PKEY\_Sensor\_WakeCapable
 
-For more information, see [Common sensor properties](https://msdn.microsoft.com/library/windows/hardware/dn957018) and [Enumeration properties](https://msdn.microsoft.com/library/windows/hardware/dn957027).
+For more information, see [Common sensor properties](common-sensor-properties.md) and [Enumeration properties](enumeration-properties.md).
 
 If the sensor hardware subsystem is wake-capable, then it should make sure that it initiates wake up early enough to avoid buffer overruns.
 
-## <a href="" id="opt-ddsi"></a>Optional DDSI functions for data batching
+## Optional DDSI functions for data batching
 
 
 The device driver software interface (DDSI) functions are the interface between the driver and the class extension. To support data batching, a driver must implement the following DDSI function, so that the sensor class extension can set the batch latency.
 
--   [EvtSensorSetBatchLatency](https://msdn.microsoft.com/library/windows/hardware/mt219125)
+-   [EvtSensorSetBatchLatency](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorscx/ns-sensorscx-_sensor_controller_config)
     This is a callback function that sets the batch latency for a specified sensor. The driver should set the Batch Latency to a value that is less than or equal to the *BatchLatencyMs* parameter, depending on buffer availability.
 
-The driver must also implement all the required DDSI functions. For more information, see [Sensor DDSI functions](https://msdn.microsoft.com/library/windows/hardware/dn946694).
+The driver must also implement all the required DDSI functions. For more information, see [Sensor DDSI functions](sensor-ddsi-functions.md).
 
 It is optional for the sensor class extension to specify batch latency. The default batch latency for all sensors is zero (0), which is used to indicate that samples will not be batched. Sensor samples will be delivered in batches, only if the class extension calls **EvtSensorSetBatchLatency** to set a batch latency value. Otherwise, the samples will be delivered normally at the periodic data interval rate.
 
 The sensor class extension can call **EvtSensorSetBatchLatency** to change the batch latency value at any time. In particular, this function can be called while the specified sensor is already active and running, and this should not result in the loss of events. The sensor driver is expected to collect and start delivering samples of the latest batch immediately (on a best effort basis). The driver should not exceed the batch latency specified by class extension.
 
-It is important to note that there is no change implied to sensor data delivery methods and events due to data batching. When batch latency expires, the driver calls SensorsCxSensorDataReady repeatedly to deliver all the buffered data samples one at a time. The data samples are accompanied by their time stamps (contained in their associated PKEY\_SensorData\_Timestamp data fields) indicating when each sampled was taken. For more information about PKEY\_SensorData\_Timestamp, see [Common data fields](https://msdn.microsoft.com/library/windows/hardware/dn957017).
+It is important to note that there is no change implied to sensor data delivery methods and events due to data batching. When batch latency expires, the driver calls SensorsCxSensorDataReady repeatedly to deliver all the buffered data samples one at a time. The data samples are accompanied by their time stamps (contained in their associated PKEY\_SensorData\_Timestamp data fields) indicating when each sampled was taken. For more information about PKEY\_SensorData\_Timestamp, see [Common data fields](common-data-fields.md).
 
 ## Batch latency and data rate relationship
 
@@ -70,21 +66,21 @@ Batch latency and data rate are related as follows:
 
 ![formula for the batch latency value in milliseconds.](images/batch-formula.png)
 
-Where *SensorBatching\_MaxSize\_Bytes* is the maximum size of the buffer for the batched sensor data. If your sensor is an accelerometer, then we recommend a hardware buffer that is large enough to hold 250 or more samples. The data rate is expressed in milliseconds, and it's the length of time it takes to transfer one data sample. The number of samples the sensor hardware must store in a batch is inversely proportional to the data rate. The smaller the data rate, the bigger the sample buffer that is needed to store the batched samples for a given batch latency value. In the preceding formula, batch latency is represented by *BatchLatencyMs* and data rate is represented by *DataRateMs*. And If the combination of *BatchLatencyMs* and *DataRateMs* result in a buffer size that’s larger than *SensorBatching\_MaxSize\_Bytes*, then **EvtSensorSetBatchLatency** and [EvtSensorSetDataInterval](https://msdn.microsoft.com/library/windows/hardware/dn957038) will set the batch latency to the value shown by the preceding formula.
+Where *SensorBatching\_MaxSize\_Bytes* is the maximum size of the buffer for the batched sensor data. If your sensor is an accelerometer, then we recommend a hardware buffer that is large enough to hold 250 or more samples. The data rate is expressed in milliseconds, and it's the length of time it takes to transfer one data sample. The number of samples the sensor hardware must store in a batch is inversely proportional to the data rate. The smaller the data rate, the bigger the sample buffer that is needed to store the batched samples for a given batch latency value. In the preceding formula, batch latency is represented by *BatchLatencyMs* and data rate is represented by *DataRateMs*. And If the combination of *BatchLatencyMs* and *DataRateMs* result in a buffer size that’s larger than *SensorBatching\_MaxSize\_Bytes*, then **EvtSensorSetBatchLatency** and [EvtSensorSetDataInterval](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorscx/ns-sensorscx-_sensor_controller_config) will set the batch latency to the value shown by the preceding formula.
 
 If the caller specifies a *BatchLatencyMs* value that is less than *DataRateMs*, then the data is delivered without buffering.
 
 ## Batching with data thresholds
 
 
-A sensor driver that implements data batching can use [EvtSensorSetDataThresholds](https://msdn.microsoft.com/library/windows/hardware/dn957039) to set a non-zero data threshold. In this case, when the difference in data values between the current readings and the last readings, exceeds the data threshold that was set using **EvtSensorSetDataThresholds**, then the data collection, batching and delivery process is invoked. So using data batching together with data thresholds, allows the sensor driver to save even more power.
+A sensor driver that implements data batching can use [EvtSensorSetDataThresholds](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorscx/ns-sensorscx-_sensor_controller_config) to set a non-zero data threshold. In this case, when the difference in data values between the current readings and the last readings, exceeds the data threshold that was set using **EvtSensorSetDataThresholds**, then the data collection, batching and delivery process is invoked. So using data batching together with data thresholds, allows the sensor driver to save even more power.
 
 When non-zero data thresholds are set by the sensor class extension, along with data batching, the driver is expected to deliver batched samples with accurate timestamps, and to honor the data thresholds as well. If the sensor hardware itself isn’t capable of keeping accurate timestamps while enforcing data thresholds it can collect samples without enforcing data thresholds. However, in such a case the driver should filter out samples that don’t meet the current data threshold settings, before delivering them to the sensor class extension.
 
 ## Sequence diagram examples
 
 
-Here are sequence diagrams that show the usage of the optional data batching DDSI functions that were mentioned in [Optional DDSI functions for data Batching](#opt-ddsi). We may add more sequence diagrams as needed, to clarify scenarios based on partner feedback.
+Here are sequence diagrams that show the usage of the optional data batching DDSI functions that were mentioned in [Optional DDSI functions for data Batching](#optional-ddsi-functions-for-data-batching). We may add more sequence diagrams as needed, to clarify scenarios based on partner feedback.
 
 **Scenario 1**
 
@@ -127,12 +123,10 @@ The following diagram illustrates the different configurations described in the 
 
 Under normal circumstances the driver is supposed to read the hardware buffer at least once every time interval equal to *BatchLatencyMs*, to ensure that no data is dropped or lost. When the hardware FIFO buffer fills up, it should wrap around and behave like a circular buffer, overwriting older events.
 
- 
+ 
 
- 
+ 
 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bsensors\sensors%5D:%20Sensor%20data%20batching%20for%20power%20savings%20%20RELEASE:%20%281/12/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

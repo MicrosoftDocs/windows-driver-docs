@@ -2,17 +2,14 @@
 title: Obtaining and Updating Power Management Parameters
 description: Obtaining and Updating Power Management Parameters
 ms.assetid: 46c4d2ab-e6d9-4d23-bf40-0037b80b01af
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Obtaining and Updating Power Management Parameters
 
 
-## <a href="" id="ddk--nr"></a>
+
 
 
 Protocol drivers can use the [OID\_PM\_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/ff569768) OID to query the hardware capabilities of a network adapter that is currently enabled. After a successful return from the query, the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure contains a pointer to an [**NDIS\_PM\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff566759) structure.
@@ -21,11 +18,11 @@ Protocol drivers can also use OID\_PM\_PARAMETERS as a set request to enable or 
 
 **Note**  Protocol drives cannot disable capabilities that were enabled by other protocol drivers. If none of the protocol drivers enable a capability, that capability is unused.
 
- 
+ 
 
 **Note**  NDIS enables magic packet and low power on disconnect capabilities based on the user settings, and these capabilities cannot be disabled by protocol drivers.
 
- 
+ 
 
 NDIS\_PM\_PARAMETERS includes the following information:
 
@@ -48,9 +45,9 @@ Before NDIS transitions the network adapter to the low power state, NDIS sends a
 
 The capabilities that are currently enabled can be a subset of the capabilities that the hardware supports. For more information about the capabilities that the hardware supports, see [Reporting Power Management Capabilities](reporting-power-management-capabilities.md).
 
- 
+ 
 
- 
+ 
 
 
 

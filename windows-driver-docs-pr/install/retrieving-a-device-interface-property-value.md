@@ -2,11 +2,8 @@
 title: Retrieving a Device Interface Property Value
 description: Retrieving a Device Interface Property Value
 ms.assetid: 2a845adc-6965-420d-9e0a-20935d20577a
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Retrieving a Device Interface Property Value
@@ -33,9 +30,9 @@ Starting with Windows Vista, follow these steps to retrieve the value of a [devi
 
 If the second call to **SetupDiGetDeviceInterfaceProperty** succeeds, **SetupDiGetDeviceInterfaceProperty** sets \**PropertyType* to the property-data-type identifier for the property, sets the *PropertyBuffer* buffer to the property value, sets \**RequiredSize* to the size, in bytes, of the property value that was retrieved, and returns **TRUE**. If the function call fails, **SetupDiGetDeviceInterfaceProperty** returns **FALSE** and a call to [GetLastError](http://go.microsoft.com/fwlink/p/?linkid=169416) will return the logged error code.
 
- 
+ 
 
- 
+ 
 
 
 

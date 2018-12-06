@@ -2,11 +2,8 @@
 title: Determining the NVGRE Task Offload Capabilities of a Network Adapter
 description: This section describes how to determine the NVGRE Task Offload capabilities of a network adapter
 ms.assetid: 1F9C5E7D-5488-47C1-BEDC-D7C640F57511
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Determining the NVGRE Task Offload Capabilities of a Network Adapter
@@ -28,7 +25,7 @@ To report its support for NVGRE task offload, a miniport driver sets the followi
 
     **Note**  256 bytes is a good default value that should cover all possible cases.
 
-     
+     
 
 -   Set the other members to indicate which types of task offload the miniport driver supports for encapsulated packets. For a list of the flags that can be set for these members, see the Remarks section of [**NDIS\_ENCAPSULATED\_PACKET\_TASK\_OFFLOAD**](https://msdn.microsoft.com/library/windows/hardware/jj991956).
 
@@ -39,15 +36,15 @@ To determine whether a miniport driver supports NVGRE task offload, protocol and
 
 **Note**  To determine whether the miniport driver's NVGRE capability is currently enabled, use the [OID\_TCP\_OFFLOAD\_CURRENT\_CONFIG](https://msdn.microsoft.com/library/windows/hardware/ff569805) OID request as described in [Querying and Changing NVGRE Task Offload State](querying-and-changing-nvgre-task-offload-state.md).
 
- 
+ 
 
 **Note**  To enable or disable the miniport driver's NVGRE capability, use the [OID\_TCP\_OFFLOAD\_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/ff569807) OID request as described in [Querying and Changing NVGRE Task Offload State](querying-and-changing-nvgre-task-offload-state.md).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

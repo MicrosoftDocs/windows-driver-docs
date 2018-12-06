@@ -2,11 +2,8 @@
 title: Device Installation Application Included in Driver Package
 description: Device Installation Application that is Included in the Driver Package
 ms.assetid: bd6e182c-6b7a-4cde-bcc7-637ae6bf39be
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.localizationpriority: medium
 ---
 
 # Device Installation Application that is Included in the Driver Package
@@ -44,15 +41,15 @@ If you use this method, the following will occur whenever the user installs the 
 
 **Note**  Since the [driver package](driver-packages.md) has already been installed before the device installation application is launched, the application must detect that the drivers are already installed and only install the device-specific applications.
 
- 
+ 
 
 For more information about co-installers, see [Writing a Co-installer](writing-a-co-installer.md).
 
 For more information about starting device installation applications through co-installers, see [Guidelines for Starting Device Installation Applications through Co-installers](guidelines-for-starting-device-installation-applications-through-co-in.md).
 
- 
+ 
 
- 
+ 
 
 
 
