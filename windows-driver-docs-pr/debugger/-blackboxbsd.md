@@ -94,10 +94,6 @@ Power button transition latest checkpoint type: 0
 Power button transition latest checkpoint sequence number: 77
 ```
 
-
-### <span id="Additional_Information"></span>Additional Information
-
-[BugCheckSecondaryDumpDataCallback routine](https://msdn.microsoft.com/library/windows/hardware/ff540679)
  
 
 

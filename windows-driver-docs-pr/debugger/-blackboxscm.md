@@ -62,12 +62,9 @@ In this example, the code 15 (or  0x0000000F) is defined as SERVICE_CONTROL_PRES
 
 ### <span id="Additional_Information"></span>Additional Information
 
-dwControl values are defined in winsvc.h and documented as parameters to [LPHANDLER_FUNCTION_EX callback function] (https://docs.microsoft.com/windows/desktop/api/winsvc/nc-winsvc-lphandler_function_ex#parameters).
+dwControl values are defined in winsvc.h and documented as parameters to [LPHANDLER_FUNCTION_EX callback function](https://docs.microsoft.com/windows/desktop/api/winsvc/nc-winsvc-lphandler_function_ex#parameters).
 
 
-### <span id="See Also"></span>See Also
-
-[BugCheckSecondaryDumpDataCallback routine](https://msdn.microsoft.com/library/windows/hardware/ff540679)
  
 
 
