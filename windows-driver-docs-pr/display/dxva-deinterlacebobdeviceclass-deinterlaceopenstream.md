@@ -1,6 +1,6 @@
 ---
-title: DXVA\_DeinterlaceBobDeviceClass DeinterlaceOpenStream method
-description: The sample DeinterlaceOpenStream function creates and opens a deinterlace stream object.
+title: DeinterlaceOpenStream method
+description: The sample DXVA_DeinterlaceBobDeviceClass::DeinterlaceOpenStream function creates and opens a deinterlace stream object.
 ms.assetid: 975d5f6a-8d92-4da5-846c-1637fca58eb1
 keywords: ["DeinterlaceOpenStream method Display Devices", "DeinterlaceOpenStream method Display Devices , DXVA_DeinterlaceBobDeviceClass interface", "DXVA_DeinterlaceBobDeviceClass interface Display Devices , DeinterlaceOpenStream method"]
 topic_type:
@@ -9,8 +9,9 @@ api_name:
 - DXVA_DeinterlaceBobDeviceClass.DeinterlaceOpenStream
 api_type:
 - COM
-ms.date: 01/05/2018
+ms.date: 12/06/2018
 ms.localizationpriority: medium
+ms.custom: seodec18
 ---
 
 # DXVA\_DeinterlaceBobDeviceClass::DeinterlaceOpenStream method
@@ -21,7 +22,7 @@ The sample *DeinterlaceOpenStream* function creates and opens a deinterlace stre
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT DeinterlaceOpenStream(
   [in] LPDXVA_VideoDesc lpVideoDescription
 );

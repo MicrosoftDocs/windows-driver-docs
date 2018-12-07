@@ -1,14 +1,15 @@
 ---
-title: Retrieving COPP-Compatible Information about a Protected Output
-description: Retrieving COPP-Compatible Information about a Protected Output
+title: Retrieving COPP-Compatible Information on Protected Output
+description: The display miniport driver can receive requests to retrieve COPP-compatible information about the protected output that is associated with a graphics adapter's physical output connector.
 ms.assetid: 9114f232-4123-47a8-b43d-62d14b9f6b08
 keywords:
 - OPM WDK display , retrieving COPP-compatible information
-ms.date: 04/20/2017
+ms.date: 12/06/2018
 ms.localizationpriority: medium
+ms.custom: seodec18
 ---
 
-# Retrieving COPP-Compatible Information about a Protected Output
+# Retrieving COPP-Compatible Information on Protected Output
 
 
 The display miniport driver can receive requests to retrieve COPP-compatible information about the protected output that is associated with a graphics adapter's physical output connector. The display miniport driver's [**DxgkDdiOPMGetCOPPCompatibleInformation**](https://msdn.microsoft.com/library/windows/hardware/ff559720) function is passed a pointer to a [**DXGKMDT\_OPM\_COPP\_COMPATIBLE\_GET\_INFO\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff560859) structure in the *Parameters* parameter that contains the information request. *DxgkDdiOPMGetCOPPCompatibleInformation* writes the required information to the [**DXGKMDT\_OPM\_REQUESTED\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff560910) structure that the *RequestedInformation* parameter points to. The **guidInformation** and **abParameters** members of DXGKMDT\_OPM\_COPP\_COMPATIBLE\_GET\_INFO\_PARAMETERS specify the information request. Depending on the information request, the display miniport driver should populate the members of the [**DXGKMDT\_OPM\_STANDARD\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff560925), [**DXGKMDT\_OPM\_ACTUAL\_OUTPUT\_FORMAT**](https://msdn.microsoft.com/library/windows/hardware/ff560840), [**DXGKMDT\_OPM\_ACP\_AND\_CGMSA\_SIGNALING**](https://msdn.microsoft.com/library/windows/hardware/ff560830), or [**DXGKMDT\_OPM\_CONNECTED\_HDCP\_DEVICE\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff560854) structure with the required information and point the **abRequestedInformation** member of DXGKMDT\_OPM\_REQUESTED\_INFORMATION to that structure. After the driver specifies the **cbRequestedInformationSize** (for example, <strong>sizeof (</strong>DXGKMDT\_OPM\_STANDARD\_INFORMATION<strong>)</strong>) and **abRequestedInformation** members of DXGKMDT\_OPM\_REQUESTED\_INFORMATION, the driver must calculate the One-key Cipher Block Chaining (CBC)-mode message authentication code (OMAC) for the data in DXGKMDT\_OPM\_REQUESTED\_INFORMATION and must set this OMAC in the **omac** member of DXGKMDT\_OPM\_REQUESTED\_INFORMATION. For more information about calculating OMAC, see the [OMAC-1 algorithm](https://go.microsoft.com/fwlink/p/?linkid=70417).

@@ -1,20 +1,17 @@
 ---
-title: When to Implement a HwVidSynchronizeExecutionCallback Routine
+title: Implementing a HwVidSynchronizeExecutionCallback Routine
 description: When to Implement a HwVidSynchronizeExecutionCallback Routine
 ms.assetid: d33736ca-aff2-421b-a8cc-d09eba76ff7f
 keywords:
 - video miniport drivers WDK Windows 2000 , interrupts
 - interrupts WDK video miniport
 - HwVidSynchronizeExecutionCallback
-ms.date: 04/20/2017
+ms.date: 12/06/2018
 ms.localizationpriority: medium
+ms.custom: seodec18
 ---
 
-# When to Implement a HwVidSynchronizeExecutionCallback Routine
-
-
-## <span id="ddk_when_to_implement_a_hwvidsynchronizeexecutioncallback_routine_gg"></span><span id="DDK_WHEN_TO_IMPLEMENT_A_HWVIDSYNCHRONIZEEXECUTIONCALLBACK_ROUTINE_GG"></span>
-
+# Implementing a HwVidSynchronizeExecutionCallback Routine
 
 Miniport drivers for adapters that do not generate interrupts seldom call [**VideoPortSynchronizeExecution**](https://msdn.microsoft.com/library/windows/hardware/ff570372) with a [*HwVidSynchronizeExecutionCallback*](https://msdn.microsoft.com/library/windows/hardware/ff567369) function.
 
