@@ -27,6 +27,10 @@ An **AddPowerSetting** directive references one or more sections that are used t
 [ClassInstall32.ntx86] | 
 [ClassInstall32.ntia64] |  (Windows Vista)
 [ClassInstall32.ntamd64]  (Windows Vista)
+[ClassInstall32.ntarm] 
+[ClassInstall32.ntarm64]  
+
+
 
 AddPowerSetting=add-power-setting-section[,add-power-setting-section]
 ```
