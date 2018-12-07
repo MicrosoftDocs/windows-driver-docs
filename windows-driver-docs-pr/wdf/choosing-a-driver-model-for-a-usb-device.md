@@ -1,6 +1,5 @@
 ---
 title: Choosing a Driver Model for a USB Device
-author: windows-driver-content
 description: Choosing a Driver Model for a USB Device
 ms.assetid: 7272c491-bb41-4827-98be-17f1c784d2dd
 keywords:
@@ -20,9 +19,9 @@ ms.localizationpriority: medium
 
 For information about how to determine what type of driver you need for your USB device, see [Choosing a driver model for developing a USB client driver](https://msdn.microsoft.com/library/windows/hardware/ff540215).
 
- 
+ 
 
- 
+ 
 
 
 

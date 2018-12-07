@@ -3,7 +3,6 @@ title: .pagein (Page In Memory)
 description: The .pagein command pages in the specified region of memory.
 ms.assetid: 5fb8f9d2-d07a-49c3-b844-aade9bdba367
 keywords: ["Page In Memory (.pagein) command", "memory, Page In Memory (.pagein) command", ".pagein (Page In Memory) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -61,7 +60,7 @@ Specifies the address to page in.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -76,7 +75,7 @@ In Windows Server 2003 and Windows XP, you can page in only user-mode addresses 
 
 **Warning**   If you use **.pagein** on an address in a kernel stack in Windows Server 2003 or Windows XP, a bug check might occur.
 
- 
+ 
 
 Requirements
 ------------
@@ -94,9 +93,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

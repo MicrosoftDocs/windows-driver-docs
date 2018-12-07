@@ -1,6 +1,5 @@
 ---
 title: Adding Document Feeder Support
-author: windows-driver-content
 description: Adding Document Feeder Support
 ms.assetid: f3fa6a2e-3714-4620-9acc-f9d177045ee0
 ms.date: 04/20/2017
@@ -17,9 +16,9 @@ For information about adding automatic document feeder support to WIA item trees
 
 For information about adding automatic document feeder support to WIA scanner item trees in Windows Vista and later operating systems, and on how to develop WIA drivers that are compatible with Windows Me and Windows XP, as well as Windows Vista and later, see [WIA Feeder Scanners](wia-feeder-scanners.md).
 
- 
+ 
 
- 
+ 
 
 
 

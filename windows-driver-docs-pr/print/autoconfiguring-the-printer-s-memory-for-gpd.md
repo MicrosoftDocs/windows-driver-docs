@@ -1,6 +1,5 @@
 ---
 title: Autoconfiguring the Printer's Memory for GPD
-author: windows-driver-content
 description: Autoconfiguring the Printer's Memory for GPD
 ms.assetid: 5e8339a5-d515-4821-853e-bc6607b2d9c1
 keywords:
@@ -23,11 +22,10 @@ The following code example shows how to add entries to the GDL file for any memo
 {
   *rcNameID: =PRINTER_MEMORY_DISPLAY
   *DefaultOption: 4096KB
- 
+
   *MemConfigKB: PAIR(4096, 3150)
   *MemConfigKB: PAIR(8192, 6750)
 }
- 
 ```
 
 You can enable memory autoconfiguration by adding the following feature to the GDL file.
@@ -46,24 +44,23 @@ You can enable memory autoconfiguration by adding the following feature to the G
     *ResponseType: BIDI_INT
     *ResponseData: ENUM_OPTION (Memory)
   }
- 
+
   *Option: 4096KB
   {
     *% Names for the memory options already defined in GPD
     *BidiValue: INT(4096)
   }
- 
+
   *Option: 8192KB
   {
     *BidiValue: INT(8192)
   }
 }
- 
 ```
 
- 
 
- 
+
+
 
 
 

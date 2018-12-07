@@ -1,6 +1,5 @@
 ---
 title: Storport Queue Management
-author: windows-driver-content
 description: Storport Queue Management
 ms.assetid: 29fddcac-abc9-4aa4-8485-56120805ae34
 keywords:
@@ -45,49 +44,49 @@ Unlike SCSI Port, Storport allows miniport drivers to notify the port driver of 
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<strong>StorPortPauseDevice</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567461)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567461" data-raw-source="[&lt;strong&gt;StorPortPauseDevice&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567461)"><strong>StorPortPauseDevice</strong></a></p></td>
 <td align="left"><p>Pause a device for a specified period of time.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>StorPortResumeDevice</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567501)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567501" data-raw-source="[&lt;strong&gt;StorPortResumeDevice&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567501)"><strong>StorPortResumeDevice</strong></a></p></td>
 <td align="left"><p>Resume a paused device.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>StorPortPause</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567459)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567459" data-raw-source="[&lt;strong&gt;StorPortPause&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567459)"><strong>StorPortPause</strong></a></p></td>
 <td align="left"><p>Pause an adapter for a specified period of time.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>StorPortResume</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567499)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567499" data-raw-source="[&lt;strong&gt;StorPortResume&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567499)"><strong>StorPortResume</strong></a></p></td>
 <td align="left"><p>Resume a paused adapter.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>StorPortDeviceBusy</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567050)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567050" data-raw-source="[&lt;strong&gt;StorPortDeviceBusy&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567050)"><strong>StorPortDeviceBusy</strong></a></p></td>
 <td align="left"><p>Make a device busy until the device queue has completed a specified number of I/O requests.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>StorPortDeviceReady</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567053)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567053" data-raw-source="[&lt;strong&gt;StorPortDeviceReady&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567053)"><strong>StorPortDeviceReady</strong></a></p></td>
 <td align="left"><p>Make a busy device ready to receive requests again.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>StorPortBusy</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567041)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567041" data-raw-source="[&lt;strong&gt;StorPortBusy&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567041)"><strong>StorPortBusy</strong></a></p></td>
 <td align="left"><p>Make an adapter busy until it has completed a specified number of I/O requests.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>StorPortReady</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567489)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567489" data-raw-source="[&lt;strong&gt;StorPortReady&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567489)"><strong>StorPortReady</strong></a></p></td>
 <td align="left"><p>Make a busy adapter ready to receive requests again.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 While a device is paused or busy, the port driver sends no requests to the device. If a miniport driver completes a request with a busy status (SRB\_STATUS\_BUSY or SCSISTAT\_BUSY), the port driver will retry the request an indefinite number of times, until the request fails or is completed.
 
 In addition to supplying a set of explicit queue management routines that are not available in the SCSI Port queue model, the Storport queue model does not use the implicit queue management routines that the SCSI Port employed. In particular, the **NextRequest** and **NextLuRequest** notifications are ignored.
 
- 
+ 
 
- 
+ 
 
 
 

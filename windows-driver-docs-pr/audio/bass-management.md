@@ -2,7 +2,7 @@
 title: Bass Management
 description: Bass Management
 ms.assetid: b3fb6fcf-cf86-4627-912e-253b5864ab9e
-ms.date: 04/20/2017
+ms.date: 11/07/2018
 ms.localizationpriority: medium
 ---
 
@@ -17,11 +17,11 @@ There are two bass management modes: forward bass management and reverse bass ma
 
 -   Reverse bass management distributes the signal from the subwoofer channel to the other output channels. The signal is directed either to all channels or to the front-left and front-right channels, depending on the setting of the LRBig flag. This process uses a substantial gain reduction when mixing the subwoofer signal into the other channels.
 
-    The bass management mode that is used depends on the availability of a subwoofer and the bass-handling capability of the main speakers. In Windows Vista, the user provides this information via the Sound applet in Control Panel.
+    The bass management mode that is used depends on the availability of a subwoofer and the bass-handling capability of the main speakers. In Windows, the user provides this information via the Sound applet in Control Panel.
 
- 
+ 
 
- 
+ 
 
 
 

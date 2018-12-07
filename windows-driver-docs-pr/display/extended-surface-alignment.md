@@ -23,9 +23,9 @@ Microsoft DirectDraw supports surface alignment requirements on a per-heap basis
 
 Some display hardware cannot set its start-of-display offset in an atomic operation. At the beginning of a display period, it is possible for such hardware to latch a new start-of-display offset when the driver is only halfway through setting the value. DirectDraw now allows the driver to specify alignment requirements for visible back buffers. Some hardware may be able to express alignment requirements for potentially visible back buffers that force the start-of-display offset to be a value that requires only one register write. This technique can help avoid the occasional flicker that would otherwise be visible when the primary surface is flipped at a high frequency.
 
- 
+ 
 
- 
+ 
 
 
 

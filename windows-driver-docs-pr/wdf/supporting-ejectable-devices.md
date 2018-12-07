@@ -1,6 +1,5 @@
 ---
 title: Supporting Ejectable Devices
-author: windows-driver-content
 description: Supporting Ejectable Devices
 ms.assetid: 7820bb71-7218-4c5f-af2b-f41e1b5f696d
 keywords:
@@ -37,9 +36,9 @@ If ejecting your device causes additional devices to also be ejected, your bus d
 
 If a device can be locked in its docking station, the bus driver must set the **LockSupported** member in the device's [**WDF\_DEVICE\_PNP\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff551257) structure. The bus driver must also provide an [*EvtDeviceSetLock*](https://msdn.microsoft.com/library/windows/hardware/ff540909) callback function, which locks the device to disable ejection or unlocks the device to enable ejection.
 
- 
+ 
 
- 
+ 
 
 
 

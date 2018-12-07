@@ -47,13 +47,13 @@ The KSPROPERTY\_AUDIO\_DYNAMIC\_SAMPLING\_RATE property is used to enable and di
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p>[<strong>KSNODEPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537143)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537143" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537143)"><strong>KSNODEPROPERTY</strong></a></p></td>
 <td align="left"><p>BOOL</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is of type BOOL and specifies whether dynamic tracking is enabled or disabled on the node. The value is **TRUE** when dynamic tracking of the sampling rate is enabled. In this mode, the input stream's sampling rate can be varied explicitly by setting the rate through [**KSPROPERTY\_AUDIO\_SAMPLING\_RATE**](ksproperty-audio-sampling-rate.md) or implicitly by setting the rate through the time stamps on the input stream.
 
@@ -101,9 +101,9 @@ Requirements
 
 [**KSNODETYPE\_SRC**](ksnodetype-src.md)
 
- 
+ 
 
- 
+ 
 
 
 

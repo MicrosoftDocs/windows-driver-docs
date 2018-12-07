@@ -25,9 +25,9 @@ A display driver should be implemented so that the GDI (desktop) surface can bec
 
 -   The driver can implement a [*DdFlipToGDISurface*](https://msdn.microsoft.com/library/windows/hardware/ff549335) function to receive notification when DirectDraw is flipping to or from a GDI surface. If the driver can access the GDI surface, the driver can flip to the GDI surface after receiving this notification. Using this method, the GDI surface is not required to be part of the driver's flipping chain.
 
- 
+ 
 
- 
+ 
 
 
 

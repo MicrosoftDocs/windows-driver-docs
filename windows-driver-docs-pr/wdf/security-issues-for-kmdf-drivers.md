@@ -1,6 +1,5 @@
 ---
 title: Security Issues for KMDF Drivers
-author: windows-driver-content
 description: Security Issues for KMDF Drivers
 ms.assetid: 8e72be8f-2a48-4521-810a-dd00c4295206
 keywords:
@@ -22,9 +21,9 @@ This section includes:
 
 -   [Controlling Device Access in Framework-Based Drivers](controlling-device-access-in-kmdf-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

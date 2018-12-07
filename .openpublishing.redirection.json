@@ -6381,6 +6381,89 @@
       "source_path": "windows-driver-docs-pr/audio/vendor-s-gfx-user-interface.md",
       "redirect_URL": "/windows-hardware/drivers/audio/index",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/audio/windows-vista-sapo-feature-reference.md",
+      "redirect_URL": "/windows-hardware/drivers/audio/audio-processing-object-architecture",
+      "redirect_document_id": false
+    },    {
+      "source_path": "windows-driver-docs-pr/audio/custom-ui-design-information.md",
+      "redirect_URL": "/windows-hardware/drivers/audio/implementing-a-ui-for-configuring-apo-effects",
+      "redirect_document_id": false
+    },     {
+      "source_path": "windows-driver-docs-pr/audio/implementing-a-ui-for-configuring-sapos.md",
+      "redirect_URL": "/windows-hardware/drivers/audio/implementing-a-ui-for-configuring-apo-effects",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/audio/troubleshooting-sapo-load-failures.md",
+      "redirect_URL": "/windows-hardware/drivers/audio/implementing-audio-processing-object",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/audio/wrapping-system-supplied-sapos.md",
+      "redirect_URL": "/windows-hardware/drivers/audio/implementing-audio-processing-object",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/audio/replacing-system-supplied-sapos.md",
+      "redirect_URL": "/windows-hardware/drivers/audio/implementing-audio-processing-object",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/audio/replacing-the-default-property-page.md",
+      "redirect_URL": "/windows-hardware/drivers/audio/implementing-audio-processing-object",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/audio/wrapping-or-replacing-windows-vista-sapos.md",
+      "redirect_URL": "/windows-hardware/drivers/audio/implementing-audio-processing-object",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/audio/installing-custom-sapos.md",
+      "redirect_URL": "/windows-hardware/drivers/audio/implementing-audio-processing-object",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/audio/design-considerations-for-sapo-development.md",
+      "redirect_URL": "/windows-hardware/drivers/audio/implementing-audio-processing-object",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/audio/windows-vista-audio-system-effects.md",
+      "redirect_URL": "/windows-hardware/drivers/audio/windows-audio-processing-objectst",
+      "redirect_document_id": false
+    },    
+    {
+      "source_path": "windows-driver-docs-pr/audio/audio-system-effects.md",
+      "redirect_URL": "/windows-hardware/drivers/audio/windows-audio-processing-objects",
+      "redirect_document_id": false
+    },    
+    {
+      "source_path": "windows-driver-docs-pr/audio/system-effects-audio-processing-objects.md",
+      "redirect_URL": "/windows-hardware/drivers/audio/windows-audio-processing-objects",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/saving-hyper-v-extensible-switch-run-time-data.md",
+      "redirect_URL": "/windows-hardware/drivers/network/managing-hyper-v-extensible-switch-run-time-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/handling-the-oid-switch-nic-save-request.md",
+      "redirect_URL": "/windows-hardware/drivers/network/managing-hyper-v-extensible-switch-run-time-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/handling-the-oid-switch-nic-save-complete-request.md",
+      "redirect_URL": "/windows-hardware/drivers/network/managing-hyper-v-extensible-switch-run-time-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/restoring-hyper-v-extensible-switch-run-time-data.md",
+      "redirect_URL": "/windows-hardware/drivers/network/managing-hyper-v-extensible-switch-run-time-data",
+      "redirect_document_id": false
     }
   ]
 }

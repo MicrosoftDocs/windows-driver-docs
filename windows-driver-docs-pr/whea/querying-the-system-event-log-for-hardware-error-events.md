@@ -1,6 +1,5 @@
 ---
 title: Querying the System Event Log for Hardware Error Events
-author: windows-driver-content
 description: Querying the System Event Log for Hardware Error Events
 ms.assetid: e2290a1b-6fde-4843-9c52-17279f93a887
 keywords:
@@ -119,11 +118,11 @@ VOID QueryHwErrorEvents(VOID) {
 
 **Note**  All of the **Evt*Xxx*** functions and the EVT\_*XXX* data types that were used in the previous examples are documented in the [Windows Event Log](http://go.microsoft.com/fwlink/p/?linkid=81187) section in the Microsoft Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

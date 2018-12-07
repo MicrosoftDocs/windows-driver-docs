@@ -1,6 +1,5 @@
 ---
 title: Power Management for Windows Drivers
-author: windows-driver-content
 description: Kernel-mode drivers should manage their hardware devices so that they are turned on and available for use when needed, but operate in a low-power mode and generate no unnecessary system activity when they are not being used.
 ms.assetid: ed422428-8a87-4a2d-830d-e156ef949b13
 keywords: ["power management WDK kernel", "kernel-mode drivers WDK , power management", "energy WDK power management", "startup power management WDK kernel", "shutdown power management WDK kernel", "device power management WDK kernel", "restoring power WDK kernel"]
@@ -33,9 +32,9 @@ The power manager instructs drivers when to prepare their devices to enter a low
 -   [Improving System Startup Performance](improving-system-startup-performance.md)
 -   [Device-Level Thermal Management](device-level-thermal-management.md)
 
- 
+ 
 
- 
+ 
 
 
 

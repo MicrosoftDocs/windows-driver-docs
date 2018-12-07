@@ -25,9 +25,9 @@ Note that picture resampling control does not require a connection configuration
 
 A single buffer type defined in the [**DXVA\_PicResample**](https://msdn.microsoft.com/library/windows/hardware/ff564010) structure controls the resampling process.
 
- 
+ 
 
- 
+ 
 
 
 

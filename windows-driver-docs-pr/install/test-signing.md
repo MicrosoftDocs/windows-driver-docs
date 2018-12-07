@@ -9,18 +9,18 @@ ms.localizationpriority: medium
 # Test Signing
 
 
-Starting with Windows Vista, x64-based versions of Windows required all software running in kernel mode, including drivers, to be digitally signed in order to be loaded. Initially you could use the F8 switch (on each boot, before Windows loads) to temporarily disable the load-time enforcement of requiring a valid signature in your driver. But this will become tedious after the first few uses. You can attach a kernel debugger to your test computer which will disable the same load-time enforcement checks after you use the correct BCDEdit commands. However, eventually it will become necessary to test-sign your driver during its development, and ultimately release-sign your driver before publishing it to users.
+Starting with Windows Vista, x64-based versions of Windows required all software running in kernel mode, including drivers, to be digitally signed in order to be loaded. Initially you could use the F8 switch (on each boot, before Windows loads) to temporarily disable the load-time enforcement of requiring a valid signature in your driver. But this will become tedious after the first few uses. You can attach a kernel debugger to your test computer which will disable the same load-time enforcement checks after you use the correct BCDEdit commands. However, eventually it will become necessary to test-sign your driver during its development, and ultimately release-sign your driver before publishing it to users.
 
 ## Installing an Unsigned Driver during Development and Test
 
 
 *Excerpt from* [Installing an Unsigned Driver during Development and Test](installing-an-unsigned-driver-during-development-and-test.md):
 
-By default, 64-bit versions of Windows Vista and later versions of Windows will load a kernel-mode driver only if the kernel can verify the driver signature. However, this default behavior can be disabled to during early driver development and for non-automated testing. Developers can use one of the following mechanisms to temporarily disable load-time enforcement of a valid driver signature. However, to fully automate testing of a driver that is installed by Plug and Play (PnP), the [catalog file](catalog-files.md) of the driver must be signed. Signing the driver is required because Windows Vista and later versions of Windows display a driver signing dialog box for unsigned drivers that require a system administrator to authorize the installation of the driver, potentially preventing any user without the necessary privileges from installing the driver and using the device. This PnP driver installation behavior cannot be disabled on Windows Vista and later versions of Windows.
+By default, 64-bit versions of Windows Vista and later versions of Windows will load a kernel-mode driver only if the kernel can verify the driver signature. However, this default behavior can be disabled to during early driver development and for non-automated testing. Developers can use one of the following mechanisms to temporarily disable load-time enforcement of a valid driver signature. However, to fully automate testing of a driver that is installed by Plug and Play (PnP), the [catalog file](catalog-files.md) of the driver must be signed. Signing the driver is required because Windows Vista and later versions of Windows display a driver signing dialog box for unsigned drivers that require a system administrator to authorize the installation of the driver, potentially preventing any user without the necessary privileges from installing the driver and using the device. This PnP driver installation behavior cannot be disabled on Windows Vista and later versions of Windows.
 
 ### **Use the F8 Advanced Boot Option**
 
-Windows Vista and later versions of Windows support the F8 Advanced Boot Option -- "Disable Driver Signature Enforcement" -- that disables load-time signature enforcement for a kernel-mode driver only for the current system session. This setting does not persist across system restarts.
+Windows Vista and later versions of Windows support the F8 Advanced Boot Option -- "Disable Driver Signature Enforcement" -- that disables load-time signature enforcement for a kernel-mode driver only for the current system session. This setting does not persist across system restarts.
 
 The following boot option screen will appear during reboot providing the option to disable the driver signature enforcement. This provision will allow installation of an unsigned driver for test purpose.
 
@@ -46,10 +46,10 @@ Instead of using the above two methods to bypass driver signing enforcement requ
 *Excerpt from* [How to Test-Sign a Driver Package](how-to-test-sign-a-driver-package.md):
 
 <a href="" id="signing-computer"></a>**Signing computer**  
-This is the computer that is used to test-sign a driver package for Windows Vista and later versions of Windows. This computer must be running Windows XP SP2 or later versions of Windows. In order to use the [driver signing tools](https://msdn.microsoft.com/library/windows/hardware/ff552958), this computer must have the Windows Vista and later versions of the Windows Driver Kit (WDK) installed. This can also be the development computer.
+This is the computer that is used to test-sign a driver package for Windows Vista and later versions of Windows. This computer must be running Windows XP SP2 or later versions of Windows. In order to use the [driver signing tools](https://msdn.microsoft.com/library/windows/hardware/ff552958), this computer must have the Windows Vista and later versions of the Windows Driver Kit (WDK) installed. This can also be the development computer.
 
 <a href="" id="test-computer"></a>**Test computer**  
-This is the computer that is used to install and test the test-signed driver package. This computer must be running Windows Vista or later versions of Windows.
+This is the computer that is used to install and test the test-signed driver package. This computer must be running Windows Vista or later versions of Windows.
 
 ## Test Signing Procedure
 
@@ -62,17 +62,19 @@ The following procedure describes the steps to test sign a driver package:
 
     All the command tools described below should be used from the corresponding tool/build command window Visual Studio 2012 or Visual Studio 2013.
 
-    **Note**  The command tools for Visual Studio are located in the install directory, C:\\Program Files (x86)\\Microsoft Visual Studio 12.0\\Common7\\Tools\\Shortcuts
+    **Note**  The command tools for Visual Studio are located in the install directory, C:\\Program Files (x86)\\Microsoft Visual Studio 12.0\\Common7\\Tools\\Shortcuts
 
-     
 
-    Any of the five shortcuts for command prompt will have, makecert.exe, inf2cat.exe, signtool.exe, certmgr.exe, etc., commands.
 
-    You may choose the most general, “Developer Command Prompt for VS2013”. The shortcuts can be pinned down to the Task Bar for easy access.
 
-    **Note**  Please note that with Visual Studio, instead of the command tool approach of driver signing, you can also use the Visual Studio 2013 development environment (also known as the IDE) to sign a driver package. Please refer to [Appendix 2: Signing Drivers with Visual Studio](appendix-2--signing-drivers-with-visual-studio.md) for more information.
+Any of the five shortcuts for command prompt will have, makecert.exe, inf2cat.exe, signtool.exe, certmgr.exe, etc., commands.
 
-     
+You may choose the most general, “Developer Command Prompt for VS2013”. The shortcuts can be pinned down to the Task Bar for easy access.
+
+**Note**  Please note that with Visual Studio, instead of the command tool approach of driver signing, you can also use the Visual Studio 2013 development environment (also known as the IDE) to sign a driver package. Please refer to [Appendix 2: Signing Drivers with Visual Studio](appendix-2--signing-drivers-with-visual-studio.md) for more information.
+
+
+
 
 2.  Create a driver package folder and copy the driver files, maintaining any sub directories needed, for example C:\\DriverTestPackage.
 3.  Create an inf file for the driver package. Make sure that the date on the inf file is not prior to 08/21/2006 for Vista and similarly later dates for Windows 8.0, Windows 8.1, Windows 7.0 and Windows 7.1. It is advisable that you test the inf file using the chkinf.bat tool from WDK on the inf file so that no error is reported. If it is a printer driver, then test the inf file with the tool chkinf.bat and INFGate.exe from WDK.
@@ -213,13 +215,15 @@ The following procedure describes the steps to test sign a driver package:
     -   The **/n** option specifies the name of the certificate (*Contoso.com(Test))* that is installed in the specified certificate store.
 
     -   The **/t** option specifies URL of the TSA (*http://timestamp.verisign.com/scripts/timstamp.dll*) which will time stamp the digital signature.
-        **Important**   Including a time stamp provides the necessary information for key revocation in case the signer's code signing private key is compromised.
+        **Important**   Including a time stamp provides the necessary information for key revocation in case the signer's code signing private key is compromised.
 
-         
 
-    -   *tstamd64.cat* specifies the name of the catalog file, which will be digitally-signed.
 
-    tstamd64.cat specifies the name of the catalog file, which will be digitally-signed. You can open the cat file as described before
+
+-   *tstamd64.cat* specifies the name of the catalog file, which will be digitally-signed.
+
+tstamd64.cat specifies the name of the catalog file, which will be digitally-signed. You can open the cat file as described before
+
 
 7.  *Modified excerpt from* [Test-Signing a Driver through an Embedded Signature](test-signing-a-driver-through-an-embedded-signature.md):
 
@@ -317,7 +321,7 @@ The following procedure describes the steps to use on either machine to test the
 
     The above two verification commands will be very useful in release signing which will be discussed later.
 
-    The driver is now ready to be installed and tested in the test computer. It is always advisable that the following registry key is set correctly to gather verbose logs in setupapi.dev.log file (for Windows Vista and later operating systems) during the installation process.
+    The driver is now ready to be installed and tested in the test computer. It is always advisable that the following registry key is set correctly to gather verbose logs in setupapi.dev.log file (for Windows Vista and later operating systems) during the installation process.
 
     ```cpp
     HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Setup\Loglevel=0x4800FFFF
@@ -467,9 +471,9 @@ Device Manger can be used to uninstall the device and the driver from the Proper
 
 See [Troubleshooting Driver Signing Installation](troubleshooting-driver-signing-installation.md) if you encounter any difficulties with these procedures.
 
- 
 
- 
+
+
 
 
 

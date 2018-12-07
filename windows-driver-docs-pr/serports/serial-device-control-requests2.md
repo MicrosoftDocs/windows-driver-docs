@@ -1,6 +1,5 @@
 ---
 title: Serial Device Control Requests
-author: windows-driver-content
 description: Serial Device Control Requests
 ms.assetid: 12dab038-e4da-47b5-ada8-e1c7ee980cde
 keywords:
@@ -51,9 +50,9 @@ For more information about the high-level operation of [COM ports](configuration
 
 For more information about Serial I/O requests, see [Serial Driver Reference](https://msdn.microsoft.com/library/windows/hardware/ff547476).
 
- 
+ 
 
- 
+ 
 
 
 

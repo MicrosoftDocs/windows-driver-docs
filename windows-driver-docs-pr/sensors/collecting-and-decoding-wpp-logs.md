@@ -1,6 +1,5 @@
 ---
 title: Collecting and decoding WPP logs
-author: windows-driver-content
 description: This topic provides information about collecting and decoding Windows software trace preprocessor (WPP) logs for the sensor class extension (CX) trace provider.
 ms.assetid: 174CDE37-D0D1-44BF-AD50-5A90C989FDE2
 ms.date: 07/20/2018
@@ -62,7 +61,7 @@ TRACE_LEVEL_PERF            6
 ## Tracelog macros
 
 
-The following are WPP macros with their associated trace levels and trace flags. The MSG parameter is a standard format string that is defined for the printf function. Partners can also use the WPP extended format string. For more information about this see the [WPP extended format strings](http://go.microsoft.com/fwlink/p/?linkid=324276) topic on MSD. The newline character is also included in the MSG so “\\n” is not necessary.
+The following are WPP macros with their associated trace levels and trace flags. The MSG parameter is a standard format string that is defined for the printf function. Partners can also use the WPP extended format string. For more information about this see the [WPP extended format strings](https://go.microsoft.com/fwlink/p/?linkid=324276) topic on MSD. The newline character is also included in the MSG so “\\n” is not necessary.
 
 <table>
 <colgroup>
@@ -155,18 +154,18 @@ The following are WPP macros with their associated trace levels and trace flags.
 </tbody>
 </table>
 
- 
+ 
 
 ## Decoding ETL logs
 
 
-The tracefmt tool is used to decode ETL logs. For more information about this tool, see [Tracefmt](http://go.microsoft.com/fwlink/p/?linkid=324212).
+The tracefmt tool is used to decode ETL logs. For more information about this tool, see [Tracefmt](https://go.microsoft.com/fwlink/p/?linkid=324212).
 
 If you want to do more extensive testing of your sensor driver, see [Test your universal sensor driver](test-your-universal-sensor-driver.md.
 
- 
+ 
 
- 
+ 
 
 
 

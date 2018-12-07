@@ -1,6 +1,5 @@
 ---
 title: Print Ticket Organization
-author: windows-driver-content
 description: Print Ticket Organization
 ms.assetid: 3e30eb53-2f62-469d-a27c-dc256df37126
 keywords:
@@ -29,9 +28,9 @@ The following figure shows the relationships among the different levels of Print
 
 ![print ticket hierarchy](images/ptpcmerge1.gif)
 
- 
+ 
 
- 
+ 
 
 
 

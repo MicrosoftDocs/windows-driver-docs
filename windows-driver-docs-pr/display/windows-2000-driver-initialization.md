@@ -49,9 +49,9 @@ The driver initialization sequence is achieved by calling the following function
 
 Locking the surface memory (whether the whole surface or part of a surface) ensures that an application and the hardware cannot obtain access to the surface memory at the same time. This prevents errors from occurring while an application is writing to surface memory. In addition, an application cannot page flip until the surface memory is unlocked.
 
- 
+ 
 
- 
+ 
 
 
 

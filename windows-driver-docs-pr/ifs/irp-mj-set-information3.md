@@ -1,6 +1,5 @@
 ---
 title: IRP_MJ_SET_INFORMATION
-author: windows-driver-content
 description: IRP_MJ_SET_INFORMATION
 ms.assetid: 2a6c837c-85c9-46d8-85d8-d779f22be54e
 keywords:
@@ -104,9 +103,9 @@ This code can be used for both the rename and hard link creation case.
 
 Note that it is outside the scope of this document to discuss policy level code where the file system decides to disallow the delete based upon the type of file being deleted.
 
- 
+ 
 
- 
+ 
 
 
 

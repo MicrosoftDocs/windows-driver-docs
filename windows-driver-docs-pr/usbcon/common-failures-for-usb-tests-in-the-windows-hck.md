@@ -1,7 +1,6 @@
 ---
 Description: Common failures for USB tests in the Windows HLK.
 title: Common failures for USB tests in the Windows HLK
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -34,9 +33,9 @@ Common failures for USB tests in the Windows HLK.
 
     Most likely driver installation failed or the device does not have the latest firmware. Install Winusb.sys or Usbtcd.sys as the driver. You can get the driver and the driver installation package files by installing the [MUTT Software Package](https://msdn.microsoft.com/windows/hardware/jj590752).
 
- 
+ 
 
- 
+ 
 
 
 

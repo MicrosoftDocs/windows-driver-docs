@@ -1,6 +1,5 @@
 ---
 title: Supporting Idle Power-Down on Multiple-Component Devices
-author: windows-driver-content
 description: Supporting Idle Power-Down on Multiple-Component Devices
 ms.assetid: 81C80E30-DAF4-4EE4-AA29-AB40A6827C26
 ms.date: 04/20/2017
@@ -50,9 +49,9 @@ If the driver has previously called [**WdfDeviceInitSetPowerPageable**](https://
 
 After [**WdfDeviceStopIdle**](https://msdn.microsoft.com/library/windows/hardware/ff546921) returns, even if the method returns an error, the driver must call [**PoFxReportDevicePoweredOn**](https://msdn.microsoft.com/library/windows/hardware/hh439526).
 
- 
+ 
 
- 
+ 
 
 
 

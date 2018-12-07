@@ -1,6 +1,5 @@
 ---
 title: Queuing I/O Requests While a Device Is Sleeping
-author: windows-driver-content
 description: Queuing I/O Requests While a Device Is Sleeping
 ms.assetid: 8cc0cea0-e5be-4705-ad4d-13a44d536469
 keywords: ["I/O WDK power management", "queuing I/O requests", "sleep power management WDK kernel", "asleep devices WDK power management", "queuing IRPs", "power IRPs WDK kernel , queuing I/O requests", "working state returns WDK power management"]
@@ -18,9 +17,9 @@ While a device is asleep, its drivers should queue any I/O requests directed to 
 
 A driver can access its device only when the device is in the Working (D0) state. A driver cannot touch any device registers when the device is in a sleep state; the device must first be returned to the Working state.
 
- 
+ 
 
- 
+ 
 
 
 

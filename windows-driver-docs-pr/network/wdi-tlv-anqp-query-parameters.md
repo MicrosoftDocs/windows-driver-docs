@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_ANQP_QUERY_PARAMETERS
-author: windows-driver-content
 description: WDI_TLV_ANQP_QUERY_PARAMETERS is an unused TLV.
 ms.assetid: 9A6C4033-ABE7-439D-B745-0E1E413D9318
 ms.date: 07/18/2017
@@ -38,9 +37,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

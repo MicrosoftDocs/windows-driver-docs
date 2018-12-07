@@ -1,6 +1,5 @@
 ---
 title: Initializing a Device Object
-author: windows-driver-content
 description: Initializing a Device Object
 ms.assetid: 97820c62-aade-4ae7-92a6-7490d0ad5697
 keywords: ["device objects WDK kernel , initializing", "initializing device objects"]
@@ -40,9 +39,9 @@ The driver can then set any other device-dependent values in the device object. 
 
 After initializing the device object, a driver can also initialize any Kernel-defined objects and other system-defined data structures for which it has provided storage in the device extension. Precisely when a driver performs these tasks depends on its device, the type of the object, and/or the nature of the data. In general, any objects or data structures that can persist through PnP start and stop requests can be initialized in the [*AddDevice*](https://msdn.microsoft.com/library/windows/hardware/ff540521) routine. Those that require resource information provided with a PnP [**IRP\_MN\_START\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551749) request, or that might require changes when the device is stopped and/or restarted, should be initialized when the driver handles the **IRP\_MN\_START\_DEVICE** request. For more information about *AddDevice* routines, see [Writing an AddDevice Routine](writing-an-adddevice-routine.md).
 
- 
+ 
 
- 
+ 
 
 
 

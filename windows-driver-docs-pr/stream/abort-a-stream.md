@@ -1,6 +1,5 @@
 ---
 title: Abort a Stream
-author: windows-driver-content
 description: Abort a Stream
 ms.assetid: 46c726b6-8553-4588-9be1-2cf7779efec5
 keywords:
@@ -39,9 +38,9 @@ Status =
 
 When a data stream is aborted, it can be resumed (if the device has not been removed) after its stream state has been reset to **KSSTATE\_STOP** by its client application.
 
- 
+ 
 
- 
+ 
 
 
 

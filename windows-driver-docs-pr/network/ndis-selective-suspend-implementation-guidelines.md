@@ -19,9 +19,9 @@ This section includes the following guidelines:
 
 [Implementing a *MiniportCancelIdleNotification* Handler Function](implementing-a-miniportcancelidlenotification-handler-function.md)
 
- 
+ 
 
- 
+ 
 
 
 

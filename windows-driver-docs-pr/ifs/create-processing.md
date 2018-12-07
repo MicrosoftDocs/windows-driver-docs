@@ -1,6 +1,5 @@
 ---
 title: Create Processing
-author: windows-driver-content
 description: Create Processing
 ms.assetid: c15a56d2-47db-4124-8250-f25f69d2d4e3
 keywords:
@@ -117,9 +116,9 @@ Rename processing and file system control processing is discussed in subsequent 
 
 Note that this is not an exhaustive list of semantic issues related to "create" processing. The intent of this section is to draw attention to these issues for file system developers. All semantic issues must be identified for a specific file system, implemented to meet the specific semantics, and tested to ensure that the implementation handles the various cases.
 
- 
+ 
 
- 
+ 
 
 
 

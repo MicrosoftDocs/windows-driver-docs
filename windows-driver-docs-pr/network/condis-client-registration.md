@@ -24,9 +24,9 @@ To specify entry points for a CoNDIS client, a protocol driver initializes an [*
 
 For more information about configuring optional protocol driver services, see [Configuring Optional Protocol Driver Services](configuring-optional-protocol-driver-services.md).
 
- 
+ 
 
- 
+ 
 
 
 

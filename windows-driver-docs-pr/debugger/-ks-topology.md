@@ -3,7 +3,6 @@ title: ks.topology
 description: The ks.topology extension displays a sorted graph of the internal topology of the filter closest to Object.
 ms.assetid: 04ef6920-c022-4136-a42a-800679fe7ff4
 keywords: ["ks.topology Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -54,7 +53,7 @@ Not currently available.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -67,9 +66,9 @@ For help, issue a **!ks.topology** command with no arguments.
 
 Note that this command may take a few moments to execute.
 
- 
+ 
 
- 
+ 
 
 
 

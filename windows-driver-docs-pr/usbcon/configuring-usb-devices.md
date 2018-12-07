@@ -1,7 +1,6 @@
 ---
 Description: The topics in this section describe how a client driver must configure their device.
 title: Selecting a USB configuration in USB drivers
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -35,21 +34,21 @@ If your client driver is based on [Kernel-Mode Driver Framework](https://docs.mi
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[How to select a configuration for a USB device](how-to-select-a-configuration-for-a-usb-device.md)</p></td>
+<td><p><a href="how-to-select-a-configuration-for-a-usb-device.md" data-raw-source="[How to select a configuration for a USB device](how-to-select-a-configuration-for-a-usb-device.md)">How to select a configuration for a USB device</a></p></td>
 <td><p>In this topic, you will learn about how to select a configuration in a universal serial bus (USB) device.</p></td>
 </tr>
 <tr class="even">
-<td><p>[How to select an alternate setting in a USB interface](select-a-usb-alternate-setting.md)</p></td>
+<td><p><a href="select-a-usb-alternate-setting.md" data-raw-source="[How to select an alternate setting in a USB interface](select-a-usb-alternate-setting.md)">How to select an alternate setting in a USB interface</a></p></td>
 <td><p>This topic describes the steps for issuing a select-interface request to activate an alternate setting in a USB interface. The client driver must issue this request after selecting a USB configuration. Selecting a configuration, by default, also activates the first alternate setting in each interface in that configuration.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Configuring Usbccgp.sys to Select a Non-Default USB Configuration](selecting-the-configuration-for-a-multiple-interface--composite--usb-d.md)</p></td>
+<td><p><a href="selecting-the-configuration-for-a-multiple-interface--composite--usb-d.md" data-raw-source="[Configuring Usbccgp.sys to Select a Non-Default USB Configuration](selecting-the-configuration-for-a-multiple-interface--composite--usb-d.md)">Configuring Usbccgp.sys to Select a Non-Default USB Configuration</a></p></td>
 <td><p>This topic provides information about registry settings that configure the way Usbccgp.sys selects a USB configuration. The topic also describes how Usbccgp.sys handles select-configuration requests sent by a client driver that controls one of functions of a composite device.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 For information about special considerations related to the configuration of devices that require firmware downloads, see [Configuring USB Devices that Require Firmware Downloads](configuring-usb-devices-that-require-firmware-downloads.md).
 

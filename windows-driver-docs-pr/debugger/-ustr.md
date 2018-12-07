@@ -3,7 +3,6 @@ title: ustr
 description: The ustr extension displays a UNICODE_STRING structure.
 ms.assetid: 17b84bf0-5a5b-47a5-893b-fdc58ca2afc3
 keywords: ["strings", "UNICODE_STRING structure", "ustr Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -48,7 +47,7 @@ Specifies the hexadecimal address of the UNICODE\_STRING structure.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -71,9 +70,9 @@ If the string is null-terminated, **Length** does not include the trailing null.
 
 Most Win32 character string arguments are converted to Unicode strings before any real work is done.
 
- 
+ 
 
- 
+ 
 
 
 

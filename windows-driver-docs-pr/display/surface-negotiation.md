@@ -29,9 +29,9 @@ ms.localizationpriority: medium
 
 Drawing and text output require a surface on which to draw. This surface is created by the [**DrvEnableSurface**](https://msdn.microsoft.com/library/windows/hardware/ff556214) function and is referred to as the *primary surface*. This surface is also known as the *on-screen surface*, because it appears in the video display. There is only one primary surface enabled per [*PDEV*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-pdev) although a driver can support several PDEVs. Drivers that support the [**DrvCreateDeviceBitmap**](https://msdn.microsoft.com/library/windows/hardware/ff556185) function can create and use additional surfaces. These bitmap surfaces are referred to as *secondary surfaces* or *off-screen surfaces*. For either type of surface, the driver is responsible for determining the type of drawing operations it supports.
 
- 
+ 
 
- 
+ 
 
 
 

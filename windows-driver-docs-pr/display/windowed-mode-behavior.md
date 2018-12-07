@@ -17,9 +17,9 @@ The Direct3D runtime for a windowed-mode device might not call the user-mode dis
 
 The DWM or the display miniport driver's [**DxgkDdiPresent**](https://msdn.microsoft.com/library/windows/hardware/ff559743) function rotates windowed-mode data.
 
- 
+ 
 
- 
+ 
 
 
 

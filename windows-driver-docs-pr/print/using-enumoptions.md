@@ -1,6 +1,5 @@
 ---
 title: Using EnumOptions
-author: windows-driver-content
 description: Using EnumOptions
 ms.assetid: 6ce16d28-eff7-4701-a592-046f364cda44
 keywords:
@@ -31,9 +30,9 @@ Pscript handles the following feature keywords in a special way:
 
 -   For the \*InputSlot feature keyword, Pscript always adds a driver-generated option with option keyword name "\*UseFormTrayTable" as the first option (the "\*" prefix is used in the option keyword name to avoid possible name conflict with PPD-defined options), which is followed by options defined in the PPD. If the "\*UseFormTrayTable" option is selected, Pscript will use the form-to-tray assignment table to automatically select the paper tray that supports the selected paper size.
 
- 
+ 
 
- 
+ 
 
 
 

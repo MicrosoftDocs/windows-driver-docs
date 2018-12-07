@@ -1,6 +1,5 @@
 ---
 title: Allocating an Adapter Channel for Common-Buffer System DMA
-author: windows-driver-content
 description: Allocating an Adapter Channel for Common-Buffer System DMA
 ms.assetid: 3b426b5e-e555-458c-8e16-0d59a7cb9bd6
 keywords: ["allocating adapter channels", "adapter channel allocations WDK kernel", "AllocateAdapterChannel", "system DMA WDK kernel , common buffer", "common buffer DMA WDK kernel", "DMA transfers WDK kernel , common buffer"]
@@ -14,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-A driver calls [**AllocateAdapterChannel**](https://msdn.microsoft.com/library/windows/hardware/ff540573) after its [*DispatchRead*](https://msdn.microsoft.com/library/windows/hardware/ff543376) or [*DispatchWrite*](https://msdn.microsoft.com/library/windows/hardware/ff544034) routine (or any other dispatch routine that handles a DMA transfer) has checked the validity of the IRP's parameters, possibly queued one or more IRPs to another driver routine for further processing, and possibly loaded its common buffer with data to be transferred, if appropriate.
+A driver calls [**AllocateAdapterChannel**](https://msdn.microsoft.com/library/windows/hardware/ff540573) after its [*DispatchRead*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) or [*DispatchWrite*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine (or any other dispatch routine that handles a DMA transfer) has checked the validity of the IRP's parameters, possibly queued one or more IRPs to another driver routine for further processing, and possibly loaded its common buffer with data to be transferred, if appropriate.
 
 The driver routine that calls **AllocateAdapterChannel** must be executing at IRQL = DISPATCH\_LEVEL. The **AllocateAdapterChannel** routine queues the driver's [*AdapterControl*](https://msdn.microsoft.com/library/windows/hardware/ff540504) routine, which runs after the system DMA controller has been assigned to this driver and a set of [map registers](map-registers.md) has been allocated for the driver's DMA operation.
 
@@ -40,9 +39,9 @@ Because an *AdapterControl* routine cannot wait for the subordinate device to ca
 
 Another driver routine (probably the [*DpcForIsr*](https://msdn.microsoft.com/library/windows/hardware/ff544079) routine) must call [**FlushAdapterBuffers**](https://msdn.microsoft.com/library/windows/hardware/ff545917) and [**FreeAdapterChannel**](https://msdn.microsoft.com/library/windows/hardware/ff546507) when the DMA transfer operation is complete.
 
- 
+ 
 
- 
+ 
 
 
 

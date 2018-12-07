@@ -1,6 +1,5 @@
 ---
 title: Customized PDEV Structures
-author: windows-driver-content
 description: Customized PDEV Structures
 ms.assetid: e5c51b9a-5f73-4411-88d8-931981a8450c
 keywords:
@@ -34,9 +33,9 @@ Pscript5 rendering plug-ins must implement the following methods:
 
 PDEV structure is a generic term. It refers to a private, locally defined structure for use by the module that defines it. Typically, it is used for storing physical device characteristics. Each printer driver, and each rendering plug-in, defines its own PDEV structure. There is no globally defined structure of type "PDEV".
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Failure to Validate Object Handles
-author: windows-driver-content
 description: Failure to Validate Object Handles
 ms.assetid: 67d52ca8-4e86-4fe2-a541-f7a0e4040b93
 keywords: ["reliability WDK kernel , object handle validation", "validation failures WDK kernel", "object handles WDK kernel"]
@@ -71,9 +70,9 @@ To avoid such problems, a driver should check for valid data, as follows:
 
 -   If your driver supports multiple kinds of file objects (such as the control channels, address objects, and connections of TDI drivers or Volume, Directory, and File objects of file systems), make sure you have a way to differentiate them.
 
- 
+ 
 
- 
+ 
 
 
 

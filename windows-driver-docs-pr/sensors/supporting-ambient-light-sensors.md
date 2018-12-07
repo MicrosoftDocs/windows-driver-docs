@@ -1,6 +1,5 @@
 ---
 title: Supporting ambient light sensors
-author: windows-driver-content
 description: Supporting ambient light sensors
 ms.assetid: a0875084-c093-4659-91b9-375450f65234
 ms.date: 04/20/2017
@@ -14,7 +13,7 @@ Ambient light sensors can measure current lighting conditions. You can use data 
 
 Windows 8 includes class driver support for both ACPI 3.0b-compliant and HID-compliant ambient light sensor implementations. This means that you do not have to write custom drivers to support ambient light sensors. These sensors can also be used by Sensor API-based client applications, because these drivers integrate with the Windows Sensor and Location platform.
 
-For more information about ambient light sensors and the adaptive brightness feature in Windows 8, see the white paper "Integrating Ambient Light Sensors with " Windows 7 on the [Windows Hardware Developer Central](http://go.microsoft.com/fwlink/p/?linkid=133337) website.
+For more information about ambient light sensors and the adaptive brightness feature in Windows 8, see the white paper "Integrating Ambient Light Sensors with Windows 10" on the [Windows Hardware Developer Center](https://docs.microsoft.com/windows-hardware/design/whitepapers/integrating-ambient-light-sensors-with-computers-running-windows-10-creators-update) website.
 
 For ambient light sensors that are not ACPI 3.0b-compliant or HID-compliant, you must create a sensor driver to integrate with the Sensor and Location platform.
 

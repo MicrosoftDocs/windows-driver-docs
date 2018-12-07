@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # PwrTest Log File
 
 
-PwrTest supports multiple simultaneous logging outputs in different formats: .log (plaintext), .xml (format varies per scenario), .wtl (WTTLog), and .etl (ETW trace). By default, PwrTest generates log files named pwrtestlog.\*. You can use the **/ln:***name* option to change the log names. These files will be generated in the current directory by default. You can use the **/lf:***folder* option to change the output location.
+PwrTest supports multiple simultaneous logging outputs in different formats: .log (plaintext), .xml (format varies per scenario), .wtl (WTTLog), and .etl (ETW trace). By default, PwrTest generates log files named pwrtestlog.\*. You can use the **/ln:**<em>name</em> option to change the log names. These files will be generated in the current directory by default. You can use the **/lf:**<em>folder</em> option to change the output location.
 
 The WTTLog file format is common to all Microsoft Windows Driver Kit (WDK) tools that use the WTTLog interface. PwrTest will not generate a .wtl (WTTLog) log file if you run PwrTest on a computer that does not have WTTLog installed.
 
@@ -40,9 +40,9 @@ The PwrTest .xml log file (pwrtestlog.xml) provides information about the specif
 
 [PwrTest Syntax](pwrtest-syntax.md)
 
- 
+ 
 
- 
+ 
 
 
 

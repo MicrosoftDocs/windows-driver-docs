@@ -1,6 +1,5 @@
 ---
 title: SerCx2 System-DMA-Receive Transactions
-author: windows-driver-content
 description: Some serial controller drivers implement support for receive transactions that use the system DMA controller.
 ms.assetid: 0374D1BE-96ED-43D6-8661-5E9676B82C0D
 ms.date: 04/20/2017
@@ -65,13 +64,13 @@ To detect a possible interval time-out, SerCx2 periodically calls the [**ReadDma
 
 **Note**  SerCx2 relies on the **ReadDmaCounter** routine of the system DMA adapter to monitor time-outs during system-DMA-receive transactions and system-DMA-transmit transactions. The hardware abstraction layer (HAL) must implement a fully functional **ReadDmaCounter** routine for the system DMA controller used to transfer data to and from the serial controller.
 
- 
+ 
 
 A serial controller driver that supports new-data notifications for system-DMA-receive transactions must implement an [*EvtSerCx2SystemDmaReceiveCancelNewDataNotification*](https://msdn.microsoft.com/library/windows/hardware/dn265228) event callback function so that SerCx2 can cancel a enabled new-data notification before it occurs. If a new-data notification is enabled when the pending read request is canceled, or when a total time-out occurs, SerCx2 calls the *EvtSerCx2SystemDmaReceiveCancelNewDataNotification* function to cancel the notification. If this function successfully cancels the pending notification, it returns **TRUE**. A return value of **TRUE** guarantees that the serial controller driver will not call **SerCx2SystemDmaReceiveNewDataNotification**. A return value of **FALSE** indicates that the driver has called or will soon call **SerCx2SystemDmaReceiveNewDataNotification**. For more information about total time-outs, see [**SERIAL\_TIMEOUTS**](https://msdn.microsoft.com/library/windows/hardware/hh439614).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -22,9 +22,9 @@ At the level of **DiagnoseLevelFirmwareImageDump** or **DiagnoseLevelDriverState
 
 [*MiniportWdiAdapterHangDiagnose*](https://msdn.microsoft.com/library/windows/hardware/mt297558)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: DispatchRead, DispatchWrite, and DispatchReadWrite Routines
-author: windows-driver-content
 description: DispatchRead, DispatchWrite, and DispatchReadWrite Routines
 ms.assetid: 2982939a-4afb-4b21-9a96-0ac758f0fb6c
 keywords: ["DispatchRead routine", "DispatchWrite routine", "DispatchReadWrite routine", "dispatch routines WDK kernel , DispatchReadWrite routine", "dispatch routines WDK kernel , DispatchWrite routine", "dispatch routines WDK kernel , DispatchRead routine", "read/write dispatch routines WDK kernel", "IRP_MJ_WRITE I/O function codes", "IRP_MJ_READ I/O function codes", "data transfers WDK kernel , read/write dispatch routines", "transferring data WDK kernel , read/write dispatch routines"]
@@ -14,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-A driver's [*DispatchRead*](https://msdn.microsoft.com/library/windows/hardware/ff543376) and [*DispatchWrite*](https://msdn.microsoft.com/library/windows/hardware/ff544034) routines handle IRPs with I/O function codes of [**IRP\_MJ\_READ**](https://msdn.microsoft.com/library/windows/hardware/ff550794) and [**IRP\_MJ\_WRITE**](https://msdn.microsoft.com/library/windows/hardware/ff550819), respectively. Alternatively, a combined [*DispatchReadWrite*](https://msdn.microsoft.com/library/windows/hardware/ff543381) routine can handle IRPs for both of these I/O function codes.
+A driver's [*DispatchRead*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) and [*DispatchWrite*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routines handle IRPs with I/O function codes of [**IRP\_MJ\_READ**](https://msdn.microsoft.com/library/windows/hardware/ff550794) and [**IRP\_MJ\_WRITE**](https://msdn.microsoft.com/library/windows/hardware/ff550819), respectively. Alternatively, a combined [*DispatchReadWrite*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine can handle IRPs for both of these I/O function codes.
 
 Every driver of a device from which data can be transferred to the system must have a *DispatchRead* routine. Every driver of a device to which data can be transferred from the system must have a *DispatchWrite* routine. Any driver that transfers data in both directions can have a combined *DispatchReadWrite* routine.
 
@@ -34,9 +33,9 @@ The following subsections discuss some of the design and implementation consider
 
 [Summary of Read/Write Dispatch Routines](summary-of-read-write-dispatch-routines.md)
 
- 
+ 
 
- 
+ 
 
 
 

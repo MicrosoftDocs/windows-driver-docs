@@ -1,6 +1,5 @@
 ---
 title: Handling an IRP_MN_STOP_DEVICE Request (Windows 98/Me)
-author: windows-driver-content
 description: Handling an IRP_MN_STOP_DEVICE Request (Windows 98/Me)
 ms.assetid: 8e44561a-f494-48ce-ab61-aa47cd4e1c64
 keywords: ["IRP_MN_STOP_DEVICE"]
@@ -16,7 +15,7 @@ ms.localizationpriority: medium
 
 On Windows 98/Me, the PnP manager usually sends an [**IRP\_MN\_STOP\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551755) request after a successful query-stop. However, if the device stack previously failed an [**IRP\_MN\_START\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551749) request, the PnP manager sends an **IRP\_MN\_STOP\_DEVICE** request without a preceding query.
 
-An **IRP\_MN\_STOP\_DEVICE** request is handled first by the top driver in the device stack and then by each next lower driver. A driver handles stop IRPs in its [*DispatchPnP*](https://msdn.microsoft.com/library/windows/hardware/ff543341) routine.
+An **IRP\_MN\_STOP\_DEVICE** request is handled first by the top driver in the device stack and then by each next lower driver. A driver handles stop IRPs in its [*DispatchPnP*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine.
 
 A driver handles an **IRP\_MN\_STOP\_DEVICE** request with a procedure such as the following:
 
@@ -42,9 +41,9 @@ A driver handles an **IRP\_MN\_STOP\_DEVICE** request with a procedure such as t
 
 A driver cannot start any IRPs that access the device while the device is stopped. A driver must fail such IRPs.
 
- 
+ 
 
- 
+ 
 
 
 

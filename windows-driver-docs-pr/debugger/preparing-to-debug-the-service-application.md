@@ -2,7 +2,6 @@
 title: Preparing to Debug the Service Application
 description: Preparing to Debug the Service Application
 ms.assetid: 332b7bcf-22e4-4b98-bcb3-3646f8bd63fd
-ms.author: domars
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -66,7 +65,7 @@ If you want the service application to break into the debugger when it crashes o
 
 **Note**   If you have enabled debugging of the initialization code (the step described in the subsection "Enabling the Debugging of the Initialization Code"), you should skip this step. When initialization code debugging is enabled, the debugger attaches to the service application when it starts, which causes all crashes, exceptions, and calls to **DebugBreak** to be routed to the debugger without additional preparations being needed.
 
- 
+ 
 
 This preparatory step involves registering the chosen debugger as the postmortem debugger. This is done by using the -iae or -iaec options on the debugger command line. We recommend the following commands, but if you want to vary them, see the syntax details in [Enabling Postmortem Debugging](enabling-postmortem-debugging.md).
 
@@ -258,9 +257,9 @@ sc config ServiceName type= share
 
 This alternative is not the recommended method because it can alter the behavior of the service. If you do use this method, use the **sc config** command to change the path back to its original value after you have completed your debugging.
 
- 
+ 
 
- 
+ 
 
 
 

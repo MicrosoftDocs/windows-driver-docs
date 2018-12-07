@@ -1,6 +1,5 @@
 ---
 title: Debugging WDF Drivers
-author: windows-driver-content
 description: The topics in this section describe techniques and tools that you can use to debug a Kernel-Mode Driver Framework (KMDF) or User-Mode Driver Framework (UMDF) driver.
 ms.assetid: e648a7c9-0fdc-477e-b1cd-bec5dd8f5386
 keywords:
@@ -49,9 +48,9 @@ The topics in this section describe techniques and tools that you can use to deb
 -   [Videos: Debugging KMDF Drivers](debugging-kernel-mode-driver-framework-drivers.md)
 -   [Videos: Debugging UMDF Drivers](videos--debugging-umdf-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

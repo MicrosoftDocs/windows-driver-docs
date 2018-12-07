@@ -1,6 +1,5 @@
 ---
 title: Wi-Fi Direct Printing overview
-author: windows-driver-content
 description: Provides information on supported user experiences and use cases for a Wi-Fi Direct Printing.
 ms.assetid: 40ED3410-EC46-42C8-B09B-8010639F2268
 ms.date: 04/20/2017
@@ -75,7 +74,7 @@ Considerations
 
 N/A
 
- 
+ 
 
 MANUAL CONNECTION TO WI-FI DIRECT PRINT DEVICE THROUGH ADD PRINTER WIZARD
 Preconditions
@@ -111,7 +110,7 @@ Considerations
 
 N/A
 
- 
+ 
 
 ERROR CONNECTING TO PRINT DEVICE
 Preconditions
@@ -142,7 +141,7 @@ Considerations
 
 N/A
 
- 
+ 
 
 CONNECTING TO WI-FI DIRECT PRINT DEVICE WITH A REQUIRED PIN
 Preconditions
@@ -188,7 +187,7 @@ Considerations
 
 **Postcondition**: No print queue is set-up.
 
- 
+ 
 
 **Printing**
 
@@ -223,7 +222,7 @@ Considerations
 
 -   The queue is persisted on the Windows PC in the same way as all other print queues. The user is expected to be able to reconnect and print to the device regardless of how much time has lapsed between pairing and subsequent use. The only time the user should have to re-pair to print is if the printer has pruned the connection information and the user’s pairing information has been removed. Re-pairings should be minimized to provide a better user experience. This implies that the device must maintain in memory a number of pairings that is reasonable to maintain for the intended use. For example, a printer for home use may maintain 10-25 pairings. A printer for office use may maintain considerably more.
 
- 
+ 
 
 ## Considerations for Pairing
 
@@ -341,9 +340,9 @@ When Windows as the Group Owner negotiates the connection with the Wi-Fi Direct 
 
 To prevent a user from encountering this scenario, Windows Printing requires the Print device to be the group owner. Windows as the client on a P2P network is able to manage a dual-band scenario. Thus there is never a situation where the user can discover the printer but will be unable to pair due to their existing AP connection.
 
- 
+ 
 
- 
+ 
 
 
 

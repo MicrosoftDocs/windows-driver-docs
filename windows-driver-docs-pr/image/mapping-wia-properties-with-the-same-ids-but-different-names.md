@@ -1,6 +1,5 @@
 ---
 title: Mapping WIA Properties with the Same IDs but Different Names
-author: windows-driver-content
 description: Mapping WIA Properties with the Same IDs but Different Names
 ms.assetid: 0321db59-74a1-4294-bbaf-ec0b9317464b
 ms.date: 04/20/2017
@@ -170,7 +169,7 @@ There are Windows XP properties that have the same property IDs but different pr
 </tbody>
 </table>
 
- 
+ 
 
 <a href="" id="note-a-"></a>Note a:  
 FEEDER item (ADF) or FEEDER context on the Windows XP root or child item (WIA\_DPS\_DOCUMENT\_HANDLING\_SELECT is set to FEEDER)
@@ -201,9 +200,9 @@ Translate all values, not just the legacy ones (WIA\_PAGE\_CUSTOM, WIA\_PAGE\_A4
 
 Note that the Windows XP root item must be configured into the appropriate FLATBED/FEEDER context set (through WIA\_DPS\_DOCUMENT\_HANDLING\_SELECT) before accessing context-dependent property (both for read and write access).
 
- 
+ 
 
- 
+ 
 
 
 

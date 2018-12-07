@@ -43,7 +43,7 @@ The GUID_DEVINTERFACE_MONITOR [device interface class](https://msdn.microsoft.co
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -68,9 +68,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

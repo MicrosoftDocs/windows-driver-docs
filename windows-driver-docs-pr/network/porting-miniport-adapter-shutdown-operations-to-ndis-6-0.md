@@ -25,9 +25,9 @@ For more information about shutdown operations, see [Miniport Adapter Shutdown](
 
 [Miniport Adapter States and Operations](miniport-adapter-states-and-operations.md)
 
- 
+ 
 
- 
+ 
 
 
 

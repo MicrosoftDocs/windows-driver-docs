@@ -1,6 +1,5 @@
 ---
 title: HOTSPOT_HOST_HANDLERS structure
-author: windows-driver-content
 description: The HOTSPOT_HOST_HANDLERS structure contains the hotspot host handlers function table.
 ms.assetid: b381e471-7713-401a-b3fa-eae1801b0e81
 keywords: 
@@ -97,9 +96,9 @@ Requirements
 
 [**HS\_HOST\_SEND\_USER\_MESSAGE**](hs-host-send-user-message.md)
 
- 
+ 
 
- 
+ 
 
 
 

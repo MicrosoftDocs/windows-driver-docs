@@ -1,6 +1,5 @@
 ---
 title: Controlling a General I/O Target's State
-author: windows-driver-content
 description: Controlling a General I/O Target's State
 ms.assetid: 37f756bf-b655-428e-b72c-f86c71f1a2db
 keywords:
@@ -76,9 +75,9 @@ Informs the driver that an attempt to remove a remote I/O target's device has be
 
 If a driver has finished using a remote I/O target and will not use the target again, and the target has no child request objects that are still pending, the driver can call [**WdfObjectDelete**](https://msdn.microsoft.com/library/windows/hardware/ff548734) without first calling [**WdfIoTargetClose**](https://msdn.microsoft.com/library/windows/hardware/ff548586). If the target has any child request objects that are still pending, the driver must call **WdfIoTargetClose** before it can safely call **WdfObjectDelete**.
 
- 
+ 
 
- 
+ 
 
 
 

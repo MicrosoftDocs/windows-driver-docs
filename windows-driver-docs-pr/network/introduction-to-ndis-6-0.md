@@ -41,9 +41,9 @@ For a description of the differences between NDIS 6.0 and earlier versions, and 
 
 [Introduction to NDIS 6.30](introduction-to-ndis-6-30.md)
 
- 
+ 
 
- 
+ 
 
 
 

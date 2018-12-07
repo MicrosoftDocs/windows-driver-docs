@@ -1,6 +1,5 @@
 ---
 title: WHEA Changes for Windows 7
-author: windows-driver-content
 description: WHEA Changes for Windows 7
 ms.assetid: d92c2be0-732b-4fcd-b517-5cb9eccf962b
 keywords:
@@ -31,9 +30,9 @@ Starting with Windows 7, the following changes have been made to Windows Hardwar
 
 -   Additional WHEA error-specific hardware errors have been defined. For more information about these errors, see [WHEA Hardware Error Events (Windows Server 2008, Windows Vista SP1 and Later)](https://msdn.microsoft.com/library/windows/hardware/ff560537).
 
- 
+ 
 
- 
+ 
 
 
 

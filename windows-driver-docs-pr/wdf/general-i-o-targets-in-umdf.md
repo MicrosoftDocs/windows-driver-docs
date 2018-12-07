@@ -1,6 +1,5 @@
 ---
 title: General I/O Targets in UMDF
-author: windows-driver-content
 description: General I/O Targets in UMDF
 ms.assetid: 46fac165-3afd-4481-b68d-8d3474e0ff52
 keywords:
@@ -39,9 +38,9 @@ The following sections describe how to initialize and use a general I/O target:
 -   [Controlling a General I/O Target's State in UMDF](controlling-a-general-i-o-target-s-state-in-umdf.md)
 -   [Obtaining Information About a General I/O Target in UMDF](obtaining-information-about-a-general-i-o-target-in-umdf.md)
 
- 
+ 
 
- 
+ 
 
 
 

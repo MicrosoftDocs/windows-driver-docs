@@ -42,7 +42,7 @@ Event Tracing for Windows (ETW) is an efficient and effective mechanism for trac
 </tbody>
 </table>
 
- 
+ 
 
 ## The ETW Kernel-Mode API
 
@@ -54,9 +54,9 @@ ETW is implemented in the Windows operating system and provides developers a fas
 
 Use the ETW kernel-mode API if you want to publish events that can be consumed by applications interested in administrative, operational, and analytical events, in addition to the detailed tracing you might require during development. Use WPP Software Tracing if you are interested in primarily collecting trace data for development and debugging purposes.
 
- 
+ 
 
- 
+ 
 
 
 

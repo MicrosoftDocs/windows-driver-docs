@@ -3,7 +3,6 @@ title: Client Objects
 description: Client Objects
 ms.assetid: 173a67f1-093e-4462-8e2c-41d0f10106d0
 keywords: ["Debugger Engine, client objects", "client objects"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -38,9 +37,9 @@ Client objects facilitate communication to remote instances of the host engine. 
 
 For details about creating and using client objects, see [Using Callback Objects](using-callback-objects.md). For details about registering callback objects, see Using Callback Objects.
 
- 
+ 
 
- 
+ 
 
 
 

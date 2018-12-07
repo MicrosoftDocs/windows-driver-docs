@@ -1,6 +1,5 @@
 ---
 title: EFI_USBFN_PORT_TYPE
-author: windows-driver-content
 description: EFI_USBFN_PORT_TYPE
 ms.assetid: 2596dd4f-26bd-454b-9550-a89c7e1f790b
 ms.date: 04/20/2017
@@ -64,7 +63,7 @@ typedef enum _EFI_USBFN_PORT_TYPE
 </tbody>
 </table>
 
- 
+ 
 
 ## Remarks
 
@@ -76,9 +75,9 @@ Refer to "Battery Charging Specification, Revision 1.1” on the [USB.org](http:
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
 

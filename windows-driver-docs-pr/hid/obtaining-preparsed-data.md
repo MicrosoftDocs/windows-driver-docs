@@ -1,6 +1,5 @@
 ---
 title: Obtaining Preparsed Data
-author: windows-driver-content
 description: Obtaining Preparsed Data
 ms.assetid: 7a2bdbd1-a970-421f-bbaa-40fe589bb49a
 keywords:
@@ -39,11 +38,11 @@ To determine the length of the preparsed data, the driver uses an [**IOCTL\_HID\
 
 After allocating the buffer for the preparsed data, the driver uses an [**IOCTL\_HID\_GET\_COLLECTION\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff541089) request to obtain the preparsed data.
 
-After obtaining the preparsed data, the driver can use it with the **HidP\_***Xxx* HID support routines to obtain information about the capabilities of the HID collection and to extract control data from HID reports.
+After obtaining the preparsed data, the driver can use it with the **HidP\_**<em>Xxx</em> HID support routines to obtain information about the capabilities of the HID collection and to extract control data from HID reports.
 
- 
+ 
 
- 
+ 
 
 
 

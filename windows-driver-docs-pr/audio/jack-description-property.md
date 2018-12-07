@@ -126,7 +126,7 @@ The topology filter for the Simple MSVAD sample defines three bridge pins. These
 </tbody>
 </table>
 
- 
+ 
 
 The remainder of this topic explains how to modify the Simple MSVAD sample driver to provide the jack information for the three bridge pins.
 
@@ -321,9 +321,9 @@ In the preceding code example, the **Handler** member of the [**PCPROPERTY\_ITEM
 
 For more information about the jack description property, see [Jack Descriptions for Dynamic Audio Subdevices](jack-descriptions-for-dynamic-audio-subdevices.md).
 
- 
+ 
 
- 
+ 
 
 
 

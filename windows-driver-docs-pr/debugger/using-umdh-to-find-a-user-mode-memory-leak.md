@@ -3,7 +3,6 @@ title: Using UMDH to Find a User-Mode Memory Leak
 description: Using UMDH to Find a User-Mode Memory Leak
 ms.assetid: b15ed695-3f35-4a72-93ab-3cbfd2e33980
 keywords: ["memory leak, user-mode, UMDH", "UMDH, memory leak detection"]
-ms.author: domars
 ms.date: 08/16/2018
 ms.localizationpriority: medium
 ---
@@ -112,9 +111,9 @@ After making these preparations, you can use UMDH to capture information about t
 
     Determine which of these calls is the last one to explicitly appear in your source code. In this case, it is probably the **new** operator because the call to *malloc* occurred as part of the implementation of **new** rather than as a separate allocation. So this instance of the **new** operator in the **DisplayMyGraphics** routine is repeatedly allocating memory that is not being freed.
 
- 
+ 
 
- 
+ 
 
 
 

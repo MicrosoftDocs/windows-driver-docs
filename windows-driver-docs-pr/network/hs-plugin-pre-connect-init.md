@@ -1,6 +1,5 @@
 ---
 title: HS_PLUGIN_PRE_CONNECT_INIT function
-author: windows-driver-content
 description: The HS_PLUGIN_PRE_CONNECT_INIT function is called to notify the plugin to initialize its state when a connection to a hotspot network is in progress.
 ms.assetid: 799242a0-144f-4d3f-b48c-9e96a851d8c4
 keywords: 
@@ -61,9 +60,9 @@ Requirements
 
 [**HS\_NETWORK\_IDENTITY**](hs-network-identity.md)
 
- 
+ 
 
- 
+ 
 
 
 

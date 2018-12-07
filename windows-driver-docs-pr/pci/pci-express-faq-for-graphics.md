@@ -1,6 +1,5 @@
 ---
 title: PCI Express FAQ for Graphics
-author: windows-driver-content
 description: This paper provides information about PCI Express Graphics for Microsoft Windows operating systems, and answers frequently asked questions.
 ms.assetid: 30FC1CF9-B642-4E00-869C-63009BA3F128
 ms.date: 04/20/2017
@@ -44,7 +43,7 @@ PCIe hardware is backwards compatible with PCI software on the Microsoft Windows
 
 -   WHQL: Windows Hardware Quality Laboratories. The organization within Microsoft that is responsible for the Windows Certification Program for hardware.
 
- 
+ 
 
 **PCI Express Graphics**
 
@@ -64,7 +63,7 @@ By definition, AGP requires a chipset with a graphics address relocation table (
 
 AGP was dedicated to graphics adapters, and no other device class used it. PCIe is intended to be used by all device classes that previously used PCI. With AGP, a number of video drivers were directly programming the chipset, which gave rise to severe ill effects such as crashing and memory corruption in the graphics stack. Because PCIe will be used for all devices in the system, it is even more important that video drivers not program the chipset directly.
 
- 
+ 
 
 **Frequently Asked Questions**
 
@@ -119,7 +118,7 @@ High-speed PCIe graphics solutions have better performance than AGP. Typically, 
 </tbody>
 </table>
 
- 
+ 
 
 Additionally, the AGP specification does not support "snooping." It implies that memory used by devices needs to be mapped uncached or write combined by the processor in order to prevent the processor from caching that memory, or else an expensive cache flush needs to be done between handoff of a surface between CPU and GPU. Thus, processor read access to that memory will be very slow.
 

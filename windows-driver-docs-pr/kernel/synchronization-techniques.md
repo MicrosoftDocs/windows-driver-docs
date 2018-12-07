@@ -1,6 +1,5 @@
 ---
 title: Synchronization Techniques
-author: windows-driver-content
 description: Synchronization Techniques
 ms.assetid: dfee2240-44df-43bc-8804-271203480664
 keywords: ["synchronization WDK kernel", "kernel-mode drivers WDK , synchronization", "thread synchronization WDK kernel", "simultaneous access protection WDK kernel", "data integrity WDK kernel", "integrity WDK kernel"]
@@ -34,9 +33,9 @@ This section provides information about the techniques you can use to synchroniz
 
 [Run-Down Protection](run-down-protection.md)
 
- 
+ 
 
- 
+ 
 
 
 

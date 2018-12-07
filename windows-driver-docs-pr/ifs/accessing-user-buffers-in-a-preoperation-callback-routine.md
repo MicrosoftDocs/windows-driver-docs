@@ -1,6 +1,5 @@
 ---
 title: Accessing User Buffers in a Preoperation Callback Routine
-author: windows-driver-content
 description: Accessing User Buffers in a Preoperation Callback Routine
 ms.assetid: 16e6a9e0-3a92-471f-98e6-9a4e8eb7d4a6
 keywords:
@@ -68,9 +67,9 @@ A preoperation callback routine should treat a buffer in a fast I/O operation as
 
 For operations that can be fast I/O or IRP-based, all buffer references should be enclosed in **try**/**except** blocks. Although you do not have to enclose these references for IRP-based operations that use buffered I/O, the **try**/**except** blocks are a safe precaution.
 
- 
+ 
 
- 
+ 
 
 
 

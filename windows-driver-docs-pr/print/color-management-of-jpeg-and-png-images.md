@@ -1,6 +1,5 @@
 ---
 title: Color Management of JPEG and PNG Images
-author: windows-driver-content
 description: Color Management of JPEG and PNG Images
 ms.assetid: ece0578d-bf03-4eee-9568-40ef684ba8a7
 keywords:
@@ -29,9 +28,9 @@ For these compressed images, color space information is typically contained with
 
 For more information about supporting JPEG and PNG compressed images, see the Remarks section for [**DEVINFO**](https://msdn.microsoft.com/library/windows/hardware/ff552835).
 
- 
+ 
 
- 
+ 
 
 
 

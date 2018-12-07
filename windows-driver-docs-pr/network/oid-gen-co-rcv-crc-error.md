@@ -1,6 +1,5 @@
 ---
 title: OID_GEN_CO_RCV_CRC_ERROR
-author: windows-driver-content
 description: This topic describes the OID_GEN_CO_RCV_CRC_ERROR object identifier (OID).
 ms.assetid: fd9cb683-ac36-405e-929c-353d160db6bc
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Certifying and signing the update package
-author: windows-driver-content
 description: The firmware update is delivered as a driver package and must go through the same verification and signing processes as a regular driver package.
 ms.assetid: 054E98A5-E860-43BD-9AD2-7CCE55D2164B
 ms.date: 04/20/2017
@@ -14,7 +13,7 @@ Because the firmware update is delivered as a driver package, it will need to go
 
 **Note**  Signing of the driver package is different from signing the UEFI firmware or device firmware itself. The signature on the driver package, delivered via security catalog, is used by Windows to verify the integrity of firmware.bin before handing it to the UEFI. Windows does not provide the security catalog to the firmware. The signature on the UEFI firmware or device firmware update is validated by the platform firmware, and is not checked by Windows. The IHV/OEM is responsible for ensuring the integrity and security of the firmware through signature verification, encryption or other means.
 
- 
+ 
 
 ## Firmware update signing process and requirements for UEFI secure boot
 
@@ -60,7 +59,7 @@ Submitting the firmware update package to the Microsoft Windows Dev Center Hardw
 2.  Create a firmware update package that includes the capsule, and test sign the firmware update package. For more information, see [Authoring an update driver package](authoring-an-update-driver-package.md).
     **Note**  Starting in Windows 8, Windows does not allow OEM Verisign-signed firmware update packages, even in test environments.
 
-     
+     
 
 3.  Update the firmware by installing the firmware update package.
 4.  Install the Windows Hardware Lab Kit (HLK) on the test system and run all the tests applicable to the firmware device.
@@ -68,7 +67,7 @@ Submitting the firmware update package to the Microsoft Windows Dev Center Hardw
 
 **Note**  While submitting the firmware update driver package, make sure to select Windows 8 or later as the applicable OS. If you choose any down-level OS, then the Windows Dev Center Hardware Dashboard will sign the catalog in the driver package with SHA1 algorithm. Starting in Windows 8, all firmware update driver packages must be SHA256 signed.
 
- 
+ 
 
 ## Related topics
 [System and device firmware updates via a firmware driver package](system-and-device-firmware-updates-via-a-firmware-driver-package.md)  

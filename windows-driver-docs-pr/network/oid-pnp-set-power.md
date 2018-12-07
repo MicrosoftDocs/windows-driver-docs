@@ -1,6 +1,5 @@
 ---
 title: OID_PNP_SET_POWER
-author: windows-driver-content
 description: OID_PNP_SET_POWER
 ms.assetid: 21232db2-7484-4878-a2f9-5131c18ecf57
 ms.date: 08/08/2017
@@ -64,7 +63,7 @@ Before the network adapter transitions to the D3 state, the miniport driver must
 
 **Note**  A miniport driver cannot access the network adapter after the bus driver has transitioned the network adapter to the D3 state.
 
- 
+ 
 
 ### Transitioning to the Full-Power State (D0)
 
@@ -72,13 +71,13 @@ When the miniport driver handles a set request of OID\_PNP\_SET\_POWER to transi
 
 **Note**  The miniport driver must not access or change any receive buffers that are associated with pending receive indications.
 
- 
+ 
 
 NDIS calls the miniport driver's [*MiniportRestart*](https://msdn.microsoft.com/library/windows/hardware/ff559435) function after the transition to a full-power state only if NDIS called the driver's [*MiniportPause*](https://msdn.microsoft.com/library/windows/hardware/ff559418) function before the transition to a low-power state.
 
 **Note**  An intermediate driver must always return **NDIS\_STATUS\_SUCCESS** to a query of OID\_PNP\_SET\_POWER. An intermediate driver should never propagate an OID\_PNP\_SET\_POWER request to an underlying miniport driver.
 
- 
+ 
 
 ## Return status codes
 
@@ -103,7 +102,7 @@ The miniport driver's [*MiniportOidRequest*](https://msdn.microsoft.com/library/
 </tr>
 <tr class="even">
 <td><p><strong>NDIS_STATUS_PENDING</strong></p></td>
-<td><p>The miniport driver will complete the request asynchronously. After the miniport driver has completed all processing, it must succeed the request by calling the [<strong>NdisMOidRequestComplete</strong>](https://msdn.microsoft.com/library/windows/hardware/ff563622) function, passing NDIS_STATUS_SUCCESS for the <em>Status</em> parameter.</p></td>
+<td><p>The miniport driver will complete the request asynchronously. After the miniport driver has completed all processing, it must succeed the request by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563622" data-raw-source="[&lt;strong&gt;NdisMOidRequestComplete&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff563622)"><strong>NdisMOidRequestComplete</strong></a> function, passing NDIS_STATUS_SUCCESS for the <em>Status</em> parameter.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>NDIS_STATUS_NOT_ACCEPTED</strong></p></td>
@@ -112,7 +111,7 @@ The miniport driver's [*MiniportOidRequest*](https://msdn.microsoft.com/library/
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -156,9 +155,9 @@ Requirements
 
 [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388)
 
- 
+ 
 
- 
+ 
 
 
 

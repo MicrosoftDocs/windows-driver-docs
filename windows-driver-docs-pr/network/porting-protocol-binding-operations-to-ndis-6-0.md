@@ -30,9 +30,9 @@ The following topics provide information about porting protocol binding operatio
 
 [Allocating Memory in an NDIS 6.0 Protocol Driver](allocating-memory-in-an-ndis-6-0-protocol-driver.md)
 
- 
+ 
 
- 
+ 
 
 
 

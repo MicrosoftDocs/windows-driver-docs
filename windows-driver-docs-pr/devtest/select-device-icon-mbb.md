@@ -36,15 +36,17 @@ Icons must have a transparent backgrounds and smooth edges. They must also meet 
 2.  Specify an icon for Windows Connection Manager.
 
     -   Drop the icon file from your computer onto the black **Drop Service Icon Here** area. Or, click **Browse** and select the icon file.
-        **Note**  If you're running the device metadata authoring tool as an administrator, you must use the **Browse** button to select the icon file.
+        **Note**  If you're running the device metadata authoring tool as an administrator, you must use the **Browse** button to select the icon file.
 
-         
 
-    -   If you don't have an icon of your own, click **Next**. Windows assigns a generic icon based on the primary category that you specify in the **Categories** tab.
 
- 
 
- 
+-   If you don't have an icon of your own, click **Next**. Windows assigns a generic icon based on the primary category that you specify in the **Categories** tab.
+
+
+
+
+
 
 
 

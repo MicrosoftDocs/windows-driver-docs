@@ -1,6 +1,5 @@
 ---
 title: WIA Segmentation Filter
-author: windows-driver-content
 description: WIA Segmentation Filter
 ms.assetid: 7a0ac9d9-2526-426a-b17d-2b5edd8f1f10
 ms.date: 04/20/2017
@@ -29,9 +28,9 @@ This section includes:
 
 [Segmentation Filter Examples](segmentation-filter-examples.md)
 
- 
+ 
 
- 
+ 
 
 
 

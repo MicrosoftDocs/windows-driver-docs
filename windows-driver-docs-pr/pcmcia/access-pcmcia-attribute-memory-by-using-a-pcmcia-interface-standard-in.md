@@ -23,9 +23,9 @@ A driver can use the [**PCMCIA\_MODIFY\_MEMORY\_WINDOW**](https://msdn.microsoft
 
 For more information, see [PCMCIA\_INTERFACE\_STANDARD Interface for Memory Cards](https://msdn.microsoft.com/library/windows/hardware/ff537606).
 
- 
+ 
 
- 
+ 
 
 
 

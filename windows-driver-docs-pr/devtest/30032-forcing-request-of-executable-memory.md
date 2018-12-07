@@ -46,9 +46,9 @@ in the code file:
 pPtr = MmGetSystemAddressForMdlSafe( pMdl, NormalPagePriority);
 ```
 
- 
+ 
 
- 
+ 
 
 
 

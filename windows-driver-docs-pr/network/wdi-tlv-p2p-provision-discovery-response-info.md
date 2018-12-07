@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_P2P_PROVISION_DISCOVERY_RESPONSE_INFO
-author: windows-driver-content
 description: WDI_TLV_P2P_PROVISION_DISCOVERY_RESPONSE_INFO is a TLV that contains Wi-Fi Direct Provision Discovery Response information.
 ms.assetid: EB7C4A5C-27D8-4A84-BC91-0DED51FB74C2
 ms.date: 07/18/2017
@@ -35,7 +34,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 | [**WDI\_TLV\_P2P\_PERSISTENT\_GROUP\_ID**](wdi-tlv-p2p-persistent-group-id.md)                                          |                                | X        | The Group IP for the Persistent Group to be used for the connection. This field is valid if the Persistent Group flag in [**WDI\_TLV\_P2P\_PROVISION\_SERVICE\_ATTRIBUTES**](wdi-tlv-p2p-provision-service-attributes.md) is set to 1. |
 | [**WDI\_TLV\_P2P\_SERVICE\_SESSION\_INFO**](wdi-tlv-p2p-service-session-info.md)                                        |                                | X        | The Service Session information.                                                                                                                                                                                                        |
 
- 
+ 
 
 Requirements
 ------------
@@ -61,9 +60,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

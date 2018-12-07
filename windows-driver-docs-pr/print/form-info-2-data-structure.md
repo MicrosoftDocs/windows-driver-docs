@@ -1,6 +1,5 @@
 ---
 title: FORM_INFO_2 Data Structure
-author: windows-driver-content
 description: FORM_INFO_2 Data Structure
 ms.assetid: df953fe9-00a2-468a-a2ae-ba8f3fce9982
 keywords:
@@ -52,9 +51,9 @@ Printer drivers that continue to use the FORM\_INFO\_1 structure when they call 
 
 For more information about adding printer forms and about using the FORM\_INFO\_1 and FORM\_INFO\_2 data structures, see the Microsoft Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

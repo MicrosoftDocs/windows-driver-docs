@@ -1,6 +1,5 @@
 ---
 title: GDL Directives for Macros
-author: windows-driver-content
 description: GDL Directives for Macros
 ms.assetid: b3bf8686-ccbb-4c57-a896-16c6db6f131d
 keywords:
@@ -33,9 +32,9 @@ GDL contains the following macro directives:
 
 For more information about macro directives, see [GDL Macros](gdl-macros.md).
 
- 
+ 
 
- 
+ 
 
 
 

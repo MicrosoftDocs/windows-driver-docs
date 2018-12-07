@@ -1,6 +1,5 @@
 ---
 title: Event Mechanism and Flow
-author: windows-driver-content
 description: Event Mechanism and Flow
 ms.assetid: 13a6c6fb-3615-44ef-bf01-5003520b3e26
 keywords:
@@ -21,9 +20,9 @@ Like all kernel-streaming event requests, the application can cancel a [**KSEVEN
 
 When the application requires the termination of scanning, *KsTvTune.ax* calls KSEVENT\_TUNER\_INITIATE\_SCAN with **StartFrequency** and **EndFrequency** set to zero to unregister the event. The driver then must perform the entire cleanup of its worker threads and other internal data structures.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Registering the Minifilter Driver
-author: windows-driver-content
 description: Registering the Minifilter Driver
 ms.assetid: 943082c9-dcff-478f-80ba-2a2e72f6ead2
 keywords:
@@ -31,9 +30,9 @@ status = FltRegisterFilter(
 
 In addition, **FltRegisterFilter** has an output parameter, *RetFilter*, that receives an opaque filter pointer for the minifilter driver. This filter pointer is a required input parameter for many **Flt***Xxx* support routines, including [**FltStartFiltering**](https://msdn.microsoft.com/library/windows/hardware/ff544569) and [**FltUnregisterFilter**](https://msdn.microsoft.com/library/windows/hardware/ff544606).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: x (Examine Symbols)
 description: The x command displays the symbols in all contexts that match the specified pattern.
 ms.assetid: 8c71c2ca-4a9d-43e4-91b3-f05b5475316d
 keywords: ["x (Examine Symbols) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -112,7 +111,7 @@ Because this pattern is matched to a symbol, the match is not case sensitive, an
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -141,7 +140,7 @@ The preceding commands also force the debugger to reload symbol information from
 0:000> x mymodule!*start* 
 ```
 
-A few symbols always contain the string "start". Therefore, the preceding command always displays some output to verify that the command works. But the preceding command avoids the excessive display length of **x mymodule!\***.
+A few symbols always contain the string "start". Therefore, the preceding command always displays some output to verify that the command works. But the preceding command avoids the excessive display length of **x mymodule!\\***.
 
 The display shows the starting address of each symbol and the full symbol name. If the symbol is a function name, the display also includes a list of its argument types. If the symbol is a global variable, its current value is displayed.
 
@@ -153,7 +152,7 @@ There is one other special case of the **x** command. To display the addresses a
 
 **Note**   In most cases, you cannot access local variables unless private symbols have been loaded. For more information about this situation, see [dbgerr005: Private Symbols Required](dbgerr005--private-symbols-required.md). To display the values of local variables, use the [**dv (Display Local Variables)**](dv--display-local-variables-.md) command.
 
- 
+ 
 
 The following example illustrates the **/0**, **/1**, and **/2** options.
 
@@ -277,9 +276,9 @@ Consider using the [**dt (Display Type)**](dt--display-type-.md) command when wo
 
 [**dv (Display Local Variables)**](dv--display-local-variables-.md)
 
- 
+ 
 
- 
+ 
 
 
 

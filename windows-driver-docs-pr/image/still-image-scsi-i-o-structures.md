@@ -1,6 +1,5 @@
 ---
 title: Still Image SCSI I/O Structures
-author: windows-driver-content
 description: Still Image SCSI I/O Structures
 ms.assetid: 2cf17295-e3af-4109-bfdd-118aecf80bbe
 ms.date: 04/20/2017
@@ -28,23 +27,23 @@ The following table lists and describes all of the structures associated with th
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>SCSISCAN_CMD</strong>](https://msdn.microsoft.com/library/windows/hardware/ff547972)</p></td>
-<td><p>Used as a parameter to [<strong>DeviceIoControl</strong>](https://msdn.microsoft.com/library/windows/desktop/aa363216), when the specified I/O control code is [<strong>IOCTL_SCSISCAN_CMD</strong>](https://msdn.microsoft.com/library/windows/hardware/ff542877).</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff547972" data-raw-source="[&lt;strong&gt;SCSISCAN_CMD&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff547972)"><strong>SCSISCAN_CMD</strong></a></p></td>
+<td><p>Used as a parameter to <a href="https://msdn.microsoft.com/library/windows/desktop/aa363216" data-raw-source="[&lt;strong&gt;DeviceIoControl&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/desktop/aa363216)"><strong>DeviceIoControl</strong></a>, when the specified I/O control code is <a href="https://msdn.microsoft.com/library/windows/hardware/ff542877" data-raw-source="[&lt;strong&gt;IOCTL_SCSISCAN_CMD&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff542877)"><strong>IOCTL_SCSISCAN_CMD</strong></a>.</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>SCSISCAN_INFO</strong>](https://msdn.microsoft.com/library/windows/hardware/ff547981)</p></td>
-<td><p>Used as a parameter to [<strong>DeviceIoControl</strong>](https://msdn.microsoft.com/library/windows/desktop/aa363216), when the specified I/O control code is [<strong>IOCTL_SCSISCAN_GET_INFO</strong>](https://msdn.microsoft.com/library/windows/hardware/ff542879).</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff547981" data-raw-source="[&lt;strong&gt;SCSISCAN_INFO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff547981)"><strong>SCSISCAN_INFO</strong></a></p></td>
+<td><p>Used as a parameter to <a href="https://msdn.microsoft.com/library/windows/desktop/aa363216" data-raw-source="[&lt;strong&gt;DeviceIoControl&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/desktop/aa363216)"><strong>DeviceIoControl</strong></a>, when the specified I/O control code is <a href="https://msdn.microsoft.com/library/windows/hardware/ff542879" data-raw-source="[&lt;strong&gt;IOCTL_SCSISCAN_GET_INFO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff542879)"><strong>IOCTL_SCSISCAN_GET_INFO</strong></a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 These structures are defined in *scsiscan.h*.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -30,9 +30,9 @@ On the receive path, the following task offloads need to account for encapsulati
 
 For receive-side offloads, the NIC must parse the encapsulation protocol headers. For example, for GRE encapsulation, the NIC must parse the GRE header and perform task offloads on the transport (inner) and/or tunnel (outer) IP headers.
 
- 
+ 
 
- 
+ 
 
 
 

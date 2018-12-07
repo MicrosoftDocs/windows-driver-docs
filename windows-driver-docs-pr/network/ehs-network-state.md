@@ -1,6 +1,5 @@
 ---
 title: eHS_NETWORK_STATE enumeration
-author: windows-driver-content
 description: The eHS_NETWORK_STATE enumeration indicates whether a network is a hotspot network.
 ms.assetid: a833d226-e2cf-41f9-a926-5b1f6daa03af
 keywords: 
@@ -63,9 +62,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

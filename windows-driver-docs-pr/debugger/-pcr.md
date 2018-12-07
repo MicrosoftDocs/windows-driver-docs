@@ -3,7 +3,6 @@ title: pcr
 description: The pcr extension displays the current status of the Processor Control Region (PCR) on a specific processor.
 ms.assetid: a9d82aa4-57de-4170-80fd-b7cd5b82f1e5
 keywords: ["processor control region (PCR)", "pcr Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -48,7 +47,7 @@ Specifies the processor to retrieve the PCR information from. If *Processor* is 
 </tbody>
 </table>
 
- 
+
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -88,14 +87,13 @@ KPCR for Processor 0 at ffdff000:
                IdleThread: 8015e8a0
 
                 DpcQueue:  0x80168ee0 0x80100d04 ntoskrnl!KiTimerExpiration
- 
 ```
 
 One of the entries in this display shows the interrupt request level (IRQL). The **!pcr** extension shows the current IRQL, but the current IRQL is usually not of much interest. The IRQL that existed just before the bug check or debugger connection is more interesting. This is displayed by [**!irql**](-irql.md), which is only available on computers running Windows Server 2003 or later versions of Windows.
 
- 
 
- 
+
+
 
 
 

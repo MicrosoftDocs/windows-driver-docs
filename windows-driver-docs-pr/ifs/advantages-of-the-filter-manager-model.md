@@ -1,6 +1,5 @@
 ---
 title: Advantages of the Filter Manager Model
-author: windows-driver-content
 description: Advantages of the Filter Manager Model
 ms.assetid: 8e3449dc-7c78-4f78-97c4-89b20001e91b
 keywords:
@@ -35,9 +34,9 @@ The filter manager model offers the following advantages over the existing legac
 
 -   **Better support for user-mode applications.** The filter manager provides common functionality for user-mode services and control programs that work with minifilter drivers. The filter manager user-mode library, Filterlib.dll, enables communication between a user-mode service or control program and a minifilter driver. Filterlib.dll also provides interfaces for management tools.
 
- 
+ 
 
- 
+ 
 
 
 

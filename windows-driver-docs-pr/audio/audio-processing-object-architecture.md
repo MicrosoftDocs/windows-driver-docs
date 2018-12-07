@@ -20,13 +20,13 @@ Audio processing objects (APOs), provide software based digital signal processin
 
 **Note**   The descriptions and terminology in this documentation refers mostly to output devices. However, the technology is symmetric and works essentially in reverse for input devices.
 
- 
+ 
 
 **Software APOs vs. Hardware DSP**
 
 A hardware digital signal processor (DSP) is a specialized microprocessor (or a SIP block), with its architecture optimized for the operational needs of digital signal processing. There can be significant advantages to implement audio processing in purpose built hardware vs. using a software APO. One advantage is that the CPU use and associated power consumption may be lower with a hardware implemented DSP.
 
-There are other advantages and disadvantages to consider, specific your projects goals and constraints that you will want to consider before implementing a software based APO.
+There are other advantages and disadvantages to consider, specific to your projects goals and constraints that you will want to consider before implementing a software based APO.
 
 Software based effects are inserted in the software device pipe on stream initialization. These solutions do all their effects processing on the main CPU and do not rely on external hardware. This type of solution is best for traditional Windows audio solutions such as HDAudio, USB and Bluetooth devices when the driver and hardware only support RAW processing. For more information about RAW processing, see [Audio Signal Processing Modes](audio-signal-processing-modes.md).
 
@@ -125,7 +125,7 @@ This diagram illustrates how multiple applications can access multiple combinati
 
 **Note**  You can use the scroll bar at the very bottom of this page to view all of this diagram.
 
- 
+ 
 
 **Software Mode Effects and Hardware Endpoint Effects for Render and Capture**
 

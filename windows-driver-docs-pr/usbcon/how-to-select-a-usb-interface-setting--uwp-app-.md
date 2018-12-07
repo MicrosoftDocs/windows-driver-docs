@@ -1,7 +1,6 @@
 ---
 Description: Use the UsbInterfaceSetting object to get the current setting and set a setting in the interface.
 title: How to select a USB interface setting (UWP app)
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -83,12 +82,11 @@ private async void SetInterfaceSetting(UsbDevice device, Byte settingNumber)
 
     MainPage.Current.NotifyUser("Interface Setting is set to " + settingNumber, NotifyType.StatusMessage);
 }
-
 ```
 
- 
 
- 
+
+
 
 
 

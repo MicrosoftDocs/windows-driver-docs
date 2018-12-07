@@ -1,6 +1,5 @@
 ---
 title: Hardware Resources for User-Mode SPB Peripheral Drivers
-author: windows-driver-content
 description: Code examples for a UMDF driver for a peripheral device on an SPB, and obtains the hardware resources.
 ms.assetid: 4D240011-1F4E-4C1E-8258-A2CF44BD3F06
 ms.date: 04/20/2017
@@ -228,9 +227,9 @@ An alternative implementation of the preceding code example might create **IWDFI
 
 In addition, an alternative implementation might inspect the I/O status code from the I/O request if the **Send** call succeeds. For more information, see [**IWDFIoRequest::GetCompletionParams**](https://msdn.microsoft.com/library/windows/hardware/ff559084).
 
- 
+ 
 
- 
+ 
 
 
 

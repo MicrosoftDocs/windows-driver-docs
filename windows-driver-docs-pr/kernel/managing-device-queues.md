@@ -1,6 +1,5 @@
 ---
 title: Managing Device Queues
-author: windows-driver-content
 description: Managing Device Queues
 ms.assetid: 8b7d39f8-0449-4e9b-a54c-fe60ee60842c
 keywords: ["device queues WDK IRPs , managing", "supplemental IRP queues WDK kernel", "StartIo routines, supplemental device queues"]
@@ -72,9 +71,9 @@ Note that the preceding sequence implies that the *DpcForIsr* routine also must 
 
 If the port driver attempts to wait until its shared controller/adapter is idle before dequeuing IRPs held in its supplemental device queues, the driver might starve a device for which there was heavy I/O demand while it promptly serviced every other device for which the current I/O demand was actually much lighter.
 
- 
+ 
 
- 
+ 
 
 
 

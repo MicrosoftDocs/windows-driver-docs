@@ -1,7 +1,6 @@
 ---
 Description: Enumeration of USB Composite Devices
 title: Enumeration of USB Composite Devices
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -17,7 +16,7 @@ For all USB devices, the USB bus driver reports a [*device ID*](https://msdn.mic
 
 **Note**  *xxxx* and *yyyy* are taken directly from **idVendor** and **idProduct** fields of the device descriptor, respectively.
 
- 
+ 
 
 The bus driver also reports a compatible identifier (ID) of `USB\COMPOSITE`, if the device meets the following requirements:
 

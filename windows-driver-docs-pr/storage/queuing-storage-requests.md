@@ -1,6 +1,5 @@
 ---
 title: Queuing Storage Requests
-author: windows-driver-content
 description: Queuing Storage Requests
 ms.assetid: 077f7e4f-feb5-4a2e-b22b-b1d8d6871987
 keywords:
@@ -30,9 +29,9 @@ When certain SCSI errors occur, the system port driver freezes the appropriate L
 
 If an HBA supports command queuing, as indicated in the returned STORAGE\_ADAPTER\_DESCRIPTOR data, the class driver sets SRB\_FLAGS\_QUEUE\_ENABLE and uses the **QueueAction** member of the SRBs it creates to control how its requests are queued.
 
- 
+ 
 
- 
+ 
 
 
 

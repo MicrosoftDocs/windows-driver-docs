@@ -1,6 +1,5 @@
 ---
 title: UMDF Based on COM Subset
-author: windows-driver-content
 description: UMDF Based on COM Subset
 ms.assetid: 918459a9-a6a2-40b8-8b97-3aabe3e49bfb
 keywords:
@@ -30,9 +29,9 @@ The framework objects and interfaces are based on the Component Object Model (CO
 
 The framework uses only a small subset of COM; it does not depend on the entire COM infrastructure and runtime library. Instead, the framework uses only the query-interface and reference-counting features. Every framework interface derives from **IUnknown** and therefore supports the **QueryInterface**, **AddRef**, and **Release** methods by default. The **AddRef** and **Release** methods manage object lifetime. The **QueryInterface** method enables other components to determine which interfaces the driver supports.
 
- 
+ 
 
- 
+ 
 
 
 

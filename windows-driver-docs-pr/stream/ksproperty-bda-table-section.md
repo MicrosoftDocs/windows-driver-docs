@@ -53,7 +53,7 @@ Clients use KSPROPERTY\_BDA\_TABLE\_SECTION to inform nodes about the table sect
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -85,9 +85,9 @@ Requirements
 
 [**KSP\_NODE**](https://msdn.microsoft.com/library/windows/hardware/ff566720)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -24,9 +24,9 @@ To verify overlay support, a user-mode display driver should implement the new O
 
 [Overlay DDI Programming Considerations](overlay-ddi-programming-considerations.md)
 
- 
+ 
 
- 
+ 
 
 
 

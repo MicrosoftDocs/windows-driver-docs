@@ -1,6 +1,5 @@
 ---
 title: IPrinterScriptUsbJobContextReturnCodes Retry method
-author: windows-driver-content
 description: Returns a value of '2' to inform USBMon that the method call was successful, with more work to be completed.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

@@ -1,6 +1,5 @@
 ---
 title: Universal Serial Bus (USB) driver samples
-author: windows-driver-content
 description: The driver samples in this directory provide a starting point for writing a custom USB driver for your device.
 ms.assetid: 4A61F62B-9C23-4265-8AB4-D3AB45F512DF
 ms.date: 04/20/2017
@@ -27,11 +26,11 @@ The driver samples in this directory provide a starting point for writing a cust
 | Usbsamp Generic USB Driver                                             | [usbsamp](http://go.microsoft.com/fwlink/p/?LinkId=618938)            | Demonstrates how to perform full speed, high speed, and SuperSpeed transfers to and from bulk and isochronous endpoints of a generic USB device.                                    |
 | USBView                                                                | [usbview](http://go.microsoft.com/fwlink/p/?LinkId=618004)            | A Windows application that allows you to browse all USB controllers and connected USB devices on your system.                                                                       |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

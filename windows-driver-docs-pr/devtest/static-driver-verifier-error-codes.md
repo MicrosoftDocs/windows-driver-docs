@@ -47,11 +47,11 @@ The following table lists the error codes that Static Driver Verifier could retu
 | 31SDV\_UNSUPPORTED\_PLATFORM\_TOOLSET\_ERROR | SDV does not support the specified platform toolset.                                                                                                                                                           |
 | 32 SDV\_UNSUPPORTED\_SWITCH                  | SDV does not support the given command. Please check and try again. Consult SDV documentation for a list of supported commands.                                                                                |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

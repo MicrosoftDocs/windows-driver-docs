@@ -1,6 +1,5 @@
 ---
 title: Binding minidrivers to the HID class
-author: windows-driver-content
 description: This section describes the operation of the system-supplied HID class driver and HID minidrivers, which support devices in the HIDClass device setup class.
 ms.assetid: 2B51E205-8EBB-413A-A317-0923FAB77F0E
 ms.date: 04/20/2017
@@ -16,9 +15,9 @@ The HID class driver provides the interface that upper-level drivers and user-mo
 
 The combined operation of the HID class driver and a HID minidriver acts as a WDM function driver for an input device and a bus driver for the child devices (HID collections) that the input device supports. This design makes it possible for the HID class driver to operate USB HID devices and non-USB input devices that are attached to ports or buses other than a USB bus. The operational detail of the underlying parent device is transparent to upper-level drivers or user-mode applications.
 
- 
+ 
 
- 
+ 
 
 
 

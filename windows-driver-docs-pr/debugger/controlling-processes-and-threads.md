@@ -3,7 +3,6 @@ title: Controlling Processes and Threads
 description: Controlling Processes and Threads
 ms.assetid: f5a50b54-443e-425e-98cb-cff8d31ac897
 keywords: ["process", "process, choosing", "thread", "thread, choosing", "thread, freezing", "thread, unfreezing (thawing)", "thread, suspending", "suspend count of threads", "freezing threads"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -86,9 +85,9 @@ You can add the [**~e (Thread-Specific Command)**](-e--thread-specific-command-.
 
 The debugger can attach to multiple targets at the same time. When these processes include dump files or include live targets on more than one computer, the debugger references a system, process, and thread for each action. For more information about this kind of debugging, see [Debugging Multiple Targets](debugging-multiple-targets.md).
 
- 
+ 
 
- 
+ 
 
 
 

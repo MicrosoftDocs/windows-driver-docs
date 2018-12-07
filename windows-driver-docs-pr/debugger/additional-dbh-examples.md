@@ -3,7 +3,6 @@ title: Additional DBH Examples
 description: Additional DBH Examples
 ms.assetid: 6db23b6b-e5da-4ea3-9f0a-ab42c0e712d7
 keywords: ["DBH, displaying symbols", "DBH, symbol decorations", "DBH, data types", "DBH, imaginary symbols"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -19,7 +18,7 @@ If the target is a full symbol file, then each public symbol appears twice in th
 
 DBH can display information about this symbol from the private symbol data, from the public symbol table without decorations, and from the public symbol table with decorations. Here is an example in which all three of these are displayed, using the command **addr 414fe0** each time.
 
-The first time this command appears in this example, DBH uses the default symbol options, so the resulting information comes from the private symbol data. Note that this information includes the address, size, and data type of the function **fgets**. Then, the command symopt +4000 is used, which turns on the SYMOPT\_PUBLICS\_ONLY option. This causes DBH to ignore the private symbol data, and therefore when the **addr 414fe0** command is run the second time, DBH uses the public symbol table, and no size or data type information is shown for the function **fgets**. Finally, the command symopt -2 is used, turning off the SYMOPT\_UNDNAME option and causing DBH to include decorations. When the **addr 414fe0** runs this final time, it shows the decorated version of the function name, **\_fgets**.
+The first time this command appears in this example, DBH uses the default symbol options, so the resulting information comes from the private symbol data. Note that this information includes the address, size, and data type of the function **fgets**. Then, the command symopt +4000 is used, which turns on the SYMOPT\_PUBLICS\_ONLY option. This causes DBH to ignore the private symbol data, and therefore when the **addr 414fe0** command is run the second time, DBH uses the public symbol table, and no size or data type information is shown for the function **fgets**. Finally, the command symopt -2 is used, turning off the SYMOPT\_UNDNAME option and causing DBH to include decorations. When the **addr 414fe0** runs this final time, it shows the decorated version of the function name, **\_fgets**.
 
 ```dbgcmd
 pid:4308 mod:TimeTest[400000]: addr 414fe0
@@ -86,7 +85,7 @@ DBH can determine the decorations on a specific symbol. This can be useful when 
 
 For example, suppose you know that the symbol file mysymbols.pdb contains a symbol whose undecorated name is **MyFunction1**. To find the decorated name, use the following procedure.
 
-First, start DBH without the -d command-line option, and then use the symopt +4000 command so that all information comes from the public symbol table:
+First, start DBH without the -d command-line option, and then use the symopt +4000 command so that all information comes from the public symbol table:
 
 ```console
 C:\> dbh c:\mydir\mysymbols.pdb
@@ -104,11 +103,9 @@ mysymbols [1000000]: enum myfunction1
 
  index            address     name
    2ab            102cb4e :   MyFunction1
-
- 
 ```
 
-Now use symopt -2 to make symbol decorations visible, and then use the **addr** command with the address of this symbol:
+Now use symopt -2 to make symbol decorations visible, and then use the **addr** command with the address of this symbol:
 
 ```dbgcmd
 mysymbols [1000000]: symopt -2
@@ -166,7 +163,7 @@ dbh: undec ?_set_new_handler@@YAP6AHI@ZP6AHI@Z@Z
 int (__cdecl*__cdecl _set_new_handler(int (__cdecl*)(unsigned int)))(unsigned int) 
 ```
 
-The **undec** command does not display information about initial underscores, the prefix **\_\_imp\_**, or trailing "**@***address*" decorations, which are commonly found attached to function names.
+The **undec** command does not display information about initial underscores, the prefix **\_\_imp\_**, or trailing "**@**<em>address</em>" decorations, which are commonly found attached to function names.
 
 You can use the **undec** command with any string, not just the name of a symbol in the currently loaded module.
 
@@ -337,9 +334,9 @@ pid:6040 mod:MyModule[400000]: enum timetest!ma*
      5             415450 :   mainCRTStartup 
 ```
 
- 
 
- 
+
+
 
 
 

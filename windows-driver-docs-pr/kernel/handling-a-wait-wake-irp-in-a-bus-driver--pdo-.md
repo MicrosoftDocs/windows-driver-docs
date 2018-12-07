@@ -1,6 +1,5 @@
 ---
 title: Handling a Wait/Wake IRP in a Bus Driver (PDO)
-author: windows-driver-content
 description: Handling a Wait/Wake IRP in a Bus Driver (PDO)
 ms.assetid: 9583b935-26e1-49c6-827d-932762af114d
 keywords: ["receiving wait/wake IRPs", "wait/wake IRPs WDK power management , receiving", "bus drivers WDK power management"]
@@ -22,7 +21,7 @@ Like other power IRPs, each wait/wake IRP must be passed all the way down the de
 
     -   Complete the IRP ([**IoCompleteRequest**](https://msdn.microsoft.com/library/windows/hardware/ff548343)), specifying a priority boost of IO\_NO\_INCREMENT.
 
-    -   Return the status set in **Irp-&gt;IoStatus.Status** from the [*DispatchPower*](https://msdn.microsoft.com/library/windows/hardware/ff543354) routine.
+    -   Return the status set in **Irp-&gt;IoStatus.Status** from the [*DispatchPower*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine.
 
 2.  Check whether a wait/wake IRP is already pending for the PDO. If so, set **Irp-&gt;IoStatus.Status** to STATUS\_DEVICE\_BUSY, increment the driver's internal count of wait/wake IRPs, and complete the IRP as described in the previous step.
 
@@ -48,9 +47,9 @@ If the device does not support wake-up, the bus driver (PDO) should proceed as f
 
 2.  Return from the *DispatchPower* routine, passing the value at **Irp-&gt;IoStatus.Status** as its return value.
 
- 
+ 
 
- 
+ 
 
 
 

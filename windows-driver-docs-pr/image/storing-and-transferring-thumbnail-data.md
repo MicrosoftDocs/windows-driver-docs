@@ -1,6 +1,5 @@
 ---
 title: Storing and Transferring Thumbnail Data
-author: windows-driver-content
 description: Storing and Transferring Thumbnail Data
 ms.assetid: 4c27f93f-859e-42e3-95ea-9bfd8d0329d6
 ms.date: 04/20/2017
@@ -26,9 +25,9 @@ The property contains the thumbnail image height, in pixels.
 
 An application reads the WIA\_IPC\_THUMB\_WIDTH and WIA\_IPC\_THUMB\_HEIGHT properties to create the property BITMAPINFOHEADER structure (described in the Microsoft Windows SDK documentation). The application then reads the WIA\_IPC\_THUMBNAIL property for the actual thumbnail data. The thumbnail data should be uncompressed, 24-bits per pixel data aligned on 32-bit boundaries.
 
- 
+ 
 
- 
+ 
 
 
 

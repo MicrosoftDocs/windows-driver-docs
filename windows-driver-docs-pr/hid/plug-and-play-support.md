@@ -1,6 +1,5 @@
 ---
 title: Plug and play support
-author: windows-driver-content
 description: This section describes the enumeration process on the Universal Serial Bus.
 ms.assetid: CB3D76DB-4A96-4A19-BC1C-C9181A12B04E
 ms.date: 04/20/2017
@@ -31,7 +30,7 @@ The generation of the compatible ID for the device is more complicated. The clas
 
 **Note**  If you are providing an INF, your hardware identifiers should match the **bold** identifiers in the left column of the following table. (You should avoid using the compatible identifiers listed in the right column.)
 
- 
+ 
 
 |                                        |                                      |
 |----------------------------------------|--------------------------------------|
@@ -40,7 +39,7 @@ The generation of the compatible ID for the device is more complicated. The clas
 | **USB\\Vid\_xxxx&Pid\_yyyy**           | USB\\Class\_aa&SubClass\_bb          |
 |                                        | USB\\Class\_aa                       |
 
- 
+ 
 
 *Example 2: Multiple Interface/Function HID USB Device (Composite Device)*
 
@@ -48,7 +47,7 @@ USB devices with multiple functions are called composite devices. This example s
 
 **Note**  If you are providing an INF, your hardware identifiers should match the **bold** identifiers in the left column of the following table. (You should avoid using the compatible identifiers listed in the right column.)
 
- 
+ 
 
 |                                        |                                      |
 |----------------------------------------|--------------------------------------|
@@ -58,7 +57,7 @@ USB devices with multiple functions are called composite devices. This example s
 |                                        | USB\\Class\_aa                       |
 |                                        | USB\\COMPOSITE                       |
 
- 
+ 
 
 If, however, no hardware match is found, Windows Plug and Play makes use of the USB\\COMPOSITE identifier to load the USB Generic Parent driver (USBCCGP). The Generic Parent driver then creates a separate set of PDOs (one for every interface) with a separate set of hardware IDs for each interface of the composite device. The following section displays the format of hardware IDs for child PDOs.
 
@@ -68,7 +67,7 @@ The class code, subclass code, and protocol code are determined by the **bInterf
 
 **Note**  If you are providing an INF, either to load your driver or to provide a friendly device name, your hardware identifiers should match the **bold** identifiers in the left column of the following table. (You should avoid using the compatible identifiers listed in the right column.)
 
- 
+ 
 
 |                                               |                                      |
 |-----------------------------------------------|--------------------------------------|
@@ -77,11 +76,11 @@ The class code, subclass code, and protocol code are determined by the **bInterf
 | **USB\\Vid\_xxxx&Pid\_yyyy&MI\_ww**           | USB\\Class\_aa&SubClass\_bb          |
 |                                               | USB\\Class\_aa                       |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

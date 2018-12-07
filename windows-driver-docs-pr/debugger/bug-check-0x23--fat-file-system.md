@@ -3,7 +3,6 @@ title: Bug Check 0x23 FAT_FILE_SYSTEM
 description: The FAT_FILE_SYSTEM bug check has a value of 0x00000023. This indicates that a problem occurred in the FAT file system.
 ms.assetid: 5a10e650-2fca-4836-b407-ded8b41c43a1
 keywords: ["Bug Check 0x23 FAT_FILE_SYSTEM", "FAT_FILE_SYSTEM"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -55,7 +54,7 @@ The FAT\_FILE\_SYSTEM bug check has a value of 0x00000023. This indicates that a
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -73,9 +72,9 @@ Resolution
 
 **To resolve a nonpaged pool memory depletion problem:** Add new physical memory to the computer. This will increase the quantity of nonpaged pool memory available to the kernel.
 
- 
+ 
 
- 
+ 
 
 
 

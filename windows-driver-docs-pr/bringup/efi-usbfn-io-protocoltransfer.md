@@ -1,6 +1,5 @@
 ---
 title: EFI_USBFN_IO_PROTOCOL.Transfer
-author: windows-driver-content
 description: EFI_USBFN_IO_PROTOCOL.Transfer
 ms.assetid: 0585de75-9268-4964-8c5f-dcc3338e5287
 ms.date: 04/20/2017
@@ -35,7 +34,7 @@ The **Transfer** function handles transferring data to or from the host on the s
 </tbody>
 </table>
 
- 
+ 
 
 ## Syntax
 
@@ -75,7 +74,7 @@ If Direction is **EfiUsbEndpointDirectionDeviceTx**: The buffer that contains th
 **Note**  
 This buffer is allocated and freed by using the AllocateTransferBuffer and FreeTransferBuffer functions. The caller of this function must not free or reuse the buffer until an **EfiUsbMsgEndpointStatusChangedRx** or **EfiUsbMsgEndpointStatusChangedTx** message was received along with the address of the transfer buffer as part of the message payload. See [EFI\_USBFN\_IO\_PROTOCOL.EventHandler](efi-usbfn-io-protocoleventhandler.md) for more information on various messages and their payloads.
 
- 
+ 
 
 ## Return values
 
@@ -111,7 +110,7 @@ This buffer is allocated and freed by using the AllocateTransferBuffer and FreeT
 </tbody>
 </table>
 
- 
+ 
 
 ## Remarks
 
@@ -127,9 +126,9 @@ This function fails with EFI\_INVALID\_PARAMETER return code if the specified di
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
 

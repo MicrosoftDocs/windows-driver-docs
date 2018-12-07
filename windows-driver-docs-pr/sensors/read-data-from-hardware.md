@@ -1,6 +1,5 @@
 ---
 title: Read data from hardware
-author: windows-driver-content
 description: This topic shows you how the sample sensor driver reads data from the sensor hardware (the accelerometer) in response to read requests.
 ms.assetid: 4C01324D-3C4D-4028-A7DE-0AD8F2233071
 ms.date: 04/20/2017
@@ -57,32 +56,32 @@ The sample sensor driver uses **GetData** to retrieve the sensor instance, acqui
 ```
 
 2. Find the **GetData** function, and find the following code:
-```cpp
-// Read the device data
+   ```cpp
+   // Read the device data
    BYTE DataBuffer[ADXL345_DATA_REPORT_SIZE_BYTES];
    WdfWaitLockAcquire(m_I2CWaitLock, NULL);
    Status = I2CSensorReadRegister(m_I2CIoTarget, ADXL345_DATA_X0, &DataBuffer[0], sizeof(DataBuffer));
    WdfWaitLockRelease(m_I2CWaitLock);
-```
+   ```
 
 The preceding code sets aside a buffer of size *DataBuffer*, and reads the device data into that buffer, via an I2C connection.
 
 3. Find the following code:
-```cpp
-// Add timestamp
+   ```cpp
+   // Add timestamp
    FILETIME Timestamp = {};
    GetSystemTimeAsFileTime(&Timestamp);
    InitPropVariantFromFileTime(&Timestamp, &(m_pSensorData->List[SENSOR_DATA_TIMESTAMP].Value));
 
    SensorsCxSensorDataReady(m_SensorInstance, m_pSensorData);
-```
+   ```
 
 The preceding code adds a time stamp to the device data, then saves the data to a location in the device context, and uses *m\_pSensorData* to point to it. This makes the data available further up the stack, to the class extension.
 
 4. Close the *client.cpp* file.
- 
+ 
 
- 
+ 
 
 
 

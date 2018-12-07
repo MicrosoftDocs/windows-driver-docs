@@ -1,6 +1,5 @@
 ---
 title: EFI_RNG_PROTOCOL.GetRNG
-author: windows-driver-content
 description: EFI_RNG_PROTOCOL.GetRNG
 ms.assetid: 5C2E0C8F-FF3A-4F57-BC28-3BC540852CB0
 ms.date: 04/20/2017
@@ -88,16 +87,16 @@ Returns one of the following status codes.
 </tbody>
 </table>
 
- 
+ 
 
 ## Requirements
 
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
 

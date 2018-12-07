@@ -1,6 +1,5 @@
 ---
 title: Using the System's Cancel Spin Lock
-author: windows-driver-content
 description: Using the System's Cancel Spin Lock
 ms.assetid: dd3cf1e7-8ecc-4721-9160-86bf928687e4
 keywords: ["cancel spin locks WDK kernel", "spin locks WDK kernel", "system cancel spin locks WDK kernel", "STATUS_CANCELLED"]
@@ -28,9 +27,9 @@ Any driver routine that calls **IoAcquireCancelSpinLock** must call **IoReleaseC
 
 A driver must never call [**IoCompleteRequest**](https://msdn.microsoft.com/library/windows/hardware/ff548343) with an IRP while holding a spin lock. Attempting to complete an IRP while holding a spin lock can cause a deadlock.
 
- 
+ 
 
- 
+ 
 
 
 

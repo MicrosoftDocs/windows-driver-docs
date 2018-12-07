@@ -1,6 +1,5 @@
 ---
 title: OID_WWAN_HOME_PROVIDER
-author: windows-driver-content
 description: OID_WWAN_HOME_PROVIDER is used to set and retrieve information about the home provider of the cellular service subscription.
 ms.assetid: f7bea146-261d-4d01-9fd5-ae512a1ac083
 ms.date: 08/08/2017
@@ -31,7 +30,7 @@ A *set* operation should not require the user to unlock the device regardless if
 | Locked               | -                   | Source PIN not required for setting home provider            |
 | Locked               | Locked              | Source and Target PIN not required for setting home provider |
 
- 
+ 
 
 For more information about using this OID, see [WWAN Provider Operations](https://msdn.microsoft.com/library/windows/hardware/ff559101).
 
@@ -66,9 +65,9 @@ Requirements
 
 [WWAN Provider Operations](https://msdn.microsoft.com/library/windows/hardware/ff559101)
 
- 
+ 
 
- 
+ 
 
 
 

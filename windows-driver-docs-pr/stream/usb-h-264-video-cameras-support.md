@@ -1,6 +1,5 @@
 ---
 title: USB H.264 Video Cameras Support
-author: windows-driver-content
 description: Beginning with Windows 8, the H.264 video codec (encoder/decoder) is supported.
 ms.assetid: EB73E2B2-B34E-4DC1-807A-4990A54E6E8D
 ms.date: 04/20/2017
@@ -27,7 +26,7 @@ The UVC class driver Usbvideo.sys queries the video camera directly to obtain it
 
 **Note**  The official guidelines will be published in a future standard document to be found at this location: [Universal Serial Bus Device Class Definition for Video Devices Specification](http://go.microsoft.com/fwlink/p/?linkid=516989).
 
- 
+ 
 
 ## Related topics
 [**KS\_DATAFORMAT\_H264VIDEOINFO**](https://msdn.microsoft.com/library/windows/hardware/hh463996)  

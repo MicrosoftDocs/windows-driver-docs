@@ -54,11 +54,13 @@ Specifies an INF-writer-defined name for the per-manufacturer [**INF *Models* se
 <a href="" id="targetosversion"></a>*TargetOSVersion*  
 For Windows XP and later versions of Windows, this specifies one or more target operating system versions with which various INF ***Models*** sections can be used. Windows chooses the INF ***Models*** section that most closely matches the operating system version on which it is executing.
 
+**Note**: In the C++ code above, multiple TargetOSVersions are listed in one entry.  This is the correct way to add multiple TargetOSVersions.  Do not represent each target as a separate entry.  See related info in Example 3 below.
+
 For a description of the *TargetOSVersion* decoration, see the following **Remarks** section.
 
-**Important**  Starting with Windows Server 2003 SP1, INF files must decorate models-section-name entries in the **INF Manufacturer section**, along with the associated INF ***Models*** section names, with .ntia64 or .ntamd64 platform extensions to specify non-x86 target operating system versions. These platform extensions are not required in INF files for x86-based target operating system versions or non-PnP driver INF files (such as file system driver INF files for x64-based architectures).
+**Important**:  Starting with Windows Server 2003 SP1, INF files must decorate models-section-name entries in the **INF Manufacturer section**, as well as the associated INF ***Models*** section names, with .ntia64 or .ntamd64 platform extensions to specify non-x86 target operating system versions. These platform extensions are not required in INF files for x86-based target operating system versions or non-PnP driver INF files, such as file system driver INF files for x64-based architectures.
 
- 
+ 
 
 Remarks
 -------
@@ -114,7 +116,7 @@ A number that represents the operating system's major version number. The follow
 | Windows XP             | 5             |
 | Windows 2000           | 5             |
 
- 
+ 
 
 <a href="" id="osminorversion"></a>*OSMinorVersion*  
 A number that represents the operating system's minor version number. The following table defines the minor version for the Windows operating system.
@@ -135,7 +137,7 @@ A number that represents the operating system's minor version number. The follow
 | Windows XP             | 1             |
 | Windows 2000           | 0             |
 
- 
+ 
 
 <a href="" id="producttype"></a>*ProductType*  
 A number that represents one of the VER_NT_xxxx flags defined in *Winnt.h*, such as the following:
@@ -186,7 +188,7 @@ For more information about the *TargetOSVersion* decoration, see [Combining Plat
 
 **Important**  We highly recommend that you always decorate *models-section-name* entries in the **Manufacturer** and [***Models***](inf-models-section.md) sections with platform extensions for target operating systems of Windows XP or later versions of Windows. For x86-based hardware platforms, you should avoid the use of the **.nt** platform extension and use **.ntx86** instead.
 
- 
+ 
 
 If your INF contains **Manufacturer** section entries with decorations, it must also include [**INF *Models* sections**](inf-models-section.md) with names that match the operating system decorations. For example, if an INF contains the following **Manufacturer** section:
 
@@ -333,6 +335,8 @@ Example 3:
 .
 .
 ```
+**Note**: When specifying multiple TargetOSVersions, string them together in one entry as seen in this example.  Do not represent each target as a separate entry. 
+
 ## See also
 
 
@@ -342,9 +346,9 @@ Example 3:
 
 [**Strings**](inf-strings-section.md)
 
- 
+ 
 
- 
+ 
 
 
 

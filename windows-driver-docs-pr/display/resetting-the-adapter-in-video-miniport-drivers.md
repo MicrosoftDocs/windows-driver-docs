@@ -28,9 +28,9 @@ Every miniport driver must have a [*HwVidResetHw*](https://msdn.microsoft.com/li
 
 [**VideoPortZeroMemory**](https://msdn.microsoft.com/library/windows/hardware/ff570493)
 
- 
+ 
 
- 
+ 
 
 
 

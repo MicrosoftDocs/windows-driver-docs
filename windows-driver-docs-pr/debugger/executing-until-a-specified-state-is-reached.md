@@ -3,7 +3,6 @@ title: Executing Until a Specified State is Reached
 description: Executing Until a Specified State is Reached
 ms.assetid: 0657a7bf-4d72-4248-9e45-d79d51b91139
 keywords: ["executing until a specified state is reached", "breakpoints, used to control execution", "breakpoints, and pseudo-registers", "script file, used to control execution"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -68,9 +67,9 @@ This **t** command will execute a single step, and then execute the quoted comma
 
 For details on script files, see [Using Script Files](using-script-files.md) and [Using Debugger Command Programs](using-debugger-command-programs.md).
 
- 
+ 
 
- 
+ 
 
 
 

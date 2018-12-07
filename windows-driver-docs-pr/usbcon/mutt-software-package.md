@@ -1,7 +1,6 @@
 ---
 Description: The MUTT software package contains several tools to be used with MUTT devices. The suite of tools include firmware upgrade application, driver installation package, and applications that send transfers to the device.
 title: Tools in the MUTT software package
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -82,7 +81,7 @@ Changes for version 1.9
 </thead>
 <tbody>
 <tr class="odd">
-<td>[USBTCD](usbtcd.md)</td>
+<td><a href="usbtcd.md" data-raw-source="[USBTCD](usbtcd.md)">USBTCD</a></td>
 <td><ul>
 <li>USBTCD is an application (USBTCD.exe) that communicates with a kernel-mode driver (USBTCD.sys) and performs common USB data transfer scenarios with various length transfer sizes.</li>
 <li>The driver installation files are USBTCD .sys, and USBTCD.inf.</li>
@@ -103,7 +102,7 @@ Changes for version 1.9
 <td>xhciwmi.exe</td>
 </tr>
 <tr class="odd">
-<td>[XHCIWMI](usb-xhciwmi.md)[USBLPM](usblpm-tool.md)</td>
+<td><a href="usb-xhciwmi.md" data-raw-source="[XHCIWMI](usb-xhciwmi.md)">XHCIWMI</a><a href="usblpm-tool.md" data-raw-source="[USBLPM](usblpm-tool.md)">USBLPM</a></td>
 <td><ul>
 <li>Monitors the U0/U1/U2/U3 power states of USB 3.0 ports.</li>
 <li>It verifies that transitions between U0/U1/U2 occur correctly.</li>
@@ -111,7 +110,7 @@ Changes for version 1.9
 <td>UsbLPM.exe</td>
 </tr>
 <tr class="even">
-<td>[USBStress](usbstress.md)</td>
+<td><a href="usbstress.md" data-raw-source="[USBStress](usbstress.md)">USBStress</a></td>
 <td><ul>
 <li>The USBStress application communicates with a kernel-mode driver (usbstress.sys) and performs common USB data transfer scenarios.</li>
 <li>The driver installation files are usbstress.sys, and usbstress.inf.</li>
@@ -123,7 +122,7 @@ Changes for version 1.9
 <p>UsbStressTest.bat</p></td>
 </tr>
 <tr class="odd">
-<td>[MuttUtil](muttutil.md)</td>
+<td><a href="muttutil.md" data-raw-source="[MuttUtil](muttutil.md)">MuttUtil</a></td>
 <td><ul>
 <li>Updates the firmware of the test devices.</li>
 <li>Installs drivers for MUTT devices.</li>
@@ -135,14 +134,14 @@ Changes for version 1.9
 <td><p>MuttUtil.exe</p></td>
 </tr>
 <tr class="even">
-<td>[USB hardware verifier](how-to-retrieve-information-about-a-usb-device.md)</td>
+<td><a href="how-to-retrieve-information-about-a-usb-device.md" data-raw-source="[USB hardware verifier](how-to-retrieve-information-about-a-usb-device.md)">USB hardware verifier</a></td>
 <td>Displays all hardware events on the console.</td>
 <td>USB3HWVerifierAnalyzer.exe</td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 [USB](https://msdn.microsoft.com/library/windows/hardware/ff538930)  

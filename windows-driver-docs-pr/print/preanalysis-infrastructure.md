@@ -1,6 +1,5 @@
 ---
 title: Preanalysis Infrastructure
-author: windows-driver-content
 description: Preanalysis Infrastructure
 ms.assetid: 4c07145a-9a08-4507-8bab-769617e73d77
 keywords:
@@ -93,7 +92,7 @@ Enable device StretchBlt operations.
 
 Enable OEM object-level preanalysis.
 
- 
+ 
 
 ### Monochrome Z-Order Text Analysis with Blank Band Optimization
 
@@ -175,9 +174,9 @@ OEMs are required to hook both **DrvStartBanding** and [**DrvNextBand**](https:/
 
 The end of preanalysis is signaled by a call to the **OEMNextBand** function. The *pptl* parameter that is passed to **OEMNextBand** is not **NULL**. This call is used only to return the appropriate *pptl* value to Unidrv. Plug-ins can set the *pptl* value themselves or can call back into Unidrv (like the preceding pseudocode example at the beginning of this topic does). Because the banding surface that the *pso* parameter of **OEMNextBand** specified in the first call to **OEMNextBand** has not rendered yet, a plug-in should not send its contents to the device.
 
- 
+ 
 
- 
+ 
 
 
 

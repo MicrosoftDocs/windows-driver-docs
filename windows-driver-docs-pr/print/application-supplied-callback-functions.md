@@ -1,6 +1,5 @@
 ---
 title: Application-Supplied Callback Functions
-author: windows-driver-content
 description: Application-Supplied Callback Functions
 ms.assetid: 7c3c510a-cdc9-4283-8771-08c4e3b54e2e
 keywords:
@@ -24,9 +23,9 @@ CPSUI communicates with applications by callback functions. A CPSUI application 
 
 [Page event callbacks](page-event-callbacks.md)
 
- 
+ 
 
- 
+ 
 
 
 

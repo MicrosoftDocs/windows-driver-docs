@@ -3,7 +3,6 @@ title: z (Execute While)
 description: The z command executes a command while a given condition is true.
 ms.assetid: 075dc012-68c2-4172-9d37-57bc8358297c
 keywords: ["z (Execute While) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -66,7 +65,7 @@ Specifies the condition to test. If this condition evaluates to a nonzero value,
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -107,9 +106,9 @@ Current expression evaluator: C++ - C++ source expressions
 
 [**j (Execute If-Else)**](j--execute-if---else-.md)
 
- 
+ 
 
- 
+ 
 
 
 

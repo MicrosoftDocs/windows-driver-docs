@@ -23,9 +23,9 @@ Connection-oriented NDIS (CoNDIS) protocol drivers call the [**NdisCoOidRequest*
 
 For more information about OIDs, see [NDIS OIDs](https://msdn.microsoft.com/library/windows/hardware/ff566707).
 
- 
+ 
 
- 
+ 
 
 
 

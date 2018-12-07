@@ -47,13 +47,13 @@ The KSPROPERTY\_HRTF3D\_PARAMS property applies a set of 3-D parameter values to
 <td align="left"><p>No</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p>[<strong>KSNODEPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537143)</p></td>
-<td align="left"><p>[<strong>KSDS3D_HRTF_PARAMS_MSG</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537108)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537143" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537143)"><strong>KSNODEPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537108" data-raw-source="[&lt;strong&gt;KSDS3D_HRTF_PARAMS_MSG&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537108)"><strong>KSDS3D_HRTF_PARAMS_MSG</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a structure of type KSDS3D\_HRTF\_PARAMS\_MSG that specifies the parameter values.
 
@@ -84,9 +84,9 @@ Requirements
 
 [**KSDS3D\_HRTF\_PARAMS\_MSG**](https://msdn.microsoft.com/library/windows/hardware/ff537108)
 
- 
+ 
 
- 
+ 
 
 
 

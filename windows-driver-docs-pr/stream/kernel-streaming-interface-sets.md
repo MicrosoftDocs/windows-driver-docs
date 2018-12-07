@@ -22,9 +22,9 @@ These sets correspond to GUIDs that are defined in *ks.h* and *ksmedia.h*, and c
 
 For information about how to specify interfaces in your minidriver, see [KS Interfaces](https://msdn.microsoft.com/library/windows/hardware/ff567652).
 
- 
+ 
 
- 
+ 
 
 
 

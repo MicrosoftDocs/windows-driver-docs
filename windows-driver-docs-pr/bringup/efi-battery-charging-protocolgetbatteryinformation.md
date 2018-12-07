@@ -1,6 +1,5 @@
 ---
 title: EFI_BATTERY_CHARGING_PROTOCOL.GetBatteryInformation
-author: windows-driver-content
 description: EFI_BATTERY_CHARGING_PROTOCOL.GetBatteryInformation
 ms.assetid: 497cd001-5180-4dee-a070-ccf8c987bd71
 ms.date: 04/20/2017
@@ -69,7 +68,7 @@ typedef EFI_STATUS (EFIAPI * EFI_BATTERY_CHARGING_GET_BATTERY_INFORMATION) (
 </tbody>
 </table>
 
- 
+ 
 
 <a href="" id="batteryterminalvoltage"></a>*BatteryTerminalVoltage*  
 \[out\] The voltage across the battery terminals in mV.
@@ -119,7 +118,7 @@ Returns one of the following status codes.
 </tbody>
 </table>
 
- 
+ 
 
 ## Remarks
 
@@ -129,7 +128,7 @@ This function is called periodically by the UEFI battery charging application to
 **Note**  
 This function is available starting in revision 0x00010002 of the EFI\_BATTERY\_CHARGING\_PROTOCOL. If the UEFI battery charging application detects that only revision 0x00010001 of the protocol is available, it will call [EFI\_BATTERY\_CHARGING\_PROTOCOL.GetBatteryStatus](efi-battery-charging-protocolgetbatterystatus.md) instead.
 
- 
+ 
 
 ## Requirements
 

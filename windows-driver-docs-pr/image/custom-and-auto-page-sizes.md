@@ -1,6 +1,5 @@
 ---
 title: Custom and Auto Page Sizes
-author: windows-driver-content
 description: Custom and Auto Page Sizes
 ms.assetid: a1f5f78d-fc05-4a7e-9d19-c7f40302b85f
 ms.date: 04/20/2017
@@ -26,11 +25,11 @@ When WIA\_PAGE\_AUTO is set (chosen as the default value by the driver or set by
 
 **Note**  The compatibility layer within the WIA service does not add support for WIA\_IPS\_PAGE\_SIZE to the ADF item that is translated from a Windows XP WIA device if the property is not supported on the child item of the device. Applications should not expect an ADF item to always support this property and should always check if WIA\_IPS\_PAGE\_SIZE is supported at run time. (Typically, applications should check the support for any property that is to be negotiated.)
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

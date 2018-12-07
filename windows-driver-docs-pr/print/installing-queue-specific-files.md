@@ -1,6 +1,5 @@
 ---
 title: Installing Queue-Specific Files
-author: windows-driver-content
 description: Installing Queue-Specific Files
 ms.assetid: 86cb16d5-6035-4a4d-a6b7-f27ebd3e9f5c
 keywords:
@@ -47,16 +46,16 @@ At printer installation time, a vendor-supplied installation application can spe
 <tr class="odd">
 <td><p><strong>Module</strong></p></td>
 <td><p>REG_SZ</p></td>
-<td><p>Filename of an optional [Point and Print DLL](point-and-print-dlls.md).</p></td>
+<td><p>Filename of an optional <a href="point-and-print-dlls.md" data-raw-source="[Point and Print DLL](point-and-print-dlls.md)">Point and Print DLL</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The application should create these values by calling the print spooler's **SetPrinterDataEx** function. The registry key specified with this call should be formatted as:
 
-**CopyFiles\\***ComponentName*
+**CopyFiles\\**<em>ComponentName</em>
 
 where *ComponentName* is the name of the software component with which the files are associated. For example, files associated with Microsoft Image Color Management (ICM) are specified under the **CopyFiles\\ICM** key. You specify the registry key name as an argument to the **SetPrinterDataEx** function, and the function creates the key as a subkey of the print queue's key on the print server.
 
@@ -78,9 +77,9 @@ CopyFiles\ICM\Module: mscms.dll
 
 The Mscms.dll module is a [Point and Print DLL](point-and-print-dlls.md) that exports **GenerateCopyFilePaths** and **SpoolerCopyFileEvent** functions.
 
- 
+ 
 
- 
+ 
 
 
 

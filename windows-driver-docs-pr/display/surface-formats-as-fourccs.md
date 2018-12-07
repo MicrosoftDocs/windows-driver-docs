@@ -20,9 +20,9 @@ ms.localizationpriority: medium
 
 Three of the new surface formats defined by DirectX 8.0, D3DFMT\_Q8W8V8U8, D3DFMT\_V16U16 and D3DFMT\_W11V11U10, are passed to the driver as [*FOURCCs*](https://msdn.microsoft.com/library/windows/hardware/ff556280#wdkgloss-fourcc). This means the various bit depth and mask fields of the [**DDPIXELFORMAT**](https://msdn.microsoft.com/library/windows/hardware/ff550274) data structure are not initialized and their values are undefined. Hence, a driver processing these three formats must not rely on the bit count or masks in the pixel format but must compute these as necessary. For example, when computing the pitch of a surface of one of these types the **dwRGBBitCount** field of the pixel format must not be used. All other formats other than YUV, DXT and IHV specific extension formats are mapped to the legacy DDPIXELFORMAT representation when passed to the driver and, therefore, have valid pixel formats and masks in the pixel format data structure.
 
- 
+ 
 
- 
+ 
 
 
 

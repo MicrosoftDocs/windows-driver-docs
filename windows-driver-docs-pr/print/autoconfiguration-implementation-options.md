@@ -1,6 +1,5 @@
 ---
 title: Autoconfiguration Implementation Options
-author: windows-driver-content
 description: Autoconfiguration Implementation Options
 ms.assetid: 78a4e11c-ee6e-4306-b787-2ff7889ff877
 keywords:
@@ -30,11 +29,11 @@ See [Autoconfiguration in an IHV Port Monitor](autoconfiguration-in-an-ihv-port-
 
 **Note**   "Microsoft printer class driver" refers to the Unidrv-based or Pscript5-based printer driver. "Microsoft port monitor" refers to the standard TCP/IP port monitor or the Web Services for Devices (WSD) port monitor.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

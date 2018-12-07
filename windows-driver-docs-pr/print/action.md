@@ -1,6 +1,5 @@
 ---
 title: action element
-author: windows-driver-content
 description: The optional action element describes an action that will be completed when a user clicks a button in the balloon message.
 ms.assetid: dae207ad-072e-4de6-b6a2-f1188ce91065
 keywords: ["action element Print Devices"]
@@ -94,7 +93,7 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>balloonUI</strong>](balloonui.md)</p></td>
+<td><p><a href="balloonui.md" data-raw-source="[&lt;strong&gt;balloonUI&lt;/strong&gt;](balloonui.md)"><strong>balloonUI</strong></a></p></td>
 <td><p></p>
 <p>Provides text that is displayed in the event notification message. This text should provide the user specific details about the printer event.</p></td>
 </tr>
@@ -157,9 +156,9 @@ The following code example shows how to use the **action** element to pass data 
 
 [**balloonUI**](balloonui.md)
 
- 
+ 
 
- 
+ 
 
 
 

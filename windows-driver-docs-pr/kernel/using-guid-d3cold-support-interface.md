@@ -1,6 +1,5 @@
 ---
 title: Using the GUID_D3COLD_SUPPORT_INTERFACE Driver Interface
-author: windows-driver-content
 description: Starting with Windows 8, drivers can call the routines in the GUID_D3COLD_SUPPORT_INTERFACE interface to determine the D3cold capabilities of devices and to enable these devices to use D3cold.
 ms.assetid: 525637E8-B16F-4038-A78D-A47064E36449
 ms.localizationpriority: medium
@@ -49,9 +48,9 @@ If the device can correctly deliver PM\_PME TLPs when the link is turned on, the
 
 However, the driver should not enable the device to enter either D3hot or D3cold if the system firmware (the BIOS) can't guarantee that the PCI Express device-wake mechanisms are correctly handled by the hardware platform. A driver can call the [*GetIdleWakeInfo*](https://msdn.microsoft.com/library/windows/hardware/hh967712) routine to discover whether the firmware claims support for these mechanisms. If a driver uses Kernel-Mode Driver Framework (KMDF) 1.11 or later, a convenient alternative to calling *GetIdleWakeInfo* is to allow the [**WdfDeviceAssignS0IdleSettings**](https://msdn.microsoft.com/library/windows/hardware/ff545903) method to enable the device to idle in the lowest-powered Dx state from which the device can signal a wake event.
 
- 
+ 
 
- 
+ 
 
 
 

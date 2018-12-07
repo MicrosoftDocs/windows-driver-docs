@@ -3,7 +3,6 @@ title: Symbols in the Middle
 description: Symbols in the Middle
 ms.assetid: 0fbf47fc-1216-4eaa-b4b9-96e206194b54
 keywords: ["remote debugging, symbols on third machine"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -38,9 +37,9 @@ windbg -remote npipe:server=BOXB,pipe=NearPipe
 
 The third machine is then used to control the debugging, while the second machine is where the actual processing is done and the symbols are accessed.
 
- 
+ 
 
- 
+ 
 
 
 

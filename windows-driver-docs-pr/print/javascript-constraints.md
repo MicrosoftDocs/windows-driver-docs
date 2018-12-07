@@ -1,6 +1,5 @@
 ---
 title: JavaScript Constraints
-author: windows-driver-content
 description: The v4 printer driver model supports extended constraint and PrintTicket handling derived from the v3 IPrintOemPrintTicketProvider interface.
 ms.assetid: CD2EF726-CF0F-4BB6-9F41-794699568F17
 ms.date: 04/20/2017
@@ -14,7 +13,7 @@ The v4 printer driver model supports a new model for extended constraint and Pri
 
 Instead of using a compiled configuration plug-in however, v4 printer drivers use JavaScript to implement APIs called JavaScript constraints, and the printer driver can implement one or more of them as needed. For more information, see the functions in the **JavaScript Constraint APIs** section at the end of this topic.
 
-JavaScript constraints can be used to augment PrintCapabilties, validate PrintTickets and handle conversion of PrintTicket to DEVMODE and vice versa. However, JavaScript constraints have a few limitations. The following is a list of the main limitations:
+JavaScript constraints can be used to augment PrintCapabilities, validate PrintTickets and handle conversion of PrintTicket to DEVMODE and vice versa. However, JavaScript constraints have a few limitations. The following is a list of the main limitations:
 
 -   Features and options added using CompletePrintCapabilities, as well as constraints specified in validatePrintTicket are not shown in the desktop printer preferences window.
 
@@ -31,7 +30,7 @@ Basic syntactical validation of JavaScript files is supported by opening the Jav
 
 ![javascript syntax error dialog](images/script-host-err.png)
 
-Publically available JavaScript validation tools may also be valuable as an aide in evaluating the style of JavaScript files.
+Publicly available JavaScript validation tools may also be valuable as an aide in evaluating the style of JavaScript files.
 
 Interactive debugging can be enabled by creating the following registry key:
 
@@ -118,7 +117,7 @@ Return value
 | 1            | Indicates that the *printTicket* parameter is a valid PrintTicket for this printer. Equivalent to [S\_PT\_NO\_CONFLICT](https://msdn.microsoft.com/library/windows/desktop/dd162884.aspx).   |
 | 2            | Indicates that the *printTicket* parameter was modified to make it valid. Equivalent to [S\_PT\_CONFLICT\_RESOLVED](https://msdn.microsoft.com/library/windows/desktop/dd162884.aspx).       |
 
- 
+ 
 
 ## completePrintCapabilities function
 
@@ -209,9 +208,9 @@ If a driver does not utilize JavaScript constraints, there is no requirement tha
 
 For more information about how to use JavaScript constraints, see the [Print driver constraints sample](http://go.microsoft.com/fwlink/p/?LinkId=617946).
 
- 
+ 
 
- 
+ 
 
 
 

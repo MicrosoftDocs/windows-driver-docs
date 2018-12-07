@@ -3,7 +3,6 @@ title: findfilelockowner
 description: The findfilelockowner extension attempts to find the owner of a file object lock by examining all threads for a thread that is blocked.
 ms.assetid: 0d6eabf4-e7ac-4536-beab-d3027720efa8
 keywords: ["findfilelockowner Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -48,7 +47,7 @@ Specifies the address of a file object. If *FileObject* is omitted, the extensio
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -61,9 +60,9 @@ This extension is most useful after a critical section timeout in which the thre
 
 The extension takes some time to complete because it walks the stack of all threads in the system until it finds the offending thread.You can stop \` at any point by pressing CTRL+BREAK (in WinDbg) or CTRL+C (in KD).
 
- 
+ 
 
- 
+ 
 
 
 

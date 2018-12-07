@@ -1,7 +1,6 @@
 ---
 Description: The Windows Hardware Lab Kit (HLK) tests can be used for additional testing of Systems, USB host controllers, hubs, and devices. 
 title: Windows Hardware Lab Kit (HLK) Tests for USB
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

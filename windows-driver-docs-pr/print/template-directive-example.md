@@ -1,6 +1,5 @@
 ---
 title: Template Directive Example
-author: windows-driver-content
 description: Template Directive Example
 ms.assetid: ae8fe5e6-ee79-424d-80b3-fd6300257977
 keywords:
@@ -43,9 +42,9 @@ The construct instances that are bound to the host template by this production c
 
 If the host template inherits from other templates, the productions that are defined in the inherited templates are also evaluated and must also be **TRUE** for the production in the host template to evaluate to **TRUE**.
 
- 
+ 
 
- 
+ 
 
 
 

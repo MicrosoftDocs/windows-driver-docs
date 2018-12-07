@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_TCP_OFFLOAD_CAPABILITIES
-author: windows-driver-content
 description: WDI_TLV_TCP_OFFLOAD_CAPABILITIES is a TLV that contains TCP/IP offload capabilities.
 ms.assetid: 9B3428CC-C9B4-4769-BD97-F25920C4AAF2
 ms.date: 07/18/2017
@@ -61,9 +60,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

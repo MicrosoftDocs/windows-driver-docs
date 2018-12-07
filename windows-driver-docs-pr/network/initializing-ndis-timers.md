@@ -22,9 +22,9 @@ To allocate and initialize a timer, your driver should call the [**NdisAllocateT
 
 To free a timer object, your driver should call the [**NdisFreeTimerObject**](https://msdn.microsoft.com/library/windows/hardware/ff562605) function.
 
- 
+ 
 
- 
+ 
 
 
 

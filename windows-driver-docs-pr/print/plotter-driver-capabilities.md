@@ -1,6 +1,5 @@
 ---
 title: Plotter Driver Capabilities
-author: windows-driver-content
 description: Plotter Driver Capabilities
 ms.assetid: 9fc32297-504c-453d-967b-ca4a4e56eaa2
 keywords:
@@ -26,9 +25,9 @@ The Microsoft Plotter Driver (MSPlot) provides the following capabilities:
 
 To provide support for a new HPGL/2-compliant device type, all you need to do is provide a minidriver that describes the device.
 
- 
+ 
 
- 
+ 
 
 
 

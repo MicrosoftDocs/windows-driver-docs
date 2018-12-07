@@ -3,7 +3,6 @@ title: Bug Check 0x5 INVALID_PROCESS_ATTACH_ATTEMPT
 description: The INVALID_PROCESS_ATTACH_ATTEMPT bug check has a value of 0x00000005.
 ms.assetid: 72efb88f-1bf7-4552-b44e-4ecb04754b7d
 keywords: ["Bug Check 0x5 INVALID_PROCESS_ATTACH_ATTEMPT", "INVALID_PROCESS_ATTACH_ATTEMPT"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -48,7 +47,7 @@ This bug check appears very infrequently.
 </tr>
 <tr class="odd">
 <td align="left"><p>3</p></td>
-<td align="left"><p>The value of the thread's APC state index.</p></td>
+<td align="left"><p>The value of the thread&#39;s APC state index.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>4</p></td>
@@ -57,16 +56,16 @@ This bug check appears very infrequently.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
 
 This bug check can occur if the driver calls the **KeAttachProcess** function and the thread is already attached to another process. It is better to use the **KeStackAttachProcess** function. If the current thread was already attached to another process, the **KeStackAttachProcess** function saves the current APC state before it attaches the current thread to the new process.
 
- 
+ 
 
- 
+ 
 
 
 

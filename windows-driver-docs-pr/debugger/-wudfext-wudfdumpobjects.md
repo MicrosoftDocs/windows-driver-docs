@@ -3,7 +3,6 @@ title: wudfext.wudfdumpobjects
 description: The wudfext.wudfdumpobjects extension displays outstanding UMDF objects.
 ms.assetid: 2ede7f2e-124c-494d-9188-5a28617a0bdb
 keywords: ["wudfext.wudfdumpobjects Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -48,7 +47,7 @@ Specifies the address to track leaked objects. This address is displayed in the 
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -110,9 +109,9 @@ WdfTypeMemoryObject    Object: 0x030ecfb0, Interface: 0x030ecff0
 WdfTypeMemoryObject    Object: 0x030eefb0, Interface: 0x030eeff0
 ```
 
- 
+ 
 
- 
+ 
 
 
 

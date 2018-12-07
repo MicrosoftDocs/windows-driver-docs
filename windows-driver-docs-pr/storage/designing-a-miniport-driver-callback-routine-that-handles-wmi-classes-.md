@@ -1,6 +1,5 @@
 ---
 title: Design Miniport Callback Routine to Handle WMI Classes
-author: windows-driver-content
 description: Designing a Miniport Driver Callback Routine that Handles WMI Classes with Data Fields
 ms.assetid: 6e08f9c1-e541-4e5f-8c99-f81d5793cc21
 keywords:
@@ -57,9 +56,9 @@ You can cast this structure declaration to the input and output buffers of the S
 
 Before returning, your callback routine should call [**ScsiPortWmiPostProcess**](https://msdn.microsoft.com/library/windows/hardware/ff564796). This SCSI Port WMI library routine updates the request context with information, such as the status of the request and the size of the return data. For more information about the data stored in the request context, see [**SCSIWMI\_REQUEST\_CONTEXT**](https://msdn.microsoft.com/library/windows/hardware/ff564946).
 
- 
+ 
 
- 
+ 
 
 
 

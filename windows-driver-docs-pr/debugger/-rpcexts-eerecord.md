@@ -3,7 +3,6 @@ title: rpcexts.eerecord
 description: The rpcexts.eerecord extension displays the contents of an extended error information record.
 ms.assetid: 3c861842-d3ac-4c7d-88e3-d00233189b74
 keywords: ["rpcexts.eerecord Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -48,7 +47,7 @@ Specifies the address of the extended error record.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -74,9 +73,9 @@ Parameter 0:(Long value) : -30976 (0xFFFF8700)
 Parameter 1:(Long value) : 16777343 (0x100007F)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: Resource Time Outs
 description: Resource Time Outs
 ms.assetid: ea5b61e0-cb51-4da2-9596-ab85f7b01bed
 keywords: ["resource time outs"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -97,9 +96,9 @@ fec6bef4 77f716ab 0012dd64 0012dd3c 00000000 ntoskrnl!_KiSystemService+0x83
 0012dd20 00000000 00000000 00000000 00000000 ntdll!_ZwQueryAttributesFile+0xb 
 ```
 
- 
+ 
 
- 
+ 
 
 
 

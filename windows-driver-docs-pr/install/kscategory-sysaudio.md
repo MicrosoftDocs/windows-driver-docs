@@ -43,7 +43,7 @@ The KSCATEGORY_SYSAUDIO [device interface class](https://msdn.microsoft.com/libr
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -65,9 +65,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

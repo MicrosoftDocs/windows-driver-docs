@@ -3,7 +3,6 @@ title: Debugging with Floating and Docked Windows
 description: Debugging with Floating and Docked Windows
 ms.assetid: 2b3e67de-576e-4cbb-bdf1-58a31cea733c
 keywords: ["docking windows, debugging", "floating windows, debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -36,9 +35,9 @@ Press CTRL+TAB to switch between debugging information windows. By pressing thes
 
 The ALT+TAB shortcut keys are the standard Microsoft Windows shortcut keys to switch between the windows on the desktop. You can use these shortcut keys to switch between the WinDbg window and any additional docks that you have created. You can also make a dock active by clicking its button in the Windows taskbar.
 
- 
+ 
 
- 
+ 
 
 
 

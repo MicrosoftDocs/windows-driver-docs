@@ -1,6 +1,5 @@
 ---
 title: WDF Architecture
-author: windows-driver-content
 description: WDF Architecture
 ms.assetid: e5e2ed4a-5faf-4879-965f-7316fe64edf9
 keywords:
@@ -53,9 +52,9 @@ The framework defines several object types that framework-based drivers use:
 
 For a list of all of the objects that the framework defines, see [Summary of Framework Objects](summary-of-framework-objects.md).
 
- 
+ 
 
- 
+ 
 
 
 

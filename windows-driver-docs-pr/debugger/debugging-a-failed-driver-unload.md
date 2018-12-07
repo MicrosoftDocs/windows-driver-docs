@@ -3,7 +3,6 @@ title: Debugging a Failed Driver Unload
 description: Debugging a Failed Driver Unload
 ms.assetid: df4b6082-8236-4a7f-80f4-6c33dc8e887a
 keywords: ["failed driver unload", "driver unload debugging", "unload failures"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -46,9 +45,9 @@ Here is an example of how to debug this problem. Although **DeviceObject** is us
 
 5.  Look for the mismatched reference/dereference pair -- specifically, a missing dereference. (Note that **ObReferenceObject** is implemented as a macro inside the kernel.)
 
- 
+ 
 
- 
+ 
 
 
 

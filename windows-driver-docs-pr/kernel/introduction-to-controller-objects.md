@@ -1,6 +1,5 @@
 ---
 title: Introduction to Controller Objects
-author: windows-driver-content
 description: Introduction to Controller Objects
 ms.assetid: a46732a7-1e60-41d5-96e9-d5284c000af1
 keywords: ["controller objects WDK kernel , about controller objects", "ControllerControl routines, about ControllerControl routines", "overlapped I/O WDK kernel", "I/O WDK kernel , overlaps"]
@@ -18,7 +17,7 @@ As its name suggests, a controller object usually represents a physical device c
 
 **Note**   Use of controller objects is not supported in WDM drivers.
 
- 
+ 
 
 Generally, drivers use controller objects to synchronize operations to attached devices if the following criteria hold:
 
@@ -50,9 +49,9 @@ Moreover, using a controller object is a relatively easy way to synchronize I/O 
 
 However, some devices that are designed to overlap I/O operations, such as full-duplex serial controllers or bus-master adapters, generally have drivers that set up internal queues for IRPs.
 
- 
+ 
 
- 
+ 
 
 
 

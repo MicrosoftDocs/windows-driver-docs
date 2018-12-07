@@ -1,6 +1,5 @@
 ---
 title: Vendor-Extended Commands
-author: windows-driver-content
 description: Vendor-Extended Commands
 ms.assetid: 3d360a9f-5a65-452b-a8ad-080dc7d8c8f5
 ms.date: 04/20/2017
@@ -80,11 +79,11 @@ The first parameter to **IWiaItemExtras::Escape** is the combination of one or m
 </tbody>
 </table>
 
- 
+ 
 
 **Note**   When an application calls **IWiaItemExtras::Escape** with the ESCAPE\_PTP\_CLEAR\_STALL flag as the first argument to this method, the driver issues the PTP **Get Device Status** request to determine whether any endpoints are in a STALL condition. If the **Get Device Status** command succeeds, the driver issues the [**IOCTL\_RESET\_PIPE**](https://msdn.microsoft.com/library/windows/hardware/ff542872) USB control code for each such endpoint. If the **Get Device Status** command fails, the driver issues a PTP **Device Reset** request. **Get Device Status** and **Device Reset** are described in the PIMA 15740:2000 standard, First Edition, and Revision 1.0 of the USB Still Image Capture Device Definition (USB SICDD).
 
- 
+ 
 
 The following sample code illustrates how to use the vendor-extended command interface. Be sure that your code includes the *ptpusd.h* header, because it contains the definitions of the escape codes and other constants, and the [**PTP\_VENDOR\_DATA\_IN**](https://msdn.microsoft.com/library/windows/hardware/ff546450) and [**PTP\_VENDOR\_DATA\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff546452) structures. The **IWiaItemExtras** interface is obtained by using a call to **QueryInterface** on the root item. A pointer to this root item, *pIWiaRootItem*, can be obtained, for example, by a call to **IWiaDevMgr::SelectDeviceDlg** (described in the Microsoft Windows SDK documentation).
 
@@ -151,9 +150,9 @@ if (FAILED(hr)) {
 //
 ```
 
- 
+ 
 
- 
+ 
 
 
 

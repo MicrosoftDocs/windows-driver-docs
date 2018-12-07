@@ -1,6 +1,5 @@
 ---
 title: Master Units
-author: windows-driver-content
 description: Master Units
 ms.assetid: 6c3abf16-1206-4b90-a7e9-c8a581191502
 keywords:
@@ -28,7 +27,7 @@ To determine a plane's master units, calculate the least common multiple (LCM) o
 
 **Important**   Both of the master unit values and the vertical and horizontal resolutions should be a multiple of the number of pins in the print head (that is, the **PinsPerPhysPass** value). If this condition is not met, it is possible that extra blank lines will be produced for certain paper sizes.
 
- 
+ 
 
 To specify a printer's master units, use the \***MasterUnits** attribute. The attribute's format is as follows:
 
@@ -43,7 +42,7 @@ To specify a printer's master units, use the \***MasterUnits** attribute. The at
 </tbody>
 </table>
 
- 
+ 
 
 where *X\_Denominator* is the LCM of the denominators for the horizontal resolutions, and *Y\_Denominator* is the LCM of the denominators for the vertical resolutions. The following GPD entry specifies the master units for the example:
 
@@ -68,9 +67,9 @@ If your printer supports [cursor commands](cursor-commands.md) for moving the cu
 
 When calculating this printer's master units, 1/60th of an inch must be included in the horizontal and vertical master unit calculations.
 
- 
+ 
 
- 
+ 
 
 
 

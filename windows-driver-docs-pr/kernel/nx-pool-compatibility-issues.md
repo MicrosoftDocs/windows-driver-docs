@@ -1,6 +1,5 @@
 ---
 title: NX Pool Compatibility Issues
-author: windows-driver-content
 description: When you use the NX nonpaged pool in driver binaries for Windows 8, you will find compatibility issues if you run these binaries on earlier versions of Windows.
 ms.assetid: 652AE9A2-D733-4EC2-9D49-B95DDABE42B1
 ms.localizationpriority: medium
@@ -45,9 +44,9 @@ By using one of these three approaches, most drivers can be ported quickly and w
 
 Avoid simply replacing all instances of **NonPagedPool** in your driver code with **NonPagedPoolExecute**. Use the **NonPagedPoolExecute** pool type only for pool allocations that must be executable (for example, to run code produced by a just-in-time, or JIT, compiler).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_PHY_INFO
-author: windows-driver-content
 description: WDI_TLV_PHY_INFO is a TLV that contains PHY information.
 ms.assetid: 3A363FDC-FE79-42C4-AD19-A6B960857CBD
 ms.date: 07/18/2017
@@ -33,7 +32,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 | [**WDI\_TLV\_PHY\_TX\_POWER\_LEVEL\_LIST**](wdi-tlv-phy-tx-power-level-list.md) |                                |          | A list of TX power levels. |
 | [**WDI\_TLV\_PHY\_DATA\_RATE\_LIST**](wdi-tlv-phy-data-rate-list.md)            |                                |          | A list of data rates.      |
 
- 
+ 
 
 Requirements
 ------------
@@ -59,9 +58,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

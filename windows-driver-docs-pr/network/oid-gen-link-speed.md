@@ -1,6 +1,5 @@
 ---
 title: OID_GEN_LINK_SPEED
-author: windows-driver-content
 description: As a query, the OID_GEN_LINK_SPEED OID specifies the maximum speed of the NIC.
 ms.assetid: f8ee887a-969e-4167-9b39-9ee6ef8b1fbc
 ms.date: 08/08/2017
@@ -61,9 +60,9 @@ Requirements
 
 [OID\_GEN\_LINK\_STATE](oid-gen-link-state.md)
 
- 
+ 
 
- 
+ 
 
 
 

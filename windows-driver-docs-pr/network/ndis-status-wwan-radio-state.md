@@ -1,6 +1,5 @@
 ---
 title: NDIS_STATUS_WWAN_RADIO_STATE
-author: windows-driver-content
 description: Miniport drivers use the NDIS_STATUS_WWAN_RADIO_STATE notification to inform the MB Service when the user changes the hardware radio power, or the device's software-based radio power state changes in response to an OID query or set request of OID_WWAN_RADIO_STATE. Miniport drivers can also send unsolicited events with this notification.This notification uses the NDIS_WWAN_RADIO_STATE structure.
 ms.assetid: 77c10b2a-ab43-4349-947a-e89c7af27f68
 ms.date: 08/08/2017
@@ -50,9 +49,9 @@ Requirements
 
 [OID\_WWAN\_RADIO\_STATE](oid-wwan-radio-state.md)
 
- 
+ 
 
- 
+ 
 
 
 

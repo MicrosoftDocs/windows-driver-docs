@@ -3,7 +3,6 @@ title: PLMDebug
 description: PLMDebug.exe is a tool that enables you to use the Windows debugger to debug Windows app, which run under Process Lifecycle Management (PLM). 
 ms.assetid: 68BE8F5D-6425-43E2-B5BC-C1D35614AB32
 keywords: ["PLMDebug Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -21,7 +20,7 @@ PLMDebug.exe is a tool that enables you to use the Windows debugger to debug Win
 
 **Tip**  With Windows 10, version 1607 or later, you can use the UWP commands, such as .createpackageapp to debug UWP apps. For more information see [Debugging a UWP app using WinDbg](debugging-a-uwp-app-using-windbg.md).
 
- 
+ 
 
 **Where to get PLMDebug**
 
@@ -166,9 +165,9 @@ Finally, decrement the debug reference count for the package.
 
 [Tools Included in Debugging Tools for Windows](extra-tools.md)
 
- 
+ 
 
- 
+ 
 
 
 

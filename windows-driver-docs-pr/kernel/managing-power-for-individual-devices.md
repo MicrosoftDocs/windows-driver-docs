@@ -1,6 +1,5 @@
 ---
 title: Managing Power for Individual Devices
-author: windows-driver-content
 description: Managing Power for Individual Devices
 ms.assetid: 95c7e900-5d51-4eb7-8780-1c40befa3599
 keywords: ["power management WDK kernel , device management", "device power management WDK kernel", "system power states WDK kernel", "conserving power WDK kernel", "change power states WDK kernel", "IRPs WDK power management", "I/O request packets WDK power management"]
@@ -34,9 +33,9 @@ This section covers the following topics related to device power management:
 
 [Supporting D3cold in a Driver](supporting-d3cold-in-a-driver.md)
 
- 
+ 
 
- 
+ 
 
 
 

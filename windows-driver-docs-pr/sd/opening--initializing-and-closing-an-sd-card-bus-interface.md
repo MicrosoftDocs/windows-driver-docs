@@ -1,6 +1,5 @@
 ---
 title: Opening, Initializing and Closing an SD Card Bus Interface
-author: windows-driver-content
 description: Opening, Initializing and Closing an SD Card Bus Interface
 ms.assetid: 986a352e-c479-444d-9c65-7958dd638bbb
 keywords:
@@ -69,9 +68,9 @@ if (pDevExt->BusInterface.InterfaceDereference) {
 
 The **SdBusOpenInterface** call stores a pointer to the interface dereference routine in the SDBUS\_INTERFACE\_STANDARD structure. However, drivers should verify that the pointer is not **NULL** before attempting to call the routine.
 
- 
+ 
 
- 
+ 
 
 
 

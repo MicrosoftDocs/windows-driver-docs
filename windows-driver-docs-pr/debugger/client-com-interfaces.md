@@ -3,7 +3,6 @@ title: Debug Engine Interfaces
 description: Debug Engine Interfaces
 ms.assetid: 42ff2423-9bca-402d-8836-8679cff1f445
 keywords: ["Client COM Interfaces"]
-ms.author: domars
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -82,9 +81,9 @@ This section covers the following interfaces:
 
 -   [**IDebugSystemObjects4**](https://msdn.microsoft.com/library/windows/hardware/ff550893)
 
- 
+ 
 
- 
+ 
 
 
 

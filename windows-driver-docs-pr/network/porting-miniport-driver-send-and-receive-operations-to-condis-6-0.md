@@ -30,9 +30,9 @@ You can also learn more about porting CoNDIS send and receive operations in the 
 
 [Porting CoNDIS Miniport Driver Receive Data Handling](porting-condis-miniport-driver-receive-data-handling.md)
 
- 
+ 
 
- 
+ 
 
 
 

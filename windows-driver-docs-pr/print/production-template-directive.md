@@ -1,6 +1,5 @@
 ---
 title: Production Template Directive
-author: windows-driver-content
 description: Production Template Directive
 ms.assetid: 5deae299-389a-4de4-8f2f-7c247f045ada
 keywords:
@@ -43,9 +42,9 @@ The following algorithm defines the production directive values:
 
 \*Production directives can be nested to arbitrary depth.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Registry Settings
-author: windows-driver-content
 description: Registry Settings
 ms.assetid: a2536911-0467-4bd0-a63b-55341f0d7567
 keywords:
@@ -34,9 +33,9 @@ Original data supplied by the OEM and installed from an INF file (described abov
 
 The user values, current settings, and saved settings are all stored in the registry under the path belonging to the "current" joystick driver. Each of the joystick devices for which a driver is installed has a key under the path REGSTR\_PATH\_JOYCONFIG that has the form Msjstick.drv&lt;*xxxx*&gt;, where the *xxxx* is a four-digit number used to keep the key name unique. The number relates to the number of multimedia (sound, video and game controller) drivers that have been installed. At boot time, Msjstick.drv is initialized to the configuration for each of the game controller drivers. Since it can only deal with one configuration at a time, each one replaces the last and the "current" driver is the last one to be initialized. This means that the user is likely to lose all the current settings when a new driver is installed, and a minidriver cannot be structured on the assumption that the path to these registry values will always be the same.
 
- 
+ 
 
- 
+ 
 
 
 

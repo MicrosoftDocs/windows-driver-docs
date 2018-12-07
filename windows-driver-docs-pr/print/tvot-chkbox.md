@@ -1,6 +1,5 @@
 ---
 title: TVOT\_CHKBOX
-author: windows-driver-content
 description: TVOT\_CHKBOX
 ms.assetid: 66e9879e-c101-4367-b1ee-0746e6a71bc3
 keywords: ["TVOT_CHKBOX Print Devices"]
@@ -95,7 +94,7 @@ Otherwise, **BegCtrlID** must contain the first control identifier of a sequenti
 </tbody>
 </table>
 
- 
+ 
 
 For additional information, see [Customizing CPSUI-Supported Window Controls](https://msdn.microsoft.com/library/windows/hardware/ff547296).
 
@@ -115,9 +114,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

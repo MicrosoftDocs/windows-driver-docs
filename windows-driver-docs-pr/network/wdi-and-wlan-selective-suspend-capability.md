@@ -31,9 +31,9 @@ The WDI driver exposes two callback functions for the LE.
 
 -   [**IdleNotificationConfirm**](https://msdn.microsoft.com/library/windows/hardware/mt297601)
 
- 
+ 
 
- 
+ 
 
 
 

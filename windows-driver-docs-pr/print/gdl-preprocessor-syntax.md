@@ -1,6 +1,5 @@
 ---
 title: GDL Preprocessor Syntax
-author: windows-driver-content
 description: GDL Preprocessor Syntax
 ms.assetid: 14e9a595-3b6f-43b9-b670-7c9324619974
 keywords:
@@ -27,11 +26,11 @@ GDL preprocessor directives must adhere to the following rules:
 
 **Note**   GDL syntax is more relaxed than GPD syntax. If you are writing for both parsers, you should follow the stricter syntax that is required for GPD.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Using Common-Buffer System DMA
-author: windows-driver-content
 description: Using Common-Buffer System DMA
 ms.assetid: ee060aa4-2db4-4bd2-b107-b71acced97fd
 keywords: ["system DMA WDK kernel , common buffer", "common buffer DMA WDK kernel", "DMA transfers WDK kernel , common buffer", "AllocateCommonBuffer", "auto-initialize mode WDK DMA", "continuous DMA WDK kernel"]
@@ -14,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-A driver that uses a system DMA controller's auto-initialize mode must allocate memory for a buffer into which or from which DMA transfers can be carried out. The driver calls [**AllocateCommonBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff540575) to get this buffer, typically from the [*DispatchPnP*](https://msdn.microsoft.com/library/windows/hardware/ff543341) routine that handles an [**IRP\_MN\_START\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551749) request. The following figure shows how a driver allocates the buffer and maps its virtual address range to system physical memory.
+A driver that uses a system DMA controller's auto-initialize mode must allocate memory for a buffer into which or from which DMA transfers can be carried out. The driver calls [**AllocateCommonBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff540575) to get this buffer, typically from the [*DispatchPnP*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine that handles an [**IRP\_MN\_START\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551749) request. The following figure shows how a driver allocates the buffer and maps its virtual address range to system physical memory.
 
 ![diagram illustrating how a driver allocates a common buffer for system dma](images/3hlsysbf.png)
 
@@ -54,9 +53,9 @@ The adapter object pointer returned by **IoGetDmaAdapter** is a required paramet
 
 Individual drivers call this sequence of support routines at different points, depending on how each driver is implemented to service its device. For example, one driver's [*StartIo*](https://msdn.microsoft.com/library/windows/hardware/ff563858) routine might make the call to **AllocateAdapterChannel**, another driver might make this call from a routine that removes IRPs from a driver-created interlocked queue, and still another driver might make this call when its subordinate DMA device indicates it is ready to transfer data.
 
- 
+ 
 
- 
+ 
 
 
 

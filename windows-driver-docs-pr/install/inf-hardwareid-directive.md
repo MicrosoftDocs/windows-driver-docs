@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 **Note**  The **HardwareId** directive is only supported within an *Autorun.inf* file. This directive must not be used within the INF files that are used for PnP device installations.
 
- 
+ 
 
 Starting with Windows Vista, the Found New Hardware Wizard and Hardware Update Wizard support INF **HardwareId** directives in the **\[DeviceInstall\]** section of an *Autorun.inf* file. The author of *Autorun.inf* can use these **HardwareId** directives to specify Plug and Play (PnP) hardware identifiers (IDs) of the devices for which the AutoRun-enabled application provides and installs drivers.
 
@@ -51,9 +51,9 @@ The Found New Hardware Wizard does not determine whether the application install
 
 Although there may be multiple **HardwareId** directives within the **\[DeviceInstall\]** section of an *Autorun.inf* file, each directive should specify a unique PnP hardware ID.
 
- 
+ 
 
- 
+ 
 
 
 

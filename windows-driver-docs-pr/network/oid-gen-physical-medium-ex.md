@@ -1,6 +1,5 @@
 ---
 title: OID_GEN_PHYSICAL_MEDIUM_EX
-author: windows-driver-content
 description: As a query, the OID_GEN_PHYSICAL_MEDIUM_EX OID specifies the types of physical media that a miniport adapter supports.
 ms.assetid: cbac8c9b-d7fe-4588-8a64-599d04a77a72
 ms.date: 08/08/2017
@@ -23,7 +22,7 @@ The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://msdn.mi
 
 **Note**  The difference between OID\_GEN\_PHYSICAL\_MEDIUM\_EX and [OID\_GEN\_PHYSICAL\_MEDIUM](oid-gen-physical-medium.md) is that the OID\_GEN\_PHYSICAL\_MEDIUM\_EX version does not override the **NdisPhysicalMedium802\_3** type as **NdisPhysicalMediumUnspecified** whereas OID\_GEN\_PHYSICAL\_MEDIUM still does. We recommend that all 6.x drivers use the EX version. OID\_GEN\_PHYSICAL\_MEDIUM\_EX is exposed through a WMI GUID.
 
- 
+ 
 
 Miniport drivers report a physical media type to differentiate their physical media from media that they declared to support in the [OID\_GEN\_MEDIA\_SUPPORTED](oid-gen-media-supported.md) OID query.
 
@@ -62,9 +61,9 @@ Requirements
 
 [OID\_GEN\_PHYSICAL\_MEDIUM](oid-gen-physical-medium.md)
 
- 
+ 
 
- 
+ 
 
 
 

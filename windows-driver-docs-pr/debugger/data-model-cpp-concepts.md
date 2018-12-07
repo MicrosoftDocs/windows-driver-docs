@@ -1,7 +1,6 @@
 ---
 title: Debugger Data Model C++ Concepts
 description: This topic describes concepts in Debugger C++ Data Model.
-ms.author: domars
 ms.date: 10/04/2018
 ---
 
@@ -343,9 +342,9 @@ The NotifyDestruct method on a dynamic concept provider is a callback made by th
 [Debugger Data Model C++ Scripting](data-model-cpp-scripting.md)
 
 
- 
+ 
 
- 
+ 
 
 
 

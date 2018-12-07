@@ -1,6 +1,5 @@
 ---
 title: NDIS_STATUS_MEDIA_CONNECT
-author: windows-driver-content
 description: The NDIS_STATUS_MEDIA_CONNECT status indicates that the status of a device's network connection has changed from disconnected to connected.
 ms.assetid: de03d265-c8bf-4b7d-bfff-f583fcf08904
 ms.date: 07/18/2017
@@ -34,7 +33,7 @@ Requirements
 <tbody>
 <tr class="odd">
 <td><p>Version</p></td>
-<td><p>Not supported in NDIS 6.0 and later (use [<strong>NDIS_STATUS_LINK_STATE</strong>](ndis-status-link-state.md) instead). Supported only for NDIS 5.1 drivers in Windows Vista and Windows XP.</p></td>
+<td><p>Not supported in NDIS 6.0 and later (use <a href="ndis-status-link-state.md" data-raw-source="[&lt;strong&gt;NDIS_STATUS_LINK_STATE&lt;/strong&gt;](ndis-status-link-state.md)"><strong>NDIS_STATUS_LINK_STATE</strong></a> instead). Supported only for NDIS 5.1 drivers in Windows Vista and Windows XP.</p></td>
 </tr>
 <tr class="even">
 <td><p>Header</p></td>
@@ -50,9 +49,9 @@ Requirements
 
 [**NDIS\_STATUS\_MEDIA\_DISCONNECT**](ndis-status-media-disconnect.md)
 
- 
+ 
 
- 
+ 
 
 
 

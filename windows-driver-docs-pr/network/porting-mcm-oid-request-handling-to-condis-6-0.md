@@ -26,9 +26,9 @@ To send an OID request for call manager parameters to an MCM, a CoNDIS 6.0 clien
 
 For more information about MCM OID requests, see [CoNDIS MCM OID Requests](condis-mcm-oid-requests.md).
 
- 
+ 
 
- 
+ 
 
 
 

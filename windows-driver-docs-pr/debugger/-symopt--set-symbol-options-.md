@@ -3,7 +3,6 @@ title: .symopt (Set Symbol Options)
 description: The .symopt command sets or displays the symbol options.
 ms.assetid: 0793baa3-14f7-48df-8773-736b6a5470e6
 keywords: [".symopt (Set Symbol Options) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -60,7 +59,7 @@ Specifies the symbol options to be changed. *Flags* must be the sum of the bit f
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -71,9 +70,9 @@ Remarks
 
 Without any arguments, **.symopt** displays the current symbol options.
 
- 
+ 
 
- 
+ 
 
 
 

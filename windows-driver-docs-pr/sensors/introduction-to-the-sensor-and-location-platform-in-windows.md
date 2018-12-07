@@ -1,6 +1,5 @@
 ---
 title: Introduction to the Sensor and Location Platform in Windows
-author: windows-driver-content
 description: Introduction to the Sensor and Location Platform in Windows
 ms.assetid: 62e945e5-78a1-4eb6-ad59-b30cf5e3d5ad
 ms.date: 04/20/2017
@@ -52,9 +51,9 @@ Built on the sensor platform, the Location API provides an easy way to retrieve 
 
 Windows includes a control panel that allows computer users to enable or disable location settings. Because thesesettings can expose sensitive data, this user interface gives users control over whether programs have access to their location.
 
- 
+ 
 
- 
+ 
 
 
 

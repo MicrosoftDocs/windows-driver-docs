@@ -66,11 +66,11 @@ The following sections describe the CCD APIs in more detail:
 
 **Note**   In addition to using the CCD APIs to set up the desktop display, hardware vendors must modify their Windows 7 [Windows Display Driver Model (WDDM)](windows-vista-display-driver-model-design-guide.md) display miniport drivers to support CCD. For more information about supporting CCD in display miniport drivers, see [CCD DDIs](ccd-ddis.md).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

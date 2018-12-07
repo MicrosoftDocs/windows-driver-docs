@@ -1,6 +1,5 @@
 ---
 title: Performing Completion Processing for an I/O Operation
-author: windows-driver-content
 description: Performing Completion Processing for an I/O Operation
 ms.assetid: 7e65c21c-d38f-4804-8c07-6cd89f6a6dd6
 keywords:
@@ -26,9 +25,9 @@ This section includes the following topic:
 
 [Ensuring that Completion Processing is Performed at Safe IRQL](ensuring-that-completion-processing-is-performed-at-safe-irql.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: pplookaside
 description: The pplookaside command displays Lookaside Lists for processors in the target computer.
 ms.assetid: AA5DD47A-849F-462E-AFA6-E743E9737E1A
 keywords: ["pplookaside Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -31,9 +30,9 @@ The address of the processor.
 
 ### <span id="DLL"></span><span id="dll"></span>DLL
 
- 
+ 
 
- 
+ 
 
 
 

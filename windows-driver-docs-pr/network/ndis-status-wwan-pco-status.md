@@ -1,6 +1,5 @@
 ---
 title: NDIS_STATUS_WWAN_PCO_STATUS
-author: windows-driver-content
 description: Miniport drivers use the NDIS_STATUS_WWAN_PCO_STATUS notification to inform the MB service about the completion of a previous OID_WWAN_PCO query request.
 ms.assetid: E0F70FAE-B7C6-4BE4-B89A-88084463EEA5
 keywords:

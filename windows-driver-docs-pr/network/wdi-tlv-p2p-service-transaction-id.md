@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_P2P_SERVICE_TRANSACTION_ID
-author: windows-driver-content
 description: WDI_TLV_P2P_SERVICE_TRANSACTION_ID is a TLV that contains the Service transaction ID to be used for the ANQP query request.
 ms.assetid: 93CBE158-4595-40FC-A574-B818B2324DBF
 ms.date: 07/18/2017
@@ -31,7 +30,7 @@ The size (in bytes) of a UINT8.
 |-------|-------------------------------------------------------------------|
 | UINT8 | The Service transaction ID to be used for the ANQP query request. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -26,9 +26,9 @@ In addition to the offloaded state object, an offload context area must also con
 
 -   Any additional internal information that the offload target uses to keep track of the state object or associated resources
 
- 
+ 
 
- 
+ 
 
 
 

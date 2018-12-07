@@ -2,7 +2,6 @@
 title: Language Specification 1
 description: Language Specification 1
 ms.assetid: 7c770200-ed2a-47e0-8389-e79a5624a3dd
-ms.author: domars
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -188,9 +187,9 @@ all future attempts to obtain source using a file entry that contains "TOOLS\_PR
 
 You can also add error indicators on the debugger client by editing [Srcsrv.ini](the-srcsrv-ini-file.md). See the included sample version of srcsrv.ini for details.
 
- 
+ 
 
- 
+ 
 
 
 

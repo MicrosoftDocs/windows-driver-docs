@@ -3,7 +3,6 @@ title: Bug Check 0x10E VIDEO_MEMORY_MANAGEMENT_INTERNAL
 description: The VIDEO_MEMORY_MANAGEMENT_INTERNAL bug check has a value of 0x0000010E. This indicates that the video memory manager has encountered a condition that it is unable to recover from.
 ms.assetid: 2fb29098-084c-462a-bb06-789e73924d16
 keywords: ["Bug Check 0x10E VIDEO_MEMORY_MANAGEMENT_INTERNAL", "VIDEO_MEMORY_MANAGEMENT_INTERNAL"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -132,7 +131,7 @@ Parameter 1 is the only parameter of interest; this identifies the exact violati
 </tr>
 <tr class="even">
 <td align="left"><p>0x18</p></td>
-<td align="left"><p>An attempt to release a pinned allocation's resource failed.</p></td>
+<td align="left"><p>An attempt to release a pinned allocation&#39;s resource failed.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x19</p></td>
@@ -153,7 +152,7 @@ Parameter 1 is the only parameter of interest; this identifies the exact violati
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -165,9 +164,9 @@ Resolution
 
 If the problem persists, check Windows Update for an updated video driver.
 
- 
+ 
 
- 
+ 
 
 
 

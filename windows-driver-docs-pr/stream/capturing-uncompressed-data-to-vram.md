@@ -1,6 +1,5 @@
 ---
 title: Capturing Uncompressed Data to VRAM
-author: windows-driver-content
 description: Capturing Uncompressed Data to VRAM
 ms.assetid: efec607d-3337-40a5-812c-57292f201d54
 keywords:
@@ -25,9 +24,9 @@ AVStream minidrivers that are VRAM-enabled can capture uncompressed data by prov
 
 The *Capture.cpp* file of the [AVStream Simulated Hardware Sample Driver (AVSHwS)](http://go.microsoft.com/fwlink/p/?linkid=256083) contains examples of the items in the preceding list.
 
- 
+ 
 
- 
+ 
 
 
 

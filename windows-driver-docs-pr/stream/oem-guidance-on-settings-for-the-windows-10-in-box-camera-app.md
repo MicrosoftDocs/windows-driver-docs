@@ -1,6 +1,5 @@
 ---
 title: OEM guidance on settings for the Windows 10 in-box camera app
-author: windows-driver-content
 description: The new in-box camera app for Windows 10 is designed to work well with the wide variety of hardware supported by the Windows platform without any configuration required by the OEM.
 ms.assetid: 567D2083-9837-44A6-97FB-AD0C9B9EB067
 ms.date: 04/20/2017
@@ -68,11 +67,11 @@ This includes the following settings:
 | Custom property settings | The Windows 10 camera app no longer supports the setting of custom properties by property GUID and value.                                                                                                      |
 | Custom menu Items        | The Windows 10 camera app no longer supports the addition of custom menu items.                                                                                                                                |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

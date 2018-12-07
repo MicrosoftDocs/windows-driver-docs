@@ -1,6 +1,5 @@
 ---
 title: Accessing Data Buffers in WDF Drivers (KMDF or UMDF)
-author: windows-driver-content
 description: When a Windows Driver Frameworks (WDF) driver receives a read, write, or device I/O control request, the request object contains either an input buffer, an output buffer, or both.
 ms.assetid: ceba2279-b0fb-4261-b439-723d5dad967b
 keywords:
@@ -136,9 +135,9 @@ UMDF doesn't support neither buffered nor direct I/O type buffers, so a UMDF dri
 
 However, if the framework receives such buffers for read or write from the I/O manager, it makes them available to a UMDF driver as buffered I/O or direct I/O, depending on the access method selected by the driver. If the framework receives an IOCTL specifying the "neither" buffer method, it can optionally convert the buffer access method of the IOCTL request to buffered I/O or direct I/O based on the presence of an INF directive. See [Managing Buffer Access Methods in UMDF Drivers](managing-buffer-access-methods-in-umdf-drivers.md) for more info.
 
- 
+ 
 
- 
+ 
 
 
 

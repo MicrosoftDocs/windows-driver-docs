@@ -32,45 +32,45 @@ GDI provides a selection of services related to semaphores and safe semaphores. 
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<strong>EngAcquireSemaphore</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564174)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564174" data-raw-source="[&lt;strong&gt;EngAcquireSemaphore&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564174)"><strong>EngAcquireSemaphore</strong></a></p></td>
 <td align="left"><p>Acquires the resource associated with the semaphore for exclusive access by the calling thread.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>EngCreateSemaphore</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564760)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564760" data-raw-source="[&lt;strong&gt;EngCreateSemaphore&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564760)"><strong>EngCreateSemaphore</strong></a></p></td>
 <td align="left"><p>Creates a semaphore object.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>EngDeleteSafeSemaphore</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564814)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564814" data-raw-source="[&lt;strong&gt;EngDeleteSafeSemaphore&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564814)"><strong>EngDeleteSafeSemaphore</strong></a></p></td>
 <td align="left"><p>Removes a reference to the specified safe semaphore.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>EngDeleteSemaphore</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564819)</p></td>
-<td align="left"><p>Deletes a semaphore object from the system's resource list.</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564819" data-raw-source="[&lt;strong&gt;EngDeleteSemaphore&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564819)"><strong>EngDeleteSemaphore</strong></a></p></td>
+<td align="left"><p>Deletes a semaphore object from the system&#39;s resource list.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>EngInitializeSafeSemaphore</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564959)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564959" data-raw-source="[&lt;strong&gt;EngInitializeSafeSemaphore&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564959)"><strong>EngInitializeSafeSemaphore</strong></a></p></td>
 <td align="left"><p>Initializes the specified safe semaphore.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>EngIsSemaphoreOwned</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564960)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564960" data-raw-source="[&lt;strong&gt;EngIsSemaphoreOwned&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564960)"><strong>EngIsSemaphoreOwned</strong></a></p></td>
 <td align="left"><p>Determines whether any thread holds the specified semaphore.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>EngIsSemaphoreOwnedByCurrentThread</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564961)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564961" data-raw-source="[&lt;strong&gt;EngIsSemaphoreOwnedByCurrentThread&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564961)"><strong>EngIsSemaphoreOwnedByCurrentThread</strong></a></p></td>
 <td align="left"><p>Determines whether the currently executing thread holds the specified semaphore.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>EngReleaseSemaphore</strong>](https://msdn.microsoft.com/library/windows/hardware/ff565004)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565004" data-raw-source="[&lt;strong&gt;EngReleaseSemaphore&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565004)"><strong>EngReleaseSemaphore</strong></a></p></td>
 <td align="left"><p>Releases the specified semaphore.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

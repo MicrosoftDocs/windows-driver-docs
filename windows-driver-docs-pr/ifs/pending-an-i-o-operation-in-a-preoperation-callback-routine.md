@@ -1,6 +1,5 @@
 ---
 title: Pending an I/O Operation in a Preoperation Callback Routine
-author: windows-driver-content
 description: Pending an I/O Operation in a Preoperation Callback Routine
 ms.assetid: 39b04911-c0d9-42ec-b93e-b440b12f9e41
 keywords:
@@ -42,9 +41,9 @@ A minifilter driver can return FLT\_PREOP\_PENDING only for IRP-based I/O operat
 
 The work routine that dequeues and processes the I/O operation must call **FltCompletePendedPreOperation** to resume processing for the operation.
 
- 
+ 
 
- 
+ 
 
 
 

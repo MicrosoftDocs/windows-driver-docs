@@ -15,10 +15,10 @@ This guide walks you through the process of creating a service metadata package 
 
 You can leverage service metadata to create a deeply integrated experience with Windows. Service metadata packages allow you to include branding information, such as icons and your operator name, configure settings and permissions for accessing SIM hardware and personal hotspots, and provision mobile broadband apps to work with your mobile broadband device.
 
-**Note**  
+**Note**  
 Even though the mobile broadband app is automatically installed, the user must pin it to the Start Screen manually.
 
- 
+
 
 ## <span id="Getting_started"></span><span id="getting_started"></span><span id="GETTING_STARTED"></span>Getting started
 
@@ -69,10 +69,10 @@ Before you create your service metadata package, ensure that your mobile broadba
 
 -   [UWP mobile broadband apps](uwp-mobile-broadband-apps.md)
 
-**Note**  
+**Note**  
 The mobile broadband app doesn’t have to be published to the Microsoft Store until the service metadata has been tested and is ready to be published externally. We recommend that the app is published to the Microsoft Store only after the service metadata package passes preview mode testing.
 
- 
+
 
 ## <span id="Creating_service_metadata_packages"></span><span id="creating_service_metadata_packages"></span><span id="CREATING_SERVICE_METADATA_PACKAGES"></span>Creating service metadata packages
 
@@ -114,10 +114,10 @@ Use the following steps to create a service metadata package on the Windows Dev 
 
 As you go through the steps in the Service Metadata Wizard in Step 2 of this topic, several pieces of information stored in the package.appxmanifest file from the mobile broadband app project that you want to associated with the device is required. Use the following steps to gather the information so that it’s ready for Step 2 of this topic.
 
-**Caution**  
+**Caution**  
 The mobile broadband app must be associated with the Microsoft Store before you gather the values in this step. When you associate a mobile broadband app, the values in the package manifest file are updated to use the information from your Microsoft Store developer account. However, the mobile broadband app does not have to be published to the Microsoft Store. It can stay in your local development environment until you are ready to publish the service metadata package.
 
- 
+
 
 **To gather UWP device app information**
 
@@ -249,16 +249,16 @@ If you edited an existing service metadata package that is already associated wi
 
 After you’ve download the service metadata package, you must enable test signing because the service metadata package is not signed. To enable test signing, **run bcdedit –set testsigning on** from an elevated command prompt and then restart your computer.
 
-After test signing is enabled, copy the \*.devicemetadata-ms file from the service metadata package to the following location: **%ProgramData%\\Microsoft\\Windows\\DeviceMetadataStore\\***culture*, where *culture* is the current culture code for your computer.
+After test signing is enabled, copy the \*.devicemetadata-ms file from the service metadata package to the following location: **%ProgramData%\\Microsoft\\Windows\\DeviceMetadataStore\\**<em>culture</em>, where *culture* is the current culture code for your computer.
 
 ### <span id="Test_a_service_metadata_package_in_preview_mode"></span><span id="test_a_service_metadata_package_in_preview_mode"></span><span id="TEST_A_SERVICE_METADATA_PACKAGE_IN_PREVIEW_MODE"></span>Test a service metadata package in preview mode
 
 If the service metadata package is in preview mode, you must create the PreviewKey registry entry on your test computer. For more info about configuring the PreviewKey registry entry, see [Creating a Preview Package](https://msdn.microsoft.com/library/windows/hardware/br230780).
 
-**Note**  
+**Note**  
 You do not have to enable test signing to test a service metadata package that is in preview mode.
 
- 
+
 
 After the PreviewKey registry entry is created, plug in your mobile broadband device and ensure that it shows in the Networks list. If it does not, see the [Troubleshooting](#troubleshooting) section for more info.
 
@@ -266,10 +266,10 @@ After the PreviewKey registry entry is created, plug in your mobile broadband de
 
 When service metadata is installed on a PC, the values contained in the metadata are stored in many different places, including the registry, metadata cache, metadata store, WWAN profiles and dev node. This can make it challenging to repeat multiple tests with the same, or different, metadata packages. To ensure that the service metadata is installed correctly, you should clear any existing service metadata. You can clear existing service metadata by setting up your test computer to run a PowerShell script that removes all traces. First, you must set up the environment on your test computer:
 
-**Note**  
+**Note**  
 This will not work on a Windows RT device. Use the steps in the procedure named “To clear service metadata on a device running Windows RT”.
 
- 
+
 
 **To set up the environment for clearing service metadata**
 
@@ -281,184 +281,186 @@ This will not work on a Windows RT device. Use the steps in the procedure named 
 
 4.  Save the following script as MetadataRemovalScript.ps1 in the same folder as Devcon.exe and PsExec.exe.
 
-    **Note**  
+    **Note**  
     In the **Save as type** box, make sure to select **All files (\*.\*)** before saving the file.
 
-     
 
-    ```PowerShell
-    # DEVICE SHOULD BE CONNECTED TO MACHINE
 
-    Write-Host "Launching devcon to remove MBAE software device nodes devcon.exe remove @SWD\MBAE\*"
-    $DevconParameters = ' remove @SWD\MBAE\* '
-    try
+
+```PowerShell
+# DEVICE SHOULD BE CONNECTED TO MACHINE
+
+Write-Host "Launching devcon to remove MBAE software device nodes devcon.exe remove @SWD\MBAE\*"
+$DevconParameters = ' remove @SWD\MBAE\* '
+try
+{
+   Start-Process devcon.exe -ArgumentList $DevconParameters
+}
+catch
+{
+   $Error[0] # Dump details about the last error
+   Write-Host "Error running devcon.exe " $DevconParameters
+   exit
+}
+
+Write-Host "Removing MB Profiles"
+$mbprcmd = "mbn sh pr i=*"
+$mddelprcmd = "mbn del pr i=* name="
+
+$cmdout = $mbprcmd | netsh | Out-String
+
+$tokens = $cmdout.Split( [String[]] ("`r`n"), [StringSplitOptions]::RemoveEmptyEntries)
+
+if($tokens.Length -gt 3)
+{
+   for($i=3;$i -lt $tokens.Length-1;$i++)
+   {
+      $x = $mddelprcmd + '"' + $tokens[$i].trim() +'"'
+      Write-Host "Deleting Profile Cmd :" $x
+      $x | netsh
+   }
+}
+
+Write-Host ""
+Write-Host "Disabling ALL Mobile Broadband Adapters"
+$MBAdapters = Get-Netadapter -Name "Mobile Broadband*"
+
+foreach($MBAdapter in $MBAdapters)
+{
+   Write-Host "Disabling MB Adapter :"$MBAdapter.Name
+   Disable-NetAdapter -Name $MBAdapter.Name -Confirm:$false
+}
+
+Write-Host "Stopping Device Setup Manager Service"
+Stop-Service DsmSvc
+
+Write-Host "Removing MBAE metadata packages in store"
+#Find Package Ids
+$MBAEPackageRegKeyHive = "HKLM:\SOFTWARE\Microsoft\WwanSvc\MobileBroadbandAccounts\Accounts\"
+if(Test-Path $MBAEPackageRegKeyHive)
+{
+    $DevMetadataStorePath = join-path -Path $Env:ProgramData -ChildPath "Microsoft\Windows\DeviceMetadataStore"
+
+    $PackageIds = Get-ChildItem $MBAEPackageRegKeyHive | ForEach-Object {Get-ItemProperty $_.pspath} | where-object {$_.MetadataPackageId} | Foreach-Object {$_.MetadataPackageId}
+    foreach($PackageId in $PackageIds)
     {
-       Start-Process devcon.exe -ArgumentList $DevconParameters
-    }
-    catch
-    {
-       $Error[0] # Dump details about the last error
-       Write-Host "Error running devcon.exe " $DevconParameters
-       exit
-    }
-
-    Write-Host "Removing MB Profiles"
-    $mbprcmd = "mbn sh pr i=*"
-    $mddelprcmd = "mbn del pr i=* name="
-
-    $cmdout = $mbprcmd | netsh | Out-String
-
-    $tokens = $cmdout.Split( [String[]] ("`r`n"), [StringSplitOptions]::RemoveEmptyEntries)
-
-    if($tokens.Length -gt 3)
-    {
-       for($i=3;$i -lt $tokens.Length-1;$i++)
-       {
-          $x = $mddelprcmd + '"' + $tokens[$i].trim() +'"'
-          Write-Host "Deleting Profile Cmd :" $x
-          $x | netsh
-       }
-    }
-
-    Write-Host ""
-    Write-Host "Disabling ALL Mobile Broadband Adapters"
-    $MBAdapters = Get-Netadapter -Name "Mobile Broadband*"
-
-    foreach($MBAdapter in $MBAdapters)
-    {
-       Write-Host "Disabling MB Adapter :"$MBAdapter.Name
-       Disable-NetAdapter -Name $MBAdapter.Name -Confirm:$false
-    }
-
-    Write-Host "Stopping Device Setup Manager Service"
-    Stop-Service DsmSvc
-
-    Write-Host "Removing MBAE metadata packages in store"
-    #Find Package Ids
-    $MBAEPackageRegKeyHive = "HKLM:\SOFTWARE\Microsoft\WwanSvc\MobileBroadbandAccounts\Accounts\"
-    if(Test-Path $MBAEPackageRegKeyHive)
-    {
-        $DevMetadataStorePath = join-path -Path $Env:ProgramData -ChildPath "Microsoft\Windows\DeviceMetadataStore"
-
-        $PackageIds = Get-ChildItem $MBAEPackageRegKeyHive | ForEach-Object {Get-ItemProperty $_.pspath} | where-object {$_.MetadataPackageId} | Foreach-Object {$_.MetadataPackageId}
-        foreach($PackageId in $PackageIds)
+        $PackageStoreFile = $PackageId + ".devicemetadata-ms"        
+        $PackageStorePath = Get-ChildItem $DevMetadataStorePath -Recurse -Filter $PackageStoreFile
+        if($PackageStorePath -ne $null)
         {
-            $PackageStoreFile = $PackageId + ".devicemetadata-ms"        
-            $PackageStorePath = Get-ChildItem $DevMetadataStorePath -Recurse -Filter $PackageStoreFile
-            if($PackageStorePath -ne $null)
-            {
-                Write-Host "Deleting Device Metadata Store @" $PackageStorePath.FullName
-                Remove-Item -Force $PackageStorePath.FullName
-            }
+            Write-Host "Deleting Device Metadata Store @" $PackageStorePath.FullName
+            Remove-Item -Force $PackageStorePath.FullName
         }
     }
+}
 
-    Write-Host "Removing all metadata from cache"
-    $DevMetadataCachePath = join-path -Path $Env:ProgramData -ChildPath "Microsoft\Windows\DeviceMetadataCache\*"
-    if(Test-Path $DevMetadataCachePath)
+Write-Host "Removing all metadata from cache"
+$DevMetadataCachePath = join-path -Path $Env:ProgramData -ChildPath "Microsoft\Windows\DeviceMetadataCache\*"
+if(Test-Path $DevMetadataCachePath)
+{
+   Write-Host "Delete All Metadata Packages under "$DevMetadataCachePath
+   Remove-Item -Recurse -Force $DevMetadataCachePath
+}
+
+Write-Host "Cleanup MBAE registry keys"
+$MBAERegKeyPath = "HKLM:\SOFTWARE\Microsoft\WwanSvc\MobileBroadbandAccounts\*"
+if(Test-Path $MBAERegKeyPath)
+{
+    Write-Host "Found MBAE reg keys - deleting"   
+    Remove-Item -Path $MBAERegKeyPath -Recurse
+}
+
+Write-Host "Enabling all MB Adapters, press any key to continue"
+$keypress = $host.UI.RawUI.ReadKey("NoEcho,IncludeKeyUp")
+
+$MBAdapters = Get-Netadapter -Name "Mobile Broadband*"
+
+foreach($MBAdapter in $MBAdapters)
+{
+   Write-Host "Enabling MB Adapter :"$MBAdapter.Name
+   Enable-NetAdapter -Name $MBAdapter.Name -Confirm:$false
+}
+
+
+Write-Host "END of Script"
+
+# DEVICE SHOULD BE CONNECTED TO MACHINE
+
+Write-Host "Launching devcon to remove MBAE software device nodes devcon.exe remove @SWD\MBAE\*"
+$DevconParameters = ' remove @SWD\MBAE\* '
+try
+{
+    Start-Process devcon.exe -ArgumentList $DevconParameters    
+}
+catch
+{
+    $Error[0] # Dump details about the last error
+    Write-Host "Error running devcon.exe " $DevconParameters
+    exit
+}
+
+Write-Host "Removing MB Profiles"
+$mbprcmd = "mbn sh pr i=*"
+$mddelprcmd = "mbn del pr i=* name="
+
+$cmdout = $mbprcmd | netsh | Out-String
+
+$tokens = $cmdout.Split( [String[]] ("`r`n"), [StringSplitOptions]::RemoveEmptyEntries)
+
+if($tokens.Length -gt 3)
+{
+    for($i=3;$i -lt $tokens.Length-1;$i++)
     {
-       Write-Host "Delete All Metadata Packages under "$DevMetadataCachePath
-       Remove-Item -Recurse -Force $DevMetadataCachePath
+        $x = $mddelprcmd + '"' + $tokens[$i].trim() +'"'
+        Write-Host "Deleting Profile Cmd :" $x
+        $x | netsh
     }
+}
 
-    Write-Host "Cleanup MBAE registry keys"
-    $MBAERegKeyPath = "HKLM:\SOFTWARE\Microsoft\WwanSvc\MobileBroadbandAccounts\*"
-    if(Test-Path $MBAERegKeyPath)
+Write-Host ""
+Write-Host "Please remove the MB device from the system and press any key to continue"
+$keypress = $host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
+
+
+Write-Host "Removing MBAE metadata packages in cache and store"
+#Find Package Ids
+$MBAEPackageRegKeyHive = "HKLM:\SOFTWARE\Microsoft\WwanSvc\MobileBroadbandAccounts\Accounts\"
+if(Test-Path $MBAEPackageRegKeyHive)
+{
+    $DevMetadataCachePath = join-path -Path $Env:ProgramData -ChildPath "Microsoft\Windows\DeviceMetadataCache"
+    $DevMetadataStorePath = join-path -Path $Env:ProgramData -ChildPath "Microsoft\Windows\DeviceMetadataStore"
+
+    $PackageIds = Get-ChildItem $MBAEPackageRegKeyHive | ForEach-Object {Get-ItemProperty $_.pspath} | where-object {$_.MetadataPackageId} | Foreach-Object {$_.MetadataPackageId}
+    foreach($PackageId in $PackageIds)
     {
-        Write-Host "Found MBAE reg keys - deleting"   
-        Remove-Item -Path $MBAERegKeyPath -Recurse
-    }
-
-    Write-Host "Enabling all MB Adapters, press any key to continue"
-    $keypress = $host.UI.RawUI.ReadKey("NoEcho,IncludeKeyUp")
-
-    $MBAdapters = Get-Netadapter -Name "Mobile Broadband*"
-
-    foreach($MBAdapter in $MBAdapters)
-    {
-       Write-Host "Enabling MB Adapter :"$MBAdapter.Name
-       Enable-NetAdapter -Name $MBAdapter.Name -Confirm:$false
-    }
-
-
-    Write-Host "END of Script"
-
-    # DEVICE SHOULD BE CONNECTED TO MACHINE
-
-    Write-Host "Launching devcon to remove MBAE software device nodes devcon.exe remove @SWD\MBAE\*"
-    $DevconParameters = ' remove @SWD\MBAE\* '
-    try
-    {
-        Start-Process devcon.exe -ArgumentList $DevconParameters    
-    }
-    catch
-    {
-        $Error[0] # Dump details about the last error
-        Write-Host "Error running devcon.exe " $DevconParameters
-        exit
-    }
-
-    Write-Host "Removing MB Profiles"
-    $mbprcmd = "mbn sh pr i=*"
-    $mddelprcmd = "mbn del pr i=* name="
-
-    $cmdout = $mbprcmd | netsh | Out-String
-
-    $tokens = $cmdout.Split( [String[]] ("`r`n"), [StringSplitOptions]::RemoveEmptyEntries)
-
-    if($tokens.Length -gt 3)
-    {
-        for($i=3;$i -lt $tokens.Length-1;$i++)
+        $PackageCacheFolder = Get-ChildItem $DevMetadataCachePath -Recurse -Filter $PackageId
+        if($PackageCacheFolder -ne $null)
         {
-            $x = $mddelprcmd + '"' + $tokens[$i].trim() +'"'
-            Write-Host "Deleting Profile Cmd :" $x
-            $x | netsh
+            Write-Host "Deleting Device Metadata Cache @" $PackageCacheFolder.FullName
+            Remove-Item -Recurse -Force $PackageCacheFolder.FullName
+        }
+        $PackageStoreFile = $PackageId + ".devicemetadata-ms"        
+        $PackageStorePath = Get-ChildItem $DevMetadataStorePath -Recurse -Filter $PackageStoreFile
+        if($PackageStorePath -ne $null)
+        {
+            Write-Host "Deleting Device Metadata Store @" $PackageStorePath.FullName
+            Remove-Item -Force $PackageStorePath.FullName
         }
     }
+}
 
-    Write-Host ""
-    Write-Host "Please remove the MB device from the system and press any key to continue"
-    $keypress = $host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
-
-
-    Write-Host "Removing MBAE metadata packages in cache and store"
-    #Find Package Ids
-    $MBAEPackageRegKeyHive = "HKLM:\SOFTWARE\Microsoft\WwanSvc\MobileBroadbandAccounts\Accounts\"
-    if(Test-Path $MBAEPackageRegKeyHive)
-    {
-        $DevMetadataCachePath = join-path -Path $Env:ProgramData -ChildPath "Microsoft\Windows\DeviceMetadataCache"
-        $DevMetadataStorePath = join-path -Path $Env:ProgramData -ChildPath "Microsoft\Windows\DeviceMetadataStore"
-
-        $PackageIds = Get-ChildItem $MBAEPackageRegKeyHive | ForEach-Object {Get-ItemProperty $_.pspath} | where-object {$_.MetadataPackageId} | Foreach-Object {$_.MetadataPackageId}
-        foreach($PackageId in $PackageIds)
-        {
-            $PackageCacheFolder = Get-ChildItem $DevMetadataCachePath -Recurse -Filter $PackageId
-            if($PackageCacheFolder -ne $null)
-            {
-                Write-Host "Deleting Device Metadata Cache @" $PackageCacheFolder.FullName
-                Remove-Item -Recurse -Force $PackageCacheFolder.FullName
-            }
-            $PackageStoreFile = $PackageId + ".devicemetadata-ms"        
-            $PackageStorePath = Get-ChildItem $DevMetadataStorePath -Recurse -Filter $PackageStoreFile
-            if($PackageStorePath -ne $null)
-            {
-                Write-Host "Deleting Device Metadata Store @" $PackageStorePath.FullName
-                Remove-Item -Force $PackageStorePath.FullName
-            }
-        }
-    }
-
-    Write-Host "Cleanup MBAE registry keys"
-    $MBAERegKeyPath = "HKLM:\SOFTWARE\Microsoft\WwanSvc\MobileBroadbandAccounts\*"
-    if(Test-Path $MBAERegKeyPath)
-    {
-        Write-Host "Found MBAE reg keys - deleting"   
-        Remove-Item -Path $MBAERegKeyPath -Recurse
-    }
+Write-Host "Cleanup MBAE registry keys"
+$MBAERegKeyPath = "HKLM:\SOFTWARE\Microsoft\WwanSvc\MobileBroadbandAccounts\*"
+if(Test-Path $MBAERegKeyPath)
+{
+    Write-Host "Found MBAE reg keys - deleting"   
+    Remove-Item -Path $MBAERegKeyPath -Recurse
+}
 
 
-    Write-Host "END"
-    ```
+Write-Host "END"
+```
+
 
 After the environment is set up, run the following steps each time that you want to clear any existing service metadata:
 
@@ -482,41 +484,41 @@ After the environment is set up, run the following steps each time that you want
 
 **To clear service metadata on a device running Windows RT**
 
-1.  Remove the software device nodes.
+1. Remove the software device nodes.
 
-    1.  In Device Manager, click **View**, and then click **Show hidden devices**.
+   1.  In Device Manager, click **View**, and then click **Show hidden devices**.
 
-    2.  Expand Software devices.
+   2.  Expand Software devices.
 
-    3.  Right-click the following device nodes, and then click **Uninstall**: **Windows.Devices.Sms.SmsDevice** and **Windows.Networking/NetworkOperators.MobileBroadbandAccount**
+   3.  Right-click the following device nodes, and then click **Uninstall**: **Windows.Devices.Sms.SmsDevice** and **Windows.Networking/NetworkOperators.MobileBroadbandAccount**
 
-2.  Remove all mobile broadband profiles from all interfaces.
+2. Remove all mobile broadband profiles from all interfaces.
 
-    1.  From an elevated command prompt, type **netsh mbn sho pro i=\***
+   1. From an elevated command prompt, type **netsh mbn sho pro i=\\***
 
-    2.  For each of the profiles, type **netsh mbn delete profile name = “The profile name here” i=\*** and then press Enter.
+   2. For each of the profiles, type **netsh mbn delete profile name = “The profile name here” i=\\*** and then press Enter.
 
-3.  Disable all mobile broadband adapters.
+3. Disable all mobile broadband adapters.
 
-    1.  In Device Manager, expand **Network adapters**.
+   1.  In Device Manager, expand **Network adapters**.
 
-    2.  Right-click each mobile broadband device, and then click **Disable**.
+   2.  Right-click each mobile broadband device, and then click **Disable**.
 
-4.  From an elevated command prompt, stop the DSM service by typing **sc stop dsmsvc** and then press Enter.
+4. From an elevated command prompt, stop the DSM service by typing **sc stop dsmsvc** and then press Enter.
 
-5.  Remove your service metadata packages from the device metadata store by deleting any folder that contains your service metadata package from **%ProgramData%\\Microsoft\\Windows\\DeviceMetadataStore**. You can identify service metadata packages by looking for the MobileBroadbandInfo.xml file.
+5. Remove your service metadata packages from the device metadata store by deleting any folder that contains your service metadata package from **%ProgramData%\\Microsoft\\Windows\\DeviceMetadataStore**. You can identify service metadata packages by looking for the MobileBroadbandInfo.xml file.
 
-6.  Delete all WWAN SVC MBAE registry entries.
+6. Delete all WWAN SVC MBAE registry entries.
 
-    1.  In Registry Editor, delete the following registry entry and all child entries: HKEY\_LOCAL\_MACHINE\\Software\\Microsoft\\WwanSvc\\MobileBroadbandAccounts.
+   1.  In Registry Editor, delete the following registry entry and all child entries: HKEY\_LOCAL\_MACHINE\\Software\\Microsoft\\WwanSvc\\MobileBroadbandAccounts.
 
-    2.  If you don’t have access to delete the registry entry, you must give yourself Full Control permissions.
+   2.  If you don’t have access to delete the registry entry, you must give yourself Full Control permissions.
 
-7.  Enable all mobile broadband adapters.
+7. Enable all mobile broadband adapters.
 
-    1.  In Device Manager, expand **Network adapters**.
+   1.  In Device Manager, expand **Network adapters**.
 
-    2.  Right-click each mobile broadband device, and then click **Enable**.
+   2.  Right-click each mobile broadband device, and then click **Enable**.
 
 ### 5-Publish the service metadata package
 
@@ -531,7 +533,7 @@ You can edit a service metadata package by using the Manage Experiences page of 
 
 ![the manage experiences page](images/mbae-sxs81-manageexperience.png)
 
-##Troubleshooting
+## Troubleshooting
 
 
 Open the networks list and look for your mobile broadband network. If the network is listed by using the name and icon that you used in the service metadata package **ServiceInfo.xml** file, the package is correctly parsed. If you are updating a service metadata package that has the same name and icon, or if the name or icon has not appeared in the list after about approximately one minute, you should perform additional steps, as discussed here:
@@ -554,35 +556,35 @@ Some parts of the metadata and mobile broadband app systems rely on network acce
 
 3.  From the **View** menu, click **Refresh**, or press the **F5** key. This action causes metadata to be reparsed and background events to be re-registered.
 
-**Important**  
+**Important**  
 If a service metadata package has already been successfully parsed, the system will treat this refresh as a metadata update. In this case, your metadata package must have a different GUID in its filename and an updated timestamp in the [LastModifiedDate](lastmodifieddate.md) element of **PackageInfo.xml**.
 
- 
+
 
 ### <span id="checkmdcache"></span><span id="CHECKMDCACHE"></span>Check the metadata cache
 
 If a metadata refresh did not fix the problem, make sure that the service metadata package is valid and that it has the correct Hardware IDs. To do this, perform the following steps:
 
-1.  Navigate to **%programdata%\\Microsoft\\Windows\\DeviceMetadataCache\\dmrccache\\***culture*, where *culture* is the culture code for the current culture of your test computer (for example, **en-us** or **es-es**).
+1. Navigate to **%programdata%\\Microsoft\\Windows\\DeviceMetadataCache\\dmrccache\\**<em>culture</em>, where *culture* is the culture code for the current culture of your test computer (for example, **en-us** or **es-es**).
 
-2.  Look for a folder that has the same name as your metadata package (without the **.devicemetadata-ms** extension). If this directory does not exist, it can mean one of four things:
+2. Look for a folder that has the same name as your metadata package (without the **.devicemetadata-ms** extension). If this directory does not exist, it can mean one of four things:
 
-    -   The service metadata package is corrupt.
+   -   The service metadata package is corrupt.
 
-    -   The service metadata package does not have the correct Hardware IDs.
+   -   The service metadata package does not have the correct Hardware IDs.
 
-    -   The mobile broadband device is not in a state where metadata can be downloaded, or you plugged in the device before you copied the service metadata package.
+   -   The mobile broadband device is not in a state where metadata can be downloaded, or you plugged in the device before you copied the service metadata package.
 
-    -   A problem occurred when checking the digital signature on the metadata package. This is usually caused by not having test signing enabled on your test computer.
+   -   A problem occurred when checking the digital signature on the metadata package. This is usually caused by not having test signing enabled on your test computer.
 
 If you’re sure that the package is not corrupted and that you first plugged in the mobile broadband device after you copied the service metadata package, check the IMSI ranges. It’s very easy to type in too many or too few 0s or 9s. If the problem persists after confirming or correcting these items, you must look at the registry.
 
 ### <span id="checkreg"></span><span id="CHECKREG"></span>Check the registry
 
-**Warning**  
+**Warning**  
 You should not edit registry data that does not belong to your application unless it is absolutely necessary. If there is an error in the registry, your system might not function properly. Do not, under any circumstances, delete the **MobileBroadbandAccounts** registry key. Windows will not re-create it and you will break the feature.
 
- 
+
 
 Perform the following steps to check the registry:
 
@@ -616,10 +618,10 @@ If there are no **Accounts** or **NetworkInterfaceBindings** registry keys under
 
     -   **HKLM\\SOFTWARE\\Microsoft\\WwanSvc\\MobileBroadbandAccounts\\NetworkInterfaceBindings**
 
-    **Warning**  
+    **Warning**  
     Do not, under any circumstances, delete the **HKLM\\SOFTWARE\\Microsoft\\WwanSvc\\MobileBroadbandAccounts\\** registry key. Windows will not re-create it and you will break the feature.
 
-     
+
 
 There are two types of entries that are of interest in the logs: account management WWAN service entries log entries, and parser task entries. The first type can help debug issues that are caused by problems with the networking hardware, and the second type can help debug metadata parsing issues.
 
@@ -649,10 +651,10 @@ By contrast, on a device where the SIM is removed, the entries typically look li
 [0]02CC.03E4::‎2012‎-‎01‎-‎04 09:29:50.309 [Microsoft-Windows-WWAN-SVC-EVENTS]Account Management: Account updater finished for network interface {7a0a0dce-0a51-471a-8c16-6e767cd0b861}. 
 ```
 
-**Note**  
+**Note**  
 In the latter example, there are no entries for **Data store create/update started** or **Data store create/update finished**. Because information stored in the SIM is critical to the account management process, a device that does not have a SIM will not have the necessary associated metadata.
 
- 
+
 
 If the hardware was successfully processed, but your logo or name do not display in the networks list, there might be a problem with the metadata package. This can be investigated by using the parser task entries in the log. To find these entries, search for **Parser-Task**. Log entries for a successful parse typically look like the following:
 
@@ -704,7 +706,7 @@ Because it is normal for the parser task to run more than one time, you might se
 ## <span id="Additional_resources"></span><span id="additional_resources"></span><span id="ADDITIONAL_RESOURCES"></span>Additional resources
 
 
-Use the following links to learn more about mobile broadband in Windows 8.1 and Windows 10:
+Use the following links to learn more about mobile broadband in Windows 8.1 and Windows 10:
 
 -   [Overview of mobile broadband](overview-of-mobile-broadband.md)
 
@@ -712,9 +714,9 @@ Use the following links to learn more about mobile broadband in Windows 8.1 and
 
 -   [Service metadata](service-metadata.md)
 
- 
 
- 
+
+
 
 
 

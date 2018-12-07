@@ -1,6 +1,5 @@
 ---
 title: Device Power States
-author: windows-driver-content
 description: Device Power States
 ms.assetid: 2229f34c-9b88-4e3e-802e-f7be2c7ef168
 keywords: ["device power states WDK kernel", "power states WDK kernel", "states WDK power management", "Dx names WDK power management", "low power modes WDK kernel", "power saving modes WDK kernel", "continuous power WDK kernel", "delays WDK power management"]
@@ -55,9 +54,9 @@ This graph shows the subdivision of D3 into D3hot and D3cold. D3hot and D3cold a
 
 In the preceding graph, the transition from D3hot to D3cold is the only direct transition between device low-power states. All other transitions between low-power states require an intermediate transition to D0, which allows the device driver to configure the device hardware, as required, either to enter the next low-power state or to stay in D0. However, a device exits D3hot and enters D3cold when power to the device is shut off, which requires no intervention from the device driver. This driver does any necessary configuration of the device hardware before the device enters D3hot; no additional configuration is required to prepare the device for the transition from D3hot to D3cold. For more information, see [Supporting D3cold in a Driver](supporting-d3cold-in-a-driver.md).
 
- 
+ 
 
- 
+ 
 
 
 

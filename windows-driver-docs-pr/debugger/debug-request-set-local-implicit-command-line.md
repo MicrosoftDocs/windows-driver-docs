@@ -9,7 +9,6 @@ api_name:
 - DEBUG_REQUEST_SET_LOCAL_IMPLICIT_COMMAND_LINE
 api_type:
 - NA
-ms.author: domars
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -47,9 +46,9 @@ The implicit command line can be used as the command line when creating a proces
 
 [**CreateProcessAndAttach2**](https://msdn.microsoft.com/library/windows/hardware/ff540055)
 
- 
+ 
 
- 
+ 
 
 
 

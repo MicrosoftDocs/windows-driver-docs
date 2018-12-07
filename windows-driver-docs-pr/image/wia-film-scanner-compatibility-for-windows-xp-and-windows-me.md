@@ -1,6 +1,5 @@
 ---
 title: WIA Film Scanner Compatibility for Windows XP and Windows Me
-author: windows-driver-content
 description: WIA Film Scanner Compatibility for Windows XP and Windows Me
 ms.assetid: 9f96ef72-2482-435f-b512-b48c12dc1628
 ms.date: 04/20/2017
@@ -19,13 +18,13 @@ You can provide rudimentary support for Windows XP WIA applications that run Win
 
 **Note**   If your scanner also supports flatbed scanning, the WIA flatbed scanner item must be the first WIA child item in the scanner item tree.
 
- 
+ 
 
 For more information about Windows XP and Windows Me compatibility, see [WIA Flatbed Scanner Compatibility for Windows Me and Windows XP](wia-flatbed-scanner-compatibility-for-windows-xp-and-windows-me.md).
 
- 
+ 
 
- 
+ 
 
 
 

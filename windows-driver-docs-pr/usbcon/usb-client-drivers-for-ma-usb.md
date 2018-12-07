@@ -1,7 +1,6 @@
 ---
 Description: 'USB device driver that sends MA-USB packets.'
 title: USB client drivers for Media-Agnostic (MA-USB)
-author: windows-driver-content
 ms.date: 09/26/2017
 ms.localizationpriority: medium
 ---
@@ -16,7 +15,7 @@ In Windows 10, version 1709, USB driver stack can send USB packets over non-USB 
 
 ## Getting the delays for isochronous transfers
 
-For isochronous endpoints, the client driver needs to know the maximum programming latency and maximum completion latency. That request must be targetted for a specific pipe because that latency can be different for different endpoints on the same device as MA-USB specification provides mechanisms for the host to calculate these values. 
+For isochronous endpoints, the client driver needs to know the maximum programming latency and maximum completion latency. That request must be targeted for a specific pipe because that latency can be different for different endpoints on the same device as MA-USB specification provides mechanisms for the host to calculate these values. 
 
 To build that request the driver must use the **_URB_GET_ISOCH_PIPE_TRANSFER_PATH_DELAYS** URB.
 
@@ -30,7 +29,7 @@ Here are some best practices for building this URB:
 - The URB can be sent at <= Dispatch Level.
 - If the URB is targeted to a non-isochronous endpoint, the USB driver stack fails the request.
 - The client driver must not assume this URB is supported by third-party USB stacks. It will be supported by all Microsoft=provided inbox USB client drivers.
- 
+
 For a continuous isochronous IN streaming, client driver typically issues multiple outstanding read requests. The driver can use the round-trip time to calculate the number of isochronous packets that need to be in a read request based on the number of outstanding read requests.
 
 For Example, if the number of outstanding requests is two, the number of isochronous packets in an URB should be at least (Total Round Trip Time)/ (Length of Service Interval) where Total Round Trip Time = MaximumSendPathDelayInMilliSeconds + MaximumCompletionPathDelayInMilliSeconds
@@ -60,9 +59,9 @@ For MA-USB, the underlying transport could be wired, wireless￼. The transport 
 1.    Send an [IOCTL_USB_REGISTER_FOR_TRANSPORT_CHARACTERISTICS_CHANGE](https://msdn.microsoft.com/Library/Windows/Hardware/4192501F-5A30-463C-924D-CD4F2C8C3764) request 
 to register for notifications. If registration is successful, the client driver receives a handle and the initial values of the transport characteristics.
 
-2.	Send an [IOCTL_USB_NOTIFY_ON_TRANSPORT_CHARACTERISTICS_CHANGE](https://msdn.microsoft.com/Library/Windows/Hardware/1B71794C-EBAD-4F6C-A71C-C0D419D486BE) request with the registration handle obtained in step 1. The USB driver stack keeps the request pending. Whenever transport characteristics change, the pending request is completed with the new values of transport characteristics.
+2.  Send an [IOCTL_USB_NOTIFY_ON_TRANSPORT_CHARACTERISTICS_CHANGE](https://msdn.microsoft.com/Library/Windows/Hardware/1B71794C-EBAD-4F6C-A71C-C0D419D486BE) request with the registration handle obtained in step 1. The USB driver stack keeps the request pending. Whenever transport characteristics change, the pending request is completed with the new values of transport characteristics.
 
-3.	After the client is done and not interested in getting further notifications, it should ensure that there are no IOCTLs pending in the stack and then send the IOCTL with sub-code [IOCTL_USB_UNREGISTER_FOR_TRANSPORT_CHARACTERISTICS_CHANGE](https://msdn.microsoft.com/Library/Windows/Hardware/A6D17761-4E5F-42FC-AB40-C2BCE7769243), passing in the registration handle. If the client unregisters with pending change request, USB Stack will complete them before completing the unregister IOCTL.
+3.  After the client is done and not interested in getting further notifications, it should ensure that there are no IOCTLs pending in the stack and then send the IOCTL with sub-code [IOCTL_USB_UNREGISTER_FOR_TRANSPORT_CHARACTERISTICS_CHANGE](https://msdn.microsoft.com/Library/Windows/Hardware/A6D17761-4E5F-42FC-AB40-C2BCE7769243), passing in the registration handle. If the client unregisters with pending change request, USB Stack will complete them before completing the unregister IOCTL.
 
 ### Query for device characteristics
 
@@ -99,7 +98,6 @@ REG_MULTI_SZ:"EndpointPriorities" =
 “"1,0,*,BULK_IN,0,VIDEO",   // BULK IN endpoint in interface 0, configuration 1, all alternate settings has VIDEO priority. 
 "1,1,*,BULK_OUT,0,VOICE",  // First BULK OUT endpoint in interface 1, configuration 1, all alternate settings has VOICE priority. 
 "2,1,0,BULK_OUT,1,INTERACTIVE"” // BULK OUT endpoint in configuration 2, interface 1, alt setting 1 has INTERACTIVE priority.
-
 ```
 ## See Also
 [WdfUsbTargetDeviceCreateUrb](https://msdn.microsoft.com/library/windows/hardware/hh439423)

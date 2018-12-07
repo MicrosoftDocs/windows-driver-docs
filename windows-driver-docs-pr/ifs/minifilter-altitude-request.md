@@ -1,6 +1,5 @@
 ---
 title: Minifilter Altitude Request
-author: windows-driver-content
 description: Minifilter Altitude Request
 ms.assetid: 4861E5FC-9883-455F-A925-EBAFC890F568
 ms.date: 04/20/2017
@@ -58,7 +57,7 @@ A request for an minifilter altitude assignment is sent to Microsoft as an email
 </tr>
 <tr class="odd">
 <td align="left">Requested filter load order group:</td>
-<td align="left">See the [File System Minifilter Allocated Altitudes](allocated-altitudes.md) for available load order groups.</td>
+<td align="left">See the <a href="allocated-altitudes.md" data-raw-source="[File System Minifilter Allocated Altitudes](allocated-altitudes.md)">File System Minifilter Allocated Altitudes</a> for available load order groups.</td>
 </tr>
 <tr class="even">
 <td align="left">Requested altitude:</td>
@@ -71,7 +70,7 @@ A request for an minifilter altitude assignment is sent to Microsoft as an email
 </tbody>
 </table>
 
- 
+ 
 
 Send this information in an ASCII text e-mail message to [fsfcomm@microsoft.com](mailto:fsfcomm@microsoft.com?subject=Minifilter%20altitude%20request) with the subject: “Minifilter altitude request”. An altitude for this filter will then be e-mailed back to the specified contact e-mail address.
 
@@ -107,11 +106,11 @@ FilterDev
 -   It may take Microsoft up to two weeks to process and assign altitudes. Any missing information may delay the assignment.
 -   The assigned altitude will eventually be reflected in the altitudes listed in [File System Minifilter Allocated Altitudes](allocated-altitudes.md). Please be aware that Microsoft only updates this list annually.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

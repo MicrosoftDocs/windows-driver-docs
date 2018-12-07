@@ -3,7 +3,6 @@ title: ks.forcedump
 description: The ks.forcedump command displays information about memory contents at a caller-supplied address.
 ms.assetid: 2829d324-a346-47af-a5f8-1808f329cadf
 keywords: ["ks.forcedump Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -58,7 +57,7 @@ Optional. Specifies the level of detail to display on a 0-7 scale with progressi
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -75,7 +74,7 @@ If this happens, try using the **!ks.forcedump** command. This command works jus
 
 **Note**   The **!ks.forcedump** command does not verify that *Type* is the correct type of structure found at the address provided in *Object*. The command assumes that this is the type of structure found at *Object* and displays data accordingly.
 
- 
+ 
 
 A listing of all supported objects can be retrieved by issuing a **!ks.forcedump** command with no arguments.
 
@@ -120,9 +119,9 @@ Filter object 829493c4 [CKsFilter = 82949350]
                     8293f580 
 ```
 
- 
+ 
 
- 
+ 
 
 
 

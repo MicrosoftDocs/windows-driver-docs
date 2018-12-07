@@ -1,6 +1,5 @@
 ---
 title: WIA Flatbed Scanner Compatibility for Windows XP and Windows Me
-author: windows-driver-content
 description: WIA Flatbed Scanner Compatibility for Windows XP and Windows Me
 ms.assetid: fc3424fa-3898-4f6a-a611-f81d97db8b1d
 ms.date: 04/20/2017
@@ -23,13 +22,13 @@ This item-overload approach requires applications to keep track of required WIA 
 
 **Note**   The flatbed scanner item must be the first child item in the WIA item tree if other scanning data sources are implemented. This location ensures that Windows XP and Windows Me applications that are able to operate a basic flatbed scanner will automatically find the flatbed scanning functionality of your device. Some applications navigate to the first child item, which used to be the only child item, and assume that it is the flatbed or feeder of the scanner. Implementing the scanner item tree with the flatbed scanner item as the first child item will prevent many backward-compatibility problems.
 
- 
+ 
 
 For more information about compatibility, see [WIA Item Property and Location Changes](wia-item-property-and-location-changes.md).
 
- 
+ 
 
- 
+ 
 
 
 

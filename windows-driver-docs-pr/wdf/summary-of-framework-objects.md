@@ -1,6 +1,5 @@
 ---
 title: Summary of Framework Objects
-author: windows-driver-content
 description: Summary of Framework Objects
 ms.assetid: 799284a5-91c0-47b0-8f20-75a5f8e2284d
 keywords:
@@ -51,11 +50,11 @@ For a list of callbacks and methods and which frameworks are applicable, see [Su
 |Work-item object|WDFWORKITEM|Represents a work item.|None|Yes|KM/UM|[WDF Work-Item Object Reference](https://msdn.microsoft.com/library/windows/hardware/dn265673)|
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

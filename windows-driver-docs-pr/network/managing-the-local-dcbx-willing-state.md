@@ -29,7 +29,7 @@ The ability to set individual Willing bits in these TLVs depends on the local DC
 
     **Note**  If local DCBX Willing state is enabled, the miniport driver can also resolve its operational QoS parameters based on any proprietary QoS settings that are defined by the independent hardware vendor (IHV). The driver can only do this for QoS parameters that are not configured remotely by the peer or locally by the operating system.
 
-     
+     
 
 The miniport driver manages the local DCBX Willing state in the following way:
 
@@ -45,11 +45,11 @@ For more information about the local DCBX Willing bits and TLVs, refer to the IE
 
 **Note**  Starting with Windows Server 2012, the DCB component can be configured through a PowerShell cmdlet to set or clear the **NDIS\_QOS\_PARAMETERS\_WILLING** flag when it issues an [OID\_QOS\_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/hh451835) request. This causes the miniport driver to respectively enable or disable the local DCBX Willing state.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

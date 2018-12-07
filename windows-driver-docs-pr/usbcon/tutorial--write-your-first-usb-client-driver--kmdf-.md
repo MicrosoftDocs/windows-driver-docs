@@ -1,7 +1,6 @@
 ---
 Description: In this topic you'll use the USB Kernel-Mode Driver template provided with Microsoft Visual Studio Professional 2012 to write a simple kernel-mode driver framework (KMDF)-based client driver.
 title: How to write your first USB client driver (KMDF)
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -73,7 +72,7 @@ This topic assumes that the name of the Visual Studio project is "MyUSBDriver\_"
 | Device.h; Device.c         | Declares and defines event callback routine for the prepare-hardware event.                                          |
 | Queue.h; Queue.c           | Declares and defines an event callback routine for the event raised by the framework's queue object.                 |
 
- 
+ 
 
 ### <a href="" id="modify-the-inf-file-to-add-information-about-your-device"></a>Step 2: Modify the INF file to add information about your device
 
@@ -116,64 +115,64 @@ The template code contains several trace messages (TraceEvents) that can help yo
 
 **To configure your host computer for WPP tracing**
 
-1.  Create trace message format (TMF) files by extracting trace message formatting instructions from the PDB symbol file.
+1. Create trace message format (TMF) files by extracting trace message formatting instructions from the PDB symbol file.
 
-    You can use Tracepdb.exe to create TMF files. The tool is located in the *&lt;install folder&gt;*Windows Kits\\8.0\\bin\\*&lt;architecture&gt;* folder of the WDK. The following command creates TMF files for the driver project.
+   You can use Tracepdb.exe to create TMF files. The tool is located in the <em>&lt;install folder&gt;</em>Windows Kits\\8.0\\bin\\*&lt;architecture&gt;* folder of the WDK. The following command creates TMF files for the driver project.
 
-    **tracepdb -f \[PDBFiles\] -p \[TMFDirectory\]**
+   **tracepdb -f \[PDBFiles\] -p \[TMFDirectory\]**
 
-    The **-f** option specifies the location and the name of the PDB symbol file. The **-p** option specifies the location for the TMF files that are created by Tracepdb. For more information, see [**Tracepdb Commands**](https://msdn.microsoft.com/library/windows/hardware/ff553043).
+   The **-f** option specifies the location and the name of the PDB symbol file. The **-p** option specifies the location for the TMF files that are created by Tracepdb. For more information, see [**Tracepdb Commands**](https://msdn.microsoft.com/library/windows/hardware/ff553043).
 
-    At the specified location you'll see three files (one per .c file in the project). They are given GUID file names.
+   At the specified location you'll see three files (one per .c file in the project). They are given GUID file names.
 
-2.  In the debugger, type the following commands:
-    1.  **.load Wmitrace**
+2. In the debugger, type the following commands:
+   1.  **.load Wmitrace**
 
-        Loads the Wmitrace.dll extension.
+       Loads the Wmitrace.dll extension.
 
-    2.  **.chain**
+   2.  **.chain**
 
-        Verify that the debugger extension is loaded.
+       Verify that the debugger extension is loaded.
 
-    3.  **!wmitrace.searchpath +***&lt;TMF file location&gt;*
+   3.  **!wmitrace.searchpath +***&lt;TMF file location&gt;*
 
-        Add the location of the TMF files to the debugger extension's search path.
+       Add the location of the TMF files to the debugger extension's search path.
 
-        The output resembles this:
+       The output resembles this:
 
-        `Trace Format search path is: 'C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE;c:\drivers\tmf'`
+       `Trace Format search path is: 'C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE;c:\drivers\tmf'`
 
 **To configure your target computer for WPP tracing**
 
-1.  Make sure you have the Tracelog tool on your target computer. The tool is located in the *&lt;install\_folder&gt;*Windows Kits\\8.0\\Tools\\*&lt;arch&gt;* folder of the WDK. For more information, see [**Tracelog Command Syntax**](https://msdn.microsoft.com/library/windows/hardware/ff553012).
-2.  Open a **Command Window** and run as administrator.
-3.  Type the following command:
+1. Make sure you have the Tracelog tool on your target computer. The tool is located in the <em>&lt;install\_folder&gt;</em>Windows Kits\\8.0\\Tools\\*&lt;arch&gt;* folder of the WDK. For more information, see [**Tracelog Command Syntax**](https://msdn.microsoft.com/library/windows/hardware/ff553012).
+2. Open a **Command Window** and run as administrator.
+3. Type the following command:
 
-    **tracelog -start MyTrace -guid \#c918ee71-68c7-4140-8f7d-c907abbcb05d -flag 0xFFFF -level 7-rt -kd**
+   **tracelog -start MyTrace -guid \#c918ee71-68c7-4140-8f7d-c907abbcb05d -flag 0xFFFF -level 7-rt -kd**
 
-    The command starts a trace session named MyTrace.
+   The command starts a trace session named MyTrace.
 
-    The **guid** argument specifies the GUID of the trace provider, which is the client driver. You can get the GUID from Trace.h in the Visual Studio Professional 2012 project. As another option, you can type the following command and specify the GUID in a .guid file. The file contains the GUID in hyphen format:
+   The **guid** argument specifies the GUID of the trace provider, which is the client driver. You can get the GUID from Trace.h in the Visual Studio Professional 2012 project. As another option, you can type the following command and specify the GUID in a .guid file. The file contains the GUID in hyphen format:
 
-    **tracelog -start MyTrace -guid c:\\drivers\\Provider.guid -flag 0xFFFF -level 7-rt -kd**
+   **tracelog -start MyTrace -guid c:\\drivers\\Provider.guid -flag 0xFFFF -level 7-rt -kd**
 
-    You can stop the trace session by typing the following command:
+   You can stop the trace session by typing the following command:
 
-    **tracelog -stop MyTrace**
+   **tracelog -stop MyTrace**
 
 ### <a href="" id="deploy-the-driver-on-the-target-computer"></a>Step 6: Deploy the driver on the target computer
 
-1.  In the **Solution Explorer** window, right click the *&lt;project name&gt;***Package** , and choose **Properties**.
-2.  In the left pane, navigate to **Configuration Properties &gt; Driver Install &gt; Deployment**.
-3.  Check Enable deployment, and check Import into driver store.
-4.  For **Remote Computer Name**, specify the name of the target computer.
-5.  Select **Install and Verify**.
-6.  Click **Ok**.
-7.  On the **Debug** menu, choose **Start Debugging**, or press **F5** on the keyboard.
+1. In the **Solution Explorer** window, right click the <em>&lt;project name&gt;</em>**Package** , and choose **Properties**.
+2. In the left pane, navigate to **Configuration Properties &gt; Driver Install &gt; Deployment**.
+3. Check Enable deployment, and check Import into driver store.
+4. For **Remote Computer Name**, specify the name of the target computer.
+5. Select **Install and Verify**.
+6. Click **Ok**.
+7. On the **Debug** menu, choose **Start Debugging**, or press **F5** on the keyboard.
 
 **Note**  Do *not* specify the hardware ID of your device under **Hardware ID Driver Update**. The hardware ID must be specified only in your driver's information (INF) file.
 
- 
+ 
 
 For more information about deploying the driver to the target system in Visual Studio Professional 2012, see [Deploying a Driver to a Test Computer](https://msdn.microsoft.com/windows-drivers/develop/deploying_a_driver_to_a_test_computer).
 

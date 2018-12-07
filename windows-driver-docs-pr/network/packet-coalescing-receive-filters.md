@@ -17,15 +17,15 @@ Starting with NDIS 6.30, [NDIS receive filters](https://msdn.microsoft.com/libra
 
     **Note**  As soon as the first packet that matches a receive filter is coalesced and the timer is started, the network adapter must coalesce additional packets that match receive filters without resetting and restarting the timer.
 
-     
+     
 
 Overlying drivers, such as protocol and filter drivers, download the packet coalescing receive filters to the miniport driver by issuing object identifier (OID) set requests of [OID\_RECEIVE\_FILTER\_SET\_FILTER](https://msdn.microsoft.com/library/windows/hardware/ff569795). For more information, see [Setting Packet Coalescing Receive Filters](setting-packet-coalescing-receive-filters.md).
 
 Overlying drivers can also query the packet coalescing receive filters downloaded to the miniport driver. Overlying drivers do this by issuing OID method requests of [OID\_RECEIVE\_FILTER\_ENUM\_FILTERS](https://msdn.microsoft.com/library/windows/hardware/ff569787) to the miniport driver. For more information, see [Querying Packet Coalescing Receive Filters](querying-packet-coalescing-receive-filters.md).
 
- 
+ 
 
- 
+ 
 
 
 

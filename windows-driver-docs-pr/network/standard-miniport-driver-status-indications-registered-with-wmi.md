@@ -22,9 +22,9 @@ If a WMI client registers with WMI to receive an NDIS WMI event, NDIS translates
 
 NDIS drivers can also generate custom status indications. For more information about custom status indications and WMI, see [Customized OIDs and Status Indications](customized-oids-and-status-indications.md).
 
- 
+ 
 
- 
+ 
 
 
 

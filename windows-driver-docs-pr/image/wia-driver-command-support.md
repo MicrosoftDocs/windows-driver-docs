@@ -1,6 +1,5 @@
 ---
 title: WIA Driver Command Support
-author: windows-driver-content
 description: WIA Driver Command Support
 ms.assetid: 9c552316-7dd6-4102-88d3-fab9732d1e5d
 ms.date: 04/20/2017
@@ -56,7 +55,7 @@ The following is a list of WIA device commands that can be issued to a minidrive
 </tbody>
 </table>
 
- 
+ 
 
 The WIA\_CMD\_XXX commands are described in the Microsoft Windows SDK documentation. You can include your own custom list of commands.
 

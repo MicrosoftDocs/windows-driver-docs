@@ -1,6 +1,5 @@
 ---
 title: Opening and Initializing a Serial Device
-author: windows-driver-content
 description: Opening and Initializing a Serial Device
 ms.assetid: 08266561-4738-4313-b53b-d60081e875c7
 keywords:
@@ -29,9 +28,9 @@ When Serial is used as a function driver, the following considerations apply to 
 
 -   Serenum must open an RS-232 port to enumerate the port. Clients that hold an RS-232 port open indefinitely should not use Serenum.
 
- 
+ 
 
- 
+ 
 
 
 

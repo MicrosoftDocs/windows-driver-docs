@@ -74,11 +74,11 @@ SBP2\\n\*&d\*
 
 Where:
 
--   *n\** is the Command Set ID number.
+- *n\** is the Command Set ID number.
 
--   *Gen* is one of the generic names that are listed in the Generic Type column of the following table.
+- *Gen* is one of the generic names that are listed in the Generic Type column of the following table.
 
--   *d\** is a number formed by taking the lower five bits of the upper two bytes of the logical unit number. This number is the numeric code for the generic name of the device that corresponds to the *Gen* string identifier.
+- *d\** is a number formed by taking the lower five bits of the upper two bytes of the logical unit number. This number is the numeric code for the generic name of the device that corresponds to the *Gen* string identifier.
 
 The fourth ID, listed in the previous example (SBP2\\*n\*&d\**), is unique among all the SBP2 hardware identifiers in that both *n\**, the Command Set ID number and *d\**, the numeric code of the generic name are in decimal, not hexadecimal.
 
@@ -146,11 +146,11 @@ This table lists the generic device names returned by the SBP2 port driver. Most
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

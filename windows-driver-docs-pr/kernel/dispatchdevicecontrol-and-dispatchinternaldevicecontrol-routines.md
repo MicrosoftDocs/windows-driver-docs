@@ -1,6 +1,5 @@
 ---
 title: DispatchDeviceControl and DispatchInternalDeviceControl Routines
-author: windows-driver-content
 description: DispatchDeviceControl and DispatchInternalDeviceControl Routines
 ms.assetid: 0bf8868e-bc5a-4fa7-9ff6-270f7a7bc850
 keywords: ["dispatch routines WDK kernel , DispatchDeviceControl routine", "dispatch routines WDK kernel , DispatchInternalDeviceControl routine", "DispatchDeviceControl routine", "DispatchInternalDeviceControl routine", "IRP_MJ_DEVICE_CONTROL I/O function code", "IRP_MJ_INTERNAL_DEVICE_CONTROL I/O function code", "internal device control dispatch routines WDK kernel", "device control dispatch routines WDK kernel"]
@@ -28,9 +27,9 @@ In addition, a driver can define a set of private I/O control codes that other d
 
 For specific information about the set of public I/O control codes that different kinds of drivers must support and about defining private I/O control codes, see the device-specific reference sections of the Windows Driver Kit (WDK).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 To register a co-installer for every device of a particular setup class, create a registry entry like the following under the **HKLM\\System\\CurrentControlSet\\Control\\CoDeviceInstallers** subkey:
 
 ```cpp
-{setup-class-GUID}: [REG_MULTI_SZ](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types) : "XyzCoInstall.dll,XyzCoInstallEntryPoint\0\0"
+{setup-class-GUID}: REG_MULTI_SZ : "XyzCoInstall.dll,XyzCoInstallEntryPoint\0\0"
 ```
 
 The system creates the **CoDeviceInstallers** key. *Setup-class-GUID* specifies the GUID for the [device setup class](device-setup-classes.md). If the co-installer applies to more than one class of devices, create a separate value entry for each setup class.
@@ -56,9 +56,9 @@ This sample INF copies the file *classXcoinst.dll* to the system directory and m
 
 Such an INF that registers a class co-installer can be activated by a right-click install or through an application that calls **SetupInstallFromInfSection**.
 
- 
+ 
 
- 
+ 
 
 
 

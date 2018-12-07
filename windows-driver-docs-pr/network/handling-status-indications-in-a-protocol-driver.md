@@ -20,9 +20,9 @@ For more information about indicating status from a filter driver, see [Filter M
 
 If the status indication is associated with an OID request, the underlying driver can set the **DestinationHandle** and **RequestId** members so that NDIS can provide the status indication to a specific protocol binding. For more information about OID requests, see [Protocol Driver OID Requests](protocol-driver-oid-requests.md).
 
- 
+ 
 
- 
+ 
 
 
 

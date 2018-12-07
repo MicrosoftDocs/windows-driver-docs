@@ -3,7 +3,6 @@ title: Bug Check 0x2E DATA_BUS_ERROR
 description: The DATA_BUS_ERROR bug check has a value of 0x0000002E. This typically indicates that a parity error in system memory has been detected.
 ms.assetid: 117adb1b-49aa-4c4e-ae01-730d1d653c02
 keywords: ["Bug Check 0x2E DATA_BUS_ERROR", "DATA_BUS_ERROR"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -55,7 +54,7 @@ The DATA\_BUS\_ERROR bug check has a value of 0x0000002E. This typically indicat
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -85,11 +84,11 @@ For additional error messages that might help pinpoint the device or driver that
 
 **Warning**   If your system partition is formatted with the file allocation table (FAT) file system, the long filenames used by Windows can be damaged if Scandisk or another Microsoft MS-DOS-based hard disk tool is used to verify the integrity of your hard disk from MS-DOS. Always use the version of Chkdsk that matches your Windows version.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

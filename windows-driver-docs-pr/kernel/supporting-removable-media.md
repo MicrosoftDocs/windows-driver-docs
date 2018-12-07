@@ -1,6 +1,5 @@
 ---
 title: Supporting Removable Media
-author: windows-driver-content
 description: Supporting Removable Media
 ms.assetid: f70c404c-8a38-4f53-8681-6efb52b30656
 keywords: ["removable media WDK kernel", "removable media WDK kernel , about removable-media devices", "IRPs WDK kernel , removable media", "kernel-mode drivers WDK , removable media"]
@@ -26,9 +25,9 @@ Drivers that work with removable-media devices therefore should be capable of do
 
 [Setting up IRPs in intermediate drivers](setting-up-irps-in-intermediate-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

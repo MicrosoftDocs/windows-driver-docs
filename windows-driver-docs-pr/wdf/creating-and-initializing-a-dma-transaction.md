@@ -1,6 +1,5 @@
 ---
 title: Creating and Initializing a DMA Transaction
-author: windows-driver-content
 description: Creating and Initializing a DMA Transaction
 ms.assetid: 1982c3fa-9e4a-4b26-8902-321223d9159f
 keywords:
@@ -41,9 +40,9 @@ Note that the maximum transfer length is limited by the number of [map registers
 
 After your driver creates and initializes a DMA transaction, the driver must [start the transaction](starting-a-dma-transaction.md).
 
- 
+ 
 
- 
+ 
 
 
 

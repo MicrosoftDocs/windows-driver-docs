@@ -20,9 +20,9 @@ The MSiSCSI\_PersistentLogins class is unpublished and is defined in *Operations
 
 When the WMI tool suite compiles this class definition, it produces the [**MSiSCSI\_PersistentLogins**](https://msdn.microsoft.com/library/windows/hardware/ff563093) data structure.
 
- 
+ 
 
- 
+ 
 
 
 

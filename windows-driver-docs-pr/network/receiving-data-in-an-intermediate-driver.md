@@ -26,9 +26,9 @@ Additional information about receiving data in intermediate drivers is also prov
 
 [Indicating Receive Network Data to Higher Level Drivers](indicating-receive-network-data-to-higher-level-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

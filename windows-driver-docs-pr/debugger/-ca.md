@@ -3,7 +3,6 @@ title: ca
 description: The ca extension displays information about a control area.
 ms.assetid: 7e9164a5-238e-4327-bd2a-a814bff5f7db
 keywords: ["control area", "ca Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -75,7 +74,7 @@ Flags that specify which information is displayed. This parameter is a bitwise O
 </tbody>
 </table>
 
- 
+ 
 
 If none of the last three flags are specified, all three types of control area are displayed.
 
@@ -98,7 +97,7 @@ If none of the last three flags are specified, all three types of control area a
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -188,9 +187,9 @@ Subsection 5. @ ff8637a0
     ReadOnly CopyOnWrite 
 ```
 
- 
+ 
 
- 
+ 
 
 
 

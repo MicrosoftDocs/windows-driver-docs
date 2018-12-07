@@ -30,9 +30,9 @@ Initiators must register the MSiSCSI\_LUNMappingInformation class using the name
 
 Initiators must create one instance of the MSiSCSI\_LUNMappingInformation class for each logical unit that it enumerates.
 
- 
+ 
 
- 
+ 
 
 
 

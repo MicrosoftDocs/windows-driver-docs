@@ -1,6 +1,5 @@
 ---
 title: Downloading Driver-Specific Files
-author: windows-driver-content
 description: Downloading Driver-Specific Files
 ms.assetid: 7ac5057a-32fb-4c3a-a5c3-3fc1217dbdc6
 keywords:
@@ -21,9 +20,9 @@ A client system creates a connection to a print server by calling **AddPrinterCo
 
 These functions and the DRIVER\_INFO\_3 structure are described in the Microsoft Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

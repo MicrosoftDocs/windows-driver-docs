@@ -3,7 +3,6 @@ title: usbkd.usbhubinfo
 description: The usbkd.hubinfo command displays information about a USB hub.
 ms.assetid: 01FF5822-0FCF-420F-AFF7-C91448DCBB98
 keywords: ["usbkd.usbhubinfo Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -96,9 +95,9 @@ Power caps (0 = not reported)
 
 [Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
- 
+ 
 
- 
+ 
 
 
 

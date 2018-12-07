@@ -1,6 +1,5 @@
 ---
 title: V4 Driver Connectivity Architecture
-author: windows-driver-content
 description: The v4 print driver model provides rich support for bidirectional communications via the Bidirectional Schema, referred to simply as Bidi.
 ms.assetid: ED7C4A2D-449E-4271-9348-86EAC03B6E64
 ms.date: 04/20/2017
@@ -54,7 +53,7 @@ The following table shows the files and the information that you must provide, d
 </tr>
 <tr class="even">
 <td>WSD</td>
-<td>The standard properties from the [WS-Print Specification](https://msdn.microsoft.com/library/windows/hardware/gg463146.aspx) or WS-Print v1.1 Specification are populated into the Bidi Schema by the port monitor.</td>
+<td>The standard properties from the <a href="https://msdn.microsoft.com/library/windows/hardware/gg463146.aspx" data-raw-source="[WS-Print Specification](https://msdn.microsoft.com/library/windows/hardware/gg463146.aspx)">WS-Print Specification</a> or WS-Print v1.1 Specification are populated into the Bidi Schema by the port monitor.</td>
 <td><p>You must provide the following file:</p>
 XML Bidi extension file</td>
 <td>Print device must support the WS-Print v1.1 protocol.</td>
@@ -78,7 +77,7 @@ XML Bidi extension file</td>
 </tbody>
 </table>
 
- 
+ 
 
 For more information, see [Bidirectional Communication Schema](https://msdn.microsoft.com/library/windows/hardware/ff545169.aspx) and [WSDMon port monitors](wsdmon-port-monitor.md). And to read about customizing port monitors to extend the Bidi schema, see [Customizing the Printer Port Monitors](https://msdn.microsoft.com/library/windows/hardware/ff547327.aspx).
 

@@ -1,6 +1,5 @@
 ---
 title: Hardware Support App (HSA) Steps for App Developers
-author: windows-driver-content
 description: Guide to developing a Hardware Support App (HSA) with custom capabilities
 keywords:
 - Custom , Capabilities

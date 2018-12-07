@@ -1,6 +1,5 @@
 ---
 title: Obtaining Configuration Information from Other Driver Stacks
-author: windows-driver-content
 description: Obtaining Configuration Information from Other Driver Stacks
 ms.assetid: ca0f3d51-24c6-44df-828f-6aeb2565c1ae
 keywords: ["I/O WDK kernel , device configuration space", "device configuration space WDK I/O", "configuration space WDK I/O", "space WDK I/O", "driver stacks WDK configuration info", "BUS_INTERFACE_STANDARD"]
@@ -24,9 +23,9 @@ Alternatively, you can install a filter programmatically using **SetupDi*Xxx*** 
 
 The filter driver can then access the bridge using the [**BUS\_INTERFACE\_STANDARD**](https://msdn.microsoft.com/library/windows/hardware/ff540707) interface.
 
- 
+ 
 
- 
+ 
 
 
 

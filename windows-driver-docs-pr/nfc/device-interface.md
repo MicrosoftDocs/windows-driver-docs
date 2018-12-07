@@ -1,6 +1,5 @@
 ---
 title: NFP device interface
-author: windows-driver-content
 description: A client application communicates with the proximity device through a defined set of I/O control codes sent to an open handle.
 ms.assetid: ED63FDCF-3253-4976-8571-82F4824923C5
 keywords:
@@ -53,11 +52,11 @@ The following table describes the reserved and vender specific control code rang
 | Reserved        | `CTL_CODE(FILE_DEVICE_NFP, 0x0000, *, *)` | `CTL_CODE(FILE_DEVICE_NFP, 0x00FF, *, *)` |
 | Vendor Specific | `CTL_CODE(FILE_DEVICE_NFP, 0x0100, *, *)` | `CTL_CODE(FILE_DEVICE_NFP, 0x01FF, *, *)` |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 ## Related topics
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [Near field proximity DDI reference](https://msdn.microsoft.com/library/windows/hardware/jj866056)  

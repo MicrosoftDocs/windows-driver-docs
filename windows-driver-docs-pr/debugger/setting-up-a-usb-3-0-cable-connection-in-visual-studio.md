@@ -2,14 +2,13 @@
 title: Setting Up Kernel-Mode Debugging over a USB 3.0 Cable in Visual Studio
 description: You can use Microsoft Visual Studio to set up and perform kernel-mode debugging over a USB 3.0 cable.
 ms.assetid: F8DD0475-13CE-464A-A491-AEFA962A96DB
-ms.author: domars
 ms.date: 04/10/2018
 ms.localizationpriority: medium
 ---
 
 # Setting Up Kernel-Mode Debugging over a USB 3.0 Cable in Visual Studio
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > This feature is not available in Windows 10, version 1507 and later versions of the WDK.
 >
 
@@ -102,7 +101,7 @@ If you entered **Bus Parameters** in Visual Studio, verify that *busparams* matc
 
 If you do not see the value you entered for **Bus Parameters**, enter this command:
 
-**bcdedit /set "{dbgsettings}" busparams** *b***.***d***.***f*
+**bcdedit /set "{dbgsettings}" busparams** <em>b</em>**.**<em>d</em>**.**<em>f</em>
 
 where *b*, *d*, and *f* are the bus, device, and function numbers of the xHCI controller on the target computer that you have chosen to use for debugging.
 
@@ -147,9 +146,9 @@ When you have finished using the xHCI host controller for debugging, enable sele
 
 [Setting Up Kernel-Mode Debugging in Visual Studio](setting-up-kernel-mode-debugging-in-visual-studio.md)
 
- 
+ 
 
- 
+ 
 
 
 

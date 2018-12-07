@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_COUNTRY_REGION_LIST
-author: windows-driver-content
 description: WDI_TLV_COUNTRY_REGION_LIST is a TLV that contains a list of country or region codes.
 ms.assetid: 675C176F-EE7A-41E0-9770-4D810F29E7BF
 ms.date: 07/18/2017
@@ -26,7 +25,7 @@ The size (in bytes) of the array of WDI\_COUNTRY\_REGION\_LIST elements. The arr
 
 **Note**  WDI\_COUNTRY\_REGION\_LIST is not a WDI structure. It is defined in the WDI TLV parser generator, and is used for documentation purposes only.
 
- 
+ 
 
 ## Values
 
@@ -35,7 +34,7 @@ The size (in bytes) of the array of WDI\_COUNTRY\_REGION\_LIST elements. The arr
 |--------------------------------|--------------------------------------|
 | WDI\_COUNTRY\_REGION\_LIST\[\] | An array of country or region codes. |
 
- 
+ 
 
 WDI\_COUNTRY\_REGION\_LIST consists of the following elements.
 
@@ -43,7 +42,7 @@ WDI\_COUNTRY\_REGION\_LIST consists of the following elements.
 |------------|---------------------------|
 | UINT8\[3\] | A country or region code. |
 
- 
+ 
 
 Requirements
 ------------
@@ -69,9 +68,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

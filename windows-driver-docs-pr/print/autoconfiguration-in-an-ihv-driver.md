@@ -1,6 +1,5 @@
 ---
 title: Autoconfiguration in an IHV Driver
-author: windows-driver-content
 description: Autoconfiguration in an IHV Driver
 ms.assetid: 81febae0-6fab-4226-9e98-7705d606caf4
 keywords:
@@ -24,11 +23,11 @@ A standalone IHV driver that supports autoconfiguration must meet the following 
 
 **Note**  It is not necessary to create a standalone driver in order to provide support for autoconfiguration. You can, instead, write a GPD or PPD file that takes advantage of one of the Microsoft printer class drivers. For details, see [In-box Support for Autoconfiguration](in-box-support-for-autoconfiguration.md).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

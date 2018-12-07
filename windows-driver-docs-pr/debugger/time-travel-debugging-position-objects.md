@@ -1,7 +1,6 @@
 ---
 title: TTD Position Objects
 description: This section describes the position model objects associated with time travel debugging.
-ms.author: domars
 ms.date: 12/19/2017
 ms.localizationpriority: medium
 ---
@@ -13,12 +12,14 @@ ms.localizationpriority: medium
 A position of FFFFFFFFFFFFFFFE:0 indicates the end of the trace.
 
 ## Properties
+
 | Property | Description |
 | --- | --- |
 | Sequence | The sequencing point relevant to the position. |
 | Steps | The number of steps from the sequence point in this thread to get to this position. |
 
 ## Methods
+
 | Method | Description |
 | --- | --- |
 | SeekTo() | Time travels to this position in the trace. |

@@ -1,6 +1,5 @@
 ---
 title: Load Order Groups for File System Filter Drivers
-author: windows-driver-content
 description: Load Order Groups for File System Filter Drivers
 ms.assetid: 57c9e4c6-186c-464f-ac83-c0669d46b189
 keywords:
@@ -144,11 +143,11 @@ Note that the load order groups are listed as they appear on the stack, which is
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

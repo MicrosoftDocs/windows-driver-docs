@@ -1,6 +1,5 @@
 ---
 title: ISNMP Methods
-author: windows-driver-content
 description: ISNMP Methods
 MS-HAID:
 - 'webfnc\_c6355a3d-d28e-4f42-9c03-3dcdd28bb3b9.xml'

@@ -26,7 +26,7 @@ The Windows Display Driver Model (WDDM) is available starting with Windows Vist
 
 **Note**  [Windows 2000 Display Driver Model (XDDM)](windows-2000-display-driver-model-design-guide.md) and VGA drivers will not compile on Windows 8 and later versions. If display hardware is attached to a Windows 8 computer without a driver that is certified to support WDDM 1.2 or later, the system defaults to running the Microsoft Basic Display Driver.
 
- 
+ 
 
 The following sections describe the Windows Display Driver Model (WDDM):
 
@@ -70,11 +70,11 @@ The following sections describe the Windows Display Driver Model (WDDM):
 
 **Note**  WDDM drivers do not directly use services of the Windows Graphics Device Interface (GDI) engine; therefore, the [GDI](gdi.md) section is not relevant to writing display drivers for the WDDM driver model.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

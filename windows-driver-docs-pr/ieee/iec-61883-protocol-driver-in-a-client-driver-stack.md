@@ -1,6 +1,5 @@
 ---
 title: IEC-61883 Protocol Driver in a Client Driver Stack
-author: windows-driver-content
 description: IEC-61883 Protocol Driver in a Client Driver Stack
 ms.assetid: cee0c0ee-7326-421c-af5a-b483c878b289
 keywords:
@@ -42,9 +41,9 @@ Starting from the top of the diagram:
 
 AV/C subunit drivers are just one of the possible types of IEC-61883 client drivers. Another example would be a driver that utilizes the HAVi protocol layered above IEC-61883. Although *61883.sys* and the IEC-61883 protocol do not have any AV/C or HAVi dependencies, clients of *61883.sys* can operate under different constraints. For example, AV/C subunit drivers are usually clients of *avc.sys*, which provides FCP-related functions and blocks upper-level drivers from sending FCP-related requests down the stack to be handled by *61883.sys*.
 
- 
+ 
 
- 
+ 
 
 
 

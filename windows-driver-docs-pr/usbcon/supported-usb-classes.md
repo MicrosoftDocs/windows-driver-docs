@@ -1,7 +1,6 @@
 ---
 Description: This topic lists the Microsoft-provided drivers for the supported USB device classes.
 title: USB device class drivers included in Windows
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -101,7 +100,7 @@ For more information, see [USB serial driver (Usbser.sys)](usb-driver-installati
 
 **Note**  Supports Subclass 02h (ACM)
 
- 
+ 
 
 Usbser.sys
 
@@ -131,7 +130,7 @@ When CDC support is enabled, the [USB Common Class Generic Parent Driver](usb-co
 
 **Note**  Supports Subclass 0Eh (MBIM)
 
- 
+ 
 
 wmbclass.sys
 
@@ -201,7 +200,7 @@ Printer (07h)
 
 **Note**  Usbprint.sys enumerates printer devices under the device set up class: **Printer** {4d36e979-e325-11ce-bfc1-08002be10318}.
 
- 
+ 
 
 Usbprint.sys
 
@@ -323,7 +322,7 @@ Note that for Windows Server 2003, Windows XP, and Windows 2000, special instruc
 **Note**  
 Usbccid.sys driver has been replaced by UMDF driver, WUDFUsbccidDriver.dll.
 
- 
+ 
 
 WUDFUsbccidDriver.dll
 
@@ -372,7 +371,7 @@ Recommended driver: [WinUSB (Winusb.sys)](winusb.md)
 Wireless Controller (E0h)
 **Note**  Supports Subclass 01h and Protocol 01h
 
- 
+ 
 
 **Bluetooth**
 
@@ -401,7 +400,7 @@ Miscellaneous (EFh)
 
 **Note**  Supports SubClass 04h and Protocol 01h
 
- 
+ 
 
 Rndismp.sys
 
@@ -430,7 +429,7 @@ Windows 10 for desktop editions
 
 Windows 10 Mobile
 Recommended driver: [WinUSB (Winusb.sys)](winusb.md)
- 
+ 
 
 ## Related topics
 [Microsoft-provided USB drivers](system-supplied-usb-drivers.md)  

@@ -1,6 +1,5 @@
 ---
 title: Page Size and Orientation
-author: windows-driver-content
 description: Page Size and Orientation
 ms.assetid: f744a00c-8614-4488-9a29-d193a0c4268f
 ms.date: 04/20/2017
@@ -26,9 +25,9 @@ For more information about working with page size and orientation, see the follo
 
 [Scanner Page Size and Orientation Code Examples](page-size-and-orientation-code-examples.md)
 
- 
+ 
 
- 
+ 
 
 
 

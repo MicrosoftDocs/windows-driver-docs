@@ -1,6 +1,5 @@
 ---
 title: Selecting and Deselecting an IEEE 1284 Device Attached to a Parallel Port
-author: windows-driver-content
 description: Selecting and Deselecting an IEEE 1284 Device Attached to a Parallel Port
 ms.assetid: 1a3ac1b1-9180-4b71-8740-70c6fbe9a885
 keywords:
@@ -32,15 +31,15 @@ The select requests require the least handling by the client because the system-
 
 **Note**   If a client uses only the [**PPARALLEL\_TRY\_SELECT\_ROUTINE**](https://msdn.microsoft.com/library/windows/hardware/ff544767) callback to attempt to select a parallel device, and other clients are contending for the parallel port, the system-supplied function driver for parallel ports might never allocate the port to the client. To ensure success, a client must use an [**IOCTL\_INTERNAL\_SELECT\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff544052) request. (The parallel port function driver queues, and subsequently processes, port allocate requests and device select requests in the order in which select device requests are received.)
 
- 
+ 
 
 After the parallel port function driver selects an IEEE 1284.3 device for a client, the client has exclusive access to the port and the selected IEEE 1284.3 device. The client must call the [**PPARALLEL\_DESELECT\_ROUTINE**](https://msdn.microsoft.com/library/windows/hardware/ff544504) callback to free the port and deselect the IEEE 1284.3 device. After a client frees the port, the parallel port function driver dequeues a pending request, if any, and processes the request.
 
 Microsoft Windows 2000 supports four daisy chain devices per port; however, Microsoft recommends using at most two daisy chain devices per port. Windows XP supports at most two daisy chain devices per port.
 
- 
+ 
 
- 
+ 
 
 
 

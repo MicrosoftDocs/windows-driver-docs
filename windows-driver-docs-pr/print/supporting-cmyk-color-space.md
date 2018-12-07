@@ -1,6 +1,5 @@
 ---
 title: Supporting CMYK Color Space
-author: windows-driver-content
 description: Supporting CMYK Color Space
 ms.assetid: b8ac5f1a-c903-4313-b7de-0335f4c44367
 keywords:
@@ -25,9 +24,9 @@ Regardless of whether color management is being handled by the application, syst
 
 Note that if the driver supports CMYK color space, it must also support halftoning. Thus if the driver sets the GCAPS\_CMYKCOLOR flag in DEVINFO, it must also set GCAPS\_HALFTONE.
 
- 
+ 
 
- 
+ 
 
 
 

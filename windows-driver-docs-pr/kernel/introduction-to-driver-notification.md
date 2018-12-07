@@ -1,6 +1,5 @@
 ---
 title: Introduction to Driver Notification
-author: windows-driver-content
 description: Introduction to Driver Notification
 ms.assetid: c0c09480-628a-4f12-b6a3-881cc3e12fd5
 keywords: ["driver notification WDK dynamic hardware partitioning , synchronous", "driver notification WDK dynamic hardware partitioning , asynchronous", "driver notification WDK dynamic hardware partitioning , memory notification"]
@@ -52,7 +51,7 @@ The following table identifies the different notification methods and whether th
 </tbody>
 </table>
 
- 
+ 
 
 ```cpp
 
@@ -76,7 +75,7 @@ When a new processor or memory module is added to the hardware partition, the op
 
 **Note**   All PnP notifications are asynchronous. Therefore, these notifications might not be received by a device driver until sometime after the operating system has started the processor or memory module.
 
- 
+ 
 
 When a device driver receives this notification, it can adjust some or all of the following items accordingly:
 
@@ -90,7 +89,7 @@ When a device driver receives this notification, it can adjust some or all of th
 
 **Important**   When you add a new processor to a hardware partition, the operating system does not send the PnP notification until after the new processor has been started and the operating system has begun scheduling threads on it. If a device driver must perform certain tasks before the operating system begins scheduling threads on the new processor, such as allocating a per processor data structure, you must use the synchronous notification method for the driver.
 
- 
+ 
 
 A device driver must register itself with the operating system to receive asynchronous driver notification. For more information, see [Registering for Asynchronous Driver Notification](registering-for-asynchronous-driver-notification.md).
 
@@ -102,7 +101,7 @@ For more information about the **\\KernelObjects\\HighMemoryCondition** event ob
 
 **Important**  If the operating system sets the **\\KernelObjects\\HighMemoryCondition** event object, the event only provides an indication that you might have dynamically added a new memory module to the hardware partition. There are other situations that can cause the operating system to set this event object. Therefore, starting with Windows Server 2008, we do not recommend that device drivers use this notification method. Instead, device drivers should use the asynchronous driver notification method.
 
- 
+ 
 
 This method is only applicable to memory. There is no corresponding notification mechanism for processors.
 
@@ -120,9 +119,9 @@ For more information about resource rebalancing, see [Stopping a Device to Rebal
 
 This method is only applicable to processors. The operating system does not initiate a system-wide resource rebalance when you add a new memory module to a hardware partition.
 
- 
+ 
 
- 
+ 
 
 
 

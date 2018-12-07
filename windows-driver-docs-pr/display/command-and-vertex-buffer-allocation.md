@@ -67,9 +67,9 @@ Buffers in a multibuffering set can be in different memory types, that is, in sy
 
 Occasionally, Direct3D requests the minimum size for the next buffer. If the size is too large, the driver should allocate the buffer in system memory (a backing surface). If the size is too small, the driver is permitted to provide a larger buffer. The driver should keep track of how many buffers and what memory types they are and clean up everything on exit.
 
- 
+ 
 
- 
+ 
 
 
 

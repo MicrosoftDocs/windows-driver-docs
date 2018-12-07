@@ -40,7 +40,7 @@ When clients send renewals for events, they can choose to manually initiate the 
 
 **Note**   Because test cases might have dependencies on the results of prior test cases, the test cases should be run in order. (For example, 1.3.8 depends on the result of 1.2.1.) There are no dependencies between testing scenarios (for example, between the Eventing and Attachment scenarios). There is an implicit dependency for all the advanced scenarios on the first scenario (Device and Service inspection) because failing to discover the TestDevice and inspect its hosted services will prevent the particular advanced scenario from being exercised.
 
- 
+ 
 
 This section includes the following topics:
 
@@ -54,9 +54,9 @@ This section includes the following topics:
 
 [Secure Communication Scenarios](secure-communication-scenarios.md)
 
- 
+ 
 
- 
+ 
 
 
 

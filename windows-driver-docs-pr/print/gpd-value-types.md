@@ -1,6 +1,5 @@
 ---
 title: GPD Value Types
-author: windows-driver-content
 description: GPD Value Types
 ms.assetid: 12108642-88fa-4753-9945-b72b00dc64e1
 keywords:
@@ -34,9 +33,9 @@ All [GPD file entries](gpd-file-entries.md) contain a value specification. The G
 
 [Rectangles](rectangles.md)
 
- 
+ 
 
- 
+ 
 
 
 

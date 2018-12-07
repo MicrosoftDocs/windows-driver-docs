@@ -1,6 +1,5 @@
 ---
 title: Evaluating ACPI Control Methods
-author: windows-driver-content
 description: Evaluating ACPI Control Methods
 ms.assetid: 00cf7530-30e6-4ff2-8a26-1c5143413b56
 keywords:

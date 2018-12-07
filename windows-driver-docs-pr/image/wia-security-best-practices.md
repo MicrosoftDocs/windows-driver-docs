@@ -1,6 +1,5 @@
 ---
 title: WIA Security Best Practices
-author: windows-driver-content
 description: WIA Security Best Practices
 ms.assetid: 3c8bd0e9-5832-4854-83ab-d422c617c67c
 ms.date: 04/20/2017
@@ -25,9 +24,9 @@ This section discusses WIA best security practices in the following areas:
 
 [Creating and Opening Processes by WIA Drivers](creating-and-opening-processes-by-wia-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

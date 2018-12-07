@@ -29,9 +29,9 @@ You can add and remove data elements from the prefix by creating or editing the 
 
 For instructions and a list of the data elements that you can include in the value of %TRACE\_FORMAT\_PREFIX%, see [Trace Message Prefix](trace-message-prefix.md).
 
- 
+ 
 
- 
+ 
 
 
 

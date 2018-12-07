@@ -3,7 +3,6 @@ title: .ecxr (Display Exception Context Record)
 description: The .ecxr command displays the context record that is associated with the current exception.
 ms.assetid: 020dfa99-ba25-4af3-929a-143d5c91ad87
 keywords: ["Display Exception Context Record (.cxr) command", "exceptions, exception context record", ".ecxr (Display Exception Context Record) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -49,7 +48,7 @@ The **.ecxr** command displays the context record that is associated with the cu
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -69,9 +68,9 @@ The [**.excr**](-excr--display-exception-context-record-.md) command is a synony
 
 [**.excr**](-excr--display-exception-context-record-.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: arbinst
 description: The arbinst extension displays information about a specified arbiter.
 ms.assetid: 6aa06283-9cd7-4579-9e5d-40bbaf53f782
 keywords: ["arbiter", "arbinst Windows Debugging"]
-ms.author: domars
 ms.date: 09/17/2018
 topic_type:
 - apiref
@@ -52,7 +51,7 @@ Specifies how much information to display for each arbiter. At present, the only
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -86,9 +85,9 @@ Memory Arbiter "PCI Memory (b=02)" at e0000106002ec458
     < none >
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Creating Reliable Kernel-Mode Drivers
-author: windows-driver-content
 description: Creating Reliable Kernel-Mode Drivers
 ms.assetid: 31bbf1fe-dc90-43e0-a53e-eca902ec343e
 keywords: ["kernel-mode drivers WDK , reliability", "reliability WDK kernel", "reliability WDK kernel , about reliable drivers", "IRPs WDK kernel , reliability issues"]
@@ -96,9 +95,9 @@ For more information about handling IRPs correctly, see [Additional Errors in Ha
 
 [Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff545448) is the most important tool you can use to ensure the reliability of your driver. Driver Verifier can check for a variety of common driver problems, including some of those discussed in this section. However, use of Driver Verifier does not replace careful, thoughtful software design.
 
- 
+ 
 
- 
+ 
 
 
 

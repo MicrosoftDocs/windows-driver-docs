@@ -32,21 +32,21 @@ ms.localizationpriority: medium
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[Stampinf](stampinf.md)</p></td>
+<td align="left"><p><a href="stampinf.md" data-raw-source="[Stampinf](stampinf.md)">Stampinf</a></p></td>
 <td align="left"><p>Stampinf (Stampinf.exe) is a tool that you can use to update common INF and INX file directives when you build the driver.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[InfVerif](infverif.md)</p></td>
+<td align="left"><p><a href="infverif.md" data-raw-source="[InfVerif](infverif.md)">InfVerif</a></p></td>
 <td align="left"><p>InfVerif (InfVerif.exe) is a tool that you can use to test a driver INF file. In addition to reporting INF syntax problems, the tool reports if the INF file is universal.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

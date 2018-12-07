@@ -1,6 +1,5 @@
 ---
 title: Object-Based
-author: windows-driver-content
 description: Object-Based
 ms.assetid: 53024912-5e6e-4738-81b5-dacc59c22c3f
 keywords: ["object-based drivers WDK kernel", "object opacity WDK kernel", "opacity WDK kernel"]
@@ -55,11 +54,11 @@ Some system-defined objects are *opaque*: only the defining system component is 
 
 **Note**   To maintain driver portability, drivers must use the system-supplied support routines to manipulate system-defined objects. The defining system component can change the internal structure of its object types at any time.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

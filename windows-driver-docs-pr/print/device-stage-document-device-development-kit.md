@@ -1,6 +1,5 @@
 ---
 title: Device Stage Document Device Development Kit
-author: windows-driver-content
 description: Device Stage Document Device Development Kit
 ms.assetid: b66912d9-27f5-41e2-9e10-1e16aca14a8a
 ms.date: 04/20/2017

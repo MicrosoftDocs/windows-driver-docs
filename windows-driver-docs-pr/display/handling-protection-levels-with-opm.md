@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 # Handling Protection Levels with OPM
 
 
-Each output protection type (for example, Analog Copy Protection (ACP), [Content Generation Management System Analog (CGMS-A)](cgms-a-standards.md), High-bandwidth Digital Content Protection (HDCP), and DisplayPort Content Protection (DPCP)) has protection levels associated with it. For more information about ACP, see the [Rovi (formerly Macrovision)](http://go.microsoft.com/fwlink/p/?linkid=71273) website. For more information about HDCP, see the [HDCP Specification Revision 1.1](http://go.microsoft.com/fwlink/p/?linkid=38728). For more information about DisplayPort, see the [DisplayPort](http://go.microsoft.com/fwlink/p/?linkid=71382) Web article.
+Each output protection type (for example, Analog Copy Protection (ACP), [Content Generation Management System Analog (CGMS-A)](cgms-a-standards.md), High-bandwidth Digital Content Protection (HDCP), and DisplayPort Content Protection (DPCP)) has protection levels associated with it. For more information about ACP, see the [Rovi (formerly Macrovision)](https://go.microsoft.com/fwlink/p/?linkid=71273) website. For more information about HDCP, see the [HDCP Specification Revision 1.1](https://go.microsoft.com/fwlink/p/?linkid=38728). For more information about DisplayPort, see the [DisplayPort](https://go.microsoft.com/fwlink/p/?linkid=71382) Web article.
 
 A graphics adapter is not required to support any output protection types. However, a graphics adapter must accurately report the protection types that it supports for each of the graphics adapter's outputs and the currently set protection level for each output.
 
@@ -35,9 +35,9 @@ The following sections describe the precedence that is placed on protection leve
 
 [Determining the Protection Level for a Physical Output](determining-the-protection-level-for-a-physical-output.md)
 
- 
+ 
 
- 
+ 
 
 
 

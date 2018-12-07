@@ -1,6 +1,5 @@
 ---
 title: Customized Features
-author: windows-driver-content
 description: Customized Features
 ms.assetid: a7dfed02-3505-4ed6-86cf-efb273f76ad6
 keywords:
@@ -45,9 +44,9 @@ Customized features are those that are specific to your hardware. You create uni
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -30,9 +30,9 @@ If you do not specify the name of the trace session (in this case, "MyTrace"), T
 
 If you do not specify flags or levels, some providers might not generate trace messages, even when they are enabled.
 
- 
+ 
 
- 
+ 
 
 
 

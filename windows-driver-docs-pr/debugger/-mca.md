@@ -3,7 +3,6 @@ title: mca
 description: On an x86 target computer, the mca extension displays the machine check architecture (MCA) registers. On an Itanium target computer, the mca extension displays the MCA error record.
 ms.assetid: 452bfbf2-fcab-4a71-bfd0-b02afe30df74
 keywords: ["machine check architecture (MCA)", "MCA (machine check architecture)", "mca Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -75,7 +74,7 @@ Displays to include the platform bus section.
 </tbody>
 </table>
 
- 
+ 
 
 This extension command can only be used with an x86-based or Itanium target computer.
 
@@ -617,9 +616,9 @@ CP F/M/S Manufacturer  MHz Update Signature Features
  0 6,5,1 GenuineIntel  334 0000004000000000 00001fff
 ```
 
- 
+ 
 
- 
+ 
 
 
 

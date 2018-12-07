@@ -1,6 +1,5 @@
 ---
 title: OID_WWAN_SMS_READ
-author: windows-driver-content
 description: OID_WWAN_SMS_READ reads SMS text messages stored in the MB device, or Subscriber Identity Module (SIM card), or any other auxiliary non-volatile memory or memories.
 ms.assetid: f4dbb7e8-1348-4fa8-abac-f644a443df48
 ms.date: 08/08/2017
@@ -64,9 +63,9 @@ Requirements
 
 [WWAN SMS Operations](https://msdn.microsoft.com/library/windows/hardware/ff559131)
 
- 
+ 
 
- 
+ 
 
 
 

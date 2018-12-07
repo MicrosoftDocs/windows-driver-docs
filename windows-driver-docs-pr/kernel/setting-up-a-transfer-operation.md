@@ -1,6 +1,5 @@
 ---
 title: Setting Up a Transfer Operation
-author: windows-driver-content
 description: Setting Up a Transfer Operation
 ms.assetid: cabac16d-b946-4b96-af2c-5fd0a0d848da
 keywords: ["bus-master DMA WDK kernel", "DMA transfers WDK kernel , bus-master DMA", "adapter objects WDK kernel , bus-master DMA", "logical address ranges WDK DMA", "addresses WDK DMA", "transfer operations WDK DMA"]
@@ -72,15 +71,15 @@ Never pass a pointer to the **Length** in the driver's I/O stack location of an 
 
 Doing this could destroy the value in the current IRP, making it impossible to determine whether the driver has transferred all the requested data.
 
- 
+ 
 
 At the end of each DMA operation, the driver must call [**FlushAdapterBuffers**](https://msdn.microsoft.com/library/windows/hardware/ff545917) with a valid adapter object pointer and the *MapRegisterBase* handle to be sure that all the data has been transferred, and to release the physical-to-logical mappings for the current DMA operation. If the driver must set up additional DMA operations to satisfy the current IRP, it must call **FlushAdapterBuffers** after each transfer operation is complete.
 
 When all the requested transfer is complete or the driver must return an error status for the IRP, the driver should call [**FreeMapRegisters**](https://msdn.microsoft.com/library/windows/hardware/ff546513) immediately after its last call to **FlushAdapterBuffers** in order to get the best possible throughput for the bus-master adapter. In its call to **FreeMapRegisters**, the driver must pass the adapter object pointer that it passed in the preceding call to **AllocateAdapterChannel**.
 
- 
+ 
 
- 
+ 
 
 
 

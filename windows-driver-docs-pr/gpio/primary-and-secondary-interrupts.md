@@ -1,6 +1,5 @@
 ---
 title: Primary and Secondary Interrupts
-author: windows-driver-content
 description: GPIO interrupt handling is inherently a two-stage process.
 ms.assetid: 731B0E36-4480-4B69-931E-1F7B40B18911
 ms.date: 04/20/2017
@@ -16,9 +15,9 @@ GpioClx implements an ISR to service interrupt requests that the GPIO controller
 
 Typically, this second ISR belongs to the driver for the peripheral device that asserted the interrupt on the GPIO pin. For information about how a peripheral device driver logically connects its ISR to a GPIO interrupt pin, see [GPIO-Based Interrupt Resources](https://msdn.microsoft.com/library/windows/hardware/hh698246).
 
- 
+ 
 
- 
+ 
 
 
 

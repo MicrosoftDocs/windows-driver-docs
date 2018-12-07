@@ -27,9 +27,9 @@ In Microsoft Windows XP and later, the [KMixer system driver](https://msdn.micro
 
 A KSNODETYPE\_PROLOGIC\_ENCODER node should support the [**KSPROPERTY\_AUDIO\_SURROUND\_ENCODE**](ksproperty-audio-surround-encode.md) property, which is used to enable and disable the node.
 
- 
+ 
 
- 
+ 
 
 
 

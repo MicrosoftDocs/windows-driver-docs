@@ -1,6 +1,5 @@
 ---
 title: Controlling Image Quality
-author: windows-driver-content
 description: Controlling Image Quality
 ms.assetid: b6d25178-6726-4ce0-ab34-efeedc618044
 keywords:
@@ -35,10 +34,10 @@ The options that Unidrv should select when a radio button is pressed are specifi
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>*<strong>DraftQualitySettings</strong></p></td>
+<td><p><em><strong>DraftQualitySettings</strong></p></td>
 </tr>
 <tr class="even">
-<td><p>*<strong>BetterQualitySettings</strong></p></td>
+<td><p></em><strong>BetterQualitySettings</strong></p></td>
 </tr>
 <tr class="odd">
 <td><p>*<strong>BestQualitySettings</strong></p></td>
@@ -46,7 +45,7 @@ The options that Unidrv should select when a radio button is pressed are specifi
 </tbody>
 </table>
 
- 
+ 
 
 Each of these entries is associated with one of the radio buttons, and each entry accepts a list of options. When a user selects the corresponding button, Unidrv goes through the list and sets the specified options.
 
@@ -69,7 +68,7 @@ An additional, required entry specifies the default image quality. The format is
 </tbody>
 </table>
 
- 
+ 
 
 where *DefaultQuality* is one of `DRAFTQUALITY`, `BETTERQUALITY`, or `BESTQUALITY`.
 
@@ -156,9 +155,9 @@ When using the quality setting GPD entries, the following rules must be observed
 
 If a feature is included in a conditional statement that specifies quality settings, the parser sets the feature's \*UpdateQualityMacro? attribute to **TRUE**. (See [Feature Attributes](feature-attributes.md).)
 
- 
+ 
 
- 
+ 
 
 
 

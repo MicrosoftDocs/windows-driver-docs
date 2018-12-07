@@ -1,6 +1,5 @@
 ---
 title: Identifying Device Functions in MFPs
-author: windows-driver-content
 description: Identifying Device Functions in MFPs
 ms.assetid: 14016c43-b93a-4009-848b-1bcf3f1d94b6
 ms.date: 04/20/2017
@@ -18,9 +17,9 @@ For devices that may connect through more than one transport (that is, device co
 
 For more information about ContainerIDs, see [Windows Device Experience](http://go.microsoft.com/fwlink/p/?linkid=145535).
 
- 
+ 
 
- 
+ 
 
 
 

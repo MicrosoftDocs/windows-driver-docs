@@ -79,9 +79,9 @@ Specifies the length, in bytes, of the buffer pointed to by *Irp-&gt;UserBuffer*
 
 [**IRP\_MJ\_QUERY\_QUOTA**](irp-mj-query-quota.md)
 
- 
+ 
 
- 
+ 
 
 
 

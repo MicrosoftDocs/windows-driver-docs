@@ -1,6 +1,5 @@
 ---
 title: Streaming Minidrivers
-author: windows-driver-content
 description: Streaming Minidrivers
 ms.assetid: 9f669a1a-50fd-482f-a5af-28e5685dc68c
 keywords:
@@ -25,7 +24,7 @@ ms.localizationpriority: medium
 
 **Note**   This section details the outdated *Stream.sys* class driver. With the release of Microsoft Windows XP, Microsoft supports *Stream.sys* only for existing drivers. As of this release, Microsoft recommends that vendors consider developing new video or audio/video multimedia drivers using the AVStream class driver model. See details in the [AVStream Overview](avstream-overview.md). If developing an audio-only driver, you should write an audio miniport driver under the Microsoft-provided *Portcls.sys* class driver. For details, see [Audio Miniport Drivers](https://msdn.microsoft.com/library/windows/hardware/ff536206).
 
- 
+ 
 
 Vendors can support video-only or audio/video devices by providing a minidriver that runs under the Microsoft-provided *Stream.sys* class driver. In this documentation, vendor-provided minidrivers under *Stream.sys* are referred to as *streaming minidrivers*.
 
@@ -57,9 +56,9 @@ The stream class driver is designed to make writing hardware drivers for streami
 
 -   Only one device object is created per adapter. Multiple subdevices (called *streams*) supported by the adapter are represented by kernel streaming pins.
 
- 
+ 
 
- 
+ 
 
 
 

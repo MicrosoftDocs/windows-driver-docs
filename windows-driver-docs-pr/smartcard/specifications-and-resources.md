@@ -30,9 +30,9 @@ To work with the smart card support in Microsoft Windows operating systems, smar
 
 -   [Smart Card Minidriver Specification](https://msdn.microsoft.com/library/windows/hardware/dn631754)
 
- 
+ 
 
- 
+ 
 
 
 

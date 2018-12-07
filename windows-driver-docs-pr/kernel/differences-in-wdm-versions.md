@@ -1,6 +1,5 @@
 ---
 title: Differences in WDM Versions
-author: windows-driver-content
 description: Differences in WDM Versions
 ms.assetid: 735b01c4-4eff-4c8e-ab60-3813d1830112
 keywords: ["WDM drivers WDK kernel , versions", "versions WDK WDM", "compatibility WDK WDM", "cross-system compatibility WDK WDM", "Plug and Play WDK WDM", "driver support routines WDK WDM", "power management WDK WDM"]
@@ -56,9 +55,9 @@ Kernel-mode WDM drivers for Windows 98/Me must follow certain guidelines for usi
 
 Windows 98/Me provides a fixed number of worker threads that might not be adequate for some drivers.
 
- 
+ 
 
- 
+ 
 
 
 

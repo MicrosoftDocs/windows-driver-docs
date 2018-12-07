@@ -1,6 +1,5 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_SCAN_COMPLETE
-author: windows-driver-content
 description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_SCAN_COMPLETE to indicate the completion of OID_WDI_TASK_SCAN.
 ms.assetid: ed4b53e2-889d-4ce6-b9ea-92a95af28a8a
 ms.date: 07/18/2017
@@ -18,7 +17,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_SCAN\_COMPLETE to indicate t
 |--------|
 | Port   |
 
- 
+ 
 
 ## Payload data
 
@@ -54,9 +53,9 @@ Requirements
 
 [OID\_WDI\_TASK\_SCAN](oid-wdi-task-scan.md)
 
- 
+ 
 
- 
+ 
 
 
 

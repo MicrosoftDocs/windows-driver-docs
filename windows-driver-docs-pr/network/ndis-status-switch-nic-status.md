@@ -1,6 +1,5 @@
 ---
 title: NDIS_STATUS_SWITCH_NIC_STATUS
-author: windows-driver-content
 description: The NDIS_STATUS_SWITCH_NIC_STATUS status indication is used to encapsulate a status indication from a physical network adapter that is bound to the external network adapter of the Hyper-V extensible switch.
 ms.assetid: 51A3BE6A-35F1-4AF0-91C0-94681640BD64
 ms.date: 07/18/2017
@@ -65,9 +64,9 @@ Requirements
 
 [**NDIS\_STATUS\_RECEIVE\_FILTER\_CURRENT\_CAPABILITIES**](ndis-status-receive-filter-current-capabilities.md)
 
- 
+ 
 
- 
+ 
 
 
 

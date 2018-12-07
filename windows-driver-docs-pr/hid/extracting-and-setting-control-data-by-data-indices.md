@@ -1,6 +1,5 @@
 ---
 title: Extracting and Setting Control Data by Data Indices
-author: windows-driver-content
 description: Extracting and Setting Control Data by Data Indices
 ms.assetid: d26d169f-4116-4d81-94c7-63c92d22877d
 keywords: ["HID reports WDK , setting control data", "reports WDK HID , setting control data", "HID reports WDK , extracting control data", "reports WDK HID , extracting control data", "extracting HID control data", "data index WDK HID", "index WDK HID data"]
@@ -26,9 +25,9 @@ By calling these routines, an application or driver can most efficiently obtain 
 
 An application or driver uses the data indices specified in a collection's [button capability arrays](button-capability-arrays.md) and [value capability arrays](value-capability-arrays.md) to identify HID usages.
 
- 
+ 
 
- 
+ 
 
 
 

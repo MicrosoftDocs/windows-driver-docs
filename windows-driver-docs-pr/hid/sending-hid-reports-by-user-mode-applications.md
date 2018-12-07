@@ -1,6 +1,5 @@
 ---
 title: Sending HID Reports by User-Mode Applications
-author: windows-driver-content
 description: Sending HID Reports by User-Mode Applications
 ms.assetid: 265d7393-62be-41ad-8f87-efcfa462de1f
 ms.localizationpriority: medium
@@ -28,9 +27,9 @@ Sends an output report to a HID collection (Windows XP and later versions).
 <a href="" id="hidd-setfeature"></a>[**HidD\_SetFeature**](https://msdn.microsoft.com/library/windows/hardware/ff539684)  
 Sends a feature report to a HID collection.
 
- 
+ 
 
- 
+ 
 
 
 

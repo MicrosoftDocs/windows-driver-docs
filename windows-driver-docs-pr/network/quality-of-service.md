@@ -29,9 +29,9 @@ Both CO\_CALL\_MANAGER\_PARAMETERS and CO\_MEDIA\_PARAMETERS contain generic par
 
 For more information about QoS operations, see [Client-Initiated Request to Change Call Parameters](client-initiated-request-to-change-call-parameters.md) and [Incoming Request to Change Call Parameters](incoming-request-to-change-call-parameters.md).
 
- 
+ 
 
- 
+ 
 
 
 

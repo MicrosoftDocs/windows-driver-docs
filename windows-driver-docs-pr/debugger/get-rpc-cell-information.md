@@ -3,7 +3,6 @@ title: Get RPC Cell Information
 description: Get RPC Cell Information
 ms.assetid: 7dd5e77e-914d-4b00-90c5-92705eebf436
 keywords: ["RPC cell information"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -33,9 +32,9 @@ For details on the optional parameters, see [**DbgRpc Command-Line Options**](db
 
 For a similar example using the RPC debugger extensions, see [**!rpcexts.getdbgcell**](-rpcexts-getdbgcell.md).
 
- 
+ 
 
- 
+ 
 
 
 

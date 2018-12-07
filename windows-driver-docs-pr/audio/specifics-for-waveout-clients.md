@@ -22,9 +22,9 @@ Microsoft Windows does not currently support the looping of a wave header with a
 
 When non-PCM data is playing, a call to [**waveOutBreakLoop**](https://msdn.microsoft.com/library/windows/desktop/dd743854) fails with return code MMSYSERR\_INVALPARAM.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Features of System-Supplied Parallel Drivers
-author: windows-driver-content
 description: Features of System-Supplied Parallel Drivers
 ms.assetid: 6d579a88-4608-4333-9789-e10c562fc644
 keywords:
@@ -54,11 +53,11 @@ The system-supplied parallel drivers support:
 
 The system-supplied parallel drivers provide the following *partial* support for IEEE 1284.3 devices:
 
--   A combination of device control requests and callback routines that is functionally equivalent to the *Service Provider Interface*. See *Service Provider Interface (SPI)* in the IEEE P1284.3 specification.
+- A combination of device control requests and callback routines that is functionally equivalent to the *Service Provider Interface*. See *Service Provider Interface (SPI)* in the IEEE P1284.3 specification.
 
--   The selection and operation of more than one IEEE 1284.3 daisy chain device and an end-of-chain device*, as* defined in the *Daisy Chaining* clause of the IEEE P1284.3 specification.
+- The selection and operation of more than one IEEE 1284.3 daisy chain device and an end-of-chain device<em>, as</em> defined in the *Daisy Chaining* clause of the IEEE P1284.3 specification.
 
--   Basic services to support the data link layer, as specified in the *Data link layer* clause of the IEEE P1284.3 specification -- see [Connecting to an IEEE 1284.3 Data Link Device](connecting-to-an-ieee-1284-3-data-link-device.md).
+- Basic services to support the data link layer, as specified in the *Data link layer* clause of the IEEE P1284.3 specification -- see [Connecting to an IEEE 1284.3 Data Link Device](connecting-to-an-ieee-1284-3-data-link-device.md).
 
 The system-supplied parallel drivers *do not support* the following IEEE 1284.3 specifications:
 
@@ -94,9 +93,9 @@ For information about parallel port and device standards, see the following spec
 
 -   IEEE P1284.3, Standard for Interface and Protocol Extensions to IEEE 1284-1994 Compliant Peripherals and Host Adapters, Draft D6.00, December 3, 1998
 
- 
+ 
 
- 
+ 
 
 
 

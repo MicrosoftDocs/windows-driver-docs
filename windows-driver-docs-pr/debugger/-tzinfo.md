@@ -3,7 +3,6 @@ title: tzinfo
 description: The tzinfo extension displays the contents of the specified thermal zone information structure.
 ms.assetid: a30826d8-b7c5-4fbc-a3c3-b7a994eaf7fe
 keywords: ["thermal zone information", "tzinfo Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -48,15 +47,15 @@ The address of a thermal zone information structure that you want to display.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
 To view the system's power capabilities, use the [**!pocaps**](-pocaps.md) extension command. To view the system's power policy, use the [**!popolicy**](-popolicy.md) extension command. For information about power capabilities and power policy, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals*, by Mark Russinovich and David Solomon. (These resources may not be available in some languages and countries.)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Laptop/slate mode toggling between states
-author: windows-driver-content
 description: This topic contains sample code that toggles the laptop/slate mode indicator state.
 ms.assetid: C5D9B586-EED7-4DC7-8BFF-3AB3A972307D
 ms.localizationpriority: medium
@@ -42,9 +41,9 @@ int __cdecl ToggleConversionIndicator(
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

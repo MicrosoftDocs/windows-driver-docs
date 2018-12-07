@@ -1,6 +1,5 @@
 ---
 title: Testing Sensor Events
-author: windows-driver-content
 description: The Sensor Diagnostic Tool lets you test support for events in your driver and firmware.
 ms.assetid: 92C067E0-3787-441E-8A2D-C48367ECE471
 ms.date: 04/20/2017
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 
 
 The Sensor Diagnostic Tool lets you test support for events in your driver and firmware.
- 
+ 
 
 ## Configuring the Sensor Diagnostic Tool to Capture Event Data
 

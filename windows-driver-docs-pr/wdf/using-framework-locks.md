@@ -1,6 +1,5 @@
 ---
 title: Using Framework Locks
-author: windows-driver-content
 description: Using Framework Locks
 ms.assetid: d036a2d5-a9e9-4375-84b0-fbd797ee6f13
 keywords:
@@ -53,9 +52,9 @@ For interrupt objects that support DIRQL interrupt handling, framework interrupt
 
 For interrupt objects that support passive-level handling, framework interrupt locks are wait locks. After your driver acquires an interrupt wait lock, the driver executes at IRQL = PASSIVE\_LEVEL until it releases the lock. For more information about passive-level handling, see [Supporting Passive Level Interrupts](supporting-passive-level-interrupts.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,7 +1,6 @@
 ---
 Description: This topic describes how a USB client driver can use Windows Driver Model (WDM) driver routines to allocate and format an URB before sending the request to the Microsoft-provided USB driver stack.
 title: Allocating and Building URBs
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -84,35 +83,35 @@ The following table summarizes the changes in URB routines.
 </tr>
 <tr class="even">
 <td>To create an URB...</td>
-<td>The client driver allocates a [<strong>URB</strong>](https://msdn.microsoft.com/library/windows/hardware/ff538923) structure and formats the structure depending on the request.
-<p>The client driver allocates the URB structure on the stack, or the driver allocates the structure in nonpaged pool by calling [<strong>ExAllocatePoolWithTag</strong>](https://msdn.microsoft.com/library/windows/hardware/ff544520).</p></td>
-<td>The client driver calls [<strong>USBD_UrbAllocate</strong>](https://msdn.microsoft.com/library/windows/hardware/hh406250) and receives a pointer to the new [<strong>URB</strong>](https://msdn.microsoft.com/library/windows/hardware/ff538923) structure, which is allocated by the USB driver stack. The URB might be associated with an URB context, depending on the USBD interface version of the underlying USB driver stack.</td>
+<td>The client driver allocates a <a href="https://msdn.microsoft.com/library/windows/hardware/ff538923" data-raw-source="[&lt;strong&gt;URB&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff538923)"><strong>URB</strong></a> structure and formats the structure depending on the request.
+<p>The client driver allocates the URB structure on the stack, or the driver allocates the structure in nonpaged pool by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff544520" data-raw-source="[&lt;strong&gt;ExAllocatePoolWithTag&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff544520)"><strong>ExAllocatePoolWithTag</strong></a>.</p></td>
+<td>The client driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/hh406250" data-raw-source="[&lt;strong&gt;USBD_UrbAllocate&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh406250)"><strong>USBD_UrbAllocate</strong></a> and receives a pointer to the new <a href="https://msdn.microsoft.com/library/windows/hardware/ff538923" data-raw-source="[&lt;strong&gt;URB&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff538923)"><strong>URB</strong></a> structure, which is allocated by the USB driver stack. The URB might be associated with an URB context, depending on the USBD interface version of the underlying USB driver stack.</td>
 </tr>
 <tr class="odd">
 <td>To create an URB for a select-configuration request...</td>
-<td>The client driver calls the [<strong>USBD_CreateConfigurationRequestEx</strong>](https://msdn.microsoft.com/library/windows/hardware/ff539029) routine that returns a pointer to the new URB that is created and formatted by the USB driver stack.</td>
-<td>The client driver calls [<strong>USBD_SelectConfigUrbAllocateAndBuild</strong>](https://msdn.microsoft.com/library/windows/hardware/hh406243) and receives a pointer to the new [<strong>URB</strong>](https://msdn.microsoft.com/library/windows/hardware/ff538923) structure, which is allocated and formatted (for the select-configuration request) by the USB driver stack. The URB might be associated with an URB context, depending on the USBD interface version of the underlying USB driver stack.</td>
+<td>The client driver calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff539029" data-raw-source="[&lt;strong&gt;USBD_CreateConfigurationRequestEx&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff539029)"><strong>USBD_CreateConfigurationRequestEx</strong></a> routine that returns a pointer to the new URB that is created and formatted by the USB driver stack.</td>
+<td>The client driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/hh406243" data-raw-source="[&lt;strong&gt;USBD_SelectConfigUrbAllocateAndBuild&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh406243)"><strong>USBD_SelectConfigUrbAllocateAndBuild</strong></a> and receives a pointer to the new <a href="https://msdn.microsoft.com/library/windows/hardware/ff538923" data-raw-source="[&lt;strong&gt;URB&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff538923)"><strong>URB</strong></a> structure, which is allocated and formatted (for the select-configuration request) by the USB driver stack. The URB might be associated with an URB context, depending on the USBD interface version of the underlying USB driver stack.</td>
 </tr>
 <tr class="even">
 <td>To create a URB for an select-interface request...</td>
-<td>The client driver allocates a [<strong>URB</strong>](https://msdn.microsoft.com/library/windows/hardware/ff538923) structure and uses the [<strong>_URB_SELECT_INTERFACE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540425) structure to define the format of a select interface command for a USB device.</td>
-<td>The client driver calls [<strong>USBD_SelectInterfaceUrbAllocateAndBuild</strong>](https://msdn.microsoft.com/library/windows/hardware/hh406245) and receives a pointer to the new [<strong>URB</strong>](https://msdn.microsoft.com/library/windows/hardware/ff538923) structure, which is allocated and formatted (for the select-interface request) by the USB driver stack. The URB might be associated with an URB context, depending on the USBD interface version of the underlying USB driver stack.</td>
+<td>The client driver allocates a <a href="https://msdn.microsoft.com/library/windows/hardware/ff538923" data-raw-source="[&lt;strong&gt;URB&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff538923)"><strong>URB</strong></a> structure and uses the <a href="https://msdn.microsoft.com/library/windows/hardware/ff540425" data-raw-source="[&lt;strong&gt;_URB_SELECT_INTERFACE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540425)"><strong>_URB_SELECT_INTERFACE</strong></a> structure to define the format of a select interface command for a USB device.</td>
+<td>The client driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/hh406245" data-raw-source="[&lt;strong&gt;USBD_SelectInterfaceUrbAllocateAndBuild&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh406245)"><strong>USBD_SelectInterfaceUrbAllocateAndBuild</strong></a> and receives a pointer to the new <a href="https://msdn.microsoft.com/library/windows/hardware/ff538923" data-raw-source="[&lt;strong&gt;URB&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff538923)"><strong>URB</strong></a> structure, which is allocated and formatted (for the select-interface request) by the USB driver stack. The URB might be associated with an URB context, depending on the USBD interface version of the underlying USB driver stack.</td>
 </tr>
 <tr class="odd">
 <td>To associate an URB with an IRP...</td>
-<td>The client driver gets a pointer to the next IRP stack location by calling [<strong>IoGetNextIrpStackLocation</strong>](https://msdn.microsoft.com/library/windows/hardware/ff549266). Then the client driver manually sets the <strong>Parameters.Others.Argument1</strong> member of the stack location to the address of the [<strong>URB</strong>](https://msdn.microsoft.com/library/windows/hardware/ff538923) structure.</td>
-<td>The client driver gets a pointer to the next IRP stack location by calling [<strong>IoGetNextIrpStackLocation</strong>](https://msdn.microsoft.com/library/windows/hardware/ff549266). Then the client driver calls [<strong>USBD_AssignUrbToIoStackLocation</strong>](https://msdn.microsoft.com/library/windows/hardware/hh406228) to associate a the URB with the stack location.</td>
+<td>The client driver gets a pointer to the next IRP stack location by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff549266" data-raw-source="[&lt;strong&gt;IoGetNextIrpStackLocation&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549266)"><strong>IoGetNextIrpStackLocation</strong></a>. Then the client driver manually sets the <strong>Parameters.Others.Argument1</strong> member of the stack location to the address of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff538923" data-raw-source="[&lt;strong&gt;URB&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff538923)"><strong>URB</strong></a> structure.</td>
+<td>The client driver gets a pointer to the next IRP stack location by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff549266" data-raw-source="[&lt;strong&gt;IoGetNextIrpStackLocation&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549266)"><strong>IoGetNextIrpStackLocation</strong></a>. Then the client driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/hh406228" data-raw-source="[&lt;strong&gt;USBD_AssignUrbToIoStackLocation&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh406228)"><strong>USBD_AssignUrbToIoStackLocation</strong></a> to associate a the URB with the stack location.</td>
 </tr>
 <tr class="even">
 <td>To release an URB...</td>
 <td>If the client driver allocates a URB on the stack, the variable goes out of scope after the request is complete.
-<p>To free a URB structure that the client driver or the USB driver stack allocated in nonpaged pool, the client driver calls [<strong>ExFreePool</strong>](https://msdn.microsoft.com/library/windows/hardware/ff544590).</p></td>
-<td>The client driver calls [<strong>USBD_UrbFree</strong>](https://msdn.microsoft.com/library/windows/hardware/hh406252).</td>
+<p>To free a URB structure that the client driver or the USB driver stack allocated in nonpaged pool, the client driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff544590" data-raw-source="[&lt;strong&gt;ExFreePool&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff544590)"><strong>ExFreePool</strong></a>.</p></td>
+<td>The client driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/hh406252" data-raw-source="[&lt;strong&gt;USBD_UrbFree&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh406252)"><strong>USBD_UrbFree</strong></a>.</td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 [Sending Requests to a USB Device](communicating-with-a-usb-device.md)  

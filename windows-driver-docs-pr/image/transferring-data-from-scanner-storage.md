@@ -1,6 +1,5 @@
 ---
 title: Transferring Data from Scanner Storage
-author: windows-driver-content
 description: Transferring Data from Scanner Storage
 ms.assetid: 6fc9c825-509c-4c18-a859-e1f5504879b8
 ms.date: 04/20/2017
@@ -18,11 +17,11 @@ To transfer data to one of the scanner storage folder items, a WIA application s
 
 **Note**  This enumeration operation should not be permitted outside the root storage folder.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

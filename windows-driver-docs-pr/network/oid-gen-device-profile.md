@@ -1,6 +1,5 @@
 ---
 title: OID_GEN_DEVICE_PROFILE
-author: windows-driver-content
 description: The OID_GEN_DEVICE_PROFILE OID is obsolete. NDIS and NDIS drivers do not use this OID.
 ms.assetid: 0c95bbce-235a-4827-b935-137b9ee983b6
 ms.date: 08/08/2017
@@ -34,9 +33,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

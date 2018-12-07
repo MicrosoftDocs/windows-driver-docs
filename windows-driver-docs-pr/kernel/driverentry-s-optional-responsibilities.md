@@ -1,6 +1,5 @@
 ---
 title: DriverEntry's Optional Responsibilities
-author: windows-driver-content
 description: DriverEntry's Optional Responsibilities
 ms.assetid: 859282f7-6b40-47a8-b845-cdb7c26585dd
 keywords: ["DriverEntry WDK kernel , optional responsibilities", "claiming hardware resources", "executive worker threads WDK kernel", "worker threads WDK kernel", "system-space memory allocations WDK kernel", "system resource storage WDK kernel", "storing system resources", "hardware resource claiming WDK kernel", "resource claiming WDK kernel"]
@@ -46,11 +45,11 @@ Drivers that do not interact directly with the PnP manager, such as certain mini
 
 ### Using the Registry
 
-A **DriverEntry** routine might use the registry to get some of the information it needs to initialize the driver, or it might set information in the registry for other drivers or protected subsystems to use. The nature of the information depends on the type of device. Drivers can access the registry using **Zw*Xxx*** and **Rtl*Xxx*** routines. The **DriverEntry** routine's *RegistryPath* parameter points to a counted Unicode string that specifies a path to the driver's registry key, **\\Registry\\Machine\\System\\CurrentControlSet\\Services\\*DriverName***. The routine should save a copy of the string, not the pointer itself, since the pointer is no longer valid after **DriverEntry** returns.
+A **DriverEntry** routine might use the registry to get some of the information it needs to initialize the driver, or it might set information in the registry for other drivers or protected subsystems to use. The nature of the information depends on the type of device. Drivers can access the registry using **Zw*Xxx*** and **Rtl*Xxx*** routines. The **DriverEntry** routine's *RegistryPath* parameter points to a counted Unicode string that specifies a path to the driver's registry key, <strong>\\Registry\\Machine\\System\\CurrentControlSet\\Services\\*DriverName</strong><em>. The routine should save a copy of the string, not the pointer itself, since the pointer is no longer valid after **DriverEntry</em>* returns.
 
- 
+ 
 
- 
+ 
 
 
 

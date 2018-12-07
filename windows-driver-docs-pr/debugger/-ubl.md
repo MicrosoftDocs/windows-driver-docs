@@ -3,7 +3,6 @@ title: ubl
 description: The ubl extension lists all user-space breakpoints and their current status.
 ms.assetid: c2c40fa5-888f-49bb-a616-a139d7d2874d
 keywords: ["breakpoints, user-space breakpoints", "ubl Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -45,7 +44,7 @@ The **!ubl** extension lists all user-space breakpoints and their current status
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -81,9 +80,9 @@ Each line in this listing contains the breakpoint number, the status (**e** for 
 
 [User Space and System Space](user-space-and-system-space.md)
 
- 
+ 
 
- 
+ 
 
 
 

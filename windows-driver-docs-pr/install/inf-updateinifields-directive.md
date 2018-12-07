@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 **Note**  If you are building a universal or mobile driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
- 
+ 
 
 An **UpdateIniFields** directive references one or more named sections in which fine-grained modifications within the lines of an INI file can be specified.
 
@@ -64,7 +64,7 @@ Specifies an existing field within the given line. If *new-field* is omitted fro
 Specifies a replacement for a given *old-field* or, if *old-field* is omitted, an addition to the given line.
 
 <a href="" id="flags"></a>*flags*  
-Specifies (in bit 0) how to interpret given *old*-*field* and/or *new*-*field* if either or both contain an asterisk (**\***), and/or (in bit 1) which separator character to use when appending a given *new-field* to the given line, as follows:
+Specifies (in bit 0) how to interpret given *old*-*field* and/or *new*-*field* if either or both contain an asterisk (**\\**<em>), and/or (in bit 1) which separator character to use when appending a given *new-field</em> to the given line, as follows:
 
 <a href="" id="bit-zero---0"></a>Bit zero = **0**  
 Interpret any asterisk (\*) in the specified *old-field* and/or *new-field* entries literally, not as a wild-card character, when searching for a match in the given line of the INI file. This is the default value.
@@ -119,9 +119,9 @@ The INF provides the full path of the given *ini-file* on the distribution media
 
 [**Version**](inf-version-section.md)
 
- 
+ 
 
- 
+ 
 
 
 

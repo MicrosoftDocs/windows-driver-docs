@@ -1,6 +1,5 @@
 ---
 title: Print schema references
-author: windows-driver-content
 description: The following list provides references and links to industry standards, specifications, and technical articles.
 ms.assetid: D25FB8AF-D227-4940-8740-D1AFF9BE3AC3
 ms.date: 06/28/2018
@@ -74,9 +73,9 @@ Biron, Paul V. and Ashok Malhotra (editors). "XML Schema Part 2: Datatypes," Sec
 
 [http://www.w3.org/TR/2004/REC-xmlschema-2-20041028/](http://go.microsoft.com/fwlink/p/?LinkId=780802)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: Bug Check 0xA0 INTERNAL_POWER_ERROR
 description: The INTERNAL_POWER_ERROR bug check has a value of 0x000000A0. This bug check indicates that the power policy manager experienced a fatal error.
 ms.assetid: a763e865-8591-4ed3-b3cd-1cdaecad6e97
 keywords: ["Bug Check 0xA0 INTERNAL_POWER_ERROR", "INTERNAL_POWER_ERROR"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -61,7 +60,7 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 <td align="left"><p>Reserved</p></td>
 <td align="left"><p>Reserved</p></td>
 <td align="left"><p>Reserved</p></td>
-<td align="left"><p>An internal failure has occurred while attempting to process a power event. For more information, see [Debugging bug check 0xA0 when parameter 1 equals 0x2](#parameter-1-equals-0x2).</p></td>
+<td align="left"><p>An internal failure has occurred while attempting to process a power event. For more information, see <a href="#parameter-1-equals-0x2" data-raw-source="[Debugging bug check 0xA0 when parameter 1 equals 0x2](#parameter-1-equals-0x2)">Debugging bug check 0xA0 when parameter 1 equals 0x2</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x3</p></td>
@@ -89,7 +88,7 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 <td align="left"><p>Reserved</p></td>
 <td align="left"><p>Reserved</p></td>
 <td align="left"><p>Reserved</p></td>
-<td align="left"><p>An unhandled exception has occurred. For more information, see [Debugging bug check 0xA0 when parameter 1 equals 0x7](#parameter-1-equals-0x7).</p></td>
+<td align="left"><p>An unhandled exception has occurred. For more information, see <a href="#parameter-1-equals-0x7" data-raw-source="[Debugging bug check 0xA0 when parameter 1 equals 0x7](#parameter-1-equals-0x7)">Debugging bug check 0xA0 when parameter 1 equals 0x7</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x8</p></td>
@@ -140,7 +139,7 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 <td align="left"><p>Reserved</p></td>
 <td align="left"><p>Exception pointer.</p></td>
 <td align="left"><p>Reserved</p></td>
-<td align="left"><p>An unhandled exception occured while processing a system power event. For more information, see [Debugging bug check 0xA0 when parameter 1 equals 0x101](#parameter-1-equals-0x101).</p></td>
+<td align="left"><p>An unhandled exception occured while processing a system power event. For more information, see <a href="#parameter-1-equals-0x101" data-raw-source="[Debugging bug check 0xA0 when parameter 1 equals 0x101](#parameter-1-equals-0x101)">Debugging bug check 0xA0 when parameter 1 equals 0x101</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x102</p></td>
@@ -465,7 +464,7 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 </tbody>
 </table>
 
- 
+ 
 
 Resolution
 ----------
@@ -573,9 +572,9 @@ The following procedures will help you debug certain instances of this bug check
 
 3.  Use a variety of commands to analyze the source of the error. Start with [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) .
 
- 
+ 
 
- 
+ 
 
 
 

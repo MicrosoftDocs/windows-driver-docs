@@ -1,6 +1,5 @@
 ---
 title: VERIFY_IS_IRQL_PASSIVE_LEVEL macro
-author: windows-driver-content
 description: The VERIFY_IS_IRQL_PASSIVE_LEVEL macro breaks into the kernel debugger if the driver is not executing at IRQL PASSIVE_LEVEL.
 ms.assetid: 7f1e25af-df66-46a2-8d27-7924677e4d5d
 keywords:
@@ -68,7 +67,7 @@ Requirements
 <tbody>
 <tr class="odd">
 <td><p>Target platform</p></td>
-<td>[Universal](http://go.microsoft.com/fwlink/p/?linkid=531356)</td>
+<td><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" data-raw-source="[Universal](http://go.microsoft.com/fwlink/p/?linkid=531356)">Universal</a></td>
 </tr>
 <tr class="even">
 <td><p>Minimum KMDF version</p></td>

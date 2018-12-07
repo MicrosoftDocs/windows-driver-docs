@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_P2P_GO_NEGOTIATION_REQUEST_PARAMETERS
-author: windows-driver-content
 description: WDI_TLV_P2P_GO_NEGOTIATION_REQUEST_PARAMETERS is a TLV that contains Wi-Fi Direct Group Owner negotiation request parameters.
 ms.assetid: C0B1832A-D315-47F8-87B8-73373CF55D44
 ms.date: 07/18/2017
@@ -37,7 +36,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | UINT8                                             | Specifies the Wi-Fi Direct Group capability bitmask. The bitmask matches those defined in Table 13-Group Capability Bitmap definition of the Wi-Fi P2P technical specification. |
 | UINT8                                             | Specifies the bits set by the operating system in the Group capability bitmap above.                                                                                            |
 
- 
+ 
 
 Requirements
 ------------
@@ -63,9 +62,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

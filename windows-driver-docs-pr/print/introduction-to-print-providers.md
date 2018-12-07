@@ -1,6 +1,5 @@
 ---
 title: Introduction to Print Providers
-author: windows-driver-content
 description: Introduction to Print Providers
 ms.assetid: a0e5e8c8-7af4-4715-9036-64ae851b307d
 keywords:

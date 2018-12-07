@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 **Note**  The NetDMA interface is not supported in Windows 8 and later.
 
- 
+ 
 
 
 
@@ -30,9 +30,9 @@ NetDMA version 2.0 employs a more efficient descriptor handling design. In the N
 
 The [**ProviderAppendDma**](https://msdn.microsoft.com/library/windows/hardware/ff570394) and [**ProviderStartDma**](https://msdn.microsoft.com/library/windows/hardware/ff570404) functions in NetDMA version 1.0 provide the *DescriptorCount* parameter to specify the number of posted descriptors. Therefore, there is no change in the *ProviderAppendDma* and *ProviderStartDma* function parameters for NetDMA 2.0. However, when NetDMA posts a linked list of DMA descriptors to a NetDMA version 2.0 provider, NetDMA ensures that the **NextDescriptor** member for the last submitted descriptor points to a valid descriptor that will be used in subsequent DMA operations.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -86,9 +86,9 @@ In Windows Server 2003 with SP1 and Windows XP with SP2, if the system mixer pro
 
 If the system mixer receives a 7.1-channel input stream with a channel mask of 0x63F and produces a 5.1-channel output stream (with a channel mask of 0x3F), the mixer copies channels 6 and 7 in the input stream to channels 4 and 5 in the output stream. The mixer discards channels 4 and 5 (for the two back speakers) from the 7.1-channel input stream. This behavior ensures that the channels containing the content for the two side speakers in the 7.1-channel stream play through the side speakers in the 5.1 speaker configuration.
 
- 
+ 
 
- 
+ 
 
 
 

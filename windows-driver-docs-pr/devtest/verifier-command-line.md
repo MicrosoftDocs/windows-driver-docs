@@ -25,7 +25,7 @@ You can type several options on the same single line. For example:
 verifier /flags 7 /driver beep.sys flpydisk.sys
 ```
 
-**Windows 10**
+**Windows 10**
 
 You can use the **/volatile** parameter with some Driver Verifier **/flags** options and with **/standard**. You cannot use **/volatile** with the **/flags** options for [DDI compliance checking](ddi-compliance-checking.md), [Power Framework Delay Fuzzing](concurrency-stress-test.md), [Storport Verification](dv-storport-verification.md), or [SCSI Verification](scsi-verification.md). For details, see [Using Volatile Settings](using-volatile-settings.md).
 
@@ -53,7 +53,7 @@ You can use the **/volatile** parameter with some Driver Verifier **/flags** opt
   verifier /help
 ```
 
-**Windows 8.1**
+**Windows 8.1**
 
 You can use the **/volatile** parameter with some Driver Verifier **/flags** options and with **/standard**. You cannot use **/volatile** with the **/flags** options for [DDI compliance checking](ddi-compliance-checking.md), [Power Framework Delay Fuzzing](concurrency-stress-test.md), [Storport Verification](dv-storport-verification.md), or [SCSI Verification](scsi-verification.md). For details, see [Using Volatile Settings](using-volatile-settings.md).
 
@@ -77,7 +77,7 @@ You can use the **/volatile** parameter with some Driver Verifier **/flags** opt
   verifier /?
 ```
 
-**Windows 8, Windows 7, Windows Vista Syntax**
+**Windows 8, Windows 7, Windows Vista Syntax**
 
 You can use the **/volatile** parameter with some Driver Verifier **/flags** options and with **/standard**. You cannot use **/volatile** with the /flags options for [DDI compliance checking](ddi-compliance-checking.md), [Power Framework Delay Fuzzing](concurrency-stress-test.md), [Storport Verification](dv-storport-verification.md), [SCSI Verification](scsi-verification.md) or with **/disk**. For details, see [Using Volatile Settings](using-volatile-settings.md).
 
@@ -90,8 +90,6 @@ verifier /querysettings
 verifier /query 
 verifier /log LogFileName [/interval Seconds] 
 verifier /? 
-
-   
 ```
 
 **Windows Server 2003 Syntax**
@@ -105,8 +103,6 @@ verifier /querysettings
 verifier /query 
 verifier /log LogFileName [/interval Seconds] 
 verifier /? 
-
-   
 ```
 
 ## <span id="ddk_verifier_command_line_tools"></span><span id="DDK_VERIFIER_COMMAND_LINE_TOOLS"></span>Parameters
@@ -146,13 +142,13 @@ Controls whether the settings for Driver Verifier are enabled after a reboot. To
 </tr>
 <tr class="even">
 <td align="left"><p><span id="resetonunusualshutdown"></span><span id="RESETONUNUSUALSHUTDOWN"></span><strong>resetonunusualshutdown</strong></p></td>
-<td align="left"><p>(Introduced in Windows 10, build 1709) Driver Verifier will persist until an unusual shutdown occurs. Its abbrevation, <strong>'rous'</strong>, can be used.
+<td align="left"><p>(Introduced in Windows 10, build 1709) Driver Verifier will persist until an unusual shutdown occurs. Its abbrevation, <strong>&#39;rous&#39;</strong>, can be used.
 </p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 <span id="________disk______"></span><span id="________DISK______"></span> **/disk**   
 (Introduced in Windows Server 2003. Not available in Windows 7 and later versions of Windows.) Activates the [Disk Integrity Checking](disk-integrity-checking.md) option after the next boot. You cannot use **/disk** with **/volatile** on any version of Windows.
@@ -199,7 +195,7 @@ You can use the following subparameters of the **/faults** parameter to configur
 </tbody>
 </table>
 
- 
+
 
 <span id="_faultssystematic"></span><span id="_FAULTSSYSTEMATIC"></span>**/faultssystematic**  
 Specifies the options for [Systematic low resources simulation](systematic-low-resource-simulation.md). Use the **0x40000** flag to select Systematic low resources simulation option.
@@ -267,7 +263,7 @@ Specifies the options for [Systematic low resources simulation](systematic-low-r
 </tbody>
 </table>
 
- 
+
 
 <span id="________flags________Options______"></span><span id="________flags________options______"></span><span id="________FLAGS________OPTIONS______"></span> **/flags** *Options*   
 Activates the specified options after the next reboot. In Windows 2000, this number must be entered in decimal format. In Windows XP and later, this number can be entered in decimal or in hexadecimal (with an **0x** prefix) format. Any combination of the following values is allowed.
@@ -292,144 +288,144 @@ Activates the specified options after the next reboot. In Windows 2000, this num
 <td align="left"><p>1</p></td>
 <td align="left"><p>0x1 (bit 0)</p></td>
 <td align="left"><p>X</p></td>
-<td align="left"><p>[Special Pool](special-pool.md)</p></td>
+<td align="left"><p><a href="special-pool.md" data-raw-source="[Special Pool](special-pool.md)">Special Pool</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>2</p></td>
 <td align="left"><p>0x2 (bit 1)</p></td>
 <td align="left"><p>X</p></td>
-<td align="left"><p>[Force IRQL Checking](force-irql-checking.md)</p></td>
+<td align="left"><p><a href="force-irql-checking.md" data-raw-source="[Force IRQL Checking](force-irql-checking.md)">Force IRQL Checking</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>4</p></td>
 <td align="left"><p>0x4 (bit 2)</p></td>
 <td align="left"></td>
-<td align="left"><p>[Low Resources Simulation](low-resources-simulation.md)</p></td>
+<td align="left"><p><a href="low-resources-simulation.md" data-raw-source="[Low Resources Simulation](low-resources-simulation.md)">Low Resources Simulation</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>8</p></td>
 <td align="left"><p>0x8 (bit 3)</p></td>
 <td align="left"><p>X</p></td>
-<td align="left"><p>[Pool Tracking](pool-tracking.md)</p></td>
+<td align="left"><p><a href="pool-tracking.md" data-raw-source="[Pool Tracking](pool-tracking.md)">Pool Tracking</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>16</p></td>
 <td align="left"><p>0x10 (bit 4)</p></td>
 <td align="left"><p>X</p></td>
-<td align="left"><p>[I/O Verification](i-o-verification.md)</p></td>
+<td align="left"><p><a href="i-o-verification.md" data-raw-source="[I/O Verification](i-o-verification.md)">I/O Verification</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>32</p></td>
 <td align="left"><p>0x20 (bit 5)</p></td>
 <td align="left"><p>X</p></td>
-<td align="left"><p>[Deadlock Detection](deadlock-detection.md) (Windows XP and later)</p></td>
+<td align="left"><p><a href="deadlock-detection.md" data-raw-source="[Deadlock Detection](deadlock-detection.md)">Deadlock Detection</a> (Windows XP and later)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>64</p></td>
 <td align="left"><p>0x40 (bit 6)</p></td>
 <td align="left"></td>
-<td align="left"><p>[Enhanced I/O Verification](enhanced-i-o-verification.md) (Windows XP and later) (In Windows 7 and later, this option is automatically activated when you select I/O Verification)</p></td>
+<td align="left"><p><a href="enhanced-i-o-verification.md" data-raw-source="[Enhanced I/O Verification](enhanced-i-o-verification.md)">Enhanced I/O Verification</a> (Windows XP and later) (In Windows 7 and later, this option is automatically activated when you select I/O Verification)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>128</p></td>
 <td align="left"><p>0x80 (bit 7)</p></td>
 <td align="left"><p>X</p></td>
-<td align="left"><p>[DMA Verification](dma-verification.md) (Windows XP and later)</p></td>
+<td align="left"><p><a href="dma-verification.md" data-raw-source="[DMA Verification](dma-verification.md)">DMA Verification</a> (Windows XP and later)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>256</p></td>
 <td align="left"><p>0x100 (bit 8)</p></td>
 <td align="left"><p>X</p></td>
-<td align="left"><p>[Security Checks](security-checks.md) (Windows XP and later)</p></td>
+<td align="left"><p><a href="security-checks.md" data-raw-source="[Security Checks](security-checks.md)">Security Checks</a> (Windows XP and later)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>512</p></td>
 <td align="left"><p>0x200 (bit 9)</p></td>
 <td align="left"></td>
-<td align="left"><p>[Force Pending I/O Requests](force-pending-i-o-requests.md) (Windows Vista and later)</p></td>
+<td align="left"><p><a href="force-pending-i-o-requests.md" data-raw-source="[Force Pending I/O Requests](force-pending-i-o-requests.md)">Force Pending I/O Requests</a> (Windows Vista and later)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>1024</p></td>
 <td align="left"><p>0x400 (bit 10)</p></td>
 <td align="left"></td>
-<td align="left"><p>[IRP Logging](irp-logging.md) (Windows Server 2003 and later)</p></td>
+<td align="left"><p><a href="irp-logging.md" data-raw-source="[IRP Logging](irp-logging.md)">IRP Logging</a> (Windows Server 2003 and later)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>2048</p></td>
 <td align="left"><p>0x800 (bit 11)</p></td>
 <td align="left"><p>X</p></td>
-<td align="left"><p>[Miscellaneous Checks](miscellaneous-checks.md) (Windows Vista and later)</p></td>
+<td align="left"><p><a href="miscellaneous-checks.md" data-raw-source="[Miscellaneous Checks](miscellaneous-checks.md)">Miscellaneous Checks</a> (Windows Vista and later)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>8192</p></td>
 <td align="left"><p>0x2000 (bit 13)</p></td>
 <td align="left"></td>
-<td align="left"><p>[Invariant MDL Checking for Stack](invariant-mdl-checking-for-stack.md) (Starting with Windows 8)</p></td>
+<td align="left"><p><a href="invariant-mdl-checking-for-stack.md" data-raw-source="[Invariant MDL Checking for Stack](invariant-mdl-checking-for-stack.md)">Invariant MDL Checking for Stack</a> (Starting with Windows 8)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>16384</p></td>
 <td align="left"><p>0x4000 (bit 14)</p></td>
 <td align="left"></td>
-<td align="left"><p>[Invariant MDL Checking for Driver](invariant-mdl-checking-for-driver.md) (Starting with Windows 8)</p></td>
+<td align="left"><p><a href="invariant-mdl-checking-for-driver.md" data-raw-source="[Invariant MDL Checking for Driver](invariant-mdl-checking-for-driver.md)">Invariant MDL Checking for Driver</a> (Starting with Windows 8)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>32768</p></td>
 <td align="left"><p>0x8000 (bit 15)</p></td>
 <td align="left"></td>
-<td align="left"><p>[Power Framework Delay Fuzzing](concurrency-stress-test.md) (Starting with Windows 8)</p></td>
+<td align="left"><p><a href="concurrency-stress-test.md" data-raw-source="[Power Framework Delay Fuzzing](concurrency-stress-test.md)">Power Framework Delay Fuzzing</a> (Starting with Windows 8)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>65536</p></td>
 <td align="left"><p>0x10000 (bit 16)</p></td>
 <td align="left"></td>
-<td align="left"><p>Port/miniport interface checking (Starting with Windows 10)</p></td>
+<td align="left"><p>Port/miniport interface checking (Starting with Windows 10)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>131072</p></td>
 <td align="left"><p>0x20000 (bit 17)</p></td>
 <td align="left"><p>X</p></td>
-<td align="left"><p>[DDI compliance checking](ddi-compliance-checking.md) (Starting with Windows 8)</p></td>
+<td align="left"><p><a href="ddi-compliance-checking.md" data-raw-source="[DDI compliance checking](ddi-compliance-checking.md)">DDI compliance checking</a> (Starting with Windows 8)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>262144</p></td>
 <td align="left"><p>0x40000 (bit 18)</p></td>
 <td align="left"></td>
-<td align="left"><p>[Systematic low resources simulation](systematic-low-resource-simulation.md) (Starting with Windows 8.1)</p></td>
+<td align="left"><p><a href="systematic-low-resource-simulation.md" data-raw-source="[Systematic low resources simulation](systematic-low-resource-simulation.md)">Systematic low resources simulation</a> (Starting with Windows 8.1)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>524288</p></td>
 <td align="left"><p>0x80000 (bit 19)</p></td>
 <td align="left"></td>
-<td align="left"><p>[DDI compliance checking (additional)](ddi-compliance-checking.md#ddi_compliance_checking_additional) (Starting with Windows 8.1)</p></td>
+<td align="left"><p><a href="ddi-compliance-checking.md#ddi_compliance_checking_additional" data-raw-source="[DDI compliance checking (additional)](ddi-compliance-checking.md#ddi_compliance_checking_additional)">DDI compliance checking (additional)</a> (Starting with Windows 8.1)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>2097152</p></td>
 <td align="left"><p>0x200000 (bit 21)</p></td>
 <td align="left"></td>
-<td align="left"><p>[NDIS/WIFI verification](ndis-wifi-verification.md) (Starting with Windows 8.1)</p></td>
+<td align="left"><p><a href="ndis-wifi-verification.md" data-raw-source="[NDIS/WIFI verification](ndis-wifi-verification.md)">NDIS/WIFI verification</a> (Starting with Windows 8.1)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>8388608</p></td>
 <td align="left"><p>0x800000 (bit 23)</p></td>
 <td align="left"></td>
-<td align="left"><p>[Kernel synchronization delay fuzzing](kernel-synchronization-delay-fuzzing.md) (Starting with Windows 8.1)</p></td>
+<td align="left"><p><a href="kernel-synchronization-delay-fuzzing.md" data-raw-source="[Kernel synchronization delay fuzzing](kernel-synchronization-delay-fuzzing.md)">Kernel synchronization delay fuzzing</a> (Starting with Windows 8.1)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>16777216</p></td>
 <td align="left"><p>0x1000000 (bit 24)</p></td>
 <td align="left"></td>
-<td align="left"><p>[VM switch verification](vm-switch-verification.md) (Starting with Windows 8.1)</p></td>
+<td align="left"><p><a href="vm-switch-verification.md" data-raw-source="[VM switch verification](vm-switch-verification.md)">VM switch verification</a> (Starting with Windows 8.1)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>33554432</p></td>
 <td align="left"><p>0x2000000 (bit 25)</p></td>
 <td align="left"></td>
-<td align="left"><p>Code integrity checks (Starting with Windows 10)</p></td>
+<td align="left"><p>Code integrity checks (Starting with Windows 10)</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 You cannot use this method to activate the SCSI Verification or Storport Verification options. For information, see [SCSI Verification](scsi-verification.md) and [Storport Verification](dv-storport-verification.md).
 
@@ -472,7 +468,7 @@ Any combination of the following values is permitted.
 </tbody>
 </table>
 
- 
+
 
 <span id="________iolevel________Level______"></span><span id="________iolevel________level______"></span><span id="________IOLEVEL________LEVEL______"></span> **/iolevel** *Level*   
 (Windows 2000 only) Specifies the level of [I/O Verification](i-o-verification.md).
@@ -502,7 +498,7 @@ The value of *Level* can be **1** or **2**. The default value is **1**.
 </tbody>
 </table>
 
- 
+
 
 If I/O Verification is not enabled (by using **/flags 0x10**), **/iolevel** is ignored.
 
@@ -530,7 +526,7 @@ If a **verifier /log** command is typed at the command line, the command prompt 
 </tbody>
 </table>
 
- 
+
 
 <span id="_rules_Option"></span><span id="_rules_option"></span><span id="_RULES_OPTION"></span>**/rules** *Option*  
 Options for rules that can be disabled (advanced).
@@ -557,19 +553,19 @@ Options for rules that can be disabled (advanced).
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>default</strong> <em>ID</em></p></td>
-<td align="left"><p>Sets rule <em>ID</em> to its default state. For the supported rules, the rule <em>ID</em> is the [<strong>Bug Check 0xC4</strong>](https://msdn.microsoft.com/library/windows/hardware/ff560187) (DRIVER_VERIFIER_DETECTED_VIOLATION) parameter 1 value.</p></td>
+<td align="left"><p>Sets rule <em>ID</em> to its default state. For the supported rules, the rule <em>ID</em> is the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560187" data-raw-source="[&lt;strong&gt;Bug Check 0xC4&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff560187)"><strong>Bug Check 0xC4</strong></a> (DRIVER_VERIFIER_DETECTED_VIOLATION) parameter 1 value.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>disable</strong> <em>ID</em></p></td>
-<td align="left"><p>Disables specified rule <em>ID</em>. For the supported rules, the rule <em>ID</em> is the [<strong>Bug Check 0xC4</strong>](https://msdn.microsoft.com/library/windows/hardware/ff560187) (DRIVER_VERIFIER_DETECTED_VIOLATION) parameter 1 value.</p></td>
+<td align="left"><p>Disables specified rule <em>ID</em>. For the supported rules, the rule <em>ID</em> is the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560187" data-raw-source="[&lt;strong&gt;Bug Check 0xC4&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff560187)"><strong>Bug Check 0xC4</strong></a> (DRIVER_VERIFIER_DETECTED_VIOLATION) parameter 1 value.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 <span id="________standard"></span><span id="________STANDARD"></span> **/standard**  
-(Windows XP and later) Activates the "standard" or default Driver Verifier options after the next boot. The standard options in Windows XP are [Special Pool](special-pool.md), [Force IRQL Checking](force-irql-checking.md), [Pool Tracking](pool-tracking.md), [I/O Verification](i-o-verification.md), [Deadlock Detection](deadlock-detection.md), and [DMA Verification](dma-verification.md). This is equivalent to **/flags 0xBB**. Starting with Windows Vista, the standard options also include [Security Checks](security-checks.md) and [Miscellaneous Checks](miscellaneous-checks.md). This is equivalent to **/flags 0x9BB**. Starting with Windows 8, the standard options also include [DDI compliance checking](ddi-compliance-checking.md). This is equivalent to **/flags 0x209BB**.
+(Windows XP and later) Activates the "standard" or default Driver Verifier options after the next boot. The standard options in Windows XP are [Special Pool](special-pool.md), [Force IRQL Checking](force-irql-checking.md), [Pool Tracking](pool-tracking.md), [I/O Verification](i-o-verification.md), [Deadlock Detection](deadlock-detection.md), and [DMA Verification](dma-verification.md). This is equivalent to **/flags 0xBB**. Starting with Windows Vista, the standard options also include [Security Checks](security-checks.md) and [Miscellaneous Checks](miscellaneous-checks.md). This is equivalent to **/flags 0x9BB**. Starting with Windows 8, the standard options also include [DDI compliance checking](ddi-compliance-checking.md). This is equivalent to **/flags 0x209BB**.
 
 > [!NOTE]
 > Starting in Windows 10 versions after 1803, using **/flags 0x209BB** will no longer automatically enable WDF verification. Use the **/standard** syntax to enable standard options, with WDF verification included. See [Driver Verifier Command Syntax](https://docs.microsoft.com/windows-hardware/drivers/devtest/verifier-command-line) for more information.
@@ -597,16 +593,16 @@ For details, see [Using Volatile Settings](using-volatile-settings.md).
 <tbody>
 <tr class="odd">
 <td align="left"><p><span id="__adddriver_VolatileDriverList"></span><span id="__adddriver_volatiledriverlist"></span><span id="__ADDDRIVER_VOLATILEDRIVERLIST"></span> <strong>/adddriver</strong> <em>VolatileDriverList</em></p></td>
-<td align="left"><p>(Windows XP and later) Adds the specified drivers to the volatile settings. To specify multiple drivers, list their names, separated by spaces. Wildcard values, such as n*.sys, are not supported. See [Using Volatile Settings](using-volatile-settings.md) for details.</p></td>
+<td align="left"><p>(Windows XP and later) Adds the specified drivers to the volatile settings. To specify multiple drivers, list their names, separated by spaces. Wildcard values, such as n<em>.sys, are not supported. See <a href="using-volatile-settings.md" data-raw-source="[Using Volatile Settings](using-volatile-settings.md)">Using Volatile Settings</a> for details.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><span id="_removedriver_VolatileDriverList"></span><span id="_removedriver_volatiledriverlist"></span><span id="_REMOVEDRIVER_VOLATILEDRIVERLIST"></span><strong>/removedriver</strong> <em>VolatileDriverList</em></p></td>
-<td align="left"><p>(Windows XP and later) Removes the specified drivers from the volatile settings. To specify multiple drivers, list their names, separated by spaces. Wildcard values, such as n*.sys, are not supported. See [Using Volatile Settings](using-volatile-settings.md) for details.</p></td>
+<td align="left"><p>(Windows XP and later) Removes the specified drivers from the volatile settings. To specify multiple drivers, list their names, separated by spaces. Wildcard values, such as n</em>.sys, are not supported. See <a href="using-volatile-settings.md" data-raw-source="[Using Volatile Settings](using-volatile-settings.md)">Using Volatile Settings</a> for details.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 <span></span>  
 
@@ -653,7 +649,7 @@ Controls the verifier extension settings. The following verifier extension types
 </tbody>
 </table>
 
- 
+
 
 The following extension options are supported.
 
@@ -707,11 +703,11 @@ The following values are returned after driver verifier has run.
 | 1   | EXIT\_CODE\_ERROR          |
 | 2   | EXIT\_CODE\_REBOOT\_NEEDED |
 
- 
 
- 
 
- 
+
+
+
 
 
 

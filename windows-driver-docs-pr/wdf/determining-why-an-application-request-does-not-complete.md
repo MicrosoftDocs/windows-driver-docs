@@ -1,6 +1,5 @@
 ---
 title: Determining Why an Application Request Does Not Complete
-author: windows-driver-content
 description: This topic describes how you can use the Wudfext.dll debugger extensions in conjunction with a User-Mode Driver Framework (UMDF) version 1 or 2 driver to determine why an application request does not complete.
 ms.assetid: 33a09277-1e00-4f91-b2ab-b2541091628f
 keywords:
@@ -40,9 +39,9 @@ You can perform the following steps to determine why an application request does
 
 5.  If the IRP is beyond the UMDF stack (for example, if stack location 0 is where the IRP is currently being processed), determine why the corresponding kernel-mode IRP did not complete.
 
- 
+ 
 
- 
+ 
 
 
 

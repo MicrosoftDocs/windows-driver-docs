@@ -13,7 +13,7 @@ Starting with Windows 7, a device that supports PnP extensions (PnP-X) and Devic
 
 **Note**  Starting with Windows 10, the system ignores the container ID provided by a device and instead generates one on its own. It does this either by using the GUID from the device's endpoint reference address (EPR) or a SHA-1 hash of the device's EPR (if not a GUID).
 
- 
+ 
 
 The **ContainerId** XML element is declared as follows:
 
@@ -37,7 +37,7 @@ The &lt;ContainerId&gt; XML element is required to be in the &lt;ThisDevice&gt; 
 
 **Note**   This is not a complete DPWS metadata exchange document. For more information about DPWS, refer to the [DPWS specification.](http://go.microsoft.com/fwlink/p/?linkid=142400)
 
- 
+ 
 
 ```cpp
 <soap:Envelope
@@ -73,9 +73,9 @@ The &lt;ContainerId&gt; XML element is required to be in the &lt;ThisDevice&gt; 
 
 If the DPWS device metadata document does not include the **ContainerId** XML element, the Plug and Play (PnP) manager uses the value of the device's endpoint reference address as the container ID.
 
- 
+ 
 
- 
+ 
 
 
 

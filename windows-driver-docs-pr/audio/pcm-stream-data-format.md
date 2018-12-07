@@ -33,9 +33,9 @@ This example uses a [**KSDATAFORMAT\_WAVEFORMATEX**](https://msdn.microsoft.com/
   Format.cbSize          = 0;
 ```
 
- 
+ 
 
- 
+ 
 
 
 

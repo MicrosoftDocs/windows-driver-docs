@@ -30,9 +30,9 @@ SDV automatically coordinates the display in the three Defect Viewer windows. Fo
 
 Similarly, if the source code element that is selected in the **Trace Tree** or **Source Code** panes changes the values of variables that SDV monitors, those changes automatically appear in the **State** pane.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: Bug Check 0x109 CRITICAL_STRUCTURE_CORRUPTION
 description: The CRITICAL_STRUCTURE_CORRUPTION bug check has a value of 0x00000109. This indicates that the kernel has detected critical kernel code or data corruption.
 ms.assetid: 38d4d722-a915-4f17-899b-2a0b4aa69d95
 keywords: ["Bug Check 0x109 CRITICAL_STRUCTURE_CORRUPTION", "CRITICAL_STRUCTURE_CORRUPTION"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -55,7 +54,7 @@ The CRITICAL\_STRUCTURE\_CORRUPTION bug check has a value of 0x00000109. This in
 </tbody>
 </table>
 
- 
+ 
 
 The value of Parameter 4 indicates the type of corrupted region.
 
@@ -250,7 +249,7 @@ The value of Parameter 4 indicates the type of corrupted region.
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -290,9 +289,9 @@ If you are not equipped to use the Windows debugger to work on this problem, you
 
 -   For additional general troubleshooting information, see [**Blue Screen Data**](blue-screen-data.md).
 
- 
+ 
 
- 
+ 
 
 
 

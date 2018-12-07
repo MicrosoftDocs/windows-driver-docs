@@ -1,6 +1,5 @@
 ---
 title: Porting Issues Checklist
-author: windows-driver-content
 description: Porting Issues Checklist
 ms.assetid: 6ab26321-85b8-4a5b-8ca5-af6cbf56ccd6
 keywords: ["64-bit WDK kernel , porting drivers to", "porting drivers to 64-bit Windows"]
@@ -52,7 +51,7 @@ ms.localizationpriority: medium
 
     **Note**   A future version of Visual C++ will support **%I** to print polymorphic data. It will treat values as 64 bits in 64-bit Windows and 32 bits in 32-bit Windows. Visual C++ will also support **%I64** to print values that are 64 bits.
 
-     
+     
 
 <!-- -->
 
@@ -135,7 +134,7 @@ ms.localizationpriority: medium
 
     **Note**   If *len* is declared **INT** or **ULONG**, this will generate a compiler warning. Buffer sizes, even when computed correctly, may still exceed the capacity of **ULONG**.
 
-     
+     
 
 -   Avoid using computed or hard-coded pointer offsets.
 
@@ -172,58 +171,58 @@ ms.localizationpriority: medium
 
 ### Polymorphism
 
--   Be careful with polymorphic interfaces.
+- Be careful with polymorphic interfaces.
 
-    Do not create functions that accept parameters of type **DWORD** (or other fixed-precision types) for polymorphic data. If the data can be a pointer or an integral value, the parameter type should be **UINT\_PTR** or **PVOID**, not **DWORD**.
+  Do not create functions that accept parameters of type **DWORD** (or other fixed-precision types) for polymorphic data. If the data can be a pointer or an integral value, the parameter type should be **UINT\_PTR** or **PVOID**, not **DWORD**.
 
-    For example, do not create a function that accepts an array of exception parameters typed as **DWORD** values. The array should be an array of **DWORD\_PTR** values. Therefore, the array elements can hold addresses or 32-bit integral values. The general rule is that if the original type is **DWORD** and it needs to be pointer width, convert it to a **DWORD\_PTR** value. That is why there are corresponding pointer-precision types for the native Win32 types. If you have code that uses **DWORD**, **ULONG**, or other 32-bit types in a polymorphic way (that is, you really want the parameter or structure member to hold an address), use **UINT\_PTR** in place of the current type.
+  For example, do not create a function that accepts an array of exception parameters typed as **DWORD** values. The array should be an array of **DWORD\_PTR** values. Therefore, the array elements can hold addresses or 32-bit integral values. The general rule is that if the original type is **DWORD** and it needs to be pointer width, convert it to a **DWORD\_PTR** value. That is why there are corresponding pointer-precision types for the native Win32 types. If you have code that uses **DWORD**, **ULONG**, or other 32-bit types in a polymorphic way (that is, you really want the parameter or structure member to hold an address), use **UINT\_PTR** in place of the current type.
 
--   Be careful when calling functions that have pointer OUT parameters.
+- Be careful when calling functions that have pointer OUT parameters.
 
-    Do not do this:
+  Do not do this:
 
-    ```cpp
-    void GetBufferAddress(OUT PULONG *ptr);
-    {
-      *ptr=0x1000100010001000;
-    }
-    void foo()
-    {
-      ULONG bufAddress;
-      //
-      // This call causes memory corruption.
-      //
-      GetBufferAddress((PULONG *)&bufAddress);
-    }
-    ```
+  ```cpp
+  void GetBufferAddress(OUT PULONG *ptr);
+  {
+    *ptr=0x1000100010001000;
+  }
+  void foo()
+  {
+    ULONG bufAddress;
+    //
+    // This call causes memory corruption.
+    //
+    GetBufferAddress((PULONG *)&bufAddress);
+  }
+  ```
 
-    Typecasting *bufAddress* to (**PULONG** \*) prevents a compiler error. However, *GetBufferAddress* will write a 64-bit value into the memory location at *&bufAddress*. Because *bufAddress* is only a 32-bit value, the 32 bits immediately following *bufAddress* will get overwritten. This is a very subtle, hard-to-find bug.
+  Typecasting *bufAddress* to (**PULONG** \*) prevents a compiler error. However, *GetBufferAddress* will write a 64-bit value into the memory location at *&bufAddress*. Because *bufAddress* is only a 32-bit value, the 32 bits immediately following *bufAddress* will get overwritten. This is a very subtle, hard-to-find bug.
 
--   Do not cast pointers to **INT**, **LONG**, **ULONG**, or **DWORD**.
+- Do not cast pointers to **INT**, **LONG**, **ULONG**, or **DWORD**.
 
-    If you must cast a pointer to test some bits, set or clear bits, or otherwise manipulate its contents, use the **UINT**\_**PTR** or **INT**\_**PTR** type. These types are integral types that scale to the size of a pointer for both 32-bit and 64-bit Windows (for example, **ULONG** for 32-bit Windows and **\_int64** for 64-bit Windows). For example, assume you are porting the following code:
+  If you must cast a pointer to test some bits, set or clear bits, or otherwise manipulate its contents, use the **UINT**\_**PTR** or **INT**\_**PTR** type. These types are integral types that scale to the size of a pointer for both 32-bit and 64-bit Windows (for example, **ULONG** for 32-bit Windows and **\_int64** for 64-bit Windows). For example, assume you are porting the following code:
 
-    ```cpp
-    ImageBase = (PVOID)((ULONG)ImageBase | 1);
-    ```
+  ```cpp
+  ImageBase = (PVOID)((ULONG)ImageBase | 1);
+  ```
 
-    As a part of the porting process, you would change the code as follows:
+  As a part of the porting process, you would change the code as follows:
 
-    ```cpp
-    ImageBase = (PVOID)((ULONG_PTR)ImageBase | 1);
-    ```
+  ```cpp
+  ImageBase = (PVOID)((ULONG_PTR)ImageBase | 1);
+  ```
 
-    Use **UINT**\_**PTR** and **INT**\_**PTR** where appropriate (and if you are uncertain whether they are required, there is no harm in using them just in case). Do not cast your pointers to the types **ULONG**, **LONG**, **INT**, **UINT**, or **DWORD**.
+  Use **UINT**\_**PTR** and **INT**\_**PTR** where appropriate (and if you are uncertain whether they are required, there is no harm in using them just in case). Do not cast your pointers to the types **ULONG**, **LONG**, **INT**, **UINT**, or **DWORD**.
 
-    **Note**  **HANDLE** is defined as a **void \***, so typecasting a **HANDLE** value to a **ULONG** value to test, set, or clear the low two bits is a programming error.
+  **Note**  **HANDLE** is defined as a **void \\**<em>, so typecasting a **HANDLE</em>* value to a **ULONG** value to test, set, or clear the low two bits is a programming error.
 
-     
+     
 
--   Use **PtrToLong** and **PtrToUlong** to truncate pointers.
+- Use **PtrToLong** and **PtrToUlong** to truncate pointers.
 
-    If you must truncate a pointer to a 32-bit value, use the **PtrToLong** or **PtrToUlong** function (defined in *Basetsd.h*). This function disables the pointer truncation warning for the duration of the call.
+  If you must truncate a pointer to a 32-bit value, use the **PtrToLong** or **PtrToUlong** function (defined in *Basetsd.h*). This function disables the pointer truncation warning for the duration of the call.
 
-    Use these functions carefully. After you truncate a pointer variable using one of these functions, never cast the resulting **LONG** or **ULONG** back to a pointer. These functions truncate the upper 32 bits of an address, which are usually needed to access the memory originally referenced by pointer. Using these functions without careful consideration will result in fragile code.
+  Use these functions carefully. After you truncate a pointer variable using one of these functions, never cast the resulting **LONG** or **ULONG** back to a pointer. These functions truncate the upper 32 bits of an address, which are usually needed to access the memory originally referenced by pointer. Using these functions without careful consideration will result in fragile code.
 
 ### Data Structures and Structure Alignment
 
@@ -318,7 +317,7 @@ ms.localizationpriority: medium
 
     **Note**  If possible, avoid using different packing levels in the same header file.
 
-     
+     
 
 ### Additional Information
 
@@ -326,9 +325,9 @@ ms.localizationpriority: medium
 
 -   [Getting Ready for 64-bit Windows](https://msdn.microsoft.com/library/windows/desktop/aa384198) (user-mode application porting guide)
 
- 
+ 
 
- 
+ 
 
 
 

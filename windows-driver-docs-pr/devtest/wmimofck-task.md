@@ -23,7 +23,7 @@ The following example shows how to edit metadata in the .vcxproj file.
       <GenerateStructureDefinitionsForDatablocks>true</GenerateStructureDefinitionsForDatablocks>
     </Wmimofck>
     <Wmimofck Include="b.bmf">
-      <HeaderOuputFile>b.h</HeaderOuputFile>
+      <HeaderOutputFile>b.h</HeaderOutputFile>
     </Wmimofck>
 </ItemGroup>
 ```
@@ -70,9 +70,9 @@ The example above invokes wmimofck.exe on both a.bmf and b.bmf, but with differe
 <td align="left"><strong>-m</strong></td>
 </tr>
 <tr class="even">
-<td align="left"><strong>HeaderOuputFile</strong>
+<td align="left"><strong>HeaderOutputFile</strong>
 <p>Optional string parameter. Generates a C language header file (.h file) that can then be used to keep the header file in sync with MOF definitions.</p></td>
-<td align="left">%(Wmimofck.HeaderOuputFile)</td>
+<td align="left">%(Wmimofck.HeaderOutputFile)</td>
 <td align="left"><strong>-h</strong><em>Filename</em></td>
 </tr>
 <tr class="odd">
@@ -186,16 +186,16 @@ The example above invokes wmimofck.exe on both a.bmf and b.bmf, but with differe
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
 
 [Using Wmimofck.exe](https://msdn.microsoft.com/library/windows/hardware/ff565588)
 
- 
+ 
 
- 
+ 
 
 
 

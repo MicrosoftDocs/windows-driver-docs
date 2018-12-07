@@ -1,6 +1,5 @@
 ---
 title: Windows button array Device-Specific Method (_DSM)
-author: windows-driver-content
 description: To support evolution of the Windows Button user interface (UI), Windows defines a Device-Specific Method (_DSM) for the Windows button array device with the function that is described in this article.
 ms.assetid: B79ED0F9-B46A-4915-8FF3-5CF3D2E0E945
 ms.date: 04/20/2017
@@ -35,11 +34,11 @@ An integer (DWORD) that has the following bit-field definitions:
 
 **Note**  Function index 0 of every \_DSM is a query function that returns the set of supported function indexes, and is always required. For more information, see section 9.14.1, "\_DSM (Device Specific Method)", in the [ACPI 5.0 specification](https://www.uefi.org/specifications).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Starting a Device in a Filter Driver
-author: windows-driver-content
 description: Starting a Device in a Filter Driver
 ms.assetid: d7c527b6-a5fb-4c4f-a8bc-29f961d31125
 keywords: ["filter drivers WDK PnP"]
@@ -18,9 +17,9 @@ An upper-level filter driver might augment any of the start activities of the fu
 
 A lower-level filter typically augments the features of the device and might participate in starting the device.
 
- 
+ 
 
- 
+ 
 
 
 

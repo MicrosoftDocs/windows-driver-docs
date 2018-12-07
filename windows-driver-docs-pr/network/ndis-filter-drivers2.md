@@ -26,11 +26,11 @@ NDIS filter drivers are supported in NDIS 6.0 and later. The following sections 
 
 **Note**  You should use NDIS filter drivers instead of NDIS filter intermediate drivers. NDIS filter intermediate drivers are obsolete.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

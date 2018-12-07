@@ -1,6 +1,5 @@
 ---
 title: IRP_MN_POWER_SEQUENCE
-author: windows-driver-content
 description: This IRP returns the power sequence values for a device.
 ms.date: 08/12/2017
 ms.assetid: f00c0021-a909-4d76-9114-6710e1aa4307
@@ -82,9 +81,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Supporting an Operation Region
-author: windows-driver-content
 description: Supporting an Operation Region
 ms.assetid: 262a7201-d89e-4639-9630-a51aaa28db34
 keywords:
@@ -28,9 +27,9 @@ An operation region is the communication interface between an ACPI device and th
 
 [Accessing an Operation Region](accessing-an-operation-region.md)
 
- 
+ 
 
- 
+ 
 
 
 

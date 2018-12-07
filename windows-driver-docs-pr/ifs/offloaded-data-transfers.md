@@ -1,6 +1,5 @@
 ---
 title: Offloaded Data Transfers
-author: windows-driver-content
 description: Transferring data between computers or within the same computer is a frequent file system activity.
 ms.assetid: 66006CC0-8902-47CD-8E7C-187FE5BA71EF
 ms.date: 04/20/2017
@@ -86,7 +85,7 @@ Currently, the defined bits are:
 | SUPPORTED\_FS\_FEATURES\_OFFLOAD\_READ 0x00000001  | Filter supports FSCTL\_OFFLOAD\_READ  |
 | SUPPORTED\_FS\_FEATURES\_OFFLOAD\_WRITE 0x00000002 | Filter supports FSCTL\_OFFLOAD\_WRITE |
 
- 
+ 
 
 The filter opt-in model can be enabled or disabled based on the value present in the HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Control\\FileSystem\\FilterSupportedFeaturesMode registry key, which has the following values:
 
@@ -95,7 +94,7 @@ The filter opt-in model can be enabled or disabled based on the value present in
 | 0 (Default)                       | Do normal opt-in processing.                                                        |
 | 1                                 | Never opt-in (equivalent to setting SupportedFeatures to 0 on all filters attached) |
 
- 
+ 
 
 ### <span id="Testing"></span><span id="testing"></span><span id="TESTING"></span>Testing
 
@@ -152,9 +151,9 @@ There are two scenarios in which NTFS truncates the range to be offload read or 
 -   The destination file must be pre-allocated (**SetEndOfFile** and not **SetAllocation**) before [**FSCTL\_OFFLOAD\_WRITE**](https://msdn.microsoft.com/library/windows/hardware/hh451122).
 -   In processing offload read and offload write, NTFS first calls [**CcCoherencyFlushAndPurgeCache**](https://msdn.microsoft.com/library/windows/hardware/ff539032) to commit any modified data in the system cache. This is the same semantic as non-cached IO.
 
- 
+ 
 
- 
+ 
 
 
 

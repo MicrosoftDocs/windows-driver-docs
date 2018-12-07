@@ -1,6 +1,5 @@
 ---
 title: Feature Conflict Priority
-author: windows-driver-content
 description: Feature Conflict Priority
 ms.assetid: 1185f983-ed04-4610-8b93-684ae3e07e84
 keywords:
@@ -30,9 +29,9 @@ Features within each feature type are assigned a relative priority based on the 
 
 For more information about the \***FeatureType** and \***ConflictPriority** attributes, see [Feature Attributes](feature-attributes.md).
 
- 
+ 
 
- 
+ 
 
 
 

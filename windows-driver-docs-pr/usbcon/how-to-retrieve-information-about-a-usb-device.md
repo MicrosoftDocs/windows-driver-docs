@@ -1,7 +1,6 @@
 ---
 Description: This topic describes the USB hardware verifier tool (USB3HWVerifierAnalyzer.exe) that is used for testing and debugging specific hardware events.
 title: USB hardware verifier (USB3HWVerifierAnalyzer.exe)
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -37,177 +36,177 @@ The tools package contains several tools that perform stress and transfer tests 
 
 To capture events by using the hardware verifier, perform these steps:
 
-1.  Start a session by running this command at an elevated command prompt.
+1. Start a session by running this command at an elevated command prompt.
 
-    ``` syntax
-    USB3HWVerifierAnalyzer.exe
-    ```
+   ``` syntax
+   USB3HWVerifierAnalyzer.exe
+   ```
 
-    The tool supports these options:
+   The tool supports these options:
 
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th>Option</th>
-    <th>Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><p><a href="" id="---v--vendorid-"></a> -v &lt;VendorID&gt;</p></td>
-    <td><p>Logs all hardware verifier events for the specified VendorID.</p></td>
-    </tr>
-    <tr class="even">
-    <td><p><a href="" id="----p--productid-"></a> -p &lt;ProductID&gt;</p></td>
-    <td><p>Logs all hardware verifier events for the specified ProductID.</p></td>
-    </tr>
-    <tr class="odd">
-    <td><p><a href="" id="-f--etl-file-"></a>-f &lt;ETL file&gt;</p></td>
-    <td><p>Parses the specified ETL file. Real-time parsing is not supported. With this option, the tool parses the file offline.</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>/v output</p></td>
-    <td><p>Displays all events to the console.</p></td>
-    </tr>
-    </tbody>
-    </table>
+   <table>
+   <colgroup>
+   <col width="50%" />
+   <col width="50%" />
+   </colgroup>
+   <thead>
+   <tr class="header">
+   <th>Option</th>
+   <th>Description</th>
+   </tr>
+   </thead>
+   <tbody>
+   <tr class="odd">
+   <td><p><a href="" id="---v--vendorid-"></a> -v &lt;VendorID&gt;</p></td>
+   <td><p>Logs all hardware verifier events for the specified VendorID.</p></td>
+   </tr>
+   <tr class="even">
+   <td><p><a href="" id="----p--productid-"></a> -p &lt;ProductID&gt;</p></td>
+   <td><p>Logs all hardware verifier events for the specified ProductID.</p></td>
+   </tr>
+   <tr class="odd">
+   <td><p><a href="" id="-f--etl-file-"></a>-f &lt;ETL file&gt;</p></td>
+   <td><p>Parses the specified ETL file. Real-time parsing is not supported. With this option, the tool parses the file offline.</p></td>
+   </tr>
+   <tr class="even">
+   <td><p>/v output</p></td>
+   <td><p>Displays all events to the console.</p></td>
+   </tr>
+   </tbody>
+   </table>
 
-     
+     
 
-2.  Run the test scenario for which you want to capture hardware events.
+2. Run the test scenario for which you want to capture hardware events.
 
-    During a session, USB hardware verifier captures information about hardware events as they occur. If you want to filter events for a particular hardware, specify the VendorId and ProductId of the hardware. The tool might not capture some information (such as VID/PID) about events that occur before the device gets fully enumerated. The missing information is available in the detailed report that is generated at the end of the session (discussed next).
+   During a session, USB hardware verifier captures information about hardware events as they occur. If you want to filter events for a particular hardware, specify the VendorId and ProductId of the hardware. The tool might not capture some information (such as VID/PID) about events that occur before the device gets fully enumerated. The missing information is available in the detailed report that is generated at the end of the session (discussed next).
 
-    Here is an example output from the hardware verifier tool:
+   Here is an example output from the hardware verifier tool:
 
-    ``` syntax
-    Session Name : TraceSessionWedJun062021182012
+   ``` syntax
+   Session Name : TraceSessionWedJun062021182012
 
-    Attempting to start session TraceSessionWedJun062021182012...
-    Trace Session created...Status : 0
+   Attempting to start session TraceSessionWedJun062021182012...
+   Trace Session created...Status : 0
 
-    Provider Enable Success, Status : 0
+   Provider Enable Success, Status : 0
 
-    Provider Enable Success, Status : 0
+   Provider Enable Success, Status : 0
 
-    Provider Enable Success, Status : 0
+   Provider Enable Success, Status : 0
 
-    Provider Enable Success, Status : 0
+   Provider Enable Success, Status : 0
 
-    Provider Enable Success, Status : 0
-    12983512883.067484s: (UsbHub3/176):
-            Event Message:DescriptorValidationError20HubPortPwrCtrlMaskZero
-            VendorID/ProductID: 0x451/0x2077
-            DeviceInterfacePath: \??\USB#VID_0451&PID_2077#6&c4be011&0&2#{f18a0e88-c30c-11d0-8815-00a0c906bed8}
-            DeviceDescription: Generic USB Hub
-            PortPath:  0x2, 0x0, 0x0, 0x0, 0x0, 0x0
-    12983512888.452400s: (UsbHub3/173)
-            Event Message: SuperSpeed Device is Connected on the 2.0 Bus:
-            PortPath:  0x2, 0x4, 0x0, 0x0, 0x0, 0x0
-    12983512900.098652s: (UsbHub3/176):
-            Event Message:DescriptorValidationErrorCompanionIsochEndpointWBytesPerIntervalTooLarge
-            PortPath:  0x3, 0x0, 0x0, 0x0, 0x0, 0x0
-    12983512900.098654s: (UsbHub3/176):
-            Event Message:DescriptorValidationErrorCompanionIsochEndpointWBytesPerIntervalTooLarge
-            PortPath:  0x3, 0x0, 0x0, 0x0, 0x0, 0x0
-    12983512900.098656s: (UsbHub3/176):
-            Event Message:DescriptorValidationErrorCompanionIsochEndpointWBytesPerIntervalTooLarge
-            PortPath:  0x3, 0x0, 0x0, 0x0, 0x0, 0x0
-    12983512900.098658s: (UsbHub3/176):
-            Event Message:DescriptorValidationErrorCompanionIsochEndpointWBytesPerIntervalTooLarge
-            PortPath:  0x3, 0x0, 0x0, 0x0, 0x0, 0x0
-    12983512900.098658s: (UsbHub3/176):
-            Event Message:DescriptorValidationErrorCompanionIsochEndpointWBytesPerIntervalTooLarge
-            PortPath:  0x3, 0x0, 0x0, 0x0, 0x0, 0x0
-    12983512900.098660s: (UsbHub3/176):
-            Event Message:DescriptorValidationErrorCompanionIsochEndpointWBytesPerIntervalTooLarge
-            PortPath:  0x3, 0x0, 0x0, 0x0, 0x0, 0x0
-    12983512900.099415s: (UsbHub3/176):
-            Event Message:DescriptorValidationErrorStringMismatchBetweenBlengthAndBufferLength
-            PortPath:  0x3, 0x0, 0x0, 0x0, 0x0, 0x0
-    12983512900.100168s: (UsbHub3/176):
-            Event Message:DescriptorValidationErrorStringMismatchBetweenBlengthAndBufferLength
-            PortPath:  0x3, 0x0, 0x0, 0x0, 0x0, 0x0
+   Provider Enable Success, Status : 0
+   12983512883.067484s: (UsbHub3/176):
+           Event Message:DescriptorValidationError20HubPortPwrCtrlMaskZero
+           VendorID/ProductID: 0x451/0x2077
+           DeviceInterfacePath: \??\USB#VID_0451&PID_2077#6&c4be011&0&2#{f18a0e88-c30c-11d0-8815-00a0c906bed8}
+           DeviceDescription: Generic USB Hub
+           PortPath:  0x2, 0x0, 0x0, 0x0, 0x0, 0x0
+   12983512888.452400s: (UsbHub3/173)
+           Event Message: SuperSpeed Device is Connected on the 2.0 Bus:
+           PortPath:  0x2, 0x4, 0x0, 0x0, 0x0, 0x0
+   12983512900.098652s: (UsbHub3/176):
+           Event Message:DescriptorValidationErrorCompanionIsochEndpointWBytesPerIntervalTooLarge
+           PortPath:  0x3, 0x0, 0x0, 0x0, 0x0, 0x0
+   12983512900.098654s: (UsbHub3/176):
+           Event Message:DescriptorValidationErrorCompanionIsochEndpointWBytesPerIntervalTooLarge
+           PortPath:  0x3, 0x0, 0x0, 0x0, 0x0, 0x0
+   12983512900.098656s: (UsbHub3/176):
+           Event Message:DescriptorValidationErrorCompanionIsochEndpointWBytesPerIntervalTooLarge
+           PortPath:  0x3, 0x0, 0x0, 0x0, 0x0, 0x0
+   12983512900.098658s: (UsbHub3/176):
+           Event Message:DescriptorValidationErrorCompanionIsochEndpointWBytesPerIntervalTooLarge
+           PortPath:  0x3, 0x0, 0x0, 0x0, 0x0, 0x0
+   12983512900.098658s: (UsbHub3/176):
+           Event Message:DescriptorValidationErrorCompanionIsochEndpointWBytesPerIntervalTooLarge
+           PortPath:  0x3, 0x0, 0x0, 0x0, 0x0, 0x0
+   12983512900.098660s: (UsbHub3/176):
+           Event Message:DescriptorValidationErrorCompanionIsochEndpointWBytesPerIntervalTooLarge
+           PortPath:  0x3, 0x0, 0x0, 0x0, 0x0, 0x0
+   12983512900.099415s: (UsbHub3/176):
+           Event Message:DescriptorValidationErrorStringMismatchBetweenBlengthAndBufferLength
+           PortPath:  0x3, 0x0, 0x0, 0x0, 0x0, 0x0
+   12983512900.100168s: (UsbHub3/176):
+           Event Message:DescriptorValidationErrorStringMismatchBetweenBlengthAndBufferLength
+           PortPath:  0x3, 0x0, 0x0, 0x0, 0x0, 0x0
 
-    Provider disable Success, Status : 0
+   Provider disable Success, Status : 0
 
-    Provider disable Success, Status : 0
+   Provider disable Success, Status : 0
 
-    Provider disable Success, Status : 0
+   Provider disable Success, Status : 0
 
-    Provider disable Success, Status : 0
+   Provider disable Success, Status : 0
 
-    Provider disable Success, Status : 0
+   Provider disable Success, Status : 0
 
-    Session Stopped...Status : 0
-    ```
+   Session Stopped...Status : 0
+   ```
 
-3.  Stop the session by pressing CTRL+C.
+3. Stop the session by pressing CTRL+C.
 
-    At the end of the session, a file named AllEvents.etl is added in the current directory. This file contains trace information about all events that were captured during the session.
+   At the end of the session, a file named AllEvents.etl is added in the current directory. This file contains trace information about all events that were captured during the session.
 
-    In addition to AllEvents.etl, the command window shows a report. The report includes certain information that was missed in the real-time output. The following output shows an example test report for the preceding session. The report shows all events that the USB hardware verifier encountered.
+   In addition to AllEvents.etl, the command window shows a report. The report includes certain information that was missed in the real-time output. The following output shows an example test report for the preceding session. The report shows all events that the USB hardware verifier encountered.
 
-    ``` syntax
-    Record #1 (Key = 0x57ff0de4858)
-      VendorID/ProductID: 0x451/0x2077
-      DeviceInterfacePath: \??\USB#VID_0451&PID_2077#6&c4be011&0&2#{f18a0e88-c30c-11d0-8815-00a0c906bed8}
-      DeviceDescription: Generic USB Hub
-      PortPath:  0x2, 0x0, 0x0, 0x0, 0x0, 0x0
-      All errors encountered:
-#1: (UsbHub3/176): DescriptorValidationError20HubPortPwrCtrlMaskZero
-#2: (UsbHub3/179): Client Initiated Recovery Action
-#3: (UsbHub3/179): Client Initiated Recovery Action
-#4: (UsbHub3/179): Client Initiated Recovery Action
-#5: (UsbHub3/179): Client Initiated Recovery Action
-#6: (UsbHub3/179): Client Initiated Recovery Action
-#7: (UsbHub3/179): Client Initiated Recovery Action
-#8: (UsbHub3/179): Client Initiated Recovery Action
-#9: (UsbHub3/179): Client Initiated Recovery Action
-#10: (UsbHub3/179): Client Initiated Recovery Action
-#11: (UsbHub3/179): Client Initiated Recovery Action
-#12: (UsbHub3/179): Client Initiated Recovery Action
-#13: (UsbHub3/179): Client Initiated Recovery Action
-#14: (UsbHub3/179): Client Initiated Recovery Action
+   ``` syntax
+   Record #1 (Key = 0x57ff0de4858)
+     VendorID/ProductID: 0x451/0x2077
+     DeviceInterfacePath: \??\USB#VID_0451&PID_2077#6&c4be011&0&2#{f18a0e88-c30c-11d0-8815-00a0c906bed8}
+     DeviceDescription: Generic USB Hub
+     PortPath:  0x2, 0x0, 0x0, 0x0, 0x0, 0x0
+     All errors encountered:
+   #1: (UsbHub3/176): DescriptorValidationError20HubPortPwrCtrlMaskZero
+   #2: (UsbHub3/179): Client Initiated Recovery Action
+   #3: (UsbHub3/179): Client Initiated Recovery Action
+   #4: (UsbHub3/179): Client Initiated Recovery Action
+   #5: (UsbHub3/179): Client Initiated Recovery Action
+   #6: (UsbHub3/179): Client Initiated Recovery Action
+   #7: (UsbHub3/179): Client Initiated Recovery Action
+   #8: (UsbHub3/179): Client Initiated Recovery Action
+   #9: (UsbHub3/179): Client Initiated Recovery Action
+   #10: (UsbHub3/179): Client Initiated Recovery Action
+   #11: (UsbHub3/179): Client Initiated Recovery Action
+   #12: (UsbHub3/179): Client Initiated Recovery Action
+   #13: (UsbHub3/179): Client Initiated Recovery Action
+   #14: (UsbHub3/179): Client Initiated Recovery Action
 
-    Record #2 (Key = 0x57ff62a36a8)
-      VendorID/ProductID: 0x1058/0x740
-      DeviceInterfacePath: \??\USB#VID_1058&PID_0740#57583931453631414E5A3331#{a5dcbf10-6530-11d2-901f-00c04fb951ed}
-      DeviceDescription: USB Mass Storage Device
-      PortPath:  0x2, 0x4, 0x0, 0x0, 0x0, 0x0
-      All errors encountered:
-#1: (UsbHub3/173): SuperSpeed Device is Connected on the 2.0 Bus
+   Record #2 (Key = 0x57ff62a36a8)
+     VendorID/ProductID: 0x1058/0x740
+     DeviceInterfacePath: \??\USB#VID_1058&PID_0740#57583931453631414E5A3331#{a5dcbf10-6530-11d2-901f-00c04fb951ed}
+     DeviceDescription: USB Mass Storage Device
+     PortPath:  0x2, 0x4, 0x0, 0x0, 0x0, 0x0
+     All errors encountered:
+   #1: (UsbHub3/173): SuperSpeed Device is Connected on the 2.0 Bus
 
-    Record #3 (Key = 0x57ff79fd4e8)
-      VendorID/ProductID: 0x1edb/0xbd3b
-      PortPath:  0x3, 0x0, 0x0, 0x0, 0x0, 0x0
-      All errors encountered:
-#1: (UsbHub3/176): DescriptorValidationErrorCompanionIsochEndpointWBytesPerIntervalTooLarge
-#2: (UsbHub3/176): DescriptorValidationErrorCompanionIsochEndpointWBytesPerIntervalTooLarge
-#3: (UsbHub3/176): DescriptorValidationErrorCompanionIsochEndpointWBytesPerIntervalTooLarge
-#4: (UsbHub3/176): DescriptorValidationErrorCompanionIsochEndpointWBytesPerIntervalTooLarge
-#5: (UsbHub3/176): DescriptorValidationErrorCompanionIsochEndpointWBytesPerIntervalTooLarge
-#6: (UsbHub3/176): DescriptorValidationErrorCompanionIsochEndpointWBytesPerIntervalTooLarge
-#7: (UsbHub3/176): DescriptorValidationErrorStringMismatchBetweenBlengthAndBufferLength
-#8: (UsbHub3/176): DescriptorValidationErrorStringMismatchBetweenBlengthAndBufferLength
+   Record #3 (Key = 0x57ff79fd4e8)
+     VendorID/ProductID: 0x1edb/0xbd3b
+     PortPath:  0x3, 0x0, 0x0, 0x0, 0x0, 0x0
+     All errors encountered:
+   #1: (UsbHub3/176): DescriptorValidationErrorCompanionIsochEndpointWBytesPerIntervalTooLarge
+   #2: (UsbHub3/176): DescriptorValidationErrorCompanionIsochEndpointWBytesPerIntervalTooLarge
+   #3: (UsbHub3/176): DescriptorValidationErrorCompanionIsochEndpointWBytesPerIntervalTooLarge
+   #4: (UsbHub3/176): DescriptorValidationErrorCompanionIsochEndpointWBytesPerIntervalTooLarge
+   #5: (UsbHub3/176): DescriptorValidationErrorCompanionIsochEndpointWBytesPerIntervalTooLarge
+   #6: (UsbHub3/176): DescriptorValidationErrorCompanionIsochEndpointWBytesPerIntervalTooLarge
+   #7: (UsbHub3/176): DescriptorValidationErrorStringMismatchBetweenBlengthAndBufferLength
+   #8: (UsbHub3/176): DescriptorValidationErrorStringMismatchBetweenBlengthAndBufferLength
 
-    ```
+   ```
 
-    In the preceding example report, note the **Key** field value for each record. The report categorizes the information by those **Key** values, making it easier to read. The same **Key** values are used in events captured in AllEvents.etl.
+   In the preceding example report, note the **Key** field value for each record. The report categorizes the information by those **Key** values, making it easier to read. The same **Key** values are used in events captured in AllEvents.etl.
 
-4.  Convert AllEvents.etl to text format by running the following command:
+4. Convert AllEvents.etl to text format by running the following command:
 
-    ``` syntax
-    USB3HWVerifierAnalyzer.exe -f AllEvents.etl /v > Output.txt 
-    ```
+   ``` syntax
+   USB3HWVerifierAnalyzer.exe -f AllEvents.etl /v > Output.txt 
+   ```
 
-    In the output file, search for the previously noted **Key** values. The values are associated with one of these fields: **fid\_UcxController**, **fid\_HubDevice**, and **fid\_UsbDevice**.
+   In the output file, search for the previously noted **Key** values. The values are associated with one of these fields: **fid\_UcxController**, **fid\_HubDevice**, and **fid\_UsbDevice**.
 
-5.  Open AllEvents.etl in Netmon and select **Add &lt;field\_name&gt; to display filter** to filter events by controller, hub, and device.
+5. Open AllEvents.etl in Netmon and select **Add &lt;field\_name&gt; to display filter** to filter events by controller, hub, and device.
 
 ## USB hardware verifier flags
 
@@ -237,7 +236,7 @@ To capture events by using the hardware verifier, perform these steps:
 | HubHwVerifierPortOverCurrent                        | The downstream port reported overcurrent state.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | HubHwVerifierControllerOperationFailure             | A controller operation (such as enabling device, configuring endpoints) failed for the device that is attached to the target port. Failures from SET\_ADDRESS and Reset endpoint requests are not captured.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 
- 
+ 
 
 ## Related topics
 [USB Diagnostics and Test Guide](usb-driver-testing-guide.md)  

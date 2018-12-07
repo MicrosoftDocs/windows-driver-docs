@@ -16,7 +16,7 @@ You must not directly open a device's [*software key*](https://msdn.microsoft.co
 
 **Note**  You should open a device's software key only after the corresponding device has been found. For more information about this procedure, see [Enumerating Installed Devices](enumerating-installed-devices.md).
 
- 
+ 
 
 To open a device's software key, follow these guidelines:
 
@@ -24,13 +24,13 @@ To open a device's software key, follow these guidelines:
 
     **Note**  You must set the *samDesired* parameter to the minimal access permissions that are required. You must not set this parameter to KEY_ALL_ACCESS. For more information about how to specify access permissions for registry access, see [Accessing Registry Keys Safely](accessing-registry-keys-safely.md).
 
-     
+     
 
 -   Kernel-mode callers should use [**IoOpenDeviceRegistryKey**](https://msdn.microsoft.com/library/windows/hardware/ff549443) and set the *DevInstKeyType* parameter to PLUGPLAY_REGKEY_DRIVER.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Using Device Interfaces in UMDF Drivers
-author: windows-driver-content
 description: Using Device Interfaces in UMDF Drivers
 ms.assetid: acb6da80-bd04-48f0-b42a-96463f091b0a
 keywords:
@@ -71,9 +70,9 @@ In addition to the [**IPnpCallbackRemoteInterfaceNotification::OnRemoteInterface
 
 -   The [**IRemoteInterfaceCallbackEvent::OnRemoteInterfaceEvent**](https://msdn.microsoft.com/library/windows/hardware/ff556889) callback function notifies the driver when a device's custom events arrive.
 
- 
+ 
 
- 
+ 
 
 
 

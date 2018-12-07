@@ -1,6 +1,5 @@
 ---
 title: Multiple Binary Opt-In POOL_NX_OPTIN_AUTO
-author: windows-driver-content
 description: If you are a hardware vendor who supplies different driver binaries for different versions of Windows, you can use the POOL_NX_OPTIN_AUTO opt-in mechanism.
 ms.assetid: 5E6759E3-3AF8-4427-BDD0-DB64B3D480A1
 ms.localizationpriority: medium
@@ -23,9 +22,9 @@ For most drivers, this definition is sufficient to enable the opt-in mechanism t
 
 The POOL\_NX\_OPTIN\_AUTO definition redefines the **NonPagedPool** constant name to **NonPagedPoolNx**. The redefined pool type is still a compile-time constant. The macro that converts instances of the **NonPagedPool** constant name to **NonPagedPoolNx** also converts instances of **NonPagedPoolCacheAligned** to **NonPagedPoolNxCacheAligned.**
 
- 
+ 
 
- 
+ 
 
 
 

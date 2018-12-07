@@ -1,6 +1,5 @@
 ---
 title: Install the sensor driver
-author: windows-driver-content
 description: This topic shows you how to install the sensor driver on a development board.
 ms.assetid: 01CC1903-A36B-4ECC-856D-6196EC606973
 ms.date: 04/20/2017
@@ -12,7 +11,7 @@ ms.localizationpriority: medium
 
 This topic shows you how to install the sensor driver on a development board, after you update the secondary system description table (SSDT) for the development board.
 
-This topic uses the Sharks Cove development board and an ADXL345 accelerometer as a case study, to help explain the process of installing a sensor driver on a development board. So if you want to perform the tasks presented in this topic, you must first install an operating system on the Sharks Cove. For more information about how to do that, see [Download kits and tools for Windows 10](https://msdn.microsoft.com/windows/hardware/dn913721.aspx), and follow the instructions in **Step 1** (Install Windows 10).
+This topic uses the Sharks Cove development board and an ADXL345 accelerometer as a case study, to help explain the process of installing a sensor driver on a development board. So if you want to perform the tasks presented in this topic, you must first install an operating system on the Sharks Cove. For more information about how to do that, see [Download kits and tools for Windows 10](https://docs.microsoft.com/windows-hardware/get-started/adk-install), and follow the instructions to install Windows 10.
 
 After you finish installing the operating system on the Sharks Cove, See [Build the sensor driver](build-the-sensor-driver.md) to learn how to build a driver in Microsoft Visual Studio. Then return here to continue.
 
@@ -61,97 +60,91 @@ Then use the **dir** command to make sure that the file is now listed as *ssdt-o
 Perform the following tasks to update the SSDT, and load it to replace the factory default version. The updated SSDT will be stored in a potion of memory called *battery-backed RAM*. So make sure that the button cell (battery) that came with your Sharks Cove is plugged into its socket.
 
 1. Copy the following updated SSDT and paste it into a new instance of Notepad.
-```Text
-// CreatorID=INTL  CreatorRev=20.14.805
-// FileLength=177   FileChkSum=0x88
 
-DefinitionBlock("SSDT.AML", "SSDT", 0x01, "Intel_", "ADebTabl", 0x00001000)
-{
-    Scope()
+    ```cpp
+    // CreatorID=INTL  CreatorRev=20.14.805
+    // FileLength=177   FileChkSum=0x88
+    DefinitionBlock("SSDT.AML", "SSDT", 0x01, "Intel_", "ADebTabl", 0x00001000)
     {
-        Name(DPTR, 0x3bf2d000)
-        Name(EPTR, 0x3bf3d000)
-        Name(CPTR, 0x3bf2d010)
-        Mutex(MMUT, 0x0)
-        Method(MDBG, 0x1, Serialized)
+        Scope()
         {
-            Store(Acquire(MMUT, 0x3e8), Local0)
-            If(LEqual(Local0, Zero))
-            {
-                OperationRegion(ABLK, SystemMemory, CPTR, 0x10)
-                Field(ABLK, ByteAcc, NoLock, Preserve)
+           Name(DPTR, 0x3bf2d000)
+           Name(EPTR, 0x3bf3d000)
+           Name(CPTR, 0x3bf2d010)
+           Mutex(MMUT, 0x0)
+           Method(MDBG, 0x1, Serialized)
+           {
+                Store(Acquire(MMUT, 0x3e8), Local0)
+                If(LEqual(Local0, Zero))
                 {
-                    AAAA, 128
+                    OperationRegion(ABLK, SystemMemory, CPTR, 0x10)
+                    Field(ABLK, ByteAcc, NoLock, Preserve)
+                    {
+                        AAAA, 128
+                    }
+                    Store(Arg0, AAAA)
+                    Add(CPTR, 0x10, CPTR)
+                    If(LNot(LLess(CPTR, EPTR)))
+                    {
+                        Add(DPTR, 0x10, CPTR)
+                    }
+                    Release(MMUT)
                 }
-                Store(Arg0, AAAA)
-                Add(CPTR, 0x10, CPTR)
-                If(LNot(LLess(CPTR, EPTR)))
-                {
-                    Add(DPTR, 0x10, CPTR)
-                }
-                Release(MMUT)
+                Return(Local0)
             }
-            Return(Local0)
-        }
-    }
-    
-    Scope(_SB_)
-    {
-       Device(SPBA)
-       {
-           Name(_HID, "ADXL345Acc")
-           Name(_UID, 1)
-
-
-           Method(_CRS, 0x0, NotSerialized)
-           {
-               Name(RBUF, ResourceTemplate()
-               {          
-                   I2CSerialBus(0x53, ControllerInitiated, 400000, AddressingMode7Bit, "\\_SB.I2C3", 0, ResourceConsumer) 
-                   GpioInt(Edge, ActiveHigh, Exclusive, PullDown, 0, "\\_SB.GPO2") {0x17}
-               })
-
-               Return(RBUF)
-           }
-
-
-           Method(_DSM, 0x4, NotSerialized)
-           {
-               If(LEqual(Arg0, Buffer(0x10)
+        }  
+        Scope(_SB_)
+        {
+            Device(SPBA)
+            {
+                Name(_HID, "ADXL345Acc")
+                Name(_UID, 1)
+                Method(_CRS, 0x0, NotSerialized)
+                {
+                    Name(RBUF, ResourceTemplate()
+                    {
+                        I2CSerialBus(0x53, ControllerInitiated, 400000, 
+                            AddressingMode7Bit, "\\_SB.I2C3", 0, ResourceConsumer)
+                        GpioInt(Edge, ActiveHigh, Exclusive, PullDown, 0, "\\_SB.GPO2") 
+                        {0x17}
+                    })
+                Return(RBUF)
+                }
+               Method(_DSM, 0x4, NotSerialized)
                {
-                   0x1e, 0x54, 0x81, 0x76, 0x27, 0x88, 0x39, 0x42, 0x8d, 0x9d, 0x36, 0xbe, 0x7f, 0xe1, 0x25, 0x42
-               }))
-               {
-                   If(LEqual(Arg2, Zero))
+                   If(LEqual(Arg0, Buffer(0x10)
+                   {
+                       0x1e, 0x54, 0x81, 0x76, 0x27, 0x88, 0x39, 0x42, 0x8d, 
+                       0x9d, 0x36, 0xbe, 0x7f, 0xe1, 0x25, 0x42
+                   }))
+                   {
+                       If(LEqual(Arg2, Zero))
+                       {
+                           Return(Buffer(One)
+                           {
+                               0x03
+                           })
+                       }
+                       If(LEqual(Arg2, One))
+                       {
+                           Return(Buffer(0x4)
+                           {
+                               0x00, 0x01, 0x02, 0x03
+                           })
+                       }
+                   }
+                   Else
                    {
                        Return(Buffer(One)
                        {
-                           0x03
+                           0x00
                        })
                    }
-
-                   If(LEqual(Arg2, One))
-                   {
-                       Return(Buffer(0x4)
-                       {
-                           0x00, 0x01, 0x02, 0x03
-                       })
-                   }
-               }
-               Else
-               {
-                   Return(Buffer(One)
-                   {
-                       0x00
-                   })
-               }
-           } // Method(_DSM ...)
-
-       } // Device(SPBA)
-
-   } // Scope(_SB_)
-}
-```
+                } // Method(_DSM ...)
+            } // Device(SPBA)
+        } // Scope(_SB_)
+    }
+    ```
 
 2. In Notepad, click **File** &gt; **Save As**. Then click the **Save as type** dropdown box, and select **All Files**.
 
@@ -172,9 +165,9 @@ You should see the *ssdt.aml* file listed in the tools directory.
 
 Before you install the sample sensor driver, you must turn on testsigning. Perform the following tasks to turn on testsigning. Perform the following steps to install the sensor driver via **Device Manager**.
 
-1. In the Command prompt window, enter the following command to see whether testsigning is already turned on.
+1. In the Command prompt window, enter the following command to see whether testsigning is already turned on.<br/>
 **bcdedit /enum**
-2. If you see a listing similar to the following, showing an entry for testsigning, with its value set to `yes` then skip to **Step 5**.
+2. If you see a listing similar to the following, showing an entry for testsigning, with its value set to `yes` then skip to **Step 5**.<br/>
 ![command prompt window showing testsigning set to yes.](images/testsigning.png)
 
 3. If you need to turn on test signing, then enter the following command:
@@ -206,19 +199,15 @@ You must connect your sensor to the Sharks Cove before you install the sensor dr
 
 2. Attach a flash drive with the sensor driver to the powered USB hub connected to the Sharks Cove. For example, this can be the flash drive onto which you saved the driver that you built by following the steps in [Build the sensor driver](build-the-sensor-driver.md).
 
-3. Open **Device Manager**, and look for an "Unknown device" in the **Other devices** node with a yellow bang symbol against it (see the following screen shot).
-
-![device manager screenshot, showing an unknown device with a yellow bang. ](images/dev-manager.png)
+3. Open **Device Manager**, and look for an "Unknown device" in the **Other devices** node with a yellow bang symbol against it (see the following screen shot).<br/>![device manager screenshot, showing an unknown device with a yellow bang. ](images/dev-manager.png)
 
 4. Right-click the device with the yellow bang (listed as Unknown device), and select **Update Driver Software**, and click **Browse my computer for driver software**.
 
 5. Browse to the ADXL345 driver on the flash drive, then click **Next**. Follow the screen prompts to install the sensor driver.
 
-6. After the sample sensor driver is successfully installed, **Device Manager** displays the sensor as shown in the following screen shot.
+6. After the sample sensor driver is successfully installed, **Device Manager** displays the sensor as shown in the following screen shot.<br/>![device manager screen shot, showing device nodes for successfully installed adxl345 accelerometer](images/dev-mgr-sensors.png)
 
-![device manager screen shot, showing device nodes for successfully installed adxl345 accelerometer.](images/dev-mgr-sensors.png)
-
-For information about how to use Visual Studio to deploy a driver to a client computer (like the Sharks Cove), see [Deploying a Driver to a Test Computer](https://msdn.microsoft.com/library/windows/hardware/hh454834.aspx).
+For information about how to use Visual Studio to deploy a driver to a client computer (like the Sharks Cove), see [Deploying a Driver to a Test Computer](https://docs.microsoft.com/windows-hardware/drivers/develop/deploying-a-driver-to-a-test-computer).
 
 After successfully installing the sample sensor driver, see [Test your universal sensor driver](test-your-universal-sensor-driver.md) for information about how to test a sensor.
 

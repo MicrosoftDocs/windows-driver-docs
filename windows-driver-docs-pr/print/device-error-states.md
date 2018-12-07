@@ -1,6 +1,5 @@
 ---
 title: Device Error States
-author: windows-driver-content
 description: Device Error States
 ms.assetid: 7d0fee11-0fdf-4490-88d0-fb074cbf4082
 keywords:
@@ -50,9 +49,9 @@ You should also perform the following additional test procedures for offline and
     -   Test unloading and loading the device stack with and without print jobs in progress. Verify that the job can be canceled, recovered from, and restarted.
     -   Reload the device stack to allow the print job to recover gracefully.
 
- 
+ 
 
- 
+ 
 
 
 

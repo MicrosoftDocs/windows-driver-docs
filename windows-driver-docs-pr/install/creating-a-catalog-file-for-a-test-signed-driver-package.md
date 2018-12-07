@@ -17,9 +17,9 @@ To create a [catalog file](catalog-files.md) for a test-signed PnP [driver packa
 
 To create a catalog file for a test-signed non-PnP driver package, follow the same procedure that is used to [create a catalog file for a non-PnP driver package](creating-a-catalog-file-for-a-non-pnp-driver-package.md).
 
- 
+ 
 
- 
+ 
 
 
 

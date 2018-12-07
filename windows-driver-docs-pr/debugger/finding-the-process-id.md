@@ -3,7 +3,6 @@ title: Finding the Process ID
 description: Finding the Process ID
 ms.assetid: 963e9b5b-2b88-41b5-a103-dc4611ff41ea
 keywords: ["process, process ID (PID)", "PID (process ID)", "TList, related techniques", "Task Manager"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -46,9 +45,9 @@ If there is already a user-mode debugger running on the system in question, the 
 
 To debug a user-mode driver running on another computer, debug the Client Server Run-Time Subsystem (CSRSS) process. For more information, see [Debugging CSRSS](debugging-csrss.md).
 
- 
+ 
 
- 
+ 
 
 
 

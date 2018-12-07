@@ -32,29 +32,29 @@ GDI Halftone support includes the services listed in the following table.
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<strong>HT_ComputeRGBGammaTable</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567314)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567314" data-raw-source="[&lt;strong&gt;HT_ComputeRGBGammaTable&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567314)"><strong>HT_ComputeRGBGammaTable</strong></a></p></td>
 <td align="left"><p>Causes GDI to compute device red, green, and blue intensities based on gamma numbers.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>HT_Get8BPPFormatPalette</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567317)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567317" data-raw-source="[&lt;strong&gt;HT_Get8BPPFormatPalette&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567317)"><strong>HT_Get8BPPFormatPalette</strong></a></p></td>
 <td align="left"><p>Returns a halftone palette for use on standard 8-bits per pixel device types.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>HT_Get8BPPMaskPalette</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567320)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567320" data-raw-source="[&lt;strong&gt;HT_Get8BPPMaskPalette&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567320)"><strong>HT_Get8BPPMaskPalette</strong></a></p></td>
 <td align="left"><p>Returns a mask palette for an 8-bits per pixel device type.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>HTUI_DeviceColorAdjustment</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567308)</p></td>
-<td align="left"><p>Displays a dialog box that allows a user to adjust a device's halftoning properties.</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567308" data-raw-source="[&lt;strong&gt;HTUI_DeviceColorAdjustment&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567308)"><strong>HTUI_DeviceColorAdjustment</strong></a></p></td>
+<td align="left"><p>Displays a dialog box that allows a user to adjust a device&#39;s halftoning properties.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

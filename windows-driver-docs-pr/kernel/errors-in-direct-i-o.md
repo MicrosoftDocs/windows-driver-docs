@@ -1,6 +1,5 @@
 ---
 title: Errors in Direct I/O
-author: windows-driver-content
 description: Errors in Direct I/O
 ms.assetid: 9efc2875-3402-4e2e-871b-3cc1d8f45360
 keywords: ["reliability WDK kernel , direct I/O", "direct I/O WDK kernel", "I/O WDK kernel , direct I/O", "zero-length buffers WDK kernel"]
@@ -50,9 +49,9 @@ Direct I/O involves double-mapping the user's address space to a system address 
 
 If a driver creates and maps its own MDL, it should ensure that it accesses the MDL only with the method for which it has probed. That is, when the driver calls [**MmProbeAndLockPages**](https://msdn.microsoft.com/library/windows/hardware/ff554664), it specifies an access method (**IoReadAccess**, **IoWriteAccess**, or **IoModifyAccess**). If the driver specifies **IoReadAccess**, it must not later attempt to write to the system buffer made available by [**MmGetSystemAddressForMdl**](https://msdn.microsoft.com/library/windows/hardware/ff554556) or [**MmGetSystemAddressForMdlSafe**](https://msdn.microsoft.com/library/windows/hardware/ff554559).
 
- 
+ 
 
- 
+ 
 
 
 

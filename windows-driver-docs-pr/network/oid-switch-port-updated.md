@@ -1,6 +1,5 @@
 ---
 title: OID_SWITCH_PORT_UPDATED
-author: windows-driver-content
 description: The protocol edge of the Hyper-V extensible switch issues an object identifier (OID) set request of OID_SWITCH_PORT_UPDATED to notify extensible switch extensions about the update of an extensible switch port.
 ms.assetid: 7FDC963A-92E4-49B2-AB77-FA9C92EEBC25
 ms.date: 08/08/2017
@@ -29,7 +28,7 @@ The extension must follow these guidelines for handling OID set requests of OID\
 
 **Note**  Extensible switch extensions must not issue OID set requests of OID\_SWITCH\_PORT\_UPDATED.
 
- 
+ 
 
 For more information about the states of extensible switch ports and network adapter connections, see [Hyper-V Extensible Switch Port and Network Adapter States](https://msdn.microsoft.com/library/windows/hardware/hh598182).
 
@@ -56,7 +55,7 @@ The underlying miniport edge of the extensible switch completes the OID set requ
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -96,9 +95,9 @@ Requirements
 
 [*ReferenceSwitchNic*](https://msdn.microsoft.com/library/windows/hardware/hh598294)
 
- 
+ 
 
- 
+ 
 
 
 

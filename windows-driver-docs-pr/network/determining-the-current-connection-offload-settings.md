@@ -19,9 +19,9 @@ Protocol drivers can obtain the connection offload services with an object ident
 
 To obtain the current connection offload settings of a network interface card (NIC), protocol drivers can query the [OID\_TCP\_CONNECTION\_OFFLOAD\_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/ff569804) OID.
 
- 
+ 
 
- 
+ 
 
 
 

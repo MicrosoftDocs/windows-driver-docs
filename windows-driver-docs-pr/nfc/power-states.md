@@ -1,6 +1,5 @@
 ---
 title: Power states
-author: windows-driver-content
 description: The NFC class extension driver serves as the power policy owner for the device, so it calls WdfDeviceInitSetPowerPolicyOwnership(TRUE) during its device initialization routine.
 ms.assetid: 12433344-9C33-415B-BA14-4BD4C7E838CC
 keywords:
@@ -40,9 +39,9 @@ The client driver can choose to be the power policy owner of the stack through t
 
 ![power management operations](images/powermanagementoperations.png)
 
- 
+ 
 
- 
+ 
 ## Related topics
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [NFC class extension (CX) reference](https://msdn.microsoft.com/library/windows/hardware/dn905536)  

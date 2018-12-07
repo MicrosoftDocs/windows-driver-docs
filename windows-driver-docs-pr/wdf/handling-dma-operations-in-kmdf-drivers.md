@@ -1,6 +1,5 @@
 ---
 title: Handling DMA Operations in KMDF Drivers
-author: windows-driver-content
 description: Describes how a KMDF driver converts I/O requests into direct memory access (DMA) operations. KMDF supports bus-master and system-mode DMA.
 ms.assetid: 1ca8ba66-201d-42f2-a6f1-6184a9d7c2a6
 keywords:
@@ -40,9 +39,9 @@ This section describes how a Kernel-Mode Driver Framework (KMDF) driver converts
 
 For information on how support DMA operations in WDM drivers, see [DMA Programming Techniques](https://msdn.microsoft.com/library/windows/hardware/ff544074).
 
- 
+ 
 
- 
+ 
 
 
 

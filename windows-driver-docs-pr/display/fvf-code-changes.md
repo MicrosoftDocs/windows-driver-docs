@@ -21,11 +21,11 @@ These codes identify extra DWORDs of space that may alternatively be allocated t
 
 **Note**   If the number of blend weights specified is one less than the number of matrices currently being blended, then the weight assigned to the last matrix is defined to be (1.0 - Bₜ), where Bₜ is the total of the other weights for that vertex.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

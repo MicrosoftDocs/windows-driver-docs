@@ -1,6 +1,5 @@
 ---
 title: OID_WWAN_SMS_STATUS
-author: windows-driver-content
 description: OID_WWAN_SMS_STATUS reports the status of the MB device's message store.
 ms.assetid: a43451e6-f589-4963-acc7-855555655d37
 ms.date: 08/08/2017
@@ -56,9 +55,9 @@ Requirements
 
 [**NDIS\_STATUS\_WWAN\_SMS\_STATUS**](ndis-status-wwan-sms-status.md)
 
- 
+ 
 
- 
+ 
 
 
 

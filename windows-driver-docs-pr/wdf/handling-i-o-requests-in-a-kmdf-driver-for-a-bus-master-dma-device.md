@@ -1,6 +1,5 @@
 ---
 title: Handling I/O Requests in a KMDF Driver for a Bus-Master DMA Device
-author: windows-driver-content
 description: This topics in this section describe how a KMDF driver for a bus-master DMA device processes an I/O request. If you are writing a KMDF driver that implements system-mode DMA, see Supporting System-Mode DMA.
 ms.assetid: c94819c5-212d-404f-a7c7-b736e0832282
 keywords:
@@ -44,9 +43,9 @@ Your driver can provide a set of callback functions that handle [DMA-specific po
 
 Some drivers [use common buffers](using-common-buffers.md) that both a device and the driver can access.
 
- 
+ 
 
- 
+ 
 
 
 

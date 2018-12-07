@@ -1,6 +1,5 @@
 ---
 title: AddEuro
-author: windows-driver-content
 description: AddEuro
 ms.assetid: 1d27fbb0-787f-4fb2-8a1c-3c68598d6d41
 keywords:
@@ -40,23 +39,23 @@ AddEuro uses a private [*PPD*](https://msdn.microsoft.com/library/windows/hardwa
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>*<strong>ADHasEuro</strong>: True</p></td>
+<td><p><em><strong>ADHasEuro</strong>: True</p></td>
 <td><p>The printer already has a built-in Euro symbol that does not need to be downloaded. With this value, AddEuro is disabled by default.</p></td>
 </tr>
 <tr class="even">
-<td><p>*<strong>ADHasEuro</strong>: False</p></td>
+<td><p></em><strong>ADHasEuro</strong>: False</p></td>
 <td><p>The printer does not have a built-in Euro symbol; if called for by an application, this symbol should be downloaded. With this value, AddEuro is enabled by default, regardless of PostScript version.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 If the \***ADHasEuro** keyword does not appear, the AddEuro feature is enabled by default for printers with PostScript versions before 3011, and disabled by default for versions 3011 or after.
 
- 
+ 
 
- 
+ 
 
 
 

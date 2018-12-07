@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_AP_ATTRIBUTES
-author: windows-driver-content
 description: WDI_TLV_AP_ATTRIBUTES is a TLV that contains the attributes of an access point.
 ms.assetid: FD6F635C-85FF-4668-AA17-12677A61F84D
 ms.date: 07/18/2017
@@ -33,7 +32,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 | [**WDI\_TLV\_UNICAST\_ALGORITHM\_LIST**](wdi-tlv-unicast-algorithm-list.md)                |                                |          | The supported unicast algorithms.        |
 | [**WDI\_TLV\_MULTICAST\_DATA\_ALGORITHM\_LIST**](wdi-tlv-multicast-data-algorithm-list.md) |                                |          | The supported multicast data algorithms. |
 
- 
+ 
 
 Requirements
 ------------
@@ -59,9 +58,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Top-Level Collections
-author: windows-driver-content
 description: Top-Level Collections
 ms.assetid: dcbee8e3-d03a-45c8-92e4-0897b9f55177
 keywords:
@@ -27,7 +26,7 @@ The internal structure and capability of a top-level collection is described by 
 
 -   [Button capability arrays](button-capability-arrays.md) and [value capability arrays](value-capability-arrays.md) describe the capability of the controls supported by the top-level collection.
 
- 
+ 
 
 
 

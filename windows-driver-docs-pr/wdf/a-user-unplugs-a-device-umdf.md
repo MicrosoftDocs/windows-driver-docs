@@ -1,6 +1,5 @@
 ---
 title: A User Unplugs a Device
-author: windows-driver-content
 description: A User Unplugs a Device
 ms.assetid: d0c8fd6d-b356-4048-aa97-ebe331d23361
 keywords:
@@ -31,9 +30,9 @@ Generally, the driver should avoid accessing the hardware in the remove path. Th
 
 ![surprise-removal sequence for a umdf driver](images/umdf-surprise-removal-sequence.png)
 
- 
+ 
 
- 
+ 
 
 
 

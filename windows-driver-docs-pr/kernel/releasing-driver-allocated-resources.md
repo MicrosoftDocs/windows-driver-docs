@@ -1,6 +1,5 @@
 ---
 title: Releasing Driver-Allocated Resources
-author: windows-driver-content
 description: Releasing Driver-Allocated Resources
 ms.assetid: b286b4b0-54f2-4798-a77b-c08743502552
 keywords: ["Unload routines WDK kernel , non-PnP drivers", "non-PnP Unload routine WDK kernel", "releasing driver-allocated resources", "driver-allocated resource releases WDK kernel", "resource releasing WDK kernel"]
@@ -56,9 +55,9 @@ In general, an *Unload* routine releases all driver-allocated resources in the f
 
 After the driver has released device, system, and hardware resources, it can delete its device and controller objects, as described in the following section.
 
- 
+ 
 
- 
+ 
 
 
 

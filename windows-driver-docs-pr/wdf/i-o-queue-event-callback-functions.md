@@ -1,6 +1,5 @@
 ---
 title: I/O Queue Event Callback Functions
-author: windows-driver-content
 description: I/O Queue Event Callback Functions
 ms.assetid: 5aa63c47-493d-4583-9eaa-1e50fdc089dd
 keywords:
@@ -29,9 +28,9 @@ When drivers create I/O queues, or configure default I/O queues, they can regist
 
 [IQueueCallbackDefaultIoHandler](https://msdn.microsoft.com/library/windows/hardware/ff556843)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: 'REMOTE_NDIS_KEEPALIVE_MSG'
-author: windows-driver-content
 Description: 'The host sends this message periodically when there has been no other control or data traffic from the device to the host for the bus-defined KeepAliveTimeoutPeriod.'
 ms.assetid: 7e0b329f-8ba7-488d-b99d-63e6b9bbc171
 ms.date: 07/31/2017
@@ -49,7 +48,7 @@ The host sends this message periodically when there has been no other control or
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -84,9 +83,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

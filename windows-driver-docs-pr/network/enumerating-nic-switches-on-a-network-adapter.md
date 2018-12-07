@@ -19,11 +19,11 @@ After a successful return from this OID request, the **InformationBuffer** membe
 
     **Note**  If the network adapter has no NIC switches, the driver sets the **NumElements** member of the [**NDIS\_NIC\_SWITCH\_INFO\_ARRAY**](https://msdn.microsoft.com/library/windows/hardware/hh451577) structure to zero and no [**NDIS\_NIC\_SWITCH\_INFO**](https://msdn.microsoft.com/library/windows/hardware/hh451582) structures are returned.
 
-     
+     
 
 **Note**  Starting with Windows Server 2012, the SR-IOV interface supports only one NIC switch on the network adapter. This switch is known as the *default NIC switch*, and is referenced by the NDIS\_DEFAULT\_SWITCH\_ID identifier.
 
- 
+ 
 
 NDIS handles the [OID\_NIC\_SWITCH\_ENUM\_SWITCHES](https://msdn.microsoft.com/library/windows/hardware/hh451819) request for miniport drivers. NDIS returns the information from an internal cache of the data that it maintains from the following sources:
 
@@ -33,11 +33,11 @@ NDIS handles the [OID\_NIC\_SWITCH\_ENUM\_SWITCHES](https://msdn.microsoft.com/l
 
 **Note**  NDIS also provides the enumeration of the switches in the **NicSwitchArray** member in the [**NDIS\_BIND\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff564832) and [**NDIS\_FILTER\_ATTACH\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff565481) structures. Therefore, the overlying protocol and filter drivers do not have to issue [OID\_NIC\_SWITCH\_ENUM\_SWITCHES](https://msdn.microsoft.com/library/windows/hardware/hh451819) requests to obtain this information.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

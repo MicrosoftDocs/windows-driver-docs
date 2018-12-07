@@ -17,9 +17,9 @@ The following topics describe how display miniport drivers and user-mode display
 
 [Supporting Rotation in a User-Mode Display Driver](supporting-rotation-in-a-user-mode-display-driver.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Framework Device Object
-author: windows-driver-content
 description: Framework Device Object
 ms.assetid: 6be47eac-d6e4-43d1-bf2d-d49dcb2273c0
 keywords:
@@ -23,9 +22,9 @@ When a new device arrives in the system, the framework calls the [**IDriverEntry
 
 When drivers create a framework device object, they can register their [IPnpCallback](https://msdn.microsoft.com/library/windows/hardware/ff556762), [IPnpCallbackSelfManagedIo](https://msdn.microsoft.com/library/windows/hardware/ff556776), [IPnpCallbackHardware](https://msdn.microsoft.com/library/windows/hardware/ff556764), [IFileCallbackCleanup](https://msdn.microsoft.com/library/windows/hardware/ff554902), and [IFileCallbackClose](https://msdn.microsoft.com/library/windows/hardware/ff554907) interfaces. The framework then notifies the driver when file cleanup and close and Plug and Play (PnP) and power management (PM) events occur. For more information about supporting PnP and PM, see [PnP and Power Management in UMDF-based Drivers](pnp-and-power-management-in-umdf-drivers.md).
 
- 
+ 
 
- 
+ 
 
 
 

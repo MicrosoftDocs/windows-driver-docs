@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_WAKE_PACKET_IPv6_TCP_SYNC
-author: windows-driver-content
 description: WDI_TLV_WAKE_PACKET_IPv6_TCP_SYNC is a TLV that contains wake-on-LAN IPv6 TCP sync packet information.
 ms.assetid: CBC0EA08-FDB4-415B-948C-E906F0471AD2
 ms.date: 07/18/2017
@@ -35,7 +34,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | UINT16      | Specifies the TCP source port number in the TCP SYN packet.      |
 | UINT16      | Specifies the TCP destination port number in the TCP SYN packet. |
 
- 
+ 
 
 Requirements
 ------------
@@ -61,9 +60,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: Remote.exe Batch Files
 description: Remote.exe Batch Files
 ms.assetid: e774d39f-4625-41e7-9309-9dbdd46e986e
 keywords: ["remote debugging through remote.exe, batch files"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -36,7 +35,7 @@ remote /s "KD -v" debug
 
 **Note**   If this batch file is not in the same directory as Remote.exe, and Remote.exe is not in a directory listed in the system path, then you should give the full path to the utility when invoking Remote.exe in this batch file.
 
- 
+ 
 
 After this batch file is run, anyone with a Windows computer that is networked to the local host computer can connect to the debug session by using the following command:
 
@@ -46,9 +45,9 @@ remote /c computername debug
 
 where *computername* is the NetBIOS name of the local host computer.
 
- 
+ 
 
- 
+ 
 
 
 

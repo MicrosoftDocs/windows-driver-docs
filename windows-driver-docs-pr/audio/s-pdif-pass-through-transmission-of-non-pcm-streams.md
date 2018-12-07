@@ -50,9 +50,9 @@ Dolby Laboratories introduced the AC-3 (Dolby Digital) compressed audio format i
 
 In Windows XP and later, the waveOut, DirectSound, and DirectShow APIs support non-PCM formats. The DirectSound and waveOut APIs are implemented in such a way that any PCM or non-PCM format that the driver exposes is automatically available to clients of these APIs.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 Windows 10 includes the ability to express concurrency constraints using and XML file. On resource constrained mobile devices the ability to specify priority for specific audio streams can enhance the customer experience.
 
 **Note**   This mechanism is only available in phones and tablets.
- 
+ 
 One challenge with creating a good audio experience on a low cost mobile device, is that some devices have various concurrency constraints. For example, it is possible that the device can only play up to 6 audio streams concurrently and supports only 2 offload streams. When there is an active phone call on a mobile device, it is possible that the device supports only 2 audio streams. When the device is capturing audio, the device can only play up to 4 audio streams.
 
 Windows 10 includes a mechanism to express concurrency constraints to insure that high-priority audio streams and cellular phone calls will be able to play. If the system does not have enough resources, then low priority streams are terminated. This mechanism is only available in phones and tablets not on desktops or laptops.
@@ -139,7 +139,7 @@ The following table summarizes the render audio stream priorities, listed from h
 | Other                    | 13  |
 | Alerts                   | 14  |
 
- 
+ 
 
 The following table summarizes the capture audio stream priorities, listed from highest to lowest priority.
 
@@ -167,7 +167,7 @@ The following table summarizes the capture audio stream priorities, listed from 
 | Ringtone                 | 15  |
 | System                   | 15  |
 
- 
+ 
 
 **Examples**
 
@@ -1625,9 +1625,9 @@ This is an example XML constraints file from the SYSVAD virtual audio driver sam
 </ConstraintModel>
 ```
 
- 
+ 
 
- 
+ 
 
 
 

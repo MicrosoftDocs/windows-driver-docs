@@ -3,7 +3,6 @@ title: Debugger Engine API Overview
 description: Debugger Engine API Overview
 ms.assetid: ea8beca6-93b7-4537-af89-78d599b8b982
 keywords: ["Debugger Engine API, overview"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -46,11 +45,11 @@ This section includes:
 
 **Important**  The IDebug\* interfaces such as [**IDebugEventCallbacks**](https://msdn.microsoft.com/library/windows/hardware/ff550550) interface, although COM like, are not proper COM APIs. Calling these interfaces from managed code is an unsupported scenario. Issues such as garbage collection and thread ownership, lead to system instability when the interfaces are called with managed code.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

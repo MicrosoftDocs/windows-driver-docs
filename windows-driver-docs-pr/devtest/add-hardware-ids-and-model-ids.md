@@ -24,7 +24,7 @@ To associate the Hardware IDs and Model IDs for your device metadata package, cl
 3.  In the box that appears, enter the Hardware ID.
     **Note**  If possible, use a value that contains your company's Vendor ID. For example: USB\\VID\_045E&PID\_0047
 
-     
+     
 
 4.  Click **OK**.
 
@@ -37,9 +37,9 @@ To associate the Hardware IDs and Model IDs for your device metadata package, cl
 
 For detailed information about the Hardware ID for each device style, see the [Device Metadata Package Schema Reference for Windows 8](http://go.microsoft.com/fwlink/p/?LinkId=226753).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Architecture of the UEFI battery charging application
-author: windows-driver-content
 description: Architecture of the UEFI battery charging application provided by Microsoft
 ms.assetid: eabac2ec-6e2f-448f-9793-117e12c288d9
 ms.date: 04/20/2017
@@ -22,7 +21,7 @@ The UEFI battery charging application uses key UEFI protocols and reacts to vari
 
 **Note**   The term *UEFI battery charging application* in this topic refers to the UEFI battery charging library loaded by mobilestartup.efi. For more information about mobilestartup.efi, see [Boot and UEFI](boot-and-uefi.md).
 
- 
+ 
 
 ## UEFI protocols used by the UEFI battery charging application
 
@@ -190,7 +189,7 @@ Every time [EFI\_BATTERY\_CHARGING\_PROTOCOL.ChargeBattery](efi-battery-charging
 </tbody>
 </table>
 
- 
+ 
 
 The following table illustrates how the UEFI battery charging application reacts to the status values received from [EFI\_BATTERY\_CHARGING\_PROTOCOL.GetBatteryInformation](efi-battery-charging-protocolgetbatteryinformation.md) or [EFI\_BATTERY\_CHARGING\_PROTOCOL.GetBatteryStatus](efi-battery-charging-protocolgetbatterystatus.md).
 
@@ -222,7 +221,7 @@ The following table illustrates how the UEFI battery charging application reacts
 </tr>
 <tr class="odd">
 <td><p>EFI_DEVICE_ERROR or EFI_NOT_READY</p>
-<p>These error conditions are handled in the same way. These values should be returned by [EFI_BATTERY_CHARGING_PROTOCOL.GetBatteryInformation](efi-battery-charging-protocolgetbatteryinformation.md) or [EFI_BATTERY_CHARGING_PROTOCOL.GetBatteryStatus](efi-battery-charging-protocolgetbatterystatus.md) in cases where the device may not be able to boot to the main OS due to some device error. In particular:</p>
+<p>These error conditions are handled in the same way. These values should be returned by <a href="efi-battery-charging-protocolgetbatteryinformation.md" data-raw-source="[EFI_BATTERY_CHARGING_PROTOCOL.GetBatteryInformation](efi-battery-charging-protocolgetbatteryinformation.md)">EFI_BATTERY_CHARGING_PROTOCOL.GetBatteryInformation</a> or <a href="efi-battery-charging-protocolgetbatterystatus.md" data-raw-source="[EFI_BATTERY_CHARGING_PROTOCOL.GetBatteryStatus](efi-battery-charging-protocolgetbatterystatus.md)">EFI_BATTERY_CHARGING_PROTOCOL.GetBatteryStatus</a> in cases where the device may not be able to boot to the main OS due to some device error. In particular:</p>
 <ul>
 <li><p>EfiBatteryChargingStatusAborted</p></li>
 <li><p>EfiBatteryChargingStatusDeviceError</p></li>
@@ -235,13 +234,13 @@ The following table illustrates how the UEFI battery charging application reacts
 <li><p>EfiBatteryChargingErrorRequestReboot</p></li>
 </ul>
 <p>Throwing EFI_DEVICE_ERROR or EFI_NOT_READY followed by a completion token of one of the errors listed above will cause the device to eventually shut down.</p></td>
-<td><p>Resume and call [EFI_BATTERY_CHARGING_PROTOCOL.ChargeBattery](efi-battery-charging-protocolchargebattery.md)</p></td>
-<td><p>Resume and call [EFI_BATTERY_CHARGING_PROTOCOL.ChargeBattery](efi-battery-charging-protocolchargebattery.md)</p></td>
+<td><p>Resume and call <a href="efi-battery-charging-protocolchargebattery.md" data-raw-source="[EFI_BATTERY_CHARGING_PROTOCOL.ChargeBattery](efi-battery-charging-protocolchargebattery.md)">EFI_BATTERY_CHARGING_PROTOCOL.ChargeBattery</a></p></td>
+<td><p>Resume and call <a href="efi-battery-charging-protocolchargebattery.md" data-raw-source="[EFI_BATTERY_CHARGING_PROTOCOL.ChargeBattery](efi-battery-charging-protocolchargebattery.md)">EFI_BATTERY_CHARGING_PROTOCOL.ChargeBattery</a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## User experience
 
@@ -258,9 +257,9 @@ The following steps describe how the application draws the UI to the screen:
 
 -   When the application receives errors from the driver, the application clears the screen by writing the background fill color to every pixel in the frame buffer, and then the application draws the battery error screen by copying pixels from the appropriate bitmap buffer directly to the display.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: 32-Bit and 64-Bit WIA Interoperability
-author: windows-driver-content
 description: 32-Bit and 64-Bit WIA Interoperability
 ms.assetid: f7f7a42a-590e-4f81-b325-ba9f9ffa9664
 ms.date: 04/20/2017
@@ -24,11 +23,11 @@ The WIA service will determine where UI extensions get physically loaded, depend
 
     **Note**   Even though *wiawow64.exe* is completely transparent to both WIA application writers and WIA driver developers, driver developers have to debug the *wiawow64.exe* process rather than the 32-bit application to debug 64-bit UI extensions.
 
-     
+     
 
- 
+ 
 
- 
+ 
 
 
 

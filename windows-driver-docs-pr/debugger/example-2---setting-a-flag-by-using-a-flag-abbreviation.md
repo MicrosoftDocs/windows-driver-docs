@@ -2,7 +2,6 @@
 title: Example 2 Setting a Flag by Using a Flag Abbreviation
 description: Example 2 Setting a Flag by Using a Flag Abbreviation
 ms.assetid: 3c011ca5-8901-4bf2-b95d-364d644cb476
-ms.author: domars
 ms.date: 10/12/2018
 ms.localizationpriority: medium
 ---
@@ -28,9 +27,9 @@ Current Registry Settings for notepad.exe executable are: 00000002
     sls - Show Loader Snaps
 ```
 
- 
+ 
 
- 
+ 
 
 
 

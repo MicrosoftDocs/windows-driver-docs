@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_FT_PMKR0NAME
-author: windows-driver-content
 description: WDI_TLV_FT_PMKR0NAME is a TLV that contains a PMKR0Name or PMKR1Name (802.11r).
 ms.assetid: F280FB10-D6CD-4410-8F3C-CD114F62B091
 ms.date: 07/18/2017
@@ -31,7 +30,7 @@ The size (in bytes) of a [**WDI\_TYPE\_PMK\_NAME**](https://msdn.microsoft.com/l
 |--------------------------------------------------------|-------------------------------------|
 | [**WDI\_TYPE\_PMK\_NAME**](https://msdn.microsoft.com/library/windows/hardware/mt269156) | A PMKR0Name or PMKR1Name (802.11r). |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

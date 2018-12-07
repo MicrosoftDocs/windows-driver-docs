@@ -22,9 +22,9 @@ ms.localizationpriority: medium
 
 Clipped blts are never passed to the driver on Microsoft Windows 2000 and later. The **IsClipped** member of [**DD\_BLTDATA**](https://msdn.microsoft.com/library/windows/hardware/ff550474) is always **FALSE**, and the clipped list is always **NULL**.
 
- 
+ 
 
- 
+ 
 
 
 

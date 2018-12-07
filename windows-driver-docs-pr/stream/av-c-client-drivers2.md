@@ -1,6 +1,5 @@
 ---
 title: AV/C Client Drivers
-author: windows-driver-content
 description: AV/C Client Drivers
 ms.assetid: 70d98c31-2da6-455b-91d8-59bed306b574
 keywords:
@@ -38,9 +37,9 @@ For more information about how to write an AV/C subunit driver, see [AV/C Overvi
 
 AV/C protocol support is built on the IEEE 1394 driver stack and the IEC-61883 standards. For more information about the IEC-61883 driver stack, see [IEC-61883 Client Drivers](https://msdn.microsoft.com/library/windows/hardware/ff537188).
 
- 
+ 
 
- 
+ 
 
 
 

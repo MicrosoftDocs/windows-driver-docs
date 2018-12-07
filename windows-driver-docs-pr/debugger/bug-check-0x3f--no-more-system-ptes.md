@@ -3,7 +3,6 @@ title: Bug Check 0x3F NO_MORE_SYSTEM_PTES
 description: The NO_MORE_SYSTEM_PTES bug check has a value of 0x0000003F. This is the result of a system which has performed too many I/O actions.
 ms.assetid: b8164ec3-87c3-4629-ab70-6addbf368b76
 keywords: ["Bug Check 0x3F NO_MORE_SYSTEM_PTES", "NO_MORE_SYSTEM_PTES"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -56,7 +55,7 @@ The NO\_MORE\_SYSTEM\_PTES bug check has a value of 0x0000003F. This is the resu
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -103,9 +102,9 @@ eb41f1e4 eb110000       10 VIDEOPRT!pVideoPortGetDeviceBase+0x139/VIDEOPRT!Video
 
 If the system runs out of PTEs again after the **TrackPtes** registry value has been set, [**bug check 0xD8**](bug-check-0xd8--driver-used-excessive-ptes.md) (DRIVER\_USED\_EXCESSIVE\_PTES) will be issued instead of 0x3F. The name of the driver causing this error will be displayed as well.
 
- 
+ 
 
- 
+ 
 
 
 

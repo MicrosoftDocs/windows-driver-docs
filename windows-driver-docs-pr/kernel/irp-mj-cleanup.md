@@ -1,6 +1,5 @@
 ---
 title: IRP_MJ_CLEANUP
-author: windows-driver-content
 description: Drivers that maintain process-specific context information must handle cleanup requests in DispatchCleanup routines.
 ms.date: 08/12/2017
 ms.assetid: 097f5f1d-3e88-4db0-bb79-db2267bdaf38
@@ -12,7 +11,7 @@ ms.localizationpriority: medium
 # IRP\_MJ\_CLEANUP
 
 
-Drivers that maintain process-specific context information must handle cleanup requests in [*DispatchCleanup*](https://msdn.microsoft.com/library/windows/hardware/ff543233) routines.
+Drivers that maintain process-specific context information must handle cleanup requests in [*DispatchCleanup*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routines.
 
 When Sent
 ---------
@@ -59,15 +58,15 @@ Requirements
 ## See also
 
 
-[*DispatchCleanup*](https://msdn.microsoft.com/library/windows/hardware/ff543233)
+[*DispatchCleanup*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch)
 
 [**IO\_STACK\_LOCATION**](https://msdn.microsoft.com/library/windows/hardware/ff550659)
 
 [**IRP\_MJ\_CLOSE**](irp-mj-close.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: SIO_ADDRESS_LIST_QUERY
-author: windows-driver-content
 description: SIO_ADDRESS_LIST_QUERY
 ms.assetid: c50520a3-6ba3-448e-bbb4-bf3425dcbc41
 ms.date: 08/08/2017
@@ -63,7 +62,7 @@ To query the current list of local transport addresses for a socket's address fa
 </tbody>
 </table>
 
- 
+ 
 
 A WSK application does not specify a pointer to an IRP when calling the **WskControlSocket** function to query the current list of local transport addresses for a socket's address family.
 
@@ -93,9 +92,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

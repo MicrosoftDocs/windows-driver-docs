@@ -1,6 +1,5 @@
 ---
 title: Points to Consider for StartIo Routines
-author: windows-driver-content
 description: Points to Consider for StartIo Routines
 ms.assetid: 389240d0-682f-48b3-940f-c107e9f60155
 keywords: ["StartIo routines, about StartIo routines"]
@@ -40,9 +39,9 @@ Keep the following points in mind when implementing a [*StartIo*](https://msdn.m
 
 -   If the driver holds IRPs in a cancelable state, its *StartIo* routine must check whether the input IRP has already been canceled before it begins any processing for that request on its device. For more information, see [Canceling IRPs](canceling-irps.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Avoiding Reboot when Updating a UMDF Driver
-author: windows-driver-content
 description: Avoiding Reboot when Updating a UMDF Driver
 ms.assetid: B5321732-50FD-4719-BBD0-F0A3BE1EE532
 ms.date: 04/20/2017
@@ -20,9 +19,9 @@ CopyFiles=UMDriverCopy
 Virtualserial.dll,,,0x00004000  ; COPYFLG_IN_USE_RENAME
 ```
 
- 
+ 
 
- 
+ 
 
 
 

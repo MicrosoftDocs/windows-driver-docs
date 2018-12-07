@@ -1,6 +1,5 @@
 ---
 title: Device Specific Data (_DSD) for PCIe Root Ports
-author: windows-driver-content
 description: ACPI _DSD methods for supporting Modern Standby and PCI hot plug scenarios
 ms:assetid: 44ad67da-f374-4a8e-80bd-d531853088a2
 keywords: ACPI, ACPI \_DSD method
@@ -17,11 +16,11 @@ In Windows 10 (Version 1803), new ACPI _DSD methods have been added to support M
 
 ```cpp
 Name (_DSD, Package () {
- 
+
           ToUUID("FDF06FAD-F744-4451-BB64-ECD792215B10"),
- 
+
             Package () {
- 
+
                 Package (2) {"FundamentalDeviceResetTriggeredOnD3ToD0", 1},
             }
         }
@@ -64,7 +63,6 @@ Package (2) {"UID", 0}, // Property 2: UID of the externally facing port on plat
                    }
         }
 )
-
 ```
 ## See Also
 

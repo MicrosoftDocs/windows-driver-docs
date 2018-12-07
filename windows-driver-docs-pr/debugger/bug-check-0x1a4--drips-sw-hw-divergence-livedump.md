@@ -2,7 +2,6 @@
 title: Bug Check 0x1A4 DRIPS_SW_HW_DIVERGENCE_LIVEDUMP
 description: The DRIPS_SW_HW_DIVERGENCE_LIVEDUMP live dump has a value of 0x000001A4.
 keywords: ["Bug Check 0x1A4 DRIPS_SW_HW_DIVERGENCE_LIVEDUMP",  "DRIPS_SW_HW_DIVERGENCE_LIVEDUMP"]
-ms.author: domars
 ms.date: 05/25/2018
 topic_type:
 - apiref
@@ -35,9 +34,9 @@ Parameter | Description
 3 |  Reserved.
 4 |  Reserved.
 
- 
+ 
 
- 
+ 
 
 
 

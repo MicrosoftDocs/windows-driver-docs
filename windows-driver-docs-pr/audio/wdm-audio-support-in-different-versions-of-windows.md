@@ -32,11 +32,11 @@ This section describes the operating system support for audio devices and driver
 
 [Factors Governing Wave-Output Latency](factors-governing-wave-output-latency.md)
 
-[Windows Vista Audio System Effects](audio-system-effects.md)
 
- 
 
- 
+ 
+
+ 
 
 
 

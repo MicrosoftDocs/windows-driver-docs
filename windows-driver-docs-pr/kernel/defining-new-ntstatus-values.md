@@ -1,6 +1,5 @@
 ---
 title: Defining New NTSTATUS Values
-author: windows-driver-content
 description: Defining New NTSTATUS Values
 ms.assetid: 44211ae4-6bfe-4931-b12c-e590c7aacd97
 keywords: ["NTSTATUS values WDK kernel", "custom NTSTATUS values WDK kernel", "IO_ERR_XXX values"]
@@ -50,9 +49,9 @@ For paired display and video miniport drivers, the video port driver does the ma
 
 Drivers cannot use custom NTSTATUS values for IRPs that can be received in user mode, because only the system-defined values can be translated into Win32 error codes.
 
- 
+ 
 
- 
+ 
 
 
 

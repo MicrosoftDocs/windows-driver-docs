@@ -15,9 +15,9 @@ Autologger sessions are supported only on Windows Vista and later versions of Wi
 
 For more information about autologgers and methods of boot tracing in prior versions of Windows, see [Tracing During Boot](tracing-during-boot.md).
 
- 
+ 
 
- 
+ 
 
 
 

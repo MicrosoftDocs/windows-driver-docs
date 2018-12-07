@@ -3,7 +3,6 @@ title: Window Close All Error Windows
 description: Window Close All Error Windows
 ms.assetid: 1de8e4f8-926d-434c-8b45-e0d27d5002b1
 keywords: ["Window Close All Error Windows"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -16,9 +15,9 @@ ms.localizationpriority: medium
 
 Click **Close All Error Windows** on the **Window** menu to close all error message boxes that have opened from source files that were not found.
 
- 
+ 
 
- 
+ 
 
 
 

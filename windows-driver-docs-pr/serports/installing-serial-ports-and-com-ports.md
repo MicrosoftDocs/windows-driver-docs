@@ -1,6 +1,5 @@
 ---
 title: Installing Serial Ports and COM Ports
-author: windows-driver-content
 description: Installing Serial Ports and COM Ports
 ms.assetid: 9c755dfa-65e5-4ecb-8544-dd63c6b69c8e
 keywords:
@@ -31,9 +30,9 @@ For more information about installing serial ports and COM ports using the Ports
 
 If you do a custom installation of a COM port, you must comply with the COM port requirements that are defined in [Configuration of COM Ports](configuration-of-com-ports.md).
 
- 
+ 
 
- 
+ 
 
 
 

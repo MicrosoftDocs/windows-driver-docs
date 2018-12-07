@@ -3,7 +3,6 @@ title: TList Examples
 description: TList Examples
 ms.assetid: 9c9a1e81-03c2-4b7c-b0da-b25942548aa9
 keywords: ["TList, TList examples"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -171,9 +170,9 @@ c:\>tlist /m
 
 In response, TList displays process details for Inorpc.exe, Inort.exe, and Inotask.exe. For a description of the output, see the "Find process details using PID" subsection above.
 
- 
+ 
 
- 
+ 
 
 
 

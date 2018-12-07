@@ -127,7 +127,7 @@ In the example above, MSBuild invokes mc.exe on the file a.mc, with the –s swi
 </tr>
 <tr class="even">
 <td align="left"><strong>HeaderFilePath</strong>
-<p>Specifies the path of where to create the C include file. The default is .\.</p></td>
+<p>Specifies the path of where to create the C include file. The default is ..</p></td>
 <td align="left">%(MessageCompile.HeaderFilePath)</td>
 <td align="left"><strong>-h</strong><em>&lt;path&gt;</em></td>
 </tr>
@@ -139,7 +139,7 @@ In the example above, MSBuild invokes mc.exe on the file a.mc, with the –s swi
 </tr>
 <tr class="even">
 <td align="left"><strong>RCFilePath</strong>
-<p>Specifies the path of the RC includes file and the binary message resource files that it includes. The default is .\.</p></td>
+<p>Specifies the path of the RC includes file and the binary message resource files that it includes. The default is ..</p></td>
 <td align="left">%(MessageCompile.RCFilePath)</td>
 <td align="left"><strong>-r</strong><em>&lt;path&gt;</em></td>
 </tr>
@@ -254,16 +254,16 @@ In the example above, MSBuild invokes mc.exe on the file a.mc, with the –s swi
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
 
 [**Message Compiler (MC.exe)**](https://msdn.microsoft.com/library/windows/desktop/aa385638)
 
- 
+ 
 
- 
+ 
 
 
 

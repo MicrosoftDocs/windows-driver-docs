@@ -1,6 +1,5 @@
 ---
 title: Preventing System Power State Changes
-author: windows-driver-content
 description: Preventing System Power State Changes
 ms.assetid: a744dfe7-d756-45c3-8fdf-7a403f6cde36
 keywords: ["system power states WDK kernel , preventing changes", "state transitions WDK power management", "PoRegisterSystemState", "PoSetSystemState", "PoUnregisterSystemState", "working states WDK power management"]
@@ -24,9 +23,9 @@ With **PoSetSystemState**, a driver notifies the power manager of the same condi
 
 Using these routines, a driver can forestall many, but not all, transitions out of the working state. The power manager always shuts down the system when loss of power is imminent or when a user explicitly requests shutdown.
 
- 
+ 
 
- 
+ 
 
 
 

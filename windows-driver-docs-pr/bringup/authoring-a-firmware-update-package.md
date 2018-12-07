@@ -1,6 +1,5 @@
 ---
 title: Authoring a firmware update package
-author: windows-driver-content
 description: Each firmware update package includes a single binary file that contains the entire firmware payload (for example firmware.bin) and a security catalog that Windows uses to validate firmware.bin.
 ms.assetid: 672F5E45-C0AB-4C19-BB0A-C8B5A66D8EED
 ms.date: 04/20/2017
@@ -21,7 +20,7 @@ It is recommended that each firmware update package target a single firmware res
 
 **Note**  A device cannot be targeted by more than one firmware update package. If a device is targeted by a firmware update package which also includes system firmware, it cannot be targeted by a second firmware update package which only targets the device.
 
- 
+ 
 
 1.  To allow a firmware update package to target a firmware update to the appropriate system hardware, Windows surfaces a device instance for each entry in the ESRT, where such a device instance exposes a Hardware ID that identifies it as belonging to the ESRT entry.
 

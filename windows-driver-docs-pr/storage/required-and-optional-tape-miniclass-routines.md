@@ -1,6 +1,5 @@
 ---
 title: Required and Optional Tape Miniclass Routines
-author: windows-driver-content
 description: Required and Optional Tape Miniclass Routines
 ms.assetid: 7a641199-2607-4980-bd8b-ec3856b311ef
 keywords:
@@ -42,9 +41,9 @@ The tape miniclass driver's **DriverEntry** routine must use that name exactly i
 
 See also the description of tape miniclass routines in [Tape Miniclass Driver Routines](https://msdn.microsoft.com/library/windows/hardware/ff567970).
 
- 
+ 
 
- 
+ 
 
 
 

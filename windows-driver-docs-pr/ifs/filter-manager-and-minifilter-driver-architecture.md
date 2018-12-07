@@ -1,6 +1,5 @@
 ---
 title: Filter Manager and Minifilter Driver Architecture
-author: windows-driver-content
 description: Filter Manager and Minifilter Driver Architecture
 ms.assetid: d3fde421-3475-4327-95cf-eaa520f5c132
 keywords:
@@ -35,8 +34,8 @@ This section includes:
 
 [Guidelines for Porting Legacy Filter Drivers](guidelines-for-porting-legacy-filter-drivers.md)
 
- 
+ 
 
- 
+ 
 
 

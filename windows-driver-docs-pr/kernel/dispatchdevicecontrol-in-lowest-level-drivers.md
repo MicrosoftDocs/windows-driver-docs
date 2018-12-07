@@ -1,6 +1,5 @@
 ---
 title: DispatchDeviceControl in Lowest-Level Drivers
-author: windows-driver-content
 description: DispatchDeviceControl in Lowest-Level Drivers
 ms.assetid: 51caacd3-c9e0-450e-9060-f308ab46b5a0
 keywords: ["dispatch routines WDK kernel , DispatchDeviceControl routine", "dispatch DispatchDeviceControl routine", "IRP_MJ_DEVICE_CONTROL I/O function code", "device control dispatch routines WDK kernel"]
@@ -14,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-An [**IRP\_MJ\_DEVICE\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff550744) request for a lowest-level driver requires that the driver either change the state of its device or provide information about the state of its device. Because most kinds of drivers are required to handle a number of I/O control codes, their [*DispatchDeviceControl*](https://msdn.microsoft.com/library/windows/hardware/ff543287) routines usually contain a **switch** statement somewhat like the following:
+An [**IRP\_MJ\_DEVICE\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff550744) request for a lowest-level driver requires that the driver either change the state of its device or provide information about the state of its device. Because most kinds of drivers are required to handle a number of I/O control codes, their [*DispatchDeviceControl*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routines usually contain a **switch** statement somewhat like the following:
 
 ```cpp
     :    : 
@@ -50,9 +49,9 @@ Consider the following implementation guidelines for device drivers' *DispatchDe
 
 If the *DispatchDeviceControl* routine can complete the IRP, it should call [**IoCompleteRequest**](https://msdn.microsoft.com/library/windows/hardware/ff548343) with a *PriorityBoost* of IO\_NO\_INCREMENT. If the *DispatchDeviceControl* routine must queue the IRP for further processing, it must call [**IoMarkIrpPending**](https://msdn.microsoft.com/library/windows/hardware/ff549422) and return STATUS\_PENDING.
 
- 
+ 
 
- 
+ 
 
 
 

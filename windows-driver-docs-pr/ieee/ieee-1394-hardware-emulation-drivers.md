@@ -1,6 +1,5 @@
 ---
 title: IEEE 1394 Hardware Emulation Drivers
-author: windows-driver-content
 description: IEEE 1394 Hardware Emulation Drivers
 ms.assetid: 44141072-e425-4983-9234-3ad79daa2017
 keywords:
@@ -30,9 +29,9 @@ For information about how to remove a virtual device, see [Removing IEEE 1394 Vi
 
 With just a few exceptions, the emulation driver can use the complete 1394 DDI in the same way that a function driver for a real device would. For an explanation of differences in the way real and virtual devices use the 1394 DDI, see [Supporting Requests in IEEE 1394 Virtual Device Drivers](https://msdn.microsoft.com/library/windows/hardware/ff538825).
 
- 
+ 
 
- 
+ 
 
 
 

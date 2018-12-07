@@ -3,7 +3,6 @@ title: Using ks.graph
 description: Using ks.graph
 ms.assetid: 05dcd5d3-fac6-4af5-8149-955435fb016f
 keywords: ["kernel streaming debugging, displaying a graph"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -99,11 +98,11 @@ For such output, look at the "suspects" list. These suspect filters are those th
 
 **Note**   This functionality should only be used on stalled graphs! The analyzer has no way of knowing how long the graph has been in this state. Breaking into the debugger and analyzing a running graph as a stalled graph still displays a suspect filter.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

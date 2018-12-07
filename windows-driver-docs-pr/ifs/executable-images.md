@@ -1,6 +1,5 @@
 ---
 title: Executable Images
-author: windows-driver-content
 description: Executable Images
 ms.assetid: ca279a74-5f30-4413-bf1c-4d5af12d294d
 keywords:
@@ -46,9 +45,9 @@ Executable files are loaded into the address space of a process using a memory m
 
 Thus, the file system ensures that a memory mapped file, including an executable image, cannot be deleted even though the file is not open.
 
- 
+ 
 
- 
+ 
 
 
 

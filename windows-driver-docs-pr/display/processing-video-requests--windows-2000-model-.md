@@ -23,9 +23,9 @@ The video port driver also manages the synchronization of incoming requests for 
 
 On receipt of a video request, [*HwVidStartIO*](https://msdn.microsoft.com/library/windows/hardware/ff567367) must examine the VRP, process the video request on the adapter, set the appropriate status and other information in the VRP, and return **TRUE**.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: DispatchDeviceControl in Higher-Level Drivers
-author: windows-driver-content
 description: DispatchDeviceControl in Higher-Level Drivers
 ms.assetid: baff49c4-8764-4b65-84f4-ce5e10d51ed2
 keywords: ["dispatch routines WDK kernel , DispatchDeviceControl routine", "dispatch DispatchDeviceControl routine", "IRP_MJ_DEVICE_CONTROL I/O function code", "device control dispatch routines WDK kernel"]
@@ -14,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-Usually, the [*DispatchDeviceControl*](https://msdn.microsoft.com/library/windows/hardware/ff543287) routine of a higher-level driver simply sets up the I/O stack location for the next-lower-level driver and passes the IRP on with [**IoCallDriver**](https://msdn.microsoft.com/library/windows/hardware/ff548336). The *DispatchDeviceControl* routine seldom checks the validity of parameters in the input IRP because the underlying device driver is assumed to have better information about how to handle each device-type-specific I/O control request.
+Usually, the [*DispatchDeviceControl*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine of a higher-level driver simply sets up the I/O stack location for the next-lower-level driver and passes the IRP on with [**IoCallDriver**](https://msdn.microsoft.com/library/windows/hardware/ff548336). The *DispatchDeviceControl* routine seldom checks the validity of parameters in the input IRP because the underlying device driver is assumed to have better information about how to handle each device-type-specific I/O control request.
 
 A possible exception to this general rule is the *DispatchDeviceControl* routine in the class driver of a class/port driver pair. For more information about handling device control requests in paired class/port drivers, see [Dispatch(Internal)DeviceControl in Class/Port Drivers](dispatch-internal-devicecontrol-in-class-port-drivers.md).
 
@@ -35,9 +34,9 @@ Almost all system-defined I/O control codes require the underlying device driver
 
 A higher-level driver that allocates IRPs with [**IoBuildDeviceIoControlRequest**](https://msdn.microsoft.com/library/windows/hardware/ff548318) for an underlying device driver can handle these device control requests synchronously. The higher-level driver can wait for an optional event object to be passed to **IoBuildDeviceIoControlRequest** and associated with the driver-allocated IRP.
 
- 
+ 
 
- 
+ 
 
 
 

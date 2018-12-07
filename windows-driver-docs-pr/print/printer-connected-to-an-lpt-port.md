@@ -1,6 +1,5 @@
 ---
 title: Printer Connected to an LPT Port
-author: windows-driver-content
 description: Printer Connected to an LPT Port
 ms.assetid: fbc71ae8-9b63-4667-b9d6-fdff9100d70b
 keywords:
@@ -94,9 +93,9 @@ Company_Name = "Company Name"
 
 Just as in the previous example, each model in the [**INF Manufacturer section**](https://msdn.microsoft.com/library/windows/hardware/ff547454) is represented by a pair of nearly identical lines. For a given model, one line in the pair includes the bus enumerator; the other does not. The two lines guarantee a rank-0 hardware ID match regardless of the type of bus on which the printer is installed. See [Installing a Custom Plug and Play Printer Driver](installing-a-custom-plug-and-play-printer-driver.md) for more information.
 
- 
+ 
 
- 
+ 
 
 
 

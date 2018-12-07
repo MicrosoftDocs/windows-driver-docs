@@ -19,9 +19,9 @@ The initiator HBA or HBA miniport driver should maintain the default tunnel-mode
 
 Miniport drivers that implement the MSiSCSI\_SecurityConfigOperations WMI class must support **SetTunnelModeOuterAddress**.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: NDIS_STATUS_TAPI_INDICATION
-author: windows-driver-content
 description: The NDIS_STATUS_TAPI_INDICATION status indicates that a TAPI event occurred. A WAN-capable miniport driver can indicate TAPI status.
 ms.assetid: b90c5524-2e03-45e1-9ec9-478112eba01b
 ms.date: 07/18/2017
@@ -50,9 +49,9 @@ Requirements
 
 [**NdisMIndicateStatus**](https://msdn.microsoft.com/library/windows/hardware/ff553538)
 
- 
+ 
 
- 
+ 
 
 
 

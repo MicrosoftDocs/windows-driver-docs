@@ -1,6 +1,5 @@
 ---
 title: OID_GEN_XMIT_OK
-author: windows-driver-content
 description: As a query, the OID_GEN_XMIT_OK OID specifies the number of frames that are transmitted without errors.
 ms.assetid: ac7120a3-58bb-4047-b4b7-ad9fbaf14e4f
 ms.date: 08/08/2017
@@ -59,9 +58,9 @@ Requirements
 
 [OID\_GEN\_STATISTICS](oid-gen-statistics.md)
 
- 
+ 
 
- 
+ 
 
 
 

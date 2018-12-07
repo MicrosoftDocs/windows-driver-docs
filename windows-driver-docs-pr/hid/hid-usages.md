@@ -1,6 +1,5 @@
 ---
 title: HID Usages
-author: windows-driver-content
 description: HID usages identify the intended use of HID controls and what the controls actually measure.
 ms.assetid: 84fed314-3554-4291-b51c-734d874a4bab
 keywords:
@@ -79,9 +78,9 @@ More than one usage can be specified for a [**link collection**](link-collection
 
 For information about how aliased usages are specified in a top-level collection's capability arrays, see [Button Capability Arrays](button-capability-arrays.md) and [Value Capability Arrays](value-capability-arrays.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: ks.eval
 description: The ks.eval extension evaluates an expression using an extension-specific expression evaluator.
 ms.assetid: 68c9cfb0-ff87-47ea-bd0d-5f45c1de0639
 keywords: ["ks.eval Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -48,7 +47,7 @@ Specifies the expression to evaluate. *Expression* can include any MASM operator
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -63,7 +62,7 @@ The extension module includes two extension-specific operators which can be used
 Returns the functional device object associated with the object at address **x**.
 
 <span id="________driver_________x_________"></span><span id="________DRIVER_________X_________"></span> **driver(** *x* **)**  
-Returns the driver object associated with **fdo(***x***)**.
+Returns the driver object associated with **fdo(**<em>x</em>**)**.
 
 You can use the **!ks.eval** command to parse expressions that contain these extension-specific operators as well as [MASM Numbers and Operators](masm-numbers-and-operators.md).
 
@@ -85,9 +84,9 @@ kd> !allstreams
     Functional Device 8241c020 [\Driver\avssamp]
 ```
 
- 
+ 
 
- 
+ 
 
 
 

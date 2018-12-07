@@ -1,6 +1,5 @@
 ---
 title: Client-Side Rendering
-author: windows-driver-content
 description: Client-Side Rendering
 ms.assetid: 7b67de2a-b5aa-4d8c-9b2c-9caeffdb71c3
 keywords:
@@ -33,9 +32,9 @@ This section includes:
 
 [Best Practices for Client-Side Rendering](best-practices-for-client-side-rendering.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -16,9 +16,9 @@ warning C28158: No IRQL was saved
 
 A **\_IRQL\_saves\_** annotation specifies that the current function will save an IRQL value in the specified variable, but there is at least one path in which the IRQL value is not saved in that variable.
 
- 
+ 
 
- 
+ 
 
 
 

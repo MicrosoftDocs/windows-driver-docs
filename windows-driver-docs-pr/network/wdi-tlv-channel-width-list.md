@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_CHANNEL_WIDTH_LIST
-author: windows-driver-content
 description: WDI_TLV_CHANNEL_WIDTH_LIST is a TLV that contains a list of channel widths.
 ms.assetid: 9869157D-2E71-4F08-92D0-A4FFA085ACE7
 ms.date: 07/18/2017
@@ -31,7 +30,7 @@ The size (in bytes) of the array of UINT32 elements. The array must contain 1 or
 |------------|---------------------------------------------|
 | UINT32\[\] | A list of channel widths, specified in MHz. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

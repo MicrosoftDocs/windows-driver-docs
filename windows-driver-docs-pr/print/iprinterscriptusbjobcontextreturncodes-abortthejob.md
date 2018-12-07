@@ -1,6 +1,5 @@
 ---
 title: IPrinterScriptUsbJobContextReturnCodes AbortTheJob method
-author: windows-driver-content
 description: Returns a value of '4' to inform USBMon that the print job must be aborted.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

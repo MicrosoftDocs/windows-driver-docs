@@ -1,6 +1,5 @@
 ---
 title: New Root-Level-Only GPD Attributes for Windows Vista
-author: windows-driver-content
 description: New Root-Level-Only GPD Attributes for Windows Vista
 ms.assetid: 09f38459-6062-4d2a-9aee-929aa60193cf
 keywords:
@@ -134,17 +133,17 @@ The **PrintSchemaKeywordMap** attribute appears under feature and option constru
 
 **Note**   The GPD parser ignores this attribute for features that are explicitly recognized, including page size and color.
 
- 
+ 
 
 All values should be enclosed in quotation marks. They will be converted to Unicode by using the code page that is specified in the GPD, if any. Duplicate definitions of any attributes resolve in the same way as other GPD attributes: The last definition that is read is given precedence.
 
 **Important**  If you map a feature to a Print Schema keyword that is already being used in the GPD file, the corresponding PrintCapabilities document might list that feature more than once. Multiple occurrences might be confusing, so you should not map features to Print Schema keywords that are used in the GPD file.
 
- 
+ 
 
 **Note**  The GPD parser automatically generates the FORMSOURCE option for the InputBin feature and maps it to the AutoSelect keyword in the Print Schema. If your GPD file contains an InputBin option that uses the **PrintSchemaKeywordMap** attribute to map the option to a Print Schema keyword, the feature in the Print Schema will contain a FORMSOURCE option in the device namespace. AutoSelect will appear in the PrintCapabilities document and refer to the option that is specified in the **PrintSchemaKeywordMap** attribute of the GPD file.
 
- 
+ 
 
 The following code example shows a partial GPD file to show the layout.
 
@@ -245,9 +244,9 @@ The following code example shows an example of this attribute in a partial GPD f
 *Endif: WINNT_60
 ```
 
- 
+ 
 
- 
+ 
 
 
 

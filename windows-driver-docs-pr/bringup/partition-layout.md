@@ -1,6 +1,5 @@
 ---
 title: Partition Layout
-author: windows-driver-content
 description: Partition Layout
 ms.assetid: 59ac7ec7-1b96-4fe1-a221-d8422e60072d
 ms.date: 04/20/2017
@@ -17,7 +16,7 @@ The storage subsystem for a phone must conform to the requirements specified in 
 <div class="alert">
 <strong>Note:</strong>   OEMs may not add, remove, or modify partitions in the layout designed by Microsoft and the SV. This helps to ensure that all the software and configuration data on the phone can be serviced by phone updates. OEM components typically are built into the main OS partition (for preloaded applications and native services), the data partition (for data such as preloaded maps), or the device provisioning partition (for device-specific read-only configuration data).
 </div>
- 
+ 
 
 ## <span id="Partition_list"></span><span id="partition_list"></span><span id="PARTITION_LIST"></span>Partition list
 
@@ -99,7 +98,7 @@ The following table summarizes the requirements for each partition. All sizes ar
 <td align="left"><p>Main OS (boot partition)</p></td>
 <td align="left"><p>OS, update OS, system registry hives, OEM preloaded applications</p></td>
 <td align="left"><p>NTFS</p></td>
-<td align="left"><p>C:\\</p></td>
+<td align="left"><p>C:&lt;/p&gt;</td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Approximately 1.5 GB</p>
 </td>
@@ -130,7 +129,7 @@ The following table summarizes the requirements for each partition. All sizes ar
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Device_provisioning_partition"></span><span id="device_provisioning_partition"></span><span id="DEVICE_PROVISIONING_PARTITION"></span>Device provisioning partition
 
@@ -192,6 +191,6 @@ This partition in internal storage stores the user data, applications, and appli
 ### <span id="SD_card"></span><span id="sd_card"></span><span id="SD_CARD"></span>SD card
 
 The removable user data partition refers to the data stored on the SD card. The SD card is treated as a separate volume that is used to store certain types of user data. The content on the SD card can be removed from the system by the user at any time and therefore cannot contain information critical to the core phone functionality.
- 
+ 
 
 

@@ -35,9 +35,9 @@ Independent of any notification requests, a miniclass driver must call **Battery
 
 Before reporting a critically low, discharging battery, the miniclass driver should attempt to solve the problem, as described previously in [Responding to Battery Status Queries](responding-to-battery-status-queries.md).
 
- 
+ 
 
- 
+ 
 
 
 

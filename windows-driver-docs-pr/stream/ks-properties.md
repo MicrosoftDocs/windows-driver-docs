@@ -1,6 +1,5 @@
 ---
 title: KS Properties
-author: windows-driver-content
 description: KS Properties
 ms.assetid: a385929e-1934-4d88-aaf9-ff1ddbfd30f7
 keywords:
@@ -35,9 +34,9 @@ To report the size and type of acceptable values for a property, the class drive
 
 The class driver may append a list of KSPROPERTY\_MEMBERSHEADER structures to the KSPROPERTY\_DESCRIPTION structure.
 
- 
+ 
 
- 
+ 
 
 
 

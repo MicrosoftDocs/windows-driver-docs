@@ -19,9 +19,9 @@ Calling reclaim will automatically page in an allocation if it is in the residen
 
 Immediately after returning from [**ReclaimAllocationsCb**](https://msdn.microsoft.com/library/windows/hardware/hh451695)/[**ReclaimAllocations2Cb**](https://msdn.microsoft.com/library/windows/hardware/dn903528), the backing store of the allocation is guaranteed to be valid and the allocation may be placed under CPU access via [*Lock2Cb*](https://msdn.microsoft.com/library/windows/hardware/dn914483). The driver does not need to wait on the paging fence to do so.
 
- 
+ 
 
- 
+ 
 
 
 

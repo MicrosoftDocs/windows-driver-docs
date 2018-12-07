@@ -1,6 +1,5 @@
 ---
 title: Multiple-Component Device, one or more Functional Power States
-author: windows-driver-content
 description: Supporting Multiple-Component Devices with Single or Multiple Functional Power States
 ms.assetid: D601A0F6-A035-4161-879A-D495518E7EC6
 ms.date: 04/20/2017
@@ -30,9 +29,9 @@ In addition, the driver can call [power framework routines](https://msdn.microso
 
 For more information about PoFx, see [Overview of the Power Management Framework](https://msdn.microsoft.com/library/windows/hardware/hh406637).
 
- 
+ 
 
- 
+ 
 
 
 

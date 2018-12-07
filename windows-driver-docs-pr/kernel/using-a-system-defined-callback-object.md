@@ -1,6 +1,5 @@
 ---
 title: Using a System-Defined Callback Object
-author: windows-driver-content
 description: Using a System-Defined Callback Object
 ms.assetid: 1f1a2fc1-e698-41f7-84e4-9db091def690
 keywords: ["callback objects WDK kernel", "system-defined callback objects WDK kernel"]
@@ -40,9 +39,9 @@ With the handle returned by **ExCreateCallback**, the driver calls [**ExRegister
 
 When the driver no longer requires notification, it should call [**ExUnregisterCallback**](https://msdn.microsoft.com/library/windows/hardware/ff545649) to delete its callback routine from the list of registered callbacks and to remove its reference to the callback object.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Handling Stride in AVStream Codecs
-author: windows-driver-content
 description: Handling Stride in AVStream Codecs
 ms.assetid: 816a0ddc-8ab8-4259-9842-76f5e4dadee0
 keywords:
@@ -46,9 +45,9 @@ Minidrivers should use the **biWidth** member of the [**KS\_BITMAPINFOHEADER**](
 
 If KS\_FRAME\_INFO.**lSurfacePitch** has a nonzero value, the minidriver must use **lSurfacePitch** as the width/stride for the buffer that is specified in the related KSSTREAM\_HEADER. Otherwise, the output image appears garbled.
 
- 
+ 
 
- 
+ 
 
 
 

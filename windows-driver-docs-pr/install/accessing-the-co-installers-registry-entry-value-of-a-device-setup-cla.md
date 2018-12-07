@@ -17,13 +17,13 @@ For information about how to use property keys to access device setup class prop
 
 On Windows Server 2003, Windows XP, and Windows 2000, you can set or retrieve this property by using the Windows registry functions to access the following registry entry value for a device setup class:
 
-**HLM\\System\\CurrentControlSet\\Control\\CoDeviceInstallers\\{***device-setup-class-guid***}**.
+**HLM\\System\\CurrentControlSet\\Control\\CoDeviceInstallers\\{**<em>device-setup-class-guid</em>**}**.
 
 For information about registering a class co-installer, see [Registering a Class Co-installer](registering-a-class-co-installer.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -25,9 +25,9 @@ NDIS supports various header version information requirements that guarantee con
 
 [Specifying NDIS Version Information](specifying-ndis-version-information.md)
 
- 
+ 
 
- 
+ 
 
 
 

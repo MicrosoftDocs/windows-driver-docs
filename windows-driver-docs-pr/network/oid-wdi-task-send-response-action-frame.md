@@ -1,6 +1,5 @@
 ---
 title: OID_WDI_TASK_SEND_RESPONSE_ACTION_FRAME
-author: windows-driver-content
 description: OID_WDI_TASK_SEND_RESPONSE_ACTION_FRAME requests that the IHV component sends Response Action Frames.
 ms.assetid: DA2FF006-BA81-48B9-8AAD-694818E78AEF
 ms.date: 07/18/2017
@@ -18,7 +17,7 @@ OID\_WDI\_TASK\_SEND\_RESPONSE\_ACTION\_FRAME requests that the IHV component se
 |--------|---------------------------------------------------------|---------------------------------------|---------------------------------|
 | Port   | Yes. The port must be in a clean state after the abort. | 3                                     | 5                               |
 
- 
+ 
 
 This task is time sensitive and must be serviced within 100 milliseconds of receiving this packet.
 
@@ -36,7 +35,7 @@ The host may decide to abort this operation and continue/retry the action frame 
 | [**WDI\_TLV\_SEND\_ACTION\_FRAME\_RESPONSE\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/dn898054) |                                |          | Parameters for sending an Action Frame Response. |
 | [**WDI\_TLV\_ACTION\_FRAME\_BODY**](https://msdn.microsoft.com/library/windows/hardware/dn926118)                                           |                                |          | The Action Frame body.                           |
 
- 
+ 
 
 ## Task completion indication
 
@@ -66,9 +65,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

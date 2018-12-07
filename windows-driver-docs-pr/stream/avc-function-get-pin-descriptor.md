@@ -54,7 +54,7 @@ Possible other return values include:
 </tbody>
 </table>
 
- 
+ 
 
 ### Comments
 
@@ -99,9 +99,9 @@ This must be called at IRQL = PASSIVE\_LEVEL.
 
 [**AVC\_MULTIFUNC\_IRB**](https://msdn.microsoft.com/library/windows/hardware/ff554177), [**AVC\_PIN\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff554185), [**AVC\_FUNCTION**](https://msdn.microsoft.com/library/windows/hardware/ff554145), [**KSPIN\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff563533), [**AV/C Intersect Handler**](https://msdn.microsoft.com/library/windows/hardware/ff556379)
 
- 
+ 
 
- 
+ 
 
 
 

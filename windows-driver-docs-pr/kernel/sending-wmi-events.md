@@ -1,6 +1,5 @@
 ---
 title: Sending WMI Events
-author: windows-driver-content
 description: Sending WMI Events
 ms.assetid: 0d5e62f1-b84e-42b7-be40-8665f0b58ba8
 keywords: ["WMI WDK kernel , event tracking", "events WDK WMI", "tracing WDK WMI", "sending WMI events", "event blocks WDK WMI", "notifications WDK WMI", "dynamic instance names WDK WMI"]
@@ -24,13 +23,13 @@ When a WMI client user requests notification of an event, WMI sends an [**IRP\_M
 
 A driver sends an event to WMI in one of the following ways:
 
--   Call the kernel-mode WMI library routine [**WmiFireEvent**](https://msdn.microsoft.com/library/windows/hardware/ff565807). A driver can call **WmiFireEvent** to send only events that do not use dynamic instance names, and that base static instance names on a single base name string or the device instance ID of a PDO. Furthermore, the event must be a single instance—that is, a driver cannot call **WmiFireEvent** to send an event that consists of a single item or multiple instances. For more information, see [Sending an Event with WmiFireEvent](sending-an-event-with-wmifireevent.md).
+- Call the kernel-mode WMI library routine [**WmiFireEvent**](https://msdn.microsoft.com/library/windows/hardware/ff565807). A driver can call **WmiFireEvent** to send only events that do not use dynamic instance names, and that base static instance names on a single base name string or the device instance ID of a PDO. Furthermore, the event must be a single instance—that is, a driver cannot call **WmiFireEvent** to send an event that consists of a single item or multiple instances. For more information, see [Sending an Event with WmiFireEvent](sending-an-event-with-wmifireevent.md).
 
--   Call the kernel-mode routine [**IoWMIWriteEvent**](https://msdn.microsoft.com/library/windows/hardware/ff550520) with a pointer to a driver-allocated and initialized **WNODE\_*XXX*** structure that contains the event's data. For more information, see [Sending an Event with IoWMIWriteEvent](sending-an-event-with-iowmiwriteevent.md).
+- Call the kernel-mode routine [**IoWMIWriteEvent**](https://msdn.microsoft.com/library/windows/hardware/ff550520) with a pointer to a driver-allocated and initialized **WNODE\_*XXX*** structure that contains the event's data. For more information, see [Sending an Event with IoWMIWriteEvent](sending-an-event-with-iowmiwriteevent.md).
 
- 
+ 
 
- 
+ 
 
 
 

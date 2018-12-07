@@ -38,9 +38,9 @@ If you cannot process a required library for any reason, you can still run a ver
 
 You can also reprocess a library from in an MSBuild command by using the /clean and /lib parameter options. For more information, see [Static Driver Verifier commands (MSBuild)](-static-driver-verifier-commands--msbuild-.md).
 
- 
+ 
 
- 
+ 
 
 
 

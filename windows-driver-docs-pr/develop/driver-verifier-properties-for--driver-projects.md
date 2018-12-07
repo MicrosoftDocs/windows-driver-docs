@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 [Driver Verifier](https://msdn.microsoft.com/Library/Windows/Hardware/Ff545448) is a run-time verification tool that increases the effectiveness of your driver testing. You can enable and configure Driver Verifier to run on all test computers when you deploy your driver for testing.
 
-You should always set up a kernel mode debugging connection with the test computer when you enable Driver Verifier on the remote test computer. For information about configuring a target computer and setting up a debug cable, see [Setting Up Kernel-Mode Debugging in Visual Studio](https://msdn.microsoft.com/windows/hardware/hh439376.
+You should always set up a kernel mode debugging connection with the test computer when you enable Driver Verifier on the remote test computer. For information about configuring a target computer and setting up a debug cable, see [Setting Up Kernel-Mode Debugging in Visual Studio](https://msdn.microsoft.com/windows/hardware/hh439376).
 
 ## <span id="Setting_Driver_Verifier_properties_for_driver_package_projects"></span><span id="setting_driver_verifier_properties_for_driver_package_projects"></span><span id="SETTING_DRIVER_VERIFIER_PROPERTIES_FOR_DRIVER_PACKAGE_PROJECTS"></span>Setting Driver Verifier properties for driver package projects
 
@@ -117,7 +117,7 @@ You can configure the following Driver Verifier options on the test computer.
 
     **Note**  You cannot combine [Stack Based Failure Injection](https://msdn.microsoft.com/Library/Windows/Hardware/Hh974664) with [Low resources simulation](https://msdn.microsoft.com/Library/Windows/Hardware/Ff548288).
 
-     
+     
 
 ## <span id="Driver_Verifier_options_that_require_I_O_Verification"></span><span id="driver_verifier_options_that_require_i_o_verification"></span><span id="DRIVER_VERIFIER_OPTIONS_THAT_REQUIRE_I_O_VERIFICATION"></span>Driver Verifier options that require I/O Verification
 
@@ -136,9 +136,9 @@ There are four options that require you to first enable [I/O Verification](https
 * [How to test a driver at runtime using Visual Studio](testing-a-driver-at-runtime.md)
 * [Setting Up Kernel-Mode Debugging in Visual Studio](https://msdn.microsoft.com/windows/hardware/hh439376)
 * [Deploying a Driver to a Test Computer](deploying-a-driver-to-a-test-computer.md)
- 
+ 
 
- 
+ 
 
 
 

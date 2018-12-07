@@ -1,6 +1,5 @@
 ---
 title: Closed Captioning Streams
-author: windows-driver-content
 description: Closed Captioning Streams
 ms.assetid: ee6cfac6-c532-4e73-81b2-ee767d2d6a4d
 keywords:
@@ -21,9 +20,9 @@ Support for closed captioning is required. The DVD decoder minidriver must provi
 
 When a group of pictures (GOP) start code is processed in the video stream, the DVD decoder minidriver looks for user data (closed captioning information) and returns that information using one of the stream request blocks (SRBs) present on the closed captioning stream queue. All data discontinuity and format block changes should be propagated from the video pin to the closed captioning pin.
 
- 
+ 
 
- 
+ 
 
 
 

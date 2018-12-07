@@ -1,6 +1,5 @@
 ---
 title: Security Issues for I/O Control Codes
-author: windows-driver-content
 description: Security Issues for I/O Control Codes
 ms.assetid: cab8aed2-7185-4622-9a8f-bc8eab3c8c59
 keywords: ["I/O control codes WDK kernel , security", "control codes WDK IOCTLs , security", "IOCTLs WDK kernel , security", "security WDK IOCTLs"]
@@ -38,9 +37,9 @@ When processing IOCTL codes within a driver, use the following rules:
 
 -   For METHOD\_NEITHER transfers, follow the rules that are provided in [Using Neither Buffered Nor Direct I/O](using-neither-buffered-nor-direct-i-o.md).
 
- 
+ 
 
- 
+ 
 
 
 

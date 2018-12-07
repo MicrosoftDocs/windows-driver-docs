@@ -1,6 +1,5 @@
 ---
 title: Direction
-author: windows-driver-content
 description: Direction
 ms.assetid: 19aa1c88-968d-4789-89cc-00b76b1a30d9
 ms.date: 11/28/2017
@@ -71,7 +70,7 @@ The following table lists the possible values.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="supported"></span><span id="SUPPORTED"></span> Supported
 
@@ -83,9 +82,9 @@ Data Type:BIDI\_STRING
 
 Description:A comma-separated list of all values supported for Direction.
 
- 
+ 
 
- 
+ 
 
 
 

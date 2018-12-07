@@ -1,6 +1,5 @@
 ---
 title: Initializing UMDF Drivers
-author: windows-driver-content
 description: Initializing UMDF Drivers
 ms.assetid: b21ec019-1a80-4219-8aa8-3545ec3383b9
 keywords:
@@ -29,9 +28,9 @@ The framework adds a new device object for each device loaded in the driver host
 -   [Adding a Device Overview](adding-a-device-overview.md)
 -   [Adding a Device](adding-a-device.md)
 
- 
+ 
 
- 
+ 
 
 
 

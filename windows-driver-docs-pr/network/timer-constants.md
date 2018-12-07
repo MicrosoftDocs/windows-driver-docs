@@ -16,9 +16,9 @@ The **ControlTimeoutPeriod** for a USB Remote NDIS device is 10 seconds.
 
 The **KeepAliveTimeoutPeriod** for a USB Remote NDIS device is 5 seconds.
 
- 
+ 
 
- 
+ 
 
 
 

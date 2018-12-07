@@ -2,7 +2,6 @@
 title: Mapping Symbols When the PEB is Paged Out
 description: Mapping Symbols When the PEB is Paged Out
 ms.assetid: dba9e686-81fc-4efa-a5c7-293b9e47e0b1
-ms.author: domars
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -19,7 +18,7 @@ To reclaim memory, the Memory Manager may page out user-mode data to make space 
 
 **Note**   This affects symbol files only for the user-mode modules. Kernel-mode modules and symbols are not affected, as they are tracked in a different list.
 
- 
+ 
 
 Suppose a user-mode module is mapped into the current process and you want to fix the symbols for it. Find any address in the range of virtual addresses of the module. For example, suppose a module is mapped into a virtual address range that contains the address 7f78e9e000F. Enter the following command.
 
@@ -104,9 +103,9 @@ So ExplorerFrame.dll starts at address 0x000006Fb\`37A7C000 and is 0x1E000 bytes
 kd> .reload /f ExplorerFrame.dll=6fb`37a7c000,1e000
 ```
 
- 
+ 
 
- 
+ 
 
 
 

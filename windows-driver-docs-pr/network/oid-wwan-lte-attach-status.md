@@ -1,6 +1,5 @@
 ---
 title: OID_WWAN_LTE_ATTACH_STATUS
-author: windows-driver-content
 description: OID_WWAN_LTE_ATTACH_STATUS is used to inform the OS of the last used LTE attach context.
 ms.assetid: 394650CF-5410-40C6-8749-D941DF68D303
 ms.date: 08/23/2018
@@ -19,7 +18,7 @@ Set requests are not applicable.
 
 ## Remarks
 
-For more information about using this OID, see [MBIM_CID_MS_LTE_ATTACH_STATUS](mb-lte-attach-operations.md#mbimcidmslteattachstatus).
+For more information about using this OID, see [MBIM_CID_MS_LTE_ATTACH_STATUS](mb-lte-attach-operations.md).
 
 ## Requirements
 

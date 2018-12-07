@@ -1,7 +1,6 @@
 ---
 Description: A USB device provides information about itself in data structures called USB descriptors. This section provides information about device, configuration, interface, and endpoint descriptors and ways to retrieve them from a USB device.
 title: Standard USB descriptors
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -51,30 +50,30 @@ The host obtains the device descriptor through a control transfer. Microsoft pro
 </thead>
 <tbody>
 <tr class="odd">
-<td>UWP app that uses [<strong>Windows.Devices.Usb</strong>](https://msdn.microsoft.com/library/windows/apps/dn278466)</td>
-<td>[<strong>UsbDevice.DeviceDescriptor</strong>](https://msdn.microsoft.com/library/windows/apps/dn264002)</td>
+<td>UWP app that uses <a href="https://msdn.microsoft.com/library/windows/apps/dn278466" data-raw-source="[&lt;strong&gt;Windows.Devices.Usb&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/apps/dn278466)"><strong>Windows.Devices.Usb</strong></a></td>
+<td><a href="https://msdn.microsoft.com/library/windows/apps/dn264002" data-raw-source="[&lt;strong&gt;UsbDevice.DeviceDescriptor&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/apps/dn264002)"><strong>UsbDevice.DeviceDescriptor</strong></a></td>
 </tr>
 <tr class="even">
-<td>Win32 desktop app that uses [WinUSB Functions](https://msdn.microsoft.com/library/windows/hardware/ff540046#winusb)</td>
-<td>[<strong>WinUsb_GetDescriptor</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540257)</td>
+<td>Win32 desktop app that uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff540046#winusb" data-raw-source="[WinUSB Functions](https://msdn.microsoft.com/library/windows/hardware/ff540046#winusb)">WinUSB Functions</a></td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/ff540257" data-raw-source="[&lt;strong&gt;WinUsb_GetDescriptor&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540257)"><strong>WinUsb_GetDescriptor</strong></a></td>
 </tr>
 <tr class="odd">
 <td>UMDF-based client driver</td>
-<td>[<strong>IWDFUsbTargetDevice::RetrieveDescriptor</strong>](https://msdn.microsoft.com/library/windows/hardware/ff560374)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/ff560374" data-raw-source="[&lt;strong&gt;IWDFUsbTargetDevice::RetrieveDescriptor&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff560374)"><strong>IWDFUsbTargetDevice::RetrieveDescriptor</strong></a></td>
 </tr>
 <tr class="even">
 <td>KMDF-based client driver</td>
-<td>[<strong>WdfUsbTargetDeviceGetDeviceDescriptor</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550090)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/ff550090" data-raw-source="[&lt;strong&gt;WdfUsbTargetDeviceGetDeviceDescriptor&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff550090)"><strong>WdfUsbTargetDeviceGetDeviceDescriptor</strong></a></td>
 </tr>
 <tr class="odd">
 <td>WDM-based client driver</td>
-<td>[<strong>UsbBuildGetDescriptorRequest</strong>](https://msdn.microsoft.com/library/windows/hardware/ff538943)
-<p>[<strong>_URB_CONTROL_DESCRIPTOR_REQUEST</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540357)</p></td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/ff538943" data-raw-source="[&lt;strong&gt;UsbBuildGetDescriptorRequest&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff538943)"><strong>UsbBuildGetDescriptorRequest</strong></a>
+<p><a href="https://msdn.microsoft.com/library/windows/hardware/ff540357" data-raw-source="[&lt;strong&gt;_URB_CONTROL_DESCRIPTOR_REQUEST&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540357)"><strong>_URB_CONTROL_DESCRIPTOR_REQUEST</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## USB configuration descriptor
 
@@ -110,31 +109,31 @@ The **bConfigurationValue** field indicates the number for the configuration def
 </thead>
 <tbody>
 <tr class="odd">
-<td>UWP app that uses [<strong>Windows.Devices.Usb</strong>](https://msdn.microsoft.com/library/windows/apps/dn278466)</td>
-<td><p>[<strong>UsbDevice.ConfigurationDescriptor</strong>](https://msdn.microsoft.com/library/windows/apps/dn297689) to get the fixed length portion.</p>
-<p>[<strong>UsbConfiguration.Descriptors</strong>](https://msdn.microsoft.com/library/windows/apps/dn263802) to get the entire configuration set.</p></td>
+<td>UWP app that uses <a href="https://msdn.microsoft.com/library/windows/apps/dn278466" data-raw-source="[&lt;strong&gt;Windows.Devices.Usb&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/apps/dn278466)"><strong>Windows.Devices.Usb</strong></a></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/apps/dn297689" data-raw-source="[&lt;strong&gt;UsbDevice.ConfigurationDescriptor&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/apps/dn297689)"><strong>UsbDevice.ConfigurationDescriptor</strong></a> to get the fixed length portion.</p>
+<p><a href="https://msdn.microsoft.com/library/windows/apps/dn263802" data-raw-source="[&lt;strong&gt;UsbConfiguration.Descriptors&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/apps/dn263802)"><strong>UsbConfiguration.Descriptors</strong></a> to get the entire configuration set.</p></td>
 </tr>
 <tr class="even">
-<td>Win32 desktop app that uses [WinUSB Functions](https://msdn.microsoft.com/library/windows/hardware/ff540046#winusb)</td>
-<td>[<strong>WinUsb_GetDescriptor</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540257)</td>
+<td>Win32 desktop app that uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff540046#winusb" data-raw-source="[WinUSB Functions](https://msdn.microsoft.com/library/windows/hardware/ff540046#winusb)">WinUSB Functions</a></td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/ff540257" data-raw-source="[&lt;strong&gt;WinUsb_GetDescriptor&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540257)"><strong>WinUsb_GetDescriptor</strong></a></td>
 </tr>
 <tr class="odd">
 <td>UMDF-based client driver</td>
-<td>[<strong>IWDFUsbTargetDevice::RetrieveDescriptor</strong>](https://msdn.microsoft.com/library/windows/hardware/ff560374)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/ff560374" data-raw-source="[&lt;strong&gt;IWDFUsbTargetDevice::RetrieveDescriptor&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff560374)"><strong>IWDFUsbTargetDevice::RetrieveDescriptor</strong></a></td>
 </tr>
 <tr class="even">
 <td>KMDF-based client driver</td>
-<td>[<strong>WdfUsbTargetDeviceRetrieveConfigDescriptor</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550098)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/ff550098" data-raw-source="[&lt;strong&gt;WdfUsbTargetDeviceRetrieveConfigDescriptor&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff550098)"><strong>WdfUsbTargetDeviceRetrieveConfigDescriptor</strong></a></td>
 </tr>
 <tr class="odd">
 <td>WDM-based client driver</td>
-<td><p>[<strong>UsbBuildGetDescriptorRequest</strong>](https://msdn.microsoft.com/library/windows/hardware/ff538943)</p>
-<p>[<strong>_URB_CONTROL_GET_CONFIGURATION_REQUEST</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540365)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff538943" data-raw-source="[&lt;strong&gt;UsbBuildGetDescriptorRequest&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff538943)"><strong>UsbBuildGetDescriptorRequest</strong></a></p>
+<p><a href="https://msdn.microsoft.com/library/windows/hardware/ff540365" data-raw-source="[&lt;strong&gt;_URB_CONTROL_GET_CONFIGURATION_REQUEST&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540365)"><strong>_URB_CONTROL_GET_CONFIGURATION_REQUEST</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## USB interface descriptor
 
@@ -171,31 +170,31 @@ In the preceding example, note **bInterfaceNumber** and **bAlternateSetting** fi
 </thead>
 <tbody>
 <tr class="odd">
-<td>UWP app that uses [<strong>Windows.Devices.Usb</strong>](https://msdn.microsoft.com/library/windows/apps/dn278466)</td>
-<td><p>[<strong>UsbInterfaceSetting.Descriptors</strong>](https://msdn.microsoft.com/library/windows/apps/dn264281) to get a particular the descriptor for a particular alternate setting.</p>
-<p>[<strong>UsbInterface.Descriptors</strong>](https://msdn.microsoft.com/library/windows/apps/dn264281) to get descriptors for all settings of an interface.</p></td>
+<td>UWP app that uses <a href="https://msdn.microsoft.com/library/windows/apps/dn278466" data-raw-source="[&lt;strong&gt;Windows.Devices.Usb&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/apps/dn278466)"><strong>Windows.Devices.Usb</strong></a></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/apps/dn264281" data-raw-source="[&lt;strong&gt;UsbInterfaceSetting.Descriptors&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/apps/dn264281)"><strong>UsbInterfaceSetting.Descriptors</strong></a> to get a particular the descriptor for a particular alternate setting.</p>
+<p><a href="https://msdn.microsoft.com/library/windows/apps/dn264281" data-raw-source="[&lt;strong&gt;UsbInterface.Descriptors&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/apps/dn264281)"><strong>UsbInterface.Descriptors</strong></a> to get descriptors for all settings of an interface.</p></td>
 </tr>
 <tr class="even">
-<td>Win32 desktop app that uses [WinUSB Functions](https://msdn.microsoft.com/library/windows/hardware/ff540046#winusb)</td>
-<td>[<strong>WinUsb_GetDescriptor</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540257)</td>
+<td>Win32 desktop app that uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff540046#winusb" data-raw-source="[WinUSB Functions](https://msdn.microsoft.com/library/windows/hardware/ff540046#winusb)">WinUSB Functions</a></td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/ff540257" data-raw-source="[&lt;strong&gt;WinUsb_GetDescriptor&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540257)"><strong>WinUsb_GetDescriptor</strong></a></td>
 </tr>
 <tr class="odd">
 <td>UMDF-based client driver</td>
-<td>[<strong>IWDFUsbInterface::GetInterfaceDescriptor</strong>](https://msdn.microsoft.com/library/windows/hardware/ff560320)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/ff560320" data-raw-source="[&lt;strong&gt;IWDFUsbInterface::GetInterfaceDescriptor&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff560320)"><strong>IWDFUsbInterface::GetInterfaceDescriptor</strong></a></td>
 </tr>
 <tr class="even">
 <td>KMDF-based client driver</td>
-<td>[<strong>WdfUsbInterfaceGetDescriptor</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550060)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/ff550060" data-raw-source="[&lt;strong&gt;WdfUsbInterfaceGetDescriptor&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff550060)"><strong>WdfUsbInterfaceGetDescriptor</strong></a></td>
 </tr>
 <tr class="odd">
 <td>WDM-based client driver</td>
-<td><p>[<strong>UsbBuildGetDescriptorRequest</strong>](https://msdn.microsoft.com/library/windows/hardware/ff538943)</p>
-<p>[<strong>_URB_CONTROL_GET_CONFIGURATION_REQUEST</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540365) and then parse for each interface descriptor. For more information, see [How to select a configuration for a USB device](how-to-select-a-configuration-for-a-usb-device.md).</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff538943" data-raw-source="[&lt;strong&gt;UsbBuildGetDescriptorRequest&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff538943)"><strong>UsbBuildGetDescriptorRequest</strong></a></p>
+<p><a href="https://msdn.microsoft.com/library/windows/hardware/ff540365" data-raw-source="[&lt;strong&gt;_URB_CONTROL_GET_CONFIGURATION_REQUEST&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540365)"><strong>_URB_CONTROL_GET_CONFIGURATION_REQUEST</strong></a> and then parse for each interface descriptor. For more information, see <a href="how-to-select-a-configuration-for-a-usb-device.md" data-raw-source="[How to select a configuration for a USB device](how-to-select-a-configuration-for-a-usb-device.md)">How to select a configuration for a USB device</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## USB endpoint descriptor
 
@@ -229,30 +228,30 @@ The **bEndpointAddress** field specifies the unique endpoint address that contai
 </thead>
 <tbody>
 <tr class="odd">
-<td>UWP app that uses [<strong>Windows.Devices.Usb</strong>](https://msdn.microsoft.com/library/windows/apps/dn278466)</td>
-<td><p>[<strong>UsbEndpointDescriptor</strong>](https://msdn.microsoft.com/library/windows/apps/dn264052)</p></td>
+<td>UWP app that uses <a href="https://msdn.microsoft.com/library/windows/apps/dn278466" data-raw-source="[&lt;strong&gt;Windows.Devices.Usb&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/apps/dn278466)"><strong>Windows.Devices.Usb</strong></a></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/apps/dn264052" data-raw-source="[&lt;strong&gt;UsbEndpointDescriptor&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/apps/dn264052)"><strong>UsbEndpointDescriptor</strong></a></p></td>
 </tr>
 <tr class="even">
-<td>Win32 desktop app that uses [WinUSB Functions](https://msdn.microsoft.com/library/windows/hardware/ff540046#winusb)</td>
-<td>[<strong>WinUsb_GetDescriptor</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540257)</td>
+<td>Win32 desktop app that uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff540046#winusb" data-raw-source="[WinUSB Functions](https://msdn.microsoft.com/library/windows/hardware/ff540046#winusb)">WinUSB Functions</a></td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/ff540257" data-raw-source="[&lt;strong&gt;WinUsb_GetDescriptor&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540257)"><strong>WinUsb_GetDescriptor</strong></a></td>
 </tr>
 <tr class="odd">
 <td>UMDF-based client driver</td>
-<td>[<strong>WDFUsbTargetPipe::GetInformation</strong>](https://msdn.microsoft.com/library/windows/hardware/ff560403)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/ff560403" data-raw-source="[&lt;strong&gt;WDFUsbTargetPipe::GetInformation&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff560403)"><strong>WDFUsbTargetPipe::GetInformation</strong></a></td>
 </tr>
 <tr class="even">
 <td>KMDF-based client driver</td>
-<td>[<strong>WdfUsbTargetPipeGetInformation</strong>](https://msdn.microsoft.com/library/windows/hardware/ff551142)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/ff551142" data-raw-source="[&lt;strong&gt;WdfUsbTargetPipeGetInformation&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff551142)"><strong>WdfUsbTargetPipeGetInformation</strong></a></td>
 </tr>
 <tr class="odd">
 <td>WDM-based client driver</td>
-<td><p>[<strong>UsbBuildGetDescriptorRequest</strong>](https://msdn.microsoft.com/library/windows/hardware/ff538943)</p>
-<p>[<strong>_URB_CONTROL_GET_CONFIGURATION_REQUEST</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540365) and then parse for each endpoint descriptor. For more information, see [How to select a configuration for a USB device](how-to-select-a-configuration-for-a-usb-device.md).</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff538943" data-raw-source="[&lt;strong&gt;UsbBuildGetDescriptorRequest&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff538943)"><strong>UsbBuildGetDescriptorRequest</strong></a></p>
+<p><a href="https://msdn.microsoft.com/library/windows/hardware/ff540365" data-raw-source="[&lt;strong&gt;_URB_CONTROL_GET_CONFIGURATION_REQUEST&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540365)"><strong>_URB_CONTROL_GET_CONFIGURATION_REQUEST</strong></a> and then parse for each endpoint descriptor. For more information, see <a href="how-to-select-a-configuration-for-a-usb-device.md" data-raw-source="[How to select a configuration for a USB device](how-to-select-a-configuration-for-a-usb-device.md)">How to select a configuration for a USB device</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 [Concepts for all USB developers](usb-concepts-for-all-developers.md)  

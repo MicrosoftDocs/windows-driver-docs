@@ -1,6 +1,5 @@
 ---
 title: Thin Provisioning
-author: windows-driver-content
 description: Thin Provisioning
 ms.assetid: 0D65DDCC-D207-4EA8-B5D6-56DF57221EE3
 ms.date: 04/20/2017
@@ -42,7 +41,7 @@ The storage management utility sets the thin provisioning threshold. Windows Ser
 
 **Note**  Write commands sent after this error is logged could potentially be lost if FILE\_FLAG\_WRITE\_THROUGH is not set because they may trigger a permanent resource exhaustion condition.
 
- 
+ 
 
 ### <span id="Temporary_Resource_Exhaustion"></span><span id="temporary_resource_exhaustion"></span><span id="TEMPORARY_RESOURCE_EXHAUSTION"></span>Temporary Resource Exhaustion
 
@@ -92,9 +91,9 @@ In a thin provisioning LUN, all logical blocks are grouped in slabs (clusters). 
 
 The storage device does not need to process the entire LBA range in one return. If the partial LBA range of the original request has been returned, another command is sent to retrieve the mapping states of the remaining LBA range.
 
- 
+ 
 
- 
+ 
 
 
 

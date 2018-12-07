@@ -3,7 +3,6 @@ title: DumpChk
 description: DumpChk
 ms.assetid: f7431207-562b-451a-843e-1c2be038e306
 keywords: ["DumpChk"]
-ms.author: domars
 ms.date: 09/17/2017
 ms.localizationpriority: medium
 ---
@@ -204,9 +203,9 @@ Because this display ends with the words `Finished dump check`, the dump file is
 
 [Tools Included in Debugging Tools for Windows](extra-tools.md)
 
- 
+ 
 
- 
+ 
 
 
 

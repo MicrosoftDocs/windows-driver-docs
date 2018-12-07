@@ -50,7 +50,7 @@ The following table describes the constant that is valid with the WIA\_IPS\_TRAN
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -72,9 +72,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

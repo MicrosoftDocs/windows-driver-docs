@@ -1,6 +1,5 @@
 ---
 title: Obtaining Additional Registry Information
-author: windows-driver-content
 description: Obtaining Additional Registry Information
 ms.assetid: 989acf63-3bb1-4d9a-a7a8-3eea1e2bc68a
 keywords: ["filtering registry calls WDK kernel , additional information to obtain", "registry filtering drivers WDK kernel , additional information to obtain"]
@@ -25,9 +24,9 @@ Registry filtering drivers that run on Windows Vista and later operating system 
 
     The [**CmGetCallbackVersion**](https://msdn.microsoft.com/library/windows/hardware/ff541912) routine retrieves the major and minor version numbers for the current version of the configuration manager's registry callback feature.
 
- 
+ 
 
- 
+ 
 
 
 

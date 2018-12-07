@@ -1,6 +1,5 @@
 ---
 title: Writing a location sensor driver for Windows 8.1
-author: windows-driver-content
 description: Writing a location sensor driver for Windows 8.1
 ms.assetid: 18852282-6529-4934-a448-b699e01987de
 ms.date: 04/20/2017
@@ -142,64 +141,64 @@ The following table describes the [sensor data fields](https://msdn.microsoft.co
 <tbody>
 <tr class="odd">
 <td><p><strong>SENSOR_DATA_TYPE_ADDRESS1</strong></p></td>
-<td><p>[ICivicAddressReport::GetAddressLine1](http://go.microsoft.com/fwlink/p/?linkid=157816)</p>
-<p>[LocationDisp.DispCivicAddressReport.AddressLine1](http://go.microsoft.com/fwlink/p/?linkid=157817)</p></td>
+<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=157816" data-raw-source="[ICivicAddressReport::GetAddressLine1](http://go.microsoft.com/fwlink/p/?linkid=157816)">ICivicAddressReport::GetAddressLine1</a></p>
+<p><a href="http://go.microsoft.com/fwlink/p/?linkid=157817" data-raw-source="[LocationDisp.DispCivicAddressReport.AddressLine1](http://go.microsoft.com/fwlink/p/?linkid=157817)">LocationDisp.DispCivicAddressReport.AddressLine1</a></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>SENSOR_DATA_TYPE_ADDRESS2</strong></p></td>
-<td><p>[ICivicAddressReport::GetAddressLine2](http://go.microsoft.com/fwlink/p/?linkid=157818)</p>
-<p>[LocationDisp.DispCivicAddressReport.AddressLine2](http://go.microsoft.com/fwlink/p/?linkid=157820)</p></td>
+<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=157818" data-raw-source="[ICivicAddressReport::GetAddressLine2](http://go.microsoft.com/fwlink/p/?linkid=157818)">ICivicAddressReport::GetAddressLine2</a></p>
+<p><a href="http://go.microsoft.com/fwlink/p/?linkid=157820" data-raw-source="[LocationDisp.DispCivicAddressReport.AddressLine2](http://go.microsoft.com/fwlink/p/?linkid=157820)">LocationDisp.DispCivicAddressReport.AddressLine2</a></p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>SENSOR_DATA_TYPE_ALTITUDE_ELLIPSOID_ERROR_METERS</strong></p></td>
-<td><p>[ILatLongReport::GetAltitudeError](http://go.microsoft.com/fwlink/p/?linkid=157823)</p>
-<p>[LocationDisp.DispLatLongReport.AltitudeError](http://go.microsoft.com/fwlink/p/?linkid=157824)</p></td>
+<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=157823" data-raw-source="[ILatLongReport::GetAltitudeError](http://go.microsoft.com/fwlink/p/?linkid=157823)">ILatLongReport::GetAltitudeError</a></p>
+<p><a href="http://go.microsoft.com/fwlink/p/?linkid=157824" data-raw-source="[LocationDisp.DispLatLongReport.AltitudeError](http://go.microsoft.com/fwlink/p/?linkid=157824)">LocationDisp.DispLatLongReport.AltitudeError</a></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>SENSOR_DATA_TYPE_ALTITUDE_ELLIPSOID_METERS</strong></p></td>
-<td><p>[ILatLongReport::GetAltitude](http://go.microsoft.com/fwlink/p/?linkid=157825)</p>
-<p>[LocationDisp.DispLatLongReport.Altitude](http://go.microsoft.com/fwlink/p/?linkid=157827)</p></td>
+<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=157825" data-raw-source="[ILatLongReport::GetAltitude](http://go.microsoft.com/fwlink/p/?linkid=157825)">ILatLongReport::GetAltitude</a></p>
+<p><a href="http://go.microsoft.com/fwlink/p/?linkid=157827" data-raw-source="[LocationDisp.DispLatLongReport.Altitude](http://go.microsoft.com/fwlink/p/?linkid=157827)">LocationDisp.DispLatLongReport.Altitude</a></p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>SENSOR_DATA_TYPE_CITY</strong></p></td>
-<td><p>[ICivicAddressReport::GetCity](http://go.microsoft.com/fwlink/p/?linkid=157828)</p>
-<p>[LocationDisp.DispCivicAddressReport.City](http://go.microsoft.com/fwlink/p/?linkid=157830)</p>
-<p>[Windows.Devices. Geolocation.CivicAddress](https://msdn.microsoft.com/library/windows/apps/windows.devices.geolocation.civicaddress.city.aspx)</p></td>
+<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=157828" data-raw-source="[ICivicAddressReport::GetCity](http://go.microsoft.com/fwlink/p/?linkid=157828)">ICivicAddressReport::GetCity</a></p>
+<p><a href="http://go.microsoft.com/fwlink/p/?linkid=157830" data-raw-source="[LocationDisp.DispCivicAddressReport.City](http://go.microsoft.com/fwlink/p/?linkid=157830)">LocationDisp.DispCivicAddressReport.City</a></p>
+<p><a href="https://msdn.microsoft.com/library/windows/apps/windows.devices.geolocation.civicaddress.city.aspx" data-raw-source="[Windows.Devices. Geolocation.CivicAddress](https://msdn.microsoft.com/library/windows/apps/windows.devices.geolocation.civicaddress.city.aspx)">Windows.Devices. Geolocation.CivicAddress</a></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>SENSOR_DATA_TYPE_COUNTRY_REGION</strong></p></td>
-<td><p>[ICivicAddressReport::GetCountryRegion](http://go.microsoft.com/fwlink/p/?linkid=157831)</p>
-<p>[LocationDisp.DispCivicAddressReport.CountryRegion](http://go.microsoft.com/fwlink/p/?linkid=157832)</p></td>
+<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=157831" data-raw-source="[ICivicAddressReport::GetCountryRegion](http://go.microsoft.com/fwlink/p/?linkid=157831)">ICivicAddressReport::GetCountryRegion</a></p>
+<p><a href="http://go.microsoft.com/fwlink/p/?linkid=157832" data-raw-source="[LocationDisp.DispCivicAddressReport.CountryRegion](http://go.microsoft.com/fwlink/p/?linkid=157832)">LocationDisp.DispCivicAddressReport.CountryRegion</a></p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>SENSOR_DATA_TYPE_ERROR_RADIUS_METERS</strong></p></td>
-<td><p>[ILatLongReport::GetErrorRadius](http://go.microsoft.com/fwlink/p/?linkid=157834)</p>
-<p>[LocationDisp.DispLatLongReport.ErrorRadius](http://go.microsoft.com/fwlink/p/?linkid=157835)</p></td>
+<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=157834" data-raw-source="[ILatLongReport::GetErrorRadius](http://go.microsoft.com/fwlink/p/?linkid=157834)">ILatLongReport::GetErrorRadius</a></p>
+<p><a href="http://go.microsoft.com/fwlink/p/?linkid=157835" data-raw-source="[LocationDisp.DispLatLongReport.ErrorRadius](http://go.microsoft.com/fwlink/p/?linkid=157835)">LocationDisp.DispLatLongReport.ErrorRadius</a></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>SENSOR_DATA_TYPE_LATITUDE_DEGREES</strong></p></td>
-<td><p>[ILatLongReport::GetLatitude](http://go.microsoft.com/fwlink/p/?linkid=157836)</p>
-<p>[LocationDisp.DispLatLongReport.Latitude](http://go.microsoft.com/fwlink/p/?linkid=157839)</p></td>
+<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=157836" data-raw-source="[ILatLongReport::GetLatitude](http://go.microsoft.com/fwlink/p/?linkid=157836)">ILatLongReport::GetLatitude</a></p>
+<p><a href="http://go.microsoft.com/fwlink/p/?linkid=157839" data-raw-source="[LocationDisp.DispLatLongReport.Latitude](http://go.microsoft.com/fwlink/p/?linkid=157839)">LocationDisp.DispLatLongReport.Latitude</a></p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>SENSOR_DATA_TYPE_LONGITUDE_DEGREES</strong></p></td>
-<td><p>[ILatLongReport::GetLongitude](http://go.microsoft.com/fwlink/p/?linkid=157840)</p>
-<p>[LocationDisp.DispLatLongReport.Longitude](http://go.microsoft.com/fwlink/p/?linkid=157841)</p></td>
+<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=157840" data-raw-source="[ILatLongReport::GetLongitude](http://go.microsoft.com/fwlink/p/?linkid=157840)">ILatLongReport::GetLongitude</a></p>
+<p><a href="http://go.microsoft.com/fwlink/p/?linkid=157841" data-raw-source="[LocationDisp.DispLatLongReport.Longitude](http://go.microsoft.com/fwlink/p/?linkid=157841)">LocationDisp.DispLatLongReport.Longitude</a></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>SENSOR_DATA_TYPE_POSTALCODE</strong></p></td>
-<td><p>[ICivicAddressReport::GetPostalCode](http://go.microsoft.com/fwlink/p/?linkid=157842)</p>
-<p>[LocationDisp.DispCivicAddressReport.PostalCode](http://go.microsoft.com/fwlink/p/?linkid=157844)</p></td>
+<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=157842" data-raw-source="[ICivicAddressReport::GetPostalCode](http://go.microsoft.com/fwlink/p/?linkid=157842)">ICivicAddressReport::GetPostalCode</a></p>
+<p><a href="http://go.microsoft.com/fwlink/p/?linkid=157844" data-raw-source="[LocationDisp.DispCivicAddressReport.PostalCode](http://go.microsoft.com/fwlink/p/?linkid=157844)">LocationDisp.DispCivicAddressReport.PostalCode</a></p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>SENSOR_DATA_TYPE_STATE_PROVINCE</strong></p></td>
-<td><p>[ICivicAddressReport::GetStateProvince](http://go.microsoft.com/fwlink/p/?linkid=157846)</p>
-<p>[LocationDisp.DispCivicAddressReport.StateProvince](http://go.microsoft.com/fwlink/p/?linkid=157847)</p></td>
+<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=157846" data-raw-source="[ICivicAddressReport::GetStateProvince](http://go.microsoft.com/fwlink/p/?linkid=157846)">ICivicAddressReport::GetStateProvince</a></p>
+<p><a href="http://go.microsoft.com/fwlink/p/?linkid=157847" data-raw-source="[LocationDisp.DispCivicAddressReport.StateProvince](http://go.microsoft.com/fwlink/p/?linkid=157847)">LocationDisp.DispCivicAddressReport.StateProvince</a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ### Managing state transitions
 
@@ -265,7 +264,7 @@ The various sensor states for location sensor drivers are described in the follo
 </tbody>
 </table>
 
- 
+ 
 
 The following diagram shows how state transitions may occur in a location sensor.![state transitions](images/gps-state-transitions.png)
 

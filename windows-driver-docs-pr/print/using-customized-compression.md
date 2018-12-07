@@ -1,6 +1,5 @@
 ---
 title: Using Customized Compression
-author: windows-driver-content
 description: Using Customized Compression
 ms.assetid: 959c0015-4b31-4790-8d2b-26d6acc19ac7
 keywords:
@@ -25,9 +24,9 @@ For more information about CmdEnableOEMComp and CmdDisableCompression entries, s
 
 For more information about customized compression, see [Customized Data Stream Compression](customized-data-stream-compression.md).
 
- 
+ 
 
- 
+ 
 
 
 

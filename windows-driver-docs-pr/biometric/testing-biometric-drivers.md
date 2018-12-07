@@ -18,9 +18,9 @@ Also use the runtime tools, such as the [WDF Verifier Control Application](https
 
 Download the [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?LinkId=733613) for tools to test Windows Biometric Framework driver packages with.
 
- 
+ 
 
- 
+ 
 
 
 

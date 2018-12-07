@@ -18,9 +18,9 @@ The Plug and Play (PnP) manager uses the device ID to create a subkey for a devi
 
 To obtain a device ID, use an [**IRP_MN_QUERY_ID**](https://msdn.microsoft.com/library/windows/hardware/ff551679) request and set the **Parameters.QueryId.IdType** field to **BusQueryDeviceID**.
 
- 
+ 
 
- 
+ 
 
 
 

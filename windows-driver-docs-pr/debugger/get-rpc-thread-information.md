@@ -3,7 +3,6 @@ title: Get RPC Thread Information
 description: Get RPC Thread Information
 ms.assetid: 4cb8d11f-5b0a-4526-9f64-ee69fd15d1ba
 keywords: ["RPC thread information"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -33,9 +32,9 @@ For details on the optional parameters, see [**DbgRpc Command-Line Options**](db
 
 For a similar example using the RPC debugger extensions, see [**!rpcexts.getthreadinfo**](-rpcexts-getthreadinfo.md).
 
- 
+ 
 
- 
+ 
 
 
 

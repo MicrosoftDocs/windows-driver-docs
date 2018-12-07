@@ -35,9 +35,9 @@ VOID
 
 A WSK application is not necessarily required to always call **WskDeregister** from within its *Unload* function. For example, if a WSK application is a subcomponent of a complex driver, the WSK application's call to **WskDeregister** might occur when the WSK application subcomponent is deactivated. In such a scenario, before the driver returns from its *Unload* function, it must still ensure that the WSK application has been successfully unregistered with a call to **WskDeregister**.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -16,28 +16,28 @@ Data on Component Video Interfaces
 
 Defines how CGMS-A and redistribution control information should be encoded in an analog 480p, 720p, or 1080i signal that is transmitted from a component video output (Y/Pb/Pr output).
 
-This standard is published by CEA. For more information about CEA, see the [Consumer Electronics Association](http://go.microsoft.com/fwlink/p/?linkid=71276) website.
+This standard is published by CEA. For more information about CEA, see the [Consumer Electronics Association](https://go.microsoft.com/fwlink/p/?linkid=71276) website.
 
 <span id="CEA-608-B_and_EIA-608-B"></span><span id="cea-608-b_and_eia-608-b"></span><span id="CEA-608-B_AND_EIA-608-B"></span>CEA-608-B and EIA-608-B  
 Line 21 Data Services
 
 Defines how CGMS-A information should be encoded in a 480i signal that is transmitted from an RF, composite, or S-Video output.
 
-This standard is published by CEA and Electronic Components Industry Association (ECIA). For more information about ECIA, see the [Electronic Components Industry Association](http://go.microsoft.com/fwlink/p/?linkid=71278) website.
+This standard is published by CEA and Electronic Components Industry Association (ECIA). For more information about ECIA, see the [Electronic Components Industry Association](https://go.microsoft.com/fwlink/p/?linkid=71278) website.
 
 <span id="EN_300_294_V1.3.2__1998-04_"></span><span id="en_300_294_v1.3.2__1998-04_"></span>EN 300 294 V1.3.2 (1998-04)  
 Television systems; 625-line television - Wide Screen Signaling (WSS)
 
 Defines how CGMS-A should be encoded in a 576i Phase Alternation Line (PAL) or Sequential Color with Memory (SECAM) signal.
 
-This standard is published by the European Telecommunications Standards Institute (ETSI). For more information about this standard, see the [ETSI](http://go.microsoft.com/fwlink/p/?linkid=26364) website.
+This standard is published by the European Telecommunications Standards Institute (ETSI). For more information about this standard, see the [ETSI](https://go.microsoft.com/fwlink/p/?linkid=26364) website.
 
 <span id="IEC_-_61880_-_First_edition_-_Video_systems__525_60_"></span><span id="iec_-_61880_-_first_edition_-_video_systems__525_60_"></span><span id="IEC_-_61880_-_FIRST_EDITION_-_VIDEO_SYSTEMS__525_60_"></span>IEC - 61880 - First edition - Video systems (525/60)  
 Video and accompanied data using the vertical blanking interval - Analog interface
 
 A method of encoding CGMS-A information in a 480i video signal that is transmitted from an analog or digital video output.
 
-This method is published by IEC. For more information about the IEC, see the [IEC](http://go.microsoft.com/fwlink/p/?linkid=8732) website.
+This method is published by IEC. For more information about the IEC, see the [IEC](https://go.microsoft.com/fwlink/p/?linkid=8732) website.
 
 <span id="IEC_-_61880-2_-_First_edition_-_Video_systems__525_60__"></span><span id="iec_-_61880-2_-_first_edition_-_video_systems__525_60__"></span><span id="IEC_-_61880-2_-_FIRST_EDITION_-_VIDEO_SYSTEMS__525_60__"></span>IEC - 61880-2 - First edition - Video systems (525/60)   
 Video and accompanied data using the vertical blanking interval - Analog interface - Part 2: 525 progressive scan system
@@ -56,11 +56,11 @@ Defines how CGMS-A information should be encoded in an analog 480i, 480p, 720p, 
 
 This standard applies only to Japan.
 
-This standard is published by ARIB. For more information about ARIB, see the [ARIB English](http://go.microsoft.com/fwlink/p/?linkid=71283) website.
+This standard is published by ARIB. For more information about ARIB, see the [ARIB English](https://go.microsoft.com/fwlink/p/?linkid=71283) website.
 
- 
+ 
 
- 
+ 
 
 
 

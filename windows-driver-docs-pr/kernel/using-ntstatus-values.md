@@ -1,6 +1,5 @@
 ---
 title: Using NTSTATUS Values
-author: windows-driver-content
 description: Using NTSTATUS Values
 ms.assetid: fe823930-e3ff-4c95-a640-bb6470c95d1d
 keywords: ["NTSTATUS values WDK kernel", "driver support routines WDK kernel", "return values WDK kernel", "testing return values WDK NTSTATUS values", "success values WDK NTSTATUS values", "informational values WDK NTSTATUS values", "warnings WDK NTSTATUS values", "error values WDK NTSTATUS values", "status information WDK NTSTATUS values", "checking return values"]
@@ -40,9 +39,9 @@ As another example, suppose a driver calls [**ZwEnumerateKey**](https://msdn.mic
 
 As a final example, suppose a driver sends an IRP that causes a lower-level driver to read information from a device. If the requesting driver specifies a buffer that is too small to receive any information, the lower-level driver might respond by returning STATUS\_BUFFER\_TOO\_SMALL, which is an error code. If the first driver specifies a buffer that can receive some, but not all, of the requested information, the lower-level driver might respond by supplying as much data as possible and then returning STATUS\_BUFFER\_OVERFLOW, which is a warning code. Note that if the first driver tests the status value using NT\_SUCCESS or NT\_ERROR incorrectly, it might inadvertently drop some of the information received.
 
- 
+ 
 
- 
+ 
 
 
 

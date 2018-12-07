@@ -3,7 +3,6 @@ title: .break
 description: The .break token behaves like the break keyword in C.
 ms.assetid: 577e74d1-824f-424a-b30e-a82fe2d682f1
 keywords: [".break Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -41,9 +40,9 @@ The **.break** token can be used within any [**.for**](-for.md), [**.while**](-w
 
 Since there is no control flow token equivalent to the C **goto** statement, you will usually use the **.break** token within an [**.if**](-if.md) conditional, as shown in the syntax examples above. However, this is not actually required.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: EFI_USB_ENDPOINT_TYPE
-author: windows-driver-content
 description: EFI_USB_ENDPOINT_TYPE
 ms.assetid: 5cdb0efc-2355-42e2-929b-df19257e35c1
 ms.date: 04/20/2017
@@ -44,9 +43,9 @@ Interrupt transfer - non-periodic communication with guarantee of maximum latenc
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Introduction to Cancel Routines
-author: windows-driver-content
 description: Introduction to Cancel Routines
 ms.assetid: 99f7f045-2b2f-4fb3-ac1c-99ab76fa46ad
 keywords: ["canceling IRPs, about canceling IRPs", "Cancel routines, about Cancel routines", "associated IRP"]
@@ -34,9 +33,9 @@ Some highest-level drivers for interactive devices, such as keyboard, mouse, sou
 
 Mass-storage device drivers, along with intermediate drivers layered over them, are unlikely to have *Cancel* routines. It is the responsibility of a file system driver to handle the cancellation of file I/O requests, while the IRPs input to lower-level mass-storage drivers are usually processed to completion too quickly to be cancelable.
 
- 
+ 
 
- 
+ 
 
 
 

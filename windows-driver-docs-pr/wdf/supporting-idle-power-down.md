@@ -1,6 +1,5 @@
 ---
 title: Supporting Idle Power-Down
-author: windows-driver-content
 description: Some devices can enter a low-power (Dx) state while the system remains in its working (S0) state.
 ms.assetid: d0ce51db-eeb7-45ef-b823-248cd03ee2a9
 keywords:
@@ -58,9 +57,9 @@ If the device can wake itself from a low-power state, the driver for the device'
 
 For information about registry entries that control a device's idle capabilities, see [User Control of Device Idle and Wake Behavior](user-control-of-device-idle-and-wake-behavior.md).
 
- 
+ 
 
- 
+ 
 
 
 

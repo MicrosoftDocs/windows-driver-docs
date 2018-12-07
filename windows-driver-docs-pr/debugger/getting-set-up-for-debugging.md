@@ -3,7 +3,6 @@ title: Setting Up Debugging (Kernel-Mode and User-Mode)
 description: There are two ways you can set up debugging with the Windows debuggers.
 ms.assetid: 3575B850-A0F9-4AAE-9432-E970D40069D2
 keywords: ["setup debugging", "configure debugging", "configure debugger", "WinDbg", "Visual Studio debugging", "kernel-mode debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -15,7 +14,7 @@ There are two ways you can set up debugging with the Windows debuggers. You can 
 
 **Note**  The Windows debuggers are included in Debugging Tools for Windows. These debuggers are different from the Visual Studio debugger, which is included with Visual Studio. For more information, see [Windows Debugging](index.md).
 
- 
+ 
 
 ## <span id="in_this_section"></span>In this section
 
@@ -29,9 +28,9 @@ There are two ways you can set up debugging with the Windows debuggers. You can 
 -   [Configuring tools.ini](configuring-tools-ini.md)
 -   [Using KDbgCtrl](using-kdbgctrl.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: amli bd
 description: The amli bd extension temporarily disables an AML breakpoint.
 ms.assetid: a7fb4f51-8984-425b-858d-1e1e69825891
 keywords: ["amli bd Windows Debugging"]
-ms.author: domars
 ms.date: 09/17/2018
 topic_type:
 - apiref
@@ -31,14 +30,14 @@ Syntax
 <span id="_______Breakpoint______"></span><span id="_______breakpoint______"></span><span id="_______BREAKPOINT______"></span> *Breakpoint*   
 Specifies the number of the breakpoint to be disabled.
 
-<span id="______________"></span> **\***   
+<span id="______________"></span> **\\***   
 Specifies that all breakpoints should be disabled.
 
 ### <span id="DLL"></span><span id="dll"></span>DLL
 
 Kdexts.dll
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -61,9 +60,9 @@ kd> !amli bl
 kd> !amli bd 1
 ```
 
- 
+ 
 
- 
+ 
 
 
 

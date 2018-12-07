@@ -1,6 +1,5 @@
 ---
 title: Driver Notification
-author: windows-driver-content
 description: Driver Notification
 ms.assetid: 331ec25e-409a-4bfa-8da7-d8c26cd6910b
 keywords: ["dynamic hardware partitioning WDK , driver notification", "hardware partitioning WDK dynamic , driver notification", "partitioning WDK dynamic hardware , driver notification", "driver notification WDK dynamic hardware partitioning", "notification WDK dynamic hardware partitioning , driver"]
@@ -21,9 +20,9 @@ This section includes the following topics:
 
 [Asynchronous Driver Notification](asynchronous-driver-notification.md)
 
- 
+ 
 
- 
+ 
 
 
 

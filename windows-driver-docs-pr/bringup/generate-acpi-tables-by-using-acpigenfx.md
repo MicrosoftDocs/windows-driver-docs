@@ -1,6 +1,5 @@
 ---
 title: Generate ACPI tables by using AcpiGenFx
-author: windows-driver-content
 description: Use the ACPI Generation Framework (AcpiGenFx) library to write an app that generates ACPI tables.
 ms.assetid: 46A725C3-609E-45B9-A4BD-033656208E92
 ms.date: 06/26/2018
@@ -16,7 +15,7 @@ ms.localizationpriority: medium
 
 **Applies to**
 
--   Windows 10
+-   Windows 10
 -   Windows SoC and platform bring-up
 
 **Important APIs**
@@ -26,7 +25,7 @@ ms.localizationpriority: medium
 
 Use the ACPI Generation Framework (AcpiGenFx) library to write an app that generates ACPI tables.
 
-In Windows 10, the new C# library, AcpiGenFx, makes it easier for you to write an app that creates ACPI tables that describe the hardware devices and resources on the platform, such as interrupt controllers, SD host controllers, GPIO, and I²C devices. By using the methods and properties exposed by the framework objects, you can describe devices, resources, and dependencies without knowing the exact syntax of the ACPI table or referring to the ACPI specification. Not only does AcpiGenFx generate ACPI Machine Language (ASL) code that is OS-independent, it is also aware of Windows-specific requirements.
+In Windows 10, the new C# library, AcpiGenFx, makes it easier for you to write an app that creates ACPI tables that describe the hardware devices and resources on the platform, such as interrupt controllers, SD host controllers, GPIO, and I²C devices. By using the methods and properties exposed by the framework objects, you can describe devices, resources, and dependencies without knowing the exact syntax of the ACPI table or referring to the ACPI specification. Not only does AcpiGenFx generate ACPI Machine Language (ASL) code that is OS-independent, it is also aware of Windows-specific requirements.
 
 The app generates the relevant ACPI table files (\*.aslc and \*.asl) based on those descriptions. At build time, AcpiGenFx statically analyzes the platform description, detecting errors like cyclical or unresolved dependencies, device naming and UUID conflicts, resource to controller mappings, and much more. As a result, the generated ASL code is easier to debug because AcpiGenFx checks for the most common mistakes, and abstracts unique ACPI implementation details.
 
@@ -54,7 +53,7 @@ Locate the following files in the **AcpiGenFx** folder of your WDK installation.
 Download Windows 10 kits, tools, and code samples.
 
 -   [Microsoft Visual Studio](https://go.microsoft.com/fwlink/p/?LinkId=533470)
--   [Windows Driver Kit (WDK) for Windows 10](https://go.microsoft.com/fwlink/p/?LinkId=733614)
+-   [Windows Driver Kit (WDK) for Windows 10](https://go.microsoft.com/fwlink/p/?LinkId=733614)
 
 ## Create a platform
 
@@ -231,7 +230,7 @@ You can add components to the platform. Typically, those components include proc
 </tbody>
 </table>
 
- 
+
 
 To view the complete list, open AcpiGenFx in **Object Browser**. Use IntelliSense to determine the methods (and the parameters) and properties exposed by the objects. For example code that shows how to add the classes and set properties that are listed in the preceding table, refer to the DSDTSamples project.
 ## Add debug support
@@ -244,10 +243,10 @@ For example, you might want to describe an xHCI host controller with USB debug p
 Here is an example of how to add an xHCI host controller and declare it as debuggable.
 
 ```cs
- 
+
 XhciUsbController usb1 = Platform.AddXhciUsbController("USB1", "XHCICONT", 0);
 usb1.Description = "USB Controller with Debug Support";
-            
+
 Memory32Fixed mem = usb1.AddMemory32Fixed(true, 0xf9000000, 0xfffff, "");
 usb1.AddMemory32Fixed(true, 0xf7000000, 0xfffff, "");
 usb1.AddInterrupt(InterruptType.Level, InterruptActiveLevel.ActiveHigh, SharingLevel.Shared, 0x8);
@@ -270,7 +269,7 @@ i2c.AddInterrupt(InterruptType.Level, InterruptActiveLevel.ActiveHigh, SharingLe
 Here is the output of the console app with the preceding definition for xHCI host and I²C controllers.
 
 ```console
- 
+
 DefinitionBlock ("Platform.aml", "DSDT", 5, "MSFT", "EDK2", 1)
 { 
     Scope (\_SB_)
@@ -394,7 +393,6 @@ namespace SSDTSample
         }
     }
 }
-
 ```
 
 Here is the output of the preceding example.
@@ -424,14 +422,13 @@ DefinitionBlock ("SSDT.aml", "SSDT", 5, "MSFT", "EDK2", 1)
     }
 
 } 
-
 ```
 
 ## Replacing ACPI firmware during development and testing
 
 In development and test scenarios, you can replace the AML binary that is generated from the asl.exe compiler on the device. To do this, rename the AML binary to acpitabl.dat and move it to %windir%\\system32. At boot time, Windows replaces tables present in the ACPI firmware with those in acpitabl.dat.
 
-**Note**  Make sure that test signing is enabled.
+**Note**  Make sure that test signing is enabled.
 **bcdedit /set testsigning on**
 
 ## Related topics

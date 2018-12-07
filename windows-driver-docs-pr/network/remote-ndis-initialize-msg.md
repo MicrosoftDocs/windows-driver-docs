@@ -1,6 +1,5 @@
 ---
 title: 'REMOTE_NDIS_INITIALIZE_MSG'
-author: windows-driver-content
 Description: 'This message is sent by the host to a Remote NDIS device to initialize the network connection.'
 ms.assetid: 08735ee8-7a4c-4a3d-9082-27c61cfd15e8
 ms.date: 07/31/2017
@@ -62,12 +61,12 @@ This message is sent by the host to a Remote NDIS device to initialize the netwo
 <td><p>20</p></td>
 <td><p>4</p></td>
 <td><p>MaxTransferSize</p></td>
-<td><p>Specifies the maximum size in bytes of any single bus data transfer that the host expects to receive from the device. Typically, each bus data transfer accommodates a single Remote NDIS message. However, the device may bundle several Remote NDIS messages that contain data packets into a single transfer (see [<strong>REMOTE_NDIS_PACKET_MSG</strong>](remote-ndis-packet-msg.md)).</p></td>
+<td><p>Specifies the maximum size in bytes of any single bus data transfer that the host expects to receive from the device. Typically, each bus data transfer accommodates a single Remote NDIS message. However, the device may bundle several Remote NDIS messages that contain data packets into a single transfer (see <a href="remote-ndis-packet-msg.md" data-raw-source="[&lt;strong&gt;REMOTE_NDIS_PACKET_MSG&lt;/strong&gt;](remote-ndis-packet-msg.md)"><strong>REMOTE_NDIS_PACKET_MSG</strong></a>).</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -89,9 +88,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

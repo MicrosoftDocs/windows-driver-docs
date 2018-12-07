@@ -27,7 +27,7 @@ warning C28110: Drivers must protect floating-point hardware state. See use of f
 </tbody>
 </table>
 
- 
+ 
 
 This warning is only applicable in kernel mode. The driver is attempting to use a variable or constant of a float type when the code is not protected by [**KeSaveFloatingPointState**](https://msdn.microsoft.com/library/windows/hardware/ff553243) and [**KeRestoreFloatingPointState**](https://msdn.microsoft.com/library/windows/hardware/ff553185), or [**EngSaveFloatingPointState**](https://msdn.microsoft.com/library/windows/hardware/ff565010) and [**EngRestoreFloatingPointState**](https://msdn.microsoft.com/library/windows/hardware/ff565006).
 
@@ -43,9 +43,9 @@ If a function uses floating-point operations intentionally, and is expecting to 
 
 By using **\_Kernel\_float\_used\_** on (or adding the appropriate save and restore calls to) all functions that use floating point until no warnings remain, a driver can be assured to be free of misuse of the floating-point hardware. For more information, see [Floating point annotations for drivers](floating-point-annotations-for-drivers.md).
 
- 
+ 
 
- 
+ 
 
 
 

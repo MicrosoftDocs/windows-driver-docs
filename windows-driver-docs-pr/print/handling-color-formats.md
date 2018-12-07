@@ -1,6 +1,5 @@
 ---
 title: Handling Color Formats
-author: windows-driver-content
 description: Handling Color Formats
 ms.assetid: 4d0faba6-1994-474f-a5d3-e25cd2800cf7
 keywords:
@@ -35,8 +34,8 @@ Each color format that a printer supports is specified as an option to the Color
 </thead>
 <tbody>
 <tr class="odd">
-<td>in Device (*DevNumOfPlanes)</td>
-<td>in Device (*DevBPP)</td>
+<td>in Device (<em>DevNumOfPlanes)</td>
+<td>in Device (</em>DevBPP)</td>
 </tr>
 <tr class="even">
 <td><p>1</p></td>
@@ -56,12 +55,12 @@ Each color format that a printer supports is specified as an option to the Color
 </tr>
 <tr class="even">
 <td><p>4</p></td>
-<td><p>1 ([<em>CMYK</em>](https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-cmyk))</p></td>
+<td><p>1 (<a href="https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-cmyk" data-raw-source="[&lt;em&gt;CMYK&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-cmyk)"><em>CMYK</em></a>)</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 For these formats, Unidrv can convert [*device-independent bitmap (DIB)*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-independent-bitmap--dib-) data into the proper format and send it to the printer. (Halftoning operations that can be performed on this data are described in [Halftoning with Unidrv](halftoning-with-unidrv.md).)
 
@@ -105,9 +104,9 @@ For example, suppose you want to define a ColorMode option that causes images to
 
 In this example, the \***DevBPP** and \***DevNumOfPlanes** attributes represent the four-plane, one-bit-per-plane CMYK format that Unidrv can render and then send to the printer. However, in this case, halftoning operations must be performed on the rendered image before it is printed. [Minidriver-supplied halftoning](minidriver-supplied-halftoning.md) must be used.
 
- 
+ 
 
- 
+ 
 
 
 

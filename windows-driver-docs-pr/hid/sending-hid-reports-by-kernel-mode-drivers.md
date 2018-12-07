@@ -1,6 +1,5 @@
 ---
 title: Sending HID Reports by Kernel-Mode Drivers
-author: windows-driver-content
 description: Sending HID Reports by Kernel-Mode Drivers
 ms.assetid: ff3d090f-cf76-40a7-9215-8440a592f303
 ms.localizationpriority: medium
@@ -51,9 +50,9 @@ Sends an output report to a collection (Windows XP and later versions).
 <a href="" id="ioctl-hid-set-feature"></a>[**IOCTL\_HID\_SET\_FEATURE**](https://msdn.microsoft.com/library/windows/hardware/ff541176)  
 Sends a feature report to a collection.
 
- 
+ 
 
- 
+ 
 
 
 

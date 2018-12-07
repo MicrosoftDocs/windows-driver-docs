@@ -17,9 +17,9 @@ ms.localizationpriority: medium
 
 A device surface is a subset of an array of 2²⁸ by 2²⁸ pixels. These pixels are addressed by pairs of 28-bit signed numbers, the upper-leftmost pixel of the device surface is given the coordinates (0,0). The device surface lies in the lower right quadrant of this coordinate space, where both coordinates are nonnegative.
 
- 
+ 
 
- 
+ 
 
 
 

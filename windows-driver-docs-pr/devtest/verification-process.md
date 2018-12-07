@@ -44,9 +44,9 @@ During this step, SDV creates a subdirectory for each rule that it verified in t
 
 While SDV performs the steps in the verification process, it writes status messages to the command line, along with error messages that report errors that arise in each step. For information about the status messages, see [Command-Line Output](command-line-output.md). For information about the error messages, see [Static Driver Verifier Error Messages](static-driver-verifier-error-messages.md). For information about enabling diagnostics to help you and Microsoft troubleshoot problems with SDV, see [Static Driver Verifier Diagnostics](static-driver-verifier-diagnostics.md).
 
- 
+ 
 
- 
+ 
 
 
 

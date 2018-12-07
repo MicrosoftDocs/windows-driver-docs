@@ -1,6 +1,5 @@
 ---
 title: Deleting an Item from the Driver Tree
-author: windows-driver-content
 description: Deleting an Item from the Driver Tree
 ms.assetid: eea7565c-be15-4610-a1b4-16596d1daca2
 ms.date: 04/20/2017
@@ -17,9 +16,9 @@ In order to delete a driver item, the WIA service calls the minidriver entry poi
 
 After the root item has been deleted, the WIA service calls [**IWiaMiniDrv::drvFreeDrvItemContext**](https://msdn.microsoft.com/library/windows/hardware/ff543972) to free the resources used by the driver-specific context. The WIA service then deletes the item and the driver-specific context.
 
- 
+ 
 
- 
+ 
 
 
 

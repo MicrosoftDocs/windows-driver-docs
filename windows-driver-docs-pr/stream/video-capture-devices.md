@@ -1,6 +1,5 @@
 ---
 title: Video Capture Devices
-author: windows-driver-content
 description: Video Capture Devices
 ms.assetid: ed02e6c8-fd82-488b-a0dc-8e83a842bcc4
 keywords:
@@ -25,7 +24,7 @@ Microsoft recommends that all new video capture drivers use the AVStream interfa
 **Note**  : This section does not describe the obsolete Video for Windows (VfW) technology. VfW was optimized for capturing movies to disk. Features important to video conferencing, TV viewing, capture of video fields, and ancillary data streams are missing from the VfW architecture. To circumvent these limitations, vendors have added proprietary extensions to VfW. However, without standardized interfaces, applications that use these features must include hardware-dependent code.
 To bridge the VfW and WDM driver models, Microsoft provides a VfW-to-WDM mapper as part of the operating system. This component enables WDM drivers to appear as VfW drivers for legacy VfW applications.
 
- 
+ 
 
 This section includes:
 
@@ -33,9 +32,9 @@ This section includes:
 
 [Implementing Video Capture Support](implementing-video-capture-support.md)
 
- 
+ 
 
- 
+ 
 
 
 

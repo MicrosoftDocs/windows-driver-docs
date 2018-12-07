@@ -3,7 +3,6 @@ title: Debugging in Assembly Mode
 description: Debugging in Assembly Mode
 ms.assetid: 048c43ff-7f9e-4a20-a524-44f66d92eefe
 keywords: ["assembly debugging", "assembly mode", "assembly debugging, overview"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -84,9 +83,9 @@ If your application was written in assembly language, the disassembly that the d
 
 If you want to debug your code by referencing the original .asm files, you must use source mode debugging. You can load the assembly file like a C or C++ source file. For more information about this kind of debugging, see [Debugging in Source Mode](debugging-in-source-mode.md).
 
- 
+ 
 
- 
+ 
 
 
 

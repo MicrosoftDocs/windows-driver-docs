@@ -26,9 +26,9 @@ Then, see the Bluetooth design and reference sections for implementation guidanc
 -   [Bluetooth profile drivers](bluetooth-profile-drivers-overview.md)
 -   [Bluetooth device reference](https://msdn.microsoft.com/library/windows/hardware/ff536585)
 
- 
+ 
 
- 
+ 
 
 
 

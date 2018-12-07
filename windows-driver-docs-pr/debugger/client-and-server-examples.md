@@ -3,7 +3,6 @@ title: Client and Server Examples
 description: Client and Server Examples
 ms.assetid: 78dea1c0-6e94-4980-8042-375f11386d53
 keywords: ["remote debugging through the debugger, examples"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -65,9 +64,9 @@ Here is an example of a secure server. This server uses secure sockets layer wit
 D:\> cdb -server "ssl:proto=tls1,machuser=ab 38 f7 ae 13 20 ac da 05 14 65 60 30 83 7b 83 09 2c d2 34,port=1234" notepad.exe
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Crossbar Change Event
-author: windows-driver-content
 description: Crossbar Change Event
 ms.assetid: 67202a53-d981-47db-9bc1-7de18f9192aa
 keywords:
@@ -29,17 +28,17 @@ The [EVENTSETID\_CROSSBAR](https://msdn.microsoft.com/library/windows/hardware/f
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>KSEVENT_CROSSBAR_CHANGED</strong>](https://msdn.microsoft.com/library/windows/hardware/ff561843)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff561843" data-raw-source="[&lt;strong&gt;KSEVENT_CROSSBAR_CHANGED&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff561843)"><strong>KSEVENT_CROSSBAR_CHANGED</strong></a></p></td>
 <td><p>Signals to DirectShow that the crossbar has changed, for example, because of a new pin routing configuration.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

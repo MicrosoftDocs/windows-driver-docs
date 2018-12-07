@@ -28,7 +28,7 @@ Structures that include the **Header** member meet the following requirements:
 -   A structure will only have a new revision if the earlier revision information is still valid and complete. That is, the new version of the structure contains a superset of the older versions members.
     **Note**  If any of the preceding conditions cannot be met, NDIS provides a new structure with a new name that replaces the existing structure instead of providing a revised version of the existing structure.
 
-     
+     
 
 -   NDIS drivers should always use the predefined revision values. NDIS provides such definitions in the form Xxx\_REVISION\_Nn, and NDIS\_SIZEOF\_Xxx\_REVISION\_Nn, for the **Revision** and **Size** members of [**NDIS\_OBJECT\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/ff566588) respectively. Also, Xxx represents the name of the structure and Nn is the revision number. For example, the revision and size for the first revision of the [**NDIS\_FILTER\_PARTIAL\_CHARACTERISTICS**](https://msdn.microsoft.com/library/windows/hardware/ff565544) structure are NDIS\_FILTER\_PARTIAL\_CHARACTERISTICS\_REVISION\_1 and NDIS\_SIZEOF\_FILTER\_PARTIAL\_CHARACTERISTICS\_REVISION\_1 respectively.
 
@@ -41,9 +41,9 @@ Structures that include the **Header** member meet the following requirements:
 
 [Specifying NDIS Version Information](specifying-ndis-version-information.md)
 
- 
+ 
 
- 
+ 
 
 
 

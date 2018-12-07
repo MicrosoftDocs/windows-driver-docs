@@ -1,6 +1,5 @@
 ---
 title: IRP_MN_EXECUTE_METHOD
-author: windows-driver-content
 description: All drivers that support methods within data blocks must handle this IRP.
 ms.date: 08/12/2017
 ms.assetid: cc42340e-4a7c-475c-b44d-2127e8a0d7dc
@@ -144,9 +143,9 @@ Requirements
 
 [**WNODE\_METHOD\_ITEM**](https://msdn.microsoft.com/library/windows/hardware/ff566376)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Installing Serial Devices
-author: windows-driver-content
 description: Installing Serial Devices
 ms.assetid: e51ac390-1de0-4377-bcc3-5f179b6ca6df
 keywords:
@@ -31,9 +30,9 @@ For general information about installing devices, see the [Device Installation D
 
 For more information about serial devices, see [Serial Devices and Drivers](https://msdn.microsoft.com/library/windows/hardware/ff547451).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: Using the Scratch Pad
 description: Using the Scratch Pad
 ms.assetid: a0f6ce9c-7fad-4df6-bad8-0ea1bc5bfc52
 keywords: ["debugging information windows, Scratch Pad", "Scratch Pad"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -56,9 +55,9 @@ The Scratch Pad window has a shortcut menu with additional commands. To access t
 
 For more information about docked, tabbed, and floating windows, see [Positioning the Windows](positioning-the-windows.md). For more information about all techniques that you can use to control debugging information windows, see [Using Debugging Information Windows](using-debugging-information-windows.md).
 
- 
+ 
 
- 
+ 
 
 
 

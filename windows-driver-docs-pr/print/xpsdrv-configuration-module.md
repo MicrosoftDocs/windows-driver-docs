@@ -1,6 +1,5 @@
 ---
 title: XPSDrv Configuration Module
-author: windows-driver-content
 description: XPSDrv Configuration Module
 ms.assetid: 439d7769-57d1-41f9-a3db-da254b4b7cae
 keywords:
@@ -36,9 +35,9 @@ XPSDrv drivers can receive GDI document events through the [**DrvDocumentEvent**
 
 XPSDrv drivers have specific requirements for installation. For more information about XPSDrv driver installation, see [XPSDrv Installation](xpsdrv-installation.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: CPSUI Message Handler
-author: windows-driver-content
 description: CPSUI Message Handler
 ms.assetid: 4a6434e9-d65e-4ddd-836e-d6101532bbb8
 keywords:
@@ -22,9 +21,9 @@ When a user interacts with a property sheet page and causes an event to occur, C
 
 The callback function must handle the event, and then return a status value to CPSUI that indicates if the page needs to be redisplayed or reinitialized.
 
- 
+ 
 
- 
+ 
 
 
 

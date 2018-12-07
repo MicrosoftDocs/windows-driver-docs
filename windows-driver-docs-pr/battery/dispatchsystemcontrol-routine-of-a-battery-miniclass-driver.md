@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_dispatchsystemcontrol_routine_of_battery_miniclass_driver_dg"></span><span id="DDK_DISPATCHSYSTEMCONTROL_ROUTINE_OF_BATTERY_MINICLASS_DRIVER_DG"></span>
 
 
-Battery miniclass drivers must support [Windows Management Instrumentation](https://msdn.microsoft.com/library/windows/hardware/ff547139) (WMI) by supplying a [*DispatchSystemControl*](https://msdn.microsoft.com/library/windows/hardware/ff543412) routine to handle the [**IRP\_MJ\_SYSTEM\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff550813) IRP. WMI provides a uniform way for drivers to expose measurement and instrumentation data.
+Battery miniclass drivers must support [Windows Management Instrumentation](https://msdn.microsoft.com/library/windows/hardware/ff547139) (WMI) by supplying a [*DispatchSystemControl*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine to handle the [**IRP\_MJ\_SYSTEM\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff550813) IRP. WMI provides a uniform way for drivers to expose measurement and instrumentation data.
 
 Battery miniclass drivers use the [**BatteryClassSystemControl**](https://msdn.microsoft.com/library/windows/hardware/ff536270) routine to do initial processing. **BatteryClassSystemControl** takes a *WmiLibContext* parameter, which specifies a dispatch table of functions. The routine uses the **MinorFunction** member of IRP\_MJ\_SYSTEM\_CONTROL to determine which dispatch function it calls.
 
@@ -26,9 +26,9 @@ Inside its [**DpWmiQueryDataBlock**](https://msdn.microsoft.com/library/windows/
 
 Battery miniclass drivers are not required to do any WMI IRP processing beyond calling **BatteryClassQueryWmiDataBlock**. In a minimal implementation of WMI handling for a battery miniclass driver, if **BatteryClassQueryWmiDataBlock** returns STATUS\_WMI\_GUID\_NOT\_FOUND, the miniclass driver simply calls [**WmiCompleteRequest**](https://msdn.microsoft.com/library/windows/hardware/ff565798) with a status value of STATUS\_WMI\_GUID\_NOT\_FOUND.
 
- 
+ 
 
- 
+ 
 
 
 

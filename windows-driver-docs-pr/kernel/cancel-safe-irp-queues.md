@@ -1,6 +1,5 @@
 ---
 title: Cancel-Safe IRP Queues
-author: windows-driver-content
 description: Cancel-Safe IRP Queues
 ms.assetid: a759d1e0-120f-4db9-9b84-ff921f2f5ba4
 keywords: ["cancel-safe IRP queues WDK kernel", "callback routines WDK IRPs", "synchronization WDK IRPs"]
@@ -16,9 +15,9 @@ ms.localizationpriority: medium
 
 Drivers that implement their own IRP queuing should use the *cancel-safe IRP queue* framework. Cancel-safe IRP queues split IRP handling into two parts:
 
-1.  The driver provides a set of callback routines that implement standard operations on the driver's IRP queue. The provided operations include inserting and removing IRPs from the queue, and locking and unlocking the queue. See [Implementing the Cancel-Safe IRP Queue](#ddk-implementing-the-cancel-safe-irp-queue-kg).
+1. The driver provides a set of callback routines that implement standard operations on the driver's IRP queue. The provided operations include inserting and removing IRPs from the queue, and locking and unlocking the queue. See [Implementing the Cancel-Safe IRP Queue](#ddk-implementing-the-cancel-safe-irp-queue-kg).
 
-2.  Whenever the driver needs to actually insert or remove an IRP from the queue, it uses the system-provided **IoCsq*Xxx*** routines. These routines handle all synchronization and IRP canceling logic for the driver.
+2. Whenever the driver needs to actually insert or remove an IRP from the queue, it uses the system-provided **IoCsq*Xxx*** routines. These routines handle all synchronization and IRP canceling logic for the driver.
 
 Drivers that use cancel-safe IRP queues do not implement [*Cancel*](https://msdn.microsoft.com/library/windows/hardware/ff540742) routines to support IRP cancellation.
 
@@ -157,9 +156,9 @@ The driver can then dequeue the same IRP by using the **IO\_CSQ\_IRP\_CONTEXT** 
 
 The driver might also be required to remove IRPs from the queue based on a particular criterion. For example, the driver might associate a priority with each IRP, such that higher priority IRPs get dequeued first. The driver might pass a *PeekContext* value to [**IoCsqRemoveNextIrp**](https://msdn.microsoft.com/library/windows/hardware/ff549072), which the system passes back to the driver when it requests the next IRP in the queue.
 
- 
+ 
 
- 
+ 
 
 
 

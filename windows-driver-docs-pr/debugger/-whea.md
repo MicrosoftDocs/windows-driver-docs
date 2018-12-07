@@ -3,7 +3,6 @@ title: whea
 description: The whea extension displays top-level Windows Hardware Error Architecture (WHEA) information.
 ms.assetid: 5d621507-74e7-4a43-8600-88dca29e461d
 keywords: ["whea Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -53,7 +52,7 @@ The **!whea** extension displays top-level Windows Hardware Error Architecture (
 </tbody>
 </table>
 
- 
+ 
 
 This extension can be used only in Windows Vista and later versions of Windows.
 
@@ -160,9 +159,9 @@ Error Source 3 @ fffffa8007d0dbc0
 . . . . 
 ```
 
- 
+ 
 
- 
+ 
 
 
 

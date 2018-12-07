@@ -1,6 +1,5 @@
 ---
 title: Thread Objects
-author: windows-driver-content
 description: Thread Objects
 ms.assetid: 698de86b-1790-42d5-a482-82e4431ce7af
 keywords: ["kernel dispatcher objects WDK , thread objects", "dispatcher objects WDK kernel , thread objects"]
@@ -24,9 +23,9 @@ This section contains the following topics:
 
 [System Worker Threads](system-worker-threads.md)
 
- 
+ 
 
- 
+ 
 
 
 

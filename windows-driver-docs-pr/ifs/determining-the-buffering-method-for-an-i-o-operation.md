@@ -1,6 +1,5 @@
 ---
 title: Determining the Buffering Method for an I/O Operation
-author: windows-driver-content
 description: Determining the Buffering Method for an I/O Operation
 ms.assetid: 219378d9-a9fa-495a-b016-36595a7efb49
 keywords:
@@ -62,9 +61,9 @@ This section includes:
 
 [IRP-Based I/O Operations That Have No Buffers](irp-based-i-o-operations-that-have-no-buffers.md)
 
- 
+ 
 
- 
+ 
 
 
 

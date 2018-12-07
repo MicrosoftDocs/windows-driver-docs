@@ -83,9 +83,9 @@ The play or record position is zero immediately following initialization of the 
 
 For example implementations of **GetPosition** methods for WaveCyclic and WavePci miniport drivers, see the sample audio drivers in the Windows Driver Kit (WDK).
 
- 
+ 
 
- 
+ 
 
 
 

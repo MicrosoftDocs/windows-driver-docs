@@ -15,9 +15,9 @@ The following flow diagram shows the resume sequence.
 
 ![wdi usb resume sequence](images/wdi-usb-resume-sequence-flow.png)
 
- 
+ 
 
- 
+ 
 
 
 

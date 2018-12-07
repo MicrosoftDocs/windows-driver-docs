@@ -1,6 +1,5 @@
 ---
 title: Transaction Objects
-author: windows-driver-content
 description: Transaction Objects
 ms.assetid: 124105bd-70be-49b1-8ea4-af6ba1f3cf16
 keywords: ["transactions WDK KTM , objects", "transactions WDK KTM", "transactional clients WDK KTM , creating transactions", "Kernel Transaction Manager WDK , transactions", "KTM WDK , transactions", "transaction objects WDK KTM"]
@@ -23,9 +22,9 @@ Clients close their handles to transaction objects by calling [**ZwClose**](http
 
 The operating system deletes the object after the last handle is closed and KTM has released all its references to the object.
 
- 
+ 
 
- 
+ 
 
 
 

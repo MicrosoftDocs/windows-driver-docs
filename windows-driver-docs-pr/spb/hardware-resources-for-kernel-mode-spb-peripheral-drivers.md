@@ -1,6 +1,5 @@
 ---
 title: Hardware Resources for Kernel-Mode SPB Peripheral Drivers
-author: windows-driver-content
 description: Code examples for a KMDF driver for a peripheral device on an SPB, and obtains the hardware resources.
 ms.assetid: ABFFCBEC-16AB-44AF-BEF6-34AEE612EAF7
 ms.date: 04/20/2017
@@ -176,9 +175,9 @@ The preceding code example does the following:
 
 In the **WdfIoTargetSendWriteSynchronously** call, the driver supplies a variable named `SpbRequest`, which is a handle to a framework request object that the driver previously created. After the **WdfIoTargetSendWriteSynchronously** call, the driver should typically call the [**WdfRequestReuse**](https://msdn.microsoft.com/library/windows/hardware/ff550026) method to prepare the framework request object to be used again.
 
- 
+ 
 
- 
+ 
 
 
 

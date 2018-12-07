@@ -1,6 +1,5 @@
 ---
 title: Windows kernel obsolete macros
-author: windows-driver-content
 description: This topic summarizes the following obsolete macros
 ms.assetid: b102355e-f40b-438e-92ef-371814e0c074
 ms.localizationpriority: medium
@@ -26,16 +25,16 @@ This topic summarizes the following obsolete macros:
 <tbody>
 <tr class="odd">
 <td><strong>COMPUTE_PAGES_SPANNED</strong></td>
-<td><p>Use [<strong>ADDRESS_AND_SIZE_TO_SPAN_PAGES</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540562) instead.</p></td>
+<td><p>Use <a href="https://msdn.microsoft.com/library/windows/hardware/ff540562" data-raw-source="[&lt;strong&gt;ADDRESS_AND_SIZE_TO_SPAN_PAGES&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540562)"><strong>ADDRESS_AND_SIZE_TO_SPAN_PAGES</strong></a> instead.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

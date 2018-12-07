@@ -21,9 +21,9 @@ ms.localizationpriority: medium
 
 The **FsRtlAllocatePool** routine is obsolete, but is exported to support existing driver binaries. Use [**FsRtlAllocatePoolWithTag**](https://msdn.microsoft.com/library/windows/hardware/ff545675) instead.
 
- 
+ 
 
- 
+ 
 
 
 

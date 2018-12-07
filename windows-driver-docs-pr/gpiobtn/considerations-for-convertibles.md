@@ -1,6 +1,5 @@
 ---
 title: Considerations for convertibles
-author: windows-driver-content
 description: This topic discusses timing and performance considerations for convertibles.
 ms.assetid: 2353023A-989A-4836-A39C-0B5F749E7FF2
 ms.localizationpriority: medium
@@ -44,9 +43,9 @@ The following two examples start with the laptop mode and describe the optimal t
 
 **Figure 2 Screen Swivel Convertible**
 
- 
+ 
 
- 
+ 
 
 
 

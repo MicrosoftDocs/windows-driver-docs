@@ -3,7 +3,6 @@ title: Debugging a Device Installation Co-Installer
 description: Debugging a Device Installation Co-Installer
 ms.assetid: a5cf3cec-bd61-49a6-b836-6759cd8c7d82
 keywords: ["device installation co-installer debugging", "installation co-installer debugging", "co-installer debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -63,9 +62,9 @@ In certain cases, running a device installation package under DevCon may result 
 
 If the problem vanishes whenever DevCon initiates the installation, then you will have to debug your co-installer without using DevCon. One way of doing this is to use the [TList](tlist.md) tool with the **/m** option to determine which process is loading the co-installer module, and then attaching the debugger to that process.
 
- 
+ 
 
- 
+ 
 
 
 

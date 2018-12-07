@@ -39,9 +39,9 @@ If the driver performs its own multiple-processor optimizations, it should follo
 
 If vendors want to enable multiple-processor optimizations in one of these situations, they should first contact Microsoft.
 
- 
+ 
 
- 
+ 
 
 
 

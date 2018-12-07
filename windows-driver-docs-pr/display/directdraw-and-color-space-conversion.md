@@ -32,11 +32,11 @@ Three common YUV color spaces are:
 
 -   4:4:4 (similar to RGB)
 
-There are many varieties of these color spaces and many other YUV formats in use today. For information about FOURCC, go to the [FOURCC](http://go.microsoft.com/fwlink/p/?linkid=8697) website.
+There are many varieties of these color spaces and many other YUV formats in use today. For information about FOURCC, go to the [FOURCC](https://go.microsoft.com/fwlink/p/?linkid=8697) website.
 
- 
+ 
 
- 
+ 
 
 
 

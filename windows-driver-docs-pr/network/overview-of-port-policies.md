@@ -25,7 +25,7 @@ Standard port properties are specified by an [**NDIS\_SWITCH\_PORT\_PROPERTY\_TY
 
 **Note**  If a forwarding extension does not manage or enforce VLAN port properties, it must return STATUS\_DATA\_NOT\_ACCEPTED for the [OID\_SWITCH\_PORT\_PROPERTY\_ADD](https://msdn.microsoft.com/library/windows/hardware/hh598275) and [OID\_SWITCH\_PORT\_PROPERTY\_UPDATE](https://msdn.microsoft.com/library/windows/hardware/hh598278) requests that add or update the property. VLAN port properties have a property type of **NdisSwitchPortPropertyTypeVlan**.
 
- 
+ 
 
 <a href="" id="custom-port-policies"></a>Custom Port Policies  
 Custom port policies specify proprietary properties that are defined by an independent software vendor (ISV). These properties are provisioned by OID requests issued by the extensible switch's protocol edge of the extensible switch and enforced by the underlying extension that manages the custom port policy.
@@ -36,7 +36,7 @@ A custom port property is specified by [**NDIS\_SWITCH\_PORT\_PROPERTY\_TYPE**](
 
 **Note**  The method by which the extension is configured with the property's GUID value is proprietary to the ISV.
 
- 
+ 
 
 Standard and custom port policies are provisioned through the following OID requests:
 
@@ -50,13 +50,13 @@ A forwarding extension can block the provisioning of the new or updated port pol
 
 **Note**  If the extension does not veto the OID request, it monitors the status when the request is completed. The extension does this to determine whether the OID request was vetoed by underlying extensions in the extensible switch control path or by the extensible switch interface.
 
- 
+ 
 
 For more information on how to manage port policies and properties, see [Managing Port Policies](managing-port-policies.md).
 
- 
+ 
 
- 
+ 
 
 
 

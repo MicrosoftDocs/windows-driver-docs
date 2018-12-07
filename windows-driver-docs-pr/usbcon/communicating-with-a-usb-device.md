@@ -1,7 +1,6 @@
 ---
 Description: Information about how a USB client driver can allocate, build, and submit URBs to the USB driver stack.
 title: USB Request Blocks (URBs)
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -37,21 +36,21 @@ After the USB driver stack is done processing the URB, the driver stack uses the
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Allocating and Building URBs](how-to-add-xrb-support-for-client-drivers.md)</p></td>
+<td><p><a href="how-to-add-xrb-support-for-client-drivers.md" data-raw-source="[Allocating and Building URBs](how-to-add-xrb-support-for-client-drivers.md)">Allocating and Building URBs</a></p></td>
 <td><p>This topic describes how a USB client driver can use Windows Driver Model (WDM) driver routines to allocate and format an URB before sending the request to the Microsoft-provided USB driver stack.</p></td>
 </tr>
 <tr class="even">
-<td><p>[How to Submit an URB](send-requests-to-the-usb-driver-stack.md)</p></td>
+<td><p><a href="send-requests-to-the-usb-driver-stack.md" data-raw-source="[How to Submit an URB](send-requests-to-the-usb-driver-stack.md)">How to Submit an URB</a></p></td>
 <td><p>This topic describes the steps that are required to submit an initialized URB to the USB driver stack to process a particular request.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Best Practices: Using URBs](usb-client-driver-contract-in-windows-8.md)</p></td>
+<td><p><a href="usb-client-driver-contract-in-windows-8.md" data-raw-source="[Best Practices: Using URBs](usb-client-driver-contract-in-windows-8.md)">Best Practices: Using URBs</a></p></td>
 <td><p>This topic describes best practices for a client driver for allocating, building, and sending an URB to the USB driver stack included with Windows 8.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 [USB Driver Development Guide](usb-driver-development-guide.md)  

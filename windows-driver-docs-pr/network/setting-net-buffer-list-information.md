@@ -20,7 +20,7 @@ A header-data split provider must set the header-data split flags in the **NblFl
 
 **Note**  A miniport driver can set the **DataPhysicalAddress** member of the NET\_BUFFER structure, even if the NET\_BUFFER is not associated with a split frame. In this case, **DataPhysicalAddress** contains the physical address of the header MDL.
 
- 
+ 
 
 The header-data split provider combines the flags in the **NblFlags** member with a bitwise OR operation.
 
@@ -59,9 +59,9 @@ If the header-data split provider does not split a frame, the frame must be indi
 
 -   NDIS\_NBL\_FLAGS\_SPLIT\_AT\_UPPER\_LAYER\_PROTOCOL\_PAYLOAD
 
- 
+ 
 
- 
+ 
 
 
 

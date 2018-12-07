@@ -26,7 +26,7 @@ A PnP filter driver can support a specific device or all devices in a setup clas
 
 ### <a href="" id="ddk-installing-a-device-specific-filter-driver-dg"></a>Installing a Device-Specific Filter Driver
 
-To register a device-specific filter driver, create a registry entry through an **AddReg** entry in the *DDInstall***.HW** section of the device's INF file. For a device-specific upper filter, create an entry named **UpperFilters**. For a device-specific lower filter, create an entry named **LowerFilters**. For example, the following INF excerpt installs *cdaudio* as an upper filter on the *cdrom* driver:
+To register a device-specific filter driver, create a registry entry through an **AddReg** entry in the <em>DDInstall</em>**.HW** section of the device's INF file. For a device-specific upper filter, create an entry named **UpperFilters**. For a device-specific lower filter, create an entry named **LowerFilters**. For example, the following INF excerpt installs *cdaudio* as an upper filter on the *cdrom* driver:
 
 ```cpp
 :
@@ -45,7 +45,7 @@ AddService=cdaudio,,cdaudio_ServiceInstallSection
 : 
 
 [cdaudio_addreg] 
-HKR,,"UpperFilters",0x00010000,"cdaudio" ; [REG_MULTI_SZ](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types) value 
+HKR,,"UpperFilters",0x00010000,"cdaudio" ; REG_MULTI_SZ value 
 :
 
 [cdaudio_ServiceInstallSection]
@@ -75,7 +75,7 @@ AddReg = upperfilter_addreg
 upperfilt.sys,,,0x00004000  ; COPYFLG_IN_USE_RENAME
 
 [upperfilter_addreg]
-; append this service to existing [REG_MULTI_SZ](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types) list, if any
+; append this service to existing REG_MULTI_SZ list, if any
 HKR,,"UpperFilters",0x00010008,"upperfilt" 
 
 [upperfilter_inst.Services]
@@ -100,9 +100,9 @@ The device installation application would:
 
 Each call would specify **SPINST_REGISTRY** for the *Flags* argument, to indicate that only registry modifications need to be performed.
 
- 
+ 
 
- 
+ 
 
 
 

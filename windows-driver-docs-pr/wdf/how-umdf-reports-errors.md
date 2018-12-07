@@ -1,6 +1,5 @@
 ---
 title: How UMDF Reports Errors
-author: windows-driver-content
 description: This topic describes how User-Mode Driver Framework (UMDF) reports errors. It applies to both UMDF versions 1 and 2.
 ms.assetid: 44e4e5df-d968-4973-8a36-e93c75320ff6
 keywords:
@@ -42,9 +41,9 @@ A UMDF error report can contain the following information. The contents of the r
 
 -   Analysis of the problem, which can include the address of the last driver-to-framework call (or vice versa), problem code, exception information, and so on
 
- 
+ 
 
- 
+ 
 
 
 

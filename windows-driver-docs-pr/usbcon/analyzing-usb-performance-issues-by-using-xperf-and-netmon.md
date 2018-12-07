@@ -1,7 +1,6 @@
 ---
 Description: This topic provides information about how to view the timeline of events captured in a USB ETW log.
 title: Analyzing USB Performance Issues by Using Xperf and Netmon
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -23,7 +22,6 @@ Xperf –on Diag
 Logman start Usbtrace -p Microsoft-Windows-USB-USBPORT -o usbtrace.etl -ets -nb 128 640 -bs 128
 
 Logman update Usbtrace -p Microsoft-Windows-USB-USBHUB –ets
-
 ```
 
 Perform the actions for the problem scenario, and then stop the traces by issuing the following commands from an elevated command prompt:
@@ -32,21 +30,18 @@ Perform the actions for the problem scenario, and then stop the traces by issuin
 Logman stop Usbtrace -ets
 
 Xperf –stop
-
 ```
 
 Merge the two trace log file into a single file by using the following command (privileges are not required):
 
 ```cpp
 Xperf –merge usbtrace.etl C:\kernel.etl merged.etl
-
 ```
 
 This example creates a merged file that is named merged.etl. You can open this file with either the Xperf Performance Analyzer or with Netmon. To open the file in Xperf, run the following command:
 
 ```cpp
 Xperf merged.etl
-
 ```
 
 Xperf shows specialized graphs for a wide range of kernel events as shown in this image. For more information on Xperf recording options and the Xperf GUI, [The Xperf Command Line Tool in Detail](https://msdn.microsoft.com/library/cc305221.aspx) and [Windows Performance Analyzer (WPA)](https://msdn.microsoft.com/library/cc305187.aspx).
@@ -59,7 +54,6 @@ By default, Netmon displays all events in the merged trace file. To show only th
 
 ```cpp
 ProtocolName == "USBHub_MicrosoftWindowsUSBUSBHUB" OR ProtocolName == "USBPort_MicrosoftWindowsUSBUSBPORT"
-
 ```
 
 You can enter this filter text in the Netmon Filter Display pane. For more information on using filters in Netmon, see "USB Netmon Filters" in this [Case Study: Troubleshooting an Unknown USB Device by Using ETW and Netmon](case-study--troubleshooting-an-unknown-usb-device-by-using-etw-and-netmon.md).
@@ -75,7 +69,7 @@ To analyze the timing of USB events, you can look at the time difference between
     Description == "USBPort_MicrosoftWindowsUSBUSBPORT:Dispatch URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER" 
     OR Description == "USBPort_MicrosoftWindowsUSBUSBPORT:Complete URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER" 
     OR Description == "USBPort_MicrosoftWindowsUSBUSBPORT:Complete URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER with Data"
-    
+
     ```
 
     1.  You can choose the event IDs (descriptions) from the events that appear in the trace.

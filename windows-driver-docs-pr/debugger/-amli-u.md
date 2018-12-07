@@ -3,7 +3,6 @@ title: amli u
 description: The amli u extension unassembles AML code.
 ms.assetid: 0a8b160f-9aae-4ef0-a569-8e701de9679c
 keywords: ["amli u Windows Debugging"]
-ms.author: domars
 ms.date: 09/17/2018
 topic_type:
 - apiref
@@ -51,7 +50,7 @@ The disassembly display will continue until the end of the method is reached.
 
 **Note**   The standard [**u (Unassemble)**](u--unassemble-.md) command will not give proper results with AML code.
 
- 
+ 
 
 Here are some examples. To disassemble the object at address 0x80E5D701, use the following command:
 
@@ -71,9 +70,9 @@ The following command will disassemble the \_DCK method:
 kd> u \_sb.pci0.dock._dck
 ```
 
- 
+ 
 
- 
+ 
 
 
 

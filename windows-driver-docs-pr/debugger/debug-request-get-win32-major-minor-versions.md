@@ -9,7 +9,6 @@ api_name:
 - DEBUG_REQUEST_GET_WIN32_MAJOR_MINOR_VERSIONS
 api_type:
 - NA
-ms.author: domars
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -61,16 +60,16 @@ The following table lists the major and minor version numbers by operating syste
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="see_also"></span>See also
 
 
 [**Request**](request.md)
 
- 
+ 
 
- 
+ 
 
 
 

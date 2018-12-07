@@ -1,6 +1,5 @@
 ---
 title: Specifying a sensor icon
-author: windows-driver-content
 description: Specifying a sensor icon
 ms.assetid: fe4a204f-befb-45d4-ad95-03b9e788e375
 ms.date: 04/20/2017
@@ -22,7 +21,6 @@ For example, to specify the light sensor icon, you would add the following secti
 
 [DriverPropertiesSection]
 DeviceIcon,,,,"%SystemRoot%\system32\sensorscpl.dll,-1008"
-
 ```
 
 To specify a custom icon, replace the DLL path with the path of the DLL that contains your icon and replace the resource ID with the appropriate value.

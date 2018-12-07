@@ -1,6 +1,5 @@
 ---
 title: Required WIA Child Item Properties for Film Scanners
-author: windows-driver-content
 description: Required WIA Child Item Properties for Film Scanners
 ms.assetid: 3b12299a-0b01-492c-a79d-45ddc3c193bb
 ms.date: 04/20/2017
@@ -32,9 +31,9 @@ The WIA film scanner child item is required to support the following WIA propert
 
 [**WIA\_IPS\_YPOS**](https://msdn.microsoft.com/library/windows/hardware/ff552671)
 
- 
+ 
 
- 
+ 
 
 
 

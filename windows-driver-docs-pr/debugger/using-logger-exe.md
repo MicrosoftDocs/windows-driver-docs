@@ -3,7 +3,6 @@ title: Using Logger.exe
 description: Using Logger.exe
 ms.assetid: da2ec999-4529-49dc-855e-a7d3b15583f7
 keywords: ["Logger, logger.exe", "logger.exe", "Logger, stand-alone"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -69,9 +68,9 @@ The output file will always be placed in LogExts subdirectory of the desktop; th
 
 These limitations will not apply if you are running Logger through the debugger and Logexts.dll.
 
- 
+ 
 
- 
+ 
 
 
 

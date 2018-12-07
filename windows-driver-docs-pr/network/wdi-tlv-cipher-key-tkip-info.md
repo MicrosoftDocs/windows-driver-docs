@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_CIPHER_KEY_TKIP_INFO
-author: windows-driver-content
 description: WDI_TLV_CIPHER_KEY_TKIP_INFO is a TLV that contains TKIP information.
 ms.assetid: 330A93F5-43E7-4A4A-A6BD-EF276D6F09A1
 ms.date: 07/18/2017
@@ -32,7 +31,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 | [**WDI\_TLV\_CIPHER\_KEY\_TKIP\_KEY**](wdi-tlv-cipher-key-tkip-key.md) |                                |          | Specifies the TKIP key material. |
 | [**WDI\_TLV\_CIPHER\_KEY\_TKIP\_MIC**](wdi-tlv-cipher-key-tkip-mic.md) |                                |          | Specifies the TKIP MIC material. |
 
- 
+ 
 
 Requirements
 ------------
@@ -58,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

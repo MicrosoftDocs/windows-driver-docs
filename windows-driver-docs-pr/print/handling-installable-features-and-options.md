@@ -1,6 +1,5 @@
 ---
 title: Handling Installable Features and Options
-author: windows-driver-content
 description: Handling Installable Features and Options
 ms.assetid: b970808f-55bd-4a3a-9464-c9cd3567fa6f
 keywords:
@@ -100,9 +99,9 @@ You cannot use the \*Installable? attribute with optional features that require 
 
 Be sure to also specify any relevant [option constraints](option-constraints.md), as illustrated.
 
- 
+ 
 
- 
+ 
 
 
 

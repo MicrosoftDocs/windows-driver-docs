@@ -1,6 +1,5 @@
 ---
 title: System-Supplied Changer Drivers
-author: windows-driver-content
 description: System-Supplied Changer Drivers
 ms.assetid: 52f052c2-4780-45ce-b0dc-4a152e9b23f6
 keywords:
@@ -29,9 +28,9 @@ This section includes information about:
 
 For a discussion of vendor-supplied changer drivers, see [Vendor-Supplied Changer Drivers](vendor-supplied-changer-drivers.md).
 
- 
+ 
 
- 
+ 
 
 
 

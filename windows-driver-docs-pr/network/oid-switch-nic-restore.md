@@ -1,6 +1,5 @@
 ---
 title: OID_SWITCH_NIC_RESTORE
-author: windows-driver-content
 description: The protocol edge of the Hyper-V extensible switch issues an object identifier (OID) set request of OID_SWITCH_NIC_RESTORE to notify the extensible switch extension about run-time data that can be restored for an extensible switch port and its network adapter connection.
 ms.assetid: 252FB1D2-932F-4FB8-83D6-2690171D746D
 ms.date: 08/08/2017
@@ -27,7 +26,7 @@ If the extension owns the run-time data for an extensible switch port, it restor
 
     **Note**  The value of the **PortId** member of the [**NDIS\_SWITCH\_NIC\_SAVE\_STATE**](https://msdn.microsoft.com/library/windows/hardware/hh598216) structure may be different from the **PortId** value at the time that the run-time data was saved. This can occur if run-time data was saved during a Live Migration from one host to another. However, the configuration of the extensible switch port is retained during the Live Migration. This enables the extension to restore the run-time data to the extensible switch port by using the new **PortId** value.
 
-     
+     
 
 2.  The extension completes the OID set request with NDIS\_STATUS\_SUCCESS.
 
@@ -39,7 +38,7 @@ For more information about how to restore run-time data, see [Restoring Hyper-V 
 
 **Note**  If the extension fails the OID set request, the extensible switch will fail the entire restore operation. As a result, the extension should avoid failing the OID request if it is possible. For example, if the extension cannot allocate the resource necessary to restore the run-time data, it should fail the OID request if it cannot function properly without restoring the run-time data. However, if the extension can recover from the failure condition, it should not fail the OID set request.
 
- 
+ 
 
 ### Return Status Codes
 
@@ -68,7 +67,7 @@ If the extension completes the OID set request of OID\_SWITCH\_NIC\_RESTORE, it 
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -100,9 +99,9 @@ Requirements
 
 [**NdisFOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff561830)
 
- 
+ 
 
- 
+ 
 
 
 

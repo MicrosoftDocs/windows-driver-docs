@@ -46,9 +46,9 @@ The following is an example of a [**ModelIDList**](https://msdn.microsoft.com/li
 
 For more information about the format requirements of the **ModelID** XML element, see [**ModelID**](https://msdn.microsoft.com/library/windows/hardware/ff549295).
 
- 
+ 
 
- 
+ 
 
 
 

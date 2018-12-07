@@ -21,9 +21,9 @@ This section describes the send and receive operations for Hyper-V extensible sw
 <thead>
 <tr class="header">
 <th align="left">Operation</th>
-<th align="left">[Capturing Extensions](capturing-extensions.md)</th>
-<th align="left">[Filtering Extensions](filtering-extensions.md)</th>
-<th align="left">[Forwarding Extensions](forwarding-extensions.md)</th>
+<th align="left"><a href="capturing-extensions.md" data-raw-source="[Capturing Extensions](capturing-extensions.md)">Capturing Extensions</a></th>
+<th align="left"><a href="filtering-extensions.md" data-raw-source="[Filtering Extensions](filtering-extensions.md)">Filtering Extensions</a></th>
+<th align="left"><a href="forwarding-extensions.md" data-raw-source="[Forwarding Extensions](forwarding-extensions.md)">Forwarding Extensions</a></th>
 </tr>
 </thead>
 <tbody>
@@ -48,7 +48,7 @@ This section describes the send and receive operations for Hyper-V extensible sw
 </tbody>
 </table>
 
- 
+ 
 
 This section includes the following topics:
 
@@ -60,9 +60,9 @@ This section includes the following topics:
 
 For more information about the extensible switch data path, see [Hyper-V Extensible Switch Data Path](hyper-v-extensible-switch-data-path.md).
 
- 
+ 
 
- 
+ 
 
 
 

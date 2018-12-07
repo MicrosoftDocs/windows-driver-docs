@@ -14,16 +14,16 @@ In order to sign a driver, a certificate is required. You can create your own ce
 
 **Note**  A *driver package project* can package the output of other projects. If you build a driver package project, Microsoft Visual Studio will build the other projects on which it has dependencies. The driver package project has its own driver signing properties that are separate from any other dependent projects, and its driver signing properties apply *only* to the catalog (if any) produced by the driver package project. That is, the driver package project will not automatically add an embedded signature to driver binaries produced by other projects, as a different certificate may be used to sign the other driver projects, for example, a test certificate, and the result in such a case would be a driver package where the binaries are unintentionally signed with one certificate, while the package catalog is signed with a different certificate. This can result in performance degradation. For example, if a boot start driver binary's embedded signature is invalid, Windows cannot use certificate it was signed with to validate the binary. Instead, Windows must validate the binary against the catalog's signature, which would increase boot time.
 
- 
+ 
 
 This section describes how to use Visual Studio to sign a driver package.
 
 -   [Signing a Driver During Development and Testing](signing-a-driver-during-development-and-testing.md)
 -   [Signing a Driver for Public Release](signing-a-driver-for-public-release.md)
 
- 
+ 
 
- 
+ 
 
 
 

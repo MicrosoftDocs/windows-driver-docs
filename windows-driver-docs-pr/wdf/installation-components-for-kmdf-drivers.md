@@ -1,6 +1,5 @@
 ---
 title: Redistributable Framework Components
-author: windows-driver-content
 description: This topic describes the Microsoft-supplied redistributable framework updates that are included as part of the Windows Driver Kit (WDK) for Windows 8.1, and how to determine which ones to add to your driver package.
 ms.assetid: 63fbe66e-fa1b-4a70-a8ea-df4f3df9bad4
 keywords:
@@ -46,7 +45,7 @@ This directory contains the following files, for x86 and x64:
 ## Co-installer Naming and Versioning
 
 
-The co-installer is named **WdfCoInstaller***MMmmm***.dll**.
+The co-installer is named **WdfCoInstaller**<em>MMmmm</em>**.dll**.
 
 -   *MM* is the major version number.
 -   *mmm* is the minor version number.
@@ -57,9 +56,9 @@ The version of the co-installer that you include with your driver package must m
 
 Note that the framework library's file name includes only the major version number. For more information about library file names, see [Framework Library Versioning](framework-library-versioning.md).
 
- 
+ 
 
- 
+ 
 
 
 

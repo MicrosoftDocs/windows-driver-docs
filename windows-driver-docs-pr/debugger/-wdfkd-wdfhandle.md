@@ -3,7 +3,6 @@ title: wdfkd.wdfhandle
 description: The wdfkd.wdfhandle extension displays information about a specified framework object handle, such as the handle type, object context pointers, and the underlying framework object pointer.
 ms.assetid: 9365218e-2647-4e54-baba-8774d4ab3ae1
 keywords: ["wdfkd.wdfhandle Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -86,9 +85,9 @@ Child WDFHANDLEs of 0x7ca7b1c0:
 
 In the preceding example, the input handle refers to a WDFDEVICE object. This particular device object has five child objects--two WDFCMRESLIST objects, two WDFCHILDLIST objects, and one WDFIOTARGET object.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -23,9 +23,9 @@ The roles of these two layers in power management are discussed in the following
 -   [Bluetooth Core Driver Layer and Supported Power Transitions](bluetooth-core-driver-layer-and-supported-power-transitions.md)
 -   [Serial Bus Driver Layer](serial-bus-driver-layer.md)
 
- 
+ 
 
- 
+ 
 
 
 

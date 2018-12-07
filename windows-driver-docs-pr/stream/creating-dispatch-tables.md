@@ -1,6 +1,5 @@
 ---
 title: Creating Dispatch Tables
-author: windows-driver-content
 description: Creating Dispatch Tables
 ms.assetid: 0771aeac-68b2-4dec-8887-a0b313899ce8
 keywords:
@@ -58,9 +57,9 @@ AntennaPinDispatch =
 };
 ```
 
- 
+ 
 
- 
+ 
 
 
 

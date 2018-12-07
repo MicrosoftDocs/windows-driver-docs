@@ -1,6 +1,5 @@
 ---
 title: Configuration Manager Callback
-author: windows-driver-content
 description: Configuration Manager Callback
 ms.assetid: a8d33bed-3a06-4d61-be42-b9ae195b79f9
 keywords: ["callbacks WDK joysticks", "configuration manager callbacks WDK joysticks"]
@@ -30,9 +29,9 @@ Given the preceding information, driver is initialized properly either when the 
 
 Another issue is that all configuration manager callbacks for currently serviced joystick devices are sent to all loaded minidrivers. However, you can use the *dnToDevNode* parameter to look up the device identifier, and you can check this against the devices that this driver can handle.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -17,7 +17,7 @@ Taking advantage of the Visual Studio development environment, the WDK provides 
 
 **Note**  If you run into difficulties setting up the test computer, see [Troubleshooting Configuration of Driver Deployment, Testing and Debugging](troubleshooting-configuration-of-driver-deployment--testing-and-debugging.md).
 
- 
+ 
 
 ## <span id="Setting_deployment_properties_for_your_driver_solution"></span><span id="setting_deployment_properties_for_your_driver_solution"></span><span id="SETTING_DEPLOYMENT_PROPERTIES_FOR_YOUR_DRIVER_SOLUTION"></span>Setting deployment properties for your driver solution
 

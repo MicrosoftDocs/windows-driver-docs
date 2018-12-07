@@ -1,6 +1,5 @@
 ---
 title: HS_MAC_ADDRESS structure
-author: windows-driver-content
 description: The HS_MAC_ADDRESS structure contains the host Media Access Control (MAC) address.
 ms.assetid: 2d632ed4-4522-48ae-b23d-927517185d73
 keywords: 
@@ -48,9 +47,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

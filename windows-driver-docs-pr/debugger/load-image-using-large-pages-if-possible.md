@@ -3,7 +3,6 @@ title: Load image using large pages if possible
 description: Load image using large pages if possible
 ms.assetid: 7f75b5bd-cc25-4f09-9d60-55b86969d16b
 keywords: ["Load image using large pages if possible (global flag)"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -43,15 +42,15 @@ This setting is most helpful for large executable files, because it significantl
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
 This setting is not technically a global flag, because its value is stored in a separate registry entry, not as a value of the GlobalFlag registry entry. As a result, you cannot set it by using a hexadecimal value, and when you select this setting for an image file, it appears in the **Other settings** field of the display.
 
- 
+ 
 
- 
+ 
 
 
 

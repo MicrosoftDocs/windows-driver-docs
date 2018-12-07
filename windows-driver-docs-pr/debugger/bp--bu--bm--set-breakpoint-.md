@@ -3,7 +3,6 @@ title: bp, bu, bm (Set Breakpoint)
 description: The bp, bu, and bm commands set one or more software breakpoints. You can combine locations, conditions, and options to set different kinds of software breakpoints.
 ms.assetid: 77d095fe-06d1-4842-ad49-8420ab4d5d72
 keywords: ["bp, bu, bm (Set Breakpoint) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -129,7 +128,7 @@ Specifies a pattern. The debugger tries to match this pattern to existing symbol
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -209,9 +208,9 @@ bu1 @!"myprog!openFilter";
 bp2 0x00421600 ;
 ```
 
- 
+ 
 
- 
+ 
 
 
 

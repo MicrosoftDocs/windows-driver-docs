@@ -1,6 +1,5 @@
 ---
 title: TrueGray
-author: windows-driver-content
 description: TrueGray
 ms.assetid: d6fef790-79d9-4ea7-8e1d-bca8837108de
 keywords:
@@ -38,17 +37,17 @@ The TrueGray feature uses a private [*PPD*](https://msdn.microsoft.com/library/w
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>*<strong>ADTrueGray</strong>: True</p></td>
+<td><p><em><strong>ADTrueGray</strong>: True</p></td>
 <td><p>The TrueGray feature is enabled by default for this printer.</p></td>
 </tr>
 <tr class="even">
-<td><p>*<strong>ADTrueGray</strong>: False</p></td>
+<td><p></em><strong>ADTrueGray</strong>: False</p></td>
 <td><p>The TrueGray feature is disabled by default for this printer.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 When the user interface indicates that the TrueGray feature is enabled, the driver detects RGB colors for which R = G = B, and one of the following conditions is true:
 
@@ -60,9 +59,9 @@ When the user interface indicates that the TrueGray feature is enabled, the driv
 
 No attempt is made to detect gray in CMYK colors. This is the color space normally used when ICM color processing is carried out on the host.
 
- 
+ 
 
- 
+ 
 
 
 

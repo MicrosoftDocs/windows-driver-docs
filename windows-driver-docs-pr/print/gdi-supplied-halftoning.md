@@ -1,6 +1,5 @@
 ---
 title: GDI-Supplied Halftoning
-author: windows-driver-content
 description: GDI-Supplied Halftoning
 ms.assetid: c7f3d148-4620-4060-bbf8-253e9e35c397
 keywords:
@@ -27,9 +26,9 @@ When using GDI-supplied halftoning capabilities, you can provide [minidriver-sup
 
 For more information about color formats, see [Handling Color Formats](handling-color-formats.md).
 
- 
+ 
 
- 
+ 
 
 
 

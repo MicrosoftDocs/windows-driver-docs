@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_BITMAP_PATTERN_AND_MASK
-author: windows-driver-content
 description: WDI_TLV_BITMAP_PATTERN_AND_MASK is an unused TLV.
 ms.assetid: 665529FA-7BAF-4700-86EF-ADA7D8781423
 ms.date: 07/18/2017
@@ -38,9 +37,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

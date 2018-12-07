@@ -3,7 +3,6 @@ title: ndiskd.nbl
 description: The ndiskd.nbl extension displays information about a NET_BUFFER_LIST (NBL) structure.
 ms.assetid: 1806ac7c-b438-4c28-bab0-1b65dba651ea
 keywords: ["ndiskd.nbl Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -115,9 +114,9 @@ NET_BUFFER ffffdf8014952610
 
 [**!ndiskd.nb**](-ndiskd-nb.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: OID_SRIOV_VF_SERIAL_NUMBER
-author: windows-driver-content
 description: An overlying driver issues an object identifier (OID) query request of OID_SRIOV_VF_SERIAL_NUMBER to determine the serial number of the PCI Express (PCIe) Virtual Function (VF) network adapter.
 ms.assetid: C4D04C96-94FA-4E01-839C-A9C5026D7AE5
 ms.date: 08/08/2017
@@ -49,7 +48,7 @@ When NDIS handles the OID\_SRIOV\_VF\_SERIAL\_NUMBER request, it returns one of 
 </tr>
 <tr class="odd">
 <td><p>NDIS_STATUS_INVALID_LENGTH</p></td>
-<td><p>The information buffer was too short. NDIS sets the <strong>DATA.QUERY_INFORMATION.BytesNeeded</strong> member in the [<strong>NDIS_OID_REQUEST</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure to the minimum buffer size that is required.</p></td>
+<td><p>The information buffer was too short. NDIS sets the <strong>DATA.QUERY_INFORMATION.BytesNeeded</strong> member in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710" data-raw-source="[&lt;strong&gt;NDIS_OID_REQUEST&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566710)"><strong>NDIS_OID_REQUEST</strong></a> structure to the minimum buffer size that is required.</p></td>
 </tr>
 <tr class="even">
 <td><p>NDIS_STATUS_FAILURE</p></td>
@@ -58,7 +57,7 @@ When NDIS handles the OID\_SRIOV\_VF\_SERIAL\_NUMBER request, it returns one of 
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -90,9 +89,9 @@ Requirements
 
 [OID\_NIC\_SWITCH\_ALLOCATE\_VF](oid-nic-switch-allocate-vf.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Single Binary Opt-In POOL_NX_OPTIN
-author: windows-driver-content
 description: To build a single driver binary that runs both in Windows 8 and in earlier versions of Windows, use the POOL_NX_OPTIN opt-in mechanism.
 ms.assetid: BE9D3C85-0212-4206-A59B-4D53FB842C39
 ms.localizationpriority: medium
@@ -38,9 +37,9 @@ You can use the POOL\_NX\_OPTIN opt-in mechanism for a .lib project, but project
 
 `ExInitializeDriverRuntime(DrvRtPoolNxOptIn);`
 
- 
+ 
 
- 
+ 
 
 
 

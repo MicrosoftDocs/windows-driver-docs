@@ -35,9 +35,9 @@ The KSPROPSETID\_BdaLNBInfo property set communicates information about a satell
 
 [**KSPROPERTY\_BDA\_RF\_TUNER\_FREQUENCY**](ksproperty-bda-rf-tuner-frequency.md)
 
- 
+ 
 
- 
+ 
 
 
 

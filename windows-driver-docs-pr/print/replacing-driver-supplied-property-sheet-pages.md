@@ -1,6 +1,5 @@
 ---
 title: Replacing Driver-Supplied Property Sheet Pages
-author: windows-driver-content
 description: Replacing Driver-Supplied Property Sheet Pages
 ms.assetid: b7f79841-f82c-4a60-9c2f-58772a65a5eb
 keywords:
@@ -43,9 +42,9 @@ For **IPrintCoreUI2::EnumConstrainedOptions**, **IPrintCoreUI2::SetOptions**, an
 
 For [**IPrintCoreUI2::GetOptions**](https://msdn.microsoft.com/library/windows/hardware/ff553069), both document-sticky and printer-sticky features are supported in document-sticky mode (that is, when [**IPrintOemUI::DocumentPropertySheets**](https://msdn.microsoft.com/library/windows/hardware/ff554173) or its property sheet callback routine are running), but only printer-sticky features are supported in printer-sticky mode (when [**IPrintOemUI::DevicePropertySheets**](https://msdn.microsoft.com/library/windows/hardware/ff554165) or its property sheet callback routine are running).
 
- 
+ 
 
- 
+ 
 
 
 

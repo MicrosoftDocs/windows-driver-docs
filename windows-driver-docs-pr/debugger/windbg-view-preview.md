@@ -1,7 +1,6 @@
 ---
 title: WinDbg Preview - View Menu 
 description: This section describes how work with the view menu.
-ms.author: domars
 ms.date: 08/09/2017
 ms.localizationpriority: medium
 ---
@@ -75,9 +74,9 @@ Use this function to reset the debugger windows to their default positions.
 
 [Debugging Using WinDbg Preview](debugging-using-windbg-preview.md)
 
- 
+ 
 
- 
+ 
 
 
 

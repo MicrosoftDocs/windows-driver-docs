@@ -1,6 +1,5 @@
 ---
 title: Synchronous I/O Programming
-author: windows-driver-content
 description: Synchronous I/O Programming
 ms.assetid: ef021dd2-bd1d-4fb0-853f-014c62bda76b
 ms.localizationpriority: medium
@@ -14,11 +13,11 @@ Synchronous programming simply waits for a call to return. This is fast and effi
 
 **Note**  For driver developers using Microsoft Vista, this is not as serious a problem. For more information about synchronous programming in Vista, see [Restricting Waits in Vista](restricting-waits-in-vista.md).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

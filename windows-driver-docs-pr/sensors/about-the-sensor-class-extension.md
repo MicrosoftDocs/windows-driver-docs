@@ -1,6 +1,5 @@
 ---
 title: About the Sensor Class Extension
-author: windows-driver-content
 description: About the Sensor Class Extension
 ms.assetid: 4b55e5fe-2947-4511-ba2d-479d5fd83ebe
 ms.date: 07/20/2018
@@ -16,9 +15,9 @@ To make it easier to write a device driver that exposes a sensor to Windows (and
 
 -   Provides a standard way to retrieve data from the driver and to raise event notifications through the API layers.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,7 +2,6 @@
 title: Setting Up the Web Site
 description: Setting Up the Web Site
 ms.assetid: 9c719557-bca0-4c9c-9208-70e106d976f9
-ms.author: domars
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -42,9 +41,9 @@ Begin by selecting the directory in which your indexed source resides. In our ex
 
 The source directory can now be used for debugging by another computer with a source path of srv\*\\\\SrcMachineName\\source.
 
- 
+ 
 
- 
+ 
 
 
 

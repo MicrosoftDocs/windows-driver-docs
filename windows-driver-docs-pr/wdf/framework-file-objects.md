@@ -1,6 +1,5 @@
 ---
 title: Framework File Objects
-author: windows-driver-content
 description: Framework File Objects
 ms.assetid: 93ec5dd7-8ef0-4cea-9253-ea5d7869d4b8
 keywords:
@@ -50,7 +49,7 @@ If your driver does not provide an [*EvtDeviceFileCreate*](https://msdn.microsof
 
 **Note**   If your function driver does not provide any [device interfaces](using-device-interfaces.md) that applications can use to access the driver's devices, the driver must provide an [*EvtDeviceFileCreate*](https://msdn.microsoft.com/library/windows/hardware/ff540868) callback function that completes all file creation requests with a status value for which NT\_SUCCESS(*status*) equals **FALSE**. Otherwise, a malicious application might attempt to access a device by using the name of the device's physical device object (PDO). (All PDOs have [names](controlling-device-access-in-kmdf-drivers.md#naming-device-objects-only-when-necessary).)
 
- 
+ 
 
 If a driver [forwards](forwarding-i-o-requests.md) a creation request to an I/O target, the driver must not subsequently [complete](completing-i-o-requests.md) the request with a failure status value unless the driver receives a failure status value from the I/O target. Otherwise, the lower drivers will not be notified that the creation request failed and might attempt to operate as if the file is open.
 
@@ -94,9 +93,9 @@ When an application or another driver closes a file, the framework receives a cl
 
 The driver's [*EvtFileCleanup*](https://msdn.microsoft.com/library/windows/hardware/ff541700) and [*EvtFileClose*](https://msdn.microsoft.com/library/windows/hardware/ff541702) callback functions receive a handle to the framework file object. The driver can call [**WdfFileObjectGetDevice**](https://msdn.microsoft.com/library/windows/hardware/ff547302) to determine which framework device object is associated with the framework file object.
 
- 
+ 
 
- 
+ 
 
 
 

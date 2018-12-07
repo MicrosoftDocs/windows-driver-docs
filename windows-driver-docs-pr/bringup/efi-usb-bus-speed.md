@@ -1,6 +1,5 @@
 ---
 title: EFI_USB_BUS_SPEED
-author: windows-driver-content
 description: EFI_USB_BUS_SPEED
 ms.assetid: 2888cff6-db12-47ea-866f-de218e2b08e5
 ms.date: 04/20/2017
@@ -50,9 +49,9 @@ Super speed.
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: handle
 description: The handle extension displays information about a handle or handles that one or all processes in the target system own.
 ms.assetid: ae3b7e7e-cdc1-4b83-88d7-63fe207044e3
 keywords: ["handle", "handle, handle extension", "handle Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -105,7 +104,7 @@ Ntsdexts.dll</td>
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -220,9 +219,9 @@ Object: fffff8a000633f00  Type: (fffffa80035fef20) Section
 ...
 ```
 
- 
+ 
 
- 
+ 
 
 
 

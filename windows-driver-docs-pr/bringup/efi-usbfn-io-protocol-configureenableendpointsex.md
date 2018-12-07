@@ -1,6 +1,5 @@
 ---
 title: EFI_USBFN_IO_PROTOCOL.ConfigureEnableEndpointsEx
-author: windows-driver-content
 description: EFI_USBFN_IO_PROTOCOL.ConfigureEnableEndpointsEx
 ms.assetid: 54DE0D7F-788F-49C3-AF5C-7EDAA0D09D20
 ms.date: 04/20/2017
@@ -61,7 +60,7 @@ The function returns the following values:
 </tbody>
 </table>
 
- 
+ 
 
 ## Remarks
 
@@ -77,9 +76,9 @@ This function must ignore the *bMaxPacketSize0* field of the Standard Device Des
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
 

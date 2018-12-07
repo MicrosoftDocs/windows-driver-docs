@@ -1,6 +1,5 @@
 ---
 title: Object Directories
-author: windows-driver-content
 description: Object Directories
 ms.assetid: b0e0d077-6736-4a54-b1eb-a30962442942
 keywords: ["object directories WDK kernel", "named objects WDK kernel", "directories WDK objects", "top-level object directories WDK kernel"]
@@ -40,9 +39,9 @@ The system creates other top-level directories, but they are reserved for system
 
 Drivers can create new object directories by calling the [**ZwCreateDirectoryObject**](https://msdn.microsoft.com/library/windows/hardware/ff566421) routine.
 
- 
+ 
 
- 
+ 
 
 
 

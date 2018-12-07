@@ -1,6 +1,5 @@
 ---
 title: Windows 2000 Kernel Streaming Model Design Guide
-author: windows-driver-content
 description: Windows 2000 Kernel Streaming Model Design Guide
 ms.assetid: 7cc080ad-ce4a-4a08-917a-d9e4a002f4fa
 keywords:
@@ -29,9 +28,9 @@ The following sections describe the Windows 2000 Kernel Streaming Model:
 
 [Kernel Streaming](kernel-streaming.md)
 
- 
+ 
 
- 
+ 
 
 
 

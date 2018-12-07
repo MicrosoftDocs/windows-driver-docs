@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_CONNECT_BSS_ENTRY
-author: windows-driver-content
 description: WDI_TLV_CONNECT_BSS_ENTRY is a TLV that contains a list of candidate connect BSS entries.
 ms.assetid: 0D74B2DE-9224-4FDF-8EA8-B22CEC0B5F26
 ms.date: 07/18/2017
@@ -41,7 +40,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 | [**WDI\_TLV\_FT\_REASSOC\_PARAMETERS**](wdi-tlv-ft-reassoc-parameters.md)                  |                                | X        | The fast transition parameters (MDIE, R0KH-ID, PMKR0Name, SNonce). This is only present for Fast Transition (not during initial mobility domain association). |
 | [**WDI\_TLV\_BSS\_SELECTION\_PARAMETERS**](wdi-tlv-bss-selection-parameters.md)            |                                | X        | [**WDI\_BSS\_SELECTION\_FLAGS**](https://msdn.microsoft.com/library/windows/hardware/mt297629) that provide information used by the host for BSS selection.                               |
 
- 
+ 
 
 Requirements
 ------------
@@ -67,9 +66,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

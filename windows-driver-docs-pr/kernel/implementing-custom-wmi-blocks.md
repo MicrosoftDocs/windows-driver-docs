@@ -1,6 +1,5 @@
 ---
 title: Implementing Custom WMI Blocks
-author: windows-driver-content
 description: Implementing Custom WMI Blocks
 ms.assetid: c596924f-9f82-4ca7-b0f0-afc596d7bf99
 keywords: ["WMI WDK kernel , event blocks", "event blocks WDK WMI", "data blocks WDK WMI", "WMI WDK kernel , data blocks", "blocks WDK WMI", "custom blocks WDK WMI"]
@@ -52,9 +51,9 @@ To improve performance and ease of use of custom WMI data blocks, consider the f
 
 WMI does not support versioning, so a driver writer must define a new MOF class and generate a new GUID to revise an existing custom block.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Iasphelp get\_SNMPSupported method
-author: windows-driver-content
 description: The SNMPSupported property enables an ASP Web page to determine if SNMP is being used with a printer.
 MS-HAID:
 - 'webfnc\_2128dc9d-a113-4061-a6c9-3ebe2a304dd5.xml'
@@ -62,7 +61,7 @@ Win32 error codes can also be returned.
 </tr>
 <tr class="even">
 <td><strong>E_HANDLE</strong></td>
-<td><p>The [<strong>Iasphelp::Open</strong>](iasphelp-open.md) method has not been called.</p></td>
+<td><p>The <a href="iasphelp-open.md" data-raw-source="[&lt;strong&gt;Iasphelp::Open&lt;/strong&gt;](iasphelp-open.md)"><strong>Iasphelp::Open</strong></a> method has not been called.</p></td>
 </tr>
 <tr class="odd">
 <td><strong>E_OUTOFMEMORY</strong></td>

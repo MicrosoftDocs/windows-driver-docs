@@ -18,7 +18,7 @@ The [Virtual Machine Queue Architecture](virtual-machine-queue-architecture.md) 
 
 **Note**  Be sure to study the [NDIS Virtual Miniport Driver sample](http://go.microsoft.com/fwlink/p/?LinkId=617918), especially the vmq.c and vmq.h source files.
 
- 
+ 
 
 The VMQ interface supports:
 
@@ -33,9 +33,9 @@ This section includes the following topics:
 -   [Virtual Machine Queue Architecture](virtual-machine-queue-architecture.md)
 -   [Writing VMQ Drivers](writing-vmq-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

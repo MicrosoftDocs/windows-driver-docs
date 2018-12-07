@@ -3,7 +3,6 @@ title: vadump
 description: The vadump extension displays all virtual memory ranges and their corresponding protection information.
 ms.assetid: b13aa852-7333-41fc-ad66-4386040522d8
 keywords: ["vadump Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -48,7 +47,7 @@ Causes the display to include information about each original allocation region 
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -102,9 +101,9 @@ Type:              00020000  MEM_PRIVATE
 
 When **-v** is used, the AllocationProtect line shows the default protection that the entire region was created with. The Protect line shows the actual protection for this specific address.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,7 +1,6 @@
 ---
 Description: In this topic, you will learn about how a WinUSB device is recognized in Windows 8.
 title: WinUSB Device
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -78,7 +77,7 @@ In Device Manager, you will see your device appear under **USB Universal Serial 
 
 *-Eliyas Yakub, Microsoft Windows USB Core Team*
 
- 
+ 
 
 Note that the "USBDevice" class is not limited to WinUSB. If you have a custom driver for your device, you can use the "USBDevice" setup class in the custom INF.
 
@@ -143,7 +142,7 @@ The extended properties OS feature descriptor includes a header section that is 
 </tbody>
 </table>
 
- 
+ 
 
 During device enumeration, The USB driver stack then retrieves the **DeviceInterfaceGUID** value from the extended properties OS feature descriptor and registers the device in the device's hardware key. An application can retrieve the value by using **SetupDiXxx** APIs (See [**SetupDiOpenDevRegKey**](https://msdn.microsoft.com/library/windows/hardware/ff552079)). For more information, see [How to Access a USB Device by Using WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md).
 
@@ -163,7 +162,7 @@ For information about power management features of WinUSB, see [WinUSB Power Man
 | UserSetDeviceIdleEnabled | This value is set to 1 to allow the user to control the ability of the device to enable or disable USB selective suspend. A check box **Allow the computer to turn off this device to save power** on the device **Power Management** property page and the user can check or uncheck the box to enable or disable USB selective suspend. |
 | SystemWakeEnabled        | This value is set to 1 to allow the user to control the ability of the device to wake the system from a low-power state. When enabled, the **Allow this device to wake the computer** check box appears in the device power management property page. The user can check or uncheck the box to enable or disable USB system wake.         |
 
- 
+ 
 
 For example, to enable selective suspend on the device, add a custom property section that sets the **bPropertyName** field to a Unicode string, "DeviceIdleEnabled" and **wPropertyNameLength** to 36 bytes. Set the **bPropertyData** field to "0x00000001". The property values are stored as little-endian 32-bit integers.
 

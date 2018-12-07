@@ -3,7 +3,6 @@ title: bthkd.sdpstream
 description: The bthkd.sdpstream command displays the contents of a SDP stream.
 ms.assetid: 238A10D2-1DAB-4826-AE60-1FD69B0ABABC
 keywords: ["bthkd.sdpstream Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -42,9 +41,9 @@ Bthkd.dll
 
 [Bluetooth Extensions (Bthkd.dll)](bluetooh-extensions--bthkd-dll-.md)
 
- 
+ 
 
- 
+ 
 
 
 

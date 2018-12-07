@@ -3,7 +3,6 @@ title: chkimg
 description: The chkimg extension detects corruption in the images of executable files by comparing them to the copy on a symbol store or other file repository.
 ms.assetid: 8079676c-1138-4c60-95df-62fd270fee62
 keywords: ["executable files and paths, corruption", "chkimg Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -120,7 +119,7 @@ Specifies the contents of the log file. *LogOptions* is a string that consists o
 </tbody>
 </table>
 
- 
+ 
 
 *LogOptions* can also include some, or none, of the following additional options.
 
@@ -147,7 +146,7 @@ Specifies the contents of the log file. *LogOptions* is a string that consists o
 </tbody>
 </table>
 
- 
+ 
 
 For example, if *LogOptions* is **rSewo**, each line of the log file contains the relative address and section name of the mismatch location and the expected and actual values at that location. This option also causes any previous file to be overwritten. You can use the **-mmw** switch multiple times if you want to create several log files that have different options. You can create up to 10 log files at the same time.
 
@@ -175,7 +174,7 @@ Specifies the module to check. *Module* can be the name of the module, the start
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -194,7 +193,7 @@ All sections of the file are compared, except for sections that are discardable,
 
 **Note**   If you use the **-f** option to fix image mismatches, **!chkimg** fixes only those mismatches that it considers to be errors. For example, **!chkimg** does not change an 0x90 byte to an 0xF0 byte unless you include **-noplock**.
 
- 
+ 
 
 When you include the **-d** option, **!chkimg** displays a summary of all mismatched areas while the scan is occurring. Each mismatch is displayed on two lines. The first line includes the start of the range, the end of the range, the size of the range, the symbol name and offset that corresponds to the start of the range, and the number of bytes since the last error (in parentheses). The second line is enclosed in brackets and includes the hexadecimal byte values that were expected, a colon, and then the hexadecimal byte values that were actually encountered in the image. If the range is longer than 8 bytes, only the first 8 bytes are shown before the colon and after the colon. The following example shows this situation.
 
@@ -278,9 +277,9 @@ bf920e57 2bf0             sub     esi,eax
 bf920e59 d1fe             sar     esi,1
 ```
 
- 
+ 
 
- 
+ 
 
 
 

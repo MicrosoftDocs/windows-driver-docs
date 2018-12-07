@@ -33,15 +33,17 @@ You can specify the icon that appears for a device in Windows. Icons must have a
 2.  Do one of the following:
 
     -   If you have an icon for your device, drop the file from your computer onto the black **Drop Device Icon Here** area. Or, you can click **Browse** and select the icon file.
-        **Note**  If you're running the device metadata authoring tool as an administrator, you must use the **Browse** button to select the icon file.
+        **Note**  If you're running the device metadata authoring tool as an administrator, you must use the **Browse** button to select the icon file.
 
-         
 
-    -   If you don't have an icon of your own, click **Next**. Windows assigns a generic icon based on the primary category that you specify in the **Categories** tab.
 
- 
 
- 
+-   If you don't have an icon of your own, click **Next**. Windows assigns a generic icon based on the primary category that you specify in the **Categories** tab.
+
+
+
+
+
 
 
 

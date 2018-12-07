@@ -3,7 +3,6 @@ title: Two Firewalls
 description: Two Firewalls
 ms.assetid: e6192cf8-02a4-4dbe-8ed7-a64f8efc24f6
 keywords: ["remote debugging, two firewalls", "firewalls and remote debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -66,9 +65,9 @@ windbg -remote npipe:server=\\BOXC,pipe=randomname
 
 Notice that the password must be supplied by the first non-repeater in the chain (the smart client on \\\\BOXC), not by the final debugger in the chain.
 
- 
+ 
 
- 
+ 
 
 
 

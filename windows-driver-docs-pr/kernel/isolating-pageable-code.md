@@ -1,6 +1,5 @@
 ---
 title: Isolating Pageable Code
-author: windows-driver-content
 description: Isolating Pageable Code
 ms.assetid: 86189154-606a-4df8-b3a9-040bbaffaa2f
 keywords: ["pageable drivers WDK kernel , isolating code", "isolating pageable code", "spin locks WDK memory"]
@@ -65,9 +64,9 @@ The preceding routine could be made pageable (saving about 160 bytes) by moving 
 
 In addition, remember that driver code must not be marked as pageable if it calls any **Ke*Xxx*** support routines, such as [**KeReleaseMutex**](https://msdn.microsoft.com/library/windows/hardware/ff553140) or [**KeReleaseSemaphore**](https://msdn.microsoft.com/library/windows/hardware/ff553143), in which the *Wait* parameter is set to **TRUE**. Such a call returns with IRQL at DISPATCH\_LEVEL.
 
- 
+ 
 
- 
+ 
 
 
 

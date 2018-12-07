@@ -3,7 +3,6 @@ title: amli bp
 description: The amli bp extension places a breakpoint in AML code.
 ms.assetid: 830df6b8-835c-4485-a28a-e9a028f166f5
 keywords: ["amli bp Windows Debugging"]
-ms.author: domars
 ms.date: 09/17/2018
 topic_type:
 - apiref
@@ -53,9 +52,9 @@ Here is an example. The following command will set a breakpoint on the \_DCK met
 kd> !amli bp \_sb.pci0.dock._dck
 ```
 
- 
+ 
 
- 
+ 
 
 
 

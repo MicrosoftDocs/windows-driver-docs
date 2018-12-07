@@ -3,7 +3,6 @@ title: .exr (Display Exception Record)
 description: The .exr command displays the contents of an exception record.
 ms.assetid: 786d7ee0-45d7-489c-b53b-28349ea10e36
 keywords: ["Display Exception Record (.exr) command", "exception record", ".exr (Display Exception Record) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -53,7 +52,7 @@ Specifies the address of the exception record. If you specify **-1** as the addr
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -64,9 +63,9 @@ You can usually obtain the *Address* by using the [**!pcr**](-pcr.md) extension.
 
 The **.exr** command is often used to debug bug check 0x1E. For more information and an example, see [**Bug Check 0x1E**](bug-check-0x1e--kmode-exception-not-handled.md) (KMODE\_EXCEPTION\_NOT\_HANDLED).
 
- 
+ 
 
- 
+ 
 
 
 

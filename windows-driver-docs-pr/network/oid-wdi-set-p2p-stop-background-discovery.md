@@ -1,6 +1,5 @@
 ---
 title: OID_WDI_SET_P2P_STOP_BACKGROUND_DISCOVERY
-author: windows-driver-content
 description: OID_WDI_SET_P2P_STOP_BACKGROUND_DISCOVERY instructs the adapter to cancel the background discovery and stop any active scans in progress.
 ms.assetid: 485E795A-88BB-4A04-8B07-1B78593CB92F
 ms.date: 07/18/2017
@@ -18,7 +17,7 @@ OID\_WDI\_SET\_P2P\_STOP\_BACKGROUND\_DISCOVERY instructs the adapter to cancel 
 |-------|--------------------------|---------------------------------|---------------------------------|
 | Port  | No                       | 1                               | No                              |
 
- 
+ 
 
 ## Set property parameters
 
@@ -52,9 +51,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: D (Windows Debugger Glossary)
 description: Glossary page - D
 Robots: noindex, nofollow
 ms.assetid: e4d53375-c82e-493b-9ccb-444c211fbc79
-ms.author: domars
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -77,9 +76,9 @@ See crash dump file.
 <span id="dump_target"></span><span id="DUMP_TARGET"></span>**dump target**  
 A crash dump file that is being debugged.
 
- 
+ 
 
- 
+ 
 
 
 

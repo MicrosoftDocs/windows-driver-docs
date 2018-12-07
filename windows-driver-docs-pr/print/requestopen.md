@@ -1,6 +1,5 @@
 ---
 title: requestOpen element
-author: windows-driver-content
 description: The requestOpen element is used to open an event notification message on the client computer.
 ms.assetid: c1797295-9aca-4986-bd9d-482bb7049942
 keywords: ["requestOpen element Print Devices"]
@@ -51,17 +50,17 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>balloonUI</strong>](balloonui.md)</p></td>
+<td><p><a href="balloonui.md" data-raw-source="[&lt;strong&gt;balloonUI&lt;/strong&gt;](balloonui.md)"><strong>balloonUI</strong></a></p></td>
 <td><p></p>
 <p>An optional element that is used to display a message balloon on the client computer.</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>customUI</strong>](customui.md)</p></td>
+<td><p><a href="customui.md" data-raw-source="[&lt;strong&gt;customUI&lt;/strong&gt;](customui.md)"><strong>customUI</strong></a></p></td>
 <td><p></p>
 <p>An optional element that specifies a custom user interface to be displayed on a client computer.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>messageBoxUI</strong>](messageboxui.md)</p></td>
+<td><p><a href="messageboxui.md" data-raw-source="[&lt;strong&gt;messageBoxUI&lt;/strong&gt;](messageboxui.md)"><strong>messageBoxUI</strong></a></p></td>
 <td><p></p>
 <p>An optional element that is used to display a message box on the client computer.</p></td>
 </tr>
@@ -84,7 +83,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>asyncPrintUIRequest</strong>](asyncprintuirequest.md)</p></td>
+<td><p><a href="asyncprintuirequest.md" data-raw-source="[&lt;strong&gt;asyncPrintUIRequest&lt;/strong&gt;](asyncprintuirequest.md)"><strong>asyncPrintUIRequest</strong></a></p></td>
 <td><p></p>
 <p>A required element that describes a request issued by the printer driver to create a message on a client computer.</p></td>
 </tr>

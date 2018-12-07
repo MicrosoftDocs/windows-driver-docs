@@ -3,7 +3,6 @@ title: Bug Check 0x6D SESSION1_INITIALIZATION_FAILED
 description: The SESSION1_INITIALIZATION_FAILED bug check has a value of 0x0000006D. This bug check indicates that the initialization of the Microsoft Windows operating system failed.
 ms.assetid: e4f9280b-1cdd-4536-88bf-b216cc70129f
 keywords: ["Bug Check 0x6D SESSION1_INITIALIZATION_FAILED", "SESSION1_INITIALIZATION_FAILED"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -55,11 +54,11 @@ The SESSION1\_INITIALIZATION\_FAILED bug check has a value of 0x0000006D. This b
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

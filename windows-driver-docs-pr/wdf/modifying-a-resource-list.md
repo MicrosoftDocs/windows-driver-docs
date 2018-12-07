@@ -1,6 +1,5 @@
 ---
 title: Modifying a Resource List
-author: windows-driver-content
 description: Modifying a Resource List
 ms.assetid: 571b2990-5627-434e-b8fc-d2564188f544
 keywords:
@@ -26,9 +25,9 @@ To modify the resource descriptors in a device's resource list, a driver should 
 
 If the driver removes a resource, it must remove it from both the [raw and translated resource lists](raw-and-translated-resources.md).
 
- 
+ 
 
- 
+ 
 
 
 

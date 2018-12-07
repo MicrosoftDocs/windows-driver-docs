@@ -32,28 +32,28 @@ The following table lists the obsolete kernel-mode driver-support function names
 <tbody>
 <tr class="odd">
 <td align="left"><p>WIN95COMPAT_ReadPortUChar</p></td>
-<td align="left"><p>[<strong>READ_PORT_UCHAR</strong>](https://msdn.microsoft.com/library/windows/hardware/ff560797)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff560797" data-raw-source="[&lt;strong&gt;READ_PORT_UCHAR&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff560797)"><strong>READ_PORT_UCHAR</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>WIN95COMPAT_WritePortUChar</p></td>
-<td align="left"><p>[<strong>WRITE_PORT_UCHAR</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566386)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566386" data-raw-source="[&lt;strong&gt;WRITE_PORT_UCHAR&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566386)"><strong>WRITE_PORT_UCHAR</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>WIN95COMPAT_ReadPortUShort</p></td>
-<td align="left"><p>[<strong>READ_PORT_USHORT</strong>](https://msdn.microsoft.com/library/windows/hardware/ff560806)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff560806" data-raw-source="[&lt;strong&gt;READ_PORT_USHORT&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff560806)"><strong>READ_PORT_USHORT</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>WIN95COMPAT_WritePortUShort</p></td>
-<td align="left"><p>[<strong>WRITE_PORT_USHORT</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566388)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566388" data-raw-source="[&lt;strong&gt;WRITE_PORT_USHORT&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566388)"><strong>WRITE_PORT_USHORT</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

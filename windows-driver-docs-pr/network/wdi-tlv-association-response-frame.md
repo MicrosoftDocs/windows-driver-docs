@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_ASSOCIATION_RESPONSE_FRAME
-author: windows-driver-content
 description: WDI_TLV_ASSOCIATION_RESPONSE_FRAME is a TLV that contains the received association response.
 ms.assetid: FA71F8CA-BA22-4EF2-8DF4-2A08C83A54A7
 ms.date: 07/18/2017
@@ -31,7 +30,7 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 |-----------|--------------------------------------------------------------------------------------------------------------------------|
 | UINT8\[\] | An array of UINT8 elements that contains the received association response. This does not include the 802.11 MAC header. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

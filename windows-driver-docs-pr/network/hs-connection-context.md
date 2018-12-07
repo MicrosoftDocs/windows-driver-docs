@@ -1,6 +1,5 @@
 ---
 title: HS_CONNECTION_CONTEXT structure
-author: windows-driver-content
 description: The HS_CONNECTION_CONTEXT structure contains the information required by the plugin for post connect authentication.
 ms.assetid: 22b219fc-691b-4813-a523-a76de037e64d
 keywords: 
@@ -63,9 +62,9 @@ Requirements
 
 [**HS\_SIM\_IDENTITY**](hs-sim-identity.md)
 
- 
+ 
 
- 
+ 
 
 
 

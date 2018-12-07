@@ -1,6 +1,5 @@
 ---
 title: Using a Driver-Defined Callback Object
-author: windows-driver-content
 description: Using a Driver-Defined Callback Object
 ms.assetid: b3b32534-0641-4818-9384-65fd45f689e8
 keywords: ["callback objects WDK kernel", "driver-defined callback objects WDK kernel"]
@@ -40,9 +39,9 @@ In its callback routine, a driver can perform whatever tasks it requires for the
 
 When the driver no longer requires notification, it should call [**ExUnregisterCallback**](https://msdn.microsoft.com/library/windows/hardware/ff545649) to remove its routine from the list of registered callbacks and to remove its reference to the callback object.
 
- 
+ 
 
- 
+ 
 
 
 

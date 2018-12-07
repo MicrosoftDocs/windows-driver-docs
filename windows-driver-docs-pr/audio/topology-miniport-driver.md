@@ -44,9 +44,9 @@ For example, if a client enumerates a node that uses the node-type GUID [**KSNOD
 
 The miniport interface supports the delivery of unsolicited control value changes from the miniport driver to the port driver. This feature accommodates devices with control knobs, sliders, or switches that can be physically manipulated by the user. Each time the user changes a node's control value, a hardware interrupt notifies the port driver that a [hardware event](hardware-events.md) has occurred.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -31,9 +31,9 @@ This section includes:
 
 [Returning the Completion Status of an Invalidate Operation](returning-the-completion-status-of-an-invalidate-operation.md)
 
- 
+ 
 
- 
+ 
 
 
 

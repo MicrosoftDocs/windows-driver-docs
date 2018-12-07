@@ -3,7 +3,6 @@ title: whattime
 description: The whattime extension converts a tick count into a standard time value.
 ms.assetid: c63e8bad-3a87-4209-b9f0-b6c433c294b2
 keywords: ["tick count", "whattime Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -48,7 +47,7 @@ The number of ticks.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -60,9 +59,9 @@ kd> !whattime 29857ae4
 696613604 Ticks in Standard Time:  15:02:16.040s
 ```
 
- 
+ 
 
- 
+ 
 
 
 

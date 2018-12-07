@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_ADDITIONAL_PROBE_REQUEST_DEFAULT_IES
-author: windows-driver-content
 description: WDI_TLV_ADDITIONAL_PROBE_REQUEST_DEFAULT_IES is a TLV that contains additional probe request IEs.
 ms.assetid: E364B1BC-5A78-42C8-B04D-31BD21141477
 ms.date: 07/18/2017
@@ -46,13 +45,13 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 <strong>Note</strong>  A Wi-Fi Direct Discover Request may override the default probe request IEs.
 </div>
 <div>
- 
+ 
 </div></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -78,9 +77,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

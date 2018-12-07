@@ -3,7 +3,6 @@ title: Get RPC Client Call Information
 description: Get RPC Client Call Information
 ms.assetid: 8b23428d-50e7-4613-a0ce-d1da5fa96ddf
 keywords: ["RPC client call information", "CCALL (client call)"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -34,11 +33,11 @@ For a similar example using the RPC debugger extensions, see [**!rpcexts.getclie
 
 **Note**   Information about Client Call objects is only gathered if the **Full** state information is being gathered. See [Enabling RPC State Information](enabling-rpc-state-information.md) for details.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

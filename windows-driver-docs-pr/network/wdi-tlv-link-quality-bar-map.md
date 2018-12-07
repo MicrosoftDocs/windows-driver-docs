@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_LINK_QUALITY_BAR_MAP
-author: windows-driver-content
 description: WDI_TLV_LINK_QUALITY_BAR_MAP is a TLV that contains the mapping of signal quality to Wi-Fi signal strength bars.
 ms.assetid: 35E073F4-D372-466A-98FF-0AAB1695284E
 ms.date: 07/18/2017
@@ -26,7 +25,7 @@ The size (in bytes) of the array of WDI\_LINK\_QUALITY\_BAR\_MAP\_PARAMETERS ele
 
 **Note**  WDI\_LINK\_QUALITY\_BAR\_MAP\_PARAMETERS is not a WDI structure. It is defined in the WDI TLV parser generator, and is used for documentation purposes only.
 
- 
+ 
 
 ## Values
 
@@ -35,7 +34,7 @@ The size (in bytes) of the array of WDI\_LINK\_QUALITY\_BAR\_MAP\_PARAMETERS ele
 |----------------------------------------------|-----------------------------------------------------|
 | WDI\_LINK\_QUALITY\_BAR\_MAP\_PARAMETERS\[\] | An array of signal strength bar mapping parameters. |
 
- 
+ 
 
 WDI\_LINK\_QUALITY\_BAR\_MAP\_PARAMETERS consists of the following elements.
 
@@ -45,7 +44,7 @@ WDI\_LINK\_QUALITY\_BAR\_MAP\_PARAMETERS consists of the following elements.
 | UINT8 | The upper limit of link quality (0-100) for the current signal strength bar. |
 | UINT8 | The signal strength bar number.                                              |
 
- 
+ 
 
 Requirements
 ------------
@@ -71,9 +70,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

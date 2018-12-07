@@ -19,9 +19,9 @@ To optimize the association process, the adapter should use the cached BSS entry
 
 When operating in multi-channel concurrency mode, it is recommended that the adapter employ ECSA or other mechanisms for enabling seamless/no jitter experience when performing channel multiplexing.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Using Direct I/O with DMA
-author: windows-driver-content
 description: Using Direct I/O with DMA
 ms.assetid: 0e609613-9023-4f35-a9c5-d68c8b676cfe
 keywords: ["direct I/O WDK kernel", "buffers WDK I/O , direct I/O", "data buffers WDK I/O , direct I/O", "I/O WDK kernel , direct I/O", "DMA transfers WDK kernel , direct I/O"]
@@ -36,9 +35,9 @@ The previous figure illustrates how drivers can use the IRP's **MdlAddress** to 
 
 Drivers should always check buffer lengths. Note that the I/O manager does not create an MDL for a zero-length buffer.
 
- 
+ 
 
- 
+ 
 
 
 

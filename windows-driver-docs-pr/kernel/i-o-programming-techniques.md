@@ -1,6 +1,5 @@
 ---
 title: I/O Programming Techniques
-author: windows-driver-content
 description: I/O Programming Techniques
 ms.assetid: 642746ba-d94e-4ffb-ba58-bb8a5650bea3
 keywords: ["I/O WDK kernel", "kernel-mode drivers WDK , I/O techniques", "IO WDK See I/O WDK", "transferring data WDK kernel", "data transfers WDK kernel"]
@@ -28,9 +27,9 @@ This section describes programming techniques that can be used to work with obje
 
 For architectural information on the I/O manager, see [Windows I/O Manager](windows-kernel-mode-i-o-manager.md). For reference information on I/O manager, see [I/O Manager Routines](https://msdn.microsoft.com/library/windows/hardware/ff551797).
 
- 
+ 
 
- 
+ 
 
 
 

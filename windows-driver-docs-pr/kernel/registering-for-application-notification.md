@@ -1,6 +1,5 @@
 ---
 title: Registering for Application Notification
-author: windows-driver-content
 description: Registering for Application Notification
 ms.assetid: e8f76014-6068-4012-96c6-88ea2bbd9bbf
 keywords: ["dynamic hardware partitioning WDK , application notification", "hardware partitioning WDK dynamic , application notification", "partitions WDK dynamic hardware , application notification", "application notification WDK dynamic hardware partitioning , registering", "notification WDK dynamic hardware partitioning , application", "registering for application notifications WDK dynamic hardware partitioning"]
@@ -79,7 +78,7 @@ MemoryNotifyHandle =
 
 **Note**   If an application only has to be notified about processors, it does not have to register for notification of memory events. Similarly, if an application only has to be notified about memory, it does not have to register for notification of processor events.
 
- 
+ 
 
 When an application no longer has to receive notification of processor or memory events, it can unregister the window from receiving WM\_DEVICECHANGE messages for these events by calling the [UnregisterDeviceNotification](http://go.microsoft.com/fwlink/p/?linkid=97893) function. The following code example shows how to unregister for the application notifications:
 
@@ -95,9 +94,9 @@ UnregisterDeviceNotification(MemoryNotifyHandle);
 
 For more information about the **RegisterDeviceNotification** and **UnregisterDeviceNotification** functions, see the Microsoft Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

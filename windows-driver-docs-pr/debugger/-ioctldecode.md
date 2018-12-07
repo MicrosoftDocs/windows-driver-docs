@@ -3,7 +3,6 @@ title: ioctldecode
 description: The ioctldecode extension displays the Device Type, Required Access, Function Code and Transfer Type as specified by the given IOCTL code. 
 ms.assetid: 50B12034-E5C7-43F2-A31E-AAC824A05D46
 keywords: ["ioctldecode Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -42,7 +41,7 @@ Specifies the hexadecimal IOCTL Code. The [**!irp**](-irp.md) command displays t
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -109,15 +108,15 @@ Function       : 0x33
 
 Although the IOCTL is not identified, information about the IOCTL fields are displayed.
 
-Note that only a subset of publically defined IOCTLs are able to be identified by the **!ioctldecode** command.
+Note that only a subset of publicly defined IOCTLs are able to be identified by the **!ioctldecode** command.
 
 For more information about IOCTLs see [Introduction to I/O Control Codes](https://msdn.microsoft.com/library/windows/hardware/ff548059).
 
 For more general information about IRPs and IOCTLs, refer to *Windows Internals* by Mark E. Russinovich, David A. Solomon and Alex Ionescu.
 
- 
+ 
 
- 
+ 
 
 
 

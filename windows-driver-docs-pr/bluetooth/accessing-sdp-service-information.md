@@ -37,13 +37,13 @@ After the profile driver has obtained the *dynamic* protocol/service multiplexer
 
 **Note**  If the service has a fixed PSM, which many do, L2CAP client profile drivers do not need to use SDP to obtain the PSM. However, L2CAP client profile drivers can still use SDP to get the SDP server attributes.
 
- 
+ 
 
 When the profile driver finishes searching, it should use [**IOCTL\_BTH\_SDP\_DISCONNECT**](https://msdn.microsoft.com/library/windows/hardware/ff536689) to disconnect from the remote SDP server.
 
- 
+ 
 
- 
+ 
 
 
 

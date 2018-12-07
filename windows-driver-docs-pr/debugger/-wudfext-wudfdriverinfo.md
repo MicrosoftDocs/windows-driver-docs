@@ -3,7 +3,6 @@ title: wudfext.wudfdriverinfo
 description: The wudfext.wudfdriverinfo extension displays information about a UMDF driver within the current host process.
 ms.assetid: 6204df00-2de5-41b6-80c1-ba576699fb20
 keywords: ["wudfext.wudfdriverinfo Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -48,7 +47,7 @@ Specifies the name of the UMDF driver to display information about.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -70,9 +69,9 @@ IWDFDriver: 0xf2db8
     !devstack 0x34e4e0 @ level 0
 ```
 
- 
+ 
 
- 
+ 
 
 
 

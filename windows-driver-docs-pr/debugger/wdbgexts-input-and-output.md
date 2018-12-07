@@ -3,7 +3,6 @@ title: WdbgExts Input and Output
 description: WdbgExts Input and Output
 ms.assetid: 5648b509-7bdd-4d2a-947f-db55a8c69100
 keywords: ["WdbgExts extensions, input", "WdbgExts extensions, output"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -19,9 +18,9 @@ To check for a user-initiated interrupt, use [**CheckControlC**](https://msdn.mi
 
 For a more powerful input and output API, see [Using Input and Output](using-input-and-output.md) in the [Using the Debugger Engine API](using-the-debugger-engine-api.md) section of this documentation.
 
- 
+ 
 
- 
+ 
 
 
 

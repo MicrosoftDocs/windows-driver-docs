@@ -44,13 +44,13 @@ The **KSPROPERTY\_TELEPHONY\_PROVIDERCHANGE** property is used to communicate to
 <td align="left"><p>No</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p>[<strong>KSPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564262)</p></td>
-<td align="left"><p>[<strong>KSTELEPHONY_PROVIDERCHANGE</strong>](https://msdn.microsoft.com/library/windows/hardware/mt169885)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564262" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564262)"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/mt169885" data-raw-source="[&lt;strong&gt;KSTELEPHONY_PROVIDERCHANGE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/mt169885)"><strong>KSTELEPHONY_PROVIDERCHANGE</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value is of type [**KSTELEPHONY\_PROVIDERCHANGE**](https://msdn.microsoft.com/library/windows/hardware/mt169885), which specifies the phone call type and the type of provider change operation.
 
@@ -93,9 +93,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

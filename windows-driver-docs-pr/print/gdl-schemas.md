@@ -1,6 +1,5 @@
 ---
 title: GDL Schemas
-author: windows-driver-content
 description: GDL Schemas
 ms.assetid: 1020bec8-3b34-4391-9e75-9ffcd8b07785
 keywords:
@@ -78,9 +77,9 @@ As the preceding example demonstrates, inheritance enables you to factor out com
 
 For more information about how to use inheritance-based schemas, see [GDL Templates](gdl-template-structure.md).
 
- 
+ 
 
- 
+ 
 
 
 

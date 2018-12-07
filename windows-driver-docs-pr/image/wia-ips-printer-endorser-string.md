@@ -25,7 +25,7 @@ The **WIA\_IPS\_PRINTER\_ENDORSER\_STRING** property is used to configure the te
 
 **Note**  This property replaces [**WIA\_DPS\_ENDORSER\_STRING**](wia-dps-endorser-string.md), which is now obsolete.
 
- 
+ 
 
 Property Type: VT\_BSTR
 
@@ -61,9 +61,9 @@ Requirements
 
 [**WIA\_DPS\_ENDORSER\_STRING**](wia-dps-endorser-string.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Implementing Image Color Management
-author: windows-driver-content
 description: Implementing Image Color Management
 ms.assetid: b3184a8b-4f32-4cb0-8f68-777d85110142
 ms.date: 04/20/2017
@@ -19,9 +18,9 @@ For best application compatibility, all minidrivers are expected to return data 
 
 When the application sets the property to 1, the minidriver should stop mapping to sRGB and allow the application to handle the mapping. The application uses the current value of the [**WIA\_IPA\_ICM\_PROFILE\_NAME**](https://msdn.microsoft.com/library/windows/hardware/ff551571) property as the profile for the data from the device. The user sets the property using system dialogs and it should not be changed by the minidriver.
 
- 
+ 
 
- 
+ 
 
 
 

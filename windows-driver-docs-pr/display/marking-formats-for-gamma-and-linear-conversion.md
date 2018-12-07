@@ -26,9 +26,9 @@ The driver specifies the following flags in the **dwOperations** member of the [
 
 -   D3DFORMAT\_OP\_SRGBWRITE to indicate whether the pixel pipeline should gamma correct back to sRGB space when writing out to the render target.
 
- 
+ 
 
- 
+ 
 
 
 

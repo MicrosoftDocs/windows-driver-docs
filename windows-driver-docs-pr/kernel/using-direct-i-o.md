@@ -1,6 +1,5 @@
 ---
 title: Using Direct I/O
-author: windows-driver-content
 description: Using Direct I/O
 ms.assetid: e40b4657-833f-404c-8472-2e33564129a5
 keywords: ["direct I/O WDK kernel", "buffers WDK I/O , direct I/O", "data buffers WDK I/O , direct I/O", "I/O WDK kernel , direct I/O"]
@@ -34,9 +33,9 @@ Setting up a direct I/O transfer varies slightly, depending on whether DMA or PI
 
 Drivers must take steps to maintain cache coherency during DMA and PIO transfers. For more information, see [Maintaining Cache Coherency](maintaining-cache-coherency.md).
 
- 
+ 
 
- 
+ 
 
 
 

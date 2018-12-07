@@ -23,9 +23,9 @@ To obtain a reference to the device paging fence object a new **GetDevicePagingF
 
 ![device paging queues](images/device-paging-queues.1.png)
 
- 
+ 
 
- 
+ 
 
 
 

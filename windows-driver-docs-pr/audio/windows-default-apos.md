@@ -1,21 +1,21 @@
 ---
-title: Windows Vista Default sAPOs
-description: Windows Vista Default sAPOs
+title: Windows Vista Default APOs
+description: Windows Default APOs
 ms.assetid: 713d848c-4b74-4682-a625-eba5f9f24bb7
 keywords:
-- sAPO WDK
+- APO WDK
 - Enhancements tab WDK
-- default sAPO WDK
-ms.date: 04/20/2017
+- default APO WDK
+ms.date: 11/07/2018
 ms.localizationpriority: medium
 ---
 
-# Windows Vista Default sAPOs
+# Windows Default APOs
 
 
-With Windows Vista the audio driver does not provide digital audio system effects. All digital signal processing for creating system effects is provided by real-time in-process COM objects called system effects audio processing objects (sAPOs).
+With Windows Vista the audio driver does not provide digital audio system effects. All digital signal processing for creating system effects is provided by real-time in-process COM objects called system effects audio processing objects (APOs).
 
-Windows Vista provides an **Enhancements** tab with the Sound applet on the Control Panel for configuring these system effects. The sAPOs provided by default with Windows Vista are shown in the following list.
+Windows provides an **Enhancements** tab with the Sound applet on the Control Panel for configuring these system effects. The APOs provided by default with Windows are shown in the following list.
 
 [Bass Boost](bass-boost.md)
 
@@ -37,9 +37,9 @@ Windows Vista provides an **Enhancements** tab with the Sound applet on the Cont
 
 [Virtualized Surround Sound over Headphones](virtualized-surround-sound-over-headphones.md)
 
- 
+ 
 
- 
+ 
 
 
 

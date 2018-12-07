@@ -1,6 +1,5 @@
 ---
 title: Constraints on Dispatch Routines
-author: windows-driver-content
 description: Constraints on Dispatch Routines
 ms.assetid: 5b2acaea-1f66-4285-9a36-5ab0f440f6b4
 keywords:
@@ -79,9 +78,9 @@ Note: For information about setting completion routines, see [Using Completion R
 
 -   If a dispatch routine posts IRPs to a work queue, it must call [**IoMarkIrpPending**](https://msdn.microsoft.com/library/windows/hardware/ff549422) before posting each IRP to the worker queue. Otherwise, the IRP could be dequeued, completed by another driver routine, and freed by the system before the call to **IoMarkIrpPending** occurs, thereby causing a crash.
 
- 
+ 
 
- 
+ 
 
 
 

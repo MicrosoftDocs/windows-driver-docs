@@ -1,6 +1,5 @@
 ---
 title: USB Video Class Driver Overview
-author: windows-driver-content
 description: USB Video Class Driver Overview
 ms.assetid: 890d448e-bfee-462d-8cce-a2cca42f2f6d
 keywords:
@@ -29,7 +28,7 @@ The following table shows support for UVC in different versions of Windows:
 | USB Video Class 1.1                     | Not supported    | Supported     | Supported |
 | USB Video Class 1.0                     | Supported        | Supported     | Supported |
 
- 
+ 
 
 Beginning with Windows 8, the H.264 video codec (encoder/decoder) is supported. H.264 is an open standard that allows efficient video compression techniques for reducing the use of network bandwith and storage space. This leads to a higher video quality for a given bit rate. For more information, see [USB H.264 Video Cameras Support](usb-h-264-video-cameras-support.md). Also refer to the [Microsoft Proposed Extensions to the USB Video Class for H.264](http://go.microsoft.com/fwlink/p/?LinkId=233063).
 
@@ -62,7 +61,7 @@ The system-supplied Usbvideo.sys driver supports the following UVC features in d
 | Stream-based and frame-based formats                                               | Not supported    | Supported     | Supported     |
 | H.264 video codec                                                                  | Not Supported    | Not Supported | Supported     |
 
- 
+ 
 
 ## Customizing the UVC Driver
 
@@ -82,9 +81,9 @@ For more information about these tools, see [AVStream Testing and Debugging](avs
 
 You can download a compressed set of specifications for USB Video Class 1.1 from the [Device Class page](http://go.microsoft.com/fwlink/p/?linkid=517016) on the USB Implementers Forum website.
 
- 
+ 
 
- 
+ 
 
 
 

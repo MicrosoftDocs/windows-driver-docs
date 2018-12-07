@@ -1,6 +1,5 @@
 ---
 title: UEFI requirements for USB flashing support
-author: windows-driver-content
 description: Microsoft provides several USB-based flashing solutions for use in engineering and manufacturing environments. In order for a device to be used with these tools, the UEFI environment on the device must meet the requirements listed in this topic.
 ms.assetid: 8979173C-DCBC-4544-9978-BB069FF35914
 ms.date: 04/20/2017
@@ -22,7 +21,7 @@ These requirements related to flashing expand on the UEFI requirements listed in
 | USB function protocol | For USB flashing over USB 3.0, the firmware must implement UEFI USB function protocol revision 0x00010002 or higher, including support for the [EFI\_USBFN\_IO\_PROTOCOL.ConfigureEnableEndpointsEx](efi-usbfn-io-protocol-configureenableendpointsex.md) function. For more information, see [UEFI USB function protocol](uefi-usb-function-protocol.md). |
 | BlockIO               | The Microsoft-provided USB flashing solutions select the first returned pointer to a non-zero sized block I/O storage device for flashing. The device can be non-removable or removable storage.                                                                                                                                                             |
 
- 
+
 
 ## UEFI desync event (optional)
 
@@ -55,22 +54,14 @@ UEFI components that attempt to read or write to disk during flashing must imple
 <p>The following code example demonstrates how firmware could create this event.</p>
 <div class="code">
 
-    `gBS->CreateEventEx (`  
-        `EVT_NOTIFY_SIGNAL,`  
-        `TPL_CALLBACK,`  
-        `FIRMWARE_NOTIFICATION_FUNCTION,          // To be defined by SoC Vendor`  
-        `&FIRMWARE_NOTIFICATION_FUNCTION_CONTEXT, // To be defined by SoC Vendor`  
-        `&EFI_EVENT_GROUP_FIRMWARE_DESYNC,`  
-        `&Event                                   // Event returned by CreateEventEx`  
-    `);`  
-
+    <code>gBS-&gt;CreateEventEx (</code><br/>        <code>EVT_NOTIFY_SIGNAL,</code><br/>        <code>TPL_CALLBACK,</code><br/>        <code>FIRMWARE_NOTIFICATION_FUNCTION,          // To be defined by SoC Vendor</code><br/>        <code>&amp;FIRMWARE_NOTIFICATION_FUNCTION_CONTEXT, // To be defined by SoC Vendor</code><br/>        <code>&amp;EFI_EVENT_GROUP_FIRMWARE_DESYNC,</code><br/>        <code>&amp;Event                                   // Event returned by CreateEventEx</code><br/>    <code>);</code><br/>
 </div>
 <p>The event’s NotifyFunction() should perform any cleanup operations necessary for the component to transition to the desynchronized mode. After this cleanup, the component must not refresh or sync its storage back with flash until the next device reboot. If the event’s NotifyFunction fails(), the NotifyFunction() should not return EFI_SUCCESS.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ## Related topics
 [Minimum UEFI requirements for Windows on SoC platforms](minimum-uefi-requirements-for-windows-on-soc-platforms.md)  

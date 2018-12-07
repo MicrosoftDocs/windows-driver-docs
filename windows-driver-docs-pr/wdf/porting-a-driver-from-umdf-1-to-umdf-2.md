@@ -1,6 +1,5 @@
 ---
 title: Porting a Driver from UMDF 1 to UMDF 2
-author: windows-driver-content
 description: This topic describes how to port a User-Mode Driver Framework (UMDF) 1 driver to UMDF 2.
 ms.assetid: 99D20B4C-17C4-42AC-B4D9-F5FD64E10723
 ms.date: 04/20/2017
@@ -24,7 +23,7 @@ To start, open a new driver project in Visual Studio. Select the **Visual C++-&g
 
 Next, review your existing UMDF 1 driver code and determine object mappings. Each COM object in UMDF 1 has a corresponding WDF object in UMDF 2. For example, the **IWDFDevice** interface maps to the WDF device object, which is represented by a WDFDEVICE handle. Nearly all framework-supplied interface methods in UMDF 1 have corresponding methods in UMDF 2. For example, [**IWDFDevice::GetDefaultIoQueue**](https://msdn.microsoft.com/library/windows/hardware/ff558830) maps to [**WdfDeviceGetDefaultQueue**](https://msdn.microsoft.com/library/windows/hardware/ff545965).
 
-Similarly, driver-supplied callback functions have equivalents in the two versions. In UMDF 1, the naming convention for driver-supplied interfaces (except for **IDriverEntry**) is *I*Object*Callback*Xxx**, while in UMDF 2 the naming convention for driver-supplied routines is *Evt*ObjectXxx**. For example, the [**IDriverEntry::OnDeviceAdd**](https://msdn.microsoft.com/library/windows/hardware/ff554896) callback method maps to [*EvtDriverDeviceAdd*](https://msdn.microsoft.com/library/windows/hardware/ff541693).
+Similarly, driver-supplied callback functions have equivalents in the two versions. In UMDF 1, the naming convention for driver-supplied interfaces (except for **IDriverEntry**) is *I*Object*Callback*Xxx<strong>, while in UMDF 2 the naming convention for driver-supplied routines is *Evt*ObjectXxx</strong>. For example, the [**IDriverEntry::OnDeviceAdd**](https://msdn.microsoft.com/library/windows/hardware/ff554896) callback method maps to [*EvtDriverDeviceAdd*](https://msdn.microsoft.com/library/windows/hardware/ff541693).
 
 Your driver implements callback functions in both UMDF 1 and 2, but the way that the driver supplies pointers to its callbacks differs. In UMDF 1, the driver implements callback methods as members of driver-supplied interfaces. The driver registers these interfaces with the framework when it creates framework objects, for example by calling [**IWDFDriver::CreateDevice**](https://msdn.microsoft.com/library/windows/hardware/ff558899).
 
@@ -94,9 +93,9 @@ In UMDF 2, you can also get additional driver debugging information through the 
 
 [Framework Objects](framework-objects.md)
 
- 
+ 
 
- 
+ 
 
 
 

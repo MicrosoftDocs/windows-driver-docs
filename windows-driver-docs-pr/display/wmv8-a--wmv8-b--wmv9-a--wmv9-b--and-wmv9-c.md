@@ -15,11 +15,11 @@ ms.localizationpriority: medium
 # WMV8\_A, WMV8\_B, WMV9\_A, WMV9\_B, and WMV9\_C
 
 
-The WMV8\_A, WMV8\_B, WMV9\_A, WMV9\_B, and WMV9\_C restricted profiles contain the sets of features required for support of Windows Media Video, versions 8 and 9. For more information about these profiles, download [DirectX Video Acceleration Specification for Windows Media Video v8, v9 and vA Decoding (Including SMPTE 421M "VC-1")](http://go.microsoft.com/fwlink/p/?linkid=141800).
+The WMV8\_A, WMV8\_B, WMV9\_A, WMV9\_B, and WMV9\_C restricted profiles contain the sets of features required for support of Windows Media Video, versions 8 and 9. For more information about these profiles, download [DirectX Video Acceleration Specification for Windows Media Video v8, v9 and vA Decoding (Including SMPTE 421M "VC-1")](https://go.microsoft.com/fwlink/p/?linkid=141800).
 
- 
+ 
 
- 
+ 
 
 
 

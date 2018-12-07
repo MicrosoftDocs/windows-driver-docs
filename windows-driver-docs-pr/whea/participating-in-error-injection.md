@@ -1,6 +1,5 @@
 ---
 title: Participating in Error Injection
-author: windows-driver-content
 description: Participating in Error Injection
 ms.assetid: 0bd9efbd-e98d-457a-a28f-e09dcb5ae24d
 keywords:
@@ -85,9 +84,9 @@ NTSTATUS
 
 A PSHED plug-in that participates in error injection must specify the **PshedFAErrorInjection** flag when it [registers](registering-a-pshed-plug-in.md) itself with the operating system.
 
- 
+ 
 
- 
+ 
 
 
 

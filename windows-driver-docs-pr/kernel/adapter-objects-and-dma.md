@@ -1,6 +1,5 @@
 ---
 title: Adapter Objects and DMA
-author: windows-driver-content
 description: Adapter Objects and DMA
 ms.assetid: 8bc672b4-0f4d-4e0c-9904-c8d0a3f3639c
 keywords: ["adapter objects WDK kernel", "I/O WDK kernel , adapter objects", "I/O WDK kernel , DMA", "DMA transfers WDK kernel", "AdapterControl routines", "Direct Memory Access WDK kernel", "data transfers WDK kernel , adapter objects", "transferring data WDK kernel , ad"]
@@ -28,9 +27,9 @@ This section describes adapter objects and [*AdapterControl*](https://msdn.micro
 
 [Writing AdapterControl Routines](writing-adaptercontrol-routines.md)
 
- 
+ 
 
- 
+ 
 
 
 

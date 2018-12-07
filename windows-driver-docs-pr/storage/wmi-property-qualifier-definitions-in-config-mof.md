@@ -22,9 +22,9 @@ If you apply one of the preceding qualifiers to a data field in a WMI class defi
 
 For a general discussion of WMI property qualifiers, see [WMI Property Qualifiers](https://msdn.microsoft.com/library/windows/hardware/ff566365).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Publishing NFP messages
-author: windows-driver-content
 description: Publishing NFP messages
 ms.assetid: 45BE3620-ADF4-413D-90B3-586FCEB5F606
 keywords:
@@ -109,9 +108,9 @@ If a client fails to send the required [**IOCTL\_NFP\_GET\_NEXT\_TRANSMITTED\_ME
 
 The driver must set the “CompleteEventImmediately” counter to zero and must not increment the counter if the client has not sent a replacement [**IOCTL\_NFP\_GET\_NEXT\_TRANSMITTED\_MESSAGE**](https://msdn.microsoft.com/library/windows/hardware/jj853320) within 10 - 20 seconds of the prior IOCTL completion.
 
- 
+ 
 
- 
+ 
 ## Related topics
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [Near field proximity DDI reference](https://msdn.microsoft.com/library/windows/hardware/jj866056)  

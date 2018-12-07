@@ -1,6 +1,5 @@
 ---
 title: DriverEntry's Required Responsibilities
-author: windows-driver-content
 description: DriverEntry's Required Responsibilities
 ms.assetid: 6e997875-e7b7-43e2-8398-f0574f3a5816
 keywords: ["DriverEntry WDK kernel , required responsibilities"]
@@ -18,7 +17,7 @@ The required, ordered responsibilities of a [**DriverEntry**](https://msdn.micro
 
 1.  Supply entry points for the driver's standard routines.
 
-    The driver stores entry points for many of its standard routines in the driver object or driver extension. Such entry points include those for the driver's [*AddDevice*](https://msdn.microsoft.com/library/windows/hardware/ff540521) routine, dispatch routines, [*StartIo*](https://msdn.microsoft.com/library/windows/hardware/ff563858) routine, and [*Unload*](https://msdn.microsoft.com/library/windows/hardware/ff564886) routine. For example, a driver would set the entry points for its *AddDevice*, [*DispatchPnP*](https://msdn.microsoft.com/library/windows/hardware/ff543341), and [*DispatchPower*](https://msdn.microsoft.com/library/windows/hardware/ff543354) routines with statements like the following (*Xxx* is a placeholder for a vendor-supplied prefix identifying the driver):
+    The driver stores entry points for many of its standard routines in the driver object or driver extension. Such entry points include those for the driver's [*AddDevice*](https://msdn.microsoft.com/library/windows/hardware/ff540521) routine, dispatch routines, [*StartIo*](https://msdn.microsoft.com/library/windows/hardware/ff563858) routine, and [*Unload*](https://msdn.microsoft.com/library/windows/hardware/ff564886) routine. For example, a driver would set the entry points for its *AddDevice*, [*DispatchPnP*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch), and [*DispatchPower*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routines with statements like the following (*Xxx* is a placeholder for a vendor-supplied prefix identifying the driver):
 
     ```cpp
         :
@@ -38,9 +37,9 @@ The required, ordered responsibilities of a [**DriverEntry**](https://msdn.micro
 
 4.  Return NTSTATUS indicating whether the driver successfully loaded and can accept and process requests from the PnP manager to configure, add, and start its devices. (See [DriverEntry Return Values](driverentry-return-values.md).)
 
- 
+ 
 
- 
+ 
 
 
 

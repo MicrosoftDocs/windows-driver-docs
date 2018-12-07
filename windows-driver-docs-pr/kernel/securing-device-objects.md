@@ -1,6 +1,5 @@
 ---
 title: Securing Device Objects
-author: windows-driver-content
 description: Securing Device Objects
 ms.assetid: 41e86924-e1bf-4ac6-9d7b-3799ed0d796c
 keywords: ["access rights WDK device objects"]
@@ -28,9 +27,9 @@ There are two aspects of a device object that must be secured:
 
 -   Access to the device's namespace. This is documented in [Controlling Device Namespace Access](controlling-device-namespace-access.md).
 
- 
+ 
 
- 
+ 
 
 
 

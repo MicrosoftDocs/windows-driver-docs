@@ -54,9 +54,9 @@ We recommend that an offload target not call the following indication functions 
 
 -   [**NdisTcpOffloadReceiveHandler**](https://msdn.microsoft.com/library/windows/hardware/ff564606)
 
- 
+ 
 
- 
+ 
 
 
 

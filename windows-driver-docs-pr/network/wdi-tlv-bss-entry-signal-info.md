@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_BSS_ENTRY_SIGNAL_INFO
-author: windows-driver-content
 description: WDI_TLV_BSS_ENTRY_SIGNAL_INFO is a TLV that contains signal information for a BSS entry.
 ms.assetid: 4410F447-5226-4DF4-923D-11D10D0159CC
 ms.date: 07/18/2017
@@ -32,7 +31,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | INT32  | The received signal strength indicator (RSSI) value of the beacon or probe response from the peer. This value is specified in units of decibels referenced to 1.0 milliwatts (dBm) |
 | UINT32 | The link quality specified by a value from 0 to 100. A value of 100 specifies the highest link quality.                                                                            |
 
- 
+ 
 
 Requirements
 ------------
@@ -58,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Autodetect the Duplex Unit for PPD
-author: windows-driver-content
 description: Autodetect the Duplex Unit for PPD
 ms.assetid: bbecceb1-ba1d-4d2d-9a7b-e43f49345ca2
 keywords:
@@ -62,9 +61,9 @@ The next example is an excerpt from the GDL file, and shows the DuplexUnit featu
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

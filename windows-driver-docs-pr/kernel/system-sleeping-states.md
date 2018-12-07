@@ -1,6 +1,5 @@
 ---
 title: System Sleeping States
-author: windows-driver-content
 description: System Sleeping States
 ms.assetid: 2fd883b5-4e89-4ce9-b75a-b821348ac860
 keywords: ["system power states WDK kernel , sleeping states", "system sleeping states WDK power management", "sleeping states WDK power management", "S1 WDK power management", "S2 WDK power management", "S3 WDK power management", "S4 WDK power management", "software resumption WDK power management", "resumption WDK power management", "hardware latency WDK power management", "system hardware context WDK power management", "hardware context WDK power management", "context WDK power management", "latency WDK power management"]
@@ -88,9 +87,9 @@ Long and undefined. Only physical interaction returns the system to the working 
 <a href="" id="system-hardware-context"></a>**System hardware context**  
 None retained in hardware. The system writes an image of memory in the hibernate file before powering down. When the operating system is loaded, it reads this file and jumps to its previous location.
 
- 
+ 
 
- 
+ 
 
 
 

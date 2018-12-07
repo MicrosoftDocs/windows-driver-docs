@@ -1,6 +1,5 @@
 ---
 title: Cancel Routines in Drivers without StartIo Routines
-author: windows-driver-content
 description: Cancel Routines in Drivers without StartIo Routines
 ms.assetid: c6e1a05e-28ed-4f42-8678-55f01303b312
 keywords: ["canceling IRPs, StartIo routines", "Cancel routines, StartIo routines", "StartIo routines, Cancel routines"]
@@ -32,11 +31,11 @@ When the driver's *Cancel* routine is called, it typically does the following:
 
         The driver usually assumes that I/O processing for the input IRP has already begun if the IRP is not queued.
 
-Drivers with *Cancel* routines can handle [**IRP\_MJ\_CLEANUP**](https://msdn.microsoft.com/library/windows/hardware/ff550718) requests as well. See [*DispatchCleanup*](https://msdn.microsoft.com/library/windows/hardware/ff543233) for more information about **IRP\_MJ\_CLEANUP** requests.
+Drivers with *Cancel* routines can handle [**IRP\_MJ\_CLEANUP**](https://msdn.microsoft.com/library/windows/hardware/ff550718) requests as well. See [*DispatchCleanup*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) for more information about **IRP\_MJ\_CLEANUP** requests.
 
- 
+ 
 
- 
+ 
 
 
 

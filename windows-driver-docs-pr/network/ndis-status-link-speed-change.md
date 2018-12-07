@@ -1,6 +1,5 @@
 ---
 title: NDIS_STATUS_LINK_SPEED_CHANGE
-author: windows-driver-content
 description: The NDIS_STATUS_LINK_SPEED_CHANGE status indicates a link speed change.
 ms.assetid: 084e43c9-598c-4c30-8004-2d1876a1cddd
 ms.date: 07/18/2017
@@ -32,7 +31,7 @@ Requirements
 <tbody>
 <tr class="odd">
 <td><p>Version</p></td>
-<td><p>Not supported in NDIS 6.0 and later (use [<strong>NDIS_STATUS_LINK_STATE</strong>](ndis-status-link-state.md) instead). Supported only for NDIS 5.1 drivers in Windows Vista and Windows XP.</p></td>
+<td><p>Not supported in NDIS 6.0 and later (use <a href="ndis-status-link-state.md" data-raw-source="[&lt;strong&gt;NDIS_STATUS_LINK_STATE&lt;/strong&gt;](ndis-status-link-state.md)"><strong>NDIS_STATUS_LINK_STATE</strong></a> instead). Supported only for NDIS 5.1 drivers in Windows Vista and Windows XP.</p></td>
 </tr>
 <tr class="even">
 <td><p>Header</p></td>
@@ -52,9 +51,9 @@ Requirements
 
 [OID\_IRDA\_RATE\_SNIFF](https://msdn.microsoft.com/library/windows/hardware/ff560287)
 
- 
+ 
 
- 
+ 
 
 
 

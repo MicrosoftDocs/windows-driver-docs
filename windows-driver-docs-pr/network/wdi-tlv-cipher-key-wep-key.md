@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_CIPHER_KEY_WEP_KEY
-author: windows-driver-content
 description: WDI_TLV_CIPHER_KEY_WEP_KEY is a TLV that contains a WEP key.
 ms.assetid: 22C332B4-A9A7-4205-9ADA-80914FB34642
 ms.date: 07/18/2017
@@ -31,7 +30,7 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 |-----------|--------------------------------------------------------|
 | UINT8\[\] | An array of UINT8 elements that specifies the WEP key. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

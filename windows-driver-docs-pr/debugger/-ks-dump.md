@@ -3,7 +3,6 @@ title: ks.dump
 description: The ks.dump extension displays the specified object.
 ms.assetid: 7878c79f-9de6-4fd2-9641-c636212429eb
 keywords: ["ks.dump Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -66,7 +65,7 @@ Show all pin states.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -129,12 +128,12 @@ Some important parts of this display are included in the following table.
 </tr>
 <tr class="odd">
 <td align="left"><p>State</p></td>
-<td align="left"><p>The internal state of the pin's transport to non-AVStream filters.</p></td>
+<td align="left"><p>The internal state of the pin&#39;s transport to non-AVStream filters.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Following is an example of the **!ks.dump** display for a stream class driver:
 
@@ -194,11 +193,11 @@ Note that the sizes are listed both in hexadecimal numbers, and then, parentheti
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

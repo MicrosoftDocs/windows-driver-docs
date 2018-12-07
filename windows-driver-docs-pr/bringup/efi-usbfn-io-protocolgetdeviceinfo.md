@@ -1,6 +1,5 @@
 ---
 title: EFI_USBFN_IO_PROTOCOL.GetDeviceInfo
-author: windows-driver-content
 description: EFI_USBFN_IO_PROTOCOL.GetDeviceInfo
 ms.assetid: b72f6ba1-7704-4661-8855-1ff88bd08e5a
 ms.date: 04/20/2017
@@ -81,7 +80,7 @@ A pointer to a buffer in which the requested information will be returned as a U
 </tbody>
 </table>
 
- 
+ 
 
 ## Remarks
 
@@ -93,9 +92,9 @@ If the supplied Buffer is too small or NULL, the method fails with **EFI\_BUFFER
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
 

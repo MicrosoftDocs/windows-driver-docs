@@ -77,9 +77,9 @@ class CMiniportWaveRTStream :
 
 The *Portcls.h* header file defines these interfaces. And for more information about how to develop a driver that can handle hardware-offloaded audio streams, see [Driver Implementation Details](driver-implementation-details.md).
 
- 
+ 
 
- 
+ 
 
 
 

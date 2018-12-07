@@ -1,6 +1,5 @@
 ---
 title: Synchronizing Cancellation in Driver Routines that Process IRPs
-author: windows-driver-content
 description: Synchronizing Cancellation in Driver Routines that Process IRPs
 ms.assetid: 0b252ebd-b9d5-4747-9a27-c1ecffdbae18
 ms.localizationpriority: medium
@@ -39,9 +38,9 @@ Drivers that manage their own queues of IRPs, rather than using the I/O manager-
 
 In any driver that handles cancelable IRPs, every driver routine that processes an IRP before the underlying device has been programmed for the requested I/O operation should check the cancelable state of all incoming IRPs. Specifically, a highest-level device driver with both *StartIo* and [*ControllerControl*](https://msdn.microsoft.com/library/windows/hardware/ff542049) routines should process incoming IRPs in both these driver routines as already described.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -29,9 +29,9 @@ This section describes requirements that a call manager or integrated miniport c
 
 [Specifying Parameters for an Incoming Call](specifying-parameters-for-an-incoming-call.md)
 
- 
+ 
 
- 
+ 
 
 
 

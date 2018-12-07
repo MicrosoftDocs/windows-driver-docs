@@ -1,6 +1,5 @@
 ---
 title: Handling a System Set-Power IRP in a Bus Driver
-author: windows-driver-content
 description: Handling a System Set-Power IRP in a Bus Driver
 ms.assetid: e88344bd-4223-4cd5-9428-201d46c6dbb4
 keywords: ["set-power IRPs WDK power management", "bus drivers WDK power management"]
@@ -24,9 +23,9 @@ When a bus driver receives a system set-power IRP, it must take the following st
 
 The bus driver does not change device power settings until it receives a power IRP that requests a device power state.
 
- 
+ 
 
- 
+ 
 
 
 

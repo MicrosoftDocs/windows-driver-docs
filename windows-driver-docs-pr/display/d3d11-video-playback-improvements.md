@@ -37,7 +37,7 @@ With wider adoption of Microsoft Direct3D 10 technologies in mainstream apps, s
 </tbody>
 </table>
 
- 
+ 
 
 These are key benefits to using Direct3D 11:
 
@@ -199,9 +199,9 @@ For info on requirements that hardware devices must meet when they implement thi
 
 See [WDDM 1.2 features](wddm-v1-2-features.md) for a review of features added with Windows 8.
 
- 
+ 
 
- 
+ 
 
 
 

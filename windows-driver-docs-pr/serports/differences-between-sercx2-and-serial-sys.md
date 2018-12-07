@@ -1,6 +1,5 @@
 ---
 title: Differences Between SerCx2.sys and Serial.sys
-author: windows-driver-content
 description: Although the inbox Sercx2.sys and Serial.sys driver components both implement the serial I/O request interface, these components are not interchangeable. They are designed to meet different sets of requirements.
 ms.assetid: 62FA69BB-FE04-4B5E-96CC-13764ED83AE6
 ms.date: 04/20/2017
@@ -14,7 +13,7 @@ Although the inbox Sercx2.sys and Serial.sys driver components both implement th
 
 **Note**  Sercx2.sys replaces an earlier version of the serial framework extension, Sercx.sys, that was introduced in Windows 8. For more information, see [Serial Controller Drivers Overview](serial-drivers-overview.md).
 
- 
+ 
 
 ## Serial.sys: Dynamic serial connections to external devices
 
@@ -51,9 +50,9 @@ Another difference is that Serial.sys implements software flow control, but Serc
 
 A final difference is that Serial.sys can work in conjunction with Serenum.sys, but Sercx2.sys cannot. Serenum.sys is a filter driver that enumerates devices that are connected to serial ports. For more information, see [Enumerating Serenum Devices](enumerating-serenum-devices.md).
 
- 
+ 
 
- 
+ 
 
 
 

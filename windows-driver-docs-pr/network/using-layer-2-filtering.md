@@ -74,9 +74,9 @@ Data Field Identifiers for virtual switch filtering include:
 
 [**FWPS\_FIELDS\_OUTBOUND\_MAC\_FRAME\_NATIVE**](https://msdn.microsoft.com/library/windows/hardware/hh439757)
 
- 
+ 
 
- 
+ 
 
 
 

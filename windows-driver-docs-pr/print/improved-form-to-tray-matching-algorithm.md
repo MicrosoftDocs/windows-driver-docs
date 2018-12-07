@@ -1,6 +1,5 @@
 ---
 title: Improved Form-to-Tray Matching Algorithm
-author: windows-driver-content
 description: Improved Form-to-Tray Matching Algorithm
 ms.assetid: ce58501d-a2f6-4106-9a99-ad44ff4bf658
 keywords:
@@ -15,9 +14,9 @@ ms.localizationpriority: medium
 
 In Windows Vista, the form-to-tray matching algorithm is improved in the same way as the [form matching function](improved-form-matching-algorithm.md). In Windows Vista, support for localized names is enhanced to provide a more precise and language-independent lookup of the form-to-tray relation.
 
- 
+ 
 
- 
+ 
 
 
 

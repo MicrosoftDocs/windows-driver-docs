@@ -43,7 +43,7 @@ This heuristic follows these steps for each devnode that the Plug and Play (PnP)
 
     **Note**  If the operating system determines that the device is internal to the computer, the devnode will inherit the container ID of the parent devnode, which (in this case) is the container ID of the computer itself.
 
-     
+     
 
 3.  If ACPI does not return an **_ADR** object that matches the USB port address to which the device is connected, the PnP manager generates a container ID based on the removable status of the devnode.
 
@@ -57,9 +57,9 @@ This heuristic follows these steps for each devnode that the Plug and Play (PnP)
 
 For more information about the ACPI 3.0 interface, see [Advanced Configuration and Power Interface Specification Revision 3.0b](http://go.microsoft.com/fwlink/p/?linkid=145427).
 
- 
+ 
 
- 
+ 
 
 
 

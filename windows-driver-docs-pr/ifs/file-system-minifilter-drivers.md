@@ -1,6 +1,5 @@
 ---
 title: File System Minifilter Drivers
-author: windows-driver-content
 description: File System Minifilter Drivers
 ms.assetid: ef330fa1-2be5-472a-8868-56589d8befbc
 keywords:
@@ -30,9 +29,9 @@ This section includes the following topics, which describe file system minifilte
 
 [Miscellaneous Information](writing-a-filterunloadcallback-routine-for-a-minifilter-driver.md)
 
- 
+ 
 
- 
+ 
 
 
 

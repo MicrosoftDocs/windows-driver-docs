@@ -1,6 +1,5 @@
 ---
 title: Memory Buffer Life Cycle
-author: windows-driver-content
 description: Memory Buffer Life Cycle
 ms.assetid: abf43bf5-a4a3-4aeb-9ec5-3458252933d5
 ms.date: 04/20/2017
@@ -53,12 +52,12 @@ EvtIoRead(
     WDFIOTARGET ioTarget;
     BOOLEAN ret;
     ioTarget = WdfDeviceGetIoTarget(WdfIoQueueGetDevice(Queue));
- 
+
     status = WdfRequestRetrieveOutputMemory(Request, &memory);
     if (!NT_SUCCESS(status)) {
         goto End;
     }
- 
+
     status = WdfIoTargetFormatRequestForRead(ioTarget,
                                     Request,
                                     memory,
@@ -67,25 +66,24 @@ EvtIoRead(
     if (!NT_SUCCESS(status)) {
         goto End;
     }
- 
+
     WdfRequestSetCompletionRoutine(Request,
                                     RequestCompletionRoutine,
                                     WDF_NO_CONTEXT);
- 
+
     ret = WdfRequestSend (Request, ioTarget, WDF_NO_SEND_OPTIONS);
     if (!ret) {
         status = WdfRequestGetStatus (Request);
         goto End;
     }
- 
+
     return;
- 
+
 End:
     WdfRequestComplete(Request, status);
     return;
- 
-}
 
+}
 ```
 
 When the I/O target has completed the request, the framework calls the completion callback that the driver set for the request. The following code shows a simple completion callback:
@@ -101,14 +99,12 @@ RequestCompletionRoutine(
 {
     UNREFERENCED_PARAMETER(Target);
     UNREFERENCED_PARAMETER(Context);
- 
+
     WdfRequestComplete(Request, CompletionParams->IoStatus.Status);
- 
+
     return;
- 
+
 }
-
-
 ```
 
 When the driver calls [**WdfRequestComplete**](https://msdn.microsoft.com/library/windows/hardware/ff549945) from its completion callback, the framework deletes the memory object. The memory object handle that the driver retrieved is now invalid.
@@ -144,9 +140,9 @@ A driver can reuse the request objects that it creates, but it must reinitialize
 
 For sample code that reinitializes a request object, see the [Toaster](http://go.microsoft.com/fwlink/p/?linkid=256195) and [NdisEdge](http://go.microsoft.com/fwlink/p/?linkid=256154) samples that are provided with the KMDF release.
 
- 
 
- 
+
+
 
 
 

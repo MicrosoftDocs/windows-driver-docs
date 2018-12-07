@@ -1,6 +1,5 @@
 ---
 title: Handling IRP_MN_SET_POWER for Device Power States
-author: windows-driver-content
 description: Handling IRP_MN_SET_POWER for Device Power States
 ms.assetid: b4a19995-7933-41f7-b951-15ce0e4627da
 keywords: ["IRP_MN_SET_POWER", "device power states WDK kernel", "set-power IRPs WDK kernel", "DispatchPower routine", "passing IRPs down device stack WDK", "device set power IRPs WDK kernel", "power IRPs WDK kernel , device changes", "dispatch routines WDK power management"]
@@ -18,7 +17,7 @@ A device set-power IRP requests a change of state for a single device and is sen
 
 Drivers handle power-down IRPs as they travel down the stack. For power-up IRPs, drivers set [*IoCompletion*](https://msdn.microsoft.com/library/windows/hardware/ff548354) routines as the IRPs travel down the stack, and then handle the IRPs in the *IoCompletion* routines as the IRPs travel back up the stack. The drivers in a typical device stack handle a device set-power IRP as follows:
 
--   Most filter drivers should simply call [**IoMarkIrpPending**](https://msdn.microsoft.com/library/windows/hardware/ff549422), pass the IRP to the next-lower driver (see [Passing Power IRPs](passing-power-irps.md)), and return STATUS\_PENDING from the [*DispatchPower*](https://msdn.microsoft.com/library/windows/hardware/ff543354) routine. Some filter drivers, however, might first need to perform device-specific tasks, such as queuing incoming IRPs or saving device power state.
+-   Most filter drivers should simply call [**IoMarkIrpPending**](https://msdn.microsoft.com/library/windows/hardware/ff549422), pass the IRP to the next-lower driver (see [Passing Power IRPs](passing-power-irps.md)), and return STATUS\_PENDING from the [*DispatchPower*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine. Some filter drivers, however, might first need to perform device-specific tasks, such as queuing incoming IRPs or saving device power state.
 
 -   A function driver calls **IoMarkIrpPending**, performs device-specific tasks (such as completing pending I/O requests, queuing incoming I/O requests, saving device context, or changing device power), sets an *IoCompletion* routine if necessary, and passes the device power IRP to the next-lower driver (see [Passing Power IRPs](passing-power-irps.md)). It returns STATUS\_PENDING from its *DispatchPower* routine.
 
@@ -44,9 +43,9 @@ The exact steps a driver must take to handle a power IRP depend upon whether the
 
 [Handling Device Power-Up IRPs](handling-device-power-up-irps.md)
 
- 
+ 
 
- 
+ 
 
 
 

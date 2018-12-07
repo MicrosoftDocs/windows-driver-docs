@@ -1,6 +1,5 @@
 ---
 title: GDL Elements
-author: windows-driver-content
 description: GDL Elements
 ms.assetid: 9584b9aa-befe-45a3-9cf4-996e40083d3d
 keywords:
@@ -21,9 +20,9 @@ To program successfully in GDL, you should understand the following elements:
 
 [GDL Namespaces](gdl-namespaces.md)
 
- 
+ 
 
- 
+ 
 
 
 

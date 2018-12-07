@@ -1,6 +1,5 @@
 ---
 title: Handling End of Stream in AVStream Codecs
-author: windows-driver-content
 description: Handling End of Stream in AVStream Codecs
 ms.assetid: ee57137b-999a-449f-9f9d-50bc19e07ba8
 keywords:
@@ -25,9 +24,9 @@ The minidriver should then clear any cached information related to previously pr
 
 The minidriver should treat new input stream pointers that arrive subsequently as part of a new stream. An exception is if the EOS occurs as a result of a discontinuity in the media stream. If this is the case,the newly arriving stream pointer would have KSSTREAM\_HEADER\_OPTIONSF\_DATADISCONTINUITY or KSSTREAM\_HEADER\_OPTIONSF\_TIMEDISCONTINUITY, or both, flags set in KSSTREAM\_HEADER.**OptionsFlags**. If stream pointers with one of these flags set arrive at the input pin, the minidriver must set the same flags on the corresponding output pin's stream pointer.
 
- 
+ 
 
- 
+ 
 
 
 

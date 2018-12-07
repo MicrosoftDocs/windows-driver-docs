@@ -1,6 +1,5 @@
 ---
 title: Creating a "Hello World" WIA Minidriver UI Extension
-author: windows-driver-content
 description: Creating a "Hello World" WIA Minidriver UI Extension
 ms.assetid: 8de1f8ca-f618-44d7-b6dd-c02cdee8a556
 ms.date: 04/20/2017
@@ -352,9 +351,9 @@ extern "C" STDAPI DllGetClassObject(REFCLSID rclsid,REFIID riid,LPVOID *ppv)
 
 The preceding sample is an example of how to replace the default icon for your device. Replacing the default icon can be an ideal way to guide the user in using the correct device if there is more than one device installed. It will be more intuitive for the user if the icon resembles the attached device.
 
- 
+ 
 
- 
+ 
 
 
 

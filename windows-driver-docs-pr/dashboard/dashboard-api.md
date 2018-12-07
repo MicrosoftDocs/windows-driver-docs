@@ -1,7 +1,6 @@
 ---
 title: Hardware dashboard API
 description: The Microsoft Hardware APIs programmatically query and create submissions for hardware products within your organization's Windows Dev Center account.
-author: EliotSeattle
 ms.topic: article
 ms.date: 09/21/2018
 
@@ -13,7 +12,7 @@ ms.localizationpriority: medium
 Use the *Microsoft Hardware APIs* to programmatically query and create submissions for hardware products within your organization's Windows Dev Center account. These APIs are useful if your account manages many products, and you want to automate and optimize the submission process for these assets. These APIs use Azure Active Directory (Azure AD) to authenticate the calls from your app or service.
 The following steps describe the end-to-end process of using the Microsoft Hardware API:
 
-1. These APIs can only be used by developer accounts that belong to the [Windows Hardware Dev Center program](https://msdn.microsoft.com/windows/hardware/drivers/dashboard/get-started-with-the-hardware-dashboard).
+1. These APIs can only be used by developer accounts that belong to the [Partner Center program](https://msdn.microsoft.com/windows/hardware/drivers/dashboard/get-started-with-the-hardware-dashboard).
 
 2. Make sure that you have completed the prerequisites below.
 
@@ -40,7 +39,7 @@ Before you can use the Microsoft Hardware API, you must associate an Azure AD ap
 
 4. Click **Add new** key. On the following screen, copy down the **Key** value. You won't be able to access this info again after you leave this page. For more information, see [Manage keys for an Azure AD application](https://docs.microsoft.com/windows/uwp/publish/add-users-groups-and-azure-ad-applications#manage-keys).
 
-5. Finally, ensure that the AD application has the required roles to manage and publish driver submissions. First, in the Hardware Dev Center, in the **Settings** panel, click **Users**.
+5. Finally, ensure that the AD application has the required roles to manage and publish driver submissions. First, in the Partner Center, in the **Settings** panel, click **Users**.
 
     ![an image showing the Users option on the Settings menu](images/settings-menu-users-option.png)
 

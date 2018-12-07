@@ -1,6 +1,5 @@
 ---
 title: Mapping WIA Properties That Need No Changes
-author: windows-driver-content
 description: Mapping WIA Properties That Need No Changes
 ms.assetid: ceb0fe83-9803-4ba5-9a9f-7c722389db0b
 ms.date: 04/20/2017
@@ -309,7 +308,7 @@ There are Windows XP properties that have the same property IDs and property nam
 </tbody>
 </table>
 
- 
+ 
 
 <a href="" id="note-a-"></a>Note a:  
 FEEDER item (ADF) or FEEDER context on the Windows XP root or child item (WIA\_DPS\_DOCUMENT\_HANDLING\_SELECT is set to FEEDER).
@@ -317,9 +316,9 @@ FEEDER item (ADF) or FEEDER context on the Windows XP root or child item (WIA\_D
 <a href="" id="note-b-"></a>Note b:  
 FLATBED item or FLATBED context on the Windows XP root or child item (WIA\_DPS\_DOCUMENT\_HANDLING\_SELECT is set to FLATBED).
 
- 
+ 
 
- 
+ 
 
 
 

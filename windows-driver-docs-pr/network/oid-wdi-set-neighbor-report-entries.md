@@ -1,6 +1,5 @@
 ---
 title: OID_WDI_SET_NEIGHBOR_REPORT_ENTRIES
-author: windows-driver-content
 description: OID_WDI_SET_NEIGHBOR_REPORT_ENTRIES sends the list of neighbor reports received from the AP to the LE. This is sent as soon as the UE receives the neighbor report from the currently connected AP.
 ms.assetid: F77FDA4A-3029-4F6E-A82E-B318543484FF
 ms.date: 07/18/2017
@@ -18,7 +17,7 @@ OID\_WDI\_SET\_NEIGHBOR\_REPORT\_ENTRIES sends the list of neighbor reports rece
 |-------|--------------------------|---------------------------------|
 | Port  | No                       | 1                               |
 
- 
+ 
 
 ## Set property parameters
 
@@ -27,7 +26,7 @@ OID\_WDI\_SET\_NEIGHBOR\_REPORT\_ENTRIES sends the list of neighbor reports rece
 |---------------------------------------------------------------------------------|--------------------------------|----------|-------------------------------|
 | [**WDI\_TLV\_NEIGHBOR\_REPORT\_ENTRY**](https://msdn.microsoft.com/library/windows/hardware/mt269133) | X                              |          | The list of neighbor reports. |
 
- 
+ 
 
 ## Set property results
 
@@ -57,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

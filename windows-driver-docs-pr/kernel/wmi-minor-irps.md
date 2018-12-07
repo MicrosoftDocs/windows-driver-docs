@@ -1,6 +1,5 @@
 ---
 title: WMI Minor IRPs
-author: windows-driver-content
 description: WMI Minor IRPs
 ms.date: 08/12/2017
 ms.assetid: 5788294f-2145-4381-9b06-3b138b2d26df
@@ -15,7 +14,7 @@ ms.localizationpriority: medium
 
 This section describes the [Windows Management Instrumentation](https://msdn.microsoft.com/library/windows/hardware/ff547139) IRPs that are part of the WMI extensions to WDM. All WMI IRPs use the major code [**IRP\_MJ\_SYSTEM\_CONTROL**](irp-mj-system-control.md) and a minor code that indicates the specific WMI request. The WMI kernel-mode component can send WMI IRPs any time following a driver's successful registration as a supplier of WMI data. WMI IRPs typically get sent when a user-mode data consumer has requested WMI data.
 
-All drivers must set a dispatch table entry point for a [*DispatchSystemControl*](https://msdn.microsoft.com/library/windows/hardware/ff543412) routine to handle WMI requests.
+All drivers must set a dispatch table entry point for a [*DispatchSystemControl*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine to handle WMI requests.
 
 If a driver registers as a WMI data provider by calling [**IoWMIRegistrationControl**](https://msdn.microsoft.com/library/windows/hardware/ff550480), it must handle WMI IRPs using one of the techniques described in [Handling WMI Requests](https://msdn.microsoft.com/library/windows/hardware/ff546968).
 
@@ -47,9 +46,9 @@ This section describes the following system-defined WMI minor function codes:
 
 If the driver receives an IRP containing any other IRP minor function code, it should forward the IRP to the next-lower driver.
 
- 
+ 
 
- 
+ 
 
 
 

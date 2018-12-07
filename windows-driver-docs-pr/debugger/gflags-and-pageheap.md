@@ -3,7 +3,6 @@ title: GFlags and PageHeap
 description: GFlags and PageHeap
 ms.assetid: 9ced92d9-b37c-4db5-b3f9-fa2fe5325e57
 keywords: ["GFlags, GFlags and PageHeap", "PageHeap (pageheap.exe)"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -30,9 +29,9 @@ Use care in interpreting the **Enable page heap** check box for an image file in
 
 To determine whether full or standard page heap verification is enabled for a program, at the command line, type **gflags /p**. In the resulting display, **traces** indicates that standard page heap verification is enabled for the program and **full traces** indicates that full page heap verification is enabled for the program.
 
- 
+ 
 
- 
+ 
 
 
 

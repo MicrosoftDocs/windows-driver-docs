@@ -17,9 +17,9 @@ ms.localizationpriority: medium
 
 User-defined clip planes are enabled for the latest DirectX release. These work just like other clip planes but they are settable by the application. The driver must handle these planes by responding to the D3DDP2OP\_SETCLIPPLANE operation code in [**D3dDrawPrimitives2**](https://msdn.microsoft.com/library/windows/hardware/ff544704).
 
- 
+ 
 
- 
+ 
 
 
 

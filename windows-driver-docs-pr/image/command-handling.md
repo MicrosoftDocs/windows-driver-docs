@@ -1,6 +1,5 @@
 ---
 title: Command Handling
-author: windows-driver-content
 description: Command Handling
 ms.assetid: 1b940585-8228-4857-92bf-c77c789f6ad5
 ms.date: 04/20/2017
@@ -19,9 +18,9 @@ The command issued by the WIA application does not go directly to the WIA minidr
 
 In some cases, the command might require the minidriver to create a new child driver item. For example, a digital still camera device might support the **TakePicture** command. If the minidriver receives this command, it instructs the camera to take a picture. When the camera carries out the request to take a picture, the camera creates a new image on its media, and the WIA minidriver adds a new driver item to its item tree.
 
- 
+ 
 
- 
+ 
 
 
 

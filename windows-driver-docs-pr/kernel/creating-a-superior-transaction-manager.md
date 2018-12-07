@@ -1,6 +1,5 @@
 ---
 title: Creating a Superior Transaction Manager
-author: windows-driver-content
 description: Creating a Superior Transaction Manager
 ms.assetid: 6f6bf61a-fe53-47b5-9559-f76334969af8
 keywords: ["transaction managers WDK KTM", "superior transaction managers WDK KTM", "enlistments WDK KTM , superior enlistments", "superior enlistments WDK KTM", "enlistments WDK KTM , subordinate enlistments", "subordinate enlistments WDK KTM"]
@@ -45,9 +44,9 @@ A TPS that includes a superior transaction manager cannot use [single-phase comm
 
 During a recovery operation, if KTM cannot determine the outcome of a transaction, it sends a TRANSACTION\_NOTIFY\_RECOVER\_QUERY notification to the superior transaction manager. In response, the superior transaction manager must call **ZwCommitEnlistment** if the transaction can be committed or **ZwRollbackEnlistment** if the transaction should be rolled back. If the superior transaction manager cannot determine the outcome of a transaction, it should not respond to the TRANSACTION\_NOTIFY\_RECOVER\_QUERY notification until it can determine an outcome.
 
- 
+ 
 
- 
+ 
 
 
 

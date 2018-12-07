@@ -1,6 +1,5 @@
 ---
 title: 3rd party filter drivers
-author: windows-driver-content
 ms.assetid: 2EAFE726-2266-4E40-AC51-0025BF6069B6
 description: Sample filter drivers in the Microsoft Windows Driver Kit (WDK).
 ms.date: 04/20/2017
@@ -20,7 +19,7 @@ Kbfiltr and Moufiltr demonstrate how to filter I/O requests and add callback rou
 
 **Note**   The design of the Terminal Server for Windows 2000 and later does not support using the sample keyboard and mouse filter drivers to filter input from devices physically installed on a remote client. A filter driver installed on a Terminal Server can only be used to filter the input from the devices physically installed on a Terminal Server. This is a consequence of the way the TermDD.sys driver for the Terminal Server handles input from remote clients.
 
- 
+ 
 
 Kbfiltr and Moufiltr support Plug and Play and power management.
 
@@ -114,9 +113,9 @@ I8042prt passes pointers to the mouse device callbacks in a [**INTERNAL\_I8042\_
 
 After a filter driver receives a hook device request, it saves the I8042prt callback pointers for use in the filter driver's ISR callback.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Creating a Per-Stream Context
-author: windows-driver-content
 description: Creating a Per-Stream Context
 ms.assetid: e33dba3b-50f7-43d8-b7e8-b7c2c9034d51
 keywords:
@@ -35,7 +34,7 @@ ctx = ExAllocatePoolWithTag(NonPagedPool,
 
 **Note**  If your filter allocates the per-stream context structure from paged pool, it cannot call [**ExAllocatePoolWithTag**](https://msdn.microsoft.com/library/windows/hardware/ff544520) from its create completion routine. This is because completion routines can be called at IRQL DISPATCH\_LEVEL.
 
- 
+ 
 
 ### <span id="Initializing_the_Per-Stream_Context"></span><span id="initializing_the_per-stream_context"></span><span id="INITIALIZING_THE_PER-STREAM_CONTEXT"></span>Initializing the Per-Stream Context
 
@@ -43,13 +42,13 @@ File system filter drivers call [**FsRtlInitPerStreamContext**](https://msdn.mic
 
 **Note**  If your filter driver creates only one per-stream context structure per file stream, it should pass **NULL** for the *InstanceId* parameter to [**FsRtlInitPerStreamContext**](https://msdn.microsoft.com/library/windows/hardware/ff546178).
 
- 
+ 
 
 A filter driver can initialize a per-stream context at any time. However, it must do so before associating the context with a file stream.
 
- 
+ 
 
- 
+ 
 
 
 

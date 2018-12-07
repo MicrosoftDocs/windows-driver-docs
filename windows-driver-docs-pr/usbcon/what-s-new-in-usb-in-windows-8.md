@@ -1,7 +1,6 @@
 ---
 Description: This topic summarizes the new features and improvements for Universal Serial Bus (USB) client drivers in Windows 8.
 title: Windows 8 - What's new for USB
-author: windows-driver-content
 ms.date: 05/05/2018
 ms.localizationpriority: medium
 ---
@@ -67,7 +66,7 @@ A client driver that intends to use the capabilities of the USB driver stack for
 | To specify a client contract version and with the USB driver stack | Call the [**WdfUsbTargetDeviceCreateWithParameters**](https://msdn.microsoft.com/library/windows/hardware/hh439428) method.                                      | Call the [**USBD\_CreateHandle**](https://msdn.microsoft.com/library/windows/hardware/hh406241) routine.                                                |
 | To query for a particular capability                               | Call [**WdfUsbTargetDeviceQueryUsbCapability**](https://msdn.microsoft.com/library/windows/hardware/hh439434) and specify the GUID of the capability to query. | Call [**USBD\_QueryUsbCapability**](https://msdn.microsoft.com/library/windows/hardware/hh406230) and specify the GUID of the capability to query. |
 
- 
+ 
 
 ## New Routines for Allocating and Building URBs
 

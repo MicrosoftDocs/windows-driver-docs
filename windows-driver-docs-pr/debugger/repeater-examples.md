@@ -3,7 +3,6 @@ title: Repeater Examples
 description: Repeater Examples
 ms.assetid: 83aff647-65a7-409f-adce-254305395775
 keywords: ["repeater, examples"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -56,9 +55,9 @@ E:\Debugging Tools for Windows> dbgsrv -t tcp:port=1025,clicon=127.0.0.20
 
 For a more complicated example using repeaters, see [Two Firewalls](two-firewalls.md).
 
- 
+ 
 
- 
+ 
 
 
 

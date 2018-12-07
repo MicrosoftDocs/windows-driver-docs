@@ -1,6 +1,5 @@
 ---
 title: ATA Port I/O Model
-author: windows-driver-content
 description: ATA Port I/O Model
 ms.assetid: 6feaf2c4-63b2-4ab2-9d4d-7259406be652
 keywords:
@@ -27,8 +26,8 @@ For more information about the I/O model of the Storport driver, see [Storport I
 
 For more information about the I/O model of the SCSI port driver, see [SCSI Port I/O Model](scsi-port-i-o-model.md).
 
- 
+ 
 
- 
+ 
 
 

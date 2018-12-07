@@ -3,7 +3,6 @@ title: wudfext.umdevstack
 description: The wudfext.umdevstack extension displays detailed information about a device stack in the host process.
 ms.assetid: 3cce0e30-ea04-4587-9208-b6a7d51fd44a
 keywords: ["wudfext.umdevstack Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -57,7 +56,7 @@ Displays information about the internal framework.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="additional_information1"></span><span id="ADDITIONAL_INFORMATION1"></span>Additional Information
 
@@ -80,9 +79,9 @@ Device Stack: 0x0034e4e0  Pdo Name: \Device\00000057
         IDriverEntry: WUDFEchoDriver!CMyDriver 0x000f2c70
 ```
 
- 
+ 
 
- 
+ 
 
 
 

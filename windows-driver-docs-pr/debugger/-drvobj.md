@@ -3,8 +3,7 @@ title: drvobj
 description: The drvobj extension displays detailed information about a DRIVER_OBJECT.
 ms.assetid: 98f3cacf-311c-4000-8336-4964cc2cb9b0
 keywords: ["drvobj Windows Debugging"]
-ms.author: domars
-ms.date: 05/23/2017
+ms.date: 11/16/2018
 topic_type:
 - apiref
 api_name:
@@ -21,7 +20,7 @@ The **!drvobj** extension displays detailed information about a DRIVER\_OBJECT.
 
 ```dbgcmd
 !drvobj DriverObject [Flags] 
-```dbgcmd
+```
 
 ## <span id="ddk__drvobj_dbg"></span><span id="DDK__DRVOBJ_DBG"></span>Parameters
 
@@ -43,30 +42,14 @@ Lists with detailed information the device objects owned by the driver (requires
 
 ### <span id="DLL"></span><span id="dll"></span>DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Kdextx86.dll</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Kdexts.dll</p></td>
-</tr>
-</tbody>
-</table>
+Kdexts.dll
 
- 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
 See [Plug and Play Debugging](plug-and-play-debugging.md) for examples and applications of this extension command. For information about driver objects, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
-Remarks
+## Remarks
 -------
 
 If *DriverObject* specifies the name of the device but supplies no prefix, the prefix "\\Driver\\" is assumed. Note that this command will check to see if *DriverObject* is a valid address or device name before using the expression evaluator.
@@ -96,9 +79,9 @@ Device Object list:
 
 You can also use [**!devobj 809d50d0**](-devobj.md) to get information about the device object.
 
- 
+ 
 
- 
+ 
 
 
 

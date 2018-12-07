@@ -1,6 +1,5 @@
 ---
 title: Unsynchronized IdeHwBuildIo Routine
-author: windows-driver-content
 description: Unsynchronized IdeHwBuildIo Routine
 ms.assetid: 47e32f05-5c89-4423-b515-c774b94a9b84
 keywords:
@@ -27,8 +26,8 @@ The Storport I/O model uses a similar technique to minimize the time that is spe
 
 All processing of an I/O request that requires access to critical system structures, such as the device extension, should be done within the [**IdeHwStartIo**](https://msdn.microsoft.com/library/windows/hardware/ff559003) routine.
 
- 
+ 
 
- 
+ 
 
 

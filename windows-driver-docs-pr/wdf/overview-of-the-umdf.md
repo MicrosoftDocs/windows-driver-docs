@@ -1,6 +1,5 @@
 ---
 title: Overview of UMDF
-author: windows-driver-content
 description: This topic provides a high-level overview of UMDF components and describes how your driver interacts with system-supplied components.
 ms.assetid: b36c9fad-1963-4d29-a1e7-890de77fed50
 keywords:
@@ -43,9 +42,9 @@ The following diagram shows how driver host processes, driver manager, and refle
 
 ![umdf components including up and down device objects in reflector](images/umdfarch3.gif)
 
- 
+ 
 
- 
+ 
 
 
 

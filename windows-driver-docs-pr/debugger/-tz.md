@@ -3,7 +3,6 @@ title: tz
 description: The tz extension displays the specified power thermal zone structure.
 ms.assetid: f3cc9e54-a0db-4095-b707-380ec1dacf59
 keywords: ["thermal zone", "tz Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -48,7 +47,7 @@ The address of a power thermal zone that you want to display. If this parameter 
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -59,9 +58,9 @@ Remarks
 
 To stop execution at any time, press CTRL+BREAK (in WinDbg) or CTRL+C (in KD).
 
- 
+ 
 
- 
+ 
 
 
 

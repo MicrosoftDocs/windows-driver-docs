@@ -1,6 +1,5 @@
 ---
 title: Optional Flatbed Item Properties
-author: windows-driver-content
 description: Optional Flatbed Item Properties
 ms.assetid: 6a4a42f6-7a6e-49da-845b-a857c12c4cfd
 ms.date: 04/20/2017
@@ -53,9 +52,9 @@ The WIA flatbed scanner item can optionally support the following WIA properties
 
 [**WIA\_IPS\_YSCALING**](https://msdn.microsoft.com/library/windows/hardware/ff552676)
 
- 
+ 
 
- 
+ 
 
 
 

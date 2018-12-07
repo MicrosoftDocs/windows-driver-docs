@@ -1,6 +1,5 @@
 ---
 title: Driver Features
-author: windows-driver-content
 description: Driver Features
 ms.assetid: 56efebda-970f-4885-9c5f-1eac97aecfdd
 ms.date: 04/20/2017
@@ -215,7 +214,7 @@ The following table lists the currently supported driver features. Each row in t
 </tbody>
 </table>
 
- 
+ 
 
 ### Notes on Driver Feature Keywords
 
@@ -306,7 +305,7 @@ The following table lists the currently supported driver features. Each row in t
         </tbody>
         </table>
 
-         
+         
 
 When **GetOptions** is called on driver feature keywords, if a requested feature keyword is not recognized, or if the feature keyword is recognized but not supported in the current [*document-sticky*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-document-sticky) or [*printer-sticky*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-printer-sticky) mode (see [Replacing Driver-Supplied Property Sheet Pages](replacing-driver-supplied-property-sheet-pages.md)), the feature will simply be ignored and the output buffer will not contain its feature/option keyword pair.
 
@@ -355,13 +354,13 @@ The order of feature/option keyword pairs in the buffer pointed to by *pmszFeatu
 </tbody>
 </table>
 
- 
+ 
 
 For an explanation of why these results occur, see Note 3 on **%MetafileSpooling**, above.
 
- 
+ 
 
- 
+ 
 
 
 

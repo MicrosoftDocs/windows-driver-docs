@@ -1,6 +1,5 @@
 ---
 title: Device Tree
-author: windows-driver-content
 description: Device Tree
 ms.assetid: 3220389a-06cc-4a43-8164-b785d1a16365
 keywords: ["devnodes WDK PnP", "nonpresent devices WDK", "PnP WDK kernel , device trees", "Plug and Play WDK kernel , device trees", "removal relations WDK PnP", "ejection relations WDK PnP", "device trees WDK PnP", "trees WDK PnP", "device nodes WDK PnP", "child devices WDK PnP", "hierarchy WDK PnP", "relationships WDK PnP"]
@@ -34,9 +33,9 @@ There are other relationships between devices on the machine besides the hierarc
 
 You cannot make any assumptions about the order in which the device tree is built, except that a bus device is configured before any of its child devices. For example, you should not assume that one device on a bus is configured before another device on the bus.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: Loading a Theme
 description: Loading a Theme
 ms.assetid: 375b7365-6526-4282-893e-91b58a14c31f
 keywords: ["themes, loading"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -23,9 +22,9 @@ After all of your workspace data has been cleared, run one of the themes. These 
 
 After you have loaded a theme, you may alter it to more closely suit your preferences. For more details on some common options, see [Customizing a Theme](customizing-a-theme.md).
 
- 
+ 
 
- 
+ 
 
 
 

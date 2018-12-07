@@ -1,6 +1,5 @@
 ---
 title: Supporting Point and Print During Printer Installations
-author: windows-driver-content
 description: Supporting Point and Print During Printer Installations
 ms.assetid: 70e65c7b-bba2-4da1-ac80-9719f8005c50
 keywords:
@@ -23,9 +22,9 @@ To support Point and Print technology, it is necessary to indicate which driver-
 
 [Point and Print DLLs](point-and-print-dlls.md)
 
- 
+ 
 
- 
+ 
 
 
 

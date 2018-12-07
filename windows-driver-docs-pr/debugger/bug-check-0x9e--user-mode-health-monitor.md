@@ -3,7 +3,6 @@ title: Bug Check 0x9E USER_MODE_HEALTH_MONITOR
 description: The USER_MODE_HEALTH_MONITOR bug check has a value of 0x0000009E. This bug check indicates that one or more critical user-mode components failed to satisfy a health check.
 ms.assetid: 5ad56234-5150-4acb-828d-198c2e5fb9b6
 keywords: ["Bug Check 0x9E USER_MODE_HEALTH_MONITOR", "USER_MODE_HEALTH_MONITOR"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -55,7 +54,7 @@ The USER\_MODE\_HEALTH\_MONITOR bug check has a value of 0x0000009E. This bug ch
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -66,9 +65,9 @@ Kernel components can extend watchdog timer functionality to user mode by period
 
 On the Microsoft Windows Server 2003, Enterprise Edition, Windows Server 2003, Datacenter Edition, and Windows 2000 with Service Pack 4 (SP4) operating systems, a user-mode hang can also cause this bug check. The bug check occurs in this situation only if the user has set **HangRecoveryAction** to a value of 3.
 
- 
+ 
 
- 
+ 
 
 
 

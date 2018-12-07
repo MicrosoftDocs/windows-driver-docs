@@ -1,6 +1,5 @@
 ---
 title: HIDI2C Device-Specific Method (_DSM)
-author: windows-driver-content
 description: The _DSM method is defined in section 9.14.1, \ 0034;_DSM (Device Specific Method) \ 0034;, in the ACPI 5.0 specification.
 ms.assetid: D78077F4-9995-4DC6-9DF6-89D0F8E0C545
 ms.date: 04/20/2017
@@ -28,11 +27,11 @@ For the HIDI2C class of devices, Function 1 is defined as follows:
 An integer containing the HidDescriptorAddress. This address is the register offset in the I2C device at which the HID descriptor(s) can be read.
 **Note**  Function index 0 of every \_DSM is a query function that returns the set of supported function indexes, and is always required. For more information, see section 9.14.1, "\_DSM (Device Specific Method)", in the [ACPI 5.0 specification](https://www.uefi.org/specifications).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

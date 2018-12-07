@@ -1,6 +1,5 @@
 ---
 title: Writing WIA Properties by a Driver
-author: windows-driver-content
 description: Writing WIA Properties by a Driver
 ms.assetid: 6d2164ac-0fbc-4ecb-b3bf-a46efbe07f51
 ms.date: 04/20/2017
@@ -174,9 +173,9 @@ HRESULT _stdcall CWIADevice::drvValidateItemProperties(
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

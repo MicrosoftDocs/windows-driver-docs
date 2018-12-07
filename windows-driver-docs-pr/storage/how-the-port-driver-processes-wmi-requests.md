@@ -1,6 +1,5 @@
 ---
 title: How the Port Driver Processes WMI Requests
-author: windows-driver-content
 description: How the Port Driver Processes WMI Requests
 ms.assetid: 0b56d382-3c4b-4192-be49-3bad50b0a0ed
 keywords:
@@ -34,49 +33,49 @@ To use the [Using the SCSI Port WMI Library](using-the-scsi-port-wmi-library.md)
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<strong>IRP_MN_REGINFO</strong>](https://msdn.microsoft.com/library/windows/hardware/ff551731)</p></td>
-<td align="left"><p>[<strong>HwScsiWmiQueryReginfo</strong>](https://msdn.microsoft.com/library/windows/hardware/ff557344)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff551731" data-raw-source="[&lt;strong&gt;IRP_MN_REGINFO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff551731)"><strong>IRP_MN_REGINFO</strong></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff557344" data-raw-source="[&lt;strong&gt;HwScsiWmiQueryReginfo&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff557344)"><strong>HwScsiWmiQueryReginfo</strong></a></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>IRP_MN_QUERY_ALL_DATA</strong>](https://msdn.microsoft.com/library/windows/hardware/ff551650)</p></td>
-<td align="left"><p>[<strong>HwScsiWmiQueryDataBlock</strong>](https://msdn.microsoft.com/library/windows/hardware/ff557340)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff551650" data-raw-source="[&lt;strong&gt;IRP_MN_QUERY_ALL_DATA&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff551650)"><strong>IRP_MN_QUERY_ALL_DATA</strong></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff557340" data-raw-source="[&lt;strong&gt;HwScsiWmiQueryDataBlock&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff557340)"><strong>HwScsiWmiQueryDataBlock</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>IRP_MN_QUERY_SINGLE_INSTANCE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff551718)</p></td>
-<td align="left"><p>[<strong>HwScsiWmiQueryDataBlock</strong>](https://msdn.microsoft.com/library/windows/hardware/ff557340)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff551718" data-raw-source="[&lt;strong&gt;IRP_MN_QUERY_SINGLE_INSTANCE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff551718)"><strong>IRP_MN_QUERY_SINGLE_INSTANCE</strong></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff557340" data-raw-source="[&lt;strong&gt;HwScsiWmiQueryDataBlock&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff557340)"><strong>HwScsiWmiQueryDataBlock</strong></a></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>IRP_MN_CHANGE_SINGLE_INSTANCE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550831)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff550831" data-raw-source="[&lt;strong&gt;IRP_MN_CHANGE_SINGLE_INSTANCE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff550831)"><strong>IRP_MN_CHANGE_SINGLE_INSTANCE</strong></a></p></td>
 <td align="left"><p><em>HwScsiWmiSetDataBlock</em></p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>IRP_MN_CHANGE_SINGLE_ITEM</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550836)</p></td>
-<td align="left"><p>[<strong>HwScsiWmiSetDataItem</strong>](https://msdn.microsoft.com/library/windows/hardware/ff557357)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff550836" data-raw-source="[&lt;strong&gt;IRP_MN_CHANGE_SINGLE_ITEM&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff550836)"><strong>IRP_MN_CHANGE_SINGLE_ITEM</strong></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff557357" data-raw-source="[&lt;strong&gt;HwScsiWmiSetDataItem&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff557357)"><strong>HwScsiWmiSetDataItem</strong></a></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>IRP_MN_EXECUTE_METHOD</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550868)</p></td>
-<td align="left"><p>[<strong>HwScsiWmiExecuteMethod</strong>](https://msdn.microsoft.com/library/windows/hardware/ff557332)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff550868" data-raw-source="[&lt;strong&gt;IRP_MN_EXECUTE_METHOD&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff550868)"><strong>IRP_MN_EXECUTE_METHOD</strong></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff557332" data-raw-source="[&lt;strong&gt;HwScsiWmiExecuteMethod&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff557332)"><strong>HwScsiWmiExecuteMethod</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>IRP_MN_ENABLE_EVENTS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550859)</p></td>
-<td align="left"><p>[<strong>HwScsiWmiFunctionControl</strong>](https://msdn.microsoft.com/library/windows/hardware/ff557338)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff550859" data-raw-source="[&lt;strong&gt;IRP_MN_ENABLE_EVENTS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff550859)"><strong>IRP_MN_ENABLE_EVENTS</strong></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff557338" data-raw-source="[&lt;strong&gt;HwScsiWmiFunctionControl&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff557338)"><strong>HwScsiWmiFunctionControl</strong></a></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>IRP_MN_DISABLE_EVENTS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550851)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff550851" data-raw-source="[&lt;strong&gt;IRP_MN_DISABLE_EVENTS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff550851)"><strong>IRP_MN_DISABLE_EVENTS</strong></a></p></td>
 <td align="left"><p><em>HwScsiWmiFunctionControl</em></p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>IRP_MN_ENABLE_COLLECTION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550857)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff550857" data-raw-source="[&lt;strong&gt;IRP_MN_ENABLE_COLLECTION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff550857)"><strong>IRP_MN_ENABLE_COLLECTION</strong></a></p></td>
 <td align="left"><p><em>HwScsiWmiFunctionControl</em></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>IRP_MN_DISABLE_COLLECTION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550848)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff550848" data-raw-source="[&lt;strong&gt;IRP_MN_DISABLE_COLLECTION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff550848)"><strong>IRP_MN_DISABLE_COLLECTION</strong></a></p></td>
 <td align="left"><p><em>HwScsiWmiFunctionControl</em></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Each miniport driver callback routine should provide the functionality associated with the corresponding WMI minor IRP number or numbers. Some routines, such as *HwScsiWmiFunctionControl*, must be able to provide functionality that corresponds to several WMI minor IRP numbers.
 
@@ -94,9 +93,9 @@ The following diagram illustrates the changes that a WMI request undergoes from 
 
 4.  The miniport driver calls the SCSI Port WMI library dispatch routine to process the SRB. For more information, see [Using the SCSI Port WMI Library](using-the-scsi-port-wmi-library.md).
 
- 
+ 
 
- 
+ 
 
 
 

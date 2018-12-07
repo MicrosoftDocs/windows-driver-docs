@@ -26,9 +26,9 @@ To safely discover the installed device setup classes, and to query and modify t
 
 4.  Use [**SetupDiOpenClassRegKey**](https://msdn.microsoft.com/library/windows/hardware/ff552065) or [**SetupDiOpenClassRegKeyEx**](https://msdn.microsoft.com/library/windows/hardware/ff552067) to access the persistent registry storage for custom device setup class settings.
 
- 
+ 
 
- 
+ 
 
 
 

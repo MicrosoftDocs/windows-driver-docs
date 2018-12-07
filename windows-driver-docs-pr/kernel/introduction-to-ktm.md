@@ -1,6 +1,5 @@
 ---
 title: Introduction to KTM
-author: windows-driver-content
 description: Introduction to KTM
 ms.assetid: e34e19b7-58f9-474a-8819-b7099bfe4726
 keywords: ["Kernel Transaction Manager WDK , about Kernel Transaction Manager", "KTM WDK , about KTM", "transaction processing systems WDK KTM", "TPS WDK KTM"]
@@ -29,9 +28,9 @@ This section includes the following topics:
 
 [Additional Transactional Interfaces](additional-transactional-interfaces.md)
 
- 
+ 
 
- 
+ 
 
 
 

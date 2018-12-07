@@ -23,9 +23,9 @@ The following lists of Remote NDIS OIDs are broken down into two groups -- gener
 -   [Optional Power Management OIDs](optional-power-management-oids.md)
 -   [Optional Network Wake Up OIDs](optional-network-wake-up-oids.md)
 
- 
+ 
 
- 
+ 
 
 
 

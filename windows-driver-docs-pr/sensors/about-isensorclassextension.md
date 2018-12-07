@@ -1,6 +1,5 @@
 ---
 title: About ISensorClassExtension
-author: windows-driver-content
 description: About ISensorClassExtension
 ms.assetid: 1f55f28a-796a-40e5-9995-e6a28761b9a4
 ms.date: 07/20/2018
@@ -28,9 +27,9 @@ Sensor drivers forward two kinds of UMDF calls to the class extension:
 
 -   Notifications about clients closing file handles that are received through [**IFileCallbackCleanup::OnCleanupFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-ifilecallbackcleanup-oncleanupfile). To forward an I/O request cancellation, the driver must call [**ISensorClassExtension::CleanupFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsclassextension/nf-sensorsclassextension-isensorclassextension-cleanupfile).
 
- 
+ 
 
- 
+ 
 
 
 

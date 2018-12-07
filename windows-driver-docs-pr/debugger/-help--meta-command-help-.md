@@ -3,7 +3,6 @@ title: .help (Meta-Command Help)
 description: The .help command displays a list of all meta-commands.
 ms.assetid: aafd873d-3280-4873-8149-d43f684ec01d
 keywords: [".help (Meta-Command Help) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -56,16 +55,16 @@ Displays output using [Debugger Markup Language](debugger-markup-language-comman
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
 
 For more information about meta-commands, use the **.help** command. For more information about standard commands, use the [**?**](---command-help-.md) command. For more information about extension commands, use the [**!help**](-help.md) extension.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: Using DBH
 description: Using DBH
 ms.assetid: c544013d-e925-40bf-b76d-bf9cefb9fd6d
 keywords: ["DBH, using"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -85,9 +84,9 @@ For information on symbol decorations, see [Public and Private Symbols](public-a
 
 To exit DBH, use the **q** command at the DBH prompt.
 
- 
+ 
 
- 
+ 
 
 
 

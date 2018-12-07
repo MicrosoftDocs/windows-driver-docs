@@ -1,6 +1,5 @@
 ---
 title: OID_GEN_RECEIVE_HASH
-author: windows-driver-content
 description: As a query, NDIS and overlying drivers use the OID_GEN_RECEIVE_HASH OID to obtain the current receive hash calculation settings of a miniport adapter.
 ms.assetid: be120dab-c98d-418f-8777-e2fb37b774a1
 ms.date: 08/08/2017
@@ -27,11 +26,11 @@ An overlying driver can use the OID\_GEN\_RECEIVE\_HASH OID to enable and config
 
 **Note**  Protocol drivers must disable receive hash calculations before they enable RSS. If RSS is enabled, a protocol driver disables RSS before it enables receive hash calculations. A miniport driver should fail a set request with **NDIS\_STATUS\_INVALID\_OID** or **NDIS\_STATUS\_NOT\_SUPPORTED** to enable receive hash calculations if [OID\_GEN\_RECEIVE\_SCALE\_PARAMETERS](oid-gen-receive-scale-parameters.md) is currently enabled.
 
- 
+ 
 
 **Note**  The secret key is appended after the [**NDIS\_RECEIVE\_HASH\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff567190) structure members.
 
- 
+ 
 
 Requirements
 ------------
@@ -58,9 +57,9 @@ Requirements
 
 [**NDIS\_RECEIVE\_HASH\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff567190)
 
- 
+ 
 
- 
+ 
 
 
 

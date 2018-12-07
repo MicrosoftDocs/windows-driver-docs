@@ -1,6 +1,5 @@
 ---
 title: Flatbed Scanners that Support Film Scanning
-author: windows-driver-content
 description: Flatbed Scanners that Support Film Scanning
 ms.assetid: ee77c2c6-41a2-43dd-90e4-baf902b46f69
 ms.date: 04/20/2017
@@ -23,11 +22,11 @@ The film scanner item always represents the entire film scanning surface. The va
 
 **Note**   Overlapping frame selection areas are allowed in a film scanning session.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

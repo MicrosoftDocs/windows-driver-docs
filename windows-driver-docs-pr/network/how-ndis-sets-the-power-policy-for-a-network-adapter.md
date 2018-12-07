@@ -49,45 +49,45 @@ When a NIC is enumerated, NDIS queries the NIC's capabilities by issuing, in add
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[DeviceD1 and DeviceD2](https://msdn.microsoft.com/library/windows/hardware/ff543085)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff543085" data-raw-source="[DeviceD1 and DeviceD2](https://msdn.microsoft.com/library/windows/hardware/ff543085)">DeviceD1 and DeviceD2</a></p></td>
 <td align="left"><p>TRUE if the device supports the D1 power state.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[DeviceD1 and DeviceD2](https://msdn.microsoft.com/library/windows/hardware/ff543085)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff543085" data-raw-source="[DeviceD1 and DeviceD2](https://msdn.microsoft.com/library/windows/hardware/ff543085)">DeviceD1 and DeviceD2</a></p></td>
 <td align="left"><p>TRUE if the device supports the D2 power state.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[WakeFromD0, WakeFromD1, WakeFromD2, and WakeFromD3](https://msdn.microsoft.com/library/windows/hardware/ff565609)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565609" data-raw-source="[WakeFromD0, WakeFromD1, WakeFromD2, and WakeFromD3](https://msdn.microsoft.com/library/windows/hardware/ff565609)">WakeFromD0, WakeFromD1, WakeFromD2, and WakeFromD3</a></p></td>
 <td align="left"><p>TRUE if the device can respond to an external wake signal while in the D0 power state.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[WakeFromD0, WakeFromD1, WakeFromD2, and WakeFromD3](https://msdn.microsoft.com/library/windows/hardware/ff565609)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565609" data-raw-source="[WakeFromD0, WakeFromD1, WakeFromD2, and WakeFromD3](https://msdn.microsoft.com/library/windows/hardware/ff565609)">WakeFromD0, WakeFromD1, WakeFromD2, and WakeFromD3</a></p></td>
 <td align="left"><p>TRUE if the device can respond to an external wake signal while in the D1 power state.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[WakeFromD0, WakeFromD1, WakeFromD2, and WakeFromD3](https://msdn.microsoft.com/library/windows/hardware/ff565609)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565609" data-raw-source="[WakeFromD0, WakeFromD1, WakeFromD2, and WakeFromD3](https://msdn.microsoft.com/library/windows/hardware/ff565609)">WakeFromD0, WakeFromD1, WakeFromD2, and WakeFromD3</a></p></td>
 <td align="left"><p>TRUE if the device can respond to an external wake signal while in the D2 power state.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[WakeFromD0, WakeFromD1, WakeFromD2, and WakeFromD3](https://msdn.microsoft.com/library/windows/hardware/ff565609)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565609" data-raw-source="[WakeFromD0, WakeFromD1, WakeFromD2, and WakeFromD3](https://msdn.microsoft.com/library/windows/hardware/ff565609)">WakeFromD0, WakeFromD1, WakeFromD2, and WakeFromD3</a></p></td>
 <td align="left"><p>TRUE if the device can respond to an external wake signal while in the D3 power state.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[DeviceState](https://msdn.microsoft.com/library/windows/hardware/ff543087)<strong>[PowerSystemMaximum]</strong></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff543087" data-raw-source="[DeviceState](https://msdn.microsoft.com/library/windows/hardware/ff543087)">DeviceState</a><strong>[PowerSystemMaximum]</strong></p></td>
 <td align="left"><p>Specifies the highest-powered device state that this device can maintain for each system power state, from <strong>PowerSystemUnspecified</strong> to <strong>PowerSystemShutdown</strong>.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[SystemWake](https://msdn.microsoft.com/library/windows/hardware/ff564538)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564538" data-raw-source="[SystemWake](https://msdn.microsoft.com/library/windows/hardware/ff564538)">SystemWake</a></p></td>
 <td align="left"><p>Specifies lowest-powered system power state (S0 through S4) from which the device can signal a wake event.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[DeviceWake](https://msdn.microsoft.com/library/windows/hardware/ff543091)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff543091" data-raw-source="[DeviceWake](https://msdn.microsoft.com/library/windows/hardware/ff543091)">DeviceWake</a></p></td>
 <td align="left"><p>Specifies lowest-powered device power state (D0 through D3) from which the device can signal a wake event.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 NDIS uses the DEVICE\_CAPABILITIES information to determine if:
 
@@ -134,7 +134,7 @@ As soon as NDIS gets this information, it determines, for each system power stat
 
 **Note**  Wake-on-LAN is possible only if both the NIC and the system are power management-capable. If the system is not power management-capable, NDIS will not query a NIC's power management capabilities.
 
- 
+ 
 
 ### Using User Input
 
@@ -162,9 +162,9 @@ The **Only allow management stations to bring the computer out of standby** opti
 
 Whenever a user selects or clears a power management option for a NIC, the system notifies NDIS of the change. NDIS writes the new setting to the registry so that the changed setting persists across restarts.
 
- 
+ 
 
- 
+ 
 
 
 

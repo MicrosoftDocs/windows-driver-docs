@@ -1,6 +1,5 @@
 ---
 title: Registering Preoperation and Postoperation Callback Routines
-author: windows-driver-content
 description: Registering Preoperation and Postoperation Callback Routines
 ms.assetid: 9f89ca46-8a8f-422f-9dbe-2620b944a3ae
 keywords:
@@ -49,9 +48,9 @@ const FLT_OPERATION_REGISTRATION Callbacks[] = {
 };
 ```
 
- 
+ 
 
- 
+ 
 
 
 

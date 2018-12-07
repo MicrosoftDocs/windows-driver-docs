@@ -1,6 +1,5 @@
 ---
 title: WdfObjectDereferenceWithTag macro
-author: windows-driver-content
 description: The WdfObjectDereferenceWithTag macro decrements the reference count for a specified framework object and assigns the driver's current file name and line number to the reference. This macro also assigns a tag value to the reference.
 ms.assetid: c5cfe516-ad62-4656-a033-d1800d9554a8
 keywords:
@@ -76,7 +75,7 @@ Requirements
 <tbody>
 <tr class="odd">
 <td><p>Target platform</p></td>
-<td>[Universal](http://go.microsoft.com/fwlink/p/?linkid=531356)</td>
+<td><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" data-raw-source="[Universal](http://go.microsoft.com/fwlink/p/?linkid=531356)">Universal</a></td>
 </tr>
 <tr class="even">
 <td><p>Minimum KMDF version</p></td>
@@ -109,9 +108,9 @@ WUDFx02000.dll (UMDF)</td>
 
 [**WdfObjectReferenceWithTag**](wdfobjectreferencewithtag.md)
 
- 
+ 
 
- 
+ 
 
 
 

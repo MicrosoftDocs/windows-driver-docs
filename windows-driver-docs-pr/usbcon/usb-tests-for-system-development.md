@@ -1,7 +1,6 @@
 ---
 Description: If you are building a new system, the tests in this topic are recommended.
 title: Recommended USB tests for system development
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -53,7 +52,7 @@ If you are building a new system, here are the recommended USB HCK tests:
 <strong>Note</strong>  If system does not have a Type A connector, then an adapter should be included with the system.
 </div>
 <div>
- 
+ 
 </div></td>
 <td><ol>
 <li>In Windows HCK Studio, on the <strong>Selection</strong> tab, click <strong>Device manager</strong>.</li>
@@ -62,7 +61,7 @@ If you are building a new system, here are the recommended USB HCK tests:
 <strong>Note</strong>  To quickly find the controller, type &quot;xhci&quot; in search.
 </div>
 <div>
- 
+ 
 </div></li>
 <li>From the <strong>View By</strong> list, choose <strong>Basic</strong>.</li>
 <li>Run the recommended for the selected controller.</li>
@@ -71,7 +70,7 @@ If you are building a new system, here are the recommended USB HCK tests:
 </tbody>
 </table>
 
- 
+ 
 
 ## Stage 2—System integration
 
@@ -108,7 +107,7 @@ If you are building a new system, here are the recommended USB HCK tests:
 <strong>Note</strong>  If system does not have a Type A connector, then an adapter should be included with the system.
 </div>
 <div>
- 
+ 
 </div></td>
 <td><p>To run the tests:</p>
 <ol>
@@ -118,7 +117,7 @@ If you are building a new system, here are the recommended USB HCK tests:
 <strong>Note</strong>  To quickly find the controller, type &quot;xhci&quot; in search.
 </div>
 <div>
- 
+ 
 </div></li>
 <li>From the <strong>View By</strong> list, choose <strong>Functional</strong>.</li>
 <li>Run the recommended for the selected controller.</li>
@@ -127,7 +126,7 @@ If you are building a new system, here are the recommended USB HCK tests:
 </tbody>
 </table>
 
- 
+ 
 
 ## Stage 3—System tuneup
 
@@ -160,7 +159,7 @@ System 3 (if dock supported)
 <tbody>
 <tr class="odd">
 <td><p>System 1</p>
-<p>See [system bring-up topology](#stage1).</p>
+<p>See <a href="#stage1" data-raw-source="[system bring-up topology](#stage1)">system bring-up topology</a>.</p>
 <p><strong>Device driver:  </strong>The SuperMUTT device must have Usbtcd.sys as the device driver. Run this command:</p>
 <p><code>muttutil -updatedriver usbtcd.inf</code></p>
 <p>System 2</p>
@@ -175,7 +174,7 @@ System 3 (if dock supported)
 </ol>
 <img src="images/xhci-superspeedhub-hub-daisy.png" alt="System tuning topology" />
 <p>System 3 (if dock supported)</p>
-<p>See [system integration stage](#stage2).</p></td>
+<p>See <a href="#stage2" data-raw-source="[system integration stage](#stage2)">system integration stage</a>.</p></td>
 <td><p>System 1</p>
 <ol>
 <li>On the <strong>Selection</strong> tab, click <strong>Device manager</strong>.</li>
@@ -184,7 +183,7 @@ System 3 (if dock supported)
 <strong>Note</strong>  To quickly find the controller, type &quot;xhci&quot; in search.
 </div>
 <div>
- 
+ 
 </div></li>
 <li>From the <strong>View By</strong> list, choose <strong>Certification</strong>.</li>
 <li>Run the recommended for the selected controller.</li>
@@ -197,7 +196,7 @@ System 3 (if dock supported)
 <strong>Note</strong>  To quickly find the controller, type &quot;MUTT&quot; in search.
 </div>
 <div>
- 
+ 
 </div></li>
 <li>From the <strong>View By</strong> list, choose <strong>Functional</strong>.</li>
 <li>Run the recommended tests for system 2.</li>
@@ -205,13 +204,13 @@ System 3 (if dock supported)
 </ol>
 <p>System 3</p>
 <ul>
-<li><p>Same as [system integration topology](#stage2).</p></li>
+<li><p>Same as <a href="#stage2" data-raw-source="[system integration topology](#stage2)">system integration topology</a>.</p></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 [Windows Hardware Lab Kit Tests for USB](windows-hardware-certification-kit-tests-for-usb.md)  

@@ -1,6 +1,5 @@
 ---
 title: Sensor driver samples
-author: windows-driver-content
 description: The driver samples in this directory provide a starting point for writing a custom sensor driver for your device.
 ms.assetid: D3B69433-6427-40B2-B3A1-8F48E014BE63
 ms.date: 04/20/2017
@@ -23,11 +22,11 @@ The driver samples in this directory provide a starting point for writing a cust
 | Pedometer                     | [Pedometer](http://go.microsoft.com/fwlink/p/?LinkId=617959)                     | Demonstrates how to write a UMDF v2 driver to control a virtual pedometer sensor.             |
 | SimpleDeviceOrientationSensor | [SimpleDeviceOrientationSensor](http://go.microsoft.com/fwlink/p/?LinkId=617960) | Demonstrates how to write a UMDF v2 sensor driver to output Simple Device Orientation values. |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

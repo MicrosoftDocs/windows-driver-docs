@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_IHV_TASK_REQUEST_PARAMETERS
-author: windows-driver-content
 description: WDI_TLV_IHV_TASK_REQUEST_PARAMETERS is a TLV that contains the requested priority for NDIS_STATUS_WDI_INDICATION_IHV_TASK_REQUEST.
 ms.assetid: C33CF8FE-EDBC-41D1-A63C-E43650E9570E
 ms.date: 07/18/2017
@@ -31,7 +30,7 @@ The size (in bytes) of a UINT32.
 |--------|-----------------------------------------------------------------------------------------------------------------------------------------|
 | UINT32 | The IHV-requested priority for this task. See [**WDI\_IHV\_TASK\_PRIORITY**](https://msdn.microsoft.com/library/windows/hardware/dn926064) for valid priority values. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Returning Status from Dispatch Routines
-author: windows-driver-content
 description: Returning Status from Dispatch Routines
 ms.assetid: 76bd651a-344f-4e22-a435-b62fdf2d7ddc
 keywords:
@@ -34,9 +33,9 @@ Which of these behaviors is correct, or even possible, depends on the specific o
 
 For more information about returning status from a dispatch routine, see [Constraints on Dispatch Routines](constraints-on-dispatch-routines.md).
 
- 
+ 
 
- 
+ 
 
 
 

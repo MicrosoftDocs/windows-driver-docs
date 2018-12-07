@@ -1,6 +1,5 @@
 ---
 title: Installing the update
-author: windows-driver-content
 description: Firmware update packages can be installed using any tool that installs Windows drivers.
 ms.assetid: 51C50910-8AA3-4ED9-B469-2325BBD2FB31
 ms.date: 04/20/2017
@@ -18,7 +17,7 @@ During the next boot, and before ExitBootServices() has been called, the OS Load
 
 **Important**  At this point, the platform firmware is solely responsible for completing the firmware update.
 
- 
+ 
 
 If multiple firmware update packages are installed, the OS Loader calls UpdateCapsule() with the payload of each available update. Each firmware payload will be a separate capsule, each identified by the GUID of the ESRT entry for the targeted firmware update package.
 

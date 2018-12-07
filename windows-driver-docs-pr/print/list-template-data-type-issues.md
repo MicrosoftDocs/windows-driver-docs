@@ -1,6 +1,5 @@
 ---
 title: List Template Data Type Issues
-author: windows-driver-content
 description: List Template Data Type Issues
 ms.assetid: ee5ef9f4-5001-4c81-ad06-07c9c588928e
 keywords:
@@ -15,9 +14,9 @@ ms.localizationpriority: medium
 
 All template directives that accept a LIST data type expect a parentheses-bracketed, comma-delimited list of SYMBOLS. If the list consists of only one element, you can omit the parentheses.
 
- 
+ 
 
- 
+ 
 
 
 

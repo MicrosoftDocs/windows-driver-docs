@@ -38,9 +38,9 @@ The Microsoft DirectX graphics kernel will now query *GpuMmu* caps for every phy
 
 [*DxgkDdiCreateDevice*](https://msdn.microsoft.com/library/windows/hardware/ff559615)
 
- 
+ 
 
- 
+ 
 
 
 

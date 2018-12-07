@@ -26,9 +26,9 @@ Feature compliance is generally assured by comparing a scene rasterized by the h
 
 [Texturing Requirements](texturing-requirements.md)
 
- 
+ 
 
- 
+ 
 
 
 

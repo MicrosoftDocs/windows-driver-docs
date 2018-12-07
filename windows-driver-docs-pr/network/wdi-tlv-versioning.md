@@ -32,11 +32,11 @@ The XML has been augmented to support this versioning with two attributes allowe
 
 **Note**  The parser and generator assume that they are always linked with WDI\_VERSION\_LATEST. The miniport should always pass WDI\_VERSION\_LATEST for [**NDIS\_MINIPORT\_DRIVER\_WDI\_CHARACTERISTICS**](https://msdn.microsoft.com/library/windows/hardware/mt297617)::**WdiVersion** when calling [**NdisMRegisterWdiMiniportDriver**](https://msdn.microsoft.com/library/windows/hardware/mt297596) rather than using a specific version, like WDI\_VERSION\_1\_0, as they will become out of date and cause problems with the TLV parser generator because the other end might send a byte stream that is unexpected.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

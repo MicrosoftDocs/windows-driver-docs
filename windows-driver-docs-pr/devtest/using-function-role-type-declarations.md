@@ -23,9 +23,9 @@ For more information about adding these declarations, see the following.
 
 [Declaring Functions by Using Function Role Types for Storport Drivers](declaring-functions-by-using-function-role-types-for-storport-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

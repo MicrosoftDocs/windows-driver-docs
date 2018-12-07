@@ -1,6 +1,5 @@
 ---
 title: Point and Print DLLs
-author: windows-driver-content
 description: Point and Print DLLs
 ms.assetid: 7ead940e-8426-4756-890f-f3607dc1f9ca
 keywords:
@@ -34,9 +33,9 @@ Unlike the files listed under the **Files** registry key (see [Installing Queue-
 
 One method for installing the Point and Print DLL on a client is to specify its name in a [printer INF file](printer-inf-files.md) as a dependent file, so the file can be copied to the client's driver directory during [downloading of driver-specific files](downloading-driver-specific-files.md).
 
- 
+ 
 
- 
+ 
 
 
 

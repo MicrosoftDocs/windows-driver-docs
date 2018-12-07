@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_P2P_SERVICE_TYPE_HASH
-author: windows-driver-content
 description: WDI_TLV_P2P_SERVICE_TYPE_HASH is a TLV that contains the hash of Service Type.
 ms.assetid: A475C2E3-F558-47EC-9708-87887AE2D8AF
 ms.date: 07/18/2017
@@ -16,7 +15,7 @@ WDI\_TLV\_P2P\_SERVICE\_TYPE\_HASH is a TLV that contains the hash of Service Ty
 
 **Note**  This TLV was added in Windows 10, version 1607, WDI version 1.0.21.
 
- 
+ 
 
 ## TLV Type
 
@@ -35,7 +34,7 @@ The size (in bytes) of a [**WDI\_P2P\_SERVICE\_NAME\_HASH**](https://msdn.micros
 |-------------------------------------------------------------------------|---------------------------|
 | [**WDI\_P2P\_SERVICE\_NAME\_HASH**](https://msdn.microsoft.com/library/windows/hardware/dn926103) | The hash of Service Type. |
 
- 
+ 
 
 Requirements
 ------------
@@ -61,9 +60,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

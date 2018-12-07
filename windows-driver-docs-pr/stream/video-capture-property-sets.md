@@ -1,6 +1,5 @@
 ---
 title: Video Capture Property Sets
-author: windows-driver-content
 description: Video Capture Property Sets
 ms.assetid: 23f61735-ae04-4143-8bd5-b713a2ab0e90
 keywords:
@@ -52,61 +51,61 @@ The following table lists the primary property sets used by video capture minidr
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[PROPSETID_ALLOCATOR_CONTROL](propsetid-allocator-control.md)</p></td>
+<td><p><a href="propsetid-allocator-control.md" data-raw-source="[PROPSETID_ALLOCATOR_CONTROL](propsetid-allocator-control.md)">PROPSETID_ALLOCATOR_CONTROL</a></p></td>
 <td></td>
 <td><p>Y</p></td>
 <td></td>
 </tr>
 <tr class="even">
-<td><p>[PROPSETID_TUNER](propsetid-tuner.md)</p></td>
+<td><p><a href="propsetid-tuner.md" data-raw-source="[PROPSETID_TUNER](propsetid-tuner.md)">PROPSETID_TUNER</a></p></td>
 <td><p>Y</p></td>
 <td></td>
 <td></td>
 </tr>
 <tr class="odd">
-<td><p>[PROPSETID_VIDCAP_CAMERACONTROL](propsetid-vidcap-cameracontrol.md)</p></td>
+<td><p><a href="propsetid-vidcap-cameracontrol.md" data-raw-source="[PROPSETID_VIDCAP_CAMERACONTROL](propsetid-vidcap-cameracontrol.md)">PROPSETID_VIDCAP_CAMERACONTROL</a></p></td>
 <td><p>Y</p></td>
 <td></td>
 <td></td>
 </tr>
 <tr class="even">
-<td><p>[PROPSETID_VIDCAP_CROSSBAR](propsetid-vidcap-crossbar.md)</p></td>
+<td><p><a href="propsetid-vidcap-crossbar.md" data-raw-source="[PROPSETID_VIDCAP_CROSSBAR](propsetid-vidcap-crossbar.md)">PROPSETID_VIDCAP_CROSSBAR</a></p></td>
 <td><p>Y</p></td>
 <td></td>
 <td></td>
 </tr>
 <tr class="odd">
-<td><p>[PROPSETID_VIDCAP_DROPPEDFRAMES](propsetid-vidcap-droppedframes.md)</p></td>
+<td><p><a href="propsetid-vidcap-droppedframes.md" data-raw-source="[PROPSETID_VIDCAP_DROPPEDFRAMES](propsetid-vidcap-droppedframes.md)">PROPSETID_VIDCAP_DROPPEDFRAMES</a></p></td>
 <td></td>
 <td><p>Y</p></td>
 <td><p>Y</p></td>
 </tr>
 <tr class="even">
-<td><p>[PROPSETID_VIDCAP_TVAUDIO](propsetid-vidcap-tvaudio.md)</p></td>
+<td><p><a href="propsetid-vidcap-tvaudio.md" data-raw-source="[PROPSETID_VIDCAP_TVAUDIO](propsetid-vidcap-tvaudio.md)">PROPSETID_VIDCAP_TVAUDIO</a></p></td>
 <td><p>Y</p></td>
 <td></td>
 <td></td>
 </tr>
 <tr class="odd">
-<td><p>[PROPSETID_VIDCAP_VIDEOCOMPRESSION](propsetid-vidcap-videocompression.md)</p></td>
+<td><p><a href="propsetid-vidcap-videocompression.md" data-raw-source="[PROPSETID_VIDCAP_VIDEOCOMPRESSION](propsetid-vidcap-videocompression.md)">PROPSETID_VIDCAP_VIDEOCOMPRESSION</a></p></td>
 <td><p>Y</p></td>
 <td></td>
 <td></td>
 </tr>
 <tr class="even">
-<td><p>[PROPSETID_VIDCAP_VIDEOCONTROL](propsetid-vidcap-videocontrol.md)</p></td>
+<td><p><a href="propsetid-vidcap-videocontrol.md" data-raw-source="[PROPSETID_VIDCAP_VIDEOCONTROL](propsetid-vidcap-videocontrol.md)">PROPSETID_VIDCAP_VIDEOCONTROL</a></p></td>
 <td><p>Y</p></td>
 <td></td>
 <td></td>
 </tr>
 <tr class="odd">
-<td><p>[PROPSETID_VIDCAP_VIDEODECODER](propsetid-vidcap-videodecoder.md)</p></td>
+<td><p><a href="propsetid-vidcap-videodecoder.md" data-raw-source="[PROPSETID_VIDCAP_VIDEODECODER](propsetid-vidcap-videodecoder.md)">PROPSETID_VIDCAP_VIDEODECODER</a></p></td>
 <td><p>Y</p></td>
 <td></td>
 <td></td>
 </tr>
 <tr class="even">
-<td><p>[PROPSETID_VIDCAP_VIDEOPROCAMP](propsetid-vidcap-videoprocamp.md)</p></td>
+<td><p><a href="propsetid-vidcap-videoprocamp.md" data-raw-source="[PROPSETID_VIDCAP_VIDEOPROCAMP](propsetid-vidcap-videoprocamp.md)">PROPSETID_VIDCAP_VIDEOPROCAMP</a></p></td>
 <td><p>Y</p></td>
 <td></td>
 <td></td>
@@ -114,7 +113,7 @@ The following table lists the primary property sets used by video capture minidr
 </tbody>
 </table>
 
- 
+ 
 
 At a minimum, a minidriver must report the number of frames dropped during capture as noted in the table above. Support for all other property sets is optional, depending on the capabilities of the device. It is strongly recommended that cameras, which offer only a limited set of capture frame rates, implement the [PROPSETID\_VIDCAP\_VIDEOCONTROL](propsetid-vidcap-videocontrol.md) to allow video conferencing applications to make optimal use of system bandwidth.
 
@@ -126,9 +125,9 @@ Properties can support default values and ranges. User-interface elements, such 
 
 The default value and range information is provided in a [**KSPROPERTY\_VALUES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksproperty_values) structure that is part of a property definition. This structure includes a pointer to a static table that consists of one or more [**KSPROPERTY\_MEMBERSLIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksproperty_memberslist) structure instances. Within the KSPROPERTY\_MEMBERSLIST structure, the minidriver can specify either a default value or a range of values. A range of values can be specified through the minimum, maximum, and stepping value. Set the **MembersFlags** member of the [**KSPROPERTY\_MEMBERSHEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksproperty_membersheader) structure to the KSPROPERTY\_MEMBER\_RANGES value to indicate that the KSPROPERTY\_MEMBERSLIST structure is a range of values. A KSPROPERTY\_MEMBERSLIST structure is also used to specify a default value for the property. This is done by setting the **MembersFlags** member of the KSPROPERTY\_MEMBERSHEADER to the KSPROPERTY\_MEMBER\_VALUE value.
 
- 
+ 
 
- 
+ 
 
 
 

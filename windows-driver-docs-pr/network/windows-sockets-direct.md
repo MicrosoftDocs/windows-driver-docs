@@ -43,9 +43,9 @@ The following topics describe Windows Sockets Direct features and operations, th
 
 [Creating a Proxy Driver for a SAN Service Provider](creating-a-proxy-driver-for-a-san-service-provider.md)
 
- 
+ 
 
- 
+ 
 
 
 

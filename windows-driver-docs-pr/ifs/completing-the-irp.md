@@ -1,6 +1,5 @@
 ---
 title: Completing the IRP
-author: windows-driver-content
 description: Completing the IRP
 ms.assetid: 3174b36c-feb5-497c-a6e4-0d070c658899
 keywords:
@@ -38,11 +37,11 @@ NTSTATUS values are defined in ntstatus.h. These values fall into four categorie
 
 **Note**   Although STATUS\_PENDING is a success NTSTATUS value, it is a programming error to complete an IRP with STATUS\_PENDING.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

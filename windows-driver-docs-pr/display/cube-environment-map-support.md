@@ -44,11 +44,11 @@ Any faces not created by the call are assumed to be filled with the color specif
 
 **Note**   Current restrictions: All cube faces must be the same size and must be square. The cube faces can be MIP mapped. No color keying is supported with cube map textures. As with other textures, alpha channels and alpha palettes are supported.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

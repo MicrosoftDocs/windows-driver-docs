@@ -1,6 +1,5 @@
 ---
 title: Describing Extended Sample Information in AVStream Codecs
-author: windows-driver-content
 description: Describing Extended Sample Information in AVStream Codecs
 ms.assetid: 04447525-78f5-4c77-9a41-4e6e4729f729
 keywords:
@@ -20,9 +19,9 @@ Encoders should include extended sample information in the extended KSSTREAM\_HE
 
 Surface stride is specified in KS\_FRAME\_INFO's lSurfacePitch member (union with **Reserved1** member). For more information about surface stride, see [Handling Stride in AVStream Codecs](handling-stride-in-avstream-codecs.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Predictive Failure Analysis (PFA)
-author: windows-driver-content
 description: Predictive Failure Analysis (PFA)
 ms.assetid: d2ded330-edcc-4bdd-9b52-73c1961d8ef2
 keywords:
@@ -32,9 +31,9 @@ When PFA predicts an ECC memory page will fail, it saves (or *persists*) the res
 
 WHEA supports PFA on Windows 7 and later versions of Windows.
 
- 
+ 
 
- 
+ 
 
 
 

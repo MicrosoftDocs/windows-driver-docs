@@ -1,6 +1,5 @@
 ---
 title: Initializing a General I/O Target
-author: windows-driver-content
 description: Initializing a General I/O Target
 ms.assetid: c5d5b589-09a3-4f58-83bf-2876b37b0937
 keywords:
@@ -55,9 +54,9 @@ status = WdfIoTargetCreate(Adapter->WdfDevice,
     }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

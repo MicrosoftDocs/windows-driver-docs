@@ -1,6 +1,5 @@
 ---
 title: How to Use Decorations in INF Files for Printer Drivers
-author: windows-driver-content
 description: How to Use Decorations in INF Files for Printer Drivers
 ms.assetid: 772e2797-8019-4715-870c-b7cd2b8e65f2
 keywords:
@@ -131,9 +130,9 @@ Acme Model 1 = "Acme LaserWhiz 100 PS"
 Location = "Acme CD ROM"
 ```
 
- 
+ 
 
- 
+ 
 
 
 

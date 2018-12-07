@@ -56,10 +56,10 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>CreateScanJobRequest</strong>](createscanjobrequest.md)</p></td>
+<td><p><a href="createscanjobrequest.md" data-raw-source="[&lt;strong&gt;CreateScanJobRequest&lt;/strong&gt;](createscanjobrequest.md)"><strong>CreateScanJobRequest</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>ScanAvailableEvent</strong>](scanavailableevent.md)</p></td>
+<td><p><a href="scanavailableevent.md" data-raw-source="[&lt;strong&gt;ScanAvailableEvent&lt;/strong&gt;](scanavailableevent.md)"><strong>ScanAvailableEvent</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -78,9 +78,9 @@ The **ScanIdentifier** value must be unique for every [**ScanAvailableEvent**](s
 
 [**ScanAvailableEvent**](scanavailableevent.md)
 
- 
+ 
 
- 
+ 
 
 
 

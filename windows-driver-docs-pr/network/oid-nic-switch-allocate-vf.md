@@ -1,6 +1,5 @@
 ---
 title: OID_NIC_SWITCH_ALLOCATE_VF
-author: windows-driver-content
 description: An overlying driver issues an object identifier (OID) method request of OID_NIC_SWITCH_ALLOCATE_VF to allocate resources for a PCI Express (PCIe) Virtual Function (VF).
 ms.assetid: CB88CE0C-705F-406B-90FE-FB206D6F4864
 ms.date: 08/08/2017
@@ -27,7 +26,7 @@ For more information about how to allocate VF resources, see [Allocating Resourc
 
 **Note**  After an overlying driver requests resource allocation for a VF, that driver is the only component that can request the freeing of the resources for the same VF. The overlying driver must issue an OID set request of [OID\_NIC\_SWITCH\_FREE\_VF](oid-nic-switch-free-vf.md) to free the VF resources. Before the overlying driver can be halted, it must free the resources for each VF that was allocated by the driver's OID\_NIC\_SWITCH\_ALLOCATE\_VF request.
 
- 
+ 
 
 ### Return Status Codes
 
@@ -55,11 +54,11 @@ The PF miniport driver returns one of the following status codes for the OID met
 </tr>
 <tr class="odd">
 <td><p>NDIS_STATUS_INVALID_PARAMETER</p></td>
-<td><p>One or more of the members of the [<strong>NDIS_NIC_SWITCH_VF_PARAMETERS</strong>](https://msdn.microsoft.com/library/windows/hardware/hh451593) structure have invalid values.</p></td>
+<td><p>One or more of the members of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451593" data-raw-source="[&lt;strong&gt;NDIS_NIC_SWITCH_VF_PARAMETERS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh451593)"><strong>NDIS_NIC_SWITCH_VF_PARAMETERS</strong></a> structure have invalid values.</p></td>
 </tr>
 <tr class="even">
 <td><p>NDIS_STATUS_INVALID_LENGTH</p></td>
-<td><p>The length of the information buffer is less than sizeof([<strong>NDIS_NIC_SWITCH_VF_PARAMETERS</strong>](https://msdn.microsoft.com/library/windows/hardware/hh451593)). The PF miniport driver must set the <strong>DATA.METHOD_INFORMATION.BytesNeeded</strong> member in the [<strong>NDIS_OID_REQUEST</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure to the minimum buffer size that is required.</p></td>
+<td><p>The length of the information buffer is less than sizeof(<a href="https://msdn.microsoft.com/library/windows/hardware/hh451593" data-raw-source="[&lt;strong&gt;NDIS_NIC_SWITCH_VF_PARAMETERS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh451593)"><strong>NDIS_NIC_SWITCH_VF_PARAMETERS</strong></a>). The PF miniport driver must set the <strong>DATA.METHOD_INFORMATION.BytesNeeded</strong> member in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710" data-raw-source="[&lt;strong&gt;NDIS_OID_REQUEST&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566710)"><strong>NDIS_OID_REQUEST</strong></a> structure to the minimum buffer size that is required.</p></td>
 </tr>
 <tr class="odd">
 <td><p>NDIS_STATUS_FAILURE</p></td>
@@ -68,7 +67,7 @@ The PF miniport driver returns one of the following status codes for the OID met
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -104,9 +103,9 @@ Requirements
 
 [OID\_NIC\_SWITCH\_FREE\_VF](oid-nic-switch-free-vf.md)
 
- 
+ 
 
- 
+ 
 
 
 

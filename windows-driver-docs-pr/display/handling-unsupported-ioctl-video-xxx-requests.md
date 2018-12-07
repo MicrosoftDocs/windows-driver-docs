@@ -28,9 +28,9 @@ Every [*HwVidStartIO*](https://msdn.microsoft.com/library/windows/hardware/ff567
 
 See the [**VIDEO\_REQUEST\_PACKET**](https://msdn.microsoft.com/library/windows/hardware/ff570547) and [**STATUS\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff569732) structures for more details.
 
- 
+ 
 
- 
+ 
 
 
 

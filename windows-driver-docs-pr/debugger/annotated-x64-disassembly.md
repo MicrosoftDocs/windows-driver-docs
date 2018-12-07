@@ -3,7 +3,6 @@ title: Annotated x64 Disassembly
 description: Annotated x64 Disassembly
 ms.assetid: 67930062-8a3a-460f-ae56-248d2a8e131e
 keywords: ["x64 processor, annotated disassembly"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -325,9 +324,9 @@ ReturnEAX:
 
 The return value is stored in **rax**, and then the non-volatile registers are restored before returning.
 
- 
+ 
 
- 
+ 
 
 
 

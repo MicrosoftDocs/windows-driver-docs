@@ -1,6 +1,5 @@
 ---
 title: OID_PNP_ADD_WAKE_UP_PATTERN
-author: windows-driver-content
 description: OID_PNP_ADD_WAKE_UP_PATTERN
 ms.assetid: 96b95d1d-d557-4012-b95f-b1c43e2c590f
 ms.date: 08/08/2017
@@ -44,7 +43,7 @@ Requirements
 <tbody>
 <tr class="odd">
 <td><p>Version</p></td>
-<td><p>Supported in NDIS 6.0 and NDIS 6.1. For NDIS 6.20 and later, use [OID_PM_ADD_WOL_PATTERN](oid-pm-add-wol-pattern.md) instead.</p></td>
+<td><p>Supported in NDIS 6.0 and NDIS 6.1. For NDIS 6.20 and later, use <a href="oid-pm-add-wol-pattern.md" data-raw-source="[OID_PM_ADD_WOL_PATTERN](oid-pm-add-wol-pattern.md)">OID_PM_ADD_WOL_PATTERN</a> instead.</p></td>
 </tr>
 <tr class="even">
 <td><p>Header</p></td>
@@ -60,9 +59,9 @@ Requirements
 
 [OID\_PM\_ADD\_WOL\_PATTERN](oid-pm-add-wol-pattern.md)
 
- 
+ 
 
- 
+ 
 
 
 

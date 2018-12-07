@@ -26,13 +26,13 @@ Be aware that all current user certificate stores inherit the contents of the lo
 >[!NOTE]
 >The driver signing verification during Plug and Play (PnP) installation requires that root and Authenticode certificates, including [test certificates](test-certificates.md), are located in a local machine certificate store.
 
- 
+ 
 
 For more information about how to add or delete certificates from the system certificate stores, see [**CertMgr**](https://msdn.microsoft.com/library/windows/hardware/ff543411).
 
- 
+ 
 
- 
+ 
 
 
 

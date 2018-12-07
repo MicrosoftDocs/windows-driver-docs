@@ -1,6 +1,5 @@
 ---
 title: Understanding When Remove IRPs Are Issued
-author: windows-driver-content
 description: Understanding When Remove IRPs Are Issued
 ms.assetid: e92e30ce-ca0d-4f00-b54a-778bafba15b3
 keywords: ["remove IRPs WDK PnP", "IRPs WDK PnP", "I/O request packets WDK PnP"]
@@ -76,9 +75,9 @@ The following notes correspond to the circled numbers in the previous figure:
 
 A driver for a PnP device can receive an **IRP\_MN\_SURPRISE\_REMOVAL** in more situations than those shown in the figure illustrating typical remove IRP transitions. For example, a user could insert a PC Card into the machine and then remove it before the device is started. In that case, the PnP manager issues a surprise-remove IRP after the drivers' *AddDevice* routines are called but before issuing the **IRP\_MN\_START\_DEVICE** request. A driver for a PnP device must be prepared to handle remove IRPs at any time after the driver's *AddDevice* routine is called.
 
- 
+ 
 
- 
+ 
 
 
 

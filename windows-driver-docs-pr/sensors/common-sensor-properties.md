@@ -1,6 +1,5 @@
 ---
 title: Common sensor properties
-author: windows-driver-content
 description: This topic describes the sensor properties that are common for all sensors.
 ms.assetid: 3E4DD221-BA8E-446E-BA7A-EF84DFED332F
 ms.date: 01/04/2018
@@ -12,7 +11,7 @@ ms.localizationpriority: medium
 
 This topic describes the sensor properties that are common for all sensors.
 
-The following table shows common properties. For more information about the types shown in the type column, see [PROPVARIANT structure](http://go.microsoft.com/fwlink/p/?linkid=313395).
+The following table shows common properties. For more information about the types shown in the type column, see [PROPVARIANT structure](https://go.microsoft.com/fwlink/p/?linkid=313395).
 
 <table>
 <colgroup>
@@ -37,14 +36,14 @@ The following table shows common properties. For more information about the type
 <td><p>VT_CLSID</p></td>
 <td><p>R/O</p></td>
 <td><p>Required</p></td>
-<td><p>The type of sensor. The GUID will consist of the same format as a Windows sensor (e.g., SENSOR_TYPE_ACCELEROMETER_3D). For more information about sensor types, see [Sensor type GUIDs](https://msdn.microsoft.com/library/windows/hardware/dn946707).</p></td>
+<td><p>The type of sensor. The GUID will consist of the same format as a Windows sensor (e.g., SENSOR_TYPE_ACCELEROMETER_3D). For more information about sensor types, see <a href="https://msdn.microsoft.com/library/windows/hardware/dn946707" data-raw-source="[Sensor type GUIDs](https://msdn.microsoft.com/library/windows/hardware/dn946707)">Sensor type GUIDs</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p>PKEY_Sensor_State</p></td>
 <td><p>VT_UI4</p></td>
 <td><p>R/O</p></td>
 <td><p>Required</p></td>
-<td><p>The state of the sensor. For more information about sensor states, see [<strong>SENSOR_STATE</strong>](https://msdn.microsoft.com/library/windows/hardware/dn946703).</p></td>
+<td><p>The state of the sensor. For more information about sensor states, see <a href="https://msdn.microsoft.com/library/windows/hardware/dn946703" data-raw-source="[&lt;strong&gt;SENSOR_STATE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn946703)"><strong>SENSOR_STATE</strong></a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p>PKEY_Sensor_MinimumDataInterval_Ms</p></td>
@@ -120,7 +119,7 @@ The following table shows common properties. For more information about the type
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Note"></span><span id="note"></span><span id="NOTE"></span>Note
 
@@ -133,7 +132,7 @@ A sensor driver that supports data batching must report the following common sen
 
 -   PKEY\_Sensor\_WakeCapable
 
-Starting with Windows 10, version 1511, support is now available for implementing data batching using the HID sensor class driver. For information about this, see [Sensor Batching Controls](http://www.usb.org/developers/hidpage/HUTRR55_Sensor_Batching_Controls.pdf).
+Starting with Windows 10, version 1511, support is now available for implementing data batching using the HID sensor class driver. For information about this, see [Sensor Batching Controls](sensor-batching-for-power-saving-.md).
 
 See [EvtSensorSetBatchLatency](https://msdn.microsoft.com/library/windows/hardware/mt219125) for information about the callback function related to data batching.
 
@@ -153,7 +152,7 @@ When the client driver reports the following properties, the client driver must 
 
 [EvtSensorSetBatchLatency](https://msdn.microsoft.com/library/windows/hardware/mt219125)
 
-[PROPVARIANT structure](http://go.microsoft.com/fwlink/p/?linkid=313395)
+[PROPVARIANT structure](https://go.microsoft.com/fwlink/p/?linkid=313395)
 
 [Sensor properties](sensor-properties2.md)
 
@@ -161,9 +160,9 @@ When the client driver reports the following properties, the client driver must 
 
 [Sensor type GUIDs](https://msdn.microsoft.com/library/windows/hardware/dn946707)
 
- 
+ 
 
- 
+ 
 
 
 

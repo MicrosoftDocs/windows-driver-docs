@@ -1,6 +1,5 @@
 ---
 title: Detailed
-author: windows-driver-content
 description: Detailed
 ms.assetid: a96cbb55-2a39-4606-94aa-93a59c80c2d5
 ms.date: 11/28/2017
@@ -18,9 +17,9 @@ Description:A comprehensive description of the current information about the dev
 
 The Detailed property is the parent of the [Event\#\#\#](event---.md) property.
 
- 
+ 
 
- 
+ 
 
 
 

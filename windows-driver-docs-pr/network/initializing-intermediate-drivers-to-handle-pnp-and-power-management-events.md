@@ -17,21 +17,23 @@ To handle Plug and Play (PnP) and power management events, NDIS intermediate dri
 
         For NDIS 6.0 and NDIS 6.1 intermediate drivers, this member contains the power management capabilities within an NDIS\_PNP\_CAPABILITIES structure. For more information about this structure, see [OID\_PNP\_CAPABILITIES](https://msdn.microsoft.com/library/windows/hardware/ff569774).
 
-        **Note**  For NDIS 6.20 and later intermediate drivers, the **PowerManagementCapabilities** member is set to **NULL** and the power management capabilities are reported in the **PowerManagementCapabilitiesEx** member.
+        **Note**  For NDIS 6.20 and later intermediate drivers, the **PowerManagementCapabilities** member is set to **NULL** and the power management capabilities are reported in the **PowerManagementCapabilitiesEx** member.
 
-         
+
 
     -   **PowerManagementCapabilitiesEx**
 
         For NDIS 6.20 and later intermediate drivers, this member contains the power management capabilities within an [**NDIS\_PM\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff566748) structure.
 
-        **Note**  For NDIS 6.0 and NDIS 6.1 intermediate drivers, the **PowerManagementCapabilitiesEx** member is set to **NULL** and the power management capabilities are reported in the **PowerManagementCapabilities** member.
+        **Note**  For NDIS 6.0 and NDIS 6.1 intermediate drivers, the **PowerManagementCapabilitiesEx** member is set to **NULL** and the power management capabilities are reported in the **PowerManagementCapabilities** member.
 
-         
 
-    **Note**  If the underlying miniport adapter does not support power management events, the **PowerManagementCapabilities** and **PowerManagementCapabilitiesEx** members are set to **NULL**.
 
-     
+
+**Note**  If the underlying miniport adapter does not support power management events, the **PowerManagementCapabilities** and **PowerManagementCapabilitiesEx** members are set to **NULL**.
+
+
+
 
 -   When NDIS calls [MiniportInitializeEx](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_initialize) for each virtual miniport supported by the NDIS intermediate driver, the driver reports its power management capabilities by calling [**NdisMSetMiniportAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff563672) in the following ways:
 
@@ -47,9 +49,9 @@ To handle Plug and Play (PnP) and power management events, NDIS intermediate dri
 
     For more information about the initialization requirements of NDIS intermediate drivers, see [Initializing Virtual Miniports](initializing-virtual-miniports.md).
 
- 
 
- 
+
+
 
 
 

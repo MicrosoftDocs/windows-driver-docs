@@ -1,6 +1,5 @@
 ---
 title: OID_SRIOV_WRITE_VF_CONFIG_BLOCK
-author: windows-driver-content
 description: An overlying driver issues an object identifier (OID) set request of OID_SRIOV_WRITE_VF_CONFIG_BLOCK to write data to a PCI Express (PCIe) Virtual Function (VF) configuration block.
 ms.assetid: 60527938-5627-482D-B94D-522DA8E32540
 ms.date: 08/08/2017
@@ -29,7 +28,7 @@ A VF configuration block is used for backchannel communication between the PF an
 
 **Note**  Data from each VF configuration block is used only by the PF and VF miniport drivers.
 
- 
+ 
 
 Before it issues the OID set request of OID\_SRIOV\_WRITE\_VF\_CONFIG\_BLOCK, the overlying driver must set the members of [**NDIS\_SRIOV\_WRITE\_VF\_CONFIG\_BLOCK\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/hh451687) structure in the following way:
 
@@ -75,11 +74,11 @@ The miniport driver returns one of the following status codes for the OID set re
 </tr>
 <tr class="odd">
 <td><p>NDIS_STATUS_INVALID_PARAMETER</p></td>
-<td><p>One or more of the members of the [<strong>NDIS_SRIOV_WRITE_VF_CONFIG_BLOCK_PARAMETERS</strong>](https://msdn.microsoft.com/library/windows/hardware/hh451687) structure have invalid values.</p></td>
+<td><p>One or more of the members of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451687" data-raw-source="[&lt;strong&gt;NDIS_SRIOV_WRITE_VF_CONFIG_BLOCK_PARAMETERS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh451687)"><strong>NDIS_SRIOV_WRITE_VF_CONFIG_BLOCK_PARAMETERS</strong></a> structure have invalid values.</p></td>
 </tr>
 <tr class="even">
 <td><p>NDIS_STATUS_INVALID_LENGTH</p></td>
-<td><p>The information buffer was too short. NDIS sets the <strong>DATA.SET_INFORMATION.BytesNeeded</strong> member in the [<strong>NDIS_OID_REQUEST</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure to the minimum buffer size that is required.</p></td>
+<td><p>The information buffer was too short. NDIS sets the <strong>DATA.SET_INFORMATION.BytesNeeded</strong> member in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710" data-raw-source="[&lt;strong&gt;NDIS_OID_REQUEST&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566710)"><strong>NDIS_OID_REQUEST</strong></a> structure to the minimum buffer size that is required.</p></td>
 </tr>
 <tr class="odd">
 <td><p>NDIS_STATUS_FAILURE</p></td>
@@ -88,7 +87,7 @@ The miniport driver returns one of the following status codes for the OID set re
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -122,9 +121,9 @@ Requirements
 
 [OID\_SRIOV\_READ\_VF\_CONFIG\_SPACE](oid-sriov-read-vf-config-space.md)
 
- 
+ 
 
- 
+ 
 
 
 

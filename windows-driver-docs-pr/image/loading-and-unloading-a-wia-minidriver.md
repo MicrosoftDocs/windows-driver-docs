@@ -1,6 +1,5 @@
 ---
 title: Loading and Unloading a WIA Minidriver
-author: windows-driver-content
 description: Loading and Unloading a WIA Minidriver
 ms.assetid: a5f930c3-f92c-498a-a334-b5eb60fbd61b
 ms.date: 04/20/2017
@@ -188,9 +187,9 @@ STDMETHODIMP CWIADevice::GetCapabilities(PSTI_USD_CAPS pUsdCaps)
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

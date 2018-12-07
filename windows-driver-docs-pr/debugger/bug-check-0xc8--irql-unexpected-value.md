@@ -3,7 +3,6 @@ title: Bug Check 0xC8 IRQL_UNEXPECTED_VALUE
 description: The IRQL_UNEXPECTED_VALUE bug check has a value of 0x000000C8. This indicates that the processor's IRQL is not what it should be at this time.
 ms.assetid: eff166ab-e245-48ea-ab9e-9bb722814acf
 keywords: ["Bug Check 0xC8 IRQL_UNEXPECTED_VALUE", "IRQL_UNEXPECTED_VALUE"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -56,7 +55,7 @@ The IRQL\_UNEXPECTED\_VALUE bug check has a value of 0x000000C8. This indicates 
 </tbody>
 </table>
 
- 
+ 
 
 You can determine "UniqueValue" by computing (Parameter 1 AND 0xFF). If "UniqueValue" is either zero or one, Parameter 2, Parameter 3, and Parameter 4 will equal the indicated APC pointers. Otherwise, these parameters will equal zero.
 
@@ -65,9 +64,9 @@ Cause
 
 This error is usually caused by a device driver or another lower-level program that changed the IRQL for some period and did not restore the original IRQL at the end of that period. For example, the routine may have acquired a spin lock and failed to release it.
 
- 
+ 
 
- 
+ 
 
 
 

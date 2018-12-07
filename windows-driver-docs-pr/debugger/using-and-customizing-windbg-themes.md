@@ -3,7 +3,6 @@ title: Using and Customizing WinDbg Themes
 description: Using and Customizing WinDbg Themes
 ms.assetid: ad1fb350-dfad-48a1-8374-609f5f82494b
 keywords: ["themes", "workspaces, themes"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -25,9 +24,9 @@ This section includes the following topics:
 
 [Using Themes Provided in Debugging Tools for Windows](using-themes-provided-in-debugging-tools-for-windows.md)
 
- 
+ 
 
- 
+ 
 
 
 

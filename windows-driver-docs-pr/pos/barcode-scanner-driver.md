@@ -1,6 +1,5 @@
 ---
 title: Barcode scanner driver sample
-author: windows-driver-content
 description: The barcode scanner driver sample demonstrates how to create a universal driver for a barcode scanner and is intended to be used as a template for creating a new barcode scanner driver.
 ms.assetid: 29374910-AF1A-40E4-8A5D-B48D7D2FD5D8
 ms.date: 09/07/2017
@@ -42,7 +41,7 @@ Starting with Windows 10, Windows driver samples are available on GitHub and ca
     > [!NOTE]
     > If targeting the ARM platform, you will need to use the configuration manager to add ARM to your list of targets.
 
-     
+     
 2.  Select **Build Solution** from the **Build** menu.
 
 ## Install the driver
@@ -55,7 +54,7 @@ Starting with Windows 10, Windows driver samples are available on GitHub and ca
 2.  Reboot your machine.
     **Note**  If test-signing had been enabled previously, a reboot is not necessary.
 
-     
+     
 
 3.  From an elevated command prompt, navigate to the folder where your project was built. If you created an x64 debug build, this folder will be `<project_root>\x64\Debug\SampleBarcodeScannerDrv`.
 
@@ -67,7 +66,7 @@ Starting with Windows 10, Windows driver samples are available on GitHub and ca
     | SampleBarcodeScannerDrv.inf | An INF file that contains information needed to install the driver.          |
     | samplebarcodescannerdrv.cat | A signed catalog file, which serves as the signature for the entire package. |
 
-     
+     
 
 4.  Identify the path to the Device Console utility (devcon.exe) that matches your OS and driver platform. The default locations for the x64 version is `C:\Program Files (x86)\Windows Kits\10\Tools\x64`.
 5.  Type the following command, replacing &lt;devcon\_path&gt; with the path to the devcon.exe file that you located in the previous step.

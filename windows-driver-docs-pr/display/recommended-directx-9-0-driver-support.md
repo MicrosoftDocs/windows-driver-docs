@@ -39,9 +39,9 @@ A DirectX 9.0 driver should also set the following defaults:
 
 The reference rasterizer also sets defaults for the B channel, in addition to the A channel, (of RGBA) to 1.0f for the D3DFMT\_V16U16 format. In this way, the D3DFMT\_V16U16 format operates interchangeably with the D3DFMT\_L6V5U5 format, which actually has an L channel. In the D3DFMT\_L6V5U5 format, luminance is placed in the B channel.
 
- 
+ 
 
- 
+ 
 
 
 

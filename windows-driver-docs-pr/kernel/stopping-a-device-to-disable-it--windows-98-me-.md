@@ -1,6 +1,5 @@
 ---
 title: Stopping a Device to Disable It (Windows 98/Me)
-author: windows-driver-content
 description: Stopping a Device to Disable It (Windows 98/Me)
 ms.assetid: 2fc42fe4-ad29-4a51-9560-74b568bcd129
 keywords: ["disabling PnP devices"]
@@ -36,9 +35,9 @@ The PnP manager sends the stop IRPs in the following sequence:
 
 When a device is being disabled, its drivers cannot queue incoming IRPs because there is no guarantee when the device might be reenabled. Consequently, data might be lost.
 
- 
+ 
 
- 
+ 
 
 
 

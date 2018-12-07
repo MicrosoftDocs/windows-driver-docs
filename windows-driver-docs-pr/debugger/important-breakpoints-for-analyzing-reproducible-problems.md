@@ -3,7 +3,6 @@ title: Important Breakpoints for Analyzing Reproducible Problems
 description: Important Breakpoints for Analyzing Reproducible Problems
 ms.assetid: 3f501bbe-990a-4f46-ba88-c1fc4b73537f
 keywords: ["SCSI Miniport Debugging, breakpoints and reproducible problems"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -26,9 +25,9 @@ The routine **scsiport!scsiportnotification** is called right after a request is
 
 Placing a breakpoint in either **scsiport!spstartiosynchronized** or **miniport!HwStartIo** will cause a break just prior to sending a request to the miniport.
 
- 
+ 
 
- 
+ 
 
 
 

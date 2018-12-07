@@ -1,6 +1,5 @@
 ---
 title: Still Image SCSI I/O
-author: windows-driver-content
 description: Still Image SCSI I/O
 ms.assetid: 0f06351e-7dea-4d93-af05-bcc0572655e3
 ms.date: 04/20/2017
@@ -19,9 +18,9 @@ This section contains additional information about SCSI control codes and the st
 
 [Still Image SCSI I/O Structures](still-image-scsi-i-o-structures.md)
 
- 
+ 
 
- 
+ 
 
 
 

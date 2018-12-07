@@ -1,6 +1,5 @@
 ---
 title: GPIO controller requirements checklist
-author: windows-driver-content
 description: This topic summarizes the hardware, firmware, and software requirements for General Purpose IO (GPIO) controller devices that are exposed to Windows.
 ms.assetid: 8097F391-ABF0-44A6-94D2-243AFBA3F984
 ms.date: 04/20/2017
@@ -52,9 +51,9 @@ This topic summarizes the hardware, firmware, and software requirements for Gene
 -   Set the **EmulateDebouncing** flag in the **CONTROLLER\_BASIC\_INFORMATION** structure. This significantly increases noise immunity for devices whose interrupts are subject to electrostatic discharge (such as buttons, plugs, and so on).
 -   Set the **EmulateActiveBoth** flag in the **CONTROLLER\_BASIC\_INFORMATION** structure, and implement the [*CLIENT\_ReconfigureInterrupt*](https://msdn.microsoft.com/library/windows/hardware/hh698243) callback function. This ensures reliable edge detection for ActiveBoth interrupts.
 
- 
+ 
 
- 
+ 
 
 
 

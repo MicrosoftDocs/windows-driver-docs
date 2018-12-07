@@ -1,6 +1,5 @@
 ---
 title: Locking and Unlocking Stream Pointers
-author: windows-driver-content
 description: Locking and Unlocking Stream Pointers
 ms.assetid: 3826a5bc-4ba5-4ada-a8aa-e7bbd949187e
 keywords:
@@ -33,9 +32,9 @@ When an IRP is canceled, AVStream calls the cancellation callbacks for all unloc
 
 Unlock the leading and trailing edge stream pointers only when they are not in use.
 
- 
+ 
 
- 
+ 
 
 
 

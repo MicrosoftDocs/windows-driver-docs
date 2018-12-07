@@ -1,7 +1,6 @@
 ---
 title: Debugger Data Model C++ Interfaces Overview
 description: This topic provides an overview of the Debugger Data Model C++ Interfaces to extend and customize the capabilities of the debugger.
-ms.author: domars
 ms.date: 10/05/2018
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: Porting I/O Queues
-author: windows-driver-content
 description: Porting I/O Queues
 ms.assetid: 90319342-5FAB-451B-BCA1-B273B81418DB
 ms.date: 04/20/2017
@@ -19,9 +18,9 @@ WDF drivers create queues and register I/O event callbacks in the [*EvtDriverDev
 
 For more information about creating queues, see [Creating I/O Queues](creating-i-o-queues.md)
 
- 
+ 
 
- 
+ 
 
 
 

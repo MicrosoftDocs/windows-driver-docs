@@ -1,6 +1,5 @@
 ---
 title: WMI WNODE_XXX Structures
-author: windows-driver-content
 description: WMI WNODE_XXX Structures
 ms.assetid: 9d059b9a-c129-42ba-8db6-53480003f56e
 keywords: ["WMI WDK kernel , requests", "requests WDK WMI", "IRPs WDK WMI", "WNODE_XXX structures"]
@@ -31,37 +30,37 @@ The following table lists WMI IRPs and their corresponding **WNODE\_*XXX*** stru
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>IRP_MN_CHANGE_SINGLE_INSTANCE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550831)</p></td>
-<td><p>[<strong>WNODE_SINGLE_INSTANCE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566377)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff550831" data-raw-source="[&lt;strong&gt;IRP_MN_CHANGE_SINGLE_INSTANCE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff550831)"><strong>IRP_MN_CHANGE_SINGLE_INSTANCE</strong></a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566377" data-raw-source="[&lt;strong&gt;WNODE_SINGLE_INSTANCE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566377)"><strong>WNODE_SINGLE_INSTANCE</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>IRP_MN_CHANGE_SINGLE_ITEM</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550836)</p></td>
-<td><p>[<strong>WNODE_SINGLE_ITEM</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566378)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff550836" data-raw-source="[&lt;strong&gt;IRP_MN_CHANGE_SINGLE_ITEM&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff550836)"><strong>IRP_MN_CHANGE_SINGLE_ITEM</strong></a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566378" data-raw-source="[&lt;strong&gt;WNODE_SINGLE_ITEM&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566378)"><strong>WNODE_SINGLE_ITEM</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>IRP_MN_EXECUTE_METHOD</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550868)</p></td>
-<td><p>[<strong>WNODE_METHOD_ITEM</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566376)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff550868" data-raw-source="[&lt;strong&gt;IRP_MN_EXECUTE_METHOD&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff550868)"><strong>IRP_MN_EXECUTE_METHOD</strong></a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566376" data-raw-source="[&lt;strong&gt;WNODE_METHOD_ITEM&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566376)"><strong>WNODE_METHOD_ITEM</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>IRP_MN_QUERY_ALL_DATA</strong>](https://msdn.microsoft.com/library/windows/hardware/ff551650)</p></td>
-<td><p>[<strong>WNODE_ALL_DATA</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566372)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff551650" data-raw-source="[&lt;strong&gt;IRP_MN_QUERY_ALL_DATA&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff551650)"><strong>IRP_MN_QUERY_ALL_DATA</strong></a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566372" data-raw-source="[&lt;strong&gt;WNODE_ALL_DATA&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566372)"><strong>WNODE_ALL_DATA</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>IRP_MN_QUERY_SINGLE_INSTANCE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff551718)</p></td>
-<td><p>[<strong>WNODE_SINGLE_INSTANCE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566377)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff551718" data-raw-source="[&lt;strong&gt;IRP_MN_QUERY_SINGLE_INSTANCE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff551718)"><strong>IRP_MN_QUERY_SINGLE_INSTANCE</strong></a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566377" data-raw-source="[&lt;strong&gt;WNODE_SINGLE_INSTANCE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566377)"><strong>WNODE_SINGLE_INSTANCE</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Two additional **WNODE\_*XXX*** structures, [**WNODE\_EVENT\_ITEM**](https://msdn.microsoft.com/library/windows/hardware/ff566373) and [**WNODE\_EVENT\_REFERENCE**](https://msdn.microsoft.com/library/windows/hardware/ff566374), are used to send notifications of enabled events. A driver that registers event blocks will, if an event is enabled and the event occurs, send notification of the event to WMI by calling [**IoWMIWriteEvent**](https://msdn.microsoft.com/library/windows/hardware/ff550520) and passing a **WNODE\_EVENT\_*XXX*** structure. For information about sending WMI events, see [Sending WMI Events](sending-wmi-events.md).
 
 Each **WNODE\_*XXX*** structure consists of the following:
 
--   An embedded [**WNODE\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/ff566375) structure that contains information common to all **WNODE\_*XXX*** including the size of the buffer, the GUID that represents the data block, and flags that indicate the type of **WNODE\_*XXX*** structure, whether it uses static or dynamic instance names, and other characteristics of the block.
+- An embedded [**WNODE\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/ff566375) structure that contains information common to all **WNODE\_*XXX*** including the size of the buffer, the GUID that represents the data block, and flags that indicate the type of **WNODE\_*XXX*** structure, whether it uses static or dynamic instance names, and other characteristics of the block.
 
--   The fixed members of the particular **WNODE\_*XXX*** structure, such as offsets to instance names and data.
+- The fixed members of the particular **WNODE\_*XXX*** structure, such as offsets to instance names and data.
 
 A **WNODE\_*XXX*** structure in an IRP buffer (**Parameters.WMI.Buffer**) is typically followed by variable data related to the request, such as dynamic instance names, static instance name strings, input for or output from a method, or data for one or more instances of a data block. The size of the buffer must therefore exceed **sizeof(WNODE\_*XXX*)** by the amount of variable data involved.
 
@@ -96,23 +95,23 @@ The following figure shows a block diagram of an IRP buffer containing a **WNODE
 
 Starting at the top of the previous figure:
 
--   As described in the previous figure, the [**WNODE\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/ff566375) structure at the beginning of the [**WNODE\_ALL\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff566372) is contained in a **WnodeHeader** member. **WnodeHeader.Buffersize** and **WnodeHeader.Guid** indicate the size of the **WNODE\_ALL\_DATA** and the GUID of the data block, respectively.
+- As described in the previous figure, the [**WNODE\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/ff566375) structure at the beginning of the [**WNODE\_ALL\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff566372) is contained in a **WnodeHeader** member. **WnodeHeader.Buffersize** and **WnodeHeader.Guid** indicate the size of the **WNODE\_ALL\_DATA** and the GUID of the data block, respectively.
 
-    In this example, WMI sets **WnodeHeader.Flags** to indicate that this structure is a **WNODE\_ALL\_DATA** and that the data block was registered with dynamic instance names (that is, WMI clears WNODE\_FLAG\_STATIC\_INSTANCE\_NAMES and WNODE\_FLAG\_PDO\_INSTANCE\_NAMES). On output, the driver sets WNODE\_FLAG\_FIXED\_INSTANCE\_SIZE to indicate that all of the instances are the same size.
+  In this example, WMI sets **WnodeHeader.Flags** to indicate that this structure is a **WNODE\_ALL\_DATA** and that the data block was registered with dynamic instance names (that is, WMI clears WNODE\_FLAG\_STATIC\_INSTANCE\_NAMES and WNODE\_FLAG\_PDO\_INSTANCE\_NAMES). On output, the driver sets WNODE\_FLAG\_FIXED\_INSTANCE\_SIZE to indicate that all of the instances are the same size.
 
--   WMI sets **DataBlockOffset** to indicate the offset from the beginning of the buffer to the first byte of instance data. (The driver must not change this value). In this example, instance data follows the instance names at **OffsetInstanceNameOffsets**.
+- WMI sets **DataBlockOffset** to indicate the offset from the beginning of the buffer to the first byte of instance data. (The driver must not change this value). In this example, instance data follows the instance names at **OffsetInstanceNameOffsets**.
 
--   The driver sets **InstanceCount** to indicate the number of instances being returned.
+- The driver sets **InstanceCount** to indicate the number of instances being returned.
 
--   **WNODE\_*XXX*** for data blocks that use dynamic instance names always contain the instance name strings. Because this example uses dynamic instance names, **OffsetInstanceNameOffsets** indicates the offset from the beginning of the buffer to an array of offsets to dynamic instance names in the buffer.
+- **WNODE\_*XXX*** for data blocks that use dynamic instance names always contain the instance name strings. Because this example uses dynamic instance names, **OffsetInstanceNameOffsets** indicates the offset from the beginning of the buffer to an array of offsets to dynamic instance names in the buffer.
 
--   **FixedInstanceSize** indicates the number of bytes of data in each instance being returned by the driver. If instances of this data block were to vary in size, the driver would clear WNODE\_FLAG\_FIXED\_INSTANCE\_SIZE in **WnodeHeader.Flags** and set **OffsetInstanceDataAndLength** to an array of **OFFSETINSTANCEDATAANDLENGTH** structures, each specifying an offset to the data for one instance and the number of bytes in that instance instead of setting **FixedInstanceSize**.
+- **FixedInstanceSize** indicates the number of bytes of data in each instance being returned by the driver. If instances of this data block were to vary in size, the driver would clear WNODE\_FLAG\_FIXED\_INSTANCE\_SIZE in **WnodeHeader.Flags** and set **OffsetInstanceDataAndLength** to an array of **OFFSETINSTANCEDATAANDLENGTH** structures, each specifying an offset to the data for one instance and the number of bytes in that instance instead of setting **FixedInstanceSize**.
 
 For more information about **WNODE\_*XXX*** structures, see [System Structures](https://msdn.microsoft.com/library/windows/hardware/ff564540).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_HESSID
-author: windows-driver-content
 description: WDI_TLV_HESSID is a TLV that contains a list of HESSIDs.
 ms.assetid: 630A1824-7722-4B03-8073-EFC44E142400
 ms.date: 07/18/2017
@@ -31,7 +30,7 @@ The size (in bytes) of the array of [**WDI\_MAC\_ADDRESS**](https://msdn.microso
 |-------------------------------------------------------|--------------------|
 | [**WDI\_MAC\_ADDRESS**](https://msdn.microsoft.com/library/windows/hardware/dn926071)\[\] | A list of HESSIDs. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

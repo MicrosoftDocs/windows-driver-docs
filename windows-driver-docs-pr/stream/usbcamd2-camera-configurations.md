@@ -1,6 +1,5 @@
 ---
 title: USBCAMD2 Camera Configurations
-author: windows-driver-content
 description: USBCAMD2 Camera Configurations
 ms.assetid: 9a0dd6f9-aefb-4134-8bd5-31420a16db4a
 keywords:
@@ -43,13 +42,13 @@ The USBCAMD2 library supports cameras that use a combination of isochronous pipe
 
 **Note**   USBCAMD2 supports cameras with a single USB interface that has multiple alternate settings. All alternate settings must have the same type and number of pipes. You specify this information in an array of type [**USBCAMD\_Pipe\_Config\_Descriptor**](https://msdn.microsoft.com/library/windows/hardware/ff568623) that you pass to [*CamConfigureEx*](https://msdn.microsoft.com/library/windows/hardware/ff557605) when you initialize and configure the camera.
 
- 
+ 
 
 Whereas USB 1.1 devices can be connected to a USB 2.0 bus, USBCAMD2 supports only USB 1.1 camera devices and is therefore limited to the maximum throughput of the USB 1.1 bus (for example, isochronous data transfer in *full*-speed mode). USBCAMD2 does not support the USB 2.0 *high*-speed mode for isochronous data transfer. However, if a camera implements bulk pipes only, then it could benefit from being connected to a USB 2.0 bus where there is more available bulk transfer bandwidth.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: pocaps
 description: The pocaps extension displays the power capabilities of the target computer.
 ms.assetid: 011d923a-a5c4-4d3b-ba06-fe5dc884adaa
 keywords: ["pocaps Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -45,7 +44,7 @@ The **!pocaps** extension displays the power capabilities of the target computer
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -71,9 +70,9 @@ PopCapabilities @ 0x8016b100
     Default Wake:           Sx
 ```
 
- 
+ 
 
- 
+ 
 
 
 

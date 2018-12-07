@@ -1,6 +1,5 @@
 ---
 title: Working with USB Pipes in UMDF 1.x Drivers
-author: windows-driver-content
 description: Working with USB Pipes in UMDF 1.x Drivers
 ms.assetid: face26da-fa79-4d32-8ad1-9e8022bb23b3
 keywords:
@@ -111,9 +110,9 @@ If your driver's USB target [completes](completing-i-o-requests.md) an I/O reque
 
 5.  Resend the I/O request that failed, and all I/O requests that followed the failed request.
 
- 
+ 
 
- 
+ 
 
 
 

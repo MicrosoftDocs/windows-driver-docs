@@ -32,9 +32,9 @@ The miniport driver must support RSC for at least IEEE 802.3 encapsulation. In a
 
 To determine whether a miniport driver supports RSC, protocol drivers and other drivers can issue the [OID\_TCP\_OFFLOAD\_HARDWARE\_CAPABILITIES](https://msdn.microsoft.com/library/windows/hardware/ff569806) OID request, which will return an [**NDIS\_OFFLOAD**](https://msdn.microsoft.com/library/windows/hardware/ff566599) structure.
 
- 
+ 
 
- 
+ 
 
 
 

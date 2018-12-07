@@ -3,7 +3,6 @@ title: Bug Check 0x103 MUP_FILE_SYSTEM
 description: The MUP_FILE_SYSTEM bug check has a value of 0x00000103.
 ms.assetid: 2756bdcc-5b10-481e-99ec-17b00c4f459d
 keywords: ["Bug Check 0x103 MUP_FILE_SYSTEM", "MUP_FILE_SYSTEM"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -76,16 +75,16 @@ Parameter 1 identifies the type of violation.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
 
 The MUP maintains context information on a per-file object basis for all file objects it handles.
 
- 
+ 
 
- 
+ 
 
 
 

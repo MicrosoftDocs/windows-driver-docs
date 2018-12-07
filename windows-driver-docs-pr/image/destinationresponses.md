@@ -46,7 +46,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>DestinationResponse</strong>](destinationresponse.md)</p></td>
+<td><p><a href="destinationresponse.md" data-raw-source="[&lt;strong&gt;DestinationResponse&lt;/strong&gt;](destinationresponse.md)"><strong>DestinationResponse</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -82,9 +82,9 @@ A WSD Scan Service must specify one [**DestinationResponse**](destinationrespons
 
 [**ScanDestination**](scandestination.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -53,7 +53,7 @@ Clients use KSPROPERTY\_BDA\_TRANSMISSION\_MODE to control the setting on a demo
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -85,9 +85,9 @@ Requirements
 
 [**TransmissionMode**](https://msdn.microsoft.com/library/windows/hardware/ff568533)
 
- 
+ 
 
- 
+ 
 
 
 

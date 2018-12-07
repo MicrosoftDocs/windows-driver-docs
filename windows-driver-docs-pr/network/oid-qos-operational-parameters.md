@@ -1,6 +1,5 @@
 ---
 title: OID_QOS_OPERATIONAL_PARAMETERS
-author: windows-driver-content
 description: An overlying driver issues an object identifier (OID) query request of OID_QOS_OPERATIONAL_PARAMETERS to obtain the current NDIS Quality of Service (QoS) operational parameters for a network adapter.
 ms.assetid: 546EE7C6-BCED-4FF9-9B87-A36199B1B31C
 ms.date: 08/08/2017
@@ -18,7 +17,7 @@ After a successful return from the OID query request, the **InformationBuffer** 
 
 **Note**  This OID query request is handled by NDIS for miniport drivers that support the IEEE 802.1 Data Center Bridging (DCB) interface.
 
- 
+ 
 
 Remarks
 -------
@@ -59,7 +58,7 @@ NDIS returns one of the following status codes.
 </tr>
 <tr class="odd">
 <td><p>NDIS_STATUS_INVALID_LENGTH</p></td>
-<td><p>The length of the information buffer is less than sizeof([<strong>NDIS_QOS_PARAMETERS</strong>](https://msdn.microsoft.com/library/windows/hardware/hh451640)). NDIS sets the <strong>DATA.QUERY_INFORMATION.BytesNeeded</strong> member in the [<strong>NDIS_OID_REQUEST</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure to the minimum buffer size that is required.</p></td>
+<td><p>The length of the information buffer is less than sizeof(<a href="https://msdn.microsoft.com/library/windows/hardware/hh451640" data-raw-source="[&lt;strong&gt;NDIS_QOS_PARAMETERS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh451640)"><strong>NDIS_QOS_PARAMETERS</strong></a>). NDIS sets the <strong>DATA.QUERY_INFORMATION.BytesNeeded</strong> member in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710" data-raw-source="[&lt;strong&gt;NDIS_OID_REQUEST&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566710)"><strong>NDIS_OID_REQUEST</strong></a> structure to the minimum buffer size that is required.</p></td>
 </tr>
 <tr class="even">
 <td><p>NDIS_STATUS_FAILURE</p></td>
@@ -68,7 +67,7 @@ NDIS returns one of the following status codes.
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -106,9 +105,9 @@ Requirements
 
 [OID\_QOS\_PARAMETERS](oid-qos-parameters.md)
 
- 
+ 
 
- 
+ 
 
 
 

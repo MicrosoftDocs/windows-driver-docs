@@ -3,7 +3,6 @@ title: can_write_kdump
 description: The can_write_kdump extension verifies that there is enough disk space on the target computer to write a kernel dump file of the specified type.
 ms.assetid: e9fdf8a4-3294-4625-a854-5e42a69374a6
 keywords: ["kernel dump", "can_write_kdump Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -60,7 +59,7 @@ Specifies that the extension should determine if there is enough space for a ful
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -78,9 +77,9 @@ Page file size: 1572864 KB
 NO: Page file too small
 ```
 
- 
+ 
 
- 
+ 
 
 
 

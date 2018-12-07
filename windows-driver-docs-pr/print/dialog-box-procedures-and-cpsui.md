@@ -1,6 +1,5 @@
 ---
 title: Dialog Box Procedures and CPSUI
-author: windows-driver-content
 description: Dialog Box Procedures and CPSUI
 ms.assetid: fad65a34-9580-41a5-ad58-91ea7ffcd3d5
 keywords:
@@ -28,9 +27,9 @@ A dialog box procedure can use the [**SetCPSUIUserData**](https://msdn.microsoft
 
 For more information about using dialog box procedures with CPSUI, see the Remarks section for [**DLGPAGE**](https://msdn.microsoft.com/library/windows/hardware/ff547607).
 
- 
+ 
 
- 
+ 
 
 
 

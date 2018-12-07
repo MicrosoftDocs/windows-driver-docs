@@ -1,6 +1,5 @@
 ---
 title: Vendor-Supplied Changer Drivers
-author: windows-driver-content
 description: Vendor-Supplied Changer Drivers
 ms.assetid: 6bbd4fef-4b9c-45cc-bab8-1cfad95038db
 keywords:
@@ -25,9 +24,9 @@ This section contains the following information:
 
 [Installing Changer Miniclass Drivers](installing-changer-miniclass-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

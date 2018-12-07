@@ -1,6 +1,5 @@
 ---
 title: Creating the Localized MOF File
-author: windows-driver-content
 description: Creating the Localized MOF File
 ms.assetid: 1cc99e43-b09a-445d-abb6-4a3d73b6d7ed
 keywords: ["MOF files WDK WMI", "localizing MOF files", "property qualifiers WDK WMI", "amended classes WDK WMI", "multiple MOF files WDK WMI", "languages WDK WMI"]
@@ -16,9 +15,9 @@ ms.localizationpriority: medium
 
 On Windows XP and later versions of the operating system, drivers localize a WMI schema by making an *amended* version of each class. An amended version of a class updates property qualifiers that depend on the locale.
 
-An amended version of a class has the same format as a class declaration, preceded by the **amendment** qualifier. The amended class declaration also includes a **locale(**0x*XXX***)** qualifier, where *XXX* specifies the locale identifier (LCID) for the locale.
+An amended version of a class has the same format as a class declaration, preceded by the **amendment** qualifier. The amended class declaration also includes a <strong>locale(</strong>0x<em>XXX</em>**)** qualifier, where *XXX* specifies the locale identifier (LCID) for the locale.
 
-The amended declaration includes the modified property declarations. Each localized property qualifier has the **:amended** modifier attached to it. For example, the localized version of **Description("***a description string***")** would be **Description("***localized description string***"):amended**.
+The amended declaration includes the modified property declarations. Each localized property qualifier has the **:amended** modifier attached to it. For example, the localized version of **Description("**<em>a description string</em>**")** would be **Description("**<em>localized description string</em>**"):amended**.
 
 Here is an example of a declaration of the basic class, followed by its amendment for American English.
 
@@ -52,9 +51,9 @@ Localized classes are organized in child namespaces of the namespace containing 
 
 For more information about WMI localization, see the [WMI international support](http://go.microsoft.com/fwlink/p/?linkid=8774) website.
 
- 
+ 
 
- 
+ 
 
 
 

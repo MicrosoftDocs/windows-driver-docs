@@ -1,6 +1,5 @@
 ---
 title: ISNMP GetTree method
-author: windows-driver-content
 description: The GetTree method enables an ASP Web page to obtain the values associated with a set of subnodes beneath a specified root SNMP OID.
 MS-HAID:
 - 'webfnc\_bb1a8a21-716c-41ab-8b88-5f26d19575fa.xml'

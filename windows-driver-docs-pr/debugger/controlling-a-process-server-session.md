@@ -3,7 +3,6 @@ title: Controlling a Process Server Session
 description: Controlling a Process Server Session
 ms.assetid: 4219b08a-d353-43dc-8640-96c504b8075b
 keywords: ["process server, controlling a session"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -30,9 +29,9 @@ CDB or WinDbg can exit or end the debugging session in the normal fashion. See [
 
 The process server can be terminated from either computer. To terminate it from the smart client, use the [**.endpsrv (End Process Server)**](-endpsrv--end-process-server-.md) command. To terminate the process server from the computer it is running on, use Task Manager to end the dbgsrv.exe process.
 
- 
+ 
 
- 
+ 
 
 
 

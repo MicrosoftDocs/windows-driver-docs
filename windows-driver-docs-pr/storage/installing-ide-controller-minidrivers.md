@@ -1,6 +1,5 @@
 ---
 title: Installing IDE Controller Minidrivers
-author: windows-driver-content
 description: Installing IDE Controller Minidrivers
 ms.assetid: c1b41f89-150d-47e9-9bed-04f5796f69bd
 keywords:
@@ -33,9 +32,9 @@ For more installation information, including a list of controller hardware suppo
 
 For general information about device installation in Windows 2000 and later operating systems, see [Requirements for Vendor-Supplied IDE Controller Minidrivers](requirements-for-vendor-supplied-ide-controller-minidrivers.md) and [Device Installation Overview](https://msdn.microsoft.com/library/windows/hardware/ff549455).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: wdfkd.wdfdevext
 description: The wdfkd.wdfdevext extension displays information that is associated with the DeviceExtension member of a Microsoft Windows Driver Model (WDM) DEVICE_OBJECT structure.
 ms.assetid: 89559cae-7323-4c91-b20a-7d42069cdb93
 keywords: ["wdfkd.wdfdevext Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -98,9 +97,9 @@ DevNode 0xffffe00000a1e530 for PDO 0xffffe00000b15b00
   MyUmdf2Driver.dll      v2.0  0x000000a5a3ab5f70 0xffffe00000c32900  \Device\00000052
 ```
 
- 
+ 
 
- 
+ 
 
 
 

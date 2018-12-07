@@ -1,6 +1,5 @@
 ---
 title: Sample Toaster Driver Programming Tour
-author: windows-driver-content
 description: This topic provides a code walkthrough of the Toaster sample, which contains Kernel-Mode Driver Framework (KMDF) and User-Mode Driver Framework (UMDF) drivers designed for learning purposes.
 ms.assetid: 5977AC09-AB53-4CA4-A35A-0E5A1FEE936F
 ms.date: 04/20/2017
@@ -33,78 +32,80 @@ The sample includes applications that interact with the toaster bus driver and f
 
 The KMDF bus driver services the toaster bus controller, enumerates devices that are plugged in, and performs bus-level power management. The bus driver supports D0 and D3 power states. It also has a WMI interface. This directory contains two subdirectories that show two different implementation of the Toaster bus driver.
 
--   **Static**
+- **Static**
 
-    The static version of the bus driver shows how to enumerate child devices using a static child list, one per device, provided by the framework.
+  The static version of the bus driver shows how to enumerate child devices using a static child list, one per device, provided by the framework.
 
-    *Static enumeration* enables a driver to detect and report the existence of devices during initialization, with a limited ability to report subsequent changes to the system's configuration.
+  *Static enumeration* enables a driver to detect and report the existence of devices during initialization, with a limited ability to report subsequent changes to the system's configuration.
 
-    Bus drivers can use static enumeration if the number and type of devices or functional subunits is predetermined and permanent, and does not depend on the configuration of the system on which the driver is running.
+  Bus drivers can use static enumeration if the number and type of devices or functional subunits is predetermined and permanent, and does not depend on the configuration of the system on which the driver is running.
 
-    For example, a sound card's driver might act as a bus driver and create separate physical device objects (PDOs) for each of the card's capabilities, such as MIDI, audio, and joystick.
+  For example, a sound card's driver might act as a bus driver and create separate physical device objects (PDOs) for each of the card's capabilities, such as MIDI, audio, and joystick.
 
-    To enumerate a child, the bus driver:
+  To enumerate a child, the bus driver:
 
-    1.  Calls [**WdfPdoInitAllocate**](https://msdn.microsoft.com/library/windows/hardware/ff548786) to obtain a [WDFDEVICE\_INIT](https://msdn.microsoft.com/library/windows/hardware/ff546951) structure.
+  1.  Calls [**WdfPdoInitAllocate**](https://msdn.microsoft.com/library/windows/hardware/ff548786) to obtain a [WDFDEVICE\_INIT](https://msdn.microsoft.com/library/windows/hardware/ff546951) structure.
 
-    2.  Initializes the [WDFDEVICE\_INIT](https://msdn.microsoft.com/library/windows/hardware/ff546951) structure.
+  2.  Initializes the [WDFDEVICE\_INIT](https://msdn.microsoft.com/library/windows/hardware/ff546951) structure.
 
-    3.  Call [**WdfDeviceCreate**](https://msdn.microsoft.com/library/windows/hardware/ff545926) to create a framework device object that represents a PDO.
+  3.  Call [**WdfDeviceCreate**](https://msdn.microsoft.com/library/windows/hardware/ff545926) to create a framework device object that represents a PDO.
 
-    After calling [**WdfDeviceCreate**](https://msdn.microsoft.com/library/windows/hardware/ff545926), the driver calls [**WdfFdoAddStaticChild**](https://msdn.microsoft.com/library/windows/hardware/ff547225) to add the child device to the child list.
+  After calling [**WdfDeviceCreate**](https://msdn.microsoft.com/library/windows/hardware/ff545926), the driver calls [**WdfFdoAddStaticChild**](https://msdn.microsoft.com/library/windows/hardware/ff547225) to add the child device to the child list.
 
-    Because drivers should only use static child lists for device configurations that are predetermined and permanent, a driver does not typically modify a static child list after creating it. If the driver determines that a child device has become inaccessible, the driver can call [**WdfPdoMarkMissing**](https://msdn.microsoft.com/library/windows/hardware/ff548809). (If a child device is accessible but unresponsive, the driver should set the **Failed** member of the [**WDF\_DEVICE\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff551284) structure to **WdfTrue** and then call [**WdfDeviceSetDeviceState**](https://msdn.microsoft.com/library/windows/hardware/ff546884).)
+  Because drivers should only use static child lists for device configurations that are predetermined and permanent, a driver does not typically modify a static child list after creating it. If the driver determines that a child device has become inaccessible, the driver can call [**WdfPdoMarkMissing**](https://msdn.microsoft.com/library/windows/hardware/ff548809). (If a child device is accessible but unresponsive, the driver should set the **Failed** member of the [**WDF\_DEVICE\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff551284) structure to **WdfTrue** and then call [**WdfDeviceSetDeviceState**](https://msdn.microsoft.com/library/windows/hardware/ff546884).)
 
-    In order to statically enumerate child devices every time the bus driver starts, you can set a registry value in the Toaster Bus driver's device parameter key.
+  In order to statically enumerate child devices every time the bus driver starts, you can set a registry value in the Toaster Bus driver's device parameter key.
 
-    **HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Enum\\Root\\SYSTEM\\&lt;InstanceNumber&gt;\\Device Parameters**
+  **HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Enum\\Root\\SYSTEM\\&lt;InstanceNumber&gt;\\Device Parameters**
 
-    **NumberOfToasters: REG\_DWORD: 2**
+  **NumberOfToasters: REG\_DWORD: 2**
 
-    The maximum number of child devices that can be enumerated using this registry setting is 10. You can also configure this value through the Toaster Bus Inf file.
+  The maximum number of child devices that can be enumerated using this registry setting is 10. You can also configure this value through the Toaster Bus Inf file.
 
--   **Dynamic**
+- **Dynamic**
 
-    The dynamic version of the bus driver shows how to enumerate child devices using child list objects.
+  The dynamic version of the bus driver shows how to enumerate child devices using child list objects.
 
-    *Dynamic enumeration* enables a driver to detect and report changes to the number and type of devices that are connected to the system while the system is running.
+  *Dynamic enumeration* enables a driver to detect and report changes to the number and type of devices that are connected to the system while the system is running.
 
-    Bus drivers must use dynamic enumeration if the number or types of devices that are connected to the parent device depend on a system's configuration. Some of these devices might be always connected to the system, and some might be plugged in and unplugged while the system is running.
+  Bus drivers must use dynamic enumeration if the number or types of devices that are connected to the parent device depend on a system's configuration. Some of these devices might be always connected to the system, and some might be plugged in and unplugged while the system is running.
 
-    For example, the number and type of devices that are plugged into a system's PCI bus are system-dependent, but they are permanent unless a user turns off power, opens the case, and adds or removes a device by using a screwdriver. On the other hand, a user can add or remove USB devices by plugging in or unplugging a cable while the system is running.
+  For example, the number and type of devices that are plugged into a system's PCI bus are system-dependent, but they are permanent unless a user turns off power, opens the case, and adds or removes a device by using a screwdriver. On the other hand, a user can add or remove USB devices by plugging in or unplugging a cable while the system is running.
 
-    Each time a bus driver identifies a child device, it must add the child device's description to a child list. Driver can either use framework provided device's default child list by calling [**WdfFdoGetDefaultChildList**](https://msdn.microsoft.com/library/windows/hardware/ff547235), or can create additional child lists, for grouping children, by calling [**WdfChildListCreate**](https://msdn.microsoft.com/library/windows/hardware/ff545615). This sample uses the default child list. A *child description* consists of a required *identification description* and an optional *address description*.
+  Each time a bus driver identifies a child device, it must add the child device's description to a child list. Driver can either use framework provided device's default child list by calling [**WdfFdoGetDefaultChildList**](https://msdn.microsoft.com/library/windows/hardware/ff547235), or can create additional child lists, for grouping children, by calling [**WdfChildListCreate**](https://msdn.microsoft.com/library/windows/hardware/ff545615). This sample uses the default child list. A *child description* consists of a required *identification description* and an optional *address description*.
 
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th align="left">Term</th>
-    <th align="left">Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><p><a href="" id="---------------------identification-description"></a> Identification Description</p></td>
-    <td align="left"><p>An identification description is a structure that contains information that uniquely identifies each device that the driver enumerates. The driver defines this structure, but its first member must be a [<strong>WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER</strong>](https://msdn.microsoft.com/library/windows/hardware/ff551223) structure.</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p><a href="" id="---------------------address-description"></a> Address Description</p></td>
-    <td align="left"><p>An address description is a structure that contains information that the driver requires so that it can access the device on its bus, if the information can change while the device is plugged in. The driver defines this structure, but its first member must be a [<strong>WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER</strong>](https://msdn.microsoft.com/library/windows/hardware/ff551223) structure. Address descriptions are optional. This sample does not use address descriptions.</p></td>
-    </tr>
-    </tbody>
-    </table>
+  <table>
+  <colgroup>
+  <col width="50%" />
+  <col width="50%" />
+  </colgroup>
+  <thead>
+  <tr class="header">
+  <th align="left">Term</th>
+  <th align="left">Description</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr class="odd">
+  <td align="left"><p><a href="" id="---------------------identification-description"></a> Identification Description</p></td>
+  <td align="left"><p>An identification description is a structure that contains information that uniquely identifies each device that the driver enumerates. The driver defines this structure, but its first member must be a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551223" data-raw-source="[&lt;strong&gt;WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff551223)"><strong>WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER</strong></a> structure.</p></td>
+  </tr>
+  <tr class="even">
+  <td align="left"><p><a href="" id="---------------------address-description"></a> Address Description</p></td>
+  <td align="left"><p>An address description is a structure that contains information that the driver requires so that it can access the device on its bus, if the information can change while the device is plugged in. The driver defines this structure, but its first member must be a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551223" data-raw-source="[&lt;strong&gt;WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff551223)"><strong>WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER</strong></a> structure. Address descriptions are optional. This sample does not use address descriptions.</p></td>
+  </tr>
+  </tbody>
+  </table>
 
-     
 
-    To add children to a child list, the driver calls [**WdfChildListAddOrUpdateChildDescriptionAsPresent**](https://msdn.microsoft.com/library/windows/hardware/ff545591) for each child device that it finds. This call informs the framework that a driver has discovered a child device that is connected to a parent device. When your driver calls **WdfChildListAddOrUpdateChildDescriptionAsPresent**, it supplies an identification description and, optionally, an address description.
 
-    After the driver calls [**WdfChildListAddOrUpdateChildDescriptionAsPresent**](https://msdn.microsoft.com/library/windows/hardware/ff545591) to report a new device, the framework informs the PnP manager that the new device exists. The PnP manager then builds a device stack and driver stack for the new device. As part of this process, the framework calls the bus driver's [*EvtChildListCreateDevice*](https://msdn.microsoft.com/library/windows/hardware/ff540828) callback function. This callback function must call [**WdfDeviceCreate**](https://msdn.microsoft.com/library/windows/hardware/ff545926) to create a PDO for the new device.
 
-    To report a child device missing, this driver calls WdfChildListUpdateChildDescriptionAsMissing. For further details on dynamic enumeration, please refer to the framework documentation.
+To add children to a child list, the driver calls [**WdfChildListAddOrUpdateChildDescriptionAsPresent**](https://msdn.microsoft.com/library/windows/hardware/ff545591) for each child device that it finds. This call informs the framework that a driver has discovered a child device that is connected to a parent device. When your driver calls **WdfChildListAddOrUpdateChildDescriptionAsPresent**, it supplies an identification description and, optionally, an address description.
+
+After the driver calls [**WdfChildListAddOrUpdateChildDescriptionAsPresent**](https://msdn.microsoft.com/library/windows/hardware/ff545591) to report a new device, the framework informs the PnP manager that the new device exists. The PnP manager then builds a device stack and driver stack for the new device. As part of this process, the framework calls the bus driver's [*EvtChildListCreateDevice*](https://msdn.microsoft.com/library/windows/hardware/ff540828) callback function. This callback function must call [**WdfDeviceCreate**](https://msdn.microsoft.com/library/windows/hardware/ff545926) to create a PDO for the new device.
+
+To report a child device missing, this driver calls WdfChildListUpdateChildDescriptionAsMissing. For further details on dynamic enumeration, please refer to the framework documentation.
+
 
 ## KMDF Function Driver
 
@@ -153,9 +154,9 @@ UMDF Toastmon demonstrates how to use UMDF to write a minimal driver with the Us
 
 Toastmon is intended to serve as a learning tool for other UMDF drivers that you may write.
 
- 
 
- 
+
+
 
 
 

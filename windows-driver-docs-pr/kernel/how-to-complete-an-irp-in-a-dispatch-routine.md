@@ -1,6 +1,5 @@
 ---
 title: How to Complete an IRP in a Dispatch Routine
-author: windows-driver-content
 description: How to Complete an IRP in a Dispatch Routine
 ms.assetid: b29da791-e768-4f67-8e85-6cfbeca97220
 keywords: ["completing IRPs WDK kernel , dispatch routines", "dispatch routines WDK kernel , completing IRPs", "status information WDK IRPs", "I/O status blocks WDK kernel", "status blocks WDK kernel"]
@@ -40,9 +39,9 @@ Always release any spin lock(s) the driver is holding before calling **IoComplet
 
 It takes an indeterminate amount of time to complete an IRP, particularly in a chain of layered drivers. Moreover, a deadlock can occur if a higher-level driver's *IoCompletion* routine sends an IRP back down to a lower driver that is holding a spin lock.
 
- 
+ 
 
- 
+ 
 
 
 

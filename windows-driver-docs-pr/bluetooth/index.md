@@ -9,7 +9,6 @@ keywords:
 - connections WDK Bluetooth
 - protocols WDK Bluetooth
 - custom drivers WDK Bluetooth
-ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -35,9 +34,9 @@ This section describes Bluetooth profile drivers. The information in this sectio
 
 [Bluetooth LE Proximity Profile Devices and Apps](implementing-a-bluetooth-le-proximity-profile-device-and-application.md)
 
- 
+ 
 
- 
+ 
 
 
 

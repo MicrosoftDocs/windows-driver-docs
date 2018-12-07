@@ -1,6 +1,5 @@
 ---
 title: PnP Components
-author: windows-driver-content
 description: PnP Components
 ms.assetid: 33612da4-1ddb-40cf-a8a2-838f85b52cd6
 keywords: ["PnP WDK kernel , components", "Plug and Play WDK kernel , components", "software components WDK PnP", "PnP drivers WDK kernel", "user-mode PnP manager WDK", "kernel-mode PnP manager WDK", "PnP managers WDK", "PnP components WDK user-mode"]
@@ -26,9 +25,9 @@ All drivers should support PnP and power management. If a single driver does not
 
 See [Device Installation Overview](https://msdn.microsoft.com/library/windows/hardware/ff549455) for information about device and driver setup, including (INF) files, CAT files, and the registry.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: IRP_MJ_SYSTEM_CONTROL
-author: windows-driver-content
 description: All drivers must provide a DispatchSystemControl routine that handles IRP_MJ_SYSTEM_CONTROL requests, which are sent by the kernel-mode component of Windows Management Instrumentation (WMI).
 ms.date: 08/12/2017
 ms.assetid: 1b4dfc87-3f74-4e33-9dbb-72d4f72480fc
@@ -12,7 +11,7 @@ ms.localizationpriority: medium
 # IRP\_MJ\_SYSTEM\_CONTROL
 
 
-All drivers must provide a [*DispatchSystemControl*](https://msdn.microsoft.com/library/windows/hardware/ff543412) routine that handles **IRP\_MJ\_SYSTEM\_CONTROL** requests, which are sent by the kernel-mode component of [Windows Management Instrumentation](https://msdn.microsoft.com/library/windows/hardware/ff547139) (WMI).
+All drivers must provide a [*DispatchSystemControl*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine that handles **IRP\_MJ\_SYSTEM\_CONTROL** requests, which are sent by the kernel-mode component of [Windows Management Instrumentation](https://msdn.microsoft.com/library/windows/hardware/ff547139) (WMI).
 
 When Sent
 ---------
@@ -32,7 +31,7 @@ Depends on the value at **MinorFunction** in the current I/O stack location of t
 Operation
 ---------
 
-All drivers must support **IRP\_MJ\_SYSTEM\_CONTROL** requests by supplying a [*DispatchSystemControl*](https://msdn.microsoft.com/library/windows/hardware/ff543412) routine.
+All drivers must support **IRP\_MJ\_SYSTEM\_CONTROL** requests by supplying a [*DispatchSystemControl*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine.
 
 Drivers that support [Windows Management Instrumentation](https://msdn.microsoft.com/library/windows/hardware/ff547139) (WMI) must handle **IRP\_MJ\_SYSTEM\_CONTROL** requests by processing the minor function codes associated with this major function code. For information about the WMI minor function codes, see [WMI Minor IRPs](wmi-minor-irps.md).
 
@@ -57,11 +56,11 @@ Requirements
 ## See also
 
 
-[*DispatchSystemControl*](https://msdn.microsoft.com/library/windows/hardware/ff543412)
+[*DispatchSystemControl*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch)
 
- 
+ 
 
- 
+ 
 
 
 

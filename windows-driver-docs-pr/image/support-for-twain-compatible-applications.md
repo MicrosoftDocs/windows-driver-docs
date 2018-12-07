@@ -1,6 +1,5 @@
 ---
 title: Support for TWAIN-Compatible Applications
-author: windows-driver-content
 description: Support for TWAIN-Compatible Applications
 ms.assetid: 8135178f-a432-4200-81c3-8e12112637f4
 ms.date: 04/20/2017
@@ -19,7 +18,7 @@ All communication between a TWAIN-compatible application and the WIA driver goes
 
 **Note**   The purpose of TWAIN pass-through functionality is to provide support to driver writers who are making the transition from TWAIN drivers to WIA drivers. It is not intended for the purpose of adding TWAIN features to a WIA driver. If your WIA driver does not require support for TWAIN, you should not add this functionality to your driver.
 
- 
+ 
 
 The following topics are discussed in this section:
 
@@ -27,9 +26,9 @@ The following topics are discussed in this section:
 
 [Using the IStiUSD Escape Method](using-the-istiusd-escape-method.md)
 
- 
+ 
 
- 
+ 
 
 
 

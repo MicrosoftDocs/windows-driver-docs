@@ -1,6 +1,5 @@
 ---
 title: SCSI Port I/O Model
-author: windows-driver-content
 description: SCSI Port I/O Model
 ms.assetid: c79fdc99-30ae-4c4a-a130-2b8743bbff7f
 ms.date: 04/20/2017
@@ -25,9 +24,9 @@ While the flow of I/O request packets between a storage class driver and the SCS
 
 The Storport Driver offers a more flexible I/O model, in particular with regard to the masking of interrupts. For information about the differences between the Storport I/O model and the SCSI Port I/O model, see [Storport I/O Model](storport-i-o-model.md).
 
- 
+ 
 
- 
+ 
 
 
 

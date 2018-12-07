@@ -1,6 +1,5 @@
 ---
 title: NDIS_STATUS_OPER_STATUS
-author: windows-driver-content
 description: The NDIS_STATUS_OPER_STATUS status indicates the current operational state of an NDIS network interface to overlying drivers.
 ms.assetid: dbe7ce19-290d-4a48-a6c2-1b95e956c26c
 ms.date: 07/18/2017
@@ -50,9 +49,9 @@ Requirements
 
 [**NDIS\_STATUS\_INDICATION**](https://msdn.microsoft.com/library/windows/hardware/ff567373)
 
- 
+ 
 
- 
+ 
 
 
 

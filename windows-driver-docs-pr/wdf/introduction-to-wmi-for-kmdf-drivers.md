@@ -1,6 +1,5 @@
 ---
 title: Introduction to WMI for KMDF Drivers
-author: windows-driver-content
 description: Introduction to WMI for KMDF Drivers
 ms.assetid: e919f6c9-a4c5-4972-91e7-f4fa609455fe
 keywords:
@@ -60,9 +59,9 @@ Executes a driver-supplied method, at the request of a client.
 
 The FIREFLY, PCIDRV, and Toaster [sample drivers](sample-kmdf-drivers.md) are WMI data providers.
 
- 
+ 
 
- 
+ 
 
 
 

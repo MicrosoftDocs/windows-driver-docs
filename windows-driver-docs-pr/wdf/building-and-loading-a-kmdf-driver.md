@@ -1,6 +1,5 @@
 ---
 title: Building and Loading a WDF Driver
-author: windows-driver-content
 description: This topic describes how to select a target operating system and framework version for a driver project in Visual Studio. It also describes the co-installer and how to determine if you should include this component in your driver package.
 ms.assetid: 82c77b1f-4bf0-46d9-bae3-822e9be5a7fb
 keywords:
@@ -63,9 +62,9 @@ The stub file contains a special entry point routine: **FxDriverEntry**. MSBuild
 
 When the operating system loads a framework-based driver, it also loads the stub file and the library's loader. Next, the system calls the stub file's **FxDriverEntry** routine. This routine then calls the loader. The loader determines the version of the framework library that the driver requires and then loads the correct [version of the library](framework-library-versioning.md) as a kernel-mode service (if it is not already loaded). Finally, the library calls the driver's [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff540807) routine.
 
- 
+ 
 
- 
+ 
 
 
 

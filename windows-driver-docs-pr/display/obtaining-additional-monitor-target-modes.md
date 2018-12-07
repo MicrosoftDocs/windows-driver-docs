@@ -98,7 +98,7 @@ For Digital Television (DTV) and High-Definition Television (HDTV) monitors, DMM
 </tbody>
 </table>
 
- 
+ 
 
 **50Hz DTV System:**
 
@@ -149,13 +149,13 @@ For Digital Television (DTV) and High-Definition Television (HDTV) monitors, DMM
 </tbody>
 </table>
 
- 
+ 
 
 Miniport drivers written for Windows Vista should continue to conform with the [WHCK](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) Automated Test GRAPHICS-0043 and add the additional DTV modes specified in these tables. Drivers written for Windows 7 only have to support the new **pfnGetAdditionalMonitorModeSet** and **pfnReleaseAdditionalMonitorModeSet** functions.
 
- 
+ 
 
- 
+ 
 
 
 

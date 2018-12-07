@@ -31,11 +31,11 @@ This value is an NTSTATUS status value that indicates the specific error conditi
 
 **Note**   The [**EngClearEvent**](https://msdn.microsoft.com/library/windows/hardware/ff564190) and [**EngReadStateEvent**](https://msdn.microsoft.com/library/windows/hardware/ff565001) functions are not available in Windows 2000.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

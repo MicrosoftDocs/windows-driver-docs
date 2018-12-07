@@ -1,6 +1,5 @@
 ---
 title: Supporting Dynamic Format Changes in AVStream Codecs
-author: windows-driver-content
 description: Supporting Dynamic Format Changes in AVStream Codecs
 ms.assetid: ae222512-fd19-404a-aaf8-6fbfa2a3349e
 keywords:
@@ -84,9 +83,9 @@ Before the driver generates this event, it should set the preferred media types 
 
 To generate the event, drivers should call [**KsGenerateEvents**](https://msdn.microsoft.com/library/windows/hardware/ff562597).
 
- 
+ 
 
- 
+ 
 
 
 

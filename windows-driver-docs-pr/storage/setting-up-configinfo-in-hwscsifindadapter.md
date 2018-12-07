@@ -1,6 +1,5 @@
 ---
 title: Setting up ConfigInfo in HwScsiFindAdapter
-author: windows-driver-content
 description: Setting up ConfigInfo in HwScsiFindAdapter
 ms.assetid: f9c5d23d-feab-4cc4-9cd9-29c21d4fdf0b
 keywords:
@@ -39,9 +38,9 @@ For each successfully validated and mapped range in I/O space, the miniport driv
 
 For an "AT-compatible" HBA, *HwScsiFindAdapter* should check the input **Atdisk..Claimed** members and attempt to claim an "AT" range by resetting the value to **TRUE**.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Managing Interlocked Queues with a Driver-Created Thread
-author: windows-driver-content
 description: Managing Interlocked Queues with a Driver-Created Thread
 ms.assetid: e2712d52-e98a-4450-b010-9278db3a7a1e
 keywords: ["interlocked IRP queues WDK kernel", "driver-created threads WDK IRPs", "doubly linked IRPs WDK kernel", "driver-dedicated threads WDK IRPs"]
@@ -48,9 +47,9 @@ Any driver-created thread runs at IRQL = PASSIVE\_LEVEL and at a base run-time p
 
 For more information about the design tradeoffs of a using a driver thread for a slow device, see [Polling a Device](avoid-polling-devices.md). See also [Managing Hardware Priorities](managing-hardware-priorities.md). For specific information about IRQLs for particular support routines, see the routine's reference page.
 
- 
+ 
 
- 
+ 
 
 
 

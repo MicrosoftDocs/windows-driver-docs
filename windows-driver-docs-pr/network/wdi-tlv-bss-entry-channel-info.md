@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_BSS_ENTRY_CHANNEL_INFO
-author: windows-driver-content
 description: WDI_TLV_BSS_ENTRY_CHANNEL_INFO is a TLV that contains BSS entry channel information.
 ms.assetid: 01DA2EDA-2BE2-4E4F-AE5D-8E07EEF691FE
 ms.date: 07/18/2017
@@ -32,7 +31,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | WDI\_CHANNEL\_NUMBER (UINT32) | The logical channel number on which the peer was discovered. |
 | UINT32                        | The band ID for the BSS entry.                               |
 
- 
+ 
 
 Requirements
 ------------
@@ -58,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

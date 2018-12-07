@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_P2P_CAPABILITIES
-author: windows-driver-content
 description: WDI_TLV_P2P_CAPABILITIES is a TLV that contains Wi-Fi Direct capabilities.
 ms.assetid: 3BE13A87-ECA2-4204-87F1-2BE393F33D4C
 ms.date: 07/18/2017
@@ -138,7 +137,7 @@ Specifies if the adapter, when given a set of service name instances, can perfor
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -164,9 +163,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

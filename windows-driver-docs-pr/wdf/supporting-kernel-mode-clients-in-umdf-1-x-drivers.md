@@ -1,6 +1,5 @@
 ---
 title: Supporting Kernel-Mode Clients in UMDF 1.x Drivers
-author: windows-driver-content
 description: Supporting Kernel-Mode Clients in UMDF 1.x Drivers
 ms.assetid: 933dc761-2616-4bee-8357-dbb6644596c2
 keywords:
@@ -108,9 +107,9 @@ If the **UpperDriverOk** registry value is set to a nonzero number, the framewor
 
 For UMDF versions 1.9 and later, the **UpperDriverOk** registry value is obsolete and supported only for existing drivers. New drivers should use the [UmdfKernelModeClientPolicy](specifying-wdf-directives-in-inf-files.md) directive.
 
- 
+ 
 
- 
+ 
 
 
 

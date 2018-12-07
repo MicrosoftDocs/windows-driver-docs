@@ -1,6 +1,5 @@
 ---
 title: GDL Templates
-author: windows-driver-content
 description: GDL Templates
 ms.assetid: 9cce885d-395e-4f8d-8076-951d75d82410
 keywords:
@@ -29,9 +28,9 @@ The GDL parser associates every data entry in a GDL file with a template. If a d
 
 GDL uses specific [directives](gdl-template-directives.md) for templates.
 
- 
+ 
 
- 
+ 
 
 
 

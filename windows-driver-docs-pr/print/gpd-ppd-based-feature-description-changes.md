@@ -1,6 +1,5 @@
 ---
 title: GPD/PPD-Based Feature Description Changes
-author: windows-driver-content
 description: GPD/PPD-Based Feature Description Changes
 ms.assetid: 22333d78-f78f-4031-a9f3-50b43ec746b6
 ms.date: 04/20/2017
@@ -61,7 +60,7 @@ In a core driver's DEVMODE structure, settings for these custom GPD or PPD featu
 
 **Note**   For Windows 7, the **MxdcGetPDEVAdjustment** function has new parameters for landscape rotation. For more information, see [**MxdcXDCGetPDEVAdjustment**](https://msdn.microsoft.com/library/windows/hardware/ff557558).
 
- 
+ 
 
 ## Related topics
 [**MxdcXDCGetPDEVAdjustment**](https://msdn.microsoft.com/library/windows/hardware/ff557558)  

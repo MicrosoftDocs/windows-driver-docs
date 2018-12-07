@@ -13,7 +13,7 @@ After a receive queue is allocated, overlying drivers can set filters on the rec
 
 **Note**  Because the default receive queue (**NDIS\_DEFAULT\_RECEIVE\_QUEUE\_ID**) always exists, overlying drivers can always set a receive filter on the default queue. Overlying drivers do not own the default queue. Therefore, all protocol drivers that are bound to a network adapter can use the default queue.
 
- 
+ 
 
 ## Setting a Filter on a Receive Queue
 
@@ -26,7 +26,7 @@ The overlying driver initializes the [**NDIS\_RECEIVE\_FILTER\_PARAMETERS**](htt
 
     **Note**  Starting with NDIS 6.20, only **NdisReceiveFilterTypeVMQueue** filter types are supported for the virtual machine queue (VMQ) interface.
 
-     
+     
 
 -   The queue identifier.
 
@@ -52,7 +52,7 @@ The **Flags** member of the [**NDIS\_RECEIVE\_FILTER\_FIELD\_PARAMETERS**](https
 
     **Note**  If the Hyper-V extensible switch sets the MAC address filter and no VLAN identifier filter is configured in [OID\_RECEIVE\_FILTER\_SET\_FILTER](https://msdn.microsoft.com/library/windows/hardware/ff569795), the switch also sets the **NDIS\_RECEIVE\_FILTER\_FIELD\_MAC\_HEADER\_VLAN\_UNTAGGED\_OR\_ZERO** flag.
 
-     
+     
 
 -   If the **NDIS\_RECEIVE\_FILTER\_FIELD\_MAC\_HEADER\_VLAN\_UNTAGGED\_OR\_ZERO** flag is not set and there is no VLAN identifier filter configured by an OID set request of [OID\_RECEIVE\_FILTER\_SET\_FILTER](https://msdn.microsoft.com/library/windows/hardware/ff569795), the miniport driver must do one of the following:
 
@@ -95,9 +95,9 @@ After a miniport driver receives an [OID\_RECEIVE\_FILTER\_QUEUE\_ALLOCATION\_CO
 
 If the miniport driver has received an [OID\_RECEIVE\_FILTER\_QUEUE\_ALLOCATION\_COMPLETE](https://msdn.microsoft.com/library/windows/hardware/ff569793) OID request for a queue but there are no filters set on the queue, the miniport driver must not indicate any receive packets on that queue. In this case, when the miniport driver receives an [OID\_RECEIVE\_FILTER\_SET\_FILTER](https://msdn.microsoft.com/library/windows/hardware/ff569795) OID request for the queue, and possibly before it completes the OID request, it can indicate packets on that queue. If the miniport driver indicates packets on a queue while it is processing an OID\_RECEIVE\_FILTER\_SET\_FILTER OID request, the miniport driver must complete the OID\_RECEIVE\_FILTER\_SET\_FILTER request that has an **NDIS\_STATUS\_SUCCESS** return code.
 
- 
+ 
 
- 
+ 
 
 
 

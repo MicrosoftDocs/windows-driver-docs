@@ -1,6 +1,5 @@
 ---
 title: UVC Extension Unit Code Samples
-author: windows-driver-content
 description: UVC Extension Unit Code Samples
 ms.assetid: c4f24646-57ea-4467-ad48-a3e6044658e3
 keywords:
@@ -33,9 +32,9 @@ This section contains the following topics:
 
 For more information on UVC drivers in Windows, see [USB Video Class Driver Overview](usb-video-class-driver-overview.md).
 
- 
+ 
 
- 
+ 
 
 
 

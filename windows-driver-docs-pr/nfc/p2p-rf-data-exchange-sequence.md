@@ -1,6 +1,5 @@
 ---
 title: P2P RF data exchange sequence
-author: windows-driver-content
 description: The following figure illustrates the state sequences for StateRfDiscovered and StateRfDataXchg for the NFC-DEP protocol.
 ms.assetid: FF77D322-47AE-412C-9924-110FB9E8F9F5
 keywords:
@@ -20,9 +19,9 @@ The following figure illustrates the state sequences for StateRfDiscovered and S
 
 ![nfc-dep rf data exchange sequence](images/nfc-dep-rfdataexchangesequence.png)
 
- 
+ 
 
- 
+ 
 ## Related topics
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [NFC class extension (CX) reference](https://msdn.microsoft.com/library/windows/hardware/dn905536)  

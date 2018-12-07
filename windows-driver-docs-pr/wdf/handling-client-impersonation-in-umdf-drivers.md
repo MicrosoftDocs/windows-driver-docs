@@ -1,6 +1,5 @@
 ---
 title: Handling Client Impersonation in UMDF Drivers
-author: windows-driver-content
 description: This topic describes how a User-Mode Driver Framework (UMDF) driver accesses protected resources, starting in UMDF version 2.
 ms.assetid: 02EA93CE-3C4D-4F6F-8E58-DD78EBDB19DE
 ms.date: 04/20/2017
@@ -94,9 +93,9 @@ To reduce the chance of an "elevation of privilege" attack, you should:
 
     Your [*EvtRequestImpersonate*](https://msdn.microsoft.com/library/windows/hardware/dn265581) callback function should contain a small section of code that performs only the operation that requires impersonation. For example, if your driver accesses a protected file, it requires impersonation only when it opens the file handle. It does not require impersonation to read from or write to the file.
 
- 
+ 
 
- 
+ 
 
 
 

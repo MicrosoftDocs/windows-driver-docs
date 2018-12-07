@@ -26,7 +26,7 @@ Test Authoring and Execution Framework v2.7 Build 6.2.7918.0 (1320) For x64
         D:\enddev2.binaries.amd64chk\Test\CuE\TestExecution\Examples\AXE.Basic.Examples.manifest
             Basic
                 Basic::Basic
-                
+
 ```
 
 AXE tests also do not support any setup or cleanup methods.
@@ -75,7 +75,6 @@ The AXE assessment manifest schema is designed to support very rich descriptions
 31    </CreateProcess>
 32  </Execution>
 33</AxeAssessmentManifest>
-                
 ```
 
 The AXE test assessment file is an XML file. So, it starts with an ordinary XML header (**line 1**).
@@ -96,7 +95,7 @@ Test Authoring and Execution Framework v2.7 Build 6.2.7918.0 (1320) For x64
         D:\enddev2.binaries.amd64chk\Test\CuE\TestExecution\Examples\AXE.Basic.Examples.manifest
             Basic
                 Basic::Basic
-                
+
 ```
 
 The human readable name is assigned to the **DisplayName** property. This assignment is due to the internal TAEF architecture and design.
@@ -115,7 +114,7 @@ Test Authoring and Execution Framework v2.7 Build 6.2.7918.0 (1320) For x64
                         Property[ProgrammaticName] =  Basic
                         Property[RunAs] =  Elevated
                         Property[ToolTip] =  Sample Basic Examples Assessment Tooltip
-                
+
 ```
 
 This assessment wraps a simple and existing test EXE named **AssessmentSample.exe**. **AssessmentSample.exe** uses the common convention to return a process exit code of zero for success and a non-zero value for failure.
@@ -168,7 +167,6 @@ As with any other TAEF test, you can also apply metadata to a TAEF AXE test. Con
 36    </CreateProcess>
 37  </Execution>
 38</AxeAssessmentManifest>
-                
 ```
 
 **Lines 25 - 29** demonstrate how TAEF standard and custom metadata can be applied to an AXE test. Under the **AxeAssessmentManifest** XML node is a **Properties** node. Single level XML tags under the **Properties** node are recognized as metadata (properties). All single level XML tags under **Properties** are interpreted as property names and their text values are interpreted as the property values. In the above example, **Owner** is interpreted as a property name and **Someone** as a property value. XML tags with no text in these elements are interpreted as elements whose value equals the empty string (for example, **&lt;SimpleTagWithNoText/&gt;**). Multilevel XML tags under **Properties** are ignored (for example, a multilevel tag like
@@ -179,7 +177,6 @@ As with any other TAEF test, you can also apply metadata to a TAEF AXE test. Con
     <Minor>0</Minor>
     <Build>0</Build>
 </VerifyOSVersion>
-                
 ```
 
 will be ignored). Similar to any other TAEF tests, you use the **/listProperties** option to display TAEF metadata:
@@ -201,7 +198,7 @@ Test Authoring and Execution Framework v2.7 Build 6.2.7918.0 (1320) For x64
                         Property[RunAs] =  Elevated
                         Property[ToolTip] =  Sample Custom Metadata Examples Assessment Tooltip
 
-                
+
 ```
 
 ## <span id="AXE_Tests_Metadata_Support_Limitations"></span><span id="axe_tests_metadata_support_limitations"></span><span id="AXE_TESTS_METADATA_SUPPORT_LIMITATIONS"></span>AXE Tests Metadata Support Limitations
@@ -294,7 +291,6 @@ The following example shows a more complex AXE assessment manifest.
 69    </CreateProcess>
 70  </Execution>
 71</AxeAssessmentManifest>
-                
 ```
 
 **Lines 25 - 62** are parameter definitions that describe the parameters that are used by TAEF and AXE to pass data into the assessment executable.
@@ -329,7 +325,7 @@ FileName: C:\Results\JobResults_DEVRH_2011-0129_0250-12.394\JobResults_DEVRH_201
 Saved output file to: D:\enddev2.binaries.amd64chk\Test\CuE\TestExecution\WexLogFileOutput\
 000001_~ExplicitRuntimeParameters_JobResults_DEVRH_2011-0129_0250-12.394.xml
 EndGroup: ExplicitRuntimeParameters::ExplicitRuntimeParameters [Passed]
-                
+
 ```
 
 ## <span id="AXE_Test_Cross_Machine_Execution"></span><span id="axe_test_cross_machine_execution"></span><span id="AXE_TEST_CROSS_MACHINE_EXECUTION"></span>AXE Test Cross Machine Execution
@@ -344,9 +340,9 @@ Cross machine execution of AXE tests to an ARM platform is not currently support
 
 AXE does not ship with Windows. To be able to execute AXE tests, you need to copy **axecore.dll** and **Microsoft.Assessment.dll** to either TAEF or your TAEF AXE test directory.
 
- 
 
- 
+
+
 
 
 

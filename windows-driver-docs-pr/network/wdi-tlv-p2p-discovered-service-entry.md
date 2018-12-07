@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_P2P_DISCOVERED_SERVICE_ENTRY
-author: windows-driver-content
 description: WDI_TLV_P2P_DISCOVERED_SERVICE_ENTRY is a TLV that contains a discovered service entry.
 ms.assetid: B8D453FF-49CA-4106-97DA-008893760E92
 ms.date: 07/18/2017
@@ -35,7 +34,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 | [**WDI\_TLV\_P2P\_ADVERTISEMENT\_ID**](wdi-tlv-p2p-advertisement-id.md)       |                                |          | An ID that uniquely identifies the service instance.                                                                                                                      |
 | [**WDI\_TLV\_P2P\_CONFIG\_METHODS**](wdi-tlv-p2p-config-methods.md)           |                                |          | The Configuration Methods as defined in [**WDI\_WPS\_CONFIGURATION\_METHOD**](https://msdn.microsoft.com/library/windows/hardware/dn898198). Only PinDisplay, PinKeypad and WFDS are applicable. |
 
- 
+ 
 
 Requirements
 ------------
@@ -61,9 +60,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

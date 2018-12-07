@@ -1,6 +1,5 @@
 ---
 title: Error Recovery
-author: windows-driver-content
 description: Error Recovery
 ms.assetid: 5710625f-bb65-41d4-a5c9-d61a48178859
 keywords:
@@ -22,9 +21,9 @@ During the handling of a recoverable hardware error, the operating system attemp
 
 For more information about how to implement a PSHED plug-in that participates in error recovery, see [Participating in Error Recovery](participating-in-error-recovery.md).
 
- 
+ 
 
- 
+ 
 
 
 

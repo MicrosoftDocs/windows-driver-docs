@@ -1,6 +1,5 @@
 ---
 title: Additional TCPMON Commands
-author: windows-driver-content
 description: Additional TCPMON Commands
 ms.assetid: c40ee1fe-9f9b-4229-8cd9-7dbf4729d42c
 keywords:
@@ -21,9 +20,9 @@ You can also use the following commands with TCPMON:
 
 [SetIdlePollingState](setidlepollingstate.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,7 +2,6 @@
 title: Ending a Debugging Session in CDB
 description: You can exit CDB by entering the q (Quit) command. This command also closes the application that you are debugging.
 ms.assetid: B32AD09D-7F88-420E-94BD-59FAE6EC1720
-ms.author: domars
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -34,9 +33,9 @@ To end a user-mode debugging session, return the debugger to dormant mode, but l
 
 For more information about reattaching to the target, see [Reattaching to the Target Application](reattaching-to-the-target-application.md).
 
- 
+ 
 
- 
+ 
 
 
 

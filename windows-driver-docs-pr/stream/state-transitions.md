@@ -1,6 +1,5 @@
 ---
 title: State Transitions
-author: windows-driver-content
 description: State Transitions
 ms.assetid: c71fd395-28aa-4421-9443-b5b0a1f3ac7e
 keywords:
@@ -44,16 +43,16 @@ To ensure orderly resource allocation, only a subset of the possible kernel stre
 </tr>
 <tr class="even">
 <td><p>Pause to stop</p></td>
-<td><p>Deallocate resources and complete all outstanding read SRBs. SRBs that have not been filled with an image are completed with zero length in the <strong>DataUsed</strong> member of the [<strong>KSSTREAM_HEADER</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567138) structure.</p></td>
+<td><p>Deallocate resources and complete all outstanding read SRBs. SRBs that have not been filled with an image are completed with zero length in the <strong>DataUsed</strong> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567138" data-raw-source="[&lt;strong&gt;KSSTREAM_HEADER&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567138)"><strong>KSSTREAM_HEADER</strong></a> structure.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  : Transitions can cycle multiple times between the **KSSTATE\_PAUSE** and **KSSTATE\_RUN** states before returning to the **KSSTATE\_STOP** state. Video capture minidrivers should expect transitions such as:
 
- 
+ 
 
 KSSTATE\_STOP -&gt; **KSSTATE\_ACQUIRE** -&gt; **KSSTATE\_PAUSE** -&gt; **KSSTATE\_RUN** -&gt; **KSSTATE\_PAUSE** -&gt; **KSSTATE\_RUN** -&gt; **KSSTATE\_PAUSE** -&gt; KSSTATE\_STOP
 
@@ -63,9 +62,9 @@ Because a user-mode application can end unexpectedly while streaming, all Stream
 
 Do not update the **PictureNumber** or **DropCount** members of [**KS\_FRAME\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff567645), [**KS\_VBI\_FRAME\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff567694), or [**KSPROPERTY\_DROPPEDFRAMES\_CURRENT\_S**](https://msdn.microsoft.com/library/windows/hardware/ff565138) on transition from **KSSTATE\_PAUSE** to **KSSTATE\_RUN** or **KSSTATE\_RUN** to KSSTATE\_PAUSE. For more information, see [Capturing Video](capturing-video.md).
 
- 
+ 
 
- 
+ 
 
 
 

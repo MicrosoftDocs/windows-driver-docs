@@ -3,7 +3,6 @@ title: ruleinfo
 description: The ruleinfo command displays information about a Driver Verifier rule.
 ms.assetid: 025FAAFA-7A5C-462C-9CC2-AA55530CD371
 keywords: ["ruleinfo Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -104,9 +103,9 @@ CURRENT_TIME (Timed Rules): 142 seconds
 RULE_STATE: 0xFFFFE000027B83F8
 ```
 
- 
+ 
 
- 
+ 
 
 
 

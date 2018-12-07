@@ -1,6 +1,5 @@
 ---
 title: Filter Installation
-author: windows-driver-content
 description: Filter Installation
 ms.assetid: 118d9fd9-c499-4371-9084-a4368a78f5e0
 ms.date: 04/20/2017
@@ -20,9 +19,9 @@ DumpFilters REG_MULTI_SZ DriverName
 e.g. dumpfltr.sys
 ```
 
- 
+ 
 
- 
+ 
 
 
 

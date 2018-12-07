@@ -1,6 +1,5 @@
 ---
 title: IRPs Are Different From Fast I/O
-author: windows-driver-content
 description: IRPs Are Different From Fast I/O
 ms.assetid: 22b08da2-043e-4724-b8f1-90b337fa222c
 keywords:
@@ -24,9 +23,9 @@ File systems and file system filters are required to support IRPs, but they are 
 
 File system filter drivers are not required to support I/O on control device objects. However, filter device objects that are attached to file systems or volumes are required to pass all unrecognized or unwanted IRPs to the next-lower driver on the driver stack. In addition, filter device objects that are attached to volumes must implement FastIoDetachDevice.
 
- 
+ 
 
- 
+ 
 
 
 

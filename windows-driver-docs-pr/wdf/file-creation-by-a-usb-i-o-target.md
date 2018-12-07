@@ -1,6 +1,5 @@
 ---
 title: File Creation by a USB I/O Target
-author: windows-driver-content
 description: File Creation by a USB I/O Target
 ms.assetid: 44bbc4c7-632d-4d75-94b9-f65e4d480e90
 keywords:
@@ -27,9 +26,9 @@ This intra-stack file object is closed when the I/O target is disposed of either
 
 If any I/O remains outstanding on this intra-stack file object at the time of device removal, this file object will fail to close, and UMDF will generate a driver stop. For more information, see [Creating and Using Driver-Created File Objects](creating-and-using-driver-created-file-objects.md).
 
- 
+ 
 
- 
+ 
 
 
 

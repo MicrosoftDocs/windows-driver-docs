@@ -11,9 +11,9 @@ ms.localizationpriority: medium
 
 If you install the Windows Driver Kit (WDK) 8.0 you can configure WPP settings from within the Microsoft Visual Studio environment. Open the property pages for your driver project and configure the WPP Tracing properties for your project. For more information, see [WPP Preprocessor](wpp-preprocessor.md).
 
- 
+ 
 
- 
+ 
 
 
 

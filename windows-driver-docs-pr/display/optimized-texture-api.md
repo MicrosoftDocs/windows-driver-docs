@@ -49,9 +49,9 @@ All blts from such surfaces.
 
 The only way to put data into such surfaces is with the **IDirect3DDevice7::Load** method (described in the Direct3D SDK documentation), or a full surface blt call. For more information about **IDirectDrawSurface7::Lock** and **IDirectDrawSurface7::GetDC**, see the DirectDraw SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

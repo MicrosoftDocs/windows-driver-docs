@@ -1,6 +1,5 @@
 ---
 title: Driver x64 Restrictions
-author: windows-driver-content
 description: Driver x64 Restrictions
 ms.assetid: 717ca559-93aa-48d6-8347-bfdf223f1aa4
 ms.localizationpriority: medium
@@ -28,9 +27,9 @@ For more information about modifying kernel code and data structures, see the [P
 
 For general information about programming with a 64-bit compiler, see [64-Bit Programming with Visual C++](http://go.microsoft.com/fwlink/p/?linkid=165521).
 
- 
+ 
 
- 
+ 
 
 
 

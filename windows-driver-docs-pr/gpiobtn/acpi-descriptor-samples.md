@@ -1,6 +1,5 @@
 ---
 title: ACPI descriptor samples
-author: windows-driver-content
 description: This topic contains ACPI descriptor samples.
 ms.assetid: E091DF59-2E9F-4652-801C-3F55CBB910FE
 ms.localizationpriority: medium
@@ -14,7 +13,7 @@ This topic contains ACPI descriptor samples.
 
 **Note**  Use only 4 chars length for ACPI descriptors for device definitions (such as CONV).
 
- 
+ 
 
 ## <span id="ACPI_description_for_button_array"></span><span id="acpi_description_for_button_array"></span><span id="ACPI_DESCRIPTION_FOR_BUTTON_ARRAY"></span>ACPI description for button array
 
@@ -101,9 +100,9 @@ Device(DOCK)
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

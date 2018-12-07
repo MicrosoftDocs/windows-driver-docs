@@ -3,7 +3,6 @@ title: wdfkd.wdfforwardprogress
 description: The wdfkd.wdfforwardprogress extension displays information about the forward progress of a specified framework queue object.
 ms.assetid: 3062d914-4fd4-4e33-8cf0-562484380184
 keywords: ["wdfkd.wdfforwardprogress Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -111,9 +110,9 @@ kd> !wdfkd.wdfforwardprogress 0x79af3250
     EvtIoExamineIrp: (0x9a3f19d0) mqueue!EvtIoWdmIrpForForwardProgress
 ```
 
- 
+ 
 
- 
+ 
 
 
 

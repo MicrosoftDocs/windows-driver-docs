@@ -3,7 +3,6 @@ title: irpfind
 description: The irpfind extension displays information about all I/O request packets (IRP) currently allocated in the target system, or about those IRPs matching the specified search criteria.
 ms.assetid: f0d850d9-8804-40df-90a3-b9c6a6b4540f
 keywords: ["irpfind Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -91,7 +90,7 @@ Specifies the criteria for the search. Only those IRPs that satisfy the given ma
 </tbody>
 </table>
 
- 
+ 
 
 <span id="_______Data______"></span><span id="_______data______"></span><span id="_______DATA______"></span> *Data*   
 Specifies the data to be matched in the search.
@@ -126,9 +125,9 @@ Searching NonPaged pool (8090c000 : 8131e000) for Tag: Irp
 80986728 Thread 8094dda0 current stack belongs to  \Driver\symc810
 ```
 
- 
+ 
 
- 
+ 
 
 
 

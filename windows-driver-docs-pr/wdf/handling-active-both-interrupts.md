@@ -1,6 +1,5 @@
 ---
 title: Handling Active-Both Interrupts
-author: windows-driver-content
 description: Handling Active-Both Interrupts
 ms.assetid: CFA205B1-FDDD-4E27-8CF9-106C8D1CC4EF
 ms.date: 04/20/2017
@@ -12,7 +11,7 @@ ms.localizationpriority: medium
 
 **Note**  This topic applies only to Kernel-Mode Driver Framework (KMDF) version 1.13 and earlier.
 
- 
+ 
 
 Many devices have hardware registers that control interrupt generation and masking. Typically, KMDF and UMDF drivers for such devices use the framework's built-in interrupt support.
 
@@ -173,9 +172,9 @@ The driver's [*InterruptService*](https://msdn.microsoft.com/library/windows/har
 
 In its [*EvtDevicePrepareHardware*](https://msdn.microsoft.com/library/windows/hardware/ff540880) callback function, the driver initializes the state value to **FALSE** and then calls [**IoConnectInterruptEx**](https://msdn.microsoft.com/library/windows/hardware/ff548378). In its [*EvtDeviceReleaseHardware*](https://msdn.microsoft.com/library/windows/hardware/ff540890) callback function, the driver calls [**IoDisconnectInterruptEx**](https://msdn.microsoft.com/library/windows/hardware/ff549093) to unregister its ISR.
 
- 
+ 
 
- 
+ 
 
 
 

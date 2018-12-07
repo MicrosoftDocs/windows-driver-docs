@@ -1,6 +1,5 @@
 ---
 title: Device Communication through the Bus Driver
-author: windows-driver-content
 description: Device Communication through the Bus Driver
 ms.assetid: 093e95db-dc3e-467b-9163-e61d793c042e
 ms.date: 04/20/2017
@@ -17,9 +16,9 @@ The primary responsibility of the WIA minidriver is to communicate with the devi
 
 All communication with the bus driver stack is performed by using calls to the [**CreateFile**](https://msdn.microsoft.com/library/windows/desktop/aa363858), **ReadFile**, **WriteFile**, and **DeviceIoControl** functions, which are described in the Microsoft Windows SDK documentation. For more information about communicating with the bus driver stack, see [Accessing Kernel-Mode Drivers for Still Image Devices](accessing-kernel-mode-drivers-for-still-image-devices.md).
 
- 
+ 
 
- 
+ 
 
 
 

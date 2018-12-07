@@ -30,9 +30,9 @@ This section presents the following topics:
 
 [DirectSound Capture Effects](directsound-capture-effects.md)
 
- 
+ 
 
- 
+ 
 
 
 

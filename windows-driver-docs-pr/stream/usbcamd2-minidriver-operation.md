@@ -1,6 +1,5 @@
 ---
 title: USBCAMD2 Minidriver Operation
-author: windows-driver-content
 description: USBCAMD2 Minidriver Operation
 ms.assetid: 395612cd-3407-4b42-b3a5-0afa838e73d9
 keywords:
@@ -17,37 +16,32 @@ ms.localizationpriority: medium
 
 # USBCAMD2 Minidriver Operation
 
-
-
-
-
 A USBCAMD2 camera minidriver generally operates as follows:
 
--   The camera minidriver calls [**USBCAMD\_DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff568593) from its [*DriverEntry*](https://msdn.microsoft.com/library/windows/hardware/ff544113) routine. When the minidriver calls **USBCAMD\_DriverEntry**, it passes to USBCAMD2 the minidriver's [*AdapterReceivePacket*](https://msdn.microsoft.com/library/windows/hardware/ff554080) callback function. USBCAMD2 then registers the minidriver with the *stream.sys* class driver.
+- The camera minidriver calls [**USBCAMD\_DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff568593) from its [*DriverEntry*](https://msdn.microsoft.com/library/windows/hardware/ff544113) routine. When the minidriver calls **USBCAMD\_DriverEntry**, it passes to USBCAMD2 the minidriver's [*AdapterReceivePacket*](https://msdn.microsoft.com/library/windows/hardware/ff554080) callback function. USBCAMD2 then registers the minidriver with the *stream.sys* class driver.
 
--   The camera minidriver can then receive various stream request blocks (SRBs) in its *AdapterReceivePacket* callback function to handle, including:
-    -   [**SRB\_INITIALIZE\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff568185)
-    -   [**SRB\_INITIALIZATION\_COMPLETE**](https://msdn.microsoft.com/library/windows/hardware/ff568182)
-    -   [**SRB\_GET\_STREAM\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff568173)
-    -   [**SRB\_GET\_DEVICE\_PROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff568170)
-    -   [**SRB\_SET\_DEVICE\_PROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff568204)
-    -   [**SRB\_GET\_DATA\_INTERSECTION**](https://msdn.microsoft.com/library/windows/hardware/ff568168)
-    -   [**SRB\_OPEN\_STREAM**](https://msdn.microsoft.com/library/windows/hardware/ff568191)
--   The camera minidriver determines how it must process each SRB. The minidriver can call routines in the USBCAMD2 minidriver library to assist with processing SRBs. These routines typically begin with the *USBCAMD\_* prefix.
+- The camera minidriver can then receive various stream request blocks (SRBs) in its *AdapterReceivePacket* callback function to handle, including:
+  - [**SRB\_INITIALIZE\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff568185)
+  - [**SRB\_INITIALIZATION\_COMPLETE**](https://msdn.microsoft.com/library/windows/hardware/ff568182)
+  - [**SRB\_GET\_STREAM\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff568173)
+  - [**SRB\_GET\_DEVICE\_PROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff568170)
+  - [**SRB\_SET\_DEVICE\_PROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff568204)
+  - [**SRB\_GET\_DATA\_INTERSECTION**](https://msdn.microsoft.com/library/windows/hardware/ff568168)
+  - [**SRB\_OPEN\_STREAM**](https://msdn.microsoft.com/library/windows/hardware/ff568191)
+- The camera minidriver determines how it must process each SRB. The minidriver can call routines in the USBCAMD2 minidriver library to assist with processing SRBs. These routines typically begin with the *USBCAMD\_* prefix.
 
-    For example, to specify the camera minidriver's other callback functions with USBCAMD2, the camera minidriver specifies their entry points in a [**USBCAMD\_DEVICE\_DATA2**](https://msdn.microsoft.com/library/windows/hardware/ff568590) structure. The minidriver then calls [**USBCAMD\_InitializeNewInterface**](https://msdn.microsoft.com/library/windows/hardware/ff568599) to pass the initialized USBCAMD\_DEVICE\_DATA2 structure to USBCAMD2. USBCAMD2 then calls the minidriver's callback functions when necessary.
+For example, to specify the camera minidriver's other callback functions with USBCAMD2, the camera minidriver specifies their entry points in a [**USBCAMD\_DEVICE\_DATA2**](https://msdn.microsoft.com/library/windows/hardware/ff568590) structure. The minidriver then calls [**USBCAMD\_InitializeNewInterface**](https://msdn.microsoft.com/library/windows/hardware/ff568599) to pass the initialized USBCAMD\_DEVICE\_DATA2 structure to USBCAMD2. USBCAMD2 then calls the minidriver's callback functions when necessary.
 
-    **Note**   The [**USBCAMD\_DEVICE\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff568585) structure is supported in USBCAMD2 only for purposes of backward compatibility.
+> [!NOTE]
+> The [**USBCAMD\_DEVICE\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff568585) structure is supported in USBCAMD2 only for purposes of backward compatibility.
 
-     
-
-    The minidriver must call [**USBCAMD\_AdapterReceivePacket**](https://msdn.microsoft.com/library/windows/hardware/ff568574) to send any SRBs it does not handle to USBCAMD2 to process.
+The minidriver must call [**USBCAMD\_AdapterReceivePacket**](https://msdn.microsoft.com/library/windows/hardware/ff568574) to send any SRBs it does not handle to USBCAMD2 to process.
 
 [USBCAMD Library Callback Functions](https://msdn.microsoft.com/library/windows/hardware/ff568608) describe the callback functions that the minidriver implements and whether they are optional or required.
 
 The following list of procedures illustrates the general flow of processing for SRBs sent to the camera minidriver:
 
-**Minidriver's SRB\_INITIALIZE\_DEVICE handler**
+## Minidriver's SRB\_INITIALIZE\_DEVICE handler
 
 <table>
 <colgroup>
@@ -63,11 +57,11 @@ The following list of procedures illustrates the general flow of processing for 
 <tbody>
 <tr class="odd">
 <td><p>Camera minidriver</p></td>
-<td><p>Initialize USBCAMD2 by calling [<strong>USBCAMD_InitializeNewInterface</strong>](https://msdn.microsoft.com/library/windows/hardware/ff568599), indicating video or still raw processing requirements in kernel mode, such as enabling device events.</p></td>
+<td><p>Initialize USBCAMD2 by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff568599" data-raw-source="[&lt;strong&gt;USBCAMD_InitializeNewInterface&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff568599)"><strong>USBCAMD_InitializeNewInterface</strong></a>, indicating video or still raw processing requirements in kernel mode, such as enabling device events.</p></td>
 </tr>
 <tr class="even">
 <td><p>Camera minidriver</p></td>
-<td><p>Call [<strong>USBCAMD_AdapterReceivePacket</strong>](https://msdn.microsoft.com/library/windows/hardware/ff568574).</p></td>
+<td><p>Call <a href="https://msdn.microsoft.com/library/windows/hardware/ff568574" data-raw-source="[&lt;strong&gt;USBCAMD_AdapterReceivePacket&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff568574)"><strong>USBCAMD_AdapterReceivePacket</strong></a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p>USBCAMD2</p></td>
@@ -75,11 +69,11 @@ The following list of procedures illustrates the general flow of processing for 
 </tr>
 <tr class="even">
 <td><p>USBCAMD2</p></td>
-<td><p>Call the minidriver's [<em>CamConfigureEx</em>](https://msdn.microsoft.com/library/windows/hardware/ff557605) callback function.</p></td>
+<td><p>Call the minidriver&#39;s <a href="https://msdn.microsoft.com/library/windows/hardware/ff557605" data-raw-source="[&lt;em&gt;CamConfigureEx&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff557605)"><em>CamConfigureEx</em></a> callback function.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Camera minidriver</p></td>
-<td><p>Complete the configuration. Choose an alternate setting and maximum transfer size. Fill in the array of [<strong>USBCAMD_Pipe_Config_Descriptor</strong>](https://msdn.microsoft.com/library/windows/hardware/ff568623) structures.</p></td>
+<td><p>Complete the configuration. Choose an alternate setting and maximum transfer size. Fill in the array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff568623" data-raw-source="[&lt;strong&gt;USBCAMD_Pipe_Config_Descriptor&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff568623)"><strong>USBCAMD_Pipe_Config_Descriptor</strong></a> structures.</p></td>
 </tr>
 <tr class="even">
 <td><p>USBCAMD2</p></td>
@@ -87,7 +81,7 @@ The following list of procedures illustrates the general flow of processing for 
 </tr>
 <tr class="odd">
 <td><p>USBCAMD2</p></td>
-<td><p>Call the minidriver's [<em>CamInitialize</em>](https://msdn.microsoft.com/library/windows/hardware/ff557614) callback function.</p></td>
+<td><p>Call the minidriver&#39;s <a href="https://msdn.microsoft.com/library/windows/hardware/ff557614" data-raw-source="[&lt;em&gt;CamInitialize&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff557614)"><em>CamInitialize</em></a> callback function.</p></td>
 </tr>
 <tr class="even">
 <td><p>Camera minidriver</p></td>
@@ -100,9 +94,7 @@ The following list of procedures illustrates the general flow of processing for 
 </tbody>
 </table>
 
- 
-
-**Minidriver's SRB\_GET\_STREAM\_INFO handler**
+## Minidriver's SRB\_GET\_STREAM\_INFO handler
 
 <table>
 <colgroup>
@@ -118,15 +110,15 @@ The following list of procedures illustrates the general flow of processing for 
 <tbody>
 <tr class="odd">
 <td><p>Camera minidriver</p></td>
-<td><p>Provide the [<strong>HW_STREAM_INFORMATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff559692) stream information structure to the <em>stream.sys</em> class driver.</p></td>
+<td><p>Provide the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559692" data-raw-source="[&lt;strong&gt;HW_STREAM_INFORMATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff559692)"><strong>HW_STREAM_INFORMATION</strong></a> stream information structure to the <em>stream.sys</em> class driver.</p></td>
 </tr>
 <tr class="even">
 <td><p>Camera minidriver</p></td>
-<td><p>Fill in the pointer to the array of device property sets in <em>stream.sys</em> class driver's [<strong>HW_STREAM_HEADER</strong>](https://msdn.microsoft.com/library/windows/hardware/ff559690) structure.</p></td>
+<td><p>Fill in the pointer to the array of device property sets in <em>stream.sys</em> class driver&#39;s <a href="https://msdn.microsoft.com/library/windows/hardware/ff559690" data-raw-source="[&lt;strong&gt;HW_STREAM_HEADER&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff559690)"><strong>HW_STREAM_HEADER</strong></a> structure.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Camera minidriver</p></td>
-<td><p>Call [<strong>USBCAMD_AdapterReceivePacket</strong>](https://msdn.microsoft.com/library/windows/hardware/ff568574).</p></td>
+<td><p>Call <a href="https://msdn.microsoft.com/library/windows/hardware/ff568574" data-raw-source="[&lt;strong&gt;USBCAMD_AdapterReceivePacket&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff568574)"><strong>USBCAMD_AdapterReceivePacket</strong></a>.</p></td>
 </tr>
 <tr class="even">
 <td><p>USBCAMD2</p></td>
@@ -147,9 +139,7 @@ The following list of procedures illustrates the general flow of processing for 
 </tbody>
 </table>
 
- 
-
-**Minidriver's SRB\_INITIALIZATION\_COMPLETE handler**
+## Minidriver's SRB\_INITIALIZATION\_COMPLETE handler
 
 <table>
 <colgroup>
@@ -170,9 +160,7 @@ The following list of procedures illustrates the general flow of processing for 
 </tbody>
 </table>
 
- 
-
-**Minidriver's SRB\_GET\_DEVICE\_PROPERTY handler**
+## Minidriver's SRB\_GET\_DEVICE\_PROPERTY handler
 
 <table>
 <colgroup>
@@ -188,14 +176,12 @@ The following list of procedures illustrates the general flow of processing for 
 <tbody>
 <tr class="odd">
 <td><p>Camera minidriver</p></td>
-<td><p>Get the properties that the camera minidriver handles, such as [PROPSETID_VIDCAP_VIDEOPROCAMP](https://msdn.microsoft.com/library/windows/hardware/ff568122), [PROPSETID_VIDCAP_CAMERACONTROL](https://msdn.microsoft.com/library/windows/hardware/ff567802) and [PROPSETID_VIDCAP_VIDEOCONTROL](https://msdn.microsoft.com/library/windows/hardware/ff568120), as well as any other custom property sets.</p></td>
+<td><p>Get the properties that the camera minidriver handles, such as <a href="https://msdn.microsoft.com/library/windows/hardware/ff568122" data-raw-source="[PROPSETID_VIDCAP_VIDEOPROCAMP](https://msdn.microsoft.com/library/windows/hardware/ff568122)">PROPSETID_VIDCAP_VIDEOPROCAMP</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff567802" data-raw-source="[PROPSETID_VIDCAP_CAMERACONTROL](https://msdn.microsoft.com/library/windows/hardware/ff567802)">PROPSETID_VIDCAP_CAMERACONTROL</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff568120" data-raw-source="[PROPSETID_VIDCAP_VIDEOCONTROL](https://msdn.microsoft.com/library/windows/hardware/ff568120)">PROPSETID_VIDCAP_VIDEOCONTROL</a>, as well as any other custom property sets.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
-
-**Minidriver's SRB\_SET\_DEVICE\_PROPERTY handler**
+## Minidriver's SRB\_SET\_DEVICE\_PROPERTY handler
 
 <table>
 <colgroup>
@@ -211,14 +197,12 @@ The following list of procedures illustrates the general flow of processing for 
 <tbody>
 <tr class="odd">
 <td><p>Camera minidriver</p></td>
-<td><p>Set the properties the camera minidriver handles by acquiring the parameters of [PROPSETID_VIDCAP_VIDEOPROCAMP](https://msdn.microsoft.com/library/windows/hardware/ff568122), [PROPSETID_VIDCAP_CAMERACONTROL](https://msdn.microsoft.com/library/windows/hardware/ff567802) and [PROPSETID_VIDCAP_VIDEOCONTROL](https://msdn.microsoft.com/library/windows/hardware/ff568120), and any other custom property sets.</p></td>
+<td><p>Set the properties the camera minidriver handles by acquiring the parameters of <a href="https://msdn.microsoft.com/library/windows/hardware/ff568122" data-raw-source="[PROPSETID_VIDCAP_VIDEOPROCAMP](https://msdn.microsoft.com/library/windows/hardware/ff568122)">PROPSETID_VIDCAP_VIDEOPROCAMP</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff567802" data-raw-source="[PROPSETID_VIDCAP_CAMERACONTROL](https://msdn.microsoft.com/library/windows/hardware/ff567802)">PROPSETID_VIDCAP_CAMERACONTROL</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff568120" data-raw-source="[PROPSETID_VIDCAP_VIDEOCONTROL](https://msdn.microsoft.com/library/windows/hardware/ff568120)">PROPSETID_VIDCAP_VIDEOCONTROL</a>, and any other custom property sets.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
-
-**Minidriver's SRB\_GET\_DATA\_INTERSECTION handler**
+## Minidriver's SRB\_GET\_DATA\_INTERSECTION handler
 
 <table>
 <colgroup>
@@ -234,7 +218,7 @@ The following list of procedures illustrates the general flow of processing for 
 <tbody>
 <tr class="odd">
 <td><p>Camera minidriver</p></td>
-<td><p>Return a [<strong>KSDATAFORMAT</strong>](https://msdn.microsoft.com/library/windows/hardware/ff561656) structure from a [<strong>KSDATARANGE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff561658) structure.</p></td>
+<td><p>Return a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561656" data-raw-source="[&lt;strong&gt;KSDATAFORMAT&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff561656)"><strong>KSDATAFORMAT</strong></a> structure from a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561658" data-raw-source="[&lt;strong&gt;KSDATARANGE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff561658)"><strong>KSDATARANGE</strong></a> structure.</p></td>
 </tr>
 <tr class="even">
 <td><p>Camera minidriver</p></td>
@@ -243,9 +227,7 @@ The following list of procedures illustrates the general flow of processing for 
 </tbody>
 </table>
 
- 
-
-**Minidriver's SRB\_OPEN\_STREAM handler**
+## Minidriver's SRB\_OPEN\_STREAM handler
 
 <table>
 <colgroup>
@@ -265,7 +247,7 @@ The following list of procedures illustrates the general flow of processing for 
 </tr>
 <tr class="even">
 <td><p>Camera minidriver</p></td>
-<td><p>Call [<strong>USBCAMD_AdapterReceivePacket</strong>](https://msdn.microsoft.com/library/windows/hardware/ff568574).</p></td>
+<td><p>Call <a href="https://msdn.microsoft.com/library/windows/hardware/ff568574" data-raw-source="[&lt;strong&gt;USBCAMD_AdapterReceivePacket&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff568574)"><strong>USBCAMD_AdapterReceivePacket</strong></a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p>USBCAMD2</p></td>
@@ -273,15 +255,15 @@ The following list of procedures illustrates the general flow of processing for 
 </tr>
 <tr class="even">
 <td><p>USBCAMD2</p></td>
-<td><p>Call the minidriver's [<em>CamAllocateBandwidthEx</em>](https://msdn.microsoft.com/library/windows/hardware/ff557600) callback function to allocate bandwidth based on video-format data and get the maximum buffer size for the video format.</p></td>
+<td><p>Call the minidriver&#39;s <a href="https://msdn.microsoft.com/library/windows/hardware/ff557600" data-raw-source="[&lt;em&gt;CamAllocateBandwidthEx&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff557600)"><em>CamAllocateBandwidthEx</em></a> callback function to allocate bandwidth based on video-format data and get the maximum buffer size for the video format.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Camera minidriver</p></td>
-<td><p>Calculate the isochronous channel's maximum packet size that satisfies the requested frame rate and output windows size.</p></td>
+<td><p>Calculate the isochronous channel&#39;s maximum packet size that satisfies the requested frame rate and output windows size.</p></td>
 </tr>
 <tr class="even">
 <td><p>Camera minidriver</p></td>
-<td><p>Choose the closest alternate setting by calling [<strong>USBCAMD_SelectAlternateInterface</strong>](https://msdn.microsoft.com/library/windows/hardware/ff568625). The minidriver should provide USBCAMD2 with the maximum possible frame size that can be produced by the camera.</p></td>
+<td><p>Choose the closest alternate setting by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff568625" data-raw-source="[&lt;strong&gt;USBCAMD_SelectAlternateInterface&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff568625)"><strong>USBCAMD_SelectAlternateInterface</strong></a>. The minidriver should provide USBCAMD2 with the maximum possible frame size that can be produced by the camera.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Camera minidriver</p></td>
@@ -293,7 +275,7 @@ The following list of procedures illustrates the general flow of processing for 
 </tr>
 <tr class="odd">
 <td><p>USBCAMD2</p></td>
-<td><p>Call the minidriver's [<em>CamStartCaptureEx</em>](https://msdn.microsoft.com/library/windows/hardware/ff557640) callback function.</p></td>
+<td><p>Call the minidriver&#39;s <a href="https://msdn.microsoft.com/library/windows/hardware/ff557640" data-raw-source="[&lt;em&gt;CamStartCaptureEx&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff557640)"><em>CamStartCaptureEx</em></a> callback function.</p></td>
 </tr>
 <tr class="even">
 <td><p>Camera minidriver</p></td>
@@ -306,9 +288,7 @@ The following list of procedures illustrates the general flow of processing for 
 </tbody>
 </table>
 
- 
-
-**Minidriver's SRB\_CLOSE\_STREAM handler**
+## Minidriver's SRB\_CLOSE\_STREAM handler
 
 <table>
 <colgroup>
@@ -324,7 +304,7 @@ The following list of procedures illustrates the general flow of processing for 
 <tbody>
 <tr class="odd">
 <td><p>Camera minidriver</p></td>
-<td><p>Call [<strong>USBCAMD_AdapterReceivePacket</strong>](https://msdn.microsoft.com/library/windows/hardware/ff568574).</p></td>
+<td><p>Call <a href="https://msdn.microsoft.com/library/windows/hardware/ff568574" data-raw-source="[&lt;strong&gt;USBCAMD_AdapterReceivePacket&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff568574)"><strong>USBCAMD_AdapterReceivePacket</strong></a>.</p></td>
 </tr>
 <tr class="even">
 <td><p>USBCAMD2</p></td>
@@ -332,7 +312,7 @@ The following list of procedures illustrates the general flow of processing for 
 </tr>
 <tr class="odd">
 <td><p>USBCAMD2</p></td>
-<td><p>Call the minidriver's [<em>CamStopCaptureEx</em>](https://msdn.microsoft.com/library/windows/hardware/ff557643) callback function.</p></td>
+<td><p>Call the minidriver&#39;s <a href="https://msdn.microsoft.com/library/windows/hardware/ff557643" data-raw-source="[&lt;em&gt;CamStopCaptureEx&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff557643)"><em>CamStopCaptureEx</em></a> callback function.</p></td>
 </tr>
 <tr class="even">
 <td><p>Camera minidriver</p></td>
@@ -340,7 +320,7 @@ The following list of procedures illustrates the general flow of processing for 
 </tr>
 <tr class="odd">
 <td><p>USBCAMD2</p></td>
-<td><p>Call the minidriver's [<em>CamFreeBandwidthEx</em>](https://msdn.microsoft.com/library/windows/hardware/ff557613) callback function to free isochronous bus bandwidth, if applicable.</p></td>
+<td><p>Call the minidriver&#39;s <a href="https://msdn.microsoft.com/library/windows/hardware/ff557613" data-raw-source="[&lt;em&gt;CamFreeBandwidthEx&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff557613)"><em>CamFreeBandwidthEx</em></a> callback function to free isochronous bus bandwidth, if applicable.</p></td>
 </tr>
 <tr class="even">
 <td><p>Camera minidriver</p></td>
@@ -353,9 +333,7 @@ The following list of procedures illustrates the general flow of processing for 
 </tbody>
 </table>
 
- 
-
-**Minidriver's SRB\_UNINITIALIZE\_DEVICE handler**
+## Minidriver's SRB\_UNINITIALIZE\_DEVICE handler
 
 <table>
 <colgroup>
@@ -371,15 +349,15 @@ The following list of procedures illustrates the general flow of processing for 
 <tbody>
 <tr class="odd">
 <td><p>Camera minidriver</p></td>
-<td><p>Call [<strong>USBCAMD_AdapterReceivePacket</strong>](https://msdn.microsoft.com/library/windows/hardware/ff568574).</p></td>
+<td><p>Call <a href="https://msdn.microsoft.com/library/windows/hardware/ff568574" data-raw-source="[&lt;strong&gt;USBCAMD_AdapterReceivePacket&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff568574)"><strong>USBCAMD_AdapterReceivePacket</strong></a>.</p></td>
 </tr>
 <tr class="even">
 <td><p>USBCAMD2</p></td>
-<td><p>If any streams are still open, close them by calling the minidriver's [<em>CamStopCaptureEx</em>](https://msdn.microsoft.com/library/windows/hardware/ff557643) and [<em>CamFreeBandwidthEx</em>](https://msdn.microsoft.com/library/windows/hardware/ff557613) callback functions for each stream.</p></td>
+<td><p>If any streams are still open, close them by calling the minidriver&#39;s <a href="https://msdn.microsoft.com/library/windows/hardware/ff557643" data-raw-source="[&lt;em&gt;CamStopCaptureEx&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff557643)"><em>CamStopCaptureEx</em></a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff557613" data-raw-source="[&lt;em&gt;CamFreeBandwidthEx&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff557613)"><em>CamFreeBandwidthEx</em></a> callback functions for each stream.</p></td>
 </tr>
 <tr class="odd">
 <td><p>USBCAMD2</p></td>
-<td><p>Call the minidriver's [<em>CamUnInitialize</em>](https://msdn.microsoft.com/library/windows/hardware/ff557646) callback function.</p></td>
+<td><p>Call the minidriver&#39;s <a href="https://msdn.microsoft.com/library/windows/hardware/ff557646" data-raw-source="[&lt;em&gt;CamUnInitialize&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff557646)"><em>CamUnInitialize</em></a> callback function.</p></td>
 </tr>
 <tr class="even">
 <td><p>Camera minidriver</p></td>
@@ -388,9 +366,7 @@ The following list of procedures illustrates the general flow of processing for 
 </tbody>
 </table>
 
- 
-
-**Minidriver's SRB\_SURPRISE\_REMOVAL handler**
+## Minidriver's SRB\_SURPRISE\_REMOVAL handler
 
 <table>
 <colgroup>
@@ -406,7 +382,7 @@ The following list of procedures illustrates the general flow of processing for 
 <tbody>
 <tr class="odd">
 <td><p>Camera minidriver</p></td>
-<td><p>Call [<strong>USBCAMD_AdapterReceivePacket</strong>](https://msdn.microsoft.com/library/windows/hardware/ff568574).</p></td>
+<td><p>Call <a href="https://msdn.microsoft.com/library/windows/hardware/ff568574" data-raw-source="[&lt;strong&gt;USBCAMD_AdapterReceivePacket&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff568574)"><strong>USBCAMD_AdapterReceivePacket</strong></a>.</p></td>
 </tr>
 <tr class="even">
 <td><p>USBCAMD2</p></td>
@@ -414,7 +390,7 @@ The following list of procedures illustrates the general flow of processing for 
 </tr>
 <tr class="odd">
 <td><p>USBCAMD2</p></td>
-<td><p>Call the minidriver's [<em>CamStopCaptureEx</em>](https://msdn.microsoft.com/library/windows/hardware/ff557643) and [<em>CamFreeBandwidthEx</em>](https://msdn.microsoft.com/library/windows/hardware/ff557613) callback functions on all opened streams.</p></td>
+<td><p>Call the minidriver&#39;s <a href="https://msdn.microsoft.com/library/windows/hardware/ff557643" data-raw-source="[&lt;em&gt;CamStopCaptureEx&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff557643)"><em>CamStopCaptureEx</em></a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff557613" data-raw-source="[&lt;em&gt;CamFreeBandwidthEx&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff557613)"><em>CamFreeBandwidthEx</em></a> callback functions on all opened streams.</p></td>
 </tr>
 <tr class="even">
 <td><p>USBCAMD2</p></td>
@@ -423,9 +399,7 @@ The following list of procedures illustrates the general flow of processing for 
 </tbody>
 </table>
 
- 
-
-**Minidriver's SRB\_SET\_DATA\_FORMAT handler**
+## Minidriver's SRB\_SET\_DATA\_FORMAT handler
 
 <table>
 <colgroup>
@@ -445,7 +419,7 @@ The following list of procedures illustrates the general flow of processing for 
 </tr>
 <tr class="even">
 <td><p>Camera minidriver</p></td>
-<td><p>Call [<em>USBCAMD_SetVideoFormat</em>](https://msdn.microsoft.com/library/windows/hardware/ff568634).</p></td>
+<td><p>Call <a href="https://msdn.microsoft.com/library/windows/hardware/ff568634" data-raw-source="[&lt;em&gt;USBCAMD_SetVideoFormat&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff568634)"><em>USBCAMD_SetVideoFormat</em></a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p>USBCAMD2</p></td>
@@ -454,9 +428,7 @@ The following list of procedures illustrates the general flow of processing for 
 </tbody>
 </table>
 
- 
-
-**Minidriver's SRB\_CHANGE\_POWER\_STATE from Power ON to Power OFF handler**
+## Minidriver's SRB\_CHANGE\_POWER\_STATE from Power ON to Power OFF handler
 
 <table>
 <colgroup>
@@ -472,7 +444,7 @@ The following list of procedures illustrates the general flow of processing for 
 <tbody>
 <tr class="odd">
 <td><p>Camera minidriver</p></td>
-<td><p>Call [<strong>USBCAMD_AdapterReceivePacket</strong>](https://msdn.microsoft.com/library/windows/hardware/ff568574).</p></td>
+<td><p>Call <a href="https://msdn.microsoft.com/library/windows/hardware/ff568574" data-raw-source="[&lt;strong&gt;USBCAMD_AdapterReceivePacket&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff568574)"><strong>USBCAMD_AdapterReceivePacket</strong></a>.</p></td>
 </tr>
 <tr class="even">
 <td><p>USBCAMD2</p></td>
@@ -480,7 +452,7 @@ The following list of procedures illustrates the general flow of processing for 
 </tr>
 <tr class="odd">
 <td><p>USBCAMD2</p></td>
-<td><p>Call the minidriver's [<em>CamStopCaptureEx</em>](https://msdn.microsoft.com/library/windows/hardware/ff557643) callback function.</p></td>
+<td><p>Call the minidriver&#39;s <a href="https://msdn.microsoft.com/library/windows/hardware/ff557643" data-raw-source="[&lt;em&gt;CamStopCaptureEx&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff557643)"><em>CamStopCaptureEx</em></a> callback function.</p></td>
 </tr>
 <tr class="even">
 <td><p>Camera minidriver</p></td>
@@ -489,9 +461,7 @@ The following list of procedures illustrates the general flow of processing for 
 </tbody>
 </table>
 
- 
-
-**Minidriver's SRB\_CHANGE\_POWER\_STATE from Power OFF to Power ON handler**
+## Minidriver's SRB\_CHANGE\_POWER\_STATE from Power OFF to Power ON handler
 
 <table>
 <colgroup>
@@ -507,7 +477,7 @@ The following list of procedures illustrates the general flow of processing for 
 <tbody>
 <tr class="odd">
 <td><p>Camera minidriver</p></td>
-<td><p>Call [<strong>USBCAMD_AdapterReceivePacket</strong>](https://msdn.microsoft.com/library/windows/hardware/ff568574).</p></td>
+<td><p>Call <a href="https://msdn.microsoft.com/library/windows/hardware/ff568574" data-raw-source="[&lt;strong&gt;USBCAMD_AdapterReceivePacket&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff568574)"><strong>USBCAMD_AdapterReceivePacket</strong></a>.</p></td>
 </tr>
 <tr class="even">
 <td><p>USBCAMD2</p></td>
@@ -519,21 +489,11 @@ The following list of procedures illustrates the general flow of processing for 
 </tr>
 <tr class="even">
 <td><p>USBCAMD2</p></td>
-<td><p>Call the minidriver's [<em>CamStopCaptureEx</em>](https://msdn.microsoft.com/library/windows/hardware/ff557643) callback function.</p></td>
+<td><p>Call the minidriver&#39;s <a href="https://msdn.microsoft.com/library/windows/hardware/ff557643" data-raw-source="[&lt;em&gt;CamStopCaptureEx&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff557643)"><em>CamStopCaptureEx</em></a> callback function.</p></td>
 </tr>
 <tr class="odd">
 <td><p>USBCAMD2</p></td>
-<td><p>Call the minidriver's [<em>CamStartCaptureEx</em>](https://msdn.microsoft.com/library/windows/hardware/ff557640) callback function.</p></td>
+<td><p>Call the minidriver&#39;s <a href="https://msdn.microsoft.com/library/windows/hardware/ff557640" data-raw-source="[&lt;em&gt;CamStartCaptureEx&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff557640)"><em>CamStartCaptureEx</em></a> callback function.</p></td>
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
- 
-
-
-
-

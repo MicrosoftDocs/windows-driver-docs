@@ -1,6 +1,5 @@
 ---
 title: Syntactical and Logical Constructs in GDL
-author: windows-driver-content
 description: Syntactical and Logical Constructs in GDL
 ms.assetid: f0802424-319c-4ba4-a8cd-539006f4d22c
 keywords:
@@ -19,9 +18,9 @@ ms.localizationpriority: medium
 
 GDL distinguishes between the constructs that are literally defined by entries in the GDL source file and the representation of those constructs in GDL's internal data. The former is a syntactical representation, and the latter is a logical representation. The representations differ when constructs are defined in the source file. The GDL parser creates only one logical representation of a construct for a given construct type and construct tag, no matter how many times such a construct is defined in the GDL source file.
 
- 
+ 
 
- 
+ 
 
 
 

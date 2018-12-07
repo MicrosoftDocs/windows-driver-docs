@@ -1,6 +1,5 @@
 ---
 title: High-Fidelity Print Output
-author: windows-driver-content
 description: High-Fidelity Print Output
 ms.assetid: 37ff186e-d078-40f4-b7dc-9bf75e0b2847
 keywords:
@@ -23,9 +22,9 @@ During the automatic conversion of output from Microsoft Win32-based application
 
 Print fidelity from WPF applications that print to non-XPS-based printers is also improved because the XPS-to-GDI conversion path is better than similar implementations in GDI+ that any applications use. The XPS-to-GDI conversion path tries to algebraically remove transparency (that is, alpha channel in colors and images and opacity and opacity mask on Canvas) in WPF graphics as much as possible, without using GDI raster operations and PostScript bitmasks.
 
- 
+ 
 
- 
+ 
 
 
 

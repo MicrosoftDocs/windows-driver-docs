@@ -18,9 +18,9 @@ ms.localizationpriority: medium
 
 A new DP2 token, D3DDP2OP\_VOLUMEBLT, has been added to support optimal copying and updating of volume textures. This token is very similar to the existing D3DDP2OP\_TEXBLT that copies and updates textures but has been extended to support subvolume (box) copying rather than simple rectangles.
 
- 
+ 
 
- 
+ 
 
 
 

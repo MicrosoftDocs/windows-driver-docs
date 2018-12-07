@@ -1,6 +1,5 @@
 ---
 title: Property Page Plug-in
-author: windows-driver-content
 description: Property Page Plug-in
 ms.assetid: cf5f5861-1670-413c-9c42-c1b6eb6d719a
 keywords:
@@ -67,9 +66,9 @@ The constructor receives a pointer to the outer unknown interface, which in this
 
 The property page's **OnDisconnect** method is called when the property page should release the associated object. This callback should decrement the reference count on the pointer to the interface to KS proxy by calling its **Release** method.
 
- 
+ 
 
- 
+ 
 
 
 

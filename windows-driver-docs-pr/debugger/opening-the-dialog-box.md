@@ -3,7 +3,6 @@ title: Opening the Dialog Box
 description: Opening the Dialog Box
 ms.assetid: 7cb5a947-0830-4208-a6de-cdb7812179c0
 keywords: ["GFlags, dialog box (opening)"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -24,9 +23,9 @@ ms.localizationpriority: medium
 
     On Windows Vista, click **Start**, click **All Programs**, click **Debugging Tools for Windows**, right-click **Global Flags** and then click **Run as administrator**. If you omit this step, Windows displays the **System Registry Gflags Error: 5**. The Gflags dialog box opens, but Gflags commands fail.
 
- 
+ 
 
- 
+ 
 
 
 

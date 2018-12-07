@@ -3,7 +3,6 @@ title: Bug Check 0xD5 DRIVER_PAGE_FAULT_IN_FREED_SPECIAL_POOL
 description: The DRIVER_PAGE_FAULT_IN_FREED_SPECIAL_POOL bug check has a value of 0x000000D5. This indicates that a driver has referenced memory which was earlier freed.
 ms.assetid: b86e55d2-122f-40ac-adb3-092511d3274e
 keywords: ["Bug Check 0xD5 DRIVER_PAGE_FAULT_IN_FREED_SPECIAL_POOL", "DRIVER_PAGE_FAULT_IN_FREED_SPECIAL_POOL"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -56,7 +55,7 @@ The DRIVER\_PAGE\_FAULT\_IN\_FREED\_SPECIAL\_POOL bug check has a value of 0x000
 </tbody>
 </table>
 
- 
+ 
 
 If the driver responsible for the error can be identified, its name is printed on the blue screen and stored in memory at the location (PUNICODE\_STRING) **KiBugCheckDriver**.
 
@@ -72,9 +71,9 @@ Remarks
 
 This cannot be protected by a **try - except** handler -- it can only be protected by a probe.
 
- 
+ 
 
- 
+ 
 
 
 

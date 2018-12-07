@@ -1,6 +1,5 @@
 ---
 title: Device Unique Identifiers (DUIDs) for Storage Devices
-author: windows-driver-content
 description: Device Unique Identifiers (DUIDs) for Storage Devices
 ms.assetid: 3846961c-5b75-4a1b-bced-601fc25bf071
 keywords:
@@ -103,9 +102,9 @@ The [**CompareStorageDuids**](https://msdn.microsoft.com/library/windows/hardwar
 
 4.  Check the drive layout signature. If the drive layout signatures of the two DUIDs match, the DUIDs match and[**CompareStorageDuids**](https://msdn.microsoft.com/library/windows/hardware/ff552464) returns **DuidSubIdMatch**. If the drive signatures do not match or the system cannot read the device's drive layout signature, the DUIDs do not match and **CompareStorageDuids** returns **DuidNoMatch**.
 
- 
+ 
 
- 
+ 
 
 
 

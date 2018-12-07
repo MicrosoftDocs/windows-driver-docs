@@ -44,7 +44,7 @@ Each XR element occupies one 32-bit DWORD, which is laid out as shown in the fol
 </tbody>
 </table>
 
- 
+ 
 
 Each of the red, green and blue channels is laid out as shown in the following table.
 
@@ -67,11 +67,11 @@ Each of the red, green and blue channels is laid out as shown in the following t
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

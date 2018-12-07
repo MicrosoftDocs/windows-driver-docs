@@ -1,13 +1,11 @@
 ---
 title: Printer driver design guide
-author: windows-driver-content
 description: This section provides information on designing, testing, and debugging printer drivers.
 ms.assetid: ff6b9c2e-920a-4cfc-8872-38976ed872f9
 keywords:
 - print devices WDK
 - print WDK See printer driver
 - print WDK See printing
-ms.author: windowsdriverdev
 ms.date: 01/24/2018
 ms.topic: article
 ms.prod: windows-hardware
@@ -52,12 +50,12 @@ This section provides information on designing, testing, and debugging printer d
 -   [Print Spooler Components](print-spooler-components.md)
 -   [Printer Driver Testing and Debugging](printer-driver-testing-and-debugging.md)
 
- 
+ 
 ## Related sections
 
 
 -   [Print DDI reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_print)
- 
+ 
 
 
 

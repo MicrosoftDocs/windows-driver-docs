@@ -3,7 +3,6 @@ title: Bug Check 0x77 KERNEL_STACK_INPAGE_ERROR
 description: The KERNEL_STACK_INPAGE_ERROR bug check has a value of 0x00000077. This bug check indicates that the requested page of kernel data from the paging file could not be read into memory.
 ms.assetid: 203a6d0f-0caa-46ed-9bab-61bbde1c8016
 keywords: ["Bug Check 0x77 KERNEL_STACK_INPAGE_ERROR", "KERNEL_STACK_INPAGE_ERROR"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -61,7 +60,7 @@ If the first parameter is 0, 1, or 2, the parameters have the following meaning.
 </tbody>
 </table>
 
- 
+ 
 
 If the first parameter is any value other than 0, 1, or 2, the parameters have the following meaning.
 
@@ -96,7 +95,7 @@ If the first parameter is any value other than 0, 1, or 2, the parameters have t
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -130,7 +129,7 @@ If Autochk does not scan the hard disk for errors, you can manually start the di
 
 **Warning**   If your system partition is formatted with the FAT file system, the long file names that the Windows operating system uses might be damaged if you use Scandisk or another MS-DOS-based hard disk tool to verify the integrity of your hard disk drive from MS-DOS. Always use the version of Chkdsk that matches your version of the Windows operating system.
 
- 
+ 
 
 **Resolving a defective hardware problem:** If the I/O status is 0xC0000185 and the paging file is on an SCSI disk, check the disk cabling and SCSI termination for problems.
 
@@ -151,9 +150,9 @@ If the preceding steps fail to resolve the error, take the system motherboard to
 
 [**Bug Check 0x7A (KERNEL\_DATA\_INPAGE\_ERROR)**](bug-check-0x7a--kernel-data-inpage-error.md)
 
- 
+ 
 
- 
+ 
 
 
 

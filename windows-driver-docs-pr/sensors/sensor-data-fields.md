@@ -1,6 +1,5 @@
 ---
 title: Sensor data fields
-author: windows-driver-content
 description: The sensor driver sets data fields that can be read by applications, using the ReadFile function to get information about the sensor driver.
 ms.assetid: E430AC59-34AC-4F8E-9A42-350C7A42BBA8
 ms.date: 07/20/2018
@@ -32,11 +31,11 @@ ms.localizationpriority: medium
 |[Relative orientation sensor data fields](relative-orientation-data-fields.md)|This topic provides information about the data fields that are specific to the relative orientation sensor.|
 |[Custom sensor data fields](custom-sensor-data-fields.md)|This topic provides information about the data fields that can be used by a custom sensor.|
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: AF_INET
-author: windows-driver-content
 description: AF_INET
 ms.assetid: 59e12f8d-02eb-413c-bc04-6b9b6e4adde6
 ms.date: 08/08/2017
@@ -143,9 +142,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

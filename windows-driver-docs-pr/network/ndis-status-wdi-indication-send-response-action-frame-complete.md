@@ -1,6 +1,5 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_SEND_RESPONSE_ACTION_FRAME_COMPLETE
-author: windows-driver-content
 description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_SEND_RESPONSE_ACTION_FRAME_COMPLETE to indicate the completion of OID_WDI_TASK_SEND_RESPONSE_ACTION_FRAME.
 ms.assetid: 9D07F05B-212F-403E-AD37-4AB537C25536
 ms.date: 07/18/2017
@@ -18,7 +17,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_SEND\_RESPONSE\_ACTION\_FRAM
 |--------|
 | Port   |
 
- 
+ 
 
 ## Payload data
 
@@ -54,9 +53,9 @@ Requirements
 
 [OID\_WDI\_TASK\_SEND\_RESPONSE\_ACTION\_FRAME](oid-wdi-task-send-response-action-frame.md)
 
- 
+ 
 
- 
+ 
 
 
 

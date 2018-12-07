@@ -3,7 +3,6 @@ title: Debugging Performance-Optimized Code
 description: Debugging Performance-Optimized Code
 ms.assetid: 9dbae9e7-c181-491e-9566-6f5e8182aae0
 keywords: ["performance-optimized code"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -94,9 +93,9 @@ What is happening here is that the debugger recognizes the symbol **IPTransmit**
 
 The reason this happens is that performance optimization is not reversible through address arithmetic. While the debugger can take an address and deduce its original symbol and offset, it does not have enough information to take a symbol and offset and translate it to the correct address. Consequently, disassembly is not useful in these cases.
 
- 
+ 
 
- 
+ 
 
 
 

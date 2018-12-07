@@ -17,9 +17,9 @@ ms.localizationpriority: medium
 
 To understand graphics driver design, it is important to understand the roles of GDI and the driver, and how they negotiate. GDI, with its enhanced capabilities, can handle many operations that previously required a graphics driver. GDI also has the responsibility of managing data structures critical to graphics operations, such as surfaces, although each graphics driver must have access to them.
 
- 
+ 
 
- 
+ 
 
 
 

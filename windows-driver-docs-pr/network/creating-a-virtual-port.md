@@ -37,9 +37,9 @@ A nondefault VPort that is attached to a VF provides network connectivity to the
 
 A nondefault VPort that is attached to the PF provides additional network offload capabilities to the networking components that run in the management operating system. For example, nondefault VPorts on the PF could be used to provide offload capabilities similar to the virtual machine queue (VMQ) interface.
 
-**Note**  Nondefault VPorts can only be created after the NIC switch has been created.
+**Note**  Nondefault VPorts can only be created after the NIC switch has been created.
 
- 
+
 
 An overlying driver issues an object identifier (OID) method request of [OID\_NIC\_SWITCH\_CREATE\_VPORT](https://msdn.microsoft.com/library/windows/hardware/hh451816) to create a nondefault VPort on a specified NIC switch. This OID request also attaches the created VPort to the network adapter's PF or a previously allocated VF.
 
@@ -51,9 +51,9 @@ When it initializes the [**NDIS\_NIC\_SWITCH\_VPORT\_PARAMETERS**](https://msdn.
 
 -   The **SwitchId** member must be set to the identifier of a NIC switch that was previously created on the network adapter through an OID method request of [OID\_NIC\_SWITCH\_CREATE\_SWITCH](https://msdn.microsoft.com/library/windows/hardware/hh451815).
 
-    **Note**  Starting with Windows Server 2012, the SR-IOV interface supports only one NIC switch on the network adapter. This switch is known as the *default NIC switch*. When creating a nondefault VPort, the overlying driver must set the **SwitchId** member to the NDIS\_DEFAULT\_SWITCH\_ID identifier.
+    **Note**  Starting with Windows Server 2012, the SR-IOV interface supports only one NIC switch on the network adapter. This switch is known as the *default NIC switch*. When creating a nondefault VPort, the overlying driver must set the **SwitchId** member to the NDIS\_DEFAULT\_SWITCH\_ID identifier.
 
-     
+
 
 -   The **VPortId** member must be set to NDIS\_DEFAULT\_VPORT\_ID.
 
@@ -61,9 +61,9 @@ When it initializes the [**NDIS\_NIC\_SWITCH\_VPORT\_PARAMETERS**](https://msdn.
 
     A value of NDIS\_PF\_FUNCTION\_ID specifies the PF. Otherwise, the value must be set to the identifier of a VF whose resources were previously allocated through an OID method request of [OID\_NIC\_SWITCH\_ALLOCATE\_VF](https://msdn.microsoft.com/library/windows/hardware/hh451814).
 
-    **Note**  The attachment of a nondefault VPort to a VF or PF cannot be changed after the nondefault VPort has been created.
+    **Note**  The attachment of a nondefault VPort to a VF or PF cannot be changed after the nondefault VPort has been created.
 
-     
+
 
 The overlying driver can also specify the number of queue pairs assigned to the VPort. A queue pair is a transmit and receive queue on the network adapter that is assigned to the VPort. If the network adapter supports asymmetric queue pairs for nondefault VPorts, the overlying driver may specify a different number of queue pairs for each VPort that the driver creates. For more information, see [Symmetric and Asymmetric Assignment of Queue Pairs](symmetric-and-asymmetric-assignment-of-queue-pairs.md).
 
@@ -73,11 +73,13 @@ The overlying driver calls [**NdisOidRequest**](https://msdn.microsoft.com/libra
 
 2.  NDIS assigns an identifier for the nondefault VPort within the range from one to (**NumVPorts**– 1), where **NumVPorts** is the number of VPorts that the miniport driver has configured on the network adapter. The driver specifies this number in the **NumVPorts** member of the [**NDIS\_NIC\_SWITCH\_INFO**](https://msdn.microsoft.com/library/windows/hardware/hh451582) structure. The driver returns this structure through an OID query request of [OID\_NIC\_SWITCH\_ENUM\_SWITCHES](https://msdn.microsoft.com/library/windows/hardware/hh451819).
 
-    **Note**  A VPort identifier of NDIS\_DEFAULT\_VPORT\_ID is reserved for the default VPort that is attached to the PF on the default NIC switch.
+    **Note**  A VPort identifier of NDIS\_DEFAULT\_VPORT\_ID is reserved for the default VPort that is attached to the PF on the default NIC switch.
 
-     
 
-    The assigned VPort identifier uniquely identifies the nondefault VPort on the NIC switch of the network adapter.
+
+
+The assigned VPort identifier uniquely identifies the nondefault VPort on the NIC switch of the network adapter.
+
 
 3.  NDIS sets the **VPortId** member of the NDIS\_NIC\_SWITCH\_VPORT\_PARAMETERS structure with the assigned VPort identifier.
 
@@ -103,13 +105,13 @@ The following points apply to the creation of nondefault VPorts:
 
     After a nondefault VPort is in an activated state, the PF miniport driver can allocate shared memory for the VPort by calling [**NdisAllocateSharedMemory**](https://msdn.microsoft.com/library/windows/hardware/ff561616). The driver must set the **VPortId** member in the [**NDIS\_SHARED\_MEMORY\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff567303) structure to the VPort's identifier value.
 
-**Note**  When a nondefault VPort is in an activated state, it is only set to a deactivated state when it is deleted through an OID set request of [OID\_NIC\_SWITCH\_DELETE\_VPORT](https://msdn.microsoft.com/library/windows/hardware/hh451818).
+**Note**  When a nondefault VPort is in an activated state, it is only set to a deactivated state when it is deleted through an OID set request of [OID\_NIC\_SWITCH\_DELETE\_VPORT](https://msdn.microsoft.com/library/windows/hardware/hh451818).
 
- 
 
- 
 
- 
+
+
+
 
 
 

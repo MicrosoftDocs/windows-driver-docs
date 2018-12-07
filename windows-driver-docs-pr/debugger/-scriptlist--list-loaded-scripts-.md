@@ -3,7 +3,6 @@ title: .scriptlist (List Loaded Scripts)
 description: The .scriptlist command lists the loaded scripts.
 ms.assetid: 98F24BE6-3F34-44E7-9546-3D5AB6D521DD
 keywords: [".scriptlist (List Loaded Scripts) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -52,7 +51,7 @@ None
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -81,9 +80,9 @@ Before using any of the .script commands, a scripting provider needs to be loade
 
 [**.scriptload (Load Script)**](-scriptload--load-script-.md)
 
- 
+ 
 
- 
+ 
 
 
 

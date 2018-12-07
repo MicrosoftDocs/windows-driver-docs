@@ -23,9 +23,9 @@ The **Source Code** pane displays all of the source code files that are involved
 
 [Color Coding in the Source Code Pane](color-coding-in-the-source-code-pane.md)
 
- 
+ 
 
- 
+ 
 
 
 

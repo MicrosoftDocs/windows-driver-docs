@@ -1,6 +1,5 @@
 ---
 title: Determining the State of a UMDF Device
-author: windows-driver-content
 description: This topic describes how you can use debugger extensions in conjunction with a User-Mode Driver Framework (UMDF) version 1 or 2 driver to determine what state your UMDF device is in.
 ms.assetid: ed1a4429-4f36-44b9-9564-587aa381342f
 keywords:
@@ -83,9 +82,9 @@ To determine device state, use the following steps:
 
 6.  Use [**!wudfext.wudfdriverinfo**](https://msdn.microsoft.com/library/windows/hardware/ff566207) (UMDF 1) or [**!wdfkd.wdfdriverinfo**](https://msdn.microsoft.com/library/windows/hardware/ff565724) (UMDF 2) to display additional information about the driver, including its device tree.
 
- 
+ 
 
- 
+ 
 
 
 

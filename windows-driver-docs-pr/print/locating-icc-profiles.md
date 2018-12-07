@@ -1,6 +1,5 @@
 ---
 title: Locating ICC Profiles
-author: windows-driver-content
 description: Locating ICC Profiles
 ms.assetid: 828b53cd-452a-4c4d-bfbb-45ea674ef49a
 keywords:
@@ -26,9 +25,9 @@ When color management is enabled, GDI searches for an appropriate ICC profile, u
 
 For more information, see [Installing ICC Profiles](installing-icc-profiles.md). Additional information about ICC profiles can be found in the Microsoft Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Installing an Advanced Properties Page for a COM Port
-author: windows-driver-content
 description: Installing an Advanced Properties Page for a COM Port
 ms.assetid: 056fd245-a9d2-4a10-9e92-fe75e51f6770
 keywords:
@@ -37,9 +36,9 @@ To override the default dialog box displayed by **SerialDisplayAdvancedSettings*
 
 2.  Install the custom dialog DLL by setting an **EnumAdvancedDialog** entry value in an *add-registry-section* that is referenced by a device's [**DDInstall section**](https://msdn.microsoft.com/library/windows/hardware/ff547344). The type and format of the value entry is the same as that used for a **EnumPropPages32** value entry.
 
- 
+ 
 
- 
+ 
 
 
 

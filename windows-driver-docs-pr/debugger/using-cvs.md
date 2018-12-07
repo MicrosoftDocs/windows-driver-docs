@@ -3,7 +3,6 @@ title: Using CVS
 description: Using CVS
 ms.assetid: 4ad1202e-0be5-4adc-af8b-6b8d7cb34b04
 keywords: ["Concurrent Versions System (CVS)", "source servers, CVS", "SrcSrv, CVS", "Concurrent Versions System (CVS), overview"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -31,9 +30,9 @@ CVS is unable to extract a file by its version number. Instead, it must be done 
 ssindex.cmd -system=cvs -??
 ```
 
- 
+ 
 
- 
+ 
 
 
 

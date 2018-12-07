@@ -1,6 +1,5 @@
 ---
 title: Determine Why UMDF Driver Fails to Load or Device Fails to Start
-author: windows-driver-content
 description: This topic describes troubleshooting steps you can use when a UMDF driver fails to load or an associated device fails to start.
 ms.assetid: 366c0ab4-8d06-4dac-a301-f433cf7978bd
 keywords:
@@ -55,9 +54,9 @@ You can use the following technique with both UMDF version 1 and 2 drivers.
         1.  Verify that every driver above and below your driver in the user-mode stack also successfully performs these operations.
         2.  Verify that the kernel stack below your driver successfully completes the [**IRP\_MJ\_PNP**](https://msdn.microsoft.com/library/windows/hardware/ff550772) and [**IRP\_MN\_START\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551749) IRPs.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Driver-Created Versus Application-Created File Objects
-author: windows-driver-content
 description: Driver-Created Versus Application-Created File Objects
 ms.assetid: f81ae0ed-a29c-476e-9b16-ff554eef1de9
 keywords:
@@ -36,24 +35,24 @@ The following table shows calls the application makes and the resulting notifica
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>A call to the Microsoft Win32 [<strong>CreateFile</strong>](https://msdn.microsoft.com/library/windows/desktop/aa363858) function.</p></td>
-<td align="left"><p>A call to its [<strong>IQueueCallbackCreate::OnCreateFile</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556841) method.</p></td>
+<td align="left"><p>A call to the Microsoft Win32 <a href="https://msdn.microsoft.com/library/windows/desktop/aa363858" data-raw-source="[&lt;strong&gt;CreateFile&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/desktop/aa363858)"><strong>CreateFile</strong></a> function.</p></td>
+<td align="left"><p>A call to its <a href="https://msdn.microsoft.com/library/windows/hardware/ff556841" data-raw-source="[&lt;strong&gt;IQueueCallbackCreate::OnCreateFile&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556841)"><strong>IQueueCallbackCreate::OnCreateFile</strong></a> method.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>A call to the Win32 <strong>ReadFileEx</strong>, <strong>WriteFileEx</strong>, or [<strong>DeviceIoControl</strong>](https://msdn.microsoft.com/library/windows/desktop/aa363216) function.</p></td>
-<td align="left"><p>A call to its [<strong>IQueueCallbackRead::OnRead</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556875), [<strong>IQueueCallbackWrite::OnWrite</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556885), or [<strong>IQueueCallbackDeviceIoControl::OnDeviceIoControl</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556854) method.</p></td>
+<td align="left"><p>A call to the Win32 <strong>ReadFileEx</strong>, <strong>WriteFileEx</strong>, or <a href="https://msdn.microsoft.com/library/windows/desktop/aa363216" data-raw-source="[&lt;strong&gt;DeviceIoControl&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/desktop/aa363216)"><strong>DeviceIoControl</strong></a> function.</p></td>
+<td align="left"><p>A call to its <a href="https://msdn.microsoft.com/library/windows/hardware/ff556875" data-raw-source="[&lt;strong&gt;IQueueCallbackRead::OnRead&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556875)"><strong>IQueueCallbackRead::OnRead</strong></a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff556885" data-raw-source="[&lt;strong&gt;IQueueCallbackWrite::OnWrite&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556885)"><strong>IQueueCallbackWrite::OnWrite</strong></a>, or <a href="https://msdn.microsoft.com/library/windows/hardware/ff556854" data-raw-source="[&lt;strong&gt;IQueueCallbackDeviceIoControl::OnDeviceIoControl&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556854)"><strong>IQueueCallbackDeviceIoControl::OnDeviceIoControl</strong></a> method.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>A call to the Win32 <strong>CloseHandle</strong> function for the last open handle to the file object.</p></td>
-<td align="left"><p>A call to its [<strong>IFileCallbackCleanup::OnCleanupFile</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554905) method.</p>
+<td align="left"><p>A call to its <a href="https://msdn.microsoft.com/library/windows/hardware/ff554905" data-raw-source="[&lt;strong&gt;IFileCallbackCleanup::OnCleanupFile&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554905)"><strong>IFileCallbackCleanup::OnCleanupFile</strong></a> method.</p>
 <p>The driver cancels or completes all I/O requests that are associated with the file object.</p>
 <p>After the driver returns from the cleanup notification, UMDF cancels any pending I/O requests.</p>
-<p>After cleanup completes and UMDF cancels pending I/O requests, the driver receives a call to its [<strong>IFileCallbackClose::OnCloseFile</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554910) method.</p></td>
+<p>After cleanup completes and UMDF cancels pending I/O requests, the driver receives a call to its <a href="https://msdn.microsoft.com/library/windows/hardware/ff554910" data-raw-source="[&lt;strong&gt;IFileCallbackClose::OnCloseFile&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554910)"><strong>IFileCallbackClose::OnCloseFile</strong></a> method.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 A system component may issue a create request on behalf of a Universal Windows app. If the driver needs to determine the process ID of the app that issued the create request, it can call the [**IWDFFile3::GetInitiatorProcessId**](https://msdn.microsoft.com/library/windows/hardware/hh451279) method.
 
@@ -77,33 +76,33 @@ The following table shows calls your driver makes and the resulting notification
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>A call to the [<strong>IWDFDevice::CreateWdfFile</strong>](https://msdn.microsoft.com/library/windows/hardware/ff558828) method.</p>
+<td align="left"><p>A call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558828" data-raw-source="[&lt;strong&gt;IWDFDevice::CreateWdfFile&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff558828)"><strong>IWDFDevice::CreateWdfFile</strong></a> method.</p>
 <p>The file object that UMDF creates represents an I/O session between the device and the next device in the stack.</p></td>
-<td align="left"><p>A call to its [<strong>IQueueCallbackCreate::OnCreateFile</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556841) method.</p></td>
+<td align="left"><p>A call to its <a href="https://msdn.microsoft.com/library/windows/hardware/ff556841" data-raw-source="[&lt;strong&gt;IQueueCallbackCreate::OnCreateFile&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556841)"><strong>IQueueCallbackCreate::OnCreateFile</strong></a> method.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>A call to the [<strong>IWDFDevice::CreateRequest</strong>](https://msdn.microsoft.com/library/windows/hardware/ff557021) method.</p>
-<p>A call to format the request (for example, a call to the [<strong>IWDFIoTarget::FormatRequestForIoctl</strong>](https://msdn.microsoft.com/library/windows/hardware/ff559230) method).</p>
-<p>A call to the [<strong>IWDFIoRequest::Send</strong>](https://msdn.microsoft.com/library/windows/hardware/ff559149) method.</p></td>
-<td align="left"><p>A call to its [<strong>IQueueCallbackRead::OnRead</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556875), [<strong>IQueueCallbackWrite::OnWrite</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556885), or [<strong>IQueueCallbackDeviceIoControl::OnDeviceIoControl</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556854) method.</p></td>
+<td align="left"><p>A call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557021" data-raw-source="[&lt;strong&gt;IWDFDevice::CreateRequest&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff557021)"><strong>IWDFDevice::CreateRequest</strong></a> method.</p>
+<p>A call to format the request (for example, a call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559230" data-raw-source="[&lt;strong&gt;IWDFIoTarget::FormatRequestForIoctl&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff559230)"><strong>IWDFIoTarget::FormatRequestForIoctl</strong></a> method).</p>
+<p>A call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559149" data-raw-source="[&lt;strong&gt;IWDFIoRequest::Send&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff559149)"><strong>IWDFIoRequest::Send</strong></a> method.</p></td>
+<td align="left"><p>A call to its <a href="https://msdn.microsoft.com/library/windows/hardware/ff556875" data-raw-source="[&lt;strong&gt;IQueueCallbackRead::OnRead&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556875)"><strong>IQueueCallbackRead::OnRead</strong></a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff556885" data-raw-source="[&lt;strong&gt;IQueueCallbackWrite::OnWrite&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556885)"><strong>IQueueCallbackWrite::OnWrite</strong></a>, or <a href="https://msdn.microsoft.com/library/windows/hardware/ff556854" data-raw-source="[&lt;strong&gt;IQueueCallbackDeviceIoControl::OnDeviceIoControl&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556854)"><strong>IQueueCallbackDeviceIoControl::OnDeviceIoControl</strong></a> method.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>A call to the [<strong>IWDFDriverCreatedFile::Close</strong>](https://msdn.microsoft.com/library/windows/hardware/ff558897) method.</p></td>
-<td align="left"><p>A call to its [<strong>IFileCallbackCleanup::OnCleanupFile</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554905) method.</p>
+<td align="left"><p>A call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558897" data-raw-source="[&lt;strong&gt;IWDFDriverCreatedFile::Close&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff558897)"><strong>IWDFDriverCreatedFile::Close</strong></a> method.</p></td>
+<td align="left"><p>A call to its <a href="https://msdn.microsoft.com/library/windows/hardware/ff554905" data-raw-source="[&lt;strong&gt;IFileCallbackCleanup::OnCleanupFile&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554905)"><strong>IFileCallbackCleanup::OnCleanupFile</strong></a> method.</p>
 <p>The driver cancels or completes all I/O requests that are associated with the file object.</p>
 <p>After the driver returns from the cleanup notification, UMDF cancels any pending I/O requests.</p>
-<p>After cleanup completes and UMDF cancels pending I/O requests, the driver receives a call to its [<strong>IFileCallbackClose::OnCloseFile</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554910) method.</p></td>
+<p>After cleanup completes and UMDF cancels pending I/O requests, the driver receives a call to its <a href="https://msdn.microsoft.com/library/windows/hardware/ff554910" data-raw-source="[&lt;strong&gt;IFileCallbackClose::OnCloseFile&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554910)"><strong>IFileCallbackClose::OnCloseFile</strong></a> method.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 For the next device in the stack, no difference exists between the file object that is created by an application and the file object that is created by a higher-layer device.
 
- 
+ 
 
- 
+ 
 
 
 

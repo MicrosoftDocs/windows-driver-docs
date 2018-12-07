@@ -73,7 +73,7 @@ The following table describes the possible values for the device type.
 </tbody>
 </table>
 
- 
+ 
 
 For more information about INF files, see [INF Files for WIA Devices](https://msdn.microsoft.com/library/windows/hardware/ff542770). The **StiDeviceType***Xxx* constants are defined in *Sti.h*.
 
@@ -93,9 +93,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

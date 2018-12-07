@@ -3,7 +3,6 @@ title: amli bl
 description: The amli bl extension displays a list of all AML breakpoints.
 ms.assetid: 4ce52006-d44e-40ab-b669-2aa9509b6b21
 keywords: ["amli bl Windows Debugging"]
-ms.author: domars
 ms.date: 09/17/2018
 topic_type:
 - apiref
@@ -53,9 +52,9 @@ kd> !amli bl
 
 The first column gives the breakpoint number. The **&lt;e&gt;** and **&lt;d&gt;** marks indicate whether the breakpoint is enabled or disabled. The address of the breakpoint is in the next column. Finally, the method containing the breakpoint is listed, with the offset of the breakpoint if it is not set at the start of the method.
 
- 
+ 
 
- 
+ 
 
 
 

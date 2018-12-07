@@ -3,7 +3,6 @@ title: Conditional breakpoints in WinDbg and other Windows debuggers
 description: Conditional breakpoints in WinDbg and other Windows debuggers are useful when you need to break in only if a specific condition is satisfied.
 ms.assetid: 9fa5b417-8904-48bc-ad5c-62ba35d70b73
 keywords: ["breakpoints, conditional", "conditional breakpoints"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -129,9 +128,9 @@ For example, typing **mymod!myFunc+0x3A** into the **Command** box and **myVar &
 
 If you are [controlling the user-mode debugger from the kernel debugger](controlling-the-user-mode-debugger-from-the-kernel-debugger.md), you cannot use conditional breakpoints or any other breakpoint command string that contains the [**gc (Go from Conditional Breakpoint)**](gc--go-from-conditional-breakpoint-.md) or [**g (Go)**](g--go-.md) commands. If you use these commands, the serial interface might not be able to keep up with the number of breakpoint passes, and you will be unable to break back into CDB.
 
- 
+ 
 
- 
+ 
 
 
 

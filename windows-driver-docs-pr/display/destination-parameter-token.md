@@ -64,7 +64,7 @@ Write mask. The bits of this mask have the following components:
 </tbody>
 </table>
 
- 
+ 
 
 <span id="_23_20_"></span>**\[23:20\]**
 Bits 20 through 23 indicate the result modifier. Multiple result modifiers can be used. The following result modifier types can be ORed together in this 4-bit value:
@@ -96,7 +96,7 @@ Bits 20 through 23 indicate the result modifier. Multiple result modifiers can b
 </tbody>
 </table>
 
- 
+ 
 
 <span id="_27_24_"></span>**\[27:24\]**
 For PS versions earlier than 2\_0, bits 24 through 27 specify the result shift scale (signed shift).
@@ -116,9 +116,9 @@ Bits 28, 29, 30, 11, and 12 form a 5-bit value that indicates the register type.
 
 Available in Windows Vista and later versions of the Windows operating systems.
 
- 
+ 
 
- 
+ 
 
 
 

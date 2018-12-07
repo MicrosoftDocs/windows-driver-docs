@@ -1,6 +1,5 @@
 ---
 title: Framework Object Life Cycle
-author: windows-driver-content
 description: Framework Object Life Cycle
 ms.assetid: 33efc3a8-ac46-4626-ba0f-beb1eaa9ee47
 keywords:
@@ -55,9 +54,9 @@ One of these callback functions must deallocate any object-specific resources th
 
 The framework always handles the deletion of some framework objects, and drivers must not attempt to delete these objects. For a list of framework objects that drivers cannot delete, see [**WdfObjectDelete**](https://msdn.microsoft.com/library/windows/hardware/ff548734).
 
- 
+ 
 
- 
+ 
 
 
 

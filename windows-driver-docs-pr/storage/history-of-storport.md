@@ -1,6 +1,5 @@
 ---
 title: History of Storport
-author: windows-driver-content
 description: History of Storport
 ms.assetid: 1ddf45e1-06bb-42c6-9409-0f54143bb350
 ms.date: 04/20/2017
@@ -18,9 +17,9 @@ In versions of Storport prior to Windows 7, Storport's system event log interfa
 
 Storport offers a higher performance architecture and better fibre channel compatibility in Windows systems.
 
- 
+ 
 
- 
+ 
 
 
 

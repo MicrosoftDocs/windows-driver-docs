@@ -3,7 +3,6 @@ title: wdfkd.wdfumdownirp
 description: The wdfkd.wdfumdownirp extension displays the kernel-mode I/O request packet (IRP) that is associated with a specified user-mode IRP.
 ms.assetid: 98DFF193-950A-46CF-875E-B2907743F5D4
 keywords: ["wdfkd.wdfumdownirp Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -58,9 +57,9 @@ To use this command, follow these steps:
 2.  Pass the displayed handle to the [**!handle**](-handle.md) command. In the output of **!handle**, find the address of a **\_FILE\_OBJECT** structure.
 3.  Enter this command again, passing both the address of the user-mode IRP and the address of the **\_FILE\_OBJECT** structure.
 
- 
+ 
 
- 
+ 
 
 
 

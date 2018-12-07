@@ -1,6 +1,5 @@
 ---
 title: Accessing Plug-In Interfaces from Printer Drivers
-author: windows-driver-content
 description: Accessing Plug-In Interfaces from Printer Drivers
 ms.assetid: 639734c9-1aac-428c-bd5b-803607f1cf66
 keywords:
@@ -30,9 +29,9 @@ If a UI plug-in or rendering plug-in is installed, the printer driver (Unidrv or
 
 6.  If the plug-in has implemented the [IPrintOemUni](iprintoemuni-com-interface.md) interface, the driver calls [**IPrintOemUni::GetImplementedMethod**](https://msdn.microsoft.com/library/windows/hardware/ff554253) to determine which interface methods have been implemented. Similarly, if the plug-in has implemented the [IPrintOemUni2](iprintoemuni2-com-interface.md) interface, the driver calls **IPrintOemUni2::GetImplementedMethod** for the same purpose.
 
- 
+ 
 
- 
+ 
 
 
 

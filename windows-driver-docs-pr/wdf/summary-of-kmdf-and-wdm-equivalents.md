@@ -1,6 +1,5 @@
 ---
 title: Summary of WDF and WDM Equivalents
-author: windows-driver-content
 description: Summary of WDF and WDM Equivalents
 ms.assetid: EE5E3E1B-62B3-4DBB-AD97-FA7060DA3207
 ms.date: 04/20/2017
@@ -15,9 +14,9 @@ This section provides tables that compare Windows Driver Frameworks (WDF) object
 -   [WDM Equivalents for WDF Buffer Pointers](wdm-equivalents-for-kmdf-buffer-pointers.md)
 -   [WDM IRPs and WDF Event Callback Functions](wdm-irps-and-kmdf-event-callback-functions.md)
 
- 
+ 
 
- 
+ 
 
 
 

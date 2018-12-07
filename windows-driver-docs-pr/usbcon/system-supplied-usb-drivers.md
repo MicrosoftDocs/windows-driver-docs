@@ -1,7 +1,6 @@
 ---
 Description: This topics in this section describe the class drivers, generic client driver, and the parent composite driver that are provided by Microsoft.
 title: Microsoft-provided USB drivers
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -43,52 +42,51 @@ Microsoft provides these set of drivers:
 <td>USB</td>
 <td><p>Usbccgp.sys</p>
 <p>Usb.inf</p></td>
-<td><p>Windows 8.1</p>
-<p>Windows 8</p>
-<p>Windows 7</p>
-<p>Windows Vista</p>
-<p>Windows XP</p></td>
-<td>Usbccgp.sys is a parent driver for composite devices that supports multiple functions. For more information, see [USB Generic Parent Driver (Usbccgp.sys)](usb-common-class-generic-parent-driver.md).</td>
+<td><p>Windows 8.1</p>
+<p>Windows 8</p>
+<p>Windows 7</p>
+<p>Windows Vista</p>
+<p>Windows XP</p></td>
+<td>Usbccgp.sys is a parent driver for composite devices that supports multiple functions. For more information, see <a href="usb-common-class-generic-parent-driver.md" data-raw-source="[USB Generic Parent Driver (Usbccgp.sys)](usb-common-class-generic-parent-driver.md)">USB Generic Parent Driver (Usbccgp.sys)</a>.</td>
 </tr>
 <tr class="even">
 <td>Biometric</td>
 <td><p>WudfUsbBID.dll</p>
 <p>WudfUsbBIDAdvanced.inf</p></td>
-<td><p>Windows 8.1</p>
-<p>Windows 8</p></td>
-<td><p>Microsoft supports USB biometric devices (fingerprint readers) by providing the Windows Biometric Framework. See the [Windows Biometric Framework](https://msdn.microsoft.com/library/windows/hardware/ff536448).</p></td>
+<td><p>Windows 8.1</p>
+<p>Windows 8</p></td>
+<td><p>Microsoft supports USB biometric devices (fingerprint readers) by providing the Windows Biometric Framework. See the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536448" data-raw-source="[Windows Biometric Framework](https://msdn.microsoft.com/library/windows/hardware/ff536448)">Windows Biometric Framework</a>.</p></td>
 </tr>
 <tr class="odd">
 <td>Media Transfer Protocol Devices</td>
 <td>Wpdusb.sys (Obsolete)</td>
-<td><p>Windows Server 2008</p>
-<p>Windows Vista</p>
-<p>Windows Server 2003</p>
-<p>Windows XP</p></td>
+<td><p>Windows Server 2008</p>
+<p>Windows Vista</p>
+<p>Windows Server 2003</p>
+<p>Windows XP</p></td>
 <td><div class="alert">
-<strong>Note</strong>  
-<p>Starting in Windows 7, Microsoft has replaced the kernel mode component of the Windows Vista USB driver stack (Wpdusb.sys) for Windows Portable Devices (WPD) with the generic Winusb.sys.</p>
+<strong>Note</strong><br/><p>Starting in Windows 7, Microsoft has replaced the kernel mode component of the Windows Vista USB driver stack (Wpdusb.sys) for Windows Portable Devices (WPD) with the generic Winusb.sys.</p>
 </div>
 <div>
- 
+
 </div>
-<p>Microsoft provides the Wpdusb.sys driver to manage portable devices that support the Media Transfer Protocol. See [WPD Design Guide](https://msdn.microsoft.com/library/windows/hardware/ff597864).</p></td>
+<p>Microsoft provides the Wpdusb.sys driver to manage portable devices that support the Media Transfer Protocol. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff597864" data-raw-source="[WPD Design Guide](https://msdn.microsoft.com/library/windows/hardware/ff597864)">WPD Design Guide</a>.</p></td>
 </tr>
 <tr class="even">
 <td>USBDevice</td>
 <td><p>Winusb.sys</p>
 <p>Winusb.inf</p></td>
-<td><p>Windows 8.1</p>
-<p>Windows 8</p>
-<p>Windows 7</p>
-<p>Windows Vista</p>
-<p>Windows XP with Service Pack 2 (SP2)</p></td>
-<td>Winusb.sys can be used as the USB device's function driver instead of implementing a driver. See [WinUSB](how-to-write-a-windows-desktop-app-that-communicates-with-a-usb-device.md).</td>
+<td><p>Windows 8.1</p>
+<p>Windows 8</p>
+<p>Windows 7</p>
+<p>Windows Vista</p>
+<p>Windows XP with Service Pack 2 (SP2)</p></td>
+<td>Winusb.sys can be used as the USB device&#39;s function driver instead of implementing a driver. See <a href="how-to-write-a-windows-desktop-app-that-communicates-with-a-usb-device.md" data-raw-source="[WinUSB](how-to-write-a-windows-desktop-app-that-communicates-with-a-usb-device.md)">WinUSB</a>.</td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ## Microsoft-provided USB device class drivers
 

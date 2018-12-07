@@ -1,6 +1,5 @@
 ---
 title: Introduction to Threaded DPCs
-author: windows-driver-content
 description: Introduction to Threaded DPCs
 ms.assetid: 891a8a52-83ff-400a-9477-8edca1b9a83c
 keywords: ["threaded DPCs WDK kernel", "real-time threads WDK kernel", "preempted DPCs WDK kernel"]
@@ -30,9 +29,9 @@ In addition, you must ensure that your *CustomThreadedDpc* routine obeys all the
 
 To add a threaded DPC to the DPC queue, call [**KeInsertQueueDpc**](https://msdn.microsoft.com/library/windows/hardware/ff552185). To remove a threaded DPC from the queue before it executes, call [**KeRemoveQueueDpc**](https://msdn.microsoft.com/library/windows/hardware/ff553169).
 
- 
+ 
 
- 
+ 
 
 
 

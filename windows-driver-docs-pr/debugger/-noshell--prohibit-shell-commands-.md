@@ -3,7 +3,6 @@ title: .noshell (Prohibit Shell Commands)
 description: The .noshell command prevents you from using .shell commands.
 ms.assetid: 49a83e46-1390-4b60-bd61-a5da80c513e3
 keywords: [".noshell (Prohibit Shell Commands) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -49,7 +48,7 @@ The **.noshell** command prevents you from using [**.shell**](-shell--command-sh
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -62,9 +61,9 @@ If you use the **.noshell** command, you cannot use [**.shell (Command Shell)**]
 
 If you are performing remote debugging, this command is useful for security purposes.
 
- 
+ 
 
- 
+ 
 
 
 

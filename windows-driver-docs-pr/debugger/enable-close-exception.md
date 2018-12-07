@@ -3,7 +3,6 @@ title: Enable close exception
 description: Enable close exception
 ms.assetid: 4089df14-3204-4a48-b67f-cf6bd53100a5
 keywords: ["Enable close exception (global flag)"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -41,15 +40,15 @@ The **Enable close exception** flag raises a user-mode exception whenever an inv
 </tbody>
 </table>
 
- 
+ 
 
 **Note**   This flag is still supported, but the [Enable bad handles detection](enable-bad-handles-detection.md) flag (bhd), which performs a more comprehensive check of handle use, is preferred.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

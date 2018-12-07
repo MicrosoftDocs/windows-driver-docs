@@ -45,12 +45,12 @@ Clients use KSPROPERTY\_BDA\_SIGNAL\_LOCK\_TYPE to determine the current lock ty
 <td><p>No</p></td>
 <td><p>Pin or Filter</p></td>
 <td><p>KSP_NODE</p></td>
-<td><p>[<strong>BDA_LockType</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556526)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff556526" data-raw-source="[&lt;strong&gt;BDA_LockType&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556526)"><strong>BDA_LockType</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -86,9 +86,9 @@ Requirements
 
 [**KSPROPERTY\_BDA\_SIGNAL\_LOCK\_CAPS**](ksproperty-bda-signal-lock-caps.md)
 
- 
+ 
 
- 
+ 
 
 
 

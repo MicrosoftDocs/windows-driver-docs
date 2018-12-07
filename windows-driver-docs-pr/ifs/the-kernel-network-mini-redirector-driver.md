@@ -1,6 +1,5 @@
 ---
 title: The Kernel Network Mini-Redirector Driver
-author: windows-driver-content
 description: The Kernel Network Mini-Redirector Driver
 ms.assetid: 13236e5f-1261-4cf1-9c3d-3f1a5ccb3323
 keywords:
@@ -94,9 +93,9 @@ The routines implemented by a network mini-redirector can be organized into the 
 
 [Miscellaneous Network Mini-Redirector Routines](miscellaneous-network-mini-redirector-routines.md)
 
- 
+ 
 
- 
+ 
 
 
 

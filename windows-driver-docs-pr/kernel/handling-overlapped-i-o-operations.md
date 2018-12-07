@@ -1,6 +1,5 @@
 ---
 title: Handling Overlapped I/O Operations
-author: windows-driver-content
 description: Handling Overlapped I/O Operations
 ms.assetid: d13a9fa2-9f68-4c35-af79-dd3f8cec2805
 keywords: ["deferred procedure calls WDK kernel", "DPCs WDK kernel", "DpcForIsr", "CustomDpc", "overlapped I/O WDK kernel"]
@@ -26,9 +25,9 @@ Therefore, any driver that overlaps interrupt-driven I/O operations on its devic
 
 -   A *SynchCritSection* routine that accesses the ISR's context area on behalf of the *DpcForIsr* or *CustomDpc* routine
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: Deferred Symbol Loading
 description: Deferred Symbol Loading
 ms.assetid: 58771089-dd0c-4ea9-8a9a-41553f290e88
 keywords: ["deferred symbol loading", "symbols, deferred symbol loading", "lazy symbol loading", "symbols, lazy symbol loading"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -26,9 +25,9 @@ You can override deferred symbol loading by using the [**ld (Load Symbols)**](ld
 
 By default, deferred symbol loading is enabled. In CDB and KD, the **-s** [command-line option](command-line-options.md) will turn this option off. It can also be turned off in CDB by using the *LazyLoad* variable in the [tools.ini](configuring-tools-ini.md) file. Once the debugger is running, this option can be turned on or off by using [**.symopt+0x4**](-symopt--set-symbol-options-.md) or **.symopt-0x4**, respectively.
 
- 
+ 
 
- 
+ 
 
 
 

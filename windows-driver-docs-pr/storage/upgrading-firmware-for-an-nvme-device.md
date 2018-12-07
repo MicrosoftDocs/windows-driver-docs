@@ -1,6 +1,5 @@
 ---
 title: Upgrading Firmware for an NVMe Device
-author: windows-driver-content
 description: Updates to the firmware on an NVMe storage device are issued to the miniport driver for that device. 
 ms.assetid: A912715A-F82A-41E5-BE14-5B17930C29B7
 ms.date: 04/20/2017
@@ -72,7 +71,7 @@ Each function command is set in a **FIRMWARE\_REQUEST\_BLOCK** structure which i
 </tbody>
 </table>
 
- 
+ 
 
 The firmware functions and associated structures are defined in *ntddscsi.h*.
 
@@ -577,15 +576,15 @@ Exit:
 
 **Note**  Downloading multiple firmware images simultaneously is not supported. A single firmware download is always followed by a single firmware activation.
 
- 
+ 
 
 A firmware image already resident in a slot can be reactivated by using just the activate function command with the corresponding slot number.
 
 The **IOCTL\_SCSI\_MINIPORT\_FIRMWARE** control code for SRB I/O control is available starting with Windows 8.1.
 
- 
+ 
 
- 
+ 
 
 
 

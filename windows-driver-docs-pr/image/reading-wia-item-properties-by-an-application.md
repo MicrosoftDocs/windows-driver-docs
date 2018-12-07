@@ -1,6 +1,5 @@
 ---
 title: Reading WIA Item Properties by an Application
-author: windows-driver-content
 description: Reading WIA Item Properties by an Application
 ms.assetid: e09f604e-451e-40dc-bc12-a077d4d263ee
 ms.date: 04/20/2017
@@ -156,9 +155,9 @@ HRESULT _stdcall CWIADevice::drvReadItemProperties(
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

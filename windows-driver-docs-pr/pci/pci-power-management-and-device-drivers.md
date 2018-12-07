@@ -1,6 +1,5 @@
 ---
 title: PCI Power Management and Device Drivers
-author: windows-driver-content
 description: Clarifies how hardware that complies with PCI Power Management (PCI-PM) interacts with device drivers.
 ms.assetid: BA6792EE-CAD8-4C9E-AAA6-D1D8799F50C3
 ms.date: 04/20/2017
@@ -38,7 +37,7 @@ The OnNow architecture is a layered architecture, handling the integration of th
 
 **Note**  For the above scenarios to work as described, a WDM driver must forward POWER IRPs correctly as described in the current version of the Microsoft Windows DDK.
 
- 
+ 
 
 ## Scenario 1: Turning off a device
 
@@ -76,9 +75,9 @@ The OnNow architecture is a layered architecture, handling the integration of th
 -   ACPI Specification available at <https://www.uefi.org/specifications>. This link leaves the Microsoft.com site.
 -   The ACPI Component Architecture (ACPICA) compiler can be found at <https://acpica.org/downloads/binary-tools>. This link leaves the Microsoft.com site.
 
- 
+ 
 
- 
+ 
 
 
 

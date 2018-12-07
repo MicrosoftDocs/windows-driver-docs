@@ -56,9 +56,9 @@ Requirements
 
 [**WIA\_IPS\_OPTICAL\_XRES**](wia-ips-optical-xres.md)
 
- 
+ 
 
- 
+ 
 
 
 

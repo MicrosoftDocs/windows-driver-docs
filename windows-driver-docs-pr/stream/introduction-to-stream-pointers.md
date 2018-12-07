@@ -1,6 +1,5 @@
 ---
 title: Introduction to Stream Pointers
-author: windows-driver-content
 description: Introduction to Stream Pointers
 ms.assetid: 2682b145-5148-4301-b382-9811bb5e8fa6
 keywords:
@@ -42,9 +41,9 @@ Frames with stream pointers pointing to them are reference counted, as are frame
 
 When a minidriver is finished with a stream pointer, it can optionally call [**KsStreamPointerSetStatusCode**](https://msdn.microsoft.com/library/windows/hardware/ff567136) to specify an error code with which to complete the given I/O request packet (IRP). The minidriver must then call [**KsStreamPointerDelete**](https://msdn.microsoft.com/library/windows/hardware/ff567130). AVStream then decrements the reference count on the frame that the deleted stream pointer previously referenced. The leading-edge and trailing-edge stream pointers cannot be deleted.
 
- 
+ 
 
- 
+ 
 
 
 

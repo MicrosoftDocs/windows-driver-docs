@@ -37,9 +37,9 @@ When passing outstanding send data to the host, the offload target does the foll
 
 -   Specifies pointers in the **SendDataHead** and **SendDataTail** members of the [**TCP\_OFFLOAD\_STATE\_DELEGATED**](https://msdn.microsoft.com/library/windows/hardware/ff570939) structure that the offload target passes in the call to the **NdisMTerminateOffloadComplete** function.
 
- 
+ 
 
- 
+ 
 
 
 

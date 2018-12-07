@@ -1,6 +1,5 @@
 ---
 title: General Printing Commands
-author: windows-driver-content
 description: General Printing Commands
 ms.assetid: dfa88390-8419-42e7-9d5d-0150c502cd86
 ms.date: 04/20/2017
@@ -19,9 +18,9 @@ ms.localizationpriority: medium
 
 [Cursor Commands](cursor-commands.md)
 
- 
+ 
 
- 
+ 
 
 
 

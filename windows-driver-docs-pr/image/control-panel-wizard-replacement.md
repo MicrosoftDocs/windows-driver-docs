@@ -1,6 +1,5 @@
 ---
 title: Control Panel Wizard Replacement
-author: windows-driver-content
 description: Control Panel Wizard Replacement
 ms.assetid: d4a418b6-a9f9-41c4-99a9-20992abe80e9
 ms.date: 04/20/2017
@@ -23,9 +22,9 @@ To display your Vendor UI from the Control Panel you will have to:
 
 There is no relationship at all between the custom wizard and the dialog you replaced using the [**IWiaUIExtension::DeviceDialog**](https://msdn.microsoft.com/library/windows/hardware/ff545069) interface. But, please be careful. The icon in control panel will always default to the wizard in Windows Me and Windows XP. The user would have to right click and choose Scan explicitly to show the default WIA\_EVENT\_SCAN\_IMAGE event handler. In My Computer the opposite is true; whatever default handler you select will be the one used when the user double clicks on the device icon.
 
- 
+ 
 
- 
+ 
 
 
 

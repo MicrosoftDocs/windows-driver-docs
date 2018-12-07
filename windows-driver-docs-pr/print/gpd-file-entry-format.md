@@ -1,6 +1,5 @@
 ---
 title: GPD File Entry Format
-author: windows-driver-content
 description: GPD File Entry Format
 ms.assetid: 44057b4d-5ea1-426f-ae87-047b650cbf65
 keywords:
@@ -18,7 +17,7 @@ ms.localizationpriority: medium
 
 All GPD file entries conform to the following format:
 
-**\*** *EntryName***:** *EntryValue* **{***GPD\_FileEntry, GPD\_FileEntry, ...***}**
+**\\*** <em>EntryName</em>**:** *EntryValue* **{**<em>GPD\_FileEntry, GPD\_FileEntry, ...</em>**}**
 
 *EntryName* is always a predefined keyword that Unidrv's GPD parser recognizes, preceded by an asterisk.
 
@@ -66,9 +65,9 @@ Following is a more complex example, describing a printer that can print pages i
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

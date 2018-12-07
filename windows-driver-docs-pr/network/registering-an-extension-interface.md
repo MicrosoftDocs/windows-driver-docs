@@ -118,9 +118,9 @@ NTSTATUS
 
 A WSK application registers for extension interfaces on a socket-by-socket basis.
 
- 
+ 
 
- 
+ 
 
 
 

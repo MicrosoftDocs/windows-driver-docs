@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_BAND_CAPABILITIES
-author: windows-driver-content
 description: WDI_TLV_BAND_CAPABILITIES is a TLV that contains the capabilities of a band.
 ms.assetid: ABD198FE-8E81-4AF3-BB3D-D78AEB75782F
 ms.date: 07/18/2017
@@ -32,7 +31,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | UINT32 | The identifier for the band.                  |
 | UINT8  | Specifies whether the band is enabled or not. |
 
- 
+ 
 
 Requirements
 ------------
@@ -58,9 +57,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

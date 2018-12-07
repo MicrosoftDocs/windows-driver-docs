@@ -1,6 +1,5 @@
 ---
 title: Mediums and Categories
-author: windows-driver-content
 description: Mediums and Categories
 ms.assetid: 2bc83ce6-7f79-44e7-a0fb-7b9f56771730
 keywords:
@@ -27,9 +26,9 @@ Mediums are a method to ensure connectivity between two pins on separate filters
 
 The DirectShow graph builder interfaces, **IFilterMapper2** and **ICaptureGraphBuilder**, use these methods to construct filter graphs based on both mediums and stream categories.
 
- 
+ 
 
- 
+ 
 
 
 

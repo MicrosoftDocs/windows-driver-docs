@@ -1,6 +1,5 @@
 ---
 title: Installed (TCP/IP)
-author: windows-driver-content
 description: The TCP/IP Installed construct contains the object ID (OID) of the MIB table's row and a list of lookup values.
 ms.assetid: 4e14d8c1-7c66-4035-845d-f3f92dad8c4f
 keywords:
@@ -28,7 +27,7 @@ The TCP/IP Installed construct contains the object ID (OID) of the MIB table's r
 <tbody>
 <tr class="odd">
 <td><p><strong>deviceIndex</strong></p></td>
-<td><p>(Optional) A flag that, when <strong>TRUE</strong>, means that the associated algorithm must include the device index in the specified OID; when <strong>FALSE</strong>, a trailing zero is appended to the OID. The default value is <strong>FALSE</strong>. For more information, see the note on the page for [Value](value.md).</p></td>
+<td><p>(Optional) A flag that, when <strong>TRUE</strong>, means that the associated algorithm must include the device index in the specified OID; when <strong>FALSE</strong>, a trailing zero is appended to the OID. The default value is <strong>FALSE</strong>. For more information, see the note on the page for <a href="value.md" data-raw-source="[Value](value.md)">Value</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>drvPrinterEvent</strong></p></td>
@@ -49,7 +48,7 @@ The TCP/IP Installed construct contains the object ID (OID) of the MIB table's r
 </tbody>
 </table>
 
- 
+ 
 
 ### Code Example
 
@@ -70,9 +69,9 @@ The preceding example results in the following query:
 \Printer.Configuration.DuplexUnit:Installed
 ```
 
- 
+ 
 
- 
+ 
 
 
 

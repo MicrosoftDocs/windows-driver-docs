@@ -24,9 +24,9 @@ When WDI decides that Selective Suspend can be supported, WDI also registers an 
 
 [*MiniportWdiIdleNotification*](https://msdn.microsoft.com/library/windows/hardware/mt297563)
 
- 
+ 
 
- 
+ 
 
 
 

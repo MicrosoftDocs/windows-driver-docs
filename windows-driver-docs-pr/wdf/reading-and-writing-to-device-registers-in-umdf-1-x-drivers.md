@@ -1,6 +1,5 @@
 ---
 title: Reading and Writing to Device Registers in UMDF 1.x Drivers
-author: windows-driver-content
 description: Reading and Writing to Device Registers in UMDF 1.x Drivers
 ms.assetid: A0640E60-B0DF-4CAD-B292-CC1875EF7F7D
 ms.date: 04/20/2017
@@ -36,9 +35,9 @@ By default, UMDF internally uses system calls to access the registers mapped eit
 
 The driver should use the READ/WRITE\_REGISTER\_Xxx routines even if it has mapped registers into user-mode. These routines validate driver input and ensure that the driver doesn't request access to invalid locations. Rarely, a driver may need to access user-mode mapped registers directly, without using these routines. To do so, a driver retrieves the user-mode mapped address by calling [**IWDFDevice3::GetHardwareRegisterMappedAddress**](https://msdn.microsoft.com/library/windows/hardware/hh451219) on the mapped base address. Because UMDF doesn't validate read and write accesses performed in this way, this technique is not recommended for register access.
 
- 
+ 
 
- 
+ 
 
 
 

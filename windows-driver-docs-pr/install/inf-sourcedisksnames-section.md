@@ -41,7 +41,7 @@ diskid = disk-description[,[tag-or-cab-file],[unused],[path],[flags][,tag-file]]
 Specifies a nonnegative integer, in decimal format, that identifies a source disk. This value cannot require more than 4 bytes of storage. If there is more than one source disk for the distribution, each *diskid* entry in this section must have a unique value, such as **1**, **2**, **3**, and so forth.
 
 <a href="" id="disk-description"></a>*disk-description*  
-Specifies a %*strkey*% token or a **"***quoted string***"** that describes the contents and/or purpose of the disk identified by *diskid*. The installer can display the value of this string to the end-user during installation, for example, to identify a source disk to be inserted into a drive at a particular stage of the installation process.
+Specifies a %*strkey*% token or a **"**<em>quoted string</em>**"** that describes the contents and/or purpose of the disk identified by *diskid*. The installer can display the value of this string to the end-user during installation, for example, to identify a source disk to be inserted into a drive at a particular stage of the installation process.
 
 Every %*strkey*% specification in this section must be defined in the INF's **Strings** section. Any *disk-description* that is not a %*strkey*% token is a user-visible string that must be delimited by double quotation marks characters (**"**) if it has any leading or trailing spaces.
 
@@ -50,7 +50,7 @@ This optional value specifies the name of a [*tag file*](https://msdn.microsoft.
 
 Windows uses a tag file to verify that the user inserted the correct installation disk. Tag files are required for removable media, and are optional for fixed media.
 
-If Windows cannot find installation files by name on the installation medium, and if *tag-or-cab-file* has the extension **.***cab*, Windows uses it as the name of a cabinet file that contains the installation files.
+If Windows cannot find installation files by name on the installation medium, and if *tag-or-cab-file* has the extension **.**<em>cab</em>, Windows uses it as the name of a cabinet file that contains the installation files.
 
 If a .*cab* extension is specified, Windows treats the file as both a tag file and a cabinet file, as explained in the following **Remarks** section.
 
@@ -60,7 +60,7 @@ For Windows XP and later versions of Windows, also see the *flags* and *tag-file
 This entry is no longer supported for Windows 2000 and later versions of Windows.
 
 <a href="" id="path"></a>*path*  
-This optional value specifies the directory path on the distribution disk that contains source files. The *path* is relative to the [*installation root*](https://msdn.microsoft.com/library/windows/hardware/ff556290#wdkgloss-installation-root) and is expressed as **\\***dirname1***\\***dirname2*... and so forth. If this value is omitted from an entry, files are assumed to be in the installation root of the distribution disk.
+This optional value specifies the directory path on the distribution disk that contains source files. The *path* is relative to the [*installation root*](https://msdn.microsoft.com/library/windows/hardware/ff556290#wdkgloss-installation-root) and is expressed as **\\**<em>dirname1</em>**\\**<em>dirname2</em>... and so forth. If this value is omitted from an entry, files are assumed to be in the installation root of the distribution disk.
 
 You can use an [**INF SourceDisksFiles section**](inf-sourcedisksfiles-section.md) to specify subdirectories, relative to a given path directory, that contain source files. However, tag files and [*cabinet file*](https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-cabinet-file) must reside either in the given path directory or in the installation root.
 
@@ -101,7 +101,7 @@ Be aware that, unlike other sections such as a *DDInstall* section, the platform
 
 During installation, SetupAPI functions look for architecture-specific **SourceDisksNames** sections before using the generic section. For example, if, during installation on an x86-based platform, an INF file references disk "2", the [SetupAPI](setupapi.md) functions will look for an entry for disk "2" in **SourceDisksNames.x86** before looking in **SourceDisksNames**.
 
-SetupAPI functions use the **SourceDisksNames** and **SourceDisksNames.***architecture* sections that are in the same INF file as the relevant [**SourceDisksFiles**](inf-sourcedisksfiles-section.md) section.
+SetupAPI functions use the **SourceDisksNames** and **SourceDisksNames.**<em>architecture</em> sections that are in the same INF file as the relevant [**SourceDisksFiles**](inf-sourcedisksfiles-section.md) section.
 
 Examples
 --------
@@ -182,9 +182,9 @@ Msft = "Microsoft"
 
 [**Version**](inf-version-section.md)
 
- 
+ 
 
- 
+ 
 
 
 

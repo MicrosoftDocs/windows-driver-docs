@@ -29,9 +29,9 @@ For example, assume you have a modem whose driver contains an interrupt service 
 
 Note, however, that once you put the PcmciaExclusiveIrq directive in a device's INF file, the device will not function with any controller or bridge that does not have access to ISA interrupt.
 
- 
+ 
 
- 
+ 
 
 
 

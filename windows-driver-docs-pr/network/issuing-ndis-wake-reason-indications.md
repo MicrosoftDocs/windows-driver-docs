@@ -11,9 +11,7 @@ ms.localizationpriority: medium
 
 If a miniport driver supports NDIS wake reason status indications ([**NDIS\_STATUS\_PM\_WAKE\_REASON**](https://msdn.microsoft.com/library/windows/hardware/hh439808)), it must generate this status indication immediately after the network adapter generates a wake-up event and the adapter resumes to a full-power state.
 
-**Note**  Support for NDIS wake reason status indications is optional for Mobile Broadband (MB) miniport drivers.
-
- 
+**Note**  Support for NDIS wake reason status indications is optional for Mobile Broadband (MB) miniport drivers.
 
 The miniport driver is configured with power management (PM) parameters through an object identifier (OID) set request of [OID\_PM\_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/ff569768). This OID request specifies the PM parameters through an [**NDIS\_PM\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff566759) structure.
 
@@ -28,9 +26,7 @@ The network adapter generates a wake-up event if it receives a packet that match
 
 -   Wildcard patterns that match a receive filter specified through an OID set request of [OID\_GEN\_CURRENT\_PACKET\_FILTER](https://msdn.microsoft.com/library/windows/hardware/ff569575).
 
-**Note**  For this type of wake reason status indication, the network adapter must be able to save the received packet. The driver must return the received packet within the status indication.
-
- 
+**Note**  For this type of wake reason status indication, the network adapter must be able to save the received packet. The driver must return the received packet within the status indication.
 
 WOL patterns are specified through the **EnabledWoLPacketPatterns** member of the [**NDIS\_PM\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff566759) structure.
 
@@ -46,9 +42,7 @@ Wake-up events of this type are specified through the **WakeUpFlags** member of 
 
 If the network adapter generated a wake-up signal, the miniport driver must issue an [**NDIS\_STATUS\_PM\_WAKE\_REASON**](https://msdn.microsoft.com/library/windows/hardware/hh439808) status indication. The driver does this while it is handling the OID set request of [OID\_PNP\_SET\_POWER](https://msdn.microsoft.com/library/windows/hardware/ff569780) for the transition of the adapter to a full-power state.
 
-**Note**  The miniport driver must issue an [**NDIS\_STATUS\_PM\_WAKE\_REASON**](https://msdn.microsoft.com/library/windows/hardware/hh439808) status indication before it issues a status indication that is related to the wake-up event. For example, if the wake-up event was due to a change in the media connectivity state, the miniport driver must issue an [**NDIS\_STATUS\_LINK\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff567391) status indication after it has issued the **NDIS\_STATUS\_PM\_WAKE\_REASON** status indication.
-
- 
+**Note**  The miniport driver must issue an [**NDIS\_STATUS\_PM\_WAKE\_REASON**](https://msdn.microsoft.com/library/windows/hardware/hh439808) status indication before it issues a status indication that is related to the wake-up event. For example, if the wake-up event was due to a change in the media connectivity state, the miniport driver must issue an [**NDIS\_STATUS\_LINK\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff567391) status indication after it has issued the **NDIS\_STATUS\_PM\_WAKE\_REASON** status indication.
 
 When the miniport driver issues the [**NDIS\_STATUS\_PM\_WAKE\_REASON**](https://msdn.microsoft.com/library/windows/hardware/hh439808) status indication, it must follow these steps:
 
@@ -58,9 +52,7 @@ When the miniport driver issues the [**NDIS\_STATUS\_PM\_WAKE\_REASON**](https:/
 
     -   An [**NDIS\_PM\_WAKE\_PACKET**](https://msdn.microsoft.com/library/windows/hardware/hh451603) structure along with the received packet (*wake packet*) that caused the network adapter to generate the wake-up event.
 
-        **Note**  The miniport driver does not need to allocate this buffer space if it indicates media-specific or media-independent wake-up events.
-
-         
+        **Note**  The miniport driver does not need to allocate this buffer space if it indicates media-specific or media-independent wake-up events.
 
 2.  The miniport driver initializes an [**NDIS\_PM\_WAKE\_REASON**](https://msdn.microsoft.com/library/windows/hardware/hh451605) structure at the start of the buffer. The driver sets the **WakeReason** member to an [**NDIS\_PM\_WAKE\_REASON\_TYPE**](https://msdn.microsoft.com/library/windows/hardware/hh451607) enumeration value that defines the type of the wake-up event.
 
@@ -70,9 +62,7 @@ When the miniport driver issues the [**NDIS\_STATUS\_PM\_WAKE\_REASON**](https:/
 
     1.  The miniport driver sets the **InfoBufferOffset** member to the offset of an [**NDIS\_PM\_WAKE\_PACKET**](https://msdn.microsoft.com/library/windows/hardware/hh451603) structure that follows the [**NDIS\_PM\_WAKE\_REASON**](https://msdn.microsoft.com/library/windows/hardware/hh451605) structure in the buffer.
 
-        **Note**  The miniport driver must align the start of the [**NDIS\_PM\_WAKE\_PACKET**](https://msdn.microsoft.com/library/windows/hardware/hh451603) structure on a 64-bit boundary.
-
-         
+        **Note**  The miniport driver must align the start of the [**NDIS\_PM\_WAKE\_PACKET**](https://msdn.microsoft.com/library/windows/hardware/hh451603) structure on a 64-bit boundary.
 
     2.  The miniport driver sets the **InfoBufferSize** member to the size of the [**NDIS\_PM\_WAKE\_PACKET**](https://msdn.microsoft.com/library/windows/hardware/hh451603) structure plus the size of the packet that caused the wake-up event.
 
@@ -84,23 +74,17 @@ When the miniport driver issues the [**NDIS\_STATUS\_PM\_WAKE\_REASON**](https:/
 
         -   The **PatternFriendlyName** member is set to the user-readable description of the wake pattern that is specified by the **PatternId** member. This value is specified by the **FriendlyName** member of the [**NDIS\_PM\_WOL\_PATTERN**](https://msdn.microsoft.com/library/windows/hardware/ff566768) structure.
 
-            **Note**  The miniport driver does not need to initialize this member. NDIS sets the **PatternFriendlyName** member to the correct value before it passes the [**NDIS\_PM\_WAKE\_PACKET**](https://msdn.microsoft.com/library/windows/hardware/hh451603) structure to overlying drivers.
-
-             
+            **Note**  The miniport driver does not need to initialize this member. NDIS sets the **PatternFriendlyName** member to the correct value before it passes the [**NDIS\_PM\_WAKE\_PACKET**](https://msdn.microsoft.com/library/windows/hardware/hh451603) structure to overlying drivers.
 
         -   The **OriginalPacketSize** member is set to the length of the packet as received by the network adapter.
 
         -   The **SavedPacketSize** member must be set to the length of the packet that is being reported through the [**NDIS\_STATUS\_PM\_WAKE\_REASON**](https://msdn.microsoft.com/library/windows/hardware/hh439808) status indication.
 
-            **Note**  The value of this member must not be greater than the value that the miniport driver set in the **MaxWoLPacketSaveBuffer** member of the [**NDIS\_PM\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff566748) structure. The driver returns this structure when it reports its wake packet indication capabilities. For more information, see [Reporting Wake Reason Status Indication Capabilities](reporting-wake-reason-status-indication-capabilities.md).
-
-             
+            **Note**  The value of this member must not be greater than the value that the miniport driver set in the **MaxWoLPacketSaveBuffer** member of the [**NDIS\_PM\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff566748) structure. The driver returns this structure when it reports its wake packet indication capabilities. For more information, see [Reporting Wake Reason Status Indication Capabilities](reporting-wake-reason-status-indication-capabilities.md).
 
         -   The **SavedPacketOffset** member must be set to the offset, in units of bytes, to the wake packet that follows the [**NDIS\_PM\_WAKE\_PACKET**](https://msdn.microsoft.com/library/windows/hardware/hh451603) structure.
 
-            **Note**  The miniport driver must align the start of the wake packet on a 64-bit boundary in the buffer.
-
-             
+            **Note**  The miniport driver must align the start of the wake packet on a 64-bit boundary in the buffer.
 
     4.  The miniport copies the wake packet into the buffer at the offset specified by the **SavedPacketOffset** member.
 
@@ -110,15 +94,4 @@ When the miniport driver issues the [**NDIS\_STATUS\_PM\_WAKE\_REASON**](https:/
 
 6.  The miniport driver calls [**NdisMIndicateStatusEx**](https://msdn.microsoft.com/library/windows/hardware/ff563600) and passes a pointer to the [**NDIS\_STATUS\_INDICATION**](https://msdn.microsoft.com/library/windows/hardware/ff567373) structure in the *StatusIndication* parameter.
 
-**Note**  After the miniport driver issues the [**NDIS\_STATUS\_PM\_WAKE\_REASON**](https://msdn.microsoft.com/library/windows/hardware/hh439808) status indication for a received packet wake-up event, it must indicate this received packet by calling [**NdisMIndicateReceiveNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff563598).
-
- 
-
- 
-
- 
-
-
-
-
-
+**Note**  After the miniport driver issues the [**NDIS\_STATUS\_PM\_WAKE\_REASON**](https://msdn.microsoft.com/library/windows/hardware/hh439808) status indication for a received packet wake-up event, it must indicate this received packet by calling [**NdisMIndicateReceiveNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff563598).

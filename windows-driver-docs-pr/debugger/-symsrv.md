@@ -3,7 +3,6 @@ title: symsrv extension command
 description: The symsrv extension closes the symbol server client.
 ms.assetid: 666fa9d7-f723-4745-95fc-17aa20993b42
 keywords: ["symsrv Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -45,7 +44,7 @@ The **!symsrv** extension closes the symbol server client.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -56,9 +55,9 @@ This can be useful if you need to re-synchronize your connection.
 
 If you have previously refused an internet authentication request, you will need to use **!symsrv close** to reconnect to the symbol store. See [Firewalls and Proxy Servers](firewalls-and-proxy-servers.md) for details.
 
- 
+ 
 
- 
+ 
 
 
 

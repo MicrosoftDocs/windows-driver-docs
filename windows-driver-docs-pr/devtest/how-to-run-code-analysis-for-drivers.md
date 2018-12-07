@@ -31,7 +31,7 @@ In this topic:
 
 1.  In Visual Studio, right-click the driver project or solution in **Solution Explorer** and click **Properties**.
 2.  In the properties dialog box for the project, click **Code Analysis**.
-3.  In the **Code Analysis for C/C++ Properties** page, select the project configuration and platform that you want to analyze (for example, Windows 8 and Win32).
+3.  In the **Code Analysis for C/C++ Properties** page, select the project configuration and platform that you want to analyze (for example, Windows 8 and Win32).
 4.  Select **Enable Code Analysis for C/C++ on Build**.
 5.  Under Rule set, select **Microsoft Driver Recommended Rules**. This is the default rule set for drivers.
 6.  In the **Build** menu, click **Build Solution**.
@@ -52,7 +52,7 @@ If possible defects are found in the source code, the **Code Analysis Results** 
 **To view the code analysis log file associated with a build**
 
 1.  Navigate to the directory for your build configuration and platform (for example, \\Windows7Release\\x64).
-2.  If you use the recommended rules, the log file is called vc.\*codeanalysis.xml. If you are creating a driver for Windows Server 2012, this file is used to create the Driver Verification log.
+2.  If you use the recommended rules, the log file is called vc.\*codeanalysis.xml. If you are creating a driver for Windows Server 2012, this file is used to create the Driver Verification log.
 
 ## Suppressing the report of defects
 
@@ -79,22 +79,24 @@ The Code Analysis tool issues warning [C6262](http://go.microsoft.com/fwlink/p/?
 
 **To customize the stacksize limit for C6262**
 
-1.  Open the Visual Studio project file (.vcxproj) for your kernel-mode driver (or component) in Notepad or another text editor.
-2.  Add a new **&lt;ItemDefinitionGroup&gt;** for the compiler **&lt;ClCompile&gt;**.
-3.  Add the **&lt;PREfastAdditionalOptions&gt;** element and set the **stacksize***&lt;bytes&gt;*. The default value is **stacksize1024**.
-    ```XML
-      <ItemDefinitionGroup>
-        <ClCompile>
+1. Open the Visual Studio project file (.vcxproj) for your kernel-mode driver (or component) in Notepad or another text editor.
+2. Add a new **&lt;ItemDefinitionGroup&gt;** for the compiler **&lt;ClCompile&gt;**.
+3. Add the **&lt;PREfastAdditionalOptions&gt;** element and set the **stacksize**<em>&lt;bytes&gt;</em>. The default value is **stacksize1024**.
+   ```XML
+     <ItemDefinitionGroup>
+       <ClCompile>
 
-        
-          <!-- Change stack depth for C6262 from 1024 to 400 -->
-          <PREfastAdditionalOptions>stacksize400</PREfastAdditionalOptions>
 
-        </ClCompile>
-      </ItemDefinitionGroup>
 
-    
-    ```
+      <!-- Change stack depth for C6262 from 1024 to 400 -->
+      <PREfastAdditionalOptions>stacksize400</PREfastAdditionalOptions>
+
+    </ClCompile>
+  </ItemDefinitionGroup>
+
+
+```
+
 
 4.  Save the project file. Start Visual Studio, load the updated driver project, and run code analysis.
 
@@ -105,9 +107,9 @@ The Code Analysis tool issues warning [C6262](http://go.microsoft.com/fwlink/p/?
 
 [Code Analysis for Drivers Warnings](prefast-for-drivers-warnings.md)
 
- 
 
- 
+
+
 
 
 

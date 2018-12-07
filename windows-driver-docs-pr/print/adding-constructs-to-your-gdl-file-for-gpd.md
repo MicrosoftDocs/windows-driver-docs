@@ -1,6 +1,5 @@
 ---
 title: Adding Constructs to Your GDL File for GPD
-author: windows-driver-content
 description: Adding Constructs to Your GDL File for GPD
 ms.assetid: a0ce5a46-152f-47f3-9246-c272224d4be9
 ms.date: 04/20/2017
@@ -26,9 +25,9 @@ The following examples show how to add the appropriate constructs to your GDL fi
 
 [Autodetecting the Printer's Hard Drive for GPD](autodetecting-the-printer-s-hard-drive-for-gpd.md)
 
- 
+ 
 
- 
+ 
 
 
 

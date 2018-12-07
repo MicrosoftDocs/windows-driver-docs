@@ -1,6 +1,5 @@
 ---
 title: Creating Device-Specific Components for Image Acquisition APIs
-author: windows-driver-content
 description: Creating Device-Specific Components for Image Acquisition APIs
 ms.assetid: c4906dec-6d34-47f5-abde-0513c4499a66
 ms.date: 04/20/2017
@@ -25,9 +24,9 @@ Image acquisition software can call [**IStiDevice::Subscribe**](https://msdn.mic
 
 When the image acquisition software has finished using the **IStiDevice** interface, it must call [**IStiDevice::Release**](https://msdn.microsoft.com/library/windows/hardware/ff543765).
 
- 
+ 
 
- 
+ 
 
 
 

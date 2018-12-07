@@ -1,6 +1,5 @@
 ---
 title: Range Template Data Type Issues
-author: windows-driver-content
 description: Range Template Data Type Issues
 ms.assetid: 36cc91dc-5edc-4786-b3c9-f60bff06997d
 keywords:
@@ -16,9 +15,9 @@ ms.localizationpriority: medium
 
 The \*ArraySize directive accepts one integer or a range of integers. (A range is two integers separated by a hyphen (-) and optionally enclosed by parenthesis or square brackets \[for example, \*ArraySize: \[1-15\]\]). You can use the GPD wildcard (\*) to represent any integer value. For example, to define an array of any size, you could use \*ArraySize: \*.
 
- 
+ 
 
- 
+ 
 
 
 

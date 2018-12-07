@@ -3,7 +3,6 @@ title: isainfo
 description: The isainfo extension displays information about PNPISA cards or devices present in the system..
 ms.assetid: 8caa501e-3bb7-4af8-a7ea-e8b255b9f24c
 keywords: ["I/O Bus", "CARD_INFORMATION", "isainfo Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -48,7 +47,7 @@ Specifies a PNPISA Card. If *Card* is 0 or omitted, all the devices and cards on
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -65,9 +64,9 @@ Flags (0x80000000)  DF_BUS
                       DF_REQ_TRIMMED, DF_READ_DATA_PORT
 ```
 
- 
+ 
 
- 
+ 
 
 
 

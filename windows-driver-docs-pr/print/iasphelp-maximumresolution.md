@@ -1,6 +1,5 @@
 ---
 title: Iasphelp get\_MaximumResolution method
-author: windows-driver-content
 description: The MaximumResolution property enables an ASP Web page to determine a printer's maximum resolution.
 MS-HAID:
 - 'webfnc\_156e8337-489a-44e6-9c81-0a8f6dd3aa08.xml'
@@ -62,7 +61,7 @@ This property returns one of the values in the following table.
 </tr>
 <tr class="even">
 <td><strong>E_HANDLE</strong></td>
-<td><p>The [<strong>Iasphelp::Open</strong>](iasphelp-open.md) method has not been called.</p></td>
+<td><p>The <a href="iasphelp-open.md" data-raw-source="[&lt;strong&gt;Iasphelp::Open&lt;/strong&gt;](iasphelp-open.md)"><strong>Iasphelp::Open</strong></a> method has not been called.</p></td>
 </tr>
 <tr class="odd">
 <td><strong>E_OUTOFMEMORY</strong></td>

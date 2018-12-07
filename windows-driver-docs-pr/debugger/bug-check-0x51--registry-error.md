@@ -3,7 +3,6 @@ title: Bug Check 0x51 REGISTRY_ERROR
 description: The REGISTRY_ERROR bug check has a value of 0x00000051. This indicates that a severe registry error has occurred.
 ms.assetid: 286e462f-e4d4-408f-91ad-3e20336e2025
 keywords: ["Bug Check 0x51 REGISTRY_ERROR", "REGISTRY_ERROR"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -55,7 +54,7 @@ The REGISTRY\_ERROR bug check has a value of 0x00000051. This indicates that a s
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -66,9 +65,9 @@ This error may indicate that the registry encountered an I/O error while trying 
 
 It may also occur due to a failure in a refresh operation, which is used only in by the security system, and then only when resource limits are encountered.
 
- 
+ 
 
- 
+ 
 
 
 

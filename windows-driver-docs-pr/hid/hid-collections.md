@@ -1,6 +1,5 @@
 ---
 title: HID Collections
-author: windows-driver-content
 description: A HID collection is a meaningful grouping of HID controls and their respective HID usages.
 ms.assetid: 2d3efb38-4eba-43db-8cff-9fac30209952
 keywords:
@@ -50,9 +49,9 @@ Windows extends the concept of a HID collection to include the following:
 
 [Data indices](data-indices.md)
 
- 
+ 
 
- 
+ 
 
 
 

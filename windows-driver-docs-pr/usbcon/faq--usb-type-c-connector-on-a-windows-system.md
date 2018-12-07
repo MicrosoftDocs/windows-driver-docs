@@ -1,7 +1,6 @@
 ---
 Description: Frequently asked questions for OEMs who want to build Windows systems with USB Type-C connectors.
 title: FAQ - USB Type-C connector on a Windows system
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -199,9 +198,9 @@ We recommend running USB tests in Windows HLK for Windows 10. These tests are l
 
 The UCM class extension might get requests from the operating system to change data or power direction of the connector. When it gets those requests, it invokes client driver's implementation of [*EVT\_UCM\_CONNECTOR\_SET\_DATA\_ROLE*](https://msdn.microsoft.com/library/windows/hardware/mt187818) and [*EVT\_UCM\_CONNECTOR\_SET\_POWER\_ROLE*](https://msdn.microsoft.com/library/windows/hardware/mt187819) callback functions (if the connector implements PD). In the implementation, the client driver is expected control the VBUS and VCONN pins. For more information about those callback functions, see [Write a USB Type-C connector driver](bring-up-a-usb-type-c-connector-on-a-windows-system.md).
 
- 
+ 
 
- 
+ 
 
 
 

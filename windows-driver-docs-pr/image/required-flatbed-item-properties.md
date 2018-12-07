@@ -1,6 +1,5 @@
 ---
 title: Required Flatbed Item Properties
-author: windows-driver-content
 description: Required Flatbed Item Properties
 ms.assetid: 5af295de-b5ad-47c7-b1db-9d5685ed8d19
 ms.date: 04/20/2017
@@ -89,11 +88,11 @@ The WIA flatbed scanner item is required to support the following WIA properties
 
 **Note**   The [**WIA\_IPA\_RAW\_BITS\_PER\_CHANNEL**](https://msdn.microsoft.com/library/windows/hardware/ff551641) property is required if the WiaImgFmt\_RAW format is supported. The [**WIA\_IPA\_Format**](https://msdn.microsoft.com/library/windows/hardware/ff551553) property must support the WiaImgFmt\_BMP format. The [**WIA\_IPS\_THRESHOLD**](https://msdn.microsoft.com/library/windows/hardware/ff552655) property is required when the [**WIA\_IPA\_DEPTH**](https://msdn.microsoft.com/library/windows/hardware/ff551546) property is set to 1 bits per pixel (BPP) or when the [**WIA\_IPA\_DATATYPE**](https://msdn.microsoft.com/library/windows/hardware/ff551543) property is set to WIA\_DATA\_THRESHOLD.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

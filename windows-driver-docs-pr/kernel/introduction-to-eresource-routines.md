@@ -1,6 +1,5 @@
 ---
 title: Introduction to ERESOURCE Routines
-author: windows-driver-content
 description: Introduction to ERESOURCE Routines
 ms.assetid: 5c7759db-aeb5-47f3-8adc-ddedb74b5cb4
 keywords: ["ERESOURCE structures", "exclusive waiters WDK kernel", "shared waiters WDK kernel", "exclusive/shared synchronization WDK kernel", "synchronization WDK kernel , exclusive/shared", "waiters WDK kernel"]
@@ -50,9 +49,9 @@ A driver can also determine the current state of an ERESOURCE, as follows:
 
 -   Use [**ExGetSharedWaiterCount**](https://msdn.microsoft.com/library/windows/hardware/ff545290) to determine the number of shared waiters for the ERESOURCE, and use [**ExGetExclusiveWaiterCount**](https://msdn.microsoft.com/library/windows/hardware/ff544618) to determine the number of exclusive waiters for the ERESOURCE.
 
- 
+ 
 
- 
+ 
 
 
 

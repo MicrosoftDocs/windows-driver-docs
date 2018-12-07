@@ -42,9 +42,9 @@ The following sections describe features that DirectX 9.0 drivers can implement 
 
 [Reporting Capabilities for Shader Versions](reporting-capabilities-for-shader-versions.md)
 
- 
+ 
 
- 
+ 
 
 
 

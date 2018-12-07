@@ -1,6 +1,5 @@
 ---
 title: Iasphelp get\_PaperNames method
-author: windows-driver-content
 description: The PaperNames property enables an ASP Web page to obtain a set of strings that name all the paper forms for the printer.
 MS-HAID:
 - 'webfnc\_be2b332f-6300-4b3e-9fa7-fd2fd0bdffe5.xml'
@@ -62,7 +61,7 @@ This property returns one of the values in the following table.
 </tr>
 <tr class="even">
 <td><strong>E_HANDLE</strong></td>
-<td><p>The [<strong>Iasphelp::Open</strong>](iasphelp-open.md) method has not been called.</p></td>
+<td><p>The <a href="iasphelp-open.md" data-raw-source="[&lt;strong&gt;Iasphelp::Open&lt;/strong&gt;](iasphelp-open.md)"><strong>Iasphelp::Open</strong></a> method has not been called.</p></td>
 </tr>
 <tr class="odd">
 <td><strong>E_OUTOFMEMORY</strong></td>

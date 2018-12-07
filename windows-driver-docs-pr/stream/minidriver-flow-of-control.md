@@ -1,6 +1,5 @@
 ---
 title: Minidriver Flow of Control
-author: windows-driver-content
 description: Minidriver Flow of Control
 ms.assetid: c3c23d32-4023-445b-bd89-e0b454bec1ed
 keywords:
@@ -43,9 +42,9 @@ The following set of steps is typically followed in initializing, using, and uni
 
 10. When it is time to uninitialize the adapter, the stream class driver calls the function specified in the [**HW\_INITIALIZATION\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff559682) structure's **HwReceivePacket** member with SRB\_UNINITIALIZE\_DEVICE. The minidriver then uninitializes the device.
 
- 
+ 
 
- 
+ 
 
 
 

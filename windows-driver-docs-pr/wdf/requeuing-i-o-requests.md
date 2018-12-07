@@ -1,6 +1,5 @@
 ---
 title: Requeuing I/O Requests
-author: windows-driver-content
 description: Requeuing I/O Requests
 ms.assetid: b509959c-b2ab-4f04-9c08-5c5e90726b73
 keywords:
@@ -41,9 +40,9 @@ Prior to version 1.9 of KMDF, drivers could send I/O requests from a child devic
 
 Beginning with KMDF version 1.9, a driver can call [**WdfPdoInitAllowForwardingRequestToParent**](https://msdn.microsoft.com/library/windows/hardware/ff548789) before it creates a child device and then call [**WdfRequestForwardToParentDeviceIoQueue**](https://msdn.microsoft.com/library/windows/hardware/ff549959) to requeue a request from the child's I/O queue to a parent queue. If a driver uses**WdfPdoInitAllowForwardingRequestToParent** and **WdfRequestForwardToParentDeviceIoQueue**, the framework increases the child's device stack size and assigns the correct WDM device object to the I/O request.
 
- 
+ 
 
- 
+ 
 
 
 

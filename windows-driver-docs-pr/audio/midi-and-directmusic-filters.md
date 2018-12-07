@@ -115,9 +115,9 @@ DMusUART is an example of a DMus miniport driver that exposes both MIDI and Dire
 
 Note that in Windows XP and later, the MIDI and DMus port drivers use the same internal software implementation. This means that the **CLSID\_PortMidi** and **CLSID\_PortDMus** GUIDs are equivalent when calling **PcNewPort**. Applications written for previous versions of Windows should see no change in behavior resulting from consolidation of the MIDI and DMus port drivers.
 
- 
+ 
 
- 
+ 
 
 
 

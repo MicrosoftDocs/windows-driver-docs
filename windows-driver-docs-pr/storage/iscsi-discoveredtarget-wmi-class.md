@@ -18,9 +18,9 @@ This class is unpublished and is defined in *Discover.mof*.
 
 When the WMI tool suite compiles this class definition, it produces the [**ISCSI\_DiscoveredTarget**](https://msdn.microsoft.com/library/windows/hardware/ff561501) data structure
 
- 
+ 
 
- 
+ 
 
 
 

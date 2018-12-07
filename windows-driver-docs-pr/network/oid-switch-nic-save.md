@@ -1,6 +1,5 @@
 ---
 title: OID_SWITCH_NIC_SAVE
-author: windows-driver-content
 description: The protocol edge of the Hyper-V extensible switch issues an object identifier (OID) method request of OID_SWITCH_NIC_SAVE during an operation to save run-time data for an extensible switch port and its network adapter connection.
 ms.assetid: FE2F9767-7186-42FF-85C1-2A8203FEF629
 ms.date: 08/08/2017
@@ -29,7 +28,7 @@ When it receives the OID method request of OID\_SWITCH\_NIC\_SAVE, the extensibl
 
 **Note**  If the extension does not have run-time data to save, it must call [**NdisFOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff561830) to forward this OID method request to underlying extensions in the extensible switch driver stack. For more information about this procedure, see [Filtering OID Requests in an NDIS Filter Driver](https://msdn.microsoft.com/library/windows/hardware/ff549950).
 
- 
+ 
 
 The Hyper-V extensible switch populates the *Header*, *PortId*, *NicIdex*, *SaveDataSize* and *SaveDataOffset* fields of the structure before issuing the OID. The extension cannot modify these fields.
 
@@ -55,7 +54,7 @@ The extensible switch extension returns one of the following status codes for th
 <tbody>
 <tr class="odd">
 <td><p>NDIS_STATUS_BUFFER_TOO_SHORT</p></td>
-<td><p>The length of the information buffer is too small for the [<strong>NDIS_SWITCH_NIC_SAVE_STATE</strong>](https://msdn.microsoft.com/library/windows/hardware/hh598216) and its associated run-time data The extensible switch extension must set the <strong>DATA.METHOD_INFORMATION.BytesNeeded</strong> member in the [<strong>NDIS_OID_REQUEST</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure to the minimum buffer size that is required.</p></td>
+<td><p>The length of the information buffer is too small for the <a href="https://msdn.microsoft.com/library/windows/hardware/hh598216" data-raw-source="[&lt;strong&gt;NDIS_SWITCH_NIC_SAVE_STATE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh598216)"><strong>NDIS_SWITCH_NIC_SAVE_STATE</strong></a> and its associated run-time data The extensible switch extension must set the <strong>DATA.METHOD_INFORMATION.BytesNeeded</strong> member in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710" data-raw-source="[&lt;strong&gt;NDIS_OID_REQUEST&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566710)"><strong>NDIS_OID_REQUEST</strong></a> structure to the minimum buffer size that is required.</p></td>
 </tr>
 <tr class="even">
 <td><p>NDIS_STATUS_SUCCESS</p></td>
@@ -68,7 +67,7 @@ The extensible switch extension returns one of the following status codes for th
 </tbody>
 </table>
 
- 
+ 
 
 The underlying miniport edge of the extensible switch returns the following status code for the OID method request of OID\_SWITCH\_NIC\_SAVE.
 
@@ -91,7 +90,7 @@ The underlying miniport edge of the extensible switch returns the following stat
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -127,9 +126,9 @@ Requirements
 
 [OID\_SWITCH\_NIC\_SAVE\_COMPLETE](oid-switch-nic-save-complete.md)
 
- 
+ 
 
- 
+ 
 
 
 

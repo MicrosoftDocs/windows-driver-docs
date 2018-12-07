@@ -3,7 +3,6 @@ title: .ofilter (Filter Target Output)
 description: The .ofilter command filters the output from the target application or target computer.
 ms.assetid: 0b94d177-0e41-4781-b0bc-ed58cee584f1
 keywords: ["Filter Target Output (.ofilter) command", ".ofilter (Filter Target Output) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -59,7 +58,7 @@ You can enclose *String* in quotation marks. However, if *String* includes a sem
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -74,9 +73,9 @@ To clear the existing filter, use **.ofilter ""**. This command filters any data
 
 The **DbgPrintEx** and **KdPrintEx** routines supply another method of filtering debugging messages that you do not want.
 
- 
+ 
 
- 
+ 
 
 
 

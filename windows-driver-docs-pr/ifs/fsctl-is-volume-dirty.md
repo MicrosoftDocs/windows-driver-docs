@@ -71,7 +71,7 @@ Pointer to a caller-allocated, 32-bit-aligned buffer that receives a ULONG bitma
 </tbody>
 </table>
 
- 
+ 
 
 <a href="" id="outputbufferlength"></a>*OutputBufferLength*  
 Size, in bytes, of the buffer that is pointed to by the *OutputBuffer* parameter. This size must be at least sizeof(ULONG).
@@ -112,7 +112,7 @@ Status block
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -143,9 +143,9 @@ Requirements
 
 [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462)
 
- 
+ 
 
- 
+ 
 
 
 

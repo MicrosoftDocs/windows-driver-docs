@@ -28,9 +28,9 @@ The iSCSI initiator service relies on the MSiSCSI\_TargetMappings class to commu
 
 Initiators must register the MSiSCSI\_TargetMappings class using the name of the PDO for the HBA.
 
- 
+ 
 
- 
+ 
 
 
 

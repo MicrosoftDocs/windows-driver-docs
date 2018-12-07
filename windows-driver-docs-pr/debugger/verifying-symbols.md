@@ -3,7 +3,6 @@ title: Verifying Symbols
 description: Verifying Symbols
 ms.assetid: 61b4fcce-960b-4091-b575-4dd53c39cff2
 keywords: ["symbols, verifying"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -242,7 +241,7 @@ This will list the modules which currently have symbols loaded. This is useful i
 <span id=".RELOAD__USER"></span>[**.reload /user**](-reload--reload-module-.md)  
 This will attempt to reload all user-mode symbols. This is needed while performing kernel debugging if symbols were loaded while one process was running, and a break later occurred in another process. In this case, the user-mode symbols from the new process will not be loaded unless this command is executed.
 
-<span id="X_wdmaud__start_"></span><span id="x_wdmaud__start_"></span><span id="X_WDMAUD__START_"></span>[**X wdmaud!\*start\***](x--examine-symbols-.md)  
+<span id="X_wdmaud__start_"></span><span id="x_wdmaud__start_"></span><span id="X_WDMAUD__START_"></span>[**X wdmaud!\*start\\***](x--examine-symbols-.md)  
 This will list only the symbols in the **wdmaud** module whose names contain the "start" string. This has the advantage that it forces the reloading of all the symbols in **wdmaud**, but only displays those with "start" in them. (This means a shorter listing, but since there are always some symbols with "start" in them, there will be some verification that the load has taken place.)
 
 One other useful technique for verifying symbols is unassembling code. Most functions begin with an add, sub, or push operation using either the base pointer (**ebp**) or the stack pointer (**esp** or **sp**). Try unassembling ([**U Function**](u--unassemble-.md)) some of the functions on the stack (from offset zero) to verify the symbols.
@@ -281,9 +280,9 @@ Problems will occur with the symbol files and while connecting to the debugger. 
 
 **A:** It means your symbols for ntkrnlmp.exe are wrong.
 
- 
+ 
 
- 
+ 
 
 
 

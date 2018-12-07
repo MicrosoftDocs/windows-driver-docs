@@ -18,7 +18,7 @@ This topic describes Container ID support for displays—visual representation o
 | Driver implementation—Full graphics and Display only                              | Mandatory                                |
 | [WHCK](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) requirements and tests |  [Functional test for monitor container ID](https://docs.microsoft.com/windows-hardware/test/hlk/testref/2f657caa-368c-4531-8cec-8faf475125f4) |
 
- 
+ 
 
 ## <span id="Container_ID_device_driver_interface__DDI_"></span><span id="container_id_device_driver_interface__ddi_"></span><span id="CONTAINER_ID_DEVICE_DRIVER_INTERFACE__DDI_"></span>Container ID device driver interface (DDI)
 
@@ -37,7 +37,7 @@ It's important to visually represent the connectivity and state of these devices
 
 ![visual representation of the devices and printers folder](images/visualdevicesprintersfolder.jpg)
 
-With Windows 7 Microsoft introduced the concept of a *container ID* for devices: "a system-supplied device identification string that uniquely groups the functional devices associated with a single-function or multifunction device installed in the computer." (See [Container IDs](http://go.microsoft.com/fwlink/p/?linkid=327784).) The devices are grouped if they contain the same container ID.
+With Windows 7 Microsoft introduced the concept of a *container ID* for devices: "a system-supplied device identification string that uniquely groups the functional devices associated with a single-function or multifunction device installed in the computer." (See [Container IDs](https://go.microsoft.com/fwlink/p/?linkid=327784).) The devices are grouped if they contain the same container ID.
 
 For the container ID concept to be successful, all the device classes in Windows must support it, and the entire ecosystem needs to implement it in hardware. In Windows 7, if multiple monitors that support audio are plugged in, it isn't easy for the user to determine which display maps to which audio end points. The same difficulty exists for touch digitizers. In Windows 8, the display device class adds support for container ID. This makes it possible for all the functions of a display device to report the same container ID and get visually paired in the Windows user interface and the APIs.
 
@@ -64,9 +64,9 @@ For info on requirements that hardware devices must meet when they implement thi
 
 See [WDDM 1.2 features](wddm-v1-2-features.md) for a review of features added with Windows 8.
 
- 
+ 
 
- 
+ 
 
 
 

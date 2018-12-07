@@ -1,6 +1,5 @@
 ---
 title: IRP_MJ_POWER
-author: windows-driver-content
 description: All drivers must be prepared to service IRP_MJ_POWER requests in a DispatchPower routine.
 ms.date: 08/12/2017
 ms.assetid: ca53ceef-2755-49d3-aab9-0d12a0e51e75
@@ -12,7 +11,7 @@ ms.localizationpriority: medium
 # IRP\_MJ\_POWER
 
 
-All drivers must be prepared to service **IRP\_MJ\_POWER** requests in a [*DispatchPower*](https://msdn.microsoft.com/library/windows/hardware/ff543354) routine.
+All drivers must be prepared to service **IRP\_MJ\_POWER** requests in a [*DispatchPower*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine.
 
 When Sent
 ---------
@@ -55,11 +54,11 @@ Requirements
 ## See also
 
 
-[*DispatchPower*](https://msdn.microsoft.com/library/windows/hardware/ff543354)
+[*DispatchPower*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch)
 
- 
+ 
 
- 
+ 
 
 
 

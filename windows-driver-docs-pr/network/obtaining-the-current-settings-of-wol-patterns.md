@@ -16,9 +16,9 @@ Overlying drivers can use the [OID\_PM\_WOL\_PATTERN\_LIST](https://msdn.microso
 
 NDIS handles OID\_PM\_WOL\_PATTERN\_LIST OID requests on behalf of the miniport driver. Therefore, NDIS miniport drivers are not required to support OID\_PM\_WOL\_PATTERN\_LIST OID request.
 
- 
+ 
 
- 
+ 
 
 
 

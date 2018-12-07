@@ -1,6 +1,5 @@
 ---
 title: PnP and Power Management Scenarios in UMDF
-author: windows-driver-content
 description: PnP and Power Management Scenarios in UMDF
 ms.assetid: ca36eee5-482c-4cfe-a515-be9d3743e241
 keywords:
@@ -28,9 +27,9 @@ The following PnP and power management scenarios show the sequences in which the
 
 For information about PnP and power management callback sequences for KMDF drivers, see [PnP and Power Management Callback Sequences](pnp-and-power-management-callback-sequences.md).
 
- 
+ 
 
- 
+ 
 
 
 

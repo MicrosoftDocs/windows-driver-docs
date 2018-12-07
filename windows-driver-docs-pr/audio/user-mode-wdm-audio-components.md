@@ -55,9 +55,9 @@ The DirectMusic system component (DMusic.dll) supports the DirectMusic API (see 
 
 In Windows XP and later, the Windows Audio Services component (Audiosrv.dll) manages audio devices for Windows-based programs. Stopping Windows Audio Services prevents audio devices and effects from functioning properly. If audio services are disabled, any other services (including WDM audio drivers) that explicitly depend on them will fail to start. In the Home Edition, Professional, and Server versions of Windows XP and later, audio services are by default configured to start automatically. However, in the Advanced Server, Data Center, and Web Server versions of Windows Server 2003 and later, audio services are disabled by default. When audio services are disabled, installing an audio device does not enable them -- audio services are enabled to run automatically only if an administrator explicitly configures them to do so. For information about starting and stopping Windows services, see the help file in the **Services** dialog box (look in the Windows Control Panel under **Administrative Tools**).
 
- 
+ 
 
- 
+ 
 
 
 

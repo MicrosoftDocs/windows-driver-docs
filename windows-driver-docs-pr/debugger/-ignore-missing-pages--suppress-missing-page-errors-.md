@@ -3,7 +3,6 @@ title: .ignore_missing_pages (Suppress Missing Page Errors)
 description: The .ignore_missing_pages command suppresses the error messages when a Kernel Memory Dump has missing pages.
 ms.assetid: 74f4944e-6f0b-4541-b32f-a2da58df7f03
 keywords: ["Suppress Missing Page Errors (.ignore_missing_pages) command", ".ignore_missing_pages (Suppress Missing Page Errors) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -57,7 +56,7 @@ Suppresses the display of missing page errors while debugging a Kernel Memory Du
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -68,9 +67,9 @@ Remarks
 
 Without parameters, **.ignore\_missing\_pages** displays the current status of this setting.
 
- 
+ 
 
- 
+ 
 
 
 

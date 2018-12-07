@@ -1,6 +1,5 @@
 ---
 title: DVD Copyright Protection
-author: windows-driver-content
 description: DVD Copyright Protection
 ms.assetid: ff9cf8c8-7c8f-485c-b2ab-7567a5eeb87b
 ms.date: 04/20/2017
@@ -21,9 +20,9 @@ The following topics address copyright protection:
 
 [Macrovision](macrovision.md)
 
- 
+ 
 
- 
+ 
 
 
 

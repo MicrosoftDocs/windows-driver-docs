@@ -1,6 +1,5 @@
 ---
 title: Managing Contexts in a Minifilter Driver
-author: windows-driver-content
 description: Managing Contexts in a Minifilter Driver
 ms.assetid: c7186886-f083-45c9-a39d-3f8ce7df35bb
 keywords:
@@ -58,9 +57,9 @@ This section includes:
 
 [Best Practices](best-practices.md)
 
- 
+ 
 
- 
+ 
 
 
 

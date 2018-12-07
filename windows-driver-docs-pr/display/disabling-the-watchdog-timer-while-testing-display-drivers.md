@@ -40,9 +40,9 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Watchdog\Display\DisableBugC
 
 The techniques described in this topic are only for debugging and testing. Do not release a driver that creates or alters **BreakPointDelay** or **DisableBugCheck**.
 
- 
+ 
 
- 
+ 
 
 
 

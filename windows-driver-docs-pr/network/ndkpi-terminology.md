@@ -102,33 +102,33 @@ The following antecedent/successor relationships are defined by NDKPI versions 1
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<strong>NDK_CQ</strong>](https://msdn.microsoft.com/library/windows/hardware/hh439854)</p></td>
-<td align="left"><p>[<strong>NDK_QP</strong>](https://msdn.microsoft.com/library/windows/hardware/hh439933)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/hh439854" data-raw-source="[&lt;strong&gt;NDK_CQ&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh439854)"><strong>NDK_CQ</strong></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/hh439933" data-raw-source="[&lt;strong&gt;NDK_QP&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh439933)"><strong>NDK_QP</strong></a></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>NDK_MR</strong>](https://msdn.microsoft.com/library/windows/hardware/hh439922)</p></td>
-<td align="left"><p>[<strong>NDK_MW</strong>](https://msdn.microsoft.com/library/windows/hardware/hh439926) (See <em>NdkBind</em> ([<em>NDK_FN_BIND</em>](https://msdn.microsoft.com/library/windows/hardware/hh439859)).)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/hh439922" data-raw-source="[&lt;strong&gt;NDK_MR&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh439922)"><strong>NDK_MR</strong></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/hh439926" data-raw-source="[&lt;strong&gt;NDK_MW&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh439926)"><strong>NDK_MW</strong></a> (See <em>NdkBind</em> (<a href="https://msdn.microsoft.com/library/windows/hardware/hh439859" data-raw-source="[&lt;em&gt;NDK_FN_BIND&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/hh439859)"><em>NDK_FN_BIND</em></a>).)</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>NDK_SRQ</strong>](https://msdn.microsoft.com/library/windows/hardware/hh439939)</p></td>
-<td align="left"><p>[<strong>NDK_QP</strong>](https://msdn.microsoft.com/library/windows/hardware/hh439933)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/hh439939" data-raw-source="[&lt;strong&gt;NDK_SRQ&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh439939)"><strong>NDK_SRQ</strong></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/hh439933" data-raw-source="[&lt;strong&gt;NDK_QP&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh439933)"><strong>NDK_QP</strong></a></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>NDK_QP</strong>](https://msdn.microsoft.com/library/windows/hardware/hh439933)</p></td>
-<td align="left"><p>[<strong>NDK_CONNECTOR</strong>](https://msdn.microsoft.com/library/windows/hardware/hh439852) (See <em>NdkConnect</em> ([<em>NDK_FN_CONNECT</em>](https://msdn.microsoft.com/library/windows/hardware/hh439865)), <em>NdkAccept</em> ([<em>NDK_FN_ACCEPT</em>](https://msdn.microsoft.com/library/windows/hardware/hh439857)), and <em>NdkConnectWithSharedEndpoint</em> ([<em>NDK_FN_CONNECT_WITH_SHARED_ENDPOINT</em>](https://msdn.microsoft.com/library/windows/hardware/hh439868)).)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/hh439933" data-raw-source="[&lt;strong&gt;NDK_QP&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh439933)"><strong>NDK_QP</strong></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/hh439852" data-raw-source="[&lt;strong&gt;NDK_CONNECTOR&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh439852)"><strong>NDK_CONNECTOR</strong></a> (See <em>NdkConnect</em> (<a href="https://msdn.microsoft.com/library/windows/hardware/hh439865" data-raw-source="[&lt;em&gt;NDK_FN_CONNECT&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/hh439865)"><em>NDK_FN_CONNECT</em></a>), <em>NdkAccept</em> (<a href="https://msdn.microsoft.com/library/windows/hardware/hh439857" data-raw-source="[&lt;em&gt;NDK_FN_ACCEPT&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/hh439857)"><em>NDK_FN_ACCEPT</em></a>), and <em>NdkConnectWithSharedEndpoint</em> (<a href="https://msdn.microsoft.com/library/windows/hardware/hh439868" data-raw-source="[&lt;em&gt;NDK_FN_CONNECT_WITH_SHARED_ENDPOINT&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/hh439868)"><em>NDK_FN_CONNECT_WITH_SHARED_ENDPOINT</em></a>).)</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>NDK_SHARED_ENDPOINT</strong>](https://msdn.microsoft.com/library/windows/hardware/hh439937)</p></td>
-<td align="left"><p>[<strong>NDK_CONNECTOR</strong>](https://msdn.microsoft.com/library/windows/hardware/hh439852) (See <em>NdkConnectWithSharedEndpoint</em> ([<em>NDK_FN_CONNECT_WITH_SHARED_ENDPOINT</em>](https://msdn.microsoft.com/library/windows/hardware/hh439868)).)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/hh439937" data-raw-source="[&lt;strong&gt;NDK_SHARED_ENDPOINT&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh439937)"><strong>NDK_SHARED_ENDPOINT</strong></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/hh439852" data-raw-source="[&lt;strong&gt;NDK_CONNECTOR&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh439852)"><strong>NDK_CONNECTOR</strong></a> (See <em>NdkConnectWithSharedEndpoint</em> (<a href="https://msdn.microsoft.com/library/windows/hardware/hh439868" data-raw-source="[&lt;em&gt;NDK_FN_CONNECT_WITH_SHARED_ENDPOINT&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/hh439868)"><em>NDK_FN_CONNECT_WITH_SHARED_ENDPOINT</em></a>).)</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>NDK_LISTENER</strong>](https://msdn.microsoft.com/library/windows/hardware/hh439918)</p></td>
-<td align="left"><p>[<strong>NDK_CONNECTOR</strong>](https://msdn.microsoft.com/library/windows/hardware/hh439852) (See <em>NdkConnectEventCallback</em> ([<em>NDK_FN_CONNECT_EVENT_CALLBACK</em>](https://msdn.microsoft.com/library/windows/hardware/hh439867)).)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/hh439918" data-raw-source="[&lt;strong&gt;NDK_LISTENER&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh439918)"><strong>NDK_LISTENER</strong></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/hh439852" data-raw-source="[&lt;strong&gt;NDK_CONNECTOR&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh439852)"><strong>NDK_CONNECTOR</strong></a> (See <em>NdkConnectEventCallback</em> (<a href="https://msdn.microsoft.com/library/windows/hardware/hh439867" data-raw-source="[&lt;em&gt;NDK_FN_CONNECT_EVENT_CALLBACK&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/hh439867)"><em>NDK_FN_CONNECT_EVENT_CALLBACK</em></a>).)</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## endpoint
 
@@ -141,16 +141,16 @@ An implicit or explicit representation of a local address and NetworkDirect port
 
 **Note**  An NDK endpoint is not the same as the NDSPI version 1 [**INDEndpoint**](https://msdn.microsoft.com/library/cc904370) interface or the NDSPI version 2 **INDQueuePair** interface.
 
- 
+ 
 
 ## Related topics
 
 
 [Network Direct Kernel Provider Interface (NDKPI)](network-direct-kernel-programming-interface--ndkpi-.md)
 
- 
+ 
 
- 
+ 
 
 
 

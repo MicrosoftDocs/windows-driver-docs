@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_PMKID
-author: windows-driver-content
 description: WDI_TLV_PMKID is a TLV that contains a PMKID value.
 ms.assetid: 6873928B-7843-434F-AB80-6A7895D751A4
 ms.date: 07/18/2017
@@ -31,7 +30,7 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 |-----------|------------------------|
 | UINT8\[\] | A 16-byte PMKID value. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

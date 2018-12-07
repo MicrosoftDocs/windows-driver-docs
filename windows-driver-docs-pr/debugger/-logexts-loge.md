@@ -3,7 +3,6 @@ title: logexts.loge
 description: The logexts.loge extension enables logging. If logging has not been initialized, it will be initialized and enabled.
 ms.assetid: d8b621f1-19e7-4c42-a428-8572d29b666f
 keywords: ["logexts.loge Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -48,7 +47,7 @@ Specifies the directory to use for output. If *OutputDirectory* is specified, it
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -61,9 +60,9 @@ If Logger has not yet been injected into the target application by the [**!logex
 
 If [**!logexts.logi**](-logexts-logi.md) has already been run, you cannot include *OutputDirectory*, because the output directory will have already been set.
 
- 
+ 
 
- 
+ 
 
 
 

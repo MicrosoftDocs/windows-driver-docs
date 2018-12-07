@@ -37,9 +37,9 @@ For the send complete case, advance operations can free memory that was allocate
 
 For the receive indication case, advance operations simply adjust the **DataOffset** and **DataLength** accordingly. After the advance operation, the headers of lower layers remain in the *unused data space*.
 
- 
+ 
 
- 
+ 
 
 
 

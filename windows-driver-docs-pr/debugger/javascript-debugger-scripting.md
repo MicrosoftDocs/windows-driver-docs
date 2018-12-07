@@ -2,8 +2,7 @@
 title: JavaScript Debugger Scripting
 description: This topic describes how to use JavaScript to create scripts that understand debugger objects and extend and customize the capabilities of the debugger.
 ms.assetid: 3442E2C4-4054-4698-B7FB-8FE19D26C171
-ms.author: domars
-ms.date: 10/26/2018
+ms.date: 11/27/2018
 ms.localizationpriority: medium
 ---
 
@@ -299,7 +298,7 @@ function RunCommands()
 {
 var ctl = host.namespace.Debugger.Utility.Control;   
 var output = ctl.ExecuteCommand("u");
-host.diagnostics.debugLog("***> Displaying command ouput \n");
+host.diagnostics.debugLog("***> Displaying command output \n");
 
 for (var line of output)
    {
@@ -345,7 +344,7 @@ Use the dx command to call the RunCommands function in the RunCommands script.
 
 ```dbgcmd
 0:000> dx Debugger.State.Scripts.RunCommands.Contents.RunCommands()
-  ***> Displaying command ouput
+  ***> Displaying command output
   ntdll!ExpInterlockedPopEntrySListEnd+0x17 [d:\rs1\minkernel\ntos\rtl\amd64\slist.asm @ 196]:
   00007ffd`87f06e67 cc              int     3
   00007ffd`87f06e68 cc              int     3
@@ -379,7 +378,7 @@ As mentioned, initializeScript will be called immediately after the root code of
 ```javascript
 function initializeScript()
 {
-    // Add code here that you want to run everytime the script is loaded. 
+    // Add code here that you want to run every time the script is loaded. 
     // We will just send a message to indicate that function was called.
     host.diagnostics.debugLog("***> initializeScript was called\n");
 }
@@ -392,7 +391,7 @@ The invokeScript method is the primary script method and is called when .scriptl
 ```javascript
 function invokeScript()
 {
-    // Add code here that you want to run everytime the script is executed. 
+    // Add code here that you want to run every time the script is executed. 
     // We will just send a message to indicate that function was called.
     host.diagnostics.debugLog("***> invokeScript was called\n");
 }
@@ -407,7 +406,7 @@ If a script neither makes imperative manipulations to the object model nor cache
 ```javascript
 function uninitializeScript()
 {
-    // Add code here that you want to run everytime the script is unloaded. 
+    // Add code here that you want to run every time the script is unloaded. 
     // We will just send a message to indicate that function was called.
     host.diagnostics.debugLog("***> uninitialize was called\n");
 }
@@ -418,48 +417,13 @@ function uninitializeScript()
 
 This table summarizes which functions are called by the script commands
 
-<table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"></td>
-<td align="left">.<strong>[.scriptload](-scriptload--load-script-.md)</strong></td>
-<td align="left"><strong>[.scriptrun (Run Script)](-scriptrun--run-script-.md)</strong></td>
-<td align="left"><strong>[.scriptunload (Unload Script)](-scriptunload--unload-script-.md)</strong></td>
-</tr>
-<tr class="even">
-<td align="left">root</td>
-<td align="left">yes</td>
-<td align="left">yes</td>
-<td align="left"></td>
-</tr>
-<tr class="odd">
-<td align="left">initializeScript</td>
-<td align="left">yes</td>
-<td align="left">yes</td>
-<td align="left"></td>
-</tr>
-<tr class="even">
-<td align="left">invokeScript</td>
-<td align="left"></td>
-<td align="left">yes</td>
-<td align="left"></td>
-</tr>
-<tr class="odd">
-<td align="left">uninitializeScript</td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left">yes</td>
-</tr>
-</tbody>
-</table>
+||[.scriptload](-scriptload--load-script-.md)|[.scriptrun (Run Script)](-scriptrun--run-script-.md)|[.scriptunload (Unload Script)](-scriptunload--unload-script-.md)|
+|--- |--- |--- |--- |
+|root|yes|yes| | |
+|initializeScript|yes|yes| | |
+|invokeScript		| |yes| |
+|uninitializeScript | ||yes|
 
- 
 
 Use this sample code to see when each function is called as the script is loaded, executed and unloaded.
 
@@ -470,14 +434,14 @@ host.diagnostics.debugLog("***>; Code at the very top (root) of the script is al
 
 function initializeScript()
 {
-    // Add code here that you want to run everytime the script is loaded. 
+    // Add code here that you want to run every time the script is loaded. 
     // We will just send a message to indicate that function was called.
     host.diagnostics.debugLog("***>; initializeScript was called \n");
 }
 
 function invokeScript()
 {
-    // Add code here that you want to run everytime the script is executed. 
+    // Add code here that you want to run every time the script is executed. 
     // We will just send a message to indicate that function was called.
     host.diagnostics.debugLog("***>; invokeScript was called \n");
 }
@@ -485,7 +449,7 @@ function invokeScript()
 
 function uninitializeScript()
 {
-    // Add code here that you want to run everytime the script is unloaded. 
+    // Add code here that you want to run every time the script is unloaded. 
     // We will just send a message to indicate that function was called.
     host.diagnostics.debugLog("***>; uninitialize was called\n");
 }
@@ -512,7 +476,7 @@ Consider an example of a C++ class which represents a single dimensional array. 
 class Simple1DArray
 {
 private:
- 
+
     ULONG64 m_size;
     int *m_pValues;
 };
@@ -549,7 +513,7 @@ function initializeScript()
             for (var i = 0; i < size; ++i)
             {
                 yield ptr.dereference();
- 
+
                 //
                 // Note that the .add(1) method here is effectively doing pointer arithmetic on
                 // the underlying pointer.  It is moving forward by the size of 1 object.
@@ -558,7 +522,7 @@ function initializeScript()
             }
         }
     }
- 
+
     return [new host.typeSignatureRegistration(myVisualizer, "Simple1DArray")];
 }
 ```
@@ -661,16 +625,16 @@ This example will evaluate notepad's open and save dialog: *notepad!ShowOpenSave
 ```javascript
  // Use JavaScript strict mode 
 "use strict";
- 
+
 // Define the invokeScript method to handle breakpoints
- 
+
  function invokeScript()
  {
     var ctl = host.namespace.Debugger.Utility.Control;
- 
+
     //Get the address of my string
     var address = host.evaluateExpression("pszCaption");
- 
+
     // The open and save dialogs use the same function
     // When we hit the open dialog, continue.
     // When we hit the save dialog, break.
@@ -735,7 +699,7 @@ function playWith64BitValues(a64, b64)
     //
     var sum = a64 + b64;
     host.diagnostics.debugLog("Sum   >> ", sum, "\n");
- 
+
 }
 
 function performOp64BitValues(a64, b64, op)
@@ -892,7 +856,7 @@ In order to allow a debugger extension to maintain precision, a set of math func
 | bitwiseShiftRight | .bitwiseShiftRight(value) | Shifts the 64-bit value right by the given amount and returns the result                                      |
 | toString          | .toString(\[radix\])      | Converts the 64-bit value to a display string in the default radix (or the optionally supplied radix)         |
 
- 
+
 
 ## <span id="Debugging"></span><span id="debugging"></span><span id="DEBUGGING"></span>JavaScript Debugging 
 
@@ -1025,9 +989,9 @@ Script Debugger Commands (*NOTE* IDs are **PER SCRIPT**):
     ?? <expr>  ......................... Evaluate expression <expr> and display result
     |  ................................. List available scripts
     |<scriptid>s  ...................... Switch context to the given script
-    bc <bpid>  ......................... Clear breakpoint by specifed <bpid>
-    bd <bpid>  ......................... Disable breakpoint by specifed <bpid>
-    be <bpid>  ......................... Enable breakpoint by specifed <bpid>
+    bc <bpid>  ......................... Clear breakpoint by specified <bpid>
+    bd <bpid>  ......................... Disable breakpoint by specified <bpid>
+    be <bpid>  ......................... Enable breakpoint by specified <bpid>
     bl  ................................ List breakpoints
     bp <line>:<column>  ................ Set breakpoint at the specified line and column
     bp <function-name>  ................ Set breakpoint at the (global) function specified by the given name
@@ -1051,7 +1015,7 @@ Script Debugger Commands (*NOTE* IDs are **PER SCRIPT**):
 ```
 
 Use the **sx** script debugger command to see the list of events we can trap.
-                                                        
+
 ```dbgcmd
 >>> Debug [DebuggableSample <No Position>] >sx              
 sx                                                          
@@ -1062,13 +1026,13 @@ sx
 ```
 
 Use the **sxe** script debugger command to turn on break on entry so that the script will trap into the script debugger as soon as any code within it executes.
-                                                            
+
 ```dbgcmd
 >>> Debug [DebuggableSample <No Position>] >sxe en          
 sxe en                                                      
 Event filter 'en' is now active                             
 ```
-                                                            
+
 
 Exit the script debugger and we'll make a function call into the script which will trap into the debugger.
 
@@ -1088,7 +1052,7 @@ Now, you are back in the script debugger and broken in on the first line of the 
 >>> ****** SCRIPT BREAK DebuggableSample [BreakIn] ******   
            Location: line = 73, column = 5                  
            Text: var x = 99                                 
-                                                            
+
 >>> Debug [DebuggableSample 73:5] >                         
 ```
 
@@ -1113,7 +1077,6 @@ At this point, you should be broken into the throwAndCatch method on line 34.
 >>> ****** SCRIPT BREAK DebuggableSample [Step Complete] ******                       
            Location: line = 34, column = 5                                            
            Text: var curProc = host.currentProcess                                    
-                                                                                      
 ```
 
 You can verify this by executing a stack trace.
@@ -1157,7 +1120,7 @@ bl
 ```
 
 From here, we'll disable the entry (en) event using the **sxd** script debugger command. 
- 
+
 ```dbgcmd                                                                                                                      
 >>> Debug [DebuggableSample 34:5] >sxd en                                                                              
 sxd en                                                                                                                 
@@ -1178,7 +1141,7 @@ Test
 ```
 
 Execute the script method again and watch our breakpoint be hit.
-                                                                                     
+
 ```dbgcmd
 0:000> dx @$scriptContents.outermost()                                                
 inside outer!                                                                         
@@ -1227,7 +1190,6 @@ Of the script debugger
 foo.a = 99
 Caught and returned!
 Test
-
 ```
 
 
@@ -1254,9 +1216,9 @@ The following are JavaScript resources that may be useful as you develop JavaScr
 
 [Native Objects in JavaScript Extensions](native-objects-in-javascript-extensions.md)
 
- 
 
- 
+
+
 
 
 

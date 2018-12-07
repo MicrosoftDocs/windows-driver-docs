@@ -3,7 +3,6 @@ title: Building WdbgExts Extensions
 description: Building WdbgExts Extensions
 ms.assetid: a3923de6-bed5-40e0-a9cb-99e0f4354448
 keywords: ["Build utility (build.exe), building WdbgExts extensions", "WdbgExts extensions, building", "WdbgExts extensions, compiling"]
-ms.author: domars
 ms.date: 10/22/2018
 ms.localizationpriority: medium
 ---
@@ -59,7 +58,7 @@ Note the following points:
     </tbody>
     </table>
 
-     
+     
 
  If \_NT\_TARGET\_VERSION is not set, the extension will only run on the version of Windows for which the build window was opened (and later versions). For example, putting the following line in your Sources file will build an extension that will run on Windows:
     ```console
@@ -85,9 +84,9 @@ Note the following points:
 
 For a full explanation of these steps, and for a description of how to create a Dirs file and a Sources file, see the Build utility documentation in the WDK.
 
- 
+ 
 
- 
+ 
 
 
 

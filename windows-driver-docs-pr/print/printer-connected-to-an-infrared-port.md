@@ -1,6 +1,5 @@
 ---
 title: Printer Connected to an Infrared Port
-author: windows-driver-content
 description: Printer Connected to an Infrared Port
 ms.assetid: 8545cf66-9b5c-41e8-82e0-e0edd75ad41b
 keywords:
@@ -26,9 +25,9 @@ The [**INF Manufacturer section**](https://msdn.microsoft.com/library/windows/ha
 "Model Name XYZ" = Install_Section_XYZ, HWP9876, Model_Name_XYZ
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: ks.pciks
 description: The ks.pciks extension lists functional devices for kernel streaming devices that are attached to the PCI bus. Optionally, it can display information about active streams on those functional devices.
 ms.assetid: 525eb1eb-4b96-46da-90ae-d3c5f8d7511a
 keywords: ["ks.pciks Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -69,7 +68,7 @@ Optional, and applicable only to flag combinations that cause data to be display
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -88,9 +87,9 @@ kd> !pciks
     Functional Device 82a17690 [\Driver\smwdm]
 ```
 
- 
+ 
 
- 
+ 
 
 
 

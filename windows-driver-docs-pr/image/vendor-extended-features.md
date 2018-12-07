@@ -1,6 +1,5 @@
 ---
 title: Vendor-Extended Features
-author: windows-driver-content
 description: Vendor-Extended Features
 ms.assetid: 8063622e-efc4-4940-893f-2916bf297d12
 ms.date: 04/20/2017
@@ -43,11 +42,11 @@ EventCodeC002="Vendorevent2",{8162F5ED-62B7-42c5-9C2B-B1625AC0DB93},*
 
 **Note**   In INF files for WIA devices, vendor property names must be a single word, with no spaces, and comprised of only alphanumeric values.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

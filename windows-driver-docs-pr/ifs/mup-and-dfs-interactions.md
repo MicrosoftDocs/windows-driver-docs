@@ -1,6 +1,5 @@
 ---
 title: MUP and DFS Interactions
-author: windows-driver-content
 description: MUP and DFS Interactions
 ms.assetid: 39c1f1e3-fb2d-46e7-b3dc-3d4bfab9608c
 keywords:
@@ -31,9 +30,9 @@ Assuming the prefix of a path specified in a name-based operation is not in the 
 
 When a request to access the IPC$ share is sent to a system where the LAN Manager Server (sometimes called SMB Server), srv.sys, is disabled or not installed (a UNIX system, for example), there may be a delay introduced because several attempts are made to connect to the IPC$ share. This delay is typically 5-7 seconds, but can be longer based on the speed and latency of the connecting network infrastructure and other conditions.
 
- 
+ 
 
- 
+ 
 
 
 

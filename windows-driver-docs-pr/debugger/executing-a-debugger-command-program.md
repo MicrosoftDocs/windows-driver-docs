@@ -3,7 +3,6 @@ title: Executing a Debugger Command Program
 description: Executing a Debugger Command Program
 ms.assetid: ad28a5d6-0d6a-42c0-82f3-6760a8c773ab
 keywords: ["debugger command program, execution"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -22,9 +21,9 @@ You can execute a debugger command program in one of the following ways:
 
 -   Add all of the statements in a script file, with each statement on a separate line. (Alternatively, separate statements by any combination of carriage returns and semicolons.) Then, run this script file by using the [**$&gt;&lt; (Run Script File)**](-----------------------a---run-script-file-.md) or **$$&gt;&lt; (Run Script File)** command. These commands open the specified script file, replace all carriage returns with semicolons, and execute the resulting text as a single command block.
 
- 
+ 
 
- 
+ 
 
 
 

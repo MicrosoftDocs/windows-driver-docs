@@ -3,7 +3,6 @@ title: .endpsrv (End Process Server)
 description: The .endpsrv command causes the current process server or KD connection server to close.
 ms.assetid: 3f8d0a85-f0f4-4c13-ab52-e4d99ba3599c
 keywords: [".endpsrv (End Process Server) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -51,7 +50,7 @@ You can use this command only when you are performing remote debugging through a
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -66,9 +65,9 @@ If you wish to terminate a process server or KD connection server from the compu
 
 The **.endpsrv** command can terminate a process server or KD connection server, but it cannot terminate a debugging server. For information on how to do that, see [Controlling a Remote Debugging Session](controlling-a-remote-debugging-session.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: Bug Check 0x18 REFERENCE_BY_POINTER
 description: The REFERENCE_BY_POINTER bug check has a value of 0x00000018. This indicates that the reference count of an object is illegal for the current state of the object.
 ms.assetid: 911fa821-5e59-4f20-a31b-148064e6c113
 keywords: ["Bug Check 0x18 REFERENCE_BY_POINTER", "REFERENCE_BY_POINTER"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -55,7 +54,7 @@ The REFERENCE\_BY\_POINTER bug check has a value of 0x00000018. This indicates t
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -89,9 +88,9 @@ If you are not equipped to use the Windows debugger to work on this problem, you
 
 -   For additional general troubleshooting information, see [**Blue Screen Data**](blue-screen-data.md).
 
- 
+ 
 
- 
+ 
 
 
 

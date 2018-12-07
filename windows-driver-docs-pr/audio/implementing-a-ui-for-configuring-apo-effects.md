@@ -2,7 +2,7 @@
 title: Implementing a UI for Configuring APO Effects
 description: This topic describes how to implement a user interface (UI) that allows a user to configure the effects. 
 ms.assetid: C8D1CB20-2E77-430A-9933-4BDFFB997158
-ms.date: 04/20/2017
+ms.date: 11/08/2017
 ms.localizationpriority: medium
 ---
 
@@ -18,7 +18,7 @@ An APO commonly provides a UI that allows a user to configure the effects. This 
 
 **Note**   Manufacturers can replace this property page with a custom property page that is designed to support their APOs. Manufacturers can also opt to not have any UI at all, if their custom APO does not have user-accessible settings.
 
- 
+ 
 
 The standard enhancements tab is shown below.
 
@@ -50,7 +50,7 @@ If you design the custom APO using the **CBaseAudioProcessingObject** base class
 
 Microsoft supplies an enhancements property page for the Sound applet on the Control Panel. This is the default property page that is associated with the system-supplied system effects APO. Vendors can replace this default property page with a custom page by implementing and registering a custom property page provider.
 
-See [About Property Sheets](https://go.microsoft.com/fwlink/p/?linkid=106006) and [Replacing the Default Property Page](replacing-the-default-property-page.md) for information about how to replace the enhancements property page.
+See [About Property Sheets](https://go.microsoft.com/fwlink/p/?linkid=106006) for information about how to replace the enhancements property page.
 
 To design and implement the custom property page provider, perform the following steps.
 
@@ -145,7 +145,7 @@ There are six projects in the SYSVAD sample The PropPageExtensions project conta
 | **Project**        | **Description**                                            |
 | PropPageExtensions | Sample code for example custom property page UI extensions |
 
- 
+ 
 
 The following code samples are useful to look at as you work on developing your custom UI.
 
@@ -159,7 +159,7 @@ The following code samples are useful to look at as you work on developing your 
 | Parts.cpp               | Implementation of CPart and derived classes.                                                         |
 | TopologyExaminers.cpp   | Implementation of methods to support examining the audio topology, such as connectors and endpoints. |
 
- 
+ 
 
 The following header files are used in the property page extensions sample.
 
@@ -172,7 +172,7 @@ The following header files are used in the property page extensions sample.
 | parts.h               |
 | topologyexaminers.h   |
 
- 
+ 
 
 To become familiar with the PropPageExtensions sample, you might want to review the headers and then examine the source code related to defining the text on the properties page. If your requirements are similar to what the sample code provides, you may be able to reuse much of the code that creates and updates the custom UI page.
 

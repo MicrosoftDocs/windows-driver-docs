@@ -1,6 +1,5 @@
 ---
 title: GDL Whitespace Characters
-author: windows-driver-content
 description: GDL Whitespace Characters
 ms.assetid: 703c41c0-3e12-465a-823f-c32990a52382
 keywords:
@@ -20,9 +19,9 @@ ms.localizationpriority: medium
 
 Whitespace is interpreted literally within a [quoted string](gdl-quoted-strings.md) and within an arbitrary value context. Whitespace that occurs elsewhere is considered non-literal. The GDL parser consolidates non-literal whitespace; that is, any number of consecutive non-literal whitespace characters is replaced by one whitespace character. Literal whitespace is not consolidated.
 
- 
+ 
 
- 
+ 
 
 
 

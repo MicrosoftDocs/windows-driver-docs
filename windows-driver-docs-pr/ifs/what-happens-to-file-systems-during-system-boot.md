@@ -1,6 +1,5 @@
 ---
 title: What Happens to File Systems During System Boot
-author: windows-driver-content
 description: What Happens to File Systems During System Boot
 ms.assetid: f6ed556a-2353-4a0d-8db1-1fb5eac3c1ef
 keywords:
@@ -77,9 +76,9 @@ After system boot, the storage device drivers for all volumes attached to the sy
 
 FsRec is loaded in the SERVICE\_SYSTEM\_START phase of system startup. Note that, although it is in the "Boot File System" load order group, FsRec is not the boot file system. The actual boot file system − that is, the file system that mounted the boot volume − is loaded at the start of the boot process.
 
- 
+ 
 
- 
+ 
 
 
 

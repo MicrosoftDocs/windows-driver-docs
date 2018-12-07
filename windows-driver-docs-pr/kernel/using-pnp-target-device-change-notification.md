@@ -1,6 +1,5 @@
 ---
 title: Using PnP Target Device Change Notification
-author: windows-driver-content
 description: Using PnP Target Device Change Notification
 ms.assetid: a56bda5c-e398-442d-bc90-2e63f8f7e6bf
 keywords: ["notifications WDK PnP , target device changes", "target device change notifications WDK PnP", "EventCategoryTargetDeviceChange notification"]
@@ -29,9 +28,9 @@ The following subsections discuss how to register for target device change notif
 
 [Handling a GUID\_TARGET\_DEVICE\_REMOVE\_CANCELLED Event](handling-a-guid-target-device-remove-cancelled-event.md)
 
- 
+ 
 
- 
+ 
 
 
 

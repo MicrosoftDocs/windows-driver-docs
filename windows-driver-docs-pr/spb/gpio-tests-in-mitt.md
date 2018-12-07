@@ -1,6 +1,5 @@
 ---
 title: GPIO tests in MITT
-author: windows-driver-content
 description: GPIO test modules that are included in the MITT software package can be used to test the following buttons volume up, volume down, power, and rotation lock.
 ms.assetid: D50C371B-4A03-4BDD-8EC2-6E7A4A4DF3C5
 ms.date: 04/20/2017
@@ -67,7 +66,7 @@ GPIO test modules that are included in the MITT software package can be used to 
 </tbody>
 </table>
 
- 
+ 
 
 1.  On the MITT board, identify the GPIO connector. It uses the left most 12-pin header, labeled **JA1**, as shown in this image.
 
@@ -167,7 +166,7 @@ To generate a sequence, you need these values:
     | 13                        | Slate/Laptop toggle value ("1" presses the switch)  |
     | 14-15                     | Not used                                            |
 
-     
+     
 
 -   Clock Multiplier
 

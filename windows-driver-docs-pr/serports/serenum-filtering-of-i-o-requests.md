@@ -1,6 +1,5 @@
 ---
 title: Serenum Filtering of I/O Requests
-author: windows-driver-content
 description: Serenum Filtering of I/O Requests
 ms.assetid: 773688b8-3d5a-48ed-8f20-368cf35fa6e2
 keywords:
@@ -38,9 +37,9 @@ For more information, see the following:
 
 -   Sample code in the \\src\\kernel\\serenum directory in the Windows Driver Kit (WDK)
 
- 
+ 
 
- 
+ 
 
 
 

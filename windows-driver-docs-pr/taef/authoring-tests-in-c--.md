@@ -68,7 +68,7 @@ If you wish to define the tests inline within the class declaration, you can do 
 
 **Note**  If you put your test class declaration in a header file, it is best to only include that header file into one cpp file. Including a test class declaration into multiple CPP files results in extratraneous data being compiled into the test DLL.
 
- 
+ 
 
 ## <span id="Advanced_Authoring_Tests_in_C__"></span><span id="advanced_authoring_tests_in_c__"></span><span id="ADVANCED_AUTHORING_TESTS_IN_C__"></span>Advanced Authoring Tests in C++
 
@@ -155,9 +155,9 @@ The following example uses setup and cleanup methods and declares metadata along
 
 TAEF setup and cleanup methods return bool and accept no parameters. The return value signals to the framework whether it can continue to run tests for a certain test unit. For example, if a class setup method fails and returns false, the framework will not run the class test methods.
 
- 
+ 
 
- 
+ 
 
 
 

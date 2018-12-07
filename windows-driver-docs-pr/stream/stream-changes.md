@@ -1,6 +1,5 @@
 ---
 title: Stream Changes
-author: windows-driver-content
 description: Stream Changes
 ms.assetid: 3bd6a511-c602-4159-87b4-7e1e55c03b2e
 keywords:
@@ -51,9 +50,9 @@ When some parameter of the video format changes, such as pixel aspect ratio, the
 
 The DVD decoder minidriver must indicate that support is provided for this event in the [**HW\_STREAM\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff559692) entry for the VideoPort stream. The event set ID for the video port event is [KSEVENTSETID\_VPNotify](https://msdn.microsoft.com/library/windows/hardware/ff561780) and the event ID is [**KSEVENT\_VPNOTIFY\_FORMATCHANGE**](https://msdn.microsoft.com/library/windows/hardware/ff561933).
 
- 
+ 
 
- 
+ 
 
 
 

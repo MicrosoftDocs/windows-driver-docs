@@ -79,9 +79,9 @@ You should be aware of the following requirements and considerations related to 
 
 -   After device encryption is enabled on a device, apps that run outside of the main OS (for example, customer care apps in UEFI) cannot write data to the encrypted partitions on the device. Only apps in the main OS or the update OS can write data to the encrypted partitions.
 
- 
+ 
 
- 
+ 
 
 
 

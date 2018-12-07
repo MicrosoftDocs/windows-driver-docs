@@ -3,7 +3,6 @@ title: Enable heap free checking
 description: Enable heap free checking
 ms.assetid: d97d6aac-608c-4c0a-8702-c078ed4820db
 keywords: ["Enable heap free checking (global flag)"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -41,15 +40,15 @@ The **Enable heap free checking** flag validates each heap allocation when it is
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="see_also"></span><span id="SEE_ALSO"></span>See Also
 
 [Enable heap tail checking](enable-heap-tail-checking.md), [Enable heap parameter checking](enable-heap-parameter-checking.md)
 
- 
+ 
 
- 
+ 
 
 
 

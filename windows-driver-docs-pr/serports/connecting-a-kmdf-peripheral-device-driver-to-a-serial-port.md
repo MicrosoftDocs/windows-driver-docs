@@ -1,6 +1,5 @@
 ---
 title: Connecting a KMDF Peripheral Driver to a Serial Port
-author: windows-driver-content
 description: The KMDF driver for a peripheral device on a SerCx2-managed serial port requires certain hardware resources to operate the device. Included in these resources is the information that the driver needs to open a logical connection to the serial port.
 ms.assetid: EDE62C5E-3563-42EE-884E-DF473CD724A5
 ms.date: 04/20/2017
@@ -176,9 +175,9 @@ The preceding code example does the following:
 
 In the **WdfIoTargetSendWriteSynchronously** call, the driver supplies a variable named `SerialRequest`, which is a handle to a framework request object that the driver previously created. After the **WdfIoTargetSendWriteSynchronously** call, the driver should typically call the [**WdfRequestReuse**](https://msdn.microsoft.com/library/windows/hardware/ff550026) method to prepare the framework request object to be used again.
 
- 
+ 
 
- 
+ 
 
 
 

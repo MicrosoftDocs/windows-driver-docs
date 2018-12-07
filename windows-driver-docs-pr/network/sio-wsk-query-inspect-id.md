@@ -1,6 +1,5 @@
 ---
 title: SIO_WSK_QUERY_INSPECT_ID
-author: windows-driver-content
 description: SIO_WSK_QUERY_INSPECT_ID
 ms.assetid: 6fc3e5ea-61df-47fc-8f79-f9ae272b3544
 ms.date: 07/18/2017
@@ -91,9 +90,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

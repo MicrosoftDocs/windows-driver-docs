@@ -1,6 +1,5 @@
 ---
 title: Asynchronous I/O for IEEE 1394 Devices
-author: windows-driver-content
 description: Asynchronous I/O for IEEE 1394 Devices
 ms.assetid: 36ca83d9-83ed-4366-81e7-63c5337f8643
 keywords:
@@ -30,9 +29,9 @@ A driver can communicate to its device by sending asynchronous I/O requests to t
 
 [Receiving Asynchronous I/O Request Packets on the IEEE 1394 Bus](https://msdn.microsoft.com/library/windows/hardware/ff537626)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Requirements for Vendor-Supplied Parallel Drivers
-author: windows-driver-content
 description: Requirements for Vendor-Supplied Parallel Drivers
 ms.assetid: 2194ad1a-3548-4b67-9268-4245389cf264
 keywords:
@@ -29,9 +28,9 @@ The following topics describe how a vendor-supplied function driver for a parall
 
 [Operating a Parallel Device Attached to a Parallel Port](operating-a-parallel-device-attached-to-a-parallel-port.md)
 
- 
+ 
 
- 
+ 
 
 
 

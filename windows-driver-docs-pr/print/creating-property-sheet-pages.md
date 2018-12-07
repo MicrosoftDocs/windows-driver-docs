@@ -1,6 +1,5 @@
 ---
 title: Creating Property Sheet Pages
-author: windows-driver-content
 description: Creating Property Sheet Pages
 ms.assetid: 90b1743c-b530-408a-aa30-9ab774166306
 keywords:
@@ -23,9 +22,9 @@ CPSUI-supplied window controls can be displayed within [CPSUI-supplied pages and
 
 Creating property sheet pages for printers and print documents involves [using CPSUI with printer drivers](using-cpsui-with-printer-drivers.md) and requires interaction between an application, the print spooler, a printer interface DLL, and CPSUI.
 
- 
+ 
 
- 
+ 
 
 
 

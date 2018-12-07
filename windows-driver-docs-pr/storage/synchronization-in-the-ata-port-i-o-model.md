@@ -1,6 +1,5 @@
 ---
 title: Synchronization in the ATA Port I/O Model
-author: windows-driver-content
 description: Synchronization in the ATA Port I/O Model
 ms.assetid: 91b95588-8cf7-4833-84c2-a991fd066fb2
 keywords:
@@ -111,14 +110,14 @@ DIRQL
 
 DIRQL
 
- 
+ 
 
 Even when **SyncWithIsr** is set to **FALSE**, the miniport driver can synchronize a callback routine with the interrupt handler by calling [**AtaPortRequestSynchronizedRoutine**](https://msdn.microsoft.com/library/windows/hardware/ff550223) and passing it a pointer to the callback routine.
 
 Synchronization is on a per channel basis. Therefore, on a synchronized channel, no two miniport driver routines will execute at the same time, but routines running on separate synchronized channels can execute concurrently.
 
- 
+ 
 
- 
+ 
 
 

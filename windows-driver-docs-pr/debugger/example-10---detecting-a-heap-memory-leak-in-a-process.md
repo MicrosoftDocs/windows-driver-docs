@@ -2,7 +2,6 @@
 title: Example 10 Detecting a Heap Memory Leak in a Process
 description: Example 10 Detecting a Heap Memory Leak in a Process
 ms.assetid: ec98dd96-b12b-4f83-85e8-2c5ee32fc17e
-ms.author: domars
 ms.date: 10/12/2018
 ms.localizationpriority: medium
 ---
@@ -51,9 +50,9 @@ This example uses GFlags and User Mode Dump Heap (UMDH, umdh.exe), a tool includ
 
     In response, UMDH writes a complete dump of all active heaps to the notepad.dmp file.
 
- 
+ 
 
- 
+ 
 
 
 

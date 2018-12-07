@@ -1,6 +1,5 @@
 ---
 title: Iasphelp get\_PortName method
-author: windows-driver-content
 description: The PortName property enables an ASP Web page to obtain a printer's port name.
 MS-HAID:
 - 'webfnc\_67f21c2f-9caf-4cd0-8a4b-df4ab9f63b43.xml'
@@ -62,7 +61,7 @@ Win32 error codes can also be returned.
 </tr>
 <tr class="even">
 <td><strong>E_HANDLE</strong></td>
-<td><p>The [<strong>Iasphelp::Open</strong>](iasphelp-open.md) method has not been called.</p></td>
+<td><p>The <a href="iasphelp-open.md" data-raw-source="[&lt;strong&gt;Iasphelp::Open&lt;/strong&gt;](iasphelp-open.md)"><strong>Iasphelp::Open</strong></a> method has not been called.</p></td>
 </tr>
 <tr class="odd">
 <td><strong>E_OUTOFMEMORY</strong></td>

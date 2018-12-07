@@ -1,6 +1,5 @@
 ---
 title: IPrinterBidiSchemaElement Value method
-author: windows-driver-content
 description: The Value method returns the Bidi Schema element value.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

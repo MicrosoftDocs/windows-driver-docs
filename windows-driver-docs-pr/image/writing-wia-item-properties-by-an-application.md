@@ -1,6 +1,5 @@
 ---
 title: Writing WIA Item Properties by an Application
-author: windows-driver-content
 description: Writing WIA Item Properties by an Application
 ms.assetid: 728f3f73-4815-4d79-ac02-227de7ae9bb7
 ms.date: 04/20/2017
@@ -29,9 +28,9 @@ The **IWiaMiniDrv::drvValidateItemProperties** method should perform the followi
 
 5.  Call the [**wiasValidateItemProperties**](https://msdn.microsoft.com/library/windows/hardware/ff549454) service function to let the WIA service validate all other property requests. This is a "catch-all" case; the WIA service has built-in property validation.
 
- 
+ 
 
- 
+ 
 
 
 

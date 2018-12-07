@@ -1,7 +1,6 @@
 ---
 title: WinDbg Preview - Breakpoints
 description: This section describes how to set and clear breakpoints using the WinDbg preview debugger.
-ms.author: domars
 ms.date: 08/15/2017
 ms.localizationpriority: medium
 ---
@@ -27,7 +26,7 @@ The breakpoint window keep a running total of each time the breakpoint is hit.
 
 The general process of working with breakpoints is similar to previous versions of WinDbg. For more information about setting breakpoints, see [Setting Breakpoints in WinDbg](setting-breakpoints-in-windbg.md).
 
- 
+ 
 
 
 

@@ -43,7 +43,7 @@ The GUID_DEVICE_APPLICATIONLAUNCH_BUTTON [device interface class](https://msdn.m
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -68,9 +68,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

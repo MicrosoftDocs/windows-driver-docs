@@ -1,6 +1,5 @@
 ---
 title: IPrintOemDriverPS COM Interface
-author: windows-driver-content
 description: IPrintOemDriverPS COM Interface
 ms.assetid: 32975728-501f-45ac-a53d-34cf286bc433
 keywords:
@@ -32,23 +31,23 @@ The following table lists and describes all of the methods defined by the `IPrin
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>IPrintOemDriverPS::DrvGetDriverSetting</strong>](https://msdn.microsoft.com/library/windows/hardware/ff553102)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff553102" data-raw-source="[&lt;strong&gt;IPrintOemDriverPS::DrvGetDriverSetting&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff553102)"><strong>IPrintOemDriverPS::DrvGetDriverSetting</strong></a></p></td>
 <td><p>Returns the current status of printer features and other internal information.</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>IPrintOemDriverPS::DrvWriteSpoolBuf</strong>](https://msdn.microsoft.com/library/windows/hardware/ff553103)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff553103" data-raw-source="[&lt;strong&gt;IPrintOemDriverPS::DrvWriteSpoolBuf&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff553103)"><strong>IPrintOemDriverPS::DrvWriteSpoolBuf</strong></a></p></td>
 <td><p>Sends printer data to the spooler.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 For more information, see [Implementing Printer Driver COM Interfaces](implementing-printer-driver-com-interfaces.md).
 
- 
+ 
 
- 
+ 
 
 
 

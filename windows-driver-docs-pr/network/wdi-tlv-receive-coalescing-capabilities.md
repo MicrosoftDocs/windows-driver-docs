@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_RECEIVE_COALESCING_CAPABILITIES
-author: windows-driver-content
 description: WDI_TLV_RECEIVE_COALESCING_CAPABILITIES is a TLV that contains hardware assisted receive filter capabilities.
 ms.assetid: 87BC1F55-90C6-4B22-9E8E-A54FF42515F3
 ms.date: 07/18/2017
@@ -76,8 +75,8 @@ The sum (in bytes) of the sizes of all contained elements.
 </dd>
 <dt>NDIS_RECEIVE_FILTER_VM_QUEUE_SUPPORTED</dt>
 <dd><p>The network adapter provides the minimum requirements to support VM queue packet filtering. The miniport driver must set this flag if it is enabled to use the VMQ or SR-IOV interface.</p>
-<p>For more information about VMQ requirements for VM queue packet filtering, see [Setting and Clearing VMQ Filters](https://msdn.microsoft.com/library/windows/hardware/ff570780).</p>
-<p>For more information about SR-IOV requirements for VM queue packet filtering, see [Setting a Receive Filter on a Virtual Port](https://msdn.microsoft.com/library/windows/hardware/hh440224).</p>
+<p>For more information about VMQ requirements for VM queue packet filtering, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff570780" data-raw-source="[Setting and Clearing VMQ Filters](https://msdn.microsoft.com/library/windows/hardware/ff570780)">Setting and Clearing VMQ Filters</a>.</p>
+<p>For more information about SR-IOV requirements for VM queue packet filtering, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh440224" data-raw-source="[Setting a Receive Filter on a Virtual Port](https://msdn.microsoft.com/library/windows/hardware/hh440224)">Setting a Receive Filter on a Virtual Port</a>.</p>
 </dd>
 <dt>NDIS_RECEIVE_FILTER_LOOKAHEAD_SPLIT_SUPPORTED</dt>
 <dd><p>The network adapter supports VM queues that split an incoming received packet at the lookahead offset. This offset is equal to or greater than the requested lookahead size. The network adapter uses DMA to transfer the lookahead and post-lookahead data to separate shared memory segments.</p>
@@ -85,14 +84,14 @@ The sum (in bytes) of the sizes of all contained elements.
 <strong>Note</strong>  Starting with NDIS 6.30, splitting packet data into separate lookahead buffers is no longer supported. Miniport drivers that support this version of NDIS must not set this flag.
 </div>
 <div>
- 
+ 
 </div>
 </dd>
 <dt>NDIS_RECEIVE_FILTER_DYNAMIC_PROCESSOR_AFFINITY_CHANGE_SUPPORTED</dt>
 <dd><p>The network adapter supports the ability to dynamically change one of the following processor affinity attributes:</p>
 <ul>
-<li><p>The processor affinity of a VM queue in the VMQ interface. The processor affinity is changed through an OID set request of [OID_RECEIVE_FILTER_QUEUE_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/ff569794).</p></li>
-<li><p>The processor affinity of a nondefault virtual port (VPort), which was created in the SR-IOV interface and is attached to the PCI Express (PCIe) physical function (PF) of the network adapter. The processor affinity is changed through an OID set request of [OID_NIC_SWITCH_VPORT_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/hh451825).</p></li>
+<li><p>The processor affinity of a VM queue in the VMQ interface. The processor affinity is changed through an OID set request of <a href="https://msdn.microsoft.com/library/windows/hardware/ff569794" data-raw-source="[OID_RECEIVE_FILTER_QUEUE_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/ff569794)">OID_RECEIVE_FILTER_QUEUE_PARAMETERS</a>.</p></li>
+<li><p>The processor affinity of a nondefault virtual port (VPort), which was created in the SR-IOV interface and is attached to the PCI Express (PCIe) physical function (PF) of the network adapter. The processor affinity is changed through an OID set request of <a href="https://msdn.microsoft.com/library/windows/hardware/hh451825" data-raw-source="[OID_NIC_SWITCH_VPORT_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/hh451825)">OID_NIC_SWITCH_VPORT_PARAMETERS</a>.</p></li>
 </ul>
 </dd>
 <dt>NDIS_RECEIVE_FILTER_INTERRUPT_VECTOR_COALESCING_SUPPORTED</dt>
@@ -125,7 +124,7 @@ The sum (in bytes) of the sizes of all contained elements.
 <strong>Note</strong>  If the miniport driver supports the VMQ or SR-IOV interfaces, it must set this flag.
 </div>
 <div>
- 
+ 
 </div>
 </dd>
 <dt>NDIS_RECEIVE_FILTER_TEST_HEADER_FIELD_MASK_EQUAL_SUPPORTED</dt>
@@ -169,7 +168,7 @@ The sum (in bytes) of the sizes of all contained elements.
 <strong>Note</strong>  Starting with NDIS 6.30, miniport drivers that support the VMQ or SR-IOV interface must set this flag.
 </div>
 <div>
- 
+ 
 </div>
 </dd>
 <dt>NDIS_RECEIVE_FILTER_MAC_HEADER_SOURCE_ADDR_SUPPORTED</dt>
@@ -208,7 +207,7 @@ The sum (in bytes) of the sizes of all contained elements.
 <strong>Note</strong>  Starting with NDIS 6.30, splitting packet data into separate lookahead buffers is no longer supported. Miniport drivers that support this version of NDIS must set this member to zero.
 </div>
 <div>
- 
+ 
 </div></td>
 </tr>
 <tr class="even">
@@ -218,7 +217,7 @@ The sum (in bytes) of the sizes of all contained elements.
 <strong>Note</strong>  Starting with NDIS 6.30, splitting packet data into separate lookahead buffers is no longer supported. Miniport drivers that support this version of NDIS must set this member to zero.
 </div>
 <div>
- 
+ 
 </div></td>
 </tr>
 <tr class="odd">
@@ -268,19 +267,19 @@ The sum (in bytes) of the sizes of all contained elements.
 <strong>Note</strong>  If the received UDP packet contains IPv4 options or IPv6 extension headers, the network adapter can automatically drop the received packet and treat it as if it failed the UDP filter test.
 </div>
 <div>
- 
+ 
 </div>
 </dd>
 </dl></td>
 </tr>
 <tr class="odd">
 <td>UINT32</td>
-<td>The maximum number of tests on packet header fields that can be specified for a single packet coalescing filter. For more information about packet coalescing, see [NDIS Packet Coalescing](https://msdn.microsoft.com/library/windows/hardware/hh451601).
+<td>The maximum number of tests on packet header fields that can be specified for a single packet coalescing filter. For more information about packet coalescing, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh451601" data-raw-source="[NDIS Packet Coalescing](https://msdn.microsoft.com/library/windows/hardware/hh451601)">NDIS Packet Coalescing</a>.
 <div class="alert">
 <strong>Note</strong>  Network adapters that support packet coalescing must support five or more packet header fields that can be specified for a single packet coalescing filter. If the adapter does not support packet coalescing, the miniport driver must set this value to zero.
 </div>
 <div>
- 
+ 
 </div></td>
 </tr>
 <tr class="even">
@@ -290,13 +289,13 @@ The sum (in bytes) of the sizes of all contained elements.
 <strong>Note</strong>  Network adapters that support packet coalescing must support ten or more packet coalescing filters. If the adapter does not support packet coalescing, the miniport driver must set this value to zero.
 </div>
 <div>
- 
+ 
 </div></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -327,9 +326,9 @@ Requirements
 
 [**NDIS\_RECEIVE\_FILTER\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff566864)
 
- 
+ 
 
- 
+ 
 
 
 

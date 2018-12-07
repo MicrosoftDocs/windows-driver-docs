@@ -42,13 +42,13 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Package](package.md)</p></td>
+<td><p><a href="package.md" data-raw-source="[Package](package.md)">Package</a></p></td>
 <td><p>Specifies the package that will be used for the Microsoft Store device app.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Parent_elements"></span><span id="parent_elements"></span><span id="PARENT_ELEMENTS"></span>Parent elements
 
@@ -66,13 +66,13 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[SoftwareInfo](softwareinfo.md)</p></td>
-<td><p>The parent element of the [SoftwareInfo XML schema](softwareinfo-xml-schema.md).</p></td>
+<td><p><a href="softwareinfo.md" data-raw-source="[SoftwareInfo](softwareinfo.md)">SoftwareInfo</a></p></td>
+<td><p>The parent element of the <a href="softwareinfo-xml-schema.md" data-raw-source="[SoftwareInfo XML schema](softwareinfo-xml-schema.md)">SoftwareInfo XML schema</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="XSD"></span><span id="xsd"></span>XSD
 
@@ -99,9 +99,9 @@ There are no attributes.
 
 The DeviceCompanionApplications element is optional.
 
- 
+ 
 
- 
+ 
 
 
 

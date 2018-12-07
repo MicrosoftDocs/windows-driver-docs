@@ -37,9 +37,9 @@ After you retrieve a handle to the class registry key, supply the handle in a ca
 
 Call the [RegCloseKey](http://go.microsoft.com/fwlink/p/?linkid=194543) function to close the class registry key after access to the key is no longer required.
 
- 
+ 
 
- 
+ 
 
 
 

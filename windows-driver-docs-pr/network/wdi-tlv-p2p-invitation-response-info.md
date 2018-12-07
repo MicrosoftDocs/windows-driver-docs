@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_P2P_INVITATION_RESPONSE_INFO
-author: windows-driver-content
 description: WDI_TLV_P2P_INVITATION_RESPONSE_INFO is a TLV that contains Wi-Fi Direct Invitation Response information.
 ms.assetid: DFF1649A-1CBE-4E0B-8EB2-6E10F539C72F
 ms.date: 07/18/2017
@@ -33,7 +32,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 | [**WDI\_TLV\_P2P\_GROUP\_BSSID**](wdi-tlv-p2p-group-bssid.md)                                        |                                | X        | The Group BSSID for local Wi-Fi Direct GO.       |
 | [**WDI\_TLV\_P2P\_CHANNEL\_NUMBER**](wdi-tlv-p2p-channel-number.md)                                  |                                | X        | The operating channel for Wi-Fi Direct GO.       |
 
- 
+ 
 
 Requirements
 ------------
@@ -59,9 +58,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

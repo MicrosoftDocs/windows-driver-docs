@@ -1,6 +1,5 @@
 ---
 title: INF PS2_Inst.NoInterruptInit Section
-author: windows-driver-content
 description: INF PS2_Inst.NoInterruptInit Section
 ms.assetid: e84cc7fc-8b17-4119-84f9-12ac888c68aa
 keywords:
@@ -17,7 +16,7 @@ ms.localizationpriority: medium
 
 
 **\[PS2\_Inst.NoInterruptInit\]**
-**AddReg** = *add-reg-section***.AddReg**
+**AddReg** = <em>add-reg-section</em>**.AddReg**
 The mouse class installer executes the directives in this section if the *Disable* entry in an [INF **PS2\_Inst.NoInterruptInit.Bios** section](inf-ps2-inst-nointerruptinit-bioses-section.md) matches the system BIOS version.
 
 ### Entries and Values
@@ -40,9 +39,9 @@ Specifies a REG\_DWORD flag that indicates whether the **Fast Initialization** c
 <a href="" id="mouseinitializedpolled"></a>**MouseInitializedPolled**  
 Specifies a REG\_DWORD flag that indicates whether the system must poll the device to initialize it. If **MouseInitializedPolled** is set to one, the system polls the mouse device; otherwise the system uses interrupts.
 
- 
+ 
 
- 
+ 
 
 
 

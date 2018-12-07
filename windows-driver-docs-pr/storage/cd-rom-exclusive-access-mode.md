@@ -1,6 +1,5 @@
 ---
 title: CD-ROM Exclusive Access Mode
-author: windows-driver-content
 description: CD-ROM Exclusive Access Mode
 ms.assetid: 4432f6d6-e98c-4354-a7ba-b043a624f064
 keywords:
@@ -66,9 +65,9 @@ After removing the exclusive access lock on a device, the CD-ROM class driver ta
 
 -   Forces an update of the device's multimedia capabilities.
 
- 
+ 
 
- 
+ 
 
 
 

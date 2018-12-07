@@ -1,6 +1,5 @@
 ---
 title: asyncPrintUIRequest element
-author: windows-driver-content
 description: The required asyncPrintUIRequest element describes a request issued by the printer driver to create a message on a client computer.
 ms.assetid: 992e3c97-b148-4802-be48-3067adb6dd0d
 keywords: ["asyncPrintUIRequest element Print Devices"]
@@ -51,12 +50,12 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>requestClose</strong>](requestclose.md)</p></td>
+<td><p><a href="requestclose.md" data-raw-source="[&lt;strong&gt;requestClose&lt;/strong&gt;](requestclose.md)"><strong>requestClose</strong></a></p></td>
 <td><p></p>
 <p>An optional element that is used to close an event notification message on the client computer.</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>requestOpen</strong>](requestopen.md)</p></td>
+<td><p><a href="requestopen.md" data-raw-source="[&lt;strong&gt;requestOpen&lt;/strong&gt;](requestopen.md)"><strong>requestOpen</strong></a></p></td>
 <td><p></p>
 <p>An element that is used to open an event notification message on the client computer.</p></td>
 </tr>
@@ -98,9 +97,9 @@ The following code example shows how to use the **asyncPrintUIRequest** element.
 
 [**requestOpen**](requestopen.md)
 
- 
+ 
 
- 
+ 
 
 
 

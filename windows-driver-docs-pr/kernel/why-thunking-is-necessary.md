@@ -1,6 +1,5 @@
 ---
 title: Why Thunking Is Necessary
-author: windows-driver-content
 description: Why Thunking Is Necessary
 ms.assetid: ea73d355-56e8-4f56-b7e8-4dbddcd19124
 keywords: ["thunking WDK", "WOW64 thunking layer WDK", "32-bit I/O support WDK 64-bit , thunking", "buffer size WDK kernel", "DRIVER_DATA structure", "pointer precision WDK 64-bit", "fixed-precision data types WDK 64-bit"]
@@ -39,7 +38,7 @@ PWSTR Buffer
 (2 bytes)
 32 bits
 (4 bytes)
- 
+ 
 
 On 64-bit Windows, the size of the DRIVER\_DATA structure is 24 bytes. (The 4 bytes of structure padding are required so that the **Buffer** member can be aligned on an 8-byte boundary.)
 
@@ -59,7 +58,7 @@ PWSTR Buffer
 (4 bytes)
 64 bits
 (8 bytes)
- 
+ 
 
 If a 64-bit driver receives 12 bytes of DRIVER\_DATA when it expected 24 bytes, the size validation will fail. To prevent this, the driver must detect whether a DRIVER\_DATA structure was sent by a 32-bit application, and if so, thunk it appropriately before performing the validation.
 
@@ -88,11 +87,11 @@ ULONG Buffer
 (2 bytes)
 32 bits
 (4 bytes)
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

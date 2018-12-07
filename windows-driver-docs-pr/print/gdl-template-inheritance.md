@@ -1,6 +1,5 @@
 ---
 title: GDL Template Inheritance
-author: windows-driver-content
 description: GDL Template Inheritance
 ms.assetid: 0e3271ee-6b58-4f57-a0be-18715705604f
 keywords:
@@ -24,9 +23,9 @@ Because the content of the data depends on the context in which the construct oc
 
 Inheritance of templates also requires you to understand the structure of the data. For example, all \*Feature constructs share some properties in common. These properties are most appropriately defined by a base feature template. You can then derive specific feature definitions from the base template by adding feature-specific properties or restrictions. Deriving each template from the base feature template assures that all derived templates inherit all of the essential properties that are common to all feature definitions. If you always consider what properties a particular template should define and which properties should be left to the derived templates, you can focus on the organization, structure of, and relationships between the data.
 
- 
+ 
 
- 
+ 
 
 
 

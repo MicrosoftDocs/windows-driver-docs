@@ -57,7 +57,7 @@ The following table describes the constants that are valid with WIA\_DPS\_SHOW\_
 </tbody>
 </table>
 
- 
+ 
 
 The WIA\_DPS\_SHOW\_PREVIEW\_CONTROL property helps control devices that cannot preview. For example, some feeder-driven devices cannot reload the paper for a preview scan.
 
@@ -86,9 +86,9 @@ Requirements
 
 [**WIA\_IPS\_SHOW\_PREVIEW\_CONTROL**](wia-ips-show-preview-control.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: OID_WWAN_DEVICE_SERVICE_SESSION_WRITE
-author: windows-driver-content
 description: OID_WWAN_DEVICE_SERVICE_SESSION_WRITE directs the miniport driver to write data to the MB device for a device service session.NDIS_STATUS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE status notification containing a NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE structure that describes the completion status of the operation.
 ms.assetid: C1389D7D-3C8E-41B5-8E00-617D699699A2
 ms.date: 08/08/2017
@@ -47,9 +46,9 @@ Requirements
 
 [**NDIS\_WWAN\_DEVICE\_SERVICE\_SESSION\_WRITE**](https://msdn.microsoft.com/library/windows/hardware/hh831860)
 
- 
+ 
 
- 
+ 
 
 
 

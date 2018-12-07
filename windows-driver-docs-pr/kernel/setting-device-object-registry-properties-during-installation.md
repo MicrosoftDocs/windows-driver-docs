@@ -1,6 +1,5 @@
 ---
 title: Setting Device Object Registry Properties During Installation
-author: windows-driver-content
 description: Setting Device Object Registry Properties During Installation
 ms.assetid: 29d40398-09b9-4e64-aa47-da229066bffd
 keywords: ["device objects WDK kernel , registry", "registry WDK device objects"]
@@ -55,15 +54,15 @@ Within an *add-registry-section*, the following keywords can be used to specify 
 </tbody>
 </table>
 
- 
+ 
 
 For more information about using these keywords, see [**INF AddReg Directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320).
 
 The settings can be set by a user-mode component by using the device installation functions. For more information, see [Setting Device Object Registry Properties After Installation](setting-device-object-registry-properties-after-installation.md).
 
- 
+ 
 
- 
+ 
 
 
 

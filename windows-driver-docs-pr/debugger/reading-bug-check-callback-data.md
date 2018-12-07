@@ -3,7 +3,6 @@ title: Reading Bug Check Callback Data
 description: Reading Bug Check Callback Data
 ms.assetid: 638074bb-5133-4edc-86c5-33aafa837a0c
 keywords: ["callback data for bug checks", "callback data for bug checks, displaying callback data", "callback data for bug checks, displaying secondary data", "secondary bug check callback data", "bug check, callback routines", "dbgeng.h header file, IDebugDataSpaces3", "dbgeng.h header file, ReadTagged", "dbgeng.h header file, StartEnumTagged", "dbgeng.h header file, GetNextTagged"]
-ms.author: domars
 ms.date: 10/25/2018
 ms.localizationpriority: medium
 ---
@@ -108,9 +107,9 @@ It is also possible to debug the callback routine itself. Breakpoints within cal
 
 If the callback routine causes a second bug check, this new bug check will be processed first. However, Windows will not repeat certain parts of the Stop process—for example, it will not write a second crash dump file. The Stop code displayed on the blue screen will be the second bug check code. If a kernel debugger is attached, messages about both bug checks will usually appear.
 
- 
+ 
 
- 
+ 
 
 
 

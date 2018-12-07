@@ -1,6 +1,5 @@
 ---
 title: KS Minidriver Architecture
-author: windows-driver-content
 description: KS Minidriver Architecture
 ms.assetid: a9c17040-72a8-4290-831b-7fb46b00f532
 keywords:
@@ -43,9 +42,9 @@ This section contains additional information about the following topics:
 
 [Quality Management](quality-management.md)
 
- 
+ 
 
- 
+ 
 
 
 

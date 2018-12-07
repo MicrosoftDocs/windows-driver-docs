@@ -1,6 +1,5 @@
 ---
 title: A Device Returns to Its Working State
-author: windows-driver-content
 description: A Device Returns to Its Working State
 ms.assetid: 0a5bdaf5-ed9e-44d0-bc8a-876ceb342520
 keywords:
@@ -44,9 +43,9 @@ For each function and filter driver that supports the device, the framework does
 
 7.  If the driver is using self-managed I/O, the framework calls the driver's [*EvtDeviceSelfManagedIoRestart*](https://msdn.microsoft.com/library/windows/hardware/ff540905) callback function.
 
- 
+ 
 
- 
+ 
 
 
 

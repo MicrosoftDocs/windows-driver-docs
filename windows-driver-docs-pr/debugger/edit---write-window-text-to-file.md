@@ -3,7 +3,6 @@ title: Edit Write Window Text to File
 description: Edit Write Window Text to File
 ms.assetid: 7a86a8e4-7ab8-46ba-9bd5-4aef81cd1f29
 keywords: ["Edit Write Window Text to File"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -28,9 +27,9 @@ Click **Save** to save the file or click **Cancel** to exit.
 
 For more information about how to select, copy, cut, and paste text and about how these operations vary from window to window, see [Cutting and Pasting Text](cutting-and-pasting-text.md).
 
- 
+ 
 
- 
+ 
 
 
 

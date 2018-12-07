@@ -1,6 +1,5 @@
 ---
 title: EFI_USBFN_IO_PROTOCOL.StopController
-author: windows-driver-content
 description: EFI_USBFN_IO_PROTOCOL.StopController
 ms.assetid: 531fd280-bcb1-4b6f-a2fa-9052318171b3
 ms.date: 04/20/2017
@@ -59,7 +58,7 @@ A pointer to the EFI\_USBFN\_IO\_PROTOCOL instance.
 </tbody>
 </table>
 
- 
+ 
 
 ## Remarks
 
@@ -71,9 +70,9 @@ This function is available starting in revision 0x00010001 of the **EFI\_USBFN\_
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
 

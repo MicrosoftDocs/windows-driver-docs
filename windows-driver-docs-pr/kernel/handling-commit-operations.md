@@ -1,6 +1,5 @@
 ---
 title: Handling Commit Operations
-author: windows-driver-content
 description: Handling Commit Operations
 ms.assetid: 4885476e-ce68-4674-b8a5-8a317f33cd5b
 keywords: ["transactions WDK KTM , committing transactions", "committing transactions WDK KTM", "resource managers WDK KTM , committing transactions", "single-phase commit WDK KTM , multi-phase commit WDK KTM", "pre-prepare phase WDK KTM", "prepare phase WDK KTM", "commit phase WDK KTM"]
@@ -105,9 +104,9 @@ After the resource manager calls **ZwCommitComplete**, it should call [**ZwClose
 
 If a resource manager encounters an error while it is processing a TRANSACTION\_NOTIFY\_COMMIT notification, it should shut itself down. The next time that the operating system reloads the resource manager, the resource manager's [recovery process](handling-recovery-operations.md) should restore the transaction to a state that was known to be good before the error occurred.
 
- 
+ 
 
- 
+ 
 
 
 

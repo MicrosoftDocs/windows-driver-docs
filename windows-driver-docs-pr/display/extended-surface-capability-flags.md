@@ -25,7 +25,7 @@ The DDSCAPS2\_HINTDYNAMIC, DDSCAPS2\_HINTSTATIC, and DDSCAPS2\_OPAQUE flags are 
 
 **Note**   The driver does not need to set these flags to enable them. DirectDraw merely passes these bits to the driver when [*DdCreateSurface*](https://msdn.microsoft.com/library/windows/hardware/ff549263) is called.
 
- 
+ 
 
 Driver writers might want to use the extended heap restriction features (described in [Extended Heap Restrictions](extended-heap-restrictions.md)) of DirectDraw to automatically place DDSCAPS2\_OPAQUE textures in optimized heaps. This is entirely up to the driver developer.
 
@@ -33,9 +33,9 @@ The DDSCAPS2\_HINTDYNAMIC, DDSCAPS2\_HINTSTATIC, and DDSCAPS2\_OPAQUE flags are 
 
 The DDSCAPS2\_TEXTUREMANAGE flag is not relevant to drivers. This flag informs the DirectX runtime that it is responsible for moving the surface from a backing surface to display memory, as appropriate, to enable accelerated 3D texturing.
 
- 
+ 
 
- 
+ 
 
 
 

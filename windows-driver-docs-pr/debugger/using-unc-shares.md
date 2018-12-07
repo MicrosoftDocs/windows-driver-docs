@@ -2,7 +2,6 @@
 title: Using UNC Shares
 description: Using UNC Shares
 ms.assetid: 7baf157d-e8c3-4ad5-a56e-58f8983da4d9
-ms.author: domars
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -28,9 +27,9 @@ The preceding command calls Cv2http.cmd on every .pdb file in a tree, using Sour
 
 After this command is executed on a tree of .pdb files, they are ready for installation into the Web site or whatever location in which you want to put them. Remember that you can use SrcTool and PDBStr to examine the changes to the .pdb files.
 
- 
+ 
 
- 
+ 
 
 
 

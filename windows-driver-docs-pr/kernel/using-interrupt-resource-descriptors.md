@@ -1,6 +1,5 @@
 ---
 title: Using Interrupt Resource Descriptors
-author: windows-driver-content
 description: Using Interrupt Resource Descriptors
 ms.assetid: 0e9aa9a1-c1aa-42e1-9c0b-a91a2424ad1a
 ms.localizationpriority: medium
@@ -26,9 +25,9 @@ In Windows 8, the operating system does not support resource requests for more 
 
 During system rebalancing of interrupt resources, the PnP manager might ask a driver to select a preferred set of alternate interrupt resources from a resource requirements list. However, the PnP manager cannot always assign to a driver the resources that the driver prefers. The driver must therefore tolerate, without failures, the assignment of any set of alternate interrupt resources from the resource requirements list. For example, the device might be assigned a smaller number of message interrupts than the driver requested. In the worst case, the driver must be prepared to operate the device with just one line-based interrupt.
 
- 
+ 
 
- 
+ 
 
 
 

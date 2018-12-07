@@ -63,9 +63,9 @@ if ((CurrentCullMode == D3DCULL_CW && (ccw == 0)) ||
 
 The preceding code sample tests to determine which way the triangle is facing. The triangle is defined 0,1,2 and tested for being counterclockwise in screen space. If it is not, and there is clockwise culling, then that triangle is not drawn because the vertices go in clockwise order.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -17,7 +17,7 @@ A VF is exposed as a virtual network adapter (*VF network adapter*) in the guest
 
 **Note**  A Hyper-V child partition is also known as a *virtual machine (VM)*.
 
- 
+ 
 
 The VF miniport driver is an NDIS miniport driver that is installed in the VM to manage the VF. Any operation that is performed by the VF miniport driver must not affect any other VF or the PF on the same network adapter.
 
@@ -35,11 +35,11 @@ The VF miniport driver may also communicate with the PF miniport driver. This co
 
 **Note**  The VF miniport driver must be aware that it is running in a virtualized environment so that it can communicate with the PF miniport driver for certain operations. For more information on how the driver does this, see [Initializing a VF Miniport Driver](initializing-a-vf-miniport-driver.md).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

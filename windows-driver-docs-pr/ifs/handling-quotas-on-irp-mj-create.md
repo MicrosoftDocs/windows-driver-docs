@@ -1,6 +1,5 @@
 ---
 title: Handling Quotas on IRP_MJ_CREATE
-author: windows-driver-content
 description: Handling Quotas on IRP_MJ_CREATE
 ms.assetid: 71cf5e78-c87a-48fe-ba0b-f5efe8166525
 keywords:
@@ -19,9 +18,9 @@ ms.localizationpriority: medium
 
 Some logic could also be included to acquire quota information if the file system supports quotas. One strategy a file system could adopt would be to acquire a block of quota information about [**IRP\_MJ\_CREATE**](https://msdn.microsoft.com/library/windows/hardware/ff548630) that is later checked and updated by dispatch routines for other IRP requests that can change the size of a file (delete and write operations, for example).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: finddata
 description: The finddata extension displays the cached data at a given offset within a specified file object.
 ms.assetid: 1d6f920b-5716-4ccc-8c2d-08b422f57124
 keywords: ["cache manager", "finddata Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -51,7 +50,7 @@ Specifies the offset.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -59,9 +58,9 @@ For information about cache management, see the Microsoft Windows SDK documentat
 
 For information about other cache management extensions, see the [**!cchelp**](-cchelp.md) extension.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Extended Example Defining a "64Bit" Field
-author: windows-driver-content
 description: Shows how to modify a 32-bit driver for 64-bit by adding a "64Bit" field to the IOCTL control code.
 ms.assetid: 642b67eb-880c-4057-b5de-c89ef8e8601e
 keywords: ["32-bit I/O support WDK 64-bit , 64Bit field defined", "64Bit field defined WDK kernel", "bitfields WDK 64-bit", "separate control codes WDK 64-bit", "control codes WDK 64-bit", "file system control codes WDK 64-bit", "FSCTL WDK 64-bit", "I/O control codes WDK kernel , 32-bit I/O in 64-bit drivers", "IOCTLs WDK kernel , 32-bit I/O in 64-bit drivers"]
@@ -207,9 +206,9 @@ TestdrvDeviceControl(
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

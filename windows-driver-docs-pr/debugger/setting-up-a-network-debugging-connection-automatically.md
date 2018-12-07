@@ -3,7 +3,6 @@ title: Setting Up KDNET Network Kernel Debugging Automatically
 description: Use KDNET to configure network kernel debugging automatically for the Windows debuggging tools.
 ms.assetid: B4A79B2E-D4B1-42CA-9121-DEC923C76927
 keywords: ["Network debugging", "Ethernet debugging", "WinDbg", "KDNET"]
-ms.author: domars
 ms.date: 09/25/2018
 ms.localizationpriority: medium
 ---
@@ -36,7 +35,7 @@ The computer that runs the debugger is called the *host computer*, and the compu
     ```
 4. Make a note of the IPv4 address of the network adapter that you intend to use for debugging.
 
- 
+ 
 
 ## <span id="Setting_Up_the_Target_Computer"></span><span id="setting_up_the_target_computer"></span><span id="SETTING_UP_THE_TARGET_COMPUTER"></span>Setting Up the Host and Target Computers
 
@@ -155,7 +154,7 @@ The host computer can use any network adapter, but the target computer must use 
 ## <span id="related_topics"></span>Related topics
 
 [Supported Ethernet NICs for Network Kernel Debugging in Windows 10](supported-ethernet-nics-for-network-kernel-debugging-in-windows-10.md)
- 
+ 
 
 [Supported Ethernet NICs for Network Kernel Debugging in Windows 8.1](supported-ethernet-nics-for-network-kernel-debugging-in-windows-8-1.md)
 
@@ -163,7 +162,7 @@ The host computer can use any network adapter, but the target computer must use 
 [Setting Up KDNET Network Kernel Debugging Manually](setting-up-a-network-debugging-connection.md)
 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Introduction to WHEA-Aware User-Mode Applications
-author: windows-driver-content
 description: Introduction to WHEA-Aware User-Mode Applications
 ms.assetid: cf2de8fa-191b-4dae-aaac-5d6d74f94ca7
 keywords:
@@ -40,9 +39,9 @@ WHEA hardware error event processing applications are supported starting with Wi
 
 WHEA management applications are supported in Windows Server 2008, Windows Vista SP1 and later versions of Windows For more information about how to implement a user-mode application that performs WHEA management operations, see [WHEA Management Applications](whea-management-applications.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Supporting PC Cards That Conform to the Multifunction Standard
-author: windows-driver-content
 description: Supporting PC Cards That Conform to the Multifunction Standard
 ms.assetid: 1ab295b6-42c9-46fc-97e0-2228e189ff37
 keywords:
@@ -63,9 +62,9 @@ For example, the PCMCIA bus driver creates child function hardware IDs such as t
 
 An INF file for a child function of a multifunction PC Card device must specify the hardware ID that is reported by the PCMCIA bus driver and mf.sys.
 
- 
+ 
 
- 
+ 
 
 
 

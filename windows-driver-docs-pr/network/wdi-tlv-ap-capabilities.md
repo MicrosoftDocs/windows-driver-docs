@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_AP_CAPABILITIES
-author: windows-driver-content
 description: WDI_TLV_AP_CAPABILITIES is a TLV that contains the capabilities of an access point.
 ms.assetid: 2DE866C8-9414-46D8-A156-3A35F1E325EF
 ms.date: 07/18/2017
@@ -75,7 +74,7 @@ The sum (in bytes) of the sizes of all contained elements.
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -101,9 +100,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -21,9 +21,9 @@ The kernel-mode PnP manager also calls the [*DriverEntry*](https://msdn.microsof
 
 The PnP manager maintains the [Device Tree](https://msdn.microsoft.com/library/windows/hardware/ff543194) that keeps track of the devices in the system. The device tree contains information about the devices present on the system. When the computer starts, the PnP manager builds this tree by using information from drivers and other components, and updates the tree as devices are added or removed.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Combining Nodes in a Filter
-author: windows-driver-content
 description: Combining Nodes in a Filter
 ms.assetid: ebceb42a-966d-4c03-b4f5-8666284fc871
 keywords:
@@ -21,9 +20,9 @@ The following figure of a sample DirectShow filter graph shows one possible way 
 
 ![diagram illustrating a directshow filter graph with a tuner and demodulator combined in one filter](images/smpdshw1.png)
 
- 
+ 
 
- 
+ 
 
 
 

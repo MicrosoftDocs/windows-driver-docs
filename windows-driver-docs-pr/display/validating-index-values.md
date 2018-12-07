@@ -23,9 +23,9 @@ You should consider the following items:
 
 -   The **NumVertices** member of the [**D3DDDIARG\_DRAWINDEXEDPRIMITIVE**](https://msdn.microsoft.com/library/windows/hardware/ff543048) or [**D3DDDIARG\_DRAWINDEXEDPRIMITIVE2**](https://msdn.microsoft.com/library/windows/hardware/ff543054) structure is never set to 0 in a call to the driver's [**DrawIndexedPrimitive**](https://msdn.microsoft.com/library/windows/hardware/ff556133) or [**DrawIndexedPrimitive2**](https://msdn.microsoft.com/library/windows/hardware/ff556135) function. The driver should set the maximum allowable index to (NumVerticesÂ -Â 1).
 
- 
+ 
 
- 
+ 
 
 
 

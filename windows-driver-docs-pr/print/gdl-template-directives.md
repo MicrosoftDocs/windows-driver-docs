@@ -1,6 +1,5 @@
 ---
 title: GDL Template Directives
-author: windows-driver-content
 description: GDL Template Directives
 ms.assetid: 67400ddc-2575-4ceb-b204-66daf9708a4c
 keywords:
@@ -43,9 +42,9 @@ The following GDL directives apply to templates:
 
 For more information about how to use template directives, see [Template Directive Example](template-directive-example.md)
 
- 
+ 
 
- 
+ 
 
 
 

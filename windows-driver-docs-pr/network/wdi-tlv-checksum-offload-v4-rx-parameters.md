@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_CHECKSUM_OFFLOAD_V4_RX_PARAMETERS (0xD2)
-author: windows-driver-content
 description: WDI_TLV_CHECKSUM_OFFLOAD_V4_RX_PARAMETERS is a TLV that contains parameters for Rx checksum offload for IPv4.
 ms.assetid: A06E0534-CD5E-4D81-AEC8-CFC6106AAD85
 ms.date: 07/18/2017
@@ -71,7 +70,7 @@ The sum (in bytes) of the sizes of all contained elements.
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -97,9 +96,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

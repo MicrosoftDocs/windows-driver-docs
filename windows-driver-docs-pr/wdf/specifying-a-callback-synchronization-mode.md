@@ -1,6 +1,5 @@
 ---
 title: Specifying a Callback Synchronization Mode
-author: windows-driver-content
 description: Specifying a Callback Synchronization Mode
 ms.assetid: 3e041493-1095-47cb-b9a7-879a4cf1bd2e
 keywords:
@@ -46,11 +45,11 @@ The driver can specify one of the following values from the WDF\_CALLBACK\_CONST
 </tbody>
 </table>
 
- 
+ 
 
 **Note**   If the driver does not call **IWDFDeviceInitialize::SetLockingConstraint** to specify a value, the framework sets the default value of this property to **WdfDeviceLevel**.
 
- 
+ 
 
 Constraints apply only to queue callback functions and not to Plug and Play (PnP) and power management callback functions. Queue callback functions include the following:
 
@@ -64,9 +63,9 @@ Constraints apply only to queue callback functions and not to Plug and Play (PnP
 
 Request completion callback functions ([**IRequestCallbackRequestCompletion::OnCompletion**](https://msdn.microsoft.com/library/windows/hardware/ff556905)) are not queue callback functions. Therefore, they are not synchronized.
 
- 
+ 
 
- 
+ 
 
 
 

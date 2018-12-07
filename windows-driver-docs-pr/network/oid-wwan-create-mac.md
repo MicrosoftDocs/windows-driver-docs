@@ -1,6 +1,5 @@
 ---
 title: OID_WWAN_CREATE_MAC
-author: windows-driver-content
 description: OID_WWAN_CREATE_MAC requests the miniport driver to create a new NDIS port.
 ms.assetid: 4EF98858-86CD-409B-BE41-E57B24158609
 ms.date: 08/08/2017
@@ -50,9 +49,9 @@ Requirements
 
 [OID\_WWAN\_DELETE\_MAC](oid-wwan-delete-mac.md)
 
- 
+ 
 
- 
+ 
 
 
 

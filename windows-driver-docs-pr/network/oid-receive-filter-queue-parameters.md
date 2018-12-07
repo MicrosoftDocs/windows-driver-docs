@@ -1,6 +1,5 @@
 ---
 title: OID_RECEIVE_FILTER_QUEUE_PARAMETERS
-author: windows-driver-content
 description: Overlying drivers issue object identifier (OID) method requests of OID_RECEIVE_FILTER_QUEUE_PARAMETERS to obtain the current configuration parameters of a receive queue.
 ms.assetid: f6cd7896-0811-4029-b1d8-8cf800d7813e
 ms.date: 08/08/2017
@@ -23,7 +22,7 @@ Overlying drivers issue OID set requests of OID\_RECEIVE\_FILTER\_QUEUE\_PARAMET
 
 **Note**  Only the overlying driver that allocated the queue can change the configuration parameters by issuing OID set requests of OID\_RECEIVE\_FILTER\_QUEUE\_PARAMETERS.
 
- 
+ 
 
 The overlying driver obtained the queue identifier input value from an earlier [OID\_RECEIVE\_FILTER\_ALLOCATE\_QUEUE](oid-receive-filter-allocate-queue.md) method OID request.
 
@@ -68,7 +67,7 @@ NDIS handles the OID method request of OID\_RECEIVE\_FILTER\_QUEUE\_PARAMETERS f
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -101,9 +100,9 @@ Requirements
 
 [OID\_RECEIVE\_FILTER\_QUEUE\_PARAMETERS](oid-receive-filter-queue-parameters.md)
 
- 
+ 
 
- 
+ 
 
 
 

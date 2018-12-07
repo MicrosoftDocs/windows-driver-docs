@@ -3,7 +3,6 @@ title: running
 description: The running extension displays a list of running threads on all processors of the target computer.
 ms.assetid: 08fd9806-36e9-4589-bf92-87dc02efebac
 keywords: ["running Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -51,7 +50,7 @@ Causes a stack trace to be displayed for each processor.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -110,9 +109,9 @@ ChildEBP RetAddr
 f8800980 f8800980 nt!KiIdleLoop+0x14
 ```
 
- 
+ 
 
- 
+ 
 
 
 

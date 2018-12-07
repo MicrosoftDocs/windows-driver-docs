@@ -1,6 +1,5 @@
 ---
 title: Specifying Device Types
-author: windows-driver-content
 description: Specifying Device Types
 ms.assetid: 32e179f9-ab11-4360-b2fd-4276c6b6b3a0
 keywords: ["device objects WDK kernel , device types", "device types WDK device objects"]
@@ -91,9 +90,9 @@ FILE\_DEVICE\_*XXX* values in the range of 0 through 32767 are reserved for Micr
 
 If a type of hardware does not match any of the defined types, specify a value of either FILE\_DEVICE\_UNKNOWN, or a value within the range of 32768 through 65535.
 
- 
+ 
 
- 
+ 
 
 
 

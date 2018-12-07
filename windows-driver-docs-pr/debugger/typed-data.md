@@ -2,7 +2,6 @@
 title: Typed Data
 description: Typed Data
 ms.assetid: 44a84dfd-03f8-4d7b-8d71-e4b3ee23d105
-ms.author: domars
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -16,7 +15,7 @@ Windows lists can be iterated over by using [**ExtRemoteList**](https://msdn.mic
 
 **Note**   Like the client objects in [**ExtExtension**](https://msdn.microsoft.com/library/windows/hardware/ff543981), instances of these classes are only valid while the extension library is used to execute an extension command or format a structure for output. In particular, they should not be cached. For more information about when client objects are valid, see [Client Objects and the Engine](client-objects-and-the-engine.md), .
 
- 
+ 
 
 ### <span id="remote_data"></span><span id="REMOTE_DATA"></span>Remote Data
 
@@ -34,9 +33,9 @@ To handle remote lists, use the [**ExtRemoteList**](https://msdn.microsoft.com/l
 
 To handle remote lists when the type of the nodes in the list is known, use the [**ExtRemoteTypedList**](https://msdn.microsoft.com/library/windows/hardware/ff544173) class. This is an enhanced version of [**ExtRemoteList**](https://msdn.microsoft.com/library/windows/hardware/ff544114). In addition to the basic functionality of **ExtRemoteList**, **ExtRemoteTypedList** automatically determines link offsets from type information.
 
- 
+ 
 
- 
+ 
 
 
 

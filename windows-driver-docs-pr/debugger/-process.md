@@ -3,7 +3,6 @@ title: process
 description: The process extension displays information about the specified process, or about all processes, including the EPROCESS block.
 ms.assetid: 57f55632-8320-47cc-8a20-5a2cf3b42b3a
 keywords: ["process Windows Debugging"]
-ms.author: domars
 ms.date: 08/02/2018
 topic_type:
 - apiref
@@ -40,7 +39,7 @@ Specifies the module that owns the desired process.
 <span id="_Process"></span><span id="_process"></span><span id="_PROCESS"></span> *Process*  
 Specifies the hexadecimal address or the process ID of the process on the target computer.
 
-The value of *Process* determines whether the !process extension displays a process address or a process ID . If *Process* is omitted in any version of Windows, the debugger displays data only about the current system process. If *Process* is 0 and *ImageName* is omitted, the debugger displays information about all active processes. If -1 is specifed for *Process* information about the current process is displayed.
+The value of *Process* determines whether the !process extension displays a process address or a process ID . If *Process* is omitted in any version of Windows, the debugger displays data only about the current system process. If *Process* is 0 and *ImageName* is omitted, the debugger displays information about all active processes. If -1 is specified for *Process* information about the current process is displayed.
 
 <span id="Flags"></span><span id="flags"></span><span id="FLAGS"></span>*Flags*  
 Specifies the level of detail to display. *Flags* can be any combination of the following bits. If *Flags* is 0, only a minimal amount of information is displayed. The default varies according to the version of Windows and the value of *Process*. The default is 0x3 if *Process* is omitted or if *Process* is either 0 or -1; otherwise, the default is 0xF.
@@ -145,7 +144,7 @@ The following table describes some of the elements of the **!process 0 0** outpu
 </tbody>
 </table>
 
- 
+ 
 
 To display full details on one process, set *Flags* to 7. The process itself can be specified by setting *Process* equal to the process address, setting *Process* equal to the process ID, or setting *ImageName* equal to the executable image name. Here is an example:
 
@@ -205,7 +204,7 @@ The following table describes some of the elements in the previous example.
 <tbody>
 <tr class="odd">
 <td align="left">WAIT</td>
-<td align="left">The parenthetical comment after this heading gives the reason for the wait. The command <strong>[dt nt!_KWAIT_REASON](dt--display-type-.md)</strong> will display a list of all wait reasons.</td>
+<td align="left">The parenthetical comment after this heading gives the reason for the wait. The command <strong><a href="dt--display-type-.md" data-raw-source="[dt nt!_KWAIT_REASON](dt--display-type-.md)">dt nt!_KWAIT_REASON</a></strong> will display a list of all wait reasons.</td>
 </tr>
 <tr class="even">
 <td align="left"><p>ElapsedTime</p></td>
@@ -238,15 +237,15 @@ The following table describes some of the elements in the previous example.
 </tbody>
 </table>
 
- 
+ 
 
 In addition to the process list information, the thread information contains a list of the resources on which the thread has locks. This information is listed in the third line of output after the thread header. In this example, the thread has a lock on one resource, a SynchronizationEvent with an address of 80144fc0. By comparing this address to the list of locks shown by the [**!kdext\*.locks**](-locks---kdext--locks-.md) extension, you can determine which threads have exclusive locks on resources.
 
 The [**!stacks**](-stacks.md) extension gives a brief summary of the state of every thread. This can be used instead of the !process extension to get a quick overview of the system, especially when debugging multithread issues, such as resource conflicts or deadlocks.
 
- 
+ 
 
- 
+ 
 
 
 

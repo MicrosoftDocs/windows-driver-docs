@@ -1,6 +1,5 @@
 ---
 title: Using the SCSI Port WMI Library
-author: windows-driver-content
 description: Using the SCSI Port WMI Library
 ms.assetid: cb55bbb3-39bb-491f-a6d2-50dceace4a86
 keywords:
@@ -56,9 +55,9 @@ The array contains information about the GUIDs of two WMI classes, **HBAStatisti
 
 The WMI tool suite generates the name of the symbolic constant for the GUID by concatenating a suffix of "GUID" to the name of the WMI class. For instance, for the class **HBAStatistics,** the tool will create a symbolic constant called **HBAStatisticsGUID** that represents the GUID for that class.
 
- 
+ 
 
- 
+ 
 
 
 

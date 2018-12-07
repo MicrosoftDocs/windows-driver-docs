@@ -1,6 +1,5 @@
 ---
 title: Overview
-author: windows-driver-content
 description: Overview
 ms.assetid: 3b2895a2-9a2e-46eb-b8fb-47d6db4a1de0
 ms.date: 04/20/2017
@@ -47,11 +46,11 @@ Remember that oplock keys exist on handles, and they are "put on" the handle whe
 
 **Note**  It is more accurate to say that the oplock key is associated with the [**FILE\_OBJECT**](https://msdn.microsoft.com/library/windows/hardware/ff545834) structure that the stream handle refers to. This distinction is important when the handle is duplicated, such as with [DuplicateHandle](http://go.microsoft.com/fwlink/p/?linkid=124237). Each of the duplicate handles refers to the same underlying **FILE\_OBJECT** structure.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

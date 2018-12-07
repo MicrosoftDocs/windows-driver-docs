@@ -17,7 +17,7 @@ In the WpdHelloWorldDriver sample, most of the PnP and PM event handlers either 
 | **IPnpCallbackHardware::OnPrepareHardware** | Calls the **WpdBaseDriver::Initialize** method. Initializes the WPD class extension and updates the device-friendly name. |
 | **IPnPCallbackHardware::OnReleaseHardware** | Calls the **WpdBaseDriver::Uninitialize** method and uninitializes the WPD class extension.                               |
 
- 
+ 
 
 For a description of each interface and its methods, see the [UMDF documentation](http://go.microsoft.com/fwlink/p/?linkid=153678)..
 
@@ -27,9 +27,9 @@ For a description of each interface and its methods, see the [UMDF documentation
 ****
 [The WPD Driver Samples](the-wpd-driver-samples.md)
 
- 
+ 
 
- 
+ 
 
 
 

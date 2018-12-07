@@ -1,6 +1,5 @@
 ---
 title: Introduction to WHEA Management Applications
-author: windows-driver-content
 description: Introduction to WHEA Management Applications
 ms.assetid: d0c487bd-dfa8-43f2-a494-0ed95d767bfb
 keywords:
@@ -29,11 +28,11 @@ For more information about WMI, see the [Windows Management Instrumentation](htt
 
 **Note**  The WHEA WMI provider classes are supported in Windows Server 2008, Windows Vista SP1 and later versions of Windows.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

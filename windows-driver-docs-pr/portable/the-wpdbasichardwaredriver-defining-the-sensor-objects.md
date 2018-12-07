@@ -19,7 +19,7 @@ The WpdHelloWorldDriver supports the objects that are shown in the following tab
 | Folder  | An object that exposes properties, for example, a folder name.                                                             |
 | File    | An object that exposes properties, for example, a file name and actual file contents.                                      |
 
- 
+ 
 
 Because the sample sensors do not support a storage, folder, or file object, the WpdBasicHardwareDriver does not implement these objects. Instead, each sensor type is represented by a single object. The following table lists the objects that the WpdBasicHardwareDriver supports.
 
@@ -36,7 +36,7 @@ Because the sample sensors do not support a storage, folder, or file object, the
 | Memsic       | A functional object that displays the 2-axis accelerometer reading, as well as an update interval property that can be edited.             |
 | Hitachi      | A functional object that displays the 3-axis accelerometer reading, as well as an update interval property that can be edited.             |
 
- 
+ 
 
 In WPD, objects are identified by strings. The string identifier for the device object is defined in the *Portabledevice.h* file:
 
@@ -127,9 +127,9 @@ These object identifier constants are passed to the methods in source modules th
 
 In the WpdBasicHardwareDriver sample, the driver defines a single functional category that encompasses all sensors. A driver developer can extend this sample and define separate functional categories for each sensor type so that applications can identify which sensors the driver supports. This requires that the developer modify the WpdCapabilities::OnGetFunctionalCategories method so that it correctly returns these new categories.
 
- 
+ 
 
- 
+ 
 
 
 

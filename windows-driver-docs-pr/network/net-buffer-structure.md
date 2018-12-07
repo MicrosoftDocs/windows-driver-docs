@@ -77,9 +77,9 @@ Retreat operations increase the size of the *used data space*.
 <a href="" id="advance"></a>Advance  
 Advance operations decrease the size of the *used data space*.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -33,9 +33,9 @@ Starting and stopping calls is done by sending [**KSPROPERTY\_TELEPHONY\_CALLCON
 
 Once the call is Enabled, associated KSNODETYPE\_TELEPHONY\_BIDI’s jack state will be made Active by the driver and the call state will be updated to *TELEPHONY\_CALLSTATE\_ENABLED*. When the call is terminated, the endpoint's jack state will change to unplugged and the call state will be updated to *TELEPHONY\_CALLSTATE\_DISABLED*.
 
- 
+ 
 
- 
+ 
 
 
 

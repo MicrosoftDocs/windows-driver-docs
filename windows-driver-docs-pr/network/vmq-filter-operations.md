@@ -22,9 +22,9 @@ In the preceding illustration, the network data packet includes a destination ad
 
 In this illustration, there are two filters; each filter compares a destination address and a VLAN identifier to the fields in the incoming packet. If both the VLAN and DA tests match, then the criterion for that filter is met and the incoming packet is assigned to the queue. If there is more than one filter on the queue and then a match for any filter, then the network adapter assigns the packet to the queue.
 
- 
+ 
 
- 
+ 
 
 
 

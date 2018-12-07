@@ -1,6 +1,5 @@
 ---
 title: Full-Duplex I/O Requests
-author: windows-driver-content
 description: Some buses, such as SPI, support full-duplex bus transfers.
 ms.assetid: C80FE3F2-6659-4DE8-8F77-F77EDA60400F
 ms.date: 04/20/2017
@@ -148,9 +147,9 @@ The preceding code example does the following:
 4.  The call to the [**IWDFIoRequest::GetCompletionParams**](https://msdn.microsoft.com/library/windows/hardware/ff559084) method gets the completion parameters from the request.
 5.  The call to the [**IWDFRequestCompletionParams::GetInformation**](https://msdn.microsoft.com/library/windows/hardware/ff560305) method gets the *information* value from the completion parameters (the **Information** field in the I/O status block). This value is the total number of bytes transferred (bytes written plus bytes read) by the **IOCTL\_SPB\_FULL\_DUPLEX** request.
 
- 
+ 
 
- 
+ 
 
 
 

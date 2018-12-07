@@ -1,6 +1,5 @@
 ---
 title: Authoring an update driver package
-author: windows-driver-content
 description: This topic provides information about authoring an update driver package and provides example INF file settings and configurations.
 ms.assetid: 9018900A-3670-4C78-9094-1DDAB82847DD
 ms.date: 04/20/2017
@@ -94,7 +93,6 @@ DefaultDestDir = %DIRID_WINDOWS%,Firmware\{6bd4efb9-23cc-4b4a-ac37-016517413e9a}
 [Strings]
 ; localizable
 Modify any strings here [optional]
-
 ```
 
 The following table describes the various driver package INF sections and fields with reference to the above sample driver package INF file definition.
@@ -207,7 +205,7 @@ The following table describes the various driver package INF sections and fields
 </tr>
 <tr class="odd">
 <td>FirmwareFilename</td>
-<td>{RESOURCE_GUID}\\<em>firmware.bin</em></td>
+<td>{RESOURCE_GUID}&lt;em&gt;firmware.bin</em></td>
 <td>The firmware filename of the firmware resource update’s Update Capsule image filename. This path is relative to the %SystemRoot%\Firmware directory such that {RESOURCE_GUID} represents a subdirectory used to organize all firmware image files targeted for specific firmware resource.</td>
 </tr>
 <tr class="even">
@@ -238,7 +236,7 @@ The following table describes the various driver package INF sections and fields
 </tr>
 <tr class="odd">
 <td>DefaultDestDir</td>
-<td><p>%DIRID_WINDOWS%,Firmware\\</p>
+<td><p>%DIRID_WINDOWS%,Firmware&lt;/p&gt;
 <p>{RESOURCE_GUID}</p></td>
 <td>Specifies the default destination directory of all driver files copied by this driver package to be %SystemRoot%\Firmware, where DIRID_WINDOWS (10) represents the base %SystemRoot% directory and {RESOURCE_GUID} represents a subdirectory names after the firmware resource GUID.</td>
 </tr>
@@ -255,7 +253,7 @@ The following table describes the various driver package INF sections and fields
 </tbody>
 </table>
 
- 
+
 
 It is important to use a unique name for each firmware resource update image file version in order to avoid any potential collisions with other firmware image files, both your own and those from other firmware vendors. For example, *firmware.bin* from the above should be assigned the following name to satisfy both vendor name and version constraints: *Fabrikam-System-Firmware-2.0.bin*.
 
@@ -321,9 +319,9 @@ After the driver package is signed, it can be installed using one of the followi
     pnputil -i -a X:\firmware.inf
     ```
 
-    **Note**  The pnputil tool is not supported on Windows 10 Mobile.
+    **Note**  The pnputil tool is not supported on Windows 10 Mobile.
 
-     
+
 
 If the firmware resource update was successfully installed on a firmware resource device and it supplies a firmware resource update that is a higher version than the current firmware version, then the device will be awaiting a system reboot in order to complete the update operation. A device in this state will indicate its need for the system to be rebooted by maintaining a device problem, which prevents the device from being started and restored to a steady state until the reboot is performed.
 
@@ -347,7 +345,7 @@ The “LastAttemptStatus” registry value indicates the status of the firmware 
 | Error: Power Event, AC Not Connected     | 6    | STATUS\_POWER\_STATE\_INVALID   | 0xC00002D3 |
 | Error: Power Event, Insufficient Battery | 7    | STATUS\_INSUFFICIENT\_POWER     | 0xC00002DE |
 
- 
+
 
 The Hardware ID property of the firmware resource device node should also reflect the change in the firmware version, where XXX is the new firmware version.
 

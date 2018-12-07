@@ -1,6 +1,5 @@
 ---
 title: Storage Class Driver's GetDescriptor Routine
-author: windows-driver-content
 description: Storage Class Driver's GetDescriptor Routine
 ms.assetid: d1ddcfe8-f276-4e45-82b7-0f07f0526c71
 keywords:
@@ -39,9 +38,9 @@ The class driver inspects the returned [**STORAGE\_DEVICE\_DESCRIPTOR**](https:/
 
 The class driver should store this information in the FDO's device extension so its dispatch routines can ensure that all requests sent to the storage port driver conform to the size, number of physical breaks, and alignment requirements of the underlying HBA. For more information about class driver dispatch routines, see [Storage Class Driver's Dispatch Routines](storage-class-driver-s-dispatch-routines.md). For more information about setting up device extensions, see [Setting Up a Storage Class Driver's Device Extension](setting-up-a-storage-class-driver-s-device-extension.md).
 
- 
+ 
 
- 
+ 
 
 
 

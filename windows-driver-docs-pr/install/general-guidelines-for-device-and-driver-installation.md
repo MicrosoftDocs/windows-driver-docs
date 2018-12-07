@@ -26,9 +26,9 @@ To provide the best possible user experience, use the following guidelines to de
 
 -   Do not make assumptions about the location, format, or meaning of registry keys or values. For more information about registry keys and trees, see [Registry Trees and Keys for Devices and Drivers](registry-trees-and-keys.md).
 
- 
+ 
 
- 
+ 
 
 
 

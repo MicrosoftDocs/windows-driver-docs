@@ -3,7 +3,6 @@ title: hstring2
 description: The hstring2 extension displays an entire HSTRING including any embedded NULL characters in the string itself.
 ms.assetid: CA3C6945-B93B-4717-9349-0968DCD50A5B
 keywords: ["hstring2 Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -38,9 +37,9 @@ The address of an **HSTRING**.
 
 [**!winrterr**](-winrterr.md)
 
- 
+ 
 
- 
+ 
 
 
 

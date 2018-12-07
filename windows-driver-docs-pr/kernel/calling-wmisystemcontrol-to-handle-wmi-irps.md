@@ -1,6 +1,5 @@
 ---
 title: Calling WmiSystemControl to Handle WMI IRPs
-author: windows-driver-content
 description: Calling WmiSystemControl to Handle WMI IRPs
 ms.assetid: a2fa53e2-6468-4c3c-8b41-9a97305abc43
 keywords: ["WMI WDK kernel , requests", "requests WDK WMI", "IRPs WDK WMI", "WmiSystemControl"]
@@ -16,7 +15,7 @@ ms.localizationpriority: medium
 
 WMI library routines simplify handling of WMI requests because instead of processing each such request, a driver calls [**WmiSystemControl**](https://msdn.microsoft.com/library/windows/hardware/ff565834). In the **WmiSystemControl** call, the driver passes an initialized [**WMILIB\_CONTEXT**](https://msdn.microsoft.com/library/windows/hardware/ff565813) structure that contains entry points to the driver's [WMI library callback routines](https://msdn.microsoft.com/library/windows/hardware/ff566357) (*DpWmiXxx* routines) and information about the driver's data blocks and event blocks.
 
-Because the WMI library provides no mechanism for passing dynamic instance names or a static instance name list, a driver can use the WMI library to handle requests involving only data blocks with static instance names based on a PDO or a single base name string. For more information about static and dynamic instance names, see [Defining WMI Instance Names](defining-wmi-instance-names.md). Nothing prevents a driver from using the WMI library to handle requests for such blocks and processing requests for other blocks in its [*DispatchSystemControl*](https://msdn.microsoft.com/library/windows/hardware/ff543412) routine. For more information, see [Processing WMI IRPs in a DispatchSystemControl Routine](processing-wmi-irps-in-a-dispatchsystemcontrol-routine.md).
+Because the WMI library provides no mechanism for passing dynamic instance names or a static instance name list, a driver can use the WMI library to handle requests involving only data blocks with static instance names based on a PDO or a single base name string. For more information about static and dynamic instance names, see [Defining WMI Instance Names](defining-wmi-instance-names.md). Nothing prevents a driver from using the WMI library to handle requests for such blocks and processing requests for other blocks in its [*DispatchSystemControl*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine. For more information, see [Processing WMI IRPs in a DispatchSystemControl Routine](processing-wmi-irps-in-a-dispatchsystemcontrol-routine.md).
 
 To handle WMI IRPs by calling **WmiSystemControl**, a driver must implement certain required *DpWmiXxx* callback routines, and might implement additional optional *DpWmiXxx* callback routines:
 
@@ -38,19 +37,19 @@ Before calling [**WmiSystemControl**](https://msdn.microsoft.com/library/windows
 
 When the driver receives a WMI request:
 
-1.  The driver calls **WmiSystemControl** with a pointer to its initialized **WMILIB\_CONTEXT** structure, a pointer to its device object, and a pointer to the IRP.
+1. The driver calls **WmiSystemControl** with a pointer to its initialized **WMILIB\_CONTEXT** structure, a pointer to its device object, and a pointer to the IRP.
 
-2.  WMI validates the IRP parameters and calls the driver's *DpWmiXxx* routine that processes the request. If the driver set no entry point in its **WMILIB\_CONTEXT** for an optional *DpWmiXxx* routine, WMI completes the IRP with default values and status.
+2. WMI validates the IRP parameters and calls the driver's *DpWmiXxx* routine that processes the request. If the driver set no entry point in its **WMILIB\_CONTEXT** for an optional *DpWmiXxx* routine, WMI completes the IRP with default values and status.
 
-3.  In its *DpWmiXxx* routine, the driver processes the request and writes any output to the caller-supplied buffer. For example, a driver's [*DpWmiQueryDataBlock*](https://msdn.microsoft.com/library/windows/hardware/ff544096) routine would write the requested instance(s) of the specified block to the buffer.
+3. In its *DpWmiXxx* routine, the driver processes the request and writes any output to the caller-supplied buffer. For example, a driver's [*DpWmiQueryDataBlock*](https://msdn.microsoft.com/library/windows/hardware/ff544096) routine would write the requested instance(s) of the specified block to the buffer.
 
-4.  In all *DpWmiXxx* routines except [*DpWmiQueryReginfo*](https://msdn.microsoft.com/library/windows/hardware/ff544097), the driver calls [**WmiCompleteRequest**](https://msdn.microsoft.com/library/windows/hardware/ff565798) to complete the request, or returns STATUS\_PENDING to postpone completion, as for any IRP.
+4. In all *DpWmiXxx* routines except [*DpWmiQueryReginfo*](https://msdn.microsoft.com/library/windows/hardware/ff544097), the driver calls [**WmiCompleteRequest**](https://msdn.microsoft.com/library/windows/hardware/ff565798) to complete the request, or returns STATUS\_PENDING to postpone completion, as for any IRP.
 
-5.  WMI performs any necessary postprocessing, packages any output in an appropriate **WNODE\_*XXX*** structure, and passes the output and status to the data consumer.
+5. WMI performs any necessary postprocessing, packages any output in an appropriate **WNODE\_*XXX*** structure, and passes the output and status to the data consumer.
 
- 
+ 
 
- 
+ 
 
 
 

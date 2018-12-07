@@ -3,7 +3,6 @@ title: .endsrv (End Debugging Server)
 description: The .endsrv command causes the debugger to cancel an active debugging server.
 ms.assetid: 6be6c774-fe6b-4bd4-8174-55ef207db3e6
 keywords: [".endsrv (End Debugging Server) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -54,7 +53,7 @@ You can use this command only when you are performing remote debugging through t
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -115,11 +114,11 @@ HotMachine\HostUser, last active Mon Mar 04 16:05:21 2002
 
 **Caution**   Using a password with TCP, NPIPE, or COM protocol offers only a small amount of protection, because the password is not encrypted. When you use a password together with a SSL or SPIPE protocol, the password is encrypted. If you want to establish a secure remote session, you must use the SSL or SPIPE protocol.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

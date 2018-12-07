@@ -1,6 +1,5 @@
 ---
 title: High-Resolution Timers
-author: windows-driver-content
 description: Starting with Windows 8.1, drivers can use the ExXxxTimer routines to manage high-resolution timers.
 ms.assetid: B8F2B28C-A02B-4015-B392-3D30BC0229B8
 keywords: ["high-resolution timers", "timer accuracy", "timer resolution", "system clock granularity", "EX_TIMER_HIGH_RESOLUTION", "ExXxxTimer routines", "ExQueryTimerResolution", "ExSetTimerResolution"]
@@ -30,7 +29,7 @@ If no high-resolution timers are set, the operating system typically runs the sy
 
 To avoid unnecessarily increasing power consumption, the operating system runs the system clock at its maximum rate only when necessary to satisfy the timing requirements of high-resolution timers. For example, if a high-resolution timer is periodic, and its period spans several default system clock ticks, the operating system might run the system clock at its maximum rate only in the part of the timer period that immediately precedes each expiration. For the rest of the timer period, the system clock runs at its default rate.
 
-To prevent excessive power consumption, drivers should avoid setting the period of a long-running high-resolution timer to a value that is less than the default interval between system clock ticks. Otherwise, the operating system is forced to continously run the system clock at its maximum rate.
+To prevent excessive power consumption, drivers should avoid setting the period of a long-running high-resolution timer to a value that is less than the default interval between system clock ticks. Otherwise, the operating system is forced to continuously run the system clock at its maximum rate.
 
 Starting with Windows 8, a driver can call the [**ExQueryTimerResolution**](https://msdn.microsoft.com/library/windows/hardware/dn275969) routine to get the range of timer resolutions that are supported by the system clock.
 
@@ -47,9 +46,9 @@ Third, if multiple drivers concurrently use **ExSetTimerResolution** to improve 
 
 Finally, using **ExSetTimerResolution** is inherently less accurate than using a high-resolution timer. After a driver calls **ExSetTimerResolution** to increase the system clock to its maximum rate, which is typically about a tick per millisecond, the driver might call a routine such as [**KeSetTimerEx**](https://msdn.microsoft.com/library/windows/hardware/ff553292) to set the timer. If, in this call, the driver specifies a relative expiration time, the timer can expire up to about a millisecond earlier than or later than the specified expiration time. However, if a relative expiration time is specified for a high-resolution timer, the timer can expire up to about a millisecond later than the specified expiration time but it never expires early.
 
- 
+ 
 
- 
+ 
 
 
 

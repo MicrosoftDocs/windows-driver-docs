@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_BEACON_FRAME
-author: windows-driver-content
 description: WDI_TLV_BEACON_FRAME is a TLV that contains a beacon frame.
 ms.assetid: 4022B721-B56E-482C-8F97-C4F7820CF6D1
 ms.date: 07/18/2017
@@ -31,7 +30,7 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 |-----------|-------------------------------------------------------------|
 | UINT8\[\] | An array of UINT8 elements that specifies the beacon frame. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

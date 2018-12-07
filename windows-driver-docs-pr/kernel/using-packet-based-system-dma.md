@@ -1,6 +1,5 @@
 ---
 title: Using Packet-Based System DMA
-author: windows-driver-content
 description: Using Packet-Based System DMA
 ms.assetid: 5d175193-4a28-49fd-80b5-18f116232c6e
 keywords: ["system DMA WDK kernel , packet-based", "packet-based DMA WDK kernel", "DMA transfers WDK kernel , packet-based"]
@@ -38,9 +37,9 @@ The adapter object pointer returned by [**IoGetDmaAdapter**](https://msdn.micros
 
 Individual drivers call this sequence of support routines at different points, depending on how each driver is implemented to service its device. For example, one driver's [*StartIo*](https://msdn.microsoft.com/library/windows/hardware/ff563858) routine might make the call to **AllocateAdapterChannel**, another driver might make this call from a routine that removes IRPs from a driver-created interlocked queue, and still another driver might make this call when its subordinate DMA device indicates it is ready to transfer data.
 
- 
+ 
 
- 
+ 
 
 
 

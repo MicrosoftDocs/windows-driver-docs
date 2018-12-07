@@ -1,6 +1,5 @@
 ---
 title: Printer INF File Data Sections
-author: windows-driver-content
 description: Printer INF File Data Sections
 ms.assetid: d060716c-7c26-41a8-afbc-6fe83829d46a
 keywords:
@@ -44,7 +43,7 @@ These data sections should be referenced from within vendor-supplied INF files. 
 
 **Note**   An IHV printer INF file that has either a **Needs** entry or an **Include** entry that refers to Ntprint.inf must not contain data section names that are the same as any INF section name present in Ntprint.inf. Before naming a data section in a vendor-supplied printer INF file, search %windir%/inf/Ntprint.inf to be sure that your section name does not already exist as a section name (of any type) within Ntprint.inf.
 
- 
+ 
 
 ### <a href="" id="ddk--previous-names-section-gg"></a>"Previous Names" Section
 
@@ -63,9 +62,9 @@ The following are sample entries:
 "HP DeskJet 310" = "HP DeskJet 310 Printer"
 ```
 
- 
+ 
 
- 
+ 
 
 
 

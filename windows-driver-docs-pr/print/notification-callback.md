@@ -1,6 +1,5 @@
 ---
 title: Notification Callback
-author: windows-driver-content
 description: Notification Callback
 ms.assetid: cf884097-45a4-4ef3-8ebb-64c006838235
 keywords:
@@ -61,9 +60,9 @@ When the notification channel is closed at one end, the spooler service calls th
 
 If either the server or the listening application dies, the spooler rundown code detects this condition and the "still alive" end of the channel that is still alive is notified by a **IPrintAsyncNotifyCallback::ChannelClosed** call, in which a NOTIFICATION\_RELEASE message is delivered.
 
- 
+ 
 
- 
+ 
 
 
 

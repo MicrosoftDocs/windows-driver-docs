@@ -87,9 +87,9 @@ The miniport driver calls the following interfaces on the DMus port driver:
 
 PortCls contains a built-in DMus miniport driver for a MIDI device with a UART function. For more information, see [**PcNewMiniport**](https://msdn.microsoft.com/library/windows/hardware/ff537714).
 
- 
+ 
 
- 
+ 
 
 
 

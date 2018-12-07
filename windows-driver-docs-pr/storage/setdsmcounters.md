@@ -25,8 +25,8 @@ Syntax
 
 ```ManagedCPlusPlus
 void SetDSMCounters(
-   [in, Description("DSM Context"):amended] uint64              DSMcontext,
-   [in, Description("DSM Timer Counters"):amended] DSM_COUNTERS DsmCounters
+   [in, Description("DSM Context"):amended] uint64              DSMcontext,
+   [in, Description("DSM Timer Counters"):amended] DSM_COUNTERS DsmCounters
 );
 ```
 
@@ -69,9 +69,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

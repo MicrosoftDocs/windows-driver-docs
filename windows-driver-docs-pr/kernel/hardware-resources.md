@@ -1,6 +1,5 @@
 ---
 title: Hardware Resources
-author: windows-driver-content
 description: Hardware Resources
 ms.assetid: c7a6997b-34f9-4dd9-b384-2321a8b5ce54
 keywords: ["resource descriptors WDK PnP", "PnP WDK kernel , hardware resources", "Plug and Play WDK kernel , hardware resources", "resource requirements lists WDK PnP", "resource lists WDK PnP", "assigned resources WDK PnP", "requirements lists WDK PnP", "registry WDK PnP", "logical configurations WDK PnP", "boot configurations WDK PnP", "forced configurations WDK PnP", "filtered configurations WDK PnP", "override configurations WDK PnP", "configuration types WDK PnP", "allocated configurations WDK PnP", "basic configurations WDK PnP", "Hardware Resources"]
@@ -60,9 +59,9 @@ Device drivers are responsible for determining a PnP-compatible device's basic c
 
 A priority is assigned to each configuration when it is created. If the PnP manager finds that a device instance has been assigned several logical configurations of the same type, it attempts to use the one with the highest priority first. If that configuration results in resource conflicts, it tries the configuration with the next lower priority. (For a list of configuration priorities, see [**CM\_Add\_Empty\_Log\_Conf**](https://msdn.microsoft.com/library/windows/hardware/ff537921).)
 
- 
+ 
 
- 
+ 
 
 
 

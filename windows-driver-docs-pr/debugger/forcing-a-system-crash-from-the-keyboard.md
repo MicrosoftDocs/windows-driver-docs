@@ -3,7 +3,6 @@ title: Forcing a System Crash from the Keyboard
 description: Forcing a System Crash from the Keyboard
 ms.assetid: 0c3ec6f3-d233-46e4-b599-1a0f89318ed2
 keywords: ["boot process, causing system crash from keyboard", "CTRL+SCROLL LOCK", "system crash, causing from keyboard", "bug check, causing from keyboard", "keyboard-caused system crash", "USB keyboard and system crash", "PS/2 keyboard and system crash", "forcing system crash from keyboard"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -36,7 +35,7 @@ This feature is available in:
 
 **Note**  This feature is not available in Windows XP.
 
- 
+ 
 
 You must ensure the following three settings before the keyboard can cause a system crash:
 
@@ -114,11 +113,11 @@ The values for the first hot key are described in the following table.
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  You can assign **Dump1Keys** a value that enables one or more keys as the first key used in the keyboard shortcut sequence. For example, assign **Dump1Keys** a value of 0x11 to define both the rightmost and leftmost SHIFT keys as the first key in the keyboard shortcut sequence.
 
- 
+ 
 
 <span id="Dump2Key"></span><span id="dump2key"></span><span id="DUMP2KEY"></span>**Dump2Key**  
 The **Dump2Key** registry value is the index into the scancode table for the keyboard layout of the target computer. The following is the actual table in the driver.
@@ -143,7 +142,7 @@ const UCHAR keyToScanTbl[134] = {
 
 **Note**   Index 124 (sysreq) is a special case because an 84-key keyboard has a different scan code.
 
- 
+ 
 
 If you define alternate keyboard shortcuts to force a system crash from a USB or PS/2 keyboard, you must either set the **CrashOnCtrlScroll** registry value to 0 or remove it from the registry.
 
@@ -153,9 +152,9 @@ It is possible for a system to freeze in such a way that the keyboard shortcut s
 
 Forcing a system crash from the keyboard does not work if the computer stops responding at a high interrupt request level (IRQL). This limitation exists because the Kbdhid.sys driver, which allows the memory dump process to run, operates at a lower IRQL than the i8042prt.sys driver.
 
- 
+ 
 
- 
+ 
 
 
 

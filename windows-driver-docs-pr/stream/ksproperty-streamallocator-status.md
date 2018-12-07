@@ -47,13 +47,13 @@ The KSPROPERTY\_STREAMALLOCATOR\_STATUS property retrieves the current status of
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Allocator</p></td>
-<td><p>[<strong>KSPROPERTY</strong>](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)</p></td>
-<td><p>[<strong>KSSTREAMALLOCATOR_STATUS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566866)</p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566866" data-raw-source="[&lt;strong&gt;KSSTREAMALLOCATOR_STATUS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566866)"><strong>KSSTREAMALLOCATOR_STATUS</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -81,9 +81,9 @@ Requirements
 
 [**KSSTREAMALLOCATOR\_STATUS**](https://msdn.microsoft.com/library/windows/hardware/ff566866)
 
- 
+ 
 
- 
+ 
 
 
 

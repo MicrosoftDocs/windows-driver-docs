@@ -3,7 +3,6 @@ title: Source Code Debugging in WinDbg
 description: Source Code Debugging in WinDbg
 ms.assetid: 0f939d29-0d90-442e-96d7-fe756b92a7da
 keywords: ["debugging information windows, Source windows", "Source windows", "source debugging, Source windows"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -18,7 +17,7 @@ The source path specifies the directories where the C and C++ source files are l
 
 **Note**   If you are connected to a corporate network, the most efficient way to access source files is to use a source server. You can use a source server by using the srv\* string within your source path. For more information about source servers, see [Using a Source Server](using-a-source-server.md).
 
- 
+ 
 
 To control the source path in WinDbg, do one of the following:
 
@@ -41,7 +40,7 @@ To open or close a source file directly, do one of the following:
 
     **Note**  When you use the menu or the toolbar button to open a source file, the path of that file is automatically appended to the source path.
 
-     
+     
 
 -   Choose **Close Current Window** from the **File** menu.
 -   Click the **Close** button in the corner of the Source window.
@@ -112,9 +111,9 @@ If you select a Source window and then use the mouse to hover over a symbol in t
 
 For more information about source debugging and related commands, see [Debugging in Source Mode](debugging-in-source-mode.md).
 
- 
+ 
 
- 
+ 
 
 
 

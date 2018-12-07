@@ -1,6 +1,5 @@
 ---
 title: NDIS MDL Interface
-author: windows-driver-content
 description: NDIS MDL Interface
 ms.assetid: d15cbda8-fda5-40e6-ab7f-120d2d26e7ef
 ms.date: 07/18/2017
@@ -27,9 +26,9 @@ This section includes:
 
 [**NdisQueryMdlOffset**](ndisquerymdloffset.md)
 
- 
+ 
 
- 
+ 
 
 
 

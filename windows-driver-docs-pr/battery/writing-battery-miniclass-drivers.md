@@ -49,9 +49,9 @@ Information about writing battery miniclass drivers is organized as follows:
 
 [Installing a Battery Driver](installing-a-battery-driver.md)
 
- 
+ 
 
- 
+ 
 
 
 

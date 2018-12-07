@@ -43,7 +43,7 @@ The GUID_DEVINTERFACE_VOLUME [device interface class](https://msdn.microsoft.com
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -75,9 +75,9 @@ Requirements
 
 [**VolumeClassGuid**](volumeclassguid.md)
 
- 
+ 
 
- 
+ 
 
 
 

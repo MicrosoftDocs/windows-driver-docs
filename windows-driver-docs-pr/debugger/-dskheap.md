@@ -3,7 +3,6 @@ title: dskheap
 description: The dskheap extension displays desktop heap information for a specified session.
 ms.assetid: e49c816f-963c-4383-a3bf-c03b2c0cfa39
 keywords: ["desktops", "dskheap Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -51,7 +50,7 @@ Specifies a session. If this parameter is omitted, then the desktop heap informa
 </tbody>
 </table>
 
- 
+
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -89,12 +88,11 @@ kd> !dskheap
 
                 Total Desktop: (    5312 KB -   7 desktops)
 #                 Session ID:  0
-
 ```
 
- 
 
- 
+
+
 
 
 

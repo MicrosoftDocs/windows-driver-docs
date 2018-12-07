@@ -3,7 +3,6 @@ title: minipkd.lun
 description: The minipkd.lun extension displays detailed information about the specified Logical Unit Extension (LUN).
 ms.assetid: f78b2c15-ecfc-4138-b595-a6e3f0f7f93c
 keywords: ["minipkd.lun Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -52,7 +51,7 @@ Specifies the physical device object (PDO) for the LUN.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -65,9 +64,9 @@ A LUN is typically referred to as a *device*. Thus, this extension displays info
 
 The LUN can be specified either by its address (which can be found in the **LUN** field of the [**!minipkd.adapters**](-minipkd-adapters.md) display), or by its physical device object (which can be found in the **DevObj** field of the **!minipkd.adapters** display).
 
- 
+ 
 
- 
+ 
 
 
 

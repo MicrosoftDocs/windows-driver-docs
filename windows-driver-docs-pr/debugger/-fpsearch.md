@@ -3,7 +3,6 @@ title: fpsearch
 description: The fpsearch extension searches the freed special pool for a specified address.
 ms.assetid: 70375723-7156-47ec-b6e1-b3c51b5caaf9
 keywords: ["special pool", "fpsearch Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -51,7 +50,7 @@ If set, the debugger displays the raw content of each page on the free list as i
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -116,9 +115,9 @@ CEAD000  00000000 00000000 00000000 00000000 ................
 
 You can stop execution at any point by pressing CTRL+BREAK (in WinDbg) or CTRL+C (in KD).
 
- 
+ 
 
- 
+ 
 
 
 

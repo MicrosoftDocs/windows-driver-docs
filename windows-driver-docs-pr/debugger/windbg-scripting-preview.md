@@ -1,7 +1,6 @@
 ---
 title: WinDbg Preview - Scripting Menu
 description: This section describes how to use scripting in the WinDbg preview debugger.
-ms.author: domars
 ms.date: 04/10/2017
 ms.localizationpriority: medium
 ---
@@ -53,14 +52,14 @@ Use **New Script** > **NatVis** to open the following blank NatVis template.
 
 For more information about working with NatVis, see [Debugger Objects in NatVis](native-debugger-objects-in-natvis.md).
 
- 
+ 
 ---
 
 ## See Also
 
 [Debugging Using WinDbg Preview](debugging-using-windbg-preview.md)
 
- 
+ 
 
 
 

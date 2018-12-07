@@ -35,9 +35,9 @@ The signature score ranks a driver according to how the driver is signed, as fol
 
 For more information about driver ranking, see [How Windows Ranks Drivers](how-setup-ranks-drivers--windows-vista-and-later-.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: prcb
 description: The prcb extension displays the processor control block (PRCB).
 ms.assetid: 747695a1-8a5d-4d30-9315-91f4bf7f568e
 keywords: ["processor control block", "prcb Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -48,7 +47,7 @@ Specifies the processor to retrieve the PRCB information from. If *Processor* is
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -71,9 +70,9 @@ Times -- Dpc    00000028 Interrupt 000003ff
          Kernel 00005ef4 User      00000385 
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,7 +1,6 @@
 ---
 Description: Describes the behavior of USB Device Emulation(UDE) class extension and tasks that a client driver must perform for an emulated host controller and devices attached to it.
 title: Write a UDE client driver
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -16,7 +15,7 @@ ms.localizationpriority: medium
 
 **Applies to:**
 
-- Windows 10
+- Windows 10
 
 **Last updated:**
 
@@ -33,7 +32,7 @@ Describes the behavior of USB Device Emulation(UDE) class extension and tasks th
 - [Install](http://go.microsoft.com/fwlink/p/?LinkID=733614) the latest Windows Driver Kit (WDK) your development computer. The kit has the required header files and libraries for writing a UDE client driver, specifically, you'll need:
   - The stub library, (Udecxstub.lib). The library translates calls made by the client driver and pass them up to UdeCx.
   - The header file, Udecx.h.
-- Install Windows 10 on your target computer.
+- Install Windows 10 on your target computer.
 - Familiarize yourself with UDE. See [Architecture: USB Device Emulation(UDE)](usb-emulated-device--ude--architecture.md).
 - Familiarize yourself with Windows Driver Foundation (WDF). Recommended reading: [Developing Drivers with Windows Driver Foundation]( http://go.microsoft.com/fwlink/p/?LinkId=691676), written by Penny Orwick and Guy Smith.
 
@@ -71,7 +70,7 @@ Here is the summary of the sequence in which the client driver retrieves a WDFDE
     Optional. Resets the host controller and/or the connected devices.
 
     ```cpp
-    
+
     EVT_WDF_DRIVER_DEVICE_ADD                 Controller_WdfEvtDeviceAdd;
 
     #define BASE_DEVICE_NAME                  L"\\Device\\USBFDO-"
@@ -116,135 +115,137 @@ Here is the summary of the sequence in which the client driver retrieves a WDFDE
         WdfDeviceInitSetRequestAttributes(WdfDeviceInit, &wdfRequestAttributes);
 
 
-        // To distinguish I/O sent to GUID_DEVINTERFACE_USB_HOST_CONTROLLER, we will enable
-        // enable interface reference strings by calling WdfDeviceInitSetFileObjectConfig
-        // with FileObjectClass WdfFileObjectWdfXxx.
 
-        WDF_FILEOBJECT_CONFIG_INIT(&fileConfig,
-                                    WDF_NO_EVENT_CALLBACK,
-                                    WDF_NO_EVENT_CALLBACK,
-                                    WDF_NO_EVENT_CALLBACK // No cleanup callback function
-                                    );
+    // To distinguish I/O sent to GUID_DEVINTERFACE_USB_HOST_CONTROLLER, we will enable
+    // enable interface reference strings by calling WdfDeviceInitSetFileObjectConfig
+    // with FileObjectClass WdfFileObjectWdfXxx.
 
-        ...
+    WDF_FILEOBJECT_CONFIG_INIT(&fileConfig,
+                                WDF_NO_EVENT_CALLBACK,
+                                WDF_NO_EVENT_CALLBACK,
+                                WDF_NO_EVENT_CALLBACK // No cleanup callback function
+                                );
 
-        WdfDeviceInitSetFileObjectConfig(WdfDeviceInit,
-                                            &fileConfig,
-                                            WDF_NO_OBJECT_ATTRIBUTES);
+    ...
 
-        ...
+    WdfDeviceInitSetFileObjectConfig(WdfDeviceInit,
+                                        &fileConfig,
+                                        WDF_NO_OBJECT_ATTRIBUTES);
 
-        // Do additional setup required for USB controllers.
+    ...
 
-        status = UdecxInitializeWdfDeviceInit(WdfDeviceInit);
+    // Do additional setup required for USB controllers.
 
-        ...
+    status = UdecxInitializeWdfDeviceInit(WdfDeviceInit);
 
-        WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE(&wdfDeviceAttributes, WDFDEVICE_CONTEXT);
-        wdfDeviceAttributes.EvtCleanupCallback = _ControllerWdfEvtCleanupCallback;
+    ...
 
-
-        // Call WdfDeviceCreate with a few extra compatibility steps to ensure this device looks
-        // exactly like other USB host controllers.
+    WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE(&wdfDeviceAttributes, WDFDEVICE_CONTEXT);
+    wdfDeviceAttributes.EvtCleanupCallback = _ControllerWdfEvtCleanupCallback;
 
 
-        isCreated = FALSE;
-
-        for (instanceNumber = 0; instanceNumber < ULONG_MAX; instanceNumber++) {
-
-            status = RtlUnicodeStringPrintf(&uniDeviceName,
-                                            L"%ws%d",
-                                            BASE_DEVICE_NAME,
-                                            instanceNumber);
-
-            ...
-
-            status = WdfDeviceInitAssignName(*WdfDeviceInit, &uniDeviceName);
-
-            ...
-
-            status = WdfDeviceCreate(WdfDeviceInit, WdfDeviceAttributes, WdfDevice);
-
-            if (status == STATUS_OBJECT_NAME_COLLISION) {
+    // Call WdfDeviceCreate with a few extra compatibility steps to ensure this device looks
+    // exactly like other USB host controllers.
 
 
-                // This is expected to happen at least once when another USB host controller
-                // already exists on the system.
+    isCreated = FALSE;
 
-            ...
+    for (instanceNumber = 0; instanceNumber < ULONG_MAX; instanceNumber++) {
 
-            } else if (!NT_SUCCESS(status)) {
-
-            ...
-
-            } else {
-
-                isCreated = TRUE;
-                break;
-            }
-        }
-
-        if (!isCreated) {
-
-            ...
-        }
-
-
-        // Create the symbolic link (also for compatibility).
-        status = RtlUnicodeStringPrintf(&uniSymLinkName,
+        status = RtlUnicodeStringPrintf(&uniDeviceName,
                                         L"%ws%d",
-                                        BASE_SYMBOLIC_LINK_NAME,
+                                        BASE_DEVICE_NAME,
                                         instanceNumber);
-        ...
-
-        status = WdfDeviceCreateSymbolicLink(*WdfDevice, &uniSymLinkName);
 
         ...
 
-        // Create the device interface.
-
-        RtlInitUnicodeString(&refString,
-                             USB_HOST_DEVINTERFACE_REF_STRING);
-
-        status = WdfDeviceCreateDeviceInterface(wdfDevice,
-                                                (LPGUID)&GUID_DEVINTERFACE_USB_HOST_CONTROLLER,
-                                                &refString);
+        status = WdfDeviceInitAssignName(*WdfDeviceInit, &uniDeviceName);
 
         ...
 
-        UDECX_WDF_DEVICE_CONFIG_INIT(&controllerConfig, Controller_EvtUdecxWdfDeviceQueryUsbCapability);
+        status = WdfDeviceCreate(WdfDeviceInit, WdfDeviceAttributes, WdfDevice);
 
-        status = UdecxWdfDeviceAddUsbDeviceEmulation(wdfDevice,
-                                                   &controllerConfig);
+        if (status == STATUS_OBJECT_NAME_COLLISION) {
 
 
-        // Create default queue. It only supports USB controller IOCTLs. (USB I/O will come through
-        // in separate USB device queues.)
-        // Shown later in this topic.
-
-        WDF_IO_QUEUE_CONFIG_INIT_DEFAULT_QUEUE(&defaultQueueConfig, WdfIoQueueDispatchSequential);
-        defaultQueueConfig.EvtIoDeviceControl = ControllerEvtIoDeviceControl;
-        defaultQueueConfig.PowerManaged = WdfFalse;
-
-        status = WdfIoQueueCreate(wdfDevice,
-                                  &defaultQueueConfig,
-                                  WDF_NO_OBJECT_ATTRIBUTES,
-                                  &pControllerContext->DefaultQueue);
+            // This is expected to happen at least once when another USB host controller
+            // already exists on the system.
 
         ...
 
-        // Initialize virtual USB device software objects.
-        // Shown later in this topic.
-
-        status = Usb_Initialize(wdfDevice);
+        } else if (!NT_SUCCESS(status)) {
 
         ...
 
-    exit:
+        } else {
 
-        return status;
+            isCreated = TRUE;
+            break;
+        }
     }
-    ```
+
+    if (!isCreated) {
+
+        ...
+    }
+
+
+    // Create the symbolic link (also for compatibility).
+    status = RtlUnicodeStringPrintf(&uniSymLinkName,
+                                    L"%ws%d",
+                                    BASE_SYMBOLIC_LINK_NAME,
+                                    instanceNumber);
+    ...
+
+    status = WdfDeviceCreateSymbolicLink(*WdfDevice, &uniSymLinkName);
+
+    ...
+
+    // Create the device interface.
+
+    RtlInitUnicodeString(&refString,
+                         USB_HOST_DEVINTERFACE_REF_STRING);
+
+    status = WdfDeviceCreateDeviceInterface(wdfDevice,
+                                            (LPGUID)&GUID_DEVINTERFACE_USB_HOST_CONTROLLER,
+                                            &refString);
+
+    ...
+
+    UDECX_WDF_DEVICE_CONFIG_INIT(&controllerConfig, Controller_EvtUdecxWdfDeviceQueryUsbCapability);
+
+    status = UdecxWdfDeviceAddUsbDeviceEmulation(wdfDevice,
+                                               &controllerConfig);
+
+
+    // Create default queue. It only supports USB controller IOCTLs. (USB I/O will come through
+    // in separate USB device queues.)
+    // Shown later in this topic.
+
+    WDF_IO_QUEUE_CONFIG_INIT_DEFAULT_QUEUE(&defaultQueueConfig, WdfIoQueueDispatchSequential);
+    defaultQueueConfig.EvtIoDeviceControl = ControllerEvtIoDeviceControl;
+    defaultQueueConfig.PowerManaged = WdfFalse;
+
+    status = WdfIoQueueCreate(wdfDevice,
+                              &defaultQueueConfig,
+                              WDF_NO_OBJECT_ATTRIBUTES,
+                              &pControllerContext->DefaultQueue);
+
+    ...
+
+    // Initialize virtual USB device software objects.
+    // Shown later in this topic.
+
+    status = Usb_Initialize(wdfDevice);
+
+    ...
+
+exit:
+
+    return status;
+}
+```
+
 
 ## Handle user-mode IOCTL requests sent to the host controller
 
@@ -357,45 +358,45 @@ Here is the summary of the sequence in which the client driver creates a UDECXUS
 
     These functions are implemented by the client driver to create or configure endpoints.
 
-    - [*EVT\_UDECX\_USB\_DEVICE\_DEFAULT\_ENDPOINT\_ADD*](https://msdn.microsoft.com/library/windows/hardware/mt595912)
-    - [*EVT\_UDECX\_USB\_DEVICE\_ENDPOINT\_ADD*](https://msdn.microsoft.com/library/windows/hardware/mt595914)
-    - [*EVT\_UDECX\_USB\_DEVICE\_ENDPOINTS\_CONFIGURE*](https://msdn.microsoft.com/library/windows/hardware/mt595913)
+   - [*EVT\_UDECX\_USB\_DEVICE\_DEFAULT\_ENDPOINT\_ADD*](https://msdn.microsoft.com/library/windows/hardware/mt595912)
+   - [*EVT\_UDECX\_USB\_DEVICE\_ENDPOINT\_ADD*](https://msdn.microsoft.com/library/windows/hardware/mt595914)
+   - [*EVT\_UDECX\_USB\_DEVICE\_ENDPOINTS\_CONFIGURE*](https://msdn.microsoft.com/library/windows/hardware/mt595913)
 
-    <!-- -->
+     <!-- -->
 
-    - [*EVT\_UDECX\_USB\_DEVICE\_D0\_ENTRY*](https://msdn.microsoft.com/library/windows/hardware/mt595910)
-    - [*EVT\_UDECX\_USB\_DEVICE\_D0\_EXIT*](https://msdn.microsoft.com/library/windows/hardware/mt595911)
-    - [*EVT\_UDECX\_USB\_DEVICE\_SET\_FUNCTION\_SUSPEND\_AND\_WAKE*](https://msdn.microsoft.com/library/windows/hardware/mt595915)
+   - [*EVT\_UDECX\_USB\_DEVICE\_D0\_ENTRY*](https://msdn.microsoft.com/library/windows/hardware/mt595910)
+   - [*EVT\_UDECX\_USB\_DEVICE\_D0\_EXIT*](https://msdn.microsoft.com/library/windows/hardware/mt595911)
+   - [*EVT\_UDECX\_USB\_DEVICE\_SET\_FUNCTION\_SUSPEND\_AND\_WAKE*](https://msdn.microsoft.com/library/windows/hardware/mt595915)
 
 3. Call [**UdecxUsbDeviceInitSetSpeed**](https://msdn.microsoft.com/library/windows/hardware/mt627971) to set the USB device speed and also the type of device, USB 2.0 or a SuperSpeed device.
 4. Call [**UdecxUsbDeviceInitSetEndpointsType**](https://msdn.microsoft.com/library/windows/hardware/mt627970) to specify the type of endpoints the device supports: simple or dynamic. If the client driver chooses to create simple endpoints, the driver must create all endpoint objects before plugging in the device. The device must have only one configuration and only one interface setting per interface. In the case of dynamic endpoints, the driver can create endpoints at anytime after plugging in the device when it receives an [*EVT\_UDECX\_USB\_DEVICE\_ENDPOINTS\_CONFIGURE*](https://msdn.microsoft.com/library/windows/hardware/mt595913) event callback. See [Create dynamic endpoints](#dynamic).
 5. Call any of these methods to add necessary descriptors to the device.
 
-    - [**UdecxUsbDeviceInitAddDescriptor**](https://msdn.microsoft.com/library/windows/hardware/mt627964)
-    - [**UdecxUsbDeviceInitAddDescriptorWithIndex**](https://msdn.microsoft.com/library/windows/hardware/mt627965)
-    - [**UdecxUsbDeviceInitAddStringDescriptor**](https://msdn.microsoft.com/library/windows/hardware/mt627966)
-    - [**UdecxUsbDeviceInitAddStringDescriptorRaw**](https://msdn.microsoft.com/library/windows/hardware/mt627967)
+   - [**UdecxUsbDeviceInitAddDescriptor**](https://msdn.microsoft.com/library/windows/hardware/mt627964)
+   - [**UdecxUsbDeviceInitAddDescriptorWithIndex**](https://msdn.microsoft.com/library/windows/hardware/mt627965)
+   - [**UdecxUsbDeviceInitAddStringDescriptor**](https://msdn.microsoft.com/library/windows/hardware/mt627966)
+   - [**UdecxUsbDeviceInitAddStringDescriptorRaw**](https://msdn.microsoft.com/library/windows/hardware/mt627967)
 
-    If the UDE class extension receives a request for a standard descriptor that the client driver has provided during initialization by using one of the preceding methods, the class extension automatically completes the request. The class extension does not forward that request to the client driver. This design reduces the number of requests that the driver needs to process for control requests. Additionally, it also eliminates the need for the driver to implement descriptor logic that requires extensive parsing of the setup packet and handling **wLength** and **TransferBufferLength** correctly. This list includes the standard requests. The client driver does not need to check for these requests (only if the preceding methods were called to add descriptor):
+     If the UDE class extension receives a request for a standard descriptor that the client driver has provided during initialization by using one of the preceding methods, the class extension automatically completes the request. The class extension does not forward that request to the client driver. This design reduces the number of requests that the driver needs to process for control requests. Additionally, it also eliminates the need for the driver to implement descriptor logic that requires extensive parsing of the setup packet and handling **wLength** and **TransferBufferLength** correctly. This list includes the standard requests. The client driver does not need to check for these requests (only if the preceding methods were called to add descriptor):
 
-    - USB\_REQUEST\_GET\_DESCRIPTOR
-    - USB\_REQUEST\_SET\_CONFIGURATION
-    - USB\_REQUEST\_SET\_INTERFACE
-    - USB\_REQUEST\_SET\_ADDRESS
-    - USB\_REQUEST\_SET\_FEATURE
-    - USB\_FEATURE\_FUNCTION\_SUSPEND
-    - USB\_FEATURE\_REMOTE\_WAKEUP
-    - USB\_REQUEST\_CLEAR\_FEATURE
-    - USB\_FEATURE\_ENDPOINT\_STALL
-    - USB\_REQUEST\_SET\_SEL
-    - USB\_REQUEST\_ISOCH\_DELAY
+   - USB\_REQUEST\_GET\_DESCRIPTOR
+   - USB\_REQUEST\_SET\_CONFIGURATION
+   - USB\_REQUEST\_SET\_INTERFACE
+   - USB\_REQUEST\_SET\_ADDRESS
+   - USB\_REQUEST\_SET\_FEATURE
+   - USB\_FEATURE\_FUNCTION\_SUSPEND
+   - USB\_FEATURE\_REMOTE\_WAKEUP
+   - USB\_REQUEST\_CLEAR\_FEATURE
+   - USB\_FEATURE\_ENDPOINT\_STALL
+   - USB\_REQUEST\_SET\_SEL
+   - USB\_REQUEST\_ISOCH\_DELAY
 
-    However, requests for the interface, class-specific, or vendor-defined descriptor, the UDE class extension forwards them to the client driver. The driver must handle those GET\_DESCRIPTOR requests.
+     However, requests for the interface, class-specific, or vendor-defined descriptor, the UDE class extension forwards them to the client driver. The driver must handle those GET\_DESCRIPTOR requests.
 
 6. Call [**UdecxUsbDeviceCreate**](https://msdn.microsoft.com/library/windows/hardware/mt595959) to create the UDE device object and retrieve the UDECXUSBDEVICE handle.
 7. Create static endpoints by calling [**UdecxUsbEndpointCreate**](https://msdn.microsoft.com/library/windows/hardware/mt627983). See [Create static endpoints](#static).
 8. Call [**UdecxUsbDevicePlugIn**](https://msdn.microsoft.com/library/windows/hardware/mt627975) to indicate to the UDE class extension that the device is attached and can receive I/O requests on endpoints. After this call, the class extension can also invoke callback functions on endpoints and the USB device.
-    **Note**  If the USB device needs to be removed at runtime, the client driver can call [**UdecxUsbDevicePlugOutAndDelete**](https://msdn.microsoft.com/library/windows/hardware/mt627977). If the driver wants to use the device, it must create it by calling [**UdecxUsbDeviceCreate**](https://msdn.microsoft.com/library/windows/hardware/mt595959).
+    **Note**  If the USB device needs to be removed at runtime, the client driver can call [**UdecxUsbDevicePlugOutAndDelete**](https://msdn.microsoft.com/library/windows/hardware/mt627977). If the driver wants to use the device, it must create it by calling [**UdecxUsbDeviceCreate**](https://msdn.microsoft.com/library/windows/hardware/mt595959).
 
 In this example, the descriptor declarations are assumed to be global variables, declared as shown here for a HID device just as an example:
 
@@ -785,7 +786,7 @@ At times, data transfers can fail due to various reasons, such as a stall condit
 
 This call is asynchronous. After the client is finished with the reset operation, driver must complete the request with an appropriate failure code by calling [**WdfRequestComplete**](https://msdn.microsoft.com/library/windows/hardware/ff549945). That call notifies the UDE client extension about the completion of the reset operation with status.
 
-**Note**  If a complex solution is required for error recovery, the client driver has the option of resetting the host controller. This logic can be implemented in the [*EVT\_UDECX\_WDF\_DEVICE\_RESET*](https://msdn.microsoft.com/library/windows/hardware/mt595920) callback function that the driver registered in its [**UdecxWdfDeviceAddUsbDeviceEmulation**](https://msdn.microsoft.com/library/windows/hardware/mt627990) call. If applicable, the driver can reset the host controller and all downstream devices. If the client driver does not need to reset the controller but reset all downstream devices, the driver must specify **UdeWdfDeviceResetActionResetEachUsbDevice** in the configuration parameters during registration. In that case, the class extension invokes *EVT\_UDECX\_WDF\_DEVICE\_RESET* for each connected device.
+**Note**  If a complex solution is required for error recovery, the client driver has the option of resetting the host controller. This logic can be implemented in the [*EVT\_UDECX\_WDF\_DEVICE\_RESET*](https://msdn.microsoft.com/library/windows/hardware/mt595920) callback function that the driver registered in its [**UdecxWdfDeviceAddUsbDeviceEmulation**](https://msdn.microsoft.com/library/windows/hardware/mt627990) call. If applicable, the driver can reset the host controller and all downstream devices. If the client driver does not need to reset the controller but reset all downstream devices, the driver must specify **UdeWdfDeviceResetActionResetEachUsbDevice** in the configuration parameters during registration. In that case, the class extension invokes *EVT\_UDECX\_WDF\_DEVICE\_RESET* for each connected device.
 
 ## Implement queue state management
 
@@ -835,51 +836,51 @@ Below is the flow of typical I/O processing for the URB of an USB OUT transfer.
 ```cpp
 static VOID
 IoEvtSampleOutUrb(
-	_In_ WDFQUEUE Queue,
-	_In_ WDFREQUEST Request,
-	_In_ size_t OutputBufferLength,
-	_In_ size_t InputBufferLength,
-	_In_ ULONG IoControlCode
+    _In_ WDFQUEUE Queue,
+    _In_ WDFREQUEST Request,
+    _In_ size_t OutputBufferLength,
+    _In_ size_t InputBufferLength,
+    _In_ ULONG IoControlCode
 )
 {
-	PENDPOINTQUEUE_CONTEXT pEpQContext;
-	NTSTATUS status = STATUS_SUCCESS;
-	PUCHAR transferBuffer;
-	ULONG transferBufferLength = 0;
+    PENDPOINTQUEUE_CONTEXT pEpQContext;
+    NTSTATUS status = STATUS_SUCCESS;
+    PUCHAR transferBuffer;
+    ULONG transferBufferLength = 0;
 
-	UNREFERENCED_PARAMETER(OutputBufferLength);
-	UNREFERENCED_PARAMETER(InputBufferLength);
+    UNREFERENCED_PARAMETER(OutputBufferLength);
+    UNREFERENCED_PARAMETER(InputBufferLength);
 
-	// one possible way to get context info
-	pEpQContext = GetEndpointQueueContext(Queue);
+    // one possible way to get context info
+    pEpQContext = GetEndpointQueueContext(Queue);
 
-	if (IoControlCode != IOCTL_INTERNAL_USB_SUBMIT_URB)
-	{
-		LogError(TRACE_DEVICE, "WdfRequest %p Incorrect IOCTL %x, %!STATUS!",
-			Request, IoControlCode, status);
-		status = STATUS_INVALID_PARAMETER;
-		goto exit;
-	}
+    if (IoControlCode != IOCTL_INTERNAL_USB_SUBMIT_URB)
+    {
+        LogError(TRACE_DEVICE, "WdfRequest %p Incorrect IOCTL %x, %!STATUS!",
+            Request, IoControlCode, status);
+        status = STATUS_INVALID_PARAMETER;
+        goto exit;
+    }
 
-	status = UdecxUrbRetrieveBuffer(Request, &transferBuffer, &transferBufferLength);
-	if (!NT_SUCCESS(status))
-	{
-		LogError(TRACE_DEVICE, "WdfRequest %p unable to retrieve buffer %!STATUS!",
-			Request, status);
-		goto exit;
-	}
+    status = UdecxUrbRetrieveBuffer(Request, &transferBuffer, &transferBufferLength);
+    if (!NT_SUCCESS(status))
+    {
+        LogError(TRACE_DEVICE, "WdfRequest %p unable to retrieve buffer %!STATUS!",
+            Request, status);
+        goto exit;
+    }
 
-	if (transferBufferLength >= 1)
-	{
-		//consume one byte of output data
-		pEpQContext->global_storage = transferBuffer[0];
-	}
+    if (transferBufferLength >= 1)
+    {
+        //consume one byte of output data
+        pEpQContext->global_storage = transferBuffer[0];
+    }
 
 exit:
-	// writes never pended, always completed
-	UdecxUrbSetBytesCompleted(Request, transferBufferLength);
-	UdecxUrbCompleteWithNtStatus(Request, status);
-	return;
+    // writes never pended, always completed
+    UdecxUrbSetBytesCompleted(Request, transferBufferLength);
+    UdecxUrbCompleteWithNtStatus(Request, status);
+    return;
 }
 ```
 

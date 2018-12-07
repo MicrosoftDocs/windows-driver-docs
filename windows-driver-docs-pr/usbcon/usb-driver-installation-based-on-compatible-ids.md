@@ -1,7 +1,6 @@
 ---
 Description: Microsoft-provided in-box driver (Usbser.sys) for your Communications and CDC Control device.
 title: USB serial driver (Usbser.sys)
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -38,7 +37,7 @@ Load the Microsoft-provided in-box driver (Usbser.sys) for your Communications a
 
 **Note**  If you trying to install a USB device class driver included in Windows, you do not need to download the driver. They are installed automatically. If they are not installed automatically, contact the device manufacturer. For the list of USB device class driver included in Windows, see [USB device class drivers included in Windows](supported-usb-classes.md).
 
- 
+ 
 
 **Windows 10**
 
@@ -54,7 +53,7 @@ In Windows 10, a new INF, Usbser.inf, has been added to %Systemroot%\\Inf that 
 
 **Note**  Microsoft encourages you to use in-box drivers whenever possible. On mobile editions of Windows, such as Windows 10 Mobile, only drivers that are part of the operating system are loaded. Unlike desktop editions, it is not possible to load a driver through an external driver package. With the new in-box INF, Usbser.sys is automatically loaded if a USB-to-serial device is detected on the mobile device.
 
- 
+ 
 
 **Windows 8.1 and earlier versions**
 

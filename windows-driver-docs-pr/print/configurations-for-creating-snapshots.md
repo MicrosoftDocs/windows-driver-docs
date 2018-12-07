@@ -1,6 +1,5 @@
 ---
 title: Configurations for Creating Snapshots
-author: windows-driver-content
 description: Configurations for Creating Snapshots
 ms.assetid: d837348e-81e2-432a-b8b2-5df9cc1c7a9a
 keywords:
@@ -22,9 +21,9 @@ Today: Sunday
 Weather: Cloudy
 ```
 
- 
+ 
 
- 
+ 
 
 
 

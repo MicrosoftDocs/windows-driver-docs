@@ -1,6 +1,5 @@
 ---
 title: OID_NDK_SET_STATE
-author: windows-driver-content
 description: As a set request, NDIS and overlying drivers use the OID_NDK_SET_STATE OID to set the state of the miniport adapter's NDK functionality.
 ms.assetid: 5BA49F42-FE37-4860-B68F-92A7F4007639
 ms.date: 08/08/2017
@@ -39,7 +38,7 @@ To enable or disable its NDK functionality, the miniport driver's [*MiniportOidR
 
 **Note**  An NDK-capable miniport driver must never call [**NdisMNetPnPEvent**](https://msdn.microsoft.com/library/windows/hardware/ff563616) from the context of its [*MiniportOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff559416) function, because doing so could cause a deadlock. Instead, it should call **NdisMNetPnPEvent** from some other context or queue a work item.
 
- 
+ 
 
 An NDK-capable miniport driver's [*MiniportOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff559416) function must return **STATUS\_SUCCESS** for an OID\_NDK\_SET\_STATE OID request unless a failure occurs. The driver must not return **NDIS\_STATUS\_PENDING**.
 
@@ -86,9 +85,9 @@ Requirements
 
 [OID\_NDK\_SET\_STATE](oid-ndk-set-state.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Registering and Queuing a CustomDpc Routine
-author: windows-driver-content
 description: Registering and Queuing a CustomDpc Routine
 ms.assetid: 7c35f8f8-a6dc-43b1-9120-701227d7b4c5
 keywords: ["CustomDpc", "registering CustomDpc routine", "queuing CustomDpc routine"]
@@ -14,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-A driver registers a [*CustomDpc*](https://msdn.microsoft.com/library/windows/hardware/ff542972) routine for a device object by calling [**KeInitializeDpc**](https://msdn.microsoft.com/library/windows/hardware/ff552130) after it has created the device object. The driver can make this call from its [*AddDevice*](https://msdn.microsoft.com/library/windows/hardware/ff540521) routine, or from [*DispatchPnP*](https://msdn.microsoft.com/library/windows/hardware/ff543341) code that handles [**IRP\_MN\_START\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551749) requests.
+A driver registers a [*CustomDpc*](https://msdn.microsoft.com/library/windows/hardware/ff542972) routine for a device object by calling [**KeInitializeDpc**](https://msdn.microsoft.com/library/windows/hardware/ff552130) after it has created the device object. The driver can make this call from its [*AddDevice*](https://msdn.microsoft.com/library/windows/hardware/ff540521) routine, or from [*DispatchPnP*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) code that handles [**IRP\_MN\_START\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551749) requests.
 
 Just before the driver's ISR returns control, it can call [**KeInsertQueueDpc**](https://msdn.microsoft.com/library/windows/hardware/ff552185) to queue the *CustomDpc* routine for execution. The following figure illustrates calls to these routines.
 
@@ -34,9 +33,9 @@ A *CustomDpc* routine is responsible for doing whatever is necessary to complete
 
 The ISR and *CustomDpc* routines can be run concurrently on an SMP machine. Therefore, when writing *CustomDpc* routines, follow the guidelines set out in the previous section, [Registering and Queuing a DpcForIsr Routine](registering-and-queuing-a-dpcforisr-routine.md).
 
- 
+ 
 
- 
+ 
 
 
 

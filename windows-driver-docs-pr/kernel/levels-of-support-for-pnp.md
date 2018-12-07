@@ -1,6 +1,5 @@
 ---
 title: Levels of Support for PnP
-author: windows-driver-content
 description: Levels of Support for PnP
 ms.assetid: 33e0b4c6-858c-4822-ba49-38eb87a5923d
 keywords: ["PnP WDK kernel , device support", "Plug and Play WDK kernel , device support", "full PnP WDK kernel", "partial PnP WDK kernel"]
@@ -43,7 +42,7 @@ The extent to which a device supports PnP depends on the PnP support in both the
 </tbody>
 </table>
 
- 
+ 
 
 Any device that supports PnP should have PnP support in its drivers.
 
@@ -53,9 +52,9 @@ If a driver does not support PnP, its devices behave as non-PnP devices regardle
 
 *Legacy drivers* (that is, drivers written before the operating system supported PnP) continue to work as they did previously, without any PnP capability. New drivers should include PnP support.
 
- 
+ 
 
- 
+ 
 
 
 

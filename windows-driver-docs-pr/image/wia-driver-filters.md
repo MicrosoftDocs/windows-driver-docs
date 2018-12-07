@@ -1,6 +1,5 @@
 ---
 title: WIA Driver Filters
-author: windows-driver-content
 description: WIA Driver Filters
 ms.assetid: e7e239b5-aaa5-4d7a-a872-2ad37af3d1a9
 ms.date: 04/20/2017
@@ -18,9 +17,9 @@ This section includes:
 
 [WIA Segmentation Filter](wia-segmentation-filter.md)
 
- 
+ 
 
- 
+ 
 
 
 

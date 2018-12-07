@@ -23,14 +23,16 @@ Some TAEF features, such as [Cross Machine Test Execution](cross-machine-executi
     sc start Te.Service
     ```
 
-    **Note**  On CoreSystem, Te.Service can run as a console application instead of a service.
+    **Note**  On CoreSystem, Te.Service can run as a console application instead of a service.
 
-     
 
-    ``` syntax
-    cd [your Wex.Services.exe directory]
-    Wex.Services.exe /run:Te.Service
-    ```
+
+
+``` syntax
+cd [your Wex.Services.exe directory]
+Wex.Services.exe /run:Te.Service
+```
+
 
 ## <span id="stopping_and_removing_te.service"></span><span id="STOPPING_AND_REMOVING_TE.SERVICE"></span>Stopping and Removing Te.Service
 
@@ -94,9 +96,9 @@ Example:
     TestNotification::RegisterHandler(HandlerEx));
 ```
 
- 
 
- 
+
+
 
 
 

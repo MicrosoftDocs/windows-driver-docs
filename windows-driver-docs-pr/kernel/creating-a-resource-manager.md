@@ -1,6 +1,5 @@
 ---
 title: Creating a Resource Manager
-author: windows-driver-content
 description: Creating a Resource Manager
 ms.assetid: b2841d56-650a-487c-a002-2521cd1b461b
 keywords: ["resource managers WDK KTM , creating resource managers", "enlistments WDK KTM , read-only enlistments", "read-only enlistments WDK KTM", "resource managers WDK KTM , volatile resource managers", "volatile resource managers WDK KTM", "resource managers WDK KTM , adding to a TPS", "transaction processing systems WDK KTM , adding resource managers", "TPS WDK KTM , adding resource managers"]
@@ -118,9 +117,9 @@ If you have to add an additional resource manager to an existing TPS, you have t
 
 After you have added your resource manager to the TPS, clients that are aware of your resource manager can call the resource manager's client interface.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Introduction to Dynamic Hardware Partitioning
-author: windows-driver-content
 description: Introduction to Dynamic Hardware Partitioning
 ms.assetid: 0d909c64-17c4-4f0e-85b7-4e0a6a92eeee
 keywords: ["dynamic hardware partitioning WDK , about dynamic hardware partitioning", "hardware partitioning WDK dynamic , about dynamic hardware partitioning", "partitions WDK dynamic hardware , about dynamic hardware partitioning", "hardware partitionable servers WDK", "partition units WDK dynamic hardware partitions", "statically partitionable servers WDK dynamic hardware partitioning", "dynamically partitionable servers WDK dynamic hardware partitioning", "hot add WDK dynamic hardware partitioning", "hot remove WDK dynamic hardware partitioning", "hot replace WDK dynamic hardware partitioning", "servers WDK dynamic hardware partitioning", "hardware partitions WDK"]
@@ -74,7 +73,7 @@ memory modules</td>
 </tbody>
 </table>
 
- 
+ 
 
 We suggest that you consider the following guidelines when you develop your device drivers:
 
@@ -88,9 +87,9 @@ Drivers that you develop for Windows XP and later versions of Windows that corre
 
 Most existing user-mode applications should continue to run on dynamically partitionable servers without any modification. However, if an application allocates threads for each processor or performs memory allocations that are based on how much physical memory is available, the application can register with the operating system to be notified of changes to the hardware configuration. When the application is notified about a change to the hardware configuration, it can adjust its resource allocation accordingly.
 
- 
+ 
 
- 
+ 
 
 
 

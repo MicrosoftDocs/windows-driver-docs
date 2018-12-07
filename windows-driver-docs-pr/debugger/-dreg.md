@@ -3,7 +3,6 @@ title: dreg
 description: The dreg extension displays registry information.
 ms.assetid: a54ed14e-eb9d-48fd-877d-d6d0fe4a8d3f
 keywords: ["dreg Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -72,7 +71,7 @@ Specifies the name of the registry value to be displayed. If an asterisk (\*) is
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -109,9 +108,9 @@ The following will display the value Start in the specified registry key:
 
 Typing **!dreg** without any arguments will display some brief Help text for this extension in the Debugger Command window.
 
- 
+ 
 
- 
+ 
 
 
 

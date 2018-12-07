@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_P2P_DEVICE_NAME
-author: windows-driver-content
 description: WDI_TLV_P2P_DEVICE_NAME is a TLV that contains a device name.
 ms.assetid: 7FB04079-7F82-4D7B-95BA-45B5832B36C0
 ms.date: 07/18/2017
@@ -31,7 +30,7 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 |-----------|---------------------------------------------------------------------------|
 | UINT8\[\] | An array of UINT8 elements that specifies the device name for the device. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

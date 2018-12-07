@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 **Note**  This information applies to Windows XP and earlier operating systems. Starting with Windows Vista, **IDirectSound::GetSpeakerConfig** and **IDirectSound::SetSpeakerConfig** have been deprecated.
 
- 
+ 
 
 An application program can change the DirectSound speaker configuration to direct-out mode by calling the **IDirectSound::SetSpeakerConfig** method with the speaker-configuration parameter set to DSSPEAKER\_DIRECTOUT (see Microsoft Windows SDK documentation). This specifies a speakerless configuration in which the channels in the playback stream from the application are output directly to the audio adapter without being interpreted as speaker positions. However, the input stream can still be modified by sample-rate conversion, attenuation, filtering, and other types of processing that require no assumptions about the assignment of speakers to channels.
 
@@ -48,7 +48,7 @@ Bass
 
 Piano
 
- 
+ 
 
 For this kind of raw audio data, speaker positions are meaningless, and assigning speaker positions to the input or output streams might cause unwanted side effects. For example, a component such as KMixer might intervene inappropriately by applying speaker-specific effects such as 3D virtualization or Dolby Surround Pro Logic encoding to the stream. Note that the number of raw-data channels is not limited by the number of bits in the channel mask.
 
@@ -80,9 +80,9 @@ An audio authoring application might need to let the user listen to the data tha
 
 KMixer mixes only the stereo channels of the playback stream, which are described in the channel mask, and discards the remaining 22 channels, which contain raw data. Remember that any change made to the DirectSound speaker-configuration setting is unlikely to take effect until the current DirectSound object is destroyed and another is created (see [Applying Speaker-Configuration Settings](applying-speaker-configuration-settings.md)).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: NdisGetNextMdl macro
-author: windows-driver-content
 description: The NdisGetNextMdl macro retrieves the next MDL in an MDL chain, given a pointer to the current MDL.
 ms.assetid: 5b59ca7c-0998-4d53-9553-4946ef85327c
 ms.date: 07/18/2017
@@ -19,8 +18,8 @@ Syntax
 
 ```ManagedCPlusPlus
 VOID NdisGetNextMdl(
-    _CurrentMdl,
-    _NextMdl
+    _CurrentMdl,
+    _NextMdl
 );
 ```
 
@@ -76,9 +75,9 @@ Requirements
 
 [**NdisGetNextBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff552070)
 
- 
+ 
 
- 
+ 
 
 
 

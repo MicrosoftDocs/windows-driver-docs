@@ -1,6 +1,5 @@
 ---
 title: Improvements in XPSDrv
-author: windows-driver-content
 description: This topic provides information about updates that have been made to the XPSDrv rendering architecture.
 ms.assetid: 5D76ECA2-C5F6-47E4-BC05-B5137AD4196B
 ms.date: 04/20/2017
@@ -28,7 +27,7 @@ The XPS Rasterization Service can also provide rasterization in several pixel fo
 | GUID\_WICPixelFormat64bppPRGBAHalf   | 4             | 16               | 64             | Float        |
 | GUID\_WICPixelFormat128bppPRGBAFloat | 4             | 32               | 128            | Float        |
 
- 
+ 
 
 **IPrintCoreHelperUni2**
 

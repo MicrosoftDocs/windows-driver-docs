@@ -24,9 +24,9 @@ To register call manager entry points, MCMs initialize an [**NDIS\_CO\_CALL\_MAN
 
 For more information about configuring optional miniport driver services, see [Configuring Optional Miniport Driver Services](configuring-optional-miniport-driver-services.md).
 
- 
+ 
 
- 
+ 
 
 
 

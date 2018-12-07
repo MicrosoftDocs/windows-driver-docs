@@ -30,9 +30,9 @@ The following topics describe how to handle port PnP events:
 
 [Handling the Port Deactivation PnP Event](handling-the-port-deactivation-pnp-event.md)
 
- 
+ 
 
- 
+ 
 
 
 

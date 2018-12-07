@@ -1,6 +1,5 @@
 ---
 title: Creating the Control Device Object
-author: windows-driver-content
 description: Creating the Control Device Object
 ms.assetid: 9f89fd24-59b8-4529-b151-4e91e6334173
 keywords:
@@ -41,7 +40,7 @@ Unlike file systems, file system filter drivers are not required to name their c
 
 **Note**  The control device object is the only type of device object that can safely be named, because it is the only device object that is not attached to a driver stack. Thus, control device objects for file system filter drivers can optionally be named. Note that control device objects for file systems must be named. Filter device objects should never be named.
 
- 
+ 
 
 The value that is assigned to the *DeviceType* parameter should be one of the device types that are defined in ntifs.h, such as FILE\_DEVICE\_DISK\_FILE\_SYSTEM.
 
@@ -49,9 +48,9 @@ If a non-**NULL** value is passed in the *DeviceName* parameter, the *DeviceChar
 
 An effective way for a file system filter driver to identify its own control device object in dispatch routines is to compare the device pointer and a previously stored global pointer to the control device object. Thus, the preceding sample stores the *DeviceObject* pointer that was returned by [**IoCreateDevice**](https://msdn.microsoft.com/library/windows/hardware/ff548397) into `gControlDeviceObject`, a globally defined pointer variable.
 
- 
+ 
 
- 
+ 
 
 
 

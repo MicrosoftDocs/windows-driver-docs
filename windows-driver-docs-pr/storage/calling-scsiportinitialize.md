@@ -1,6 +1,5 @@
 ---
 title: Calling ScsiPortInitialize
-author: windows-driver-content
 description: Calling ScsiPortInitialize
 ms.assetid: a736f279-9ade-4043-90f7-209fca260a39
 keywords:
@@ -65,9 +64,9 @@ Each SCSI miniport driver defines the internal structure and contents of its dev
 
 **ScsiPortInitialize** can be called only from a miniport driver's **DriverEntry** routine. For more information, see [**HW\_INITIALIZATION\_DATA (SCSI)**](https://msdn.microsoft.com/library/windows/hardware/ff557456) and [**ScsiPortInitialize**](https://msdn.microsoft.com/library/windows/hardware/ff564645).
 
- 
+ 
 
- 
+ 
 
 
 

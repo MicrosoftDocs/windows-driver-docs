@@ -3,7 +3,6 @@ title: Bug Check 0x122 WHEA_INTERNAL_ERROR
 description: The WHEA_INTERNAL_ERROR bug check has a value of 0x00000122.
 ms.assetid: b0bf1f27-bfdd-4d5d-aeac-f74f45c6174f
 keywords: ["Bug Check 0x122 WHEA_INTERNAL_ERROR", "WHEA_INTERNAL_ERROR"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -108,7 +107,7 @@ The WHEA\_INTERNAL\_ERROR bug check has a value of 0x00000122. This bug check in
 </tbody>
 </table>
 
- 
+ 
 
 If Parameter 1 is equal to 0x6, 0x9, 0xA, or 0xB, one of the other parameters contains the error source type. The following table gives possible values for the error source type.
 
@@ -127,11 +126,11 @@ If Parameter 1 is equal to 0x6, 0x9, 0xA, or 0xB, one of the other parameters co
 | 0x0A  | Itanium machine check                |
 | 0x0B  | Itanium corrected platform error     |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

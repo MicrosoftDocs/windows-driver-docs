@@ -1,6 +1,5 @@
 ---
 title: Custom sensor data fields
-author: windows-driver-content
 description: This topic provides information about the data fields that can be used by a custom sensor.
 ms.assetid: 8034B185-8A1B-43D9-9FFC-02E85284008A
 ms.date: 07/20/2018
@@ -76,11 +75,11 @@ HID drivers only support the VT\_UI4 type for custom properties, while non-HID d
 ## Related topics
 
 
-[PROPVARIANT structure](http://go.microsoft.com/fwlink/p/?linkid=313395)
+[PROPVARIANT structure](https://go.microsoft.com/fwlink/p/?linkid=313395)
 
- 
+ 
 
- 
+ 
 
 
 

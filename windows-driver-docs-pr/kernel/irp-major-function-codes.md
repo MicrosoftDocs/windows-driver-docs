@@ -1,6 +1,5 @@
 ---
 title: IRP Major Function Codes
-author: windows-driver-content
 description: IRP Major Function Codes
 ms.date: 08/12/2017
 ms.assetid: 11c5b1a9-74c0-47fb-8cce-a008ece9efae
@@ -13,7 +12,7 @@ ms.localizationpriority: medium
 
 
 
-Each driver-specific I/O stack location ([**IO\_STACK\_LOCATION**](https://msdn.microsoft.com/library/windows/hardware/ff550659)) for every [**IRP**](https://msdn.microsoft.com/library/windows/hardware/ff550694) contains a major function code (**IRP\_MJ\_*XXX***), which tells the driver what operation it or the underlying device driver should carry out to satisfy the I/O request. Each kernel-mode driver must provide [*dispatch routines*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-dispatch-routine) for the major function codes that it must support.
+Each driver-specific I/O stack location ([**IO\_STACK\_LOCATION**](https://msdn.microsoft.com/library/windows/hardware/ff550659)) for every [**IRP**](https://msdn.microsoft.com/library/windows/hardware/ff550694) contains a major function code (<strong>IRP\_MJ\_*XXX</strong><em>), which tells the driver what operation it or the underlying device driver should carry out to satisfy the I/O request. Each kernel-mode driver must provide [</em>dispatch routines*](<https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-dispatch-routine>) for the major function codes that it must support.
 
 The specific operations a driver carries out for a given **IRP\_MJ\_*XXX*** code depend somewhat on the underlying device, particularly for [**IRP\_MJ\_DEVICE\_CONTROL**](irp-mj-device-control.md) and [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](irp-mj-internal-device-control.md) requests. For example, the requests sent to a keyboard driver are necessarily somewhat different from those sent to a disk driver. However, the I/O manager defines the parameters and I/O stack location contents for each system-defined major function code.
 
@@ -57,9 +56,9 @@ The input and output parameters described in this section are the function-speci
 
 For more information about IRPs, see [Handling IRPs](https://msdn.microsoft.com/library/windows/hardware/ff546847).
 
- 
+ 
 
- 
+ 
 
 
 

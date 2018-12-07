@@ -1,6 +1,5 @@
 ---
 title: WIA Compatibility Layer Message Mapping
-author: windows-driver-content
 description: WIA Compatibility Layer Message Mapping
 ms.assetid: 4bdf72e1-48ce-43f8-af62-0a2f6d01f558
 ms.date: 04/20/2017
@@ -18,9 +17,9 @@ This section contains information on the following topics:
 
 [Mapping for a Vista Application and Legacy Driver](mapping-for-a-vista-application-and-legacy-driver.md)
 
- 
+ 
 
- 
+ 
 
 
 

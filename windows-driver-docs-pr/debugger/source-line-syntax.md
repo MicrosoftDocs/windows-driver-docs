@@ -3,7 +3,6 @@ title: Source Line Syntax
 description: Source Line Syntax
 ms.assetid: a4622a89-6419-4547-9650-eb10c3803462
 keywords: ["expressions, source line numbers", "source files and paths, line number syntax", "line number syntax", "source files and paths, file name syntax", "file name syntax", "syntax rules for commands, source line numbers"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -18,7 +17,7 @@ You can specify source file line numbers as all or part of an MASM expression. T
 
 **Note**   You cannot use source line numbers as part of a C++ expression. For more information about when MASM and C++ expression syntax is used, see [Evaluating Expressions](evaluating-expressions.md).
 
- 
+ 
 
 You must enclose source file and line number expressions by grave accents ( **\`** ). The following example shows the full format for source file line numbers.
 
@@ -36,9 +35,9 @@ Source line expressions are not evaluated in CDB unless you issue a [**.lines (T
 
 For more information about source debugging, see [Debugging in Source Mode](debugging-in-source-mode.md).
 
- 
+ 
 
- 
+ 
 
 
 

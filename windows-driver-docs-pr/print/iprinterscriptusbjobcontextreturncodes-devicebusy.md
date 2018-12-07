@@ -1,6 +1,5 @@
 ---
 title: IPrinterScriptUsbJobContextReturnCodes DeviceBusy method
-author: windows-driver-content
 description: Returns a value of '3' to inform USBMon that the device communication channel is not accepting data at this time.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

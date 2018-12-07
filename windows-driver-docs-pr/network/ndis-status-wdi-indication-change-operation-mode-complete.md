@@ -1,6 +1,5 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_CHANGE_OPERATION_MODE_COMPLETE
-author: windows-driver-content
 description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_CHANGE_OPERATION_MODE_COMPLETE to indicate the completion of OID_WDI_TASK_CHANGE_OPERATION_MODE.
 ms.assetid: fa2a6544-c3ef-4a20-9182-f3678488053d
 ms.date: 07/18/2017
@@ -18,7 +17,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_CHANGE\_OPERATION\_MODE\_COM
 |--------|
 | Port   |
 
- 
+ 
 
 ## Payload data
 
@@ -49,9 +48,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

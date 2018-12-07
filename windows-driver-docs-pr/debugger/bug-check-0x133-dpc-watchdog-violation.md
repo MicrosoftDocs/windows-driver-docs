@@ -3,7 +3,6 @@ title: Bug Check 0x133 DPC_WATCHDOG_VIOLATION
 description: The DPC_WATCHDOG_VIOLATION bug check has a value of 0x00000133.
 ms.assetid: CE9A4CBF-0016-42F7-A9EE-56DF6E61593A
 keywords: ["Bug Check 0x133 DPC_WATCHDOG_VIOLATION", "DPC_WATCHDOG_VIOLATION"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -61,7 +60,7 @@ The DPC\_WATCHDOG\_VIOLATION bug check has a value of 0x00000133. This bug check
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -141,9 +140,9 @@ If you are not equipped to use the Windows debugger to this problem, you should 
 
 -   For additional general troubleshooting information, see [**Blue Screen Data**](blue-screen-data.md).
 
- 
+ 
 
- 
+ 
 
 
 

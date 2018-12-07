@@ -1,6 +1,5 @@
 ---
 title: WMI Requirements for WDM Drivers
-author: windows-driver-content
 description: WMI Requirements for WDM Drivers
 ms.assetid: 8290e570-acd9-4047-bd0b-c1c74847f243
 keywords: ["WMI WDK kernel , WDM drivers", "WDM drivers WDK WMI", "IRPs WDK WMI", "requests WDK WMI", "WMI WDK kernel , requests", "data providers WDK WMI"]
@@ -24,9 +23,9 @@ Similarly, a connection-oriented NDIS miniport driver that defines custom data b
 
 The following sections describe how to support WMI in a driver that handles IRPs.
 
- 
+ 
 
- 
+ 
 
 
 

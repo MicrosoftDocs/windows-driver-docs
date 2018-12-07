@@ -40,9 +40,9 @@ Thus, even when one of the checks in the checked build fails, it does not necess
 
 Do not ignore problems that are identified by the checked build. The key to successfully debug drivers with the checked build is to be sure that you can explain the reason for each failure that the checked build finds.
 
- 
+ 
 
- 
+ 
 
 
 

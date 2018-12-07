@@ -1,6 +1,5 @@
 ---
 title: Adding Auditing on IRP_MJ_CREATE
-author: windows-driver-content
 description: Adding Auditing on IRP_MJ_CREATE
 ms.assetid: cb71fe83-44f4-48dd-8fff-250f1d27c123
 keywords:
@@ -70,9 +69,9 @@ if ( SeAuditingFileOrGlobalEvents (AccessGranted,
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

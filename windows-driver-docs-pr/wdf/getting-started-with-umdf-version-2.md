@@ -1,6 +1,5 @@
 ---
 title: Getting Started with UMDF
-author: windows-driver-content
 description: This section describes User-Mode Driver Framework (UMDF) and details the differences between UMDF versions 1 and 2.
 ms.assetid: 2C4DAFA4-783C-4739-8D27-A417AC63B447
 ms.date: 04/20/2017
@@ -28,6 +27,6 @@ UMDF version 2 drivers run only on Windows 8.1 or later. If you need to write a
 
 
 
- 
+ 
 
- 
+ 

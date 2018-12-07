@@ -1,6 +1,5 @@
 ---
 title: Creating IRPs for Lower-Level Drivers
-author: windows-driver-content
 description: Creating IRPs for Lower-Level Drivers
 ms.assetid: 2d298eb1-6169-4742-80c1-200223a2d4fa
 keywords: ["IRPs WDK kernel , creating", "asynchronous requests WDK IRPs", "IRPs WDK kernel , asynchronous requests"]
@@ -14,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-To allocate an IRP for an asynchronous request, which will be processed in an arbitrary thread context by lower drivers, a [*DispatchReadWrite*](https://msdn.microsoft.com/library/windows/hardware/ff543381) routine can call one of the following support routines:
+To allocate an IRP for an asynchronous request, which will be processed in an arbitrary thread context by lower drivers, a [*DispatchReadWrite*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine can call one of the following support routines:
 
 -   [**IoAllocateIrp**](https://msdn.microsoft.com/library/windows/hardware/ff548257), which allocates an IRP and a number of zero-initialized I/O stack locations
 
@@ -62,9 +61,9 @@ Instead, if an intermediate driver creates IRPs for lower drivers, it should cal
 
 However, a driver is more likely to call **IoBuildDeviceIoControlRequest** to allocate device control IRPs than **IoBuildSynchronousFsdRequest**.
 
- 
+ 
 
- 
+ 
 
 
 

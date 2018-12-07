@@ -47,13 +47,13 @@ The KSPROPERTY\_TUNER\_FREQUENCY property sets or gets the current frequency or 
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
-<td><p>[<strong>KSPROPERTY_TUNER_FREQUENCY_S</strong>](https://msdn.microsoft.com/library/windows/hardware/ff565839)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565839" data-raw-source="[&lt;strong&gt;KSPROPERTY_TUNER_FREQUENCY_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565839)"><strong>KSPROPERTY_TUNER_FREQUENCY_S</strong></a></p></td>
 <td><p>ULONG</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a ULONG that specifies the current frequency of the tuner. This value is specified in hertz (Hz).
 
@@ -85,9 +85,9 @@ Requirements
 
 [**KSPROPERTY\_TUNER\_FREQUENCY\_S**](https://msdn.microsoft.com/library/windows/hardware/ff565839)
 
- 
+ 
 
- 
+ 
 
 
 

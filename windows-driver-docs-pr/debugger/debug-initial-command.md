@@ -3,7 +3,6 @@ title: Debug initial command
 description: Debug initial command
 ms.assetid: 0af0b53d-455f-4cdb-b956-9d7e49601733
 keywords: ["Debug initial command (global flag)"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -41,7 +40,7 @@ The **Debug initial command** flag debugs the Client Server Run-time Subsystem (
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
@@ -53,9 +52,9 @@ For details on NTSD, see [Debugging Using CDB and NTSD](debugging-using-cdb-and-
 
 [Enable debugging of Win32 subsystem](enable-debugging-of-win32-subsystem.md)
 
- 
+ 
 
- 
+ 
 
 
 

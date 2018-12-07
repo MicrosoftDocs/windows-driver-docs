@@ -3,14 +3,13 @@ title: Setting Up Kernel-Mode Debugging over a Network Cable in Visual Studio
 description: You can use Microsoft Visual Studio to set up and perform kernel-mode debugging over an Ethernet network.
 ms.assetid: 4D442355-526A-4F39-8341-614BB7A41A3E
 keywords: ["network debugging visual studio", "ethernet debugging visual studio", "debugging over ethernet visual studio"]
-ms.author: domars
 ms.date: 05/16/2018
 ms.localizationpriority: medium
 ---
 
 # Setting Up Kernel-Mode Debugging over a Network Cable in Visual Studio
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > This feature is not available in Windows 10, version 1507 and later versions of the WDK.
 >
 
@@ -54,11 +53,11 @@ The host computer can use any wired or wireless network adapter, but the target 
 
 **Caution**  If your target computer is in a docking station, and you have network debugging enabled for a network adapter that is part of the docking station, do not remove the computer from the docking station. If you need to remove the target computer from the docking station, disable kernel debugging first. To disable kernel debugging on the target computer, open a Command Prompt window as Administrator and enter the command **bcdedit /debug off**. Reboot the target computer.
 
- 
+ 
 
 **Note**  If you intend to install the Hyper-V role on the target computer, see [Setting Up Network Debugging of a Virtual Machine Host](setting-up-network-debugging-of-a-virtual-machine-host.md).
 
- 
+ 
 
 ## <span id="Verifying_dbgsettings_on_the_Target_Computer"></span><span id="verifying_dbgsettings_on_the_target_computer"></span><span id="VERIFYING_DBGSETTINGS_ON_THE_TARGET_COMPUTER"></span>Verifying dbgsettings on the Target Computer
 
@@ -90,7 +89,7 @@ If you entered **Bus Parameters** in Visual Studio, verify that *busparams* matc
 
 If you do not see the value you entered for **Bus Parameters**, enter this command:
 
-**bcdedit /set "{dbgsettings}" busparams** *b***.***d***.***f*
+**bcdedit /set "{dbgsettings}" busparams** <em>b</em>**.**<em>d</em>**.**<em>f</em>
 
 where *b*, *d*, and *f* are the bus, device, and function numbers of the network adapter on the target computer that you have chosen to use for debugging.
 
@@ -143,7 +142,7 @@ Use the following procedure if you need to change the port number.
 
 If your target computer has more than one network adapter, you must specify the bus, device, and function numbers of the network adapter that you intend to use for debugging. To specify the bus parameters, open Device Manager, and locate the network adapter that you want to use for debugging. Open the property page for the network adapter, and make a note of the bus number, device number, and function number. In an elevated Command Prompt Window, enter the following command, where *b*, *d*, and *f* are the bus, device and function numbers in decimal format:
 
-**bcdedit -set "{dbgsettings}" busparams** *b***.***d***.***f*
+**bcdedit -set "{dbgsettings}" busparams** <em>b</em>**.**<em>d</em>**.**<em>f</em>
 
 Reboot the target computer.
 
@@ -158,9 +157,9 @@ Reboot the target computer.
 
 [Supported Ethernet NICs for Network Kernel Debugging in Windows 8](supported-ethernet-nics-for-network-kernel-debugging-in-windows-8.md)
 
- 
+ 
 
- 
+ 
 
 
 

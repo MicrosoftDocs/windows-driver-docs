@@ -24,17 +24,17 @@ This section applies only to Windows Server 2003 with SP1 and later, and Windows
 COPP uses the following cryptographic primitives:
 
 <span id="Public_key_cryptography"></span><span id="public_key_cryptography"></span><span id="PUBLIC_KEY_CRYPTOGRAPHY"></span>Public key cryptography  
-COPP requires the RSA algorithm with 2,048-bit keys for public key encryption and decryption. For information about the RSA algorithm, see the [RSA Laboratories](http://go.microsoft.com/fwlink/p/?linkid=70411) website.
+COPP requires the RSA algorithm with 2,048-bit keys for public key encryption and decryption. For information about the RSA algorithm, see the [RSA Laboratories](https://go.microsoft.com/fwlink/p/?linkid=70411) website.
 
 <span id="Digital_certificates"></span><span id="digital_certificates"></span><span id="DIGITAL_CERTIFICATES"></span>Digital certificates  
 COPP uses eXtensible rights Markup Language (XrML) digital certificates.
 
 <span id="Message_authentication_code__MAC_"></span><span id="message_authentication_code__mac_"></span><span id="MESSAGE_AUTHENTICATION_CODE__MAC_"></span>Message authentication code (MAC)  
-COPP uses a one-key Cipher Block Chaining (CBC)-mode MAC (OMAC) for message authenticity. The OMAC is based on Advanced Encryption Standard (AES). For information about AES, see the [RSA Laboratories](http://go.microsoft.com/fwlink/p/?linkid=70411) website. For more information about OMAC, see the [OMAC-1 algorithm](http://go.microsoft.com/fwlink/p/?linkid=70417).
+COPP uses a one-key Cipher Block Chaining (CBC)-mode MAC (OMAC) for message authenticity. The OMAC is based on Advanced Encryption Standard (AES). For information about AES, see the [RSA Laboratories](https://go.microsoft.com/fwlink/p/?linkid=70411) website. For more information about OMAC, see the [OMAC-1 algorithm](https://go.microsoft.com/fwlink/p/?linkid=70417).
 
- 
+ 
 
- 
+ 
 
 
 

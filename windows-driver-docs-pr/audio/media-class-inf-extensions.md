@@ -25,6 +25,22 @@ The following INF file keywords are defined for installing media-class device dr
 
 [**PKEY\_AudioEngine\_OEMPeriod**](pkey-audioengine-oemperiod.md)
 
+[**PKEY\_CompositeFX\_EndpointEffectClsid**](pkey-compositefx-endpointeffectclsid.md)
+
+[**PKEY\_CompositeFX\_KeywordDetector\_EndpointEffectClsid**](pkey-compositefx-keyworddetector-endpointeffectclsid.md)
+
+[**PKEY\_CompositeFX\_KeywordDetector\_ModeEffectClsid**](pkey-compositefx-keyworddetector-modeeffectclsid.md)
+
+[**PKEY\_CompositeFX\_KeywordDetector\_StreamEffectClsid**](pkey-compositefx-keyworddetector-streameffectclsid.md)
+
+[**PKEY\_CompositeFX\_ModeEffectClsid**](pkey-compositefx-modeeffectclsid.md)
+
+[**PKEY\_CompositeFX\_Offload\_ModeEffectClsid**](pkey-compositefx-offload-modeeffectclsid.md)
+
+[**PKEY\_CompositeFX\_Offload\_StreamEffectClsid**](pkey-compositefx-offload-streameffectclsid.md)
+
+[**PKEY\_CompositeFX\_StreamEffectClsid**](pkey-compositefx-streameffectclsid.md)
+
 [**PKEY\_FX\_EndpointEffectClsid**](pkey-fx-endpointeffectclsid.md)
 
 [**PKEY\_FX\_ModeEffectClsid**](pkey-fx-modeeffectclsid.md)
@@ -53,9 +69,9 @@ The following INF file keywords are defined for installing media-class device dr
 
 [**UsePositionLock**](usepositionlock.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: Bug Check 0xFD DIRTY_NOWRITE_PAGES_CONGESTION
 description: The DIRTY_NOWRITE_PAGES_CONGESTION bug check has a value of 0x000000FD. This indicates that there are no free pages available to continue basic system operations.
 ms.assetid: b657fffe-8331-4b4f-9d29-fea8ee1e1682
 keywords: ["Bug Check 0xFD DIRTY_NOWRITE_PAGES_CONGESTION", "DIRTY_NOWRITE_PAGES_CONGESTION"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -55,7 +54,7 @@ The DIRTY\_NOWRITE\_PAGES\_CONGESTION bug check has a value of 0x000000FD. This 
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -67,9 +66,9 @@ Resolution
 
 For more information about which driver is causing the problem, use the [**!vm 3**](-vm.md) extension, followed by [**!memusage 1**](-memusage.md) .
 
- 
+ 
 
- 
+ 
 
 
 

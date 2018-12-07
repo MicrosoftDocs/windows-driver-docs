@@ -1,6 +1,5 @@
 ---
 title: Calling ScsiPortXxx from HwScsiFindAdapter
-author: windows-driver-content
 description: Calling ScsiPortXxx from HwScsiFindAdapter
 ms.assetid: 17cfca31-ff93-4882-872c-ab8af6cdc3cf
 keywords:
@@ -34,9 +33,9 @@ In addition to these four routines, there is one routine that can only be called
 
 For more information about these **ScsiPort***Xxx* routines, see [SCSI Port Library Routines](https://msdn.microsoft.com/library/windows/hardware/ff565375).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: Debugging a Stack Overflow
 description: Debugging a Stack Overflow
 ms.assetid: fc67effa-88c9-4915-a5a8-8c094595c6c5
 keywords: ["stack overflow", "call stack, debugging a stack overflow"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -220,9 +219,9 @@ ChildEBP RetAddr
 
 This shows that **Header\_Draw** allocated 0x58 bytes of stack space.
 
- 
+ 
 
- 
+ 
 
 
 

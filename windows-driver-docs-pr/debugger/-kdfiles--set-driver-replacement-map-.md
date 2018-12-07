@@ -3,7 +3,6 @@ title: .kdfiles (Set Driver Replacement Map)
 description: The .kdfiles command reads a file and uses its contents as the driver replacement map.
 ms.assetid: 3b0ac8c1-f0bd-4878-9303-23d6999650ee
 keywords: ["Set Driver Replacement Map (.kdfiles) command", "driver replacement map, Set Driver Replacement Map (.kdfiles) command", ".kdfiles (Set Driver Replacement Map) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -76,7 +75,7 @@ You can use the **.kdfiles** command in Microsoft Windows XP and later versions 
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -109,9 +108,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

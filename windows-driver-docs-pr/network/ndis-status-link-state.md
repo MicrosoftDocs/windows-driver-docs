@@ -1,6 +1,5 @@
 ---
 title: NDIS_STATUS_LINK_STATE
-author: windows-driver-content
 description: Miniport drivers use the NDIS_STATUS_LINK_STATE status indication to notify NDIS and overlying drivers that there has been a change in the physical characteristics of a medium.
 ms.assetid: e9953fe5-68d2-47e5-aceb-b35289500262
 ms.date: 07/18/2017
@@ -76,9 +75,9 @@ Requirements
 
 [OID\_GEN\_LINK\_STATE](https://msdn.microsoft.com/library/windows/hardware/ff569595)
 
- 
+ 
 
- 
+ 
 
 
 

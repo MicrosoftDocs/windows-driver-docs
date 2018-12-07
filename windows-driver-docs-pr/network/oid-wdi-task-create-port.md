@@ -1,6 +1,5 @@
 ---
 title: OID_WDI_TASK_CREATE_PORT
-author: windows-driver-content
 description: OID_WDI_TASK_CREATE_PORT requests that a new 802.11 entity is created by the IHV component.
 ms.assetid: e1a03a97-608f-42af-bd39-37a7eb9ad5b7
 ms.date: 07/18/2017
@@ -18,7 +17,7 @@ OID\_WDI\_TASK\_CREATE\_PORT requests that a new 802.11 entity is created by the
 |---------|---------------|---------------------------------------|---------------------------------|
 | Adapter | No            | 6                                     | 1                               |
 
- 
+ 
 
 The operation mode of the created port is set to **WDI\_OPERATION\_MODE\_STA** unless it has been specified in the task parameters.
 
@@ -44,13 +43,13 @@ If the MAC is to function as a Wi-Fi Direct device port, **uOpmodeMask** contain
 </thead>
 <tbody>
 <tr class="odd">
-<td>[<strong>WDI_TLV_CREATE_PORT_PARAMETERS</strong>](https://msdn.microsoft.com/library/windows/hardware/dn926273)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn926273" data-raw-source="[&lt;strong&gt;WDI_TLV_CREATE_PORT_PARAMETERS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn926273)"><strong>WDI_TLV_CREATE_PORT_PARAMETERS</strong></a></td>
 <td></td>
 <td></td>
 <td>Parameters for port creation.</td>
 </tr>
 <tr class="even">
-<td>[<strong>WDI_TLV_CREATE_PORT_MAC_ADDRESS</strong>](https://msdn.microsoft.com/library/windows/hardware/dn926270)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn926270" data-raw-source="[&lt;strong&gt;WDI_TLV_CREATE_PORT_MAC_ADDRESS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn926270)"><strong>WDI_TLV_CREATE_PORT_MAC_ADDRESS</strong></a></td>
 <td></td>
 <td>X</td>
 <td><p>This TLV is used when the UE recreates the non-primary port during resume from hibernation. When this TLV is present, the firmware must use this MAC address to create the port. This MAC address is guaranteed to be the MAC address that the firmware created for the port type prior to hibernation.</p>
@@ -59,7 +58,7 @@ If the MAC is to function as a Wi-Fi Direct device port, **uOpmodeMask** contain
 </tbody>
 </table>
 
- 
+ 
 
 ## Task completion indication
 
@@ -89,9 +88,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

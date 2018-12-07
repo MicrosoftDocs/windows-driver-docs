@@ -25,9 +25,9 @@ For a list of certification authorities that provide SPCs and for more informati
 
 For more information about SPCs and their management, see [Software Publisher Certificate (SPC)](software-publisher-certificate.md).
 
- 
+ 
 
- 
+ 
 
 
 

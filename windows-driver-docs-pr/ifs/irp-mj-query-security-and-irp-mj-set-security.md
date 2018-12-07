@@ -1,6 +1,5 @@
 ---
 title: IRP_MJ_QUERY_SECURITY and IRP_MJ_SET_SECURITY
-author: windows-driver-content
 description: IRP_MJ_QUERY_SECURITY and IRP_MJ_SET_SECURITY
 ms.assetid: 64216496-55f0-4ad4-b475-341ed9eb6886
 keywords:
@@ -210,9 +209,9 @@ NTSTATUS FsdCommonSetSecurity(PIRP_CONTEXT IrpContext)
 
 Note that this is an area in which implementation varies dramatically from file system to file system. For example, a file system that supports security descriptor sharing would need to add explicit logic to find a matching security descriptor. This sample is only an attempt to provide guidance to implementers.
 
- 
+ 
 
- 
+ 
 
 
 

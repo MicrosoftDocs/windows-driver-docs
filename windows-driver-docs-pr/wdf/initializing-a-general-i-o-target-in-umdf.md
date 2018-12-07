@@ -1,6 +1,5 @@
 ---
 title: Initializing a General I/O Target in UMDF
-author: windows-driver-content
 description: Initializing a General I/O Target in UMDF
 ms.assetid: cf1b39c3-4c82-411b-8eef-117ac0fe793e
 keywords:
@@ -45,9 +44,9 @@ Before your driver can use a remote I/O target, it must create a remote target o
 
 2.  Call either [**IWDFRemoteTarget::OpenFileByName**](https://msdn.microsoft.com/library/windows/hardware/ff560273) (for files) or [**IWDFRemoteTarget::OpenRemoteInterface**](https://msdn.microsoft.com/library/windows/hardware/ff560276) (for [device interfaces](using-device-interfaces-in-umdf-drivers.md)) to open the target for I/O operations.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Coexistence with other File System Filter Drivers
-author: windows-driver-content
 description: Coexistence with other File System Filter Drivers
 ms.assetid: 595f9fa1-0ed7-4f99-a026-bf00bbf8bf33
 keywords:
@@ -30,9 +29,9 @@ One of the most insidious problems that must be properly handled by a file syste
 
 It is imperative that any file system filter driver developer not only design and implement to coexist cleanly with other filter drivers, but also test the filter driver with other filter drivers to ensure that the driver does not introduce security problems within the system.
 
- 
+ 
 
- 
+ 
 
 
 

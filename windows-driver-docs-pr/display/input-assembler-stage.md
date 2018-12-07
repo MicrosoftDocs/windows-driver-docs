@@ -23,7 +23,7 @@ Another special case of the IA is that it can read buffers that the stream outpu
 
 In addition to producing vertex data from buffers, the IA can auto-generate three scalar counter values: VertexID, PrimitiveID, and InstanceID, for input to shader stages in the rendering pipeline.
 
-In indexed rendering of strip topologies, such as triangle strips, a mechanism is provided for drawing multiple strips with a single *Draw\**() call (that is, the **cut** command to cut strips).
+In indexed rendering of strip topologies, such as triangle strips, a mechanism is provided for drawing multiple strips with a single *Draw\*<em>() call (that is, the **cut</em>* command to cut strips).
 
 The Direct3D runtime calls the following driver functions to create, set up, and destroy the IA:
 
@@ -41,9 +41,9 @@ The Direct3D runtime calls the following driver functions to create, set up, and
 
 [**IaSetVertexBuffers**](https://msdn.microsoft.com/library/windows/hardware/ff567392)
 
- 
+ 
 
- 
+ 
 
 
 

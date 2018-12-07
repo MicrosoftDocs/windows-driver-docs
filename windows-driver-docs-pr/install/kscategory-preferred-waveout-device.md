@@ -43,7 +43,7 @@ The KSCATEGORY_PREFERRED_WAVEIN_DEVICE [device interface class](https://msdn.mic
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -72,9 +72,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

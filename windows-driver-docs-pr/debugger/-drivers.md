@@ -3,7 +3,6 @@ title: drivers
 description: In Windows XP and later versions of Windows, the drivers extension is obsolete. Instead use the lm command.
 ms.assetid: 48b69af3-bf00-43d3-ac1a-e9513ead8647
 keywords: ["drivers Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -56,7 +55,7 @@ Causes the display to be a much longer and more detailed list of the driver imag
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -97,11 +96,11 @@ An explanation of this command's display is given in the following table:
 </tr>
 <tr class="odd">
 <td align="left"><p>Resident</p></td>
-<td align="left"><p>(Only when Flag 0x1 or 0x2 is used) The amount of the driver's memory that actually resides in physical memory.</p></td>
+<td align="left"><p>(Only when Flag 0x1 or 0x2 is used) The amount of the driver&#39;s memory that actually resides in physical memory.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Standby</p></td>
-<td align="left"><p>(Only when Flag 0x1 or 0x2 is used) The amount of the driver's memory that is on standby.</p></td>
+<td align="left"><p>(Only when Flag 0x1 or 0x2 is used) The amount of the driver&#39;s memory that is on standby.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Loader Entry</p></td>
@@ -118,7 +117,7 @@ An explanation of this command's display is given in the following table:
 </tbody>
 </table>
 
- 
+ 
 
 The following is a truncated example of this command:
 
@@ -132,9 +131,9 @@ Base     Code Size      Data Size      Driver Name  Creation Time
 8065a000 a460  ( 41 kb) 1e80   ( 7 kb) SCSIPORT.SYS Fri May 05 20:08:05
 ```
 
- 
+ 
 
- 
+ 
 
 
 

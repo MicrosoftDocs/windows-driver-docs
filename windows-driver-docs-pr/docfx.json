@@ -1,37 +1,161 @@
 {
   "build": {
-    "content":
-      [
-        {
-          "files": ["**/**.md", "**/**.yml"],
-          "exclude": ["**/obj/**"]
-        }
-      ],
+    "content": [
+      {
+        "files": [
+          "**/**.md",
+          "**/**.yml"
+        ],
+        "exclude": [
+          "**/obj/**"
+        ]
+      }
+    ],
     "resource": [
-        {
-          "files": ["**/images/**", "**/*.json", "**/*.png", "CONTRIBUTING"],
-          "exclude": ["**/obj/**", "**/README.md"]
-        }
+      {
+        "files": [
+          "**/images/**",
+          "**/*.json",
+          "**/*.png",
+          "CONTRIBUTING"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/README.md"
+        ]
+      }
     ],
     "globalMetadata": {
-        "ROBOTS": "INDEX, FOLLOW",
-        "Search.Product": "eADQiWindows 10XVcnh",
-        "uhfHeaderId": "MSDocsHeader-WinHW",
-        "breadcrumb_path": "/windows-hardware/drivers/breadcrumbs/toc.json",
-        "searchScope": ["Drivers"],
-        "feedback_system": "GitHub",
-        "feedback_github_repo": "MicrosoftDocs/windows-driver-docs",
-        "feedback_product_url": "https://wpdev.uservoice.com/",
-        "contributors_to_exclude": ["barrygolden", "PageWriter-MSFT", "tedhudek"],
-        "titleSuffix": "Windows drivers",
-        "ms.prod": "windows-hardware",
-        "ms.technology": "windows-devices",
-        "ms.author": "windowsdriverdev",
-        "ms.topic": "article"
+      "ROBOTS": "INDEX, FOLLOW",
+      "Search.Product": "eADQiWindows 10XVcnh",
+      "uhfHeaderId": "MSDocsHeader-WinHW",
+      "breadcrumb_path": "/windows-hardware/drivers/breadcrumbs/toc.json",
+      "searchScope": [
+        "Drivers"
+      ],
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "MicrosoftDocs/windows-driver-docs",
+      "feedback_product_url": "https://wpdev.uservoice.com/",
+      "contributors_to_exclude": [
+        "barrygolden",
+        "PageWriter-MSFT",
+        "tedhudek"
+      ],
+      "titleSuffix": "Windows drivers",
+      "ms.prod": "windows-hardware",
+      "ms.technology": "windows-devices",
+      "ms.author": "windowsdriverdev",
+      "ms.topic": "article"
     },
-    "externalReference": [
-    ],
+    "fileMetadata": {
+      "author":
+      {
+        "**/3dprint/*.md": "barrygolden",
+        "**/acpi/*.md": "barrygolden",
+        "**/audio/*.md": "DOMARS",
+        "**/battery/*.md": "DOMARS",
+        "**/biometric/*.md": "mimisasouvanh",
+        "**/bluetooth/*.md": "EliotSeattle",
+        "**/bringup/*.md": "barrygolden",
+        "**/dashboard/*.md": "EliotSeattle",
+        "**/debugger/*.md": "DOMARS",
+        "**/devapps/*.md": "EliotSeattle",
+        "**/develop/*.md": "tedhudek",
+        "**/devtest/*.md": "EliotSeattle",
+        "**/display/*.md": "mimisasouvanh",
+        "**/driversecurity/*.md": "DOMARS",
+        "**/gettingstarted/*.md": "EliotSeattle",
+        "**/gnss/*.md": "barrygolden",
+        "**/gpio/*.md": "EliotSeattle",
+        "**/gpiobtn/*.md": "EliotSeattle",
+        "**/hid/*.md": "EliotSeattle",
+        "**/ieee/*.md": "EliotSeattle",
+        "**/ifs/*.md": "lorihollasch",
+        "**/image/*.md": "barrygolden",
+        "**/install/*.md": "tedhudek",
+        "**/kernel/*.md": "tedhudek",
+        "**/mobilebroadband/*.md": "duncanmacmichael",
+        "**/multifunction/*.md": "barrygolden",
+        "**/netcx/*.md": "duncanmacmichael",
+        "**/network/*.md": "duncanmacmichael",
+        "**/nfc/*.md": "EliotSeattle",
+        "**/parports/*.md": "EliotSeattle",
+        "**/partnerapps/*.md": "EliotSeattle",
+        "**/pci/*.md": "EliotSeattle",
+        "**/pcmcia/*.md": "EliotSeattle",
+        "**/portable/*.md": "EliotSeattle",
+        "**/pos/*.md": "barrygolden",
+        "**/powermeter/*.md": "DOMARS",
+        "**/print/*.md": "barrygolden",
+        "**/samples/*.md": "barrygolden",
+        "**/sd/*.md": "EliotSeattle",
+        "**/sensors/*.md": "mimisasouvanh",
+        "**/serports/*.md": "DOMARS",
+        "**/smartcard/*.md": "EliotSeattle",
+        "**/spb/*.md": "EliotSeattle",
+        "**/storage/*.md": "lorihollasch",
+        "**/stream/*.md": "barrygolden",
+        "**/taef/*.md": "EliotSeattle",
+        "**/usbcon/*.md": "duncanmacmichael",
+        "**/wdf/*.md": "tedhudek",
+        "**/wdtf/*.md": "EliotSeattle",
+        "**/whea/*.md": "EliotSeattle"      },
+      "ms.author":
+      {
+        "**/3dprint/*.md": "bagold",
+        "**/acpi/*.md": "bagold",
+        "**/audio/*.md": "domars",
+        "**/battery/*.md": "domars",
+        "**/biometric/*.md": "misaso",
+        "**/bluetooth/*.md": "eliotgra",
+        "**/bringup/*.md": "bagold",
+        "**/dashboard/*.md": "eliotgra",
+        "**/debugger/*.md": "domars",
+        "**/devapps/*.md": "eliotgra",
+        "**/develop/*.md": "tedhudek",
+        "**/devtest/*.md": "eliotgra",
+        "**/display/*.md": "misaso",
+        "**/driversecurity/*.md": "domars",
+        "**/gettingstarted/*.md": "eliotgra",
+        "**/gnss/*.md": "bagold",
+        "**/gpio/*.md": "eliotgra",
+        "**/gpiobtn/*.md": "eliotgra",
+        "**/hid/*.md": "eliotgra",
+        "**/ieee/*.md": "eliotgra",
+        "**/ifs/*.md": "loriwhip",
+        "**/image/*.md": "bagold",
+        "**/install/*.md": "tedhudek",
+        "**/kernel/*.md": "tedhudek",
+        "**/mobilebroadband/*.md": "dumacmic",
+        "**/multifunction/*.md": "bagold",
+        "**/netcx/*.md": "dumacmic",
+        "**/network/*.md": "dumacmic",
+        "**/nfc/*.md": "eliotgra",
+        "**/parports/*.md": "eliotgra",
+        "**/partnerapps/*.md": "eliotgra",
+        "**/pci/*.md": "eliotgra",
+        "**/pcmcia/*.md": "eliotgra",
+        "**/portable/*.md": "eliotgra",
+        "**/pos/*.md": "bagold",
+        "**/powermeter/*.md": "domars",
+        "**/print/*.md": "bagold",
+        "**/samples/*.md": "bagold",
+        "**/sd/*.md": "eliotgra",
+        "**/sensors/*.md": "misaso",
+        "**/serports/*.md": "domars",
+        "**/smartcard/*.md": "eliotgra",
+        "**/spb/*.md": "eliotgra",
+        "**/storage/*.md": "loriwhip",
+        "**/stream/*.md": "bagold",
+        "**/taef/*.md": "eliotgra",
+        "**/usbcon/*.md": "dumacmic",
+        "**/wdf/*.md": "tedhudek",
+        "**/wdtf/*.md": "eliotgra",
+        "**/whea/*.md": "eliotgra"      }
+    },
+    "externalReference": [],
     "template": "op.html",
-    "dest": "windows-driver-docs-pr"
+    "dest": "windows-driver-docs-pr",
+    "markdownEngineName": "markdig"
   }
 }

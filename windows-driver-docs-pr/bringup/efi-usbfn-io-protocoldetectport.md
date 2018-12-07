@@ -1,6 +1,5 @@
 ---
 title: EFI_USBFN_IO_PROTOCOL.DetectPort
-author: windows-driver-content
 description: EFI_USBFN_IO_PROTOCOL.DetectPort
 ms.assetid: 66f7500e-e075-495b-9ce0-aed2aa11f66a
 ms.date: 04/20/2017
@@ -69,16 +68,16 @@ This function returns the following values:
 </tbody>
 </table>
 
- 
+ 
 
 ## Requirements
 
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
 

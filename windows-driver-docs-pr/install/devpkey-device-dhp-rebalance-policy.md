@@ -32,7 +32,7 @@ The DEVPKEY_Device_DHP_Rebalance_Policy device property represents a value that 
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Property-data-type identifier</strong></p></td>
-<td align="left"><p>[<strong>DEVPROP_TYPE_INT32</strong>](devprop-type-int32.md)</p></td>
+<td align="left"><p><a href="devprop-type-int32.md" data-raw-source="[&lt;strong&gt;DEVPROP_TYPE_INT32&lt;/strong&gt;](devprop-type-int32.md)"><strong>DEVPROP_TYPE_INT32</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Property access</strong></p></td>
@@ -45,7 +45,7 @@ The DEVPKEY_Device_DHP_Rebalance_Policy device property represents a value that 
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -95,9 +95,9 @@ Requirements
 
 [**SetupDiSetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff552163)
 
- 
+ 
 
- 
+ 
 
 
 

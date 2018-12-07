@@ -1,6 +1,5 @@
 ---
 title: GetSupportedVersions
-author: windows-driver-content
 description: The IPrintTicketProvider GetSupportedVersions method returns the major version numbers of the Print Schemas that print driver supports. For now, version 1 is the only version that exists so this method must return only one supported version.
 ms.assetid: 0b648cc3-4d61-401c-b626-34db2b026b2a
 keywords:
@@ -34,9 +33,9 @@ GetSupportedVersions(THIS_ HANDLE hPrinter,
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

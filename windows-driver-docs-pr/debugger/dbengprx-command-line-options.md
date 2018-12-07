@@ -3,7 +3,6 @@ title: DbEngPrx Command-Line Options
 description: The DbEngPrx command line uses the following syntax.
 ms.assetid: 3c0675a4-93f0-4aaa-9f33-9a45c48c1ff4
 keywords: ["DbEngPrx Command-Line Options Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -42,9 +41,9 @@ Displays a message box with help text for the DbEngPrx command line.
 
 For information about using DbEngPrx, see [Repeaters](repeaters.md).
 
- 
+ 
 
- 
+ 
 
 
 

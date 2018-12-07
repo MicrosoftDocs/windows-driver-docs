@@ -3,7 +3,6 @@ title: usbkd.usbdstatus
 description: The usbkd.usbdstatus command displays the name of a USBD status code.
 ms.assetid: 9983433E-1D17-47C6-972B-0A02B228A6AE
 keywords: ["usbkd.usbdstatus Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -52,9 +51,9 @@ USBD_STATUS_DATA_OVERRUN (0xC0000008)
 
 [Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
- 
+ 
 
- 
+ 
 
 
 

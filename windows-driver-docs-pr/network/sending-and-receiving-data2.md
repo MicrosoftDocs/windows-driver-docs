@@ -18,7 +18,7 @@ Transferring data involves sending or receiving packets over an established and 
 
 **Note**  Protocol drivers must not call [**NdisCoSendNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff561728) to send data to a VC after calling [**NdisClCloseCall**](https://msdn.microsoft.com/library/windows/hardware/ff561627) for that VC.
 
- 
+ 
 
 The CoNDIS send and receive functions are similar to connectionless send and receive functions. The primary difference between the CoNDIS and connectionless interfaces is the management of virtual connections (VCs). For more information about connectionless send and receive operations, see [Send and Receive Operations](send-and-receive-operations.md).
 
@@ -34,9 +34,9 @@ This section includes the following topics:
 
 [Receiving NET\_BUFFER Structures in CoNDIS Drivers](receiving-net-buffer-structures-in-condis-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

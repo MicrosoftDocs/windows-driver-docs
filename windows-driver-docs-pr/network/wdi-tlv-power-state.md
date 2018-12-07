@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_POWER_STATE
-author: windows-driver-content
 description: WDI_TLV_POWER_STATE is a TLV that contains a power state.
 ms.assetid: EC65FE08-ABF0-488A-A6FA-21B1794418B3
 ms.date: 07/18/2017
@@ -52,7 +51,7 @@ The size (in bytes) of a UINT32.
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -78,9 +77,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

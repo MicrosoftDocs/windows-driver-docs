@@ -3,7 +3,6 @@ title: rpcexts.eeinfo
 description: The rpcexts.eeinfo extension displays the extended error information chain.
 ms.assetid: dc842236-bdbf-42aa-911d-6eb5eb1798ee
 keywords: ["rpcexts.eeinfo Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -48,7 +47,7 @@ Specifies the address of the extended error information.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -78,9 +77,9 @@ Parameter 1:(Long value) : 16777343 (0x100007F)
 
 If the chain is very long and you wish to see only one record, use [**!rpcexts.eerecord**](-rpcexts-eerecord.md) instead.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -34,7 +34,7 @@ Tracefmt (Tracefmt.exe) is a command-line tool that formats and displays trace m
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Tracefmt (Tracefmt.exe) is included when you install the WDK, Visual Studio, and the Windows SDK for desktop apps. For information about downloading the kits, see [Windows Hardware Downloads](http://go.microsoft.com/fwlink/p/?linkid=290798).</p>
+<td align="left"><p>Tracefmt (Tracefmt.exe) is included when you install the WDK, Visual Studio, and the Windows SDK for desktop apps. For information about downloading the kits, see <a href="http://go.microsoft.com/fwlink/p/?linkid=290798" data-raw-source="[Windows Hardware Downloads](http://go.microsoft.com/fwlink/p/?linkid=290798)">Windows Hardware Downloads</a>.</p>
 <p><strong>Windows Driver Kit (WDK) 8.1</strong> (installation path)</p>
 <p>%WindowsSdkDir%\bin\x64\Tracefmt.exe</p>
 <p>%WindowsSdkDir%\bin\x86\Tracefmt.exe</p>
@@ -42,13 +42,13 @@ Tracefmt (Tracefmt.exe) is a command-line tool that formats and displays trace m
 <strong>Note</strong>  The Visual Studio environment variable, %WindowsSdkDir%, represents the path to the Windows kits directory where the kits are installed, for example, C:\Program Files (x86)\Windows Kits\8.1.
 </div>
 <div>
- 
+ 
 </div></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Tracefmt uses the formatting instructions in a [trace message format (TMF) file](trace-message-format-file.md) to convert the binary trace messages to human-readable format. You can provide a TMF file or provide the image file for the trace provider and have Tracefmt create a TMF file.
 
@@ -64,9 +64,9 @@ This section includes:
 
 [Tracefmt Examples](tracefmt-examples.md)
 
- 
+ 
 
- 
+ 
 
 
 

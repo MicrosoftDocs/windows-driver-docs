@@ -33,23 +33,23 @@ You can use the other extended strings in any tracing function.
 </tr>
 <tr class="even">
 <td align="left"><p>%!FILE!</p></td>
-<td align="left"><p>Displays the name of the source file from which the trace message was generated. This variable can also be used in the [trace message prefix](trace-message-prefix.md).</p></td>
+<td align="left"><p>Displays the name of the source file from which the trace message was generated. This variable can also be used in the <a href="trace-message-prefix.md" data-raw-source="[trace message prefix](trace-message-prefix.md)">trace message prefix</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>%!FLAGS!</p></td>
-<td align="left"><p>Displays the value of the [trace flags](trace-flags.md) that enable the trace message. This variable can also be used in the [trace message prefix](trace-message-prefix.md).</p></td>
+<td align="left"><p>Displays the value of the <a href="trace-flags.md" data-raw-source="[trace flags](trace-flags.md)">trace flags</a> that enable the trace message. This variable can also be used in the <a href="trace-message-prefix.md" data-raw-source="[trace message prefix](trace-message-prefix.md)">trace message prefix</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>%!FUNC!</p></td>
-<td align="left"><p>Displays the function that generated the trace message. This variable can also be used in the [trace message prefix](trace-message-prefix.md).</p></td>
+<td align="left"><p>Displays the function that generated the trace message. This variable can also be used in the <a href="trace-message-prefix.md" data-raw-source="[trace message prefix](trace-message-prefix.md)">trace message prefix</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>%!LEVEL!</p></td>
-<td align="left"><p>Displays the name of the [trace level](trace-level.md) that enables the trace message. This variable can also be used in the [trace message prefix](trace-message-prefix.md).</p></td>
+<td align="left"><p>Displays the name of the <a href="trace-level.md" data-raw-source="[trace level](trace-level.md)">trace level</a> that enables the trace message. This variable can also be used in the <a href="trace-message-prefix.md" data-raw-source="[trace message prefix](trace-message-prefix.md)">trace message prefix</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>%!LINE!</p></td>
-<td align="left"><p>Displays the line number of the line in the code that generated the trace prefix. This variable can also be used in the [trace message prefix](trace-message-prefix.md).</p></td>
+<td align="left"><p>Displays the line number of the line in the code that generated the trace prefix. This variable can also be used in the <a href="trace-message-prefix.md" data-raw-source="[trace message prefix](trace-message-prefix.md)">trace message prefix</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left">General use</td>
@@ -101,16 +101,16 @@ You can use the other extended strings in any tracing function.
 </tr>
 <tr class="odd">
 <td align="left"><p>%!delta!</p></td>
-<td align="left"><p>Displays the difference between two time values, in milliseconds. It is a LONGLONG value that is displayed in <strong>day~h:m:s</strong> format.</p></td>
+<td align="left"><p>Displays the difference between two time values, in milliseconds. It is a LONGLONG value that is displayed in <strong>day~h<span class="emoji" shortCode="m">Ⓜ️</span>s</strong> format.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>%!WAITTIME!</p></td>
-<td align="left"><p>Displays the time that was spent waiting for something to be completed, in milliseconds. It is a LONGLONG value that is displayed in <strong>day~h:m:s</strong> format.</p>
+<td align="left"><p>Displays the time that was spent waiting for something to be completed, in milliseconds. It is a LONGLONG value that is displayed in <strong>day~h<span class="emoji" shortCode="m">Ⓜ️</span>s</strong> format.</p>
 <p>Designed to be used with <strong>%!due!</strong>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>%!due!</p></td>
-<td align="left"><p>Displays the time that something is expected to be completed, in milliseconds. It is a LONGLONG value that is displayed in <strong>day~h:m:s</strong> format.</p>
+<td align="left"><p>Displays the time that something is expected to be completed, in milliseconds. It is a LONGLONG value that is displayed in <strong>day~h<span class="emoji" shortCode="m">Ⓜ️</span>s</strong> format.</p>
 <p>Designed to be used with <strong>%!WAITTIME!</strong>.</p></td>
 </tr>
 <tr class="even">
@@ -159,11 +159,11 @@ You can use the other extended strings in any tracing function.
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

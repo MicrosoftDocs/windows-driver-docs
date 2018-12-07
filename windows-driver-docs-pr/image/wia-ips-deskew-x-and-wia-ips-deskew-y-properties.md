@@ -1,6 +1,5 @@
 ---
 title: WIA_IPS_DESKEW_X and WIA_IPS_DESKEW_Y Properties
-author: windows-driver-content
 description: WIA_IPS_DESKEW_X and WIA_IPS_DESKEW_Y Properties
 ms.assetid: 748b08f7-e838-4df8-abcb-4ff1cdd20f7e
 ms.date: 04/20/2017
@@ -19,9 +18,9 @@ The valid values for WIA\_IPS\_DESKEW\_X must be between 0 and (WIA\_IPS\_XEXTEN
 
 Only rectangular scanning areas are supported, so these two values uniquely define the position of the image to be deskewed. A deskew angle can be calculated from these two values.
 
- 
+ 
 
- 
+ 
 
 
 

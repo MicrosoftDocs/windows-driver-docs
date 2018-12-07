@@ -3,7 +3,6 @@ title: Setting Up Kernel-Mode Debugging
 description: This section describes how to set up kernel-mode debugging.
 ms.assetid: 268DF246-46AA-4F4E-BCBB-FCA37A3C0353
 keywords: ["Kernel-mode debugging", "Setting up kernel-mode debugging"]
-ms.author: domars
 ms.date: 06/22/2018
 ms.localizationpriority: medium
 ---
@@ -36,9 +35,9 @@ This section describes how to set up kernel-mode debugging.
 [Setting Up Debugging (Kernel-Mode and User-Mode)](getting-set-up-for-debugging.md)
 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -30,9 +30,9 @@ When you open a workspace, you start a new trace session or a new log display. Y
 
 3.  Click **Remove Log Session**.
 
- 
+ 
 
- 
+ 
 
 
 

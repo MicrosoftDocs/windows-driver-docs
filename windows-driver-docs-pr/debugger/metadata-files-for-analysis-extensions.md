@@ -2,7 +2,6 @@
 title: Metadata Files for Analysis Extension Plug-ins
 description: When you write an analysis extension plug-in, you also write a metadata file that describes the situations for which you want your plug-in to be called.
 ms.assetid: 13B9B7A5-1D68-49A3-825B-454AC070FCC1
-ms.author: domars
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -22,7 +21,7 @@ After the key and the following white space, the corresponding value begins. A v
 
     **Important**  If the last value in the metadata file has a value of this form, the line must end with a newline character.
 
-     
+     
 
 -   Any set of characters between braces { }. The form works for values that contain newline characters.
 
@@ -40,7 +39,7 @@ You can use the following keys in a metadata file.
 | ImageName      | String - Indicates that the plug-in is only interested only in sessions where the default analysis considers this image (dll, sys, or exe) to be at fault. The plug-in is invoked after analysis has determined which image is at fault. A single metadata file can specify multiple image names. |
 | MaxTagCount    | Integer - The maximum number of custom tags that the plug-in needs. Custom tags are tags other than the ones defined in extsfns.h.                                                                                                                                                                |
 
- 
+ 
 
 ## <span id="Example_Metadata_Files"></span><span id="example_metadata_files"></span><span id="EXAMPLE_METADATA_FILES"></span>Example Metadata Files
 
@@ -98,9 +97,9 @@ help text from plug-in analysis}
 
 [**!analyze**](-analyze.md)
 
- 
+ 
 
- 
+ 
 
 
 

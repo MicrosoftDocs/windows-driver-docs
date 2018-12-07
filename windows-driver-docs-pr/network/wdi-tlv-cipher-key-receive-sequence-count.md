@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_CIPHER_KEY_RECEIVE_SEQUENCE_COUNT
-author: windows-driver-content
 description: WDI_TLV_CIPHER_KEY_RECEIVE_SEQUENCE_COUNT is a TLV that contains the receive sequence count.
 ms.assetid: 29AA9D90-834F-4043-B12A-87705EDC1DF0
 ms.date: 07/18/2017
@@ -31,7 +30,7 @@ The size (in bytes) of the array of UINT8 elements.
 |------------|------------------------------------------------------------------------------------------------|
 | UINT8\[6\] | Specifies the initial 48-bit value of Packet Number (PN), which is used for replay protection. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

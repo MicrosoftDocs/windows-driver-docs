@@ -260,9 +260,9 @@ In the cases defined in the previous table where an access check is performed, t
 
 If the two sockets are bound to two different specific local transport addresses, there is no sharing of either transport address. In this situation the second bind operation will always complete successfully.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Driver Support for Customized UI
-author: windows-driver-content
 description: The v4 print driver model was developed with built-in support for UI customization using printer extensions or UWP device apps for printing.
 ms.assetid: 91B0E824-1EE3-40B0-A24E-5A66C158972E
 ms.date: 04/20/2017
@@ -32,7 +31,7 @@ While print preferences are contextual to the app that is printing, printer noti
 
 **Note**  It is important to be aware of the fact that, if you try to use a custom UI to show a notification in the Windows 8 environment by calling [GetForegroundWindow](https://msdn.microsoft.com/library/windows/desktop/ms633505.aspx), the notification window will not be displayed. This is because the operating system tries to assign a higher priority to the thread that creates a foreground window using GetForegroundWindow, and this is not allowed for dialogs in the Windows 8 environment. If you want to use a custom UI to display a notification in the Windows 8 environment, you must do so by calling [GetDesktopWindow.](https://msdn.microsoft.com/library/windows/desktop/ms633504.aspx)
 
- 
+ 
 
 **Creating Driver Events**. V4 print drivers use a DriverEvent XML file to describe Bidi queries and the triggers that should cause a driver event to be raised. And it is important to note that driver events only support standard strings. For more information about standard strings, see [AsyncUI Default Resource File String Resources](https://msdn.microsoft.com/library/cc746159.aspx). In the current implementation, this will cause an [AsyncUIBalloon](https://msdn.microsoft.com/library/cc238009(PROT.10).aspx) message to be created and published using the [MS-PAN protocol](https://msdn.microsoft.com/library/cc237960(PROT.13).aspx). This implementation may change in the future to improve performance, so it is crucial to develop your v4 print driver such that it does not take dependencies on the underlying protocol.
 

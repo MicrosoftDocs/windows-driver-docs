@@ -1,6 +1,5 @@
 ---
 title: ATA Port Driver's Queue Management
-author: windows-driver-content
 description: ATA Port Driver's Queue Management
 ms.assetid: feba86a6-2b89-41c9-9b14-b76c2522a332
 keywords:
@@ -33,8 +32,8 @@ Nevertheless, the ATA port driver *does* limit the number of requests that it pu
 
 The ATA miniport driver can also control the flow of requests that it receives from the port driver by calling the [**AtaPortDeviceBusy**](https://msdn.microsoft.com/library/windows/hardware/ff550155) and [**AtaPortDeviceReady**](https://msdn.microsoft.com/library/windows/hardware/ff550157) routines.
 
- 
+ 
 
- 
+ 
 
 

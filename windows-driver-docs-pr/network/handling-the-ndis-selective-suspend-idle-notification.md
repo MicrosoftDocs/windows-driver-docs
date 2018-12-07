@@ -25,14 +25,13 @@ The miniport driver may need to perform bus-dependent actions when it handles th
 
 This topic includes the following information about how to handle an NDIS selective suspend idle notification:
 
-[Guidelines for Handling the Call to *MiniportIdleNotification*](#guidelines)
+[Guidelines for Handling the Call to *MiniportIdleNotification*](#guidelines-for-handling-the-call-to-miniportidlenotification)
 
-[Guidelines for the Call to **NdisMIdleNotificationConfirm**](#overview)
+[Guidelines for the Call to **NdisMIdleNotificationConfirm**](#guidelines-for-the-call-to-ndismidlenotificationconfirm)
 
-[Canceling and Completing an NDIS Selective Suspend Idle Notification](#cancel)
+[Canceling and Completing an NDIS Selective Suspend Idle Notification](#canceling-and-completing-an-ndis-selective-suspend-idle-notification)
 
 ## Guidelines for Handling the Call to *MiniportIdleNotification*
-
 
 NDIS and the miniport driver follow these steps when NDIS calls [*MiniportIdleNotification*](https://msdn.microsoft.com/library/windows/hardware/hh464092):
 
@@ -46,9 +45,7 @@ NDIS and the miniport driver follow these steps when NDIS calls [*MiniportIdleNo
 
     If the miniport driver vetoes the idle notification, NDIS restarts the monitor of activity on the network adapter. If the adapter becomes inactive again within the idle time-out period, NDIS calls [*MiniportIdleNotification*](https://msdn.microsoft.com/library/windows/hardware/hh464092).
 
-    **Note**  The miniport driver must not veto the idle notification if the *ForceIdle* parameter is set to **TRUE**. In this case, the driver must continue with the selective suspend operation.
-
-     
+    **Note**  The miniport driver must not veto the idle notification if the *ForceIdle* parameter is set to **TRUE**. In this case, the driver must continue with the selective suspend operation.
 
 3.  If the miniport driver does not veto the idle notification, it must perform any bus-specific operations to prepare the network adapter for a selective suspend operation. For example, the miniport driver for a USB network adapter performs the following steps to determine whether the network adapter can transition to a low-power state:
 
@@ -72,9 +69,9 @@ NDIS and the miniport driver follow these steps when NDIS calls [*MiniportIdleNo
 
 5.  If the network adapter can be transitioned to a low-power state, the miniport driver returns NDIS\_STATUS\_PENDING from the call to [*MiniportIdleNotification*](https://msdn.microsoft.com/library/windows/hardware/hh464092).
 
-    **Note**  The miniport driver returns NDIS\_STATUS\_PENDING because the idle notification is not completed until the driver calls [**NdisMIdleNotificationComplete**](https://msdn.microsoft.com/library/windows/hardware/hh451491). The miniport driver must not return NDIS\_STATUS\_SUCCESS from [*MiniportIdleNotification*](https://msdn.microsoft.com/library/windows/hardware/hh464092).
+    **Note**  The miniport driver returns NDIS\_STATUS\_PENDING because the idle notification is not completed until the driver calls [**NdisMIdleNotificationComplete**](https://msdn.microsoft.com/library/windows/hardware/hh451491). The miniport driver must not return NDIS\_STATUS\_SUCCESS from [*MiniportIdleNotification*](https://msdn.microsoft.com/library/windows/hardware/hh464092).
 
-     
+
 
 The miniport driver should perform the following operations until the network adapter is suspended and transitioned to a low-power state:
 
@@ -82,9 +79,9 @@ The miniport driver should perform the following operations until the network ad
 
 -   The miniport driver should process completed send packets and indicate them to NDIS by calling [**NdisMSendNetBufferListsComplete**](https://msdn.microsoft.com/library/windows/hardware/ff563668).
 
-    **Note**  NDIS will not call the driver's [*MiniportSendNetBufferLists*](https://msdn.microsoft.com/library/windows/hardware/ff559440) function to send packets if [*MiniportIdleNotification*](https://msdn.microsoft.com/library/windows/hardware/hh464092) returns NDIS\_STATUS\_PENDING.
+    **Note**  NDIS will not call the driver's [*MiniportSendNetBufferLists*](https://msdn.microsoft.com/library/windows/hardware/ff559440) function to send packets if [*MiniportIdleNotification*](https://msdn.microsoft.com/library/windows/hardware/hh464092) returns NDIS\_STATUS\_PENDING.
 
-     
+
 
 ## Guidelines for the Call to **NdisMIdleNotificationConfirm**
 
@@ -105,15 +102,11 @@ NDIS and the miniport driver follow these steps when the miniport driver calls [
 
     -   If the *ForceIdle* parameter of the [*MiniportIdleNotification*](https://msdn.microsoft.com/library/windows/hardware/hh464092) handler function was set to **TRUE**, NDIS does not set the NDIS\_PM\_SELECTIVE\_SUSPEND\_ENABLED flag in the **WakeUpFlags** member of the [**NDIS\_PM\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff566759) structure. In this case, NDIS sets other members in the **NDIS\_PM\_PARAMETERS** structure for wake-up events not related to NDIS selective suspend.
 
-        **Note**  NDIS sets the *ForceIdle* parameter to **TRUE** only when a system that is compliant with the Always On Always Connected (AOAC) technology is transitioning to a Connected Standby state.
+        **Note**  NDIS sets the *ForceIdle* parameter to **TRUE** only when a system that is compliant with the Always On Always Connected (AOAC) technology is transitioning to a Connected Standby state.
 
-         
+        The driver completes the OID request with NDIS\_STATUS\_SUCCESS.
 
-    The driver completes the OID request with NDIS\_STATUS\_SUCCESS.
-
-    **Note**  If NDIS sets the NDIS\_PM\_SELECTIVE\_SUSPEND\_ENABLED flag in the **WakeUpFlags** member of [**NDIS\_PM\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff566759) structure, it issues the OID set request of [OID\_PM\_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/ff569768) directly to the miniport driver. This allows NDIS to bypass the processing by filter drivers in the networking driver stack.
-
-     
+        **Note**  If NDIS sets the NDIS\_PM\_SELECTIVE\_SUSPEND\_ENABLED flag in the **WakeUpFlags** member of [**NDIS\_PM\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff566759) structure, it issues the OID set request of [OID\_PM\_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/ff569768) directly to the miniport driver. This allows NDIS to bypass the processing by filter drivers in the networking driver stack.
 
 3.  After the OID set request of [OID\_PM\_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/ff569768) is completed successfully, NDIS issues an OID set request [OID\_PNP\_SET\_POWER](https://msdn.microsoft.com/library/windows/hardware/ff569780) to the miniport driver.
 
@@ -133,14 +126,11 @@ NDIS and the miniport driver follow these steps when the miniport driver calls [
 
 4.  NDIS issues an [**IRP\_MN\_SET\_POWER**](https://msdn.microsoft.com/library/windows/hardware/ff551744) to the underlying bus driver. This IRP requests that the network adapter be transitioned to a low-power state.
 
-    **Note**  During a selective suspend operation, the network adapter will be transitioned to the device power state that was specified in the call to [**NdisMIdleNotificationConfirm**](https://msdn.microsoft.com/library/windows/hardware/hh451492). The miniport driver specifies this device power state in the *IdlePowerState* parameter of this function.
+    **Note**  During a selective suspend operation, the network adapter will be transitioned to the device power state that was specified in the call to [**NdisMIdleNotificationConfirm**](https://msdn.microsoft.com/library/windows/hardware/hh451492). The miniport driver specifies this device power state in the *IdlePowerState* parameter of this function.
 
-     
-
-    After the IRP is completed, NDIS returns from the call to [**NdisMIdleNotificationConfirm**](https://msdn.microsoft.com/library/windows/hardware/hh451492).
+After the IRP is completed, NDIS returns from the call to [**NdisMIdleNotificationConfirm**](https://msdn.microsoft.com/library/windows/hardware/hh451492).
 
 ## Canceling and Completing an NDIS Selective Suspend Idle Notification
-
 
 After the idle notification is issued, it can be canceled and completed in the following ways:
 
@@ -157,12 +147,3 @@ After the idle notification is issued, it can be canceled and completed in the f
 -   After the network adapter is in a low-power state, the miniport driver can complete the idle notification itself to resume the adapter to a full-power state. The reasons for doing this are specific to the design and requirements of the driver and adapter. The miniport driver completes the idle notification by calling [**NdisMIdleNotificationComplete**](https://msdn.microsoft.com/library/windows/hardware/hh451491).
 
     For more information about how the miniport driver completes the idle notification, see [Completing the NDIS Selective Suspend Idle Notification](completing-the-ndis-selective-suspend-idle-notification.md).
-
- 
-
- 
-
-
-
-
-

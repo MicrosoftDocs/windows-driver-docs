@@ -29,9 +29,9 @@ NDIS propagates a driver's data backfill requirements to higher-level drivers. W
 
 For more information about the NET\_BUFFER architecture, see [NET\_BUFFER Architecture](net-buffer-architecture.md).
 
- 
+ 
 
- 
+ 
 
 
 

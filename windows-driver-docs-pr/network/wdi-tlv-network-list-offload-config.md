@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_NETWORK_LIST_OFFLOAD_CONFIG
-author: windows-driver-content
 description: WDI_TLV_NETWORK_LIST_OFFLOAD_CONFIG is a TLV that contains Network List Offload (NLO) configuration.
 ms.assetid: 8805B31C-7601-4045-AD52-21B91E2D3722
 ms.date: 07/18/2017
@@ -35,7 +34,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | UINT32 | The number of iterations in the fast scan phase.                                                                      |
 | UINT32 | The period (in seconds) to scan in the slow scan phase. This phase lasts indefinitely until a new NLO command is set. |
 
- 
+ 
 
 Requirements
 ------------
@@ -61,9 +60,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

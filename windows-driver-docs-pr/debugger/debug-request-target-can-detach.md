@@ -9,7 +9,6 @@ api_name:
 - DEBUG_REQUEST_TARGET_CAN_DETACH
 api_type:
 - NA
-ms.author: domars
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -45,9 +44,9 @@ Only targets running on Microsoft Windows XP or later versions of Windows suppor
 
 [**Request**](request.md)
 
- 
+ 
 
- 
+ 
 
 
 

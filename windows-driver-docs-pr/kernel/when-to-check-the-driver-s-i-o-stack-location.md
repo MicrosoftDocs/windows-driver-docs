@@ -1,6 +1,5 @@
 ---
 title: When to Check the Driver's I/O Stack Location
-author: windows-driver-content
 description: When to Check the Driver's I/O Stack Location
 ms.assetid: ca084221-7b07-4db0-a987-9dd8a66d169c
 keywords: ["dispatch routines WDK kernel , I/O stack locations", "I/O stack locations WDK dispatch routines", "driver I/O stack locations WDK dispatch routines"]
@@ -28,13 +27,13 @@ To get a pointer to a driver's I/O stack location, its dispatch routine calls [*
 
 Higher-level drivers' dispatch routines always call **IoGetCurrentIrpStackLocation** and also call [**IoGetNextIrpStackLocation**](https://msdn.microsoft.com/library/windows/hardware/ff549266) to get a pointer to the next-lower driver's I/O stack location for IRPs that they set up for the next-lower driver, when [passing IRPs down the driver stack](passing-irps-down-the-driver-stack.md).
 
-The [*DispatchDeviceControl*](https://msdn.microsoft.com/library/windows/hardware/ff543287) routine or [*DispatchInternalDeviceControl*](https://msdn.microsoft.com/library/windows/hardware/ff543326) routine of a device driver, or possibly of its closely coupled class driver(s), must determine which I/O control code is set in the driver's I/O stack location at **Parameters.DeviceIoControl.IoControlCode** for each request. The I/O control code is contained in the driver's I/O stack location.
+The [*DispatchDeviceControl*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine or [*DispatchInternalDeviceControl*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine of a device driver, or possibly of its closely coupled class driver(s), must determine which I/O control code is set in the driver's I/O stack location at **Parameters.DeviceIoControl.IoControlCode** for each request. The I/O control code is contained in the driver's I/O stack location.
 
 In most cases, the *DispatchDeviceControl* or *DispatchInternalDeviceControl* routine of a higher-level driver simply passes an **IRP\_MJ\_DEVICE\_CONTROL** or **IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL** request on to the next-lower driver, after setting up its stack location in the IRP. However, SCSI class drivers must check for certain [SCSI Port I/O control codes](https://msdn.microsoft.com/library/windows/hardware/ff565367) so that they can set up the SCSI port driver's I/O stack location correctly before passing on these requests.
 
- 
+ 
 
- 
+ 
 
 
 

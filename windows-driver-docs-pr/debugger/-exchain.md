@@ -3,7 +3,6 @@ title: exchain
 description: The exchain extension displays the current exception handler chain.
 ms.assetid: 6e5c935b-e475-4213-83d8-94510a58fde5
 keywords: ["exchain Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -57,7 +56,7 @@ Displays information that is obtained by walking the CRT function tables, even i
 </tbody>
 </table>
 
- 
+ 
 
 The **!exchain** extension is available only for an x86-based target computer.
 
@@ -79,9 +78,9 @@ The list begins with the first handler on the chain (the one that is given the f
 0012ffe0: KERNEL32!GetThreadContext+1c (77ea1856)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

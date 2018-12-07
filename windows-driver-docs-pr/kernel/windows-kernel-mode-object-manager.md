@@ -1,6 +1,5 @@
 ---
 title: Windows Kernel-Mode Object Manager
-author: windows-driver-content
 description: Windows Kernel-Mode Object Manager
 ms.assetid: f10561a3-d831-4c13-9edf-be40fb1db403
 ms.localizationpriority: medium
@@ -56,9 +55,9 @@ Routines that provide a direct interface to the object manager are usually prefi
 
 Note that Windows uses objects as an abstraction for resources. However, Windows is not object-oriented in the classical C++ meaning of the term. Windows is *object-based*. For more information on what object-based means for Windows, see [Object-Based](object-based.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: NFP device driver requirements
-author: windows-driver-content
 description: Provides information about NFP device driver requirements.
 ms.assetid: 48EB0861-7BC5-4CA2-9AE5-DD3BA17AC39A
 keywords:
@@ -35,9 +34,9 @@ Provides information about NFP device driver requirements.
 -   [Power management](power-management.md)
 -   [Protocol support](protocol-support.md)
 
- 
+ 
 
- 
+ 
 ## Related topics
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [Near field proximity DDI reference](https://msdn.microsoft.com/library/windows/hardware/jj866056)  

@@ -3,7 +3,6 @@ title: Using Callback Objects
 description: Using Callback Objects
 ms.assetid: 9090a465-b6ab-4e99-8155-b0abdb729468
 keywords: ["Debugger Engine API, callback objects", "callback objects", "callback objects, event callbacks", "event callbacks", "callback objects, input callbacks", "input callbacks", "callback objects, output callbacks", "output callbacks"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -39,11 +38,11 @@ For details on how the engine manages output, see [Input and Output](using-input
 
 **Note**   As is typical for COM objects, the engine will call **IUnknown::AddRef** on a callback COM object when it is registered with a client, and **IUnknown::Release** when the object is replaced or the client is deleted.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

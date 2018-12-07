@@ -1,6 +1,5 @@
 ---
 title: Code Example for Initializing Device Properties
-author: windows-driver-content
 description: Code Example for Initializing Device Properties
 ms.assetid: ec25fa77-13d8-4cb0-913c-b24010355702
 ms.date: 04/20/2017
@@ -82,9 +81,9 @@ if (pPropertyStore)
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

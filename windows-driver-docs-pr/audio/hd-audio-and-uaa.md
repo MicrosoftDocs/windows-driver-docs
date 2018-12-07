@@ -28,9 +28,9 @@ This section includes:
 
 [Communicating Verbs with the HD Audio Codec](communicating-verbs-with-the-hd-audio-codec.md)
 
- 
+ 
 
- 
+ 
 
 
 

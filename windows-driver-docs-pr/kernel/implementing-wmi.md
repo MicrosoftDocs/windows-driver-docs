@@ -1,6 +1,5 @@
 ---
 title: Implementing WMI
-author: windows-driver-content
 description: Implementing WMI
 ms.assetid: 5c2ed322-0fc9-4004-9a5f-f4d3c6a59fe9
 keywords: ["WMI WDK kernel", "Windows Management Instrumentation WDK kernel", "extensions WDK WMI", "measurement data WDK WMI", "instrumentation data WDK WMI", "user-mode WMI WDK", "WMI WDK user-mode", "Windows Management Instrumentation WDK user-mode", "kernel-mode drivers WDK , WMI"]
@@ -48,9 +47,9 @@ This section includes the following information about kernel-mode WMI:
 
 [Testing and Troubleshooting WMI Driver Support](testing-and-troubleshooting-wmi-driver-support.md)
 
- 
+ 
 
- 
+ 
 
 
 

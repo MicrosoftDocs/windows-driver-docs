@@ -1,6 +1,5 @@
 ---
 title: WDM Equivalents for WDF Buffer Pointers
-author: windows-driver-content
 description: WDM Equivalents for WDF Buffer Pointers
 ms.assetid: 7923A3CA-479A-4C7D-B428-F57C9701906E
 ms.date: 04/20/2017
@@ -32,7 +31,7 @@ To retrieve a buffer for a read request, a KMDF driver calls one of the **WdfReq
 | [**WdfRequestRetrieveOutputWdmMdl (KMDF only)**](https://msdn.microsoft.com/library/windows/hardware/ff550021) | Builds a memory descriptor list (MDL) for **Irp-&gt;AssociatedIrp.SystemBuffer** and returns the MDL.                                           | **Irp-&gt;MdlAddress**                                                                                                                                                                                    |
 | [**WdfRequestRetrieveOutputMemory**](https://msdn.microsoft.com/library/windows/hardware/ff550019)             | Returns a WDFMEMORY object. Call [**WdfMemoryGetBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff548715) on this object to get **Irp-&gt;AssociatedIrp.SystemBuffer**. | Returns a WDFMEMORY object. Call [**WdfMemoryGetBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff548715) on this object to get [**MmGetSystemAddressForMdlSafe**](https://msdn.microsoft.com/library/windows/hardware/ff554559) (**Irp-&gt;MdlAddress**). |
 
- 
+ 
 
 ## <a href="" id="write"></a>Buffers for IRP\_MJ\_WRITE Requests
 
@@ -45,7 +44,7 @@ To retrieve a buffer for a write request, a KMDF driver calls one of the **WdfRe
 | [**WdfRequestRetrieveInputWdmMdl (KMDF only)**](https://msdn.microsoft.com/library/windows/hardware/ff550016) | Builds an MDL for **Irp-&gt;AssociatedIrp.SystemBuffer** and returns the MDL.                                                                   | **Irp-&gt;MdlAddress**                                                                                                                                                                                    |
 | [**WdfRequestRetrieveInputMemory**](https://msdn.microsoft.com/library/windows/hardware/ff550015)             | Returns a WDFMEMORY object. Call [**WdfMemoryGetBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff548715) on this object to get **Irp-&gt;AssociatedIrp.SystemBuffer**. | Returns a WDFMEMORY object. Call [**WdfMemoryGetBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff548715) on this object to get [**MmGetSystemAddressForMdlSafe**](https://msdn.microsoft.com/library/windows/hardware/ff554559) (**Irp-&gt;MdlAddress**). |
 
- 
+ 
 
 ## <a href="" id="device-control"></a>Buffers for IRP\_MJ\_DEVICE\_CONTROL Requests
 
@@ -61,11 +60,11 @@ To retrieve a buffer for a device I/O control request, a KMDF driver calls eithe
 | [**WdfRequestRetrieveOutputWdmMdl (KMDF only)**](https://msdn.microsoft.com/library/windows/hardware/ff550021) | Builds a memory descriptor list (MDL) for **Irp-&gt;AssociatedIrp.SystemBuffer** and returns the MDL.                                           | **Irp-&gt;MdlAddress**                                                                                                                                                                                    |
 | [**WdfRequestRetrieveOutputMemory**](https://msdn.microsoft.com/library/windows/hardware/ff550019)             | Returns a WDFMEMORY object. Call [**WdfMemoryGetBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff548715) on this object to get **Irp-&gt;AssociatedIrp.SystemBuffer**. | Returns a WDFMEMORY object. Call [**WdfMemoryGetBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff548715) on this object to get [**MmGetSystemAddressForMdlSafe**](https://msdn.microsoft.com/library/windows/hardware/ff554559) (**Irp-&gt;MdlAddress**). |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

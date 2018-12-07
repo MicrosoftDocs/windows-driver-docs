@@ -3,7 +3,6 @@ title: CTRL+F (Break to KD)
 description: The CTRL+F key cancels commands or breaks into the debugger.
 ms.assetid: 45bb7eaf-cb79-4fb4-a01d-373bfb1957c3
 keywords: ["CTRL+F (Break to KD) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -53,7 +52,7 @@ CTRL+F  ENTER
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -67,9 +66,9 @@ However, if you are debugging KD with CDB, these two keys will work differently.
 
 [**.breakin (Break to the Kernel Debugger)**](-breakin--break-to-the-kernel-debugger-.md)
 
- 
+ 
 
- 
+ 
 
 
 

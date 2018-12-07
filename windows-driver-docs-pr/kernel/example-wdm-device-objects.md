@@ -1,6 +1,5 @@
 ---
 title: Example WDM Device Objects
-author: windows-driver-content
 description: Example WDM Device Objects
 ms.assetid: 8da56415-5018-468c-99c7-3969e5c00285
 keywords: ["device objects WDK kernel , examples", "mouse WDK kernel", "keyboards WDK kernel", "functional device objects WDK kernel", "FDO WDK kernel", "physical device objects WDK kernel", "PDOs WDK kernel", "filter DOs WDK kernel"]
@@ -28,9 +27,9 @@ As shown previously in the [Keyboard and Mouse Driver Layers](sample-device-and-
 
 A dual-device port driver, like the i8042 driver for the keyboard and auxiliary device controller shown in the [Keyboard and Mouse Hardware Configurations](sample-device-and-driver-configuration.md#keyboard-and-mouse-hardware-configurations) figure, must set up device-specific [*interrupt objects*](https://msdn.microsoft.com/library/windows/hardware/ff556290#wdkgloss-interrupt-object) if each device uses a different interrupt vector. When writing such a driver, you can either implement separate ISRs for each device or implement a single ISR for both devices.
 
- 
+ 
 
- 
+ 
 
 
 

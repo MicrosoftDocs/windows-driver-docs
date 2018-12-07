@@ -33,9 +33,9 @@ Represents the part of the application text log (*SetupAPI.app.log)* that is not
 <a href="" id="logtoken-setupapi-devlog"></a>LOGTOKEN_SETUPAPI_DEVLOG  
 Represents the part of the device installation text log (*SetupAPI.dev.log)* that is not part of a text log section. The SetupAPI logging functions write log entries in the device installation text log if this token value is specified.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: KS Events
-author: windows-driver-content
 description: KS Events
 ms.assetid: 3eaa1d65-8417-4a07-b358-823394baec9b
 keywords:
@@ -34,9 +33,9 @@ Some event types require additional parameters to register for event notificatio
 
 In such a case, a minidriver passes additional data parameters in the data buffer after the [**KSEVENTDATA**](https://msdn.microsoft.com/library/windows/hardware/ff561750) structure. Minidrivers that support such an event type use an extended data structure, of which the first member is of type KSEVENTDATA, to hold the notification data.
 
- 
+ 
 
- 
+ 
 
 
 

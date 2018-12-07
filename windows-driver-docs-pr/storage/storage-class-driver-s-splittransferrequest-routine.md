@@ -1,6 +1,5 @@
 ---
 title: Storage Class Driver's SplitTransferRequest Routine
-author: windows-driver-content
 description: Storage Class Driver's SplitTransferRequest Routine
 ms.assetid: 4f449d3b-9a0a-4ff9-a7fb-bfa21b8a56c0
 keywords:
@@ -20,7 +19,7 @@ ms.localizationpriority: medium
 
 The STORAGE\_ADAPTER\_DESCRIPTOR data returned to the *GetDescriptor* routine indicates the transfer capabilities of a given HBA to the class driver. In particular, this data indicates the **MaximumTransferLength** in bytes and the **MaximumPhysicalPages**: that is, how many noncontiguous pages the HBA can manage in the physical memory backing a system buffer (i.e., the extent of its scatter/gather support).
 
-Most class drivers store a pointer to this configuration data in the device extension of each device object because storage class drivers are responsible for splitting all transfer requests that exceed the HBA's capability to transfer data. In other words, a class driver's [**DispatchReadWrite**](https://msdn.microsoft.com/library/windows/hardware/ff543381) routine must determine whether each IRP requests a transfer that is more than the HBA can handle in a single transfer operation.
+Most class drivers store a pointer to this configuration data in the device extension of each device object because storage class drivers are responsible for splitting all transfer requests that exceed the HBA's capability to transfer data. In other words, a class driver's [**DispatchReadWrite**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine must determine whether each IRP requests a transfer that is more than the HBA can handle in a single transfer operation.
 
 For example, such a *DispatchReadWrite* routine could have code similar to the following:
 
@@ -74,9 +73,9 @@ To track each piece of the transfer, *SplitTransferRequest* registers an *IoComp
 
 Such an *IoCompletion* routine must free any IRPs and/or SRBs the driver has allocated and must complete the original IRP when all requested data has been transferred or when the class driver has exhausted retries of the IRP and must fail it due to device transfer errors.
 
- 
+ 
 
- 
+ 
 
 
 

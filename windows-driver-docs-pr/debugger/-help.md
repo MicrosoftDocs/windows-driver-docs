@@ -3,7 +3,6 @@ title: help
 description: The help extension displays help text that describes the extension commands exported from the extension DLL.
 ms.assetid: 9d01856e-4906-43cb-a445-71cce011a973
 keywords: ["help Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -29,7 +28,7 @@ Do not confuse this extension command with the [**? (Command Help)**](---command
 
 
 <span id="_______ExtensionDLL______"></span><span id="_______extensiondll______"></span><span id="_______EXTENSIONDLL______"></span> *ExtensionDLL*   
-Displays help for the specified extension DLL. Type the name of an extension DLL without the .dll file name extension. If the DLL file is not in the extension search path (as displayed by using [**.chain (List Debugger Extensions)**](-chain--list-debugger-extensions-.md)), include the path to the DLL file. For example, to display help for uext.dll, type **!uext.help** or **!***Path***\\winext\\uext.help**.
+Displays help for the specified extension DLL. Type the name of an extension DLL without the .dll file name extension. If the DLL file is not in the extension search path (as displayed by using [**.chain (List Debugger Extensions)**](-chain--list-debugger-extensions-.md)), include the path to the DLL file. For example, to display help for uext.dll, type **!uext.help** or **!**<em>Path</em>**\\winext\\uext.help**.
 
 If you omit the *ExtensionDLL*, the debugger will display the help text for the first extension DLL in the list of loaded DLLs.
 
@@ -48,9 +47,9 @@ Remarks
 
 Some individual commands will also display a help text if you use the **/?** or **-?** parameter with the command name.
 
- 
+ 
 
- 
+ 
 
 
 

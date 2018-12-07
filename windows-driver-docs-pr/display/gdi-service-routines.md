@@ -19,9 +19,9 @@ ms.localizationpriority: medium
 
 GDI exports many service routines, whose names have the form **Eng***Xxx*. The driver dynamically links to *win32k.sys* to directly access these routines. GDI service routines include surface management, rendering simulations, and path, palette, font, and text services. These services are discussed in detail in [GDI Support Services](gdi-support-services.md).
 
- 
+ 
 
- 
+ 
 
 
 

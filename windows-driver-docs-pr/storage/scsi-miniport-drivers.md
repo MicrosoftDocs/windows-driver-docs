@@ -1,6 +1,5 @@
 ---
 title: SCSI Miniport Drivers
-author: windows-driver-content
 description: SCSI Miniport Drivers
 ms.assetid: d9268be8-a68d-4617-b323-349ce7c62f3f
 keywords:
@@ -37,9 +36,9 @@ Note that any SCSI miniport driver that calls routines other than the **ScsiPort
 
 A SCSI miniport driver can be a Plug and Play driver, or it can run as a legacy driver that does not participate in Plug and Play operations such as resource redistribution or power management. The primary differences between a Plug and Play and a legacy miniport driver are the order in which initialization routines are called and enforcement of certain restrictions that were applied to miniport drivers in Microsoft Windows NT 4.0, but not enforced.
 
- 
+ 
 
- 
+ 
 
 
 

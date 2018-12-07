@@ -1,6 +1,5 @@
 ---
 title: Command Execution Order
-author: windows-driver-content
 description: Command Execution Order
 ms.assetid: 2bf7438c-bfb0-407f-9c80-be3b8a9322f9
 keywords:
@@ -98,9 +97,9 @@ Sequence numbers do not have to be consecutive, but each number specified within
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: 3D manufacturing keywords overview
-author: windows-driver-content
 description: The Print Schema 3D manufacturing keywords identify possible settings for a device’s capabilities or selected settings for a device configuration.
 ms.assetid: D78EB9E6-584A-419C-B320-8962CDCC966E
 ms.date: 04/20/2017
@@ -143,7 +142,7 @@ Parameters in the Print Schema 3D manufacturing keyword set follows the same req
 </tbody>
 </table>
 
- 
+ 
 
 ## 1.9. Common properties
 
@@ -163,11 +162,11 @@ In addition to the Parameter unit types specified in §2.1.3.1.2, "Parameter psf
 | Temperature | xsd:decimal | The contents of the Value of the Parameter represents a temperature, in Celsius. This parameter must always be rounded to the nearest hundredth of a degree. |
 | materialMap | xsd:string  | The contents of the Value of the Parameter must be expressed as a semi-colon delimited list of materialids.                                                  |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

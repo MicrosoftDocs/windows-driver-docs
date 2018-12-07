@@ -1,6 +1,5 @@
 ---
 title: WSK_TRANSPORT_LIST_QUERY
-author: windows-driver-content
 description: WSK_TRANSPORT_LIST_QUERY
 ms.assetid: feb6aed2-fac9-4d3f-a36b-f721c737aacf
 ms.date: 07/18/2017
@@ -46,7 +45,7 @@ To retrieve a list of available network transports, a WSK application calls the 
 </tr>
 <tr class="odd">
 <td><p><em>OutputBuffer</em></p></td>
-<td><p>A pointer to an array of [<strong>WSK_TRANSPORT</strong>](https://msdn.microsoft.com/library/windows/hardware/ff571193) structures that receives the list of available network transports</p></td>
+<td><p>A pointer to an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff571193" data-raw-source="[&lt;strong&gt;WSK_TRANSPORT&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff571193)"><strong>WSK_TRANSPORT</strong></a> structures that receives the list of available network transports</p></td>
 </tr>
 <tr class="even">
 <td><p><em>OutputSizeReturned</em></p></td>
@@ -83,9 +82,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

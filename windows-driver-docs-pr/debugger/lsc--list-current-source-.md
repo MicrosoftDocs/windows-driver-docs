@@ -3,7 +3,6 @@ title: lsc (List Current Source)
 description: The lsc command displays the current source file name and line number.
 ms.assetid: 5c500974-c405-4335-94bd-a36e7389667b
 keywords: ["lsc (List Current Source) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -49,7 +48,7 @@ lsc
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="see_also"></span>See also
 
@@ -58,9 +57,9 @@ lsc
 
 [**lsf, lsf- (Load or Unload Source File)**](lsf--lsf---load-or-unload-source-file-.md)
 
- 
+ 
 
- 
+ 
 
 
 

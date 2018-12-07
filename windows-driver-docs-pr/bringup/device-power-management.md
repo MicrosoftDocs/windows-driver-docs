@@ -1,6 +1,5 @@
 ---
 title: Device power management
-author: windows-driver-content
 description: The ACPI 5.0 specification defines a set of namespace objects to specify device power information for a device.
 ms.assetid: F57AD5A0-F459-4A20-BDBE-87C30CF957B3
 ms.date: 04/20/2017
@@ -23,7 +22,7 @@ For peripheral devices that are not integrated into the SoC, Windows uses ACPI D
 
 **Note**  It is possible to, and some device stacks do, use ACPI Device Power Management—alone, or in combination with the microPEP—for on-SoC device power management.
 
- 
+ 
 
 As described in [Device power management in ACPI](#acpi), Windows supports the D3cold power management capabilities that are defined in the ACPI 5.0 specification. By using this support, devices, platforms and drivers can opt-in to having device power completely removed during run-time idle periods. This capability can significantly improve battery life. However, removing power must be supported by all affected components in order to be able to return to D0 successfully. For this reason, drivers (bus and function), as well as the platform itself, must indicate that they support it. For more information about D3cold driver opt-in, see [Supporting D3cold in a Driver](https://msdn.microsoft.com/library/windows/hardware/hh967717).
 
@@ -88,11 +87,11 @@ There is a Power Resource Requirements (\_PRx) object, where x = 0, 1, 2, or 3, 
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  If a particular platform supports the D3cold feature, and the device driver for a device opts-in to D3cold, the device's \_PR3 power resources will, if they are not being used by any other device, be turned off sometime after the transition to D3hot.
 
- 
+ 
 
 For more information about the power resource requirements for a device that supports D3cold, see [Firmware Requirements for D3cold](firmware-requirements-for-d3cold.md).
 
@@ -112,7 +111,7 @@ For most SoC platforms, devices are aggressively power-managed to the D3 state w
 
 **Note**  To facilitate the migration of device drivers from Windows 7 to Windows 8 or Windows 8.1, your device might be required to supply \_S4W as well. Currently, the only device class that has this requirement is networking (Ndis.sys).
 
- 
+ 
 
 **Wake-capable interrupts (\_CRS)**
 
@@ -132,9 +131,9 @@ In some cases, additional power resources must be turned on for a device to be e
 
 \_PRW is also used to define the wake capability for traditional (full-ACPI hardware) PC platforms.
 
- 
+ 
 
- 
+ 
 
 
 

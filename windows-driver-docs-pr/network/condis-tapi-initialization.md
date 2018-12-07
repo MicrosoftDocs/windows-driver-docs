@@ -54,9 +54,9 @@ The NDPROXY driver uses the information obtained with the TAPI enumeration OIDs 
 
 -   Register one or more TAPI service access points (SAPs) on which to receive subsequent incoming TAPI calls.
 
- 
+ 
 
- 
+ 
 
 
 

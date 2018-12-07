@@ -1,6 +1,5 @@
 ---
 title: Native XML Template Data Types
-author: windows-driver-content
 description: Native XML Template Data Types
 ms.assetid: a34dec46-de5d-4f12-8863-2fe6b6e5eed4
 keywords:
@@ -80,9 +79,9 @@ If the earlier GDL entry is interpreted by using the PHRASE template, the follow
 
 The XML attribute **xsi:type** is used to specify the data type that is held by this attribute element because the schema contains no declaration for this element.
 
- 
+ 
 
- 
+ 
 
 
 

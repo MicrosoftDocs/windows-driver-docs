@@ -38,9 +38,9 @@ Objects are classified as *operational characteristics* (for example, multicast 
 
 For more information about OID classifications, see [NDIS OIDs](https://msdn.microsoft.com/library/windows/hardware/ff566707).
 
- 
+ 
 
- 
+ 
 
 
 

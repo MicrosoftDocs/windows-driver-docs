@@ -33,8 +33,8 @@ After a device is attached, Windows attempts to locate a matching [driver packag
 <td align="left">Before a driver is installed</td>
 <td align="left"><p>DevicePath</p>
 <p>Windows Update</p>
-<p>[Driver store](driver-store.md)</p></td>
-<td align="left">[Driver store](driver-store.md)</td>
+<p><a href="driver-store.md" data-raw-source="[Driver store](driver-store.md)">Driver store</a></p></td>
+<td align="left"><a href="driver-store.md" data-raw-source="[Driver store](driver-store.md)">Driver store</a></td>
 </tr>
 <tr class="even">
 <td align="left">After initial driver is selected</td>
@@ -45,7 +45,7 @@ After a device is attached, Windows attempts to locate a matching [driver packag
 </tbody>
 </table>
 
- 
+ 
 
 ### Searching for driver packages
 
@@ -59,19 +59,19 @@ After a device is attached, Windows first attempts to locate and install a drive
 
     ```cpp
     HKEY_LOCAL_MACHINE
-       Software
-          Microsoft
-             Windows
-                CurrentVersion
+       Software
+          Microsoft
+             Windows
+                CurrentVersion
     ```
 
     By default, the **DevicePath** value specifies the %SystemRoot%\\INF directory.
 
     If a better matching driver package than was initially installed is found either on Windows Update or in a location that is specified by the **DevicePath** value, Windows first stages the driver package to the [driver store](driver-store.md) before the driver is installed. In this way, Windows always installs drivers from the driver store.
 
- 
+ 
 
- 
+ 
 
 
 

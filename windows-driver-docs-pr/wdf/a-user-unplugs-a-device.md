@@ -1,6 +1,5 @@
 ---
 title: A User Unplugs a Device
-author: windows-driver-content
 description: A User Unplugs a Device
 ms.assetid: 85e69401-0128-4641-aa0f-fd7c4f22f395
 keywords:
@@ -79,9 +78,9 @@ Note that a device can be unexpectedly removed at any time. Therefore, the frame
 
 In addition, the framework does not synchronize a device's [*EvtDeviceSurpriseRemoval*](https://msdn.microsoft.com/library/windows/hardware/ff540913) callback function with any of the callback functions listed in the previous steps for that device. Therefore, the [*EvtDeviceSurpriseRemoval*](https://msdn.microsoft.com/library/windows/hardware/ff540913) callback function might run while another of the previously listed callback functions is also running.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Getting Error Injection Capabilities
-author: windows-driver-content
 description: Getting Error Injection Capabilities
 ms.assetid: d4ff0d9c-bb17-4dff-8008-bf8d59e44621
 keywords:
@@ -87,9 +86,9 @@ SysFreeString(MethodName);
 pOutParameters->Release();
 ```
 
- 
+ 
 
- 
+ 
 
 
 

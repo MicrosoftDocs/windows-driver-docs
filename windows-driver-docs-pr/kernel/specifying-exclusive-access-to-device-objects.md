@@ -1,6 +1,5 @@
 ---
 title: Specifying Exclusive Access to Device Objects
-author: windows-driver-content
 description: Specifying Exclusive Access to Device Objects
 ms.assetid: b492251b-55b0-4323-a508-b395bb3da0ef
 keywords: ["exclusive access WDK device objects", "device objects WDK kernel , exclusive access", "single access WDK device objects"]
@@ -22,9 +21,9 @@ Drivers whose device objects are not stacked, such as non-WDM drivers and device
 
 The I/O manager enforces exclusivity on a per name basis on named device objects, regardless of the trailing name. For example, suppose the device object has the name "\\Device\\DeviceName". Then, the I/O manager enforces exclusivity for a request to open "\\Device\\DeviceName\\*Filename1*" followed by "\\Device\\DeviceName\\*Filename2*". If two objects in the device stack are named (which is not recommended), the I/O manager allows a single handle to be opened for each object. In such a situation, drivers must enforce exclusivity themselves within their [*DRIVER_DISPATCH*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) callback functions. The I/O manager also does not enforce exclusivity for opens relative to another file handle. For more information about file open requests in the device's namespace, see [Controlling Device Namespace Access](controlling-device-namespace-access.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Finding and Opening a HID Collection
-author: windows-driver-content
 description: Finding and Opening a HID Collection
 ms.assetid: b46fdb06-e6ae-4376-994f-69bf6539f2ce
 keywords:
@@ -44,9 +43,9 @@ If a kernel-mode driver is a function or filter driver, it has attached a device
 
 If the driver is not a function or filter driver, it typically uses [Plug and Play notification](https://msdn.microsoft.com/library/windows/hardware/ff559640) to find a collection. After finding a collection, the driver uses a create request to open the collection.
 
- 
+ 
 
- 
+ 
 
 
 

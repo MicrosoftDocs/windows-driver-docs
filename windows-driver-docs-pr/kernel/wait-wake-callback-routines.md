@@ -1,6 +1,5 @@
 ---
 title: Wait/Wake Callback Routines
-author: windows-driver-content
 description: Wait/Wake Callback Routines
 ms.assetid: 55749f14-37eb-45d9-8a2c-9ebf7fb3bc75
 keywords: ["sending wait/wake IRPs", "wait/wake IRPs WDK power management , sending", "callback routines WDK power management"]
@@ -34,9 +33,9 @@ The callback routine has the following responsibilities:
 
 Because the driver that requested the wait/wake IRP controls power policy for its device stack, it is responsible for returning its device to the working state when the IRP completes. Although lower drivers might already have physically applied power to the device, the policy owner must call **PoRequestPowerIrp** to send an **IRP\_MN\_SET\_POWER** request for device power state D0. Only after all drivers in the device stack have handled this power-up IRP will the device be returned to the working state.
 
- 
+ 
 
- 
+ 
 
 
 

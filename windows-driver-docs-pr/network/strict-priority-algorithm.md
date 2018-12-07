@@ -19,11 +19,11 @@ For more information about priority levels, see [IEEE 802.1p Priority Levels](ie
 
 **Note**  Starting with NDIS 6.30, the miniport driver that supports NDIS Quality of Service (QoS) for the DCB interface must advertise support for the strict priority TSA.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

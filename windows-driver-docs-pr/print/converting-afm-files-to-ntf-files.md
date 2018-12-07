@@ -1,6 +1,5 @@
 ---
 title: Converting AFM Files to NTF Files
-author: windows-driver-content
 description: Converting AFM Files to NTF Files
 ms.assetid: 5c6c8843-c1b8-4cbd-81db-8a54cc377020
 keywords:
@@ -25,7 +24,7 @@ For Windows 2000 and later, Adobe Font Metrics ([*AFM*](https://msdn.microsoft.c
 
 To convert one or more .afm files, use the following command syntax:
 
-**makentf** {**-win32**|**-win64**} **** \[**-v**\] **** \[**-o**\] **** *NTF\_FileName***.ntf** *AFM\_FileNames*
+**makentf** {**-win32**|**-win64**} **** \[**-v**\] **** \[**-o**\] **** <em>NTF\_FileName</em>**.ntf** *AFM\_FileNames*
 
 where *NTF\_FileName* is the name of the .ntf file to be produced, and *AFM\_FileNames* is a set of one or more AFM files to be converted.
 
@@ -70,9 +69,9 @@ When it is processing an East Asian font's .afm file, Makentf.txt requires some 
 
 An .afm file that will be converted to an .ntf file can contain the **FontBBox2** keyword. This keyword's arguments are similar to those for **FontBBox** (see the *Adobe Font Metrics File Format Specification*, from Adobe Systems, Inc.), except that **FontBBox2** arguments describe the bounding box for glyphs used in a specific character set (such as 90ms), while **FontBBox** arguments describe the bounding box for the union of all characters described in the .afm file. If **FontBBox2** is not found, the values specified for **FontBBox** are used for the bounding box.
 
- 
+ 
 
- 
+ 
 
 
 

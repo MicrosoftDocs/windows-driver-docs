@@ -22,9 +22,9 @@ Before offloading a TCP connection, the host stack stops its delayed ACK timer a
 
 Before terminating the offload of a TCP connection, an offload target stops its delayed ACK timer and sends any acknowledgements that need to be sent.
 
- 
+ 
 
- 
+ 
 
 
 

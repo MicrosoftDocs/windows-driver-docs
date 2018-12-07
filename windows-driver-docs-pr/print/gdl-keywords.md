@@ -1,6 +1,5 @@
 ---
 title: GDL Keywords
-author: windows-driver-content
 description: GDL Keywords
 ms.assetid: 3baf187b-b108-49f7-8f8a-bce93eba15c7
 keywords:
@@ -18,9 +17,9 @@ A *GDL keyword* is a token that consists of characters from the set \[A-Z, a-z, 
 
 A GDL keyword is required for any GDL entry. The keyword is followed by an optional [value](gdl-values.md). If a value is supplied, the keyword and value must be separated by a colon (:). Optional [whitespace characters](gdl-whitespace-characters.md) can also appear between the keyword and value.
 
- 
+ 
 
- 
+ 
 
 
 

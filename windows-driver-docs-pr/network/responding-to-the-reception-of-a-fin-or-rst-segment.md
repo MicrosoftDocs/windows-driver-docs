@@ -35,9 +35,9 @@ If the offload target receives data on the connection when the connection is in 
 
 [Indicating TCP Chimney-Specific Events](indicating-tcp-chimney-specific-events.md)
 
- 
+ 
 
- 
+ 
 
 
 

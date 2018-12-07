@@ -1,6 +1,5 @@
 ---
 title: Testing Device Functionality
-author: windows-driver-content
 description: Testing Device Functionality
 ms.assetid: 51b3e55d-b071-4dbe-b687-5e3ed25aed20
 keywords:
@@ -24,9 +23,9 @@ You should also perform the following additional functionality tests.
 
 3.  **Job Control:** Verify that print jobs can be paused, canceled, resumed, and restarted. Also verify that multiple print jobs can be started, printed, canceled, and restarted at the same time.
 
- 
+ 
 
- 
+ 
 
 
 

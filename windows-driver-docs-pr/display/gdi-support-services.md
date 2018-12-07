@@ -21,7 +21,7 @@ ms.localizationpriority: medium
 
 **Note**   The service routines in which the first argument is a pointer to a user object are methods on that user object, and are called using the usual C++ conventions. Therefore, drivers written in C++ can access the service routines as methods.
 
- 
+ 
 
 These service routines fall into the following categories:
 
@@ -59,9 +59,9 @@ These service routines fall into the following categories:
 
 [Using the Graphics DDI](using-the-graphics-ddi.md) describes the graphics DDI entry points and also explains where many of these service routines can be used to help the driver implement the entry points. For detailed descriptions of each of the service functions, see [GDI Functions Called by Printer and Display Drivers](https://msdn.microsoft.com/library/windows/hardware/ff566544).
 
- 
+ 
 
- 
+ 
 
 
 

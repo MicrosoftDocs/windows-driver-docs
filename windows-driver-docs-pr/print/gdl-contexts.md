@@ -1,6 +1,5 @@
 ---
 title: GDL Contexts
-author: windows-driver-content
 description: GDL Contexts
 ms.assetid: 11916baa-fc56-43d9-bc08-e8fdf28f3fb8
 keywords:
@@ -19,9 +18,9 @@ GDL has two types of special contexts:
 
 [GDL Arbitrary Value Contexts](gdl-arbitrary-value-contexts.md)
 
- 
+ 
 
- 
+ 
 
 
 

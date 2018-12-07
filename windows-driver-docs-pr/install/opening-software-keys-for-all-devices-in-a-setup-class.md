@@ -24,11 +24,11 @@ To safely enumerate and open the subkeys of a device setup class, follow these s
 
 **Note**  Some devices might not have software keys, such as when a device is present and enumerated by the [Plug and Play (PnP) manager](pnp-manager.md) but has not been installed.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

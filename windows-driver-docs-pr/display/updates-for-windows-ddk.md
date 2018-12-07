@@ -18,9 +18,9 @@ The DirectX 9.0 DDK can be installed and used with many versions of the Microsof
 
 [Specifying Maximum Size of Bug-check Data in a Video Miniport Driver](specifying-maximum-size-of-bug-check-data-in-a-video-miniport-driver.md)
 
- 
+ 
 
- 
+ 
 
 
 

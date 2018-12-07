@@ -3,7 +3,6 @@ title: imgreloc
 description: The imgreloc extension displays the addresses of each loaded module and indicates their former addresses before they were relocated.
 ms.assetid: 79b729bd-7e4f-4167-b049-8a5c23cb8787
 keywords: ["imgreloc Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -48,7 +47,7 @@ Specifies the base address of the image.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -63,9 +62,9 @@ Here is an example:
 5d160000 ShimEng - at preferred address
 ```
 
- 
+ 
 
- 
+ 
 
 
 

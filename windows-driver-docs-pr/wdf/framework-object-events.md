@@ -1,6 +1,5 @@
 ---
 title: Framework Object Events
-author: windows-driver-content
 description: Framework Object Events
 ms.assetid: 1bccdd47-8ad6-4607-947f-18c5d2e03038
 keywords:
@@ -21,9 +20,9 @@ Some framework objects can generate events. Framework-based drivers can register
 
 For example, a driver can register an [*EvtIoDefault*](https://msdn.microsoft.com/library/windows/hardware/ff541757) callback function for an I/O queue. The framework will call this callback function each time the framework is ready to remove an I/O request from the I/O queue and deliver it to the driver.
 
- 
+ 
 
- 
+ 
 
 
 

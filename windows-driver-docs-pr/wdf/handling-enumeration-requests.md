@@ -1,6 +1,5 @@
 ---
 title: Handling Enumeration Requests
-author: windows-driver-content
 description: Handling Enumeration Requests
 ms.assetid: 3719ffa7-2daf-4716-a183-531837be99aa
 keywords:
@@ -25,9 +24,9 @@ Framework-based bus drivers that support dynamic enumeration can receive a reque
 
 Framework-based bus drivers that support dynamic enumeration can provide an [*EvtChildListDeviceReenumerated*](https://msdn.microsoft.com/library/windows/hardware/ff540830) callback function, which the framework calls when it receives a reenumeration request from a child device's driver. If this callback function returns **TRUE** or does not exist, the framework marks the child device as no longer being present and informs the PnP manager that the bus driver's child list has changed. As a result, the PnP manager requests a reenumeration and the framework calls the driver's [*EvtChildListCreateDevice*](https://msdn.microsoft.com/library/windows/hardware/ff540828) callback function, which creates a new PDO for the child device.
 
- 
+ 
 
- 
+ 
 
 
 

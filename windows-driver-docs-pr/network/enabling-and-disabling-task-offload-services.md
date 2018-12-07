@@ -24,9 +24,9 @@ Before issuing the [OID\_OFFLOAD\_ENCAPSULATION](https://msdn.microsoft.com/libr
 
 If the miniport driver supports any task offload type that supports the requested encapsulation type, the miniport driver must return NDIS\_STATUS\_SUCCESS in response to the [OID\_OFFLOAD\_ENCAPSULATION](https://msdn.microsoft.com/library/windows/hardware/ff569762) set request. Otherwise, the miniport driver should return NDIS\_STATUS\_INVALID\_PARAMETER.
 
- 
+ 
 
- 
+ 
 
 
 

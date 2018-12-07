@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 **Note**  Features described in this section are not supported in universal or mobile driver packages. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
- 
+ 
 
 Except under certain conditions, [*class installers*](https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-class-installer) and [*co-installers*](https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-co-installer) must not call the standard registry functions to create, change, or delete registry values that are reserved for use by the operating system.
 
@@ -27,7 +27,7 @@ The following are exceptions to this rule:
 
     **Note**  We highly recommend that class installers and co-installers save custom device properties as entries within the device's [*software keys*](https://msdn.microsoft.com/library/windows/hardware/ff556336#wdkgloss-software-key).
 
-     
+     
 
 -   Class installers and co-installers can modify the value of the [RunOnce registry key](runonce-registry-key.md). However, this value must consist of only calls to *Rundll32.exe*.
 
@@ -43,9 +43,9 @@ The following guidelines should be followed to safely modify registry values by 
 
 For more information about the standard registry functions, see [Registry Functions](http://go.microsoft.com/fwlink/p/?linkid=194529).
 
- 
+ 
 
- 
+ 
 
 
 

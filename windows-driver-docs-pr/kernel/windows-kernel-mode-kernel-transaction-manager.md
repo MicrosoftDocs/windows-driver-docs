@@ -1,6 +1,5 @@
 ---
 title: Windows Kernel-Mode Kernel Transaction Manager
-author: windows-driver-content
 description: Windows Kernel-Mode Kernel Transaction Manager
 ms.assetid: 43bf96ed-8be8-4670-a310-99cd7c7f9073
 ms.localizationpriority: medium
@@ -16,9 +15,9 @@ The kernel transaction manager (KTM) is the Windows kernel-mode component that i
 
 For information about how to use KTM in kernel-mode components, see [Kernel Transaction Manager](using-kernel-transaction-manager.md).
 
- 
+ 
 
- 
+ 
 
 
 

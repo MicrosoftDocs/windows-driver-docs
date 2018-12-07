@@ -17,8 +17,8 @@ ms.localizationpriority: medium
 
 **Applies to:**
 
--   Minimum OS: Windows 8 for KMDF and WDM driver developers
--   Minimum OS: Windows 10 for UMDF (2.15) driver developers
+-   Minimum OS: Windows 8 for KMDF and WDM driver developers
+-   Minimum OS: Windows 10 for UMDF (2.15) driver developers
 
 **Important APIs**
 
@@ -30,7 +30,7 @@ ms.localizationpriority: medium
 
 Windows provides several mechanisms for adding trace messages to your drivers that can help you to diagnose and debug issues in your driver during development. One such mechanism is [WPP software tracing](wpp-software-tracing.md). It includes a [WPP preprocessor](wpp-preprocessor.md) that allows the trace provider to have printf-style trace messages that have a smaller memory footprint. However, to view a log of trace messages, the provider must be enabled, a trace controller such as [TraceView](traceview.md) or [Tracelog](tracelog.md) must stop and start trace sessions in order to create the log, and then, a consumer, such as a TraceView must format and display the log.
 
-Windows 10 introduces a new feature: IFR that leverages the WPP infrastructure. If the driver enables WPP tracing and IFR, trace logging is turned on automatically and you can easily view messages without starting or stopping trace sessions.
+Windows 10 introduces a new feature: IFR that leverages the WPP infrastructure. If the driver enables WPP tracing and IFR, trace logging is turned on automatically and you can easily view messages without starting or stopping trace sessions.
 
 IFR allocates one page of memory from the non-paged pool for the driver, called the *default log*. The log collects trace messages that are sent by the driver, and you can view the output of the buffer in a kernel debugger when the driver runs. In case of a crash, you can get the most recent trace messages in a dump. You don't need to reconstruct a crash just to collect trace data.
 
@@ -38,21 +38,21 @@ The default log is beneficial mainly because the driver can get a trace log with
 
 To get better control over the log bugger, IFR allows a driver to create and manage custom buffers.
 
-**Note**  In this release of Windows, only kernel-mode drivers (KMDF and WDM) can create custom buffers. UMDF drivers cannot create custom buffers.
+**Note**  In this release of Windows, only kernel-mode drivers (KMDF and WDM) can create custom buffers. UMDF drivers cannot create custom buffers.
 
- 
+
 
 -   The driver can create multiple buffers for different purposes, so that a verbose logger does not flood the buffer.
 -   The driver can control the size of the custom buffer and the error partition (discussed later) of the custom buffer.
 -   The driver can specify a string identifier for a custom log. While viewing the trace messages, you can differentiate messages from different buffers.
 -   Because IFR is built on WPP, even with IFR enabled for the driver, you can view WPP messages in [TraceView](traceview.md). However, to view those messages, you must enable the trace provider and start a session.
 
-**Important**  
+**Important**  
 The messages in IFR do not have a timestamp associated with them.
 
 You can only view the trace messages in Windows Debugger.
 
- 
+
 
 ## <span id="Before_you_begin..."></span><span id="before_you_begin..."></span><span id="BEFORE_YOU_BEGIN..."></span>Before you begin...
 
@@ -113,7 +113,7 @@ Before you can configure your driver to use IFR, you must first set up your driv
         // WPP Initialization
         //
         WPP_INIT_TRACING(DriverObject, RegistryPath);
-        
+
         ```
 
     -   Release WPP resources in your driver unload method.
@@ -163,9 +163,9 @@ If the default log buffer fails to allocate, trace messages are sent to the WPP.
 4.  Print trace messages to the default log by calling the trace macros declared in Trace.h. For more information, see [Define trace functions](#define).
 5.  View traces messages in the debugger. For more information, see [View the trace messages](#view).
 
-**Note**  To disable the default log, set the **CreateDefaultLog** member of the [**RECORDER\_CONFIGURE\_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/dn914606) to FALSE, and then call [**WppRecorderConfigure**](https://msdn.microsoft.com/library/windows/hardware/dn914611).
+**Note**  To disable the default log, set the **CreateDefaultLog** member of the [**RECORDER\_CONFIGURE\_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/dn914606) to FALSE, and then call [**WppRecorderConfigure**](https://msdn.microsoft.com/library/windows/hardware/dn914611).
 
- 
+
 
 In this example, the driver gets a handle to the default log.
 
@@ -244,9 +244,9 @@ In another example, you have two devices, and one device sends more trace messag
 
 1.  Initialize a [**RECORDER\_LOG\_CREATE\_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/dn914608) structure by calling [**RECORDER\_LOG\_CREATE\_PARAMS\_INIT**](https://msdn.microsoft.com/library/windows/hardware/dn914609). WPP uses the default log parameters unless the members of the structure are modified.
 2.  Optional. Set the **TotalBufferSize** member to the desired size . By default, the size is set to 1024 bytes (see RECORDER\_LOG\_DEFAULT\_BUFFER\_SIZE in Wpprecorder.h).
-    **Note**  WPP allocates buffer for the log from the non-paged pool. The log is divided into two circular buffers called partitions: general and error. The error partition only shows messages of TRACE\_LEVEL\_ERROR. Messages related to all other levels are sent to the general partition. The partitions are designed to prevent verbose trace providers from overwriting their own error messages with lower priority messages. The caller specifies the buffer size in **TotalBufferSize**, which indicates the total size of those partitions. The error partition cannot exceed half the total buffer size. The buffer sizes can be modified after initialization.
+    **Note**  WPP allocates buffer for the log from the non-paged pool. The log is divided into two circular buffers called partitions: general and error. The error partition only shows messages of TRACE\_LEVEL\_ERROR. Messages related to all other levels are sent to the general partition. The partitions are designed to prevent verbose trace providers from overwriting their own error messages with lower priority messages. The caller specifies the buffer size in **TotalBufferSize**, which indicates the total size of those partitions. The error partition cannot exceed half the total buffer size. The buffer sizes can be modified after initialization.
 
-     
+
 
 3.  Optional. Set the **LogIdentifier** to a string that will help you identify trace messages from this buffer. The string must not exceed 16 characters in length.
 4.  Call [**WppRecorderLogCreate**](https://msdn.microsoft.com/library/windows/hardware/dn914615) by specifying the address of the populated [**RECORDER\_LOG\_CREATE\_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/dn914608) structure.
@@ -257,29 +257,29 @@ The system defines maximum and minimum buffer sizes in the registry. You can set
 
 ```
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\<serviceName>\Parameters
-   WppRecorder_PerBufferMinBytes
-   Data type
-   REG_DWORD
-   Description
-   The minimum number of bytes that can be allocated to a  log buffer.  The default is 256 bytes.
+   WppRecorder_PerBufferMinBytes
+   Data type
+   REG_DWORD
+   Description
+   The minimum number of bytes that can be allocated to a  log buffer.  The default is 256 bytes.
 
-   WppRecorder_PerBufferMaxBytes
-   Data type
-   REG_DWORD
-   Description
-   The maximum number of bytes that can be allocated to a  log buffer.  The default is 8192 bytes.
+   WppRecorder_PerBufferMaxBytes
+   Data type
+   REG_DWORD
+   Description
+   The maximum number of bytes that can be allocated to a  log buffer.  The default is 8192 bytes.
 
-   LogPages
-   Data type
-   REG_DWORD
-   Description
-   The number of pages to store the default log. The default is 1.
+   LogPages
+   Data type
+   REG_DWORD
+   Description
+   The number of pages to store the default log. The default is 1.
 
-   VerboseOn
-   Data type
-   REG_DWORD
-   Description
-   By default (0), IFR only logs errors, warnings, and informational events. Setting this value to 1 adds the verbose output to get logged. 
+   VerboseOn
+   Data type
+   REG_DWORD
+   Description
+   By default (0), IFR only logs errors, warnings, and informational events. Setting this value to 1 adds the verbose output to get logged. 
 ```
 
 If the size specified in [**RECORDER\_LOG\_CREATE\_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/dn914608) is less than the minimum number of bytes, [**WppRecorderLogCreate**](https://msdn.microsoft.com/library/windows/hardware/dn914615) allocates **WppRecorder\_PerBufferMinBytes** bytes. Similarly, if the size exceeds the maximum value, **WppRecorderLogCreate** allocates **WppRecorder\_PerBufferMaxBytes** bytes.
@@ -359,7 +359,6 @@ _In_ PUNICODE_STRING RegistryPath
 
     return status;
 }
-
 ```
 
 ## <span id="define"></span><span id="DEFINE"></span>Define trace functions
@@ -377,7 +376,6 @@ Add a tracing function (in your Trace.h) that has "IFRLOG" as an input parameter
 // FUNC PrintEvents(IFRLOG, LEVEL, FLAGS, MSG, ...);
 // end_wpp
 //
-
 ```
 
 In the preceding example, there are two tracing functions, TraceEvents and PrintEvents. WPP generates macros for those functions with parameters specified in the FUNC declaration. In the example used in this topic, the driver uses both TraceEvents and PrintEvents. PrintEvents requires "IFRLOG" as a parameter. When calling this function, the driver must specify a RECORDER\_LOG handle as a parameter value for "IFRLOG". The IFRLOG is added only if you create custom buffers. TraceEvents prints to the default log. This provides backward compatibility with existing tracing statements without any change in functionality.
@@ -442,9 +440,9 @@ Your kernel-mode driver can view the trace log by using [RCDRKD Extensions](http
 -   Only kernel-mode drivers can create custom buffers. This functionality does not apply to user-mode drivers.
 -   You cannot view trace logs from a user-mode driver by using [RCDRKD Extensions](https://msdn.microsoft.com/library/windows/hardware/hh920376). You must use [Wdfkd Extensions](https://msdn.microsoft.com/library/windows/hardware/ff551876).
 
- 
 
- 
+
+
 
 
 

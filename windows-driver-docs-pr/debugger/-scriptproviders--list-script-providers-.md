@@ -3,7 +3,6 @@ title: .scriptproviders (List Script Providers)
 description: The .scriptproviders command lists the active script providers.
 ms.assetid: DF2FAA60-422F-4600-9E31-0F8EF127E5A9
 keywords: [".scriptproviders (List Script Providers) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -52,7 +51,7 @@ None
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -82,9 +81,9 @@ Before using any of the .script commands, a scripting provider needs to be loade
 
 [**.scriptload (Load Script)**](-scriptload--load-script-.md)
 
- 
+ 
 
- 
+ 
 
 
 

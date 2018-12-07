@@ -1,6 +1,5 @@
 ---
 title: Constructing a Bidi Communication Schema Query
-author: windows-driver-content
 description: Constructing a Bidi Communication Schema Query
 ms.assetid: b18fc69a-652c-4e36-83b3-fc4715b03c0f
 keywords:
@@ -89,9 +88,9 @@ The following is a list of typical tasks and associated queries:
 \Printer.Consumables.FuserOil:Level
 ```
 
- 
+ 
 
- 
+ 
 
 
 

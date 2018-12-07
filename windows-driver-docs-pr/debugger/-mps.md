@@ -3,7 +3,6 @@ title: mps
 description: The mps extension displays BIOS information for the Intel Multiprocessor Specification (MPS) of the target computer.
 ms.assetid: b6ee2eac-ef3c-403a-83ca-fe45506a8c4e
 keywords: ["mps Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -48,7 +47,7 @@ Specifies the hexadecimal address of the MPS table in the BIOS. If this is omitt
 </tbody>
 </table>
 
- 
+ 
 
 This extension command can only be used with an x86-based target computer.
 
@@ -56,9 +55,9 @@ This extension command can only be used with an x86-based target computer.
 
 For more information about BIOS debugging, see [Debugging BIOS Code](debugging-bios-code.md). For more information about the MPS, refer to the appropriate version of the Intel MultiProcessor Specification.
 
- 
+ 
 
- 
+ 
 
 
 

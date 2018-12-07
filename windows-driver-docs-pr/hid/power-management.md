@@ -1,6 +1,5 @@
 ---
 title: Power management for HID over USB
-author: windows-driver-content
 description: HID over USB employs USB suspend to power manage a device.
 ms.assetid: 7B5E10B0-2EEA-450A-9E21-B60215F60027
 ms.date: 04/20/2017
@@ -23,9 +22,9 @@ HID devices don't automatically wake up a system from a low- power state. Only s
 
 If an end user wishes to disarm a device from waking up the system, the user can specify this via the properties/power management tab in device manager.
 
- 
+ 
 
- 
+ 
 
 
 

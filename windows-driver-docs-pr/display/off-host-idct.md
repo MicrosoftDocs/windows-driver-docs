@@ -22,9 +22,9 @@ The transfer of macroblock inverse discrete-cosine transform (IDCT) coefficient 
 
 Transform coefficients are sent in either the [**DXVA\_TCoefSingle**](https://msdn.microsoft.com/library/windows/hardware/ff564060) structure or the [**DXVA\_TCoef4Group**](https://msdn.microsoft.com/library/windows/hardware/ff564053) structure. If the **bConfig4GroupedCoefs** member of the [**DXVA\_ConfigPictureDecode**](https://msdn.microsoft.com/library/windows/hardware/ff563133) structure is zero, coefficients are sent individually using DXVA\_TCoefSingle structures. If **bConfig4GroupedCoefs** is 1, coefficients are sent in groups of four using DXVA\_TCoef4Group structures.
 
- 
+ 
 
- 
+ 
 
 
 

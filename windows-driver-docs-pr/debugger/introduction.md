@@ -2,7 +2,6 @@
 title: Debugger Engine Introduction
 description: Debugger Engine Introduction
 ms.assetid: fa52a1f0-9397-48a5-acbd-ce5347c0baef
-ms.author: domars
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -64,9 +63,9 @@ You can customize debugger output using DML. For more information see [Customizi
 
 Use JavaScript to create scripts that understand debugger objects and extend and customize the capabilities of the debugger. JavaScript providers bridge a scripting language to the debugger's internal object model. The JavaScript debugger scripting provider, allows the for use of JavaScript with the debugger. For more information, see [JavaScript Debugger Scripting](javascript-debugger-scripting.md).
 
- 
+ 
 
- 
+ 
 
 
 

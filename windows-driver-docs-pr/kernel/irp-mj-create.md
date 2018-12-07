@@ -1,6 +1,5 @@
 ---
 title: IRP_MJ_CREATE
-author: windows-driver-content
 description: Every kernel-mode driver must handle IRP_MJ_CREATE requests in a DispatchCreate or DispatchCreateClose routine.
 ms.date: 08/12/2017
 ms.assetid: 2947f8dc-2e7d-401e-8014-6140cac6905f
@@ -61,15 +60,15 @@ Requirements
 
 [*DRIVER_DISPATCH*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch)
 
-[*DispatchCreateClose*](https://msdn.microsoft.com/library/windows/hardware/ff543270)
+[*DispatchCreateClose*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch)
 
 [**IO\_SECURITY\_CONTEXT**](https://msdn.microsoft.com/library/windows/hardware/ff550613)
 
 [**ZwCreateFile**](https://msdn.microsoft.com/library/windows/hardware/ff566424)
 
- 
+ 
 
- 
+ 
 
 
 

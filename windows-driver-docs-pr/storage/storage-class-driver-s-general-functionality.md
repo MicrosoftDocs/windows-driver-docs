@@ -1,6 +1,5 @@
 ---
 title: Storage Class Driver's General Functionality
-author: windows-driver-content
 description: Storage Class Driver's General Functionality
 ms.assetid: 4fc92d20-5570-4680-bc7b-f6e84524a672
 keywords:
@@ -34,9 +33,9 @@ To a storage port driver, a storage class driver is a higher-level driver with b
 
 -   Handling error conditions that are not already handled by the storage port driver, such as check-condition status or bus resets
 
- 
+ 
 
- 
+ 
 
 
 

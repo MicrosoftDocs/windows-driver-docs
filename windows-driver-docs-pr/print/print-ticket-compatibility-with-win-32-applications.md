@@ -1,6 +1,5 @@
 ---
 title: Print Ticket Compatibility with Win 32 Applications
-author: windows-driver-content
 description: Print Ticket Compatibility with Win 32 Applications
 ms.assetid: 3e358f8a-e950-4da0-b8ef-4e350ea28091
 keywords:
@@ -27,9 +26,9 @@ When a WPF application prints a document that contains Print Tickets to a GDI-ba
 
 To the GDI print driver, the print job from a WPF application is not different than a print job that a Win32 application sends.
 
- 
+ 
 
- 
+ 
 
 
 

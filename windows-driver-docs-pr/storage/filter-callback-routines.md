@@ -1,6 +1,5 @@
 ---
 title: Filter Callback Routines
-author: windows-driver-content
 description: Filter Callback Routines
 ms.assetid: 3d9f874c-f026-40fc-a97d-0d4cefa3d1f9
 ms.date: 04/20/2017
@@ -22,9 +21,9 @@ The crash dump driver supports the following callback routines in a crash dump f
 
 [**Dump\_Unload**](https://msdn.microsoft.com/library/windows/hardware/ff552773)
 
- 
+ 
 
- 
+ 
 
 
 

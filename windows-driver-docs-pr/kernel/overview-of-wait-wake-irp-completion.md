@@ -1,6 +1,5 @@
 ---
 title: Overview of Wait/Wake IRP Completion
-author: windows-driver-content
 description: Overview of Wait/Wake IRP Completion
 ms.assetid: a5e09fda-f722-4335-8576-7b058b2f7a21
 keywords: ["power management WDK kernel , wake-up capabilities", "external wake signals WDK", "awakening devices", "wake-up capabilities WDK power management", "device wake ups WDK power management", "IRP_MN_WAIT_WAKE", "wait/wake IRPs WDK power management , completing"]
@@ -30,9 +29,9 @@ After calling *IoCompletion* routines set by drivers as they passed the IRP down
 
 Completing the child's IRP causes the I/O manager to call *IoCompletion* routines set by drivers in the child's device stack, and so on. Eventually, the policy owner that started the original wait/wake IRP on the devnode determines that its device asserted the wake-up signal, and all the pending wait/wake IRPs will be complete.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: Bug Check 0x6 INVALID_PROCESS_DETACH_ATTEMPT
 description: The INVALID_PROCESS_DETACH_ATTEMPT bug check has a value of 0x00000006. This bug check appears very infrequently.
 ms.assetid: f468b348-6576-4430-aa8f-b6100a689fee
 keywords: ["Bug Check 0x6 INVALID_PROCESS_DETACH_ATTEMPT", "INVALID_PROCESS_DETACH_ATTEMPT"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -23,9 +22,9 @@ This bug check appears very infrequently. This bug check can be caused by callin
 
 **Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
 
- 
+ 
 
- 
+ 
 
 
 

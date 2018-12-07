@@ -1,7 +1,6 @@
 ---
 title: Wi-Fi support in firmware 
 description: Wi-Fi support in firmware 
-author: windows-driver-content
 ms.date: 05/07/2018
 ms.localizationpriority: medium
 ---

@@ -1,6 +1,5 @@
 ---
 title: Videos Debugging UMDF Drivers
-author: windows-driver-content
 description: This topic contains a series of videos by Abhishek Ram that demonstrate how to debug User-Mode Driver Framework (UMDF) drivers.
 Search.SourceType: Video
 ms.assetid: 969FD292-5D92-4257-8E15-F2129B832E22
@@ -19,7 +18,7 @@ While the videos demonstrate debugging a UMDF version 1 driver on older versions
 
 **Note**  This video describes the debugger extension commands in Wudfext.dll, which you can use to debug UMDF version 1 drivers only. To debug UMDF drivers starting in UMDF version 2.0, you must instead use the Wdfkd.dll debugger extension library. There are equivalents in Wdfkd.dll for all of the extensions in Wudfext.dll. For more info, see [Summary of Debugger Extensions in Wudfext.dll](using-umdf-debugger-extensions.md) and [Summary of Debugger Extensions in Wdfkd.dll](debugger-extensions-for-kmdf-drivers.md).
 
- 
+ 
 
 For more information about debugging UMDF, see the topics listed in [Debugging WDF Drivers](debugging-a-wdf-driver.md).
 
@@ -80,9 +79,9 @@ Here, you'll learn how to use the App Verifier tool to help you debug. You'll al
 
 In the final video, you'll investigate a case when a UMDF driver does not complete a request it received, and you'll learn about the framework's object tracking and reference tracking capabilities.
 
- 
+ 
 
- 
+ 
 
 
 

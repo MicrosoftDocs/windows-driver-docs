@@ -28,9 +28,9 @@ NDIS schedules a DPC on each of the specified target processors. Each DPC proces
 
 For more information about NDIS 6.0 receive side scaling, see [Receive Side Scaling](ndis-receive-side-scaling2.md).
 
- 
+ 
 
- 
+ 
 
 
 

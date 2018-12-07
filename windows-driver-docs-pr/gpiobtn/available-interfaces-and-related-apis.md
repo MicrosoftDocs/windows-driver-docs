@@ -1,6 +1,5 @@
 ---
 title: Available interfaces and related APIs
-author: windows-driver-content
 description: There are three GPIO interfaces one for each device. Each interface is referenced by a GUID.
 ms.assetid: 87A275B0-825A-47F1-9701-D7E91C493877
 ms.localizationpriority: medium
@@ -23,7 +22,7 @@ The interfaces allow the state of the buttons or indicators to be toggled by cal
 **Note**  
 To prevent potential conflicts between multiple providers, a handle to the device provides exclusive access to the device.
 
- 
+ 
 
 ``` syntax
 typedef enum {
@@ -35,9 +34,9 @@ typedef enum {
 } GPIOBUTTONS_BUTTON_TYPE;
 ```
 
- 
+ 
 
- 
+ 
 
 
 

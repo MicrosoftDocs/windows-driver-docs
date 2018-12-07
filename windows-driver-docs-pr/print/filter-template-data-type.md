@@ -1,6 +1,5 @@
 ---
 title: Filter Template Data Type
-author: windows-driver-content
 description: Filter Template Data Type
 ms.assetid: cfbe8f39-9a8d-4e6b-91d8-f25926057e7b
 keywords:
@@ -29,7 +28,7 @@ The following directives are used to completely define the FILTER\_TYPE data typ
 -   **\*ElementTags** (Optional). If filter type is converted into more than one XML element, this directive specifies the name of each XML element. If this directive is used, the number of tags that are specified must equal the number of XML elements that each conversion produces. Tags are not used if only one XML element is produced.
     **Note**   The **\*ElementTags** directive might be required for some future filter types.
 
-     
+     
 
 -   **\*FilterTypeName** (Required) The particular filter-implemented data type. The default parser filter currently supports the following types:
     -   "HEX\_OR\_INT": GPD 4-byte integer that accepts hex format and wildcard (\*). The result is converted into a decimal number and output as XSD **int** data type. The optional **\*MinValue** and **\*MaxValue** template directives are recognized for this data type. If this type is present, the parser will verify that the supplied value falls within the defined range. One limit can be defined without the other.
@@ -104,9 +103,9 @@ If the earlier GDL entry is interpreted by the preceding template, the resulting
 
 Note that the parser filter has converted the GPD-defined hex format into the decimal format that is appropriate for the XSD data type **xsd:int**. Note also that the type that is actually referenced is the wrapped type GDLW\_int.
 
- 
+ 
 
- 
+ 
 
 
 

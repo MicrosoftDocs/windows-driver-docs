@@ -1,6 +1,5 @@
 ---
 title: Windows Kernel-Mode CLFS Library
-author: windows-driver-content
 description: Windows Kernel-Mode CLFS Library
 ms.assetid: 4da3cb49-dc20-4713-813b-ff458c99ab90
 ms.localizationpriority: medium
@@ -16,9 +15,9 @@ Routines that provide a direct interface for CLFS are prefixed with the letters 
 
 CLFS is a technology that is related to transacted file systems; for more information about transactions, see [Windows Kernel-Mode Transaction Manager](windows-kernel-mode-kernel-transaction-manager.md).
 
- 
+ 
 
- 
+ 
 
 
 

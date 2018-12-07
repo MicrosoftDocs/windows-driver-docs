@@ -51,13 +51,13 @@ The following table describes the possible INF entries for the header-data split
 </tbody>
 </table>
 
- 
+ 
 
 For more information about standardized INF keywords, see [Standardized INF Keywords for Network Devices](standardized-inf-keywords-for-network-devices.md).
 
- 
+ 
 
- 
+ 
 
 
 

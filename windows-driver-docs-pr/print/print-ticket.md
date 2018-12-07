@@ -1,6 +1,5 @@
 ---
 title: Print Ticket
-author: windows-driver-content
 description: Print Ticket
 ms.assetid: dd18d0ef-c1f7-4a35-a420-2da102fb07f4
 keywords:
@@ -30,9 +29,9 @@ This section contains the following topics:
 
 [Print Ticket Support in Unidrv and PScript5 Print Drivers](print-ticket-support-in-unidrv-and-pscript5-print-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

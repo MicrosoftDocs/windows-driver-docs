@@ -34,9 +34,9 @@ Exposing the GUID\_DEVINTERFACE\_BIOMETRIC\_READER device interface causes the W
 
 Alternatively, the driver could detect internally that it is in legacy mode and then not expose the GUID\_DEVINTERFACE\_BIOMETRIC\_READER device interface.
 
- 
+ 
 
- 
+ 
 
 
 

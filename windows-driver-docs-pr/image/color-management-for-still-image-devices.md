@@ -1,6 +1,5 @@
 ---
 title: Color Management for Still Image Devices
-author: windows-driver-content
 description: Color Management for Still Image Devices
 ms.assetid: dfc4afad-221a-436c-9124-981a74f70ee3
 ms.date: 04/20/2017
@@ -21,9 +20,9 @@ A still-image device must be made aware of the color space it sends its data to.
 
 For more information about color management, see the Microsoft Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

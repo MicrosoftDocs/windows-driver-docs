@@ -1,6 +1,5 @@
 ---
 title: Providing IoTimer Context Information
-author: windows-driver-content
 description: Providing IoTimer Context Information
 ms.assetid: a92a7c3d-1602-430b-8ae1-c79bfc9ac7f9
 keywords: ["IoTimer", "IoInitializeTimer"]
@@ -24,9 +23,9 @@ Because an *IoTimer* routine is run at IRQL = DISPATCH\_LEVEL, its context area 
 
 -   If the *IoTimer* routine does not share its context area with an ISR, but does share it with another driver routine, the driver must protect the shared context area with an initialized executive spin lock, in order to access the context information in a multiprocessor-safe manner. For more information, see [Spin Locks](spin-locks.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -19,13 +19,11 @@ If the physical network adapter supports the single root I/O virtualization (SR-
 
 2.  After the VF miniport driver is loaded and initialized, NDIS binds the protocol edge of the NetVSC in the guest operating system to the driver.
 
-    **Note**  NetVSC only binds to the VF miniport driver. No other protocol stacks in the guest operating system can bind to the VF miniport driver.
+    **Note**  NetVSC only binds to the VF miniport driver. No other protocol stacks in the guest operating system can bind to the VF miniport driver.
 
-     
+After the NetVSC successfully binds to the driver, network traffic in the guest operating system occurs over the *VF data path*. Packets are sent or received over the underlying VF of the network adapter instead of the synthetic data path.
 
-    After the NetVSC successfully binds to the driver, network traffic in the guest operating system occurs over the *VF data path*. Packets are sent or received over the underlying VF of the network adapter instead of the synthetic data path.
-
-    For more information about the VF data path, see [SR-IOV VF Data Path](sr-iov-vf-data-path.md).
+For more information about the VF data path, see [SR-IOV VF Data Path](sr-iov-vf-data-path.md).
 
 The following figure shows the various data paths that are supported over an SR-IOV network adapter.
 
@@ -40,12 +38,3 @@ After the Hyper-V child partition is started and before the VF data path is esta
 -   The Hyper-V child partition is being live migrated to a different host.
 
 For more information about VF failover and live migration, see [SR-IOV VF Failover and Live Migration](sr-iov-vf-failover-and-live-migration-support.md).
-
- 
-
- 
-
-
-
-
-

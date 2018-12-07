@@ -1,6 +1,5 @@
 ---
 title: EFI_USBFN_TRANSFER_RESULT
-author: windows-driver-content
 description: EFI_USBFN_TRANSFER_RESULT
 ms.assetid: d101b061-2a83-4bf8-9502-ccb6e56f5cea
 ms.date: 04/20/2017
@@ -49,9 +48,9 @@ The buffer that contains the transferred data.
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
 

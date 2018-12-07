@@ -1,6 +1,5 @@
 ---
 title: Windows Kernel-Mode Plug and Play Manager
-author: windows-driver-content
 description: Windows Kernel-Mode Plug and Play Manager
 ms.assetid: 43d06dbe-da66-4103-8be3-f27ff075a1b4
 ms.localizationpriority: medium
@@ -22,9 +21,9 @@ Note that there are no routines that provide a direct interface to the PnP manag
 
 The Windows Driver Frameworks (WDF) provide a set of libraries to make PnP management much easier. For more information about WDF, see [Kernel-Mode Driver Framework Overview](https://msdn.microsoft.com/library/windows/hardware/ff544296).
 
- 
+ 
 
- 
+ 
 
 
 

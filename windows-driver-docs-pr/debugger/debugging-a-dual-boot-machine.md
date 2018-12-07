@@ -3,7 +3,6 @@ title: Debugging a Dual-Boot Machine
 description: Debugging a Dual-Boot Machine
 ms.assetid: 46ed532e-5ef3-4893-b2eb-da8eb52121f0
 keywords: ["dual-boot machines"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -20,9 +19,9 @@ First, check that the boot options point to the correct path for the other opera
 
 On an x86 computer, you should also verify that boosect.ini exists. This file contains the boot record for the other operating system. To unhide this file, use the **attrib -r -s -h boosect.ini** command.
 
- 
+ 
 
- 
+ 
 
 
 

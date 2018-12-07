@@ -3,7 +3,6 @@ title: j (Execute If - Else)
 description: The j command conditionally executes one of the specified commands, depending on the evaluation of a given expression.
 ms.assetid: c6bb2415-e888-458b-8fb9-9d50b90cc531
 keywords: ["j (Execute If - Else) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -59,7 +58,7 @@ The command string to be executed if the expression in *Expression* evaluates to
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -92,9 +91,9 @@ For more information about the syntax for conditional breakpoints, see [Setting 
 
 [**z (Execute While)**](z--execute-while-.md)
 
- 
+ 
 
- 
+ 
 
 
 

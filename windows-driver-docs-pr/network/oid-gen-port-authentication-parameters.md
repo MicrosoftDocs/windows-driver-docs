@@ -1,6 +1,5 @@
 ---
 title: OID_GEN_PORT_AUTHENTICATION_PARAMETERS
-author: windows-driver-content
 description: As a set, NDIS and overlying drivers use the OID_GEN_PORT_AUTHENTICATION_PARAMETERS OID to set the current state of an NDIS port.
 ms.assetid: 676601c1-2647-4341-9a5c-cee895d2dbf7
 ms.date: 08/08/2017
@@ -52,9 +51,9 @@ Requirements
 
 [**NDIS\_PORT\_AUTHENTICATION\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff566788)
 
- 
+ 
 
- 
+ 
 
 
 

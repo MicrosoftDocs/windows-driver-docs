@@ -1,6 +1,5 @@
 ---
 title: Web Services for Devices Print Service Schema
-author: windows-driver-content
 description: Web Services for Devices Print Service Schema
 ms.assetid: 6a629b69-73a9-4d78-ace1-4cb2c807db14
 ms.date: 11/28/2017
@@ -20,9 +19,9 @@ For more information about the specifications for the four Web Services, see [Im
 
 The WSD Print Service schema conforms to the WSD subset of the Printer Working Group (PWG) Semantic Model, which provides elemental descriptions for printers, jobs, and documents.
 
- 
+ 
 
- 
+ 
 
 
 

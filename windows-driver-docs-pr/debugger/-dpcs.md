@@ -3,7 +3,6 @@ title: dpcs
 description: The dpcs extension displays the deferred procedure call (DPC) queues for a specified processor.
 ms.assetid: b5f71fb5-6fc7-4e8f-a439-1edb188e9876
 keywords: ["DPC (deferred procedure call)", "dpcs Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -52,15 +51,15 @@ Specifies a processor. If *Processor* is omitted, then the DPC queues for all pr
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
 For information about DPCs, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon. (These resources may not be available in some languages and countries.)
 
- 
+ 
 
- 
+ 
 
 
 

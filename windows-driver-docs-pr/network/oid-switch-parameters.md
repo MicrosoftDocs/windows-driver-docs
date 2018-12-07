@@ -1,6 +1,5 @@
 ---
 title: OID_SWITCH_PARAMETERS
-author: windows-driver-content
 description: A Hyper-V extensible switch extension issues an object identifier (OID) query request of OID_SWITCH_PARAMETERS to obtain the configuration data of the extensible switch.
 ms.assetid: F2CA0BE5-ED21-4ACF-B26A-4F512D4B15C7
 ms.date: 08/08/2017
@@ -23,7 +22,7 @@ When the extension processes the returned [**NDIS\_SWITCH\_PARAMETERS**](https:/
 
 **Note**  If the string is null-terminated, the **Length** member must not include the terminating null character.
 
- 
+ 
 
 ### Return Status Codes
 
@@ -47,7 +46,7 @@ The underlying miniport edge of the extensible switch completes the OID query re
 </tr>
 <tr class="even">
 <td><p>NDIS_STATUS_INVALID_LENGTH</p></td>
-<td><p>The length of the information buffer is too small to return the OID_SWITCH_PARAMETERS structure for an OID query request. The underlying miniport edge of the extensible switch sets the <strong>DATA.QUERY_INFORMATION.BytesNeeded</strong> member in the [<strong>NDIS_OID_REQUEST</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure to the minimum buffer size that is required.</p></td>
+<td><p>The length of the information buffer is too small to return the OID_SWITCH_PARAMETERS structure for an OID query request. The underlying miniport edge of the extensible switch sets the <strong>DATA.QUERY_INFORMATION.BytesNeeded</strong> member in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710" data-raw-source="[&lt;strong&gt;NDIS_OID_REQUEST&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566710)"><strong>NDIS_OID_REQUEST</strong></a> structure to the minimum buffer size that is required.</p></td>
 </tr>
 <tr class="odd">
 <td><p>NDIS_STATUS_FAILURE</p></td>
@@ -56,7 +55,7 @@ The underlying miniport edge of the extensible switch completes the OID query re
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -88,9 +87,9 @@ Requirements
 
 [**NdisFOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff561830)
 
- 
+ 
 
- 
+ 
 
 
 

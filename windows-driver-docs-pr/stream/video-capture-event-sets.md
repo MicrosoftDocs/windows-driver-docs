@@ -1,6 +1,5 @@
 ---
 title: Video Capture Event Sets
-author: windows-driver-content
 description: Video Capture Event Sets
 ms.assetid: 0b597c4d-b8da-4f6d-8a5a-cb26f0445e99
 keywords:
@@ -27,9 +26,9 @@ The following list summarizes the kernel streaming event sets and their respecti
 
 [Video Capture Events](video-capture-events.md)
 
- 
+ 
 
- 
+ 
 
 
 

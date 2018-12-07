@@ -3,7 +3,6 @@ title: Manifest File Placement
 description: Manifest File Placement
 ms.assetid: ebf10463-3aa1-403a-8508-1462259a5f8a
 keywords: ["LogViewer, manifest, file placement"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -30,9 +29,9 @@ LogViewer is more flexible than Logger. It will search for Main.h in the followi
 
 All additional manifest files must reside in the same directory as Main.h.
 
- 
+ 
 
- 
+ 
 
 
 

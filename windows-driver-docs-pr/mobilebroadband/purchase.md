@@ -52,13 +52,13 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[MobileBroadbandProfiles](mobilebroadbandprofiles.md)</p></td>
+<td><p><a href="mobilebroadbandprofiles.md" data-raw-source="[MobileBroadbandProfiles](mobilebroadbandprofiles.md)">MobileBroadbandProfiles</a></p></td>
 <td><p>Specifies the purchase and Internet mobile broadband profile files to use</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="XSD"></span><span id="xsd"></span>XSD
 
@@ -81,9 +81,9 @@ There are no child elements.
 
 The Purchase element is optional.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: IRP-Based I/O Operations That Obey Device Object Flags
-author: windows-driver-content
 description: IRP-Based I/O Operations That Obey Device Object Flags
 ms.assetid: d322aeda-a753-4616-8a35-1a5ae5a37cf2
 ms.date: 04/20/2017
@@ -41,9 +40,9 @@ For more information about device object flags, see [**DEVICE\_OBJECT**](https:/
 
 Note that IRP\_MJ\_READ and IRP\_MJ\_WRITE can be IRP-based or fast I/O operations. When they are IRP-based, the buffering method is determined by the device object flags as described above. When these operations are fast I/O, they always use neither buffered nor direct I/O. For more information about I/O operations that can be IRP-based or fast I/O operations, see [Operations That Can Be IRP-Based or Fast I/O](operations-that-can-be-irp-based-or-fast-i-o.md).
 
- 
+ 
 
- 
+ 
 
 
 

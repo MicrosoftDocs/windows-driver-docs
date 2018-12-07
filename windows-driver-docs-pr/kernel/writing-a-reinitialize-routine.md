@@ -1,6 +1,5 @@
 ---
 title: Writing a Reinitialize Routine
-author: windows-driver-content
 description: Writing a Reinitialize Routine
 ms.assetid: 47a7dd3f-e474-49c7-adf2-11f6e788c261
 keywords: ["standard driver routines WDK kernel , Reinitialize routine", "driver routines WDK kernel , Reinitialize routine", "routines WDK kernel , Reinitialize routine", "Reinitialize", "reinitializing drivers WDK", "driver reinitialization WDK kernel", "driver initialization WDK kernel", "initializing drivers WDK kernel"]
@@ -28,9 +27,9 @@ Usually, a driver with a *Reinitialize* routine is a higher-level driver that co
 
 If a driver has a *Reinitialize* routine, it initializes in the same basic steps described in [Writing a DriverEntry Routine](writing-a-driverentry-routine.md), and it also has the same basic requirements as its **DriverEntry** routine.
 
- 
+ 
 
- 
+ 
 
 
 

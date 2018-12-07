@@ -1,6 +1,5 @@
 ---
 title: UMDF 1.x Design Guide
-author: windows-driver-content
 description: This section contains information that applies only to User-Mode Driver Framework (UMDF) versions 1.11 and earlier.
 ms.assetid: 4e56b62a-640d-4a9d-bf38-118b211d41f6
 ms.date: 04/20/2017
@@ -34,9 +33,9 @@ For more information about which versions of UMDF are available in specific vers
 -   [Architecture of the User-Mode Driver Framework](https://msdn.microsoft.com/windows/hardware/gg463289)
 -   [A COM QuickStart for UMDF Developers](https://msdn.microsoft.com/windows/hardware/gg463299)
 
- 
+ 
 
- 
+ 
 
 
 

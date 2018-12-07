@@ -43,7 +43,7 @@ The KSCATEGORY_BRIDGE [device interface class](https://msdn.microsoft.com/librar
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -68,9 +68,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

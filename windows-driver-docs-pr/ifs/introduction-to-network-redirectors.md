@@ -1,6 +1,5 @@
 ---
 title: Introduction to Network Redirectors
-author: windows-driver-content
 description: Introduction to Network Redirectors
 ms.assetid: 6eef8dfa-8ae9-48ef-adf9-8f6d5cd37d00
 ms.date: 04/20/2017
@@ -27,9 +26,9 @@ This section introduces fundamental concepts that are important to developers im
 [Granting Oplocks](granting-oplocks.md)  
 [Breaking Oplocks](breaking-oplocks.md)  
 [Acknowledging Oplock Breaks](acknowledging-oplock-breaks.md)
- 
+ 
 
- 
+ 
 
 
 

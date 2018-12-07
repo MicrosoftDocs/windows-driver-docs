@@ -1,6 +1,5 @@
 ---
 title: Using Timers
-author: windows-driver-content
 description: Describes how to use the framework's built-in timer support. Applies to both KMDF drivers as well as UMDF drivers starting in version 2.
 ms.assetid: f3bca5bf-fa5f-4b8f-ad28-26d29fc33963
 keywords:
@@ -90,15 +89,15 @@ The following table shows examples of timer behavior based on different values t
 </tbody>
 </table>
 
- 
+ 
 
 For more information about high resolution timers, see [High-Resolution Timers](https://msdn.microsoft.com/library/windows/hardware/dn265247).
 
 For more information about how timer accuracy is related to the granularity of the system clock, see [Timer Accuracy](https://msdn.microsoft.com/library/windows/hardware/jj602805).
 
- 
+ 
 
- 
+ 
 
 
 

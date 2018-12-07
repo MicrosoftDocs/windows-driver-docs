@@ -1,6 +1,5 @@
 ---
 title: WIA Item Flags for Film Scanners
-author: windows-driver-content
 description: WIA Item Flags for Film Scanners
 ms.assetid: 50aad730-6897-488d-a9de-58ce24738c17
 ms.date: 04/20/2017
@@ -34,9 +33,9 @@ The item is an image. This flag is required because the film scanner reports ima
 <a href="" id="wiaitemtypefolder"></a>**WiaItemTypeFolder**  
 The item is a folder. This flag is required for the root film item to allow enumeration of the individual frame child items. (Frames represent multiple selected regions on a single film scanning surface.) The scanner film child items (frames) *cannot* have this flag.
 
- 
+ 
 
- 
+ 
 
 
 

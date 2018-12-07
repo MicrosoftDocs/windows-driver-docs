@@ -1,6 +1,5 @@
 ---
 title: Impersonation in a File System Filter Driver
-author: windows-driver-content
 description: Impersonation in a File System Filter Driver
 ms.assetid: ee56cd54-01ac-46ad-8ee4-e76131b058f3
 keywords:
@@ -22,9 +21,9 @@ Impersonation is needed for any operation that creates a new handle because the 
 
 In the case of [**ZwCreateFile**](https://msdn.microsoft.com/library/windows/hardware/ff566424), there is a corresponding I/O manager call, [**IoCreateFile**](https://msdn.microsoft.com/library/windows/hardware/ff548418), that should be used with impersonation because it allows the filter driver to specify IO\_FORCE\_ACCESS\_CHECK. Absent this option, the I/O manager will not enforce proper user level access checks.
 
- 
+ 
 
- 
+ 
 
 
 

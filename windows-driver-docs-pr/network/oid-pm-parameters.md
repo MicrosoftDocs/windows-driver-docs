@@ -1,6 +1,5 @@
 ---
 title: OID_PM_PARAMETERS
-author: windows-driver-content
 description: As a query, protocol drivers can use the OID_PM_PARAMETERS OID to query the power management hardware capabilities of a network adapter that are currently enabled.
 ms.assetid: c3431724-1b5f-4634-8b1e-27fed9031f01
 ms.date: 08/08/2017
@@ -27,7 +26,7 @@ The capabilities that are currently enabled can be a subset of the capabilities 
 
 **Note**  If NDIS sets the NDIS\_PM\_SELECTIVE\_SUSPEND\_ENABLED flag in the **WakeUpFlags** member of [**NDIS\_PM\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff566759) structure, it issues the OID set request of OID\_PM\_PARAMETERS directly to the miniport driver. This allows NDIS to bypass the processing by filter drivers in the networking driver stack.
 
- 
+ 
 
 NDIS or the miniport driver returns one of the following status codes for the request:
 
@@ -75,9 +74,9 @@ Requirements
 
 [OID\_PM\_HARDWARE\_CAPABILITIES](oid-pm-hardware-capabilities.md)
 
- 
+ 
 
- 
+ 
 
 
 

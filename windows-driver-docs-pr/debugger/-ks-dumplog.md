@@ -3,7 +3,6 @@ title: ks.dumplog
 description: The ks.dumplog extension displays the internal kernel streaming debug log.
 ms.assetid: 09829517-c01c-4cbd-bd0f-2ad0c1554f39
 keywords: ["ks.dumplog Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -48,7 +47,7 @@ Optional. Specifies the number of log entries to display. If *Entries* is zero o
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -61,9 +60,9 @@ You can stop the log display by pressing [**CTRL+C**](ctrl-c--break-.md).
 
 This extension requires that the target computer be running a checked (debug) version of Ks.sys.
 
- 
+ 
 
- 
+ 
 
 
 

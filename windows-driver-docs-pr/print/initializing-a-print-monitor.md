@@ -1,6 +1,5 @@
 ---
 title: Initializing a Print Monitor
-author: windows-driver-content
 description: Initializing a Print Monitor
 ms.assetid: 006727dd-aa0f-451c-b1c9-983d0c6401df
 keywords:
@@ -25,9 +24,9 @@ These two initialization functions are responsible for returning pointers to the
 
 When the spooler is first started, it loads all of the monitor DLLs that have been installed. After calling all monitor initialization functions, the spooler calls each port monitor's [**EnumPorts**](https://msdn.microsoft.com/library/windows/hardware/ff548754) function, which enumerates the ports supported by the monitor. (A monitor supports a port if the port has been added to the monitor's database, as described in [Adding a Port](adding-a-port.md).) Each supported port is then opened, as described in [Opening and Closing a Port](opening-and-closing-a-port.md).
 
- 
+ 
 
- 
+ 
 
 
 

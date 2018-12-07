@@ -3,7 +3,6 @@ title: wmitrace.help
 description: The wmitrace.help extension displays the extension commands in Wmitrace.dll.
 ms.assetid: b0839c68-a53e-4f80-bad3-7545b5c78b7a
 keywords: ["wmitrace.help Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -36,9 +35,9 @@ This extension is available in Windows 2000 and later versions of Windows. If yo
 
 For a conceptual overview of event tracing, see the Microsoft Windows SDK. For information about tracing tools, see the Windows Driver Kit (WDK).
 
- 
+ 
 
- 
+ 
 
 
 

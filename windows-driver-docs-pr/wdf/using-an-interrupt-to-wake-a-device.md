@@ -1,6 +1,5 @@
 ---
 title: Using an Interrupt to Wake a Device
-author: windows-driver-content
 description: When a device transitions to a low-power state, the framework disconnects (or reports as inactive) interrupts that are used for I/O handling.
 ms.assetid: 6A4E62BD-B10F-4F01-B4B4-1FF5086710D4
 ms.date: 04/20/2017
@@ -54,9 +53,9 @@ You can use the [**!wdfkd.wdfinterrupt**](https://msdn.microsoft.com/library/win
 
 Wake interrupt functionality cannot be used in conjunction with USB selective suspend.
 
- 
+ 
 
- 
+ 
 
 
 

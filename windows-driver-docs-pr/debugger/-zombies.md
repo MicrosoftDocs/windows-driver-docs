@@ -3,7 +3,6 @@ title: zombies
 description: The zombies extension displays all dead ("zombie") processes or threads.
 ms.assetid: f7fbce79-456a-4643-ad31-8cb2e6449ecf
 keywords: ["zombies Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -57,7 +56,7 @@ Specifies the hexadecimal address at which to begin the search. This is useful i
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -72,9 +71,9 @@ Zombie processes are dead processes that have not yet been removed from the proc
 
 This extension is available only for Windows 2000.
 
- 
+ 
 
- 
+ 
 
 
 

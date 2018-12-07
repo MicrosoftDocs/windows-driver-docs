@@ -3,7 +3,6 @@ title: Sign Extension
 description: Sign Extension
 ms.assetid: 58e84d09-ab70-4cb2-b12f-4addb34f69d6
 keywords: ["sign extension of numbers", "sign extension of registers", "MASM expressions, sign extension", "registers, sign extension"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -59,9 +58,9 @@ The debugger uses the following criteria to determine how to display numbers:
 
 Because of these display rules, when a number is displayed as a 32-bit number from 0x80000000 through 0xFFFFFFFF, you cannot confirm whether the high 32 bits are all ones or all zeros. To distinguish between these two cases, you must perform an additional computation on the number (such as masking one or more of the high bits and displaying the result).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Indicator implementation
-author: windows-driver-content
 description: This topic describes indicator implementation.
 ms.assetid: 60BCE8C7-416E-4D5B-9B32-9B398CEA6A8A
 ms.localizationpriority: medium
@@ -53,11 +52,11 @@ See for code samples.
 -   If the ConvertibleSlateMode unattend setting is not present and the GPIO indicators are not implemented, the system defaults to slate mode.
 -   The ConvertibleSlateMode unattend setting is not available for Windows Server operating systems.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

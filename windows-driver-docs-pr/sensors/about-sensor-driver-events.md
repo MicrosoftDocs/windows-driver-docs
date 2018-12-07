@@ -1,6 +1,5 @@
 ---
 title: About Sensor Driver Events
-author: windows-driver-content
 description: About Sensor Driver Events
 ms.assetid: 1e747743-f701-4854-92be-7b55c39fee08
 ms.date: 07/20/2018
@@ -16,7 +15,7 @@ Sensor drivers can raise **state change events**, which notify applications abou
 
 **Note**  Do not use [**IWDFDevice::PostEvent**](https://msdn.microsoft.com/library/windows/hardware/ff558835) to raise sensor events. The sensor platform will not forward such events to the connected client programs.
 
- 
+ 
 
 ## State Change Events
 
@@ -48,7 +47,7 @@ The sensor platform defines the following **PROPERTYKEYs** to identify the param
 
 ## Other Events
 
-Sensor drivers raise all other types of events by calling the sensor class extension's [**ISensorClassExtension::PostEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsclassextension/nf-sensorsclassextension-isensorclassextension-postevent) method. This method provides a generic, extensible way to raise sensor events unrelated to operating state. Each call to **PostEvent** contains a pointer to [IPortableDeviceValuesCollection](http://go.microsoft.com/fwlink/p/?linkid=131487). Each [IPortableDeviceValues](http://go.microsoft.com/fwlink/p/?linkid=131486) object in this collection contains a **GUID** value for the SENSOR\_EVENT\_PARAMETER\_EVENT\_ID property, which identifies the event type, and optional data field values, which contain the event data. For example, a GPS driver that has new city data will use the SENSOR\_EVENT\_DATA\_UPDATED event ID and provide a string value for the SENSOR\_DATA\_TYPE\_CITY property key.
+Sensor drivers raise all other types of events by calling the sensor class extension's [**ISensorClassExtension::PostEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsclassextension/nf-sensorsclassextension-isensorclassextension-postevent) method. This method provides a generic, extensible way to raise sensor events unrelated to operating state. Each call to **PostEvent** contains a pointer to [IPortableDeviceValuesCollection](https://go.microsoft.com/fwlink/p/?linkid=131487). Each [IPortableDeviceValues](https://go.microsoft.com/fwlink/p/?linkid=131486) object in this collection contains a **GUID** value for the SENSOR\_EVENT\_PARAMETER\_EVENT\_ID property, which identifies the event type, and optional data field values, which contain the event data. For example, a GPS driver that has new city data will use the SENSOR\_EVENT\_DATA\_UPDATED event ID and provide a string value for the SENSOR\_DATA\_TYPE\_CITY property key.
 
 After your driver posts the event, the sensor class extension forwards the event and any associated data to the Sensor API.
 
@@ -69,7 +68,7 @@ Like other data requests, requests for event notifications are made secure throu
 >[!CAUTION]
 > Make sure to use the sensor class extension to process all I/O requests for sensors. By doing this, you are less likely to reveal a user's private information.
 
- 
+ 
 
 For more information about data privacy, see [Privacy and Security in the Sensor and Location Platform](https://docs.microsoft.com/windows-hardware/drivers/gnss/privacy-and-security-in-the-sensor-and-location-platform)
 

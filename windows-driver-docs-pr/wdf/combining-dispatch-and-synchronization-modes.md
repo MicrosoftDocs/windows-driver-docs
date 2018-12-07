@@ -1,6 +1,5 @@
 ---
 title: Combining Dispatch and Synchronization Modes
-author: windows-driver-content
 description: Combining Dispatch and Synchronization Modes
 ms.assetid: 39414acb-1397-42d6-8c75-3448d61775c5
 keywords:
@@ -24,9 +23,9 @@ Combining a particular [queue dispatch mode](configuring-dispatch-mode-for-an-i-
 
 ![combining dispatch and synchronization modes](images/combine.gif)
 
- 
+ 
 
- 
+ 
 
 
 

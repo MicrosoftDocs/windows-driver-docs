@@ -1,6 +1,5 @@
 ---
 title: Describing a WIA Device Using WIA Items
-author: windows-driver-content
 description: Describing a WIA Device Using WIA Items
 ms.assetid: d8149f78-e095-48f9-be79-ff115b25f14e
 ms.date: 04/20/2017
@@ -35,9 +34,9 @@ The remainder of this section contains the following topics:
 
 [WIA Data Item](wia-data-item.md)
 
- 
+ 
 
- 
+ 
 
 
 

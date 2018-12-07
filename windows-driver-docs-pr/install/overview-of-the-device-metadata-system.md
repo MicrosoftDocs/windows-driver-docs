@@ -21,9 +21,9 @@ Starting with Windows 7, the device metadata system provides an end-to-end proce
 
 [Device Metadata Cache](device-metadata-cache.md)
 
- 
+ 
 
- 
+ 
 
 
 

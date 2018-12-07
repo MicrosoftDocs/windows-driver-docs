@@ -1,6 +1,5 @@
 ---
 title: Handling a System Set-Power IRP in a Filter Driver
-author: windows-driver-content
 description: Handling a System Set-Power IRP in a Filter Driver
 ms.assetid: a6e364fc-f173-47ce-b36b-84f802cefcc3
 keywords: ["set-power IRPs WDK power management", "filter drivers WDK power management"]
@@ -28,11 +27,11 @@ All filter drivers and any function driver that does not own power policy for it
 
 5.  Call [**IoReleaseRemoveLock**](https://msdn.microsoft.com/library/windows/hardware/ff549560). However, if the driver set an [*IoCompletion*](https://msdn.microsoft.com/library/windows/hardware/ff548354) routine for the IRP, make this call from the *IoCompletion* routine instead.
 
-6.  Return STATUS\_PENDING from its [*DispatchPower*](https://msdn.microsoft.com/library/windows/hardware/ff543354) routine.
+6.  Return STATUS\_PENDING from its [*DispatchPower*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine.
 
- 
+ 
 
- 
+ 
 
 
 

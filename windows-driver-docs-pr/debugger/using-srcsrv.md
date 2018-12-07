@@ -3,7 +3,6 @@ title: Using SrcSrv
 description: Using SrcSrv
 ms.assetid: 2696e5e9-343f-49a2-bdab-23a54f8c9e5c
 keywords: ["source servers, SrcSrv (srcsrv.dll)", "SrcSrv, overview"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -37,9 +36,9 @@ To facilitate the use of [SrcSrv](srcsrv.md) from tools other than the debuggers
 
 Any source files downloaded by [SrcSrv](srcsrv.md) remain on your hard drive after the debugging session is over. To control the size of the source cache, the AgeStore tool can be used to delete cached files that are older than a specified date or to reduce the contents of the cache below a specified size. For details, see [AgeStore](agestore.md).
 
- 
+ 
 
- 
+ 
 
 
 

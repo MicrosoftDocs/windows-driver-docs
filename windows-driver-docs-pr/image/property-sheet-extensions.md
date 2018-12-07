@@ -1,6 +1,5 @@
 ---
 title: Property Sheet Extensions
-author: windows-driver-content
 description: Property Sheet Extensions
 ms.assetid: 36254759-882c-45af-92df-e0769b65ec55
 ms.date: 04/20/2017
@@ -23,9 +22,9 @@ The WIAItemNames format, whose format name is CFSTR\_WIAITEMNAMES, returns an HG
 
 The WIAItemPointer format is supported in versions of Microsoft Windows XP and later. The format name is CFSTR\_WIAITEMPTR. The WIAItemPointer format returns an STGMEDIUM structure (declared in the Windows SDK documentation) whose **tymed** member is set to TYMED\_ISTREAM. This format can be used when the user selects only a single item. The property sheet or context extension can call **CoUnmarshalInterface** on the **IStream** object stored in the STGMEDIUM structure to retrieve an **IWiaItem** interface. (See the Windows SDK documentation for descriptions of the **CoUnmarshalInterface** function, and the **IStream** and **IWiaItem** interfaces.) Using this format, every page on the property sheet can share a properly marshaled **IWiaItem** interface, which is important during scans.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Version 3 of the DMA Operations Interface
-author: windows-driver-content
 description: Version 3 of the DMA operations interface is available starting with Windows 8.
 ms.assetid: EFB59930-7D58-4E6E-8242-66A326E239E5
 ms.localizationpriority: medium
@@ -47,11 +46,11 @@ In version 3 of the DMA operations interface, calls to the [**KeFlushIoBuffers**
 
 On an x86 or x64 processor, the **KeFlushIoBuffers** call performs no operations, and this call, while unnecessary, does not interfere with the operation of the hardware platform. On an ARM processor, calls to **KeFlushIoBuffers** during DMA transfers perform cache operations that are unnecessary and can degrade performance.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

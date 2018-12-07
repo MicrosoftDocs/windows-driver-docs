@@ -1,6 +1,5 @@
 ---
 title: Video Processing Amplifier Properties
-author: windows-driver-content
 description: Video Processing Amplifier Properties
 ms.assetid: 1adc4fcc-c9a2-41a8-90db-1030ba7c257f
 keywords:
@@ -32,69 +31,69 @@ The [PROPSETID\_VIDCAP\_VIDEOPROCAMP](https://msdn.microsoft.com/library/windows
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>KSPROPERTY_VIDEOPROCAMP_BACKLIGHT_COMPENSATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566063)</p></td>
-<td><p>Controls a camera's backlight compensation setting.</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566063" data-raw-source="[&lt;strong&gt;KSPROPERTY_VIDEOPROCAMP_BACKLIGHT_COMPENSATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566063)"><strong>KSPROPERTY_VIDEOPROCAMP_BACKLIGHT_COMPENSATION</strong></a></p></td>
+<td><p>Controls a camera&#39;s backlight compensation setting.</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>KSPROPERTY_VIDEOPROCAMP_BRIGHTNESS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566065)</p></td>
-<td><p>Controls a camera's brightness.</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566065" data-raw-source="[&lt;strong&gt;KSPROPERTY_VIDEOPROCAMP_BRIGHTNESS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566065)"><strong>KSPROPERTY_VIDEOPROCAMP_BRIGHTNESS</strong></a></p></td>
+<td><p>Controls a camera&#39;s brightness.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>KSPROPERTY_VIDEOPROCAMP_COLORENABLE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566066)</p></td>
-<td><p>Controls a camera's color enable setting.</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566066" data-raw-source="[&lt;strong&gt;KSPROPERTY_VIDEOPROCAMP_COLORENABLE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566066)"><strong>KSPROPERTY_VIDEOPROCAMP_COLORENABLE</strong></a></p></td>
+<td><p>Controls a camera&#39;s color enable setting.</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>KSPROPERTY_VIDEOPROCAMP_CONTRAST</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566070)</p></td>
-<td><p>Controls a camera's luminance setting.</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566070" data-raw-source="[&lt;strong&gt;KSPROPERTY_VIDEOPROCAMP_CONTRAST&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566070)"><strong>KSPROPERTY_VIDEOPROCAMP_CONTRAST</strong></a></p></td>
+<td><p>Controls a camera&#39;s luminance setting.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>KSPROPERTY_VIDEOPROCAMP_GAMMA</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566076)</p></td>
-<td><p>Controls a camera's gamut setting.</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566076" data-raw-source="[&lt;strong&gt;KSPROPERTY_VIDEOPROCAMP_GAMMA&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566076)"><strong>KSPROPERTY_VIDEOPROCAMP_GAMMA</strong></a></p></td>
+<td><p>Controls a camera&#39;s gamut setting.</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>KSPROPERTY_VIDEOPROCAMP_HUE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566078)</p></td>
-<td><p>Controls a camera's hue setting.</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566078" data-raw-source="[&lt;strong&gt;KSPROPERTY_VIDEOPROCAMP_HUE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566078)"><strong>KSPROPERTY_VIDEOPROCAMP_HUE</strong></a></p></td>
+<td><p>Controls a camera&#39;s hue setting.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>KSPROPERTY_VIDEOPROCAMP_SATURATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566092)</p></td>
-<td><p>Controls a camera's chrominance setting.</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566092" data-raw-source="[&lt;strong&gt;KSPROPERTY_VIDEOPROCAMP_SATURATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566092)"><strong>KSPROPERTY_VIDEOPROCAMP_SATURATION</strong></a></p></td>
+<td><p>Controls a camera&#39;s chrominance setting.</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>KSPROPERTY_VIDEOPROCAMP_SHARPNESS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566093)</p></td>
-<td><p>Controls a camera's sharpness setting.</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566093" data-raw-source="[&lt;strong&gt;KSPROPERTY_VIDEOPROCAMP_SHARPNESS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566093)"><strong>KSPROPERTY_VIDEOPROCAMP_SHARPNESS</strong></a></p></td>
+<td><p>Controls a camera&#39;s sharpness setting.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>KSPROPERTY_VIDEOPROCAMP_WHITEBALANCE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566095)</p></td>
-<td><p>Controls a camera's white balance setting.</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566095" data-raw-source="[&lt;strong&gt;KSPROPERTY_VIDEOPROCAMP_WHITEBALANCE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566095)"><strong>KSPROPERTY_VIDEOPROCAMP_WHITEBALANCE</strong></a></p></td>
+<td><p>Controls a camera&#39;s white balance setting.</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>KSPROPERTY_VIDEOPROCAMP_GAIN</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566074)</p></td>
-<td><p>Controls a camera's gain setting.</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566074" data-raw-source="[&lt;strong&gt;KSPROPERTY_VIDEOPROCAMP_GAIN&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566074)"><strong>KSPROPERTY_VIDEOPROCAMP_GAIN</strong></a></p></td>
+<td><p>Controls a camera&#39;s gain setting.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>KSPROPERTY_VIDEOPROCAMP_DIGITAL_MULTIPLIER</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566071)</p></td>
-<td><p>Controls a camera's digital zoom multiplier.</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566071" data-raw-source="[&lt;strong&gt;KSPROPERTY_VIDEOPROCAMP_DIGITAL_MULTIPLIER&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566071)"><strong>KSPROPERTY_VIDEOPROCAMP_DIGITAL_MULTIPLIER</strong></a></p></td>
+<td><p>Controls a camera&#39;s digital zoom multiplier.</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>KSPROPERTY_VIDEOPROCAMP_DIGITAL_MULTIPLIER_LIMIT</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566072)</p></td>
-<td><p>Controls the upper limit of a camera's digital zoom.</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566072" data-raw-source="[&lt;strong&gt;KSPROPERTY_VIDEOPROCAMP_DIGITAL_MULTIPLIER_LIMIT&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566072)"><strong>KSPROPERTY_VIDEOPROCAMP_DIGITAL_MULTIPLIER_LIMIT</strong></a></p></td>
+<td><p>Controls the upper limit of a camera&#39;s digital zoom.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>KSPROPERTY_VIDEOPROCAMP_WHITEBALANCE_COMPONENT</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566097)</p></td>
-<td><p>Controls a camera's white balance setting.</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566097" data-raw-source="[&lt;strong&gt;KSPROPERTY_VIDEOPROCAMP_WHITEBALANCE_COMPONENT&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566097)"><strong>KSPROPERTY_VIDEOPROCAMP_WHITEBALANCE_COMPONENT</strong></a></p></td>
+<td><p>Controls a camera&#39;s white balance setting.</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>KSPROPERTY_VIDEOPROCAMP_POWERLINE_FREQUENCY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566086)</p></td>
-<td><p>Controls the powerline frequency of a camera's operating environment.</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566086" data-raw-source="[&lt;strong&gt;KSPROPERTY_VIDEOPROCAMP_POWERLINE_FREQUENCY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566086)"><strong>KSPROPERTY_VIDEOPROCAMP_POWERLINE_FREQUENCY</strong></a></p></td>
+<td><p>Controls the powerline frequency of a camera&#39;s operating environment.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

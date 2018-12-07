@@ -2,7 +2,6 @@
 title: Viewing the Call Stack in KD
 description: In KD, you can view the call stack by entering one of the k (Display Stack Backtrace) commands.
 ms.assetid: 81F5D9EA-48CE-4F29-B74E-282824E690F6
-ms.author: domars
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -14,9 +13,9 @@ The call stack is the chain of function calls that have led to the current locat
 
 In KD, you can view the call stack by entering one of the [**k (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) commands.
 
- 
+ 
 
- 
+ 
 
 
 

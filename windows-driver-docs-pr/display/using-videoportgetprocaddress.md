@@ -51,9 +51,9 @@ else {
 
 After the call through the *VideoPortGetProcAddress* callback routine has executed, *pVPFunction* either is **NULL** or contains the address of the **VideoPortCreateSecondaryDisplay** function. If *pVPFunction* is **NULL**, the video port driver does not export the function you are trying to find, and the miniport driver must not attempt to use it. If *pVPFunction* is not **NULL**, you can use this pointer to call **VideoPortCreateSecondaryDisplay** as shown in the preceding example.
 
- 
+ 
 
- 
+ 
 
 
 

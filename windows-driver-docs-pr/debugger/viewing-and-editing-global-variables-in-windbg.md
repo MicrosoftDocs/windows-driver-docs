@@ -2,7 +2,6 @@
 title: Viewing and Editing Global Variables in WinDbg
 description: Viewing and Editing Global Variables in WinDbg
 ms.assetid: 4273F6D8-A2A1-43FA-80BF-97E5673FAF05
-ms.author: domars
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -27,9 +26,9 @@ The following screen shot shows an example of a Watch window.
 
 The Watch window can contain four columns. The **Name** and **Value** columns are always displayed, and the **Type** and **Location** columns are optional. To display the **Type** and **Location** columns, click the **Typecast** and **Locations** buttons, respectively, on the toolbar.
 
- 
+ 
 
- 
+ 
 
 
 

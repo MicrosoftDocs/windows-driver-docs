@@ -1,6 +1,5 @@
 ---
 title: Using Avcstrm.sys
-author: windows-driver-content
 description: Using Avcstrm.sys
 ms.assetid: 53430526-ee24-4081-b220-4089d60aec94
 keywords:
@@ -25,7 +24,7 @@ A subunit driver first requests that *Avcstrm.sys* create a stream with a given 
 **Note**  : Prior to Windows XP Service Pack 2 (SP2), *Avcstrm.sys* could only use the target device's first (index 0) isochronous plug handle to establish a connection. This limitation restricted AV/C devices (and consequently their drivers) with more than one subunit from supporting more than one stream simultaneously. In Windows XP SP2 and later, however, *Avcstrm.sys* has been changed to automatically select an AV/C device's isochronous plug handle, starting from the lowest index and up, to enable devices to support more than one stream simultaneously.
 Since connections are made from the lowest index and up, the internal connection of a subunit plug to the AV/C unit's isochronous plug must follow the same order. AV/C devices with only one subunit, or devices that have only one isochronous plug, are not affected.
 
- 
+ 
 
 Upon successful creation of a stream, a stream context is returned. This context is a pointer to an opaque structure that contains information about the current stream, such as data format and stream state.
 
@@ -43,9 +42,9 @@ The AV/C Streaming filter driver is designed to work with kernel streaming inter
 
 In the following sections, each AV/C Streaming command function is discussed (some with code samples). The code sample is from a Stream class-based subunit driver.
 
- 
+ 
 
- 
+ 
 
 
 

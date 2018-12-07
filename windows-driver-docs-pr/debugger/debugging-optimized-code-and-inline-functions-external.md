@@ -3,7 +3,6 @@ title: Debugging Optimized Code and Inline Functions
 description: For Windows 8, the debugger and the Windows compiler have been enhanced so that you can debug optimized code and debug inline functions.
 ms.assetid: C7BE6B8E-9CF2-471C-A4F9-931C71CCC0FE
 keywords: ["debug optimized code", "debug inline functions"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -168,16 +167,16 @@ Because there are no explicit call or return instructions for inline functions, 
 
 **Note**  You can use the **.inline 0** command to disable inline function debugging. The **.inline 1** command enables inline function debugging. [Standard Debugging Techniques](standard-debugging-techniques.md)
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
 
 [Standard Debugging Techniques](standard-debugging-techniques.md)
 
- 
+ 
 
- 
+ 
 
 
 

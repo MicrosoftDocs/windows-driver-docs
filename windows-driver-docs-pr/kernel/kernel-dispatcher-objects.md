@@ -1,6 +1,5 @@
 ---
 title: Kernel Dispatcher Objects
-author: windows-driver-content
 description: Kernel Dispatcher Objects
 ms.assetid: 884270d2-c102-46b0-a920-b93da580fd0e
 keywords: ["kernel dispatcher objects WDK", "dispatcher objects WDK kernel", "synchronization WDK kernel , dispatcher objects"]
@@ -30,9 +29,9 @@ This section includes the following topics:
 
 [Waits and APCs](waits-and-apcs.md)
 
- 
+ 
 
- 
+ 
 
 
 

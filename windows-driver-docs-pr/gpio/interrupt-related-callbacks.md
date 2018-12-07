@@ -1,6 +1,5 @@
 ---
 title: Interrupt-Related Callbacks
-author: windows-driver-content
 description: As an option, the driver for a general-purpose I/O (GPIO) controller can provide support for GPIO interrupts.
 ms.assetid: 638B52A0-CB8D-4A79-B7D1-ED2474E46DAE
 ms.date: 04/20/2017
@@ -39,15 +38,15 @@ If the **MemoryMappedController** flag is not set, all of the interrupt-related 
 
 However, if the **MemoryMappedController** flag is set, the *CLIENT\_EnableInterrupt* and *CLIENT\_DisableInterrupt* functions must explicitly synchronize their interrupt enable and disable operations to the GpioClx ISR, which calls the other four interrupt-related callback functions at DIRQL.
 
-Typically, the other *CLIENT\_*Xxx callback functions (whose names do not contain "*Interrupt*") do not perform interrupt-related processing and, therefore, do not need to synchronize to the GpioClx ISR. However, if any of these functions are called at PASSIVE\_LEVEL and contain code that accesses interrupt settings that are accessed by interrupt-related functions at DIRQL, this code must be synchronized to the ISR.
+Typically, the other <em>CLIENT\_</em>Xxx callback functions (whose names do not contain "*Interrupt*") do not perform interrupt-related processing and, therefore, do not need to synchronize to the GpioClx ISR. However, if any of these functions are called at PASSIVE\_LEVEL and contain code that accesses interrupt settings that are accessed by interrupt-related functions at DIRQL, this code must be synchronized to the ISR.
 
 To support interrupt synchronization, GpioClx implements a set of interrupt locks. A callback function that runs at PASSIVE\_LEVEL can call the [**GPIO\_CLX\_AcquireInterruptLock**](https://msdn.microsoft.com/library/windows/hardware/hh439482) method to acquire an interrupt lock, and call the [**GPIO\_CLX\_ReleaseInterruptLock**](https://msdn.microsoft.com/library/windows/hardware/hh439494) method to release the lock. When the function holds the interrupt lock, the GpioClx ISR cannot run, and this ISR cannot call any interrupt-related callback function. To enable GPIO interrupts to be handled in a timely way, the driver should hold the interrupt lock for no longer than is necessary.
 
 For more information, see [Interrupt Synchronization for GPIO Controller Drivers](https://msdn.microsoft.com/library/windows/hardware/jj851070).
 
- 
+ 
 
- 
+ 
 
 
 

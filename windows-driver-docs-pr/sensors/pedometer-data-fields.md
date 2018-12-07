@@ -1,6 +1,5 @@
 ---
 title: Pedometer data fields
-author: windows-driver-content
 description: This topic provides information about the data fields that are specific to the pedometer.
 ms.assetid: 35E52085-9727-465D-B6EF-D95974423CD5
 ms.date: 07/20/2018
@@ -12,7 +11,7 @@ ms.localizationpriority: medium
 
 This topic provides information about the data fields that are specific to the pedometer.
 
-The following table shows the data fields. For more information about the data types shown in the **Type** column, see [PROPVARIANT structure](http://go.microsoft.com/fwlink/p/?linkid=313395).
+The following table shows the data fields. For more information about the data types shown in the **Type** column, see [PROPVARIANT structure](https://go.microsoft.com/fwlink/p/?linkid=313395).
 
 |Property key|Type|Required/Optional|Description|
 |--|--|--|--|
@@ -21,18 +20,18 @@ The following table shows the data fields. For more information about the data t
 |PKEY_SensorData_PedometerStepDuration_Ms|VT_I8|Required|The duration over which the pedometer counted steps. This value is expressed in milliseconds.|
 |PKEY_SensorData_PedometerReset|VT_BOOL|Required|Indicates that the pedometer has been reset.|
 
- 
+ 
 
 ## Related topics
 
 
-[PROPVARIANT structure](http://go.microsoft.com/fwlink/p/?linkid=313395)
+[PROPVARIANT structure](https://go.microsoft.com/fwlink/p/?linkid=313395)
 
 [**PEDOMETER\_STEP\_TYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsdef/ne-sensorsdef-pedometer_step_type)
 
- 
+ 
 
- 
+ 
 
 
 

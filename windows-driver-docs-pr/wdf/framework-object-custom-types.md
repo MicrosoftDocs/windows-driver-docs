@@ -1,6 +1,5 @@
 ---
 title: Framework Object Custom Types
-author: windows-driver-content
 description: Framework Object Custom Types
 ms.assetid: E00393ED-7285-4354-9E1B-D9ABDB7DC9F2
 ms.date: 04/20/2017
@@ -27,9 +26,9 @@ In output from KMDF debugger extensions, custom type names are displayed along w
 WDF_Object_Name, [custom_Type1_Name, custom_Type2_Name]
 ```
 
- 
+ 
 
- 
+ 
 
 
 

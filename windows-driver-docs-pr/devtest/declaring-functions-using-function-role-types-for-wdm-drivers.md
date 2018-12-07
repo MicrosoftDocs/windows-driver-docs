@@ -45,71 +45,71 @@ SDV recognizes the types of entry points shown in the following table.
 <tbody>
 <tr class="odd">
 <td align="left"><p>DRIVER_INITIALIZE</p></td>
-<td align="left"><p>[<em>DriverEntry</em>](https://msdn.microsoft.com/library/windows/hardware/ff544113)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff544113" data-raw-source="[&lt;em&gt;DriverEntry&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff544113)"><em>DriverEntry</em></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>DRIVER_STARTIO</p></td>
-<td align="left"><p>[<em>StartIO</em>](https://msdn.microsoft.com/library/windows/hardware/ff563858)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff563858" data-raw-source="[&lt;em&gt;StartIO&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff563858)"><em>StartIO</em></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>DRIVER_UNLOAD</p></td>
-<td align="left"><p>[<em>Unload</em>](https://msdn.microsoft.com/library/windows/hardware/ff564886)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564886" data-raw-source="[&lt;em&gt;Unload&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564886)"><em>Unload</em></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>DRIVER_ADD_DEVICE</p></td>
-<td align="left"><p>[<em>AddDevice</em>](https://msdn.microsoft.com/library/windows/hardware/ff540521)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff540521" data-raw-source="[&lt;em&gt;AddDevice&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540521)"><em>AddDevice</em></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p></p>
-<strong>_Dispatch_type_(</strong> <em>type</em> <strong>)</strong>
+<strong><em>Dispatch_type</em>(</strong> <em>type</em> <strong>)</strong>
 DRIVER_DISPATCH</td>
-<td align="left"><p>The dispatch routine(s) used by the driver. See [Writing Dispatch Routines](https://msdn.microsoft.com/library/windows/hardware/ff566407). The <strong>_Dispatch_type_(</strong><em>type</em><strong>)</strong> annotation must be combined with the DRIVER_DISPATCH role type declaration to specify the driver entry points.</p></td>
+<td align="left"><p>The dispatch routine(s) used by the driver. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff566407" data-raw-source="[Writing Dispatch Routines](https://msdn.microsoft.com/library/windows/hardware/ff566407)">Writing Dispatch Routines</a>. The <strong><em>Dispatch_type</em>(</strong><em>type</em><strong>)</strong> annotation must be combined with the DRIVER_DISPATCH role type declaration to specify the driver entry points.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>IO_COMPLETION_ROUTINE</p></td>
-<td align="left"><p>[<em>IoCompletion</em>](https://msdn.microsoft.com/library/windows/hardware/ff548354)</p>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff548354" data-raw-source="[&lt;em&gt;IoCompletion&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff548354)"><em>IoCompletion</em></a></p>
 <p>The <em>IoCompletion</em> routine is set by calling <em>IoSetCompletionRoutine</em> or <em>IoSetCompletionRoutineEx</em> and passing the function pointer to the <em>IoCompletion</em> routine as the second parameter.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>DRIVER_CANCEL</p></td>
-<td align="left"><p>[<em>Cancel</em>](https://msdn.microsoft.com/library/windows/hardware/ff540742)</p>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff540742" data-raw-source="[&lt;em&gt;Cancel&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540742)"><em>Cancel</em></a></p>
 <p>The <strong>Cancel</strong> routine is set by calling <strong>IoSetCancelRoutine</strong> and passing the function pointer to the cancellation routine for the IRP as the second parameter to the function.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>IO_DPC_ROUTINE</p></td>
-<td align="left"><p>[<em>DpcForIsr</em>](https://msdn.microsoft.com/library/windows/hardware/ff544079)</p>
-<p>The [<em>DpcForIsr</em>](https://msdn.microsoft.com/library/windows/hardware/ff544079) routine is registered by calling <em>IoInitializeDpcRequest</em> and passing the function pointer to the <em>DpcForIsr</em> routine as the second parameter. To queue the DPC, call <em>IoQueueDpc</em> from the ISR routine by using the same DPC object.</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff544079" data-raw-source="[&lt;em&gt;DpcForIsr&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff544079)"><em>DpcForIsr</em></a></p>
+<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff544079" data-raw-source="[&lt;em&gt;DpcForIsr&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff544079)"><em>DpcForIsr</em></a> routine is registered by calling <em>IoInitializeDpcRequest</em> and passing the function pointer to the <em>DpcForIsr</em> routine as the second parameter. To queue the DPC, call <em>IoQueueDpc</em> from the ISR routine by using the same DPC object.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>KDEFERRED_ROUTINE</p></td>
-<td align="left"><p>[<em>CustomDpc</em>](https://msdn.microsoft.com/library/windows/hardware/ff542972)</p>
-<p>The [<em>CustomDpc</em>](https://msdn.microsoft.com/library/windows/hardware/ff542972) routine is set by calling [<strong>KeInitializeDpc</strong>](https://msdn.microsoft.com/library/windows/hardware/ff552130) and passing the function pointer to the <em>CustomDpc</em> as the second parameter. To queue the <em>CustomDpc</em> for the driver, call [<strong>KeInsertQueueDpc</strong>](https://msdn.microsoft.com/library/windows/hardware/ff552185) from the ISR routine by using the same DPC object.</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff542972" data-raw-source="[&lt;em&gt;CustomDpc&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff542972)"><em>CustomDpc</em></a></p>
+<p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff542972" data-raw-source="[&lt;em&gt;CustomDpc&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff542972)"><em>CustomDpc</em></a> routine is set by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff552130" data-raw-source="[&lt;strong&gt;KeInitializeDpc&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff552130)"><strong>KeInitializeDpc</strong></a> and passing the function pointer to the <em>CustomDpc</em> as the second parameter. To queue the <em>CustomDpc</em> for the driver, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff552185" data-raw-source="[&lt;strong&gt;KeInsertQueueDpc&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff552185)"><strong>KeInsertQueueDpc</strong></a> from the ISR routine by using the same DPC object.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>KSERVICE_ROUTINE</p></td>
-<td align="left"><p>[<em>InterruptService</em>](https://msdn.microsoft.com/library/windows/hardware/ff547958)</p>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff547958" data-raw-source="[&lt;em&gt;InterruptService&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff547958)"><em>InterruptService</em></a></p>
 <p>The InterruptService routine (ISR) services a device interrupt and schedules post-interrupt processing of received data, if necessary.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>REQUEST_POWER_COMPLETE</p></td>
-<td align="left"><p>The [<em>PowerCompletion</em>](https://msdn.microsoft.com/library/windows/hardware/ff961906) callback routine completes the processing of a power IRP. If the driver needs to perform additional tasks after all other drivers have completed the IRP, the driver registers a <em>PowerCompletion</em> callback routine during the call to the [<strong>PoRequestPowerIrp</strong>](https://msdn.microsoft.com/library/windows/hardware/ff559734) routine that allocates the IRP.</p></td>
+<td align="left"><p>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff961906" data-raw-source="[&lt;em&gt;PowerCompletion&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff961906)"><em>PowerCompletion</em></a> callback routine completes the processing of a power IRP. If the driver needs to perform additional tasks after all other drivers have completed the IRP, the driver registers a <em>PowerCompletion</em> callback routine during the call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559734" data-raw-source="[&lt;strong&gt;PoRequestPowerIrp&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff559734)"><strong>PoRequestPowerIrp</strong></a> routine that allocates the IRP.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>WORKER_THREAD_ROUTINE</p></td>
 <td align="left"><p><em>Routine</em></p>
-<p><em>Routine</em> is the callback routine that is specified in the second parameter to the [<strong>ExInitializeWorkItem</strong>](https://msdn.microsoft.com/library/windows/hardware/ff545327) function.</p>
+<p><em>Routine</em> is the callback routine that is specified in the second parameter to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545327" data-raw-source="[&lt;strong&gt;ExInitializeWorkItem&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff545327)"><strong>ExInitializeWorkItem</strong></a> function.</p>
 <p>The <em>Routine</em> should only be declared this way if the driver calls <strong>ExQueueWorkItem</strong> to add the work item to a system queue.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="annotating_driver_dispatch_routines"></span><span id="ANNOTATING_DRIVER_DISPATCH_ROUTINES"></span>Declaring Driver Dispatch Routines
 
-The function role type declarations for dispatch routines require additional information. Use the annotation **\_Dispatch\_type\_(***type***)** in the declarations for dispatch routines that serve major IRP function codes. The *type* is the major I/O function code (for example, IRP\_MJ\_CREATE, IRP\_MJ\_CLOSE, IRP\_MJ\_SYSTEM\_CONTROL).
+The function role type declarations for dispatch routines require additional information. Use the annotation **\_Dispatch\_type\_(**<em>type</em>**)** in the declarations for dispatch routines that serve major IRP function codes. The *type* is the major I/O function code (for example, IRP\_MJ\_CREATE, IRP\_MJ\_CLOSE, IRP\_MJ\_SYSTEM\_CONTROL).
 
-For an example of how to declare driver dispatch routines, see the source code for the Cancel sample driver (Cancel.sys). In the header file for the driver (Cancel.h) there is a function role type declaration for *CsampCleanup*, a driver dispatch routine that handles the IRP\_MJ\_CLEANUP I/O function code. The **\_Dispatch\_type\_ (***type***)** annotation precedes the DRIVER\_DISPATCH role type declaration.
+For an example of how to declare driver dispatch routines, see the source code for the Cancel sample driver (Cancel.sys). In the header file for the driver (Cancel.h) there is a function role type declaration for *CsampCleanup*, a driver dispatch routine that handles the IRP\_MJ\_CLEANUP I/O function code. The **\_Dispatch\_type\_ (**<em>type</em>**)** annotation precedes the DRIVER\_DISPATCH role type declaration.
 
 The *CsampCleanup* routine is declared as follows:
 
@@ -201,9 +201,9 @@ myCompletionRoutine(
 
 To help you determine whether the source code is prepared, run [Code Analysis for Drivers](code-analysis-for-drivers.md). Code Analysis for Drivers checks for function role type declarations and can help identify function declarations that might have been missed or warn you when the parameters of the function definition do not match those in the function role type.
 
- 
+ 
 
- 
+ 
 
 
 

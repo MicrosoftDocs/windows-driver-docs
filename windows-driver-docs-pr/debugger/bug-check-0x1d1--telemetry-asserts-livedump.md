@@ -2,7 +2,6 @@
 title: Bug Check 0x1D1 TELEMETRY_ASSERTS_LIVEDUMP
 description: The TELEMETRY_ASSERTS_LIVEDUMP bug check has a value of 0x000001D1.
 keywords: ["Bug Check 0x1D1 TELEMETRY_ASSERTS_LIVEDUMP", "TELEMETRY_ASSERTS_LIVEDUMP"]
-ms.author: domars
 ms.date: 04/19/2018
 topic_type:
 - apiref
@@ -34,9 +33,9 @@ Parameter | Description
 3 | TimeStamp
 4 | SizeOfImage
 
- 
+ 
 
- 
+ 
 
 
 

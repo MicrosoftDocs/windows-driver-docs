@@ -45,9 +45,9 @@ To retrieve a device class property value on a remote computer, follow the same 
 
 -   In addition to supplying the parameter values that **SetupDiGetDevicePropertyEx** and **SetupDiGetClassProperty** both require, supply the *MachineName* parameter, which must be set to a pointer to a NULL-terminated string that contains the UNC name, including the \\\\ prefix, of a computer.
 
- 
+ 
 
- 
+ 
 
 
 

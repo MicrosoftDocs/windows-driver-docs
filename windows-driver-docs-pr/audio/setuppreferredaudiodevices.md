@@ -45,9 +45,9 @@ The directive at the end of the example specifies that the device named "XYZ-Aud
 
 With the current implementation of the SetupPreferredAudioDevices keyword in Windows Vista, any audio endpoint with its *dword-value* set to an odd number can be set as the default device. To make sure that the correct endpoint is set as the default device, make sure that the KS filter that contains the relevant endpoint is exposed last. You have to do this because of the algorithm that the AudioEndpointBuilder service uses to populate property stores and setting default devices.
 
- 
+ 
 
- 
+ 
 
 
 

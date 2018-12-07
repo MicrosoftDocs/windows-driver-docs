@@ -1,6 +1,5 @@
 ---
 title: Print Driver Manifests
-author: windows-driver-content
 description: Print Driver Manifests
 ms.assetid: fca0c211-1daa-4295-a03e-c0038b66a898
 keywords:
@@ -25,9 +24,9 @@ A print driver package may contain two kinds of manifest:
 
 For more information on theme manifests, see [Using Theme Manifests](using-theme-manifests.md).
 
- 
+ 
 
- 
+ 
 
 
 

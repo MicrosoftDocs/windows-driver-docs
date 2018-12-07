@@ -1,6 +1,5 @@
 ---
 title: About Sensor Interfaces
-author: windows-driver-content
 description: About the Interfaces
 ms.assetid: 0de85b2d-9853-45d9-86b8-2685aa270cb1
 ms.date: 07/20/2018
@@ -18,9 +17,9 @@ In this section:
 
 -   [About the Parameter Types](about-the-parameter-types.md)
 
- 
+ 
 
- 
+ 
 
 
 

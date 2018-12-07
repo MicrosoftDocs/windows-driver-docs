@@ -3,7 +3,6 @@ title: .attach (Attach to Process)
 description: The .attach command attaches to a new target application.
 ms.assetid: e637c7eb-9c3c-4501-b972-a9293a6da52a
 keywords: ["Attach to Process (.attach) command", "process, Attach to Process (.attach) command", ".attach (Attach to Process) Windows Debugging"]
-ms.author: domars
 ms.date: 09/17/2018
 topic_type:
 - apiref
@@ -78,7 +77,7 @@ Specifies the process ID of the new target application.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -95,9 +94,9 @@ If you wish to attach to a new process and freeze all your existing targets, use
 
 If the **-premote** option is used, the new process will be part of a new system. For details, see [Debugging Multiple Targets](debugging-multiple-targets.md).
 
- 
+ 
 
- 
+ 
 
 
 

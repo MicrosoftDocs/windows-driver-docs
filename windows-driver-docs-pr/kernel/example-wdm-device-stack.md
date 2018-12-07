@@ -1,6 +1,5 @@
 ---
 title: Example WDM Device Stack
-author: windows-driver-content
 description: Example WDM Device Stack
 ms.assetid: 1128e098-9ef4-4bc3-aa09-74df3142fb11
 keywords: ["device stacks WDK kernel , examples", "joystick WDK device stacks", "functional device objects WDK kernel", "FDO WDK kernel", "physical device objects WDK kernel", "PDOs WDK kernel", "filter DOs WDK kernel", "USB hub device stacks WDK kernel", "USB host controller device stacks WDK kernel", "PCI bus device stacks WDK kernel"]
@@ -62,9 +61,9 @@ The following figure shows the same device stacks as the previous figure, but em
 
 A bus driver spans more than one device stack. A bus driver creates the FDO for its bus adapter/controller and creates a PDO for each of its child devices.
 
- 
+ 
 
- 
+ 
 
 
 

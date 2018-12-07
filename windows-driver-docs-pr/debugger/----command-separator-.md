@@ -3,7 +3,6 @@ title: ; (Command Separator)
 description: The semicolon ( ; ) character is used to separate multiple commands on a single line.
 ms.assetid: efa59a34-1d1d-4df4-bbb9-b8066c6f3b3c
 keywords: ["; (Command Separator) Windows Debugging"]
-ms.author: domars
 ms.date: 09/17/2018
 topic_type:
 - apiref
@@ -42,9 +41,9 @@ Here is an example. This executes the current program to source line 123, prints
 0:000> g `:123`; ? poi(counter); g 
 ```
 
- 
+ 
 
- 
+ 
 
 
 

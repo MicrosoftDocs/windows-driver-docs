@@ -3,7 +3,6 @@ title: Enable heap tail checking
 description: Enable heap tail checking
 ms.assetid: d71b4567-55e7-49e6-a791-a292ad477c10
 keywords: ["Enable heap tail checking (global flag)"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -41,7 +40,7 @@ The **Enable heap tail checking** flag checks for buffer overruns when the heap 
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
@@ -51,9 +50,9 @@ This flag adds a short pattern to the end of each allocation. The Windows heap m
 
 [Enable heap free checking](enable-heap-free-checking.md), [Enable heap parameter checking](enable-heap-parameter-checking.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: Remote Targets
 description: Remote Targets
 ms.assetid: ed7ea3dc-07d1-481c-90e0-7f0b0e77ad42
 keywords: ["Debugger Engine API, targets, remote", "Debugger Engine API, debugging servers", "Debugger Engine API, process servers", "Debugger Engine API, kernel connection servers", "Debugger Engine API, smart clients"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -40,9 +39,9 @@ When the remote client is finished with the process server, it can disconnect us
 
 The communication between a process server and a smart client typically consists of low-level memory, processor, and operating system operations and requests that are sent from the remote client to the server. Their results are then sent back to the client.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Optional WIA Child Item Properties for Scanner Storage
-author: windows-driver-content
 description: Optional WIA Child Item Properties for Scanner Storage
 ms.assetid: 3683e5ed-0a0a-479f-90ed-8d0d17833260
 ms.date: 04/20/2017
@@ -46,9 +45,9 @@ The WIA scanner storage child (file) item can optionally support the following W
 
 [**WIA\_IPS\_YRES**](https://msdn.microsoft.com/library/windows/hardware/ff552673)
 
- 
+ 
 
- 
+ 
 
 
 

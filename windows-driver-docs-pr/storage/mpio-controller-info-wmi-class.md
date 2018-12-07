@@ -30,9 +30,9 @@ class MPIO_CONTROLLER_INFO
 
 When this class definition is compiled by the WMI tool suite, it produces the [**MPIO\_CONTROLLER\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff562329) data structure. There are no methods associated with this WMI class.
 
- 
+ 
 
- 
+ 
 
 
 

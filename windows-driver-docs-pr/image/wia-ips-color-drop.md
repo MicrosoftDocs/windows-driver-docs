@@ -51,24 +51,24 @@ The following table describes the valid values for the **WIA\_IPS\_COLOR\_DROP**
 </tr>
 <tr class="even">
 <td><p>WIA_COLOR_DROP_RED</p></td>
-<td><p>The Red channel is dropped in the amount described by [<strong>WIA_IPS_COLOR_DROP_RED</strong>](wia-ips-color-drop-red.md).</p></td>
+<td><p>The Red channel is dropped in the amount described by <a href="wia-ips-color-drop-red.md" data-raw-source="[&lt;strong&gt;WIA_IPS_COLOR_DROP_RED&lt;/strong&gt;](wia-ips-color-drop-red.md)"><strong>WIA_IPS_COLOR_DROP_RED</strong></a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p>WIA_COLOR_DROP_GREEN</p></td>
-<td><p>The Green channel is dropped in the amount described by [<strong>WIA_IPS_COLOR_DROP_GREEN</strong>](wia-ips-color-drop-green.md).</p></td>
+<td><p>The Green channel is dropped in the amount described by <a href="wia-ips-color-drop-green.md" data-raw-source="[&lt;strong&gt;WIA_IPS_COLOR_DROP_GREEN&lt;/strong&gt;](wia-ips-color-drop-green.md)"><strong>WIA_IPS_COLOR_DROP_GREEN</strong></a>.</p></td>
 </tr>
 <tr class="even">
 <td><p>WIA_COLOR_DROP_BLUE</p></td>
-<td><p>The Blue channel is dropped in the amount described by [<strong>WIA_IPS_COLOR_DROP_BLUE</strong>](wia-ips-color-drop-blue.md).</p></td>
+<td><p>The Blue channel is dropped in the amount described by <a href="wia-ips-color-drop-blue.md" data-raw-source="[&lt;strong&gt;WIA_IPS_COLOR_DROP_BLUE&lt;/strong&gt;](wia-ips-color-drop-blue.md)"><strong>WIA_IPS_COLOR_DROP_BLUE</strong></a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p>WIA_COLOR_DROP_RGB</p></td>
-<td><p>The Red, Green, and/or Blue channels are dropped in the amounts specified by [<strong>WIA_IPS_COLOR_DROP_RED</strong>](wia-ips-color-drop-red.md), [<strong>WIA_IPS_COLOR_DROP_GREEN</strong>](wia-ips-color-drop-green.md), and [<strong>WIA_IPS_COLOR_DROP_BLUE</strong>](wia-ips-color-drop-blue.md).</p></td>
+<td><p>The Red, Green, and/or Blue channels are dropped in the amounts specified by <a href="wia-ips-color-drop-red.md" data-raw-source="[&lt;strong&gt;WIA_IPS_COLOR_DROP_RED&lt;/strong&gt;](wia-ips-color-drop-red.md)"><strong>WIA_IPS_COLOR_DROP_RED</strong></a>, <a href="wia-ips-color-drop-green.md" data-raw-source="[&lt;strong&gt;WIA_IPS_COLOR_DROP_GREEN&lt;/strong&gt;](wia-ips-color-drop-green.md)"><strong>WIA_IPS_COLOR_DROP_GREEN</strong></a>, and <a href="wia-ips-color-drop-blue.md" data-raw-source="[&lt;strong&gt;WIA_IPS_COLOR_DROP_BLUE&lt;/strong&gt;](wia-ips-color-drop-blue.md)"><strong>WIA_IPS_COLOR_DROP_BLUE</strong></a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 This property is valid for all programmable image data source items, including Flatbed (WIA\_CATEGORY\_FLATBED) and Feeder (WIA\_CATEGORY\_FEEDER) and is optional. When the property is supported, WIA\_COLOR\_DROP\_DISABLED is the required default value.
 
@@ -88,9 +88,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

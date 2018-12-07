@@ -1,6 +1,5 @@
 ---
 title: Printer Property
-author: windows-driver-content
 description: Printer Property
 ms.assetid: c97de7d2-e12f-40f3-b1a9-2bbb6d6b8061
 ms.date: 11/28/2017
@@ -32,9 +31,9 @@ The Printer property has the following child properties:
 
 [Status Section](status-section.md)
 
- 
+ 
 
- 
+ 
 
 
 

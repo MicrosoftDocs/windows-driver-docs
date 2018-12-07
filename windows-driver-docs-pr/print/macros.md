@@ -1,6 +1,5 @@
 ---
 title: Macros
-author: windows-driver-content
 description: Macros
 ms.assetid: 071051fe-d15a-45dc-8f76-5818916aef9f
 keywords:
@@ -22,9 +21,9 @@ The GPD language supports two types of macros:
 
 -   [Value macros](value-macros.md), which allow you to specify sets of values that can be inserted individually anywhere in a GPD file.
 
- 
+ 
 
- 
+ 
 
 
 

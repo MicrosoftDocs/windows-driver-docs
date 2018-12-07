@@ -3,7 +3,6 @@ title: wudfext.wudfqueue
 description: The wudfext.wudfqueue extension displays information about an I/O queue.
 ms.assetid: b3ede1af-c85a-42d6-a8e5-e4094dd80d1c
 keywords: ["wudfext.wudfqueue Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -48,7 +47,7 @@ Specifies the address of the **IWDFIoQueue** interface to display information ab
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -77,9 +76,9 @@ kd> !wudfqueue 0x000f3500
       IQueueCallbackWrite 0x000f3440
 ```
 
- 
+ 
 
- 
+ 
 
 
 

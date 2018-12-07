@@ -57,11 +57,11 @@ Devices that are attached to the port are removable from the hub if the **Device
 </tbody>
 </table>
 
- 
+ 
 
 **Note**   It is an invalid configuration to define a port as not connectable but visible to the user.
 
- 
+ 
 
 The following examples show correctly formed ACPI Source Language (ASL) that demonstrates the use of the **_UPC** and **_PLD** objects to describe a USB port:
 
@@ -110,9 +110,9 @@ Example _UPC for a USB Type-C connector:
 
 For more information about the ACPI 6.0 interface, see [Advanced Configuration and Power Interface Specification Revision 6.0](http://go.microsoft.com/fwlink/?LinkId=827852).
 
- 
+ 
 
- 
+ 
 
 
 

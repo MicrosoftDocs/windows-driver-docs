@@ -1,6 +1,5 @@
 ---
 title: Access the sensor class extension
-author: windows-driver-content
 description: Access the sensor class extension
 ms.assetid: 206A00AE-45D7-49D8-97E2-45A6DACFCB08
 ms.date: 07/20/2018
@@ -14,7 +13,7 @@ ms.localizationpriority: medium
 |------------|-----------------|
 | Device.cpp | CMyDevice       |
 
- 
+ 
 
 Microsoft supports two Sensor APIs. Both simplify accessing devices, retrieving data, and setting properties:
 
@@ -70,9 +69,9 @@ When a sensor app registers an event handler for state-change events, the sample
 HRESULT hr = m_spClassExtension->PostStateChange(SensorId, state);
 ```
 
- 
+ 
 
- 
+ 
 
 
 

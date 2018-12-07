@@ -3,7 +3,6 @@ title: amli set
 description: The amli set extension sets or displays the AMLI Debugger options.
 ms.assetid: 521fa305-8073-4d94-bc28-fdb35cbc2acd
 keywords: ["amli set Windows Debugging"]
-ms.author: domars
 ms.date: 09/17/2018
 topic_type:
 - apiref
@@ -102,9 +101,9 @@ If the AML interpreter breaks into the AMLI Debugger, this output will be automa
 
 For more details on this output filtering, see **DbgPrintEx** and **KdPrintEx** in the Windows Driver Kit (WDK) documentation.
 
- 
+ 
 
- 
+ 
 
 
 

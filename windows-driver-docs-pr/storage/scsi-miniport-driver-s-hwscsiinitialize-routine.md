@@ -1,6 +1,5 @@
 ---
 title: SCSI Miniport Driver's HwScsiInitialize Routine
-author: windows-driver-content
 description: SCSI Miniport Driver's HwScsiInitialize Routine
 ms.assetid: 2a776c0a-1bac-4f8c-beab-fd53300f68c8
 keywords:
@@ -22,9 +21,9 @@ If the *HwScsiInitialize* routine enables interrupts on the HBA, the miniport dr
 
 If initializing the HBA causes a bus reset, the *HwScsiInitialize* routine must call [**ScsiPortNotification**](https://msdn.microsoft.com/library/windows/hardware/ff564657) with the *NotificationType* value **ResetDetected**.
 
- 
+ 
 
- 
+ 
 
 
 

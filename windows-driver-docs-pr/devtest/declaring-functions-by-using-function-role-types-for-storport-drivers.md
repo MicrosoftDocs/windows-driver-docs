@@ -42,11 +42,11 @@ If a callback function has a function prototype declaration, you must replace th
 | VIRTUAL\_HW\_FIND\_ADAPTER                | HwFindAdapter part of the [**VIRTUAL\_HW\_INITIALIZATION\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff568010) structure.           |
 | HW\_MESSAGE\_SIGNALED\_INTERRUPT\_ROUTINE | [**HwMSInterruptRoutine**](https://msdn.microsoft.com/library/windows/hardware/ff557268)                                                                       |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

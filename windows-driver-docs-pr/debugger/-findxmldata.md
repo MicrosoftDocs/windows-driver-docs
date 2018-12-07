@@ -3,7 +3,6 @@ title: findxmldata
 description: The findxmldata extension retrieves XML data from a CAB file that contains a kernel-mode Small Memory Dump file.
 ms.assetid: 6d0b5294-b086-4b33-ac0d-0428521a3489
 keywords: ["XML data in CAB files", "sysdata.xml", "findxmldata Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -66,7 +65,7 @@ Displays system version information.
 </tbody>
 </table>
 
- 
+ 
 
 The **!findxmldata** extension works only on a kernel-mode Small Memory Dump file that is stored in a CAB file.
 
@@ -129,9 +128,9 @@ Node DEVICE
         DRIVER         : msmpu401.sys
 ```
 
- 
+ 
 
- 
+ 
 
 
 

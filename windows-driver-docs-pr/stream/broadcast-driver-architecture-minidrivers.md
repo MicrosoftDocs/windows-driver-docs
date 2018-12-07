@@ -1,6 +1,5 @@
 ---
 title: Broadcast Driver Architecture Minidrivers
-author: windows-driver-content
 description: Broadcast Driver Architecture Minidrivers
 ms.assetid: 0ad56dbd-6f79-439f-8dfc-8d118d114ddd
 keywords:
@@ -57,9 +56,9 @@ The following sections describe implementation details for a BDA minidriver, dis
 
 [Connecting Between Pins of Filters for BDA Minidrivers](connecting-between-pins-of-filters-for-bda-minidrivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

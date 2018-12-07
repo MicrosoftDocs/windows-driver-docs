@@ -3,7 +3,6 @@ title: hidkd.hidfdo
 description: The hidkd.hidfdo command displays HID information associated with a functional device object (FDO).
 ms.assetid: CB8E8844-B5A7-4273-8401-D4F3C8CBAC4C
 keywords: ["hidkd.hidfdo Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -67,9 +66,9 @@ FDO  VendorID:0x045E(Microsoft Corporation) ProductID:0x0745 Version:0x0634
 
 [HID Extensions](hid-extensions.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Other SRB_FUNCTION_XXX Requests
-author: windows-driver-content
 description: Other SRB_FUNCTION_XXX Requests
 ms.assetid: b0430d8e-e5cd-4f17-b77f-ec608b1469da
 keywords:
@@ -47,9 +46,9 @@ Miniport driver designers can assume that their miniport drivers will *never* be
 
 See [**SCSI\_REQUEST\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff565393) structure for more information.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -21,9 +21,9 @@ To comprehend this section, you must understand the Internet Key Exchange (IKE) 
 
 -   [Negotiation of NAT-Traversal in the IKE](http://go.microsoft.com/fwlink/p/?linkid=9857)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -19,9 +19,9 @@ This section describes requirements and recommendations for supporting features 
 
 [Develop and validate WDI drivers for Reset Recovery](wdi-develop-and-validate-wdi-drivers-for-reset-recovery.md)
 
- 
+ 
 
- 
+ 
 
 
 

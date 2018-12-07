@@ -1,6 +1,5 @@
 ---
 title: Framework Object Hierarchy
-author: windows-driver-content
 description: Framework Object Hierarchy
 ms.assetid: ffacca8f-4083-4998-83d2-7c31544eb497
 keywords:
@@ -34,9 +33,9 @@ The lifetime scope of framework objects is determined by their location in the h
 
     Some framework objects are created by a method that is exposed by a parent framework object instance that the objects are to be associated to for lifetime-management purposes. The [**IWDFDevice::CreateIoQueue**](https://msdn.microsoft.com/library/windows/hardware/ff557020) method is an example of this pattern. If a call to **IWDFDevice::CreateIoQueue** succeeds, the newly created I/O queue is associated with the device instance that the [IWDFDevice](https://msdn.microsoft.com/library/windows/hardware/ff556917) interface represents. When the parent object is destroyed, the framework automatically cleans up child instances. Drivers are notified of these events if the drivers register appropriate callback functions with the framework.
 
- 
+ 
 
- 
+ 
 
 
 

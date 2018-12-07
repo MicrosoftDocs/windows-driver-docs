@@ -1,6 +1,5 @@
 ---
 title: Accessing Frequency Properties of a BDA Tuner Node
-author: windows-driver-content
 description: Accessing Frequency Properties of a BDA Tuner Node
 ms.assetid: 47c24e99-c82c-4bc8-af36-bd7f728634ba
 keywords:
@@ -64,9 +63,9 @@ DEFINE_KSPROPERTY_TABLE(RFNodeFrequencyProperties)
 };
 ```
 
- 
+ 
 
- 
+ 
 
 
 

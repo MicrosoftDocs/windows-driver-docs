@@ -1,6 +1,5 @@
 ---
 title: Windows Kernel-Mode Executive Support Library
-author: windows-driver-content
 description: Windows Kernel-Mode Executive Support Library
 ms.assetid: cfb8c6c0-9454-4dc6-98e8-c41cbf1c0cad
 ms.localizationpriority: medium
@@ -26,9 +25,9 @@ Each of the above managers provides direct interfaces to their individual techno
 
 Note that the executive layer components are part of Ntoskrnl.exe, but that drivers and the HAL are not part of the executive layer.
 
- 
+ 
 
- 
+ 
 
 
 

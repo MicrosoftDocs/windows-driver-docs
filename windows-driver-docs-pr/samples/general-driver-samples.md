@@ -1,6 +1,5 @@
 ---
 title: General driver samples
-author: windows-driver-content
 description: The samples in this directory provide a starting point for writing a custom driver for your device.
 ms.assetid: C5DC72F1-D093-47D0-9AC3-680878C5A868
 ms.date: 04/20/2017
@@ -41,11 +40,11 @@ The samples in this directory provide a starting point for writing a custom driv
 | Tracedrv                        | [tracedrv](http://go.microsoft.com/fwlink/p/?LinkId=617726)           | A sample driver instrumented for software tracing.                                                                                                                                                                                                 |
 | UMDF Driver Skeleton            | [umdfSkeleton](http://go.microsoft.com/fwlink/p/?LinkId=617727)       | Demonstrates how to use the User-Mode Driver Framework to write a minimal driver and shows best practices.                                                                                                                                         |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

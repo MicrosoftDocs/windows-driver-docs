@@ -1,6 +1,5 @@
 ---
 title: WIA Utility Library
-author: windows-driver-content
 description: WIA Utility Library
 ms.assetid: 333d7ad3-9bab-401e-a1d9-c8a5b241bfef
 ms.date: 04/20/2017
@@ -23,9 +22,9 @@ The remainder of this section contains the following topics:
 
 [WIA Utility Classes](wia-utility-classes.md)
 
- 
+ 
 
- 
+ 
 
 
 

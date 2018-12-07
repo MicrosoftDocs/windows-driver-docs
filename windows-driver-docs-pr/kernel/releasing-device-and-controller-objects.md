@@ -1,6 +1,5 @@
 ---
 title: Releasing Device and Controller Objects
-author: windows-driver-content
 description: Releasing Device and Controller Objects
 ms.assetid: 35404401-d3a8-4257-b1a3-b16ebe42b181
 keywords: ["Unload routines WDK kernel , non-PnP drivers", "non-PnP Unload routine WDK kernel", "releasing devices", "releasing controller objects", "device releases WDK kernel", "controller objects WDK kernel , releasing"]
@@ -24,9 +23,9 @@ If the **DriverEntry** or *Reinitialize* routine called [**IoGetConfigurationInf
 
 Before it returns control, an *Unload* routine also is responsible for freeing any other driver-allocated resources that have not yet been freed by other driver routines.
 
- 
+ 
 
- 
+ 
 
 
 

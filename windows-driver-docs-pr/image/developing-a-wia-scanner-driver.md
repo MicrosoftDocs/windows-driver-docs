@@ -1,6 +1,5 @@
 ---
 title: Developing a WIA Scanner Driver
-author: windows-driver-content
 description: Developing a WIA Scanner Driver
 ms.assetid: befe7e36-cb42-48da-88b4-d8983876266f
 ms.date: 04/20/2017
@@ -45,9 +44,9 @@ This section contains additional information about the following topics:
 
 [TWAIN Compatibility](twain-compatibility.md)
 
- 
+ 
 
- 
+ 
 
 
 

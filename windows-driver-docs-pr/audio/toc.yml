@@ -387,70 +387,12 @@
       href: wavepci-latency.md
     - name: "Avoiding Data Copying"
       href: avoiding-data-copying.md
-  - name: "Windows Vista Audio System Effects"
-    href: windows-vista-audio-system-effects.md
-    items: 
-    - name: "Audio System Effects"
-      href: audio-system-effects.md
-      items: 
-    - name: "System Effects Audio Processing Objects"
-      href: system-effects-audio-processing-objects.md
-      items: 
-      - name: "sAPOs and the Windows Vista Audio Architecture"
-        href: sapos-and-the-windows-vista-audio-architecture.md
-        items: 
-        - name: "Exploring the Windows Vista Audio Engine"
-          href: exploring-the-windows-vista-audio-engine.md
-          items: 
-          - name: "Format Negotiation"
-            href: format-negotiation.md
-          - name: "Dynamic Format Change"
-            href: dynamic-format-change.md
-      - name: "Wrapping or Replacing Windows Vista sAPOs"
-        href: wrapping-or-replacing-windows-vista-sapos.md
-        items: 
-        - name: "Design Considerations for sAPO Development"
-          href: design-considerations-for-sapo-development.md
-          items: 
-          - name: "Wrapping System-supplied sAPOs"
-            href: wrapping-system-supplied-sapos.md
-          - name: "Replacing System-supplied sAPOs"
-            href: replacing-system-supplied-sapos.md
-          - name: "Implementing a UI for Configuring sAPOs"
-            href: implementing-a-ui-for-configuring-sapos.md
-          - name: "Replacing the Default Property Page"
-            href: replacing-the-default-property-page.md
-          - name: "Custom UI Design Information"
-            href: custom-ui-design-information.md
-        - name: "Installing Custom sAPOs"
-          href: installing-custom-sapos.md
-        - name: "Troubleshooting sAPO Load Failures"
-          href: troubleshooting-sapo-load-failures.md
-        - name: "Windows Vista Default sAPOs"
-          href: windows-vista-default-sapos.md
-          items: 
-          - name: "Bass Boost"
-            href: bass-boost.md
-          - name: "Bass Management"
-            href: bass-management.md
-          - name: "Enhanced Sound for Laptop Computers"
-            href: enhanced-sound-for-laptop-computers.md
-          - name: "Loudness Equalization DSP"
-            href: loudness-equalization-dsp.md
-          - name: "Low Frequency Protection"
-            href: low-frequency-protection.md
-          - name: "Room Correction"
-            href: room-correction.md
-          - name: "Speaker Fill"
-            href: speaker-fill.md
-          - name: "Speaker Phantoming"
-            href: speaker-phantoming.md
-          - name: "Virtual Surround"
-            href: virtual-surround.md
-          - name: "Virtualized Surround Sound over Headphones"
-            href: virtualized-surround-sound-over-headphones.md
-        - name: "Windows Vista sAPO Feature Reference"
-          href: windows-vista-sapo-feature-reference.md
+  - name: "Exploring the Windows Vista Audio Engine"
+    href: exploring-the-windows-vista-audio-engine.md
+  - name: "Format Negotiation"
+    href: format-negotiation.md
+  - name: "Dynamic Format Change"
+    href: dynamic-format-change.md
 - name: "Windows Audio Processing Objects"
   href: windows-audio-processing-objects.md
   items: 
@@ -462,6 +404,29 @@
     href: implementing-a-ui-for-configuring-apo-effects.md
   - name: "Implementing Hardware Offloaded APO Effects"
     href: implementing-hardware-offloaded-apo-effects.md
+  - name: "Windows Default APOs"
+    href: windows-default-apos.md
+    items: 
+    - name: "Bass Boost"
+      href: bass-boost.md
+    - name: "Bass Management"
+      href: bass-management.md
+    - name: "Enhanced Sound for Laptop Computers"
+      href: enhanced-sound-for-laptop-computers.md
+    - name: "Loudness Equalization DSP"
+      href: loudness-equalization-dsp.md
+    - name: "Low Frequency Protection"
+      href: low-frequency-protection.md
+    - name: "Room Correction"
+      href: room-correction.md
+    - name: "Speaker Fill"
+      href: speaker-fill.md
+    - name: "Speaker Phantoming"
+      href: speaker-phantoming.md
+    - name: "Virtual Surround"
+      href: virtual-surround.md
+    - name: "Virtualized Surround Sound over Headphones"
+      href: virtualized-surround-sound-over-headphones.md
 - name: "Audio Miniport Drivers"
   href: audio-miniport-drivers.md
   items: 
@@ -979,6 +944,22 @@
       href: pkey-audioengine-oemformat.md
     - name: "PKEY_AudioEngine_OEMPeriod"
       href: pkey-audioengine-oemperiod.md
+    - name: "PKEY_CompositeFX_EndpointEffectClsid"
+      href: pkey-compositefx-endpointeffectclsid.md
+    - name: "PKEY_CompositeFX_KeywordDetector_EndpointEffectClsid"
+      href: pkey-compositefx-keyworddetector-endpointeffectclsid.md
+    - name: "PKEY_CompositeFX_KeywordDetector_ModeEffectClsid"
+      href: pkey-compositefx-keyworddetector-modeeffectclsid.md
+    - name: "PKEY_CompositeFX_KeywordDetector_StreamEffectClsid"
+      href: pkey-compositefx-keyworddetector-streameffectclsid.md
+    - name: "PKEY_CompositeFX_ModeEffectClsid"
+      href: pkey-compositefx-modeeffectclsid.md
+    - name: "PKEY_CompositeFX_Offload_ModeEffectClsid"
+      href: pkey-compositefx-offload-modeeffectclsid.md
+    - name: "PKEY_CompositeFX_Offload_StreamEffectClsid"
+      href: pkey-compositefx-offload-streameffectclsid.md
+    - name: "PKEY_CompositeFX_StreamEffectClsid"
+      href: pkey-compositefx-streameffectclsid.md
     - name: "PKEY_FX_KeywordDetector_StreamEffectClsid"
       href: pkey-fx-keyworddetector-streameffectclsid.md
     - name: "PKEY_FX_KeywordDetector_ModeEffectClsid"

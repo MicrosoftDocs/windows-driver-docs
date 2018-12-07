@@ -1,6 +1,5 @@
 ---
 title: Impersonation
-author: windows-driver-content
 description: Impersonation
 ms.assetid: 368c6741-b51a-4629-8ae6-a7848c07c0fc
 keywords:
@@ -110,9 +109,9 @@ NTSTATUS PerformSpecialTask(IN PFSD_CONTEXT Context)
 
 There are numerous variants of this impersonation code that are available to file systems developers, but this provides a basic illustration of the technique.
 
- 
+ 
 
- 
+ 
 
 
 

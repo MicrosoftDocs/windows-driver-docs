@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_DEVICE_SERVICE_PARAMS_OPCODE
-author: windows-driver-content
 description: WDI_TLV_DEVICE_SERVICE_PARAMS_OPCODE is a TLV that contains the opcode specific to the device service.
 ms.assetid: A0C9E728-E0E5-47C1-AEB8-E001057FA35A
 ms.date: 06/15/2018

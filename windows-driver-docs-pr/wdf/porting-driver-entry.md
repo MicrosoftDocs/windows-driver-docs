@@ -1,6 +1,5 @@
 ---
 title: Porting DriverEntry
-author: windows-driver-content
 description: Porting DriverEntry
 ms.assetid: E880A45A-136C-480E-BE66-B61558F98227
 ms.date: 04/20/2017
@@ -35,9 +34,9 @@ DriverEntry(
 
 **DriverEntry** also initializes any global data or resources that the driver requires, such as creating a lookaside list or initializing tracing. Note that although [**WdfDriverCreate**](https://msdn.microsoft.com/library/windows/hardware/ff547175) returns a handle to the WDFDRIVER object, the driver does not retain this handle, just as a WDM driver might not retain the DRIVER\_OBJECT pointer that was passed to its **DriverEntry** routine. The reason is the same: only a few drivers use the pointer to the driver object.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -62,9 +62,9 @@ In response, NDIS calls the host stack's *ProtocolTcpOffloadXxxComplete* functio
 
 The intermediate driver then frees the memory for the IM call entry that it used to keep track of resources for the call. For more information about the IM Call Entry, see [Reusing an NDIS\_MINIPORT\_OFFLOAD\_BLOCK\_LIST Structure](reusing-an-ndis-miniport-offload-block-list-structure.md).
 
- 
+ 
 
- 
+ 
 
 
 

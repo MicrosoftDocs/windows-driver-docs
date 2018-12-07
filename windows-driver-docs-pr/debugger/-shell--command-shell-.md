@@ -3,7 +3,6 @@ title: .shell (Command Shell)
 description: The .shell command launches a shell process and redirects its output to the debugger, or to a specified file.
 ms.assetid: 351cbd54-6e1a-4dc1-b0d8-8e61294b0e86
 keywords: ["Command Shell (.shell) command", "MS-DOS Shell (.shell) command", "DOS Shell (.shell) command", "shell commands, Command Shell (.shell) command", ".shell (Command Shell) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -39,7 +38,7 @@ Specifies the path and file name of a file to be used for error output. If -e Er
 <span id="_______Options______"></span><span id="_______options______"></span><span id="_______OPTIONS______"></span> *Options*   
 Can be any number of the following options:
 
-<span id="-ci__Commands_"></span><span id="-ci__commands_"></span><span id="-CI__COMMANDS_"></span>**-ci "***Commands***"**  
+<span id="-ci__Commands_"></span><span id="-ci__commands_"></span><span id="-CI__COMMANDS_"></span>**-ci "**<em>Commands</em>**"**  
 Processes the specified debugger commands, and then passes their output as an input file to the process being launched. *Commands* can be any number of debugger commands, separated by semicolons, and enclosed in quotation marks.
 
 <span id="-x"></span><span id="-X"></span>**-x**  
@@ -71,7 +70,7 @@ Specifies the application command line or Microsoft MS-DOS command to be execute
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -98,9 +97,9 @@ You can use the -ci flag to run one or more debugger commands and then pass thei
 0:000> .shell -ci "!process 0 7" perl.exe parsemyoutput.pl 
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Using WIA Properties
-author: windows-driver-content
 description: Using WIA Properties
 ms.assetid: a1bc114c-d547-486f-9b34-5ff0bab4d94b
 ms.date: 04/20/2017
@@ -33,9 +32,9 @@ This section contains the following topics:
 
 [Deleting an Item from the Driver Tree](deleting-an-item-from-the-driver-tree.md)
 
- 
+ 
 
- 
+ 
 
 
 

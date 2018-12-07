@@ -1,6 +1,5 @@
 ---
 title: Supporting Video Capture Devices with Tuners
-author: windows-driver-content
 description: Supporting Video Capture Devices with Tuners
 ms.assetid: 3dc71bf7-fee2-4390-bb01-2877b5bd4298
 keywords:
@@ -22,9 +21,9 @@ The following sections describe how a video capture minidriver implements variou
 
 [Detecting Tuner Standards](detecting-tuner-standards.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Calling IoCallDriver versus Calling PoCallDriver
-author: windows-driver-content
 description: Calling IoCallDriver versus Calling PoCallDriver
 ms.assetid: a47e2310-e89b-4552-bbe3-d4984ae8b564
 keywords: ["PoCallDriver", "active power IRPs WDK kernel", "power IRPs WDK kernel , IoCallDriver versus PoCallDriver"]
@@ -30,9 +29,9 @@ To ensure that two inrush devices do not attempt to power up simultaneously, the
 
 Because of these restrictions on inrush IRPs, a device power IRP might block while an inrush IRP for another device completes. Driver writers should be aware of this behavior while debugging.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -17,9 +17,9 @@ Be aware that in case of GSM-based devices, miniport drivers should send signal 
 
 For more information about signal strength operations, see [OID\_WWAN\_SIGNAL\_STATE](https://msdn.microsoft.com/library/windows/hardware/ff569836).
 
- 
+ 
 
- 
+ 
 
 
 

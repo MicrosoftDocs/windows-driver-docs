@@ -1,6 +1,5 @@
 ---
 title: Using Invalid GDL Configurations
-author: windows-driver-content
 description: Using Invalid GDL Configurations
 ms.assetid: a61232dd-ab64-4ca4-9eb9-68fe5c7249e4
 keywords:
@@ -52,15 +51,15 @@ The \*InvalidCombination directive is a specific type of constraint. The GDL par
 
 **Note**   You must ensure that the default configuration does not violate any constraints. If it does, none of the parser interface functions will succeed.
 
- 
+ 
 
 **Note**   The GDL parser also accepts a special case of \*InvalidCombination that involves only two parameter settings.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: OID_WWAN_RADIO_STATE
-author: windows-driver-content
 description: OID_WWAN_RADIO_STATE sets or returns information about a MB device's radio power state.
 ms.assetid: e6d09ae8-65c8-4544-9581-8937f61f0747
 ms.date: 08/08/2017
@@ -72,7 +71,7 @@ Refer to the following table for the expected radio state programming by minipor
 </tbody>
 </table>
 
- 
+ 
 
 For devices that do not provide a hardware radio power switch, the **RadioState.HwRadioState** member of the NDIS\_WWAN\_RADIO\_STATE structure must always be set to *WwanRadioOn*.
 
@@ -115,9 +114,9 @@ Requirements
 
 [**WWAN\_RADIO\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff571225)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -53,7 +53,7 @@ Clients use KSPROPERTY\_BDA\_AUTODEMODULATE\_START to automatically determine th
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -76,9 +76,9 @@ Requirements
 
 [**KSP\_NODE**](https://msdn.microsoft.com/library/windows/hardware/ff566720)
 
- 
+ 
 
- 
+ 
 
 
 

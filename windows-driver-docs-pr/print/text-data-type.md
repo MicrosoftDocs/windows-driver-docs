@@ -1,6 +1,5 @@
 ---
 title: TEXT Data Type
-author: windows-driver-content
 description: TEXT Data Type
 ms.assetid: 4d84b639-70e3-48e5-bfcc-61849e835710
 keywords:
@@ -21,9 +20,9 @@ TEXT data consists solely of ANSI text. The print processor calls GDI to draw ch
 
 For more information about the TEXT data type, see the *Windows 2000 Professional Resource Kit* or the *Windows 2000 Server Resource Kit*. (These resources may not be available in some languages and countries.)
 
- 
+ 
 
- 
+ 
 
 
 

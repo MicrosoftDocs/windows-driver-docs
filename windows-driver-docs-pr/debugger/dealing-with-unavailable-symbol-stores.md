@@ -3,7 +3,6 @@ title: Dealing with Unavailable Symbol Stores
 description: Dealing with Unavailable Symbol Stores
 ms.assetid: 42e3518b-b139-49cd-96cc-ea31f6df7964
 keywords: ["SymProxy, unavailable stores"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -19,7 +18,7 @@ If one of the symbol stores that SymSrv is configured to obtain files from is do
 
 2.  Add the values **trigger**, **count**, and **blackout** to this section.
 
-**Trigger** indicates the amount of time in minutes to watch for timeouts. **Count** indicates the number of timeouts to look for during the **trigger** period. **Blackout** indicates the length of time in minutes to disable the store after the threshhold is reached.
+**Trigger** indicates the amount of time in minutes to watch for timeouts. **Count** indicates the number of timeouts to look for during the **trigger** period. **Blackout** indicates the length of time in minutes to disable the store after the threshold is reached.
 
 For example, we recommend the following settings:
 
@@ -46,9 +45,9 @@ Whether using the registry or an .ini file, if any of the trigger, count, or bla
 
 This feature of SymSrv is currently available only when running as a service. This means that the only practical application of this feature is when it is called from SymProxy.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 **Note**  If you are unfamiliar with device and driver installation concepts, please read the topics in this section before you read other device and driver installation topics.
 
- 
+ 
 
 This section provides a high-level overview of the device installation process. This process is performed by Windows and its [device installation components](https://msdn.microsoft.com/library/windows/hardware/ff541277) when a new device is connected to the computer, and consists of the following steps:
 
@@ -21,9 +21,9 @@ This section provides a high-level overview of the device installation process. 
 
 [Step 3: The Driver for the Device is Installed](step-3--the-driver-for-the-device-is-installed.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -24,9 +24,9 @@ A client does not always register a SAP, for example, if it does not handle inco
 
 For more information about SAPs, see [Registering a SAP](registering-a-sap.md) and [Deregistering a SAP](deregistering-a-sap.md).
 
- 
+ 
 
- 
+ 
 
 
 

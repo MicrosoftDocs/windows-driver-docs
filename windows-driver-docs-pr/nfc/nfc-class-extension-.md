@@ -1,6 +1,5 @@
 ---
 title: NFC class extension
-author: windows-driver-content
 description: This section describes the interface between the NFC class extension (CX) and the NFC client driver.
 ms.assetid: 64599C5E-7E72-4712-B733-24C078919B84
 keywords:
@@ -25,7 +24,7 @@ The NFC class extension driver implements all standard NFC Forum Tag (T1T, T2T, 
 
 These topics describe the architecture and public interface between the NFC class extension driver supplied by Microsoft and the NFC client driver supplied by the corresponding chipset manufacturers. The NFC CX driver is designed to support NFC chipsets from various manufacturers, and enables manufacturers to implement non-NCI standard functionality in their NFC client driver for differentiation purposes.
 
-##NFC driver DDI
+## NFC driver DDI
 The following are the Windows-defined NFC driver DDI that are implemented by the NFC CX driver:
 
 -   [Near Field Proximity DDI](https://msdn.microsoft.com/library/windows/hardware/jj866056)
@@ -34,7 +33,7 @@ The following are the Windows-defined NFC driver DDI that are implemented by the
 -   [NFC Radio Management DDI](https://msdn.microsoft.com/library/windows/hardware/dn905577)
 -   DTA DDI for NFC Forum certification
 
-##NFC forum specifications
+## NFC forum specifications
 The following are the NFC Forum specifications implemented by the NFC CX driver:  
 
 -   NFC Controller Interface, NCI 1.0 Specification
@@ -74,9 +73,9 @@ The following are the NFC smart cards and tags supported by the NFC CX driver:
 -   [Logging](logging.md)
 -   [Persisted data](persisted-data.md)
 
- 
+ 
 
- 
+ 
 ## Related topics
 [NFC device driver interface (DDI) overview](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_nfpdrivers/)  
 [NFC class extension (CX) reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/nfccx/)  

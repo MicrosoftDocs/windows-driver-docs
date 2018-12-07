@@ -1,6 +1,5 @@
 ---
 title: Calling PoStartNextPowerIrp
-author: windows-driver-content
 description: Calling PoStartNextPowerIrp
 ms.assetid: 8b3fb578-2ac2-4a04-ac99-1cfd51b07b01
 keywords: ["power IRPs WDK kernel , PoStartNextPowerIrp", "PoStartNextPowerIrp"]
@@ -30,9 +29,9 @@ The following sections clarify when each type of driver should call this routine
 
 [Calling PoStartNextPowerIrp from a Bus Driver](calling-postartnextpowerirp-from-a-bus-driver.md)
 
- 
+ 
 
- 
+ 
 
 
 

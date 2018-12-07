@@ -54,7 +54,7 @@ An AEC node should number its logical pins with the pin IDs from header file Ksm
 </tbody>
 </table>
 
- 
+ 
 
 Note that the pins in the preceding table are logical pins on the node, which are used solely to specify connections internal to the filter, rather than external pins on the filter, which are used to connect to other filters. For more information, see [**PCCONNECTION\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff537688).
 
@@ -82,9 +82,9 @@ A KSNODETYPE\_ACOUSTIC\_ECHO\_CANCEL node can also support the following optiona
 
 [**KSPROPERTY\_AEC\_STATUS**](ksproperty-aec-status.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -59,9 +59,9 @@ The schema defines the following event and event-related elements:
 
 [**StatusSummary**](statussummary.md)
 
- 
+ 
 
- 
+ 
 
 
 

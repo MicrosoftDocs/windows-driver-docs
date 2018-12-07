@@ -39,9 +39,9 @@ For WAN miniport drivers, the include paths should include Ndiswan.h as well as 
 
 If the WAN miniport driver supports connections through TAPI, the driver should also include Ndistapi.h.
 
- 
+ 
 
- 
+ 
 
 
 

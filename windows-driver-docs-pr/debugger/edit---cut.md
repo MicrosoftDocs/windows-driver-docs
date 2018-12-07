@@ -3,7 +3,6 @@ title: Edit Cut
 description: Edit Cut
 ms.assetid: e1cb2415-64a5-4c8a-902a-dbf78019243c
 keywords: ["Edit Cut", "text, Edit Cut"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -24,9 +23,9 @@ You can use the **Cut** command on the **Edit** menu only with docked or tabbed 
 
 For more information about how to select, copy, cut, and paste text and about how these operations vary from window to window, see [Cutting and Pasting Text](cutting-and-pasting-text.md).
 
- 
+ 
 
- 
+ 
 
 
 

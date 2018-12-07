@@ -18,9 +18,9 @@ ms.localizationpriority: medium
 
 The **KSEVENT\_CONNECTION\_DATADISCONTINUITY** event allows a client to receive notification of data discontinuity. This event occurs when a data discontinuity flag is sent through the stream interface on a pin. There are no parameters to this event.
 
- 
+ 
 
- 
+ 
 
 
 

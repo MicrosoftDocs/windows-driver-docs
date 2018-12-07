@@ -1,6 +1,5 @@
 ---
 title: customUI element
-author: windows-driver-content
 description: The optional customUI element specifies a custom user interface to be displayed on a client computer.
 ms.assetid: 4408dcf2-0928-4ecb-97eb-0027eceef457
 keywords: ["customUI element Print Devices"]
@@ -115,7 +114,7 @@ Attributes
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>requestOpen</strong>](requestopen.md)</p></td>
+<td><p><a href="requestopen.md" data-raw-source="[&lt;strong&gt;requestOpen&lt;/strong&gt;](requestopen.md)"><strong>requestOpen</strong></a></p></td>
 <td><p></p>
 <p>An element that is used to open an event notification message on the client computer.</p></td>
 </tr>
@@ -150,9 +149,9 @@ The following code example shows how to use the **customUI** element to call and
 
 [**requestOpen**](requestopen.md)
 
- 
+ 
 
- 
+ 
 
 
 

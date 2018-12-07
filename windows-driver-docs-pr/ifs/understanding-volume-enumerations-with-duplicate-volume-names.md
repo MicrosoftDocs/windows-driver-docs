@@ -1,6 +1,5 @@
 ---
 title: Understanding Volume Enumerations with Duplicate Volume Names
-author: windows-driver-content
 description: Understanding Volume Enumerations with Duplicate Volume Names
 ms.assetid: c05982dc-4124-4f9a-93b8-0e56ac296d1b
 keywords:
@@ -30,7 +29,7 @@ If duplicate volume names appear in a volume information list, each group of ide
 
 **Note**   The FILTER\_VOLUME\_STANDARD\_INFORMATION structure is only available starting with Windows Vista.
 
- 
+ 
 
 Routines and structures affected by this topic include the following:
 
@@ -48,9 +47,9 @@ Routines and structures affected by this topic include the following:
 
 [**FltGetVolumeInformation**](https://msdn.microsoft.com/library/windows/hardware/ff543238)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,7 +2,6 @@
 title: Automatic Memory Dump
 description: Automatic Memory Dump
 ms.assetid: A2C71497-7865-4DC8-B760-6121B224737A
-ms.author: domars
 ms.date: 05/08/2018
 ms.localizationpriority: medium
 ---
@@ -33,7 +32,7 @@ The Automatic Memory Dump is available in Windows 8 and later.
 
 **Note**  To suppress missing page error messages when debugging an Automatic Memory Dump, use the [**.ignore\_missing\_pages**](-ignore-missing-pages--suppress-missing-page-errors-.md) command.
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -43,9 +42,9 @@ The Automatic Memory Dump is available in Windows 8 and later.
 
 [Creating a Kernel-Mode Dump File](creating-a-kernel-mode-dump-file.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Interface implementation guidance
-author: windows-driver-content
 description: This section provides guidance for interface implementation.
 ms.assetid: E97A880F-0422-432C-8567-444CA6FD2980
 ms.localizationpriority: medium
@@ -28,21 +27,21 @@ This section provides guidance for interface implementation.
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[Available interfaces and related APIs](available-interfaces-and-related-apis.md)</p></td>
+<td align="left"><p><a href="available-interfaces-and-related-apis.md" data-raw-source="[Available interfaces and related APIs](available-interfaces-and-related-apis.md)">Available interfaces and related APIs</a></p></td>
 <td align="left"><p>There are three GPIO interfaces: one for each device. Each interface is referenced by a GUID.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Indicator implementation](indicator-implementation.md)</p></td>
+<td align="left"><p><a href="indicator-implementation.md" data-raw-source="[Indicator implementation](indicator-implementation.md)">Indicator implementation</a></p></td>
 <td align="left"><p>This topic describes indicator implementation.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Button implementation](button-implementation.md)</p></td>
+<td align="left"><p><a href="button-implementation.md" data-raw-source="[Button implementation](button-implementation.md)">Button implementation</a></p></td>
 <td align="left"><p>We recommend that you use a physical GPIO resource for both the buttons and state indicators.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="System_state"></span><span id="system_state"></span><span id="SYSTEM_STATE"></span>System state
 
@@ -77,9 +76,9 @@ When either system metric SM\_CONVERTIBLESLATEMODE or SM\_SYSTEMDOCKED changes, 
 
 The LPARAM of the WM\_SETTINGCHANGE message indicates which system metric has changed by using a string of either “ConvertibleSlateMode” or “SystemDockMode”.
 
- 
+ 
 
- 
+ 
 
 
 

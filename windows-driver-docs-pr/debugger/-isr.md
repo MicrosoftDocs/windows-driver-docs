@@ -3,7 +3,6 @@ title: isr
 description: The isr extension displays the Itanium Interruption Status Register (ISR) at the specified address.
 ms.assetid: 35cf1749-2417-4fd9-9de2-0884ee795ab3
 keywords: ["ISR (Interruption Status Register)", "Interruption Status Register (ISR)", "isr Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -25,13 +24,13 @@ The !isr extension displays the Itanium Interruption Status Register (ISR) at th
 
 **Important**  This command has been deprecated in the Windows Debugger Version 10.0.14257 and later, and is no longer available.
 
- 
+ 
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 
 
 <span id="_______Expression______"></span><span id="_______expression______"></span><span id="_______EXPRESSION______"></span> *Expression*   
-Specifies the hexadecimal address of the ISR register to display. The expression **@isr** can also be used for this parameter. In that case, information about the current processor ISR register is displayed.
+Specifies the hexadecimal address of the ISR register to display. The expression <strong>@isr</strong> can also be used for this parameter. In that case, information about the current processor ISR register is displayed.
 
 <span id="_______DisplayLevel______"></span><span id="_______displaylevel______"></span><span id="_______DISPLAYLEVEL______"></span> *DisplayLevel*   
 Can be any one of the following options:
@@ -64,7 +63,7 @@ Displays details about all ISR fields, including those that are ignored or reser
 </tbody>
 </table>
 
- 
+ 
 
 This extension command can only be used with an Itanium target computer.
 
@@ -97,9 +96,9 @@ kd> !isr @isr 2
   rv : 0 : reserved1
 ```
 
- 
+ 
 
- 
+ 
 
 
 

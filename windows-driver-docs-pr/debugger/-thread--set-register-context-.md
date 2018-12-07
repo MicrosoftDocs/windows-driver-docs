@@ -3,7 +3,6 @@ title: .thread (Set Register Context)
 description: The .thread command specifies which thread will be used for the register context.
 ms.assetid: 577276b7-a6c4-427e-ada1-10dbb62ebd5c
 keywords: ["Set Register Context (.thread) command", "context, Set Register Context (.thread) command", "registers, Set Register Context (.thread) command", "call stack, Set Register Context (.thread) command", ".thread (Set Register Context) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -66,7 +65,7 @@ The address of the thread. If this is omitted or zero, the thread context is res
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -138,9 +137,9 @@ fd581c38 8042d61c ntoskrnl!KiSwapThread+0xc5
 00001c60 00000000 ntoskrnl!KeWaitForSingleObject+0x1a1
 ```
 
- 
+ 
 
- 
+ 
 
 
 

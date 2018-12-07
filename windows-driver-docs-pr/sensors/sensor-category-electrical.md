@@ -1,6 +1,5 @@
 ---
 title: SENSOR\_CATEGORY\_ELECTRICAL
-author: windows-driver-content
 description: The SENSOR\_CATEGORY\_ELECTRICAL category contains sensors that provide information about electrical systems.
 ms.assetid: b14cf399-7b95-4b32-8371-21f45175ed2b
 keywords: ["SENSOR_CATEGORY_ELECTRICAL Sensor Devices"]
@@ -35,7 +34,7 @@ This category includes the following platform-defined sensor types.
 |SENSOR_TYPE_RESISTANCE|Resistance sensors|
 |SENSOR_TYPE_VOLTAGE|Voltage sensors.|
 
- 
+ 
 
 ## Platform-defined Data Fields
 
@@ -50,7 +49,7 @@ This category includes the following platform-defined data fields.
 |SENSOR_DATA_TYPE_RESISTANCE_OHMS|VT_R8|>Resistance in ohms.|
 |SENSOR_DATA_TYPE_VOLTAGE_VOLTS|VT_R8|Electrical potential in volts.|
 
- 
+ 
 
 ## Requirements
 
@@ -63,9 +62,9 @@ This category includes the following platform-defined data fields.
 |Header|Sensors.h|
 
 
- 
+ 
 
- 
+ 
 
 
 

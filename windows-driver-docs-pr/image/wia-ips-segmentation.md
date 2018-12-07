@@ -54,7 +54,7 @@ The following table describes the values that are defined for the WIA\_IPS\_SEGM
 </tbody>
 </table>
 
- 
+ 
 
 You must implement WIA\_IPS\_SEGMENTATION for scanner flatbed and film items if they support the creation of child items with a segmentation filter or if the driver itself creates child items for fixed frames.
 
@@ -76,9 +76,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

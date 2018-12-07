@@ -1,6 +1,5 @@
 ---
 title: OID_SRIOV_CURRENT_CAPABILITIES
-author: windows-driver-content
 description: An overlying driver issues an object identifier (OID) query request of OID_SRIOV_CURRENT_CAPABILITIES to obtain the current single root I/O virtualization (SR-IOV) capabilities of a network adapter.
 ms.assetid: EE76B3F8-2883-484A-B2EE-6F7D4738934E
 ms.date: 08/08/2017
@@ -55,7 +54,7 @@ When NDIS handles the OID\_SRIOV\_CURRENT\_CAPABILITIES request, it returns one 
 </tr>
 <tr class="odd">
 <td><p>NDIS_STATUS_INVALID_LENGTH</p></td>
-<td><p>The information buffer was too short. The miniport driver must set the <strong>DATA.QUERY_INFORMATION.BytesNeeded</strong> member in the [<strong>NDIS_OID_REQUEST</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure to the minimum buffer size that is required.</p></td>
+<td><p>The information buffer was too short. The miniport driver must set the <strong>DATA.QUERY_INFORMATION.BytesNeeded</strong> member in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710" data-raw-source="[&lt;strong&gt;NDIS_OID_REQUEST&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566710)"><strong>NDIS_OID_REQUEST</strong></a> structure to the minimum buffer size that is required.</p></td>
 </tr>
 <tr class="even">
 <td><p>NDIS_STATUS_FAILURE</p></td>
@@ -64,7 +63,7 @@ When NDIS handles the OID\_SRIOV\_CURRENT\_CAPABILITIES request, it returns one 
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -102,9 +101,9 @@ Requirements
 
 [**NdisMSetMiniportAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff563672)
 
- 
+ 
 
- 
+ 
 
 
 

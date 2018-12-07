@@ -1,6 +1,5 @@
 ---
 title: OID_SRIOV_READ_VF_CONFIG_BLOCK
-author: windows-driver-content
 description: An overlying driver issues an object identifier (OID) method request of OID_SRIOV_READ_VF_CONFIG_BLOCK to read data from a specified PCI Express (PCIe) Virtual Function (VF) configuration block.
 ms.assetid: A7AC7A18-5DA2-4EE8-B635-04616ABFE08C
 ms.date: 08/08/2017
@@ -29,7 +28,7 @@ A VF configuration block is used for backchannel communication between the PF an
 
 **Note**  Data from each VF configuration block is used only by the PF and VF miniport drivers.
 
- 
+ 
 
 Before it issues the OID method request of OID\_SRIOV\_READ\_VF\_CONFIG\_BLOCK, the overlying driver must set the members of [**NDIS\_SRIOV\_READ\_VF\_CONFIG\_BLOCK\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/hh451680) structure in the following way:
 
@@ -75,11 +74,11 @@ The PF miniport driver returns one of the following status codes for the method 
 </tr>
 <tr class="odd">
 <td><p>NDIS_STATUS_INVALID_PARAMETER</p></td>
-<td><p>One or more of the members of the [<strong>NDIS_SRIOV_READ_VF_CONFIG_BLOCK_PARAMETERS</strong>](https://msdn.microsoft.com/library/windows/hardware/hh451680) structure have invalid values.</p></td>
+<td><p>One or more of the members of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451680" data-raw-source="[&lt;strong&gt;NDIS_SRIOV_READ_VF_CONFIG_BLOCK_PARAMETERS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh451680)"><strong>NDIS_SRIOV_READ_VF_CONFIG_BLOCK_PARAMETERS</strong></a> structure have invalid values.</p></td>
 </tr>
 <tr class="even">
 <td><p>NDIS_STATUS_INVALID_LENGTH</p></td>
-<td><p>The information buffer was too short. The miniport driver must set the <strong>DATA.METHOD_INFORMATION.BytesNeeded</strong> member in the [<strong>NDIS_OID_REQUEST</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure to the minimum buffer size that is required.</p></td>
+<td><p>The information buffer was too short. The miniport driver must set the <strong>DATA.METHOD_INFORMATION.BytesNeeded</strong> member in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710" data-raw-source="[&lt;strong&gt;NDIS_OID_REQUEST&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566710)"><strong>NDIS_OID_REQUEST</strong></a> structure to the minimum buffer size that is required.</p></td>
 </tr>
 <tr class="odd">
 <td><p>NDIS_STATUS_FAILURE</p></td>
@@ -88,7 +87,7 @@ The PF miniport driver returns one of the following status codes for the method 
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -122,9 +121,9 @@ Requirements
 
 [OID\_SRIOV\_READ\_VF\_CONFIG\_SPACE](oid-sriov-read-vf-config-space.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: SPB Device Stacks
-author: windows-driver-content
 description: Acpi.sys creates the PDO for a peripheral device on an SPB.
 ms.assetid: 21AB67A2-AA3C-4998-A532-78D6F6F76244
 ms.date: 04/20/2017
@@ -24,9 +23,9 @@ A filter driver that is designed to operate with the function driver for an SPB 
 
 If necessary, a filter driver can be inserted above the SPB controller driver (and SpbCx, which manages the queues for IRPs sent to the SPB controller driver). However, the [SPB I/O request interface](https://msdn.microsoft.com/library/windows/hardware/hh698227) is a top-level driver interface, and drivers in the I/O-request chain must ensure that I/O requests are delivered in the context of the calling thread so that SpbCx and the SPB controller driver can access user-mode buffers during I/O transfers.
 
- 
+ 
 
- 
+ 
 
 
 

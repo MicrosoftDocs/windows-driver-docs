@@ -48,9 +48,9 @@ Most adapters do not support multiple instances, so in those cases the **FilterI
 
 [**SRB\_CLOSE\_DEVICE\_INSTANCE**](srb-close-device-instance.md)
 
- 
+ 
 
- 
+ 
 
 
 

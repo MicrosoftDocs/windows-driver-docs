@@ -1,6 +1,5 @@
 ---
 title: Creating a File Object to Handle I/O
-author: windows-driver-content
 description: Creating a File Object to Handle I/O
 ms.assetid: 3cd826fc-5c67-4ab4-800a-b5aa4bd5244f
 keywords:
@@ -29,9 +28,9 @@ The following sections describe the differences between driver-created file obje
 -   [Driver-Created Versus Application-Created File Objects](driver-created-versus-application-created-file-objects.md)
 -   [Creating and Using Driver-Created File Objects](creating-and-using-driver-created-file-objects.md)
 
- 
+ 
 
- 
+ 
 
 
 

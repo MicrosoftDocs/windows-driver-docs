@@ -1,7 +1,6 @@
 ---
 title: WinDbg Preview - What's New 
 description: This topic provides inofmration on what's new in WinDbg preview debugger.
-ms.author: domars
 ms.date: 05/23/2018
 ms.topic: article
 ms.prod: windows-hardware
@@ -85,14 +84,14 @@ This version includes these updates.
 - Minor changes and bug fixes
 
 ---
- 
+ 
 ## See Also
 
 
 [https://blogs.msdn.microsoft.com/windbg/](https://blogs.msdn.microsoft.com/windbg/)
 
 [Debugging Using WinDbg Preview](debugging-using-windbg-preview.md)
- 
+ 
 
 
 

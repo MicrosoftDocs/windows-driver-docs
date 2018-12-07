@@ -1,6 +1,5 @@
 ---
 title: Registering for Target Device Change Notification
-author: windows-driver-content
 description: Registering for Target Device Change Notification
 ms.assetid: 5f7a9c44-c9a4-4ff8-a97d-ad2462b86af0
 keywords: ["notifications WDK PnP , target device changes", "target device change notifications WDK PnP", "EventCategoryTargetDeviceChange notification", "registering target device change notifications", "IoRegisterPlugPlayNotification"]
@@ -32,9 +31,9 @@ The following information applies to calling this routine for target device chan
 
 A driver removes a notification registration by calling [**IoUnregisterPlugPlayNotification**](https://msdn.microsoft.com/library/windows/hardware/ff550398) with the *NotificationEntry* returned by **IoRegisterPlugPlayNotification**. If the driver took out a reference on the file object when it registered for notification and that reference is still outstanding, the driver must release the reference after it removes the registration.
 
- 
+ 
 
- 
+ 
 
 
 

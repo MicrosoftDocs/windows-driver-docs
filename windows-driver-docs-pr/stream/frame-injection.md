@@ -1,6 +1,5 @@
 ---
 title: Frame Injection
-author: windows-driver-content
 description: Frame Injection
 ms.assetid: cdfb1763-92a8-4a60-8f49-2af34a8beca5
 keywords:
@@ -39,9 +38,9 @@ The diagram below shows an AVStream filter set composed of a source filter, an [
 
 ![diagram illustrating an avstream filter set](images/inject1.png)
 
- 
+ 
 
- 
+ 
 
 
 

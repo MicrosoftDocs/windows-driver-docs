@@ -49,9 +49,9 @@ A display driver must implement [**DrvNotify**](https://msdn.microsoft.com/libra
 
 See the [Plug and Play](https://msdn.microsoft.com/library/windows/hardware/ff547125) section for more information about the boot process.
 
- 
+ 
 
- 
+ 
 
 
 

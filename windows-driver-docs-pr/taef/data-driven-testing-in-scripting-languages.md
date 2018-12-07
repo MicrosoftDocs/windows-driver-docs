@@ -215,7 +215,7 @@ In the JScriptSampleTests, you can see an example of a data-driven class. Becaus
 
 The following parameter types are available for scripting languages. These are the types that you can specify in table based data-driven testing. The default parameter type is *String* or *BSTR* (representing *VT\_BSTR*).
 
-The section [Parameter Types in Table based DataSource](parameter-types-in-table-data-sources.md) shows how to view the available parameter types (in Native and Managed code) while authoring tests in a scripting langauge.
+The section [Parameter Types in Table based DataSource](parameter-types-in-table-data-sources.md) shows how to view the available parameter types (in Native and Managed code) while authoring tests in a scripting language.
 
 ## <span id="Executing_data-driven_scripts"></span><span id="executing_data-driven_scripts"></span><span id="EXECUTING_DATA-DRIVEN_SCRIPTS"></span>Executing data-driven scripts
 
@@ -288,9 +288,9 @@ te Examples\DataDrivenTest.wsc /select:"@Name='VBSampleTests::TestOne*' and @Dat
 
 Using PICT based and light weight data-driven tests in a script test is left as an exercise to the reader.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: .context (Set User-Mode Address Context)
 description: The .context command specifies which page directory of a process will be used for the user-mode address context, or displays the current user-mode address context.
 ms.assetid: f859b9bf-c05a-44cd-b6f0-8ff4561ddd4e
 keywords: ["Set User-Mode Address Context (.context) command", "addresses, Set User-Mode Address Context (.context) command", "context, Set User-Mode Address Context (.context) command", ".context (Set User-Mode Address Context) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -52,7 +51,7 @@ Specifies the base address for a page directory of a desired process. The user-m
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -122,9 +121,9 @@ PEB at 7FFDF000
         Environment:  0x10000
 ```
 
- 
+ 
 
- 
+ 
 
 
 

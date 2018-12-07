@@ -3,7 +3,6 @@ title: c (Compare Memory)
 description: The c command compares the values held in two memory areas.
 ms.assetid: caa02ec3-35d6-4d41-a777-daa264b0dd18
 keywords: ["c (Compare Memory) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -55,7 +54,7 @@ The starting address of the second memory range to be compared. The size of this
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -89,9 +88,9 @@ To compare **rgBuf1** and **rgBuf2**, use either of the following commands:
 0:000> c rgBuf1 L 0n100 rgBuf2
 ```
 
- 
+ 
 
- 
+ 
 
 
 

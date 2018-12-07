@@ -2,7 +2,6 @@
 title: Tools Included in Debugging Tools for Windows
 description: Debugging Tools for Windows includes several tools in addition to the debugging engine and the Debugging Environments. The tools are in the installation directory of Debugging Tools for Windows.
 ms.assetid: f5d761b9-866e-4948-978e-e95f8aed8b21
-ms.author: domars
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -103,9 +102,9 @@ The default installation directory for 64 bit OS installs for the debugging tool
 
 [Tools Related to Debugging Tools for Windows](tools-related-to-debugging-tools-for-windows.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -38,9 +38,9 @@ When the hardware event occurs and your driver's interrupt-service routine detec
 
 During this call, the port driver searches its event list for all events that match the call parameters and sends notification to the clients that are monitoring these events. In this example, pPE is a pointer to the **IPortEvents** object, and LINEOUT\_VOL is the node ID that the miniport driver assigns to the lineout-volume node. Unspecified parameters (such as the event-set GUID and pin ID in the preceding example) are treated as wildcards and always match the corresponding parameters in the list.
 
- 
+ 
 
- 
+ 
 
 
 

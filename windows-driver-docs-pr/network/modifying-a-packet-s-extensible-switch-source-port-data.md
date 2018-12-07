@@ -25,9 +25,9 @@ The extensible switch extension must follow these guidelines for modifying a pac
 
     However, there may be situations where the extension has to use the source port of **NDIS\_SWITCH\_DEFAULT\_PORT\_ID** for packets that it originates. For example, if the extension originates a control packet that has to be sent to its destination on the physical or virtual network, it should use **NDIS\_SWITCH\_DEFAULT\_PORT\_ID** for the source port identifier. This ensures that the packet will not be filtered and rejected by underlying extensions in the extensible switch driver stack.
 
- 
+ 
 
- 
+ 
 
 
 

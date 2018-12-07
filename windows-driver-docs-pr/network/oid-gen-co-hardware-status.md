@@ -1,6 +1,5 @@
 ---
 title: OID_GEN_CO_HARDWARE_STATUS
-author: windows-driver-content
 description: This topic describes the OID_GEN_CO_HARDWARE_STATUS object identifier (OID).
 ms.assetid: b846622a-a082-41e8-b32b-74c111b31f69
 keywords:

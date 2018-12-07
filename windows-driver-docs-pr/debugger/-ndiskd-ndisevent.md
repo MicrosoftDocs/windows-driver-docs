@@ -3,7 +3,6 @@ title: ndiskd.ndisevent
 description: The !ndiskd.ndisevent extension displays an NDIS debug event log.
 ms.assetid: E042CA22-6521-4DD4-9396-39EC587706D6
 keywords: ["ndiskd.ndisevent Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 
 **Note**  Third party network driver developers are not expected to manually use this extension command. You can run it to see the information it displays but you are not able to reuse the details it provides in your driver.
 
- 
+ 
 
 The **!ndiskd.ndisevent** extension displays an NDIS debug event log.
 
@@ -169,9 +168,9 @@ MINIPORT PM & PNP EVENTS
 
 [**!ndiskd.netadapter**](-ndiskd-netadapter.md)
 
- 
+ 
 
- 
+ 
 
 
 

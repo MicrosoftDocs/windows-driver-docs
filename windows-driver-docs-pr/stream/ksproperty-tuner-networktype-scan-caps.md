@@ -44,14 +44,14 @@ The KSPROPERTY\_TUNER\_NETWORKTYPE\_SCAN\_CAPS property describes the scanning c
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p>[<strong>KSPROPERTY_TUNER_NETWORKTYPE_SCAN_CAPS_S</strong>](https://msdn.microsoft.com/library/windows/hardware/ff565885)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565885" data-raw-source="[&lt;strong&gt;KSPROPERTY_TUNER_NETWORKTYPE_SCAN_CAPS_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565885)"><strong>KSPROPERTY_TUNER_NETWORKTYPE_SCAN_CAPS_S</strong></a></p></td>
 <td><p>KSPROPERTY_TUNER_NETWORKTYPE</p>
 <p>_SCAN_CAPS_S</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a KSPROPERTY\_TUNER\_NETWORKTYPE\_SCAN\_CAPS\_S structure that specifies the scanning capabilities for a network type.
 
@@ -83,9 +83,9 @@ Requirements
 
 [**KSPROPERTY\_TUNER\_NETWORKTYPE\_SCAN\_CAPS\_S**](https://msdn.microsoft.com/library/windows/hardware/ff565885)
 
- 
+ 
 
- 
+ 
 
 
 

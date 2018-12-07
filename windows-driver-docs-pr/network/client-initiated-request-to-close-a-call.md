@@ -44,9 +44,9 @@ NDIS can pass *ProtocolCmCloseCall* a pointer to a buffer containing data suppli
 
 The call manager or MCM driver must then initiate deactivation of the VC used for the call by respectively calling [**NdisCmDeactivateVc**](https://msdn.microsoft.com/library/windows/hardware/ff561657) or [**NdisMCmDeactivateVc**](https://msdn.microsoft.com/library/windows/hardware/ff562818)(see [Deactivating a VC](deactivating-a-vc.md)). The creator of the VC (client, call manager, or MCM driver) can then optionally initiate deletion of the VC (see [Deleting a VC](deleting-a-vc.md)).
 
- 
+ 
 
- 
+ 
 
 
 

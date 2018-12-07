@@ -26,9 +26,9 @@ If NDIS returns NDIS\_STATUS\_PENDING from **NdisOpenAdapterEx**, NDIS later cal
 
 Before the driver calls **NdisOpenAdapterEx**, the driver can pass the pointer at the *BindParameters* parameter of *ProtocolBindAdapterEx* to the [**NdisOpenConfigurationEx**](https://msdn.microsoft.com/library/windows/hardware/ff563717) function to read the configuration parameters that are associated with a binding. After a successful **NdisOpenAdapterEx** call, the driver can pass the handle at the *ProtocolBindingContext* parameter of **NdisOpenAdapterEx** to **NdisOpenConfigurationEx** to read the configuration parameters that are associated with a binding. For more information about **NdisOpenConfigurationEx**, see [Reading the Registry in NDIS 6.0 Protocol Drivers](reading-the-registry-in-an-ndis-6-0-protocol-driver.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: usbkd.usbhuberr
 description: The usbkd.usbhuberr command displays a USB hub error record.
 ms.assetid: 5BB87FA2-0531-400C-95B3-325EE4DDB649
 keywords: ["usbkd.usbhuberr Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -86,9 +85,9 @@ In the preceding output, `ffffe000011f8498` is the address of the exception list
 
 [Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: XPS Printing Features
-author: windows-driver-content
 description: XPS Printing Features
 ms.assetid: 5315a424-ea5a-4da3-bf51-80efa8f07758
 keywords:
@@ -26,9 +25,9 @@ The XPS print path and the XPSDrv printer drivers offer the following advantages
 
 [Extensible Architecture](extensible-architecture.md)
 
- 
+ 
 
- 
+ 
 
 
 

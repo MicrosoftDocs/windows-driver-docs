@@ -27,9 +27,9 @@ For more information about OID request handling in the miniport upper edge of an
 
 For more information about OID request handling in the protocol lower edge of an intermediate driver, see [Porting Protocol Driver OID Request Handling to NDIS 6.0](porting-protocol-driver-oid-request-handling-to-ndis-6-0.md).
 
- 
+ 
 
- 
+ 
 
 
 

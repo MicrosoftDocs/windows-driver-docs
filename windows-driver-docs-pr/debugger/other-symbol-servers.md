@@ -3,7 +3,6 @@ title: Other Symbol Servers
 description: Other Symbol Servers
 ms.assetid: 69d88a60-88b6-4118-9f8b-0d7b80bad1ab
 keywords: ["symbol servers, writing your own symbol server"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -40,9 +39,9 @@ The details of your symbol server installation will depend on your situation. Yo
 
 Depending on the technology used in your server, you may also need to install or access the symbol data itself.
 
- 
+ 
 
- 
+ 
 
 
 

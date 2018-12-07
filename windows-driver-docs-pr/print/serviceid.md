@@ -1,6 +1,5 @@
 ---
 title: ServiceID
-author: windows-driver-content
 description: ServiceID
 ms.assetid: ef7ff736-e5ec-47cf-b3b6-64988f43f594
 keywords:
@@ -17,9 +16,9 @@ The `ServiceID` command returns the service identifier (ID) in the form of the f
 
 For more information about function discovery keys, see the Microsoft Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Writing AdapterControl Routines
-author: windows-driver-content
 description: Writing AdapterControl Routines
 ms.assetid: a5a7501f-ba4f-441e-be07-6a1b7fac9938
 keywords: ["AdapterControl routines, writing", "adapter objects WDK kernel , writing AdapterControl routines", "DMA transfers WDK kernel , writing AdapterControl routines"]
@@ -20,9 +19,9 @@ When a driver calls [**AllocateAdapterChannel**](https://msdn.microsoft.com/libr
 
 If the driver's *AdapterControl* routine returns **KeepObject** or **DeallocateObjectKeepRegisters** (thereby retaining the system DMA controller channel or bus-master adapter for additional transfer operations), the driver's [*DpcForIsr*](https://msdn.microsoft.com/library/windows/hardware/ff544079) or [*CustomDpc*](https://msdn.microsoft.com/library/windows/hardware/ff542972) routine is responsible for releasing the adapter object or map registers by calling [**FreeAdapterChannel**](https://msdn.microsoft.com/library/windows/hardware/ff546507) or [**FreeMapRegisters**](https://msdn.microsoft.com/library/windows/hardware/ff546513) before the DPC routine completes the current IRP and returns control.
 
- 
+ 
 
- 
+ 
 
 
 

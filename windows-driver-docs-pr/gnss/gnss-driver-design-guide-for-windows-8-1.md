@@ -1,6 +1,5 @@
 ---
 title: GNSS driver design guide for Windows 8.1
-author: windows-driver-content
 description: This guide describes the design requirements and architecture of the GNSS device driver for Windows 8.1.
 ms.assetid: E43BE011-45AB-4AC5-8F6C-C1B29A60DB11
 ms.date: 04/20/2017
@@ -18,9 +17,9 @@ This guide describes the design requirements and architecture of the GNSS device
 -   [Writing a location sensor driver for Windows 8.1](writing-a-location-sensor-driver.md)
 -   [Geolocation driver sample for Windows 8.1](sensors-geolocation-driver-sample.md)
 
- 
+ 
 
- 
+ 
 
 
 

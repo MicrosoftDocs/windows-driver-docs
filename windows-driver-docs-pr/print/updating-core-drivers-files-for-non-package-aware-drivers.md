@@ -1,6 +1,5 @@
 ---
 title: Updating Core Drivers Files for Non-Package-Aware Drivers
-author: windows-driver-content
 description: Updating Core Drivers Files for Non-Package-Aware Drivers
 ms.assetid: ce5da376-edac-4cd1-8750-9981bb5b709d
 ms.date: 04/20/2017
@@ -18,9 +17,9 @@ For Windows Vista, avoid breaking up the core driver package and do not referenc
 
 For more information, see [Creating a Single Driver Package for Windows XP and Windows Vista](creating-a-single-driver-package-for-windows-xp-and-windows-vista.md).
 
- 
+ 
 
- 
+ 
 
 
 

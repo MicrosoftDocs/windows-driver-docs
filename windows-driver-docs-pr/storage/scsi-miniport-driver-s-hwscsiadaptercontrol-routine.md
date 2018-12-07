@@ -1,6 +1,5 @@
 ---
 title: SCSI Miniport Driver's HwScsiAdapterControl Routine
-author: windows-driver-content
 description: SCSI Miniport Driver's HwScsiAdapterControl Routine
 ms.assetid: ccc5aa02-415d-40d1-a1ed-c7d4d881f4ca
 keywords:
@@ -46,9 +45,9 @@ A miniport driver's *HwScsiAdapterControl* routine can support any or all of the
 
 See [**HwScsiAdapterControl**](https://msdn.microsoft.com/library/windows/hardware/ff557274) for more information.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -47,13 +47,13 @@ The KSPROPERTY\_TUNER\_MODE\_CAPS property describes the capabilities of a tunin
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p>[<strong>KSPROPERTY_TUNER_MODE_CAPS_S</strong>](https://msdn.microsoft.com/library/windows/hardware/ff565872)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565872" data-raw-source="[&lt;strong&gt;KSPROPERTY_TUNER_MODE_CAPS_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565872)"><strong>KSPROPERTY_TUNER_MODE_CAPS_S</strong></a></p></td>
 <td><p>ULONG</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a ULONG that specifies a tuner's tuning capabilities.
 
@@ -87,9 +87,9 @@ Requirements
 
 [**KSPROPERTY\_TUNER\_MODE\_CAPS\_S**](https://msdn.microsoft.com/library/windows/hardware/ff565872)
 
- 
+ 
 
- 
+ 
 
 
 

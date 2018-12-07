@@ -1,6 +1,5 @@
 ---
 title: Data Flow Using Isochronous Pipes
-author: windows-driver-content
 description: Data Flow Using Isochronous Pipes
 ms.assetid: a66f4191-53ce-4ca2-aae7-8fb24a1a9a16
 keywords:
@@ -26,7 +25,7 @@ USBCAMD2 begins streaming on the isochronous pipe by requesting two transfers of
 
 **Note**   Streaming on the isochronous pipe is independent of Microsoft DirectShow streaming.
 
- 
+ 
 
 Double-buffer isochronous transfer requests are continuously submitted to USBCAMD2 and stop only when one of the following two conditions occur:
 
@@ -40,9 +39,9 @@ While streaming is in progress, USBCAMD2 and the camera minidriver repeat the fo
 
 2.  After the camera minidriver has determined that a video frame is complete, USBCAMD2 calls the camera minidriver's [*CamProcessRawVideoFrameEx*](https://msdn.microsoft.com/library/windows/hardware/ff557625) callback function (from the context of a worker thread) to process the video frame if there is a need to perform a color space conversion or decompression. USBCAMD2 returns a completed raw frame to the *stream.sys* class driver to be processed by the camera minidriver at IRQL = PASSIVE\_LEVEL. If there is insufficient frame data or an error occurred during decompression due to bad data, for example, then the *BytesReturned* parameter to **CamProcessRawVideoFrameEx** must be set to 0.
 
- 
+ 
 
- 
+ 
 
 
 

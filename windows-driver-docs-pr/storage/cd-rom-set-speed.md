@@ -1,6 +1,5 @@
 ---
 title: CD-ROM Set Speed
-author: windows-driver-content
 description: CD-ROM Set Speed
 ms.assetid: 25a46b23-f823-4fc7-a370-cab1c9418a94
 keywords:
@@ -34,9 +33,9 @@ If an application changes the spindle speed with a SET CD SPEED command, the dev
 
 The SET STREAMING request works only on an MMC-compliant device. If an application sends this request to a device that is not MMC-compliant, the CD-ROM class driver will fail the request.
 
- 
+ 
 
- 
+ 
 
 
 

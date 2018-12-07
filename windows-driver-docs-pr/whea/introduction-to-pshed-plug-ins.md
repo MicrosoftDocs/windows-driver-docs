@@ -1,6 +1,5 @@
 ---
 title: Introduction to PSHED Plug-Ins
-author: windows-driver-content
 description: Introduction to PSHED Plug-Ins
 ms.assetid: 31c540ec-c1d0-48e3-9eab-b458a5213f7e
 keywords:
@@ -37,9 +36,9 @@ For each of these functional areas, a PSHED plug-in implements callback function
 
 A PSHED plug-in is intended to be implemented by platform vendors as a software interface to the hardware platform's hardware error reporting and recovery capabilities. A PSHED plug-in can interface with the platform firmware using whatever private interfaces or mechanisms are defined by the platform vendor. This allows the platform vendor to continue using existing firmware for hardware error handling. In time, Microsoft expects that more hardware error reporting and recovery capabilities will be standardized. At that point, the need for PSHED plug-ins for general error handling and reporting will diminish such that PSHED plug-ins will only be required for supporting vendor-specific features that provide additional value beyond the standard hardware error handling functionality.
 
- 
+ 
 
- 
+ 
 
 
 

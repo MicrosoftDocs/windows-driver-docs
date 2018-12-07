@@ -1,6 +1,5 @@
 ---
 title: Consumables
-author: windows-driver-content
 description: Consumables
 ms.assetid: e017a8e9-5460-4ba5-aa64-5dffd4f09bc9
 ms.date: 11/28/2017
@@ -18,9 +17,9 @@ The Consumables property contains information about all of the consumable suppli
 
 The Consumables property is the parent of the [\[Name\]](-name-.md) property.
 
- 
+ 
 
- 
+ 
 
 
 

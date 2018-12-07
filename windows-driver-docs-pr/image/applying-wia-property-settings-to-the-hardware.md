@@ -1,6 +1,5 @@
 ---
 title: Applying WIA Property Settings to the Hardware
-author: windows-driver-content
 description: Applying WIA Property Settings to the Hardware
 ms.assetid: adb85f77-1814-427b-8b75-0bfce4c8ca06
 ms.date: 04/20/2017
@@ -97,9 +96,9 @@ HRESULT _stdcall CWIADevice::drvWriteItemProperties(
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

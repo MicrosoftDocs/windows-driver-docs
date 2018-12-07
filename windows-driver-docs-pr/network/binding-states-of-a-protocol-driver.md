@@ -69,9 +69,9 @@ In the *Restarting* state, a protocol driver completes any operations that are r
 
 [NDIS Protocol Drivers](ndis-protocol-drivers2.md)
 
- 
+ 
 
- 
+ 
 
 
 

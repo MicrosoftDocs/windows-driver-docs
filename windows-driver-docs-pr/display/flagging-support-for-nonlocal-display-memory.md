@@ -24,9 +24,9 @@ A driver must inform DirectDraw (and DirectDraw applications) that it is AGP-com
 
 If running on an operating system that does not support AGP services, DirectDraw turns off the DDCAPS2\_NONLOCALVIDMEM capability bit and all associated nonlocal heaps.
 
- 
+ 
 
- 
+ 
 
 
 

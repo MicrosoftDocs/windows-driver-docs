@@ -1,6 +1,5 @@
 ---
 title: WIA Item Property and Location Changes
-author: windows-driver-content
 description: WIA Item Property and Location Changes
 ms.assetid: 4e8b3d2a-a28c-41d1-9c4b-8d85f28cf904
 ms.date: 04/20/2017
@@ -31,11 +30,11 @@ In operating systems before Windows Vista, the following WIA properties were loc
 
 **Note**   The duplication of WIA properties is needed only for scanners that support flatbed platen scanning or document feeder scanning. The paired properties have the same property identifier for compatibility. The driver can add WIA\_DPS\_*Xxx* properties for the root item and WIA\_IPS\_*Xxx* for other items.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

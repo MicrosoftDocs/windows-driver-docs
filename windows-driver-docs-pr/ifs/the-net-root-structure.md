@@ -1,6 +1,5 @@
 ---
 title: The NET_ROOT Structure
-author: windows-driver-content
 description: The NET_ROOT Structure
 ms.assetid: f7846343-9af6-4b7f-9c8d-190abb524946
 keywords:
@@ -54,9 +53,9 @@ The finalization of a NET_ROOT structure consists of two parts:
 
 There can be a delay between these two actions, and a field in the NET_ROOT structure prevents the first step from being duplicated.
 
- 
+ 
 
- 
+ 
 
 
 

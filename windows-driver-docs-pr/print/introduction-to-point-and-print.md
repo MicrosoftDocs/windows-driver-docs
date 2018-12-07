@@ -1,6 +1,5 @@
 ---
 title: Introduction to Point and Print
-author: windows-driver-content
 description: Introduction to Point and Print
 ms.assetid: 03902c64-29d7-4b59-a604-e282e4a2c7ae
 keywords:
@@ -33,9 +32,9 @@ When a user application calls the **AddPrinterConnection** function (described i
 
 For more information, see [Supporting Point and Print During Printer Connections](supporting-point-and-print-during-printer-connections.md).
 
- 
+ 
 
- 
+ 
 
 
 

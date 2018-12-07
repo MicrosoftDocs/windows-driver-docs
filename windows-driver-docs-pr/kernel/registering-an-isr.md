@@ -1,6 +1,5 @@
 ---
 title: Registering an ISR
-author: windows-driver-content
 description: Registering an ISR
 ms.assetid: 903e5664-2193-4456-b133-bb979d700bdf
 keywords: ["interrupt service routines WDK kernel , registering ISRs", "interrupt objects WDK kernel , registering ISRs", "ISRs WDK kernel , registering ISRs", "registering ISRs WDK kernel"]
@@ -23,9 +22,9 @@ On Windows Vista and later, **IoConnectInterruptEx** provides several different 
 
 On operating systems prior to Windows Vista, you can only use CONNECT\_FULLY\_SPECIFIED. If you specify CONNECT\_LINE\_BASED or CONNECT\_MESSAGE\_BASED, **IoConnectInterruptEx** returns an error. You can use this behavior to determine if you are running on Windows Vista or an earlier system. For more information, see [Using IoConnectInterruptEx Prior to Windows Vista](using-ioconnectinterruptex-prior-to-windows-vista.md).
 
- 
+ 
 
- 
+ 
 
 
 

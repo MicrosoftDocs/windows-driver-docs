@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_WAKE_PACKET_BITMAP_PATTERN_ID
-author: windows-driver-content
 description: WDI_TLV_WAKE_PACKET_BITMAP_PATTERN_ID is a TLV that contains a wake-on-LAN pattern ID.
 ms.assetid: 78807D91-189B-4E66-B3DC-500E9A59AEF2
 ms.date: 07/18/2017
@@ -33,7 +32,7 @@ The size (in bytes) of a UINT32.
 |--------|-----------------------------|
 | UINT32 | The wake-on-LAN pattern ID. |
 
- 
+ 
 
 Requirements
 ------------
@@ -64,9 +63,9 @@ Requirements
 
 [OID\_WDI\_SET\_ADD\_WOL\_PATTERN](https://msdn.microsoft.com/library/windows/hardware/dn925858)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -27,9 +27,9 @@ Some IRPs are passed all the way down the device stack to the physical device ob
 
 The IRP structure is self-contained in the sense that it holds all of the information that a driver needs to handle an I/O request. Some parts of the IRP structure hold information that is common to all of the participating drivers in the stack. Other parts of the IRP hold information that is specific to a particular driver in the stack.
 
- 
+ 
 
- 
+ 
 
 
 

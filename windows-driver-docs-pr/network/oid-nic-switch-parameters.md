@@ -1,6 +1,5 @@
 ---
 title: OID_NIC_SWITCH_PARAMETERS
-author: windows-driver-content
 description: An overlying driver issues an object identifier (OID) method request of OID_NIC_SWITCH_PARAMETERS to obtain the current configuration parameters of a specified NIC switch on a network adapter.
 ms.assetid: 3F2FF2C0-8710-4243-8583-CD80F244FCFB
 ms.date: 08/08/2017
@@ -28,7 +27,7 @@ The overlying driver specifies the NIC switch for the OID method or set request 
 
 **Note**  Starting with Windows Server 2012, Windows supports only the default NIC switch on the network adapter. The **SwitchId** member of the [**NDIS\_NIC\_SWITCH\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/hh451587) structure must be set to NDIS\_DEFAULT\_SWITCH\_ID.
 
- 
+ 
 
 Remarks
 -------
@@ -39,13 +38,13 @@ The overlying driver issues OID\_NIC\_SWITCH\_PARAMETERS requests in the followi
 
     **Note**  NDIS handles OID method requests of OID\_NIC\_SWITCH\_PARAMETERS for the PF miniport driver.
 
-     
+     
 
 -   The overlying driver issues an OID set request of OID\_NIC\_SWITCH\_PARAMETERS to change the current parameters of a specified NIC switch. For more information, see [Setting the Parameters of a NIC Switch](https://msdn.microsoft.com/library/windows/hardware/hh440227).
 
     **Note**  The PF miniport driver handles OID set requests of OID\_NIC\_SWITCH\_PARAMETERS.
 
-     
+     
 
 ### Return Status Codes
 
@@ -65,7 +64,7 @@ NDIS or the PF miniport driver returns the following status codes for set or met
 <tbody>
 <tr class="odd">
 <td><p>NDIS_STATUS_SUCCESS</p></td>
-<td><p>The request completed successfully. The <strong>InformationBuffer</strong> points to an [<strong>NDIS_NIC_SWITCH_CAPABILITIES</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566583) structure.</p></td>
+<td><p>The request completed successfully. The <strong>InformationBuffer</strong> points to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff566583" data-raw-source="[&lt;strong&gt;NDIS_NIC_SWITCH_CAPABILITIES&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566583)"><strong>NDIS_NIC_SWITCH_CAPABILITIES</strong></a> structure.</p></td>
 </tr>
 <tr class="even">
 <td><p>NDIS_STATUS_NOT_SUPPORTED</p></td>
@@ -73,11 +72,11 @@ NDIS or the PF miniport driver returns the following status codes for set or met
 </tr>
 <tr class="odd">
 <td><p>NDIS_STATUS_INVALID_PARAMETER</p></td>
-<td><p>One or more of the members of the [<strong>NDIS_NIC_SWITCH_PARAMETERS</strong>](https://msdn.microsoft.com/library/windows/hardware/hh451587) structure have invalid values.</p></td>
+<td><p>One or more of the members of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451587" data-raw-source="[&lt;strong&gt;NDIS_NIC_SWITCH_PARAMETERS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh451587)"><strong>NDIS_NIC_SWITCH_PARAMETERS</strong></a> structure have invalid values.</p></td>
 </tr>
 <tr class="even">
 <td><p>NDIS_STATUS_INVALID_LENGTH</p></td>
-<td><p>The information buffer was too short. NDIS or the PF miniport driver sets the <strong>DATA.METHOD_INFORMATION.BytesNeeded</strong> member (for OID method requests) or <strong>DATA.SET_INFORMATION.BytesNeeded</strong> member (for OID set requests) in the [<strong>NDIS_OID_REQUEST</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure to the minimum buffer size that is required.</p></td>
+<td><p>The information buffer was too short. NDIS or the PF miniport driver sets the <strong>DATA.METHOD_INFORMATION.BytesNeeded</strong> member (for OID method requests) or <strong>DATA.SET_INFORMATION.BytesNeeded</strong> member (for OID set requests) in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710" data-raw-source="[&lt;strong&gt;NDIS_OID_REQUEST&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566710)"><strong>NDIS_OID_REQUEST</strong></a> structure to the minimum buffer size that is required.</p></td>
 </tr>
 <tr class="odd">
 <td><p>NDIS_STATUS_REINIT_REQUIRED</p></td>
@@ -90,7 +89,7 @@ NDIS or the PF miniport driver returns the following status codes for set or met
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -132,9 +131,9 @@ Requirements
 
 [*ProtocolBindAdapterEx*](https://msdn.microsoft.com/library/windows/hardware/ff570220)
 
- 
+ 
 
- 
+ 
 
 
 

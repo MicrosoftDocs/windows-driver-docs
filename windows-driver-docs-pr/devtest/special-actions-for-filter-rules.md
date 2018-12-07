@@ -27,9 +27,9 @@ Creates a multi-line rule that is connected by the AND operation. All conditions
 
 Most filter rules are effective immediately. Filters rules that use the **Discard** action are effective only on messages that arrive after the rule is applied. To apply a **Discard** rule to an existing log file, [save the workspace](saving-or-resaving-a-workspace.md), [remove the trace session](removing-a-trace-session.md), and then [open the workspace](opening-a-workspace.md).
 
- 
+ 
 
- 
+ 
 
 
 

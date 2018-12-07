@@ -36,9 +36,9 @@ A connection-oriented miniport driver must register the following *MiniportXxx* 
 
 For more information about registering these functions, see [**NdisMRegisterMiniportDriver**](https://msdn.microsoft.com/library/windows/hardware/ff563654).
 
- 
+ 
 
- 
+ 
 
 
 

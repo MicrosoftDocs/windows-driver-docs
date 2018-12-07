@@ -1,6 +1,5 @@
 ---
 title: Segmentation Filter Examples
-author: windows-driver-content
 description: Segmentation Filter Examples
 ms.assetid: 4e2ab26b-c544-4cf0-801b-89e014a9d58f
 ms.date: 04/20/2017
@@ -27,9 +26,9 @@ This section includes the following examples:
 
 [Example: DownloadPreviewImage](example--downloadpreviewimage.md)
 
- 
+ 
 
- 
+ 
 
 
 

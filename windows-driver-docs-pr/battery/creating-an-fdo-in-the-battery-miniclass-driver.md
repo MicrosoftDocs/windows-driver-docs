@@ -74,9 +74,9 @@ The miniclass driver should create an FDO and attach it to the device stack for 
 
     Clearing the DO\_DEVICE\_INITIALIZING flag allows the device object to be opened subsequently by components higher in the device stack.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,7 +1,6 @@
 ---
 Description: The easiest way to write a Windows desktop app that communicates with a USB device, is by using the C/C++ WinUSB template.
 title: Write a Windows desktop app based on the WinUSB template
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -19,7 +18,7 @@ The easiest way to write a Windows desktop app that communicates with a USB devi
 ## Prerequisites
 
 
--   To set up the integrated development environment, first install Microsoft Visual Studio Ultimate 2012 or Microsoft Visual Studio Professional 2012 and then install the WDK. You can find information about how to get Visual Studio and the WDK [here](http://go.microsoft.com/fwlink/p/?linkid=239721).
+-   To set up the integrated development environment, first install Microsoft Visual Studio Ultimate 2012 or Microsoft Visual Studio Professional 2012 and then install the WDK. You can find information about how to get Visual Studio and the WDK [here](http://go.microsoft.com/fwlink/p/?linkid=239721).
 -   Debugging Tools for Windows is included when you install the WDK. For more information, see [Download and Install Debugging Tools for Windows](http://go.microsoft.com/fwlink/p/?linkid=235427).
 
 ## Creating a WinUSB application
@@ -48,7 +47,7 @@ To create an application from the template:
 
     `%DeviceName% =USB_Install, USB\VID_vvvv&PID_pppp`
 
-8.  Replace VID\_vvvv&PID\_pppp with the hardware ID for you device. Get the hardware ID from Device Manager. In Device Manager, view the device properties. On the **Details** tab, view the **Hardware Ids** property value.
+8.  Replace VID\_vvvv&PID\_pppp with the hardware ID for your device. Get the hardware ID from Device Manager. In Device Manager, view the device properties. On the **Details** tab, view the **Hardware Ids** property value.
 9.  In the **Solution Explorer** window, right-click **Solution 'USB Application1' (2 projects)**, and choose **Configuration Manager**. Choose a configuration and platform for both the application project and the package project. In this exercise, we choose Win8.1 Debug and x64, as shown in the following screen shot.
 
     ![winusb application template](images/winusb-template2.png)
@@ -69,11 +68,8 @@ You can deploy, install, load, and debug your application and the driver by foll
 -   **Two computer setup**
 
     1.  Provision your target computer by following the instructions in [Provision a computer for driver deployment and testing](https://msdn.microsoft.com/library/windows/hardware/dn745909).
-        **Note**  
-        Provisioning creates a user on the target machine named, WDKRemoteUser. After provisioning is complete you will see the user switch to WDKRemoteUser. Provisioning also installs the required debuggers, enables test signing for drivers, and so on.
-
-         
-
+        **Note**  
+        Provisioning creates a user on the target machine named, WDKRemoteUser. After provisioning is complete you will see the user switch to WDKRemoteUser. 
     2.  On the host computer, open your solution in Visual Studio.
     3.  In main.cpp add this line before the OpenDevice call.
 
@@ -99,55 +95,52 @@ You can deploy, install, load, and debug your application and the driver by foll
 
         ![winusb template debug setting](images/winusb-template5.png)
 
-    11. Select **Build Solution** from the **Build** menu. Visual Studio displays build progress in the **Output** window. (If the **Output** window is not visible, choose **Output** from the **View** menu.) In this exercise, we've build the project for an x-64 system running Windows 8.1.
+    11. Select **Build Solution** from the **Build** menu. Visual Studio displays build progress in the **Output** window. (If the **Output** window is not visible, choose **Output** from the **View** menu.) In this exercise, we've build the project for an x-64 system running Windows 8.1.
 
-    On the target computer, you will see driver install scripts running. The driver files are copied to the %Systemdrive%\\drivertest\\drivers folder on the target computer. Verify that the .inf, .cat, test cert, and .sys files, and any other necessary files, are present %systemdrive%\\drivertest\\drivers folder. The device must appear in Device Manager without errors.
+On the target computer, you will see driver install scripts running. The driver files are copied to the %Systemdrive%\\drivertest\\drivers folder on the target computer. Verify that the .inf, .cat, test cert, and .sys files, and any other necessary files, are present %systemdrive%\\drivertest\\drivers folder. The device must appear in Device Manager without errors.
 
-    On the host computer, you will see this message in the **Output** window.
+On the host computer, you will see this message in the **Output** window.
 
-    ``` syntax
-    Deploying driver files for project 
-    "<path>\visual studio 12\Projects\USB Application1\USB Application1 Package\USB Application1 Package.vcxproj".  
-    Deployment may take a few minutes...
-    ========== Build: 1 succeeded, 0 failed, 1 up-to-date, 0 skipped ==========
-    ```
+```syntax
+Deploying driver files for project 
+"<path>\visual studio 12\Projects\USB Application1\USB Application1 Package\USB Application1 Package.vcxproj".  
+Deployment may take a few minutes...
+========== Build: 1 succeeded, 0 failed, 1 up-to-date, 0 skipped ==========
+```
 
-    **To debug the application**
+**To debug the application**
 
-    1.  On the host computer, navigate to **x64 &gt; Win8.1Debug** in the solution folder.
-    2.  Copy the application executable, UsbApplication1.exe to the target computer.
-    3.  On the target computer launch the application.
-    4.  On the host computer, from the **Debug** menu, select **Attach to process**.
-    5.  In the window, select **Windows User Mode Debugger** (Debugging Tools for Windows) as the transport and the name of the target computer, in this case dbg-target, as the qualifier as shown in this image.
+1.  On the host computer, navigate to **x64 &gt; Win8.1Debug** in the solution folder.
+2.  Copy the application executable, UsbApplication1.exe to the target computer.
+3.  On the target computer launch the application.
+4.  On the host computer, from the **Debug** menu, select **Attach to process**.
+5.  In the window, select **Windows User Mode Debugger** (Debugging Tools for Windows) as the transport and the name of the target computer, in this case dbg-target, as the qualifier as shown in this image.
 
-        ![winusb template debug setting](images/winusb-template6.png)
+    ![winusb template debug setting](images/winusb-template6.png)
 
-    6.  Select the application from the list of **Available Processes** and click **Attach**. You can now debug using **Immediate Window** or by using the options in **Debug** menu.
+6.  Select the application from the list of **Available Processes** and click **Attach**. You can now debug using **Immediate Window** or by using the options in **Debug** menu.
 
-    The preceding instructions debug the application by using **Debugging Tools for Windows – Remote Debugger**. If you want to use the **Remote Windows Debugger** (the debugger that is included with Visual Studio), then follow these instructions:
+The preceding instructions debug the application by using **Debugging Tools for Windows – Remote Debugger**. If you want to use the **Remote Windows Debugger** (the debugger that is included with Visual Studio), then follow these instructions:
 
-    1.  On the target computer, add msvsmon.exe to the list of apps allowed through Firewall.
-    2.  Launch Visual Studio Remote Debugging Monitor located in C:\\DriverTest\\msvsmon\\msvsmon.exe.
-    3.  Create a working folder, such as, C:\\remotetemp.
-    4.  Copy the application executable, UsbApplication1.exe to the working folder on the target computer.
-    5.  On the host computer, in Visual Studio, right-click the **USB Application1 Package** project, and select **Unload Project**.
-    6.  Right-click the **USB Application1** project, in project properties expand the **Configuration Properties** node and click **Debugging**.
-    7.  Change **Debugger to launch** to **Remote Windows Debugger**.
-    8.  Change the project settings to run the executable on a remote computer by following the instructions given in [Remote Debugging of a Project Built Locally](https://msdn.microsoft.com/library/vstudio/8x6by8d2.aspx). Make sure that **Working Directory** and **Remote Command** properties reflect the folder on the target computer.
-    9.  To debug the application, in the **Build** menu, select **Start Debugging**, or press **F5.**
+1.  On the target computer, add msvsmon.exe to the list of apps allowed through Firewall.
+2.  Launch Visual Studio Remote Debugging Monitor located in C:\\DriverTest\\msvsmon\\msvsmon.exe.
+3.  Create a working folder, such as, C:\\remotetemp.
+4.  Copy the application executable, UsbApplication1.exe to the working folder on the target computer.
+5.  On the host computer, in Visual Studio, right-click the **USB Application1 Package** project, and select **Unload Project**.
+6.  Right-click the **USB Application1** project, in project properties expand the **Configuration Properties** node and click **Debugging**.
+7.  Change **Debugger to launch** to **Remote Windows Debugger**.
+8.  Change the project settings to run the executable on a remote computer by following the instructions given in [Remote Debugging of a Project Built Locally](https://msdn.microsoft.com/library/vstudio/8x6by8d2.aspx). Make sure that **Working Directory** and **Remote Command** properties reflect the folder on the target computer.
+9.  To debug the application, in the **Build** menu, select **Start Debugging**, or press **F5.**
+
 -   **Single computer setup:**
 
-    1.  To build your application and the driver installation package, choose **Build Solution** from the **Build** menu. Visual Studio displays build progress in the **Output** window, as shown in the following screen shot. (If the **Output** window is not visible, choose **Output** from the **View** menu.) In this exercise, we've build the project for an x-64 system running Windows 8.1.
+    1.  To build your application and the driver installation package, choose **Build Solution** from the **Build** menu. Visual Studio displays build progress in the **Output** window, as shown in the following screen shot. (If the **Output** window is not visible, choose **Output** from the **View** menu.) In this exercise, we've build the project for an x-64 system running Windows 8.1.
     2.  To see the built driver package, navigate in Windows Explorer to your USB Application1 folder, and then navigate to **x64 &gt; Win8.1Debug &gt; USB Application1 Package**. The driver package contains several files: USBApplication1.inf is an information file that Windows uses when you install the driver, usbapplication1.cat is a catalog file that the installer uses to verify the test signature for the driver package. The other file is a co-installer for the Windows Driver Frameworks (WDF). These files are shown in the following screen shot.
 
         ![winusb application template](images/winusb-template3.png)
 
-        **Note**  There is no driver file included in the package. That is because the INF file references the in-box driver, Winusb.sys, found in Windows\\System32 folder.
-
-         
-
+        **Note**  There is no driver file included in the package. That is because the INF file references the in-box driver, Winusb.sys, found in Windows\\System32 folder.
     3.  Manually install the driver. In Device Manager, update the driver by specifying the INF in the package. Point to the driver package located in the solution folder, shown in the preceding section.
-
     4.  Right-click the **USB Application1** project, in project properties expand the **Configuration Properties** node and click **Debugging**.
     5.  Change **Debugger to launch** to **Local Windows Debugger**.
     6.  7.  Right-click the USB Application1 Package project, and select **Unload Project**.
@@ -344,7 +337,7 @@ In the preceding function, the application gets the device path by calling these
 
     [**SetupDiEnumDeviceInterfaces**](https://msdn.microsoft.com/library/windows/hardware/ff551015) looks up the device information set array for the specified index of the device interface and fills the initialized [**SP\_DEVICE\_INTERFACE\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552342) structure with basic data about the interface.
 
-    **Note**   To enumerate all the device interfaces in the device information set, call [**SetupDiEnumDeviceInterfaces**](https://msdn.microsoft.com/library/windows/hardware/ff551015) in a loop until the function returns **FALSE** and the error code for the failure is ERROR\_NO\_MORE\_ITEMS. The ERROR\_NO\_MORE\_ITEMS error code can be retrieved by calling **GetLastError**. With each iteration, increment the member index.
+    **Note**   To enumerate all the device interfaces in the device information set, call [**SetupDiEnumDeviceInterfaces**](https://msdn.microsoft.com/library/windows/hardware/ff551015) in a loop until the function returns **FALSE** and the error code for the failure is ERROR\_NO\_MORE\_ITEMS. The ERROR\_NO\_MORE\_ITEMS error code can be retrieved by calling **GetLastError**. With each iteration, increment the member index.
 
     Alternately, you can call [**SetupDiEnumDeviceInfo**](https://msdn.microsoft.com/library/windows/hardware/ff551010) that enumerates the device information set and returns information about device interface elements, specified by the index, in a caller-allocated [**SP\_DEVINFO\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552344) structure. You can then pass a reference to this structure in the *DeviceInfoData* parameter of the [**SetupDiEnumDeviceInterfaces**](https://msdn.microsoft.com/library/windows/hardware/ff551015) function.
 

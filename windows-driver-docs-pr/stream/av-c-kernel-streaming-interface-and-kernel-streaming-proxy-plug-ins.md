@@ -1,6 +1,5 @@
 ---
 title: AV/C kernel interface and streaming proxy plug-ins
-author: windows-driver-content
 description: Provides information about AV/C kernel-streaming interface and kernel-streaming proxy plug-ins
 ms.assetid: 0831d917-5afc-4c0c-832a-c2b2669b8c22
 keywords:
@@ -29,7 +28,7 @@ The KS proxy filter can be extended with proxy plug-ins, provided by Microsoft o
 
 A general way to directly access the property and event sets remains available. The **IAMExtTransport** interface (used for tape subunits) is an example of an interface that is implemented in a proxy plug-in. The plug-in can also include property pages that provide a user interface to control the device. These property pages are generally used for testing purposes rather than for end-user device interaction. The GraphEdit or AMCap utilities can be used to test the plug-in's KS properties. These utilities are included in both the WDK and Windows SDK.
 
- 
+ 
 
 
 

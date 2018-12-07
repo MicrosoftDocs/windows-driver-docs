@@ -1,6 +1,5 @@
 ---
 title: GUID_NDIS_STATUS_MEDIA_SPECIFIC_INDICATION_EX
-author: windows-driver-content
 description: This topic describes the GUID_NDIS_STATUS_MEDIA_SPECIFIC_INDICATION_EX GUID for the NDIS WMI interface.
 ms.assetid: 34839471-5b3b-4a95-a610-bc35e7774c14
 keywords:

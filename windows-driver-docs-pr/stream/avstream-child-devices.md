@@ -1,6 +1,5 @@
 ---
 title: AVStream Child Devices
-author: windows-driver-content
 description: AVStream Child Devices
 ms.assetid: 4b2528d7-acc7-40eb-a351-64d8564c7a13
 keywords:
@@ -105,11 +104,11 @@ AVStream\\MyCrossbar
 **Note**   In DirectX 9.0 and later, the legacy hardware ID, AVStream\\*&lt;pnpid&gt;*, is still reported as the lowest rank compatible ID. As a result, legacy drivers continue to work unmodified on these platforms.
 However, as of the DirectX 9.0 release, Microsoft recommends that vendors writing new or revised drivers that leverage the AVStream class bus enumerator use the new hardware ID formats. Drivers can support platforms running earlier versions of AVStream by including the old ID in the compatible IDs list in the INF file.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

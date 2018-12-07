@@ -1,6 +1,5 @@
 ---
 title: Performing Diagnostics on a WIA Device
-author: windows-driver-content
 description: Performing Diagnostics on a WIA Device
 ms.assetid: 15962c49-f03c-409b-b138-033893a50ec2
 ms.date: 04/20/2017
@@ -47,9 +46,9 @@ STDMETHODIMP CWIADevice::Diagnostic(LPSTI_DIAG pBuffer)
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

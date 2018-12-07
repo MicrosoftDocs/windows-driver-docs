@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_P2P_SERVICE_NAME_HASH
-author: windows-driver-content
 description: WDI_TLV_P2P_SERVICE_NAME_HASH is a TLV that contains the hash of a service name.
 ms.assetid: C6204FA9-BDCB-4BF7-8590-FA019B0E41EC
 ms.date: 07/18/2017
@@ -31,7 +30,7 @@ The size (in bytes) of a [**WDI\_P2P\_SERVICE\_NAME\_HASH**](https://msdn.micros
 |-------------------------------------------------------------------------|----------------------------------|
 | [**WDI\_P2P\_SERVICE\_NAME\_HASH**](https://msdn.microsoft.com/library/windows/hardware/dn926103) | The hash of a WFDS Service Name. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

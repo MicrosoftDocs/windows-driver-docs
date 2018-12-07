@@ -48,13 +48,13 @@ The KSPROPERTY\_SYNTH\_MASTERCLOCK property is used to get the master clock time
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p>[<strong>KSPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff564262)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564262" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564262)"><strong>KSPROPERTY</strong></a></p></td>
 <td align="left"><p>ULONGLONG</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is of type ULONGLONG and represents the master clock time. This time is specified in 100-nanosecond units.
 
@@ -64,9 +64,9 @@ A KSPROPERTY\_SYNTH\_MASTERCLOCK property request returns STATUS\_SUCCESS to ind
 
 For more information, see [Master Clocks](https://msdn.microsoft.com/library/windows/hardware/ff567717).
 
- 
+ 
 
- 
+ 
 
 
 

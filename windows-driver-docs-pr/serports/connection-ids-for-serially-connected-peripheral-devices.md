@@ -1,6 +1,5 @@
 ---
 title: Connection IDs for Serially Connected Peripheral Devices
-author: windows-driver-content
 description: If you write a driver for a peripheral device that is connected to a serial port managed by SerCx2, the list of hardware resources that the driver receives includes a connection ID that encapsulates the device connection information from the platform firmware.
 ms.assetid: 9A688552-DFAF-48A1-935D-70C3B13F30EC
 ms.date: 04/20/2017
@@ -28,9 +27,9 @@ Immediately after opening a serial port, a client should assume that the port is
 
 To configure a serial port for operation, the client sends I/O control (IOCTL) requests to the serial controller. Typically, the client sends an [**IOCTL\_SERIAL\_APPLY\_DEFAULT\_CONFIGURATION**](https://msdn.microsoft.com/library/windows/hardware/hh406621) request to the controller to set the port to its default configuration. If necessary, the client can send additional serial IOCTLs to override one or more default configuration settings. For example, Windows defines serial IOCTLs to change the baud rate, the flow-control parameters, the line-control settings, and the time-out values for read and write requests. For a list of serial IOCTLs that are supported by SerCx2, see [Serial I/O Request Interface](serial-i-o-request-interface.md).
 
- 
+ 
 
- 
+ 
 
 
 

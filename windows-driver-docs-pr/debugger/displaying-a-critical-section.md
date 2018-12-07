@@ -3,7 +3,6 @@ title: Displaying a Critical Section
 description: Displaying a Critical Section
 ms.assetid: d55971f6-9112-417d-8fb6-e299c7fc90a7
 keywords: ["critical section", "critical section, overview"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -205,9 +204,9 @@ In this example, the first bit is 0 and therefore the critical section is locked
 
 For information about how to debug critical section time outs, see [Critical Section Time Outs](critical-section-time-outs.md). For general information about critical sections, see the Microsoft Windows SDK, the Windows Driver Kit (WDK), or *Microsoft Windows Internals* by Mark Russinovich and David Solomon. (These resources may not be available in some languages and countries.)
 
- 
+ 
 
- 
+ 
 
 
 

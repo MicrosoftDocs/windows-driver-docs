@@ -15,15 +15,15 @@ To install a catalog file for a non-PnP driver that is released to the public, a
 
 **Note**   In general, a redistributable installation application cannot use the [**SignTool**](https://msdn.microsoft.com/library/windows/hardware/ff551778) tool to install a catalog file because SignTool is not a redistributable tool.
 
- 
+ 
 
 **Tip**   Using embedded signatures is generally easier and more efficient than by using a signed catalog file. For more information about the advantages and disadvantages of using embedded signatures versus signed catalog files, see [Test Signing a Driver](https://msdn.microsoft.com/windows-drivers/develop/signing_a_driver).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

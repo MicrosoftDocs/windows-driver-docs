@@ -1,6 +1,5 @@
 ---
 title: Installing a UMDF Filter Driver
-author: windows-driver-content
 description: A filter driver can support a specific device or all devices in a setup class.
 ms.assetid: AE6D4E36-B758-451A-983E-6F0D7ADFD7A7
 ms.date: 04/20/2017
@@ -61,9 +60,9 @@ As you structure your device stack, keep in mind that the framework currently su
             0);
     ```
 
- 
+ 
 
- 
+ 
 
 
 

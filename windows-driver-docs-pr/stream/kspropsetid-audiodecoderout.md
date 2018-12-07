@@ -22,9 +22,9 @@ DVD decoder minidrivers should implement support for the following audio stream 
 
 [**KSPROPERTY\_AUDDECOUT\_CUR\_MODE**](ksproperty-auddecout-cur-mode.md)
 
- 
+ 
 
- 
+ 
 
 
 

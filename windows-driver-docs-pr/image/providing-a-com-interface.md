@@ -1,6 +1,5 @@
 ---
 title: Providing a COM Interface
-author: windows-driver-content
 description: Providing a COM Interface
 ms.assetid: c3e1578e-26f1-4fe3-b56d-a2baacb8e4c0
 ms.date: 04/20/2017
@@ -25,9 +24,9 @@ The minidriver exports these interface identifiers in response to the WIA servic
 
 For examples of how these interfaces are implemented, see the *wiascanr* scanner sample minidriver files *wiascanr.h*, *iwiaminidrv.cpp* and *istiusd.cpp or s*ee the *wiacam* camera sample minidriver files *IWiaMiniDrv.cpp* and *IStiUSD.cpp*.
 
- 
+ 
 
- 
+ 
 
 
 

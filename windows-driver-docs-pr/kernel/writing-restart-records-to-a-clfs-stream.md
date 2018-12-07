@@ -1,6 +1,5 @@
 ---
 title: Writing Restart Records to a CLFS Stream
-author: windows-driver-content
 description: Writing Restart Records to a CLFS Stream
 ms.assetid: ae341d7e-37b2-4880-948c-e78e29278c64
 keywords: ["Common Log File System WDK kernel , restart records", "CLFS WDK kernel , restart records", "restart records WDK CLFS", "checkpoints WDK CLFS"]
@@ -20,9 +19,9 @@ Typically, restart records are written to a stream periodically to create checkp
 
 If you want to write a restart record to a stream and change the base LSN of the stream at the same time, set the *plsnBase* parameter of **ClfsWriteRestartArea** to the new base LSN.
 
- 
+ 
 
- 
+ 
 
 
 

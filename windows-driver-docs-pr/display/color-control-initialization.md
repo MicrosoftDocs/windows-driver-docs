@@ -28,9 +28,9 @@ A driver's [*DdControlColor*](https://msdn.microsoft.com/library/windows/hardwar
 
 -   The [**DdGetDriverInfo**](https://msdn.microsoft.com/library/windows/hardware/ff549404) callback must be called with the GUID\_ColorControlCallbacks GUID specified. The driver must fill in a [**DD\_COLORCONTROLCALLBACKS**](https://msdn.microsoft.com/library/windows/hardware/ff550521) structure with the appropriate driver callbacks and flags set, then copy this structure to the **lpvData** member of the input structure.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Using Wmimofck.exe
-author: windows-driver-content
 description: Using Wmimofck.exe
 ms.assetid: cbf735c4-1c0d-4ff3-8a5c-b9d1de84bca4
 keywords: ["WMI WDK kernel , Wmimofck.exe utility", "Wmimofck.exe utility"]
@@ -38,9 +37,9 @@ If the **-w** parameter is specified, a set of HTML files are generated that cre
 
 The **-y** and **-z** flags can only be used together. The **-y** specifies a file containing language-independent WMI class declarations, and **-z** specifies the class amendments for a particular language. The command *wmimofck localizedfile* **-y***mof* **-z***mfl* merges the *mof* and *mfl* files to form the complete localized version of MOF file. See [Building and Deploying the Localized MOF File](building-and-deploying-the-localized-mof-file.md) for details.
 
- 
+ 
 
- 
+ 
 
 
 

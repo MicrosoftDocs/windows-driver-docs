@@ -1,7 +1,6 @@
 ---
 Description: The USBLPM tool monitors the U0/U1/U2/U3 power states of USB 3.0 ports. 
 title: USBLPM
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -49,7 +48,7 @@ To test a hub, remove all devices attached to it and run the test. Then, attach 
 
 **Note**  Do not change the device topology while running the test. The behavior of the tool is undefined if the configuration is changed dynamically.
 
- 
+ 
 
 ### Configuring U1/U2 states
 
@@ -75,7 +74,7 @@ After you have finished testing with USBLPM, enable selective suspend for the hu
 
 **Note**  USBLPM currently does not test USB 2.1 LPM.
 
- 
+ 
 
 ## Related topics
 [USB test tools](usb-test-tools.md)  

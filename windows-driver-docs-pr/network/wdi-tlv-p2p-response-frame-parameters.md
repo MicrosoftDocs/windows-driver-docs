@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_P2P_RESPONSE_FRAME_PARAMETERS
-author: windows-driver-content
 description: WDI_TLV_P2P_RESPONSE_FRAME_PARAMETERS is an unused TLV.
 ms.assetid: DA2F2BA8-4F30-4F10-8A0C-6A950CB933EE
 ms.date: 07/18/2017
@@ -38,9 +37,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

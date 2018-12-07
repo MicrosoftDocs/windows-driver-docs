@@ -1,6 +1,5 @@
 ---
 title: NDIS_STATUS_WWAN_UICC_RESET_INFO
-author: windows-driver-content
 description: NDIS_STATUS_WWAN_UICC_RESET_INFO
 ms.assetid: ADA3ADC9-82AD-423A-ABA4-902EAF5F5C74
 keywords:

@@ -1,6 +1,5 @@
 ---
 title: Using Device Interfaces
-author: windows-driver-content
 description: Using Device Interfaces
 ms.assetid: 98199220-947e-462e-a50c-85d81ca50108
 keywords:
@@ -64,19 +63,19 @@ The following code example shows how a local UMDF 2 driver registers for notific
             MyKdPrint( ("WdfDeviceCreateDeviceInterface failed 0x%x\n", status));
             return status;
         }
-    
+
     ```
 
 2.  The local driver calls [**CM\_Register\_Notification**](https://msdn.microsoft.com/library/windows/hardware/hh780224) from [*EvtDriverDeviceAdd*](https://msdn.microsoft.com/library/windows/hardware/ff541693) to register for notification when a device interface is available. Provide a pointer to a notification callback routine that the framework calls when device interfaces are available.
     ```cpp
     DWORD cmRet;
         CM_NOTIFY_FILTER cmFilter;
-       
+
         ZeroMemory(&cmFilter, sizeof(cmFilter));
         cmFilter.cbSize = sizeof(cmFilter);
         cmFilter.FilterType = CM_NOTIFY_FILTER_TYPE_DEVICEINTERFACE;
         cmFilter.u.DeviceInterface.ClassGuid = GUID_DEVINTERFACE_MY_HIDFILTER_DRIVER;
-        
+
         cmRet = CM_Register_Notification(
                     &cmFilter,                     // PCM_NOTIFY_FILTER pFilter,
                     (PVOID) hDevice,               // PVOID pContext,
@@ -106,22 +105,22 @@ The following code example shows how a local UMDF 2 driver registers for notific
         WDFDEVICE device;
         NTSTATUS status;
         WDFWORKITEM workitem;
-        
+
         UNREFERENCED_PARAMETER(hNotify);
         UNREFERENCED_PARAMETER(EventDataSize);
 
         device = (WDFDEVICE) Context;
         fdoData = ToasterFdoGetData(device);
-     
+
         switch(Action) {
         case CM_NOTIFY_ACTION_DEVICEINTERFACEARRIVAL: 
             MyKdPrint( ("MyCmInterfaceNotification: Arrival of %S\n",
                 EventData->u.DeviceInterface.SymbolicLink));
-            
+
             //
             // Enqueue a work item to open target
             //
-                           
+
             break;
         case CM_NOTIFY_ACTION_DEVICEINTERFACEREMOVAL: 
             MyKdPrint( ("MyCmInterfaceNotification: removal of %S\n",
@@ -131,12 +130,14 @@ The following code example shows how a local UMDF 2 driver registers for notific
             MyKdPrint( ("MyCmInterfaceNotification: Arrival unknown action\n"));
             break;
         }
-       
+
         return 0;
     }
 
-    
-    ```
+
+
+```
+
 
 4.  From the work item callback function, the local driver calls [**WdfIoTargetCreate**](https://msdn.microsoft.com/library/windows/hardware/ff548591) to create the remote target, and [**WdfIoTargetOpen**](https://msdn.microsoft.com/library/windows/hardware/ff548634) to open a remote I/O target.
 
@@ -158,17 +159,19 @@ The following code example shows how a local UMDF 2 driver registers for notific
     }
 
 
-    
-    ```
+
+
+```
+
 
 ## Related topics
 
 
 [Registering for Notification of Device Interface Arrival and Device Removal](https://msdn.microsoft.com/library/windows/hardware/dn858592)
 
- 
 
- 
+
+
 
 
 

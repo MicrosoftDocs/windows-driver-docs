@@ -1,6 +1,5 @@
 ---
 title: Additional Topics for KMDF Drivers
-author: windows-driver-content
 description: This section contains information that applies only to Kernel-Mode Driver Framework (KMDF).
 ms.assetid: 6607ABFF-43EB-47FA-BA87-BDD417F1BBB8
 ms.date: 04/20/2017
@@ -29,9 +28,9 @@ This section contains information that applies only to Kernel-Mode Driver Framew
 -   [Creating KMDF Miniport Drivers](creating-kmdf-miniport-drivers.md)
 -   [Creating Pageable Code in a KMDF Driver](creating-pageable-code-in-a-kmdf-driver.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: INF File Entries
-author: windows-driver-content
 description: INF File Entries
 ms.assetid: 8af2cbe7-f249-4e2f-940f-b50bc451cabe
 ms.date: 04/20/2017
@@ -31,13 +30,13 @@ The [**INF DDInstall Section**](https://msdn.microsoft.com/library/windows/hardw
 
 **Note**  It is not necessary to include *wiafbdrv.dll* in your **CopyFiles** directive.
 
- 
+ 
 
 The INF included with the WIA microdriver on the Windows Driver Kit (WDK) CD uses this new method to reference the microdriver.
 
- 
+ 
 
- 
+ 
 
 
 

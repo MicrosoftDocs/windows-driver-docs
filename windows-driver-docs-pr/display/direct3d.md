@@ -48,15 +48,15 @@ All of these header files are shipped with the Windows Driver Kit (WDK). Previou
 
 **Note**   The Microsoft Windows Driver Kit (WDK) does not contain the 3Dlabs Permedia2 (*3dlabs.htm*) and 3Dlabs Permedia3 (*Perm3.htm* ) sample display drivers. You can get these sample drivers from the Windows Server 2003 SP1 DDK, which you can download from the DDK - Windows Driver Development Kit page of the WDHC website.
 
- 
+ 
 
 Reference pages for Direct3D DDI functions, structures, and enumerations can be found in [Direct3D Driver Functions](https://msdn.microsoft.com/library/windows/hardware/ff552853), [Direct3D Driver Structures](https://msdn.microsoft.com/library/windows/hardware/ff552858), and [Direct3D Driver Enumerations](https://msdn.microsoft.com/library/windows/hardware/ff552850).
 
 The primary reference for SDK-related aspects of the Direct3D interface is the Microsoft Windows SDK documentation. *Computer Graphics: Principles and Practice* by Foley, van Dam, Feiner, and Hughes, which was published by Addison-Wesley, is a useful general graphics reference.
 
- 
+ 
 
- 
+ 
 
 
 

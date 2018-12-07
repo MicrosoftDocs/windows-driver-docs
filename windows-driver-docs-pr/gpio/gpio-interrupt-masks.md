@@ -1,6 +1,5 @@
 ---
 title: GPIO Interrupt Masks
-author: windows-driver-content
 description: General-purpose I/O (GPIO) pins that are configured as interrupt inputs can be masked and unmasked in addition to being enabled and disabled.
 ms.assetid: FD6537DA-2AAA-4646-896D-D5BC834526B6
 ms.date: 04/20/2017
@@ -24,9 +23,9 @@ Some GPIO controllers implement, in hardware, interrupt-mask registers that are 
 
 However, other GPIO controllers provide a single set of hardware registers that combine the interrupt-mask and interrupt-enable functions. The drivers for these controllers emulate separate interrupt-mask and interrupt-enable registers in software. To do so, these drivers track the logical states of the interrupt-enable bits and interrupt-mask bits and manipulate the corresponding bits in the hardware register to accurately reflect the behavior of the combined logical interrupt-enable and interrupt-mask bits for each GPIO interrupt.
 
- 
+ 
 
- 
+ 
 
 
 

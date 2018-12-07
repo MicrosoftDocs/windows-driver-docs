@@ -3,7 +3,6 @@ title: gatom
 description: The gatom extension displays the global atom table.
 ms.assetid: effaf07a-4a5f-477c-8d4f-8f955b38cb6a
 keywords: ["gatom Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -45,15 +44,15 @@ The **!gatom** extension displays the global atom table.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
 For information about the global atom table, see the Microsoft Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -16,9 +16,9 @@ ms.localizationpriority: medium
 
 Remote NDIS supports Ethernet 802.3 connectionless devices for Microsoft Windows Me and Windows XP.
 
- 
+ 
 
- 
+ 
 
 
 

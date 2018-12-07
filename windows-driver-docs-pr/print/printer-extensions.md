@@ -1,6 +1,5 @@
 ---
 title: Printer Extensions
-author: windows-driver-content
 description: Printer extension apps support print preferences and printer notifications when users run existing applications on the Windows desktop.
 ms.assetid: D617A897-D93E-4006-B42D-923CA7F29D7E
 ms.date: 04/20/2017
@@ -9,11 +8,9 @@ ms.localizationpriority: medium
 
 # Printer Extensions
 
-
 Printer extension apps support print preferences and printer notifications when users run existing applications on the Windows desktop.
 
 ## Introduction
-
 
 Printer extensions can be built in any COM-capable language, but are optimized to be built using Microsoft .NET Framework 4. Printer extensions may be distributed with a print driver package, if they are XCopy-capable and have no dependencies on external runtimes other than those included with the operating system, like for example, .NET. If the printer extension app doesn't meet these criteria, it could be distributed in a setup.exe or an MSI package, and advertised in the printer's Device Stage experience by using the PrinterExtensionUrl directive specified in the v4 manifest. When a printer extension app is distributed via an MSI package, you have the option of adding the print driver to the package or leaving it out and distributing the driver separately. The PrinterExtensionUrl is shown on the printer preferences experience.
 
@@ -23,26 +20,27 @@ And if an enterprise chooses to block printer extensions altogether, this can be
 
 ## Building a printer extension
 
-
 The [Printer Extension Sample](http://go.microsoft.com/fwlink/p/?LinkId=617945) on GitHub shows how to build a printer extension using C#. In order to allow code sharing between UWP device apps and printer extensions, this sample uses two projects: PrinterExtensionLibrary (a C) and ExtensionSample (a printer extension that is dependent on the PrinterExtensionLibrary).
 
 The code snippets shown in this topic are all taken from the PrinterExtensionSample solution. If you are building a printer extension in C, C++ or some other COM-based language, the concepts are similar but the APIs must instead match those specified in *PrinterExtension.IDL*, which is included in the Windows Driver Kit. The code comments in the PrinterExtensionLibrary from the sample document also include code comments that indicate the underlying COM interface that a particular object corresponds to.
 
 When you are developing a printer extension, there are six main areas of focus that you must be aware of. These focus areas are shown in the following list.
 
--   Registration
+- Registration
 
--   Enabling Events
+- Enabling Events
 
--   OnDriverEvent Handler
+- OnDriverEvent Handler
 
--   Print Preferences
+- Print Preferences
 
--   Printer Notifications
+- Printer Notifications
 
--   Managing Printers
+- Managing Printers
 
-**Registration**. Printer extensions are registered with the print system by specifying a set of registry keys or by specifying the application information in the PrinterExtensions section of the v4 manifest file.
+### Registration
+
+Printer extensions are registered with the print system by specifying a set of registry keys or by specifying the application information in the PrinterExtensions section of the v4 manifest file.
 
 There are specified GUIDs that support each of the different entry points for printer extensions. You do not have to use these GUIDs in the v4 manifest file, but you must know the GUID values to use the registry format for v4 driver installation. The following table shows the GUID values for the two entry points.
 
@@ -51,15 +49,14 @@ There are specified GUIDs that support each of the different entry points for pr
 | Print Preferences     | {EC8F261F-267C-469F-B5D6-3933023C29CC} |
 | Printer Notifications | {23BB1328-63DE-4293-915B-A6A23D929ACB} |
 
-
 Printer extensions that are installed outside of the printer driver need to be registered using the registry. This ensures that printer extensions can be installed regardless of the status of the spooler, or the v4 configuration module on the client machine.
 
 Once the PrintNotify service starts, it will check for registry keys under the \[OfflineRoot\] path and process any pending registrations or unregistrations. Once any pending registrations or unregistrations are completed, the registry keys are deleted in real time. Note that if you are using a script or iterative process to place registry keys, you may need to recreate the \\\[PrinterExtensionID\] key every time you specify a \\\[PrinterDriverId\] key. Incomplete or malformed keys are not deleted.
 
 This registration is only necessary on first install. The following example shows the correct registry key format used for registering printer extensions.
 
-**Note**  **\[OfflineRoot\]** is used as shorthand for HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Print\\OfflinePrinterExtensions.
-
+> [!NOTE]
+> **\[OfflineRoot\]** is used as shorthand for HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Print\\OfflinePrinterExtensions.
 
 ```Registry
 [OfflineRoot]
@@ -125,7 +122,9 @@ When the printer extension registers for the current PrinterDriverID, it must in
 "C:\program files\fabrikam\printerextension.exe {GUID}"
 ```
 
-**Enabling events**. At runtime, printer extensions must enable event triggering for the current PrinterDriverID. This is the PrinterDriverID that was passed to the app via the args\[\] array, and it allows the print system to provide an appropriate event context for handling reasons like print preferences or printer notifications.
+### Enabling events
+
+At runtime, printer extensions must enable event triggering for the current PrinterDriverID. This is the PrinterDriverID that was passed to the app via the args\[\] array, and it allows the print system to provide an appropriate event context for handling reasons like print preferences or printer notifications.
 
 So the application should create a new PrinterExtensionManager for the current PrinterDriverID, register a delegate to handle the OnDriverEvent event, and call the EnableEvents method with the PrinterDriverID. The following code snippet illustrates this approach.
 
@@ -137,13 +136,15 @@ mgr.EnableEvents(new Guid(PrinterDriverID1));
 
 If an app does not call EnableEvents within 5 seconds, Windows will timeout and launch a standard UI. In order to mitigate this, printer extensions should follow the latest performance best practices, including the following:
 
--   Delay as much of the app initialization as possible, until after you call EnableEvents. After this, prioritize UI responsiveness by using asynchronous methods and not blocking the UI thread during initialization.
+- Delay as much of the app initialization as possible, until after you call EnableEvents. After this, prioritize UI responsiveness by using asynchronous methods and not blocking the UI thread during initialization.
 
--   Use ngen to generate a native image during installation. For more information, see [Native Image Generator](https://msdn.microsoft.com/library/6t9t5wcf.aspx).
+- Use ngen to generate a native image during installation. For more information, see [Native Image Generator](https://msdn.microsoft.com/library/6t9t5wcf.aspx).
 
--   Use performance measurement tools to find performance issues on loading. For more information, see [Windows Performance Analysis Tools](https://msdn.microsoft.com/performance/cc825801.aspx).
+- Use performance measurement tools to find performance issues on loading. For more information, see [Windows Performance Analysis Tools](https://msdn.microsoft.com/performance/cc825801.aspx).
 
-**DriverEvent handler**. After an OnDriverEvent handler is registered and events are enabled, if the printer extension was launched to handle print preferences or printer notifications, then the handler will be invoked. In the preceding code snippet, a method called OnDriverEvent was registered as the event handler. In the following code snippet, the *PrinterExtensionEventArgs* parameter is the object that enables the print preferences and printer notifications scenarios to be constructed. *PrinterExtensionEventArgs* is a wrapper for [**IPrinterExtensionEventArgs**](https://msdn.microsoft.com/library/windows/hardware/hh973207).
+### DriverEvent handler
+
+After an OnDriverEvent handler is registered and events are enabled, if the printer extension was launched to handle print preferences or printer notifications, then the handler will be invoked. In the preceding code snippet, a method called OnDriverEvent was registered as the event handler. In the following code snippet, the *PrinterExtensionEventArgs* parameter is the object that enables the print preferences and printer notifications scenarios to be constructed. *PrinterExtensionEventArgs* is a wrapper for [**IPrinterExtensionEventArgs**](https://msdn.microsoft.com/library/windows/hardware/hh973207).
 
 ```csharp
 static void OnDriverEvent(object sender, PrinterExtensionEventArgs eventArgs)
@@ -195,7 +196,9 @@ In most cases, however, all the app-related code in which we're interested, runs
 
 New ReasonIds may be supported in the future. As a result, printer extensions must explicitly check the ReasonID and must not use an "else" statement to detect the last known ReasonID. If a ReasonID is received and unknown, the app should exit gracefully.
 
-**Print preferences**. Print preferences is driven by the PrintSchemaEventArgs.Ticket object. This object encapsulates both the PrintTicket and PrintCapabilties documents that describe the features and options for a device. While the underlying XML is also available, the object model makes working with these formats easier.
+### Print preferences
+
+Print preferences is driven by the PrintSchemaEventArgs.Ticket object. This object encapsulates both the PrintTicket and PrintCapabilities documents that describe the features and options for a device. While the underlying XML is also available, the object model makes working with these formats easier.
 
 Inside each [**IPrintSchemaTicket**](https://msdn.microsoft.com/library/windows/hardware/hh451398) or [**IPrintSchemaCapabilities**](https://msdn.microsoft.com/library/windows/hardware/hh451256) object there are features ([**IPrintSchemaFeature**](https://msdn.microsoft.com/library/windows/hardware/hh451284)) and options ([**IPrintSchemaOption**](https://msdn.microsoft.com/library/windows/hardware/hh451335)). While the interfaces used for features and options are the same regardless of the origin, the behavior varies slightly as a result of the underlying XML. For example, PrintCapabilities documents specify many options per feature, while PrintTicket documents specify only the selected (or default) option. Similarly, PrintCapabilities documents specify localized display strings, whereas PrintTicket documents do not.
 
@@ -207,11 +210,11 @@ As a user makes choices using the data bound ComboBox controls, the PrintTicket 
 
 1. The PrintSchemaTicket is validated asynchrously using the [**IPrintSchemaTicket::ValidateAsync**](https://msdn.microsoft.com/library/windows/hardware/hh451448) method.
 
-2. When the asynchronous validation completes, the Common Language Runtime (CLR) invokes the PrintTicketValidateCompleted method.
+1. When the asynchronous validation completes, the Common Language Runtime (CLR) invokes the PrintTicketValidateCompleted method.
 
-a. If validation was successful, it calls the CommitPrintTicketAsync method, and CommitPrintTicketAsync calls the [**IPrintSchemaTicket::CommitAsync**](https://msdn.microsoft.com/library/windows/hardware/hh451382) method. And when update PrintTicket is successfully completed, this invokes the PrintTicketCommitCompleted method, which calls a convenience method that calls the PrinterExtensionEventArgs.Request.Complete method to indicate that print preferences are complete, and then it closes the app.
+    1. If validation was successful, it calls the CommitPrintTicketAsync method, and CommitPrintTicketAsync calls the [**IPrintSchemaTicket::CommitAsync**](https://msdn.microsoft.com/library/windows/hardware/hh451382) method. And when update PrintTicket is successfully completed, this invokes the PrintTicketCommitCompleted method, which calls a convenience method that calls the PrinterExtensionEventArgs.Request.Complete method to indicate that print preferences are complete, and then it closes the app.
 
-b. Otherwise, it presents UI to the user to handle the constraint situation.
+    1. Otherwise, it presents UI to the user to handle the constraint situation.
 
 If the user clicked cancel or closed the print preferences window directly, the printer extension calls IPrinterExtensionEventArgs.Request.Cancel with an appropriate HRESULT value and message for the error log.
 
@@ -249,17 +252,21 @@ private void OnBidiResponseReceived(object sender, PrinterQueueEventArgs e)
 }
 ```
 
-**Printer notifications**. Printer notifications are invoked in precisely the same way as print preferences. In the OnDriverEvent handler, if IPrinterExtensionEventArgs indicates that a ReasonID matches the DriverEvents GUID, then we can build an experience to handle this event.
+### Printer notifications
+
+Printer notifications are invoked in precisely the same way as print preferences. In the OnDriverEvent handler, if IPrinterExtensionEventArgs indicates that a ReasonID matches the DriverEvents GUID, then we can build an experience to handle this event.
 
 The [PrinterExtensionSample](http://go.microsoft.com/fwlink/p/?LinkId=617945) project does not demonstrate a functional printer notifications experience, but the following variables are most helpful in handling this.
 
--   PrinterExtensionEventArgs.BidiNotification – This carries the Bidi XML that caused the event to be triggered.
+- PrinterExtensionEventArgs.BidiNotification – This carries the Bidi XML that caused the event to be triggered.
 
--   PrinterExtensionEventArgs.DetailedReasonId – This contains the eventID GUID from the driver event xml file.
+- PrinterExtensionEventArgs.DetailedReasonId – This contains the eventID GUID from the driver event xml file.
 
 The most important attribute from the IPrinterExtensionEventArgs object for notifications is the BidiNotification property. This carries the Bidi XML that caused the event to be triggered. For more information on Bidi XML responses, see [Bidi Request and Response Schemas](https://msdn.microsoft.com/library/windows/desktop/dd183368.aspx).
 
-**Managing printers**. In order to support the role of a printer extension as an app that can be used as a hub for managing/maintaining printers, it is possible to enumerate the print queues for which the current printer extension is registered, and get the status for each queue. This is not demonstrated in the PrinterExtensionSample project, but the following code snippet could be added into the Main method of App.xaml.cs to register an event handler.
+### Managing printers
+
+In order to support the role of a printer extension as an app that can be used as a hub for managing/maintaining printers, it is possible to enumerate the print queues for which the current printer extension is registered, and get the status for each queue. This is not demonstrated in the PrinterExtensionSample project, but the following code snippet could be added into the Main method of App.xaml.cs to register an event handler.
 
 ```csharp
 mgr.OnPrinterQueuesEnumerated += new EventHandler<PrinterQueuesEnumeratedEventArgs>(mgr_OnPrinterQueuesEnumerated);
@@ -293,7 +300,6 @@ For more information on how to marshal these legacy APIs into .NET, see [How to 
 
 ## Printer extension performance best practices
 
-
 In order to ensure the best user experience, printer extensions should be designed to load as fast as possible. The Printer Extension Sample project is a .NET application, which means that it gets built into an intermediate language (IL) that must be compiled at runtime into the appropriate format for the native processor architecture. During installation, Microsoft recommends that printer extensions are installed according to best practices, to ensure that the app has been compiled for the native system architecture. For more information about code compilation and installation best practices, see [Improving Launch Performance for Your Desktop Applications](http://blogs.msdn.com/b/dotnet/archive/2012/03/20/improving-launch-performance-for-your-desktop-applications.aspx).
 
 Microsoft also recommends that printer extensions postpone initialization tasks such as loading resources until after the EnableEvents method has been called. This minimizes the likelihood of the app calling EnableEvents prior to the 5 second timeout for printer extensions.
@@ -304,8 +310,8 @@ As the user makes choices using the on screen UI that affect the PrintTicket, th
 
 Printer extensions are always executed out of process from the process invoked them. So you must keep window behavior in mind when you're developing a printer extension:
 
--   The **WindowParent** property from [**IPrinterExtensionEventArgs**](https://msdn.microsoft.com/library/windows/hardware/hh973207) specifies the handle to the window that invoked the app.
--   The **WindowModal** property from [**IPrinterExtensionEventArgs**](https://msdn.microsoft.com/library/windows/hardware/hh973207) specifies whether a printer extension (in print preferences mode) should be run modally.
+- The **WindowParent** property from [**IPrinterExtensionEventArgs**](https://msdn.microsoft.com/library/windows/hardware/hh973207) specifies the handle to the window that invoked the app.
+- The **WindowModal** property from [**IPrinterExtensionEventArgs**](https://msdn.microsoft.com/library/windows/hardware/hh973207) specifies whether a printer extension (in print preferences mode) should be run modally.
 
 The Printer Extension Sample demonstrates how to create a UI that is generally launched as the topmost window. But in some cases, the UI will not be shown in the foreground, such as when the process that caused the UI to be invoked is running at a different integrity level, or when the process is compiled for a different processor architecture. In this case, the printer extension should call FlashWindowEx to request user permission to come to the foreground by flashing the icon in the taskbar.
 
@@ -328,4 +334,3 @@ The Printer Extension Sample demonstrates how to create a UI that is generally l
 [Printer Extension Sample](http://go.microsoft.com/fwlink/p/?LinkId=617945)
 
 [Windows Performance Analysis Tools](https://msdn.microsoft.com/performance/cc825801.aspx)
-

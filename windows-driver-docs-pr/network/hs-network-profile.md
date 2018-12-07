@@ -1,6 +1,5 @@
 ---
 title: HS_NETWORK_PROFILE structure
-author: windows-driver-content
 description: The HS_NETWORK_PROFILE structure is provided by the plugin and contains information required for connection to the target network. Each instance of the Network Profile is uniquely associated with a corresponding HS_NETWORK_IDENTITY structure.
 ms.assetid: 55e8786c-d7b8-48f3-9e54-312183cf8fb3
 keywords: 
@@ -36,7 +35,7 @@ Members
 -------
 
 **dwNetworkCapabilities**  
-A subset of the possible **HS\_FLAG\_CAPABILITY\_NETWORK\_\*** values. For more information about hotspot host capabilities, see [**Wi-Fi Hotspot Offloading Constants**](wi-fi-hotspot-offloading-constants.md).
+A subset of the possible **HS\_FLAG\_CAPABILITY\_NETWORK\_\\*** values. For more information about hotspot host capabilities, see [**Wi-Fi Hotspot Offloading Constants**](wi-fi-hotspot-offloading-constants.md).
 
 **usPriority**  
 A unique priority value assigned to the associated network. It must be a value between 1 and 65000 (a hidden network must have a value of 1). A lower numeric value corresponds to a higher priority.
@@ -79,9 +78,9 @@ Requirements
 
 [**Wi-Fi Hotspot Offloading Constants**](wi-fi-hotspot-offloading-constants.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: OID_WWAN_SMS_SEND
-author: windows-driver-content
 description: OID_WWAN_SMS_SEND sends SMS text messages to another MB device.
 ms.assetid: 557d2bdc-8414-4fcb-903c-23bb68955d07
 ms.date: 08/08/2017
@@ -60,9 +59,9 @@ Requirements
 
 [WWAN SMS Operations](https://msdn.microsoft.com/library/windows/hardware/ff559131)
 
- 
+ 
 
- 
+ 
 
 
 

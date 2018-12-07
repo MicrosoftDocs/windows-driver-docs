@@ -1,6 +1,5 @@
 ---
 title: Enabling an Error Source
-author: windows-driver-content
 description: Enabling an Error Source
 ms.assetid: a65357fa-e600-47fe-8719-b67c36542711
 keywords:
@@ -122,9 +121,9 @@ pOutParameters->Release();
 
 A user-mode application can disable an [error source](hardware-errors-and-error-sources.md) by calling the [**WHEAErrorSourceMethods::DisableErrorSourceRtn**](https://msdn.microsoft.com/library/windows/hardware/ff559523) method. For more information about disabling an error source, see [Disabling an Error Source](disabling-an-error-source.md).
 
- 
+ 
 
- 
+ 
 
 
 

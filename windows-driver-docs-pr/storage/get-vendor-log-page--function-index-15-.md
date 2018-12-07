@@ -41,18 +41,18 @@ None.
 <td align="left"><strong>Status</strong></td>
 <td align="left">4</td>
 <td align="left">0</td>
-<td align="left"><p>Go to [_DSM Method Output](-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md#dsm-method-output) for information.</p></td>
+<td align="left"><p>Go to <a href="-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md" data-raw-source="[_DSM Method Output](-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md)">_DSM Method Output</a> for information.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><strong>Vendor Log Page</strong></td>
-<td align="left">Call [Get Vendor Log Page Size (Function Index 14)](get-vendor-log-page-size--function-index-14-.md) to obtain.</td>
+<td align="left">Call <a href="get-vendor-log-page-size--function-index-14-.md" data-raw-source="[Get Vendor Log Page Size (Function Index 14)](get-vendor-log-page-size--function-index-14-.md)">Get Vendor Log Page Size (Function Index 14)</a> to obtain.</td>
 <td align="left">4</td>
 <td align="left"><p>The vendor log page.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -61,9 +61,9 @@ None.
 
 [\_DSM Interface for Byte Addressable Energy Backed Function Class (Function Interface 1)](-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: Debugging WinLogon
 description: Debugging WinLogon
 ms.assetid: 408727cd-fb59-44fe-b896-88317d2bc087
 keywords: ["WinLogon debugging", "NTSD, debugging CSRSS", "controlling the user-mode debugger from the kernel debugger, debugging WinLogon"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -44,9 +43,9 @@ See [Controlling the User-Mode Debugger from the Kernel Debugger](controlling-th
 
 You will have to set your symbol path to a location on your host computer or to some other location on your network. When WinLogon is being debugged, network authentication on the target computer will not work properly.
 
- 
+ 
 
- 
+ 
 
 
 

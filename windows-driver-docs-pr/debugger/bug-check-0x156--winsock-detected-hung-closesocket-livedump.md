@@ -3,7 +3,6 @@ title: Bug Check 0x156 WINSOCK_DETECTED_HUNG_CLOSESOCKET_LIVEDUMP
 description: The WINSOCK_DETECTED_HUNG_CLOSESOCKET_LIVEDUMP bug check has a value of 0x00000156. This indicates that Winsock detected a hung transport endpoint close request.
 ms.assetid: F5B53149-3051-459C-834A-6AE17C56AEE6
 keywords: ["Bug Check 0x156 WINSOCK_DETECTED_HUNG_CLOSESOCKET_LIVEDUMP", "WINSOCK_DETECTED_HUNG_CLOSESOCKET_LIVEDUMP"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -59,16 +58,16 @@ The WINSOCK\_DETECTED\_HUNG\_CLOSESOCKET\_LIVEDUMP bug check has a value of 0x00
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
 
 While processing a closesocket request, Winsock detected a hung transport endpoint close request. The system generated a live dump for analysis, then the closesocket request was completed without waiting for the completion of hung transport endpoint close request.
 
- 
+ 
 
- 
+ 
 
 
 

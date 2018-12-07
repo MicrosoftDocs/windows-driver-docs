@@ -1,6 +1,5 @@
 ---
 title: OID_SWITCH_NIC_DISCONNECT
-author: windows-driver-content
 description: The protocol edge of the Hyper-V extensible switch issues an object identifier (OID) set request of OID_SWITCH_NIC_DISCONNECT to notify underlying extensible switch extensions that a connection between an extensible switch port and a network adapter is being torn down. After the connection is completely torn down, the protocol edge of the extensible switch will issue an OID set request of OID_SWITCH_NIC_DELETE.
 ms.assetid: 367081A7-F259-4132-B857-C956C0F2829C
 ms.date: 08/08/2017
@@ -33,19 +32,15 @@ The extension must follow these guidelines when it handles OID set requests of O
 
     -   Forward or originate OID requests of [OID\_SWITCH\_NIC\_REQUEST](oid-switch-nic-request.md) to an underlying network adapter for which the OID\_SWITCH\_NIC\_DISCONNECT OID request was issued.
 
-        **Note**  If the extension called [*ReferenceSwitchNic*](https://msdn.microsoft.com/library/windows/hardware/hh598294) to increment the extensible switch reference counter before the OID\_SWITCH\_NIC\_DISCONNECT is issued, the extension can still forward or originate OID requests.
+        **Note**  If the extension called [*ReferenceSwitchNic*](https://msdn.microsoft.com/library/windows/hardware/hh598294) to increment the extensible switch reference counter before the OID\_SWITCH\_NIC\_DISCONNECT is issued, the extension can still forward or originate OID requests.
 
-         
+
 
     -   Forward or originate NDIS status indications of [**NDIS\_STATUS\_SWITCH\_NIC\_STATUS**](https://msdn.microsoft.com/library/windows/hardware/hh598205) from an underlying network adapter for which the OID\_SWITCH\_NIC\_DISCONNECT OID request was issued.
 
-        **Note**  If the extension called [*ReferenceSwitchNic*](https://msdn.microsoft.com/library/windows/hardware/hh598294) to increment the extensible switch reference counter before the OID\_SWITCH\_NIC\_DISCONNECT is issued, the extension can still forward or originate NDIS status indications.
+        **Note**  If the extension called [*ReferenceSwitchNic*](https://msdn.microsoft.com/library/windows/hardware/hh598294) to increment the extensible switch reference counter before the OID\_SWITCH\_NIC\_DISCONNECT is issued, the extension can still forward or originate NDIS status indications.
 
-         
-
-    **Note**  If the extension previously called [*ReferenceSwitchNic*](https://msdn.microsoft.com/library/windows/hardware/hh598294) to increment the extensible switch reference counter, it does not need to synchronize its calls to originate or forward OID requests or NDIS status indications with its code that manages Hyper-V extensible switch OID requests. After the extension increments the reference counter, the extensible switch interface will not issue an OID set request of [OID\_SWITCH\_NIC\_DELETE](oid-switch-nic-delete.md).
-
-     
+        **Note**  If the extension previously called [*ReferenceSwitchNic*](https://msdn.microsoft.com/library/windows/hardware/hh598294) to increment the extensible switch reference counter, it does not need to synchronize its calls to originate or forward OID requests or NDIS status indications with its code that manages Hyper-V extensible switch OID requests. After the extension increments the reference counter, the extensible switch interface will not issue an OID set request of [OID\_SWITCH\_NIC\_DELETE](oid-switch-nic-delete.md).
 
 -   The extension must always forward this OID set request to underlying extensions. The extension must not complete the request.
 
@@ -53,9 +48,7 @@ The extension must follow these guidelines when it handles OID set requests of O
 
     The extension must maintain the connection state for each underlying physical adapter. For more information about the different configurations in which physical network adapters can be bound to the external network adapter, see [Types of Physical Network Adapter Configurations](https://msdn.microsoft.com/library/windows/hardware/hh582274).
 
-**Note**  The extension must not issue its own OID set requests of OID\_SWITCH\_NIC\_DISCONNECT.
-
- 
+**Note**  The extension must not issue its own OID set requests of OID\_SWITCH\_NIC\_DISCONNECT.
 
 For more information about the states of extensible switch ports and network adapter connections, see [Hyper-V Extensible Switch Port and Network Adapter States](https://msdn.microsoft.com/library/windows/hardware/hh598182).
 
@@ -82,7 +75,7 @@ The underlying miniport edge of the extensible switch completes the OID query re
 </tbody>
 </table>
 
- 
+
 
 Requirements
 ------------
@@ -117,11 +110,3 @@ Requirements
 [OID\_SWITCH\_PORT\_ARRAY](oid-switch-port-array.md)
 
 [*ReferenceSwitchPort*](https://msdn.microsoft.com/library/windows/hardware/hh598295)
-
- 
-
- 
-
-
-
-

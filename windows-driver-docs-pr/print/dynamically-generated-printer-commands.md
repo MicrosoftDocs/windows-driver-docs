@@ -1,6 +1,5 @@
 ---
 title: Dynamically Generated Printer Commands
-author: windows-driver-content
 description: Dynamically Generated Printer Commands
 ms.assetid: ba395716-6906-4f23-a050-79d808ccd44b
 keywords:
@@ -38,9 +37,9 @@ To provide code that dynamically generates a command string, you must do the fol
 
 When Unidrv is ready to issue a printer command, it checks the minidriver database to determine if the command has been specified with a \*Cmd attribute or with a \*CallbackID attribute. In the former case, Unidrv sends the command string to the print spooler. In the latter case, Unidrv calls the **IPrintOemUni::CommandCallback** method, passing the \*CallbackID and \*Params values as input arguments.
 
- 
+ 
 
- 
+ 
 
 
 

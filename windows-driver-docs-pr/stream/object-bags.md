@@ -1,6 +1,5 @@
 ---
 title: Object Bags
-author: windows-driver-content
 description: Object Bags
 ms.assetid: b7ee5756-1c79-4ead-9999-d13be9a0d3d9
 keywords:
@@ -46,9 +45,9 @@ AVStream automatically removes items from an object bag if the owning object is 
 
 Minidrivers can remove individual items from an object bag by calling [**KsRemoveItemFromObjectBag**](https://msdn.microsoft.com/library/windows/hardware/ff566798) or [**KsDiscard**](https://msdn.microsoft.com/library/windows/hardware/ff561695).
 
- 
+ 
 
- 
+ 
 
 
 

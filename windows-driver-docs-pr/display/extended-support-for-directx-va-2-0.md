@@ -15,9 +15,9 @@ The following topics discuss how a user-mode display driver can extend DirectX V
 
 [Creating and Using a DirectX VA 2.0 Extension Device](creating-and-using-a-directx-va-2-0-extension-device.md)
 
- 
+ 
 
- 
+ 
 
 
 

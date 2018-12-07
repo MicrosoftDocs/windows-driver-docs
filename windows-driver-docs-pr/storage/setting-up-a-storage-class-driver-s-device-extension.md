@@ -1,6 +1,5 @@
 ---
 title: Setting Up a Storage Class Driver's Device Extension
-author: windows-driver-content
 description: Setting Up a Storage Class Driver's Device Extension
 ms.assetid: 9d050d23-39c0-406e-9f4b-2e95d388f5cf
 keywords:
@@ -55,9 +54,9 @@ Most storage class drivers also provide storage for the following information:
 
 A storage class driver cannot send requests to its device through the storage port driver without using the device object pointer that was returned by [**IoAttachDeviceToDeviceStack**](https://msdn.microsoft.com/library/windows/hardware/ff548300) and stored in the device extension by the driver's *AddDevice* routine.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Keyboard and mouse class drivers
-author: windows-driver-content
 description: Non-HID keyboards and mice can connect over multiple legacy buses but still use the same class driver. 
 ms.assetid: 0771D802-4F1D-4612-8376-ED3113DCC652
 ms.date: 04/20/2017
@@ -160,7 +159,7 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout
 
 **Note**  There is also a **Keyboard Layouts** key (notice the plural form) under the Control key, but that key should not be modified.
 
- 
+ 
 
 In the **Keyboard Layout** key, the **Scancode Map** value must be added. This value is of type REG\_BINARY (little Endian format) and has the data format specified in the following table.
 
@@ -174,7 +173,7 @@ In the **Keyboard Layout** key, the **Scancode Map** value must be added. This v
 | ...                     | ...             | ...                          |
 | Last 4 bytes            | 4               | Null Terminator (0x00000000) |
 
- 
+ 
 
 The first and second DWORDS store header information and should be set to all zeroes for the current version of the Scan Code Mapper. The third DWORD entry holds a count of the total number of mappings that follow, including the null terminating mapping. The minimum count would therefore be 1 (no mappings specified). The individual mappings follow the header. Each mapping is one DWORD in length and is divided into two WORD length fields. Each WORD field stores the scan code for a key to be mapped.
 
@@ -202,7 +201,7 @@ The following table contains these entries broken into DWORD fields and the byte
 | 0x003A001D | CAPS LOCK --&gt; Left CTRL key (0x3A --&gt; 0x1D). |
 | 0x00000000 | Null terminator.                                   |
 
- 
+ 
 
 *Example 2*
 
@@ -224,7 +223,7 @@ The following table contains these entries broken into DWORD fields and the byte
 | 0xE038E020 | Right ALT key --&gt; Mute key (0xE038 --&gt; 0xE020). |
 | 0x00000000 | Null terminator.                                      |
 
- 
+ 
 
 After the necessary data is generated, it can be inserted into the registry in several ways.
 
@@ -315,9 +314,9 @@ The following specifies, by type of device, how these special requirements for a
 
     A device-specific function driver is required. The function driver creates the required MOUSE\_INPUT\_DATA structures, scales the device input data, and sets the MOUSE\_MOVE\_ABSOLUTE flag before it calls **MouseClassServiceCallback**.
 
- 
+ 
 
- 
+ 
 
 
 

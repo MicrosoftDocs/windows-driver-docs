@@ -1,6 +1,5 @@
 ---
 title: Using vector types with sensors
-author: windows-driver-content
 description: Using vector types with sensors
 ms.assetid: cadc2cd3-10aa-4a4a-926f-edc01b046f27
 ms.date: 04/20/2017
@@ -14,7 +13,7 @@ Some properties and data fields contain arrays of information. For example, the 
 
 For information about which properties and data fields contain arrays, see [Constants](about-sensor-constants.md).
 
-The following code example shows how to create an [IPortableDeviceValues](http://go.microsoft.com/fwlink/p/?linkid=131486) object that contains values for SENSOR\_PROPERTY\_LIGHT\_RESPONSE\_CURVE. The variable named m\_pSensorProperties is a pointer to the [IPortableDeviceValues](http://go.microsoft.com/fwlink/p/?linkid=131486) interface.
+The following code example shows how to create an [IPortableDeviceValues](https://go.microsoft.com/fwlink/p/?linkid=131486) object that contains values for SENSOR\_PROPERTY\_LIGHT\_RESPONSE\_CURVE. The variable named m\_pSensorProperties is a pointer to the [IPortableDeviceValues](https://go.microsoft.com/fwlink/p/?linkid=131486) interface.
 
 ```cpp
 UINT responseCurve[10] = {0}; // Array to contain the response curve data.
@@ -42,7 +41,6 @@ InitPropVariantFromBuffer(responseCurve, 10 * sizeof (UINT), &pvCurve);
 hr = m_pSensorProperties->SetValue(SENSOR_PROPERTY_LIGHT_RESPONSE_CURVE, &pvCurve);
 
 PropVariantClear(&pvCurve);
-
 ```
 
 ## Related topics

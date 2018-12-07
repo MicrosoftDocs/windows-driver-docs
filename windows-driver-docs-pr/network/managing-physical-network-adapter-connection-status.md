@@ -25,29 +25,31 @@ The extensible switch interface notifies extensions of each physical network ada
 
     -   If an load balancing fail over (LBFO) team of network adapters is bound to the external network adapter, it is assigned a NDIS\_SWITCH\_NIC\_INDEX value of one.
 
-        **Note**  In the LBFO team configuration, only the virtual miniport edge of the LBFO provider that supports the LBFO team is considered to be bound to the external network adapter.
+        **Note**  In the LBFO team configuration, only the virtual miniport edge of the LBFO provider that supports the LBFO team is considered to be bound to the external network adapter.
 
-         
 
-    -   If an extensible switch team of network adapters is bound to the external network adapter, each physical network adapter in the team is assigned a unique NDIS\_SWITCH\_NIC\_INDEX value that is greater than or equal to one.
 
-        **Note**  In the extensible switch team configuration, every physical network adapter in the team is considered to be bound to the external network adapter.
 
-         
+-   If an extensible switch team of network adapters is bound to the external network adapter, each physical network adapter in the team is assigned a unique NDIS\_SWITCH\_NIC\_INDEX value that is greater than or equal to one.
+
+    **Note**  In the extensible switch team configuration, every physical network adapter in the team is considered to be bound to the external network adapter.
+
+
+
 
 3.  The protocol edge of the extensible switch issues an OID set request of [OID\_SWITCH\_NIC\_CONNECT](https://msdn.microsoft.com/library/windows/hardware/hh598262) for the external network adapter.
 
-    **Note**  At this point, the connection to the external network is not operational and cannot be used for packet traffic.
+    **Note**  At this point, the connection to the external network is not operational and cannot be used for packet traffic.
 
-     
+
 
 4.  For every network adapter that is bound to the external network adapter, the protocol edge of the extensible switch issues a separate OID set request of [OID\_SWITCH\_NIC\_CONNECT](https://msdn.microsoft.com/library/windows/hardware/hh598262). This OID request is issued after the OID set request of [OID\_SWITCH\_NIC\_CREATE](https://msdn.microsoft.com/library/windows/hardware/hh598263) is completed successfully.
 
     The [OID\_SWITCH\_NIC\_CONNECT](https://msdn.microsoft.com/library/windows/hardware/hh598262) OID request notifies the extension that the extensible switch network connection is now operational. If the external network adapter is bound to the virtual miniport edge of the MUX driver, the protocol edge issues a separate OID\_SWITCH\_NIC\_CONNECT request.
 
-    **Note**  As soon as an [OID\_SWITCH\_NIC\_CONNECT](https://msdn.microsoft.com/library/windows/hardware/hh598262) request is issued for a physical network adapter with a NDIS\_SWITCH\_NIC\_INDEX value greater than or equal to one, the connection to the external network is operational. At this point, packet traffic can be sent or received over the external network.
+    **Note**  As soon as an [OID\_SWITCH\_NIC\_CONNECT](https://msdn.microsoft.com/library/windows/hardware/hh598262) request is issued for a physical network adapter with a NDIS\_SWITCH\_NIC\_INDEX value greater than or equal to one, the connection to the external network is operational. At this point, packet traffic can be sent or received over the external network.
 
-     
+
 
 5.  If the external network connection is being torn down, the protocol edge of the extensible switch first issues a separate OID set request of [OID\_SWITCH\_NIC\_DISCONNECT](https://msdn.microsoft.com/library/windows/hardware/hh598265) for every network adapter that is bound to the external network adapter. Once these OID requests are completed, the protocol edge of the extensible switch then issues separate OID set request of [OID\_SWITCH\_NIC\_DELETE](https://msdn.microsoft.com/library/windows/hardware/hh598264) for every physical network adapter that is bound to the external network adapter,
 
@@ -55,9 +57,9 @@ The extensible switch interface notifies extensions of each physical network ada
 
 For more information on NDIS\_SWITCH\_NIC\_INDEX values, see [Network Adapter Index Values](network-adapter-index-values.md).
 
- 
 
- 
+
+
 
 
 

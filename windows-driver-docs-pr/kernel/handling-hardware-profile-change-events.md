@@ -1,6 +1,5 @@
 ---
 title: Handling Hardware Profile Change Events
-author: windows-driver-content
 description: Handling Hardware Profile Change Events
 ms.assetid: ddb0f740-9b31-4ede-be84-c1f6eb60fb1a
 keywords: ["notifications WDK PnP , hardware profile changes", "hardware profile change notifications WDK PnP", "EventCategoryHardwareProfileChange notification", "profile change notifications WDK PnP", "machine hardware profile change notifications WDK PnP"]
@@ -28,9 +27,9 @@ For a GUID\_HWPROFILE\_CHANGE\_COMPLETE event the PnP manager calls kernel-mode 
 
 For a GUID\_HWPROFILE\_CHANGE\_CANCELLED event the PnP manager calls kernel-mode callback routines and then user-mode routines. In response to such an event, a driver's callback routine typically just returns STATUS\_SUCCESS. If the driver performed any operations in response to the GUID\_HWPROFILE\_QUERY\_CHANGE event, the driver would undo those operations in response to the cancellation event.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -39,9 +39,9 @@ This section includes the following topics:
 
 [Handling Microsoft Extensions to Windows Sockets](handling-microsoft-extensions-to-windows-sockets.md)
 
- 
+ 
 
- 
+ 
 
 
 

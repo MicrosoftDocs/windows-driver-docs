@@ -1,6 +1,5 @@
 ---
 title: Framework Request Objects
-author: windows-driver-content
 description: Framework Request Objects
 ms.assetid: 564f3600-4784-4a37-ac13-38338c38a9d2
 keywords:
@@ -35,9 +34,9 @@ Each I/O request contains a WDM *I/O request packet* ([**IRP**](https://msdn.mic
 -   [Managing Buffer Access Methods in UMDF Drivers](managing-buffer-access-methods-in-umdf-drivers.md)
 -   [Reusing Framework Request Objects](reusing-framework-request-objects.md)
 
- 
+ 
 
- 
+ 
 
 
 

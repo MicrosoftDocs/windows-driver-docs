@@ -1,6 +1,5 @@
 ---
 title: Modifying Parameters
-author: windows-driver-content
 description: Modifying Parameters
 ms.assetid: 01accd7f-7aa6-4f83-b8b4-81c04cd48dac
 keywords:
@@ -46,9 +45,9 @@ The following routines provide support for swapping buffers:
 
 [**FltRetainSwappedBufferMdlAddress**](https://msdn.microsoft.com/library/windows/hardware/ff544352)
 
- 
+ 
 
- 
+ 
 
 
 

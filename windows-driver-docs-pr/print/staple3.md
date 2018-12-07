@@ -1,6 +1,5 @@
 ---
 title: Staple
-author: windows-driver-content
 description: Staple
 ms.assetid: 71e5bd28-cbf8-4346-884a-88d9f310c378
 ms.date: 11/28/2017
@@ -28,9 +27,9 @@ Data Type:BIDI\_BOOL
 
 Description:Determines whether the print device has a stapler feature installed. If **TRUE**, the stapler feature is installed; if **FALSE**, the stapler feature is not installed.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: SCSI Miniport Driver's HwScsiStartIo Routine
-author: windows-driver-content
 description: SCSI Miniport Driver's HwScsiStartIo Routine
 ms.assetid: cb818e5f-b91f-44cb-972b-22f75459edeb
 keywords:
@@ -23,9 +22,9 @@ If the miniport driver's **DriverEntry** routine also requested that memory be a
 
 If the **DriverEntry** routine requested that memory be allocated for SRB extensions, the **SrbExtension** member in each SRB contains a pointer to the miniport driver's per-request storage area. Note that a miniport driver must request that memory be allocated for **SrbExtension**s if it maintains per-request state information. It cannot use an SRB for this purpose.
 
- 
+ 
 
- 
+ 
 
 
 

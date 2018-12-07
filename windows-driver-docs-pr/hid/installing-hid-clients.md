@@ -1,6 +1,5 @@
 ---
 title: Installing HID clients
-author: windows-driver-content
 description: This section describes the following requirements for installing HIDClass devices in Microsoft Windows.
 ms.assetid: 080992B1-AB36-4BA1-BF44-7CF0C9F4EEE3
 ms.date: 04/20/2017
@@ -20,9 +19,9 @@ This section describes the following requirements for installing HIDClass device
 
 There are no other HIDClass-specific requirements for installing HIDClass devices. For more information about how to install devices, see [Device Installation Overview](https://msdn.microsoft.com/library/windows/hardware/ff549455).
 
- 
+ 
 
- 
+ 
 
 
 

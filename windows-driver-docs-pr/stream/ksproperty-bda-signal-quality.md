@@ -53,7 +53,7 @@ Clients use KSPROPERTY\_BDA\_SIGNAL\_QUALITY to determine the amount of data suc
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -101,9 +101,9 @@ Requirements
 
 [**KSP\_NODE**](https://msdn.microsoft.com/library/windows/hardware/ff566720)
 
- 
+ 
 
- 
+ 
 
 
 

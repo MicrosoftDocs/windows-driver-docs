@@ -1,6 +1,5 @@
 ---
 title: System-Defined ECPs
-author: windows-driver-content
 description: System-Defined ECPs
 ms.assetid: 6acb4be4-a7aa-431d-b2d8-3ef6d41cb4ef
 ms.date: 04/20/2017
@@ -44,9 +43,9 @@ A GUID that identifies the **IO\_DEVICE\_HINT\_ECP\_CONTEXT** structure. Device 
 <span id="GUID_ECP_NETWORK_APP_INSTANCE"></span><span id="guid_ecp_network_app_instance"></span>GUID\_ECP\_NETWORK\_APP\_INSTANCE  
 A GUID that identifies the [**NETWORK\_APP\_INSTANCE\_ECP\_CONTEXT**](https://msdn.microsoft.com/library/windows/hardware/hh439443) structure. A client application in a failover cluster may have a set of files opened on a node in the cluster. The file objects are tagged to an application by an instance identifier in the **NETWORK\_APP\_INSTANCE\_ECP\_CONTEXT** structure. On failover, a secondary node can validate a client application's access to the opened files with the previously cached application instance identifier.
 
- 
+ 
 
- 
+ 
 
 
 

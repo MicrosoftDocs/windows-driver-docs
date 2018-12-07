@@ -1,6 +1,5 @@
 ---
 title: Basic Architecture of a Network Redirector
-author: windows-driver-content
 description: Basic Architecture of a Network Redirector
 ms.assetid: 60a7c79d-b89f-4c8b-9619-bd48c9e1efac
 keywords:
@@ -46,11 +45,11 @@ A network redirector may also need several other components:
 
 **Note**   TDI will not be supported in Microsoft Windows versions after Windows Vista. Use [Windows Filtering Platform](https://msdn.microsoft.com/library/windows/hardware/ff571068) or [Winsock Kernel](https://msdn.microsoft.com/library/windows/hardware/ff571083) instead.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

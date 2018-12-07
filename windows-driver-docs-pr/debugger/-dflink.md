@@ -3,7 +3,6 @@ title: dflink
 description: The dflink extension displays a linked list in the forward direction.
 ms.assetid: b75a01f6-557c-4602-83fa-629e16ba8c5d
 keywords: ["dflink Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -54,7 +53,7 @@ Specifies a mask of bits to ignore in each pointer. Each **Flink** address is AN
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -63,9 +62,9 @@ The **!dflink** extension traverses the **Flink** fields of the LIST\_ENTRY stru
 
 The [**dl (Display Linked List)**](dl--display-linked-list-.md) command is more versatile than [**!dblink**](-dblink.md) and **!dflink**.
 
- 
+ 
 
- 
+ 
 
 
 

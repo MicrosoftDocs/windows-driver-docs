@@ -1,6 +1,5 @@
 ---
 title: OID_PM_ADD_WOL_PATTERN
-author: windows-driver-content
 description: As a set, NDIS protocol drivers use the OID_PM_ADD_WOL_PATTERN OID to add a power management wake-on-LAN pattern to a network adapter. The InformationBuffer member of the NDIS_OID_REQUEST structure contains a pointer to an NDIS_PM_WOL_PATTERN structure.
 ms.assetid: 1005cebb-8ead-4d16-b3ea-5a74da0b054f
 ms.date: 08/08/2017
@@ -27,7 +26,7 @@ Before NDIS sends this OID request down to the underlying NDIS drivers or comple
 
 **Note**  The pattern identifier is a unique value for each of the patterns that are set on a network adapter. However, the pattern identifier is not globally unique across all miniport adapters.
 
- 
+ 
 
 If NDIS or an underlying network adapter removes a WOL pattern, it generates an [**NDIS\_STATUS\_PM\_WOL\_PATTERN\_REJECTED**](https://msdn.microsoft.com/library/windows/hardware/ff567414) status indication. The **StatusBuffer** member of the [**NDIS\_STATUS\_INDICATION**](https://msdn.microsoft.com/library/windows/hardware/ff567373) structure contains the ULONG WOL pattern identifier of the rejected WOL pattern.
 
@@ -92,9 +91,9 @@ Requirements
 
 [OID\_PNP\_ADD\_WAKE\_UP\_PATTERN](oid-pnp-add-wake-up-pattern.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Enabling DMA Transactions
-author: windows-driver-content
 description: Enabling DMA Transactions
 ms.assetid: 87735776-c371-425b-bc53-0c68375c9562
 keywords:
@@ -23,7 +22,7 @@ If your framework-based driver handles I/O operations for DMA devices, your driv
 
 1.  Call [**WdfDeviceSetAlignmentRequirement**](https://msdn.microsoft.com/library/windows/hardware/ff546861) to specify the device's requirement for buffer alignment.
 
-2.  Call [**WdfDmaEnablerCreate**](https://msdn.microsoft.com/library/windows/hardware/ff546983) to specify the type of DMA operations (single packet or scatter/gather) and the maximum transfer size that the device supports. Starting in KMDF version 1.11, the framework supports [system-mode DMA](supporting-system-mode-dma.md) on System on a Chip (SoC)–based systems running on Windows 8 or later versions of the operating system.
+2.  Call [**WdfDmaEnablerCreate**](https://msdn.microsoft.com/library/windows/hardware/ff546983) to specify the type of DMA operations (single packet or scatter/gather) and the maximum transfer size that the device supports. Starting in KMDF version 1.11, the framework supports [system-mode DMA](supporting-system-mode-dma.md) on System on a Chip (SoC)–based systems running on Windows 8 or later versions of the operating system.
 
 3.  Call [**WdfDmaEnablerSetMaximumScatterGatherElements**](https://msdn.microsoft.com/library/windows/hardware/ff547014) to specify the maximum number of elements that the device can support in a scatter/gather list, if the device supports scatter/gather operations.
 
@@ -40,16 +39,15 @@ status = WdfDmaEnablerCreate( DevExt->Device,
                               &dmaConfig, 
                               WDF_NO_OBJECT_ATTRIBUTES,
                               &DevExt->DmaEnabler );
-
 ```
 
 If your driver requires common buffers, the driver's *EvtDriverDeviceAdd* callback function typically sets them up. For more information about these buffers, see [Using Common Buffers](using-common-buffers.md).
 
 After a driver has called **WdfDmaEnablerCreate**, it can call [**WdfDmaEnablerWdmGetDmaAdapter**](https://msdn.microsoft.com/library/windows/hardware/ff547020) to obtain pointers to WDM [**DMA\_ADAPTER**](https://msdn.microsoft.com/library/windows/hardware/ff544062) structures that the framework creates for the device's input and output directions. However, most framework-based drivers do not need to access these structures.
 
- 
 
- 
+
+
 
 
 

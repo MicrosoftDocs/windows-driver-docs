@@ -1,6 +1,5 @@
 ---
 title: GDL Schema Attribute Element
-author: windows-driver-content
 description: GDL Schema Attribute Element
 ms.assetid: b46c0c6c-28af-4121-9182-65dc23b0ce7d
 keywords:
@@ -40,9 +39,9 @@ GDL compound data types are represented by the generic data type. Instances of c
 
 Values of GDL attributes that have no defined data type or are not associated with a template or do not conform to the syntax that is expected for the specified data type are represented by a &lt;CDATA&gt; section in the &lt;GDL\_ATTRIBUTE&gt; element. This section enables clients or other Parser-Filters to process the value as they desire. Such unknown data types will not contain the **xsi:type** attribute. More than one &lt;CDATA&gt; section might be required to represent the value if the value contains the string "\]\]&gt;".
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: UEFI check signature protocol
-author: windows-driver-content
 description: UEFI check signature protocol
 ms.assetid: 71df491f-c507-4ca4-831b-50ca95167fb3
 ms.date: 04/20/2017
@@ -12,13 +11,13 @@ ms.localizationpriority: medium
 
 **Note**  Some information in this section may apply only to Windows 10 Mobile and certain processor architectures.
 
- 
+ 
 
 The check signature protocol enables flashing tools to validate the signature on the catalog file in an FFU and verify that the hash of the table of hashes matches the hash specified in the catalog file.
 
 **Note**  Information about the structure of FFU files and flashing tools will be provided in a future release of this documentation.
 
- 
+ 
 
 ## EFI\_CHECKSIG\_PROTOCOL
 

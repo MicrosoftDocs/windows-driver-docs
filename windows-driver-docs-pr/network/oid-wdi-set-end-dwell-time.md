@@ -1,6 +1,5 @@
 ---
 title: OID_WDI_SET_END_DWELL_TIME
-author: windows-driver-content
 description: OID_WDI_SET_END_DWELL_TIME is typically sent during an Action Frame exchange, either when WDI has to wait some time before sending a followup Action Frame, or when the protocol sequence is complete.
 ms.assetid: 8ED1FDB1-BFDB-4522-8FF8-00D3B59EE43C
 ms.date: 07/18/2017
@@ -18,7 +17,7 @@ OID\_WDI\_SET\_END\_DWELL\_TIME is typically sent during an Action Frame exchang
 |-------|--------------------------|---------------------------------|
 | Port  | No                       | 1                               |
 
- 
+ 
 
 On receipt of this command, the firmware can choose to stop dwelling on the channel that had been specified when WDI sent the command to send the Action Frame. If the Dwell Time had already expired, the firmware should ignore this command.
 
@@ -54,9 +53,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

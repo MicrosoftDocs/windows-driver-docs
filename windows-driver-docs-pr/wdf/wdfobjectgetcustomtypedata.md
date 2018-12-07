@@ -1,6 +1,5 @@
 ---
 title: WdfObjectGetCustomTypeData macro
-author: windows-driver-content
 description: The WdfObjectGetCustomTypeData macro retrieves the data that the driver previously associated with a framework object and custom type.
 ms.assetid: 60A6546B-84C6-4A53-BAA1-3719DCBA63B4
 keywords:
@@ -56,7 +55,7 @@ Requirements
 <tbody>
 <tr class="odd">
 <td><p>Target platform</p></td>
-<td>[Universal](http://go.microsoft.com/fwlink/p/?linkid=531356)</td>
+<td><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" data-raw-source="[Universal](http://go.microsoft.com/fwlink/p/?linkid=531356)">Universal</a></td>
 </tr>
 <tr class="even">
 <td><p>Minimum KMDF version</p></td>
@@ -84,9 +83,9 @@ Requirements
 
 [**WdfObjectIsCustomType**](wdfobjectiscustomtype.md)
 
- 
+ 
 
- 
+ 
 
 
 

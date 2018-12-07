@@ -1,6 +1,5 @@
 ---
 title: ExXxxTimer Routines and EX_TIMER Objects
-author: windows-driver-content
 description: Starting with Windows 8.1, a comprehensive set of ExXxxTimer routines is available to manage timers.
 ms.assetid: 5F2622F5-4D1A-48F4-9FF5-27DEC6109266
 keywords: ["timers WDK kernel", "timer objects WDK kernel", "timer objects WDK kernel , about timer objects", "kernel dispatcher objects WDK , timer objects", "dispatcher objects WDK kernel , timer objects", "high-resolution timers WDK kernel", "no-wake timers WDK kernel", "EX_TIMER", "ExXxxTimer routines", "ExAllocateTimer", "ExDeleteTimer", "ExSetTimer", "ExCancelTimer", "ExTimerCallback"]
@@ -35,9 +34,9 @@ First, the **KTIMER** structure used as a timer object by the **Ke*Xxx*Timer** r
 
 Second, there is no **Ex*Xxx*Timer** equivalent of the [**KeReadStateTimer**](https://msdn.microsoft.com/library/windows/hardware/ff553099) routine, which indicates whether a timer object is in the signaled state. However, this routine is rarely used. If necessary, a driver that uses the **Ex*Xxx*Timer** routines can check whether a timer object is in the signaled state by reading a Boolean value that is set by the *ExTimerCallback* callback routine that the driver supplies to the **ExAllocateTimer** routine.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: RX_CONTEXT and IRP Management
-author: windows-driver-content
 description: RX_CONTEXT and IRP Management
 ms.assetid: 74ca681d-2599-442c-aebe-3556d6354f7f
 keywords:
@@ -60,51 +59,51 @@ The following routines manipulate RX\_CONTEXT structures:
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<strong>RxCompleteRequest</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554340)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff554340" data-raw-source="[&lt;strong&gt;RxCompleteRequest&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554340)"><strong>RxCompleteRequest</strong></a></p></td>
 <td align="left"><p>This routine is used to complete an IRP associated with an RX_CONTEXT structure. This routine is used internally by RDBSS and should not be used by network mini-redirectors.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>RxCompleteRequest_Real</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554348)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff554348" data-raw-source="[&lt;strong&gt;RxCompleteRequest_Real&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554348)"><strong>RxCompleteRequest_Real</strong></a></p></td>
 <td align="left"><p>This routine is used to complete an IRP associated with an RX_CONTEXT structure. This routine is used internally by RDBSS and should not be used by network mini-redirectors.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>RxCreateRxContext</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554367)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff554367" data-raw-source="[&lt;strong&gt;RxCreateRxContext&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554367)"><strong>RxCreateRxContext</strong></a></p></td>
 <td align="left"><p>This routine allocates a new RX_CONTEXT structure and initializes the data structure.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>RxDereferenceAndDeleteRxContext_Real</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554393)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff554393" data-raw-source="[&lt;strong&gt;RxDereferenceAndDeleteRxContext_Real&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554393)"><strong>RxDereferenceAndDeleteRxContext_Real</strong></a></p></td>
 <td align="left"><p>This routine dereferences an RX_CONTEXT structure, and if the reference count goes to zero, then it deallocates and removes the specified RX_CONTEXT structure from the RDBSS in-memory data structures.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>RxInitializeContext</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554502)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff554502" data-raw-source="[&lt;strong&gt;RxInitializeContext&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554502)"><strong>RxInitializeContext</strong></a></p></td>
 <td align="left"><p>This routine initializes a newly allocated RX_CONTEXT structure.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>RxPrepareContextForReuse</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554643)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff554643" data-raw-source="[&lt;strong&gt;RxPrepareContextForReuse&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554643)"><strong>RxPrepareContextForReuse</strong></a></p></td>
 <td align="left"><p>This routine prepares an RX_CONTEXT structure for reuse by resetting all operation-specific allocations and acquisitions previously made. The parameters obtained from the IRP are not modified. This routine is used internally by RDBSS and should not be used by network mini-redirectors.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>RxResumeBlockedOperations_Serially</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554701)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff554701" data-raw-source="[&lt;strong&gt;RxResumeBlockedOperations_Serially&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554701)"><strong>RxResumeBlockedOperations_Serially</strong></a></p></td>
 <td align="left"><p>This routine wakes up the next waiting thread, if any, on the serialized blocking I/O queue.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>RxSetMinirdrCancelRoutine</strong>](https://msdn.microsoft.com/library/windows/hardware/ff554722)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff554722" data-raw-source="[&lt;strong&gt;RxSetMinirdrCancelRoutine&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554722)"><strong>RxSetMinirdrCancelRoutine</strong></a></p></td>
 <td align="left"><p>The routine sets up a network mini-redirector cancel routine for an RX_CONTEXT structure.</p></td>
 </tr>
 <tr class="odd">
-<td align="left">[<strong>__RxSynchronizeBlockingOperations</strong>](https://msdn.microsoft.com/library/windows/hardware/ff557377)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/ff557377" data-raw-source="[&lt;strong&gt;__RxSynchronizeBlockingOperations&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff557377)"><strong>__RxSynchronizeBlockingOperations</strong></a></td>
 <td align="left"><p>This routine is used to synchronize blocking I/O to the same work queue. This routine is used internally by RDBSS to synchronize named pipe operations. This routine may be used by a network mini-redirector to synchronize operations on a separate queue that is maintained by the network mini-redirector.</p>
 <p>The routine is only available on Windows Server 2003.</p></td>
 </tr>
 <tr class="even">
-<td align="left">[<strong>__RxSynchronizeBlockingOperationsMaybeDroppingFcbLock</strong>](https://msdn.microsoft.com/library/windows/hardware/ff557382)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/ff557382" data-raw-source="[&lt;strong&gt;__RxSynchronizeBlockingOperationsMaybeDroppingFcbLock&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff557382)"><strong>__RxSynchronizeBlockingOperationsMaybeDroppingFcbLock</strong></a></td>
 <td align="left"><p>This routine is used to synchronize blocking I/O to the same work queue. This routine is used internally by RDBSS to synchronize named pipe operations. This routine may be used by a network mini-redirector to synchronize operations on a separate queue that is maintained by the network mini-redirector.</p>
 <p>The routine is only available on Windows XP and Windows 2000.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The following macros are defined in the *rxcontx.h* header file that call the routines listed in the previous table. These macros are normally used instead of calling these routines directly.
 
@@ -133,11 +132,11 @@ The following macros are defined in the *rxcontx.h* header file that call the ro
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

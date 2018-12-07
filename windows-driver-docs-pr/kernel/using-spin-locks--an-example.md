@@ -1,6 +1,5 @@
 ---
 title: Using Spin Locks An Example
-author: windows-driver-content
 description: Using Spin Locks An Example
 ms.assetid: 0f3cd7fe-d3e6-4024-9b2f-7140c6ddd1ea
 keywords: ["spin locks WDK kernel", "interrupt spin locks WDK kernel"]
@@ -52,9 +51,9 @@ Although a driver could try to serialize all interrupt-driven I/O operations to 
 
 For example, an ISR can save operation-specific data in the IRP it passes to the *DpcForIsr*. A refinement of this technique is to implement a *DpcForIsr* that consults an ISR-augmented count, processes the count's number of IRPs using ISR-supplied data, and resets the count to zero before returning. Of course, the count must be protected by the driver's interrupt spin lock because its ISR and a *SynchCritSection* would maintain its value dynamically.
 
- 
+ 
 
- 
+ 
 
 
 

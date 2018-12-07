@@ -1,6 +1,5 @@
 ---
 title: Creating the WIA Driver Item Tree
-author: windows-driver-content
 description: Creating the WIA Driver Item Tree
 ms.assetid: 3ae489b9-175e-4b1e-a6c8-a72a3a3c212a
 ms.date: 04/20/2017
@@ -21,9 +20,9 @@ After the minidriver is initialized, it must create the driver item tree in the 
 
 3.  Calling the [**IWiaDrvItem::AddItemToFolder**](https://msdn.microsoft.com/library/windows/hardware/ff543856) method on each child item to add the item to the driver item tree.
 
- 
+ 
 
- 
+ 
 
 
 

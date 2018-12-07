@@ -28,9 +28,9 @@ If the host stack requests to invalidate state, an offload target should respond
 
 Alternatively, the offload target can continue processing as normal until the host stack terminates the offload of the effected TCP connections.
 
- 
+ 
 
- 
+ 
 
 
 

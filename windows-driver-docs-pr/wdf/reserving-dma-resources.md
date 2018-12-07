@@ -1,6 +1,5 @@
 ---
 title: Reserving DMA Resources
-author: windows-driver-content
 description: Reserving DMA Resources
 ms.assetid: 8C5FF779-8D54-47D9-8EC6-7D4921F8F697
 ms.date: 04/20/2017
@@ -40,9 +39,9 @@ The following steps demonstrate how a driver can reserve and release a DMA enabl
 
     When the driver no longer needs the reservation, the driver calls [**WdfDmaTransactionFreeResources**](https://msdn.microsoft.com/library/windows/hardware/hh451177) from [*EvtInterruptDpc*](https://msdn.microsoft.com/library/windows/hardware/ff541721) or [*EvtDmaTransactionDmaTransferComplete*](https://msdn.microsoft.com/library/windows/hardware/hh406418). Alternatively, the driver can call **WdfDmaTransactionFreeResources** from its [*EvtReserveDma*](https://msdn.microsoft.com/library/windows/hardware/hh406425) event callback function.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Handling Requests to Stop a Device
-author: windows-driver-content
 description: Handling Requests to Stop a Device
 ms.assetid: 4c8f37b3-7961-4c78-a88b-3eec58155e66
 keywords:
@@ -62,9 +61,9 @@ If the driver determines that it is safe for the user to remove the device, the 
 
 For information about the order in which the framework calls a driver's event callback functions when stopping a device for removal, see [A User Unplugs a Device](a-user-unplugs-a-device.md).
 
- 
+ 
 
- 
+ 
 
 
 

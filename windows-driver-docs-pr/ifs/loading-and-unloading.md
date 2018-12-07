@@ -1,6 +1,5 @@
 ---
 title: Loading and Unloading
-author: windows-driver-content
 description: Loading and Unloading
 ms.assetid: e7a4e405-5361-4217-a279-2b54a10ebce2
 keywords:
@@ -76,33 +75,33 @@ The following minifilter driver callback routines are stored in the [**FLT\_REGI
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<em>InstanceSetupCallback</em>](https://msdn.microsoft.com/library/windows/hardware/ff551096)</p></td>
-<td align="left"><p>[<strong>PFLT_INSTANCE_SETUP_CALLBACK</strong>](https://msdn.microsoft.com/library/windows/hardware/ff551096)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff551096" data-raw-source="[&lt;em&gt;InstanceSetupCallback&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff551096)"><em>InstanceSetupCallback</em></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff551096" data-raw-source="[&lt;strong&gt;PFLT_INSTANCE_SETUP_CALLBACK&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff551096)"><strong>PFLT_INSTANCE_SETUP_CALLBACK</strong></a></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<em>InstanceQueryTeardownCallback</em>](https://msdn.microsoft.com/library/windows/hardware/ff551095)</p></td>
-<td align="left"><p>[<strong>PFLT_INSTANCE_QUERY_TEARDOWN_CALLBACK</strong>](https://msdn.microsoft.com/library/windows/hardware/ff551095)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff551095" data-raw-source="[&lt;em&gt;InstanceQueryTeardownCallback&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff551095)"><em>InstanceQueryTeardownCallback</em></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff551095" data-raw-source="[&lt;strong&gt;PFLT_INSTANCE_QUERY_TEARDOWN_CALLBACK&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff551095)"><strong>PFLT_INSTANCE_QUERY_TEARDOWN_CALLBACK</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<em>InstanceTeardownStartCallback</em>](https://msdn.microsoft.com/library/windows/hardware/ff551098)</p></td>
-<td align="left"><p>[<strong>PFLT_INSTANCE_TEARDOWN_CALLBACK</strong>](https://msdn.microsoft.com/library/windows/hardware/ff551098)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff551098" data-raw-source="[&lt;em&gt;InstanceTeardownStartCallback&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff551098)"><em>InstanceTeardownStartCallback</em></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff551098" data-raw-source="[&lt;strong&gt;PFLT_INSTANCE_TEARDOWN_CALLBACK&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff551098)"><strong>PFLT_INSTANCE_TEARDOWN_CALLBACK</strong></a></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<em>InstanceTeardownCompleteCallback</em>](https://msdn.microsoft.com/library/windows/hardware/ff551098)</p></td>
-<td align="left"><p>[<strong>PFLT_INSTANCE_TEARDOWN_CALLBACK</strong>](https://msdn.microsoft.com/library/windows/hardware/ff551098)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff551098" data-raw-source="[&lt;em&gt;InstanceTeardownCompleteCallback&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff551098)"><em>InstanceTeardownCompleteCallback</em></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff551098" data-raw-source="[&lt;strong&gt;PFLT_INSTANCE_TEARDOWN_CALLBACK&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff551098)"><strong>PFLT_INSTANCE_TEARDOWN_CALLBACK</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<em>FilterUnloadCallback</em>](https://msdn.microsoft.com/library/windows/hardware/ff551085)</p></td>
-<td align="left"><p>[<strong>PFLT_FILTER_UNLOAD_CALLBACK</strong>](https://msdn.microsoft.com/library/windows/hardware/ff551085)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff551085" data-raw-source="[&lt;em&gt;FilterUnloadCallback&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff551085)"><em>FilterUnloadCallback</em></a></p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff551085" data-raw-source="[&lt;strong&gt;PFLT_FILTER_UNLOAD_CALLBACK&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff551085)"><strong>PFLT_FILTER_UNLOAD_CALLBACK</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

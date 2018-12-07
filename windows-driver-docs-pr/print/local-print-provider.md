@@ -1,6 +1,5 @@
 ---
 title: Local Print Provider
-author: windows-driver-content
 description: Local Print Provider
 ms.assetid: c6f9ba42-5f0f-4919-bfac-e4cd1045de4d
 keywords:
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 **Warning**  
 Starting with Windows 10, the APIs which support third-party print providers are deprecated. Microsoft does not recommend any investment into third-party print providers. Additionally, on Windows 8 and newer products where the v4 print driver model is available, third-party print providers may not create or manage queues which use v4 print drivers.
 
- 
+ 
 
 The local print provider for Microsoft Windows 2000 and later provides job control and printer management capabilities for all printers that are accessed through the local print provider's port monitors. (A client administrator sets up access to such printers by selecting the **Local Printer** option when using the Add Printer Wizard.) Such printers include those connected to the local system's serial and parallel ports. They can also include devices connected to other I/O channels, such as SCSI ports, along with printers connected to remote non-NT-based-operating system servers.
 
@@ -41,9 +40,9 @@ As the diagram shows, an application creates a print job by calling the Graphics
 
 A vendor can create [*partial print providers*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-partial-print-provider) that work in conjunction with the local print provider to support custom network configurations.
 
- 
+ 
 
- 
+ 
 
 
 

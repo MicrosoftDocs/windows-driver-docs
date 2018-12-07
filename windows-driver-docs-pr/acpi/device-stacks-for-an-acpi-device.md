@@ -1,6 +1,5 @@
 ---
 title: Device Stacks for an ACPI Device
-author: windows-driver-content
 description: Device Stacks for an ACPI Device
 ms.assetid: f177d29f-eaf9-4126-8cb3-9355d977bfb0
 keywords:
@@ -40,9 +39,9 @@ Microsoft supplies the root bus driver and the [ACPI driver](https://msdn.micros
 
 A vendor can supply an optional WDM function driver for an ACPI device. The function driver implements the device's operation region and the related device-specific operation.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: .eventlog (Display Recent Events)
 description: The .eventlog command displays the recent Microsoft Win32 debug events, such as module loading, process creation and termination, and thread creation and termination.
 ms.assetid: 8075007a-42a2-4973-bb04-cca9a4a1b9b6
 keywords: [".eventlog (Display Recent Events) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -46,7 +45,7 @@ The **.eventlog** command displays the recent Microsoft Win32 debug events, such
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -73,9 +72,9 @@ The following example shows the **.eventlog** command.
 Last event: Break instruction exception - code 80000003 (first chance)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

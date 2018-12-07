@@ -3,7 +3,6 @@ title: T (Windows Debugger Glossary)
 description: Glossary page - T
 Robots: noindex, nofollow
 ms.assetid: e17a63eb-a002-4e72-86a9-8176bf5f75d0
-ms.author: domars
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -49,9 +48,9 @@ See bug check.
 <span id="type"></span><span id="TYPE"></span>**type**  
 See symbol type.
 
- 
+ 
 
- 
+ 
 
 
 

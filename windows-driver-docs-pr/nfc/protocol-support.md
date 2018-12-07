@@ -1,6 +1,5 @@
 ---
 title: NFP protocol support
-author: windows-driver-content
 description: NFP protocol support
 ms.assetid: B9F27F28-1D67-4692-9EA1-FC671B5C2098
 keywords:
@@ -27,9 +26,9 @@ ms.localizationpriority: medium
 -   [Windows protocol](windows-protocol.md)
 -   [Peer-to-peer](peer-to-peer.md)
 
- 
+ 
 
- 
+ 
 ## Related topics
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [Near field proximity DDI reference](https://msdn.microsoft.com/library/windows/hardware/jj866056)  

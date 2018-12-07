@@ -1,6 +1,5 @@
 ---
 title: WMI Class Names and Base Classes
-author: windows-driver-content
 description: WMI Class Names and Base Classes
 ms.assetid: 6c3f74a3-e596-4694-8619-db38d67e030c
 keywords: ["base classes WDK WMI", "names WDK WMI", "classes WDK WMI", "WMI WDK kernel , classes"]
@@ -74,9 +73,9 @@ class MSSerial_SendEvent : MSSerialEvent
 
 For more information about defining base classes in MOF format, see the Microsoft Windows SDK.
 
- 
+ 
 
- 
+ 
 
 
 

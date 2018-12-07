@@ -1,6 +1,5 @@
 ---
 title: Handling a GUID_TARGET_DEVICE_QUERY_REMOVE Event
-author: windows-driver-content
 description: Handling a GUID_TARGET_DEVICE_QUERY_REMOVE Event
 ms.assetid: f3e867c5-f7b8-40d2-a6cc-c5cb82e0b59b
 keywords: ["notifications WDK PnP , target device changes", "target device change notifications WDK PnP", "EventCategoryTargetDeviceChange notification", "GUID_TARGET_DEVICE_QUERY_REMOVE"]
@@ -32,9 +31,9 @@ When successfully handling a GUID\_TARGET\_DEVICE\_QUERY\_REMOVE event, a notifi
 
 Closing a handle to a device does not cancel a driver's registration for PnP target device change notification. The PnP manager can still call the driver's notification callback routine, but in such calls the file object in the *NotificationStructure* is not valid.
 
- 
+ 
 
- 
+ 
 
 
 

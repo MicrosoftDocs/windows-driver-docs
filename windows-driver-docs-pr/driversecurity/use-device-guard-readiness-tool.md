@@ -56,7 +56,7 @@ The following list of DDIs that are not reserved for system use may be impacted:
 | [**MmMapLockedPagesSpecifyCache**](https://msdn.microsoft.com/library/windows/hardware/ff554629)                              |
 | [**MmProtectMdlSystemAddress**](https://msdn.microsoft.com/library/windows/hardware/ff554670)                                    |
 | [**ZwAllocateVirtualMemory**](https://msdn.microsoft.com/library/windows/hardware/ff566416)                                        |
-| [**ZwCreateSection**](https://msdn.microsoft.com/library/windows/hardware/ff566428)                                                        |
+| [**ZwCreateSection**](https://msdn.microsoft.com/library/windows/hardware/ff566428)                                                        |
 | [**ZwMapViewOfSection**](https://msdn.microsoft.com/library/windows/hardware/ff566481)                                                  |
 | [**NtCreateSection**](https://msdn.microsoft.com/library/windows/hardware/ff556473)                                                        |
 | [**NtMapViewOfSection**](https://msdn.microsoft.com/library/windows/hardware/ff556551)                                                  |
@@ -64,7 +64,7 @@ The following list of DDIs that are not reserved for system use may be impacted:
 | NDIS                                                                                                 |
 | [**NdisAllocateMemoryWithTagPriority**](https://msdn.microsoft.com/library/windows/hardware/ff561606)                  |
 | Storage                                                                                              |
-| [**StorPortGetDataInBufferSystemAddress**](https://msdn.microsoft.com/library/windows/hardware/jj553720)             |
+| [**StorPortGetDataInBufferSystemAddress**](https://msdn.microsoft.com/library/windows/hardware/jj553720)             |
 | [**StorPortGetSystemAddress**](https://msdn.microsoft.com/library/windows/hardware/ff567100)                                     |
 | [**ChangerClassAllocatePool**](https://msdn.microsoft.com/library/windows/hardware/ff551402)                                     |
 | Display                                                                                              |
@@ -93,7 +93,7 @@ The following list of DDIs that are not reserved for system use may be impacted:
 | [**WdfIoTargetAllocAndQueryTargetProperty**](https://msdn.microsoft.com/library/windows/hardware/ff548585)             |
 | [**WdfRegistryQueryMemory**](https://msdn.microsoft.com/library/windows/hardware/ff549920)                                             |
 
- 
+
 ## Using the DGR tool
 
 To use Device Guard Readiness Tool, complete the following steps:
@@ -122,13 +122,13 @@ To use Device Guard Readiness Tool, complete the following steps:
 
     Install the desired test driver(s) on the target test PC.
 
-    **Important**  After you have tested the development driver and worked through any code issues, retest the final production driver. In addition, use the HLK to test the driver. For more information, see [HyperVisor Code Integrity Readiness Test](https://msdn.microsoft.com/library/windows/hardware/dn955152).
+    **Important**  After you have tested the development driver and worked through any code issues, retest the final production driver. In addition, use the HLK to test the driver. For more information, see [HyperVisor Code Integrity Readiness Test](https://msdn.microsoft.com/library/windows/hardware/dn955152).
 
-     
+
 
 -   **Install the Device Guard Readiness Tool**
 
-    **Warning**  
+    **Warning**  
     As the Device Guard Readiness Tool changes registry values and may impact features such as secure boot, use a test PC that doesn't contain any data or applications. After the tests have been run, you may want to re-install Windows to re-establish your desired security configuration.
 
     1. Download the tool from here: [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/download/details.aspx?id=53337).
@@ -174,7 +174,7 @@ To use Device Guard Readiness Tool, complete the following steps:
     | Red - Errors      | Elements are missing or not configured that will prevent enabling and using DG/CG.                |
     | Yellow - Warnings | This device can be used to enable and use DG/CG, but additional security benefits will be absent. |
     | Green - Messages  | This device is fully compliant with DG/CG requirements.                                           |
-    
+
     In addition to the output to the screen, by default, the log file with detailed output is located at C:\\DGLogs
 
     There are five steps (or sections) in the output of the Device Guard Readiness Tool. Step 1 contains the is the driver compatibility information.
@@ -211,7 +211,9 @@ To use Device Guard Readiness Tool, complete the following steps:
     ```
 
 
-    Use the following table to interpret the output and determine what driver code changes are needed to fix the different types of HVCI incompatibilities.
+
+Use the following table to interpret the output and determine what driver code changes are needed to fix the different types of HVCI incompatibilities.
+
 
 
 <table>
@@ -236,14 +238,14 @@ To use Device Guard Readiness Tool, complete the following steps:
 <tr class="odd">
 <td align="left"><p>Execute Page Protection</p></td>
 <td align="left"><p>The caller specified an executable page protection.</p>
-<p>Specify a "no execute" page protection mask.</p>
+<p>Specify a &quot;no execute&quot; page protection mask.</p>
 </td>
 </tr>
 
 <tr class="even">
 <td align="left"><p>Execute Page Mapping</p></td>
 <td align="left"><p>The caller specified an executable memory descriptor list (MDL) mapping.</p>
-<p> Make sure that the mask that is used contains MdlMappingNoExecute. For more information, see [MmGetSystemAddressForMdlSafe](https://msdn.microsoft.com/library/windows/hardware/ff554559.aspx)</p>
+<p> Make sure that the mask that is used contains MdlMappingNoExecute. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff554559.aspx" data-raw-source="[MmGetSystemAddressForMdlSafe](https://msdn.microsoft.com/library/windows/hardware/ff554559.aspx)">MmGetSystemAddressForMdlSafe</a></p>
 </td>
 </tr>
 
@@ -265,7 +267,7 @@ To use Device Guard Readiness Tool, complete the following steps:
 <td align="left"><p>IAT in Executable Section</p></td>
 <td align="left"><p>The import address table (IAT), should not be an executable section of memory.</p>
 <p>This issue occurs when the IAT, is located in a Read and Execute (RX) only section of memory. This means that the OS will not be able to write to the IAT to set the correct addresses for where the referenced DLL. </p>
-<p> One way that this can occur is when using the [/MERGE (Combine Sections)](https://docs.microsoft.com/cpp/build/reference/merge-combine-sections) option in code linking. For example if .rdata (Read-only initialized data) is merged with .text data (Executable code), it is possible that the IAT may end up in an executable section of memory.  </p>
+<p> One way that this can occur is when using the <a href="https://docs.microsoft.com/cpp/build/reference/merge-combine-sections" data-raw-source="[/MERGE (Combine Sections)](https://docs.microsoft.com/cpp/build/reference/merge-combine-sections)">/MERGE (Combine Sections)</a> option in code linking. For example if .rdata (Read-only initialized data) is merged with .text data (Executable code), it is possible that the IAT may end up in an executable section of memory.  </p>
 </td>
 </tr>
 
@@ -279,7 +281,7 @@ Unsupported Relocs
 
 <p>In Windows 10, version 1507 through Windows 10, version 1607, because of the use of Address Space Layout Randomization (ASLR) an issue can arise with address alignment and memory relocation.  The operating system needs to relocate the address from where the linker set its default base address to the actual location that ASLR assigned. This relocation cannot straddle a page boundary.  For example, consider a 64-bit address value that starts at offset 0x3FFC in a page. It’s address value overlaps over to the next page at offset 0x0003. This type of overlapping relocs is not supported prior to Windows 10, version 1703.</p>
 
-<p>This situation can occur when a global struct type variable initializer has a misaligned pointer to another global, laid out in such a way that the linker cannot move the variable to avoid the straddling relocation. The linker will attempt to move the variable, but there are situations where it may not be able to do so (for example with large misaligned structs or large arrays of misaligned structs). Where appropriate, modules should be assembled using the [/Gy (COMDAT)](https://docs.microsoft.com/cpp/build/reference/gy-enable-function-level-linking) option to allow the linker to align module code as much as possible.</p>
+<p>This situation can occur when a global struct type variable initializer has a misaligned pointer to another global, laid out in such a way that the linker cannot move the variable to avoid the straddling relocation. The linker will attempt to move the variable, but there are situations where it may not be able to do so (for example with large misaligned structs or large arrays of misaligned structs). Where appropriate, modules should be assembled using the <a href="https://docs.microsoft.com/cpp/build/reference/gy-enable-function-level-linking" data-raw-source="[/Gy (COMDAT)](https://docs.microsoft.com/cpp/build/reference/gy-enable-function-level-linking)">/Gy (COMDAT)</a> option to allow the linker to align module code as much as possible.</p>
 
 
 
@@ -337,7 +339,6 @@ typedef struct _BAD_STRUCT {
 BAD_STRUCT MayHaveStraddleRelocations[4096] = { // as a global variable
       BAD_INITIALIZER4
 };
-
 ```
 
 There are other situations involving the use of assembler code, where this issue can also occur.
@@ -363,7 +364,7 @@ Use the Driver Verifier code integrity option flag (0x02000000) to enable extra 
 ```console
 verifier.exe /flags 0x02000000 /driver <driver.sys>
 ```
-To choose this option if using the verifier GUI, select *Create custom settings* (for code developers), select *Next*, and then select _Code integrity checks_.
+To choose this option if using the verifier GUI, select *Create custom settings* (for code developers), select *Next*, and then select _Code integrity checks_.
 
 You can use the verifier command line /query option to display the current driver verifier information.
 
@@ -371,7 +372,7 @@ You can use the verifier command line /query option to display the current drive
 verifier /query 
 ```
 
- 
+
 
 
 

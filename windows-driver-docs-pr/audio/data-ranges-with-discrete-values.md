@@ -20,9 +20,9 @@ If your audio device supports sample frequencies of 11, 22, and 44 kHz, for exam
 
 Another approach is to provide a list of data ranges in which each data range specifies a discrete value rather than a range of values for each parameter. For example, instead of providing a single data range to specify a range of sample frequencies from 11 to 44 kHz, the data-range array can contain three separate elements for 11, 22, and 44 kHz. In each of these elements, the maximum and minimum sample frequencies are set to the same value (11, 22, or 44 kHz). The benefit of this approach is that it eliminates any ambiguity about the precise values that are supported. Also, if one discrete value is preferred over another, the data range containing this value can be moved to a position in the array that is ahead of the data range containing the other value. A minor disadvantage of discrete values is that they can increase the size of the data-range array.
 
- 
+ 
 
- 
+ 
 
 
 

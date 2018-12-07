@@ -1,6 +1,5 @@
 ---
 title: Encoder Code Examples
-author: windows-driver-content
 description: Encoder Code Examples
 ms.assetid: cbe773ad-2222-4d62-8e1e-6d47418a3e7c
 keywords:
@@ -113,7 +112,7 @@ DEFINE_KSPROPERTY_TABLE(ENCAPI_BitRate) {
 
 **Note**   The *get*-property handler returns the encoding bit rate, and the *Set*-property handler must test that the incoming passed-in value is valid before using it.
 
- 
+ 
 
 ### **Implementing Supported Encoding Bit Rate Modes**
 
@@ -192,7 +191,7 @@ DEFINE_KSPROPERTY_TABLE(ENCAPI_BitRateMode) {
 
 **Note**   The *get*-property handler should return the encoding bit rate mode, and the *Set*-property handler must test that the incoming passed-in value is valid before using it.
 
- 
+ 
 
 The property sets are then specified as the [**KSFILTER\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff562553) structure's automation table.
 
@@ -322,9 +321,9 @@ NTSTATUS CreateDwordValueInCapabilityRegistry(IN PDEVICE_OBJECT pdo, IN GUID cat
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

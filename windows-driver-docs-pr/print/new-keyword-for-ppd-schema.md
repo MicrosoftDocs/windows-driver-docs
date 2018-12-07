@@ -1,6 +1,5 @@
 ---
 title: ew Keyword for PPD Schema
-author: windows-driver-content
 description: ew Keyword for PPD Schema
 ms.assetid: 05caa402-4949-4c0f-913c-1c87e65c30d7
 keywords:
@@ -19,9 +18,9 @@ For Windows Vista and later versions of Windows, a new root-level keyword should
 
 Developers writing PScript-based drivers must use a separate GDL file that the driver's main PPD file references directly using the \***MSBidiQueryFile** Keyword.
 
- 
+ 
 
- 
+ 
 
 
 

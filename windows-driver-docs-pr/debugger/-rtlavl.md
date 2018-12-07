@@ -3,7 +3,6 @@ title: rtlavl
 description: The rtlavl extension displays the entries of an RTL_AVL_TABLE structure.
 ms.assetid: b1e19b13-8bb6-4f40-8d51-368fafc38ebc
 keywords: ["avl tables", "rtlavl Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -58,7 +57,7 @@ Displays some brief Help text for this extension in the Debugger Command window.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -67,13 +66,13 @@ Use the [**!gentable**](-gentable.md) extension to display AVL tables.
 Remarks
 -------
 
-Including the *Module***!***Type* option causes each entry in the table to be interpreted as having the given type.
+Including the <em>Module</em>**!**<em>Type</em> option causes each entry in the table to be interpreted as having the given type.
 
 The display can be interrupted at any time by pressing CTRL+BREAK (in WinDbg) or CTRL+C (in KD or CDB).
 
- 
+ 
 
- 
+ 
 
 
 

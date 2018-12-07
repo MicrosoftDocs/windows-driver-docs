@@ -77,7 +77,7 @@ Return value
 </tr>
 <tr class="even">
 <td align="left"><strong>STATUS_OBJECT_NAME_NOT_FOUND</strong></td>
-<td align="left"><p>The object name was not found. This error can be returned if the network mini-redirector was asked to open a file that doesn't exist.</p></td>
+<td align="left"><p>The object name was not found. This error can be returned if the network mini-redirector was asked to open a file that doesn&#39;t exist.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><strong>STATUS_OBJECT_PATH_NOT_FOUND</strong></td>
@@ -94,7 +94,7 @@ Return value
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -168,9 +168,9 @@ Requirements
 
 [**MRxZeroExtend**](mrxzeroextend.md)
 
- 
+ 
 
- 
+ 
 
 
 

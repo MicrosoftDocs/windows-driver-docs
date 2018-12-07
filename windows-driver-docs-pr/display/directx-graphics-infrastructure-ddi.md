@@ -29,9 +29,9 @@ The following sections describe how the user-mode display driver supports and us
 
 [Setting DXGI Information in the Registry](setting-dxgi-information-in-the-registry.md)
 
- 
+ 
 
- 
+ 
 
 
 

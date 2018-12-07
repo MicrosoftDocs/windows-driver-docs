@@ -1,6 +1,5 @@
 ---
 title: Accessing Read-Only System Memory
-author: windows-driver-content
 description: Accessing Read-Only System Memory
 ms.assetid: d2c1f933-3a7e-4e82-b96d-4f019b27abd5
 keywords: ["memory management WDK kernel , read-only memory", "read-only memory WDK kernel", "intercepting system calls", "global strings WDK memory"]
@@ -42,9 +41,9 @@ CHAR myString[] = "This string can be modified.";
 
 This declaration makes sure that the string is put in writable memory.
 
- 
+ 
 
- 
+ 
 
 
 

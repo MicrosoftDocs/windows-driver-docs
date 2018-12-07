@@ -3,7 +3,6 @@ title: Parsing Extension Arguments
 description: Parsing Extension Arguments
 ms.assetid: 3c75fb75-50d0-48e4-abf4-e4dba9a080f9
 keywords: ["EngExtCpp extensions, parsing arguments"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -153,9 +152,9 @@ The method [**SetUnnamedArg**](https://msdn.microsoft.com/library/windows/hardwa
 
 Similar methods exist for named arguments. [**SetArg**](https://msdn.microsoft.com/library/windows/hardware/ff556614) is used to change the value of any named argument and [**SetArgStr**](https://msdn.microsoft.com/library/windows/hardware/ff556618) and [**SetArgU64**](https://msdn.microsoft.com/library/windows/hardware/ff556622) are used for named string and expression arguments respectively.
 
- 
+ 
 
- 
+ 
 
 
 

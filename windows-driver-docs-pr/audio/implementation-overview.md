@@ -49,9 +49,9 @@ If a UWP app streams media content and uses Media Foundation, Media Engine, or t
 
 UWP apps that use WASAPI or streaming communications have to explicitly opt-in for hardware offloading.
 
- 
+ 
 
- 
+ 
 
 
 

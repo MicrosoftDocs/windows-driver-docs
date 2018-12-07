@@ -1,6 +1,5 @@
 ---
 title: Configurability
-author: windows-driver-content
 description: This topic discuses extensibility points available to the NFC client driver, enabling the client driver to configure the parameters of many of its operations.
 ms.assetid: 29C6C96E-9F20-4750-ABDD-103871B405FA
 keywords:
@@ -37,9 +36,9 @@ The RF discovery configuration can be set by the NFC client driver through the [
 
 The LLCP configuration can be set by the NFC client driver through the [**NfcCxSetLlcpConfig**](https://msdn.microsoft.com/library/windows/hardware/dn905615) method provided by the NFC CX. The LLCP configuration should be done during initialization after [**NfcCxDeviceInitialize**](https://msdn.microsoft.com/library/windows/hardware/dn905611), otherwise an error is returned.
 
- 
+ 
 
- 
+ 
 ## Related topics
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [NFC class extension (CX) reference](https://msdn.microsoft.com/library/windows/hardware/dn905536)  

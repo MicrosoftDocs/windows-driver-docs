@@ -1,6 +1,5 @@
 ---
 title: Using Neither Buffered Nor Direct I/O
-author: windows-driver-content
 description: Using Neither Buffered Nor Direct I/O
 ms.assetid: e85af2e0-e532-47ca-918e-087e7aff859e
 keywords: ["buffers WDK I/O , neither buffered nor direct I/O", "data buffers WDK I/O , neither buffered nor direct I/O", "neither buffered nor direct I/O WDK kernel"]
@@ -35,9 +34,9 @@ When a driver receives an IRP that specifies an I/O operation using neither buff
 
 In effect, the driver must choose on a per-IRP basis whether to do buffered I/O, direct I/O, or I/O in the context of the calling thread, and it must handle any exceptions that might occur in a user-mode thread context. The driver must manage its own user buffer accesses, double-buffering operations, and memory mappings, as necessary, instead of letting the I/O manager handle these operations for the driver.
 
- 
+ 
 
- 
+ 
 
 
 

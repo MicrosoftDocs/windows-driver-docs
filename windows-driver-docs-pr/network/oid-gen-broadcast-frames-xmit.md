@@ -1,6 +1,5 @@
 ---
 title: OID_GEN_BROADCAST_FRAMES_XMIT
-author: windows-driver-content
 description: As a query, the OID_GEN_BROADCAST_FRAMES_XMIT OID specifies the number of broadcast packets that are transmitted without errors.
 ms.assetid: e86602ce-18b7-48ef-8962-75f6984d7bdb
 ms.date: 08/08/2017
@@ -57,9 +56,9 @@ Requirements
 
 [OID\_GEN\_STATISTICS](oid-gen-statistics.md)
 
- 
+ 
 
- 
+ 
 
 
 

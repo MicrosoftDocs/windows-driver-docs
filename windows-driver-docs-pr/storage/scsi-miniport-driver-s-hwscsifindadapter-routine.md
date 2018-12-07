@@ -1,6 +1,5 @@
 ---
 title: SCSI Miniport Driver's HwScsiFindAdapter Routine
-author: windows-driver-content
 description: SCSI Miniport Driver's HwScsiFindAdapter Routine
 ms.assetid: c89ad751-ff29-4aa7-b907-cb490d060906
 keywords:
@@ -22,9 +21,9 @@ In general, an *HwScsiFindAdapter* routine is responsible for using the supplied
 
 See [**PORT\_CONFIGURATION\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff563900) and [*HwScsiFindAdapter*](https://msdn.microsoft.com/library/windows/hardware/ff557300) for more information.
 
- 
+ 
 
- 
+ 
 
 
 

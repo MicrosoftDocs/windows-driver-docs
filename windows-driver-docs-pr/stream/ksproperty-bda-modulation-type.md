@@ -53,7 +53,7 @@ Clients use KSPROPERTY\_BDA\_MODULATION\_TYPE to control the demodulator type su
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -85,9 +85,9 @@ Requirements
 
 [**ModulationType**](https://msdn.microsoft.com/library/windows/hardware/ff567735)
 
- 
+ 
 
- 
+ 
 
 
 

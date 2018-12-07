@@ -1,6 +1,5 @@
 ---
 title: Special Case Mappings
-author: windows-driver-content
 description: Special Case Mappings
 ms.assetid: 1691e0e5-7b05-40e1-8747-40926f2eba9c
 keywords: ["joysticks WDK HID , axes", "virtual joystick drivers WDK HID , axes", "VJoyD WDK HID , axes", "axes WDK joysticks", "special case mappings WDK joysticks", "case mappings WDK joysticks", "Z-axis case mapping WDK joysticks", "car controller case mapping WDK joysticks", "mapping axes"]
@@ -59,7 +58,7 @@ In the rare cases where a Z-Axis described in HID is the desired WinMM mapping, 
 </tbody>
 </table>
 
- 
+
 
 If the device is not a six-degree-of-freedom device, but still requires a Z-axis to be portrayed through DirectInput, the type override should be set to include JOYTYPE\_INFOZISZ. This type override causes DirectInput to revert to the DirectX 7.0 mapping.
 
@@ -177,10 +176,12 @@ The following interfaces are affected by axis overrides:
         </tbody>
         </table>
 
-         
 
-    -   Under each Axis key specify the Axis that you want to override. Create a binary value named **Attributes** and set it to: 00 00 00 00 HUP 00 HU 00. HUP is a two-digit hexadecimal number specifying the HID usage page of the device object (axis) that you want to override. HU is a two-digit hexadecimal number specifying the HID usage of the device object. Use DIQuick to determine these values, or see the HID specification.
-    -   Plug the device back in and use any program to check whether the overrides work.
+
+
+-   Under each Axis key specify the Axis that you want to override. Create a binary value named **Attributes** and set it to: 00 00 00 00 HUP 00 HU 00. HUP is a two-digit hexadecimal number specifying the HID usage page of the device object (axis) that you want to override. HU is a two-digit hexadecimal number specifying the HID usage of the device object. Use DIQuick to determine these values, or see the HID specification.
+-   Plug the device back in and use any program to check whether the overrides work.
+
 
 ### Meaning of the registry keys
 
@@ -231,9 +232,9 @@ Any mapping that does not fall within the following rules is unsupported.
 
 If the device does not use joyhid.vxd as its driver, the wUsage and wUsagePage values are only used to describe what usage and usage page the object should be reported as, rather than being any form of override. The device uses joyhid.vxd only if the registry key HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\MediaProperties\\PrivateProperties\\Joystick\\OEM\\VID&PID\\OEMCallout equals joyhid.vxd.
 
- 
 
- 
+
+
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: WIA Camera Tree
-author: windows-driver-content
 description: WIA Camera Tree
 ms.assetid: 8c932c91-b389-4b4c-b686-75ca6bf3de6a
 ms.date: 04/20/2017
@@ -33,9 +32,9 @@ Through the WIA service, an application can request the following from a camera 
 
 In the preceding diagram, the camera root item has three child items: two pictures and one folder. The folder has two child items that are both pictures. Camera items can also represent sound data or any other data on the camera that the device presents to the application.
 
- 
+ 
 
- 
+ 
 
 
 

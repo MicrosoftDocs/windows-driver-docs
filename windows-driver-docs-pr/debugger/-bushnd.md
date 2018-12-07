@@ -3,7 +3,6 @@ title: bushnd
 description: The bushnd extension displays a HAL BUS_HANDLER structure.
 ms.assetid: dd2cb9c1-9abe-4209-a4fa-dc50965e807e
 keywords: ["bushnd Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -48,11 +47,11 @@ Specifies the hexadecimal address of the HAL BUS\_HANDLER structure. If omitted,
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

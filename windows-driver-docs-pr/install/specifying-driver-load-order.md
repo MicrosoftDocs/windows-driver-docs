@@ -100,9 +100,9 @@ The operating system can promote a driver's **StartType** to be a boot start dri
 
 For more information about promoting a driver's **StartType** at boot, depending on the boot scenario, see [**INF AddService directive**](inf-addservice-directive.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: EFI_BATTERY_CHARGING_PROTOCOL.ChargeBattery
-author: windows-driver-content
 description: EFI_BATTERY_CHARGING_PROTOCOL.ChargeBattery
 ms.assetid: 362b812f-b64b-4b6c-84a6-61c09a60f8a3
 ms.date: 04/20/2017
@@ -74,7 +73,7 @@ Returns one of the following status codes.
 </tbody>
 </table>
 
- 
+ 
 
 ## Remarks
 

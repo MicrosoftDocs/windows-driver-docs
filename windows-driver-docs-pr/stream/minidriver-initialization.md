@@ -1,6 +1,5 @@
 ---
 title: Minidriver Initialization
-author: windows-driver-content
 description: Minidriver Initialization
 ms.assetid: 5aa4e2c6-5848-45fe-8a89-686aae7e85e6
 keywords:
@@ -28,9 +27,9 @@ Once the minidriver completes that request, the class driver uses [*StrMiniRecei
 
 Once the class driver finishes processing the stream data, it uses [*StrMiniReceiveDevicePacket*](https://msdn.microsoft.com/library/windows/hardware/ff568463) to send the SRB\_INITIALIZATION\_COMPLETE request. At this point, the minidriver is ready to start handling requests on each stream.
 
- 
+ 
 
- 
+ 
 
 
 

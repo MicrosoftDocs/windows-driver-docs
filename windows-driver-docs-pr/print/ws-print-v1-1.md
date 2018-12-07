@@ -1,6 +1,5 @@
 ---
 title: Web Services on Devices for Printing (WS-Print)
-author: windows-driver-content
 description: Web services on devices for printing (WS-Print) was introduced in Windows Vista, to provide a connection protocol for printing and scanning peripherals.
 ms.assetid: 4A641EF8-FBD3-46CA-9284-28AF1A4B8226
 ms.date: 04/20/2017
@@ -63,13 +62,13 @@ After the printer confirms that it supports WS-Print v1.2, the client sends a Ge
 
 **WS-Print v1.1**
 
-**Namespace:** http://schemas.microsoft.com/windows/2010/06/wdp/printv11
-**XML Namespace Definition:** xmlns:wprt12="http://schemas.microsoft.com/windows/2012/10/wdp/printV12"
+**Namespace:** <http://schemas.microsoft.com/windows/2010/06/wdp/printv11>
+**XML Namespace Definition:** xmlns:wprt12="<http://schemas.microsoft.com/windows/2012/10/wdp/printV12>"
 
 **WS-Print v1.2**
 
-**Namespace:** http://schemas.microsoft.com/windows/2012/10/wdp/printV12
-**XML Namespace Definition:** xmlns:wprt11="http://schemas.microsoft.com/windows/2010/06/wdp/printv11"
+**Namespace:** <http://schemas.microsoft.com/windows/2012/10/wdp/printV12>
+**XML Namespace Definition:** xmlns:wprt11="<http://schemas.microsoft.com/windows/2010/06/wdp/printv11>"
 ## Specifying WS-Print 1.1 support
 
 

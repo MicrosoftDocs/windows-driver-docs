@@ -17,9 +17,9 @@ The event items in this set are specified as the following KSEVENT\_PINCAPS\_CHA
 
 [**KSEVENT\_PINCAPS\_JACKINFOCHANGE**](ksevent-pincaps-jackinfochange.md)
 
- 
+ 
 
- 
+ 
 
 
 

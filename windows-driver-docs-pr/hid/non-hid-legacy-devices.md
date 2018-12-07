@@ -1,6 +1,5 @@
 ---
 title: Non-HID legacy devices
-author: windows-driver-content
 description: This section describes drivers, transports, and filter-drivers for non-HID keyboards and mice. These devices primarily run on the PS/2 transport.
 ms.assetid: 4726DD47-C22E-4B92-A7BD-EB37BA53496F
 ms.date: 04/20/2017
@@ -21,9 +20,9 @@ Windows 8 uses the following driver stack for non-HID keyboard, mouse, and touch
 
 ![non-hid driver stack](images/non-hid-driver-stack.png)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Print Spooler Support for Printer Directory Services
-author: windows-driver-content
 description: Print Spooler Support for Printer Directory Services
 ms.assetid: 23cd73a5-8628-4471-a6c6-e056536fcc75
 keywords:
@@ -64,7 +63,7 @@ Three registry keys contain copies of all information published in the print que
 </tbody>
 </table>
 
- 
+ 
 
 The spooler uses SPLDS\_DRIVER\_KEY to store driver capabilities that can be obtained by calling the Microsoft Windows SDK **DeviceCapabilities** function. The driver is responsible for storing driver capabilities that the spooler cannot obtain, as described in [Printer Driver Support for Printer Directory Services](printer-driver-support-for-printer-directory-services.md). Values stored under these keys must be identified by **SPLDS\_**-prefixed constants, defined in winspool.h.
 
@@ -80,9 +79,9 @@ The **GetPrinter** function, described in the Microsoft Windows SDK documentatio
 
 All the previously mentioned functions are described in the Windows SDK documentation. The functions are not used exclusively for DS-related operations.
 
- 
+ 
 
- 
+ 
 
 
 

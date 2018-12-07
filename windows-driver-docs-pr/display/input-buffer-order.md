@@ -38,9 +38,9 @@ The following topics describe the rules for arranging surfaces in the **lpBuffer
 
 [Input Buffer Order Example 6](input-buffer-order-example-6.md)
 
- 
+ 
 
- 
+ 
 
 
 

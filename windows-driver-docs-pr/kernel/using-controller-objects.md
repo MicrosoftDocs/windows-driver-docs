@@ -1,6 +1,5 @@
 ---
 title: Using Controller Objects
-author: windows-driver-content
 description: Using Controller Objects
 ms.assetid: 74b6685a-018f-4cb1-9332-424631aad85c
 keywords: ["I/O WDK kernel , controller objects", "controller objects WDK kernel", "ControllerControl routines", "objects WDK controller objects", "physical device controllers WDK I/O", "device controllers WDK I/O", "synchronization"]
@@ -24,9 +23,9 @@ This section describes the use of controller objects and [*ControllerControl*](h
 
 [Writing ControllerControl Routines](writing-controllercontrolroutines.md)
 
- 
+ 
 
- 
+ 
 
 
 

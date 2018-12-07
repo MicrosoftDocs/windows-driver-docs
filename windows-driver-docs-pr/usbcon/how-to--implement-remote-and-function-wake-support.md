@@ -1,7 +1,6 @@
 ---
 Description: This topic provides an overview of function suspend and function remote wake-up features for Universal Serial Bus (USB) 3.0 multi-function devices (composite devices).
 title: How to Implement Function Suspend in a Composite Driver
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -54,7 +53,7 @@ The client driver can send an idle IRP (see [**IOCTL\_INTERNAL\_USB\_SUBMIT\_IDL
 
 **Note**  The idle IRP mechanism is optional for client drivers of USB 3.0 devices. However, most client drivers are written to support both USB 2.0 and USB 3.0 devices. To support USB 2.0 devices, the driver must send the idle IRP, because the composite driver relies on that IRP to track the power state of each function. If all functions are idle, the composite driver sends the entire device to suspend state.
 
- 
+ 
 
 Upon receiving the idle IRP from the client driver, the composite driver must immediately invoke the idle callback to notify the client driver that the client driver may send the function to suspend state.
 

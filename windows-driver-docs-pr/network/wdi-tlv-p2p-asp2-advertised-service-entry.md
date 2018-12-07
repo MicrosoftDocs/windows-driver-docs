@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_P2P_ASP2_ADVERTISED_SERVICE_ENTRY
-author: windows-driver-content
 description: WDI_TLV_P2P_ASP2_ADVERTISED_SERVICE_ENTRY is a TLV that contains an ASP2 Advertised Service Entry.
 ms.assetid: CF7ED750-1987-4784-9E61-516EBBA22B9B
 ms.date: 07/18/2017
@@ -16,7 +15,7 @@ WDI\_TLV\_P2P\_ASP2\_ADVERTISED\_SERVICE\_ENTRY is a TLV that contains an ASP2 A
 
 **Note**  This TLV was added in Windows 10, version 1607, WDI version 1.0.21.
 
- 
+ 
 
 ## TLV Type
 
@@ -42,7 +41,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 | [**WDI\_TLV\_P2P\_ADVERTISEMENT\_ID**](wdi-tlv-p2p-advertisement-id.md)       |                                |          | An ID that uniquely identifies the service instance.                                                                                                                                                                                                                                     |
 | [**WDI\_TLV\_P2P\_CONFIG\_METHODS**](wdi-tlv-p2p-config-methods.md)           |                                |          | Configuration methods as defined in [**WDI\_WPS\_CONFIGURATION\_METHOD**](https://msdn.microsoft.com/library/windows/hardware/dn898198). Only **WDI\_WPS\_CONFIGURATION\_METHOD\_DISPLAY**, **WDI\_WPS\_CONFIGURATION\_METHOD\_KEYPAD**, and **WDI\_WPS\_CONFIGURATION\_METHOD\_WFDS\_DEFAULT** are applicable. |
 
- 
+ 
 
 Requirements
 ------------
@@ -68,9 +67,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

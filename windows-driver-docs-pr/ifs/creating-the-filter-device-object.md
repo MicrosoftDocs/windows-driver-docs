@@ -1,6 +1,5 @@
 ---
 title: Creating the Filter Device Object
-author: windows-driver-content
 description: Creating the Filter Device Object
 ms.assetid: aca9a2ba-8630-4eb3-9312-a0c6454c3e44
 keywords:
@@ -47,13 +46,13 @@ The *DeviceType* parameter must always be set to the same device type as that of
 
 **Note**  File systems and file system filter drivers should never set the *DeviceType* parameter to FILE\_DEVICE\_FILE\_SYSTEM. This is not a valid value for this parameter. (The FILE\_DEVICE\_FILE\_SYSTEM constant is intended only for use in defining FSCTL codes.)
 
- 
+ 
 
 Another reason why the *DeviceType* parameter is important is that many filters attach only to certain types of file systems. For example, a particular filter may attach to all local disk file systems, but not to CD-ROM file systems or remote file systems. Such filters determine the type of file system by examining the device type of the topmost device object in the file system or volume driver stack. In most cases, the topmost device object in the stack is a filter device object. Thus it is essential that all attached filter device objects have the same device type as that of the underlying file system or volume device object.
 
- 
+ 
 
- 
+ 
 
 
 

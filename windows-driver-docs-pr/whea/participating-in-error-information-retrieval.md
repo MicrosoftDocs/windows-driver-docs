@@ -1,6 +1,5 @@
 ---
 title: Participating in Error Information Retrieval
-author: windows-driver-content
 description: Participating in Error Information Retrieval
 ms.assetid: ed0ad20b-d978-4650-b3a0-6b0795323c77
 keywords:
@@ -172,9 +171,9 @@ NTSTATUS
 
 A PSHED plug-in that participates in error information retrieval must specify the **PshedFAErrorInfoRetrieval** flag when it [registers](registering-a-pshed-plug-in.md) itself with the operating system.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: WIA Scanner Item Tree for Windows 7
-author: windows-driver-content
 description: WIA Scanner Item Tree for Windows 7
 ms.assetid: 8269e385-aa65-443b-aa9e-3cc74fe3fb01
 ms.date: 04/20/2017
@@ -18,9 +17,9 @@ This section contains the following topics:
 
 [Identifying the Input Source for a Scan Event](identifying-the-input-source-for-a-scan-event.md)
 
- 
+ 
 
- 
+ 
 
 
 

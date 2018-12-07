@@ -1,6 +1,5 @@
 ---
 title: Interfaces for Segmentation Filters
-author: windows-driver-content
 description: Interfaces for Segmentation Filters
 ms.assetid: 428f6fce-d76c-4485-aa92-39f2b608160d
 ms.date: 04/20/2017
@@ -65,9 +64,9 @@ If an application changes any properties in *pWiaItem2* between acquiring the im
 
 An application obtains an instance of the segmentation filter by calling **IWiaItem2::GetExtension** (described in the Windows SDK documentation). An application would typically call this method before displaying its preview window. This is because a driver might not come with a segmentation filter, in which case the UI should know not to display an unsupported button, such as **Perform Segmentation**.
 
- 
+ 
 
- 
+ 
 
 
 

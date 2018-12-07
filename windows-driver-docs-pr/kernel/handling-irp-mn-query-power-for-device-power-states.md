@@ -1,6 +1,5 @@
 ---
 title: Handling IRP_MN_QUERY_POWER for Device Power States
-author: windows-driver-content
 description: Handling IRP_MN_QUERY_POWER for Device Power States
 ms.assetid: 902619bc-068a-4613-b99d-78a243f7fee6
 keywords: ["IRP_MN_QUERY_POWER", "device power states WDK kernel", "query-power IRPs WDK power management", "power IRPs WDK kernel , device queries", "querying power state", "queuing IRPs", "device query power IRPs WDK kernel", "dispatch routines WDK power management"]
@@ -30,7 +29,7 @@ To fail an [**IRP\_MN\_QUERY\_POWER**](https://msdn.microsoft.com/library/window
 
 2.  Set **Irp-&gt;IoStatus.Status** to a failure status and call [**IoCompleteRequest**](https://msdn.microsoft.com/library/windows/hardware/ff548343), specifying IO\_NO\_INCREMENT. The driver does not pass the IRP further down the device stack.
 
-3.  Return an error status from its [*DispatchPower*](https://msdn.microsoft.com/library/windows/hardware/ff543354) routine.
+3.  Return an error status from its [*DispatchPower*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine.
 
 If the driver succeeds the query-power IRP, it must not start any operations or take any other action that would prevent its successful completion of a subsequent **IRP\_MN\_SET\_POWER** request to the queried power state.
 
@@ -64,9 +63,9 @@ Even if the target device is already in the queried power state, each function o
 
 While handling an **IRP\_MN\_QUERY\_POWER** request, a driver should return from the *DispatchPower* routine as quickly as possible. A driver must not wait in its *DispatchPower* routine for a kernel event signaled by code that handles the same IRP. Because power IRPs are synchronized throughout the system, a deadlock might occur.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -22,7 +22,7 @@ These macros are defined in the file *PortableDevice.h*. They are described in t
 | VERIFY\_WPD\_COMMAND\_ACCESS                     | Compares a given IOCTL and its parameters against the command-access table that is defined in one of the driver modules.                     |
 | WPD\_COMMAND\_ACCESS\_ENTRY                      | Adds a custom entry to the command-access table.                                                                                             |
 
- 
+ 
 
 In the sample driver, the access control verification is performed in the **CQueue::OnDeviceIoControl** and **CQueue::ProcessWpdMessage** methods. These methods are found in the *Queue.cpp* file. In addition, this file contains a command-access table that lists the WPD as well as any custom IOCTLs and their access levels.
 
@@ -168,9 +168,9 @@ HRESULT CQueue::ProcessWpdMessage(
 ****
 [The WPD Driver Samples](the-wpd-driver-samples.md)
 
- 
+ 
 
- 
+ 
 
 
 

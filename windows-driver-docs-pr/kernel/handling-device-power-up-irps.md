@@ -1,6 +1,5 @@
 ---
 title: Handling Device Power-Up IRPs
-author: windows-driver-content
 description: Handling Device Power-Up IRPs
 ms.assetid: 8fcfd324-97f9-4fd0-8fa1-87685c6b5ec3
 keywords: ["set-power IRPs WDK kernel", "device set power IRPs WDK kernel", "power IRPs WDK kernel , device changes", "power-up IRPs WDK kernel", "startup power management WDK kernel", "restoring power WDK kernel"]
@@ -46,9 +45,9 @@ If the device is still present, the bus driver then performs the tasks required 
 
 For a list of best practices to achieve fast startup times from power-off, standby, and hibernation states, see [Improving System Startup Performance](improving-system-startup-performance.md).
 
- 
+ 
 
- 
+ 
 
 
 

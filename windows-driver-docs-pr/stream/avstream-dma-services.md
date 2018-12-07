@@ -1,6 +1,5 @@
 ---
 title: AVStream DMA Services
-author: windows-driver-content
 description: AVStream DMA Services
 ms.assetid: ba1c525b-26b0-4778-b58b-f4169cfb972e
 keywords:
@@ -25,9 +24,9 @@ To develop an AVStream minidriver that uses direct memory access (DMA), you can 
 
 Both methods require that your driver obtain a DMA adapter by calling [**IoGetDmaAdapter**](https://msdn.microsoft.com/library/windows/hardware/ff549220).
 
- 
+ 
 
- 
+ 
 
 
 

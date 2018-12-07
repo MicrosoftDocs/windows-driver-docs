@@ -46,7 +46,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>JobElements</strong>](jobelements.md)</p></td>
+<td><p><a href="jobelements.md" data-raw-source="[&lt;strong&gt;JobElements&lt;/strong&gt;](jobelements.md)"><strong>JobElements</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -104,7 +104,6 @@ In the following code example, the Scan Service returns the job status for the j
     </wscn:GetJobElementsResponse >
   </soap:Body>
 </soap:Envelope>
-
 ```
 
 ## See also
@@ -116,9 +115,9 @@ In the following code example, the Scan Service returns the job status for the j
 
 [**JobId**](jobid.md)
 
- 
 
- 
+
+
 
 
 

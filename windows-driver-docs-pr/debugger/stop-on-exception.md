@@ -3,7 +3,6 @@ title: Stop on exception
 description: Stop on exception
 ms.assetid: f459fa28-2fdf-4094-ba58-7e01a2309bb7
 keywords: ["Stop on exception (global flag)"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -41,15 +40,15 @@ The **Stop on exception** flag causes the kernel to break into the kernel debugg
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
 Windows passes all first chance exceptions (except for STATUS\_PORT\_DISCONNECT) with a severity of Warning or Error to the debugger before passing them to a local exception handler.
 
- 
+ 
 
- 
+ 
 
 
 

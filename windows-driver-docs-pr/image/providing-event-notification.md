@@ -1,6 +1,5 @@
 ---
 title: Providing Event Notification
-author: windows-driver-content
 description: Providing Event Notification
 ms.assetid: 53ca7ef0-fa8b-4ae1-9b5e-b145c2d02db2
 ms.date: 04/20/2017
@@ -25,9 +24,9 @@ The WIA service uses this method to notify the driver of events that may require
 
 For a sample implementation of the [**IWiaMiniDrv::drvNotifyPnpEvent**](https://msdn.microsoft.com/library/windows/hardware/ff544998) method, illustrating how it should respond to various kinds of events, see [Adding Interrupt Event Support](adding-interrupt-event-support.md).
 
- 
+ 
 
- 
+ 
 
 
 

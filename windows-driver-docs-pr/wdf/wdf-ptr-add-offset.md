@@ -1,6 +1,5 @@
 ---
 title: WDF_PTR_ADD_OFFSET macro
-author: windows-driver-content
 description: The WDF_PTR_ADD_OFFSET macro adds an offset value to an address and returns the resulting address.
 ms.assetid: 21402be4-ef71-4828-b588-d178d66472e5
 keywords:
@@ -19,8 +18,8 @@ Syntax
 
 ```ManagedCPlusPlus
 PVOID WDF_PTR_ADD_OFFSET(
-    _ptr,
-    _offset
+    _ptr,
+    _offset
 );
 ```
 
@@ -80,7 +79,6 @@ Here is an example from the Toaster sample (toaster\\func\\featured\\wmi.c). In 
             &amp;modelName,
             &amp;length
             );
-
 ```
 
 Requirements
@@ -94,7 +92,7 @@ Requirements
 <tbody>
 <tr class="odd">
 <td><p>Target platform</p></td>
-<td>[Universal](http://go.microsoft.com/fwlink/p/?linkid=531356)</td>
+<td><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" data-raw-source="[Universal](http://go.microsoft.com/fwlink/p/?linkid=531356)">Universal</a></td>
 </tr>
 <tr class="even">
 <td><p>Minimum KMDF version</p></td>
@@ -111,9 +109,9 @@ Requirements
 </tbody>
 </table>
 
- 
 
- 
+
+
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Connection and Name Resolution
-author: windows-driver-content
 description: Connection and Name Resolution
 ms.assetid: e61d09f1-7951-4291-93ce-e5ccbe0be576
 keywords:
@@ -50,35 +49,35 @@ The following table lists the routines that can be implemented by a network mini
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">[<strong>MRxCreateSrvCall</strong>](https://msdn.microsoft.com/library/windows/hardware/ff549864)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/ff549864" data-raw-source="[&lt;strong&gt;MRxCreateSrvCall&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549864)"><strong>MRxCreateSrvCall</strong></a></td>
 <td align="left"><p>RDBSS calls this routine to request that the network mini-redirector create a SRV_CALL structure and establish connection with a server.</p></td>
 </tr>
 <tr class="even">
-<td align="left">[<strong>MRxCreateVNetRoot</strong>](https://msdn.microsoft.com/library/windows/hardware/ff549869)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/ff549869" data-raw-source="[&lt;strong&gt;MRxCreateVNetRoot&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549869)"><strong>MRxCreateVNetRoot</strong></a></td>
 <td align="left"><p>RDBSS calls this routine to request that the network mini-redirector create a V_NET_ROOT structure.</p></td>
 </tr>
 <tr class="odd">
-<td align="left">[<strong>MRxExtractNetRootName</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550649)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/ff550649" data-raw-source="[&lt;strong&gt;MRxExtractNetRootName&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff550649)"><strong>MRxExtractNetRootName</strong></a></td>
 <td align="left"><p>RDBSS calls this routine to request that a network mini-redirector extract the name from the NET_ROOT structure for a given pathname.</p></td>
 </tr>
 <tr class="even">
-<td align="left">[<strong>MRxFinalizeNetRoot</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550653)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/ff550653" data-raw-source="[&lt;strong&gt;MRxFinalizeNetRoot&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff550653)"><strong>MRxFinalizeNetRoot</strong></a></td>
 <td align="left"><p>RDBSS calls this routine to request that a network mini-redirector finalize a NET_ROOT object.</p></td>
 </tr>
 <tr class="odd">
-<td align="left">[<strong>MRxFinalizeSrvCall</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550656)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/ff550656" data-raw-source="[&lt;strong&gt;MRxFinalizeSrvCall&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff550656)"><strong>MRxFinalizeSrvCall</strong></a></td>
 <td align="left"><p>RDBSS calls this routine to request that a network mini-redirector finalize a SRV_CALL structure used for establishing connection with a server.</p></td>
 </tr>
 <tr class="even">
-<td align="left">[<strong>MRxFinalizeVNetRoot</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550663)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/ff550663" data-raw-source="[&lt;strong&gt;MRxFinalizeVNetRoot&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff550663)"><strong>MRxFinalizeVNetRoot</strong></a></td>
 <td align="left"><p>RDBSS calls this routine to request that a network mini-redirector finalize a V_NET_ROOT structure.</p></td>
 </tr>
 <tr class="odd">
-<td align="left">[<strong>MRxPreparseName</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550750)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/ff550750" data-raw-source="[&lt;strong&gt;MRxPreparseName&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff550750)"><strong>MRxPreparseName</strong></a></td>
 <td align="left"><p>RDBSS calls this routine to give a network mini-redirector the opportunity to preparse a name.</p></td>
 </tr>
 <tr class="even">
-<td align="left">[<strong>MRxSrvCallWinnerNotify</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550824)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/ff550824" data-raw-source="[&lt;strong&gt;MRxSrvCallWinnerNotify&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff550824)"><strong>MRxSrvCallWinnerNotify</strong></a></td>
 <td align="left"><p>This routine was originally designed to be called by RDBSS to notify a network mini-redirector that it was the winner when multiple redirectors could fulfill the request. The winning network mini-redirector is expected to create the SRV_CALL structure and establish a connection with the server.</p>
 <p>Under the current implementation of RDBSS each network mini-redirector has its own copy of RDBSS, so there are no competing network redirectors at the RDBSS layer. This routine will be called before every request to create a SRV_CALL structure.</p>
 <p>When multiple redirectors are installed for handling the same UNC namespace, the redirector to service a request is chosen by MUP based on the order of redirectors specified in the registry.</p></td>
@@ -86,11 +85,11 @@ The following table lists the routines that can be implemented by a network mini
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

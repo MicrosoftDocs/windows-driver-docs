@@ -1,6 +1,5 @@
 ---
 title: Human interface devices (HID) driver samples
-author: windows-driver-content
 description: The driver samples in this directory provide a starting point for writing a custom HID driver for your device.
 ms.assetid: 38C52EAD-9DC6-4575-A9FF-1472FDDC2702
 ms.date: 04/20/2017
@@ -22,11 +21,11 @@ The driver samples in this directory provide a starting point for writing a cust
 | HIDUSBFX2           | [hidusbfx2](http://go.microsoft.com/fwlink/p/?LinkId=620190) | Demonstrates mapping of a non-HID USB device to a HID device.                                                                                                                                                                                                                                                                               |
 | UMDF HID Minidriver | [vhidmini2](http://go.microsoft.com/fwlink/p/?LinkId=617731) | A sample demonstrating how to write a HID minidriver using the User-Mode Driver Framework (UMDF).                                                                                                                                                                                                                                           |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

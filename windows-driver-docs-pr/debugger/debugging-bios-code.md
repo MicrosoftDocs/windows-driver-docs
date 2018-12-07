@@ -3,7 +3,6 @@ title: Debugging BIOS Code
 description: Debugging BIOS Code
 ms.assetid: 98f0381b-4f9d-4cf2-9860-8da20f6fbd38
 keywords: ["BIOS debugging", "BIOS debugging, overview"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -20,9 +19,9 @@ On an x86-based processor, the BIOS uses 16-bit code. To disassemble this code, 
 
 If you are debugging ACPI BIOS code, the preceding commands do not work, because ACPI BIOS is written in ACPI Machine Language (AML). To disassemble this code, you should use [**!amli u**](-amli-u.md). For more information about this kind of debugging, see [ACPI Debugging](acpi-debugging.md).
 
- 
+ 
 
- 
+ 
 
 
 

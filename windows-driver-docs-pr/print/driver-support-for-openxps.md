@@ -1,6 +1,5 @@
 ---
 title: Driver Support for OpenXPS
-author: windows-driver-content
 description: OpenXPS is the Open XML Paper Specification format for documents, and it’s based on the Ecma International standard specification.
 ms.assetid: 9BC9787E-A54D-4A11-B256-57BE5D206404
 ms.date: 04/20/2017
@@ -37,7 +36,7 @@ Some legacy functionality is either not supported, or provides a downgraded expe
 
 **Note**  There are no plans to provide support for this scenario.
 
- 
+ 
 
 *Not recommended*: Sending an OpenXPS stream from an application directly to the XPS Print API is not a recommended technique. For example, do not send an OpenXPS stream directly to the StartXPSPrintJob method. If you do this, the resulting conversion from one flavor of XPS to another as a stream can be very expensive for performance.
 

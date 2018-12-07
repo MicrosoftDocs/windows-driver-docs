@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_VIRTUALIZATION_CAPABILITIES
-author: windows-driver-content
 description: WDI_TLV_VIRTUALIZATION_CAPABILITIES is a TLV that contains virtualization capabilities.
 ms.assetid: D72E9984-7193-406C-8BA3-006E54400B30
 ms.date: 07/18/2017
@@ -36,7 +35,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | UINT8 | The maximum number of separate channels that the device can operate in and maintain data connections on simultaneously. This limit should not include temporary multichannel operations like scans and Wi-Fi Direct negotiations. |
 | UINT8 | The maximum number of supported simultaneous STA/WFD clients.                                                                                                                                                                     |
 
- 
+ 
 
 Requirements
 ------------
@@ -62,9 +61,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

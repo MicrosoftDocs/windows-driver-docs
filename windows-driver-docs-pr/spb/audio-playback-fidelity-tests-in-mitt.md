@@ -1,6 +1,5 @@
 ---
 title: Audio playback fidelity tests in MITT
-author: windows-driver-content
 description: The audio module on the MITT board is used to detect errors that occur at the transport level of the audio device by detecting sine wave frequency accuracy (at zero cross) and counting instances where the frequency or offset is incorrect.
 ms.assetid: 1EAAF6F7-17B6-452F-9273-D7CD1DC33154
 ms.date: 04/20/2017
@@ -48,19 +47,19 @@ The audio module on the MITT board is used to detect errors that occur at the tr
 5.  To disable the Audio SimpleIO tests from running, set the following registry entry:
     -   **HKEY\_CURRENT\_USER\\Software\\Microsoft\\MITT\\AudioUnit** \\**** = RunAudioTest
 
-           Data type  
-           REG\_DWORD
+           Data type  
+           REG\_DWORD
 
-           Description  
-           Set to 0.
+           Description  
+           Set to 0.
 
 This will play a series of test tones, from 500hz to 18khz and report the number of glitches detected. If a high number of glitches, such as 10000+, is detected, verify that the cable is connected correctly and that the volume is not muted. Any interrupted signal is detected with a glitch per expected crossing so the number can be very high.
 
 If the tests all pass, your device is connected correctly and operating as expected.
 
- 
+ 
 
- 
+ 
 
 
 

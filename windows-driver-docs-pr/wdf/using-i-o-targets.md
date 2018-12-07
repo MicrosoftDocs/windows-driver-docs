@@ -1,6 +1,5 @@
 ---
 title: Using I/O Targets
-author: windows-driver-content
 description: The topics in this section describe how a Windows Driver Frameworks (WDF) driver can forward an I/O request or create and send a new request to another driver, called an I/O target.
 ms.assetid: 77fd1b64-c3a9-4e12-ac69-0e3725695795
 keywords:
@@ -29,9 +28,9 @@ The topics in this section describe how a Windows Driver Frameworks (WDF) driver
 -   [General I/O Targets](general-i-o-targets.md)
 -   [USB I/O Targets](usb-i-o-targets.md)
 
- 
+ 
 
- 
+ 
 
 
 

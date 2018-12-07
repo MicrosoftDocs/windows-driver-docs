@@ -1,6 +1,5 @@
 ---
 title: Starting a Device in a Function Driver
-author: windows-driver-content
 description: Starting a Device in a Function Driver
 ms.assetid: 148a3128-9cb1-4a2c-a62e-45199476d968
 keywords: ["function drivers WDK PnP"]
@@ -16,7 +15,7 @@ ms.localizationpriority: medium
 
 A function driver sets an [*IoCompletion*](https://msdn.microsoft.com/library/windows/hardware/ff548354) routine, passes an [**IRP\_MN\_START\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551749) request down the device stack, and postpones its start operations until all lower drivers have finished with the IRP. See [Postponing PnP IRP Processing Until Lower Drivers Finish](postponing-pnp-irp-processing-until-lower-drivers-finish.md) for detailed information about using a kernel event and an *IoCompletion* routine to postpone IRP processing.
 
-When its [*DispatchPnP*](https://msdn.microsoft.com/library/windows/hardware/ff543341) routine regains control after all lower drivers have finished with the IRP, the function driver performs its tasks for starting the device. A function driver starts the device with a procedure like the following:
+When its [*DispatchPnP*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine regains control after all lower drivers have finished with the IRP, the function driver performs its tasks for starting the device. A function driver starts the device with a procedure like the following:
 
 1.  If a lower driver failed the IRP ([**IoCallDriver**](https://msdn.microsoft.com/library/windows/hardware/ff548336) returned an error), do not continue processing the IRP. Do any necessary cleanup and return from the *DispatchPnP* routine (go to the last step in this list).
 
@@ -66,9 +65,9 @@ When the driver receives an **IRP\_MN\_STOP\_DEVICE**, **IRP\_MN\_REMOVE\_DEVICE
 
 See [Mapping Bus-Relative Addresses to Virtual Addresses](mapping-bus-relative-addresses-to-virtual-addresses.md) for more information.
 
- 
+ 
 
- 
+ 
 
 
 

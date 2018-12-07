@@ -1,6 +1,5 @@
 ---
 title: Installing a File System Filter Driver
-author: windows-driver-content
 description: Installing a File System Filter Driver
 ms.assetid: c8a7fd20-8baa-449a-afa6-9692da706df4
 keywords:
@@ -34,9 +33,9 @@ This section includes:
 
 [Using an INF File to Uninstall a File System Filter Driver](using-an-inf-file-to-uninstall-a-file-system-filter-driver.md)
 
- 
+ 
 
- 
+ 
 
 
 

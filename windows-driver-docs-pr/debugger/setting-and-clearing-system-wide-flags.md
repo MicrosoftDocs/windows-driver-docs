@@ -3,7 +3,6 @@ title: Setting and Clearing System-wide Flags
 description: Setting and Clearing System-wide Flags
 ms.assetid: 447bf08e-b178-4aaf-956a-469222b5029a
 keywords: ["GFlags, system-wide flags"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -28,9 +27,9 @@ System-wide registry settings affect all processes running on Windows. They are 
 
 4.  Restart Windows to make the changes effective.
 
- 
+ 
 
- 
+ 
 
 
 

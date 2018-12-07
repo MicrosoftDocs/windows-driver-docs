@@ -3,7 +3,6 @@ title: Bug Check 0x143 PROCESSOR_DRIVER_INTERNAL
 description: The PROCESSOR_DRIVER_INTERNAL bug check has a value of 0x00000143. This indicates that the Processor Power Management (PPM) driver encountered a fatal error.
 ms.assetid: B61A1DF1-4454-4418-866F-FD9EC96F6906
 keywords: ["Bug Check 0x143 PROCESSOR_DRIVER_INTERNAL", "PROCESSOR_DRIVER_INTERNAL"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -31,7 +30,7 @@ The PROCESSOR\_DRIVER\_INTERNAL bug check has a value of 0x00000143. This indica
 | 3         | Pointer to notification message                                          |
 | 4         | Pointer to processor device context (FDO\_DATA) issuing the notification |
 
- 
+ 
 
 <table>
 <colgroup>
@@ -73,16 +72,16 @@ Parameter 4 - Pointer to processor device context (FDO_DATA) corresponding to th
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
 
 The processor driver detected an irreconcilable condition which prompted it to bugcheck. This likely happens during the processor idle and perf-state change execution, which may involve other entities such has kernel, HAL and the Power Engine Plugin (PEP). Information from bugcheck will help identify which of the assumptions made by the processor driver in dealing with other entities was violated. The root cause may lie in other entities and a dump file may reveal more information to ascertain the reason for the bugcheck.
 
- 
+ 
 
- 
+ 
 
 
 

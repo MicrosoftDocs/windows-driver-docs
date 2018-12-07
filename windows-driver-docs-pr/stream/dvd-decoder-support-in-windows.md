@@ -1,6 +1,5 @@
 ---
 title: DVD Decoder Support in Windows
-author: windows-driver-content
 description: DVD Decoder Support in Windows
 ms.assetid: 3a77b6d1-6095-4cf8-8cd4-2e6d80d171c8
 keywords:
@@ -20,7 +19,7 @@ ms.localizationpriority: medium
 
 **Note**   This topic is intended for developers. For general information about DVD decoders for Windows, including a list of software decoders, see article Q306331, "[Supported software MPEG-2 DVD decoders in Windows Media Player for Windows XP and Windows Vista](http://go.microsoft.com/fwlink/p/?linkid=3100&ID=306331)," in the Microsoft Knowledge Base.
 
- 
+ 
 
 DVD decoders are supported in Windows 98/Me and later as well as Windows 2000 and later.
 
@@ -34,7 +33,7 @@ Under Windows XP, the following components support DVD decoding and playback:
 
 **Note**   Microsoft does not provide MPEG-2 or AC-3 software/hardware decoder filters with Windows XP. Vendors must supply either a DirectShow-compatible software decoder for each required DVD data stream, or provide a WDM streaming-compatible DVD decoder minidriver to support their DVD hardware decoders.
 
- 
+ 
 
 -   **DVD-ROM Class Driver**
 
@@ -84,9 +83,9 @@ The following topics summarize the DVD decoder related kernel streaming properti
 
 [DVD Decoder Related KS Events](dvd-decoder-related-ks-events.md)
 
- 
+ 
 
- 
+ 
 
 
 

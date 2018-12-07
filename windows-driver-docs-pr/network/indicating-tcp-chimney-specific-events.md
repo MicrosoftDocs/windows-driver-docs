@@ -36,9 +36,9 @@ To indicate a change in the preferred send backlog size, an offload target calls
 
 [Responding to the Reception of a FIN or RST Segment](responding-to-the-reception-of-a-fin-or-rst-segment.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: EFI_USBFN_POLICY_TYPE
-author: windows-driver-content
 description: EFI_USBFN_POLICY_TYPE
 ms.assetid: 51f615d4-a226-45d5-b5e9-fea4859640a9
 ms.date: 04/20/2017
@@ -60,7 +59,7 @@ This policy is read-only. When used with [EFI\_USBFN\_IO\_PROTOCOL.GetEndpointPo
 </tbody>
 </table>
 
- 
+ 
 
 <a href="" id="efiusbpolicyzerolengthterminationsupport"></a>**EfiUsbPolicyZeroLengthTerminationSupport**  
 This policy is read-only. When used with [EFI\_USBFN\_IO\_PROTOCOL.GetEndpointPolicy](efi-usbfn-io-protocolgetendpointpolicy.md), TRUE is returned if the USB controller hardware is capable of automatically handling zero-length packets when the transfer size is a multiple of USB maximum packet size; FALSE is returned if such a scenario is not supported by the controller hardware.
@@ -92,7 +91,7 @@ This policy is read-only. When used with [EFI\_USBFN\_IO\_PROTOCOL.GetEndpointPo
 </tbody>
 </table>
 
- 
+ 
 
 <a href="" id="efiusbpolicyzerolengthtermination"></a>**EfiUsbPolicyZeroLengthTermination**  
 When used with [EFI\_USBFN\_IO\_PROTOCOL.GetEndpointPolicy](efi-usbfn-io-protocolgetendpointpolicy.md), TRUE is returned if the USB controller hardware is configured to automatically handle zero-length packets when the transfer size is a multiple of USB maximum packet size; FALSE is returned if the controller hardware is not configured to support such a scenario.
@@ -128,16 +127,16 @@ Even if the controller hardware is capable of supporting automatic zero-length t
 </tbody>
 </table>
 
- 
+ 
 
 ## Requirements
 
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
 

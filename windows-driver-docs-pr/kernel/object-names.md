@@ -1,6 +1,5 @@
 ---
 title: Object Names
-author: windows-driver-content
 description: Object Names
 ms.assetid: b30e7475-7f94-4993-b373-8e4a8b1bcb4c
 keywords: ["object names WDK kernel", "named objects WDK kernel", "unnamed objects WDK kernel", "object names WDK user-mode", "object handles WDK user-mode", "object handles WDK kernel", "handles WDK user-mode", "handles WDK kernel"]
@@ -32,7 +31,7 @@ Only some types of objects can have child objects. The following are some exampl
 
 -   Device objects for WDM drivers have their own namespace that can be used in a driver-defined fashion. For more information, see [Controlling Device Namespace Access](controlling-device-namespace-access.md).
 
-Files have object names that are relative to **\\DosDevices**. For example, the file C:\\Directory\\File can be specified as **\\DosDevices\\C:\\***Directory\\File*.
+Files have object names that are relative to **\\DosDevices**. For example, the file C:\\Directory\\File can be specified as **\\DosDevices\\C:\\**<em>Directory\\File</em>.
 
 For example, the components of the object name can be described as follows.
 
@@ -57,23 +56,23 @@ For example, the components of the object name can be described as follows.
 <td><p>Device object representing the C: drive.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>\DosDevices\C:\\</strong> <em>Directory</em></p></td>
+<td><p><strong>\DosDevices\C:&lt;/strong&gt; <em>Directory</em></p></td>
 <td><p>File object representing the directory named C:\Directory.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>\DosDevices\C:\\</strong> <em>Directory</em> \ <em>File</em></p></td>
+<td><p><strong>\DosDevices\C:&lt;/strong&gt; <em>Directory</em> \ <em>File</em></p></td>
 <td><p>File object representing the file named C:\Directory\File.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Drivers that create named objects do so in specific object directories. For more information, see [Object Directories](object-directories.md).
 
- 
+ 
 
- 
+ 
 
 
 

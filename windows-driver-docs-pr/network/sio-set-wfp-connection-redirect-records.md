@@ -1,6 +1,5 @@
 ---
 title: SIO_SET_WFP_CONNECTION_REDIRECT_RECORDS control code
-author: windows-driver-content
 description: The SIO_SET_WFP_CONNECTION_REDIRECT_RECORDS socket I/O control operation allows a Winsock client to specify the redirect record to the new TCP socket used for connecting to the final destination.
 ms.assetid: 51FC55BB-FD7A-4FDE-B1FC-02745AC03E33
 ms.date: 08/08/2017
@@ -71,7 +70,7 @@ To set the redirect record to the new TCP socket used for connecting to the fina
 </tbody>
 </table>
 
- 
+ 
 
 The Winsock client must allocate a buffer and specify a pointer to the buffer and its size in *InputBuffer* and *InputSize.*
 
@@ -79,7 +78,7 @@ A Winsock client must specify a pointer to an IRP and a completion routine when 
 
 **Note**  It is also possible to perform this query in a user-mode application by using [**SIO\_SET\_WFP\_CONNECTION\_REDIRECT\_RECORDS (SDK)**](https://msdn.microsoft.com/library/windows/desktop/hh859714).
 
- 
+ 
 
 For more information about WSK IRP handling, see [Using IRPs with Winsock Kernel Functions](https://msdn.microsoft.com/library/windows/hardware/ff571006).
 
@@ -124,9 +123,9 @@ Requirements
 
 [**SIO\_SET\_WFP\_CONNECTION\_REDIRECT\_RECORDS (SDK)**](https://msdn.microsoft.com/library/windows/desktop/hh859714)
 
- 
+ 
 
- 
+ 
 
 
 

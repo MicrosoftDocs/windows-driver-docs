@@ -1,6 +1,5 @@
 ---
 title: OID_GEN_MEDIA_SUPPORTED
-author: windows-driver-content
 description: As a query, the OID_GEN_MEDIA_SUPPORTED OID specifies the media types that a NIC can support but not necessarily the media types that the NIC currently uses.
 ms.assetid: e7b8d2b1-4e84-416f-aeb3-75591ed44b22
 ms.date: 08/08/2017
@@ -55,14 +54,14 @@ Ethernet (802.3).
 
 **Note**  NDIS 5.*x* miniport drivers that conform to the 802.11 interface must use this media type. For more information about the 802.11 interface, see [802.11 Wireless LAN Miniport Drivers](https://msdn.microsoft.com/library/windows/hardware/ff543933).
 
- 
+ 
 
 <a href="" id="ndismedium802-5"></a>**NdisMedium802\_5**  
 Token Ring (802.5). This media type is not supported for NDIS 6.0 and later drivers.
 
 **Note**  Starting with Windows 8, the operating system will not support this media type for any miniport drivers.
 
- 
+ 
 
 <a href="" id="ndismediumfddi"></a>**NdisMediumFddi**  
 FDDI. This media type is not supported on Windows Vista and later versions of Windows.
@@ -150,9 +149,9 @@ Requirements
 
 [OID\_GEN\_PHYSICAL\_MEDIUM](oid-gen-physical-medium.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: NDIS_STATUS_WWAN_PIN_INFO
-author: windows-driver-content
 description: Miniport drivers use the NDIS_STATUS_WWAN_PIN_INFO notification to respond to OID query and set requests of OID_WWAN_PIN. Miniport drivers cannot use this notification to send unsolicited events.This notification uses the NDIS_WWAN_PIN_INFO structure.
 ms.assetid: fa3c2467-2240-423b-b91b-f7e19d5be353
 ms.date: 08/08/2017
@@ -41,7 +40,7 @@ When miniport drivers use the NDIS\_STATUS\_WWAN\_PIN\_INFO notification to resp
 
         **Note**  If the MB device supports PIN unblock operations, miniport drivers should follow the PIN Unblocking step to respond to the request.
 
-         
+         
 
     -   PIN Unblocking: The PIN is blocked when **AttemptsRemaining** is zero. To unblock the PIN, the MB device may request a corresponding PIN Unlock Key (PUK), if applicable. In this case, miniport drivers must set **PinType** to the corresponding WwanPinType*Xxx*PUK with the relevant details.
 
@@ -73,7 +72,7 @@ When miniport drivers use the NDIS\_STATUS\_WWAN\_PIN\_INFO notification to resp
 
     **Note**  If the MB device supports PIN unblock operations, miniport drivers should follow the PIN Unblocking step to respond to the request.
 
-     
+     
 
 -   Unblocking PIN: The PIN is blocked when **AttemptsRemaining** is zero. To unblock the PIN, the MB device may request a corresponding PUK, if applicable. In this case, miniport drivers must set **uStatus** to WWAN\_STATUS\_FAILURE, **PinType** to the corresponding WwanPinType*Xxx*PUK, **PinState** to **WwanPinStateEnter**, and **AttemptsRemaining** should have the number of attempts allowed to enter a valid PUK.
 
@@ -108,9 +107,9 @@ Requirements
 
 [**NDIS\_STATUS\_WWAN\_PIN\_INFO**](ndis-status-wwan-pin-info.md)
 
- 
+ 
 
- 
+ 
 
 
 

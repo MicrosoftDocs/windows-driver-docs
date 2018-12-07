@@ -1,6 +1,5 @@
 ---
 title: Using PnP Device Interface Change Notification
-author: windows-driver-content
 description: Using PnP Device Interface Change Notification
 ms.assetid: 2ed3518a-601f-4e9b-b375-a9fb62c937a9
 keywords: ["notifications WDK PnP , device interface changes", "EventCategoryDeviceInterfaceChange notification", "device interface change notifications WDK PnP"]
@@ -24,9 +23,9 @@ The following subsections discuss how to register for device interface change no
 
 See [**IoRegisterDeviceInterface**](https://msdn.microsoft.com/library/windows/hardware/ff549506) and related routines For information about device interfaces.
 
- 
+ 
 
- 
+ 
 
 
 

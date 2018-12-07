@@ -3,7 +3,6 @@ title: Caching Acquired Symbol Files
 description: Caching Acquired Symbol Files
 ms.assetid: 2aedc67f-27f3-46f4-8369-504e525b8c18
 keywords: ["SymProxy, caching"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -53,9 +52,9 @@ srv**https://server/symbols;srv*\\server\symbols
 
 In the preceding example, the first element of the symbol path (srv\*\*https://server/symbols) says to get files from the HTTP store and copy them to the default symbol store as a local cache. The specified cache is of no importance because no file is ever received from the HTTP store. After this failure, it attempts to obtain the file from the actual location of the virtual root of the store (srv\*\\\\server\\symbols). This attempt succeeds because the file is copied to that location as a side effect of the previous path processing.
 
- 
+ 
 
- 
+ 
 
 
 

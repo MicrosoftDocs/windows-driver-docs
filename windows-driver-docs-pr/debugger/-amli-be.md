@@ -3,7 +3,6 @@ title: amli be
 description: The amli be extension enables an AML breakpoint.
 ms.assetid: 75c0c05f-8c56-4489-a798-2e5ec6ca26d8
 keywords: ["amli be Windows Debugging"]
-ms.author: domars
 ms.date: 09/17/2018
 topic_type:
 - apiref
@@ -31,7 +30,7 @@ Syntax
 <span id="_______Breakpoint______"></span><span id="_______breakpoint______"></span><span id="_______BREAKPOINT______"></span> *Breakpoint*   
 Specifies the breakpoint number of the breakpoint to be enabled.
 
-<span id="______________"></span> **\***   
+<span id="______________"></span> **\\***   
 Specifies that all breakpoints should be enabled.
 
 ### <span id="DLL"></span><span id="dll"></span>DLL
@@ -49,9 +48,9 @@ All breakpoints are enabled when they are created. Breakpoints are only disabled
 
 To determine the breakpoint number of a breakpoint, use the [**!amli bl**](-amli-bl.md) extension.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Understanding TYMED
-author: windows-driver-content
 description: Understanding TYMED
 ms.assetid: 36110923-c346-4367-8b7d-ef4d003ed88c
 ms.date: 04/20/2017
@@ -35,9 +34,9 @@ Indicates one buffer containing a single image or multiple images separated by I
 <a href="" id="tymed-multipage-callback"></a>TYMED\_MULTIPAGE\_CALLBACK  
 Indicates one buffer containing multiple images separated by IT\_MSG\_NEW\_PAGE messages. This results in a single file containing multiple images. This is used primarily in document feeder acquisition.
 
- 
+ 
 
- 
+ 
 
 
 

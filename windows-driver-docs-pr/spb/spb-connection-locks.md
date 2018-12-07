@@ -1,6 +1,5 @@
 ---
 title: SPB Connection Locks
-author: windows-driver-content
 description: Connection locks are useful for enabling two clients to share access to a target peripheral device on a simple peripheral bus (SPB).
 ms.assetid: 073D9854-0F51-4518-A22B-0A0546694E30
 ms.date: 04/20/2017
@@ -51,7 +50,7 @@ Controller locks are distinct from connection locks. A controller lock enables a
 
 **Note**  In some implementations, a connection lock might, as a side effect, prevent transfers to other devices on the bus. However, this behavior is implementation-dependent and client drivers should not rely on it. In contrast, a controller lock reliably prevents another client from accessing the same target device as the client that holds the controller lock, and clients can safely depend on this behavior.
 
- 
+ 
 
 A client might need to acquire both a connection lock and a controller lock before performing a set of I/O operations on a target device. The connection lock prevents a second client that shares access to the same target device from performing I/O operations on the device, and the controller lock prevents clients for other devices on the bus from performing I/O operations on these other devices. (I/O operations that are prevented from occurring while these locks are held are simply deferred until the locks are released.)
 
@@ -59,9 +58,9 @@ When a client acquires both a connection lock and a controller lock for a target
 
 Nested acquisitions of a connection lock are illegal. After a client has acquired a connection lock, the client must not try to acquire the lock again until the client first releases the lock. Similarly, nested acquisitions of a controller lock are not allowed.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Filter Manager Support for Minifilter Drivers
-author: windows-driver-content
 description: Filter Manager Support for Minifilter Drivers
 ms.assetid: 27d606a9-f928-43d1-9faf-03df9919b3a6
 keywords:
@@ -37,9 +36,9 @@ This section contains the following topics:
 
 [User-Mode Library](user-mode-library.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Dispatch Routine IRQL and Thread Context
-author: windows-driver-content
 description: Dispatch Routine IRQL and Thread Context
 ms.assetid: 95f3a976-c97a-4c8a-979b-14a0ddd823a2
 keywords:
@@ -31,8 +30,8 @@ The following table summarizes the IRQL and thread context requirements for file
 <thead>
 <tr class="header">
 <th align="left">Dispatch routine</th>
-<th align="left">Caller's IRQL:</th>
-<th align="left">Caller's thread context:</th>
+<th align="left">Caller&#39;s IRQL:</th>
+<th align="left">Caller&#39;s thread context:</th>
 </tr>
 </thead>
 <tbody>
@@ -169,11 +168,11 @@ The following table summarizes the IRQL and thread context requirements for file
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

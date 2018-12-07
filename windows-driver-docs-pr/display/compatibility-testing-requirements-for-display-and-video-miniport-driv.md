@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_compatibility_testing_requirements_for_display_and_video_miniport_"></span><span id="DDK_COMPATIBILITY_TESTING_REQUIREMENTS_FOR_DISPLAY_AND_VIDEO_MINIPORT_"></span>
 
 
-This section lists some of the requirements for NT-based operating system graphics drivers and associated components to meet the Windows Hardware Quality Lab (WHQL) test criteria. The drivers that meet or exceed these tests are authorized to display the Microsoft Windows Logo. For more information, go to the [Windows Platform Development](http://go.microsoft.com/fwlink/p/?linkid=8703) website.
+This section lists some of the requirements for NT-based operating system graphics drivers and associated components to meet the Windows Hardware Quality Lab (WHQL) test criteria. The drivers that meet or exceed these tests are authorized to display the Microsoft Windows Logo. For more information, go to the [Windows Platform Development](https://go.microsoft.com/fwlink/p/?linkid=8703) website.
 
 [INF and Installation Requirements](inf-and-installation-requirements.md)
 
@@ -27,9 +27,9 @@ This section lists some of the requirements for NT-based operating system graphi
 
 [Control Panel Requirements](control-panel-requirements.md)
 
- 
+ 
 
- 
+ 
 
 
 

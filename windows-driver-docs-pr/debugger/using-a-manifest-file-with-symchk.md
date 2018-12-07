@@ -2,7 +2,6 @@
 title: Using a Manifest File with SymChk
 description: Using a Manifest File with SymChk
 ms.assetid: ee5d0c39-1838-4595-adf4-6cd1261a57c8
-ms.author: domars
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -47,9 +46,9 @@ SYMCHK: PASSED + IGNORED files = 28
 
 Now you can move the symbols to the isolated computer and use them for debugging.
 
- 
+ 
 
- 
+ 
 
 
 

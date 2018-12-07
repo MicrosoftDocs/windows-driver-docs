@@ -1,6 +1,5 @@
 ---
 title: Conditional Statements
-author: windows-driver-content
 description: Conditional Statements
 ms.assetid: eea2f9c1-a73b-46ed-a778-ece6bed615ac
 keywords:
@@ -48,7 +47,7 @@ The GPD language provides C-like conditional statements that allow you to descri
 </tbody>
 </table>
 
- 
+ 
 
 *FeatureName* must be the name of a feature that is specified within the GPD file with a **\*Feature** entry. The option names used must be options that are associated with the specified feature.
 
@@ -222,9 +221,9 @@ For example, an incorrectly derived GPD file may look like the following:
     3. Switch: Resolution
 ```
 
- 
+ 
 
- 
+ 
 
 
 

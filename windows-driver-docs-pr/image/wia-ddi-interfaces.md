@@ -1,6 +1,5 @@
 ---
 title: WIA DDI Interfaces
-author: windows-driver-content
 description: WIA DDI Interfaces
 ms.assetid: 738a87e2-9c74-4215-85dc-ec793f10ce05
 ms.date: 04/20/2017
@@ -29,9 +28,9 @@ The WIA device driver interface (DDI) supplies the following interfaces and func
 
 -   [IWiaLog COM interface](iwialog-com-interface.md), which provides methods and macros that enable WIA minidrivers to log messages to a diagnostic log file.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Handling Power IRPs
-author: windows-driver-content
 description: Handling Power IRPs
 ms.assetid: 0fe4f27a-101d-41af-8f00-fb36da5dc793
 keywords: ["power management WDK kernel , IRPs", "IRPs WDK power management", "power IRPs WDK kernel , about power IRPs", "IRP_MJ_POWER", "IRP_MN_QUERY_POWER", "IRP_MN_SET_POWER", "IRP_MN_WAIT_WAKE", "IRP_MN_POWER_SEQUENCE", "power states WDK kernel", "states WDK power management", "change power states WDK kernel", "conserving power WDK kernel", "sleep power management WDK kernel", "querying power state", "asleep devices WDK power management", "I/O request packets WDK power management"]
@@ -14,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-Drivers handle power IRPs in a [*DispatchPower*](https://msdn.microsoft.com/library/windows/hardware/ff543354) routine. All power management requests have the major IRP code [**IRP\_MJ\_POWER**](https://msdn.microsoft.com/library/windows/hardware/ff550784) and one of the following minor codes:
+Drivers handle power IRPs in a [*DispatchPower*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine. All power management requests have the major IRP code [**IRP\_MJ\_POWER**](https://msdn.microsoft.com/library/windows/hardware/ff550784) and one of the following minor codes:
 
 [**IRP\_MN\_QUERY\_POWER**](https://msdn.microsoft.com/library/windows/hardware/ff551699) — Queries to determine whether changing power state is feasible
 
@@ -32,9 +31,9 @@ Support for **IRP\_MN\_POWER\_SEQUENCE** is optional. This IRP provides an optim
 
 A power IRP can specify a system power operation or a device power operation. [Power IRPs for the system](power-irps-for-the-system.md) and [power IRPs for individual devices](power-irps-for-individual-devices.md) take slightly different paths through a device stack, as explained in the following sections.
 
- 
+ 
 
- 
+ 
 
 
 

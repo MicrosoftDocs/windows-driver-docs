@@ -35,9 +35,9 @@ The schema describes the following platen configuration elements:
 
 [**Widths**](widths.md)
 
- 
+ 
 
- 
+ 
 
 
 

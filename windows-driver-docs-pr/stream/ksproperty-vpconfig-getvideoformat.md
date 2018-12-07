@@ -47,13 +47,13 @@ The KSPROPERTY\_VPCONFIG\_GETVIDEOFORMAT property retrieves an array of supporte
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p>[<strong>KSPROPERTY</strong>](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)</p></td>
-<td><p>[<strong>DDPIXELFORMAT</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550274)</p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff550274" data-raw-source="[&lt;strong&gt;DDPIXELFORMAT&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff550274)"><strong>DDPIXELFORMAT</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a DDPIXELFORMAT structure that describes the pixel format of the video port.
 
@@ -80,9 +80,9 @@ Requirements
 
 [**DDPIXELFORMAT**](https://msdn.microsoft.com/library/windows/hardware/ff550274)
 
- 
+ 
 
- 
+ 
 
 
 

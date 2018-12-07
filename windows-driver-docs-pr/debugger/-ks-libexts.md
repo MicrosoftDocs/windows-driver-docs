@@ -3,7 +3,6 @@ title: ks.libexts
 description: The ks.libexts extension provides access to Microsoft-supplied library extensions that are statically linked to the extension module.
 ms.assetid: 03328041-9922-4367-b6e9-d822a9c03f32
 keywords: ["ks.libexts Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -66,7 +65,7 @@ Specifies the name of a library extension. Required only for *Command* values of
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -79,9 +78,9 @@ The extension module contains an extensibility framework that allows separate co
 
 The **!ks.libexts** command allows viewing of statistics about those library extensions as well as control over them. For details, issue **!ks.libexts** with no arguments.
 
- 
+ 
 
- 
+ 
 
 
 

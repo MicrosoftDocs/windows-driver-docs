@@ -46,19 +46,19 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ADFColor</strong>](adfcolor.md)</p></td>
+<td><p><a href="adfcolor.md" data-raw-source="[&lt;strong&gt;ADFColor&lt;/strong&gt;](adfcolor.md)"><strong>ADFColor</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>ADFMaximumSize</strong>](adfmaximumsize.md)</p></td>
+<td><p><a href="adfmaximumsize.md" data-raw-source="[&lt;strong&gt;ADFMaximumSize&lt;/strong&gt;](adfmaximumsize.md)"><strong>ADFMaximumSize</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>ADFMinimumSize</strong>](adfminimumsize.md)</p></td>
+<td><p><a href="adfminimumsize.md" data-raw-source="[&lt;strong&gt;ADFMinimumSize&lt;/strong&gt;](adfminimumsize.md)"><strong>ADFMinimumSize</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>ADFOpticalResolution</strong>](adfopticalresolution.md)</p></td>
+<td><p><a href="adfopticalresolution.md" data-raw-source="[&lt;strong&gt;ADFOpticalResolution&lt;/strong&gt;](adfopticalresolution.md)"><strong>ADFOpticalResolution</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>ADFResolutions</strong>](adfresolutions.md)</p></td>
+<td><p><a href="adfresolutions.md" data-raw-source="[&lt;strong&gt;ADFResolutions&lt;/strong&gt;](adfresolutions.md)"><strong>ADFResolutions</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -77,7 +77,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ADF</strong>](adf.md)</p></td>
+<td><p><a href="adf.md" data-raw-source="[&lt;strong&gt;ADF&lt;/strong&gt;](adf.md)"><strong>ADF</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -102,9 +102,9 @@ The WSD Scan Service should specify the **ADFBack** elements and its children on
 
 [**ADFResolutions**](adfresolutions.md)
 
- 
+ 
 
- 
+ 
 
 
 

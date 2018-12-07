@@ -1,6 +1,5 @@
 ---
 title: OID_802_3_PERMANENT_ADDRESS
-author: windows-driver-content
 description: OID_802_3_PERMANENT_ADDRESS
 ms.assetid: 97d83c17-d98f-41c1-b1fd-44327b72f178
 ms.date: 08/08/2017
@@ -33,9 +32,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

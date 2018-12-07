@@ -21,9 +21,9 @@ Here are the suggested driver/firmware changes.
     -   If an ECSA request comes from the remote peer, then support it.
 -   Send channel change notifications to the operating system with [NDIS\_STATUS\_WDI\_INDICATION\_P2P\_GROUP\_OPERATING\_CHANNEL](https://msdn.microsoft.com/library/windows/hardware/dn925643).
 
- 
+ 
 
- 
+ 
 
 
 

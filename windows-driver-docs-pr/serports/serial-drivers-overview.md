@@ -1,6 +1,5 @@
 ---
 title: Serial Controller Drivers Overview
-author: windows-driver-content
 description: All versions of Windows provide driver support for serial controller devices.
 ms.assetid: 1EA0221E-0F68-429B-9DA5-4AE2D3394A09
 ms.date: 04/20/2017
@@ -44,21 +43,21 @@ For more information about SerCx2, see [Using Version 2 of the Serial Framework 
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Serial I/O Request Interface](serial-i-o-request-interface.md)</p></td>
+<td><p><a href="serial-i-o-request-interface.md" data-raw-source="[Serial I/O Request Interface](serial-i-o-request-interface.md)">Serial I/O Request Interface</a></p></td>
 <td><p>To control a peripheral device that is connected to a port on a serial controller, a client application or peripheral device driver sends I/O requests to the port.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Differences Between SerCx2.sys and Serial.sys](differences-between-sercx2-and-serial-sys.md)</p></td>
-<td><p>Although the inbox Sercx2.sys and Serial.sys driver components both implement the [serial I/O request interface](serial-i-o-request-interface.md), these components are not interchangeable. They are designed to meet different sets of requirements.</p></td>
+<td><p><a href="differences-between-sercx2-and-serial-sys.md" data-raw-source="[Differences Between SerCx2.sys and Serial.sys](differences-between-sercx2-and-serial-sys.md)">Differences Between SerCx2.sys and Serial.sys</a></p></td>
+<td><p>Although the inbox Sercx2.sys and Serial.sys driver components both implement the <a href="serial-i-o-request-interface.md" data-raw-source="[serial I/O request interface](serial-i-o-request-interface.md)">serial I/O request interface</a>, these components are not interchangeable. They are designed to meet different sets of requirements.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

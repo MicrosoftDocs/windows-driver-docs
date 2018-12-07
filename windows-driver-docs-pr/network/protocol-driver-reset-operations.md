@@ -32,9 +32,9 @@ When a protocol driver receives a status of NDIS\_STATUS\_RESET\_START, it shoul
 
 After *ProtocolStatusEx*(or *ProtocolCoStatusEx*) receives an NDIS\_STATUS\_RESET\_END message, the protocol driver can resume sending network data and OID requests.
 
- 
+ 
 
- 
+ 
 
 
 

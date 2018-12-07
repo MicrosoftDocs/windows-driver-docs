@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_PHY_TYPE
-author: windows-driver-content
 description: WDI_TLV_PHY_TYPE is a TLV that contains a PHY type.
 ms.assetid: 0CEC5B02-EA75-4B04-84AE-6079A294F542
 ms.date: 07/18/2017
@@ -31,7 +30,7 @@ The size (in bytes) of a UINT32.
 |------------------------------------------------------|---------------|
 | [**WDI\_PHY\_TYPE**](https://msdn.microsoft.com/library/windows/hardware/dn926105) (UINT32) | The PHY type. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

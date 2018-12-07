@@ -3,7 +3,6 @@ title: lpc
 description: The lpc extension displays information about all local procedure call (LPC) ports and messages in the target system.
 ms.assetid: d474aeca-fb12-424a-b57e-360215d0305c
 keywords: ["LPC (local/light-weight procedure call)", "lpc Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -20,7 +19,7 @@ ms.localizationpriority: medium
 **Important**  
 Lpc is now emulated in alpc, use the !alpc extension instead.
 
- 
+ 
 The **!lpc** extension displays information about all local procedure call (LPC) ports and messages in the target system.
 
 ```dbgcmd
@@ -79,7 +78,7 @@ The **!lpc** extension displays information about all local procedure call (LPC)
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -204,9 +203,9 @@ Scanning 225 objects
 Scanning 3 objects
 ```
 
- 
+ 
 
- 
+ 
 
 
 

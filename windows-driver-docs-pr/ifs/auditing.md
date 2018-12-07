@@ -1,6 +1,5 @@
 ---
 title: Auditing
-author: windows-driver-content
 description: Auditing
 ms.assetid: 0a703a27-91d6-41fc-bd46-a9486842a150
 keywords:
@@ -32,9 +31,9 @@ Key routines for auditing include:
 
 There is no requirement for auditing. None of the sample file systems (FAT or CDFS, for example) in the IFS section of the WDK implement auditing. However, from a security perspective, auditing is important because it allows administrators to monitor the security behavior of the system.
 
- 
+ 
 
- 
+ 
 
 
 

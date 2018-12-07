@@ -3,7 +3,6 @@ title: .nvunloadall (NatVis Unload All)
 description: The .nvunloadall command unloads all of the NatVis files from the debugger environment.
 ms.assetid: E018D09A-1B52-4D9E-944E-7F61841EAE1A
 keywords: [".nvunloadall (NatVis Unload All) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -46,7 +45,7 @@ The .nvunloadall command unloads all of the NatVis files from the debugger envir
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -57,9 +56,9 @@ For more information, see [Writing debugger type visualizers for C++ using .natv
 
 [**dx (Display NatVis Expression)**](dx--display-visualizer-variables-.md)
 
- 
+ 
 
- 
+ 
 
 
 

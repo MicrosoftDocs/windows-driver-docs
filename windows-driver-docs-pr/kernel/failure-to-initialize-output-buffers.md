@@ -1,6 +1,5 @@
 ---
 title: Failure to Initialize Output Buffers
-author: windows-driver-content
 description: Failure to Initialize Output Buffers
 ms.assetid: 8c038a94-8506-44e3-ac7f-82b58d791124
 keywords: ["output buffers WDK kernel", "initializing output buffers"]
@@ -50,9 +49,9 @@ Setting **IoStatus.Information** to the output buffer size causes the whole outp
 
 Some drivers use the **Information** field to return codes that provide extra details about I/O requests. Before doing so, such drivers should check the IRP flags to ensure that IRP\_INPUT\_OPERATION is not set. When this flag is not set, the IOCTL or FSCTL does not have an output buffer, so the **Information** field need not supply a buffer size. In this case. the driver can safely use the **Information** field to return its own code.
 
- 
+ 
 
- 
+ 
 
 
 

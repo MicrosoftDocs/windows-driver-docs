@@ -24,9 +24,9 @@ This section describes the structures that work with the Windows Bluetooth Hands
 
 [Bluetooth HFP DDI Reference](bluetooth-hfp-ddi-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

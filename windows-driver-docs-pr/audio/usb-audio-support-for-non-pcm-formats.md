@@ -25,9 +25,9 @@ USBAudio can accept packed, "raw" AC-3 (as opposed to the padded, AC-3-over-S/PD
 
 USBAudio currently does not support DirectSound playback of non-PCM audio data.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Handling SRB_FUNCTION_ABORT_COMMAND
-author: windows-driver-content
 description: Handling SRB_FUNCTION_ABORT_COMMAND
 ms.assetid: 74d46df6-2e3e-45d8-bedb-a81a80a0aec1
 keywords:
@@ -33,9 +32,9 @@ Otherwise, the *HwScsiStartIo* routine does the following:
 
 2.  Programs the HBA to abort the given **NextSrb** request.
 
- 
+ 
 
- 
+ 
 
 
 

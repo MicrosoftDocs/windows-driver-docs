@@ -1,6 +1,5 @@
 ---
 title: WIA Film Scanners
-author: windows-driver-content
 description: WIA Film Scanners
 ms.assetid: 2f754ae6-42e1-4398-9220-cddf090810f8
 ms.date: 04/20/2017
@@ -23,9 +22,9 @@ This section includes:
 
 [WIA Film Scanner Compatibility for Windows Me and Windows XP](wia-film-scanner-compatibility-for-windows-xp-and-windows-me.md)
 
- 
+ 
 
- 
+ 
 
 
 

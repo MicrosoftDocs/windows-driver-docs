@@ -20,9 +20,9 @@ The following XML document uses the [WindowsInfo XML schema](windowsinfo-xml-sch
 </WindowsInfo>
 ```
 
- 
+ 
 
- 
+ 
 
 
 

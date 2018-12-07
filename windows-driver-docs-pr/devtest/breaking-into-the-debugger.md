@@ -63,9 +63,9 @@ Two conditional break macros are available for kernel-mode drivers:
 
 **ASSERT** and **ASSERTMSG** are only active when compiled in the checked build environment. When compiled in the free build environment, they have no effect.
 
- 
+ 
 
- 
+ 
 
 
 

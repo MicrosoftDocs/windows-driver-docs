@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_FT_MDE
-author: windows-driver-content
 description: WDI_TLV_FT_MDE is a TLV that contains the MDIE of a BSS entry.
 ms.assetid: 2D075487-9B1E-4DEE-B3C3-3208C1CBAB64
 ms.date: 07/18/2017
@@ -31,7 +30,7 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 |-----------|--------------------------|
 | UINT8\[\] | The MDIE of a BSS entry. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -27,7 +27,7 @@ Under the new residency model, the per-command buffer allocation and patch locat
 
 **Important**  Residency in the WDDM v2 is controlled exclusively by the device residency requirement list. This is true across all engines of the GPU and for every API.
 
- 
+ 
 
 ## <span id="Phasing_out_allocation_and_patch_location_list"></span><span id="phasing_out_allocation_and_patch_location_list"></span><span id="PHASING_OUT_ALLOCATION_AND_PATCH_LOCATION_LIST"></span>Phasing out allocation and patch location list
 
@@ -77,11 +77,11 @@ References the primary surface, if any, being written to by the command buffer. 
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

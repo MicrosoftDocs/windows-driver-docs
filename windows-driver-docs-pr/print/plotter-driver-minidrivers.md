@@ -1,6 +1,5 @@
 ---
 title: Plotter Driver Minidrivers
-author: windows-driver-content
 description: Plotter Driver Minidrivers
 ms.assetid: f7223a0a-df02-4a4f-a3d6-7910aed926eb
 keywords:
@@ -31,9 +30,9 @@ For both the source and destination files, you must explicitly specify file name
 
 A sample text file that can be used as input to plotgpc.exe is included in the [sample plotter driver files](sample-plotter-driver-files.md).
 
- 
+ 
 
- 
+ 
 
 
 

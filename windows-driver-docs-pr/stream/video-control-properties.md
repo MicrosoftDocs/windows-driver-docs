@@ -1,6 +1,5 @@
 ---
 title: Video Control Properties
-author: windows-driver-content
 description: Video Control Properties
 ms.assetid: 3b39295f-b4fa-4d6a-bad8-f759bda284b1
 keywords:
@@ -29,29 +28,29 @@ The [PROPSETID\_VIDCAP\_VIDEOCONTROL](https://msdn.microsoft.com/library/windows
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>KSPROPERTY_VIDEOCONTROL_CAPS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566035)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566035" data-raw-source="[&lt;strong&gt;KSPROPERTY_VIDEOCONTROL_CAPS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566035)"><strong>KSPROPERTY_VIDEOCONTROL_CAPS</strong></a></p></td>
 <td><p>Returns information on the capabilities of the video stream, such as image orientation and triggering acquisition of a frame of video from the stream.</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>KSPROPERTY_VIDEOCONTROL_ACTUAL_FRAME_RATE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566024)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566024" data-raw-source="[&lt;strong&gt;KSPROPERTY_VIDEOCONTROL_ACTUAL_FRAME_RATE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566024)"><strong>KSPROPERTY_VIDEOCONTROL_ACTUAL_FRAME_RATE</strong></a></p></td>
 <td><p>Returns the actual frame rate for which the hardware is streaming video for a specific pin.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>KSPROPERTY_VIDEOCONTROL_FRAME_RATES</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566040)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566040" data-raw-source="[&lt;strong&gt;KSPROPERTY_VIDEOCONTROL_FRAME_RATES&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566040)"><strong>KSPROPERTY_VIDEOCONTROL_FRAME_RATES</strong></a></p></td>
 <td><p>Returns the number of available frame rates that the device can stream video at.</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>KSPROPERTY_VIDEOCONTROL_MODE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566042)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566042" data-raw-source="[&lt;strong&gt;KSPROPERTY_VIDEOCONTROL_MODE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566042)"><strong>KSPROPERTY_VIDEOCONTROL_MODE</strong></a></p></td>
 <td><p>Controls the modes for a video stream, such as image flipping and triggering acquisition of a frame of video from the stream.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: n (Set Number Base)
 description: The n command sets the default number base (radix) to the specified value or displays the current number base.Do not confuse this command with the ~n (Suspend Thread) command.
 ms.assetid: a2af7cf4-b0f1-4ceb-b9c0-7517a9517c3e
 keywords: ["n (Set Number Base) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -58,7 +57,7 @@ Specifies the default number base that is used for numeric display and entry. Yo
 </tbody>
 </table>
 
- 
+ 
 
 If you omit *Radix*, the current default number base is displayed.
 
@@ -85,7 +84,7 @@ If you omit *Radix*, the current default number base is displayed.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -96,9 +95,9 @@ The default radix is set to 16 when the debugger is started.
 
 In all MASM expressions, numeric values are interpreted as numbers in the current radix (16, 10, or 8). You can override the default radix by specifying the **0x** prefix (hexadecimal), the **0n** prefix (decimal), the **0t** prefix (octal), or the **0y** prefix (binary).
 
- 
+ 
 
- 
+ 
 
 
 

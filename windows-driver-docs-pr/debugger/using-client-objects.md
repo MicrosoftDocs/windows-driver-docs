@@ -3,7 +3,6 @@ title: Using Client Objects
 description: Using Client Objects
 ms.assetid: 07311a2e-86a7-4985-9dfa-55a876cd7899
 keywords: ["Debugger Engine, COM Interfaces"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -38,11 +37,11 @@ HRESULT Hr = DebugCreate( __uuidof(IDebugClient), (void **)&debugClient );
 
 **Important**  The IDebug\* interfaces such as [**IDebugEventCallbacks**](https://msdn.microsoft.com/library/windows/hardware/ff550550) interface, although COM like, are not proper COM APIs. Calling these interfaces from managed code is an unsupported scenario. Issues such as garbage collection and thread ownership, lead to system instability when the interfaces are called with managed code.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

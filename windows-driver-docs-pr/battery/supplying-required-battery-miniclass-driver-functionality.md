@@ -50,9 +50,9 @@ Battery miniclass drivers must include the following header files:
 
 -   Ntddk.h or Wdm.h
 
- 
+ 
 
- 
+ 
 
 
 

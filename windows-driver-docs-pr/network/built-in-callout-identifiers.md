@@ -1,6 +1,5 @@
 ---
 title: Built-in callout identifiers
-author: windows-driver-content
 description: This section describes built-in callout identifiers.
 ms.assetid: c0200388-1e79-41b9-890c-ce0034b329d8
 keywords:

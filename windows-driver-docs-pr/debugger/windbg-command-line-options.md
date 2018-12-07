@@ -3,7 +3,6 @@ title: WinDbg Command-Line Options
 description: First-time users of WinDbg should begin with the Debugging Using WinDbg section.
 ms.assetid: bd169c73-0a46-41b5-bd7b-71adf7747069
 keywords: ["WinDbg Command-Line Options Windows Debugging"]
-ms.author: domars
 ms.date: 08/10/2018
 ms.topic: article
 ms.prod: windows-hardware
@@ -257,9 +256,9 @@ When you are running the debugger from the command line, specify arguments for t
 windbg myexe arg1 arg2
 ```
 
- 
+ 
 
- 
+ 
 
 
 

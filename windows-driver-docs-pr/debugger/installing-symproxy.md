@@ -3,7 +3,6 @@ title: Installing SymProxy
 description: Installing SymProxy
 ms.assetid: 63633de7-d254-415d-bf06-c0e81bd03e74
 keywords: ["SymProxy, installation"]
-ms.author: domars
 ms.date: 10/25/2018
 ms.localizationpriority: medium
 ---
@@ -37,9 +36,9 @@ To install SymProxy on the server, copy symproxy.dll, symsrv.dll and symproxy.ma
 
 In order to prevent problems that could occur in accessing the Microsoft Symbol Store, create a blank file called %WINDIR%\\system32\\inetsrv\\symsrv.yes. The contents of this file are not important. When symsrv.yes file is present, it automatically accepts the EULA for the Microsoft Public Symbol Store.
 
- 
+ 
 
- 
+ 
 
 
 

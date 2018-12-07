@@ -32,9 +32,9 @@ For the most part, this choice of which head owns video memory is inherent in th
 
 -   Finally, note that the runtime guarantees that all heads in the group participate in the multiple-head scenario. Therefore, the driver must only maintain one bit of state indicating whether it is currently in multiple-head mode.
 
- 
+ 
 
- 
+ 
 
 
 

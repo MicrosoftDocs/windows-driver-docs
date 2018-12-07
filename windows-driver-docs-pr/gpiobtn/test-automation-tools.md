@@ -1,6 +1,5 @@
 ---
 title: Test automation tools
-author: windows-driver-content
 description: GPIO test automation uses the MITT platform.
 ms.assetid: F6C4FCC2-210B-4B6E-9D1A-77842E470025
 ms.localizationpriority: medium
@@ -26,11 +25,11 @@ The MITT tool can directly generate the GPIO impulses that are needed to simulat
 **Note**  
 The MITT platform can easily accommodate customized input patterns. See the MITT Readme file for instructions on how to generate these.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

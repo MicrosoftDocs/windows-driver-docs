@@ -1,6 +1,5 @@
 ---
 title: QueryDeviceNamespace
-author: windows-driver-content
 description: The IPrintTicketProvider QueryDeviceNamespace routine provides the default namespace that the PrintTicket-to-DEVMODE and DEVMODE-to-PrintTicket conversions will use if they need to put a feature or option from a private namespace in a Print Ticket.
 ms.assetid: 5f940cdc-42c3-4521-91c5-cc8e340ce34a
 keywords:
@@ -31,9 +30,9 @@ CPrintTicketProvider::QueryDeviceNamespace(BSTR *pDefaultNamespace)
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

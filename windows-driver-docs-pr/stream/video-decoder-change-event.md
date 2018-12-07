@@ -1,6 +1,5 @@
 ---
 title: Video Decoder Change Event
-author: windows-driver-content
 description: Video Decoder Change Event
 ms.assetid: 94269541-49e5-4273-874a-c6c2643ec2ae
 keywords:
@@ -30,17 +29,17 @@ The [EVENTSETID\_VIDEODECODER](https://msdn.microsoft.com/library/windows/hardwa
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>KSEVENT_VIDEODECODER_CHANGED</strong>](https://msdn.microsoft.com/library/windows/hardware/ff561931)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff561931" data-raw-source="[&lt;strong&gt;KSEVENT_VIDEODECODER_CHANGED&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff561931)"><strong>KSEVENT_VIDEODECODER_CHANGED</strong></a></p></td>
 <td><p>Signals to DirectShow that the video decoder has changed, for example, because of the selection of an SVideo input port from a composite input port.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

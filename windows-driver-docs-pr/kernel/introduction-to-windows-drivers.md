@@ -1,6 +1,5 @@
 ---
 title: Introduction to Windows Drivers
-author: windows-driver-content
 description: Introduction to Windows Drivers
 ms.assetid: 01a4b74d-df09-4cf3-ae4b-a86c62ba1763
 keywords: ["kernel-mode drivers WDK , about Windows drivers", "Windows drivers WDK", "drivers WDK , about Windows drivers", "drivers WDK"]
@@ -24,9 +23,9 @@ This section introduces design concepts for Microsoft Windows drivers. It contai
 
 [Sample Kernel-Mode Drivers](sample-kernel-mode-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

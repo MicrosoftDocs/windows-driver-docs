@@ -1,6 +1,5 @@
 ---
 title: IRP_MN_QUERY_RESOURCES
-author: windows-driver-content
 description: The PnP manager uses this IRP to get a device's boot configuration resources.Bus drivers must handle this request for their child devices that require hardware resources. Function and filter drivers do not handle this IRP.
 ms.date: 08/12/2017
 ms.assetid: b9a6f06b-07d9-4539-bd41-21cdccdc4b25
@@ -84,9 +83,9 @@ Requirements
 
 [**IoGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff549203)
 
- 
+ 
 
- 
+ 
 
 
 

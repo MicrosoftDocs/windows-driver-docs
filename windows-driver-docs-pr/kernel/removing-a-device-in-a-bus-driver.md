@@ -1,6 +1,5 @@
 ---
 title: Removing a Device in a Bus Driver
-author: windows-driver-content
 description: Removing a Device in a Bus Driver
 ms.assetid: f3961c29-02e1-41f0-bb7f-784bcdb57eb0
 keywords: ["bus drivers WDK PnP", "DispatchPnP routine"]
@@ -16,7 +15,7 @@ ms.localizationpriority: medium
 
 When removing a child device (child PDO), the parent bus driver must undo any operations it performed to add and start the device.
 
-A bus driver removes a child device with a procedure such as the following in its [*DispatchPnP*](https://msdn.microsoft.com/library/windows/hardware/ff543341) routine:
+A bus driver removes a child device with a procedure such as the following in its [*DispatchPnP*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine:
 
 1.  Has the driver handled a previous [**IRP\_MN\_SURPRISE\_REMOVAL**](https://msdn.microsoft.com/library/windows/hardware/ff551760) request for this PDO?
 
@@ -38,7 +37,7 @@ A bus driver removes a child device with a procedure such as the following in it
 
     -   Completes the IRP with [**IoCompleteRequest**](https://msdn.microsoft.com/library/windows/hardware/ff548343).
 
-    -   Returns from the [*DispatchPnP*](https://msdn.microsoft.com/library/windows/hardware/ff543341) routine.
+    -   Returns from the [*DispatchPnP*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine.
 
     The bus driver must continue to report this device in subsequent enumerations (**IRP\_MN\_QUERY\_DEVICE\_RELATIONS** for **BusRelations**) until the device is physically removed. The PnP manager keeps track of whether an enumerated device has been added and started.
 
@@ -62,9 +61,9 @@ A bus driver must be able to handle an **IRP\_MN\_REMOVE\_DEVICE** for a device 
 
 A bus driver does not remove its data structures for a child device until it receives an **IRP\_MN\_REMOVE\_DEVICE** request for the device. A bus driver might detect that a device has been removed and call [**IoInvalidateDeviceRelations**](https://msdn.microsoft.com/library/windows/hardware/ff549353), but it must not delete the device's PDO until the PnP manager sends an **IRP\_MN\_REMOVE\_DEVICE** request.
 
- 
+ 
 
- 
+ 
 
 
 

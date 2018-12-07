@@ -1,6 +1,5 @@
 ---
 title: Details of the IPrintCoreHelper Interface
-author: windows-driver-content
 description: Details of the IPrintCoreHelper Interface
 ms.assetid: df736ca2-425e-4fc8-bdcb-bdbd5caa3e22
 keywords:
@@ -32,9 +31,9 @@ This section provides the following topics:
 
 [Details of the IPrintCoreHelperPS Interface](details-of-the-iprintcorehelperps-interface.md)
 
- 
+ 
 
- 
+ 
 
 
 

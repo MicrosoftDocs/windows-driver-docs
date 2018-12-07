@@ -21,9 +21,9 @@ The operating system provides an IPMI driver that supports the ACPI IPMI Operati
 
 For more information, refer to the [IPMI version 2.0 Specification](http://go.microsoft.com/fwlink/p/?linkid=69485).
 
- 
+ 
 
- 
+ 
 
 
 

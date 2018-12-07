@@ -1,6 +1,5 @@
 ---
 title: Using Remove Locks
-author: windows-driver-content
 description: Using Remove Locks
 ms.assetid: 78ca7fe5-ceed-4752-bf1b-d13309097cd8
 keywords: ["remove locks WDK PnP", "lock routines WDK PnP"]
@@ -18,7 +17,7 @@ The [remove lock routines](https://msdn.microsoft.com/library/windows/hardware/f
 
 A driver can use this mechanism for two purposes:
 
-1.  To ensure that the driver's [*DispatchPnP*](https://msdn.microsoft.com/library/windows/hardware/ff543341) routine will not complete an [**IRP\_MN\_REMOVE\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551738) request while the lock is held (for example, while another driver routine is accessing the device).
+1.  To ensure that the driver's [*DispatchPnP*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine will not complete an [**IRP\_MN\_REMOVE\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551738) request while the lock is held (for example, while another driver routine is accessing the device).
 
 2.  To count the number of reasons why the driver should not delete its device object, and to set an event when that count goes to zero.
 
@@ -34,9 +33,9 @@ After **IoReleaseRemoveLockAndWait** returns, the driver should consider the dev
 
 Because a driver stores an **IO\_REMOVE\_LOCK** structure in the device extension of a device object, the remove lock is deleted when the driver deletes the device extension while processing an **IRP\_MN\_REMOVE\_DEVICE** request.
 
- 
+ 
 
- 
+ 
 
 
 

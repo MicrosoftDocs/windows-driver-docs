@@ -1,6 +1,5 @@
 ---
 title: IRP_MJ_CLOSE
-author: windows-driver-content
 description: Every driver must handle close requests in a DispatchClose routine, with the possible exception of a driver whose device cannot be disabled or removed from the machine without bringing down the system.
 ms.date: 08/12/2017
 ms.assetid: 109819a8-3787-448d-a766-5d53dbcf55f4
@@ -62,9 +61,9 @@ Requirements
 
 [**IRP\_MJ\_CREATE**](irp-mj-create.md)
 
- 
+ 
 
- 
+ 
 
 
 

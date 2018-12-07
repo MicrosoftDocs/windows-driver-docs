@@ -1,6 +1,5 @@
 ---
 title: Volume Mount Example
-author: windows-driver-content
 description: Volume Mount Example
 ms.assetid: d6645d05-a945-4454-ac7c-122219bbdc50
 keywords:
@@ -40,9 +39,9 @@ Some notes about the preceding figure:
 
     However, PnP IRPs ([**IRP\_MJ\_PNP**](https://msdn.microsoft.com/library/windows/hardware/ff549268)) can be sent to either stack. Filter drivers chained above a file system volume should always pass these IRPs down to the next lower driver by default so that the file system's volume device can pass the IRPs down to the storage device stack.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: Windows Hardware Dev Center dashboard
 description: The Windows Hardware Dev Center Dashboard replaces the legacy (Sysdev) dashboard for most hardware tasks including hardware certification, collaborative driver development, and driver distribution through Windows Update.
 layout: LandingPage
 ms.assetid: da6fe9f5-7495-4aec-b6c2-c53402cb8ea0
-ms.author: windowsdriverdev
 ms.date: 05/17/2018
 ms.topic: article
 ms.prod: windows-hardware
@@ -18,8 +17,7 @@ The Windows Hardware Dev Center Dashboard enables you to create and manage your 
 > The legacy (Sysdev) dashboard has been retired. Use the Windows Hardware Dev Center Dashboard for your hardware tasks.
 
 <ul class="cardsFTitle panelContent">
-    <li>        
-        <div class="cardSize">
+    <li><br/>        <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
@@ -40,8 +38,7 @@ The Windows Hardware Dev Center Dashboard enables you to create and manage your 
             </div>
         </div>
     </li>
-    <li>        
-        <div class="cardSize">
+    <li><br/>        <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
@@ -61,8 +58,7 @@ The Windows Hardware Dev Center Dashboard enables you to create and manage your 
             </div>
         </div>
     </li>
-    <li>        
-        <div class="cardSize">
+    <li><br/>        <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
@@ -82,8 +78,7 @@ The Windows Hardware Dev Center Dashboard enables you to create and manage your 
             </div>
         </div>
     </li>
-    <li>        
-        <div class="cardSize">
+    <li><br/>        <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
@@ -103,8 +98,7 @@ The Windows Hardware Dev Center Dashboard enables you to create and manage your 
             </div>
         </div>
     </li>
-    <li>        
-        <div class="cardSize">
+    <li><br/>        <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">

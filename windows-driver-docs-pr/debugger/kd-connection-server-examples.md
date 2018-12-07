@@ -3,7 +3,6 @@ title: KD Connection Server Examples
 description: KD Connection Server Examples
 ms.assetid: 5e54dda7-4f79-40e3-bcc5-248a3a047e31
 keywords: ["KD connection server, examples"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -63,9 +62,9 @@ G:\Debugging Tools> kd -k kdsrv:server=@{npipe:server=127.0.0.42,pipe=KernelPipe
 
 Notice that although the baud rate is specified, the port is not. This causes the debugger to default to the port specified by \_NT\_DEBUG\_PORT on the computer where KdSrv is running.
 
- 
+ 
 
- 
+ 
 
 
 

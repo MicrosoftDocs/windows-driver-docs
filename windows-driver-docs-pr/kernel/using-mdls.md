@@ -1,6 +1,5 @@
 ---
 title: Using MDLs
-author: windows-driver-content
 description: Using MDLs
 ms.assetid: 60652eb8-cfdb-4591-88ff-cf9dc4b9743d
 keywords: ["memory management WDK kernel ,"]
@@ -72,9 +71,9 @@ If the physical pages that are described by an MDL in the chain are locked, the 
 
 For a summary of the system routines that allocate, free, and manage MDLs, see [Address Mappings and MDLs](https://msdn.microsoft.com/library/windows/hardware/ff540568).
 
- 
+ 
 
- 
+ 
 
 
 

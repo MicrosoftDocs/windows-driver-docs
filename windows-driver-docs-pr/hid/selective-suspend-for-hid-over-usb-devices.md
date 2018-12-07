@@ -1,6 +1,5 @@
 ---
 title: Selective suspend for HID over USB devices
-author: windows-driver-content
 description: Revision 2.0 of the Universal Serial Bus Specification specifies a USB selective suspend feature.
 ms.assetid: A4560D7C-8A32-4A91-95B6-4377E0F0D0C1
 ms.date: 04/20/2017
@@ -110,9 +109,9 @@ Where:
 
 4.  4. The VendorXYZDevice\_Install.NT.Services section is an [**INF DDInstall.HW section**](https://msdn.microsoft.com/library/windows/hardware/ff547330). In this example, the section also contains the same values for the INF **Include** and **Needs** directives.
 
- 
+ 
 
- 
+ 
 
 
 

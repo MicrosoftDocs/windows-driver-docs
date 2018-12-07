@@ -154,9 +154,9 @@ Simple.Name="MSVAD (Simple)"
 
 After you modify the file as shown in the preceding example, save it in its original location. For more information about how to build the microphone array sample driver, see [Microphone Array Geometry Property](microphone-array-geometry-property.md).
 
- 
+ 
 
- 
+ 
 
 
 

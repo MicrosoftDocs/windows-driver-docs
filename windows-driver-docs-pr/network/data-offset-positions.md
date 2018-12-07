@@ -1,6 +1,5 @@
 ---
 title: Data offset positions
-author: windows-driver-content
 description: This section describes Data offset positions for Windows Filtering Platform callout drivers.
 ms.assetid: cf4656cf-b978-4539-9fff-8f0aa5de1b5e
 keywords:
@@ -418,7 +417,7 @@ FWPS_LAYER_NAME_RESOLUTION_CACHE_V6</p>
 </td>
 <td>
 <p>Not applicable.</p>
-<div class="alert"><b>Note</b>  For these filtering layers, the <i>*layerData*</i> parameter contains a pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff551231"><b>FWPS_CONNECT_REQUEST0</b></a> structure. This structure does  not reference a <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388"><b>NET_BUFFER_LIST</b></a> structure that describes packet data.</div>
+<div class="alert"><b>Note</b>  For these filtering layers, the <i><em>layerData</em></i> parameter contains a pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff551231"><b>FWPS_CONNECT_REQUEST0</b></a> structure. This structure does  not reference a <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388"><b>NET_BUFFER_LIST</b></a> structure that describes packet data.</div>
 <div> </div>
 </td>
 </tr>
@@ -429,7 +428,7 @@ FWPS_LAYER_NAME_RESOLUTION_CACHE_V6</p>
 </td>
 <td>
 <p>Not applicable.</p>
-<div class="alert"><b>Note</b>  For these filtering layers, the  <i>*layerData*</i> parameter contains a pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff551221"><b>FWPS_BIND_REQUEST0</b></a> structure. This structure does  not reference a <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388"><b>NET_BUFFER_LIST</b></a> structure that describes packet data.</div>
+<div class="alert"><b>Note</b>  For these filtering layers, the  <i><em>layerData</em></i> parameter contains a pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff551221"><b>FWPS_BIND_REQUEST0</b></a> structure. This structure does  not reference a <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388"><b>NET_BUFFER_LIST</b></a> structure that describes packet data.</div>
 <div> </div>
 </td>
 </tr>

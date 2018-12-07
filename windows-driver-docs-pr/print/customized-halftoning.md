@@ -1,6 +1,5 @@
 ---
 title: Customized Halftoning
-author: windows-driver-content
 description: Customized Halftoning
 ms.assetid: cc14ff92-743b-42ca-b70f-0df768762f01
 keywords:
@@ -56,9 +55,9 @@ If a rendering plug-in implements [**IPrintOemUni::ImageProcessing**](https://ms
 
 For more information about halftoning, see [Halftoning with Unidrv](halftoning-with-unidrv.md).
 
- 
+ 
 
- 
+ 
 
 
 

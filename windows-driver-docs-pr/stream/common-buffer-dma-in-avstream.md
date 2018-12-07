@@ -1,6 +1,5 @@
 ---
 title: Common Buffer DMA in AVStream
-author: windows-driver-content
 description: Common Buffer DMA in AVStream
 ms.assetid: 8cbadb5a-f879-4fe0-a698-cde3b9f6df83
 keywords:
@@ -57,9 +56,9 @@ Within the vendor-supplied [*AVStrMiniPinProcess*](https://msdn.microsoft.com/li
 
 AVStream then manages the queue based on the flags set by the minidriver in the [**KSPIN\_DESCRIPTOR\_EX**](https://msdn.microsoft.com/library/windows/hardware/ff563534) structure.
 
- 
+ 
 
- 
+ 
 
 
 

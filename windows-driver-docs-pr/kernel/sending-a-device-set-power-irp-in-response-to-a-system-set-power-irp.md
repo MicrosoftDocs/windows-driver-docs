@@ -1,6 +1,5 @@
 ---
 title: Sending a Device Set-Power IRP in Response to a System Set-Power IRP
-author: windows-driver-content
 description: Sending a Device Set-Power IRP in Response to a System Set-Power IRP
 ms.assetid: b2029292-d770-4095-8bd7-9358b282216c
 keywords: ["sending set-power IRPs", "set-power IRPs WDK power management"]
@@ -28,7 +27,7 @@ The device power policy owner should take the following steps to respond to a sy
 
 5.  Call [**IoCallDriver**](https://msdn.microsoft.com/library/windows/hardware/ff548336) (starting with Windows Vista) or [**PoCallDriver**](https://msdn.microsoft.com/library/windows/hardware/ff559654) (in Windows Server 2003, Windows XP, and Windows 2000) to pass the system set-power IRP to the next-lower driver.
 
-6.  Return STATUS\_PENDING from its [*DispatchPower*](https://msdn.microsoft.com/library/windows/hardware/ff543354) routine.
+6.  Return STATUS\_PENDING from its [*DispatchPower*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine.
 
 In the *IoCompletion* routine (see Step 3 in the preceding list), the device power policy owner sends a device set-power IRP as follows:
 
@@ -54,9 +53,9 @@ The power-completion callback routine must do the following:
 
 4.  Return the status with which the set-power IRPs completed.
 
- 
+ 
 
- 
+ 
 
 
 

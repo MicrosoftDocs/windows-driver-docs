@@ -1,6 +1,5 @@
 ---
 title: Postponing PnP IRP Processing Until Lower Drivers Finish
-author: windows-driver-content
 description: Postponing PnP IRP Processing Until Lower Drivers Finish
 ms.assetid: 5bd9f3aa-30d5-4c45-afec-3e5ae0264f4a
 keywords: ["PnP WDK kernel , postponing IRP processing", "Plug and Play WDK kernel , postponing IRP processing", "IRPs WDK PnP", "I/O request packets WDK PnP", "postponing IRP processing WDK PnP", "delaying IRP processing WDK PnP", "DispatchPnP routine", "IoCompletion routine"]
@@ -16,9 +15,9 @@ ms.localizationpriority: medium
 
 Some PnP and power IRPs must be processed first by the parent bus driver for a device and then by each next-higher driver in the device stack. For example, the parent bus driver must be the first driver to perform its start operations for a device ([**IRP\_MN\_START\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551749)), followed by each next-higher driver. For such an IRP, function and filter drivers must set an I/O completion routine, pass the IRP to the next-lower driver, and postpone any activities to process the IRP until the lower drivers have finished with the IRP.
 
-An [*IoCompletion*](https://msdn.microsoft.com/library/windows/hardware/ff548354) routine can be called at IRQL DISPATCH\_LEVEL, but a function or filter driver might need to process the IRP at IRQL = PASSIVE\_LEVEL. To return to PASSIVE\_LEVEL from an *IoCompletion* routine, a driver can use a kernel event. The driver registers an *IoCompletion* routine that sets a kernel-mode event and then the driver waits on the event in its [*DispatchPnP*](https://msdn.microsoft.com/library/windows/hardware/ff543341) routine. When the event is set, lower drivers have completed the IRP and the driver is allowed to process the IRP.
+An [*IoCompletion*](https://msdn.microsoft.com/library/windows/hardware/ff548354) routine can be called at IRQL DISPATCH\_LEVEL, but a function or filter driver might need to process the IRP at IRQL = PASSIVE\_LEVEL. To return to PASSIVE\_LEVEL from an *IoCompletion* routine, a driver can use a kernel event. The driver registers an *IoCompletion* routine that sets a kernel-mode event and then the driver waits on the event in its [*DispatchPnP*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine. When the event is set, lower drivers have completed the IRP and the driver is allowed to process the IRP.
 
-Note that a driver must not use this technique to wait for lower drivers to finish a power IRP ([**IRP\_MJ\_POWER**](https://msdn.microsoft.com/library/windows/hardware/ff550784)). Waiting on an event in the [*DispatchPower*](https://msdn.microsoft.com/library/windows/hardware/ff543354) routine that is set in the *IoCompletion* routine can cause a deadlock. See [Passing Power IRPs](passing-power-irps.md) for more information.
+Note that a driver must not use this technique to wait for lower drivers to finish a power IRP ([**IRP\_MJ\_POWER**](https://msdn.microsoft.com/library/windows/hardware/ff550784)). Waiting on an event in the [*DispatchPower*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine that is set in the *IoCompletion* routine can cause a deadlock. See [Passing Power IRPs](passing-power-irps.md) for more information.
 
 The following two figures show an example of how a driver waits for lower drivers to complete a PnP IRP. The example shows what the function and bus drivers must do, plus how they interact with the PnP manager and the I/O manager.
 
@@ -76,9 +75,9 @@ The following notes correspond to the circled numbers in the previous figure:
 
 For some IRPs, if a function or filter driver fails the IRP on its way back up the device stack, the PnP manager informs the lower drivers. For example, if a function or filter driver fails an [**IRP\_MN\_START\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551749), the PnP manager sends an [**IRP\_MN\_REMOVE\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551738) to the device stack.
 
- 
+ 
 
- 
+ 
 
 
 

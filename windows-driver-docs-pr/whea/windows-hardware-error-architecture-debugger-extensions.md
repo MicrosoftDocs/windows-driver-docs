@@ -1,6 +1,5 @@
 ---
 title: Windows Hardware Error Architecture Debugger Extensions
-author: windows-driver-content
 description: Windows Hardware Error Architecture Debugger Extensions
 ms.assetid: 47eaaf7e-31d6-437a-8318-a650d07e0c11
 keywords:
@@ -27,9 +26,9 @@ Displays the contents of an error record.
 
 The WHEA debugger extensions are included in the *Kdexts.dll* file.
 
- 
+ 
 
- 
+ 
 
 
 

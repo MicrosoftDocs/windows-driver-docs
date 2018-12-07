@@ -16,9 +16,9 @@ The KSPROPSETID\_StreamInterface property set includes:
 
 [**KSPROPERTY\_STREAMINTERFACE\_HEADERSIZE**](ksproperty-streaminterface-headersize.md)
 
- 
+ 
 
- 
+ 
 
 
 

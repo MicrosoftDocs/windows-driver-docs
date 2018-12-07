@@ -1,6 +1,5 @@
 ---
 title: A User Plugs in a Device
-author: windows-driver-content
 description: A User Plugs in a Device
 ms.assetid: 1968270b-ce57-4a8c-8b7a-bbd4a972435d
 keywords:
@@ -23,9 +22,9 @@ The framework begins by calling the driver’s [**IDriverEntry::OnDeviceAdd**](h
 
 The framework proceeds through this sequence for each UMDF function or filter driver that supports the device, one driver at a time, starting with the driver that is lowest in the driver stack.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Running test passes
-author: windows-driver-content
 description: The MITT platform can test GPIO buttons by offering both test automation and the option to customize the GPIO patterns that are sent for targeted investigations.
 ms.assetid: E24AD015-1E14-4EF9-8443-D0F38FA3321E
 ms.localizationpriority: medium
@@ -39,11 +38,11 @@ Start with the system in laptop mode (keyboard accessible).
 **Note**  
 Repeat these steps for each of distinct ways that the system can be converted into the tablet mode.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

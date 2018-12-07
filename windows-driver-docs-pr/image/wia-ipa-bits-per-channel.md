@@ -55,9 +55,9 @@ Requirements
 
 [**WIA\_IPA\_RAW\_BITS\_PER\_CHANNEL**](wia-ipa-raw-bits-per-channel.md)
 
- 
+ 
 
- 
+ 
 
 
 

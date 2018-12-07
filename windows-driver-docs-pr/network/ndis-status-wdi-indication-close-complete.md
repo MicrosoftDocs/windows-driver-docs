@@ -1,6 +1,5 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_CLOSE_COMPLETE
-author: windows-driver-content
 description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_CLOSE_COMPLETE to indicate the completion of OID_WDI_TASK_CLOSE.
 ms.assetid: 3819eff9-4d94-4d0d-b98b-71bfe54c4ecf
 ms.date: 07/18/2017
@@ -18,7 +17,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_CLOSE\_COMPLETE to indicate 
 |---------|
 | Adapter |
 
- 
+ 
 
 ## Payload data
 
@@ -49,9 +48,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

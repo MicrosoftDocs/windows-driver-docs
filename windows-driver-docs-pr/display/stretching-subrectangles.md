@@ -36,9 +36,9 @@ The following diagram shows the output of the combination deinterlacing and subs
 
 ![diagram illustrating stretching subrectangles](images/trgrect7.png)
 
- 
+ 
 
- 
+ 
 
 
 

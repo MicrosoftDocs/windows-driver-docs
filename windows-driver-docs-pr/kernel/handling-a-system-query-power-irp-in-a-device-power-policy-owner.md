@@ -1,6 +1,5 @@
 ---
 title: Handling a System Query-Power IRP in a Device Power Policy Owner
-author: windows-driver-content
 description: Handling a System Query-Power IRP in a Device Power Policy Owner
 ms.assetid: 680e3be2-63d9-4d79-a7c0-422e852e9347
 keywords: ["query-power IRPs WDK power management", "device power policy owners WDK kernel"]
@@ -56,9 +55,9 @@ After the IRP has been completed and all *IoCompletion* routines set during IRP 
 
 Remember that the device power policy owner not only sends the device query but also must handle it on its way down the device stack. For more information, see [Handling IRP\_MN\_QUERY\_POWER for Device Power States](handling-irp-mn-query-power-for-device-power-states.md).
 
- 
+ 
 
- 
+ 
 
 
 

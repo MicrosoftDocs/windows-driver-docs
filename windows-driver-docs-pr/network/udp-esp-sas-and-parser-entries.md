@@ -66,9 +66,9 @@ If the miniport driver fails the OID\_TCP\_TASK\_IPSEC\_DELETE\_UDPESP\_SA reque
 
 Note that a transport could request a miniport driver to delete an SA or a parser entry (or both) before the miniport driver completes adding that SA or parser entry (or both). The miniport driver must therefore serialize the deletion operation with the addition operation.
 
- 
+ 
 
- 
+ 
 
 
 

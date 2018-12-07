@@ -1,6 +1,5 @@
 ---
 title: OpenPrinter
-author: windows-driver-content
 description: OpenPrinter
 ms.assetid: 8bbb46a8-2bba-4d15-a2e2-4770b52d2505
 keywords:
@@ -30,9 +29,9 @@ The methods of the **IPrintTicketProvider** interface in a Unidrv or PScript5 pr
 
 3.  For each plug-in, call [**IPrintOemPrintTicketProvider::QueryDeviceDefaultNamespace**](https://msdn.microsoft.com/library/windows/hardware/ff553180).
 
- 
+ 
 
- 
+ 
 
 
 

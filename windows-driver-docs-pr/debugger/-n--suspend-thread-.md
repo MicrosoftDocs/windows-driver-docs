@@ -3,7 +3,6 @@ title: ~n (Suspend Thread)
 description: The ~n command suspends execution of the specified thread.Do not confuse this command with the n (Set Number Base) command.
 ms.assetid: 4b1063ad-edba-4cd3-9084-dc6c08c69f55
 keywords: ["~n (Suspend Thread) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -54,7 +53,7 @@ Specifies the thread or threads to suspend. For more information about the synta
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -69,9 +68,9 @@ Every time that you use the **~n** command, the thread's suspend count is increa
 
 The thread's start address is displayed when you use this command.
 
- 
+ 
 
- 
+ 
 
 
 

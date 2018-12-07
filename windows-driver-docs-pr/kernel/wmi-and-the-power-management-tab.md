@@ -1,6 +1,5 @@
 ---
 title: WMI and the Power Management Tab
-author: windows-driver-content
 description: WMI and the Power Management Tab
 ms.assetid: ff270fc0-806b-4014-ba9c-9c321a10c893
 keywords: ["WMI WDK kernel , property sheets", "property sheets WDK WMI", "device property sheets WDK WMI", "power management WDK WMI", "property pages WDK WMI"]
@@ -30,9 +29,9 @@ WMI query requests are sent for the GUID\_POWER\_DEVICE\_*XXX* WMI class GUIDs w
 
 The mouse or keyboard class sample drivers both handle the GUID\_POWER\_DEVICE\_WAKE\_ENABLE WMI class GUID. See \\src\\input\\kbdclass and \\src\\input\\mouclass in the Windows Driver Kit (WDK).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: Debugging a Service Application
 description: Debugging a Service Application
 ms.assetid: 1d1e24d5-8b6b-4ed5-84ad-b73356168b10
 keywords: ["service application debugging", "postmortem debugging, debugging service applications", "services"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -27,9 +26,9 @@ The following sections describe how to debug a service application:
 
 For an overview of services, service applications, and the service control manager, see *Microsoft Windows Internals: Microsoft Windows Server 2003, Windows XP, and Windows 2000* by David A. Solomon and Mark E. Russinovich (4th edition, Microsoft Press, 2005).
 
- 
+ 
 
- 
+ 
 
 
 

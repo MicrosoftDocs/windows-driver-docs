@@ -1,6 +1,5 @@
 ---
 title: GDL Exercise 6 Creating Specialized Versions
-author: windows-driver-content
 description: GDL Exercise 6 Creating Specialized Versions
 ms.assetid: d9e60958-58b6-4ffe-a955-bc1b13b6a649
 keywords:
@@ -143,9 +142,9 @@ The following code example shows a sample GDL data file for verification.
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

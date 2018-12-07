@@ -1,6 +1,5 @@
 ---
 title: PagesPerSheet
-author: windows-driver-content
 description: PagesPerSheet
 ms.assetid: 019c9344-7661-4c39-a441-469d340e61cb
 ms.date: 11/28/2017
@@ -38,9 +37,9 @@ Data Type:BIDI\_STRING
 
 Description:A comma-separated list of all the values supported for PagesPerSheet.
 
- 
+ 
 
- 
+ 
 
 
 

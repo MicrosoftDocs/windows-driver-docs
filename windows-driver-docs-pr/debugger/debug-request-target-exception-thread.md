@@ -9,7 +9,6 @@ api_name:
 - DEBUG_REQUEST_TARGET_EXCEPTION_THREAD
 api_type:
 - NA
-ms.author: domars
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -32,9 +31,9 @@ The operating system thread ID for the stored event. The type of the thread ID i
 
 [**Request**](request.md)
 
- 
+ 
 
- 
+ 
 
 
 

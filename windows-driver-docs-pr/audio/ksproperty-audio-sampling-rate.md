@@ -47,13 +47,13 @@ The KSPROPERTY\_AUDIO\_SAMPLING\_RATE property specifies the rate at which a nod
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p>[<strong>KSNODEPROPERTY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537143)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537143" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537143)"><strong>KSNODEPROPERTY</strong></a></p></td>
 <td align="left"><p>ULONG</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is of type ULONG and specifies sampling rate. This rate is expressed as the number of samples per second (the sampling frequency in Hz).
 
@@ -101,9 +101,9 @@ Requirements
 
 [**KSNODETYPE\_SRC**](ksnodetype-src.md)
 
- 
+ 
 
- 
+ 
 
 
 

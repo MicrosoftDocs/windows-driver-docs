@@ -1,6 +1,5 @@
 ---
 title: Hiding Devices from Device Manager
-author: windows-driver-content
 description: Hiding Devices from Device Manager
 ms.assetid: dd362ae1-ab14-44ee-982e-f972454c2623
 keywords: ["Device Manager WDK , hidden devices", "devices WDK , hiding from Device Manager", "hidden devices WDK", "hiding devices WDK", "NoDisplayClass value WDK device installations"]
@@ -53,11 +52,11 @@ _HID *PNP0A03
 
 **Note**   The "decoding" bit (0x2) does not have any relevance for devices that are described through \_ADR methods. The previous code examples also work without the decoding bit set. BIOS writers must track the decoding state only for devices that are described through \_HID methods.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

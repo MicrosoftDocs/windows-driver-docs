@@ -1,6 +1,5 @@
 ---
 title: GDL Comments
-author: windows-driver-content
 description: GDL Comments
 ms.assetid: d7103c5b-87dd-46e9-972a-188758ee3447
 keywords:
@@ -19,9 +18,9 @@ A *comment* can appear anywhere that [non-literal whitespace](gdl-whitespace-cha
 
 The entire comment is treated as non-literal whitespace. The terminating linebreak sequence is not part of the comment. Comments can appear within a nested context, but no contexts are recognized within a comment.
 
- 
+ 
 
- 
+ 
 
 
 

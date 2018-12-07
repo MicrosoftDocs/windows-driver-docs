@@ -27,9 +27,9 @@ When the PF miniport driver handles an object identifier (OID) method request of
 
 Nondefault VPorts are created through OID method requests of [OID\_NIC\_SWITCH\_CREATE\_VPORT](https://msdn.microsoft.com/library/windows/hardware/hh451816). Only one nondefault VPort can be attached to a VF. Once attached, the default is in an operational state. One or more nondefault VPorts can also be created and attached to the PF. These VPorts are nonoperational when created and can become operational through an OID set request of [OID\_NIC\_SWITCH\_VPORT\_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/hh451825).
 
-**Note**  After a VPort becomes operational, it can only become nonoperational when it is deleted through an OID request of [OID\_NIC\_SWITCH\_DELETE\_VPORT](https://msdn.microsoft.com/library/windows/hardware/hh451818).
+**Note**  After a VPort becomes operational, it can only become nonoperational when it is deleted through an OID request of [OID\_NIC\_SWITCH\_DELETE\_VPORT](https://msdn.microsoft.com/library/windows/hardware/hh451818).
 
- 
+
 
 Each VPort has one or more hardware queue pairs associated with it for receiving and transmitting packets. The default queue pair on the network adapter is reserved for use by the default VPort. Queue pairs for nondefault VPorts are allocated and assigned when the VPort is created through the [OID\_NIC\_SWITCH\_CREATE\_VPORT](https://msdn.microsoft.com/library/windows/hardware/hh451816) request.
 
@@ -39,11 +39,13 @@ Nondefault VPorts are created and configured through OID method requests of [OID
 
     Each VPort can be either attached to the PF or with a VF at any time. After the VPort is created and attached to a PCIe function, the attachment cannot be dynamically changed to another PCIe function.
 
-    **Note**  The default VPort is always attached to the PF on the network adapter.
+    **Note**  The default VPort is always attached to the PF on the network adapter.
 
-     
 
-    Starting with NDIS 6.30 in Windows Server 2012, only one nondefault VPort can be attached to a VF. However, multiple nondefault VPorts along with the default VPort can be attached to the PF.
+
+
+Starting with NDIS 6.30 in Windows Server 2012, only one nondefault VPort can be attached to a VF. However, multiple nondefault VPorts along with the default VPort can be attached to the PF.
+
 
 -   The number of hardware queue pairs that are assigned to a VPort.
 
@@ -53,15 +55,17 @@ Nondefault VPorts are created and configured through OID method requests of [OID
 
     Each nondefault VPort can be configured to have a different number of queue pairs. This is known as *asymmetric allocation* of queue pairs. If the NIC does not allow for such an asymmetric allocation, each nondefault VPort is configured to have equal number of queue pairs. This is known as *symmetric allocation* of queue pairs. For more information, see [Symmetric and Asymmetric Assignment of Queue Pairs](symmetric-and-asymmetric-assignment-of-queue-pairs.md).
 
-    **Note**  The PF miniport driver reports on whether it supports asymmetric allocation of queue pairs during [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389). For more information, see [Initializing a PF Miniport Driver](initializing-a-pf-miniport-driver.md).
+    **Note**  The PF miniport driver reports on whether it supports asymmetric allocation of queue pairs during [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389). For more information, see [Initializing a PF Miniport Driver](initializing-a-pf-miniport-driver.md).
 
-     
 
-    The number of queue pairs assigned to each VPort is not changed dynamically. The number of queue pairs assigned to a VPort cannot be changed after the VPort has been created.
 
-    **Note**  One or more queue pairs assigned to the nondefault VPorts can be used for receive side scaling (RSS) by the VF miniport driver that runs in the guest operating system.
 
-     
+The number of queue pairs assigned to each VPort is not changed dynamically. The number of queue pairs assigned to a VPort cannot be changed after the VPort has been created.
+
+**Note**  One or more queue pairs assigned to the nondefault VPorts can be used for receive side scaling (RSS) by the VF miniport driver that runs in the guest operating system.
+
+
+
 
 -   Interrupt moderation parameters for the VPort.
 
@@ -79,9 +83,9 @@ Multiple MAC address and VLAN identifier pairs may be set on the VPort. If only 
 
 Nondefault VPorts are deleted through OID set requests of [OID\_NIC\_SWITCH\_DELETE\_VPORT](https://msdn.microsoft.com/library/windows/hardware/hh451816). The default VPort is only deleted when the NIC switch is deleted through an OID set request of [OID\_NIC\_SWITCH\_DELETE\_SWITCH](https://msdn.microsoft.com/library/windows/hardware/hh451817).
 
- 
 
- 
+
+
 
 
 

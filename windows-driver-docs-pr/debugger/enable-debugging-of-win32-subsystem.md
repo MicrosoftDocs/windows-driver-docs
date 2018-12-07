@@ -3,7 +3,6 @@ title: Enable debugging of Win32 subsystem
 description: Enable debugging of Win32 subsystem
 ms.assetid: ea9d1c96-413e-42b7-a0c2-b114aa6de2a6
 keywords: ["Enable debugging of Win32 subsystem (global flag)"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -41,7 +40,7 @@ The **Enable debugging of Win32 subsystem** flag debugs the Client Server Run-ti
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
@@ -51,9 +50,9 @@ This flag is effective only when the [Debug initial command](debug-initial-comma
 
 For details on NTSD, see [Debugging Using CDB and NTSD](debugging-using-cdb-and-ntsd.md).
 
- 
+ 
 
- 
+ 
 
 
 

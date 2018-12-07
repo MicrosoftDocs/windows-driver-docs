@@ -3,7 +3,6 @@ title: pc (Step to Next Call)
 description: The pc command executes the program until a call instruction is reached.
 ms.assetid: 4b9b786c-2ecc-44a6-a82b-0641d7991abc
 keywords: ["pc (Step to Next Call) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -71,7 +70,7 @@ Specifies the number of **call** instructions that the debugger must encounter f
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -86,9 +85,9 @@ If the program counter is already on a **call** instruction, the entire call is 
 
 In source mode, you can associate one source line with multiple assembly instructions. The **pc** command does not stop at a **call** instruction that is associated with the current source line.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Device Working State D0
-author: windows-driver-content
 description: Device Working State D0
 ms.assetid: 6b0ec03a-eaf1-4c96-aaae-dfe821583787
 keywords: ["device power states WDK kernel", "Dx names WDK power management", "device working state WDK power management", "continuous power WDK kernel", "delays WDK power management", "working states WDK power management"]
@@ -41,9 +40,9 @@ Not applicable.
 <a href="" id="wake-up-capability"></a>**Wake-up capability**  
 Not applicable.
 
- 
+ 
 
- 
+ 
 
 
 

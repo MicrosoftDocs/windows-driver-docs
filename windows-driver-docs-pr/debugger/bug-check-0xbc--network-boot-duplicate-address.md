@@ -3,7 +3,6 @@ title: Bug Check 0xBC NETWORK_BOOT_DUPLICATE_ADDRESS
 description: The NETWORK_BOOT_DUPLICATE_ADDRESS bug check has a value of 0x000000BC. This indicates that a duplicate IP address was assigned to this machine while booting off a network.
 ms.assetid: 54c45e73-7054-4dba-abe4-91f5f5a064a4
 keywords: ["Bug Check 0xBC NETWORK_BOOT_DUPLICATE_ADDRESS", "NETWORK_BOOT_DUPLICATE_ADDRESS"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -55,11 +54,11 @@ The NETWORK\_BOOT\_DUPLICATE\_ADDRESS bug check has a value of 0x000000BC. This 
 </tbody>
 </table>
 
- 
+ 
 
 **Note**   When Parameter 4 equals zero, this indicates an Ethernet connection. In that case, the MAC address will be stored in Parameter 2 and Parameter 3. An Ethernet MAC address of the form *aa-bb-cc-dd-ee-ff* will cause Parameter 2 to equal 0xAABBCCDD, and Parameter 3 to equal 0xEEFF0000.
 
- 
+ 
 
 Cause
 -----
@@ -68,9 +67,9 @@ This error indicates that when TCP/IP sent out an ARP for its IP address, it got
 
 When Windows is booting off a network, this is a fatal error.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Pscript User Interface
-author: windows-driver-content
 description: Pscript User Interface
 ms.assetid: 88c1bb99-bc05-454f-ae36-722e9aa246c6
 keywords:
@@ -29,9 +28,9 @@ The Pscript user interface is implemented as a user-mode [printer interface DLL]
 
 You can modify the Pscript-supplied property sheet pages by providing a [user interface plug-in](user-interface-plug-ins.md), which is described in the section entitled [Customizing Microsoft's Printer Drivers](customizing-microsoft-s-printer-drivers.md).
 
- 
+ 
 
- 
+ 
 
 
 

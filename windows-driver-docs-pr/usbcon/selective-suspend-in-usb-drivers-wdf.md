@@ -1,7 +1,6 @@
 ---
 Description: A USB function driver supports runtime idle detection by implementing USB selective suspend. 
 title: Selective suspend in USB drivers (WDF)
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -73,17 +72,17 @@ If the driver is not the PPO, the framework takes no further actions because onl
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[Selective suspend in UMDF drivers](selective-suspend-in-umdf-drivers.md)</p></td>
+<td><p><a href="selective-suspend-in-umdf-drivers.md" data-raw-source="[Selective suspend in UMDF drivers](selective-suspend-in-umdf-drivers.md)">Selective suspend in UMDF drivers</a></p></td>
 <td><p>This topic describes how UMDF function drivers support USB selective suspend.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Selective suspend in USB KMDF function drivers](selective-suspend-in-a-kmdf-function-driver.md)</p></td>
+<td><p><a href="selective-suspend-in-a-kmdf-function-driver.md" data-raw-source="[Selective suspend in USB KMDF function drivers](selective-suspend-in-a-kmdf-function-driver.md)">Selective suspend in USB KMDF function drivers</a></p></td>
 <td><p>This topic describes how KMDF function drivers support USB selective suspend.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 [Windows Driver Frameworks (WDF)](http://go.microsoft.com/fwlink/p/?linkid=53698)  

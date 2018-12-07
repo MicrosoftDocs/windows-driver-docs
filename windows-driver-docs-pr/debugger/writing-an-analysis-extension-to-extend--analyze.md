@@ -2,7 +2,6 @@
 title: Writing an Analysis Extension Plugin to Extend analyze
 description: You can extend the capabilities of the analyze debugger command by writing an analysis extension plugin.
 ms.assetid: 7648F789-85D5-4247-90DD-2EAA43543483
-ms.author: domars
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -33,7 +32,7 @@ The entry `BugCheckCode  0x0A` specifies that this plugin wants to participate i
 
 **Note**  The last line of the metadata file must end with a newline character.
 
- 
+ 
 
 ## <span id="Skeleton_Example"></span><span id="skeleton-example"></span><span id="SKELETON_EXAMPLE"></span>Skeleton Example
 
@@ -100,7 +99,7 @@ Here is a skeleton example that you can use as a starting point.
 
     **Note**  The last line of the metadata file must end with a newline character.
 
-     
+     
 
 3.  Establish a kernel-mode debugging session between a host and target computer.
 
@@ -230,9 +229,9 @@ pControl->Output(DEBUG_OUTPUT_NORMAL, "The description is %s\n", desc);
 
 [IDebugFAEntryTags](https://msdn.microsoft.com/library/windows/hardware/jj983404)
 
- 
+ 
 
- 
+ 
 
 
 

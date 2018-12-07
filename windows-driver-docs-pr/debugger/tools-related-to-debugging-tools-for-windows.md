@@ -2,7 +2,6 @@
 title: Tools Related to Debugging Tools for Windows
 description: This section describes tools that are related to debugging but are not included in the Debugging Tools for Windows package.
 ms.assetid: A121BF0C-53BF-48E0-9000-3BDA255FD884
-ms.author: domars
 ms.date: 02/22/2018
 ms.localizationpriority: medium
 ---
@@ -25,9 +24,9 @@ You can configure Windows Error Reporting (WER) to write user-mode dump files wh
 
 [Debugging Tools for Windows](index.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: parameter element
-author: windows-driver-content
 description: The optional parameter element specifies a text string that is substituted for a percentage ( ) character in the text of an event notification message.
 ms.assetid: 6a43af7d-da00-4038-b1a8-a076d07c4c1a
 keywords: ["parameter element Print Devices"]
@@ -69,7 +68,7 @@ Attributes
 <td><p>xs:string</p></td>
 <td><p>No</p></td>
 <td><p></p>
-<p>An optional attribute that specifies the name of the printer or document. This attribute can take one of the following values:DocumentThe name of the document being printed.PrinterNameThe name of the printer, as listed in the Printers and Faxes folder in Control Panel, for example, &quot;Fabrikam 5000 on \\printserver&quot; or &quot;Printer in upstairs bedroom.&quot;</p></td>
+<p>An optional attribute that specifies the name of the printer or document. This attribute can take one of the following values:DocumentThe name of the document being printed.PrinterNameThe name of the printer, as listed in the Printers and Faxes folder in Control Panel, for example, &quot;Fabrikam 5000 on \printserver&quot; or &quot;Printer in upstairs bedroom.&quot;</p></td>
 </tr>
 </tbody>
 </table>
@@ -95,12 +94,12 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>body</strong>](body.md)</p></td>
+<td><p><a href="body.md" data-raw-source="[&lt;strong&gt;body&lt;/strong&gt;](body.md)"><strong>body</strong></a></p></td>
 <td><p></p>
 <p>A required element that provides text that is displayed in the event notification message. This text should provide the user specific details about the printer event.</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>title</strong>](title.md)</p></td>
+<td><p><a href="title.md" data-raw-source="[&lt;strong&gt;title&lt;/strong&gt;](title.md)"><strong>title</strong></a></p></td>
 <td><p></p>
 <p>The required title element provides text that is displayed in the title of the event notification message.</p></td>
 </tr>

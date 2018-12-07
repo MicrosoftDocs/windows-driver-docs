@@ -1,6 +1,5 @@
 ---
 title: Canceling I/O Requests in UMDF
-author: windows-driver-content
 description: Canceling I/O Requests in UMDF
 ms.assetid: 4f69903b-00ef-4b47-a564-aaa7d076481b
 keywords:
@@ -63,9 +62,9 @@ Canceling an I/O request might involve any of the following:
 
 If a driver is canceling an I/O request for a request object that the driver received from the framework, the driver must always complete the request by calling [**IWDFIoRequest::Complete**](https://msdn.microsoft.com/library/windows/hardware/ff559070) or [**IWDFIoRequest::CompleteWithInformation**](https://msdn.microsoft.com/library/windows/hardware/ff559074), with a *CompletionStatus* parameter of HRESULT\_FROM\_WIN32(ERROR\_OPERATION\_ABORTED). (If the driver called [**IWDFDevice::CreateRequest**](https://msdn.microsoft.com/library/windows/hardware/ff557021) to create a request object, the driver calls [**IWDFObject::DeleteWdfObject**](https://msdn.microsoft.com/library/windows/hardware/ff560210) instead of completing the request.)
 
- 
+ 
 
- 
+ 
 
 
 

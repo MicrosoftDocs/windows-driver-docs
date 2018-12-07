@@ -1,6 +1,5 @@
 ---
 title: WDF_DECLARE_CUSTOM_TYPE macro
-author: windows-driver-content
 description: The WDF_DECLARE_CUSTOM_TYPE macro creates a name and an accessor method for a driver's custom type.
 ms.assetid: DF496E17-B3D4-4983-8506-40810ECAEA3E
 keywords:
@@ -21,7 +20,7 @@ Syntax
 
 ```ManagedCPlusPlus
 void WDF_DECLARE_CUSTOM_TYPE(
-    _customtype
+    _customtype
 );
 ```
 
@@ -91,7 +90,7 @@ Requirements
 <tbody>
 <tr class="odd">
 <td><p>Target platform</p></td>
-<td>[Universal](http://go.microsoft.com/fwlink/p/?linkid=531356)</td>
+<td><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" data-raw-source="[Universal](http://go.microsoft.com/fwlink/p/?linkid=531356)">Universal</a></td>
 </tr>
 <tr class="even">
 <td><p>Minimum KMDF version</p></td>
@@ -119,9 +118,9 @@ Requirements
 
 [**WdfObjectIsCustomType**](wdfobjectiscustomtype.md)
 
- 
+ 
 
- 
+ 
 
 
 

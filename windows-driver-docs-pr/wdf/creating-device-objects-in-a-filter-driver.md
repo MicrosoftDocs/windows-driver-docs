@@ -1,6 +1,5 @@
 ---
 title: Creating Device Objects in a Filter Driver
-author: windows-driver-content
 description: Creating Device Objects in a Filter Driver
 ms.assetid: f5a4851d-7caf-467d-9500-11f341fdf680
 keywords:
@@ -26,9 +25,9 @@ Filter drivers must call [**WdfFdoInitSetFilter**](https://msdn.microsoft.com/li
 
 The final step in creating a device object is to call [**WdfDeviceCreate**](https://msdn.microsoft.com/library/windows/hardware/ff545926).
 
- 
+ 
 
- 
+ 
 
 
 

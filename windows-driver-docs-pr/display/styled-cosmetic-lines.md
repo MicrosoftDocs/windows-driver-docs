@@ -65,9 +65,9 @@ If the LA\_ALTERNATE bit is set in the flag in the [**LINEATTRS**](https://msdn.
 
 If the LA\_STARTGAP bit is set in the LINEATTRS flag, the sense of the elements in the style array is inverted. The first array entry specifies the length of the first gap, the second entry specifies the length of the first dash, and so forth.
 
- 
+ 
 
- 
+ 
 
 
 

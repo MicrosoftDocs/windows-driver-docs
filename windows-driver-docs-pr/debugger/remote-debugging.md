@@ -3,7 +3,6 @@ title: Remote Debugging
 description: This topic provides an overview of remote user-mode debugging. This involves two computers the client and the server.
 ms.assetid: fa87b55c-c339-4b8c-8614-c7355d203a6e
 keywords: remote debugging
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -36,9 +35,9 @@ Remote kernel-mode debugging involves three computers: the *client*, the *server
 
 [Remote Debugging on Workgroup Computers](remote-debugging-on-workgroup-computers.md)
 
- 
+ 
 
- 
+ 
 
 
 

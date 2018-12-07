@@ -44,9 +44,9 @@ The following subsections describe how to use the packet-based and common-buffer
 
 [Points to Consider When Using DMA](points-to-consider-when-using-dma.md)
 
- 
+ 
 
- 
+ 
 
 
 

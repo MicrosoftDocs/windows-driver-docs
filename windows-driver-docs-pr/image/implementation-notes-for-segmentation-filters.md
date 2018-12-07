@@ -1,6 +1,5 @@
 ---
 title: Implementation Notes for Segmentation Filters
-author: windows-driver-content
 description: Implementation Notes for Segmentation Filters
 ms.assetid: c4caf8dd-8108-4bc7-b02f-1e180fedb95f
 ms.date: 04/20/2017
@@ -31,9 +30,9 @@ Note that, in most cases, WIA\_IPS\_XPOS and WIA\_IPS\_YPOS will be set to zero,
 
 Also note that while an application can pass in an image to the segmentation filter that has been rotated by the driver, it must not pass in an image on which deskewing has already been performed.
 
- 
+ 
 
- 
+ 
 
 
 

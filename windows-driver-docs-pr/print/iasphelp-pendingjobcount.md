@@ -1,6 +1,5 @@
 ---
 title: Iasphelp get\_PendingJobCount method
-author: windows-driver-content
 description: The PendingJobCount property enables an ASP Web page to determine the number of pending print jobs.
 MS-HAID:
 - 'webfnc\_fd1cbaac-f195-4a38-8788-990eb9b3fd6c.xml'
@@ -62,7 +61,7 @@ This property returns one of the values in the following table.
 </tr>
 <tr class="even">
 <td><strong>E_HANDLE</strong></td>
-<td><p>The [<strong>Iasphelp::Open</strong>](iasphelp-open.md) method has not been called.</p></td>
+<td><p>The <a href="iasphelp-open.md" data-raw-source="[&lt;strong&gt;Iasphelp::Open&lt;/strong&gt;](iasphelp-open.md)"><strong>Iasphelp::Open</strong></a> method has not been called.</p></td>
 </tr>
 <tr class="odd">
 <td><strong>E_OUTOFMEMORY</strong></td>

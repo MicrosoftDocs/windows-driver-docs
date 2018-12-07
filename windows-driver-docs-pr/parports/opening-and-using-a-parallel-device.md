@@ -1,6 +1,5 @@
 ---
 title: Opening and Using a Parallel Device
-author: windows-driver-content
 description: Opening and Using a Parallel Device
 ms.assetid: ca58b1c3-9ecf-4ebe-8f08-a2f78ae17921
 keywords:
@@ -38,9 +37,9 @@ A client usually does the following:
 
 Note that in a Plug and Play environment, a device can be removed or added whenever there are no open files on it. In general, every time a parallel device is added, Plug and Play assigns a different location and resources.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: poolfind
 description: The poolfind extension finds all instances of a specific pool tag in either nonpaged or paged memory pools.
 ms.assetid: 01783b6b-0117-49ca-87ca-bbe3c1b0e730
 keywords: ["poolfind Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -67,7 +66,7 @@ Specifies the special pool.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -127,9 +126,9 @@ e1224250 size:   a0 previous size:   30  (Allocated) SeSd
 kd> 
 ```
 
- 
+ 
 
- 
+ 
 
 
 

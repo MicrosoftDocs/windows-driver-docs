@@ -1,6 +1,5 @@
 ---
 title: Mounting a Volume
-author: windows-driver-content
 description: Mounting a Volume
 ms.assetid: 0531b023-f35c-4fe9-9c0d-5acafc42f9b4
 keywords:
@@ -38,9 +37,9 @@ The following sections discuss how the file system mounts the volume after recog
 
 [Volume Mount Example](volume-mount-example.md)
 
- 
+ 
 
- 
+ 
 
 
 

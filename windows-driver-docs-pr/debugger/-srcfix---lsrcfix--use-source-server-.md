@@ -3,7 +3,6 @@ title: .srcfix, .lsrcfix (Use Source Server)
 description: The .srcfix and .lsrcfix commands automatically set the source path to indicate that a source server will be used.
 ms.assetid: e4cc3031-7990-4339-9dc2-f2c5a219a771
 keywords: [".srcfix, .lsrcfix (Use Source Server) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -28,7 +27,7 @@ The **.srcfix** and **.lsrcfix** commands automatically set the source path to i
 
 
 <span id="______________"></span> **+**   
-Causes the existing source path to be preserved, and **; srv\*** to be appended to the end. If the **+** is not used, the existing source path is replaced.
+Causes the existing source path to be preserved, and **; srv\\*** to be appended to the end. If the **+** is not used, the existing source path is replaced.
 
 <span id="_______Paths______"></span><span id="_______paths______"></span><span id="_______PATHS______"></span> *Paths*   
 Specifies one or more additional paths to append to the end of the new source path.
@@ -58,7 +57,7 @@ The **.srcfix** command is available on all debuggers. The **.lsrcfix** command 
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -71,7 +70,7 @@ When you add `srv*` to the source path, the debugger uses [SrcSrv](srcsrv.md) to
 
 When this command is issued from a debugging client, **.srcfix** sets the source path to use a source server on the debugging server, while **.lsrcfix** does the same on the local machine.
 
-These commands are the same as the [**.srcpath (Set Source Path)**](-srcpath---lsrcpath--set-source-path-.md) and **.lsrcpath (Set Local Source Path)** commands followed by the **srv\*** source path element. Thus, the following two commands are equivalent:
+These commands are the same as the [**.srcpath (Set Source Path)**](-srcpath---lsrcpath--set-source-path-.md) and **.lsrcpath (Set Local Source Path)** commands followed by the **srv\\*** source path element. Thus, the following two commands are equivalent:
 
 ```dbgcmd
 .srcfix[+] [Paths] 
@@ -85,9 +84,9 @@ Similarly, the following two commands are equivalent:
 .lsrcpath[+] srv*[;Paths] 
 ```
 
- 
+ 
 
- 
+ 
 
 
 

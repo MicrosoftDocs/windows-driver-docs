@@ -1,6 +1,5 @@
 ---
 title: Driver Capabilities
-author: windows-driver-content
 description: Driver Capabilities
 ms.assetid: 639eff56-655d-4b6a-95f0-daa1daf62fae
 ms.date: 04/20/2017
@@ -45,11 +44,11 @@ A WIA device command is a request that the WIA service sends (on behalf of the i
 
 **Note**   The Scanner and Camera Wizard responds immediately to the user, even if it still has clean-up to do in the background. For example, the Scanner and Camera Wizard window closes immediately when the user requests to cancel an action; however, the Scanner and Camera Wizard has a separate acquisition thread that continues to run after the window is closed. This separate thread enables an immediate response to the user's request but enables necessary tasks and tasks that cannot be interrupted to complete without impacting the user experience.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

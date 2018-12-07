@@ -22,9 +22,9 @@ For more information about pause and restart of the miniport upper edge of an in
 
 For more information about pause and restart of the protocol lower edge of an intermediate driver, see [Supporting NDIS 6.0 Protocol Binding Pause and Restart Operations](supporting-ndis-6-0-protocol-binding-pause-and-restart-operations.md).
 
- 
+ 
 
- 
+ 
 
 
 

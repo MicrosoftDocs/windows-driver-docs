@@ -1,6 +1,5 @@
 ---
 title: OID_NIC_SWITCH_ENUM_VPORTS
-author: windows-driver-content
 description: An overlying driver or user-mode application issues an object identifier (OID) method request of OID_NIC_SWITCH_ENUM_VPORTS to obtain an array.
 ms.assetid: 4B9587E0-3CA9-46AF-A80E-969E6D563922
 ms.date: 08/08/2017
@@ -22,7 +21,7 @@ After a successful return from this OID query request, the **InformationBuffer**
 
     **Note**  If no VPorts have been created on the network adapter, the driver sets the **NumElements** member of the [**NDIS\_NIC\_SWITCH\_VPORT\_INFO\_ARRAY**](https://msdn.microsoft.com/library/windows/hardware/hh451595) structure to zero and no [**NDIS\_NIC\_SWITCH\_VPORT\_INFO**](https://msdn.microsoft.com/library/windows/hardware/hh451594) structures are returned.
 
-     
+     
 
 Remarks
 -------
@@ -31,19 +30,19 @@ Overlying drivers and user-mode applications issue OID query requests of OID\_NI
 
 Before the driver or application issues the OID request, it must initialize an [**NDIS\_NIC\_SWITCH\_VPORT\_INFO\_ARRAY**](https://msdn.microsoft.com/library/windows/hardware/hh451595) structure that is passed along with the request. The driver or application must follow these guidelines when initializing the **NDIS\_NIC\_SWITCH\_VPORT\_INFO\_ARRAY** structure:
 
--   If the NDIS\_NIC\_SWITCH\_VPORT\_INFO\_ARRAY\_ENUM\_ON\_SPECIFIC\_SWITCH flag is set in the **Flags** member, information is retuned for all VPorts created on a specified NIC switch. The NIC switch is specified by the **SwitchId** member of that structure.
+-   If the NDIS\_NIC\_SWITCH\_VPORT\_INFO\_ARRAY\_ENUM\_ON\_SPECIFIC\_SWITCH flag is set in the **Flags** member, information is returned for all VPorts created on a specified NIC switch. The NIC switch is specified by the **SwitchId** member of that structure.
 
     **Note**  Starting with Windows Server 2012, the SR-IOV interface supports only the default NIC switch on the network adapter. Regardless of the flags that are set in the **Flags** member, the **SwitchId** member must be set to NDIS\_DEFAULT\_SWITCH\_ID.
 
-     
+     
 
--   If the NDIS\_NIC\_SWITCH\_VPORT\_INFO\_ARRAY\_ENUM\_ON\_SPECIFIC\_FUNCTION flag is set in the **Flags** member, information is retuned for all VPorts attached to a specified PCI Express (PCIe) Physical Function (PF) or Virtual Function (VF) on the network adapter. The PF or VF is specified by the **AttachedFunctionId** member of that structure.
+-   If the NDIS\_NIC\_SWITCH\_VPORT\_INFO\_ARRAY\_ENUM\_ON\_SPECIFIC\_FUNCTION flag is set in the **Flags** member, information is returned for all VPorts attached to a specified PCI Express (PCIe) Physical Function (PF) or Virtual Function (VF) on the network adapter. The PF or VF is specified by the **AttachedFunctionId** member of that structure.
 
     If the **AttachedFunctionId** member is set to NDIS\_PF\_FUNCTION\_ID, information is returned for all VPorts, including the default VPort, that are attached to the network adapter's PF. If the **AttachedFunctionId** member is set to a valid VF identifier, information is returned for all VPorts to the specified VF.
 
     **Note**  Starting with Windows Server 2012, only one nondefault VPort can be attached to a VF. However, multiple VPorts (including the default VPort) can be attached to the PF.
 
-     
+     
 
 -   If the **Flags** member is set to zero, information is returned for all VPorts attached to the PF or VF on the network adapter. In this case, the values of the **SwitchId** and **AttachedFunctionId** are ignored.
 
@@ -77,11 +76,11 @@ When NDIS handles the OID\_NIC\_SWITCH\_ENUM\_VPORTS request, it returns one of 
 </tr>
 <tr class="odd">
 <td><p>NDIS_STATUS_INVALID_PARAMETER</p></td>
-<td><p>One or more of the members of the [<strong>NDIS_NIC_SWITCH_VF_INFO_ARRAY</strong>](https://msdn.microsoft.com/library/windows/hardware/hh451592) structure have invalid values.</p></td>
+<td><p>One or more of the members of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451592" data-raw-source="[&lt;strong&gt;NDIS_NIC_SWITCH_VF_INFO_ARRAY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh451592)"><strong>NDIS_NIC_SWITCH_VF_INFO_ARRAY</strong></a> structure have invalid values.</p></td>
 </tr>
 <tr class="even">
 <td><p>NDIS_STATUS_INVALID_LENGTH</p></td>
-<td><p>The information buffer was too short. NDIS sets the <strong>DATA.METHOD_INFORMATION.BytesNeeded</strong> member in the [<strong>NDIS_OID_REQUEST</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure to the minimum buffer size that is required.</p></td>
+<td><p>The information buffer was too short. NDIS sets the <strong>DATA.METHOD_INFORMATION.BytesNeeded</strong> member in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710" data-raw-source="[&lt;strong&gt;NDIS_OID_REQUEST&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566710)"><strong>NDIS_OID_REQUEST</strong></a> structure to the minimum buffer size that is required.</p></td>
 </tr>
 <tr class="odd">
 <td><p>NDIS_STATUS_FAILURE</p></td>
@@ -90,7 +89,7 @@ When NDIS handles the OID\_NIC\_SWITCH\_ENUM\_VPORTS request, it returns one of 
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -126,9 +125,9 @@ Requirements
 
 [OID\_NIC\_SWITCH\_PARAMETERS](oid-nic-switch-parameters.md)
 
- 
+ 
 
- 
+ 
 
 
 

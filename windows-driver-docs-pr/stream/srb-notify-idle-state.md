@@ -48,9 +48,9 @@ When the stream class driver sends an SRB\_NOTIFY\_IDLE\_STATE request, the mini
 
 [*StrMiniReceiveDevicePacket*](https://msdn.microsoft.com/library/windows/hardware/ff568463)
 
- 
+ 
 
- 
+ 
 
 
 

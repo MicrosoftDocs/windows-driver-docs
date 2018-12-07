@@ -1,6 +1,5 @@
 ---
 title: OEMForceFeedback Registry Settings
-author: windows-driver-content
 description: OEMForceFeedback Registry Settings
 ms.assetid: c29fe1e8-1cd9-4b32-96d7-1afae5a49d42
 keywords: ["force feedback drivers WDK HID , OEMForceFeedback settiings", "OEMForceFeedback key WDK HID", "registry WDK force feedback", "Effects subkey WDK force feedback"]
@@ -51,9 +50,9 @@ A device can support a hardware effect that falls into one of the predefined cat
 
 In this manner, an application designed for your hardware can use the second effect descriptor to access the full capabilities of the effect, whereas an application designed for generic hardware can use the first effect descriptor to access basic capabilities of the effect.
 
- 
+ 
 
- 
+ 
 
 
 

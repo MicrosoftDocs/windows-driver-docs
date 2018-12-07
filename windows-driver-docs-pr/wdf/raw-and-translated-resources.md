@@ -1,6 +1,5 @@
 ---
 title: Raw and Translated Resources
-author: windows-driver-content
 description: Raw and Translated Resources
 ms.assetid: dfc1376d-7a1a-421c-82ae-e183cac77ec8
 keywords:
@@ -33,9 +32,9 @@ If a device's translated resource list contains a resource with the **Type** mem
 
 For more information about mapping bus-relative addresses, see [Mapping Bus-Relative Addresses to Virtual Addresses](https://msdn.microsoft.com/library/windows/hardware/ff554399).
 
- 
+ 
 
- 
+ 
 
 
 

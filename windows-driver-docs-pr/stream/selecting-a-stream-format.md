@@ -1,6 +1,5 @@
 ---
 title: Selecting a Stream Format
-author: windows-driver-content
 description: Selecting a Stream Format
 ms.assetid: 876eca52-4d5e-45bd-90df-ff4b6405078d
 keywords:
@@ -42,9 +41,9 @@ KS_DIBSIZE(DataFormatVideoInfoHeaderOut->VideoInfoHeader.bmiHeader);
 .
 ```
 
- 
+ 
 
- 
+ 
 
 
 

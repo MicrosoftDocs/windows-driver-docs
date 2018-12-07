@@ -1,6 +1,5 @@
 ---
 title: IPsec functions
-author: windows-driver-content
 description: This section describes IPsec functions for Windows Filtering Platform callout drivers.
 ms.assetid: c457f036-84be-47fd-8cfe-9ac867111ca5
 keywords:

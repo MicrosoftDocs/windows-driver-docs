@@ -1,6 +1,5 @@
 ---
 title: Installation Constraints
-author: windows-driver-content
 description: Installation Constraints
 ms.assetid: 0adf5a6a-e9de-4bb0-bf1c-fe7eef565840
 keywords:
@@ -32,7 +31,7 @@ The \*InvalidInstallableCombination entry has the following format:
 </tbody>
 </table>
 
- 
+ 
 
 where *FeatureName* is the name of a feature and *OptionName* is the name of an option associated with the feature. This list can include features as well as options, in which case the period and *OptionName* are not included.
 
@@ -46,9 +45,9 @@ All \*InvalidInstallationCombination entries must be located at the GPD file's r
 
 If a feature or option is included in an \*InvalidInstallationCombination entry, the feature or option's \*Installable? attribute must be set to **TRUE**.
 
- 
+ 
 
- 
+ 
 
 
 

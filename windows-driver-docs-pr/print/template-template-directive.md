@@ -1,6 +1,5 @@
 ---
 title: Template Template Directive
-author: windows-driver-content
 description: Template Template Directive
 ms.assetid: 2530966c-cdda-489f-a4a1-68355125e3e3
 keywords:
@@ -14,9 +13,9 @@ ms.localizationpriority: medium
 
 The \*`Template` directive defines a template construct.
 
- 
+ 
 
- 
+ 
 
 
 

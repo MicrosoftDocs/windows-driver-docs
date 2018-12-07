@@ -1,6 +1,5 @@
 ---
 title: NFP message subscriptions
-author: windows-driver-content
 description: NFP message subscriptions
 ms.assetid: ECE9C495-978F-4BD7-95BC-B68432F9B81E
 keywords:
@@ -102,13 +101,13 @@ The client is likely to drop or ignore all errors (except STATUS\_BUFFER\_OVERFL
 
     **Note**  NFC Forum Certification guarantees this for NFC-enabled NFP providers.
 
-     
+     
 
 -   The driver MUST use a strongly reliable transport and/or attempt retransmission of messages that fail a strong CRC.
 
     **Note**  NFC Forum Certification guarantees this for NFC-enabled NFP providers.
 
-     
+     
 
 ## Duplicate Subscriptions
 
@@ -119,9 +118,9 @@ The driver should assume that if the client subscribes for a message type twice,
 
 The driver MUST accept and report duplicate subscriptions, even if subscribed by the same client.
 
- 
+ 
 
- 
+ 
 ## Related topics
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [Near field proximity DDI reference](https://msdn.microsoft.com/library/windows/hardware/jj866056)  

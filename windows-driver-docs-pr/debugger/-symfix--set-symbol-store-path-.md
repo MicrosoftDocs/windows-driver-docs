@@ -3,7 +3,6 @@ title: .symfix (Set Symbol Store Path)
 description: The .symfix command automatically sets the symbol path to point to the Microsoft symbol store.
 ms.assetid: 9ad80217-e2d1-4776-a620-f2735b2c8f84
 keywords: ["Set Symbol Store Path (.symfix) command", "SymSrv, Set Symbol Store Path (.symfix) command", ".symfix (Set Symbol Store Path) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -55,7 +54,7 @@ Specifies the directory to be used as a local symbol cache. If this directory do
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -85,9 +84,9 @@ Symbol search path is: c:\someSymbols;srv*
 Expanded Symbol search path is: c:\somesymbols;cache*c:\myCache;SRV*https://msdl.microsoft.com/download/symbols
 ```
 
- 
+ 
 
- 
+ 
 
 
 

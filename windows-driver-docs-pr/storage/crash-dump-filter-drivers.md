@@ -1,6 +1,5 @@
 ---
 title: Crash Dump Filter Drivers
-author: windows-driver-content
 description: Crash Dump Filter Drivers
 ms.assetid: d91c00d7-ad17-4fa8-9e78-fee0698d9049
 ms.date: 04/20/2017
@@ -14,9 +13,9 @@ To extend the usefulness of the crash dump interface, for Windows Vista with Ser
 
 The crash dump driver does not use the typical runtime storage driver stack to write dump data to the disk. By adding filter driver support in the crash dump driver stack, new functionality can be added without changing the kernel. For example, it becomes possible to encrypt the contents of the hibernation or crash dump file.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: IPrinterBidiSchemaResponses AddEnum method
-author: windows-driver-content
 description: The AddEnum method adds a new response of type BIDI\_ENUM to the collection.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

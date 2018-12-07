@@ -1,6 +1,5 @@
 ---
 title: HS_PLUGIN_RESET function
-author: windows-driver-content
 description: The HS_PLUGIN_RESET function is called by the host to notify the plugin that it must reset its state.
 ms.assetid: 9f5683c9-b426-4802-85bd-c1ce770b9e46
 keywords: 
@@ -21,7 +20,7 @@ Syntax
 
 ```ManagedCPlusPlus
  typedef DWORD (WINAPI *HS_PLUGIN_RESET)(
-    
+    
 );
 ```
 
@@ -64,9 +63,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

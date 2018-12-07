@@ -25,9 +25,9 @@ The `KSPROPSETID_TopologyNode` property set contains the following properties:
 
 [**KSPROPERTY\_TOPOLOGYNODE\_RESET**](ksproperty-topologynode-reset.md)
 
- 
+ 
 
- 
+ 
 
 
 

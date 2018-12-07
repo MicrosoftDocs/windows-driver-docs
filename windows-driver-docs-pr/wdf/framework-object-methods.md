@@ -1,6 +1,5 @@
 ---
 title: Framework Object Methods
-author: windows-driver-content
 description: Framework Object Methods
 ms.assetid: f82275c5-15f9-43f5-91bb-b83446526c28
 keywords:
@@ -31,9 +30,9 @@ Each framework object exports a set of methods (functions). Each method serves o
 
 Each object method accepts an object handle as input. If a driver passes an invalid object handle to an object method, a system bug check occurs.
 
- 
+ 
 
- 
+ 
 
 
 

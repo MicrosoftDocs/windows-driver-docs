@@ -3,7 +3,6 @@ title: Using Visual SourceSafe
 description: Using Visual SourceSafe
 ms.assetid: a315a1c5-1427-4432-aec0-314dbb6d7ae5
 keywords: ["Visual SourceSafe", "source servers, Visual SourceSafe", "SrcSrv, Visual SourceSafe", "Visual SourceSafe, SrcSrv", "Visual SourceSafe, overview"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -90,9 +89,9 @@ Again, this label is required for SrcSrv indexing to work. Note that if you pass
 
 If your Visual SourceSafe database requires a user and optional password for access, these values must be set through the SSUSER and SSPWD environment variables. This applies not only at the time the build is indexed, but also on the debugger client.
 
- 
+ 
 
- 
+ 
 
 
 

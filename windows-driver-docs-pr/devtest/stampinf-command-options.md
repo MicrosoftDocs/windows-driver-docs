@@ -41,8 +41,8 @@ Specifies the INF or INX file to process.
 <span id="-s_section"></span><span id="-S_SECTION"></span>**-s** *section*  
 Specifies the INF section in which to put the [**INF DriverVer directive**](https://msdn.microsoft.com/library/windows/hardware/ff547394). The default location for this directive is the [**INF Version section**](https://msdn.microsoft.com/library/windows/hardware/ff547502).
 
-<span id="_______-d_________date_____"></span><span id="_______-D_________DATE_____"></span> **-d** \[ *date* | **\***\]  
-Specifies the date that is written in the [**INF DriverVer directive**](https://msdn.microsoft.com/library/windows/hardware/ff547394). The format for the date is *month*/*date*/*year* (for example, **-d 10/20/2011**).
+<span id="_______-d_________date_____"></span><span id="_______-D_________DATE_____"></span> **-d** \[ *date* | **\\**<em>\]  
+Specifies the date that is written in the [</em>*INF DriverVer directive*<em>](<https://msdn.microsoft.com/library/windows/hardware/ff547394>). The format for the date is *month</em>/*date*/*year* (for example, **-d 10/20/2011**).
 
 To use the current date, specify an asterisk (\*) with this parameter.
 
@@ -110,9 +110,9 @@ Type the following command in a build window to enable this development mode:
 set PRIVATE_DRIVER_PACKAGE=1
 ```
 
- 
+ 
 
- 
+ 
 
 
 

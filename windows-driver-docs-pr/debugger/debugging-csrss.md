@@ -3,7 +3,6 @@ title: Debugging CSRSS
 description: Debugging CSRSS
 ms.assetid: 9c3a8498-d9e4-4070-aee8-c038fa1666a4
 keywords: ["CSRSS debugging", "NTSD, debugging CSRSS", "controlling the user-mode debugger from the kernel debugger, debugging CSRSS"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -60,9 +59,9 @@ Note that you may see an "in page io error" message. This is another manifestati
 
 In Windows XP and later versions of Windows, when the debugging session ends, the debugger will detach from CSRSS while the CSRSS process is still running. This avoids termination of the CSRSS process itself.
 
- 
+ 
 
- 
+ 
 
 
 

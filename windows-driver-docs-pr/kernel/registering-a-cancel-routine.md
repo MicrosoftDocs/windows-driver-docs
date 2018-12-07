@@ -1,6 +1,5 @@
 ---
 title: Registering a Cancel Routine
-author: windows-driver-content
 description: Registering a Cancel Routine
 ms.assetid: ebc63fb6-bf4d-4de3-9232-08d810c2f730
 keywords: ["canceling IRPs, registering Cancel routines", "Cancel routines, registering", "registering Cancel routines"]
@@ -28,9 +27,9 @@ For information about the cancel spin lock, see [Using the System's Cancel Spin 
 
 Drivers that manage their own queues of IRPs, rather than using the I/O manager-supplied device queue, do not need to acquire the cancel spin lock when calling **IoSetCancelRoutine**. However, these drivers should check the *Cancel* routine pointer that **IoSetCancelRoutine** returns to determine whether the *Cancel* routine has already started.
 
- 
+ 
 
- 
+ 
 
 
 

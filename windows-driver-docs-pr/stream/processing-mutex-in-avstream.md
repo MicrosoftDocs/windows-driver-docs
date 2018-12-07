@@ -1,6 +1,5 @@
 ---
 title: Processing Mutex in AVStream
-author: windows-driver-content
 description: Processing Mutex in AVStream
 ms.assetid: dd84fe3f-352e-4641-99d7-792ccecb0b40
 keywords:
@@ -29,9 +28,9 @@ To manipulate the processing mutex, use the following functions:
 
 [**KsFilterAcquireProcessingMutex**](https://msdn.microsoft.com/library/windows/hardware/ff562524), [**KsPinAcquireProcessingMutex**](https://msdn.microsoft.com/library/windows/hardware/ff563488), [**KsFilterReleaseProcessingMutex**](https://msdn.microsoft.com/library/windows/hardware/ff562552), [**KsPinReleaseProcessingMutex**](https://msdn.microsoft.com/library/windows/hardware/ff563527)
 
- 
+ 
 
- 
+ 
 
 
 

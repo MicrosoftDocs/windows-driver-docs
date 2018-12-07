@@ -11,9 +11,9 @@ ms.localizationpriority: medium
 
 These interfaces were used with previous versions of Windows.
 
- 
+ 
 
- 
+ 
 
 
 

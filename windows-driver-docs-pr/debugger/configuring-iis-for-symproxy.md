@@ -3,7 +3,6 @@ title: Configuring IIS for SymProxy
 description: Configuring IIS for SymProxy
 ms.assetid: 66f1d05c-2572-4dda-a9d9-766561ebd491
 keywords: ["SymProxy, IIS"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -69,9 +68,9 @@ Internet Information Services (IIS) must be configured to use SymProxy as an Int
 
 7.  To exit **Default Web Site Properties,** click **OK**.
 
- 
+ 
 
- 
+ 
 
 
 

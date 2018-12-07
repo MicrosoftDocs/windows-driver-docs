@@ -3,7 +3,6 @@ title: .closehandle (Close Handle)
 description: The .closehandle command closes a handle owned by the target application.
 ms.assetid: 1513cbdd-327f-447a-8267-633cb123d17d
 keywords: [".closehandle (Close Handle) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -56,16 +55,16 @@ Causes all handles owned by the target application to be closed.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
 
 You can use the [**!handle**](-handle.md) extension to display the existing handles.
 
- 
+ 
 
- 
+ 
 
 
 

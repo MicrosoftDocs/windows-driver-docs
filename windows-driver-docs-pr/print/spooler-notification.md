@@ -1,6 +1,5 @@
 ---
 title: Spooler Notification
-author: windows-driver-content
 description: Spooler Notification
 ms.assetid: b5d9b909-f2e4-4773-903e-1dd73b0ca567
 keywords:
@@ -29,9 +28,9 @@ The spooler notification mechanism solves the problem that occurs when printing 
 
 [Public Interfaces](public-interfaces.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Importing Kernel-Mode Safe String Functions
-author: windows-driver-content
 description: Importing Kernel-Mode Safe String Functions
 ms.assetid: f1cee7e0-151b-4e03-bf4d-400f328083fa
 keywords: ["importing safe string functions", "inline safe string function versions WDK kernel", "library safe string function versions WDK kernel", "byte-counted functions WDK kernel", "character-counted functions WDK kernel", "safe string functions WDK"]
@@ -65,9 +64,9 @@ Your driver can assign smaller values to NTSTRSAFE\_MAX\_CCH and NTSTRSAFE\_UNIC
 
 Directives in Ntstrsafe.h verify that your new values are not larger than the default values.
 
- 
+ 
 
- 
+ 
 
 
 

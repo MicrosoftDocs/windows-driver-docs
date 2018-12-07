@@ -1,6 +1,5 @@
 ---
 title: Determining the Correct Device Power State
-author: windows-driver-content
 description: Determining the Correct Device Power State
 ms.assetid: 4acefe93-1d7a-4c12-8701-03c2a8929591
 keywords: ["DEVICE_CAPABILITIES structure", "correct device power states WDK power management", "device power states WDK power management"]
@@ -28,9 +27,9 @@ If the system IRP requests **PowerSystemShutdown**, the driver should check the 
 
 The device power policy owner must send a device set-power IRP for each system set-power IRP, even if the device is already in the correct device power state. If the driver previously suspended device operations in response to a query-power IRP, the set-power IRP notifies it to stop queuing IRPs and return to normal operation for its current power state. The only exception occurs when the device is in the D3 state; in this case, the driver need not send an additional [**IRP\_MN\_SET\_POWER**](https://msdn.microsoft.com/library/windows/hardware/ff551744) request for D3.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -26,9 +26,9 @@ When powering down, PortCls pauses any active audio data streams before calling 
 
 Your miniport driver's miniport and stream object classes can inherit from the **IPowerNotify** interface and support this interface in their **NonDelegatingQueryInterface** method. You can use the IMP\_IPowerNotify definition from header file Portcls.h to add the function declaration for the **PowerChangeNotify** method to the class definition for your driver's miniport and stream objects.
 
- 
+ 
 
- 
+ 
 
 
 

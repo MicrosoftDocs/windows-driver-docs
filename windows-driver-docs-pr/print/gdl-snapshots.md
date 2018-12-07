@@ -1,6 +1,5 @@
 ---
 title: GDL Snapshots
-author: windows-driver-content
 description: GDL Snapshots
 ms.assetid: 2e6a7693-2db8-4fa5-a4e7-d069313b68bf
 keywords:
@@ -25,9 +24,9 @@ The following sections contain more information about GDL snapshots.
 
 [XML Structure of GDL Snapshots](xml-structure-of-gdl-snapshots.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,7 +1,6 @@
 ---
 Description: Create a user-mode service that communicates with GenericUSBFn.sys by sending I/O control code (IOCTL) requests.
 title: Communicating with GenericUSBFn.sys from a user-mode service
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -25,7 +24,7 @@ The following steps describe how you can define a USB interface service that int
 3. The service issues IOCTL_GENERICUSBFN_GET_CLASS_INFO to retrieve information about the available pipes, as configured in the registry. 
 4. After the service is ready to communicate, it issues IOCTL_GENERICUSBFN_ACTIVATE_USB_BUS. After all class drivers are activated, the USB function class extension can connect to the host. 
 5. To receive USB notifications, the service issues IOCTL_GENERICUSBFN_BUS_EVENT_NOTIFICATION. This IOCTL completes when a new USB event has occurred. Events (USBFN_EVENT) of particular interest include:
-- UsbfnEventReset: This is used to determine the speed of the connected USB device. 
-- UsbfnEventConfigured: The service can now issue transfer requests. 
-- UsbfnEventSetupPacket: The USB function class extension has received an interface-specific setup packet (bmRequestType.Type == BMREQUEST_CLASS). The service should reply to the setup packet by issuing a transfer request in pipe 0, followed by a handshake request (IOCTL_GENERICUSBFN_CONTROL_STATUS_HANDSHAKE_OUT) in the opposite direction on pipe 0. 
-6. After the UsbfnEventConfigured event is received, the service can begin issuing transfer requests using IOCTL_GENERICUSBFN_TRANSFER_IN, IOCTL_GENERICUSBFN_TRANSFER_IN_APPEND_ZERO_PKT, and IOCTL_GENERICUSBFN_TRANSFER_OUT. 
+6. UsbfnEventReset: This is used to determine the speed of the connected USB device. 
+7. UsbfnEventConfigured: The service can now issue transfer requests. 
+8. UsbfnEventSetupPacket: The USB function class extension has received an interface-specific setup packet (bmRequestType.Type == BMREQUEST_CLASS). The service should reply to the setup packet by issuing a transfer request in pipe 0, followed by a handshake request (IOCTL_GENERICUSBFN_CONTROL_STATUS_HANDSHAKE_OUT) in the opposite direction on pipe 0. 
+9. After the UsbfnEventConfigured event is received, the service can begin issuing transfer requests using IOCTL_GENERICUSBFN_TRANSFER_IN, IOCTL_GENERICUSBFN_TRANSFER_IN_APPEND_ZERO_PKT, and IOCTL_GENERICUSBFN_TRANSFER_OUT. 

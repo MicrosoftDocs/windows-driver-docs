@@ -1,6 +1,5 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_SEND_AP_ASSOCIATION_RESPONSE_COMPLETE
-author: windows-driver-content
 description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_SEND_AP_ASSOCIATION_RESPONSE_COMPLETE to indicate information about the AP association response sent by OID_WDI_TASK_SEND_AP_ASSOCIATION_RESPONSE.
 ms.assetid: c8bfa3b3-5d22-4831-9355-94c62fed7fd4
 ms.date: 07/18/2017
@@ -18,7 +17,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_SEND\_AP\_ASSOCIATION\_RESPO
 |--------|
 | Port   |
 
- 
+ 
 
 ## Payload data
 
@@ -29,7 +28,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_SEND\_AP\_ASSOCIATION\_RESPO
 | [**WDI\_TLV\_ASSOCIATION\_RESPONSE\_FRAME**](https://msdn.microsoft.com/library/windows/hardware/dn926135) |   |   | The received association response. This does not include the 802.11 MAC header. |
 | [**WDI\_TLV\_BEACON\_IES**](https://msdn.microsoft.com/library/windows/hardware/dn926148) |   |   | The beacon IEs from the association. |
 | [**WDI\_TLV\_PHY\_TYPE\_LIST**](https://msdn.microsoft.com/library/windows/hardware/dn898029) |   |   | The list of PHY types. |
- 
+ 
 
 Requirements
 ------------
@@ -55,9 +54,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

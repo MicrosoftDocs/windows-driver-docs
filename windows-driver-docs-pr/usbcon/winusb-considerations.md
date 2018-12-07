@@ -1,7 +1,6 @@
 ---
 Description: Guidelines for choosing the best driver model for developing a USB client driver that acts as the device's function driver.
 title: Choose a driver model for developing a USB driver
-author: windows-driver-content
 ms.date: 05/09/2018
 ms.localizationpriority: medium
 ---
@@ -78,7 +77,7 @@ If you choose to write a driver, here are your options:
 
     **Note**  Windows 8.1 introduces version 2.0 of UMDF. With UMDF version 2.0, you can write a UMDF driver in the C programming language that calls many of the methods that are available to KMDF drivers. You cannot use UMDF version 2.0 to write lower filter drivers for USB.
 
-     
+     
 
 -   [Kernel-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/) (KMDF)
 
@@ -110,7 +109,7 @@ The following table summarizes the capabilities of WinUSB, UMDF-based USB driver
 | Supports the installation of kernel-mode drivers, such as filter drivers, as an overlying layer on the USB stack | No     | No   | Yes  |
 | Supports selective suspend and the wait/wake state                                                               | Yes    | Yes  | Yes  |
 
- 
+ 
 
 The following table summarizes the WDF options that are supported by different versions of Windows.
 
@@ -123,7 +122,7 @@ The following table summarizes the WDF options that are supported by different v
 | Windows XP             | Yes²   | Yes² | Yes  |
 | Microsoft Windows 2000 | No     | No   | Yes³ |
 
- 
+ 
 
 **Note**  
 Yes¹: WinUSB and UMDF are supported only on x86-based and x64-based versions of Windows.
@@ -134,7 +133,7 @@ Yes³: KMDF is supported in Windows 2000 with SP4 or later versions of Windows.
 
 Yes⁴: Isochronous transfers are supported in Windows 8.1 or later versions of Windows.
 
- 
+ 
 
 All client SKUs of the 32-bit versions of Windows XP with SP2support WinUSB. WinUSB is not native to Windows XP; it must be installed with the WinUSB co-installer. All Windows Vista SKUs and later versions of Windows support WinUSB.
 

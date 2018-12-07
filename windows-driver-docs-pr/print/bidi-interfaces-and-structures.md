@@ -1,6 +1,5 @@
 ---
 title: Bidi Interfaces and Enumerations
-author: windows-driver-content
 description: This section provides information about the interfaces and enumerations that enable the new print driver in Windows 8.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

@@ -3,7 +3,6 @@ title: .fiber (Set Fiber Context)
 description: The .fiber command specifies which fiber is used for the fiber context.
 ms.assetid: 37473c90-018c-417f-a2b2-3723b9d03ca7
 keywords: ["Set Fiber Context (.fiber) command", "context, Set Fiber Context (.fiber) command", "fibers", ".fiber (Set Fiber Context) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -52,15 +51,15 @@ Specifies the address of the fiber. If you omit this parameter or specify zero, 
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
 For more information about the process context, the register context, and the local context, see [Changing Contexts](changing-contexts.md).
 
- 
+ 
 
- 
+ 
 
 
 

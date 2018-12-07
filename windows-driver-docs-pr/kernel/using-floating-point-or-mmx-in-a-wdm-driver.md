@@ -1,6 +1,5 @@
 ---
 title: Using Floating Point in a WDM Driver
-author: windows-driver-content
 description: Kernel-mode WDM drivers for Windows must follow certain guidelines when using floating-point operations. These differ between x86 and x64 systems. By default, Windows turns off arithmetic exceptions for both systems.
 ms.assetid: 73414084-4054-466a-b64c-5c81b224be92
 keywords: ["floating point WDK kernel", "floating-point unit WDK kernel", "FPU WDK kernel", "KeSaveFloatingPointState", "KeRestoreFloatingPointState", "WDM drivers WDK kernel , floating-point operations", "MMX WDK kernel"]
@@ -86,9 +85,9 @@ The preceding calls are unnecessary on an x64 system and harmless when the XSTAT
 
 On x86-based systems, the FPU is reset to its default state by a call to FNINIT, upon return from [**KeSaveExtendedProcessorState**](https://msdn.microsoft.com/library/windows/hardware/ff553238).
 
- 
+ 
 
- 
+ 
 
 
 

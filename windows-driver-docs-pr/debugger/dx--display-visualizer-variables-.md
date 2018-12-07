@@ -3,7 +3,6 @@ title: dx (Display Debugger Object Model Expression)
 description: The dx command displays a C++ expression using the NatVis extension model. The dx command works with debugger objects.
 ms.assetid: 93047911-5195-4FB9-A015-5349084EDC0A
 keywords: ["dx (Display Debugger Object Model Expression) Windows Debugging"]
-ms.author: domars
 ms.date: 12/22/2017
 topic_type:
 - apiref
@@ -54,7 +53,7 @@ There are two ways that data can be rendered. Using the NatVis visualization (th
 <span id="_______-v______"></span><span id="_______-V______"></span> **-v**   
 Display verbose information that includes methods and other non-typical objects.
 
-<span id="_______-r_______"></span><span id="_______-R_______"></span> **-r***\#*   
+<span id="_______-r_______"></span><span id="_______-R_______"></span> **-r**<em>\#</em>   
 Recursively display subtypes (fields) up to *\#* levels. If *\#* is not specified, a recursion level of one, is the default value.
 
 <span id="__________FormatSpecifier_________"></span><span id="__________formatspecifier_________"></span><span id="__________FORMATSPECIFIER_________"></span> **\[&lt;,FormatSpecifier&gt;\]**   
@@ -79,7 +78,7 @@ Use any of the following format specifiers to modify the default rendering.
 | ,\[&lt;expression&gt;\] | Specify length of pointer/array/container as the expression &lt;expression&gt;           |
 | ,nd                     | Do not find the derived (runtype) type of the object. Display static value only          |
 
- 
+
 
 <span id="_______dx_-_______"></span><span id="_______DX_-_______"></span> **dx** {**-?**}   
 Display command line help.
@@ -258,7 +257,6 @@ Use the current process Io.Handles object to display kernel handle information.
     [0x14]          
     [0x18]       
     ...
-
 ```
 
 Use the .First() function to display information about the first handle.
@@ -295,7 +293,6 @@ Use the .First() function to display information about the first handle.
         [+0x030] Body             [Type: _QUAD]
         ObjectType       : Unexpected failure to dereference object
         UnderlyingObject : Unexpected failure to dereference object
-
 ```
 
 Note that the Io.Handles object is a kernel only object.
@@ -350,10 +347,10 @@ For information about using debugger objects with JavaScript, see [Native Debugg
 
 [Native Debugger Objects in NatVis](native-debugger-objects-in-natvis.md)
 
-[Native Debugger Objects in JavaScript Extensions](native-objects-in-javascript-extensions.md) 
+[Native Debugger Objects in JavaScript Extensions](native-objects-in-javascript-extensions.md) 
 
 ---
- 
+
 
 
 

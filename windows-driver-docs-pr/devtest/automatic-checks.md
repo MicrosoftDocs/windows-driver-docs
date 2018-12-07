@@ -122,9 +122,9 @@ Frequently a system shutdown that cannot finish in less than 20 minutes indicate
 
 Sometimes the system cannot shut down because it is subject to heavy stress testing—even though all drivers are functioning correctly. The user can choose to continue the execution after this Driver Verifier breakpoint and check whether the system eventually shuts down.
 
- 
+ 
 
- 
+ 
 
 
 

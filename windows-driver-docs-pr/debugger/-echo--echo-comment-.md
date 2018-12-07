@@ -3,7 +3,6 @@ title: .echo (Echo Comment)
 description: The .echo command displays a comment string.
 ms.assetid: 4a291952-695c-4292-8aa5-82d497f0141c
 keywords: [".echo (Echo Comment) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -53,7 +52,7 @@ Specifies the text to display. You can also enclose *String* in quotation marks 
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -70,9 +69,9 @@ The **.echo** command also provides an easy way for users of debugging servers a
 
 The **.echo** command differs from the [**$$ (Comment Specifier)**](-----comment-specifier-.md) token and the [**\* (Comment Line Specifier)**](----comment-line-specifier-.md) token, because these tokens cause the debugger to ignore the input text without displaying it.
 
- 
+ 
 
- 
+ 
 
 
 

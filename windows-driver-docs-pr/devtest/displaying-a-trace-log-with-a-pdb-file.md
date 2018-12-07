@@ -38,9 +38,9 @@ If you have the PDB symbol file for the provider, use the following procedure to
 
 When you display the contents of a log file, the expected value in the **State** column of the Trace Session List is **EXISTING**. This value indicates that the trace messages come from a log, not a running trace session.
 
- 
+ 
 
- 
+ 
 
 
 

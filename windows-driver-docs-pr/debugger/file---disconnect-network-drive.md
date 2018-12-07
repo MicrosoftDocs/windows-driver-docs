@@ -3,7 +3,6 @@ title: File Disconnect Network Drive
 description: File Disconnect Network Drive
 ms.assetid: 65d78f9b-0c3c-4ec8-906d-afdfa64beebb
 keywords: ["File Disconnect Network Drive", "shell commands, File Disconnect Network Drive"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -28,9 +27,9 @@ The **File | Disconnect Network Drive** command affects only the network connect
 
 For more information about accessing the command shell, see [Using Shell Commands](using-shell-commands.md).
 
- 
+ 
 
- 
+ 
 
 
 

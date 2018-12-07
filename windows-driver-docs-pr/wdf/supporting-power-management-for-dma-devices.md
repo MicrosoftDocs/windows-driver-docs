@@ -1,6 +1,5 @@
 ---
 title: Supporting Power Management for DMA Devices
-author: windows-driver-content
 description: Supporting Power Management for DMA Devices
 ms.assetid: abbb8f60-560f-41c9-85c5-1ec82078b99e
 keywords:
@@ -44,9 +43,9 @@ Deallocates a device's DMA buffers.
 
 For more information about the order in which the framework calls a driver's event callback functions, see [PnP and Power Management Scenarios](pnp-and-power-management-scenarios.md).
 
- 
+ 
 
- 
+ 
 
 
 

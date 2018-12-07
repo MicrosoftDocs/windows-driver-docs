@@ -3,7 +3,6 @@ title: .childdbg (Debug Child Processes)
 description: The .childdbg command controls the debugging of child processes.
 ms.assetid: 87d70d3b-d9d5-4a37-b8a7-1616ba78b2f3
 keywords: [".childdbg (Debug Child Processes) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -59,7 +58,7 @@ This command is only supported in Windows XP and later versions of Windows.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -68,9 +67,9 @@ Remarks
 
 With no parameters, **.childdbg** will display the current status of child-process debugging.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: apc
 description: The apc extension formats and displays the contents of one or more asynchronous procedure calls (APCs).
 ms.assetid: 0c5a9d1e-ab61-4b14-b06b-25cde582cc73
 keywords: ["apc Windows Debugging"]
-ms.author: domars
 ms.date: 09/17/2018
 topic_type:
 - apiref
@@ -58,7 +57,7 @@ Specifies the address of the kernel APC to be displayed.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -96,9 +95,9 @@ Process e000000085496340 taskmgr.exe
 Process e000000085489c30 userinit.exe
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: heap
 description: The heap extension displays heap usage information, controls breakpoints in the heap manager, detects leaked heap blocks, searches for heap blocks, or displays page heap information.
 ms.assetid: 70947b56-1a8c-4e78-85d0-d5df87f3150c
 keywords: ["heap usage", "GFlags, enabling page heap", "heap Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -83,9 +82,9 @@ Can be any combination of the following options. The *SummaryOptions* are not ca
 </tbody>
 </table>
 
- 
+ 
 
-<span id="_______-triage__Handle___Address___"></span><span id="_______-triage__handle___address___"></span><span id="_______-TRIAGE__HANDLE___ADDRESS___"></span> **-triage \[***Handle* **|** *Address***\]**   
+<span id="_______-triage__Handle___Address___"></span><span id="_______-triage__handle___address___"></span><span id="_______-TRIAGE__HANDLE___ADDRESS___"></span> **-triage \[**<em>Handle</em> **|** <em>Address</em>**\]**   
 Causes the debugger to automatically search for failures in a process's heaps. If a heap handle is specified as an argument, that heap is examined; otherwise, all the heaps are searched for one that contains the given address, and if one is found, it is examined. Using **-triage** is the only way to validate low-fragmentation heap (LFH) corruption.
 
 <span id="_______-x_-v_"></span><span id="_______-X_-V_"></span> **-x** **** \[**-v**\]   
@@ -130,7 +129,7 @@ Can be any combination of the following options. The *HeapOptions* values are ca
 <strong>Note</strong>  This option does not detect low fragmentation heap (LFH) corruption. Use <strong>-triage</strong> instead.
 </div>
 <div>
- 
+ 
 </div></td>
 </tr>
 <tr class="even">
@@ -176,7 +175,7 @@ Can be any combination of the following options. The *HeapOptions* values are ca
 </tbody>
 </table>
 
- 
+ 
 
 <span id="_______ValidationOptions______"></span><span id="_______validationoptions______"></span><span id="_______VALIDATIONOPTIONS______"></span> *ValidationOptions*   
 Can be any single one of the following options. The *ValidationOptions* are case-sensitive.
@@ -212,7 +211,7 @@ Can be any single one of the following options. The *ValidationOptions* are case
 </tbody>
 </table>
 
- 
+ 
 
 <span id="_______-i________Heap_Address______or_HeapAddress______"></span><span id="_______-i________heap_address______or_heapaddress______"></span><span id="_______-I________HEAP_ADDRESS______OR_HEAPADDRESS______"></span> **-i** **** *Heap* **** *Address* **or** *HeapAddress*   
 Displays information about the specified *Heap*.
@@ -277,7 +276,7 @@ Can be any single one of the following options. The *PageHeapOptions* are case-s
 </tbody>
 </table>
 
- 
+ 
 
 Before you can use any **!heap -p** extension command, the page heap must be enabled for your target process. See details in the following Remarks section.
 
@@ -321,7 +320,7 @@ Can be any single one of the following options. This specifies the size of the p
 </tbody>
 </table>
 
- 
+ 
 
 If none of the above are specified, then the pattern is assumed to be of the same size as the machine pointer.
 
@@ -354,7 +353,7 @@ Can be any single one of the following options. The *FilterOptions* are case-sen
 </tbody>
 </table>
 
- 
+ 
 
 <span id="_______-stat______"></span><span id="_______-STAT______"></span> **-stat**   
 Displays usage statistics for the specified heap.
@@ -392,7 +391,7 @@ Reorders the display as specified by *GroupBy*. The options for *GroupBy* can be
 </tbody>
 </table>
 
- 
+ 
 
 <span id="_______MaxDisplay______"></span><span id="_______maxdisplay______"></span><span id="_______MAXDISPLAY______"></span> *MaxDisplay*   
 Limits the output to only *MaxDisplay* number of lines.
@@ -414,7 +413,7 @@ Exts.dll</td>
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -710,9 +709,9 @@ Full page heap block -- freed:
 
 To see the stack trace of the allocation or the freeing of a heap block or full page heap block, use [**dt DPH\_BLOCK\_INFORMATION**](dt--display-type-.md) with the header address, followed by [**dds**](dds--dps--dqs--display-words-and-symbols-.md) with the block's **StackTrace** field.
 
- 
+ 
 
- 
+ 
 
 
 

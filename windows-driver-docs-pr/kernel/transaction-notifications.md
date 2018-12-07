@@ -1,6 +1,5 @@
 ---
 title: Transaction Notifications
-author: windows-driver-content
 description: Transaction Notifications
 ms.assetid: 62169b56-e70f-4d32-a051-a7fd947dbc64
 keywords: ["notifications WDK KTM", "transactions WDK KTM , notifications", "resource managers WDK KTM , notifications", "Kernel Transaction Manager WDK , notifications", "KTM WDK , notifications", "superior transaction managers WDK KTM"]
@@ -203,9 +202,9 @@ TRANSACTION\_NOTIFY\_TM\_ONLINE
 
 TRANSACTION\_NOTIFY\_COMMIT\_FINALIZE
 
- 
+ 
 
- 
+ 
 
 
 

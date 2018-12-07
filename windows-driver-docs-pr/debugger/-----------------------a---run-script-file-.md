@@ -3,7 +3,6 @@ title: $ , $ , $$ , $$ , $$ a (Run Script File)
 description: The $ , $ , $$ , $$ , and $$ a commands read the contents of the specified script file and use its contents as debugger command input.
 ms.assetid: b3584680-765d-4aaf-ad43-c7d73552e5fb
 keywords: ["$ (Run Script File) command", "$$ (Run Script File) command", "$$ (Run Script File) command", "Run Script File ($ ) command", "Run Script File ($ ) command", "Run Script File ($$ ) command", "Run Script File ($$ ) comm", "$ , $ , $$ , $$ , $$ a (Run Script File) Windows Debugging"]
-ms.author: domars
 ms.date: 09/17/2018
 topic_type:
 - apiref
@@ -59,7 +58,7 @@ Specifies any number of string arguments for the debugger to pass to the script.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -134,7 +133,7 @@ The following table summarizes how you can use these tokens.
 </tbody>
 </table>
 
- 
+ 
 
 The **$&lt;**, **$&gt;&lt;**, **$$&lt;**, and **$$&gt;&lt;** commands echo the commands contained in the script file and display the output of these commands. The **$$&gt;a&lt;** command does not echo the commands found in the script file, but merely displays their output.
 
@@ -185,6 +184,6 @@ ecx=0021f4ac
 
 In the preceding example, the file name is enclosed in quotation marks because it contains a space, and arguments that contain spaces are enclosed in quotation marks as well. Although a fifth argument seems to be expected by the script, the semicolon terminates the **$$&gt;a&lt;** command after the fourth argument.
 
- 
+ 
 
 

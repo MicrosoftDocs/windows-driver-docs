@@ -1,6 +1,5 @@
 ---
 title: Network Redirector Design in Windows NT
-author: windows-driver-content
 description: Network Redirector Design in Windows NT
 ms.assetid: 1feb43a3-ee65-4446-b38b-8b3f9188f43d
 keywords:
@@ -21,9 +20,9 @@ The architecture that implements a kernel-mode driver for network redirectors ha
 
 ![diagram illustrating network redirector design in windows nt](images/redir-01.png)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Removing a Device
-author: windows-driver-content
 description: Removing a Device
 ms.assetid: 8184987f-5c46-4dd6-aad2-3c32b14205fd
 keywords: ["PnP WDK kernel , removing devices", "Plug and Play WDK kernel , removing devices", "removing devices", "notifications WDK PnP , removing devices", "IRPs WDK PnP", "I/O request packets WDK PnP"]
@@ -30,9 +29,9 @@ The following sections describe when the PnP manager issues *remove* IRPs and wh
 
 [Using Remove Locks](using-remove-locks.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: Local Kernel-Mode Debugging
 description: Local Kernel-Mode Debugging
 ms.assetid: e66dc23b-9254-4148-9828-d27c30bfa492
 keywords: ["local kernel debugging", "local kernel debugging, commands available", "local kernel debugging, LiveKD tool", "LiveKD tool"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -75,9 +74,9 @@ The LiveKD tool simulates local kernel debugging. This tool creates a "snapshot"
 
 LiveKD is not part of the Debugging Tools for Windows package. You can download [LiveKd](https://go.microsoft.com/fwlink/p/?linkid=56552) from the Windows Sysinternals site.
 
- 
+ 
 
- 
+ 
 
 
 

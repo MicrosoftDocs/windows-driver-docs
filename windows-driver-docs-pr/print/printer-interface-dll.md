@@ -1,6 +1,5 @@
 ---
 title: Printer Interface DLL
-author: windows-driver-content
 description: Printer Interface DLL
 ms.assetid: 2a8cf38f-8e27-4e08-9c0f-5d1a4cd854ac
 keywords:
@@ -39,9 +38,9 @@ This section provides the following topics:
 
 [Keyword Mapping](keyword-mapping.md)
 
- 
+ 
 
- 
+ 
 
 
 

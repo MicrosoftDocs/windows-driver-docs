@@ -3,7 +3,6 @@ title: ndiskd.nbpool
 description: The ndiskd.nbpool extension displays information about a NET_BUFFER (NB) pool. 
 ms.assetid: 4FCD48B7-C469-4057-A279-20522B00E80B
 keywords: ["ndiskd.nbpool Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -145,9 +144,9 @@ ALL ALLOCATED NBs
 
 [**NET\_BUFFER**](https://msdn.microsoft.com/windows/hardware/drivers/network/net-buffer-structure)
 
- 
+ 
 
- 
+ 
 
 
 

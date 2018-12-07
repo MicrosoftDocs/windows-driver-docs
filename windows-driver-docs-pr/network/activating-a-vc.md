@@ -35,9 +35,9 @@ An MCM driver's call to **NdisMCmActivateVc** informs NDIS that it has set up ca
 
 An MCM driver calls **NdisMCmActivateVc** to activate only VCs used for transmitting and/or receiving client data, but not to activate VCs used for exchanging signaling messages between the MCM driver and network components such as a switch. An MCM driver activates a signaling VC internally without calling any **Ndis*Xxx*** function. Any VC that an MCM driver sets up for its own signaling purposes is therefore opaque to NDIS.
 
- 
+ 
 
- 
+ 
 
 
 

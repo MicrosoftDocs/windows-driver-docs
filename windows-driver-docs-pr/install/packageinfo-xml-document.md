@@ -23,9 +23,9 @@ Each device metadata package must contain only one PackageInfo XML document. The
 
 The data in the PackageInfo XML document is formatted based on the [PackageInfo XML schema](https://msdn.microsoft.com/library/windows/hardware/ff549614).
 
- 
+ 
 
- 
+ 
 
 
 

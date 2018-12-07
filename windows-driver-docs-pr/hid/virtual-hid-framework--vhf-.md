@@ -1,6 +1,5 @@
 ---
 title: Write a HID source driver by using Virtual HID Framework (VHF)
-author: windows-driver-content
 description: Learn about writing a HID source driver that reports HID data to the operating system.
 ms.assetid: 26964963-792F-4529-B4FC-110BF5C65B35
 ms.date: 04/20/2017

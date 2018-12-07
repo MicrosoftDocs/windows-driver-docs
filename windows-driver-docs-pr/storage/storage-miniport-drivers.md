@@ -1,6 +1,5 @@
 ---
 title: Storage Miniport Drivers
-author: windows-driver-content
 description: Storage Miniport Drivers
 ms.assetid: 374d8370-02a9-43ab-ab47-27fa9f4051ea
 keywords:
@@ -41,9 +40,9 @@ The following list indicates the port driver support library that each type of s
 
 -   ATA Port miniport drivers: [ATA Port Library Routines](ata-miniport-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

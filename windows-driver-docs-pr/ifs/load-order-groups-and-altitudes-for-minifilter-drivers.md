@@ -1,6 +1,5 @@
 ---
 title: Load Order Groups and Altitudes for Minifilter Drivers
-author: windows-driver-content
 description: Load Order Groups and Altitudes for Minifilter Drivers
 ms.assetid: be8f18fe-c80b-44a3-b0c3-f2f630142180
 keywords:
@@ -173,11 +172,11 @@ Note that the load order groups and altitude ranges are listed as they appear on
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

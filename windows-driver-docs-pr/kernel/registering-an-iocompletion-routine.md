@@ -1,6 +1,5 @@
 ---
 title: Registering an IoCompletion Routine
-author: windows-driver-content
 description: Registering an IoCompletion Routine
 ms.assetid: 413d8463-b2ce-44b6-846c-f853b5cd580e
 keywords: ["IoCompletion routines", "registering IoCompletion routines"]
@@ -30,7 +29,7 @@ The purpose of an *IoCompletion* routine is to monitor what lower-level drivers 
 
     Highest-level drivers, such as file systems, are more likely to have *IoCompletion* routines that attempt to retry requests than are intermediate drivers, except possibly class drivers layered above a closely coupled port driver. However, any intermediate driver use *IoCompletion* routines to retry requests.
 
-While a highest-level or intermediate driver's [*DispatchReadWrite*](https://msdn.microsoft.com/library/windows/hardware/ff543381) routine is most likely to process IRPs that require an *IoCompletion* routine, any dispatch routine in any driver that passes IRPs on to lower drivers can register an *IoCompletion* routine.
+While a highest-level or intermediate driver's [*DispatchReadWrite*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine is most likely to process IRPs that require an *IoCompletion* routine, any dispatch routine in any driver that passes IRPs on to lower drivers can register an *IoCompletion* routine.
 
 For driver-allocated IRPs and reused IRPs, the dispatch routine must call **IoSetCompletionRoutine** with the following Boolean parameters:
 
@@ -52,7 +51,7 @@ A dispatch routine that reuses IRPs for a sequence of operations, or that retrie
 
 -   The dispatch routine must save the original IRP's state information, for subsequent use by the *IoCompletion* routine.
 
-    For example, a [*DispatchReadWrite*](https://msdn.microsoft.com/library/windows/hardware/ff543381) routine must save the relevant transfer parameters of an input IRP for the *IoCompletion* routine before setting up a partial transfer for the next-lower driver in that IRP. Saving the parameters is particularly important if the *DispatchReadWrite* routine modifies any parameters that the *IoCompletion* routine needs to determine when the original request has been satisfied.
+    For example, a [*DispatchReadWrite*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine must save the relevant transfer parameters of an input IRP for the *IoCompletion* routine before setting up a partial transfer for the next-lower driver in that IRP. Saving the parameters is particularly important if the *DispatchReadWrite* routine modifies any parameters that the *IoCompletion* routine needs to determine when the original request has been satisfied.
 
 -   If the *IoCompletion* routine can retry the request, the dispatch routine must set up a driver-determined upper limit for the number of retries its *IoCompletion* routine should attempt before it completes the original IRP with an error.
 
@@ -60,9 +59,9 @@ A dispatch routine that reuses IRPs for a sequence of operations, or that retrie
 
 -   For an asynchronous request, the dispatch routine of any intermediate driver must call [**IoMarkIrpPending**](https://msdn.microsoft.com/library/windows/hardware/ff549422) for the original IRP. It must then return STATUS\_PENDING after it has sent the IRP on to lower drivers.
 
- 
+ 
 
- 
+ 
 
 
 

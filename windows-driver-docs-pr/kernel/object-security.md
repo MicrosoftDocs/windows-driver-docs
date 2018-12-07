@@ -1,6 +1,5 @@
 ---
 title: Object Security
-author: windows-driver-content
 description: Object Security
 ms.assetid: 50c174d3-31cd-4e58-9702-64d69e76e977
 keywords: ["object security WDK kernel", "security WDK objects"]
@@ -19,9 +18,9 @@ This section contains the following subsections:
 
 [Privileges](privileges.md)
 
- 
+ 
 
- 
+ 
 
 
 

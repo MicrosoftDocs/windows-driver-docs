@@ -1,6 +1,5 @@
 ---
 title: Full-Duplex Mode
-author: windows-driver-content
 description: Full-Duplex Mode
 ms.assetid: 01e3388d-d568-4476-9ff0-2125acafb841
 ms.date: 04/20/2017
@@ -17,9 +16,9 @@ The Storport driver supports an I/O model tailored specifically for high-perform
 
 A miniport driver must configure Storport to operate in full-duplex mode while executing its [**HwStorFindAdapter**](https://msdn.microsoft.com/library/windows/hardware/ff557390) routine. It does this by initializing the **SynchronizationModel** member of the miniport driver's [**PORT\_CONFIGURATION\_INFORMATION (STORPORT)**](https://msdn.microsoft.com/library/windows/hardware/ff563901) structure to **StorSynchronizeFullDuplex**.
 
- 
+ 
 
- 
+ 
 
 
 

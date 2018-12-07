@@ -1,6 +1,5 @@
 ---
 title: Developing a WIA Driver
-author: windows-driver-content
 description: Developing a WIA Driver
 ms.assetid: 0497e93a-e7c5-4d89-bfa9-b2f277e471a0
 ms.date: 04/20/2017
@@ -27,9 +26,9 @@ The material in this section is divided into four major parts:
 
 [Customizing a WIA Driver](customizing-a-wia-driver.md)
 
- 
+ 
 
- 
+ 
 
 
 

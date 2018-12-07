@@ -1,6 +1,5 @@
 ---
 title: XPSDrv Driver Options
-author: windows-driver-content
 description: XPSDrv Driver Options
 ms.assetid: 51db3cce-a95a-4084-9927-542c2d06312a
 keywords:
@@ -25,9 +24,9 @@ One such plug-in, Mxdwdui.dll, is provided by Microsoft to enable configuration 
 <a href="" id="monolithic"></a>**Monolithic**  
 You completely define and implement the configuration module. The monolithic method is generally the most costly method because you must perform all print driver development and testing, but this method also offers the most opportunity for customization.
 
- 
+ 
 
- 
+ 
 
 
 

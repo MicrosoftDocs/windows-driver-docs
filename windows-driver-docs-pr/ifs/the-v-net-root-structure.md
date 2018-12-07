@@ -1,6 +1,5 @@
 ---
 title: The V_NET_ROOT Structure
-author: windows-driver-content
 description: The V_NET_ROOT Structure
 ms.assetid: 866eba91-13b6-4b15-93de-4f627a635c92
 keywords:
@@ -53,9 +52,9 @@ The finalization of a V\_NET\_ROOT structure consists of two parts:
 
 There can be a delay between these two actions, and a field in the V\_NET\_ROOT structure prevents the first step from being duplicated.
 
- 
+ 
 
- 
+ 
 
 
 

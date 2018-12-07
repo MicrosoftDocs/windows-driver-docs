@@ -3,7 +3,6 @@ title: .remote (Create Remote.exe Server)
 description: The .remote command starts a Remote.exe Server, enabling a remote connection to the current debugging session.
 ms.assetid: fa3de33c-ba8c-4e9c-9899-b9a43f3195bf
 keywords: ["Create Remote.exe Server (.remote) command", "remote debugging through remote.exe, Create Remote.exe Server (.remote) command", ".remote (Create Remote.exe Server) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -54,7 +53,7 @@ You can use the **.remote** command in KD and CDB, but you cannot use it in WinD
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -65,9 +64,9 @@ Remarks
 
 The **.remote** command creates a Remote.exe process and turns the current debugger into a Remote.exe Server. This server enables a Remote.exe Client to connect to the current debugging session.
 
- 
+ 
 
- 
+ 
 
 
 

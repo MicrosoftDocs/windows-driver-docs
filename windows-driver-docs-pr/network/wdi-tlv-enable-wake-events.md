@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_ENABLE_WAKE_EVENTS
-author: windows-driver-content
 description: WDI_TLV_ENABLE_WAKE_EVENTS is a TLV that contains the enabled wake events.
 ms.assetid: 5F348D9A-5575-46EE-A524-687E9D030754
 ms.date: 07/18/2017
@@ -34,7 +33,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | UINT32 | Specifies the wake-up flags using the flags as documented in [**NDIS\_PM\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff566759).WakeUpFlags.                                    |
 | UINT32 | Specifies the media-specific wake up events using the flags as documented in [**NDIS\_PM\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff566759).MediaSpecificWakeUpEvents.      |
 
- 
+ 
 
 Requirements
 ------------
@@ -60,9 +59,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

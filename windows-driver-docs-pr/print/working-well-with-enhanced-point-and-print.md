@@ -1,6 +1,5 @@
 ---
 title: Working well with enhanced Point and Print
-author: windows-driver-content
 description: The updated printer sharing mechanism is referred to as enhanced Point and Print, and it allows print clients to print to v4 shares without downloading the manufacturer-provided device driver from the print server.
 ms.assetid: AD01AAD1-B209-419A-B73B-CA746F1B772A
 ms.date: 04/20/2017

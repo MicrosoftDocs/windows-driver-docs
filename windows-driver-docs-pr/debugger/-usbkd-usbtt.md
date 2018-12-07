@@ -3,7 +3,6 @@ title: usbkd.usbtt
 description: The usbkd.usbtt command displays information from a USBPORT _TRANSACTION_TRANSLATOR structure.
 ms.assetid: 4D599BCE-C6C3-42B3-BDCE-EE9E47FA6AB7
 keywords: ["usbkd.usbtt Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -57,9 +56,9 @@ Either click the DML command or pass the address of the device extension to [**!
 
 [Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
- 
+ 
 
- 
+ 
 
 
 

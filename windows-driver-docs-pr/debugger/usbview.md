@@ -3,7 +3,6 @@ title: USBView
 description: USBView
 ms.assetid: 88d2a93f-2e7c-493c-bb9e-487f1d1f2016
 keywords: ["USBView"]
-ms.author: domars
 ms.date: 02/22/2017
 ms.localizationpriority: medium
 ---
@@ -69,9 +68,9 @@ To use Windows Device Manager to display USB information:
 If you are trying to diagnose a USB device that does not eject using the Safely Remove Hardware dialog box, you might want to try the [Windows USB Troubleshooter](https://support.microsoft.com/help/17614/automatically-diagnose-and-fix-windows-usb-problems).
 
 
- 
+ 
 
- 
+ 
 
 
 

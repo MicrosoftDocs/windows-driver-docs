@@ -3,7 +3,6 @@ title: User Space and System Space
 description: User Space and System Space
 ms.assetid: 2d988178-cd19-4dc4-8dc1-39b9b6a1aaad
 keywords: ["system space", "system space, addresses", "system space, breakpoints", "kernel space", "kernel space, addresses", "kernel space, breakpoints", "user space", "user space, addresses", "user space, breakpoints"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -43,9 +42,9 @@ This indicates that user space ranges from 0x00000000\`00000000 to 0x000007FF\`F
 
 For more information about Windows memory management, see *Microsoft Windows Internals* by David Solomon and Mark Russinovich (4th edition, Microsoft Press, 2005).
 
- 
+ 
 
- 
+ 
 
 
 

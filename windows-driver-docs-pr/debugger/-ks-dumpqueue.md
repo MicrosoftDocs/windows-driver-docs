@@ -3,7 +3,6 @@ title: ks.dumpqueue
 description: The ks.dumpqueue extension displays information about the queues associated with a given AVStream object, or the stream associated with a port class object.
 ms.assetid: d641b4e6-73d9-4c44-b2c6-0b6c688da368
 keywords: ["ks.dumpqueue Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -51,7 +50,7 @@ Optional. Specifies the level of detail to display on a 0-7 scale with progressi
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -88,9 +87,9 @@ Filter 829493c4: Output Queue 82990e20:
             Refcount = 1
 ```
 
- 
+ 
 
- 
+ 
 
 
 

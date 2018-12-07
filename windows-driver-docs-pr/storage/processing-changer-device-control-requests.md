@@ -1,6 +1,5 @@
 ---
 title: Processing Changer Device-Control Requests
-author: windows-driver-content
 description: Processing Changer Device-Control Requests
 ms.assetid: 3ee275c7-f2e4-47db-bd4b-db5c0c8ad399
 keywords:
@@ -25,9 +24,9 @@ The changer miniclass driver performs any device-specific verification that migh
 
 If the SRB succeeds, the miniclass driver routine fills in the output parameters involved in the request. Whether the SRB succeeds or fails, the miniclass driver routine typically returns the status it receives from the port driver to the changer class driver.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Using WPP Software Tracing in UMDF Drivers
-author: windows-driver-content
 description: Using WPP Software Tracing in UMDF Drivers
 ms.assetid: d8469d29-dfc3-41b9-a72d-9dafb3e70123
 keywords:
@@ -67,7 +66,7 @@ The UMDF log file is %windir%\\system32\\LogFiles\\WUDF\\WUDFTrace.etl.
 
 **Note**  Starting in UMDF 2.15, the log directory is *%ProgramData%*\\Microsoft\\WDF.
 
- 
+ 
 
 You can view the UMDF log file by using either [TraceView](https://msdn.microsoft.com/library/windows/hardware/ff553872) or [Tracelog](https://msdn.microsoft.com/library/windows/hardware/ff552994). Both tools require trace message format (TMF) files that format the trace log's messages. The TMF files are available in the WDK, under the \\tools\\tracing subdirectory. (In TraceView, UMDF appears as a named provider with the name of "UMDF-Framework Trace" or "Framework Trace", depending on the UMDF version.)
 
@@ -102,9 +101,9 @@ Currently, you can modify the following registry values, which are located under
 
 You might find additional registry values under the **HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\WUDF** registry key. You should not modify those values.
 
- 
+ 
 
- 
+ 
 
 
 

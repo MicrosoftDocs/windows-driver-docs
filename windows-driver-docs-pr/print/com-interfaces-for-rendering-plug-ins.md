@@ -1,6 +1,5 @@
 ---
 title: COM Interfaces for Rendering Plug-Ins
-author: windows-driver-content
 description: COM Interfaces for Rendering Plug-Ins
 ms.assetid: 3a1a67ed-7c29-42fa-9bd2-ee38468f6d4b
 keywords:
@@ -38,9 +37,9 @@ The following figure shows the inheritance tree for the COM interfaces used in r
 
 ![diagram illustrating the inheritance tree for the com interfaces used in render plug-ins](images/rendintf.png)
 
- 
+ 
 
- 
+ 
 
 
 

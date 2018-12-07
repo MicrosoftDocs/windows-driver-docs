@@ -1,6 +1,5 @@
 ---
 title: Windows protocol
-author: windows-driver-content
 description: Windows protocol
 ms.assetid: 9D28589E-FA19-43F2-BE22-438795807657
 keywords:
@@ -64,9 +63,9 @@ The client will send a tab-delimited (or null-delimited) list of strings as the 
 -   For each platform/AppID tuple the driver MUST add to the payload a byte with the length (in bytes) of the platform string followed by the platform string itself followed by a byte with the length (in bytes) of the AppID string followed by the AppID string itself.
 -   The driver MUST add a USHORT containing the length of the argument string followed by the argument string itself.
 
- 
+ 
 
- 
+ 
 
 
 

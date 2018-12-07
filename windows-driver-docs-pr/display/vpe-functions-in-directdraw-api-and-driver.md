@@ -29,9 +29,9 @@ The preceding figure shows VPE in relation to other components of DirectDraw arc
 
 In the negotiation for the connection, the VGA hardware indicates what connections can be supported, and the MPEG or NTSC decoder indicates its preferences. DirectShow negotiates the best connection between the two. The connection is described as a globally unique identifier (GUID), with flags to describe other parameters, such as double clocking and video active.
 
- 
+ 
 
- 
+ 
 
 
 

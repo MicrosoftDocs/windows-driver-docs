@@ -1,6 +1,5 @@
 ---
 title: Hostfont Registry Entries
-author: windows-driver-content
 description: Hostfont Registry Entries
 ms.assetid: f7ce2591-197a-4094-8b21-5e0cc48506ea
 keywords:
@@ -68,7 +67,7 @@ The following table lists the %hostfont% registry entry names, their types, and 
 </tbody>
 </table>
 
- 
+ 
 
 ### Additional Notes on Hostfont Registry Entry Names
 
@@ -78,9 +77,9 @@ The existence of the HostFontHasMostFonts key with any value assigned to it mean
 
 HostFontIncludesFonts is similar to HostFontExceptFonts except that it explicitly lists PostScript font names that are available on the target interpreter.
 
- 
+ 
 
- 
+ 
 
 
 

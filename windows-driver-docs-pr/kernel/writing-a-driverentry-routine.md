@@ -1,6 +1,5 @@
 ---
 title: Writing a DriverEntry Routine
-author: windows-driver-content
 description: Writing a DriverEntry Routine
 ms.assetid: c33bc82b-6181-4e31-b272-aaadb2d9b058
 keywords: ["standard driver routines WDK kernel , DriverEntry routine", "driver routines WDK kernel , DriverEntry routine", "routines WDK kernel , DriverEntry routine", "DriverEntry WDK kernel", "DriverEntry WDK kernel , about DriverEntry routine", "driver initialization WDK kernel", "initializing drivers"]
@@ -30,9 +29,9 @@ This section contains the following topics:
 
 [DriverEntry Return Values](driverentry-return-values.md)
 
- 
+ 
 
- 
+ 
 
 
 

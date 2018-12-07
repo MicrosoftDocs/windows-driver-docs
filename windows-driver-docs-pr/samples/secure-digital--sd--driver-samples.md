@@ -1,6 +1,5 @@
 ---
 title: Secure Digital (SD) driver samples
-author: windows-driver-content
 description: The driver samples in this directory provide a starting point for writing a custom SD driver for your device.
 ms.assetid: F0B407B5-D49A-434F-9A35-D4F62BE36F5F
 ms.date: 04/20/2017
@@ -19,11 +18,11 @@ The driver samples in this directory provide a starting point for writing a cust
 |--------------------------------------|-------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Standard SD Host Controller Miniport | [sdhc](http://go.microsoft.com/fwlink/p/?LinkId=617952)     | Provides a functional miniport implementation for a standard SD host controller.                                                                                         |
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

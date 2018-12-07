@@ -12,7 +12,6 @@ keywords:
 - trace sessions WDK , controlling
 - trace consumers WDK
 - trace controllers WDK
-ms.author: eliotgra
 ms.date: 09/12/2018
 ms.localizationpriority: medium
 ---
@@ -39,7 +38,7 @@ This section describes TraceView 2.0.15. It includes the following sections:
 
 See [TraceView Limitations](traceview-limitations.md) for a description of the limitations you may face when running TraceView. 
 
- 
+ 
 
 
 

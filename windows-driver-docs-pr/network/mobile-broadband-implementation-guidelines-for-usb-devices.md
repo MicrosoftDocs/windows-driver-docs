@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Mobile Broadband Implementation Guidelines for USB Devices
 
 
-This topic provides specific implementation guidance to help mobile broadband device manufacturers produce compliant USB devices for Windows. It should be used in conjunction with the [USB NCM Mobile Broadband Interface Model (MBIM) V1.0 specification](http://go.microsoft.com/fwlink/p/?linkid=320791) released by the USB-IF Device Working Group.
+This topic provides specific implementation guidance to help mobile broadband device manufacturers produce compliant USB devices for Windows. It should be used in conjunction with the [USB NCM Mobile Broadband Interface Model (MBIM) V1.0 specification](https://usb.org/document-library/mobile-broadband-interface-model-v10-errata-1-and-adopters-agreement) released by the USB-IF Device Working Group.
 
 The information in this topic applies to:
 
@@ -56,7 +56,7 @@ MBIM devices must follow these guidelines when responding to **MBIMPinOperationE
 -   PIN Blocking: The PIN is blocked when the number of **MBIM\_PIN\_INFO::RemainingAttempts** is zero. If the PIN unblock operation is not available, the device must set status to MBIM\_STATUS\_FAILURE and **MBIM\_PIN\_INFO::PinType** to **MBIMPinTypeNone**. **MBIM\_PIN\_INFO::RemainingAttempts** should be set to 0 and all the other members are ignored.
     **Note**  If the device supports PIN unblock operations, the device should follow the PIN Unblocking step to respond to the request.
 
-     
+     
 
 -   Unblocking PIN: The PIN is blocked when **MBIM\_PIN\_INFO::RemainingAttempts** is zero. To unblock the PIN, the device may request a corresponding PUK, if applicable. In this case, the device must set status to MBIM\_STATUS\_FAILURE, **MBIM\_PIN\_INFO::PinType** to the corresponding **MBIMPinTypeXxxPUK**, **PinState** to **MBIMPinStateLocked**, and **MBIM\_PIN\_INFO::RemainingAttempts** should have the number of attempts allowed to enter a valid PUK.
 -   If PIN blocking results in the device or SIM becomes blocked, the device must send a MBIM\_CID\_SUBSCRIBER\_READY\_STATUS notification with **ReadyState** set to **MBIMSubscriberReadyStateDeviceLocked.**
@@ -69,7 +69,7 @@ MBIM devices must follow these guidelines when responding to **MBIMPinOperationE
     -   PIN Blocking: The PIN is blocked when **MBIM\_PIN\_INFO::RemainingAttempts** is zero. If the PIN unblock operation is not available, the device must set status to MBIM\_STATUS\_FAILURE and **MBIM\_PIN\_INFO::PinType** to **MBIMPinTypeNone**. All the other members are ignored.
         **Note**  If the device supports PIN unblock operations, the device should follow the PIN Unblocking step to respond to the request.
 
-         
+         
 
     -   PIN Unblocking: The PIN is blocked when **MBIM\_PIN\_INFO::RemainingAttempts** is zero. To unblock the PIN, the device may request a corresponding PIN Unlock Key (PUK), if applicable. In this case, the device must set **MBIM\_PIN\_INFO::PinType** to the corresponding **MBIMPinTypeXxxPUK** with the relevant details.
     -   Blocked PUK: If the number of failed trials exceeds the preset value for entering the **MBIMPinTypeXxxPUK**, then the PUK becomes blocked. The device must signal this by setting status to MBIM\_STATUS\_FAILURE and **MBIM\_PIN\_INFO::PinType** to **MBIMPinTypeNone**. In case PUK1 is blocked, the device must send a MBIM\_CID\_SUBSCRIBER\_READY\_STATUS with **ReadyState** set to **MBIMSubscriberReadyStateBadSim**.
@@ -156,9 +156,9 @@ MBIM\_AKAP\_AUTH\_INFO
 
 Windows supports configuring Link Maximum Transmission Unit (MTU) only during device initialization. Windows does not update the Link MTU based on the MTU reported using MBIM\_CID\_IP\_CONFIGURATION. Devices must communicate the network supported link MTU using the MBIM\_FUNCTIONAL\_DESCRIPTOR.wMaxSegmentSize. Link MTU values reported in this manner should be at least 1280 and at most 1500.
 
- 
+ 
 
- 
+ 
 
 
 

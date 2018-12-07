@@ -70,9 +70,9 @@ and the driver specifies the list of available display modes as follows:
 
 In this situation, if the application attempts to set the monitor to 800x600x32bpp@60Hz, the system will choose display mode D.
 
- 
+ 
 
- 
+ 
 
 
 

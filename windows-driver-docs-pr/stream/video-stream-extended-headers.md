@@ -1,6 +1,5 @@
 ---
 title: Video Stream Extended Headers
-author: windows-driver-content
 description: Video Stream Extended Headers
 ms.assetid: 6540026c-a41a-49e2-a41f-fe64106408f5
 keywords:
@@ -32,25 +31,25 @@ Stream class video capture minidrivers indicate their ability to provide this ad
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>KS_FRAME_INFO</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567645)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567645" data-raw-source="[&lt;strong&gt;KS_FRAME_INFO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567645)"><strong>KS_FRAME_INFO</strong></a></p></td>
 <td><p>Frame count, drop frame count, field polarity flags, and DirectDraw surface handles.</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>KS_VBI_FRAME_INFO</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567694)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567694" data-raw-source="[&lt;strong&gt;KS_VBI_FRAME_INFO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567694)"><strong>KS_VBI_FRAME_INFO</strong></a></p></td>
 <td><p>VBI format, channel change information, video standard.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 If a Stream class minidriver does not provide this additional information, it should set **StreamHeaderMediaSpecific** to zero.
 
 For more information about when to specify a value in **StreamHeaderMediaSpecific**, see [Stream Categories](stream-categories.md).
 
- 
+ 
 
- 
+ 
 
 
 

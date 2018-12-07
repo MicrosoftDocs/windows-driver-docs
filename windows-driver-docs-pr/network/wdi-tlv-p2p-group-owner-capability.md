@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_P2P_GROUP_OWNER_CAPABILITY
-author: windows-driver-content
 description: WDI_TLV_P2P_GROUP_OWNER_CAPABILITY is a TLV that contains Wi-Fi Direct Group Owner capability information.
 ms.assetid: 3F07665C-0212-465C-9118-CC213198EFB7
 ms.date: 07/18/2017
@@ -33,7 +32,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | UINT8  | Specifies the bits set by the operating system in the Group capability bitmap above.                                                                                            |
 | UINT32 | Maximum client count for this Group Owner.                                                                                                                                      |
 
- 
+ 
 
 Requirements
 ------------
@@ -59,9 +58,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

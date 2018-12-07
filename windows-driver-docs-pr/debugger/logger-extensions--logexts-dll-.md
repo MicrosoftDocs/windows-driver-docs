@@ -3,7 +3,6 @@ title: Logger Extensions (Logexts.dll)
 description: Logger Extensions (Logexts.dll)
 ms.assetid: f1031b91-6324-41ff-b9b7-86d551ca42bd
 keywords: ["logger extensions (logexts.dll)", "logexts.dll (logger extensions)", "extensions, logger"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -18,9 +17,9 @@ Extension commands related to the Logger and LogViewer tools can be found in Log
 
 This DLL appears in the winext directory. It can be used with all Windows operating systems.
 
- 
+ 
 
- 
+ 
 
 
 

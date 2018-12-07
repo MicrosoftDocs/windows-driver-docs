@@ -1,6 +1,5 @@
 ---
 title: Stopping a Device
-author: windows-driver-content
 description: Stopping a Device
 ms.assetid: 65a47e7b-aabd-4b55-8fa6-c3482da1cc84
 keywords: ["PnP WDK kernel , stopping devices", "Plug and Play WDK kernel , stopping devices", "stopping PnP devices", "stop IRPs WDK PnP"]
@@ -34,9 +33,9 @@ This section covers the following topics:
 
 [Handling Stop IRPs (Windows 98/Me)](handling-stop-irps--windows-98-me-.md)
 
- 
+ 
 
- 
+ 
 
 
 

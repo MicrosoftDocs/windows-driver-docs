@@ -1,6 +1,5 @@
 ---
 title: Creating an Interrupt Object
-author: windows-driver-content
 description: Creating an Interrupt Object
 ms.assetid: D281F2E8-3ADA-4F4E-B345-CE72FA3C69EC
 ms.date: 04/20/2017
@@ -40,9 +39,9 @@ If a device can support a certain number of MSI messages, the PnP manager will t
 
 Your driver should create a framework interrupt object for each interrupt vector or MSI message that the device can support. If the PnP manager doesn't grant the device all of the interrupt resources that the device can support, the extra interrupt objects won't be used, and their callback functions won't be called.
 
- 
+ 
 
- 
+ 
 
 
 

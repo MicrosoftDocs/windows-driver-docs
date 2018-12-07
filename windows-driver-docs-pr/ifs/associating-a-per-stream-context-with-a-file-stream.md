@@ -1,6 +1,5 @@
 ---
 title: Associating a Per-Stream Context With a File Stream
-author: windows-driver-content
 description: Associating a Per-Stream Context With a File Stream
 ms.assetid: 99c93574-2ba6-417a-89a4-a5b9a350a8da
 keywords:
@@ -29,9 +28,9 @@ If [**FsRtlLookupPerStreamContext**](https://msdn.microsoft.com/library/windows/
 
 After [**FsRtlInsertPerStreamContext**](https://msdn.microsoft.com/library/windows/hardware/ff546194) is called for a per-stream context, the file system assumes responsibility for deleting and freeing it. If your filter driver allocates a per-stream context and does not call **FsRtlInsertPerStreamContext** for it, your filter driver is still responsible for freeing it by calling [**ExFreePool**](https://msdn.microsoft.com/library/windows/hardware/ff544590).
 
- 
+ 
 
- 
+ 
 
 
 

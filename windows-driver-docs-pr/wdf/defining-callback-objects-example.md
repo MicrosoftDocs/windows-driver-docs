@@ -1,6 +1,5 @@
 ---
 title: Defining Callback Objects Example
-author: windows-driver-content
 description: Defining Callback Objects Example
 ms.assetid: d987bb95-cbee-46aa-beaf-167572ca4a80
 keywords:
@@ -44,9 +43,9 @@ public:
 };
 ```
 
- 
+ 
 
- 
+ 
 
 
 

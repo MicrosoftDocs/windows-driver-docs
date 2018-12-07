@@ -3,7 +3,6 @@ title: dma
 description: The dma extension displays information about the Direct Memory Access (DMA) subsystem, and the DMA Verifier option of Driver Verifier.
 ms.assetid: 4ccf679f-5804-4644-935a-18ff8711ae9a
 keywords: ["DMA Verification (Driver Verifier)", "dma Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -70,7 +69,7 @@ Causes the display to include Wait context block information.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -178,9 +177,9 @@ Adapter: 82f06cd0     Owner: NDIS!NdisMAllocateMapRegisters
 
 This is fairly straightforward; there are four common buffers of varying lengths. The physical and virtual addresses are all given.
 
- 
+ 
 
- 
+ 
 
 
 

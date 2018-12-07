@@ -13,8 +13,7 @@ api_type:
 ms.localizationpriority: medium
 ---
 
-BCDEdit /set
-============
+# BCDEdit /set
 
 The **BCDEdit /set** command sets a boot entry option value in the Windows boot configuration data store (BCD) for Windows 7, Windows Server 2008, Windows 8, Windows 8.1,Windows 10, Windows Server 2012, and Windows Server 2012 R2. Use the **BCDEdit /set** command to configure specific boot entry elements, such as kernel debugger settings, memory options, or options that enable test-signed kernel-mode code or load alternate hardware abstraction layer (HAL) and kernel files. To remove a boot entry option, use the [**BCDEdit /deletevalue**](bcdedit--deletevalue.md) command.
 
@@ -24,14 +23,14 @@ The **BCDEdit /set** command sets a boot entry option value in the Windows boot 
 > [!NOTE]
 > Before setting BCDEdit options you might need to disable or suspend BitLocker and Secure Boot on the computer.
 
-``` syntax
-bcdedit  /set [{ID}] datatype value 
+```syntax
+bcdedit  /set [{ID}] datatype value
 ```
 
-### Parameters
+## Parameters
 
-\[**{***ID***}**\]  
-The **{***ID***}** is the GUID that is associated with the boot entry. If you do not specify an **{***ID***}**, the command modifies the current operating system boot entry. If a boot entry is specified, the GUID associated with the boot entry must be enclosed in braces **{ }**. To view the GUID identifiers for all of the active boot entries, use the **bcdedit /enum** command. The identifier for the current boot entry is **{current}**. For more information about this option, use the following command: **bcdedit /? ID**
+\[**{ID}**\]  
+The **{ID}** is the GUID that is associated with the boot entry. If you do not specify an **{ID}**, the command modifies the current operating system boot entry. If a boot entry is specified, the GUID associated with the boot entry must be enclosed in braces **{ }**. To view the GUID identifiers for all of the active boot entries, use the **bcdedit /enum** command. The identifier for the current boot entry is **{current}**. For more information about this option, use the following command: **bcdedit /? ID**
 
 > [!NOTE]
 > If you are using [Windows PowerShell](http://go.microsoft.com/fwlink/p/?linkid=108518), you must use quotes around the boot entry identifier, for example: **"{49916baf-0e08-11db-9af4-000bdbd316a0}"** or **"{current}"**.
@@ -44,21 +43,29 @@ The following list shows some useful *datatypes* and their associated *values*.
 Enables the system initialization log. This log is stored in the Ntbtlog.txt file in the %WINDIR% directory. It includes a list of loaded and unloaded drivers in text format.
 
 **bootmenupolicy** \[ **Legacy** | **Standard** \]  
-Defines the type of boot menu the system will use. ForWindows 10, Windows 8.1, Windows 8 and Windows RT the default is **Standard**. For Windows Server 2012 R2, Windows Server 2012, the default is **Legacy**. When **Legacy** is selected, the Advanced options menu (**F8**) is available. When **Standard** is selected, the boot menu will appear only under certain conditions: for example, if there is a startup failure, if you are booting up from a repair disk or installation media, if you have configured multiple boot entries, or if you manually configured the computer to use Advanced startup. When **Standard** is selected, the **F8** key is ignored during boot. Windows 8 PCs start up quickly so there isn't enough time to press **F8**. For more information, see [Windows Startup Settings (including safe mode)](http://go.microsoft.com/fwlink/p/?linkid=313921).
+Defines the type of boot menu the system will use. ForWindows 10, Windows 8.1, Windows 8 and Windows RT the default is **Standard**. For Windows Server 2012 R2, Windows Server 2012, the default is **Legacy**. When **Legacy** is selected, the Advanced options menu (**F8**) is available. When **Standard** is selected, the boot menu appears but only under certain conditions: for example, if there is a startup failure, if you are booting up from a repair disk or installation media, if you have configured multiple boot entries, or if you manually configured the computer to use Advanced startup. When **Standard** is selected, the **F8** key is ignored during boot. Windows 8 PCs start up quickly so there isn't enough time to press **F8**. For more information, see [Windows Startup Settings (including safe mode)](http://go.microsoft.com/fwlink/p/?linkid=313921).
 
 > [!NOTE]
 > The option is available starting with Windows 8 and Windows Server 2012. You can also use the **onetimeadvancedoptions** to use the Advanced options (**F8**) menu (**Legacy**) one time on the next boot.
 
-**bootstatuspolicy** *policy*   
+**bootstatuspolicy** *policy*
+
 Controls the boot status policy. The boot status *policy* can be one of the following:
 
 - `DisplayAllFailures`: Displays all errors if there is a failed boot, failed shutdown, or failed checkpoint. The computer will fail over to the Windows recovery environment on reboot.
+
 - `IgnoreAllFailures`: Ignore errors if there is a failed boot, failed shutdown, or failed checkpoint. The computer will attempt to boot normally after an error occurs.
+
 - `IgnoreShutdownFailures`: Only ignore errors if there is a failed shutdown. If there is a failed shutdown, the computer does not automatically fail over to the Windows recovery environment on reboot. This is the default setting for Windows 8.
+
 - `IgnoreBootFailures`: Only ignore errors if there is a failed boot. If there is a failed boot, the computer does not automatically fail over to the Windows recovery environment on reboot.
+
 - `IgnoreCheckpointFailures`: Only ignore errors if there is a failed checkpoint. If there is a failed checkpoint, the computer does not automatically fail over to the Windows recovery environment on reboot. The option is available starting with Windows 8 and Windows Server 2012.
+
 - `DisplayShutdownFailures`: Displays errors if there is a failed shutdown. If there is a failed shutdown, the computer will fail over to the Windows recovery environment on reboot. Ignores boot failures and failed checkpoints. The option is available starting with Windows 8 and Windows Server 2012.
+
 - `DisplayBootFailures`: Displays errors if there is a failed boot. If there is a failed boot, the computer will fail over to the Windows recovery environment on reboot. Ignores shutdown failures and failed checkpoints. The option is available starting with Windows 8 and Windows Server 2012.
+
 - `DisplayCheckpointFailures`: Displays errors if there is a failed checkpoint. If there is a failed checkpoint, the computer will fail over to the Windows recovery environment on reboot. Ignores boot and shutdown failures. The option is available starting with Windows 8 and Windows Server 2012.
 
 **bootux** \[ **disabled** | **basic** | **standard** \]  
@@ -85,7 +92,7 @@ Forces the OS to assume the presence of legacy PC devices like CMOS and keyboard
 > [!NOTE]
 > This option should only be used for debugging. The option is available starting with Windows 8 and Windows Server 2012.
 
-**groupsize** *maxsize*   
+**groupsize** *maxsize*
 Sets the maximum number of logical processors in a single processor group, where *maxsize* is any power of 2 between 1 and 64 inclusive. By default, processor groups have a maximum size of 64 logical processors. You can use this boot configuration setting to override the size and makeup of a computer's processor groups for testing purposes. [Processor groups](http://go.microsoft.com/fwlink/p/?linkid=155063) provide support for computers with greater than 64 logical processors. This boot option is available on 64-bit versions of Windows 7 and Windows Server 2008 R2 and later versions. This boot option has no effect on the 32-bit versions of Windows 7.
 
 Use the **groupsize** option if you want to force multiple groups and the computer has 64 or fewer active logical processors. For more information about using this option, see [Boot Parameters to Test Drivers for Multiple Processor Group Support](https://msdn.microsoft.com/library/windows/hardware/ff542298).
@@ -97,14 +104,14 @@ The **groupaware on** setting ensures that processes are started in a group othe
 
 For more information about using this option, see [Boot Parameters to Test Drivers for Multiple Processor Group Support](https://msdn.microsoft.com/library/windows/hardware/ff542298).
 
-**hal** *file*   
+**hal** *file*
 Directs the operating system loader to load an alternate HAL file. The specified file must be located in the %SystemRoot%\\system32 directory.
 
-**hypervisorbusparams** *Bus***.***Device***.***Function*  
+**hypervisorbusparams** *Bus.Device.Function*  
 Defines the PCI bus, device, and function numbers of the debugging device. For example, 1.5.0 describes the debugging device on bus 1, device 5, function 0. Use this option when you are using either a 1394 cable, or a USB 2.0 or USB 3.0 debug cable for debugging.
 
 **hypervisordebug** \[ **On** | **Off** \]  
-Controls whether the hypervisor debugger is enabled. 
+Controls whether the hypervisor debugger is enabled.
 
 **Serial**  
 Specifies a serial connection for debugging. When the **Serial** option is specified, you also set the **hypervisordebugport** and **hypervisorbaudrate** options.
@@ -118,13 +125,13 @@ bcdedit /set hypervisorlaunchtype auto
 ```
 
 **1394**  
-Specifies an IEEE 1394 (FireWire) connection for debugging. When this option is used, the **hypervisorchannel** option should also be set. 
+Specifies an IEEE 1394 (FireWire) connection for debugging. When this option is used, the **hypervisorchannel** option should also be set.
 
 **Net**  
-Specifies an Ethernet network connection for debugging. When this option is used, the **hypervisorhostip** option must be also be set. 
+Specifies an Ethernet network connection for debugging. When this option is used, the **hypervisorhostip** option must be also be set.
 
-**hypervisorhostip** *IP address*   
-(Only used when the **hypervisordebugtype** is **Net**.) For debugging hypervisor over a network connection, specifies the IPv4 address of the host debugger. For information about debugging Hyper-V, see [Attaching to a Target Computer Running Hyper-V].
+**hypervisorhostip** *IP address*
+(Only used when the **hypervisordebugtype** is **Net**.) For debugging hypervisor over a network connection, specifies the IPv4 address of the host debugger. For information about debugging Hyper-V, see [Create a Virtual Machine with Hyper-V](https://docs.microsoft.com/virtualization/hyper-v-on-windows/quick-start/quick-create-virtual-machine).
 
 > [!NOTE]
 > The option is available starting in Windows 8 and Windows Server 2012.
@@ -148,7 +155,7 @@ Controls whether the hypervisor uses an Input Output Memory Management Unit (IOM
 > The option is available starting in Windows 8 and Windows Server 2012.
 
 **hypervisorlaunchtype** \[ **Off** | **Auto** \]  
-Controls the hypervisor launch options. If you are setting up a debugger to debug Hyper-V on a target computer, set this option to **Auto** on the target computer. For more information, see [Attaching to a Target Computer Running Hyper-V](https://msdn.microsoft.com/library/windows/hardware/ff538138). Information about [Hyper-V]( http://go.microsoft.com/fwlink/p/?linkid=271817) technology is available on Microsoft TechNet web site.
+Controls the hypervisor launch options. If you are setting up a debugger to debug Hyper-V on a target computer, set this option to **Auto** on the target computer. For more information, see [Create a Virtual Machine with Hyper-V](https://docs.microsoft.com/virtualization/hyper-v-on-windows/quick-start/quick-create-virtual-machine).
 
 **hypervisorloadoptions NOFORCESNOOP** \[ **Yes** | **No** \]  
 Specifies whether the hypervisor should enforce snoop control on system IOMMUs.
@@ -177,25 +184,25 @@ Specifies the total number of virtual processors in the root partition that can 
 > [!NOTE]
 > The option is available starting in Windows 8 and Windows Server 2012.
 
-**hypervisoruselargevtlb** \[ **yes** | **no**   
+**hypervisoruselargevtlb** \[ **yes** | **no**
 Increases virtual Translation Lookaside Buffer (TLB) size.
 
 > [!NOTE]
 > The option is available starting in Windows 8 and Windows Server 2012.
 
-**increaseuserva** *Megabytes*   
+**increaseuserva** *Megabytes*
 Specifies the amount of memory, in megabytes, for user-mode virtual address space.
 
 On 32-bit editions of Windows, applications have 4 gigabyte (GB) of virtual address space available. The virtual address space is divided so that 2 GB is available to the application and the other 2 GB is available only to the system.
 
 The 4-gigabyte tuning feature, enabled with the **increaseuserva** option, allows you to increase the virtual address space that is available to the application up to 3 GB, which reduces the amount available to the system to between 1 and 2 GB. The **BCEdit /set increaseuserva** *Megabytes* command can specify any value between 2048 (2 GB) and 3072 (3 GB) megabytes in decimal notation. Windows uses the remaining address space (4 GB minus the specified amount) as its kernel-mode address space.
 
-See [4-Gigabyte Tuning (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb613473) for additional information about this feature.
+See [4-Gigabyte Tuning (Windows)](https://docs.microsoft.com/windows/desktop/Memory/4-gigabyte-tuning) for additional information about this feature.
 
-**kernel** *file*   
+**kernel** *file*
 Directs the operating system loader to load an alternate kernel. The specified file must be located in the %SystemRoot%\\system32 directory.
 
-**loadoptions busparams=***Bus.Device.Function*   
+**loadoptions busparams**=*Bus.Device.Function*
 Specifies the target controller when multiple controllers exist. This syntax is appropriate when using either a 1394 cable or a USB 2.0 debug cable for debugging. *Bus* specifies the bus number, *Device* specifies the device number, and *Function* specifies the function number.
 
 > [!NOTE]
@@ -208,24 +215,24 @@ The **maxgroup on** setting assigns NUMA nodes to groups in a manner that maximi
 
 Use this option if you want to use multiple groups, the computer has 64 or fewer active logical processors, and the computer already has multiple NUMA nodes. This option can also be used to alter the default group configuration of a computer that has more than 64 logical processors.
 
-[Processor groups](http://go.microsoft.com/fwlink/p/?linkid=155063) provide support for computers with greater than 64 logical processors. This option is available on 64-bit versions of Windows 7 and Windows Server 2008 R2 and later versions. This boot option has no effect on the 32-bit versions of Windows 7.
+[Processor groups](https://docs.microsoft.com/windows/desktop/ProcThread/processor-groups) provide support for computers with greater than 64 logical processors. This option is available on 64-bit versions of Windows 7 and Windows Server 2008 R2 and later versions. This boot option has no effect on the 32-bit versions of Windows 7.
 
-For more information about using this option, see [Boot Parameters to Test Drivers for Multiple Processor Group Support](https://msdn.microsoft.com/library/windows/hardware/ff542298).
+For more information about using this option, see [Boot Parameters to Test Drivers for Multiple Processor Group Support](boot-parameters-to-test-drivers-for-multiple-processor-group-support.md).
 
-**nointegritychecks** \[ **on** | **off** \]   
+**nointegritychecks** \[ **on** | **off** \]
 Disables integrity checks. Cannot be set when secure boot is enabled. This value is ignored by Windows 7 and Windows 8.
 
-**nolowmem** \[ **on** | **off** \]   
+**nolowmem** \[ **on** | **off** \]
 Controls the use of low memory. When **nolowmem on** is specified, this option loads the operating system, device drivers, and all applications into addresses above the 4 GB boundary, and directs Windows to allocate all memory pools at addresses above the 4 GB boundary. Note that the **nolowmem** option is ignored in Windows 8, Windows Server 2012, and later versions of Windows.
 
-**novesa** \[ **on** | **off** \]   
+**novesa** \[ **on** | **off** \]
 Indicates whether the VGA driver should avoid VESA BIOS calls. The option is ignored in Windows 8 and Windows Server 2012.
 
-**novga** \[ **on** | **off** \]   
+**novga** \[ **on** | **off** \]
 Disables the use of VGA modes in the OS. The option is available starting in Windows 8 and Windows Server 2012.
 
 **nx** \[**Optin |OptOut | AlwaysOn |AlwaysOff**\]  
-Enables, disables, and configures Data Execution Prevention (DEP), a set of hardware and software technologies designed to prevent harmful code from running in protected memory locations. For information about how to use the Control Panel to change the DEP settings, see the [Change Data Execution Prevention settings](http://go.microsoft.com/fwlink/p/?linkid=101144) page on the Windows Help and How-to website.
+Enables, disables, and configures Data Execution Prevention (DEP), a set of hardware and software technologies designed to prevent harmful code from running in protected memory locations. For information about DEP settings, see [Data Execution Prevention](https://docs.microsoft.com/windows/desktop/Memory/data-execution-prevention).
 
 **Optin**  
 Enables DEP only for operating system components, including the Windows kernel and drivers. Administrators can enable DEP on selected executable files by using the Application Compatibility Toolkit (ACT).
@@ -246,8 +253,8 @@ Forces only the boot CPU to be used in a computer that has more than one logical
 
 For example, the following command configures the current operating system loader to use one processor.
 
-``` syntax
-bcdedit /set onecpu on 
+```syntax
+bcdedit /set onecpu on
 ```
 
 **onetimeadvancedoptions** \[ **on** | **off** \]  
@@ -256,8 +263,8 @@ Controls whether the system boots to the legacy menu (F8 menu) on the next boot.
 > [!NOTE]
 > The option is available starting in Windows 8 and Windows Server 2012.
 
-``` syntax
-bcdedit /set {current} onetimeadvancedoptions on 
+```syntax
+bcdedit /set {current} onetimeadvancedoptions on
 ```
 
 **pae** \[ **Default** | **ForceEnable** | **ForceDisable** \]  
@@ -278,13 +285,13 @@ Controls the display of a high-resolution bitmap in place of the Windows boot sc
 > [!NOTE]
 > Do not use the **quietboot** option in Windows 8 as it will prevent the display of bug check data in addition to all boot graphics.
 
-**removememory** *Megabytes*   
+**removememory** *Megabytes*
 Removes memory from the total available memory that the operating system can use.
 
 For example, the following command removes 256 MB of memory from the total available to the operating system associated with the specified boot entry.
 
 ``` syntax
-bcdedit /set {49916baf-0e08-11db-9af4-000bdbd316a0} removememory 256 
+bcdedit /set {49916baf-0e08-11db-9af4-000bdbd316a0} removememory 256
 ```
 
 **sos** \[ **on** | **off** \]  
@@ -299,13 +306,13 @@ Controls whether Windows 10, Windows 8.1, Windows 8, Windows 7, Windows Serve
 **tpmbootentropy** \[ **default** | **ForceEnable** | **ForceDisable**\]  
 Determines whether entropy is gathered from the trusted platform module (TPM) to help seed the random number generator in the operating system.
 
-**truncatememory** *address*   
+**truncatememory** *address*
 Limits the amount of physical memory available to Windows. When you use this option, Windows ignores all memory at or above the specified physical address. Specify the *address* in bytes.
 
 For example, the following command sets the physical address limit at 1 GB. You can specify the address in decimal (1073741824) or hexadecimal (0x40000000).
 
 ``` syntax
-bcdedit /set {49916baf-0e08-11db-9af4-000bdbd316a0} truncatememory 0x40000000 
+bcdedit /set {49916baf-0e08-11db-9af4-000bdbd316a0} truncatememory 0x40000000
 ```
 
 **tscsyncpolicy** \[ **Default** | **Legacy** | **Enhanced** \]  
@@ -349,7 +356,7 @@ To view the current boot entries and their settings, use the **bcdedit /enum** c
 
 To delete a boot option value that you have set, use the **/deletevalue** option. The syntax for the command is as follows:
 
-**bcdedit** /**deletevalue** \[**{***ID***}**\] *datatatype*
+**bcdedit** /**deletevalue** \[**{ID}**\] *datatatype*
 
 For example, if you change the processor group option, **groupsize**, to a new value for testing purposes, you can revert to the default value of 64 by typing the following command and then restarting the computer.
 
@@ -359,27 +366,14 @@ bcdedit /deletevalue groupsize
 
 Any change to a boot option requires a restart to take effect. For information about commonly used BCDEdit commands, see [Boot Configuration Data Editor Frequently Asked Questions](http://go.microsoft.com/fwlink/p/?linkid=155086).
 
-Requirements
-------------
+## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Minimum supported client</p></td>
-<td align="left"><p>Windows Vista</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Minimum supported server</p></td>
-<td align="left"><p>Windows Server 2008</p></td>
-</tr>
-</tbody>
-</table>
+|||
+|----|----|
+|Minimum supported client|Windows Vista|
+|Minimum supported server|Windows Server 2008|
+|||
 
-See also
---------
+## See also
 
-* [BCDEdit /deletevalue](bcdedit--deletevalue.md)
+- [BCDEdit /deletevalue](bcdedit--deletevalue.md)

@@ -2,7 +2,6 @@
 title: Time Travel Debugging Extension !positions Command 
 description: The !positions extension displays all the active threads, including their current positions.
 keywords: ["positions Windows Debugging"]
-ms.author: domars
 ms.date: 09/21/2017
 ms.localizationpriority: medium
 ---
@@ -52,9 +51,9 @@ This extension only works with time travel traces. For more information about ti
 [Time Travel Debugging - Extension Commands](time-travel-debugging-extension-commands.md)
 
 
- 
+ 
 
- 
+ 
 
 
 

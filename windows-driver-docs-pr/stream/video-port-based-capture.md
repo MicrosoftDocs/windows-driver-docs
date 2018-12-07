@@ -1,6 +1,5 @@
 ---
 title: Video Port-Based Capture
-author: windows-driver-content
 description: Video Port-Based Capture
 ms.assetid: 84cc1ee3-142c-4dae-9f5c-0dde66cc3df9
 keywords:
@@ -62,9 +61,9 @@ Video port child devices, such as TV tuner and display combination adapters, can
 
 A WHQL waiver is available for devices that meet this criteria, so vendors can still obtain a logo.
 
- 
+ 
 
- 
+ 
 
 
 

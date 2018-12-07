@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_CURRENT_CHANNEL_PARAMETERS
-author: windows-driver-content
 description: WDI_TLV_CURRENT_CHANNEL_PARAMETERS is an unused TLV.
 ms.assetid: C2447497-0C71-4EF8-B8AE-A7C34DF42405
 ms.date: 07/18/2017
@@ -38,9 +37,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

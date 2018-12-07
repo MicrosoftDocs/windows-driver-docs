@@ -42,7 +42,7 @@ The CODECAPI\_CURRENTCHANGELIST property is used to indicate which parameters ch
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is an array of GUIDs.
 
@@ -64,9 +64,9 @@ The current list of changed GUIDs is reset.
 
 [**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier), [CODECAPI\_ALLSETTINGS](codecapi-allsettings.md), [CODECAPI\_SETALLDEFAULTS](codecapi-setalldefaults.md)
 
- 
+ 
 
- 
+ 
 
 
 

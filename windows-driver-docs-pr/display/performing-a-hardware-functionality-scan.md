@@ -12,21 +12,12 @@ ms.localizationpriority: medium
 # Performing a Hardware Functionality Scan
 
 
-A display miniport driver's Hardware Functionality Scan (HFS) ensures that the miniport driver communicates with the required hardware. For more information about HFS, download the Output Content Protection document at the [Output Content Protection and Windows Vista](http://download.microsoft.com/download/5/D/6/5D6EAF2B-7DDF-476B-93DC-7CF0072878E6/output_protect.doc) website.
+A display miniport driver's Hardware Functionality Scan (HFS) ensures that the miniport driver communicates with the required hardware. For more information about HFS, download the Output Content Protection document at the [Output Content Protection and Windows Vista](https://download.microsoft.com/download/5/D/6/5D6EAF2B-7DDF-476B-93DC-7CF0072878E6/output_protect.doc) website.
 
 A display miniport driver must start performing an HFS whenever the Microsoft DirectX graphics kernel subsystem (*Dxgkrnl.sys*) calls the following driver functions:
 
--   [**DxgkDdiStartDevice**](https://msdn.microsoft.com/library/windows/hardware/ff560775)
+-   [**DxgkDdiStartDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dispmprt/nc-dispmprt-dxgkddi_start_device)
 
--   [**DxgkDdiSetPowerState**](https://msdn.microsoft.com/library/windows/hardware/ff560764) with the graphics adapter's power state set to D0.
+-   [**DxgkDdiSetPowerState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dispmprt/nc-dispmprt-dxgkddi_set_power_state) with the graphics adapter's power state set to D0.
 
-The HFS can be asynchronous and is not required to complete before [**DxgkDdiStartDevice**](https://msdn.microsoft.com/library/windows/hardware/ff560775) or [**DxgkDdiSetPowerState**](https://msdn.microsoft.com/library/windows/hardware/ff560764) returns. However, no [OPM DDI](https://msdn.microsoft.com/library/windows/hardware/ff568627) function can return until the HFS completes.
-
- 
-
- 
-
-
-
-
-
+The HFS can be asynchronous and is not required to complete before [**DxgkDdiStartDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dispmprt/nc-dispmprt-dxgkddi_start_device) or [**DxgkDdiSetPowerState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dispmprt/nc-dispmprt-dxgkddi_set_power_state) returns. However, no [OPM DDI](supporting-output-protection-manager.md) function can return until the HFS completes.

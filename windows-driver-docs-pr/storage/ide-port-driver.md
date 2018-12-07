@@ -1,6 +1,5 @@
 ---
 title: IDE Port Driver
-author: windows-driver-content
 description: IDE Port Driver
 ms.assetid: 8e292680-6fa7-4f6b-b4ec-6f0f0d795d03
 ms.date: 04/20/2017
@@ -34,8 +33,8 @@ To see a diagram of the device object stack corresponding to the driver stack in
 
 In Windows Vista and later versions of the operating system, the IDE stack is managed by the [ATA Port Driver](ata-port-driver.md).
 
- 
+ 
 
- 
+ 
 
 

@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 **Note**  Features described in this section are not supported in universal or mobile driver packages. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
- 
+ 
 
 *Finish-install actions* allow the installer to complete installation operations.
 
@@ -39,7 +39,7 @@ Finish-install actions are useful in the following situations:
 
     **Note**  Starting with Windows Vista, such an installation program cannot be run in the same way as on earlier versions of Windows. This is because Windows Vista and later versions of Windows do not support the installation of devices within a client-side installation. However, such an installation program can be run as a finish-install action if the driver package includes a class installer, class co-installer, or device co-installer that starts the installation program.
 
-     
+     
 
 This section discusses finish-install actions in more detail and includes the following topics:
 
@@ -49,9 +49,9 @@ This section discusses finish-install actions in more detail and includes the fo
 
 [How Finish-Install Actions are Processed](how-finish-install-actions-are-processed.md)
 
- 
+ 
 
- 
+ 
 
 
 

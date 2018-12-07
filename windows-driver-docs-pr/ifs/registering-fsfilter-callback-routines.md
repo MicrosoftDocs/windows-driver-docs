@@ -1,6 +1,5 @@
 ---
 title: Registering FsFilter Callback Routines
-author: windows-driver-content
 description: Registering FsFilter Callback Routines
 ms.assetid: d040e61c-514e-446b-9e72-934fd4322d3b
 keywords:
@@ -41,9 +40,9 @@ fsFilterCallbacks.PostReleaseForModifiedPageWriter = MyLegacyFilterPostFsFilterO
 status = FsRtlRegisterFileSystemFilterCallbacks(DriverObject, &fsFilterCallbacks);
 ```
 
- 
+ 
 
- 
+ 
 
 
 

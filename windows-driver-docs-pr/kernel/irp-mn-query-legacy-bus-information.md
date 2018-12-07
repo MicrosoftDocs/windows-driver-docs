@@ -1,6 +1,5 @@
 ---
 title: IRP_MN_QUERY_LEGACY_BUS_INFORMATION
-author: windows-driver-content
 description: This IRP is reserved for system use.
 ms.date: 08/12/2017
 ms.assetid: 223a5c7a-9bba-457e-9004-94446c7ebb63
@@ -34,9 +33,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

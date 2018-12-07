@@ -3,7 +3,6 @@ title: Enable heap tagging by DLL
 description: Enable heap tagging by DLL
 ms.assetid: d8f8f6f6-7365-4208-834f-3f5ccacdb7b6
 keywords: ["Enable heap tagging by DLL (global flag)"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -41,7 +40,7 @@ The **Enable heap tagging by DLL** flag assigns a unique tag to heap allocations
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
@@ -51,9 +50,9 @@ You can display the tag by using the [**!heap**](-heap.md) debugger extension wi
 
 [Enable heap tagging](enable-heap-tagging.md)
 
- 
+ 
 
- 
+ 
 
 
 

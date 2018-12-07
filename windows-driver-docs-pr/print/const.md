@@ -1,6 +1,5 @@
 ---
 title: Const (TCP/IP)
-author: windows-driver-content
 description: The TCP/IP Const construct defines the data type and value that must be returned.
 ms.assetid: a0ede11d-ada4-4dc4-87a4-68c96635c0fd
 keywords:
@@ -32,7 +31,7 @@ The TCP/IP Const construct defines the data type and value that must be returned
 </tr>
 <tr class="even">
 <td><p><strong>type</strong></p></td>
-<td><p>The type of data in the <strong>value</strong> attribute, a value in the [<strong>BIDI_TYPE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff545211) enumeration.</p></td>
+<td><p>The type of data in the <strong>value</strong> attribute, a value in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545211" data-raw-source="[&lt;strong&gt;BIDI_TYPE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff545211)"><strong>BIDI_TYPE</strong></a> enumeration.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>value</strong></p></td>
@@ -41,7 +40,7 @@ The TCP/IP Const construct defines the data type and value that must be returned
 </tbody>
 </table>
 
- 
+ 
 
 ### Code Example
 
@@ -67,9 +66,9 @@ The preceding example results in the following queries:
 \Printer.Extension.Version:Minor
 ```
 
- 
+ 
 
- 
+ 
 
 
 

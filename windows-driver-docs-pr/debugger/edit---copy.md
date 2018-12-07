@@ -3,7 +3,6 @@ title: Edit Copy
 description: Edit Copy
 ms.assetid: 62e4ea69-8d8b-4a99-b0c9-314cda7e20bc
 keywords: ["Edit Copy", "text, Edit Copy"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -24,9 +23,9 @@ You can use the **Copy** command only with docked or tabbed windows. You can use
 
 For more information about how to select, copy, cut, and paste text and about how these operations vary from window to window, see [Cutting and Pasting Text](cutting-and-pasting-text.md).
 
- 
+ 
 
- 
+ 
 
 
 

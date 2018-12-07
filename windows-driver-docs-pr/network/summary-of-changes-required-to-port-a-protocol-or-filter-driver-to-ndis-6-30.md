@@ -43,9 +43,9 @@ A filter driver should always complete **NetEventSetPower** without waiting for 
 
 For more information about NDIS 6.30 features, see [Introduction to NDIS 6.30](introduction-to-ndis-6-30.md).
 
- 
+ 
 
- 
+ 
 
 
 

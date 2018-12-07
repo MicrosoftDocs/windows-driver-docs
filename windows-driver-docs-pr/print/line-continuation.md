@@ -1,6 +1,5 @@
 ---
 title: Line Continuation
-author: windows-driver-content
 description: Line Continuation
 ms.assetid: ee4dbb3d-ba9d-45bb-82dd-ecee4682ae63
 keywords:
@@ -41,9 +40,9 @@ You do not need to use a line continuation character at the beginning of the fol
 
 -   Lines that start with a left brace.
 
- 
+ 
 
- 
+ 
 
 
 

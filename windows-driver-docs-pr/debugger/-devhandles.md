@@ -3,7 +3,6 @@ title: devhandles
 description: The devhandles extension displays the open handles for the specified device.
 ms.assetid: a473dd58-1571-4969-b8b7-f7a71128d824
 keywords: ["devhandles Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -48,7 +47,7 @@ Specifies the address of the device for which to display the open handles.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -77,9 +76,9 @@ Checking handle table for process 0x87e6f4f0
 00000000: Unable to read handle table
 ```
 
- 
+ 
 
- 
+ 
 
 
 

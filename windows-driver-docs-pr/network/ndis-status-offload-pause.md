@@ -1,6 +1,5 @@
 ---
 title: NDIS_STATUS_OFFLOAD_PAUSE
-author: windows-driver-content
 description: This topic describes the NDIS_STATUS_OFFLOAD_PAUSE status indication.
 ms.assetid: 1ccb6b72-97fb-4b1c-ac61-5d5dad903a30
 keywords:

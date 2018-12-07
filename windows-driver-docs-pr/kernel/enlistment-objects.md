@@ -1,6 +1,5 @@
 ---
 title: Enlistment Objects
-author: windows-driver-content
 description: Enlistment Objects
 ms.assetid: 80e61475-4bb7-4eaa-b9f1-ff95eac9bc77
 keywords: ["enlistments WDK KTM", "enlistments WDK KTM , objects", "resource managers WDK KTM , creating enlistments", "Kernel Transaction Manager WDK , enlistments", "KTM WDK , enlistments", "enlistment objects WDK KTM"]
@@ -23,9 +22,9 @@ Resource managers close their handles to enlistment objects by calling [**ZwClos
 
 The operating system deletes the object after the last handle is closed and KTM has released all its references to the object.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: logexts.logo
 description: The logexts.logo extension sets or displays the Logger output options.
 ms.assetid: b094cf4b-1d01-4b84-9032-aa865d680df4
 keywords: ["logexts.logo Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -52,7 +51,7 @@ Specifies the output type. Three types of Logger output are possible: messages s
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -88,9 +87,9 @@ To disable verbose logging, you would use the following command:
 
 Text file and .lgv files will be placed in the current output directory. To read an .lgv file, use LogViewer.
 
- 
+ 
 
- 
+ 
 
 
 

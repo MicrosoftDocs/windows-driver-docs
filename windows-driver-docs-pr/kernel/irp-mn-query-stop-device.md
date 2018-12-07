@@ -1,6 +1,5 @@
 ---
 title: IRP_MN_QUERY_STOP_DEVICE
-author: windows-driver-content
 description: All PnP drivers must handle this IRP.
 ms.date: 08/12/2017
 ms.assetid: 22f58964-23a0-4307-a748-9c1620e30871
@@ -86,9 +85,9 @@ Requirements
 
 [**IRP\_MN\_STOP\_DEVICE**](irp-mn-stop-device.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Checking the Oplock State of an IRP_MJ_LOCK_CONTROL operation
-author: windows-driver-content
 description: Checking the Oplock State of an IRP_MJ_LOCK_CONTROL operation
 ms.assetid: 6e0a5287-9a22-465f-b345-c9af556e6cdb
 ms.date: 04/20/2017
@@ -104,9 +103,9 @@ The following applies on every byte range lock operation on the given stream.
 </tr>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

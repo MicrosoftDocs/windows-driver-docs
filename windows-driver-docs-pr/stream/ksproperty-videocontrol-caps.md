@@ -47,13 +47,13 @@ The KSPROPERTY\_VIDEOCONTROL\_CAPS property identifies the video control capabil
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Filter</p></td>
-<td><p>[<strong>KSPROPERTY_VIDEOCONTROL_CAPS_S</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566036)</p></td>
-<td><p>[<strong>KSPROPERTY_VIDEOCONTROL_CAPS_S</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566036)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566036" data-raw-source="[&lt;strong&gt;KSPROPERTY_VIDEOCONTROL_CAPS_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566036)"><strong>KSPROPERTY_VIDEOCONTROL_CAPS_S</strong></a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566036" data-raw-source="[&lt;strong&gt;KSPROPERTY_VIDEOCONTROL_CAPS_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566036)"><strong>KSPROPERTY_VIDEOCONTROL_CAPS_S</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The property value (operation data) is a KSPROPERTY\_VIDEOCONTROL\_CAPS\_S structure that specifies the video-control capabilities of a minidriver, such as image flipping or event triggering abilities.
 
@@ -85,9 +85,9 @@ Requirements
 
 [**KSPROPERTY\_VIDEOCONTROL\_CAPS\_S**](https://msdn.microsoft.com/library/windows/hardware/ff566036)
 
- 
+ 
 
- 
+ 
 
 
 

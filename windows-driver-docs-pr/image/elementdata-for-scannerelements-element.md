@@ -79,16 +79,16 @@ Attributes
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>DefaultScanTicket</strong>](defaultscanticket.md)</p></td>
+<td><p><a href="defaultscanticket.md" data-raw-source="[&lt;strong&gt;DefaultScanTicket&lt;/strong&gt;](defaultscanticket.md)"><strong>DefaultScanTicket</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>ScannerConfiguration</strong>](scannerconfiguration.md)</p></td>
+<td><p><a href="scannerconfiguration.md" data-raw-source="[&lt;strong&gt;ScannerConfiguration&lt;/strong&gt;](scannerconfiguration.md)"><strong>ScannerConfiguration</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>ScannerDescription</strong>](scannerdescription.md)</p></td>
+<td><p><a href="scannerdescription.md" data-raw-source="[&lt;strong&gt;ScannerDescription&lt;/strong&gt;](scannerdescription.md)"><strong>ScannerDescription</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>ScannerStatus</strong>](scannerstatus.md)</p></td>
+<td><p><a href="scannerstatus.md" data-raw-source="[&lt;strong&gt;ScannerStatus&lt;/strong&gt;](scannerstatus.md)"><strong>ScannerStatus</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -107,7 +107,7 @@ Attributes
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ScannerElements</strong>](scannerelements.md)</p></td>
+<td><p><a href="scannerelements.md" data-raw-source="[&lt;strong&gt;ScannerElements&lt;/strong&gt;](scannerelements.md)"><strong>ScannerElements</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -138,9 +138,9 @@ The **Valid** attribute indicates whether the schema keyword provided by the cli
 
 [**ScannerStatus**](scannerstatus.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -71,11 +71,11 @@ Consider a more sophisticated deinterlacing device that requires a single backwa
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

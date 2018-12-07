@@ -1,6 +1,5 @@
 ---
 title: Still Image Device Installers
-author: windows-driver-content
 description: Still Image Device Installers
 ms.assetid: e0ea31de-063a-49a4-922f-62edb774ac76
 ms.date: 04/20/2017
@@ -25,9 +24,9 @@ Microsoft provides a class installer for still image devices, with the following
 
 If necessary, vendors can provide customized installation programs that can be used instead of the Microsoft-supplied class installer.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Registering for Device Interface Change Notification
-author: windows-driver-content
 description: Registering for Device Interface Change Notification
 ms.assetid: 680e4c5c-dac6-41b1-b754-aee782145ed0
 keywords: ["notifications WDK PnP , device interface changes", "EventCategoryDeviceInterfaceChange notification", "device interface change notifications WDK PnP", "registering device interface change notifications", "IoRegisterPlugPlayNotification"]
@@ -36,9 +35,9 @@ A driver that opens a handle to a device in response to a device interface arriv
 
 A driver cancels notification registration by calling [**IoUnregisterPlugPlayNotification**](https://msdn.microsoft.com/library/windows/hardware/ff550398) with the *NotificationEntry* returned by **IoRegisterPlugPlayNotification**.
 
- 
+ 
 
- 
+ 
 
 
 

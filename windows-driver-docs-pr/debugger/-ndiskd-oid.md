@@ -3,7 +3,6 @@ title: ndiskd.oid
 description: The ndiskd.oid extension displays information about an NDIS OID request.
 ms.assetid: FCDE2F78-98C0-4437-999A-4566FEB5D7BB
 keywords: ["ndiskd.oid Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -143,9 +142,9 @@ In this example, the OID pending is [OID\_GEN\_STATISTICS](https://msdn.microsof
 
 [NDIS OID Request Interface](https://msdn.microsoft.com/library/windows/hardware/ff566713)
 
- 
+ 
 
- 
+ 
 
 
 

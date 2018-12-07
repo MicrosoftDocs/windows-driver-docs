@@ -3,7 +3,6 @@ title: deadlock
 description: The deadlock extension displays information about deadlocks collected by the Deadlock Detection option of Driver Verifier.
 ms.assetid: c0e6074f-8afe-4526-a30f-427aac67ab99
 keywords: ["Deadlock Detection (Driver Verifier)", "deadlock Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -46,7 +45,7 @@ The **!deadlock** extension displays information about deadlocks collected by th
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -163,9 +162,9 @@ Now you know the name of the source file and the line number where the acquisiti
 
 At this point, the deadlock becomes entirely clear.
 
- 
+ 
 
- 
+ 
 
 
 

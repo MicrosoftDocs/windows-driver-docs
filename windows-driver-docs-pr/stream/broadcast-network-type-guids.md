@@ -25,9 +25,9 @@ A network type that broadcasts analog television signals.
 <span id="DIGITAL_CABLE_NETWORK_TYPE"></span><span id="digital_cable_network_type"></span>DIGITAL\_CABLE\_NETWORK\_TYPE  
 A network type that broadcasts digital signals over cable.
 
- 
+ 
 
- 
+ 
 
 
 

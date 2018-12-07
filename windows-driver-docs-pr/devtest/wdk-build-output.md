@@ -15,9 +15,9 @@ The WDK defines the intermediate directory as **$(Platform)\\$(ConfigurationName
 
 In this way, you can build different configurations side-by-side without losing the previous build for the other Windows target of the same binary. This approach is different than the intermediate directory that might be used if you were building a Windows Desktop application, which usually only includes the platform (x64, Win32) and the configuration type (Release, Debug) in the name.
 
- 
+ 
 
- 
+ 
 
 
 

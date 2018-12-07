@@ -3,7 +3,6 @@ title: Analyzing a Video Stream Stall
 description: Analyzing a Video Stream Stall
 ms.assetid: b53b7f4b-c82f-4dba-933c-ec72177e6990
 keywords: ["kernel streaming debugging, video stream stall"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -21,9 +20,9 @@ This section shows how to analyze a video stream stall. All sample output is gen
 
 [Interpreting Bug Check 0xCB](interpreting-bug-check-0xcb.md)
 
- 
+ 
 
- 
+ 
 
 
 

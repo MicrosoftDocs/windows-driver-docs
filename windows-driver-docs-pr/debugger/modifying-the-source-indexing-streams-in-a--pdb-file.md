@@ -2,7 +2,6 @@
 title: Modifying the Source Indexing Streams in a .pdb File
 description: Modifying the Source Indexing Streams in a .pdb File
 ms.assetid: 9c319667-fc71-4baf-ad12-a20e18b67d40
-ms.author: domars
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -32,9 +31,9 @@ The preceding command calls Cv2http.cmd on every .pdb file in a tree, using Http
 
 After this command is executed on a tree of .pdb files, they are ready for installation into the Web site or whatever location in which you want to put them. Remember that you can use SrcTool and PDBStr to examine the changes to the .pdb files.
 
- 
+ 
 
- 
+ 
 
 
 

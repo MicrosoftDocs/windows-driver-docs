@@ -1,6 +1,5 @@
 ---
 title: When Are WDM Device Objects Created
-author: windows-driver-content
 description: When Are WDM Device Objects Created
 ms.assetid: aeb8039d-2e5d-4700-a9e5-e5ee97c6b0b1
 keywords: ["device objects WDK kernel , when created", "layered device objects WDK kernel", "functional device objects WDK kernel", "FDO WDK kernel", "physical device objects WDK kernel", "PDOs WDK kernel", "filter DOs WDK kernel", "device stacks WDK kernel , device object layers possible", "attaching device objects"]
@@ -56,9 +55,9 @@ See [Creating a Device Object](creating-a-device-object.md) for information abou
 
 The device stack plus some additional information constitutes the *devnode* for a device. The PnP manager maintains information in a device's devnode such as whether the device has been started and which drivers, if any, have registered for notification of changes on the device. The kernel debugger command **!devnode** displays information about a devnode.
 
- 
+ 
 
- 
+ 
 
 
 

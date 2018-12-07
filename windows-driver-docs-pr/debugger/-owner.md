@@ -3,7 +3,6 @@ title: owner
 description: The owner extension displays the owner of a module or function.
 ms.assetid: f881bd86-89cf-49fd-9bca-3ecc96123be8
 keywords: ["owner Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -51,7 +50,7 @@ Specifies the symbol within *Module* whose owner is desired. An asterisk (\*) at
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -64,9 +63,9 @@ For this extension to display useful information, you must first create a triage
 
 For details on the triage.ini file and an example of the **!owner** extension, see [Specifying Module and Function Owners](specifying-module-and-function-owners.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,7 +1,6 @@
 ---
 Description: This topic describes how UMDF function drivers support USB selective suspend.
 title: Selective suspend in USB UMDF drivers
-author: windows-driver-content
 ms.date: 05/09/2018
 ms.localizationpriority: medium
 ---
@@ -83,7 +82,6 @@ hr = __super::Initialize(WdfIoQueueDispatchParallel,
                          true,
                          powerManaged,
                          );
-
 ```
 
 **CMyQueue::Initialize** then calls [**IWDFDevice::CreateIoQueue**](https://msdn.microsoft.com/library/windows/hardware/ff557020) to create the queue as follows:

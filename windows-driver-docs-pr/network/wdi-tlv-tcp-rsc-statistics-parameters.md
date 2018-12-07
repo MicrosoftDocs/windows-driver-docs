@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_TCP_RSC_STATISTICS_PARAMETERS
-author: windows-driver-content
 description: WDI_TLV_TCP_RSC_STATISTICS_PARAMETERS is a TLV that contains TCP RSC statistics for OID_WDI_TCP_RSC_STATISTICS.
 ms.assetid: C1459DF6-6492-4C1F-A22D-2BDC6492B29C
 ms.date: 07/18/2017
@@ -34,7 +33,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | UINT64 | The total number of coalescing events, which is the total number of packets that were formed from coalescing packets.                                                                                                                     |
 | UINT64 | The total number of RSC abort events, which is the number of exceptions other than the IP datagram length being exceeded. This count should include the cases where a packet is not coalesced because of insufficient hardware resources. |
 
- 
+ 
 
 Requirements
 ------------
@@ -60,9 +59,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

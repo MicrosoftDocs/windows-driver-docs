@@ -23,9 +23,9 @@ In the *IoMmu* model, the driver continues to allocate video memory for the GPU 
 
 The first level of translation (*tile resource address* to *shared CPU/GPU address*) is entirely managed in user mode by the user mode driver.
 
- 
+ 
 
- 
+ 
 
 
 

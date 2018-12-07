@@ -2,7 +2,6 @@
 title: Viewing and Editing Registers in KD
 description: In KD, you can view and edit registers by entering the r (Registers) command. You can customize the display by using several options or by using the rm (Register Mask) command.
 ms.assetid: 42306338-6E11-4724-B62F-D1E0BDBA7F8D
-ms.author: domars
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -18,9 +17,9 @@ Registers are also automatically displayed every time that the target stops. If 
 
 On an x86-based processor, the **r** option also controls several one-bit registers known as flags. To change these flags, you use a slightly different syntax than when changing regular registers. For more information about these flags and an explanation of this syntax, see [x86 Flags](x86-architecture.md#x86-flags).
 
- 
+ 
 
- 
+ 
 
 
 

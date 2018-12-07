@@ -2,14 +2,13 @@
 title: Viewing the Call Stack in Visual Studio
 description: The procedure describes how to view the Call Stack in Visual Studio
 ms.assetid: 060A2441-C1A7-4485-82E5-2C024E6A3FBE
-ms.author: domars
 ms.date: 05/11/2018
 ms.localizationpriority: medium
 ---
 
 # Viewing the Call Stack in Visual Studio
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > This feature is not available in Windows 10, version 1507 and later versions of the WDK.
 >
 
@@ -25,9 +24,9 @@ To open the **Call Stack** window in Visual Studio, from the **Debug** menu, cho
 
 In the Debugger Immediate Window, you can view the call stack by entering one of the [**k (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) commands. If the Debugger Immediate window is not already open, from the **Debug** menu, choose **Windows&gt;Immediate**.
 
- 
+ 
 
- 
+ 
 
 
 

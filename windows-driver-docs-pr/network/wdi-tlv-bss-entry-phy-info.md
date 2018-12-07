@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_BSS_ENTRY_PHY_INFO
-author: windows-driver-content
 description: WDI_TLV_BSS_ENTRY_PHY_INFO is an unused TLV.
 ms.assetid: BF96172C-BAD1-4A48-A680-4956430DB5D1
 ms.date: 07/18/2017
@@ -38,9 +37,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

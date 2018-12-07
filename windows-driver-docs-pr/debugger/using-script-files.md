@@ -3,7 +3,6 @@ title: Using Script Files
 description: Using Script Files
 ms.assetid: b78a651e-57c8-4863-a8cf-dedd8e308e66
 keywords: ["script file", "script file, overview"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -30,9 +29,9 @@ You cannot use commands that are available only in WinDbg (such as [**.lsrcfix (
 
 WinDbg supports the same scripts as KD and CDB, with one minor exception. You can use the [**.remote\_exit (Exit Debugging Client)**](-remote-exit--exit-debugging-client-.md) command only in a script file that KD or CDB uses. You cannot exit from a debugging client though a script that is executed in WinDbg.
 
- 
+ 
 
- 
+ 
 
 
 

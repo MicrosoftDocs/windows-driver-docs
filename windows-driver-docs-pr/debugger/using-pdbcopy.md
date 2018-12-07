@@ -3,7 +3,6 @@ title: Using PDBCopy
 description: Using PDBCopy
 ms.assetid: f8207b09-5a1b-4ff3-b99d-20daa88cfe10
 keywords: ["PDBCopy, using"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -33,7 +32,7 @@ After issuing this command, you should move the new file to a new location and r
 
 **Note**  The destination file should not exist before PDBCopy is run. If a file with this name exists, various errors may occur.
 
- 
+ 
 
 ### <span id="removing_private_symbols_and_selected_public_symbols"></span><span id="REMOVING_PRIVATE_SYMBOLS_AND_SELECTED_PUBLIC_SYMBOLS"></span>Removing Private Symbols and Selected Public Symbols
 
@@ -102,9 +101,9 @@ If you wish the new file to have a distinct signature and SymSrv index, use the 
 
 For the complete command line syntax, see [**PDBCopy Command-Line Options**](pdbcopy-command-line-options.md).
 
- 
+ 
 
- 
+ 
 
 
 

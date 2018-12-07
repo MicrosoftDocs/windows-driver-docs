@@ -1,6 +1,5 @@
 ---
 title: Accessing PCI Device Configuration Space
-author: windows-driver-content
 description: Accessing PCI Device Configuration Space
 ms.assetid: 05e0ada9-d465-4787-abc5-469a75352ee0
 keywords:
@@ -150,9 +149,9 @@ BusInterface.GetBusData(Context,
 );
 ```
 
- 
+ 
 
- 
+ 
 
 
 

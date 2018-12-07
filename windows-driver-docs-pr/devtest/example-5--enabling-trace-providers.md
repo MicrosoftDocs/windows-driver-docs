@@ -46,9 +46,9 @@ tracelog -enable MyTrace -guid MyProvider.guid -flag 2 -level 2
 
 You can also use the **tracelog -enable** command to add more providers to the trace session and to re-enable providers that you have disabled by using a **tracelog -disable** command.
 
- 
+ 
 
- 
+ 
 
 
 

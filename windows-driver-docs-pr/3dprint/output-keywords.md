@@ -1,6 +1,5 @@
 ---
 title: Output keywords
-author: windows-driver-content
 description: These keywords are used to describe the actual output processes for a given 3D manufacturing job.
 ms.assetid: FBCE5E9C-8411-46C1-899E-A6C8FE27D947
 ms.date: 04/20/2017
@@ -57,7 +56,7 @@ These keywords are used to describe the actual output processes for a given 3D m
 </tbody>
 </table>
 
- 
+ 
 
 Job3DQuality keyword usage
 
@@ -121,7 +120,7 @@ Job3DQuality keyword usage
 </tbody>
 </table>
 
- 
+ 
 
 Job3DDensity keyword usage
 
@@ -183,7 +182,7 @@ Job3DSliceHeight keyword profile
 </tbody>
 </table>
 
- 
+ 
 
 Job3DSliceHeight initialization profile
 
@@ -222,7 +221,7 @@ Job3DSliceHeight initialization profile
 </tbody>
 </table>
 
- 
+ 
 
 Job3DSliceHeight keyword usage
 
@@ -307,7 +306,7 @@ The psk3d:Job3DOutputColor keyword specifies whether the model is to be reproduc
 </tbody>
 </table>
 
- 
+ 
 
 Job3DOutputColor keyword usage
 
@@ -321,9 +320,9 @@ Job3DOutputColor keyword usage
 </psf:Feature>
 ```
 
- 
+ 
 
- 
+ 
 
 
 

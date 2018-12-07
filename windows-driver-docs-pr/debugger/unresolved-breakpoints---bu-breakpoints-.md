@@ -3,7 +3,6 @@ title: Unresolved Breakpoints (bu Breakpoints)
 description: Unresolved Breakpoints (bu Breakpoints)
 ms.assetid: 2c97314b-3098-47a0-8f15-3b7d61c95529
 keywords: ["breakpoints, deferred", "deferred breakpoints", "breakpoints, BP versus BU", "breakpoints, unresolved"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -29,9 +28,9 @@ Address breakpoints can be created with the [**bp (Set Breakpoint)**](bp--bu--bm
 
 The WinDbg **Breakpoints** dialog box displays all breakpoints, indicating unresolved breakpoints with the notation "u". This dialog box can be used to modify any breakpoint.The **Command** text box on this dialog box can be used to create any type of breakpoint; if the type is omitted, an unresolved breakpoint is created. For details, see [Edit | Breakpoints](edit---breakpoints.md). When you set a breakpoint by using the mouse in the WinDbg [Disassembly window](disassembly-window.md) or [Source window](source-window.md), the debugger creates an unresolved breakpoint.
 
- 
+ 
 
- 
+ 
 
 
 

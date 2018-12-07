@@ -19,7 +19,7 @@ A DirectX 9.0 version driver can use the [CPixel class methods](https://msdn.mic
 
 Driver writers are not required to use the CPixel class methods to calculate the locations of sublevels for lightweight MIP-map textures. However, the DirectX 9.0 runtime uses **CPixel** class methods to recover the memory layout of lightweight system memory MIP-map textures. Therefore, to ensure that the runtime and drivers recover the memory layout of lightweight system memory MIP-map textures in the same manner, driver writers must follow the same **CPixel** class rules to implement their own code.
 
-For information about how the **CPixel** class is implemented, see the *pixel.hpp*, *pixel.cpp*, and *pixlib.cpp* files in the [PixLib](http://go.microsoft.com/fwlink/p/?linkid=256156) code sample.
+For information about how the **CPixel** class is implemented, see the *pixel.hpp*, *pixel.cpp*, and *pixlib.cpp* files in the [PixLib](https://go.microsoft.com/fwlink/p/?linkid=256156) code sample.
 
 The CPixel class contains the following methods:
 
@@ -36,41 +36,41 @@ The CPixel class contains the following methods:
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[<strong>ComputeSurfaceSize</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540577)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff540577" data-raw-source="[&lt;strong&gt;ComputeSurfaceSize&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540577)"><strong>ComputeSurfaceSize</strong></a></p></td>
 <td align="left"><p>Determines the amount of memory required to allocate a surface.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>ComputeVolumeSize</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540583)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff540583" data-raw-source="[&lt;strong&gt;ComputeVolumeSize&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540583)"><strong>ComputeVolumeSize</strong></a></p></td>
 <td align="left"><p>Determines the amount of memory required to allocate a volume.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>ComputeMipMapSize</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540556)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff540556" data-raw-source="[&lt;strong&gt;ComputeMipMapSize&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540556)"><strong>ComputeMipMapSize</strong></a></p></td>
 <td align="left"><p>Determines the amount of memory required to allocate a MIP-map texture.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>ComputeMipVolumeSize</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540567)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff540567" data-raw-source="[&lt;strong&gt;ComputeMipVolumeSize&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540567)"><strong>ComputeMipVolumeSize</strong></a></p></td>
 <td align="left"><p>Determines the amount of memory required to allocate a MIP-map texture volume.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>ComputeMipMapOffset</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540553)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff540553" data-raw-source="[&lt;strong&gt;ComputeMipMapOffset&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540553)"><strong>ComputeMipMapOffset</strong></a></p></td>
 <td align="left"><p>Determines the sublevel offset of a MIP-map texture.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[<strong>ComputeMipVolumeOffset</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540563)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff540563" data-raw-source="[&lt;strong&gt;ComputeMipVolumeOffset&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540563)"><strong>ComputeMipVolumeOffset</strong></a></p></td>
 <td align="left"><p>Determines the subvolume offset of a MIP-map volume texture.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>ComputeSurfaceOffset</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540572)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff540572" data-raw-source="[&lt;strong&gt;ComputeSurfaceOffset&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540572)"><strong>ComputeSurfaceOffset</strong></a></p></td>
 <td align="left"><p>Determines the subrectangular offset of a surface.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

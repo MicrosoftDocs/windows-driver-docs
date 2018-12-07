@@ -1,6 +1,5 @@
 ---
 title: Implementation requirements for various form factors
-author: windows-driver-content
 description: This topic describes implementation requirements for various form factors.
 ms.assetid: F14E9811-B432-409B-B7AD-262C2DD76C25
 ms.localizationpriority: medium
@@ -56,11 +55,11 @@ This topic describes implementation requirements for various form factors.
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

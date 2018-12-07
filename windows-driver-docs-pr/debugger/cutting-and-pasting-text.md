@@ -3,7 +3,6 @@ title: Cutting and Pasting Text
 description: Cutting and Pasting Text
 ms.assetid: efc62bee-ba35-4bff-b88b-3b287ededc38
 keywords: ["cutting text", "pasting text", "copying text", "debugging information windows, cutting and pasting text", "text", "text, editing"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -80,9 +79,9 @@ The right mouse button has several effects that can make copying and pasting muc
 
 -   If you put the cursor in any box and then press the right mouse button, a menu with **Undo**, **Cut**, **Copy**, **Paste**, and **Select All** options appears. You can choose any of these options.
 
- 
+ 
 
- 
+ 
 
 
 

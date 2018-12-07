@@ -1,6 +1,5 @@
 ---
 title: Implementing Printer Driver COM Interfaces
-author: windows-driver-content
 description: Implementing Printer Driver COM Interfaces
 ms.assetid: 39f873e9-7f72-420c-b6d6-dce31840aa16
 keywords:
@@ -28,9 +27,9 @@ This section explains how to construct a plug-in, based on WDK-supplied sample c
 
 [Accessing Printer Driver Interfaces from Plug-Ins](accessing-printer-driver-interfaces-from-plug-ins.md)
 
- 
+ 
 
- 
+ 
 
 
 

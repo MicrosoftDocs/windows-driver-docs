@@ -1,6 +1,5 @@
 ---
 title: Modifying a Driver-Supplied Property Sheet Page
-author: windows-driver-content
 description: Modifying a Driver-Supplied Property Sheet Page
 ms.assetid: 98338017-96a0-414c-9b80-bcb98eff61e5
 keywords:
@@ -45,9 +44,9 @@ A callback function is specified by placing its address in an [**OEMCUIPPARAM**]
 
 When a user opens the printer property sheet or document property sheet and modifies options, [CPSUI](common-property-sheet-user-interface.md) calls the printer driver's printer interface DLL. This DLL processes option values contained in its own [**OPTITEM**](https://msdn.microsoft.com/library/windows/hardware/ff559656) structures. Then for each UI plug-in, the printer interface DLL calls the OEMCUIPCALLBACK-typed callback function that was previously specified by **IPrintOemUI::CommonUIProp**.
 
- 
+ 
 
- 
+ 
 
 
 

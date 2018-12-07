@@ -1,6 +1,5 @@
 ---
 title: IOleCvt DecodeUnicodeName method
-author: windows-driver-content
 description: The DecodeUnicodeName property enables an ASP Web page to translate a Unicode string to its ANSI equivalent.
 MS-HAID:
 - 'webfnc\_50fe9203-d31e-4af4-a34f-b32dfd3dd7b1.xml'

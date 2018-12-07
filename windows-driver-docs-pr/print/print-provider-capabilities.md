@@ -1,6 +1,5 @@
 ---
 title: Print Provider Capabilities
-author: windows-driver-content
 description: Print Provider Capabilities
 ms.assetid: 1b01aac5-673a-4593-a52e-6017d9683c42
 keywords:
@@ -18,7 +17,7 @@ ms.localizationpriority: medium
 **Warning**  
 Starting with Windows 10, the APIs which support third-party print providers are deprecated. Microsoft does not recommend any investment into third-party print providers. Additionally, on Windows 8 and newer products where the v4 print driver model is available, third-party print providers may not create or manage queues which use v4 print drivers.
 
- 
+ 
 
 By supporting predefined sets of API functions, Microsoft Windows 2000 and later print providers can supply the following capabilities:
 
@@ -64,9 +63,9 @@ By supporting predefined sets of API functions, Microsoft Windows 2000 and later
 
 These capabilities are implemented as a set of [functions defined by print providers](functions-defined-by-print-providers.md).
 
- 
+ 
 
- 
+ 
 
 
 

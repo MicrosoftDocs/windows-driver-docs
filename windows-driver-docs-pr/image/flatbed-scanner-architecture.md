@@ -1,6 +1,5 @@
 ---
 title: Flatbed Scanner Architecture
-author: windows-driver-content
 description: Flatbed Scanner Architecture
 ms.assetid: 04f7df17-d289-44a1-8c2d-7d0fa618cc97
 ms.date: 04/20/2017
@@ -27,9 +26,9 @@ A scanner that supports flatbed platen scanning and document feeder scanning has
 
 The first nonroot item in the WIA item tree must be the WIA flatbed item, if other scanning data sources are implemented. This arrangement makes it easier to support Microsoft Windows XP and Windows Me applications. For more information about compatibility with these operating systems, see [WIA Flatbed Scanner Compatibility for Windows Me and Windows XP](wia-flatbed-scanner-compatibility-for-windows-xp-and-windows-me.md).
 
- 
+ 
 
- 
+ 
 
 
 

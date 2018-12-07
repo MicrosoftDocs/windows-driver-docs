@@ -1,6 +1,5 @@
 ---
 title: OID_GEN_TRANSMIT_BLOCK_SIZE
-author: windows-driver-content
 description: As a query, the OID_GEN_TRANSMIT_BLOCK_SIZE OID specifies the minimum number of bytes that a single net packet occupies in the transmit buffer space of the NIC.
 ms.assetid: 81874999-029a-4e7e-8dbe-fc8e34bcae67
 ms.date: 08/08/2017
@@ -54,9 +53,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

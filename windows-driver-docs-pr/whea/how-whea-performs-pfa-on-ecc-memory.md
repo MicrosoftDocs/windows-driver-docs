@@ -1,6 +1,5 @@
 ---
 title: How WHEA Performs PFA on ECC Memory
-author: windows-driver-content
 description: How WHEA Performs PFA on ECC Memory
 ms.assetid: def94688-9ca6-4146-8d5b-4c3550d3d272
 keywords:
@@ -29,31 +28,33 @@ When an ECC memory error occurs on a memory page, WHEA performs PFA on the ECC m
 
 1.  If WHEA is currently not monitoring the ECC memory page, WHEA adds the page to its monitoring database and clears the error count and tick count for the new entry.
 
-    **Note**  WHEA will stop monitoring an ECC memory page when its tick count exceeds the **MemPfaTimeout** registry value. When this happens, WHEA removes the entry from its monitoring database.
+    **Note**  WHEA will stop monitoring an ECC memory page when its tick count exceeds the **MemPfaTimeout** registry value. When this happens, WHEA removes the entry from its monitoring database.
 
-     
+
 
 2.  WHEA increments the error count for the ECC memory page.
 
 3.  If the error count exceeds the **MemPfaThreshold** registry value, WHEA first calls the system memory manager to take the ECC memory page offline.
 
-    **Note**  When the system memory manager is called, there is no guarantee that the ECC memory page will actually be taken offline.
+    **Note**  When the system memory manager is called, there is no guarantee that the ECC memory page will actually be taken offline.
 
-     
 
-    WHEA then adds the memory page into the Boot Configuration Data (BCD) in the system store. This prevents the memory page from being used after the next system restart.
 
-    **Note**  WHEA will not take a hardware component, such as an ECC memory page, offline if the registry value **DisableOffline** is set to a nonzero value. Also, WHEA will not add the ECC memory page to the BCD store if the registry value **MemPersistOffline** is set to 0.
 
-     
+WHEA then adds the memory page into the Boot Configuration Data (BCD) in the system store. This prevents the memory page from being used after the next system restart.
+
+**Note**  WHEA will not take a hardware component, such as an ECC memory page, offline if the registry value **DisableOffline** is set to a nonzero value. Also, WHEA will not add the ECC memory page to the BCD store if the registry value **MemPersistOffline** is set to 0.
+
+
+
 
 For more information about the PFA registry values for WHEA, see [WHEA Policy Settings](whea-pfa-registry-settings.md).
 
 For more information about the system memory manager, see the [Memory Management](http://go.microsoft.com/fwlink/p/?linkid=140723) in the Windows SDK documentation.
 
- 
 
- 
+
+
 
 
 

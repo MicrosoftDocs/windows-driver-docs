@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_P2P_BACKGROUND_DISCOVER_MODE
-author: windows-driver-content
 description: WDI_TLV_P2P_BACKGROUND_DISCOVER_MODE is a TLV that contains Wi-Fi Direct Background Discover Mode parameters.
 ms.assetid: 987DB282-A992-497F-98B5-0D3DD477B91C
 ms.date: 07/18/2017
@@ -40,11 +39,11 @@ The sum (in bytes) of the sizes of all contained elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td>[<strong>WDI_P2P_DISCOVER_TYPE</strong>](https://msdn.microsoft.com/library/windows/hardware/dn926093)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn926093" data-raw-source="[&lt;strong&gt;WDI_P2P_DISCOVER_TYPE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn926093)"><strong>WDI_P2P_DISCOVER_TYPE</strong></a></td>
 <td>The type of discovery to be performed by the port.</td>
 </tr>
 <tr class="even">
-<td>[<strong>WDI_P2P_SERVICE_DISCOVERY_TYPE</strong>](https://msdn.microsoft.com/library/windows/hardware/dn926101)</td>
+<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn926101" data-raw-source="[&lt;strong&gt;WDI_P2P_SERVICE_DISCOVERY_TYPE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn926101)"><strong>WDI_P2P_SERVICE_DISCOVERY_TYPE</strong></a></td>
 <td>The type of Service Discovery to be performed by the port.
 <p>The only valid values are WDI_P2P_SERVICE_DISCOVERY_TYPE_NO_SERVICE_DISCOVERY and WDI_P2P_SERVICE_DISCOVERY_TYPE_SERVICE_NAME_ONLY.</p></td>
 </tr>
@@ -55,7 +54,7 @@ The sum (in bytes) of the sizes of all contained elements.
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -81,9 +80,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

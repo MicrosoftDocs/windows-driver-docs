@@ -3,7 +3,6 @@ title: dbgprint
 description: The dbgprint extension displays a string that was previously sent to the DbgPrint buffer.
 ms.assetid: bf25ac2a-5a07-43df-946b-3b2237b1816b
 keywords: ["dbgprint Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -45,7 +44,7 @@ The **!dbgprint** extension displays a string that was previously sent to the **
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -60,9 +59,9 @@ Generally, messages sent to this buffer are displayed automatically in the Debug
 
 The **!dbgprint** extension causes the contents of this buffer to be displayed (regardless of whether automatic printing has been disabled). It will not show messages that have been filtered out based on their component and importance level. (For details on this filtering, see [Reading and Filtering Debugging Messages](reading-and-filtering-debugging-messages.md).)
 
- 
+ 
 
- 
+ 
 
 
 

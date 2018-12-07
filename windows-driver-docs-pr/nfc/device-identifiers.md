@@ -1,6 +1,5 @@
 ---
 title: NFP device identifiers
-author: windows-driver-content
 description: NFP device identifiers
 ms.assetid: B387D3F8-A9A7-47F0-B5E3-8437581947E4
 keywords:
@@ -31,9 +30,9 @@ The following are the device identifiers for NFP device drivers:
 
 If the device is advertised as NFC, the driver MUST populate DEVPKEY\_NFP\_Capabilities on the exposed GUID\_DEVINTERFACE\_NFP interface with a DEVPROP\_TYPE\_STRING\_LIST property containing one entry: “StandardNfc”.
 
- 
+ 
 
- 
+ 
 ## Related topics
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [Near field proximity DDI reference](https://msdn.microsoft.com/library/windows/hardware/jj866056)  

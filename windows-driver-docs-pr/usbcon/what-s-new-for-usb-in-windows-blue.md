@@ -1,7 +1,6 @@
 ---
 Description: Here are the new features and improvements for Universal Serial Bus (USB) in Windows 8.1.
 title: Windows 8.1 - What's new for USB
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -50,15 +49,15 @@ These samples demonstrate the use of the [**Windows.Devices.Usb**](https://msdn.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="" id="custom-usb-device-access-sample"></a>[Custom USB device access sample](http://go.microsoft.com/fwlink/p/?linkid=309716)</p></td>
+<td><p><a href="" id="custom-usb-device-access-sample"></a><a href="http://go.microsoft.com/fwlink/p/?linkid=309716" data-raw-source="[Custom USB device access sample](http://go.microsoft.com/fwlink/p/?linkid=309716)">Custom USB device access sample</a></p></td>
 <td><p>This sample shows how to communicate with a USB device. The sample can communicate with the OSR USB FX2 learning kit and the SuperMUTT device.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="" id="usb-cdc-control-sample"></a>[USB CDC Control sample](http://go.microsoft.com/fwlink/p/?linkid=309716)</p></td>
+<td><p><a href="" id="usb-cdc-control-sample"></a><a href="http://go.microsoft.com/fwlink/p/?linkid=309716" data-raw-source="[USB CDC Control sample](http://go.microsoft.com/fwlink/p/?linkid=309716)">USB CDC Control sample</a></p></td>
 <td><p>This sample shows how to communicate with a USB CDC (Communications Device Class) device and sends and receives data through serial ports, such as a USB serial converter cable.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="" id="firmware-update-usb-device-sample"></a>[Firmware Update USB Device sample](http://go.microsoft.com/fwlink/p/?linkid=309716)</p></td>
+<td><p><a href="" id="firmware-update-usb-device-sample"></a><a href="http://go.microsoft.com/fwlink/p/?linkid=309716" data-raw-source="[Firmware Update USB Device sample](http://go.microsoft.com/fwlink/p/?linkid=309716)">Firmware Update USB Device sample</a></p></td>
 <td><p>This sample shows how a UWP app can update the firmware of a USB device. The update operation runs as a background task.</p></td>
 </tr>
 </tbody>

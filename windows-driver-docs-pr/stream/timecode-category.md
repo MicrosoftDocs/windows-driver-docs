@@ -1,6 +1,5 @@
 ---
 title: Timecode Category
-author: windows-driver-content
 description: Timecode Category
 ms.assetid: 273e0233-357e-4e13-bf8e-77ca36834ee7
 keywords:
@@ -44,7 +43,7 @@ When creating **PINNAME\_VIDEO\_TIMECODE** pins, use the information listed in t
 </tr>
 <tr class="odd">
 <td><p><strong>Major Format GUID</strong></p></td>
-<td><p>None defined. Define GUID using Direct Show's MEDIATYPE_Timecode.</p></td>
+<td><p>None defined. Define GUID using Direct Show&#39;s MEDIATYPE_Timecode.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Sub-Format GUID</strong></p></td>
@@ -77,11 +76,11 @@ When creating **PINNAME\_VIDEO\_TIMECODE** pins, use the information listed in t
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

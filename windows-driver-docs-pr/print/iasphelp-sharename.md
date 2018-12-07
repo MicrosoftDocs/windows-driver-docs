@@ -1,6 +1,5 @@
 ---
 title: Iasphelp get\_ShareName method
-author: windows-driver-content
 description: The ShareName property enables an ASP Web page to obtain the printer's shared name.
 MS-HAID:
 - 'webfnc\_68b8e99e-a40b-44ee-94c8-2a8bcc293fa3.xml'
@@ -62,7 +61,7 @@ Win32 error codes can also be returned.
 </tr>
 <tr class="even">
 <td><strong>E_HANDLE</strong></td>
-<td><p>The [<strong>Iasphelp::Open</strong>](iasphelp-open.md) method has not been called.</p></td>
+<td><p>The <a href="iasphelp-open.md" data-raw-source="[&lt;strong&gt;Iasphelp::Open&lt;/strong&gt;](iasphelp-open.md)"><strong>Iasphelp::Open</strong></a> method has not been called.</p></td>
 </tr>
 <tr class="odd">
 <td><strong>E_OUTOFMEMORY</strong></td>

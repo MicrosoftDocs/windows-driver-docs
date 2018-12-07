@@ -133,9 +133,9 @@ The value in *filter-&gt;action.type* determines which actions the callout's [cl
 
 For more information about packet and stream data inspection, see [Inspecting Packet and Stream Data](inspecting-packet-and-stream-data.md).
 
- 
+ 
 
- 
+ 
 
 
 

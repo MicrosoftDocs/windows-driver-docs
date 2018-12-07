@@ -1,6 +1,5 @@
 ---
 title: Additional Transactional Interfaces
-author: windows-driver-content
 description: Additional Transactional Interfaces
 ms.assetid: cbd88c96-6445-436b-8e02-09dd9cf40d77
 keywords: ["transactions WDK KTM , non-KTM interfaces", "transactional interfaces WDK"]
@@ -21,9 +20,9 @@ In addition to the transactional interfaces that you can use by accessing KTM, M
 
 -   The .NET Framework supports the **System.Transactions** namespace. For more information about this namespace, see the [Microsoft developer website](http://go.microsoft.com/fwlink/p/?linkid=8714).
 
- 
+ 
 
- 
+ 
 
 
 

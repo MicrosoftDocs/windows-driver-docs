@@ -1,6 +1,5 @@
 ---
 title: Managing Device Performance States
-author: windows-driver-content
 description: Managing Device Performance States
 ms.assetid: 5a4cc09a-e86e-4e5a-98b2-0351b253b5b6
 keywords: ["power management WDK kernel , device performance states", "device performance states WDK power management", "performance states WDK power management", "custom power settings WDK power management"]
@@ -70,9 +69,9 @@ The active power scheme setting and the power scheme personality setting use the
 
 When the power source changes, the power manager calls the callback routine and passes the GUID that represents the power source setting and the value of the power source setting that indicates whether the computer is being powered by an AC power source, a DC power source, or a short-term DC power source.
 
- 
+ 
 
- 
+ 
 
 
 

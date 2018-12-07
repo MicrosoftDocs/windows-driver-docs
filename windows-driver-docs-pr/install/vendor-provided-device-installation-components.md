@@ -27,9 +27,9 @@ For more information, see [Choosing a Driver Model](https://msdn.microsoft.com/l
 
 For more information about drivers for Windows, see [Getting Started with Windows Drivers](https://msdn.microsoft.com/library/windows/hardware/ff554690).
 
- 
+ 
 
- 
+ 
 
 
 

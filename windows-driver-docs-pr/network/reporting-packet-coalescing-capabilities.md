@@ -17,9 +17,9 @@ Miniport drivers register the following capabilities with NDIS during network ad
 
 -   The packet coalescing receive filtering capabilities that are currently enabled on the network adapter.
 
-**Note**  A miniport driver's support for packet coalescing can be enabled or disabled through the **\*PacketCoalescing** INF keyword setting. This setting is displayed in the **Advanced** property page for the network adapter. For more information about the packet coalescing INF file setting, see [Standardized INF Keywords for Packet Coalescing](standardized-inf-keywords-for-packet-coalescing.md).
+**Note**  A miniport driver's support for packet coalescing can be enabled or disabled through the **\*PacketCoalescing** INF keyword setting. This setting is displayed in the **Advanced** property page for the network adapter. For more information about the packet coalescing INF file setting, see [Standardized INF Keywords for Packet Coalescing](standardized-inf-keywords-for-packet-coalescing.md).
 
- 
+
 
 The miniport driver reports the packet coalescing and filtering capabilities of the underlying network adapter through an [**NDIS\_RECEIVE\_FILTER\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff566864) structure. If the **\*PacketCoalescing** keyword setting in the registry has a value of one, packet coalescing is enabled and the miniport driver initializes the **NDIS\_RECEIVE\_FILTER\_CAPABILITIES** structure in the following way:
 
@@ -31,19 +31,21 @@ The miniport driver reports the packet coalescing and filtering capabilities of 
 
     If this flag is set, the network adapter must support the filtering of received multicast packets in hardware. This filtering is based on the multicast addresses that NDIS offloaded to the network adapter by sending it [OID\_802\_3\_MULTICAST\_LIST](https://msdn.microsoft.com/library/windows/hardware/ff569073) OID set requests.
 
-    **Note**  Protocol drivers can also change the contents of the multicast address list by sending [OID\_802\_3\_ADD\_MULTICAST\_ADDRESS](https://msdn.microsoft.com/library/windows/hardware/ff569068) and [OID\_802\_3\_DELETE\_MULTICAST\_ADDRESS](https://msdn.microsoft.com/library/windows/hardware/ff569070) requests. NDIS combines these requests into [OID\_802\_3\_MULTICAST\_LIST](https://msdn.microsoft.com/library/windows/hardware/ff569073) OID set requests.
+    **Note**  Protocol drivers can also change the contents of the multicast address list by sending [OID\_802\_3\_ADD\_MULTICAST\_ADDRESS](https://msdn.microsoft.com/library/windows/hardware/ff569068) and [OID\_802\_3\_DELETE\_MULTICAST\_ADDRESS](https://msdn.microsoft.com/library/windows/hardware/ff569070) requests. NDIS combines these requests into [OID\_802\_3\_MULTICAST\_LIST](https://msdn.microsoft.com/library/windows/hardware/ff569073) OID set requests.
 
-     
 
-    **Note**  The adapter is required to reject any incoming multicast packet whose destination media access control (MAC) address does not match any of the multicast addresses specified by these OID set requests.
 
-     
+
+**Note**  The adapter is required to reject any incoming multicast packet whose destination media access control (MAC) address does not match any of the multicast addresses specified by these OID set requests.
+
+
+
 
 3.  The miniport driver sets the NDIS\_RECEIVE\_FILTER\_PACKET\_COALESCING\_FILTERS\_ENABLED flag in the **EnabledFilterTypes** member.
 
-    **Note**  If the driver sets this flag, it must also set the NDIS\_RECEIVE\_FILTER\_PACKET\_COALESCING\_SUPPORTED\_ON\_DEFAULT\_QUEUE flag in the **SupportedQueueProperties** member. Otherwise, NDIS will fail the call to [**NdisMSetMiniportAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff563672) by returning NDIS\_STATUS\_BAD\_CHARACTERISTICS.
+    **Note**  If the driver sets this flag, it must also set the NDIS\_RECEIVE\_FILTER\_PACKET\_COALESCING\_SUPPORTED\_ON\_DEFAULT\_QUEUE flag in the **SupportedQueueProperties** member. Otherwise, NDIS will fail the call to [**NdisMSetMiniportAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff563672) by returning NDIS\_STATUS\_BAD\_CHARACTERISTICS.
 
-     
+
 
 4.  If the miniport driver sets the NDIS\_RECEIVE\_FILTER\_PACKET\_COALESCING\_FILTERS\_ENABLED flag, the driver must support all receive filter test criteria. The driver advertises this support by setting the following flags in the **SupportedFilterTests** member:
 
@@ -53,9 +55,9 @@ The miniport driver reports the packet coalescing and filtering capabilities of 
 
     -   NDIS\_RECEIVE\_FILTER\_TEST\_HEADER\_FIELD\_NOT\_EQUAL\_SUPPORTED
 
-    **Note**  If the miniport driver does not set the NDIS\_RECEIVE\_FILTER\_PACKET\_COALESCING\_FILTERS\_ENABLED flag, the driver must set the **SupportedFilterTests** member to zero.
+    **Note**  If the miniport driver does not set the NDIS\_RECEIVE\_FILTER\_PACKET\_COALESCING\_FILTERS\_ENABLED flag, the driver must set the **SupportedFilterTests** member to zero.
 
-     
+
 
 5.  If the miniport driver sets the NDIS\_RECEIVE\_FILTER\_PACKET\_COALESCING\_FILTERS\_ENABLED flag, the miniport driver must support the filtering of data within various fields of the media access control (MAC), IP version 4 (IPv4), and IP version 6 (IPv6) headers. The driver advertises this support by setting the following flags in the **SupportedHeaders** member:
 
@@ -69,9 +71,9 @@ The miniport driver reports the packet coalescing and filtering capabilities of 
 
     -   NDIS\_RECEIVE\_FILTER\_UDP\_HEADER\_SUPPORTED
 
-    **Note**  If the miniport driver does not set the NDIS\_RECEIVE\_FILTER\_PACKET\_COALESCING\_FILTERS\_ENABLED flag, the driver must set the **SupportedHeaders** member to zero.
+    **Note**  If the miniport driver does not set the NDIS\_RECEIVE\_FILTER\_PACKET\_COALESCING\_FILTERS\_ENABLED flag, the driver must set the **SupportedHeaders** member to zero.
 
-     
+
 
 6.  If the miniport driver sets the NDIS\_RECEIVE\_FILTER\_PACKET\_COALESCING\_FILTERS\_ENABLED flag, the miniport driver must support the filtering of data within the media access control (MAC) header of the received packet. The driver advertises this support by setting the following flags in the **SupportedMacHeaderFields** member:
 
@@ -81,9 +83,9 @@ The miniport driver reports the packet coalescing and filtering capabilities of 
 
     -   NDIS\_RECEIVE\_FILTER\_MAC\_HEADER\_PACKET\_TYPE\_SUPPORTED
 
-    **Note**  If the miniport driver does not set the NDIS\_RECEIVE\_FILTER\_PACKET\_COALESCING\_FILTERS\_ENABLED flag, the driver must set the **SupportedMacHeaderFields** member to zero.
+    **Note**  If the miniport driver does not set the NDIS\_RECEIVE\_FILTER\_PACKET\_COALESCING\_FILTERS\_ENABLED flag, the driver must set the **SupportedMacHeaderFields** member to zero.
 
-     
+
 
 7.  If the miniport driver sets the NDIS\_RECEIVE\_FILTER\_PACKET\_COALESCING\_FILTERS\_ENABLED flag, the miniport driver must support the filtering of data within the header of a received Address Resolution Protocol (ARP) packet. The driver advertises this support by setting the following flags in the **SupportedARPHeaderFields** member:
 
@@ -93,49 +95,51 @@ The miniport driver reports the packet coalescing and filtering capabilities of 
 
     -   NDIS\_RECEIVE\_FILTER\_ARP\_HEADER\_TPA\_SUPPORTED
 
-    **Note**  If the miniport driver does not set the NDIS\_RECEIVE\_FILTER\_PACKET\_COALESCING\_FILTERS\_ENABLED flag, the driver must set the **SupportedARPHeaderFields** member to zero.
+    **Note**  If the miniport driver does not set the NDIS\_RECEIVE\_FILTER\_PACKET\_COALESCING\_FILTERS\_ENABLED flag, the driver must set the **SupportedARPHeaderFields** member to zero.
 
-     
+
 
 8.  If the miniport driver sets the NDIS\_RECEIVE\_FILTER\_PACKET\_COALESCING\_FILTERS\_ENABLED flag, the miniport driver must support the filtering of data within the Open Systems Interconnection (OSI) layer 3 (L3) header of a received IP version 4 (IPv4) packet. The driver advertises this support by setting the following flags in the **SupportedIPv4HeaderFields** member:
 
     -   NDIS\_RECEIVE\_FILTER\_IPV4\_HEADER\_PROTOCOL\_SUPPORTED
 
-    **Note**  If the miniport driver does not set the NDIS\_RECEIVE\_FILTER\_PACKET\_COALESCING\_FILTERS\_ENABLED flag, the driver must set the **SupportedIPv4HeaderFields** member to zero.
+    **Note**  If the miniport driver does not set the NDIS\_RECEIVE\_FILTER\_PACKET\_COALESCING\_FILTERS\_ENABLED flag, the driver must set the **SupportedIPv4HeaderFields** member to zero.
 
-     
+
 
 9.  If the miniport driver sets the NDIS\_RECEIVE\_FILTER\_PACKET\_COALESCING\_FILTERS\_ENABLED flag, the miniport driver must support the filtering of data within the L3 header of a received IP version 6 (IPv6) packet. The driver advertises this support by setting the following flags in the **SupportedIPv6HeaderFields** member:
 
     -   NDIS\_RECEIVE\_FILTER\_IPV6\_HEADER\_PROTOCOL\_SUPPORTED
 
-    **Note**  If the miniport driver does not set the NDIS\_RECEIVE\_FILTER\_PACKET\_COALESCING\_FILTERS\_ENABLED flag, the driver must set the **SupportedIPv6HeaderFields** member to zero.
+    **Note**  If the miniport driver does not set the NDIS\_RECEIVE\_FILTER\_PACKET\_COALESCING\_FILTERS\_ENABLED flag, the driver must set the **SupportedIPv6HeaderFields** member to zero.
 
-     
+
 
 10. If the miniport driver sets the NDIS\_RECEIVE\_FILTER\_PACKET\_COALESCING\_FILTERS\_ENABLED flag, the miniport driver must support the filtering of data within the OSI layer 4 (L4) header of a received User Datagram Protocol (UDP) packet. The driver advertises this support by setting the following flags in the **SupportedIUdpHeaderFields** member:
 
     -   NDIS\_RECEIVE\_FILTER\_UDP\_HEADER\_DEST\_PORT\_SUPPORTED
 
-    **Note**  If the received UDP packet contains IPv4 options or IPv6 extension headers, the network adapter can handle the packet as if it failed the UDP filter test. In this way, the adapter can automatically drop the received packet.
+    **Note**  If the received UDP packet contains IPv4 options or IPv6 extension headers, the network adapter can handle the packet as if it failed the UDP filter test. In this way, the adapter can automatically drop the received packet.
 
-     
 
-    **Note**  If the miniport driver does not set the NDIS\_RECEIVE\_FILTER\_PACKET\_COALESCING\_FILTERS\_ENABLED flag, the driver must set the **SupportedIUdpHeaderFields** member to zero.
 
-     
+
+**Note**  If the miniport driver does not set the NDIS\_RECEIVE\_FILTER\_PACKET\_COALESCING\_FILTERS\_ENABLED flag, the driver must set the **SupportedIUdpHeaderFields** member to zero.
+
+
+
 
 11. The miniport driver must report the maximum number of tests on packet header fields that can be specified for a single packet coalescing filter. The driver specifies this value in the **MaxFieldTestsPerPacketCoalescingFilter** member.
 
-    **Note**  Network adapters that support packet coalescing must support five or more packet header fields that can be specified for a single packet coalescing filter. If the adapter does not support packet coalescing, the miniport driver must set this value to zero.
+    **Note**  Network adapters that support packet coalescing must support five or more packet header fields that can be specified for a single packet coalescing filter. If the adapter does not support packet coalescing, the miniport driver must set this value to zero.
 
-     
+
 
 12. The miniport driver must report the maximum number of packet coalescing filters that are supported by the network adapter. The driver specifies this value in the **MaxPacketCoalescingFilters** member.
 
-    **Note**  Network adapters that support packet coalescing must support ten or more packet coalescing filters. If the adapter does not support packet coalescing, the miniport driver must set this value to zero.
+    **Note**  Network adapters that support packet coalescing must support ten or more packet coalescing filters. If the adapter does not support packet coalescing, the miniport driver must set this value to zero.
 
-     
+
 
 When NDIS calls the miniport driver's [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) function, the driver reports the packet coalescing and filtering capabilities of the underlying network adapter by following these steps:
 

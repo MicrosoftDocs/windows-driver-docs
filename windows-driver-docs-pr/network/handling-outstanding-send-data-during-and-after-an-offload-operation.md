@@ -46,9 +46,9 @@ The sequence number for the next byte to send on the connection (see SND.NEXT in
 <a href="" id="sndmax"></a>**SndMax**  
 The maximum sequence number that has been sent on the connection.
 
- 
+ 
 
- 
+ 
 
 
 

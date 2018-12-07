@@ -1,7 +1,6 @@
 ---
 Description: Install WinUSB (Winusb.sys) in the device's kernel-mode stack as the USB device's function driver instead of implementing a driver.
 title: WinUSB (Winusb.sys) Installation
-author: windows-driver-content
 ms.date: 05/09/2018
 ms.localizationpriority: medium
 ---
@@ -53,7 +52,7 @@ The preceding procedure does not add a device interface GUID for an app (UWP app
 5.  Disconnect the device from the system and reconnect it to the same physical port.
     **Note**  If you change the physical port then you must repeat steps 1 through 4.
 
-     
+     
 
 ## <a href="" id="inf"></a>Writing a custom INF for WinUSB installation
 
@@ -148,7 +147,7 @@ Except for device-specific values and several issues that are noted in the follo
 -   **USB\_Install.Services**: The **Include** directive in the **USB\_Install.Services** section includes the system-supplied .inf for WinUSB (WinUSB.inf). This .inf file is installed by the WinUSB co-installer if it isn't already on the target system. The **Needs** directive specifies the section within WinUSB.inf that contains information required to install Winusb.sys as the device's function driver. You should not modify these directives.
     **Note**  Because Windows XP doesn't provide WinUSB.inf, the file must either be copied to Windows XP systems by the co-installer, or you should provide a separate decorated section for Windows XP.
 
-     
+     
 
 -   **USB\_Install.HW**: This section is the key in the .inf file. It specifies the device interface globally unique identifier (GUID) for your device. The **AddReg** directive sets the specified interface GUID in a standard registry value. When Winusb.sys is loaded as the device's function driver, it reads the registry value DeviceInterfaceGUIDs key and uses the specified GUID to represent the device interface. You should replace the GUID in this example with one that you create specifically for your device. If the protocols for the device change, create a new device interface GUID.
 
@@ -252,7 +251,7 @@ HKR,,DeviceInterfaceGUIDs, 0x10000,"{D696BFEB-1734-417d-8A04-86D01071C512}"
 
 **Note**  If you use the redistributable WinUSB package for Windows XP or Windows Server 2003, make sure that you don't uninstall WinUSB in your uninstall packages. Other USB devices might be using WinUSB, so its binaries must remain in the shared folder.
 
- 
+ 
 
 ## <a href="" id="howto"></a>How to create a driver package that installs Winusb.sys
 
@@ -271,60 +270,60 @@ To use WinUSB as the device's function driver, you create a driver package. The 
 -   The co-installer files must be obtained from the latest version of the WDK, so that the driver supports all the latest Windows releases.
 -   The contents of the driver package must be digitally signed with a Winqual release signature. For more info about how to create and test signed catalog files, see [Kernel-Mode Code Signing Walkthrough](http://go.microsoft.com/fwlink/p/?linkid=129409) on the Windows Dev Center - Hardware site.
 
- 
+ 
 
-1.  [Download the Windows Driver Kit (WDK)](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk) and install it.
-2.  Create a driver package folder on the machine that the USB device is connected to. For example, c:\\UsbDevice.
-3.  Copy the WinUSB co-installer (WinusbcoinstallerX.dll) from the **WinDDK\\***BuildNumber***\\redist\\winusb** folder to the driver package folder.
+1. [Download the Windows Driver Kit (WDK)](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk) and install it.
+2. Create a driver package folder on the machine that the USB device is connected to. For example, c:\\UsbDevice.
+3. Copy the WinUSB co-installer (WinusbcoinstallerX.dll) from the **WinDDK\\**<em>BuildNumber</em>**\\redist\\winusb** folder to the driver package folder.
 
-    The WinUSB co-installer (Winusbcoinstaller.dll) installs WinUSB on the target system, if necessary. The WDK includes three versions of the co-installer depending on the system architecture: x86-based, x64-based, and Itanium-based systems. They are all named WinusbcoinstallerX.dll and are located in the appropriate subdirectory in the **WinDDK\\***BuildNumber***\\redist\\winusb** folder.
+   The WinUSB co-installer (Winusbcoinstaller.dll) installs WinUSB on the target system, if necessary. The WDK includes three versions of the co-installer depending on the system architecture: x86-based, x64-based, and Itanium-based systems. They are all named WinusbcoinstallerX.dll and are located in the appropriate subdirectory in the **WinDDK\\**<em>BuildNumber</em>**\\redist\\winusb** folder.
 
-4.  Copy the KMDF co-installer (WdfcoinstallerXXX.dll) from the **WinDDK\\***BuildNumber***\\redist\\wdf** folder to the driver package folder.
+4. Copy the KMDF co-installer (WdfcoinstallerXXX.dll) from the **WinDDK\\**<em>BuildNumber</em>**\\redist\\wdf** folder to the driver package folder.
 
-    The KMDF co-installer (WdfcoinstallerXXX.dll) installs the correct version of KMDF on the target system, if necessary. The version of WinUSB co-installer must match the KMDF co-installer because KMDF-based client drivers, such as Winusb.sys, require the corresponding version of the KMDF framework to be installed properly on the system. For example, Winusbcoinstaller2.dll requires KMDF version 1.9, which is installed by Wdfcoinstaller01009.dll. The x86 and x64 versions of WdfcoinstallerXXX.dll are included with the WDK under the **WinDDK\\***BuildNumber***\\redist\\wdf** folder. The following table shows the WinUSB co-installer and the associated KMDF co-installer to use on the target system.
+   The KMDF co-installer (WdfcoinstallerXXX.dll) installs the correct version of KMDF on the target system, if necessary. The version of WinUSB co-installer must match the KMDF co-installer because KMDF-based client drivers, such as Winusb.sys, require the corresponding version of the KMDF framework to be installed properly on the system. For example, Winusbcoinstaller2.dll requires KMDF version 1.9, which is installed by Wdfcoinstaller01009.dll. The x86 and x64 versions of WdfcoinstallerXXX.dll are included with the WDK under the **WinDDK\\**<em>BuildNumber</em>**\\redist\\wdf** folder. The following table shows the WinUSB co-installer and the associated KMDF co-installer to use on the target system.
 
-    Use this table to determine the WinUSB co-installer and the associated KMDF co-installer.
+   Use this table to determine the WinUSB co-installer and the associated KMDF co-installer.
 
-    <table>
-    <colgroup>
-    <col width="33%" />
-    <col width="33%" />
-    <col width="33%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th>WinUSB co-installer</th>
-    <th>KMDF library version</th>
-    <th>KMDF co-installer</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Winusbcoinstaller.dll</td>
-    <td>Requires KMDF version 1.5 or later</td>
-    <td><p>Wdfcoinstaller01005.dll</p>
-    <p>Wdfcoinstaller01007.dll</p>
-    <p>Wdfcoinstaller01009.dll</p></td>
-    </tr>
-    <tr class="even">
-    <td>Winusbcoinstaller2.dll</td>
-    <td>Requires KMDF version 1.9 or later</td>
-    <td>Wdfcoinstaller01009.dll</td>
-    </tr>
-    <tr class="odd">
-    <td>Winusbcoinstaller2.dll</td>
-    <td>Requires KMDF version 1.11 or later</td>
-    <td>WdfCoInstaller01011.dll</td>
-    </tr>
-    </tbody>
-    </table>
+   <table>
+   <colgroup>
+   <col width="33%" />
+   <col width="33%" />
+   <col width="33%" />
+   </colgroup>
+   <thead>
+   <tr class="header">
+   <th>WinUSB co-installer</th>
+   <th>KMDF library version</th>
+   <th>KMDF co-installer</th>
+   </tr>
+   </thead>
+   <tbody>
+   <tr class="odd">
+   <td>Winusbcoinstaller.dll</td>
+   <td>Requires KMDF version 1.5 or later</td>
+   <td><p>Wdfcoinstaller01005.dll</p>
+   <p>Wdfcoinstaller01007.dll</p>
+   <p>Wdfcoinstaller01009.dll</p></td>
+   </tr>
+   <tr class="even">
+   <td>Winusbcoinstaller2.dll</td>
+   <td>Requires KMDF version 1.9 or later</td>
+   <td>Wdfcoinstaller01009.dll</td>
+   </tr>
+   <tr class="odd">
+   <td>Winusbcoinstaller2.dll</td>
+   <td>Requires KMDF version 1.11 or later</td>
+   <td>WdfCoInstaller01011.dll</td>
+   </tr>
+   </tbody>
+   </table>
 
-     
+     
 
-5.  Write an .inf file that installs Winusb.sys as the function driver for the USB device.
-6.  Create a signed catalog file for the package. This file is required to install WinUSB on x64 versions of Windows.
-7.  Attach the USB device to your computer.
-8.  Open **Device Manager** to install the driver. Follow the instructions on the **Update Driver Software** wizard and choose manual installation. You will need to provide the location of the driver package folder to complete the installation.
+5. Write an .inf file that installs Winusb.sys as the function driver for the USB device.
+6. Create a signed catalog file for the package. This file is required to install WinUSB on x64 versions of Windows.
+7. Attach the USB device to your computer.
+8. Open **Device Manager** to install the driver. Follow the instructions on the **Update Driver Software** wizard and choose manual installation. You will need to provide the location of the driver package folder to complete the installation.
 
 ## Related topics
 [WinUSB Architecture and Modules](winusb-architecture.md)  

@@ -3,7 +3,6 @@ title: Bug Check 0xFE BUGCODE_USB_DRIVER
 description: The BUGCODE_USB_DRIVER bug check has a value of 0x000000FE. This indicates that an error has occurred in a universal serial bus (USB) driver.
 ms.assetid: 830f9d11-4b16-41a9-a804-6d689a779278
 keywords: ["Bug Check 0xFE BUGCODE_USB_DRIVER", "BUGCODE_USB_DRIVER"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -151,7 +150,7 @@ Time-out code context: port data
 
 Fatal time-out
 
- 
+ 
 
 If Parameter 1 has a value of 8 and Parameter 2 has a value of 6, then Parameter 3 is a time-out code. Possible values for the time-out code are given in the following table.
 
@@ -214,11 +213,11 @@ If Parameter 1 has a value of 8 and Parameter 2 has a value of 6, then Parameter
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

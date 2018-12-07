@@ -1,6 +1,5 @@
 ---
 title: AVStream Object Hierarchy
-author: windows-driver-content
 description: AVStream Object Hierarchy
 ms.assetid: b7d6f06d-6c97-414e-a453-d375e2d7ccf5
 keywords:
@@ -25,9 +24,9 @@ An AVStream minidriver can expose many different types of filters through a hier
 
 The elements of this hierarchy are described in the next topic, [AVStream Descriptors](avstream-descriptors.md).
 
- 
+ 
 
- 
+ 
 
 
 

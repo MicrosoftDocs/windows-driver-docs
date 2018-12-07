@@ -1,6 +1,5 @@
 ---
 title: Autoconfiguration in an IHV Port Monitor
-author: windows-driver-content
 description: Autoconfiguration in an IHV Port Monitor
 ms.assetid: c41c8502-902a-448c-8f96-fb196e68ee6e
 keywords:
@@ -24,9 +23,9 @@ An IHV who intends to develop a port monitor must design it to support autoconfi
 
 An IHV is not required to develop a port monitor if in-box support is sufficient. (For details, see [In-box Support for Autoconfiguration](in-box-support-for-autoconfiguration.md).) Be aware that in-box support is provided only for the standard TCP/IP port monitor and the Web Services for Devices (WSD) port monitor. IHVs who intend to provide autoconfiguration for local printers must provide a port monitor.
 
- 
+ 
 
- 
+ 
 
 
 

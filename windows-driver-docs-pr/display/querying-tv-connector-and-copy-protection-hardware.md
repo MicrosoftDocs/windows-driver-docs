@@ -61,9 +61,9 @@ Example 3: To disable TV output, the caller (not the miniport driver) should do 
 
 -   In **dwTvStandard**, set VP\_TV\_STANDARD\_WIN\_VGA. Clear all other bits in **dwTvStandard**.
 
- 
+ 
 
- 
+ 
 
 
 

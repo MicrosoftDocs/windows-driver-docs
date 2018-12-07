@@ -3,7 +3,6 @@ title: Enabling Postmortem Debugging
 description: This topic covers how to enable postmortem debugging
 ms.assetid: ae116b60-fed2-4e1d-98a8-9fe83f460c50
 keywords: debugging. debug, Windbg, postmortem debugging, just-in-time debugging, JIT debugging, AeDebug registry key
-ms.author: domars
 ms.date: 09/17/2018
 ms.localizationpriority: medium
 ---
@@ -164,7 +163,7 @@ There is a significant issue passing the g (Go) command. The issue with this app
 
 To avoid this issue, use .jdinfo or .dump /j. This approach allows the debugger to be in the context of the code failure of interest. For more information, see [Just In Time (JIT) Debugging](#jit) later in this topic.
 
- 
+ 
 
 **CDB**
 
@@ -204,7 +203,7 @@ This command display nothing if it succeeds, and an error to a new console windo
 
 **Note**  Because the -p %ld -e %ld -g parameters always appear first on the command line of the postmortem debugger, you should not use the -iaec switch to specify the -server parameter because -server will not work unless it appears first on the command line. To install a postmortem debugger that includes this parameter, you must edit the registry manually.
 
- 
+ 
 
 ### <span id="Visual_Studio_JIT_Debugger"></span><span id="visual_studio_jit_debugger"></span><span id="VISUAL_STUDIO_JIT_DEBUGGER"></span>Visual Studio JIT Debugger
 
@@ -327,9 +326,9 @@ This example would allow WER to report the failure after WinDbg captures a dump.
 
 If you are considering enabling postmortem debugging on a computer that you share with other people, see [Security During Postmortem Debugging](security-during-postmortem-debugging.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: IRP_MN_DEVICE_ENUMERATED
-author: windows-driver-content
 description: The PnP manager uses this I/O request packet (IRP) to notify bus drivers that a device object exists and that it has been fully enumerated by the plug and play manager.
 ms.date: 08/12/2017
 ms.assetid: 50ECF6E1-4FC6-4EEA-BACF-EBAD0329DA2E
@@ -73,9 +72,9 @@ Requirements
 
 [Plug and Play Minor IRPs](plug-and-play-minor-irps.md)
 
- 
+ 
 
- 
+ 
 
 
 

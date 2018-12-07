@@ -30,9 +30,9 @@ In order to use PCI interrupts instead of ISA interrupts, 16-bit PC Cards must m
 
 A PC Card that does not fulfill these requirements can cause an interrupt storm that provokes a system crash.
 
- 
+ 
 
- 
+ 
 
 
 

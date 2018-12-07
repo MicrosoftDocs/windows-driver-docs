@@ -3,7 +3,6 @@ title: Input and Output
 description: Input and Output
 ms.assetid: 78e181c1-c577-49ca-910b-d2e8db2495b5
 keywords: ["Debugger Engine, input and output", "input and output", "output"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -25,9 +24,9 @@ The input and output streams are transparently available to the remote clients. 
 
 For details about using input and output, see [Using Input and Output](using-input-and-output.md). For more information about client objects and input and output callbacks, see [Client Objects](client-objects.md).
 
- 
+ 
 
- 
+ 
 
 
 

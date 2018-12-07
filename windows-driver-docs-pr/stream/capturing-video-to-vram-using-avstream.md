@@ -1,6 +1,5 @@
 ---
 title: Capturing Video to VRAM using AVStream
-author: windows-driver-content
 description: Capturing Video to VRAM using AVStream
 ms.assetid: c4ca4a67-83cb-4a89-bc84-e06b1dc67b66
 keywords:
@@ -37,9 +36,9 @@ The following sections describe how to add VRAM capture support to a new or exis
 
 You can find sample code showing VRAM capture in the [AVStream Simulated Hardware Sample Driver (AVSHwS)](http://go.microsoft.com/fwlink/p/?linkid=256083).
 
- 
+ 
 
- 
+ 
 
 
 

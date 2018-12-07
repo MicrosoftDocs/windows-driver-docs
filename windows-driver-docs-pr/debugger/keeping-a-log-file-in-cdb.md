@@ -2,7 +2,6 @@
 title: Keeping a Log File in CDB
 description: Keeping a Log File in CDB
 ms.assetid: 02164ABF-BF57-4E1D-BD4B-CEEE60E0D7D0
-ms.author: domars
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -47,9 +46,9 @@ To determine the log file status, do the following:
 
 -   Enter the [**.logfile (Display Log File Status)**](-logfile--display-log-file-status-.md) command.
 
- 
+ 
 
- 
+ 
 
 
 

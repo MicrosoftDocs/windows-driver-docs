@@ -3,7 +3,6 @@ title: Reattaching to the Target Application
 description: Reattaching to the Target Application
 ms.assetid: cc137185-58a7-44bf-b262-2698c46730f6
 keywords: ["re-attaching to the target application", "process, re-attaching debugger to"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -18,7 +17,7 @@ If the debugger freezes or otherwise stops responding (that is, *crashes*) while
 
 **Note**  This method is supported only on Microsoft Windows XP and later versions of Windows. This method does not depend on whether the debugger originally created the process or attached to an existing process. This method does not depend on whether you used the **-pd** option.
 
- 
+ 
 
 To reattach a debugger to an existing target application, do the following:
 
@@ -44,9 +43,9 @@ If the original debugger is ended before you attach the new debugger, the target
 
 If you are already debugging a process and want to detach from the process but leave it frozen in a debugging state, you can use the [**.abandon (Abandon Process)**](-abandon--abandon-process-.md) command. After this command, any Windows debugger can reattach to the process by using the procedure that is described in this topic.
 
- 
+ 
 
- 
+ 
 
 
 

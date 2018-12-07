@@ -19,9 +19,9 @@ ms.localizationpriority: medium
 
 A driver updates its internal state associated with a context when its [**D3dDrawPrimitives2**](https://msdn.microsoft.com/library/windows/hardware/ff544704) callback is called. This callback must also return the updated context's public state to Direct3D.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Implicit Bin Extensions
-author: windows-driver-content
 description: Implicit Bin Extensions
 ms.assetid: 2aaa9e48-59f9-4c87-b592-ed60469cf747
 keywords:
@@ -38,9 +37,9 @@ The preceding OutputBin construct results in the following two queries:
 \Printer.Finishing.OutputBins.TopBin:Level
 ```
 
- 
+ 
 
- 
+ 
 
 
 

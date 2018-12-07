@@ -28,9 +28,9 @@ The miniclass driver must provide the following three [BatteryMini*Xxx*](https:/
 
 The [**BatteryClassIoctl**](https://msdn.microsoft.com/library/windows/hardware/ff536267) routine in the class driver calls these miniclass driver routines when it receives IOCTLs requesting information about the batteries.
 
- 
+ 
 
- 
+ 
 
 
 

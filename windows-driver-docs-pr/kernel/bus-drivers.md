@@ -1,6 +1,5 @@
 ---
 title: Bus Drivers
-author: windows-driver-content
 description: Bus Drivers
 ms.assetid: d1a92c06-882d-49dc-befa-5b9a9e8aecd7
 keywords: ["bus drivers WDK WDM", "enumerating bus devices WDK WDM", "bus controllers WDK WDM", "adapters WDK WDM", "bridges WDK WDM", "WDM bus drivers WDK"]
@@ -38,9 +37,9 @@ Because a bus driver acts as the function driver for its controller, adapter, or
 
 A bus driver can be implemented as a driver/minidriver pair, the way a SCSI port/miniport driver pair drives a SCSI host bus adapter (HBA). In such driver pairs, the minidriver is linked to the second driver, which is a DLL.
 
- 
+ 
 
- 
+ 
 
 
 

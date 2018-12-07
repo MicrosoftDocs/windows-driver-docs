@@ -1,6 +1,5 @@
 ---
 title: Specifying Feature and Option Display Order
-author: windows-driver-content
 description: Specifying Feature and Option Display Order
 ms.assetid: 51e18121-540b-40f0-85f8-eb2755a583f7
 keywords:
@@ -50,9 +49,9 @@ If a GPD file does not include empty \*Feature and \*Option entries specifying t
 
 Including empty \*Feature and \*Option entries to explicitly specify display order is recommended over allowing the parser to create the order.
 
- 
+ 
 
- 
+ 
 
 
 

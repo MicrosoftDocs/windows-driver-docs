@@ -1,6 +1,5 @@
 ---
 title: Hardware-based DVD Decoding
-author: windows-driver-content
 description: Hardware-based DVD Decoding
 ms.assetid: 73a32be7-f740-47e8-8177-f204e432c5a6
 keywords:
@@ -25,9 +24,9 @@ Computers using Microsoft DVD support both DVD storage and, if the proper decodi
 
 ![diagram illustrating a hardware dvd decoding solution](images/hwdvddec.png)
 
- 
+ 
 
- 
+ 
 
 
 

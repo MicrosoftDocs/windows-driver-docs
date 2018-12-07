@@ -1,6 +1,5 @@
 ---
 title: Supporting WMI in KMDF Drivers
-author: windows-driver-content
 description: This section describes how a KMDF driver registers as a WMI data provider, responds to requests for instance data, and sends events to registered WMI clients.
 ms.assetid: 821c4b4f-162a-4a2f-8846-47e5173ad412
 keywords:
@@ -31,9 +30,9 @@ The topics in this section describe how a Kernel-Mode Driver Framework (KMDF) dr
 -   [Initializing WMI Support in Your Driver](initializing-wmi-support-in-your-driver.md)
 -   [Supporting WMI Data Blocks and Events in Your Driver](supporting-wmi-data-blocks-and-events-in-your-driver.md)
 
- 
+ 
 
- 
+ 
 
 
 

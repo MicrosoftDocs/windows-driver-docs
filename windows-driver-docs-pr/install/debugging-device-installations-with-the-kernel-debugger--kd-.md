@@ -89,9 +89,9 @@ The default time period for an installation process to complete is 5 minutes. If
 
 The default timeout restriction placed on device installations is still in effect while the process is being debugged through the kernel debugger. Because execution of all programs on the system is stopped while broken into the debugger, the amount of time taken by the installation process is tracked the same as it would be on a system that is not being debugged.
 
- 
+ 
 
- 
+ 
 
 
 

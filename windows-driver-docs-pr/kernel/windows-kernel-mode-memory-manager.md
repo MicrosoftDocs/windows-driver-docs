@@ -1,6 +1,5 @@
 ---
 title: Windows Kernel-Mode Memory Manager
-author: windows-driver-content
 description: Windows Kernel-Mode Memory Manager
 ms.assetid: ab464d5b-7bad-494e-80cd-e32ca9e9fa8d
 ms.localizationpriority: medium
@@ -24,9 +23,9 @@ Routines that provide a direct interface to the memory manager are usually prefi
 
 For lists of memory manager routines sorted by functionality, see [Memory Allocation and Buffer Management](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_kernel/#memory-allocation-and-buffer-management).
 
- 
+ 
 
- 
+ 
 
 
 

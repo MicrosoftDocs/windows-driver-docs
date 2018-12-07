@@ -1,6 +1,5 @@
 ---
 title: AVStream Splitters
-author: windows-driver-content
 description: AVStream Splitters
 ms.assetid: c2cfc183-0f4c-4104-a580-234e0483eee4
 keywords:
@@ -68,9 +67,9 @@ The only pin that the minidriver must interact with under normal circumstances i
 
 To simplify the diagrams above, requesters and allocators were omitted from the diagrams. The diagrams are intended to demonstrate only the frame splitting process.
 
- 
+ 
 
- 
+ 
 
 
 

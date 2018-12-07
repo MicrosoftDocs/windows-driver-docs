@@ -31,8 +31,6 @@ ClassGuid={50DD5230-BA8A-11D1-BF5D-0000F805F530}
 HKLM, Software\Microsoft\Cryptography\Calais\Readers,,,
 HKLM, System\CurrentControlSet\Services\SCardSvr,Start,0x00010001,2
 HKLM, System\CurrentControlSet\Services\CertPropSvc,Start,0x00010001,2
- 
- 
 ```
 
 Vendors that supply their own UMDF reader driver need a registry setting to allow PnP filter drivers to sit on top of the UMDF reflector. Specifically, in the driver INF file, this entry is needed:
@@ -46,9 +44,9 @@ There are no other special requirements that are associated with installing smar
 
 For general information about device installation in Windows 2000 and later versions of the operating system, see [Device Installation Overview](https://msdn.microsoft.com/library/windows/hardware/ff549455).
 
- 
 
- 
+
+
 
 
 

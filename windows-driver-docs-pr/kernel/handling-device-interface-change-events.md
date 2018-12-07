@@ -1,6 +1,5 @@
 ---
 title: Handling Device Interface Change Events
-author: windows-driver-content
 description: Handling Device Interface Change Events
 ms.assetid: 8966ca72-41d6-42bb-84a9-8f907a514338
 keywords: ["notifications WDK PnP , device interface changes", "EventCategoryDeviceInterfaceChange notification", "device interface change notifications WDK PnP"]
@@ -30,9 +29,9 @@ When handling a GUID\_DEVICE\_INTERFACE\_REMOVAL event, a notification callback 
 
 When the device is removed, the driver should close the file handle that it opened during the GUID\_DEVICE\_INTERFACE\_ARRIVAL event callback. For an orderly device removal, the driver should close the file handle during the GUID\_TARGET\_DEVICE\_QUERY\_REMOVE event callback. For a surprise removal, the driver should close the file handle during the GUID\_TARGET\_DEVICE\_REMOVE\_COMPLETE event callback. Do not close the file handle during the GUID\_DEVICE\_INTERFACE\_REMOVAL event callback.
 
- 
+ 
 
- 
+ 
 
 
 

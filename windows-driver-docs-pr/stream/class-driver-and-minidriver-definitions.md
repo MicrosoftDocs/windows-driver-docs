@@ -1,6 +1,5 @@
 ---
 title: Class Driver and Minidriver Definitions
-author: windows-driver-content
 description: Class Driver and Minidriver Definitions
 ms.assetid: eb428e8b-0c47-4843-8770-c22088ba5c6c
 keywords:
@@ -28,9 +27,9 @@ The interactions between class driver and minidriver include:
 
 -   Only one device object is created per adapter. Multiple subdevices (called *streams*) supported by the adapter are represented by WDM Streaming pins.
 
- 
+ 
 
- 
+ 
 
 
 

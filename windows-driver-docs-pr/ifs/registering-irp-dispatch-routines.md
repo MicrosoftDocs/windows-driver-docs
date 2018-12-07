@@ -1,6 +1,5 @@
 ---
 title: Registering IRP Dispatch Routines
-author: windows-driver-content
 description: Registering IRP Dispatch Routines
 ms.assetid: 096f4bb7-2326-4e6c-b3db-a2d95ca4982b
 keywords:
@@ -31,9 +30,9 @@ DriverObject->MajorFunction[IRP_MJ_FILE_SYSTEM_CONTROL] = MyLegacyFilterFsContro
 
 Note that the above **FOR** loop assigns a default dispatch routine for all IRP major function codes. This assignment is good practice, because otherwise the I/O Manager completes any unrecognized IRP with STATUS\_INVALID\_DEVICE\_REQUEST by default. File system filter drivers should not reject unfamiliar IRPs in this way, because such requests are usually intended for another driver that is lower in the driver stack. For this reason, the default dispatch routine normally just passes the IRP down to the next-lower-level driver.
 
- 
+ 
 
- 
+ 
 
 
 

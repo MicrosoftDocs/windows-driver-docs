@@ -1,6 +1,5 @@
 ---
 title: Installing the geolocation driver sample
-author: windows-driver-content
 description: Because the geolocation driver sample simulates hardware, there is no Plug-n-Play functionality to automate the installation. Instead, must use a Windows utility, devcon.exe, to install the sample.
 ms.assetid: A08EA9B0-E1D6-47AE-BD89-C43D7D817DAF
 ms.date: 04/20/2017
@@ -29,7 +28,7 @@ The following steps outline the installation process.
 
     **Note**  Do not use Devcon.exe to install released drivers. This recommendation is for testing only.
 
-     
+     
 
 ## Related topics
 [The Sensors Geolocation Driver Sample](sensors-geolocation-driver-sample.md)  

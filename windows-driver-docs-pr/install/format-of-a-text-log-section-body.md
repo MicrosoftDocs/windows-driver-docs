@@ -49,7 +49,7 @@ Indicates whether the log entry is an error message, a warning message, or an in
 </tbody>
 </table>
 
- 
+ 
 
 <a href="" id="time-stamp-field"></a>*time_stamp* field  
 Indicates the system time when the logged event occurred. The *time_stamp* field is optional and SetupAPI does not include a time stamp by default. However, [**SetupWriteTextLog**](https://msdn.microsoft.com/library/windows/hardware/ff552218) supports including a time stamp in a log entry. The format of the *time_stamp* field is the same as the format of the *time_stamp* field that is described in [Format of a Text Log Section Header](format-of-a-text-log-section-header.md).
@@ -132,7 +132,7 @@ Indicates the category of SetupAPI operation that made the log entry. The *event
 </tbody>
 </table>
 
- 
+ 
 
 <a href="" id="indentation-field"></a>*indentation* field  
 Consists of a sequence of zero or more *indentation units*, where an indentation unit is a monospace string that contains five spaces. The *indentation* field is optional and SetupAPI does not include indentation by default. **SetupWriteTextLog** supports changing the number of indentation units that are included in a log entry.
@@ -173,9 +173,9 @@ When SetupAPI creates a section that groups operations that apply to a device in
 <<<  [Exit Status(0x00000000)]
 ```
 
- 
+ 
 
- 
+ 
 
 
 

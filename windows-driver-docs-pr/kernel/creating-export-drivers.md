@@ -1,6 +1,5 @@
 ---
 title: Creating Export Drivers
-author: windows-driver-content
 description: Creating Export Drivers
 ms.assetid: 60ce7d0d-0eab-4af6-890a-45ab206816aa
 keywords: ["export drivers WDK kernel", "loading export drivers WDK kernel", "importing export driver functions", "module-definition files WDK kernel", ".def files", "def files", "kernel-mode drivers WDK , export drivers"]
@@ -52,7 +51,6 @@ You cannot specify the entry point using the **DLLENTRY** macro.
 NTSTATUS DllInitialize(
   _In_ PUNICODE_STRING RegistryPath
 );
-
 ```
 RegistryPath is a pointer to a counted Unicode string specifying the path to the DLL's registry key, **HKEY_LOCAL_MACHINE\CurrentControlSet\Services\DllName**. DLL routines can use this key to store DLL-specific information. The buffer pointed to by RegistryPath is freed once **DllInitialize** exits. Therefore, if the DLL makes use of the key, **DllInitialize** must duplicate the key name. 
 
@@ -73,19 +71,18 @@ In the export driver, the function to be exported should be declared with the DE
 
 ### Loading and Unloading an Export Driver
 
-Export drivers must be installed in the %Windir%\\System32\\Drivers directory. Starting with Windows 2000, the operating system keeps a reference count that indicates the number of times that the export driver's functions have been imported by other drivers. The system decrements this count whenever one of the importing drivers unloads. When the reference count falls to zero, the system unloads the export driver. However, the export driver must contain the standard entry point and unload routines, **DllInitialize** and **DllUnload**, or the operating system will not activate this reference count mechanism.
+Export drivers must be installed in the %Windir%\\System32\\Drivers directory. Starting with Windows 2000, the operating system keeps a reference count that indicates the number of times that the export driver's functions have been imported by other drivers. The system decrements this count whenever one of the importing drivers unloads. When the reference count falls to zero, the system unloads the export driver. However, the export driver must contain the standard entry point and unload routines, **DllInitialize** and **DllUnload**, or the operating system will not activate this reference count mechanism.
 
 The system calls a kernel-mode DLL's DllUnload routine when it unloads the DLL.
 
 ```cpp
 NTSTATUS DllUnload(void);
- 
 ```
 Export drivers must provide DllUnload routines. You can use the DllUnload routine to release any resources used by the routines in the DLL. 
 
- 
 
- 
+
+
 
 
 

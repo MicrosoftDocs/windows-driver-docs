@@ -3,7 +3,6 @@ title: t (Trace)
 description: The t command executes a single instruction or source line and optionally displays the resulting values of all registers and flags. 
 ms.assetid: 0cb3ac96-5d5c-4ebd-8ef1-2fbb066e6458
 keywords: ["t (Trace) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -74,7 +73,7 @@ Specifies a debugger command to execute after the trace is performed. This comma
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -93,9 +92,9 @@ You can use the **t** command to trace instructions in ROM.
 
 When you are quickly tracing many times in WinDbg, the debugging information windows are updated after each trace. If this update causes slower response time, use [**.suspend\_ui (Suspend WinDbg Interface)**](-suspend-ui--suspend-windbg-interface-.md) to temporarily suspend the updating of these windows.
 
- 
+ 
 
- 
+ 
 
 
 

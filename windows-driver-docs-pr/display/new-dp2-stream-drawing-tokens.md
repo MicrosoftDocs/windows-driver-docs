@@ -27,9 +27,9 @@ The main distinction between the two variants is that D3DDP2OP\_DRAWPRIMITIVE2 a
 
 D3DDP2OP\_DRAWPRIMITIVE and D3DDP2OP\_DRAWINDEXEDPRIMITIVE are used then the runtime has not processed the vertex data. Thus, these tokens can supply untransformed vertex data when the hardware supports hardware vertex processing or transformed vertex data when the application supplies transformed data directly to the runtime. In this case, any number of streams (up to **MaxStreams**) can be active. These variants (along with the other new drawing token, D3DDP2OP\_CLIPPEDTRIANGLEFAN) enable optimal code paths in the runtime and the distinctions beyond those described here are not significant to the driver.
 
- 
+ 
 
- 
+ 
 
 
 

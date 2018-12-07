@@ -1,6 +1,5 @@
 ---
 title: Using the MapTransferEx Routine
-author: windows-driver-content
 description: The MapTransferEx routine initializes a set of previously allocated DMA resources and starts a DMA transfer.
 ms.assetid: 79D3DDB2-B134-43B2-A6CC-94035C793047
 ms.localizationpriority: medium
@@ -33,7 +32,7 @@ In contrast, one call to **MapTransferEx** can transfer the entire data buffer f
 <tbody>
 <tr class="odd">
 <td><em>Mdl</em></td>
-<td><p>A pointer to the first MDL in a chain of one or more MDLs. For more information about MDL chains, see [Using MDLs](using-mdls.md).</p></td>
+<td><p>A pointer to the first MDL in a chain of one or more MDLs. For more information about MDL chains, see <a href="using-mdls.md" data-raw-source="[Using MDLs](using-mdls.md)">Using MDLs</a>.</p></td>
 </tr>
 <tr class="even">
 <td><em>Offset</em></td>
@@ -46,7 +45,7 @@ In contrast, one call to **MapTransferEx** can transfer the entire data buffer f
 </tbody>
 </table>
 
- 
+ 
 
 At the start of a **MapTransferEx** call, the **MapTransferEx** routine advances through the MDL chain to find the start of the buffer. The start of the buffer is specified by the *Offset* parameter. Next, working from the start of the buffer to the end, **MapTransferEx** constructs a scatter/gather list in which each buffer fragment in the list is a physically contiguous block of memory from the MDL chain. To construct this list, **MapTransferEx** steps from one physically contiguous block of memory to the next within each MDL, and from one MDL to the next in the MDL chain. List construction finishes when the total amount of buffer memory described by the scatter/gather list equals the number of bytes specified by the \**Length* input parameter. The ordering of the buffer fragments in the resulting scatter/gather list matches the ordering of the physically contiguous blocks in the MDL chain.
 
@@ -67,9 +66,9 @@ For example, if a **MapTransferEx** call can transfer only X bytes to or from a 
 
 If the caller specifies a [*DmaCompletionRoutine*](https://msdn.microsoft.com/library/windows/hardware/hh450991), **MapTransferEx** writes the \**Length* output value before it schedules the *DmaCompletionRoutine* to run. This behavior ensures that the updated \**Length* value is always available before the *DmaCompletionRoutine* runs. For example, if a DMA transfer requires two **MapTransferEx** calls, the *DmaCompletionRoutine* that the first call schedules can obtain the \**Length* output value from the first call. The routine can then use this value to calculate the \**Length* input value for the second call. Typically, the *Length* parameter points to a location in the \**CompletionContext* value that is supplied to the *DmaCompletionRoutine* as a parameter.
 
- 
+ 
 
- 
+ 
 
 
 

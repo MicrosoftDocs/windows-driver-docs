@@ -1,6 +1,5 @@
 ---
 title: Connections and File Structure Locking
-author: windows-driver-content
 description: Connections and File Structure Locking
 ms.assetid: 7286a34f-db8f-4b0a-ab7f-674b9dc641a8
 keywords:
@@ -83,7 +82,7 @@ FOBX</td>
 </tbody>
 </table>
 
- 
+ 
 
 Note that manipulations of SRV\_OPEN and FOBX data structures currently require the same lock as needed for manipulations of FCB data structures. This is simply a memory saving idea. Future versions of Windows may add another resource at the FCB level to remove this restriction so that a set of shared resources could be used to decrease the probability of a collision to an acceptably low level.
 
@@ -136,7 +135,7 @@ The following table summarizes the locks and the modes in which the locks need t
 </tbody>
 </table>
 
- 
+ 
 
 Referencing and dereferencing these data structures must adhere to certain conventions as well.
 
@@ -158,9 +157,9 @@ To execute a Create on one of these data structures, a network mini-redirector d
 
 When you have successfully acquired the lock, insert the node into the table, release the lock, and then see if the server is available. If the server is available, set up the rest of the information and unblock anyone who is waiting on the same server (the SRV\_CALL or NET\_ROOT structures).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_CONNECTION_SETTINGS
-author: windows-driver-content
 description: WDI_TLV_CONNECTION_SETTINGS is a TLV that contains connection settings for OID_WDI_TASK_CONNECT.
 ms.assetid: E08E895D-BFD6-496E-82FE-881FDDB0B88E
 ms.date: 07/18/2017
@@ -38,7 +37,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | [**WDI\_ROAM\_TRIGGER**](https://msdn.microsoft.com/library/windows/hardware/mt269103) (UINT32) | Specifies whether this roam is a critical roam because the AP has set the Disassociation Imminent bit in its BSS Transition Request action frame.                                                                         |
 | UINT8                                                        | Specifies if 802.11v BSS transition is supported. If this bit is set to 1, the Station must set the BSS Transition field of the Extended capabilities element (Bit 19) to 1 in the association request.                   |
 
- 
+ 
 
 Requirements
 ------------
@@ -64,9 +63,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

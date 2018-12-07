@@ -1,6 +1,5 @@
 ---
 title: IRP_MJ_INTERNAL_DEVICE_CONTROL
-author: windows-driver-content
 description: In general, any replacement for an existing driver that supports internal device control requests should handle this request in a DispatchInternalDeviceControl routine.
 ms.date: 08/12/2017
 ms.assetid: fb3d4534-9c6f-4956-b702-5752f9798600
@@ -12,7 +11,7 @@ ms.localizationpriority: medium
 # IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL
 
 
-In general, any replacement for an existing driver that supports internal device control requests should handle this request in a [*DispatchInternalDeviceControl*](https://msdn.microsoft.com/library/windows/hardware/ff543326) routine. Such a driver must support at least the same set of internal I/O control codes as the driver it replaces. Otherwise, existing higher-level drivers might not work with the new driver.
+In general, any replacement for an existing driver that supports internal device control requests should handle this request in a [*DispatchInternalDeviceControl*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine. Such a driver must support at least the same set of internal I/O control codes as the driver it replaces. Otherwise, existing higher-level drivers might not work with the new driver.
 
 Drivers that replace certain lower-level system drivers are required to handle this request. For example, a replacement for the system parallel port driver must continue to support existing parallel class drivers. Note that certain system drivers that handle this request cannot be replaced, in particular, the system-supplied SCSI and video port drivers.
 
@@ -63,15 +62,15 @@ Requirements
 ## See also
 
 
-[*DispatchInternalDeviceControl*](https://msdn.microsoft.com/library/windows/hardware/ff543326)
+[*DispatchInternalDeviceControl*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch)
 
 [**IoAllocateIrp**](https://msdn.microsoft.com/library/windows/hardware/ff548257)
 
 [**IoBuildDeviceIoControlRequest**](https://msdn.microsoft.com/library/windows/hardware/ff548318)
 
- 
+ 
 
- 
+ 
 
 
 

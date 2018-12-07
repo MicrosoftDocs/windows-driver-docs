@@ -98,7 +98,7 @@ Primaries are resources that the runtime creates in calls to the driver's [**Cre
 
 -   Primary destruction cannot be deferred by the Direct3D runtime, and the driver must call the [*pfnDeallocateCb*](https://msdn.microsoft.com/library/windows/hardware/ff568898) function appropriately within a call to the driver's [**DestroyResource(D3D10)**](https://msdn.microsoft.com/library/windows/hardware/ff552797) function.
 
- 
+ 
 
- 
+ 
 

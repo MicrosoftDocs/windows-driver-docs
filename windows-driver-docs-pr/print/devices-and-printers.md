@@ -1,6 +1,5 @@
 ---
 title: Devices and Printers
-author: windows-driver-content
 description: Devices and Printers
 ms.assetid: 78a2a012-a9be-4280-a33e-5d1c29d4ff07
 ms.date: 04/20/2017
@@ -20,9 +19,9 @@ The following screen shot shows a Devices and Printers view and Device Stage.
 
 ![screen shot illustrating devices and printers view and device stage](images/devicestage003.png)
 
- 
+ 
 
- 
+ 
 
 
 

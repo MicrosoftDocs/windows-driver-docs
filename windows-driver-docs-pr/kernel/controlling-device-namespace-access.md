@@ -1,6 +1,5 @@
 ---
 title: Controlling Device Namespace Access
-author: windows-driver-content
 description: Controlling Device Namespace Access
 ms.assetid: e5312297-849f-4b4e-835d-0ce5295c7ce2
 keywords: ["device objects WDK kernel , security", "security WDK device objects", "device namespace access WDK kernel", "namespaces WDK device objects", "file open requests WDK device objects", "open requests WDK device objects"]
@@ -36,9 +35,9 @@ Drivers for devices that do support namespaces can also use two methods to secur
 
 The FILE\_DEVICE\_SECURE\_OPEN characteristic is checked at the top of the stack, so filter device objects must copy the **Characteristics** member of the next-lower device object after attaching.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Storport Miniport Drivers
-author: windows-driver-content
 description: Storport Miniport Drivers
 ms.assetid: 17ab5a07-b7c3-4fed-acf7-3e2491b7bd56
 keywords:
@@ -27,9 +26,9 @@ This section includes the following topics:
 
 [Interlocked Operations in Storport Miniport Drivers](interlocked-operations-in-storport-miniport-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

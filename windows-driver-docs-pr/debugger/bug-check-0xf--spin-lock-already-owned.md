@@ -3,7 +3,6 @@ title: Bug Check 0xF SPIN_LOCK_ALREADY_OWNED
 description: The SPIN_LOCK_ALREADY_OWNED bug check has a value of 0x0000000F. This indicates that a request for a spin lock has been initiated when the spin lock was already owned.
 ms.assetid: 8347a78a-528e-4767-a13d-ad2fd8f71818
 keywords: ["Bug Check 0xF SPIN_LOCK_ALREADY_OWNED", "SPIN_LOCK_ALREADY_OWNED"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -38,9 +37,9 @@ Resolution
 
 Ensure that you are not recursively acquiring the lock. And, for threads that hold a spin lock, ensure that you are not decreasing the thread IRQL to a level below the IRQL of the spin lock that it is holding.
 
- 
+ 
 
- 
+ 
 
 
 

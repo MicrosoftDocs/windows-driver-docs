@@ -25,7 +25,7 @@ To create these display drivers, perform the following steps:
 
     -   [What's new for Windows 8.1 display drivers (WDDM 1.3)](what-s-new-for-windows-8-1-display-drivers--wddm-1-3-.md)
     -   [What's new for Windows 8 display drivers (WDDM 1.2)](what-s-new-for-windows-8-display-drivers.md)
-    -   [Windows Display Driver Model Enhancements (WDDM 1.2)](http://go.microsoft.com/fwlink/p/?LinkId=226814)
+    -   [Windows Display Driver Model Enhancements (WDDM 1.2)](https://go.microsoft.com/fwlink/p/?LinkId=226814)
 -   Step 3: Learn about user-mode display drivers and issues with display miniport drivers from the [User-Mode Display Drivers](user-mode-display-drivers.md) and [Multiple Monitors and Video Present Networks](multiple-monitors-and-video-present-networks.md) sections.
 
 -   Step 4: Learn about the Windows driver build, test, and debug processes and tools.
@@ -48,13 +48,13 @@ To create these display drivers, perform the following steps:
 
 -   Step 9: Sign and distribute your display drivers.
 
-    The final step is to sign (optional) and distribute the driver. If your driver meets the quality standards that are defined in the [Windows Hardware Certification Kit](http://go.microsoft.com/fwlink/p/?linkid=248337) (formerly Windows Logo Kit or WLK), you can distribute it through the Microsoft Windows Update program. For more information, see [Distributing a driver package](https://msdn.microsoft.com/windows-drivers/develop/distributing_a_driver_package_win8).
+    The final step is to sign (optional) and distribute the driver. If your driver meets the quality standards that are defined in the [Windows Hardware Certification Kit](https://go.microsoft.com/fwlink/p/?linkid=248337) (formerly Windows Logo Kit or WLK), you can distribute it through the Microsoft Windows Update program. For more information, see [Distributing a driver package](https://msdn.microsoft.com/windows-drivers/develop/distributing_a_driver_package_win8).
 
 These are the basic steps. Additional steps might be necessary based on the needs of your individual driver.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -58,9 +58,9 @@ Te.exe /name:"*PNPSurpriseRemoveAndRestartDevice" Devfund_PnPDTest.dll /P:"DQ=De
 * [How to run the HCK Test Suites in WDK 8.1](run-the-hck-test-suites-in-the-wdk.md)
 * [Test Authoring and Execution Framework (TAEF)](https://msdn.microsoft.com/Library/Windows/Hardware/Hh439725)
 * [Te.exe Command Options](https://msdn.microsoft.com/Library/Windows/Hardware/Hh439743)
- 
+ 
 
- 
+ 
 
 
 

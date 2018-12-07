@@ -1,6 +1,5 @@
 ---
 title: Supporting Idle Power-Down in UMDF Drivers
-author: windows-driver-content
 description: Supporting Idle Power-Down in UMDF Drivers
 ms.assetid: 128f009e-1847-493e-90e3-2fe8c141b158
 keywords:
@@ -52,9 +51,9 @@ If the device can wake itself from a low-power state, the driver for the device'
 
 For information about registry entries that control a device's idle capabilities, see [User Control of Device Idle and Wake Behavior in UMDF](user-control-of-device-idle-and-wake-behavior-in-umdf.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -461,7 +461,7 @@ Just like any other physical camera, it is recommended that your stub driver man
 
 This ensures that applications listen for device add/removal via the PnP APIs get the proper notifications. And ensures that a source that is no longer available cannot be enumerated.
 
-For UMDF and KMDF drivers, see the [WdfDeviceSetDeviceState] (https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicesetdevicestate) function documentation.
+For UMDF and KMDF drivers, see the [WdfDeviceSetDeviceState](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicesetdevicestate) function documentation.
 
 For WMD drivers, see the [IoSetDeviceInterfaceState](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iosetdeviceinterfacestate) function documentation.
 

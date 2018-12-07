@@ -1,6 +1,5 @@
 ---
 title: OID_GEN_LINK_PARAMETERS
-author: windows-driver-content
 description: As a set, NDIS and overlying drivers use the OID_GEN_LINK_PARAMETERS OID to set the current link state of a miniport adapter. The miniport driver receives the duplex state, link speeds, and pause functions in an NDIS_LINK_PARAMETERS structure.
 ms.assetid: 6a8ee5b1-ac68-424f-b749-45b085ca1d75
 ms.date: 08/08/2017
@@ -33,7 +32,6 @@ The NDIS\_LINK\_PARAMETERS structure is defined as follows:
          NDIS_SUPPORTED_PAUSE_FUNCTIONS PauseFunctions;
          ULONG AutoNegotiationFlags;
     } NDIS_LINK_PARAMETERS, *PNDIS_LINK_PARAMETERS;
-  
 ```
 
 
@@ -86,9 +84,9 @@ The miniport driver should auto-negotiate the support for pause frames with the 
 Remarks
 -------
 
-**Note**  Setting OID\_GEN\_LINK\_PARAMETERS can cause a loss of connectivity. Miniport drivers must reconfigure the miniport adapter when this OID is set. For example, the miniport driver can reset the miniport adapter with the resulting loss of existing connections. The specific mechanism for reconfiguration is application dependent.
+**Note**  Setting OID\_GEN\_LINK\_PARAMETERS can cause a loss of connectivity. Miniport drivers must reconfigure the miniport adapter when this OID is set. For example, the miniport driver can reset the miniport adapter with the resulting loss of existing connections. The specific mechanism for reconfiguration is application dependent.
 
- 
+
 
 If the link state of the miniport adapter changes because of the OID\_GEN\_LINK\_PARAMETERS set request, the miniport driver should generate an [**NDIS\_STATUS\_LINK\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff567391) status indication to notify NDIS and overlying drivers of the new link state.
 
@@ -117,9 +115,9 @@ Requirements
 
 [OID\_GEN\_MEDIA\_DUPLEX\_STATE](oid-gen-media-duplex-state.md)
 
- 
 
- 
+
+
 
 
 

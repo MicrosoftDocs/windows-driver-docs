@@ -3,7 +3,6 @@ title: Disable stack extension
 description: Disable stack extension
 ms.assetid: e4c95103-4f98-4f79-a46c-c8040e39791b
 keywords: ["Disable stack extension (global flag)"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -41,15 +40,15 @@ The **Disable stack extension** flag prevents the kernel from extending the stac
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
 This feature is used to simulate low memory conditions (where stack extensions fail) and to test the strategic system processes that are expected to run well even with low memory.
 
- 
+ 
 
- 
+ 
 
 
 

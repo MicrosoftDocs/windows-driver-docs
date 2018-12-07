@@ -3,7 +3,6 @@ title: Bug Check 0xE0 ACPI_BIOS_FATAL_ERROR
 description: The ACPI_BIOS_FATAL_ERROR bug check has a value of 0x000000E0. This indicates that one of your computer components is faulty.
 ms.assetid: 4cc4c96e-6e0e-4bf1-8e72-4e6f39848914
 keywords: ["Bug Check 0xE0 ACPI_BIOS_FATAL_ERROR", "ACPI_BIOS_FATAL_ERROR"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -40,9 +39,9 @@ If you do not have this tool, you must contact the system vendor and report this
 
 Microsoft cannot address this error. Only the hardware vendor is qualified to analyze it.
 
- 
+ 
 
- 
+ 
 
 
 

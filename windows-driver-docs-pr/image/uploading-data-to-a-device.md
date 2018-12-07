@@ -1,6 +1,5 @@
 ---
 title: Uploading Data to a Device
-author: windows-driver-content
 description: Uploading Data to a Device
 ms.assetid: 50fc5f56-3758-4151-9748-dd88544006f1
 ms.date: 04/20/2017
@@ -28,9 +27,9 @@ This section includes:
 
 [Driver Behavior on Upload](driver-behavior-on-upload.md)
 
- 
+ 
 
- 
+ 
 
 
 

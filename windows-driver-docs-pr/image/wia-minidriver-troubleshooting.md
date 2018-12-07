@@ -1,6 +1,5 @@
 ---
 title: WIA Minidriver Troubleshooting
-author: windows-driver-content
 description: WIA Minidriver Troubleshooting
 ms.assetid: a0944bdd-56c4-4f7b-b542-eb353cd4d1f2
 ms.date: 04/20/2017
@@ -13,7 +12,7 @@ ms.localizationpriority: medium
 
 
 
-By default, the WIA service logs errors to a file named *wiadebug.log* in the **%***windir***%** directory. The information that the WIA service places in this file can be very helpful during driver development. The following example depicts a typical problem and shows how the information in the *wiadebug.log* file can be used to find a solution to the problem.
+By default, the WIA service logs errors to a file named *wiadebug.log* in the **%**<em>windir</em>**%** directory. The information that the WIA service places in this file can be very helpful during driver development. The following example depicts a typical problem and shows how the information in the *wiadebug.log* file can be used to find a solution to the problem.
 
 A developer writes an application to test a scanner driver that is under development. As one of the tests, the developer attempts to set the scanner's dots per inch (dpi) to 1200, but notices that this action produces an error. A look at the Wiadebug.log file shows the following:
 
@@ -48,7 +47,7 @@ Now that the problem is identified, it is up to the developer to determine wheth
 
 The logging level is controlled by an entry in the registry. For WIA, this key resides in:
 
-**HKLM\\System\\CurrentControlSet\\Control\\StillImage\\Debug\\***MODULE\_NAME***\\DebugFlags**
+**HKLM\\System\\CurrentControlSet\\Control\\StillImage\\Debug\\**<em>MODULE\_NAME</em>**\\DebugFlags**
 
 In this example, MODULE\_NAME is the name of the appropriate binary module. For the WIA service, this is *wiaservc.dll*. The value in **DebugFlags** controls the logging level. Three of the settings are given in the following table:
 

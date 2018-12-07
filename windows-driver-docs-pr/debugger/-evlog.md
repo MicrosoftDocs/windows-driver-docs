@@ -3,7 +3,6 @@ title: evlog
 description: The evlog extension displays, changes, or backs up the event log.
 ms.assetid: 72038e3e-ff12-4df1-8f55-c02258d764aa
 keywords: ["event log", "evlog Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -133,7 +132,7 @@ Displays some brief Help text for this extension or one of its options in the De
 </tbody>
 </table>
 
- 
+ 
 
 The **!evlog** extension can only be used during live debugging.
 
@@ -240,9 +239,9 @@ Please look for more details in TroubleShooting section in Security Help.
 WARNING: Max record count (4) exceeded, increase record count to view more
 ```
 
- 
+ 
 
- 
+ 
 
 
 

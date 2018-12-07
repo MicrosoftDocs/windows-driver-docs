@@ -3,7 +3,6 @@ title: .dumpcab (Create Dump File CAB)
 description: The .dumpcab command creates a CAB file containing the current dump file.
 ms.assetid: 65ed766f-b049-47b0-90d7-e21d510a35ba
 keywords: [".dumpcab (Create Dump File CAB) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -55,7 +54,7 @@ The CAB file name, including extension. *CabName* can include an absolute or rel
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -70,9 +69,9 @@ If you are debugging a live target and want to create a dump file and place it i
 
 The **.dumpcab** command cannot be used to place multiple dump files into one CAB file.
 
- 
+ 
 
- 
+ 
 
 
 

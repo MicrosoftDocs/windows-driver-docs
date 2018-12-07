@@ -1,6 +1,5 @@
 ---
 title: Using Core Drivers
-author: windows-driver-content
 description: Using Core Drivers
 ms.assetid: 333f3f17-0cdc-48d3-bb30-f8e2d7216d89
 ms.date: 04/20/2017
@@ -43,9 +42,9 @@ PackageAware=TRUE
 CoreDriverDependencies={D20EA372-DD35-4950-9ED8-A6335AFE79F0},{GUID1}
 ```
 
- 
+ 
 
- 
+ 
 
 
 

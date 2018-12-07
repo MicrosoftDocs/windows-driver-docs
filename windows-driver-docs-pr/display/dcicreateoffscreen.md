@@ -23,9 +23,9 @@ Do not use this function; use the latest DirectX Graphics interfaces to communic
 
 The **DCICreateOffscreen** function creates an offscreen surface for the display device.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Example Passing the IRP Down Without Setting a Completion Routine
-author: windows-driver-content
 description: Example Passing the IRP Down Without Setting a Completion Routine
 ms.assetid: d18d3ead-2cec-4ea6-ac4c-b809ba985f23
 keywords:
@@ -50,9 +49,9 @@ After [**IoCallDriver**](https://msdn.microsoft.com/library/windows/hardware/ff5
 
 If you call [**IoSkipCurrentIrpStackLocation**](https://msdn.microsoft.com/library/windows/hardware/ff550355) for an IRP, you cannot set a completion routine for it.
 
- 
+ 
 
- 
+ 
 
 
 

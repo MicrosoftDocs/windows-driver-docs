@@ -31,11 +31,11 @@ The kernel-mode components have well-defined functionality that is isolated in e
 
 Audio endpoint refers to components such as headphones and loudspeakers collectively. As shown in the diagram, an application communicates with an audio endpoint via the endpoint buffer, stream and device pipes and a stack of kernel-mode drivers.
 
-The concepts of pipes, APOs, and sAPOs are explained in more detail in the [Exploring the Windows Vista Audio Engine](exploring-the-windows-vista-audio-engine.md) topic. For more information about the system-supplied sAPOs, see the [Windows Vista Default sAPOs](windows-vista-default-sapos.md) topic.
+The concepts of pipes, APOs, and sAPOs are explained in more detail in the [Exploring the Windows Vista Audio Engine](exploring-the-windows-vista-audio-engine.md) topic. For more information about the system-supplied sAPOs, see the [Windows Default APOs](windows-default-apos.md) topic.
 
- 
+ 
 
- 
+ 
 
 
 

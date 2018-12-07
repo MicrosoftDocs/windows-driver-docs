@@ -1,6 +1,5 @@
 ---
 title: Understanding the Path of Wait/Wake IRPs through a Device Tree
-author: windows-driver-content
 description: Understanding the Path of Wait/Wake IRPs through a Device Tree
 ms.assetid: 35118367-d20b-45c9-a296-656028339c59
 keywords: ["wait/wake IRPs WDK power management , device tree path", "bus drivers WDK power management", "USB WDK power management", "function drivers WDK power management", "FDOs WDK power management", "filter DOs WDK power management", "physical device objects WDK power management", "PDOs WDK power management"]
@@ -86,9 +85,9 @@ When a wake-up signal arrives from either the keyboard or modem, the USB hub dri
 
 A driver does not, however, send itself an IRP to reenable wait/wake on the same device on which a wake-up signal just arrived. Only the device power policy manager can do that. Reenabling wait/wake is not automatic.
 
- 
+ 
 
- 
+ 
 
 
 

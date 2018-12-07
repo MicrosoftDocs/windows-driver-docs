@@ -1,6 +1,5 @@
 ---
 title: NDIS_STATUS_WW_INDICATION
-author: windows-driver-content
 description: The NDIS_STATUS_WW_INDICATION status is the same as the NDIS_STATUS_MEDIA_SPECIFIC_INDICATION status.
 ms.assetid: 8c0a7b33-bab3-4e8c-a1f0-8564633dbc7c
 ms.date: 07/18/2017
@@ -46,9 +45,9 @@ Requirements
 
 [OID\_WW\_GEN\_INDICATION\_REQUEST](https://msdn.microsoft.com/library/windows/hardware/ff561411)
 
- 
+ 
 
- 
+ 
 
 
 

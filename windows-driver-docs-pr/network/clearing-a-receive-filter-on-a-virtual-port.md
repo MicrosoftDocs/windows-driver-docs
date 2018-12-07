@@ -19,9 +19,9 @@ Before the overlying driver issues the [OID\_RECEIVE\_FILTER\_CLEAR\_FILTER](htt
 
 An overlying driver must clear all of the filters that it set on a VPort before it frees the VPort. An overlying driver must also clear all of the filters that it set on the default VPort before it closes its binding to or detached from the network adapter.
 
- 
+ 
 
- 
+ 
 
 
 

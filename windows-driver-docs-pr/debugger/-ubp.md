@@ -3,7 +3,6 @@ title: ubp
 description: The ubp extension sets a breakpoint in user space.
 ms.assetid: 1aaa6bec-59d3-4e37-a1c6-af3554da809f
 keywords: ["ubp Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -48,7 +47,7 @@ Specifies the hexadecimal virtual address of the location in user space where th
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -76,9 +75,9 @@ Each breakpoint is assigned a *breakpoint number*. To find out the breakpoint nu
 
 [User Space and System Space](user-space-and-system-space.md)
 
- 
+ 
 
- 
+ 
 
 
 

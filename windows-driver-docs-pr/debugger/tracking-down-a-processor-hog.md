@@ -3,7 +3,6 @@ title: Tracking Down a Processor Hog
 description: Tracking Down a Processor Hog
 ms.assetid: 8ecd000d-34e6-4471-a040-b50627915a20
 keywords: ["processor hog", "hogging a processor", "starving applications"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -135,9 +134,9 @@ Use the following procedure to correct a bug of this sort.
 
 10. Use the [**p (Step)**](p--step-.md) command to proceed through the function until you identify the place where the looping sequence of instructions are. You can then analyze the application's source code to identify the cause of the spinning thread. The cause will usually turn out to be a problem in the logic of a **while**, **do-while**, **goto**, or **for** loop.
 
- 
+ 
 
- 
+ 
 
 
 

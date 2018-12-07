@@ -32,9 +32,9 @@ To install a device that is required to start Windows, but whose driver is not i
 
 3.  When Windows displays this message, press the specified **F***n* key to install the boot-start driver and then insert a [boot-start driver distribution disk](#boot-start-driver-distribution-disk).
 
-**Note**  This procedure demonstrates how you can install a driver that is not included "in-the-box" with Windows. Do not use this procedure to replace or update a driver that is included with Windows. Instead, wait until Windows starts and use Device Manager to perform an "update driver" operation on the device.
+**Note**  This procedure demonstrates how you can install a driver that is not included "in-the-box" with Windows. Do not use this procedure to replace or update a driver that is included with Windows. Instead, wait until Windows starts and use Device Manager to perform an "update driver" operation on the device.
 
- 
+
 
 When Windows fails to start, certain error messages that are displayed can indicate that a boot-start driver is missing. The following table describes several error messages and their possible causes.
 
@@ -65,7 +65,7 @@ When Windows fails to start, certain error messages that are displayed can indic
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="boot-start-driver-distribution-disk"></a> Boot-Start Driver Distribution Disk
 
@@ -73,63 +73,65 @@ A *boot-start driver distribution disk* is a medium, such as a floppy disk or US
 
 The following requirements and recommendations apply to platform-specific and cross-platform distributions disks:
 
--   Platform-specific distribution disks (Windows Server 2003 and earlier)
+- Platform-specific distribution disks (Windows Server 2003 and earlier)
 
-    Windows requires a platform-specific distribution disk for each platform that a driver supports. A platform-specific distribution disk contains one *TxtSetup.oem* file and the related driver files. The *TxtSetup.oem* file must be located in the root directory of the distribution disk.
+  Windows requires a platform-specific distribution disk for each platform that a driver supports. A platform-specific distribution disk contains one *TxtSetup.oem* file and the related driver files. The *TxtSetup.oem* file must be located in the root directory of the distribution disk.
 
--   Cross-platform and platform-specific distribution disks (Windows Server 2003 Service Pack 1 (SP1) and later versions)
+- Cross-platform and platform-specific distribution disks (Windows Server 2003 Service Pack 1 (SP1) and later versions)
 
-    Windows supports cross-platform distribution disks that contain two or more platform-specific *TxtSetup.oem* files and the related driver files.
+  Windows supports cross-platform distribution disks that contain two or more platform-specific *TxtSetup.oem* files and the related driver files.
 
-    To distinguish between platforms on a cross-platform distribution disk, use the platform directories that are listed in the following table.
+  To distinguish between platforms on a cross-platform distribution disk, use the platform directories that are listed in the following table.
 
-    <table>
-    <colgroup>
-    <col width="33%" />
-    <col width="33%" />
-    <col width="33%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th align="left">Platform</th>
-    <th align="left">Platform directory</th>
-    <th align="left">Default directory</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><p>x86-based</p></td>
-    <td align="left"><p>A:\i386</p></td>
-    <td align="left"><p>A:\\\\</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p>Itanium-based</p></td>
-    <td align="left"><p>A:\ia64</p></td>
-    <td align="left"><p>A:\\\\</p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p>x64-based</p></td>
-    <td align="left"><p>A:\amd64</p></td>
-    <td align="left"><p>A:\\\\</p></td>
-    </tr>
-    </tbody>
-    </table>
+  <table>
+  <colgroup>
+  <col width="33%" />
+  <col width="33%" />
+  <col width="33%" />
+  </colgroup>
+  <thead>
+  <tr class="header">
+  <th align="left">Platform</th>
+  <th align="left">Platform directory</th>
+  <th align="left">Default directory</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr class="odd">
+  <td align="left"><p>x86-based</p></td>
+  <td align="left"><p>A:\i386</p></td>
+  <td align="left"><p>A:\\</p></td>
+  </tr>
+  <tr class="even">
+  <td align="left"><p>Itanium-based</p></td>
+  <td align="left"><p>A:\ia64</p></td>
+  <td align="left"><p>A:\\</p></td>
+  </tr>
+  <tr class="odd">
+  <td align="left"><p>x64-based</p></td>
+  <td align="left"><p>A:\amd64</p></td>
+  <td align="left"><p>A:\\</p></td>
+  </tr>
+  </tbody>
+  </table>
 
-     
 
-    On a cross-platform distribution disk, Windows uses the platform-specific *TxtSetup.oem* file that is located in the platform directory that corresponds to the platform on which Windows is running. If a corresponding platform directory that contains a platform-specific *TxtSetup.oem* file does not exist, Windows uses the *TxtSetup.oem* file in the default directory, if one is present.
 
-    Windows also supports platform-specific distribution disks. A platform-specific distribution disk contains one platform-specific *TxtSetup.oem* file and the related driver files. The *TxtSetup.oem* file must be located either in its corresponding platform directory, as is done for cross-platform distribution disks, or in the default directory of the distribution disk.
 
-    The driver files for a given platform on a cross-platform distribution disk or on a platform-specific distribution disk must be located relative to the directory that contains the platform-specific *TxtSetup.oem* file.
+On a cross-platform distribution disk, Windows uses the platform-specific *TxtSetup.oem* file that is located in the platform directory that corresponds to the platform on which Windows is running. If a corresponding platform directory that contains a platform-specific *TxtSetup.oem* file does not exist, Windows uses the *TxtSetup.oem* file in the default directory, if one is present.
 
-    **Tip**  Although not required, we recommend that a *TxtSetup.oem* file always be placed in a corresponding platform directory. Using platform directories eliminates the possibility that Windows might attempt to use a *TxtSetup.oem* file that is incompatible with the platform on which Windows is running. For example, if a user attempts an unattended installation on a platform with a distribution disk that does not contain a corresponding platform directory, Windows cannot determine whether the *TxtSetup.oem* file in the default directory is compatible with the platform. If a driver fails to load because the driver is incompatible with the platform, Windows displays an error message and terminates the unattended installation.
+Windows also supports platform-specific distribution disks. A platform-specific distribution disk contains one platform-specific *TxtSetup.oem* file and the related driver files. The *TxtSetup.oem* file must be located either in its corresponding platform directory, as is done for cross-platform distribution disks, or in the default directory of the distribution disk.
 
-     
+The driver files for a given platform on a cross-platform distribution disk or on a platform-specific distribution disk must be located relative to the directory that contains the platform-specific *TxtSetup.oem* file.
 
- 
+**Tip**  Although not required, we recommend that a *TxtSetup.oem* file always be placed in a corresponding platform directory. Using platform directories eliminates the possibility that Windows might attempt to use a *TxtSetup.oem* file that is incompatible with the platform on which Windows is running. For example, if a user attempts an unattended installation on a platform with a distribution disk that does not contain a corresponding platform directory, Windows cannot determine whether the *TxtSetup.oem* file in the default directory is compatible with the platform. If a driver fails to load because the driver is incompatible with the platform, Windows displays an error message and terminates the unattended installation.
 
- 
+
+
+
+
+
+
 
 
 

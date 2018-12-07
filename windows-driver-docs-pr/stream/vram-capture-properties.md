@@ -1,6 +1,5 @@
 ---
 title: VRAM Capture Properties
-author: windows-driver-content
 description: VRAM Capture Properties
 ms.assetid: e3ab3a10-42af-488f-9b13-d2c6d5aac615
 keywords:
@@ -73,9 +72,9 @@ The capture driver should:
 
 The **CCapturePin::ProcessD3DSurface** method in *Capture.cpp* of the [AVStream Simulated Hardware Sample Driver (AVSHwS)](http://go.microsoft.com/fwlink/p/?linkid=256083) in the Windows Driver Kit (WDK) samples show one way to implement this callback for VRAM support.
 
- 
+ 
 
- 
+ 
 
 
 

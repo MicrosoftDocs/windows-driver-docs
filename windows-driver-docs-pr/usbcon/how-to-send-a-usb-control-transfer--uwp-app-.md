@@ -1,7 +1,6 @@
 ---
 Description: An app that communicates with a USB device usually sends several control transfers requests.
 title: How to send a USB control transfer (UWP app)
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -70,12 +69,7 @@ For the control transfer, you must populate a *setup packet* that contains all i
     | **wValue**                | [**UsbSetupPacket.Value**](https://msdn.microsoft.com/library/windows/apps/dn278452)                            | Depends on the type of request.                                                                                                                                                                                                        |
     | **wIndex**                | [**UsbSetupPacket.Index**](https://msdn.microsoft.com/library/windows/apps/dn278433)                            | Depends on the type of request.                                                                                                                                                                                                        |
     | **wLength**               | [**UsbSetupPacket.Length**](https://msdn.microsoft.com/library/windows/apps/dn278435)                          | Length of the data packet sent or received in this request.                                                                                                                                                                            |
-
-     
-
-    **Note**  For certain control transfers, you might need to provide **bmRequestType** as a raw byte. In that case, you can set the byte in the [**UsbControlRequestType.AsByte**](https://msdn.microsoft.com/library/windows/apps/dn263827) property.
-
-     
+**Note**  For certain control transfers, you might need to provide **bmRequestType** as a raw byte. In that case, you can set the byte in the [**UsbControlRequestType.AsByte**](https://msdn.microsoft.com/library/windows/apps/dn263827) property.
 
 ## Step 2: Start an asynchronous operation to send the control transfer
 
@@ -111,7 +105,6 @@ async Task SetSuperMuttLedBlinkPatternAsync(Byte pattern)
 
             MainPage.Current.NotifyUser("The Led blink pattern is set to " + pattern.ToString(), NotifyType.StatusMessage);
         }
-
 ```
 
 This example code shows how to send a control transfer that changes the blinking pattern on the SuperMUTT device. The setup packet for the transfer contains a vendor-defined command. The example is in Scenario2\_ControlTransfer.cpp.
@@ -121,7 +114,7 @@ async Task<IBuffer> SendVendorControlTransferInToDeviceRecipientAsync(Byte vendo
  {
     // Data will be written to this buffer when we receive it
     var buffer = new Windows.Storage.Streams.Buffer(dataPacketLength);
-            
+
     UsbSetupPacket initSetupPacket = new UsbSetupPacket
     {
         RequestType = new UsbControlRequestType
@@ -138,9 +131,9 @@ async Task<IBuffer> SendVendorControlTransferInToDeviceRecipientAsync(Byte vendo
 }
 ```
 
- 
 
- 
+
+
 
 
 

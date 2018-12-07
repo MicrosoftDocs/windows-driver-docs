@@ -1,6 +1,5 @@
 ---
 title: User Control of Device Idle and Wake Behavior
-author: windows-driver-content
 description: User Control of Device Idle and Wake Behavior
 ms.assetid: 776fcf82-2235-489a-8d46-3ad230da3402
 keywords:
@@ -38,9 +37,9 @@ Your driver's INF file can use an [**INF AddReg directive**](https://msdn.micros
 
 The framework examines the **WdfDefaultIdleInWorkingState** and **WdfDefaultWakeFromSleepState** registry values only if the driver has set the **UserControlOfIdleSettings** or **UserControlOfWakeSettings** member to **IdleAllowUserControl** or **WakeAllowUserControl**, respectively, and the **Enabled** member to **WdfTrue** or **WdfUseDefault**, in the appropriate settings structure.
 
- 
+ 
 
- 
+ 
 
 
 

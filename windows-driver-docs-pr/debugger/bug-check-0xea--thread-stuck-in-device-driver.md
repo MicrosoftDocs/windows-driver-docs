@@ -3,7 +3,6 @@ title: Bug Check 0xEA THREAD_STUCK_IN_DEVICE_DRIVER
 description: The THREAD_STUCK_IN_DEVICE_DRIVER bug check has a value of 0x000000EA. This indicates that a thread in a device driver is endlessly spinning.
 ms.assetid: f3d6acaf-3445-4fc3-b4ed-b72a74a32b57
 keywords: ["Bug Check 0xEA THREAD_STUCK_IN_DEVICE_DRIVER", "THREAD_STUCK_IN_DEVICE_DRIVER"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -56,7 +55,7 @@ The THREAD\_STUCK\_IN\_DEVICE\_DRIVER bug check has a value of 0x000000EA. This 
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -78,9 +77,9 @@ Debugging this error in an interactive manner such as this will enable you to fi
 
 On multiprocessor machines (OS build 3790 or earlier), you can hit a time out if the spinning thread is interrupted by a hardware interrupt and an ISR or DPC routine is running at the time of the bug check. This is because the time out's work item can be delivered and handled on the second CPU and the same time. If this occurs, you must look deeper at the offending thread's stack to determine the spinning code which caused the time out to occur. Use the [**dds (Display Words and Symbols)**](dds--dps--dqs--display-words-and-symbols-.md) command to do this.
 
- 
+ 
 
- 
+ 
 
 
 

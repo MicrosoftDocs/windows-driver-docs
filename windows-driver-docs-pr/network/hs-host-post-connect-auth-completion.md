@@ -1,6 +1,5 @@
 ---
 title: HS_HOST_POST_CONNECT_AUTH_COMPLETION function
-author: windows-driver-content
 description: The HS_HOST_POST_CONNECT_AUTH_COMPLETION function indicates the success or failure of an authentication attempt following a Wi-Fi connection setup at layer 2.
 ms.assetid: 2c69802b-968b-400c-b02c-c2d39fa51d5a
 keywords: 
@@ -80,9 +79,9 @@ Requirements
 
 [**HS\_PLUGIN\_START\_POST\_CONNECT\_AUTH**](hs-plugin-start-post-connect-auth.md)
 
- 
+ 
 
- 
+ 
 
 
 

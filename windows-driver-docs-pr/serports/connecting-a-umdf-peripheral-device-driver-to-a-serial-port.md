@@ -1,6 +1,5 @@
 ---
 title: Connecting a UMDF Peripheral Driver to a Serial Port
-author: windows-driver-content
 description: The UMDF driver for a peripheral device on a SerCx2-managed serial port requires certain hardware resources to operate the device. Included in these resources is the information that the driver needs to open a logical connection to the serial port.
 ms.assetid: 75FC5E79-59E9-4C07-9119-A4FE81CC318E
 ms.date: 04/20/2017
@@ -224,9 +223,9 @@ The preceding code example does the following:
 5.  The **Send** method sends the formatted write request to the serially connected peripheral device. The `Flags` variable indicates whether the write request is to be sent synchronously or asynchronously.
 6.  If the request is sent synchronously, the [**IWDFIoRequest::DeleteWdfObject**](https://msdn.microsoft.com/library/windows/hardware/ff560210) method deletes both the I/O request object pointed to by `pWdfIoRequest` and the child object pointed to by `pInputMemory`. The **IWDFIoRequest** interface inherits this method from the [**IWDFObject**](https://msdn.microsoft.com/library/windows/hardware/ff560200) interface. If the request is sent asynchronously, the call to the **DeleteWdfObject** method should occur later, in the driver's **OnCompletion** method.
 
- 
+ 
 
- 
+ 
 
 
 

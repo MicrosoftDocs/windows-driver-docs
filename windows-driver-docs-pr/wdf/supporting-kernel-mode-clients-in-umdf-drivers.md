@@ -1,6 +1,5 @@
 ---
 title: Supporting Kernel-Mode Clients in UMDF Drivers
-author: windows-driver-content
 description: This topic describes how a User-Mode Driver Framework (UMDF) driver supports kernel-mode clients, starting in UMDF version 2.
 ms.assetid: 5C0180BF-F0C7-4225-8388-C3315C282516
 ms.date: 04/20/2017
@@ -42,9 +41,9 @@ A UMDF driver can process I/O requests from a kernel-mode driver only if the ker
 
     Typically, the framework does not validate the information value that a UMDF driver passes to [**WdfRequestCompleteWithInformation**](https://msdn.microsoft.com/library/windows/hardware/ff549948). (This parameter usually specifies the number of transferred bytes.) The framework validates the information value only for output buffers, and only for the [buffered I/O](https://msdn.microsoft.com/library/windows/hardware/ff540701#direct) data access method. (For example, the framework verifies that the number of transferred bytes does not exceed the output buffer size of a read operation, if the access method is buffered I/O.)
 
- 
+ 
 
- 
+ 
 
 
 

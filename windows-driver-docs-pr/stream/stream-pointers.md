@@ -1,6 +1,5 @@
 ---
 title: Stream Pointers
-author: windows-driver-content
 description: Stream Pointers
 ms.assetid: 4bac68a0-34d2-431a-9ed9-8a42751a736f
 keywords:
@@ -34,9 +33,9 @@ ms.localizationpriority: medium
 
 [Stream Pointer Timers](stream-pointer-timers.md)
 
- 
+ 
 
- 
+ 
 
 
 

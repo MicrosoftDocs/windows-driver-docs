@@ -3,7 +3,6 @@ title: amli lc
 description: The amli lc extension lists all active ACPI contexts.
 ms.assetid: 070db570-ab8c-47ce-88fa-dc5f16c1c2ee
 keywords: ["amli lc Windows Debugging"]
-ms.author: domars
 ms.date: 09/17/2018
 topic_type:
 - apiref
@@ -54,7 +53,7 @@ AMLI(? for help)-> lc
 
 The **Obj** field gives the full path and name of the method as it appears in the ACPI tables.
 
-The **Ctxt** field gives the address of the context block. The asterisk (**\***) indicates the *current context*. This is the context that was being executed by the interpreter when the break occurred.
+The **Ctxt** field gives the address of the context block. The asterisk (**\\**<em>) indicates the *current context</em>. This is the context that was being executed by the interpreter when the break occurred.
 
 The abbreviation **pbOp** indicates the instruction pointer (pointer to binary op codes).
 
@@ -111,11 +110,11 @@ There are nine flags that can be displayed in the **Flgs** section. If a flag is
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Bidirectional Communication Schema Hierarchy
-author: windows-driver-content
 description: Bidirectional Communication Schema Hierarchy
 ms.assetid: b3435c17-f72b-4925-8d13-bd3e71b4947e
 keywords:
@@ -114,9 +113,9 @@ Status
  Severity
 ```
 
- 
+ 
 
- 
+ 
 
 
 

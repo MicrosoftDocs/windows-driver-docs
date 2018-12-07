@@ -1,6 +1,5 @@
 ---
 title: Handling interrupts in UMDF drivers
-author: windows-driver-content
 description: Handling Interrupts
 ms.assetid: 5C8CB68A-EAE6-4AF9-8B10-F8B73B50DEB2
 ms.date: 04/20/2017
@@ -28,9 +27,9 @@ Framework-based drivers manage hardware interrupts by using framework interrupt 
 -   [Synchronizing Interrupt Code](synchronizing-interrupt-code-umdf.md)
 -   [Deleting an Interrupt Object](deleting-an-interrupt-object.md)
 
- 
+ 
 
- 
+ 
 
 
 

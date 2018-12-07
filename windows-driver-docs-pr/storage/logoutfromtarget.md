@@ -15,9 +15,9 @@ Miniport drivers that implement the [MSiSCSI\_Operations WMI class](msiscsi-oper
 
 The MSiSCSI\_Operations WMI class is unpublished. For a description of the parameters of the **LogoutFromTarget** method, see the member descriptions for the [**LogoutFromTarget\_IN**](https://msdn.microsoft.com/library/windows/hardware/ff562191) and [**LogoutFromTarget\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff562194) structures.
 
- 
+ 
 
- 
+ 
 
 
 

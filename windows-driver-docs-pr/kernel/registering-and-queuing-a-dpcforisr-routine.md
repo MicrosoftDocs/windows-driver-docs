@@ -1,6 +1,5 @@
 ---
 title: Registering and Queuing a DpcForIsr Routine
-author: windows-driver-content
 description: Registering and Queuing a DpcForIsr Routine
 ms.assetid: 32253573-842e-40bc-9616-8d1ccd7afa29
 keywords: ["DpcForIsr", "registering DpcForIsr routine", "queuing DpcForIsr routine"]
@@ -14,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-A driver registers a [*DpcForIsr*](https://msdn.microsoft.com/library/windows/hardware/ff544079) routine for a device object by calling [**IoInitializeDpcRequest**](https://msdn.microsoft.com/library/windows/hardware/ff549307) after it has created the device object. The driver can make this call from its [*AddDevice*](https://msdn.microsoft.com/library/windows/hardware/ff540521) routine, or from [*DispatchPnP*](https://msdn.microsoft.com/library/windows/hardware/ff543341) code that handles [**IRP\_MN\_START\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551749) requests.
+A driver registers a [*DpcForIsr*](https://msdn.microsoft.com/library/windows/hardware/ff544079) routine for a device object by calling [**IoInitializeDpcRequest**](https://msdn.microsoft.com/library/windows/hardware/ff549307) after it has created the device object. The driver can make this call from its [*AddDevice*](https://msdn.microsoft.com/library/windows/hardware/ff540521) routine, or from [*DispatchPnP*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) code that handles [**IRP\_MN\_START\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551749) requests.
 
 To queue the *DpcForIsr* routine for execution, the driver's ISR calls [**IoRequestDpc**](https://msdn.microsoft.com/library/windows/hardware/ff549657) just before it returns. The following figure illustrates calls to these routines.
 
@@ -40,9 +39,9 @@ Because ISR and *DpcForIsr* routines can run concurrently on SMP machines, you m
 
 Even on a uniprocessor machine, the ISR could be called again if the device interrupts while or before the *DpcForIsr* routine is run. If this occurs, the *DpcForIsr* routine is run only once. In other words, there is no one-to-one correspondence between an ISR's calls to **IoRequestDpc** and instantiations of the *DpcForIsr* routine if a driver overlaps I/O operations for its target device objects.
 
- 
+ 
 
- 
+ 
 
 
 

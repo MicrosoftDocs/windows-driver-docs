@@ -1,6 +1,5 @@
 ---
 title: Printer INF File Install Sections
-author: windows-driver-content
 description: Printer INF File Install Sections
 ms.assetid: fb544271-1f0f-4bbd-b0a7-88dc89cc8186
 keywords:
@@ -23,7 +22,7 @@ Typically, for Windows 2000 and later, vendors do not distribute Microsoft's pri
 
 **Note**   Microsoft periodically releases updated versions of its printer drivers.Minidrivers that require features available only in the updated versions might require additional steps. For more information, see [Using Updated Core Print Drivers](using-updated-core-print-drivers.md).
 
- 
+ 
 
 Microsoft's printer INF file, Ntprint.inf, contains the following [**INF DDInstall sections**](https://msdn.microsoft.com/library/windows/hardware/ff547344) that can be referenced by vendor INF files:
 
@@ -69,9 +68,9 @@ Needs=TTFSUB.OEM,UNIDRV_BIDI.OEM  ; Install Unidrv, TrueType subs,
  ;    and PJL language monitor.
 ```
 
- 
+ 
 
- 
+ 
 
 
 

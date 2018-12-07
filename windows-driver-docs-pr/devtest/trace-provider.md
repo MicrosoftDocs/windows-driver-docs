@@ -28,9 +28,9 @@ A kernel-mode driver or user-mode application, can support more than one trace p
 
 Similarly, multiple drivers or applications can be a part of a single trace provider and share its resources. This feature is useful when tracing related applications and drivers, such as port and miniport drivers. To implement this feature, specify the same control GUID in the WPP\_CONTROL\_GUIDS macro for each provider.
 
- 
+ 
 
- 
+ 
 
 
 

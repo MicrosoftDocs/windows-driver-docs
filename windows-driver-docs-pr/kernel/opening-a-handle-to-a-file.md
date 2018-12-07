@@ -1,6 +1,5 @@
 ---
 title: Opening a Handle to a File
-author: windows-driver-content
 description: Opening a Handle to a File
 ms.assetid: 9378282a-ee29-44b6-b206-602eee94ec3b
 keywords: ["files WDK kernel", "file objects WDK kernel", "objects WDK file objects", "file handles WDK kernel", "handle to file WDK kernel", "opening handle to file"]
@@ -53,23 +52,23 @@ Whichever routine you call, you must pass the access rights you need as the *Des
 <td><p>FILE_APPEND_DATA</p></td>
 </tr>
 <tr class="even">
-<td><p>Read the file's metadata, such as the file's creation time.</p></td>
+<td><p>Read the file&#39;s metadata, such as the file&#39;s creation time.</p></td>
 <td><p>FILE_READ_ATTRIBUTES or GENERIC_READ</p></td>
 </tr>
 <tr class="odd">
-<td><p>Write the file's metadata, such as the file's creation time.</p></td>
+<td><p>Write the file&#39;s metadata, such as the file&#39;s creation time.</p></td>
 <td><p>FILE_WRITE_ATTRIBUTES or GENERIC_WRITE</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 For more information about the values available for *DesiredAccess*, see [**ZwCreateFile**](https://msdn.microsoft.com/library/windows/hardware/ff566424).
 
- 
+ 
 
- 
+ 
 
 
 

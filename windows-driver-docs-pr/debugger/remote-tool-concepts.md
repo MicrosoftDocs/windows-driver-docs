@@ -3,7 +3,6 @@ title: Remote Tool Concepts
 description: Remote Tool Concepts
 ms.assetid: 509b25cd-d69a-442d-bd5b-a69266d341c3
 keywords: ["Remote Tool, Remote Tool Concepts"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -42,9 +41,9 @@ To make a session visible, add the **/v** parameter to the [**Remote Server**](r
 
 For help with the Remote Server query command, see [**Remote Server Query Command**](remote-server-query-command.md).
 
- 
+ 
 
- 
+ 
 
 
 

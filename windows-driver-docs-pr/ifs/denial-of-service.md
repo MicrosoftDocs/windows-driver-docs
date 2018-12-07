@@ -1,6 +1,5 @@
 ---
 title: Denial of Service
-author: windows-driver-content
 description: Denial of Service
 ms.assetid: b8b28d42-b680-482a-a7a1-6b2f5614ebfb
 keywords:
@@ -57,9 +56,9 @@ A malicious application can try to prevent other users from accessing files need
 
 Finally, all drivers need to be concerned about consuming all available memory or other resources in response to requests from a malicious or aberrant application.
 
- 
+ 
 
- 
+ 
 
 
 

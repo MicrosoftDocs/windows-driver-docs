@@ -1,6 +1,5 @@
 ---
 title: Image Processing
-author: windows-driver-content
 description: Image Processing
 ms.assetid: 84e10fcc-3998-434c-922a-65b42dccbdaf
 ms.date: 04/20/2017
@@ -27,9 +26,9 @@ To use GDI+ in the WIA minidriver, make sure that GDI+ is properly initialized. 
 
 For more information about GDI+, see the Microsoft Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Handling Requests to Storage Peripherals
-author: windows-driver-content
 description: Handling Requests to Storage Peripherals
 ms.assetid: 3859588e-fc39-4323-a901-8771874e64d2
 keywords:
@@ -38,9 +37,9 @@ For additional information about handling requests to storage peripherals, see t
 
 [Queuing Storage Requests](queuing-storage-requests.md)
 
- 
+ 
 
- 
+ 
 
 
 

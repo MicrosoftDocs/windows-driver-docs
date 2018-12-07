@@ -33,11 +33,11 @@ Because of how the device metadata retrieval client ([DMRC](device-metadata-retr
 
     **Note**  You must make these changes only when you test metadata packages. You must not provide end-users with any tools that change the registry values that are used by DMRC.
 
-     
+     
 
- 
+ 
 
- 
+ 
 
 
 

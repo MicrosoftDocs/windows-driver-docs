@@ -1,6 +1,5 @@
 ---
 title: Initializing the WIA Minidriver
-author: windows-driver-content
 description: Initializing the WIA Minidriver
 ms.assetid: 9ccb136b-41f7-438a-9e07-1fd7c8971417
 ms.date: 04/20/2017
@@ -29,7 +28,7 @@ The **IWiaMiniDrv::drvInitializeWia** method also can be used to create and init
 
 **Note**   The [**IWiaMiniDrv::drvGetCapabilities**](https://msdn.microsoft.com/library/windows/hardware/ff543977) method might be called before **IWiaMiniDrv::drvInitializeWia** is called. This can happen when the WIA service needs to query for event information before an application exists to use the device. The **IWiaMiniDrv::drvInitializeWia** method is called only when an application signals its intent to use the device.
 
- 
+ 
 
 ### Keeping Track of Application Connections
 
@@ -39,7 +38,7 @@ Why is this information useful? Often there are resources that drivers might nee
 
 **Note**   The **IWiaMiniDrv::drvInitializeWia** and **IWiaMiniDrv::drvUnInitializeWia** methods are used to inform drivers of application connections only. The WIA service can call other driver methods without first calling **IWiaMiniDrv::drvInitializeWia**, which means that the WIA service does not necessarily call **IWiaMiniDrv::drvUnInitializeWia** when it is done. The methods called are informational methods that do not require WIA items, such as [**IWiaMiniDrv::drvGetCapabilities**](https://msdn.microsoft.com/library/windows/hardware/ff543977) and [**IWiaMiniDrv::drvGetWiaFormatInfo**](https://msdn.microsoft.com/library/windows/hardware/ff543986).
 
- 
+ 
 
 This section contains the following topics:
 
@@ -51,9 +50,9 @@ This section contains the following topics:
 
 [Reporting WIA Minidriver Status](reporting-wia-minidriver-status.md)
 
- 
+ 
 
- 
+ 
 
 
 

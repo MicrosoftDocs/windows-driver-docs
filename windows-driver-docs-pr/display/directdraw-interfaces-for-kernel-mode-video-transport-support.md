@@ -23,9 +23,9 @@ The kernel-mode video transport must keep track of surface information for each 
 
 A good example of how a driver can use these **dwDriverReserved***N* members is to set a flag indicating which physical overlay an overlay surface is using if the hardware supports more than one physical overlay.
 
- 
+ 
 
- 
+ 
 
 
 

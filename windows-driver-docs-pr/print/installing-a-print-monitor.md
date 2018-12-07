@@ -1,6 +1,5 @@
 ---
 title: Installing a Print Monitor
-author: windows-driver-content
 description: Installing a Print Monitor
 ms.assetid: 2ab993fd-647b-40aa-981c-1bc270ec79a4
 keywords:
@@ -72,9 +71,9 @@ To install a port monitor, open the Printers folder in Control Panel. On the Pri
 
 Alternatively, a custom installation application can install the port monitor DLL by a call to the **AddMonitor** function as described in [Port Monitors](https://msdn.microsoft.com/library/windows/desktop/dd162825.aspx).
 
- 
+ 
 
- 
+ 
 
 
 

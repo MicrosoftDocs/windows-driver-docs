@@ -3,7 +3,6 @@ title: Logger and LogViewer
 description: Logger and LogViewer
 ms.assetid: 10f2d006-6ebc-4098-a401-afc6351ff3dd
 keywords: ["Logger", "LogViewer"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -35,9 +34,9 @@ Logger and LogViewer are included in [Debugging Tools for Windows](index.md).
 
 [Tools Included in Debugging Tools for Windows](extra-tools.md)
 
- 
+ 
 
- 
+ 
 
 
 

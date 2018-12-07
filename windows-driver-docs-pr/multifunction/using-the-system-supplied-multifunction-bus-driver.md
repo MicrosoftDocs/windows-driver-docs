@@ -1,6 +1,5 @@
 ---
 title: Using the System-Supplied Multifunction Bus Driver
-author: windows-driver-content
 description: Using the System-Supplied Multifunction Bus Driver
 ms.assetid: 75fe659d-5311-4bc6-adfb-fd608e10c718
 keywords:
@@ -91,9 +90,9 @@ The PnP manager treats each child device like a typical device, locating INF fil
 
 The illustration focuses on the function drivers and parent bus drivers and their associated FDOs and PDOs. Any filter drivers (and filter DOs) are omitted for simplicity.
 
- 
+ 
 
- 
+ 
 
 
 

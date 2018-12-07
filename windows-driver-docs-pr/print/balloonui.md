@@ -1,6 +1,5 @@
 ---
 title: balloonUI element
-author: windows-driver-content
 description: The optional balloonUI element is used to display a message balloon on the client computer.
 ms.assetid: 8db15dcb-26ed-429e-ad4c-e5dc59f9bbca
 keywords: ["balloonUI element Print Devices"]
@@ -84,12 +83,12 @@ Attributes
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>body</strong>](body.md)</p></td>
+<td><p><a href="body.md" data-raw-source="[&lt;strong&gt;body&lt;/strong&gt;](body.md)"><strong>body</strong></a></p></td>
 <td><p></p>
 <p>A required element that provides text that is displayed in the event notification message. This text should provide the user specific details about the printer event.</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>title</strong>](title.md)</p></td>
+<td><p><a href="title.md" data-raw-source="[&lt;strong&gt;title&lt;/strong&gt;](title.md)"><strong>title</strong></a></p></td>
 <td><p></p>
 <p>A required element that provides text that is displayed in the title of the event notification message.</p></td>
 </tr>
@@ -112,7 +111,7 @@ Attributes
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>requestOpen</strong>](requestopen.md)</p></td>
+<td><p><a href="requestopen.md" data-raw-source="[&lt;strong&gt;requestOpen&lt;/strong&gt;](requestopen.md)"><strong>requestOpen</strong></a></p></td>
 <td><p></p>
 <p>An element that is used to open an event notification message on the client computer.</p></td>
 </tr>
@@ -161,9 +160,9 @@ The following code example shows how to use an interactive balloon to pass **CDA
 
 [**title**](title.md)
 
- 
+ 
 
- 
+ 
 
 
 

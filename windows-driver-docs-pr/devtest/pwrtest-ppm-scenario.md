@@ -18,10 +18,10 @@ The PwrTest PPM Scenario logs processor power management (PPM) information and p
 pwrtest /ppm [/n:n] [/i:n] [/c:[y|n]] [/p:{y|n}] [/u:{y|n}] [/live] [/t:n] [/?] 
 ```
 
-<span id="_n_n"></span><span id="_N_N"></span>**/n:***n*  
+<span id="_n_n"></span><span id="_N_N"></span>**/n:**<em>n</em>  
 Specifies the number of cycles (100 is the default). Press **q** to quit).
 
-<span id="_i_n"></span><span id="_I_N"></span>**/i:***n*  
+<span id="_i_n"></span><span id="_I_N"></span>**/i:**<em>n</em>  
 Specifies the polling interval in milliseconds (ms) for C-state and processor utilization (5000 ms is default).
 
 <span id="_c_yn"></span><span id="_C_YN"></span>**/c:**{**y**|**n**}  
@@ -36,7 +36,7 @@ Specifies whether CPU utilization information should be captured. The options ar
 <span id="_live"></span><span id="_LIVE"></span>**/live**  
 Displays processor power management events in real-time (other options are not available).
 
-<span id="_t_n"></span><span id="_T_N"></span>**/t:***n*  
+<span id="_t_n"></span><span id="_T_N"></span>**/t:**<em>n</em>  
 Specifies the indicates the total runtime, in minutes, for the **/live** option (default is 30).
 
 **Examples**
@@ -183,16 +183,16 @@ The following table describes the XML elements that appear in the log file.
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
 
 [PwrTest Syntax](pwrtest-syntax.md)
 
- 
+ 
 
- 
+ 
 
 
 

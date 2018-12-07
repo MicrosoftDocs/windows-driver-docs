@@ -1,6 +1,5 @@
 ---
 title: OID_WDI_SET_P2P_START_BACKGROUND_DISCOVERY
-author: windows-driver-content
 description: OID_WDI_SET_P2P_START_BACKGROUND_DISCOVERY instructs the adapter to periodically perform Wi-Fi Direct discovery in the background
 ms.assetid: DF58B71D-7D45-4E0D-963F-A70471363DF5
 ms.date: 07/18/2017
@@ -18,7 +17,7 @@ OID\_WDI\_SET\_P2P\_START\_BACKGROUND\_DISCOVERY instructs the adapter to period
 |-------|--------------------------|---------------------------------|---------------------------------|
 | Port  | No                       | 1                               | Yes                             |
 
- 
+ 
 
 The adapter is required to scan the specified channels at regular intervals and be able to find a device that becomes discoverable within the device visibility timeout (typically 5 minutes). The behavior is similar to the regular Wi-Fi Direct Discovery scan (as defined in [OID\_WDI\_TASK\_P2P\_DISCOVER](oid-wdi-task-p2p-discover.md)), but it is not time-bound, and the adapter may schedule the scans at some later point in time. The adapter must perform at least one scan within each device visibility timeout. If the device visibility timeout is 0, the adapter should continue to scan regularly using its own cycle time. If a DISCOVER or SCAN task request is made during this time, the adapter should suspend the background discovery for the duration of the task and continue when the task is finished. Upon completing a background scan, the device should send the [NDIS\_STATUS\_WDI\_INDICATION\_P2P\_DISCOVERY\_COMPLETE](ndis-status-wdi-indication-p2p-discovery-complete.md) indication (with transaction ID equal to 0) to let the operating system know that it has completed a scan. The adapter must send this indication every time it completes a background scan.
 
@@ -44,7 +43,7 @@ When the NIC is in D2, it suspends background discovery until it goes back to D0
 | [**WDI\_TLV\_P2P\_SERVICE\_NAME\_HASH**](https://msdn.microsoft.com/library/windows/hardware/dn898009)                   | X                              | X        | List of Service Hash names to be queried. This is required if WDI\_P2P\_SERVICE\_DISCOVERY\_TYPE\_SERVICE\_NAME\_ONLY is specified. |
 | [**WDI\_TLV\_VENDOR\_SPECIFIC\_IE**](https://msdn.microsoft.com/library/windows/hardware/dn898076)                          |                                | X        | One or more IEs that must be included in the probe requests sent by the port.                                                       |
 
- 
+ 
 
 ## Set property results
 
@@ -78,9 +77,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

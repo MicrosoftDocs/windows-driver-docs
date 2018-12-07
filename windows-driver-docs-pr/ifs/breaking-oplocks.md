@@ -1,6 +1,5 @@
 ---
 title: Breaking Oplocks
-author: windows-driver-content
 description: Breaking Oplocks
 ms.assetid: 1f3c4a99-5ad2-4597-a1c9-a21f80c40291
 ms.date: 04/20/2017
@@ -53,11 +52,11 @@ A break of a Windows 7 oplock requires an acknowledgment if the REQUEST\_OPLOCK\
 
 **Note**  The above listed per-operation topics describe the details of when a break of a Read-Handle oplock results in the pending of the operation that broke the oplock. For example, the [IRP\_MJ\_CREATE](irp-mj-create2.md) topic contains the associated Read-Handle details.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

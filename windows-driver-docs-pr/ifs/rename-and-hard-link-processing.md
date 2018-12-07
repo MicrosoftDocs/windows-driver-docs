@@ -1,6 +1,5 @@
 ---
 title: Rename and Hard Link Processing
-author: windows-driver-content
 description: Rename and Hard Link Processing
 ms.assetid: 53eb3c9b-cb48-4d5f-8e26-dc93b7607813
 keywords:
@@ -132,9 +131,9 @@ The following code example to handle a rename operation mimics the file system c
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

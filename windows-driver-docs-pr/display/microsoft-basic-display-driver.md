@@ -37,9 +37,9 @@ MSBDD can use the video BIOS to manage modes and resolutions on a single monitor
 
 **Figure 1 Scenarios Supported by Microsoft Basic Display Driver**
 
- 
+ 
 
- 
+ 
 
 
 

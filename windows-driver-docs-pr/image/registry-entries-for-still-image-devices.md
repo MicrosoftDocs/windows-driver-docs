@@ -1,6 +1,5 @@
 ---
 title: Registry Entries for Still Image Devices
-author: windows-driver-content
 description: Registry Entries for Still Image Devices
 ms.assetid: cedc8afc-54c4-485e-989c-481fe30d899b
 ms.date: 04/20/2017
@@ -41,7 +40,7 @@ The following table lists the predefined registry value names and their meanings
 <tr class="even">
 <td><p>STI_DEVICE_VALUE_ISIS_NAME</p></td>
 <td><p>&quot;ISISDriverName&quot;</p></td>
-<td><p>REG_SZ type containing the device's ISIS driver name, such as &quot;epson.pxn&quot;.</p></td>
+<td><p>REG_SZ type containing the device&#39;s ISIS driver name, such as &quot;epson.pxn&quot;.</p></td>
 </tr>
 <tr class="odd">
 <td><p>STI_DEVICE_VALUE_TIMEOUT</p></td>
@@ -51,12 +50,12 @@ The following table lists the predefined registry value names and their meanings
 <tr class="even">
 <td><p>STI_DEVICE_VALUE_TWAIN_NAME</p></td>
 <td><p>&quot;TwainDS&quot;</p></td>
-<td><p>REG_SZ type containing the displayable name of the device's TWAIN data source, such as &quot;HP PictureScan 3.0&quot;.</p></td>
+<td><p>REG_SZ type containing the displayable name of the device&#39;s TWAIN data source, such as &quot;HP PictureScan 3.0&quot;.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Clients of the **StillImage** COM interface should call [**IStillImage::SetDeviceValue**](https://msdn.microsoft.com/library/windows/hardware/ff543801) and [**IStillImage::GetDeviceValue**](https://msdn.microsoft.com/library/windows/hardware/ff543786) to reference the registry. Still image minidrivers can call the Win32 registry API, specifying the registry key received by the minidriver's [**IStiUSD::Initialize**](https://msdn.microsoft.com/library/windows/hardware/ff543824) method. Values for predefined registry entries can also be set from within [the INF file](inf-files-for-still-image-devices.md).
 
@@ -88,7 +87,7 @@ The following table lists registry entries that should not be modified by vendor
 <p>0x1 - informational messages</p>
 <p>0x2 - warning messages</p>
 <p>0x4 - error messages</p>
-<p>See [<strong>IStillImage::WriteToErrorLog</strong>](https://msdn.microsoft.com/library/windows/hardware/ff543807).</p></td>
+<p>See <a href="https://msdn.microsoft.com/library/windows/hardware/ff543807" data-raw-source="[&lt;strong&gt;IStillImage::WriteToErrorLog&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff543807)"><strong>IStillImage::WriteToErrorLog</strong></a>.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>HKLM\SYSTEM\CurrentControlSet\Control\StillImage\Logging\STIMON</strong></p></td>
@@ -98,7 +97,7 @@ The following table lists registry entries that should not be modified by vendor
 <p>0x4 - error messages</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>HKLM\SYSTEM\CurrentControlSet\Control\Class\{6BDD1FC6-810F-11D0-BEC7-08002BE2092F}</strong></p></td>
+<td><p><strong>HKLM\SYSTEM\CurrentControlSet\Control\Class{6BDD1FC6-810F-11D0-BEC7-08002BE2092F}</strong></p></td>
 <td><p>Contains information about installed still image devices.</p></td>
 </tr>
 <tr class="even">
@@ -106,17 +105,17 @@ The following table lists registry entries that should not be modified by vendor
 <td><p>Contains a list of registered imaging applications.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>HKLM\SYSTEM\CurrentControlSet\Control\DeviceClass\{6bdd1fc6-810f-11d0-bec7-08002be2092f}</strong></p></td>
+<td><p><strong>HKLM\SYSTEM\CurrentControlSet\Control\DeviceClass{6bdd1fc6-810f-11d0-bec7-08002be2092f}</strong></p></td>
 <td><p>Contains information about installed still image device interfaces.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

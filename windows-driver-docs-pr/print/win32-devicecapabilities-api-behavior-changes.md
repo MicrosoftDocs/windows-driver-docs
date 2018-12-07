@@ -1,6 +1,5 @@
 ---
 title: Win32 DeviceCapabilities API Behavior Changes
-author: windows-driver-content
 description: Win32 DeviceCapabilities API Behavior Changes
 ms.assetid: 44745e33-2bd8-4200-be29-b3ddb0e30de4
 ms.date: 04/20/2017
@@ -32,11 +31,11 @@ When a GPD/PPD feature or option is mapped to a Print Schema keyword by using GP
 <tbody>
 <tr class="odd">
 <td><p>DC_COPIES</p></td>
-<td><p>(Unidrv only) When EMF is enabled, <strong>DeviceCapabilitiesreturns</strong> a hard-coded value that is the maximum value of 9999 or the GPD file's specified *MaxCopies value.</p>
+<td><p>(Unidrv only) When EMF is enabled, <strong>DeviceCapabilitiesreturns</strong> a hard-coded value that is the maximum value of 9999 or the GPD file&#39;s specified *MaxCopies value.</p>
 <p>When EMF is disabled, <strong>DeviceCapabilities</strong> returns the GPD *MaxCopies value.</p>
 <p>(PS only) <strong>DeviceCapabilities</strong> returns a hard-coded value of 9999.</p></td>
 <td><p>(Unidrv only) <strong>DeviceCapabilities</strong> returns the GPD *MaxCopies value.</p>
-<p>(PS only) <strong>DeviceCapabilities</strong> returns the PPD file's *MSXPSMaxCopies value or 1 if the value is not specified in the PPD file.</p></td>
+<p>(PS only) <strong>DeviceCapabilities</strong> returns the PPD file&#39;s *MSXPSMaxCopies value or 1 if the value is not specified in the PPD file.</p></td>
 </tr>
 <tr class="even">
 <td><p>DC_TRUETYPE</p></td>
@@ -53,7 +52,7 @@ When a GPD/PPD feature or option is mapped to a Print Schema keyword by using GP
 </tr>
 <tr class="odd">
 <td><p>DC_ORIENTATION</p></td>
-<td><p>(PS only) <strong>DeviceCapabilities</strong> returns 90 or 270 based on PPD's *LandscapeOrientation value and setting for the hard-coded Rotated Landscape orientation option in the input DEVMODE structure.</p></td>
+<td><p>(PS only) <strong>DeviceCapabilities</strong> returns 90 or 270 based on PPD&#39;s *LandscapeOrientation value and setting for the hard-coded Rotated Landscape orientation option in the input DEVMODE structure.</p></td>
 <td><p>(PS only) The default return value is 0, which means that there is no landscape orientation.</p>
 <p>If PPD supports a feature with the &quot;PageOrientation&quot; Print Schema keyword, the following occur:</p>
 <ul>
@@ -87,7 +86,7 @@ When a GPD/PPD feature or option is mapped to a Print Schema keyword by using GP
 </tr>
 <tr class="even">
 <td><p>DC_STAPLE</p></td>
-<td><p>(PS only) PPD does o't have a single &quot;Stapling&quot; feature. A PScript5 driver checks if any of following PPD features are defined in PPD and are not constrained by device settings to determine if the device can support stapling.</p>
+<td><p>(PS only) PPD does o&#39;t have a single &quot;Stapling&quot; feature. A PScript5 driver checks if any of following PPD features are defined in PPD and are not constrained by device settings to determine if the device can support stapling.</p>
 <ul>
 <li><p>&quot;StapleLocation&quot;</p></li>
 <li><p>&quot;StapleX&quot;, &quot;StapleY&quot;</p></li>
@@ -99,11 +98,11 @@ When a GPD/PPD feature or option is mapped to a Print Schema keyword by using GP
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

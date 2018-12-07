@@ -1,6 +1,5 @@
 ---
 title: Reporting Device Power Capabilities
-author: windows-driver-content
 description: Reporting Device Power Capabilities
 ms.assetid: 67a504d0-2c41-4c74-a912-4f0771885f7d
 keywords: ["reporting device power capabilities", "device power capabilities WDK kernel", "DEVICE_CAPABILITIES structure", "query-capabilities IRPs WDK power management", "IRPs WDK power management", "I/O request packets WDK power management"]
@@ -34,9 +33,9 @@ The following members of the **DEVICE\_CAPABILITIES** structure pertain to power
 
 [D1Latency, D2Latency, and D3Latency](d1latency--d2latency--and-d3latency.md)
 
- 
+ 
 
- 
+ 
 
 
 

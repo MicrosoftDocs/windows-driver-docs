@@ -1,6 +1,5 @@
 ---
 title: General Attributes
-author: windows-driver-content
 description: General Attributes
 ms.assetid: c48fabff-0580-478f-b423-d959815bbeb4
 keywords:
@@ -44,13 +43,13 @@ Occasionally, the value of a general attribute (except for the root-level-only a
 </tbody>
 </table>
 
- 
+ 
 
 For more information about specifying configuration dependencies, see [Conditional Statements](conditional-statements.md).
 
- 
+ 
 
- 
+ 
 
 
 

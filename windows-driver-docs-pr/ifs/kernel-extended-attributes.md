@@ -1,6 +1,5 @@
 ---
 title: Kernel Extended Attributes
-author: windows-driver-content
 description: Filter Manager and Minifilter Driver Architecture
 keywords:
 - Extended , File Attributes
@@ -18,12 +17,12 @@ Kernel Extended Attributes (Kernel EA's) are a feature added to NTFS in Windows 
 EA's with the name prefix ``$Kernel`` can only be modified from kernel mode. Any EA that begins with this string is considered a Kernel EA. Before retrieving the necessary update sequence number (USN), it is recommended that **FSCTL_WRITE_USN_CLOSE_RECORD** be issued first as this will commit any pending USN Journal updates on the file that may have occurred earlier. Without this, the **FileUSN** value may change shortly after setting of the Kernel EA.
 
 It is recommended that a Kernel EA contains at least the following information:
-  -  USN UsnJournalID
-      -    The **UsnJournalID** field is a GUID that identifies the current incarnation of USN Journal File.  The USN Journal can be deleted and created from user mode per volume.  Each time the USN Journal is created a new **UsnJournalID** GUID will be generated.  With this field, you can tell if there was a period of time where the USN Journal was disabled and can revalidate.
-        - This value can be retrieved using [FSCTL_QUERY_USN_JOURNAL](https://msdn.microsoft.com/library/windows/desktop/aa364583).
-  -  USN FileUSN
-    -    The **FileUSN** value contains the USN ID of the last change that was made to the file and is tracked inside the Master File Table (MFT) record for the given file.
-        - When the USN Journal is deleted, **FileUSN** is reset to zero.
+- USN UsnJournalID
+  - The **UsnJournalID** field is a GUID that identifies the current incarnation of USN Journal File.  The USN Journal can be deleted and created from user mode per volume.  Each time the USN Journal is created a new **UsnJournalID** GUID will be generated.  With this field, you can tell if there was a period of time where the USN Journal was disabled and can revalidate.
+    - This value can be retrieved using [FSCTL_QUERY_USN_JOURNAL](https://msdn.microsoft.com/library/windows/desktop/aa364583).
+- USN FileUSN
+  - The **FileUSN** value contains the USN ID of the last change that was made to the file and is tracked inside the Master File Table (MFT) record for the given file.
+    - When the USN Journal is deleted, **FileUSN** is reset to zero.
 
 This information, along with any other a given usage might need, is then set on the file as a Kernel EA.
 

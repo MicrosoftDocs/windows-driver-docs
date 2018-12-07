@@ -3,7 +3,6 @@ title: dv (Display Local Variables)
 description: The dv command displays the names and values of all local variables in the current scope.
 ms.assetid: 1b5260f7-f47c-481a-b93f-015ab9fa4b58
 keywords: ["dv (Display Local Variables) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -88,7 +87,7 @@ Causes the command to only display local variables that match the specified *Pat
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -103,9 +102,9 @@ Data structures and unfamiliar data types are not displayed in full; rather, the
 
 The *local context* determines which set of local variables will be displayed. By default, this context matches the current position of the program counter. For information about how this can be changed, see [Local Context](changing-contexts.md#local-context).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: ks.allstreams
 description: The ks.allstreams extension walks the entire device tree and finds every kernel streaming device in the system.
 ms.assetid: 3a9f4ad4-a3aa-46dc-887d-c83296bc8f84
 keywords: ["ks.allstreams Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -66,7 +65,7 @@ Optional. Specifies the level of detail to display on a 0-7 scale with progressi
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -90,9 +89,9 @@ kd> !allstreams
     Functional Device 8241c020 [\Driver\avssamp]
 ```
 
- 
+ 
 
- 
+ 
 
 
 

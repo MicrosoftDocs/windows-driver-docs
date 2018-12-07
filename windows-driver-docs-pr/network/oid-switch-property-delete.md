@@ -1,6 +1,5 @@
 ---
 title: OID_SWITCH_PROPERTY_DELETE
-author: windows-driver-content
 description: The protocol edge of the Hyper-V extensible switch issues an object identifier (OID) set request of OID_SWITCH_PROPERTY_DELETE to notify extensible switch extensions about the deletion of a switch policy property.
 ms.assetid: 55291392-C018-4578-9767-DC5621F75D44
 ms.date: 08/08/2017
@@ -54,7 +53,7 @@ If the forwarding extension completes the OID set request of OID\_SWITCH\_PROPER
 </tbody>
 </table>
 
- 
+ 
 
 If the forwarding extension does not complete the OID set request of OID\_SWITCH\_PROPERTY\_DELETE, the request is completed by the underlying miniport edge of the extensible switch. The miniport edge returns the following status code.
 
@@ -77,7 +76,7 @@ If the forwarding extension does not complete the OID set request of OID\_SWITCH
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -111,9 +110,9 @@ Requirements
 
 [**NdisFOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff561830)
 
- 
+ 
 
- 
+ 
 
 
 

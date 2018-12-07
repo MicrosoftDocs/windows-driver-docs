@@ -1,6 +1,5 @@
 ---
 title: Create a Stream
-author: windows-driver-content
 description: Create a Stream
 ms.assetid: 9984275f-7ead-4df2-aa98-a3b4e5e85ae0
 keywords:
@@ -44,9 +43,9 @@ if(STATUS_SUCCESS == Status) {
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

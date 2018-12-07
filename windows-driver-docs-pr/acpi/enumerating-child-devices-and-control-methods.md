@@ -1,6 +1,5 @@
 ---
 title: Enumerating Child Devices and Control Methods
-author: windows-driver-content
 description: Enumerating Child Devices and Control Methods
 ms.assetid: fe0553df-a5b9-46c4-8e1d-8b89a7d4ad67
 keywords:
@@ -20,10 +19,10 @@ In an ACPI namespace, an object that is a device--for example, a device named 'A
 ```syntax
 \     root of ACPI namespace
  ABCD            parent device 
-    CHL1         child device of ABCD
-    CHL2         child device of ABCD
-       CHL3      child device of CHL2
-          _FOO   control method
+    CHL1         child device of ABCD
+    CHL2         child device of ABCD
+       CHL3      child device of CHL2
+          _FOO   control method
  _FOO            control method
 ```
 

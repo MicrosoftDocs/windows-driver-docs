@@ -1,6 +1,5 @@
 ---
 title: Sample Interface for UVC Extension Units
-author: windows-driver-content
 description: Sample Interface for UVC Extension Units
 ms.assetid: 898fdaf7-c3e1-4ef5-be4e-a5f9849ee905
 keywords:
@@ -53,9 +52,9 @@ interface IExtensionUnit : IUnknown
 };
 ```
 
- 
+ 
 
- 
+ 
 
 
 

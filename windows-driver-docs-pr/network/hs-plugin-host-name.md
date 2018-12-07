@@ -1,6 +1,5 @@
 ---
 title: HS_PLUGIN_HOST_NAME structure
-author: windows-driver-content
 description: The HS_PLUGIN_HOST_NAME structure contains the host name.
 ms.assetid: 3995fff6-6992-4dd6-a94c-a27b2ee44436
 keywords: 
@@ -48,9 +47,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

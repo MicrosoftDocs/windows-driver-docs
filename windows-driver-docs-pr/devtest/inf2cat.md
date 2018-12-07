@@ -31,17 +31,17 @@ Inf2Cat (Inf2Cat.exe) is a command-line tool that determines whether a [driver p
 
 ### <span id="switches_and_arguments"></span><span id="SWITCHES_AND_ARGUMENTS"></span>Switches and Arguments
 
-<span id="_driver_PackagePath"></span><span id="_driver_packagepath"></span><span id="_DRIVER_PACKAGEPATH"></span>**/driver:***PackagePath*  
+<span id="_driver_PackagePath"></span><span id="_driver_packagepath"></span><span id="_DRIVER_PACKAGEPATH"></span>**/driver:**<em>PackagePath</em>  
 Specifies the path to the directory that contains the INF files for driver packages. If the specified directory contains INF files for multiple driver packages, Inf2Cat will create catalog files for each driver package.
 
 **Note**  You can use the **/drv:** switch in place of the **/driver:** switch.
 
- 
+ 
 
 <span id="_nocat"></span><span id="_NOCAT"></span>**/nocat**  
 Configures Inf2Cat to verify that the [driver package](https://msdn.microsoft.com/library/windows/hardware/ff544840) complies with the signing requirements for the specified Windows versions, but not to generate a catalog files.
 
-<span id="_os_WindowsVersionList"></span><span id="_os_windowsversionlist"></span><span id="_OS_WINDOWSVERSIONLIST"></span>**/os:***WindowsVersionList*  
+<span id="_os_WindowsVersionList"></span><span id="_os_windowsversionlist"></span><span id="_OS_WINDOWSVERSIONLIST"></span>**/os:**<em>WindowsVersionList</em>  
 Configures Inf2Cat to verify that a [driver package's](https://msdn.microsoft.com/library/windows/hardware/ff544840) INF file complies with the signing requirements for the Windows versions that are specified by *WindowsVersionList*. *WindowsVersionList* is a comma-separated list that includes one or more of the following version identifiers.
 
 |Windows version|Version identifier|
@@ -67,11 +67,11 @@ Configures Inf2Cat to verify that a [driver package's](https://msdn.microsoft.co
 |Windows Server 2008 x86 Edition|Server2008_X86|
 
 
- 
+ 
 
 **Note**  Starting with Windows Server 2008 R2, Windows server operating systems will no longer support x86-based platforms.
 
- 
+ 
 
 Inf2Cat ignores the case of the alphabetic characters of the version identifier strings. For example, vista\_x64 and Vista\_X64 are both valid identifiers for Windows Vista x64 Edition.
 
@@ -92,7 +92,7 @@ To use Inf2Cat, you must be a member of the Administrators group on the system.
 
 The Inf2Cat tool checks [driver package's](https://msdn.microsoft.com/library/windows/hardware/ff544840) INF files for structural errors and verifies that a driver package can be digitally-signed. A driver package can be signed only if all of the files that are referenced in an INF file are present and the source files are in the correct location. If an INF file cannot be signed or if it contains structural errors, the driver package might not be installed correctly or might incorrectly display a driver signing warning dialog box during installation.
 
-Inf2Cat generates a [catalog file](https://msdn.microsoft.com/library/windows/hardware/ff537872) only if the catalog file is specified in the driver package's INF file and the catalog file applies to one or more of the specified Windows versions. If the [**INF Version section**](https://msdn.microsoft.com/library/windows/hardware/ff547502) of an INF file supplies only a **CatalogFile=***filename.cat* directive, that catalog file applies to the entire driver package. To support [cross-platform installations](https://msdn.microsoft.com/library/windows/hardware/ff540206), the INF file should include **CatalogFile.***PlatformExtension***=***unique-filename.cat* directives.
+Inf2Cat generates a [catalog file](https://msdn.microsoft.com/library/windows/hardware/ff537872) only if the catalog file is specified in the driver package's INF file and the catalog file applies to one or more of the specified Windows versions. If the [**INF Version section**](https://msdn.microsoft.com/library/windows/hardware/ff547502) of an INF file supplies only a **CatalogFile=**<em>filename.cat</em> directive, that catalog file applies to the entire driver package. To support [cross-platform installations](https://msdn.microsoft.com/library/windows/hardware/ff540206), the INF file should include **CatalogFile.**<em>PlatformExtension</em>**=**<em>unique-filename.cat</em> directives.
 
 For more information about signing a driver package, see [Driver Signing](https://msdn.microsoft.com/library/windows/hardware/ff544865) and [Device and Driver Installation Fundamental Topics](https://msdn.microsoft.com/library/windows/hardware/ff541165).
 
@@ -133,9 +133,9 @@ Inf2Cat /driver:C:\MyDriver /os:2000,XP_X86,XP_X64,Server2003_X86,Server2003_X64
 
 For more information about how to use Inf2Cat to create a catalog file, see [Creating a Catalog File for a PnP Driver Package](https://msdn.microsoft.com/library/windows/hardware/ff540161).
 
- 
+ 
 
- 
+ 
 
 
 

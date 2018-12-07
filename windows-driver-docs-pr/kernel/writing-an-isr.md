@@ -1,6 +1,5 @@
 ---
 title: Writing an ISR
-author: windows-driver-content
 description: Writing an ISR
 ms.assetid: d696d683-e010-4a5c-ba2d-f536ab5f38b2
 keywords: ["interrupt service routines WDK kernel , writing", "ISRs WDK kernel , writing", "writing ISRs", "interrupt objects WDK kernel , writing ISRs", "I/O WDK kernel , interrupts"]
@@ -54,9 +53,9 @@ An ISR must run at DIRQL for the shortest possible interval. Following this guid
 
 The *SynchronizeIrql* of the driver's interrupt objects, specified when the driver called **IoConnectInterrupt**, determines the DIRQL at which the driver's ISR executes. For more information, see [Synchronizing Access to Device Data](synchronizing-access-to-device-data.md).
 
- 
+ 
 
- 
+ 
 
 
 

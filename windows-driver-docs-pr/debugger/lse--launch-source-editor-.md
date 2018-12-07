@@ -3,7 +3,6 @@ title: lse (Launch Source Editor)
 description: The lse command opens an editor for the current source file.
 ms.assetid: 2f66b5c3-1cd6-4641-8dea-5e3a11c87db0
 keywords: ["lse (Launch Source Editor) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -46,7 +45,7 @@ lse
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -63,9 +62,9 @@ c:\my\path\myeditor.exe -file %f -line %l
 
 This value indicates that Myeditor.exe opens to the one-based line number of the current source file. The **%l** option indicates that line numbers should be read as one-based, and **%f** indicates that the current source file should be used. You could also include **%L** to indicate that line numbers are zero-based or **%p** to indicate that the current source file should be used.
 
- 
+ 
 
- 
+ 
 
 
 

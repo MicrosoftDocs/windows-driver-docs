@@ -1,6 +1,5 @@
 ---
 title: OID_RECEIVE_FILTER_ALLOCATE_QUEUE
-author: windows-driver-content
 description: Overlying drivers issue object identifier (OID) method requests of OID_RECEIVE_FILTER_ALLOCATE_QUEUE to allocate a queue that has an initial set of configuration parameters.
 ms.assetid: 8dd7ab91-b752-46fd-ae1b-014dc0fb0157
 ms.date: 08/08/2017
@@ -25,7 +24,7 @@ The overlying driver initializes the [**NDIS\_RECEIVE\_QUEUE\_PARAMETERS**](http
 
 **Note**  The overlying driver can set the **NDIS\_RECEIVE\_QUEUE\_PARAMETERS\_PER\_QUEUE\_RECEIVE\_INDICATION** and **NDIS\_RECEIVE\_QUEUE\_PARAMETERS\_LOOKAHEAD\_SPLIT\_REQUIRED** flags in the **Flags** member of the [**NDIS\_RECEIVE\_QUEUE\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff567211) structure. The other flags are not used for queue allocation.
 
- 
+ 
 
 After a miniport driver is issued an OID request of OID\_RECEIVE\_FILTER\_ALLOCATE\_QUEUE and handles it successfully, the queue is in the Paused state.
 
@@ -61,7 +60,7 @@ Either NDIS or the miniport driver returns one of the following status codes for
 <tbody>
 <tr class="odd">
 <td><p><strong>NDIS_STATUS_SUCCESS</strong></p></td>
-<td><p>The queue was allocated successfully. The information buffer contains the updated [<strong>NDIS_RECEIVE_QUEUE_PARAMETERS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567211) structure.</p></td>
+<td><p>The queue was allocated successfully. The information buffer contains the updated <a href="https://msdn.microsoft.com/library/windows/hardware/ff567211" data-raw-source="[&lt;strong&gt;NDIS_RECEIVE_QUEUE_PARAMETERS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567211)"><strong>NDIS_RECEIVE_QUEUE_PARAMETERS</strong></a> structure.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>NDIS_STATUS_PENDING</strong></p></td>
@@ -73,7 +72,7 @@ Either NDIS or the miniport driver returns one of the following status codes for
 </tr>
 <tr class="even">
 <td><p><strong>NDIS_STATUS_INVALID_LENGTH</strong></p></td>
-<td><p>The information buffer was too short. NDIS set the <strong>DATA</strong>.<strong>METHOD_INFORMATION</strong>.<strong>BytesNeeded</strong> member in the [<strong>NDIS_OID_REQUEST</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure to the minimum buffer size that is required.</p></td>
+<td><p>The information buffer was too short. NDIS set the <strong>DATA</strong>.<strong>METHOD_INFORMATION</strong>.<strong>BytesNeeded</strong> member in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710" data-raw-source="[&lt;strong&gt;NDIS_OID_REQUEST&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566710)"><strong>NDIS_OID_REQUEST</strong></a> structure to the minimum buffer size that is required.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>NDIS_STATUS_NOT_SUPPORTED</strong></p></td>
@@ -86,7 +85,7 @@ Either NDIS or the miniport driver returns one of the following status codes for
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -123,9 +122,9 @@ Requirements
 
 [**NDIS\_RECEIVE\_QUEUE\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff567211)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -56,13 +56,13 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>DestinationResponse</strong>](destinationresponse.md)</p></td>
+<td><p><a href="destinationresponse.md" data-raw-source="[&lt;strong&gt;DestinationResponse&lt;/strong&gt;](destinationresponse.md)"><strong>DestinationResponse</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>ScanAvailableEvent</strong>](scanavailableevent.md)</p></td>
+<td><p><a href="scanavailableevent.md" data-raw-source="[&lt;strong&gt;ScanAvailableEvent&lt;/strong&gt;](scanavailableevent.md)"><strong>ScanAvailableEvent</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>ScanDestination</strong>](scandestination.md)</p></td>
+<td><p><a href="scandestination.md" data-raw-source="[&lt;strong&gt;ScanDestination&lt;/strong&gt;](scandestination.md)"><strong>ScanDestination</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -87,9 +87,9 @@ The **&lt;wse:Subscribe&gt;** and **&lt;wse:SubscribeResponse&gt;** elements are
 
 [**ScanDestination**](scandestination.md)
 
- 
+ 
 
- 
+ 
 
 
 

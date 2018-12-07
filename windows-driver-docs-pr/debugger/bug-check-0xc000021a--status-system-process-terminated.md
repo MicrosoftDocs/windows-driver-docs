@@ -3,7 +3,6 @@ title: Bug Check 0xC000021A STATUS_SYSTEM_PROCESS_TERMINATED
 description: The STATUS_SYSTEM_PROCESS_TERMINATED bug check has a value of 0xC000021A. This means that an error has occurred in a crucial user-mode subsystem.
 ms.assetid: d46e2948-ff18-49e0-a738-7b90ab54d333
 keywords: ["Bug Check 0xC000021A STATUS_SYSTEM_PROCESS_TERMINATED", "STATUS_SYSTEM_PROCESS_TERMINATED"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -55,7 +54,7 @@ The STATUS\_SYSTEM\_PROCESS\_TERMINATED bug check has a value of 0xC000021A. Thi
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -99,9 +98,9 @@ Consider using Safe Mode to isolate elements for troubleshooting and if necessar
 
 Safe Mode may be available by pressing a function key on boot, for example F8. Refer to information from the manufacturer for specific startup options.
 
- 
+ 
 
- 
+ 
 
 
 

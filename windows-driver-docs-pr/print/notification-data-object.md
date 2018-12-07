@@ -1,6 +1,5 @@
 ---
 title: Notification Data Object
-author: windows-driver-content
 description: Notification Data Object
 ms.assetid: 6ba8840d-a693-485c-81da-81205e511120
 keywords:
@@ -62,9 +61,9 @@ The spooler defines a special notification type GUID named NOTIFICATION\_RELEASE
 
 A call to the **IPrintAsyncNotifyDataObject::AcquireData** method against this notification returns with the BYTE\*\* parameter set to **NULL**, the ULONG\* parameter set to 0, and the GUID\* parameter set to NOTIFICATION\_RELEASE.
 
- 
+ 
 
- 
+ 
 
 
 

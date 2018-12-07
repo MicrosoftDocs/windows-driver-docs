@@ -1,6 +1,5 @@
 ---
 title: Reporting Device Failures
-author: windows-driver-content
 description: Reporting Device Failures
 ms.assetid: ca536547-d51a-4450-8a83-19aac67aab92
 keywords:
@@ -39,9 +38,9 @@ If, within a short period of time, several consecutive restart attempts fail (be
 
 If a bus driver's [*EvtDeviceD0Entry*](https://msdn.microsoft.com/library/windows/hardware/ff540848) function returns a value for which NT\_SUCCESS(*status*) equals **FALSE**, the framework might still call the *EvtDeviceD0Entry* functions of drivers associated with the bus driver's child devices.
 
- 
+ 
 
- 
+ 
 
 
 

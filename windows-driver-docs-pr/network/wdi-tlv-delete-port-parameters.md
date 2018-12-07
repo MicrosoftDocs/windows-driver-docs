@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_DELETE_PORT_PARAMETERS
-author: windows-driver-content
 description: WDI_TLV_DELETE_PORT_PARAMETERS is a TLV that contains parameters for OID_WDI_TASK_DELETE_PORT.
 ms.assetid: F3DDECDC-1A92-4022-9E2C-780ED480172C
 ms.date: 07/18/2017
@@ -31,7 +30,7 @@ The sum (in bytes) of the sizes of all contained elements.
 |--------|--------------------------------------|
 | UINT16 | Specifies the port number to delete. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

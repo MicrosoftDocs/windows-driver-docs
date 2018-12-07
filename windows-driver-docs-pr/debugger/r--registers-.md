@@ -3,7 +3,6 @@ title: r (Registers)
 description: The r command displays or modifies registers, floating-point registers, flags, pseudo-registers, and fixed-name aliases.
 ms.assetid: c0d0af2f-1852-47a4-8f01-95f6ec198112
 keywords: ["r (Registers) Windows Debugging"]
-ms.author: domars
 ms.date: 07/11/2018
 topic_type:
 - apiref
@@ -135,7 +134,7 @@ You can specify one or more of the following values.
 </tbody>
 </table>
 
- 
+ 
 
 <span id="_______Value______"></span><span id="_______value______"></span><span id="_______VALUE______"></span> *Value*   
 Specifies the value to assign to the register. For more information about the syntax, see [Numerical Expression Syntax](numerical-expression-syntax.md).
@@ -166,7 +165,7 @@ Displays the registers used in the current instruction. If no registers are used
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -270,7 +269,7 @@ The following *Mask* bits are supported for an x86-based processor or an x64-bas
 </table>
 
 
- 
+ 
 
 The following code examples show **r** commands for an x86-based processor.
 
@@ -339,9 +338,9 @@ ebp=0006ffc0  esp=0006ff7c
 ```
 
 
- 
+ 
 
- 
+ 
 
 
 

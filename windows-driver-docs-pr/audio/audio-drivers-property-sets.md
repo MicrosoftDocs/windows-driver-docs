@@ -16,10 +16,10 @@ This section describes the audio-specific property sets that are available for a
 
 The reference page for each property contains a table with the following column headings.
 
+
 | Get | Set | Target | Property descriptor type | Property value type |
 |-----|-----|--------|--------------------------|---------------------|
-
- 
+|     |     |        |                          |                     |
 
 These headings have the following meanings:
 
@@ -101,9 +101,9 @@ The following property sets are defined for audio drivers:
 
 [KSPROPSETID\_TopologyNode](kspropsetid-topologynode.md)
 
- 
+ 
 
- 
+ 
 
 
 

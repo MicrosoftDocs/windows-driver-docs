@@ -1,7 +1,6 @@
 ---
 title: Using the Windows Performance Toolkit (WPT) with WDF
-author: windows-driver-content
-description: Starting in Windows 10, you can use the Windows Performance Toolkit (WPT) to view performance data for a KMDF or UMDF 2 driver.
+description: Starting in Windows 10, you can use the Windows Performance Toolkit (WPT) to view performance data for a KMDF or UMDF 2 driver.
 Search.SourceType: Video
 ms.assetid: 0442E4E2-DBC7-4EB0-BEB6-49EFF5132A1D
 ms.date: 04/20/2017
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 # Using the Windows Performance Toolkit (WPT) with WDF
 
 
-Starting in Windows 10, you can use the Windows Performance Toolkit (WPT) to view performance data for a given Kernel-Mode Driver Framework (KMDF) or User-Mode Driver Framework (UMDF) 2 driver.
+Starting in Windows 10, you can use the Windows Performance Toolkit (WPT) to view performance data for a given Kernel-Mode Driver Framework (KMDF) or User-Mode Driver Framework (UMDF) 2 driver.
 
 ## How can the Windows Driver Frameworks (WDF) extensions for WPT help?
 
@@ -42,11 +41,13 @@ To learn how to use the Windows Performance Toolkit to measure the performance o
 
     **WdfPerfEnhancedVerifier.cmd** *&lt;ServiceName&gt;&lt;UMDF or KMDF&gt;*
 
-    **Note**  WdfPerfEnhancedVerifier.cmd should be copied from the location you installed WPT. If you installed WPT on a development machine, you'll need to copy the script from the WPT installation directory to the target machine.
+    **Note**  WdfPerfEnhancedVerifier.cmd should be copied from the location you installed WPT. If you installed WPT on a development machine, you'll need to copy the script from the WPT installation directory to the target machine.
 
-     
 
-    This script sets registry entries for the specified driver so that the framework logs the events required to enable performance analysis when the ETW provider is enabled in step 4.
+
+
+This script sets registry entries for the specified driver so that the framework logs the events required to enable performance analysis when the ETW provider is enabled in step 4.
+
 
 3.  Reboot the computer.
 4.  In an elevated command prompt, enter the following command.
@@ -55,11 +56,13 @@ To learn how to use the Windows Performance Toolkit to measure the performance o
 
     This command enables the ETW provider for WDF. The computer starts recording a trace.
 
-    **Note**  As in step 2, Wpr.exe and WdfPerfTraceProviders.wprp should be copied from the location you installed WPT. If you installed WPT on a development machine, copy these files from the WPT installation directory to the target machine.
+    **Note**  As in step 2, Wpr.exe and WdfPerfTraceProviders.wprp should be copied from the location you installed WPT. If you installed WPT on a development machine, copy these files from the WPT installation directory to the target machine.
 
-     
 
-    On Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), you can also start the trace with Wprui.exe, which provides a GUI for recording traces.
+
+
+On Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), you can also start the trace with Wprui.exe, which provides a GUI for recording traces.
+
 
 5.  Exercise your scenario of interest.
 6.  Stop the ETW trace session: **Wpr.exe -Stop MyPerfTrace.etl**
@@ -163,16 +166,16 @@ Finally, to determine callback duration for PnP/Power callbacks, the framework r
     ```
 
 -   For development and testing purposes only, enforcement of the driver code signing policy can be temporarily disabled. For more information, see [Installing an Unsigned Driver Package during Development and Test](https://msdn.microsoft.com/library/windows/hardware/ff547565).
--   If you captured a trace on Windows 10 Mobile, you'll need to copy MyPerfTrace.etl from the target device to a computer that has Wpa.exe. You can use the [TShell tool](https://sysdev.microsoft.com/Hardware/oem/docs/Phone_Testing/TShell) to do this.
+-   If you captured a trace on Windows 10 Mobile, you'll need to copy MyPerfTrace.etl from the target device to a computer that has Wpa.exe. You can use the [TShell tool](https://sysdev.microsoft.com/Hardware/oem/docs/Phone_Testing/TShell) to do this.
 
 ## Related topics
 
 
 [Windows Performance Analyzer](https://msdn.microsoft.com/library/windows/hardware/hh448170.aspx)
 
- 
 
- 
+
+
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Object Reference Tracing with Tags
-author: windows-driver-content
 description: Object Reference Tracing with Tags
 ms.assetid: f6c3d7b2-09b1-4055-b066-cce8831efab2
 keywords: ["object referencing with tags WDK"]
@@ -92,9 +91,9 @@ By default, the operating system conserves memory by deleting the object referen
 
 Object reference tracing, without tags, was introduced in Windows XP. Because the trace did not include tags, developers had to use less convenient techniques to identify object reference bugs. The debugger could track the references of groups of objects, which the developer selected by object type. The only way that the developer could identify the various sources of object references and dereferences was to compare their call stacks. Although the previous [!obtrace](http://go.microsoft.com/fwlink/p/?linkid=153600) example contains only five stacks, certain types of object, such as a process ([**EPROCESS**](eprocess.md)) object, might be referenced and dereferenced many thousands of times. With thousands of stacks to inspect, it might be difficult to identify the source of an object leak or under-reference without using tags.
 
- 
+ 
 
- 
+ 
 
 
 

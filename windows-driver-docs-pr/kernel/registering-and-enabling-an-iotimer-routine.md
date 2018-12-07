@@ -1,6 +1,5 @@
 ---
 title: Registering and Enabling an IoTimer Routine
-author: windows-driver-content
 description: Registering and Enabling an IoTimer Routine
 ms.assetid: d06a6430-5098-492a-8114-d6f390083718
 keywords: ["IoTimer", "IoInitializeTimer", "IoStartTimer", "registering IoTimer routines"]
@@ -22,15 +21,15 @@ After calling [**IoCreateDevice**](https://msdn.microsoft.com/library/windows/ha
 
 After the driver calls **IoStartTimer**, its *IoTimer* routine is called once per second until the driver calls [**IoStopTimer**](https://msdn.microsoft.com/library/windows/hardware/ff550377). A driver can reenable calls to its *IoTimer* routine with **IoStartTimer**. (Frequently, when a driver calls **IoStartTimer**, it supplies the device object pointer obtained from the I/O stack location of the current IRP.)
 
-On entry, the *IoTimer* routine is passed the device object pointer*,* along with the context pointer that the driver supplied when it called **IoInitializeTimer**.
+On entry, the *IoTimer* routine is passed the device object pointer<em>,</em> along with the context pointer that the driver supplied when it called **IoInitializeTimer**.
 
 Drivers must not call **IoStopTimer** from within an *IoTimer* routine.
 
 The I/O manager unregisters the timer routine for a specified device object and frees its associated context when the driver calls [**IoDeleteDevice**](https://msdn.microsoft.com/library/windows/hardware/ff549083).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Network Redirector Design and Performance
-author: windows-driver-content
 description: Network Redirector Design and Performance
 ms.assetid: 60ee4548-f81c-4d10-91ef-0e31e2837268
 keywords:
@@ -29,9 +28,9 @@ Performance is also reduced when a system uses a networking mode that is inappro
 
 Finally, performance may be enhanced if appropriate data obtained during operations is available for making smart decisions. There are numerous examples of this in Windows. For example, Cache Manager keeps a short history of read commands and tracks cache hits and misses, which is used to guide decisions on read-ahead scheduling. A second example might be the use of "environmental information" for making decisions. There might be information available in the file name, the share name, or from a user or administrator that could greatly increase performance. For example, response can sometimes be tuned to improve performance by just changing cache size parameters to capture the data file being used. This "environmental knowledge" of access patterns for certain scenarios could potentially be used to suggest dynamic changes (hints) for improving performance.
 
- 
+ 
 
- 
+ 
 
 
 

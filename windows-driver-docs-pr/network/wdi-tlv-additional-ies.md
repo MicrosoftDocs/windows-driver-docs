@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_ADDITIONAL_IES
-author: windows-driver-content
 description: WDI_TLV_ADDITIONAL_IES is a TLV that contains additional Information Element (IE) settings.
 ms.assetid: B9094E9D-894F-4B23-B4DA-126F87E908C9
 ms.date: 07/18/2017
@@ -33,7 +32,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 | [**WDI\_TLV\_ADDITIONAL\_PROBE\_RESPONSE\_IES**](wdi-tlv-additional-probe-response-ies.md)                |                                | X        | An array of probe response IEs. The Wi-Fi Direct port must add these additional IEs to the probe response packets when it is acting as a Wi-Fi Direct device or Group Owner. This is ignored when the Wi-Fi Direct port is operating in client mode.                                                                 |
 | [**WDI\_TLV\_ADDITIONAL\_PROBE\_REQUEST\_DEFAULT\_IES**](wdi-tlv-additional-probe-request-default-ies.md) |                                | X        | An array of additional probe request IEs. This offset is relative to the start of the buffer that contains this structure. The Wi-Fi Direct port must add these additional IEs to the probe request packets that it transmits. Note that a Wi-Fi Direct discover request may override the default probe request IEs. |
 
- 
+ 
 
 Requirements
 ------------
@@ -59,9 +58,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

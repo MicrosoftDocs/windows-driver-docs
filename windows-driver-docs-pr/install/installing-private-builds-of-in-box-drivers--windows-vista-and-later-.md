@@ -15,7 +15,7 @@ This section describes how to build and install a private build of a driver that
 
 **Note**   To understand this material, you must be familiar with digitally signing a driver and how Windows ranks drivers based on this signature and other criteria. For more information about digital signatures for drivers, see [Driver Signing](driver-signing.md).
 
- 
+ 
 
 The following topics describe how you can override the default rank number for your driver so that you can install a private build of an inbox driver:
 
@@ -29,11 +29,11 @@ The following topics describe how you can override the default rank number for y
 
 **Important**   Windows Update depends on Microsoft-signed drivers having priority over drivers that have third-party signatures. Configuring a system to override this priority can interfere with the ability of Windows Update to provide the correct drivers to consumers. This can result in an installation failure for drivers that are delivered by Windows Update.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

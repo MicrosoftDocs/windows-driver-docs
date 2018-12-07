@@ -46,10 +46,10 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>ActiveJobs</strong>](activejobs.md)</p></td>
+<td><p><a href="activejobs.md" data-raw-source="[&lt;strong&gt;ActiveJobs&lt;/strong&gt;](activejobs.md)"><strong>ActiveJobs</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>JobHistory</strong>](jobhistory2.md)</p></td>
+<td><p><a href="jobhistory2.md" data-raw-source="[&lt;strong&gt;JobHistory&lt;/strong&gt;](jobhistory2.md)"><strong>JobHistory</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -71,9 +71,9 @@ The WSD Scan Service uses a **JobTable** element to track all current and finish
 
 [**JobHistory**](jobhistory2.md)
 
- 
+ 
 
- 
+ 
 
 
 

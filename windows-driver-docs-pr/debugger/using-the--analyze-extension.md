@@ -3,7 +3,6 @@ title: Using the analyze Extension
 description: Using the analyze Extension
 ms.assetid: 0aa74153-e992-4d1c-b734-ccc60cff452c
 keywords: ["analyze extension, examples"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -338,9 +337,9 @@ In kernel mode, if a bug check has occurred but you believe the underlying probl
 
 You can also automatically ignore known issues. To do this, you must first create an XML file containing a formatted list of known issues. Use the **!analyze -c -load***KnownIssuesFile* extension to load this file. Then when an exception or break occurs, use the **!analyze -c** extension. If the exception matches one of the known issues, the target will resume execution. If the target does not resume executing, then you can use **!analyze -v** to determine the cause of the problem. A sample XML file can be found in the sdk\\samples\\analyze\_continue subdirectory of the debugger installation directory.
 
- 
+ 
 
- 
+ 
 
 
 

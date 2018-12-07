@@ -1,6 +1,5 @@
 ---
 title: Using Kernel Transaction Manager
-author: windows-driver-content
 description: Using Kernel Transaction Manager
 ms.assetid: b558ace9-b416-4572-ac94-58a083c9d33b
 keywords: ["Kernel Transaction Manager WDK", "KTM WDK", "transactions WDK KTM"]
@@ -24,9 +23,9 @@ This section describes the kernel-mode interfaces of the kernel transaction mana
 
 For information about the routines, structures, and enumerations that KTM supports, see the [Kernel Transaction Manager Reference](https://msdn.microsoft.com/library/windows/hardware/ff553232).
 
- 
+ 
 
- 
+ 
 
 
 

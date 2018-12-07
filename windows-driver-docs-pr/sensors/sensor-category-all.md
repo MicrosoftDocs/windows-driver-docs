@@ -1,6 +1,5 @@
 ---
 title: SENSOR\_CATEGORY\_ALL
-author: windows-driver-content
 description: The SENSOR\_CATEGORY\_ALL category represents the set of all platform-defined sensor categories.
 ms.assetid: 9a4524d2-055c-46e0-9650-66e6f2872fbc
 keywords: SENSOR_CATEGORY_ALL Sensor Devices
@@ -28,12 +27,12 @@ This category includes the following platform-defined data fields.
 |Data type|Type|Meaning|
 |--|--|--|
 |SENSOR_DATA_TYPE_TIMESTAMP|VT_FILETIME|Required for all data reports. Marks each data report with the time the data report was created. Use Universal Coordinated Time (UTC).|
- 
+ 
 
 >[!IMPORTANT]
 > Each platform-defined common data type **PROPERTYKEY** is based on a common **GUID** that is named SENSOR\_DATA\_TYPE\_COMMON\_GUID. As it is a reserved base value, do not use this **GUID** to define your own property keys.
 
- 
+ 
 
 ## Requirements
 
@@ -43,9 +42,9 @@ This category includes the following platform-defined data fields.
 |Minimum supported server|None supported|
 |Version|Available in Windows 7.|
 |Header|Sensors.h|
- 
+ 
 
- 
+ 
 
 
 

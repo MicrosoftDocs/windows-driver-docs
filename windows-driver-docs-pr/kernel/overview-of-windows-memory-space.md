@@ -1,6 +1,5 @@
 ---
 title: Overview of Windows Memory Space
-author: windows-driver-content
 description: Overview of Windows Memory Space
 ms.assetid: b49a35c2-6da6-4239-a67b-542d42a5c9e4
 keywords: ["memory management WDK kernel , about memory space", "memory space WDK kernel", "physical memory WDK kernel", "virtual memory WDK kernel"]
@@ -24,9 +23,9 @@ Note that any noncurrent process's virtual addresses are not visible, so its mem
 
 For an extensive discussion of memory management, see the *Inside Microsoft Windows Internals* book from Microsoft Press.
 
- 
+ 
 
- 
+ 
 
 
 

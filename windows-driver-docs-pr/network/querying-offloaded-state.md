@@ -29,9 +29,9 @@ This section includes:
 
 [Returning the Completion Status of a Query Offload Operation](returning-the-completion-status-of-a-query-offload-operation.md)
 
- 
+ 
 
- 
+ 
 
 
 

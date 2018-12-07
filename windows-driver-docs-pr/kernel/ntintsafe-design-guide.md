@@ -1,6 +1,5 @@
 ---
 title: Using Safe Integer Functions
-author: windows-driver-content
 description: The ntintsafe library provides a set of C functions that perform safe integer arithmetic operations with bounds checking to prevent overflows and underflows in kernel-mode code.
 ms.assetid: AFB7A078-814D-49EF-ABF9-2C621590F43B
 ms.localizationpriority: medium
@@ -29,9 +28,9 @@ The ntintsafe library has two categories of functions:
 
 [Importing Kernel-Mode Safe Integer Functions](importing-safe-integer-functions.md)
 
- 
+ 
 
- 
+ 
 
 
 

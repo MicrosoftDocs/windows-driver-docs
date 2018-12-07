@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_PHY_CAPABILITIES
-author: windows-driver-content
 description: WDI_TLV_PHY_CAPABILITIES is a TLV that contains PHY capabilities.
 ms.assetid: 8F482ED6-6594-4DB5-B53B-4424DAD32D36
 ms.date: 07/18/2017
@@ -35,7 +34,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | UINT32                                      | Specifies the operating temperature class.         |
 | UINT32                                      | Specifies the antenna diversity support.           |
 
- 
+ 
 
 Requirements
 ------------
@@ -61,9 +60,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

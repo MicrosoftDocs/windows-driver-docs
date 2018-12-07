@@ -1,6 +1,5 @@
 ---
 title: Sample CPSUI Application
-author: windows-driver-content
 description: Sample CPSUI Application
 ms.assetid: 895afbfe-c18a-4bcc-b815-8cb323bbac80
 keywords:
@@ -21,11 +20,11 @@ Source code for CPSUISAM, a sample CPSUI application, is included in the \\src\\
 
 **Note**  Printer interface DLLs should not call into the print spooler. CPSUISAM illustrates some of the capabilities of CPSUI but does not represent techniques that should be used by printer interface DLLs. Instead, these DLLs should follow the steps described in [Using CPSUI with Printer Drivers](using-cpsui-with-printer-drivers.md).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

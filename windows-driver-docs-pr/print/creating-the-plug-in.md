@@ -1,6 +1,5 @@
 ---
 title: Creating the Plug-In
-author: windows-driver-content
 description: Creating the Plug-In
 ms.assetid: 4e52c855-f2c6-49b5-ac79-96dcac785579
 keywords:
@@ -58,9 +57,9 @@ To create either type of plug-in, you must do the following:
 
     If the plug-in DLL must remain loaded (for example, when it creates a thread that uses the plug-in DLL), the thread must load the DLL, using a call to the LoadLibrary function. When the thread is finished with the DLL, it should call the FreeLibraryAndExitThread function to unload it. In a situation in which a thread has called LoadLibrary, the driver's call to FreeLibrary merely decrements the DLL's reference count, thereby preventing it from being unloaded. The LoadLibrary, FreeLibrary, and FreeLibraryAndExitThread functions are described in the Windows SDK documentation.
 
- 
+ 
 
- 
+ 
 
 
 

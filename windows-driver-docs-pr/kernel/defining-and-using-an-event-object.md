@@ -1,6 +1,5 @@
 ---
 title: Defining and Using an Event Object
-author: windows-driver-content
 description: Defining and Using an Event Object
 ms.assetid: 4b7807f0-bbea-4402-b028-9ac73724717f
 keywords: ["event objects WDK kernel", "waiting on event objects", "synchronization events WDK kernel", "notification events WDK kernel"]
@@ -62,9 +61,9 @@ For a summary of the IRQLs at which standard driver routines run, see [Managing 
 
 For better performance, every driver should call **KeClearEvent** unless the caller needs the information returned by **KeResetEvent** to determine what to do next.
 
- 
+ 
 
- 
+ 
 
 
 

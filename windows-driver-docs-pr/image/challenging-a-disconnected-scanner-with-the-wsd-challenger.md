@@ -1,6 +1,5 @@
 ---
 title: Challenging a Disconnected Scanner with the WSD Challenger
-author: windows-driver-content
 description: Challenging a Disconnected Scanner with the WSD Challenger
 ms.assetid: f938a235-0360-43f9-9f84-6b9cb6ca9245
 ms.date: 04/20/2017
@@ -28,7 +27,7 @@ Shuts down the WSD Challenger interface that the WIA driver client uses. Call th
 
 **Note**   When this shutdown happens, if the device is a WSDScan-class device, the WIA service continues to run WSD challenge monitoring for the device after the driver has been unloaded and terminated its web services Challenge interface.
 
- 
+ 
 
 <a href="" id="wsdchngrregisterdevicetochallenge"></a>**WSDCHNGRRegisterDeviceToChallenge**  
 Registers the device to be challenged. Call this function after the driver encounters any potential communication failure. The same device can be registered for a challenge more than once. **WSDCHNGRRegisterDeviceToChallenge** returns S\_OK if the first device is registered successfully. This function returns S\_FALSE when it is called for a device that is already registered to be challenged.
@@ -43,9 +42,9 @@ The following code examples show how to use these WSD Challenge functions to ini
 
 For more information about the definitions and variables that are used in these examples, see [Definitions and Variables Used in the Examples](definitions-and-variables-used-in-the-examples.md).
 
- 
+ 
 
- 
+ 
 
 
 

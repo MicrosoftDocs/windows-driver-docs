@@ -1,6 +1,5 @@
 ---
 title: PC cards with incomplete configuration register addresses
-author: windows-driver-content
 description: Information on supporting PC cards with incomplete configuration register addresses
 ms.assetid: 2a708ca5-a119-4ef5-81ee-d9e40e7a5255
 keywords:
@@ -81,9 +80,9 @@ Include more than one *DDInstall*.**Override***N* section in the INF to specify 
 
 If the device uses a memory window that is not based at zero, the *DDInstall*.**Override***N* section(s) must also include a **PcCardConfig** entry. If an override section has both an **MfCardConfig** entry and a **PcCardConfig** entry, the PCMCIA bus driver ignores the *ConfigIndex* value in the **PcCardConfig** entry and just uses the *MemoryCardBaseN* information. See [Supporting PC Cards That Have Incomplete Configuration Registers](supporting-pc-cards-that-have-incomplete-configuration-registers.md) for more information about the **PcCardConfig** entry.
 
- 
+ 
 
- 
+ 
 
 
 

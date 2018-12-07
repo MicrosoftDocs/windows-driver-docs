@@ -25,9 +25,9 @@ After a stand-alone call manager or connection-oriented client initiates the set
 
 A miniport call manager (MCM) cannot use [**NdisCoAssignInstanceName**](https://msdn.microsoft.com/library/windows/hardware/ff561692) to name its VCs. Instead, an MCM should create a custom GUID and OID for the VC and register the GUID-to-OID mapping with NDIS. For more information about registering custom OIDs, see [Customized OIDs and Status Indications](customized-oids-and-status-indications.md).
 
- 
+ 
 
- 
+ 
 
 
 

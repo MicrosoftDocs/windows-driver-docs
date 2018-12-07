@@ -1,6 +1,5 @@
 ---
 title: Printer Configuration Commands
-author: windows-driver-content
 description: Printer Configuration Commands
 ms.assetid: ed5102e7-1651-4188-8042-f0d544a54a1d
 keywords:
@@ -35,53 +34,53 @@ The following table lists the printer configuration commands. All commands are s
 <tr class="odd">
 <td><p>CmdStartJob</p></td>
 <td><p>Command to initialize a print job.</p></td>
-<td><p>Optional. [Command execution order](command-execution-order.md) must be specified.</p></td>
+<td><p>Optional. <a href="command-execution-order.md" data-raw-source="[Command execution order](command-execution-order.md)">Command execution order</a> must be specified.</p></td>
 </tr>
 <tr class="even">
 <td><p>CmdStartDoc</p></td>
 <td><p>Command to initialize a document.</p></td>
-<td><p>Optional. [Command execution order](command-execution-order.md) must be specified.</p></td>
+<td><p>Optional. <a href="command-execution-order.md" data-raw-source="[Command execution order](command-execution-order.md)">Command execution order</a> must be specified.</p></td>
 </tr>
 <tr class="odd">
 <td><p>CmdStartPage</p></td>
 <td><p>Command to initialize a page and set the cursor position to (0,0) in cursor coordinates.</p></td>
-<td><p>Optional. [Command execution order](command-execution-order.md) must be specified.</p></td>
+<td><p>Optional. <a href="command-execution-order.md" data-raw-source="[Command execution order](command-execution-order.md)">Command execution order</a> must be specified.</p></td>
 </tr>
 <tr class="even">
 <td><p>CmdEndPage</p></td>
 <td><p>Command to finish printing a page.</p></td>
-<td><p>Optional. [Command execution order](command-execution-order.md) must be specified.</p></td>
+<td><p>Optional. <a href="command-execution-order.md" data-raw-source="[Command execution order](command-execution-order.md)">Command execution order</a> must be specified.</p></td>
 </tr>
 <tr class="odd">
 <td><p>CmdEndDoc</p></td>
 <td><p>Command to finish printing a document.</p></td>
-<td><p>Optional. [Command execution order](command-execution-order.md) must be specified.</p></td>
+<td><p>Optional. <a href="command-execution-order.md" data-raw-source="[Command execution order](command-execution-order.md)">Command execution order</a> must be specified.</p></td>
 </tr>
 <tr class="even">
 <td><p>CmdEndJob</p></td>
 <td><p>Command to complete a print job.</p></td>
-<td><p>Optional. [Command execution order](command-execution-order.md) must be specified.</p></td>
+<td><p>Optional. <a href="command-execution-order.md" data-raw-source="[Command execution order](command-execution-order.md)">Command execution order</a> must be specified.</p></td>
 </tr>
 <tr class="odd">
 <td><p>CmdCopies</p></td>
 <td><p>Command to specify the number of copies to print.</p></td>
-<td><p>Optional. [Command execution order](command-execution-order.md) must be specified.</p></td>
+<td><p>Optional. <a href="command-execution-order.md" data-raw-source="[Command execution order](command-execution-order.md)">Command execution order</a> must be specified.</p></td>
 </tr>
 <tr class="even">
 <td><p>CmdSleepTimeOut</p></td>
 <td><p>Command to specify the number of minutes for the printer to wait before entering power-save mode.</p></td>
-<td><p>Optional. [Command execution order](command-execution-order.md) must be specified.</p></td>
+<td><p>Optional. <a href="command-execution-order.md" data-raw-source="[Command execution order](command-execution-order.md)">Command execution order</a> must be specified.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 For examples, see the [sample GPD files](sample-gpd-files.md).
 
- 
+ 
 
- 
+ 
 
 
 

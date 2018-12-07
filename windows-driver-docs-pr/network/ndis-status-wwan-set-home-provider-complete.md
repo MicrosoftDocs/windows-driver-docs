@@ -1,6 +1,5 @@
 ---
 title: NDIS_STATUS_WWAN_SET_HOME_PROVIDER_COMPLETE
-author: windows-driver-content
 description: Miniport drivers use the NDIS_STATUS_WWAN_SET_HOME_PROVIDER_COMPLETE notification to inform the MB Service about the completion of OID_WWAN_HOME_PROVIDER set requests. This notification uses the NDIS_WWAN_SET_HOME_PROVIDER structure.
 ms.assetid: 458B5AF6-4785-4A19-9B8D-5A7CF04D5AB4
 ms.date: 07/18/2017
@@ -36,9 +35,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

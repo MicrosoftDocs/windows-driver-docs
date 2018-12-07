@@ -34,14 +34,14 @@ To ensure that you are testing the latest version of the driver, select **Remove
 ## <span id="Target_computer_name"></span><span id="target_computer_name"></span><span id="TARGET_COMPUTER_NAME"></span>Target computer name
 
 
-You can choose the target computer to use for deployment and testing. If you have already configured your test computers, you can select one from this list. If you have not configured a test computer, you can configure one using the **Browse** button. For more information about configuring a test computer, see [Deploying a Driver to a Test Computer](deploying-a-driver-to-a-test-computer.md). Make sure that the project configuration and platform match the target architecture of your test system. A common deployment error occurs when you attempt to install an x86 (Win32) driver on a system running an x64 version of Windows. When you configure the test computer, you can also run a kernel-mode debugger. For more information, see [Setting Up Kernel-Mode Debugging in Visual Studio](https://msdn.microsoft.com/windows/hardware/hh439376.
+You can choose the target computer to use for deployment and testing. If you have already configured your test computers, you can select one from this list. If you have not configured a test computer, you can configure one using the **Browse** button. For more information about configuring a test computer, see [Deploying a Driver to a Test Computer](deploying-a-driver-to-a-test-computer.md). Make sure that the project configuration and platform match the target architecture of your test system. A common deployment error occurs when you attempt to install an x86 (Win32) driver on a system running an x64 version of Windows. When you configure the test computer, you can also run a kernel-mode debugger. For more information, see [Setting Up Kernel-Mode Debugging in Visual Studio](https://msdn.microsoft.com/windows/hardware/hh439376).
 
 ## <span id="Driver_installation_options"></span><span id="driver_installation_options"></span><span id="DRIVER_INSTALLATION_OPTIONS"></span>Driver installation options
 
 
 **Do not install -** This is the default option. You can choose not to install if you are importing the driver package to the [Driver Store](https://msdn.microsoft.com/Library/Windows/Hardware/Ff544868) or if you are enabling and setting driver verifier options on the test computer.
 
-**Hardware ID Driver Update -** To deploy a driver for an actual hardware device, use **Install and Verify** instead. To deploy a driver for a root-enumerated driver, you can use either **Hardware ID Driver Update** or **Install and Verify**. If you choose to use Hardware ID Driver Update, you must enter the same hardware ID that appears in your INF file, and that hardware ID must have the form Root\\Xxx. If you choose this option, the files are copied to the %*Systemdrive*%\\drivertest\\drivers folder on the remote computer. The Device Console utility, [Devcon](https://msdn.microsoft.com/Library/Windows/Hardware/Ff544707), installs the driver for that hardware ID and INF file from the package. For example, you can select **Hardware ID Driver Update** and set the HWID to **Root\\***yourprojectname*. Make sure to exclude any spaces in your project name.
+**Hardware ID Driver Update -** To deploy a driver for an actual hardware device, use **Install and Verify** instead. To deploy a driver for a root-enumerated driver, you can use either **Hardware ID Driver Update** or **Install and Verify**. If you choose to use Hardware ID Driver Update, you must enter the same hardware ID that appears in your INF file, and that hardware ID must have the form Root\\Xxx. If you choose this option, the files are copied to the %*Systemdrive*%\\drivertest\\drivers folder on the remote computer. The Device Console utility, [Devcon](https://msdn.microsoft.com/Library/Windows/Hardware/Ff544707), installs the driver for that hardware ID and INF file from the package. For example, you can select **Hardware ID Driver Update** and set the HWID to **Root\\**<em>yourprojectname</em>. Make sure to exclude any spaces in your project name.
 
 **Custom Command Line -** You can choose to run your own custom command scripts upon installation. If you want to run a custom command script, make sure to add the necessary files under the **Additional Files** section. The additional files are copied to the *%Systemdrive%*\\drivertest\\drivers folder on the remote computer.
 
@@ -60,9 +60,9 @@ You can use the **Additional Files** box to specify custom installation scripts 
 * [Deploying a Driver to a Test Computer](deploying-a-driver-to-a-test-computer.md)
 * [How to test a driver at runtime using Visual Studio](testing-a-driver-at-runtime.md)
 * [Setting Up Kernel-Mode Debugging in Visual Studio](https://msdn.microsoft.com/windows/hardware/hh439376)
- 
+ 
 
- 
+ 
 
 
 

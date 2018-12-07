@@ -1,6 +1,5 @@
 ---
 title: button element
-author: windows-driver-content
 description: The required button element specifies the characteristics of a button in a message box that is displayed on the client computer.
 ms.assetid: 3e210599-9412-4eea-a024-338e39852199
 keywords: ["button element Print Devices"]
@@ -99,7 +98,7 @@ There are no child elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>buttons</strong>](buttons.md)</p></td>
+<td><p><a href="buttons.md" data-raw-source="[&lt;strong&gt;buttons&lt;/strong&gt;](buttons.md)"><strong>buttons</strong></a></p></td>
 <td><p></p>
 <p>A required element that specifies one or more buttons that are displayed in the event notification message box on the client computer.</p></td>
 </tr>

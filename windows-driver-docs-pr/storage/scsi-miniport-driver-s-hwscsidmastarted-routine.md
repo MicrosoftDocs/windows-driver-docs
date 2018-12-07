@@ -1,6 +1,5 @@
 ---
 title: SCSI Miniport Driver's HwScsiDmaStarted Routine
-author: windows-driver-content
 description: SCSI Miniport Driver's HwScsiDmaStarted Routine
 ms.assetid: 697839f0-e912-42a5-abe0-f6bb946c86d8
 keywords:
@@ -33,9 +32,9 @@ When a transfer operation is complete, the miniport driver must call [**ScsiPort
 
 See [**ScsiPortIoMapTransfer**](https://msdn.microsoft.com/library/windows/hardware/ff564649) and [**ScsiPortFlushDma**](https://msdn.microsoft.com/library/windows/hardware/ff564618) for more information.
 
- 
+ 
 
- 
+ 
 
 
 

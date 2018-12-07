@@ -3,7 +3,6 @@ title: hidkd.hidrd
 description: The hidkd.hidrd command displays a HID report descriptor in both raw and parsed format.
 ms.assetid: 8A9D76F2-7A36-4458-83A4-EDCB153EC45A
 keywords: ["hidkd.hidrd Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -79,9 +78,9 @@ End Collection ()........................................0x0126: C0
 
 [HID Extensions](hid-extensions.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -60,7 +60,7 @@ The definitions of faults use the following properties.
 </tbody>
 </table>
 
- 
+ 
 
 These properties bind to a SOAP 1.2 fault as the following code example shows.
 
@@ -114,9 +114,9 @@ The following code example shows a sample SOAP **Fault**.
 </soap:Envelope>
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -77,9 +77,9 @@ One of the most important factors in the network adapter hardware performance is
 
 Supporting larger Maximum Transmission Units (MTUs) and thus larger frame sizes, specifically Jumbo Frames, will reduce the network stack overhead incurred per byte. A 20% TCP throughput increase has been measured when the MTU was changed from 1514 to 9000. Also, a significant reduction of CPU utilization is obtained due to the fewer number of calls from the network stack to the network driver.
 
- 
+ 
 
- 
+ 
 
 
 

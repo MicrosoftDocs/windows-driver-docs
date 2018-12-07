@@ -1,6 +1,5 @@
 ---
 title: AVStream Allocators
-author: windows-driver-content
 description: AVStream Allocators
 ms.assetid: cda90faa-d4e3-4f17-aa5a-87dcde314bfd
 keywords:
@@ -53,9 +52,9 @@ A kernel-mode allocator is only chosen if the connection is in kernel mode. In a
 
 Also see [AVStream DMA Services](avstream-dma-services.md) and [Stream Pointers](stream-pointers.md).
 
- 
+ 
 
- 
+ 
 
 
 

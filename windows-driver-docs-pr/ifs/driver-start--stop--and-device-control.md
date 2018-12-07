@@ -1,6 +1,5 @@
 ---
 title: Driver Start, Stop, and Device Control
-author: windows-driver-content
 description: Driver Start, Stop, and Device Control
 ms.assetid: d3608a5f-3bf4-43b1-8c32-55a6fcd4fbe8
 keywords:
@@ -45,25 +44,25 @@ The following table lists the routines that can be implemented by a network mini
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">[<strong>MRxDevFcbXXXControlFile</strong>](https://msdn.microsoft.com/library/windows/hardware/ff549876)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/ff549876" data-raw-source="[&lt;strong&gt;MRxDevFcbXXXControlFile&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff549876)"><strong>MRxDevFcbXXXControlFile</strong></a></td>
 <td align="left"><p>RDBSS calls this routine to pass a device FCB control request to the network mini-redirector. RDBSS issues this call in response to receiving an IRP_MJ_DEVICE_CONTROL, IRP_MJ_FILE_SYSTEM_CONTROL, or IRP_MJ_INTERNAL_DEVICE_CONTROL on a device FCB.</p></td>
 </tr>
 <tr class="even">
-<td align="left">[<strong>MRxStart</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550829)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/ff550829" data-raw-source="[&lt;strong&gt;MRxStart&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff550829)"><strong>MRxStart</strong></a></td>
 <td align="left"><p>RDBSS calls this routine to start the network mini-redirector.</p></td>
 </tr>
 <tr class="odd">
-<td align="left">[<strong>MRxStop</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550833)</td>
+<td align="left"><a href="https://msdn.microsoft.com/library/windows/hardware/ff550833" data-raw-source="[&lt;strong&gt;MRxStop&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff550833)"><strong>MRxStop</strong></a></td>
 <td align="left"><p>RDBSS calls this routine to stop the network mini-redirector.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

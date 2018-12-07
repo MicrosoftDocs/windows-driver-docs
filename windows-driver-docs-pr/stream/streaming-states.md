@@ -1,6 +1,5 @@
 ---
 title: Streaming States
-author: windows-driver-content
 description: Streaming States
 ms.assetid: 1030e5cd-441b-4f6a-8f6a-21ce11aaca96
 keywords:
@@ -35,7 +34,7 @@ Each stream provided by the minidriver exists in one of four states: KSSTATE\_ST
 <tbody>
 <tr class="odd">
 <td><p>KSSTATE_STOP</p></td>
-<td><p>When the stream state is stopped, the minidriver uses the absolute minimum of resources, and there are no outstanding data SRBs in the minidriver's queue.</p></td>
+<td><p>When the stream state is stopped, the minidriver uses the absolute minimum of resources, and there are no outstanding data SRBs in the minidriver&#39;s queue.</p></td>
 </tr>
 <tr class="even">
 <td><p>KSSTATE_ACQUIRE</p></td>
@@ -52,11 +51,11 @@ Each stream provided by the minidriver exists in one of four states: KSSTATE\_ST
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Storage Requirements for ControllerControl Routines
-author: windows-driver-content
 description: Storage Requirements for ControllerControl Routines
 ms.assetid: 1ee69144-5f52-4d61-ad30-02e8fbe1f91e
 keywords: ["controller objects WDK kernel , writing ControllerControl routines", "ControllerControl routines, writing", "ControllerControl routines, storage", "storage WDK controller objects"]
@@ -22,9 +21,9 @@ The driver writer determines the size and internal structure of the *ControllerO
 
 A controller object, which cannot be given a name, cannot be the target of an I/O request. The hardware it represents usually controls a set of homogeneous devices that are the actual targets of I/O requests.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Writing a Print Monitor
-author: windows-driver-content
 description: Writing a Print Monitor
 ms.assetid: ca5600fc-9e2c-4735-90c4-9509c31dee29
 keywords:
@@ -49,9 +48,9 @@ The following topics are provided:
 
 [Installing a Print Monitor](installing-a-print-monitor.md)
 
- 
+ 
 
- 
+ 
 
 
 

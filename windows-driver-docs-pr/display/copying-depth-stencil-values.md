@@ -42,9 +42,9 @@ The driver expands a source stencil value to an 8-bit integer (that is, the driv
 
 User-mode display drivers must support depth-stencil copies of arbitrary subrectangles. However, drivers are not required to perform mirror, stretch, or color-key operations during depth-stencil copies. Point sampling is implicitly required during depth-stencil copies.
 
- 
+ 
 
- 
+ 
 
 
 

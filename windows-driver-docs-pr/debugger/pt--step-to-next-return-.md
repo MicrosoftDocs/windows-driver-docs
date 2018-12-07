@@ -3,7 +3,6 @@ title: pt (Step to Next Return)
 description: The pt command executes the program until a return instruction is reached.
 ms.assetid: f4388953-4cb2-4df5-af8b-150e50ce765b
 keywords: ["pt (Step to Next Return) Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -74,7 +73,7 @@ Specifies a debugger command to execute after the step is performed. This comman
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -95,9 +94,9 @@ The following example demonstrates using the **pt** command along with the **kb*
 0:000> pt "kb"
 ```
 
- 
+ 
 
- 
+ 
 
 
 

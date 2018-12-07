@@ -1,7 +1,6 @@
 ---
 Description: This topic presents frequently asked questions for driver developers who are new to developing and integrating USB devices and drivers with Windows operating systems.
 title: USB in Windows - FAQ
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -288,9 +287,9 @@ This table highlights the USB DWG classes that are supported in Windows and also
 <td>Usbccid.sys</td>
 <td><p>Windows Server 2008 and later</p>
 <p>Windows Vista and later</p>
-<p>Windows Server 2003*</p>
-<p>Windows XP*</p>
-<p>Windows 2000*</p></td>
+<p>Windows Server 2003<em></p>
+<p>Windows XP</em></p>
+<p>Windows 2000<em></p></td>
 </tr>
 <tr class="odd">
 <td>Hub class</td>
@@ -368,12 +367,12 @@ This table highlights the USB DWG classes that are supported in Windows and also
 <td>0x0E</td>
 <td>Usbvideo.sys</td>
 <td><p>Windows Vista and later</p>
-<p>Windows XP*</p></td>
+<p>Windows XP</em></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 \*Special instructions are necessary to load this driver because this driver might have been released later than the operating system. Windows class drivers might not support all of the features that are described in a DWG class specification. In this case, the driver does not load based on class match. For additional details on implemented features within a class specification, see the WDK documentation.
 
@@ -505,14 +504,14 @@ Because Windows 2000 and Windows XP were released before USB 2.0 hardware was av
 
 4.  In the Add New Hardware Wizard, select **Install the software automatically (Recommended)**, and then click **Next**. Continue with the wizard, accepting all default options, until you reach the last page of the wizard, and then click **Finish**. You might be required to restart your computer to finish the installation.
 
- 
+ 
 
 For additional information about the availability of USB 2.0 in Windows XP Service Pack 1, see Microsoft Knowledge Base article 329632, "How to obtain and to install USB 2.0 drivers in Windows XP Service Pack 1" at [http://support.microsoft.com/default.aspx?scid=KB;EN-US;Q329632&](https://support.microsoft.com/kb/329632).
 
 **Note**  
 To ensure that you have the latest updates installed on your machine, visit Windows Update regularly.
 
- 
+ 
 
 ## Can I disable the "HI-SPEED USB Device plugged into non-HI-SPEED USB port" notice?
 
@@ -528,7 +527,7 @@ To disable the notice, follow these steps:
 **Note**  
 The preceding procedure disables all USB notices, not just "HI-SPEED USB Device plugged into non-HI-SPEED port".
 
- 
+ 
 
 For additional information about USB 2.0 support in Windows XP Service Pack 1, see Microsoft Knowledge Base article 329632, "How to obtain and to install USB 2.0 drivers in Windows XP Service Pack 1, at [http://support.microsoft.com/default.aspx?scid=KB;EN-US;Q329632](https://support.microsoft.com/kb/329632).
 
@@ -627,7 +626,7 @@ The major restrictions imposed on hardware devices and drivers by **Usbccgp.sys*
     **Note**  
     Usbccgp supports Selective Suspend in Windows XP SP1 and later versions of Windows XP, but with limited features. For these versions of Windows, the composite device is put into Selective Suspend only if each child function of the device has a pending Idle IRP. Usbccgp does not support Selective Suspend in Windows XP RTM
 
-     
+     
 
 -   Usbccgp supports the interface association descriptor (IAD) only in Windows XP SP2, Windows Server 2003 SP1, and later versions of Windows.
 -   Usbccgp supports nonconsecutive interface numbers only in Windows XP SP2, Windows Server 2003 SP1, and later versions of Windows.

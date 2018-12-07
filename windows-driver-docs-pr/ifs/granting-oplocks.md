@@ -1,6 +1,5 @@
 ---
 title: Granting Oplocks
-author: windows-driver-content
 description: Granting Oplocks
 ms.assetid: 7faf17ef-1596-4952-9575-616f66b37ed6
 ms.date: 04/20/2017
@@ -69,7 +68,7 @@ The following table identifies the required conditions necessary to grant an opl
 <ul>
 <li>If opened for SYNCHRONOUS access, STATUS_OPLOCK_NOT_GRANTED is returned (oplocks are not granted for synchronous I/O requests).</li>
 </ul></li>
-<li>There are no [TxF](https://msdn.microsoft.com/library/windows/hardware/ff565748) transactions on any stream of the file.
+<li>There are no <a href="https://msdn.microsoft.com/library/windows/hardware/ff565748" data-raw-source="[TxF](https://msdn.microsoft.com/library/windows/hardware/ff565748)">TxF</a> transactions on any stream of the file.
 <ul>
 <li>Else STATUS_OPLOCK_NOT_GRANTED is returned.</li>
 </ul></li>
@@ -112,7 +111,7 @@ The following table identifies the required conditions necessary to grant an opl
 <li><p>No Oplock: The request is granted.</p></li>
 <li>Level 2 and/or Read: The request is granted. You can have multiple Level 2/Read oplocks granted on the same stream at the same time. Multiple Level 2 (but not Read) oplocks can even exist on the same handle.
 <ul>
-<li>If a Read oplock is requested on a handle that already has a Read oplock granted to it, the first Read oplock's IRP is completed with STATUS_OPLOCK_SWITCHED_TO_NEW_HANDLE before the second Read oplock is granted.</li>
+<li>If a Read oplock is requested on a handle that already has a Read oplock granted to it, the first Read oplock&#39;s IRP is completed with STATUS_OPLOCK_SWITCHED_TO_NEW_HANDLE before the second Read oplock is granted.</li>
 </ul></li>
 <li><p>Level 1, Batch, Filter, Read-Handle, Read-Write, Read-Write-Handle: STATUS_OPLOCK_NOT_GRANTED is returned.</p></li>
 </ul></td>
@@ -208,7 +207,7 @@ The following table identifies the required conditions necessary to grant an opl
 <p>Be aware that if the current oplock state is:</p>
 <ul>
 <li><p>No Oplock: the request is granted.</p></li>
-<li>Read or Read-Write and the existing oplock has the same oplock key as the request: the existing oplock's IRP is completed with STATUS_OPLOCK_SWITCHED_TO_NEW_HANDLE, the request is granted.
+<li>Read or Read-Write and the existing oplock has the same oplock key as the request: the existing oplock&#39;s IRP is completed with STATUS_OPLOCK_SWITCHED_TO_NEW_HANDLE, the request is granted.
 <ul>
 <li>Else STATUS_OPLOCK_NOT_GRANTED is returned.</li>
 </ul></li>
@@ -239,7 +238,7 @@ The following table identifies the required conditions necessary to grant an opl
 <p>Be aware that if the current oplock state is:</p>
 <ul>
 <li><p>No Oplock: the request is granted.</p></li>
-<li>Read, Read-Handle, Read-Write, or Read-Write-Handle and the existing oplock has the same oplock key as the request: the existing oplock's IRP is completed with STATUS_OPLOCK_SWITCHED_TO_NEW_HANDLE, the request is granted.
+<li>Read, Read-Handle, Read-Write, or Read-Write-Handle and the existing oplock has the same oplock key as the request: the existing oplock&#39;s IRP is completed with STATUS_OPLOCK_SWITCHED_TO_NEW_HANDLE, the request is granted.
 <ul>
 <li>Else STATUS_OPLOCK_NOT_GRANTED is returned.</li>
 </ul></li>
@@ -249,15 +248,15 @@ The following table identifies the required conditions necessary to grant an opl
 </tbody>
 </table>
 
- 
+ 
 
 **Note**   Read and Level 2 oplocks may coexist on the same stream, and Read and Read-Handle oplocks may coexist, but Level 2 and Read-Handle oplocks may not coexist.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

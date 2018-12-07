@@ -1,6 +1,5 @@
 ---
 title: PnP Notification Overview
-author: windows-driver-content
 description: PnP Notification Overview
 ms.assetid: 134a1ea1-78c2-4bab-b5e9-ae21901772ea
 keywords: ["PnP WDK kernel , notifications", "Plug and Play WDK kernel , notifications", "notifications WDK PnP , about notifications", "event notifications WDK PnP", "EventCategoryDeviceInterfaceChange notification", "EventCategoryTargetDeviceChange notification", "EventCategoryHardwareProfileChange notification"]
@@ -85,9 +84,9 @@ For further information about PnP notification, see the following sections:
 
 [Using PnP Custom Notification](using-pnp-custom-notification.md)
 
- 
+ 
 
- 
+ 
 
 
 

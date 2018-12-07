@@ -27,13 +27,13 @@ warning C28133: IoInitializeTimer is best called from AddDevice
 </tbody>
 </table>
 
- 
+ 
 
 The driver is calling [**IoInitializeTimer**](https://msdn.microsoft.com/library/windows/hardware/ff549344) in a routine other than its **AddDevice** routine. The Code Analysis tool is using this opportunity to suggest a best practice recommendation that can prevent errors and make the driver code more reliable.
 
- 
+ 
 
- 
+ 
 
 
 

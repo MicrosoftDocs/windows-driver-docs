@@ -1,6 +1,5 @@
 ---
 title: Writing a FilterUnloadCallback Routine
-author: windows-driver-content
 description: Writing a FilterUnloadCallback Routine
 ms.assetid: 2f680770-38af-4dcb-93b8-7f770e0378b2
 keywords:
@@ -46,9 +45,9 @@ This section includes:
 
 [Returning Status from a FilterUnloadCallback Routine](returning-status-from-a-filterunloadcallback-routine.md)
 
- 
+ 
 
- 
+ 
 
 
 

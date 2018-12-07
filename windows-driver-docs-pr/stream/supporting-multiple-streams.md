@@ -1,6 +1,5 @@
 ---
 title: Supporting Multiple Streams
-author: windows-driver-content
 description: Supporting Multiple Streams
 ms.assetid: 89f79078-129a-44cc-8b7e-5f5c1c33a473
 keywords:
@@ -27,9 +26,9 @@ For most minidrivers, the data in the HW\_STREAM\_DESCRIPTOR is fixed at compile
 
 The minidriver describes the topology of connections between its streams through the Topology member of HW\_STREAM\_HEADER. The class drivers uses this structure to handle the [KSPROPSETID\_Topology](https://msdn.microsoft.com/library/windows/hardware/ff566598) property set for the minidriver.
 
- 
+ 
 
- 
+ 
 
 
 

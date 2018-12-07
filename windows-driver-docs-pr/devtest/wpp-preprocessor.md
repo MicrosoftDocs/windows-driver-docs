@@ -71,7 +71,7 @@ The following tables describe the options for the WPP preprocessor. You can conf
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="run_wpp_options"></span><span id="RUN_WPP_OPTIONS"></span>
 
@@ -118,14 +118,14 @@ The following tables describe the options for the WPP preprocessor. You can conf
 <tr class="odd">
 <td align="left"><p>Specify Control GUID</p></td>
 <td align="left"><p><strong>-ctl:</strong> <em>GUID</em></p></td>
-<td align="left">Defines a [WPP_CONTROL_GUIDS](https://msdn.microsoft.com/library/windows/hardware/ff556186) macro with the specified [control GUID](control-guid.md) and WPP_DEFINE_BIT entries named Error, Unusual, and Noise.
+<td align="left">Defines a <a href="https://msdn.microsoft.com/library/windows/hardware/ff556186" data-raw-source="[WPP_CONTROL_GUIDS](https://msdn.microsoft.com/library/windows/hardware/ff556186)">WPP_CONTROL_GUIDS</a> macro with the specified <a href="control-guid.md" data-raw-source="[control GUID](control-guid.md)">control GUID</a> and WPP_DEFINE_BIT entries named Error, Unusual, and Noise.
 <p>This is an alternative to adding the macro to the source file.</p>
 <p><em>GUID</em> represents the control GUID.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="Search_and_Formatting_Options"></span><span id="search_and_formatting_options"></span><span id="SEARCH_AND_FORMATTING_OPTIONS"></span>Search and Formatting Options
 
@@ -158,7 +158,7 @@ The following tables describe the options for the WPP preprocessor. You can conf
 <tr class="odd">
 <td align="left"><p>Function To Generate Trace Messages</p></td>
 <td align="left"><p><strong>-func:</strong> <em>FunctionDescription</em></p></td>
-<td align="left"><p>Specifies alternatives to the [<strong>DoTraceMessage</strong>](https://msdn.microsoft.com/library/windows/hardware/ff544918) macro. These functions can then be used to generate trace messages.</p>
+<td align="left"><p>Specifies alternatives to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544918" data-raw-source="[&lt;strong&gt;DoTraceMessage&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff544918)"><strong>DoTraceMessage</strong></a> macro. These functions can then be used to generate trace messages.</p>
 <p>For example, you can define a function that specifies both the flags and the level for a trace message, such as:</p>
 <pre space="preserve"><code>-func (DoMyTraceMessage(LEVEL,FLAGS,MSG,...)</code></pre>
 <p>You can use multiple instances of the <strong>-func</strong> option.</p>
@@ -170,15 +170,15 @@ The following tables describe the options for the WPP preprocessor. You can conf
 <td align="left"><p>Directs WPP to search the source files for the specified string to initiate tracing. By default, WPP searches for the string &quot;WPP_INIT_TRACING.&quot;</p>
 <p>This is an advanced option for users who are writing their own templates.</p>
 <p>For example, in default.tpl:</p>
-<pre space="preserve"><code>`IF FOUND WPP_INIT_TRACING`
- `INCLUDE um-init.tpl`
-`ENDIF`</code></pre></td>
+<pre space="preserve"><code><code>IF FOUND WPP_INIT_TRACING</code>
+ <code>INCLUDE um-init.tpl</code>
+<code>ENDIF</code></code></pre></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Specify Module Name</p></td>
 <td align="left"><p><strong>-p:</strong> <em>String</em></p></td>
-<td align="left"><p>Specifies an alternate friendly name for the [message GUID](message-guid.md) of messages from this [trace provider](trace-provider.md). By default, the friendly name of the message GUID is the name of the directory in which the trace provider was built.</p>
-<p>The friendly name of the message GUID appears, by default, in the [trace message prefix](trace-message-prefix.md) that is represented by the variable, <strong>%1</strong>. You can use this parameter to add a string to the prefix that helps the user to identify the trace provider, such as the friendly name of the trace provider, the name of the module that includes the trace provider, or the name of a project that is implemented by creating several trace providers. This information helps users to associate related trace providers that are in different files or different paths.</p>
+<td align="left"><p>Specifies an alternate friendly name for the <a href="message-guid.md" data-raw-source="[message GUID](message-guid.md)">message GUID</a> of messages from this <a href="trace-provider.md" data-raw-source="[trace provider](trace-provider.md)">trace provider</a>. By default, the friendly name of the message GUID is the name of the directory in which the trace provider was built.</p>
+<p>The friendly name of the message GUID appears, by default, in the <a href="trace-message-prefix.md" data-raw-source="[trace message prefix](trace-message-prefix.md)">trace message prefix</a> that is represented by the variable, <strong>%1</strong>. You can use this parameter to add a string to the prefix that helps the user to identify the trace provider, such as the friendly name of the trace provider, the name of the module that includes the trace provider, or the name of a project that is implemented by creating several trace providers. This information helps users to associate related trace providers that are in different files or different paths.</p>
 <p>The <strong>-p</strong> parameter requires the version of WPP that is included in the Windows Driver Kit (WDK) for Windows Vista and later versions of the WDK. The <strong>-p</strong> parameter works on Windows 2000 and later versions of Windows.</p>
 <p>Examples:</p>
 <pre space="preserve"><code>-p:TraceDrv
@@ -187,7 +187,7 @@ The following tables describe the options for the WPP preprocessor. You can conf
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="File_Options"></span><span id="file_options"></span><span id="FILE_OPTIONS"></span>File Options
 
@@ -222,7 +222,7 @@ The following tables describe the options for the WPP preprocessor. You can conf
 <td align="left"><p><strong>-ext:.</strong> <em>ext1</em> <strong>[.</strong><em>ext2</em><strong>]</strong></p></td>
 <td align="left"><p>Specifies the file types that WPP recognizes as source files. WPP ignores files with a different file name extension.</p>
 <p>By default, WPP recognizes only .c, .c++, .cpp, and .cxx files.</p>
-<p>This option allows you to use the default settings for WPP without having to delete or rename resource files that WPP doesn't use, such as .rc and .mc files.</p>
+<p>This option allows you to use the default settings for WPP without having to delete or rename resource files that WPP doesn&#39;t use, such as .rc and .mc files.</p>
 <p>For example, to add tracing to C++ files and header (.h) files, use the following command:</p>
 <p><strong>-ext:.cpp.CPP.h.H</strong></p>
 <p>Also, to give the TMH files for the C++ and header files different names, use the <strong>-preserveext</strong> option.</p></td>
@@ -242,11 +242,11 @@ The following tables describe the options for the WPP preprocessor. You can conf
 </tr>
 <tr class="even">
 <td align="left"><p>Specify Template File</p></td>
-<td align="left"><p><strong>-gen{ File.tpl }*. ext</strong></p></td>
+<td align="left"><p><strong>-gen{ File.tpl }<em>. ext</strong></p></td>
 <td align="left"><p>For every source file that WPP processes with the name specified between braces {}, create another file with the specified file name extension.</p>
 <p>File.tpl represents the source file. *.ext represents the type of file that is created and its file name extension.</p>
 <p>You can specify multiple <strong>-gen</strong> options.</p>
-<p>For example, <strong>-gen{um-default.tpl}*.tmh</strong> means that for every <strong>um-default.tpl</strong> file that WPP processes, it produces a <strong>um-default.tmh</strong> file.</p></td>
+<p>For example, <strong>-gen{um-default.tpl}</em>.tmh</strong> means that for every <strong>um-default.tpl</strong> file that WPP processes, it produces a <strong>um-default.tmh</strong> file.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Scan Configuration Data</p></td>
@@ -269,7 +269,7 @@ The following tables describe the options for the WPP preprocessor. You can conf
 </tbody>
 </table>
 
- 
+ 
 
 ## <span id="wpp_build_process"></span><span id="WPP_BUILD_PROCESS"></span>WPP Build Process
 
@@ -282,9 +282,9 @@ The WPP build process completes the following steps:
 
 2.  After the WPP preprocessor has created the trace message header files, the C preprocessor processes the built-in WPP macros in the trace message header files in a normal manner.
 
- 
+ 
 
- 
+ 
 
 
 

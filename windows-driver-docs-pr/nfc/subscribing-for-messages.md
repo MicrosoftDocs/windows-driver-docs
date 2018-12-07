@@ -1,6 +1,5 @@
 ---
 title: Subscribing for messages
-author: windows-driver-content
 description: Subscribing for messages
 ms.assetid: CF0D5CE0-A0E0-47D4-88E6-FBE186F78626
 keywords:
@@ -29,9 +28,9 @@ When the NFP provider receives a message, it will deliver it to any subscribed c
 
 There is no ordering or priority defined in the model. It is acceptable for the provider to issue subscribed messages in parallel, but this is not required.
 
- 
+ 
 
- 
+ 
 ## Related topics
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [Near field proximity DDI reference](https://msdn.microsoft.com/library/windows/hardware/jj866056)  

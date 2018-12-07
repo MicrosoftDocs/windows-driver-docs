@@ -1,6 +1,5 @@
 ---
 title: Storage Filter Driver's Device-Type-Specific Functionality
-author: windows-driver-content
 description: Storage Filter Driver's Device-Type-Specific Functionality
 ms.assetid: ecc0d938-e931-46bd-a1e1-0e6da8e149a4
 keywords:
@@ -32,9 +31,9 @@ Depending on the nature of its device, an storage filter driver (SFD) might be r
 
 In general, an SFD has the same responsibilities as a storage class driver for those requests that require device-specific handling. For a discussion of the functionality required of storage class drivers, see [Storage Class Drivers](storage-class-drivers.md).
 
- 
+ 
 
- 
+ 
 
 
 

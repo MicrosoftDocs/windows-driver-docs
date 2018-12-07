@@ -3,7 +3,6 @@ title: ppmstate
 description: The ppmstate command
 ms.assetid: 45181F34-6753-4C5D-B573-A46B7E64870B
 keywords: ["ppmstate Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -33,7 +32,7 @@ Kdexts.dll
 
 
 **NOTE:** This command is not supported on all versions of Windows, such as Windows 10, Version 1703.
- 
+ 
 
 
 

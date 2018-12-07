@@ -41,9 +41,9 @@ For more information about power management for NDIS 6.20 and later versions of 
 
 [Power Management Enhancements in NDIS 6.30](introduction-to-ndis-6-30.md)
 
- 
+ 
 
- 
+ 
 
 
 

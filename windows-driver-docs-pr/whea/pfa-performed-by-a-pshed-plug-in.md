@@ -1,6 +1,5 @@
 ---
 title: PFA Performed by a PSHED Plug-In
-author: windows-driver-content
 description: PFA Performed by a PSHED Plug-In
 ms.assetid: e9876c86-b059-406f-a01a-7670ab294098
 keywords:
@@ -19,9 +18,9 @@ ms.localizationpriority: medium
 
 A [platform-specific hardware error driver (PSHED) plug-in](platform-specific-hardware-error-driver-plug-ins2.md) can perform Predictive Failure Analysis (PFA) on ECC memory. When this occurs, the plug-in and not WHEA must monitor ECC memory pages. If the plug-in determines that an ECC memory page has exceeded an error threshold, it indicates this status to WHEA. WHEA then attempts to take the memory page offline.
 
-**Note**  If the PSHED plug-in performs PFA and uses the registry to store its configuration settings, such as error thresholds and monitoring timeouts, it should not rely on or use the WHEA PFA configuration settings described in [WHEA Policy Settings](whea-pfa-registry-settings.md).
+**Note**  If the PSHED plug-in performs PFA and uses the registry to store its configuration settings, such as error thresholds and monitoring timeouts, it should not rely on or use the WHEA PFA configuration settings described in [WHEA Policy Settings](whea-pfa-registry-settings.md).
 
- 
+
 
 When an ECC memory error occurs, WHEA and the plug-in perform the following steps:
 
@@ -46,29 +45,31 @@ When an ECC memory error occurs, WHEA and the plug-in perform the following step
 
     Otherwise, the PSHED plug-in must clear the **PlatformPfaControl** and **PlatformDirectedOffline** bits in the [**WHEA\_ERROR\_PACKET\_FLAGS**](https://msdn.microsoft.com/library/windows/hardware/ff560472) member of the [WHEA\_ERROR\_PACKET](https://msdn.microsoft.com/library/windows/hardware/ff560465) structure.
 
-    **Note**  If the **PlatformPfaControl** bit is cleared, WHEA performs PFA if configured to do so and will determine whether the ECC memory page that encountered the error should be taken offline. For more information about this process, see [PFA Performed by WHEA](pfa-performed-by-whea.md).
+    **Note**  If the **PlatformPfaControl** bit is cleared, WHEA performs PFA if configured to do so and will determine whether the ECC memory page that encountered the error should be taken offline. For more information about this process, see [PFA Performed by WHEA](pfa-performed-by-whea.md).
 
-     
+
 
 9.  If the ECC memory page should be taken offline, WHEA first calls the system memory manager to perform this operation.
 
-    **Note**  When the system memory manager is called, there is no guarantee that the ECC memory page will actually be taken offline.
+    **Note**  When the system memory manager is called, there is no guarantee that the ECC memory page will actually be taken offline.
 
-     
 
-    WHEA then adds the memory page into the Boot Configuration Data (BCD) store on the system. This prevents the memory page from being used after the next system restart.
 
-    **Note**  WHEA will not take a hardware component, such as an ECC memory page, offline if the registry value **DisableOffline** is set to a nonzero value. Also, WHEA will not add the memory page to the BCD store if the registry value **MemPersistOffline** is set to 0. For more information about the registry values, see [WHEA Policy Settings](whea-pfa-registry-settings.md).
 
-     
+WHEA then adds the memory page into the Boot Configuration Data (BCD) store on the system. This prevents the memory page from being used after the next system restart.
 
-    For more information about the system memory manager, see [Memory Management](http://go.microsoft.com/fwlink/p/?linkid=140723) in the Windows SDK documentation.
+**Note**  WHEA will not take a hardware component, such as an ECC memory page, offline if the registry value **DisableOffline** is set to a nonzero value. Also, WHEA will not add the memory page to the BCD store if the registry value **MemPersistOffline** is set to 0. For more information about the registry values, see [WHEA Policy Settings](whea-pfa-registry-settings.md).
+
+
+
+For more information about the system memory manager, see [Memory Management](http://go.microsoft.com/fwlink/p/?linkid=140723) in the Windows SDK documentation.
+
 
 10. The Windows kernel generates an ETW event and logs the error information in the system event log.
 
- 
 
- 
+
+
 
 
 

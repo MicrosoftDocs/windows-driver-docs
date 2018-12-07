@@ -92,9 +92,9 @@ Where:
 
 The device class code, subclass code, and protocol code are determined by the *bInterfaceClass, bInterfaceSubClass, and bInterfaceProtocol* fields of the interface descriptor, respectively. These are 2-digit numbers.
 
- 
+ 
 
- 
+ 
 
 
 

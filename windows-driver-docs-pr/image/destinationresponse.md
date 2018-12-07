@@ -49,10 +49,10 @@ There are no attributes.
 <td><p>&lt;Any vendor-defined elements&gt;</p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>ClientContext</strong>](clientcontext.md)</p></td>
+<td><p><a href="clientcontext.md" data-raw-source="[&lt;strong&gt;ClientContext&lt;/strong&gt;](clientcontext.md)"><strong>ClientContext</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>DestinationToken</strong>](destinationtoken.md)</p></td>
+<td><p><a href="destinationtoken.md" data-raw-source="[&lt;strong&gt;DestinationToken&lt;/strong&gt;](destinationtoken.md)"><strong>DestinationToken</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -71,7 +71,7 @@ There are no attributes.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>DestinationResponses</strong>](destinationresponses.md)</p></td>
+<td><p><a href="destinationresponses.md" data-raw-source="[&lt;strong&gt;DestinationResponses&lt;/strong&gt;](destinationresponses.md)"><strong>DestinationResponses</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -94,9 +94,9 @@ The **DestinationResponse** element contains the [**ClientContext**](clientconte
 
 [**ScanDestination**](scandestination.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -37,11 +37,11 @@ For more information on NIC switches, see [NIC Switches](nic-switches.md).
 
 **Note**  Only the miniport driver for the PCI Express (PCIe) Physical Function (PF) can configure the network adapter's hardware resources, such as the VPorts. The miniport driver for the PCIe Virtual Function (VF) cannot directly access most of the SR-IOV adapter's hardware resources. For more information, see [Writing SR-IOV VF Miniport Drivers](writing-sr-iov-vf-miniport-drivers.md).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

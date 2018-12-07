@@ -1,6 +1,5 @@
 ---
 title: Using Power Manager Routines for Idle Detection
-author: windows-driver-content
 description: Using Power Manager Routines for Idle Detection
 ms.assetid: 6a89b2eb-d987-4722-b521-9df93153d957
 keywords: ["idle detection WDK power management", "PoRegisterDeviceForIdleDetection", "PoSetDeviceBusy", "power manager WDK kernel", "idle time-outs WDK power management", "time-outs WDK power management"]
@@ -38,9 +37,9 @@ When the device satisfies the time-out value, the power manager sends a device s
 
 When the driver no longer requires idle detection or is not prepared to handle device power-down IRPs, it should call **PoRegisterDeviceForIdleDetection** again, passing zero for both time-out values. Setting the time-outs to zero disables idle detection for both conservation (battery) and performance (AC) power policies. The driver can quickly reenable idle detection; it simply calls **PoRegisterDeviceForIdleDetection** with nonzero time-out values. Once the driver has registered the device, it can enable and disable idle detection by changing the time-out values, even if the device has been powered down and reawakened.
 
- 
+ 
 
- 
+ 
 
 
 

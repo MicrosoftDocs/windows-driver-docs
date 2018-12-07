@@ -3,7 +3,6 @@ title: Bug Check 0x74 BAD_SYSTEM_CONFIG_INFO
 description: The BAD_SYSTEM_CONFIG_INFO bug check has a value of 0x00000074. This bug check indicates that there is an error in the registry.
 ms.assetid: c59ddc44-d860-4fbb-a975-ae7226fdce86
 keywords: ["Bug Check 0x74 BAD_SYSTEM_CONFIG_INFO", "BAD_SYSTEM_CONFIG_INFO"]
-ms.author: domars
 ms.date: 08/17/2018
 topic_type:
 - apiref
@@ -55,7 +54,7 @@ The BAD\_SYSTEM\_CONFIG\_INFO bug check has a value of 0x00000074. This bug chec
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -78,9 +77,9 @@ Try booting into safe mode and then restart the OS normally. If the restart does
 
 For more information, see [Recovery options in Windows 10](https://windows.microsoft.com/windows-10/windows-10-recovery-options#).
 
- 
+ 
 
- 
+ 
 
 
 

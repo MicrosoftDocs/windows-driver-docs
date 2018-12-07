@@ -1,7 +1,6 @@
 ---
 Description: WinUSB Power Management
 title: WinUSB Power Management
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -27,7 +26,7 @@ HKR,,SystemWakeEnabled,0x00010001,1
 
 **Note**  Changing the **SystemWakeEnabled** setting has no affect on selective suspend, this registry value only pertains to system suspend.
 
- 
+ 
 
 <a href="" id="selective-suspend"></a>**Selective Suspend**  
 Selective suspend can be disabled by any of several system or WinUSB settings. A single setting cannot force WinUSB to enable selective suspend.
@@ -94,7 +93,7 @@ The following table shows how the registry keys affect the selective suspend fea
 </tbody>
 </table>
 
- 
+ 
 
 <a href="" id="detecting-idle"></a>**Detecting Idle**  
 All writes and control transfers force the device into the **D0** power state and reset the idle timer. The IN endpoint queues are not power managed. Read requests wake the device when they are submitted. However, a device can become idle while a read request waits.

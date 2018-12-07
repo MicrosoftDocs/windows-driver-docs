@@ -1,6 +1,5 @@
 ---
 title: Introduction to DPCs
-author: windows-driver-content
 description: Introduction to DPCs
 ms.assetid: 10e8d0e7-c04a-4dca-853c-74c911f59341
 keywords: ["deferred procedure calls WDK kernel", "DPCs WDK kernel"]
@@ -28,9 +27,9 @@ A *DpcForIsr* or *CustomDpc* routine is called in an arbitrary DPC context at IR
 
 DPC objects and DPCs can also be used with timers. For more information, see [Timer Objects and DPCs](timer-objects-and-dpcs.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: Bug Check 0x24 NTFS_FILE_SYSTEM
 description: The NTFS_FILE_SYSTEM bug check has a value of 0x00000024. This indicates a problem occurred in ntfs.sys, the driver file that allows the system to read and write to NTFS drives.
 ms.assetid: 9d2dd8a8-b550-4392-b663-6902a015ef7b
 keywords: ["Bug Check 0x24 NTFS_FILE_SYSTEM", "NTFS_FILE_SYSTEM"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -55,7 +54,7 @@ The NTFS\_FILE\_SYSTEM bug check has a value of 0x00000024. This indicates a pro
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -92,9 +91,9 @@ Resolution
 
 In the past, another possible cause of this stop code is depletion of nonpaged pool memory. If the nonpaged pool memory is completely depleted, this error can stop the system. However, during the indexing process, if the amount of available nonpaged pool memory is very low, another kernel-mode driver requiring nonpaged pool memory can also trigger this error.
 
- 
+ 
 
- 
+ 
 
 
 

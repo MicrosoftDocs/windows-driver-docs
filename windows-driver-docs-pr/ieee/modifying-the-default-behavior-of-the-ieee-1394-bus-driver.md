@@ -1,6 +1,5 @@
 ---
 title: Modifying the Default Behavior of the IEEE 1394 Bus Driver
-author: windows-driver-content
 description: Windows 7 includes 1394ohci.sys, a new IEEE 1394 bus driver that is implemented by using the kernel-mode driver framework (KMDF).
 ms.assetid: B636943E-EE52-4D0D-A638-89C05AD41F1A
 ms.date: 04/20/2017
@@ -83,7 +82,7 @@ The following table describes the registry values that the new 1394 bus driver s
 <strong>Note</strong>  Enabling gap count optimization improves the gap count for all 1394 bus topologies, including 1394b. The gap count value that is used is based on the table method, as specified in the IEEE-1394a specification. End-users must make sure that the gap count that is used is valid for their 1394 bus topology.
 </div>
 <div>
- 
+ 
 </div></td>
 </tr>
 <tr class="odd">
@@ -96,13 +95,13 @@ The following table describes the registry values that the new 1394 bus driver s
 <strong>Note</strong>  The 1394ohci.sys bus driver disables and enables cycle start packets only if the local node is the bus manager.
 </div>
 <div>
- 
+ 
 </div></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 [The IEEE 1394 Driver Stack](https://msdn.microsoft.com/library/windows/hardware/ff538867)  

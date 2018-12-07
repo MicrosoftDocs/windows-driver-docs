@@ -1,6 +1,5 @@
 ---
 title: Specifying Device Characteristics
-author: windows-driver-content
 description: Specifying Device Characteristics
 ms.assetid: 8b73ed62-d611-4515-b9d0-8e0a37555a1a
 keywords: ["device objects WDK kernel , device characteristics", "device characteristics WDK device objects", "flags WDK device objects", "device stacks WDK kernel , device characteristics"]
@@ -46,9 +45,9 @@ The PnP manager determines the registry setting for device characteristics as fo
 
 If a device characteristic that applies to the entire device stack is set in the registry, or if it is set for any FDO or filter DO in the stack, then the PnP manager sets it for every device object in the stack. (If the device is [*raw mode*](https://msdn.microsoft.com/library/windows/hardware/ff556331#wdkgloss-raw-mode) capable, and thus does not have an FDO, then the PnP manager uses the PDO instead.)
 
- 
+ 
 
- 
+ 
 
 
 

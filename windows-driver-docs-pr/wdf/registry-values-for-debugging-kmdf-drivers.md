@@ -1,6 +1,5 @@
 ---
 title: Registry Values for Debugging WDF Drivers (KMDF and UMDF)
-author: windows-driver-content
 description: This topic describes the registry values that a Windows Driver Frameworks (WDF) driver can set. It applies to Kernel-Mode Driver Framework (KMDF) drivers and User-Mode Driver Framework (UMDF) drivers starting with UMDF version 2.
 ms.assetid: d54bdc6c-b409-4973-9b29-16967a4d83fb
 keywords:
@@ -88,7 +87,7 @@ If set to a nonzero value, the framework's loader sends a variety of messages to
 
 You can also set the following registry values in **HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\WUDF\\Services\\{193a1820-d9ac-4997-8c55-be817523f6aa}**. These values affect all UMDF drivers on the system.
 
-<a href="" id="hostprocessdbgbreakonstart--reg-dword-"></a>****HostProcessDbgBreakOnStart**** (**REG\_DWORD**)  
+<a href="" id="hostprocessdbgbreakonstart--reg-dword-"></a>***<em>HostProcessDbgBreakOnStart</em>*** (**REG\_DWORD**)  
 Contains a delay value in seconds. During the specified delay period, the host process looks for the user-mode debugger once a second and breaks in if one is connected. If a user-mode debugger is not attached within this period and the high bit in **HostProcessDbgBreakOnStart** is set (0x80000000), the framework makes a single attempt to break into the kernel-mode debugger. For example:
 
 |            |                                                                                                                                                                                                                  |
@@ -98,9 +97,9 @@ Contains a delay value in seconds. During the specified delay period, the host p
 | 0x80000000 | The framework makes a single attempt to connect to the user-mode debugger. If the user-mode debugger is not attached, the framework tries to connect to the kernel-mode debugger.                                |
 | 0x80000004 | The framework attempts to connect to the user-mode debugger once a second for 4 seconds. If the user-mode debugger is not attached within 4 seconds, the framework tries to connect to the kernel-mode debugger. |
 
- 
+ 
 
-<a href="" id="hostprocessdbgbreakondriverload--reg-dword-"></a>****HostProcessDbgBreakOnDriverLoad**** (**REG\_DWORD**)  
+<a href="" id="hostprocessdbgbreakondriverload--reg-dword-"></a>***<em>HostProcessDbgBreakOnDriverLoad</em>*** (**REG\_DWORD**)  
 Contains a delay value in seconds. Causes WUDFHost to delay the specified number of seconds after the driver has been loaded. The behavior for **HostProcessDbgBreakOnDriverLoad** is otherwise the same as that described for **HostProcessDbgBreakOnStart**.
 
 Specifying **HostProcessDbgBreakOnStart** or **HostProcessDbgBreakOnDriverLoad** causes the framework to disable other UMDF timeouts (for example, Plug and Play operations). This means that if your driver causes excessive timeouts, using these values might result in your driver causing a fatal crash on the target.
@@ -124,11 +123,11 @@ These additional values are located in **HKLM\\SOFTWARE\\Microsoft\\Windows NT\\
 <tbody>
 <tr class="odd">
 <td align="left"><p>0x01</p></td>
-<td align="left"><p>Enable debug mode. This setting turns off the automatic restart functionality described in [Using Device Pooling in UMDF Drivers](using-device-pooling-in-umdf-drivers.md).</p></td>
+<td align="left"><p>Enable debug mode. This setting turns off the automatic restart functionality described in <a href="using-device-pooling-in-umdf-drivers.md" data-raw-source="[Using Device Pooling in UMDF Drivers](using-device-pooling-in-umdf-drivers.md)">Using Device Pooling in UMDF Drivers</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x02</p></td>
-<td align="left"><p>Disable device pooling. For more information about device pooling, see [Using Device Pooling in UMDF Drivers](using-device-pooling-in-umdf-drivers.md).</p></td>
+<td align="left"><p>Disable device pooling. For more information about device pooling, see <a href="using-device-pooling-in-umdf-drivers.md" data-raw-source="[Using Device Pooling in UMDF Drivers](using-device-pooling-in-umdf-drivers.md)">Using Device Pooling in UMDF Drivers</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x04</p></td>
@@ -137,7 +136,7 @@ These additional values are located in **HKLM\\SOFTWARE\\Microsoft\\Windows NT\\
 </tbody>
 </table>
 
- 
+ 
 
 When you use the F5 option in Microsoft Visual Studio, all three flags are set for the deployed driver.
 
@@ -153,9 +152,9 @@ The reflector also breaks into the kernel debugger if there is an unexpected ter
 
 For changes to UMDF registry values to take effect, you must reboot the computer.
 
- 
+ 
 
- 
+ 
 
 
 

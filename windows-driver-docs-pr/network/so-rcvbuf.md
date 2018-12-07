@@ -1,6 +1,5 @@
 ---
 title: SO_RCVBUF
-author: windows-driver-content
 description: SO_RCVBUF
 ms.assetid: 218b52ac-95ee-4047-ad75-76d6ae6ab14e
 ms.date: 08/08/2017
@@ -46,7 +45,7 @@ To set the value of this socket option, a WSK application calls the [**WskContro
 </tr>
 <tr class="odd">
 <td><p><em>InputBuffer</em></p></td>
-<td><p>A pointer to a ULONG-typed variable that contains the new size of the socket's receive buffer</p></td>
+<td><p>A pointer to a ULONG-typed variable that contains the new size of the socket&#39;s receive buffer</p></td>
 </tr>
 <tr class="even">
 <td><p><em>OutputSize</em></p></td>
@@ -103,7 +102,7 @@ To retrieve the value of the SO\_RCVBUF socket option, a WSK application calls t
 </tr>
 <tr class="odd">
 <td><p><em>OutputBuffer</em></p></td>
-<td><p>A pointer to a ULONG-typed variable that receives the current size of the socket's receive buffer</p></td>
+<td><p>A pointer to a ULONG-typed variable that receives the current size of the socket&#39;s receive buffer</p></td>
 </tr>
 <tr class="even">
 <td><p><em>OutputSizeReturned</em></p></td>
@@ -139,9 +138,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

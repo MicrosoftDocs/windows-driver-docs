@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_HESSID_INFO
-author: windows-driver-content
 description: WDI_TLV_HESSID_INFO is a TLV that contains HESSID information, which includes a list of HESSIDs, the Access Network Type, and Hotspot Indication Element.
 ms.assetid: 60D130AC-8249-4B60-B46C-8B83FDDB148F
 ms.date: 07/18/2017
@@ -33,7 +32,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 | [**WDI\_TLV\_HESSID**](wdi-tlv-hessid.md)                                           |                                |          | The list of HESSIDs that the port is allowed to connect to.                              |
 | [**WDI\_TLV\_HOTSPOT\_INDICATION\_ELEMENT**](wdi-tlv-hotspot-indication-element.md) |                                |          | The Hotspot Indication Element to be used in the Association Request.                    |
 
- 
+ 
 
 Requirements
 ------------
@@ -59,9 +58,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

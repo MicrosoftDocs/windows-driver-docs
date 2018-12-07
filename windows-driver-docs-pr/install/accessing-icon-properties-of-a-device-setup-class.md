@@ -19,9 +19,9 @@ Windows Server 2003, Windows XP, and Windows 2000 do not directly support these 
 
 To maintain compatibility with these earlier versions of Windows, Windows Vista and later versions also support these mechanisms to access the icons of a device setup class. However, you should use the property keys to access the icon properties in Windows Vista and later versions.
 
- 
+ 
 
- 
+ 
 
 
 

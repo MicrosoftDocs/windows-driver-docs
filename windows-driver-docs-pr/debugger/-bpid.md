@@ -3,7 +3,6 @@ title: bpid
 description: The bpid extension requests that a process on the target computer break into the debugger or requests that a user-mode debugger be attached to a process on the target computer.
 ms.assetid: 47091651-3b39-4e3d-86cf-a8e95779a025
 keywords: ["bpid Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -52,7 +51,7 @@ The valid values for *Option* appear in the following table.
 </tbody>
 </table>
 
- 
+ 
 
 <span id="_______PID______"></span><span id="_______pid______"></span> *PID*   
 Specifies the process ID of the desired process on the target computer. If you are using this to control a user-mode debugger on the target computer, *PID* should be the process ID of the target application, not of the user-mode debugger. (Because process IDs are usually listed in decimal format, you might need to prefix this with **0n** or convert it to hexadecimal format.)
@@ -76,7 +75,7 @@ Specifies the process ID of the desired process on the target computer. If you a
 </tbody>
 </table>
 
- 
+ 
 
 This extension command is supported on x86-based, x64-based, and Itanium-based target computers.
 
@@ -99,9 +98,9 @@ Note that there are ways in which this extension can fail to execute:
 
 -   No access to ntsd.exe. If ntsd.exe is not found in a commonly known path, !bpid will fail to set an appropriate PID. Note that ntsd.exe is not included by default with Windows Vista.
 
- 
+ 
 
- 
+ 
 
 
 

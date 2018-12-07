@@ -1,6 +1,5 @@
 ---
 title: Sensor Driver Overview
-author: windows-driver-content
 description: Sensor Driver Overview
 ms.assetid: 242378b1-e26e-4f05-9bea-211e32d4a13c
 ms.date: 04/20/2017
@@ -22,9 +21,9 @@ The following sections describe how to build drivers so that your sensor device 
 
 -   [About Sensor Constants](about-sensor-constants.md)
 
- 
+ 
 
- 
+ 
 
 
 

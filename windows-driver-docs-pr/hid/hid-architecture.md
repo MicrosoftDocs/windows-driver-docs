@@ -1,6 +1,5 @@
 ---
 title: HID Architecture
-author: windows-driver-content
 description: The architecture of the HID driver stack in Windows is built on the class driver named hidclass.sys.
 ms.assetid: FCDDCD6A-8808-44D5-B300-3869DD9FD46C
 keywords:
@@ -57,7 +56,7 @@ The following table is a simplification of the information listed above.
 | User Mode   | HidD\_Xxx                    | HidP\_Xxx    |
 | Kernel Mode | HidD\_Xxx OR IOCTL\_HID\_xxx | N/A          |
 
- 
+ 
 
 For more information, see [Opening HID collections](opening-hid-collections.md).
 
@@ -70,9 +69,9 @@ The HID class driver is designed to use HID minidrivers to access a hardware inp
 
 For a list of the HID Transports provided in Windows, see [HID Transports Supported in Windows](hid-transports-supported-in-windows.md).
 
- 
+ 
 
- 
+ 
 
 
 

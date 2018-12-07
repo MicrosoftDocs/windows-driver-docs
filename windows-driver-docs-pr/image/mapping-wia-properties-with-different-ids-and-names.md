@@ -1,6 +1,5 @@
 ---
 title: Mapping WIA Properties with Different IDs and Names
-author: windows-driver-content
 description: Mapping WIA Properties with Different IDs and Names
 ms.assetid: e3a352fc-c817-466e-bd04-0ec8b029d500
 ms.date: 04/20/2017
@@ -106,7 +105,7 @@ There are Windows XP properties that have different property IDs and different p
 </tbody>
 </table>
 
- 
+ 
 
 <a href="" id="note-a-"></a>Note a:  
 Root item, no context specified for Windows XP
@@ -117,9 +116,9 @@ FLATBED item or FLATBED context on the Windows XP root or child item (WIA\_DPS\_
 <a href="" id="note-c-"></a>Note c:  
 FEEDER item (ADF) or FEEDER context on the Windows XP root or child item (WIA\_DPS\_DOCUMENT\_HANDLING\_SELECT is set to FEEDER)
 
- 
+ 
 
- 
+ 
 
 
 

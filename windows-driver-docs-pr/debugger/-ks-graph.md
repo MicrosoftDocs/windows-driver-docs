@@ -3,7 +3,6 @@ title: ks.graph
 description: The ks.graph extension command displays a textual description of the kernel mode graph in topologically sorted order.
 ms.assetid: b9725499-9db3-422f-850b-97db4865b74d
 keywords: ["ks.graph Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -63,7 +62,7 @@ Analyze a stalled graph for suspect filters.
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -89,9 +88,9 @@ Graph With Starting Point 829493c4:
         Pin 8293f4f0 (File 82503498) Irps(q/p) = 2, 0
 ```
 
- 
+ 
 
- 
+ 
 
 
 

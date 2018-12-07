@@ -59,7 +59,7 @@ A miniport driver calls the [**PcNewInterruptSync**](https://msdn.microsoft.com/
 </tbody>
 </table>
 
- 
+ 
 
 In the **InterruptSyncModeNormal** mode, the sync object calls each ISR in the list until one of them returns STATUS\_SUCCESS. Any ISRs in the list that follow this ISR are not called. This mode emulates the way that the operating system normally handles ISRs. If none of the ISRs return STATUS\_SUCCESS, the behavior is the same as **InterruptSyncModeAll**.
 
@@ -81,9 +81,9 @@ The **IInterruptSync** interface supports the following methods:
 
 [**IInterruptSync::RegisterServiceRoutine**](https://msdn.microsoft.com/library/windows/hardware/ff536600)
 
- 
+ 
 
- 
+ 
 
 
 

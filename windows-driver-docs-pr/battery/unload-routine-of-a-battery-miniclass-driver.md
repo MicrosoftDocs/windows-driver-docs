@@ -35,9 +35,9 @@ After all the miniclass driver's devices are unloaded, the *Unload* routine shou
 
 The miniclass driver's *Unload* routine can be called at any time after all the driver's devices have been removed. The PnP Manager calls the *Unload* routine in the context of a system thread at IRQL = PASSIVE\_LEVEL.
 
- 
+ 
 
- 
+ 
 
 
 

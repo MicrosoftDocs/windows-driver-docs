@@ -13,9 +13,9 @@ You can initialize WPP tracing in a kernel-mode driver by calling the [WPP\_INIT
 
 To avoid errors, you should call the [WPP\_INIT\_TRACING](https://msdn.microsoft.com/library/windows/hardware/ff556191) macro in the [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff552644) function of the driver.
 
- 
+ 
 
- 
+ 
 
 
 

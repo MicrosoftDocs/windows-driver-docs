@@ -3,7 +3,6 @@ title: bugdump
 description: The bugdump extension formats and displays the information contained in the bug check callback buffers.
 ms.assetid: cbea92de-e45b-416c-87f1-6faba95788d0
 keywords: ["bugdump Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -48,7 +47,7 @@ Specifies the component whose callback data is to be examined. If omitted, all b
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
@@ -65,9 +64,9 @@ The buffers that hold callback data are not available in a Small Memory Dump. Th
 
 If you are performing live debugging of a crashed system, all callback data will be present.
 
- 
+ 
 
- 
+ 
 
 
 

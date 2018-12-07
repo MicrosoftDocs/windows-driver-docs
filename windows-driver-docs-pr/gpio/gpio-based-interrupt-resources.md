@@ -1,6 +1,5 @@
 ---
 title: GPIO-Based Interrupt Resources
-author: windows-driver-content
 description: Drivers for peripheral devices that send interrupts to general-purpose I/O (GPIO) pins acquire GPIO interrupts as abstract Windows interrupt resources.
 ms.assetid: 65031C43-917D-4665-BD7F-97D3DDA0A918
 ms.date: 04/20/2017
@@ -20,9 +19,9 @@ The KMDF or UMDF driver for a peripheral device calls the [**WdfInterruptCreate*
 
 If a peripheral device driver uses more than one GPIO interrupt resource, this driver must be aware of the order in which these resources appear in the raw and translated resource lists that are supplied as input parameters to the *EvtDevicePrepareHardware* function or **OnPrepareHardware** method. The resources in these lists appear in the order in which they are described in the platform firmware, which must match the order that is expected by the driver.
 
- 
+ 
 
- 
+ 
 
 
 

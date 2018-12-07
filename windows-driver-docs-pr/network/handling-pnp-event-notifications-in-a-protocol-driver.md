@@ -28,9 +28,9 @@ Protocol drivers should handle driver stack pause notifications. For more inform
 
 Protocol drivers should handle driver stack restart notifications. For more information about these notifications, see [Restarting a Driver Stack](restarting-a-driver-stack.md).
 
- 
+ 
 
- 
+ 
 
 
 

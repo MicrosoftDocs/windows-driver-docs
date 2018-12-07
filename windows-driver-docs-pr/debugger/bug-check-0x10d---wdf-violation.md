@@ -3,7 +3,6 @@ title: Bug Check 0x10D WDF_VIOLATION
 description: The WDF_VIOLATION bug check has a value of 0x0000010D. This indicates that Kernel-Mode Driver Framework (KMDF) detected that Windows found an error in a framework-based driver.
 ms.assetid: 2d8c9730-cd24-4f8c-8f8b-252644737847
 keywords: ["Bug Check 0x10D WDF_VIOLATION", "WDF_VIOLATION"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -63,7 +62,7 @@ Parameter 1 indicates the specific error code of the bug check. Parameter 4 is r
 <tr class="even">
 <td align="left"><p>0x4</p></td>
 <td align="left"><p>Reserved</p></td>
-<td align="left"><p>The caller's address</p></td>
+<td align="left"><p>The caller&#39;s address</p></td>
 <td align="left"><p>A <strong>NULL</strong> parameter was passed to a function that required a non-<strong>NULL</strong> value.</p></td>
 </tr>
 <tr class="odd">
@@ -118,7 +117,7 @@ Parameter 1 indicates the specific error code of the bug check. Parameter 4 is r
 <td align="left"><p>0xD</p></td>
 <td align="left"><p>WDFDEVICE handle</p></td>
 <td align="left"><p>Pointer to power IRP</p></td>
-<td align="left"><p>A device's power policy owner received a power IRP that it did not request. There might be multiple power policy owners, but only one is allowed. A KMDF driver can change power policy ownership by calling <strong>WdfDeviceInitSetPowerPolicyOwnership</strong>.</p></td>
+<td align="left"><p>A device&#39;s power policy owner received a power IRP that it did not request. There might be multiple power policy owners, but only one is allowed. A KMDF driver can change power policy ownership by calling <strong>WdfDeviceInitSetPowerPolicyOwnership</strong>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0xE</p></td>
@@ -135,7 +134,7 @@ Parameter 1 indicates the specific error code of the bug check. Parameter 4 is r
 </tbody>
 </table>
 
- 
+ 
 
 **Parameter 1 is equal to 0x6**
 
@@ -178,7 +177,7 @@ If Parameter 1 is equal to 0x6, then a fatal error was made in handling a WDF re
 </tbody>
 </table>
 
- 
+ 
 
 **Parameter 1 is equal to 0xB**
 
@@ -211,7 +210,7 @@ If Parameter 1 is equal to 0xB, then an attempt to acquire or release a lock was
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
@@ -239,9 +238,9 @@ If Parameter 1 is equal to **0x7**, use the **!wdfkd.wdfhandle***Parameter 2* ex
 
 If Parameter 1 is equal to **0xA**, then the WDF\_QUEUE\_FATAL\_ERROR\_DATA structure will indicate either the problematic request or the queue handle. It will also indicate the NTSTATUS, if not STATUS\_SUCCESS, when available.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Request Ownership
-author: windows-driver-content
 description: Request Ownership
 ms.assetid: 60494e97-0483-454f-aafc-7a69019c95f2
 keywords:
@@ -21,9 +20,9 @@ After the driver [receives](receiving-i-o-requests.md) the request object, it ow
 
 As ownership of a request object passes between a driver and the framework, the object handle's value does not change. For example, if a driver receives a request from an I/O queue, requeues it to a different queue, and then receives the request again, the handle's value will not change. Likewise, if a driver forwards a request to an I/O target and later receives notification that the I/O target completed the request, the driver's notification callback function receives the same handle value that the driver supplied to the I/O target.
 
- 
+ 
 
- 
+ 
 
 
 

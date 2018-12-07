@@ -1,6 +1,5 @@
 ---
 title: UMDF Objects and Interfaces
-author: windows-driver-content
 description: UMDF Objects and Interfaces
 ms.assetid: da816fef-a24f-4456-9d4a-36f291afe8b5
 keywords:
@@ -29,9 +28,9 @@ The following topics describe the core framework objects, the subset of the Comp
 -   [UMDF DDI Programming Model](umdf-ddi-programming-model.md)
 -   [Managing the Lifetime of Objects](managing-the-lifetime-of-objects.md)
 
- 
+ 
 
- 
+ 
 
 
 

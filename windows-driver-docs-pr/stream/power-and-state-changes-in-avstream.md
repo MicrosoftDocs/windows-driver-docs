@@ -1,6 +1,5 @@
 ---
 title: Power and State Changes in AVStream
-author: windows-driver-content
 description: Power and State Changes in AVStream
 ms.assetid: f62f4306-97c0-40fe-89ec-d08eb18988c9
 keywords:
@@ -44,9 +43,9 @@ In this scenario, steps 5 and 6 are the steps that are reversed from the expecte
 
 Additionally, when an application is streaming and the system initiates a power down sequence, a capture graph that is running is always placed in a pause state. If the graph was already stopped, it remains stopped.
 
- 
+ 
 
- 
+ 
 
 
 

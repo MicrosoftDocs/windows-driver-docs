@@ -31,9 +31,9 @@ The NDIS\_OID\_REQUEST structure differs from [**NDIS\_REQUEST**](https://msdn.m
 
 For more information about handling OID requests in a miniport driver, see [OID Requests for an Adapter](miniport-adapter-oid-requests.md).
 
- 
+ 
 
- 
+ 
 
 
 

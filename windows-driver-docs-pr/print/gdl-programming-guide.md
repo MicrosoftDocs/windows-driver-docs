@@ -1,6 +1,5 @@
 ---
 title: GDL Programming Guide
-author: windows-driver-content
 description: GDL Programming Guide
 ms.assetid: ca524040-453f-4ea2-991c-5d031b3725e7
 keywords:
@@ -24,9 +23,9 @@ This section includes:
 
 [Using GDL](using-gdl.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,7 +2,6 @@
 title: Using HTTP Sites and UNC Shares in Conjuction with Regular Version Control
 description: Using HTTP Sites and UNC Shares in Conjuction with Regular Version Control
 ms.assetid: 1b045a00-45e7-47e8-9447-7d94f70253fe
-ms.author: domars
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -26,9 +25,9 @@ You should replace \\\\server\\share with the root of the UNC share that you are
 
 All debuggers set up in this fashion ignore the standard version control extraction instructions and instead access the source files from the location specified. Meanwhile, all debuggers without these items included in Srcsrv.ini use the normal version control mechanism to extract source files.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: wdfkd.wdfldr
 description: The wdfkd.wdfldr extension displays information about the KMDF and UMDF drivers that are currently dynamically bound to the Windows Driver Frameworks. 
 ms.assetid: 0965632d-922b-4812-9cfb-7663af0e3847
 keywords: ["wdfkd.wdfldr Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -95,9 +94,9 @@ Process             DevStack           DeviceId
 0xffffe00000c32900  a5a3ab5f70         \Device\00000052 !wdfdriverinfo
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Acquiring USBCAMD2 Features
-author: windows-driver-content
 description: Acquiring USBCAMD2 Features
 ms.assetid: 39db38a8-8279-4c61-9010-cc6d4767efc2
 keywords:
@@ -64,9 +63,9 @@ else
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

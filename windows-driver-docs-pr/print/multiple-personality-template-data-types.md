@@ -1,6 +1,5 @@
 ---
 title: Multiple Personality Template Data Types
-author: windows-driver-content
 description: Multiple Personality Template Data Types
 ms.assetid: ee550416-9185-41fa-b113-6a1d22c3aa96
 keywords:
@@ -26,7 +25,7 @@ A personality tag attribute is also emitted to help clients determine the data t
 
 **Note**   You can construct value syntaxes that can trick this evaluation algorithm, so be careful when you select the element types to list. The types must be sufficiently distinguishable by the parsing algorithm. For example, because the parser filter does not recognize any XML syntax, it cannot distinguish between two XML\_TYPE data types. However, in these cases, the definition of the candidate data types can include an \*ArrayLabel directive that will help the parser distinguish between them.
 
- 
+ 
 
 The following directives are used to define the MULTIPLE\_PERSONALITY data type:
 
@@ -124,9 +123,9 @@ This processing will produce the following XML snapshot.
 
 As the snapshot shows, the parser determined the correct personality for each of the three array members and set the personality attribute in each member's element to indicate the appropriate personality.
 
- 
+ 
 
- 
+ 
 
 
 

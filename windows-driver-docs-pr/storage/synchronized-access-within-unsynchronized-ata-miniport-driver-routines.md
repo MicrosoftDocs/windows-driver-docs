@@ -1,6 +1,5 @@
 ---
 title: Synchronized Access within ATA Miniport Driver Routines
-author: windows-driver-content
 description: Synchronized Access within Unsynchronized ATA Miniport Driver Routines
 ms.assetid: ed047579-9f22-4725-a4b0-3c44b8db89ef
 keywords:
@@ -24,8 +23,8 @@ Even when an ATA miniport driver does unsynchronized processing of I/O requests 
 
 When an ATA miniport driver calls **AtaPortRequestSynchronizedRoutine**, it must supply a pointer to a callback routine. The callback routine processes the part of the I/O request that must be synchronized with the interrupt handler. For better performance, write your driver to spend as little time as possible to execute the callback routine.
 
- 
+ 
 
- 
+ 
 
 

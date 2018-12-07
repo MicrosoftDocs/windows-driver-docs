@@ -40,9 +40,9 @@ To remain compatible with certain older DirectSound applications, DirectSound cu
 
 For additional information about managing write cursors and play cursors at the driver level, see [Audio Position Property](audio-position-property.md).
 
- 
+ 
 
- 
+ 
 
 
 

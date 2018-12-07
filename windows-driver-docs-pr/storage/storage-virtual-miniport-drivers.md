@@ -1,6 +1,5 @@
 ---
 title: Storage Virtual Miniport Drivers
-author: windows-driver-content
 description: Storage Virtual Miniport Drivers
 ms.assetid: 971558ae-96a3-43a5-94bd-4883bb9feb58
 keywords:
@@ -23,9 +22,9 @@ This section contains the following topics:
 
 [Crash Dump and Hibernation Support](crash-dump-and-hibernation-support.md)
 
- 
+ 
 
- 
+ 
 
 
 

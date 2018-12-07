@@ -1,6 +1,5 @@
 ---
 title: Color Management for Printers
-author: windows-driver-content
 description: Color Management for Printers
 ms.assetid: b83a46b3-57cb-463f-9a57-64a9b73035e2
 keywords:
@@ -28,9 +27,9 @@ This section describes the operations that printer drivers must perform to suppo
 
 [Installing ICC Profiles](installing-icc-profiles.md)
 
- 
+ 
 
- 
+ 
 
 
 

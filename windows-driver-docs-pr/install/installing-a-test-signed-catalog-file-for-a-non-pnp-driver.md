@@ -22,11 +22,11 @@ Alternatively, you can use the [**SignTool**](https://msdn.microsoft.com/library
 
 **Tip**   Using embedded signatures is generally easier and more efficient than by using a signed catalog file. For more information about the advantages and disadvantages of using embedded signatures versus signed catalog files, see [Test Signing a Driver](https://msdn.microsoft.com/windows-drivers/develop/signing_a_driver).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

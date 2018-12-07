@@ -15,9 +15,9 @@ To install device metadata packages in the [device metadata store](device-metada
 
 2.  The application then copies the device metadata package to the device metadata store by calling the [CopyFile]( http://go.microsoft.com/fwlink/p/?linkid=189596) function.
 
-    **Note**  The application must be running with administrator privileges or started from an elevated command prompt window.
+    **Note**  The application must be running with administrator privileges or started from an elevated command prompt window.
 
-     
+
 
 When your application copies the device metadata package to the [device metadata store](device-metadata-store.md), it must complete the following steps:
 
@@ -27,15 +27,17 @@ When your application copies the device metadata package to the [device metadata
 
 2.  Copy the device metadata package to the appropriate *&lt;locale&gt;* subdirectory within the [device metadata store](device-metadata-store.md).
 
-    **Note**  If you use the [CopyFile]( http://go.microsoft.com/fwlink/p/?linkid=189596) function to copy the device metadata package, specify the full path name, which includes the appropriate *&lt;locale&gt;* subdirectory. By doing this, [CopyFile]( http://go.microsoft.com/fwlink/p/?linkid=189596) creates the associated subdirectories for your package if they do not exist on the local computer.
+    **Note**  If you use the [CopyFile]( http://go.microsoft.com/fwlink/p/?linkid=189596) function to copy the device metadata package, specify the full path name, which includes the appropriate *&lt;locale&gt;* subdirectory. By doing this, [CopyFile]( http://go.microsoft.com/fwlink/p/?linkid=189596) creates the associated subdirectories for your package if they do not exist on the local computer.
 
-     
 
-    After the device metadata package is installed in the [device metadata store](device-metadata-store.md), the [Device Metadata Retrieval Client](device-metadata-retrieval-client.md) (DMRC) accesses the device metadata package and presents the device information to the Devices and Printers user interface.
 
- 
 
- 
+After the device metadata package is installed in the [device metadata store](device-metadata-store.md), the [Device Metadata Retrieval Client](device-metadata-retrieval-client.md) (DMRC) accesses the device metadata package and presents the device information to the Devices and Printers user interface.
+
+
+
+
+
 
 
 

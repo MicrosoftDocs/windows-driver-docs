@@ -1,6 +1,5 @@
 ---
 title: SPI tests in MITT
-author: windows-driver-content
 description: SPI test modules that are included in the MITT software package.
 ms.assetid: 8240841C-FFA0-48EC-AB7E-4E15E262C23D
 ms.date: 04/20/2017
@@ -16,7 +15,7 @@ ms.localizationpriority: medium
 
 **Applies to:**
 
--   Windows 8.1
+-   Windows 8.1
 
 SPI test modules that are included in the MITT software package can be used to test data transfers for a SPI controller on the system under test and its driver. The MITT board acts as a client device connected to the SPI bus.
 
@@ -36,7 +35,7 @@ SPI test modules that are included in the MITT software package can be used to t
 |---------------|----------------------------------------------|---------------------|--------------------------------------|
 | SPI           | All lines needed (SCLK, MISO, MOSI, SS, GND) | ACPI table          | Simple block header (on debug board) |
 
- 
+
 
 1.  Connect the SPI adapter to **JC1** on the MITT board.
 2.  Use the jumper on the SPI adapter board to select the correct SPI voltage. The jumper can be used to select between 3.3V and 1.8V.
@@ -59,55 +58,57 @@ Perform these steps on the system under test that has the I²C controller:
 
     ![intall witt driver for the mitt board](images/mitt-install-witt.png)
 
-    **Note**  PnpUtil.exe is included in %SystemRoot%\\System32.
+    **Note**  PnpUtil.exe is included in %SystemRoot%\\System32.
 
-     
+
 
 2.  Modify the system ACPI and include this ASL table. You can use the [Microsoft ASL compiler](https://msdn.microsoft.com/library/windows/hardware/dn551195).
 
-    **Note**  Change "\\\\\_SB\_.SPI1" to ACPI entry name for the SPI controller to test as shown here. It defines three test targets with SPI frequency at 1Mhz, 5Mhz, and 20Mhz.
+    **Note**  Change "\\\\\_SB\_.SPI1" to ACPI entry name for the SPI controller to test as shown here. It defines three test targets with SPI frequency at 1Mhz, 5Mhz, and 20Mhz.
 
-     
 
-    ``` syntax
-    Device(TP1) {
-        Name (_HID, "SPT0001") 
-        Name (_CID, "WITTTest") 
-        Method(_CRS, 0x0, NotSerialized)
-        {
-          Name (RBUF, ResourceTemplate ()
-          {
-              SpiSerialBus (0x0000, PolarityLow, FourWireMode, 0x08,ControllerInitiated, 0x000F4240, ClockPolarityLow,ClockPhaseFirst, "\\_SB.SPI1", 0x00, ResourceConsumer, , )
-          })
-          Return(RBUF)
-        }
-    }
-    Device(TP2) {
-        Name (_HID, "SPT0002") 
-        Name (_CID, "WITTTest") 
-        Method(_CRS, 0x0, NotSerialized)
-        {
-          Name (RBUF, ResourceTemplate ()
-          {
-              SpiSerialBus (0x0000, PolarityLow, FourWireMode, 0x08,ControllerInitiated, 0x004c4b40, ClockPolarityLow,ClockPhaseFirst, "\\_SB.SPI1", 0x00, ResourceConsumer, , )
-          })
-          Return(RBUF)
-        }
-    }
-    Device(TP3) {
-        Name (_HID, "SPT0003") 
-        Name (_CID, "WITTTest") 
-        Method(_CRS, 0x0, NotSerialized)
-        {
-          Name (RBUF, ResourceTemplate ()
-          {
-              SpiSerialBus (0x0000, PolarityLow, FourWireMode, 0x08,ControllerInitiated, 0x01312d00, ClockPolarityLow,ClockPhaseFirst, "\\_SB.SPI1", 0x00, ResourceConsumer, , )
-          })
-          Return(RBUF)
-        }
-    }
 
-    ```
+
+``` syntax
+Device(TP1) {
+    Name (_HID, "SPT0001") 
+    Name (_CID, "WITTTest") 
+    Method(_CRS, 0x0, NotSerialized)
+    {
+      Name (RBUF, ResourceTemplate ()
+      {
+          SpiSerialBus (0x0000, PolarityLow, FourWireMode, 0x08,ControllerInitiated, 0x000F4240, ClockPolarityLow,ClockPhaseFirst, "\\_SB.SPI1", 0x00, ResourceConsumer, , )
+      })
+      Return(RBUF)
+    }
+}
+Device(TP2) {
+    Name (_HID, "SPT0002") 
+    Name (_CID, "WITTTest") 
+    Method(_CRS, 0x0, NotSerialized)
+    {
+      Name (RBUF, ResourceTemplate ()
+      {
+          SpiSerialBus (0x0000, PolarityLow, FourWireMode, 0x08,ControllerInitiated, 0x004c4b40, ClockPolarityLow,ClockPhaseFirst, "\\_SB.SPI1", 0x00, ResourceConsumer, , )
+      })
+      Return(RBUF)
+    }
+}
+Device(TP3) {
+    Name (_HID, "SPT0003") 
+    Name (_CID, "WITTTest") 
+    Method(_CRS, 0x0, NotSerialized)
+    {
+      Name (RBUF, ResourceTemplate ()
+      {
+          SpiSerialBus (0x0000, PolarityLow, FourWireMode, 0x08,ControllerInitiated, 0x01312d00, ClockPolarityLow,ClockPhaseFirst, "\\_SB.SPI1", 0x00, ResourceConsumer, , )
+      })
+      Return(RBUF)
+    }
+}
+
+```
+
 
 ## SPI automation tests
 
@@ -119,18 +120,18 @@ Perform these steps on the system under test that has the I²C controller:
 
 You are now ready to run SPI tests. You can run a single test, all tests at once, or run tests manually.
 
--   Run a single test by using the **/name:*&lt;test name&gt;*** option. This command runs the BasicIORead test:
--   Run all tests by using this command:
--   Run tests manually by using SPBCmd.exe tool included in the MITT software package.
+- Run a single test by using the **/name:*&lt;test name&gt;*** option. This command runs the BasicIORead test:
+- Run all tests by using this command:
+- Run tests manually by using SPBCmd.exe tool included in the MITT software package.
 
 ## SPI adapter schematic
 
 
 ![spi schematic](images/spi-schematic.png)
 
- 
 
- 
+
+
 
 
 

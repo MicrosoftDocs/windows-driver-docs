@@ -1,6 +1,5 @@
 ---
 title: ATA Port Driver's Reset Mechanism
-author: windows-driver-content
 description: ATA Port Driver's Reset Mechanism
 ms.assetid: adc27819-d1ae-4b97-8109-5d742c0595d3
 keywords:
@@ -30,8 +29,8 @@ If the miniport driver fails the reset IRB (that is, completes the reset IRB wit
 
 The ATA port driver does not support target resets for devices that have multiple LUNs.
 
- 
+ 
 
- 
+ 
 
 

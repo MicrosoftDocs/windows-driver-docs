@@ -1,6 +1,5 @@
 ---
 title: OID_RECEIVE_FILTER_ENUM_QUEUES
-author: windows-driver-content
 description: Overlying drivers and user-mode applications issue object identifier (OID) query requests of OID_RECEIVE_FILTER_ENUM_QUEUES to obtain a list of all the receive queues that are allocated on a network adapter.
 ms.assetid: e8a946a2-9ee9-42a0-8175-fbc592d404d1
 ms.date: 08/08/2017
@@ -43,7 +42,7 @@ NDIS handles the OID query request of OID\_RECEIVE\_FILTER\_ENUM\_QUEUES for min
 <tbody>
 <tr class="odd">
 <td><p><strong>NDIS_STATUS_SUCCESS</strong></p></td>
-<td><p>The request completed successfully. The <strong>InformationBuffer</strong> points to an [<strong>NDIS_RECEIVE_QUEUE_INFO_ARRAY</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567205) structure.</p></td>
+<td><p>The request completed successfully. The <strong>InformationBuffer</strong> points to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff567205" data-raw-source="[&lt;strong&gt;NDIS_RECEIVE_QUEUE_INFO_ARRAY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567205)"><strong>NDIS_RECEIVE_QUEUE_INFO_ARRAY</strong></a> structure.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>NDIS_STATUS_PENDING</strong></p></td>
@@ -51,7 +50,7 @@ NDIS handles the OID query request of OID\_RECEIVE\_FILTER\_ENUM\_QUEUES for min
 </tr>
 <tr class="odd">
 <td><p><strong>NDIS_STATUS_INVALID_LENGTH</strong></p></td>
-<td><p>The information buffer was too short. NDIS set the <strong>DATA</strong>.<strong>METHOD_INFORMATION</strong>.<strong>BytesNeeded</strong> member in the [<strong>NDIS_OID_REQUEST</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure to the minimum buffer size that is required.</p></td>
+<td><p>The information buffer was too short. NDIS set the <strong>DATA</strong>.<strong>METHOD_INFORMATION</strong>.<strong>BytesNeeded</strong> member in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710" data-raw-source="[&lt;strong&gt;NDIS_OID_REQUEST&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566710)"><strong>NDIS_OID_REQUEST</strong></a> structure to the minimum buffer size that is required.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>NDIS_STATUS_FAILURE</strong></p></td>
@@ -60,7 +59,7 @@ NDIS handles the OID query request of OID\_RECEIVE\_FILTER\_ENUM\_QUEUES for min
 </tbody>
 </table>
 
- 
+ 
 
 Requirements
 ------------
@@ -95,9 +94,9 @@ Requirements
 
 [OID\_RECEIVE\_FILTER\_QUEUE\_PARAMETERS](oid-receive-filter-queue-parameters.md)
 
- 
+ 
 
- 
+ 
 
 
 

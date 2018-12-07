@@ -3,7 +3,6 @@ title: Bug Check 0x6E SESSION2_INITIALIZATION_FAILED
 description: The SESSION2_INITIALIZATION_FAILED bug check has a value of 0x0000006E. This bug check indicates that the initialization of the Microsoft Windows operating system failed.
 ms.assetid: 4c6abce5-e2a3-4033-897b-ddecb00d4cdf
 keywords: ["Bug Check 0x6E SESSION2_INITIALIZATION_FAILED", "SESSION2_INITIALIZATION_FAILED"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -55,11 +54,11 @@ The SESSION2\_INITIALIZATION\_FAILED bug check has a value of 0x0000006E. This b
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

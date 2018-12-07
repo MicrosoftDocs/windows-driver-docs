@@ -130,7 +130,7 @@ The following table illustrates a potential source of confusion when discussing 
 </tbody>
 </table>
 
- 
+ 
 
 Note that KSPIN\_WAVEOUT\_SRC is a source mixer line, and KSPIN\_SPEAKERS\_DST is a source pin. For more information, see the discussion of KS and mixer-line terminology in [Kernel Streaming Topology to Audio Mixer API Translation](kernel-streaming-topology-to-audio-mixer-api-translation.md).
 
@@ -164,9 +164,9 @@ The PinDataRangePointersBridge array defines the data range for a bridge pin tha
 
 For an example of a more complex topology, see [Topology Filters](topology-filters.md).
 
- 
+ 
 
- 
+ 
 
 
 

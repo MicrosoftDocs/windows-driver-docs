@@ -43,9 +43,9 @@ Unlike [*MiniportHaltEx*](https://msdn.microsoft.com/library/windows/hardware/ff
 
 [Writing NDIS Miniport Drivers](writing-ndis-miniport-drivers.md)
 
- 
+ 
 
- 
+ 
 
 
 

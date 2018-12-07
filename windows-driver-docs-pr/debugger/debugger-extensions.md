@@ -3,7 +3,6 @@ title: Using Debugger Extensions
 description: This topic describes using debugger extensions
 ms.assetid: 55de0cbd-c6ba-40af-a932-2f9e57f1e8ec
 keywords: extension commands, debugger extensions
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -28,9 +27,9 @@ This section includes:
 
 [Writing New Debugger Extensions](writing-new-debugger-extensions.md)
 
- 
+ 
 
- 
+ 
 
 
 

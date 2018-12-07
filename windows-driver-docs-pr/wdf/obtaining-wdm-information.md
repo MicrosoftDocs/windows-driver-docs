@@ -1,6 +1,5 @@
 ---
 title: Obtaining WDM Information
-author: windows-driver-content
 description: Obtaining WDM Information
 ms.assetid: a43ffa5b-6166-4624-8dee-a54aaa8c7283
 keywords:
@@ -108,9 +107,9 @@ To obtain WDM information about file objects, a driver can call the following me
 <a href="" id="wdffileobjectwdmgetfileobject"></a>[**WdfFileObjectWdmGetFileObject**](https://msdn.microsoft.com/library/windows/hardware/ff547324)  
 Returns the WDM [**FILE\_OBJECT**](https://msdn.microsoft.com/library/windows/hardware/ff545834) structure that is associated with a specified framework file object.
 
- 
+ 
 
- 
+ 
 
 
 

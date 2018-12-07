@@ -3,7 +3,6 @@ title: Messages from the Target
 description: Messages from the Target
 ms.assetid: d2ef68c6-90be-434a-b719-1619b063da47
 keywords: ["debugging messages", "debugging messages, overview"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -26,9 +25,9 @@ This section includes:
 
 -   [Determining if a Debugger is Attached](determining-if-a-debugger-is-attached.md)
 
- 
+ 
 
- 
+ 
 
 
 

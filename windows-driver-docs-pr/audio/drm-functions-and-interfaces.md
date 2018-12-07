@@ -86,9 +86,9 @@ The WaveCyclic and WavePci port drivers use the [IDrmAudioStream](https://msdn.m
 
 The [**DEFINE\_DRMRIGHTS\_DEFAULT**](https://msdn.microsoft.com/library/windows/hardware/ff536254) macro, which is defined in header file Drmk.h, initializes the members of a [**DRMRIGHTS**](https://msdn.microsoft.com/library/windows/hardware/ff536355) structure to their default values.
 
- 
+ 
 
- 
+ 
 
 
 

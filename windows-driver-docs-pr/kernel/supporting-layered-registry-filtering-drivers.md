@@ -1,6 +1,5 @@
 ---
 title: Supporting Layered Registry Filtering Drivers
-author: windows-driver-content
 description: Supporting Layered Registry Filtering Drivers
 ms.assetid: 5adeecdb-c26e-4502-87b4-bfb02a4aaba8
 keywords: ["filtering registry calls WDK kernel , layered", "registry filtering drivers WDK kernel , layered", "layered registry filtering drivers WDK kernel"]
@@ -17,9 +16,9 @@ When a thread makes a registry call, the configuration manager calls each *Regis
 
 Registry filtering drivers that were written before Windows Vista and therefore do not have an altitude assignment are inserted near the top of the Windows Vista filter stack, in the order that they call [**CmRegisterCallback**](https://msdn.microsoft.com/library/windows/hardware/ff541918).
 
- 
+ 
 
- 
+ 
 
 
 

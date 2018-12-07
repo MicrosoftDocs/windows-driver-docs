@@ -1,6 +1,5 @@
 ---
 title: Registering for Notifications
-author: windows-driver-content
 description: Registering for Notifications
 ms.assetid: 06109726-77e8-49de-9486-4fa2a5aceb1c
 keywords: ["filtering registry calls WDK kernel , registering for notifications", "registry filtering drivers WDK kernel , registering for notifications", "registering filter registry call notifications", "pre-notification option WDK filter registry call", "post-notification option WDK filter registry call", "notifications WDK filter registry call"]
@@ -19,9 +18,9 @@ For most operations, your driver can receive notification before the configurati
 
 After a driver has called **CmRegisterCallback** or **CmRegisterCallbackEx**, the driver will receive notifications until it calls [**CmUnRegisterCallback**](https://msdn.microsoft.com/library/windows/hardware/ff541928) or is unloaded.
 
- 
+ 
 
- 
+ 
 
 
 

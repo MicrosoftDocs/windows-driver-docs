@@ -17,9 +17,9 @@ To introduce high-level virtualized networking concepts, this section includes t
 
 [Potential Performance Bottlenecks in an NDIS Virtualized Networking Environment](potential-performance-bottlenecks-in-an-ndis-virtualized-networking-environment.md)
 
- 
+ 
 
- 
+ 
 
 
 

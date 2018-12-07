@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_PHY_TYPE_LIST
-author: windows-driver-content
 description: WDI_TLV_PHY_TYPE_LIST is a TLV that contains an array of PHY types.
 ms.assetid: 4066E4CE-D63E-4499-AE27-11F6BD57795D
 ms.date: 07/18/2017
@@ -31,7 +30,7 @@ The size (in bytes) of the array of [**WDI\_PHY\_TYPE**](https://msdn.microsoft.
 |-------------------------------------------------|------------------------------|
 | [**WDI\_PHY\_TYPE**](https://msdn.microsoft.com/library/windows/hardware/dn926105)\[\] | An array of PHY type values. |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

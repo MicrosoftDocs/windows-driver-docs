@@ -1,6 +1,5 @@
 ---
 title: Storing Device-Specific Information in the Changer's Device Extension
-author: windows-driver-content
 description: Storing Device-Specific Information in the Changer's Device Extension
 ms.assetid: 72048d84-1c2d-4f3c-b5e8-f55a812ad567
 keywords:
@@ -25,9 +24,9 @@ The device extension might also include data that the miniclass driver uses to t
 
 It does not matter how a miniclass driver translates element addresses as long as the addresses are translated. To optimize the process, a miniclass driver might store data that facilitates translation in the device extension. For example, at initialization, the driver could obtain device-specific element addresses from the SCSI element address assignment page or non-SCSI equivalent, map them to offsets that can be used to reconstruct the device-specific addresses, and store the offsets in the device extension. Then, when the changer miniclass driver receives a request that contains a zero-based element address, it could use the offset stored in the device extension to translate the zero-based address to a device-specific equivalent. The changer miniclass driver can use these device-specific addresses in the SRBs it sends to the system port driver.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,6 @@ title: ndiskd.interfaces
 description: The ndiskd.interfaces extension displays information about a network interface.
 ms.assetid: AC458FDF-CCB6-4A65-8C9C-38C436062017
 keywords: ["ndiskd.interfaces Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -132,9 +131,9 @@ STATE
 
 [NET\_LUID Value](https://msdn.microsoft.com/windows/hardware/drivers/network/net-luid-value)
 
- 
+ 
 
- 
+ 
 
 
 

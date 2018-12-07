@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_STATION_ATTRIBUTES
-author: windows-driver-content
 description: WDI_TLV_STATION_ATTRIBUTES is a TLV that contains the attributes of a station.
 ms.assetid: CB15D3A4-5B42-44ED-A8A8-3E7F09B65F8B
 ms.date: 07/18/2017
@@ -34,7 +33,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 | [**WDI\_TLV\_MULTICAST\_DATA\_ALGORITHM\_LIST**](wdi-tlv-multicast-data-algorithm-list.md) |                                | X        | The supported multicast data algorithms.       |
 | [**WDI\_TLV\_MULTICAST\_MGMT\_ALGORITHM\_LIST**](wdi-tlv-multicast-mgmt-algorithm-list.md) |                                | X        | The supported multicast management algorithms. |
 
- 
+ 
 
 Requirements
 ------------
@@ -60,9 +59,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

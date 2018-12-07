@@ -1,6 +1,5 @@
 ---
 title: Handling an IRP_MN_CANCEL_STOP_DEVICE Request (Windows 98/Me)
-author: windows-driver-content
 description: Handling an IRP_MN_CANCEL_STOP_DEVICE Request (Windows 98/Me)
 ms.assetid: 04365c65-a68a-48fc-9f7a-bb005518be5b
 keywords: ["IRP_MN_CANCEL_STOP_DEVICE"]
@@ -14,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-An [**IRP\_MN\_CANCEL\_STOP\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff550826) request must be handled first by the parent bus driver for a device and then by each next higher driver in the device stack. A driver handles stop IRPs in its [*DispatchPnP*](https://msdn.microsoft.com/library/windows/hardware/ff543341) routine.
+An [**IRP\_MN\_CANCEL\_STOP\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff550826) request must be handled first by the parent bus driver for a device and then by each next higher driver in the device stack. A driver handles stop IRPs in its [*DispatchPnP*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine.
 
 In response to an **IRP\_MN\_CANCEL\_STOP\_DEVICE** request, a driver must return the device to its started state and resume normal operation. Drivers must succeed a cancel-stop IRP.
 
@@ -46,9 +45,9 @@ A driver handles an **IRP\_MN\_CANCEL\_STOP\_DEVICE** request with a procedure s
 
 A driver might receive a spurious cancel-stop request when the device is started and active. This can occur, for example, if the driver (or a driver higher in the device stack) failed an [**IRP\_MN\_QUERY\_STOP\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551725) request. When a device is started and active, drivers can safely succeed spurious cancel-stop requests for the device.
 
- 
+ 
 
- 
+ 
 
 
 

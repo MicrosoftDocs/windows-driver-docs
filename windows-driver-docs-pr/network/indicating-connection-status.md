@@ -58,7 +58,7 @@ NDIS calls a miniport driver's [*MiniportInitializeEx*](https://msdn.microsoft.c
 
     **Note**  If the **MediaConnectState** member is set to MediaConnectStateUnknown, NDIS will proceed as if the adapter is disconnected.
 
-     
+     
 
 -   If an adapter is connected after NDIS calls *MiniportInitializeEx*, the miniport driver can indicate NDIS\_STATUS\_MEDIA\_CONNECT within 5 seconds after it returns from *MiniportInitializeEx*.
 
@@ -82,9 +82,9 @@ If the adapter's media connection status after waking is the same as the status 
 
 While waking, the miniport driver should process OID\_GEN\_MEDIA\_CONNECT\_STATUS or OID\_GEN\_CO\_MEDIA\_CONNECT\_STATUS requests asynchronously. The miniport driver should not complete such requests until after it has determined the connection status.
 
- 
+ 
 
- 
+ 
 
 
 

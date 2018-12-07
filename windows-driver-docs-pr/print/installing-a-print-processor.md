@@ -1,6 +1,5 @@
 ---
 title: Installing a Print Processor
-author: windows-driver-content
 description: Installing a Print Processor
 ms.assetid: 4e9e1148-16a3-42f6-a262-1eef014636d0
 keywords:
@@ -162,9 +161,9 @@ DrvUpgradePrinter(
 }
 ```
 
- 
+ 
 
- 
+ 
 
 
 

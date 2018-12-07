@@ -3,7 +3,6 @@ title: Determining the Cause of a Video Stream Stall
 description: Determining the Cause of a Video Stream Stall
 ms.assetid: 959c2295-1ec3-48b0-aed9-93a81378372f
 keywords: ["kernel streaming debugging, video stream stall, cause"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -37,9 +36,9 @@ If you can reproduce the problem, attach a debugger at this point to determine w
 
 3.  Determine if the processing routine is being called. This can be done by attaching a kernel-mode debugger and setting a breakpoint in this routine.
 
- 
+ 
 
- 
+ 
 
 
 

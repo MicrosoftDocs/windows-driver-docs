@@ -1,6 +1,5 @@
 ---
 title: Print files to the WSD sample
-author: windows-driver-content
 description: This section describes how to print to the WSD sample.
 ms.assetid: E03A957E-C96A-4B35-BFDD-10C1D5A4CCD5
 ms.date: 04/20/2017
@@ -27,9 +26,9 @@ The folder structure of a zip file printed from 3D Builder is shown here:
 
 ![3d builder zip file layout](images/wsd-app-17.png)
 
- 
+ 
 
- 
+ 
 
 
 

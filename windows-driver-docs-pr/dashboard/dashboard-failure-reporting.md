@@ -1,7 +1,6 @@
 ---
 title: Hardware failure reporting using dashboard APIs
 description: these asynchronous methods to access reporting data for your Win10/ Win 8.x driver errors and OEM hardware errors.
-author: EliotSeattle
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 04/05/2018

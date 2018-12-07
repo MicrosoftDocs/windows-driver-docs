@@ -44,7 +44,7 @@ A filter driver can request loopback for send requests that it originates. To re
 
 **Note**  A filter driver should keep track of send requests that it originates and make sure that it does not call the [**NdisFSendNetBufferListsComplete**](https://msdn.microsoft.com/library/windows/hardware/ff562618) function when such requests are complete.
 
- 
+ 
 
 ### Filtering Send Requests
 
@@ -66,7 +66,7 @@ The filter driver can filter the data and send the filtered data to underlying d
 
     **Note**  If the driver queues send requests for later processing, it must support send cancellation requests. For more information about send cancellation requests, see [Canceling Send Requests in a Filter Driver](canceling-a-send-request-in-a-filter-driver.md).
 
-     
+     
 
 -   Copy the buffer and originate a send request with the copy. The send operation is similar to a filter driver initiated send request. In this case, the driver must return the original buffer to the overlying driver by calling the [**NdisFSendNetBufferListsComplete**](https://msdn.microsoft.com/library/windows/hardware/ff562618) function.
 
@@ -82,9 +82,9 @@ A filter driver can pass on or filter the loopback request of an overlying drive
 
 In general, if a filter driver modifies any behavior in such a way that NDIS cannot provide a standard service (such as loopback), the filter driver must provide that service for NDIS. For example, a filter driver that modifies a request for the hardware address (see [OID\_802\_3\_CURRENT\_ADDRESS](https://msdn.microsoft.com/library/windows/hardware/ff569069)), should handle loopback of buffers directed to the new hardware address. In this case, NDIS cannot provide the loopback service it typically provides because the filter altered the address. Also, if the filter driver sets promiscuous mode (see [OID\_GEN\_CURRENT\_PACKET\_FILTER](https://msdn.microsoft.com/library/windows/hardware/ff569575)), it should not pass on the extra data that it receives to overlying drivers.
 
- 
+ 
 
- 
+ 
 
 
 

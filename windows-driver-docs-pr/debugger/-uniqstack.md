@@ -3,7 +3,6 @@ title: uniqstack
 description: The uniqstack extension displays all of the stacks for all of the threads in the current process, excluding stacks that appear to have duplicates.
 ms.assetid: c7502106-90b7-4fec-aa6b-394967ed2cfb
 keywords: ["uniqstack Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -57,7 +56,7 @@ Causes frame numbers to be displayed.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -110,9 +109,9 @@ Duplicate callstacks: 11 (windbg thread #s follow):
 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
 ```
 
- 
+ 
 
- 
+ 
 
 
 

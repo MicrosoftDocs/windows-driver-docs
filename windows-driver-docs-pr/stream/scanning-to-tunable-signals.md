@@ -1,6 +1,5 @@
 ---
 title: Scanning to Tunable Signals
-author: windows-driver-content
 description: Scanning to Tunable Signals
 ms.assetid: cc934079-5d00-42e0-a024-1b7548bb88e4
 keywords:
@@ -32,9 +31,9 @@ To support the new frequency-based scanning functionality, the minidriver must i
 
 [**KSEVENT\_TUNER\_INITIATE\_SCAN**](https://msdn.microsoft.com/library/windows/hardware/ff561898) (Optional)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: EFI_USBFN_IO_PROTOCOL.EventHandler
-author: windows-driver-content
 description: EFI_USBFN_IO_PROTOCOL.EventHandler
 ms.assetid: d493de90-cb8c-44d1-8999-f1ceb26e5c15
 ms.date: 04/20/2017
@@ -79,7 +78,7 @@ A pointer to the [EFI\_USBFN\_MESSAGE\_PAYLOAD](efi-usbfn-message-payload.md) in
 </tbody>
 </table>
 
- 
+ 
 
 ## Remarks
 
@@ -109,13 +108,13 @@ A few messages have associated payload that is returned in the supplied buffer. 
 </tr>
 <tr class="even">
 <td><p>EfiUsbMsgEndpointStatusChangedRx</p></td>
-<td><p>[EFI_USBFN_TRANSFER_RESULT](efi-usbfn-transfer-result.md)</p></td>
-<td><p>Some of the requested data has been transmitted to the host. It is the responsibility of the class driver to determine if any remaining data needs to be resent. The Buffer supplied to [EFI_USBFN_IO_PROTOCOL.Transfer](efi-usbfn-io-protocoltransfer.md)r must be same as the Buffer field of the payload.</p></td>
+<td><p><a href="efi-usbfn-transfer-result.md" data-raw-source="[EFI_USBFN_TRANSFER_RESULT](efi-usbfn-transfer-result.md)">EFI_USBFN_TRANSFER_RESULT</a></p></td>
+<td><p>Some of the requested data has been transmitted to the host. It is the responsibility of the class driver to determine if any remaining data needs to be resent. The Buffer supplied to <a href="efi-usbfn-io-protocoltransfer.md" data-raw-source="[EFI_USBFN_IO_PROTOCOL.Transfer](efi-usbfn-io-protocoltransfer.md)">EFI_USBFN_IO_PROTOCOL.Transfer</a>r must be same as the Buffer field of the payload.</p></td>
 </tr>
 <tr class="odd">
 <td><p>EfiUsbMsgEndpointStatusChangedTx</p></td>
-<td><p>[EFI_USBFN_TRANSFER_RESULT](efi-usbfn-transfer-result.md)</p></td>
-<td><p>Some of the requested data has been received from the host. It is the responsibility of the class driver to determine if it needs to wait for any remaining data. The Buffer supplied to [EFI_USBFN_IO_PROTOCOL.Transfer](efi-usbfn-io-protocoltransfer.md) must be same as the Buffer field of the payload.</p></td>
+<td><p><a href="efi-usbfn-transfer-result.md" data-raw-source="[EFI_USBFN_TRANSFER_RESULT](efi-usbfn-transfer-result.md)">EFI_USBFN_TRANSFER_RESULT</a></p></td>
+<td><p>Some of the requested data has been received from the host. It is the responsibility of the class driver to determine if it needs to wait for any remaining data. The Buffer supplied to <a href="efi-usbfn-io-protocoltransfer.md" data-raw-source="[EFI_USBFN_IO_PROTOCOL.Transfer](efi-usbfn-io-protocoltransfer.md)">EFI_USBFN_IO_PROTOCOL.Transfer</a> must be same as the Buffer field of the payload.</p></td>
 </tr>
 <tr class="even">
 <td><p>EfiUsbMsgBusEventReset</p></td>
@@ -144,22 +143,22 @@ A few messages have associated payload that is returned in the supplied buffer. 
 </tr>
 <tr class="odd">
 <td><p>EfiUsbMsgBusEventSpeed</p></td>
-<td><p>[EFI_USB_BUS_SPEED](efi-usb-bus-speed.md)</p></td>
+<td><p><a href="efi-usb-bus-speed.md" data-raw-source="[EFI_USB_BUS_SPEED](efi-usb-bus-speed.md)">EFI_USB_BUS_SPEED</a></p></td>
 <td><p>Bus speed update signaled.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Requirements
 
 
 **Header:** User generated
 
- 
+ 
 
- 
+ 
 
 
 

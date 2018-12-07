@@ -1,7 +1,6 @@
 ---
 Description: This topic provides an overview of USB pipes and describes the steps required by a USB client driver to obtain pipe handles from the USB driver stack.
 title: How to enumerate USB pipes
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -35,13 +34,13 @@ Before the client driver can enumerate pipes, make sure these requirements are m
 
 -   The client driver must have created the framework USB target device object.
 
-    If you are using the USB templates that are provided with Microsoft Visual Studio Professional 2012, the template code performs those tasks. The template code obtains the handle to the target device object and stores in the device context.
+    If you are using the USB templates that are provided with Microsoft Visual Studio Professional 2012, the template code performs those tasks. The template code obtains the handle to the target device object and stores in the device context.
 
-    **KMDF client driver:  **
+    **KMDF client driver:  **
 
     A KMDF client driver must obtain a WDFUSBDEVICE handle by calling the [**WdfUsbTargetDeviceCreateWithParameters**](https://msdn.microsoft.com/library/windows/hardware/hh439428) method. For more information, see "Device source code" in [Understanding the USB client driver code structure (KMDF)](understanding-the-kmdf-template-code-for-usb.md).
 
-    **UMDF client driver:  **
+    **UMDF client driver:  **
 
     A UMDF client driver must obtain an [**IWDFUsbTargetDevice**](https://msdn.microsoft.com/library/windows/hardware/ff560362) pointer by querying the framework target device object. For more information, see "[**IPnpCallbackHardware**](https://msdn.microsoft.com/library/windows/hardware/ff556764) implementation and USB-specific tasks" in [Understanding the USB client driver code structure (UMDF)](understanding-the-umdf-template-code-for-usb.md).
 
@@ -49,11 +48,11 @@ Before the client driver can enumerate pipes, make sure these requirements are m
 
     If you are using USB templates, the code selects the first configuration and the default alternate setting in each interface. For information about how to change that default setting, see [How to select an alternate setting in a USB interface](select-a-usb-alternate-setting.md).
 
-    **KMDF client driver:  **
+    **KMDF client driver:  **
 
     A KMDF client driver must call the [**WdfUsbTargetDeviceSelectConfig**](https://msdn.microsoft.com/library/windows/hardware/ff550101) method.
 
-    **UMDF client driver:  **
+    **UMDF client driver:  **
 
     For a UMDF client driver, the framework selects the first configuration and the default alternate setting for each interface in that configuration.
 
@@ -64,12 +63,12 @@ Instructions
 
 The framework represents each pipe, that is opened by the USB driver stack, as a USB target pipe object. A KMDF client driver can access the methods of the target pipe object to get information about the pipe. To perform data transfers, the client driver must have WDFUSBPIPE pipe handles. To get the pipe handles, the driver must enumerate the active configuration's interfaces and alternate settings, and then enumerate the endpoints defined in each setting. Performing enumeration operations, for each data transfer, can be expensive. Therefore, one approach is to get pipe handles after the device is configured and store them in the driver-defined device context. When the driver receives data transfer requests, the driver can retrieve the required pipe handles from the device context, and use them to send the request. If the client driver changes the configuration of the device, for example, selects an alternate setting, the driver must also refresh the device context with the new pipe handles. Otherwise, the driver can erroneously send transfer requests on stale pipe handles.
 
-**Note**  Pipe handles are not required for control transfers.
+**Note**  Pipe handles are not required for control transfers.
 To send control transfer requests, a WDF client driver calls **WdfUsbDevicexxxx** methods exposed by the framework device object. Those methods require a WDFUSBDEVICE handle to initiate control transfers that target the default endpoint. For such transfers, the I/O target for the request is the default endpoint and is represented by the WDFIOTARGET handle, which is abstracted by the WDFUSBPIPE handle. At the device level, the WDFUSBDEVICE handle is an abstraction of the WDFUSBPIPE handle to the default endpoint.
 
 For information about sending control transfers and the KMDF methods, see [How to send a USB control transfer](usb-control-transfer.md).
 
- 
+
 
 1.  Extend your device context structure to store pipe handles.
 
@@ -104,7 +103,7 @@ For information about sending control transfers and the KMDF methods, see [How t
     } PIPE_CONTEXT, *PPIPE_CONTEXT;  
 
     WDF_DECLARE_CONTEXT_TYPE_WITH_NAME(PIPE_CONTEXT, GetPipeContext)  
-      
+
     ```
 
     In this example, the pipe context stores the maximum number of bytes that can be sent in one transfer. The client driver can use that value to determine the size of the transfer buffer. The declaration also includes the [**WDF\_DECLARE\_CONTEXT\_TYPE\_WITH\_NAME**](https://msdn.microsoft.com/library/windows/hardware/ff551252) macro, which generates an inline function, GetPipeContext. The client driver can call that function to retrieve a pointer to the block of memory that stores the pipe context.
@@ -492,7 +491,7 @@ A UMDF client driver uses COM infrastructure and implements COM callback classes
 
 Before the driver starts enumerating the pipes, the driver must know about the device configuration and the supported endpoints. Based on that information, the driver can store pipe objects as class member variables.
 
-The following code example extends the USB UMDF template that is provided with Visual Studio Professional 2012. For an explanation of the starter code, see "[**IPnpCallbackHardware**](https://msdn.microsoft.com/library/windows/hardware/ff556764) implementation and USB-specific tasks" in [Understanding the USB client driver code structure (UMDF)](understanding-the-umdf-template-code-for-usb.md).
+The following code example extends the USB UMDF template that is provided with Visual Studio Professional 2012. For an explanation of the starter code, see "[**IPnpCallbackHardware**](https://msdn.microsoft.com/library/windows/hardware/ff556764) implementation and USB-specific tasks" in [Understanding the USB client driver code structure (UMDF)](understanding-the-umdf-template-code-for-usb.md).
 
 Extend the CDevice class declaration as shown here. This example code assumes that the device is the OSR FX2 board. For information about its descriptor layout, see [USB Device Layout](usb-device-layout.md).
 
@@ -536,7 +535,7 @@ private:
     IWDFUsbTargetPipe *     m_pIUsbOutputPipe; // Pointer to the target pipe object for the bulk OUT endpoint.
 
     IWDFUsbTargetPipe *     m_pIUsbInterruptPipe; // Pointer to the target pipe object for the interrupt endpoint.
-  
+
 private:
 
     HRESULT
@@ -546,7 +545,7 @@ private:
         );
 
 public:
-    
+
     static
     HRESULT
     CreateInstanceAndInitialize(
@@ -582,7 +581,6 @@ public:
         );
 
 };
-
 ```
 
 In the CDevice class definition, implement a helper method called CreateUsbIoTargets. This method is called from the IPnpCallbackHardware::OnPrepareHardware implementation after the driver has obtained a pointer to the target device object.
@@ -596,14 +594,14 @@ HRESULT  CMyDevice::CreateUsbIoTargets()
 
     IWDFUsbInterface *      pIUsbInterface = NULL;  
     IWDFUsbTargetPipe *     pIUsbPipe = NULL;  
-      
- 
+
+
     if (SUCCEEDED(hr))   
     {  
         UCHAR NumInterfaces = pIUsbTargetDevice->GetNumInterfaces();  
-  
+
         WUDF_TEST_DRIVER_ASSERT(1 == NumInterfaces);  
-          
+
         hr = pIUsbTargetDevice->RetrieveUsbInterface(0, &pIUsbInterface);  
         if (FAILED(hr))  
         {  
@@ -616,15 +614,15 @@ HRESULT  CMyDevice::CreateUsbIoTargets()
         else  
         {  
             m_pIUsbInterface = pIUsbInterface;  
-  
+
             DriverSafeRelease (pIUsbInterface); //release creation reference                                
         }
      }  
-  
+
     if (SUCCEEDED(hr))   
     {  
         NumEndPoints = pIUsbInterface->GetNumEndPoints();  
-  
+
         if (NumEndPoints != NUM_OSRUSB_ENDPOINTS) 
         {  
             hr = E_UNEXPECTED;  
@@ -637,14 +635,14 @@ HRESULT  CMyDevice::CreateUsbIoTargets()
                         );  
         }  
     }  
-  
+
     if (SUCCEEDED(hr))   
     {  
         for (UCHAR PipeIndex = 0; PipeIndex < NumEndPoints; PipeIndex++)  
         {  
             hr = pIUsbInterface->RetrieveUsbPipeObject(PipeIndex,   
                                                   &pIUsbPipe);  
-  
+
             if (FAILED(hr))  
             {  
                 TraceEvents(TRACE_LEVEL_ERROR,   
@@ -679,11 +677,11 @@ HRESULT  CMyDevice::CreateUsbIoTargets()
                 {  
                     pIUsbPipe->DeleteWdfObject();  
                 }  
-      
+
                 DriverSafeRelease(pIUsbPipe);  //release creation reference
             }  
         }  
-  
+
         if (NULL == m_pIUsbInputPipe || NULL == m_pIUsbOutputPipe)  
         {  
             hr = E_UNEXPECTED;  
@@ -694,21 +692,14 @@ HRESULT  CMyDevice::CreateUsbIoTargets()
                         );          
         }  
     }  
-    
+
     return hr;  
 }  
-
 ```
 
-<<<<<<< HEAD
-In UMDF, the client driver uses a pipe index to send data transfer requests. A pipe index is a number assigned by the USB driver stack when it opens pipes for the endpoints in a setting. To obtain the pipe index, call the [**IWDFUsbTargetPipe::GetInformation**](https://msdn.microsoft.com/library/windows/hardware/ff560403) method. The method populates a [**WINUSB_PIPE_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff540285) structure. The **PipeId** value indicates the pipe index.
-
-One way of performing read and write operations on the target pipe is to call [**IWDFUsbInterface::GetWinUsbHandle**](https://msdn.microsoft.com/library/windows/hardware/ff560337) to obtaining a WinUSB handle and then call [WinUSB Functions](https://msdn.microsoft.com/library/windows/hardware/ff540046#winusb). For example, the driver can call the [**WinUsb_ReadPipe**](https://msdn.microsoft.com/library/windows/hardware/ff540297) or [**WinUsb_WritePipe**](https://msdn.microsoft.com/library/windows/hardware/ff540322) function. In those function calls, the driver must specify the pipe index. For more information, see [How to Access a USB Device by Using WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md).
-=======
 In UMDF, the client driver uses a pipe index to send data transfer requests. A pipe index is a number assigned by the USB driver stack when it opens pipes for the endpoints in a setting. To obtain the pipe index, call the[**IWDFUsbTargetPipe::GetInformation**](https://msdn.microsoft.com/library/windows/hardware/ff560403) method. The method populates a [**WINUSB\_PIPE\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff540285) structure. The **PipeId** value indicates the pipe index.
 
-One way of performing read and write operations on the target pipe is to call [**IWDFUsbInterface::GetWinUsbHandle**](https://msdn.microsoft.com/library/windows/hardware/ff560337) to obtaining a WinUSB handle and then call [WinUSB Functions](https://msdn.microsoft.com/library/windows/hardware/ff540046#winusb). For example, the driver can call the [**WinUsb\_ReadPipe**](https://msdn.microsoft.com/library/windows/hardware/ff540297) or [**WinUsb\_WritePipe**](https://msdn.microsoft.com/library/windows/hardware/ff540322) function. In those function calls, the driver must specify the pipe index. For more information, see [How to Access a USB Device by Using WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md).
->>>>>>> master
+One way of performing read and write operations on the target pipe is to call [**IWDFUsbInterface::GetWinUsbHandle**](https://msdn.microsoft.com/library/windows/hardware/ff560337) to obtain a WinUSB handle and then call [WinUSB Functions](https://msdn.microsoft.com/library/windows/hardware/ff540046#winusb). For example, the driver can call the [**WinUsb\_ReadPipe**](https://msdn.microsoft.com/library/windows/hardware/ff540297) or [**WinUsb\_WritePipe**](https://msdn.microsoft.com/library/windows/hardware/ff540322) function. In those function calls, the driver must specify the pipe index. For more information, see [How to Access a USB Device by Using WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md).
 
 Remarks
 -------

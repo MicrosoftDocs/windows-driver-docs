@@ -1,6 +1,5 @@
 ---
 title: Storage Volumes
-author: windows-driver-content
 description: Storage Volumes
 ms.assetid: 37b65bb6-7c62-47be-a16d-3813dc4c1259
 keywords:
@@ -55,9 +54,9 @@ The Mount Manager responds to the arrival of a new storage volume by querying th
 
 For more information about the interaction between storage drivers and the Mount Manager, see [Supporting Mount Manager Requests in a Storage Class Driver](https://msdn.microsoft.com/library/windows/hardware/ff567603).
 
- 
+ 
 
- 
+ 
 
 
 

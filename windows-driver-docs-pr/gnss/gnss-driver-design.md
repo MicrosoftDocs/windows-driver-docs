@@ -1,6 +1,5 @@
 ---
 title: GNSS driver design
-author: windows-driver-content
 description: Discusses design principles to consider when developing a GNSS driver for Windows 10 including data structures, error reporting, and driver versioning.
 ms.assetid: E10B1149-CC8B-438D-B537-258F7FCFA0E7
 ms.date: 04/20/2017
@@ -46,7 +45,7 @@ Unless otherwise specified, all parameters will follow the International System 
 </tbody>
 </table>
 
- 
+ 
 
 ## Error reporting
 
@@ -72,9 +71,9 @@ Every structure specified for the GNSS DDI contains a driver version field, and 
 
 -   Any Windows 8.1 or older GNSS sensor drivers will not be supported by the GNSS adapter. These drivers would continue to function in Windows 10 through the legacy stack. In presence of another Windows 10 GNSS driver the usage of the legacy GNSS sensor driver is undefined.
 
- 
+ 
 
- 
+ 
 
 
 

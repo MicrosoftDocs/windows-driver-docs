@@ -1,6 +1,5 @@
 ---
 title: Using the Framework's Event Logger
-author: windows-driver-content
 description: Using the Framework's Event Logger
 ms.assetid: aa0a83c8-cd13-41d0-a619-d8793b2e2e80
 keywords:
@@ -89,9 +88,9 @@ Starting in UMDF version 2, UMDF stores the UMDF trace log (or UMDF *IFR*) in ke
 
 For more information about the debugger extension commands, see [Debugger Extensions for Framework-based Drivers](debugger-extensions-for-kmdf-drivers.md).
 
- 
+ 
 
- 
+ 
 
 
 

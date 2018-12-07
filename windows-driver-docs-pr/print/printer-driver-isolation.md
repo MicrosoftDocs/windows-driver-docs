@@ -1,6 +1,5 @@
 ---
 title: Printer Driver Isolation
-author: windows-driver-content
 description: Printer driver isolation improves the reliability of the Windows print service, by enabling printer drivers to run in processes that are separate from the process in which the print spooler runs.
 ms.assetid: b0f11b3f-92f7-41f6-8edb-63b5651f5499
 ms.date: 04/20/2017
@@ -57,26 +56,26 @@ The following table shows the spooler functions that an administrator can use to
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[GetPrinterDataEx](http://go.microsoft.com/fwlink/p/?linkid=135631)</p></td>
+<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=135631" data-raw-source="[GetPrinterDataEx](http://go.microsoft.com/fwlink/p/?linkid=135631)">GetPrinterDataEx</a></p></td>
 <td><p>Get the driver-isolation settings for a printer.</p></td>
 </tr>
 <tr class="even">
-<td><p>[SetPrinterDataEx](http://go.microsoft.com/fwlink/p/?linkid=135632)</p></td>
+<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=135632" data-raw-source="[SetPrinterDataEx](http://go.microsoft.com/fwlink/p/?linkid=135632)">SetPrinterDataEx</a></p></td>
 <td><p>Set the driver-isolation settings for a printer.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[EnumPrinterDataEx](http://go.microsoft.com/fwlink/p/?linkid=135633)</p></td>
+<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=135633" data-raw-source="[EnumPrinterDataEx](http://go.microsoft.com/fwlink/p/?linkid=135633)">EnumPrinterDataEx</a></p></td>
 <td><p>Enumerate driver-isolation settings for a printer.</p></td>
 </tr>
 <tr class="even">
-<td><p>[FindFirstPrinterChangeNotification](http://go.microsoft.com/fwlink/p/?linkid=135634)</p>
-<p>[FindNextPrinterChangeNotification](http://go.microsoft.com/fwlink/p/?linkid=135635)</p></td>
+<td><p><a href="http://go.microsoft.com/fwlink/p/?linkid=135634" data-raw-source="[FindFirstPrinterChangeNotification](http://go.microsoft.com/fwlink/p/?linkid=135634)">FindFirstPrinterChangeNotification</a></p>
+<p><a href="http://go.microsoft.com/fwlink/p/?linkid=135635" data-raw-source="[FindNextPrinterChangeNotification](http://go.microsoft.com/fwlink/p/?linkid=135635)">FindNextPrinterChangeNotification</a></p></td>
 <td><p>Request notifications of changes to the driver-isolation settings for a printer.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 The format for the data is as follows:
 
@@ -116,7 +115,7 @@ A computer administrator can use the Windows Print Management console or call th
 </tbody>
 </table>
 
- 
+ 
 
 Ideally, a printer driver is able to run in shared mode. That is, it runs in an isolated process shared with other printer drivers but separate from the spooler process. A driver might need to run in isolated mode if it can run in a process separate from the spooler process, but has difficulty sharing the process with other drivers. For example, a poorly designed driver might have file names that conflict with those of related drivers or of different versions of the same driver, or the driver might fault frequently or have a memory leak that interferes with the operation of other drivers that run in the same process.
 
@@ -232,9 +231,9 @@ The following functions are exported by winspool.drv and are available to spoole
 
 **RouterUnregisterForPrintAsyncNotifications**
 
- 
+ 
 
- 
+ 
 
 
 

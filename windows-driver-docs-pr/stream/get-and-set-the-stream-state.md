@@ -1,6 +1,5 @@
 ---
 title: Get and Set the Stream State
-author: windows-driver-content
 description: Get and Set the Stream State
 ms.assetid: e2fde528-d0cf-4ffe-945a-8672b76db61f
 keywords:
@@ -55,9 +54,9 @@ Status =
 // pAVCStrmReq->CommandData.StreamState 
 ```
 
- 
+ 
 
- 
+ 
 
 
 

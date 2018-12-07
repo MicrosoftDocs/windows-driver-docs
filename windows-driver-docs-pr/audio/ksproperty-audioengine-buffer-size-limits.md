@@ -45,12 +45,12 @@ The **KSPROPERTY\_AUDIOENGINE\_BUFFER\_SIZE\_RANGE** property indicates the mini
 <td align="left"><p>No</p></td>
 <td align="left"><p>Node via filter</p></td>
 <td align="left"><p>KSP_NODE</p></td>
-<td align="left"><p>[<strong>KSAUDIOENGINE_BUFFER_SIZE_RANGE</strong>](https://msdn.microsoft.com/library/windows/hardware/hh450864)</p></td>
+<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/hh450864" data-raw-source="[&lt;strong&gt;KSAUDIOENGINE_BUFFER_SIZE_RANGE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh450864)"><strong>KSAUDIOENGINE_BUFFER_SIZE_RANGE</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ### <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -59,7 +59,7 @@ A **KSPROPERTY\_AUDIOENGINE\_BUFFER\_SIZE\_RANGE** property request returns **ST
 Remarks
 -------
 
-It is important to note that before a caller calls the **KSPROPERTY\_AUDIOENGINE\_BUFFER\_SIZE\_RANGE** property, the caller fills in the fields of a [**KSDATAFORMAT\_WAVEFORMATEX**](https://msdn.microsoft.com/library/windows/hardware/ff537095) structure. So when **KSPROPERTY\_AUDIOENGINE\_BUFFER\_SIZE\_RANGE** is called, the audio driver receives a KSP\_NODE followed by a filled-in **KSDATAFORMAT\_WAVEFORMATEX** structure from the caller. The driver uses the data format information in this structure to determine the min and max buffer sizes to accommodate the specfied data format. Upon a successful call to this property, the kernel streaming (KS) filter then fills in the **MinBufferBytes** and **MaxBufferBytes** fields of the [**KSAUDIOENGINE\_BUFFER\_SIZE\_RANGE**](https://msdn.microsoft.com/library/windows/hardware/hh450864) structure.
+It is important to note that before a caller calls the **KSPROPERTY\_AUDIOENGINE\_BUFFER\_SIZE\_RANGE** property, the caller fills in the fields of a [**KSDATAFORMAT\_WAVEFORMATEX**](https://msdn.microsoft.com/library/windows/hardware/ff537095) structure. So when **KSPROPERTY\_AUDIOENGINE\_BUFFER\_SIZE\_RANGE** is called, the audio driver receives a KSP\_NODE followed by a filled-in **KSDATAFORMAT\_WAVEFORMATEX** structure from the caller. The driver uses the data format information in this structure to determine the min and max buffer sizes to accommodate the specified data format. Upon a successful call to this property, the kernel streaming (KS) filter then fills in the **MinBufferBytes** and **MaxBufferBytes** fields of the [**KSAUDIOENGINE\_BUFFER\_SIZE\_RANGE**](https://msdn.microsoft.com/library/windows/hardware/hh450864) structure.
 
 Requirements
 ------------
@@ -90,9 +90,9 @@ Requirements
 
 [**KSPROPERTY\_AUDIOENGINE**](ksproperty-audioengine.md)
 
- 
+ 
 
- 
+ 
 
 
 

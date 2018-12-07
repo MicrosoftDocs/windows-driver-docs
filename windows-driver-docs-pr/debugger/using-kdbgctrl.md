@@ -3,7 +3,6 @@ title: Using KDbgCtrl
 description: Using KDbgCtrl
 ms.assetid: 386e8861-dd55-440c-9309-7e8cf6c27690
 keywords: ["KDbgCtrl", "KDbgCtrl, basic use", "DbgPrint buffer, changing buffer size", "DbgPrint buffer, KDbgCtrl utility"]
-ms.author: domars
 ms.date: 05/17/2018
 ms.localizationpriority: medium
 ---
@@ -126,9 +125,9 @@ If you are disabling all kernel debugging, you may also wish to increase the siz
 kdbgctrl -sdb 0x100000 
 ```
 
- 
+ 
 
- 
+ 
 
 
 

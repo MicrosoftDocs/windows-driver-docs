@@ -3,7 +3,6 @@ title: H (Windows Debugger Glossary)
 description: Glossary page - H 
 Robots: noindex, nofollow
 ms.assetid: 478e6900-86f9-487c-a2fd-18543402f5e2
-ms.author: domars
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -24,9 +23,9 @@ The host computer is the computer that runs the debugging session. All debugger 
 
 In a typical two-system kernel debugging session, the debugger is running on the host computer, which is connected to the target computer being debugged.
 
- 
+ 
 
- 
+ 
 
 
 

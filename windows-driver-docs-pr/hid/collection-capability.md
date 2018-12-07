@@ -1,6 +1,5 @@
 ---
 title: Collection Capability
-author: windows-driver-content
 description: Collection Capability
 ms.assetid: 228fab4f-ff90-43c5-bc68-26b29e8a7dd6
 keywords:
@@ -30,9 +29,9 @@ The capability of a collection is defined by its usage, reports, link collection
 
 -   For each report type, the number of buttons and values supported by the collection, as specified by the **Number***Xxx***DataIndices** member.
 
- 
+ 
 
- 
+ 
 
 
 

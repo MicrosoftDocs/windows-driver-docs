@@ -3,7 +3,6 @@ title: whatperftime
 description: The whatperftime extension converts a high-resolution performance counter value into a standard time value.
 ms.assetid: ff11a51f-4e25-4cf3-be19-d38361c441e9
 keywords: ["performance count", "whatperftime Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -48,7 +47,7 @@ The performance counter clock value.
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -62,9 +61,9 @@ kd> !whatperftime 304589
 3163529 Performance Counter in Standard Time: .004.313s
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,7 +1,6 @@
 ---
 Description: This topic first describes the initial setup that is done by the software to enable U1 and U2 transitions, and then describes how these transitions occur in the hardware.
 title: U1 and U2 transitions
-author: windows-driver-content
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -29,7 +28,7 @@ For U1 or U2 transitions to occur, software performs the following steps during 
     | FFH     | DS port must not initiate transitions but must accept transitions that are initiated by the link partner unless there is pending traffic.                                                                                    |
     | 0       | DS port must not initiate transitions and must not accept transitions that are initiated by the link partner.                                                                                                                |
 
-     
+     
 
 3.  If the PORT\_U2\_TIMEOUT value is between 01H-FEH, there is an additional step that occurs in the hardware as a result of step 2. The DS port informs its link partner about that value. The importance of this step is described in "Direct Transition from U1 to U2".
 4.  For every device or hub, the software configures two values: U1\_ENABLE and U2\_ENABLE by sending SET\_FEATURE (U1\_ENABLE/U2\_ENABLE) control transfers. The following table describes those values.
@@ -41,7 +40,7 @@ For U1 or U2 transitions to occur, software performs the following steps during 
     | Enabled  | US port can initiate transitions and accept transitions that are initiated by the link partner if permitted by the device policy. |
     | Disabled | US port must not initiate transitions but can accept transitions that are initiated by the link partner.                          |
 
-     
+     
 ## Hardware transitions
 
 
@@ -104,7 +103,7 @@ Similarly, if all DS ports are in link state U2 or lower, the hub should initiat
 **Note**  
 If there is no device attached to a DS port, the port’s state is Rx.Detect, which is lower than U2. So if there are no devices attached, the hub should send its US port to U2. Also, if all the DS ports were initially in U1 or lower and they transition to U2 or lower, the hub should transition the US port from U1 to U2. Because that transition is not based on U2 activity timer, the hub must bring its US port to U0 and then send it to U2.
 
- 
+ 
 
 ## Packet deferring
 
@@ -115,14 +114,14 @@ If a host sends a transfer request to a device, whose upstream link is in U1 or 
 
 An important responsibility of the device is that after sending ERDY, the device is responsible for keeping the link in U0 until the host sends a response to ERDY or until the **tERDYTimeout** (500 milliseconds) time elapses. During that time, the device must not initiate a U1 or U2 transition and should also reject any transition initiated by its link partner.
 
- 
+ 
 
- 
- 
+ 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -65,9 +65,9 @@ Memory that is allocated in paged pool can be paged out to a disk file as needed
 
 [User mode and kernel mode](user-mode-and-kernel-mode.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Master Clocks
-author: windows-driver-content
 description: Master Clocks
 ms.assetid: bdd228c1-a15f-4c08-8991-299a3f2e1ee8
 keywords:
@@ -34,9 +33,9 @@ The physical time on the master clock object is frequently hardware-based. If a 
 
 The physical time behind the master clock may be remote, in which case it is the responsibility of the local proxy to provide accurate readings. For example, the proxy has responsibility for compensating for the delay across a 1394 connection, or averaging the delay across a network. Additionally, if some other kernel filter is a proxy for a second device on the same 1394 bus, the two devices may negotiate a private method of interfacing with the master clock. In such a case, the devices must use private interfaces to determine clock type in order to verify compatibility.
 
- 
+ 
 
- 
+ 
 
 
 

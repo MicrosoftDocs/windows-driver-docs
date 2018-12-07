@@ -1,6 +1,5 @@
 ---
 title: SO_WSK_SECURITY
-author: windows-driver-content
 description: SO_WSK_SECURITY
 ms.assetid: 169680ba-6486-48fe-89d7-dcd4e5930605
 ms.date: 07/18/2017
@@ -50,7 +49,7 @@ To apply a security descriptor to a socket, a WSK application calls the [**WskCo
 </tr>
 <tr class="odd">
 <td><p><em>InputBuffer</em></p></td>
-<td><p>A pointer to a PSECURITY_DESCRIPTOR-typed variable. This variable must contain a pointer to a cached copy of a security descriptor that was obtained by calling the [<strong>WskControlClient</strong>](https://msdn.microsoft.com/library/windows/hardware/ff571126) function with the [<strong>WSK_CACHE_SD</strong>](wsk-cache-sd.md) control code.</p></td>
+<td><p>A pointer to a PSECURITY_DESCRIPTOR-typed variable. This variable must contain a pointer to a cached copy of a security descriptor that was obtained by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff571126" data-raw-source="[&lt;strong&gt;WskControlClient&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff571126)"><strong>WskControlClient</strong></a> function with the <a href="wsk-cache-sd.md" data-raw-source="[&lt;strong&gt;WSK_CACHE_SD&lt;/strong&gt;](wsk-cache-sd.md)"><strong>WSK_CACHE_SD</strong></a> control code.</p></td>
 </tr>
 <tr class="even">
 <td><p><em>OutputSize</em></p></td>
@@ -117,7 +116,7 @@ To retrieve a cached copy of a socket's security descriptor from a socket, a WSK
 </tr>
 <tr class="odd">
 <td><p><em>OutputBuffer</em></p></td>
-<td><p>A pointer to a PSECURITY_DESCRIPTOR-typed variable. This variable receives a pointer to a cached copy of the socket's security descriptor.</p></td>
+<td><p>A pointer to a PSECURITY_DESCRIPTOR-typed variable. This variable receives a pointer to a cached copy of the socket&#39;s security descriptor.</p></td>
 </tr>
 <tr class="even">
 <td><p><em>OutputSizeReturned</em></p></td>
@@ -152,9 +151,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: DriverEntry Return Values
-author: windows-driver-content
 description: DriverEntry Return Values
 ms.assetid: 052be2ea-375a-4495-931e-8b66972125a5
 keywords: ["DriverEntry WDK kernel , return values", "return values WDK DriverEntry routine"]
@@ -26,9 +25,9 @@ If a driver will fail initialization, the **DriverEntry** routine also should lo
 
 Note that a driver's [*Unload*](https://msdn.microsoft.com/library/windows/hardware/ff564886) routine is not called if a driver's [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff544113) routine returns a failure status.
 
- 
+ 
 
- 
+ 
 
 
 

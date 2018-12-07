@@ -66,11 +66,11 @@ The following table lists the return codes for **IDirect3DDevice7::ValidateDevic
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

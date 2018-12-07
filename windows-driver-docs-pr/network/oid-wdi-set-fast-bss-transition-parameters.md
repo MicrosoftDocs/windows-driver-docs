@@ -1,6 +1,5 @@
 ---
 title: OID_WDI_SET_FAST_BSS_TRANSITION_PARAMETERS
-author: windows-driver-content
 description: OID_WDI_SET_FAST_BSS_TRANSITION_PARAMETERS is sent in response to NDIS_STATUS_WDI_INDICATION_FT_ASSOC_PARAMS_NEEDED. It has the parameters required to send the (Re)Association request. The command is sent to the driver as a direct OID.
 ms.assetid: D769E49D-C565-41CD-9C91-195B1223AE66
 ms.date: 07/18/2017
@@ -18,7 +17,7 @@ OID\_WDI\_SET\_FAST\_BSS\_TRANSITION\_PARAMETERS is sent in response to [NDIS\_S
 |-------|--------------------------|---------------------------------|
 | Port  | No                       | 1                               |
 
- 
+ 
 
 ## Set property parameters
 
@@ -30,7 +29,7 @@ OID\_WDI\_SET\_FAST\_BSS\_TRANSITION\_PARAMETERS is sent in response to [NDIS\_S
 | [**WDI\_TLV\_FT\_MDE**](https://msdn.microsoft.com/library/windows/hardware/mt269120)     |                                | X        | The MDE byte blob.                                                                                                                                                                                                                                             |
 | [**WDI\_TLV\_FT\_FTE**](https://msdn.microsoft.com/library/windows/hardware/mt269118)     |                                | X        | The FTE byte blob.                                                                                                                                                                                                                                             |
 
- 
+ 
 
 ## Set property results
 
@@ -60,9 +59,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

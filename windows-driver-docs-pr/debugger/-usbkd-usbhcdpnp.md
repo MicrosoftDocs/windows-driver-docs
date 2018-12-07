@@ -3,7 +3,6 @@ title: usbkd.usbhcdpnp
 description: The usbkd.usbhcdpnp command displays the Plug and Play (PnP) state history for a USB host controller or root hub.
 ms.assetid: 1153F3C2-5878-4223-AA18-5AE6FA056851
 keywords: ["usbkd.usbhcdpnp Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -103,9 +102,9 @@ Now pass the address of the device extension to the **!usbhcdpnp** command.
 
 [Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
- 
+ 
 
- 
+ 
 
 
 

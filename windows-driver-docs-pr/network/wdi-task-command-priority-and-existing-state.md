@@ -52,7 +52,7 @@ Delay Send
 Maintain
 Pause
 Throttle
- 
+ 
 
 <table>
 <colgroup>
@@ -85,11 +85,11 @@ Throttle
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

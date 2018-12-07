@@ -1,6 +1,5 @@
 ---
 title: Using a Handle to a Registry-Key Object
-author: windows-driver-content
 description: Using a Handle to a Registry-Key Object
 ms.assetid: 25982249-31dc-4542-9ebb-139991619b40
 keywords: ["handle to registry-key object WDK kernel", "registry WDK kernel , object routines", "driver registry information WDK kernel , object routines", "object routines WDK kernel", "registry-key objects WDK kernel"]
@@ -29,41 +28,41 @@ The following table lists the operations that drivers can perform on an open key
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Examine the key's properties, such as its name or the number of its subkeys.</p></td>
-<td><p>[<strong>ZwQueryKey</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567060)</p></td>
+<td><p>Examine the key&#39;s properties, such as its name or the number of its subkeys.</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567060" data-raw-source="[&lt;strong&gt;ZwQueryKey&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567060)"><strong>ZwQueryKey</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>Iterate through the key's subkeys, examining the properties of each one.</p></td>
-<td><p>[<strong>ZwEnumerateKey</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566447)</p></td>
+<td><p>Iterate through the key&#39;s subkeys, examining the properties of each one.</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566447" data-raw-source="[&lt;strong&gt;ZwEnumerateKey&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566447)"><strong>ZwEnumerateKey</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>Examine the properties of a key value, including the value's data.</p></td>
-<td><p>[<strong>ZwQueryValueKey</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567069)</p></td>
+<td><p>Examine the properties of a key value, including the value&#39;s data.</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567069" data-raw-source="[&lt;strong&gt;ZwQueryValueKey&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567069)"><strong>ZwQueryValueKey</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>Iterate through a key's values, examining the properties of each one.</p></td>
-<td><p>[<strong>ZwEnumerateValueKey</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566453)</p></td>
+<td><p>Iterate through a key&#39;s values, examining the properties of each one.</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566453" data-raw-source="[&lt;strong&gt;ZwEnumerateValueKey&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566453)"><strong>ZwEnumerateValueKey</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Set the data for a value associated with a key.</p></td>
-<td><p>[<strong>ZwSetValueKey</strong>](https://msdn.microsoft.com/library/windows/hardware/ff567109)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567109" data-raw-source="[&lt;strong&gt;ZwSetValueKey&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567109)"><strong>ZwSetValueKey</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p>Delete a key.</p></td>
-<td><p>[<strong>ZwDeleteKey</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566437)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566437" data-raw-source="[&lt;strong&gt;ZwDeleteKey&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566437)"><strong>ZwDeleteKey</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Delete a key value.</p></td>
-<td><p>[<strong>ZwDeleteValueKey</strong>](https://msdn.microsoft.com/library/windows/hardware/ff566439)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566439" data-raw-source="[&lt;strong&gt;ZwDeleteValueKey&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566439)"><strong>ZwDeleteValueKey</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 Once the driver has finished its manipulations, it must call [**ZwClose**](https://msdn.microsoft.com/library/windows/hardware/ff566417) to close the handle—unless it has already called **ZwDeleteKey** to delete the key. (Once a key is deleted, all the open handles to it become invalid, so the driver must not close the handle in this case.)
 
-The following code example illustrates how to open a handle for a key named **\\Registry\\Machine\\Software\\***MyCompany*\\*MyApp*, then retrieve key data and close the handle.
+The following code example illustrates how to open a handle for a key named **\\Registry\\Machine\\Software\\**<em>MyCompany</em>\\*MyApp*, then retrieve key data and close the handle.
 
 ```cpp
 //
@@ -169,9 +168,9 @@ The system caches key changes in memory and writes them to disk every few second
 
 To manipulate the registry through a simpler interface, drivers can also call the **Rtl*Xxx*Registry*Xxx*** routines. For more information, see [Registry Run-Time Library Routines](registry-run-time-library-routines.md).
 
- 
+ 
 
- 
+ 
 
 
 

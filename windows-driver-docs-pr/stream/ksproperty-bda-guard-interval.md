@@ -53,7 +53,7 @@ Clients use KSPROPERTY\_BDA\_GUARD\_INTERVAL to control the setting for guard in
 </tbody>
 </table>
 
- 
+ 
 
 Remarks
 -------
@@ -85,9 +85,9 @@ Requirements
 
 [**KSP\_NODE**](https://msdn.microsoft.com/library/windows/hardware/ff566720)
 
- 
+ 
 
- 
+ 
 
 
 

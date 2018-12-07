@@ -2,7 +2,6 @@
 title: Bug Check 0x17B PROFILER_CONFIGURATION_ILLEGAL 
 description: The PROFILER_CONFIGURATION_ILLEGAL bug check has a value of 0x0000017B.
 keywords: ["Bug Check 0x17B PROFILER_CONFIGURATION_ILLEGAL",  "PROFILER_CONFIGURATION_ILLEGAL"]
-ms.author: domars
 ms.date: 04/18/2018
 topic_type:
 - apiref
@@ -23,9 +22,9 @@ The PROFILER_CONFIGURATION_ILLEGAL bug check has a value of 0x0000017B.
 ## PROFILER\_CONFIGURATION\_ILLEGAL Parameters
 
 None
- 
+ 
 
- 
+ 
 
 
 

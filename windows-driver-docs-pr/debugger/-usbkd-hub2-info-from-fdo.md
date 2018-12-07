@@ -3,7 +3,6 @@ title: usbkd.hub2_info_from_fdo
 description: The usbkd.hub2_info_from_fdo command displays information about a USB hub.
 ms.assetid: BB40AEDD-9FDF-43BE-A741-56D06BE2965C
 keywords: ["usbkd.hub2_info_from_fdo Windows Debugging"]
-ms.author: domars
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -133,9 +132,9 @@ PortData 1: !port2_info ffffe000021bf000 Port State = PS_WAIT_CONNECT PortChange
 
 [Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
 
- 
+ 
 
- 
+ 
 
 
 

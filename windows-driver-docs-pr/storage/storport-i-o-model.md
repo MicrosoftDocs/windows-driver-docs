@@ -1,6 +1,5 @@
 ---
 title: Storport I/O Model
-author: windows-driver-content
 description: Storport I/O Model
 ms.assetid: 9220b01e-725f-4a03-87f1-402c0686cccd
 keywords:
@@ -42,9 +41,9 @@ The topics covered in this section are as follows:
 
 [Pre- and Post-Processing of CDBs and Sense Codes](pre--and-post-processing-of-cdbs-and-sense-codes.md)
 
- 
+ 
 
- 
+ 
 
 
 

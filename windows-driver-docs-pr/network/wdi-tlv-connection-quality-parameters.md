@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_CONNECTION_QUALITY_PARAMETERS
-author: windows-driver-content
 description: WDI_TLV_CONNECTION_QUALITY_PARAMETERS is a TLV that contains the desired Wi-Fi Connection Quality Hint.
 ms.assetid: A371FD3A-5BF9-4921-AB8E-1651789FA9A1
 ms.date: 07/18/2017
@@ -31,7 +30,7 @@ The size (in bytes) of a UINT32.
 |--------|--------------------------------------------------------------------------------------------------------------------------------------|
 | UINT32 | The desired Wi-Fi Connection Quality Hint, as defined in [**WDI\_CONNECTION\_QUALITY\_HINT**](https://msdn.microsoft.com/library/windows/hardware/dn897807). |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

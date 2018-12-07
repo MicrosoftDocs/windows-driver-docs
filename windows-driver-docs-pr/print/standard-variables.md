@@ -1,6 +1,5 @@
 ---
 title: Standard Variables
-author: windows-driver-content
 description: Standard Variables
 ms.assetid: d3f85c0f-7387-4301-8b1e-904471aed4b0
 keywords:
@@ -171,8 +170,8 @@ The following table contains all of the standard variables, in alphabetic order.
 </tr>
 <tr class="even">
 <td><p><strong>PageNumber</strong></p></td>
-<td><p>The number of the page currently being printed. Note that this does not necessarily correspond to the application's page number, but rather the number of times [<em>DrvSendPage</em>](https://msdn.microsoft.com/library/windows/hardware/ff556281) has been called.</p>
-<p>This value is initialized by [<strong>DrvStartDoc</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556296) and is incremented by <strong>DrvSendPage</strong>.</p>
+<td><p>The number of the page currently being printed. Note that this does not necessarily correspond to the application&#39;s page number, but rather the number of times <a href="https://msdn.microsoft.com/library/windows/hardware/ff556281" data-raw-source="[&lt;em&gt;DrvSendPage&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556281)"><em>DrvSendPage</em></a> has been called.</p>
+<p>This value is initialized by <a href="https://msdn.microsoft.com/library/windows/hardware/ff556296" data-raw-source="[&lt;strong&gt;DrvStartDoc&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff556296)"><strong>DrvStartDoc</strong></a> and is incremented by <strong>DrvSendPage</strong>.</p>
 <p>For example, if N-up = 4 is selected, <strong>PageNumber</strong> is incremented to 2 only when the fifth page of the document is being printed.</p>
 <p>As another example, if a document is printed in reverse order (back to front) the <strong>PageNumber</strong> standard variable still reports the first page to be printed as page 1, even though this is the last page of the document.</p>
 <p>This behavior is needed to properly support the auto-duplexing feature.</p>
@@ -256,11 +255,11 @@ Type of the current pattern brush. Value can be:
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

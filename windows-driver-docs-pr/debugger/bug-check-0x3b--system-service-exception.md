@@ -3,7 +3,6 @@ title: Bug Check 0x3B SYSTEM_SERVICE_EXCEPTION
 description: The SYSTEM_SERVICE_EXCEPTION bug check has a value of 0x0000003B. This indicates that an exception happened while executing a routine that transitions from non-privileged code to privileged code.
 ms.assetid: 0e2c230e-d942-4f32-ae8e-7a54aceb4c19
 keywords: ["Bug Check 0x3B SYSTEM_SERVICE_EXCEPTION", "SYSTEM_SERVICE_EXCEPTION"]
-ms.author: domars
 ms.date: 09/12/2018
 topic_type:
 - apiref
@@ -55,14 +54,14 @@ The SYSTEM\_SERVICE\_EXCEPTION bug check has a value of 0x0000003B. This indicat
 </tbody>
 </table>
 
- 
+ 
 
 Cause
 -----
 
 The stop code indicates that executing code had an exception and the thread that was below it, is a system thread.
 
-The exception information returned in paramter one is listed in [NTSTATUS Values](https://msdn.microsoft.com/library/cc704588.aspx) and is also available in the ntstatus.h file located in the inc directory of the Windows Driver Kit. 
+The exception information returned in parameter one is listed in [NTSTATUS Values](https://msdn.microsoft.com/library/cc704588.aspx) and is also available in the ntstatus.h file located in the inc directory of the Windows Driver Kit. 
 
 One possible exception value is 0xC0000005: STATUS\_ACCESS\_VIOLATION 
 
@@ -98,9 +97,9 @@ For general troubleshooting of Windows bug check codes, follow these suggestions
 
 -   For additional general troubleshooting information, see [**Blue Screen Data**](blue-screen-data.md).
 
- 
+ 
 
- 
+ 
 
 
 

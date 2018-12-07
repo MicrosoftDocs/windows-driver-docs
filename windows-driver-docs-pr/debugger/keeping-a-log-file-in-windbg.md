@@ -2,7 +2,6 @@
 title: Keeping a Log File in WinDbg
 description: Keeping a Log File in WinDbg
 ms.assetid: 96CFF42B-CBBB-40F7-8CD3-1CF4A538A963
-ms.author: domars
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -51,9 +50,9 @@ To determine the log file status, do one of the following:
 
 -   Enter the [**.logfile (Display Log File Status)**](-logfile--display-log-file-status-.md) command.
 
- 
+ 
 
- 
+ 
 
 
 

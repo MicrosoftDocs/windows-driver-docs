@@ -1,6 +1,5 @@
 ---
 title: WDI_TLV_ASSOCIATION_PARAMETERS_REQUESTED_TYPE
-author: windows-driver-content
 description: WDI_TLV_ASSOCIATION_PARAMETERS_REQUESTED_TYPE is a TLV that contains the requested Association Parameter TLV types.
 ms.assetid: BF4FE327-56A6-4EEE-B6C2-9B93D5C1DD47
 ms.date: 07/18/2017
@@ -31,7 +30,7 @@ The size (in bytes) of the array of UINT16 elements. The array must contain 1 or
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | UINT16\[\] | The list of Association Parameters TLV types that are requested. Valid TLV types are [**WDI\_TLV\_PMKID**](wdi-tlv-pmkid.md) (0x9F) and [**WDI\_TLV\_EXTRA\_ASSOCIATION\_REQUEST\_IES**](wdi-tlv-extra-association-request-ies.md) (0x40). |
 
- 
+ 
 
 Requirements
 ------------
@@ -57,9 +56,9 @@ Requirements
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
 
 

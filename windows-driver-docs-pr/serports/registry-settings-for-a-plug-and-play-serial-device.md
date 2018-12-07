@@ -1,6 +1,5 @@
 ---
 title: Registry Settings for a Plug and Play Serial Device
-author: windows-driver-content
 description: Registry Settings for a Plug and Play Serial Device
 ms.assetid: 57bd090a-20fe-41c6-b730-0479f6ae0982
 keywords:
@@ -24,7 +23,7 @@ Serial queries these registry entry values when it adds the device. If a device-
 The following registry settings are under the Plug and Play registry key for a device.
 
 <a href="" id="portname--reg-sz-"></a>**PortName** (REG\_SZ)  
-Specifies the name of the device. The name of a device is typically COM*&lt;n&gt;,* where *&lt;n&gt;* is a COM port number that the installer obtains from the [COM port database](com-port-database.md). However, the device can be set to any non-NULL string. If the device is configured as a [COM port](configuration-of-com-ports.md), Serial uses the port name to create a symbolic link name for the device. The default value of **PortName** is an empty string.
+Specifies the name of the device. The name of a device is typically COM<em>&lt;n&gt;,</em> where *&lt;n&gt;* is a COM port number that the installer obtains from the [COM port database](com-port-database.md). However, the device can be set to any non-NULL string. If the device is configured as a [COM port](configuration-of-com-ports.md), Serial uses the port name to create a symbolic link name for the device. The default value of **PortName** is an empty string.
 
 <a href="" id="identifier--reg-sz-"></a>**Identifier** (REG\_SZ)  
 Specifies the name of the device. The support for an **Identifier** entry value is provided for compatibility with some legacy PCMCIA devices. The use of **Identifier** is obsolete and should not be used with Microsoft Windows 2000 and later drivers. For a description, see the **PortName** entry value.
@@ -68,9 +67,9 @@ Boolean flag that specifies whether to permit the system to share the interrupt 
 <a href="" id="serialioresourcesindex--reg-dword-"></a>**SerialIoResourcesIndex** (REG\_DWORD)  
 Specifies the index of the partial resource descriptor that Serial uses to determine the I/O addresses of the serial register set for the device. The default value of **SerialIoResourceIndex** is 0x00000000.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Filter Initialization
-author: windows-driver-content
 description: Filter Initialization
 ms.assetid: c39dc5a6-f529-40a2-87d4-bac325b4fa1a
 ms.date: 04/20/2017
@@ -18,9 +17,9 @@ After the filter driver is loaded into memory, the crash dump driver calls the f
 
 To complete the initialization process, the filter driver should initialize the [**FILTER\_INITIALIZATION\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff553865) structure and return it to the crash dump driver.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: Criteria for Associating GDL Templates with Keywords
-author: windows-driver-content
 description: Criteria for Associating GDL Templates with Keywords
 ms.assetid: 22b58881-277b-4e1d-ab6a-363432830772
 keywords:
@@ -19,9 +18,9 @@ GDL uses two specific criteria for associating templates with keywords:
 
 [GDL template qualification](gdl-template-qualification.md)
 
- 
+ 
 
- 
+ 
 
 
 

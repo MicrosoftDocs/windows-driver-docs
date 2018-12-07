@@ -30,9 +30,9 @@ TV audio capture minidrivers are required to implement the following properties:
 
 The DirectShow **IAMTVAudio** interface (see the DirectShow documentation in the Microsoft Windows SDK) provides access to the properties of this set.
 
- 
+ 
 
- 
+ 
 
 
 

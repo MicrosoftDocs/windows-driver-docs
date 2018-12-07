@@ -1,6 +1,5 @@
 ---
 title: Converting an Ordinary DPC to a Threaded DPC
-author: windows-driver-content
 description: Converting an Ordinary DPC to a Threaded DPC
 ms.assetid: 89a7a408-e01b-4543-9775-5ef542d05b75
 keywords: ["threaded DPCs WDK kernel", "converting DPCs"]
@@ -29,31 +28,31 @@ Converting an ordinary DPC to a threaded DPC is straightforward. Simply replace 
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[<strong>KeAcquireSpinLockAtDpcLevel</strong>](https://msdn.microsoft.com/library/windows/hardware/ff551921)</p></td>
-<td><p>[<strong>KeAcquireSpinLockForDpc</strong>](https://msdn.microsoft.com/library/windows/hardware/ff551923)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff551921" data-raw-source="[&lt;strong&gt;KeAcquireSpinLockAtDpcLevel&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff551921)"><strong>KeAcquireSpinLockAtDpcLevel</strong></a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff551923" data-raw-source="[&lt;strong&gt;KeAcquireSpinLockForDpc&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff551923)"><strong>KeAcquireSpinLockForDpc</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>KeReleaseSpinLockFromDpcLevel</strong>](https://msdn.microsoft.com/library/windows/hardware/ff553150)</p></td>
-<td><p>[<strong>KeReleaseSpinLockForDpc</strong>](https://msdn.microsoft.com/library/windows/hardware/ff553148)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff553150" data-raw-source="[&lt;strong&gt;KeReleaseSpinLockFromDpcLevel&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff553150)"><strong>KeReleaseSpinLockFromDpcLevel</strong></a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff553148" data-raw-source="[&lt;strong&gt;KeReleaseSpinLockForDpc&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff553148)"><strong>KeReleaseSpinLockForDpc</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td><p>[<strong>KeAcquireInStackQueuedSpinLockAtDpcLevel</strong>](https://msdn.microsoft.com/library/windows/hardware/ff551908)</p></td>
-<td><p>[<strong>KeAcquireInStackQueuedSpinLockForDpc</strong>](https://msdn.microsoft.com/library/windows/hardware/ff551912)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff551908" data-raw-source="[&lt;strong&gt;KeAcquireInStackQueuedSpinLockAtDpcLevel&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff551908)"><strong>KeAcquireInStackQueuedSpinLockAtDpcLevel</strong></a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff551912" data-raw-source="[&lt;strong&gt;KeAcquireInStackQueuedSpinLockForDpc&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff551912)"><strong>KeAcquireInStackQueuedSpinLockForDpc</strong></a></p></td>
 </tr>
 <tr class="even">
-<td><p>[<strong>KeReleaseInStackQueuedSpinLockFromDpcLevel</strong>](https://msdn.microsoft.com/library/windows/hardware/ff553137)</p></td>
-<td><p>[<strong>KeReleaseInStackQueuedSpinLockForDpc</strong>](https://msdn.microsoft.com/library/windows/hardware/ff553133)</p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff553137" data-raw-source="[&lt;strong&gt;KeReleaseInStackQueuedSpinLockFromDpcLevel&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff553137)"><strong>KeReleaseInStackQueuedSpinLockFromDpcLevel</strong></a></p></td>
+<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff553133" data-raw-source="[&lt;strong&gt;KeReleaseInStackQueuedSpinLockForDpc&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff553133)"><strong>KeReleaseInStackQueuedSpinLockForDpc</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 You do not need to change calls to other spin lock routines, such as [**KeAcquireSpinLock**](https://msdn.microsoft.com/library/windows/hardware/ff551917) or [**KeAcquireInStackQueuedSpinLock**](https://msdn.microsoft.com/library/windows/hardware/ff551899).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,5 @@
 ---
 title: GDL Macro Considerations
-author: windows-driver-content
 description: GDL Macro Considerations
 ms.assetid: b1e3e32f-2f5f-47ae-b69b-7645ada59c2a
 keywords:
@@ -31,9 +30,9 @@ The following code example shows how to pass a reference.
 *InsertBlock:  Myself(Myself(AnotherMacro))
 ```
 
- 
+ 
 
- 
+ 
 
 
 

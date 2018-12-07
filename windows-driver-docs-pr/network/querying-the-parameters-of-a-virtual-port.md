@@ -17,7 +17,7 @@ Before the overlying driver issues this OID method request, it must initialize a
 
     **Note**  Starting with Windows Server 2012, the SR-IOV interface supports only one NIC switch on the network adapter. This switch is known as the *default NIC switch*. The **SwitchId** member must be set to NDIS\_DEFAULT\_SWITCH\_ID.
 
-     
+     
 
 -   The **VPortId** member must be set to the identifier associated with the VPort. The overlying driver obtains the VPort identifier through one of the following ways:
 
@@ -33,9 +33,9 @@ NDIS handles the [OID\_NIC\_SWITCH\_VPORT\_PARAMETERS](https://msdn.microsoft.co
 
 -   OID set requests of [OID\_NIC\_SWITCH\_VPORT\_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/hh451825).
 
- 
+ 
 
- 
+ 
 
 
 

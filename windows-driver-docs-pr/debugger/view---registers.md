@@ -3,7 +3,6 @@ title: View Registers
 description: View Registers
 ms.assetid: d5299e53-1735-452b-9fd8-dbcb69e7cccd
 keywords: ["View Registers"]
-ms.author: domars
 ms.date: 05/23/2017
 ms.localizationpriority: medium
 ---
@@ -20,9 +19,9 @@ This command is equivalent to pressing ALT+4 or clicking the **Registers (Alt+4)
 
 For more information about this window and its uses, see [Registers Window](registers-window.md).
 
- 
+ 
 
- 
+ 
 
 
 
