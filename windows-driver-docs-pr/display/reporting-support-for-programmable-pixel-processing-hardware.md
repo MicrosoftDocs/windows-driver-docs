@@ -1,19 +1,16 @@
 ---
-title: Reporting Support for Programmable Pixel Processing Hardware
-description: Reporting Support for Programmable Pixel Processing Hardware
+title: Reporting Support for Programmable Pixel Shader Hardware
+description: For a DirectX 8.0 level driver to report support for programmable pixel shader hardware, it must set the PixelShaderVersion field of the D3DCAPS8 structure to a valid, nonzero pixel shader version number.
 ms.assetid: e6456c2a-d40f-4082-9122-fab9299808f7
 keywords:
 - pixel shaders WDK DirectX 8.0 , programmable hardware
 - programmable pixel processing hardware WDK DirectX 8.0
-ms.date: 04/20/2017
+ms.date: 12/06/2018
 ms.localizationpriority: medium
+ms.custom: seodec18
 ---
 
-# Reporting Support for Programmable Pixel Processing Hardware
-
-
-## <span id="ddk_reporting_support_for_programmable_pixel_processing_hardware_gg"></span><span id="DDK_REPORTING_SUPPORT_FOR_PROGRAMMABLE_PIXEL_PROCESSING_HARDWARE_GG"></span>
-
+# Reporting Support for Programmable Pixel Shader Hardware
 
 For a DirectX 8.0 level driver to report support for programmable pixel shader hardware, it must set the **PixelShaderVersion** field of the D3DCAPS8 structure to a valid, nonzero pixel shader version number. The **PixelShaderVersion** is a DWORD where the most significant word must have the value 0xFFFF and the least significant word holds the actual version number. This least significant byte of this word holds the minor version number and the most significant byte holds the major version number. Because the format of this DWORD is complex, the driver must set the value of **PixelShaderVersion** using the macro D3DPS\_VERSION defined in *d3d8types.h*. For example, the following code fragment sets the **PixelShaderVersion** to indicate support for 1.0 level functionality.
 

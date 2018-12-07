@@ -2,7 +2,7 @@
 title: Supporting Path-Independent Rotation
 description: Starting with Windows 8.1 Update, the operating system supports cloning portrait-first displays on landscape-first displays with the greatest possible resolution.
 ms.assetid: 136CEDA5-2839-4E6E-A032-1A9222C769C6
-ms.date: 04/20/2017
+ms.date: 10/30/2018
 ms.localizationpriority: medium
 ---
 
@@ -13,7 +13,9 @@ Starting with Windows 8.1 Update, the operating system supports cloning portrai
 
 These Device driver interfaces (DDIs) are new in Windows 8.1 Update:
 
--   [VidPN Path-Independent Rotation Interface](https://msdn.microsoft.com/library/windows/hardware/dn653366)
+-   D3DKMDT_VPPR_GET_CONTENT_ROTATION
+-   D3DKMDT_VPPR_GET_CONTENT_ROTATION_PART
+-   D3DKMDT_VPPR_GET_OFFSET_ROTATION
 
 These DDIs are updated in Windows 8.1 Update:
 

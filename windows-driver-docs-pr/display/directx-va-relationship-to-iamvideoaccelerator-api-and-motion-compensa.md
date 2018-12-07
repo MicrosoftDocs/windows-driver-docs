@@ -1,5 +1,5 @@
 ---
-title: DirectX VA Relationship to IAMVideoAccelerator API and Motion Compensation DDI
+title: DXVA in IAMVideoAccelerator API and Motion Compensation DDI
 description: DirectX VA Relationship to IAMVideoAccelerator API and Motion Compensation DDI
 ms.assetid: 8bfa198f-b29f-491f-8133-a1f3b41e0cbe
 keywords:
@@ -12,15 +12,12 @@ keywords:
 - VMR WDK DirectX VA
 - overlay mixer WDK DirectX VA
 - OVM WDK DirectX VA
-ms.date: 04/20/2017
+ms.date: 12/06/2018
 ms.localizationpriority: medium
+ms.custom: seodec18
 ---
 
 # DirectX VA Relationship to IAMVideoAccelerator API and Motion Compensation DDI
-
-
-## <span id="ddk_directx_va_relationship_to_iamvideoaccelerator_api_and_motion_comp"></span><span id="DDK_DIRECTX_VA_RELATIONSHIP_TO_IAMVIDEOACCELERATOR_API_AND_MOTION_COMP"></span>
-
 
 DirectX VA uses the **IAMVideoAcceleratorNotify** and **IAMVideoAccelerator** interfaces (documented in the Microsoft Windows SDK), and the [motion compensation DDI](motion-compensation.md) to specify the format of the data exchanged between the software decoder, the video mixing renderer (VMR) or the overlay mixer (OVM), and the video display driver. The following figure shows the relationship of these interfaces to the software decoder, VMR, and video display driver.
 
