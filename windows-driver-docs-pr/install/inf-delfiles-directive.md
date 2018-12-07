@@ -30,6 +30,10 @@ A **DelFiles** directive references an INF-writer-defined section elsewhere in t
 [ClassInstall32.ntx86] | 
 [ClassInstall32.ntia64] |  (Windows XP and later versions of Windows)
 [ClassInstall32.ntamd64]  (Windows XP and later versions of Windows) 
+[ClassInstall32.ntarm]  (Windows 8 and later versions of Windows) 
+[ClassInstall32.ntarm64]  (Windows 10 and later versions of Windows) 
+
+
   
 Delfiles=file-list-section[,file-list-section]... 
 ```
@@ -84,7 +88,7 @@ Remarks
 
 Any *file-list-section* name must be unique to the INF file, but it can be referenced by [**CopyFiles**](inf-copyfiles-directive.md), **DelFiles**, or [**RenFiles**](inf-renfiles-directive.md) directives elsewhere in the same INF. Such an INF-writer-defined section name must follow the general rules for defining section names. For more information about these rules, see [General Syntax Rules for INF Files](general-syntax-rules-for-inf-files.md).
 
-The **DelFiles** directive does not support decorating a *file-list-section* name with a system-defined platform extension (**.nt**, **.ntx86**, **.ntia64**, or **.ntamd64**).
+The **DelFiles** directive does not support decorating a *file-list-section* name with a system-defined platform extension (**.nt**, **.ntx86**, **.ntia64**, **.ntamd64**, **.ntarm**, or **.ntarm64**).
 
 The [**DestinationDirs**](inf-destinationdirs-section.md) section of the INF file controls the destination for all file-deletion operations, regardless of the section that contains a particular **DelFiles** directive. If a named section referenced by a **DelFiles** directive has a corresponding entry in the **DestinationDirs** section of the same INF, that entry explicitly specifies the target destination directory from which all files that are listed in the named section will be deleted. If the named section is not listed in the **DestinationDirs** section, Windows uses the **DefaultDestDir** entry in the INF.
 

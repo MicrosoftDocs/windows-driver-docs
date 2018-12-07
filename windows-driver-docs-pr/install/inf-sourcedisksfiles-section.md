@@ -57,7 +57,7 @@ A **SourceDisksFiles** section can have any number of entries, one for each file
 
 Each *filename* entry must specify the exact name of a file on the source disk. You cannot use a %*strkey*% token to specify the file name. For more information about %*strkey*% tokens, see [**INF Strings Section**](inf-strings-section.md).
 
-To support distribution of driver files on multiple system architectures, you can specify an architecture-specific **SourceDisksFiles** section by adding an **.x86**, **.ia64**, or **.amd64** extension to **SourceDisksFiles**. Be aware that, unlike other sections such as a ***DDInstall*** section, the platform extensions for a **SourceDisksFiles** section are not **.ntx86**, **.ntia64**, or **.ntamd64**.
+To support distribution of driver files on multiple system architectures, you can specify an architecture-specific **SourceDisksFiles** section by adding an **.x86**, **.ia64**, **.amd64**, **.arm**, or **.arm64** extension to **SourceDisksFiles**. Be aware that, unlike other sections such as a ***DDInstall*** section, the platform extensions for a **SourceDisksFiles** section are not **.ntx86**, **.ntia64**, or **.ntamd64**.
 
 For example, to specify a source disk names section for an x86-based system, use a **SourceDisksFiles.x86** section, not a **SourceDisksFiles.ntx86** section. Similarly, use a **SourceDisksFiles.ia64** section to specify an Itanium-based system and a **SourceDisksFiles.amd64** section to specify an x64-based system.
 
