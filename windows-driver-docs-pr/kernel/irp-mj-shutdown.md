@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # IRP\_MJ\_SHUTDOWN
 
 
-Drivers of mass-storage devices that have internal caches for data must handle this request in a [*DispatchShutdown*](https://msdn.microsoft.com/library/windows/hardware/ff543405) routine. Drivers of mass-storage devices and intermediate drivers layered over them also must handle this request if an underlying driver maintains internal buffers for data.
+Drivers of mass-storage devices that have internal caches for data must handle this request in a [*DispatchShutdown*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine. Drivers of mass-storage devices and intermediate drivers layered over them also must handle this request if an underlying driver maintains internal buffers for data.
 
 When Sent
 ---------
@@ -56,7 +56,7 @@ Requirements
 ## See also
 
 
-[*DispatchShutdown*](https://msdn.microsoft.com/library/windows/hardware/ff543405)
+[*DispatchShutdown*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch)
 
 [**IoRegisterLastChanceShutdownNotification**](https://msdn.microsoft.com/library/windows/hardware/ff549518)
 

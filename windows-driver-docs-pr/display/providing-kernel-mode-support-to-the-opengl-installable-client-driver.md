@@ -1,5 +1,5 @@
 ---
-title: Providing Kernel-Mode Support to the OpenGL Installable Client Driver
+title: Kernel-Mode Support to the OpenGL Installable Client Driver
 description: Providing Kernel-Mode Support to the OpenGL Installable Client Driver
 ms.assetid: 1871594a-ca4d-4a3c-bf12-bbf80fecefe9
 keywords:
@@ -7,11 +7,12 @@ keywords:
 - kernel-mode OpenGL ICD WDK display
 - ICD WDK display
 - installable client driver WDK display
-ms.date: 04/20/2017
+ms.date: 12/06/2018
 ms.localizationpriority: medium
+ms.custom: seodec18
 ---
 
-# Providing Kernel-Mode Support to the OpenGL Installable Client Driver
+# Kernel-Mode Support to the OpenGL Installable Client Driver
 
 
 The OpenGL installable client driver (ICD) can obtain the same level of support for calling kernel-mode services as [the Direct3D user-mode display driver](initializing-communication-with-the-direct3d-user-mode-display-driver.md). However, rather than gaining access to kernel-mode services through callback functions like the Microsoft Direct3D runtime supplies through the **pAdapterCallbacks** member of the [**D3DDDIARG\_OPENADAPTER**](https://msdn.microsoft.com/library/windows/hardware/ff543226) structure and the **pCallbacks** member of the [**D3DDDIARG\_CREATEDEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff542931) structure, the OpenGL ICD must load Gdi32.dll and initialize use of the [OpenGL-kernel-mode-accessing functions](https://msdn.microsoft.com/library/windows/hardware/ff568606) as shown in the following example code. This code does not implement [Windows 8 enhancements in OpenGL](supporting-opengl-enhancements.md).

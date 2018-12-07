@@ -33,7 +33,7 @@ The following steps correspond to the numbers in the preceding diagram:
 
 3.  The I/O manager allocates an IRP structure and stores an [**IRP\_MJ\_READ**](https://msdn.microsoft.com/library/windows/hardware/ff550794) function code in the structure.
 
-4.  The I/O manager calls the [**DispatchRead**](https://msdn.microsoft.com/library/windows/hardware/ff543376) standard driver routine for driver *x*, passing a pointer to the IRP structure. Because driver *x* is a framework-based driver, the framework provides the driver's *DispatchRead* routine.
+4.  The I/O manager calls the [**DispatchRead**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) standard driver routine for driver *x*, passing a pointer to the IRP structure. Because driver *x* is a framework-based driver, the framework provides the driver's *DispatchRead* routine.
 
 5.  The framework creates a request object that represents the IRP structure. The framework adds the request object to one of the driver's queue objects.
 

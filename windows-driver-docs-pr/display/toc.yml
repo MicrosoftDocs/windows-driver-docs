@@ -3,9 +3,9 @@
 - name: "Windows Display Driver Model (WDDM) Design Guide"
   href: windows-vista-display-driver-model-design-guide.md
   items: 
-  - name: "Roadmap for Developing Drivers for the Windows Display Driver Model (WDDM)"
+  - name: "Roadmap for the Windows Display Driver Model (WDDM)"
     href: roadmap-for-developing-drivers-for-the-windows-vista-display-driver-mo.md
-  - name: "What's new for Windows 10 display drivers (WDDM 2.0)"
+  - name: "What's new for Windows 10 display drivers (WDDM 2.0 and later)"
     href: what-s-new-for-windows-threshold-display-drivers--wddm-2-0-.md
   - name: "What's new for Windows 8.1 display drivers (WDDM 1.3)"
     href: what-s-new-for-windows-8-1-display-drivers--wddm-1-3-.md
@@ -123,7 +123,7 @@
         href: general-install-section-directives.md
       - name: "String] section changes for localized strings"
         href: -string--section-changes-for-localized-strings.md
-      - name: "Driver DLL for display adapter or chipset has properly formatted file version"
+      - name: "File Version Formatting for Display Driver DLLs"
         href: driver-dll-for-display-adapter-or-chipset-has-properly-formatted-file-version.md
     - name: "WDDM 1.2 installation scenarios"
       href: installation-scenarios.md
@@ -175,7 +175,7 @@
       href: setting-the-start-type-value.md
     - name: "Disabling Interoperability with OpenGL"
       href: disabling-interoperability-with-opengl.md
-    - name: "Appending Information to the Friendly String Names of Graphics Adapters"
+    - name: "Append Info to Graphics Adapter Friendly String Names"
       href: appending-information-to-the-friendly-string-names-of-graphics-adapter.md
     - name: "Omitting LayoutFile and CatalogFile Information"
       href: omitting-layoutfile-and-catalogfile-information.md
@@ -192,7 +192,7 @@
     items: 
     - name: "Setting the Feature Score for Windows 7 Display Drivers"
       href: setting-the-feature-score-for-windows-7-display-drivers.md
-    - name: "Appending Information to the Friendly String Names for Windows 7 Display Drivers"
+    - name: "Append Info to Windows 7 Display Driver Friendly Names"
       href: appending-information-to-the-friendly-string-names-for-windows-7-displ.md
     - name: "Differentiating the SKU for Windows 7 Display Drivers"
       href: differentiating-the-sku-for-windows-7-display-drivers.md
@@ -217,7 +217,7 @@
       href: enumerating-gpu-nodes.md
     - name: "Loading an OpenGL Installable Client Driver"
       href: loading-an-opengl-installable-client-driver.md
-    - name: "Providing Kernel-Mode Support to the OpenGL Installable Client Driver"
+    - name: "Kernel-Mode Support to the OpenGL Installable Client Driver"
       href: providing-kernel-mode-support-to-the-opengl-installable-client-driver.md
   - name: "WDDM Threading and Synchronization Model"
     href: windows-vista-display-driver-threading-and-synchronization-model.md
@@ -425,6 +425,8 @@
         items: 
         - name: "Supporting the DXGI DDI"
           href: supporting-the-dxgi-ddi.md
+        - name: "DirectX Graphics Kernel Subsystem"
+          href: directx-graphics-kernel-subsystem.md
         - name: "Passing DXGI Information at Resource Creation Time"
           href: passing-dxgi-information-at-resource-creation-time.md
         - name: "DXGI Presentation Path"
@@ -581,7 +583,7 @@
       href: monitor-hot-plug-detection.md
     - name: "Enumerating Cofunctional VidPN Source and Target Modes"
       href: enumerating-cofunctional-vidpn-source-and-target-modes.md
-    - name: "Determining Whether a VidPN is Supported on a Display Adapter"
+    - name: "Determining VidPN Support on a Display Adapter"
       href: determining-whether-a-vidpn-is-supported-on-a-display-adapter.md
   - name: "Indirect Display Driver Model Overview"
     href: indirect-display-driver-model-overview.md
@@ -635,7 +637,7 @@
         href: tdr-registry-keys.md
       - name: "TDR changes in Windows 8"
         href: tdr-changes-in-windows-8.md
-  - name: "Implementation Tips and Requirements for the Windows Display Driver Model (WDDM)"
+  - name: "Tips and Requirements for the Windows Display Driver Model (WDDM)"
     href: implementation-tips-and-requirements-for-the-windows-vista-display-dri.md
     items: 
     - name: "Hardware support for Direct3D feature levels"
@@ -649,7 +651,7 @@
       href: saving-energy-with-vsync-control.md
     - name: "Validating Private Data Sent from User Mode to Kernel Mode"
       href: validating-private-data-sent-from-user-mode-to-kernel-mode.md
-    - name: "Specifying device state and frame latency starting in WDDM 1.3"
+    - name: "Specifying device state and frame latency in WDDM 1.3"
       href: specifying-device-state-and-frame-latency-starting-in-wddm-1-3.md
     - name: "Windows Display Driver Model (WDDM) 64-Bit Issues"
       href: microsoft-windows-vista-display-driver-64-bit-issues.md
@@ -681,7 +683,7 @@
           href: directx-runtime-behavior.md
     - name: "Version Numbers for WDDM Drivers"
       href: version-numbers-for-windows-vista-display-drivers.md
-    - name: "Supporting Brightness Controls on Integrated Display Panels"
+    - name: "Brightness Controls on Integrated Display Panels"
       href: supporting-brightness-controls-on-integrated-display-panels.md
     - name: "Supporting Display Output and ACPI Events"
       href: supporting-display-output.md
@@ -713,7 +715,7 @@
         href: handling-the-loss-of-a-display-device.md
       - name: "Retrieving Information About a Protected Output"
         href: retrieving-information-about-a-protected-output.md
-      - name: "Retrieving COPP-Compatible Information about a Protected Output"
+      - name: "Retrieving COPP-Compatible Information on Protected Output"
         href: retrieving-copp-compatible-information-about-a-protected-output.md
       - name: "Configuring a Protected Output"
         href: configuring-a-protected-output.md
@@ -992,8 +994,6 @@
         href: d3dddi-multiplane-overlay-filter-range.md
       - name: "D3DDDI_MULTIPLANE_OVERLAY_FILTER_TYPE"
         href: d3dddi-multiplane-overlay-filter-type.md
-      - name: "D3DDDI_MULTIPLANE_OVERLAY_GET_FILTER_RANGE_INPUT"
-        href: d3dddi-multiplane-overlay-get-filter-range-input.md
     - name: "Dispmprt.h - Reserved"
       href: dispmprt-h---reserved.md
       items: 
@@ -1019,7 +1019,7 @@
 - name: "Windows 2000 Display Driver Model (XDDM) Design Guide"
   href: windows-2000-display-driver-model-design-guide.md
   items: 
-  - name: "Roadmap for Developing Drivers for the Windows 2000 Display Driver Model (XDDM)"
+  - name: "Roadmap for the Windows 2000 Display Driver Model (XDDM)"
     href: roadmap-for-developing-drivers-for-the-windows-2000-display-driver-mod.md
   - name: "Introduction to Display (Windows 2000 Model)"
     href: introduction-to-display--windows-2000-model-.md
@@ -1051,7 +1051,7 @@
         href: display-inf-file-sections.md
       - name: "Monitor INF File Sections"
         href: monitor-inf-file-sections.md
-    - name: "Compatibility Testing Requirements for Display and Video Miniport Drivers"
+    - name: "Testing Requirements for Display/Video Miniport Drivers"
       href: compatibility-testing-requirements-for-display-and-video-miniport-driv.md
       items: 
       - name: "INF and Installation Requirements"
@@ -1334,9 +1334,9 @@
         items: 
         - name: "Flagging Support for DMA Model Nonlocal Display Memory"
           href: flagging-support-for-dma-model-nonlocal-display-memory.md
-        - name: "Reporting DirectDraw Capabilities for DMA Model Nonlocal Display Memory"
+        - name: "Reporting DirectDraw Capabilities for Nonlocal Display Memory"
           href: reporting-directdraw-capabilities-for-dma-model-nonlocal-display-memor.md
-        - name: "Reporting Direct3D Capabilities for DMA Model Nonlocal Display Memory"
+        - name: "Reporting Direct3D Capabilities for Nonlocal Display Memory"
           href: reporting-direct3d-capabilities-for-dma-model-nonlocal-display-memory.md
       - name: "Managing AGP Heaps"
         href: managing-agp-heaps.md
@@ -1578,7 +1578,7 @@
         - name: "Cube Environment Map Support"
           href: cube-environment-map-support.md
           items: 
-          - name: "Integration of Environment Mapping with Standard Diffuse Lighting"
+          - name: "Environment Mapping with Standard Diffuse Lighting"
             href: integration-of-environment-mapping-with-standard-diffuse-lighting.md
         - name: "Vertex and Pixel Fogging "
           href: vertex-and-pixel-fogging.md
@@ -1698,12 +1698,12 @@
         - name: "Vertex Shaders"
           href: vertex-shaders.md
           items: 
-          - name: "Reporting Support for Programmable Vertex Processing Hardware"
+          - name: "Reporting Support for Programmable Vertex Shader Hardware"
             href: reporting-support-for-programmable-vertex-processing-hardware.md
         - name: "Pixel Shaders"
           href: pixel-shaders.md
           items: 
-          - name: "Reporting Support for Programmable Pixel Processing Hardware"
+          - name: "Reporting Support for Programmable Pixel Shader Hardware"
             href: reporting-support-for-programmable-pixel-processing-hardware.md
       - name: "High Order Surfaces"
         href: high-order-surfaces.md
@@ -1894,7 +1894,7 @@
         items: 
         - name: "Allocating Nonpaged Display Memory"
           href: allocating-nonpaged-display-memory.md
-        - name: "Specifying Maximum Size of Bug-check Data in a Video Miniport Driver"
+        - name: "The Max Size of Bug-check Data in a Video Miniport Driver"
           href: specifying-maximum-size-of-bug-check-data-in-a-video-miniport-driver.md
       - name: "Updates for Earlier DirectX DDK Versions"
         href: updates-for-earlier-directx-ddk-versions.md
@@ -1905,7 +1905,7 @@
           href: destroying-objects-associated-with-a-direct3d-context.md
         - name: "Handling Color Values for Pixel Formats"
           href: handling-color-values-for-pixel-formats.md
-        - name: "Supplying Default Values for Texture Coordinates in Vertex Declarations"
+        - name: "Default Texture Coordinates in Vertex Declarations"
           href: supplying-default-values-for-texture-coordinates-in-vertex-declaration.md
   - name: "DirectX Video Acceleration"
     href: directx-video-acceleration.md
@@ -1988,14 +1988,14 @@
           href: reporting-support-for-deinterlacebltex.md
         - name: "Supplying Video Substream and Destination Surfaces"
           href: supplying-video-substream-and-destination-surfaces.md
-        - name: "Supporting Operations on Video Substream and Destination Surfaces"
+        - name: "Operations on Video Substream and Destination Surfaces"
           href: supporting-operations-on-video-substream-and-destination-surfaces.md
         - name: "Displaying Samples and Background Color in the Target Rectangle"
           href: displaying-samples-and-background-color-in-the-target-rectangle.md
           items: 
           - name: "Displaying 16:9 Video within a 4:3 Destination Surface"
             href: displaying-16-9-video-within-a-4-3-destination-surface.md
-          - name: "Combining Video Stream and Substream with Different Aspect Ratios"
+          - name: "Combine Video Stream, Substream with Different Aspect Ratios"
             href: combining-video-stream-and-substream-with-different-aspect-ratios.md
           - name: "Combining Two Streams with Different Heights and Widths"
             href: combining-two-streams-with-different-heights-and-widths.md
@@ -2412,7 +2412,7 @@
         href: initializing-the-video-miniport-for-communication-with-display-driver.md
     - name: "Video Miniport Driver's Device Extension (Windows 2000 Model)"
       href: video-miniport-driver-s-device-extension--windows-2000-model-.md
-    - name: "Individually Registered Callback Functions in Video Miniport Drivers"
+    - name: "Registering Callback Functions in Video Miniport Drivers"
       href: individually-registered-callback-functions-in-video-miniport-drivers.md
     - name: "Events in Video Miniport Drivers (Windows 2000 Model)"
       href: events-in-video-miniport-drivers--windows-2000-model-.md
@@ -2425,7 +2425,7 @@
         href: privately-defined-display-miniport-driver-ioctl-video-xxx-requests.md
       - name: "Handling Unsupported IOCTL_VIDEO_XXX Requests"
         href: handling-unsupported-ioctl-video-xxx-requests.md
-    - name: "Plug and Play and Power Management in Video Miniport Drivers (Windows 2000 Model)"
+    - name: "Power Management and Plug and Play in Video Miniport Drivers (Windows 2000 Model)"
       href: plug-and-play-and-power-management-in-video-miniport-drivers--windows-.md
     - name: "Video Port Driver Support for AGP"
       href: video-port-driver-support-for-agp.md
@@ -2445,7 +2445,7 @@
     - name: "Interrupts in Video Miniport Drivers"
       href: interrupts-in-video-miniport-drivers.md
       items: 
-      - name: "When to Implement a HwVidSynchronizeExecutionCallback Routine"
+      - name: "Implementing a HwVidSynchronizeExecutionCallback Routine"
         href: when-to-implement-a-hwvidsynchronizeexecutioncallback-routine.md
     - name: "Timers in Video Miniport Drivers"
       href: timers-in-video-miniport-drivers.md
@@ -2502,7 +2502,7 @@
         href: converting-a-windows-nt-4-0-miniport-driver-to-windows-2000.md
       - name: "Using VideoPortGetProcAddress"
         href: using-videoportgetprocaddress.md
-  - name: "Implementation Tips and Requirements for the Windows 2000 Display Driver Model"
+  - name: "Tips and Requirements for the Windows 2000 Display Driver Model"
     href: implementation-tips-and-requirements-for-the-windows-2000-display-driv.md
     items: 
     - name: "Exception Handling When Accessing User-Mode Memory"

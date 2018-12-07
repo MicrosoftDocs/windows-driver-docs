@@ -1,5 +1,5 @@
 ---
-title: Handling Compressed Texture Surfaces Created In System Memory
+title: Handling Compressed Texture Surfaces Created In SysMem
 description: Handling Compressed Texture Surfaces Created In System Memory
 ms.assetid: 773962ce-f459-4dc5-8311-c43ae33cfb7c
 keywords:
@@ -14,15 +14,12 @@ keywords:
 - drawing compressed textures WDK DirectDraw , height
 - DirectDraw compressed textures WDK Windows 2000 display , height
 - compressed texture surfaces WDK DirectDraw , height
-ms.date: 04/20/2017
+ms.date: 12/06/2018
 ms.localizationpriority: medium
+ms.custom: seodec18
 ---
 
 # Handling Compressed Texture Surfaces Created In System Memory
-
-
-## <span id="ddk_handling_compressed_texture_surfaces_created_in_system_memory_gg"></span><span id="DDK_HANDLING_COMPRESSED_TEXTURE_SURFACES_CREATED_IN_SYSTEM_MEMORY_GG"></span>
-
 
 **This topic applies only to Windows NT-based operating systems.**
 

@@ -1,19 +1,16 @@
 ---
-title: Video Miniport Driver Within the Graphics Architecture (Windows 2000 Model)
-description: Video Miniport Driver Within the Graphics Architecture (Windows 2000 Model)
+title: Video Miniport Driver in the Graphics Architecture (XDDM)
+description: Video Miniport Driver in the Graphics Architecture (Windows 2000 Model)
 ms.assetid: 663cbedb-6637-4d7c-86d0-70d962459856
 keywords:
 - video miniport drivers WDK Windows 2000 , graphics
 - architecture WDK video miniport
-ms.date: 04/20/2017
+ms.date: 12/06/2018
 ms.localizationpriority: medium
+ms.custom: seodec18
 ---
 
-# Video Miniport Driver Within the Graphics Architecture (Windows 2000 Model)
-
-
-## <span id="ddk_video_miniport_driver_within_the_graphics_architecture_windows_200"></span><span id="DDK_VIDEO_MINIPORT_DRIVER_WITHIN_THE_GRAPHICS_ARCHITECTURE_WINDOWS_200"></span>
-
+# Video Miniport Driver in the Graphics Architecture (Windows 2000 Model)
 
 The following figure shows the video miniport driver within the NT-based operating system graphics subsystem.
 

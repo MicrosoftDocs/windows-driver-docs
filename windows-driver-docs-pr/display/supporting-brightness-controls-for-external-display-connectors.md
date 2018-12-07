@@ -1,12 +1,13 @@
 ---
-title: Supporting Brightness Controls For External Display Connectors
-description: Supporting Brightness Controls For External Display Connectors
+title: Brightness Controls For External Display Connectors
+description: This feature only allows OEMs to indicate to Windows that an external connector display supports brightness control.
 keywords: ["brightness WDK display", "ACPI-based brightness hot-keys WDK display", "notifying brightness hot keys WDK display", "BIOS brightness control WDK display", "automatic brightness WDK display"]
+ms.date: 12/06/2018
 ms.localizationpriority: medium
-ms.date: 11/28/2018
+ms.custom: seodec18
 ---
 
-# Supporting Brightness Controls For External Display Connectors
+# Brightness Controls For External Display Connectors
 
 Some OEM systems have internal displays that are connected using external connectors such as HDMI. For those configurations, Windows has the ability to designate exactly one display panel to support the system software brightness control.
 This feature only allows OEMs to indicate to Windows that an external connector display supports brightness control; OEMs must still implement the hardware brightness control and integrate that with the graphics driver as they would for an [integrated connector display](https://docs.microsoft.com/windows-hardware/drivers/display/supporting-brightness-controls-on-integrated-display-panels). This feature also does not support the ability to control the individual panel brightness on multiple display panels.

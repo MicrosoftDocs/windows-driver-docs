@@ -10,7 +10,7 @@ keywords:
 - video present networks WDK display , interfaces
 - VidPN WDK display , interfaces
 - sub-objects WDK video present network
-ms.date: 04/20/2017
+ms.date: 10/30/2018
 ms.localizationpriority: medium
 ---
 
@@ -18,6 +18,8 @@ ms.localizationpriority: medium
 
 
 The video present network (VidPN) manager uses a VidPN object to maintain information about associations between video present sources, video present targets, and display modes. For more information, see the [Introduction to Video Present Networks](introduction-to-video-present-networks.md) topic.
+
+## VidPN object
 
 A VidPN object contains the following sub-objects.
 
@@ -28,6 +30,10 @@ A VidPN object contains the following sub-objects.
 -   Target mode set
 
 -   Monitor source mode set
+
+-   Monitor frequency range set
+
+-   Monitor descriptor set
 
 -   Path
 
@@ -62,25 +68,25 @@ The blue objects in the diagram are accessed through handles and interfaces, and
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>VidPN</p></td>
+<td align="left"><p>VidPN (VidPN Interface)</p></td>
 <td align="left"><p>Accessed through handle and interface.</p>
 <p>D3DKMDT_HVIDPN</p>
 <p><a href="https://msdn.microsoft.com/library/windows/hardware/ff562108" data-raw-source="[&lt;strong&gt;DXGK_VIDPN_INTERFACE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff562108)"><strong>DXGK_VIDPN_INTERFACE</strong></a></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Topology</p></td>
+<td align="left"><p>Topology (VidPN Topology Interface)</p></td>
 <td align="left"><p>Accessed through handle and interface.</p>
 <p>D3DKMDT_HVIDPNTOPOLOGY</p>
 <p><a href="https://msdn.microsoft.com/library/windows/hardware/ff562091" data-raw-source="[&lt;strong&gt;DXGK_VIDPNTOPOLOGY_INTERFACE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff562091)"><strong>DXGK_VIDPNTOPOLOGY_INTERFACE</strong></a></p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>Source mode set</p></td>
+<td align="left"><p>Source mode set (VidPN Source Mode Set Interface)</p></td>
 <td align="left"><p>Accessed through handle and interface.</p>
 <p>D3DKMDT_HVIDPNSOURCEMODESET</p>
 <p><a href="https://msdn.microsoft.com/library/windows/hardware/ff562073" data-raw-source="[&lt;strong&gt;DXGK_VIDPNSOURCEMODESET_INTERFACE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff562073)"><strong>DXGK_VIDPNSOURCEMODESET_INTERFACE</strong></a></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Target mode set</p></td>
+<td align="left"><p>Target mode set (VidPN Target Mode Set Interface)</p></td>
 <td align="left"><p>Accessed through handle and interface.</p>
 <p>D3DKMDT_HVIDPNTARGETMODESET</p>
 <p><a href="https://msdn.microsoft.com/library/windows/hardware/ff562082" data-raw-source="[&lt;strong&gt;DXGK_VIDPNTARGETMODESET_INTERFACE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff562082)"><strong>DXGK_VIDPNTARGETMODESET_INTERFACE</strong></a></p></td>
@@ -121,10 +127,20 @@ The blue objects in the diagram are accessed through handles and interfaces, and
 <td align="left"><p>Accessed through structure pointer.</p>
 <p><a href="https://msdn.microsoft.com/library/windows/hardware/ff546133" data-raw-source="[&lt;strong&gt;D3DKMDT_MONITOR_SOURCE_MODE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff546133)"><strong>D3DKMDT_MONITOR_SOURCE_MODE</strong></a></p></td>
 </tr>
+<tr class="even">
+<td align="left"><p>Monitor frequency range set</p></td>
+<td align="left"><p>Accessed through structure pointer.</p>
+<p>[<strong>DXGK_MONITORFREQUENCYRANGESET_INTERFACE </strong>](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/ns-d3dkmddi-_dxgk_monitorfrequencyrangeset_interface)</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>Monitor descriptor set</p></td>
+<td align="left"><p>Accessed through structure pointer.</p>
+<p>[<strong>DXGK_MONITORDESCRIPTORSET_INTERFACE</strong>](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/ns-d3dkmddi-_dxgk_monitordescriptorset_interface)</p></td>
+</tr>
 </tbody>
 </table>
 
- 
+## VidPN Manager
 
 The VidPN manager, which is one of the components of the DirectX graphics kernel subsystem, cooperates with the display miniport driver to build and maintain VidPNs. The following steps describe how the display miniport driver obtains a handle and an interface to a VidPN object.
 
@@ -153,11 +169,11 @@ Note that two of the functions in the preceding list have corresponding function
 
 After the display miniport driver obtains a handle and an interface to one of a VidPNs primary sub-objects, it can call the interface functions to get descriptors of objects related to the sub-object. For example, given a handle and an interface to a topology object, the display miniport driver could perform the following steps to get descriptors of all the paths in topology.
 
-1.  [VidPN Topology interface](https://msdn.microsoft.com/library/windows/hardware/ff570560)
+1.  [VidPN Topology interface](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/ns-d3dkmddi-_dxgk_vidpntopology_interface)
 
     Call the [*pfnAcquireFirstPathInfo*](https://msdn.microsoft.com/library/windows/hardware/ff562092) function of the VidPN topology interface to obtain a pointer to a [**D3DKMDT\_VIDPN\_PRESENT\_PATH**](https://msdn.microsoft.com/library/windows/hardware/ff546647) structure that describes the first path in the topology.
 
-2.  [VidPN Topology interface](https://msdn.microsoft.com/library/windows/hardware/ff570560)
+2.  [VidPN Topology interface](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/ns-d3dkmddi-_dxgk_vidpntopology_interface)
 
     Call the [*pfnAcquireNextPathInfo*](https://msdn.microsoft.com/library/windows/hardware/ff562093) function repeatedly to obtain pointers to D3DKMDT\_VIDPN\_PRESENT\_PATH structures that describe the remaining paths in the topology.
 
@@ -171,29 +187,26 @@ Similarly, the display miniport driver can get descriptors of the modes in a mod
 
 Note that the [**DXGK\_VIDPNSOURCEMODESET\_INTERFACE**](https://msdn.microsoft.com/library/windows/hardware/ff562073) interface has no function for removing a mode from a source mode set. When the display miniport driver needs to update a source mode set, it does not alter an existing mode set by adding and removing modes. Instead, it creates a new mode set that replaces the old mode set. An example of a function that must update mode sets is the display miniport driver's [*DxgkDdiEnumVidPnCofuncModality*](https://msdn.microsoft.com/library/windows/hardware/ff559649) function. The steps involved in updating a source mode set are as follows:
 
-1.  [VidPN Source Mode Set interface](https://msdn.microsoft.com/library/windows/hardware/ff570558)
-
-    Call the [*pfnCreateNewModeInfo*](https://msdn.microsoft.com/library/windows/hardware/ff562078) of the [**DXGK\_VIDPNSOURCEMODESET\_INTERFACE**](https://msdn.microsoft.com/library/windows/hardware/ff562073) interface to get a pointer to a [**D3DKMDT\_VIDPN\_SOURCE\_MODE**](https://msdn.microsoft.com/library/windows/hardware/ff546724) structure (allocated by the VidPN manager).
+1.  Call the [*pfnCreateNewModeInfo*](https://msdn.microsoft.com/library/windows/hardware/ff562078) of the [**DXGK\_VIDPNSOURCEMODESET\_INTERFACE**](https://msdn.microsoft.com/library/windows/hardware/ff562073) interface to get a pointer to a [**D3DKMDT\_VIDPN\_SOURCE\_MODE**](https://msdn.microsoft.com/library/windows/hardware/ff546724) structure (allocated by the VidPN manager).
 
     Call [*pfnAddMode*](https://msdn.microsoft.com/library/windows/hardware/ff562077) repeatedly to add modes to the source mode set.
 
-2.  [VidPN interface](https://msdn.microsoft.com/library/windows/hardware/ff570556)
-
-    Call the [*pfnAssignSourceModeSet*](https://msdn.microsoft.com/library/windows/hardware/ff562840) function of the [**DXGK\_VIDPN\_INTERFACE**](https://msdn.microsoft.com/library/windows/hardware/ff562108) to assign the new mode set to a particular video present source. The new source mode set replaces the source mode set that is currently assigned to that source.
+2.  Call the [*pfnAssignSourceModeSet*](https://msdn.microsoft.com/library/windows/hardware/ff562840) function of the [**DXGK\_VIDPN\_INTERFACE**](https://msdn.microsoft.com/library/windows/hardware/ff562108) to assign the new mode set to a particular video present source. The new source mode set replaces the source mode set that is currently assigned to that source.
 
 Updating a target mode set is similar to updating a source mode set. The [**DXGK\_VIDPNTARGETMODESET\_INTERFACE**](https://msdn.microsoft.com/library/windows/hardware/ff562082) interface has the following functions:
 
--   [VidPN Target Mode Set interface](https://msdn.microsoft.com/library/windows/hardware/ff570559)
+-   [VidPN Target Mode Set interface](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmdt/ns-d3dkmdt-_d3dkmdt_vidpn_target_mode)
 
     A [*pfnCreateNewModeInfo*](https://msdn.microsoft.com/library/windows/hardware/ff562087) function for creating a new target mode set and a [*pfnAddMode*](https://msdn.microsoft.com/library/windows/hardware/ff562086) function for adding modes to the set.
 
 There is no interface (set of functions) for obtaining the source and target that belong to a particular path. The display miniport driver can determine which source and target belong to a particular path by inspecting the **VidPnSourceId** and **VidPnTargetId** members of the [**D3DKMDT\_VIDPN\_PRESENT\_PATH**](https://msdn.microsoft.com/library/windows/hardware/ff546647) structure that represents the path.
 
- 
+## See also
 
- 
+[Determining Whether a VidPN is Supported on a Display Adapter](determining-whether-a-vidpn-is-supported-on-a-display-adapter.md)
 
+[Enumerating Cofunctional VidPN Source and Target Modes](enumerating-cofunctional-vidpn-source-and-target-modes.md)
 
+[Video Present Network Terminology](video-present-network-terminology.md)
 
-
-
+[Obtaining Additional Monitor Target Modes](obtaining-additional-monitor-target-modes.md)

@@ -1,5 +1,5 @@
 ---
-title: Implementation Tips and Requirements for Windows Display Driver Model (WDDM)
+title: Tips and Requirements - Windows Display Driver Model (WDDM)
 description: Implementation Tips and Requirements for the Windows Display Driver Model (WDDM)
 ms.assetid: 32674048-ef91-437e-977e-f64e1b28e42a
 keywords:
@@ -7,14 +7,13 @@ keywords:
 - Windows Vista display driver model WDK , tips
 - display driver model WDK Windows Vista , requirements
 - Windows Vista display driver model WDK , requirements
-ms.date: 04/20/2017
+ms.date: 12/06/2018
 ms.localizationpriority: medium
+ms.custom: seodec18
 ---
 
-# Implementation Tips and Requirements for the Windows Display Driver Model (WDDM)
+# Tips and Requirements for the Windows Display Driver Model (WDDM)
 
-
-## <span id="ddk_implementation_tips_and_requirements_for_the_display_driver_model_"></span><span id="DDK_IMPLEMENTATION_TIPS_AND_REQUIREMENTS_FOR_THE_DISPLAY_DRIVER_MODEL_"></span>
 
 
 These topics discuss tips and requirements for implementing Windows Display Driver Model (WDDM) user-mode drivers and display miniport drivers:

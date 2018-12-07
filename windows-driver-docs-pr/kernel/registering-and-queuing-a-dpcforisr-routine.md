@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-A driver registers a [*DpcForIsr*](https://msdn.microsoft.com/library/windows/hardware/ff544079) routine for a device object by calling [**IoInitializeDpcRequest**](https://msdn.microsoft.com/library/windows/hardware/ff549307) after it has created the device object. The driver can make this call from its [*AddDevice*](https://msdn.microsoft.com/library/windows/hardware/ff540521) routine, or from [*DispatchPnP*](https://msdn.microsoft.com/library/windows/hardware/ff543341) code that handles [**IRP\_MN\_START\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551749) requests.
+A driver registers a [*DpcForIsr*](https://msdn.microsoft.com/library/windows/hardware/ff544079) routine for a device object by calling [**IoInitializeDpcRequest**](https://msdn.microsoft.com/library/windows/hardware/ff549307) after it has created the device object. The driver can make this call from its [*AddDevice*](https://msdn.microsoft.com/library/windows/hardware/ff540521) routine, or from [*DispatchPnP*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) code that handles [**IRP\_MN\_START\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551749) requests.
 
 To queue the *DpcForIsr* routine for execution, the driver's ISR calls [**IoRequestDpc**](https://msdn.microsoft.com/library/windows/hardware/ff549657) just before it returns. The following figure illustrates calls to these routines.
 

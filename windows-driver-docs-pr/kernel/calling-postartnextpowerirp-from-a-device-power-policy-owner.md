@@ -32,7 +32,7 @@ Beginning with Windows Vista, calling [**PoStartNextPowerIrp**](https://msdn.mic
 <tr class="odd">
 <td><p><strong>IRP_MN_QUERY_POWER</strong> (device power state)</p></td>
 <td><p>In an <a href="https://msdn.microsoft.com/library/windows/hardware/ff548354" data-raw-source="[&lt;em&gt;IoCompletion&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff548354)"><em>IoCompletion</em></a> routine, immediately before returning.</p></td>
-<td><p>In <a href="https://msdn.microsoft.com/library/windows/hardware/ff543354" data-raw-source="[&lt;em&gt;DispatchPower&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff543354)"><em>DispatchPower</em></a> routine, before calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff548343" data-raw-source="[&lt;strong&gt;IoCompleteRequest&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff548343)"><strong>IoCompleteRequest</strong></a>.</p></td>
+<td><p>In <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch" data-raw-source="[&lt;em&gt;DispatchPower&lt;/em&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch)"><em>DispatchPower</em></a> routine, before calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff548343" data-raw-source="[&lt;strong&gt;IoCompleteRequest&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff548343)"><strong>IoCompleteRequest</strong></a>.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>IRP_MN_QUERY_POWER</strong> (system power state)</p></td>

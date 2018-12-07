@@ -1,19 +1,16 @@
 ---
-title: Reporting Support for Programmable Vertex Processing Hardware
-description: Reporting Support for Programmable Vertex Processing Hardware
+title: Reporting Support for Programmable Vertex Shader Hardware
+description: For a DirectX 8.0 level driver to report support for programmable vertex shader hardware, it must set the VertexShaderVersion field of the D3DCAPS8 structure to a valid, nonzero vertex shader version number.
 ms.assetid: c77dae52-ed7c-4385-b085-df3e16e53c5e
 keywords:
 - vertex shaders WDK DirectX 8.0 , programmable hardware
 - programmable vertex processing hardware WDK DirectX 8.0
-ms.date: 04/20/2017
+ms.date: 12/06/2018
 ms.localizationpriority: medium
+ms.custom: seodec18
 ---
 
-# Reporting Support for Programmable Vertex Processing Hardware
-
-
-## <span id="ddk_reporting_support_for_programmable_vertex_processing_hardware_gg"></span><span id="DDK_REPORTING_SUPPORT_FOR_PROGRAMMABLE_VERTEX_PROCESSING_HARDWARE_GG"></span>
-
+# Reporting Support for Programmable Vertex Shader Hardware
 
 For a DirectX 8.0 level driver to report support for programmable vertex shader hardware it must set the **VertexShaderVersion** field of the D3DCAPS8 structure to a valid, nonzero vertex shader version number. The **VertexShaderVersion** is a DWORD where the most significant word must have the value 0xFFFE and the least significant word holds the actual version number. The least significant byte of this word holds the minor version number and the most significant byte holds the major version number. Because the format of this DWORD is complex, the driver must set the value of **VertexShaderVersion** using the macro D3DVS\_VERSION defined in *d3d8types.h*. For example, the following code fragment sets the **VertexShaderVersion** to indicate support for 1.0 level functionality.
 

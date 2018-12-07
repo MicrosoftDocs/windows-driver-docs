@@ -1,20 +1,17 @@
 ---
-title: Initializing Communication with the Direct3D User-Mode Display Driver
+title: Initializing D3D User-Mode Display Driver Communications
 description: Initializing Communication with the Direct3D User-Mode Display Driver
 ms.assetid: 96e85df4-e340-4017-b348-7c24349ffe69
 keywords:
 - user-mode display drivers WDK Windows Vista , initializing
 - Direct3D WDK display
 - user-mode display drivers WDK Windows Vista , Direct3D
-ms.date: 04/20/2017
+ms.date: 12/06/2018
 ms.localizationpriority: medium
+ms.custom: seodec18
 ---
 
 # Initializing Communication with the Direct3D User-Mode Display Driver
-
-
-## <span id="ddk_initializing_communication_with_the_direct3d__user_mode_display_dr"></span><span id="DDK_INITIALIZING_COMMUNICATION_WITH_THE_DIRECT3D__USER_MODE_DISPLAY_DR"></span>
-
 
 To initialize communication with the Microsoft Direct3D user-mode display driver, which is a dynamic-link library (DLL), the Direct3D runtime first loads the DLL. The Direct3D runtime next calls the user-mode display driver's [**OpenAdapter**](https://msdn.microsoft.com/library/windows/hardware/ff568601) function through the DLL's export table to open an instance of the graphics adapter. The *OpenAdapter* function is the DLL's only exported function.
 

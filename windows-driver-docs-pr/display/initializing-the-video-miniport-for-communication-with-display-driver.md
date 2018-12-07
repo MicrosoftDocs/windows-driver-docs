@@ -1,5 +1,5 @@
 ---
-title: Initializing the Video Miniport for Communication with Display Driver
+title: Initializing Video Miniport/Display Driver Communications
 description: Initializing the Video Miniport for Communication with Display Driver
 ms.assetid: 73ba423c-7ebc-4a07-aed0-d2e33f11b878
 keywords:
@@ -7,15 +7,12 @@ keywords:
 - initializing video miniport drivers
 - HwVidInitialize
 - one-time initialization WDK video miniport
-ms.date: 04/20/2017
+ms.date: 12/06/2018
 ms.localizationpriority: medium
+ms.custom: seodec18
 ---
 
 # Initializing the Video Miniport for Communication with Display Driver
-
-
-## <span id="ddk_initializing_the_video_miniport_for_communication_with_display_dri"></span><span id="DDK_INITIALIZING_THE_VIDEO_MINIPORT_FOR_COMMUNICATION_WITH_DISPLAY_DRI"></span>
-
 
 For each adapter found by the PnP manager and successfully configured by the miniport driver, the miniport driver's [*HwVidInitialize*](https://msdn.microsoft.com/library/windows/hardware/ff567345) function is called when the corresponding display driver is loaded. *HwVidInitialize* can initialize software state information, but it should not set up visible state on the adapter. On return from *HwVidInitialize*, the adapter should be set to the same state as on return from the miniport driver's [*HwVidResetHw*](https://msdn.microsoft.com/library/windows/hardware/ff567363) routine. For more information about *HwVidResetHw*, see [Resetting the Adapter in Video Miniport Drivers](resetting-the-adapter-in-video-miniport-drivers.md).
 

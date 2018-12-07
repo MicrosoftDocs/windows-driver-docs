@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-The higher-level driver of a class/port pair can sometimes complete IRPs in its [*DispatchDeviceControl*](https://msdn.microsoft.com/library/windows/hardware/ff543287) routine. For example a class driver could, during initialization, gather and store information about the features of the underlying device, which might be sought in a subsequent [**IRP\_MJ\_DEVICE\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff550744) request, and thus save processing time by satisfying the request without passing it on to the underlying device driver. A class driver might also be designed to check the IRP's parameters and send only requests with valid parameters to the port driver.
+The higher-level driver of a class/port pair can sometimes complete IRPs in its [*DispatchDeviceControl*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine. For example a class driver could, during initialization, gather and store information about the features of the underlying device, which might be sought in a subsequent [**IRP\_MJ\_DEVICE\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff550744) request, and thus save processing time by satisfying the request without passing it on to the underlying device driver. A class driver might also be designed to check the IRP's parameters and send only requests with valid parameters to the port driver.
 
 Closely coupled class/port drivers also can define a set of driver-specific or device-specific internal I/O control codes that the class driver can use for [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff550766) requests to the port driver.
 

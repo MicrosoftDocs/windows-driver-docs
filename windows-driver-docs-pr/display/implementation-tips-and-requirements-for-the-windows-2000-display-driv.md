@@ -1,15 +1,16 @@
 ---
-title: Implementation Tips and Requirements for the Windows 2000 Display Driver Model
+title: Tips and Requirements - Windows 2000 Display Driver Model
 description: Implementation Tips and Requirements for the Windows 2000 Display Driver Model
 ms.assetid: 8474a8bd-621c-421c-b3d5-4fc1b6c91354
-ms.date: 04/20/2017
+ms.date: 12/06/2018
 ms.localizationpriority: medium
+ms.custom: seodec18
 ---
 
-# Implementation Tips and Requirements for the Windows 2000 Display Driver Model
+# Tips and Requirements for the Windows 2000 Display Driver Model
 
 
-The following topics discuss tips and requirements for implementing display and video miniport drivers:
+The following topics discuss tips and requirements for implementing display and video miniport drivers in Windows 2000:
 
 [Exception Handling When Accessing User-Mode Memory](exception-handling-when-accessing-user-mode-memory.md)
 
