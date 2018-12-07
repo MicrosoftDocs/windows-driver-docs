@@ -60,7 +60,7 @@ Requirements
 
 [*DRIVER_DISPATCH*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch)
 
-[*DispatchCreateClose*](https://msdn.microsoft.com/library/windows/hardware/ff543270)
+[*DispatchCreateClose*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch)
 
 [**IO\_SECURITY\_CONTEXT**](https://msdn.microsoft.com/library/windows/hardware/ff550613)
 

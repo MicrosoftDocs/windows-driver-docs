@@ -83,7 +83,7 @@ In response to **IRP\_MN\_SURPRISE\_REMOVAL**, a driver must do the following, i
 
     -   Set up the next stack location with [**IoSkipCurrentIrpStackLocation**](https://msdn.microsoft.com/library/windows/hardware/ff550355) and pass the IRP to the next lower driver with [**IoCallDriver**](https://msdn.microsoft.com/library/windows/hardware/ff548336).
 
-    -   Propagate the status from **IoCallDriver** as the return status from the [*DispatchPnP*](https://msdn.microsoft.com/library/windows/hardware/ff543341) routine.
+    -   Propagate the status from **IoCallDriver** as the return status from the [*DispatchPnP*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine.
 
     -   Do not complete the IRP.
 
