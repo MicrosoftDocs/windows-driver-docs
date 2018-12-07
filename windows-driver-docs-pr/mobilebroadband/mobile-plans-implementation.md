@@ -27,7 +27,8 @@ For more info about Web portal flow and reference design, see [Web portal flow a
 
 The Mobile Plans app uses the [WebView](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.WebView) control to host the MO Direct experience. The app only trusts content returned by the *Mobile Plans* service.
 
-When starting the WebView, the *eid*, *market*, *location*, *imei*, and *transactionId* parameters are passed to the MO web portal. If the *MSISDN* is available, *countryCode* and previous ICCIDs are passed to the portal as well. 
+When starting the WebView, the *eid*, *market*, *location*, *imei*, and *transactionId* parameters are passed to the MO web portal. If there is at least an eSIM profile matching the Mobile Operator, which Mobile Plans is reaching, the *iccids* are passed to the portal as well.
+
 
 The following example shows these launch parameters for eSIM, embedded in the call to `MyWebView.Navigate()`.
 
@@ -40,7 +41,7 @@ allowedUris.AddRange(AllowedNotifyUris);
 
 MyWebView.AllowedScriptNotifyUris = allowedUris;
 
-MyWebView.Navigate(“https://moportal.com?market=US&location=US&transactionId=%2F7RBTuSJt02OZbX8.4&eid=89033023422130000000000199055797&imei=001102000315468&countryCode=US&phoneNumber=1234567&iccids=8988247000101867183,8988247000103824828”);
+MyWebView.Navigate(“https://moportal.com?market=US&location=US&transactionId=%2F7RBTuSJt02OZbX8.4&eid=89033023422130000000000199055797&imei=001102000315468&iccids=8988247000101867183,8988247000103824828”);
 ```
 
 The next example shows the launch parameters for a physical SIM: *market*, *location*, *imei*, *iccid*, and *transactionId*. Previous lines of code have been left out for brevity.
@@ -51,21 +52,19 @@ The next example shows the launch parameters for a physical SIM: *market*, *loca
 MyWebView.Navigate(“https://moportal.com?iccid=8988247000100003319&imei=001102000311608&market=us&transactionId=waoigFfX00yGH3Vb.1&location=us”);
 ```
 
-The Web Service API must disregard any additional parameters it might receive from the Mobile Plans app. This provides flexibility for introducing new features without breaking the *Mobile Plans* experience. If new parameters are implemented, partners will be informed of new parameters in advance.
+The Web Service API must disregard any additional parameters it might receive from the Mobile Plans app. This provides flexibility for introducing new features without breaking the *Mobile Plans* experience. Please check the documentation frequently to learn about new features.
 
 The following table describes the launch parameters available for eSIM and physical SIMs.
 
 | Parameter name | Description | Example |
 | --- | --- | --- |
 | eid | The eSIM Identifier. This is sent only if an eSIM is present. | `eid= 89033024010400000100000000009136` |
-| iccid | Required parameter for a physical SIM. Optional parameter for eSIM. Specifies the available ICCIDs on the physical sim. | `iccid=8988247000100003319` |
+| iccid | Required parameter for a physical SIM. Specifies the ICCID on the physical sim. | `iccid=8988247000100003319` |
 | iccids | Optional parameter. Specifies the list of ICCIDs from the available profile on an eSIM only. If there are no ICCID’s matching the MO available on the eSIM, this parameter is not sent. | `iccids=8988247000100003319, 988247000100003555` |
 | imei | The device's IMEI number. | `imei=001201234567890` |
 | location | The user’s current physical location with country-level granularity. | `location=us` | 
 | transactionId | The Transaction ID used for debugging the session. Providers should log this and send it in the notification payload. Maximum size is 64 characters.	| `transactionId=waoigFfX00yGH3Vb.1` |
 | market | The two-letter ISO code of the region settings in the PC. | `market=us` |
-| phoneNumber | The phone number entered by the user when the Mobile Plans app is first launched. This parameter is provided if available. | `phoneNumber=1234567` |
-| countryCode | The country code that represents the country that *phoneNumber* belongs to, in two-letter ISO format. This parameter is provided if available. | `countryCode=US` |
 
 The user’s language preference is sent using the Accept-Language header, described in the following table.
 
@@ -73,17 +72,19 @@ The user’s language preference is sent using the Accept-Language header, descr
 | --- | --- | --- |
 | Accept-Language | The user’s current language settings. The MO portal should render the contents in the specified language if possible. For more information, see [RFC 7231, section 5.3.5: Accept-Language](https://tools.ietf.org/html/rfc7231#section-5.3.5).| `Accept-Language: en-us` |
 
-## MO Direct flow diagrams
+## Mobile Plans flow diagrams
 
-The following high-level flow diagram for eSIM MO Direct illustrates a scenario where the user doesn’t have an MO profile installed and is purchasing a plan from the MO portal.
+The following flow diagram, illustrates a scenario where the user doesn’t have an eSIM profile installed or active in the eUICC and is purchasing a plan from the Mobile Operator portal.
 
 <img src="images/dynamo_implementation_mo_direct_flow_no_profile.png" alt="MO Direct flow where user has no MO profile" title="MO Direct flow where user has no MO profile" width="800" />
 
-The following diagram shows the high-level flow for MO Direct when the user has a eSIM profile or is using a physical SIM in their device.
+The following diagram shows the flow when the user has a eSIM profile active or is using a physical SIM in their device.
 
 <img src="images/dynamo_implementation_mo_direct_flow_with_sim.png" alt="MO Direct flow where user has an eSIM or physical SIM" title="MO Direct flow where user has an eSIM or physical SIM" width="400" />
 
 ## Control handoff to the Mobile Plans app
+
+> **_TODO check if I should link this to a page with all the current supported callbacks_**
 
 After the user completes the MO portal flow, the MO portal must return control to the Mobile Plans app. This is done by issuing a notification to the app with the result of the user interaction with the MO portal. 
 
@@ -162,6 +163,8 @@ The following table describes each field in the JSON payload of the notification
 | line | Enum | This field is required. <p>Possible values:</p><ul><li>New: Indicates that a SIM card was added by the user account.</li><li>Existing: Indicates that the transferred an existing line to the device.</li><li>Bailed: Indicates that the user ended the purchase flow at this step.</li><li>None: Indicates that the user didn’t reach this step.</li></ul> | `“line”:”New”` |
 | moDirectStatus | Enum | This field is required. <p>Possible values:</p><ul><li>Complete: Indicates that the user completed the purchase successfully.</li><li>ServiceError: Indicates that the user was unable to complete the purchase due to an MO service error.</li><li>InvalidSIM: Indicates that the ICCID passed to the portal was incorrect.</li><li>LogOnFailed: Indicates that the user failed to log in to the MO portal.</li><li>PurchaseFailed: Indicates that the purchase failed due to a billing error.</li><li>ClientError: Indicates that invalid arguments were passed to the portal.</li><li>None: Indicates that the user ended the transaction without a specific error.</li></ul> | `“moDirectStatus”:”Complete”` |
 | planName | String | For a successful transaction, this field must not be empty and must provide a descriptive plan name. For an unsuccessful transaction, this field must be an empty string. | `“planName”:”prepaid_3GperMonth”` |
+
+> **_END of TODO_**
 
 ## Web portal design policies
 
