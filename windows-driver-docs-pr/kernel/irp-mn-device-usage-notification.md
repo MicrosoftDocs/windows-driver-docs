@@ -98,7 +98,7 @@ When any of a driver's special file counts is nonzero, the driver must support t
 
 For a **DeviceUsageTypePaging** file created on its device, a driver must do the following:
 
--   Lock code in memory for its [*DispatchRead*](https://msdn.microsoft.com/library/windows/hardware/ff543376), [*DispatchWrite*](https://msdn.microsoft.com/library/windows/hardware/ff544034), [*DispatchDeviceControl*](https://msdn.microsoft.com/library/windows/hardware/ff543287), and [*DispatchPower*](https://msdn.microsoft.com/library/windows/hardware/ff543354) routines.
+-   Lock code in memory for its [*DispatchRead*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch), [*DispatchWrite*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch), [*DispatchDeviceControl*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch), and [*DispatchPower*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routines.
 
 -   Clear the DO\_POWER\_PAGABLE bit in its device object for the device (on the IRP's way up the device stack).
 
@@ -155,13 +155,13 @@ Requirements
 ## See also
 
 
-[*DispatchDeviceControl*](https://msdn.microsoft.com/library/windows/hardware/ff543287)
+[*DispatchDeviceControl*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch)
 
-[*DispatchPower*](https://msdn.microsoft.com/library/windows/hardware/ff543354)
+[*DispatchPower*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch)
 
-[*DispatchRead*](https://msdn.microsoft.com/library/windows/hardware/ff543376)
+[*DispatchRead*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch)
 
-[*DispatchWrite*](https://msdn.microsoft.com/library/windows/hardware/ff544034)
+[*DispatchWrite*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch)
 
 [**IoAdjustPagingPathCount**](https://msdn.microsoft.com/library/windows/hardware/ff548209)
 

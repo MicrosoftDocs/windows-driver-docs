@@ -17,7 +17,7 @@ The [remove lock routines](https://msdn.microsoft.com/library/windows/hardware/f
 
 A driver can use this mechanism for two purposes:
 
-1.  To ensure that the driver's [*DispatchPnP*](https://msdn.microsoft.com/library/windows/hardware/ff543341) routine will not complete an [**IRP\_MN\_REMOVE\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551738) request while the lock is held (for example, while another driver routine is accessing the device).
+1.  To ensure that the driver's [*DispatchPnP*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine will not complete an [**IRP\_MN\_REMOVE\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551738) request while the lock is held (for example, while another driver routine is accessing the device).
 
 2.  To count the number of reasons why the driver should not delete its device object, and to set an event when that count goes to zero.
 

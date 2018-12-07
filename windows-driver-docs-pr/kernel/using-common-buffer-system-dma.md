@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-A driver that uses a system DMA controller's auto-initialize mode must allocate memory for a buffer into which or from which DMA transfers can be carried out. The driver calls [**AllocateCommonBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff540575) to get this buffer, typically from the [*DispatchPnP*](https://msdn.microsoft.com/library/windows/hardware/ff543341) routine that handles an [**IRP\_MN\_START\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551749) request. The following figure shows how a driver allocates the buffer and maps its virtual address range to system physical memory.
+A driver that uses a system DMA controller's auto-initialize mode must allocate memory for a buffer into which or from which DMA transfers can be carried out. The driver calls [**AllocateCommonBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff540575) to get this buffer, typically from the [*DispatchPnP*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine that handles an [**IRP\_MN\_START\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551749) request. The following figure shows how a driver allocates the buffer and maps its virtual address range to system physical memory.
 
 ![diagram illustrating how a driver allocates a common buffer for system dma](images/3hlsysbf.png)
 

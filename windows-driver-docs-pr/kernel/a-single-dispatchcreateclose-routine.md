@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 Many drivers, particularly lower-level drivers in a chain of layered drivers, merely need to establish their existence on receipt of a *create* request and merely need to acknowledge the receipt of a *close* request.
 
-For example, a port driver for a device controller with one or more closely coupled class drivers that call [**IoGetDeviceObjectPointer**](https://msdn.microsoft.com/library/windows/hardware/ff549198) might have a minimal [*DispatchCreateClose*](https://msdn.microsoft.com/library/windows/hardware/ff543270) routine. The routine might do nothing more than complete the IRP as follows:
+For example, a port driver for a device controller with one or more closely coupled class drivers that call [**IoGetDeviceObjectPointer**](https://msdn.microsoft.com/library/windows/hardware/ff549198) might have a minimal [*DispatchCreateClose*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine. The routine might do nothing more than complete the IRP as follows:
 
 ```cpp
     :    : 

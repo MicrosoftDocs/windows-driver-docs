@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 When removing a device, a function driver must undo any operations it performed to add and start the device. This discussion includes function drivers for peripheral devices and function drivers for bus devices.
 
-A function driver removes a device using a procedure such as the following in its [*DispatchPnP*](https://msdn.microsoft.com/library/windows/hardware/ff543341) routine:
+A function driver removes a device using a procedure such as the following in its [*DispatchPnP*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine:
 
 1. Is this a function driver for a bus device?
 
@@ -63,7 +63,7 @@ A function driver removes a device using a procedure such as the following in it
 
 11. Free the FDO with [**IoDeleteDevice**](https://msdn.microsoft.com/library/windows/hardware/ff549083).
 
-12. Return from the [*DispatchPnP*](https://msdn.microsoft.com/library/windows/hardware/ff543341) routine, propagating the return status from **IoCallDriver**.
+12. Return from the [*DispatchPnP*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine, propagating the return status from **IoCallDriver**.
 
 A function driver does not specify an [*IoCompletion*](https://msdn.microsoft.com/library/windows/hardware/ff548354) routine for a remove IRP, nor does it complete the IRP. Remove IRPs are completed by the parent bus driver.
 

@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # WmiComplete rule (wdm)
 
 
-The **WmiComplete** rule specifies that when processing a [**WMI minor IRP**](https://msdn.microsoft.com/library/windows/hardware/ff566361), the driver calls [**IoCompleteRequest**](https://msdn.microsoft.com/library/windows/hardware/ff548343) before returning from the [**DispatchSystemControl**](https://msdn.microsoft.com/library/windows/hardware/ff543412) routine.
+The **WmiComplete** rule specifies that when processing a [**WMI minor IRP**](https://msdn.microsoft.com/library/windows/hardware/ff566361), the driver calls [**IoCompleteRequest**](https://msdn.microsoft.com/library/windows/hardware/ff548343) before returning from the [**DispatchSystemControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine.
 
 A *WMI minor IRP* is an [**IRP\_MJ\_SYSTEM\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff550813) request with a WMI minor function code.
 

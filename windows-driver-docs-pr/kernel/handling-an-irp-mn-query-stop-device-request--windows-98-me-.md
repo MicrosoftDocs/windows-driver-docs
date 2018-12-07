@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-An [**IRP\_MN\_QUERY\_STOP\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551725) request is handled first by the top driver in the device stack and then by each next lower driver. A driver handles stop IRPs in its [*DispatchPnP*](https://msdn.microsoft.com/library/windows/hardware/ff543341) routine.
+An [**IRP\_MN\_QUERY\_STOP\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551725) request is handled first by the top driver in the device stack and then by each next lower driver. A driver handles stop IRPs in its [*DispatchPnP*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine.
 
 In response to an **IRP\_MN\_QUERY\_STOP\_DEVICE**, a driver must do the following:
 
@@ -33,7 +33,7 @@ In response to an **IRP\_MN\_QUERY\_STOP\_DEVICE**, a driver must do the followi
 
 2.  If the device cannot be stopped, fail the query-stop IRP.
 
-    Set **Irp-&gt;IoStatus.Status** to an appropriate error status, call [**IoCompleteRequest**](https://msdn.microsoft.com/library/windows/hardware/ff548343) with IO\_NO\_INCREMENT, and return from the driver's [*DispatchPnP*](https://msdn.microsoft.com/library/windows/hardware/ff543341) routine. Do not pass the IRP to the next lower driver.
+    Set **Irp-&gt;IoStatus.Status** to an appropriate error status, call [**IoCompleteRequest**](https://msdn.microsoft.com/library/windows/hardware/ff548343) with IO\_NO\_INCREMENT, and return from the driver's [*DispatchPnP*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine. Do not pass the IRP to the next lower driver.
 
 3.  If the device can be stopped, call [**IoSetDeviceInterfaceState**](https://msdn.microsoft.com/library/windows/hardware/ff549700) and [**IoRegisterDeviceInterface**](https://msdn.microsoft.com/library/windows/hardware/ff549506) to disable and deregister any user-mode interfaces. Then start failing any incoming I/O requests that require access to the device.
 

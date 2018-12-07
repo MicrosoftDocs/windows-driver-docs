@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-A driver that handles WMI IRPs in its [*DispatchSystemControl*](https://msdn.microsoft.com/library/windows/hardware/ff543412) routine must handle such an IRP only if the device object pointer at **Parameters.WMI.ProviderId** matches the pointer passed by the driver in its call to [**IoWMIRegistrationControl**](https://msdn.microsoft.com/library/windows/hardware/ff550480). Otherwise, the driver must forward the IRP to the next lower driver.
+A driver that handles WMI IRPs in its [*DispatchSystemControl*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine must handle such an IRP only if the device object pointer at **Parameters.WMI.ProviderId** matches the pointer passed by the driver in its call to [**IoWMIRegistrationControl**](https://msdn.microsoft.com/library/windows/hardware/ff550480). Otherwise, the driver must forward the IRP to the next lower driver.
 
 If the driver handles the request, it must:
 
