@@ -63,7 +63,15 @@ Do not display these devices on Itanium-based computers that are running Windows
 <a href="" id="-ntamd64"></a>**.ntamd64**  
 Do not display these devices on x64-based computers that are running Windows XP or later versions of Windows.
 
-For more information about how to use the system-defined **.nt**, **.ntx86**, **.ntia64**, and **.ntamd64** extensions, see [Creating INF Files for Multiple Platforms and Operating Systems](creating-inf-files-for-multiple-platforms-and-operating-systems.md).
+<a href="" id="-ntarm"></a>**.ntarm**  
+Do not display these devices on ARM-based computers that are running Windows XP or later versions of Windows.
+
+<a href="" id="-ntarm64"></a>**.ntarm64**  
+Do not display these devices on ARM64-based computers that are running Windows XP or later versions of Windows.
+
+
+
+For more information about how to use the system-defined **.nt**, **.ntx86**, **.ntia64**, **.ntamd64**, **.ntarm**, and **.ntarm64** extensions, see [Creating INF Files for Multiple Platforms and Operating Systems](creating-inf-files-for-multiple-platforms-and-operating-systems.md).
 
 <a href="" id="copyfilesonly"></a>**CopyFilesOnly**  
 Installs only the INF-specified files for the given devices because the device hardware is not accessible or available yet.
