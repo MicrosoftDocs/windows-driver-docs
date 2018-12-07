@@ -32,6 +32,9 @@ ExcludeFromSelect=device-identification-string[,device-identification-string] ..
 [ExcludeFromSelect.ntx86=device-identification-string[,device-identification-string] ...] | 
 [ExcludeFromSelect.ntia64=device-identification-string[,device-identification-string] ...]  |  (Windows XP and later versions of Windows)
 [ExcludeFromSelect.ntamd64=device-identification-string[,device-identification-string] ...]  |  (Windows XP and later versions of Windows)
+[ExcludeFromSelect.ntarm=device-identification-string[,device-identification-string] ...]  |  (Windows XP and later versions of Windows)
+[ExcludeFromSelect.ntarm64=device-identification-string[,device-identification-string] ...]  |  (Windows XP and later versions of Windows)
+
 [CopyFilesOnly=device-identification-string[,device-identification-string] ...]
 [InteractiveInstall=device-identification-string[,device-identification-string] ... ]
 [RequestAdditionalSoftware=*] | 
