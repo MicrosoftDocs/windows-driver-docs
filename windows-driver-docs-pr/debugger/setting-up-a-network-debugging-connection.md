@@ -3,7 +3,7 @@ title: Setting Up KDNET Network Kernel Debugging Manually
 description: Debugging Tools for Windows supports kernel debugging over a network.
 ms.assetid: B4A79B2E-D4B1-42CA-9121-DEC923C76927
 keywords: ["Network debugging", "Ethernet debugging", "Docking station", "Setting Up Kernel-Mode Debugging over a Network Cable Manually"]
-ms.date: 12/06/2018
+ms.date: 12/07/2018
 ms.localizationpriority: medium
 ---
 
@@ -193,15 +193,19 @@ Note that this may not work if your host computer is not configured to be discov
 
 KDNET on the target computer attempts to use Dynamic Host Configuration Protocol (DHCP) to get a routable IP address for the network adapter that is being used for debugging. If KDNET obtains a DHCP-assigned address, then the target computer can be debugged by host computers located anywhere on the network. If KDNET fails to obtain a DHCP-assigned address, it uses Automatic Private IP Addressing (APIPA) to obtain a local link IP address. Local link IP addresses are not routable, so a host and target cannot use a local link IP address to communicate through a router. In that case, network debugging will work if you plug the host and target computers into the same network hub or switch.
 
-### Specify busparams if target computer has multiple network adapters
+### Always specify busparams when setting up KDNET on a physical machine with a PCI based NIC
 
-If your target computer has more than one network adapter, you must specify the bus, device, and function numbers of the network adapter that you intend to use for debugging. To specify the bus parameters, Open Device Manager, and locate the network adapter that you want to use for debugging. Open the property page for the network adapter, and make a note of the bus number, device number, and function number. In an elevated Command Prompt Window, enter the following command, where *b*, *d*, and *f* are the bus, device and function numbers in decimal format:
+If you are setting up KDNET on a physical machine with a PCI or PCIe based NIC, you should always specify the busparams for the NIC you want to use for KDNET. To specify the bus parameters, Open Device Manager, and locate the network adapter that you want to use for debugging. Open the property page for the network adapter, and make a note of the bus number, device number, and function number. In an elevated Command Prompt Window, enter the following command, where *b*, *d*, and *f* are the bus, device and function numbers in decimal format:
 
 ```console
 bcdedit /set "{dbgsettings}" busparams b.d.f
 ```
 
-When the debugger is running on the host machine, and waiting to connect, reboot the target computer.
+When the debugger is running on the host machine, and waiting to connect, reboot the target computer, using this command.
+
+```console
+shutdown -r -t 0
+```
 
 ## Manually delete BCDEdit entries
 
@@ -209,7 +213,7 @@ Manually deleting is not normally required but is provided here as a troubleshoo
 
 Manually deleting entries is not necessary when using the kdnet utility. For more information, see [Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md).
 
-When you use bcdedit –deletevalue, you must provide a valid bcd element name. For more information, see [BCDEdit /deletevalue](https://docs.microsoft.com/windows-hardware/drivers/devtest/bcdedit--deletevalue)
+When you use bcdedit –deletevalue, you must provide a valid bcd element name. For more information, see [BCDEdit /deletevalue](https://docs.microsoft.com/windows-hardware/drivers/devtest/bcdedit--deletevalue).
 
 To manually delete BCDEdit entries, complete these steps.
 
@@ -237,21 +241,26 @@ When you delete the port entry, KDNET will use the default ICANN registered debu
 
 If you intend to install the Hyper-V role on the target computer, see [Setting Up Network Debugging of a Virtual Machine Host](setting-up-network-debugging-of-a-virtual-machine-host.md).
 
-For information on debugging a hyper-v Virtual Machine (VM), see [Setting Up Network Debugging of a Virtual Machine - KDNET](setting-up-network-debugging-of-a-virtual-machine-host.md)
+For information on debugging a hyper-v Virtual Machine (VM), see [Setting Up Network Debugging of a Virtual Machine - KDNET](setting-up-network-debugging-of-a-virtual-machine-host.md).
 
-### Installing KDNET on the host OS when Hyper-V debugging is enabled
+### Enabling KDNET on a hyper-v host that is running VMs with external network connectivity
 
-There is a specific situation, that is not too common, that can cause some confusion and what will appear as a networking failure. In this scenario:
+There is a specific situation, which is not uncommon, which will cause networking in VMs to stop working:
 
-- Hyper-V has been enabled on the PC and the target VM is configured for debugging.
+- Hyper-V has been enabled on the PC, an external networking switch has been created and is pointed at a physical NIC in the machine, and VMs have been configured to use that external switch for their networking.
 
-- There is a need to configure the host OS to debug Windows that is supporting the VM. To do this, KDNET is configured in the host OS.
+- KDNET is then enabled on the hyper-v host OS using the same physical NIC that is pointed to by the external networking switch, and the host is rebooted.
 
-Because KDNET will need exclusive access to the physical adapter, it will take over all access to the adapter.  When this occurs, the VM will no longer be able to access the network using the configured network adapters. If this occurs and you want to re-enable network access for the VMs, complete these steps.
+- All of the VMs that were using the previously configured external switch, lose their network connectivity after the reboot.
 
-1. Open the Virtual Switch Manager from Hyper-V Manager, select your existing Virtual Switch, and change the external network NIC to the *Microsoft Kernel Debug Network Adapter* by selecting it from the drop down box and then clicking OK in the Virtual Switch Manager dialog box.
+This is by design, and happens because KDNET takes exclusive control over the NIC it is configured to use, and the native NDIS miniport for that NIC is not loaded by the OS.  When this occurs, the external networking switch can no longer communicate with the native NDIS miniport driver, and will stop working.  To work around this situation, do the following:
 
-2. After updating your Virtual Switch NIC, shutdown and restart your VMs.
+1.	Open the Virtual Switch Manager from Hyper-V Manager, select your existing Virtual Switch, and change the external network NIC to the *Microsoft Kernel Debug Network Adapter* by selecting it from the drop down box and then clicking OK in the Virtual Switch Manager dialog box.
+
+2.	After updating your Virtual Switch NIC, shutdown and restart your VMs.
+
+When KDNET debugging is turned off, the same procedure will need to be followed to repoint the external switch back to the native NDIS miniport for the NIC.  Otherwise VM connectivity will be lost when the machine is rebooted after debugging is disabled.
+
 
 ## <span id="IPV6"></span><span id="ipv6"></span><span id="IPv6"></span>IPv6
 
@@ -259,7 +268,7 @@ IPv6 support was added in Windows version 1809.
 
 To use IPv6 with the debugger complete these steps.
 
-1. Ping your \<debughostname\> and note the IPv6 address that is reported on the Reply from output lines.Use this IPv6 address in place of x:y:z:p:d:q:r:n below
+1. Ping your \<debughostname\> and note the IPv6 address that is reported on the Reply from output lines.Use this IPv6 address in place of x:y:z:p:d:q:r:n below.
 
 2. Use BCDEdit to delete any existing ip address values in dbgsettings.
 
@@ -267,10 +276,10 @@ To use IPv6 with the debugger complete these steps.
     bcdedit -deletevalue {dbgsettings} hostip
     ```
 
-3. Set the IPv6 address of the host. There must not be any spaces in the `hostipv6=s:t:u:v:w:x:y:z` string. <YourPort> is the port you selected above between 50000-50039, and <YourKey> is the four part key security key.
+3. Set the IPv6 address of the host. There must not be any spaces in the `hostipv6=s:t:u:v:w:x:y:z` string. <YourPort> is is the network port number to use for this target machine, \<YourKey\> is the four part security key, and \<b.d.f\> are the bus device function location numbers for the NIC you want to use for KDNET.
 
     ```console
-    bcdedit /dbgsettings net hostipv6:s:t:u:v:w:x:y:z port:<YourPort> key:<YourKey>
+    bcdedit /dbgsettings net hostipv6:s:t:u:v:w:x:y:z port:<YourPort> key:<YourKey> busparams:<b.d.f>
     ```
 
 4. Type this command to confirm that the dbgsettings are set properly.
@@ -310,18 +319,21 @@ To use IPv6 with the debugger complete these steps.
 
 - If you set the hostip style address for any of those kinds of debugging, it means you want and will get IPv4.
 
-- The target will only do IPv4 or IPv6, not both at the same time. What is under control of the target machine.
+- The target will only do IPv4 or IPv6, not both at the same time. Which version of the IP protocol is used is controlled by the target machine dbgsettings.  If hostip is set, the target will use IPv4.  If hostipv6 is set, the target will use IPv6.
 
-- If the target= option on the debugger command line contains any : characters, the debugger will assume it is an IPv6 address, and will force use of IPv6 for that connection.
+- The host debugger will normally auto select use of IPv4 or IPv6. By default the debugger listens on both an IPv4 socket and an IPv6 socket, and connects automatically on either one to the target machine.
 
-- The debugger auto selects IPv4 or IPv6. The debugger determines if IPv4 or IPv6 is being used by the target machine, and connects automatically.
+- If you want to force use of IPv6 in the debugger on the host, but you want the debugger to listen for a connection from the target, then you can add, `target=::` to the debugger command line. :: is an IPv6 address of 0.
 
-- If you want to force IPv6 debugging in the debugger on the host, but you want the debugger to listen for a connection from the target, then you specify, target=:: \<ipv6 address of 0\>.
+- If you want to force IPv4 debugging in the debugger on the host, but you want the debugger to listen for a connection from the target, then you can add, `target=0.0.0.0` to the debugger command line. 0.0.0.0 is an IPv4 address of 0.
 
-- If you want to force IPv4 debugging in the debugger on the host, but you want the debugger to listen for a connection from the target, then you specify, target=0.0.0.0 (IPv4 address of 0)
+- If you specify, target= on the debugger command line and use a machine name, the debugger will convert that machine name into an IPv4 address and an IPv6 address, and will attempt to connect on both.
 
-- If you specify, target= and use a machine name, the debugger will convert that machine name into an IPv4 address and an IPv6 address, and will attempt to connect on both.
+- If you specify, target= on the debugger command line, and use an IP address, if the IP address contains any contains any : characters, the debugger will assume it is an IPv6 address, and will force use of IPv6 for that connection.  If the IP address contains any . characters, the debugger will assume it is an IPv4 address, and will force use of IPv4 for that connection.
 
+- If you setup IPv6 on the target, and force use of IPv4 on the debugger command line, you will not get a connection.
+
+- If you setup IPv4 on the target, and force use of IPv6 on the debugger command line, you will also not get a connection.
 
 
 
