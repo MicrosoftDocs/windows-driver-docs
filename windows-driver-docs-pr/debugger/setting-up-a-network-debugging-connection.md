@@ -3,7 +3,7 @@ title: Setting Up KDNET Network Kernel Debugging Manually
 description: Debugging Tools for Windows supports kernel debugging over a network.
 ms.assetid: B4A79B2E-D4B1-42CA-9121-DEC923C76927
 keywords: ["Network debugging", "Ethernet debugging", "Docking station", "Setting Up Kernel-Mode Debugging over a Network Cable Manually"]
-ms.date: 10/12/2018
+ms.date: 12/06/2018
 ms.localizationpriority: medium
 ---
 
@@ -124,7 +124,7 @@ If you are prompted about allowing WinDbg to access the port through the firewal
 
 ## Restarting the Target PC
 
-Once the debugger is connected, reboot the target computer. One way to do restart the PC is to use this command, from an administrator's command prompt.
+Once the debugger is connected, and waiting to connect, reboot the target computer. One way to do restart the PC is to use this command, from an administrator's command prompt.
 
    ```console
    shutdown -r -t 0
@@ -138,10 +138,6 @@ After connecting to the target on the host, hit break on your debugger and you c
 
 When you first attempt to establish a network debugging connection, you might be prompted to allow the debugging application (WinDbg or KD) access through the firewall. Client versions of Windows display the prompt, but Server versions of Windows do not display the prompt. You should respond to the prompt by checking the boxes for **all three** network types: domain, private, and public. If you do not get the prompt, or if you did not check the boxes when the prompt was available, you must use Control Panel to allow access through the firewall. Open **Control Panel &gt; System and Security** and click **Allow an app through Windows Firewall**. In the list of applications, locate Windows GUI Symbolic Debugger and Windows Kernel Debugger. Use the check boxes to allow those two applications through the firewall. Restart your debugging application (WinDbg or KD).
 
-## How the Debugger Obtains an IP Address for the Target Computer
-
-The kernel debugging driver on the target computer attempts to use Dynamic Host Configuration Protocol (DHCP) to get a routable IP address for the network adapter that is being used for debugging. If the driver obtains a DHCP-assigned address, then the target computer can be debugged by host computers located anywhere on the network. If the driver fails to obtain a DHCP-assigned address, it uses Automatic Private IP Addressing (APIPA) to obtain a local link IP address. Local link IP addresses are not routable, so a host and target cannot use a local link IP address to communicate through a router. In that case, network debugging will work if you plug the host and target computers into the same network hub or switch.
-
 ## Encryption key
 
 To keep the target computer secure, packets that travel between the host and target computers must be encrypted. We strongly recommend that you use an automatically generated encryption key (provided by **bcdedit** when you configure the target computer). Network debugging uses a 256-bit key that is specified as four 64-bit values, in base 36, separated by periods. Each 64-bit value is specified by using up to 13 characters. Valid characters are the letters a through z and the digits 0 through 9. Special characters are not allowed.
@@ -152,7 +148,7 @@ To specify your own key, open an elevated Command Prompt window on the target co
 bcdedit /dbgsettings net hostip:w.x.y.z port:n key:Key
 ```
 
-Reboot the target computer.
+The target computer needs to be rebooted anytime the dbgsettings are changed.
 
 ## Troubleshooting Tips
 
@@ -180,7 +176,7 @@ In the preceding output, the value of port is 50085. If the value of port lies o
 bcdedit /dbgsettings net hostip:w.x.y.z port:YourDebugPort
 ```
 
-When the host debugger is connected, reboot the target computer.
+After changing the target machine debugger settings, rerun the debugger on the host machine with the new port setting, and then reboot the target computer.
 
 ### Use Ping to test connectivity
 
@@ -190,9 +186,12 @@ If the debugger does not connect use the ping command on the target PC to verify
    C:\>Ping <HostComputerIPAddress>
    ```
 
-### Obtaining an IP Address for the Target Computer
+Note that this may not work if your host computer is not configured to be discoverable on the network, since the firewall may block ping requests, and because of this, you will not get any responses when you ping the host.
 
-The kernel debugging driver on the target computer attempts to use Dynamic Host Configuration Protocol (DHCP) to get a routable IP address for the network adapter that is being used for debugging. If the driver obtains a DHCP-assigned address, then the target computer can be debugged by host computers located anywhere on the network. If the driver fails to obtain a DHCP-assigned address, it uses Automatic Private IP Addressing (APIPA) to obtain a local link IP address. Local link IP addresses are not routable, so a host and target cannot use a local link IP address to communicate through a router. In that case, network debugging will work if you plug the host and target computers into the same network hub or switch.
+
+### How the Debugger Obtains an IP Address for the Target Computer
+
+KDNET on the target computer attempts to use Dynamic Host Configuration Protocol (DHCP) to get a routable IP address for the network adapter that is being used for debugging. If KDNET obtains a DHCP-assigned address, then the target computer can be debugged by host computers located anywhere on the network. If KDNET fails to obtain a DHCP-assigned address, it uses Automatic Private IP Addressing (APIPA) to obtain a local link IP address. Local link IP addresses are not routable, so a host and target cannot use a local link IP address to communicate through a router. In that case, network debugging will work if you plug the host and target computers into the same network hub or switch.
 
 ### Specify busparams if target computer has multiple network adapters
 
@@ -202,7 +201,7 @@ If your target computer has more than one network adapter, you must specify the 
 bcdedit /set "{dbgsettings}" busparams b.d.f
 ```
 
-When the host debugger is connected, reboot the target computer.
+When the debugger is running on the host machine, and waiting to connect, reboot the target computer.
 
 ## Manually delete BCDEdit entries
 
@@ -293,7 +292,7 @@ To use IPv6 with the debugger complete these steps.
     Windbg -k net:port=<yournetworkportnumber>,key=<key_output_from_kdnet>,target=::<YourIPv6Address> 
     ```
 
-6. Reboot your target machine. 
+6. When the debugger is running on the host machine, and waiting to connect, reboot the target computer. 
 
 7. The debugger should connect to the host debugger early during boot. You will know that KDNET is using an IPv6 connection because the IP addresses reported in the connected message will be IPv6 addresses instead of IPv4 addresses. 
 
