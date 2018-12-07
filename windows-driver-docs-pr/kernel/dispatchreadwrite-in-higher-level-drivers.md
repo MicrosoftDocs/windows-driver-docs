@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-Except for file system drivers, a higher-level driver usually does not have any internal driver queues for IRPs. Such a driver's [*DispatchReadWrite*](https://msdn.microsoft.com/library/windows/hardware/ff543381) routine can pass IRPs with valid parameters on to lower drivers, possibly after setting up its [*IoCompletion*](https://msdn.microsoft.com/library/windows/hardware/ff548354) routine, as described in [Passing IRPs down the Driver Stack](passing-irps-down-the-driver-stack.md).
+Except for file system drivers, a higher-level driver usually does not have any internal driver queues for IRPs. Such a driver's [*DispatchReadWrite*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine can pass IRPs with valid parameters on to lower drivers, possibly after setting up its [*IoCompletion*](https://msdn.microsoft.com/library/windows/hardware/ff548354) routine, as described in [Passing IRPs down the Driver Stack](passing-irps-down-the-driver-stack.md).
 
 However, a SCSI class driver's *DispatchReadWrite* routine is responsible for splitting up large transfer requests, if necessary, before it sends an IRP with the major function code [**IRP\_MJ\_READ**](https://msdn.microsoft.com/library/windows/hardware/ff550794) or [**IRP\_MJ\_WRITE**](https://msdn.microsoft.com/library/windows/hardware/ff550819) to the SCSI port/miniport driver pair. For more information, see [Storage Class Driver's SplitTransferRequest Routine](https://msdn.microsoft.com/library/windows/hardware/ff566965).
 

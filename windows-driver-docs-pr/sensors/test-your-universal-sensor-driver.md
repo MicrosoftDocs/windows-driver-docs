@@ -18,7 +18,7 @@ After you successfully [connect your sensor to the Sharks Cove board](connect-yo
 
 -   **The SensorInfo App**
 
-    If you want to use a Universal Windows Platform (UWP) app test sensor driver, then you can use the [SensorInfo app](http://apps.microsoft.com/windows/app/95015d9e-2116-44b8-9d3c-15c7b8753086?ocid=Apps_Search_WOL_en-us_search-main_search-results-from_search-sensorinfo_image_sensorinfo). This app will automatically detect any sensors that are attached to (or embedded in) your platform, and then invoke the associated drivers. The app will then display the information that it reads from the sensors, and display the information as moving waveforms.
+    If you want to use a Universal Windows Platform (UWP) app test sensor driver, then you can use the [SensorInfo app](https://apps.microsoft.com/windows/app/95015d9e-2116-44b8-9d3c-15c7b8753086?ocid=Apps_Search_WOL_en-us_search-main_search-results-from_search-sensorinfo_image_sensorinfo). This app will automatically detect any sensors that are attached to (or embedded in) your platform, and then invoke the associated drivers. The app will then display the information that it reads from the sensors, and display the information as moving waveforms.
 
 -   **The sensor diagnostic tool**
 
@@ -44,7 +44,7 @@ If you want to find out about testing drivers in general, see the following reso
 -   **Manually set up Kernel-Mode Debugging, using Serial over USB**
     If you want to test/debug your universal sensor driver, but don't want to use Visual Studio for doing the setup, you can use this option. For instructions on how to do this, see [Setting Up Kernel-Mode Debugging using Serial over USB Manually](https://msdn.microsoft.com/library/windows/hardware/dn745914.aspx).
 -   **WDK driver testing interface**
-    You can use the Windows driver kit (WDK) driver testing interface via Microsoft Visual Studio, to test drivers. For information about how to do this, see [Testing a Driver](https://msdn.microsoft.com/library/windows/hardware/ff554820.aspx).
+    You can use the Windows driver kit (WDK) driver testing interface via Microsoft Visual Studio, to test drivers. For information about how to do this, see [Testing a Driver](https://docs.microsoft.com/windows-hardware/drivers/develop/testing-a-driver).
 
 For information about how to monitor the operation of trace providers, see [Collecting and decoding WPP logs](collecting-and-decoding-wpp-logs.md).
 

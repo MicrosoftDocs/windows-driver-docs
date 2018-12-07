@@ -49,7 +49,7 @@ These restricted profiles are defined in anticipation of combinations of feature
 
 [WMV8\_A, WMV8\_B, WMV9\_A, WMV9\_B, and WMV9\_C](wmv8-a--wmv8-b--wmv9-a--wmv9-b--and-wmv9-c.md)
 
-For information about the restricted profiles of the MPEG-4 AVC (H.264) and VC-1 video codec standards, download [DirectX Video Acceleration Specification for H.264/AVC Decoding](http://go.microsoft.com/fwlink/p/?linkid=141799) and [DirectX Video Acceleration Specification for Windows Media Video v8, v9 and vA Decoding (Including SMPTE 421M "VC-1")](http://go.microsoft.com/fwlink/p/?linkid=141800).
+For information about the restricted profiles of the MPEG-4 AVC (H.264) and VC-1 video codec standards, download [DirectX Video Acceleration Specification for H.264/AVC Decoding](https://go.microsoft.com/fwlink/p/?linkid=141799) and [DirectX Video Acceleration Specification for Windows Media Video v8, v9 and vA Decoding (Including SMPTE 421M "VC-1")](https://go.microsoft.com/fwlink/p/?linkid=141800).
 
  
 

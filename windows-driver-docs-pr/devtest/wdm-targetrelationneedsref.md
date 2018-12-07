@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # TargetRelationNeedsRef rule (wdm)
 
 
-The **TargetRelationNeedsRef** rule specifies that when processing a *TargetDeviceRelation* query, the driver's [**DispatchPnP**](https://msdn.microsoft.com/library/windows/hardware/ff543341) routine calls one of the following functions to reference the child device's PDO:
+The **TargetRelationNeedsRef** rule specifies that when processing a *TargetDeviceRelation* query, the driver's [**DispatchPnP**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine calls one of the following functions to reference the child device's PDO:
 
 -   [**ObReferenceObject**](https://msdn.microsoft.com/library/windows/hardware/ff558678)
 

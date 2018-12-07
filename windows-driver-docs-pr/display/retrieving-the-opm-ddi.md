@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # Retrieving the OPM DDI
 
 
-The following sequence shows how the Microsoft DirectX graphics kernel subsystem (Dxgkrnl.sys) retrieves the display miniport driver's [OPM DDI](https://msdn.microsoft.com/library/windows/hardware/ff568627):
+The following sequence shows how the Microsoft DirectX graphics kernel subsystem (Dxgkrnl.sys) retrieves the display miniport driver's [OPM DDI](supporting-output-protection-manager.md):
 
 1. The DirectX graphics kernel subsystem calls the display miniport driver's [**DxgkDdiAddDevice**](https://msdn.microsoft.com/library/windows/hardware/ff559586) function to create a context block for a graphics adapter and to return a handle to that graphics adapter.
 

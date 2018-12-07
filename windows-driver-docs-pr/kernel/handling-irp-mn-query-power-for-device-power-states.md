@@ -29,7 +29,7 @@ To fail an [**IRP\_MN\_QUERY\_POWER**](https://msdn.microsoft.com/library/window
 
 2.  Set **Irp-&gt;IoStatus.Status** to a failure status and call [**IoCompleteRequest**](https://msdn.microsoft.com/library/windows/hardware/ff548343), specifying IO\_NO\_INCREMENT. The driver does not pass the IRP further down the device stack.
 
-3.  Return an error status from its [*DispatchPower*](https://msdn.microsoft.com/library/windows/hardware/ff543354) routine.
+3.  Return an error status from its [*DispatchPower*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine.
 
 If the driver succeeds the query-power IRP, it must not start any operations or take any other action that would prevent its successful completion of a subsequent **IRP\_MN\_SET\_POWER** request to the queried power state.
 

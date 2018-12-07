@@ -29,7 +29,7 @@ These tasks include:
 
 -   Freeing memory allocated for the device context.
 
--   Calling [**IoReleaseRemoveLock**](https://msdn.microsoft.com/library/windows/hardware/ff549560) to free the lock that the driver acquired in its [*DispatchPower*](https://msdn.microsoft.com/library/windows/hardware/ff543354) routine when it received the IRP.
+-   Calling [**IoReleaseRemoveLock**](https://msdn.microsoft.com/library/windows/hardware/ff549560) to free the lock that the driver acquired in its [*DispatchPower*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine when it received the IRP.
 
 -   Returning STATUS\_SUCCESS.
 

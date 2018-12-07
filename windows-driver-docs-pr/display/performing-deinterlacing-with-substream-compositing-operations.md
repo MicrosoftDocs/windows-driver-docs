@@ -1,20 +1,17 @@
 ---
-title: Performing Deinterlacing with Substream Compositing Operations
+title: Perform Deinterlacing with Substream Compositing Operations
 description: Performing Deinterlacing with Substream Compositing Operations
 ms.assetid: e6759e88-5cbb-4372-8a92-312f1684b99d
 keywords:
 - deinterlacing WDK DirectX VA , combining substream compositing
 - combining substream compositing WDK DirectX VA
 - substream compositing WDK DirectX VA
-ms.date: 04/20/2017
+ms.date: 12/06/2018
 ms.localizationpriority: medium
+ms.custom: seodec18
 ---
 
 # Performing Deinterlacing with Substream Compositing Operations
-
-
-## <span id="ddk_performing_deinterlacing_with_substream_compositing_operations_gg"></span><span id="DDK_PERFORMING_DEINTERLACING_WITH_SUBSTREAM_COMPOSITING_OPERATIONS_GG"></span>
-
 
 **This section applies only to Windows Server 2003 SP1 and later, and Windows XP SP2 and later.**
 

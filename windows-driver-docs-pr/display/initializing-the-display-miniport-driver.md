@@ -23,8 +23,6 @@ After the operating system has loaded the display miniport driver, the following
 
  
 
- 
-
 
 
 

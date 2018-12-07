@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 
 **This section applies only to Windows Server 2003 SP1 and later, and Windows XP SP2 and later.**
 
-COPP functionality must be accessed through the [motion compensation callback functions](motion-compensation-callbacks.md) of DirectDraw, to which the [COPP DDI](https://msdn.microsoft.com/library/windows/hardware/ff540449) can be mapped. Because the COPP DDI is implemented in the video miniport driver, the display driver must [communicate with the video miniport driver by using COPP IOCTLs](communicating-ioctls-to-the-video-miniport-driver.md).
+COPP functionality must be accessed through the [motion compensation callback functions](motion-compensation-callbacks.md) of DirectDraw, to which the [COPP DDI](sample-functions-for-copp.md) can be mapped. Because the COPP DDI is implemented in the video miniport driver, the display driver must [communicate with the video miniport driver by using COPP IOCTLs](communicating-ioctls-to-the-video-miniport-driver.md).
 
 The COPP DDI can be mapped to the motion compensation callback functions because they do not use typed parameters (that is, their single parameter is a pointer to a structure). In other words, the information in the single parameter that is passed to a motion compensation callback function can be processed according to its information type.
 

@@ -1,6 +1,6 @@
 ---
 title: Driver package metadata
-description: Describes the structure of the driver package metadata for Hardware dev center driver dashboard submissions.
+description: Describes the structure of the driver package metadata for Partner Center submissions.
 author: balapv
 ms.author: balapv
 ms.topic: article

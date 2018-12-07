@@ -1,15 +1,42 @@
 ---
-title: What's new for Windows 10 display drivers (WDDM 2.0)
+title: What's new for Windows 10 display drivers (WDDM 2.x)
 description: Describes new features in Windows 10 for display drivers
 ms.assetid: 619175D4-98DA-4B17-8F6F-71B13A31374D
-ms.date: 04/20/2017
+ms.date: 12/06/2018
 ms.localizationpriority: medium
+ms.custom: seodec18
 ---
 
-# What's new for Windows 10 display drivers (WDDM 2.0)
+# What's new for Windows 10 display drivers (WDDM 2.0 and later)
+
+## WDDM 2.5
+
+### Content changes
+
+| Topic | Date | Description |
+| --- | --- | --- |
+| [EDID Extension (VSDB) for HMDs and Specialized Displays](specialized-monitors-edid-extension.md) | 12/03/2018 | Specification for Display Manufacturers |
+| [DirectX Graphics Kernel Subsystem (Dxgkrnl.sys)](directx-graphics-kernel-subsystem.md) | 12/04/2018 | Kernel-mode interfaces that the Windows operating system implements through the Microsoft DirectX graphics kernel subsystem (Dxgkrnl.sys). |
+
+### Raytracing
+
+New Direct3D DDI's were created in parallel of Direct3D API's, in order to support hardware-accelerated raytracing. Example DDIs include: 
+
+* [PFND3D12DDI_BUILD_RAYTRACING_ACCELERATION_STRUCTURE_0054](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d12umddi/nc-d3d12umddi-pfnd3d12ddi_build_raytracing_acceleration_structure_0054) 
+* [PFND3D12DDI_COPY_RAYTRACING_ACCELERATION_STRUCTURE_0054](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d12umddi/nc-d3d12umddi-pfnd3d12ddi_copy_raytracing_acceleration_structure_0054)
+* [PFND3D12DDI_EMIT_RAYTRACING_ACCELERATION_STRUCTURE_POSTBUILD_INFO_0054](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d12umddi/nc-d3d12umddi-pfnd3d12ddi_emit_raytracing_acceleration_structure_postbuild_info_0054)
+* [PFND3D12DDI_GET_RAYTRACING_ACCELERATION_STRUCTURE_PREBUILD_INFO_0054](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d12umddi/nc-d3d12umddi-pfnd3d12ddi_get_raytracing_acceleration_structure_prebuild_info_0054)
+
+For more info about raytracing, see:
+
+* [Announcing Microsoft DirectX Raytracing](https://blogs.msdn.microsoft.com/directx/2018/03/19/announcing-microsoft-directx-raytracing/)
+* [DirectX Raytracing and the Windows 10 October 2018 Update](https://blogs.msdn.microsoft.com/directx/2018/10/02/directx-raytracing-and-the-windows-10-october-2018-update/)
+* [DirectX Forums](https://forums.directxtech.com/index.php?topic=5985.0)
 
 
-### <span id="Memory_Management"></span><span id="memory_management"></span><span id="MEMORY_MANAGEMENT"></span>Memory Management
+## WDDM 2.0
+
+### Memory Management
 
 GPU virtual memory
 
@@ -28,11 +55,3 @@ Driver residency
 -   New DDIs have been added for process synchronization and context monitoring.
 
 For more details, see [Driver residency in WDDM 2.0](driver-residency-in-wddm-2-0.md).
- 
-
- 
-
-
-
-
-

@@ -66,9 +66,9 @@ Requirements
 ## See also
 
 
-[*DispatchReadWrite*](https://msdn.microsoft.com/library/windows/hardware/ff543381)
+[*DispatchReadWrite*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch)
 
-[*DispatchWrite*](https://msdn.microsoft.com/library/windows/hardware/ff544034)
+[*DispatchWrite*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch)
 
 [**IoCallDriver**](https://msdn.microsoft.com/library/windows/hardware/ff548336)
 

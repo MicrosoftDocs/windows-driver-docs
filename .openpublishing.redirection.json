@@ -1024,12 +1024,22 @@
     },
     {
       "source_path": "windows-driver-docs-pr/sensors/architecture-overview.md",
-      "redirect_URL": "/windows-hardware/drivers/sensors/architecture-overview-for-sensor-drivers ",
+      "redirect_URL": "/windows-hardware/drivers/sensors/architecture-overview-for-sensor-drivers",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/d3dddi-check-multiplane-overlay-support-plane-info.md",
+      "redirect_URL": "/windows-hardware/drivers/ddi/content/d3dumddi/ns-d3dumddi-d3dddi_check_multiplane_overlay_support_plane_info",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/d3dkmt-multiplane-overlay-video-frame-format.md",
+      "redirect_URL": "/windows-hardware/drivers/ddi/content/d3dkmthk/ne-d3dkmthk-d3dkmt_multiplane_overlay_video_frame_format",
       "redirect_document_id": true
     },
     {
       "source_path": "windows-driver-docs-pr/display/performing-copp-operations2.md",
-      "redirect_URL": "/windows-hardware/drivers/display/performing-copp-operations-example ",
+      "redirect_URL": "/windows-hardware/drivers/display/performing-copp-operations-example",
       "redirect_document_id": true
     },
     {
@@ -6159,13 +6169,35 @@
       "source_path": "windows-driver-docs-pr/audio/windows-vista-audio-system-effects.md",
       "redirect_URL": "/windows-hardware/drivers/audio/windows-audio-processing-objectst",
       "redirect_document_id": false
-    },    {
+    },    
+    {
       "source_path": "windows-driver-docs-pr/audio/audio-system-effects.md",
       "redirect_URL": "/windows-hardware/drivers/audio/windows-audio-processing-objects",
       "redirect_document_id": false
-    },    {
+    },    
+    {
       "source_path": "windows-driver-docs-pr/audio/system-effects-audio-processing-objects.md",
       "redirect_URL": "/windows-hardware/drivers/audio/windows-audio-processing-objects",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/saving-hyper-v-extensible-switch-run-time-data.md",
+      "redirect_URL": "/windows-hardware/drivers/network/managing-hyper-v-extensible-switch-run-time-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/handling-the-oid-switch-nic-save-request.md",
+      "redirect_URL": "/windows-hardware/drivers/network/managing-hyper-v-extensible-switch-run-time-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/handling-the-oid-switch-nic-save-complete-request.md",
+      "redirect_URL": "/windows-hardware/drivers/network/managing-hyper-v-extensible-switch-run-time-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/network/restoring-hyper-v-extensible-switch-run-time-data.md",
+      "redirect_URL": "/windows-hardware/drivers/network/managing-hyper-v-extensible-switch-run-time-data",
       "redirect_document_id": false
     }
   ]

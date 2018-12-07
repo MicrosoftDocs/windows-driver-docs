@@ -1,6 +1,6 @@
 ---
-title: DXVA\_DeinterlaceContainerDeviceClass DeinterlaceQueryModeCaps method
-description: The sample DeinterlaceQueryModeCaps function queries the driver to determine the input capabilities of a particular deinterlace mode and any additional video processing that might be supported on that mode.
+title: DeinterlaceQueryModeCaps method
+description: The sample DXVA\_DeinterlaceContainerDeviceClass::DeinterlaceQueryModeCaps function queries the driver to determine the input capabilities of a particular deinterlace mode and any additional video processing that might be supported on that mode.
 ms.assetid: 49070e57-2a93-447e-98d5-b98cded78b9c
 keywords: ["DeinterlaceQueryModeCaps method Display Devices", "DeinterlaceQueryModeCaps method Display Devices , DXVA_DeinterlaceContainerDeviceClass interface", "DXVA_DeinterlaceContainerDeviceClass interface Display Devices , DeinterlaceQueryModeCaps method"]
 topic_type:
@@ -11,8 +11,9 @@ api_location:
 - N/A
 api_type:
 - COM
-ms.date: 01/05/2018
+ms.date: 12/06/2018
 ms.localizationpriority: medium
+ms.custom: seodec18
 ---
 
 # DXVA\_DeinterlaceContainerDeviceClass::DeinterlaceQueryModeCaps method
@@ -23,7 +24,7 @@ The sample **DeinterlaceQueryModeCaps** function queries the driver to determine
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT DeinterlaceQueryModeCaps(
   [in]  LPGUID               pGuidDeinterlaceMode,
   [in]  LPDXVA_VideoDesc     lpVideoDescription,

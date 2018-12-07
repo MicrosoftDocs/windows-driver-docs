@@ -33,6 +33,9 @@ If your software component INF specifies the [**AddSoftware** directive](inf-add
 
 You can specify the [**AddSoftware** directive](inf-addsoftware-directive.md) one or more times.
 
+>[!NOTE]
+>When using Type 2 of the AddSoftware directive, it is not required to utilize a Component INF.  The directive can be used in any INF successfully.  An AddSoftware directive of Type 1, however, must be used from a Component INF.
+
 Additionally, any INF (component or not) matching on a software component device:
 
 * Can specify Win32 user services using the [AddService directive](inf-addservice-directive.md).

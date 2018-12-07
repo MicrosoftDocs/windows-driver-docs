@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 This topic provides information about the data fields that are specific to the magnetometer.
 
-The following table shows the data fields. For more information about the types shown in the type column, see [MSDN PROPVARIANT structure](http://go.microsoft.com/fwlink/p/?linkid=313395).
+The following table shows the data fields. For more information about the types shown in the type column, see [MSDN PROPVARIANT structure](https://go.microsoft.com/fwlink/p/?linkid=313395).
 
 |Property key|Type|Required/Optional|Description|
 |--|--|--|--|
@@ -27,7 +27,7 @@ The following table shows the data fields. For more information about the types 
 
 [**MAGNETOMETER\_ACCURACY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsdef/ne-sensorsdef-magnetometer_accuracy)
 
-[MSDN PROPVARIANT structure](http://go.microsoft.com/fwlink/p/?linkid=313395)
+[MSDN PROPVARIANT structure](https://go.microsoft.com/fwlink/p/?linkid=313395)
 
  
 
