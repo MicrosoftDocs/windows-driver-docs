@@ -994,8 +994,6 @@
         href: d3dddi-multiplane-overlay-filter-range.md
       - name: "D3DDDI_MULTIPLANE_OVERLAY_FILTER_TYPE"
         href: d3dddi-multiplane-overlay-filter-type.md
-      - name: "D3DDDI_MULTIPLANE_OVERLAY_GET_FILTER_RANGE_INPUT"
-        href: d3dddi-multiplane-overlay-get-filter-range-input.md
     - name: "Dispmprt.h - Reserved"
       href: dispmprt-h---reserved.md
       items: 
