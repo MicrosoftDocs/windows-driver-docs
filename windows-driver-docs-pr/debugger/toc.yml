@@ -3096,6 +3096,10 @@
         href: -atom.md
       - name: "!bitcount"
         href: -bitcount.md
+      - name: "!blackboxbsd"
+        href: -blackboxbsd.md
+      - name: "!blackboxscm"
+        href: -blackboxscm.md
       - name: "!chksym"
         href: -chksym.md
       - name: "!chkimg"
