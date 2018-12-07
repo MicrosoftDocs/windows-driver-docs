@@ -1,19 +1,16 @@
 ---
-title: Mirror Driver Support in Video Miniport Drivers (Windows 2000 Model)
+title: Mirror Driver Support in Video Miniport Drivers (XDDM)
 description: Mirror Driver Support in Video Miniport Drivers (Windows 2000 Model)
 ms.assetid: ca91e0a6-d619-432a-829e-49012951f27c
 keywords:
 - video miniport drivers WDK Windows 2000 , mirror drivers
 - mirror drivers WDK Windows 2000 display
-ms.date: 04/20/2017
+ms.date: 12/06/2018
 ms.localizationpriority: medium
+ms.custom: seodec18
 ---
 
 # Mirror Driver Support in Video Miniport Drivers (Windows 2000 Model)
-
-
-## <span id="ddk_mirror_driver_support_in_video_miniport_drivers_windows_2000_model"></span><span id="DDK_MIRROR_DRIVER_SUPPORT_IN_VIDEO_MINIPORT_DRIVERS_WINDOWS_2000_MODEL"></span>
-
 
 [*Mirror driver*](https://msdn.microsoft.com/library/windows/hardware/ff556308#wdkgloss-mirror-driver) support for video miniport drivers is provided by Windows 2000 and later, so a miniport driver must not have any special code to attempt such support. See [Mirror Drivers](mirror-drivers.md) for more information about display drivers in mirroring systems.
 

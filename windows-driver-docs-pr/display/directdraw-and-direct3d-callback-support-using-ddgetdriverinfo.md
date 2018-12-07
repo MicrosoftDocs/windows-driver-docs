@@ -1,6 +1,6 @@
 ---
-title: DirectDraw and Direct3D Callback Support Using DdGetDriverInfo
-description: DirectDraw and Direct3D Callback Support Using DdGetDriverInfo
+title: DirectDraw and D3D Callback Support Using DdGetDriverInfo
+description: The display driver can implement the DdGetDriverInfo function to indicate various DirectDraw and Direct3D callback support.
 ms.assetid: 7054564e-4520-4900-946a-95c92908667c
 keywords:
 - DirectDraw driver initialization WDK Windows 2000 display , Windows 2000
@@ -9,15 +9,12 @@ keywords:
 - Direct3D WDK Windows 2000 display , callbacks
 - callback functions WDK Direct3D
 - DirectDraw driver initialization WDK Windows 2000 display , callback functions
-ms.date: 04/20/2017
+ms.date: 12/06/2018
 ms.localizationpriority: medium
+ms.custom: seodec18
 ---
 
 # DirectDraw and Direct3D Callback Support Using DdGetDriverInfo
-
-
-## <span id="ddk_directdraw_and_direct3d_callback_support_using_ddgetdriverinfo_gg"></span><span id="DDK_DIRECTDRAW_AND_DIRECT3D_CALLBACK_SUPPORT_USING_DDGETDRIVERINFO_GG"></span>
-
 
 The display driver can implement the [**DdGetDriverInfo**](https://msdn.microsoft.com/library/windows/hardware/ff549404) function to indicate various DirectDraw and Direct3D callback support. Callback support is contingent on the following GUIDs that the driver receives in the **guidInfo** member of the [**DD\_GETDRIVERINFODATA**](https://msdn.microsoft.com/library/windows/hardware/ff551550) structure, to which the *lpGetDriverInfo* parameter points. The driver returns a pointer to a structure in the **lpvData** member that specifies DirectDraw or Direct3D callback support.
 
@@ -49,10 +46,6 @@ The display driver can implement the [**DdGetDriverInfo**](https://msdn.microsof
   </tr>
   </tbody>
   </table>
-
-     
-
-<!-- -->
 
 - If the driver receives the GUID\_MiscellaneousCallbacks GUID, it returns a pointer to the [**DD\_MISCELLANEOUSCALLBACKS**](https://msdn.microsoft.com/library/windows/hardware/ff551657) structure. If it supports a [*DdGetAvailDriverMemory*](https://msdn.microsoft.com/library/windows/hardware/ff549377) callback function, the driver fills the *DdGetAvailDriverMemory* member of DD\_MISCELLANEOUSCALLBACKS to specify *DdGetAvailDriverMemory*.
 

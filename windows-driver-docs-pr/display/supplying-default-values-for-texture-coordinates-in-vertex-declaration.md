@@ -1,18 +1,16 @@
 ---
-title: Supplying Default Values for Texture Coordinates in Vertex Declarations
-description: Supplying Default Values for Texture Coordinates in Vertex Declarations
+title: Default Texture Coordinates in Vertex Declarations
+description: A display driver whose display device supports a programmable pixel shader must supply default values for any texture coordinates that are missing in a vertex declaration.
 ms.assetid: 5e346e7e-7460-41d9-aee1-dcc72fc642c1
 keywords:
 - vertex declarations WDK DirectX 9.0
 - texture coordinates WDK DirectX 9.0
-ms.date: 04/20/2017
+ms.date: 12/06/2018
 ms.localizationpriority: medium
+ms.custom: seodec18
 ---
 
-# Supplying Default Values for Texture Coordinates in Vertex Declarations
-
-
-## <span id="ddk_supplying_default_values_for_texture_coordinates_in_vertex_declara"></span><span id="DDK_SUPPLYING_DEFAULT_VALUES_FOR_TEXTURE_COORDINATES_IN_VERTEX_DECLARA"></span>
+# Default Texture Coordinates in Vertex Declarations
 
 
 **This topic applies to DirectX 8.0 and later.**
