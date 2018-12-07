@@ -27,6 +27,10 @@ An **AddPowerSetting** directive references one or more sections that are used t
 [ClassInstall32.ntx86] | 
 [ClassInstall32.ntia64] |  (Windows Vista)
 [ClassInstall32.ntamd64]  (Windows Vista)
+[ClassInstall32.ntarm] 
+[ClassInstall32.ntarm64]  
+
+
 
 AddPowerSetting=add-power-setting-section[,add-power-setting-section]
 ```
@@ -228,7 +232,7 @@ The power manager does not automatically remove device power policies after a de
 
 In addition, the *Powercfg.exe* command-line tool can be used to change power settings. For information about *Powercfg.exe*, see the Microsoft Help and Support Center.
 
-For more information about how to use the system-defined **.nt**, **.ntx86**, **.ntia64**, and **.ntamd64** extensions, see [Creating INF Files for Multiple Platforms and Operating Systems](creating-inf-files-for-multiple-platforms-and-operating-systems.md).
+For more information about how to use the system-defined **.nt**, **.ntx86**, **.ntia64**, **.ntamd64**, **.ntarm**, and **.ntarm64** extensions, see [Creating INF Files for Multiple Platforms and Operating Systems](creating-inf-files-for-multiple-platforms-and-operating-systems.md).
 
 ### Specifying an AddPowerSetting String Entry Value
 
