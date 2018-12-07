@@ -57,6 +57,10 @@ Any specified *install-interface-section* has the following general form:
 [interface-install-section.ntx86] | 
 [interface-install-section.ntia64] | (Windows XP and later versions of Windows)
 [interface-install-section.ntamd64] (Windows XP and later versions of Windows)
+[interface-install-section.ntarm] (Windows 8 and later versions of Windows)
+[interface-install-section.ntarm64] (Windows 10 and later versions of Windows)
+
+
  
 AddReg=add-registry-section[, add-registry-section] ...
 [AddProperty=add-property-section[, add-property-section] ...]  (Windows Vista and later versions of Windows)
@@ -82,7 +86,7 @@ The registry information about this interface class should include at least a fr
 
 In addition, such an *install-interface-section* might use any of the optional directives shown here to specify interface-specific installation operations.
 
-For more information about how to use the system-defined **.nt**, **.ntx86**, **.ntia64**, and **.ntamd64** extensions, see [Creating INF Files for Multiple Platforms and Operating Systems](creating-inf-files-for-multiple-platforms-and-operating-systems.md).
+For more information about how to use the system-defined **.nt**, **.ntx86**, **.ntia64**, **.ntamd64**, **.ntarm**, **.ntarm64** extensions, see [Creating INF Files for Multiple Platforms and Operating Systems](creating-inf-files-for-multiple-platforms-and-operating-systems.md).
 
 ## See also
 

@@ -91,7 +91,7 @@ Each field is defined as follows:
 Specifies the target operating system is NT-based. Windows 2000 and later versions of Windows are all NT-based.
 
 <a href="" id="architecture"></a>*Architecture*  
-Identifies the hardware platform. If specified, this must be **x86**, **ia64**, **amd64**, or **arm**.
+Identifies the hardware platform. If specified, this must be **x86**, **ia64**, **amd64**, **arm**, or **arm64**.
 
 Prior to Windows Server 2003 SP1, if *Architecture* is not specified, the associated INF ***Models*** section can be used with any hardware platform.
 

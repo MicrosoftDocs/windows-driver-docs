@@ -58,7 +58,7 @@ This optional entry specifies the particular sections that must be processed dur
 Remarks
 -------
 
-The *DDInstall* section name must be referenced by a device/models-specific entry under the per-manufacturer *Models* section of the INF file. For information about how to use the system-defined **.nt**, **.ntx86**, **.ntia64**, and **.ntamd64** extensions in cross-platform INF files, see [Creating INF Files for Multiple Platforms and Operating Systems](creating-inf-files-for-multiple-platforms-and-operating-systems.md).
+The *DDInstall* section name must be referenced by a device/models-specific entry under the per-manufacturer *Models* section of the INF file. For information about how to use the system-defined **.nt**, **.ntx86**, **.ntia64**, **.ntamd64**, **.ntarm**, and **.ntarm64** extensions in cross-platform INF files, see [Creating INF Files for Multiple Platforms and Operating Systems](creating-inf-files-for-multiple-platforms-and-operating-systems.md).
 
 If a specified **{**<em>InterfaceClassGUID</em>**}** is not installed already, the operating system's setup code installs that device interface class in the system. If an INF file installs one or more new device interface classes, it also has an **\[InterfaceInstall32\]** section identifying the GUID for the new class..
 

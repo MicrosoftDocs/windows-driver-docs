@@ -24,17 +24,23 @@ An **AddProperty** directive references one or more INF file sections that modif
 [DDInstall.nt] |
 [DDInstall.ntx86] |
 [DDInstall.ntia64] |
-[DDInstall.ntamd64]
+[DDInstall.ntamd64] |
+[DDInstall.ntarm] |
+[DDInstall.ntarm64]
 [ClassInstall32] | 
 [ClassInstall32.nt] | 
 [ClassInstall32.ntx86] |
 [ClassInstall32.ntia64] |  (Windows XP and later versions of Windows)
 [ClassInstall32.ntamd64]  |  (Windows XP and later versions of Windows)
+[ClassInstall32.ntarm]  |  (Windows 8 and later versions of Windows)
+[ClassInstall32.ntarm64]  |  (Windows 10 and later versions of Windows)
 [interface-install-section] | 
 [interface-install-section.nt] | 
 [interface-install-section.ntx86] | 
 [interface-install-section.ntia64] |  (Windows XP and later versions of Windows)
-[interface-install-section.ntamd64]  (Windows XP and later versions of Windows)
+[interface-install-section.ntamd64]  (Windows XP and later versions of Windows) |
+[interface-install-section.ntarm]  (Windows 8 and later versions of Windows) |
+[interface-install-section.ntarm64]  (Windows 10 and later versions of Windows)
 [add-interface-section]
 
 AddProperty=add-property-section[,add-property-section]...  (Windows Vista and later versions of Windows)
