@@ -27,7 +27,7 @@ The I/O manager calls a driver's *Unload* routine when all of the following are 
 
 Note that the *Unload* routine is not called if a driver's [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff544113) routine returns a failure status. In this case, the I/O manager simply frees the memory space taken up by the driver.
 
-Neither the PnP manager nor the I/O manager calls *Unload* routines at system shutdown time. A driver that must perform shutdown processing should register a [*DispatchShutdown*](https://msdn.microsoft.com/library/windows/hardware/ff543405) routine.
+Neither the PnP manager nor the I/O manager calls *Unload* routines at system shutdown time. A driver that must perform shutdown processing should register a [*DispatchShutdown*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine.
 
  
 

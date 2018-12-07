@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 When removing a child device (child PDO), the parent bus driver must undo any operations it performed to add and start the device.
 
-A bus driver removes a child device with a procedure such as the following in its [*DispatchPnP*](https://msdn.microsoft.com/library/windows/hardware/ff543341) routine:
+A bus driver removes a child device with a procedure such as the following in its [*DispatchPnP*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine:
 
 1.  Has the driver handled a previous [**IRP\_MN\_SURPRISE\_REMOVAL**](https://msdn.microsoft.com/library/windows/hardware/ff551760) request for this PDO?
 
@@ -37,7 +37,7 @@ A bus driver removes a child device with a procedure such as the following in it
 
     -   Completes the IRP with [**IoCompleteRequest**](https://msdn.microsoft.com/library/windows/hardware/ff548343).
 
-    -   Returns from the [*DispatchPnP*](https://msdn.microsoft.com/library/windows/hardware/ff543341) routine.
+    -   Returns from the [*DispatchPnP*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine.
 
     The bus driver must continue to report this device in subsequent enumerations (**IRP\_MN\_QUERY\_DEVICE\_RELATIONS** for **BusRelations**) until the device is physically removed. The PnP manager keeps track of whether an enumerated device has been added and started.
 

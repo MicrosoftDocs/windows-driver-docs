@@ -15,14 +15,15 @@ Use the following methods in *Microsoft Hardware APIs* to get data for hardware 
 ```cpp
 https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/
 ```
+
 Before you can use these methods, the product must already exist in your Dev Center account. To create or manage submissions for products, see the methods in [Manage product submissions](manage-product-submissions.md).
 
 | Method | URI | Description |
 |-|-|-|
-|GET |	`https://manage.devcenter.microsoft.com/v1.0/hardware/products/`	|[Get data for all your products](get-all-products.md)|
-|GET |	`https://manage.devcenter.microsoft.com/v1.0/hardware/products/{productID}`	|[Get data for a specific product](get-a-product.md)|
-|GET |	`https://manage.devcenter.microsoft.com/v1.0/hardware/products/{productID}/submissions`	|[Get data for all submissions of a product](get-all-submissions.md)|
-|GET |	`https://manage.devcenter.microsoft.com/v1.0/hardware/products/{productID}/submissions/{submissionId}`	|[Get data for a specific submission of a product](get-a-submission.md)|
+|GET |`https://manage.devcenter.microsoft.com/v1.0/hardware/products/`|[Get data for all your products](get-all-products.md)|
+|GET |`https://manage.devcenter.microsoft.com/v1.0/hardware/products/{productID}`|[Get data for a specific product](get-a-product.md)|
+|GET |`https://manage.devcenter.microsoft.com/v1.0/hardware/products/{productID}/submissions`|[Get data for all submissions of a product](get-all-submissions.md)|
+|GET |`https://manage.devcenter.microsoft.com/v1.0/hardware/products/{productID}/submissions/{submissionId}`|[Get data for a specific submission of a product](get-a-submission.md)|
 
 ## Prerequisites
 
@@ -35,7 +36,6 @@ The Microsoft Hardware APIs methods for getting product data use the following J
 ### Product resource
 
 This resource represents a hardware product (driver) that is registered to your account.
-
 
 ```json
 {
@@ -99,8 +99,6 @@ This resource has the following values
 | testHarness | string | The type of package which has been submitted. Possible values are <ul><li>hlk<li>hck</li><li>attestation</li><li>notset</li></ul>|
 | announcementDate | datetime | The date when the product will get included on the Windows Server Catalog |
 
-
-
 ### Submission resource
 
 This resource represents a submission of a product.
@@ -145,8 +143,6 @@ This resource has the following values
 | workflowstatus | object | This is available only when retrieving details of a specific submission. This object depicts the status of the workflow for this submission. Refer [workflow status object](#workflow-status-object)  for more details  |
 | downloads | object | This is available only when retrieving details of a specific submission only. This object depicts the downloads available for the submission. Refer [download object](#download-object)  for more details. |
 
-
-
 ### Workflow Status object
 
 This object represents the status of workflow for a given entity
@@ -166,7 +162,6 @@ This object has the following values
 | currentStep | string | The name of the current step in the overall workflow for this entity. <br>For ingestion/package submission the possible values are (description in parenthesis):<ul><li>packageInfoValidation (*Validating Package metadata and contents*)</li><li>preparation (*Getting package ready for processing*)</li><li>scanning (*Scanning package contents for Malware*)</li><li>validation (*Validation of test results*)</li><li>catalogCreation (*Creating a security catalog for package*)</li><li>manualReview (*Undergoing Manual Review*)</li><li>signing (*Signing the binaries*)</li><li>finalizeIngestion (*Completing the ingestion and getting signed files ready to download or publish*)</li></ul>|
 | State | string | The state of the current step. Possible values are:<ul><li>notStarted</li><li>started</li><li>failed</li><li>completed</li></ul> |
 | Messages | array | An array of strings to provide messages about current step (especially in case of failure) |
-
 
 ### Download object
 
@@ -204,7 +199,6 @@ This object has the following values
 | Type | string | The type of package available for download. Possible values are:<ul><li>“initialPackage” – package uploaded by user (in case of new submission, it points to the SAS URI for uploading the package)</li><li>“derivedPackage” – shell for derived submissions</li><li>“signedPackage” – package signed by Microsoft</li><li>“certificationReport” – certification report for the signed product</li></ul>|
 | Messages | array | An array of strings to provide messages about the downloadable files |
 
-
 ### Link object
 
 This object represents a list of helpful links for the containing entity
@@ -229,7 +223,7 @@ This object has the following values
 
 This object provides additional attributes about the product if it is of type RAID controller, Storage Controller or Server Virtualization Validation program (SVVP). It can contain one of three types of objects – StorageController, RaidController or SVVP.
 
-**StorageController Object**
+#### StorageController Object
 
 | Value | Type | Description |
 |:--|:--|:--|
@@ -253,8 +247,7 @@ This object provides additional attributes about the product if it is of type RA
 | supportsSector4K4K | boolean | Support sector size of 4K/4K |
 | supportsDifferential | boolean | Differential (high-voltage differential) |
 
-
-**RaidController Object**
+#### RaidController Object
 
 | Value | Type | Description |
 |:--|:--|:--|
@@ -272,8 +265,7 @@ This object provides additional attributes about the product if it is of type RA
 | isSAFTE | boolean | SAF-TE (ANBll Specification). Indicates if a SAF-TE is included. ANBll an industry specification. SAF-TE is short for SCSI Accessed Fault Tolerant Enclosures. SCSI is the standard term for a service bus that connects devices on a system, originally Small Computer System Interface. |
 | additionalInfo | string | Additonal Information |
 
-
-**SVVP Object**
+#### SVVP Object
 
 | Value | Type | Description |
 |:--|:--|:--|
@@ -283,7 +275,6 @@ This object provides additional attributes about the product if it is of type RA
 | processorArchitecture | string | Hardware Processor Architecture. Possible values are:<ul><li>Xeon</li><li>Opteron</li><li>Itanium 2</li></ul>|
 | maxProcessors | integer | Max Processors in VM |
 | maxMemory | integer | Max memory in VM (in GB) |
-
 
 ### List of Product Types
 
@@ -367,7 +358,6 @@ A product can be of the following types. This information is used along with the
 * WSD Printer
 * WSD Scanner
 
-
 ### List of Operating System Family Codes
 
 The following table lists Operating system Family Codes and their descriptions.
@@ -400,6 +390,9 @@ The following table lists Operating system Family Codes and their descriptions.
 | Windows_v100Server_RS3 | Windows Server RS3 |
 | Windows_v100_RS4 | Windows 10 RS4 Update |
 | Windows_v100Server_RS4 | Windows Server RS4 |
+| Windows_v100Server_RS5 | Windows Server 2019 |
+| Windows_v100_RS5 | Windows 10 RS5 x86 |
+| Windows_v100_RS5 | Windows 10 RS5 x64 |
 
 ### List of Operating System Codes
 
@@ -457,7 +450,9 @@ The following table lists Operating System Codes and their descriptions.
 |WINDOWS_v100_ARM64_RS4_FULL|Windows 10 RS4 Client ARM64|
 |WINDOWS_v100_SERVER_X64_RS4_FULL|Windows 10 RS4 Server x64|
 |WINDOWS_v100_SERVER_ARM64_RS4_FULL|Windows 10 RS4 Server ARM64|
-
+| WINDOWS_v100_SERVER_X64_RS5_FULL | Windows Server 2019 |
+| WINDOWS_v100_RS5_FULL | Windows 10 RS5 x86 |
+| WINDOWS_v100_X64_RS5_FULL | Windows 10 RS5 x64 |
 
 ## Error codes
 

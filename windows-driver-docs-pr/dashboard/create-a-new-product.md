@@ -43,8 +43,8 @@ The following example demonstrates the JSON request body for creating a new prod
 
 ```json
 {
-  "ProductName": "Test_Network_Product2-R",
-  "TestHarness": "Attestation",
+  "productName": "Test_Network_Product2-R",
+  "testHarness": "Attestation",
   "announcementDate": "2018-01-01T00:00:00",
   "deviceMetadataIds": [],
   "firmwareVersion": "980",

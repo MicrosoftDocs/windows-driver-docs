@@ -21,7 +21,7 @@ Before you can submit the files for logo certification, you must package the fil
 
 **To create a device metadata experience package**
 
-1. Sign in to the Dashboard from either the Windows Dev Center or the Hardware Dev Center using the Microsoft account associated with this service.
+1. Sign in to the Dashboard from the Partner Center using the Microsoft account associated with this service.
 
 2. On the left side of the window, click **Device metadata**, and then click **Create experience**.
 

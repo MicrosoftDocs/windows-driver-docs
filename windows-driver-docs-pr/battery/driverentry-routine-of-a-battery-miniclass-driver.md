@@ -60,13 +60,13 @@ For additional routine-specific requirements, see the following topics:
 
 [Unload Routine of a Battery Miniclass Driver](unload-routine-of-a-battery-miniclass-driver.md)
 
-[*DispatchPower*](https://msdn.microsoft.com/library/windows/hardware/ff543354)
+[*DispatchPower*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch)
 
-[*DispatchPnP*](https://msdn.microsoft.com/library/windows/hardware/ff543341)
+[*DispatchPnP*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch)
 
 [*DRIVER_DISPATCH*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch)
 
-[*DispatchClose*](https://msdn.microsoft.com/library/windows/hardware/ff543255)
+[*DispatchClose*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch)
 
  
 

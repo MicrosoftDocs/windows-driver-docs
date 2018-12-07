@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-Drivers handle power IRPs in a [*DispatchPower*](https://msdn.microsoft.com/library/windows/hardware/ff543354) routine. All power management requests have the major IRP code [**IRP\_MJ\_POWER**](https://msdn.microsoft.com/library/windows/hardware/ff550784) and one of the following minor codes:
+Drivers handle power IRPs in a [*DispatchPower*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine. All power management requests have the major IRP code [**IRP\_MJ\_POWER**](https://msdn.microsoft.com/library/windows/hardware/ff550784) and one of the following minor codes:
 
 [**IRP\_MN\_QUERY\_POWER**](https://msdn.microsoft.com/library/windows/hardware/ff551699) — Queries to determine whether changing power state is feasible
 

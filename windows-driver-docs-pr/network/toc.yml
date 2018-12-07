@@ -2985,16 +2985,6 @@
           href: managing-custom-switch-feature-status-information.md
       - name: "Managing Hyper-V Extensible Switch Run-Time Data"
         href: managing-hyper-v-extensible-switch-run-time-data.md
-        items: 
-        - name: "Saving Hyper-V Extensible Switch Run-Time Data"
-          href: saving-hyper-v-extensible-switch-run-time-data.md
-          items: 
-          - name: "Handling the OID_SWITCH_NIC_SAVE Request"
-            href: handling-the-oid-switch-nic-save-request.md
-          - name: "Handling the OID_SWITCH_NIC_SAVE_COMPLETE Request"
-            href: handling-the-oid-switch-nic-save-complete-request.md
-        - name: "Restoring Hyper-V Extensible Switch Run-Time Data"
-          href: restoring-hyper-v-extensible-switch-run-time-data.md
       - name: "Managing Physical Network Adapters"
         href: managing-physical-network-adapters.md
         items: 
