@@ -4,7 +4,7 @@ description: Mobile Plans asynchronous fulfillment
 ms.assetid: 56AB67D6-59A9-4483-B455-2FCC309C8903
 keywords:
 - Windows Mobile Plans asynchronous fulfillment mobile operators
-ms.date: 11/08/2018
+ms.date: 12/07/2018
 ms.localizationpriority: medium
 ---
 
@@ -40,10 +40,10 @@ The following Javascript function shows an example of the API to inform the appl
  ```Javascript
 function finishPurchaseWithDownload() {
         var metadata = DataMart.createPurchaseMetaData();
-        metadata.userAccount = DataMartUserAccount.new;
-        metadata.purchaseInstrument = DataMartPurchaseInstrument.new;
-        metadata.moDirectStatus = DataMartMoDirectStatus.complete;
-        metadata.line = DataMartLineType.new;
+        metadata.userAccount = MobilePlansUserAccount.new;
+        metadata.purchaseInstrument = MobilePlansPurchaseInstrument.new;
+        metadata.moDirectStatus = MobilePlansMoDirectStatus.complete;
+        metadata.line = MobilePlansLineType.new;
         metadata.planName = "2GB Monthly";
         DataMart.notifyPurchaseWithProfileDownload(metadata, "1$smdp.address$", 15);
 }
@@ -78,10 +78,10 @@ The following Javascript function shows an example of the API to inform the appl
  ```Javascript
 function finishPurchaseWithSMDS() {
         var metadata = DataMart.createPurchaseMetaData();
-        metadata.userAccount = DataMartUserAccount.new;
-        metadata.purchaseInstrument = DataMartPurchaseInstrument.new;
-        metadata.moDirectStatus = DataMartMoDirectStatus.complete;
-        metadata.line = DataMartLineType.new;
+        metadata.userAccount = MobilePlansUserAccount.new;
+        metadata.purchaseInstrument = MobilePlansPurchaseInstrument.new;
+        metadata.moDirectStatus = MobilePlansMoDirectStatus.complete;
+        metadata.line = MobilePlansLineType.new;
         metadata.planName = "2GB Monthly";
         DataMart.notifyPurchaseDelayedProfile(metadata, 15);
 }
@@ -93,9 +93,9 @@ The following diagram shows the high level flow for how the *Mobile Plans* progr
 
 ![Mobile Plans inline profile download sequence diagram](images/dynamo_inline_profile_flow.png)
 
-When the MO Direct portal is ready for a profile download, install, and activation to occur, the portal should call `DataMartInlineProfile.notifyInlineProfileDownload`.
+When the MO Direct portal is ready for a profile download, install, and activation to occur, the portal should call `MobilePlansInlineProfileDownload.notifyInlineProfileDownload`.
 
-### DataMartInlineProfile.notifyInlineProfileDownload
+### MobilePlansInlineProfileDownload.notifyInlineProfileDownload
 
 | Parameter name | Type | Description |
 | --- | --- | -- |
@@ -107,20 +107,20 @@ The following Javascript function shows an example of the API to inform the appl
 ```Javascript
 function NotifyDataMart() { 
     var purchaseMetaData = DataMart.createPurchaseMetaData(); 
-    purchaseMetaData.userAccount = DataMartUserAccount.new; 
-    purchaseMetaData.purchaseInstrument = DataMartPurchaseInstrument.new; 
-    purchaseMetaData.lineType = DataMartLineType.new; 
-    purchaseMetaData.modirectStatus = DataMartMoDirectStatus.complete; 
+    purchaseMetaData.userAccount = MobilePlansUserAccount.new; 
+    purchaseMetaData.purchaseInstrument = MobilePlansPurchaseInstrument.new; 
+    purchaseMetaData.lineType = MobilePlansLineType.new; 
+    purchaseMetaData.modirectStatus = MobilePlansMoDirectStatus.complete; 
     purchaseMetaData.planName = "My Plan"; 
-    DataMartInlineProfile.registrationChangedScript = onRegistrationChanged;
-    DataMartInlineProfile.profileActivationCompleteScript = onActivationComplete;
-    DataMartInlineProfile.notifyInlineProfileDownload(purchaseMetaData , "1$smdp.address$"); 
+    MobilePlansInlineProfileDownload.registrationChangedScript = "onRegistrationChanged";
+    MobilePlansInlineProfileDownload.profileActivationCompleteScript = "onActivationComplete";
+    MobilePlansInlineProfileDownload.notifyInlineProfileDownload(purchaseMetaData , "1$smdp.address$");  
 }
 ```
 
 ### Listening for network registration changes
 
-To listen for network registration changes, the `DataMartInlineProfile.registrationChangedScript` must be set to the name of a Javascript function that takes a string for the `registrationArgs`.
+To listen for network registration changes, the `MobilePlansInlineProfileDownload.registrationChangedScript` must be set to the name of a Javascript function that takes a string for the `registrationArgs`.
 
 The registration args are a string that represents a JSON object.
 
@@ -128,10 +128,10 @@ The registration args are a string that represents a JSON object.
 
 | Property name | Type | Description |
 | --- | --- | -- |
-| networkRegistrationState | String | A string representing the current network registration state. The values of this property can be seen in `DataMartNetworkRegistrationState`. |
+| networkRegistrationState | String | A string representing the current network registration state. The values of this property can be seen in `MobilePlansNetworkRegistrationState`. |
 | iccid | String | The ICCID for which the network registration state has changed. |
 
-#### DataMartNetworkRegistrationState
+#### MobilePlansNetworkRegistrationState
 
 | Property name | Type | Description |
 | --- | --- | -- |
@@ -148,9 +148,9 @@ The following Javascript example shows how to implement a listener for network r
 ```Javascript
 function onRegistrationChanged(registrationArgs) {
     var registrationObj = JSON.parse(registrationArgs);
-    if(registrationObj.networkRegistrationState == DataMartNetworkRegistrationState.home ||
-       registrationObj.networkRegistrationState == DataMartNetworkRegistrationState.roaming ||
-       registrationObj.networkRegistrationState == DataMartNetworkRegistrationState.partner)
+    if(registrationObj.networkRegistrationState == MobilePlansNetworkRegistrationState.home ||
+       registrationObj.networkRegistrationState == MobilePlansNetworkRegistrationState.roaming ||
+       registrationObj.networkRegistrationState == MobilePlansNetworkRegistrationState.partner)
     {
         Log('Registration Successful!');
     }
@@ -159,7 +159,7 @@ function onRegistrationChanged(registrationArgs) {
 
 ### Listening for profile activation
 
-To listen for profile activation events, the `DataMartInlineProfile.profileActivationCompleteScript` must be set to the name of a Javascript function that takes a string for the `activationArgs`
+To listen for profile activation events, the `MobilePlansInlineProfileDownload.profileActivationCompleteScript` must be set to the name of a Javascript function that takes a string for the `activationArgs`
 
 The `activationArgs` is a string that represents a JSON object.
 
@@ -167,10 +167,10 @@ The `activationArgs` is a string that represents a JSON object.
 
 | Property name | Type | Description |
 | --- | --- | -- |
-| activationResult | String | The result of the activation. The values of this property can be seen in `DataMartActivationErrors`. |
+| activationResult | String | The result of the activation. The values of this property can be seen in `MobilePlansActivationError`. |
 | iccid | String | The ICCID of the profile that was activated. |
 
-#### DataMartActivationErrors
+#### MobilePlansActivationError
 
 | Property name | Type | Description |
 | --- | --- | -- |
@@ -202,16 +202,16 @@ The `activationArgs` is a string that represents a JSON object.
 | lpaInitializationError | String | Indicates that an error occurred when trying to initialize LPA. |
 | modemNotFound | String | Indicates that no cellular modem was found on the device. |
 | localSettingsAccessFailed | String | Indicates that accessing app local settings failed. |
-| invalidCallback | String | Indicates that MO portal has given an invalid callback. |
-| invalidActivationCode | String | Indicates that MO portal has given invalid activation code. |
-| invalidIccid | String | Indicates that MO portal has given an invalid ICCID. |
+| invalidJson | String | Indicates that the MO portal has provided invalid JSON when calling the Mobile Plans app. |
+| invalidActivationCode | String | Indicates that the MO portal has given invalid activation code. |
+| invalidIccid | String | Indicates that the MO portal has given an invalid ICCID. |
 
 The following Javascript example shows how to implement a listener for the profile activation event.
 
 ```Javascript
 function onActivationComplete(activationArgs) {
     var activationObj = JSON.parse(activationArgs);
-    if(activationObj.activationResult == DataMartActivationErrors.success)
+    if(activationObj.activationResult == MobilePlansActivationError.success)
         Log('Activation Success');
 }
 ```
@@ -232,10 +232,10 @@ The following Javascript function shows an example of the API to inform the appl
  ```Javascript
 function finishPurchaseWithBalanceAddition() {
         var metadata = DataMart.createPurchaseMetaData();
-        metadata.userAccount = DataMartUserAccount.new;
-        metadata.purchaseInstrument = DataMartPurchaseInstrument.none;
-        metadata.moDirectStatus = DataMartMoDirectStatus.complete;
-        metadata.line = DataMartLineType.new;
+        metadata.userAccount = MobilePlansUserAccount.new;
+        metadata.purchaseInstrument = MobilePlansPurchaseInstrument.none;
+        metadata.moDirectStatus = MobilePlansMoDirectStatus.complete;
+        metadata.line = MobilePlansLineType.new;
         metadata.planName = "2GB Monthly";
         DataMart.notifyBalanceAddition(metadata, "89000000000000000000");
     }
@@ -256,10 +256,10 @@ The following Javascript function shows an example of the API to inform the appl
  ```Javascript
 function finishPurchaseWithCancellation() {
         var metadata = DataMart.createPurchaseMetaData();
-        metadata.userAccount = DataMartUserAccount.new;
-        metadata.purchaseInstrument = DataMartPurchaseInstrument.new;
-        metadata.moDirectStatus = DataMartMoDirectStatus.cancelled;
-        metadata.line = DataMartLineType.bailed;
+         metadata.userAccount = MobilePlansUserAccount.new;
+        metadata.purchaseInstrument = MobilePlansPurchaseInstrument.new;
+        metadata.moDirectStatus = MobilePlansMoDirectStatus.cancelled;
+        metadata.line = MobilePlansLineType.bailed;
         metadata.planName = "";
         DataMart.notifyCancelledPurchase(metadata);
     }
