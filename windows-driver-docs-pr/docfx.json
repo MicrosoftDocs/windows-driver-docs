@@ -48,7 +48,7 @@
       "ms.topic": "article",
       "_op_documentIdPathDepotMapping": {
         "./": {
-          "depot_name": "Win.wdkocs",
+          "depot_name": "Win.wdkdocs",
           "folder_relative_path_in_docset": "./"
         }
       }
