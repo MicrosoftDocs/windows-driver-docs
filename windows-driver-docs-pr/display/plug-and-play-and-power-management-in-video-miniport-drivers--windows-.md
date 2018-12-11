@@ -1,6 +1,6 @@
 ---
-title: Plug and Play and Power Management in Video Miniport Drivers (Windows 2000)
-description: Plug and Play and Power Management in Video Miniport Drivers (Windows 2000 Model)
+title: Power Management and PnP in Video Miniport Drivers (XDDM)
+description: Power Management and Plug and Play in Video Miniport Drivers (Windows 2000 Model)
 ms.assetid: e5b2ac53-e492-43de-91a3-5b02c26ee9a3
 keywords:
 - video miniport drivers WDK Windows 2000 , Plug and Play
@@ -8,11 +8,12 @@ keywords:
 - Plug and Play WDK video miniport
 - PnP WDK video miniport
 - power management WDK video miniport
-ms.date: 04/20/2017
+ms.date: 12/06/2018
 ms.localizationpriority: medium
+ms.custom: seodec18
 ---
 
-# Plug and Play and Power Management in Video Miniport Drivers (Windows 2000 Model)
+# Power Management and Plug and Play in Video Miniport Drivers (Windows 2000 Model)
 
 
 ## <span id="ddk_plug_and_play_and_power_management_in_video_miniport_drivers_windo"></span><span id="DDK_PLUG_AND_PLAY_AND_POWER_MANAGEMENT_IN_VIDEO_MINIPORT_DRIVERS_WINDO"></span>

@@ -1,5 +1,5 @@
 ---
-title: Installation Requirements for Display Miniport and User-Mode Display Drivers
+title: Installing Display Miniport and User-Mode Display Drivers
 description: Installation Requirements for Display Miniport and User-Mode Display Drivers
 ms.assetid: f813071d-897d-4100-bc46-326558de2e70
 keywords:
@@ -11,14 +11,12 @@ keywords:
 - graphics device display miniport drivers WDK Windows Vista
 - INF files WDK display , about driver installations
 - miniport drivers WDK display , installing
-ms.date: 04/20/2017
+ms.date: 12/06/2018
 ms.localizationpriority: medium
+ms.custom: seodec18
 ---
 
 # Installation Requirements for Display Miniport and User-Mode Display Drivers
-
-
-## <span id="ddk_installing_video_miniport_and_user_mode_display_drivers_gg"></span><span id="DDK_INSTALLING_VIDEO_MINIPORT_AND_USER_MODE_DISPLAY_DRIVERS_GG"></span>
 
 
 A display miniport driver for a graphics device is installed on the operating system by using an INF file that is marked as **Class=Display**. This INF will be interpreted by the system-supplied display class installer during driver installation.

@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # IRP\_MJ\_CLEANUP
 
 
-Drivers that maintain process-specific context information must handle cleanup requests in [*DispatchCleanup*](https://msdn.microsoft.com/library/windows/hardware/ff543233) routines.
+Drivers that maintain process-specific context information must handle cleanup requests in [*DispatchCleanup*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routines.
 
 When Sent
 ---------
@@ -58,7 +58,7 @@ Requirements
 ## See also
 
 
-[*DispatchCleanup*](https://msdn.microsoft.com/library/windows/hardware/ff543233)
+[*DispatchCleanup*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch)
 
 [**IO\_STACK\_LOCATION**](https://msdn.microsoft.com/library/windows/hardware/ff550659)
 

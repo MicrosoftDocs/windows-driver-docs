@@ -1,9 +1,10 @@
 ---
-title: What's new for Windows 10 display drivers (WDDM 2.0 and later)
+title: What's new for Windows 10 display drivers (WDDM 2.x)
 description: Describes new features in Windows 10 for display drivers
 ms.assetid: 619175D4-98DA-4B17-8F6F-71B13A31374D
-ms.date: 12/03/2018
+ms.date: 12/06/2018
 ms.localizationpriority: medium
+ms.custom: seodec18
 ---
 
 # What's new for Windows 10 display drivers (WDDM 2.0 and later)

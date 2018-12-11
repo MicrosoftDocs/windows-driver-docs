@@ -27,7 +27,7 @@ To fail an **IRP\_MN\_QUERY\_POWER** request for a system power state, a driver 
 
 3.  Call [**IoReleaseRemoveLock**](https://msdn.microsoft.com/library/windows/hardware/ff549560) to release the previously acquired lock.
 
-4.  Return a failure status from its [*DispatchPower*](https://msdn.microsoft.com/library/windows/hardware/ff543354) routine.
+4.  Return a failure status from its [*DispatchPower*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine.
 
  
 

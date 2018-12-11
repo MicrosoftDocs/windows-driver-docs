@@ -37,7 +37,7 @@ It does the following before sending this IRP to the drivers for a device:
 
 If all of the above steps succeed, the PnP manager sends the **IRP\_MN\_QUERY\_REMOVE\_DEVICE** to the drivers for the device.
 
-An **IRP\_MN\_QUERY\_REMOVE\_DEVICE** request is handled first by the top driver in the device stack and then by each next lower driver. A driver handles remove IRPs in its [*DispatchPnP*](https://msdn.microsoft.com/library/windows/hardware/ff543341) routine.
+An **IRP\_MN\_QUERY\_REMOVE\_DEVICE** request is handled first by the top driver in the device stack and then by each next lower driver. A driver handles remove IRPs in its [*DispatchPnP*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine.
 
 In response to an **IRP\_MN\_QUERY\_REMOVE\_DEVICE**, a driver must do the following:
 

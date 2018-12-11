@@ -32,6 +32,9 @@ Signature="signature-name"
 [CatalogFile.ntx86=unique-filename.cat]
 [CatalogFile.ntia64=unique-filename.cat]  (Windows XP and later versions of Windows)
 [CatalogFile.ntamd64=unique-filename.cat]  (Windows XP and later versions of Windows)
+[CatalogFile.ntarm=unique-filename.cat]  (Windows 8 and later versions of Windows)
+[CatalogFile.ntarm64=unique-filename.cat]  (Windows XP and later versions of Windows)
+
 DriverVer=mm/dd/yyyy,w.x.y.z
 [DontReflectOffline=1] (Windows Vista and later versions of Windows)
 [PnpLockDown=0|1] (Windows Vista and later versions of Windows)
@@ -107,13 +110,19 @@ System-supplied INF files never have **CatalogFile=** entries because the operat
 <a href="" id="catalogfile-ntia64-unique-filename-cat--"></a>**CatalogFile.ntia64=**<em>unique-filename</em>**.cat** |  
 
 <a href="" id="catalogfile-ntamd64-unique-filename-cat"></a>**CatalogFile.ntamd64=**<em>unique-filename</em>**.cat**  
+
+<a href="" id="catalogfile-ntarm-unique-filename-cat"></a>**CatalogFile.ntarm=**<em>unique-filename</em>**.cat**  
+
+<a href="" id="catalogfile-ntarm64-unique-filename-cat"></a>**CatalogFile.ntarm64=**<em>unique-filename</em>**.cat**  
+
+
 Specifies another INF-writer-determined, unique file name, with the .*cat* extension, of a catalog file. If these optional entries are omitted, a given **CatalogFile=**<em>filename.cat</em> is used for validating WDM device/driver installations.
 
 If any decorated **CatalogFile.*xxx*=** entry exists in an INF's **Version** section together with an undecorated **CatalogFile=** entry, the undecorated entry is assumed to identify a *filename.cat* for validating device installations, driver installations, or both on those platforms for which a decorated entry is not specified.
 
 Any cross-platform device driver INF file that has **CatalogFile=** and **CatalogFile.**<em>xxx</em>**=** entries must supply a unique IHV/OEM-determined name for each such .cat file.
 
-For more information about how to use the system-defined **.nt**, **.ntx86**, **.ntia64**, and **.ntamd64** extensions, see [Creating INF Files for Multiple Platforms and Operating Systems](creating-inf-files-for-multiple-platforms-and-operating-systems.md).
+For more information about how to use the system-defined **.nt**, **.ntx86**, **.ntia64**, **.ntamd64**, **.ntarm**, and **.ntarm64** extensions, see [Creating INF Files for Multiple Platforms and Operating Systems](creating-inf-files-for-multiple-platforms-and-operating-systems.md).
 
 **Note**  Because the same .cat file can be used across all supported platforms, the use of this entry is not required or recommended. However, you must use this entry if you want to create platform-specific .cat files for your driver package.
 
