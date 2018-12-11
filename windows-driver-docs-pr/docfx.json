@@ -45,7 +45,13 @@
       "ms.prod": "windows-hardware",
       "ms.technology": "windows-devices",
       "ms.author": "windowsdriverdev",
-      "ms.topic": "article"
+      "ms.topic": "article",
+      "_op_documentIdPathDepotMapping": {
+        "./": {
+          "depot_name": "Win.wdkocs",
+          "folder_relative_path_in_docset": "./"
+        }
+      }
     },
     "fileMetadata": {
       "author":
