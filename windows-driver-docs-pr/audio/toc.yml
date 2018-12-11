@@ -960,6 +960,8 @@
       href: pkey-compositefx-offload-streameffectclsid.md
     - name: "PKEY_CompositeFX_StreamEffectClsid"
       href: pkey-compositefx-streameffectclsid.md
+    - name: "PKEY_Devices_AudioDevice_Microphone_IsFarField"
+      href: pkey-devices-audiodevice-microphone-isfarfield.md
     - name: "PKEY_FX_KeywordDetector_StreamEffectClsid"
       href: pkey-fx-keyworddetector-streameffectclsid.md
     - name: "PKEY_FX_KeywordDetector_ModeEffectClsid"
