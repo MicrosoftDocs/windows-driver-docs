@@ -18,12 +18,12 @@ The device is not available because the system is shutting down.
 
 46
 
-### Display Message (Windows XP and later versions of Windows)
+### Display Message
 
 "Windows cannot gain access to this hardware device because the operating system is in the process of shutting down. (Code 46)
 
 "The hardware device should work correctly next time you start your computer."
 
-### Recommended Resolution (Windows XP and later versions of Windows)
+### Recommended Resolution
 
 None. This error code is only set when Driver Verifier is enabled and all applications have already been shut down.

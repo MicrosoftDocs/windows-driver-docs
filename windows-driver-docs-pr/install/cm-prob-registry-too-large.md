@@ -18,10 +18,10 @@ The registry is too large.
 
 49
 
-### Display Message (Windows XP and later versions of Windows)
+### Display Message
 
 "Windows cannot start new hardware devices because the system hive is too large (exceeds the Registry Size Limit). (Code 49)"
 
-### Recommended Resolution (Windows XP and later versions of Windows)
+### Recommended Resolution
 
 Set the environment variable DEVMGR_SHOW_NONPRESENT_DEVICES to 1. This causes Device Manager to display installed devices that are currently not present. Use Device Manager to remove these devices. If the registry is still too large, reinstall Windows.

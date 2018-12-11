@@ -16,11 +16,11 @@ The device did not start on a 64-bit version of Windows because it has a driver 
 
 52
 
-### Display Message (Windows 7 and later versions of Windows)
+### Display Message
 
 "Windows cannot verify the digital signature for the drivers required for this device. A recent hardware or software change might have installed a file that is signed incorrectly or damaged, or that might be malicious software from an unknown source. (Code 52)"
 
-### Recommended Resolution (Windows 7 and later versions of Windows)
+### Recommended Resolution
 
 The driver does not comply with the [kernel-mode code signing policy](kernel-mode-code-signing-policy--windows-vista-and-later-.md).
 
