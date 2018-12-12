@@ -23,7 +23,7 @@
   - name: "Provision a  computer for driver deployment and testing (WDK 10)"
     href: provision-a-target-computer-wdk-8-1.md
   - name: "Concepts for all driver developers"
-    href: concepts-and-knowledge-for-all-driver-developers.md
+    href: 
     items: 
     - name: "User mode and kernel mode"
       href: user-mode-and-kernel-mode.md

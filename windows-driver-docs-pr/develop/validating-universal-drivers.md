@@ -103,11 +103,11 @@ Use this workaround:
 
 2.  Rebuild the solution.
 
- 
+## Known issues
 
- 
-
-
-
+* ApiValidator does not run on ARM64 because AitStatic does not work on ARM64.
+* ARM64 binaries can be tested on x64 machines but not on an x86 machine.
+* ApiValidator can run on x86 to test x86 binaries and ARM binaries.
+* ApiValidator can run on x64 to test x86, x64, ARM, and ARM64 binaries.
 
 
