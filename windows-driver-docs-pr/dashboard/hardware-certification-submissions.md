@@ -158,7 +158,7 @@ This section displays certification information. Select **See more info** to exp
 </tr>
 <tr class="even">
 <td><p>Announcement date</p></td>
-<td><p>The date when you want your product included on the Windows Server Catalog, the Windows Certified Product List, and the Universal Driver List. The default setting is automatically set to "Today".</p></td>
+<td><p>The date when you want your product included on the Windows Server Catalog, the Windows Certified Product List, and the Universal Driver List. The default setting is **Today**.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Marketing names</p></td>
