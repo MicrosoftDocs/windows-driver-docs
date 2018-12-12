@@ -779,6 +779,8 @@
       href: kspropsetid-fmrxtopology.md
     - name: "KSPROPSETID_Hrtf3d"
       href: kspropsetid-hrtf3d.md
+    - name: "KSPROPSETID_InterleavedAudio"
+      href: kspropsetid-interleavedaudio.md
     - name: "KSPROPSETID_Itd3d"
       href: kspropsetid-itd3d.md
     - name: "KSPROPSETID_Jack"
@@ -1250,6 +1252,8 @@
       href: ksproperty-hrtf3d-initialize.md
     - name: "KSPROPERTY_HRTF3D_PARAMS"
       href: ksproperty-hrtf3d-params.md
+    - name: "KSPROPERTY_INTERLEAVEDAUDIO"
+      href: ksproperty-interleavedaudio.md
     - name: "KSPROPERTY_ITD3D_PARAMS"
       href: ksproperty-itd3d-params.md
     - name: "KSPROPERTY_JACK"
