@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 ![figure of a compass, a map, and a finger pointing at the map](images/map-hand-sml.png)
 
-To install a device and driver in Windows 7 and later versions of Windows, follow these steps:
+To install a device and driver in the Windows operating system, follow these steps:
 
 -   Step 1: Learn the fundamentals of device and driver installation in Windows.
 
@@ -35,9 +35,9 @@ To install a device and driver in Windows 7 and later versions of Windows, foll
 
     Your driver package must provide an INF file, the device's driver files, as well as optionally provide additional software components. You may refer to the sample Toaster driver package to determine which components are needed for your driver package.
 
-    For more information about the components of a driver package, see [Creating a Driver Package](https://msdn.microsoft.com/windows-drivers/develop/creating_a_driver_package).
+    For more information about the components of a driver package, see [Creating a Driver Package](https://docs.microsoft.com/en-us/windows-hardware/drivers/develop/creating-a-driver-package).
 
-    For more information about driver packages, see the [Toaster Sample](http://go.microsoft.com/fwlink/p/?linkid=256195).
+    For more information about driver packages, see the [Toaster Sample](https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/sample-kmdf-drivers).
 
 -   Step 5: Test-sign your driver package during development and testing.
 
@@ -56,14 +56,14 @@ To install a device and driver in Windows 7 and later versions of Windows, foll
 
     [Driver packages](driver-packages.md) are release-signed through either:
 
-    -   A [WHQL Release Signature](whql-release-signature.md) obtained through the [Hardware Certification Kit (HCK)](http://go.microsoft.com/fwlink/p/?linkid=227016).
+    -   A [WHQL Release Signature](whql-release-signature.md) obtained through the [Windows Hardware Compatibility Program](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/) (for Windows 10), or the [Windows Hardware Certification Program](https://docs.microsoft.com/en-us/previous-versions/windows/hardware/hck/jj125187(v%3dvs.85)) (for Windows 8/8.1 and older operating systems).
     -   A release signature created through a [Software Publisher Certificate (SPC)](software-publisher-certificate.md).
 
     For more information, see [Signing Drivers for Public Release](signing-drivers-for-public-release--windows-vista-and-later-.md).
 
 -   Step 7: Distribute your driver package.
 
-    The final step is to distribute the [driver package](driver-packages.md). If your driver package meets the quality standards that are defined in the HCK, you can distribute it through Microsoft Windows Update program. For more information, see [Distributing a Driver Package](https://msdn.microsoft.com/windows-drivers/develop/distributing_a_driver_package_win8).
+    The final step is to distribute the [driver package](driver-packages.md). If your driver package meets the quality standards that are defined in the the [Windows Hardware Compatibility Program](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/) (for Windows 10), or the [Windows Hardware Certification Program](https://docs.microsoft.com/en-us/previous-versions/windows/hardware/hck/jj125187(v%3dvs.85)) (for Windows 8/8.1 and older operating systems), you can distribute it through Microsoft Windows Update program. For more information, see [Publishing a driver to Windows Update](https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/publish-a-driver-to-windows-update).
 
 These are the basic steps. Additional steps might be necessary based on the installation needs of your individual device and driver.
 
