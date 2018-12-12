@@ -21,7 +21,7 @@ To get started, be sure you have the most recent version of Microsoft Visual Stu
 
 
 1.  Open Visual Studio. On the **File** menu, choose **New &gt; Project**.
-2.  In the New Project dialog box, in the left pane, go to **Templates &gt; Visual C++ &gt; Windows Driver &gt; WDF**. Select **User Mode Driver (UMDF V2)**.
+2.  In the New Project dialog box, in the left pane, go to **Visual C++ &gt; Windows Drivers &gt; WDF**. Select **User Mode Driver (UMDF V2)**.
 3.  In the **Name** field, enter "UmdfDriver" as the project name.
 
     **Note**  When you create a new KMDF or UMDF driver, you must select a driver name that has 32 characters or less. This length limit is defined in wdfglobals.h.
