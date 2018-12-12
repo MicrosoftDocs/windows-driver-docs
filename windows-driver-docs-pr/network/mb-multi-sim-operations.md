@@ -205,7 +205,7 @@ The InformationBuffer shall be null and InformationBufferLength shall be zero.
 
 Not applicable.
 
-##### Reponse
+##### Response
 
 The following MBIM_SYS_CAPS_INFO structure shall be used in the InformationBuffer.
 
