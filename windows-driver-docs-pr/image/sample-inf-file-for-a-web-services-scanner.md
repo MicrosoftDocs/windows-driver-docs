@@ -114,7 +114,7 @@ ScanToEmailEvent=%ScanToEmailEvent.Desc%,{C686DCEE-54F2-419E-9A27-2FC7F2E98F9E},
 
 [WSDScanDriver.Device.HW]
 Include=sti.inf
-Needs=STI.WSDSectionHW
+Needs=STI.WSDSection.HW
 
 [WSDScanDriver.Device.Services]
 Include=sti.inf
