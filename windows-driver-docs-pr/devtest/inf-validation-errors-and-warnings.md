@@ -110,7 +110,8 @@ Provider="Microsoft"
 </tr>
 <tr>
 <td><strong>1205: Section [Driver_files] referenced from [Directive1] and [Directive2] directive</td>
-<td>This warning is generated whenever two different directives point to the same section.</td>
+<td>This warning is generated whenever two different directives point to the same section.
+  <p>Note that while in most cases this is, indeed, an error, in some cases 1205 is reported even though the condition is on purpose.</td>
 </tr>
 <tr>
 <td><strong>1212: Cannot have both [DefaultInstall] and [Manufacturer]</strong></td>

@@ -52,7 +52,7 @@ Specifies a token, unique within the INF file that represents the name of a manu
 Specifies an INF-writer-defined name for the per-manufacturer [**INF *Models* section**](inf-models-section.md) within the INF file. This value must be unique within the INF file and must follow the general rules for defining section names. For more information about these rules, see [General Syntax Rules for INF Files](general-syntax-rules-for-inf-files.md).
 
 <a href="" id="targetosversion"></a>*TargetOSVersion*  
-For Windows XP and later versions of Windows, this specifies one or more target operating system versions with which various INF ***Models*** sections can be used. Windows chooses the INF ***Models*** section that most closely matches the operating system version on which it is executing.
+Specifies one or more target operating system versions with which various INF ***Models*** sections can be used. Windows chooses the INF ***Models*** section that most closely matches the operating system version on which it is executing.
 
 **Note**: In the C++ code above, multiple TargetOSVersions are listed in one entry.  This is the correct way to add multiple TargetOSVersions.  Do not represent each target as a separate entry.  See related info in Example 3 below.
 
@@ -73,7 +73,7 @@ If an INF file specifies one or more entries in the *manufacturer-name* format, 
 
 You can think of each system-supplied INF file's **Manufacturer** section as a table of contents, because this section sets up the installation of every manufacturer's device models for a [device setup class](device-setup-classes.md). Each entry in an INF file's **Manufacturer** section specifies both an easily localizable %*strkey*% token for the name of a manufacturer and a unique-to-the-INF per-manufacturer ***Models*** section name.
 
-For Windows XP and later versions of Windows, *models-section-name* entries in the **Manufacturer** section can be decorated to specify target operating system versions. Different [**INF *Models* sections**](inf-models-section.md) can be specified for different versions of the operating system. The specified versions indicate operating system versions with which the INF ***Models*** sections is used. If no versions are specified, Windows uses a specified ***Models*** section for all versions of all operating systems.
+The *models-section-name* entries in the **Manufacturer** section can be decorated to specify target operating system versions. Different [**INF *Models* sections**](inf-models-section.md) can be specified for different versions of the operating system. The specified versions indicate operating system versions with which the INF ***Models*** sections is used. If no versions are specified, Windows uses a specified ***Models*** section for all versions of all operating systems.
 
 For Windows XP to Windows 10, version 1511, the format of *TargetOSVersion* decoration is as follows:
 
