@@ -145,7 +145,7 @@ GET_DEF requirement: The default for **bmControlFlags** shall be D0 set to 1 and
 
 For GET_CUR/SET_CUR requests, the following restrictions apply for field **bmControlFlags**:
 
--   Among D0, D1 and D2 bits, atleast one bit shall be set.
+-   Among D0, D1 and D2 bits, at least one bit shall be set.
 
 -   D1 is incompatible with D0 and D2.
 
@@ -179,7 +179,7 @@ GET_DEF requirement: The default for **bmControlFlags** shall be D0 set to 1 and
 
 For GET_CUR/SET_CUR requests, the following restrictions apply for field **bmControlFlags**:
 
-- Among D0, D1 and D2 bits, atleast one bit shall be set.
+- Among D0, D1 and D2 bits, at least one bit shall be set.
 
 - D1 is incompatible with D0 and D2.
 
