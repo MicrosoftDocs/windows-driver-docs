@@ -2,10 +2,11 @@
 title: Debugger Data Model - Instruction Attributes Objects
 description: Contains a description of some of the details of an instruction.
 ms.date: 12/12/2018
+ms.localizationpriority: medium
 ---
 # Instruction Attributes Objects 
 ## Summary
-The *Attributes* property of an  `instruction object ` contains a description of some of the details of an instruction.
+The *Attributes* property of an [instruction](dbgmodel-object-instruction.md) object contains a description of some of the details of an instruction.
 ## Object Properties
 |Name|Description|
 |--- |--- |

@@ -1,7 +1,8 @@
 ---
 title: Debugger Data Model - The Collections Namespace
-description: Provides methods that allow for the creation and manipulation of collections of objects (e.g.: iterables).
+description: Provides methods that allow for the creation and manipulation of collections of objects.
 ms.date: 12/13/2018
+ms.localizationpriority: medium
 ---
 # The Collections Namespace
 ## Summary
