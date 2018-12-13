@@ -56,6 +56,7 @@ Specifies one or more target operating system versions with which various INF **
 
 **Note**: In the C++ code above, multiple TargetOSVersions are listed in one entry.  This is the correct way to add multiple TargetOSVersions.  Do not represent each target as a separate entry.  See related info in Example 3 below.
 
+
 For a description of the *TargetOSVersion* decoration, see the following **Remarks** section.
 
 **Important**:  Starting with Windows Server 2003 SP1, INF files must decorate models-section-name entries in the **INF Manufacturer section**, as well as the associated INF ***Models*** section names, with .ntia64 or .ntamd64 platform extensions to specify non-x86 target operating system versions. These platform extensions are not required in INF files for x86-based target operating system versions or non-PnP driver INF files, such as file system driver INF files for x64-based architectures.
