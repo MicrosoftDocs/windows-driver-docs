@@ -1,32 +1,32 @@
 ---
-title: KSPROPERTY\_INTERLEAVEDAUDIO
+title: KSPROPERTY\_INTERLEAVEDAUDIO_FORMATINFORMATION 
 description: The KSPROPERTY\_INTERLEAVEDAUDIO_FORMATINFORMATION property provides  additional information about the interleaving of loopback audio and capture audio.
 keywords: ["KSPROPERTY_INTERLEAVEDAUDIO_FORMATINFORMATION Audio Devices"]
 topic_type:
 - apiref
 api_name:
-- KSPROPERTY_INTERLEAVEDAUDIO
+- KSPROPERTY_INTERLEAVEDAUDIO_FORMATINFORMATION 
 api_location:
 - ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 12/12/2018
+ms.date: 12/13/2018
 ms.localizationpriority: medium
 ---
 
-# KSPROPERTY\_INTERLEAVEDAUDIO
+# KSPROPERTY\_INTERLEAVEDAUDIO_FORMATINFORMATION 
 
-The **KSPROPERTY\_INTERLEAVEDAUDIO** property provides additional information about the interleaving of loopback audio and capture audio.
+The **KSPROPERTY\_INTERLEAVEDAUDIO_FORMATINFORMATION** property provides additional information about the interleaving of loopback audio and capture audio.
 
 ### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
 
  |Get|Set|Target|Property descriptor type|Property value type|
 |--- |--- |--- |--- |--- |
-|Yes|No|Pin|[KSPROPERTY](https://msdn.microsoft.com/library/windows/hardware/ff564262)|[INTERLEAVED_AUDIO_FORMAT_INFORMATION](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-interleaved-audio-format-information)|
+|Yes|No|Pin|[KS_PIN](https://msdn.microsoft.com/library/windows/hardware/ff566722(v=vs.85).aspx)|[INTERLEAVED_AUDIO_FORMAT_INFORMATION](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-interleaved-audio-format-information)|
 
 ### <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
- For the get, **KSPROPERTY\_INTERLEAVEDAUDIO** returns an [INTERLEAVED_AUDIO_FORMAT_INFORMATION](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-interleaved-audio-format-information) structure which contains additional information about the interleaving of loopback audio and capture audio in the audio stream. 
+ For the get, **KSPROPERTY\_INTERLEAVEDAUDIO_FORMATINFORMATION** returns an [INTERLEAVED_AUDIO_FORMAT_INFORMATION](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-interleaved-audio-format-information) structure which contains additional information about the interleaving of loopback audio and capture audio in the audio stream. 
 
 Remarks
 -------
@@ -48,12 +48,7 @@ Requirements
 
 [KSPROPSETID\_INTERLEAVEDAUDIO](kspropsetid-interleavedaudio.md)
 
-[KSPROPERTY](https://msdn.microsoft.com/library/windows/hardware/ff564262)
-
- 
-
- 
-
+[KS_PIN](https://msdn.microsoft.com/library/windows/hardware/ff566722(v=vs.85).aspx)
 
 
 
