@@ -10,7 +10,7 @@ api_location:
 - ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 12/11/2018
+ms.date: 12/12/2018
 ms.localizationpriority: medium
 ---
 
@@ -22,7 +22,7 @@ The **KSPROPERTY\_INTERLEAVEDAUDIO** property provides additional information ab
 
  |Get|Set|Target|Property descriptor type|Property value type|
 |--- |--- |--- |--- |--- |
-|Yes|Yes|Pin|[KSPROPERTY](https://msdn.microsoft.com/library/windows/hardware/ff564262)|[INTERLEAVED_AUDIO_FORMAT_INFORMATION](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-interleaved-audio-format-information)|
+|Yes|No|Pin|[KSPROPERTY](https://msdn.microsoft.com/library/windows/hardware/ff564262)|[INTERLEAVED_AUDIO_FORMAT_INFORMATION](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-interleaved-audio-format-information)|
 
 ### <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -31,10 +31,9 @@ The **KSPROPERTY\_INTERLEAVEDAUDIO** property provides additional information ab
 Remarks
 -------
 
-This property is intended for keyword spotter burst pins only and provides a way to include loopback audio alongside the keyword burst. This is done by mixing the burst audio and loopback together into a single PCM audio stream and then communicating, via this property, which channels are loopback, and which are the primary channel audio.
+This property is intended only for the Hardware Keyword Spotter pin and provides a way to include loopback audio interleaved with the microphone audio. This is done by interleaving the Hardware Keyword Spotter pin audio and loopback audio together into a single PCM audio stream and then communicating, via this property, the channels containing loopback vs. microphone audio.
 
-
-A sample APO is available that makes use of this property. It is on GitHub as part of the sysvad sample driver and is called *KWSApo*. The sample APO simply strips out the loopback audio, providing only the primary audio upstream.
+A sample APO is available that makes use of this property. It is on GitHub as part of the sysvad sample driver and is called *KWSApo*. The sample APO simply strips out the loopback audio, providing only the primary microphone audio upstream.
 
 
 Requirements
