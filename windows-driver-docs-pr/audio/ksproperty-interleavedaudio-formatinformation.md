@@ -1,7 +1,7 @@
 ---
 title: KSPROPERTY\_INTERLEAVEDAUDIO
-description: The KSPROPERTY\_INTERLEAVEDAUDIO property provides  additional information about the interleaving of loopback audio and capture audio.
-keywords: ["KSPROPERTY_INTERLEAVEDAUDIO Audio Devices"]
+description: The KSPROPERTY\_INTERLEAVEDAUDIO_FORMATINFORMATION property provides  additional information about the interleaving of loopback audio and capture audio.
+keywords: ["KSPROPERTY_INTERLEAVEDAUDIO_FORMATINFORMATION Audio Devices"]
 topic_type:
 - apiref
 api_name:

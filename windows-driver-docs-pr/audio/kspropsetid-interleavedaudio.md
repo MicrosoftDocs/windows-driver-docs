@@ -1,7 +1,7 @@
 ---
 title: KSPROPSETID\_InterleavedAudio
 description: The KSPROPSETID\_InterleavedAudio property set is implemented by audio device drivers that would like to provide extra information about the interleaving of loopback audio and capture audio.
-ms.date: 12/11/2018
+ms.date: 12/13/2018
 ms.localizationpriority: medium
 ---
 
@@ -22,7 +22,7 @@ DEFINE_GUIDSTRUCT("E9EBE550-D619-4C0A-976B-7062322B3006", KSPROPSETID_Interleave
 
 The **KSPROPSETID\_InterleavedAudio** property set contains the following KS property.
 
-[**KSPROPERTY\_INTERLEAVEDAUDIO**](ksproperty-interleavedaudio.md)
+[**KSPROPERTY\_INTERLEAVEDAUDIO_FORMATINFORMATION**](ksproperty-interleavedaudio-formatinformation.md)
 
 This property name is defined in the [**KSPROPERTY\_INTERLEAVEDAUDIO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ne-ksmedia-ksproperty_interleavedaudio) enum.
 
