@@ -9,7 +9,10 @@ ms.localizationpriority: medium
 >
 # The FileSystem Namespace
 ## Summary
-The FileSystem namespace provides the  properties and methods for manipulating the file system.
+The FileSystem namespace provides the  properties and methods for manipulating the file system. This can be used from JavaScript for reading or writing files that are needed to support your debugger extension.
+
+## Sample
+For a simple end-to-end example of how to use this namespace and these objects, check out the sample on GitHub - https://github.com/Microsoft/WinDbg-Samples/tree/master/FileSystem 
 
 ## Object Methods
 |Name|Return Type|Signature|Description|
