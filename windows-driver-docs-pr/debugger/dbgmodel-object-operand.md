@@ -11,4 +11,4 @@ Individual operands of a machine instruction are described by operand objects. T
 |Name|Description|
 |--- |--- |
 |Attributes|An [operand attributes](dbgmodel-object-operand-attributes.md) object describing certain aspects of the operand.|
-|Registers|A  `collection` of [register](dbgmodel-object-register.md) objects which describe all registers that the operand utilizes.|
+|Registers|A [collection](dbgmodel-namespace-collections.md) of [register](dbgmodel-object-register.md) objects which describe all registers that the operand utilizes.|
