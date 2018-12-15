@@ -68,7 +68,7 @@ Values for properties designated as read/write can be specified by the client ap
 <strong>SENSOR_PROPERTY_ACCURACY</strong>
 (PID = 17)</td>
 <td><p><strong>VT_UNKNOWN</strong></p>
-<p>Read only. <a href="http://go.microsoft.com/fwlink/p/?linkid=134660" data-raw-source="[IPortableDeviceValues](http://go.microsoft.com/fwlink/p/?linkid=134660)">IPortableDeviceValues</a> object that contains sensor data type names and their associated accuracies. Accuracy values represent possible variation from true values. Accuracy values are expressed by using the same units as the data field, except when otherwise documented.</p></td>
+<p>Read only. <a href="https://go.microsoft.com/fwlink/p/?linkid=134660" data-raw-source="[IPortableDeviceValues](https://go.microsoft.com/fwlink/p/?linkid=134660)">IPortableDeviceValues</a> object that contains sensor data type names and their associated accuracies. Accuracy values represent possible variation from true values. Accuracy values are expressed by using the same units as the data field, except when otherwise documented.</p></td>
 </tr>
 <tr class="even">
 <td><span id="SENSOR_PROPERTY_CHANGE_SENSITIVITY"></span><span id="sensor_property_change_sensitivity"></span>
@@ -280,7 +280,7 @@ Requirements
 
 [**GetProperty**](https://msdn.microsoft.com/library/windows/desktop/dd318876)
 
-[IPortableDeviceValues](http://go.microsoft.com/fwlink/p/?linkid=275070)
+[IPortableDeviceValues](https://go.microsoft.com/fwlink/p/?linkid=275070)
 
 [**SetProperties**](https://msdn.microsoft.com/library/windows/desktop/dd318899)
 

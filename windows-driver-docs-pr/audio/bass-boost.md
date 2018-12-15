@@ -2,7 +2,7 @@
 title: Bass Boost
 description: Bass Boost
 ms.assetid: 20f6b1af-37bc-4c8e-8c6a-2926fc6a0c7f
-ms.date: 04/20/2017
+ms.date: 11/07/2018
 ms.localizationpriority: medium
 ---
 

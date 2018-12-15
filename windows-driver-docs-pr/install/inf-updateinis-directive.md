@@ -30,6 +30,10 @@ An **UpdateInis** directive references one or more named sections, specifying an
 [ClassInstall32.ntx86] | 
 [ClassInstall32.ntia64] |  (Windows XP and later versions of Windows)
 [ClassInstall32.ntamd64]  (Windows XP and later versions of Windows)
+[ClassInstall32.ntarm]  (Windows 8 and later versions of Windows)
+[ClassInstall32.ntarm64]  (Windows 10 and later versions of Windows)
+
+
   
 UpdateInis=update-ini-section[,update-ini-section]...
 ```

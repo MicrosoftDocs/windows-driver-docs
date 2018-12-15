@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 It is typical today for a discrete graphics processing unit (GPU) to have only a small portion of its frame buffer exposed over the PCI bus. For compatibility with 32bit OSes, discrete GPUs typically claim a 256MB I/O region for their frame buffers and this is how typical firmware configures them.
 
-For Windows Display Driver Model (WDDM) v2, Windows will renegotiate the size of a GPU BAR post firmware initialization on GPUs supporting resizable BAR, see [Resizable BAR Capability](http://go.microsoft.com/fwlink/p/?LinkId=525610) in the [PCI SIG Specifications Library](http://go.microsoft.com/fwlink/p/?LinkId=690603).
+For Windows Display Driver Model (WDDM) v2, Windows will renegotiate the size of a GPU BAR post firmware initialization on GPUs supporting resizable BAR, see [Resizable BAR Capability](https://go.microsoft.com/fwlink/p/?LinkId=525610) in the [PCI SIG Specifications Library](https://go.microsoft.com/fwlink/p/?LinkId=690603).
 
 A GPU, supporting resizable BAR, must ensure that it can keep the display up and showing a static image during the reprogramming of the BAR. In particular, we don't want to see the display go blank and back up during this process. It is important to have smooth transition between the firmware displayed image, the boot loader image and the first kernel mode driver generated image. It is guaranteed that no PCI transaction will occur toward the GPU while the renegotiation is taking place.
 

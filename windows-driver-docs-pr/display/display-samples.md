@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 ### <span id="display_samples"></span><span id="DISPLAY_SAMPLES"></span>
 
-Starting with Windows 8, [samples are available for download](http://go.microsoft.com/fwlink/p/?LinkId=618052) from the Hardware Dev Center. For Windows 7 and earlier, samples and documentation were included in the Windows Driver Kit (WDK) or Driver Development Kit (DDK).
+Starting with Windows 8, [samples are available for download](https://go.microsoft.com/fwlink/p/?LinkId=618052) from the Hardware Dev Center. For Windows 7 and earlier, samples and documentation were included in the Windows Driver Kit (WDK) or Driver Development Kit (DDK).
 
 <table>
 <colgroup>
@@ -34,7 +34,7 @@ Starting with Windows 8, [samples are available for download](http://go.microso
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><a href="http://go.microsoft.com/fwlink/p/?LinkId=618052" data-raw-source="[Kernel mode display-only miniport driver](http://go.microsoft.com/fwlink/p/?LinkId=618052)">Kernel mode display-only miniport driver</a></p>
+<td align="left"><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=618052" data-raw-source="[Kernel mode display-only miniport driver](https://go.microsoft.com/fwlink/p/?LinkId=618052)">Kernel mode display-only miniport driver</a></p>
 <p>Available in the Hardware Dev Center.</p></td>
 <td align="left"><p></p>
 Windows 8</td>
@@ -45,7 +45,7 @@ Windows 8</td>
 <td align="left"><p>Implements most of the device driver interfaces (DDIs) that a display-only miniport driver should provide to the Windows Display Driver Model (WDDM).</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="http://go.microsoft.com/fwlink/p/?LinkId=618052" data-raw-source="[PixLib](http://go.microsoft.com/fwlink/p/?LinkId=618052)">PixLib</a></p>
+<td align="left"><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=618052" data-raw-source="[PixLib](https://go.microsoft.com/fwlink/p/?LinkId=618052)">PixLib</a></p>
 <p>Available in the Hardware Dev Center.</p></td>
 <td align="left"><p></p>
 Windows 8

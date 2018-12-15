@@ -21,8 +21,7 @@ For information about creating and digitally signing an **.hckx** file, see the 
 
 ## <span id="To_submit_a_file"></span><span id="to_submit_a_file"></span><span id="TO_SUBMIT_A_FILE"></span>To submit a file
 
-
-1. Sign in to the Windows Hardware Dev Center dashboard, and then select **Submit new hardware**. This loads the submission creation wizard.
+1. Sign in to the Partner Center, and then select **Submit new hardware**. This loads the submission creation wizard.
 
 2. In the **Packages and signing properties** section, choose a name for your driver submission. This name can be used to search for and organize your driver submissions. Note: If you share your driver with another company, they will see this name.
 
@@ -94,6 +93,6 @@ For information about creating and digitally signing an **.hckx** file, see the 
 
 ## Related topics
 
-   *  [Managing hardware submissions in the Windows Hardware Dev Center dashboard](manage-your-hardware-submissions.md)
+   *  [Managing hardware submissions in the Partner Center](manage-your-hardware-submissions.md)
    *  [Get drivers signed by Microsoft for multiple Windows versions](get-drivers-signed-by-microsoft-for-multiple-windows-versions.md)
    *  [Driver flighting](driver-flighting.md)

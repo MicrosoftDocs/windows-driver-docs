@@ -17,11 +17,11 @@ To get started, be sure you have the most recent version of Microsoft Visual Stu
 
 [Debugging Tools for Windows](http://go.microsoft.com/fwlink/p?linkid=223405) is included when you install the WDK.
 
-## <span id="Create_and_build_a_driver_package"></span><span id="create_and_build_a_driver_package"></span><span id="CREATE_AND_BUILD_A_DRIVER_PACKAGE"></span>Create and build a driver package
+## Create and build a driver
 
 
 1.  Open Visual Studio. On the **File** menu, choose **New &gt; Project**.
-2.  In the New Project dialog box, in the left pane, go to **Templates &gt; Visual C++ &gt; Windows Driver &gt; WDF**. Select **User Mode Driver (UMDF V2)**.
+2.  In the New Project dialog box, in the left pane, go to **Visual C++ &gt; Windows Drivers &gt; WDF**. Select **User Mode Driver (UMDF V2)**.
 3.  In the **Name** field, enter "UmdfDriver" as the project name.
 
     **Note**  When you create a new KMDF or UMDF driver, you must select a driver name that has 32 characters or less. This length limit is defined in wdfglobals.h.
@@ -35,13 +35,13 @@ To get started, be sure you have the most recent version of Microsoft Visual Stu
 
     Visual Studio creates one project and a solution. You can see them in the **Solution Explorer** window. (If the **Solution Explorer** window is not visible, choose **Solution Explorer** from the **View** menu.) The solution has a driver project named UmdfDriver. To see the driver source code, open any of the files under **Source Files**. Driver.cpp and Device.cpp are good places to start.
 
-    ![screen shot of solution explorer showing the files in the driver project and the package project](images/vs2015-umdf2-solution-explorer.png)
+    ![screen shot of solution explorer showing the files in the driver project](images/vs2015-umdf2-solution-explorer.png)
 
-6.  In the **Solution Explorer** window, right-click **Solution 'UmdfDriver' (1 project)**, and choose **Configuration Manager**. Choose a configuration and platform for both the driver project and the package project. For example, choose Debug and x64.
+6.  In the **Solution Explorer** window, right-click **Solution 'UmdfDriver' (1 project)**, and choose **Configuration Manager**. Choose a configuration and platform for the driver project. For example, choose **Debug** and **x64**.
 
 7.  In the **Solution Explorer** window, right-click **UmdfDriver**, and choose **Properties**. Navigate to **Configuration Properties &gt; Driver Settings &gt; General**, and note that **Target Platform** defaults to **Universal.**
 
-8.  To build your driver and create a driver package, choose **Build Solution** from the **Build** menu. Microsoft Visual Studio displays build progress in the **Output** window. (If the **Output** window is not visible, choose **Output** from the **View** menu.)
+8.  To build your driver, choose **Build Solution** from the **Build** menu. Microsoft Visual Studio displays build progress in the **Output** window. (If the **Output** window is not visible, choose **Output** from the **View** menu.)
 
     Verify that the build output includes:
 
@@ -70,7 +70,7 @@ So far, you've used Visual Studio to build a driver on the host computer. Now yo
 5.  For **Target Device Name**, select the name of the computer that you configured for testing and debugging.
 6.  Select **Hardware ID Driver Update**, and enter the hardware ID for your driver. In this exercise, the hardware ID is Root\\UmdfDriver. Click **OK**.
 
-    ![screen shot of the umdfdriver package property pages, showing deployment driver install selected](images/vs2015-deploy.png)
+    ![screen shot of the umdfdriver property pages, showing deployment driver install selected](images/vs2015-deploy.png)
 
     **Note**  In this exercise, the hardware ID does not identify a real piece of hardware. It identifies an imaginary device that will be given a place in the [device tree](http://go.microsoft.com/fwlink/p?linkid=399236) as a child of the root node. For real hardware, do not select **Hardware ID Driver Update**; instead, select **Install and Verify**.
     You can see the hardware ID in your driver's information (INF) file. In the **Solution Explorer** window, go to **UmdfDriver &gt; Driver Files**, and double-click UmdfDriver.inf. The hardware ID is under \[Standard.NT$ARCH$\].

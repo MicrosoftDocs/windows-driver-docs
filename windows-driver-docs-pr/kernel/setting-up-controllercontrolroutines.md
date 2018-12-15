@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-A driver's [*DispatchPnP*](https://msdn.microsoft.com/library/windows/hardware/ff543341) routine must do the following when it receives an [**IRP\_MN\_START\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551749) request, to set up a [*ControllerControl*](https://msdn.microsoft.com/library/windows/hardware/ff542049) routine:
+A driver's [*DispatchPnP*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine must do the following when it receives an [**IRP\_MN\_START\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551749) request, to set up a [*ControllerControl*](https://msdn.microsoft.com/library/windows/hardware/ff542049) routine:
 
 1.  Call [**IoCreateController**](https://msdn.microsoft.com/library/windows/hardware/ff548395) to set up the controller object, specifying the driver-determined *Size* for the controller extension, which the system allocates from nonpaged pool and initializes with zeros.
 

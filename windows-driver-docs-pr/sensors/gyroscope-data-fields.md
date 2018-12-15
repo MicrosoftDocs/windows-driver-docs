@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 This topic provides information about the data fields that are specific to the gyroscope.
 
-The following table shows the data fields. For more information about the types shown in the type column, see [PROPVARIANT structure](http://go.microsoft.com/fwlink/p/?linkid=313395).
+The following table shows the data fields. For more information about the types shown in the type column, see [PROPVARIANT structure](https://go.microsoft.com/fwlink/p/?linkid=313395).
 
 <table>
 <colgroup>
@@ -55,7 +55,7 @@ The following table shows the data fields. For more information about the types 
 ## <span id="related_topics"></span>Related topics
 
 
-[PROPVARIANT structure](http://go.microsoft.com/fwlink/p/?linkid=313395)
+[PROPVARIANT structure](https://go.microsoft.com/fwlink/p/?linkid=313395)
 
  
 

@@ -1,6 +1,6 @@
 ---
-title: Reporting DirectDraw Capabilities for DMA Model Nonlocal Display Memory
-description: Reporting DirectDraw Capabilities for DMA Model Nonlocal Display Memory
+title: Reporting DDraw Capabilities for Nonlocal Display Memory
+description: A DMA model driver has different capabilities for nonlocal display memory than for local display memory.
 ms.assetid: e503fc8b-db27-486a-8616-a1b88ea77218
 keywords:
 - DMA-style AGP WDK DirectDraw
@@ -11,15 +11,12 @@ keywords:
 - DirectDraw AGP support WDK Windows 2000 display , DMA-style AGP
 - memory WDK DirectDraw AGP , DMA-style AGP
 - reporting DirectDraw capabilities
-ms.date: 04/20/2017
+ms.date: 12/06/2018
 ms.localizationpriority: medium
+ms.custom: seodec18
 ---
 
-# Reporting DirectDraw Capabilities for DMA Model Nonlocal Display Memory
-
-
-## <span id="ddk_reporting_directdraw_capabilities_for_dma_model_nonlocal_display_m"></span><span id="DDK_REPORTING_DIRECTDRAW_CAPABILITIES_FOR_DMA_MODEL_NONLOCAL_DISPLAY_M"></span>
-
+# Reporting DirectDraw Capabilities for Nonlocal Display Memory
 
 A DMA model driver has different capabilities for nonlocal display memory than for local display memory. For example, a display card may be able to stretch blit local display memory surfaces but not nonlocal display memory surfaces. If the driver specifies the DDCAPS2\_NONLOCALVIDMEMCAPS flag, the driver is probed for the DirectDraw capabilities of nonlocal display memory surface by the [**DdGetDriverInfo**](https://msdn.microsoft.com/library/windows/hardware/ff549404) driver entry point. The GUID that identifies this probe is GUID\_NonLocalVidMemCaps.
 

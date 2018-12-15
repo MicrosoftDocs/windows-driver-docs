@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 **This section applies only to Windows Server 2003 SP1 and later, and Windows XP SP2 and later.**
 
-The [COPP DDI](https://msdn.microsoft.com/library/windows/hardware/ff540449) can return the following types of error codes:
+The [COPP DDI](sample-functions-for-copp.md) can return the following types of error codes:
 
 -   Error codes that are defined in the *winerror.h* header file and are common to all Windows applications. These Windows error codes start with the E\_ prefix.
 

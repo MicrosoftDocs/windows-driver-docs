@@ -2,7 +2,7 @@
 title: Virtualized Surround Sound over Headphones
 description: Virtualized Surround Sound over Headphones
 ms.assetid: 9ed47254-413d-4efc-bfbf-929d0428e2c2
-ms.date: 04/20/2017
+ms.date: 11/07/2018
 ms.localizationpriority: medium
 ---
 

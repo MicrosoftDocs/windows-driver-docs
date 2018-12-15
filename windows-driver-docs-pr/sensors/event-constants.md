@@ -40,8 +40,8 @@ The sensor platform defines the following **PROPERTYKEY**s to identify the param
 
 |Name|Description|
 |--|--|
-|SENSOR_EVENT_PARAMETER_EVENT_ID|Indicates that the <strong>GUID</strong> value in [IPortableDeviceValues](http://go.microsoft.com/fwlink/p/?linkid=131486) is an event type ID, such as SENSOR_EVENT_DATA_UPDATED.|
-|SENSOR_EVENT_PARAMETER_STATE|Indicates that the unsigned integer value in [IPortableDeviceValues](http://go.microsoft.com/fwlink/p/?linkid=131486) is a sensor state, such as SENSOR_STATE_READY. To raise a state changed event, call [<strong>ISensorClassExtension::PostStateChange</strong>](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsclassextension/nf-sensorsclassextension-isensorclassextension-poststatechange). You do not have to explicitly specify SENSOR_EVENT_PARAMETER_STATE to raise the event.|
+|SENSOR_EVENT_PARAMETER_EVENT_ID|Indicates that the <strong>GUID</strong> value in [IPortableDeviceValues](https://go.microsoft.com/fwlink/p/?linkid=131486) is an event type ID, such as SENSOR_EVENT_DATA_UPDATED.|
+|SENSOR_EVENT_PARAMETER_STATE|Indicates that the unsigned integer value in [IPortableDeviceValues](https://go.microsoft.com/fwlink/p/?linkid=131486) is a sensor state, such as SENSOR_STATE_READY. To raise a state changed event, call [<strong>ISensorClassExtension::PostStateChange</strong>](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsclassextension/nf-sensorsclassextension-isensorclassextension-poststatechange). You do not have to explicitly specify SENSOR_EVENT_PARAMETER_STATE to raise the event.|
 
  
 

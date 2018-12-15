@@ -215,9 +215,13 @@ Except for devices that have no associated files to be transferred from the sour
 - An <em>install-section-name</em>**.ntx86** section that specifies the entries for device/driver installations specific to x86-based platforms.
 - An <em>install-section-name</em>**.ntia64** section that specifies the entries for device/driver installations specific to Itanium-based platforms.
 - An <em>install-section-name</em>**.ntamd64** section that specifies the entries for device/driver installations specific to x64-based platforms.
+- An <em>install-section-name</em>**.ntarm** section that specifies the entries for device/driver installations specific to ARM-based platforms.
+- An <em>install-section-name</em>**.ntarm64** section that specifies the entries for device/driver installations specific to ARM64-based platforms.
+
+
 - An *install-section-name* or <em>install-section-name</em>**.nt** section that specifies the entries for device/driver installations that are not specific to a particular hardware platform.
 
-For more information about how to use the system-defined **.nt**, **.ntx86**, **.ntia64**, and **.ntamd64** extensions, see [Creating INF Files for Multiple Platforms and Operating Systems](creating-inf-files-for-multiple-platforms-and-operating-systems.md).
+For more information about how to use the system-defined **.nt**, **.ntx86**, **.ntia64**, **.ntamd64**, **.ntarm**, and **.ntarm64** extensions, see [Creating INF Files for Multiple Platforms and Operating Systems](creating-inf-files-for-multiple-platforms-and-operating-systems.md).
 
 Starting with Windows 2000, an INF file that installs drivers must have [**DDInstall.Services**](inf-ddinstall-services-section.md) sections to specify device/driver registry information to be stored in the registry's **...\\CurrentControlSet\\Services** tree. Depending on the device, it can also have one or more <em>DDInstall</em>**.HW**, <em>DDInstall</em>**.CoInstallers**, <em>DDInstall</em>**.Interfaces**, and/or <em>DDInstall</em>**.LogConfigOverride** sections.
 

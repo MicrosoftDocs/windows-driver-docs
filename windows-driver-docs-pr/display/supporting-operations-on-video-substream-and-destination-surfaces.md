@@ -1,6 +1,6 @@
 ---
-title: Supporting Operations on Video Substream and Destination Surfaces
-description: Supporting Operations on Video Substream and Destination Surfaces
+title: Operations on Video Substream and Destination Surfaces
+description: The VMR on Microsoft Windows Server 2003 SP1 and later and Windows XP SP2 and later must be able to perform certain operations on video substream and destination surfaces.
 ms.assetid: ad0214b9-5d75-455f-8748-ff7c5a3d89db
 keywords:
 - DeinterlaceBltEx, destination surfaces
@@ -9,11 +9,12 @@ keywords:
 - substream surfaces WDK DirectX VA
 - color filling destination surfaces WDK DirectX VA
 - color filling substream surfaces WDK DirectX VA
-ms.date: 04/20/2017
+ms.date: 12/06/2018
 ms.localizationpriority: medium
+ms.custom: seodec18
 ---
 
-# Supporting Operations on Video Substream and Destination Surfaces
+# Operations on Video Substream and Destination Surfaces
 
 
 ## <span id="ddk_supporting_operations_on_video_substream_and_destination_surfaces_"></span><span id="DDK_SUPPORTING_OPERATIONS_ON_VIDEO_SUBSTREAM_AND_DESTINATION_SURFACES_"></span>

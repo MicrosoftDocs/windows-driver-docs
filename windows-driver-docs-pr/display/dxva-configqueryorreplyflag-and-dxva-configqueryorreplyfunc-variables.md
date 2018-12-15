@@ -1,5 +1,5 @@
 ---
-title: DXVA_ConfigQueryOrReplyFlag and DXVA_ConfigQueryorReplyFunc Variables
+title: DXVA_ConfigQueryOrReplyFlag and DXVA_ConfigQueryorReplyFunc
 description: DXVA_ConfigQueryOrReplyFlag and DXVA_ConfigQueryorReplyFunc Variables
 ms.assetid: bfb1a98e-b9f0-4baa-b486-b2ff33a8bac5
 keywords:
@@ -17,15 +17,12 @@ keywords:
 - locking configurations WDK DirectX VA
 - probing configurations WDK DirectX VA
 - configuration probing and locking WDK DirectX VA
-ms.date: 04/20/2017
+ms.date: 12/06/2018
 ms.localizationpriority: medium
+ms.custom: seodec18
 ---
 
 # DXVA\_ConfigQueryOrReplyFlag and DXVA\_ConfigQueryorReplyFunc Variables
-
-
-## <span id="ddk_dxva_configqueryorreplyflag_and_dxva_configqueryorreplyfunc_variab"></span><span id="DDK_DXVA_CONFIGQUERYORREPLYFLAG_AND_DXVA_CONFIGQUERYORREPLYFUNC_VARIAB"></span>
-
 
 The *DXVA\_ConfigQueryOrReplyFlag* variable indicates the type of query or response when using probing and locking commands. The most significant 24 bits of the **dwFunction** member of the following structures contains the *DXVA\_ConfigQueryOrReplyFlag* variable.
 

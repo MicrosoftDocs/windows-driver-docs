@@ -74,7 +74,7 @@ A driver sends **IRP\_MN\_WAIT\_WAKE** for either of two reasons:
 
 2.  To enable its device to awaken from a device sleep state in response to an external wake-up signal.
 
-The IRP must be passed down the device stack to the bus driver for the device, which calls [**IoMarkIrpPending**](https://msdn.microsoft.com/library/windows/hardware/ff549422) and returns STATUS\_PENDING from its [*DispatchPower*](https://msdn.microsoft.com/library/windows/hardware/ff543354) routine. The IRP remains pending until a wake-up signal occurs or until the driver that sent the IRP cancels it.
+The IRP must be passed down the device stack to the bus driver for the device, which calls [**IoMarkIrpPending**](https://msdn.microsoft.com/library/windows/hardware/ff549422) and returns STATUS\_PENDING from its [*DispatchPower*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine. The IRP remains pending until a wake-up signal occurs or until the driver that sent the IRP cancels it.
 
 Only one wait/wake IRP can be held pending for a PDO at any given time. If a driver already holds a wait/wake IRP for a PDO, it must fail any additional such IRPs with STATUS\_DEVICE\_BUSY. A driver that enumerates more than one child PDO can have a wait/wake IRP pending for each such PDO.
 

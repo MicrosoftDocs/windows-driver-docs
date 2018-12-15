@@ -679,6 +679,8 @@
         href: debug-filter-xxx.md
       - name: "DEBUG_FORMAT_XXX"
         href: debug-format-xxx.md
+      - name: "DEBUG_OUTCB_XXX"
+        href: debug-outcb-xxx.md
       - name: "DEBUG_OUTCTL_XXX"
         href: debug-outctl-xxx.md
       - name: "DEBUG_OUTPUT_XXX"
@@ -3094,6 +3096,10 @@
         href: -atom.md
       - name: "!bitcount"
         href: -bitcount.md
+      - name: "!blackboxbsd"
+        href: -blackboxbsd.md
+      - name: "!blackboxscm"
+        href: -blackboxscm.md
       - name: "!chksym"
         href: -chksym.md
       - name: "!chkimg"

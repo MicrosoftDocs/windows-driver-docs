@@ -1,14 +1,15 @@
 ---
-title: Displaying Samples and Background Color in the Target Rectangle
-description: Displaying Samples and Background Color in the Target Rectangle
+title: Display Samples and Background Color in Target Rectangle
+description: The following topics show how to display various samples with background color in the target rectangle.
 ms.assetid: 324fa569-4b2e-4ee1-9988-d08020df78e9
 keywords:
 - DeinterlaceBltEx, target rectangle
 - target rectangle WDK DirectX VA
 - background color options WDK DirectX VA
 - deinterlacing WDK DirectX VA , target rectangle
-ms.date: 04/20/2017
+ms.date: 12/06/2018
 ms.localizationpriority: medium
+ms.custom: seodec18
 ---
 
 # Displaying Samples and Background Color in the Target Rectangle

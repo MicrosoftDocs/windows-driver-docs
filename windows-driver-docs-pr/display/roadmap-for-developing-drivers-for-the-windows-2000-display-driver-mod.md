@@ -1,12 +1,12 @@
 ---
-title: Roadmap for Windows 2000 Display Driver Model (XDDM)
+title: Roadmap for the Windows 2000 Display Driver Model (XDDM)
 description: Roadmap for Developing Drivers for the Windows 2000 Display Driver Model (XDDM)
 ms.assetid: 5f34d0ad-ab31-4361-9a42-83930aef267b
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Roadmap for Developing Drivers for the Windows 2000 Display Driver Model (XDDM)
+# Roadmap for the Windows 2000 Display Driver Model (XDDM)
 
 
 ![figure of a roadmap with the text "wdk" superimposed on a highway](images/wdkroadmap-th.png)The Windows 2000 display driver model (XDDM) requires that a graphics hardware vendor supply a paired display driver and video miniport driver. Both of these drivers for display run in kernel mode.

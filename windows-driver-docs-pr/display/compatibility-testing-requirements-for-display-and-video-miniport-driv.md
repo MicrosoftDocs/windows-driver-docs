@@ -1,6 +1,6 @@
 ---
-title: Compatibility Testing Requirements for Display and Video Miniport Drivers
-description: Compatibility Testing Requirements for Display and Video Miniport Drivers
+title: Testing Requirements for Display/Video Miniport Drivers
+description: This section lists some of the requirements for NT-based operating system graphics drivers and associated components to meet the Windows Hardware Quality Lab (WHQL) test criteria.
 ms.assetid: b63db0ca-2779-4cb3-94a1-a52641f341f4
 keywords:
 - display driver model WDK Windows 2000 , compatibility testing
@@ -9,17 +9,14 @@ keywords:
 - display drivers WDK Windows 2000 , compatibility testing
 - compatibility testing WDK Windows 2000 display
 - testing compatibility WDK Windows 2000 display
-ms.date: 04/20/2017
+ms.date: 12/06/2018
 ms.localizationpriority: medium
+ms.custom: seodec18
 ---
 
 # Compatibility Testing Requirements for Display and Video Miniport Drivers
 
-
-## <span id="ddk_compatibility_testing_requirements_for_display_and_video_miniport_"></span><span id="DDK_COMPATIBILITY_TESTING_REQUIREMENTS_FOR_DISPLAY_AND_VIDEO_MINIPORT_"></span>
-
-
-This section lists some of the requirements for NT-based operating system graphics drivers and associated components to meet the Windows Hardware Quality Lab (WHQL) test criteria. The drivers that meet or exceed these tests are authorized to display the Microsoft Windows Logo. For more information, go to the [Windows Platform Development](http://go.microsoft.com/fwlink/p/?linkid=8703) website.
+This section lists some of the requirements for NT-based operating system graphics drivers and associated components to meet the Windows Hardware Quality Lab (WHQL) test criteria. The drivers that meet or exceed these tests are authorized to display the Microsoft Windows Logo. For more information, go to the [Windows Platform Development](https://go.microsoft.com/fwlink/p/?linkid=8703) website.
 
 [INF and Installation Requirements](inf-and-installation-requirements.md)
 

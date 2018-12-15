@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # IRP\_MJ\_READ
 
 
-Every device driver that transfers data from its device to the system must handle read requests in a [*DispatchRead*](https://msdn.microsoft.com/library/windows/hardware/ff543376) or [*DispatchReadWrite*](https://msdn.microsoft.com/library/windows/hardware/ff543381) routine, as must any higher-level driver layered over such a device driver.
+Every device driver that transfers data from its device to the system must handle read requests in a [*DispatchRead*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) or [*DispatchReadWrite*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine, as must any higher-level driver layered over such a device driver.
 
 When Sent
 ---------
@@ -64,9 +64,9 @@ Requirements
 ## See also
 
 
-[*DispatchRead*](https://msdn.microsoft.com/library/windows/hardware/ff543376)
+[*DispatchRead*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch)
 
-[*DispatchReadWrite*](https://msdn.microsoft.com/library/windows/hardware/ff543381)
+[*DispatchReadWrite*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch)
 
 [**IoCallDriver**](https://msdn.microsoft.com/library/windows/hardware/ff548336)
 

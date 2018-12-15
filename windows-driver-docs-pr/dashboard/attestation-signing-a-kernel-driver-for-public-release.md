@@ -13,22 +13,22 @@ This topic describes how to sign a driver using attestation signing.
 
 > [!Note]
 > Attestation signing has the following properties.
-> -   Attestation signing supports Windows 10 Desktop kernel mode and user mode drivers. Although user mode drivers do not need to be signed by Microsoft for Windows 10, the same attestation process can be used for both user and kernel mode drivers.
-> -   Attestation signing will not return the proper PE Level for **ELAM** or **Windows Hello** PE binaries.  These must be tested and submitted as .hlkx packages to receive the additional signature attributes.
-> -   Attestation signing requires the use of an EV Certificate to submit the driver to the Hardware Dev Center dashboard.
-> -   An attestation signed driver will only work for Windows 10. It will not work for other versions of Windows, such as Windows Server 2016,Windows 8.1, or Windows 7.
-> -   Attestation signing requires driver folder names to contain no special characters, and to be less than 40 characters long.
+> - Attestation signing supports Windows 10 Desktop kernel mode and user mode drivers. Although user mode drivers do not need to be signed by Microsoft for Windows 10, the same attestation process can be used for both user and kernel mode drivers.
+> - Attestation signing will not return the proper PE Level for **ELAM** or **Windows Hello** PE binaries.  These must be tested and submitted as .hlkx packages to receive the additional signature attributes.
+> - Attestation signing requires the use of an EV Certificate to submit the driver to the Partner Center.
+> - An attestation signed driver will only work for Windows 10. It will not work for other versions of Windows, such as Windows Server 2016,Windows 8.1, or Windows 7.
+> - Attestation signing requires driver folder names to contain no special characters, and to be less than 40 characters long.
  
 ## Attestation signing a kernel mode driver
 
 To attestation sign a kernel mode driver complete the following steps:
 
 1. Acquire an EV Code Signing Certificate
-2. Register your company for the Hardware Dev Center
+2. Register your company for the Partner Center
 3. Download and install the Windows Driver Kit
 4. Create a CAB files submission
 5. Sign the CAB file submission with your EV Cert
-6. Submit the EV signed Cab file using the Hardware Dev Center dashboard
+6. Submit the EV signed Cab file using the Partner Center
 7. Validate that the driver was properly signed
 8. Test your driver on Windows 10 for Desktop
 
@@ -51,9 +51,9 @@ The following PE levels and binaries can be processed through Attestation:
 - .xpi
 - .xap
 
-## Register your company for Hardware Dev Center (Sysdev) Dashboard Services
+## Register your company for Partner Center Services
 
-To sign your drivers through the Hardware dashboard you first need to register your organization and get a code signing certificate.
+To sign your drivers through the Partner Center you first need to register your organization and get a code signing certificate.
 
 Follow the process described in [Register for the hardware program](register-for-the-hardware-program.md) to set up the account you will use for the hardware dashboard.
 
@@ -164,9 +164,9 @@ C:\Echo> SignTool sign /v /ac "C:\MyEVCert.cer" /s MY /n "Company Name" /t http:
 > [!IMPORTANT]
 > Remember to use industry best practices to manage the security of the EV code signing process.
 
-## Submit the EV signed Cab file using the Hardware Dev Center dashboard
+## Submit the EV signed Cab file using the Partner Center
 
-1. Submit the EV signed CAB file using the Hardware Dev Center. See [Driver Signing Properties](https://msdn.microsoft.com/windows/hardware/drivers/develop/driver-signing-properties) for more information.
+1. Submit the EV signed CAB file using the Partner Center. See [Driver Signing Properties](https://msdn.microsoft.com/windows/hardware/drivers/develop/driver-signing-properties) for more information.
 
    * As part of the submission process, you must specify whether you are submitting [universal drivers](https://msdn.microsoft.com/windows/hardware/drivers/develop/getting-started-with-universal-drivers).
 

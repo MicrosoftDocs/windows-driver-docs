@@ -1,15 +1,16 @@
 ---
-title: Supporting Brightness Controls For External Display Connectors
-description: Supporting Brightness Controls For External Display Connectors
+title: Brightness Controls For External Display Connectors
+description: This feature only allows OEMs to indicate to Windows that an external connector display supports brightness control.
 keywords: ["brightness WDK display", "ACPI-based brightness hot-keys WDK display", "notifying brightness hot keys WDK display", "BIOS brightness control WDK display", "automatic brightness WDK display"]
+ms.date: 12/06/2018
 ms.localizationpriority: medium
-ms.date: 10/17/2018
+ms.custom: seodec18
 ---
 
-# Supporting Brightness Controls For External Display Connectors
+# Brightness Controls For External Display Connectors
 
 Some OEM systems have internal displays that are connected using external connectors such as HDMI. For those configurations, Windows has the ability to designate exactly one display panel to support the system software brightness control.
-This feature does not support the ability to control the individual panel brightness on multiple display panels.
+This feature only allows OEMs to indicate to Windows that an external connector display supports brightness control; OEMs must still implement the hardware brightness control and integrate that with the graphics driver as they would for an [integrated connector display](https://docs.microsoft.com/windows-hardware/drivers/display/supporting-brightness-controls-on-integrated-display-panels). This feature also does not support the ability to control the individual panel brightness on multiple display panels.
 
 
 ### General Requirements
@@ -44,9 +45,10 @@ In the case where this registry value is set for external connectors, the OS wil
 
 
 ### SAMPLE MONITOR.INF FILE FRAGMENT
+
 The following is an incomplete sample INF that outlines the above:
 
-
+```inf
 [Manufacturer]
 %MONOEM%=MONOEM,NTx86,NTAMD64 
  
@@ -102,7 +104,8 @@ MONOEM = “Manufacturer name”
 AIOHDMI_1  = “AIO monitor name one”
 AIOHDMI_2  = “AIO monitor name two”
 Laptop  = “Laptop monitor name”
+```
 
 
-
-**NOTE** OEMs need to provide a monitor.inf that has the proper hardware ID in order to ensure that the generic Microsoft monitor.inf is not used. 
+> [!NOTE]
+> OEMs need to provide a monitor.inf file that has the proper hardware ID in order to ensure that the generic Microsoft monitor.inf is not used. 

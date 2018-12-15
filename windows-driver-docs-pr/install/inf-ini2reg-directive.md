@@ -32,6 +32,10 @@ An **Ini2Reg** directive references one or more named sections in which lines or
 [ClassInstall32.ntx86] | 
 [ClassInstall32.ntia64] |  (Windows XP and later versions of Windows)
 [ClassInstall32.ntamd64]  (Windows XP and later versions of Windows)
+[ClassInstall32.ntarm]  (Windows 8 and later versions of Windows)
+[ClassInstall32.ntarm64]  (Windows 10 and later versions of Windows)
+
+
   
 Ini2Reg=ini-to-registry-section[,ini-to-registry-section]...
 ```

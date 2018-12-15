@@ -41,11 +41,11 @@ it should use the following procedure to add compatible timing information to th
 
 The display miniport driver should add all additional timing modes that are supported by the hardware to the VidPN source mode set and the target mode set. When the display mode manager (DMM) generates a mode list, all display modes, including additional timing modes, that are not supported by the monitor are indicated as not being supported by the monitor and appear only in the raw mode list. Regardless of whether a monitor is connected or not, the miniport driver should report all VidPN source and target mode sets that are supported by the monitor. A driver that reports only monitor-supported modes must also report the additional modes that are not supported by the currently connected monitor.
 
-### <span id="crt_monitors"></span><span id="CRT_MONITORS"></span>**CRT Monitors**
+## CRT Monitors
 
 For CRT monitors, DMM adds as an additional target mode the 640 x 480 x 60Hz standard monitor timing that is defined in the Video Electronics Standards Association (VESA) specification, *VESA and Industry Standards and Guidelines for Computer Display Monitor Timing version 1.0*.
 
-### <span id="dtv_and_hdtv_monitors"></span><span id="DTV_AND_HDTV_MONITORS"></span>**DTV and HDTV Monitors**
+## DTV and HDTV Monitors
 
 For Digital Television (DTV) and High-Definition Television (HDTV) monitors, DMM adds as additional target modes all the standard DTV modes that are required by the [WHCK](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) Automated Test GRAPHICS-0043, as shown in the following tables. A display miniport driver should prune all modes that are not supported by the display hardware.
 
@@ -153,11 +153,14 @@ For Digital Television (DTV) and High-Definition Television (HDTV) monitors, DMM
 
 Miniport drivers written for Windows Vista should continue to conform with the [WHCK](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) Automated Test GRAPHICS-0043 and add the additional DTV modes specified in these tables. Drivers written for Windows 7 only have to support the new **pfnGetAdditionalMonitorModeSet** and **pfnReleaseAdditionalMonitorModeSet** functions.
 
- 
 
- 
+ 
+## See also
 
+[Determining Whether a VidPN is Supported on a Display Adapter](determining-whether-a-vidpn-is-supported-on-a-display-adapter.md)
 
+[Enumerating Cofunctional VidPN Source and Target Modes](enumerating-cofunctional-vidpn-source-and-target-modes.md)
 
+[Video Present Network Terminology](video-present-network-terminology.md)
 
-
+[VidPN Objects and Interfaces](vidpn-objects-and-interfaces.md)

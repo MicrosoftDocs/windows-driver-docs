@@ -124,7 +124,7 @@ Usually, a **ClassInstall32** section has one or more **AddReg** directives to a
 
 Except for **AddReg** and **CopyFiles**, the other directives shown here are rarely used in a **ClassInstall32** section.
 
-To support a multiplatform distribution of driver files, construct platform-specific **ClassInstall32** sections. For example, all system SetupAPI functions that process a **ClassInstall32** section will search first for a **ClassInstall32.ntx86** section on an x86 platform and only examine an undecorated **ClassInstall32** section if they cannot find a **ClassInstall32.ntx86** section. For more information about how to use the system-defined **.nt**, **.ntx86**, **.ntia64**, and **.ntamd64** extensions, see [Creating INF Files for Multiple Platforms and Operating Systems](creating-inf-files-for-multiple-platforms-and-operating-systems.md).
+To support a multiplatform distribution of driver files, construct platform-specific **ClassInstall32** sections. For example, all system SetupAPI functions that process a **ClassInstall32** section will search first for a **ClassInstall32.ntx86** section on an x86 platform and only examine an undecorated **ClassInstall32** section if they cannot find a **ClassInstall32.ntx86** section. For more information about how to use the system-defined **.nt**, **.ntx86**, **.ntia64**, **.ntamd64**, **.ntarm**, and **.ntarm64** extensions, see [Creating INF Files for Multiple Platforms and Operating Systems](creating-inf-files-for-multiple-platforms-and-operating-systems.md).
 
 **Note**  The **ClassInstall32** section name is also used for installations on 64-bit platforms.
 

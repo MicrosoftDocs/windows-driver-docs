@@ -1,6 +1,6 @@
 ---
-title: DXVA\_ProcAmpControlDeviceClass ProcAmpControlCloseStream method
-description: The sample ProcAmpCloseStream function closes the ProcAmp stream object and instructs the device driver to release hardware resources associated with the stream.
+title: ProcAmpControlCloseStream method
+description: The sample DXVA\_ProcAmpControlDeviceClass::ProcAmpCloseStream function closes the ProcAmp stream object and instructs the device driver to release hardware resources associated with the stream.
 ms.assetid: aa13efb8-2014-4790-b121-cd9fd3171458
 keywords: ["ProcAmpControlCloseStream method Display Devices", "ProcAmpControlCloseStream method Display Devices , DXVA_ProcAmpControlDeviceClass interface", "DXVA_ProcAmpControlDeviceClass interface Display Devices , ProcAmpControlCloseStream method"]
 topic_type:
@@ -9,8 +9,9 @@ api_name:
 - DXVA_ProcAmpControlDeviceClass.ProcAmpControlCloseStream
 api_type:
 - COM
-ms.date: 01/05/2018
+ms.date: 12/06/2018
 ms.localizationpriority: medium
+ms.custom: seodec18
 ---
 
 # DXVA\_ProcAmpControlDeviceClass::ProcAmpControlCloseStream method
@@ -21,7 +22,7 @@ The sample **ProcAmpCloseStream** function closes the ProcAmp stream object and 
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 HRESULT ProcAmpControlCloseStream(
    void
 );
