@@ -19,7 +19,8 @@ ms.localizationpriority: medium
 
 Tracelog has commands (or actions) that start, stop, and control a [trace session](trace-session.md).
 
-**Note**  To control a trace session you must be a member of the Performance Log Users group or the Administrators group on the computer (**Run as administrator**).
+> [!NOTE]
+> To control a trace session you must be a member of the Performance Log Users group or the Administrators group on the computer (**Run as administrator**).
 
 ```
     tracelog [actions] [options] | [-h | -help | -?] 
