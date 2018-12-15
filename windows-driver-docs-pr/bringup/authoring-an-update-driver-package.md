@@ -264,7 +264,7 @@ In order to ensure that variants of a given firmware resource update image, pote
 
 Once the driver package INF file and firmware payload binary are ready, the entire driver package must be signed in order to produce a catalog file. It is crucial that this catalog file vouch for the validity and authenticity of the INF file and firmware payload binary contained within the driver package in order to enable Windows to securely initiate a firmware resource update.
 
-The steps to self-sign the driver package for test purposes are enumerated below. Please note that these steps are for test purposes only. In production, firmware update driver packages must be submitted to the Windows Dev Center Hardware Dashboard for signing. For the steps to sign a firmware driver package for production see [Certifying and signing the update package](certifying-and-signing-the-update-package.md).
+The steps to self-sign the driver package for test purposes are enumerated below. Please note that these steps are for test purposes only. In production, firmware update driver packages must be submitted to the Partner Center for signing. For the steps to sign a firmware driver package for production see [Certifying and signing the update package](certifying-and-signing-the-update-package.md).
 
 1.  Install the latest Windows SDK and Windows Driver Kit. This will install the makecert, pvk2pfx inf2cat and signtool tools under %systemdir%\\Program Files (x86)\\Windows Kits\\&lt;*version*&gt;\\bin\\x86.
 2.  Run the following command to create a test certificate.
