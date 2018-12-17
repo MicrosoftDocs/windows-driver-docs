@@ -10,20 +10,19 @@ ms.date: 06/11/2018
 ms.localizationpriority: medium
 ---
 
-
 # Storport driver miniport routines
 
-A miniport driver that works with the Storport driver must contain implementations of the routine descriptions listed in this section, and it must expose them through an [HW_INITIALIZATION_DATA](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/ns-storport-_hw_initialization_data) structure during the miniport driver's initialization phase. 
+A miniport driver that works with the Storport driver must contain implementations of the routine descriptions listed in this section, and it must expose them through an [HW_INITIALIZATION_DATA](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/ns-storport-_hw_initialization_data) structure during the miniport driver's initialization phase.
 
-The Storport miniport driver routines are in most respects equivalent to their SCSI port counterparts (see [SCSI Miniport Driver Routines](https://technet.microsoft.com/ff565312(v=vs.96)) for more information). However, there are important differences between the design of the SCSI port driver and that of the Storport driver, and these routines must accommodate those differences. 
+The Storport miniport driver routines are in most respects equivalent to their SCSI port counterparts (see [SCSI Miniport Driver Routines](https://technet.microsoft.com/ff565312(v=vs.96)) for more information). However, there are important differences between the design of the SCSI port driver and that of the Storport driver, and these routines must accommodate those differences.
 
-For instance, miniport drivers that work with the Storport driver must always be prepared to receive another I/O request after the [HwStorStartIo](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nc-storport-hw_startio) routine has completed. A miniport driver that works with SCSI port is not required to do this. The SCSI port version does not receive a new I/O request until it explicitly signals the port driver, using the [StorPortNotification](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportnotification) function, that it is prepared to handle another request. 
+For instance, miniport drivers that work with the Storport driver must always be prepared to receive another I/O request after the [HwStorStartIo](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nc-storport-hw_startio) routine has completed. A miniport driver that works with SCSI port is not required to do this. The SCSI port version does not receive a new I/O request until it explicitly signals the port driver, using the [StorPortNotification](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportnotification) function, that it is prepared to handle another request.
 
 If the Storport version of the miniport driver cannot handle a request at the time it is submitted, it has a set of queue management functions, not available to the SCSI port version, that allow it to deal with the overload. Like the SCSI port version, the Storport version of the miniport driver completes the request with **SRB_STATUS_BUSY**, but unlike the SCSI port version, it can also mark the device queue as busy using the [StorPortDeviceBusy](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportdevicebusy) routine. Similar functions allow the miniport driver to pause and resume processing on an adapter-wide basis.
 
 For more information about the support routines provided by the Storport driver, see [Storport driver support routines](storport-driver-support-routines.md).
 
-For more information about the Storport driver, see [Storage Port Drivers](storage-port-drivers.md). 
+For more information about the Storport driver, see [Storage Port Drivers](storage-port-drivers.md).
 
 The following are miniport driver routines:
 
@@ -45,4 +44,3 @@ The following are miniport driver routines:
 |                           [HW_WORKITEM](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nc-storport-hw_workitem)                           |                                                                                                                          A miniport-provided callback function for processing a Storport work item request.                                                                                                                           |
 |             [STORPORT_TELEMETRY_EVENT](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/ns-storport-_storport_telemetry_event)              |                                                                                                                       The **STORPORT_TELEMETRY_EVENT** structure describes the miniport telemetry data payload.                                                                                                                       |
 |                  [StorPortLogTelemetry](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportlogtelemetry)                  | The **StorPortLogTelemetry** routine logs a miniport telemetry event to help diagnose or collect any useful information. The miniport can log eight general purpose name-value pairs and a buffer that has maximum length of 4KB, as well as several event related fields that are defined in structure **STORPORT_TELEMETRY_EVENT**. |
-

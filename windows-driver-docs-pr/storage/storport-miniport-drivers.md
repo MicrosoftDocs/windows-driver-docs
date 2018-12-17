@@ -13,23 +13,14 @@ ms.localizationpriority: medium
 
 # Storport Miniport Drivers
 
-
 Storport miniport drivers work with the [Storport Driver](storport-driver.md). The following sections describe Storport miniport drivers and the routines that they call:
 
-[Storport Driver Miniport Routines](https://msdn.microsoft.com/library/windows/hardware/ff567543)
+[Storport Driver Miniport Routines](storport-driver-miniport-routines.md)
 
-[Storport Driver Support Routines](https://msdn.microsoft.com/library/windows/hardware/ff567548)
+[Storport Driver Support Routines](storport-driver-support-routines.md)
 
 This section includes the following topics:
 
 [Error Handling in Storport Miniport Drivers](error-handling-in-storport-miniport-drivers.md)
 
 [Interlocked Operations in Storport Miniport Drivers](interlocked-operations-in-storport-miniport-drivers.md)
-
- 
-
- 
-
-
-
-
