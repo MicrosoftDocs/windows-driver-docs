@@ -12,16 +12,15 @@ ms.localizationpriority: medium
 
 # Basic Trace Session Options
 
-
 The following list describes the basic trace session options that you can change on the **Log Session Options** page.
 
 <span id="Real_Time_Display"></span><span id="real_time_display"></span><span id="REAL_TIME_DISPLAY"></span>**Real Time Display**  
 Creates a [real-time trace session](trace-session.md#ddk_real_time_trace_sessions_tools).This option is selected by default.
 
-You must select **Log Trace Event Data To File,Real Time Display**, or both.
+You must select **Log Trace Event Data To File, Real Time Display**, or both.
 
 <span id="Log_Session_Name"></span><span id="log_session_name"></span><span id="LOG_SESSION_NAME"></span>**Log Session Name**  
-Specifies a name for the trace session. Select any name that meets the Windows naming standards.The default is "LogSession*N*", where *N* is a zero-based integer that represents the order in which the session is created.
+Specifies a name for the trace session. Select any name that meets the Windows naming standards, up to 1024 characters. The default is "LogSession*N*", where *N* is a zero-based integer that represents the order in which the session is created.
 
 After a trace session is named, you can refer to the session by its name (for example, when you are using the [TraceView command-line interface](traceview-command-line-interface.md)).
 
@@ -35,9 +34,8 @@ Specifies a path and file name for the [trace log](trace-log.md) (.etl). This op
 
 By default, the trace log is named "LogSession<em>\_date\_time</em>.etl" and it is saved in the local directory. To change the name or location, type a path and file name in the text box or, to navigate to a directory, click the ellipsis button (...).
 
-**Caution**  If you select the path and name of an existing file, TraceView overwrites that file without warning.
-
- 
+> [!CAUTION]
+> If you select the path and name of an existing file, TraceView overwrites that file without warning.
 
 <span id="Append_To_Existing_Log_File"></span><span id="append_to_existing_log_file"></span><span id="APPEND_TO_EXISTING_LOG_FILE"></span>**Append To Existing Log File**  
 Adds the trace messages to the end of the trace log file that is specified in the **Log File Name** box, instead of overwriting the file.
@@ -49,12 +47,3 @@ TraceView lets you select this option, even if the specified file does not yet e
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
 The trace session name is not saved in the event trace log (.etl) file, the TraceView output file, or the TraceView summary file. When you use TraceView to display a trace log, it uses the default session name, "LogSession*N*" as the name of the trace session, where *N* is a zero-based integer that represents the order in which the session is created.
-
- 
-
- 
-
-
-
-
-

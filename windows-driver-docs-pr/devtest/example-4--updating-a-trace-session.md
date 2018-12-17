@@ -11,9 +11,7 @@ ms.localizationpriority: medium
 
 # Example 4: Updating a Trace Session
 
-
 ## <span id="ddk_updating_a_trace_session_tools"></span><span id="DDK_UPDATING_A_TRACE_SESSION_TOOLS"></span>
-
 
 While a trace session is running, you can update the following properties of a real-time or logged trace session:
 
@@ -26,8 +24,6 @@ While a trace session is running, you can update the following properties of a r
 -   Change the maximum number of buffers (by using **-max)**, but not the minimum number of buffers.
 
 -   Change the flush time interval (by using **-ft**).
-
--   Change the age limit on Windows 2000 (by using **-age**).
 
 -   Flush the trace buffers (by using **-**tracelog -flush).
 
@@ -60,12 +56,3 @@ tracelog -flush MyTrace
 ```
 
 In response, Tracelog displays the revised properties of the trace session.
-
- 
-
- 
-
-
-
-
-

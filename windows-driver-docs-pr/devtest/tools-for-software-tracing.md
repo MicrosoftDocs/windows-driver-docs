@@ -19,23 +19,23 @@ ms.localizationpriority: medium
 
 The Microsoft Windows Driver Kit (WDK) includes a set of applications and command-line tools for software tracing. These tools are designed to support Event Tracing for Windows (ETW) and to supplement the tracing tools that are included in Windows.
 
--   [What are the tracing tools?](#what-are-the-tracing-tools)
--   [When should I use WPP Software Tracing or the Event Tracing for Windows (ETW) API?](#when-should-i-use-wpp-software-tracing-or-the-event-tracing-for-windows-etw-api)
--   [What's in this section](#whats-in-this-section)
+- [What are the tracing tools?](#what-are-the-tracing-tools)
+- [When should I use WPP Software Tracing or the Event Tracing for Windows (ETW) API?](#when-should-i-use-wpp-software-tracing-or-the-event-tracing-for-windows-etw-api)
+- [What's in this section](#whats-in-this-section)
 
 ## What are the tracing tools?
 
-The tools include [trace controllers](trace-controller.md) that configure, start, update, and stop trace sessions, and [trace consumers](trace-consumer.md) that receive trace messages generated during the sessions and convert the binary data into human-readable format for files or display. It also includes tools that combine both functions and tools that support the procedures.
+The tools include [trace controllers](trace-controller.md) that configure, start, update, and stop trace sessions, and [trace consumers](trace-consumer.md) that receive trace messages generated during the sessions and convert the binary data into human-readable format for files or display.
 
 The tools support a variety of [trace providers](trace-provider.md), including user-mode applications and kernel-mode drivers, which are instrumented for software tracing by using [WPP software tracing](wpp-software-tracing.md) or ([Event Tracing for Windows (ETW)](event-tracing-for-windows--etw-.md). For a comparison of the two approaches to instrumenting your code, see [When to Use WPP Software Tracing and Event Tracing for Windows (ETW)](#when-should-i-use-wpp-software-tracing-or-the-event-tracing-for-windows-etw-api).
 
-The tools also can access reserved [trace sessions](trace-session.md) that are built into Windows, such as the [Global Logger trace session](global-logger-trace-session.md) and the [NT Kernel Logger trace session](nt-kernel-logger-trace-session.md).
+The tools also can access reserved [trace sessions](trace-session.md) that are built into Windows, such as the [Global Logger trace session](global-logger-trace-session.md) / [NT Kernel Logger trace session](nt-kernel-logger-trace-session.md).
 
 Some of these tools are located in the tools\\&lt;*Platform*&gt; subdirectory of the Windows Driver Kit (WDK), where &lt;*Platform*&gt; is either x86 or x64. Other tools are either included with Windows or are located in the bin\\&lt;*Platform*&gt; subdirectory of the WDK.
 
 ## When should I use WPP Software Tracing or the Event Tracing for Windows (ETW) API?
 
-Use the kernel-mode [Event Tracing for Windows (ETW)](event-tracing-for-windows--etw-.md) API if you want to publish events that can be consumed by applications interested in administrative, operational and analytical events, in addition to the detailed tracing you might require during development. Use [WPP Software Tracing](wpp-software-tracing.md) if you are interested in primarily collecting trace data for development and debugging purposes and your driver needs to support this capability in Windows 2000 and later.
+Use [WPP Software Tracing](wpp-software-tracing.md) if you are interested in primarily collecting trace data for development and debugging purposes. Use [Event Tracing for Windows (ETW)](event-tracing-for-windows--etw-.md) for other types of tracing.
 
 <table>
 <colgroup>
@@ -45,7 +45,7 @@ Use the kernel-mode [Event Tracing for Windows (ETW)](event-tracing-for-windows-
 <thead>
 <tr class="header">
 <th align="left">WPP software tracing</th>
-<th align="left">ETW kernel-mode API</th>
+<th align="left">Manifested/TraceLogging ETW</th>
 </tr>
 </thead>
 <tbody>
@@ -57,20 +57,21 @@ Use the kernel-mode [Event Tracing for Windows (ETW)](event-tracing-for-windows-
 <td align="left">Tracing events for development and debugging. Mostly internal developer focused.</td>
 <td align="left">Tracing events for administrative, operational, analytical and debugging purposes.</td>
 </tr>
-<tr class="odd">
-<td align="left">Does not require a manifest to describe events</td>
-<td align="left">Needs a manifest to describe events.</td>
-</tr>
 <tr class="even">
-<td align="left">Not easy to discover. Need TMF files to decode the events.</td>
-<td align="left">Easy to discover and can be programmatically decoded. The metadata to decode the events is contained in the binary.</td>
+<td align="left">Needs TMF files to decode the events, which are extracted from the logging binary's PDB.</td>
+<td align="left">The metadata to decode the events is contained in a local binary or in the event payload.</td>
 </tr>
 <tr class="odd">
 <td align="left">Can be only one active session per trace provider.</td>
-<td align="left"><p>Strings can be localized.</p>
-<p>Provider can be secured to protect sensitive data.</p>
-<p>Multiplexing of events to multiple consumers.</p>
-<p>Activity Id support for correlating events.</p></td>
+<td align="left">Events can be multiplexed to multiple consumers.</td>
+</tr>
+<tr class="even">
+<td align="left">Message strings cannot be localized.</td>
+<td align="left">Strings can be localized.</td>
+</tr>
+<tr class="odd">
+<td align="left">Provider security is limited to not sharing the control GUID or TMF files required to enable and decode the events, respectively.</td>
+<td align="left">Provider can have ACLs applied to restrict which users can collect events from it.</td>
 </tr>
 </tbody>
 </table> 
@@ -112,8 +113,3 @@ This section includes:
 [Kernel Mode Performance Monitoring](kernel-mode-performance-monitoring.md)
 
 For conceptual information [About Event Tracing](https://msdn.microsoft.com/library/windows/desktop/aa363668), see the Microsoft Windows SDK documentation. 
-
-
-
-
-
