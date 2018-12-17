@@ -3,7 +3,9 @@ title: C28168
 description: Warning C28168 The dispatch function does not have a _Dispatch_type_ annotation matching this dispatch table entry.
 ms.assetid: 5e5acc54-acb3-4366-a625-eb79865e932e
 ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.localizationpriority: medium 
+f1_keywords: 
+  - "C28168" 
 ---
 
 # C28168
