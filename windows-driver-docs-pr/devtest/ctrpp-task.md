@@ -141,13 +141,3 @@ In the example above, MSBuild invokes ctrpp.exe on the file a.manifest, with the
 
 
 [**CTRPP**](https://msdn.microsoft.com/library/windows/desktop/aa372128)
-
- 
-
- 
-
-
-
-
-
-
