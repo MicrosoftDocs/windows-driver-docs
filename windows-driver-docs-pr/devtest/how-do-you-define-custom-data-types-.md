@@ -16,7 +16,7 @@ You use a custom data type when you want to declare variables and use meaningful
 For example, the *DiskState* variable contains the state of the disk. The following are values of *DiskState*:
 
 ```
-DiskOffline =0
+DiskOffline = 0
 DiskOnline = 1
 DiskFailed = 2
 DiskStalled = 3
@@ -88,7 +88,8 @@ The **-ini** parameter directs ETW to search for configuration data in configura
 RUN_WPP -km -ini:localwpp.ini
 ```
 
-**Note**  You must not specify the **-km** switch in the RUN\_WPP directive for user-mode applications or dynamic-link libraries (DLLs).
+> [!IMPORTANT]
+> You must not specify the **-km** switch in the RUN\_WPP directive for user-mode applications or dynamic-link libraries (DLLs).
 
  
 
@@ -105,12 +106,3 @@ The resulting trace message uses the constant that you defined to represent the 
 ```
 DiskState is Offline.
 ```
-
- 
-
- 
-
-
-
-
-

@@ -8,85 +8,76 @@ ms.localizationpriority: medium
 
 # Bluetooth Host Radio Support
 
-
 The following list provides a Bluetooth Radio Support Q&A:
 
-- [Which Bluetooth host controllers does Windows support?](#targ1)
-- [In Windows Vista, can the Bluetooth stack be forced to load if Windows cannot match the device ID?](#targ2)
-- [How do I ensure in-box support for Bluetooth radios in Windows Vista?](#targ3)
-- [Should third-party INF files use the Microsoft-defined class GUID?](#targ4)
-- [Why is the Control Panel Bluetooth application missing in Windows 7?](#targ5)
-- [Why does the Bluetooth icon not appear in the taskbar?](#targ6)
-- [Does Windows support Bluetooth radio firmware updates?](#targ7)
-- [Does Windows support vendor-specific pass-through commands?](#targ8)
-- [Does Windows support vendor-supplied profiles?](#targ9)
-- [Why are only some Bluetooth profiles and protocols enabled by default?](#targ10)
-- [Can Group Policy block Bluetooth radio installation?](#targ11)
-- [How do I change the Device ID Profile record published by Windows 8 and Windows 8.1?](#targ12)
+- [Bluetooth host controllers supported in Windows](#bluetooth-host-controllers-supported-in-windows)
+- [Forcing the Bluetooth stack to load if Windows cannot match the device ID (Windows Vista)](#forcing-the-bluetooth-stack-to-load-if-windows-cannot-match-the-device-id-(windows-vista))
+- [How to ensure in-box support for Bluetooth radios in Windows Vista](#how-to-ensure-in-box-support-for-bluetooth-radios-in-windows-vista)
+- [Whether third-party INF files should use the Microsoft-defined class GUID](#whether-third-party-inf-files-should-use-the-microsoft-defined-class-guid)
+- [Why the Control Panel Bluetooth application is missing in Windows 7](#why-the-control-panel-bluetooth-application-is-missing-in-windows-7)
+- [Why the Bluetooth icon does not appear in the taskbar](#why-the-bluetooth-icon-does-not-appear-in-the-taskbar)
+- [Windows support for Bluetooth radio firmware updates](#windows-support-for-bluetooth-radio-firmware-updates)
+- [Windows support for vendor-specific pass-through commands](#windows-support-for-vendor-specific-pass-through-commands)
+- [Windows support for vendor-supplied profiles](#windows-support-for-vendor-supplied-profiles)
+- [Bluetooth profiles and protocols that are enabled by default](#bluetooth-profiles-and-protocols-that-are-enabled-by-default)
+- [How Group Policy can block Bluetooth radio installation](#how-group-policy-can-block-bluetooth-radio-installation)
+- [How to change the Device ID Profile record published by Windows 8 and Windows 8.1](#how-to-change-the-device-id-profile-record-published-by-windows-8-and-windows-8.1)
 
-## <span id="targ1"></span><span id="TARG1"></span>Which Bluetooth host controllers does Windows support?
+## Bluetooth host controllers supported in Windows
 
 With Windows, a Bluetooth radio can be packaged as an external dongle or embedded inside a computer but it must be connected to one of the computer’s USB ports. The Bluetooth stack that is included with Windows 7 and Windows Vista does not support Bluetooth radio connections over PCI, I2C, serial, Secure Digital I/O (SDIO), CompactFlash, or PC Card interfaces. In Windows 8 and Windows 8.1, radios connected over alternate transports can be added via a third-party bus driver. Refer to the Extensible Transport sections of the [Bluetooth Devices Reference](https://msdn.microsoft.com/library/windows/hardware/ff536585) for more information.
 
-## <span id="targ2"></span><span id="TARG2"></span>In Windows Vista, can the Bluetooth stack be forced to load if Windows cannot match the device ID?
-
+## Forcing the Bluetooth stack to load if Windows cannot match the device ID (Windows Vista)
 
 A new Bluetooth radio might not match any of the device IDs in the Bluetooth INF (Bth.inf) that is included with Windows. This prevents Windows from loading a Bluetooth stack for the device. IHVs should ensure that their radio works with the native Bluetooth stack in one of the following ways:
 
--   Create an INF for the radio that references Bth.inf. For an example of a vendor-specific INF file for a Bluetooth radio, see [Appendix B: An Example of a Vendor-Provided INF File for Use in Windows Vista](bluetooth-faq--appendix-b.md).
--   Store an extended compat ID OS descriptor in the device firmware that specifies an appropriate compatible and subcompatible ID. For information about extended compat ID OS descriptors, see [Microsoft OS Descriptors](http://go.microsoft.com/fwlink/p/?linkid=308932).
--   Force the Bluetooth stack to load
+- Create an INF for the radio that references Bth.inf. For an example of a vendor-specific INF file for a Bluetooth radio, see [Appendix B: An Example of a Vendor-Provided INF File for Use in Windows Vista](bluetooth-faq--appendix-b.md).
+- Store an extended compat ID OS descriptor in the device firmware that specifies an appropriate compatible and subcompatible ID. For information about extended compat ID OS descriptors, see [Microsoft OS Descriptors](http://go.microsoft.com/fwlink/p/?linkid=308932).
+- Force the Bluetooth stack to load
 
 The following procedure summarizes how to use Device Manager to force the Bluetooth stack to load for a new radio:
 
-1.  Run the Control Panel Device Manager application and identify the Bluetooth radio on the list of devices.
-2.  To run the Update Driver Software Wizard, right-click the Bluetooth radio item and select **Update Driver Software**.
-3.  Use the wizard to force the Bluetooth stack to install.
+1. Run the Control Panel Device Manager application and identify the Bluetooth radio on the list of devices.
+2. To run the Update Driver Software Wizard, right-click the Bluetooth radio item and select **Update Driver Software**.
+3. Use the wizard to force the Bluetooth stack to install.
 
 For a detailed description of this procedure, see [Appendix A: How to Install an In-Box Bluetooth Driver on New Hardware in Windows Vista](bluetooth-faq--appendix-a.md).
 
-## <span id="targ3"></span><span id="TARG3"></span>How do I ensure in-box support for Bluetooth radios in Windows Vista?
-
+## How to ensure in-box support for Bluetooth radios in Windows Vista
 
 IHVs should take the following steps to ensure that their Bluetooth radios have in box support on Windows:
 
--   Ensure that the radio supports the extended compat ID OS feature descriptor. For details, see [Microsoft OS Descriptors](http://go.microsoft.com/fwlink/p/?linkid=617154).
--   Obtain Windows Certification Program approval for the Bluetooth radio hardware and the associated INF file. For an example of a vendor-specific INF file for a Bluetooth radio, see [Appendix B: An Example of a Vendor-Provided INF File for Use in Windows Vista](bluetooth-faq--appendix-b.md).
--   Use the **Windows Dev Center - Hardware Dashboard** to make the INF file available through Windows Update
+- Ensure that the radio supports the extended compat ID OS feature descriptor. For details, see [Microsoft OS Descriptors](http://go.microsoft.com/fwlink/p/?linkid=617154).
+- Obtain Windows Certification Program approval for the Bluetooth radio hardware and the associated INF file. For an example of a vendor-specific INF file for a Bluetooth radio, see [Appendix B: An Example of a Vendor-Provided INF File for Use in Windows Vista](bluetooth-faq--appendix-b.md).
+- Use the Partner Center to make the INF file available through Windows Update
 
 It is no longer possible to add radios to the in-box Bth.inf file for Windows Vista.
 
-## <span id="targ4"></span><span id="TARG4"></span>Should third-party INF files use the Microsoft-defined class GUID?
-
+## Whether third-party INF files should use the Microsoft-defined class GUID
 
 IHVs should use the Microsoft-defined class globally unique identifier (GUID) ({e0cbf06c cd8b 4647 bb8a 263b43f0f974}) for Bluetooth devices only in those INF files that reference the in-box Bluetooth INF file (Bth.inf). This means that the device uses the native Windows co installer, services, and notification area icon. IHVs that implement their own Bluetooth stack must create a vendor-specific class GUID and use the WLK test tools to ensure that the stack complies with the unclassified Windows Certification Program.
 
-## <span id="targ5"></span><span id="TARG5"></span>Why is the Control Panel Bluetooth application missing in Windows 7?
-
+## Why the Control Panel Bluetooth application is missing in Windows 7
 
 In Windows 7, the Control Panel Bluetooth application was incorporated into Devices and Printers. Thus, adjusting the Bluetooth radio settings, managing Bluetooth devices, and adding new Bluetooth devices can only be performed from within Devices and Printers.
 
-## <span id="targ6"></span><span id="TARG6"></span>Why does the Bluetooth icon not appear in the taskbar?
-
+## Why the Bluetooth icon does not appear in the taskbar
 
 If the Bluetooth icon does not appear in the taskbar, it could be due to one or more of the following reasons:
 
--   The Bluetooth radio is turned off.
--   The Bluetooth radio is in emulation mode
--   In the **Bluetooth Settings** dialog, the **Show the Bluetooth icon in the notification area** check box is not selected
+- The Bluetooth radio is turned off.
+- The Bluetooth radio is in emulation mode
+- In the **Bluetooth Settings** dialog, the **Show the Bluetooth icon in the notification area** check box is not selected
 
-## <span id="targ7"></span><span id="TARG7"></span>Does Windows support Bluetooth radio firmware updates?
-
+## Windows support for Bluetooth radio firmware updates
 
 Currently, the Bluetooth stack that is included with Windows does not directly support firmware updates. However, for Bluetooth radios connected through a USB port, Windows does support firmware updates in compliance with the USB Device Firmware Update (DFU) specification. IHVs can create a user-mode utility that communicates with their Bluetooth radio over the DFU interface to perform the firmware update and restart the radio.
 
-## <span id="targ8"></span><span id="TARG8"></span>Does Windows support vendor-specific pass-through commands?
-
+## Windows support for vendor-specific pass-through commands
 
 Windows 8.1, Windows 8, Windows 7, and Windows Vista with SP2 include support for vendor-specific pass-through commands. These kernel-mode interfaces are documented in the WDK.
 
-## <span id="targ9"></span><span id="TARG9"></span>Does Windows support vendor-supplied profiles?
-
+## Windows support for vendor-supplied profiles
 
 Windows 8.1, Windows 8, Windows 7, and Windows Vista support vendor-supplied Bluetooth profiles. However, Windows XP does not. The GUIDs for those profiles that have been standardized by the Bluetooth SIG are included in the in box INF file (Bth.inf).
 
@@ -94,14 +85,12 @@ When users pair a Bluetooth device with a computer, the device’s profiles are 
 
 Vendors that want a vendor-specific profile must use their own GUID and reference it in a vendor-specific INF file. This INF file can use Include and Needs directives to reference the appropriate Bth.inf sections and directives. For an example of a vendor-specific INF file, see [Appendix B: An Example of a Vendor-Provided INF File for Use in Windows Vista](bluetooth-faq--appendix-b.md).
 
-## <span id="targ10"></span><span id="TARG10"></span>Why are only some Bluetooth profiles and protocols enabled by default?
+## Bluetooth profiles and protocols that are enabled by default
 
+he Bluetooth stack that is included with Windows provides in-box support for only some Bluetooth profiles. Vendors must implement the required services to support any other Bluetooth profiles, much as they do for USB and PCI. Windows can use the Bluetooth profiles that are enabled by default—referred to as supported profiles—to generate physical device objects (PDOs). This allows default loading of the drivers that are required to enable the profile. You can identify the supported profiles in the registry by looking at the SupportedServices and UnsupportedServices values under the **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Services\\Bthport \\Parameters** key.
 
-The Bluetooth stack that is included with Windows provides in-box support for only some Bluetooth profiles. Vendors must implement the required services to support any other Bluetooth profiles, much as they do for USB and PCI. Windows can use the Bluetooth profiles that are enabled by default—referred to as supported profiles—to generate physical device objects (PDOs). This allows default loading of the drivers that are required to enable the profile. You can identify the supported profiles in the registry by looking at the SupportedServices and UnsupportedServices values under the **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Services\\Bthport \\Parameters** key.
-
-**Note**  The Bthport key is added to the registry only after you install a Bluetooth device.
-
- 
+> [!NOTE]
+> The Bthport key is added to the registry only after you install a Bluetooth device.
 
 The following table lists the profiles in Bth.inf that Windows supports.
 
@@ -134,9 +123,8 @@ The following table lists the profiles in Bth.inf that Windows supports.
 </tbody>
 </table>
 
- 
+### Windows XP Bluetooth Profiles
 
-**Windows XP Bluetooth Profiles**
 The following table lists the unsupported Bluetooth profiles and protocols. Note that, in this context, “unsupported” means that Windows does not automatically generate a PDO or devnode or display the Add New Hardware Wizard. Therefore, some in-box profiles and protocols are handled as if they are unsupported. For example, SDP is an in-box protocol that has a Bluetooth service ID but does not require a PDO. The SDP protocol is therefore marked as unsupported in Bth.inf to prevent the creation of a PDO
 
 <table>
@@ -249,12 +237,9 @@ The following table lists the unsupported Bluetooth profiles and protocols. Note
 </tbody>
 </table>
 
- 
-
 If IHVs do not want Windows to automatically generate a PDO for their device, they can add the service GUID to the list of unsupported services. For examples, see Bth.inf.
 
-## <span id="targ11"></span><span id="TARG11"></span>Can Group Policy block Bluetooth radio installation?
-
+## How Group Policy can block Bluetooth radio installation
 
 For details on how to use Group Policy to block the installation of Bluetooth radios, see the “Prevent installation of prohibited devices” section of [Step-by-Step Guide to Controlling Device Installation and Usage with Group Policy](http://go.microsoft.com/fwlink/p/?linkid=324335).
 
@@ -262,12 +247,11 @@ Use the following compatible IDs for the Bluetooth radio:
 
 USB\\Class\_E0 (for USB based radios)
 MS\_BTHX\_BTHMINI (for non-USB radios)
-**Note**  This won’t remove Bluetooth driver support if it has already been installed. Also, this policy needs to be applied to the preinstall image.
 
- 
+> [!NOTE]
+> This won’t remove Bluetooth driver support if it has already been installed. Also, this policy needs to be applied to the preinstall image.
 
-## <span id="targ12"></span><span id="TARG12"></span>How do I change the Device ID Profile record published by Windows 8 and Windows 8.1?
-
+## How to change the Device ID Profile record published by Windows 8 and Windows 8.1
 
 The Device ID Profile defines an SDP record that can be used to provide identity information to remote devices. Previous and current Windows versions have used the Device ID record published on paired devices to provide device-specific Hardware IDs for generic Bluetooth services.
 
@@ -314,14 +298,3 @@ Beginning with Windows 8, Windows will also publish a local Device ID record to 
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
- 
-
-
-
-
-
