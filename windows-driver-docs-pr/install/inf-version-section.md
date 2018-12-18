@@ -155,7 +155,7 @@ Starting with Windows Vista, a driver package should set **PnpLockDown** to 1 to
 Specifies a string token that corresponds to a string key entry in an INF [**Strings**](inf-strings-section.md) section. The string key entry supplies the [driver package](driver-packages.md) display name. Driver Install Frameworks (DIFx) uses the driver package display name to describe the purpose of driver package to end-users.
 
 <a href="" id="driverpackagetype-packagetype"></a>**DriverPackageType=** *PackageType*  
-Specifies the [driver package](driver-packages.md) type. Driver Install Frameworks (DIFx) uses the driver package type to determine the type of driver package.
+Deprecated. Was previously used by Driver Install Frameworks (DIFx). For info about the DIFx deprecation, see [DIFx Guidelines](difx-guidelines.md).
 
 Remarks
 -------

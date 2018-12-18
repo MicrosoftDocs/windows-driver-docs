@@ -14,7 +14,6 @@ ms.localizationpriority: medium
 
 # Tracelog Enumguid Display
 
-
 When you submit a **tracelog -enumguid** command, Tracelog displays a list of the trace providers that are running and have [registered](registered-provider.md) with Event Tracing for Windows (ETW). The display is very useful, but it is often misinterpreted.
 
 ### <span id="which_providers_appear_in_the_display_"></span><span id="WHICH_PROVIDERS_APPEAR_IN_THE_DISPLAY_"></span>Which Providers Appear in the Display?
@@ -78,8 +77,7 @@ The table in the Tracelog enumguid display includes the following columns.
 </tbody>
 </table>
 
- 
-
+ 
 If a provider is registered but not enabled, then it appears in the enumguid display but its entry in the **Enabled** column is **FALSE**.
 
 If a provider is enabled but is not currently running and is, therefore, not registered, then it does not appear in the enumguid display.
@@ -123,12 +121,3 @@ d58c126e-b309-11d1-969e-0000f875a5bc     FALSE  0    0    0
 688a5248-f348-4576-86cf-3521c7094614     FALSE  0    0    0
 27246e9d-b4df-4f20-b969-736fa49ff6ff    FALSE  0    0    0
 ```
-
- 
-
- 
-
-
-
-
-

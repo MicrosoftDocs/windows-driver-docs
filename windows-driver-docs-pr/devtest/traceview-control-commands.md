@@ -46,7 +46,29 @@ Use a Traceview control command to manage trace sessions, including starting and
 |**-l**|List all trace sessions running on the computer.|
 |**-x**|Stops all trace sessions.|
 
-### Parameters
+### <span id="parameters"></span><span id="PARAMETERS"></span>Parameters
+
+<span id="_______SessionName______"></span><span id="_______sessionname______"></span><span id="_______SESSIONNAME______"></span> *SessionName*   
+When used with **-start**, *SessionName* is a name that you select to represent the trace session. With all other commands, *SessionName* identifies the trace session.
+
+<span id="_______-f___LogFile_"></span><span id="_______-f___logfile_"></span><span id="_______-F___LOGFILE_"></span> **-f** \[*LogFile*\]  
+When used with **-start**, **-f** starts a trace log sessions. *LogFile* specifies the path (optional) and file name of the event trace log (.etl) file. The default is C:\\LogFile.etl.
+
+When used with **-update**, **-f** sends all new trace messages only to the specified [trace log](trace-log.md). Use this parameter to convert a real-time trace session to a trace log session or to start a new trace log for an existing trace log session. To send trace messages to a real-time trace consumer and to a trace log, use both the **-rt** and **-f** parameters in the **-update** command.
+
+<span id="_______-rt______"></span><span id="_______-RT______"></span> **-rt**   
+When used with **-start**, **-rt** starts a real-time trace sessions (A trace log session (**-f**) is the default.) If you use **-rt** and **-f** in a **-start** command, the trace messages are sent to the trace consumer and to an event trace log file.
+
+When used with **-update**, **-rt** adds real-time message delivery to a trace log session. All new trace messages are sent directly to the trace consumer (as in a real-time trace session), in addition to a [trace log](trace-log.md).
+
+<span id="_______-guid___GUID___GUIDFile_"></span><span id="_______-guid___guid___guidfile_"></span><span id="_______-GUID___GUID___GUIDFILE_"></span> **-guid** {**\#**<em>GUID</em> | *GUIDFile*}  
+Specifies one or more trace providers. Use with **-start** to enable providers for a trace session. Use with **-enable** to enable the providers or to change their **-flag** or **-level** values. Use with **-disable** to specify the providers to disable.
+
+*GUID* can specify either one [control GUID](control-guid.md) (preceded by a number sign (**\#**)) or the path (optional) and file name of a text file, such as a control GUID (.ctl) file, that contains the control GUIDs of one or more trace providers.
+
+If you omit the **-guid** parameter from a **-start** command, TraceView starts an [NT Kernel Logger trace session](nt-kernel-logger-trace-session.md).
+
+TraceView passes the values of the following subparameters to the specified providers.
 
 <table>
 <thead>
@@ -94,8 +116,55 @@ TraceView passes the values of the following subparameters to the specified prov
 <tr>
 <td><p><strong>-flag</strong> <em>Flag</em></p></td>
 
-<td>
-<p>Specifies the <a href="trace-flags.md" data-raw-source="[trace flags](trace-flags.md)">trace flags</a> for the <a href="trace-provider.md" data-raw-source="[providers](trace-provider.md)">providers</a> in the trace session. The flags determine which events the trace provider generates.</p>
+<span id="_______-b_______BufferSize______"></span><span id="_______-b_______buffersize______"></span><span id="_______-B_______BUFFERSIZE______"></span> **-b** *BufferSize*   
+Specifies the size, in KB, of each buffer allocated for the trace session. Use only with **-start**.
+
+The default value is determined by the number of processors, the amount of physical memory, and the operating system in use.
+
+<span id="_______-min_______NumberOfBuffers______"></span><span id="_______-min_______numberofbuffers______"></span><span id="_______-MIN_______NUMBEROFBUFFERS______"></span> **-min** *NumberOfBuffers*   
+Specifies the number of buffers initially allocated for storing trace messages. Use only with **-start**.
+
+The default value is determined by the number of processors, the amount of physical memory, and the operating system in use.
+
+<span id="_______-max_______NumberOfBuffers______"></span><span id="_______-max_______numberofbuffers______"></span><span id="_______-MAX_______NUMBEROFBUFFERS______"></span> **-max** *NumberOfBuffers*   
+When used with **-start**, **-max** specifies the maximum number of buffers allocated for the trace session. The default value is determined by the number of processors, the amount of physical memory, and the operating system in use.
+
+When used with **-update**, **-max** changes the maximum number of buffers allocated for the trace session.
+
+<span id="_______-ft_______FlushTime______"></span><span id="_______-ft_______flushtime______"></span><span id="_______-FT_______FLUSHTIME______"></span> **-ft** *FlushTime*   
+When used with **-start**, **-ft** specifies how often, in seconds, the trace message buffers are flushed. When used with **-update**, **-ft** changes the flush time to the specified time.
+
+The minimum flush time is 1 second. The default value is 0 (no forced flush).
+
+This forced flush is in addition to the flushes that happen automatically whenever a trace message buffer is full and when a trace session stops.
+
+See also: **-flush**.
+
+<span id="_______-paged______"></span><span id="_______-PAGED______"></span> **-paged**   
+Uses pageable memory for the trace message buffers. By default, event tracing uses nonpageable memory for buffers. Use only with **-start**.
+
+Do not use this parameter when the provider is a driver that might generate trace messages at an IRQL greater than DISPATCH\_LEVEL.
+
+This parameter is not supported in Windows 2000.
+
+<span id="_______-seq_______MaxFileSize______"></span><span id="_______-seq_______maxfilesize______"></span><span id="_______-SEQ_______MAXFILESIZE______"></span> **-seq** *MaxFileSize*   
+Specifies sequential logging (at end-of-file, stop recording events) to the event trace log (.etl) file. Use only with **-start**.
+
+*MaxFileSize* specifies the maximum size of the file in MB. Without a *MaxFileSize* value, this parameter is ignored.
+
+Sequential logging is the default, but you can use this parameter to set the maximum file size or to use **-prealloc**. Without this parameter, there is no file size limit.
+
+<span id="_______-cir_______MaxFileSize______"></span><span id="_______-cir_______maxfilesize______"></span><span id="_______-CIR_______MAXFILESIZE______"></span> **-cir** *MaxFileSize*   
+Specifies circular logging (at end-of-file, record new messages over the oldest messages) in the event trace log (.etl) file. Use only with **-start**.
+
+*MaxFileSize* specifies the maximum size of the file in MB. Without a *MaxFileSize* value, this parameter is ignored.
+
+The default is sequential logging with no file size limit.
+
+<span id="_______-prealloc______"></span><span id="_______-PREALLOC______"></span> **-prealloc**   
+Reserves space for the event trace log (.etl) file before allocating it. Use only with **-start**.
+
+This parameter requires **-seq** or **-cir** with *MaxFileSize*. It is not valid with **-newfile**.
 
 <p><em>Flag</em> represents a flag value defined in the trace provider, in decimal or hexadecimal format. The default value is 0. Values from 0x01000000 through 0xFF000000 are reserved for future use.</p>
 
