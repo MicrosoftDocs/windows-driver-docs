@@ -10,7 +10,7 @@ api_location:
 - ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 12/13/2018
+ms.date: 12/18/2018
 ms.localizationpriority: medium
 ---
 
