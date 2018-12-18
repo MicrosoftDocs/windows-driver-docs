@@ -24,12 +24,3 @@ The trace MOF file also contains the following information:
 -   The trace flags defined by the trace provider.
 
 Logman and Perfmon can use the MOF file to find the trace flags for each provider. You can use the MOF file as a quick reference to the control GUID of a trace provider.
-
- 
-
- 
-
-
-
-
-
