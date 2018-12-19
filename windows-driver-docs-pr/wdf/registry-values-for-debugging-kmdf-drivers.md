@@ -17,7 +17,7 @@ This article describes the registry values that a Windows Driver Frameworks (WDF
 The following registry values can exist under a driver's **Parameters\\Wdf** subkey. For a KMDF driver, this subkey is located in **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Services**, under the driver's service name. For a UMDF driver, this subkey is located in **HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\WUDF\\Services**, under the driver's service name. The subkey for the driver always uses the driver's service name, even if the driver binary's file name differs from the service name.
 
 <a href="" id="verifieron-----------------reg-dword-"></a>**VerifierOn** (**REG\_DWORD**)  
-Set to a nonzero value to enable [KMDF Verifier](using-kmdf-verifier.md), which extensively validates a driver's state and function parameters. You should set **VerifierOn** and **DbgBreakOnError** when you are developing your driver. Use the [AddService directive](../install/inf-addservice-directive.md) and the [AddReg directive](../install/inf-addreg-directive.md) to set these in the Services section of the INF file, for example:
+Set to a nonzero value to enable [KMDF Verifier](using-kmdf-verifier.md), which extensively validates a driver's state and function parameters. You should set **VerifierOn** and **DbgBreakOnError** when you are developing your driver. Use the [AddService directive](../install/inf-addservice-directive.md) and the [AddReg directive](../install/inf-addreg-directive.md) to set these values in the Services section of the INF file, for example:
 
 ```
 [xxx_Inst.NT.Services]
@@ -60,7 +60,7 @@ If set to a list of one or more type names of framework object handles, and if *
 If set to a nonzero value, the framework's [event logger](using-the-framework-s-event-logger.md) records additional information that can help you debug your driver, such as entries into or exits from internal code paths. You should set this value only while you are developing your driver. See the code example above.
 
 <a href="" id="logpages--reg-dword-"></a>**LogPages** (**REG\_DWORD**)  
-Set to the number of memory pages that the framework assigns to its event logger. If the value is undefined, the framework uses a default value of one page. The maximum value that you can set is 16 for computers that have 4-kilobyte-sized memory pages (x86 and amd64 processors) and 8 for computers that have 8-kilobyte-sized memory pages (ia64 processors). (The operating system might not write the log contents to a crash dump file if a large number of pages is specified.) Use the [AddService directive](../install/inf-addservice-directive.md) and the [AddReg directive](../install/inf-addreg-directive.md) to set this key in your INF file, as follows:
+Set to the number of memory pages that the framework assigns to its event logger. If the value is undefined, the framework uses a default value of one page. The maximum value that you can set is 16 for computers that have 4-kilobyte-sized memory pages (x86 and amd64 processors) and 8 for computers that have 8-kilobyte-sized memory pages (ia64 processors). (The operating system might not write the log contents to a crash dump file if a large number of pages is specified.) Use the [AddService directive](../install/inf-addservice-directive.md) and the [AddReg directive](../install/inf-addreg-directive.md) to set this value in your INF file, as follows:
 
 ```
 [xxx.NT.Services]
