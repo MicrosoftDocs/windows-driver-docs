@@ -38,4 +38,100 @@ These routines are implemented by the power management framework (PoFx) to enabl
 |[**PoFxStartDevicePowerManagement**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-pofxstartdevicepowermanagement)|The **PoFxStartDevicePowerManagement** routine completes the registration of a device with the power management framework (PoFx) and starts device power management.|
 |[**PoFxUnregisterDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-pofxunregisterdevice)|The **PoFxUnregisterDevice** routine removes the registration of a device from the power management framework (PoFx).|
 
-## 
+## Device Power Management Callbacks
+
+These callback routines are required by the power management framework (PoFx) to enable device power management. The driver that is the power policy owner for the device implements these callback routines. PoFx calls these routines to query and configure the power states of the components in the device.
+
+|Topic|Description|
+|----|----|
+|[ComponentActiveConditionCallback](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-po_fx_component_active_condition_callback)|The *ComponentActiveConditionCallback* callback routine notifies the driver that the specified component completed a transition from the idle condition to the active condition.|
+|[ComponentIdleConditionCallback](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-po_fx_component_idle_condition_callback)|The *ComponentIdleConditionCallback* callback routine notifies the driver that the specified component completed a transition from the active condition to the idle condition.|
+|[ComponentIdleStateCallback](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-po_fx_component_idle_state_callback)|The *ComponentIdleStateCallback* callback routine notifies the driver of a pending change to the Fx power state of the specified component.|
+|[ComponentPerfStateCallback](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-po_fx_component_perf_state_callback)|The *ComponentPerfStateCallback* callback routine notifies the driver that its request to change the performance state of a component is complete.|
+|[DevicePowerNotRequiredCallback](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-po_fx_device_power_not_required_callback)|The *DevicePowerNotRequiredCallback* callback routine notifies the device driver that the device is not required to stay in the D0 power state.|
+|[DevicePowerRequiredCallback](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-po_fx_device_power_required_callback)|The *DevicePowerRequiredCallback* callback routine notifies the device driver that the device must enter and remain in the D0 power state.|
+|[PowerControlCallback](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nc-wdm-po_fx_power_control_callback)|The *PowerControlCallback* callback routine performs a power control operation that is requested by the power management framework (PoFx).|
+
+## Device Power Management Structures
+
+The the power management framework (PoFx) defines these structures to support device power management.
+
+|Topic|Description|
+|----|----|
+|[PO_FX_COMPONENT_V1](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_po_fx_component_v1)   [PO_FX_COMPONENT_V2](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_po_fx_component_v2)|The **PO_FX_COMPONENT** structure describes the power state attributes of a component in a device.|
+|[PO_FX_COMPONENT_IDLE_STATE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_po_fx_component_idle_state)|The **PO_FX_COMPONENT_IDLE_STATE** structure specifies the attributes of an Fx power state of a component in a device.|
+|[PO_FX_COMPONENT_PERF_INFO](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_po_fx_component_perf_info)|The **PO_FX_COMPONENT_PERF_INFO** structure describes all the sets of performance states for a single component within a device.|
+|[PO_FX_COMPONENT_PERF_SET](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_po_fx_component_perf_set)|The **PO_FX_COMPONENT_PERF_SET** structure represents a set of performance states for a single component within a device.|
+|[PO_FX_DEVICE_V1](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_po_fx_device_v1)   [PO_FX_DEVICE_V2](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_po_fx_device_v2)|The **PO_FX_DEVICE** structure describes the power attributes of a device to the power management framework (PoFx).|
+|[PO_FX_PERF_STATE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_po_fx_perf_state)|The **PO_FX_PERF_STATE** structure represents a performance state for a single component within a device.|
+|[PO_FX_PERF_STATE_CHANGE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_po_fx_perf_state_change)|The **PO_FX_PERF_STATE_CHANGE** structure contains information about a change to a performance state that is being requested by calling the [PoFxIssueComponentPerfStateChange](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-pofxissuecomponentperfstatechange) or [PoFxIssueComponentPerfStateChangeMultiple](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-pofxissuecomponentperfstatechangemultiple) routine.
+
+## Device Power Management Enumerations
+
+The power management framework (PoFx) defines these enumerations to support device power management.
+
+|Topic|Description|
+|----|----|
+|[PO_FX_PERF_STATE_TYPE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ne-wdm-_po_fx_perf_state_type)|The **PO_FX_PERF_STATE_TYPE** enumeration contains values that describe the type of performance states in a [PO_FX_COMPONENT_PERF_SET](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_po_fx_component_perf_set).|
+|[PO_FX_PERF_STATE_UNIT](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ne-wdm-_po_fx_perf_state_unit)|The **PO_FX_PERF_STATE_UNIT** enumeration contains values that describe the type of unit that is controlled by the performance states in a [PO_FX_COMPONENT_PERF_SET](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_po_fx_component_perf_set).
+
+## Device Power Management Constants
+
+### PO_FX_FLAG_XXX flag bits
+
+The **PO_FX_FLAG_XXX** constants are flag bits that indicate whether a request to change the condition of component is performed synchronously or asynchronously.
+
+```c++
+#define PO_FX_FLAG_BLOCKING   0x1
+#define PO_FX_FLAG_ASYNC_ONLY 0x2
+```
+
+#### PO_FX_FLAG_XXX constants
+
+|Constant|Description|
+|----|----|
+|PO_FX_FLAG_BLOCKING|Make the condition change synchronous. If this flag is set, the routine that requests the condition change does not return control to the calling driver until the component hardware completes the transition to the new condition. This flag can be used only if the caller is running at IRQL < DISPATCH_LEVEL.|
+|PO_FX_FLAG_ASYNC_ONLY|Make the condition change fully asynchronous. If this flag is set, the calling driver's callback routine is called from a thread other than the thread in which the routine that requests the condition change is called. Thus, the routine that requests the condition change always returns asynchronously without waiting for the callback to complete.|
+
+#### PO_FX_FLAG_XXX remarks
+
+The Flags parameter to the following routines can be set to a **PO_FX_FLAG_XXX** constant:
+
+- [PoFxActivateComponent](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-pofxactivatecomponent)
+- [PoFxIdleComponent](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-pofxidlecomponent)
+- [PoFxIssueComponentPerfStateChange](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-pofxissuecomponentperfstatechange)
+- [PoFxIssueComponentPerfStateChangeMultiple](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-pofxissuecomponentperfstatechangemultiple)
+
+The **PO_FX_FLAG_BLOCKING** and **PO_FX_FLAG_ASYNC_ONLY** flag bits are mutually exclusive. The caller can set one or the other flag bit in the Flags parameter, but not both flag bits.
+
+#### PO_FX_FLAG_XXX Requirements
+
+|Version|Header|
+|----|----|
+|Supported starting with Windows 8.|Wdm.h|
+
+### PO_FX_FLAG_PERF_XXX flag bits
+
+The **PO_FX_FLAG_PERF_XXX** constants are flag bits that define how the power management framework (PoFx) manages performance states for a device component.
+
+```c++
+#define PO_FX_FLAG_PERF_PEP_OPTIONAL   0x1
+#define PO_FX_FLAG_PERF_QUERY_ON_F0 0x2
+#define PO_FX_FLAG_PERF_QUERY_ON_ALL_IDLE_STATES 0x4
+```
+
+|Constant|Value|Description|
+|----|----|----|
+|**PO_FX_FLAG_PERF_PEP_OPTIONAL**|1 (0x1)|Indicates that the driver can change performance states without assistance from the platform extension plug-in (PEP), or that the driver is registering performance states with PoFx for logging purposes only. If this flag is set, the [PoFxRegisterComponentPerfStates](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-pofxregistercomponentperfstates) call will still succeeded if the PEP does not support performance states for the component.|
+|**PO_FX_FLAG_PERF_QUERY_ON_F0**|2 (0x2)|For some devices, the PEP may need to a place a performance state set for a component into a certain performance state (known as a *nominal performance state*) when it idles the component. Drivers set this flag if the component contains nominal performance states, in which case PoFx will query the PEP to determine the current performance state when the component transitions to F0.|
+|**PO_FX_FLAG_PERF_QUERY_ON_ALL_IDLE_STATES**|4 (0x4)|For some devices, the PEP may need to a place a performance state set for a component into a certain performance state (known as a *nominal performance state*) when it transitions the component between idle states. Drivers set this flag if this component contains nominal performance states, in which case PoFx will query the PEP to determine the current performance state when the component transitions between idle states.|
+
+#### PO_FX_FLAG_PERF_XXX remarks
+
+The Flags parameter to the [PoFxRegisterComponentPerfStates](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-pofxregistercomponentperfstates) routine can be set to a **PO_FX_FLAG_PERF_XXX** constant.
+
+#### PO_FX_FLAG_PERF_XXX requirements
+
+|Requirements|Version|
+|----|----|
+|Supported starting with Windows 10.|Wdm.h|
