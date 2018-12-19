@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 At any time after the call to [*Dot11ExtIhvInitAdapter*](https://msdn.microsoft.com/library/windows/hardware/ff547469), the IHV Extensions DLL can request interaction with the user by calling the [**Dot11ExtSendUIRequest**](https://msdn.microsoft.com/library/windows/hardware/ff547567) function. The operating system forwards all user interaction requests to the IHV UI Extensions DLL, which will process the request and display the appropriate user interface (UI) pages to the user.
 
-When the request has been completed, the operating system calls the [*Dot11ExtIhvProcessUIResponse*](https://msdn.microsoft.com/library/windows/hardware/ff547504) function to forward the results from the IHV UI Extensions DLL for the user interaction. For more information about the IHV UI Extensions DLL, see [Native 802.11 IHV UI Extensions DLL](https://msdn.microsoft.com/library/windows/hardware/ff560635).
+When the request has been completed, the operating system calls the [*Dot11ExtIhvProcessUIResponse*](https://msdn.microsoft.com/library/windows/hardware/ff547504) function to forward the results from the IHV UI Extensions DLL for the user interaction. For more information about the IHV UI Extensions DLL, see [Native 802.11 IHV UI Extensions DLL](native-802-11-ihv-ui-extensions-dll2.md).
 
 For example, the IHV Extensions DLL can request user interaction for any of the following.
 

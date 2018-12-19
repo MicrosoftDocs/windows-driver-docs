@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
  
 
-The IHV Extensions DLL does not provide a user interface (UI) component. Instead, it interfaces with the IHV UI Extensions DLL to display the appropriate UI pages to the user. For more information about the IHV UI Extensions DLL, see [Native 802.11 IHV UI Extensions DLL](https://msdn.microsoft.com/library/windows/hardware/ff560635).
+The IHV Extensions DLL does not provide a user interface (UI) component. Instead, it interfaces with the IHV UI Extensions DLL to display the appropriate UI pages to the user. For more information about the IHV UI Extensions DLL, see [Native 802.11 IHV UI Extensions DLL](native-802-11-ihv-ui-extensions-dll2.md).
 
 This section discusses the ways in which the IHV Extensions DLL requests user interaction, and includes the following topics:
 

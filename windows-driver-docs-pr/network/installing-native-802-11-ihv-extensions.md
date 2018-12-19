@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
  
 
-To install the [Native 802.11 IHV Extensions DLL](https://msdn.microsoft.com/library/windows/hardware/ff560614) and [Native 802.11 IHV UI Extensions DLL](https://msdn.microsoft.com/library/windows/hardware/ff560635), the independent hardware vendor (IHV) must make the following changes to the DDInstall section within the INF file that is used for the installation of the IHV's wireless LAN (WLAN) adapter.
+To install the [Native 802.11 IHV Extensions DLL](native-802-11-ihv-extensions-dll4.md) and [Native 802.11 IHV UI Extensions DLL](native-802-11-ihv-ui-extensions-dll2.md), the independent hardware vendor (IHV) must make the following changes to the DDInstall section within the INF file that is used for the installation of the IHV's wireless LAN (WLAN) adapter.
 
 -   Add a CopyFiles directive, with an associated *file-list-section*, to the INF file. The name of each DLL developed by the IHV must be within the *file-list-section*.
 

@@ -36,7 +36,7 @@ This section has the following topics:
 
 [Accessing Profile and Context Data](accessing-profile-and-context-data.md)
 
-For more information about the Native 802.11 IHV Extensions DLL, see [Native 802.11 IHV Extensions DLL](https://msdn.microsoft.com/library/windows/hardware/ff560614).
+For more information about the Native 802.11 IHV Extensions DLL, see [Native 802.11 IHV Extensions DLL](native-802-11-ihv-extensions-dll4.md).
 
  
 

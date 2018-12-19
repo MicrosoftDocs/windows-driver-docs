@@ -30,7 +30,7 @@ Through an IHV Extensions DLL, the independent hardware vendor (IHV) can support
 
 -   Configuration of the Native 802.11 miniport driver. For example, prior to starting a connection operation with the miniport driver, the operating system will call the [*Dot11ExtIhvPerformPreAssociate*](https://msdn.microsoft.com/library/windows/hardware/ff547499) function so that the IHV Extensions DLL can configure the driver with proprietary extensions related to the connection to a BSS network.
 
--   Interface to the IHV UI Extensions DLL. Through this interface, the IHV Extensions DLL can request user input or notification. For more information about the IHV UI Extensions DLL, see [Native 802.11 IHV UI Extensions DLL](https://msdn.microsoft.com/library/windows/hardware/ff560635).
+-   Interface to the IHV UI Extensions DLL. Through this interface, the IHV Extensions DLL can request user input or notification. For more information about the IHV UI Extensions DLL, see [Native 802.11 IHV UI Extensions DLL](native-802-11-ihv-ui-extensions-dll2.md).
 
 The Native 802.11 IHV Extensibility Host process loads the IHV Extensions DLL into its process space upon the first arrival and detection of a wireless LAN (WLAN) adapter for which the DLL was installed. For more information about the Native 802.11 IHV Extensibility Host process and Native 802.11 framework, see [Native 802.11 Software Architecture](native-802-11-software-architecture.md).
 

@@ -32,11 +32,11 @@ In order to extend the Native 802.11 functionality, the IHV must provide the fol
 
 -   An IHV Extensions DLL, which processes the security packets exchanged through the proprietary authentication algorithms that the IHV supports. The IHV Extensions DLL is also responsible for cipher key derivation through these authentication algorithms, as well as the validation of user data that pertains to the security extensions supported by the IHV.
 
-    For more information about the IHV Extensions DLL, see [Native 802.11 IHV Extensions DLL](https://msdn.microsoft.com/library/windows/hardware/ff560614).
+    For more information about the IHV Extensions DLL, see [Native 802.11 IHV Extensions DLL](native-802-11-ihv-extensions-dll4.md).
 
 -   An IHV User Interface (UI) Extensions DLL, which extends the Native 802.11 user interface to configure connectivity and security settings that are validated and processed by the IHV Extensions DLL.
 
-    For more information about the IHV UI Extensions DLL, see [Native 802.11 IHV UI Extensions DLL](https://msdn.microsoft.com/library/windows/hardware/ff560635).
+    For more information about the IHV UI Extensions DLL, see [Native 802.11 IHV UI Extensions DLL](native-802-11-ihv-ui-extensions-dll2.md).
 
 For more information about the modules provided by the IHV, see [Native 802.11 Software Architecture](native-802-11-software-architecture.md).
 

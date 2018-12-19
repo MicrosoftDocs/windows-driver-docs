@@ -29,9 +29,9 @@ This section includes the following topics:
 
 [Installing Native 802.11 IHV Extensions](installing-native-802-11-ihv-extensions.md)
 
-[Native 802.11 IHV Extensions DLL](https://msdn.microsoft.com/library/windows/hardware/ff560614)
+[Native 802.11 IHV Extensions DLL](native-802-11-ihv-extensions-dll4.md)
 
-[Native 802.11 IHV UI Extensions DLL](https://msdn.microsoft.com/library/windows/hardware/ff560635)
+[Native 802.11 IHV UI Extensions DLL](native-802-11-ihv-ui-extensions-dll2.md)
 
  
 

@@ -32,7 +32,7 @@ If the independent hardware vendor (IHV) provides a Native 802.11 IHV Extensions
 
     For more information about launching a UI that results from requests from the Native 802.11 Extensions DLL, see [Handling UI Requests from the Native 802.11 IHV Extensions DLL](handling-requests-for-the-display-of-a-custom-ui.md).
 
-For more information about the Native 802.11 IHV Extensions DLL, see [Native 802.11 IHV Extensions DLL](https://msdn.microsoft.com/library/windows/hardware/ff560614).
+For more information about the Native 802.11 IHV Extensions DLL, see [Native 802.11 IHV Extensions DLL](native-802-11-ihv-extensions-dll4.md).
 
 For more information about the Microsoft Network Configuration UI and other Native 802.11 components, see [Native 802.11 Software Architecture](native-802-11-software-architecture.md).
 
