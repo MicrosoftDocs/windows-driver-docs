@@ -5,9 +5,9 @@ ms.date: 09/22/2017
 ms.localizationpriority: medium
 ---
 
-![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png)
-
 #  Time travel debugging extension commands
+
+![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png)
 
 This section introduces the time travel debugger extension commands.
 
@@ -33,7 +33,7 @@ This section introduces the time travel debugger extension commands.
 
 </tr>
 <tr class="even">
-<td align="left"><p><a href="time-travel-debugging-extension-positions.md" data-raw-source="[&lt;strong&gt;!position&lt;/strong&gt;](time-travel-debugging-extension-positions.md)"><strong>!position</strong></a></p></td>
+<td align="left"><p><a href="time-travel-debugging-extension-positions.md" data-raw-source="[&lt;strong&gt;!positions&lt;/strong&gt;](time-travel-debugging-extension-positions.md)"><strong>!positions</strong></a></p></td>
 <td align="left"><p>The <a href="time-travel-debugging-extension-positions.md" data-raw-source="[&lt;strong&gt;!positions&lt;/strong&gt;](time-travel-debugging-extension-positions.md)"><strong>!positions</strong></a> extension displays all the active threads, including their current positions in the time travel trace.</p></td>
 </tr>
 <tr class="odd">

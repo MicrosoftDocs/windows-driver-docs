@@ -66,7 +66,7 @@ Any specified *hw-id* or *compatible-id* value can also be specified in the [**I
 
 For each device and driver that is installed by using an INF file, the device installers use the information supplied in the [**INF Manufacturer section**](inf-manufacturer-section.md) and per-manufacturer *Models* sections to generate Device Description, Manufacturer Name, Device ID (if the installation is manual), and, possibly, Compatibility List value entries in the registry.
 
-Starting with Windows XP, a *models section name* can include a *TargetOSVersion* decoration. For more information about this decoration, see [**INF Manufacturer Section**](inf-manufacturer-section.md).
+A *models section name* can include a *TargetOSVersion* decoration. For more information about this decoration, see [**INF Manufacturer Section**](inf-manufacturer-section.md), specifically the Remarks section.
 
 **Important**  Starting with Windows Server 2003 SP1, INF files must decorate *models-section-name* entries in the INF **Manufacturer** section, along with the associated INF *Models* section names, with **.ntia64** or **.ntamd64** platform extensions to specify non-x86 target operating system versions. These platform extensions are not required in INF files for x86-based target operating system versions or non-PnP driver INF files (such as file system driver INF files for x64-based architectures). Each entry in a *Models* section is sometimes called a *driver node*.
 

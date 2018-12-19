@@ -186,6 +186,11 @@ Parameter 1 is the only parameter of interest; this identifies the exact violati
 </tbody>
 </table>
 
+
+Resolution
+----------
+
+The [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) debug extension displays information about the bug check and can be very helpful in determining the root cause.
  
 
  

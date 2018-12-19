@@ -11,7 +11,6 @@ ms.localizationpriority: medium
 
 # Resolving TraceView Errors
 
-
 This topic describes errors that TraceView commonly reports and suggests solutions. It is not intended to be a complete troubleshooting guide.
 
 ### <span id="trace_provider_is_not_added"></span><span id="TRACE_PROVIDER_IS_NOT_ADDED"></span>Trace provider is not added
@@ -34,11 +33,7 @@ For more information about these commands, see [**TraceView Control Commands**](
 
 This error occurs when you try to display an existing trace log for a trace provider that is providing events for a real-time trace session or another existing trace log in TraceView.
 
-TraceView can create only one trace session or display one trace log for each trace provider.
-
 ### <span id="cannot_connect_to_any_trace_session_in_the_group"></span><span id="CANNOT_CONNECT_TO_ANY_TRACE_SESSION_IN_THE_GROUP"></span>Cannot connect to any trace session in the group
-
-This error typically appears when you try to group trace sessions that cannot be grouped. For example, it appears when you try to include a real-time trace session in a group on a version of Windows earlier than Windows Server 2003.
 
 To resolve this error, review the [Limitations of Grouping](limitations-of-grouping.md) topic and include only trace sessions that you can group on your system.
 
@@ -47,12 +42,3 @@ To resolve this error, review the [Limitations of Grouping](limitations-of-group
 This error occurs when you try to join an NT Kernel Logger trace session that is already in progress. You can use TraceView to create an NT Kernel Logger trace session, but you cannot join an NT Kernel Logger trace session that is started by a tool or method other than TraceView.
 
 For more information, see [Joining a Trace Session](joining-a-trace-session.md) and [Creating an NT Kernel Logger trace session](creating-an-nt-kernel-logger-trace-session.md).
-
- 
-
- 
-
-
-
-
-

@@ -249,7 +249,7 @@ In the instrumentation manifest, you defined the names of the event provider and
    #endif
    ```
 
-   Add the **EventRegister\<*provider*\>** macro to your [*DriverEntry*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_initialize) function. Add this function after the code that creates and initializes the device object. Note that you must match the call to the **EventRegister\<*provider*\>** function with a call to **EventUnregister\<*provider*\>**. You can unregister the driver in your driver's [</em>*Unload**](<https://msdn.microsoft.com/library/windows/hardware/ff564886>) routine.
+   Add the **EventRegister\<*provider*\>** macro to your [*DriverEntry*](https://docs.microsoft.com/windows-hardware/drivers/wdf/driverentry-for-kmdf-drivers) function. Add this function after the code that creates and initializes the device object. Note that you must match the call to the **EventRegister\<*provider*\>** function with a call to **EventUnregister\<*provider*\>**. You can unregister the driver in your driver's [</em>*Unload**](<https://msdn.microsoft.com/library/windows/hardware/ff564886>) routine.
 
    ```ManagedCPlusPlus
       // DriverEntry function
@@ -315,7 +315,7 @@ In the instrumentation manifest, you defined the names of the event provider and
   
     ```
 
-   Add the **EventWrite\<*event*\>** macros into your source code for the events you are raising. For example, the following code snippet shows the [*DriverEntry*](https://msdn.microsoft.com/library/windows/hardware/ff544113) routine from the [Eventdrv sample](http://go.microsoft.com/fwlink/p/?linkid=256109). The *DriverEntry* includes the macros to register the driver with ETW (*EventRegisterSample\_Driver*) and the macro to write the driver event to ETW (*EventWriteStartEvent*).
+   Add the **EventWrite\<*event*\>** macros into your source code for the events you are raising. For example, the following code snippet shows the [*DriverEntry*](https://docs.microsoft.com/windows-hardware/drivers/wdf/driverentry-for-kmdf-drivers) routine from the [Eventdrv sample](http://go.microsoft.com/fwlink/p/?linkid=256109). The *DriverEntry* includes the macros to register the driver with ETW (*EventRegisterSample\_Driver*) and the macro to write the driver event to ETW (*EventWriteStartEvent*).
 
    ```ManagedCPlusPlus
    NTSTATUS
