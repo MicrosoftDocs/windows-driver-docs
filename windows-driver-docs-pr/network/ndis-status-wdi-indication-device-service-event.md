@@ -5,6 +5,7 @@ ms.assetid: 6A9EA354-86F0-4C3F-974E-4FC164239D6A
 ms.date: 06/14/2018
 keywords:
  - NDIS_STATUS_WDI_INDICATION_DEVICE_SERVICE_EVENT Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # NDIS_STATUS_WDI_INDICATION_DEVICE_SERVICE_EVENT
