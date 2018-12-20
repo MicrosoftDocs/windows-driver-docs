@@ -5,6 +5,7 @@ ms.assetid: BBD64E6F-A2E2-4601-A231-4FCB4574EFC7
 ms.date: 06/15/2018
 keywords:
  - WDI_TLV_DEVICE_SERVICE_PARAMS_GUID Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
 ---
 
 # WDI_TLV_DEVICE_SERVICE_PARAMS_GUID

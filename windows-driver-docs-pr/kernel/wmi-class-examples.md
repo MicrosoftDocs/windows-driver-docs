@@ -99,18 +99,23 @@ The following is a class definition for an event block. The class is derived fro
 
 ```cpp
 // Example of an event
- [WMI, guid("xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"),
- Dynamic, Provider("WMIProv"),
- locale("MS\\0x409"),
- Description("Serial Send Event"),
- WmiExpense(1)]
-class Vendor_SerialSendEvent : WMIEvent
+[WMI, Dynamic, Provider("WMIProv"),
+guid("{xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}"),
+locale("MS\\0x409"),
+WmiExpense(1),
+Description("Notify Toaster Arrival")]
+class ToasterNotifyDeviceArrival : WMIEvent
 {
-// Required items
-    [key, read] 
-      string InstanceName;
+    [key, read]
+    string      InstanceName;
+
     [read]
-      boolean Active;
+    boolean           Active;
+
+    [read,
+     Description("Device Model Name"),
+     WmiDataId(1)]    string     ModelName;
+};
 ```
 
  
