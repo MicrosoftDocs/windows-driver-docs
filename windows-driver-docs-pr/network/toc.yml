@@ -4266,6 +4266,130 @@
       href: wdi-features-not-carried-over-in-wdi.md
     - name: "WDI doc change history"
       href: wdi-doc-change-history.md
+  - name: Native 802.11 IHV Extensions
+    href: native-802-11-ihv-extensions.md
+    items:
+    - name: Overview of IHV Extensibility
+      href: overview-of-ihv-extensibility.md
+    - name: Installing Native 802.11 IHV Extensions
+      href: installing-native-802-11-ihv-extensions.md
+    - name: Native 802.11 IHV Extensions DLL
+      href: native-802-11-ihv-extensions-dll4.md
+      items:
+      - name: Native 802.11 IHV Extensions DLL Overview
+        href: native-802-11-ihv-extensions-dll-overview.md
+      - name: Native 802.11 IHV Extensibility Functions
+        href: native-802-11-ihv-extensibility-functions.md
+      - name: Native 802.11 IHV Handler Functions
+        href: native-802-11-ihv-handler-functions.md
+      - name: Native 802.11 IHV Extensions DLL Implementation Guidelines
+        href: native-802-11-ihv-extensions-dll-implementation-guidelines.md
+      - name: DLL Start/Stop Operations
+        href: dll-start-stop-operations.md
+        items: 
+        - name: DLL Start Operations
+          href: dll-start-operations.md
+        - name: DLL Stop Operations
+          href: dll-stop-operations.md
+      - name: 802.11 WLAN Adapter Management
+        href: 802-11-wlan-adapter-management.md
+        items:
+        - name: 802.11 WLAN Adapter Arrival
+          href: 802-11-wlan-adapter-arrival.md
+        - name: 802.11 WLAN Adapter Removal
+          href: 802-11-wlan-adapter-removal.md
+        - name: 802.11 WLAN Adapter Reset
+          href: 802-11-wlan-adapter-reset.md
+        - name: 802.11 WLAN Adapter Communication Channel
+          href: 802-11-wlan-adapter-communication-channel.md
+      - name: Network Profile Management
+        href: network-profile-management.md
+        items:
+        - name: Network Profile Overview
+          href: network-profile-overview.md
+        - name: Creating Network Profile Extensions
+          href: creating-network-profile-extensions.md
+        - name: Validating Network Profile Extensions
+          href: validating-network-profile-extensions.md
+      - name: Interaction with the User
+        href: interaction-with-the-user.md
+        items:
+        - name: Requesting User Interaction
+          href: requesting-user-interaction.md
+        - name: Processing Session Changes
+          href: processing-session-changes.md
+      - name: Pre-Association Operations
+        href: pre-association-operations.md
+        items:
+        - name: Pre-Association Operation Overview
+          href: pre-association-operation-overview.md
+        - name: Pre-Association Operation Guidelines
+          href: pre-association-operation-guidelines.md
+      - name: Post-Association Operations
+        href: post-association-operations.md
+        items:
+        - name: Performing a Post-Association Operation
+          href: performing-a-post-association-operation.md
+        - name: Stopping a Post-Association Operation
+          href: stopping-a-post-association-operation.md
+        - name: Interface to the Native 802.11 802.1X Module
+          href: interface-to-the-native-802-11-802-1x-module.md
+      - name: Native 802.11 IHV extension send and receive operations
+        href: send-and-receive-operations3.md
+        items:
+        - name: IEEE EtherType Handling
+          href: ieee-ethertype-handling.md
+        - name: Send Operations
+          href: send-operations.md
+        - name: Receive Operations
+          href: receive-operations.md
+      - name: Notification Operations
+        href: notification-operations.md
+        items:
+        - name: Sending Notifications
+          href: sending-notifications.md
+        - name: Receiving Notifications
+          href: receiving-notifications.md
+      - name: Virtual Station
+        href: virtual-station.md
+    - name: Native 802.11 IHV UI Extensions DLL
+      href: native-802-11-ihv-ui-extensions-dll2.md
+      items:
+      - name: Windows SDK References
+        href: windows-sdk-references.md
+      - name: Native 802.11 IHV UI Extensions DLL Overview
+        href: native-802-11-ihv-ui-extensions-dll-overview.md
+      - name: Native 802.11 IHV UI Extensions COM Interfaces
+        href: native-802-11-ihv-ui-extensions-com-interfaces.md
+      - name: Extending the Properties for Wireless Network Profiles
+        href: extending-the-properties-for-wireless-network-profiles.md
+        items:
+        - name: Extending Wireless Connection Properties
+          href: extending-wireless-connection-properties.md
+          items:
+          - name: Extending Wireless Security Properties
+            href: extending-wireless-security-properties.md
+          - name: Extending Microsoft 802.1X Security Settings
+            href: extending-microsoft-802-1x-security-settings.md
+          - name: Extending the UI for Proprietary 802.1X Security Methods
+            href: extending-the-ui-for-proprietary-802-1x-security-methods.md
+          - name: Extending the UI for Standard 802.1X Security Methods
+            href: extending-the-ui-for-standard-802-1x-security-methods.md
+      - name: Extending the Advanced Properties for Wireless Network Adapters
+        href: extending-the-advanced-properties-for-wireless-network-adapters.md
+      - name: Handling Requests for the Display of a Custom UI
+        href: handling-requests-for-the-display-of-a-custom-ui.md
+        items:
+        - name: Requesting the Display of a Custom UI
+          href: requesting-the-display-of-a-custom-ui.md
+        - name: Querying for the Display of a Custom UI
+          href: querying-for-the-display-of-a-custom-ui.md
+        - name: Displaying Custom UI Pages within a Balloon Notification
+          href: displaying-custom-ui-pages-within-a-balloon-notification.md
+        - name: Displaying Custom UI Pages within the Network Connection Wizard
+          href: displaying-custom-ui-pages-within-the-network-connection-wizard.md
+        - name: Accessing Profile and Context Data
+          href: accessing-profile-and-context-data.md    
   - name: "Wi-Fi Hotspot Offloading Guide"
     href: wi-fi-hotspot-offloading-guide.md
     items: 
