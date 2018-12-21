@@ -24,7 +24,7 @@ For this example, we plugged in a device and it appeared as an unknown device in
 ## About the Unknown Device Problem
 
 
-To debug an unknown USB device problem, it helps to understand what the USB driver stack does to enumerate a device when a user plugs it into the system. For information on USB enumeration, see the blog post titled [How does USB stack enumerate a device?](http://go.microsoft.com/fwlink/p/?linkid=617517)
+To debug an unknown USB device problem, it helps to understand what the USB driver stack does to enumerate a device when a user plugs it into the system. For information on USB enumeration, see the blog post titled [How does USB stack enumerate a device?](https://go.microsoft.com/fwlink/p/?linkid=617517)
 
 Typically when the USB driver stack fails to enumerate a device, the hub driver still reports the arrival of the device to Windows and the USB device is marked as an unknown device in Device Manager. The device has a Device ID of USB\\VID\_0000&PID\_0000 and a Hardware ID and Compatible ID of USB\\UNKNOWN. The following events cause the USB hub driver to enumerate a USB device as an unknown device:
 
@@ -35,9 +35,9 @@ Typically when the USB driver stack fails to enumerate a device, the hub driver 
 -   The request for the Configuration Descriptor failed.
 -   The [USB Configuration Descriptor](usb-configuration-descriptors.md) was malformed and failed validation.
 
-In Windows 7, unknown devices that fail enumeration are marked with failure [Code 43](http://go.microsoft.com/fwlink/p/?linkid=617523) in Device Manager.
+In Windows 7, unknown devices that fail enumeration are marked with failure [Code 43](https://go.microsoft.com/fwlink/p/?linkid=617523) in Device Manager.
 
-If a device is marked with failure [Code 28](http://go.microsoft.com/fwlink/p/?linkid=617525) in Device Manager, the device enumerated successfully but is still an unknown device. This failure code indicates that the device did not provide a Product ID string during enumeration and Windows could not find a matching INF for the device to install a driver.
+If a device is marked with failure [Code 28](https://go.microsoft.com/fwlink/p/?linkid=617525) in Device Manager, the device enumerated successfully but is still an unknown device. This failure code indicates that the device did not provide a Product ID string during enumeration and Windows could not find a matching INF for the device to install a driver.
 
 ## Starting the Event Trace Analysis
 
@@ -185,7 +185,7 @@ USB error events, and other events, have status values in their data that provid
 
 | Status type                                                          | Resource                                                                                                                                                                                                                         |
 |----------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **fid\_NtStatus**                                                    | See [NTSTATUS values](http://go.microsoft.com/fwlink/p/?linkid=617532).                                                                                                                                                          |
+| **fid\_NtStatus**                                                    | See [NTSTATUS values](https://go.microsoft.com/fwlink/p/?linkid=617532).                                                                                                                                                          |
 | The status field of a USB request block (URB) or **fid\_UsbdStatus** | Look up the value as a USBD\_STATUS in inc\\api\\usb.h in the Windows Driver Kit (WDK). You can also use the [USBD\_STATUS](https://msdn.microsoft.com/library/windows/hardware/ff539136). This topic lists the symbolic names and the meanings of the USBD\_STATUS values. |
 
 

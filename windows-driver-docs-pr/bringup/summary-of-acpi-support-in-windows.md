@@ -19,7 +19,7 @@ This topic summarizes the subset of Advanced Configuration and Power Interface (
 |                             | 5.2.12                                                                               | Multiple APIC Description Table (MADT)                             |
 |                             | 5.2.24                                                                               | Generic Timer Description Table (GTDT)                             |
 |                             | 5.2.6 (Specification is [here](https://acpica.org/related-documents).)               | Core System Resources Table (CSRT)                                 |
-|                             | 5.2.6 (Specification is [here]( http://go.microsoft.com/fwlink/p/?LinkId=691234).) | Debug Port Table 2 (DBG2)                                          |
+|                             | 5.2.6 (Specification is [here]( https://go.microsoft.com/fwlink/p/?LinkId=691234).) | Debug Port Table 2 (DBG2)                                          |
 |                             | 5.2.11.1                                                                             | Differentiated System Description Table (DSDT)                     |
 |                             | 5.2.11.2                                                                             | Secondary System Description Table (SSDT)                          |
 | Device management           | 6.1                                                                                  | Device Identification Objects                                      |

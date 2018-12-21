@@ -76,7 +76,7 @@ Windows Server 2008
 
 Windows Vista
 
-Microsoft provides support for the USB audio device class by means of the Usbaudio.sys driver. For more information, see "USBAudio Class System Driver" in [Kernel-Mode WDM Audio Components](https://msdn.microsoft.com/library/windows/hardware/ff537039). For more information about Windows audio support, see the [Audio Device Technologies for Windows](http://go.microsoft.com/fwlink/p/?linkid=8751) website.
+Microsoft provides support for the USB audio device class by means of the Usbaudio.sys driver. For more information, see "USBAudio Class System Driver" in [Kernel-Mode WDM Audio Components](https://msdn.microsoft.com/library/windows/hardware/ff537039). For more information about Windows audio support, see the [Audio Device Technologies for Windows](https://go.microsoft.com/fwlink/p/?linkid=8751) website.
 
 Communications and CDC Control (02h)
 **Ports**
@@ -167,7 +167,7 @@ Windows Server 2008
 
 Windows Vista
 
-Microsoft provides the HID class driver (Hidclass.sys) and the miniclass driver (Hidusb.sys) to operate devices that comply with the [USB HID Standard](http://go.microsoft.com/fwlink/p/?LinkId=761243). For more information, see [HID Architecture](https://msdn.microsoft.com/library/windows/hardware/jj126193) and [Minidrivers and the HID class driver](https://msdn.microsoft.com/library/windows/hardware/jj131708). For further information about Windows support for input hardware, see the [Input and HID - Architecture and Driver Support](http://go.microsoft.com/fwlink/p/?linkid=8709) website.
+Microsoft provides the HID class driver (Hidclass.sys) and the miniclass driver (Hidusb.sys) to operate devices that comply with the [USB HID Standard](https://go.microsoft.com/fwlink/p/?LinkId=761243). For more information, see [HID Architecture](https://msdn.microsoft.com/library/windows/hardware/jj126193) and [Minidrivers and the HID class driver](https://msdn.microsoft.com/library/windows/hardware/jj131708). For further information about Windows support for input hardware, see the [Input and HID - Architecture and Driver Support](https://go.microsoft.com/fwlink/p/?linkid=8709) website.
 Physical (05h)
 -
 -
@@ -194,7 +194,7 @@ Windows Server 2008
 
 Windows Vista
 
-Microsoft provides the Usbscan.sys driver that manages USB digital cameras and scanners for Windows XP and later operating systems. This driver implements the USB component of the Windows Imaging Architecture (WIA). For more information about WIA, see [Windows Image Acquisition Drivers](https://msdn.microsoft.com/library/windows/hardware/ff553346) and the [Windows Imaging Component](http://go.microsoft.com/fwlink/p/?linkid=8768) website. For a description of the role that Usbscan.sys plays in the WIA, see [WIA Core Components](https://msdn.microsoft.com/library/windows/hardware/ff550215).
+Microsoft provides the Usbscan.sys driver that manages USB digital cameras and scanners for Windows XP and later operating systems. This driver implements the USB component of the Windows Imaging Architecture (WIA). For more information about WIA, see [Windows Image Acquisition Drivers](https://msdn.microsoft.com/library/windows/hardware/ff553346) and the [Windows Imaging Component](https://go.microsoft.com/fwlink/p/?linkid=8768) website. For a description of the role that Usbscan.sys plays in the WIA, see [WIA Core Components](https://msdn.microsoft.com/library/windows/hardware/ff550215).
 Printer (07h)
 **USB**
 
@@ -218,7 +218,7 @@ Windows Server 2008
 
 Windows Vista
 
-Microsoft provides the Usbprint.sys class driver that manages USB printers. For information about implementation of the printer class in Windows, see the [Printing - Architecture and Driver Support](http://go.microsoft.com/fwlink/p/?linkid=8764) website.
+Microsoft provides the Usbprint.sys class driver that manages USB printers. For information about implementation of the printer class in Windows, see the [Printing - Architecture and Driver Support](https://go.microsoft.com/fwlink/p/?linkid=8764) website.
 Mass Storage (08h)
 **USB**
 
@@ -237,7 +237,7 @@ Windows Server 2008
 
 Windows Vista
 
-Microsoft provides the Usbstor.sys port driver to manage USB mass storage devices with Microsoft's native storage class drivers. For an example device stack that is managed by this driver, see [Device Object Example for a USB Mass Storage Device](https://msdn.microsoft.com/library/windows/hardware/ff552547). For information about Windows storage support, see the [Storage Technologies](http://go.microsoft.com/fwlink/p/?linkid=8766) website.
+Microsoft provides the Usbstor.sys port driver to manage USB mass storage devices with Microsoft's native storage class drivers. For an example device stack that is managed by this driver, see [Device Object Example for a USB Mass Storage Device](https://msdn.microsoft.com/library/windows/hardware/ff552547). For information about Windows storage support, see the [Storage Technologies](https://go.microsoft.com/fwlink/p/?linkid=8766) website.
 **SCSIAdapter**
 
 {4d36e97b-e325-11ce-bfc1-08002be10318}
@@ -416,7 +416,7 @@ Windows 7
 
 Windows Vista
 
-Prior to Windows Vista, support for CDC is limited to the RNDIS-specific implementation of the Abstract Control Model (ACM) with a vendor-unique protocol (**bInterfaceProtocol**) value of 0xFF. The RNDIS facility centers the management of all 802-style network cards in a single class driver, Rndismp.sys. For a detailed discussion of remote NDIS, see [Overview of Remote NDIS](https://msdn.microsoft.com/library/windows/hardware/ff569967). The mapping of remote NDIS to USB is implemented in the Usb8023.sys driver. For further information about networking support in Windows, see the [Networking and Wireless Technologies](http://go.microsoft.com/fwlink/p/?linkid=8759) website.
+Prior to Windows Vista, support for CDC is limited to the RNDIS-specific implementation of the Abstract Control Model (ACM) with a vendor-unique protocol (**bInterfaceProtocol**) value of 0xFF. The RNDIS facility centers the management of all 802-style network cards in a single class driver, Rndismp.sys. For a detailed discussion of remote NDIS, see [Overview of Remote NDIS](https://msdn.microsoft.com/library/windows/hardware/ff569967). The mapping of remote NDIS to USB is implemented in the Usb8023.sys driver. For further information about networking support in Windows, see the [Networking and Wireless Technologies](https://go.microsoft.com/fwlink/p/?linkid=8759) website.
 
 Application Specific (FEh)
 -

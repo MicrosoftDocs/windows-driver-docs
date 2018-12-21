@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 # Bluetooth Profile Drivers Overview
 
 
-This section describes the support that Microsoft provides for the wireless Bluetooth protocol. Bluetooth is an industry standard protocol that enables wireless connectivity for a variety of devices including computers, mobile phones, handheld devices, mouse devices, keyboards, and printers. This section also provides guidelines on how to develop Bluetooth profile drivers for your Bluetooth-enabled device. Details of the Bluetooth protocol are available on the [Bluetooth](http://go.microsoft.com/fwlink/p/?linkid=26268) website.
+This section describes the support that Microsoft provides for the wireless Bluetooth protocol. Bluetooth is an industry standard protocol that enables wireless connectivity for a variety of devices including computers, mobile phones, handheld devices, mouse devices, keyboards, and printers. This section also provides guidelines on how to develop Bluetooth profile drivers for your Bluetooth-enabled device. Details of the Bluetooth protocol are available on the [Bluetooth](https://go.microsoft.com/fwlink/p/?linkid=26268) website.
 
 Microsoft provides support for the Bluetooth protocol in Microsoft Windows XP with Service Pack 2 (SP2) and later. Bluetooth drivers, known as profile drivers, are written by independent hardware vendors (IHVs) to support various protocols defined in the Bluetooth specifications. Profile drivers should follow the Windows Driver Model (WDM) architecture.
 

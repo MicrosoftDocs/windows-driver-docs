@@ -16,7 +16,7 @@ The \_DSM Interface for Byte Addressable Energy Backed Function Class (Function 
 ## <span id="related_topics"></span>Related topics
 
 
-[Storage driver design guide](http://go.microsoft.com/fwlink/p/?LinkId=798409)
+[Storage driver design guide](https://go.microsoft.com/fwlink/p/?LinkId=798409)
 
 [JEDEC Byte-Addressable Energy-Backed Interface NVDIMM Device-Specific Method (\_DSM)](jedec-byte-addressable-energy-backed-interface-nvdimms-device-specific-method---dsm-.md)
 

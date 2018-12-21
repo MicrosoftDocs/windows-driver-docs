@@ -368,7 +368,7 @@ The following only applies when an existing stream of a file is being opened (th
 
 The file system performs additional checks for Batch and Filter oplocks (rather than the oplock package itself) when processing an IRP_MJ_CREATE operation, which impact whether the file system asks the oplock package to perform oplock break processing. This is a case where operations on one data stream can impact the oplocks on other data streams of the same file (that is, the last two list items of the following criteria list). If one or more of the following criteria are met, the file system sends a request to the oplock package to perform oplock break processing:
 
--   Request a break if this is a network query open and a [KTM](http://go.microsoft.com/fwlink/p/?linkid=124745) transaction is present. Otherwise, do not request a break on network query open.
+-   Request a break if this is a network query open and a [KTM](https://go.microsoft.com/fwlink/p/?linkid=124745) transaction is present. Otherwise, do not request a break on network query open.
 
 -   If a SUPERSEDE, OVERWRITE or OVERWRITE_IF operation is performed on an alternate data stream and FILE_SHARE_DELETE is not specified and there is a Batch or Filter oplock on the primary data stream, request a break of the Batch or Filter oplock on the primary data stream.
 

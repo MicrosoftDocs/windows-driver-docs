@@ -57,7 +57,7 @@ The following table lists the methods in the Radio Management API and the corres
 ## Communicating with the device driver
 
 
-When the radio-management DLL receives a request to retrieve or set the radio state from the radio-management API, it forwards that request as an IOCTL to the corresponding device driver. The DLL sends IOCTLs by invoking the [DeviceIoControl]( http://go.microsoft.com/fwlink/p/?linkid=256462) function. The specific IOCTLs associated with radio management are:
+When the radio-management DLL receives a request to retrieve or set the radio state from the radio-management API, it forwards that request as an IOCTL to the corresponding device driver. The DLL sends IOCTLs by invoking the [DeviceIoControl]( https://go.microsoft.com/fwlink/p/?linkid=256462) function. The specific IOCTLs associated with radio management are:
 
 -   IOCTL\_GPS\_RADIO\_MANAGEMENT\_GET\_RADIO\_STATE
 -   IOCTL\_GPS\_RADIO\_MANAGEMENT\_GET\_PREVIOUS\_RADIO\_STATE

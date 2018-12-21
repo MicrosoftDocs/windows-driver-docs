@@ -63,7 +63,7 @@ As part of Windows 8.1 investments, the **msgpio** button driver brings importan
 
 -   Augmented logging to speed up investigations.
 -   Improved synchronization and error handling to enhance the robustness.
--   The new ConvertibleSlateMode [Unattended Windows Setup](http://go.microsoft.com/fwlink/p/?linkid=276788) to be used on non-GPIO laptops to statically set the mode to laptop as part of the OEM image customization.
+-   The new ConvertibleSlateMode [Unattended Windows Setup](https://go.microsoft.com/fwlink/p/?linkid=276788) to be used on non-GPIO laptops to statically set the mode to laptop as part of the OEM image customization.
 
 For questions about GPIO buttons and indicator implementation, send an e-mail to the Microsoft support group at dockingsupport@microsoft.com.
 
@@ -71,15 +71,15 @@ For questions about GPIO buttons and indicator implementation, send an e-mail to
 [Power Button Behaviors and Implementation](http://connect.microsoft.com/site1304/Downloads/DownloadDetails.aspx?DownloadID=47452)  
 [Connected Standby Wake Sources](http://connect.microsoft.com/site1304/Downloads/DownloadDetails.aspx?DownloadID=49891)  
 [ACPI Design Guide](http://connect.microsoft.com/site1304/Downloads/DownloadDetails.aspx?DownloadID=48755)  
-[GetSystemMetrics function](http://go.microsoft.com/fwlink/p/?linkid=324686)  
-[Keyboard Enhancements in Windows 8](http://go.microsoft.com/fwlink/p/?linkid=324536)  
+[GetSystemMetrics function](https://go.microsoft.com/fwlink/p/?linkid=324686)  
+[Keyboard Enhancements in Windows 8](https://go.microsoft.com/fwlink/p/?linkid=324536)  
 [Windows Hardware Compatibility Program](https://msdn.microsoft.com/library/windows/hardware/dn922588)  
-[Certification requirements for Windows desktop apps](http://go.microsoft.com/fwlink/p/?linkid=306131)  
-[HID over I²C](http://go.microsoft.com/fwlink/p/?linkid=324690)  
+[Certification requirements for Windows desktop apps](https://go.microsoft.com/fwlink/p/?linkid=306131)  
+[HID over I²C](https://go.microsoft.com/fwlink/p/?linkid=324690)  
 [GPIO tests in MITT](https://msdn.microsoft.com/library/windows/hardware/dn919780)  
-[Windows System Image Manager Technical Reference](http://go.microsoft.com/fwlink/p/?linkid=324691)  
-[Unattended Windows Setup Reference](http://go.microsoft.com/fwlink/p/?linkid=276788)  
-[Windows Driver Kit (WDK) 8.1](http://go.microsoft.com/fwlink/p/?linkid=310164)  
+[Windows System Image Manager Technical Reference](https://go.microsoft.com/fwlink/p/?linkid=324691)  
+[Unattended Windows Setup Reference](https://go.microsoft.com/fwlink/p/?linkid=276788)  
+[Windows Driver Kit (WDK) 8.1](https://go.microsoft.com/fwlink/p/?linkid=310164)  
 
 
 

@@ -37,7 +37,7 @@ IEEE 802.11ac very-high throughput (VHT) PHY is now supported. The following DDI
 
 ## Sample and Documentation Updates
 
-The [Hyper-V Extensible Switch forwarding extension sample](http://go.microsoft.com/fwlink/p/?LinkId=617913) has been updated to implement Hybrid Forwarding.
+The [Hyper-V Extensible Switch forwarding extension sample](https://go.microsoft.com/fwlink/p/?LinkId=617913) has been updated to implement Hybrid Forwarding.
 
 The following documentation sections have been added or significantly expanded:
 

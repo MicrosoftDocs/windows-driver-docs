@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Event tracing
 
 
-You can use Event Tracing for Windows (ETW) or the Windows software trace preprocessor (WPP) to trace the operations in your HID over I²C device driver. For more information about ETW, see the [Event Tracing](http://go.microsoft.com/fwlink/p/?linkid=256040) topic in the Windows Development Reference. For more information about WPP, see [WPP Software Tracing](https://msdn.microsoft.com/library/windows/hardware/ff556204) and [Inflight Trace Recorder (IFR) for logging traces](https://msdn.microsoft.com/library/windows/hardware/dn914610).
+You can use Event Tracing for Windows (ETW) or the Windows software trace preprocessor (WPP) to trace the operations in your HID over I²C device driver. For more information about ETW, see the [Event Tracing](https://go.microsoft.com/fwlink/p/?linkid=256040) topic in the Windows Development Reference. For more information about WPP, see [WPP Software Tracing](https://msdn.microsoft.com/library/windows/hardware/ff556204) and [Inflight Trace Recorder (IFR) for logging traces](https://msdn.microsoft.com/library/windows/hardware/dn914610).
 
 ## Using the Inflight Trace Recorder (IFR)
 
@@ -25,7 +25,7 @@ The Inflight Trace Recorder (IFR) stores these trace messages in a fixed-size ci
 ## Using logman.exe
 
 
-For more verbose and controllable traces, you can use [logman.exe]( http://go.microsoft.com/fwlink/p/?linkid=256232) to capture traces. The following commands capture WPP traces for HIDI²C:
+For more verbose and controllable traces, you can use [logman.exe]( https://go.microsoft.com/fwlink/p/?linkid=256232) to capture traces. The following commands capture WPP traces for HIDI²C:
 
 ``` syntax
 Logman create trace -n HIDI2C_WPP -o HIDI2C_WPP.etl -nb 128 640 -bs 128 

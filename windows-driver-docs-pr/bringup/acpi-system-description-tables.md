@@ -86,7 +86,7 @@ Microsoft requires a debug port on all systems. To describe the debug port(s) bu
 
 Windows uses the Port Type value in the DBG2 table to identify and load the Kernel Debugger (KD) transport (for example, USB or serial) that the system requires. The KD transport then uses the Port Subtype value in the DBG2 table to identify the hardware interface used by the port. Other information in the DBG2 table specifies the system address of the port registers, which is used by the hardware interface module for the specified subtype. Finally, the DBG2 table must include a reference to the device node in the ACPI namespace that corresponds to the debug port. This reference enables Windows to manage conflicts between debugging use and normal use of the device, if any, and also to integrate the debugger with power transitions.
 
-For more information, see the [Microsoft Debug Port Table 2 (DBG2) specification](http://go.microsoft.com/fwlink/p/?linkid=330996).
+For more information, see the [Microsoft Debug Port Table 2 (DBG2) specification](https://go.microsoft.com/fwlink/p/?linkid=330996).
 
 ## Differentiated System Description Table (DSDT)
 
@@ -110,5 +110,5 @@ Windows Server 2016
 
 Windows 10, version 1607
 
-For more information, see the [Windows SMM Security Mitigations Table (WMST) specification](http://go.microsoft.com/fwlink/p/?LinkId=786943).
+For more information, see the [Windows SMM Security Mitigations Table (WMST) specification](https://go.microsoft.com/fwlink/p/?LinkId=786943).
 

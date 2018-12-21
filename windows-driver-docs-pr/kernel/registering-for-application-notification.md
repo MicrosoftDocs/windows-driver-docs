@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 # Registering for Application Notification
 
 
-A user-mode application calls the [RegisterDeviceNotification](http://go.microsoft.com/fwlink/p/?linkid=97892) function to register itself to be notified when a processor or memory module is dynamically added to the hardware partition. An application calls the **RegisterDeviceNotification** function two times, one time to register for notification of processor events and a second time to register for notification of memory events. The application specifies one of the following GUIDs when it registers for notification of these events:
+A user-mode application calls the [RegisterDeviceNotification](https://go.microsoft.com/fwlink/p/?linkid=97892) function to register itself to be notified when a processor or memory module is dynamically added to the hardware partition. An application calls the **RegisterDeviceNotification** function two times, one time to register for notification of processor events and a second time to register for notification of memory events. The application specifies one of the following GUIDs when it registers for notification of these events:
 
 <a href="" id="guid-device-processor"></a>GUID\_DEVICE\_PROCESSOR  
 Registers the application to be notified when a processor is dynamically added to the hardware partition.
@@ -80,7 +80,7 @@ MemoryNotifyHandle =
 
  
 
-When an application no longer has to receive notification of processor or memory events, it can unregister the window from receiving WM\_DEVICECHANGE messages for these events by calling the [UnregisterDeviceNotification](http://go.microsoft.com/fwlink/p/?linkid=97893) function. The following code example shows how to unregister for the application notifications:
+When an application no longer has to receive notification of processor or memory events, it can unregister the window from receiving WM\_DEVICECHANGE messages for these events by calling the [UnregisterDeviceNotification](https://go.microsoft.com/fwlink/p/?linkid=97893) function. The following code example shows how to unregister for the application notifications:
 
 ```cpp
 // Unregister the application window from receiving

@@ -59,7 +59,7 @@ You can only view the trace messages in Windows Debugger.
 
 -   Familiarize yourself with [WPP software tracing](wpp-software-tracing.md) such as [adding WPP software tracing to your driver](adding-wpp-software-tracing-to-a-windows-driver.md) and [declaring and calling WPP macros](adding-wpp-macros-to-a-trace-provider.md).
 -   Read this blog article about, [How to include and view WPP trace messages in a driver’s public PDB files](http://blogs.msdn.com/b/usbcoreblog/archive/2013/06/29/wpp-blog-post.aspx).
--   Study the toaster sample. It has been modified to demonstrate how to enable IFR and use it. For more information, see [Toaster Sample Driver](http://go.microsoft.com/fwlink/p/?LinkId=617723).
+-   Study the toaster sample. It has been modified to demonstrate how to enable IFR and use it. For more information, see [Toaster Sample Driver](https://go.microsoft.com/fwlink/p/?LinkId=617723).
 
 ## <span id="Enable_WPP_software_tracing"></span><span id="enable_wpp_software_tracing"></span><span id="ENABLE_WPP_SOFTWARE_TRACING"></span>Enable WPP software tracing
 

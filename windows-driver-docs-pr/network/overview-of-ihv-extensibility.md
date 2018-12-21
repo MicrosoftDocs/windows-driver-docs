@@ -44,7 +44,7 @@ To provide a secure execution environment, the IHV should do the following:
 
 1.  Do not log any sensitive information, such as encryption keys, in event or debug logs.
 
-2.  Use [CryptProtectMemory](http://go.microsoft.com/fwlink/p/?linkid=64677) to protect sensitive encryption keys stored in memory, and [SecureZeroMemory](http://go.microsoft.com/fwlink/p/?linkid=64678) to clear memory when done with the keys.
+2.  Use [CryptProtectMemory](https://go.microsoft.com/fwlink/p/?linkid=64677) to protect sensitive encryption keys stored in memory, and [SecureZeroMemory](https://go.microsoft.com/fwlink/p/?linkid=64678) to clear memory when done with the keys.
 
 3.  Treat the IHV extension portions of the [network profile](configuration-through-a-network-profile.md) as untrusted data that may have been manipulated by an attacker. IHV extension portions of profiles are opaque to the 802.11 Auto Configuration Module (ACM) and Media Specific Module (MSM) and will not be validated. (See [Native 802.11 Software Architecture](native-802-11-software-architecture.md) for descriptions of these modules and configuration control paths.) This IHV extension data should be appropriately parsed to prevent any buffer overflows or attacks that could lead to a local escalation of privileges.
 

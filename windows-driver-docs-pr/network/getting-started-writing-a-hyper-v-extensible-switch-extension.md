@@ -38,8 +38,8 @@ To create a Hyper-V Extensible Switch extension, follow these steps:
     -   Download and install [Windows Driver Kit 8](https://msdn.microsoft.com/library/windows/hardware/gg487428.aspx).
 
 3.  Study the sample extensions.
-    -   Download the [NDIS forwarding extension sample](http://go.microsoft.com/fwlink/p/?LinkId=618935).
-    -   Download the [WFP sample](http://go.microsoft.com/fwlink/p/?LinkId=618934). This is a functioning prototype that includes vSwitch capability.
+    -   Download the [NDIS forwarding extension sample](https://go.microsoft.com/fwlink/p/?LinkId=618935).
+    -   Download the [WFP sample](https://go.microsoft.com/fwlink/p/?LinkId=618934). This is a functioning prototype that includes vSwitch capability.
 
 4.  Write your extension.
     -   You can use one of the samples as a starting point, port existing filter code, or write your extension from scratch.
@@ -62,7 +62,7 @@ To create a Hyper-V Extensible Switch extension, follow these steps:
     -   Filter.Driver.vSwitchExtension
 
 9.  After your final extension passes WHCK certification, submit it to Microsoft.
-    -   Your extension must be submitted as an MSI install package with a specific format to ensure that it can be tracked and deployed by management packages, such as [System Center Virtual Machine Manager (SCVMM) 2012](http://technet.microsoft.com/magazine/hh300651.aspx). The MSI format is defined in [Extension Driver MSI Packaging Requirements](https://msdn.microsoft.com/library/windows/hardware/hh921657.aspx).
+    -   Your extension must be submitted as an MSI install package with a specific format to ensure that it can be tracked and deployed by management packages, such as [System Center Virtual Machine Manager (SCVMM) 2012](https://technet.microsoft.com/magazine/hh300651.aspx). The MSI format is defined in [Extension Driver MSI Packaging Requirements](https://msdn.microsoft.com/library/windows/hardware/hh921657.aspx).
 
 10. List your extension on WindowsServerCatalog.com.
     -   List a brief description of your extension on WindowsServerCatalog.com.

@@ -113,10 +113,10 @@ Windows operating systems include native support for USB host controllers, hubs,
 <p>List of common tasks that a driver or an app performs in order to communicate with a USB device. Get quick info about the programming interfaces you need for each task.</p>
 <p></p>
 <p><strong>USB samples</strong></p>
-<p><a href="http://go.microsoft.com/fwlink/p/?LinkID=309716" data-raw-source="[UWP app samples for USB](http://go.microsoft.com/fwlink/p/?LinkID=309716)">UWP app samples for USB</a></p>
-<p><a href="http://go.microsoft.com/fwlink/p/?linkid=618021" data-raw-source="[Windows driver samples for USB](http://go.microsoft.com/fwlink/p/?linkid=618021)">Windows driver samples for USB</a></p>
+<p><a href="https://go.microsoft.com/fwlink/p/?LinkID=309716" data-raw-source="[UWP app samples for USB](https://go.microsoft.com/fwlink/p/?LinkID=309716)">UWP app samples for USB</a></p>
+<p><a href="https://go.microsoft.com/fwlink/p/?linkid=618021" data-raw-source="[Windows driver samples for USB](https://go.microsoft.com/fwlink/p/?linkid=618021)">Windows driver samples for USB</a></p>
 <p><strong>Development tools</strong></p>
-<a href="http://go.microsoft.com/fwlink/p/?linkid=619491" data-raw-source="[Download kits and tools for Windows]( http://go.microsoft.com/fwlink/p/?linkid=619491)">Download kits and tools for Windows</a></td>
+<a href="https://go.microsoft.com/fwlink/p/?linkid=619491" data-raw-source="[Download kits and tools for Windows]( https://go.microsoft.com/fwlink/p/?linkid=619491)">Download kits and tools for Windows</a></td>
 </tr>
 </tbody>
 </table>

@@ -16,7 +16,7 @@ This section focuses on pen and button devices.
 -   A pen device is integrated with the Tablet PC's LCD display and is used to capture the motion of a pen stylus.
 -   A button device supplements the pen device and is used to capture button input. For more information about the Tablet PC, see the Windows XP Tablet PC Edition website
 
-For more information about the Tablet PC, see the [Windows XP Tablet PC Edition](http://go.microsoft.com/fwlink/p/?linkid=275069) website.
+For more information about the Tablet PC, see the [Windows XP Tablet PC Edition](https://go.microsoft.com/fwlink/p/?linkid=275069) website.
 
 For detailed information about system-supplied software that supports the Tablet PC, see the Tablet PC documentation in the Microsoft Windows SDK.
 

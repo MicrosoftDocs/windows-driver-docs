@@ -33,7 +33,7 @@ AVStream calls [*AVStrMiniFilterProcess*](https://msdn.microsoft.com/library/win
 
 In the [*AVStrMiniFilterProcess*](https://msdn.microsoft.com/library/windows/hardware/ff556315) callback routine, the minidriver receives a pointer to an array of [**KSPROCESSPIN\_INDEXENTRY**](https://msdn.microsoft.com/library/windows/hardware/ff564260) structures. AVStream orders the array of KSPROCESSPIN\_INDEXENTRY structures by pin ID.
 
-The following code examples illustrate how to use the process pin structures. The code is taken from the [AVStream Filter-Centric Simulated Capture Driver (Avssamp)](http://go.microsoft.com/fwlink/p/?linkid=256084) sample, which demonstrates how to write a filter-centric capture driver. Source code and a description of this sample are included in the Windows Driver Kit samples download.
+The following code examples illustrate how to use the process pin structures. The code is taken from the [AVStream Filter-Centric Simulated Capture Driver (Avssamp)](https://go.microsoft.com/fwlink/p/?linkid=256084) sample, which demonstrates how to write a filter-centric capture driver. Source code and a description of this sample are included in the Windows Driver Kit samples download.
 
 The minidriver receives an array of KSPROCESSPIN\_INDEXENTRY structures in its filter process dispatch. In this example, the minidriver extracts the first KSPROCESSPIN structure from the KSPROCESSPIN\_INDEXENTRY structure of index VIDEO\_PIN\_ID:
 

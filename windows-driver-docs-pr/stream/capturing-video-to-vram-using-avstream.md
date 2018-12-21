@@ -34,7 +34,7 @@ The following sections describe how to add VRAM capture support to a new or exis
 
 [Adding VRAM Capture Support to Existing AVStream Drivers](adding-vram-capture-support-to-existing-avstream-drivers.md)
 
-You can find sample code showing VRAM capture in the [AVStream Simulated Hardware Sample Driver (AVSHwS)](http://go.microsoft.com/fwlink/p/?linkid=256083).
+You can find sample code showing VRAM capture in the [AVStream Simulated Hardware Sample Driver (AVSHwS)](https://go.microsoft.com/fwlink/p/?linkid=256083).
 
  
 

@@ -47,7 +47,7 @@ This topic includes:
 
 To use PoolMon on Microsoft Windows XP and earlier systems, you must enable *pool tagging*. On Windows Server 2003 and later versions of Windows, pool tagging is permanently enabled. For more information, see "Pool Tagging Requirement" in [PoolMon Requirements](poolmon-requirements.md).
 
-PoolMon can display the names of the Windows components and commonly used drivers that assign each pool tag. This feature uses data from pooltag.txt, a file installed with PoolMon and with the Debugging Tools for Windows packages. Occasionally, Microsoft updates this file. To check for updates, go to the [Microsoft support](http://go.microsoft.com/fwlink/p/?linkid=8713) website and search for "pooltag.txt."
+PoolMon can display the names of the Windows components and commonly used drivers that assign each pool tag. This feature uses data from pooltag.txt, a file installed with PoolMon and with the Debugging Tools for Windows packages. Occasionally, Microsoft updates this file. To check for updates, go to the [Microsoft support](https://go.microsoft.com/fwlink/p/?linkid=8713) website and search for "pooltag.txt."
 
  
 

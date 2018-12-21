@@ -15,7 +15,7 @@ This topic describes how to write a [Universal Windows driver](https://msdn.micr
 
 To get started, be sure you have the most recent version of Microsoft Visual Studio and the Windows Driver Kit (WDK). For download links, see [Download the Windows Driver Kit (WDK)](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk).
 
-[Debugging Tools for Windows](http://go.microsoft.com/fwlink/p?linkid=223405) is included when you install the WDK.
+[Debugging Tools for Windows](https://go.microsoft.com/fwlink/p?linkid=223405) is included when you install the WDK.
 
 ## Create and build a driver
 
@@ -72,7 +72,7 @@ So far, you've used Visual Studio to build a driver on the host computer. Now yo
 
     ![screen shot of the umdfdriver property pages, showing deployment driver install selected](images/vs2015-deploy.png)
 
-    **Note**  In this exercise, the hardware ID does not identify a real piece of hardware. It identifies an imaginary device that will be given a place in the [device tree](http://go.microsoft.com/fwlink/p?linkid=399236) as a child of the root node. For real hardware, do not select **Hardware ID Driver Update**; instead, select **Install and Verify**.
+    **Note**  In this exercise, the hardware ID does not identify a real piece of hardware. It identifies an imaginary device that will be given a place in the [device tree](https://go.microsoft.com/fwlink/p?linkid=399236) as a child of the root node. For real hardware, do not select **Hardware ID Driver Update**; instead, select **Install and Verify**.
     You can see the hardware ID in your driver's information (INF) file. In the **Solution Explorer** window, go to **UmdfDriver &gt; Driver Files**, and double-click UmdfDriver.inf. The hardware ID is under \[Standard.NT$ARCH$\].
 
     ```ManagedCPlusPlus
@@ -88,9 +88,9 @@ So far, you've used Visual Studio to build a driver on the host computer. Now yo
 ## <span id="related_topics"></span>Related topics
 
 
-[Developing, Testing, and Deploying Drivers](http://go.microsoft.com/fwlink/p?linkid=399234)
+[Developing, Testing, and Deploying Drivers](https://go.microsoft.com/fwlink/p?linkid=399234)
 
-[Debugging Tools for Windows](http://go.microsoft.com/fwlink/p?linkid=223405)
+[Debugging Tools for Windows](https://go.microsoft.com/fwlink/p?linkid=223405)
 
 [Write your first driver](writing-your-first-driver.md)
 

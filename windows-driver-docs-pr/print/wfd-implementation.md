@@ -29,7 +29,7 @@ Having the same container ID at WFD layer as well as WSD layer ensures the follo
 
 If a WFD-WSD device does not conform to the above requirements, then the connectivity experience described in this implementation will not apply to those devices.
 
-Devices should implement Persistent Groups and Concurrent Connection-Multiple Groups as specified in the [Wi-Fi Alliance - Wi-Fi Direct Industry Whitepaper](http://go.microsoft.com/fwlink/p/?LinkId=784967).
+Devices should implement Persistent Groups and Concurrent Connection-Multiple Groups as specified in the [Wi-Fi Alliance - Wi-Fi Direct Industry Whitepaper](https://go.microsoft.com/fwlink/p/?LinkId=784967).
 
 ## How to Publish Container UUID over Wi-Fi Direct for Printers
 

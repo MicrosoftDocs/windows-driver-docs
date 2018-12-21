@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 This topic contains sample application code that you can use to support Extension Units.
 
-An application accesses the interface by using **IKsTopologyInfo::CreateNodeInstance** followed by a call to **QueryInterface** on the node object to obtain the required COM API. The **IKsTopologyInfo** interface is documented on the [API and reference catalog](http://go.microsoft.com/fwlink/p/?linkid=27252) website.
+An application accesses the interface by using **IKsTopologyInfo::CreateNodeInstance** followed by a call to **QueryInterface** on the node object to obtain the required COM API. The **IKsTopologyInfo** interface is documented on the [API and reference catalog](https://go.microsoft.com/fwlink/p/?linkid=27252) website.
 
 Include the following code in the application source, arbitrarily named TestApp.cpp.
 

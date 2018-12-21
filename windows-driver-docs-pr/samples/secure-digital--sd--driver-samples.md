@@ -16,7 +16,7 @@ The driver samples in this directory provide a starting point for writing a cust
 
 | Sample Name                          | Solution                                                    | Description                                                                                                                                                              |
 |--------------------------------------|-------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Standard SD Host Controller Miniport | [sdhc](http://go.microsoft.com/fwlink/p/?LinkId=617952)     | Provides a functional miniport implementation for a standard SD host controller.                                                                                         |
+| Standard SD Host Controller Miniport | [sdhc](https://go.microsoft.com/fwlink/p/?LinkId=617952)     | Provides a functional miniport implementation for a standard SD host controller.                                                                                         |
 
  
 

@@ -11,7 +11,7 @@ ms.technology: windows-devices
 
 # Windows Hardware Dev Center dashboard
 
-The Windows Hardware Dev Center Dashboard enables you to create and manage your system and driver submissions quickly and easily. It replaces the legacy (Sysdev) dashboard for hardware tasks including: hardware certification, collaborative driver development, and driver distribution through Windows Update. To get started, watch our introductory [video series](http://go.microsoft.com/fwlink/?LinkID=828003), and see [Get started with the hardware program](get-started-with-the-hardware-dashboard.md) for registration details.
+The Windows Hardware Dev Center Dashboard enables you to create and manage your system and driver submissions quickly and easily. It replaces the legacy (Sysdev) dashboard for hardware tasks including: hardware certification, collaborative driver development, and driver distribution through Windows Update. To get started, watch our introductory [video series](https://go.microsoft.com/fwlink/?LinkID=828003), and see [Get started with the hardware program](get-started-with-the-hardware-dashboard.md) for registration details.
 
 > [!NOTE]
 > The legacy (Sysdev) dashboard has been retired. Use the Windows Hardware Dev Center Dashboard for your hardware tasks.

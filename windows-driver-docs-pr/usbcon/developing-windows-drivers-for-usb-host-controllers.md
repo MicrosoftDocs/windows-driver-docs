@@ -32,11 +32,11 @@ ms.localizationpriority: medium
 </ul>
 <p><strong>Development tools</strong></p>
 <p>The WDK contains resources that are required for driver development, such as headers, libraries, tools, and samples.</p>
-<p><a href="http://go.microsoft.com/fwlink/p/?linkid=617155" data-raw-source="[Download kits and tools for Windows](http://go.microsoft.com/fwlink/p/?linkid=617155)">Download kits and tools for Windows</a></p></td>
+<p><a href="https://go.microsoft.com/fwlink/p/?linkid=617155" data-raw-source="[Download kits and tools for Windows](https://go.microsoft.com/fwlink/p/?linkid=617155)">Download kits and tools for Windows</a></p></td>
 <td><p><strong>Get started...</strong></p>
 <p>Read the official specification that describes the expected behavior of different components (device, host controller, and hub) of the architecture.</p>
-<a href="http://go.microsoft.com/fwlink/p/?linkid=618273" data-raw-source="[xHCI for Universal Serial Bus: Specification]( http://go.microsoft.com/fwlink/p/?linkid=618273)">xHCI for Universal Serial Bus: Specification</a>
-<a href="http://go.microsoft.com/fwlink/p/?linkid=224892" data-raw-source="[Official Universal Serial Bus Documents]( http://go.microsoft.com/fwlink/p/?linkid=224892)">Official Universal Serial Bus Documents</a>
+<a href="https://go.microsoft.com/fwlink/p/?linkid=618273" data-raw-source="[xHCI for Universal Serial Bus: Specification]( https://go.microsoft.com/fwlink/p/?linkid=618273)">xHCI for Universal Serial Bus: Specification</a>
+<a href="https://go.microsoft.com/fwlink/p/?linkid=224892" data-raw-source="[Official Universal Serial Bus Documents]( https://go.microsoft.com/fwlink/p/?linkid=224892)">Official Universal Serial Bus Documents</a>
 <p><strong>Understand the architecture of UCX</strong></p>
 <p>Familiarize yourself with the Microsoft-provided USB driver stack:</p>
 <a href="usb-3-0-driver-stack-architecture.md" data-raw-source="[USB host-side drivers in Windows](usb-3-0-driver-stack-architecture.md)">USB host-side drivers in Windows</a>

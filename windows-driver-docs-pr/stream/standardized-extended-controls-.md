@@ -240,7 +240,7 @@ The MFT0 parses the metadata buffer provided by the driver and attaches the requ
 
 **EXIF and HW JPEG encoder**
 
-The pipeline is not required to process or warp any EXIF data for the HW JPEG encoder; therefore, the EXIF data format is provided by the driver, MFT0, and OEM HW JPEG encoder. OEMs partners can define any custom attribute GUID and variant type for the EXIF attribute and attach it to the **MFSampleExtension\_CaptureMetaData** attribute bag for it to be consumed by the OEM components. If a HW JPEG encoder is available, the pipeline photo sink component will load the HW JPEG encoder and set the EXIF data held in the **MFSampleExtension\_CaptureMetaData** attribute bag onto the HW JPEG encoder as an EXIF encoder option using the [IPropertyBag2::Write](http://go.microsoft.com/fwlink/?LinkId=331589) method.
+The pipeline is not required to process or warp any EXIF data for the HW JPEG encoder; therefore, the EXIF data format is provided by the driver, MFT0, and OEM HW JPEG encoder. OEMs partners can define any custom attribute GUID and variant type for the EXIF attribute and attach it to the **MFSampleExtension\_CaptureMetaData** attribute bag for it to be consumed by the OEM components. If a HW JPEG encoder is available, the pipeline photo sink component will load the HW JPEG encoder and set the EXIF data held in the **MFSampleExtension\_CaptureMetaData** attribute bag onto the HW JPEG encoder as an EXIF encoder option using the [IPropertyBag2::Write](https://go.microsoft.com/fwlink/?LinkId=331589) method.
 
 The encoder option property bag contains an array of PROPBAG2 structures that specify the available encoding option properties. The EXIF encoder option set onto HW JPEG encoder is identified by the following property in the encoder option property bag:
 
@@ -260,7 +260,7 @@ To pass EXIF data from the MFT0 to the HW JPEG encoder, the pipeline photo sink 
 
 1.  Calls **GetUnknown** on **MFSampleExtension\_CaptureMetadata** from IMFSample to get the IMFAttributes interface for the attribute bag when IMFSample is received.
 
-2.  Calls [IPropertyBag2::Write](http://go.microsoft.com/fwlink/?LinkId=331589) to set the encoder option property, identified by SampleMetadata, to the HW JPEG encoder. The encoder option property contains the IMFAttributes interface obtained from the previous step. This interface contains all custom sub attributes including the OEM EXIF sub attribute, and the standardized sub attributes in the **Metadata** section discussed earlier in this topic.
+2.  Calls [IPropertyBag2::Write](https://go.microsoft.com/fwlink/?LinkId=331589) to set the encoder option property, identified by SampleMetadata, to the HW JPEG encoder. The encoder option property contains the IMFAttributes interface obtained from the previous step. This interface contains all custom sub attributes including the OEM EXIF sub attribute, and the standardized sub attributes in the **Metadata** section discussed earlier in this topic.
 
 To retrieve the EXIF data for further processing, the HW JPEG encoder does the following:
 

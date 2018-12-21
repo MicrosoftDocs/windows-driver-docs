@@ -29,7 +29,7 @@ Serial is used as:
 
 -   A function driver for legacy and Plug and Play serial devices.
 
--   A lower-level device filter driver for Plug and Play devices that require a 16550 UART-compatible interface. An example of this configuration is a modem on a [PCMCIA bus](http://go.microsoft.com/fwlink/p/?LinkId=799534).
+-   A lower-level device filter driver for Plug and Play devices that require a 16550 UART-compatible interface. An example of this configuration is a modem on a [PCMCIA bus](https://go.microsoft.com/fwlink/p/?LinkId=799534).
 
     Serial's operation as a filter driver is identical to its operation as a function driver.
 

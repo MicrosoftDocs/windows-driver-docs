@@ -37,7 +37,7 @@ For more information about uninstalling driver and driver packages, see [How Dev
 
 ### <a href="" id="deleting-a-driver-package-from-the-driver-store"></a> Deleting a Driver Package from the Driver Store
 
-Starting with Windows XP, a device installation application can call the [SetupUninstallOEMInf](http://go.microsoft.com/fwlink/p/?linkid=169503) function to remove a specified [INF file](inf-files.md) from the system INF file directory.
+Starting with Windows XP, a device installation application can call the [SetupUninstallOEMInf](https://go.microsoft.com/fwlink/p/?linkid=169503) function to remove a specified [INF file](inf-files.md) from the system INF file directory.
 
 Starting with Windows Vista, this function also removes the [driver package](driver-packages.md), which contains the specified INF file, from the [driver store](driver-store.md).
 

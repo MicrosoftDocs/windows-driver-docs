@@ -19,15 +19,15 @@ To support KSPROPSETID\_OPMVideoOutput, implement the following methods:
 
 -   KSMETHOD\_OPMVIDEOOUTPUT\_STARTINITIALIZATION
 
-    [IOPMVideoOutput::StartInitialization](http://go.microsoft.com/fwlink/p/?linkid=155056) proxies to the driver via KSMETHOD\_OPMVIDEOOUTPUT\_STARTINITIALIZATION.
+    [IOPMVideoOutput::StartInitialization](https://go.microsoft.com/fwlink/p/?linkid=155056) proxies to the driver via KSMETHOD\_OPMVIDEOOUTPUT\_STARTINITIALIZATION.
 
 -   KSMETHOD\_OPMVIDEOOUTPUT\_ENDINITIALIZATION
 
-    [IOPMVideoOutput::FinishInitialization](http://go.microsoft.com/fwlink/p/?linkid=155053) proxies to the driver via KSMETHOD\_OPMVIDEOOUTPUT\_ENDINITIALIZATION.
+    [IOPMVideoOutput::FinishInitialization](https://go.microsoft.com/fwlink/p/?linkid=155053) proxies to the driver via KSMETHOD\_OPMVIDEOOUTPUT\_ENDINITIALIZATION.
 
 -   KSMETHOD\_OPMVIDEOOUTPUT\_GETINFORMATION
 
-    [IOPMVideoOutput::GetInformation](http://go.microsoft.com/fwlink/p/?linkid=155054) proxies to the driver via KSMETHOD\_OPMVIDEOOUTPUT\_GETINFORMATION.
+    [IOPMVideoOutput::GetInformation](https://go.microsoft.com/fwlink/p/?linkid=155054) proxies to the driver via KSMETHOD\_OPMVIDEOOUTPUT\_GETINFORMATION.
 
 The remainder of this topic includes a sample implementation of these three methods.
 

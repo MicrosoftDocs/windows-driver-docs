@@ -91,7 +91,7 @@ You can submit USB devices for Windows Certification qualification to meet the n
 
   The following steps describe how to perform the required USB-IF tests to qualify a device for Windows Certification.
 
-  1. Download the USB 3.0 Command Verifier test tool (USB30CV), and the interoperability test documents from [SuperSpeed USB Software and Hardware Tools](http://go.microsoft.com/fwlink/p/?LinkId=623333).
+  1. Download the USB 3.0 Command Verifier test tool (USB30CV), and the interoperability test documents from [SuperSpeed USB Software and Hardware Tools](https://go.microsoft.com/fwlink/p/?LinkId=623333).
   2. Run the USB-IF tests for the USB hardware as specified in the following tables:
 
      <table>
@@ -114,7 +114,7 @@ You can submit USB devices for Windows Certification qualification to meet the n
      <tr class="even">
      <td>USB 3.0</td>
      <td><p>Attach the device behind an xHCI host controller and run the Chapter 9 Tests [USB 3.0 devices] in the USB 3.0 Command Verifier test tool (USB30CV).</p>
-     <p>Run the interoperability tests as described in the <a href="http://go.microsoft.com/fwlink/p/?LinkId=623335" data-raw-source="[XHCI Interoperability Testing](http://go.microsoft.com/fwlink/p/?LinkId=623335)">XHCI Interoperability Testing</a> document. Run these tests two times: one time with the device attached behind an EHCI host controller, and one time with the device attached behind an xHCI host controller.</p></td>
+     <p>Run the interoperability tests as described in the <a href="https://go.microsoft.com/fwlink/p/?LinkId=623335" data-raw-source="[XHCI Interoperability Testing](https://go.microsoft.com/fwlink/p/?LinkId=623335)">XHCI Interoperability Testing</a> document. Run these tests two times: one time with the device attached behind an EHCI host controller, and one time with the device attached behind an xHCI host controller.</p></td>
      </tr>
      </tbody>
      </table>

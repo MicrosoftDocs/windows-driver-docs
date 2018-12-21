@@ -13,7 +13,7 @@ The UEFI entropy gathering protocol is used to produce Random Number Generation 
 
 A UEFI RNG service that implements this protocol takes an optional input value that identifies an RNG algorithm and provides a RNG value based on the input value and internal state, including the state of its entropy sources. When a Deterministic Random Bit Generator (DRBG) is used on the output of the raw entropy source, its security level must be at least 256 bits.
 
-For guidance about the standard methods of creating the RNG values used in this protocol, see [NIST SP 800-90A Recommendations for Random Number Generation using Deterministic Random Bit Generators]( http://go.microsoft.com/fwlink/p/?LinkId=523737).
+For guidance about the standard methods of creating the RNG values used in this protocol, see [NIST SP 800-90A Recommendations for Random Number Generation using Deterministic Random Bit Generators]( https://go.microsoft.com/fwlink/p/?LinkId=523737).
 
 ## Protocol Interface
 

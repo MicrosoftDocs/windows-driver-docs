@@ -20,7 +20,7 @@ The following table describes the methods that are found in these modules.
 
  
 
-Refer to the [UMDF](http://go.microsoft.com/fwlink/p/?linkid=153678) documentation for a description of each interface and its methods.
+Refer to the [UMDF](https://go.microsoft.com/fwlink/p/?linkid=153678) documentation for a description of each interface and its methods.
 
  
 

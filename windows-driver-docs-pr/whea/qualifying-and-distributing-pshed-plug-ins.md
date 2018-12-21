@@ -25,7 +25,7 @@ To ensure the quality and integrity of the driver, a PSHED plug-in must be digit
 
 For more information about how to digitally sign a PSHED plug-in, see [Signing Drivers for Public Release](https://msdn.microsoft.com/library/windows/hardware/ff552289).
 
-After a PSHED plug-in has obtained a WHQL digital signature, the plug-in can be used in any system for which you request a system logo certification. For more information about the server logo certification process, see [Windows Logo Program](http://go.microsoft.com/fwlink/p/?linkid=26144).
+After a PSHED plug-in has obtained a WHQL digital signature, the plug-in can be used in any system for which you request a system logo certification. For more information about the server logo certification process, see [Windows Logo Program](https://go.microsoft.com/fwlink/p/?linkid=26144).
 
 PSHED plug-ins will be qualified using a "family" approach, where a specific PSHED plug-in can be qualified for deployment across a class, or family, of hardware platforms.
 

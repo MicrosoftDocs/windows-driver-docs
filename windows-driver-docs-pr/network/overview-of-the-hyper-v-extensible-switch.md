@@ -21,9 +21,9 @@ Windows Server 2012 introduces the Hyper-V Extensible Switch (also called the H
 
 For high-level technical overviews of this technology and its underpinnings, see the following TechNet documentation:
 
--   [Hyper-V Virtual Switch Overview](http://technet.microsoft.com/library/hh831823.aspx)
--   [Hyper-V Network Virtualization Overview](http://technet.microsoft.com/library/jj134230.aspx)
--   [Hyper-V Overview](http://technet.microsoft.com/library/hh831531.aspx)
+-   [Hyper-V Virtual Switch Overview](https://technet.microsoft.com/library/hh831823.aspx)
+-   [Hyper-V Network Virtualization Overview](https://technet.microsoft.com/library/jj134230.aspx)
+-   [Hyper-V Overview](https://technet.microsoft.com/library/hh831531.aspx)
 
 ## Types of Hyper-V extensible switches and network adapters
 

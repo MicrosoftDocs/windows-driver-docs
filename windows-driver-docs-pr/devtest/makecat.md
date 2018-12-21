@@ -9,9 +9,9 @@ ms.localizationpriority: medium
 # MakeCat
 
 
-MakeCat (Makecat.exe) is a command-line [CryptoAPI](http://go.microsoft.com/fwlink/p/?linkid=136391) tool that creates a [catalog file](https://msdn.microsoft.com/library/windows/hardware/ff537872) for a [driver package](https://msdn.microsoft.com/library/windows/hardware/ff544840).
+MakeCat (Makecat.exe) is a command-line [CryptoAPI](https://go.microsoft.com/fwlink/p/?linkid=136391) tool that creates a [catalog file](https://msdn.microsoft.com/library/windows/hardware/ff537872) for a [driver package](https://msdn.microsoft.com/library/windows/hardware/ff544840).
 
-For more information about the MakeCat tool and its command-line arguments, see the [Using MakeCat](http://go.microsoft.com/fwlink/p/?linkid=70086) website.
+For more information about the MakeCat tool and its command-line arguments, see the [Using MakeCat](https://go.microsoft.com/fwlink/p/?linkid=70086) website.
 
 For more information about how to use the MakeCat tool, see [Creating a Catalog File for Release-Signing a Driver Package](https://msdn.microsoft.com/library/windows/hardware/ff540172).
 

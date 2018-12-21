@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # OID\_GEN\_PROMISCUOUS\_MODE
 
 
-As a query, use the OID\_GEN\_PROMISCUOUS\_MODE OID to determine whether a network interface is promiscuous or not (*ifPromiscuousMode* from [RFC 2863](http://go.microsoft.com/fwlink/p/?linkid=84054)).
+As a query, use the OID\_GEN\_PROMISCUOUS\_MODE OID to determine whether a network interface is promiscuous or not (*ifPromiscuousMode* from [RFC 2863](https://go.microsoft.com/fwlink/p/?linkid=84054)).
 
 **Version Information**
 

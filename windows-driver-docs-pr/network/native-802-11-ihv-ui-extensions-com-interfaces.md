@@ -43,7 +43,7 @@ The Native 802.11 IHV UI Extensions DLL can provide one or more implementations 
 
 -   An internal request made by a component of the Native 802.11 IHV UI Extensions DLL.
 
-For more information about the **IWizardExtension** COM interface, see [IWizardExtension COM Interface](http://go.microsoft.com/fwlink/p/?linkid=56607).
+For more information about the **IWizardExtension** COM interface, see [IWizardExtension COM Interface](https://go.microsoft.com/fwlink/p/?linkid=56607).
 
 For more information about the Native 802.11 Network Configuration UI component, see [Native 802.11 Software Architecture](native-802-11-software-architecture.md).
 

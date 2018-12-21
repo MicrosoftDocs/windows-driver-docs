@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 
 This section lists the Internet Engineering Task Force (IETF) request for comments (RFCs) that are applicable to a TCP chimney-capable network interface card (NIC). Such a NIC is referred to as a task-offload engine (TOE) NIC.
 
-To obtain an IETF RFC, see [IETF Request for Comments](http://go.microsoft.com/fwlink/p/?linkid=45661).
+To obtain an IETF RFC, see [IETF Request for Comments](https://go.microsoft.com/fwlink/p/?linkid=45661).
 
 This section includes the following topics:
 

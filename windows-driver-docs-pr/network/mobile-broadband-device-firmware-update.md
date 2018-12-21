@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Mobile Broadband Device Firmware Update
 
 
-This topic provides guidance to Mobile Broadband (MB) module manufacturers intending to support firmware upgrade devices via Windows Update (WU). The devices must be compliant with the [USB NCM Mobile Broadband Interface Model (MBIM) V1.0 specification](http://go.microsoft.com/fwlink/p/?linkid=320791) released by the USB-IF Device Working Group.
+This topic provides guidance to Mobile Broadband (MB) module manufacturers intending to support firmware upgrade devices via Windows Update (WU). The devices must be compliant with the [USB NCM Mobile Broadband Interface Model (MBIM) V1.0 specification](https://go.microsoft.com/fwlink/p/?linkid=320791) released by the USB-IF Device Working Group.
 
 The information in this topic applies to:
 
