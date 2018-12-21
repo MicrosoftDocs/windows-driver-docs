@@ -11,7 +11,7 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 06/25/2018
+ms.date: 12/21/2018
 ms.localizationpriority: medium
 ---
 
@@ -22,35 +22,10 @@ KSPROPERTY\_RTAUDIO\_SETWRITEPACKET informs the driver that the OS has written v
 
 ### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Get</th>
-<th align="left">Set</th>
-<th align="left">Target</th>
-<th align="left">Property descriptor type</th>
-<th align="left">Property value type</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>No</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>Pin</p></td>
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564262" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564262)"><strong>KSPROPERTY</strong></a></p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksrtaudio_setwritepacket_info" data-raw-source="[&lt;strong&gt;KSRTAUDIO_SETWRITEPACKET_INFO&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksrtaudio_setwritepacket_info)"><strong>KSRTAUDIO_SETWRITEPACKET_INFO</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+|Get|Set|Target|Property descriptor type|Property value type|
+|--- |--- |--- |--- |--- |
+|No|Yes|Pin|[**KSPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff564262)|[KSRTAUDIO_SETWRITEPACKET_INFO](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksrtaudio_setwritepacket_info)|
 
- 
 
 The property descriptor (instance data) is a [**KSPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff564262) structure. Before sending the request, the client loads the structure with values that include the packet number, packet length and other information.
 

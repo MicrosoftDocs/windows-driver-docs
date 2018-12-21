@@ -597,17 +597,10 @@ For [**CoCreateInstance**](https://msdn.microsoft.com/library/windows/desktop/ms
 
 Also, if the failure count value for an SFX, MFX or EFX APO reaches a system-specified limit, the SFX, MFX and EFX APOs are disabled by setting the PKEY\_Endpoint\_Disable\_SysFx registry key to '1'. The system-specified limit is currently a value of 10.
 
-## <span id="Mobile_and_Windows_Desktop_APOs"></span><span id="mobile_and_windows_desktop_apos"></span><span id="MOBILE_AND_WINDOWS_DESKTOP_APOS"></span>Mobile and Windows Desktop APOs
-
-
-This section describes the differences between Windows Mobile and Windows Desktop APOs.
-
--   Adding custom UI for configuring APOs properties is not supported on Windows Mobile.
--   ATL is not supported in Windows Mobile.
--   Windows Mobile does not support co-installers. For more information, see [INF files for Windows Phone drivers](https://sysdev.microsoft.com/Hardware/oem/docs/Driver_Development/INF_files_for_Windows_Phone_drivers).
-
 ## <span id="related_topics"></span>Related topics
+
 [Implementing a UI for Configuring APO Effects](implementing-a-ui-for-configuring-apo-effects.md)  
+
 [Windows Audio Processing Objects](windows-audio-processing-objects.md)  
 
 
