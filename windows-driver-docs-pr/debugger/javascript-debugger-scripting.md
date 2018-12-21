@@ -981,7 +981,7 @@ inside the script debugger.
 
 Use the **.help** command to display a list of commands in the JavaScript Debugging environment.
 
-```
+```dbgcmd
 >>> Debug [DebuggableSample <No Position>] >.help
 Script Debugger Commands (*NOTE* IDs are **PER SCRIPT**):
     ? .................................. Get help
