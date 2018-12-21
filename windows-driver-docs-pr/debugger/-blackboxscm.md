@@ -22,7 +22,7 @@ The **!blackboxscm** extension displays information from Service Control Manager
 
 Syntax
 
-```
+```dbgcmd
 !blackboxscm  
 ```
 
@@ -45,7 +45,7 @@ Outstanding requests such as SERVICE_CONTROL_SHUTDOWN or SERVICE_CONTROL_PRESHUT
 
 In many dump files, just a single service is returned.
 
-```
+```dbgcmd
 2: kd> !ext.blackboxscm
     Name: gpsvc
     Code: 15
